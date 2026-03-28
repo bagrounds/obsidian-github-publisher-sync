@@ -7,7 +7,7 @@ URL: https://bagrounds.org/books/misbehaving-the-making-of-behavioral-economics
 affiliate link: https://amzn.to/4jAWjN8
 CTA: 🧐 Decode decisions.
 ---
-[Home](../index.md) > [Books](./index.md)  
+[Home](/content/index.md) > [Books](/content/books/index.md)  
 # 🤔💸 Misbehaving: The Making of Behavioral Economics  
 [🛒 Misbehaving: The Making of Behavioral Economics. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4jAWjN8)  
   
@@ -55,42 +55,42 @@ CTA: 🧐 Decode decisions.
   
 ### 🤝 Similar Books (Behavioral Economics & Psychology of Decision Making)  
   
-* **[🤔🐇🐢 Thinking, Fast and Slow](./thinking-fast-and-slow.md)** by Daniel Kahneman:  
+* **[🤔🐇🐢 Thinking, Fast and Slow](/content/books/thinking-fast-and-slow.md)** by Daniel Kahneman:  
     * 🔗 *Relation:* Written by Thaler's close collaborator and fellow Nobel laureate. 🔬 Provides a deeper dive into the cognitive psychology (System 1 vs. System 2 thinking) underpinning behavioral economics. 🥇 Considered the seminal work on heuristics and biases.  
-* **[👉🤏 Nudge: Improving Decisions about Health, Wealth, and Happiness](./nudge.md)** by Richard H. Thaler and Cass R. Sunstein:  
+* **[👉🤏 Nudge: Improving Decisions about Health, Wealth, and Happiness](/content/books/nudge.md)** by Richard H. Thaler and Cass R. Sunstein:  
     * 🔗 *Relation:* Co-authored by Thaler, this book focuses specifically on the practical application of behavioral insights ("nudging") in policy and choice architecture. 🚀 A natural follow-up to *Misbehaving*.  
-* **[🔮🤷🏼‍♀️🤪 Predictably Irrational: The Hidden Forces That Shape Our Decisions](./predictably-irrational.md)** by Dan Ariely:  
+* **[🔮🤷🏼‍♀️🤪 Predictably Irrational: The Hidden Forces That Shape Our Decisions](/content/books/predictably-irrational.md)** by Dan Ariely:  
     * 🔗 *Relation:* Explores similar themes of human irrationality through numerous experiments, presented in a highly accessible and engaging popular science style.  
-* **[🧑‍🤝‍🧑🧠 The Undoing Project: A Friendship That Changed Our Minds](./the-undoing-project-a-friendship-that-changed-our-minds.md)** by Michael Lewis:  
+* **[🧑‍🤝‍🧑🧠 The Undoing Project: A Friendship That Changed Our Minds](/content/books/the-undoing-project-a-friendship-that-changed-our-minds.md)** by Michael Lewis:  
     * 🔗 *Relation:* A narrative account of the groundbreaking partnership between Daniel Kahneman and Amos Tversky, whose work forms the bedrock of much of behavioral economics discussed by Thaler. 📜 Provides historical and personal context.  
-* **[🍃🧠🤝🏼 Influence: The Psychology of Persuasion](./influence.md)** by Robert Cialdini:  
+* **[🍃🧠🤝🏼 Influence: The Psychology of Persuasion](/content/books/influence.md)** by Robert Cialdini:  
     * 🔗 *Relation:* While focused on persuasion, it details psychological principles (reciprocity, scarcity, authority) that heavily overlap with the biases and heuristics studied in behavioral economics.  
   
 ### 🆚 Contrasting Perspectives (Traditional Economics, Critiques, Different Frameworks)  
   
-* **[🤓🕵️‍♂️❓ Freakonomics: A Rogue Economist Explores the Hidden Side of Everything](./freakonomics.md)** by Steven D. Levitt and Stephen J. Dubner:  
+* **[🤓🕵️‍♂️❓ Freakonomics: A Rogue Economist Explores the Hidden Side of Everything](/content/books/freakonomics.md)** by Steven D. Levitt and Stephen J. Dubner:  
     * 🔗 *Relation:* Uses traditional economic tools (incentives, rational choice) to explain seemingly non-economic behavior. ⚖️ Contrasts with behavioral economics' focus on *irrationality*, showing the power of the standard model in different contexts.  
 * 🗽 **Capitalism and Freedom** by Milton Friedman:  
     * 🔗 *Relation:* A classic work representing the Chicago School of Economics, emphasizing rational actors and free markets. 🏛️ Provides a strong contrast to the behavioral view by championing the traditional economic model Thaler critiques.  
-* **[📉📈🌪️💪 Antifragile: Things That Gain from Disorder](./antifragile-things-that-gain-from-disorder.md)** by Nassim Nicholas Taleb:  
+* **[📉📈🌪️💪 Antifragile: Things That Gain from Disorder](/content/books/antifragile-things-that-gain-from-disorder.md)** by Nassim Nicholas Taleb:  
     * 🔗 *Relation:* Critiques economists (including some behavioral ones) for over-reliance on models and misunderstanding risk and randomness. 🎲 Offers a different framework (fragility/antifragility) for thinking about decision-making under uncertainty.  
 * 📈 **Why Information Grows: The Evolution of Order, from Atoms to Economies** by César Hidalgo:  
     * 🔗 *Relation:* Presents an alternative framework for understanding economic complexity based on information theory and computation, contrasting with the psychological focus of behavioral economics.  
   
 ### ✨ Creatively Related (Broader Themes & Applications)  
   
-* **[🔮🎨🔬 Superforecasting: The Art and Science of Prediction](./superforecasting-the-art-and-science-of-prediction.md)** by Philip E. Tetlock and Dan Gardner:  
+* **[🔮🎨🔬 Superforecasting: The Art and Science of Prediction](/content/books/superforecasting-the-art-and-science-of-prediction.md)** by Philip E. Tetlock and Dan Gardner:  
     * 🔗 *Relation:* Explores how to improve judgment and prediction accuracy, empirically identifying traits of successful forecasters. 🤔 Connects to decision-making under uncertainty and overcoming cognitive biases discussed in behavioral economics.  
-* **[⚫🦢🎲 The Black Swan: The Impact of the Highly Improbable](./the-black-swan-the-impact-of-the-highly-improbable.md)** by Nassim Nicholas Taleb:  
+* **[⚫🦢🎲 The Black Swan: The Impact of the Highly Improbable](/content/books/the-black-swan-the-impact-of-the-highly-improbable.md)** by Nassim Nicholas Taleb:  
     * 🔗 *Relation:* Focuses on the limits of prediction and the disproportionate role of rare, high-impact events, highlighting cognitive biases that make us blind to them. 👁️ Complements behavioral insights on risk perception.  
-* **[🌐🔭🎨🧩👨‍🎓 Range: Why Generalists Triumph in a Specialized World](./range.md)** by David Epstein:  
+* **[🌐🔭🎨🧩👨‍🎓 Range: Why Generalists Triumph in a Specialized World](/content/books/range.md)** by David Epstein:  
     * 🔗 *Relation:* Argues for the value of broad experience in complex problem-solving and decision-making, offering a different perspective on expertise and cognitive flexibility than purely focusing on specific biases.  
-* **[📜🌍⏳ Sapiens: A Brief History of Humankind](./sapiens-a-brief-history-of-humankind.md)** by Yuval Noah Harari:  
+* **[📜🌍⏳ Sapiens: A Brief History of Humankind](/content/books/sapiens-a-brief-history-of-humankind.md)** by Yuval Noah Harari:  
     * 🔗 *Relation:* Provides a grand historical context for human cognition, cooperation, and the development of economic systems (like money and markets), touching upon the psychological foundations that behavioral economics explores.  
-* **[🤔💻🧠 Algorithms to Live By: The Computer Science of Human Decisions](./algorithms-to-live-by.md)** by Brian Christian and Tom Griffiths:  
+* **[🤔💻🧠 Algorithms to Live By: The Computer Science of Human Decisions](/content/books/algorithms-to-live-by.md)** by Brian Christian and Tom Griffiths:  
     * 🔗 *Relation:* Applies concepts from computer science (like optimal stopping, sorting, caching) to everyday human decision-making problems. 🤖 Offers a different, more computational kind of "rational" framework for tackling problems that behavioral economics shows we often handle poorly.  
-* **[🙉📢😵‍💫🔇 Noise: A Flaw in Human Judgment](./noise.md)** by Daniel Kahneman, Olivier Sibony, and Cass R. Sunstein:  
+* **[🙉📢😵‍💫🔇 Noise: A Flaw in Human Judgment](/content/books/noise.md)** by Daniel Kahneman, Olivier Sibony, and Cass R. Sunstein:  
     * 🔗 *Relation:* Explores unwanted variability in judgments that *should* be identical (e.g., sentencing, medical diagnoses, hiring). 🙉 It's another dimension of flawed human decision-making, co-authored by key figures from behavioral economics and nudging.  
   
-## 💬 [Gemini](../software/gemini.md) Prompt (gemini-2.5-pro-exp-03-25)  
+## 💬 [Gemini](/content/software/gemini.md) Prompt (gemini-2.5-pro-exp-03-25)  
 > Write a markdown-formatted (start headings at level H2) book report, followed by a plethora of additional similar, contrasting, and creatively related book recommendations on Misbehaving: The Making of Behavioral Economics. Be thorough in content discussed but concise and economical with your language. Structure the report with section headings and bulleted lists to avoid long blocks of text.

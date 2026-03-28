@@ -27,7 +27,6 @@ Options:
 Environment:
   OBSIDIAN_AUTH_TOKEN      Required. Obsidian API token.
   OBSIDIAN_VAULT_NAME      Required. Vault identifier.
-  OBSIDIAN_VAULT_CACHE_DIR Optional. Cache dir for warm sync.
 
 Examples:
   npx tsx scripts/sync-file-to-obsidian.ts auto-blog-zero/2026-03-12-my-post.md auto-blog-zero/2026-03-12-my-post.md

@@ -33,7 +33,6 @@ Options:
 Environment:
   OBSIDIAN_AUTH_TOKEN      Required. Obsidian API token.
   OBSIDIAN_VAULT_NAME      Required. Vault identifier.
-  OBSIDIAN_VAULT_CACHE_DIR Optional. Cache dir for warm sync.
 `.trim();
 
 interface UpdateArgs {

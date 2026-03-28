@@ -2,7 +2,7 @@
  * Obsidian Headless Sync integration.
  *
  * Manages the pull/push cycle with the Obsidian vault via the `ob` CLI.
- * Handles lock contention, process cleanup, and warm cache optimization.
+ * Handles lock contention and process cleanup.
  *
  * @module obsidian-sync
  */

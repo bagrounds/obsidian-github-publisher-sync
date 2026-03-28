@@ -10,7 +10,7 @@ link_analysis_time: 2026-03-22T23:32:09.644Z
 link_analysis_model: gemini-3.1-flash-lite-preview
 updated: 2026-03-23T10:22:47.323Z
 ---
-[Home](../index.md) > [People](./index.md)  
+[Home](/content/index.md) > [People](/content/people/index.md)  
 # 🤔⚙️🗣️🤝💡🧩🔭📚👴 Russell Ackoff  
 ## 🤖 AI Summary  
 🧠 Russell Lincoln Ackoff (1919-2009) was an American organizational theorist, 👨‍💼 consultant, and 👨‍🏫 professor emeritus of management science at the Wharton School, University of Pennsylvania. 🌟 He was a pioneer in the fields of operations research, 🌐 systems thinking, and 📊 management science.  
@@ -40,10 +40,10 @@ updated: 2026-03-23T10:22:47.323Z
 📚 His book, *The Art of Problem Solving*, accompanied by *Ackoff's Fables*, remains a significant contribution to the field, offering insightful and often humorous perspectives on tackling complex issues.  
   
 ## 📚 Books  
-- [idealized-design](../books/idealized-design.md)  
+- [idealized-design](/content/books/idealized-design.md)  
   
 ## 📺 Videos  
-- [russell-l-ackoff-from-mechanistic-to-systemic-thinking](../videos/russell-l-ackoff-from-mechanistic-to-systemic-thinking.md)  
+- [russell-l-ackoff-from-mechanistic-to-systemic-thinking](/content/videos/russell-l-ackoff-from-mechanistic-to-systemic-thinking.md)  
   
   
 ## 🦋 Bluesky    

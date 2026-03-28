@@ -7,7 +7,7 @@ share: true
 CTA: 🚨 Navigate shadows.
 affiliate link: https://amzn.to/4oFYvW0
 ---
-[Home](../index.md) > [Books](./index.md)  
+[Home](/content/index.md) > [Books](/content/books/index.md)  
 # 🇺🇸🕵️💥 Playing to the Edge: American Intelligence in the Age of Terror  
 [🛒 Playing to the Edge: American Intelligence in the Age of Terror. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4oFYvW0)  
   
@@ -76,8 +76,8 @@ affiliate link: https://amzn.to/4oFYvW0
   
 ### ↔️ Contrasting  
 * 🚫 No Place to Hide: Edward Snowden, the NSA, and the U.S. Surveillance State by Glenn Greenwald (Critical perspective on NSA surveillance from the journalist who broke the Snowden story).  
-* [😱🏛️ The Terror Presidency: Law and Judgment Inside the Bush Administration](./the-terror-presidency-law-and-judgment-inside-the-bush-administration.md) by Jack Goldsmith (Critique of legal and ethical decisions made in the Bush administration's War on Terror).  
-* [🕵️📜 Legacy of Ashes: The History of the CIA](./legacy-of-ashes-the-history-of-the-cia.md) by Tim Weiner (A critical history of the CIA, often referenced by critics of intelligence agencies).  
+* [😱🏛️ The Terror Presidency: Law and Judgment Inside the Bush Administration](/content/books/the-terror-presidency-law-and-judgment-inside-the-bush-administration.md) by Jack Goldsmith (Critique of legal and ethical decisions made in the Bush administration's War on Terror).  
+* [🕵️📜 Legacy of Ashes: The History of the CIA](/content/books/legacy-of-ashes-the-history-of-the-cia.md) by Tim Weiner (A critical history of the CIA, often referenced by critics of intelligence agencies).  
   
 ### 🔗 Related  
 * 💻 Dark Territory: The Secret History of Cyber War by Fred Kaplan (Explores the rise of cyber warfare, a key concern in Hayden's book).  

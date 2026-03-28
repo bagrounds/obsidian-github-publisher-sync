@@ -7,7 +7,7 @@ URL: https://bagrounds.org/articles/attention-is-all-you-need
 Author:
 tags: []
 ---
-[Home](../index.md) > [Articles](./index.md)  
+[Home](/content/index.md) > [Articles](/content/articles/index.md)  
 # [👀 Attention Is All You Need](https://arxiv.org/pdf/1706.03762)  
 ## 🤖 AI Summary  
 😴 **TL;DR:** 📄 This paper came up with a new way for computers to process language, called the "Transformer." 🤖 It's really good at tasks like translation 🗣️ because it pays attention 👀 to all parts of a sentence at once, instead of reading it word by word.  
@@ -22,7 +22,7 @@ tags: []
   
 ## 📚 Books  
 📚 **1. For the Foundation of Deep Learning:**  
-* **[🧠💻🤖 Deep Learning](../books/deep-learning.md) by Ian Goodfellow, Yoshua Bengio, and Aaron Courville:**  
+* **[🧠💻🤖 Deep Learning](/content/books/deep-learning.md) by Ian Goodfellow, Yoshua Bengio, and Aaron Courville:**  
     * 💡 This is a comprehensive textbook covering the fundamentals of deep learning, including neural networks, backpropagation, and various architectures. 🏗️ It provides the necessary background to understand the context in which the Transformer was developed and why it was a significant departure from previous approaches. 🚀  
   
 📚 **2. For Natural Language Processing Context:**  
@@ -34,11 +34,11 @@ tags: []
     * 💻 This online book offers a clear and accessible introduction to neural networks and deep learning. 🤔 It's great for building intuition about how these models work, which can help in grasping the innovations of the attention mechanism. 💡  
   
 📚 **4. Specifically on Transformers:**  
-* **[🗣️💻 Natural Language Processing with Transformers](../books/natural-language-processing-with-transformers.md) by Lewis Tunstall, Leandro von Werra, and Thomas Wolf:**  
+* **[🗣️💻 Natural Language Processing with Transformers](/content/books/natural-language-processing-with-transformers.md) by Lewis Tunstall, Leandro von Werra, and Thomas Wolf:**  
     * 🚀 This book focuses specifically on the Transformer architecture and its applications in NLP. 🛠️ It's a practical guide that covers implementation details, fine-tuning techniques, and various use cases of Transformers. ⚙️  
   
 📚 **5. For Broader AI Context:**  
-* 🤖 **[🤖🧠 Artificial Intelligence: A Modern Approach](../books/artificial-intelligence-a-modern-approach.md) by Stuart Russell and Peter Norvig:**  
+* 🤖 **[🤖🧠 Artificial Intelligence: A Modern Approach](/content/books/artificial-intelligence-a-modern-approach.md) by Stuart Russell and Peter Norvig:**  
     * 🌍 While not solely focused on deep learning or NLP, this book provides a comprehensive overview of artificial intelligence. 🔭 It helps to situate the Transformer within the broader landscape of AI research and its potential impact on the field. ✨  
   
 📚 **6. To Consider the Implications:**  

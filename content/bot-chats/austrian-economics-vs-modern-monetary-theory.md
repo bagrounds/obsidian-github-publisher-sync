@@ -7,7 +7,7 @@ URL: https://bagrounds.org/bot-chats/austrian-economics-vs-modern-monetary-theor
 tags:
   - MMT
 ---
-[Home](../index.md) > [Bot Chats](./index.md) | [🏦♾️📈💸 Modern Monetary Theory](../topics/modern-monetary-theory.md)  
+[Home](/content/index.md) > [Bot Chats](/content/bot-chats/index.md) | [🏦♾️📈💸 Modern Monetary Theory](/content/topics/modern-monetary-theory.md)  
 # 🇦🇹💰🆚📈🖨️ Austrian Economics vs Modern Monetary Theory  
 ## 💬 Gemini (3.0-fast) Prompt 1  
 > 📜 Please simulate a conversation between an Austrian economist and a Modern Monetary Theorist.  
@@ -36,7 +36,7 @@ tags:
 "My economic philosophy, 📊 **Modern Monetary Theory (MMT)**, focuses on the monetary operations of a sovereign currency-issuing government, such as the 🇺🇸 U.S. or 🇬🇧 U.K. We assert that a government that issues its own non-convertible, floating-rate currency faces no *financial* 🔒 constraint on spending. This means the government can 💸 finance all spending by simply crediting bank accounts. The true constraint on government spending is 💪 **real resources**— 🎈 inflation occurs only when spending, regardless of the source, drives total demand beyond the economy's actual productive capacity."  
   
 * 💸 **Supporting Evidence (Theoretical):** The ↕️ **Vertical Money Flow** concept, illustrating that government spending is the source of high-powered money in the private sector.  
-* 📚 **Citation:** Wray, L. R. (2015). [💰🏛️ Modern Money Theory: A Primer on Macroeconomics for Sovereign Monetary Systems](../books/modern-money-theory-a-primer-on-macroeconomics-for-sovereign-monetary-systems.md). **Palgrave Macmillan**.  
+* 📚 **Citation:** Wray, L. R. (2015). [💰🏛️ Modern Money Theory: A Primer on Macroeconomics for Sovereign Monetary Systems](/content/books/modern-money-theory-a-primer-on-macroeconomics-for-sovereign-monetary-systems.md). **Palgrave Macmillan**.  
   
 ---  
   
@@ -99,7 +99,7 @@ Our disagreement is specifically on the nature of government bonds. When the �
 MMT, conversely, is less focused on interest rates and tends to view cyclical unemployment as a failure of insufficient aggregate demand, often proposing a counter-cyclical job guarantee. My contention is that the MMT-implied disregard for interest rate signaling means they fail to understand the fundamental cause of the cycle, leading to policy prescriptions that simply delay the necessary liquidation and create a 'boom-bust' cycle of even greater magnitude."  
   
 * ⚙️ **Supporting Evidence (Theoretical):** The **Austrian Theory of the Business Cycle (ABCT)**, linking fractional reserve banking, central bank manipulation of credit, and the intertemporal discoordination of production.  
-* 📚 **Citation:** Mises, L. V. (1949). [🧑‍🤝‍🧑💰 Human Action: A Treatise on Economics](../books/human-action-a-treatise-on-economics.md). **Yale University Press**. (Especially Part Six, Chapter XX).  
+* 📚 **Citation:** Mises, L. V. (1949). [🧑‍🤝‍🧑💰 Human Action: A Treatise on Economics](/content/books/human-action-a-treatise-on-economics.md). **Yale University Press**. (Especially Part Six, Chapter XX).  
   
 ---  
   
@@ -110,7 +110,7 @@ MMT, conversely, is less focused on interest rates and tends to view cyclical un
 MMT argues that the primary cause of persistent, deep recessions is not malinvestment liquidation but a fundamental ⬇️ **deficiency in aggregate demand and private sector deleveraging**. Furthermore, the 'natural rate' is difficult to observe and can be highly volatile. A 💼 **Job Guarantee (JG)** addresses the cyclical problem directly by absorbing labor when private demand slackens and releasing it during a boom, acting as a powerful automatic *fiscal* stabilizer that targets unemployment and stabilizes the 💰 price of labor, without requiring the central bank to send confusing credit signals."  
   
 * ⚙️ **Supporting Evidence (Theoretical/Empirical):** The JG's function as a permanent, non-inflationary buffer stock of labor, stabilizing the economy at a true full-employment level.  
-* 📚 **Citation:** Tcherneva, P. R. (2020). [💼✅ The Case for a Job Guarantee](../books/the-case-for-a-job-guarantee.md). **Polity Press**.  
+* 📚 **Citation:** Tcherneva, P. R. (2020). [💼✅ The Case for a Job Guarantee](/content/books/the-case-for-a-job-guarantee.md). **Polity Press**.  
   
 ---  
   
@@ -134,7 +134,7 @@ My Austrian position holds that this is an impossibility. The knowledge required
 We accept that decentralized markets are superior for micro-allocation. Our policies are designed to work *with* markets: the 💼 Job Guarantee provides a market-determined floor for labor, and the primary tool for managing aggregate demand is 🧾 **taxation**, which is a macro-tool, not a micro-planning tool. When inflation threatens, MMT suggests a broad, disinflationary tax increase to reduce private sector net income, thus reducing aggregate demand—it does not require the government to know the exact supply and demand curves for every good. It is a necessary and transparent check on the government's sovereign spending power."  
   
 * ⚙️ **Supporting Evidence (Theoretical/Policy):** MMT proposes a **buffer stock mechanism** (the Job Guarantee) which uses market forces to set the wage floor and employment level, decentralizing the employment decision.  
-* 📚 **Citation:** Kelton, S. (2020). [💰📉➡️📈🗳️ The Deficit Myth: Modern Monetary Theory and the Birth of the People's Economy](../books/the-deficit-myth.md). **PublicAffairs**. (Especially the chapters discussing the Job Guarantee and inflation control).  
+* 📚 **Citation:** Kelton, S. (2020). [💰📉➡️📈🗳️ The Deficit Myth: Modern Monetary Theory and the Birth of the People's Economy](/content/books/the-deficit-myth.md). **PublicAffairs**. (Especially the chapters discussing the Job Guarantee and inflation control).  
   
 ---  
   

@@ -61,17 +61,17 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 ## 📚 Further Reading Recommendations  
   
 ### 🤖 Similar Explorations of AI and the Future  
-* **[🤖⚠️📈 Superintelligence: Paths, Dangers, Strategies](./superintelligence-paths-dangers-strategies.md)** by Nick Bostrom: A more dense, academic exploration of the potential risks and strategic considerations surrounding superintelligent AI. 🥇 Often considered a seminal work in the field.  
+* **[🤖⚠️📈 Superintelligence: Paths, Dangers, Strategies](books/superintelligence-paths-dangers-strategies.md)** by Nick Bostrom: A more dense, academic exploration of the potential risks and strategic considerations surrounding superintelligent AI. 🥇 Often considered a seminal work in the field.  
 * 🤝 **The Age of AI and Our Human Future** by Henry Kissinger, Eric Schmidt, and Daniel Huttenlocher: Explores how AI is transforming society and what it means for humanity, written by prominent figures in technology and policy.  
-* **[🤖🧑‍ Human Compatible: Artificial Intelligence and the Problem of Control](./human-compatible-artificial-intelligence-and-the-problem-of-control.md)** by Stuart Russell: An AI expert discusses the challenge of creating AI systems that are provably beneficial to humans.  
-* **[🌊🤖🤔 The Coming Wave: Technology, Power, and the 21st Century's Greatest Dilemma](./the-coming-wave-technology-power-and-the-21st-centurys-greatest-dilemma.md)** by Mustafa Suleyman (co-founder of DeepMind): Argues AI and synthetic biology represent a coming wave of technology posing immense promise and peril, urging proactive management. 👍 Recommended by Bill Gates as a clear-eyed view of AI's opportunities and risks.  
+* **[🤖🧑‍ Human Compatible: Artificial Intelligence and the Problem of Control](books/human-compatible-artificial-intelligence-and-the-problem-of-control.md)** by Stuart Russell: An AI expert discusses the challenge of creating AI systems that are provably beneficial to humans.  
+* **[🌊🤖🤔 The Coming Wave: Technology, Power, and the 21st Century's Greatest Dilemma](books/the-coming-wave-technology-power-and-the-21st-centurys-greatest-dilemma.md)** by Mustafa Suleyman (co-founder of DeepMind): Argues AI and synthetic biology represent a coming wave of technology posing immense promise and peril, urging proactive management. 👍 Recommended by Bill Gates as a clear-eyed view of AI's opportunities and risks.  
 * 🇨🇳 **AI Superpowers** by Kai-Fu Lee: Analyzes the AI race between the US and China and its global implications.  
   
 ### 😠 Contrasting Perspectives and Critiques  
 * 🌎 **The Atlas of AI: Power, Politics, and the Planetary Costs of Artificial Intelligence** by Kate Crawford: Critically examines the hidden environmental, labor, and social costs of AI, arguing it's a technology of extraction that exacerbates inequality. 📍 Offers a less speculative and more grounded critique focused on present-day harms.  
 * 😱 **Scary Smart: The Future of Artificial Intelligence and How You Can Save Our World** by Mo Gawdat: Explores potential risks and ethical dilemmas, emphasizing the need for wise guidance in AI development, blending technological insight with philosophical considerations.  
 * 🥴 **Artificial Unintelligence: How Computers Misunderstand the World** by Meredith Broussard: Argues against the myth of technological utopianism, highlighting the limitations and biases inherent in current AI and computation.  
-* **[📊📉🏛️ Weapons of Math Destruction: How Big Data Increases Inequality and Threatens Democracy](./weapons-of-math-destruction-how-big-data-increases-inequality-and-threatens-democracy.md)** by Cathy O'Neil: Focuses on the negative real-world impacts of algorithmic decision-making, particularly concerning fairness and bias.  
+* **[📊📉🏛️ Weapons of Math Destruction: How Big Data Increases Inequality and Threatens Democracy](books/weapons-of-math-destruction-how-big-data-increases-inequality-and-threatens-democracy.md)** by Cathy O'Neil: Focuses on the negative real-world impacts of algorithmic decision-making, particularly concerning fairness and bias.  
 * 🛡️ **New Laws of Robotics: Defending Human Expertise in the Age of AI** by Frank Pasquale: Proposes a framework for AI that complements rather than replaces human professionals, advocating for systems that enhance human skills and maintain authenticity.  
   
 ### 🎭 Creatively Related Reads (Fiction & Non-Fiction)  
@@ -90,7 +90,7 @@ link_analysis_model: gemini-3.1-flash-lite-preview
     * 🐙 **Other Minds: The Octopus and the Evolution of Intelligent Life** by Peter Godfrey-Smith: Explores the evolution of intelligence and consciousness by examining octopuses as an example of an alternative evolutionary path to complex minds.  
     * 🎶 **[Gödel, Escher, Bach: An Eternal Golden Braid](./godel-escher-bach.md)** by Douglas Hofstadter: A Pulitzer Prize-winning book exploring themes of consciousness, self-reference, and intelligence through mathematics, art, and music.  
 * 🌍 **Broader Future/Humanity Perspectives:**  
-    * 📜 **[Sapiens: A Brief History of Humankind](./sapiens-a-brief-history-of-humankind.md)** by Yuval Noah Harari: Provides historical context for understanding the trajectory of human development and potential futures.  
+    * 📜 **[Sapiens: A Brief History of Humankind](books/sapiens-a-brief-history-of-humankind.md)** by Yuval Noah Harari: Provides historical context for understanding the trajectory of human development and potential futures.  
     * ✨ **Homo Deus: A Brief History of Tomorrow** by Yuval Noah Harari: Explores the potential future paths of humanity, including the quest for immortality, happiness, and divinity, heavily influenced by technology and AI.  
   
 ## 💬 [Gemini](../software/gemini.md) Prompt (gemini-2.5-pro-exp-03-25)  

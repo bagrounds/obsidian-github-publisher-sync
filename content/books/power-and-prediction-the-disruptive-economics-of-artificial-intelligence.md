@@ -11,7 +11,7 @@ force_analyze_links: false
 link_analysis_time: 2026-03-22T23:30:17.135Z
 link_analysis_model: gemini-3.1-flash-lite-preview
 ---
-[Home](../index.md) > [Books](./index.md)  
+[Home](/content/index.md) > [Books](/content/books/index.md)  
 # ⚡🔮🤖 Power and Prediction: The Disruptive Economics of Artificial Intelligence  
 [🛒 Power and Prediction: The Disruptive Economics of Artificial Intelligence. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4lu2zZK)  
   
@@ -86,8 +86,8 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 ## 📚 Book Recommendations  
   
 ### ✨ Similar  
-* [🤖📈 Prediction Machines: The Simple Economics of Artificial Intelligence](./prediction-machines-the-simple-economics-of-artificial-intelligence.md) by Ajay Agrawal, Joshua Gans, and Avi Goldfarb (provides foundational understanding of AI as prediction).  
-* [🤖📈 The Second Machine Age: Work, Progress, and Prosperity in a Time of Brilliant Technologies](./the-second-machine-age-work-progress-and-prosperity-in-a-time-of-brilliant-technologies.md) by Erik Brynjolfsson and Andrew McAfee (explores broader economic and societal impacts of digital technologies, including AI).  
+* [🤖📈 Prediction Machines: The Simple Economics of Artificial Intelligence](/content/books/prediction-machines-the-simple-economics-of-artificial-intelligence.md) by Ajay Agrawal, Joshua Gans, and Avi Goldfarb (provides foundational understanding of AI as prediction).  
+* [🤖📈 The Second Machine Age: Work, Progress, and Prosperity in a Time of Brilliant Technologies](/content/books/the-second-machine-age-work-progress-and-prosperity-in-a-time-of-brilliant-technologies.md) by Erik Brynjolfsson and Andrew McAfee (explores broader economic and societal impacts of digital technologies, including AI).  
 * 🌐 Machine, Platform, Crowd: Harnessing Our Digital Future by Andrew McAfee and Erik Brynjolfsson (further examines how new technologies reshape business models and competition).  
   
 ### 🔄 Contrasting  
@@ -96,9 +96,9 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 * 📉 The Rise of the Robots: Technology and the Threat of Mass Unemployment by Martin Ford (presents a more pessimistic view on AI's impact on employment and societal structure, contrasting with the focus on value creation).  
   
 ### 🤝 Related  
-* [🤔🐇🐢 Thinking, Fast and Slow](./thinking-fast-and-slow.md) by Daniel Kahneman (explores human decision-making and cognitive biases, which complements the discussion of human judgment).  
+* [🤔🐇🐢 Thinking, Fast and Slow](/content/books/thinking-fast-and-slow.md) by Daniel Kahneman (explores human decision-making and cognitive biases, which complements the discussion of human judgment).  
 * 👥 Team of Teams: New Rules of Engagement for a Complex World by General Stanley McChrystal (discusses organizational redesign and adaptation in complex, rapidly changing environments, relevant for system-level transformation).  
-* [🤖⚠️📈 Superintelligence: Paths, Dangers, Strategies](./superintelligence-paths-dangers-strategies.md) by Nick Bostrom (a philosophical exploration of advanced AI's existential risks, providing a broader, more speculative context to AI's power).  
+* [🤖⚠️📈 Superintelligence: Paths, Dangers, Strategies](/content/books/superintelligence-paths-dangers-strategies.md) by Nick Bostrom (a philosophical exploration of advanced AI's existential risks, providing a broader, more speculative context to AI's power).  
   
 ## 🫵 What Do You Think?  
 ❓ How do you envision your organization's system solution evolving in response to AI's ability to decouple prediction from judgment? What specific existing rules in your industry are most ripe for disruption by AI-driven predictions, and what challenges do you foresee in ungluing them?  

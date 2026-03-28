@@ -7,7 +7,7 @@ share: true
 affiliate link: https://amzn.to/3UwSu1e
 CTA: 💃 Get moving.
 ---
-[Home](../index.md) > [Books](./index.md)  
+[Home](/content/index.md) > [Books](/content/books/index.md)  
 # 💃➡️ Beginning Modern Dance  
 [🛒 Beginning Modern Dance. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3UwSu1e)  
   
@@ -59,7 +59,7 @@ CTA: 💃 Get moving.
 #### 🧠 The Art of Choreography and Creative Practice  
   
 * 📚 ***The Intimate Act of Choreography*** **by Lynne Anne Blom and L. Tarin Chaplin:** 💭 This book delves into the creative process of making dances.  
-* **[💡🌱♾️ The Creative Habit: Learn It and Use It for Life](./the-creative-habit.md)** **by Twyla Tharp:** ✨ A renowned choreographer shares her insights on creativity, which can be applied to dance and many other fields.  
+* **[💡🌱♾️ The Creative Habit: Learn It and Use It for Life](/content/books/the-creative-habit.md)** **by Twyla Tharp:** ✨ A renowned choreographer shares her insights on creativity, which can be applied to dance and many other fields.  
 * 📚 ***A Choreographer's Handbook*** **by Jonathan Burrows:** 🛠️ This book provides practical and philosophical guidance for those interested in creating their own dance works.  
   
 #### 🎭 Biographies and the Dancer's Perspective  
@@ -67,5 +67,5 @@ CTA: 💃 Get moving.
 * 📚 ***Blood Memory*** **by Martha Graham:** 🌟 The autobiography of one of modern dance's most influential figures, offering a personal look into her life and work.  
 * 📚 ***Leaps in the Dark*** **by Agnes de Mille:** 🖋️ This collection of writings captures the experience of being a dancer and choreographer with rare eloquence.  
   
-## 💬 [Gemini](../software/gemini.md) Prompt (gemini-2.5-pro)  
+## 💬 [Gemini](/content/software/gemini.md) Prompt (gemini-2.5-pro)  
 > Write a markdown-formatted (start headings at level H2) book report, followed by a plethora of additional similar, contrasting, and creatively related book recommendations on Beginning Modern Dance. Be thorough in content discussed but concise and economical with your language. Structure the report with section headings and bulleted lists to avoid long blocks of text.

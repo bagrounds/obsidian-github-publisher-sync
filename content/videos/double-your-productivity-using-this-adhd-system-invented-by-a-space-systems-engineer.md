@@ -10,7 +10,7 @@ Channel: Ali Alqaraghuli, PhD
 tags:
 youtube: https://youtu.be/ssi39F7bTLg
 ---
-[Home](../index.md) > [Videos](./index.md)  
+[Home](/content/index.md) > [Videos](/content/videos/index.md)  
 # 2️⃣⬆️🧠👩‍🚀 Double Your Productivity using this ADHD System (Invented by a Space Systems Engineer)  
 ![Double Your Productivity using this ADHD System (Invented by a Space Systems Engineer)](https://youtu.be/ssi39F7bTLg)  
   
@@ -30,16 +30,16 @@ youtube: https://youtu.be/ssi39F7bTLg
   
 ## 📚 Book Recommendations  
 * **For ADHD and Productivity:**  
-    * [🏎️🦋🐿️✨ Driven to Distraction: Recognizing and Coping with Attention Deficit Disorder from Childhood Through Adulthood](../books/driven-to-distraction.md) by Edward M. Hallowell and John J. Ratey  
+    * [🏎️🦋🐿️✨ Driven to Distraction: Recognizing and Coping with Attention Deficit Disorder from Childhood Through Adulthood](/content/books/driven-to-distraction.md) by Edward M. Hallowell and John J. Ratey  
     * *Delivered from Distraction: Getting the Most Out of Life with Attention Deficit Disorder* by Edward M. Hallowell and John J. Ratey  
     * *The ADHD Effect on Marriage: Understand and Rebuild Your Relationship in Six Steps* by Melissa Orlov  
 * **For Time Management and Prioritization:**  
-    * [✅😌 Getting Things Done: The Art of Stress-Free Productivity](../books/getting-things-done-the-art-of-stress-free-productivity.md) by David Allen  
-    * [👤📈🎯🌟🔑🤝🏆 The 7 Habits of Highly Effective People](../books/the-7-habits-of-highly-effective-people.md) by Stephen Covey  
+    * [✅😌 Getting Things Done: The Art of Stress-Free Productivity](/content/books/getting-things-done-the-art-of-stress-free-productivity.md) by David Allen  
+    * [👤📈🎯🌟🔑🤝🏆 The 7 Habits of Highly Effective People](/content/books/the-7-habits-of-highly-effective-people.md) by Stephen Covey  
     * *Eat That Frog!: 21 Great Ways to Stop Procrastinating and Get More Done in Less Time* by Brian Tracy  
 * **For Overcoming Psychological Barriers and Self-Talk:**  
-    * [🌱🧘🏼‍♀️🏆 Mindset: The New Psychology of Success](../books/mindset.md) by Carol S. Dweck  
-    * [😊👍 Feeling Good: The New Mood Therapy](../books/feeling-good-the-new-mood-therapy.md) by David D. Burns  
+    * [🌱🧘🏼‍♀️🏆 Mindset: The New Psychology of Success](/content/books/mindset.md) by Carol S. Dweck  
+    * [😊👍 Feeling Good: The New Mood Therapy](/content/books/feeling-good-the-new-mood-therapy.md) by David D. Burns  
     * *Self-Compassion: The Proven Power of Being Kind to Yourself* by Kristin Neff  
   
 ## 🐦 Tweet  

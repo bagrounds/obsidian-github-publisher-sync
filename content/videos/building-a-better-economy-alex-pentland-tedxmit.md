@@ -10,7 +10,7 @@ Channel: TEDx Talks
 tags:
 youtube: https://youtu.be/gqYaISZIlLE
 ---
-[Home](../index.md) > [Videos](./index.md)  
+[Home](/content/index.md) > [Videos](/content/videos/index.md)  
 # 🏗️📈🤝🌍 Building a Better Economy | Alex Pentland | TEDxMIT  
 ![Building a Better Economy | Alex Pentland | TEDxMIT](https://youtu.be/gqYaISZIlLE)  
   
@@ -55,7 +55,7 @@ A: 💻 New technologies like **federated computing** and **edge computing** are
   
 ## 📚 Book Recommendations  
 * 🤝 **Similar Perspectives**:  
-    * [🎳🏘️📉📈 Bowling Alone: The Collapse and Revival of American Community](../books/bowling-alone.md) by Robert Putnam: 😔 Details the collapse of U.S. community and civic life, a key social change noted as coinciding with the rise of centralization.  
+    * [🎳🏘️📉📈 Bowling Alone: The Collapse and Revival of American Community](/content/books/bowling-alone.md) by Robert Putnam: 😔 Details the collapse of U.S. community and civic life, a key social change noted as coinciding with the rise of centralization.  
     * 💻 The Network State by Balaji Srinivasan: 🚀 Proposes a vision for leveraging decentralized digital networks and collective action to create self-sovereign digital communities that can achieve real-world autonomy.  
   
 * ↔️ **Contrasting Perspectives**:  
@@ -63,5 +63,5 @@ A: 💻 New technologies like **federated computing** and **edge computing** are
     * 📱 The Sharing Economy by Arun Sundararajan: 💡 Frames technology-enabled networks as the latest phase of economic evolution, focusing on the emergence of crowd-based capitalism and its impact on the workforce.  
   
 * 💡 **Creatively Related**:  
-    * [💰📈🌍⏳ Capital in the Twenty-First Century](../books/capital-in-the-twenty-first-century.md) by Thomas Piketty: 💰 Provides the rigorous economic evidence for the high returns and intense concentration of capital, which the video cites as the core problem community capitalism must address.  
+    * [💰📈🌍⏳ Capital in the Twenty-First Century](/content/books/capital-in-the-twenty-first-century.md) by Thomas Piketty: 💰 Provides the rigorous economic evidence for the high returns and intense concentration of capital, which the video cites as the core problem community capitalism must address.  
     * ⛓️ Blockchain for Good: The Transformative Impacts on Industry, Community and the Planet by Shoufeng Cao and Marcus Foth: 🌍 Explores how decentralized ledger technologies, like blockchain, can be ethically applied to support fairer social systems, community initiatives, and sustainability goals.

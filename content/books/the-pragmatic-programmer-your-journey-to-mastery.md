@@ -7,7 +7,7 @@ share: true
 CTA: 🛠️ Sharpen your skills.
 affiliate link: https://amzn.to/4ls6Gnm
 ---
-[Home](../index.md) > [Books](./index.md)  
+[Home](/content/index.md) > [Books](/content/books/index.md)  
 # 🧑‍💻📈 The Pragmatic Programmer: Your Journey to Mastery  
 [🛒 The Pragmatic Programmer: Your Journey to Mastery. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4ls6Gnm)  
   
@@ -41,15 +41,15 @@ affiliate link: https://amzn.to/4ls6Gnm
   
 ### 🤝 Similar in Spirit: Deepening the Craft  
   
-* **[🧼💾 Clean Code: A Handbook of Agile Software Craftsmanship](./clean-code.md)** by Robert C. Martin: 👯 Often considered a direct companion to *The Pragmatic Programmer*, this book dives into the nitty-gritty details of writing clean, readable, and maintainable code.  
-* **[✅💻 Code Complete](./code-complete.md): A Practical Handbook of Software Construction** by Steve McConnell: 📖 A comprehensive and detailed guide to all aspects of software construction, from architecture to code formatting.  
-* **[🗑️✨ Refactoring: Improving the Design of Existing Code](./refactoring-improving-the-design-of-existing-code.md)** by Martin Fowler: 🛠️ This book provides a catalog of techniques to improve the design of existing code without changing its external behavior, a core tenet of pragmatic development.  
+* **[🧼💾 Clean Code: A Handbook of Agile Software Craftsmanship](/content/books/clean-code.md)** by Robert C. Martin: 👯 Often considered a direct companion to *The Pragmatic Programmer*, this book dives into the nitty-gritty details of writing clean, readable, and maintainable code.  
+* **[✅💻 Code Complete](/content/books/code-complete.md): A Practical Handbook of Software Construction** by Steve McConnell: 📖 A comprehensive and detailed guide to all aspects of software construction, from architecture to code formatting.  
+* **[🗑️✨ Refactoring: Improving the Design of Existing Code](/content/books/refactoring-improving-the-design-of-existing-code.md)** by Martin Fowler: 🛠️ This book provides a catalog of techniques to improve the design of existing code without changing its external behavior, a core tenet of pragmatic development.  
 * 💼 **The Passionate Programmer: Creating a Remarkable Career in Software Development** by Chad Fowler: ❤️‍🔥 This book focuses on the career aspects of being a developer, offering advice on how to be more than just a coder but a valued and influential professional.  
   
 ### 🆚 Contrasting Perspectives: Expanding Your Horizons  
   
-* **[🧩🧱⚙️❤️ Domain-Driven Design: Tackling Complexity in the Heart of Software](./domain-driven-design.md)** by Eric Evans: 🏢 This book advocates for a design approach that centers on the business domain, which can sometimes be at odds with the more general-purpose advice of *The Pragmatic Programmer*.  
-* **[🦄👤🗓️ The Mythical Man-Month: Essays on Software Engineering](./the-mythical-man-month.md)** by Frederick P. Brooks Jr.: 👴 A classic in software engineering literature, this book explores the human and management challenges of large-scale software projects, offering a macro-level perspective that complements the micro-level focus of *The Pragmatic Programmer*.  
+* **[🧩🧱⚙️❤️ Domain-Driven Design: Tackling Complexity in the Heart of Software](/content/books/domain-driven-design.md)** by Eric Evans: 🏢 This book advocates for a design approach that centers on the business domain, which can sometimes be at odds with the more general-purpose advice of *The Pragmatic Programmer*.  
+* **[🦄👤🗓️ The Mythical Man-Month: Essays on Software Engineering](/content/books/the-mythical-man-month.md)** by Frederick P. Brooks Jr.: 👴 A classic in software engineering literature, this book explores the human and management challenges of large-scale software projects, offering a macro-level perspective that complements the micro-level focus of *The Pragmatic Programmer*.  
 * 📐 **A Philosophy of Software Design** by John Ousterhout: 🤔 This book presents a more opinionated and specific set of design principles, sometimes contrasting with the broader heuristics found in *The Pragmatic Programmer*.  
 * 🤸 **Extreme Programming Explained: Embrace Change** by Kent Beck: 🤝 While sharing some agile principles, this book prescribes a more specific and disciplined methodology that can be seen as a contrast to the more flexible "pragmatic" approach.  
   
@@ -58,9 +58,9 @@ affiliate link: https://amzn.to/4ls6Gnm
 * 🧑‍🎨 **Hackers & Painters: Big Ideas from the Computer Age** by Paul Graham: 💭 A collection of essays that draw parallels between hacking and painting, exploring the nature of creativity, wealth, and technology.  
 * 🤖 **The Soul of a New Machine** by Tracy Kidder: 🏆 This Pulitzer Prize-winning book tells the story of a team of engineers racing to build a new minicomputer, capturing the passion, dedication, and human drama behind technological innovation.  
 * 🗣️ **Coders at Work: Reflections on the Craft of Programming** by Peter Seibel: 👨‍💻 A collection of interviews with fifteen of the world's most accomplished programmers, offering a behind-the-scenes look at their thought processes and philosophies.  
-* **[♾️📐🎶🥨 Gödel, Escher, Bach: An Eternal Golden Braid](./godel-escher-bach.md)** by Douglas R. Hofstadter: 🏆 A Pulitzer Prize-winning book that explores the common themes and symmetries in the work of a logician, an artist, and a composer, offering a deep and playful meditation on intelligence, consciousness, and the nature of systems.  
+* **[♾️📐🎶🥨 Gödel, Escher, Bach: An Eternal Golden Braid](/content/books/godel-escher-bach.md)** by Douglas R. Hofstadter: 🏆 A Pulitzer Prize-winning book that explores the common themes and symmetries in the work of a logician, an artist, and a composer, offering a deep and playful meditation on intelligence, consciousness, and the nature of systems.  
   
-## 💬 [Gemini](../software/gemini.md) Prompt (gemini-2.5-pro)  
+## 💬 [Gemini](/content/software/gemini.md) Prompt (gemini-2.5-pro)  
 > Write a markdown-formatted (start headings at level H2) book report, followed by a plethora of additional similar, contrasting, and creatively related book recommendations on The Pragmatic Programmer: Your Journey to Mastery. Never put book titles in quotes or italics. Be thorough in content discussed but concise and economical with your language. Structure the report with section headings and bulleted lists to avoid long blocks of text.  
   
 ## 🦋 Bluesky    

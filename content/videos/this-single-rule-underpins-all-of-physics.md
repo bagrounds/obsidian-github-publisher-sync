@@ -9,7 +9,7 @@ Platform: "#YouTube"
 Channel: "[[Veritasium]]"
 tags:
 ---
-[Home](../index.md) > [Videos](./index.md)  
+[Home](/content/index.md) > [Videos](/content/videos/index.md)  
 # This Single Rule Underpins All Of Physics  
 ![This Single Rule Underpins All Of Physics](https://youtu.be/Q10_srZ-pbs)  
 ### TL;DR 🎬  

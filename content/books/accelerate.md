@@ -81,7 +81,7 @@ updated: 2026-03-10T15:34:28.494Z
   
 ### **Book Recommendations 📚**  
 * **Best Alternate Book on the Same Topic:** [🐦‍🔥💻 The Phoenix Project](./the-phoenix-project.md) by Gene Kim, Kevin Behr, and George Spafford. (Fiction that illustrates DevOps principles). 🏭  
-* **Best Tangentially Related Book:** [🧑‍🤝‍🧑⚙️➡️ Team Topologies: Organizing Business and Technology Teams for Fast Flow](./team-topologies-organizing-business-and-technology-teams-for-fast-flow.md) by Matthew Skelton and Manuel Pais. (Focuses on organizing teams for fast flow). 🧑‍🤝‍🧑  
+* **Best Tangentially Related Book:** [🧑‍🤝‍🧑⚙️➡️ Team Topologies: Organizing Business and Technology Teams for Fast Flow](books/team-topologies-organizing-business-and-technology-teams-for-fast-flow.md) by Matthew Skelton and Manuel Pais. (Focuses on organizing teams for fast flow). 🧑‍🤝‍🧑  
 * **Best Diametrically Opposed Book:** [🦄👤🗓️ The Mythical Man-Month: Essays on Software Engineering](./the-mythical-man-month.md) by Fred Brooks. (Classic software engineering book focusing on project management, with some points opposed to the agile and fast flow ideas of accelerate). 🕰️  
 * **Best Fiction Book That Incorporates Related Ideas:** [😈💻👹🤖 Daemon](./daemon.md) by Daniel Suarez. (Technological and organizational change themes). 🤖  
 * **Best Book That Is More General:** [📉🧪🚀 The Lean Startup: How Today's Entrepreneurs Use Continuous Innovation to Create Radically Successful Businesses](./the-lean-startup.md) by Eric Ries. (General application of Lean principles). 💡  

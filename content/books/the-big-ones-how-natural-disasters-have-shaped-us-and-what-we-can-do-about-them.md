@@ -7,7 +7,7 @@ share: true
 CTA: 🌎 Prepare for impact.
 affiliate link: https://amzn.to/3KthxRE
 ---
-[Home](../index.md) > [Books](./index.md)  
+[Home](/content/index.md) > [Books](/content/books/index.md)  
 # 🌋🌊🌪️🔥 The Big Ones: How Natural Disasters Have Shaped Us (and What We Can Do About Them)  
 [🛒 The Big Ones: How Natural Disasters Have Shaped Us (and What We Can Do About Them). As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3KthxRE)  
   
@@ -68,7 +68,7 @@ affiliate link: https://amzn.to/3KthxRE
   
 ### 🔗 Related  
 * 🌀 Isaac's Storm: A Man, a Time, and the Deadliest Hurricane in History by Erik Larson (specific disaster focus)  
-* [💀🌍📉⏳ The Sixth Extinction: An Unnatural History](./the-sixth-extinction.md) by Elizabeth Kolbert (broader environmental change)  
+* [💀🌍📉⏳ The Sixth Extinction: An Unnatural History](/content/books/the-sixth-extinction.md) by Elizabeth Kolbert (broader environmental change)  
 * 📈 Learning from Disaster: Planning for Resilience by Laurie Mazur (focus on resilience strategies)  
   
 ## 🫵 What Do You Think?  

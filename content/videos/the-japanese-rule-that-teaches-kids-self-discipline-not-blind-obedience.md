@@ -10,7 +10,7 @@ Channel: Parentitude
 tags:
 youtube: https://youtu.be/qAB_YP_IKo0
 ---
-[Home](../index.md) > [Videos](./index.md)  
+[Home](/content/index.md) > [Videos](/content/videos/index.md)  
 # 👧🧠💪🇯🇵 The Japanese Rule That Teaches Kids Self-Discipline (Not Blind Obedience)  
 ![The Japanese Rule That Teaches Kids Self-Discipline (Not Blind Obedience)](https://youtu.be/qAB_YP_IKo0)  
   
@@ -59,9 +59,9 @@ youtube: https://youtu.be/qAB_YP_IKo0
   
 ### ↔️ Similar  
   
-* [❤️🧠 Unconditional Parenting: Moving from Rewards and Punishments to Love and Reason](../books/unconditional-parenting-moving-from-rewards-and-punishments-to-love-and-reason.md) by Alfie Kohn. 📚 This book critiques the use of rewards, punishment, and extrinsic motivators, arguing for working with children to foster intrinsic motivation and responsibility, mirroring the video's core theme.  
+* [❤️🧠 Unconditional Parenting: Moving from Rewards and Punishments to Love and Reason](/content/books/unconditional-parenting-moving-from-rewards-and-punishments-to-love-and-reason.md) by Alfie Kohn. 📚 This book critiques the use of rewards, punishment, and extrinsic motivators, arguing for working with children to foster intrinsic motivation and responsibility, mirroring the video's core theme.  
 * 🤝 Peaceful Parent Happy Kids by Laura Markham. 📚 This resource advocates for connection, coaching, and calm modeling as the foundation for setting limits and promoting self-regulation, aligning with the video's emphasis on modeled calm.  
-* [🕳️🧠👶🏽 The Whole-Brain Child: 12 Revolutionary Strategies to Nurture Your Child's Developing Mind](../books/the-whole-brain-child.md) by Daniel J. Siegel and Tina Payne Bryson. 📚 It offers practical, neuroscience-based strategies for helping children integrate their emotions and develop greater self-control, connecting directly to the video's discussion of the prefrontal cortex.  
+* [🕳️🧠👶🏽 The Whole-Brain Child: 12 Revolutionary Strategies to Nurture Your Child's Developing Mind](/content/books/the-whole-brain-child.md) by Daniel J. Siegel and Tina Payne Bryson. 📚 It offers practical, neuroscience-based strategies for helping children integrate their emotions and develop greater self-control, connecting directly to the video's discussion of the prefrontal cortex.  
   
 ### 🆚 Contrasting  
   
@@ -70,5 +70,5 @@ youtube: https://youtu.be/qAB_YP_IKo0
   
 ### 🎨 Creatively Related  
   
-* [🛠️💖 Shop Class as Soulcraft: An Inquiry Into the Value of Work](../books/shop-class-as-soulcraft-an-inquiry-into-the-value-of-work.md) by Matthew B. Crawford. 📚 This philosophical inquiry champions the dignity and cognitive benefits of skilled manual labor and competence, connecting to the video's pillar that hands-on responsibility builds internal motivation and self-worth.  
-* [👉🤏 Nudge: Improving Decisions about Health, Wealth, and Happiness](../books/nudge.md) by Richard H. Thaler and Cass R. Sunstein. 📚 This book discusses behavioral economics and how subtle cues (like the routine chart) and environmental design can nudge people toward better decisions without restricting their freedom of choice, conceptually linking to how routines act as self-initiated cues.
+* [🛠️💖 Shop Class as Soulcraft: An Inquiry Into the Value of Work](/content/books/shop-class-as-soulcraft-an-inquiry-into-the-value-of-work.md) by Matthew B. Crawford. 📚 This philosophical inquiry champions the dignity and cognitive benefits of skilled manual labor and competence, connecting to the video's pillar that hands-on responsibility builds internal motivation and self-worth.  
+* [👉🤏 Nudge: Improving Decisions about Health, Wealth, and Happiness](/content/books/nudge.md) by Richard H. Thaler and Cass R. Sunstein. 📚 This book discusses behavioral economics and how subtle cues (like the routine chart) and environmental design can nudge people toward better decisions without restricting their freedom of choice, conceptually linking to how routines act as self-initiated cues.

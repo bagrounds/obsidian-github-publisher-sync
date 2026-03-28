@@ -5,14 +5,14 @@ aliases:
 title: 🇲🇽💃 Cinco de Mayo
 URL: https://bagrounds.org/bot-chats/cinco-de-mayo
 ---
-[Home](../index.md) > [Bot Chats](./index.md)  
+[Home](/content/index.md) > [Bot Chats](/content/bot-chats/index.md)  
 # 🇲🇽💃 Cinco de Mayo  
-## 💬 [Gemini](../software/gemini.md) Prompt  
+## 💬 [Gemini](/content/software/gemini.md) Prompt  
 > 🎉 Recommend some books on Cinco de Mayo  
   
 🎉 Ah, Cinco de Mayo! 🎊 While it's often celebrated with vibrant festivities, 🇲🇽 its historical significance is quite interesting. 📚 Here are a few books that delve into different aspects of Cinco de Mayo, ranging from its historical roots 📜 to its cultural impact: 💃  
   
-* 📖 **[🇲🇽🇺🇸 Cinco de Mayo: An American Tradition](../books/cinco-de-mayo-an-american-tradition.md) by David E. Hayes-Bautista:** 🇺🇸 This book offers a fascinating perspective on how Cinco de Mayo evolved from a relatively minor event in Mexico 🇲🇽 to a significant celebration in the United States, 🇺🇸 particularly among Mexican-American communities. 👨‍👩‍👧‍👦 It explores the cultural 🌍 and political 🏛️ context of this transformation.  
+* 📖 **[🇲🇽🇺🇸 Cinco de Mayo: An American Tradition](/content/books/cinco-de-mayo-an-american-tradition.md) by David E. Hayes-Bautista:** 🇺🇸 This book offers a fascinating perspective on how Cinco de Mayo evolved from a relatively minor event in Mexico 🇲🇽 to a significant celebration in the United States, 🇺🇸 particularly among Mexican-American communities. 👨‍👩‍👧‍👦 It explores the cultural 🌍 and political 🏛️ context of this transformation.  
   
 * ⚔️ **"The Battle of Puebla: Cinco de Mayo, 1862" by Donald F. Stevens:** 🇲🇽 If you're interested in the historical event itself, 📖 this book provides a detailed account of the Battle of Puebla, where the outnumbered Mexican army surprisingly defeated the French forces. 🇫🇷 It examines the military strategies, 🎖️ the key figures involved, and the broader political implications of this victory. 🏆  
   

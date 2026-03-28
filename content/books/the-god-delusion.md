@@ -42,7 +42,7 @@ These books echo the themes of atheism, skepticism 🤔, and the critique of rel
   
 These recommendations offer a counter-perspective, defending religious belief 🙏 or engaging with Dawkins' arguments from a theological 📖 or philosophical standpoint 🤔.  
   
-* **[❓✝️ The Dawkins Delusion?: Atheist Fundamentalism and the Denial of the Divine](./the-dawkins-delusion-atheist-fundamentalism-and-the-denial-of-the-divine.md) by Alister McGrath**: Written by a former atheist turned Christian theologian 📖, this book directly refutes the arguments presented in The God Delusion, particularly focusing on Dawkins' understanding of theology 📖 and science-religion dialogue 🗣️.  
+* **[❓✝️ The Dawkins Delusion?: Atheist Fundamentalism and the Denial of the Divine](books/the-dawkins-delusion-atheist-fundamentalism-and-the-denial-of-the-divine.md) by Alister McGrath**: Written by a former atheist turned Christian theologian 📖, this book directly refutes the arguments presented in The God Delusion, particularly focusing on Dawkins' understanding of theology 📖 and science-religion dialogue 🗣️.  
 * **[✝️ Mere Christianity](./mere-christianity.md) by C.S. Lewis**: A classic work of Christian apologetics, Lewis presents a rational 🤔 and accessible case for the fundamental tenets of the Christian faith 🙏, making it a foundational text for understanding a reasoned defense of belief.  
 * 🙏 **The Reason for God: Belief in an Age of Skepticism by Timothy Keller**: Keller, a pastor and theologian 📖, addresses common doubts and intellectual objections to Christianity ✝️, offering reasoned arguments for faith in a modern context 🌍.  
   

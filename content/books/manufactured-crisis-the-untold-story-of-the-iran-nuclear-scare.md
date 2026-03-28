@@ -7,7 +7,7 @@ share: true
 affiliate link: https://amzn.to/4kb2xUk
 CTA: 🤯 Comprehend the artifice.
 ---
-[Home](../index.md) > [Books](./index.md)  
+[Home](/content/index.md) > [Books](/content/books/index.md)  
 # 🏭☢️😱 Manufactured Crisis: The Untold Story of the Iran Nuclear Scare  
 [🛒 Manufactured Crisis: The Untold Story of the Iran Nuclear Scare. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4kb2xUk)  
   
@@ -70,13 +70,13 @@ These books explore broader themes related to *Manufactured Crisis*, such as the
   
 * 📖 ***All the Shah's Men: An American Coup and the Roots of Middle East Terror*** by Stephen Kinzer: 📜 Provides essential historical context for the complex and often fraught relationship between the U.S. and Iran, tracing the impact of the 1953 coup.  
 * 📖 ***Ghost Wars: The Secret History of the CIA, Afghanistan, and Bin Laden, from the Soviet Invasion to September 10, 2001*** by Steve Coll: 🕵️ While focused on Afghanistan, this book offers deep insights into the workings of the CIA and the complexities of intelligence gathering and analysis in the Middle East and South Asia, relevant to understanding the institutional context discussed by Porter.  
-* **[🧑🏿⛓️🙈 The New Jim Crow: Mass Incarceration in the Age of Colorblindness](./the-new-jim-crow-mass-incarceration-in-the-age-of-colorblindness.md)** by Michelle Alexander: ⚖️ While seemingly unrelated, this book offers a powerful analysis of how social and political systems can create and perpetuate crises based on constructed narratives and biases, providing a framework for understanding the dynamics of "manufacturing" a crisis.  
-* **[🕵️📜 Legacy of Ashes: The History of the CIA](./legacy-of-ashes-the-history-of-the-cia.md)** by Tim Weiner: 🕵️ A comprehensive history of the CIA, detailing its operations, successes, and failures, which can provide valuable background for evaluating the intelligence aspects of Porter's book.  
+* **[🧑🏿⛓️🙈 The New Jim Crow: Mass Incarceration in the Age of Colorblindness](/content/books/the-new-jim-crow-mass-incarceration-in-the-age-of-colorblindness.md)** by Michelle Alexander: ⚖️ While seemingly unrelated, this book offers a powerful analysis of how social and political systems can create and perpetuate crises based on constructed narratives and biases, providing a framework for understanding the dynamics of "manufacturing" a crisis.  
+* **[🕵️📜 Legacy of Ashes: The History of the CIA](/content/books/legacy-of-ashes-the-history-of-the-cia.md)** by Tim Weiner: 🕵️ A comprehensive history of the CIA, detailing its operations, successes, and failures, which can provide valuable background for evaluating the intelligence aspects of Porter's book.  
 * 📖 ***Nuclear Logics: Contrasting Paths in East Asia and the Middle East*** by Etel Solingen: ⚛️ Examines why states pursue or renounce nuclear weapons, offering a theoretical framework to understand the motivations and decisions surrounding nuclear programs in different regions, including the Middle East.  
 * 📖 ***US Foreign Policy in the Middle East: From American Missionaries to the Islamic State*** edited by Geoffrey Gresh and Tugrul Keskin: 🇺🇸🌍 Explores the historical development of U.S. foreign policy in the Middle East from various perspectives, providing broader context for the specific case of Iran's nuclear program.  
 * 📖 ***Drinking the Sea at Gaza: Days and Nights in a Land Under Siege*** by Amira Hass: 🇵🇸 Offers a ground-level perspective on the realities of the Israeli-Palestinian conflict, which Porter argues is a key, often unacknowledged, factor influencing Israel's stance on Iran.".  
   
-## 💬 [Gemini](../software/gemini.md) Prompt (gemini-2.5-flash-preview-04-17)  
+## 💬 [Gemini](/content/software/gemini.md) Prompt (gemini-2.5-flash-preview-04-17)  
 > Write a markdown-formatted (start headings at level H2) book report, followed by a plethora of additional similar, contrasting, and creatively related book recommendations on Manufactured Crisis: The Untold Story of the Iran Nuclear Scare. Be thorough in content discussed but concise and economical with your language. Structure the report with section headings and bulleted lists to avoid long blocks of text.  
   
 ## 🐦 Tweet  

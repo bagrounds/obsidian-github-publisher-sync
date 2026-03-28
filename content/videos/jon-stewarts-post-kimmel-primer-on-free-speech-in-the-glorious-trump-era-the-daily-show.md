@@ -10,7 +10,7 @@ Channel: The Daily Show
 tags:
 youtube: https://youtu.be/_GXNJ3V9lzg
 ---
-[Home](../index.md) > [Videos](./index.md)  
+[Home](/content/index.md) > [Videos](/content/videos/index.md)  
 # 🤡🗣️📰🇺🇸 Jon Stewart's Post-Kimmel Primer on Free Speech in the Glorious Trump Era | The Daily Show  
 ![Jon Stewart's Post-Kimmel Primer on Free Speech in the Glorious Trump Era | The Daily Show](https://youtu.be/_GXNJ3V9lzg)  
   
@@ -39,10 +39,10 @@ Topics to explore for a better understanding could include:
 * 🔍 An **analysis of specific claims** made by political figures versus verifiable facts.  
   
 ## 📚 Book Recommendations  
-* [👑🚫📜2️⃣0️⃣ On Tyranny: Twenty Lessons from the Twentieth Century](../books/on-tyranny.md) by Timothy Snyder: 📚 Offers twenty lessons from the twentieth century on how to resist tyranny, providing historical context for authoritarian tendencies.  
-* [🏭🫡 Manufacturing Consent: The Political Economy of the Mass Media](../books/manufacturing-consent.md) by Edward S. Herman and Noam Chomsky: 📖 Explores how mass media can be used to control public opinion in democratic societies.  
-* [📺💀 Amusing Ourselves to Death: Public Discourse in the Age of Show Business](../books/amusing-ourselves-to-death-public-discourse-in-the-age-of-show-business.md) by Neil Postman: 📺 Discusses the impact of television on public discourse and how it shapes the way we perceive reality.  
-* [👁️ Nineteen Eighty-Four](../books/1984.md) by George Orwell: 👁️‍🗨️ A classic dystopian novel about government surveillance, censorship, and the manipulation of truth, relevant to themes of controlled speech.  
+* [👑🚫📜2️⃣0️⃣ On Tyranny: Twenty Lessons from the Twentieth Century](/content/books/on-tyranny.md) by Timothy Snyder: 📚 Offers twenty lessons from the twentieth century on how to resist tyranny, providing historical context for authoritarian tendencies.  
+* [🏭🫡 Manufacturing Consent: The Political Economy of the Mass Media](/content/books/manufacturing-consent.md) by Edward S. Herman and Noam Chomsky: 📖 Explores how mass media can be used to control public opinion in democratic societies.  
+* [📺💀 Amusing Ourselves to Death: Public Discourse in the Age of Show Business](/content/books/amusing-ourselves-to-death-public-discourse-in-the-age-of-show-business.md) by Neil Postman: 📺 Discusses the impact of television on public discourse and how it shapes the way we perceive reality.  
+* [👁️ Nineteen Eighty-Four](/content/books/1984.md) by George Orwell: 👁️‍🗨️ A classic dystopian novel about government surveillance, censorship, and the manipulation of truth, relevant to themes of controlled speech.  
 * The Art of the Deal by Donald J. Trump and Tony Schwartz: 💰 Provides an inside look at Trump's business philosophy and communication style, offering context to the persona satirized in the video.  
   
 ## 🐦 Tweet  

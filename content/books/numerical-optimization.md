@@ -86,7 +86,7 @@ affiliate link: https://amzn.to/49m0s5A
   
 ### 🔄 Contrasting Books  
 * [⛰️⬇️📈 Convex Optimization](./convex-optimization.md) by Stephen Boyd and Lieven Vandenberghe (Focuses solely on convex problems with a strong application emphasis)  
-* [⚙️🎯 Algorithms for Optimization](./algorithms-for-optimization.md) by Mykel Kochenderfer and Tim Wheeler (Broader introduction with a focus on practical algorithms for engineering systems, relevant to ML)  
+* [⚙️🎯 Algorithms for Optimization](books/algorithms-for-optimization.md) by Mykel Kochenderfer and Tim Wheeler (Broader introduction with a focus on practical algorithms for engineering systems, relevant to ML)  
   
 ### 🔗 Related Books  
 * 🧠 Optimization for Machine Learning edited by Suvrit Sra, Sebastian Nowozin, and Stephen J. Wright (Explores optimization's role in ML, including regularized and robust optimization)  

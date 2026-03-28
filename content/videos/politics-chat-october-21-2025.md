@@ -10,7 +10,7 @@ Channel: Heather Cox Richardson
 tags:
 youtube: https://www.youtube.com/embed/mE5NDVpuu0M
 ---
-[Home](../index.md) > [Videos](./index.md)  
+[Home](/content/index.md) > [Videos](/content/videos/index.md)  
 # 🏛️🗣️📅 Politics Chat, October 21, 2025  
 ![Politics Chat, October 21, 2025](https://www.youtube.com/embed/mE5NDVpuu0M)  
   
@@ -54,9 +54,9 @@ A: 📈 The *No Kings* rallies were significant because they demonstrated that t
   
 **Similar (Focus on the state of American democracy and polarization):**  
   
-* [🇺🇸⚔️ Divided Politics, Divided Nation: Hyperconflict in the Trump Era](../books/divided-politics-divided-nation-hyperconflict-in-the-trump-era.md) by Darrell M. West: 🇺🇸 Analyzes how economic, cultural, and political factors have created a dangerous **tribalism** that threatens US democracy. (Source 4.1)  
+* [🇺🇸⚔️ Divided Politics, Divided Nation: Hyperconflict in the Trump Era](/content/books/divided-politics-divided-nation-hyperconflict-in-the-trump-era.md) by Darrell M. West: 🇺🇸 Analyzes how economic, cultural, and political factors have created a dangerous **tribalism** that threatens US democracy. (Source 4.1)  
 * Democracies Divided: The Global Challenge of Political Polarization edited by Thomas Carothers and Andrew O'Donohue: 🌐 Provides a comparative, international analysis of severe political **polarization**, offering insights into the global democratic recession that America is part of. (Source 4.2)  
-* [🗳️🏛️☠️ How Democracies Die](../books/how-democracies-die.md) by Steven Levitsky and Daniel Ziblatt: ⚠️ Examines the subtle ways democratic institutions are undermined by elected leaders, providing a framework to understand the current administration's actions.  
+* [🗳️🏛️☠️ How Democracies Die](/content/books/how-democracies-die.md) by Steven Levitsky and Daniel Ziblatt: ⚠️ Examines the subtle ways democratic institutions are undermined by elected leaders, providing a framework to understand the current administration's actions.  
   
 **Contrasting (Focus on conservative or authoritarian perspectives and ideology):**  
   
@@ -66,7 +66,7 @@ A: 📈 The *No Kings* rallies were significant because they demonstrated that t
   
 **Creatively Related (Focus on specific themes like protest, architecture, or targeted action):**  
   
-* [🕊️💪 Why Civil Resistance Works: The Strategic Logic of Nonviolent Conflict](../books/why-civil-resistance-works-the-strategic-logic-of-nonviolent-conflict.md) by Erica Chenoweth and Maria J. Stephan: 🥊 A research-based exploration of nonviolent protest movements, offering data-driven insights into why certain tactics, like those discussed in the video, are more effective than others.  
+* [🕊️💪 Why Civil Resistance Works: The Strategic Logic of Nonviolent Conflict](/content/books/why-civil-resistance-works-the-strategic-logic-of-nonviolent-conflict.md) by Erica Chenoweth and Maria J. Stephan: 🥊 A research-based exploration of nonviolent protest movements, offering data-driven insights into why certain tactics, like those discussed in the video, are more effective than others.  
 * The White House: An Architectural History by William Ryan and Desmond Guinness: 🖼️ Provides a historical and architectural context for the White House, making the current demolition of the East Wing resonate more deeply as an attack on a historical institution.  
 * High Conflict: Why We Get Trapped and How We Get Out by Amanda Ripley: 💡 Distinguishes between the "good conflict" that promotes growth and the destructive **"high conflict"** seen in politics, offering strategies for citizens to de-escalate toxic political dynamics.  
   

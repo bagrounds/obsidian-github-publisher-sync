@@ -11,7 +11,7 @@ force_analyze_links: false
 link_analysis_time: 2026-03-22T23:33:07.540Z
 link_analysis_model: gemini-3.1-flash-lite-preview
 ---
-[Home](../index.md) > [Books](./index.md)  
+[Home](/content/index.md) > [Books](/content/books/index.md)  
 # 🌅🧑‍🤝‍🧑 The Dawn of Everything: A New History of Humanity  
 [🛒 The Dawn of Everything: A New History of Humanity. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4pDax3h)  
   
@@ -80,17 +80,17 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 ## 📚 Book Recommendations  
   
 ### 👯 Similar  
-* [🔄📜🏛️ Against the Grain: A Deep History of the Earliest States](books/against-the-grain-a-deep-history-of-the-earliest-states.md) by James C. Scott  
-* [🏛️💰 Debt: The First 5,000 Years](./debt-the-first-5000-years.md) Years by David Graeber  
+* [🔄📜🏛️ Against the Grain: A Deep History of the Earliest States](/content/books/against-the-grain-a-deep-history-of-the-earliest-states.md) by James C. Scott  
+* [🏛️💰 Debt: The First 5,000 Years](/content/books/debt-the-first-5000-years.md) Years by David Graeber  
 * 🛡️ The Art of Not Being Governed by James C. Scott  
   
 ### 🆚 Contrasting  
-* [📜🌍⏳ Sapiens: A Brief History of Humankind](./sapiens-a-brief-history-of-humankind.md) by Yuval Noah Harari  
-* [🔫🦠🔩 Guns, Germs, and Steel: The Fates of Human Societies](./guns-germs-and-steel-the-fates-of-human-societies.md) by Jared Diamond  
+* [📜🌍⏳ Sapiens: A Brief History of Humankind](/content/books/sapiens-a-brief-history-of-humankind.md) by Yuval Noah Harari  
+* [🔫🦠🔩 Guns, Germs, and Steel: The Fates of Human Societies](/content/books/guns-germs-and-steel-the-fates-of-human-societies.md) by Jared Diamond  
 * 👑 Leviathan by Thomas Hobbes  
   
 ### 🔗 Related  
-* [📖🏛️📉 Seeing Like a State: How Certain Schemes to Improve the Human Condition Have Failed](books/seeing-like-a-state-how-certain-schemes-to-improve-the-human-condition-have-failed.md) by James C. Scott  
+* [📖🏛️📉 Seeing Like a State: How Certain Schemes to Improve the Human Condition Have Failed](/content/books/seeing-like-a-state-how-certain-schemes-to-improve-the-human-condition-have-failed.md) by James C. Scott  
 * ❤️ Humankind: A Hopeful History by Rutger Bregman  
 * 📜 The Social Contract by Jean-Jacques Rousseau  
   

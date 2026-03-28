@@ -10,7 +10,7 @@ Channel: AI Engineer
 tags:
 youtube: https://youtu.be/CEvIs9y1uog
 ---
-[Home](../index.md) > [Videos](./index.md)  
+[Home](/content/index.md) > [Videos](/content/videos/index.md)  
 # 🧠🛠️➡️🤖 Don't Build Agents, Build Skills Instead – Barry Zhang & Mahesh Murag, Anthropic  
 ![Don't Build Agents, Build Skills Instead – Barry Zhang & Mahesh Murag, Anthropic](https://youtu.be/CEvIs9y1uog)  
   
@@ -52,5 +52,5 @@ youtube: https://youtu.be/CEvIs9y1uog
 * 🕸️ Linked by Albert-László Barabási. 🌐 Discusses the power of networks and connectivity, offering a perspective on distributed intelligence versus local file-based skills.  
   
 ### 🎨 Creatively Related  
-* [🦢 The Elements of Style](../books/the-elements-of-style.md) by William Strunk Jr. and E.B. White. ✍️ Relevant because the speakers emphasize brevity and clarity in instructions to ensure agent reliability.  
-* [🧑‍💻📈 The Pragmatic Programmer: Your Journey to Mastery](../books/the-pragmatic-programmer-your-journey-to-mastery.md) by Andrew Hunt and David Thomas. 💻 Provides timeless advice on modularity, automation, and treating knowledge as a version-controlled asset.
+* [🦢 The Elements of Style](/content/books/the-elements-of-style.md) by William Strunk Jr. and E.B. White. ✍️ Relevant because the speakers emphasize brevity and clarity in instructions to ensure agent reliability.  
+* [🧑‍💻📈 The Pragmatic Programmer: Your Journey to Mastery](/content/books/the-pragmatic-programmer-your-journey-to-mastery.md) by Andrew Hunt and David Thomas. 💻 Provides timeless advice on modularity, automation, and treating knowledge as a version-controlled asset.

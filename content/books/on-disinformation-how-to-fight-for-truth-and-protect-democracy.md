@@ -7,7 +7,7 @@ share: true
 affiliate link: https://amzn.to/3UBO7Cg
 CTA: 🛡️ Defend factual reality.
 ---
-[Home](../index.md) > [Books](./index.md)  
+[Home](/content/index.md) > [Books](/content/books/index.md)  
 # 📢🛡️ On Disinformation: How to Fight for Truth and Protect Democracy  
 [🛒 On Disinformation: How to Fight for Truth and Protect Democracy. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3UBO7Cg)  
   
@@ -41,7 +41,7 @@ CTA: 🛡️ Defend factual reality.
   
 ### 📑 Similar Books (Disinformation, Misinformation, Propaganda)  
   
-* [🚫✅🤥 Post-Truth](./post-truth.md) by Lee McIntyre  
+* [🚫✅🤥 Post-Truth](/content/books/post-truth.md) by Lee McIntyre  
 * How to Talk to a Science Denier by Lee McIntyre  
 * The Constitution of Knowledge: A Defense of Truth by Jonathan Rauch  
 * Attack From Within: How Disinformation Is Sabotaging America by Barbara McQuade  
@@ -54,15 +54,15 @@ CTA: 🛡️ Defend factual reality.
   
 * Bunk: The Rise of Hoaxes, Humbug, Plagiarists, Phonies, Post-facts, and Fake News by Kevin Young  
 * The War on Truth: 9/11, Disinformation and the Anatomy of Terrorism by Nafeez Ahmed  
-* [👑🚫📜2️⃣0️⃣ On Tyranny: Twenty Lessons from the Twentieth Century](./on-tyranny.md) by Timothy Snyder  
+* [👑🚫📜2️⃣0️⃣ On Tyranny: Twenty Lessons from the Twentieth Century](/content/books/on-tyranny.md) by Timothy Snyder  
   
 ### 🧠 Creatively Related Books (Cognitive Biases, Psychology of Belief, Future of Information, Societal Resilience)  
   
 * The Believing Brain by Michael Shermer  
 * Conspiracy by Michael Shermer  
 * Why People Believe Weird Things by Michael Shermer  
-* [✝️🗣️ Cultish: The Language of Fanaticism](./cultish-the-language-of-fanaticism.md) by Amanda Montell  
+* [✝️🗣️ Cultish: The Language of Fanaticism](/content/books/cultish-the-language-of-fanaticism.md) by Amanda Montell  
 * A Time Outside This Time by Amitava Kumar  
   
-## 💬 [Gemini](../software/gemini.md) Prompt (gemini-2.5-flash)  
+## 💬 [Gemini](/content/software/gemini.md) Prompt (gemini-2.5-flash)  
 > Write a markdown-formatted (start headings at level H2) book report, followed by a plethora of additional similar, contrasting, and creatively related book recommendations on On Disinformation: How to Fight for Truth and Protect Democracy. Never put book titles in quotes or italics. Be thorough in content discussed but concise and economical with your language. Structure the report with section headings and bulleted lists to avoid long blocks of text.

@@ -7,7 +7,7 @@ share: true
 affiliate link: https://amzn.to/3FEUG3b
 CTA: ♟️ Dominate the board.
 ---
-[Home](../index.md) > [Books](./index.md)  
+[Home](/content/index.md) > [Books](/content/books/index.md)  
 # ♟️🧑‍🏫 Bobby Fischer Teaches Chess  
 [🛒 Bobby Fischer Teaches Chess. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3FEUG3b)  
   
@@ -59,7 +59,7 @@ CTA: ♟️ Dominate the board.
 * 👤 ***Endgame* by Frank Brady:** 📖 A prominent biography of Bobby Fischer, offering insights into his life, personality, and career. ℹ️ Provides context about the man behind the chess book.  
 * 📜 ***The Immortal Game: A History of Chess* by David Shenk:** 📖 Explores the rich history and cultural significance of chess, tracing its evolution and impact across centuries.  
 * 🧩 ***Puzzlecraft: The Ultimate Guide to Making Hand-Built Puzzles* by Jessica Field:** 📖 While not about chess, this book delves into the principles of puzzle design. 💡 Understanding how puzzles are constructed can offer a different perspective on the tactical problems presented in *Bobby Fischer Teaches Chess*.  
-* **[🚶‍♂️🧠 Moonwalking with Einstein: The Art and Science of Remembering Everything](./moonwalking-with-einstein-the-art-and-science-of-remembering-everything.md) by Joshua Foer:** 📖 This book explores memory techniques, including how grandmasters remember complex positions. 💡 While not directly about chess instruction, it touches on the cognitive skills relevant to mastering the game and internalizing patterns taught in books like Fischer's.  
+* **[🚶‍♂️🧠 Moonwalking with Einstein: The Art and Science of Remembering Everything](/content/books/moonwalking-with-einstein-the-art-and-science-of-remembering-everything.md) by Joshua Foer:** 📖 This book explores memory techniques, including how grandmasters remember complex positions. 💡 While not directly about chess instruction, it touches on the cognitive skills relevant to mastering the game and internalizing patterns taught in books like Fischer's.  
   
-## 💬 [Gemini](../software/gemini.md) Prompt (gemini-2.5-flash-preview-04-17)  
+## 💬 [Gemini](/content/software/gemini.md) Prompt (gemini-2.5-flash-preview-04-17)  
 > Write a markdown-formatted (start headings at level H2) book report, followed by a plethora of additional similar, contrasting, and creatively related book recommendations on Bobby Fischer Teaches Chess. Be thorough in content discussed but concise and economical with your language. Structure the report with section headings and bulleted lists to avoid long blocks of text.

@@ -8,7 +8,7 @@ tags:
   - law
 affiliate link: https://amzn.to/3FIMCy5
 ---
-[Home](../index.md) > [Books](./index.md)  
+[Home](/content/index.md) > [Books](/content/books/index.md)  
 # 🧑‍⚖️📚 Law School for Everyone  
 [🛒 Law School for Everyone. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3FIMCy5)  
   
@@ -48,7 +48,7 @@ The course is designed to be accessible to a lay audience while still providing 
   
 * 📖 **_1L of a Ride: A Well-Traveled Guide to Your First Year of Law School_ by Andrew McClurg:** 📝 Provides practical advice and insights into navigating the challenges of the first year of law school, covering everything from studying and exams to maintaining well-being.  
 * 📖 **_Getting to Maybe: How to Excel on Law School Exams_ by Richard Michael Fischl and Jeremy Paul:** 🧐 Focuses specifically on the critical skill of issue-spotting and writing effective essay answers for law school exams, offering a different approach to legal analysis.  
-* **[📜🌿⚖️ The Bramble Bush: On Our Law and Its Study](./the-bramble-bush-on-our-law-and-its-study.md) by Karl N. Llewellyn:** 👴 A classic, albeit older, text that offers a philosophical and practical perspective on the nature of law and the study of it in law school.  
+* **[📜🌿⚖️ The Bramble Bush: On Our Law and Its Study](/content/books/the-bramble-bush-on-our-law-and-its-study.md) by Karl N. Llewellyn:** 👴 A classic, albeit older, text that offers a philosophical and practical perspective on the nature of law and the study of it in law school.  
   
 ### 🎭 Contrasting: Critical Perspectives and Alternatives  
   
@@ -62,5 +62,5 @@ The course is designed to be accessible to a lay audience while still providing 
 * 📖 **_To Kill a Mockingbird_ by Harper Lee:** 🕊️ While not strictly about law school, this classic novel provides a powerful narrative illustrating fundamental legal and ethical principles within the context of the American South, offering insights into justice, prejudice, and the role of lawyers.  
 * 📖 **_Great American Law Reviews: An Anthology_ edited by Robert C. Berring:** 🏛️ Provides a selection of influential articles from American law reviews, offering a glimpse into the academic discourse and evolving ideas within the legal field over time.  
   
-## 💬 [Gemini](../software/gemini.md) Prompt (gemini-2.5-flash-preview-04-17)  
+## 💬 [Gemini](/content/software/gemini.md) Prompt (gemini-2.5-flash-preview-04-17)  
 > Write a markdown-formatted (start headings at level H2) book report, followed by a plethora of additional similar, contrasting, and creatively related book recommendations on Law School for Everyone. Be thorough in content discussed but concise and economical with your language. Structure the report with section headings and bulleted lists to avoid long blocks of text.

@@ -7,7 +7,7 @@ share: true
 CTA: 🇺🇸 Understand polarization.
 affiliate link: https://amzn.to/3JKHwU4
 ---
-[Home](../index.md) > [Books](./index.md)  
+[Home](/content/index.md) > [Books](/content/books/index.md)  
 # 🧑‍🤝‍🧑🐘⬆️ The Great Alignment: Race, Party Transformation, and the Rise of Donald Trump  
 [🛒 The Great Alignment: Race, Party Transformation, and the Rise of Donald Trump. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3JKHwU4)  
   
@@ -60,17 +60,17 @@ affiliate link: https://amzn.to/3JKHwU4
 ### 🤝 Similar  
 * 📕 The Polarized Public by Alan I. Abramowitz  
 * 📕 Deep Roots: How Slavery Still Shapes Southern Politics by Avidit Acharya, Matthew Blackwell, and Maya Sen  
-* [🧑🏿⛓️🙈 The New Jim Crow: Mass Incarceration in the Age of Colorblindness](./the-new-jim-crow-mass-incarceration-in-the-age-of-colorblindness.md) by Michelle Alexander  
+* [🧑🏿⛓️🙈 The New Jim Crow: Mass Incarceration in the Age of Colorblindness](/content/books/the-new-jim-crow-mass-incarceration-in-the-age-of-colorblindness.md) by Michelle Alexander  
   
 ### 🙅 Contrasting  
 * 📕 The Great Revolt: Inside the Populist Coalition Reshaping American Politics by Salena Zito and Brad Todd  
 * 📕 Culture War? The Myth of a Polarized America by Morris P. Fiorina  
-* [🫥🇺🇸😡💔 Strangers in Their Own Land: Anger and Mourning on the American Right](./strangers-in-their-own-land.md) by Arlie Russell Hochschild  
+* [🫥🇺🇸😡💔 Strangers in Their Own Land: Anger and Mourning on the American Right](/content/books/strangers-in-their-own-land.md) by Arlie Russell Hochschild  
   
 ### 🔗 Related  
-* [😇🧠 The Righteous Mind: Why Good People Are Divided by Politics and Religion](./the-righteous-mind.md) by Jonathan Haidt  
+* [😇🧠 The Righteous Mind: Why Good People Are Divided by Politics and Religion](/content/books/the-righteous-mind.md) by Jonathan Haidt  
 * 📕 White Fragility: Why It's So Hard for White People to Talk About Racism by Robin DiAngelo  
-* [⚖️🤖 The Alignment Problem](./the-alignment-problem.md): Machine Learning and Human Values by Brian Christian (While not about politics, it explores the challenge of aligning complex systems with human values, a meta-theme relevant to political alignment)  
+* [⚖️🤖 The Alignment Problem](/content/books/the-alignment-problem.md): Machine Learning and Human Values by Brian Christian (While not about politics, it explores the challenge of aligning complex systems with human values, a meta-theme relevant to political alignment)  
   
 ## 🫵 What Do You Think?  
 🤔 Which of Abramowitz's core arguments resonates most with your observations of American politics today, and why? 😠 Do you believe negative partisanship is an enduring feature or a temporary phase?

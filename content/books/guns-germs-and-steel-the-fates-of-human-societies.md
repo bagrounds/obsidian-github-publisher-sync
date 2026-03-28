@@ -11,7 +11,7 @@ force_analyze_links: false
 link_analysis_time: 2026-03-22T23:33:05.445Z
 link_analysis_model: gemini-3.1-flash-lite-preview
 ---
-[Home](../index.md) > [Books](./index.md)  
+[Home](/content/index.md) > [Books](/content/books/index.md)  
 # 🔫🦠🔩 Guns, Germs, and Steel: The Fates of Human Societies  
 [🛒 Guns, Germs, and Steel: The Fates of Human Societies. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3GpLRKU)  
   
@@ -50,16 +50,16 @@ While widely acclaimed, *Guns, Germs, and Steel* has faced criticism. 👎 Some 
   
 * 🇨🇳 ***The Great Divergence: China, Europe, and the Making of the Modern World Economy*** by Kenneth Pomeranz. This work challenges Eurocentric views of economic history, arguing that Europe's rise was not solely due to internal factors but also heavily influenced by resources and opportunities gained from its colonies, offering a different perspective on the "why Europe?" question. ❓  
 * 🇪🇸 ***Seven Myths of the Spanish Conquest*** by Matthew Restall. This book directly challenges common misconceptions about the Spanish conquest of the Americas, arguing against the idea of a simple, inevitable European victory and highlighting the agency and resistance of indigenous peoples. It provides a more nuanced view of the encounters that Diamond discusses. 🌿  
-* **[🌅🧑‍🤝‍🧑 The Dawn of Everything: A New History of Humanity](./the-dawn-of-everything-a-new-history-of-humanity.md)** by David Graeber and David Wengrow. This book offers a radical reinterpretation of early human history, challenging conventional narratives about the origins of agriculture, states, and inequality, and arguing for a greater diversity of social forms in the past. 🕊️  
+* **[🌅🧑‍🤝‍🧑 The Dawn of Everything: A New History of Humanity](/content/books/the-dawn-of-everything-a-new-history-of-humanity.md)** by David Graeber and David Wengrow. This book offers a radical reinterpretation of early human history, challenging conventional narratives about the origins of agriculture, states, and inequality, and arguing for a greater diversity of social forms in the past. 🕊️  
   
 ### ✨ Creatively Related Books (Exploring Specific Aspects in More Detail or Different Ways)  
   
 * 🔄 ***The Columbian Exchange: Biological and Cultural Consequences of 1492*** by Alfred W. Crosby. This foundational text focuses specifically on the massive transfer of plants, animals, diseases, and people between the Old and New Worlds after Columbus's arrival, a key component of Diamond's "germs" argument. 🌍  
 * 🐟 ***Cod: A Biography of the Fish That Changed the World*** by Mark Kurlansky. This book demonstrates how a single commodity can have a profound impact on history, economics, and culture across different societies, illustrating a micro-history approach that complements Diamond's macro-level analysis. 🎣  
 * 🔥 ***Late Victorian Holocausts: El Niño Famines and the Making of the Third World*** by Mike Davis. Davis examines the impact of climate variability, specifically El Niño events, on famines in the late 19th century, highlighting how environmental factors, combined with political and economic structures, contributed to widespread suffering and global inequality. This delves deeper into the environmental vulnerability of societies. 🌡️  
-* **[📜🌍⏳ Sapiens: A Brief History of Humankind](./sapiens-a-brief-history-of-humankind.md)** by Yuval Noah Harari. While broader in scope, *Sapiens* covers the entire history of Homo sapiens and touches on themes of agricultural revolutions, the rise of empires, and the impact of technology and ideas, offering a more philosophical and conceptual take on human development.". 🧠  
+* **[📜🌍⏳ Sapiens: A Brief History of Humankind](/content/books/sapiens-a-brief-history-of-humankind.md)** by Yuval Noah Harari. While broader in scope, *Sapiens* covers the entire history of Homo sapiens and touches on themes of agricultural revolutions, the rise of empires, and the impact of technology and ideas, offering a more philosophical and conceptual take on human development.". 🧠  
   
-## 💬 [Gemini](../software/gemini.md) Prompt (gemini-2.5-flash-preview-04-17)  
+## 💬 [Gemini](/content/software/gemini.md) Prompt (gemini-2.5-flash-preview-04-17)  
 > Write a markdown-formatted (start headings at level H2) book report, followed by a plethora of additional similar, contrasting, and creatively related book recommendations on Guns, Germs, and Steel: The Fates of Human Societies. Be thorough in content discussed but concise and economical with your language. Structure the report with section headings and bulleted lists to avoid long blocks of text.  
   
 ## 🦋 Bluesky    

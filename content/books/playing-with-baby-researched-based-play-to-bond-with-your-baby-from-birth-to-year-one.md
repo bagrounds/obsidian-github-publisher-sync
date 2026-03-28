@@ -7,7 +7,7 @@ share: true
 CTA: 🧸 Nurture early growth.
 affiliate link: https://amzn.to/47x0jLP
 ---
-[Home](../index.md) > [Books](./index.md)  
+[Home](/content/index.md) > [Books](/content/books/index.md)  
 # 👶🧸 Playing with Baby: Researched-Based Play to Bond with Your Baby from Birth to Year One  
 [🛒 Playing with Baby: Researched-Based Play to Bond with Your Baby from Birth to Year One. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/47x0jLP)  
   
@@ -76,17 +76,17 @@ affiliate link: https://amzn.to/47x0jLP
 ## 📚 Book Recommendations  
   
 ### 👯 Similar  
-* [🕳️🧠👶🏽 The Whole-Brain Child: 12 Revolutionary Strategies to Nurture Your Child's Developing Mind](./the-whole-brain-child.md) by Daniel J. Siegel and Tina Payne Bryson: Focuses on understanding child brain development for more effective parenting.  
+* [🕳️🧠👶🏽 The Whole-Brain Child: 12 Revolutionary Strategies to Nurture Your Child's Developing Mind](/content/books/the-whole-brain-child.md) by Daniel J. Siegel and Tina Payne Bryson: Focuses on understanding child brain development for more effective parenting.  
 * 🗓️ The Wonder Weeks by Hetty van de Rijt and Frans Plooij: Explores predictable fussy phases and mental leaps in babies.  
 * 🤸 Baby Play for Every Day by Charlotte Stirling-Reed: Practical play ideas for baby's first year.  
   
 ### ↔️ Contrasting  
-* [😴👶  Solve Your Child's Sleep Problems](./solve-your-childs-sleep-problems.md) by Richard Ferber: Offers a more structured, parent-led approach to infant routines.  
+* [😴👶  Solve Your Child's Sleep Problems](/content/books/solve-your-childs-sleep-problems.md) by Richard Ferber: Offers a more structured, parent-led approach to infant routines.  
 * 🇫🇷 Bringing Up Bébé by Pamela Druckerman: Explores French parenting styles, often contrasting with intensive developmental play.  
   
 ### 🔗 Related  
-* [👶🧠😊📈📚 Brain Rules for Baby: How to Raise a Smart and Happy Child from Zero to Five](./brain-rules-for-baby.md) by John Medina: Discusses how a baby's brain develops and how parents can foster intelligence and happiness.  
-* [🚫🎭🧠 No-Drama Discipline: The Whole-Brain Way to Calm the Chaos and Nurture Your Child's Developing Mind](./no-drama-discipline.md) by Daniel J. Siegel and Tina Payne Bryson: Focuses on calm, connected parenting for behavioral guidance.  
+* [👶🧠😊📈📚 Brain Rules for Baby: How to Raise a Smart and Happy Child from Zero to Five](/content/books/brain-rules-for-baby.md) by John Medina: Discusses how a baby's brain develops and how parents can foster intelligence and happiness.  
+* [🚫🎭🧠 No-Drama Discipline: The Whole-Brain Way to Calm the Chaos and Nurture Your Child's Developing Mind](/content/books/no-drama-discipline.md) by Daniel J. Siegel and Tina Payne Bryson: Focuses on calm, connected parenting for behavioral guidance.  
 * 🇩🇰 The Danish Way of Parenting by Jessica Joelle Alexander and Iben Dissing Sandahl: Highlights the Danish approach to raising happy, resilient kids, including the role of free play.  
   
 ## 🫵 What Do You Think?  

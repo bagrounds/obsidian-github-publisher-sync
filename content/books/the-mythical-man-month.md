@@ -45,7 +45,7 @@ updated: 2026-03-10T06:15:35.343Z
 ### 👨‍💻 Similar Reads (Software Engineering & Project Management)  
   
 * 🤝 **Peopleware: Productive Projects and Teams** by Tom DeMarco and Timothy Lister: Focuses on the sociological and human aspects of software development, arguing that management issues, not technical ones, are often the biggest hurdles.  
-* 🛠️ **[🧑‍💻📈 The Pragmatic Programmer: Your Journey to Mastery](./the-pragmatic-programmer-your-journey-to-mastery.md)** by Andrew Hunt and David Thomas: A practical guide covering a wide range of software development topics, emphasizing professionalism, craftsmanship, and continuous improvement.  
+* 🛠️ **[🧑‍💻📈 The Pragmatic Programmer: Your Journey to Mastery](books/the-pragmatic-programmer-your-journey-to-mastery.md)** by Andrew Hunt and David Thomas: A practical guide covering a wide range of software development topics, emphasizing professionalism, craftsmanship, and continuous improvement.  
 * **[✅💻 Code Complete](./code-complete.md): A Practical Handbook of Software Construction** by Steve McConnell: A comprehensive guide to software construction techniques, bridging the gap between academic knowledge and real-world practice.  
 * 🚀 **Rapid Development: Taming Wild Software Schedules** by Steve McConnell: Focuses specifically on strategies for achieving faster software development cycles while managing risks.  
 * ✨ **The Design of Design: Essays from a Computer Scientist** by Frederick P. Brooks Jr.: Brooks' later work exploring the nature of design itself, applicable beyond just software.  
@@ -63,7 +63,7 @@ updated: 2026-03-10T06:15:35.343Z
 * 🌍 **[Thinking in Systems](./thinking-in-systems.md): A Primer** by Donella H. Meadows: An accessible introduction to systems thinking, exploring how feedback loops, stocks, and flows drive the behavior of complex systems.  
 * 🎓 **[The Fifth Discipline](./the-fifth-discipline.md): The Art & Practice of The Learning Organization** by Peter Senge: Explores systems thinking as one of five disciplines crucial for building organizations capable of continuous learning and adaptation.  
 * 🌀 **[Complexity](./complexity.md): A Guided Tour** by Melanie Mitchell: Provides an overview of complexity science, covering topics like chaos, networks, and emergence that resonate with the challenges of large-scale projects.  
-* 📱 **[The Design of Everyday Things](./the-design-of-everyday-things.md)** by Don Norman: While focused on product design, its principles of usability, discoverability, and managing complexity are relevant to software design and user experience.  
+* 📱 **[The Design of Everyday Things](books/the-design-of-everyday-things.md)** by Don Norman: While focused on product design, its principles of usability, discoverability, and managing complexity are relevant to software design and user experience.  
 * 🐜 **Emergence: The Connected Lives of Ants, Brains, Cities, and Software** by Steven Johnson: Explores how complex behaviors arise from simple, local interactions in various systems, including software.  
 * 🤝 **Systems Thinking: Managing Chaos and Complexity** by Jamshid Gharajedaghi: Connects systems thinking, design thinking, and management for executives dealing with complex organizational challenges.  
   

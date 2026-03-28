@@ -9,7 +9,7 @@ Platform:
 Channel: Ryder Carroll
 tags:
 ---
-[Home](../index.md) > [Videos](./index.md) | [📓 Theme System Journal](./this-journal-keeps-me-productive-and-maybe-you-too.md)  
+[Home](/content/index.md) > [Videos](/content/videos/index.md) | [📓 Theme System Journal](/content/videos/this-journal-keeps-me-productive-and-maybe-you-too.md)  
 # 📒 Bullet Journal  
 ![Bullet Journal](https://youtu.be/GfRf43JTqY4)  
   
@@ -24,7 +24,7 @@ tags:
 * 🌐 bulletjournal.com for more tips and tricks 💡 \[[02:39](http://www.youtube.com/watch?v=GfRf43JTqY4&t=159)].  
   
 ## 📚 Books  
-* 📖 **"[The Bullet Journal Method](../books/the-bullet-journal-method.md): Track the Past, Order the Present, Design the Future" by Ryder Carroll** - ✍️ This is the original guide to bullet journaling, written by the creator of the system. 💡 It provides a comprehensive overview of the method and its benefits. 👍  
+* 📖 **"[The Bullet Journal Method](/content/books/the-bullet-journal-method.md): Track the Past, Order the Present, Design the Future" by Ryder Carroll** - ✍️ This is the original guide to bullet journaling, written by the creator of the system. 💡 It provides a comprehensive overview of the method and its benefits. 👍  
   
 * ⏺️ **"Dot Journaling—A Practical Guide: How to Start and Keep the Planner, Tracker and Journal That Will Actually Make Your Life Better" by Rachel Wilkerson Miller** - ✨ Offers a practical approach to dot journaling, a variation of bullet journaling, focusing on customization 🎨 and personal growth 🌱.  
   

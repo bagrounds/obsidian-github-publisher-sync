@@ -10,7 +10,7 @@ Channel: PBS NewsHour
 tags:
 youtube: https://youtu.be/p4Pw585GFnM
 ---
-[Home](../index.md) > [Videos](./index.md)  
+[Home](/content/index.md) > [Videos](/content/videos/index.md)  
 # 🏛️🛑 Tamara Keith and Amy Walter on the deal to end the government shutdown  
 ![Tamara Keith and Amy Walter on the deal to end the government shutdown](https://youtu.be/p4Pw585GFnM)  
   
@@ -64,5 +64,5 @@ youtube: https://youtu.be/p4Pw585GFnM
   
 ### 🎨 Creatively Related  
   
-* [🔮🤷🏼‍♀️🤪 Predictably Irrational: The Hidden Forces That Shape Our Decisions](../books/predictably-irrational.md) by Dan Ariely: 🧠 A book on behavioral economics that offers insight into why voters and politicians might be drawn to easily understood, even if financially unrealistic, concepts like affordability and direct cash payments.  
-* [🤔🐇🐢 Thinking, Fast and Slow](../books/thinking-fast-and-slow.md) by Daniel Kahneman: 💡 Discusses the two systems of human thought, relevant for understanding how simple, emotional political messaging around health care costs can override complex legislative reasoning among the public.
+* [🔮🤷🏼‍♀️🤪 Predictably Irrational: The Hidden Forces That Shape Our Decisions](/content/books/predictably-irrational.md) by Dan Ariely: 🧠 A book on behavioral economics that offers insight into why voters and politicians might be drawn to easily understood, even if financially unrealistic, concepts like affordability and direct cash payments.  
+* [🤔🐇🐢 Thinking, Fast and Slow](/content/books/thinking-fast-and-slow.md) by Daniel Kahneman: 💡 Discusses the two systems of human thought, relevant for understanding how simple, emotional political messaging around health care costs can override complex legislative reasoning among the public.

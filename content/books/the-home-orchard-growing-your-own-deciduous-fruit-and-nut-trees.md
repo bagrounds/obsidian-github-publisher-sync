@@ -6,7 +6,7 @@ URL: https://bagrounds.org/books/the-home-orchard-growing-your-own-deciduous-fru
 share: true
 affiliate link: https://amzn.to/3Hn567M
 ---
-[Home](../index.md) > [Books](./index.md)  
+[Home](/content/index.md) > [Books](/content/books/index.md)  
 # 🏡🍎🌳 The Home Orchard: Growing Your Own Deciduous Fruit and Nut Trees  
 [🛒 The Home Orchard: Growing Your Own Deciduous Fruit and Nut Trees. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3Hn567M)  
   
@@ -52,7 +52,7 @@ affiliate link: https://amzn.to/3Hn567M
   
 ### 🍎 Similar Comprehensive Orchard Guides  
   
-* **[🏡🍎 The Backyard Orchardist: A Complete Guide to Growing Fruit Trees in the Home Garden](./the-backyard-orchardist-a-complete-guide-to-growing-fruit-trees-in-the-home-garden.md) by Stella Otto:** ℹ️ An expanded and updated guide that is also full of facts and handy tips. 📅 It includes a detailed seasonal almanac, though it's more of a one-size-fits-all for the continental US as the author is based in Michigan. 🍎 It features a helpful quick-reference chart for fruit varieties.  
+* **[🏡🍎 The Backyard Orchardist: A Complete Guide to Growing Fruit Trees in the Home Garden](/content/books/the-backyard-orchardist-a-complete-guide-to-growing-fruit-trees-in-the-home-garden.md) by Stella Otto:** ℹ️ An expanded and updated guide that is also full of facts and handy tips. 📅 It includes a detailed seasonal almanac, though it's more of a one-size-fits-all for the continental US as the author is based in Michigan. 🍎 It features a helpful quick-reference chart for fruit varieties.  
 * 🌿 **The Holistic Orchard: Tree Fruits and Berries the Biological Way by Michael Phillips:** 🌳 This book offers a different perspective, focusing on biological methods. ❄️ While useful, its advice may be more tailored to colder climates like northern New Hampshire, which could be irrelevant or misleading for growers in warmer regions like Southern California.  
   
 ### 🛠️ Focused on Specific Orchard Practices  
@@ -75,5 +75,5 @@ affiliate link: https://amzn.to/3Hn567M
 * 🍾 **Cider Making or Nut Pressing:** 🌰 For those interested in value-added products from their harvest.  
 * 🐝 **Attracting Pollinators and Beneficial Insects:** 🦋 Books on creating a garden habitat that supports the ecosystem of your orchard.  
   
-## 💬 [Gemini](../software/gemini.md) Prompt (gemini-2.5-pro-exp-03-25)  
+## 💬 [Gemini](/content/software/gemini.md) Prompt (gemini-2.5-pro-exp-03-25)  
 > Write a markdown-formatted (start headings at level H2) book report, followed by a plethora of additional similar, contrasting, and creatively related book recommendations on The Home Orchard: Growing Your Own Deciduous Fruit and Nut Trees. Be thorough in content discussed but concise and economical with your language. Structure the report with section headings and bulleted lists to avoid long blocks of text.

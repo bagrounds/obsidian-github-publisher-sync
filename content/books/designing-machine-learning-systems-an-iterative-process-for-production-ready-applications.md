@@ -7,7 +7,7 @@ share: true
 CTA: 🚀 Deploy intelligent applications.
 affiliate link: https://amzn.to/4lpZ59z
 ---
-[Home](../index.md) > [Books](./index.md)  
+[Home](/content/index.md) > [Books](/content/books/index.md)  
 # 🤖⚙️🔁 Designing Machine Learning Systems: An Iterative Process for Production-Ready Applications  
 [🛒 Designing Machine Learning Systems: An Iterative Process for Production-Ready Applications. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4lpZ59z)  
   
@@ -51,20 +51,20 @@ Chip Huyen provides a structured approach to thinking about ML systems, breaking
 * 🤔 **Understanding Machine Learning: From Theory to Algorithms** by Shai Shalev-Shwartz and Shai Ben-David. 🔬 A more theoretical deep dive into the principles and algorithms of machine learning.  
 * 🧮 **Foundations of Machine Learning** by Mehryar Mohri et al. 🧠 Another strong theoretical text covering the mathematical foundations of learning algorithms.  
 * 👁️ **Pattern Recognition and Machine Learning** by Christopher Bishop. 🧐 A highly regarded theoretical book on standard ML concepts, though less focused on modern deep learning or production.  
-* **[🧼💾 Clean Code: A Handbook of Agile Software Craftsmanship](./clean-code.md)** by Robert C. Martin. 💻 While essential for any software engineer, this book focuses on writing maintainable code, a different layer of system design than the end-to-end ML system.  
-* **[🦄👤🗓️ The Mythical Man-Month: Essays on Software Engineering](./the-mythical-man-month.md)** by Frederick Brooks. 🏛️ A classic in software engineering project management and development, offering insights into building complex systems but predating modern ML system challenges.  
+* **[🧼💾 Clean Code: A Handbook of Agile Software Craftsmanship](/content/books/clean-code.md)** by Robert C. Martin. 💻 While essential for any software engineer, this book focuses on writing maintainable code, a different layer of system design than the end-to-end ML system.  
+* **[🦄👤🗓️ The Mythical Man-Month: Essays on Software Engineering](/content/books/the-mythical-man-month.md)** by Frederick Brooks. 🏛️ A classic in software engineering project management and development, offering insights into building complex systems but predating modern ML system challenges.  
   
 ### 🎨 Creatively Related: Data Engineering, Distributed Systems, and SRE  
   
-* **[💾⬆️🛡️ Designing Data-Intensive Applications: The Big Ideas Behind Reliable, Scalable, and Maintainable Systems](./designing-data-intensive-applications.md)** by Martin Kleppmann. 💾 While not solely focused on ML, this book is a seminal work on designing data systems and is highly relevant for the data infrastructure underpinning ML.  
-* **[💾🏗️ Fundamentals of Data Engineering: Plan and Build Robust Data Systems](./fundamentals-of-data-engineering-plan-and-build-robust-data-systems.md)** by Joe Reis and Matt Housley. ⚙️ Provides a comprehensive overview of the data engineering lifecycle, essential for providing data to ML systems.  
-* **[💻⚙️🛡️📈 Site Reliability Engineering: How Google Runs Production Systems](./site-reliability-engineering.md)** by Betsy Beyer et al. ⚙️ A foundational text on SRE principles and practices for managing large-scale production systems, many of which are applicable to ML systems.  
+* **[💾⬆️🛡️ Designing Data-Intensive Applications: The Big Ideas Behind Reliable, Scalable, and Maintainable Systems](/content/books/designing-data-intensive-applications.md)** by Martin Kleppmann. 💾 While not solely focused on ML, this book is a seminal work on designing data systems and is highly relevant for the data infrastructure underpinning ML.  
+* **[💾🏗️ Fundamentals of Data Engineering: Plan and Build Robust Data Systems](/content/books/fundamentals-of-data-engineering-plan-and-build-robust-data-systems.md)** by Joe Reis and Matt Housley. ⚙️ Provides a comprehensive overview of the data engineering lifecycle, essential for providing data to ML systems.  
+* **[💻⚙️🛡️📈 Site Reliability Engineering: How Google Runs Production Systems](/content/books/site-reliability-engineering.md)** by Betsy Beyer et al. ⚙️ A foundational text on SRE principles and practices for managing large-scale production systems, many of which are applicable to ML systems.  
 * 📝 **The Site Reliability Workbook** by Betsy Beyer et al. 📚 A practical companion to the SRE book, offering exercises and guidance for implementing SRE principles.  
 * 🤝 **Effective DevOps: Building a Culture of Collaboration, Affinity, and Tooling at Scale** by Jennifer Davis and Katherine Daniels. 🧑‍🤝‍🧑 Focuses on the cultural and collaborative aspects necessary for successful operations, relevant to MLOps.  
 * 🐍 **Data Science from Scratch** by Joel Grus. 💻 Covers fundamental data science concepts using Python, including implementing ML algorithms, providing a foundational understanding of the 'model' component within a larger system.  
 * 🌐 **Data Management at Scale: Modern Data Architecture with Data Mesh and Data Fabric** by Piethein Strengholt. 🏢 Explores modern approaches to managing data in large organizations, relevant for sourcing data for complex ML systems.  
   
-## 💬 [Gemini](../software/gemini.md) Prompt (gemini-2.5-flash-preview-04-17)  
+## 💬 [Gemini](/content/software/gemini.md) Prompt (gemini-2.5-flash-preview-04-17)  
 > Write a markdown-formatted (start headings at level H2) book report, followed by a plethora of additional similar, contrasting, and creatively related book recommendations on Designing Machine Learning Systems: An Iterative Process for Production-Ready Applications. Be thorough in content discussed but concise and economical with your language. Structure the report with section headings and bulleted lists to avoid long blocks of text.  
   
 ## 🐦 Tweet  

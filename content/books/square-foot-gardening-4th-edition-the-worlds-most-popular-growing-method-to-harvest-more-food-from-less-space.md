@@ -9,7 +9,7 @@ affiliate link: https://amzn.to/3Ylv291
 tags:
   - gardening
 ---
-[Home](../index.md) > [Books](./index.md)  
+[Home](/content/index.md) > [Books](/content/books/index.md)  
 # 🌱🟩⬆️ Square Foot Gardening, 4th Edition: The World’s Most Popular Growing Method to Harvest MORE Food from Less Space  
 [🛒 Square Foot Gardening, 4th Edition: The World’s Most Popular Growing Method to Harvest MORE Food from Less Space. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3Ylv291)  
   
@@ -83,7 +83,7 @@ tags:
 * 📈 The Lean Farm by Ben Hartman focuses on efficiency and productivity in small-scale farming, applicable to intensive gardening.  
   
 ### ↔️ Contrasting Books  
-* 🌳 [🌍🌿 Gaia's Garden: A Guide to Home-Scale Permaculture](./gaias-garden.md) by Toby Hemenway introduces permaculture principles for home-scale gardens, focusing on ecological design and working with nature.  
+* 🌳 [🌍🌿 Gaia's Garden: A Guide to Home-Scale Permaculture](/content/books/gaias-garden.md) by Toby Hemenway introduces permaculture principles for home-scale gardens, focusing on ecological design and working with nature.  
 * 🧑‍🌾 The New Organic Grower by Eliot Coleman details methods for intensive organic vegetable production, often on a slightly larger scale than SFG.  
 * 🧘‍♀️ The One-Straw Revolution by Masanobu Fukuoka challenges modern agricultural assumptions with a philosophy of do-nothing farming.  
   

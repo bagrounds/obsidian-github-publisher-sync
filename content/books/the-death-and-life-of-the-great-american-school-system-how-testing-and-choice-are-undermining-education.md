@@ -8,7 +8,7 @@ affiliate link: https://amzn.to/4ntD7TK
 CTA: 🍎 Reclaim education.
 updated: 2026-03-14T07:08:19.006Z
 ---
-[Home](../index.md) > [Books](./index.md)  
+[Home](/content/index.md) > [Books](/content/books/index.md)  
 # 💀🇺🇸🏫 The Death and Life of the Great American School System: How Testing and Choice Are Undermining Education  
 [🛒 The Death and Life of the Great American School System: How Testing and Choice Are Undermining Education. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4ntD7TK)  
   
@@ -46,10 +46,10 @@ Her key critiques include:
 ### 📖 Similar Books  
 📚 These books echo Ravitch's concerns about standardized testing, school choice, privatization, and market-based reforms in education:  
   
-* **[👑🏫🤥 Reign of Error: The Hoax of the Privatization Movement and the Danger to America's Public Schools](./reign-of-error-the-hoax-of-the-privatization-movement-and-the-danger-to-americas-public-schools.md) by Diane Ravitch:** ➕ A direct follow-up to The Death and Life of the Great American School System, this book further dissects the privatization movement and its detrimental effects on public education.  
+* **[👑🏫🤥 Reign of Error: The Hoax of the Privatization Movement and the Danger to America's Public Schools](/content/books/reign-of-error-the-hoax-of-the-privatization-movement-and-the-danger-to-americas-public-schools.md) by Diane Ravitch:** ➕ A direct follow-up to The Death and Life of the Great American School System, this book further dissects the privatization movement and its detrimental effects on public education.  
 * ⚔️ **Slaying Goliath: The Passionate Resistance to Privatization and the Fight to Save America's Public Schools by Diane Ravitch:** ➡️ Ravitch's subsequent work chronicles the ongoing battles against corporate school reform, focusing on the resistance efforts by educators, parents, and students.  
 * 👨‍🏫 **The Teacher Wars: A History of America's Most Embattled Profession by Dana Goldstein:** 🕰️ This book offers a historical perspective on the teaching profession in America, touching upon various reform efforts and the challenges faced by teachers, often aligning with Ravitch's critiques of how reforms impact educators.  
-* **[😥🏫🇺🇸 The Shame of the Nation: The Restoration of Apartheid Schooling in America](./the-shame-of-the-nation-the-restoration-of-apartheid-schooling-in-america.md) by Jonathan Kozol:** 🗣️ Kozol's work vividly describes the profound funding disparities and "savage inequalities" that persist in public education, particularly in impoverished urban areas, highlighting systemic issues that market-based reforms often fail to address.  
+* **[😥🏫🇺🇸 The Shame of the Nation: The Restoration of Apartheid Schooling in America](/content/books/the-shame-of-the-nation-the-restoration-of-apartheid-schooling-in-america.md) by Jonathan Kozol:** 🗣️ Kozol's work vividly describes the profound funding disparities and "savage inequalities" that persist in public education, particularly in impoverished urban areas, highlighting systemic issues that market-based reforms often fail to address.  
 * 🤔 **What Does it Mean to be Well Educated? by Alfie Kohn:** ❓ This collection of essays challenges the education system's fixation on test scores and grades, questioning the true goals of education in a landscape dominated by standardized assessments.  
   
 ### ⚖️ Contrasting Books  
@@ -64,7 +64,7 @@ Her key critiques include:
 * ⏪ **Left Back: A Century of Battles Over School Reform by Diane Ravitch:** 🕰️ Ravitch's own earlier work provides a comprehensive historical account of various reform theories and debates over school standards and curricula throughout the 20th century, offering essential context for understanding the roots of current reform movements.  
 * 📜 **American Education: A History by Wayne J. Urban and Jennings L. Wagoner, Jr.:** 🇺🇸 This book provides a broad historical overview of American education from its pre-colonial origins to the present, tracing major educational movements and offering a larger framework for understanding contemporary issues.  
 * 🧠 **The Smartest Kids in the World: And How They Got That Way by Amanda Ripley:** 🌍 This book examines the education systems of high-performing countries, offering insights into alternative approaches to curriculum, teacher training, and student assessment that differ significantly from the American focus on testing and choice.  
-* **[🧑‍🎓🌱 How Children Succeed: Grit, Curiosity, and the Hidden Power of Character](./how-children-succeed-grit-curiosity-and-the-hidden-power-of-character.md) by Paul Tough:** 🌱 Tough's work investigates the importance of non-cognitive skills like grit, curiosity, and self-control for children's success, suggesting that an overemphasis on test scores may neglect crucial aspects of development and learning.  
+* **[🧑‍🎓🌱 How Children Succeed: Grit, Curiosity, and the Hidden Power of Character](/content/books/how-children-succeed-grit-curiosity-and-the-hidden-power-of-character.md) by Paul Tough:** 🌱 Tough's work investigates the importance of non-cognitive skills like grit, curiosity, and self-control for children's success, suggesting that an overemphasis on test scores may neglect crucial aspects of development and learning.  
 * 🤥 **Lies My Teacher Told Me: Everything Your American History Textbook Got Wrong by James W. Loewen:** 🏛️ While not directly about education reform, Loewen's critique of how American history is taught in schools highlights broader issues of curriculum, narrative, and critical thinking, which are indirectly related to Ravitch's concerns about the narrowing of educational content.  
   
 ## 💬 [Gemini](https://gemini.google.com) Prompt (gemini-2.5-flash)  

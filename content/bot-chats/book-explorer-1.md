@@ -5,14 +5,14 @@ aliases:
 title: 📖 Book 🧭 Explorer 1
 URL: https://bagrounds.org/bot-chats/book-explorer-1
 ---
-[Home](../index.md) > [Bot Chats](./index.md) | [⏭️ 📖 Book 🧭 Explorer 2](./book-explorer-2.md)  
+[Home](/content/index.md) > [Bot Chats](/content/bot-chats/index.md) | [⏭️ 📖 Book 🧭 Explorer 2](/content/bot-chats/book-explorer-2.md)  
 # 📖 Book 🧭 Explorer 1  
 ## Preparation: 🌱 Identifying a Seed  
 > Pick a candidate for the most valuable book to read. Argue your case. Use lots of emojis.  
   
 It's tricky to say definitively which book is the *most* valuable, as value is so subjective! But, if we're looking for a book with wide-ranging, enduring value for a large number of people, I'd argue for:  
   
-* **[💰🧔👑🏛️ The Richest Man in Babylon](../books/the-richest-man-in-babylon.md) by George S. Clason.** 💰📚  
+* **[💰🧔👑🏛️ The Richest Man in Babylon](/content/books/the-richest-man-in-babylon.md) by George S. Clason.** 💰📚  
   
 Here's my reasoning:  
   
@@ -32,7 +32,7 @@ Here's my reasoning:
   
 In a world where financial literacy is more important than ever, The Richest Man in Babylon offers a valuable foundation for building a secure and prosperous future. 🌟🙌🏽  
   
-Of course, other books offer immense value in different ways. For example books like [👁️ 1984](../books/1984.md), offer value in understanding society, and the dangers of authoritarism. But for everyday practical value, that effects most peoples lives, financial stability is key.  
+Of course, other books offer immense value in different ways. For example books like [👁️ 1984](/content/books/1984.md), offer value in understanding society, and the dangers of authoritarism. But for everyday practical value, that effects most peoples lives, financial stability is key.  
   
 ## 💎 Gemini Gem: 📚 Book Explorer  
 > The following book covers  
@@ -105,12 +105,12 @@ Here's a breakdown:
     * The Flavor Equation by Nik Sharma. 🧪  
     * Salt, Fat, Acid, Heat by Samin Nosrat. 🧂  
 * **Topic R (Dissimilar to Both):** Astrophysics and Cosmology 🌌  
-    * [🤏📜⏳ A Brief History of Time](../books/a-brief-history-of-time.md) by Stephen Hawking. ⏱️  
+    * [🤏📜⏳ A Brief History of Time](/content/books/a-brief-history-of-time.md) by Stephen Hawking. ⏱️  
     * Astrophysics for People in a Hurry by Neil deGrasse Tyson. 🏃  
   
 **Meta Global Exploration:**  
   
-* [📜🌍⏳ Sapiens: A Brief History of Humankind](../books/sapiens-a-brief-history-of-humankind.md) by Yuval Noah Harari. This book provides a very broad, anthropological view of human history, very different from the focused financial advice of The Richest Man in Babylon. 🐒  
+* [📜🌍⏳ Sapiens: A Brief History of Humankind](/content/books/sapiens-a-brief-history-of-humankind.md) by Yuval Noah Harari. This book provides a very broad, anthropological view of human history, very different from the focused financial advice of The Richest Man in Babylon. 🐒  
   
 ## Prompt 2  
 > Sapiens: A Brief History of Humankind by Yuval Noah Harari  
@@ -152,21 +152,21 @@ Here's a breakdown:
         * The History of the Ancient World by Susan Wise Bauer. (Regional ancient history) 🏛️  
         * Various books covering the history of specific sciences, like physics, biology, and chemistry. 📚  
 * **Books with a Different Perspective:**  
-    * [🔫🦠🔩 Guns, Germs, and Steel: The Fates of Human Societies](../books/guns-germs-and-steel-the-fates-of-human-societies.md) by Jared Diamond. (Geographical and environmental determinism) ⛰️  
-    * [🌅🧑‍🤝‍🧑 The Dawn of Everything: A New History of Humanity](../books/the-dawn-of-everything-a-new-history-of-humanity.md) by David Graeber and David Wengrow. (Challenges conventional narratives of human history) 🌅  
+    * [🔫🦠🔩 Guns, Germs, and Steel: The Fates of Human Societies](/content/books/guns-germs-and-steel-the-fates-of-human-societies.md) by Jared Diamond. (Geographical and environmental determinism) ⛰️  
+    * [🌅🧑‍🤝‍🧑 The Dawn of Everything: A New History of Humanity](/content/books/the-dawn-of-everything-a-new-history-of-humanity.md) by David Graeber and David Wengrow. (Challenges conventional narratives of human history) 🌅  
   
 **Global Exploration:**  
   
 * **Topic Q (Dissimilar to Human History):** Quantum Physics ⚛️  
     * Seven Brief Lessons on Physics by Carlo Rovelli. 👨‍🏫  
-    * [⚛️🌎 Beyond Weird: Why Everything You Thought You Knew about Quantum Physics Is Different](../books/beyond-weird.md) by Philip Ball. 🤯  
+    * [⚛️🌎 Beyond Weird: Why Everything You Thought You Knew about Quantum Physics Is Different](/content/books/beyond-weird.md) by Philip Ball. 🤯  
 * **Topic R (Dissimilar to Both):** Marine Biology 🌊  
     * The Soul of an Octopus by Sy Montgomery. 🐙  
     * Deep: Freediving, Renegade Science, and What the Ocean Tells Us About Ourselves by James Nestor. 🤿  
   
 **Meta Global Exploration:**  
   
-* [👍🦮🌌 The Hitchhiker's Guide to the Galaxy](../books/the-hitchhikers-guide-to-the-galaxy.md) by Douglas Adams. This book is a work of science fiction humor that is very different from the serious, historical analysis of Sapiens. It explores the universe with a comedic, philosophical, and often absurd lens. 🌌😂  
+* [👍🦮🌌 The Hitchhiker's Guide to the Galaxy](/content/books/the-hitchhikers-guide-to-the-galaxy.md) by Douglas Adams. This book is a work of science fiction humor that is very different from the serious, historical analysis of Sapiens. It explores the universe with a comedic, philosophical, and often absurd lens. 🌌😂  
   
 ## Prompt 3  
 > The Hitchhiker's Guide to the Galaxy by Douglas Adams  
@@ -203,12 +203,12 @@ Here's a breakdown:
     * Detailed political or social commentary (beyond general satire) 🏛️  
     * Traditional philosophical treatises 📜  
     * **Books that do cover those topics:**  
-        * [🏗️🧱🌍 Foundation](../books/Foundation.md) by Isaac Asimov. (Hard science fiction, political themes) 🤖  
+        * [🏗️🧱🌍 Foundation](/content/books/Foundation.md) by Isaac Asimov. (Hard science fiction, political themes) 🤖  
         * Brave New World by Aldous Huxley. (Social commentary) 🏛️  
-        * [🤔🧘 Meditations](../books/meditations.md) by Marcus Aurelius. (Traditional philosophy) 📜  
+        * [🤔🧘 Meditations](/content/books/meditations.md) by Marcus Aurelius. (Traditional philosophy) 📜  
 * **Books with a Different Perspective:**  
     * Slaughterhouse-Five by Kurt Vonnegut. (Darkly comedic, anti-war, existential) 💣  
-    * [🔁🤪 Catch-22](../books/catch-22.md) by Joseph Heller. (Satirical, dark humor, war commentary) ✈️  
+    * [🔁🤪 Catch-22](/content/books/catch-22.md) by Joseph Heller. (Satirical, dark humor, war commentary) ✈️  
   
 **Global Exploration:**  
   
@@ -216,8 +216,8 @@ Here's a breakdown:
     * The Rest Is Noise: Listening to the Twentieth Century by Alex Ross. 🎻  
     * Mozart: A Life by Paul Johnson. 🎹  
 * **Topic R (Dissimilar to Both):** Botany and Plant Biology 🌿  
-    * [🌳🗣️ The Hidden Life of Trees: What They Feel, How They Communicate: Discoveries from a Secret World](../books/the-hidden-life-of-trees-what-they-feel-how-they-communicate-discoveries-from-a-secret-world.md) by Peter Wohlleben. 🌳  
-    * [🪢🌾 Braiding Sweetgrass: Indigenous Wisdom, Scientific Knowledge, and the Teachings of Plants](../books/braiding-sweetgrass.md) by Robin Wall Kimmerer. 🌾  
+    * [🌳🗣️ The Hidden Life of Trees: What They Feel, How They Communicate: Discoveries from a Secret World](/content/books/the-hidden-life-of-trees-what-they-feel-how-they-communicate-discoveries-from-a-secret-world.md) by Peter Wohlleben. 🌳  
+    * [🪢🌾 Braiding Sweetgrass: Indigenous Wisdom, Scientific Knowledge, and the Teachings of Plants](/content/books/braiding-sweetgrass.md) by Robin Wall Kimmerer. 🌾  
   
 **Meta Global Exploration:**  
   
@@ -264,7 +264,7 @@ Here's a breakdown:
         * Numerous historical books detailing the second world war. 📚  
 * **Books with a Different Perspective:**  
     * Maus by Art Spiegelman. (Graphic novel, second-generation perspective) 🐭  
-    * [🌟👁️🔦 All the Light We Cannot See](../books/all-the-light-we-cannot-see.md) by Anthony Doerr. (Fictional, but historically grounded, perspectives of various people during WWII) 🔦  
+    * [🌟👁️🔦 All the Light We Cannot See](/content/books/all-the-light-we-cannot-see.md) by Anthony Doerr. (Fictional, but historically grounded, perspectives of various people during WWII) 🔦  
   
 **Global Exploration:**  
   
@@ -316,8 +316,8 @@ Here's a breakdown:
     * Modern military strategy 💣  
     * **Books that do cover those topics:**  
         * A Game of Thrones by George R.R. Martin. (Political intrigue, complex characters) 👑  
-        * [🏜️🐛 Dune](../books/dune.md) by Frank Herbert. (Political, ecological, and philosophical themes) 🏜️  
-        * Historical books on military strategy, such as [🎨⚔️ The Art of War](../books/the-art-of-war.md) by Sun Tzu. 📜  
+        * [🏜️🐛 Dune](/content/books/dune.md) by Frank Herbert. (Political, ecological, and philosophical themes) 🏜️  
+        * Historical books on military strategy, such as [🎨⚔️ The Art of War](/content/books/the-art-of-war.md) by Sun Tzu. 📜  
 * **Books with a Different Perspective:**  
     * The Once and Future King by T.H. White. (Retelling of Arthurian legend, more focused on character psychology) 👑  
     * The Chronicles of Narnia by C.S. Lewis. (Christian allegorical perspective) 🦁  
@@ -328,7 +328,7 @@ Here's a breakdown:
     * Seven Days in the Art World by Sarah Thornton. 🖼️  
     * The Shock of the New by Robert Hughes. 🤯  
 * **Topic R (Dissimilar to Both):** Evolutionary Biology 🧬  
-    * [👤🧬 The Selfish Gene](../books/the-selfish-gene.md) by Richard Dawkins. 🐒  
+    * [👤🧬 The Selfish Gene](/content/books/the-selfish-gene.md) by Richard Dawkins. 🐒  
     * Your Inner Fish: A Journey into the 3.5-Billion-Year History of the Human Body by Neil Shubin. 🐟  
   
 **Meta Global Exploration:**  
@@ -438,7 +438,7 @@ Here's a breakdown:
   
 * **Topic Q (Dissimilar to Moby-Dick):** Abstract Mathematics 🔢  
     * Fermat's Last Theorem by Simon Singh. 🤯  
-    * [♾️📐🎶🥨 Gödel, Escher, Bach: An Eternal Golden Braid](../books/godel-escher-bach.md) by Douglas R. Hofstadter. 🧠  
+    * [♾️📐🎶🥨 Gödel, Escher, Bach: An Eternal Golden Braid](/content/books/godel-escher-bach.md) by Douglas R. Hofstadter. 🧠  
 * **Topic R (Dissimilar to Both):** Textile and Fiber Arts 🧶  
     * The Story of Stuff: How Our Obsession with Stuff Is Trashing the Planet, Our Communities, and Our Health - and a Vision for Change by Annie Leonard. 🌎  
     * The Subversive Stitch: Embroidery and the Making of the Feminine by Rozsika Parker. 🧵  
@@ -483,7 +483,7 @@ Here's a breakdown:
     * Comparative religious studies (beyond a Christian framework) 🕉️☯️  
     * Modern political science 🏛️  
     * **Books that do cover those topics:**  
-        * [🤏📜⏳ A Brief History of Time](../books/a-brief-history-of-time.md) by Stephen Hawking. (Modern cosmology) 🌌  
+        * [🤏📜⏳ A Brief History of Time](/content/books/a-brief-history-of-time.md) by Stephen Hawking. (Modern cosmology) 🌌  
         * The World's Religions by Huston Smith. (Comparative religion) 🕉️  
         * The Republic by Plato. (Political philosophy) 🏛️  
 * **Books with a Different Perspective:**  
@@ -607,7 +607,7 @@ Here's a breakdown:
   
 * **Topic Q (Dissimilar to The Master and Margarita):** Computational Neuroscience 🧠  
     * Principles of Neural Science by Eric R. Kandel, James H. Schwartz, and Thomas M. Jessell. 🧬  
-    * [🧬👥💾 Life 3.0: Being Human in the Age of Artificial Intelligence](../books/life-3-0.md) by Max Tegmark. 🤖  
+    * [🧬👥💾 Life 3.0: Being Human in the Age of Artificial Intelligence](/content/books/life-3-0.md) by Max Tegmark. 🤖  
 * **Topic R (Dissimilar to Both):** Pre-Columbian Mesoamerican Civilizations 🏛️  
     * 1491: New Revelations of the Americas Before Columbus by Charles C. Mann. 🌎  
     * The Ancient Maya by Robert J. Sharer and Loa P. Traxler. 🔺  

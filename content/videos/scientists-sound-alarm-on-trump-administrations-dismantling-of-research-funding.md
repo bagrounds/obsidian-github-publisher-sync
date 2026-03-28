@@ -9,7 +9,7 @@ Platform:
 Channel: PBS NewsHour
 tags:
 ---
-[Home](../index.md) > [Videos](./index.md)  
+[Home](/content/index.md) > [Videos](/content/videos/index.md)  
 # Scientists sound alarm on Trump administration's dismantling of research funding  
 ![Scientists sound alarm on Trump administration's dismantling of research funding](https://youtu.be/MNA9bCEX8eM)  
   

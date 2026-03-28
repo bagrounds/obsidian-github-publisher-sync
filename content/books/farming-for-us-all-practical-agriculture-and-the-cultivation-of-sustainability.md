@@ -6,7 +6,7 @@ URL: https://bagrounds.org/books/farming-for-us-all-practical-agriculture-and-th
 share: true
 affiliate link: https://amzn.to/3FOaRuT
 ---
-[Home](../index.md) > [Books](./index.md)  
+[Home](/content/index.md) > [Books](/content/books/index.md)  
 # 🚜🧑‍🌾🌱 Farming for Us All: Practical Agriculture and the Cultivation of Sustainability  
 [🛒 Farming for Us All: Practical Agriculture and the Cultivation of Sustainability. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3FOaRuT)  
   
@@ -80,7 +80,7 @@ These books offer related insights by exploring the wider food system, the ecolo
 * ***🏞️ Living at Nature's Pace: 👨‍🌾 Farming and the American Dream*** by Gene Logsdon. Reflects on the satisfactions and realities of small-scale farming and rural life.  
 * ***🤪 The Sheer Ecstasy of Being a Lunatic Farmer*** by Joel Salatin. Further thoughts from Joel Salatin on sustainable and holistic farming.  
   
-## 💬 [Gemini](../software/gemini.md) Prompt (gemini-2.5-flash-preview-04-17)  
+## 💬 [Gemini](/content/software/gemini.md) Prompt (gemini-2.5-flash-preview-04-17)  
 > Write a markdown-formatted (start headings at level H2) book report, followed by a plethora of additional similar, contrasting, and creatively related book recommendations on Farming for Us All: Practical Agriculture and the Cultivation of Sustainability. Be thorough in content discussed but concise and economical with your language. Structure the report with section headings and bulleted lists to avoid long blocks of text.  
   
 ## 🐦 Tweet  

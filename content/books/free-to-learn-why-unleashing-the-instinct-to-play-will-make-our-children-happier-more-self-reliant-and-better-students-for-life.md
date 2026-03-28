@@ -7,7 +7,7 @@ share: true
 CTA: 🤸 Cultivate curiosity.
 affiliate link: https://amzn.to/4o3eqNV
 ---
-[Home](../index.md) > [Books](./index.md)  
+[Home](/content/index.md) > [Books](/content/books/index.md)  
 # 🧒🎮 Free to Learn: Why Unleashing the Instinct to Play Will Make Our Children Happier, More Self-Reliant, and Better Students for Life  
 [🛒 Free to Learn: Why Unleashing the Instinct to Play Will Make Our Children Happier, More Self-Reliant, and Better Students for Life. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4o3eqNV)  
   
@@ -74,12 +74,12 @@ affiliate link: https://amzn.to/4o3eqNV
 ### Contrasting Books  
 * 🗣️ **The Read-Aloud Handbook by Jim Trelease**  
 * 🐅 **Battle Hymn of the Tiger Mother by Amy Chua**  
-* **[🌱🧘🏼‍♀️🏆 Mindset: The New Psychology of Success](./mindset.md) by Carol S. Dweck**  
+* **[🌱🧘🏼‍♀️🏆 Mindset: The New Psychology of Success](/content/books/mindset.md) by Carol S. Dweck**  
   
 ### Related Books  
-* **[🏎️⛽ Drive: The Surprising Truth About What Motivates Us](./drive-the-surprising-truth-about-what-motivates-us.md) by Daniel H. Pink**  
+* **[🏎️⛽ Drive: The Surprising Truth About What Motivates Us](/content/books/drive-the-surprising-truth-about-what-motivates-us.md) by Daniel H. Pink**  
 * 🌲 **Last Child in the Woods Saving Our Children from Nature-Deficit Disorder by Richard Louv**  
-* **[❤️‍🔥💪 Grit: The Power of Passion and Perseverance](./grit-the-power-of-passion-and-perseverance.md) by Angela Duckworth**  
+* **[❤️‍🔥💪 Grit: The Power of Passion and Perseverance](/content/books/grit-the-power-of-passion-and-perseverance.md) by Angela Duckworth**  
   
 ## 🫵 What Do You Think?  
 🤔 Do you believe the benefits of self-directed play outweigh the perceived academic advantages of structured schooling? ❓ What's one practical step to integrate more free to learn principles into a child's life?

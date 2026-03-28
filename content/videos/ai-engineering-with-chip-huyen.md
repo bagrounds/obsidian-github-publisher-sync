@@ -11,7 +11,7 @@ tags:
   - AIEngineering
 youtube: https://youtu.be/98o_L3jlixw
 ---
-[Home](../index.md) > [Videos](./index.md) | [🤖🏗️ AI Engineering: Building Applications with Foundation Models](../books/ai-engineering-building-applications-with-foundation-models.md)  
+[Home](/content/index.md) > [Videos](/content/videos/index.md) | [🤖🏗️ AI Engineering: Building Applications with Foundation Models](/content/books/ai-engineering-building-applications-with-foundation-models.md)  
 # 🤖🧠⚙️👩‍💻 AI Engineering with Chip Huyen  
 ![AI Engineering with Chip Huyen](https://youtu.be/98o_L3jlixw)  
   
@@ -34,10 +34,10 @@ This discussion offers a 💡 pragmatic view of AI engineering, emphasizing prod
   
 ## 📚 Book Recommendations  
 * Working with AI: A practical guide for leaders, managers, and individual contributors by Thomas H. Davenport and Steven M. Miller: This book offers guidance on how to effectively integrate AI into organizations, aligning with the video's focus on practical AI application.  
-* [🤖⚙️🔁 Designing Machine Learning Systems: An Iterative Process for Production-Ready Applications](../books/designing-machine-learning-systems-an-iterative-process-for-production-ready-applications.md) by Chip Huyen: As the author of the video's discussed "AI Engineering" book, this provides a deeper dive into the technical aspects of building and deploying ML systems, offering a more in-depth perspective on the practicalities of AI engineering.  
+* [🤖⚙️🔁 Designing Machine Learning Systems: An Iterative Process for Production-Ready Applications](/content/books/designing-machine-learning-systems-an-iterative-process-for-production-ready-applications.md) by Chip Huyen: As the author of the video's discussed "AI Engineering" book, this provides a deeper dive into the technical aspects of building and deploying ML systems, offering a more in-depth perspective on the practicalities of AI engineering.  
 * The Ethical Algorithm: The Science of Socially Responsible Algorithm Design by Michael Kearns and Aaron Roth: This book explores the challenges of fairness, accountability, and transparency in algorithms, which is crucial for understanding the broader societal impact of AI systems mentioned in the video.  
 * Grokking Machine Learning by Luis Serrano: For those new to machine learning, this provides a fundamental understanding of core concepts, which can help in appreciating the underlying principles of the AI capabilities being leveraged through APIs.  
-* [🤔🐇🐢 Thinking, Fast and Slow](../books/thinking-fast-and-slow.md) by Daniel Kahneman: While not directly about AI, this book explores human cognitive biases and decision-making, offering insights into how human evaluation (as mentioned in the video) can be influenced and how AI systems might learn to emulate or mitigate such biases.  
+* [🤔🐇🐢 Thinking, Fast and Slow](/content/books/thinking-fast-and-slow.md) by Daniel Kahneman: While not directly about AI, this book explores human cognitive biases and decision-making, offering insights into how human evaluation (as mentioned in the video) can be influenced and how AI systems might learn to emulate or mitigate such biases.  
   
 ## 🐦 Tweet  
 <blockquote class="twitter-tweet" data-theme="dark"><p lang="en" dir="ltr">🤖🧠⚙️👩‍💻 AI Engineering with Chip Huyen<br><br>🚀 Product Development | 🧑‍🤝‍🧑 User Needs | ✍️ Prompt Engineering | 📚 Context Augmentation | ⚙️ Fine-tuning | ⚖️ Ethical Implications | 🔒 Security Considerations<a href="https://twitter.com/chipro?ref_src=twsrc%5Etfw">@chipro</a><a href="https://t.co/SPPkInnJa1">https://t.co/SPPkInnJa1</a></p>&mdash; Bryan Grounds (@bagrounds) <a href="https://twitter.com/bagrounds/status/1950788909790790085?ref_src=twsrc%5Etfw">July 31, 2025</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>

@@ -59,7 +59,7 @@ Daniel Coyle's "The Talent Code" argues that talent isn't a mysterious gift, but
 **Book Recommendations:**  
 * **Best Alternate Book on the Same Topic:** [⛰️📈🥇 Peak: Secrets from the New Science of Expertise](./peak.md) by Anders Ericsson and Robert Pool. This book delves deeper into the science of deliberate practice. 📚  
 * **Best Tangentially Related Book:** [🌱🧘🏼‍♀️🏆 Mindset: The New Psychology of Success](./mindset.md) by Carol S. Dweck. This book explores the importance of a growth mindset in achieving success. 🧠  
-* **Best Diametrically Opposed Book:** [🏃‍♂️⛰️ Born to Run: A Hidden Tribe, Superathletes, and the Greatest Race the World Has Never Seen](./born-to-run-a-hidden-tribe-superathletes-and-the-greatest-race-the-world-has-never-seen.md) by Christopher McDougall. While not strictly opposed, it emphasizes the innate abilities of certain individuals and cultures, contrasting with Coyle's focus on learned skills. 🏃  
+* **Best Diametrically Opposed Book:** [🏃‍♂️⛰️ Born to Run: A Hidden Tribe, Superathletes, and the Greatest Race the World Has Never Seen](books/born-to-run-a-hidden-tribe-superathletes-and-the-greatest-race-the-world-has-never-seen.md) by Christopher McDougall. While not strictly opposed, it emphasizes the innate abilities of certain individuals and cultures, contrasting with Coyle's focus on learned skills. 🏃  
 * **Best Fiction Book That Incorporates Related Ideas:** "Ender's Game" by Orson Scott Card. This science fiction novel explores the development of exceptional talent through rigorous training and practice, highlighting the power of focused effort and strategic thinking. 🎮  
   
 ## 💬 [Gemini](https://gemini.google.com) Prompt  

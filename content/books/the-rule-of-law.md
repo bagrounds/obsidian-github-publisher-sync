@@ -7,7 +7,7 @@ share: true
 CTA: ⚖️ Fortify justice.
 affiliate link: https://amzn.to/42Pm2fl
 ---
-[Home](../index.md) > [Books](./index.md)  
+[Home](/content/index.md) > [Books](/content/books/index.md)  
 # 🏛️⚖️ The Rule of Law  
 [🛒 The Rule of Law. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/42Pm2fl)  
   
@@ -70,7 +70,7 @@ affiliate link: https://amzn.to/42Pm2fl
   
 #### ⚖️ Similar: Core Rule of Law Texts  
 * 📖 The Rule of Law by Tom Bingham  
-* 📖 [🏛️⚖️ On the Rule of Law: History, Politics, Theory](books/on-the-rule-of-law-history-politics-theory.md) by Brian Z Tamanaha  
+* 📖 [🏛️⚖️ On the Rule of Law: History, Politics, Theory](/content/books/on-the-rule-of-law-history-politics-theory.md) by Brian Z Tamanaha  
 * 📖 Thoughtfulness and the Rule of Law by Jeremy Waldron  
 * 📖 Justice for Hedgehogs by Ronald Dworkin  
 * 📖 Introduction to the Study of the Law of the Constitution by A V Dicey  

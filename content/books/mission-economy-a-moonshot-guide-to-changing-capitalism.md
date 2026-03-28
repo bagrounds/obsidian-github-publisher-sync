@@ -7,7 +7,7 @@ share: true
 CTA: 🚀 Launch innovation.
 affiliate link: https://amzn.to/4puMiEr
 ---
-[Home](../index.md) > [Books](./index.md)  
+[Home](/content/index.md) > [Books](/content/books/index.md)  
 # 🚀🌍💰 Mission Economy: A Moonshot Guide to Changing Capitalism  
 [🛒 Mission Economy: A Moonshot Guide to Changing Capitalism. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4puMiEr)  
   
@@ -67,8 +67,8 @@ affiliate link: https://amzn.to/4puMiEr
 ## 📚 Book Recommendations  
   
 ### ➕ Similar  
-* [🏛️🏭 The Entrepreneurial State: Debunking Public vs Private Sector Myths](./the-entrepreneurial-state-debunking-public-vs-private-sector-myths.md) by Mariana Mazzucato  
-* [🍩🌍 Doughnut Economics: Seven Ways to Think Like a 21st-Century Economist](./doughnut-economics-seven-ways-to-think-like-a-21st-century-economist.md) by Kate Raworth  
+* [🏛️🏭 The Entrepreneurial State: Debunking Public vs Private Sector Myths](/content/books/the-entrepreneurial-state-debunking-public-vs-private-sector-myths.md) by Mariana Mazzucato  
+* [🍩🌍 Doughnut Economics: Seven Ways to Think Like a 21st-Century Economist](/content/books/doughnut-economics-seven-ways-to-think-like-a-21st-century-economist.md) by Kate Raworth  
 * ✨ Value(s) by Mark Carney  
   
 ### ➖ Contrasting  
@@ -79,7 +79,7 @@ affiliate link: https://amzn.to/4puMiEr
 ### 🔗 Related  
 * 🏘️ Governing the Commons by Elinor Ostrom  
 * 💡 Innovation and Its Enemies by Calestous Juma  
-* [📖🏛️📉 Seeing Like a State: How Certain Schemes to Improve the Human Condition Have Failed](./seeing-like-a-state-how-certain-schemes-to-improve-the-human-condition-have-failed.md) by James C. Scott  
+* [📖🏛️📉 Seeing Like a State: How Certain Schemes to Improve the Human Condition Have Failed](/content/books/seeing-like-a-state-how-certain-schemes-to-improve-the-human-condition-have-failed.md) by James C. Scott  
   
 ## 🫵 What Do You Think?  
   

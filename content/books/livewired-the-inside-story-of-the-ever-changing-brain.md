@@ -7,7 +7,7 @@ share: true
 affiliate link: https://amzn.to/4g7TEuk
 CTA: 🧠 Discover neuroplasticity.
 ---
-[Home](../index.md) > [Books](./index.md)  
+[Home](/content/index.md) > [Books](/content/books/index.md)  
 # 🧠🔄 Livewired: The Inside Story of the Ever-Changing Brain  
 [🛒 Livewired: The Inside Story of the Ever-Changing Brain. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4g7TEuk)  
   
@@ -41,7 +41,7 @@ CTA: 🧠 Discover neuroplasticity.
   
 📖 These books further explore the intricacies of the brain, its functions, and its remarkable ability to adapt and process information. 🔄  
   
-* **[🎭🤫🧠 Incognito: The Secret Lives of the Brain](./incognito.md)** by David Eagleman: This book, by the same author, delves into the vast unconscious processes that drive our thoughts, feelings, and behaviors, complementing the understanding of the brain's "behind-the-scenes" operations. 👀  
+* **[🎭🤫🧠 Incognito: The Secret Lives of the Brain](/content/books/incognito.md)** by David Eagleman: This book, by the same author, delves into the vast unconscious processes that drive our thoughts, feelings, and behaviors, complementing the understanding of the brain's "behind-the-scenes" operations. 👀  
 * 🎩 **The Man Who Mistook His Wife for a Hat** by Oliver Sacks: A classic collection of neurological case studies, this book provides empathetic and insightful accounts of individuals with unusual brain disorders, illuminating the brain's complex workings and its various ways of perceiving and interacting with the world. 🧠  
 * 👻 **Phantoms in the Brain: Probing the Mysteries of the Human Mind** by V.S. Ramachandran: This book explores fascinating neurological syndromes, such as phantom limbs and synesthesia, to uncover fundamental insights into how the brain constructs our sense of self and reality. 🤔  
   
@@ -49,8 +49,8 @@ CTA: 🧠 Discover neuroplasticity.
   
 ⚖️ While Livewired emphasizes the brain's dynamic adaptability, these books offer different perspectives, often highlighting the ingrained, less flexible aspects of human cognition and behavior, or exploring limits to our mental malleability. 🚫 ➡️ 🔄  
   
-* **[🤔🐇🐢 Thinking, Fast and Slow](./thinking-fast-and-slow.md)** by Daniel Kahneman: This Nobel Prize-winning work explores the two systems of thought that govern our minds—System 1 (fast, intuitive) and System 2 (slow, deliberate). ⏱️ While not directly contradictory, it highlights the deeply ingrained cognitive biases and heuristics that often lead to irrational decisions, suggesting a certain fixedness in our intuitive thought processes that are challenging to consciously override, even with awareness. 😓  
-* **[😇😈 Behave: The Biology of Humans at Our Best and Worst](./behave-the-biology-of-humans-at-our-best-and-worst.md)** by Robert M. Sapolsky: Sapolsky's comprehensive book examines the layers of influence—from milliseconds to millennia—that shape human behavior. 🕰️ While acknowledging plasticity, it often emphasizes the powerful, deeply rooted biological, genetic, and evolutionary factors that can feel more deterministic, providing a counterpoint to the idea of a perpetually rewiring, unconstrained brain. 🌳  
+* **[🤔🐇🐢 Thinking, Fast and Slow](/content/books/thinking-fast-and-slow.md)** by Daniel Kahneman: This Nobel Prize-winning work explores the two systems of thought that govern our minds—System 1 (fast, intuitive) and System 2 (slow, deliberate). ⏱️ While not directly contradictory, it highlights the deeply ingrained cognitive biases and heuristics that often lead to irrational decisions, suggesting a certain fixedness in our intuitive thought processes that are challenging to consciously override, even with awareness. 😓  
+* **[😇😈 Behave: The Biology of Humans at Our Best and Worst](/content/books/behave-the-biology-of-humans-at-our-best-and-worst.md)** by Robert M. Sapolsky: Sapolsky's comprehensive book examines the layers of influence—from milliseconds to millennia—that shape human behavior. 🕰️ While acknowledging plasticity, it often emphasizes the powerful, deeply rooted biological, genetic, and evolutionary factors that can feel more deterministic, providing a counterpoint to the idea of a perpetually rewiring, unconstrained brain. 🌳  
   
 ### 🎨 Creatively Related Books  
   

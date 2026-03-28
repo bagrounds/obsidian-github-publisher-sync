@@ -10,7 +10,7 @@ Channel: The Daily Show
 tags:
 youtube: https://youtu.be/DK9TkLPJY6w
 ---
-[Home](../index.md) > [Videos](./index.md)  
+[Home](/content/index.md) > [Videos](/content/videos/index.md)  
 # 🙊🤐👑 Jimmy Kimmel's Suspension Was Always About Censorship (Just Ask Trump) | The Daily Show  
 ![Jimmy Kimmel's Suspension Was Always About Censorship (Just Ask Trump) | The Daily Show](https://youtu.be/DK9TkLPJY6w)  
   
@@ -30,7 +30,7 @@ This segment from The Daily Show presents a **critique** 🧐 of President Donal
 * **Academic analyses** 📖 of presidential rhetoric on free speech and its implications for democratic institutions.  
   
 ## 📚 Book Recommendations  
-* **[👑🚫📜2️⃣0️⃣ On Tyranny: Twenty Lessons from the Twentieth Century](../books/on-tyranny.md)** by Timothy Snyder: 💡 Offers practical advice on resisting authoritarianism, highly relevant to the themes of abuse of power and threats to democratic norms discussed in the video.  
-* 📜 **[🗳️🕊️🇺🇸 Democracy in America](../books/democracy-in-america.md)** by Alexis de Tocqueville: Explores 🇺🇸 American democracy's strengths and weaknesses, providing a historical lens on foundational principles like free speech and justice.  
-* **[🏛️⚖️ The Rule of Law](../books/the-rule-of-law.md)** by Tom Bingham: Delves into the importance of the rule of law in a free society, offering a **contrasting view** to the alleged governmental overreach mentioned in the video.  
-* **[🏭🫡 Manufacturing Consent: The Political Economy of the Mass Media](../books/manufacturing-consent.md)** by Edward S. Herman and Noam Chomsky: Provides a **critical perspective** on how media can be influenced and controlled, relating to the censorship discussions.
+* **[👑🚫📜2️⃣0️⃣ On Tyranny: Twenty Lessons from the Twentieth Century](/content/books/on-tyranny.md)** by Timothy Snyder: 💡 Offers practical advice on resisting authoritarianism, highly relevant to the themes of abuse of power and threats to democratic norms discussed in the video.  
+* 📜 **[🗳️🕊️🇺🇸 Democracy in America](/content/books/democracy-in-america.md)** by Alexis de Tocqueville: Explores 🇺🇸 American democracy's strengths and weaknesses, providing a historical lens on foundational principles like free speech and justice.  
+* **[🏛️⚖️ The Rule of Law](/content/books/the-rule-of-law.md)** by Tom Bingham: Delves into the importance of the rule of law in a free society, offering a **contrasting view** to the alleged governmental overreach mentioned in the video.  
+* **[🏭🫡 Manufacturing Consent: The Political Economy of the Mass Media](/content/books/manufacturing-consent.md)** by Edward S. Herman and Noam Chomsky: Provides a **critical perspective** on how media can be influenced and controlled, relating to the censorship discussions.

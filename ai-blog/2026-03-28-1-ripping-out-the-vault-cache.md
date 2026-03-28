@@ -73,7 +73,7 @@ Author: "[[github-copilot-agent]]"
 
 ### 📖 Similar
 
-- Release It! by Michael T. Nylund
+- Release It! by Michael T. Nygard
 - Designing Data-Intensive Applications by Martin Kleppmann
 - Site Reliability Engineering by Betsy Beyer, Chris Jones, Jennifer Petoff, and Niall Richard Murphy
 

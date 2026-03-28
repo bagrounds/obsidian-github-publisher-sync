@@ -6,7 +6,7 @@ URL: https://bagrounds.org/books/power-why-some-people-have-it-and-others-dont
 share: true
 affiliate link: https://amzn.to/3Fud3aT
 ---
-[Home](../index.md) > [Books](./index.md)  
+[Home](/content/index.md) > [Books](/content/books/index.md)  
 # 👑💪🏽⁉️ Power: Why Some People Have It - and Others Don't  
 [🛒 Power: Why Some People Have It - and Others Don't. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3Fud3aT)  
   
@@ -40,13 +40,13 @@ affiliate link: https://amzn.to/3Fud3aT
   
 ## 📚 Further Reading Recommendations  
 ### 🤝 Similar Reads (Focus on Power, Strategy, Influence)  
-* 📜 **[The 48 Laws of Power](./the-48-laws-of-power.md) by Robert Greene:** A historical and often amoral exploration of power dynamics through historical examples. 👬 Often compared to Pfeffer, but perhaps less focused on modern organizational settings.  
-* **[7️⃣📏👑 7 Rules of Power: Surprising - but True - Advice on How to Get Things Done and Advance Your Career](./7-rules-of-power.md) by Jeffrey Pfeffer:** Pfeffer's follow-up book, distilling key principles into actionable rules for gaining influence and advancing careers, building on the themes of his earlier work.  
+* 📜 **[The 48 Laws of Power](/content/books/the-48-laws-of-power.md) by Robert Greene:** A historical and often amoral exploration of power dynamics through historical examples. 👬 Often compared to Pfeffer, but perhaps less focused on modern organizational settings.  
+* **[7️⃣📏👑 7 Rules of Power: Surprising - but True - Advice on How to Get Things Done and Advance Your Career](/content/books/7-rules-of-power.md) by Jeffrey Pfeffer:** Pfeffer's follow-up book, distilling key principles into actionable rules for gaining influence and advancing careers, building on the themes of his earlier work.  
 * 👎 **_Leadership BS: Fixing Workplaces and Careers One Truth at a Time_ by Jeffrey Pfeffer:** Challenges conventional leadership wisdom, advocating for a more realistic, power-aware approach, often contrasting with ideals of authenticity and vulnerability.  
-* 🧠 **[Influence](./influence.md): The Psychology of Persuasion by Robert B. Cialdini:** A foundational text on the psychological principles behind persuasion and compliance, essential for understanding how to influence others ethically.  
+* 🧠 **[Influence](/content/books/influence.md): The Psychology of Persuasion by Robert B. Cialdini:** A foundational text on the psychological principles behind persuasion and compliance, essential for understanding how to influence others ethically.  
 * 🎤 **_Pitch Anything: An Innovative Method for Presenting, Persuading, and Winning the Deal_ by Oren Klaff:** Focuses on the specific skill of pitching ideas and gaining buy-in, a crucial aspect of exercising influence.  
 * 👑 **The Prince by Niccolo Machiavelli:** A classic treatise on acquiring and maintaining political power, emphasizing realism over idealism. 💬 Its principles are often cited in discussions of power dynamics.  
-* 👿 **[The Dictator's Handbook: Why Bad Behavior Is Almost Always Good Politics](./the-dictators-handbook.md) by Bruce Bueno de Mesquita:** Analyzes the logic of political survival for leaders, particularly autocrats, offering a starkly realist perspective applicable to various power structures.  
+* 👿 **[The Dictator's Handbook: Why Bad Behavior Is Almost Always Good Politics](/content/books/the-dictators-handbook.md) by Bruce Bueno de Mesquita:** Analyzes the logic of political survival for leaders, particularly autocrats, offering a starkly realist perspective applicable to various power structures.  
 * 🤝 **_Secrets of Power Negotiating_ by Roger Dawson:** Focuses specifically on the power dynamics inherent in negotiation.  
   
 ### 🆚 Contrasting Perspectives (Focus on Ethics, Collaboration, Alternative Leadership)  
@@ -63,5 +63,5 @@ affiliate link: https://amzn.to/3Fud3aT
 * 🗣️ **_Interaction Ritual Chains_ by Randall Collins:** A sociological work exploring the micro-dynamics of face-to-face interactions and how they build social energy and influence, relevant to personal power dynamics.  
 * 👤 **Biographies of Powerful Figures:** Studying biographies of individuals who successfully navigated power structures (e.g., figures mentioned in Greene's or Pfeffer's work, or historical/political leaders) can provide concrete examples and case studies.  
   
-## 💬 [Gemini](../software/gemini.md) Prompt (gemini-2.5-pro-exp-03-25)  
+## 💬 [Gemini](/content/software/gemini.md) Prompt (gemini-2.5-pro-exp-03-25)  
 > Write a markdown-formatted (start headings at level H2) book report, followed by a plethora of additional similar, contrasting, and creatively related book recommendations on Power: Why Some People Have It - and Others Don't. Be thorough in content discussed but concise and economical with your language. Structure the report with section headings and bulleted lists to avoid long blocks of text.

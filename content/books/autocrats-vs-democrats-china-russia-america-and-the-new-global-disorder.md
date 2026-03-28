@@ -7,7 +7,7 @@ share: true
 affiliate link: https://amzn.to/3JLty4g
 CTA: 🌍 Understand global power.
 ---
-[Home](../index.md) > [Books](./index.md)  
+[Home](/content/index.md) > [Books](/content/books/index.md)  
 # 👑⚔️🇺🇸 Autocrats vs Democrats: China, Russia, America, and the New Global Disorder  
 [🛒 Autocrats vs Democrats: China, Russia, America, and the New Global Disorder. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3JLty4g)  
   
@@ -83,8 +83,8 @@ CTA: 🌍 Understand global power.
   
 ### 🔗 Related  
 * 📖 Prisoners of Geography by Tim Marshall  
-* [🌎👎👑💰🏚️ Why Nations Fail: The Origins of Power, Prosperity, and Poverty](./why-nations-fail-the-origins-of-power-prosperity-and-poverty.md) by Daron Acemoglu and James A. Robinson  
-* [👑🚫📜2️⃣0️⃣ On Tyranny: Twenty Lessons from the Twentieth Century](./on-tyranny.md) by Timothy Snyder  
+* [🌎👎👑💰🏚️ Why Nations Fail: The Origins of Power, Prosperity, and Poverty](/content/books/why-nations-fail-the-origins-of-power-prosperity-and-poverty.md) by Daron Acemoglu and James A. Robinson  
+* [👑🚫📜2️⃣0️⃣ On Tyranny: Twenty Lessons from the Twentieth Century](/content/books/on-tyranny.md) by Timothy Snyder  
   
 ## 🫵 What Do You Think?  
 🤔 Do you believe the new Cold War framework is entirely unhelpful, or are there aspects of it that still resonate with current global dynamics? ❓ What, in your view, is the most critical internal challenge facing democracies today?  

@@ -12,7 +12,7 @@ force_analyze_links: false
 link_analysis_time: 2026-03-22T23:34:07.714Z
 link_analysis_model: gemini-3.1-flash-lite-preview
 ---
-[Home](../index.md) > [Books](./index.md)  
+[Home](/content/index.md) > [Books](/content/books/index.md)  
 # ♾️📐🎶🥨 Gödel, Escher, Bach: An Eternal Golden Braid  
 [🛒 Gödel, Escher, Bach: An Eternal Golden Braid. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3ZGTin5)  
   
@@ -74,7 +74,7 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 * **Best Tangentially Related Book:** "The Emperor's New Mind" by Roger Penrose. A more physics-based exploration of consciousness and the limitations of computation. ⚛️  
 * **Best Diametrically Opposed Book:** "The Conscious Mind: In Search of a Fundamental Theory" by David Chalmers. This book argues for a more dualistic view of consciousness, suggesting that it cannot be fully explained by physical processes. ☯️  
 * **Best Fiction Book That Incorporates Related Ideas:** "Permutation City" by Greg Egan. A science fiction novel that explores the concept of simulated realities and the nature of consciousness. 💻  
-* **Best More General Book:** "[Sapiens: A Brief History of Humankind](books/sapiens-a-brief-history-of-humankind.md)" by Yuval Noah Harari. This book explores the broad sweep of human history, including the development of language, culture, and consciousness. 🌍  
+* **Best More General Book:** "[Sapiens: A Brief History of Humankind](/content/books/sapiens-a-brief-history-of-humankind.md)" by Yuval Noah Harari. This book explores the broad sweep of human history, including the development of language, culture, and consciousness. 🌍  
 * **Best More Specific Book:** "Logicomix" by Apostolos Doxiadis and Christos H. Papadimitriou. A graphic novel that tells the story of Bertrand Russell's quest to find the foundations of mathematics. 🔢  
 * **Best More Rigorous Book:** "Computability and Logic" by George S. Boolos, John P. Burgess, and Richard C. Jeffrey. This text is a standard graduate-level introduction to mathematical logic and computability theory. 📝  
 * **Best More Accessible Book:** "What Is Life? With Mind and Matter and Autobiographical Sketches" by Erwin Schrödinger. This book explores the physical basis of life and consciousness in a clear and accessible way. 🧬  

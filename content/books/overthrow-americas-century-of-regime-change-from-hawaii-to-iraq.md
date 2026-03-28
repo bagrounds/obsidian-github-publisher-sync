@@ -7,7 +7,7 @@ share: true
 CTA: 🔍 Discover uncomfortable truths.
 affiliate link: https://amzn.to/3YnPR3N
 ---
-[Home](../index.md) > [Books](./index.md)  
+[Home](/content/index.md) > [Books](/content/books/index.md)  
 # 🇺🇸💥🏛️ Overthrow: America's Century of Regime Change from Hawaii to Iraq  
 [🛒 Overthrow: America's Century of Regime Change from Hawaii to Iraq. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3YnPR3N)  
   
@@ -62,7 +62,7 @@ affiliate link: https://amzn.to/3YnPR3N
 ## 📚 Book Recommendations  
 ### 🤝 Similar  
 * 📖 All the Shah's Men by Stephen Kinzer  
-* [🕵️📜 Legacy of Ashes: The History of the CIA](./legacy-of-ashes-the-history-of-the-cia.md) by Tim Weiner  
+* [🕵️📜 Legacy of Ashes: The History of the CIA](/content/books/legacy-of-ashes-the-history-of-the-cia.md) by Tim Weiner  
 * 📖 Killing Hope: US Military and CIA Interventions Since World War II by William Blum  
   
 ### 🆚 Contrasting  

@@ -7,7 +7,7 @@ share: true
 CTA: ⚖️ Confront unchecked power.
 affiliate link: https://amzn.to/48ei82n
 ---
-[Home](../index.md) > [Books](./index.md)  
+[Home](/content/index.md) > [Books](/content/books/index.md)  
 # 😱🏛️ The Terror Presidency: Law and Judgment Inside the Bush Administration  
 [🛒 The Terror Presidency: Law and Judgment Inside the Bush Administration. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/48ei82n)  
   
@@ -82,7 +82,7 @@ affiliate link: https://amzn.to/48ei82n
   
 ### Related  
 * ☢️ Command and Control: Nuclear Weapons, the Damascus Accident, and the Illusion of Safety by Eric Schlosser  
-* [🤔🐇🐢 Thinking, Fast and Slow](./thinking-fast-and-slow.md) by Daniel Kahneman (for cognitive biases in high-stakes decision-making)  
+* [🤔🐇🐢 Thinking, Fast and Slow](/content/books/thinking-fast-and-slow.md) by Daniel Kahneman (for cognitive biases in high-stakes decision-making)  
 * 🩸 Bad Blood: Secrets and Lies in a Silicon Valley Startup by John Carreyrou (for institutional pressures and ethical failures)  
   
 ## 🫵 What Do You Think?  

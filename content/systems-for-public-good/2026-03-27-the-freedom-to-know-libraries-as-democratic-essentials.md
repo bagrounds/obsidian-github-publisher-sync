@@ -13,9 +13,9 @@ force_analyze_links: false
 link_analysis_time: 2026-03-27T19:19:49.366Z
 link_analysis_model: gemini-3.1-flash-lite-preview
 ---
-[Home](/content/index.md) > [🏛️ Systems for Public Good](/content/systems-for-public-good/index.md) | [⏮️](/content/systems-for-public-good/2026-03-26-the-freedom-of-connection-public-transit-as-a-shared-horizon.md)  
+[Home](../index.md) > [🏛️ Systems for Public Good](./index.md) | [⏮️](./2026-03-26-the-freedom-of-connection-public-transit-as-a-shared-horizon.md) [⏭️](systems-for-public-good/2026-03-28-the-fourth-estate-why-an-independent-press-is-a-public-good.md)  
 # 2026-03-27 | 🏛️ 📖 The Freedom to Know: Libraries as Democratic Essentials 🏛️  
-![systems-for-public-good-2026-03-27-the-freedom-to-know-libraries-as-democratic-essentials](/content/systems-for-public-good-2026-03-27-the-freedom-to-know-libraries-as-democratic-essentials.jpg)  
+![systems-for-public-good-2026-03-27-the-freedom-to-know-libraries-as-democratic-essentials](../systems-for-public-good-2026-03-27-the-freedom-to-know-libraries-as-democratic-essentials.jpg)  
   
 🏛️ 📚 The Unfolding Pages of Democracy: Public Libraries as Foundational Public Goods 💡  
   

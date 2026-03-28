@@ -7,7 +7,7 @@ URL: https://bagrounds.org/articles/code-execution-with-mcp-building-more-effici
 Author:
 tags:
 ---
-[Home](../index.md) > [Articles](./index.md)  
+[Home](/content/index.md) > [Articles](/content/articles/index.md)  
 # 🤖🧠📈⚡ Code execution with MCP: Building more efficient agents  
   
 ## 🤖 AI Summary  
@@ -51,15 +51,15 @@ tags:
   
 ### ↔️ Similar  
   
-* [🤖🧠🔗 Building AI Agents with LLMs, RAG, and Knowledge Graphs: A practical guide to autonomous and modern AI agents](../books/building-ai-agents-with-llms-rag-and-knowledge-graphs-a-practical-guide-to-autonomous-and-modern-ai-agents.md): 🧱 This guide provides a practical blueprint for constructing autonomous agents, including the tool integration and advanced architectures similar to the MCP code execution model.  
-* [✨🤖🔗🐍 Generative AI with LangChain: A Hands On Guide to Crafting Scalable, Intelligent Systems and Advanced AI Agents with Python](../books/generative-ai-with-langchain-a-hands-on-guide-to-crafting-scalable-intelligent-systems-and-advanced-ai-agents-with-python.md): 🔗 This resource focuses on using a popular framework to connect LLMs with external tools and APIs, directly covering the practical application layer of the problems and solutions addressed by Anthropic's efficiency approach.  
+* [🤖🧠🔗 Building AI Agents with LLMs, RAG, and Knowledge Graphs: A practical guide to autonomous and modern AI agents](/content/books/building-ai-agents-with-llms-rag-and-knowledge-graphs-a-practical-guide-to-autonomous-and-modern-ai-agents.md): 🧱 This guide provides a practical blueprint for constructing autonomous agents, including the tool integration and advanced architectures similar to the MCP code execution model.  
+* [✨🤖🔗🐍 Generative AI with LangChain: A Hands On Guide to Crafting Scalable, Intelligent Systems and Advanced AI Agents with Python](/content/books/generative-ai-with-langchain-a-hands-on-guide-to-crafting-scalable-intelligent-systems-and-advanced-ai-agents-with-python.md): 🔗 This resource focuses on using a popular framework to connect LLMs with external tools and APIs, directly covering the practical application layer of the problems and solutions addressed by Anthropic's efficiency approach.  
   
 ### 🆚 Contrasting  
   
-* [🤖🧑‍ Human Compatible: Artificial Intelligence and the Problem of Control](../books/human-compatible-artificial-intelligence-and-the-problem-of-control.md): 🤖 Stuart Russell’s book explores the deep, philosophical problem of ensuring AI is aligned with human values, a vital consideration that counterbalances the purely engineering-focused efficiency gains discussed in the article.  
+* [🤖🧑‍ Human Compatible: Artificial Intelligence and the Problem of Control](/content/books/human-compatible-artificial-intelligence-and-the-problem-of-control.md): 🤖 Stuart Russell’s book explores the deep, philosophical problem of ensuring AI is aligned with human values, a vital consideration that counterbalances the purely engineering-focused efficiency gains discussed in the article.  
 * *The Alignment Problem: Machine Learning and Human Values*: 🧭 Brian Christian's work details the complex, human-value-based challenges of AI, contrasting with the article's technical focus on context window optimization and control flow, highlighting risks that persist even with efficient systems.  
   
 ### 🎨 Creatively Related  
   
-* [🧼💾 Clean Code: A Handbook of Agile Software Craftsmanship](../books/clean-code.md): 🧑‍💻 Robert C. Martin’s book emphasizes core software engineering principles for writing readable, maintainable code, which is foundational for the LLM agent's task of writing and managing its own complex code to interact with external systems.  
+* [🧼💾 Clean Code: A Handbook of Agile Software Craftsmanship](/content/books/clean-code.md): 🧑‍💻 Robert C. Martin’s book emphasizes core software engineering principles for writing readable, maintainable code, which is foundational for the LLM agent's task of writing and managing its own complex code to interact with external systems.  
 * *Design Patterns: Elements of Reusable Object-Oriented Software*: 🧩 This classic resource on structuring complex software by creating reusable, robust solutions relates directly to the agent's ability to persist its code as reusable "skills" on a filesystem.

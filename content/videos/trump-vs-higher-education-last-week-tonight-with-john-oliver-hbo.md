@@ -10,7 +10,7 @@ Channel: LastWeekTonight
 tags:
 youtube: https://youtu.be/xk94il8L820
 ---
-[Home](../index.md) > [Videos](./index.md)  
+[Home](/content/index.md) > [Videos](/content/videos/index.md)  
 # 👨‍💼🎓📺 Trump vs Higher Education: Last Week Tonight with John Oliver (HBO)  
 ![Trump vs. Higher Education: Last Week Tonight with John Oliver (HBO)](https://youtu.be/xk94il8L820)  
   
@@ -34,5 +34,5 @@ The video provides a strong critique of the Trump administration's actions towar
 * The Campus War by John R. Searle: A firsthand account of the student protests at the University of California, Berkeley, providing a historical perspective on campus conflicts.  
 * The Closing of the American Mind by Allan Bloom: A classic conservative critique of higher education that argues for a return to traditional liberal arts education.  
 * Purity and Danger by Mary Douglas: A sociological work that could provide a conceptual framework for understanding how political groups use the idea of "purity" and "pollution" to target institutions they perceive as threats.  
-* [⚠️🥴🕹️🌐 The Fifth Risk](../books/the-fifth-risk.md) by Michael Lewis: Explores the importance of foundational, publicly funded research and the potential dangers of a government that devalues scientific expertise.  
+* [⚠️🥴🕹️🌐 The Fifth Risk](/content/books/the-fifth-risk.md) by Michael Lewis: Explores the importance of foundational, publicly funded research and the potential dangers of a government that devalues scientific expertise.  
 * The Idea of a University by John Henry Newman: A foundational text on the purpose of a university, offering a traditional perspective that contrasts with contemporary debates.

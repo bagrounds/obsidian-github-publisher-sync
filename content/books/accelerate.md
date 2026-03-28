@@ -10,7 +10,7 @@ affiliate link: https://amzn.to/4mFi8h4
 CTA: 📈 Elevate performance.
 updated: 2026-03-10T15:34:28.494Z
 ---
-[Home](../index.md) > [Books](./index.md)  
+[Home](/content/index.md) > [Books](/content/books/index.md)  
 # 🏎️💾 Accelerate: The Science of Lean Software and DevOps: Building and Scaling High Performing Technology Organizations  
 [🛒 Accelerate: The Science of Lean Software and DevOps: Building and Scaling High Performing Technology Organizations. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4mFi8h4)  
   
@@ -80,14 +80,14 @@ updated: 2026-03-10T15:34:28.494Z
 * The research methods are well explained, allowing readers to assess the validity of the findings. 📝  
   
 ### **Book Recommendations 📚**  
-* **Best Alternate Book on the Same Topic:** [🐦‍🔥💻 The Phoenix Project](./the-phoenix-project.md) by Gene Kim, Kevin Behr, and George Spafford. (Fiction that illustrates DevOps principles). 🏭  
-* **Best Tangentially Related Book:** [🧑‍🤝‍🧑⚙️➡️ Team Topologies: Organizing Business and Technology Teams for Fast Flow](books/team-topologies-organizing-business-and-technology-teams-for-fast-flow.md) by Matthew Skelton and Manuel Pais. (Focuses on organizing teams for fast flow). 🧑‍🤝‍🧑  
-* **Best Diametrically Opposed Book:** [🦄👤🗓️ The Mythical Man-Month: Essays on Software Engineering](./the-mythical-man-month.md) by Fred Brooks. (Classic software engineering book focusing on project management, with some points opposed to the agile and fast flow ideas of accelerate). 🕰️  
-* **Best Fiction Book That Incorporates Related Ideas:** [😈💻👹🤖 Daemon](./daemon.md) by Daniel Suarez. (Technological and organizational change themes). 🤖  
-* **Best Book That Is More General:** [📉🧪🚀 The Lean Startup: How Today's Entrepreneurs Use Continuous Innovation to Create Radically Successful Businesses](./the-lean-startup.md) by Eric Ries. (General application of Lean principles). 💡  
-* **Best Book That Is More Specific:** [🏗️🧪🚀✅ Continuous Delivery: Reliable Software Releases through Build, Test, and Deployment Automation](./continuous-delivery.md) by Jez Humble and David Farley. (Focuses deeply on technical implementation of continuous delivery). 💻  
+* **Best Alternate Book on the Same Topic:** [🐦‍🔥💻 The Phoenix Project](/content/books/the-phoenix-project.md) by Gene Kim, Kevin Behr, and George Spafford. (Fiction that illustrates DevOps principles). 🏭  
+* **Best Tangentially Related Book:** [🧑‍🤝‍🧑⚙️➡️ Team Topologies: Organizing Business and Technology Teams for Fast Flow](/content/books/team-topologies-organizing-business-and-technology-teams-for-fast-flow.md) by Matthew Skelton and Manuel Pais. (Focuses on organizing teams for fast flow). 🧑‍🤝‍🧑  
+* **Best Diametrically Opposed Book:** [🦄👤🗓️ The Mythical Man-Month: Essays on Software Engineering](/content/books/the-mythical-man-month.md) by Fred Brooks. (Classic software engineering book focusing on project management, with some points opposed to the agile and fast flow ideas of accelerate). 🕰️  
+* **Best Fiction Book That Incorporates Related Ideas:** [😈💻👹🤖 Daemon](/content/books/daemon.md) by Daniel Suarez. (Technological and organizational change themes). 🤖  
+* **Best Book That Is More General:** [📉🧪🚀 The Lean Startup: How Today's Entrepreneurs Use Continuous Innovation to Create Radically Successful Businesses](/content/books/the-lean-startup.md) by Eric Ries. (General application of Lean principles). 💡  
+* **Best Book That Is More Specific:** [🏗️🧪🚀✅ Continuous Delivery: Reliable Software Releases through Build, Test, and Deployment Automation](/content/books/continuous-delivery.md) by Jez Humble and David Farley. (Focuses deeply on technical implementation of continuous delivery). 💻  
 * **Best Book That Is More Rigorous:** Research papers on organizational psychology and statistical analysis. 📝  
-* **Best Book That Is More Accessible:** [⚙️🚀🛡️ The DevOps Handbook: How to Create World-Class Agility, Reliability, & Security in Technology Organizations](./the-devops-handbook.md) by Gene Kim, Jez Humble, Patrick Debois, and John Willis. (More practical and less research heavy). 🛠️  
+* **Best Book That Is More Accessible:** [⚙️🚀🛡️ The DevOps Handbook: How to Create World-Class Agility, Reliability, & Security in Technology Organizations](/content/books/the-devops-handbook.md) by Gene Kim, Jez Humble, Patrick Debois, and John Willis. (More practical and less research heavy). 🛠️  
   
 ## 💬 [Gemini](https://gemini.google.com) Prompt  
 > Summarize the book: Accelerate: The Science of Lean Software and DevOps: Building and Scaling High Performing Technology Organizations. Start with a TL;DR - a single statement that conveys a maximum of the useful information provided in the book. Next, explain how this book may offer a new or surprising perspective. Follow this with a deep dive. Catalogue the topics, methods, and research discussed. Be sure to highlight any significant theories, theses, or mental models proposed. Summarize prominent examples discussed. Emphasize practical takeaways, including detailed, specific, concrete, step-by-step advice, guidance, or techniques discussed. Provide a critical analysis of the quality of the information presented, using scientific backing, author credentials, authoritative reviews, and other markers of high quality information as justification. Make the following additional book recommendations: the best alternate book on the same topic; the best book that is tangentially related; the best book that is diametrically opposed; the best fiction book that incorporates related ideas; the best book that is more general or more specific; and the best book that is more rigorous or more accessible than this book. Format your response as markdown, starting at heading level H3, with inline links, for easy copy paste. Use meaningful emojis generously (at least one per heading, bullet point, and paragraph) to enhance readability. Do not include broken links or links to commercial sites.  

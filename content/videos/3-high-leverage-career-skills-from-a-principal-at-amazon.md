@@ -9,7 +9,7 @@ Platform: "#YouTube"
 Channel: "[[A Life Engineered]]"
 tags:
 ---
-[Home](../index.md) > [Videos](./index.md)  
+[Home](/content/index.md) > [Videos](/content/videos/index.md)  
 # 🪜📈🏢 3 High Leverage Career Skills (From a Principal At Amazon)  
 ![3 High Leverage Career Skills (From a Principal At Amazon)](https://youtu.be/wc9gBBybgLw)  
   
@@ -45,4 +45,4 @@ tags:
 🏆 Can you add it to your brag document? Say yes.  
   
 ### 📚 Book Reference  
-[💪❤️ So Good They Can't Ignore You: Why Skills Trump Passion in the Quest for Work You Love](../books/so-good-they-cant-ignore-you-why-skills-trump-passion-in-the-quest-for-work-you-love.md) by Cal Newport
+[💪❤️ So Good They Can't Ignore You: Why Skills Trump Passion in the Quest for Work You Love](/content/books/so-good-they-cant-ignore-you-why-skills-trump-passion-in-the-quest-for-work-you-love.md) by Cal Newport

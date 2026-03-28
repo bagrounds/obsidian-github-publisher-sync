@@ -70,7 +70,7 @@ While generally well-received, some minor points noted include:
   
 ### 🆚 Contrasting Books (Different Approaches/Focus)  
 * **[✍🏼👍🏼 On Writing Well: The Classic Guide to Writing Nonfiction](./on-writing-well.md)** by William Zinsser: A classic guide focused primarily on the principles of writing clear, concise non-fiction, less tied to digital marketing specifics. Praised for its emphasis on elegance and omitting needless words.  
-* **[🦢 The Elements of Style](./the-elements-of-style.md)** by Strunk & White: A concise, prescriptive guide to American English style and usage, focusing on rules and precision rather than broader content strategy.  
+* **[🦢 The Elements of Style](books/the-elements-of-style.md)** by Strunk & White: A concise, prescriptive guide to American English style and usage, focusing on rules and precision rather than broader content strategy.  
 * **Several Short Sentences About Writing** by Verlyn Klinkenborg: Challenges conventional writing advice, advocating for careful sentence-level craft and attentiveness, differing from Handley's more marketing-centric, rule-based approach.  
 * **Writing Tools** by Roy Peter Clark: Offers 50+ specific tools and techniques for writers, drawn more from journalism and literary craft than marketing.  
 * **The Sense of Style** by Steven Pinker: Explores writing style from a cognitive science perspective, focusing on clarity, coherence, and avoiding the "curse of knowledge," more academic than Handley's practical marketing focus.  
@@ -83,7 +83,7 @@ While generally well-received, some minor points noted include:
 * **Story Genius** or **Wired for Story** by Lisa Cron: Delves into the neuroscience of storytelling and how to craft narratives that resonate deeply with readers, focusing on internal character arcs and plot.  
 * **[The Artist's Way](./the-artists-way.md)** by Julia Cameron: A spiritual path to higher creativity, offering exercises and techniques like "morning pages" to unlock creative potential.  
 * **Draft No. 4** by John McPhee: Essays on the writing process from a master of non-fiction, focusing heavily on structure and craft.  
-* **[✍️🦴 Writing Down the Bones](./writing-down-the-bones.md)** by Natalie Goldberg: Connects writing practice with Zen principles, focusing on freeing the writer's voice.  
+* **[✍️🦴 Writing Down the Bones](books/writing-down-the-bones.md)** by Natalie Goldberg: Connects writing practice with Zen principles, focusing on freeing the writer's voice.  
   
 ## 💬 [Gemini](../software/gemini.md) Prompt (gemini-2.5-pro-exp-03-25)  
 > Write a markdown-formatted (start headings at level H2) book report, followed by a plethora of additional similar, contrasting, and creatively related book recommendations on Everybody Writes Your Go-To Guide to Creating Ridiculously Good Content. Be thorough in content discussed but concise and economical with your language. Structure the report with section headings and bulleted lists to avoid long blocks of text.  

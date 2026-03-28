@@ -9,7 +9,7 @@ tags:
 affiliate link: https://amzn.to/3FA2N0J
 CTA: 🧘‍♀️ Unplug, create.
 ---
-[Home](../index.md) > [Books](./index.md)  
+[Home](/content/index.md) > [Books](/content/books/index.md)  
 # 🥱🤓 Bored and Brilliant: How Spacing Out Can Unlock Your Most Productive and Creative Self  
 [🛒 Bored and Brilliant: How Spacing Out Can Unlock Your Most Productive and Creative Self. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3FA2N0J)  
   
@@ -42,11 +42,11 @@ CTA: 🧘‍♀️ Unplug, create.
 ## 📚 Book Recommendations  
   
 ### 🤓 Similar Reads (Focus on Digital Minimalism, Attention, Creativity)  
-* **[📱⬇️🧘 Digital Minimalism: Choosing a Focused Life in a Noisy World](books/digital-minimalism-choosing-a-focused-life-in-a-noisy-world.md)** by ✍️ Cal Newport: Argues for a philosophy of technology use where tools are intentionally selected to support deeply held values, advocating for a decluttering process similar to Zomorodi's challenges.  
-* **[🤿💼 Deep Work: Rules for Focused Success in a Distracted World](./deep-work.md) by ✍️ Cal Newport: Explores the importance of distraction-free concentration for producing high-quality work and achieving mastery.  
-* **[📱💔 How to Break Up with Your Phone: The 30-Day Plan to Take Back Your Life](books/how-to-break-up-with-your-phone-the-30-day-plan-to-take-back-your-life.md)** by 👩‍💼 Catherine Price: Offers a practical plan to create a healthier relationship with your smartphone, reducing addiction and reclaiming attention.  
+* **[📱⬇️🧘 Digital Minimalism: Choosing a Focused Life in a Noisy World](/content/books/digital-minimalism-choosing-a-focused-life-in-a-noisy-world.md)** by ✍️ Cal Newport: Argues for a philosophy of technology use where tools are intentionally selected to support deeply held values, advocating for a decluttering process similar to Zomorodi's challenges.  
+* **[🤿💼 Deep Work: Rules for Focused Success in a Distracted World](/content/books/deep-work.md) by ✍️ Cal Newport: Explores the importance of distraction-free concentration for producing high-quality work and achieving mastery.  
+* **[📱💔 How to Break Up with Your Phone: The 30-Day Plan to Take Back Your Life](/content/books/how-to-break-up-with-your-phone-the-30-day-plan-to-take-back-your-life.md)** by 👩‍💼 Catherine Price: Offers a practical plan to create a healthier relationship with your smartphone, reducing addiction and reclaiming attention.  
 * 🤯 **Stolen Focus: 😞 Why You Can't Pay Attention—and How to Think Deeply Again** by ✍️ Johann Hari: Investigates the societal, technological, and environmental factors diminishing our collective attention spans and offers solutions.  
-* **[📱🧠 The Shallows: What the Internet Is Doing to Our Brains](books/the-shallows-what-the-internet-is-doing-to-our-brains.md)** by ✍️ Nicholas Carr: Explores the neurological impact of the internet, arguing that its constant stimulation encourages shallow thinking over deep contemplation.  
+* **[📱🧠 The Shallows: What the Internet Is Doing to Our Brains](/content/books/the-shallows-what-the-internet-is-doing-to-our-brains.md)** by ✍️ Nicholas Carr: Explores the neurological impact of the internet, arguing that its constant stimulation encourages shallow thinking over deep contemplation.  
 * 🎯 **Attention Span: 🧠 A Groundbreaking Way to Restore Balance, Happiness and Productivity** by 👩‍💼 Gloria Mark: Delves into decades of research on how technology affects attention, presenting findings on distraction, multitasking, and different attention states.  
   
 ### 🤔 Contrasting Perspectives (Alternative Views on Technology/Productivity)  
@@ -55,11 +55,11 @@ CTA: 🧘‍♀️ Unplug, create.
 * 🌐 **The New Digital Age: 🚀 Reshaping the Future of People, Nations and Business** by ✍️ Eric Schmidt & ✍️ Jared Cohen: Offers a more optimistic, macro-level view of technology's transformative potential across various aspects of society, contrasting with Zomorodi's focus on the personal cognitive costs.  
   
 ### 🎨 Creatively Related (Exploring Outcomes and Adjacent Concepts)  
-* 👩‍🎨 **[The Artist's Way](./the-artists-way.md)** by 👩‍💼 Julia Cameron: A classic guide to unlocking creativity through practices like "Morning Pages" and "Artist Dates," which encourage introspection and observation, akin to the outcomes Zomorodi suggests boredom can foster.  
-* ✨ **[🪄 Big Magic: Creative Living Beyond Fear](./big-magic.md)** by 👩‍💼 Elizabeth Gilbert: Explores the nature of inspiration and creativity, encouraging readers to embrace curiosity and approach creative endeavors with joy and less pressure – a potential outcome of the mental space Zomorodi advocates for.  
-* 🌊 **[Flow: The Psychology of Optimal Experience](books/flow-the-psychology-of-optimal-experience.md)** by ✍️ Mihaly Csikszentmihalyi: While *Bored and Brilliant* focuses on the benefits of *under*-stimulation (boredom), *Flow* explores the state of complete absorption in an activity, representing a different type of focused mental state often linked to high productivity and creativity.  
+* 👩‍🎨 **[The Artist's Way](/content/books/the-artists-way.md)** by 👩‍💼 Julia Cameron: A classic guide to unlocking creativity through practices like "Morning Pages" and "Artist Dates," which encourage introspection and observation, akin to the outcomes Zomorodi suggests boredom can foster.  
+* ✨ **[🪄 Big Magic: Creative Living Beyond Fear](/content/books/big-magic.md)** by 👩‍💼 Elizabeth Gilbert: Explores the nature of inspiration and creativity, encouraging readers to embrace curiosity and approach creative endeavors with joy and less pressure – a potential outcome of the mental space Zomorodi advocates for.  
+* 🌊 **[Flow: The Psychology of Optimal Experience](/content/books/flow-the-psychology-of-optimal-experience.md)** by ✍️ Mihaly Csikszentmihalyi: While *Bored and Brilliant* focuses on the benefits of *under*-stimulation (boredom), *Flow* explores the state of complete absorption in an activity, representing a different type of focused mental state often linked to high productivity and creativity.  
 * 🧘 **The Power of Now: 🙏 A Guide to Spiritual Enlightenment** by ✍️ Eckhart Tolle: Focuses on presence and disidentification from the constant stream of thought, offering a spiritual path to managing the mental "noise" that technology often exacerbates.  
 * 🚶 **The Wander Society** by 👩‍💼 Keri Smith: Encourages aimless exploration and observation of one's surroundings as a way to engage with the world differently, aligning with the idea of finding value in less structured, non-goal-oriented time.  
   
-## 💬 [Gemini](../software/gemini.md) Prompt (gemini-2.5-pro-exp-03-25)  
+## 💬 [Gemini](/content/software/gemini.md) Prompt (gemini-2.5-pro-exp-03-25)  
 > Write a markdown-formatted (start headings at level H2) book report, followed by a plethora of additional similar, contrasting, and creatively related book recommendations on Bored and Brilliant How Time Spent Doing Nothing Changes Everything. Be thorough in content discussed but concise and economical with your language. Structure the report with section headings and bulleted lists to avoid long blocks of text.

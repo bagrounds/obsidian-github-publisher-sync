@@ -10,7 +10,7 @@ Channel: Heather Cox Richardson
 tags:
 youtube: https://youtu.be/wbCiS39Q6Rw
 ---
-[Home](../index.md) > [Videos](./index.md) | [🏛️🇺🇸📖 Heather Cox Richardson](../people/heather-cox-richardson.md)  
+[Home](/content/index.md) > [Videos](/content/videos/index.md) | [🏛️🇺🇸📖 Heather Cox Richardson](/content/people/heather-cox-richardson.md)  
 # 🗣️🤝💼 A Conversation with John Harwood  
 ![A Conversation with John Harwood](https://youtu.be/wbCiS39Q6Rw)  
   
@@ -51,8 +51,8 @@ youtube: https://youtu.be/wbCiS39Q6Rw
   
 ### ↔️ Similar  
   
-* [🏛️☀️⬆️ Democracy Awakening: 📝 Notes on the State of 🇺🇸 America](../books/democracy-awakening.md) by Heather Cox Richardson. 💡 This book details the historical roots of the current political crisis and the path to reclaiming democratic ideals.  
-* [🗳️🏛️☠️ How Democracies Die](../books/how-democracies-die.md) by Steven Levitsky and Daniel Ziblatt (Crown Publishing Group). 💡 An analysis of how modern autocrats use democratic institutions to subvert the system from within.  
+* [🏛️☀️⬆️ Democracy Awakening: 📝 Notes on the State of 🇺🇸 America](/content/books/democracy-awakening.md) by Heather Cox Richardson. 💡 This book details the historical roots of the current political crisis and the path to reclaiming democratic ideals.  
+* [🗳️🏛️☠️ How Democracies Die](/content/books/how-democracies-die.md) by Steven Levitsky and Daniel Ziblatt (Crown Publishing Group). 💡 An analysis of how modern autocrats use democratic institutions to subvert the system from within.  
   
 ### 🆚 Contrasting  
   
@@ -61,5 +61,5 @@ youtube: https://youtu.be/wbCiS39Q6Rw
   
 ### 🎨 Creatively Related  
   
-* [🍇😡 The Grapes of Wrath](../books/the-grapes-of-wrath.md) by John Steinbeck. 💡 A narrative exploration of how economic hardship drives social division and the search for human dignity.  
-* [🧠💡 Common Sense](../books/common-sense.md) by Thomas Paine. 💡 A foundational text on the necessity of self-determination and the human right to challenge oppressive rule.
+* [🍇😡 The Grapes of Wrath](/content/books/the-grapes-of-wrath.md) by John Steinbeck. 💡 A narrative exploration of how economic hardship drives social division and the search for human dignity.  
+* [🧠💡 Common Sense](/content/books/common-sense.md) by Thomas Paine. 💡 A foundational text on the necessity of self-determination and the human right to challenge oppressive rule.

@@ -7,7 +7,7 @@ share: true
 affiliate link: https://amzn.to/3WDO8qn
 CTA: 🇺🇸 Reclaim our nation.
 ---
-[Home](../index.md) > [Books](./index.md) | [🏛️🇺🇸📖 Heather Cox Richardson](../people/heather-cox-richardson.md)  
+[Home](/content/index.md) > [Books](/content/books/index.md) | [🏛️🇺🇸📖 Heather Cox Richardson](/content/people/heather-cox-richardson.md)  
 # 🇺🇲⚔️ How the South Won the Civil War: Oligarchy, Democracy, and the Continuing Fight for the Soul of America  
 [🛒 How the South Won the Civil War: Oligarchy, Democracy, and the Continuing Fight for the Soul of America. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3WDO8qn)  
   
@@ -67,16 +67,16 @@ CTA: 🇺🇸 Reclaim our nation.
 ## 📚 Book Recommendations  
   
 ### 👍 Similar  
-* [🏛️☀️⬆️ Democracy Awakening: 📝 Notes on the State of 🇺🇸 America](./democracy-awakening.md) by Heather Cox Richardson  
-* [🧑🏿⛓️🙈 The New Jim Crow: Mass Incarceration in the Age of Colorblindness](./the-new-jim-crow-mass-incarceration-in-the-age-of-colorblindness.md) by Michelle Alexander  
-* [🇺🇸📖 These Truths: A History of the United States](./these-truths-a-history-of-the-united-states.md) by Jill Lepore  
+* [🏛️☀️⬆️ Democracy Awakening: 📝 Notes on the State of 🇺🇸 America](/content/books/democracy-awakening.md) by Heather Cox Richardson  
+* [🧑🏿⛓️🙈 The New Jim Crow: Mass Incarceration in the Age of Colorblindness](/content/books/the-new-jim-crow-mass-incarceration-in-the-age-of-colorblindness.md) by Michelle Alexander  
+* [🇺🇸📖 These Truths: A History of the United States](/content/books/these-truths-a-history-of-the-united-states.md) by Jill Lepore  
   
 ### 👎 Contrasting  
 * 📖 The Myth of the Lost Cause Why the South Fought the Civil War and Why the North Won by Gary W. Gallagher  
 * 📖 Albion's Seed Four British Folkways in America by David Hackett Fischer  
   
 ### 🔗 Related  
-* [💰🤫 Dark Money: The Hidden History of the Billionaires Behind the Rise of the Radical Right](./dark-money-the-hidden-history-of-the-billionaires-behind-the-rise-of-the-radical-right.md) by Jane Mayer  
+* [💰🤫 Dark Money: The Hidden History of the Billionaires Behind the Rise of the Radical Right](/content/books/dark-money-the-hidden-history-of-the-billionaires-behind-the-rise-of-the-radical-right.md) by Jane Mayer  
 * 📖 Stamped From the Beginning The Definitive History of Racist Ideas in America by Ibram X. Kendi  
   
 ## 🫵 What Do You Think?  

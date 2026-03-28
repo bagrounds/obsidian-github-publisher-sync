@@ -5,9 +5,9 @@ aliases:
 title: 💃🕺🎶 Learn to Dance
 URL: https://bagrounds.org/bot-chats/learn-to-dance
 ---
-[Home](../index.md) > [Bot Chats](./index.md)  
+[Home](/content/index.md) > [Bot Chats](/content/bot-chats/index.md)  
 # 💃🕺🎶 Learn to Dance  
-## 💬 [Gemini](../software/gemini.md) Prompt 1  
+## 💬 [Gemini](/content/software/gemini.md) Prompt 1  
 > Can I learn to dance via books?  
   
 While you can gain a lot of theoretical knowledge about dance from books, 📖 you cannot truly learn to dance solely through books.  
@@ -100,7 +100,7 @@ Here's a breakdown of types of books and specific recommendations that can provi
   
 ✨ These books focus on elements common to all dance forms, helping you build a basic "movement literacy."  
   
-* **[💃➡️ Beginning Modern Dance](../books/beginning-modern-dance.md) by Gopher Sport (and similar titles in the "Beginning Dance" series by Human Kinetics):** 🏫 While these are often used as textbooks for high school/college, they can be excellent for self-learners. They usually cover:  
+* **[💃➡️ Beginning Modern Dance](/content/books/beginning-modern-dance.md) by Gopher Sport (and similar titles in the "Beginning Dance" series by Human Kinetics):** 🏫 While these are often used as textbooks for high school/college, they can be excellent for self-learners. They usually cover:  
     * 🧍‍♀️ Basic body alignment and posture.  
     * ⏳ Elements of dance (space, time, energy).  
     * 🚶 Basic movements that translate across styles (e.g., walks, runs, leaps, turns, pliés, stretches).  

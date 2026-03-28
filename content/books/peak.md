@@ -9,7 +9,7 @@ tags:
 affiliate link: https://amzn.to/448T3mz
 CTA: 🏆 Master your potential.
 ---
-[Home](../index.md) > [Books](./index.md)  
+[Home](/content/index.md) > [Books](/content/books/index.md)  
 # ⛰️📈🥇 Peak: Secrets from the New Science of Expertise  
 [🛒 Peak: Secrets from the New Science of Expertise. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/448T3mz)  
   
@@ -57,12 +57,12 @@ CTA: 🏆 Master your potential.
 * **Limitations:** While powerful, deliberate practice is not a magic bullet. Some fields may have constraints, and motivation and access to resources are also factors.  
   
 ### Book Recommendations 📚  
-* **Best Alternate Book on the Same Topic:** [👶🌱📈 The Talent Code: Greatness Isn't Born. It's Grown. Here's How.](./the-talent-code.md) by Daniel Coyle. 🧬 This book explores similar concepts of skill development but focuses more on the role of myelin in brain plasticity.  
-* **Best Tangentially Related Book:** [🌱🧘🏼‍♀️🏆 Mindset: The New Psychology of Success](./mindset.md) by Carol Dweck. 🧠 Dweck's work on growth mindset complements Ericsson's work on deliberate practice, emphasizing the importance of belief in one's ability to improve.  
-* **Best Diametrically Opposed Book:** [🏃‍♂️⛰️ Born to Run: A Hidden Tribe, Superathletes, and the Greatest Race the World Has Never Seen](books/born-to-run-a-hidden-tribe-superathletes-and-the-greatest-race-the-world-has-never-seen.md) by Christopher McDougall. 🏃 This book, while inspiring, could be seen as opposing in that it favors a more natural, intuitive approach to running rather than a structured, deliberate one.  
+* **Best Alternate Book on the Same Topic:** [👶🌱📈 The Talent Code: Greatness Isn't Born. It's Grown. Here's How.](/content/books/the-talent-code.md) by Daniel Coyle. 🧬 This book explores similar concepts of skill development but focuses more on the role of myelin in brain plasticity.  
+* **Best Tangentially Related Book:** [🌱🧘🏼‍♀️🏆 Mindset: The New Psychology of Success](/content/books/mindset.md) by Carol Dweck. 🧠 Dweck's work on growth mindset complements Ericsson's work on deliberate practice, emphasizing the importance of belief in one's ability to improve.  
+* **Best Diametrically Opposed Book:** [🏃‍♂️⛰️ Born to Run: A Hidden Tribe, Superathletes, and the Greatest Race the World Has Never Seen](/content/books/born-to-run-a-hidden-tribe-superathletes-and-the-greatest-race-the-world-has-never-seen.md) by Christopher McDougall. 🏃 This book, while inspiring, could be seen as opposing in that it favors a more natural, intuitive approach to running rather than a structured, deliberate one.  
 * **Best Fiction Book That Incorporates Related Ideas:** *Ender's Game* by Orson Scott Card. 🎮 The novel vividly depicts deliberate practice through Ender's rigorous training and development as a military strategist.  
-* **Best Book That Is More General:** [🤔🐇🐢 Thinking, Fast and Slow](books/thinking-fast-and-slow.md) by Daniel Kahneman. 🧠 This book provides a broader understanding of cognitive processes and decision-making, which is relevant to expertise development.  
-* **Best Book That Is More Specific:** [🧠🔒 Make It Stick: The Science of Successful Learning](./make-it-stick.md) by Peter C. Brown, Henry L. Roediger III, and Mark A. McDaniel. 📝 This book delves deeper into specific learning strategies and techniques, focusing on the cognitive science of effective learning.  
+* **Best Book That Is More General:** [🤔🐇🐢 Thinking, Fast and Slow](/content/books/thinking-fast-and-slow.md) by Daniel Kahneman. 🧠 This book provides a broader understanding of cognitive processes and decision-making, which is relevant to expertise development.  
+* **Best Book That Is More Specific:** [🧠🔒 Make It Stick: The Science of Successful Learning](/content/books/make-it-stick.md) by Peter C. Brown, Henry L. Roediger III, and Mark A. McDaniel. 📝 This book delves deeper into specific learning strategies and techniques, focusing on the cognitive science of effective learning.  
 * **Best Book That Is More Rigorous:** *Expert Performance in Sports: Advances in Research on Sport Expertise* edited by Janet L. Starkes and K. Anders Ericsson. 🏋️ This is an academic collection of research papers, offering a more in-depth and technical examination of expert performance.  
 * **Best Book That Is More Accessible:** *Outliers: The Story of Success* by Malcolm Gladwell. 🌟 While Gladwell's interpretation of the 10,000-hour rule is simplified, it makes the concepts of expertise more approachable for a general audience.  
   

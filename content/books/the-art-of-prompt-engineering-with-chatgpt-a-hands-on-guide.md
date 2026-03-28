@@ -9,7 +9,7 @@ CTA: 🤖 Master ChatGPT.
 tags:
   - AIEngineering
 ---
-[Home](../index.md) > [Books](./index.md)  
+[Home](/content/index.md) > [Books](/content/books/index.md)  
 # 💻✍️ The Art of Prompt Engineering with ChatGPT: A Hands-On Guide  
 [🛒 The Art of Prompt Engineering with ChatGPT: A Hands-On Guide. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/40LrCON)  
   
@@ -39,7 +39,7 @@ The book systematically guides the reader from foundational concepts to more adv
   
 ### 🆚 Contrasting Books on AI and its Implications  
   
-* **[🤖⚠️📈 Superintelligence: Paths, Dangers, Strategies](./superintelligence-paths-dangers-strategies.md)** by Nick Bostrom: A foundational text that delves into the potential risks and long-term challenges posed by advanced artificial intelligence.  
+* **[🤖⚠️📈 Superintelligence: Paths, Dangers, Strategies](/content/books/superintelligence-paths-dangers-strategies.md)** by Nick Bostrom: A foundational text that delves into the potential risks and long-term challenges posed by advanced artificial intelligence.  
 * 🌍 **AI Superpowers** by Kai-Fu Lee: This book offers a geopolitical analysis of the race for AI dominance between the US and China and its implications for innovation and society.  
 * 🤖 **The Age of Spiritual Machines: When Computers Exceed Human Intelligence** by Ray Kurzweil: A visionary and often debated look at the future of AI, predicting a merger of human and machine intelligence.  
 * 🛡️ **Responsible Artificial Intelligence: How to Develop and Use AI in a Responsible Way** by Virginia Dignum: This book focuses on the crucial ethical considerations surrounding the development and deployment of AI systems.  
@@ -49,7 +49,7 @@ The book systematically guides the reader from foundational concepts to more adv
 * 🗣️ **The Language of Creative AI: Practices, Aesthetics, and Structures** by various authors: This collection of essays explores the role of the computer in art, the ethics of creative AI, and the future of human-machine collaboration in creative fields.  
 * 🚀 **AI for Creativity** by Niklas Hageback: This book examines the cutting-edge tools being developed for computational creativity and how they might augment human creative capabilities.  
 * 👨‍🎨 **The Artist in the Machine: The World of AI-Powered Creativity** by Arthur I. Miller: This work explores how AI is already being used to create art, music, and literature, and what it means for the future of human creativity.  
-* **[🧑‍🤝‍🤖 Co-Intelligence: The Definitive, Bestselling Guide to Living and Working with AI](./co-intelligence-the-definitive-bestselling-guide-to-living-and-working-with-ai.md)** by Ethan Mollick: This book serves as a guide for effective collaboration between humans and AI, exploring strategies for navigating the fusion of AI into creative and professional processes.  
+* **[🧑‍🤝‍🤖 Co-Intelligence: The Definitive, Bestselling Guide to Living and Working with AI](/content/books/co-intelligence-the-definitive-bestselling-guide-to-living-and-working-with-ai.md)** by Ethan Mollick: This book serves as a guide for effective collaboration between humans and AI, exploring strategies for navigating the fusion of AI into creative and professional processes.  
   
-## 💬 [Gemini](../software/gemini.md) Prompt (gemini-2.5-pro)  
+## 💬 [Gemini](/content/software/gemini.md) Prompt (gemini-2.5-pro)  
 > Write a markdown-formatted (start headings at level H2) book report, followed by a plethora of additional similar, contrasting, and creatively related book recommendations on The Art of Prompt Engineering with ChatGPT: A Hands-On Guide. Never put book titles in quotes or italics. Be thorough in content discussed but concise and economical with your language. Structure the report with section headings and bulleted lists to avoid long blocks of text.

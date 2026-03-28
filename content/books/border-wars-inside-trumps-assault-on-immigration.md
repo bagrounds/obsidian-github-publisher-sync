@@ -8,7 +8,7 @@ CTA: 💔 Witness human cost.
 affiliate link: https://a.co/d/08jTdrY6
 updated: 2026-03-15T08:10:57.403Z
 ---
-[Home](../index.md) > [Books](./index.md)  
+[Home](/content/index.md) > [Books](/content/books/index.md)  
 # 🧱⚔️🚶‍♀️ Border Wars: Inside Trump's Assault on Immigration  
 [🛒 Border Wars: Inside Trump's Assault on Immigration. As an Amazon Associate I earn from qualifying purchases.](https://a.co/d/08jTdrY6)  
   
@@ -94,9 +94,9 @@ updated: 2026-03-15T08:10:57.403Z
 * 🌍 Open Borders: The Science and Ethics of Immigration by Bryan Caplan (Argument for the economic benefits of open borders).  
   
 ### 🔗 Related  
-* [🧑🏿⛓️🙈 The New Jim Crow: Mass Incarceration in the Age of Colorblindness](./the-new-jim-crow-mass-incarceration-in-the-age-of-colorblindness.md) by Michelle Alexander (Examines systemic racial injustice).  
-* [💰🤫 Dark Money: The Hidden History of the Billionaires Behind the Rise of the Radical Right](./dark-money-the-hidden-history-of-the-billionaires-behind-the-rise-of-the-radical-right.md) by Jane Mayer (Investigates political influence).  
-* [🏚️💰 Evicted: Poverty and Profit in the American City](./evicted-poverty-and-profit-in-the-american-city.md) by Matthew Desmond (Sociological study of poverty and housing insecurity).  
+* [🧑🏿⛓️🙈 The New Jim Crow: Mass Incarceration in the Age of Colorblindness](/content/books/the-new-jim-crow-mass-incarceration-in-the-age-of-colorblindness.md) by Michelle Alexander (Examines systemic racial injustice).  
+* [💰🤫 Dark Money: The Hidden History of the Billionaires Behind the Rise of the Radical Right](/content/books/dark-money-the-hidden-history-of-the-billionaires-behind-the-rise-of-the-radical-right.md) by Jane Mayer (Investigates political influence).  
+* [🏚️💰 Evicted: Poverty and Profit in the American City](/content/books/evicted-poverty-and-profit-in-the-american-city.md) by Matthew Desmond (Sociological study of poverty and housing insecurity).  
   
 ## 🫵 What Do You Think?  
   

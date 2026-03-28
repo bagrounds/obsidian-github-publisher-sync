@@ -7,7 +7,7 @@ share: true
 CTA: Understand your headaches.
 affiliate link: https://amzn.to/3Iw6HbS
 ---
-[Home](../index.md) > [Books](./index.md)  
+[Home](/content/index.md) > [Books](/content/books/index.md)  
 # 🤕⚕️ The Headache Handbook: Diagnosis and Treatment  
 [🛒 The Headache Handbook: Diagnosis and Treatment. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3Iw6HbS)  
   
@@ -56,5 +56,5 @@ affiliate link: https://amzn.to/3Iw6HbS
 * 🔬 ***The Oxford Handbook of the Neurobiology of Pain*** edited by John N. Wood: A comprehensive overview of the science of pain, covering mechanisms, genetics, imaging, and the transition from acute to chronic pain, suitable for researchers and clinicians interested in the biological underpinnings of pain.  
 * 🙏 ***The Painful Truth: The New Science of Why We Hurt and How We Can Heal*** by Monty Lyman: Written by a doctor with lived experience of chronic pain, this book introduces the latest pain science and offers a self-help guide rooted in both clinical understanding and personal recovery.  
   
-## 💬 [Gemini](../software/gemini.md) Prompt (gemini-2.5-flash-preview-04-17)  
+## 💬 [Gemini](/content/software/gemini.md) Prompt (gemini-2.5-flash-preview-04-17)  
 > Write a markdown-formatted (start headings at level H2) book report, followed by a plethora of additional similar, contrasting, and creatively related book recommendations on The Headache Handbook: Diagnosis and Treatment. Be thorough in content discussed but concise and economical with your language. Structure the report with section headings and bulleted lists to avoid long blocks of text.

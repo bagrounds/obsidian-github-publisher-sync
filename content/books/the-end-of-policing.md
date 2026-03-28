@@ -69,7 +69,7 @@ affiliate link: https://amzn.to/4nXMOtu
   
 ### 👍 Similar  
 * 📕 Are Prisons Obsolete? by Angela Y. Davis: Explores the history and function of the prison industrial complex, arguing for its abolition and imagining alternative justice systems.  
-* [🧑🏿⛓️🙈 The New Jim Crow: Mass Incarceration in the Age of Colorblindness](./the-new-jim-crow-mass-incarceration-in-the-age-of-colorblindness.md) by Michelle Alexander: Argues that the U.S. criminal justice system acts as a new caste system, disproportionately affecting Black Americans, perpetuating racial hierarchy through mass incarceration.  
+* [🧑🏿⛓️🙈 The New Jim Crow: Mass Incarceration in the Age of Colorblindness](books/the-new-jim-crow-mass-incarceration-in-the-age-of-colorblindness.md) by Michelle Alexander: Argues that the U.S. criminal justice system acts as a new caste system, disproportionately affecting Black Americans, perpetuating racial hierarchy through mass incarceration.  
   
 ### 👎 Contrasting  
 * 📕 Arrested Justice: Black Women, Violence, and America's Prison Nation by Beth Richie: While critical of the carceral state, it emphasizes the specific vulnerability of marginalized women to violence and the complex issues around seeking justice, offering a nuanced perspective on interventions.  

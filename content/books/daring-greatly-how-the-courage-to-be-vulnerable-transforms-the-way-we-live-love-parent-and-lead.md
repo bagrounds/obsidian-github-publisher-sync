@@ -8,7 +8,7 @@ affiliate link: https://amzn.to/4r5uFwK
 CTA: 🛡️ Embrace vulnerability.
 updated: 2026-03-12T12:10:33.963Z
 ---
-[Home](../index.md) > [Books](./index.md)  
+[Home](/content/index.md) > [Books](/content/books/index.md)  
 # 🦁🫀 Daring Greatly: How the Courage to Be Vulnerable Transforms the Way We Live, Love, Parent, and Lead  
 [🛒 Daring Greatly: How the Courage to Be Vulnerable Transforms the Way We Live, Love, Parent, and Lead. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4r5uFwK)  
   
@@ -59,13 +59,13 @@ updated: 2026-03-12T12:10:33.963Z
   
 ### 🎨 Creatively Related Books (Exploring Related Themes)  
   
-* *[🪄 Big Magic: Creative Living Beyond Fear](./big-magic.md)* by Elizabeth Gilbert: Discusses living a creative life by embracing curiosity and letting go of fear, which resonates with the idea of vulnerability in creative expression.  
+* *[🪄 Big Magic: Creative Living Beyond Fear](/content/books/big-magic.md)* by Elizabeth Gilbert: Discusses living a creative life by embracing curiosity and letting go of fear, which resonates with the idea of vulnerability in creative expression.  
 * 👑 *Untamed* by Glennon Doyle: A memoir and call to live authentically and break free from societal expectations, touching on themes of self-acceptance and courage.  
-* [🤕🎼🧠 The Body Keeps the Score: Brain, Mind, and Body in the Healing of Trauma](./the-body-keeps-the-score-brain-mind-and-body-in-the-healing-of-trauma.md) by Bessel van der Kolk: While focused on trauma, it explores how experiences are held in the body and the path to healing, which can involve vulnerability in processing difficult emotions.  
+* [🤕🎼🧠 The Body Keeps the Score: Brain, Mind, and Body in the Healing of Trauma](/content/books/the-body-keeps-the-score-brain-mind-and-body-in-the-healing-of-trauma.md) by Bessel van der Kolk: While focused on trauma, it explores how experiences are held in the body and the path to healing, which can involve vulnerability in processing difficult emotions.  
 * 🚀 *You Are a Badass: How to Stop Doubting Your Greatness and Start Living an Awesome Life* by Jen Sincero: A more lighthearted, motivational book focused on overcoming self-doubt and embracing one's potential.  
 * 💔 *Lost Connections: Why You’re Depressed and How to Find Hope* by Johann Hari: Explores the societal causes of depression and anxiety and finding connection, a theme central to Brown's work on belonging.  
   
-## 💬 [Gemini](../software/gemini.md) Prompt (gemini-2.5-flash-preview-04-17)  
+## 💬 [Gemini](/content/software/gemini.md) Prompt (gemini-2.5-flash-preview-04-17)  
 > Write a markdown-formatted (start headings at level H2) book report, followed by a plethora of additional similar, contrasting, and creatively related book recommendations on Daring Greatly: How the Courage to Be Vulnerable Transforms the Way We Live, Love, Parent, and Lead. Be thorough in content discussed but concise and economical with your language. Structure the report with section headings and bulleted lists to avoid long blocks of text.  
   
 ## 🦋 Bluesky    

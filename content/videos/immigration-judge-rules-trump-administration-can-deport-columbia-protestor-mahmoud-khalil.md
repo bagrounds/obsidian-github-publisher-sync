@@ -4,12 +4,12 @@ aliases:
   - Immigration judge rules Trump administration can deport Columbia protestor Mahmoud Khalil
 title: Immigration judge rules Trump administration can deport Columbia protestor Mahmoud Khalil
 URL: https://youtu.be/OG8D1dcm8vk
-Author: 
-Platform: 
+Author:
+Platform:
 Channel: PBS NewsHour
-tags: 
+tags:
 ---
-[Home](../index.md) > [Videos](./index.md)  
+[Home](/content/index.md) > [Videos](/content/videos/index.md)  
 # Immigration judge rules Trump administration can deport Columbia protestor Mahmoud Khalil  
 ![Immigration judge rules Trump administration can deport Columbia protestor Mahmoud Khalil](https://youtu.be/OG8D1dcm8vk)  
   

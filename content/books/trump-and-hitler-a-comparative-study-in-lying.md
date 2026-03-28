@@ -6,7 +6,7 @@ URL: https://bagrounds.org/books/trump-and-hitler-a-comparative-study-in-lying
 share: true
 affiliate link: https://amzn.to/4dQ2o6S
 ---
-[Home](../index.md) > [Books](./index.md)  
+[Home](/content/index.md) > [Books](/content/books/index.md)  
 # 🇺🇸🇩🇪🤥📣 Trump and Hitler: A Comparative Study in Lying  
 [🛒 Trump and Hitler: A Comparative Study in Lying. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4dQ2o6S)  
   
@@ -45,8 +45,8 @@ By demystifying these figures and analyzing their techniques, the book aims to s
   
 ### ⚖️ Contrasting Reads (Individual Focus, Democratic Theory)  
   
-* **[🗳️🏛️☠️ How Democracies Die](./how-democracies-die.md)** by Steven Levitsky and Daniel Ziblatt. Examines the breakdown of democratic norms and institutions, drawing on historical examples to highlight the threats posed by figures who challenge democratic traditions.  
-* **[👑🚫📜2️⃣0️⃣ On Tyranny: Twenty Lessons from the Twentieth Century](./on-tyranny.md)** by Timothy Snyder. Offers a concise guide to recognizing and resisting the rise of authoritarianism, drawing lessons from the 20th century.  
+* **[🗳️🏛️☠️ How Democracies Die](/content/books/how-democracies-die.md)** by Steven Levitsky and Daniel Ziblatt. Examines the breakdown of democratic norms and institutions, drawing on historical examples to highlight the threats posed by figures who challenge democratic traditions.  
+* **[👑🚫📜2️⃣0️⃣ On Tyranny: Twenty Lessons from the Twentieth Century](/content/books/on-tyranny.md)** by Timothy Snyder. Offers a concise guide to recognizing and resisting the rise of authoritarianism, drawing lessons from the 20th century.  
 * 🇺🇸 **The Presidency of Donald J. Trump: A First Historical Assessment** edited by Julian E. Zelizer. Provides scholarly analyses of the Trump presidency from various perspectives, offering a detailed look at his time in office without direct comparison to Hitler.  
 * 🇩🇪 **The Hitler Myth: Image and Reality in the Third Reich** by Ian Kershaw. Focuses specifically on how Hitler's image was constructed and manipulated, exploring his interaction with the German people and the propaganda surrounding him.  
 * 🧠 **The Mind of Adolf Hitler: The Secret Wartime Report** by Walter C. Langer. A psychological profile of Hitler compiled during WWII, offering a different approach to understanding his character and motivations.  
@@ -56,10 +56,10 @@ By demystifying these figures and analyzing their techniques, the book aims to s
 * 🤯 **The Psychopathic God: Adolf Hitler** by Robert Waite. Explores Hitler's psychology, focusing on potential pathologies and their impact on his political actions.  
 * 🎭 **Dirty Politics: Deception, Distraction, and Democracy** by Kathleen Hall Jamieson. Analyzes deceptive political communication techniques used in democratic campaigns, offering a broader view of how truth is manipulated in politics.  
 * 🌍 **Competitive Authoritarianism: Hybrid Regimes After the Cold War** by Steven Levitsky and Lucan Way. Provides a framework for understanding regimes that combine elements of democracy and authoritarianism, relevant to the discussion of contemporary illiberalism.  
-* **[👑🌎 Autocracy, Inc.: The Dictators Who Want to Run the World](./autocracy-inc-the-dictators-who-want-to-run-the-world.md)** by Anne Applebaum. Examines modern authoritarian regimes and the connections between them, offering a global context for the dangers of strongmen.  
+* **[👑🌎 Autocracy, Inc.: The Dictators Who Want to Run the World](/content/books/autocracy-inc-the-dictators-who-want-to-run-the-world.md)** by Anne Applebaum. Examines modern authoritarian regimes and the connections between them, offering a global context for the dangers of strongmen.  
 * 🧪 **Strategic Deception: Rhetoric, Science, and Politics in Missile Defense Advocacy** by Gordon R. Mitchell. Explores the use of deceptive rhetoric in a specific political context (policy debate), highlighting the intersection of language, technical claims, and political maneuvering.  
   
-## 💬 [Gemini](../software/gemini.md) Prompt (gemini-2.5-flash-preview-04-17)  
+## 💬 [Gemini](/content/software/gemini.md) Prompt (gemini-2.5-flash-preview-04-17)  
 > Write a markdown-formatted (start headings at level H2) book report, followed by a plethora of additional similar, contrasting, and creatively related book recommendations on Trump and Hitler: A Comparative Study in Lying. Be thorough in content discussed but concise and economical with your language. Structure the report with section headings and bulleted lists to avoid long blocks of text.  
   
 ## 🐦 Tweet  

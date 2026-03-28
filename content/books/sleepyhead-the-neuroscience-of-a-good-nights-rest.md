@@ -7,7 +7,7 @@ share: true
 affiliate link: https://amzn.to/3FwiUwm
 CTA: 😴 Prioritize restorative nights.
 ---
-[Home](../index.md) > [Books](./index.md)  
+[Home](/content/index.md) > [Books](/content/books/index.md)  
 # 😴🧠 Sleepyhead: The Neuroscience of a Good Night's Rest  
 [🛒 Sleepyhead: The Neuroscience of a Good Night's Rest. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3FwiUwm)  
   
@@ -49,21 +49,21 @@ The book delves into the complex science of sleep, 😴 exploring its fundamenta
 ## 📚 Book Recommendations  
   
 ### 😴 Similar Reads (Focus on Sleep Science & Disorders)  
-* **[😴💭 Why We Sleep: Unlocking the Power of Sleep and Dreams](./why-we-sleep-unlocking-the-power-of-sleep-and-dreams.md)** by Matthew Walker  
+* **[😴💭 Why We Sleep: Unlocking the Power of Sleep and Dreams](/content/books/why-we-sleep-unlocking-the-power-of-sleep-and-dreams.md)** by Matthew Walker  
     * ✨ *Focus:* A comprehensive and influential overview of sleep science, emphasizing the critical importance of sleep for all aspects of health and performance.  
 * **The Nocturnal Brain: Nightmares, Neuroscience, and the Secret World of Sleep** by Guy Leschziner  
     * 👻 *Focus:* Explores the stranger side of sleep through neurological case studies of various sleep disorders, written by a neurologist.  
-* **[😴🛠️ The Sleep Solution: Why Your Sleep is Broken and How to Fix It](./the-sleep-solution-why-your-sleep-is-broken-and-how-to-fix-it.md)** by W. Chris Winter  
+* **[😴🛠️ The Sleep Solution: Why Your Sleep is Broken and How to Fix It](/content/books/the-sleep-solution-why-your-sleep-is-broken-and-how-to-fix-it.md)** by W. Chris Winter  
     * 🛠️ *Focus:* Practical advice and insights from a sleep specialist, aimed at helping readers understand and improve their own sleep.  
   
 ### 🧬 Contrasting/Complementary Reads (Different Angles on Health & Biology)  
-* **[🌄⏳ The Circadian Code: Lose Weight, Supercharge Your Energy, and Transform Your Health from Morning to Midnight](./the-circadian-code.md)** by Satchin Panda  
+* **[🌄⏳ The Circadian Code: Lose Weight, Supercharge Your Energy, and Transform Your Health from Morning to Midnight](/content/books/the-circadian-code.md)** by Satchin Panda  
     * ⏰ *Focus:* Deep dive specifically into circadian rhythms and how aligning lifestyle (especially eating patterns) with them impacts overall health, beyond just sleep.  
-* **[🤕🎼🧠 The Body Keeps the Score: Brain, Mind, and Body in the Healing of Trauma](./the-body-keeps-the-score-brain-mind-and-body-in-the-healing-of-trauma.md)** by Bessel van der Kolk  
+* **[🤕🎼🧠 The Body Keeps the Score: Brain, Mind, and Body in the Healing of Trauma](/content/books/the-body-keeps-the-score-brain-mind-and-body-in-the-healing-of-trauma.md)** by Bessel van der Kolk  
     * 💔 *Focus:* While centered on trauma, it explores the profound connection between psychological states and physiological processes, including how trauma can impact sleep and neurological function. 🤕 Relevant for understanding how stress impacts sleep.  
-* **[🧠💡📈🏠🏢🧑‍🎓 Brain Rules: 12 Principles for Surviving and Thriving at Work, Home, and School](./brain-rules-12-principles-for-surviving-and-thriving-at-work-home-and-school.md)** by John Medina  
+* **[🧠💡📈🏠🏢🧑‍🎓 Brain Rules: 12 Principles for Surviving and Thriving at Work, Home, and School](/content/books/brain-rules-12-principles-for-surviving-and-thriving-at-work-home-and-school.md)** by John Medina  
     * 🧠 *Focus:* General principles of brain function for everyday life, including a dedicated chapter on sleep's importance for cognitive performance. Provides broader context for brain health.  
-* **[🫁🌬️ Breath: The New Science of a Lost Art](./breath-the-new-science-of-a-lost-art.md)** by James Nestor  
+* **[🫁🌬️ Breath: The New Science of a Lost Art](/content/books/breath-the-new-science-of-a-lost-art.md)** by James Nestor  
     * 🫁 *Focus:* Explores the science and impact of breathing, which is highly relevant to conditions like sleep apnea and overall physiological regulation.  
   
 ### 💡 Creatively Related Reads (Broader Themes of Consciousness, Mind, Time)  
@@ -76,5 +76,5 @@ The book delves into the complex science of sleep, 😴 exploring its fundamenta
 * **Internal Time: Chronotypes, Social Jet Lag, and Why You're So Tired** by Till Roenneberg  
     * 🗓️ *Focus:* Explores the science of chronotypes (being a 'lark' or 'owl') and the societal mismatch ('social jet lag') that impacts health, linking individual biology to societal schedules.  
   
-## 💬 [Gemini](../software/gemini.md) Prompt (gemini-2.5-pro-exp-03-25)  
+## 💬 [Gemini](/content/software/gemini.md) Prompt (gemini-2.5-pro-exp-03-25)  
 > Write a markdown-formatted (start headings at level H2) book report, followed by a plethora of additional similar, contrasting, and creatively related book recommendations on Sleepyhead: The Neuroscience of a Good Night's Rest. Be thorough in content discussed but concise and economical with your language. Structure the report with section headings and bulleted lists to avoid long blocks of text.

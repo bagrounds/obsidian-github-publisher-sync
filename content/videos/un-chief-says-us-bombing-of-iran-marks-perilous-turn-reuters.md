@@ -10,7 +10,7 @@ Channel: Reuters
 tags:
 youtube: https://youtu.be/wUKEqx_ygSg
 ---
-[Home](../index.md) > [Videos](./index.md)  
+[Home](/content/index.md) > [Videos](/content/videos/index.md)  
 # 🇺🇸💣🇮🇷⚠️ UN chief says US bombing of Iran marks 'perilous turn' | REUTERS  
 ![UN chief says US bombing of Iran marks 'perilous turn' | REUTERS](https://youtu.be/wUKEqx_ygSg)  
   

@@ -7,7 +7,7 @@ share: true
 CTA: 🇺🇸 Defend self-governance.
 affiliate link: https://amzn.to/4oIQgsE
 ---
-[Home](../index.md) > [Books](./index.md)  
+[Home](/content/index.md) > [Books](/content/books/index.md)  
 # 🏛️💪 Giving Up Is Unforgivable: A Manual for Keeping a Democracy  
 [🛒 Giving Up Is Unforgivable: A Manual for Keeping a Democracy. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4oIQgsE)  
   
@@ -73,13 +73,13 @@ affiliate link: https://amzn.to/4oIQgsE
   
 ## 📚 Book Recommendations  
 ### 🤝 Similar  
-* [🗳️🏛️☠️ How Democracies Die](./how-democracies-die.md) by Steven Levitsky and Daniel Ziblatt  
-* [👑🚫📜2️⃣0️⃣ On Tyranny: Twenty Lessons from the Twentieth Century](./on-tyranny.md) by Timothy Snyder  
+* [🗳️🏛️☠️ How Democracies Die](/content/books/how-democracies-die.md) by Steven Levitsky and Daniel Ziblatt  
+* [👑🚫📜2️⃣0️⃣ On Tyranny: Twenty Lessons from the Twentieth Century](/content/books/on-tyranny.md) by Timothy Snyder  
 * 🕵️ The Despot's Accomplice: How the West Is Aiding the Rise of Authoritarianism by Brian Klaas  
   
 ### 🙅 Contrasting  
 * 📢 The Authoritarian Moment by Ben Shapiro  
-* [💀👨‍🏫 The Death of Expertise: The Campaign Against Established Knowledge and Why It Matters](./the-death-of-expertise-the-campaign-against-established-knowledge-and-why-it-matters.md) by Tom Nichols  
+* [💀👨‍🏫 The Death of Expertise: The Campaign Against Established Knowledge and Why It Matters](/content/books/the-death-of-expertise-the-campaign-against-established-knowledge-and-why-it-matters.md) by Tom Nichols  
 * 🎭 Identity: The Demand for Dignity and the Politics of Resentment by Francis Fukuyama  
   
 ### 🔗 Related  

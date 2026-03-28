@@ -9,7 +9,7 @@ Platform: "#YouTube"
 Channel: "[[Paul G. Allen School]]"
 tags:
 ---
-[Home](../index.md) > [Videos](./index.md)  
+[Home](/content/index.md) > [Videos](/content/videos/index.md)  
 # 🗺️♟️🤖🤝 Parables on the Power of Planning in AI: From Poker to Diplomacy: Noam Brown (OpenAI)  
 ![Parables on the Power of Planning in AI: From Poker to Diplomacy: Noam Brown (OpenAI)](https://youtu.be/eaAonE58sLU)  
   

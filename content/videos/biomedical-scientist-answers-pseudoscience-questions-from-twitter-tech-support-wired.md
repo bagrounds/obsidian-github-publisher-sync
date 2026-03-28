@@ -9,7 +9,7 @@ Platform: "#YouTube"
 Channel: "[[WIRED]]"
 tags:
 ---
-[Home](../index.md) > [Videos](./index.md)  
+[Home](/content/index.md) > [Videos](/content/videos/index.md)  
 # 🧫❓❌📱 Biomedical Scientist Answers Pseudoscience Questions From Twitter | Tech Support | WIRED  
 ![Biomedical Scientist Answers Pseudoscience Questions From Twitter | Tech Support | WIRED](https://youtu.be/vj71yGp-8WM)  
   

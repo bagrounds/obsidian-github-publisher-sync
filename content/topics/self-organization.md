@@ -132,7 +132,7 @@ The concept of self-organization gained prominence in the mid-20th century with 
 * **Topically opposed:** "The Control Revolution: Technological and Economic Origins of the Information Society" by James R. Beniger 📚  
 * **More general:** "Systems Thinking" by Donella H. Meadows 📚  
 * **More specific:** "Swarm Intelligence" by James Kennedy 📚  
-* **Fictional:** [🌌3️⃣⚛️ The Three-Body Problem](../books/the-three-body-problem.md) by Liu Cixin 📚  
+* **Fictional:** [🌌3️⃣⚛️ The Three-Body Problem](books/the-three-body-problem.md) by Liu Cixin 📚  
 * **Rigorous:** [🌪️✨🕰️ Order Out of Chaos: Man's New Dialogue with Nature](../books/order-out-of-chaos.md)by Ilya Prigogine and Isabelle Stengers 📚  
 * **Accessible:** "Emergence: The Connected Lives of Ants, Brains, Cities, and Software" by Steven Johnson 📚  
   

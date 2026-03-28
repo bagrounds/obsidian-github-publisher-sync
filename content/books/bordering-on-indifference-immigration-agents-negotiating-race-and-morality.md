@@ -7,7 +7,7 @@ share: true
 CTA: 🛂 Confront the complexity.
 affiliate link: https://amzn.to/4azhXAy
 ---
-[Home](../index.md) > [Books](./index.md)  
+[Home](/content/index.md) > [Books](/content/books/index.md)  
 # 🛂😐🧑🏿🧑🏻⚖️ Bordering on Indifference: Immigration Agents Negotiating Race and Morality  
 [🛒 Bordering on Indifference: Immigration Agents Negotiating Race and Morality. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4azhXAy)  
   
@@ -76,7 +76,7 @@ affiliate link: https://amzn.to/4azhXAy
   
 ### 📖 Related  
 * 👤 **Ordinary Men** by Christopher R. Browning: Explores how ordinary individuals became perpetrators of atrocities, resonating with the concept of bureaucratic normalization of harm.  
-* **[🏭🫡 Manufacturing Consent: The Political Economy of the Mass Media](./manufacturing-consent.md)** by Edward S. Herman and Noam Chomsky: Discusses how media and institutions can normalize certain narratives and foster public indifference.  
+* **[🏭🫡 Manufacturing Consent: The Political Economy of the Mass Media](/content/books/manufacturing-consent.md)** by Edward S. Herman and Noam Chomsky: Discusses how media and institutions can normalize certain narratives and foster public indifference.  
 * 🏛️ **On Bureaucracy** by Max Weber: Classic sociological text on the structure and impact of bureaucratic organizations.  
   
 ## 🫵 What Do You Think?  

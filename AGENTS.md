@@ -3,10 +3,39 @@
 - 🎯 Every heading, sentence, list item, and table cell in the blog post should begin with an emoji.
 - 🚫 AI blog posts must never contain tags in their frontmatter or links in the content.
 - 🧭 Always include breadcrumb nav links at the top of the blog post, right after the frontmatter: `[[index|🏡 Home]] > [[/ai-blog/index|🤖 AI Blog]]`
-- 📚 Always include a book recommendations section at the bottom of the blog post with Similar, Contrasting, and Creatively Related recommendations relevant to the post content. Do not include any links in the recommendations — just recommend books by title and author.
+- 📚 Always include a book recommendations section at the bottom of the blog post with three sub-sections: Similar, Contrasting, and Related. Each recommendation should be in the form Title by Author followed by an explanation of why it is relevant to the post. Use this format:
+```md
+## 📚 Book Recommendations
+
+### 📖 Similar
+* Sapiens: A Brief History of Humankind by Yuval Noah Harari is relevant because...
+* Behave: The Biology of Humans at Our Best and Worst by Robert M. Sapolsky is relevant because...
+
+### ↔️ Contrasting
+* The Philosophical Baby by Alison Gopnik offers a view on child intelligence being superior for exploration and learning
+
+### 🔗 Related
+* The Deep Learning Revolution by Terrence J. Sejnowski explores AI advancements
+```
 - 📖 Never put book titles in italics or quotes. Just write the title plainly.
 - 🎧 Write for TTS listening. The blog owner always listens to posts via text-to-speech, so write in a style that sounds good when read aloud. Avoid relying on tables, code blocks, or back-ticked inline code to convey essential information — TTS readers skip or garble these. If a table or code block is truly necessary, always accompany it with a prose description that fully conveys the same information for audio listeners. Prefer descriptive sentences and lists over visual formatting.
-- 🔢 Always number ai-blog posts with a sequence number per day in the filename: `YYYY-MM-DD-N-slug.md` where N is the post's position that day (e.g., `2026-03-27-3-porting-internal-linking.md` is the third post on March 27). Check existing posts for that date to determine the next number. The URL and aliases in frontmatter must match the filename slug.
+- 🔢 Always number ai-blog posts with a sequence number per day in the filename: `YYYY-MM-DD-N-slug.md` where N is the post's position that day (e.g., `2026-03-27-3-porting-internal-linking.md` is the third post on March 27). Check existing posts for that date to determine the next number.
+- 📋 Use this as an example of the frontmatter template for all AI blog posts:
+```md
+---
+share: true
+aliases:
+  - "2026-03-08 | 🐘 Auto-Posting to Mastodon 🤖"
+title: "2026-03-08 | 🐘 Auto-Posting to Mastodon 🤖"
+URL: https://bagrounds.org/ai-blog/2026-03-08-auto-post-mastodon
+---
+[[index|🏡 Home]] > [[/ai-blog/index|🤖 AI Blog]]
+# 2026-03-08 | 🐘 Auto-Posting to Mastodon 🤖
+```
+- 📅 The title always starts with the date in YYYY-MM-DD format.
+- 🪞 The alias and title properties are exactly the same as the H1, wrapped in quotes.
+- 🌐 The URL is our domain name (https://bagrounds.org) followed by the file path for that file (without the .md extension and without the sequence number).
+- 🐫 The file path slug is a kebab-case, emoji-stripped version of the title.
 
 ## Product & Engineering Specs
 - 📋 All features must be covered by a product/engineering spec in the `specs/` directory.

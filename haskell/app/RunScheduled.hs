@@ -48,7 +48,7 @@ import Automation.BlogSeriesConfig
   , lookupSeries
   )
 import Automation.DailyReflection (updateDailyReflection)
-import Automation.DailyUpdates (UpdateLink (..), addUpdateLinksToReflection)
+import Automation.DailyUpdates (UpdateCategory (..), UpdateLink (..), addUpdateLinksToReflection)
 import Automation.Gemini
   ( GenerationConfig (..)
   , GeminiResponse (..)
@@ -524,13 +524,13 @@ runBackfillImages manager repoRoot vaultDir = do
   case imageUpdateLinks of
     [] -> pure ()
     _  -> do
-      _ <- addUpdateLinksToReflection reflectionsDir today imageUpdateLinks
+      _ <- addUpdateLinksToReflection reflectionsDir today ImageUpdate imageUpdateLinks
       pure ()
 
   -- 7. Add update links from nav link changes (each blog post links to its date's reflection)
   aiBlogLinks <- buildReflectionLinks aiBlogDir navResults
   mapM_ (\(relPath, title, date) ->
-    addUpdateLinksToReflection reflectionsDir date [UpdateLink relPath title]
+    addUpdateLinksToReflection reflectionsDir date InternalLinkUpdate [UpdateLink relPath title]
     ) aiBlogLinks
 
   logMsg "✅ backfill-blog-images"

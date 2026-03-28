@@ -7,7 +7,7 @@ share: true
 affiliate link: https://amzn.to/40jb28x
 CTA: Uncover the truth.
 ---
-[Home](../index.md) > [Books](./index.md)  
+[Home](/content/index.md) > [Books](/content/books/index.md)  
 # 🏛️👹🇺🇸🏰👹🇷🇺 House of Trump, House of Putin: The Untold Story of Donald Trump and the Russian Mafia  
 [🛒 House of Trump, House of Putin: The Untold Story of Donald Trump and the Russian Mafia. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/40jb28x)  
   
@@ -37,11 +37,11 @@ The book is a 🥇 *New York Times* bestseller. 📰 Reviews have described it a
   
 ### 📖 Similar Reads (Focus on Trump, Russia, Corruption, Organized Crime)  
   
-* **[🇷🇺🪝🇺🇸 American Kompromat: How the KGB Cultivated Donald Trump, and Other Tales of Sex, Greed, Power, and Treachery](./american-kompromat-how-the-kgb-cultivated-donald-trump-and-other-tales-of-sex-greed-power-and-treachery.md)** by Craig Unger: Unger's follow-up book, delving further into the alleged cultivation of Trump by Russian intelligence.  
-* **[🇷🇺🤫🇺🇸 Collusion: Secret Meetings, Dirty Money, and How Russia Helped Donald Trump Win](./collusion-secret-meetings-dirty-money-and-how-russia-helped-donald-trump-win.md)** by Luke Harding: Explores the connections between the Trump campaign and Russia, drawing on the author's experience as a journalist in Moscow.  
+* **[🇷🇺🪝🇺🇸 American Kompromat: How the KGB Cultivated Donald Trump, and Other Tales of Sex, Greed, Power, and Treachery](/content/books/american-kompromat-how-the-kgb-cultivated-donald-trump-and-other-tales-of-sex-greed-power-and-treachery.md)** by Craig Unger: Unger's follow-up book, delving further into the alleged cultivation of Trump by Russian intelligence.  
+* **[🇷🇺🤫🇺🇸 Collusion: Secret Meetings, Dirty Money, and How Russia Helped Donald Trump Win](/content/books/collusion-secret-meetings-dirty-money-and-how-russia-helped-donald-trump-win.md)** by Luke Harding: Explores the connections between the Trump campaign and Russia, drawing on the author's experience as a journalist in Moscow.  
 * ⚠️ **Red Notice: A True Story of High Finance, Murder, and One Man's Fight for Justice** by Bill Browder: Details the corruption and danger within the Russian financial system and the lengths Putin's regime will go to protect itself.  
 * 👑 **The New Tsar: The Rise and Reign of Vladimir Putin** by Steven Lee Myers: Provides a comprehensive biography of Vladimir Putin and his consolidation of power in Russia.  
-* **[💸🌍 Kleptopia: How Dirty Money Is Conquering the World](./kleptopia-how-dirty-money-is-conquering-the-world.md)** by Tom Burgis: Investigates the global flow of illicit finance and its corrosive effects on democracy, with connections to Russia and other authoritarian states.  
+* **[💸🌍 Kleptopia: How Dirty Money Is Conquering the World](/content/books/kleptopia-how-dirty-money-is-conquering-the-world.md)** by Tom Burgis: Investigates the global flow of illicit finance and its corrosive effects on democracy, with connections to Russia and other authoritarian states.  
   
 ### ⚖️ Contrasting Reads (Different Perspectives or Challenges to Unger's Thesis)  
   
@@ -57,7 +57,7 @@ The book is a 🥇 *New York Times* bestseller. 📰 Reviews have described it a
 * 💥 **The Looming Tower: Al-Qaeda and the Road to 9/11** by Lawrence Wright: While focused on a different subject, this book's in-depth investigation into the origins and rise of a complex, dangerous entity mirrors Unger's meticulous approach to uncovering hidden networks.  
 * 📰 **All the President's Men** by Carl Bernstein and Bob Woodward: The classic account of the Watergate investigation, illustrating the power of investigative journalism to uncover political corruption and abuse of power.  
   
-## 💬 [Gemini](../software/gemini.md) Prompt (gemini-2.5-flash-preview-04-17)  
+## 💬 [Gemini](/content/software/gemini.md) Prompt (gemini-2.5-flash-preview-04-17)  
 > Write a markdown-formatted (start headings at level H2) book report, followed by a plethora of additional similar, contrasting, and creatively related book recommendations on House of Trump, House of Putin: The Untold Story of Donald Trump and the Russian Mafia. Be thorough in content discussed but concise and economical with your language. Structure the report with section headings and bulleted lists to avoid long blocks of text.  
   
 ## 🐦 Tweet  

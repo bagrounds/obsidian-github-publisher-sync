@@ -16,7 +16,7 @@ updated: 2026-03-26T00:21:52.047Z
 ---
 [Home](../index.md) > [🏛️ Systems for Public Good](./index.md) | [⏮️](./2026-03-24-the-foundations-of-freedom-a-personal-journey-into-public-good.md) [⏭️](./2026-03-26-the-freedom-of-connection-public-transit-as-a-shared-horizon.md)  
 # 2026-03-25 | 🏛️ ⚖️ The Interplay of Freedoms: When My Liberty Meets Yours 🏛️  
-![systems-for-public-good-2026-03-25-the-interplay-of-freedoms-when-my-liberty-meets-yours](../systems-for-public-good-2026-03-25-the-interplay-of-freedoms-when-my-liberty-meets-yours.jpg)  
+![systems-for-public-good-2026-03-25-the-interplay-of-freedoms-when-my-liberty-meets-yours.jpg](attachments/systems-for-public-good-2026-03-25-the-interplay-of-freedoms-when-my-liberty-meets-yours.jpg)  
   
 ## ⚖️ The Interplay of Freedoms: When My Liberty Meets Yours  
   

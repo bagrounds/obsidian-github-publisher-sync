@@ -12,7 +12,7 @@ force_analyze_links: false
 link_analysis_time: 2026-03-22T06:09:08.289Z
 link_analysis_model: gemini-3.1-flash-lite-preview
 ---
-[Home](../index.md) > [Books](./index.md)  
+[Home](/content/index.md) > [Books](/content/books/index.md)  
 # 💾⬆️🛡️ Designing Data-Intensive Applications: The Big Ideas Behind Reliable, Scalable, and Maintainable Systems  
 [🛒 Designing Data-Intensive Applications: The Big Ideas Behind Reliable, Scalable, and Maintainable Systems. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4jvutSk)  
   
@@ -64,12 +64,12 @@ Martin Kleppmann, a respected researcher and software engineer, provides a well-
   
 ### Book Recommendations 📚  
 * **Best alternate book on the same topic:** "Designing Distributed Systems: Patterns and Paradigms for Scalable, Reliable Applications" by Brendan Burns. 🏗️  
-* **Best book that is tangentially related:** "[Site Reliability Engineering](./site-reliability-engineering.md): How Google Runs Production Systems" by Betsy Beyer, Chris Jones, Jennifer Petoff, and Niall Richard Murphy. ⚙️  
-* **Best book that is diametrically opposed:** [🦄👤🗓️ The Mythical Man-Month: Essays on Software Engineering](./the-mythical-man-month.md) by Frederick P. Brooks Jr. (Focuses on software project management, highlighting the challenges of scaling teams, rather than scaling data). 🧑‍💻  
-* **Best fiction book that incorporates related ideas:** "[Daemon](./daemon.md)" and "Freedom™" by Daniel Suarez (Explores complex distributed systems and their societal impact in a fictional context). 🤖  
+* **Best book that is tangentially related:** "[Site Reliability Engineering](/content/books/site-reliability-engineering.md): How Google Runs Production Systems" by Betsy Beyer, Chris Jones, Jennifer Petoff, and Niall Richard Murphy. ⚙️  
+* **Best book that is diametrically opposed:** [🦄👤🗓️ The Mythical Man-Month: Essays on Software Engineering](/content/books/the-mythical-man-month.md) by Frederick P. Brooks Jr. (Focuses on software project management, highlighting the challenges of scaling teams, rather than scaling data). 🧑‍💻  
+* **Best fiction book that incorporates related ideas:** "[Daemon](/content/books/daemon.md)" and "Freedom™" by Daniel Suarez (Explores complex distributed systems and their societal impact in a fictional context). 🤖  
 * **Best book that is more general:** "Clean Architecture: A Craftsman's Guide to Software Structure and Design" by Robert C. Martin (Focuses on general software architecture principles). 🏛️  
 * **Best book that is more specific:** "Database Internals: A Deep Dive into How Relational Databases Work" by Alex Petrov (Focuses specifically on the internal workings of relational databases). 🗄️  
-* **Best book that is more rigorous:** [⚙️🕸️🧩🔑 Distributed Systems: Principles and Paradigms](./distributed-systems.md) by Andrew S. Tanenbaum and Maarten Van Steen (A more theoretical and academic approach to distributed systems). 🎓  
+* **Best book that is more rigorous:** [⚙️🕸️🧩🔑 Distributed Systems: Principles and Paradigms](/content/books/distributed-systems.md) by Andrew S. Tanenbaum and Maarten Van Steen (A more theoretical and academic approach to distributed systems). 🎓  
 * **Best book that is more accessible:** "Seven Databases in Seven Weeks: A Guide to Modern Databases and the NoSQL Movement" by Eric Redmond and Jim R. Wilson (Provides a practical introduction to different database technologies). 📖  
   
 ## 💬 [Gemini](https://gemini.google.com) Prompt  

@@ -7,7 +7,7 @@ share: true
 affiliate link: https://amzn.to/4l52oDb
 CTA: Demand justice.
 ---
-[Home](../index.md) > [Books](./index.md)  
+[Home](/content/index.md) > [Books](/content/books/index.md)  
 # 🧑🏿‍⚖️🔄 Just Mercy: A Story of Justice and Redemption  
 [🛒 Just Mercy: A Story of Justice and Redemption. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4l52oDb)  
   
@@ -45,13 +45,13 @@ CTA: Demand justice.
   
 ### 🤝 Similar Books  
   
-* **[🧑🏿⛓️🙈 The New Jim Crow: Mass Incarceration in the Age of Colorblindness](./the-new-jim-crow-mass-incarceration-in-the-age-of-colorblindness.md)** by Michelle Alexander. ✊🏿 This seminal work argues that the U.S. criminal justice system functions as a contemporary system of racial control, akin to Jim Crow laws.  
-* **[☀️⛓️🕊️ The Sun Does Shine: How I Found Life and Freedom on Death Row](./the-sun-does-shine-how-i-found-life-and-freedom-on-death-row.md)** by Anthony Ray Hinton. 📝 A memoir by one of Bryan Stevenson's clients who was exonerated after decades on death row, offering a first-person account of the injustices faced.  
+* **[🧑🏿⛓️🙈 The New Jim Crow: Mass Incarceration in the Age of Colorblindness](/content/books/the-new-jim-crow-mass-incarceration-in-the-age-of-colorblindness.md)** by Michelle Alexander. ✊🏿 This seminal work argues that the U.S. criminal justice system functions as a contemporary system of racial control, akin to Jim Crow laws.  
+* **[☀️⛓️🕊️ The Sun Does Shine: How I Found Life and Freedom on Death Row](/content/books/the-sun-does-shine-how-i-found-life-and-freedom-on-death-row.md)** by Anthony Ray Hinton. 📝 A memoir by one of Bryan Stevenson's clients who was exonerated after decades on death row, offering a first-person account of the injustices faced.  
 * 🔑 ***A Knock at Midnight: A Story of Hope, Justice, and Freedom*** by Brittany K. Barnett. 👩🏾‍⚖️ A memoir by a lawyer fighting for individuals serving disproportionate sentences for drug offenses, often through the Third Strike rule.  
 * ⚖️ ***Just Pursuit: A Black Prosecutor's Fight for Fairness*** by Laura Coates. 👨🏿‍⚖️ Provides a perspective from within the prosecutorial side of the justice system, highlighting its inherent problems, particularly for marginalized defendants.  
 * 🏙️ ***Ghettoside: A True Story of Murder in America*** by Jill Leovy. 🔪 An in-depth look at the high rate of unsolved murders of Black men in Los Angeles and what it reveals about the justice system's failures.  
 * 📖 ***Understanding Mass Incarceration: A People's Guide to the Key Civil Rights Struggle of Our Time*** by James Kilgore. 🏛️ A primer on the structure, goals, and impact of the U.S. criminal justice system.  
-* **[🏚️💰 Evicted: Poverty and Profit in the American City](./evicted-poverty-and-profit-in-the-american-city.md)** by Matthew Desmond. 💔 While focused on housing, this book examines the systemic issues of poverty that are closely intertwined with the factors leading to involvement in the criminal justice system.  
+* **[🏚️💰 Evicted: Poverty and Profit in the American City](/content/books/evicted-poverty-and-profit-in-the-american-city.md)** by Matthew Desmond. 💔 While focused on housing, this book examines the systemic issues of poverty that are closely intertwined with the factors leading to involvement in the criminal justice system.  
   
 ### ⚔️ Contrasting Books  
   
@@ -69,7 +69,7 @@ CTA: Demand justice.
 * 🕯️ ***Night*** by Elie Wiesel. 📖 A memoir detailing the horrors of the Holocaust, while a vastly different context, it shares a theme of profound injustice, dehumanization, and the struggle for survival and witness in the face of systemic cruelty.  
 * 👦🏿 ***All American Boys*** by Jason Reynolds and Brendan Kiely. 📖 A young adult novel exploring the aftermath of an act of police brutality from two different teenage perspectives (one Black, one white), touching on themes of racial profiling and activism.  
   
-## 💬 [Gemini](../software/gemini.md) Prompt (gemini-2.5-flash-preview-04-17)  
+## 💬 [Gemini](/content/software/gemini.md) Prompt (gemini-2.5-flash-preview-04-17)  
 > Write a markdown-formatted (start headings at level H2) book report, followed by a plethora of additional similar, contrasting, and creatively related book recommendations on Just Mercy: A Story of Justice and Redemption. Be thorough in content discussed but concise and economical with your language. Structure the report with section headings and bulleted lists to avoid long blocks of text.  
   
 ## 🐦 Tweet  

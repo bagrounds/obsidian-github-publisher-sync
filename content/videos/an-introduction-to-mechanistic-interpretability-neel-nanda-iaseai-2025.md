@@ -10,7 +10,7 @@ Channel: International Association for Safe & Ethical AI
 tags:
 youtube: https://youtu.be/0704iLc55Fs
 ---
-[Home](../index.md) > [Videos](./index.md)  
+[Home](/content/index.md) > [Videos](/content/videos/index.md)  
 # 📚🤖⚙️💡 An Introduction to Mechanistic Interpretability – Neel Nanda | IASEAI 2025  
 ![An Introduction to Mechanistic Interpretability – Neel Nanda | IASEAI 2025](https://youtu.be/0704iLc55Fs)  
   
@@ -64,10 +64,10 @@ youtube: https://youtu.be/0704iLc55Fs
   
 ### 🆚 Contrasting  
   
-* [🤔🐇🐢 Thinking, Fast and Slow](../books/thinking-fast-and-slow.md) by Daniel Kahneman 💨 This seminal work on human cognition contrasts with AI interpretability by explaining how human decision-making is governed by two systems, offering insight into the kind of messy, non-mechanistic reasoning AI might be mimicking.  
+* [🤔🐇🐢 Thinking, Fast and Slow](/content/books/thinking-fast-and-slow.md) by Daniel Kahneman 💨 This seminal work on human cognition contrasts with AI interpretability by explaining how human decision-making is governed by two systems, offering insight into the kind of messy, non-mechanistic reasoning AI might be mimicking.  
 * 🚫 The AI Delusion by Gary Smith ⚠️ This book offers a critical analysis of the hype and fundamental limitations surrounding AI, arguing against overreliance on complex models and emphasizing the importance of human judgment, contrasting the ambitious pursuit of full model understanding.  
   
 ### 🎨 Creatively Related  
   
 * 🐜 Emergence The Connected Lives of Ants Brains Cities and Software by Steven Johnson 🏙️ This book discusses how complex, functional order arises from simple rules and interactions among individual components, providing a biological and social metaphor for how inexplicable complexity appears in neural networks.  
-* [🌐🧭❓🔍🗺️ Complexity: A Guided Tour](../books/complexity.md) by Melanie Mitchell 🗺️ This book provides an overview of complex systems science, including concepts like chaos and emergence, which are central to understanding why neural networks develop inscrutable, organic internal structure.
+* [🌐🧭❓🔍🗺️ Complexity: A Guided Tour](/content/books/complexity.md) by Melanie Mitchell 🗺️ This book provides an overview of complex systems science, including concepts like chaos and emergence, which are central to understanding why neural networks develop inscrutable, organic internal structure.

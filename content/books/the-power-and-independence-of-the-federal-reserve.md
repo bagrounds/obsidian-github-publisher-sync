@@ -7,7 +7,7 @@ share: true
 affiliate link: https://amzn.to/4n5F8p6
 CTA: 🏛️ Understand monetary policy.
 ---
-[Home](../index.md) > [Books](./index.md)  
+[Home](/content/index.md) > [Books](/content/books/index.md)  
 # 💪🏛️ The Power and Independence of the Federal Reserve  
 [🛒 The Power and Independence of the Federal Reserve. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4n5F8p6)  
   
@@ -46,7 +46,7 @@ The Power and Independence of the Federal Reserve encourages a deeper, more nuan
   
 ### 🎨 Creatively Related Books  
   
-* **[🇺🇸📜 The Federalist Papers](./the-federalist-papers.md)** This collection of essays ✍️ by Alexander Hamilton, James Madison, and John Jay provides fundamental insights into the design of the U.S. government 🏛️, exploring themes of institutional power 💪, checks and balances ⚖️, and the rationale behind governmental structures, which can be analogously applied to understanding the Federal Reserve's place within the larger political system.  
+* **[🇺🇸📜 The Federalist Papers](/content/books/the-federalist-papers.md)** This collection of essays ✍️ by Alexander Hamilton, James Madison, and John Jay provides fundamental insights into the design of the U.S. government 🏛️, exploring themes of institutional power 💪, checks and balances ⚖️, and the rationale behind governmental structures, which can be analogously applied to understanding the Federal Reserve's place within the larger political system.  
 * **The Idea of Justice by Amartya Sen** Sen's philosophical work 🧠 explores the concept of justice ⚖️, emphasizing the importance of institutional design and its impact on human capabilities and power dynamics. It offers a framework for evaluating whether institutions, like the Federal Reserve, truly serve their intended purposes in a just and equitable manner.  
 * **The Power Elite by C. Wright Mills** This sociological classic examines the concentration of power 💪 in modern American society, arguing for the existence of a cohesive power elite comprising corporate, military, and political leaders 👨‍💼. It provides a broader context for understanding how powerful institutions, including the Federal Reserve, operate within a network of influence.  
   

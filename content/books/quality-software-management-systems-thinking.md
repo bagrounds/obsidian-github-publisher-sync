@@ -7,7 +7,7 @@ share: true
 affiliate link: https://amzn.to/47NjsrB
 CTA: ⚙️ Orchestrate workflows.
 ---
-[Home](../index.md) > [Books](./index.md)  
+[Home](/content/index.md) > [Books](/content/books/index.md)  
 # ⚙️🔗 Quality Software Management: Systems Thinking  
 [🛒 Quality Software Management: Systems Thinking. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/47NjsrB)  
   
@@ -82,13 +82,13 @@ CTA: ⚙️ Orchestrate workflows.
 * 👨‍💼 Becoming a Technical Leader by Gerald M. Weinberg  
   
 ### 📚 Contrasting Books  
-* [🦄👤🗓️ The Mythical Man-Month: Essays on Software Engineering](./the-mythical-man-month.md) by Frederick Brooks Jr. (While cited and built upon, offers a more traditional project management perspective, pre-dating Weinberg's full systems thinking framework)  
+* [🦄👤🗓️ The Mythical Man-Month: Essays on Software Engineering](/content/books/the-mythical-man-month.md) by Frederick Brooks Jr. (While cited and built upon, offers a more traditional project management perspective, pre-dating Weinberg's full systems thinking framework)  
 * 🌱 Extreme Programming Explained: Embrace Change by Kent Beck (Focuses on specific agile practices rather than broad systems thinking theory)  
   
 ### ➕ Related Books  
-* [🌐🔗🧠📖 Thinking in Systems: A Primer](./thinking-in-systems.md) by Donella H. Meadows  
+* [🌐🔗🧠📖 Thinking in Systems: A Primer](/content/books/thinking-in-systems.md) by Donella H. Meadows  
 * 🤝 Teamwork Is An Individual Skill by Françoise Tourniaire  
-* [🏎️⛽ Drive: The Surprising Truth About What Motivates Us](./drive-the-surprising-truth-about-what-motivates-us.md) by Daniel H. Pink  
+* [🏎️⛽ Drive: The Surprising Truth About What Motivates Us](/content/books/drive-the-surprising-truth-about-what-motivates-us.md) by Daniel H. Pink  
   
 ## 🫵 What Do You Think?  
 💡 What are the most powerful insights you've observed from holistic thinking about software systems?

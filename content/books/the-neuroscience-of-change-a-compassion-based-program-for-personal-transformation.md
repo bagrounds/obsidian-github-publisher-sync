@@ -7,7 +7,7 @@ share: true
 affiliate link: https://amzn.to/4dJ4sxD
 CTA: 🧠 Cultivate inner peace.
 ---
-[Home](../index.md) > [Books](./index.md)  
+[Home](/content/index.md) > [Books](/content/books/index.md)  
 # 🧠❤️🔄 The Neuroscience of Change: A Compassion-Based Program for Personal Transformation  
 [🛒 The Neuroscience of Change: A Compassion-Based Program for Personal Transformation. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4dJ4sxD)  
   
@@ -16,7 +16,7 @@ CTA: 🧠 Cultivate inner peace.
 ### 📖 Overview  
   
 * *️⃣ **Title:** The Neuroscience of Change: A Compassion-Based Program for Personal Transformation  
-* ✍️ **Author:** [Kelly McGonigal](../people/kelly-mcgonigal.md), PhD, a health psychologist and lecturer at Stanford University known for her work on the mind-body connection, resilience, and compassion.  
+* ✍️ **Author:** [Kelly McGonigal](/content/people/kelly-mcgonigal.md), PhD, a health psychologist and lecturer at Stanford University known for her work on the mind-body connection, resilience, and compassion.  
 * 🎧 **Format:** Primarily an audio program (available as download or CD set), consisting of six sessions with guided practices and exercises.  
 * 💡 **Core Idea:** Integrates findings from neuroscience 🧠, psychology ⚕️, and medicine 💊 with contemplative practices (like mindfulness and compassion) to create a practical program for personal transformation ✨. It aims to help individuals understand how their brain works and use that knowledge, combined with self-awareness and self-compassion, to make lasting changes 💖.  
   
@@ -60,20 +60,20 @@ CTA: 🧠 Cultivate inner peace.
   
 ### 🧠 Similar Reads (Neuroscience, Compassion, Change)  
   
-* **[🧘🏋️ The Willpower Instinct: How Self-Control Works, Why It Matters, and What You Can Do to Get More of It](./the-willpower-instinct.md)** by Kelly McGonigal: Explores the science of self-control, complementing *The Neuroscience of Change* by focusing more deeply on willpower mechanisms.  
-* **[⬆️💪 The Upside of Stress: Why Stress Is Good for You, and How to Get Good at It](./the-upside-of-stress-why-stress-is-good-for-you-and-how-to-get-good-at-it.md)** by Kelly McGonigal: Reframes stress, using science to show how changing your mindset about stress can make you healthier and more resilient 💪.  
+* **[🧘🏋️ The Willpower Instinct: How Self-Control Works, Why It Matters, and What You Can Do to Get More of It](/content/books/the-willpower-instinct.md)** by Kelly McGonigal: Explores the science of self-control, complementing *The Neuroscience of Change* by focusing more deeply on willpower mechanisms.  
+* **[⬆️💪 The Upside of Stress: Why Stress Is Good for You, and How to Get Good at It](/content/books/the-upside-of-stress-why-stress-is-good-for-you-and-how-to-get-good-at-it.md)** by Kelly McGonigal: Reframes stress, using science to show how changing your mindset about stress can make you healthier and more resilient 💪.  
 * 💖 **Self-Compassion: The Proven Power of Being Kind to Yourself** by Kristin Neff: A foundational book on self-compassion, explaining the core concepts (self-kindness, common humanity, mindfulness) and their benefits, aligning well with McGonigal's compassion focus.  
 * ✍️ **The Mindful Self-Compassion Workbook** by Kristin Neff & Christopher Germer: A practical workbook based on their evidence-based 8-week program, offering exercises to build self-compassion skills.  
-* **[⚛️🔄 Atomic Habits: An Easy & Proven Way to Build Good Habits & Break Bad Ones](./atomic-habits.md)** by James Clear: Focuses on the science of habit formation through small, incremental changes, overlapping with the practical change aspects.  
-* **[🧠🔄🏆 The Brain That Changes Itself: Stories of Personal Triumph from the Frontiers of Brain Science](./the-brain-that-changes-itself.md)** by Norman Doidge: Presents compelling stories of neuroplasticity in action, illustrating the brain's capacity for change.  
-* **[😇😈 Behave: The Biology of Humans at Our Best and Worst](./behave-the-biology-of-humans-at-our-best-and-worst.md)** by Robert M. Sapolsky: A deep dive into the biological and neurological underpinnings of human behavior, for those wanting more in-depth science 🔬.  
+* **[⚛️🔄 Atomic Habits: An Easy & Proven Way to Build Good Habits & Break Bad Ones](/content/books/atomic-habits.md)** by James Clear: Focuses on the science of habit formation through small, incremental changes, overlapping with the practical change aspects.  
+* **[🧠🔄🏆 The Brain That Changes Itself: Stories of Personal Triumph from the Frontiers of Brain Science](/content/books/the-brain-that-changes-itself.md)** by Norman Doidge: Presents compelling stories of neuroplasticity in action, illustrating the brain's capacity for change.  
+* **[😇😈 Behave: The Biology of Humans at Our Best and Worst](/content/books/behave-the-biology-of-humans-at-our-best-and-worst.md)** by Robert M. Sapolsky: A deep dive into the biological and neurological underpinnings of human behavior, for those wanting more in-depth science 🔬.  
 * 👁️ **Mindsight: The New Science of Personal Transformation** by Daniel Siegel: Explores how understanding our own minds (mindsight) can lead to healing and transformation, integrating neuroscience and mindfulness.  
 * 🔄 **Rewire: Change Your Brain to Break Bad Habits, Overcome Addictions, Conquer Self-Destructive Behavior** by Richard O'Connor (mentioned in a list of thought-provoking non-fiction): Focuses specifically on using brain science to overcome negative patterns.  
   
 ### ⚖️ Contrasting Perspectives (Different Change Models)  
   
-* **[😊👍 Feeling Good: The New Mood Therapy](./feeling-good-the-new-mood-therapy.md)** by David D. Burns: A classic work based on Cognitive Behavioral Therapy (CBT), focusing primarily on identifying and changing negative thought patterns, with less emphasis on compassion or somatic elements.  
-* **[🧘🟰🕊️ Discipline Equals Freedom: Field Manual](./discipline-equals-freedom-field-manual.md)** by Jocko Willink: Emphasizes radical discipline, accountability, and overcoming challenges through mental toughness, contrasting with the compassion-centered approach.  
+* **[😊👍 Feeling Good: The New Mood Therapy](/content/books/feeling-good-the-new-mood-therapy.md)** by David D. Burns: A classic work based on Cognitive Behavioral Therapy (CBT), focusing primarily on identifying and changing negative thought patterns, with less emphasis on compassion or somatic elements.  
+* **[🧘🟰🕊️ Discipline Equals Freedom: Field Manual](/content/books/discipline-equals-freedom-field-manual.md)** by Jocko Willink: Emphasizes radical discipline, accountability, and overcoming challenges through mental toughness, contrasting with the compassion-centered approach.  
 * ⛰️ **Can't Hurt Me: Master Your Mind and Defy the Odds** by David Goggins: Focuses on pushing past perceived limits through extreme mental and physical discipline, a stark contrast to self-compassion methods.  
 * 🚫 **The Subtle Art of Not Giving a F*ck: A Counterintuitive Approach to Living a Good Life** by Mark Manson: Advocates for choosing what truly matters and accepting negative experiences rather than striving for constant positivity or relying heavily on specific techniques like mindfulness/compassion.  
 * 🤔 **Rational Emotive Behavior Therapy (REBT) based books (e.g., works by Albert Ellis):** Focus on identifying and disputing irrational beliefs as the primary driver of emotional distress and behavioral problems, a more purely cognitive approach.  
@@ -82,13 +82,13 @@ CTA: 🧠 Cultivate inner peace.
   
 * 🎁 **The Gifts of Imperfection: Let Go of Who You Think You're Supposed to Be and Embrace Who You Are** by Brené Brown: Explores vulnerability, courage, worthiness, and authenticity, themes highly relevant to compassionate self-acceptance and change.  
 * 🦸‍♀️ **Dare to Lead: Brave Work. Tough Conversations. Whole Hearts.** by Brené Brown: Applies principles of vulnerability and courage to leadership and organizational change.  
-* 🖌️ **[The Artist's Way](./the-artists-way.md): A Spiritual Path to Higher Creativity** by Julia Cameron: A classic 12-week program for unlocking creativity, focusing on overcoming limiting beliefs and fears, often involving mindful practices like morning pages.  
-* **[🪄 Big Magic: Creative Living Beyond Fear](./big-magic.md)** by Elizabeth Gilbert: Explores creativity as a way of life, encouraging curiosity, courage, and letting go of perfectionism.  
-* **[🔦💡 Man's Search for Meaning](./mans-search-for-meaning.md)** by Viktor E. Frankl: A profound exploration of finding meaning even in extreme suffering, touching on themes of resilience, purpose, and the human capacity for choice.  
-* **[👣➡️🌍 Wherever You Go, There You Are](./wherever-you-go-there-you-are.md): Mindfulness Meditation in Everyday Life** by Jon Kabat-Zinn: A foundational guide to mindfulness practice by the founder of Mindfulness-Based Stress Reduction (MBSR).  
+* 🖌️ **[The Artist's Way](/content/books/the-artists-way.md): A Spiritual Path to Higher Creativity** by Julia Cameron: A classic 12-week program for unlocking creativity, focusing on overcoming limiting beliefs and fears, often involving mindful practices like morning pages.  
+* **[🪄 Big Magic: Creative Living Beyond Fear](/content/books/big-magic.md)** by Elizabeth Gilbert: Explores creativity as a way of life, encouraging curiosity, courage, and letting go of perfectionism.  
+* **[🔦💡 Man's Search for Meaning](/content/books/mans-search-for-meaning.md)** by Viktor E. Frankl: A profound exploration of finding meaning even in extreme suffering, touching on themes of resilience, purpose, and the human capacity for choice.  
+* **[👣➡️🌍 Wherever You Go, There You Are](/content/books/wherever-you-go-there-you-are.md): Mindfulness Meditation in Everyday Life** by Jon Kabat-Zinn: A foundational guide to mindfulness practice by the founder of Mindfulness-Based Stress Reduction (MBSR).  
 * 🫂 **Radical Acceptance: Embracing Your Life with the Heart of a Buddha** by Tara Brach: Integrates Buddhist teachings and psychology to help readers overcome feelings of shame and fear through mindfulness and compassion.  
-* 🌊 **[Flow: The Psychology of Optimal Experience](./flow-the-psychology-of-optimal-experience.md)** by Mihaly Csikszentmihalyi: Explores the state of "flow" where one is fully immersed and energized in an activity, relevant to finding fulfilling engagement during the change process.  
-* **[🧪🎯🦋 Tiny Experiments: How to Live Freely in a Goal-Obsessed World](./tiny-experiments-how-to-live-freely-in-a-goal-obsessed-world.md)** by Anne-Laure Le Cunff: Advocates approaching life and change through small, adaptable experiments rather than rigid goals, drawing on neuroscience and philosophy.  
+* 🌊 **[Flow: The Psychology of Optimal Experience](/content/books/flow-the-psychology-of-optimal-experience.md)** by Mihaly Csikszentmihalyi: Explores the state of "flow" where one is fully immersed and energized in an activity, relevant to finding fulfilling engagement during the change process.  
+* **[🧪🎯🦋 Tiny Experiments: How to Live Freely in a Goal-Obsessed World](/content/books/tiny-experiments-how-to-live-freely-in-a-goal-obsessed-world.md)** by Anne-Laure Le Cunff: Advocates approaching life and change through small, adaptable experiments rather than rigid goals, drawing on neuroscience and philosophy.  
   
-## 💬 [Gemini](../software/gemini.md) Prompt (gemini-2.5-pro-exp-03-25)  
+## 💬 [Gemini](/content/software/gemini.md) Prompt (gemini-2.5-pro-exp-03-25)  
 > Write a markdown-formatted (start headings at level H2) book report, followed by a plethora of additional similar, contrasting, and creatively related book recommendations on The Neuroscience of Change: A Compassion-Based Program for Personal Transformation. Be thorough in content discussed but concise and economical with your language. Structure the report with section headings and bulleted lists to avoid long blocks of text.

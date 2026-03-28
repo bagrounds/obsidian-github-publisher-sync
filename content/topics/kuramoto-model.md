@@ -138,7 +138,7 @@ Yoshiki Kuramoto developed the model in the 1970s to understand self-synchroniza
 ### 📖 Book Recommendations  
   
 * Topical: "Synchronization: A Universal Concept in Nonlinear Sciences" by Arkady Pikovsky, Michael Rosenblum, and Jürgen Kurths. 📚  
-* Tangentially related: "[Nonlinear Dynamics and Chaos](../books/nonlinear-dynamics-and-chaos.md): With Applications to Physics, Biology, Chemistry, and Engineering" by Steven H. Strogatz. 🌀  
+* Tangentially related: "[Nonlinear Dynamics and Chaos](books/nonlinear-dynamics-and-chaos.md): With Applications to Physics, Biology, Chemistry, and Engineering" by Steven H. Strogatz. 🌀  
 * Topically opposed: "[Chaos: Making a New Science](../books/chaos.md)" by James Gleick. 🤯  
 * More general: "Complex Systems" by John H. Holland. 🌐  
 * More specific: "Oscillator Death: The Quest for Incoherence in Coupled Systems" by Adilson E. Motter. 💀  

@@ -7,7 +7,7 @@ URL: https://bagrounds.org/articles/scaling-long-horizon-llm-agent-via-context-f
 Author:
 tags:
 ---
-[Home](../index.md) > [Articles](./index.md)  
+[Home](/content/index.md) > [Articles](/content/articles/index.md)  
 # [🤖♾️🗂️ Scaling Long Horizon LLM Agent via Context Folding](https://www.arxiv.org/pdf/2510.11967)  
   
 ## 🤖 AI Summary  
@@ -46,12 +46,12 @@ tags:
 ## 📚 Book Recommendations  
   
 ### ↔️ Similar  
-* [🤖🏗️ AI Engineering: Building Applications with Foundation Models](../books/ai-engineering-building-applications-with-foundation-models.md) by Chip Huyen: Provides a comprehensive, production-ready guide to building large-scale AI systems, covering current best practices for LLMs, RAG, and scalable infrastructure (from search results).  
-* [✨🤖🔗🐍 Generative AI with LangChain: A Hands On Guide to Crafting Scalable, Intelligent Systems and Advanced AI Agents with Python](../books/generative-ai-with-langchain-a-hands-on-guide-to-crafting-scalable-intelligent-systems-and-advanced-ai-agents-with-python.md) by Ben Auffarth and Leonid Kuligin: Focuses on building advanced LLM applications, including multi-agent architectures and connecting LLMs to external data and tools, which is highly relevant to agentic design (from search results).  
+* [🤖🏗️ AI Engineering: Building Applications with Foundation Models](/content/books/ai-engineering-building-applications-with-foundation-models.md) by Chip Huyen: Provides a comprehensive, production-ready guide to building large-scale AI systems, covering current best practices for LLMs, RAG, and scalable infrastructure (from search results).  
+* [✨🤖🔗🐍 Generative AI with LangChain: A Hands On Guide to Crafting Scalable, Intelligent Systems and Advanced AI Agents with Python](/content/books/generative-ai-with-langchain-a-hands-on-guide-to-crafting-scalable-intelligent-systems-and-advanced-ai-agents-with-python.md) by Ben Auffarth and Leonid Kuligin: Focuses on building advanced LLM applications, including multi-agent architectures and connecting LLMs to external data and tools, which is highly relevant to agentic design (from search results).  
   
 ### 🆚 Contrasting  
 * 🧠 Neuro-Symbolic AI: Design transparent and trustworthy systems that understand the world as you do (Packt Publishing): Explores the integration of modern deep learning (sub-symbolic) with older, logic-based, rule-driven Symbolic AI, offering a contrasting perspective on how intelligence can be structured.  
-* [🤖🧠 Artificial Intelligence: A Modern Approach](../books/artificial-intelligence-a-modern-approach.md) by Stuart Russell and Peter Norvig: This foundational textbook thoroughly covers both the logic and planning of classical AI and the statistical methods of modern AI, providing a comprehensive framework to understand different architectural philosophies (from common knowledge).  
+* [🤖🧠 Artificial Intelligence: A Modern Approach](/content/books/artificial-intelligence-a-modern-approach.md) by Stuart Russell and Peter Norvig: This foundational textbook thoroughly covers both the logic and planning of classical AI and the statistical methods of modern AI, providing a comprehensive framework to understand different architectural philosophies (from common knowledge).  
   
 ### 🎨 Creatively Related  
 * 💡 The Psychology of Problem Solving (Edited by Janet E. Davidson and Robert J. Sternberg): Explores the cognitive science behind how humans solve problems, including the function of working memory, which is directly analogous to the LLM agent's constrained context window (from search results).  

@@ -6,7 +6,7 @@ URL: https://bagrounds.org/books/what-if-we-get-it-right-visions-of-climate-futu
 share: true
 affiliate link: https://amzn.to/3T4xv5a
 ---
-[Home](../index.md) > [Books](./index.md)  
+[Home](/content/index.md) > [Books](/content/books/index.md)  
 # 🌡️✅🌎 What If We Get It Right?: Visions of Climate Futures  
 [🛒 What If We Get It Right?: Visions of Climate Futures. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3T4xv5a)  
   
@@ -44,7 +44,7 @@ affiliate link: https://amzn.to/3T4xv5a
 * ⬇️ **Drawdown: The Most Comprehensive Plan Ever Proposed to Reverse Global Warming** edited by Paul Hawken: 🔎 This book meticulously researches and ranks a wide array of substantive solutions to climate change, offering a practical and hopeful roadmap.  
 * 🌱 **The Future We Choose: Surviving the Climate Crisis** by Christiana Figueres and Tom Rivett-Carnac: 🏛️ Written by key architects of the Paris Agreement, this book offers a pragmatic yet optimistic call to action, outlining two possible futures and the choices we need to make.  
 * 🔦 **Hope in the Dark: Untold Histories, Wild Possibilities** by Rebecca Solnit: 🤔 While not solely focused on climate, Solnit's work explores the nature of hope as a commitment to act in a world whose future remains uncertain, a theme resonant with Johnson's book.  
-* **[🪢🌾 Braiding Sweetgrass: Indigenous Wisdom, Scientific Knowledge, and the Teachings of Plants](./braiding-sweetgrass.md)** by Robin Wall Kimmerer: 🌍 This book beautifully intertwines Indigenous wisdom and scientific understanding to offer a more reciprocal and respectful relationship with the Earth, fostering a sense of hope through connection.  
+* **[🪢🌾 Braiding Sweetgrass: Indigenous Wisdom, Scientific Knowledge, and the Teachings of Plants](/content/books/braiding-sweetgrass.md)** by Robin Wall Kimmerer: 🌍 This book beautifully intertwines Indigenous wisdom and scientific understanding to offer a more reciprocal and respectful relationship with the Earth, fostering a sense of hope through connection.  
   
 ### ⚠️ Contrasting (Focus on Urgency & Challenges, but still Essential Reading):  
   
@@ -66,5 +66,5 @@ affiliate link: https://amzn.to/3T4xv5a
 * 🔄 **Cradle to Cradle: Remaking the Way We Make Things** by William McDonough and Michael Braungart: ♻️ Explores designing products and systems that are inherently sustainable and regenerative, echoing the call for a circular economy.  
 * ✍️ **Books by Bill McKibben** (e.g., *The End of Nature*, *Falter*): 🧑‍💻 McKibben is interviewed in Johnson's book and his extensive writing on climate change provides deep dives into activism, policy, and the history of the crisis.".  
   
-## 💬 [Gemini](../software/gemini.md) Prompt (gemini-2.5-pro-exp-03-25)  
+## 💬 [Gemini](/content/software/gemini.md) Prompt (gemini-2.5-pro-exp-03-25)  
 > Write a markdown-formatted (start headings at level H2) book report, followed by a plethora of additional similar, contrasting, and creatively related book recommendations on What If We Get It Right?: Visions of Climate Futures. Be thorough in content discussed but concise and economical with your language. Structure the report with section headings and bulleted lists to avoid long blocks of text.

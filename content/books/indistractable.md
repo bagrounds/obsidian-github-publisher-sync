@@ -14,7 +14,7 @@ CTA: 🧠 Reclaim focus.
 [🛒 Indistractable: How to Control Your Attention and Choose Your Life. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/43YVI2Y)  
   
 ## 📝🐒 Human Notes   
-- [🎣📱 Hooked: How to Build Habit-Forming Products](./hooked-how-to-build-habit-forming-products.md)  
+- [🎣📱 Hooked: How to Build Habit-Forming Products](books/hooked-how-to-build-habit-forming-products.md)  
   
 ## 📖 Book Report: Indistractable  
   
@@ -79,7 +79,7 @@ CTA: 🧠 Reclaim focus.
 * **Best Diametrically Opposed Book:** [🥱🤓 Bored and Brilliant: How Spacing Out Can Unlock Your Most Productive and Creative Self](./bored-and-brilliant.md) by Manoush Zomorodi. 😴 (Argues for the importance of boredom and unstructured time for creativity and innovation.)  
 * **Best Fiction Book That Incorporates Related Ideas:** The Circle by Dave Eggers. ⭕ (Explores the dangers of constant connectivity and the erosion of privacy.)  
 * **Best More General Book:** [🤔🐇🐢 Thinking, Fast and Slow](./thinking-fast-and-slow.md) by Daniel Kahneman. 🧠 (Explores the two systems of thinking and their impact on decision-making.)  
-* **Best More Specific Book:** [🎣📱 Hooked: How to Build Habit-Forming Products](./hooked-how-to-build-habit-forming-products.md) by Nir Eyal. 🎣 (Focuses on the psychology of habit formation in product design.)  
+* **Best More Specific Book:** [🎣📱 Hooked: How to Build Habit-Forming Products](books/hooked-how-to-build-habit-forming-products.md) by Nir Eyal. 🎣 (Focuses on the psychology of habit formation in product design.)  
 * **Best More Rigorous Book:** [💪📈 Willpower: Rediscovering the Greatest Human Strength](./willpower.md) by Roy F. Baumeister and John Tierney. 💪 (Provides a more in-depth, research-based exploration of willpower and self-control.)  
 * **Best More Accessible Book:** [🔄🧠💪 The Power of Habit: Why We Do What We Do in Life and Business](./the-power-of-habit.md) by Charles Duhigg. 💡 (Explains the science of habit formation in a clear and engaging way.)  
   

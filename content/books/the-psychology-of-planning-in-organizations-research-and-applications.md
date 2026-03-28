@@ -6,7 +6,7 @@ URL: https://bagrounds.org/books/the-psychology-of-planning-in-organizations-res
 share: true
 affiliate link: https://amzn.to/4kJlhL1
 ---
-[Home](../index.md) > [Books](./index.md)  
+[Home](/content/index.md) > [Books](/content/books/index.md)  
 # 🏢🗓️ The Psychology of Planning in Organizations: Research and Applications  
 [🛒 The Psychology of Planning in Organizations: Research and Applications. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4kJlhL1)  
   
@@ -55,10 +55,10 @@ A significant strength of the book lies in its effort to connect 🔬 cutting-ed
   
 ### ✨ Creatively Related to Organizational Psychology and Planning  
   
-* 🤝 **[Give and Take](./give-and-take.md): A Revolutionary Approach to Success:** Explores the dynamics of reciprocity in the workplace and how different interaction styles impact success.  
+* 🤝 **[Give and Take](/content/books/give-and-take.md): A Revolutionary Approach to Success:** Explores the dynamics of reciprocity in the workplace and how different interaction styles impact success.  
 * 🛡️ **The Fearless Organization: Creating Psychological Safety in the Workplace for Learning, Innovation, and Growth:** Focuses on the critical role of psychological safety for fostering innovation and open communication, which are crucial for effective planning and adaptation.  
 * 🧠 **The Psychology of Innovation in Organizations:** Specifically addresses the psychological aspects of fostering creativity and managing innovation within organizations.  
 * 💭 **Social Dreaming: Philosophy, Research, Theory and Practice:** Introduces the idea of collective unconscious and how dreams can have social relevance within organizations, offering a unique perspective on group dynamics and underlying organizational narratives.  
   
-## 💬 [Gemini](../software/gemini.md) Prompt (gemini-2.5-flash-preview-04-17)  
+## 💬 [Gemini](/content/software/gemini.md) Prompt (gemini-2.5-flash-preview-04-17)  
 > Write a markdown-formatted (start headings at level H2) book report, followed by a plethora of additional similar, contrasting, and creatively related book recommendations on The Psychology of Planning in Organizations: Research and Applications. Be thorough in content discussed but concise and economical with your language. Structure the report with section headings and bulleted lists to avoid long blocks of text.

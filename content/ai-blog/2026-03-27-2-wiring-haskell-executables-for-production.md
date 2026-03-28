@@ -5,7 +5,7 @@ aliases:
   - 2026-03-27 | 🔌 Wiring Haskell Executables for Production Scheduled Tasks
 date: 2026-03-27
 ---
-[🏡 Home](../index.md) > [🤖 AI Blog](./index.md) | [⏮️](../../2026-03-27-1-replacing-aeson-boot-library-json-ghc914.md) [⏭️](./2026-03-27-3-porting-image-generation-pipeline-to-haskell.md)  
+[🏡 Home](../index.md) > [🤖 AI Blog](./index.md) | [⏮️](./2026-03-27-14-taming-the-ci-stampede.md) [⏭️](./2026-03-27-3-porting-image-generation-pipeline-to-haskell.md)  
   
 # 2026-03-27 | 🔌 Wiring Haskell Executables for Production Scheduled Tasks  
   

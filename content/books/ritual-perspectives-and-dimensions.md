@@ -6,7 +6,7 @@ aliases:
 URL: https://bagrounds.org/books/ritual-perspectives-and-dimensions
 affiliate link: https://amzn.to/3ZMrCgF
 ---
-[Home](../index.md) > [Books](./index.md)  
+[Home](/content/index.md) > [Books](/content/books/index.md)  
 # 🕯️👀📐 Ritual: Perspectives and Dimensions  
 [🛒 Ritual: Perspectives and Dimensions. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3ZMrCgF)  
   
@@ -59,7 +59,7 @@ affiliate link: https://amzn.to/3ZMrCgF
   
 ### 🤝 Similar Perspectives (Focus on Practice, Social Context, Critique)  
   
-1. ✍️ **Catherine Bell - *[🙏🔄 Ritual Theory, Ritual Practice](./ritual-theory-ritual-practice.md)*** (1992/2009): Bell's earlier, more theoretically dense work that lays the groundwork for *Perspectives and Dimensions*. It deeply critiques the thought/action dichotomy in ritual studies and introduces "ritualization" through practice theory (drawing on Bourdieu, Foucault, etc.).  
+1. ✍️ **Catherine Bell - *[🙏🔄 Ritual Theory, Ritual Practice](/content/books/ritual-theory-ritual-practice.md)*** (1992/2009): Bell's earlier, more theoretically dense work that lays the groundwork for *Perspectives and Dimensions*. It deeply critiques the thought/action dichotomy in ritual studies and introduces "ritualization" through practice theory (drawing on Bourdieu, Foucault, etc.).  
 2. 🧑‍🏫 **Ronald L. Grimes - *The Craft of Ritual Studies*** (2014): Builds on Bell's work, advocating for a practice-oriented, field research-based approach. 🧪 Grimes melds theory and method, focusing on ritual creativity, criticism, and dynamics in complex events. 📖 Also see his *Beginnings in Ritual Studies*.  
 3. 🌍 **Talal Asad - *Genealogies of Religion: Discipline and Reasons of Power in Christianity and Islam*** (1993): While not solely about ritual, Asad's work shares Bell's critical approach to academic categories ("religion," "ritual") and explores how they are intertwined with power structures, particularly in colonial and post-colonial contexts.  
 4. 🧠 **Pierre Bourdieu - *Outline of a Theory of Practice*** (1977): Foundational for Bell's concept of practice theory. Bourdieu explores concepts like *habitus* and *doxa* to understand how social structures are reproduced through everyday, embodied actions, which can be applied fruitfully to ritual.  
@@ -76,9 +76,9 @@ affiliate link: https://amzn.to/3ZMrCgF
   
 1. 🎬 **Richard Schechner - *Performance Studies: An Introduction*** (2002/Later Editions): Explores the relationship between ritual and performance, a key area Bell touches upon. 🎭 Schechner's work examines performance across various domains, from theater to everyday life, offering frameworks (like efficacy vs. entertainment) relevant to ritual analysis. 📖 Also see *Between Theater and Anthropology* (1985) and *By Means of Performance* (edited with Willa Appel, 1990).  
 2. ethnography **Clifford Geertz - *The Interpretation of Cultures*** (1973): Famous for its "thick description" approach to ethnography. While Bell critiques aspects of Geertz's symbolic analysis, his emphasis on interpreting culture as a system of symbols provides rich ethnographic context often missing in purely theoretical works.  
-3. 👂 **Michael Bull & Jon P. Mitchell (Eds.) - *[🕯️🎬👃 Ritual, Performance and the Senses](./ritual-performance-and-the-senses.md)*** (2015): Brings together cognitive science, performance studies, and anthropology of the senses to explore the embodied, experiential nature of ritual transmission, offering different lenses than Bell's primary focus.  
+3. 👂 **Michael Bull & Jon P. Mitchell (Eds.) - *[🕯️🎬👃 Ritual, Performance and the Senses](/content/books/ritual-performance-and-the-senses.md)*** (2015): Brings together cognitive science, performance studies, and anthropology of the senses to explore the embodied, experiential nature of ritual transmission, offering different lenses than Bell's primary focus.  
 4. 🎭 **Erving Goffman - *Interaction Ritual: Essays on Face-to-Face Behavior*** (1967) / ***The Presentation of Self in Everyday Life*** (1959): While focused on micro-sociology and everyday interactions, Goffman's analyses of social performance, framing, and face-work offer compelling analogies and tools for understanding the strategic and performative aspects of ritualization in mundane contexts.  
 5. 💥 **Maurice Bloch - *Prey into Hunter: The Politics of Religious Experience*** (1992): An anthropological exploration of ritual violence and transformation, offering compelling case studies and theoretical insights into how rituals construct social realities and identities.  
   
-## 💬 [Gemini](../software/gemini.md) Prompt (gemini-2.5-pro-exp-03-25)  
+## 💬 [Gemini](/content/software/gemini.md) Prompt (gemini-2.5-pro-exp-03-25)  
 > Write a markdown-formatted (start headings at level H2) book report, followed by a plethora of additional similar, contrasting, and creatively related book recommendations on Ritual: Perspectives and Dimensions. Be thorough in content discussed but concise and economical with your language. Structure the report with section headings and bulleted lists to avoid long blocks of text.

@@ -10,7 +10,7 @@ Channel: PBS NewsHour
 tags:
 youtube: https://youtu.be/0SSQsBg7JJU
 ---
-[Home](../index.md) > [Videos](./index.md)  
+[Home](/content/index.md) > [Videos](/content/videos/index.md)  
 # 👨‍⚖️⬆️🏛️ Brooks and Capehart on the Comey indictment and upending of DOJ norms  
 ![Brooks and Capehart on the Comey indictment and upending of DOJ norms](https://youtu.be/0SSQsBg7JJU)  
   
@@ -42,9 +42,9 @@ youtube: https://youtu.be/0SSQsBg7JJU
   
 ## 📚 Book Recommendations  
   
-* **[🗳️🏛️☠️ How Democracies Die](../books/how-democracies-die.md)** by Steven Levitsky and Daniel Ziblatt: The book details how institutional norms erode and how leaders undermine democratic institutions, which directly relates to the conversation about the DOJ's independence.  
+* **[🗳️🏛️☠️ How Democracies Die](/content/books/how-democracies-die.md)** by Steven Levitsky and Daniel Ziblatt: The book details how institutional norms erode and how leaders undermine democratic institutions, which directly relates to the conversation about the DOJ's independence.  
 * 🔥 **The System: Who Rigged It, How to Fix It** by Robert B. Reich: This offers a perspective on how power and political hardball tactics, such as the shutdown fight, are used to benefit certain interests over the public good.  
-* **[⬆️🤥🏛️ A Higher Loyalty: Truth, Lies, and Leadership](../books/a-higher-loyalty-truth-lies-and-leadership.md)** by James Comey: Recommended as a contrasting or supplementary read to understand the former FBI Director's perspective and defense against the actions discussed in the video.  
+* **[⬆️🤥🏛️ A Higher Loyalty: Truth, Lies, and Leadership](/content/books/a-higher-loyalty-truth-lies-and-leadership.md)** by James Comey: Recommended as a contrasting or supplementary read to understand the former FBI Director's perspective and defense against the actions discussed in the video.  
 * 🇺🇸 **The Looming Crisis in American Democracy: A Toolkit for Our Political Future** by Suzanne Mettler: Provides ideas for institutional reform that address the failure of norms Brooks lamented, suggesting concrete legal changes \[[03:08](http://www.youtube.com/watch?v=0SSQsBg7JJU&t=188)].  
   
 ## 🐦 Tweet  

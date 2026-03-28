@@ -7,7 +7,7 @@ share: true
 affiliate link: https://amzn.to/4pTMPAX
 CTA: 💖 Nurture connection.
 ---
-[Home](../index.md) > [Books](./index.md)  
+[Home](/content/index.md) > [Books](/content/books/index.md)  
 # ❤️👪 Good Inside: A Guide to Becoming the Parent You Want to Be  
 [🛒 Good Inside: A Guide to Becoming the Parent You Want to Be. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4pTMPAX)  
   
@@ -62,19 +62,19 @@ CTA: 💖 Nurture connection.
   
 #### 🫂 Similar Approaches (Connection-Focused, Emotional Intelligence)  
   
-* **[🕳️🧠👶🏽 The Whole-Brain Child: 12 Revolutionary Strategies to Nurture Your Child's Developing Mind](./the-whole-brain-child.md) by Daniel Siegel and Tina Payne Bryson**  
+* **[🕳️🧠👶🏽 The Whole-Brain Child: 12 Revolutionary Strategies to Nurture Your Child's Developing Mind](/content/books/the-whole-brain-child.md) by Daniel Siegel and Tina Payne Bryson**  
     * 🔬 **Focus:** Brain science, integrating different brain parts for emotional intelligence and resilience.  
     * 🤝 **Overlap:** Understanding "why" behind behavior, fostering healthy emotional responses.  
-* **[🤱🏼🤿🪞🌱 Parenting from the Inside Out: How a Deeper Self-Understanding Can Help You Raise Children Who Thrive](./parenting-from-the-inside-out-how-a-deeper-self-understanding-can-help-you-raise-children-who-thrive.md) by Daniel Siegel and Mary Hartzell**  
+* **[🤱🏼🤿🪞🌱 Parenting from the Inside Out: How a Deeper Self-Understanding Can Help You Raise Children Who Thrive](/content/books/parenting-from-the-inside-out-how-a-deeper-self-understanding-can-help-you-raise-children-who-thrive.md) by Daniel Siegel and Mary Hartzell**  
     * 🙋 **Focus:** Parent's self-understanding, how personal history impacts parenting, intergenerational healing.  
     * 💡 **Overlap:** Parental self-awareness, breaking cycles, fostering compassion.  
 * 🗣️ **How to Talk So Kids Will Listen and Listen So Kids Will Talk by Adele Faber and Elaine Mazlish**  
     * 💬 **Focus:** Practical communication strategies, validating feelings, setting boundaries respectfully.  
     * 🤝 **Overlap:** Respectful communication, reducing power struggles, emotional connection.  
-* **[🚫🎭🧠 No-Drama Discipline: The Whole-Brain Way to Calm the Chaos and Nurture Your Child's Developing Mind](./no-drama-discipline.md) by Daniel Siegel and Tina Payne Bryson**  
+* **[🚫🎭🧠 No-Drama Discipline: The Whole-Brain Way to Calm the Chaos and Nurture Your Child's Developing Mind](/content/books/no-drama-discipline.md) by Daniel Siegel and Tina Payne Bryson**  
     * 🍎 **Focus:** Discipline as teaching and connecting, not punishment. Integrates neuroscience.  
     * 🤝 **Overlap:** Compassionate responses to misbehavior, brain-based strategies.  
-* **[🌱👼🏼 Raising Good Humans: A Mindful Guide to Breaking the Cycle of Reactive Parenting and Raising Kind, Confident Kids](./raising-good-humans-a-mindful-guide-to-breaking-the-cycle-of-reactive-parenting-and-raising-kind-confident-kids.md) by Hunter Clarke-Fields**  
+* **[🌱👼🏼 Raising Good Humans: A Mindful Guide to Breaking the Cycle of Reactive Parenting and Raising Kind, Confident Kids](/content/books/raising-good-humans-a-mindful-guide-to-breaking-the-cycle-of-reactive-parenting-and-raising-kind-confident-kids.md) by Hunter Clarke-Fields**  
     * 💡 **Focus:** Parental self-awareness, mindfulness, recognizing triggers, mindful responses.  
     * 🤝 **Overlap:** Parental self-regulation, empathy, breaking reactive patterns.  
 * 🧸 **The Gentle Parenting Book by Sarah Ockwell-Smith**  

@@ -6,7 +6,7 @@ URL: https://bagrounds.org/books/the-marshmallow-test-mastering-self-control
 share: true
 affiliate link: https://amzn.to/3FCKxDR
 ---
-[Home](../index.md) > [Books](./index.md)  
+[Home](/content/index.md) > [Books](/content/books/index.md)  
 # 🍬⏳ The Marshmallow Test: Mastering Self-Control  
 [🛒 The Marshmallow Test: Mastering Self-Control. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3FCKxDR)  
   
@@ -42,23 +42,23 @@ affiliate link: https://amzn.to/3FCKxDR
   
 ## 📚 Book Recommendations  
 ### 👯 Similar Reads (Self-Control & Willpower)  
-* **[🧘🏋️ The Willpower Instinct: How Self-Control Works, Why It Matters, and What You Can Do to Get More of It](./the-willpower-instinct.md)** by Kelly McGonigal: Explores the science of self-control, viewing it as a biological function that can be improved with mindfulness, exercise, nutrition, and sleep.  
-* **💪 [Willpower](./willpower.md): Rediscovering Our Greatest Strength** by Roy F. Baumeister and John Tierney: Discusses willpower as a finite resource that can be depleted but also strengthened over time, drawing on extensive psychological research.  
+* **[🧘🏋️ The Willpower Instinct: How Self-Control Works, Why It Matters, and What You Can Do to Get More of It](/content/books/the-willpower-instinct.md)** by Kelly McGonigal: Explores the science of self-control, viewing it as a biological function that can be improved with mindfulness, exercise, nutrition, and sleep.  
+* **💪 [Willpower](/content/books/willpower.md): Rediscovering Our Greatest Strength** by Roy F. Baumeister and John Tierney: Discusses willpower as a finite resource that can be depleted but also strengthened over time, drawing on extensive psychological research.  
 * **🎯 Discipline Is Destiny: The Power of Self-Control** by Ryan Holiday: Draws on Stoic philosophy to argue for the importance of self-discipline as a key to a virtuous and successful life.  
 * **🚀 No Excuses!: The Power of Self-Discipline** by Brian Tracy: A practical guide focused on applying self-discipline to achieve goals in personal, business, and financial life.  
   
 ### 🤔 Contrasting Perspectives & Critiques  
 * *(Contextualizing the Marshmallow Test)*: 📝 While not a single book, it's worth noting recent replications and critiques of the original Marshmallow Test. 🏘️ Some studies suggest the original findings might be weaker when controlling for socioeconomic factors, indicating that a child's background and trust in the environment play significant roles. 🥺 Children from less stable environments might eat the marshmallow quickly not due to poor self-control, but because experience has taught them that future promises aren't always kept.  
-* **💭 [Thinking, Fast and Slow](./thinking-fast-and-slow.md)** by Daniel Kahneman: While complementary in exploring cognitive systems (Kahneman's System 1/System 2 aligns with Mischel's Hot/Cool systems), Kahneman focuses more broadly on cognitive biases and heuristics that affect judgment and decision-making, sometimes independent of pure willpower.  
-* **🧭 [Nudge](./nudge.md): Improving Decisions About Health, Wealth, and Happiness** by Richard H. Thaler and Cass R. Sunstein: Focuses less on individual self-control and more on how "choice architecture" (the design of environments where people make decisions) can be subtly changed to guide people toward better choices without restricting freedom.  
+* **💭 [Thinking, Fast and Slow](/content/books/thinking-fast-and-slow.md)** by Daniel Kahneman: While complementary in exploring cognitive systems (Kahneman's System 1/System 2 aligns with Mischel's Hot/Cool systems), Kahneman focuses more broadly on cognitive biases and heuristics that affect judgment and decision-making, sometimes independent of pure willpower.  
+* **🧭 [Nudge](/content/books/nudge.md): Improving Decisions About Health, Wealth, and Happiness** by Richard H. Thaler and Cass R. Sunstein: Focuses less on individual self-control and more on how "choice architecture" (the design of environments where people make decisions) can be subtly changed to guide people toward better choices without restricting freedom.  
   
 ### ✨ Creatively Related (Decision-Making, Mindset, Habits)  
-* **[⚛️🔄 Atomic Habits](./atomic-habits.md): An Easy & Proven Way to Build Good Habits & Break Bad Ones** by James Clear: Focuses on the power of small, consistent habits for achieving long-term goals, often bypassing the need for heroic willpower.  
-* **🔄 [The Power of Habit](./the-power-of-habit.md): Why We Do What We Do in Life and Business** by Charles Duhigg: Explores the neuroscience of habit formation (the "habit loop") and how understanding it can help change ingrained behaviors.  
-* **🧠 [Mindset](./mindset.md): The New Psychology of Success** by Carol S. Dweck: Discusses the difference between a "fixed mindset" (believing abilities are static) and a "growth mindset" (believing abilities can be developed), which influences how people approach challenges and setbacks.  
-* **[❤️‍🔥💪 Grit: The Power of Passion and Perseverance](./grit-the-power-of-passion-and-perseverance.md)** by Angela Duckworth: Argues that "grit"—a combination of passion and long-term perseverance—is a key ingredient for success, often more important than talent.  
-* **[🤿💼 Deep Work](./deep-work.md): Rules for Focused Success in a Distracted World** by Cal Newport: Addresses the importance of focused, distraction-free work for high-level cognitive performance and productivity, a skill related to self-control.  
-* **[🧘 Indistractable: How to Control Your Attention and Choose Your Life](./indistractable.md)** by Nir Eyal: Offers strategies for managing distractions and maintaining focus in a world full of interruptions, directly related to exercising self-control over attention.  
+* **[⚛️🔄 Atomic Habits](/content/books/atomic-habits.md): An Easy & Proven Way to Build Good Habits & Break Bad Ones** by James Clear: Focuses on the power of small, consistent habits for achieving long-term goals, often bypassing the need for heroic willpower.  
+* **🔄 [The Power of Habit](/content/books/the-power-of-habit.md): Why We Do What We Do in Life and Business** by Charles Duhigg: Explores the neuroscience of habit formation (the "habit loop") and how understanding it can help change ingrained behaviors.  
+* **🧠 [Mindset](/content/books/mindset.md): The New Psychology of Success** by Carol S. Dweck: Discusses the difference between a "fixed mindset" (believing abilities are static) and a "growth mindset" (believing abilities can be developed), which influences how people approach challenges and setbacks.  
+* **[❤️‍🔥💪 Grit: The Power of Passion and Perseverance](/content/books/grit-the-power-of-passion-and-perseverance.md)** by Angela Duckworth: Argues that "grit"—a combination of passion and long-term perseverance—is a key ingredient for success, often more important than talent.  
+* **[🤿💼 Deep Work](/content/books/deep-work.md): Rules for Focused Success in a Distracted World** by Cal Newport: Addresses the importance of focused, distraction-free work for high-level cognitive performance and productivity, a skill related to self-control.  
+* **[🧘 Indistractable: How to Control Your Attention and Choose Your Life](/content/books/indistractable.md)** by Nir Eyal: Offers strategies for managing distractions and maintaining focus in a world full of interruptions, directly related to exercising self-control over attention.  
   
-## 💬 [Gemini](../software/gemini.md) Prompt (gemini-2.5-pro-exp-03-25)  
+## 💬 [Gemini](/content/software/gemini.md) Prompt (gemini-2.5-pro-exp-03-25)  
 > Write a markdown-formatted (start headings at level H2) book report, followed by a plethora of additional similar, contrasting, and creatively related book recommendations on The Marshmallow Test: Mastering Self-Control. Be thorough in content discussed but concise and economical with your language. Structure the report with section headings and bulleted lists to avoid long blocks of text.

@@ -11,7 +11,7 @@ tags:
 youtube: https://youtu.be/5pFFKiLKFLQ
 CTA: 🇺🇸 Rebuild integrity.
 ---
-[Home](../index.md) > [Videos](./index.md) | [👨‍🏫📈💻 Scott Galloway](../people/scott-galloway.md)  
+[Home](/content/index.md) > [Videos](/content/videos/index.md) | [👨‍🏫📈💻 Scott Galloway](/content/people/scott-galloway.md)  
 # 🇺🇸📉💔 The Collapse of American Virtue — with Fareed Zakaria | Prof G Conversations  
 ![The Collapse of American Virtue — with Fareed Zakaria | Prof G Conversations](https://youtu.be/5pFFKiLKFLQ)  
   
@@ -81,10 +81,10 @@ CTA: 🇺🇸 Rebuild integrity.
   
 - 🛋️ The Complacent Class: The Self-Defeating Quest for the American Dream by Tyler Cowen. This contrasts the video's fat and happy critique by arguing that US problems stem from a lack of dynamism and risk-taking, rather than just an unwillingness to suffer.  
   
-- [💡🔬🧑‍🤝‍🧑📈 Enlightenment Now: The Case for Reason, Science, Humanism, and Progress](../books/enlightenment-now-the-case-for-reason-science-humanism-and-progress.md) by Steven Pinker. This offers a highly data-driven, optimistic view of global progress, providing a strong counterpoint to the video's analysis of societal and geopolitical decline.  
+- [💡🔬🧑‍🤝‍🧑📈 Enlightenment Now: The Case for Reason, Science, Humanism, and Progress](/content/books/enlightenment-now-the-case-for-reason-science-humanism-and-progress.md) by Steven Pinker. This offers a highly data-driven, optimistic view of global progress, providing a strong counterpoint to the video's analysis of societal and geopolitical decline.  
   
 ### 🎨 Creatively Related  
   
-- [🛠️💖 Shop Class as Soulcraft: An Inquiry Into the Value of Work](../books/shop-class-as-soulcraft-an-inquiry-into-the-value-of-work.md) by Matthew B. Crawford. This relates tangentially by focusing on the value of tangible, non-managerial work and the loss of purpose in modern society, speaking directly to the struggles and need for purpose felt by young non-college educated men.  
+- [🛠️💖 Shop Class as Soulcraft: An Inquiry Into the Value of Work](/content/books/shop-class-as-soulcraft-an-inquiry-into-the-value-of-work.md) by Matthew B. Crawford. This relates tangentially by focusing on the value of tangible, non-managerial work and the loss of purpose in modern society, speaking directly to the struggles and need for purpose felt by young non-college educated men.  
   
-- [📺💀 Amusing Ourselves to Death: Public Discourse in the Age of Show Business](../books/amusing-ourselves-to-death-public-discourse-in-the-age-of-show-business.md) by Neil Postman. This is relevant for its critique of media and culture, suggesting that the idolatry of money and the rise of personality politics is a long-term result of a shift from a print culture to a visual culture that favors superficiality.
+- [📺💀 Amusing Ourselves to Death: Public Discourse in the Age of Show Business](/content/books/amusing-ourselves-to-death-public-discourse-in-the-age-of-show-business.md) by Neil Postman. This is relevant for its critique of media and culture, suggesting that the idolatry of money and the rise of personality politics is a long-term result of a shift from a print culture to a visual culture that favors superficiality.

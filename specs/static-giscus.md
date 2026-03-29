@@ -10,15 +10,17 @@
 
 ### 📦 Components
 
-- 📚 Library at scripts/lib/static-giscus.ts provides comment fetching, rendering, and injection
-- 🖥️ CLI at scripts/inject-static-giscus.ts runs as a standalone entry point
+- 📚 TypeScript library at scripts/lib/static-giscus.ts provides comment fetching, rendering, and injection
+- 🖥️ TypeScript CLI at scripts/inject-static-giscus.ts runs as a standalone entry point
+- 🦀 Haskell library at haskell/src/Automation/StaticGiscus.hs provides the same logic for the compiled binary
+- 🖥️ Haskell binary inject-giscus at haskell/app/InjectGiscus.hs is used by the deploy workflow
 
 ### 🔄 Data Flow
 
-- 📁 Scans public HTML files for Giscus comment containers
+- 📁 Recursively scans public directory for HTML files (including all subdirectories)
 - 📡 Fetches discussions from GitHub GraphQL API
 - 🎨 Renders comments as static HTML with author info and timestamps
-- 💉 Injects rendered HTML into the page DOM
+- 💉 Injects rendered HTML before the giscus container div
 
 ## 🔧 Key Functions
 
@@ -26,13 +28,17 @@
 
 - renderStaticComment converts a comment object to HTML string
 - buildCommentsMap maps discussion pathnames to their comment lists
+- extractSlug reads the data-slug attribute from an HTML page body
+- findGiscusDiv locates the giscus div insertion point
 
 ### 💾 I/O Functions
 
 - fetchAllDiscussions retrieves all discussions for the repository
 - injectStaticComments inserts rendered comments into an HTML page
-- processHtmlFiles walks a directory and processes all HTML files
+- walkHtmlFiles recursively discovers all HTML files under a root directory
+- processHtmlFiles walks a directory recursively and processes all HTML files
 
 ## 🧪 Testing
 
-🔬 Integration tests require the built static site and GitHub API access.
+🔬 Unit tests in haskell/test/Automation/StaticGiscusTest.hs cover pure functions and file system operations.
+📁 File system tests verify recursive directory traversal using temporary directories.

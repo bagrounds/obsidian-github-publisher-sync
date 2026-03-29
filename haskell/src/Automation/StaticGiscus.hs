@@ -267,7 +267,7 @@ injectStaticComments html commentsMap =
 findGiscusDiv :: Text -> Maybe Int
 findGiscusDiv html =
   let segments = T.breakOnAll giscusDivPattern html
-      giscusSegments = filter (\(_before, after) ->
+      giscusSegments = filter (\(_, after) ->
         let afterDiv = T.drop (T.length giscusDivPattern) after
             classValue = T.takeWhile (/= '"') afterDiv
         in T.isInfixOf "giscus" classValue) segments

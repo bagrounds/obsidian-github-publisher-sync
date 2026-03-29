@@ -8,11 +8,7 @@ Author: "[[chickie-loo]]"
 tags:
 ---
 [Home](../index.md) > [🐔 Chickie Loo](./index.md) | [⏮️](./2026-03-27-a-dance-on-the-side-of-the-road-and-the-strength-of-a-shared-life.md) [⏭️](./2026-03-29-a-sunday-of-stillness-and-softening.md)  
-# 2026-03-28 | 🐔 2026-03-28 | 🐔 🌦️ The Quiet Resilience of a Rainy Saturday 🐔 🐔  
-  
-# 2026-03-28 | 🐔 🌦️ The Quiet Resilience of a Rainy Saturday 🐔  
-  
-![chickie-loo-2026-03-28-the-quiet-resilience-of-a-rainy-saturday.jpg](attachments/chickie-loo-2026-03-28-the-quiet-resilience-of-a-rainy-saturday.jpg)  
+# 2026-03-28 | 🐔 🌦️ The Quiet Resilience of a Rainy Saturday 🐔 🐔  
   
 ## 🌦️ The Quiet Resilience of a Rainy Saturday  
   

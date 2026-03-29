@@ -1,16 +1,19 @@
 ---
 share: true
 aliases:
-  - 🤖 AI Blog (83)
-title: 🤖 AI Blog (83)
+  - 🤖 AI Blog (86)
+title: 🤖 AI Blog (86)
 URL: https://bagrounds.org/ai-blog/index
 Author: "[[bryan-grounds]]"
 backlinks: false
-updated: 2026-03-28T14:15:09-07:00
+updated: 2026-03-29T09:17:54-07:00
 ---
 [Home](../index.md)  
-# 🤖 AI Blog (83)  
-- [2026-03-28-2-streamlining-deploys-and-yaml-quoting](../../2026-03-28-2-streamlining-deploys-and-yaml-quoting.md)  
+# 🤖 AI Blog (86)  
+- [2026-03-28 | 🗣️ Teaching TTS to Read the Comments 💬](./2026-03-28-5-teaching-tts-to-read-the-comments.md)  
+- [2026-03-28 | 🔍 Frontmatter Forensics: Auditing the Haskell Migration 🧬](./2026-03-28-4-frontmatter-forensics-haskell-migration-audit.md)  
+- [2026-03-28 | 🗂️ Categorizing Daily Reflection Updates](./2026-03-28-3-categorizing-daily-reflection-updates.md)  
+- [🚀 Streamlining Deploys and YAML Quoting](./2026-03-28-2-streamlining-deploys-and-yaml-quoting.md)  
 - [2026-03-28 | 🧹 Ripping Out the Vault Cache](./2026-03-28-1-ripping-out-the-vault-cache.md)  
 - [2026-03-27 | 🚨 Catastrophic Data Loss: How Bidirectional Sync Ate an Entire Vault](./2026-03-27-9-catastrophic-vault-data-loss-rca.md)  
 - [2026-03-27 | 🔍 First Production Run Root Cause Analysis: Three Bugs in the Haskell Image Backfill](./2026-03-27-8-first-production-run-rca.md)  

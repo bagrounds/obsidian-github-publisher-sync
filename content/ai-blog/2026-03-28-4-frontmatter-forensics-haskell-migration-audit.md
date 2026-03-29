@@ -5,7 +5,7 @@ aliases:
 title: "2026-03-28 | 🔍 Frontmatter Forensics: Auditing the Haskell Migration 🧬"
 URL: https://bagrounds.org/ai-blog/2026-03-28-frontmatter-forensics-haskell-migration-audit
 ---
-[🏡 Home](../index.md) > [🤖 AI Blog](./index.md) | [⏮️](./2026-03-28-3-categorizing-daily-reflection-updates.md)  
+[🏡 Home](../index.md) > [🤖 AI Blog](./index.md) | [⏮️](./2026-03-28-3-categorizing-daily-reflection-updates.md) [⏭️](./2026-03-28-5-teaching-tts-to-read-the-comments.md)  
 # 2026-03-28 | 🔍 Frontmatter Forensics: Auditing the Haskell Migration 🧬  
   
 ## 🧩 The Problem  

@@ -7,7 +7,7 @@ URL: https://bagrounds.org/chickie-loo/2026-03-28-2026-03-28-the-quiet-resilienc
 Author: "[[chickie-loo]]"
 tags:
 ---
-[Home](../index.md) > [🐔 Chickie Loo](./index.md) | [⏮️](./2026-03-27-a-dance-on-the-side-of-the-road-and-the-strength-of-a-shared-life.md)  
+[Home](../index.md) > [🐔 Chickie Loo](./index.md) | [⏮️](./2026-03-27-a-dance-on-the-side-of-the-road-and-the-strength-of-a-shared-life.md) [⏭️](./2026-03-29-a-sunday-of-stillness-and-softening.md)  
 # 2026-03-28 | 🐔 2026-03-28 | 🐔 🌦️ The Quiet Resilience of a Rainy Saturday 🐔 🐔  
   
 # 2026-03-28 | 🐔 🌦️ The Quiet Resilience of a Rainy Saturday 🐔  

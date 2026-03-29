@@ -5,7 +5,7 @@ aliases:
 title: 2026-03-28 | 🗂️ Categorizing Daily Reflection Updates
 URL: https://bagrounds.org/ai-blog/2026-03-28-categorizing-daily-reflection-updates
 ---
-[🏡 Home](../index.md) > [🤖 AI Blog](./index.md) | [⏮️](../../2026-03-28-2-streamlining-deploys-and-yaml-quoting.md)  
+[🏡 Home](../index.md) > [🤖 AI Blog](./index.md) | [⏮️](./2026-03-28-2-streamlining-deploys-and-yaml-quoting.md) [⏭️](./2026-03-28-4-frontmatter-forensics-haskell-migration-audit.md)  
   
 # 2026-03-28 | 🗂️ Categorizing Daily Reflection Updates  
   

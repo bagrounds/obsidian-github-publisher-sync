@@ -762,9 +762,7 @@ dropContinuationLines (l : rest)
   | otherwise = l : rest
 
 isContinuationLine :: Text -> Bool
-isContinuationLine l =
-  let stripped = T.stripStart l
-  in T.isPrefixOf "- " stripped || (not (T.null l) && T.head l == ' ')
+isContinuationLine l = not (T.null l) && T.isPrefixOf " " l
 
 recordLinkAnalysis :: FilePath -> Text -> Text -> IO ()
 recordLinkAnalysis filePath model timestamp =

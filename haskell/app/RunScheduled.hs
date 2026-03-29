@@ -9,7 +9,7 @@ import Data.Maybe (fromMaybe)
 import Data.Text (Text)
 import qualified Data.Text as T
 import qualified Data.Text.IO as TIO
-import Data.Time (UTCTime (..), addDays, defaultTimeLocale, formatTime, fromGregorian, getCurrentTime)
+import Data.Time (addDays, defaultTimeLocale, formatTime, fromGregorian, getCurrentTime)
 import Network.HTTP.Client (Manager, newManager)
 import Network.HTTP.Client.TLS (tlsManagerSettings)
 import System.Directory (createDirectoryIfMissing, doesDirectoryExist, doesFileExist, listDirectory, removeFile)
@@ -43,7 +43,6 @@ import Automation.BlogPrompt
 import Automation.BlogSeries
   ( appendModelSignature
   , buildBlogContext
-  , extractSlug
   , parseGeneratedPost
   , updatePreviousPost
   )

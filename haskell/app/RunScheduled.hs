@@ -27,7 +27,7 @@ import Automation.AiFiction
   , reflectionNeedsFiction
   )
 import Automation.BlogComments (fetchAllSeriesComments)
-import Automation.BlogImage (BackfillConfig (..), BackfillResult (..), syncMarkdownDir, syncAttachmentsDir, backfillImages, resolveImageProviders)
+import Automation.BlogImage (BackfillConfig (..), BackfillResult (..), ImageGenerationResult, syncMarkdownDir, syncAttachmentsDir, backfillImages, resolveImageProviders, processNote)
 import Automation.BlogPosts (BlogPost (..), readSeriesPosts)
 import Automation.BlogPrompt
   ( DateStr (..)
@@ -427,8 +427,26 @@ runBlogSeries manager repoRoot vaultDir seriesId = do
                   header = navLine <> "\n# " <> displayTitle <> "\n\n"
                   bodyWithSig = appendModelSignature body usedModel
               createDirectoryIfMissing True seriesDir
-              TIO.writeFile (seriesDir </> T.unpack filename) (frontmatter <> "\n" <> header <> bodyWithSig <> "\n")
+              let postPath = seriesDir </> T.unpack filename
+              TIO.writeFile postPath (frontmatter <> "\n" <> header <> bodyWithSig <> "\n")
               logMsg $ "  ✅ Written: " <> filename <> " [" <> usedModel <> "]"
+
+              -- Generate blog image (continue on error, matching TypeScript behavior)
+              let attachmentsDir = repoRoot </> "attachments"
+              imageEnvMap <- buildEnvMap
+                [ "GEMINI_API_KEY", "CLOUDFLARE_API_TOKEN", "CLOUDFLARE_ACCOUNT_ID"
+                , "CLOUDFLARE_IMAGE_MODEL", "HUGGINGFACE_API_KEY", "HUGGINGFACE_IMAGE_MODEL"
+                , "TOGETHER_API_KEY", "TOGETHER_IMAGE_MODEL", "POLLINATIONS_IMAGE_MODEL"
+                , "PROMPT_DESCRIBER_MODEL"
+                ]
+              let imageProviders = resolveImageProviders imageEnvMap
+              case imageProviders of
+                [] -> logMsg "  ⚠️  No image providers configured, skipping image generation"
+                (provider : _) -> do
+                  imageResult <- try (processNote manager provider postPath attachmentsDir) :: IO (Either SomeException ImageGenerationResult)
+                  case imageResult of
+                    Right _ -> logMsg $ "  🖼️  Image generated for " <> filename
+                    Left err -> logMsg $ "  ⚠️  Image generation failed for " <> filename <> ": " <> T.pack (show err)
 
               -- Update previous post with forward link
               case previousPost of
@@ -466,6 +484,9 @@ runBlogSeries manager repoRoot vaultDir seriesId = do
               -- Sync AGENTS.md
               let agentsRelPath = T.unpack seriesId </> "AGENTS.md"
               _ <- syncFileToVault (repoRoot </> agentsRelPath) agentsRelPath vaultDir
+
+              -- Sync attachments (image files) to vault
+              syncAttachmentsDir (repoRoot </> "attachments") (vaultDir </> "attachments")
               pure ()
 
   logMsg $ "✅ " <> taskName

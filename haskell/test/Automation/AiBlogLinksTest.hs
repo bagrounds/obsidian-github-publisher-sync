@@ -178,29 +178,34 @@ propertyTests :: TestTree
 propertyTests = testGroup "properties"
   [ testProperty "buildNavLine always starts with aiBlogNavPrefix" $
       \(QC.ASCIIString prev) (QC.ASCIIString next) ->
-        let prevM = case null prev of
+        let prev' = filter (\c -> c /= '\n' && c /= '\r') prev
+            next' = filter (\c -> c /= '\n' && c /= '\r') next
+            prevM = case null prev' of
               True  -> Nothing
-              False -> Just (T.pack prev <> ".md")
-            nextM = case null next of
+              False -> Just (T.pack prev' <> ".md")
+            nextM = case null next' of
               True  -> Nothing
-              False -> Just (T.pack next <> ".md")
+              False -> Just (T.pack next' <> ".md")
         in T.isPrefixOf aiBlogNavPrefix (buildNavLine prevM nextM)
   , testProperty "navLinksMatch agrees with buildNavLine" $
       \(QC.ASCIIString prev) (QC.ASCIIString next) ->
-        let prevM = case null prev of
+        let prev' = filter (\c -> c /= '\n' && c /= '\r') prev
+            next' = filter (\c -> c /= '\n' && c /= '\r') next
+            prevM = case null prev' of
               True  -> Nothing
-              False -> Just (T.pack prev <> ".md")
-            nextM = case null next of
+              False -> Just (T.pack prev' <> ".md")
+            nextM = case null next' of
               True  -> Nothing
-              False -> Just (T.pack next <> ".md")
+              False -> Just (T.pack next' <> ".md")
             navLine = buildNavLine prevM nextM
             content = "header\n" <> navLine <> "\nbody"
         in navLinksMatch content prevM nextM
   , testProperty "updateNavLinks is idempotent" $
       \(QC.ASCIIString prev) ->
-        let prevM = case null prev of
+        let prev' = filter (\c -> c /= '\n' && c /= '\r') prev
+            prevM = case null prev' of
               True  -> Nothing
-              False -> Just (T.pack prev <> ".md")
+              False -> Just (T.pack prev' <> ".md")
             content = aiBlogNavPrefix <> "\n# Post\n\nBody"
             once = updateNavLinks content prevM Nothing
             twice = updateNavLinks once prevM Nothing

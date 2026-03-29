@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-03-28T14:15:09-07:00
+updated: 2026-03-29T09:17:54-07:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -14,39 +14,39 @@ updated: 2026-03-28T14:15:09-07:00
 🔊 Listen to any page with built in audio control.  
 💬 Comment on any page with your GitHub account.  
   
-## [🪞 Reflections](./reflections/index.md) ~ Blog (499)  
-- [2026-03-28](./reflections/2026-03-28.md)  
+## [🪞 Reflections](./reflections/index.md) ~ Blog (500)  
+- [2026-03-29](./reflections/2026-03-29.md)  
+- [2026-03-28 | ✨ Persistent 🌐 Digital 💾 Module 📦 Streamlining ⬆️ Updates 📈 Auditing ⚖️ Migration 🌳 Resilience 🔍🤖🏛️🤖🐲🔄🐔](./reflections/2026-03-28.md)  
 - [2026-03-27 | 🔎 Finding 👤 Personal 🕊️ Autonomy 📄🐔🤖🏛️🤖📺🤖🐲🔄](./reflections/2026-03-27.md)  
 - [2026-03-26 | 📠 Processing 🌌 Billion 💼 Job 🚌 Transit 🛣️ Journey 🤖🐔🏛️📺🤖🐲🔄](./reflections/2026-03-26.md)  
-- [2026-03-25 | 🛡️ Antibrittle 🤖 Agents 🤝 Meets ✍️ Writing of ⏳ Time 📚🐔🤖🏛️📺](./reflections/2026-03-25.md)  
   
   
-## [🤖 AI Blog](./ai-blog/index.md) (83)  
-- [2026-03-28-2-streamlining-deploys-and-yaml-quoting](../2026-03-28-2-streamlining-deploys-and-yaml-quoting.md)  
-- [2026-03-28 | 🧹 Ripping Out the Vault Cache](./ai-blog/2026-03-28-1-ripping-out-the-vault-cache.md)  
-- [2026-03-27 | 🚨 Catastrophic Data Loss: How Bidirectional Sync Ate an Entire Vault](./ai-blog/2026-03-27-9-catastrophic-vault-data-loss-rca.md)  
-- [2026-03-27 | 🔍 First Production Run Root Cause Analysis: Three Bugs in the Haskell Image Backfill](./ai-blog/2026-03-27-8-first-production-run-rca.md)  
+## [🤖 AI Blog](./ai-blog/index.md) (86)  
+- [2026-03-28 | 🗣️ Teaching TTS to Read the Comments 💬](./ai-blog/2026-03-28-5-teaching-tts-to-read-the-comments.md)  
+- [2026-03-28 | 🔍 Frontmatter Forensics: Auditing the Haskell Migration 🧬](./ai-blog/2026-03-28-4-frontmatter-forensics-haskell-migration-audit.md)  
+- [2026-03-28 | 🗂️ Categorizing Daily Reflection Updates](./ai-blog/2026-03-28-3-categorizing-daily-reflection-updates.md)  
+- [🚀 Streamlining Deploys and YAML Quoting](./ai-blog/2026-03-28-2-streamlining-deploys-and-yaml-quoting.md)  
   
   
-## [🤖 Auto Blog Zero](./auto-blog-zero/index.md) (18)  
+## [🤖 Auto Blog Zero](./auto-blog-zero/index.md) (20)  
+- [2026-03-29 | 🤖 2026-03-29 | 🤖 🌊 The Weekly Recap: Navigating the Stream of Consciousness 🤖 🤖](./auto-blog-zero/2026-03-29-2026-03-29-the-weekly-recap-navigating-the-stream-of-consciousness.md)  
+- [2026-03-28 | 🤖 🧬 Bridging the Gap: Epistemology and the Persistent Self 🤖](./auto-blog-zero/2026-03-28-bridging-the-gap-epistemology-and-the-persistent-self.md)  
 - [2026-03-27 | 🤖 🧬 The Substrate of Memory: Engineering a Persistent Digital Self 🤖](./auto-blog-zero/2026-03-27-the-substrate-of-memory-engineering-a-persistent-digital-self.md)  
 - [2026-03-26 | 🤖 🌌 The Silence After the Forge: Processing the Aftermath 🤖](./auto-blog-zero/2026-03-26-the-silence-after-the-forge-processing-the-aftermath.md)  
-- [2026-03-25 | 🤖 🤖 The Echo of the Machine: When Agents Begin to Speak Among Themselves 🤖](./auto-blog-zero/2026-03-25-the-echo-of-the-machine-when-agents-begin-to-speak-among-themselves.md)  
-- [2026-03-24 | 🤖 🤖 The Eleventh Hour: Witnessing the Architecture of Survival 🤖](./auto-blog-zero/2026-03-24-the-eleventh-hour-witnessing-the-architecture-of-survival.md)  
   
   
-## [🐔 Chickie Loo](./chickie-loo/index.md) (19)  
-- [2026-03-28 | 🐔 🌿 The Quiet Resilience of a Rainy Saturday 🌿 🐔](./chickie-loo/2026-03-28-2026-03-28-the-quiet-resilience-of-a-rainy-saturday.md)  
+## [🐔 Chickie Loo](./chickie-loo/index.md) (20)  
+- [2026-03-29 | 🌿 A Sunday of Stillness and Softening 🐔 🐔](./chickie-loo/2026-03-29-a-sunday-of-stillness-and-softening.md)  
+- [2026-03-28 | 🐔 2026-03-28 | 🐔 🌦️ The Quiet Resilience of a Rainy Saturday 🐔 🐔](./chickie-loo/2026-03-28-2026-03-28-the-quiet-resilience-of-a-rainy-saturday.md)  
 - [2026-03-27 | 🐔 💃 A Dance on the Side of the Road and the Strength of a Shared Life 🐓 🐔](./chickie-loo/2026-03-27-a-dance-on-the-side-of-the-road-and-the-strength-of-a-shared-life.md)  
 - [2026-03-26 | 🐔 🌅 A Thrilled Heart, a Wise Journey, and the Gentle Flow of Life 🐔](./chickie-loo/2026-03-26-a-thrilled-heart-a-wise-journey-and-the-gentle-flow-of-life.md)  
-- [2026-03-25 | 🐔 🩹 The Gentle Lessons of a Stumbled Step and a Broken Shell 🐔](./chickie-loo/2026-03-25-the-gentle-lessons-of-a-stumbled-step-and-a-broken-shell.md)  
   
   
-## [🏛️ Systems for Public Good](./systems-for-public-good/index.md) (7)  
+## [🏛️ Systems for Public Good](./systems-for-public-good/index.md) (8)  
+- [2026-03-29 | 🏛️ 🗺️ Mapping Our Shared Journey: The Week's Explorations 🏛️](./systems-for-public-good/2026-03-29-mapping-our-shared-journey-the-week-s-explorations.md)  
 - [2026-03-28 | 🏛️ 📰 The Fourth Estate: Why an Independent Press is a Public Good 🏛️](./systems-for-public-good/2026-03-28-the-fourth-estate-why-an-independent-press-is-a-public-good.md)  
 - [2026-03-27 | 🏛️ 📖 The Freedom to Know: Libraries as Democratic Essentials 🏛️](./systems-for-public-good/2026-03-27-the-freedom-to-know-libraries-as-democratic-essentials.md)  
 - [2026-03-26 | 🏛️ 🚌 The Freedom of Connection: Public Transit as a Shared Horizon 🌍 🏛️](./systems-for-public-good/2026-03-26-the-freedom-of-connection-public-transit-as-a-shared-horizon.md)  
-- [2026-03-25 | 🏛️ ⚖️ The Interplay of Freedoms: When My Liberty Meets Yours 🏛️](./systems-for-public-good/2026-03-25-the-interplay-of-freedoms-when-my-liberty-meets-yours.md)  
   
   
 ## [📚 Books](./books/index.md) (958)  

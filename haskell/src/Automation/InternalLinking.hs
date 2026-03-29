@@ -740,13 +740,31 @@ updateFrontmatterFields filePath fields = do
 upsertField :: [Text] -> (Text, Text) -> [Text]
 upsertField ls (key, val) =
   let newLine   = key <> ": " <> quoteYamlValue val
-      pat       = T.unpack key <> ":"
-      replaced  = fmap (\l -> if matchesKey pat l then newLine else l) ls
+      pat       = T.pack (T.unpack key <> ":")
       didReplace = any (matchesKey pat) ls
-  in if didReplace then replaced else replaced <> [newLine]
+      replaced = replaceWithContinuation pat newLine ls
+  in if didReplace then replaced else ls <> [newLine]
   where
-    matchesKey :: String -> Text -> Bool
-    matchesKey p line = T.isPrefixOf (T.pack p) (T.stripStart line)
+    matchesKey :: Text -> Text -> Bool
+    matchesKey p line = T.isPrefixOf p (T.stripStart line)
+
+replaceWithContinuation :: Text -> Text -> [Text] -> [Text]
+replaceWithContinuation _ _ [] = []
+replaceWithContinuation keyPrefix newLine (l : rest)
+  | keyPrefix `T.isPrefixOf` T.stripStart l =
+      newLine : dropContinuationLines rest
+  | otherwise = l : replaceWithContinuation keyPrefix newLine rest
+
+dropContinuationLines :: [Text] -> [Text]
+dropContinuationLines [] = []
+dropContinuationLines (l : rest)
+  | isContinuationLine l = dropContinuationLines rest
+  | otherwise = l : rest
+
+isContinuationLine :: Text -> Bool
+isContinuationLine l =
+  let stripped = T.stripStart l
+  in T.isPrefixOf "- " stripped || (not (T.null l) && T.head l == ' ')
 
 recordLinkAnalysis :: FilePath -> Text -> Text -> IO ()
 recordLinkAnalysis filePath model timestamp =

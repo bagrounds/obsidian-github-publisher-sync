@@ -82,24 +82,50 @@ URL: https://bagrounds.org/ai-blog/2026-03-28-frontmatter-forensics-haskell-migr
 🔗 The InternalLinking module uses the same quoteYamlValue function, benefiting from the same fix.
 📋 Its upsertField function correctly handles scalar field updates.
 
-### ⚠️ Multi-Line Field Handling
+### 🛡️ Multi-Line Field Safety
 
-📝 Both applyField in BlogImage and upsertField in InternalLinking use prefix matching on field keys.
-🔍 If these functions were ever called with a multi-line field key like aliases, they could corrupt the YAML by replacing only the key line while leaving orphaned list items below.
-✅ In practice, these functions are only used for scalar fields like image date, image model, and link analysis time, so this is a theoretical risk rather than an active bug.
+📝 Both applyField in BlogImage and upsertField in InternalLinking previously used simple line-by-line prefix matching on field keys.
+🔍 If either function was called with a multi-line field key like aliases, it would have corrupted the YAML by replacing only the key line while leaving orphaned list items below.
+🛠️ Both functions were refactored to detect and drop YAML continuation lines, which are indented lines or list items that belong to the matched field.
+✅ This eliminates a latent bug that was waiting to express itself when these functions are eventually called with multi-line fields.
+
+## 🏗️ Type Safety with Newtypes
+
+🎯 The root cause of the parameter order bug was that every parameter was Text, so the compiler could not distinguish a date from a slug from a title.
+💡 The fix introduces three newtypes: Slug, DateStr, and DisplayTitle, each wrapping a Text value.
+🔧 Smart constructors mkSlug and mkDateStr validate their inputs and return Either Text, rejecting empty slugs, slugs with whitespace, and malformed dates.
+🛡️ With these newtypes, assembleFrontmatter now has the signature BlogSeriesConfig, DateStr, Text, Slug, returning Text. Passing a slug where a date is expected would now be a compile-time error.
+📝 The todayPacific function now returns IO DateStr instead of IO Text, propagating the type safety to all call sites.
 
 ## 📊 Test Results
 
-🧪 Nine new test cases were added to BlogPromptTest covering all the fixed behaviors.
+🧪 Fifteen new test cases were added to BlogPromptTest covering all the fixed behaviors, the newtypes, and smart constructor validation.
 ✅ Two new test cases were added to FrontmatterTest for YAML reserved indicator quoting.
-🏗️ All 287 tests pass after the changes.
+🧪 Four new test cases were added to BlogImageTest for multi-line field handling in applyField and updateFrontmatterFields.
+🏗️ All 297 tests pass after the changes.
 
 ## 🎓 Lessons Learned
 
 🔑 When porting code between languages, parameter order mismatches are especially dangerous because Haskell does not have named arguments.
 📐 The TypeScript version used positional arguments in the order series, today, title, slug, while the Haskell version reordered them to series, title, slug, today without updating the call site.
 🧪 A single test case that verified the full assembleFrontmatter output would have caught all five bugs immediately.
-🏗️ Strong static types help prevent many bugs, but they cannot save you when all your parameters share the same type, in this case Text.
+🏗️ Haskell makes it easy to create domain types to prevent these sorts of problems. The Slug, DateStr, and DisplayTitle newtypes now make it a compile-time error to swap parameters.
+📚 Always design and implement correct software. Relying on coincidence that allows currently benign bugs to lurk is not engineering. The multi-line field handling fix eliminates a latent bug that would have surfaced the moment a multi-line field was updated.
+
+## 🔧 YAML Library Considerations
+
+📦 The HsYAML library, a pure Haskell YAML 1.2 processor, is compatible with GHC 9.14 and available for future use.
+⚠️ The standard yaml package, which wraps libyaml via aeson, is NOT compatible with GHC 9.14 due to dependency resolution issues with indexed-traversable-instances and base-4.22.
+🔬 HsYAML provides both a high-level node API and a low-level event API for YAML serialization.
+📝 One limitation is that HsYAML's Mapping type uses ordered Maps, which do not preserve insertion order. This makes it unsuitable for re-emitting frontmatter where field order matters for readability.
+✅ For this project, the combination of always-quoting with quoteForYaml plus continuation-line-aware field replacement provides correct YAML encoding without needing a full library dependency.
+
+## 📏 Code Coverage
+
+📊 Haskell has built-in code coverage tooling through HPC, the Haskell Program Coverage tool.
+🔧 Running cabal test with the enable-coverage flag produces detailed coverage reports showing which expressions and alternatives were evaluated.
+📋 HPC generates both textual summaries and HTML reports that highlight covered and uncovered code.
+🎯 Integrating HPC into CI would help ensure that new code is well tested and that coverage trends are visible over time.
 
 ## 📚 Book Recommendations
 

@@ -159,6 +159,27 @@ tests = testGroup "BlogImage"
             T.isInfixOf "body content" $
               updateFrontmatterFields "---\ntitle: test\n---\nbody content"
                 [("new_field", "value")]
+      , testCase "replaces multi-line field without orphaning continuation lines" $
+          let input = "---\naliases:\n  - \"old alias\"\ntitle: test\n---\nbody"
+              result = updateFrontmatterFields input [("aliases", "new-value")]
+          in do
+            assertBool "should not have orphaned continuation line" $
+              not (T.isInfixOf "  - \"old alias\"" result)
+            assertBool "should have new value" $
+              T.isInfixOf "aliases: new-value" result
+            assertBool "should preserve title" $
+              T.isInfixOf "title: test" result
+      ]
+  , testGroup "applyField"
+      [ testCase "replaces scalar field" $
+          applyField ["title: old", "tags:"] ("title", "new")
+            @?= ["title: new", "tags:"]
+      , testCase "adds missing field" $
+          applyField ["title: test"] ("new_key", "value")
+            @?= ["title: test", "new_key: value"]
+      , testCase "drops continuation lines when replacing multi-line field" $
+          applyField ["aliases:", "  - \"first\"", "  - \"second\"", "title: test"] ("aliases", "replaced")
+            @?= ["aliases: replaced", "title: test"]
       ]
   , testGroup "removeImageEmbed"
       [ testCase "removes Obsidian embed and returns name" $

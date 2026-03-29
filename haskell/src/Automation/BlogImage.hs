@@ -15,6 +15,7 @@ module Automation.BlogImage
   , syncMarkdownDir
   , syncAttachmentsDir
   , updateFrontmatterFields
+  , applyField
   , mimeTypeToExtension
   , notePathToImageBaseName
   , resolveUniqueImageName
@@ -460,12 +461,28 @@ updateFrontmatterFields content fields =
 applyField :: [Text] -> (Text, Text) -> [Text]
 applyField fmLines (key, value) =
   let keyPrefix = key <> ":"
-      replaced = fmap (\l ->
-        if keyPrefix `T.isPrefixOf` T.stripStart l
-          then key <> ": " <> quoteYamlValue value
-          else l) fmLines
+      newLine = key <> ": " <> quoteYamlValue value
       keyExists = any (\l -> keyPrefix `T.isPrefixOf` T.stripStart l) fmLines
-  in if keyExists then replaced else replaced <> [key <> ": " <> quoteYamlValue value]
+      replaced = replaceWithContinuation keyPrefix newLine fmLines
+  in if keyExists then replaced else fmLines <> [newLine]
+
+replaceWithContinuation :: Text -> Text -> [Text] -> [Text]
+replaceWithContinuation _ _ [] = []
+replaceWithContinuation keyPrefix newLine (l : rest)
+  | keyPrefix `T.isPrefixOf` T.stripStart l =
+      newLine : dropContinuationLines rest
+  | otherwise = l : replaceWithContinuation keyPrefix newLine rest
+
+dropContinuationLines :: [Text] -> [Text]
+dropContinuationLines [] = []
+dropContinuationLines (l : rest)
+  | isContinuationLine l = dropContinuationLines rest
+  | otherwise = l : rest
+
+isContinuationLine :: Text -> Bool
+isContinuationLine l =
+  let stripped = T.stripStart l
+  in T.isPrefixOf "- " stripped || (not (T.null l) && T.head l == ' ')
 
 
 extractFrontmatterValue :: Text -> Text -> Maybe Text

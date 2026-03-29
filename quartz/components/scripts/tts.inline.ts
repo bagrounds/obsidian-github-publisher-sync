@@ -79,6 +79,47 @@ function shouldSkipBlock(el: Element, article: Element): boolean {
  * Skips parent block elements that contain nested block children to avoid
  * reading the same content twice (e.g. <li> containing <p>).
  */
+function appendCleanedBlock(
+  el: Element,
+  blocks: TextBlock[],
+  offset: number,
+): number {
+  const clone = el.cloneNode(true) as HTMLElement
+  INLINE_SELECTORS_TO_REMOVE.forEach((sel) =>
+    clone.querySelectorAll(sel).forEach((e) => e.remove()),
+  )
+  const text = injectBlockPauses(cleanText(clone.textContent ?? ""))
+  if (!text) return offset
+  blocks.push({ element: el, text, charStart: offset, charEnd: offset + text.length })
+  return offset + text.length + 1
+}
+
+function appendLeafBlocks(
+  root: Element,
+  blocks: TextBlock[],
+  offset: number,
+): number {
+  const elements = root.querySelectorAll(BLOCK_SELECTORS)
+  let cur = offset
+  for (const el of elements) {
+    if (el.querySelector(BLOCK_SELECTORS)) continue
+    cur = appendCleanedBlock(el, blocks, cur)
+  }
+  return cur === offset ? appendCleanedBlock(root, blocks, cur) : cur
+}
+
+function appendTextBlock(
+  element: Element,
+  rawText: string,
+  blocks: TextBlock[],
+  offset: number,
+): number {
+  const text = injectBlockPauses(cleanText(rawText))
+  if (!text) return offset
+  blocks.push({ element, text, charStart: offset, charEnd: offset + text.length })
+  return offset + text.length + 1
+}
+
 function extractArticleBlocks(): { text: string; blocks: TextBlock[] } {
   const article = document.querySelector("article")
   if (!article) return { text: "", blocks: [] }
@@ -89,22 +130,28 @@ function extractArticleBlocks(): { text: string; blocks: TextBlock[] } {
 
   for (const el of blockElements) {
     if (shouldSkipBlock(el, article)) continue
-
-    // Skip parent blocks that contain nested block children to avoid
-    // reading the same content twice (e.g. <li> wrapping a <p>).
     if (el.querySelector(BLOCK_SELECTORS)) continue
+    offset = appendCleanedBlock(el, blocks, offset)
+  }
 
-    // Clone to strip inline junk without mutating the real DOM
-    const clone = el.cloneNode(true) as HTMLElement
-    for (const sel of INLINE_SELECTORS_TO_REMOVE) {
-      clone.querySelectorAll(sel).forEach((e) => e.remove())
+  const staticComments = document.querySelector("[data-static-giscus]")
+  if (staticComments) {
+    const commentEls = staticComments.querySelectorAll(".static-giscus-comment")
+    if (commentEls.length > 0) {
+      offset = appendTextBlock(staticComments, "Comments", blocks, offset)
+      for (const comment of commentEls) {
+        const header = comment.querySelector(".static-giscus-comment-header")
+        if (header) {
+          const author =
+            comment.querySelector(".static-giscus-author")?.textContent?.trim() ?? "someone"
+          offset = appendTextBlock(header, `Comment by ${author}`, blocks, offset)
+        }
+        const body = comment.querySelector(".static-giscus-body")
+        if (body) {
+          offset = appendLeafBlocks(body, blocks, offset)
+        }
+      }
     }
-
-    const text = injectBlockPauses(cleanText(clone.textContent ?? ""))
-    if (!text) continue
-
-    blocks.push({ element: el, text, charStart: offset, charEnd: offset + text.length })
-    offset += text.length + 1 // +1 for the joining space
   }
 
   const fullText = blocks.map((b) => b.text).join(" ")

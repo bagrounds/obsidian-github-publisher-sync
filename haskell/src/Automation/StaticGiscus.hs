@@ -3,6 +3,7 @@ module Automation.StaticGiscus
   , GqlDiscussion (..)
   , GqlComment (..)
   , GqlAuthor (..)
+  , GqlCommentsNode (..)
   , CommentsMap
   , normalizePathname
   , slugToPathname
@@ -11,8 +12,10 @@ module Automation.StaticGiscus
   , renderStaticComment
   , renderStaticCommentsHtml
   , extractSlug
+  , findGiscusDiv
   , injectStaticComments
   , fetchAllDiscussions
+  , walkHtmlFiles
   , processHtmlFiles
   ) where
 
@@ -26,9 +29,10 @@ import Automation.Json
   , object
   , withObject
   )
+import Control.Monad (filterM)
 import Data.Map.Strict (Map)
 import qualified Data.Map.Strict as Map
-import Data.Maybe (fromMaybe, mapMaybe)
+import Data.Maybe (mapMaybe)
 import Data.Text (Text)
 import qualified Data.Text as T
 import qualified Data.Text.Encoding as TE
@@ -43,8 +47,8 @@ import Network.HTTP.Client
   , responseStatus
   )
 import Network.HTTP.Types.Status (statusCode)
-import System.Directory (doesDirectoryExist, listDirectory)
-import System.FilePath ((</>))
+import System.Directory (doesDirectoryExist, doesFileExist, listDirectory)
+import System.FilePath ((</>), takeExtension)
 
 import Automation.Html (escapeHtml, formatDisplayDate)
 
@@ -263,7 +267,7 @@ injectStaticComments html commentsMap =
 findGiscusDiv :: Text -> Maybe Int
 findGiscusDiv html =
   let segments = T.breakOnAll giscusDivPattern html
-      giscusSegments = filter (\(before, after) ->
+      giscusSegments = filter (\(_before, after) ->
         let afterDiv = T.drop (T.length giscusDivPattern) after
             classValue = T.takeWhile (/= '"') afterDiv
         in T.isInfixOf "giscus" classValue) segments
@@ -342,19 +346,27 @@ fetchAllDiscussions manager token owner repo categoryId =
              then go (sgpEndCursor (sgdpPageInfo page)) newAcc
              else pure newAcc
 
-processHtmlFiles :: FilePath -> CommentsMap -> IO [FilePath]
-processHtmlFiles dir commentsMap = do
+walkHtmlFiles :: FilePath -> IO [FilePath]
+walkHtmlFiles dir = do
   exists <- doesDirectoryExist dir
   case exists of
     False -> pure []
     True  -> do
       entries <- listDirectory dir
-      let htmlFiles = filter (\f -> T.isSuffixOf ".html" (T.pack f)) entries
-      fmap (mapMaybe id) $ traverse (processOneFile dir commentsMap) htmlFiles
+      let paths = fmap (dir </>) entries
+      files <- filterM doesFileExist paths
+      dirs  <- filterM doesDirectoryExist paths
+      let htmlFiles = filter (\f -> takeExtension f == ".html") files
+      nested <- traverse walkHtmlFiles dirs
+      pure (htmlFiles <> concat nested)
 
-processOneFile :: FilePath -> CommentsMap -> FilePath -> IO (Maybe FilePath)
-processOneFile dir commentsMap filename = do
-  let filePath = dir </> filename
+processHtmlFiles :: FilePath -> CommentsMap -> IO [FilePath]
+processHtmlFiles dir commentsMap = do
+  htmlFiles <- walkHtmlFiles dir
+  fmap (mapMaybe id) $ traverse (processOneFile commentsMap) htmlFiles
+
+processOneFile :: CommentsMap -> FilePath -> IO (Maybe FilePath)
+processOneFile commentsMap filePath = do
   content <- TIO.readFile filePath
   let updated = injectStaticComments content commentsMap
   if updated == content

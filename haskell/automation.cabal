@@ -131,6 +131,7 @@ test-suite automation-tests
     Automation.MastodonTest
     Automation.SocialPostingTest
     Automation.DailyUpdatesTest
+    Automation.StaticGiscusTest
   build-depends:
     base,
     automation,

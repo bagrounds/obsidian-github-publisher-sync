@@ -30,10 +30,14 @@ import Automation.BlogComments (fetchAllSeriesComments)
 import Automation.BlogImage (BackfillConfig (..), BackfillResult (..), syncMarkdownDir, syncAttachmentsDir, backfillImages, resolveImageProviders)
 import Automation.BlogPosts (BlogPost (..), readSeriesPosts)
 import Automation.BlogPrompt
-  ( assembleFrontmatter
+  ( DateStr (..)
+  , DisplayTitle (..)
+  , Slug (..)
+  , assembleFrontmatter
   , buildBackLink
   , buildBlogPrompt
   , buildDisplayTitle
+  , mkSlug
   , todayPacific
   )
 import Automation.BlogSeries
@@ -316,7 +320,7 @@ yesterdayPacific :: IO Text
 yesterdayPacific = do
   today <- todayPacific
   -- Simple: parse the date, subtract 1 day
-  let (y, m, d) = parseYMD today
+  let (y, m, d) = parseYMD (unDateStr today)
   pure $ formatYMD (addDaysToYMD (-1) y m d)
   where
     parseYMD t =
@@ -347,27 +351,28 @@ runBlogSeries manager repoRoot vaultDir seriesId = do
 
   apiKey <- requireEnv "GEMINI_API_KEY"
   today <- todayPacific
+  let todayText = unDateStr today
 
   -- 1. Copy vault posts for this series to local repo
   _ <- copySeriesPosts vaultDir seriesId repoRoot
 
   -- 2. Check regeneration or already exists
   let seriesDir = repoRoot </> T.unpack seriesId
-  mRegen <- findPostToRegenerate seriesDir today
+  mRegen <- findPostToRegenerate seriesDir todayText
   case mRegen of
     Just postToRegen -> do
       logMsg $ "  ♻️  Regeneration requested for " <> T.pack postToRegen <> " — removing old post"
       removeFile (seriesDir </> postToRegen)
     Nothing -> do
-      existsForToday <- blogPostExistsForToday seriesDir today
+      existsForToday <- blogPostExistsForToday seriesDir todayText
       case existsForToday of
         True -> do
-          logMsg $ "  ⏭️  Already generated for " <> today
+          logMsg $ "  ⏭️  Already generated for " <> todayText
           pure ()
         False -> pure ()
 
   -- Recheck after potential removal
-  existsNow <- blogPostExistsForToday seriesDir today
+  existsNow <- blogPostExistsForToday seriesDir todayText
   case (mRegen, existsNow) of
     (Nothing, True) -> pure () -- Already existed, skip
     _ -> do
@@ -401,8 +406,11 @@ runBlogSeries manager repoRoot vaultDir seriesId = do
           case parseGeneratedPost rawText of
             Nothing -> error "Failed to parse generated blog post"
             Just (body, title) -> do
-              let slug = generateSlug title
-                  filename = today <> "-" <> slug <> ".md"
+              let slugText = generateSlug title
+                  slug = case mkSlug slugText of
+                    Right s -> s
+                    Left e  -> error $ "Invalid slug: " <> T.unpack e
+                  filename = todayText <> "-" <> unSlug slug <> ".md"
 
               -- Read previous posts for nav link update
               posts <- readSeriesPosts seriesDir
@@ -416,7 +424,7 @@ runBlogSeries manager repoRoot vaultDir seriesId = do
                     Just pp -> " | " <> buildBackLink series (bpFilename pp)
                     Nothing -> ""
                   navLine = bscNavLink series <> backLink
-                  displayTitle = buildDisplayTitle series today title
+                  displayTitle = unDisplayTitle $ buildDisplayTitle series today title
                   header = navLine <> "\n# " <> displayTitle <> "\n\n"
                   bodyWithSig = appendModelSignature body usedModel
               createDirectoryIfMissing True seriesDir
@@ -440,7 +448,7 @@ runBlogSeries manager repoRoot vaultDir seriesId = do
                   regenFilenameNoExt = case mRegen of
                     Just r  -> Just (T.pack (dropExtension r))
                     Nothing -> Nothing
-              _ <- updateDailyReflection vaultDir today series filenameNoExt title regenFilenameNoExt
+              _ <- updateDailyReflection vaultDir todayText series filenameNoExt title regenFilenameNoExt
 
               -- Sync generated files to vault directory
               let postRelPath = T.unpack seriesId </> T.unpack filename
@@ -468,6 +476,7 @@ runBackfillImages manager repoRoot vaultDir = do
   logMsg "▶️  backfill-blog-images"
 
   today <- todayPacific
+  let todayText = unDateStr today
 
   -- 1. Copy vault posts to local repo
   mapM_ (\sid -> copySeriesPosts vaultDir sid repoRoot) backfillContentIds
@@ -525,7 +534,7 @@ runBackfillImages manager repoRoot vaultDir = do
   case imageUpdateLinks of
     [] -> pure ()
     _  -> do
-      _ <- addUpdateLinksToReflection reflectionsDir today ImageUpdate imageUpdateLinks
+      _ <- addUpdateLinksToReflection reflectionsDir todayText ImageUpdate imageUpdateLinks
       pure ()
 
   -- 7. Add update links from nav link changes (each blog post links to its date's reflection)
@@ -562,20 +571,21 @@ runAiFiction manager vaultDir = do
 
   apiKey <- requireEnv "GEMINI_API_KEY"
   today <- todayPacific
+  let todayText = unDateStr today
 
   let reflectionsDir = vaultDir </> "reflections"
-      reflectionPath = reflectionsDir </> T.unpack today <> ".md"
+      reflectionPath = reflectionsDir </> T.unpack todayText <> ".md"
 
   exists <- doesFileExist reflectionPath
   case exists of
     False -> do
-      logMsg $ "  📭 No reflection for " <> today <> ", skipping AI fiction"
+      logMsg $ "  📭 No reflection for " <> todayText <> ", skipping AI fiction"
       logMsg "✅ ai-fiction (skipped)"
     True -> do
       noteContent <- TIO.readFile reflectionPath
       case reflectionNeedsFiction noteContent of
         False -> do
-          logMsg $ "  ✅ Reflection " <> today <> " already has AI fiction"
+          logMsg $ "  ✅ Reflection " <> todayText <> " already has AI fiction"
           logMsg "✅ ai-fiction (already done)"
         True -> do
           -- Build model chain
@@ -597,7 +607,7 @@ runAiFiction manager vaultDir = do
           logMsg $ "  🤖🐲 Generated fiction (model=" <> frModel result <> ", " <> T.pack (show wordCount) <> " words)"
 
           TIO.writeFile reflectionPath (frUpdatedContent result)
-          logMsg $ "  ✏️  Updated " <> today <> ".md with AI fiction"
+          logMsg $ "  ✏️  Updated " <> todayText <> ".md with AI fiction"
 
           logMsg "✅ ai-fiction"
 
@@ -607,12 +617,13 @@ runReflectionTitle manager vaultDir = do
 
   apiKey <- requireEnv "GEMINI_API_KEY"
   today <- todayPacific
+  let todayText = unDateStr today
   yesterday <- yesterdayPacific
 
   let reflectionsDir = vaultDir </> "reflections"
 
   -- Try today first, then yesterday
-  todayDone <- tryTitleForDate manager apiKey vaultDir reflectionsDir today
+  todayDone <- tryTitleForDate manager apiKey vaultDir reflectionsDir todayText
   case todayDone of
     True -> pure ()
     False -> do

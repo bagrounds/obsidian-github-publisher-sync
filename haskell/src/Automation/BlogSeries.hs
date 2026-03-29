@@ -20,13 +20,14 @@ import Automation.BlogComments (BlogComment)
 import Automation.BlogPosts (BlogPost (..), readAgentsMd, readSeriesPosts)
 import Automation.BlogPrompt
   ( BlogContext (..)
+  , DateStr
   , buildForwardLink
   , filterCommentsAfterLastPost
   , quoteForYaml
   )
 import Automation.BlogSeriesConfig (BlogSeriesConfig (..), lookupSeries)
 
-buildBlogContext :: Text -> FilePath -> [BlogComment] -> Text -> IO BlogContext
+buildBlogContext :: Text -> FilePath -> [BlogComment] -> DateStr -> IO BlogContext
 buildBlogContext seriesId seriesDir comments today = do
   let series = either (error . T.unpack) id (lookupSeries seriesId)
   posts <- readSeriesPosts seriesDir

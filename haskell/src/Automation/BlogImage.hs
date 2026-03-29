@@ -67,7 +67,7 @@ import System.Directory
 import System.FilePath ((</>), takeBaseName, takeDirectory, takeExtension)
 import Text.Regex.TDFA ((=~))
 
-import Automation.BlogPrompt (stripEmbedSections, todayPacific)
+import Automation.BlogPrompt (DateStr(..), stripEmbedSections, todayPacific)
 import Automation.Frontmatter (parseFrontmatter, quoteYamlValue)
 import qualified Automation.Gemini as Gemini
 import qualified Automation.Json as Json
@@ -977,7 +977,7 @@ formatTimestamp = do
 backfillImages :: Manager -> BackfillConfig -> IO BackfillResult
 backfillImages manager config = do
   today <- todayPacific
-  candidates <- collectCandidates (bfcRepoRoot config) (bfcContentDirs config) today
+  candidates <- collectCandidates (bfcRepoRoot config) (bfcContentDirs config) (unDateStr today)
   putStrLn $ "📋 Candidates: " <> show (length candidates) <> " notes need images"
   processWithProviders manager config candidates 0 emptyResult
 

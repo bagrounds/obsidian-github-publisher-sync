@@ -27,7 +27,7 @@ module Automation.InternalLinking
   , run
   ) where
 
-import Automation.BlogPrompt (todayPacific)
+import Automation.BlogPrompt (DateStr(..), todayPacific)
 import Automation.Frontmatter (parseFrontmatter, quoteYamlValue)
 import Automation.Gemini
   ( GenerationConfig (..)
@@ -833,7 +833,7 @@ makeRelPathFromContentDir contentDir filePath =
 nowIso :: IO Text
 nowIso = do
   today <- todayPacific
-  pure (today <> "T00:00:00Z")
+  pure (unDateStr today <> "T00:00:00Z")
 
 -- --------------------------------------------------------------------------
 -- Orchestration

@@ -62,7 +62,7 @@ quoteYamlValue v
   | needsQuoting v = "\"" <> T.replace "\"" "\\\"" (T.replace "\\" "\\\\" v) <> "\""
   | otherwise = v
   where
-    needsQuoting t = T.any (\c -> c == ':' || c == '#' || c == '"' || c == '\'' || c == '[' || c == ']' || c == '{' || c == '}' || c == ',') t
+    needsQuoting t = T.any (\c -> c == ':' || c == '#' || c == '"' || c == '\'' || c == '[' || c == ']' || c == '{' || c == '}' || c == ',' || c == '@' || c == '`') t
                      || T.strip t /= t
                      || t == "true" || t == "false" || t == "null"
                      || T.all (\c -> isDigit c || c == '.' || c == '-') t

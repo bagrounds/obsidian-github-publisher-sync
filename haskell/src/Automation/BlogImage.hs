@@ -15,6 +15,7 @@ module Automation.BlogImage
   , syncMarkdownDir
   , syncAttachmentsDir
   , updateFrontmatterFields
+  , applyField
   , mimeTypeToExtension
   , notePathToImageBaseName
   , resolveUniqueImageName
@@ -67,7 +68,7 @@ import System.Directory
 import System.FilePath ((</>), takeBaseName, takeDirectory, takeExtension)
 import Text.Regex.TDFA ((=~))
 
-import Automation.BlogPrompt (stripEmbedSections, todayPacific)
+import Automation.BlogPrompt (DateStr(..), stripEmbedSections, todayPacific)
 import Automation.Frontmatter (parseFrontmatter, quoteYamlValue)
 import qualified Automation.Gemini as Gemini
 import qualified Automation.Json as Json
@@ -460,12 +461,26 @@ updateFrontmatterFields content fields =
 applyField :: [Text] -> (Text, Text) -> [Text]
 applyField fmLines (key, value) =
   let keyPrefix = key <> ":"
-      replaced = fmap (\l ->
-        if keyPrefix `T.isPrefixOf` T.stripStart l
-          then key <> ": " <> quoteYamlValue value
-          else l) fmLines
+      newLine = key <> ": " <> quoteYamlValue value
       keyExists = any (\l -> keyPrefix `T.isPrefixOf` T.stripStart l) fmLines
-  in if keyExists then replaced else replaced <> [key <> ": " <> quoteYamlValue value]
+      replaced = replaceWithContinuation keyPrefix newLine fmLines
+  in if keyExists then replaced else fmLines <> [newLine]
+
+replaceWithContinuation :: Text -> Text -> [Text] -> [Text]
+replaceWithContinuation _ _ [] = []
+replaceWithContinuation keyPrefix newLine (l : rest)
+  | keyPrefix `T.isPrefixOf` T.stripStart l =
+      newLine : dropContinuationLines rest
+  | otherwise = l : replaceWithContinuation keyPrefix newLine rest
+
+dropContinuationLines :: [Text] -> [Text]
+dropContinuationLines [] = []
+dropContinuationLines (l : rest)
+  | isContinuationLine l = dropContinuationLines rest
+  | otherwise = l : rest
+
+isContinuationLine :: Text -> Bool
+isContinuationLine l = not (T.null l) && T.isPrefixOf " " l
 
 
 extractFrontmatterValue :: Text -> Text -> Maybe Text
@@ -977,7 +992,7 @@ formatTimestamp = do
 backfillImages :: Manager -> BackfillConfig -> IO BackfillResult
 backfillImages manager config = do
   today <- todayPacific
-  candidates <- collectCandidates (bfcRepoRoot config) (bfcContentDirs config) today
+  candidates <- collectCandidates (bfcRepoRoot config) (bfcContentDirs config) (unDateStr today)
   putStrLn $ "📋 Candidates: " <> show (length candidates) <> " notes need images"
   processWithProviders manager config candidates 0 emptyResult
 

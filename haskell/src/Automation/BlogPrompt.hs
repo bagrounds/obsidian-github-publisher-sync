@@ -1,11 +1,17 @@
 module Automation.BlogPrompt
   ( BlogContext (..)
+  , Slug (..)
+  , DateStr (..)
+  , DisplayTitle (..)
+  , mkSlug
+  , mkDateStr
   , stripEmbedSections
   , buildBlogPrompt
   , filterCommentsAfterLastPost
   , buildBackLink
   , buildForwardLink
   , assembleFrontmatter
+  , buildDisplayTitle
   , todayPacific
   , quoteForYaml
   , recapInstructions
@@ -42,12 +48,34 @@ import Automation.Types
   , tweetSectionHeader
   )
 
+-- | A validated URL slug: lowercase, alphanumeric + hyphens, no leading/trailing hyphens.
+newtype Slug = Slug { unSlug :: Text } deriving (Show, Eq)
+
+-- | A validated date string in YYYY-MM-DD format.
+newtype DateStr = DateStr { unDateStr :: Text } deriving (Show, Eq)
+
+-- | A fully constructed display title: "YYYY-MM-DD | icon Title icon".
+newtype DisplayTitle = DisplayTitle { unDisplayTitle :: Text } deriving (Show, Eq)
+
+mkSlug :: Text -> Either Text Slug
+mkSlug t
+  | T.null t = Left "Empty slug"
+  | T.any (\c -> c == ' ' || c == '\n') t = Left ("Slug contains whitespace: " <> t)
+  | T.head t == '-' || T.last t == '-' = Left ("Slug has leading/trailing hyphens: " <> t)
+  | otherwise = Right (Slug t)
+
+mkDateStr :: Text -> Either Text DateStr
+mkDateStr t
+  | T.length t /= 10 = Left ("Invalid date length: " <> t)
+  | T.index t 4 /= '-' || T.index t 7 /= '-' = Left ("Invalid date separators: " <> t)
+  | otherwise = Right (DateStr t)
+
 data BlogContext = BlogContext
   { bcxSeries        :: BlogSeriesConfig
   , bcxAgentsMd      :: Text
   , bcxPreviousPosts :: [BlogPost]
   , bcxComments      :: [BlogComment]
-  , bcxToday         :: Text
+  , bcxToday         :: DateStr
   } deriving (Show, Eq)
 
 stripEmbedSections :: Text -> Text
@@ -86,31 +114,33 @@ buildForwardLink series filename =
   let slug = fromMaybe filename (T.stripSuffix ".md" filename)
   in "[[" <> bscId series <> "/" <> slug <> "|⏭️]]"
 
-assembleFrontmatter :: BlogSeriesConfig -> Text -> Text -> Text -> [Text] -> Text
-assembleFrontmatter series title slug today tags =
-  let url = bscBaseUrl series <> "/" <> slug
-      tagLines = fmap (\tag -> "  - " <> tag) tags
-  in T.intercalate "\n" $
+buildDisplayTitle :: BlogSeriesConfig -> DateStr -> Text -> DisplayTitle
+buildDisplayTitle series (DateStr today) title =
+  DisplayTitle $ today <> " | " <> bscIcon series <> " " <> title <> " " <> bscIcon series
+
+assembleFrontmatter :: BlogSeriesConfig -> DateStr -> Text -> Slug -> Text
+assembleFrontmatter series dateStr title slug =
+  let (DisplayTitle displayTitle) = buildDisplayTitle series dateStr title
+      url = bscBaseUrl series <> "/" <> unDateStr dateStr <> "-" <> unSlug slug
+  in T.intercalate "\n"
     [ "---"
     , "share: true"
     , "aliases:"
-    , "  - " <> quoteForYaml title
-    , "title: " <> quoteForYaml title
+    , "  - " <> quoteForYaml displayTitle
+    , "title: " <> quoteForYaml displayTitle
     , "URL: " <> url
-    , "Author: " <> bscAuthor series
+    , "Author: " <> quoteForYaml (bscAuthor series)
     , "tags:"
-    ] <> tagLines <>
-    [ "date: " <> today
     , "---"
     ]
 
-todayPacific :: IO Text
+todayPacific :: IO DateStr
 todayPacific = do
   utcNow <- getCurrentTime
   let tz = pacificTimeZone utcNow
       localTime = utcToLocalTime tz utcNow
       day = localDay localTime
-  pure $ T.pack $ formatTime defaultTimeLocale "%Y-%m-%d" day
+  pure $ DateStr $ T.pack $ formatTime defaultTimeLocale "%Y-%m-%d" day
 
 quoteForYaml :: Text -> Text
 quoteForYaml t =
@@ -118,8 +148,8 @@ quoteForYaml t =
       quotesEscaped = T.replace "\"" "\\\"" backslashEscaped
   in "\"" <> quotesEscaped <> "\""
 
-recapInstructions :: Text -> Text
-recapInstructions dateStr =
+recapInstructions :: DateStr -> Text
+recapInstructions (DateStr dateStr) =
   case parseDate dateStr of
     Nothing  -> ""
     Just day ->
@@ -149,7 +179,7 @@ buildUserPrompt ctx =
       comments = bcxComments ctx
       today = bcxToday ctx
       header = "Write the next blog post for the " <> bscName series <> " series."
-        <> "\nToday's date: " <> today
+        <> "\nToday's date: " <> unDateStr today
       postHistory = buildPostHistory series posts
       commentsSection = buildCommentsSection comments
       recap = recapInstructions today

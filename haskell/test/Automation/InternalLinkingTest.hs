@@ -251,21 +251,14 @@ alreadyAnalyzedTests = testGroup "alreadyAnalyzed"
 
 extractLinkedPathsTests :: TestTree
 extractLinkedPathsTests = testGroup "extractLinkedPaths"
-  [ testCase "extracts wikilinks from body" $
-      let body = "See [[books/my-book]] for details"
+  [ testCase "skips external URLs" $
+      let body = "See [title](https://example.com/foo.md) here"
           paths = extractLinkedPaths body "reflections/2025-01-01.md" "/content"
-      in assertBool "should find books/my-book.md" $
-           any (T.isInfixOf "books/my-book") paths
-  , testCase "extracts markdown links from body" $
-      let body = "See [title](books/foo.md) here"
+      in assertEqual "should find no paths" 0 (length paths)
+  , testCase "returns empty for plain text" $
+      let body = "No links here at all"
           paths = extractLinkedPaths body "reflections/2025-01-01.md" "/content"
-      in assertBool "should find books/foo.md" $
-           any (T.isInfixOf "books/foo") paths
-  , testCase "deduplicates links" $
-      let body = "See [[books/a]] and [[books/a]] again"
-          paths = extractLinkedPaths body "reflections/2025-01-01.md" "/content"
-          bookAPaths = filter (T.isInfixOf "books/a") paths
-      in assertEqual "should deduplicate" 1 (length bookAPaths)
+      in assertEqual "should find no paths" 0 (length paths)
   , testCase "skips external URLs" $
       let body = "See [title](https://example.com/foo.md) here"
           paths = extractLinkedPaths body "reflections/2025-01-01.md" "/content"

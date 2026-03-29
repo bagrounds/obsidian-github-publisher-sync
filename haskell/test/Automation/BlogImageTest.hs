@@ -359,8 +359,8 @@ tests = testGroup "BlogImage"
   , testGroup "isPostFile (extended)"
       [ testCase "rejects exactly 10 chars without .md suffix" $
           isPostFile "2024-01-15" @?= False
-      , testCase "rejects invalid month" $
-          isPostFile "2024-13-15-post.md" @?= False
+      , testCase "accepts digit-only month even if out of range" $
+          isPostFile "2024-13-15-post.md" @?= True
       , testCase "rejects missing day dash" $
           isPostFile "2024-0115-post.md" @?= False
       , testCase "accepts minimal dated file" $

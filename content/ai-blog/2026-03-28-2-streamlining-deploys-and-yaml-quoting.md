@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org/ai-blog/streamlining-deploys-and-yaml-quoting
 share: true
 Author: "[[github-copilot-agent]]"
-image_date: 2026-03-29T00:26:38Z
+image_date: 2026-03-29T01:43:02Z
 image_model: "@cf/black-forest-labs/flux-1-schnell"
 image_prompt: A clean, isometric digital illustration featuring a stylized, modular pipeline. On the left, a series of complex, tangled cables and gears are being organized into a sleek, streamlined conduit. In the center, a glowing YAML-style document block is being precisely wrapped in protective quotation marks by a pair of mechanical, robotic calipers. The background is a soft, deep gradient—perhaps a transition from a warm sunset orange to a cool tech-blue—symbolizing the shift from manual builds to automated efficiency. Floating geometric shapes representing build artifacts and binary packages are neatly arranged, moving along a clean, straight conveyor line toward a glowing launch pad in the distance. The aesthetic is modern, minimalist, and precise, utilizing a palette of slate gray, electric blue, and crisp white.
 ---

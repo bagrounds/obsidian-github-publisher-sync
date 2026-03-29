@@ -137,6 +137,7 @@ test-suite automation-tests
     Automation.DailyReflectionTest
     Automation.PromptsTest
     Automation.JsonTest
+    Automation.ReflectionTitleTest
   build-depends:
     base,
     automation,

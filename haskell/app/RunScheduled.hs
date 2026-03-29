@@ -435,9 +435,9 @@ runBlogSeries manager repoRoot vaultDir seriesId = do
               let attachmentsDir = repoRoot </> "attachments"
               imageEnvMap <- buildEnvMap
                 [ "GEMINI_API_KEY", "CLOUDFLARE_API_TOKEN", "CLOUDFLARE_ACCOUNT_ID"
-                , "CLOUDFLARE_IMAGE_MODEL", "HUGGINGFACE_API_KEY", "HUGGINGFACE_IMAGE_MODEL"
-                , "TOGETHER_API_KEY", "TOGETHER_IMAGE_MODEL", "POLLINATIONS_IMAGE_MODEL"
-                , "PROMPT_DESCRIBER_MODEL"
+                , "CLOUDFLARE_IMAGE_MODEL", "HUGGINGFACE_API_TOKEN", "HUGGINGFACE_IMAGE_MODEL"
+                , "TOGETHER_API_TOKEN", "TOGETHER_IMAGE_MODEL", "POLLINATIONS_ENABLED"
+                , "POLLINATIONS_IMAGE_MODEL", "PROMPT_DESCRIBER_MODEL", "IMAGE_GEMINI_MODEL"
                 ]
               let imageProviders = resolveImageProviders imageEnvMap
               case imageProviders of
@@ -504,9 +504,9 @@ runBackfillImages manager repoRoot vaultDir = do
   -- 2. Image backfill
   envMap <- buildEnvMap
     [ "GEMINI_API_KEY", "CLOUDFLARE_API_TOKEN", "CLOUDFLARE_ACCOUNT_ID"
-    , "CLOUDFLARE_IMAGE_MODEL", "HUGGINGFACE_API_KEY", "HUGGINGFACE_IMAGE_MODEL"
-    , "TOGETHER_API_KEY", "TOGETHER_IMAGE_MODEL", "POLLINATIONS_IMAGE_MODEL"
-    , "PROMPT_DESCRIBER_MODEL"
+    , "CLOUDFLARE_IMAGE_MODEL", "HUGGINGFACE_API_TOKEN", "HUGGINGFACE_IMAGE_MODEL"
+    , "TOGETHER_API_TOKEN", "TOGETHER_IMAGE_MODEL", "POLLINATIONS_ENABLED"
+    , "POLLINATIONS_IMAGE_MODEL", "PROMPT_DESCRIBER_MODEL", "IMAGE_GEMINI_MODEL"
     ]
   let providers = resolveImageProviders envMap
   imageModifiedFiles <- case providers of

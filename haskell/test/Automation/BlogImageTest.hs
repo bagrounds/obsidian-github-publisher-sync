@@ -241,6 +241,133 @@ tests = testGroup "BlogImage"
             [p] -> ipcModel p @?= "custom-model"
             _   -> assertBool "expected exactly one provider" False
       ]
+  , testGroup "cleanContentForPrompt (extended)"
+      [ testCase "strips code blocks" $
+          let input = "---\ntitle: test\n---\nbefore\n```python\nprint('hello')\n```\nafter"
+          in assertBool "should not contain code block content" $
+               not (T.isInfixOf "print" (cleanContentForPrompt input))
+      , testCase "strips Obsidian embeds" $
+          assertBool "should not contain embed" $
+            not (T.isInfixOf "![[" (cleanContentForPrompt "text\n![[attachments/photo.jpg]]\nmore"))
+      , testCase "strips headings at all levels" $ do
+          let cleaned = cleanContentForPrompt "# H1\n## H2\n### H3\nbody"
+          assertBool "should not have # prefix" $ not (T.isInfixOf "# " cleaned)
+      , testCase "strips ordered lists" $
+          let input = "1. first item\n2. second item"
+          in assertBool "should strip numbers" $
+               not (T.isInfixOf "1." (cleanContentForPrompt input))
+      , testCase "strips unordered lists" $
+          let input = "- bullet one\n* bullet two"
+              cleaned = cleanContentForPrompt input
+          in do
+            assertBool "should strip dash bullet" $ not (T.isPrefixOf "- " cleaned)
+            assertBool "contains content" $ T.isInfixOf "bullet" cleaned
+      , testCase "strips blockquotes" $
+          let cleaned = cleanContentForPrompt "> quoted text"
+          in assertBool "should not have >" $ not (T.isPrefixOf ">" (T.stripStart cleaned))
+      , testCase "strips table cells" $
+          let input = "| col1 | col2 |\n|---|---|\n| a | b |"
+          in assertBool "should strip table separators" $
+               not (T.isInfixOf "|---|" (cleanContentForPrompt input))
+      , testCase "strips emphasis markers" $
+          let cleaned = cleanContentForPrompt "some **bold** and *italic* text"
+          in assertBool "no asterisks" $ not (T.any (== '*') cleaned)
+      , testCase "strips inline code" $
+          assertBool "should not contain backtick content" $
+            not (T.isInfixOf "inline" (cleanContentForPrompt "text `inline code` more"))
+      , testCase "strips markdown images" $
+          assertBool "should not contain image syntax" $
+            not (T.isInfixOf "![" (cleanContentForPrompt "![alt](path/to/image.png)"))
+      , testCase "strips markdown links but keeps text" $
+          let cleaned = cleanContentForPrompt "see [my link](http://example.com) here"
+          in assertBool "should keep link text" $ T.isInfixOf "my link" cleaned
+      ]
+  , testGroup "buildImagePrompt (extended)"
+      [ testCase "truncates at exactly max length" $
+          let longContent = T.replicate 3000 "x"
+              result = buildImagePrompt longContent
+          in result @?= T.take 2048 result
+      , testCase "does not truncate short content" $
+          let result = buildImagePrompt "short post"
+              cleaned = cleanContentForPrompt "short post"
+          in assertBool "should contain full cleaned content" $
+               T.isInfixOf cleaned result
+      ]
+  , testGroup "extractTitle (extended)"
+      [ testCase "strips nested quotes" $
+          extractTitle "---\ntitle: \"'inner'\"\n---\nbody" @?= "'inner'"
+      , testCase "empty frontmatter falls back to H1" $
+          extractTitle "---\n---\n# Fallback Title" @?= "Fallback Title"
+      , testCase "title with single quotes" $
+          extractTitle "---\ntitle: 'Single Quoted'\n---\n" @?= "Single Quoted"
+      , testCase "frontmatter with no title and no H1" $
+          extractTitle "---\ntags: foo\n---\njust body" @?= ""
+      ]
+  , testGroup "hasEmbeddedImage (extended)"
+      [ testCase "detects jpg extension" $
+          hasEmbeddedImage "![[photo.jpg]]" @?= True
+      , testCase "detects jpeg extension" $
+          hasEmbeddedImage "![[photo.jpeg]]" @?= True
+      , testCase "detects png extension" $
+          hasEmbeddedImage "![[photo.png]]" @?= True
+      , testCase "detects gif extension (nested)" $
+          hasEmbeddedImage "![[sub/dir/anim.gif]]" @?= True
+      , testCase "detects webp extension" $
+          hasEmbeddedImage "![[photo.webp]]" @?= True
+      , testCase "path with subdirectories" $
+          hasEmbeddedImage "![[deep/nested/path/image.png]]" @?= True
+      , testCase "rejects non-image extension" $
+          hasEmbeddedImage "![[document.pdf]]" @?= False
+      ]
+  , testGroup "notePathToImageBaseName (extended)"
+      [ testCase "handles special characters" $
+          notePathToImageBaseName "/repo/My (Cool) Blog/It's a Test!.md"
+            @?= "my-cool-blog-it-s-a-test"
+      , testCase "deeply nested path uses parent dir and stem" $
+          notePathToImageBaseName "/a/b/c/d/my-dir/my-file.md"
+            @?= "my-dir-my-file"
+      , testCase "collapses multiple dashes" $
+          notePathToImageBaseName "/repo/foo---bar/baz--qux.md"
+            @?= "foo-bar-baz-qux"
+      ]
+  , testGroup "removeImageEmbed (extended)"
+      [ testCase "removes embed without attachments prefix" $
+          let (content, mName) = removeImageEmbed "before\n![[photo.jpg]]\nafter"
+          in do
+            assertBool "should remove embed" $ not (T.isInfixOf "![[" content)
+            mName @?= Just "photo.jpg"
+      , testCase "removes embed with attachments prefix" $
+          let (_, mName) = removeImageEmbed "![[attachments/img.png]]\nrest"
+          in mName @?= Just "img.png"
+      , testCase "only removes first image embed" $
+          let input = "![[a.jpg]]\ntext\n![[b.png]]"
+              (content, mName) = removeImageEmbed input
+          in do
+            mName @?= Just "a.jpg"
+            assertBool "second embed should remain" $ T.isInfixOf "![[b.png]]" content
+      ]
+  , testGroup "sanitizeForYaml (extended)"
+      [ testCase "removes backticks" $
+          sanitizeForYaml "some `code` text" @?= "some code text"
+      , testCase "handles multiline input" $
+          sanitizeForYaml "line1\nline2\nline3" @?= "line1 line2 line3"
+      , testCase "strips leading and trailing whitespace" $
+          sanitizeForYaml "   spaced   " @?= "spaced"
+      , testCase "handles all quote types together" $
+          sanitizeForYaml "it's a \"test\" with `code`" @?= "its a test with code"
+      ]
+  , testGroup "isPostFile (extended)"
+      [ testCase "rejects exactly 10 chars without .md suffix" $
+          isPostFile "2024-01-15" @?= False
+      , testCase "rejects invalid month" $
+          isPostFile "2024-13-15-post.md" @?= False
+      , testCase "rejects missing day dash" $
+          isPostFile "2024-0115-post.md" @?= False
+      , testCase "accepts minimal dated file" $
+          isPostFile "2024-01-01-x.md" @?= True
+      , testCase "rejects IDEAS.md" $
+          isPostFile "IDEAS.md" @?= False
+      ]
   , testGroup "properties"
       [ testProperty "buildImagePrompt never exceeds max length" $
           \content -> T.length (buildImagePrompt (T.pack content)) <= 2048

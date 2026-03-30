@@ -10,6 +10,7 @@ import Test.Tasty.QuickCheck (testProperty)
 import Test.QuickCheck (Property, (==>), forAll, listOf1, elements)
 
 import Automation.BlogImage
+import Automation.Frontmatter (YamlValue (..))
 
 tests :: TestTree
 tests = testGroup "BlogImage"
@@ -147,39 +148,52 @@ tests = testGroup "BlogImage"
   , testGroup "updateFrontmatterFields"
       [ testCase "updates existing field" $
           updateFrontmatterFields "---\ntitle: old\n---\nbody"
-            [("title", "new")]
-            @?= "---\ntitle: new\n---\nbody"
+            [("title", YamlText "new")]
+            @?= "---\ntitle: \"new\"\n---\nbody"
       , testCase "adds new field" $
           let result = updateFrontmatterFields "---\ntitle: test\n---\nbody"
-                [("image_date", "2024-01-15")]
+                [("image_date", YamlText "2024-01-15")]
           in assertBool "should contain new field" $
                T.isInfixOf "image_date:" result
       , testCase "preserves body" $
           assertBool "should preserve body" $
             T.isInfixOf "body content" $
               updateFrontmatterFields "---\ntitle: test\n---\nbody content"
-                [("new_field", "value")]
+                [("new_field", YamlText "value")]
       , testCase "replaces multi-line field without orphaning continuation lines" $
           let input = "---\naliases:\n  - \"old alias\"\ntitle: test\n---\nbody"
-              result = updateFrontmatterFields input [("aliases", "new-value")]
+              result = updateFrontmatterFields input [("aliases", YamlText "new-value")]
           in do
             assertBool "should not have orphaned continuation line" $
               not (T.isInfixOf "  - \"old alias\"" result)
             assertBool "should have new value" $
-              T.isInfixOf "aliases: new-value" result
+              T.isInfixOf "aliases: \"new-value\"" result
             assertBool "should preserve title" $
               T.isInfixOf "title: test" result
+      , testCase "boolean false renders as native YAML boolean" $
+          let result = updateFrontmatterFields "---\nregenerate_image: true\n---\nbody"
+                [("regenerate_image", YamlBool False)]
+          in assertBool "should have unquoted false" $
+               T.isInfixOf "regenerate_image: false" result
+      , testCase "boolean true renders as native YAML boolean" $
+          let result = updateFrontmatterFields "---\nshare: false\n---\nbody"
+                [("share", YamlBool True)]
+          in assertBool "should have unquoted true" $
+               T.isInfixOf "share: true" result
       ]
   , testGroup "applyField"
       [ testCase "replaces scalar field" $
-          applyField ["title: old", "tags:"] ("title", "new")
-            @?= ["title: new", "tags:"]
+          applyField ["title: old", "tags:"] ("title", YamlText "new")
+            @?= ["title: \"new\"", "tags:"]
       , testCase "adds missing field" $
-          applyField ["title: test"] ("new_key", "value")
-            @?= ["title: test", "new_key: value"]
+          applyField ["title: test"] ("new_key", YamlText "value")
+            @?= ["title: test", "new_key: \"value\""]
       , testCase "drops continuation lines when replacing multi-line field" $
-          applyField ["aliases:", "  - \"first\"", "  - \"second\"", "title: test"] ("aliases", "replaced")
-            @?= ["aliases: replaced", "title: test"]
+          applyField ["aliases:", "  - \"first\"", "  - \"second\"", "title: test"] ("aliases", YamlText "replaced")
+            @?= ["aliases: \"replaced\"", "title: test"]
+      , testCase "boolean value renders unquoted" $
+          applyField ["regenerate_image: true"] ("regenerate_image", YamlBool False)
+            @?= ["regenerate_image: false"]
       ]
   , testGroup "removeImageEmbed"
       [ testCase "removes Obsidian embed and returns name" $

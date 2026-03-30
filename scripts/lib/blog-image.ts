@@ -195,7 +195,7 @@ export const removeImageEmbed = (
 
 export const sanitizeForYaml = (value: string): string =>
   value
-    .replace(/\n/g, " ")
+    .replace(/[\n\r\t]/g, " ")
     .replace(/\s+/g, " ")
     .replace(/["'\\`]/g, "")
     .trim();

@@ -17,14 +17,6 @@ tests = testGroup "BlogPrompt"
       let body = "Just normal content"
       in stripEmbedSections body @?= "Just normal content"
 
-  , testCase "quoteForYaml wraps in double quotes" $
-      assertBool "should be quoted" $
-        T.head (quoteForYaml "hello") == '"'
-
-  , testCase "quoteForYaml escapes internal quotes" $
-      assertBool "should escape" $
-        "\\\"" `T.isInfixOf` quoteForYaml "say \"hi\""
-
   , testCase "buildBackLink produces wiki link" $
       let Right series = lookupSeries "chickie-loo"
           result = buildBackLink series "2026-03-25-test"
@@ -51,12 +43,12 @@ tests = testGroup "BlogPrompt"
       in assertBool "should include display title" $
            "2026-03-12 | 🤖 My Great Post 🤖" `T.isInfixOf` fm
 
-  , testCase "assembleFrontmatter includes URL with date prefix" $
+  , testCase "assembleFrontmatter includes quoted URL with date prefix" $
       let Right series = lookupSeries "auto-blog-zero"
           Right slug = mkSlug "my-great-post"
           fm = assembleFrontmatter series (DateStr "2026-03-12") "My Great Post" slug
-      in assertBool "should include URL with date-slug" $
-           "URL: https://bagrounds.org/auto-blog-zero/2026-03-12-my-great-post" `T.isInfixOf` fm
+      in assertBool "should include quoted URL with date-slug" $
+           "URL: \"https://bagrounds.org/auto-blog-zero/2026-03-12-my-great-post\"" `T.isInfixOf` fm
 
   , testCase "assembleFrontmatter quotes Author with wikilink" $
       let Right series = lookupSeries "auto-blog-zero"

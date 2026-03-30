@@ -69,7 +69,7 @@ import System.FilePath ((</>), takeBaseName, takeDirectory, takeExtension)
 import Text.Regex.TDFA ((=~))
 
 import Automation.BlogPrompt (DateStr(..), stripEmbedSections, todayPacific)
-import Automation.Frontmatter (parseFrontmatter, quoteYamlValue)
+import Automation.Frontmatter (YamlValue (..), parseFrontmatter, renderYamlValue)
 import qualified Automation.Gemini as Gemini
 import qualified Automation.Json as Json
 
@@ -251,7 +251,7 @@ sanitizeForYaml =
   T.strip
     . collapseSpaces
     . T.filter (`notElem` ['\"', '\'', '\\', '`'])
-    . T.map (\c -> if c == '\n' then ' ' else c)
+    . T.map (\c -> if c == '\n' || c == '\r' || c == '\t' then ' ' else c)
 
 collapseSpaces :: Text -> Text
 collapseSpaces = T.intercalate " " . filter (not . T.null) . T.splitOn " "
@@ -443,7 +443,7 @@ buildImagePrompt postContent =
 -- Frontmatter manipulation
 --------------------------------------------------------------------------------
 
-updateFrontmatterFields :: Text -> [(Text, Text)] -> Text
+updateFrontmatterFields :: Text -> [(Text, YamlValue)] -> Text
 updateFrontmatterFields content fields =
   let ls = T.splitOn "\n" content
   in case ls of
@@ -455,13 +455,13 @@ updateFrontmatterFields content fields =
               let updatedFm = foldl' applyField fmLines fields
               in T.intercalate "\n" (["---"] <> updatedFm <> ["---"] <> body)
     _ ->
-      let fmLines = fmap (\(k, v) -> k <> ": " <> quoteYamlValue v) fields
+      let fmLines = fmap (\(k, v) -> k <> ": " <> renderYamlValue v) fields
       in T.intercalate "\n" (["---"] <> fmLines <> ["---", content])
 
-applyField :: [Text] -> (Text, Text) -> [Text]
+applyField :: [Text] -> (Text, YamlValue) -> [Text]
 applyField fmLines (key, value) =
   let keyPrefix = key <> ":"
-      newLine = key <> ": " <> quoteYamlValue value
+      newLine = key <> ": " <> renderYamlValue value
       keyExists = any (\l -> keyPrefix `T.isPrefixOf` T.stripStart l) fmLines
       replaced = replaceWithContinuation keyPrefix newLine fmLines
   in if keyExists then replaced else fmLines <> [newLine]
@@ -924,7 +924,7 @@ handleRegeneration notePath attachmentsDir content =
     True  -> do
       let (cleaned, mOldImage) = removeImageEmbed content
           updated = updateFrontmatterFields cleaned
-            [("regenerate_image", "false"), ("image_prompt", "")]
+            [("regenerate_image", YamlBool False), ("image_prompt", YamlText "")]
       case mOldImage of
         Just oldImage -> do
           let oldPath = attachmentsDir </> T.unpack oldImage
@@ -963,9 +963,9 @@ generateAndSaveImage manager provider notePath attachmentsDir content baseName =
           let withEmbed = insertImageEmbed content imageName
           now <- formatTimestamp
           let withMeta = updateFrontmatterFields withEmbed
-                [ ("image_date", now)
-                , ("image_model", ipcModel provider)
-                , ("image_prompt", sanitizeForYaml prompt)
+                [ ("image_date", YamlText now)
+                , ("image_model", YamlText (ipcModel provider))
+                , ("image_prompt", YamlText (sanitizeForYaml prompt))
                 ]
           TIO.writeFile notePath withMeta
           pure $ ImageGenerationResult False (Just imagePath) (Just imageName) (Just prompt)

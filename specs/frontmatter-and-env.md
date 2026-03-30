@@ -7,13 +7,29 @@
 
 ## 📦 Components
 
-### 📄 Frontmatter (scripts/lib/frontmatter.ts)
+### 📄 Frontmatter (scripts/lib/frontmatter.ts, haskell/src/Automation/Frontmatter.hs)
 
 - 🔍 parseFrontmatter extracts YAML key-value pairs from markdown content between triple-dash delimiters
 - 📖 readReflection reads a daily reflection file and detects social media section presence
 - 📝 readNote reads an arbitrary note file
 - 🗺️ getReflectionPath constructs the file path for a dated reflection
 - 🔧 Simple text-based parsing without external YAML library dependency
+
+### 🏗️ YAML Value Types (YamlValue)
+
+- 📐 YamlValue is a sum type with two constructors: YamlText for double-quoted strings and YamlBool for native YAML booleans
+- 🔐 renderYamlValue serializes values according to the YAML 1.2 specification: strings are always double-quoted with proper escaping, booleans render as unquoted true or false
+- 🧩 Single source of truth: all Haskell modules import YamlValue and renderYamlValue from Automation.Frontmatter
+- 🔄 TypeScript uses js-yaml library with typed values (string or boolean or null) for equivalent behavior
+- ⚠️ Never construct YAML key-value lines without rendering values through renderYamlValue or quoteYamlValue
+
+### 🧹 YAML Sanitization (sanitizeForYaml)
+
+- 🧼 Pre-processes AI-generated text before YAML serialization
+- 📝 Replaces newlines, carriage returns, and tabs with spaces
+- 🗑️ Removes double quotes, single quotes, backslashes, and backticks
+- 📏 Collapses multiple spaces and trims whitespace
+- 🔧 Applied to image prompts and other AI-generated content before quoting
 
 ### 🌍 Environment (scripts/lib/env.ts)
 
@@ -44,3 +60,5 @@
 ## 🧪 Testing
 
 🔬 Tests cover frontmatter parsing, HTML escaping, display date formatting, environment validation, and platform disabled detection across multiple test suites.
+🔒 Property-based tests verify quoteYamlValue always produces double-quoted output with no unescaped newlines, carriage returns, tabs, or null bytes.
+🏗️ YamlValue type tests verify booleans render as native YAML true and false while strings are always quoted.

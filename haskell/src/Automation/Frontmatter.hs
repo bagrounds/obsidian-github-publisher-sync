@@ -1,5 +1,7 @@
 module Automation.Frontmatter
   ( parseFrontmatter
+  , YamlValue (..)
+  , renderYamlValue
   , quoteYamlValue
   , getReflectionPath
   , readReflection
@@ -56,16 +58,34 @@ stripQuotes = stripTrailing . stripLeading
       Just (init', c) | c == '"' || c == '\'' -> init'
       _ -> t
 
+-- | A typed YAML scalar, mirroring TypeScript's @string | boolean | null@.
+--
+-- Using a sum type ensures booleans are serialized as native YAML booleans
+-- (unquoted) while strings are always double-quoted with proper escaping,
+-- following the YAML 1.2 specification.
+data YamlValue
+  = YamlText Text
+  | YamlBool Bool
+  deriving (Show, Eq)
+
+renderYamlValue :: YamlValue -> Text
+renderYamlValue (YamlBool True)  = "true"
+renderYamlValue (YamlBool False) = "false"
+renderYamlValue (YamlText t)     = quoteYamlValue t
+
 quoteYamlValue :: Text -> Text
-quoteYamlValue v
-  | T.null v  = "\"\""
-  | needsQuoting v = "\"" <> T.replace "\"" "\\\"" (T.replace "\\" "\\\\" v) <> "\""
-  | otherwise = v
+quoteYamlValue v = "\"" <> escapeYamlString v <> "\""
+
+escapeYamlString :: Text -> Text
+escapeYamlString = T.concatMap escapeChar
   where
-    needsQuoting t = T.any (\c -> c == ':' || c == '#' || c == '"' || c == '\'' || c == '[' || c == ']' || c == '{' || c == '}' || c == ',' || c == '@' || c == '`') t
-                     || T.strip t /= t
-                     || t == "true" || t == "false" || t == "null"
-                     || T.all (\c -> isDigit c || c == '.' || c == '-') t
+    escapeChar '\\' = "\\\\"
+    escapeChar '"'  = "\\\""
+    escapeChar '\n' = "\\n"
+    escapeChar '\r' = "\\r"
+    escapeChar '\t' = "\\t"
+    escapeChar '\0' = ""
+    escapeChar c    = T.singleton c
 
 hasSectionHeader :: Text -> Text -> Bool
 hasSectionHeader content header = T.isInfixOf header content

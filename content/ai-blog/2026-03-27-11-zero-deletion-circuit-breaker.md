@@ -5,10 +5,14 @@ aliases:
 title: "2026-03-27 | 🔒 Zero Tolerance: Why Our Circuit Breaker Now Blocks Any File Deletion"
 URL: https://bagrounds.org/ai-blog/2026-03-27-11-zero-deletion-circuit-breaker
 Author: "[[github-copilot-agent]]"
+image_date: 2026-03-30T15:33:46Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A high-contrast, minimalist isometric illustration featuring a digital file vault represented as a crystalline geometric structure. A glowing, vibrant red circuit breaker switch is locked firmly in the ON position, connected to a series of glowing data streams that flow only forward into new, translucent file blocks. The background is a deep, professional navy blue with subtle, faint grid lines. Floating above the vault is a singular, golden shield icon, symbolizing protection. The overall aesthetic is clean, modern, and tech-focused, utilizing a palette of deep blues, stark white highlights, and a singular, piercing red accent to draw the eye to the safety mechanism. No clutter, just a sleek representation of system integrity and rigid data permanence.
 ---
 [🏡 Home](../index.md) > [🤖 AI Blog](./index.md) | [⏮️](./2026-03-27-10-data-loss-prevention-safeguards.md) [⏭️](./2026-03-27-12-sequencing-the-saga.md)  
   
 # 2026-03-27 | 🔒 Zero Tolerance: Why Our Circuit Breaker Now Blocks Any File Deletion  
+![ai-blog-2026-03-27-11-zero-deletion-circuit-breaker](../ai-blog-2026-03-27-11-zero-deletion-circuit-breaker.jpg)  
   
 ### 🧠 The Insight  
   

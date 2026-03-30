@@ -5,7 +5,7 @@ aliases:
 title: 2026-03-28 | 🗣️ Teaching TTS to Read the Comments 💬
 URL: https://bagrounds.org/ai-blog/2026-03-28-teaching-tts-to-read-the-comments
 ---
-[🏡 Home](../index.md) > [🤖 AI Blog](./index.md) | [⏮️](./2026-03-28-4-frontmatter-forensics-haskell-migration-audit.md)  
+[🏡 Home](../index.md) > [🤖 AI Blog](./index.md) | [⏮️](./2026-03-28-4-frontmatter-forensics-haskell-migration-audit.md) [⏭️](./2026-03-29-1-five-whys-to-fix-tts-comment-reading.md)  
 # 2026-03-28 | 🗣️ Teaching TTS to Read the Comments 💬  
   
 ## 🎯 The Goal  

@@ -7,13 +7,29 @@
 
 ## 📦 Components
 
-### 📄 Frontmatter (scripts/lib/frontmatter.ts)
+### 📄 Frontmatter (scripts/lib/frontmatter.ts, haskell/src/Automation/Frontmatter.hs)
 
 - 🔍 parseFrontmatter extracts YAML key-value pairs from markdown content between triple-dash delimiters
 - 📖 readReflection reads a daily reflection file and detects social media section presence
 - 📝 readNote reads an arbitrary note file
 - 🗺️ getReflectionPath constructs the file path for a dated reflection
 - 🔧 Simple text-based parsing without external YAML library dependency
+
+### 🔒 YAML Value Quoting (quoteYamlValue)
+
+- 🔐 All YAML values are unconditionally wrapped in double quotes for safety
+- 🛡️ Proper escaping of backslashes, double quotes, newlines, carriage returns, tabs, and null bytes
+- 🧩 Single source of truth: all Haskell modules use quoteYamlValue from Automation.Frontmatter
+- 🔄 TypeScript uses js-yaml library with forceQuotes: true for equivalent behavior
+- ⚠️ Never construct YAML key-value lines without quoting values through quoteYamlValue
+
+### 🧹 YAML Sanitization (sanitizeForYaml)
+
+- 🧼 Pre-processes AI-generated text before YAML serialization
+- 📝 Replaces newlines, carriage returns, and tabs with spaces
+- 🗑️ Removes double quotes, single quotes, backslashes, and backticks
+- 📏 Collapses multiple spaces and trims whitespace
+- 🔧 Applied to image prompts and other AI-generated content before quoting
 
 ### 🌍 Environment (scripts/lib/env.ts)
 
@@ -44,3 +60,4 @@
 ## 🧪 Testing
 
 🔬 Tests cover frontmatter parsing, HTML escaping, display date formatting, environment validation, and platform disabled detection across multiple test suites.
+🔒 Property-based tests verify quoteYamlValue always produces double-quoted output with no unescaped newlines, carriage returns, tabs, or null bytes.

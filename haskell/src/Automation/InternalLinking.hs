@@ -28,7 +28,7 @@ module Automation.InternalLinking
   ) where
 
 import Automation.BlogPrompt (DateStr(..), todayPacific)
-import Automation.Frontmatter (parseFrontmatter, quoteYamlValue)
+import Automation.Frontmatter (YamlValue (..), parseFrontmatter, renderYamlValue)
 import Automation.Gemini
   ( GenerationConfig (..)
   , GeminiRequest (..)
@@ -716,7 +716,7 @@ applyReplacements content candidates validations =
 -- Frontmatter updates
 -- --------------------------------------------------------------------------
 
-updateFrontmatterFields :: FilePath -> [(Text, Text)] -> IO ()
+updateFrontmatterFields :: FilePath -> [(Text, YamlValue)] -> IO ()
 updateFrontmatterFields filePath fields = do
   exists <- doesFileExist filePath
   case exists of
@@ -734,12 +734,12 @@ updateFrontmatterFields filePath fields = do
                   in TIO.writeFile filePath
                        (T.intercalate "\n" (first : updatedFm <> [closingDash] <> bodyLines))
         _ -> do
-          let entries = T.intercalate "\n" $ fmap (\(k, v) -> k <> ": " <> quoteYamlValue v) fields
+          let entries = T.intercalate "\n" $ fmap (\(k, v) -> k <> ": " <> renderYamlValue v) fields
           TIO.writeFile filePath ("---\n" <> entries <> "\n---\n" <> raw)
 
-upsertField :: [Text] -> (Text, Text) -> [Text]
+upsertField :: [Text] -> (Text, YamlValue) -> [Text]
 upsertField ls (key, val) =
-  let newLine   = key <> ": " <> quoteYamlValue val
+  let newLine   = key <> ": " <> renderYamlValue val
       pat       = T.pack (T.unpack key <> ":")
       didReplace = any (matchesKey pat) ls
       replaced = replaceWithContinuation pat newLine ls
@@ -767,9 +767,9 @@ isContinuationLine l = not (T.null l) && T.isPrefixOf " " l
 recordLinkAnalysis :: FilePath -> Text -> Text -> IO ()
 recordLinkAnalysis filePath model timestamp =
   updateFrontmatterFields filePath
-    [ ("link_analysis_model", model)
-    , ("link_analysis_time", timestamp)
-    , ("force_analyze_links", "false")
+    [ ("link_analysis_model", YamlText model)
+    , ("link_analysis_time", YamlText timestamp)
+    , ("force_analyze_links", YamlBool False)
     ]
 
 -- --------------------------------------------------------------------------

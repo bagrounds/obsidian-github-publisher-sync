@@ -1,5 +1,7 @@
 module Automation.Frontmatter
   ( parseFrontmatter
+  , YamlValue (..)
+  , renderYamlValue
   , quoteYamlValue
   , getReflectionPath
   , readReflection
@@ -55,6 +57,21 @@ stripQuotes = stripTrailing . stripLeading
     stripTrailing t = case T.unsnoc t of
       Just (init', c) | c == '"' || c == '\'' -> init'
       _ -> t
+
+-- | A typed YAML scalar, mirroring TypeScript's @string | boolean | null@.
+--
+-- Using a sum type ensures booleans are serialized as native YAML booleans
+-- (unquoted) while strings are always double-quoted with proper escaping,
+-- following the YAML 1.2 specification.
+data YamlValue
+  = YamlText Text
+  | YamlBool Bool
+  deriving (Show, Eq)
+
+renderYamlValue :: YamlValue -> Text
+renderYamlValue (YamlBool True)  = "true"
+renderYamlValue (YamlBool False) = "false"
+renderYamlValue (YamlText t)     = quoteYamlValue t
 
 quoteYamlValue :: Text -> Text
 quoteYamlValue v = "\"" <> escapeYamlString v <> "\""

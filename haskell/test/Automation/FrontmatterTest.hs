@@ -34,6 +34,21 @@ tests = testGroup "Frontmatter"
   , testCase "getReflectionPath builds correct path" $
       getReflectionPath "2026-03-26" "/vault/reflections" @?= "/vault/reflections/2026-03-26.md"
 
+  , testGroup "YamlValue rendering"
+      [ testCase "YamlBool True renders as native YAML true" $
+          renderYamlValue (YamlBool True) @?= "true"
+      , testCase "YamlBool False renders as native YAML false" $
+          renderYamlValue (YamlBool False) @?= "false"
+      , testCase "YamlText renders as double-quoted string" $
+          renderYamlValue (YamlText "hello") @?= "\"hello\""
+      , testCase "YamlText empty string renders as empty quotes" $
+          renderYamlValue (YamlText "") @?= "\"\""
+      , testCase "YamlText with special chars is properly escaped" $
+          renderYamlValue (YamlText "@cf/model") @?= "\"@cf/model\""
+      , testCase "YamlText with colon is properly quoted" $
+          renderYamlValue (YamlText "https://example.com") @?= "\"https://example.com\""
+      ]
+
   , testGroup "quoteYamlValue"
       [ testCase "plain text is always quoted" $
           quoteYamlValue "hello" @?= "\"hello\""

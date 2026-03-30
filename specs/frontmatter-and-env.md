@@ -15,13 +15,13 @@
 - 🗺️ getReflectionPath constructs the file path for a dated reflection
 - 🔧 Simple text-based parsing without external YAML library dependency
 
-### 🔒 YAML Value Quoting (quoteYamlValue)
+### 🏗️ YAML Value Types (YamlValue)
 
-- 🔐 All YAML values are unconditionally wrapped in double quotes for safety
-- 🛡️ Proper escaping of backslashes, double quotes, newlines, carriage returns, tabs, and null bytes
-- 🧩 Single source of truth: all Haskell modules use quoteYamlValue from Automation.Frontmatter
-- 🔄 TypeScript uses js-yaml library with forceQuotes: true for equivalent behavior
-- ⚠️ Never construct YAML key-value lines without quoting values through quoteYamlValue
+- 📐 YamlValue is a sum type with two constructors: YamlText for double-quoted strings and YamlBool for native YAML booleans
+- 🔐 renderYamlValue serializes values according to the YAML 1.2 specification: strings are always double-quoted with proper escaping, booleans render as unquoted true or false
+- 🧩 Single source of truth: all Haskell modules import YamlValue and renderYamlValue from Automation.Frontmatter
+- 🔄 TypeScript uses js-yaml library with typed values (string or boolean or null) for equivalent behavior
+- ⚠️ Never construct YAML key-value lines without rendering values through renderYamlValue or quoteYamlValue
 
 ### 🧹 YAML Sanitization (sanitizeForYaml)
 
@@ -61,3 +61,4 @@
 
 🔬 Tests cover frontmatter parsing, HTML escaping, display date formatting, environment validation, and platform disabled detection across multiple test suites.
 🔒 Property-based tests verify quoteYamlValue always produces double-quoted output with no unescaped newlines, carriage returns, tabs, or null bytes.
+🏗️ YamlValue type tests verify booleans render as native YAML true and false while strings are always quoted.

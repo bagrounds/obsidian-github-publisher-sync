@@ -464,19 +464,29 @@ updateFrontmatterTimestamp filePath = do
       content <- TIO.readFile filePath
       now <- getCurrentTime
       let timestamp = T.pack $ formatTime defaultTimeLocale "%Y-%m-%dT%H:%M:%S" now
-          (fm, body) = parseFrontmatter content
-          fm' = Map.insert "updated" timestamp fm
-          newContent = renderFrontmatter fm' <> body
-      TIO.writeFile filePath newContent
+          ls = T.splitOn "\n" content
+      case ls of
+        (first : rest)
+          | T.strip first == "---" ->
+              case break (\l -> T.strip l == "---") rest of
+                (_, []) -> pure ()
+                (fmLines, closingDash : bodyLines) ->
+                  let updatedFm = upsertFmField fmLines "updated" (quoteYamlValue timestamp)
+                  in TIO.writeFile filePath
+                       (T.intercalate "\n" (first : updatedFm <> [closingDash] <> bodyLines))
+        _ -> pure ()
+
+upsertFmField :: [Text] -> Text -> Text -> [Text]
+upsertFmField ls key renderedVal =
+  let newLine = key <> ": " <> renderedVal
+      pat = key <> ":"
+      has = any (\l -> T.isPrefixOf pat (T.stripStart l)) ls
+      replaced = fmap (\l -> if T.isPrefixOf pat (T.stripStart l) then newLine else l) ls
+  in if has then replaced else ls <> [newLine]
 
 updatePathTimestamps :: FilePath -> [Text] -> IO ()
 updatePathTimestamps contentDir paths =
   mapM_ (\p -> updateFrontmatterTimestamp (contentDir </> T.unpack p)) paths
-
-renderFrontmatter :: Map Text Text -> Text
-renderFrontmatter fm =
-  let lines' = fmap (\(k, v) -> k <> ": " <> quoteYamlValue v) (Map.toAscList fm)
-  in "---\n" <> T.intercalate "\n" lines' <> "\n---\n"
 
 --------------------------------------------------------------------------------
 -- Configured platforms from environment

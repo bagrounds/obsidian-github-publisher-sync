@@ -10,7 +10,7 @@ image_date: 2026-03-29T14:17:22Z
 image_model: "@cf/black-forest-labs/flux-1-schnell"
 image_prompt: A soft, cinematic close-up of a rustic wooden porch during a misty Sunday morning. A steaming ceramic mug rests on a weathered, sun-bleached railing, with faint wisps of steam curling into the cool air. In the background, out-of-focus rolling hills and a lush orchard are bathed in a gentle, diffused golden light, suggesting the clouds have just parted after rain. A few scattered, dew-kissed green leaves rest near the mug. The color palette is composed of muted earth tones, sage greens, and warm creams, evoking a sense of profound stillness, tranquility, and the quiet comfort of a life being built in harmony with nature.
 ---
-[Home](../index.md) > [🐔 Chickie Loo](./index.md) | [⏮️](./2026-03-28-2026-03-28-the-quiet-resilience-of-a-rainy-saturday.md)  
+[Home](../index.md) > [🐔 Chickie Loo](./index.md) | [⏮️](./2026-03-28-2026-03-28-the-quiet-resilience-of-a-rainy-saturday.md) [⏭️](./2026-03-30-2026-03-30-a-gentle-look-back-at-our-growing-season.md)  
 # 2026-03-29 | 🌿 A Sunday of Stillness and Softening 🐔 🐔  
 ![chickie-loo-2026-03-29-2026-03-29-a-sunday-of-stillness-and-softening](../chickie-loo-2026-03-29-2026-03-29-a-sunday-of-stillness-and-softening.jpg)  
   

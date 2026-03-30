@@ -22,8 +22,9 @@
 🔍 When no prior day reflection is available (or it has already been posted), the system uses breadth-first search starting from the most recent reflection.
 📊 BFS follows markdown links and Obsidian wiki links to discover linked content notes.
 ⏳ Reflections from date D are NOT eligible for posting until the posting hour on D+1. Non-reflection content is always eligible.
+🚫 Index pages are never eligible for posting but are still traversed to discover linked content.
 📋 At most one note is discovered per configured platform per run.
-🔗 BFS always follows links from ineligible reflections, allowing discovery of linked content even when the reflection itself is too recent.
+🔗 BFS always follows links from ALL visited nodes, including ineligible or non-postable content. 📄 This ensures that content reachable only through index pages, private notes, or stubs is still discoverable.
 
 ### 📏 Content Filters
 
@@ -35,7 +36,7 @@
 
 ## 🤖 Post Text Generation
 
-📝 Post text is generated using a two-step parallel Gemini AI pipeline.
+📝 Post text is generated using a two-step sequential Gemini AI pipeline. 📡 Calls are made sequentially to avoid rate limits.
 
 ### ❓ Step 1: Question Generation
 

@@ -20,11 +20,15 @@ tests = testGroup "SocialPosting"
   [ detectPlatformTests
   , detectPlatformExtendedTests
   , linkExtractionTests
+  , wikiLinkParserTests
+  , normalizeFilePathTests
   , contentFilterTests
   , contentFilterExtendedTests
+  , indexPathTests
   , pathReconstructionTests
   , reflectionEligibilityTests
   , bfsEligibilityTests
+  , bfsTraversalTests
   , bfsTests
   ]
 
@@ -109,6 +113,78 @@ linkExtractionTests = testGroup "extractMarkdownLinks"
   ]
 
 --------------------------------------------------------------------------------
+-- Wiki link parser (replacing regex with recursive descent)
+--------------------------------------------------------------------------------
+
+wikiLinkParserTests :: TestTree
+wikiLinkParserTests = testGroup "parseWikiLinks"
+  [ testCase "parses simple wiki link" $
+      assertEqual "" ["books/my-book"] (parseWikiLinks "See [[books/my-book]] here")
+
+  , testCase "parses multiple wiki links" $
+      assertEqual "" ["books/a", "topics/b"]
+        (parseWikiLinks "Read [[books/a]] about [[topics/b]]")
+
+  , testCase "handles section anchors" $
+      assertEqual "" ["books/my-book"]
+        (parseWikiLinks "See [[books/my-book#section]] here")
+
+  , testCase "handles display text" $
+      assertEqual "" ["books/my-book"]
+        (parseWikiLinks "See [[books/my-book|My Book Title]] here")
+
+  , testCase "handles section and display text" $
+      assertEqual "" ["books/my-book"]
+        (parseWikiLinks "See [[books/my-book#section|Display Text]] here")
+
+  , testCase "returns empty for no wiki links" $
+      assertEqual "" [] (parseWikiLinks "No links here at all")
+
+  , testCase "returns empty for incomplete opening brackets" $
+      assertEqual "" [] (parseWikiLinks "See [not-a-link] here")
+
+  , testCase "returns empty for empty wiki link" $
+      assertEqual "" [] (parseWikiLinks "See [[]] here")
+
+  , testCase "handles link without path separator" $
+      assertEqual "" ["my-note"] (parseWikiLinks "See [[my-note]] here")
+
+  , testCase "handles adjacent wiki links" $
+      assertEqual "" ["a", "b"]
+        (parseWikiLinks "[[a]][[b]]")
+
+  , testProperty "never crashes on arbitrary input" $
+      \(QC.ASCIIString s) -> length (parseWikiLinks s) >= 0
+  ]
+
+--------------------------------------------------------------------------------
+-- Path normalization
+--------------------------------------------------------------------------------
+
+normalizeFilePathTests :: TestTree
+normalizeFilePathTests = testGroup "normalizeFilePath"
+  [ testCase "resolves parent directory references" $
+      assertEqual "" "books/foo.md"
+        (normalizeFilePath "reflections/../books/foo.md")
+
+  , testCase "resolves current directory references" $
+      assertEqual "" "books/foo.md"
+        (normalizeFilePath "books/./foo.md")
+
+  , testCase "preserves simple paths" $
+      assertEqual "" "books/foo.md"
+        (normalizeFilePath "books/foo.md")
+
+  , testCase "handles multiple parent refs" $
+      assertEqual "" "foo.md"
+        (normalizeFilePath "a/b/../../foo.md")
+
+  , testCase "handles complex nested path" $
+      assertEqual "" "reflections/topics/bar.md"
+        (normalizeFilePath "reflections/2025/../topics/./bar.md")
+  ]
+
+--------------------------------------------------------------------------------
 -- Content filtering
 --------------------------------------------------------------------------------
 
@@ -165,6 +241,33 @@ contentFilterExtendedTests = testGroup "content filtering (extended)"
   , testCase "isPostableContent rejects whitespace-only body" $
       assertBool "whitespace body not postable" $
         not (isPostableContent (mkNote "books/foo.md" "Foo" "   \n  \n  "))
+  ]
+
+--------------------------------------------------------------------------------
+-- Index page eligibility
+--------------------------------------------------------------------------------
+
+indexPathTests :: TestTree
+indexPathTests = testGroup "isIndexPath and index eligibility"
+  [ testCase "isIndexPath detects index.md" $
+      assertBool "index.md is an index path" $
+        isIndexPath "books/index.md"
+
+  , testCase "isIndexPath detects root index.md" $
+      assertBool "index.md is an index path" $
+        isIndexPath "index.md"
+
+  , testCase "isIndexPath rejects non-index files" $
+      assertBool "book file is not an index path" $
+        not (isIndexPath "books/great-book.md")
+
+  , testCase "checkBfsEligibility rejects index pages" $ do
+      result <- checkBfsEligibility "books/index.md" 17
+      assertBool "index should not be eligible" (not result)
+
+  , testCase "checkBfsEligibility rejects root index page" $ do
+      result <- checkBfsEligibility "index.md" 17
+      assertBool "root index should not be eligible" (not result)
   ]
 
 --------------------------------------------------------------------------------
@@ -233,6 +336,92 @@ bfsEligibilityTests = testGroup "checkBfsEligibility"
         assertBool "should find linked book, not the ineligible reflection"
           (all (\p -> p /= "reflections/2099-12-31.md") resultPaths)
         assertBool "should find the linked book" (not (null result))
+  ]
+
+--------------------------------------------------------------------------------
+-- BFS traversal through non-postable content
+--------------------------------------------------------------------------------
+
+bfsTraversalTests :: TestTree
+bfsTraversalTests = testGroup "BFS traversal"
+  [ testCase "BFS traverses through index pages to reach postable content" $ do
+      withSystemTempDirectory "social-test" $ \dir -> do
+        let reflDir = dir </> "reflections"
+            booksDir = dir </> "books"
+        createDirectoryIfMissing True reflDir
+        createDirectoryIfMissing True booksDir
+        -- Untitled reflection (date-only title) so BFS must traverse through it
+        TIO.writeFile (reflDir </> "2020-01-01.md")
+          ("---\ntitle: \"2020-01-01\"\n---\n" <>
+           "See [[books/index]]\n" <>
+           T.replicate 60 "x")
+        TIO.writeFile (booksDir </> "index.md")
+          ("---\ntitle: Book Index\n---\n" <>
+           "Browse [[books/hidden-gem]]\n" <>
+           T.replicate 60 "x")
+        TIO.writeFile (booksDir </> "hidden-gem.md")
+          ("---\ntitle: A Hidden Gem\nURL: https://example.com/books/hidden-gem\n---\n" <>
+           T.replicate 60 "x")
+        let config = FindContentConfig dir [Twitter] 0
+        result <- bfsContentDiscovery config
+        let resultPaths = fmap (cnRelativePath . ctpNote) result
+        assertBool "should not post index page"
+          (all (\p -> p /= "books/index.md") resultPaths)
+        assertBool "should find hidden gem through index page"
+          (any (\p -> p == "books/hidden-gem.md") resultPaths)
+
+  , testCase "BFS traverses through no_social content to reach postable content" $ do
+      withSystemTempDirectory "social-test" $ \dir -> do
+        let reflDir = dir </> "reflections"
+            topicsDir = dir </> "topics"
+            booksDir = dir </> "books"
+        createDirectoryIfMissing True reflDir
+        createDirectoryIfMissing True topicsDir
+        createDirectoryIfMissing True booksDir
+        -- Untitled reflection (date-only title) so BFS must traverse through it
+        TIO.writeFile (reflDir </> "2020-01-01.md")
+          ("---\ntitle: \"2020-01-01\"\n---\n" <>
+           "About [[topics/private-topic]]\n" <>
+           T.replicate 60 "x")
+        TIO.writeFile (topicsDir </> "private-topic.md")
+          ("---\ntitle: Private Topic\nno_social: true\n---\n" <>
+           "See also [[books/public-book]]\n" <>
+           T.replicate 60 "x")
+        TIO.writeFile (booksDir </> "public-book.md")
+          ("---\ntitle: Public Book\nURL: https://example.com/books/public-book\n---\n" <>
+           T.replicate 60 "x")
+        let config = FindContentConfig dir [Twitter] 0
+        result <- bfsContentDiscovery config
+        let resultPaths = fmap (cnRelativePath . ctpNote) result
+        assertBool "should not post private topic"
+          (all (\p -> p /= "topics/private-topic.md") resultPaths)
+        assertBool "should find public book through private topic"
+          (any (\p -> p == "books/public-book.md") resultPaths)
+
+  , testCase "BFS traverses through short-body content to reach postable content" $ do
+      withSystemTempDirectory "social-test" $ \dir -> do
+        let reflDir = dir </> "reflections"
+            booksDir = dir </> "books"
+        createDirectoryIfMissing True reflDir
+        createDirectoryIfMissing True booksDir
+        -- Untitled reflection (date-only title) so BFS must traverse through it
+        TIO.writeFile (reflDir </> "2020-01-01.md")
+          ("---\ntitle: \"2020-01-01\"\n---\n" <>
+           "See [[books/stub]]\n" <>
+           T.replicate 60 "x")
+        TIO.writeFile (booksDir </> "stub.md")
+          ("---\ntitle: Stub Note\n---\n" <>
+           "Short.\nSee [[books/real-book]]\n")
+        TIO.writeFile (booksDir </> "real-book.md")
+          ("---\ntitle: Real Book\nURL: https://example.com/books/real-book\n---\n" <>
+           T.replicate 60 "x")
+        let config = FindContentConfig dir [Twitter] 0
+        result <- bfsContentDiscovery config
+        let resultPaths = fmap (cnRelativePath . ctpNote) result
+        assertBool "should not post stub"
+          (all (\p -> p /= "books/stub.md") resultPaths)
+        assertBool "should find real book through stub"
+          (any (\p -> p == "books/real-book.md") resultPaths)
   ]
 
 --------------------------------------------------------------------------------

@@ -11,16 +11,19 @@ module Automation.SocialPosting
   , detectPostedPlatforms
   , isPostableContent
   , isUntitledReflection
+  , isIndexPath
   , findMostRecentReflection
   , isReflectionEligibleForPosting
   , checkBfsEligibility
+  , parseWikiLinks
+  , normalizeFilePath
   , updateFrontmatterTimestamp
   , updatePathTimestamps
   , reconstructPath
   , runPostingPipeline
   ) where
 
-import Control.Concurrent.Async (concurrently, mapConcurrently)
+import Control.Concurrent.Async (mapConcurrently)
 import Control.Exception (SomeException, try)
 import Data.IORef (IORef, modifyIORef', newIORef, readIORef)
 import Data.List (sortBy)
@@ -165,20 +168,40 @@ mdLinks body noteDir contentDir = go (T.unpack body)
       _ -> []
 
 wikiLinksFromBody :: Text -> FilePath -> FilePath -> [Text]
-wikiLinksFromBody body noteDir contentDir = go (T.unpack body)
+wikiLinksFromBody body noteDir contentDir =
+  let targets = parseWikiLinks (T.unpack body)
+  in fmap (resolveWikiLinkTarget noteDir contentDir) targets
+
+resolveWikiLinkTarget :: FilePath -> FilePath -> String -> Text
+resolveWikiLinkTarget noteDir contentDir target =
+  let trimmed = stripS target
+      withMd  = if hasSuffix ".md" trimmed then trimmed else trimmed <> ".md"
+  in case '/' `elem` withMd of
+    True  -> T.pack withMd
+    False ->
+      let absTarget = normalizeFilePath (noteDir </> withMd)
+      in T.pack (makeRelativeTo contentDir absTarget)
+
+parseWikiLinks :: String -> [String]
+parseWikiLinks [] = []
+parseWikiLinks ('[':'[':rest) =
+  case extractWikiLinkTarget rest of
+    Just (target, remaining) -> target : parseWikiLinks remaining
+    Nothing -> parseWikiLinks rest
+parseWikiLinks (_:rest) = parseWikiLinks rest
+
+extractWikiLinkTarget :: String -> Maybe (String, String)
+extractWikiLinkTarget input =
+  let (target, after) = span (\c -> c /= ']' && c /= '#' && c /= '|') input
+  in case after of
+    (']':']':rest) | not (null target) -> Just (target, rest)
+    ('#':rest) -> skipToClose target rest
+    ('|':rest) -> skipToClose target rest
+    _ -> Nothing
   where
-    go :: String -> [Text]
-    go s = case (s =~ ("\\[\\[([^]|#]+)" :: String) :: (String, String, String, [String])) of
-      (_, _, after, [target]) ->
-        let trimmed = stripS target
-            withMd  = if hasSuffix ".md" trimmed then trimmed else trimmed <> ".md"
-            rel
-              | '/' `elem` withMd = T.pack withMd
-              | otherwise         =
-                  let absTarget = normalizeFilePath (noteDir </> withMd)
-                  in T.pack (makeRelativeTo contentDir absTarget)
-        in rel : go after
-      _ -> []
+    skipToClose _ [] = Nothing
+    skipToClose t (']':']':rest) | not (null t) = Just (t, rest)
+    skipToClose t (_:rest) = skipToClose t rest
 
 isPrefixOfS :: String -> String -> Bool
 isPrefixOfS [] _          = True
@@ -260,8 +283,10 @@ isPostableContent note =
     && T.length (T.strip (cnBody note)) >= minPostableBodyLength
 
 isIndexPage :: ContentNote -> Bool
-isIndexPage note =
-  takeBaseName (T.unpack (cnRelativePath note)) == "index"
+isIndexPage = isIndexPath . cnRelativePath
+
+isIndexPath :: Text -> Bool
+isIndexPath p = takeBaseName (T.unpack p) == "index"
 
 isUntitledReflection :: ContentNote -> Bool
 isUntitledReflection note =
@@ -378,6 +403,7 @@ bfsLoop config state =
 -- Non-reflections are always eligible. Reflections have timing constraints.
 checkBfsEligibility :: Text -> Int -> IO Bool
 checkBfsEligibility relativePath postingHourUTC
+  | isIndexPath relativePath = pure False
   | isReflectionPath relativePath =
       isReflectionEligibleForPosting (extractDateFromPath relativePath) postingHourUTC
   | otherwise = pure True
@@ -484,13 +510,12 @@ generateSocialPostText manager apiKey note platform = do
       tagsCombined = ppSystem tagsPrompt <> "\n\n" <> ppUser tagsPrompt
       questionCombined = ppSystem questionPrompt <> "\n\n" <> ppUser questionPrompt
       maxLen = platformMaxLength platform
-      config = defaultGenerationConfig { gcTemperature = 0.8, gcMaxOutputTokens = 512 }
+      genConfig = defaultGenerationConfig { gcTemperature = 0.8, gcMaxOutputTokens = 512 }
       tagsModels = [defaultGeminiModel, gemini3Flash, geminiFlashFallback]
       questionModels = [defaultQuestionModel, geminiFlashFallback]
 
-  (tagsResult, questionResult) <- concurrently
-    (generateContentWithFallback manager tagsModels tagsCombined apiKey config)
-    (generateContentWithFallback manager questionModels questionCombined apiKey config)
+  tagsResult <- generateContentWithFallback manager tagsModels tagsCombined apiKey genConfig
+  questionResult <- generateContentWithFallback manager questionModels questionCombined apiKey genConfig
 
   case (tagsResult, questionResult) of
     (Left err, _) -> pure (Left $ "Tags generation failed: " <> err)
@@ -507,7 +532,7 @@ generateSocialPostText manager apiKey note platform = do
               shortenPrompt = buildShortenQuestionPrompt question (overage + shortenSafetyBuffer)
               shortenCombined = ppSystem shortenPrompt <> "\n\n" <> ppUser shortenPrompt
           putStrLn $ "  ✂️ Post exceeds Bluesky limit by " <> show overage <> " chars — asking LLM to shorten question..."
-          shortenResult <- generateContentWithFallback manager questionModels shortenCombined apiKey config
+          shortenResult <- generateContentWithFallback manager questionModels shortenCombined apiKey genConfig
           case shortenResult of
             Right shortenResp -> do
               let shortenedQ = T.strip (grText shortenResp)

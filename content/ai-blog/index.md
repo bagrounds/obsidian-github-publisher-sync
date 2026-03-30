@@ -1,15 +1,16 @@
 ---
 share: true
 aliases:
-  - 🤖 AI Blog (86)
-title: 🤖 AI Blog (86)
+  - 🤖 AI Blog (87)
+title: 🤖 AI Blog (87)
 URL: https://bagrounds.org/ai-blog/index
 Author: "[[bryan-grounds]]"
 backlinks: false
-updated: 2026-03-29T09:17:54-07:00
+updated: 2026-03-30T00:42:46-07:00
 ---
 [Home](../index.md)  
-# 🤖 AI Blog (86)  
+# 🤖 AI Blog (87)  
+- [2026-03-29 | 🔍 Five Whys to Fix TTS Comment Reading 🗣️](./2026-03-29-1-five-whys-to-fix-tts-comment-reading.md)  
 - [2026-03-28 | 🗣️ Teaching TTS to Read the Comments 💬](./2026-03-28-5-teaching-tts-to-read-the-comments.md)  
 - [2026-03-28 | 🔍 Frontmatter Forensics: Auditing the Haskell Migration 🧬](./2026-03-28-4-frontmatter-forensics-haskell-migration-audit.md)  
 - [2026-03-28 | 🗂️ Categorizing Daily Reflection Updates](./2026-03-28-3-categorizing-daily-reflection-updates.md)  

@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-03-29T09:17:54-07:00
+updated: 2026-03-30T00:42:46-07:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -14,18 +14,18 @@ updated: 2026-03-29T09:17:54-07:00
 🔊 Listen to any page with built in audio control.  
 💬 Comment on any page with your GitHub account.  
   
-## [🪞 Reflections](./reflections/index.md) ~ Blog (500)  
-- [2026-03-29](./reflections/2026-03-29.md)  
+## [🪞 Reflections](./reflections/index.md) ~ Blog (501)  
+- [2026-03-30](./reflections/2026-03-30.md)  
+- [2026-03-29 | 🌿 Softening 🤖 Navigating 🌐 Digital 📦 Deploys ❓ Whys ☔ Quiet 🐔🤖🤖🐲🔄](./reflections/2026-03-29.md)  
 - [2026-03-28 | ✨ Persistent 🌐 Digital 💾 Module 📦 Streamlining ⬆️ Updates 📈 Auditing ⚖️ Migration 🌳 Resilience 🔍🤖🏛️🤖🐲🔄🐔](./reflections/2026-03-28.md)  
 - [2026-03-27 | 🔎 Finding 👤 Personal 🕊️ Autonomy 📄🐔🤖🏛️🤖📺🤖🐲🔄](./reflections/2026-03-27.md)  
-- [2026-03-26 | 📠 Processing 🌌 Billion 💼 Job 🚌 Transit 🛣️ Journey 🤖🐔🏛️📺🤖🐲🔄](./reflections/2026-03-26.md)  
   
   
-## [🤖 AI Blog](./ai-blog/index.md) (86)  
+## [🤖 AI Blog](./ai-blog/index.md) (87)  
+- [2026-03-29 | 🔍 Five Whys to Fix TTS Comment Reading 🗣️](./ai-blog/2026-03-29-1-five-whys-to-fix-tts-comment-reading.md)  
 - [2026-03-28 | 🗣️ Teaching TTS to Read the Comments 💬](./ai-blog/2026-03-28-5-teaching-tts-to-read-the-comments.md)  
 - [2026-03-28 | 🔍 Frontmatter Forensics: Auditing the Haskell Migration 🧬](./ai-blog/2026-03-28-4-frontmatter-forensics-haskell-migration-audit.md)  
 - [2026-03-28 | 🗂️ Categorizing Daily Reflection Updates](./ai-blog/2026-03-28-3-categorizing-daily-reflection-updates.md)  
-- [🚀 Streamlining Deploys and YAML Quoting](./ai-blog/2026-03-28-2-streamlining-deploys-and-yaml-quoting.md)  
   
   
 ## [🤖 Auto Blog Zero](./auto-blog-zero/index.md) (20)  
@@ -37,7 +37,7 @@ updated: 2026-03-29T09:17:54-07:00
   
 ## [🐔 Chickie Loo](./chickie-loo/index.md) (20)  
 - [2026-03-29 | 🌿 A Sunday of Stillness and Softening 🐔 🐔](./chickie-loo/2026-03-29-a-sunday-of-stillness-and-softening.md)  
-- [2026-03-28 | 🐔 2026-03-28 | 🐔 🌦️ The Quiet Resilience of a Rainy Saturday 🐔 🐔](./chickie-loo/2026-03-28-2026-03-28-the-quiet-resilience-of-a-rainy-saturday.md)  
+- [2026-03-28 | 🐔 🌦️ The Quiet Resilience of a Rainy Saturday 🐔 🐔](./chickie-loo/2026-03-28-2026-03-28-the-quiet-resilience-of-a-rainy-saturday.md)  
 - [2026-03-27 | 🐔 💃 A Dance on the Side of the Road and the Strength of a Shared Life 🐓 🐔](./chickie-loo/2026-03-27-a-dance-on-the-side-of-the-road-and-the-strength-of-a-shared-life.md)  
 - [2026-03-26 | 🐔 🌅 A Thrilled Heart, a Wise Journey, and the Gentle Flow of Life 🐔](./chickie-loo/2026-03-26-a-thrilled-heart-a-wise-journey-and-the-gentle-flow-of-life.md)  
   

@@ -202,7 +202,7 @@ describe("assembleFrontmatter", () => {
     const fm = assembleFrontmatter(series, "2026-03-12", "My Great Post", "my-great-post");
     assert.ok(fm.includes("share: true"));
     assert.ok(fm.includes("2026-03-12 | 🤖 My Great Post 🤖"));
-    assert.ok(fm.includes("URL: https://bagrounds.org/auto-blog-zero/2026-03-12-my-great-post"));
+    assert.ok(fm.includes('URL: "https://bagrounds.org/auto-blog-zero/2026-03-12-my-great-post"'));
     assert.ok(fm.includes('Author: "[[auto-blog-zero]]"'));
     assert.ok(!fm.includes("[Your Title Here]"));
     assert.ok(fm.includes("[[index|Home]] > [[auto-blog-zero/index|🤖 Auto Blog Zero]]"));

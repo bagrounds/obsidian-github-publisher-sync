@@ -148,7 +148,7 @@ tests = testGroup "BlogImage"
       [ testCase "updates existing field" $
           updateFrontmatterFields "---\ntitle: old\n---\nbody"
             [("title", "new")]
-            @?= "---\ntitle: new\n---\nbody"
+            @?= "---\ntitle: \"new\"\n---\nbody"
       , testCase "adds new field" $
           let result = updateFrontmatterFields "---\ntitle: test\n---\nbody"
                 [("image_date", "2024-01-15")]
@@ -166,20 +166,20 @@ tests = testGroup "BlogImage"
             assertBool "should not have orphaned continuation line" $
               not (T.isInfixOf "  - \"old alias\"" result)
             assertBool "should have new value" $
-              T.isInfixOf "aliases: new-value" result
+              T.isInfixOf "aliases: \"new-value\"" result
             assertBool "should preserve title" $
               T.isInfixOf "title: test" result
       ]
   , testGroup "applyField"
       [ testCase "replaces scalar field" $
           applyField ["title: old", "tags:"] ("title", "new")
-            @?= ["title: new", "tags:"]
+            @?= ["title: \"new\"", "tags:"]
       , testCase "adds missing field" $
           applyField ["title: test"] ("new_key", "value")
-            @?= ["title: test", "new_key: value"]
+            @?= ["title: test", "new_key: \"value\""]
       , testCase "drops continuation lines when replacing multi-line field" $
           applyField ["aliases:", "  - \"first\"", "  - \"second\"", "title: test"] ("aliases", "replaced")
-            @?= ["aliases: replaced", "title: test"]
+            @?= ["aliases: \"replaced\"", "title: test"]
       ]
   , testGroup "removeImageEmbed"
       [ testCase "removes Obsidian embed and returns name" $

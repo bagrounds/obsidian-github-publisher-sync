@@ -23,9 +23,9 @@ import Automation.BlogPrompt
   , DateStr
   , buildForwardLink
   , filterCommentsAfterLastPost
-  , quoteForYaml
   )
 import Automation.BlogSeriesConfig (BlogSeriesConfig (..), lookupSeries)
+import Automation.Frontmatter (quoteYamlValue)
 
 buildBlogContext :: Text -> FilePath -> [BlogComment] -> DateStr -> IO BlogContext
 buildBlogContext seriesId seriesDir comments today = do
@@ -46,7 +46,7 @@ generateSeriesIndex series _posts =
   T.intercalate "\n"
     [ "---"
     , "share: true"
-    , "title: " <> quoteForYaml (bscIcon series <> " " <> bscName series)
+    , "title: " <> quoteYamlValue (bscIcon series <> " " <> bscName series)
     , "---"
     , ""
     , bscNavLink series

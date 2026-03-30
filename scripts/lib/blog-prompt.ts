@@ -117,20 +117,22 @@ export const buildBackLink = (series: BlogSeriesConfig, previousPost: BlogPost):
 export const buildForwardLink = (series: BlogSeriesConfig, nextFilename: string): string =>
   `[[${series.id}/${nextFilename.replace(/\.md$/, "")}|⏭️]]`;
 
-const quoteForYaml = (value: string): string =>
-  `"${value.replace(/\\/g, "\\\\").replace(/"/g, '\\"')}"`;
+const quoteYamlValue = (value: string): string =>
+  `"${value.replace(/\\/g, "\\\\").replace(/"/g, '\\"').replace(/\n/g, "\\n").replace(/\r/g, "\\r").replace(/\t/g, "\\t")}"`;
 
 export const assembleFrontmatter = (series: BlogSeriesConfig, today: string, title: string, slug: string, previousPost?: BlogPost): string => {
   const backLink = previousPost ? ` | ${buildBackLink(series, previousPost)}` : "";
   const displayTitle = `${today} | ${series.icon} ${title} ${series.icon}`;
-  const quoted = quoteForYaml(displayTitle);
+  const quoted = quoteYamlValue(displayTitle);
+  const url = quoteYamlValue(`${series.baseUrl}/${today}-${slug}`);
+  const author = quoteYamlValue(series.author);
   return `---
 share: true
 aliases:
   - ${quoted}
 title: ${quoted}
-URL: ${series.baseUrl}/${today}-${slug}
-Author: "${series.author}"
+URL: ${url}
+Author: ${author}
 tags:
 ---
 ${series.navLink}${backLink}

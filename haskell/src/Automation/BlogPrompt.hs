@@ -13,7 +13,6 @@ module Automation.BlogPrompt
   , assembleFrontmatter
   , buildDisplayTitle
   , todayPacific
-  , quoteForYaml
   , recapInstructions
   ) where
 
@@ -42,6 +41,7 @@ import Text.Read (readMaybe)
 import Automation.BlogComments (BlogComment (..))
 import Automation.BlogPosts (BlogPost (..))
 import Automation.BlogSeriesConfig (BlogSeriesConfig (..))
+import Automation.Frontmatter (quoteYamlValue)
 import Automation.Types
   ( blueskySectionHeader
   , mastodonSectionHeader
@@ -126,10 +126,10 @@ assembleFrontmatter series dateStr title slug =
     [ "---"
     , "share: true"
     , "aliases:"
-    , "  - " <> quoteForYaml displayTitle
-    , "title: " <> quoteForYaml displayTitle
-    , "URL: " <> url
-    , "Author: " <> quoteForYaml (bscAuthor series)
+    , "  - " <> quoteYamlValue displayTitle
+    , "title: " <> quoteYamlValue displayTitle
+    , "URL: " <> quoteYamlValue url
+    , "Author: " <> quoteYamlValue (bscAuthor series)
     , "tags:"
     , "---"
     ]
@@ -141,12 +141,6 @@ todayPacific = do
       localTime = utcToLocalTime tz utcNow
       day = localDay localTime
   pure $ DateStr $ T.pack $ formatTime defaultTimeLocale "%Y-%m-%d" day
-
-quoteForYaml :: Text -> Text
-quoteForYaml t =
-  let backslashEscaped = T.replace "\\" "\\\\" t
-      quotesEscaped = T.replace "\"" "\\\"" backslashEscaped
-  in "\"" <> quotesEscaped <> "\""
 
 recapInstructions :: DateStr -> Text
 recapInstructions (DateStr dateStr) =

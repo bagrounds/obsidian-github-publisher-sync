@@ -251,7 +251,7 @@ sanitizeForYaml =
   T.strip
     . collapseSpaces
     . T.filter (`notElem` ['\"', '\'', '\\', '`'])
-    . T.map (\c -> if c == '\n' then ' ' else c)
+    . T.map (\c -> if c == '\n' || c == '\r' || c == '\t' then ' ' else c)
 
 collapseSpaces :: Text -> Text
 collapseSpaces = T.intercalate " " . filter (not . T.null) . T.splitOn " "

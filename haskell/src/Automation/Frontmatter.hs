@@ -57,15 +57,18 @@ stripQuotes = stripTrailing . stripLeading
       _ -> t
 
 quoteYamlValue :: Text -> Text
-quoteYamlValue v
-  | T.null v  = "\"\""
-  | needsQuoting v = "\"" <> T.replace "\"" "\\\"" (T.replace "\\" "\\\\" v) <> "\""
-  | otherwise = v
+quoteYamlValue v = "\"" <> escapeYamlString v <> "\""
+
+escapeYamlString :: Text -> Text
+escapeYamlString = T.concatMap escapeChar
   where
-    needsQuoting t = T.any (\c -> c == ':' || c == '#' || c == '"' || c == '\'' || c == '[' || c == ']' || c == '{' || c == '}' || c == ',' || c == '@' || c == '`') t
-                     || T.strip t /= t
-                     || t == "true" || t == "false" || t == "null"
-                     || T.all (\c -> isDigit c || c == '.' || c == '-') t
+    escapeChar '\\' = "\\\\"
+    escapeChar '"'  = "\\\""
+    escapeChar '\n' = "\\n"
+    escapeChar '\r' = "\\r"
+    escapeChar '\t' = "\\t"
+    escapeChar '\0' = ""
+    escapeChar c    = T.singleton c
 
 hasSectionHeader :: Text -> Text -> Bool
 hasSectionHeader content header = T.isInfixOf header content

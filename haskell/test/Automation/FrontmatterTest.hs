@@ -1,8 +1,11 @@
 module Automation.FrontmatterTest (tests) where
 
 import Test.Tasty (TestTree, testGroup)
-import Test.Tasty.HUnit (testCase, (@?=))
+import Test.Tasty.HUnit (testCase, (@?=), assertBool)
+import Test.Tasty.QuickCheck (testProperty)
+import qualified Test.QuickCheck as QC
 import qualified Data.Map.Strict as Map
+import qualified Data.Text as T
 
 import Automation.Frontmatter
 
@@ -32,8 +35,8 @@ tests = testGroup "Frontmatter"
       getReflectionPath "2026-03-26" "/vault/reflections" @?= "/vault/reflections/2026-03-26.md"
 
   , testGroup "quoteYamlValue"
-      [ testCase "plain text stays unquoted" $
-          quoteYamlValue "hello" @?= "hello"
+      [ testCase "plain text is always quoted" $
+          quoteYamlValue "hello" @?= "\"hello\""
       , testCase "empty string becomes quoted" $
           quoteYamlValue "" @?= "\"\""
       , testCase "value with colon gets quoted" $
@@ -54,8 +57,8 @@ tests = testGroup "Frontmatter"
           quoteYamlValue "before # comment" @?= "\"before # comment\""
       , testCase "escapes internal quotes" $
           quoteYamlValue "say \"hello\"" @?= "\"say \\\"hello\\\"\""
-      , testCase "preserves backslashes in plain values" $
-          quoteYamlValue "path\\to" @?= "path\\to"
+      , testCase "escapes backslashes" $
+          quoteYamlValue "path\\to" @?= "\"path\\\\to\""
       , testCase "value with leading space gets quoted" $
           quoteYamlValue " leading" @?= "\" leading\""
       , testCase "value with comma gets quoted" $
@@ -66,5 +69,65 @@ tests = testGroup "Frontmatter"
           quoteYamlValue "@cf/black-forest-labs/flux-1-schnell" @?= "\"@cf/black-forest-labs/flux-1-schnell\""
       , testCase "value with backtick gets quoted (YAML reserved indicator)" $
           quoteYamlValue "code `inline`" @?= "\"code `inline`\""
+      , testCase "escapes newlines" $
+          quoteYamlValue "line1\nline2" @?= "\"line1\\nline2\""
+      , testCase "escapes carriage returns" $
+          quoteYamlValue "line1\rline2" @?= "\"line1\\rline2\""
+      , testCase "escapes tabs" $
+          quoteYamlValue "col1\tcol2" @?= "\"col1\\tcol2\""
+      , testCase "strips null bytes" $
+          quoteYamlValue "ab\0cd" @?= "\"abcd\""
+      , testCase "value starting with ! is safely quoted" $
+          quoteYamlValue "!important tag" @?= "\"!important tag\""
+      , testCase "value starting with * is safely quoted" $
+          quoteYamlValue "*alias ref" @?= "\"*alias ref\""
+      , testCase "value starting with & is safely quoted" $
+          quoteYamlValue "&anchor" @?= "\"&anchor\""
+      , testCase "value starting with | is safely quoted" $
+          quoteYamlValue "| block scalar" @?= "\"| block scalar\""
+      , testCase "value starting with > is safely quoted" $
+          quoteYamlValue "> folded" @?= "\"> folded\""
+      , testCase "value starting with ? is safely quoted" $
+          quoteYamlValue "? complex key" @?= "\"? complex key\""
+      , testCase "value starting with % is safely quoted" $
+          quoteYamlValue "%directive" @?= "\"%directive\""
+      , testCase "YAML boolean yes is safely quoted" $
+          quoteYamlValue "yes" @?= "\"yes\""
+      , testCase "YAML boolean no is safely quoted" $
+          quoteYamlValue "no" @?= "\"no\""
+      , testCase "tilde (YAML null) is safely quoted" $
+          quoteYamlValue "~" @?= "\"~\""
+      , testCase "image model with slash is safely quoted" $
+          quoteYamlValue "black-forest-labs/FLUX.1-schnell" @?= "\"black-forest-labs/FLUX.1-schnell\""
+      , testCase "combined escaping: backslash and quote" $
+          quoteYamlValue "say \\\"hi\\\"" @?= "\"say \\\\\\\"hi\\\\\\\"\""
+      , testCase "combined escaping: newline and quote" $
+          quoteYamlValue "line1\n\"line2\"" @?= "\"line1\\n\\\"line2\\\"\""
+      ]
+  , testGroup "quoteYamlValue properties"
+      [ testProperty "output always starts and ends with double quotes" $
+          \(QC.ASCIIString s) ->
+            let t = T.pack s
+                result = quoteYamlValue t
+            in T.head result == '"' && T.last result == '"'
+      , testProperty "output never contains unescaped newlines" $
+          \(QC.ASCIIString s) ->
+            let result = quoteYamlValue (T.pack s)
+                inner = T.drop 1 (T.dropEnd 1 result)
+            in not (T.isInfixOf "\n" inner)
+      , testProperty "output never contains unescaped carriage returns" $
+          \(QC.ASCIIString s) ->
+            let result = quoteYamlValue (T.pack s)
+                inner = T.drop 1 (T.dropEnd 1 result)
+            in not (T.isInfixOf "\r" inner)
+      , testProperty "output never contains unescaped tabs" $
+          \(QC.ASCIIString s) ->
+            let result = quoteYamlValue (T.pack s)
+                inner = T.drop 1 (T.dropEnd 1 result)
+            in not (T.isInfixOf "\t" inner)
+      , testProperty "output never contains null bytes" $
+          \(QC.ASCIIString s) ->
+            let result = quoteYamlValue (T.pack s)
+            in not (T.isInfixOf "\0" result)
       ]
   ]

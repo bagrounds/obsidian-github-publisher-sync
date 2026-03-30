@@ -55,7 +55,7 @@ import Automation.EmbedSection
   , buildTweetSection
   )
 import Automation.Env (validateEnvironment)
-import Automation.Frontmatter (parseFrontmatter)
+import Automation.Frontmatter (parseFrontmatter, quoteYamlValue)
 import Automation.Gemini
   ( GenerationConfig (..)
   , GeminiResponse (..)
@@ -475,7 +475,7 @@ updatePathTimestamps contentDir paths =
 
 renderFrontmatter :: Map Text Text -> Text
 renderFrontmatter fm =
-  let lines' = fmap (\(k, v) -> k <> ": " <> v) (Map.toAscList fm)
+  let lines' = fmap (\(k, v) -> k <> ": " <> quoteYamlValue v) (Map.toAscList fm)
   in "---\n" <> T.intercalate "\n" lines' <> "\n---\n"
 
 --------------------------------------------------------------------------------

@@ -57,6 +57,8 @@ URL: https://bagrounds.org/ai-blog/2026-03-08-auto-post-mastodon
 
 ## Scientific Engineering
 - 🔬 Always test your work and iterate until your tests succeed and verify that the goal has been achieved.
+- 🐛 When fixing a bug, always write a failing test that reproduces the bug BEFORE writing the fix. Confirm the test fails, then apply the fix, then confirm the test passes. This is test-driven development (TDD).
+- 🔴🟢 Follow the red-green cycle: red (failing test) → green (minimal fix) → refactor. Never skip the red step.
 
 ## Obsidian Vault is the Source of Truth
 - 📱 The `content/` directory is a **read-only one-way sync** from the Obsidian vault on the user's phone. Never write to `content/` from GitHub Actions or scripts.

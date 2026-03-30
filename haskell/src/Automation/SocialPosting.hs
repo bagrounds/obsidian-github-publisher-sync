@@ -11,8 +11,12 @@ module Automation.SocialPosting
   , detectPostedPlatforms
   , isPostableContent
   , isUntitledReflection
+  , isIndexPath
   , findMostRecentReflection
   , isReflectionEligibleForPosting
+  , checkBfsEligibility
+  , parseWikiLinks
+  , normalizeFilePath
   , updateFrontmatterTimestamp
   , updatePathTimestamps
   , reconstructPath
@@ -63,7 +67,7 @@ import Automation.Platforms.Bluesky (postToBluesky, getBlueskyEmbedHtml, extract
 import Automation.Platforms.Mastodon (postToMastodon, getMastodonEmbedHtml, extractMastodonInstanceUrl, extractMastodonStatusId, extractMastodonUsername)
 import Automation.Platforms.OgMetadata (fetchOgMetadata)
 import Automation.Platforms.Twitter (postTweet, getEmbedHtml)
-import Automation.Prompts (PromptPair (..), assemblePost, buildTagsPrompt)
+import Automation.Prompts (PromptPair (..), assemblePost, buildQuestionPrompt, buildShortenQuestionPrompt, buildTagsPrompt)
 import Automation.Text (fitPostToLimit)
 import Automation.Types
 
@@ -164,20 +168,40 @@ mdLinks body noteDir contentDir = go (T.unpack body)
       _ -> []
 
 wikiLinksFromBody :: Text -> FilePath -> FilePath -> [Text]
-wikiLinksFromBody body noteDir contentDir = go (T.unpack body)
+wikiLinksFromBody body noteDir contentDir =
+  let targets = parseWikiLinks (T.unpack body)
+  in fmap (resolveWikiLinkTarget noteDir contentDir) targets
+
+resolveWikiLinkTarget :: FilePath -> FilePath -> String -> Text
+resolveWikiLinkTarget noteDir contentDir target =
+  let trimmed = stripS target
+      withMd  = if hasSuffix ".md" trimmed then trimmed else trimmed <> ".md"
+  in case '/' `elem` withMd of
+    True  -> T.pack withMd
+    False ->
+      let absTarget = normalizeFilePath (noteDir </> withMd)
+      in T.pack (makeRelativeTo contentDir absTarget)
+
+parseWikiLinks :: String -> [String]
+parseWikiLinks [] = []
+parseWikiLinks ('[':'[':rest) =
+  case extractWikiLinkTarget rest of
+    Just (target, remaining) -> target : parseWikiLinks remaining
+    Nothing -> parseWikiLinks rest
+parseWikiLinks (_:rest) = parseWikiLinks rest
+
+extractWikiLinkTarget :: String -> Maybe (String, String)
+extractWikiLinkTarget input =
+  let (target, after) = span (\c -> c /= ']' && c /= '#' && c /= '|') input
+  in case after of
+    (']':']':rest) | not (null target) -> Just (target, rest)
+    ('#':rest) -> skipToClose target rest
+    ('|':rest) -> skipToClose target rest
+    _ -> Nothing
   where
-    go :: String -> [Text]
-    go s = case (s =~ ("\\[\\[([^\\]|#]+)" :: String) :: (String, String, String, [String])) of
-      (_, _, after, [target]) ->
-        let trimmed = stripS target
-            withMd  = if hasSuffix ".md" trimmed then trimmed else trimmed <> ".md"
-            rel
-              | '/' `elem` withMd = T.pack withMd
-              | otherwise         =
-                  let absTarget = normalizeFilePath (noteDir </> withMd)
-                  in T.pack (makeRelativeTo contentDir absTarget)
-        in rel : go after
-      _ -> []
+    skipToClose _ [] = Nothing
+    skipToClose t (']':']':rest) | not (null t) = Just (t, rest)
+    skipToClose t (_:rest) = skipToClose t rest
 
 isPrefixOfS :: String -> String -> Bool
 isPrefixOfS [] _          = True
@@ -191,7 +215,7 @@ stripS :: String -> String
 stripS = reverse . dropWhile (== ' ') . reverse . dropWhile (== ' ')
 
 normalizeFilePath :: FilePath -> FilePath
-normalizeFilePath = joinSlash . resolve . splitSlash
+normalizeFilePath = joinSlash . reverse . resolve . splitSlash
   where
     resolve :: [String] -> [String]
     resolve = foldl step []
@@ -259,8 +283,10 @@ isPostableContent note =
     && T.length (T.strip (cnBody note)) >= minPostableBodyLength
 
 isIndexPage :: ContentNote -> Bool
-isIndexPage note =
-  takeBaseName (T.unpack (cnRelativePath note)) == "index"
+isIndexPage = isIndexPath . cnRelativePath
+
+isIndexPath :: Text -> Bool
+isIndexPath p = takeBaseName (T.unpack p) == "index"
 
 isUntitledReflection :: ContentNote -> Bool
 isUntitledReflection note =
@@ -350,12 +376,13 @@ bfsLoop config state =
       case mNote of
         Nothing -> bfsLoop config state'
         Just note -> do
+          eligible <- checkBfsEligibility (cnRelativePath note) (fccPostingHourUTC config)
           let neededPlatforms = filter
                 (\p -> not (Set.member p (bsFilled state'))
                        && not (Set.member p (cnPostedPlatforms note)))
                 (fccPlatforms config)
               newResults
-                | isPostableContent note =
+                | isPostableContent note && eligible =
                     fmap (\p -> ContentToPost p note pathFromRoot) neededPlatforms
                 | otherwise = []
               newFilled = Set.union (bsFilled state') $
@@ -371,6 +398,15 @@ bfsLoop config state =
                 , bsFilled  = newFilled
                 }
           bfsLoop config state''
+
+-- | Check if a note is eligible for BFS posting.
+-- Non-reflections are always eligible. Reflections have timing constraints.
+checkBfsEligibility :: Text -> Int -> IO Bool
+checkBfsEligibility relativePath postingHourUTC
+  | isIndexPath relativePath = pure False
+  | isReflectionPath relativePath =
+      isReflectionEligibleForPosting (extractDateFromPath relativePath) postingHourUTC
+  | otherwise = pure True
 
 --------------------------------------------------------------------------------
 -- Discover content to post (main entry point for discovery)
@@ -469,18 +505,42 @@ generateSocialPostText manager apiKey note platform = do
         , rdHasBlueskySection = Set.member Bluesky (cnPostedPlatforms note)
         , rdHasMastodonSection = Set.member Mastodon (cnPostedPlatforms note)
         }
-      tagPrompt = buildTagsPrompt rd
-      combinedPrompt = ppSystem tagPrompt <> "\n\n" <> ppUser tagPrompt
+      tagsPrompt = buildTagsPrompt rd
+      questionPrompt = buildQuestionPrompt rd
+      tagsCombined = ppSystem tagsPrompt <> "\n\n" <> ppUser tagsPrompt
+      questionCombined = ppSystem questionPrompt <> "\n\n" <> ppUser questionPrompt
       maxLen = platformMaxLength platform
-      config = defaultGenerationConfig { gcTemperature = 0.8, gcMaxOutputTokens = 512 }
-      models = [defaultGeminiModel, gemini3Flash, geminiFlashFallback]
-  result <- generateContentWithFallback manager models combinedPrompt apiKey config
-  case result of
-    Left err -> pure (Left err)
-    Right resp -> do
-      let rawPost = assemblePost (grText resp) rd
-          fitted = fitPostToLimit rawPost maxLen
-      pure (Right fitted)
+      genConfig = defaultGenerationConfig { gcTemperature = 0.8, gcMaxOutputTokens = 512 }
+      tagsModels = [defaultGeminiModel, gemini3Flash, geminiFlashFallback]
+      questionModels = [defaultQuestionModel, geminiFlashFallback]
+
+  tagsResult <- generateContentWithFallback manager tagsModels tagsCombined apiKey genConfig
+  questionResult <- generateContentWithFallback manager questionModels questionCombined apiKey genConfig
+
+  case (tagsResult, questionResult) of
+    (Left err, _) -> pure (Left $ "Tags generation failed: " <> err)
+    (_, Left err) -> pure (Left $ "Question generation failed: " <> err)
+    (Right tagsResp, Right questionResp) -> do
+      let tags = T.strip (grText tagsResp)
+          question = T.strip (grText questionResp)
+          modelOutput = question <> "\n" <> tags
+          rawPost = assemblePost modelOutput rd
+          overage = T.length rawPost - blueskyMaxLength
+      finalPost <- case overage > 0 of
+        True -> do
+          let shortenSafetyBuffer = 10
+              shortenPrompt = buildShortenQuestionPrompt question (overage + shortenSafetyBuffer)
+              shortenCombined = ppSystem shortenPrompt <> "\n\n" <> ppUser shortenPrompt
+          putStrLn $ "  ✂️ Post exceeds Bluesky limit by " <> show overage <> " chars — asking LLM to shorten question..."
+          shortenResult <- generateContentWithFallback manager questionModels shortenCombined apiKey genConfig
+          case shortenResult of
+            Right shortenResp -> do
+              let shortenedQ = T.strip (grText shortenResp)
+                  shortenedOutput = shortenedQ <> "\n" <> tags
+              pure $ assemblePost shortenedOutput rd
+            Left _ -> pure rawPost
+        False -> pure rawPost
+      pure (Right (fitPostToLimit finalPost maxLen))
 
 --------------------------------------------------------------------------------
 -- Platform posting tasks

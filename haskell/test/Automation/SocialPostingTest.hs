@@ -18,8 +18,10 @@ import Automation.SocialPosting
 tests :: TestTree
 tests = testGroup "SocialPosting"
   [ detectPlatformTests
+  , detectPlatformExtendedTests
   , linkExtractionTests
   , contentFilterTests
+  , contentFilterExtendedTests
   , pathReconstructionTests
   , reflectionEligibilityTests
   , bfsTests
@@ -53,6 +55,25 @@ detectPlatformTests = testGroup "detectPostedPlatforms"
 
   , testProperty "empty content has no platforms" $
       \() -> Set.null (detectPostedPlatforms "")
+  ]
+
+--------------------------------------------------------------------------------
+-- Extended platform detection
+--------------------------------------------------------------------------------
+
+detectPlatformExtendedTests :: TestTree
+detectPlatformExtendedTests = testGroup "detectPostedPlatforms (extended)"
+  [ testCase "does not detect partial header match" $
+      assertEqual "" Set.empty
+        (detectPostedPlatforms "## Tweet without emoji")
+
+  , testCase "detects twitter and mastodon only" $
+      assertEqual "" (Set.fromList [Twitter, Mastodon])
+        (detectPostedPlatforms "## 🐦 Tweet\ntweet\n## 🐘 Mastodon\ntoot")
+
+  , testCase "plain text without headers has no platforms" $
+      assertEqual "" Set.empty
+        (detectPostedPlatforms "just some text about birds and butterflies")
   ]
 
 --------------------------------------------------------------------------------
@@ -120,6 +141,29 @@ contentFilterTests = testGroup "content filtering"
   , testCase "isUntitledReflection ignores non-reflections" $
       assertBool "non-reflection with date title is fine" $
         not (isUntitledReflection (mkNote "books/2025-01-15.md" "2025-01-15" "body"))
+  ]
+
+--------------------------------------------------------------------------------
+-- Extended content filtering
+--------------------------------------------------------------------------------
+
+contentFilterExtendedTests :: TestTree
+contentFilterExtendedTests = testGroup "content filtering (extended)"
+  [ testCase "isPostableContent rejects content at exactly min length minus one" $
+      assertBool "49 chars not postable" $
+        not (isPostableContent (mkNote "books/foo.md" "Foo" (T.replicate 49 "x")))
+
+  , testCase "isPostableContent accepts content at exactly min length" $
+      assertBool "50 chars postable" $
+        isPostableContent (mkNote "books/foo.md" "Good Title" (T.replicate 50 "x"))
+
+  , testCase "isUntitledReflection rejects date with extra text" $
+      assertBool "date-plus-text is titled" $
+        not (isUntitledReflection (mkNote "reflections/2025-01-15.md" "2025-01-15 My Day" "body"))
+
+  , testCase "isPostableContent rejects whitespace-only body" $
+      assertBool "whitespace body not postable" $
+        not (isPostableContent (mkNote "books/foo.md" "Foo" "   \n  \n  "))
   ]
 
 --------------------------------------------------------------------------------

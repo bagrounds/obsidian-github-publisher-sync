@@ -1,0 +1,186 @@
+module Automation.DailyReflectionTest (tests) where
+
+import qualified Data.Text as T
+import Test.Tasty (TestTree, testGroup)
+import Test.Tasty.HUnit (testCase, (@?=), assertBool)
+import Test.Tasty.QuickCheck (testProperty)
+import qualified Test.Tasty.QuickCheck as QC
+
+import Automation.BlogSeriesConfig (BlogSeriesConfig (..))
+import Automation.DailyReflection
+
+tests :: TestTree
+tests = testGroup "DailyReflection"
+  [ buildReflectionContentTests
+  , buildSeriesSectionHeadingTests
+  , buildPostLinkTests
+  , addForwardLinkTests
+  , insertPostLinkTests
+  , propertyTests
+  ]
+
+sampleSeries :: BlogSeriesConfig
+sampleSeries = BlogSeriesConfig
+  { bscId           = "auto-blog-zero"
+  , bscName         = "Auto Blog Zero"
+  , bscIcon         = "🤖"
+  , bscAuthor       = "[[auto-blog-zero]]"
+  , bscBaseUrl      = "https://bagrounds.org/auto-blog-zero"
+  , bscPriorityUser = Just "bagrounds"
+  , bscNavLink      = "[[index|Home]] > [[auto-blog-zero/index|🤖 Auto Blog Zero]]"
+  , bscPostTimeUtc  = "16:00"
+  }
+
+--------------------------------------------------------------------------------
+-- buildReflectionContent
+--------------------------------------------------------------------------------
+
+buildReflectionContentTests :: TestTree
+buildReflectionContentTests = testGroup "buildReflectionContent"
+  [ testCase "generates frontmatter with date" $
+      let result = buildReflectionContent "2026-04-01" Nothing
+      in do
+        assertBool "starts with frontmatter" (T.isPrefixOf "---" result)
+        assertBool "contains share: true" (T.isInfixOf "share: true" result)
+        assertBool "contains date in title" (T.isInfixOf "2026-04-01" result)
+        assertBool "contains URL" (T.isInfixOf "https://bagrounds.org/reflections/2026-04-01" result)
+  , testCase "generates heading with date" $
+      let result = buildReflectionContent "2026-04-01" Nothing
+      in assertBool "contains h1 with date" (T.isInfixOf "# 2026-04-01" result)
+  , testCase "includes nav breadcrumb" $
+      let result = buildReflectionContent "2026-04-01" Nothing
+      in assertBool "contains Home nav" (T.isInfixOf "[[index|Home]]" result)
+  , testCase "no backlink when no previous date" $
+      let result = buildReflectionContent "2026-04-01" Nothing
+      in assertBool "no back arrow" (not (T.isInfixOf "⏮️" result))
+  , testCase "includes backlink when previous date provided" $
+      let result = buildReflectionContent "2026-04-01" (Just "2026-03-31")
+      in do
+        assertBool "has back arrow" (T.isInfixOf "⏮️" result)
+        assertBool "links to previous date" (T.isInfixOf "reflections/2026-03-31" result)
+  , testCase "includes Author field" $
+      let result = buildReflectionContent "2026-04-01" Nothing
+      in assertBool "contains Author" (T.isInfixOf "Author:" result)
+  ]
+
+--------------------------------------------------------------------------------
+-- buildSeriesSectionHeading
+--------------------------------------------------------------------------------
+
+buildSeriesSectionHeadingTests :: TestTree
+buildSeriesSectionHeadingTests = testGroup "buildSeriesSectionHeading"
+  [ testCase "formats heading with icon and name" $
+      let result = buildSeriesSectionHeading sampleSeries
+      in do
+        assertBool "starts with ##" (T.isPrefixOf "## " result)
+        assertBool "contains series name" (T.isInfixOf "Auto Blog Zero" result)
+        assertBool "contains wikilink to index" (T.isInfixOf "auto-blog-zero/index" result)
+  ]
+
+--------------------------------------------------------------------------------
+-- buildPostLink
+--------------------------------------------------------------------------------
+
+buildPostLinkTests :: TestTree
+buildPostLinkTests = testGroup "buildPostLink"
+  [ testCase "formats list item with wikilink" $
+      buildPostLink "auto-blog-zero" "my-post" "My Post Title"
+        @?= "- [[auto-blog-zero/my-post|My Post Title]]"
+  , testCase "handles special characters in title" $
+      let result = buildPostLink "chickie-loo" "fancy-post" "A Post: With Colon"
+      in assertBool "contains title" (T.isInfixOf "A Post: With Colon" result)
+  ]
+
+--------------------------------------------------------------------------------
+-- addForwardLink
+--------------------------------------------------------------------------------
+
+addForwardLinkTests :: TestTree
+addForwardLinkTests = testGroup "addForwardLink"
+  [ testCase "adds forward link after existing back link" $
+      let content = "[[index|Home]] > [[reflections/index|Reflections]] | [[reflections/2026-03-31|⏮️]]\n# 2026-04-01"
+          result = addForwardLink content "2026-04-02"
+      in do
+        assertBool "contains forward arrow" (T.isInfixOf "⏭️" result)
+        assertBool "links to target date" (T.isInfixOf "reflections/2026-04-02" result)
+  , testCase "does not add duplicate forward link" $
+      let content = "[[reflections/2026-03-31|⏮️]] [[reflections/2026-04-02|⏭️]]\n# Post"
+          result = addForwardLink content "2026-04-03"
+      in result @?= content
+  , testCase "returns content unchanged when no back link present" $
+      let content = "[[index|Home]] > [[reflections/index|Reflections]]\n# Post"
+          result = addForwardLink content "2026-04-02"
+      in result @?= content
+  ]
+
+--------------------------------------------------------------------------------
+-- insertPostLink
+--------------------------------------------------------------------------------
+
+insertPostLinkTests :: TestTree
+insertPostLinkTests = testGroup "insertPostLink"
+  [ testCase "creates new section when not present" $
+      let content = "# 2026-04-01\n\nSome reflection"
+          result = insertPostLink content sampleSeries "my-post" "My Post" Nothing
+      in do
+        assertBool "contains section heading" (T.isInfixOf (buildSeriesSectionHeading sampleSeries) result)
+        assertBool "contains post link" (T.isInfixOf "[[auto-blog-zero/my-post|My Post]]" result)
+  , testCase "appends to existing section" $
+      let heading = buildSeriesSectionHeading sampleSeries
+          content = "# 2026-04-01\n\n" <> heading <> "\n- [[auto-blog-zero/old-post|Old Post]]\n"
+          result = insertPostLink content sampleSeries "new-post" "New Post" Nothing
+      in do
+        assertBool "contains old link" (T.isInfixOf "[[auto-blog-zero/old-post|Old Post]]" result)
+        assertBool "contains new link" (T.isInfixOf "[[auto-blog-zero/new-post|New Post]]" result)
+  , testCase "does not insert duplicate link" $
+      let heading = buildSeriesSectionHeading sampleSeries
+          content = "# 2026-04-01\n\n" <> heading <> "\n- [[auto-blog-zero/my-post|My Post]]\n"
+          result = insertPostLink content sampleSeries "my-post" "My Post" Nothing
+      in result @?= content
+  , testCase "replaces old link when replacingFilenameNoExt given" $
+      let heading = buildSeriesSectionHeading sampleSeries
+          content = "# 2026-04-01\n\n" <> heading <> "\n- [[auto-blog-zero/old-name|Old Title]]\n"
+          result = insertPostLink content sampleSeries "new-name" "New Title" (Just "old-name")
+      in do
+        assertBool "old link replaced" (not (T.isInfixOf "old-name" result))
+        assertBool "new link present" (T.isInfixOf "[[auto-blog-zero/new-name|New Title]]" result)
+  , testCase "inserts new section before embed sections" $
+      let content = "# 2026-04-01\n\nBody\n\n## 🐦 Tweet\n\nTweet embed"
+          result = insertPostLink content sampleSeries "post" "Post" Nothing
+      in do
+        assertBool "section before tweet" $
+          let sIdx = T.length $ fst $ T.breakOn (buildSeriesSectionHeading sampleSeries) result
+              tIdx = T.length $ fst $ T.breakOn "## 🐦 Tweet" result
+          in sIdx < tIdx
+  , testCase "appends section at end when no embed sections" $
+      let content = "# 2026-04-01\n\nBody text"
+          result = insertPostLink content sampleSeries "post" "Post" Nothing
+      in assertBool "contains post link" (T.isInfixOf "[[auto-blog-zero/post|Post]]" result)
+  ]
+
+--------------------------------------------------------------------------------
+-- property tests
+--------------------------------------------------------------------------------
+
+propertyTests :: TestTree
+propertyTests = testGroup "properties"
+  [ testProperty "buildReflectionContent always contains the date" $
+      \(QC.ASCIIString dateStr) ->
+        let date = T.pack dateStr
+            result = buildReflectionContent date Nothing
+        in T.isInfixOf date result
+  , testProperty "addForwardLink is idempotent" $
+      \(QC.ASCIIString dateStr) ->
+        let date = T.pack dateStr
+            content = "nav | [[reflections/prev|⏮️]]\n# Post"
+            once = addForwardLink content date
+            twice = addForwardLink once date
+        in once == twice
+  , testProperty "insertPostLink is idempotent" $
+      \(QC.ASCIIString slug) ->
+        let filenameNoExt = T.pack slug
+            content = "# 2026-04-01\n\nBody"
+            once = insertPostLink content sampleSeries filenameNoExt "Title" Nothing
+            twice = insertPostLink once sampleSeries filenameNoExt "Title" Nothing
+        in once == twice
+  ]

@@ -19,6 +19,7 @@ tests = testGroup "InternalLinking"
   , findLinkCandidatesTests
   , extractBodyTests
   , alreadyAnalyzedTests
+  , extractLinkedPathsTests
   , applyReplacementsTests
   , buildIdentificationPromptTests
   , propertyTests
@@ -234,6 +235,38 @@ alreadyAnalyzedTests = testGroup "alreadyAnalyzed"
   , testCase "false when force_analyze_links is true" $
       assertBool "force re-analyze"
         (not (alreadyAnalyzed "---\nlink_analysis_model: gemini-2.5-flash\nforce_analyze_links: true\n---\nBody"))
+  , testCase "true when force_analyze_links is false" $
+      assertBool "should be analyzed"
+        (alreadyAnalyzed "---\nlink_analysis_model: gemini-2.5-flash\nforce_analyze_links: false\n---\nBody")
+  , testCase "false when no frontmatter at all" $
+      assertBool "not analyzed" (not (alreadyAnalyzed "Just plain text"))
+  , testCase "true with different model name" $
+      assertBool "analyzed with different model"
+        (alreadyAnalyzed "---\nlink_analysis_model: gemini-3-flash-preview\n---\nBody")
+  ]
+
+-- --------------------------------------------------------------------------
+-- extractLinkedPaths
+-- --------------------------------------------------------------------------
+
+extractLinkedPathsTests :: TestTree
+extractLinkedPathsTests = testGroup "extractLinkedPaths"
+  [ testCase "skips external URLs" $
+      let body = "See [title](https://example.com/foo.md) here"
+          paths = extractLinkedPaths body "reflections/2025-01-01.md" "/content"
+      in assertEqual "should find no paths" 0 (length paths)
+  , testCase "returns empty for plain text" $
+      let body = "No links here at all"
+          paths = extractLinkedPaths body "reflections/2025-01-01.md" "/content"
+      in assertEqual "should find no paths" 0 (length paths)
+  , testCase "skips external URLs" $
+      let body = "See [title](https://example.com/foo.md) here"
+          paths = extractLinkedPaths body "reflections/2025-01-01.md" "/content"
+      in assertEqual "should find no paths" 0 (length paths)
+  , testCase "extracts multiple different links" $
+      let body = "Read [[books/a]] and [[topics/b]] today"
+          paths = extractLinkedPaths body "reflections/2025-01-01.md" "/content"
+      in assertEqual "should find two" 2 (length paths)
   ]
 
 -- --------------------------------------------------------------------------
@@ -271,6 +304,16 @@ applyReplacementsTests = testGroup "applyReplacements"
       in do
           assertBool "has first link" (T.isInfixOf "[[books/thinking-fast|" result)
           assertBool "has second link" (T.isInfixOf "[[books/other|" result)
+  , testCase "returns original for empty candidates" $
+      let content = "no links here"
+          result = applyReplacements content [] []
+      in assertEqual "unchanged" content result
+  , testCase "applies replacement with all-true validations" $
+      let entry = ContentEntry "books/test.md" "📖 Test" "Test"
+          content = "I love Test here"
+          c = LinkCandidate entry "Test" 7 ""
+          result = applyReplacements content [c] [True]
+      in assertBool "should have wikilink" (T.isInfixOf "[[books/test|" result)
   ]
 
 -- --------------------------------------------------------------------------
@@ -288,6 +331,18 @@ buildIdentificationPromptTests = testGroup "buildIdentificationPrompt"
   , testCase "includes JSON instruction" $
       let prompt = buildIdentificationPrompt "body" [sampleEntry]
       in assertBool "has JSON instruction" (T.isInfixOf "JSON array" prompt)
+  , testCase "includes relative paths" $
+      let prompt = buildIdentificationPrompt "body" [sampleEntry]
+      in assertBool "has relative path" (T.isInfixOf "books/thinking-fast.md" prompt)
+  , testCase "handles multiple entries" $
+      let entry2 = ContentEntry "books/other.md" "📖 Other" "Other"
+          prompt = buildIdentificationPrompt "body" [sampleEntry, entry2]
+      in do
+          assertBool "has first" (T.isInfixOf "Thinking, Fast and Slow" prompt)
+          assertBool "has second" (T.isInfixOf "Other" prompt)
+  , testCase "handles empty entries" $
+      let prompt = buildIdentificationPrompt "body" []
+      in assertBool "still has system prompt" (T.isInfixOf "editorial assistant" prompt)
   ]
 
 -- --------------------------------------------------------------------------

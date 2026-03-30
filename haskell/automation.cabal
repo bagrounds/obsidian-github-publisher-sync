@@ -132,6 +132,12 @@ test-suite automation-tests
     Automation.SocialPostingTest
     Automation.DailyUpdatesTest
     Automation.StaticGiscusTest
+    Automation.AiBlogLinksTest
+    Automation.AiFictionTest
+    Automation.DailyReflectionTest
+    Automation.PromptsTest
+    Automation.JsonTest
+    Automation.ReflectionTitleTest
   build-depends:
     base,
     automation,

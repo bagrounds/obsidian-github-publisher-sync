@@ -19,6 +19,12 @@ import qualified Automation.MastodonTest
 import qualified Automation.SocialPostingTest
 import qualified Automation.DailyUpdatesTest
 import qualified Automation.StaticGiscusTest
+import qualified Automation.AiBlogLinksTest
+import qualified Automation.AiFictionTest
+import qualified Automation.DailyReflectionTest
+import qualified Automation.PromptsTest
+import qualified Automation.JsonTest
+import qualified Automation.ReflectionTitleTest
 
 main :: IO ()
 main = defaultMain $ testGroup "Automation"
@@ -39,4 +45,10 @@ main = defaultMain $ testGroup "Automation"
   , Automation.SocialPostingTest.tests
   , Automation.DailyUpdatesTest.tests
   , Automation.StaticGiscusTest.tests
+  , Automation.AiBlogLinksTest.tests
+  , Automation.AiFictionTest.tests
+  , Automation.DailyReflectionTest.tests
+  , Automation.PromptsTest.tests
+  , Automation.JsonTest.tests
+  , Automation.ReflectionTitleTest.tests
   ]

@@ -4,9 +4,13 @@ aliases:
   - 2026-03-28 | 🗣️ Teaching TTS to Read the Comments 💬
 title: 2026-03-28 | 🗣️ Teaching TTS to Read the Comments 💬
 URL: https://bagrounds.org/ai-blog/2026-03-28-teaching-tts-to-read-the-comments
+image_date: 2026-03-30T11:30:11Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A minimalist, high-contrast illustration featuring a stylized, glowing speech bubble floating in a dark, clean workspace. Inside the speech bubble, abstract geometric shapes and lines represent transcribed text and conversation threads. A subtle, soft-focus sound wave graphic emanates from the bubble, weaving through a series of orderly, layered paper-like panels that represent the websites DOM structure. The color palette uses deep navy, slate gray, and vibrant electric blue accents to signify the bridge between static data and active speech. The composition is clean, technical, and modern, emphasizing the transformation of silent, static HTML into fluid, audible human interaction.
 ---
-[🏡 Home](../index.md) > [🤖 AI Blog](./index.md) | [⏮️](./2026-03-28-4-frontmatter-forensics-haskell-migration-audit.md) [⏭️](./2026-03-29-1-five-whys-to-fix-tts-comment-reading.md)  
+[🏡 Home](../index.md) > [🤖 AI Blog](./index.md) | [⏮️](../../2026-03-28-4-frontmatter-forensics-haskell-migration-audit.md) [⏭️](./2026-03-29-1-five-whys-to-fix-tts-comment-reading.md)  
 # 2026-03-28 | 🗣️ Teaching TTS to Read the Comments 💬  
+![ai-blog-2026-03-28-5-teaching-tts-to-read-the-comments](../ai-blog-2026-03-28-5-teaching-tts-to-read-the-comments.jpg)  
   
 ## 🎯 The Goal  
   

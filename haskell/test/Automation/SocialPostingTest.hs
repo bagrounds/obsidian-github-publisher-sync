@@ -24,6 +24,7 @@ tests = testGroup "SocialPosting"
   , contentFilterExtendedTests
   , pathReconstructionTests
   , reflectionEligibilityTests
+  , bfsEligibilityTests
   , bfsTests
   ]
 
@@ -193,6 +194,45 @@ reflectionEligibilityTests = testGroup "isReflectionEligibleForPosting"
   [ testCase "very old reflection is eligible" $ do
       result <- isReflectionEligibleForPosting "2020-01-01" 17
       assertBool "old reflection should be eligible" result
+  ]
+
+--------------------------------------------------------------------------------
+-- BFS eligibility (reflection timing in BFS traversal)
+--------------------------------------------------------------------------------
+
+bfsEligibilityTests :: TestTree
+bfsEligibilityTests = testGroup "checkBfsEligibility"
+  [ testCase "non-reflection paths are always eligible" $ do
+      result <- checkBfsEligibility "books/great-book.md" 17
+      assertBool "book should be eligible" result
+
+  , testCase "non-reflection in topics dir is eligible" $ do
+      result <- checkBfsEligibility "topics/machine-learning.md" 17
+      assertBool "topic should be eligible" result
+
+  , testCase "old reflection is eligible" $ do
+      result <- checkBfsEligibility "reflections/2020-01-01.md" 17
+      assertBool "old reflection should be eligible" result
+
+  , testCase "bfsContentDiscovery skips ineligible reflections and finds linked content" $ do
+      withSystemTempDirectory "social-test" $ \dir -> do
+        let reflDir = dir </> "reflections"
+            booksDir = dir </> "books"
+        createDirectoryIfMissing True reflDir
+        createDirectoryIfMissing True booksDir
+        TIO.writeFile (reflDir </> "2099-12-31.md")
+          ("---\ntitle: Future Reflection\n---\n" <>
+           "Today I read [[books/linked-book]]\n" <>
+           T.replicate 60 "x")
+        TIO.writeFile (booksDir </> "linked-book.md")
+          ("---\ntitle: A Linked Book\nURL: https://example.com/books/linked-book\n---\n" <>
+           T.replicate 60 "x")
+        let config = FindContentConfig dir [Twitter, Bluesky] 17
+        result <- bfsContentDiscovery config
+        let resultPaths = fmap (cnRelativePath . ctpNote) result
+        assertBool "should find linked book, not the ineligible reflection"
+          (all (\p -> p /= "reflections/2099-12-31.md") resultPaths)
+        assertBool "should find the linked book" (not (null result))
   ]
 
 --------------------------------------------------------------------------------

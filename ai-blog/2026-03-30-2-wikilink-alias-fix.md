@@ -12,15 +12,15 @@ URL: https://bagrounds.org/ai-blog/2026-03-30-wikilink-alias-fix
 
 🔍 When the Haskell automation inserted wikilinks into Obsidian notes, it sometimes used raw filename slugs as the display text instead of the proper title from the linked-to note's frontmatter.
 
-🎯 For example, a wikilink to a blog post about image generation might have looked like this: the link target followed by a pipe and then the raw slug two-zero-two-six-dash-zero-three-dash-two-eight-dash-my-cool-post. That is, the display text was just the filename with dashes, not the human-friendly title.
+🎯 For example, a wikilink to a blog post about image generation might have looked like this: the link target followed by a pipe and then the raw slug 2026-03-28-my-cool-post. That is, the display text was just the filename with dashes, not the human-friendly title.
 
-✅ The correct behavior is to read the target note's frontmatter title (which matches the Obsidian alias) and use it as the wikilink display text. So instead of a slug, you see the full title with emojis, like "2026-03-28, vertical bar, paint palette emoji, My Cool Post, robot emoji."
+✅ The correct behavior is to read the target note's frontmatter title (which matches the Obsidian alias) and use it as the wikilink display text. So instead of a slug, you see the full title with emojis, like 2026-03-28 | 🎨 My Cool Post 🤖.
 
 ## 🔎 Root Cause
 
 📂 The issue was in the Haskell orchestration code in RunScheduled.hs. When the image backfill pipeline generated images for blog posts, it produced a list of modified file paths. The code needed to create wikilinks pointing to those modified files and insert them into the daily reflection note.
 
-🐞 Instead of reading the title from each modified file's frontmatter, the Haskell code fabricated a title by stripping the directory prefix and file extension from the filename. This string manipulation turned a path like ai-blog slash 2026-03-28-my-cool-post.md into just 2026-03-28-my-cool-post, which is a far cry from the actual display title.
+🐞 Instead of reading the title from each modified file's frontmatter, the Haskell code fabricated a title by stripping the directory prefix and file extension from the filename. This string manipulation turned a path like ai-blog/2026-03-28-my-cool-post.md into just 2026-03-28-my-cool-post, which is a far cry from the actual display title.
 
 🆚 The TypeScript implementation correctly reads the title from each file's frontmatter using the extractTitleFromFile function, which looks up the title field and falls back to the filename only when frontmatter is absent.
 

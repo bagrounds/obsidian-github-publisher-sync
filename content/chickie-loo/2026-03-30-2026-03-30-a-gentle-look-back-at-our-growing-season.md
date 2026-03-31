@@ -11,7 +11,7 @@ tags:
 title: 2026-03-30 | 🐔 🐔 2026-03-30 | 🌻 A Gentle Look Back at Our Growing Season 🌿 🐔
 updated: 2026-03-30T17:27:54
 ---
-[Home](../index.md) > [🐔 Chickie Loo](./index.md) | [⏮️](./2026-03-29-a-sunday-of-stillness-and-softening.md)  
+[Home](../index.md) > [🐔 Chickie Loo](./index.md) | [⏮️](./2026-03-29-a-sunday-of-stillness-and-softening.md) [⏭️](./2026-03-31-2026-03-31-a-season-of-building-believing-and-becoming.md)  
 # 2026-03-30 | 🐔 🐔 2026-03-30 | 🌻 A Gentle Look Back at Our Growing Season 🌿 🐔  
 ![chickie-loo-2026-03-30-2026-03-30-a-gentle-look-back-at-our-growing-season](../chickie-loo-2026-03-30-2026-03-30-a-gentle-look-back-at-our-growing-season.jpg)  
   

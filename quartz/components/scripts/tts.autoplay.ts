@@ -117,12 +117,20 @@ export function resolveNextUrl(
   readPages: Set<string>,
 ): string | null {
   // 1. Next in series
-  if (navLinks.next && !readPages.has(urlToSlug(navLinks.next))) {
+  if (
+    navLinks.next &&
+    !isIndexOrHome(urlToSlug(navLinks.next)) &&
+    !readPages.has(urlToSlug(navLinks.next))
+  ) {
     return navLinks.next
   }
 
   // 2. Back in series
-  if (navLinks.back && !readPages.has(urlToSlug(navLinks.back))) {
+  if (
+    navLinks.back &&
+    !isIndexOrHome(urlToSlug(navLinks.back)) &&
+    !readPages.has(urlToSlug(navLinks.back))
+  ) {
     return navLinks.back
   }
 

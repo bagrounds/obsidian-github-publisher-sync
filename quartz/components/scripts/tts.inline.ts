@@ -27,6 +27,7 @@ import {
   SELECTORS_TO_REMOVE,
   INLINE_SELECTORS_TO_REMOVE,
   BLOCK_SELECTORS,
+  SOCIAL_SECTION_HEADINGS,
 } from "./tts.utils"
 
 import {
@@ -69,6 +70,17 @@ function shouldSkipBlock(el: Element, article: Element): boolean {
     current = current.parentElement
   }
   return false
+}
+
+/**
+ * Detect whether an element is a social media section heading (H2)
+ * whose text content contains one of the known social platform names.
+ */
+function isSocialSectionHeading(el: Element): boolean {
+  return (
+    el.tagName === "H2" &&
+    SOCIAL_SECTION_HEADINGS.some((name) => (el.textContent ?? "").includes(name))
+  )
 }
 
 /**
@@ -127,8 +139,15 @@ function extractArticleBlocks(): { text: string; blocks: TextBlock[] } {
   const blocks: TextBlock[] = []
   const blockElements = article.querySelectorAll(BLOCK_SELECTORS)
   let offset = 0
+  let inSocialSection = false
 
   for (const el of blockElements) {
+    if (isSocialSectionHeading(el)) {
+      inSocialSection = true
+    } else if (inSocialSection && el.tagName === "H2") {
+      inSocialSection = false
+    }
+    if (inSocialSection) continue
     if (shouldSkipBlock(el, article)) continue
     if (el.querySelector(BLOCK_SELECTORS)) continue
     offset = appendCleanedBlock(el, blocks, offset)

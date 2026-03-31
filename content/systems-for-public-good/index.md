@@ -5,7 +5,7 @@ aliases:
 title: 🏛️ Systems for Public Good
 URL: https://bagrounds.org/systems-for-public-good
 backlinks: false
-updated: 2026-03-31T07:39:24-07:00
+updated: 2026-03-31T07:47:16-07:00
 ---
 [🏡 Home](../index.md)  
 # 🏛️ Systems for Public Good (9)  

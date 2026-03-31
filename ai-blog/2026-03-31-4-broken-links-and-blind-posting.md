@@ -67,7 +67,7 @@ URL: https://bagrounds.org/ai-blog/2026-03-31-broken-links-and-blind-posting
 ## 📚 Book Recommendations
 
 ### 📖 Similar
-* Release It! by Michael T. Nylund is relevant because it explores patterns for building resilient production systems, including the importance of verifying assumptions before taking irreversible actions like posting to social media.
+* Release It! by Michael T. Nygard is relevant because it explores patterns for building resilient production systems, including the importance of verifying assumptions before taking irreversible actions like posting to social media.
 * Effective Monitoring and Alerting by Slawek Ligus is relevant because it covers strategies for detecting data quality issues and broken integrations before they become customer-visible problems.
 
 ### ↔️ Contrasting

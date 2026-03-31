@@ -166,7 +166,7 @@ export interface ContentEntry {
   readonly title: string;
   /** Title with emojis stripped, e.g. "Thinking, Fast and Slow" */
   readonly plainTitle: string;
-  /** Main title without subtitle (text before first ": "), or null if no subtitle */
+  /** Main title without subtitle (text before first ": "), or null if no subtitle separator or main title is too short */
   readonly mainTitle: string | null;
 }
 

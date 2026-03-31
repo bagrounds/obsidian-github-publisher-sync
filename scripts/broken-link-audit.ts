@@ -47,4 +47,5 @@ const main = async (): Promise<void> => {
 main().catch((error) => {
   console.error("Broken link audit error:", error);
   // Always exit 0 — audit is informational, never blocking
+  process.exit(0);
 });

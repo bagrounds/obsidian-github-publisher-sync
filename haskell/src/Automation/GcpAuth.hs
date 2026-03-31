@@ -34,8 +34,6 @@ import qualified Data.Text.Encoding as TE
 import Data.Time.Clock.POSIX (getPOSIXTime)
 import Network.HTTP.Client
   ( Manager
-  , Request (..)
-  , RequestBody (..)
   , httpLbs
   , parseRequest
   , responseBody

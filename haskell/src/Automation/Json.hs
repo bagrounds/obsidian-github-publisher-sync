@@ -26,8 +26,7 @@ import qualified Data.Text.Lazy as TL
 import qualified Data.Text.Lazy.Encoding as TLE
 import Numeric (showHex)
 import Text.Parsec
-  ( ParsecT
-  , char
+  ( char
   , count
   , eof
   , hexDigit

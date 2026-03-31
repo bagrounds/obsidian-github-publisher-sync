@@ -53,12 +53,6 @@ data SyncResult = SyncResult
   , srSuccess  :: Bool
   } deriving (Show, Eq)
 
-data EmbedSection = EmbedSection
-  { esHeader       :: Text
-  , esEmbedHtml    :: Text
-  , esBuildSection :: Text -> Text -> Text
-  }
-
 runObCommand :: [String] -> Maybe FilePath -> [(String, String)] -> IO (String, String)
 runObCommand args mCwd extraEnv = do
   parentEnv <- getEnvironment
@@ -67,14 +61,14 @@ runObCommand args mCwd extraEnv = do
   (exitCode, stdout, stderr) <- readCreateProcessWithExitCode cp ""
   case exitCode of
     ExitSuccess -> pure (stdout, stderr)
-    ExitFailure code -> throwIO $ userError $ unlines
+    ExitFailure code -> throwIO $ userError $ joinLines
       [ "Command: ob " <> unwords args
       , "Exit code: " <> show code
       , "Stdout: " <> stdout
       , "Stderr: " <> stderr
       ]
   where
-    unlines = foldr (\a b -> a <> "\n" <> b) ""
+    joinLines = foldr (\a b -> a <> "\n" <> b) ""
 
 removeSyncLock :: FilePath -> IO ()
 removeSyncLock vaultDir = do

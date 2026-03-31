@@ -22,20 +22,24 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: Cache Cabal packages
+      - name: Cache Cabal packages and build artifacts
         uses: actions/cache@v4
         with:
-          path: ~/.cabal/store
-          key: cabal-ghc914-${{ hashFiles('haskell/automation.cabal') }}
-          restore-keys: cabal-ghc914-
+          path: |
+            ~/.cabal/store
+            haskell/dist-newstyle
+          key: cabal-ghc914-${{ hashFiles('haskell/automation.cabal') }}-${{ hashFiles('haskell/src/**', 'haskell/app/**', 'haskell/test/**') }}
+          restore-keys: |
+            cabal-ghc914-${{ hashFiles('haskell/automation.cabal') }}-
+            cabal-ghc914-
 
       - name: Build
         working-directory: haskell
-        run: cabal update && cabal build
+        run: cabal update && cabal build all -j --ghc-options="-Werror"
 
       - name: Test
         working-directory: haskell
-        run: cabal test
+        run: cabal test --test-show-details=direct
 
       - name: Stage executables
         working-directory: haskell

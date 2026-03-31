@@ -9,7 +9,6 @@ module Automation.BlogComments
 
 import Automation.Json
   ( FromValue (..)
-  , Value (..)
   , (.=)
   , (.:)
   , (.:?)
@@ -19,7 +18,6 @@ import Automation.Json
   , withObject
   )
 import Data.List (sortBy)
-import Data.Maybe (fromMaybe)
 import Data.Ord (Down (..), comparing)
 import Data.Text (Text)
 import qualified Data.Text as T

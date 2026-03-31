@@ -19,7 +19,6 @@ import Network.HTTP.Client
   ( Manager
   , Request (..)
   , RequestBody (..)
-  , ResponseTimeout
   , httpLbs
   , parseRequest
   , responseBody

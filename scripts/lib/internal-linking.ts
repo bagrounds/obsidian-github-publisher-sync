@@ -166,6 +166,8 @@ export interface ContentEntry {
   readonly title: string;
   /** Title with emojis stripped, e.g. "Thinking, Fast and Slow" */
   readonly plainTitle: string;
+  /** Main title without subtitle (text before first ": "), or null if no subtitle */
+  readonly mainTitle: string | null;
 }
 
 /** A candidate link found in a file */
@@ -243,6 +245,22 @@ export const stripEmojis = (text: string): string =>
  */
 export const countWords = (text: string): number =>
   text.split(/[\s-]+/).filter((w) => w.length > 0).length;
+
+/**
+ * Extract the main title from a full title that may include a subtitle.
+ * Splits on ": " (colon-space) which is the standard subtitle separator.
+ * Returns null if no subtitle separator is found, or if the main title
+ * is too short to be useful for matching.
+ */
+export const extractMainTitle = (plainTitle: string): string | null => {
+  const colonIndex = plainTitle.indexOf(": ");
+  if (colonIndex < 0) return null;
+
+  const main = plainTitle.substring(0, colonIndex).trim();
+  return main.length >= MIN_TITLE_LENGTH && countWords(main) >= MIN_WORD_COUNT_WITHOUT_AI
+    ? main
+    : null;
+};
 
 /**
  * Escape special regex characters in a string for use in RegExp constructor.
@@ -330,7 +348,8 @@ export const buildContentIndex = (contentDir: string): readonly ContentEntry[] =
         const plainTitle = stripEmojis(title);
         if (plainTitle.length < MIN_TITLE_LENGTH) return [];
 
-        return [{ relativePath, title, plainTitle }];
+        const mainTitle = extractMainTitle(plainTitle);
+        return [{ relativePath, title, plainTitle, mainTitle }];
       });
   });
 
@@ -594,32 +613,44 @@ export const findLinkCandidates = (
     // Without AI validation, skip single-word titles to avoid common word false positives
     if (!hasAiValidation && countWords(entry.plainTitle) < MIN_WORD_COUNT_WITHOUT_AI) return;
 
-    // Build word-boundary regex for the plain title
-    const pattern = new RegExp(
-      `\\b${escapeRegex(entry.plainTitle)}\\b`,
-      "gi",
-    );
+    // Try matching full plainTitle first, then fall back to mainTitle
+    const titlePatterns = [
+      entry.plainTitle,
+      ...(entry.mainTitle ? [entry.mainTitle] : []),
+    ];
 
-    const matches = masked.matchAll(pattern);
-    Array.from(matches).forEach((match) => {
-      const position = match.index ?? 0;
-      const end = position + match[0].length;
+    for (const titleText of titlePatterns) {
+      const pattern = new RegExp(
+        `\\b${escapeRegex(titleText)}\\b`,
+        "gi",
+      );
 
-      // Skip if this position overlaps with an existing match
-      if (isOverlapping(position, end)) return;
+      const matches = masked.matchAll(pattern);
+      let found = false;
+      Array.from(matches).forEach((match) => {
+        if (found) return;
+        const position = match.index ?? 0;
+        const end = position + match[0].length;
 
-      // Only take the first match per entry per file (conservative)
-      if (candidates.some((c) => c.entry.relativePath === entry.relativePath)) return;
+        // Skip if this position overlaps with an existing match
+        if (isOverlapping(position, end)) return;
 
-      matchedRanges.push({ start: position, end });
+        // Only take the first match per entry per file (conservative)
+        if (candidates.some((c) => c.entry.relativePath === entry.relativePath)) return;
 
-      candidates.push({
-        entry,
-        matchedText: content.substring(position, end),
-        position,
-        context: extractContext(content, position, match[0].length),
+        matchedRanges.push({ start: position, end });
+
+        candidates.push({
+          entry,
+          matchedText: content.substring(position, end),
+          position,
+          context: extractContext(content, position, match[0].length),
+        });
+        found = true;
       });
-    });
+      // If we found a match with this pattern, don't try the next pattern
+      if (found || candidates.some((c) => c.entry.relativePath === entry.relativePath)) break;
+    }
   });
 
   // Sort by position ascending for safe end-to-start replacement
@@ -639,7 +670,10 @@ export const buildIdentificationPrompt = (
   fileRelativePath: string,
 ): { readonly system: string; readonly user: string } => {
   const bookList = bookEntries
-    .map((e) => `- "${e.plainTitle}" (${e.relativePath})`)
+    .map((e) => {
+      const mainNote = e.mainTitle ? ` (also known as "${e.mainTitle}")` : "";
+      return `- "${e.plainTitle}"${mainNote} (${e.relativePath})`;
+    })
     .join("\n");
 
   return {

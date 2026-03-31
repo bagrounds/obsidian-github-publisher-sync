@@ -9,6 +9,8 @@ module Automation.DailyReflection
   , findPreviousReflectionDate
   , ensureDailyReflection
   , updateDailyReflection
+  , findFirstSectionIndex
+  , embedSectionHeaders
   ) where
 
 import Data.List (sort)
@@ -25,10 +27,14 @@ import Automation.Types
   ( blueskySectionHeader
   , mastodonSectionHeader
   , tweetSectionHeader
+  , updatesSectionHeader
   )
 
 embedSectionHeaders :: [Text]
 embedSectionHeaders = [tweetSectionHeader, blueskySectionHeader, mastodonSectionHeader]
+
+trailingSectionHeaders :: [Text]
+trailingSectionHeaders = updatesSectionHeader : embedSectionHeaders
 
 data EnsureReflectionResult = EnsureReflectionResult
   { errCreated          :: Bool
@@ -73,13 +79,18 @@ buildPostLink seriesId filenameNoExt displayTitle =
 addForwardLink :: Text -> Text -> Text
 addForwardLink content targetDate =
   let forwardLink = "[[reflections/" <> targetDate <> "|⏭️]]"
+      navMarker = "[[reflections/index|Reflections]]"
   in case T.isInfixOf "⏭️" content of
     True  -> content
-    False -> T.replace "⏮️]]" ("⏮️]] " <> forwardLink) content
+    False -> case T.isInfixOf "⏮️]]" content of
+      True  -> T.replace "⏮️]]" ("⏮️]] " <> forwardLink) content
+      False -> case T.isInfixOf navMarker content of
+        True  -> T.replace navMarker (navMarker <> " | " <> forwardLink) content
+        False -> content
 
-findFirstEmbedSectionIndex :: Text -> Maybe Int
-findFirstEmbedSectionIndex content =
-  case filter (\h -> T.isInfixOf h content) embedSectionHeaders of
+findFirstSectionIndex :: [Text] -> Text -> Maybe Int
+findFirstSectionIndex headers content =
+  case filter (\h -> T.isInfixOf h content) headers of
     [] -> Nothing
     found ->
       let positions = fmap (\h -> T.length $ fst $ T.breakOn h content) found
@@ -96,7 +107,7 @@ appendLinkToExistingSection content sectionHeading postLink =
 insertNewSection :: Text -> Text -> Text -> Text
 insertNewSection content sectionHeading postLink =
   let sectionBlock = sectionHeading <> "\n" <> postLink
-  in case findFirstEmbedSectionIndex content of
+  in case findFirstSectionIndex trailingSectionHeaders content of
     Just idx ->
       let (before, after) = T.splitAt idx content
       in T.stripEnd before <> "\n\n" <> sectionBlock <> "\n\n" <> after
@@ -126,7 +137,7 @@ insertPostLink content series filenameNoExt displayTitle replacingFilenameNoExt 
 
 isDateFile :: Text -> Text -> Bool
 isDateFile today f =
-  T.length f >= 14
+  T.length f >= 13
     && T.isSuffixOf ".md" f
     && T.index f 4 == '-'
     && T.index f 7 == '-'

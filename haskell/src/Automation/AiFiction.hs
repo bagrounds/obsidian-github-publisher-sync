@@ -19,6 +19,7 @@ import Automation.Types
   ( blueskySectionHeader
   , mastodonSectionHeader
   , tweetSectionHeader
+  , updatesSectionHeader
   )
 
 fictionSectionHeader :: Text
@@ -26,9 +27,6 @@ fictionSectionHeader = "## 🤖🐲 AI Fiction"
 
 defaultFictionModel :: Text
 defaultFictionModel = "gemini-2.5-flash"
-
-updatesSectionHeader :: Text
-updatesSectionHeader = "## 🔄 Updates"
 
 embedHeaders :: [Text]
 embedHeaders = [tweetSectionHeader, blueskySectionHeader, mastodonSectionHeader]

@@ -153,3 +153,9 @@ export const INLINE_SELECTORS_TO_REMOVE = [
 /** Block-level selectors for text content elements. */
 export const BLOCK_SELECTORS =
   "p, li, h1, h2, h3, h4, h5, h6, td, th, dd, dt, figcaption, summary"
+
+/**
+ * Social media section headings that should be excluded from TTS reading.
+ * These match the H2 headings used for embedded social media posts.
+ */
+export const SOCIAL_SECTION_HEADINGS = ["Tweet", "Bluesky", "Mastodon"]

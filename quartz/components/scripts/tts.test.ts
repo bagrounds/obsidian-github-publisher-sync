@@ -15,6 +15,7 @@ import {
   SELECTORS_TO_REMOVE,
   INLINE_SELECTORS_TO_REMOVE,
   BLOCK_SELECTORS,
+  SOCIAL_SECTION_HEADINGS,
 } from "./tts.utils"
 
 // ---------------------------------------------------------------------------
@@ -46,6 +47,13 @@ describe("TTS constants", () => {
   test("BLOCK_SELECTORS is a non-empty string", () => {
     assert.strictEqual(typeof BLOCK_SELECTORS, "string")
     assert.ok(BLOCK_SELECTORS.length > 0)
+  })
+
+  test("SOCIAL_SECTION_HEADINGS contains expected platforms", () => {
+    assert.ok(Array.isArray(SOCIAL_SECTION_HEADINGS))
+    assert.ok(SOCIAL_SECTION_HEADINGS.includes("Tweet"))
+    assert.ok(SOCIAL_SECTION_HEADINGS.includes("Bluesky"))
+    assert.ok(SOCIAL_SECTION_HEADINGS.includes("Mastodon"))
   })
 })
 

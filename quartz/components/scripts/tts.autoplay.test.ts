@@ -346,6 +346,33 @@ describe("resolveNextUrl", () => {
     const result = resolveNextUrl(navLinks, [], new Set())
     assert.strictEqual(result, "/series/only-back")
   })
+
+  test("skips next nav link when it is an index page", () => {
+    const navLinks: NavLinks = { next: "/series/index", back: null }
+    const articleLinks = ["/series/real-post"]
+    const result = resolveNextUrl(navLinks, articleLinks, new Set())
+    assert.strictEqual(result, "/series/real-post")
+  })
+
+  test("skips back nav link when it is an index page", () => {
+    const navLinks: NavLinks = { next: null, back: "/series/index" }
+    const articleLinks = ["/series/real-post"]
+    const result = resolveNextUrl(navLinks, articleLinks, new Set())
+    assert.strictEqual(result, "/series/real-post")
+  })
+
+  test("returns null when both nav links are index pages and no article links", () => {
+    const navLinks: NavLinks = { next: "/a/index", back: "/b/index" }
+    const result = resolveNextUrl(navLinks, [], new Set())
+    assert.strictEqual(result, null)
+  })
+
+  test("falls through index nav links to article links", () => {
+    const navLinks: NavLinks = { next: "/series/index", back: "/other/index" }
+    const articleLinks = ["/articles/good-post"]
+    const result = resolveNextUrl(navLinks, articleLinks, new Set())
+    assert.strictEqual(result, "/articles/good-post")
+  })
 })
 
 // ---------------------------------------------------------------------------
@@ -488,6 +515,18 @@ describe("Property-based: resolveNextUrl", () => {
         const slug = urlToSlug(result)
         assert.ok(!isIndexOrHome(slug), `Returned index/home page: "${result}"`)
       }
+    }
+  })
+
+  test("never returns an index page from nav links", () => {
+    for (let i = 0; i < PROPERTY_ITERATIONS; i++) {
+      const prefix = randomSlug()
+      const navLinks: NavLinks = {
+        next: "/" + prefix + "/index",
+        back: "/" + randomSlug() + "/index",
+      }
+      const result = resolveNextUrl(navLinks, [], new Set())
+      assert.strictEqual(result, null, `Returned index page from nav: "${result}"`)
     }
   })
 

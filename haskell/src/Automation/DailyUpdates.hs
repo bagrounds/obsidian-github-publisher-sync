@@ -16,11 +16,9 @@ import qualified Data.Text.IO as TIO
 import System.Directory (doesFileExist)
 import System.FilePath ((</>), takeBaseName)
 
-import Automation.DailyReflection (ensureDailyReflection, EnsureReflectionResult (..))
+import Automation.DailyReflection (ensureDailyReflection, EnsureReflectionResult (..), findFirstSectionIndex, embedSectionHeaders)
 import Automation.Frontmatter (parseFrontmatter)
-
-updatesSectionHeader :: Text
-updatesSectionHeader = "## 🔄 Updates"
+import Automation.Types (updatesSectionHeader)
 
 data UpdateCategory
   = ImageUpdate
@@ -66,10 +64,15 @@ addUpdateLinks content category links =
 
 appendNewCategorizedSection :: Text -> Text -> [Text] -> Text
 appendNewCategorizedSection content subHeader linkLines =
-  T.stripEnd content
-    <> "\n\n" <> updatesSectionHeader
-    <> "\n\n" <> subHeader
-    <> "\n\n" <> T.intercalate "\n" linkLines <> "\n"
+  let sectionBlock = updatesSectionHeader
+        <> "\n\n" <> subHeader
+        <> "\n\n" <> T.intercalate "\n" linkLines <> "\n"
+  in case findFirstSectionIndex embedSectionHeaders content of
+    Just idx ->
+      let (before, after) = T.splitAt idx content
+      in T.stripEnd before <> "\n\n" <> sectionBlock <> "\n" <> after
+    Nothing ->
+      T.stripEnd content <> "\n\n" <> sectionBlock
 
 insertLinksIntoSubSection :: Text -> Text -> [Text] -> Text
 insertLinksIntoSubSection content subHeader linkLines =

@@ -107,10 +107,12 @@ addForwardLinkTests = testGroup "addForwardLink"
       let content = "[[reflections/2026-03-31|⏮️]] [[reflections/2026-04-02|⏭️]]\n# Post"
           result = addForwardLink content "2026-04-03"
       in result @?= content
-  , testCase "returns content unchanged when no back link present" $
+  , testCase "adds forward link when no back link present" $
       let content = "[[index|Home]] > [[reflections/index|Reflections]]\n# Post"
           result = addForwardLink content "2026-04-02"
-      in result @?= content
+      in do
+        assertBool "contains forward arrow" (T.isInfixOf "⏭️" result)
+        assertBool "links to target date" (T.isInfixOf "reflections/2026-04-02" result)
   ]
 
 --------------------------------------------------------------------------------
@@ -152,6 +154,23 @@ insertPostLinkTests = testGroup "insertPostLink"
           let sIdx = T.length $ fst $ T.breakOn (buildSeriesSectionHeading sampleSeries) result
               tIdx = T.length $ fst $ T.breakOn "## 🐦 Tweet" result
           in sIdx < tIdx
+  , testCase "inserts new section before updates section" $
+      let content = "# 2026-04-01\n\nBody\n\n## 🔄 Updates\n\n### 🖼️ Images\n\n- [[img|Img]]"
+          result = insertPostLink content sampleSeries "post" "Post" Nothing
+      in do
+        assertBool "section before updates" $
+          let sIdx = T.length $ fst $ T.breakOn (buildSeriesSectionHeading sampleSeries) result
+              uIdx = T.length $ fst $ T.breakOn "## 🔄 Updates" result
+          in sIdx < uIdx
+  , testCase "inserts new section before both updates and embed sections" $
+      let content = "# 2026-04-01\n\nBody\n\n## 🔄 Updates\n\n### 🖼️ Images\n\n- [[img|Img]]\n\n## 🐦 Tweet\n\nTweet embed"
+          result = insertPostLink content sampleSeries "post" "Post" Nothing
+      in do
+        let sIdx = T.length $ fst $ T.breakOn (buildSeriesSectionHeading sampleSeries) result
+            uIdx = T.length $ fst $ T.breakOn "## 🔄 Updates" result
+            tIdx = T.length $ fst $ T.breakOn "## 🐦 Tweet" result
+        assertBool "section before updates" (sIdx < uIdx)
+        assertBool "updates before tweet" (uIdx < tIdx)
   , testCase "appends section at end when no embed sections" $
       let content = "# 2026-04-01\n\nBody text"
           result = insertPostLink content sampleSeries "post" "Post" Nothing
@@ -173,6 +192,13 @@ propertyTests = testGroup "properties"
       \(QC.ASCIIString dateStr) ->
         let date = T.pack dateStr
             content = "nav | [[reflections/prev|⏮️]]\n# Post"
+            once = addForwardLink content date
+            twice = addForwardLink once date
+        in once == twice
+  , testProperty "addForwardLink is idempotent without back link" $
+      \(QC.ASCIIString dateStr) ->
+        let date = T.pack dateStr
+            content = "[[index|Home]] > [[reflections/index|Reflections]]\n# Post"
             once = addForwardLink content date
             twice = addForwardLink once date
         in once == twice

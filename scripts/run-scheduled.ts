@@ -323,7 +323,7 @@ const runInternalLinking = async (): Promise<void> => {
   const model = process.env.LINKING_MODEL ?? DEFAULT_LINKING_MODEL;
   const result = await runLinking({
     contentDir: vaultDir,
-    maxInferenceRequests: 1,
+    maxInferenceRequests: 10,
     apiKey: process.env.GEMINI_API_KEY,
     model,
     dryRun: false,

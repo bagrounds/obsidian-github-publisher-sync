@@ -86,3 +86,32 @@ jobs:
           artifact_name: github-pages
           reporting_interval: 300
           error_count: 180
+
+  audit:
+    needs: deploy
+    if: github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Cache Node Modules
+        id: cache
+        uses: actions/cache@v4
+        with:
+          path: node_modules
+          key: v3-${{ runner.os }}-node22-${{ hashFiles('**/package-lock.json') }}
+          restore-keys: v3-${{ runner.os }}-node22-
+
+      - name: Install Dependencies
+        if: ${{ steps.cache.outputs.cache-hit != 'true' }}
+        run: npm ci
+
+      - name: Wait for deployment propagation
+        run: sleep 30
+
+      - name: Run broken link audit
+        run: npx tsx scripts/broken-link-audit.ts --sample-size 30

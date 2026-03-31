@@ -21,6 +21,7 @@ import {
   formatWikilink,
   extractContext,
   countWords,
+  extractMainTitle,
   parseFrontmatter,
   buildContentIndex,
   extractLinkedPaths,
@@ -904,6 +905,149 @@ describe("countWords", () => {
 
   it("handles compound software names", () => {
     assert.equal(countWords("Babylon.js"), 1);
+  });
+});
+
+// --- extractMainTitle ---
+
+describe("extractMainTitle", () => {
+  it("extracts main title before colon-space separator", () => {
+    assert.equal(
+      extractMainTitle("Domain-Driven Design: Tackling Complexity in the Heart of Software"),
+      "Domain-Driven Design",
+    );
+  });
+
+  it("returns null when no subtitle separator exists", () => {
+    assert.equal(extractMainTitle("Thinking, Fast and Slow"), null);
+  });
+
+  it("returns null when main title is too short", () => {
+    assert.equal(extractMainTitle("AI 2041: Ten Visions for Our Future"), null);
+  });
+
+  it("returns null when main title has fewer than 2 words", () => {
+    assert.equal(extractMainTitle("Abundance: The Inner Path to Wealth"), null);
+  });
+
+  it("extracts from first colon-space only", () => {
+    assert.equal(
+      extractMainTitle("A Pattern Language: Towns, Buildings, Construction"),
+      "A Pattern Language",
+    );
+  });
+
+  it("handles titles with only colon and no space after", () => {
+    assert.equal(extractMainTitle("Title:NoSpace"), null);
+  });
+
+  it("handles multiple colon separators by taking first", () => {
+    assert.equal(
+      extractMainTitle("Book Title Here: Subtitle Part One: More Details"),
+      "Book Title Here",
+    );
+  });
+
+  it("returns valid main title that meets minimum length", () => {
+    const result = extractMainTitle("Against the Grain: A Deep History of the Earliest States");
+    assert.equal(result, "Against the Grain");
+  });
+});
+
+// --- findLinkCandidates subtitle matching ---
+
+describe("findLinkCandidates subtitle matching", () => {
+  it("matches main title when full title with subtitle is not in content", () => {
+    const content = "I loved reading Domain-Driven Design and it changed my perspective";
+    const masked = maskProtectedRegions(content);
+    const candidates = findLinkCandidates(
+      content, masked, [LONG_BOOK_ENTRY], new Set(), "reflections/test.md",
+    );
+
+    assert.equal(candidates.length, 1);
+    assert.equal(candidates[0]?.matchedText, "Domain-Driven Design");
+    assert.equal(candidates[0]?.entry.relativePath, "books/domain-driven-design.md");
+  });
+
+  it("prefers full title match over main title match", () => {
+    const content = "The book Domain-Driven Design: Tackling Complexity in the Heart of Software is excellent";
+    const masked = maskProtectedRegions(content);
+    const candidates = findLinkCandidates(
+      content, masked, [LONG_BOOK_ENTRY], new Set(), "reflections/test.md",
+    );
+
+    assert.equal(candidates.length, 1);
+    assert.equal(
+      candidates[0]?.matchedText,
+      "Domain-Driven Design: Tackling Complexity in the Heart of Software",
+    );
+  });
+
+  it("does not match subtitle prefix for entries without subtitles", () => {
+    const content = "I read Thinking yesterday";
+    const masked = maskProtectedRegions(content);
+    const candidates = findLinkCandidates(
+      content, masked, [BOOK_ENTRY], new Set(), "reflections/test.md",
+    );
+
+    assert.equal(candidates.length, 0);
+  });
+
+  it("matches main title in a book recommendation list", () => {
+    const entry: ContentEntry = {
+      relativePath: "books/a-pattern-language.md",
+      title: "🏘️🧱🏗️ A Pattern Language: Towns, Buildings, Construction",
+      plainTitle: "A Pattern Language: Towns, Buildings, Construction",
+    };
+    const content = "Recommended books:\n- A Pattern Language by Christopher Alexander";
+    const masked = maskProtectedRegions(content);
+    const candidates = findLinkCandidates(
+      content, masked, [entry], new Set(), "reflections/test.md",
+    );
+
+    assert.equal(candidates.length, 1);
+    assert.equal(candidates[0]?.matchedText, "A Pattern Language");
+  });
+
+  it("still respects protected regions for main title matches", () => {
+    const content = "## Domain-Driven Design\nBody text without any book references";
+    const masked = maskProtectedRegions(content);
+    const candidates = findLinkCandidates(
+      content, masked, [LONG_BOOK_ENTRY], new Set(), "reflections/test.md",
+    );
+
+    assert.equal(candidates.length, 0);
+  });
+
+  it("uses the full book title in the wikilink even when matched via partial title", () => {
+    const content = "I loved reading Domain-Driven Design and it changed my perspective";
+    const masked = maskProtectedRegions(content);
+    const candidates = findLinkCandidates(
+      content, masked, [LONG_BOOK_ENTRY], new Set(), "reflections/test.md",
+    );
+
+    assert.equal(candidates.length, 1);
+    assert.equal(candidates[0]?.matchedText, "Domain-Driven Design");
+
+    const result = applyReplacements(content, candidates, [true]);
+    assert.ok(
+      result.includes("[[books/domain-driven-design|🧩🧱⚙️❤️ Domain-Driven Design: Tackling Complexity in the Heart of Software]]"),
+      "wikilink should use full title from book page, not the partial match",
+    );
+  });
+});
+
+// --- buildIdentificationPrompt with subtitle matching ---
+
+describe("buildIdentificationPrompt subtitle handling", () => {
+  it("includes also-known-as for entries with subtitles", () => {
+    const prompt = buildIdentificationPrompt("body text", [LONG_BOOK_ENTRY], "test.md");
+    assert.ok(prompt.user.includes('also known as "Domain-Driven Design"'));
+  });
+
+  it("does not include also-known-as for entries without subtitles", () => {
+    const prompt = buildIdentificationPrompt("body text", [BOOK_ENTRY], "test.md");
+    assert.ok(!prompt.user.includes("also known as"));
   });
 });
 

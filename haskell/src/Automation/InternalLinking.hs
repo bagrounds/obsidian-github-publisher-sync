@@ -11,6 +11,7 @@ module Automation.InternalLinking
   , escapeRegex
   , formatWikilink
   , extractContext
+  , extractMainTitle
   , buildContentIndex
   , extractLinkedPaths
   , findMostRecentReflection
@@ -106,9 +107,10 @@ data LinkCandidate = LinkCandidate
   } deriving (Show, Eq)
 
 data FileResult = FileResult
-  { frRelativePath :: Text
-  , frModified     :: Bool
-  , frLinksAdded   :: Int
+  { frRelativePath  :: Text
+  , frModified      :: Bool
+  , frLinksAdded    :: Int
+  , frUsedInference :: Bool
   } deriving (Show, Eq)
 
 data LinkingResult = LinkingResult
@@ -191,6 +193,18 @@ alreadyAnalyzed content =
   in case Map.lookup "force_analyze_links" fm of
     Just "true" -> False
     _           -> Map.member "link_analysis_model" fm
+
+extractMainTitle :: Text -> Maybe Text
+extractMainTitle plainTitle =
+  case T.breakOn ": " plainTitle of
+    (main, rest)
+      | T.null rest        -> Nothing
+      | T.length main < minTitleLength -> Nothing
+      | countWordsT main < 2 -> Nothing
+      | otherwise           -> Just main
+  where
+    countWordsT :: Text -> Int
+    countWordsT t = length $ filter (not . T.null) $ T.split (\c -> c == ' ' || c == '-') t
 
 -- --------------------------------------------------------------------------
 -- Masking protected regions
@@ -556,20 +570,26 @@ findLinkCandidates index content masked selfPath =
       | contentAlreadyLinksTo content entry = (ranges, cands)
       | any (\c -> ceRelativePath (lcEntry c) == ceRelativePath entry) cands = (ranges, cands)
       | otherwise =
-          let pat     = "\\b" <> T.unpack (escapeRegex (cePlainTitle entry)) <> "\\b"
-              matches = findAllMatches pat (T.unpack masked)
-          in case filter (\(p, len) -> not (overlaps ranges p (p + len))) matches of
-            []             -> (ranges, cands)
-            ((pos, len):_) ->
-              let matchedText = T.take len (T.drop pos content)
-                  ctx         = extractContext content pos len
-                  candidate   = LinkCandidate
-                    { lcEntry       = entry
-                    , lcMatchedText = matchedText
-                    , lcPosition    = pos
-                    , lcContext     = ctx
-                    }
-              in ((pos, pos + len) : ranges, cands <> [candidate])
+          let titleTexts = cePlainTitle entry : maybe [] (: []) (extractMainTitle (cePlainTitle entry))
+          in tryPatterns ranges cands entry titleTexts
+
+    tryPatterns :: [(Int, Int)] -> [LinkCandidate] -> ContentEntry -> [Text] -> ([(Int, Int)], [LinkCandidate])
+    tryPatterns ranges cands _ [] = (ranges, cands)
+    tryPatterns ranges cands entry (titleText : rest) =
+      let pat     = "\\b" <> T.unpack (escapeRegex titleText) <> "\\b"
+          matches = findAllMatches pat (T.unpack masked)
+      in case filter (\(p, len) -> not (overlaps ranges p (p + len))) matches of
+        []             -> tryPatterns ranges cands entry rest
+        ((pos, len):_) ->
+          let matchedText = T.take len (T.drop pos content)
+              ctx         = extractContext content pos len
+              candidate   = LinkCandidate
+                { lcEntry       = entry
+                , lcMatchedText = matchedText
+                , lcPosition    = pos
+                , lcContext     = ctx
+                }
+          in ((pos, pos + len) : ranges, cands <> [candidate])
 
     overlaps :: [(Int, Int)] -> Int -> Int -> Bool
     overlaps ranges start end =
@@ -594,8 +614,12 @@ findAllMatches pat str = go 0 str
 
 buildIdentificationPrompt :: Text -> [ContentEntry] -> Text
 buildIdentificationPrompt fileBody bookEntries =
-  let bookList = T.intercalate "\n"
-        $ fmap (\e -> "- \"" <> cePlainTitle e <> "\" (" <> ceRelativePath e <> ")") bookEntries
+  let formatBookLine e =
+        let mainNote = case extractMainTitle (cePlainTitle e) of
+              Just mt -> " (also known as \"" <> mt <> "\")"
+              Nothing -> ""
+        in "- \"" <> cePlainTitle e <> "\"" <> mainNote <> " (" <> ceRelativePath e <> ")"
+      bookList = T.intercalate "\n" $ fmap formatBookLine bookEntries
       systemPrompt = T.intercalate "\n"
         [ "You are a precise editorial assistant for a knowledge base of book reports. Your job is to identify genuine book references in a document."
         , ""
@@ -783,9 +807,10 @@ processFile manager apiKey model filePath index = do
   content <- TIO.readFile filePath
   case alreadyAnalyzed content of
     True -> pure FileResult
-      { frRelativePath = T.pack relativePath
-      , frModified     = False
-      , frLinksAdded   = 0
+      { frRelativePath  = T.pack relativePath
+      , frModified      = False
+      , frLinksAdded    = 0
+      , frUsedInference = False
       }
     False -> do
       let body = extractBody content
@@ -798,9 +823,10 @@ processFile manager apiKey model filePath index = do
           timestamp <- nowIso
           recordLinkAnalysis filePath model timestamp
           pure FileResult
-            { frRelativePath = T.pack relativePath
-            , frModified     = False
-            , frLinksAdded   = 0
+            { frRelativePath  = T.pack relativePath
+            , frModified      = False
+            , frLinksAdded    = 0
+            , frUsedInference = False
             }
         _ -> do
           geminiResult <- identifyBooksWithGemini manager apiKey model body eligibleBooks
@@ -808,15 +834,17 @@ processFile manager apiKey model filePath index = do
           recordLinkAnalysis filePath model timestamp
           case geminiResult of
             Left _err -> pure FileResult
-              { frRelativePath = T.pack relativePath
-              , frModified     = False
-              , frLinksAdded   = 0
+              { frRelativePath  = T.pack relativePath
+              , frModified      = False
+              , frLinksAdded    = 0
+              , frUsedInference = True
               }
             Right identifiedPaths
               | null identifiedPaths -> pure FileResult
-                  { frRelativePath = T.pack relativePath
-                  , frModified     = False
-                  , frLinksAdded   = 0
+                  { frRelativePath  = T.pack relativePath
+                  , frModified      = False
+                  , frLinksAdded    = 0
+                  , frUsedInference = True
                   }
               | otherwise -> do
                   let identifiedSet = Set.fromList identifiedPaths
@@ -826,9 +854,10 @@ processFile manager apiKey model filePath index = do
                       candidates      = findLinkCandidates identifiedIndex contentAfterFm masked (T.pack relativePath)
                   case candidates of
                     [] -> pure FileResult
-                      { frRelativePath = T.pack relativePath
-                      , frModified     = False
-                      , frLinksAdded   = 0
+                      { frRelativePath  = T.pack relativePath
+                      , frModified      = False
+                      , frLinksAdded    = 0
+                      , frUsedInference = True
                       }
                     _  -> do
                       let validations = replicate (length candidates) True
@@ -837,9 +866,10 @@ processFile manager apiKey model filePath index = do
                       putStrLn $ "  ✏️  " <> relativePath <> ": "
                         <> show (length candidates) <> " link(s) applied"
                       pure FileResult
-                        { frRelativePath = T.pack relativePath
-                        , frModified     = True
-                        , frLinksAdded   = length candidates
+                        { frRelativePath  = T.pack relativePath
+                        , frModified      = True
+                        , frLinksAdded    = length candidates
+                        , frUsedInference = True
                         }
 
 makeRelPathFromContentDir :: FilePath -> FilePath -> FilePath
@@ -894,7 +924,7 @@ processFiles manager apiKey model contentDir index filesToVisit = do
   reverse <$> readIORef resultRef
   where
     maxInferencePerRun :: Int
-    maxInferencePerRun = 1
+    maxInferencePerRun = 10
 
     go :: IORef Int -> IORef [FileResult] -> [Text] -> IO ()
     go _ _ [] = pure ()
@@ -902,10 +932,9 @@ processFiles manager apiKey model contentDir index filesToVisit = do
       let filePath = contentDir </> T.unpack relPath
       fileResult <- processFile manager apiKey model filePath index
       modifyIORef' resRef (fileResult :)
-      infCount <- readIORef infRef
-      let calledGemini = not (isSkipped fileResult)
-      case calledGemini of
+      case frUsedInference fileResult of
         True -> do
+          infCount <- readIORef infRef
           modifyIORef' infRef (+ 1)
           let newCount = infCount + 1
           case newCount >= maxInferencePerRun of
@@ -914,9 +943,6 @@ processFiles manager apiKey model contentDir index filesToVisit = do
               pure ()
             False -> go infRef resRef rest
         False -> go infRef resRef rest
-
-    isSkipped :: FileResult -> Bool
-    isSkipped fr = not (frModified fr) && frLinksAdded fr == 0
 
 lookupApiKey :: IO Text
 lookupApiKey = do

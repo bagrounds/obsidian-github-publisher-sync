@@ -14,9 +14,11 @@ tests = testGroup "InternalLinking"
   , escapeRegexTests
   , formatWikilinkTests
   , extractContextTests
+  , extractMainTitleTests
   , maskProtectedRegionsTests
   , contentAlreadyLinksToTests
   , findLinkCandidatesTests
+  , subtitleMatchingTests
   , extractBodyTests
   , alreadyAnalyzedTests
   , extractLinkedPathsTests
@@ -106,6 +108,31 @@ extractContextTests = testGroup "extractContext"
       let content = T.replicate 300 "x"
           ctx = extractContext content 150 5
       in assertBool "has leading ellipsis" (T.isPrefixOf "..." ctx)
+  ]
+
+-- --------------------------------------------------------------------------
+-- extractMainTitle
+-- --------------------------------------------------------------------------
+
+extractMainTitleTests :: TestTree
+extractMainTitleTests = testGroup "extractMainTitle"
+  [ testCase "extracts main title before colon-space" $
+      assertEqual "" (Just "Domain-Driven Design")
+        (extractMainTitle "Domain-Driven Design: Tackling Complexity in the Heart of Software")
+  , testCase "returns Nothing when no subtitle separator" $
+      assertEqual "" Nothing (extractMainTitle "Thinking, Fast and Slow")
+  , testCase "returns Nothing when main title too short" $
+      assertEqual "" Nothing (extractMainTitle "AI 2041: Ten Visions for Our Future")
+  , testCase "returns Nothing when main title has fewer than 2 words" $
+      assertEqual "" Nothing (extractMainTitle "Abundance: The Inner Path to Wealth")
+  , testCase "extracts from first colon-space only" $
+      assertEqual "" (Just "A Pattern Language")
+        (extractMainTitle "A Pattern Language: Towns, Buildings, Construction")
+  , testCase "returns Nothing for colon without space" $
+      assertEqual "" Nothing (extractMainTitle "Title:NoSpace")
+  , testCase "returns valid main title meeting minimum length" $
+      assertEqual "" (Just "Against the Grain")
+        (extractMainTitle "Against the Grain: A Deep History of the Earliest States")
   ]
 
 -- --------------------------------------------------------------------------
@@ -206,6 +233,71 @@ findLinkCandidatesTests = testGroup "findLinkCandidates"
           masked  = content
           candidates = findLinkCandidates [sampleEntry] content masked "reflections/test.md"
       in assertEqual "no candidates" 0 (length candidates)
+  ]
+
+-- --------------------------------------------------------------------------
+-- Subtitle matching
+-- --------------------------------------------------------------------------
+
+dddEntry :: ContentEntry
+dddEntry = ContentEntry
+  "books/domain-driven-design.md"
+  "🧩 Domain-Driven Design: Tackling Complexity in the Heart of Software"
+  "Domain-Driven Design: Tackling Complexity in the Heart of Software"
+
+subtitleMatchingTests :: TestTree
+subtitleMatchingTests = testGroup "subtitle matching"
+  [ testCase "matches main title when full title not in content" $
+      let content = "I loved reading Domain-Driven Design and it changed my perspective"
+          masked  = content
+          candidates = findLinkCandidates [dddEntry] content masked "reflections/test.md"
+      in do
+          assertEqual "one candidate" 1 (length candidates)
+          case candidates of
+            (c:_) -> do
+              assertEqual "matched main title" "Domain-Driven Design" (lcMatchedText c)
+              assertEqual "correct entry" "books/domain-driven-design.md" (ceRelativePath (lcEntry c))
+            [] -> assertBool "should have candidates" False
+  , testCase "prefers full title over main title" $
+      let content = "The book Domain-Driven Design: Tackling Complexity in the Heart of Software is excellent"
+          masked  = content
+          candidates = findLinkCandidates [dddEntry] content masked "reflections/test.md"
+      in do
+          assertEqual "one candidate" 1 (length candidates)
+          case candidates of
+            (c:_) -> assertBool "matched full title"
+              (T.isInfixOf "Tackling Complexity" (lcMatchedText c))
+            [] -> assertBool "should have candidates" False
+  , testCase "does not match subtitle prefix for entries without subtitles" $
+      let content = "I read Thinking yesterday"
+          masked  = content
+          candidates = findLinkCandidates [sampleEntry] content masked "reflections/test.md"
+      in assertEqual "no candidates" 0 (length candidates)
+  , testCase "matches main title in book recommendation list" $
+      let entry = ContentEntry
+            "books/a-pattern-language.md"
+            "🏘️ A Pattern Language: Towns, Buildings, Construction"
+            "A Pattern Language: Towns, Buildings, Construction"
+          content = "Recommended books:\n- A Pattern Language by Christopher Alexander"
+          masked  = content
+          candidates = findLinkCandidates [entry] content masked "reflections/test.md"
+      in do
+          assertEqual "one candidate" 1 (length candidates)
+          case candidates of
+            (c:_) -> assertEqual "matched" "A Pattern Language" (lcMatchedText c)
+            [] -> assertBool "should have candidates" False
+  , testCase "respects protected regions for main title matches" $
+      let content = "## Domain-Driven Design\nBody text without any book references"
+          masked  = maskProtectedRegions content
+          candidates = findLinkCandidates [dddEntry] content masked "reflections/test.md"
+      in assertEqual "no candidates" 0 (length candidates)
+  , testCase "uses full title in wikilink even when matched via partial" $
+      let content = "I loved reading Domain-Driven Design and it changed my perspective"
+          masked  = content
+          candidates = findLinkCandidates [dddEntry] content masked "reflections/test.md"
+          result = applyReplacements content candidates (replicate (length candidates) True)
+      in assertBool "wikilink uses full title"
+           (T.isInfixOf "Domain-Driven Design: Tackling Complexity" result)
   ]
 
 -- --------------------------------------------------------------------------
@@ -343,6 +435,12 @@ buildIdentificationPromptTests = testGroup "buildIdentificationPrompt"
   , testCase "handles empty entries" $
       let prompt = buildIdentificationPrompt "body" []
       in assertBool "still has system prompt" (T.isInfixOf "editorial assistant" prompt)
+  , testCase "includes also-known-as for entries with subtitles" $
+      let prompt = buildIdentificationPrompt "body text" [dddEntry]
+      in assertBool "has also known as" (T.isInfixOf "also known as \"Domain-Driven Design\"" prompt)
+  , testCase "does not include also-known-as for entries without subtitles" $
+      let prompt = buildIdentificationPrompt "body text" [sampleEntry]
+      in assertBool "no also known as" (not (T.isInfixOf "also known as" prompt))
   ]
 
 -- --------------------------------------------------------------------------

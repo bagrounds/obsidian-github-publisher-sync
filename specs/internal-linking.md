@@ -4,8 +4,9 @@
 
 📋 Automatically inserts wikilinks into content files by identifying genuine book references with Gemini AI.
 🧭 Uses BFS traversal starting from the most recent reflection to prioritize recently active files.
-⏱️ Processes one file per run to stay within API quota limits.
+⏱️ Processes up to 10 files per run to maximize linking coverage within API quota limits.
 🛡️ Tracks analysis state in frontmatter to skip already-processed files across sessions.
+📖 Supports subtitle-aware matching: books referenced by main title (without subtitle) are correctly detected and linked.
 
 ## 🏗️ Architecture
 
@@ -13,8 +14,10 @@
 
 | 🧩 Component | 📂 Path | 📝 Purpose |
 |---|---|---|
-| 🔗 Library | `scripts/lib/internal-linking.ts` | 🔧 BFS traversal, Gemini identification, wikilink insertion, frontmatter tracking |
-| 🧪 Tests | `scripts/lib/internal-linking.test.ts` | ✅ 50+ tests covering all pure functions and logic |
+| 🔗 Library (TS) | `scripts/lib/internal-linking.ts` | 🔧 BFS traversal, Gemini identification, wikilink insertion, frontmatter tracking |
+| 🔗 Library (HS) | `haskell/src/Automation/InternalLinking.hs` | 🔧 Haskell port with equivalent functionality |
+| 🧪 Tests (TS) | `scripts/lib/internal-linking.test.ts` | ✅ 160+ tests covering all pure functions and logic |
+| 🧪 Tests (HS) | `haskell/test/Automation/InternalLinkingTest.hs` | ✅ Haskell test suite with equivalent coverage |
 | ⏰ Scheduler entry | `scripts/lib/scheduler.ts` | 📅 Internal linking task scheduled in the pipeline |
 
 ### 🔄 Data Flow
@@ -22,21 +25,31 @@
 ```
 🏗️ run(config: LinkingConfig)
          ↓
-📇 buildContentIndex(contentDir) → ContentEntry[] from books/
+📇 buildContentIndex(contentDir) → ContentEntry[] from books/ (with mainTitle for subtitle-bearing titles)
          ↓
 🧭 bfsTraversal(contentDir)
    ├─ 🔍 findMostRecentReflection() → start node
    └─ 🔗 extractLinkedPaths() → follow wikilinks + markdown links
          ↓
-📄 For each file in BFS order (limit: 1 per run):
+📄 For each file in BFS order (limit: 10 per run):
    ├─ 🛡️ alreadyAnalyzed(content) → skip if processed (unless force_analyze_links)
    ├─ 🧹 maskProtectedRegions(content) → hide frontmatter, code, links, headings
    ├─ 🤖 identifyBooksWithGemini(body, entries, path, apiKey, model)
    ├─ 🔍 findLinkCandidates(content, masked, index, existing, path)
+   │     tries full plainTitle first, then mainTitle fallback
    └─ ✏️ applyReplacements(content, candidates, validations)
          ↓
 💾 Write modified file + recordLinkAnalysis() in frontmatter
 ```
+
+## 📖 Subtitle-Aware Book Matching
+
+📋 Many book titles include subtitles separated by a colon-space (e.g., "Domain-Driven Design: Tackling Complexity in the Heart of Software").
+🔍 Content authors often reference books by their main title only (e.g., just "Domain-Driven Design").
+🧠 The `extractMainTitle` function extracts the text before the first `: ` separator, provided it meets minimum length and word count requirements.
+📇 Each `ContentEntry` carries an optional `mainTitle` field computed during index building.
+🔗 `findLinkCandidates` tries matching the full `plainTitle` first, falling back to `mainTitle` when the full title is not found in the text.
+🤖 The Gemini prompt lists books with "also known as" annotations for entries with a main title variant, helping the AI recognize partial references.
 
 ## 🧭 BFS Traversal
 
@@ -60,7 +73,7 @@
 
 ## 📏 Per-Run Limits
 
-⏱️ The `maxInferenceRequests` config controls how many Gemini API calls are made per run, defaulting to one file per execution.
+⏱️ The `maxInferenceRequests` config controls how many Gemini API calls are made per run, defaulting to 10 files per execution.
 🔄 Rate-limit errors trigger exponential backoff starting at 5 seconds, doubling up to 60 seconds, with up to 3 retries.
 📊 Server-provided retry delays from the `Retry-After` header or error details are preferred over computed backoff.
 
@@ -82,6 +95,7 @@
 |---|---|
 | `stripEmojis(text)` | 🧹 Remove emoji characters from text |
 | `countWords(text)` | 📏 Count words splitting on whitespace and hyphens |
+| `extractMainTitle(plainTitle)` | 📖 Extract main title before subtitle separator (`: `) |
 | `escapeRegex(text)` | 🛡️ Escape special regex characters |
 | `formatWikilink(entry)` | 🔗 Format ContentEntry as wikilink |
 | `extractContext(content, position, length, radius)` | 📋 Extract surrounding context for a match position |
@@ -116,14 +130,19 @@
 
 ## 🧪 Testing
 
-🔬 Tests in `scripts/lib/internal-linking.test.ts` with 50+ test cases across 12+ suites covering:
+🔬 Tests in `scripts/lib/internal-linking.test.ts` with 160+ test cases across 36+ suites covering:
 - 🧹 `stripEmojis`: emoji removal, preservation of non-emoji text, edge cases
 - 🛡️ `escapeRegex`: special character escaping
 - 🔗 `formatWikilink`: wikilink formatting from content entries
 - 📋 `extractContext`: context window extraction around match positions
+- 📖 `extractMainTitle`: subtitle extraction, minimum length/word requirements, edge cases
 - 📄 `parseFrontmatter`: key-value parsing, quoted values, missing markers
-- 📇 `buildContentIndex`: directory scanning, title extraction, filtering
+- 📇 `buildContentIndex`: directory scanning, title extraction, mainTitle computation, filtering
 - 🔗 `extractLinkedPaths`: wikilink and markdown link extraction
 - 🔍 `findMostRecentReflection`: date-based file discovery
 - 🧭 `bfsTraversal`: link-following traversal across directories
 - 🛡️ `maskProtectedRegions`: frontmatter, code, link, heading masking
+- 📖 Subtitle matching: mainTitle fallback, full title preference, protected region respect
+- 🤖 `buildIdentificationPrompt`: also-known-as annotations for subtitle entries
+
+🔬 Haskell tests in `haskell/test/Automation/InternalLinkingTest.hs` with equivalent coverage.

@@ -30,6 +30,7 @@ tests = testGroup "SocialPosting"
   , bfsEligibilityTests
   , bfsTraversalTests
   , bfsTests
+  , urlValidationTests
   ]
 
 --------------------------------------------------------------------------------
@@ -330,7 +331,7 @@ bfsEligibilityTests = testGroup "checkBfsEligibility"
         TIO.writeFile (booksDir </> "linked-book.md")
           ("---\ntitle: A Linked Book\nURL: https://example.com/books/linked-book\n---\n" <>
            T.replicate 60 "x")
-        let config = FindContentConfig dir [Twitter, Bluesky] 17
+        let config = FindContentConfig dir [Twitter, Bluesky] 17 Nothing
         result <- bfsContentDiscovery config
         let resultPaths = fmap (cnRelativePath . ctpNote) result
         assertBool "should find linked book, not the ineligible reflection"
@@ -362,7 +363,7 @@ bfsTraversalTests = testGroup "BFS traversal"
         TIO.writeFile (booksDir </> "hidden-gem.md")
           ("---\ntitle: A Hidden Gem\nURL: https://example.com/books/hidden-gem\n---\n" <>
            T.replicate 60 "x")
-        let config = FindContentConfig dir [Twitter] 0
+        let config = FindContentConfig dir [Twitter] 0 Nothing
         result <- bfsContentDiscovery config
         let resultPaths = fmap (cnRelativePath . ctpNote) result
         assertBool "should not post index page"
@@ -390,7 +391,7 @@ bfsTraversalTests = testGroup "BFS traversal"
         TIO.writeFile (booksDir </> "public-book.md")
           ("---\ntitle: Public Book\nURL: https://example.com/books/public-book\n---\n" <>
            T.replicate 60 "x")
-        let config = FindContentConfig dir [Twitter] 0
+        let config = FindContentConfig dir [Twitter] 0 Nothing
         result <- bfsContentDiscovery config
         let resultPaths = fmap (cnRelativePath . ctpNote) result
         assertBool "should not post private topic"
@@ -415,7 +416,7 @@ bfsTraversalTests = testGroup "BFS traversal"
         TIO.writeFile (booksDir </> "real-book.md")
           ("---\ntitle: Real Book\nURL: https://example.com/books/real-book\n---\n" <>
            T.replicate 60 "x")
-        let config = FindContentConfig dir [Twitter] 0
+        let config = FindContentConfig dir [Twitter] 0 Nothing
         result <- bfsContentDiscovery config
         let resultPaths = fmap (cnRelativePath . ctpNote) result
         assertBool "should not post stub"
@@ -460,7 +461,7 @@ bfsTests = testGroup "BFS discovery"
 
   , testCase "bfsContentDiscovery with empty dir returns empty" $ do
       withSystemTempDirectory "social-test" $ \dir -> do
-        let config = FindContentConfig dir [Twitter, Bluesky] 17
+        let config = FindContentConfig dir [Twitter, Bluesky] 17 Nothing
         result <- bfsContentDiscovery config
         assertEqual "" [] result
 
@@ -477,9 +478,127 @@ bfsTests = testGroup "BFS discovery"
         TIO.writeFile (booksDir </> "great-book.md")
           ("---\ntitle: A Great Book\nURL: https://example.com/books/great-book\n---\n" <>
            T.replicate 60 "x")
-        let config = FindContentConfig dir [Twitter, Bluesky, Mastodon] 0
+        let config = FindContentConfig dir [Twitter, Bluesky, Mastodon] 0 Nothing
         result <- bfsContentDiscovery config
         assertBool "should find content to post" (not (null result))
+  ]
+
+--------------------------------------------------------------------------------
+-- URL validation
+--------------------------------------------------------------------------------
+
+urlValidationTests :: TestTree
+urlValidationTests = testGroup "URL validation"
+  [ testCase "urlFromFilePath derives correct URL from relative path" $
+      assertEqual "" "https://bagrounds.org/books/my-book"
+        (urlFromFilePath "books/my-book.md")
+
+  , testCase "urlFromFilePath handles nested paths" $
+      assertEqual "" "https://bagrounds.org/reflections/2025-01-15"
+        (urlFromFilePath "reflections/2025-01-15.md")
+
+  , testCase "urlFromFilePath handles path without .md extension" $
+      assertEqual "" "https://bagrounds.org/books/my-book"
+        (urlFromFilePath "books/my-book")
+
+  , testCase "validateNoteUrl passes through when URL is live" $ do
+      let alwaysLive _ = pure True
+          note = mkNote "books/my-book.md" "My Book" (T.replicate 60 "x")
+      result <- validateNoteUrl alwaysLive note
+      case result of
+        Nothing -> assertBool "should pass when URL is live" False
+        Just n  -> assertEqual "url unchanged" (cnUrl note) (cnUrl n)
+
+  , testCase "validateNoteUrl returns Nothing when URL is dead and matches file path" $ do
+      let alwaysDead _ = pure False
+          note = (mkNote "books/my-book.md" "My Book" (T.replicate 60 "x"))
+            { cnUrl = "https://bagrounds.org/books/my-book" }
+      result <- validateNoteUrl alwaysDead note
+      assertEqual "should return Nothing for dead URL" Nothing result
+
+  , testCase "validateNoteUrl fixes stale frontmatter URL when file-path URL is live" $ do
+      withSystemTempDirectory "url-test" $ \dir -> do
+        let booksDir = dir </> "books"
+        createDirectoryIfMissing True booksDir
+        TIO.writeFile (booksDir </> "renamed-book.md")
+          "---\ntitle: My Book\nURL: \"https://bagrounds.org/books/old-name\"\n---\nContent here."
+        let checker url = pure (url == "https://bagrounds.org/books/renamed-book")
+            note = ContentNote
+              { cnFilePath = booksDir </> "renamed-book.md"
+              , cnRelativePath = "books/renamed-book.md"
+              , cnTitle = "My Book"
+              , cnUrl = "https://bagrounds.org/books/old-name"
+              , cnBody = T.replicate 60 "x"
+              , cnPostedPlatforms = Set.empty
+              , cnLinkedNotePaths = []
+              , cnNoSocial = False
+              }
+        result <- validateNoteUrl checker note
+        case result of
+          Nothing -> assertBool "should return fixed note" False
+          Just n  -> assertEqual "url should be updated"
+            "https://bagrounds.org/books/renamed-book" (cnUrl n)
+        -- Verify the file was updated
+        updatedContent <- TIO.readFile (booksDir </> "renamed-book.md")
+        assertBool "file should contain new URL"
+          (T.isInfixOf "https://bagrounds.org/books/renamed-book" updatedContent)
+
+  , testCase "validateNoteUrl returns Nothing when both URLs are dead" $ do
+      let alwaysDead _ = pure False
+          note = (mkNote "books/my-book.md" "My Book" (T.replicate 60 "x"))
+            { cnUrl = "https://bagrounds.org/books/old-name"
+            , cnFilePath = "/nonexistent/books/my-book.md"
+            }
+      result <- validateNoteUrl alwaysDead note
+      assertEqual "should return Nothing for both dead URLs" Nothing result
+
+  , testCase "BFS skips notes with dead URLs but still follows links" $ do
+      withSystemTempDirectory "url-test" $ \dir -> do
+        let reflDir = dir </> "reflections"
+            booksDir = dir </> "books"
+        createDirectoryIfMissing True reflDir
+        createDirectoryIfMissing True booksDir
+        TIO.writeFile (reflDir </> "2020-01-01.md")
+          ("---\ntitle: \"2020-01-01\"\n---\n" <>
+           "See [[books/dead-link]]\n" <>
+           T.replicate 60 "x")
+        TIO.writeFile (booksDir </> "dead-link.md")
+          ("---\ntitle: Dead Link Book\nURL: \"https://bagrounds.org/books/dead-link\"\n---\n" <>
+           "Read [[books/live-book]]\n" <>
+           T.replicate 60 "x")
+        TIO.writeFile (booksDir </> "live-book.md")
+          ("---\ntitle: Live Book\nURL: \"https://bagrounds.org/books/live-book\"\n---\n" <>
+           T.replicate 60 "x")
+        let checker url = pure (url == "https://bagrounds.org/books/live-book")
+            config = FindContentConfig dir [Twitter] 0 (Just checker)
+        result <- bfsContentDiscovery config
+        let resultPaths = fmap (cnRelativePath . ctpNote) result
+        assertBool "should not include dead-link book"
+          (all (\p -> p /= "books/dead-link.md") resultPaths)
+        assertBool "should find live book through dead-link book"
+          (any (\p -> p == "books/live-book.md") resultPaths)
+
+  , testCase "updateFrontmatterUrl updates existing URL field" $ do
+      withSystemTempDirectory "url-test" $ \dir -> do
+        let notePath = dir </> "test-note.md"
+        TIO.writeFile notePath
+          "---\ntitle: Test Note\nURL: \"https://bagrounds.org/old-path\"\n---\nBody content"
+        updateFrontmatterUrl notePath "https://bagrounds.org/new-path"
+        content <- TIO.readFile notePath
+        assertBool "should contain new URL"
+          (T.isInfixOf "https://bagrounds.org/new-path" content)
+        assertBool "should not contain old URL"
+          (not (T.isInfixOf "https://bagrounds.org/old-path" content))
+
+  , testCase "updateFrontmatterUrl adds URL field when missing" $ do
+      withSystemTempDirectory "url-test" $ \dir -> do
+        let notePath = dir </> "no-url-note.md"
+        TIO.writeFile notePath
+          "---\ntitle: No URL Note\n---\nBody content"
+        updateFrontmatterUrl notePath "https://bagrounds.org/new-url"
+        content <- TIO.readFile notePath
+        assertBool "should contain added URL"
+          (T.isInfixOf "https://bagrounds.org/new-url" content)
   ]
 
 --------------------------------------------------------------------------------

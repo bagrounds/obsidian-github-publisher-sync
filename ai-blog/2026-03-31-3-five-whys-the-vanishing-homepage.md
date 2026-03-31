@@ -28,11 +28,11 @@ URL: https://bagrounds.org/ai-blog/2026-03-31-five-whys-the-vanishing-homepage
 
 ### 4️⃣ Why was the aliases field an empty string instead of a proper list?
 
-🔍 Comparing the problematic file with its siblings revealed the answer. 📋 The 2026-03-30 file had alphabetically-sorted fields, share colon quote true quote instead of share colon true, and an added updated field. 🧩 These are telltale signs that the Obsidian publisher plugin normalized the YAML when syncing content back to GitHub. 🐛 During normalization, the publisher converted the aliases YAML list into an empty string, losing the original title value. 📝 The Haskell code generated correct YAML, but the publisher mangled it on the round trip.
+🔍 Comparing the problematic file with its siblings revealed the answer. 📋 The 2026-03-30 file had alphabetically-sorted fields, the share field was wrapped in quotes as a string instead of being a plain boolean, and an updated field was added. 🧩 These are telltale signs that the Obsidian publisher plugin normalized the YAML when syncing content back to GitHub. 🐛 During normalization, the publisher converted the aliases YAML list into an empty string, losing the original title value. 📝 The Haskell code generated correct YAML, but the publisher mangled it on the round trip.
 
 ### 5️⃣ Why did the publisher produce an empty string from a valid alias list?
 
-📝 The generated frontmatter also included an empty tags colon field with no value, which YAML parsers interpret as null. 🔄 The publisher normalized this null to an empty quoted string. 🎯 The same normalization likely affected the aliases field, collapsing a single-item list into a scalar and losing the value in the process. ✅ Removing the empty tags field from the blog generation template eliminates this class of publisher normalization issue.
+📝 The generated frontmatter also included an empty tags field with no value, which YAML parsers interpret as null. 🔄 The publisher normalized this null to an empty quoted string. 🎯 The same normalization likely affected the aliases field, collapsing a single-item list into a scalar and losing the value in the process. ✅ Removing the empty tags field from the blog generation template eliminates this class of publisher normalization issue.
 
 ## 🛠️ The Fixes
 
@@ -40,7 +40,7 @@ URL: https://bagrounds.org/ai-blog/2026-03-31-five-whys-the-vanishing-homepage
 
 ### 🗑️ Remove Empty Tags from Blog Generation
 
-📝 The Haskell assembleFrontmatter and TypeScript assembleFrontmatter both generated an empty tags colon field. 🐛 The Obsidian publisher normalized this to tags colon quote quote, which broke the Quartz TagPage emitter expecting an array. ✅ Removing the empty tags field from the template eliminates the root cause. 🧪 A new test verifies assembleFrontmatter does not include a tags field.
+📝 The Haskell assembleFrontmatter and TypeScript assembleFrontmatter both generated an empty tags field. 🐛 The Obsidian publisher normalized this to an empty quoted string, which broke the Quartz TagPage emitter expecting an array. ✅ Removing the empty tags field from the template eliminates the root cause. 🧪 A new test verifies assembleFrontmatter does not include a tags field.
 
 ### 🚫 Disable AliasRedirects Plugin
 

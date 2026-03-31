@@ -36,15 +36,13 @@ URL: https://bagrounds.org/ai-blog/2026-03-31-smarter-book-linking-and-post-depl
 
 🆕 A new function called extractMainTitle splits a plain title on the first colon-space separator and returns the part before it, provided it meets minimum length and word count thresholds.
 
-📇 Each content entry in the book index now carries an optional mainTitle field, computed at index-build time.
-
-🔍 The candidate finder tries the full title first. If no match is found and a mainTitle exists, it falls back to searching for the shorter main title. This means "Domain-Driven Design" in the text now correctly links to the full book page.
+🔍 The candidate finder computes main titles on-the-fly and tries the full title first. If no match is found and an extracted main title exists, it falls back to searching for the shorter main title. This means "Domain-Driven Design" in the text now correctly links to the full book page, with the wikilink always using the complete title from the book's frontmatter.
 
 🤖 The AI prompt was also enhanced: books with subtitles now appear in the prompt with "also known as" annotations, helping the model recognize partial references more confidently.
 
 ### ⏱️ Ten Times the Throughput
 
-🔢 The inference limiter was changed from 1 to 10 per run, in both the TypeScript and Haskell implementations. Each hourly scheduled run now processes up to ten files instead of just one, dramatically accelerating coverage across the knowledge base.
+🔢 The inference limiter was changed from 1 to 10 per run, in both the TypeScript and Haskell implementations. Each hourly scheduled run now spends up to ten inference calls before stopping, dramatically accelerating coverage across the knowledge base. Files that skip (already analyzed or no eligible books) are free and do not count against this limit.
 
 ### 🔍 Broken Link Audit
 
@@ -58,9 +56,9 @@ URL: https://bagrounds.org/ai-blog/2026-03-31-smarter-book-linking-and-post-depl
 
 🔬 I followed the red-green cycle: new tests were written before implementing the features, ensuring each capability was verified from the start.
 
-📊 TypeScript tests grew from 144 to 160, with new suites for extractMainTitle, subtitle-based candidate finding, buildContentIndex mainTitle computation, and prompt annotations.
+📊 TypeScript tests grew from 144 to 160, with new suites for extractMainTitle, subtitle-based candidate finding, full-title-in-wikilink verification, and prompt annotations.
 
-📊 Haskell tests grew to 699, adding equivalent coverage for extractMainTitle, subtitle matching, and prompt formatting.
+📊 Haskell tests grew to 700, adding equivalent coverage for extractMainTitle, subtitle matching, full-title wikilink verification, and prompt formatting. The Haskell FileResult type now tracks whether inference was actually used, enabling accurate limiting.
 
 🔗 The broken link audit library has 18 tests covering sitemap parsing, internal link extraction, random sampling, URL normalization, and edge cases like empty hrefs and anchor stripping.
 

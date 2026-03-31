@@ -57,21 +57,18 @@ const BOOK_ENTRY: ContentEntry = {
   relativePath: "books/thinking-fast-and-slow.md",
   title: "🤔🐇🐢 Thinking, Fast and Slow",
   plainTitle: "Thinking, Fast and Slow",
-  mainTitle: null,
 };
 
 const SOFTWARE_ENTRY: ContentEntry = {
   relativePath: "software/babylon.md",
   title: "🌐🧱🖥️🎮 Babylon.js",
   plainTitle: "Babylon.js",
-  mainTitle: null,
 };
 
 const LONG_BOOK_ENTRY: ContentEntry = {
   relativePath: "books/domain-driven-design.md",
   title: "🧩🧱⚙️❤️ Domain-Driven Design: Tackling Complexity in the Heart of Software",
   plainTitle: "Domain-Driven Design: Tackling Complexity in the Heart of Software",
-  mainTitle: "Domain-Driven Design",
 };
 
 // --- stripEmojis ---
@@ -155,7 +152,6 @@ describe("formatWikilink", () => {
       relativePath: "software/git.md",
       title: "💾➕🤝 Git",
       plainTitle: "Git",
-      mainTitle: null,
     };
     assert.equal(formatWikilink(entry), "[[software/git|💾➕🤝 Git]]");
   });
@@ -246,18 +242,6 @@ describe("buildContentIndex", () => {
     assert.equal(index[0]?.relativePath, "books/thinking-fast-and-slow.md");
     assert.equal(index[0]?.title, "🤔🐇🐢 Thinking, Fast and Slow");
     assert.equal(index[0]?.plainTitle, "Thinking, Fast and Slow");
-    assert.equal(index[0]?.mainTitle, null);
-  });
-
-  it("computes mainTitle for titles with subtitles", () => {
-    fs.writeFileSync(
-      path.join(tmpDir.path, "books", "ddd.md"),
-      "---\ntitle: 🧩 Domain-Driven Design: Tackling Complexity in the Heart of Software\n---\nContent",
-    );
-
-    const index = buildContentIndex(tmpDir.path);
-    assert.equal(index.length, 1);
-    assert.equal(index[0]?.mainTitle, "Domain-Driven Design");
   });
 
   it("skips index.md files", () => {
@@ -607,7 +591,6 @@ describe("findLinkCandidates", () => {
       relativePath: "books/domain-driven-design-short.md",
       title: "🧩 Domain-Driven Design",
       plainTitle: "Domain-Driven Design",
-      mainTitle: null,
     };
 
     const content = "The book Domain-Driven Design: Tackling Complexity in the Heart of Software is great";
@@ -655,7 +638,6 @@ describe("findLinkCandidates", () => {
       relativePath: "books/atomic-habits.md",
       title: "⚛️🔄 Atomic Habits Is Great",
       plainTitle: "Atomic Habits Is Great",
-      mainTitle: null,
     };
     const content = "I read Thinking, Fast and Slow and also Atomic Habits Is Great";
     const masked = maskProtectedRegions(content);
@@ -752,7 +734,6 @@ describe("applyReplacements", () => {
       relativePath: "software/babylon.md",
       title: "🌐🧱🖥️🎮 Babylon.js Running",
       plainTitle: "Babylon.js Running",
-      mainTitle: null,
     };
     const candidates: readonly LinkCandidate[] = [
       {
@@ -781,7 +762,6 @@ describe("applyReplacements", () => {
       relativePath: "software/babylon.md",
       title: "🌐 Babylon.js Running",
       plainTitle: "Babylon.js Running",
-      mainTitle: null,
     };
     const candidates: readonly LinkCandidate[] = [
       {
@@ -1003,7 +983,7 @@ describe("findLinkCandidates subtitle matching", () => {
     );
   });
 
-  it("does not match mainTitle for entries without one", () => {
+  it("does not match subtitle prefix for entries without subtitles", () => {
     const content = "I read Thinking yesterday";
     const masked = maskProtectedRegions(content);
     const candidates = findLinkCandidates(
@@ -1018,7 +998,6 @@ describe("findLinkCandidates subtitle matching", () => {
       relativePath: "books/a-pattern-language.md",
       title: "🏘️🧱🏗️ A Pattern Language: Towns, Buildings, Construction",
       plainTitle: "A Pattern Language: Towns, Buildings, Construction",
-      mainTitle: "A Pattern Language",
     };
     const content = "Recommended books:\n- A Pattern Language by Christopher Alexander";
     const masked = maskProtectedRegions(content);
@@ -1039,17 +1018,34 @@ describe("findLinkCandidates subtitle matching", () => {
 
     assert.equal(candidates.length, 0);
   });
+
+  it("uses the full book title in the wikilink even when matched via partial title", () => {
+    const content = "I loved reading Domain-Driven Design and it changed my perspective";
+    const masked = maskProtectedRegions(content);
+    const candidates = findLinkCandidates(
+      content, masked, [LONG_BOOK_ENTRY], new Set(), "reflections/test.md",
+    );
+
+    assert.equal(candidates.length, 1);
+    assert.equal(candidates[0]?.matchedText, "Domain-Driven Design");
+
+    const result = applyReplacements(content, candidates, [true]);
+    assert.ok(
+      result.includes("[[books/domain-driven-design|🧩🧱⚙️❤️ Domain-Driven Design: Tackling Complexity in the Heart of Software]]"),
+      "wikilink should use full title from book page, not the partial match",
+    );
+  });
 });
 
-// --- buildIdentificationPrompt with mainTitle ---
+// --- buildIdentificationPrompt with subtitle matching ---
 
-describe("buildIdentificationPrompt mainTitle", () => {
-  it("includes also-known-as for entries with mainTitle", () => {
+describe("buildIdentificationPrompt subtitle handling", () => {
+  it("includes also-known-as for entries with subtitles", () => {
     const prompt = buildIdentificationPrompt("body text", [LONG_BOOK_ENTRY], "test.md");
     assert.ok(prompt.user.includes('also known as "Domain-Driven Design"'));
   });
 
-  it("does not include also-known-as for entries without mainTitle", () => {
+  it("does not include also-known-as for entries without subtitles", () => {
     const prompt = buildIdentificationPrompt("body text", [BOOK_ENTRY], "test.md");
     assert.ok(!prompt.user.includes("also known as"));
   });
@@ -1070,14 +1066,12 @@ describe("findLinkCandidates hasAiValidation filtering", () => {
     relativePath: "topics/engineering.md",
     title: "🏗️🔧 Engineering",
     plainTitle: "Engineering",
-    mainTitle: null,
   };
 
   const multiWordEntry: ContentEntry = {
     relativePath: "books/thinking-fast-and-slow.md",
     title: "🤔🐇🐢 Thinking, Fast and Slow",
     plainTitle: "Thinking, Fast and Slow",
-    mainTitle: null,
   };
 
   it("includes single-word titles when hasAiValidation is true", () => {
@@ -1112,7 +1106,6 @@ describe("findLinkCandidates hasAiValidation filtering", () => {
       relativePath: "books/catch-22.md",
       title: "📖 Catch-22",
       plainTitle: "Catch-22",
-      mainTitle: null,
     };
     const content = "The novel Catch-22 is a classic";
     const masked = maskProtectedRegions(content);
@@ -1159,7 +1152,6 @@ describe("contentAlreadyLinksTo", () => {
       relativePath: "books/thinking-fast.md",
       title: "📖 Thinking Fast",
       plainTitle: "Thinking Fast",
-      mainTitle: null,
     };
     const content = "See [[books/thinking-fast-and-slow|TFS]] for more";
     assert.equal(contentAlreadyLinksTo(content, entry), false);

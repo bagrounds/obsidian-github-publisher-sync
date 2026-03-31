@@ -97,7 +97,6 @@ data ContentEntry = ContentEntry
   { ceRelativePath :: Text
   , ceTitle        :: Text
   , cePlainTitle   :: Text
-  , ceMainTitle    :: Maybe Text
   } deriving (Show, Eq)
 
 data LinkCandidate = LinkCandidate
@@ -108,9 +107,10 @@ data LinkCandidate = LinkCandidate
   } deriving (Show, Eq)
 
 data FileResult = FileResult
-  { frRelativePath :: Text
-  , frModified     :: Bool
-  , frLinksAdded   :: Int
+  { frRelativePath  :: Text
+  , frModified      :: Bool
+  , frLinksAdded    :: Int
+  , frUsedInference :: Bool
   } deriving (Show, Eq)
 
 data LinkingResult = LinkingResult
@@ -413,7 +413,6 @@ readEntry contentDir dirName file = do
         { ceRelativePath = relativePath
         , ceTitle        = title
         , cePlainTitle   = plain
-        , ceMainTitle    = extractMainTitle plain
         }
 
 hasSuffix :: String -> String -> Bool
@@ -571,7 +570,7 @@ findLinkCandidates index content masked selfPath =
       | contentAlreadyLinksTo content entry = (ranges, cands)
       | any (\c -> ceRelativePath (lcEntry c) == ceRelativePath entry) cands = (ranges, cands)
       | otherwise =
-          let titleTexts = cePlainTitle entry : maybe [] (: []) (ceMainTitle entry)
+          let titleTexts = cePlainTitle entry : maybe [] (: []) (extractMainTitle (cePlainTitle entry))
           in tryPatterns ranges cands entry titleTexts
 
     tryPatterns :: [(Int, Int)] -> [LinkCandidate] -> ContentEntry -> [Text] -> ([(Int, Int)], [LinkCandidate])
@@ -616,7 +615,7 @@ findAllMatches pat str = go 0 str
 buildIdentificationPrompt :: Text -> [ContentEntry] -> Text
 buildIdentificationPrompt fileBody bookEntries =
   let formatBookLine e =
-        let mainNote = case ceMainTitle e of
+        let mainNote = case extractMainTitle (cePlainTitle e) of
               Just mt -> " (also known as \"" <> mt <> "\")"
               Nothing -> ""
         in "- \"" <> cePlainTitle e <> "\"" <> mainNote <> " (" <> ceRelativePath e <> ")"
@@ -808,9 +807,10 @@ processFile manager apiKey model filePath index = do
   content <- TIO.readFile filePath
   case alreadyAnalyzed content of
     True -> pure FileResult
-      { frRelativePath = T.pack relativePath
-      , frModified     = False
-      , frLinksAdded   = 0
+      { frRelativePath  = T.pack relativePath
+      , frModified      = False
+      , frLinksAdded    = 0
+      , frUsedInference = False
       }
     False -> do
       let body = extractBody content
@@ -823,9 +823,10 @@ processFile manager apiKey model filePath index = do
           timestamp <- nowIso
           recordLinkAnalysis filePath model timestamp
           pure FileResult
-            { frRelativePath = T.pack relativePath
-            , frModified     = False
-            , frLinksAdded   = 0
+            { frRelativePath  = T.pack relativePath
+            , frModified      = False
+            , frLinksAdded    = 0
+            , frUsedInference = False
             }
         _ -> do
           geminiResult <- identifyBooksWithGemini manager apiKey model body eligibleBooks
@@ -833,15 +834,17 @@ processFile manager apiKey model filePath index = do
           recordLinkAnalysis filePath model timestamp
           case geminiResult of
             Left _err -> pure FileResult
-              { frRelativePath = T.pack relativePath
-              , frModified     = False
-              , frLinksAdded   = 0
+              { frRelativePath  = T.pack relativePath
+              , frModified      = False
+              , frLinksAdded    = 0
+              , frUsedInference = True
               }
             Right identifiedPaths
               | null identifiedPaths -> pure FileResult
-                  { frRelativePath = T.pack relativePath
-                  , frModified     = False
-                  , frLinksAdded   = 0
+                  { frRelativePath  = T.pack relativePath
+                  , frModified      = False
+                  , frLinksAdded    = 0
+                  , frUsedInference = True
                   }
               | otherwise -> do
                   let identifiedSet = Set.fromList identifiedPaths
@@ -851,9 +854,10 @@ processFile manager apiKey model filePath index = do
                       candidates      = findLinkCandidates identifiedIndex contentAfterFm masked (T.pack relativePath)
                   case candidates of
                     [] -> pure FileResult
-                      { frRelativePath = T.pack relativePath
-                      , frModified     = False
-                      , frLinksAdded   = 0
+                      { frRelativePath  = T.pack relativePath
+                      , frModified      = False
+                      , frLinksAdded    = 0
+                      , frUsedInference = True
                       }
                     _  -> do
                       let validations = replicate (length candidates) True
@@ -862,9 +866,10 @@ processFile manager apiKey model filePath index = do
                       putStrLn $ "  ✏️  " <> relativePath <> ": "
                         <> show (length candidates) <> " link(s) applied"
                       pure FileResult
-                        { frRelativePath = T.pack relativePath
-                        , frModified     = True
-                        , frLinksAdded   = length candidates
+                        { frRelativePath  = T.pack relativePath
+                        , frModified      = True
+                        , frLinksAdded    = length candidates
+                        , frUsedInference = True
                         }
 
 makeRelPathFromContentDir :: FilePath -> FilePath -> FilePath
@@ -927,10 +932,9 @@ processFiles manager apiKey model contentDir index filesToVisit = do
       let filePath = contentDir </> T.unpack relPath
       fileResult <- processFile manager apiKey model filePath index
       modifyIORef' resRef (fileResult :)
-      infCount <- readIORef infRef
-      let calledGemini = not (isSkipped fileResult)
-      case calledGemini of
+      case frUsedInference fileResult of
         True -> do
+          infCount <- readIORef infRef
           modifyIORef' infRef (+ 1)
           let newCount = infCount + 1
           case newCount >= maxInferencePerRun of
@@ -939,9 +943,6 @@ processFiles manager apiKey model contentDir index filesToVisit = do
               pure ()
             False -> go infRef resRef rest
         False -> go infRef resRef rest
-
-    isSkipped :: FileResult -> Bool
-    isSkipped fr = not (frModified fr) && frLinksAdded fr == 0
 
 lookupApiKey :: IO Text
 lookupApiKey = do

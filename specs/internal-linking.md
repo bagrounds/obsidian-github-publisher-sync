@@ -4,9 +4,9 @@
 
 📋 Automatically inserts wikilinks into content files by identifying genuine book references with Gemini AI.
 🧭 Uses BFS traversal starting from the most recent reflection to prioritize recently active files.
-⏱️ Processes up to 10 files per run to maximize linking coverage within API quota limits.
+⏱️ Spends up to 10 inference calls per run to maximize linking coverage within API quota limits.
 🛡️ Tracks analysis state in frontmatter to skip already-processed files across sessions.
-📖 Supports subtitle-aware matching: books referenced by main title (without subtitle) are correctly detected and linked.
+📖 Supports subtitle-aware matching: books referenced by main title (without subtitle) are correctly detected and linked with the full book title.
 
 ## 🏗️ Architecture
 
@@ -31,13 +31,13 @@
    ├─ 🔍 findMostRecentReflection() → start node
    └─ 🔗 extractLinkedPaths() → follow wikilinks + markdown links
          ↓
-📄 For each file in BFS order (limit: 10 per run):
+📄 For each file in BFS order (limit: 10 inference calls per run):
    ├─ 🛡️ alreadyAnalyzed(content) → skip if processed (unless force_analyze_links)
    ├─ 🧹 maskProtectedRegions(content) → hide frontmatter, code, links, headings
    ├─ 🤖 identifyBooksWithGemini(body, entries, path, apiKey, model)
    ├─ 🔍 findLinkCandidates(content, masked, index, existing, path)
-   │     tries full plainTitle first, then mainTitle fallback
-   └─ ✏️ applyReplacements(content, candidates, validations)
+   │     computes extractMainTitle on-the-fly; tries full plainTitle first, then subtitle prefix fallback
+   └─ ✏️ applyReplacements(content, candidates, validations) — always uses full book title in wikilink
          ↓
 💾 Write modified file + recordLinkAnalysis() in frontmatter
 ```
@@ -47,8 +47,8 @@
 📋 Many book titles include subtitles separated by a colon-space (e.g., "Domain-Driven Design: Tackling Complexity in the Heart of Software").
 🔍 Content authors often reference books by their main title only (e.g., just "Domain-Driven Design").
 🧠 The `extractMainTitle` function extracts the text before the first `: ` separator, provided it meets minimum length and word count requirements.
-📇 Each `ContentEntry` carries an optional `mainTitle` field computed during index building.
-🔗 `findLinkCandidates` tries matching the full `plainTitle` first, falling back to `mainTitle` when the full title is not found in the text.
+🔗 `findLinkCandidates` computes main titles on-the-fly (no caching in the type), tries matching the full `plainTitle` first, falling back to the extracted main title when the full title is not found in the text.
+📖 Wikilinks always use the full title from the book's frontmatter, even when matched via the shorter main title.
 🤖 The Gemini prompt lists books with "also known as" annotations for entries with a main title variant, helping the AI recognize partial references.
 
 ## 🧭 BFS Traversal
@@ -73,7 +73,7 @@
 
 ## 📏 Per-Run Limits
 
-⏱️ The `maxInferenceRequests` config controls how many Gemini API calls are made per run, defaulting to 10 files per execution.
+⏱️ The `maxInferenceRequests` config controls how many Gemini inference calls are made per run, defaulting to 10. Files that skip (already analyzed or no eligible books) do not count against this limit.
 🔄 Rate-limit errors trigger exponential backoff starting at 5 seconds, doubling up to 60 seconds, with up to 3 retries.
 📊 Server-provided retry delays from the `Retry-After` header or error details are preferred over computed backoff.
 
@@ -137,12 +137,12 @@
 - 📋 `extractContext`: context window extraction around match positions
 - 📖 `extractMainTitle`: subtitle extraction, minimum length/word requirements, edge cases
 - 📄 `parseFrontmatter`: key-value parsing, quoted values, missing markers
-- 📇 `buildContentIndex`: directory scanning, title extraction, mainTitle computation, filtering
+- 📇 `buildContentIndex`: directory scanning, title extraction, filtering
 - 🔗 `extractLinkedPaths`: wikilink and markdown link extraction
 - 🔍 `findMostRecentReflection`: date-based file discovery
 - 🧭 `bfsTraversal`: link-following traversal across directories
 - 🛡️ `maskProtectedRegions`: frontmatter, code, link, heading masking
-- 📖 Subtitle matching: mainTitle fallback, full title preference, protected region respect
+- 📖 Subtitle matching: on-the-fly main title extraction, full title preference, full title in wikilink, protected region respect
 - 🤖 `buildIdentificationPrompt`: also-known-as annotations for subtitle entries
 
 🔬 Haskell tests in `haskell/test/Automation/InternalLinkingTest.hs` with equivalent coverage.

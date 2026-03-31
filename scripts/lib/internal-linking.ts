@@ -166,8 +166,6 @@ export interface ContentEntry {
   readonly title: string;
   /** Title with emojis stripped, e.g. "Thinking, Fast and Slow" */
   readonly plainTitle: string;
-  /** Main title without subtitle (text before first ": "), or null if no subtitle separator or main title is too short */
-  readonly mainTitle: string | null;
 }
 
 /** A candidate link found in a file */
@@ -214,7 +212,7 @@ export interface RunResult {
 export interface LinkingConfig {
   /** Root content directory (absolute path) */
   readonly contentDir: string;
-  /** Maximum number of files that trigger inference API calls (undefined = unlimited) */
+  /** Maximum number of inference API calls per run (undefined = unlimited). Files that skip do not count. */
   readonly maxInferenceRequests?: number;
   /** Gemini API key (if omitted, skips AI validation and uses deterministic-only mode) */
   readonly apiKey?: string;
@@ -348,8 +346,7 @@ export const buildContentIndex = (contentDir: string): readonly ContentEntry[] =
         const plainTitle = stripEmojis(title);
         if (plainTitle.length < MIN_TITLE_LENGTH) return [];
 
-        const mainTitle = extractMainTitle(plainTitle);
-        return [{ relativePath, title, plainTitle, mainTitle }];
+        return [{ relativePath, title, plainTitle }];
       });
   });
 
@@ -613,10 +610,11 @@ export const findLinkCandidates = (
     // Without AI validation, skip single-word titles to avoid common word false positives
     if (!hasAiValidation && countWords(entry.plainTitle) < MIN_WORD_COUNT_WITHOUT_AI) return;
 
-    // Try matching full plainTitle first, then fall back to mainTitle
+    // Try matching full plainTitle first, then fall back to mainTitle (computed on-the-fly)
+    const mainTitle = extractMainTitle(entry.plainTitle);
     const titlePatterns = [
       entry.plainTitle,
-      ...(entry.mainTitle ? [entry.mainTitle] : []),
+      ...(mainTitle ? [mainTitle] : []),
     ];
 
     for (const titleText of titlePatterns) {
@@ -671,7 +669,8 @@ export const buildIdentificationPrompt = (
 ): { readonly system: string; readonly user: string } => {
   const bookList = bookEntries
     .map((e) => {
-      const mainNote = e.mainTitle ? ` (also known as "${e.mainTitle}")` : "";
+      const mainTitle = extractMainTitle(e.plainTitle);
+      const mainNote = mainTitle ? ` (also known as "${mainTitle}")` : "";
       return `- "${e.plainTitle}"${mainNote} (${e.relativePath})`;
     })
     .join("\n");

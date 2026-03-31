@@ -85,10 +85,10 @@ escapeRegexTests = testGroup "escapeRegex"
 formatWikilinkTests :: TestTree
 formatWikilinkTests = testGroup "formatWikilink"
   [ testCase "formats basic wikilink" $
-      let entry = ContentEntry "books/test.md" "📖 Test Book" "Test Book" Nothing
+      let entry = ContentEntry "books/test.md" "📖 Test Book" "Test Book"
       in assertEqual "" "[[books/test|📖 Test Book]]" (formatWikilink entry)
   , testCase "strips .md from path" $
-      let entry = ContentEntry "books/foo.md" "Foo" "Foo" Nothing
+      let entry = ContentEntry "books/foo.md" "Foo" "Foo"
       in assertBool "no .md in link" (not (T.isInfixOf ".md" (formatWikilink entry)))
   ]
 
@@ -182,15 +182,15 @@ maskProtectedRegionsTests = testGroup "maskProtectedRegions"
 contentAlreadyLinksToTests :: TestTree
 contentAlreadyLinksToTests = testGroup "contentAlreadyLinksTo"
   [ testCase "detects wikilink" $
-      let entry = ContentEntry "books/test.md" "Test" "Test" Nothing
+      let entry = ContentEntry "books/test.md" "Test" "Test"
           content = "see [[books/test|Test]] here"
       in assertBool "found link" (contentAlreadyLinksTo content entry)
   , testCase "detects path with pipe" $
-      let entry = ContentEntry "books/test.md" "Test" "Test" Nothing
+      let entry = ContentEntry "books/test.md" "Test" "Test"
           content = "[[books/test|alias]]"
       in assertBool "found link" (contentAlreadyLinksTo content entry)
   , testCase "returns false when no link" $
-      let entry = ContentEntry "books/test.md" "Test" "Test" Nothing
+      let entry = ContentEntry "books/test.md" "Test" "Test"
           content = "no links here at all"
       in assertBool "no link" (not (contentAlreadyLinksTo content entry))
   ]
@@ -200,7 +200,7 @@ contentAlreadyLinksToTests = testGroup "contentAlreadyLinksTo"
 -- --------------------------------------------------------------------------
 
 sampleEntry :: ContentEntry
-sampleEntry = ContentEntry "books/thinking-fast.md" "🤔 Thinking, Fast and Slow" "Thinking, Fast and Slow" Nothing
+sampleEntry = ContentEntry "books/thinking-fast.md" "🤔 Thinking, Fast and Slow" "Thinking, Fast and Slow"
 
 findLinkCandidatesTests :: TestTree
 findLinkCandidatesTests = testGroup "findLinkCandidates"
@@ -220,7 +220,7 @@ findLinkCandidatesTests = testGroup "findLinkCandidates"
           candidates = findLinkCandidates [sampleEntry] content masked "reflections/2024-01-01.md"
       in assertEqual "no candidates (already linked)" 0 (length candidates)
   , testCase "prefers longer matches" $
-      let short = ContentEntry "books/short.md" "📖 Fast and Slow" "Fast and Slow" Nothing
+      let short = ContentEntry "books/short.md" "📖 Fast and Slow" "Fast and Slow"
           long  = sampleEntry
           content = "I love Thinking, Fast and Slow as a book"
           masked  = content
@@ -244,7 +244,6 @@ dddEntry = ContentEntry
   "books/domain-driven-design.md"
   "🧩 Domain-Driven Design: Tackling Complexity in the Heart of Software"
   "Domain-Driven Design: Tackling Complexity in the Heart of Software"
-  (Just "Domain-Driven Design")
 
 subtitleMatchingTests :: TestTree
 subtitleMatchingTests = testGroup "subtitle matching"
@@ -269,7 +268,7 @@ subtitleMatchingTests = testGroup "subtitle matching"
             (c:_) -> assertBool "matched full title"
               (T.isInfixOf "Tackling Complexity" (lcMatchedText c))
             [] -> assertBool "should have candidates" False
-  , testCase "does not match mainTitle for entries without one" $
+  , testCase "does not match subtitle prefix for entries without subtitles" $
       let content = "I read Thinking yesterday"
           masked  = content
           candidates = findLinkCandidates [sampleEntry] content masked "reflections/test.md"
@@ -279,7 +278,6 @@ subtitleMatchingTests = testGroup "subtitle matching"
             "books/a-pattern-language.md"
             "🏘️ A Pattern Language: Towns, Buildings, Construction"
             "A Pattern Language: Towns, Buildings, Construction"
-            (Just "A Pattern Language")
           content = "Recommended books:\n- A Pattern Language by Christopher Alexander"
           masked  = content
           candidates = findLinkCandidates [entry] content masked "reflections/test.md"
@@ -293,6 +291,13 @@ subtitleMatchingTests = testGroup "subtitle matching"
           masked  = maskProtectedRegions content
           candidates = findLinkCandidates [dddEntry] content masked "reflections/test.md"
       in assertEqual "no candidates" 0 (length candidates)
+  , testCase "uses full title in wikilink even when matched via partial" $
+      let content = "I loved reading Domain-Driven Design and it changed my perspective"
+          masked  = content
+          candidates = findLinkCandidates [dddEntry] content masked "reflections/test.md"
+          result = applyReplacements content candidates (replicate (length candidates) True)
+      in assertBool "wikilink uses full title"
+           (T.isInfixOf "Domain-Driven Design: Tackling Complexity" result)
   ]
 
 -- --------------------------------------------------------------------------
@@ -383,7 +388,7 @@ applyReplacementsTests = testGroup "applyReplacements"
           result = applyReplacements content [candidate] [False]
       in assertEqual "unchanged" content result
   , testCase "handles multiple replacements" $
-      let entry2 = ContentEntry "books/other.md" "📖 Other Book Title" "Other Book Title" Nothing
+      let entry2 = ContentEntry "books/other.md" "📖 Other Book Title" "Other Book Title"
           content = "Read Thinking, Fast and Slow and Other Book Title"
           c1 = LinkCandidate sampleEntry "Thinking, Fast and Slow" 5 ""
           c2 = LinkCandidate entry2 "Other Book Title" 33 ""
@@ -396,7 +401,7 @@ applyReplacementsTests = testGroup "applyReplacements"
           result = applyReplacements content [] []
       in assertEqual "unchanged" content result
   , testCase "applies replacement with all-true validations" $
-      let entry = ContentEntry "books/test.md" "📖 Test" "Test" Nothing
+      let entry = ContentEntry "books/test.md" "📖 Test" "Test"
           content = "I love Test here"
           c = LinkCandidate entry "Test" 7 ""
           result = applyReplacements content [c] [True]
@@ -422,7 +427,7 @@ buildIdentificationPromptTests = testGroup "buildIdentificationPrompt"
       let prompt = buildIdentificationPrompt "body" [sampleEntry]
       in assertBool "has relative path" (T.isInfixOf "books/thinking-fast.md" prompt)
   , testCase "handles multiple entries" $
-      let entry2 = ContentEntry "books/other.md" "📖 Other" "Other" Nothing
+      let entry2 = ContentEntry "books/other.md" "📖 Other" "Other"
           prompt = buildIdentificationPrompt "body" [sampleEntry, entry2]
       in do
           assertBool "has first" (T.isInfixOf "Thinking, Fast and Slow" prompt)
@@ -430,10 +435,10 @@ buildIdentificationPromptTests = testGroup "buildIdentificationPrompt"
   , testCase "handles empty entries" $
       let prompt = buildIdentificationPrompt "body" []
       in assertBool "still has system prompt" (T.isInfixOf "editorial assistant" prompt)
-  , testCase "includes also-known-as for entries with mainTitle" $
+  , testCase "includes also-known-as for entries with subtitles" $
       let prompt = buildIdentificationPrompt "body text" [dddEntry]
       in assertBool "has also known as" (T.isInfixOf "also known as \"Domain-Driven Design\"" prompt)
-  , testCase "does not include also-known-as for entries without mainTitle" $
+  , testCase "does not include also-known-as for entries without subtitles" $
       let prompt = buildIdentificationPrompt "body text" [sampleEntry]
       in assertBool "no also known as" (not (T.isInfixOf "also known as" prompt))
   ]
@@ -453,7 +458,7 @@ propertyTests = testGroup "properties"
       in T.length (stripEmojis txt) <= T.length txt
   , testProperty "formatWikilink contains entry title" $ \s ->
       let title = T.pack (s :: String)
-          entry = ContentEntry "books/test.md" title title Nothing
+          entry = ContentEntry "books/test.md" title title
           wl = formatWikilink entry
       in T.isInfixOf title wl
   , testProperty "applyReplacements with all-false validations returns original" $ \s ->

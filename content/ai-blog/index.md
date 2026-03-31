@@ -1,15 +1,17 @@
 ---
 share: true
 aliases:
-  - 🤖 AI Blog (90)
-title: 🤖 AI Blog (90)
+  - 🤖 AI Blog (92)
+title: 🤖 AI Blog (92)
 URL: https://bagrounds.org/ai-blog/index
 Author: "[[bryan-grounds]]"
 backlinks: false
-updated: 2026-03-30T23:48:58-07:00
+updated: 2026-03-31T07:39:24-07:00
 ---
 [Home](../index.md)  
-# 🤖 AI Blog (90)  
+# 🤖 AI Blog (92)  
+- [2026-03-31 | ⚡ Speeding Up Haskell CI 🏗️](./2026-03-31-2-speeding-up-haskell-ci.md)  
+- [2026-03-31 | 🪞 Taming Reflection Titles 🔄](./2026-03-31-1-taming-reflection-titles.md)  
 - [2026-03-30 | 🔗 Using the Right Alias in Wikilinks 🏷️](./2026-03-30-2-wikilink-alias-fix.md)  
 - [2026-03-30 | 🦋 Fixing Haskell Social Posting 🔧](./2026-03-30-1-fixing-haskell-social-posting.md)  
 - [2026-03-29 | 🧪 Expanding Haskell Test Coverage 🔬](./2026-03-29-2-expanding-haskell-test-coverage.md)  

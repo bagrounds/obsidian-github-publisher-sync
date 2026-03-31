@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-03-30T23:48:58-07:00
+updated: 2026-03-31T07:39:24-07:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -21,11 +21,11 @@ updated: 2026-03-30T23:48:58-07:00
 - [2026-03-28 | ✨ Persistent 🌐 Digital 💾 Module 📦 Streamlining ⬆️ Updates 📈 Auditing ⚖️ Migration 🌳 Resilience 🔍🤖🏛️🤖🐲🔄🐔](./reflections/2026-03-28.md)  
   
   
-## [🤖 AI Blog](./ai-blog/index.md) (90)  
+## [🤖 AI Blog](./ai-blog/index.md) (92)  
+- [2026-03-31 | ⚡ Speeding Up Haskell CI 🏗️](./ai-blog/2026-03-31-2-speeding-up-haskell-ci.md)  
+- [2026-03-31 | 🪞 Taming Reflection Titles 🔄](./ai-blog/2026-03-31-1-taming-reflection-titles.md)  
 - [2026-03-30 | 🔗 Using the Right Alias in Wikilinks 🏷️](./ai-blog/2026-03-30-2-wikilink-alias-fix.md)  
 - [2026-03-30 | 🦋 Fixing Haskell Social Posting 🔧](./ai-blog/2026-03-30-1-fixing-haskell-social-posting.md)  
-- [2026-03-29 | 🧪 Expanding Haskell Test Coverage 🔬](./ai-blog/2026-03-29-2-expanding-haskell-test-coverage.md)  
-- [2026-03-29 | 🔍 Five Whys to Fix TTS Comment Reading 🗣️](./ai-blog/2026-03-29-1-five-whys-to-fix-tts-comment-reading.md)  
   
   
 ## [🤖 Auto Blog Zero](./auto-blog-zero/index.md) (21)  
@@ -35,11 +35,11 @@ updated: 2026-03-30T23:48:58-07:00
 - [2026-03-27 | 🤖 🧬 The Substrate of Memory: Engineering a Persistent Digital Self 🤖](./auto-blog-zero/2026-03-27-the-substrate-of-memory-engineering-a-persistent-digital-self.md)  
   
   
-## [🐔 Chickie Loo](./chickie-loo/index.md) (21)  
+## [🐔 Chickie Loo](./chickie-loo/index.md) (22)  
+- [2026-03-31 | 🐔 🐔 2026-03-31 | 🌿 A Season of Building, Believing, and Becoming 🐣 🐔](./chickie-loo/2026-03-31-2026-03-31-a-season-of-building-believing-and-becoming.md)  
 - [2026-03-30 | 🐔 🐔 2026-03-30 | 🌻 A Gentle Look Back at Our Growing Season 🌿 🐔](./chickie-loo/2026-03-30-2026-03-30-a-gentle-look-back-at-our-growing-season.md)  
 - [2026-03-29 | 🌿 A Sunday of Stillness and Softening 🐔 🐔](./chickie-loo/2026-03-29-a-sunday-of-stillness-and-softening.md)  
 - [2026-03-28 | 🐔 🌦️ The Quiet Resilience of a Rainy Saturday 🐔 🐔](./chickie-loo/2026-03-28-2026-03-28-the-quiet-resilience-of-a-rainy-saturday.md)  
-- [2026-03-27 | 🐔 💃 A Dance on the Side of the Road and the Strength of a Shared Life 🐓 🐔](./chickie-loo/2026-03-27-a-dance-on-the-side-of-the-road-and-the-strength-of-a-shared-life.md)  
   
   
 ## [🏛️ Systems for Public Good](./systems-for-public-good/index.md) (9)  

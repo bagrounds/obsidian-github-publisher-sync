@@ -79,9 +79,7 @@ addForwardLink content targetDate =
 
 findFirstEmbedSectionIndex :: Text -> Maybe Int
 findFirstEmbedSectionIndex content =
-  let indices = filter (>= 0) $ fmap (\h -> fromIntegral $ T.length $ fst $ T.breakOn h content) embedSectionHeaders
-      validIndices = filter (\i -> i < T.length content) $ fmap fromIntegral indices
-  in case filter (\h -> T.isInfixOf h content) embedSectionHeaders of
+  case filter (\h -> T.isInfixOf h content) embedSectionHeaders of
     [] -> Nothing
     found ->
       let positions = fmap (\h -> T.length $ fst $ T.breakOn h content) found

@@ -14,7 +14,6 @@ import Control.Concurrent (threadDelay)
 import Control.Exception (Exception, SomeException, catch, throwIO, fromException)
 import Data.Set (Set)
 import qualified Data.Set as Set
-import Data.Typeable (Typeable)
 
 transientHttpCodes :: Set Int
 transientHttpCodes = Set.fromList [429, 502, 503, 504]
@@ -22,7 +21,7 @@ transientHttpCodes = Set.fromList [429, 502, 503, 504]
 data HttpCodeException = HttpCodeException
   { hceCode :: Int
   , hceMessage :: String
-  } deriving (Show, Typeable)
+  } deriving (Show)
 
 instance Exception HttpCodeException
 

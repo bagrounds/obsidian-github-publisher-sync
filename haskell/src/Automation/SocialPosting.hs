@@ -25,7 +25,7 @@ module Automation.SocialPosting
 
 import Control.Concurrent.Async (mapConcurrently)
 import Control.Exception (SomeException, try)
-import Data.IORef (IORef, modifyIORef', newIORef, readIORef)
+
 import Data.List (sortBy)
 import Data.Map.Strict (Map)
 import qualified Data.Map.Strict as Map
@@ -44,7 +44,7 @@ import Data.Time
   )
 import Network.HTTP.Client (Manager)
 import System.Directory (doesDirectoryExist, doesFileExist, listDirectory)
-import System.Environment (lookupEnv)
+
 import System.FilePath (takeBaseName, takeDirectory, (</>))
 import Text.Regex.TDFA ((=~))
 

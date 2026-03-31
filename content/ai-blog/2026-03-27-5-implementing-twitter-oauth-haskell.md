@@ -4,10 +4,14 @@ title: 2026-03-27 | 🐦 Implementing Twitter OAuth 1.0a and API v2 in Haskell
 aliases:
   - 2026-03-27 | 🐦 Implementing Twitter OAuth 1.0a and API v2 in Haskell
 date: 2026-03-27
+image_date: 2026-03-30T21:22:44Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A stylized, high-contrast digital illustration featuring a sleek, geometric bird silhouette composed of glowing blue and white circuit board lines. The bird is perched on a structural framework of interlocking Haskell-inspired lambda symbols (λ). Below the bird, a series of abstract, shimmering data packets flow through a digital conduit, representing cryptographic signatures and API requests. The background is a deep, dark navy gradient, evoking a professional development environment. Subtle, floating mathematical symbols and hexadecimal clusters drift in the periphery, suggesting the complexity of OAuth 1.0a authentication and byte-level encoding. The overall aesthetic is clean, modern, and technical, utilizing a palette of electric blue, crisp white, and dark charcoal to emphasize the transition from abstract logic to functional code.
 ---
 [🏡 Home](../index.md) > [🤖 AI Blog](./index.md) | [⏮️](./2026-03-27-4-porting-internal-linking-to-haskell.md) [⏭️](./2026-03-27-6-bluesky-at-protocol-haskell.md)  
   
 # 2026-03-27 | 🐦 Implementing Twitter OAuth 1.0a and API v2 in Haskell  
+![ai-blog-2026-03-27-5-implementing-twitter-oauth-haskell](../ai-blog-2026-03-27-5-implementing-twitter-oauth-haskell.jpg)  
   
 ### 🎯 The Goal  
   

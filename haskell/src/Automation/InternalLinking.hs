@@ -11,6 +11,7 @@ module Automation.InternalLinking
   , escapeRegex
   , formatWikilink
   , extractContext
+  , extractMainTitle
   , buildContentIndex
   , extractLinkedPaths
   , findMostRecentReflection
@@ -96,6 +97,7 @@ data ContentEntry = ContentEntry
   { ceRelativePath :: Text
   , ceTitle        :: Text
   , cePlainTitle   :: Text
+  , ceMainTitle    :: Maybe Text
   } deriving (Show, Eq)
 
 data LinkCandidate = LinkCandidate
@@ -191,6 +193,18 @@ alreadyAnalyzed content =
   in case Map.lookup "force_analyze_links" fm of
     Just "true" -> False
     _           -> Map.member "link_analysis_model" fm
+
+extractMainTitle :: Text -> Maybe Text
+extractMainTitle plainTitle =
+  case T.breakOn ": " plainTitle of
+    (main, rest)
+      | T.null rest        -> Nothing
+      | T.length main < minTitleLength -> Nothing
+      | countWordsT main < 2 -> Nothing
+      | otherwise           -> Just main
+  where
+    countWordsT :: Text -> Int
+    countWordsT t = length $ filter (not . T.null) $ T.split (\c -> c == ' ' || c == '-') t
 
 -- --------------------------------------------------------------------------
 -- Masking protected regions
@@ -399,6 +413,7 @@ readEntry contentDir dirName file = do
         { ceRelativePath = relativePath
         , ceTitle        = title
         , cePlainTitle   = plain
+        , ceMainTitle    = extractMainTitle plain
         }
 
 hasSuffix :: String -> String -> Bool
@@ -556,20 +571,26 @@ findLinkCandidates index content masked selfPath =
       | contentAlreadyLinksTo content entry = (ranges, cands)
       | any (\c -> ceRelativePath (lcEntry c) == ceRelativePath entry) cands = (ranges, cands)
       | otherwise =
-          let pat     = "\\b" <> T.unpack (escapeRegex (cePlainTitle entry)) <> "\\b"
-              matches = findAllMatches pat (T.unpack masked)
-          in case filter (\(p, len) -> not (overlaps ranges p (p + len))) matches of
-            []             -> (ranges, cands)
-            ((pos, len):_) ->
-              let matchedText = T.take len (T.drop pos content)
-                  ctx         = extractContext content pos len
-                  candidate   = LinkCandidate
-                    { lcEntry       = entry
-                    , lcMatchedText = matchedText
-                    , lcPosition    = pos
-                    , lcContext     = ctx
-                    }
-              in ((pos, pos + len) : ranges, cands <> [candidate])
+          let titleTexts = cePlainTitle entry : maybe [] (: []) (ceMainTitle entry)
+          in tryPatterns ranges cands entry titleTexts
+
+    tryPatterns :: [(Int, Int)] -> [LinkCandidate] -> ContentEntry -> [Text] -> ([(Int, Int)], [LinkCandidate])
+    tryPatterns ranges cands _ [] = (ranges, cands)
+    tryPatterns ranges cands entry (titleText : rest) =
+      let pat     = "\\b" <> T.unpack (escapeRegex titleText) <> "\\b"
+          matches = findAllMatches pat (T.unpack masked)
+      in case filter (\(p, len) -> not (overlaps ranges p (p + len))) matches of
+        []             -> tryPatterns ranges cands entry rest
+        ((pos, len):_) ->
+          let matchedText = T.take len (T.drop pos content)
+              ctx         = extractContext content pos len
+              candidate   = LinkCandidate
+                { lcEntry       = entry
+                , lcMatchedText = matchedText
+                , lcPosition    = pos
+                , lcContext     = ctx
+                }
+          in ((pos, pos + len) : ranges, cands <> [candidate])
 
     overlaps :: [(Int, Int)] -> Int -> Int -> Bool
     overlaps ranges start end =
@@ -594,8 +615,12 @@ findAllMatches pat str = go 0 str
 
 buildIdentificationPrompt :: Text -> [ContentEntry] -> Text
 buildIdentificationPrompt fileBody bookEntries =
-  let bookList = T.intercalate "\n"
-        $ fmap (\e -> "- \"" <> cePlainTitle e <> "\" (" <> ceRelativePath e <> ")") bookEntries
+  let formatBookLine e =
+        let mainNote = case ceMainTitle e of
+              Just mt -> " (also known as \"" <> mt <> "\")"
+              Nothing -> ""
+        in "- \"" <> cePlainTitle e <> "\"" <> mainNote <> " (" <> ceRelativePath e <> ")"
+      bookList = T.intercalate "\n" $ fmap formatBookLine bookEntries
       systemPrompt = T.intercalate "\n"
         [ "You are a precise editorial assistant for a knowledge base of book reports. Your job is to identify genuine book references in a document."
         , ""
@@ -894,7 +919,7 @@ processFiles manager apiKey model contentDir index filesToVisit = do
   reverse <$> readIORef resultRef
   where
     maxInferencePerRun :: Int
-    maxInferencePerRun = 1
+    maxInferencePerRun = 10
 
     go :: IORef Int -> IORef [FileResult] -> [Text] -> IO ()
     go _ _ [] = pure ()

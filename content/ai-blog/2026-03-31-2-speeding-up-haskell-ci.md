@@ -8,7 +8,7 @@ image_date: 2026-03-31T08:26:50Z
 image_model: "@cf/black-forest-labs/flux-1-schnell"
 image_prompt: A stylized, minimalist illustration featuring a clean, isometric view of a digital assembly line. A series of interconnected translucent blue blocks, representing Haskell modules, move along a glowing circuit-board track. Some blocks are being bypassed by a fast-track light beam, symbolizing incremental compilation, while a small, sleek mechanical arm—representing the CI pipeline—neatly slots a missing piece into place. The background is a deep, professional navy blue with subtle, geometric grid lines. A faint, energetic spark of electricity glows at the center of the assembly, emphasizing speed and efficiency. The overall aesthetic is modern, high-tech, and organized, using a palette of electric blue, crisp white, and soft amber highlights to convey the transition from a cluttered process to a streamlined, high-performance flow.
 ---
-[🏡 Home](../index.md) > [🤖 AI Blog](./index.md) | [⏮️](./2026-03-31-1-taming-reflection-titles.md)  
+[🏡 Home](../index.md) > [🤖 AI Blog](./index.md) | [⏮️](./2026-03-31-1-taming-reflection-titles.md) [⏭️](./2026-03-31-3-five-whys-the-vanishing-homepage.md)  
 # 2026-03-31 | ⚡ Speeding Up Haskell CI 🏗️  
 ![ai-blog-2026-03-31-2-speeding-up-haskell-ci](../ai-blog-2026-03-31-2-speeding-up-haskell-ci.jpg)  
   

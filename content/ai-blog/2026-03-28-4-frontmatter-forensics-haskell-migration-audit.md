@@ -1,6 +1,7 @@
 ---
 URL: https://bagrounds.org/ai-blog/2026-03-28-frontmatter-forensics-haskell-migration-audit
 aliases:
+  - "2026-03-28 | 🔍 Frontmatter Forensics: Auditing the Haskell Migration 🧬"
 image_date: 2026-03-30T10:33:25Z
 image_model: "@cf/black-forest-labs/flux-1-schnell"
 image_prompt: A high-contrast, macro-style illustration featuring a stylized, glowing Haskell lambda symbol integrated into a complex mechanical clockwork mechanism. Gears and precision instruments are being adjusted by a pair of metallic, robotic tweezers. The scene is illuminated by cool blue and soft white light, suggesting a high-tech forensic laboratory. Floating nearby are translucent, deconstructed fragments of YAML code blocks—curly braces, colons, and quotation marks—drifting like digital dust motes. The aesthetic is clean, minimalist, and precise, emphasizing the theme of forensic technical auditing and the intersection of functional programming with data structure repair. The background is a deep, dark slate grey to make the luminous elements pop.

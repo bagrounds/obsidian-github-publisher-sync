@@ -26,6 +26,9 @@ function coalesceAliases(data: { [key: string]: any }, aliases: string[]) {
 function coerceToArray(input: string | string[]): string[] | undefined {
   if (input === undefined || input === null) return undefined
 
+  // treat empty strings as absent
+  if (typeof input === "string" && input.trim() === "") return undefined
+
   // coerce to array
   if (!Array.isArray(input)) {
     input = input
@@ -34,10 +37,13 @@ function coerceToArray(input: string | string[]): string[] | undefined {
       .map((tag: string) => tag.trim())
   }
 
-  // remove all non-strings
-  return input
+  // remove all non-strings and empty strings
+  const result = input
     .filter((tag: unknown) => typeof tag === "string" || typeof tag === "number")
     .map((tag: string | number) => tag.toString())
+    .filter((tag: string) => tag.length > 0)
+
+  return result.length > 0 ? result : undefined
 }
 
 function getAliasSlugs(aliases: string[]): FullSlug[] {
@@ -78,13 +84,19 @@ export const FrontMatter: QuartzTransformerPlugin<Partial<Options>> = (userOpts)
             }
 
             const tags = coerceToArray(coalesceAliases(data, ["tags", "tag"]))
-            if (tags) data.tags = [...new Set(tags.map((tag: string) => slugTag(tag)))]
+            if (tags) {
+              data.tags = [...new Set(tags.map((tag: string) => slugTag(tag)))]
+            } else {
+              delete data.tags
+            }
 
             const aliases = coerceToArray(coalesceAliases(data, ["aliases", "alias"]))
             if (aliases) {
               data.aliases = aliases // frontmatter
               file.data.aliases = getAliasSlugs(aliases)
               allSlugs.push(...file.data.aliases)
+            } else {
+              delete data.aliases
             }
 
             if (data.permalink != null && data.permalink.toString() !== "") {

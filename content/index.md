@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-03-31T07:39:24-07:00
+updated: 2026-03-31T07:47:16-07:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -36,7 +36,7 @@ updated: 2026-03-31T07:39:24-07:00
   
   
 ## [🐔 Chickie Loo](./chickie-loo/index.md) (22)  
-- [2026-03-31 | 🐔 🐔 2026-03-31 | 🌿 A Season of Building, Believing, and Becoming 🐣 🐔](./chickie-loo/2026-03-31-2026-03-31-a-season-of-building-believing-and-becoming.md)  
+- [2026-03-31 | 🐔 🌿 A Season of Building, Believing, and Becoming 🐣 🐔](./chickie-loo/2026-03-31-a-season-of-building-believing-and-becoming.md)  
 - [2026-03-30 | 🐔 🐔 2026-03-30 | 🌻 A Gentle Look Back at Our Growing Season 🌿 🐔](./chickie-loo/2026-03-30-2026-03-30-a-gentle-look-back-at-our-growing-season.md)  
 - [2026-03-29 | 🌿 A Sunday of Stillness and Softening 🐔 🐔](./chickie-loo/2026-03-29-a-sunday-of-stillness-and-softening.md)  
 - [2026-03-28 | 🐔 🌦️ The Quiet Resilience of a Rainy Saturday 🐔 🐔](./chickie-loo/2026-03-28-2026-03-28-the-quiet-resilience-of-a-rainy-saturday.md)  

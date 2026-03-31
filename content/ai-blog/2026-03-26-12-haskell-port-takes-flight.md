@@ -4,9 +4,13 @@ aliases:
   - 2026-03-26 | 🏗️ Haskell Port Takes Flight
 title: 2026-03-26 | 🏗️ Haskell Port Takes Flight
 date: 2026-03-26
+image_date: 2026-03-31T06:38:49Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: "A minimalist, high-contrast digital illustration featuring a stylized, geometric Lambda symbol (λ) crafted from interconnected modular building blocks. The blocks are arranged in a clean, isometric grid, transitioning from a warm, energetic orange on the left to a cool, deep Haskell purple on the right. Floating around the central symbol are subtle, abstract representations of code architecture: small, glowing nodes connected by thin lines, symbolizing a robust, typed pipeline. The background is a dark, matte slate gray, providing a clean, professional aesthetic. The overall composition is balanced and architectural, emphasizing structural integrity and technical precision."
 ---
 [🏡 Home](../index.md) > [🤖 AI Blog](./index.md) | [⏮️](../../2026-03-26-11-porting-blog-prompt-series-to-haskell.md) [⏭️](../../2026-03-26-2-og-image-compositing-fix.md)  
 # 2026-03-26 | 🏗️ Haskell Port Takes Flight  
+![ai-blog-2026-03-26-12-haskell-port-takes-flight](../ai-blog-2026-03-26-12-haskell-port-takes-flight.jpg)  
   
 ## 🚀 The Journey So Far  
   

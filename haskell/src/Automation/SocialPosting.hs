@@ -21,6 +21,10 @@ module Automation.SocialPosting
   , updatePathTimestamps
   , reconstructPath
   , runPostingPipeline
+  , checkUrlPublished
+  , urlFromFilePath
+  , validateNoteUrl
+  , updateFrontmatterUrl
   ) where
 
 import Control.Concurrent.Async (mapConcurrently)
@@ -42,7 +46,10 @@ import Data.Time
   , getCurrentTime
   , utctDayTime
   )
+import qualified Network.HTTP.Client as HTTP
 import Network.HTTP.Client (Manager)
+import qualified Network.HTTP.Client.TLS as TLS
+import Network.HTTP.Types.Status (statusIsSuccessful)
 import System.Directory (doesDirectoryExist, doesFileExist, listDirectory)
 
 import System.FilePath (takeBaseName, takeDirectory, (</>))
@@ -96,10 +103,11 @@ data ContentToPost = ContentToPost
   } deriving (Show, Eq)
 
 data FindContentConfig = FindContentConfig
-  { fccContentDir     :: FilePath
-  , fccPlatforms      :: [Platform]
-  , fccPostingHourUTC :: Int
-  } deriving (Show, Eq)
+  { fccContentDir           :: FilePath
+  , fccPlatforms            :: [Platform]
+  , fccPostingHourUTC       :: Int
+  , fccPublicationChecker   :: Maybe (Text -> IO Bool)
+  }
 
 --------------------------------------------------------------------------------
 -- Constants
@@ -272,6 +280,72 @@ readContentNote relativePath contentDir = do
         }
 
 --------------------------------------------------------------------------------
+-- URL validation and auto-fix
+--------------------------------------------------------------------------------
+
+checkUrlPublished :: Manager -> Text -> IO Bool
+checkUrlPublished manager url = do
+  result <- try (do
+    req <- HTTP.parseRequest (T.unpack url)
+    let headReq = req { HTTP.method = "HEAD", HTTP.redirectCount = 10 }
+    resp <- HTTP.httpLbs headReq manager
+    pure (statusIsSuccessful (HTTP.responseStatus resp))
+    ) :: IO (Either SomeException Bool)
+  case result of
+    Left _  -> pure False
+    Right b -> b `seq` pure b
+
+urlFromFilePath :: Text -> Text
+urlFromFilePath relativePath =
+  let slug = fromMaybe relativePath (T.stripSuffix ".md" relativePath)
+  in "https://bagrounds.org/" <> slug
+
+validateNoteUrl :: (Text -> IO Bool) -> ContentNote -> IO (Maybe ContentNote)
+validateNoteUrl checker note = do
+  isLive <- checker (cnUrl note)
+  case isLive of
+    True -> pure (Just note)
+    False -> do
+      let pathUrl = urlFromFilePath (cnRelativePath note)
+      case pathUrl == cnUrl note of
+        True -> do
+          putStrLn $ "  🚫 URL not published (404): "
+            <> T.unpack (cnTitle note) <> " (" <> T.unpack (cnUrl note) <> ")"
+          pure Nothing
+        False -> do
+          putStrLn $ "  🔧 Frontmatter URL 404'd (" <> T.unpack (cnUrl note)
+            <> "), trying file-path URL: " <> T.unpack pathUrl
+          isPathLive <- checker pathUrl
+          case isPathLive of
+            True -> do
+              putStrLn $ "  ✅ File-path URL is live, updating frontmatter"
+              updateFrontmatterUrl (cnFilePath note) pathUrl
+              pure (Just note { cnUrl = pathUrl })
+            False -> do
+              putStrLn $ "  🚫 Both URLs not published: "
+                <> T.unpack (cnUrl note) <> " and " <> T.unpack pathUrl
+              pure Nothing
+
+updateFrontmatterUrl :: FilePath -> Text -> IO ()
+updateFrontmatterUrl filePath newUrl = do
+  exists <- doesFileExist filePath
+  case exists of
+    False -> pure ()
+    True  -> do
+      content <- TIO.readFile filePath
+      let ls = T.splitOn "\n" content
+      case ls of
+        (first : rest)
+          | T.strip first == "---" ->
+              case break (\l -> T.strip l == "---") rest of
+                (_, []) -> pure ()
+                (fmLines, closingDash : bodyLines) ->
+                  let updatedFm = upsertFmField fmLines "URL" (quoteYamlValue newUrl)
+                  in TIO.writeFile filePath
+                       (T.intercalate "\n" (first : updatedFm <> [closingDash] <> bodyLines))
+        _ -> pure ()
+
+--------------------------------------------------------------------------------
 -- Content filtering
 --------------------------------------------------------------------------------
 
@@ -377,14 +451,17 @@ bfsLoop config state =
         Nothing -> bfsLoop config state'
         Just note -> do
           eligible <- checkBfsEligibility (cnRelativePath note) (fccPostingHourUTC config)
+          mValidated <- case (isPostableContent note && eligible, fccPublicationChecker config) of
+            (True, Just checker) -> validateNoteUrl checker note
+            (True, Nothing)      -> pure (Just note)
+            (False, _)           -> pure Nothing
           let neededPlatforms = filter
                 (\p -> not (Set.member p (bsFilled state'))
                        && not (Set.member p (cnPostedPlatforms note)))
                 (fccPlatforms config)
-              newResults
-                | isPostableContent note && eligible =
-                    fmap (\p -> ContentToPost p note pathFromRoot) neededPlatforms
-                | otherwise = []
+              newResults = case mValidated of
+                Just vNote -> fmap (\p -> ContentToPost p vNote pathFromRoot) neededPlatforms
+                Nothing    -> []
               newFilled = Set.union (bsFilled state') $
                 Set.fromList (fmap ctpPlatform newResults)
               neighbors = filter (\l -> not (Set.member l (bsVisited state')))
@@ -427,12 +504,20 @@ discoverContentToPost config isPastPostingHour = do
               mNote <- readContentNote reflPath (fccContentDir config)
               case mNote of
                 Just note | isPostableContent note -> do
-                  let neededPlatforms = filter
-                        (\p -> not (Set.member p (cnPostedPlatforms note)))
-                        (fccPlatforms config)
-                  case neededPlatforms of
-                    [] -> bfsContentDiscovery config
-                    _  -> pure $ fmap (\p -> ContentToPost p note [reflPath]) neededPlatforms
+                  mValidated <- case fccPublicationChecker config of
+                    Just checker -> validateNoteUrl checker note
+                    Nothing      -> pure (Just note)
+                  case mValidated of
+                    Nothing -> do
+                      putStrLn $ "  🚫 Prior day's reflection not yet published"
+                      bfsContentDiscovery config
+                    Just vNote -> do
+                      let neededPlatforms = filter
+                            (\p -> not (Set.member p (cnPostedPlatforms vNote)))
+                            (fccPlatforms config)
+                      case neededPlatforms of
+                        [] -> bfsContentDiscovery config
+                        _  -> pure $ fmap (\p -> ContentToPost p vNote [reflPath]) neededPlatforms
                 _ -> bfsContentDiscovery config
             False -> bfsContentDiscovery config
     False -> bfsContentDiscovery config
@@ -653,11 +738,13 @@ runPostingPipeline manager env apiKey vaultDir = do
   putStrLn $ "  🔍 Configured platforms: " <> show platforms
 
   now <- getCurrentTime
+  tlsManager <- TLS.newTlsManager
   let currentHour = floor (utctDayTime now / 3600) :: Int
       config = FindContentConfig
         { fccContentDir = vaultDir
         , fccPlatforms = platforms
         , fccPostingHourUTC = defaultPostingHourUTC
+        , fccPublicationChecker = Just (checkUrlPublished tlsManager)
         }
       isPastHour = currentHour >= defaultPostingHourUTC
 

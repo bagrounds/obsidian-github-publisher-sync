@@ -52,7 +52,7 @@ import Automation.BlogSeriesConfig
   , lookupSeries
   )
 import Automation.DailyReflection (updateDailyReflection)
-import Automation.DailyUpdates (UpdateCategory (..), UpdateLink (..), addUpdateLinksToReflection)
+import Automation.DailyUpdates (UpdateCategory (..), UpdateLink (..), addUpdateLinksToReflection, extractTitleFromFile)
 import Automation.Gemini
   ( GenerationConfig (..)
   , GeminiResponse (..)
@@ -547,9 +547,9 @@ runBackfillImages manager repoRoot vaultDir = do
 
   -- 6. Add update links from image backfill results
   let reflectionsDir = vaultDir </> "reflections"
-  let imageUpdateLinks = fmap (\f ->
-        let title = T.replace ".md" "" (T.replace "ai-blog/" "" f)
-        in UpdateLink f title
+  imageUpdateLinks <- traverse (\f -> do
+        title <- extractTitleFromFile (vaultDir </> T.unpack f)
+        pure (UpdateLink f title)
         ) imageModifiedFiles
   case imageUpdateLinks of
     [] -> pure ()
@@ -576,6 +576,21 @@ runInternalLinking manager vaultDir = do
         <> T.pack (show (IL.lrFilesVisited result)) <> " visited, "
         <> T.pack (show (IL.lrFilesModified result)) <> " modified, "
         <> T.pack (show (IL.lrTotalLinksAdded result)) <> " links added"
+
+  -- Add update links to daily reflection for modified files
+  let modifiedResults = filter IL.frModified (IL.lrFileResults result)
+  case modifiedResults of
+    [] -> pure ()
+    _  -> do
+      today <- todayPacific
+      let todayText = unDateStr today
+          reflectionsDir = vaultDir </> "reflections"
+      links <- traverse (\fr -> do
+        title <- extractTitleFromFile (vaultDir </> T.unpack (IL.frRelativePath fr))
+        pure (UpdateLink (IL.frRelativePath fr) title)
+        ) modifiedResults
+      _ <- addUpdateLinksToReflection reflectionsDir todayText InternalLinkUpdate links
+      pure ()
 
   logMsg "✅ internal-linking"
 

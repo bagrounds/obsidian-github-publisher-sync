@@ -60,7 +60,7 @@
 
 ### 🖼️ Images
 
-- [[ai-blog/2026-03-28-my-post|my-post]]
+- [[ai-blog/2026-03-28-my-post|2026-03-28 | 📝 My Post 🤖]]
 
 ### 📢 Social Posts
 
@@ -86,7 +86,7 @@
 - [[path/to/file|File Title]]
 ```
 
-📄 The title is extracted from the file's frontmatter `title` field or H1 heading.
+📄 The title is extracted from the linked-to file's frontmatter `title` field, which matches the note's alias. Falls back to the filename if no title is found.
 📢 Social posting links use the specific page title from the `ContentNote` rather than a generic label.
 
 ## 📍 Section Placement

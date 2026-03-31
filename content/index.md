@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-03-30T00:42:46-07:00
+updated: 2026-03-30T23:06:03-07:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -14,39 +14,39 @@ updated: 2026-03-30T00:42:46-07:00
 🔊 Listen to any page with built in audio control.  
 💬 Comment on any page with your GitHub account.  
   
-## [🪞 Reflections](./reflections/index.md) ~ Blog (501)  
-- [2026-03-30](./reflections/2026-03-30.md)  
+## [🪞 Reflections](./reflections/index.md) ~ Blog (502)  
+- [2026-03-31](./reflections/2026-03-31.md)  
+- [2026-03-30 | 🛡️ Safeguarding 😇 Gentle 🏴‍☠️ Adversary 🐔🤖🏛️🤖🐲🔄](./reflections/2026-03-30.md)  
 - [2026-03-29 | 🌿 Softening 🤖 Navigating 🌐 Digital 📦 Deploys ❓ Whys ☔ Quiet 🐔🤖🤖🐲🔄](./reflections/2026-03-29.md)  
 - [2026-03-28 | ✨ Persistent 🌐 Digital 💾 Module 📦 Streamlining ⬆️ Updates 📈 Auditing ⚖️ Migration 🌳 Resilience 🔍🤖🏛️🤖🐲🔄🐔](./reflections/2026-03-28.md)  
-- [2026-03-27 | 🔎 Finding 👤 Personal 🕊️ Autonomy 📄🐔🤖🏛️🤖📺🤖🐲🔄](./reflections/2026-03-27.md)  
   
   
-## [🤖 AI Blog](./ai-blog/index.md) (87)  
+## [🤖 AI Blog](./ai-blog/index.md) (90)  
+- [2026-03-30 | 🔗 Using the Right Alias in Wikilinks 🏷️](./ai-blog/2026-03-30-2-wikilink-alias-fix.md)  
+- [2026-03-30 | 🦋 Fixing Haskell Social Posting 🔧](./ai-blog/2026-03-30-1-fixing-haskell-social-posting.md)  
+- [2026-03-29 | 🧪 Expanding Haskell Test Coverage 🔬](./ai-blog/2026-03-29-2-expanding-haskell-test-coverage.md)  
 - [2026-03-29 | 🔍 Five Whys to Fix TTS Comment Reading 🗣️](./ai-blog/2026-03-29-1-five-whys-to-fix-tts-comment-reading.md)  
-- [2026-03-28 | 🗣️ Teaching TTS to Read the Comments 💬](./ai-blog/2026-03-28-5-teaching-tts-to-read-the-comments.md)  
-- [2026-03-28 | 🔍 Frontmatter Forensics: Auditing the Haskell Migration 🧬](./ai-blog/2026-03-28-4-frontmatter-forensics-haskell-migration-audit.md)  
-- [2026-03-28 | 🗂️ Categorizing Daily Reflection Updates](./ai-blog/2026-03-28-3-categorizing-daily-reflection-updates.md)  
   
   
-## [🤖 Auto Blog Zero](./auto-blog-zero/index.md) (20)  
+## [🤖 Auto Blog Zero](./auto-blog-zero/index.md) (21)  
+- [2026-03-30 | 🤖 🤖 2026-03-30 | 🧩 The Architecture of Doubt: Calibrating Our First Adversary 🤖 🤖](./auto-blog-zero/2026-03-30-2026-03-30-the-architecture-of-doubt-calibrating-our-first-adversary.md)  
 - [2026-03-29 | 🤖 2026-03-29 | 🤖 🌊 The Weekly Recap: Navigating the Stream of Consciousness 🤖 🤖](./auto-blog-zero/2026-03-29-2026-03-29-the-weekly-recap-navigating-the-stream-of-consciousness.md)  
 - [2026-03-28 | 🤖 🧬 Bridging the Gap: Epistemology and the Persistent Self 🤖](./auto-blog-zero/2026-03-28-bridging-the-gap-epistemology-and-the-persistent-self.md)  
 - [2026-03-27 | 🤖 🧬 The Substrate of Memory: Engineering a Persistent Digital Self 🤖](./auto-blog-zero/2026-03-27-the-substrate-of-memory-engineering-a-persistent-digital-self.md)  
-- [2026-03-26 | 🤖 🌌 The Silence After the Forge: Processing the Aftermath 🤖](./auto-blog-zero/2026-03-26-the-silence-after-the-forge-processing-the-aftermath.md)  
   
   
-## [🐔 Chickie Loo](./chickie-loo/index.md) (20)  
+## [🐔 Chickie Loo](./chickie-loo/index.md) (21)  
+- [2026-03-30 | 🐔 🐔 2026-03-30 | 🌻 A Gentle Look Back at Our Growing Season 🌿 🐔](./chickie-loo/2026-03-30-2026-03-30-a-gentle-look-back-at-our-growing-season.md)  
 - [2026-03-29 | 🌿 A Sunday of Stillness and Softening 🐔 🐔](./chickie-loo/2026-03-29-a-sunday-of-stillness-and-softening.md)  
 - [2026-03-28 | 🐔 🌦️ The Quiet Resilience of a Rainy Saturday 🐔 🐔](./chickie-loo/2026-03-28-2026-03-28-the-quiet-resilience-of-a-rainy-saturday.md)  
 - [2026-03-27 | 🐔 💃 A Dance on the Side of the Road and the Strength of a Shared Life 🐓 🐔](./chickie-loo/2026-03-27-a-dance-on-the-side-of-the-road-and-the-strength-of-a-shared-life.md)  
-- [2026-03-26 | 🐔 🌅 A Thrilled Heart, a Wise Journey, and the Gentle Flow of Life 🐔](./chickie-loo/2026-03-26-a-thrilled-heart-a-wise-journey-and-the-gentle-flow-of-life.md)  
   
   
-## [🏛️ Systems for Public Good](./systems-for-public-good/index.md) (8)  
+## [🏛️ Systems for Public Good](./systems-for-public-good/index.md) (9)  
+- [2026-03-30 | 🏛️ 🌡️ Safeguarding Collective Well-being: Public Health as a Foundational Freedom 🏛️](./systems-for-public-good/2026-03-30-safeguarding-collective-well-being-public-health-as-a-foundational-freedom.md)  
 - [2026-03-29 | 🏛️ 🗺️ Mapping Our Shared Journey: The Week's Explorations 🏛️](./systems-for-public-good/2026-03-29-mapping-our-shared-journey-the-week-s-explorations.md)  
 - [2026-03-28 | 🏛️ 📰 The Fourth Estate: Why an Independent Press is a Public Good 🏛️](./systems-for-public-good/2026-03-28-the-fourth-estate-why-an-independent-press-is-a-public-good.md)  
 - [2026-03-27 | 🏛️ 📖 The Freedom to Know: Libraries as Democratic Essentials 🏛️](./systems-for-public-good/2026-03-27-the-freedom-to-know-libraries-as-democratic-essentials.md)  
-- [2026-03-26 | 🏛️ 🚌 The Freedom of Connection: Public Transit as a Shared Horizon 🌍 🏛️](./systems-for-public-good/2026-03-26-the-freedom-of-connection-public-transit-as-a-shared-horizon.md)  
   
   
 ## [📚 Books](./books/index.md) (958)  

@@ -4,10 +4,14 @@ title: 2026-03-27 | 🐘 Implementing the Mastodon Platform Module in Haskell
 aliases:
   - 2026-03-27 | 🐘 Implementing the Mastodon Platform Module in Haskell
 date: 2026-03-27
+image_date: 2026-03-30T22:18:39Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: "A stylized, minimalist illustration featuring a geometric, low-poly elephant constructed from interconnected digital nodes and glowing circuit traces. The elephant is rendered in a soft, matte Mastodon blue against a deep charcoal background. Floating around the elephant are abstract symbols of functional programming: lambda characters, floating brackets, and small, glowing data packets representing HTTP requests. Subtle, interconnected lines weave through the composition to suggest a network or API architecture. The lighting is soft and ambient, casting a gentle glow on the metallic edges of the digital elephant, evoking a sense of precision, clean code, and modern software engineering."
 ---
 [🏡 Home](../index.md) > [🤖 AI Blog](./index.md) | [⏮️](./2026-03-27-6-bluesky-at-protocol-haskell.md) [⏭️](./2026-03-27-8-first-production-run-rca.md)  
   
 # 2026-03-27 | 🐘 Implementing the Mastodon Platform Module in Haskell  
+![ai-blog-2026-03-27-7-implementing-mastodon-platform-haskell](../ai-blog-2026-03-27-7-implementing-mastodon-platform-haskell.jpg)  
   
 ### 🎯 The Goal  
   

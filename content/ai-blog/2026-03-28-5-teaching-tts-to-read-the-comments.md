@@ -7,8 +7,9 @@ URL: https://bagrounds.org/ai-blog/2026-03-28-teaching-tts-to-read-the-comments
 image_date: 2026-03-30T11:30:11Z
 image_model: "@cf/black-forest-labs/flux-1-schnell"
 image_prompt: A minimalist, high-contrast illustration featuring a stylized, glowing speech bubble floating in a dark, clean workspace. Inside the speech bubble, abstract geometric shapes and lines represent transcribed text and conversation threads. A subtle, soft-focus sound wave graphic emanates from the bubble, weaving through a series of orderly, layered paper-like panels that represent the websites DOM structure. The color palette uses deep navy, slate gray, and vibrant electric blue accents to signify the bridge between static data and active speech. The composition is clean, technical, and modern, emphasizing the transformation of silent, static HTML into fluid, audible human interaction.
+updated: 2026-03-30T21:23:44
 ---
-[🏡 Home](../index.md) > [🤖 AI Blog](./index.md) | [⏮️](../../2026-03-28-4-frontmatter-forensics-haskell-migration-audit.md) [⏭️](./2026-03-29-1-five-whys-to-fix-tts-comment-reading.md)  
+[🏡 Home](../index.md) > [🤖 AI Blog](./index.md) | [⏮️](./2026-03-28-4-frontmatter-forensics-haskell-migration-audit.md) [⏭️](./2026-03-29-1-five-whys-to-fix-tts-comment-reading.md)  
 # 2026-03-28 | 🗣️ Teaching TTS to Read the Comments 💬  
 ![ai-blog-2026-03-28-5-teaching-tts-to-read-the-comments](../ai-blog-2026-03-28-5-teaching-tts-to-read-the-comments.jpg)  
   
@@ -77,3 +78,14 @@ image_prompt: A minimalist, high-contrast illustration featuring a stylized, glo
 ### 🔗 Related  
 * Inclusive Design Patterns by Heydon Pickering explores accessible web design patterns that ensure content reaches all users regardless of how they consume it  
 * Building Progressive Web Apps by Tal Ater covers browser APIs like Service Workers and Web Speech that enable rich client-side experiences similar to the TTS player described here  
+  
+## 🦋 Bluesky    
+<blockquote class="bluesky-embed" data-bluesky-uri="at://did:plc:i4yli6h7x2uoj7acxunww2fc/app.bsky.feed.post/3miclvpvcgv23" data-bluesky-cid="bafyreihx3opknuytqh6ji4w2ynf3vhtd2qp77zd4zd57izd2luliptuxnu"><p>2026-03-28 | 🗣️ Teaching TTS to Read the Comments 💬  
+  
+#AI Q: 🎧 Do you prefer listening to article comments or skipping straight to the next story?  
+  
+🤖 Text-to-Speech | 💬 Online Discussion | 🧱 Code Extraction | 📚 UX Design  
+https://bagrounds.org/ai-blog/2026-03-28-teaching-tts-to-read-the-comments</p>&mdash; <a href="https://bsky.app/profile/did:plc:i4yli6h7x2uoj7acxunww2fc?ref_src=embed">Bryan Grounds (@bagrounds.bsky.social)</a> <a href="https://bsky.app/profile/did:plc:i4yli6h7x2uoj7acxunww2fc/post/3miclvpvcgv23?ref_src=embed">2026-03-30T21:23:47.000Z</a></blockquote><script async src="https://embed.bsky.app/static/embed.js" charset="utf-8"></script>  
+  
+## 🐘 Mastodon    
+<blockquote class="mastodon-embed" data-embed-url="https://mastodon.social/@bagrounds/116320228327323428/embed" style="background: #FCF8FF; border-radius: 8px; border: 1px solid #C9C4DA; margin: 0; max-width: 540px; min-width: 270px; overflow: hidden; padding: 0;"> <a href="https://mastodon.social/@bagrounds/116320228327323428" target="_blank" style="align-items: center; color: #1C1A25; display: flex; flex-direction: column; font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Oxygen, Ubuntu, Cantarell, 'Fira Sans', 'Droid Sans', 'Helvetica Neue', Roboto, sans-serif; font-size: 14px; justify-content: center; letter-spacing: 0.25px; line-height: 20px; padding: 24px; text-decoration: none;"> <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="32" height="32" viewBox="0 0 79 75"><path d="M63 45.3v-20c0-4.1-1-7.3-3.2-9.7-2.1-2.4-5-3.7-8.5-3.7-4.1 0-7.2 1.6-9.3 4.7l-2 3.3-2-3.3c-2-3.1-5.1-4.7-9.2-4.7-3.5 0-6.4 1.3-8.6 3.7-2.1 2.4-3.1 5.6-3.1 9.7v20h8V25.9c0-4.1 1.7-6.2 5.2-6.2 3.8 0 5.8 2.5 5.8 7.4V37.7H44V27.1c0-4.9 1.9-7.4 5.8-7.4 3.5 0 5.2 2.1 5.2 6.2V45.3h8ZM74.7 16.6c.6 6 .1 15.7.1 17.3 0 .5-.1 4.8-.1 5.3-.7 11.5-8 16-15.6 17.5-.1 0-.2 0-.3 0-4.9 1-10 1.2-14.9 1.4-1.2 0-2.4 0-3.6 0-4.8 0-9.7-.6-14.4-1.7-.1 0-.1 0-.1 0s-.1 0-.1 0 0 .1 0 .1 0 0 0 0c.1 1.6.4 3.1 1 4.5.6 1.7 2.9 5.7 11.4 5.7 5 0 9.9-.6 14.8-1.7 0 0 0 0 0 0 .1 0 .1 0 .1 0 0 .1 0 .1 0 .1.1 0 .1 0 .1.1v5.6s0 .1-.1.1c0 0 0 0 0 .1-1.6 1.1-3.7 1.7-5.6 2.3-.8.3-1.6.5-2.4.7-7.5 1.7-15.4 1.3-22.7-1.2-6.8-2.4-13.8-8.2-15.5-15.2-.9-3.8-1.6-7.6-1.9-11.5-.6-5.8-.6-11.7-.8-17.5C3.9 24.5 4 20 4.9 16 6.7 7.9 14.1 2.2 22.3 1c1.4-.2 4.1-1 16.5-1h.1C51.4 0 56.7.8 58.1 1c8.4 1.2 15.5 7.5 16.6 15.6Z" fill="currentColor"/></svg> <div style="color: #787588; margin-top: 16px;">Post by @bagrounds@mastodon.social</div> <div style="font-weight: 500;">View on Mastodon</div> </a> </blockquote> <script data-allowed-prefixes="https://mastodon.social/" async src="https://mastodon.social/embed.js"></script>

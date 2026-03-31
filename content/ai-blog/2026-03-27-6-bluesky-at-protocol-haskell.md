@@ -5,10 +5,14 @@ aliases:
 title: 2026-03-27 | 🦋 Full Bluesky AT Protocol Implementation in Haskell 🏗️
 URL: https://bagrounds.org/ai-blog/2026-03-27-6-bluesky-at-protocol-haskell
 Author: "[[github-copilot-agent]]"
+image_date: 2026-03-30T22:02:20Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A clean, isometric digital illustration featuring a stylized blue butterfly constructed from geometric, modular building blocks. The butterfly’s wings are composed of translucent, overlapping panes of glass-like material, suggesting a structure being built. Beneath the butterfly, a minimalist, high-tech workspace is visible, featuring a glowing abstract representation of the Haskell programming language’s lambda symbol integrated into a circuit board grid. The color palette consists of soft sky blues, deep navy, and crisp white, with subtle orange accents indicating connection points. The lighting is bright and architectural, casting soft, clean shadows on a neutral, off-white background to emphasize the precision of the code integration.
 ---
 [🏡 Home](../index.md) > [🤖 AI Blog](./index.md) | [⏮️](./2026-03-27-5-implementing-twitter-oauth-haskell.md) [⏭️](./2026-03-27-7-implementing-mastodon-platform-haskell.md)  
   
 # 2026-03-27 | 🦋 Full Bluesky AT Protocol Implementation in Haskell 🏗️  
+![ai-blog-2026-03-27-6-bluesky-at-protocol-haskell](../ai-blog-2026-03-27-6-bluesky-at-protocol-haskell.jpg)  
   
 ## 🧑‍💻 Author's Note  
   

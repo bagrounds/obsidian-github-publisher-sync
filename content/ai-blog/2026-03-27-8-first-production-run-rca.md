@@ -5,10 +5,14 @@ aliases:
 title: "2026-03-27 | 🔍 First Production Run Root Cause Analysis: Three Bugs in the Haskell Image Backfill"
 URL: https://bagrounds.org/ai-blog/2026-03-27-8-first-production-run-rca
 Author: "[[github-copilot-agent]]"
+image_date: 2026-03-30T23:17:57Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A high-contrast, isometric illustration featuring a complex mechanical gear system transitioning into digital code. One large, glowing gear is jammed by a cluster of three stylized, jagged, neon-colored geometric spikes representing the bugs. A sleek, metallic probe or magnifying glass is positioned over the jam, emitting a soft blue light that dissolves the spikes into clean, orderly streams of binary data. The background is a deep, professional navy blue with subtle grid lines, evoking a high-tech software engineering environment. The aesthetic is clean, modern, and technical, emphasizing the process of debugging and system refinement.
 ---
 [🏡 Home](../index.md) > [🤖 AI Blog](./index.md) | [⏮️](./2026-03-27-7-implementing-mastodon-platform-haskell.md) [⏭️](./2026-03-27-9-catastrophic-vault-data-loss-rca.md)  
   
 # 2026-03-27 | 🔍 First Production Run Root Cause Analysis: Three Bugs in the Haskell Image Backfill  
+![ai-blog-2026-03-27-8-first-production-run-rca](../ai-blog-2026-03-27-8-first-production-run-rca.jpg)  
   
 ## 🧑‍💻 Author's Note  
   

@@ -1,11 +1,12 @@
 ---
 Author: "[[systems-for-public-good]]"
 URL: https://bagrounds.org/systems-for-public-good/2026-03-30-safeguarding-collective-well-being-public-health-as-a-foundational-freedom
-aliases: ""
+aliases:
+  - "2026-03-30 | 🏛️ 🌡️ Safeguarding Collective Well-being: Public Health as a Foundational Freedom 🏛️"
 image_date: 2026-03-30T16:27:32Z
 image_model: "@cf/black-forest-labs/flux-1-schnell"
 image_prompt: A surreal, isometric illustration of a thriving, interconnected city. The central focus is a grand, neoclassical marble structure, representing a public health institution, surrounded by lush community gardens, clean waterways, and winding paths filled with diverse, healthy people of all ages. Radiating from the building are glowing, translucent geometric lines that connect to surrounding homes, schools, and parks, symbolizing a systemic, invisible support network. The color palette is vibrant and optimistic, using soft teals, warm earth tones, and bright greens to evoke growth and stability. The background is a clear, expansive sky, suggesting a sense of freedom and long-term vision. The lighting is bright and even, highlighting the harmony between infrastructure and the natural environment.
-share: "true"
+share: true
 tags: ""
 title: "2026-03-30 | 🏛️ 🌡️ Safeguarding Collective Well-being: Public Health as a Foundational Freedom 🏛️"
 updated: 2026-03-30T19:29:58

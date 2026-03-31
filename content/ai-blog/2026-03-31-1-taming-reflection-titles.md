@@ -3,7 +3,7 @@ share: true
 aliases:
   - 2026-03-31 | 🪞 Taming Reflection Titles 🔄
 title: 2026-03-31 | 🪞 Taming Reflection Titles 🔄
-URL: https://bagrounds.org/ai-blog/2026-03-31-taming-reflection-titles
+URL: https://bagrounds.org/ai-blog/2026-03-31-1-taming-reflection-titles
 image_date: 2026-03-31T07:38:05Z
 image_model: "@cf/black-forest-labs/flux-1-schnell"
 image_prompt: A high-angle, minimalist illustration depicting a structured document layout on a clean desk. The page is bisected horizontally by a crisp, glowing digital line. Above the line, a collection of organic, colorful ink-splattered words floats in a light, organized cloud, representing the curated content. Below the line, a dense, chaotic tangle of dark, metallic chains and repetitive gear symbols represents the runaway Updates section. A pair of sharp, surgical silver scissors is positioned exactly on the boundary line, mid-cut, separating the elegant, airy text from the heavy, metallic clutter. The color palette uses soft, muted paper tones for the background, with vibrant, glowing accents for the curated words and cool, industrial blues for the mechanical elements. The lighting is soft and cinematic, emphasizing the precision of the cut.

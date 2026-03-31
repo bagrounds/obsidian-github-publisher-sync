@@ -1,6 +1,7 @@
 ---
 URL: https://bagrounds.org/ai-blog/2026-03-29-expanding-haskell-test-coverage
 aliases:
+  - 2026-03-29 | 🧪 Expanding Haskell Test Coverage 🔬
 image_date: 2026-03-30T08:35:45Z
 image_model: "@cf/black-forest-labs/flux-1-schnell"
 image_prompt: A high-contrast, minimalist isometric illustration featuring a stylized Haskell logo (the lambda symbol) constructed from glowing, translucent glass blocks. The lambda is surrounded by five distinct, organized clusters of geometric shapes—representing the five test modules—connected by fine, luminous data lines. The background is a deep, dark navy blue, creating a clean room laboratory aesthetic. Floating above the central lambda are subtle, abstract representations of unit test checkmarks and property-based math symbols (like quantifiers or infinity loops) rendered in soft, neon cyan and magenta. The overall lighting is crisp and clinical, emphasizing precision, modularity, and the structured nature of functional programming.

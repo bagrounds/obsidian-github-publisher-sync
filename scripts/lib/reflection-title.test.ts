@@ -97,6 +97,13 @@ describe("extractTrailingEmojis", () => {
     const result = extractTrailingEmojis(note);
     assert.equal(result, "📚");
   });
+
+  it("excludes the Updates section heading", () => {
+    const note = "## [[a|📚 Books]]\n## 🔄 Updates\n";
+    const result = extractTrailingEmojis(note);
+    assert.equal(result, "📚");
+    assert.ok(!result.includes("🔄"));
+  });
 });
 
 // ---------------------------------------------------------------------------
@@ -178,6 +185,25 @@ title: test
 `;
     const titles = extractLinkedTitles(note);
     assert.ok(titles.some((t) => t === "A Gentle Afternoon"));
+  });
+
+  it("excludes list items from the Updates section", () => {
+    const note = `---
+title: test
+---
+## [[books/index|📚 Books]]
+- [[books/foo|🕵️ Fugitive Telemetry]]
+
+## 🔄 Updates
+### 🔗 Internal Links
+- [[ai-blog/2026-03-28-post|Ripping Out the Vault Cache]]
+- [[chickie-loo/2026-03-27-dance|A Dance on the Side of the Road]]
+`;
+    const titles = extractLinkedTitles(note);
+    assert.ok(titles.some((t) => t.includes("Fugitive Telemetry")));
+    assert.ok(!titles.some((t) => t.includes("Ripping Out")));
+    assert.ok(!titles.some((t) => t.includes("Dance")));
+    assert.equal(titles.length, 1);
   });
 });
 

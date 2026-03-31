@@ -61,6 +61,12 @@ extractTrailingEmojisTests = testGroup "extractTrailingEmojis"
       extractTrailingEmojis "just body text" @?= ""
   , testCase "returns empty for H2 without emojis" $
       extractTrailingEmojis "## Plain Heading\nbody" @?= ""
+  , testCase "excludes the Updates section heading" $
+      let content = "## \x1F4D6 Books\n## \x1F504 Updates\nbody"
+          result = extractTrailingEmojis content
+      in do
+          assertBool "should contain book emoji" $ T.isInfixOf "\x1F4D6" result
+          assertBool "should not contain updates emoji" $ not $ T.isInfixOf "\x1F504" result
   ]
 
 extractHeadingEmojisTests :: TestTree
@@ -81,6 +87,14 @@ extractLinkedTitlesTests = testGroup "extractLinkedTitles"
   , testCase "returns empty for content without list items" $
       let titles = extractLinkedTitles "---\ntitle: test\n---\nNo list items"
       in titles @?= []
+  , testCase "excludes list items from the Updates section" $
+      let content = "---\ntitle: test\n---\n- [[books/foo|My Book]]\n\n## \x1F504 Updates\n### \x1F517 Internal Links\n- [[ai-blog/post|Vault Cache]]\n- [[other/file|Other File]]"
+          titles = extractLinkedTitles content
+      in do
+          assertBool "should find book title" $ any (T.isInfixOf "My Book") titles
+          assertBool "should not find update title" $ not $ any (T.isInfixOf "Vault Cache") titles
+          assertBool "should not find other update" $ not $ any (T.isInfixOf "Other File") titles
+          titles @?= ["My Book"]
   ]
 
 parseReflectionTitleTests :: TestTree

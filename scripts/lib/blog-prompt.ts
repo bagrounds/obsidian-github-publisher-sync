@@ -133,7 +133,6 @@ aliases:
 title: ${quoted}
 URL: ${url}
 Author: ${author}
-tags:
 ---
 ${series.navLink}${backLink}
 # ${displayTitle}

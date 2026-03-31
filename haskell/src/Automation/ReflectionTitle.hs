@@ -18,6 +18,7 @@ import Data.List (nub)
 import Data.Text (Text)
 import qualified Data.Text as T
 
+import Automation.DailyUpdates (updatesSectionHeader)
 import Automation.Frontmatter (parseFrontmatter)
 
 defaultTitleModel :: Text
@@ -52,10 +53,13 @@ isEmojiOrSpace c =
     || (c >= '\x1fa00' && c <= '\x1fa6f')
     || (c >= '\x1fa70' && c <= '\x1faff')
 
+isUpdatesSectionHeading :: Text -> Bool
+isUpdatesSectionHeading l = T.stripEnd l == updatesSectionHeader
+
 extractTrailingEmojis :: Text -> Text
 extractTrailingEmojis noteContent =
   let ls = T.lines noteContent
-      h2Lines = filter (T.isPrefixOf "## ") ls
+      h2Lines = filter (\l -> T.isPrefixOf "## " l && not (isUpdatesSectionHeading l)) ls
       extracted = fmap extractHeadingEmojis h2Lines
       deduped = nub $ filter (not . T.null) extracted
   in T.concat deduped
@@ -76,7 +80,8 @@ extractLinkedTitles :: Text -> [Text]
 extractLinkedTitles noteContent =
   let (_, body) = parseFrontmatter noteContent
       ls = T.lines body
-      listItems = filter (\l -> T.isPrefixOf "- " (T.stripStart l)) ls
+      lsBeforeUpdates = takeWhile (not . isUpdatesSectionHeading) ls
+      listItems = filter (\l -> T.isPrefixOf "- " (T.stripStart l)) lsBeforeUpdates
       titles = concatMap extractTitlesFromLine listItems
   in filter (not . T.null) $ fmap stripTitlePrefixes titles
 

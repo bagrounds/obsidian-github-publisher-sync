@@ -19,6 +19,7 @@
 
 import yaml from "js-yaml";
 import { isRetriableError } from "../generate-blog-post.ts";
+import { UPDATES_SECTION_HEADER } from "./daily-updates.ts";
 
 // ---------------------------------------------------------------------------
 // Constants
@@ -57,9 +58,13 @@ export const extractHeadingEmojis = (heading: string): string => {
   return emojiMatch ? emojiMatch[1]!.trim() : "";
 };
 
+const isUpdatesSectionHeading = (line: string): boolean =>
+  line.trimEnd() === UPDATES_SECTION_HEADER;
+
 /**
  * Extracts trailing category emojis from all H2 section headings in a note.
  * Returns a deduplicated string of leading emojis from each section.
+ * Excludes the Updates section heading.
  */
 export const extractTrailingEmojis = (noteContent: string): string => {
   const lines = noteContent.split("\n");
@@ -67,7 +72,7 @@ export const extractTrailingEmojis = (noteContent: string): string => {
   const emojis: string[] = [];
 
   lines
-    .filter((line) => /^##\s/.test(line))
+    .filter((line) => /^##\s/.test(line) && !isUpdatesSectionHeading(line))
     .forEach((line) => {
       const extracted = extractHeadingEmojis(line);
       if (extracted && !seen.has(extracted)) {
@@ -90,17 +95,23 @@ export const stripTitlePrefixes = (title: string): string =>
     .replace(/^[\p{Emoji_Presentation}\p{Emoji}\u200d\ufe0f\s]+/u, "")
     .trim();
 
+const takeUntilUpdatesSection = (lines: readonly string[]): readonly string[] => {
+  const idx = lines.findIndex(isUpdatesSectionHeading);
+  return idx >= 0 ? lines.slice(0, idx) : lines;
+};
+
 /**
  * Extracts the display text of linked content from reflection list items.
  * Matches both markdown links `[Display Text](path)` and wiki links `[[path|Display Text]]`.
  * Only extracts from list items (lines starting with `-`), not headings.
+ * Excludes list items from the Updates section.
  * Strips date prefixes and emoji prefixes from the extracted titles.
  */
 export const extractLinkedTitles = (noteContent: string): readonly string[] => {
   const { body } = splitFrontmatter(noteContent);
   const lines = body.split("\n");
 
-  return lines
+  return takeUntilUpdatesSection(lines)
     .filter((line) => /^-\s/.test(line.trim()))
     .flatMap((line) => {
       const titles: string[] = [];

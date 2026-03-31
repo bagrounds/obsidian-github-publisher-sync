@@ -36,7 +36,8 @@ YYYY-MM-DD | 🕊️ Gentle 🚪 Constraint 🏛️ Commons 📚🐔🤖🏛️�
 ### The "One Word Per Title" Game
 
 1. **Extract linked content titles** — deterministically pull titles of books,
-   blog posts, videos, etc. from list items in the reflection note
+   blog posts, videos, etc. from list items in the reflection note, excluding
+   list items from the Updates section
 2. **Strip prefixes** — remove date prefixes and emoji prefixes from titles
 3. **AI structured sentence building** — Gemini follows a multi-step process
    that defers word selection to avoid premature commitment:
@@ -52,7 +53,8 @@ YYYY-MM-DD | 🕊️ Gentle 🚪 Constraint 🏛️ Commons 📚🐔🤖🏛️�
 
 ### Category Emojis (Deterministic)
 
-Leading emojis from each H2 heading are extracted and appended. For example:
+Leading emojis from each H2 heading are extracted and appended, excluding
+the Updates section heading (`## 🔄 Updates`). For example:
 - `## [📚 Books](...)` → 📚
 - `## [🐔 Chickie Loo](...)` → 🐔
 - `## 🤖🐲 AI Fiction` → 🤖🐲
@@ -104,8 +106,8 @@ The task updates three locations in the reflection note:
 
 | Function | Purpose |
 |----------|---------|
-| `extractLinkedTitles(content)` | Extract content titles from list items |
-| `extractTrailingEmojis(content)` | Extract category emojis from section headings |
+| `extractLinkedTitles(content)` | Extract content titles from list items (excludes Updates section) |
+| `extractTrailingEmojis(content)` | Extract category emojis from section headings (excludes Updates section) |
 | `extractHeadingEmojis(heading)` | Extract leading emojis from one heading line |
 | `stripTitlePrefixes(title)` | Remove date and emoji prefixes |
 | `reflectionNeedsTitle(content, date)` | Idempotency check |
@@ -122,7 +124,7 @@ The task updates three locations in the reflection note:
 
 ## Tests
 
-57 tests across 9 suites covering:
+62 tests across 9 suites covering:
 
 - `extractHeadingEmojis`: Wiki links, markdown links, plain headings, no-emoji headings
 - `extractTrailingEmojis`: Multi-heading extraction, deduplication

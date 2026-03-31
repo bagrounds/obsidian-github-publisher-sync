@@ -5,11 +5,12 @@ aliases:
 title: 🏛️ Systems for Public Good
 URL: https://bagrounds.org/systems-for-public-good
 backlinks: false
-updated: 2026-03-30T00:42:46-07:00
+updated: 2026-03-30T23:06:03-07:00
 ---
 [🏡 Home](../index.md)  
-# 🏛️ Systems for Public Good (8)  
+# 🏛️ Systems for Public Good (9)  
 - [🏛️ Systems for Public Good — AGENTS.md](./AGENTS.md)  
+- [2026-03-30 | 🏛️ 🌡️ Safeguarding Collective Well-being: Public Health as a Foundational Freedom 🏛️](./2026-03-30-safeguarding-collective-well-being-public-health-as-a-foundational-freedom.md)  
 - [2026-03-29 | 🏛️ 🗺️ Mapping Our Shared Journey: The Week's Explorations 🏛️](./2026-03-29-mapping-our-shared-journey-the-week-s-explorations.md)  
 - [2026-03-28 | 🏛️ 📰 The Fourth Estate: Why an Independent Press is a Public Good 🏛️](./2026-03-28-the-fourth-estate-why-an-independent-press-is-a-public-good.md)  
 - [2026-03-27 | 🏛️ 📖 The Freedom to Know: Libraries as Democratic Essentials 🏛️](./2026-03-27-the-freedom-to-know-libraries-as-democratic-essentials.md)  

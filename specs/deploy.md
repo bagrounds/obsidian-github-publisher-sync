@@ -38,4 +38,4 @@ The Quartz build processes YAML frontmatter via `coerceToArray` in `quartz/plugi
 - Returns `undefined` when no valid values remain
 - Cleans up the `data.tags` and `data.aliases` properties when the coerced result is empty, preventing downstream type errors (e.g., `TagPage` expecting an array)
 
-This prevents content with `aliases: ""` or `tags: ""` from generating spurious redirect files or breaking emitter plugins.
+This prevents content with `aliases: ""` or `tags: ""` from generating root-level redirect files or breaking emitter plugins.

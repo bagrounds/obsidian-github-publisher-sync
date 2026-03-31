@@ -34,6 +34,16 @@
 - 📝 Not an untitled reflection (reflection whose title matches the date)
 - 📐 Body content is at least 50 characters after stripping markup
 
+### 🔗 URL Validation and Auto-Fix
+
+🌐 Before posting, each candidate note's URL is verified with an HTTP HEAD request via `checkUrlPublished`.
+✅ If the URL returns a 2xx status, the note proceeds to posting.
+🔧 If the frontmatter URL returns a 404, the system derives the correct URL from the file path using `urlFromFilePath` (format: `https://bagrounds.org/{relative-path-without-.md}`).
+🔄 If the file-path-derived URL differs from the frontmatter URL and is live, the frontmatter `URL` property is automatically updated via `updateFrontmatterUrl` and the corrected note proceeds to posting.
+🚫 If both the frontmatter URL and the file-path-derived URL return 404, the note is skipped but BFS still follows its links to discover other content.
+📋 URL validation is injected into `FindContentConfig` via the optional `fccPublicationChecker` callback, matching the TypeScript `isPublished` pattern.
+⚡ URL checks are only performed on notes that pass all other content filters (postable and eligible), avoiding unnecessary HTTP requests during BFS traversal.
+
 ## 🤖 Post Text Generation
 
 📝 Post text is generated using a two-step sequential Gemini AI pipeline. 📡 Calls are made sequentially to avoid rate limits.
@@ -185,11 +195,15 @@
 | `buildTweetSection(content, html)` | 📝 Build tweet embed markdown section |
 | `buildBlueskySection(content, html)` | 📝 Build Bluesky embed markdown section |
 | `buildMastodonSection(content, html)` | 📝 Build Mastodon embed markdown section |
+| `urlFromFilePath(relativePath)` | 🔗 Derive canonical URL from relative file path |
 
 ### 💾 I/O Functions
 
 | 🔧 Function | 📝 Purpose |
 |---|---|
+| `checkUrlPublished(url)` | 🌐 HTTP HEAD request to verify a URL returns 2xx status |
+| `validateNoteUrl(checker, note)` | 🔧 Validate note URL, auto-fix stale frontmatter if file-path URL is live |
+| `updateFrontmatterUrl(filePath, newUrl)` | 📝 Update or insert the URL property in a note's YAML frontmatter |
 | `postTweet(text, credentials)` | 🐦 Post tweet via v2 API with idempotency key |
 | `deleteTweet(tweetId, credentials)` | 🗑️ Delete tweet by ID |
 | `fetchOEmbed(tweetUrl, options?)` | 🖼️ Fetch Twitter oEmbed HTML |

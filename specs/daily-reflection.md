@@ -63,8 +63,10 @@ tags:
 ### 🧭 Navigation Line
 
 ```
-[[index|Home]] > [[reflections/index|Reflections]] | [[reflections/PREV-DATE|⏮️]]
+[[index|Home]] > [[reflections/index|Reflections]] | [[reflections/PREV-DATE|⏮️]] [[reflections/NEXT-DATE|⏭️]]
 ```
+
+⏮️ Back links are added when a previous reflection exists. ⏭️ Forward links are added to the previous day's reflection when a new day is created. Both work even on the first reflection (which has no back link).
 
 ### 📌 Section Heading Format
 
@@ -110,8 +112,9 @@ tags:
 
 1. ✅ If the series section heading already exists, append the link at the end of that section
 2. 🆕 If the section heading does not exist, create it at the bottom of the page
-3. ⬆️ New sections are always inserted BEFORE any social media embed sections (`## 🐦 Tweet`, `## 🦋 Bluesky`, `## 🐘 Mastodon`)
+3. ⬆️ New sections are always inserted BEFORE any Updates section (`## 🔄 Updates`) and social media embed sections (`## 🐦 Tweet`, `## 🦋 Bluesky`, `## 🐘 Mastodon`)
 4. 🔄 Existing sections and content are never modified or reordered
+5. 📐 Page ordering from top to bottom: content sections, Updates section, social media sections
 
 ## ⚙️ Workflow Integration
 

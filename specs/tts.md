@@ -21,6 +21,9 @@ The `extractArticleBlocks()` function builds a list of text blocks from:
 1. **Article content** — Block-level elements (`p`, `li`, `h1`–`h6`, `td`, `th`, `dd`, `dt`, `figcaption`, `summary`) inside `<article>`, excluding noise containers (nav, header, footer, sidebar, backlinks, code blocks, math, diagrams)
 2. **Static giscus comments** — The `[data-static-giscus]` section, if present. Each comment is read as "Comment by [author]" followed by the comment body paragraphs
 
+**Excluded sections:**
+- Social media embed sections (headings containing Tweet, Bluesky, or Mastodon) and all content beneath them are skipped entirely. The `SOCIAL_SECTION_HEADINGS` constant in `tts.utils.ts` defines the platform names to detect.
+
 Inline noise (code, SVG, KaTeX, buttons) is stripped from cloned elements before text extraction. Emoji and residual Markdown characters are removed. Blocks lacking terminal punctuation receive a semicolon for natural TTS pauses.
 
 ### 🗣️ Playback
@@ -34,8 +37,8 @@ Inline noise (code, SVG, KaTeX, buttons) is stripped from cloned elements before
 ### ⏭️ Auto-Play
 
 When enabled, after finishing a page the player:
-1. Checks for series navigation links (⏭️ next / ⏮️ back)
-2. Falls back to BFS over article links
+1. Checks for series navigation links (⏭️ next / ⏮️ back), skipping index pages
+2. Falls back to BFS over article links, skipping index and home pages
 3. Skips already-read pages (tracked in localStorage)
 4. Navigates via SPA and auto-starts playback
 

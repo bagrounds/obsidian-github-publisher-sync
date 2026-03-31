@@ -91,11 +91,12 @@
 
 ## 📍 Section Placement
 
-📌 The `## 🔄 Updates` section is placed at the **end** of the reflection note.
+📌 The `## 🔄 Updates` section is placed **before** social media embed sections (`## 🐦 Tweet`, `## 🦋 Bluesky`, `## 🐘 Mastodon`) if they exist, otherwise at the **end** of the reflection note.
 📂 Within the updates section, each category gets its own `###` sub-heading.
 🔄 If the section or sub-section already exists, new links are appended within it.
-🆕 If the section does not exist, it is created at the end of the file with the first sub-section.
+🆕 If the section does not exist, it is created before social media sections (or at the end if none exist).
 🆕 If a sub-section does not exist, it is appended at the end of the updates section.
+📐 Page ordering from top to bottom: content sections, Updates section, social media sections.
 
 ## 🔧 Key Functions
 

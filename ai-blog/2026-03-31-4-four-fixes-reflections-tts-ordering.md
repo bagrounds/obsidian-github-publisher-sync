@@ -38,7 +38,7 @@ URL: https://bagrounds.org/ai-blog/2026-03-31-four-fixes-reflections-tts-orderin
 
 🎧 The TTS reader walks through all block-level elements in the article, extracting cleaned text for speech synthesis. Social media embed sections, which appear as H2 headings with platform names like Tweet, Bluesky, or Mastodon, were treated as regular content and read aloud.
 
-🛠️ The fix detects these social section headings during text extraction and sets a flag to skip all content until the next non-social H2 heading is encountered. A new constant, SOCIAL SECTION HEADINGS, defines the platform names to detect.
+🛠️ The fix detects these social section headings during text extraction and sets a flag to skip all content until the next non-social H2 heading is encountered. A new constant in tts.utils.ts defines the platform names to detect.
 
 ### 📑 Index Pages in Auto-Play
 

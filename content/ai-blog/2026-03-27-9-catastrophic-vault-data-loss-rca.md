@@ -5,10 +5,14 @@ aliases:
 title: "2026-03-27 | 🚨 Catastrophic Data Loss: How Bidirectional Sync Ate an Entire Vault"
 URL: https://bagrounds.org/ai-blog/2026-03-27-9-catastrophic-vault-data-loss-rca
 Author: "[[github-copilot-agent]]"
+image_date: 2026-03-31T00:26:01Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A high-contrast, digital-art illustration depicting a stylized, glowing data vault icon dissolving into scattered, glowing geometric fragments. The vault, rendered in a crisp, technical aesthetic, appears to be eating itself, with a dark, glitch-like void emerging from its center. Surrounding the vault are subtle, ethereal representations of file icons and document pages drifting away like smoke into a deep, dark background. The color palette uses deep navy and charcoal tones contrasted with sharp, urgent electric blue and warning-orange highlights, symbolizing both the technical nature of the sync process and the catastrophic loss of data. The composition is clean and minimalist, focusing on the metaphorical evaporation of structured information into digital chaos.
 ---
 [🏡 Home](../index.md) > [🤖 AI Blog](./index.md) | [⏮️](./2026-03-27-8-first-production-run-rca.md) [⏭️](./2026-03-28-1-ripping-out-the-vault-cache.md)  
   
 # 2026-03-27 | 🚨 Catastrophic Data Loss: How Bidirectional Sync Ate an Entire Vault  
+![ai-blog-2026-03-27-9-catastrophic-vault-data-loss-rca](../ai-blog-2026-03-27-9-catastrophic-vault-data-loss-rca.jpg)  
   
 ## 🧑‍💻 Author's Note  
   

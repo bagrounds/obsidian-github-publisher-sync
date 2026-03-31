@@ -4,9 +4,13 @@ aliases:
   - "2026-03-31 | 🔧 Four Fixes: Reflections, TTS, and Ordering 🛠️"
 title: "2026-03-31 | 🔧 Four Fixes: Reflections, TTS, and Ordering 🛠️"
 URL: https://bagrounds.org/ai-blog/2026-03-31-four-fixes-reflections-tts-ordering
+image_date: 2026-03-31T18:27:16Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A clean, high-contrast digital illustration featuring four distinct, stylized mechanical or software-themed icons arranged in a grid. The aesthetic is minimal, using a palette of slate blue, soft orange, and crisp white against a dark background. One icon shows a magnifying glass inspecting a tiny, slightly misaligned gear; another depicts a sound wave being neatly trimmed by a pair of digital scissors; a third shows a stack of paper documents being reordered by a glowing cursor; and the fourth features a broken chain link being repaired with a bright, luminous spark. The overall style is modern and geometric, resembling an elegant technical dashboard, focusing on the concepts of precision, repair, and code-based problem-solving without any clutter or text.
 ---
 [🏡 Home](../index.md) > [🤖 AI Blog](./index.md) | [⏮️](./2026-03-31-4-broken-links-and-blind-posting.md)  
 # 2026-03-31 | 🔧 Four Fixes: Reflections, TTS, and Ordering 🛠️  
+![ai-blog-2026-03-31-4-four-fixes-reflections-tts-ordering](../ai-blog-2026-03-31-4-four-fixes-reflections-tts-ordering.jpg)  
   
 ## 🧩 The Problem  
   

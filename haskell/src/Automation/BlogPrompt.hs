@@ -130,7 +130,6 @@ assembleFrontmatter series dateStr title slug =
     , "title: " <> quoteYamlValue displayTitle
     , "URL: " <> quoteYamlValue url
     , "Author: " <> quoteYamlValue (bscAuthor series)
-    , "tags:"
     , "---"
     ]
 

@@ -194,6 +194,16 @@ tests = testGroup "BlogImage"
       , testCase "boolean value renders unquoted" $
           applyField ["regenerate_image: true"] ("regenerate_image", YamlBool False)
             @?= ["regenerate_image: false"]
+      , testCase "preserves unrelated arrays when adding new field" $
+          applyField
+            ["share: true", "aliases:", "  - \"My Title\"", "title: \"test\""]
+            ("image_date", YamlText "2026-03-30")
+            @?= ["share: true", "aliases:", "  - \"My Title\"", "title: \"test\"", "image_date: \"2026-03-30\""]
+      , testCase "preserves unrelated arrays when updating different field" $
+          applyField
+            ["share: true", "aliases:", "  - \"My Title\"", "title: \"old\""]
+            ("title", YamlText "new")
+            @?= ["share: true", "aliases:", "  - \"My Title\"", "title: \"new\""]
       ]
   , testGroup "removeImageEmbed"
       [ testCase "removes Obsidian embed and returns name" $

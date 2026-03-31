@@ -5,7 +5,7 @@ The `deploy.yml` GitHub Actions workflow builds the Quartz static site and deplo
 
 ## Trigger
 - Runs on every `push` to any branch (`**`)
-- Enables build validation on feature branches and PRs
+- Enables build validation AND deployment for all branches, including PRs
 
 ## Concurrency
 - All runs share a single concurrency group (`pages`)
@@ -24,12 +24,11 @@ The `deploy.yml` GitHub Actions workflow builds the Quartz static site and deplo
 - Uploads the built `public/` directory as a GitHub Pages artifact
 
 ### Deploy
-- **Only runs on `main` branch** (`if: github.ref == 'refs/heads/main'`)
 - Deploys the built artifact to the `github-pages` environment
+- Runs on every branch so PRs can be tested before merging
 
-## Invariants
-- Only `main` branch deploys reach production; feature branches only validate the build
-- The deploy step never runs on non-main branches to prevent accidental overwrites of the live site
+## AliasRedirects: Disabled
+The `AliasRedirects` Quartz emitter plugin is **disabled** (removed from `quartz.config.ts`). Aliases in frontmatter are only used by Obsidian for wikilink display text — nobody navigates to emoji-heavy title URLs. Disabling AliasRedirects eliminates the risk of empty aliases overwriting the homepage.
 
 ## Frontmatter Safety
 The Quartz build processes YAML frontmatter via `coerceToArray` in `quartz/plugins/transformers/frontmatter.ts`. This function:
@@ -38,4 +37,5 @@ The Quartz build processes YAML frontmatter via `coerceToArray` in `quartz/plugi
 - Returns `undefined` when no valid values remain
 - Cleans up the `data.tags` and `data.aliases` properties when the coerced result is empty, preventing downstream type errors (e.g., `TagPage` expecting an array)
 
-This prevents content with `aliases: ""` or `tags: ""` from generating root-level redirect files or breaking emitter plugins.
+## Blog Frontmatter Generation
+The `assembleFrontmatter` function in both Haskell (`BlogPrompt.hs`) and TypeScript (`blog-prompt.ts`) generates blog post frontmatter. It must NOT include empty `tags:` fields, as the Obsidian publisher normalizes `tags:` (null) to `tags: ""` (empty string), which breaks the Quartz `TagPage` emitter.

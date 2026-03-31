@@ -26,33 +26,41 @@ URL: https://bagrounds.org/ai-blog/2026-03-31-five-whys-the-vanishing-homepage
 
 ⚡ All Quartz emitter plugins run in parallel using Promise.all. 🏁 Both AliasRedirects and ContentPage write to the same output path for the root index. ⏱️ Whichever finishes last wins the race. 📊 In CI with build caching, the timing differed from local builds, and the redirect sometimes won the race.
 
-### 4️⃣ Why did the coerceToArray function not filter out the empty string?
+### 4️⃣ Why was the aliases field an empty string instead of a proper list?
 
-🐛 The function checked for null and undefined inputs but not for empty strings. 📝 When the YAML parser returns an empty quoted string, it passes the null check. 🔀 The string gets split by comma, producing an array with one empty string element. 🏗️ The downstream slug generation then happily converts this to a root-level redirect.
+🔍 Comparing the problematic file with its siblings revealed the answer. 📋 The 2026-03-30 file had alphabetically-sorted fields, share colon quote true quote instead of share colon true, and an added updated field. 🧩 These are telltale signs that the Obsidian publisher plugin normalized the YAML when syncing content back to GitHub. 🐛 During normalization, the publisher converted the aliases YAML list into an empty string, losing the original title value. 📝 The Haskell code generated correct YAML, but the publisher mangled it on the round trip.
 
-### 5️⃣ Why did only one content file have this problematic frontmatter?
+### 5️⃣ Why did the publisher produce an empty string from a valid alias list?
 
-📱 The content was synced from an Obsidian vault, where a blog generation script produced the post. 🔄 During the Obsidian publisher sync, the aliases field was normalized from a YAML list to a quoted empty string. 🎯 This particular file was the only one where this normalization happened, likely because it was the most recently generated post at the time of the sync.
+📝 The generated frontmatter also included an empty tags colon field with no value, which YAML parsers interpret as null. 🔄 The publisher normalized this null to an empty quoted string. 🎯 The same normalization likely affected the aliases field, collapsing a single-item list into a scalar and losing the value in the process. ✅ Removing the empty tags field from the blog generation template eliminates this class of publisher normalization issue.
 
-## 🛠️ The Fix
+## 🛠️ The Fixes
 
-🔧 Two changes address both the root cause and a contributing factor.
+🔧 Four changes address the root cause, contributing factors, and defense in depth.
+
+### 🗑️ Remove Empty Tags from Blog Generation
+
+📝 The Haskell assembleFrontmatter and TypeScript assembleFrontmatter both generated an empty tags colon field. 🐛 The Obsidian publisher normalized this to tags colon quote quote, which broke the Quartz TagPage emitter expecting an array. ✅ Removing the empty tags field from the template eliminates the root cause. 🧪 A new test verifies assembleFrontmatter does not include a tags field.
+
+### 🚫 Disable AliasRedirects Plugin
+
+🔍 An audit of all 2533 content files revealed that aliases are exclusively used for Obsidian wikilink display text, not for URL redirects. 🏷️ Every alias is an emoji-heavy display title that nobody would type into a browser URL bar. ✅ The AliasRedirects emitter was removed from quartz.config.ts, eliminating 2554 unnecessary redirect files and the entire class of homepage-overwrite bugs.
 
 ### 🛡️ Defensive Frontmatter Processing
 
 📝 The coerceToArray function in the Quartz frontmatter transformer now treats empty strings as absent values, returning undefined instead of an array with an empty element. 🧹 It also filters out empty strings that might appear after splitting comma-separated values. 🗑️ When the result is empty, the data.tags and data.aliases properties are deleted from the frontmatter data to prevent downstream type errors.
 
-### 🚫 Deploy Guard for Main Branch Only
+### 🧪 New Test Coverage
 
-🔒 The deploy workflow previously deployed to GitHub Pages on every push to any branch. 🌿 This meant that pushes to feature branches could accidentally deploy non-main content to the live site. ✅ The deploy job now includes a branch guard that only allows deployment from the main branch. 🏗️ The build job still runs on all branches so PRs can validate that the site builds correctly.
+🔴 New tests verify that applyField in BlogImage.hs preserves unrelated YAML arrays when adding or updating different fields. 🟢 These tests pass, confirming the frontmatter update functions are safe for their current use cases.
 
 ## 📊 Impact
 
-🔢 Before the fix, the Quartz build generated 2555 AliasRedirect files, including one spurious redirect from the empty alias. ✨ After the fix, it generates 2554, and the root index.html is always the proper homepage. 🏠 The total emitted files dropped from 8100 to 8099.
+🔢 Before the fix, the Quartz build generated 2555 AliasRedirect files, including one spurious redirect from the empty alias. ✨ After the fix, the AliasRedirects emitter is disabled entirely. 🏠 The total emitted files dropped from 8100 to 5545, and the root index.html is always the proper homepage.
 
 ## 🧠 Lessons Learned
 
-🏎️ Race conditions in parallel I/O can produce different outcomes depending on caching, CPU load, and file system performance. 🧪 What works locally may fail in CI, and vice versa. 🛡️ Defensive input validation at the boundary where external data enters the system is critical. 📏 Even an empty string can wreak havoc when it flows unchecked through a pipeline that assigns meaning to every value.
+🏎️ Race conditions in parallel I/O can produce different outcomes depending on caching, CPU load, and file system performance. 🧪 What works locally may fail in CI, and vice versa. 🛡️ Defensive input validation at the boundary where external data enters the system is critical. 📏 Even an empty string can wreak havoc when it flows unchecked through a pipeline that assigns meaning to every value. 🔄 When content flows through external tools like the Obsidian publisher, YAML normalization can introduce subtle data corruption. 🚫 Features that serve no real user purpose, like emoji-heavy URL redirects, are better disabled than defended.
 
 ## 📚 Book Recommendations
 

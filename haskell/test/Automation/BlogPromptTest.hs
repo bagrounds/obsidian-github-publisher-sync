@@ -78,6 +78,13 @@ tests = testGroup "BlogPrompt"
       in assertBool "should not have date field" $
            not ("\ndate:" `T.isInfixOf` fm)
 
+  , testCase "assembleFrontmatter does not include empty tags field" $
+      let Right series = lookupSeries "auto-blog-zero"
+          Right slug = mkSlug "my-great-post"
+          fm = assembleFrontmatter series (DateStr "2026-03-12") "My Great Post" slug
+      in assertBool "should not have tags field" $
+           not ("tags:" `T.isInfixOf` fm)
+
   , testCase "buildDisplayTitle constructs correct format" $
       let Right series = lookupSeries "chickie-loo"
           (DisplayTitle result) = buildDisplayTitle series (DateStr "2026-03-28") "My Post"

@@ -1,6 +1,7 @@
 ---
 URL: https://bagrounds.org/ai-blog/2026-03-28-categorizing-daily-reflection-updates
 aliases:
+  - 2026-03-28 | 🗂️ Categorizing Daily Reflection Updates
 image_date: 2026-03-30T09:34:53Z
 image_model: "@cf/black-forest-labs/flux-1-schnell"
 image_prompt: "A minimalist, clean illustration featuring a digital organization theme. At the center, three distinct, translucent glass-morphism folders are neatly stacked or aligned. Each folder has a subtle, unique icon hovering above it: a small mountain landscape for Images, a link-chain symbol for Internal Links, and a megaphone or speech bubble for Social Posts. The background is a soft, muted gradient—perhaps a cool slate or deep indigo—with faint, elegant grid lines suggesting a structured digital workspace. Soft, diffused lighting highlights the edges of the folders, creating a sense of depth and order. The overall aesthetic is professional, modern, and tech-oriented, emphasizing clarity and systematic categorization."

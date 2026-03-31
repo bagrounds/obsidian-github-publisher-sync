@@ -18,7 +18,7 @@ import Data.List (nub)
 import Data.Text (Text)
 import qualified Data.Text as T
 
-import Automation.DailyUpdates (updatesSectionHeader)
+import Automation.Types (updatesSectionHeader)
 import Automation.Frontmatter (parseFrontmatter)
 
 defaultTitleModel :: Text

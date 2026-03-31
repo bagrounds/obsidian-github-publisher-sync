@@ -20,6 +20,7 @@ module Automation.Types
   , tweetSectionHeader
   , blueskySectionHeader
   , mastodonSectionHeader
+  , updatesSectionHeader
   , twitterUrlLength
   , twitterMaxLength
   , blueskyMaxLength
@@ -143,6 +144,9 @@ blueskySectionHeader = "## 🦋 Bluesky"
 
 mastodonSectionHeader :: Text
 mastodonSectionHeader = "## 🐘 Mastodon"
+
+updatesSectionHeader :: Text
+updatesSectionHeader = "## 🔄 Updates"
 
 twitterUrlLength :: Int
 twitterUrlLength = 23

@@ -127,6 +127,27 @@ addUpdateLinksTests = testGroup "addUpdateLinks"
         assertBool "has B" (T.isInfixOf "[[b|Page B]]" result)
         assertBool "has C" (T.isInfixOf "[[c|Page C]]" result)
 
+  , testCase "inserts updates section before social media sections" $
+      let content = "# My Reflection\n\nBody text\n\n## 🐦 Tweet\n\nTweet embed"
+          result = addUpdateLinks content ImageUpdate
+                     [UpdateLink "img.md" "Image Page"]
+      in do
+        assertBool "has updates header" (T.isInfixOf "## 🔄 Updates" result)
+        assertBool "has image link" (T.isInfixOf "[[img|Image Page]]" result)
+        assertBool "updates before tweet" $
+          let uIdx = T.length $ fst $ T.breakOn "## 🔄 Updates" result
+              tIdx = T.length $ fst $ T.breakOn "## 🐦 Tweet" result
+          in uIdx < tIdx
+
+  , testCase "inserts updates section before bluesky section" $
+      let content = "# My Reflection\n\nBody text\n\n## 🦋 Bluesky\n\nBluesky embed"
+          result = addUpdateLinks content ImageUpdate
+                     [UpdateLink "img.md" "Image Page"]
+      in assertBool "updates before bluesky" $
+          let uIdx = T.length $ fst $ T.breakOn "## 🔄 Updates" result
+              bIdx = T.length $ fst $ T.breakOn "## 🦋 Bluesky" result
+          in uIdx < bIdx
+
   , testProperty "addUpdateLinks never removes existing lines" $
       \(QC.ASCIIString bodyStr) ->
         let body = T.pack bodyStr

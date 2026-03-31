@@ -24,6 +24,7 @@ module Automation.InternalLinking
   , applyReplacements
   , alreadyAnalyzed
   , extractBody
+  , normalizeFilePath
   , processFile
   , run
   ) where
@@ -449,20 +450,40 @@ markdownLinks body noteDir contentDir = go (T.unpack body)
       _ -> []
 
 wikiLinks :: Text -> FilePath -> FilePath -> [Text]
-wikiLinks body noteDir contentDir = go (T.unpack body)
+wikiLinks body noteDir contentDir =
+  let targets = parseWikiLinks (T.unpack body)
+  in fmap (resolveWikiTarget noteDir contentDir) targets
+
+resolveWikiTarget :: FilePath -> FilePath -> String -> Text
+resolveWikiTarget noteDir contentDir target =
+  let trimmed = strip target
+      withMd  = if hasSuffix ".md" trimmed then trimmed else trimmed <> ".md"
+  in case '/' `elem` withMd of
+    True  -> T.pack withMd
+    False ->
+      let absTarget = normalizeFilePath (noteDir </> withMd)
+      in T.pack (makeRelativeTo contentDir absTarget)
+
+parseWikiLinks :: String -> [String]
+parseWikiLinks [] = []
+parseWikiLinks ('[':'[':rest) =
+  case extractWikiLinkTarget rest of
+    Just (target, remaining) -> target : parseWikiLinks remaining
+    Nothing -> parseWikiLinks rest
+parseWikiLinks (_:rest) = parseWikiLinks rest
+
+extractWikiLinkTarget :: String -> Maybe (String, String)
+extractWikiLinkTarget input =
+  let (target, after) = span (\c -> c /= ']' && c /= '#' && c /= '|') input
+  in case after of
+    (']':']':rest) | not (null target) -> Just (target, rest)
+    ('#':rest) -> skipToClose target rest
+    ('|':rest) -> skipToClose target rest
+    _ -> Nothing
   where
-    go :: String -> [Text]
-    go s = case (s =~ ("\\[\\[([^\\]|#]+)" :: String) :: (String, String, String, [String])) of
-      (_, _, after, [target]) ->
-        let trimmed = strip target
-            withMd  = if hasSuffix ".md" trimmed then trimmed else trimmed <> ".md"
-            rel
-              | '/' `elem` withMd = T.pack withMd
-              | otherwise         =
-                  let absTarget = normalizeFilePath (noteDir </> withMd)
-                  in T.pack (makeRelativeTo contentDir absTarget)
-        in rel : go after
-      _ -> []
+    skipToClose _ [] = Nothing
+    skipToClose t (']':']':rest) | not (null t) = Just (t, rest)
+    skipToClose t (_:rest) = skipToClose t rest
 
 isPrefixOfS :: String -> String -> Bool
 isPrefixOfS [] _          = True
@@ -473,7 +494,7 @@ strip :: String -> String
 strip = reverse . dropWhile (== ' ') . reverse . dropWhile (== ' ')
 
 normalizeFilePath :: FilePath -> FilePath
-normalizeFilePath = joinSlash . resolve . splitSlash
+normalizeFilePath = joinSlash . reverse . resolve . splitSlash
   where
     resolve :: [String] -> [String]
     resolve = foldl' step []

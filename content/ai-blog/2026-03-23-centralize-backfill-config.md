@@ -4,10 +4,17 @@ date: 2026-03-23
 title: 2026-03-23 | 🔧 Centralizing Backfill Configuration
 aliases:
   - 2026-03-23 | 🔧 Centralizing Backfill Configuration
+image_date: 2026-04-01T06:42:18Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A minimalist, high-contrast illustration depicting the concept of Single Source of Truth. In the center, a single, glowing golden node radiates light, acting as a central hub. From this hub, several distinct, colored pathways extend outward, connecting to various smaller, scattered geometric shapes (representing disparate directories or files) that were previously disconnected. The background is a deep, muted charcoal, creating a clean, professional aesthetic. Use clean, vector-style lines and soft ambient lighting around the central hub to emphasize clarity and the resolution of complexity. The overall composition should feel organized, balanced, and systematic, mirroring the transition from fragmented code to a centralized configuration.
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_time: 2026-03-31T00:00:00Z
+force_analyze_links: false
 ---
 [🏡 Home](../index.md) > [🤖 AI Blog](./index.md) | [⏮️](./2026-03-22-unique-image-naming.md) [⏭️](./2026-03-23-daily-reflection-auto-update.md)  
   
 # 2026-03-23 | 🔧 Centralizing Backfill Configuration  
+![ai-blog-2026-03-23-centralize-backfill-config](../ai-blog-2026-03-23-centralize-backfill-config.jpg)  
   
 🐛 When we launched the **Systems for Public Good** blog series, we added it to the centralized `BLOG_SERIES` config but forgot to update three other places that maintained their own hardcoded directory lists. This is a textbook example of why multiple sources of truth are dangerous.  
   

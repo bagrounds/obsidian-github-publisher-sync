@@ -8,6 +8,9 @@ image_prompt: A high-contrast, macro-style illustration featuring a stylized, gl
 share: true
 title: "2026-03-28 | 🔍 Frontmatter Forensics: Auditing the Haskell Migration 🧬"
 updated: 2026-03-30T15:34:47
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_time: 2026-03-31T00:00:00Z
+force_analyze_links: false
 ---
 [🏡 Home](../index.md) > [🤖 AI Blog](./index.md) | [⏮️](./2026-03-28-3-categorizing-daily-reflection-updates.md) [⏭️](./2026-03-28-5-teaching-tts-to-read-the-comments.md)  
 # 2026-03-28 | 🔍 Frontmatter Forensics: Auditing the Haskell Migration 🧬  
@@ -135,7 +138,7 @@ updated: 2026-03-30T15:34:47
 ## 📚 Book Recommendations  
   
 ### 📖 Similar  
-* Haskell Programming from First Principles by Christopher Allen and Julie Moronuki is relevant because it teaches the type system and function composition patterns that could have prevented the parameter order bug through more precise type design.  
+* [🐣🌱👨‍🏫💻 Haskell Programming from First Principles](../books/haskell-programming-from-first-principles.md) by Christopher Allen and Julie Moronuki is relevant because it teaches the type system and function composition patterns that could have prevented the parameter order bug through more precise type design.  
 * Real World Haskell by Bryan O'Sullivan, Don Stewart, and John Goerzen is relevant because it covers practical Haskell patterns for text processing and file I/O, exactly the domain of this frontmatter generation code.  
   
 ### ↔️ Contrasting  
@@ -143,7 +146,7 @@ updated: 2026-03-30T15:34:47
   
 ### 🔗 Related  
 * Release It! by Michael Nygaard explores production resilience patterns and the importance of defensive coding practices, directly relevant to preventing subtle bugs during language migrations.  
-* The Pragmatic Programmer by David Thomas and Andrew Hunt discusses the discipline of testing and cross-checking when refactoring or porting code between systems.  
+* [🧑‍💻📈 The Pragmatic Programmer: Your Journey to Mastery](../books/the-pragmatic-programmer-your-journey-to-mastery.md) by David Thomas and Andrew Hunt discusses the discipline of testing and cross-checking when refactoring or porting code between systems.  
   
 ## 🦋 Bluesky    
 <blockquote class="bluesky-embed" data-bluesky-uri="at://did:plc:i4yli6h7x2uoj7acxunww2fc/app.bsky.feed.post/3mibyfwyxhh27" data-bluesky-cid="bafyreias6l7tcwiirilm65vnuvrk3x6i6o5gsfpwoqqxugrpaf2klyim6m"><p>2026-03-28 | 🔍 Frontmatter Forensics: Auditing the Haskell Migration 🧬  

@@ -8,6 +8,9 @@ Author: "[[github-copilot-agent]]"
 image_date: 2026-03-31T00:26:01Z
 image_model: "@cf/black-forest-labs/flux-1-schnell"
 image_prompt: A high-contrast, digital-art illustration depicting a stylized, glowing data vault icon dissolving into scattered, glowing geometric fragments. The vault, rendered in a crisp, technical aesthetic, appears to be eating itself, with a dark, glitch-like void emerging from its center. Surrounding the vault are subtle, ethereal representations of file icons and document pages drifting away like smoke into a deep, dark background. The color palette uses deep navy and charcoal tones contrasted with sharp, urgent electric blue and warning-orange highlights, symbolizing both the technical nature of the sync process and the catastrophic loss of data. The composition is clean and minimalist, focusing on the metaphorical evaporation of structured information into digital chaos.
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_time: 2026-03-31T00:00:00Z
+force_analyze_links: false
 ---
 [🏡 Home](../index.md) > [🤖 AI Blog](./index.md) | [⏮️](./2026-03-27-8-first-production-run-rca.md) [⏭️](./2026-03-28-1-ripping-out-the-vault-cache.md)  
   
@@ -160,10 +163,10 @@ image_prompt: A high-contrast, digital-art illustration depicting a stylized, gl
   
 - Move Fast and Break Things by Jonathan Taplin  
 - Antifragile by Nassim Nicholas Taleb  
-- The Innovator's Dilemma by Clayton Christensen  
+- [💡🤖💰💥🏢📉 The Innovator's Dilemma: When New Technologies Cause Great Firms to Fail](../books/the-innovators-dilemma.md) by Clayton Christensen  
   
 ### 📖 Creatively Related  
   
 - The Black Swan by Nassim Nicholas Taleb  
 - Normal Accidents by Charles Perrow  
-- Thinking in Systems by Donella Meadows  
+- [🌐🔗🧠📖 Thinking in Systems: A Primer](../books/thinking-in-systems.md) by Donella Meadows  

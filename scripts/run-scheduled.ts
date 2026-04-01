@@ -299,10 +299,14 @@ const runBackfillImages = async (): Promise<void> => {
   }
 
   // 5. Link new ai-blog posts from their respective daily reflections
+  //    Filter out future dates to avoid creating reflections ahead of Pacific time
+  const today = todayPacific();
   const aiBlogLinks = buildReflectionLinks(aiBlogDir, navResults);
-  aiBlogLinks.forEach(({ relativePath, title, date }) => {
-    addUpdateLinksToReflection(reflectionsDir, date, [{ relativePath, title }]);
-  });
+  aiBlogLinks
+    .filter(({ date }) => date <= today)
+    .forEach(({ relativePath, title, date }) => {
+      addUpdateLinksToReflection(reflectionsDir, date, [{ relativePath, title }]);
+    });
 
   await pushObsidianVault(syncVaultDir, { authToken });
 

@@ -558,10 +558,12 @@ runBackfillImages manager repoRoot vaultDir = do
       pure ()
 
   -- 7. Add update links from nav link changes (each blog post links to its date's reflection)
+  --    Filter out future dates to avoid creating reflections ahead of Pacific time
   aiBlogLinks <- buildReflectionLinks aiBlogDir navResults
+  let todayLinks = filter (\(_, _, date) -> date <= todayText) aiBlogLinks
   mapM_ (\(relPath, title, date) ->
     addUpdateLinksToReflection reflectionsDir date InternalLinkUpdate [UpdateLink relPath title]
-    ) aiBlogLinks
+    ) todayLinks
 
   logMsg "✅ backfill-blog-images"
 

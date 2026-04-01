@@ -116,6 +116,12 @@ tags:
 4. 🔄 Existing sections and content are never modified or reordered
 5. 📐 Page ordering from top to bottom: content sections, Updates section, social media sections
 
+## 🕐 Timezone & Future-Date Guard
+
+🌎 All reflection dates use Pacific time via `todayPacific()`. Reflections must never be created for a date after today in Pacific time.
+
+🛡️ The `runBackfillImages` task derives dates from ai-blog filenames (via `extractPostDate`). Because filenames may be committed with UTC dates that are ahead of Pacific time, both the Haskell and TypeScript implementations filter out any date that exceeds today Pacific before calling `addUpdateLinksToReflection`.
+
 ## ⚙️ Workflow Integration
 
 🔌 The daily reflection update is integrated directly into `generate-blog-post.ts` and runs automatically when Obsidian vault credentials are available as environment variables.

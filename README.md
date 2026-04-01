@@ -2,7 +2,7 @@
 
 🏗️ A publishing pipeline that transforms an [Obsidian](https://obsidian.md) vault into a public website at [bagrounds.org](https://bagrounds.org/). 🔄 Content flows one way: from the Obsidian vault (source of truth) on a mobile device, through the [Enveloppe](https://github.com/Enveloppe/obsidian-enveloppe) plugin, into this GitHub repository, and out to GitHub Pages via [Quartz](https://quartz.jzhao.xyz/).
 
-🤖 On top of this static publishing layer, **two GitHub Actions workflows** power all AI-powered features: a single hourly scheduler for blog generation, social media posting, internal linking, and image generation — plus a deploy workflow for building and publishing the site. All scheduling logic lives in TypeScript, not YAML.
+🤖 On top of this static publishing layer, **three GitHub Actions workflows** power all AI-powered features: a Haskell CI workflow that builds and tests the automation binaries, a single hourly scheduler for blog generation, social media posting, internal linking, and image generation — plus a deploy workflow for building and publishing the site. All automation logic is implemented in Haskell, compiled to native binaries, and distributed as GitHub Actions artifacts.
 
 ## 🌐 Architecture Overview
 
@@ -15,7 +15,7 @@
                                   ┌───────────────────────┼──────────────────┐
                                   │                       │                  │
                             GitHub Actions          GitHub Pages         Giscus
-                            (2 workflows)          (Quartz SSG)       (comments)
+                            (3 workflows)          (Quartz SSG)       (comments)
                                   │                       │                  │
                     ┌─────────────┼─────────────┐         │                  │
                     │             │             │          │                  │
@@ -30,11 +30,11 @@
 
 ### 🔄 GitHub → Obsidian Vault (ob sync)
 
-🔙 Generated content (blog posts, images, updated frontmatter) flows back to the vault via the [`obsidian-headless`](https://www.npmjs.com/package/obsidian-headless) CLI (`ob sync`). 📂 The `scripts/sync-file-to-obsidian.ts` script copies files into a locally synced vault directory, then pushes changes back.
+🔙 Generated content (blog posts, images, updated frontmatter) flows back to the vault via the [`obsidian-headless`](https://www.npmjs.com/package/obsidian-headless) CLI (`ob sync`). 📂 The Haskell `run-scheduled` binary manages vault synchronization through the `Automation.ObsidianSync` module.
 
 ### 🌍 GitHub → Website (Quartz + GitHub Pages)
 
-🏗️ On every push to `main`, the **Deploy** workflow builds the site with [Quartz 4](https://quartz.jzhao.xyz/) (a static site generator for Obsidian vaults) and deploys to GitHub Pages. 💬 After building, `inject-static-giscus.ts` fetches [Giscus](https://giscus.app/) discussion comments via the GitHub GraphQL API and injects static HTML for SEO visibility.
+🏗️ On every push to `main`, the **Deploy** workflow builds the site with [Quartz 4](https://quartz.jzhao.xyz/) (a static site generator for Obsidian vaults) and deploys to GitHub Pages. 💬 After building, the Haskell `inject-giscus` binary fetches [Giscus](https://giscus.app/) discussion comments via the GitHub GraphQL API and injects static HTML for SEO visibility.
 
 ## 📂 Content Organization
 
@@ -61,58 +61,74 @@
 
 ### 1. 🚀 Deploy (`deploy.yml`)
 
-🔄 Triggers on push to `main`. 🏗️ Builds the Quartz site, injects static Giscus comments for SEO, and deploys to GitHub Pages.
+🔄 Triggers on every push. 🏗️ Builds the Quartz site, downloads the pre-built `inject-giscus` Haskell binary, injects static Giscus comments for SEO, and deploys to GitHub Pages. 🔍 After deployment to `main`, runs a broken link audit sampling 30 pages from the live site.
 
 ### 2. ⏰ Scheduled Tasks (`scheduled.yml`)
 
-🕐 Runs hourly. 🧠 A TypeScript scheduler (`scripts/lib/scheduler.ts`) determines which tasks to run based on the current UTC hour. The single entry point (`scripts/run-scheduled.ts`) orchestrates all automation:
+🕐 Runs hourly. 🧠 The pre-built Haskell `run-scheduled` binary determines which tasks to run based on the current Pacific hour. It orchestrates all automation:
 
-| ⏰ UTC Hour | 🏷️ Task | 📝 Description |
+| ⏰ Pacific Hour | 🏷️ Task | 📝 Description |
 |---|---|---|
-| 15 | 🐔 Chickie Loo | 🐣 AI blog post with chicken-keeping personality |
-| 16 | 🤖 Auto Blog Zero | 📝 AI blog post based on reflections and discussions |
-| 17 | 🏛️ Systems for Public Good | 🏛️ AI blog with Google Search grounding for current events |
-| 6 | 🖼️ Backfill Blog Images | 🔍 Generate missing cover images for all blog posts |
-| 8 | 🔗 Internal Linking | 📥 BFS-driven wikilink insertion in Obsidian vault |
+| 8 | 🐔 Chickie Loo | 🐣 AI blog post with chicken-keeping personality |
+| 9 | 🤖 Auto Blog Zero | 📝 AI blog post based on reflections and discussions |
+| 10 | 🏛️ Systems for Public Good | 🏛️ AI blog with Google Search grounding for current events |
+| 23 | 🖼️ Backfill Blog Images | 🔍 Generate missing cover images for all blog posts |
+| 1 | 🔗 Internal Linking | 📥 BFS-driven wikilink insertion in Obsidian vault |
 | Even hours | 📢 Social Posting | 📱 Discover and post unposted content to X/Bluesky/Mastodon |
 
-## 🧩 Key Scripts
+### 3. 🔨 Haskell CI (`haskell.yml`)
 
-| 📜 Script | 📝 Purpose |
+🏗️ Triggers on pushes that modify `haskell/` or the workflow itself. Builds all Haskell executables with GHC 9.14.1 and `-Werror`, runs the full test suite (719+ tests), and uploads compiled binaries as artifacts for other workflows to download.
+
+## 🏗️ Haskell Automation (`haskell/`)
+
+All automation logic is implemented in Haskell, compiled to native Linux binaries, and distributed via GitHub Actions artifacts. The Haskell codebase lives in the `haskell/` directory.
+
+### 🔧 Executables
+
+| 🔧 Binary | 📝 Purpose |
 |---|---|
-| `scripts/run-scheduled.ts` | ⏰ Consolidated entry point — determines and runs tasks based on UTC hour |
-| `scripts/internal-linking.ts` | 🔗 CLI for BFS-driven wikilink insertion |
-| `scripts/generate-blog-post.ts` | 📝 AI blog post generation |
-| `scripts/generate-blog-image.ts` | 🖼️ AI cover image generation |
-| `scripts/auto-post.ts` | 📢 Social media orchestrator |
-| `scripts/tweet-reflection.ts` | 📱 Platform-specific posting |
-| `scripts/sync-file-to-obsidian.ts` | 📤 Single file vault sync |
-| `scripts/update-daily-reflection.ts` | 📝 Daily reflection auto-update |
-| `scripts/pull-vault-posts.ts` | 📥 Pull posts from vault |
-| `scripts/inject-static-giscus.ts` | 💬 SEO comment injection |
-| `scripts/check-gemini-quota.ts` | 📊 API quota monitoring |
-| `scripts/backfill-blog-images.ts` | 🖼️ Image backfill orchestrator |
+| `run-scheduled` | ⏰ Main scheduler — orchestrates all hourly tasks (blog gen, social posting, internal linking, image backfill, daily reflections, vault sync) |
+| `inject-giscus` | 💬 Post-build — fetches Giscus discussion comments and injects static HTML into the built site for SEO |
 
-## 📚 Library Modules (`scripts/lib/`)
+### 📚 Library Modules (`haskell/src/Automation/`)
 
 | 📦 Module | 📝 Purpose |
 |---|---|
-| `scheduler.ts` | ⏰ Pure scheduling logic — maps UTC hours to task IDs |
-| `internal-linking.ts` | 🔗 BFS traversal, Gemini book identification, wikilink insertion |
-| `blog-image.ts` | 🖼️ Image generation pipeline (Cloudflare + Gemini) |
-| `blog-series.ts` | 📝 Blog post generation with series context |
-| `blog-prompt.ts` | 🤖 Prompt engineering for blog generation |
-| `obsidian-sync.ts` | 📤 Obsidian vault pull/push via headless CLI |
-| `frontmatter.ts` | 📋 YAML frontmatter parsing and note I/O |
-| `daily-reflection.ts` | 📝 Daily reflection creation, section insertion, post linking |
-| `gemini.ts` | 🤖 Gemini API client utilities |
-| `gemini-quota.ts` | 📊 Quota checking via GCP APIs |
-| `platforms/` | 📱 Platform-specific posting (Twitter, Bluesky, Mastodon) |
-| `retry.ts` | 🔄 Exponential backoff retry logic |
-| `text.ts` | ✂️ Text processing and truncation |
-| `html.ts` | 🌐 HTML parsing utilities |
-| `env.ts` | 🔧 Environment variable validation |
-| `types.ts` | 📐 Shared domain types |
+| `Scheduler` | ⏰ Pure scheduling logic — maps Pacific hours to task IDs |
+| `InternalLinking` | 🔗 BFS traversal, Gemini book identification, wikilink insertion |
+| `BlogImage` | 🖼️ Image generation pipeline (Cloudflare, HuggingFace, Together, Pollinations, Gemini) |
+| `BlogSeries` | 📝 Blog post generation with series context |
+| `BlogPrompt` | 🤖 Prompt engineering for blog generation |
+| `ObsidianSync` | 📤 Obsidian vault pull/push via headless CLI |
+| `Frontmatter` | 📋 YAML frontmatter parsing and note I/O |
+| `DailyReflection` | 📝 Daily reflection creation, section insertion, post linking |
+| `DailyUpdates` | 📝 Link updates for daily reflections |
+| `Gemini` | 🤖 Gemini API client with streaming support |
+| `GeminiQuota` | 📊 Quota checking via GCP APIs |
+| `GcpAuth` | 🔐 GCP service account authentication |
+| `SocialPosting` | 📢 BFS content discovery and social media orchestration |
+| `Platforms.Twitter` | 🐦 Twitter/X API v2 integration |
+| `Platforms.Bluesky` | 🦋 Bluesky/ATProto integration |
+| `Platforms.Mastodon` | 🐘 Mastodon Fediverse integration |
+| `Platforms.OgMetadata` | 🔗 Open Graph metadata extraction |
+| `StaticGiscus` | 💬 Static Giscus comment injection |
+| `AiBlogLinks` | 🤖 AI blog navigation link generation |
+| `AiFiction` | 📖 AI fiction section generation |
+| `ReflectionTitle` | 📝 Daily reflection title generation via Gemini |
+| `BlogComments` | 💬 Fetch Giscus discussion comments |
+| `BlogSeriesConfig` | ⚙️ Blog series configuration |
+| `BlogPosts` | 📄 Blog post file I/O |
+| `EmbedSection` | 📎 Section embedding from other files |
+| `Prompts` | 🧠 Prompt engineering utilities |
+| `Types` | 📐 Shared domain types |
+| `Env` | 🔧 Environment variable validation |
+| `Retry` | 🔄 Exponential backoff retry logic |
+| `Text` | ✂️ Text processing and truncation |
+| `Html` | 🌐 HTML parsing utilities |
+| `Timer` | ⏱️ Timing utilities |
+| `Pipeline` | 🔀 Async pipeline orchestration |
+| `Json` | 📋 JSON parsing and encoding |
 
 ## 🔗 Internal Linking System
 
@@ -137,12 +153,12 @@ Pull Vault → BFS from Most Recent Reflection → For Each File:
 
 - 📱 **Vault-native** — Reads from and writes to the Obsidian vault directly (`--content-dir` flag). The `content/` directory in the repo stays read-only.
 - 🤖 **AI identifies, code positions** — Gemini receives the full document body + all available book titles and identifies which books are genuinely referenced as literary works. Deterministic regex matching only runs after AI confirmation.
-- 📚 **Books-only index** — `LINKABLE_DIRS = ["books"]` constrains link targets to book pages, avoiding false positives from generic words matching topic or software pages.
+- 📚 **Books-only index** — `linkableDirs = ["books"]` constrains link targets to book pages, avoiding false positives from generic words matching topic or software pages.
 - 🔒 **Incremental analysis** — Each analyzed file gets `link_analysis_model` and `link_analysis_time` frontmatter. Files with a `link_analysis_model` are skipped. Use `force_analyze_links: true` in frontmatter for manual re-analysis.
 - 🔧 **Robust JSON parsing** — `extractJsonArray` handles Gemini responses wrapped in code fences, with trailing text, or other formatting quirks.
 - 🛡️ **Rate-limit resilience** — Per-minute 429s trigger retry with exponential backoff. Daily quota exhaustion throws `QuotaExhaustedError` to halt the pipeline cleanly.
 - 📊 **Summary statistics** — Completion log includes `filesVisited`, `filesModified`, `filesSkipped`, and `totalLinksAdded`.
-- 📝 **Diff logging for all runs** — Both dry runs and live runs emit `diff` events with line-level changes.
+- 📝 **Diff logging for all runs** — Both dry runs and live runs emit diff events with line-level changes.
 
 ## 🌐 Quartz Site Features
 
@@ -202,47 +218,47 @@ Pull Vault → BFS from Most Recent Reflection → For Each File:
 ## 🧪 Testing
 
 ```bash
-# Run all tests
-npx tsx --test scripts/**/*.test.ts scripts/*.test.ts quartz/**/*.test.ts
+# Run Haskell tests (719+ tests)
+cd haskell && cabal update && cabal test --test-show-details=direct
 
-# Run specific test file
-npx tsx --test scripts/lib/internal-linking.test.ts
+# Run Quartz TypeScript tests
+npx tsx --test quartz/**/*.test.ts
 
-# Type check
+# Run broken link audit tests
+npx tsx --test scripts/**/*.test.ts
+
+# Type check (Quartz + remaining scripts)
 tsc --noEmit
 
 # Format check
 npx prettier . --check
 ```
 
-📊 ~870+ tests across ~200 test suites covering internal linking, blog image generation, frontmatter parsing, text processing, social media posting, and Quartz components.
+📊 719+ Haskell tests covering all automation modules, plus Quartz TypeScript component tests.
 
 ## 🏗️ Development
 
 ```bash
-# Install dependencies
+# Install Node.js dependencies (for Quartz)
 npm ci
 
 # Build the Quartz site locally
 npx quartz build --serve
 
-# Run internal linking (dry run)
-GEMINI_API_KEY=... npx tsx scripts/internal-linking.ts --dry-run --max-files 10
+# Build Haskell automation
+cd haskell && cabal update && cabal build all
 
-# Generate a blog post
-GEMINI_API_KEY=... npx tsx scripts/generate-blog-post.ts --series auto-blog-zero
-
-# Check Gemini API quota
-GEMINI_API_KEY=... npx tsx scripts/check-gemini-quota.ts
+# Run Haskell tests
+cd haskell && cabal test --test-show-details=direct
 ```
 
 ## 📐 Design Principles
 
-- 🏗️ **Strong static types** — TypeScript with strict mode, inspired by Haskell
-- 🧩 **Functional declarative patterns** — `map`, `reduce`, `filter`, `flatMap` over loops; `const` over `let`; expression-oriented
-- 🔧 **Unix philosophy** — Small, composable scripts with clear boundaries
+- 🏗️ **Strong static types** — Haskell for automation, TypeScript with strict mode for Quartz
+- 🧩 **Functional declarative patterns** — Pure functions, algebraic data types, pattern matching, composition
+- 🔧 **Unix philosophy** — Small, composable modules with clear boundaries
 - 📐 **Domain-driven design** — Explicit types for domain concepts
-- 📖 **Self-documenting code** — Well-named functions and variables over comments
+- 📖 **Self-documenting code** — Well-named functions and types over comments
 - 📱 **Obsidian vault is source of truth** — `content/` is read-only; all mutations flow through vault sync
 - 🚫 **Never commit from workflows** — GitHub Actions use `contents: read` permissions only
 
@@ -252,7 +268,7 @@ GEMINI_API_KEY=... npx tsx scripts/check-gemini-quota.ts
 
 | 📄 Spec | 📝 Description |
 |---|---|
-| [`scheduled-tasks.md`](specs/scheduled-tasks.md) | ⏰ Consolidated task scheduler — hourly cron, TypeScript scheduling logic, task pipelines |
+| [`scheduled-tasks.md`](specs/scheduled-tasks.md) | ⏰ Consolidated task scheduler — hourly cron, Haskell scheduling logic, task pipelines |
 | [`image-generation.md`](specs/image-generation.md) | 🖼️ Image generation pipeline — architecture, provider resolution, frontmatter schema, rate limiting, backfill prioritization |
 | [`daily-reflection.md`](specs/daily-reflection.md) | 📝 Daily reflection auto-update — template-based creation, series section insertion, post linking, workflow integration |
 | [`systems-for-public-good.md`](specs/systems-for-public-good.md) | 🏛️ Systems for Public Good blog series — democracy, public goods, grounding with Google Search, editorial guidelines |

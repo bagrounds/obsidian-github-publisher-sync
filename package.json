@@ -35,11 +35,8 @@
     "quartz": "./quartz/bootstrap-cli.mjs"
   },
   "dependencies": {
-    "@atproto/api": "^0.19.3",
     "@clack/prompts": "^0.10.1",
     "@floating-ui/dom": "^1.6.13",
-    "@google/genai": "^1.46.0",
-    "@google/generative-ai": "^0.24.1",
     "@myriaddreamin/rehype-typst": "^0.5.4",
     "@napi-rs/simple-git": "0.1.19",
     "@tweenjs/tween.js": "^25.0.0",
@@ -60,7 +57,6 @@
     "is-absolute-url": "^4.0.1",
     "js-yaml": "^4.1.0",
     "lightningcss": "^1.29.3",
-    "masto": "^7.10.2",
     "mdast-util-find-and-replace": "^3.0.2",
     "mdast-util-to-hast": "^13.2.0",
     "mdast-util-to-string": "^4.0.0",
@@ -96,7 +92,6 @@
     "source-map-support": "^0.5.21",
     "to-vfile": "^8.0.0",
     "toml": "^3.0.0",
-    "twitter-api-v2": "^1.29.0",
     "unified": "^11.0.5",
     "unist-util-visit": "^5.0.0",
     "vfile": "^6.0.3",

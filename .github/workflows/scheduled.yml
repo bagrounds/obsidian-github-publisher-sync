@@ -34,18 +34,6 @@ jobs:
         with:
           node-version: 22
 
-      - name: Cache Node Modules
-        id: cache
-        uses: actions/cache@v4
-        with:
-          path: node_modules
-          key: v3-${{ runner.os }}-node22-${{ hashFiles('**/package-lock.json') }}
-          restore-keys: v3-${{ runner.os }}-node22-
-
-      - name: Install Dependencies
-        if: ${{ steps.cache.outputs.cache-hit != 'true' }}
-        run: npm ci
-
       - name: Install Obsidian Headless CLI
         run: npm install -g obsidian-headless
 

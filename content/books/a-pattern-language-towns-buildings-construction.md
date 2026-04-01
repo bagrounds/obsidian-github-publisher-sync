@@ -6,8 +6,11 @@ URL: https://bagrounds.org/books/a-pattern-language-towns-buildings-construction
 share: true
 CTA: 🏡 Build thoughtfully.
 affiliate link: https://amzn.to/43iEkWk
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_time: 2026-03-31T00:00:00Z
+force_analyze_links: false
 ---
-[Home](/content/index.md) > [Books](/content/books/index.md)  
+[Home](../index.md) > [Books](./index.md)  
 # 🏘️🧱🏗️ A Pattern Language: Towns, Buildings, Construction  
 [🛒 A Pattern Language: Towns, Buildings, Construction. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/43iEkWk)  
   

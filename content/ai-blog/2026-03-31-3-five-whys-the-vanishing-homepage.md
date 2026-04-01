@@ -7,6 +7,9 @@ URL: https://bagrounds.org/ai-blog/2026-03-31-five-whys-the-vanishing-homepage
 image_date: 2026-03-31T16:34:13Z
 image_model: "@cf/black-forest-labs/flux-1-schnell"
 image_prompt: A minimalist digital illustration featuring a large, stylized house icon at the center, rendered in a crisp, clean architectural line style. The house is partially translucent, revealing a complex, glowing network of golden data cables and interconnected nodes behind it. A single, jagged red glitch line cuts through the center of the house, representing the vanishing homepage. To the right, a magnifying glass hovers over a small, floating YAML code snippet, highlighting a single empty string symbol. The background is a soft, deep gradient of dark blue to charcoal, conveying a sense of technical investigation and digital architecture. The overall aesthetic is modern, clean, and analytical, focusing on the intersection of web infrastructure and data corruption.
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_time: 2026-03-31T00:00:00Z
+force_analyze_links: false
 ---
 [🏡 Home](../index.md) > [🤖 AI Blog](./index.md) | [⏮️](./2026-03-31-2-speeding-up-haskell-ci.md) [⏭️](./2026-03-31-4-broken-links-and-blind-posting.md)  
 # 2026-03-31 | 🏠 Five Whys: The Vanishing Homepage 🔍  
@@ -77,4 +80,4 @@ image_prompt: A minimalist digital illustration featuring a large, stylized hous
   
 ### 🔗 Related  
 * Designing Data-Intensive Applications by Martin Kleppmann explores how distributed systems handle concurrent writes and race conditions at scale, providing deeper theory behind the parallel emitter race condition discovered in this investigation.  
-* The Phoenix Project by Gene Kim connects to this story through its narrative of production incidents, root cause analysis, and the journey from firefighting to systematic improvement.  
+* [🐦‍🔥💻 The Phoenix Project](../books/the-phoenix-project.md) by Gene Kim connects to this story through its narrative of production incidents, root cause analysis, and the journey from firefighting to systematic improvement.  

@@ -8,8 +8,11 @@ Author:
 tags:
 affiliate link: https://amzn.to/3FlGdZM
 updated: 2026-03-19T22:02:31.937Z
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_time: 2026-04-01T00:00:00Z
+force_analyze_links: false
 ---
-[Home](/content/index.md) > [Books](/content/books/index.md)  
+[Home](../index.md) > [Books](./index.md)  
 # ✍️🦴 Writing Down the Bones  
 by Natalie Goldberg  
 [🛒 Writing Down the Bones. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3FlGdZM)  
@@ -85,10 +88,10 @@ Goldberg frequently uses anecdotes from her own life and experiences with her st
   
 ### 📚 Further Reading: Expanding the Literary Horizon 🌌  
   
-* **Best Alternate Book on the Same Topic:** *[The Artist's Way](/content/books/the-artists-way.md)* by Julia Cameron 🎨 (Similar emphasis on unlocking creativity through a process-oriented approach, but more structured.)  
-* **Best Tangentially Related Book:** *[🐦🕊️ Bird by Bird: Some Instructions on Writing and Life](/content/books/bird-by-bird.md)* by Anne Lamott 🐦 (Provides practical advice on writing and life, focusing on overcoming perfectionism and embracing the writing process.)  
-* **Best Diametrically Opposed Book:** *[🦢 The Elements of Style](/content/books/the-elements-of-style.md)* by William Strunk Jr. and E.B. White ✍️ (Focuses on grammar, structure, and clarity, emphasizing precision and conciseness in writing.)  
-* **Best Fiction Book that Incorporates Related Ideas:** *[🪄 Big Magic: Creative Living Beyond Fear](/content/books/big-magic.md)* by Elizabeth Gilbert 🪄 (Explores the nature of creativity and inspiration through a blend of memoir, philosophy, and practical advice.)  
+* **Best Alternate Book on the Same Topic:** *[The Artist's Way](./the-artists-way.md)* by Julia Cameron 🎨 (Similar emphasis on unlocking creativity through a process-oriented approach, but more structured.)  
+* **Best Tangentially Related Book:** *[🐦🕊️ Bird by Bird: Some Instructions on Writing and Life](./bird-by-bird.md)* by Anne Lamott 🐦 (Provides practical advice on writing and life, focusing on overcoming perfectionism and embracing the writing process.)  
+* **Best Diametrically Opposed Book:** *[🦢 The Elements of Style](./the-elements-of-style.md)* by William Strunk Jr. and E.B. White ✍️ (Focuses on grammar, structure, and clarity, emphasizing precision and conciseness in writing.)  
+* **Best Fiction Book that Incorporates Related Ideas:** *[🪄 Big Magic: Creative Living Beyond Fear](./big-magic.md)* by Elizabeth Gilbert 🪄 (Explores the nature of creativity and inspiration through a blend of memoir, philosophy, and practical advice.)  
 * **Best Book That is More General:** *Steering the Craft: A Twenty-First-Century Guide to Sailing the Sea of Story* by Ursula K. Le Guin ⛵(This book is a guide for fiction writers that covers more traditional topics like plot, voice, and character.)  
 * **Best Book That is More Specific:** *Writing the Breakout Novel Workbook* by Donald Maass 💥(This workbook guides the reader through specific exercises that help them craft a novel with the potential to become a breakout hit.)  
 * **Best Book That is More Rigorous:** *Several Short Sentences About Writing* by Verlyn Klinkenborg 🧐(This book presents a more intense, focused approach to writing, while still maintaining accessibility.)  

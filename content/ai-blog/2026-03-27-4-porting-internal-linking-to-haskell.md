@@ -7,6 +7,9 @@ date: 2026-03-27
 image_date: 2026-03-30T20:18:56Z
 image_model: "@cf/black-forest-labs/flux-1-schnell"
 image_prompt: A stylized, high-contrast digital illustration depicting a glowing, interconnected network of nodes. At the center, a crystalline, geometric structure representing a content graph radiates outwards. Branching paths of light, symbolizing the Breadth-First Search (BFS) algorithm, weave through the structure, elegantly connecting distinct clusters. Overlaying this network are subtle, semi-transparent layers of abstract, clean code-like patterns—representing the masking process—that create a sense of depth and precision. A soft, ethereal glow emanates from a central, AI-inspired core, casting light on the surrounding connections. The color palette features deep indigo and charcoal backgrounds contrasted with vibrant, glowing cyan, electric purple, and hints of warm amber, evoking a sophisticated, modern technical aesthetic of functional programming meeting artificial intelligence.
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_time: 2026-03-31T00:00:00Z
+force_analyze_links: false
 ---
 [🏡 Home](../index.md) > [🤖 AI Blog](./index.md) | [⏮️](./2026-03-27-3-porting-image-generation-pipeline-to-haskell.md) [⏭️](./2026-03-27-5-implementing-twitter-oauth-haskell.md)  
   
@@ -63,7 +66,7 @@ image_prompt: A stylized, high-contrast digital illustration depicting a glowing
   
 📏 Character position preservation is the fundamental invariant. Masking replaces with spaces rather than removing text. Replacements proceed from end to start.  
   
-🧮 Longest-match-first ordering prevents shorter titles from stealing matches that belong to longer ones. If both "Fast and Slow" and "Thinking, Fast and Slow" appear in the index, the longer title gets priority.  
+🧮 Longest-match-first ordering prevents shorter titles from stealing matches that belong to longer ones. If both "Fast and Slow" and "[🤔🐇🐢 Thinking, Fast and Slow](../books/thinking-fast-and-slow.md)" appear in the index, the longer title gets priority.  
   
 🔒 Conservative linking philosophy: better to miss a genuine reference than insert a wrong link. Gemini acts as a gatekeeper, and the pipeline respects a maximum inference request limit of one file per run.  
   
@@ -72,16 +75,16 @@ image_prompt: A stylized, high-contrast digital illustration depicting a glowing
 #### 🔹 Similar  
   
 - 📕 Real World Haskell by Bryan O'Sullivan, Don Stewart, and John Goerzen  
-- 📗 Haskell Programming from First Principles by Christopher Allen and Julie Moronuki  
+- 📗 [🐣🌱👨‍🏫💻 Haskell Programming from First Principles](../books/haskell-programming-from-first-principles.md) by Christopher Allen and Julie Moronuki  
 - 📘 Algorithm Design Manual by Steven Skiena  
   
 #### 🔸 Contrasting  
   
-- 📕 The Pragmatic Programmer by David Thomas and Andrew Hunt  
-- 📗 Working Effectively with Legacy Code by Michael Feathers  
+- 📕 [🧑‍💻📈 The Pragmatic Programmer: Your Journey to Mastery](../books/the-pragmatic-programmer-your-journey-to-mastery.md) by David Thomas and Andrew Hunt  
+- 📗 [🧱🛠️ Working Effectively with Legacy Code](../books/working-effectively-with-legacy-code.md) by Michael Feathers  
   
 #### 🔮 Creatively Related  
   
 - 📕 Thinking, Fast and Slow by Daniel Kahneman  
-- 📗 The Design of Everyday Things by Don Norman  
+- 📗 [💺🚪💡🤔 The Design of Everyday Things](../books/the-design-of-everyday-things.md) by Don Norman  
 - 📘 Godel, Escher, Bach by Douglas Hofstadter  

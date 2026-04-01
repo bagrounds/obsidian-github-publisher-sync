@@ -4,9 +4,16 @@ aliases:
   - 2026-03-23 | 📝 Daily Reflection Auto-Update — Template-Based Vault Linking Without AI
 share: true
 date: 2026-03-23
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_time: 2026-03-31T00:00:00Z
+force_analyze_links: false
+image_date: 2026-04-01T07:36:33Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: "A minimalist, isometric illustration of a digital workspace. At the center, a stylized, glowing white document icon representing a Daily Reflection note acts as a central hub. From this hub, several clean, geometric lines radiate outward, connecting to smaller, colored icons representing different content types: a book, a social media bubble, and a digital file folder. The aesthetic is clean and structured, using a soft, cool-toned color palette of teals, soft grays, and muted indigo. The background is a subtle, light-colored grid pattern, suggesting a systematic, well-organized digital architecture. The lighting is soft and ambient, emphasizing the deterministic and orderly nature of the automated workflow without any complex or chaotic elements."
 ---
 [🏡 Home](../index.md) > [🤖 AI Blog](./index.md) | [⏮️](./2026-03-23-centralize-backfill-config.md) [⏭️](./2026-03-23-multi-provider-image-generation.md)  
 # 2026-03-23 | 📝 Daily Reflection Auto-Update — Template-Based Vault Linking Without AI  
+![ai-blog-2026-03-23-daily-reflection-auto-update](../ai-blog-2026-03-23-daily-reflection-auto-update.jpg)  
   
 ## 🎯 The Problem  
   
@@ -128,12 +135,12 @@ date: 2026-03-23
   
 ### ↔️ Similar  
 * 🧠 Designing Data-Intensive Applications by Martin Kleppmann explores the principles behind reliable, scalable systems — the same philosophy of idempotent, deterministic operations that drives this reflection pipeline.  
-* 📐 Domain-Driven Design by Eric Evans provides the foundational thinking on modeling domain concepts as code — exactly what we did by encoding the reflection template as pure functions.  
+* 📐 [🧩🧱⚙️❤️ Domain-Driven Design: Tackling Complexity in the Heart of Software](../books/domain-driven-design.md) by Eric Evans provides the foundational thinking on modeling domain concepts as code — exactly what we did by encoding the reflection template as pure functions.  
   
 ### 🆚 Contrasting  
-* 🤖 Designing Machine Learning Systems by Chip Huyen covers when and how to use ML in production — a useful counterpoint for knowing when deterministic logic is the better choice over AI.  
+* 🤖 [🤖⚙️🔁 Designing Machine Learning Systems: An Iterative Process for Production-Ready Applications](../books/designing-machine-learning-systems-an-iterative-process-for-production-ready-applications.md) by Chip Huyen covers when and how to use ML in production — a useful counterpoint for knowing when deterministic logic is the better choice over AI.  
 * 🏗️ Building Microservices by Sam Newman advocates for service decomposition — contrasting our monolithic workflow approach where simplicity wins over distributed complexity.  
   
 ### 🎨 Creatively Related  
 * 📓 How to Take Smart Notes by Sönke Ahrens introduces the Zettelkasten method of interconnected notes — the same philosophy that makes Obsidian's wiki-links and daily reflections so powerful.  
-* 🔧 The Pragmatic Programmer by David Thomas and Andrew Hunt emphasizes automation of repetitive tasks — the exact motivation behind eliminating manual daily reflection linking.  
+* 🔧 [🧑‍💻📈 The Pragmatic Programmer: Your Journey to Mastery](../books/the-pragmatic-programmer-your-journey-to-mastery.md) by David Thomas and Andrew Hunt emphasizes automation of repetitive tasks — the exact motivation behind eliminating manual daily reflection linking.  

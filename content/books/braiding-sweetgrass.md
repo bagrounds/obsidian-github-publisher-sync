@@ -9,8 +9,11 @@ tags:
 affiliate link: https://amzn.to/3Ho8r6E
 CTA: Grow honorably.
 updated: 2026-03-14T18:08:46.233Z
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_time: 2026-04-01T00:00:00Z
+force_analyze_links: false
 ---
-[Home](/content/index.md) > [Books](/content/books/index.md)  
+[Home](../index.md) > [Books](./index.md)  
 # 🪢🌾 Braiding Sweetgrass: Indigenous Wisdom, Scientific Knowledge, and the Teachings of Plants  
 [🛒 Braiding Sweetgrass: Indigenous Wisdom, Scientific Knowledge, and the Teachings of Plants. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3Ho8r6E)  
   
@@ -64,27 +67,27 @@ updated: 2026-03-14T18:08:46.233Z
 ### 📖 Similar Reads (Indigenous Wisdom, Ecology, Nature Connection)  
 * 🌿 ***Gathering Moss: A Natural and Cultural History of Mosses*** **by Robin Wall Kimmerer:** 🔬 Her earlier work focusing on the overlooked world of mosses, blending science and wonder.  
 * 🌳 ***Finding the Mother Tree: Discovering the Wisdom of the Forest*** **by Suzanne Simard:** 🌲 A forest ecologist's research into the complex communication and symbiotic relationships between trees.  
-* **[🍄🌍🧠🔮 Entangled Life: How Fungi Make Our Worlds, Change Our Minds & Shape Our Futures](/content/books/entangled-life-how-fungi-make-our-worlds-change-our-minds-shape-our-futures.md)** **by Merlin Sheldrake:** 🌐 Explores the fascinating world of fungi and their essential, often hidden, roles in ecosystems.  
+* **[🍄🌍🧠🔮 Entangled Life: How Fungi Make Our Worlds, Change Our Minds & Shape Our Futures](./entangled-life-how-fungi-make-our-worlds-change-our-minds-shape-our-futures.md)** **by Merlin Sheldrake:** 🌐 Explores the fascinating world of fungi and their essential, often hidden, roles in ecosystems.  
 * 🌍 ***Rooted: Life at the Crossroads of Science, Nature, and Spirit*** **by Lyanda Lynn Haupt:** ✨ Blends science, mysticism, and nature observation to explore deep connections with the wild.  
-* **[🇺🇸🏹 An Indigenous Peoples' History of the United States](/content/books/an-indigenous-peoples-history-of-the-united-states.md)** **by Roxanne Dunbar-Ortiz:** 🇺🇸 Provides crucial historical context about the colonization and resilience of Indigenous peoples in the US.  
+* **[🇺🇸🏹 An Indigenous Peoples' History of the United States](./an-indigenous-peoples-history-of-the-united-states.md)** **by Roxanne Dunbar-Ortiz:** 🇺🇸 Provides crucial historical context about the colonization and resilience of Indigenous peoples in the US.  
 * 🌲 ***The Overstory*** **by Richard Powers:** 🏆 A Pulitzer Prize-winning novel where trees are central characters, weaving together human lives and ecological consciousness (Fiction).  
 * 🍃 ***Fresh Banana Leaves: Healing Indigenous Landscapes through Indigenous Science*** **by Jessica Hernandez:** 🌎 Focuses on Indigenous environmental science and conservation practices in Latin America and the US.  
 * ✊ ***As Long as Grass Grows: The Indigenous Fight for Environmental Justice, from Colonization to Standing Rock*** **by Dina Gilio-Whitaker:** ⚖️ Explores the history and ongoing struggle for Indigenous environmental justice.  
   
 ### 🆚 Contrasting Perspectives  
-* 💔 **[The Sixth Extinction](/content/books/the-sixth-extinction.md): An Unnatural History** **by Elizabeth Kolbert:** 💀 A stark, science-driven account of past mass extinction events and the current one driven by human activity. 🔬 Focuses more on loss and scientific analysis than Indigenous wisdom or reciprocity.  
-* 🌍 **[Sapiens: A Brief History of Humankind](/content/books/sapiens-a-brief-history-of-humankind.md)** **by Yuval Noah Harari:** 🧑‍🤝‍🧑 A broad overview of human history and impact, often framed through a lens of human dominance rather than kinship with nature.  
+* 💔 **[The Sixth Extinction](./the-sixth-extinction.md): An Unnatural History** **by Elizabeth Kolbert:** 💀 A stark, science-driven account of past mass extinction events and the current one driven by human activity. 🔬 Focuses more on loss and scientific analysis than Indigenous wisdom or reciprocity.  
+* 🌍 **[Sapiens: A Brief History of Humankind](./sapiens-a-brief-history-of-humankind.md)** **by Yuval Noah Harari:** 🧑‍🤝‍🧑 A broad overview of human history and impact, often framed through a lens of human dominance rather than kinship with nature.  
 * ⚠️ ***Silent Spring*** **by Rachel Carson:** 🧪 A foundational environmental science book focused on the destructive impact of pesticides, sparking the modern environmental movement through scientific warning and advocacy.  
-* 🧬 **[👤🧬 The Selfish Gene](/content/books/the-selfish-gene.md)** **by Richard Dawkins:** 🔬 A classic work of evolutionary biology presenting a gene-centric view of life, contrasting with Kimmerer's emphasis on cooperation, community, and interconnectedness.  
+* 🧬 **[👤🧬 The Selfish Gene](./the-selfish-gene.md)** **by Richard Dawkins:** 🔬 A classic work of evolutionary biology presenting a gene-centric view of life, contrasting with Kimmerer's emphasis on cooperation, community, and interconnectedness.  
   
 ### 🎨 Creatively Related  
 * 🔬 ***Lab Girl*** **by Hope Jahren:** 👩‍🔬 A memoir about a woman's life in science (geobiology and paleobotany), sharing a passion for plants and the challenges of scientific work, though with a different tone and focus.  
-* **[🌳🗣️ The Hidden Life of Trees: What They Feel, How They Communicate: Discoveries from a Secret World](/content/books/the-hidden-life-of-trees-what-they-feel-how-they-communicate-discoveries-from-a-secret-world.md)** **by Peter Wohlleben:** 🗣️ Popular science book exploring the social networks and communication among trees, echoing Kimmerer's themes of plant intelligence and community.  
+* **[🌳🗣️ The Hidden Life of Trees: What They Feel, How They Communicate: Discoveries from a Secret World](./the-hidden-life-of-trees-what-they-feel-how-they-communicate-discoveries-from-a-secret-world.md)** **by Peter Wohlleben:** 🗣️ Popular science book exploring the social networks and communication among trees, echoing Kimmerer's themes of plant intelligence and community.  
 * 🏞️ ***Walden*** **by Henry David Thoreau:** 🚶 A classic of American nature writing focused on simple living, self-sufficiency, and close observation of nature, albeit from a different cultural perspective.  
 * 🏞️ ***Pilgrim at Tinker Creek*** **by Annie Dillard:** ✨ Pulitzer Prize-winning meditative nature writing, exploring themes of wonder, beauty, and the sometimes-unsettling aspects of the natural world through intense observation.  
 * ✍️ **Poetry by Mary Oliver or Joy Harjo (US Poet Laureate, member of the Muscogee Nation):** 📜 Offers lyrical, insightful reflections on nature, place, and connection.  
   
-## 💬 [Gemini](/content/software/gemini.md) Prompt (gemini-2.5-pro-exp-03-25)  
+## 💬 [Gemini](../software/gemini.md) Prompt (gemini-2.5-pro-exp-03-25)  
 > Write a markdown-formatted (start headings at level H2) book report, followed by a plethora of additional similar, contrasting, and creatively related book recommendations on Braiding Sweetgrass. Be thorough in content discussed but concise and economical with your language. Structure the report with section headings and bulleted lists to avoid long blocks of text.  
   
 ## 🦋 Bluesky    

@@ -6,8 +6,11 @@ URL: https://bagrounds.org/books/can-we-afford-the-future-the-economics-of-a-war
 share: true
 affiliate link: https://amzn.to/3LBIVwF
 CTA: 💰 Prepare for impact.
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_time: 2026-04-01T00:00:00Z
+force_analyze_links: false
 ---
-[Home](/content/index.md) > [Books](/content/books/index.md)  
+[Home](../index.md) > [Books](./index.md)  
 # 💰🌎🌡️ Can We Afford the Future?: The Economics of a Warming World  
 [🛒 Can We Afford the Future?: The Economics of a Warming World. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3LBIVwF)  
   
@@ -66,7 +69,7 @@ CTA: 💰 Prepare for impact.
 ### 📖 Similar  
 * 🌍 Net Zero: How We Stop Causing Climate Change by Dieter Helm  
 * 💰 The Carbon Crunch by Dieter Helm  
-* [🍩🌍 Doughnut Economics: Seven Ways to Think Like a 21st-Century Economist](/content/books/doughnut-economics-seven-ways-to-think-like-a-21st-century-economist.md) by Kate Raworth  
+* [🍩🌍 Doughnut Economics: Seven Ways to Think Like a 21st-Century Economist](./doughnut-economics-seven-ways-to-think-like-a-21st-century-economist.md) by Kate Raworth  
   
 ### 📖 Contrasting  
 * 🚨 Apocalypse Never: Why Environmental Alarmism Hurts Us All by Michael Shellenberger  
@@ -75,7 +78,7 @@ CTA: 💰 Prepare for impact.
 ### 📖 Related  
 * 🌳 Natural Capital by Dieter Helm  
 * 🌱 Legacy: How to Build the Sustainable Economy by Dieter Helm  
-* [🤔🐇🐢 Thinking, Fast and Slow](/content/books/thinking-fast-and-slow.md) by Daniel Kahneman  
+* [🤔🐇🐢 Thinking, Fast and Slow](./thinking-fast-and-slow.md) by Daniel Kahneman  
   
 ## 🫵 What Do You Think?  
 🤔 What aspect of the economic argument for climate action resonates most with you, and what challenges do you foresee in shifting economic paradigms?

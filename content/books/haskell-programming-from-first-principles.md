@@ -7,6 +7,9 @@ URL: https://bagrounds.org/books/haskell-programming-from-first-principles
 Author:
 tags:
 updated: 2026-03-15T14:10:58.318Z
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_time: 2026-03-31T00:00:00Z
+force_analyze_links: false
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🐣🌱👨‍🏫💻 Haskell Programming from First Principles  

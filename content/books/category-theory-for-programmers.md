@@ -8,8 +8,11 @@ Author:
 tags:
 affiliate link: https://amzn.to/4jNZYY9
 updated: 2026-03-10T22:06:20.229Z
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_time: 2026-03-31T00:00:00Z
+force_analyze_links: false
 ---
-[Home](/content/index.md) > [Books](/content/books/index.md)  
+[Home](../index.md) > [Books](./index.md)  
 # 🧮➡️👩🏼‍💻 Category Theory for Programmers  
 [🛒 Category Theory for Programmers. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4jNZYY9)  
   
@@ -81,13 +84,13 @@ This book flips the script by taking an abstract, mathematical subject—categor
   - [Design Patterns: Elements of Reusable Object-Oriented Software](https://en.wikipedia.org/wiki/Design_Patterns) 😅  
     *While it focuses on object-oriented design rather than functional abstraction, it provides a contrasting perspective on how software can be structured.*  
 - **Fiction Incorporating Related Ideas:**  
-  - [Gödel, Escher, Bach: An Eternal Golden Braid](/content/books/godel-escher-bach.md) 🤓  
+  - [Gödel, Escher, Bach: An Eternal Golden Braid](./godel-escher-bach.md) 🤓  
     *This Pulitzer Prize-winning work weaves together themes of logic, mathematics, and art in a narrative that echoes the structural insights of category theory.*  
 - **More General/Specific Book:**  
   - Conceptual Mathematics: A First Introduction to Categories 😊  
     *Offers a gentle introduction to category theory, making it accessible to beginners and those interested in the broader implications of mathematical structures.*  
 - **More Rigorous/Accessible Book:**  
-  - [Seven Sketches in Compositionality](/content/books/seven-sketches-in-compositionality.md): An Invitation to Applied Category Theory 😍  
+  - [Seven Sketches in Compositionality](./seven-sketches-in-compositionality.md): An Invitation to Applied Category Theory 😍  
     *An accessible yet mathematically solid introduction to applied category theory, perfect for those who want to explore the subject in greater depth after reading Milewski’s work.*  
   
 ---  

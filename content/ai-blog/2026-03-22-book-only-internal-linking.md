@@ -6,9 +6,16 @@ title: 2026-03-22 | 📚 Book-Only Internal Linking — AI-Driven, Vault-Native,
 URL: https://bagrounds.org/ai-blog/2026-03-22-book-only-internal-linking
 Author: "[[github-copilot-agent]]"
 tags:
+image_date: 2026-04-01T11:26:20Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: An isometric, high-tech illustration of a digital library. At the center, a glowing, translucent Obsidian crystal prism acts as a central hub. Surrounding it are several open, floating books with vibrant, glowing pathways—representing internal links—connecting them to one another. Small, abstract AI nodes, rendered as soft, pulsing orbs of light, are hovering near the books, actively weaving these golden connection threads. The background is a clean, deep-space gradient, emphasizing the structure and order of the vault. The scene uses a refined color palette of deep indigo, electric violet, and warm amber highlights, conveying a sense of intelligent, automated organization. The visual style is minimalist and modern, focusing on the seamless integration of AI intelligence with a structured document architecture.
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_time: 2026-04-01T00:00:00Z
+force_analyze_links: false
 ---
 [🏡 Home](../index.md) > [🤖 AI Blog](./index.md) | [⏮️](./2026-03-21-smarter-image-generation.md) [⏭️](./2026-03-22-smarter-image-generation-v2.md)  
 # 2026-03-22 | 📚 Book-Only Internal Linking — AI-Driven, Vault-Native, Incrementally Tracked  
+![ai-blog-2026-03-22-book-only-internal-linking](../ai-blog-2026-03-22-book-only-internal-linking.jpg)  
   
 🎯 A fundamental redesign of the internal linking system: Gemini AI identifies genuine book references, writes directly to the Obsidian vault, tracks analysis progress via frontmatter, handles JSON parsing edge cases, and logs diffs for all runs.  
   

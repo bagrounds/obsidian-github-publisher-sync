@@ -6,8 +6,11 @@ URL: https://bagrounds.org/books/fundamentals-of-data-engineering-plan-and-build
 share: true
 CTA: ⚙️ Architect knowledge systems.
 affiliate link: https://amzn.to/4ldNGZu
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_time: 2026-04-01T00:00:00Z
+force_analyze_links: false
 ---
-[Home](/content/index.md) > [Books](/content/books/index.md)  
+[Home](../index.md) > [Books](./index.md)  
 # 💾🏗️ Fundamentals of Data Engineering: Plan and Build Robust Data Systems  
 [🛒 Fundamentals of Data Engineering: Plan and Build Robust Data Systems. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4ldNGZu)  
   
@@ -55,7 +58,7 @@ This book is highly recommended for a broad audience, including:
   
 ### 🔗 Similar Reads: The Data Engineering Canon  
   
-* **[💾⬆️🛡️ Designing Data-Intensive Applications: The Big Ideas Behind Reliable, Scalable, and Maintainable Systems](/content/books/designing-data-intensive-applications.md)** by Martin Kleppmann: Often considered a foundational text, this book provides a deep dive into the principles of building reliable, scalable, and maintainable data systems. It explores the fundamental concepts that underpin modern databases, distributed systems, and stream processing.  
+* **[💾⬆️🛡️ Designing Data-Intensive Applications: The Big Ideas Behind Reliable, Scalable, and Maintainable Systems](./designing-data-intensive-applications.md)** by Martin Kleppmann: Often considered a foundational text, this book provides a deep dive into the principles of building reliable, scalable, and maintainable data systems. It explores the fundamental concepts that underpin modern databases, distributed systems, and stream processing.  
 * 📦 **The Data Warehouse Toolkit** by Ralph Kimball and Margy Ross: A classic in the field, this book is the definitive guide to dimensional modeling, a key technique for designing data warehouses for analytics.  
 * 🐍 **Data Engineering with Python** by Paul Crickard: This book offers a practical, hands-on approach to building data pipelines using Python and popular open-source tools. It provides concrete examples of ETL processes and data modeling.  
 * 💡 **97 Things Every Data Engineer Should Know** by Tobias Macey: This is a collection of short essays from various data engineering experts, offering practical advice and insights on a wide range of topics.  
@@ -69,10 +72,10 @@ This book is highly recommended for a broad audience, including:
   
 ### ✨ Creative Connections: Broadening the Data Engineer's Mindset  
   
-* **[🌐🔗🧠📖 Thinking in Systems: A Primer](/content/books/thinking-in-systems.md)** by Donella H. Meadows: This book introduces the concepts of systems thinking, providing a framework for understanding and managing complex, interconnected systems – a perfect analogy for data architectures.  
-* **[🧑‍💻📈 The Pragmatic Programmer: Your Journey to Mastery](/content/books/the-pragmatic-programmer-your-journey-to-mastery.md)** by David Thomas and Andrew Hunt: A classic in software engineering, this book offers timeless advice on writing better software and being a more effective programmer, with many principles directly applicable to data engineering.  
+* **[🌐🔗🧠📖 Thinking in Systems: A Primer](./thinking-in-systems.md)** by Donella H. Meadows: This book introduces the concepts of systems thinking, providing a framework for understanding and managing complex, interconnected systems – a perfect analogy for data architectures.  
+* **[🧑‍💻📈 The Pragmatic Programmer: Your Journey to Mastery](./the-pragmatic-programmer-your-journey-to-mastery.md)** by David Thomas and Andrew Hunt: A classic in software engineering, this book offers timeless advice on writing better software and being a more effective programmer, with many principles directly applicable to data engineering.  
 * 👁️ **Data and Goliath: The Hidden Battles to Collect Your Data and Control Your World** by Bruce Schneier: This book explores the societal implications of large-scale data collection, providing important context for data engineers on the ethical responsibilities associated with their work.  
-* **[📖📊📈 Storytelling with Data: A Data Visualization Guide for Business Professionals](/content/books/storytelling-with-data-a-data-visualization-guide-for-business-professionals.md)** by Cole Nussbaumer Knaflic: While aimed at data analysts and visualizers, this book's focus on clear communication and presenting data in a compelling narrative is a valuable skill for data engineers who need to explain the value of their work to stakeholders.  
+* **[📖📊📈 Storytelling with Data: A Data Visualization Guide for Business Professionals](./storytelling-with-data-a-data-visualization-guide-for-business-professionals.md)** by Cole Nussbaumer Knaflic: While aimed at data analysts and visualizers, this book's focus on clear communication and presenting data in a compelling narrative is a valuable skill for data engineers who need to explain the value of their work to stakeholders.  
   
-## 💬 [Gemini](/content/software/gemini.md) Prompt (gemini-2.5-pro)  
+## 💬 [Gemini](../software/gemini.md) Prompt (gemini-2.5-pro)  
 > Write a markdown-formatted (start headings at level H2) book report, followed by a plethora of additional similar, contrasting, and creatively related book recommendations on Fundamentals of Data Engineering: Plan and Build Robust Data Systems. Never put book titles in quotes or italics. Be thorough in content discussed but concise and economical with your language. Structure the report with section headings and bulleted lists to avoid long blocks of text.

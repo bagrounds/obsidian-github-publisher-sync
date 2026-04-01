@@ -6,8 +6,11 @@ URL: https://bagrounds.org/books/the-great-transformation-the-political-and-econ
 share: true
 affiliate link: https://amzn.to/4kprFGR
 CTA: Understand societal origins.
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_time: 2026-04-01T00:00:00Z
+force_analyze_links: false
 ---
-[Home](/content/index.md) > [Books](/content/books/index.md)  
+[Home](../index.md) > [Books](./index.md)  
 # 🌍🏛️ The Great Transformation: The Political and Economic Origins of Our Time  
 [🛒 The Great Transformation: The Political and Economic Origins of Our Time. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4kprFGR)  
   
@@ -42,10 +45,10 @@ CTA: Understand societal origins.
   
 ### 🤝 Similar Books (Exploring Market Society, Capitalism, and Social Protection)  
   
-* **[🏛️💰 Debt: The First 5,000 Years](/content/books/debt-the-first-5000-years.md) by David Graeber:** Like Polanyi, Graeber challenges conventional economic narratives by exploring the historical and anthropological origins of debt and exchange, suggesting that market exchange is not the natural basis of human economy.  
+* **[🏛️💰 Debt: The First 5,000 Years](./debt-the-first-5000-years.md) by David Graeber:** Like Polanyi, Graeber challenges conventional economic narratives by exploring the historical and anthropological origins of debt and exchange, suggesting that market exchange is not the natural basis of human economy.  
 * 📈 **A Brief History of Neoliberalism by David Harvey:** Harvey traces the rise of neoliberalism, a modern form of laissez-faire, showing how it has reshaped global economies and societies, often with significant social costs, echoing Polanyi's concerns about the dominance of market logic.  
-* **[🏷️🏚️💔🏰 The Price of Inequality: How Today's Divided Society Endangers Our Future](/content/books/the-price-of-inequality-how-todays-divided-society-endangers-our-future.md) by Joseph E. Stiglitz:** Stiglitz analyzes how market forces, shaped by political decisions, have led to increasing inequality, demonstrating the societal harm that results when markets are not properly embedded or regulated.  
-* **[💰📈🌍⏳ Capital in the Twenty-First Century](/content/books/capital-in-the-twenty-first-century.md) by Thomas Piketty:** While focused on wealth inequality through a different lens (return on capital vs. economic growth), Piketty's work provides extensive data illustrating the long-term consequences of market dynamics on social stratification, complementing Polanyi's historical critique.  
+* **[🏷️🏚️💔🏰 The Price of Inequality: How Today's Divided Society Endangers Our Future](./the-price-of-inequality-how-todays-divided-society-endangers-our-future.md) by Joseph E. Stiglitz:** Stiglitz analyzes how market forces, shaped by political decisions, have led to increasing inequality, demonstrating the societal harm that results when markets are not properly embedded or regulated.  
+* **[💰📈🌍⏳ Capital in the Twenty-First Century](./capital-in-the-twenty-first-century.md) by Thomas Piketty:** While focused on wealth inequality through a different lens (return on capital vs. economic growth), Piketty's work provides extensive data illustrating the long-term consequences of market dynamics on social stratification, complementing Polanyi's historical critique.  
 * 🔄 **The Reinvention of World Capitalism by Andre Gunder Frank:** This book offers a historical perspective on the development of global capitalism, emphasizing its cyclical nature and exploitative aspects, aligning with Polanyi's critical view of the market system's impact on societies.  
 * 🕸️ **Embedded Economies: Markets, Power, and Networks by Mark Granovetter:** A key figure in economic sociology, Granovetter develops the concept of "embeddedness," building on Polanyi's idea that economic action is fundamentally embedded in social networks and institutions, not separate from them.  
   
@@ -58,7 +61,7 @@ CTA: Understand societal origins.
   
 ### ✨ Creatively Related Books (Exploring Connections and Broader Themes)  
   
-* **[📖🏛️📉 Seeing Like a State: How Certain Schemes to Improve the Human Condition Have Failed](/content/books/seeing-like-a-state-how-certain-schemes-to-improve-the-human-condition-have-failed.md) by James C. Scott:** Scott's work on state-led modernization projects and their unintended consequences resonates with Polanyi's critique of utopian social engineering, particularly the attempt to create a disembedded market.  
+* **[📖🏛️📉 Seeing Like a State: How Certain Schemes to Improve the Human Condition Have Failed](./seeing-like-a-state-how-certain-schemes-to-improve-the-human-condition-have-failed.md) by James C. Scott:** Scott's work on state-led modernization projects and their unintended consequences resonates with Polanyi's critique of utopian social engineering, particularly the attempt to create a disembedded market.  
 * 🏺 **The World of Odysseus by M.I. Finley:** Finley applies Polanyi's concepts of reciprocity and redistribution to the economic system depicted in Homer's epics, illustrating pre-market economies and demonstrating the historical distinctiveness of the market society.  
 * 🌍 **Orientalism by Edward Said:** While focused on cultural representation, Said's analysis of how the West constructed the "Orient" shares a thematic link with Polanyi's idea of how certain narratives and ideologies (like laissez-faire) are constructed and imposed, shaping perceptions of economic systems and societies.  
 * ⏳ **The Age of Extremes: The Short Twentieth Century, 1914-1991 by Eric Hobsbawm:** This historical account covers the period during which the consequences of the "great transformation" unfolded, including the world wars and the rise and fall of different economic and political systems, providing a broader historical context for Polanyi's analysis.  
@@ -67,7 +70,7 @@ CTA: Understand societal origins.
 * 👨‍👩‍👧‍👦 **From the Great Transformation to the Great Financialization: On Karl Polanyi and Other Essays by Kari Polanyi Levitt:** Written by Polanyi's daughter, this book connects her father's work to recent developments in global finance, arguing for the continued importance of his analysis in understanding contemporary economic crises.  
 * 🔄 **Great Transformations: Economic Ideas and Institutional Change in the Twentieth Century by Mark Blyth:** Building on Polanyi's "double movement," Blyth analyzes periods of institutional change in the 20th century, examining the interplay of ideas and interests in shaping economic systems.  
   
-## 💬 [Gemini](/content/software/gemini.md) Prompt (gemini-2.5-flash-preview-04-17)  
+## 💬 [Gemini](../software/gemini.md) Prompt (gemini-2.5-flash-preview-04-17)  
 > Write a markdown-formatted (start headings at level H2) book report, followed by a plethora of additional similar, contrasting, and creatively related book recommendations on The Great Transformation: The Political and Economic Origins of Our Time. Be thorough in content discussed but concise and economical with your language. Structure the report with section headings and bulleted lists to avoid long blocks of text.  
   
 ## 🐦 Tweet  

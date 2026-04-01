@@ -8,8 +8,11 @@ CTA: 💸 Dismantle scarcity.
 affiliate link: https://amzn.to/43NOEVV
 tags:
   - MMT
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_time: 2026-03-31T00:00:00Z
+force_analyze_links: false
 ---
-[Home](/content/index.md) > [Books](/content/books/index.md)  
+[Home](../index.md) > [Books](./index.md)  
 # 💰📉➡️📈🗳️ The Deficit Myth: Modern Monetary Theory and the Birth of the People's Economy  
 [🛒 The Deficit Myth: Modern Monetary Theory and the Birth of the People's Economy. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/43NOEVV)  
   
@@ -20,7 +23,7 @@ tags:
     - Soft Money Currency  
     - Wealth of Nations  
     - A Treatise on Money  
-    - [💰⚔️ How to pay for the war: a radical plan for the chancellor of the exchequer](/content/books/how-to-pay-for-the-war-a-radical-plan-for-the-chancellor-of-the-exchequer.md)  
+    - [💰⚔️ How to pay for the war: a radical plan for the chancellor of the exchequer](./how-to-pay-for-the-war-a-radical-plan-for-the-chancellor-of-the-exchequer.md)  
 - 🚫 TABS  
     - Tax And Borrow then Spend  
 - ✅ STAB  
@@ -84,14 +87,14 @@ tags:
   
 ## 📚 Book Recommendations  
 ### 🤝 Similar  
-* [🌍💰📊 Macroeconomics](/content/books/macroeconomics.md) by William Mitchell, L.  
-* [🤫🤑 23 Things They Don't Tell You About Capitalism](/content/books/23-things-they-dont-tell-you-about-capitalism.md) by Ha-Joon Chang.  
-* [💰🌎🌡️ Can We Afford the Future?: The Economics of a Warming World](/content/books/can-we-afford-the-future-the-economics-of-a-warming-world.md) by Frank van den Boom.  
-* [💰📈🤔 Understanding Modern Money](/content/books/understanding-modern-money.md) by L. Randall Wray.  
-* [👨‍🏫❓ Why Minsky Matters: An Introduction to the Work of a Maverick Economist](/content/books/why-minsky-matters-an-introduction-to-the-work-of-a-maverick-economist.md) by L. Randall Wray.  
-* [💰🏛️ Modern Money Theory: A Primer on Macroeconomics for Sovereign Monetary Systems](/content/books/modern-money-theory-a-primer-on-macroeconomics-for-sovereign-monetary-systems.md) by L. Randall Wray  
-* [💵🏛️📈 Soft Currency Economics II: The Origin of Modern Monetary Theory](/content/books/soft-currency-economics-ii-the-origin-of-modern-monetary-theory.md) by Warren Mosler  
-* [💸😇 The 7 Deadly Innocent Frauds of Economic Policy](/content/books/the-7-deadly-innocent-frauds-of-economic-policy.md) by Warren Mosler  
+* [🌍💰📊 Macroeconomics](./macroeconomics.md) by William Mitchell, L.  
+* [🤫🤑 23 Things They Don't Tell You About Capitalism](./23-things-they-dont-tell-you-about-capitalism.md) by Ha-Joon Chang.  
+* [💰🌎🌡️ Can We Afford the Future?: The Economics of a Warming World](./can-we-afford-the-future-the-economics-of-a-warming-world.md) by Frank van den Boom.  
+* [💰📈🤔 Understanding Modern Money](./understanding-modern-money.md) by L. Randall Wray.  
+* [👨‍🏫❓ Why Minsky Matters: An Introduction to the Work of a Maverick Economist](./why-minsky-matters-an-introduction-to-the-work-of-a-maverick-economist.md) by L. Randall Wray.  
+* [💰🏛️ Modern Money Theory: A Primer on Macroeconomics for Sovereign Monetary Systems](./modern-money-theory-a-primer-on-macroeconomics-for-sovereign-monetary-systems.md) by L. Randall Wray  
+* [💵🏛️📈 Soft Currency Economics II: The Origin of Modern Monetary Theory](./soft-currency-economics-ii-the-origin-of-modern-monetary-theory.md) by Warren Mosler  
+* [💸😇 The 7 Deadly Innocent Frauds of Economic Policy](./the-7-deadly-innocent-frauds-of-economic-policy.md) by Warren Mosler  
   
 ### 🆚 Contrasting  
 * 👓 Economics in One Lesson by Henry Hazlitt  
@@ -99,9 +102,9 @@ tags:
 * 🚧 The Road to Serfdom by F.A. Hayek  
   
 ### ➕ Related  
-* [🏛️💰 Debt: The First 5,000 Years](/content/books/debt-the-first-5000-years.md) by David Graeber  
-* [💰📈🌍⏳ Capital in the Twenty-First Century](/content/books/capital-in-the-twenty-first-century.md) by Thomas Piketty  
-* [🍩🌍 Doughnut Economics: Seven Ways to Think Like a 21st-Century Economist](/content/books/doughnut-economics-seven-ways-to-think-like-a-21st-century-economist.md) by Kate Raworth  
+* [🏛️💰 Debt: The First 5,000 Years](./debt-the-first-5000-years.md) by David Graeber  
+* [💰📈🌍⏳ Capital in the Twenty-First Century](./capital-in-the-twenty-first-century.md) by Thomas Piketty  
+* [🍩🌍 Doughnut Economics: Seven Ways to Think Like a 21st-Century Economist](./doughnut-economics-seven-ways-to-think-like-a-21st-century-economist.md) by Kate Raworth  
 * The Ministry for the Future by Kim Stanley Robinson  
   
 ## 🫵 What Do You Think?  

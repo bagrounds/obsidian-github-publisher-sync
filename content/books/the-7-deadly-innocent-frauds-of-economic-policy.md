@@ -6,8 +6,11 @@ URL: https://bagrounds.org/books/the-7-deadly-innocent-frauds-of-economic-policy
 share: true
 CTA: 💡 Question economic dogma.
 affiliate link: https://amzn.to/4p4FZrq
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_time: 2026-04-01T00:00:00Z
+force_analyze_links: false
 ---
-[Home](/content/index.md) > [Books](/content/books/index.md)  
+[Home](../index.md) > [Books](./index.md)  
 # 💸😇 The 7 Deadly Innocent Frauds of Economic Policy  
 [🛒 The 7 Deadly Innocent Frauds of Economic Policy. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4p4FZrq)  
   
@@ -70,9 +73,9 @@ affiliate link: https://amzn.to/4p4FZrq
 ## 📚 Book Recommendations  
   
 ### 📖 Similar Books  
-* [💰📉➡️📈🗳️ The Deficit Myth: Modern Monetary Theory and the Birth of the People's Economy](/content/books/the-deficit-myth.md) by Stephanie Kelton  
-* [🌍💰📊 Macroeconomics](/content/books/macroeconomics.md) by Bill Mitchell, L. Randall Wray, and Martin Watts  
-* [💵🏛️📈 Soft Currency Economics II: The Origin of Modern Monetary Theory](/content/books/soft-currency-economics-ii-the-origin-of-modern-monetary-theory.md)  
+* [💰📉➡️📈🗳️ The Deficit Myth: Modern Monetary Theory and the Birth of the People's Economy](./the-deficit-myth.md) by Stephanie Kelton  
+* [🌍💰📊 Macroeconomics](./macroeconomics.md) by Bill Mitchell, L. Randall Wray, and Martin Watts  
+* [💵🏛️📈 Soft Currency Economics II: The Origin of Modern Monetary Theory](./soft-currency-economics-ii-the-origin-of-modern-monetary-theory.md)  
   
 ### 📖 Contrasting Books  
 * 📗 Economics in One Lesson by Henry Hazlitt  
@@ -80,8 +83,8 @@ affiliate link: https://amzn.to/4p4FZrq
 * 🧾 Principles of Economics by N. Gregory Mankiw  
   
 ### 📖 Related Books  
-* [🏛️💰 Debt: The First 5,000 Years](/content/books/debt-the-first-5000-years.md) by David Graeber  
-* [🧑‍💼🏦💸 The General Theory of Employment, Interest, and Money](/content/books/the-general-theory-of-employment-interest-and-money.md) by John Maynard Keynes  
+* [🏛️💰 Debt: The First 5,000 Years](./debt-the-first-5000-years.md) by David Graeber  
+* [🧑‍💼🏦💸 The General Theory of Employment, Interest, and Money](./the-general-theory-of-employment-interest-and-money.md) by John Maynard Keynes  
 * 🧪 The End of Alchemy by Mervyn King  
   
 ## 🫵 What Do You Think?  

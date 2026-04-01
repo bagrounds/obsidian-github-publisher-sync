@@ -6,8 +6,11 @@ aliases:
 URL: https://bagrounds.org/books/debt-the-first-5000-years
 affiliate link: https://amzn.to/3SwYlTh
 CTA: ⚖️ Examine civilization's ledger.
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_time: 2026-04-01T00:00:00Z
+force_analyze_links: false
 ---
-[Home](/content/index.md) > [Books](/content/books/index.md)  
+[Home](../index.md) > [Books](./index.md)  
 # 🏛️💰 Debt: The First 5,000 Years  
 [🛒 Debt: The First 5,000 Years. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3SwYlTh)  
   
@@ -45,23 +48,23 @@ CTA: ⚖️ Examine civilization's ledger.
 ## ✅ Recommendations  
   
 ### 📚 Similar Deep Dives into Economic/Social History  
-* **[🌍🏛️ The Great Transformation: The Political and Economic Origins of Our Time](/content/books/the-great-transformation-the-political-and-economic-origins-of-our-time.md)** **by Karl Polanyi:** A classic work arguing that market economies are historically recent and required state intervention to emerge, dis-embedding the economy from society. Explores the devastating social consequences.  
-* **[🌅🧑‍🤝‍🧑 The Dawn of Everything: A New History of Humanity](/content/books/the-dawn-of-everything-a-new-history-of-humanity.md)** **by David Graeber and David Wengrow:** Graeber's final major work, co-authored with archaeologist Wengrow. Challenges linear narratives of social evolution, arguing human societies have experimented with diverse political and social forms for millennia.  
-* **[📖🏛️📉 Seeing Like a State: How Certain Schemes to Improve the Human Condition Have Failed](/content/books/seeing-like-a-state-how-certain-schemes-to-improve-the-human-condition-have-failed.md)** **by James C. Scott:** Examines why large-scale state projects often fail, focusing on the imposition of simplified, legible systems onto complex local realities—a theme resonant with Graeber's critique of state-imposed economic systems.  
+* **[🌍🏛️ The Great Transformation: The Political and Economic Origins of Our Time](./the-great-transformation-the-political-and-economic-origins-of-our-time.md)** **by Karl Polanyi:** A classic work arguing that market economies are historically recent and required state intervention to emerge, dis-embedding the economy from society. Explores the devastating social consequences.  
+* **[🌅🧑‍🤝‍🧑 The Dawn of Everything: A New History of Humanity](./the-dawn-of-everything-a-new-history-of-humanity.md)** **by David Graeber and David Wengrow:** Graeber's final major work, co-authored with archaeologist Wengrow. Challenges linear narratives of social evolution, arguing human societies have experimented with diverse political and social forms for millennia.  
+* **[📖🏛️📉 Seeing Like a State: How Certain Schemes to Improve the Human Condition Have Failed](./seeing-like-a-state-how-certain-schemes-to-improve-the-human-condition-have-failed.md)** **by James C. Scott:** Examines why large-scale state projects often fail, focusing on the imposition of simplified, legible systems onto complex local realities—a theme resonant with Graeber's critique of state-imposed economic systems.  
 * **Money Changes Everything: How Finance Made Civilization Possible** **by William N. Goetzmann:** Offers a different long-term history of finance, emphasizing its constructive role in civilization's development, potentially contrasting with Graeber's focus on debt's coercive aspects.  
-* **[🎁🔄 The Gift: The Form and Reason for Exchange in Archaic Societies](/content/books/the-gift-the-form-and-reason-for-exchange-in-archaic-societies.md)** **by Marcel Mauss:** Foundational anthropological text exploring gift exchange economies and the social obligations they create, a key influence on Graeber's concept of human economies.  
+* **[🎁🔄 The Gift: The Form and Reason for Exchange in Archaic Societies](./the-gift-the-form-and-reason-for-exchange-in-archaic-societies.md)** **by Marcel Mauss:** Foundational anthropological text exploring gift exchange economies and the social obligations they create, a key influence on Graeber's concept of human economies.  
   
 ### ⚖️ Contrasting Economic Perspectives  
 * ***The Road to Serfdom*** **by Friedrich Hayek:** A classic defense of classical liberalism, arguing against state planning and intervention in the economy—a sharp contrast to Graeber's critique of market fundamentalism and focus on state violence underpinning markets.  
 * ***The Ascent of Money: A Financial History of the World*** **by Niall Ferguson:** Presents a more conventional history of finance, often celebrating its innovations and linking financial development to Western power.  
 * ***Economics: The User's Guide*** **by Ha-Joon Chang:** Offers a critical but accessible overview of different economic schools of thought, providing context for understanding where Graeber's arguments fit and diverge.  
-* **[🌎👎👑💰🏚️ Why Nations Fail: The Origins of Power, Prosperity, and Poverty](/content/books/why-nations-fail-the-origins-of-power-prosperity-and-poverty.md)** **by Daron Acemoglu and James A. Robinson:** Argues that inclusive political and economic institutions are key to prosperity, offering an institution-focused alternative to Graeber's anthropological lens, though potentially sharing some critiques of extractive systems.  
+* **[🌎👎👑💰🏚️ Why Nations Fail: The Origins of Power, Prosperity, and Poverty](./why-nations-fail-the-origins-of-power-prosperity-and-poverty.md)** **by Daron Acemoglu and James A. Robinson:** Argues that inclusive political and economic institutions are key to prosperity, offering an institution-focused alternative to Graeber's anthropological lens, though potentially sharing some critiques of extractive systems.  
   
 ### 🤔 Exploring Related Themes (Power, Morality, Social Structures)  
-* **[💰📈🌍⏳ Capital in the Twenty-First Century](/content/books/capital-in-the-twenty-first-century.md)** **by Thomas Piketty:** A landmark empirical study of wealth and income inequality over centuries, complementing Graeber's historical narrative with quantitative data on economic concentration.  
-* **[💩💼 Bullshit Jobs: A Theory](/content/books/bullshit-jobs-a-theory.md)** **by David Graeber:** Explores the proliferation of meaningless employment in modern economies, extending his critique of contemporary capitalism's logic.  
-* **[⚙️⛓️ Discipline and Punish: The Birth of the Prison](/content/books/discipline-and-punish-the-birth-of-the-prison.md)** **by Michel Foucault:** While not about economics directly, Foucault's analysis of power, surveillance, and social control resonates with Graeber's arguments about how debt and state power discipline populations.  
-* **[🔄📜🏛️ Against the Grain: A Deep History of the Earliest States](/content/books/against-the-grain-a-deep-history-of-the-earliest-states.md)** **by James C. Scott:** Argues that early states were often coercive and fragile entities built on controlling grain production and populations, aligning with Graeber's themes of state violence and extraction.  
+* **[💰📈🌍⏳ Capital in the Twenty-First Century](./capital-in-the-twenty-first-century.md)** **by Thomas Piketty:** A landmark empirical study of wealth and income inequality over centuries, complementing Graeber's historical narrative with quantitative data on economic concentration.  
+* **[💩💼 Bullshit Jobs: A Theory](./bullshit-jobs-a-theory.md)** **by David Graeber:** Explores the proliferation of meaningless employment in modern economies, extending his critique of contemporary capitalism's logic.  
+* **[⚙️⛓️ Discipline and Punish: The Birth of the Prison](./discipline-and-punish-the-birth-of-the-prison.md)** **by Michel Foucault:** While not about economics directly, Foucault's analysis of power, surveillance, and social control resonates with Graeber's arguments about how debt and state power discipline populations.  
+* **[🔄📜🏛️ Against the Grain: A Deep History of the Earliest States](./against-the-grain-a-deep-history-of-the-earliest-states.md)** **by James C. Scott:** Argues that early states were often coercive and fragile entities built on controlling grain production and populations, aligning with Graeber's themes of state violence and extraction.  
 * ***The Production of Money: How to Break the Power of Bankers*** **by Ann Pettifor:** A modern critique focusing on the creation of money through credit and the power of the financial sector, echoing some of Graeber's concerns in a contemporary policy context.  
   
 ### 🎨 Creative Connections  
@@ -69,7 +72,7 @@ CTA: ⚖️ Examine civilization's ledger.
 * ***Utopia*** **by Thomas More:** The classic work imagining an ideal society, prompting reflection on social structures, property, and communal living, relevant to Graeber's discussions of human economies and everyday communism.  
 * ***Walkaway*** **by Cory Doctorow:** A contemporary sci-fi novel imagining people walking away from default society to build decentralized, post-scarcity communities using technology, exploring themes of debt, obligation, and alternative social/economic systems.  
   
-## 💬 [Gemini](/content/software/gemini.md) Prompt (gemini-2.5-pro-exp-03-25)  
+## 💬 [Gemini](../software/gemini.md) Prompt (gemini-2.5-pro-exp-03-25)  
 > Write a markdown-formatted (start headings at level H2) book report, followed by a plethora of additional similar, contrasting, and creatively related book recommendations on Debt: The First 5,000 Years. Be thorough in content discussed but concise and economical with your language. Structure the report with section headings and bulleted lists to avoid long blocks of text.  
   
 ## 🐦 Tweet  

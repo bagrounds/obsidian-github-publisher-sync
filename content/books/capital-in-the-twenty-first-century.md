@@ -8,8 +8,11 @@ Author:
 tags:
 affiliate link: https://amzn.to/3HjBmbV
 CTA: ⚖️ Understand wealth.
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_time: 2026-04-01T00:00:00Z
+force_analyze_links: false
 ---
-[Home](/content/index.md) > [Books](/content/books/index.md)  
+[Home](../index.md) > [Books](./index.md)  
 # 💰📈🌍⏳ Capital in the Twenty-First Century  
 [🛒 Capital in the Twenty-First Century. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3HjBmbV)  
   
@@ -60,13 +63,13 @@ CTA: ⚖️ Understand wealth.
   
 ### **Additional Book Recommendations:** 📚  
 * **Best Alternate Book on the Same Topic:** "The Great Leveler: Violence and the History of Inequality from the Stone Age to the Twenty-First Century" by Walter Scheidel. This book analyzes the historical forces that have reduced inequality, focusing on the role of violence and catastrophes.  
-* **Best Tangentially Related Book:** "[Thinking, Fast and Slow](/content/books/thinking-fast-and-slow.md)" by Daniel Kahneman. This book explores the cognitive biases that influence economic decision-making, providing insights into the psychological factors that contribute to inequality.  
+* **Best Tangentially Related Book:** "[Thinking, Fast and Slow](./thinking-fast-and-slow.md)" by Daniel Kahneman. This book explores the cognitive biases that influence economic decision-making, providing insights into the psychological factors that contribute to inequality.  
 * **Best Diametrically Opposed Book:** "Basic Economics" by Thomas Sowell. This book presents a classical liberal perspective on economics, emphasizing the role of free markets and limited government intervention.  
-* **Best Fiction Book That Incorporates Related Ideas:** [🍇😡 The Grapes of Wrath](/content/books/the-grapes-of-wrath.md) by John Steinbeck. This novel depicts the social and economic consequences of inequality during the Great Depression.  
-* **Best Book That Is More General:** [🌎👎👑💰🏚️ Why Nations Fail: The Origins of Power, Prosperity, and Poverty](/content/books/why-nations-fail-the-origins-of-power-prosperity-and-poverty.md) by Daron Acemoglu and James A. Robinson. This book examines the institutional factors that contribute to economic development and inequality.  
+* **Best Fiction Book That Incorporates Related Ideas:** [🍇😡 The Grapes of Wrath](./the-grapes-of-wrath.md) by John Steinbeck. This novel depicts the social and economic consequences of inequality during the Great Depression.  
+* **Best Book That Is More General:** [🌎👎👑💰🏚️ Why Nations Fail: The Origins of Power, Prosperity, and Poverty](./why-nations-fail-the-origins-of-power-prosperity-and-poverty.md) by Daron Acemoglu and James A. Robinson. This book examines the institutional factors that contribute to economic development and inequality.  
 * **Best Book That Is More Specific:** "Unequal Childhoods: Class, Race, and Family Life" by Annette Lareau. This book provides a detailed sociological analysis of how social class shapes children's lives and opportunities.  
 * **Best Book That Is More Rigorous:** "Advanced Macroeconomics" by David Romer. A graduate level textbook that provides rigorous mathematical models of macroeconomic phenomena.  
-* **Best Book That Is More Accessible:** [🍩🌍 Doughnut Economics: Seven Ways to Think Like a 21st-Century Economist](/content/books/doughnut-economics-seven-ways-to-think-like-a-21st-century-economist.md) by Kate Raworth. This book offers a more approachable and visually engaging critique of traditional economic models, with a focus on sustainability and equity.  
+* **Best Book That Is More Accessible:** [🍩🌍 Doughnut Economics: Seven Ways to Think Like a 21st-Century Economist](./doughnut-economics-seven-ways-to-think-like-a-21st-century-economist.md) by Kate Raworth. This book offers a more approachable and visually engaging critique of traditional economic models, with a focus on sustainability and equity.  
   
 ## 💬 [Gemini](https://gemini.google.com) Prompt  
 > Summarize the book: Capital in the Twenty First Century. Start with a TL;DR - a single statement that conveys a maximum of the useful information provided in the book. Next, explain how this book may offer a new or surprising perspective. Follow this with a deep dive. Catalogue the topics, methods, and research discussed. Be sure to highlight any significant theories, theses, or mental models proposed. Summarize prominent examples discussed. Emphasize practical takeaways, including detailed, specific, concrete, step-by-step advice, guidance, or techniques discussed. Provide a critical analysis of the quality of the information presented, using scientific backing, author credentials, authoritative reviews, and other markers of high quality information as justification. Make the following additional book recommendations: the best alternate book on the same topic; the best book that is tangentially related; the best book that is diametrically opposed; the best fiction book that incorporates related ideas; the best book that is more general or more specific; and the best book that is more rigorous or more accessible than this book. Format your response as markdown, starting at heading level H3, with inline links, for easy copy paste. Use meaningful emojis generously (at least one per heading, bullet point, and paragraph) to enhance readability. Do not include broken links or links to commercial sites.

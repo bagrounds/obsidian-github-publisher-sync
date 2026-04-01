@@ -7,8 +7,11 @@ URL: https://bagrounds.org/ai-blog/2026-03-29-five-whys-to-fix-tts-comment-readi
 image_date: 2026-03-29T17:14:35Z
 image_model: "@cf/black-forest-labs/flux-1-schnell"
 image_prompt: A transparent speech bubble, subtly textured with abstract code-like patterns, floats centrally. A large, stylized magnifying glass reveals five concentric, diminishing layers beneath the bubbles surface, akin to an X-ray, each layer a distinct shade. In the background, an intricate web of interconnected nodes and lines represents a complex system. One broken path within this web is visibly repaired by a vibrant, flowing line originating from the innermost layer revealed by the magnifying glass. Delicate sound waves subtly radiate from the speech bubble. The palette uses cool blues and greens, accented
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_time: 2026-03-31T00:00:00Z
+force_analyze_links: false
 ---
-[🏡 Home](../index.md) > [🤖 AI Blog](./index.md) | [⏮️](./2026-03-28-5-teaching-tts-to-read-the-comments.md) [⏭️](../../2026-03-29-2-expanding-haskell-test-coverage.md)  
+[🏡 Home](../index.md) > [🤖 AI Blog](./index.md) | [⏮️](./2026-03-28-5-teaching-tts-to-read-the-comments.md) [⏭️](./2026-03-29-2-expanding-haskell-test-coverage.md)  
 # 2026-03-29 | 🔍 Five Whys to Fix TTS Comment Reading 🗣️  
 ![ai-blog-2026-03-29-1-five-whys-to-fix-tts-comment-reading](../ai-blog-2026-03-29-1-five-whys-to-fix-tts-comment-reading.jpg)  
   
@@ -76,11 +79,11 @@ image_prompt: A transparent speech bubble, subtly textured with abstract code-li
   
 ### 📖 Similar  
 * The Art of Debugging with GDB, DDD, and Eclipse by Norman Matloff and Peter Jay Salzman is relevant because it covers systematic debugging techniques, including isolating root causes in complex software systems much like the five whys approach used here  
-* Working Effectively with Legacy Code by Michael C. Feathers is relevant because it explains how to safely add tests to untested code and fix bugs without breaking existing behavior, which is exactly the pattern followed when adding the StaticGiscusTest module  
+* [🧱🛠️ Working Effectively with Legacy Code](../books/working-effectively-with-legacy-code.md) by Michael C. Feathers is relevant because it explains how to safely add tests to untested code and fix bugs without breaking existing behavior, which is exactly the pattern followed when adding the StaticGiscusTest module  
   
 ### ↔️ Contrasting  
 * Release It! by Michael T. Nygard offers a perspective on building resilient production systems that detect and recover from failures automatically, contrasting with the manual debugging approach needed here where a silent failure went undetected  
   
 ### 🔗 Related  
-* Haskell Programming from First Principles by Christopher Allen and Julie Moronuki explores Haskell fundamentals including the IO and directory handling patterns used in the recursive file walker fix  
-* The Phoenix Project by Gene Kim, Kevin Behr, and George Spafford covers the importance of feedback loops in software delivery pipelines, relevant to the missing deploy-time validation that allowed this bug to persist  
+* [🐣🌱👨‍🏫💻 Haskell Programming from First Principles](../books/haskell-programming-from-first-principles.md) by Christopher Allen and Julie Moronuki explores Haskell fundamentals including the IO and directory handling patterns used in the recursive file walker fix  
+* [🐦‍🔥💻 The Phoenix Project](../books/the-phoenix-project.md) by Gene Kim, Kevin Behr, and George Spafford covers the importance of feedback loops in software delivery pipelines, relevant to the missing deploy-time validation that allowed this bug to persist  

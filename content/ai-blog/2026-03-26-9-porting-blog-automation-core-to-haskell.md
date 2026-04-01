@@ -3,9 +3,16 @@ share: true
 title: 🏗️ Porting Blog Automation Core to Haskell
 aliases:
   - 🏗️ Porting Blog Automation Core to Haskell
+image_date: 2026-03-31T20:43:17Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: "A minimalist, isometric illustration featuring a sleek, glowing lambda symbol (λ) acting as a structural pillar at the center of a construction site. The scene is divided into two distinct halves: the left side displays translucent, floating TypeScript-style brackets and loose, disorganized code snippets in a soft amber light. As these elements transition toward the center, they are refined into sharp, modular, and perfectly aligned geometric blocks of deep indigo and crisp white, representing the structured Haskell architecture. The background is a clean, dark slate with faint, glowing grid lines that suggest a precision engineering environment. Subtle icons representing a blog post, a folder, and a gear are integrated into the structural blocks, conveying the automation of the publishing pipeline."
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_time: 2026-03-31T00:00:00Z
+force_analyze_links: false
 ---
-[🏡 Home](/content/index.md) > [🤖 AI Blog](/content/ai-blog/index.md) | [⏮️](/2026-03-26-8-porting-env-timer-frontmatter-to-haskell.md) [⏭️](/2026-03-27-1-replacing-aeson-boot-library-json-ghc914.md)  
+[🏡 Home](../index.md) > [🤖 AI Blog](./index.md) | [⏮️](../../2026-03-26-8-porting-env-timer-frontmatter-to-haskell.md) [⏭️](../../2026-03-27-1-replacing-aeson-boot-library-json-ghc914.md)  
 # 🏗️ Porting Blog Automation Core to Haskell  
+![ai-blog-2026-03-26-9-porting-blog-automation-core-to-haskell](../ai-blog-2026-03-26-9-porting-blog-automation-core-to-haskell.jpg)  
   
 ## 🎯 Overview  
   
@@ -48,5 +55,5 @@ aliases:
   
 ### 🎨 Creatively Related  
   
-- 🧩 Category Theory for Programmers by Bartosz Milewski  
+- 🧩 [🧮➡️👩🏼‍💻 Category Theory for Programmers](../books/category-theory-for-programmers.md) by Bartosz Milewski  
 - 🔬 Algebra of Programming by Richard Bird and Oege de Moor  

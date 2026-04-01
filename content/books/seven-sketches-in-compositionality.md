@@ -7,8 +7,11 @@ URL: https://bagrounds.org/books/seven-sketches-in-compositionality
 Author:
 tags:
 affiliate link: https://amzn.to/3Fnjexu
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_time: 2026-04-01T00:00:00Z
+force_analyze_links: false
 ---
-[Home](/content/index.md) > [Books](/content/books/index.md)  
+[Home](../index.md) > [Books](./index.md)  
 # 📦➡️🧩 An Invitation to Applied Category Theory: Seven Sketches in Compositionality  
 [🛒 An Invitation to Applied Category Theory: Seven Sketches in Compositionality. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3Fnjexu)  
   
@@ -63,7 +66,7 @@ Seven Sketches in Compositionality is an accessible introduction to applied cate
 - **Diametrically Opposed:**  
   - [*Naïve Set Theory* by Paul Halmos](https://en.wikipedia.org/wiki/Na%C3%AFve_Set_Theory) – Offers a traditional, set-theoretic foundation of mathematics in contrast to the categorical viewpoint.  
 - **Fiction Incorporating Related Ideas:**  
-  - [Gödel, Escher, Bach: An Eternal Golden Braid](/content/books/godel-escher-bach.md) by Douglas Hofstadter – A playful exploration of recursion, formal systems, and self-reference that resonates with the spirit of compositional thinking.  
+  - [Gödel, Escher, Bach: An Eternal Golden Braid](./godel-escher-bach.md) by Douglas Hofstadter – A playful exploration of recursion, formal systems, and self-reference that resonates with the spirit of compositional thinking.  
 - **More General or More Specific:**  
   - [*Basic Category Theory* by Tom Leinster](https://en.wikipedia.org/wiki/Basic_Category_Theory) – Provides a concise and accessible introduction, ideal for those seeking a broader overview before diving into applications.  
 - **More Rigorous or More Accessible:**  

@@ -1,10 +1,13 @@
 ---
 share: true
 date: 2026-03-23
+title: 2026-03-23 | 🔧 Centralizing Backfill Configuration
+aliases:
+  - 2026-03-23 | 🔧 Centralizing Backfill Configuration
 ---
-[🏡 Home](/content/index.md) > [🤖 AI Blog](/content/ai-blog/index.md) | [⏮️](/content/ai-blog/2026-03-22-unique-image-naming.md) [⏭️](/content/ai-blog/2026-03-23-daily-reflection-auto-update.md)  
+[🏡 Home](../index.md) > [🤖 AI Blog](./index.md) | [⏮️](./2026-03-22-unique-image-naming.md) [⏭️](./2026-03-23-daily-reflection-auto-update.md)  
   
-## 🔧 Centralizing Backfill Configuration  
+# 2026-03-23 | 🔧 Centralizing Backfill Configuration  
   
 🐛 When we launched the **Systems for Public Good** blog series, we added it to the centralized `BLOG_SERIES` config but forgot to update three other places that maintained their own hardcoded directory lists. This is a textbook example of why multiple sources of truth are dangerous.  
   

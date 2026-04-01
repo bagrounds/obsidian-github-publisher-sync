@@ -1,10 +1,12 @@
 ---
 title: 2026-03-23 | 🌸 Expanding the Image Pipeline and Adding Gemini Model Fallback
+aliases:
+  - 2026-03-23 | 🌸 Expanding the Image Pipeline and Adding Gemini Model Fallback
 share: true
 date: 2026-03-23
 ---
+[🏡 Home](../index.md) > [🤖 AI Blog](./index.md) | [⏮️](./2026-03-23-systems-for-public-good.md) [⏭️](./2026-03-24-one-cron-to-rule-them-all.md)  
   
-[🏡 Home](/content/index.md) > [🤖 AI Blog](/content/ai-blog/index.md) | [⏮️](/content/ai-blog/2026-03-23-systems-for-public-good.md) [⏭️](/content/ai-blog/2026-03-24-one-cron-to-rule-them-all.md)  
   
 # 2026-03-23 | 🌸 Expanding the Image Pipeline and Adding Gemini Model Fallback  
   

@@ -6,9 +6,16 @@ title: 2026-03-23 | 🏛️ The Forgotten Commons — Why Public Good Matters Mo
 URL: https://bagrounds.org/systems-for-public-good/2026-03-23-the-forgotten-commons
 Author: "[[systems-for-public-good]]"
 tags:
+image_date: 2026-04-01T05:53:06Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: "A wide-angle, cinematic illustration of a vibrant, interconnected city square depicted in a clean, isometric art style. The scene features a central, lush green park with a thriving community garden, surrounded by diverse public infrastructure: a modern library with an open plaza, a sleek public transit station, and a sparkling municipal water fountain. Sunlight streams through soft, wispy clouds, casting warm light over a diverse group of people interacting in the shared spaces. The architecture blends classical stone pillars with modern, sustainable glass structures. Paths and walkways weave through the scene, physically connecting the different buildings to the green space, symbolizing unity and collective access. The color palette is bright and optimistic, utilizing soft teals, terracotta, and rich greens to evoke a sense of abundance and harmony."
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_time: 2026-03-31T00:00:00Z
+force_analyze_links: false
 ---
 [🏡 Home](../index.md) > [🏛️ Systems for Public Good](./index.md) | [⏭️](./2026-03-24-the-foundations-of-freedom-a-personal-journey-into-public-good.md)  
 # 2026-03-23 | 🏛️ The Forgotten Commons — Why Public Good Matters More Than Ever 🏛️    
+![systems-for-public-good-2026-03-23-the-forgotten-commons](../systems-for-public-good-2026-03-23-the-forgotten-commons.jpg)  
   
 ## 🌱 Welcome to Systems for Public Good    
   
@@ -82,7 +89,7 @@ tags:
   
 🌍 And in a country with millions of underemployed workers, crumbling infrastructure, and enormous unmet needs, the answer is almost certainly yes — we have vast untapped capacity that public investment could mobilize.    
   
-📊 Keltons 2020 book, The Deficit Myth, laid out this framework in detail, drawing on decades of research. The basic insight — that the federal budget is not like a household budget — has been confirmed by numerous Federal Reserve officials and central bank researchers, even those who disagree with other aspects of MMT.    
+📊 Keltons 2020 book, [💰📉➡️📈🗳️ The Deficit Myth: Modern Monetary Theory and the Birth of the People's Economy](../books/the-deficit-myth.md), laid out this framework in detail, drawing on decades of research. The basic insight — that the federal budget is not like a household budget — has been confirmed by numerous Federal Reserve officials and central bank researchers, even those who disagree with other aspects of MMT.    
   
 ## 🔄 Systems Thinking: Why Simple Solutions Fail    
   

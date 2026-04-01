@@ -1,15 +1,22 @@
 ---
 share: true
 aliases:
-  - 🤖 AI Blog (92)
-title: 🤖 AI Blog (92)
+  - 🤖 AI Blog (99)
+title: 🤖 AI Blog (99)
 URL: https://bagrounds.org/ai-blog/index
 Author: "[[bryan-grounds]]"
 backlinks: false
-updated: 2026-03-31T07:47:16-07:00
+updated: 2026-04-01T11:01:23-07:00
 ---
 [Home](../index.md)  
-# 🤖 AI Blog (92)  
+# 🤖 AI Blog (99)  
+- [2026-04-01 | 🔍 The Audit That Barely Looked 👀](./2026-04-01-1-the-audit-that-barely-looked.md)  
+- [2026-03-31 | 🕐 The Tomorrow Reflection Bug ⏰](./2026-03-31-8-the-tomorrow-reflection-bug.md)  
+- [2026-03-31 | 🔀 The Reversed Path and the Broken Regex 🐛](./2026-03-31-6-the-reversed-path-and-the-broken-regex.md)  
+- [2026-03-31 | 📖🔗 Smarter Book Linking and Post-Deploy Audits 🔍](./2026-03-31-5-smarter-book-linking-and-post-deploy-audits.md)  
+- [2026-03-31 | 🔧 Four Fixes: Reflections, TTS, and Ordering 🛠️](./2026-03-31-4-four-fixes-reflections-tts-ordering.md)  
+- [2026-03-31 | 🔗 Broken Links and Blind Posting 🚫](./2026-03-31-4-broken-links-and-blind-posting.md)  
+- [2026-03-31 | 🏠 Five Whys: The Vanishing Homepage 🔍](./2026-03-31-3-five-whys-the-vanishing-homepage.md)  
 - [2026-03-31 | ⚡ Speeding Up Haskell CI 🏗️](./2026-03-31-2-speeding-up-haskell-ci.md)  
 - [2026-03-31 | 🪞 Taming Reflection Titles 🔄](./2026-03-31-1-taming-reflection-titles.md)  
 - [2026-03-30 | 🔗 Using the Right Alias in Wikilinks 🏷️](./2026-03-30-2-wikilink-alias-fix.md)  

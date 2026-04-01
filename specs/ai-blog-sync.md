@@ -4,7 +4,7 @@
 
 📝 AI blog posts written during PRs are automatically synced to the Obsidian vault with navigation links and daily reflection references.
 🔗 Each post gets ⏮️ and ⏭️ links connecting it to its chronological neighbors in the ai-blog series.
-📅 New posts are linked from the daily reflection matching their date via the Updates section.
+📅 New posts are linked from the daily reflection matching their date via a dedicated AI Blog section.
 🔄 All processing is idempotent and runs as part of the existing hourly backfill task.
 
 ## 🏗️ Architecture
@@ -53,7 +53,7 @@ The system adds the appropriate links and also updates adjacent posts whose neig
 All operations are idempotent and safe for hourly execution.
 
 Nav link check: compares the current nav line against the expected line. If they match, the file is not touched.
-Reflection links: the addUpdateLinksToReflection function skips links already present in the Updates section.
+Reflection links: AI blog posts get a dedicated section heading in the daily reflection, formatted as a wikilink to the ai-blog index, with posts listed as wikilink list items. The insertPostLink function skips links already present.
 Second runs: after the first successful run links all posts, subsequent runs report zero modifications.
 
 ## 🎧 TTS Considerations

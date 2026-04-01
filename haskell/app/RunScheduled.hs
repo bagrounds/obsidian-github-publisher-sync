@@ -18,7 +18,7 @@ import System.Exit (exitFailure)
 import System.FilePath ((</>), dropExtension, takeExtension)
 import System.IO (hSetBuffering, stdout, stderr, BufferMode(..))
 
-import Automation.AiBlogLinks (NavLinkResult (..), ensureAllNavLinks, buildReflectionLinks)
+import Automation.AiBlogLinks (NavLinkResult (..), aiBlogConfig, ensureAllNavLinks, buildReflectionLinks)
 import Automation.AiFiction
   ( FictionConfig (..)
   , FictionResult (..)
@@ -51,7 +51,7 @@ import Automation.BlogSeriesConfig
   , backfillContentIds
   , lookupSeries
   )
-import Automation.DailyReflection (updateDailyReflection)
+import Automation.DailyReflection (UpdateReflectionResult (..), updateDailyReflection)
 import Automation.DailyUpdates (UpdateCategory (..), UpdateLink (..), addUpdateLinksToReflection, extractTitleFromFile)
 import Automation.Gemini
   ( GenerationConfig (..)
@@ -557,12 +557,17 @@ runBackfillImages manager repoRoot vaultDir = do
       _ <- addUpdateLinksToReflection reflectionsDir todayText ImageUpdate imageUpdateLinks
       pure ()
 
-  -- 7. Add update links from nav link changes (each blog post links to its date's reflection)
+  -- 7. Link AI blog posts to their date's reflection with a dedicated AI Blog section
   --    Filter out future dates to avoid creating reflections ahead of Pacific time
   aiBlogLinks <- buildReflectionLinks aiBlogDir navResults
   let todayLinks = filter (\(_, _, date) -> date <= todayText) aiBlogLinks
-  mapM_ (\(relPath, title, date) ->
-    addUpdateLinksToReflection reflectionsDir date InternalLinkUpdate [UpdateLink relPath title]
+  mapM_ (\(relPath, title, date) -> do
+    let filename = T.drop (T.length "ai-blog/") relPath
+    result <- updateDailyReflection vaultDir date aiBlogConfig filename title Nothing
+    case result of
+      _ | urrLinkInserted result ->
+            logMsg $ "  🤖 Added AI blog link to " <> date <> " reflection: " <> relPath
+        | otherwise -> pure ()
     ) todayLinks
 
   logMsg "✅ backfill-blog-images"

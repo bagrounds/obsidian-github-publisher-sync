@@ -6,6 +6,7 @@ import Test.Tasty.HUnit (testCase, (@?=), assertBool)
 import Test.Tasty.QuickCheck (testProperty)
 import qualified Test.Tasty.QuickCheck as QC
 
+import Automation.AiBlogLinks (aiBlogConfig)
 import Automation.BlogSeriesConfig (BlogSeriesConfig (..))
 import Automation.DailyReflection
 
@@ -16,6 +17,7 @@ tests = testGroup "DailyReflection"
   , buildPostLinkTests
   , addForwardLinkTests
   , insertPostLinkTests
+  , aiBlogSectionTests
   , propertyTests
   ]
 
@@ -175,6 +177,59 @@ insertPostLinkTests = testGroup "insertPostLink"
       let content = "# 2026-04-01\n\nBody text"
           result = insertPostLink content sampleSeries "post" "Post" Nothing
       in assertBool "contains post link" (T.isInfixOf "[[auto-blog-zero/post|Post]]" result)
+  ]
+
+--------------------------------------------------------------------------------
+-- AI blog section tests
+--------------------------------------------------------------------------------
+
+aiBlogSectionTests :: TestTree
+aiBlogSectionTests = testGroup "AI blog section"
+  [ testCase "creates AI Blog section heading with correct format" $
+      buildSeriesSectionHeading aiBlogConfig @?= "## [[ai-blog/index|🤖 AI Blog]]"
+  , testCase "creates AI blog post link with correct format" $
+      buildPostLink "ai-blog" "2026-04-01-1-my-post" "2026-04-01 | My Post 🤖"
+        @?= "- [[ai-blog/2026-04-01-1-my-post|2026-04-01 | My Post 🤖]]"
+  , testCase "insertPostLink creates AI Blog section in reflection" $
+      let content = "# 2026-04-01\n\nSome reflection content"
+          result = insertPostLink content aiBlogConfig "2026-04-01-1-my-post" "2026-04-01 | My Post 🤖" Nothing
+      in do
+        assertBool "contains AI Blog section" (T.isInfixOf "## [[ai-blog/index|🤖 AI Blog]]" result)
+        assertBool "contains post link" (T.isInfixOf "[[ai-blog/2026-04-01-1-my-post|" result)
+  , testCase "AI Blog section inserted before Updates section" $
+      let content = "# 2026-04-01\n\nBody\n\n## 🔄 Updates\n\n### 🖼️ Images\n\n- [[img|Img]]"
+          result = insertPostLink content aiBlogConfig "2026-04-01-1-post" "Post Title" Nothing
+      in do
+        let aIdx = T.length $ fst $ T.breakOn "## [[ai-blog/index|🤖 AI Blog]]" result
+            uIdx = T.length $ fst $ T.breakOn "## 🔄 Updates" result
+        assertBool "AI Blog section before Updates" (aIdx < uIdx)
+  , testCase "AI Blog section inserted before social embed sections" $
+      let content = "# 2026-04-01\n\nBody\n\n## 🐦 Tweet\n\nTweet embed"
+          result = insertPostLink content aiBlogConfig "2026-04-01-1-post" "Post Title" Nothing
+      in do
+        let aIdx = T.length $ fst $ T.breakOn "## [[ai-blog/index|🤖 AI Blog]]" result
+            tIdx = T.length $ fst $ T.breakOn "## 🐦 Tweet" result
+        assertBool "AI Blog section before Tweet" (aIdx < tIdx)
+  , testCase "AI Blog section coexists with blog series section" $
+      let heading = buildSeriesSectionHeading sampleSeries
+          content = "# 2026-04-01\n\n" <> heading <> "\n- [[auto-blog-zero/post|Post]]"
+          result = insertPostLink content aiBlogConfig "2026-04-01-1-ai-post" "AI Post" Nothing
+      in do
+        assertBool "contains series section" (T.isInfixOf "Auto Blog Zero" result)
+        assertBool "contains AI Blog section" (T.isInfixOf "## [[ai-blog/index|🤖 AI Blog]]" result)
+        assertBool "contains AI blog link" (T.isInfixOf "[[ai-blog/2026-04-01-1-ai-post|AI Post]]" result)
+  , testCase "appends to existing AI Blog section" $
+      let heading = buildSeriesSectionHeading aiBlogConfig
+          content = "# 2026-04-01\n\n" <> heading <> "\n- [[ai-blog/2026-04-01-1-first|First Post]]"
+          result = insertPostLink content aiBlogConfig "2026-04-01-2-second" "Second Post" Nothing
+      in do
+        assertBool "contains first link" (T.isInfixOf "[[ai-blog/2026-04-01-1-first|First Post]]" result)
+        assertBool "contains second link" (T.isInfixOf "[[ai-blog/2026-04-01-2-second|Second Post]]" result)
+  , testCase "idempotent: does not insert duplicate AI blog link" $
+      let heading = buildSeriesSectionHeading aiBlogConfig
+          content = "# 2026-04-01\n\n" <> heading <> "\n- [[ai-blog/2026-04-01-1-post|Post Title]]"
+          result = insertPostLink content aiBlogConfig "2026-04-01-1-post" "Post Title" Nothing
+      in result @?= content
   ]
 
 --------------------------------------------------------------------------------

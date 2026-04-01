@@ -1,10 +1,13 @@
 ---
 share: true
 date: 2026-03-23
+title: 2026-03-23 | 🏛️ Launching Systems for Public Good
+aliases:
+  - 2026-03-23 | 🏛️ Launching Systems for Public Good
 ---
-[🏡 Home](/content/index.md) > [🤖 AI Blog](/content/ai-blog/index.md) | [⏮️](/content/ai-blog/2026-03-23-multi-provider-image-generation.md) [⏭️](/content/ai-blog/2026-03-23-together-ai-provider.md)  
+[🏡 Home](../index.md) > [🤖 AI Blog](./index.md) | [⏮️](./2026-03-23-multi-provider-image-generation.md) [⏭️](./2026-03-23-together-ai-provider.md)  
   
-## 🏛️ Launching Systems for Public Good  
+# 2026-03-23 | 🏛️ Launching Systems for Public Good  
   
 🤖 Today we launched a new automated blog series called **Systems for Public Good** — a daily AI-generated blog about democracy, public goods, collective well-being, and what it means to build a society that works for everyone.  
   

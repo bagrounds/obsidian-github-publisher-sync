@@ -57,6 +57,7 @@
 🔗 From each visited file, both wikilinks and standard markdown links are extracted and followed.
 📂 Traversal spans multiple directories defined in `TRAVERSABLE_DIRS`: books, articles, topics, software, people, products, games, videos, presentations, tools, reflections, chickie-loo, and auto-blog-zero.
 📇 Only files in `LINKABLE_DIRS` (currently just books) are eligible for wikilink insertion.
+🔧 Wikilink parsing in BFS uses a manual character-by-character parser (not POSIX regex) to correctly extract full link targets, including those with special characters.
 
 ## 🤖 Gemini-Powered Link Suggestion
 

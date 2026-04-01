@@ -15,6 +15,7 @@ tests = testGroup "InternalLinking"
   , formatWikilinkTests
   , extractContextTests
   , extractMainTitleTests
+  , normalizeFilePathTests
   , maskProtectedRegionsTests
   , contentAlreadyLinksToTests
   , findLinkCandidatesTests
@@ -133,6 +134,32 @@ extractMainTitleTests = testGroup "extractMainTitle"
   , testCase "returns valid main title meeting minimum length" $
       assertEqual "" (Just "Against the Grain")
         (extractMainTitle "Against the Grain: A Deep History of the Earliest States")
+  ]
+
+-- --------------------------------------------------------------------------
+-- normalizeFilePath
+-- --------------------------------------------------------------------------
+
+normalizeFilePathTests :: TestTree
+normalizeFilePathTests = testGroup "normalizeFilePath"
+  [ testCase "resolves parent directory references" $
+      assertEqual "" "books/foo.md"
+        (normalizeFilePath "reflections/../books/foo.md")
+  , testCase "resolves current directory references" $
+      assertEqual "" "books/foo.md"
+        (normalizeFilePath "books/./foo.md")
+  , testCase "preserves simple paths" $
+      assertEqual "" "books/foo.md"
+        (normalizeFilePath "books/foo.md")
+  , testCase "handles multiple parent refs" $
+      assertEqual "" "foo.md"
+        (normalizeFilePath "a/b/../../foo.md")
+  , testCase "handles complex nested path" $
+      assertEqual "" "reflections/topics/bar.md"
+        (normalizeFilePath "reflections/2025/../topics/./bar.md")
+  , testCase "preserves absolute-like paths" $
+      assertEqual "" "content/reflections/some-book.md"
+        (normalizeFilePath "content/reflections/some-book.md")
   ]
 
 -- --------------------------------------------------------------------------
@@ -359,6 +386,16 @@ extractLinkedPathsTests = testGroup "extractLinkedPaths"
       let body = "Read [[books/a]] and [[topics/b]] today"
           paths = extractLinkedPaths body "reflections/2025-01-01.md" "/content"
       in assertEqual "should find two" 2 (length paths)
+  , testCase "resolves plain wikilinks relative to note directory" $
+      let body = "I enjoyed [[some-book]] today"
+          paths = extractLinkedPaths body "reflections/2025-01-01.md" "/content"
+      in assertEqual "should resolve to reflections/some-book.md"
+           ["reflections/some-book.md"] paths
+  , testCase "resolves relative markdown links" $
+      let body = "See [book](../books/foo.md) for details"
+          paths = extractLinkedPaths body "reflections/2025-01-01.md" "/content"
+      in assertEqual "should resolve to books/foo.md"
+           ["books/foo.md"] paths
   ]
 
 -- --------------------------------------------------------------------------

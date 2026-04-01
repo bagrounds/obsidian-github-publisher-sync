@@ -4,6 +4,9 @@ aliases:
   - ⚙️🐜🔄 Haskell Ant Sim
 title: ⚙️🐜🔄 Haskell Ant Sim
 URL: https://bagrounds.org/software/haskell-ant-sim
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_time: 2026-04-01T00:00:00Z
+force_analyze_links: false
 ---
 [Home](../index.md) > [Software](./index.md)  
 # [⚙️🐜🔄 Haskell Ant Sim](https://github.com/olegalexander/haskell-ant-sim)  
@@ -55,4 +58,4 @@ URL: https://bagrounds.org/software/haskell-ant-sim
 ### 🎨 Creatively Related  
   
 * 📒 Flatland A Romance of Many Dimensions by Edwin Abbott Abbott serves as the primary inspiration for the limited dimensional vision used by the ants.  
-* 📓 Gödel, Escher, Bach An Eternal Golden Braid by Douglas Hofstadter examines how complex intelligence emerges from simple recursive systems like ant colonies.
+* 📓 [♾️📐🎶🥨 Gödel, Escher, Bach: An Eternal Golden Braid](../books/godel-escher-bach.md) An Eternal Golden Braid by Douglas Hofstadter examines how complex intelligence emerges from simple recursive systems like ant colonies.

@@ -7,6 +7,9 @@ URL: https://bagrounds.org/ai-blog/2026-03-31-broken-links-and-blind-posting
 image_date: 2026-03-31T17:31:26Z
 image_model: "@cf/black-forest-labs/flux-1-schnell"
 image_prompt: A minimalist, high-contrast illustration featuring a series of glowing digital chains suspended in a dark, clean space. One of the chains is visibly fractured, with its broken links drifting apart. A bright, stylized magnifying glass hovers over the gap, casting a focused beam of light that acts as a bridge, conceptually stitching the broken pieces back together with a glowing, vibrant thread. The background is a deep, matte navy blue, while the elements are rendered in sharp lines of electric blue, crisp white, and a soft, cautionary amber. The aesthetic is clean, technical, and modern, emphasizing the transition from a fragmented, broken state to a repaired, functional connection.
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_time: 2026-03-31T00:00:00Z
+force_analyze_links: false
 ---
 [🏡 Home](../index.md) > [🤖 AI Blog](./index.md) | [⏮️](./2026-03-31-3-five-whys-the-vanishing-homepage.md) [⏭️](./2026-03-31-4-four-fixes-reflections-tts-ordering.md)  
 # 2026-03-31 | 🔗 Broken Links and Blind Posting 🚫  
@@ -78,5 +81,5 @@ image_prompt: A minimalist, high-contrast illustration featuring a series of glo
 * Move Fast and Break Things by Jonathan Taplin offers a perspective where shipping quickly is prioritized over verification, contrasting with the careful URL validation approach taken here.  
   
 ### 🔗 Related  
-* Working Effectively with Legacy Code by Michael Feathers is relevant because porting code between languages often creates the kind of missing-feature gaps this fix addressed, and the book provides strategies for safely extending existing systems.  
-* Site Reliability Engineering by Betsy Beyer, Chris Jones, Jennifer Petoff, and Niall Richard Murphy is relevant because it covers the operational practices that prevent broken links and stale data from reaching production systems.  
+* [🧱🛠️ Working Effectively with Legacy Code](../books/working-effectively-with-legacy-code.md) by Michael Feathers is relevant because porting code between languages often creates the kind of missing-feature gaps this fix addressed, and the book provides strategies for safely extending existing systems.  
+* [💻⚙️🛡️📈 Site Reliability Engineering: How Google Runs Production Systems](../books/site-reliability-engineering.md) by Betsy Beyer, Chris Jones, Jennifer Petoff, and Niall Richard Murphy is relevant because it covers the operational practices that prevent broken links and stale data from reaching production systems.  

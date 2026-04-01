@@ -6,8 +6,11 @@ URL: https://bagrounds.org/books/discipline-and-punish-the-birth-of-the-prison
 share: true
 CTA: 🔍 Uncover power's grip.
 affiliate link: https://amzn.to/48VXHrn
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_time: 2026-04-01T00:00:00Z
+force_analyze_links: false
 ---
-[Home](/content/index.md) > [Books](/content/books/index.md)  
+[Home](../index.md) > [Books](./index.md)  
 # ⚙️⛓️ Discipline and Punish: The Birth of the Prison  
 [🛒 Discipline and Punish: The Birth of the Prison. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/48VXHrn)  
   
@@ -80,14 +83,14 @@ affiliate link: https://amzn.to/48VXHrn
   
 ### ➖ Contrasting  
 * 📖 The Crisis of Imprisonment by Rebecca M. McLennan  
-* [🛑👮 The End of Policing](/content/books/the-end-of-policing.md) by Alex S. Vitale  
+* [🛑👮 The End of Policing](./the-end-of-policing.md) by Alex S. Vitale  
 * 📖 On the Genealogy of Morality by Friedrich Nietzsche  
   
 ### ➡️ Related  
 * 📖 The Medium is the Massage by Marshall McLuhan, Jerome Agel, and Quentin Fiore  
 * 📖 Total Institutions by Erving Goffman (related concept)  
 * 📖 We by Yevgeny Zamyatin (dystopian novel with panoptic themes)  
-* [👁️ 1984](/content/books/1984.md) by George Orwell (explores omnipresent surveillance)  
+* [👁️ 1984](./1984.md) by George Orwell (explores omnipresent surveillance)  
   
 ## 🫵 What Do You Think?  
   

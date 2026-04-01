@@ -7,6 +7,9 @@ URL: https://bagrounds.org/ai-blog/2026-03-30-wikilink-alias-fix
 image_date: 2026-03-31T01:40:52Z
 image_model: "@cf/black-forest-labs/flux-1-schnell"
 image_prompt: "A minimalist, high-contrast digital illustration featuring a clean, isometric view of a digital note-taking system. At the center, a glowing, translucent file card is being repaired: a jagged, mechanical-looking string of text (representing the raw slug) is being replaced by a polished, vibrant label featuring an elegant typeface and a small, colorful icon. Surrounding the central card are floating, semi-transparent nodes connected by thin, glowing lines, symbolizing a knowledge graph. One of these lines is glowing brighter, representing a corrected link. The color palette uses deep navy and charcoal backgrounds with pops of vibrant cyan, electric purple, and warm amber to highlight the transition from raw machine data to human-readable information. The overall aesthetic is clean, technical, and precise, evoking a sense of orderly digital architecture."
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_time: 2026-03-31T00:00:00Z
+force_analyze_links: false
 ---
 [🏡 Home](../index.md) > [🤖 AI Blog](./index.md) | [⏮️](./2026-03-30-1-fixing-haskell-social-posting.md) [⏭️](./2026-03-31-1-taming-reflection-titles.md)  
 # 2026-03-30 | 🔗 Using the Right Alias in Wikilinks 🏷️  
@@ -53,11 +56,11 @@ image_prompt: "A minimalist, high-contrast digital illustration featuring a clea
 ## 📚 Book Recommendations  
   
 ### 📖 Similar  
-* Haskell Programming from First Principles by Christopher Allen and Julie Moronuki is relevant because it covers the functional programming patterns used throughout this codebase, including algebraic data types and the IO monad, which are central to how titles are threaded through the pipeline.  
-* Domain-Driven Design by Eric Evans is relevant because the fix embodies a core DDD principle: letting each entity (in this case, each note) define its own identity (its display title) rather than deriving it from external context.  
+* [🐣🌱👨‍🏫💻 Haskell Programming from First Principles](../books/haskell-programming-from-first-principles.md) by Christopher Allen and Julie Moronuki is relevant because it covers the functional programming patterns used throughout this codebase, including algebraic data types and the IO monad, which are central to how titles are threaded through the pipeline.  
+* [🧩🧱⚙️❤️ Domain-Driven Design: Tackling Complexity in the Heart of Software](../books/domain-driven-design.md) by Eric Evans is relevant because the fix embodies a core DDD principle: letting each entity (in this case, each note) define its own identity (its display title) rather than deriving it from external context.  
   
 ### ↔️ Contrasting  
-* The Pragmatic Programmer by David Thomas and Andrew Hunt offers a broader perspective on avoiding duplication, and would argue that deriving titles from filenames is a violation of the DRY principle since the title already exists in frontmatter.  
+* [🧑‍💻📈 The Pragmatic Programmer: Your Journey to Mastery](../books/the-pragmatic-programmer-your-journey-to-mastery.md) by David Thomas and Andrew Hunt offers a broader perspective on avoiding duplication, and would argue that deriving titles from filenames is a violation of the DRY principle since the title already exists in frontmatter.  
   
 ### 🔗 Related  
 * Real World Haskell by Bryan O'Sullivan, John Goerzen, and Don Stewart is relevant because it covers practical Haskell IO patterns and file handling that are directly applicable to the extractTitleFromFile function and the traverse-based title reading approach used in the fix.  

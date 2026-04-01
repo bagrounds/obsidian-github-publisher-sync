@@ -6,8 +6,11 @@ URL: https://bagrounds.org/books/less-is-more-how-degrowth-will-save-the-world
 share: true
 CTA: 🌍 Embrace sufficiency.
 affiliate link: https://amzn.to/3Y2USyC
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_time: 2026-04-01T00:00:00Z
+force_analyze_links: false
 ---
-[Home](/content/index.md) > [Books](/content/books/index.md)  
+[Home](../index.md) > [Books](./index.md)  
 # 📉🌎 Less is More: How Degrowth Will Save the World  
 [🛒 Less is More: How Degrowth Will Save the World. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3Y2USyC)  
   
@@ -59,19 +62,19 @@ affiliate link: https://amzn.to/3Y2USyC
   
 ## 📚 Book Recommendations  
 ### 📖 Similar  
-* [🍩🌍⚖️ Doughnut Economics: Seven Ways to Think Like a 21st-Century Economist](/content/books/doughnut-economics-seven-ways-to-think-like-a-21st-century-economist.md) by Kate Raworth  
+* [🍩🌍⚖️ Doughnut Economics: Seven Ways to Think Like a 21st-Century Economist](./doughnut-economics-seven-ways-to-think-like-a-21st-century-economist.md) by Kate Raworth  
 * 🌐 The Divide: A Brief Guide to Global Inequality and Its Solutions by Jason Hickel  
 * 🙏 Sacred Economics by Charles Eisenstein  
   
 ### ↔️ Contrasting  
-* [💡🔬🧑‍🤝‍🧑📈 Enlightenment Now: The Case for Reason, Science, Humanism, and Progress](/content/books/enlightenment-now-the-case-for-reason-science-humanism-and-progress.md) by Steven Pinker  
+* [💡🔬🧑‍🤝‍🧑📈 Enlightenment Now: The Case for Reason, Science, Humanism, and Progress](./enlightenment-now-the-case-for-reason-science-humanism-and-progress.md) by Steven Pinker  
 * 😄 The Rational Optimist by Matt Ridley  
 * 🤯 Superfreakonomics by Steven D. Levitt and Stephen J. Dubner  
   
 ### 🔗 Related  
-* [📉🌍⏳ Limits to Growth: The 30-Year Global Update](/content/books/limits-to-growth-the-30-year-global-update.md) by Donella H. Meadows, Dennis L. Meadows, Jørgen Randers, William W. Behrens III  
-* [🤏🧑 Small Is Beautiful: Economics as if People Mattered](/content/books/small-is-beautiful-economics-as-if-people-mattered.md) by E. F. Schumacher  
-* [🌍🏛️ The Great Transformation: The Political and Economic Origins of Our Time](/content/books/the-great-transformation-the-political-and-economic-origins-of-our-time.md) by Karl Polanyi  
+* [📉🌍⏳ Limits to Growth: The 30-Year Global Update](./limits-to-growth-the-30-year-global-update.md) by Donella H. Meadows, Dennis L. Meadows, Jørgen Randers, William W. Behrens III  
+* [🤏🧑 Small Is Beautiful: Economics as if People Mattered](./small-is-beautiful-economics-as-if-people-mattered.md) by E. F. Schumacher  
+* [🌍🏛️ The Great Transformation: The Political and Economic Origins of Our Time](./the-great-transformation-the-political-and-economic-origins-of-our-time.md) by Karl Polanyi  
   
 ## 🫵 What Do You Think?  
 🤔 Which of Hickel's proposed degrowth strategies do you find most compelling, and which do you believe would face the greatest societal resistance?

@@ -8,8 +8,11 @@ Author:
 tags:
 affiliate link: https://amzn.to/458taW2
 CTA: 💪 Understand routines.
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_time: 2026-04-01T00:00:00Z
+force_analyze_links: false
 ---
-[Home](/content/index.md) > [Books](/content/books/index.md)  
+[Home](../index.md) > [Books](./index.md)  
 # 🔄🧠💪 The Power of Habit: Why We Do What We Do in Life and Business  
 [🛒 The Power of Habit: Why We Do What We Do in Life and Business. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/458taW2)  
   
@@ -61,14 +64,14 @@ CTA: 💪 Understand routines.
   
 **Additional Book Recommendations:** 📚✨  
   
-* **Best Alternate Book on the Same Topic:** "[Atomic Habits](/content/books/atomic-habits.md)" by James Clear ⚛️. This book offers a complementary and more practical approach to building and breaking habits 🛠️.  
-* **Best Tangentially Related Book:** "[Thinking, Fast and Slow](/content/books/thinking-fast-and-slow.md)" by Daniel Kahneman 🧠. This book explores the two systems of thinking and how they influence our decisions 💡, including habit-driven behaviors 🔁.  
+* **Best Alternate Book on the Same Topic:** "[Atomic Habits](./atomic-habits.md)" by James Clear ⚛️. This book offers a complementary and more practical approach to building and breaking habits 🛠️.  
+* **Best Tangentially Related Book:** "[Thinking, Fast and Slow](./thinking-fast-and-slow.md)" by Daniel Kahneman 🧠. This book explores the two systems of thinking and how they influence our decisions 💡, including habit-driven behaviors 🔁.  
 * **Best Diametrically Opposed Book:** "The Subtle Art of Not Giving a F\*ck" by Mark Manson 🤷. While not directly opposed, it offers a contrasting perspective on taking responsibility and accepting limitations 🧘, which can be relevant to changing habits 🛠️.  
-* **Best Fiction Book That Incorporates Related Ideas:** "[1984](/content/books/1984.md)" by George Orwell 👁️. This novel explores how societal habits and propaganda 📢 can be used to control individuals and shape behavior 👤.  
-* **Best More General Book:** "[Drive: The Surprising Truth About What Motivates Us](/content/books/drive-the-surprising-truth-about-what-motivates-us.md)" by Daniel H. Pink 🚗. This book explores general motivations 🌟, which habits can greatly influence 🔁.  
-* **Best More Specific Book:** "[Better Than Before: What I Learned About Making and Breaking Habits - to Sleep More, Quit Sugar, Procrastinate Less, and Generally Build a Happier Life](/content/books/better-than-before.md)" by Gretchen Rubin 🏠. This book is very specific to individual habit changes 🛠️.  
-* **Best More Rigorous Book:** "[Incognito: The Secret Lives of the Brain](/content/books/incognito.md)" by David Eagleman 🧠. This book goes into much more detail about the brain 🧠, and the brains ability to automate tasks 🤖.  
-* **Best More Accessible Book:** "[Tiny Habits](/content/books/tiny-habits.md): The Small Changes That Change Everything" by BJ Fogg 👶. This book breaks down habit formation into very small and easy to achieve steps 👣.  
+* **Best Fiction Book That Incorporates Related Ideas:** "[1984](./1984.md)" by George Orwell 👁️. This novel explores how societal habits and propaganda 📢 can be used to control individuals and shape behavior 👤.  
+* **Best More General Book:** "[Drive: The Surprising Truth About What Motivates Us](./drive-the-surprising-truth-about-what-motivates-us.md)" by Daniel H. Pink 🚗. This book explores general motivations 🌟, which habits can greatly influence 🔁.  
+* **Best More Specific Book:** "[Better Than Before: What I Learned About Making and Breaking Habits - to Sleep More, Quit Sugar, Procrastinate Less, and Generally Build a Happier Life](./better-than-before.md)" by Gretchen Rubin 🏠. This book is very specific to individual habit changes 🛠️.  
+* **Best More Rigorous Book:** "[Incognito: The Secret Lives of the Brain](./incognito.md)" by David Eagleman 🧠. This book goes into much more detail about the brain 🧠, and the brains ability to automate tasks 🤖.  
+* **Best More Accessible Book:** "[Tiny Habits](./tiny-habits.md): The Small Changes That Change Everything" by BJ Fogg 👶. This book breaks down habit formation into very small and easy to achieve steps 👣.  
   
 ## 💬 [Gemini](https://gemini.google.com) Prompt  
 > Summarize the book: The Power of Habit. Start with a TL;DR - a single statement that conveys a maximum of the useful information provided in the book. Next, explain how this book may offer a new or surprising perspective. Follow this with a deep dive. Catalogue the topics, methods, and research discussed. Be sure to highlight any significant theories, theses, or mental models proposed. Summarize prominent examples discussed. Emphasize practical takeaways, including detailed, specific, concrete, step-by-step advice, guidance, or techniques discussed. Provide a critical analysis of the quality of the information presented, using scientific backing, author credentials, authoritative reviews, and other markers of high quality information as justification. Make the following additional book recommendations: the best alternate book on the same topic; the best book that is tangentially related; the best book that is diametrically opposed; the best fiction book that incorporates related ideas; the best book that is more general or more specific; and the best book that is more rigorous or more accessible than this book. Format your response as markdown, starting at heading level H3, with inline links, for easy copy paste. Use meaningful emojis generously (at least one per heading, bullet point, and paragraph) to enhance readability. Do not include broken links or links to commercial sites.

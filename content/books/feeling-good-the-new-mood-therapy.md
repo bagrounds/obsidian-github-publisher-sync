@@ -5,8 +5,11 @@ aliases:
 URL: https://bagrounds.org/books/feeling-good-the-new-mood-therapy
 share: true
 affiliate link: https://amzn.to/3Hvk2B0
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_time: 2026-04-01T00:00:00Z
+force_analyze_links: false
 ---
-[Home](/content/index.md) > [Books](/content/books/index.md)  
+[Home](../index.md) > [Books](./index.md)  
 # 😊👍 Feeling Good: The New Mood Therapy  
 [🛒 Feeling Good: The New Mood Therapy. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3Hvk2B0)  
   
@@ -44,24 +47,24 @@ affiliate link: https://amzn.to/3Hvk2B0
 * 📖 **Mind Over Mood: Change How You Feel by Changing the Way You Think by Dennis Greenberger and Christine A. Padesky:** 🗂️ Another highly recommended workbook-style approach to CBT, providing structured worksheets to help identify and change negative thinking patterns.  
 * 📖 **Retrain Your Brain: Cognitive Behavioral Therapy in 7 Weeks: A Workbook for Managing Depression and Anxiety by Seth J. Gillihan PhD:** 🗓️ A practical workbook designed to guide readers through CBT principles and exercises over a seven-week period.  
 * 📖 **Feeling Great: The Revolutionary New Treatment for Depression and Anxiety by David D. Burns MD:** 🆕 A more recent work by Burns, presenting updated techniques and insights, particularly related to TEAM-CBT.  
-* **[😩😊 The Happiness Trap: How to Stop Struggling and Start Living](/content/books/the-happiness-trap-how-to-stop-struggling-and-start-living.md): A Guide to ACT by Russ Harris:** 🧘 Introduces Acceptance and Commitment Therapy (ACT), a related but distinct approach that emphasizes accepting difficult thoughts and feelings while committing to values-based actions.  
+* **[😩😊 The Happiness Trap: How to Stop Struggling and Start Living](./the-happiness-trap-how-to-stop-struggling-and-start-living.md): A Guide to ACT by Russ Harris:** 🧘 Introduces Acceptance and Commitment Therapy (ACT), a related but distinct approach that emphasizes accepting difficult thoughts and feelings while committing to values-based actions.  
   
 ### 🔄 Contrasting Books (Different Therapeutic Approaches or Perspectives)  
   
-* **[👣➡️🌍 Wherever You Go, There You Are](/content/books/wherever-you-go-there-you-are.md): Mindfulness Meditation in Everyday Life by Jon Kabat-Zinn:** 🧘 Focuses on mindfulness and acceptance, encouraging readers to observe thoughts and feelings without judgment rather than directly challenging or changing them, which differs from the core CBT approach of *Feeling Good*.  
+* **[👣➡️🌍 Wherever You Go, There You Are](./wherever-you-go-there-you-are.md): Mindfulness Meditation in Everyday Life by Jon Kabat-Zinn:** 🧘 Focuses on mindfulness and acceptance, encouraging readers to observe thoughts and feelings without judgment rather than directly challenging or changing them, which differs from the core CBT approach of *Feeling Good*.  
 * 📖 **Radical Acceptance: Embracing Your Life With the Heart of a Buddha by Tara Brach:** ❤️ Explores themes of self-acceptance and compassion from a Buddhist and psychological perspective, offering a gentler approach to difficult emotions compared to the more direct challenge of negative thoughts in CBT.  
 * 📖 **The Untethered Soul: The Journey Beyond Yourself by Michael A. Singer:** ✨ Delves into consciousness and spirituality, focusing on detaching from the ego and observing thoughts from a broader perspective, offering a philosophical contrast to the practical, thought-modification focus of CBT.  
-* **[🧑‍🧒💔🩹 Adult Children of Emotionally Immature Parents: How to Heal from Distant, Rejecting, or Self-Involved Parents](/content/books/adult-children-of-emotionally-immature-parents-how-to-heal-from-distant-rejecting-or-self-involved-parents.md) by Lindsay C. Gibson:** 👨‍👩‍👧‍👦 While helpful for understanding relational patterns and their impact on adult well-being, this book focuses more on the dynamics of past relationships than on the in-the-moment thought restructuring central to *Feeling Good*.  
+* **[🧑‍🧒💔🩹 Adult Children of Emotionally Immature Parents: How to Heal from Distant, Rejecting, or Self-Involved Parents](./adult-children-of-emotionally-immature-parents-how-to-heal-from-distant-rejecting-or-self-involved-parents.md) by Lindsay C. Gibson:** 👨‍👩‍👧‍👦 While helpful for understanding relational patterns and their impact on adult well-being, this book focuses more on the dynamics of past relationships than on the in-the-moment thought restructuring central to *Feeling Good*.  
   
 ### 🎨 Creatively Related Books (Exploring Related Concepts or Complementary Practices)  
   
-* 📖 **[💗 Self-Compassion](/content/books/self-compassion.md):** The Proven Power of Being Kind to Yourself by Kristin Neff: 🥰 Focuses specifically on developing self-compassion as a means of improving emotional resilience, a concept that complements the self-esteem building discussed in *Feeling Good*.  
-* **[🫂🤝🗣️ How To Win Friends And Influence People](/content/books/how-to-win-friends-and-influence-people.md) by Dale Carnegie:** 🤝 A classic in interpersonal skills and communication, offering practical advice on building relationships that can support overall well-being, an area touched upon in *Feeling Good* in the context of handling criticism.  
+* 📖 **[💗 Self-Compassion](./self-compassion.md):** The Proven Power of Being Kind to Yourself by Kristin Neff: 🥰 Focuses specifically on developing self-compassion as a means of improving emotional resilience, a concept that complements the self-esteem building discussed in *Feeling Good*.  
+* **[🫂🤝🗣️ How To Win Friends And Influence People](./how-to-win-friends-and-influence-people.md) by Dale Carnegie:** 🤝 A classic in interpersonal skills and communication, offering practical advice on building relationships that can support overall well-being, an area touched upon in *Feeling Good* in the context of handling criticism.  
 * 📖 **Creative Approaches to CBT by Lina A. Sherwood:** 🖍️ Provides therapists with ways to incorporate creative activities and exercises, such as art therapy techniques, into CBT sessions, suggesting a more experiential dimension to the cognitive work.  
 * 📖 **The Creative Cognitive Therapy Method: Combining Traditional CBT with Art Therapy for Real Change by Pamela Hayes Malkoff:** 🎨 Directly integrates art therapy with traditional CBT, offering a hands-on, creative approach to identifying and changing negative thought patterns.  
-* **[🤕🎼🧠 The Body Keeps the Score: Brain, Mind, and Body in the Healing of Trauma](/content/books/the-body-keeps-the-score-brain-mind-and-body-in-the-healing-of-trauma.md) by Bessel van der Kolk:** 🧠 Explores the impact of trauma on the brain and body, highlighting the importance of somatic approaches in healing, which provides a broader perspective on mental health that goes beyond the cognitive focus of *Feeling Good*.  
+* **[🤕🎼🧠 The Body Keeps the Score: Brain, Mind, and Body in the Healing of Trauma](./the-body-keeps-the-score-brain-mind-and-body-in-the-healing-of-trauma.md) by Bessel van der Kolk:** 🧠 Explores the impact of trauma on the brain and body, highlighting the importance of somatic approaches in healing, which provides a broader perspective on mental health that goes beyond the cognitive focus of *Feeling Good*.  
   
-## 💬 [Gemini](/content/software/gemini.md) Prompt (gemini-2.5-flash-preview-04-17)  
+## 💬 [Gemini](../software/gemini.md) Prompt (gemini-2.5-flash-preview-04-17)  
 > Write a markdown-formatted (start headings at level H2) book report, followed by a plethora of additional similar, contrasting, and creatively related book recommendations on Feeling Good: The New Mood Therapy. Be thorough in content discussed but concise and economical with your language. Structure the report with section headings and bulleted lists to avoid long blocks of text.  
   
 ## 🐦 Tweet  

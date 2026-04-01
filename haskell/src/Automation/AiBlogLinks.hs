@@ -1,6 +1,7 @@
 module Automation.AiBlogLinks
   ( NavLinkResult (..)
   , aiBlogNavPrefix
+  , aiBlogConfig
   , buildAiBlogBackLink
   , buildAiBlogForwardLink
   , buildNavLine
@@ -22,7 +23,20 @@ import qualified Data.Text.IO as TIO
 import System.Directory (doesDirectoryExist, doesFileExist, listDirectory)
 import System.FilePath ((</>))
 
+import Automation.BlogSeriesConfig (BlogSeriesConfig (..))
 import Automation.Frontmatter (parseFrontmatter)
+
+aiBlogConfig :: BlogSeriesConfig
+aiBlogConfig = BlogSeriesConfig
+  { bscId           = "ai-blog"
+  , bscName         = "AI Blog"
+  , bscIcon         = "🤖"
+  , bscAuthor       = "[[bryan-grounds]]"
+  , bscBaseUrl      = "https://bagrounds.org/ai-blog"
+  , bscPriorityUser = Nothing
+  , bscNavLink      = "[[index|🏡 Home]] > [[/ai-blog/index|🤖 AI Blog]]"
+  , bscPostTimeUtc  = ""
+  }
 
 aiBlogNavPrefix :: Text
 aiBlogNavPrefix = "[[index|🏡 Home]] > [[/ai-blog/index|🤖 AI Blog]]"

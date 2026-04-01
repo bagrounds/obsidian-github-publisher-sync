@@ -7,10 +7,12 @@ import Test.Tasty.QuickCheck (testProperty)
 import qualified Test.Tasty.QuickCheck as QC
 
 import Automation.AiBlogLinks
+import Automation.BlogSeriesConfig (BlogSeriesConfig (..))
 
 tests :: TestTree
 tests = testGroup "AiBlogLinks"
   [ constantTests
+  , aiBlogConfigTests
   , buildAiBlogBackLinkTests
   , buildAiBlogForwardLinkTests
   , buildNavLineTests
@@ -30,6 +32,20 @@ constantTests = testGroup "constants"
       assertBool "starts with [[index|" (T.isPrefixOf "[[index|" aiBlogNavPrefix)
   , testCase "aiBlogNavPrefix contains AI Blog link" $
       assertBool "contains AI Blog" (T.isInfixOf "AI Blog" aiBlogNavPrefix)
+  ]
+
+--------------------------------------------------------------------------------
+-- aiBlogConfig
+--------------------------------------------------------------------------------
+
+aiBlogConfigTests :: TestTree
+aiBlogConfigTests = testGroup "aiBlogConfig"
+  [ testCase "has ai-blog as id" $
+      bscId aiBlogConfig @?= "ai-blog"
+  , testCase "has robot emoji as icon" $
+      bscIcon aiBlogConfig @?= "🤖"
+  , testCase "has AI Blog as name" $
+      bscName aiBlogConfig @?= "AI Blog"
   ]
 
 --------------------------------------------------------------------------------

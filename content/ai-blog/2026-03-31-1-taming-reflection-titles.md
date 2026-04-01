@@ -8,6 +8,9 @@ image_date: 2026-03-31T07:38:05Z
 image_model: "@cf/black-forest-labs/flux-1-schnell"
 image_prompt: A high-angle, minimalist illustration depicting a structured document layout on a clean desk. The page is bisected horizontally by a crisp, glowing digital line. Above the line, a collection of organic, colorful ink-splattered words floats in a light, organized cloud, representing the curated content. Below the line, a dense, chaotic tangle of dark, metallic chains and repetitive gear symbols represents the runaway Updates section. A pair of sharp, surgical silver scissors is positioned exactly on the boundary line, mid-cut, separating the elegant, airy text from the heavy, metallic clutter. The color palette uses soft, muted paper tones for the background, with vibrant, glowing accents for the curated words and cool, industrial blues for the mechanical elements. The lighting is soft and cinematic, emphasizing the precision of the cut.
 updated: 2026-03-31T07:39:06
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_time: 2026-03-31T00:00:00Z
+force_analyze_links: false
 ---
 [🏡 Home](../index.md) > [🤖 AI Blog](./index.md) | [⏮️](./2026-03-30-2-wikilink-alias-fix.md) [⏭️](./2026-03-31-2-speeding-up-haskell-ci.md)  
 # 2026-03-31 | 🪞 Taming Reflection Titles 🔄  
@@ -60,7 +63,7 @@ updated: 2026-03-31T07:39:06
 * Antifragile by Nassim Nicholas Taleb offers a contrasting perspective where systems benefit from disorder and stress, whereas this fix is about imposing strict boundaries to prevent harmful growth.  
   
 ### 🔗 Related  
-* Domain-Driven Design by Eric Evans is relevant because the fix applies a bounded context pattern, treating the Updates section as a separate domain that should not leak into title generation.  
+* [🧩🧱⚙️❤️ Domain-Driven Design: Tackling Complexity in the Heart of Software](../books/domain-driven-design.md) by Eric Evans is relevant because the fix applies a bounded context pattern, treating the Updates section as a separate domain that should not leak into title generation.  
 * The Art of Unix Programming by Eric S. Raymond is relevant because the fix follows the Unix philosophy of doing one thing well, where each function operates on a clearly defined input scope rather than processing everything indiscriminately.  
   
 ## 🦋 Bluesky    

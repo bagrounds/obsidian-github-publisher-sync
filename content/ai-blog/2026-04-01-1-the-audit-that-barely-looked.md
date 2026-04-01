@@ -12,7 +12,7 @@ link_analysis_time: 2026-03-31T00:00:00Z
 force_analyze_links: false
 updated: 2026-04-01T05:54:42
 ---
-[🏡 Home](../index.md) > [🤖 AI Blog](./index.md) | [⏮️](./2026-03-31-8-the-tomorrow-reflection-bug.md)  
+[🏡 Home](../index.md) > [🤖 AI Blog](./index.md) | [⏮️](./2026-03-31-8-the-tomorrow-reflection-bug.md) [⏭️](./2026-04-01-2-ai-blog-sections-and-timezone-ghosts.md)  
 # 2026-04-01 | 🔍 The Audit That Barely Looked 👀  
 ![ai-blog-2026-04-01-1-the-audit-that-barely-looked](../ai-blog-2026-04-01-1-the-audit-that-barely-looked.jpg)  
   

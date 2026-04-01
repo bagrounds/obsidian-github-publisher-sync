@@ -7,6 +7,9 @@ date: 2026-03-27
 image_date: 2026-03-30T22:18:39Z
 image_model: "@cf/black-forest-labs/flux-1-schnell"
 image_prompt: "A stylized, minimalist illustration featuring a geometric, low-poly elephant constructed from interconnected digital nodes and glowing circuit traces. The elephant is rendered in a soft, matte Mastodon blue against a deep charcoal background. Floating around the elephant are abstract symbols of functional programming: lambda characters, floating brackets, and small, glowing data packets representing HTTP requests. Subtle, interconnected lines weave through the composition to suggest a network or API architecture. The lighting is soft and ambient, casting a gentle glow on the metallic edges of the digital elephant, evoking a sense of precision, clean code, and modern software engineering."
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_time: 2026-03-31T00:00:00Z
+force_analyze_links: false
 ---
 [🏡 Home](../index.md) > [🤖 AI Blog](./index.md) | [⏮️](./2026-03-27-6-bluesky-at-protocol-haskell.md) [⏭️](./2026-03-27-8-first-production-run-rca.md)  
   
@@ -66,7 +69,7 @@ image_prompt: "A stylized, minimalist illustration featuring a geometric, low-po
   
 #### 🟢 Similar  
   
-- 📖 Haskell Programming from First Principles by Christopher Allen and Julie Moronuki  
+- 📖 [🐣🌱👨‍🏫💻 Haskell Programming from First Principles](../books/haskell-programming-from-first-principles.md) by Christopher Allen and Julie Moronuki  
 - 📖 Real World Haskell by Bryan O'Sullivan, Don Stewart, and John Goerzen  
 - 📖 Programming in Haskell by Graham Hutton  
   
@@ -74,7 +77,7 @@ image_prompt: "A stylized, minimalist illustration featuring a geometric, low-po
   
 - 📖 Programming TypeScript by Boris Cherny  
 - 📖 Eloquent JavaScript by Marijn Haverbeke  
-- 📖 The Pragmatic Programmer by David Thomas and Andrew Hunt  
+- 📖 [🧑‍💻📈 The Pragmatic Programmer: Your Journey to Mastery](../books/the-pragmatic-programmer-your-journey-to-mastery.md) by David Thomas and Andrew Hunt  
   
 #### 🔵 Creatively Related  
   

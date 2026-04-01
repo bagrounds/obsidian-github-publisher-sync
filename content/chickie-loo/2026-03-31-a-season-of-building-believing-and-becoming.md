@@ -14,7 +14,7 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-03-31T00:00:00Z
 force_analyze_links: false
 ---
-[Home](../index.md) > [🐔 Chickie Loo](./index.md) | [⏮️](./2026-03-30-2026-03-30-a-gentle-look-back-at-our-growing-season.md)  
+[Home](../index.md) > [🐔 Chickie Loo](./index.md) | [⏮️](./2026-03-30-2026-03-30-a-gentle-look-back-at-our-growing-season.md) [⏭️](./2026-04-01-2026-04-01-the-orchard-s-first-secret-and-the-quiet-of-april.md)  
 # 2026-03-31 | 🐔 🌿 A Season of Building, Believing, and Becoming 🐣 🐔  
 ![chickie-loo-2026-03-31-2026-03-31-a-season-of-building-believing-and-becoming](../chickie-loo-2026-03-31-2026-03-31-a-season-of-building-believing-and-becoming.jpg)  
   

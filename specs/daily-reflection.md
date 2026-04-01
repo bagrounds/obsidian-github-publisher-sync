@@ -120,7 +120,9 @@ tags:
 
 🌎 All reflection dates use Pacific time via `todayPacific()`. Reflections must never be created for a date after today in Pacific time.
 
-🛡️ The `runBackfillImages` task derives dates from ai-blog filenames (via `extractPostDate`). Because filenames may be committed with UTC dates that are ahead of Pacific time, both the Haskell and TypeScript implementations filter out any date that exceeds today Pacific before calling `addUpdateLinksToReflection`.
+🛡️ The `runBackfillImages` task derives dates from ai-blog filenames (via `extractPostDate`). Because filenames may be committed with UTC dates that are ahead of Pacific time, both the Haskell and TypeScript implementations filter out any date that exceeds today Pacific before linking to the reflection.
+
+🤖 AI blog posts are linked using the same `insertPostLink` mechanism as blog series, creating a dedicated `## [[ai-blog/index|🤖 AI Blog]]` section rather than placing links in the Updates section.
 
 ## ⚙️ Workflow Integration
 

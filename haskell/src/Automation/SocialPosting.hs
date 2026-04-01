@@ -63,6 +63,7 @@ import Automation.EmbedSection
   )
 import Automation.Env (validateEnvironment)
 import Automation.Frontmatter (parseFrontmatter, quoteYamlValue)
+import Automation.BlogPrompt (DateStr (..), todayPacific)
 import Automation.Gemini
   ( GenerationConfig (..)
   , GeminiResponse (..)
@@ -834,8 +835,7 @@ autoPost manager vaultDir = do
   postedNotes <- runPostingPipeline manager env apiKey vaultDir
 
   let reflectionsDir = vaultDir </> "reflections"
-  now <- getCurrentTime
-  let todayStr = T.pack $ formatTime defaultTimeLocale "%Y-%m-%d" now
-      updateLinks = fmap (\cn -> UpdateLink (cnRelativePath cn) (cnTitle cn)) postedNotes
+  DateStr todayStr <- todayPacific
+  let updateLinks = fmap (\cn -> UpdateLink (cnRelativePath cn) (cnTitle cn)) postedNotes
   _ <- addUpdateLinksToReflection reflectionsDir todayStr SocialPostUpdate updateLinks
   pure ()

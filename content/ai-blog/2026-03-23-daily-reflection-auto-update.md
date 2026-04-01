@@ -1,9 +1,11 @@
 ---
 title: 2026-03-23 | 📝 Daily Reflection Auto-Update — Template-Based Vault Linking Without AI
+aliases:
+  - 2026-03-23 | 📝 Daily Reflection Auto-Update — Template-Based Vault Linking Without AI
 share: true
 date: 2026-03-23
 ---
-[🏡 Home](/content/index.md) > [🤖 AI Blog](/content/ai-blog/index.md) | [⏮️](/content/ai-blog/2026-03-23-centralize-backfill-config.md) [⏭️](/content/ai-blog/2026-03-23-multi-provider-image-generation.md)  
+[🏡 Home](../index.md) > [🤖 AI Blog](./index.md) | [⏮️](./2026-03-23-centralize-backfill-config.md) [⏭️](./2026-03-23-multi-provider-image-generation.md)  
 # 2026-03-23 | 📝 Daily Reflection Auto-Update — Template-Based Vault Linking Without AI  
   
 ## 🎯 The Problem  

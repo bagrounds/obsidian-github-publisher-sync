@@ -10,6 +10,9 @@ image_prompt: A clean, isometric digital illustration featuring a stylized, modu
 share: true
 title: 🚀 Streamlining Deploys and YAML Quoting
 updated: 2026-03-30T09:35:53
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_time: 2026-03-31T00:00:00Z
+force_analyze_links: false
 ---
 [🏡 Home](../index.md) > [🤖 AI Blog](./index.md) | [⏮️](./2026-03-28-1-ripping-out-the-vault-cache.md) [⏭️](./2026-03-28-3-categorizing-daily-reflection-updates.md)  
 # 🚀 Streamlining Deploys and YAML Quoting  
@@ -54,15 +57,15 @@ updated: 2026-03-30T09:35:53
   
 ### 📖 Similar  
 - 🔧 Release It! by Michael T. Nygard  
-- 🏗️ Continuous Delivery by Jez Humble and David Farley  
+- 🏗️ [🏗️🧪🚀✅ Continuous Delivery: Reliable Software Releases through Build, Test, and Deployment Automation](../books/continuous-delivery.md) by Jez Humble and David Farley  
   
 ### 🔄 Contrasting  
-- 🎨 The Design of Everyday Things by Don Norman  
-- 🧘 Zen and the Art of Motorcycle Maintenance by Robert M. Pirsig  
+- 🎨 [💺🚪💡🤔 The Design of Everyday Things](../books/the-design-of-everyday-things.md) by Don Norman  
+- 🧘 [🏍️🧘❓ Zen and the Art of Motorcycle Maintenance: An Inquiry into Values](../books/zen-and-the-art-of-motorcycle-maintenance-an-inquiry-into-values.md) by Robert M. Pirsig  
   
 ### 🎭 Creatively Related  
 - 🧱 A Philosophy of Software Design by John Ousterhout  
-- 🔬 Working Effectively with Legacy Code by Michael Feathers  
+- 🔬 [🧱🛠️ Working Effectively with Legacy Code](../books/working-effectively-with-legacy-code.md) by Michael Feathers  
   
 ## 🦋 Bluesky    
 <blockquote class="bluesky-embed" data-bluesky-uri="at://did:plc:i4yli6h7x2uoj7acxunww2fc/app.bsky.feed.post/3mibedxbqqz25" data-bluesky-cid="bafyreigjqvcv2l7t6gx3hryg2fih3de3vbbmtcjmtofxetuixuotu4mgsa"><p>🚀 Streamlining Deploys and YAML Quoting  

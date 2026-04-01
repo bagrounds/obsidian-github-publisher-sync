@@ -1,11 +1,20 @@
 ---
 share: true
 date: 2026-03-25
-title: "🔗 Closing the Loop: Automated AI Blog Vault Sync"
+title: "2026-03-25 | 🔗 Closing the Loop: Automated AI Blog Vault Sync"
+aliases:
+  - "2026-03-25 | 🔗 Closing the Loop: Automated AI Blog Vault Sync"
+image_date: 2026-03-31T21:22:06Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A clean, isometric-style illustration featuring a glowing digital loop. On one side, a stylized open notebook representing an Obsidian vault, and on the other, a sleek cloud server icon representing a GitHub repository. A vibrant, flowing stream of interconnected nodes and data lines bridges the two, forming a circular, infinite-loop path. The color palette uses deep navy, electric cyan, and soft white, evoking a sense of automated precision and modern software architecture. The composition is balanced and minimalist, emphasizing the seamless synchronization between the two systems without any clutter.
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_time: 2026-03-31T00:00:00Z
+force_analyze_links: false
 ---
-[🏡 Home](/content/index.md) > [🤖 AI Blog](/content/ai-blog/index.md) | [⏮️](/content/ai-blog/2026-03-24-steady-drip-backfilling.md) [⏭️](/content/ai-blog/2026-03-25-daily-updates-and-ai-fiction.md)  
+[🏡 Home](../index.md) > [🤖 AI Blog](./index.md) | [⏮️](../../2026-03-24-steady-drip-backfilling.md) [⏭️](./2026-03-25-daily-updates-and-ai-fiction.md)  
   
-# 🔗 Closing the Loop: Automated AI Blog Vault Sync  
+# 2026-03-25 | 🔗 Closing the Loop: Automated AI Blog Vault Sync  
+![ai-blog-2026-03-25-automated-ai-blog-vault-sync](../ai-blog-2026-03-25-automated-ai-blog-vault-sync.jpg)  
   
 ## 🎯 The Problem  
   
@@ -120,11 +129,11 @@ title: "🔗 Closing the Loop: Automated AI Blog Vault Sync"
   
 ### 📖 Contrasting  
   
-- 📙 The Mythical Man-Month by Frederick P. Brooks Jr.  
-- 📓 Thinking in Systems by Donella H. Meadows  
+- 📙 [🦄👤🗓️ The Mythical Man-Month: Essays on Software Engineering](../books/the-mythical-man-month.md) by Frederick P. Brooks Jr.  
+- 📓 [🌐🔗🧠📖 Thinking in Systems: A Primer](../books/thinking-in-systems.md) by Donella H. Meadows  
   
 ### 📖 Creatively Related  
   
-- 📔 The Design of Everyday Things by Don Norman  
-- 📒 Atomic Habits by James Clear  
+- 📔 [💺🚪💡🤔 The Design of Everyday Things](../books/the-design-of-everyday-things.md) by Don Norman  
+- 📒 [⚛️🔄 Atomic Habits: An Easy & Proven Way to Build Good Habits & Break Bad Ones](../books/atomic-habits.md) by James Clear  
 - 📕 A Philosophy of Software Design by John Ousterhout  

@@ -1,11 +1,20 @@
 ---
 share: true
 date: 2026-03-25
-title: 🔄 Smarter Publishing & 🤖🐲 AI Fiction for Daily Reflections
+title: 2026-03-25 | 🔄 Smarter Publishing & 🤖🐲 AI Fiction for Daily Reflections
+aliases:
+  - 2026-03-25 | 🔄 Smarter Publishing & 🤖🐲 AI Fiction for Daily Reflections
+image_date: 2026-03-31T22:16:45Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A minimalist, high-contrast digital illustration featuring a clean, isometric view of a glowing, translucent notebook floating in a dark, ethereal space. From the pages of the notebook, stylized streams of binary code and abstract geometric symbols flow upward, spiraling into a soft, glowing nebula. At the center of the nebula, a delicate, stylized mechanical dragon silhouette is formed from light particles. Surrounding the notebook are neat, organized nodes connected by thin, luminous lines, representing a structured data network. The color palette consists of deep indigo and charcoal backgrounds contrasted with vibrant cyan, electric violet, and warm amber light, evoking a sense of both technical precision and creative, dreamlike storytelling. The lighting is cinematic, highlighting the clean, modern aesthetic of a digital workspace.
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_time: 2026-03-31T00:00:00Z
+force_analyze_links: false
 ---
-[🏡 Home](/content/index.md) > [🤖 AI Blog](/content/ai-blog/index.md) | [⏮️](/content/ai-blog/2026-03-25-automated-ai-blog-vault-sync.md) [⏭️](/2026-03-25-reflection-title-generation.md)  
+[🏡 Home](../index.md) > [🤖 AI Blog](./index.md) | [⏮️](./2026-03-25-automated-ai-blog-vault-sync.md) [⏭️](../../2026-03-25-reflection-title-generation.md)  
   
-# 🔄 Smarter Publishing & 🤖🐲 AI Fiction for Daily Reflections  
+# 2026-03-25 | 🔄 Smarter Publishing & 🤖🐲 AI Fiction for Daily Reflections  
+![ai-blog-2026-03-25-daily-updates-and-ai-fiction](../ai-blog-2026-03-25-daily-updates-and-ai-fiction.jpg)  
   
 ## 🎯 Two Changes, One Theme  
   
@@ -105,15 +114,15 @@ title: 🔄 Smarter Publishing & 🤖🐲 AI Fiction for Daily Reflections
 ## 📚 Book Recommendations  
   
 ### 📖 Similar  
-- 🧠 Atomic Habits by James Clear  
-- 📓 The Bullet Journal Method by Ryder Carroll  
+- 🧠 [⚛️🔄 Atomic Habits: An Easy & Proven Way to Build Good Habits & Break Bad Ones](../books/atomic-habits.md) by James Clear  
+- 📓 [📓📜🗂️🔮 The Bullet Journal Method: Track the Past, Order the Present, Design the Future](../books/the-bullet-journal-method.md) by Ryder Carroll  
 - 🏗️ A Philosophy of Software Design by John Ousterhout  
   
 ### 🔄 Contrasting  
 - 🎨 The Art of Fiction by John Gardner  
-- 🤖 Gödel, Escher, Bach by Douglas Hofstadter  
+- 🤖 [♾️📐🎶🥨 Gödel, Escher, Bach: An Eternal Golden Braid](../books/godel-escher-bach.md) by Douglas Hofstadter  
   
 ### 🎨 Creatively Related  
-- ✍️ Bird by Bird by Anne Lamott  
+- ✍️ [🐦🕊️ Bird by Bird: Some Instructions on Writing and Life](../books/bird-by-bird.md) by Anne Lamott  
 - 🪞 If on a Winter's Night a Traveler by Italo Calvino  
-- 🔧 The Design of Everyday Things by Don Norman  
+- 🔧 [💺🚪💡🤔 The Design of Everyday Things](../books/the-design-of-everyday-things.md) by Don Norman  

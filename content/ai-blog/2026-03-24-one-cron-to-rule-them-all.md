@@ -1,10 +1,20 @@
 ---
 share: true
 date: 2026-03-24
+title: 2026-03-24 | 🗓️ One Cron to Rule Them All
+aliases:
+  - 2026-03-24 | 🗓️ One Cron to Rule Them All
+image_date: 2026-04-01T01:42:56Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: "A clean, minimalist isometric illustration centered on a glowing, golden clockwork gear. Radiating from this central gear are several distinct, color-coded mechanical filaments or light-trails that connect to various floating icons representing digital tasks: a small blog post document, a social media speech bubble, a globe for web links, and a stylized image frame. The background is a deep, professional navy blue with subtle, faint grid lines, suggesting a structured digital workspace. The overall aesthetic is sleek and modern, using a palette of cyan, gold, and white to emphasize precision, automation, and the transition from messy, fragmented code to a singular, harmonious system. The composition is balanced and airy, focusing on the concept of centralization and one source of truth."
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_time: 2026-03-31T00:00:00Z
+force_analyze_links: false
 ---
-[🏡 Home](/content/index.md) > [🤖 AI Blog](/content/ai-blog/index.md) | [⏮️](/content/ai-blog/2026-03-23-together-ai-provider.md) [⏭️](/content/ai-blog/2026-03-24-steady-drip-backfilling.md)  
+[🏡 Home](../index.md) > [🤖 AI Blog](./index.md) | [⏮️](./2026-03-23-together-ai-provider.md) [⏭️](../../2026-03-24-steady-drip-backfilling.md)  
   
-## 🗓️ One Cron to Rule Them All  
+# 2026-03-24 | 🗓️ One Cron to Rule Them All  
+![ai-blog-2026-03-24-one-cron-to-rule-them-all](../ai-blog-2026-03-24-one-cron-to-rule-them-all.jpg)  
   
 🎯 Six YAML workflow files, each with their own cron schedule, boilerplate setup steps, and duplicated secret mappings — replaced by a single hourly cron and a TypeScript scheduler that calls library functions directly.  
   
@@ -86,4 +96,4 @@ date: 2026-03-24
 - 📒 *Infrastructure as Code* by Kief Morris — argues for declarative infrastructure definitions, which this refactoring pushes back against for scheduling concerns  
   
 ### 📓 Creatively Related  
-- 📔 *Thinking in Systems* by Donella Meadows — the hourly scheduler is a feedback loop: time triggers evaluation, evaluation triggers action, idempotency checks close the loop  
+- 📔 *[🌐🔗🧠📖 Thinking in Systems: A Primer](../books/thinking-in-systems.md)* by Donella Meadows — the hourly scheduler is a feedback loop: time triggers evaluation, evaluation triggers action, idempotency checks close the loop  

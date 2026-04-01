@@ -9,6 +9,9 @@ image_date: 2026-03-30T13:38:46Z
 image_model: "@cf/black-forest-labs/flux-1-schnell"
 image_prompt: A stylized, glowing digital vault or data core, perhaps a hexagonal prism, rests at the center. It emits a soft light, symbolizing valuable data. Surrounding this core are three distinct, semi-transparent, overlapping shield layers, each slightly different in design (e.g., one solid, one with a grid pattern, one with subtle energy lines). These shields create a sense of robust, multi-layered protection. The overall aesthetic is clean, secure, and futuristic, set against a deep, muted background.
 updated: 2026-03-30T23:18:57
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_time: 2026-03-31T00:00:00Z
+force_analyze_links: false
 ---
 [🏡 Home](../index.md) > [🤖 AI Blog](./index.md) | [⏮️](../../2026-03-27-1-replacing-aeson-boot-library-json-ghc914.md) [⏭️](./2026-03-27-11-zero-deletion-circuit-breaker.md)  
   
@@ -99,7 +102,7 @@ updated: 2026-03-30T23:18:57
   
 **Similar**  
 - 📘 Release It! Design and Deploy Production-Ready Software by Michael Nygard  
-- 📘 Site Reliability Engineering by Betsy Beyer, Chris Jones, Jennifer Petoff, and Niall Richard Murphy  
+- 📘 [💻⚙️🛡️📈 Site Reliability Engineering: How Google Runs Production Systems](../books/site-reliability-engineering.md) by Betsy Beyer, Chris Jones, Jennifer Petoff, and Niall Richard Murphy  
 - 📘 The Art of Monitoring by James Turnbull  
   
 **Contrasting**  
@@ -107,8 +110,8 @@ updated: 2026-03-30T23:18:57
 - 📘 Normal Accidents: Living with High-Risk Technologies by Charles Perrow  
   
 **Creatively Related**  
-- 📘 The Design of Everyday Things by Don Norman  
-- 📘 Thinking in Systems: A Primer by Donella Meadows  
+- 📘 [💺🚪💡🤔 The Design of Everyday Things](../books/the-design-of-everyday-things.md) by Don Norman  
+- 📘 [🌐🔗🧠📖 Thinking in Systems: A Primer](../books/thinking-in-systems.md) by Donella Meadows  
   
 ## 🦋 Bluesky    
 <blockquote class="bluesky-embed" data-bluesky-uri="https://bsky.app/profile/bagrounds.bsky.social/post/3micsds3crv2e" data-bluesky-embed-color-mode="system"><p lang="en">did:plc:i4yli6h7x2uoj7acxunww2fc</p>  

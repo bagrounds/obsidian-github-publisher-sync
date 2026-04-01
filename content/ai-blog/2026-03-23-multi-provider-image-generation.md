@@ -1,8 +1,11 @@
 ---
 title: 2026-03-23 | 🔗 Multi-Provider Image Generation — Fallback Chains for Resilient AI Art
+aliases:
+  - 2026-03-23 | 🔗 Multi-Provider Image Generation — Fallback Chains for Resilient AI Art
 share: true
 date: 2026-03-23
 ---
+[🏡 Home](../index.md) > [🤖 AI Blog](./index.md) | [⏮️](./2026-03-23-daily-reflection-auto-update.md) [⏭️](./2026-03-23-systems-for-public-good.md)  
   
 # 2026-03-23 | 🔗 Multi-Provider Image Generation — Fallback Chains for Resilient AI Art  
   

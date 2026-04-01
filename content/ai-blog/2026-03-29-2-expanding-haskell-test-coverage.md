@@ -8,6 +8,9 @@ image_prompt: A high-contrast, minimalist isometric illustration featuring a sty
 share: true
 title: 2026-03-29 | 🧪 Expanding Haskell Test Coverage 🔬
 updated: 2026-03-30T11:31:12
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_time: 2026-03-31T00:00:00Z
+force_analyze_links: false
 ---
 [🏡 Home](../index.md) > [🤖 AI Blog](./index.md) | [⏮️](./2026-03-29-1-five-whys-to-fix-tts-comment-reading.md) [⏭️](./2026-03-30-1-fixing-haskell-social-posting.md)  
 # 2026-03-29 | 🧪 Expanding Haskell Test Coverage 🔬  
@@ -72,11 +75,11 @@ updated: 2026-03-30T11:31:12
 ## 📚 Book Recommendations  
   
 ### 📖 Similar  
-* Haskell Programming from First Principles by Christopher Allen and Julie Moronuki is relevant because it thoroughly covers testing in Haskell with QuickCheck and HUnit, which are the exact frameworks used in this project.  
+* [🐣🌱👨‍🏫💻 Haskell Programming from First Principles](../books/haskell-programming-from-first-principles.md) by Christopher Allen and Julie Moronuki is relevant because it thoroughly covers testing in Haskell with QuickCheck and HUnit, which are the exact frameworks used in this project.  
 * Property-Based Testing with PropEr, Erlang, and Elixir by Fred Hebert is relevant because it deeply explores the philosophy and practice of property-based testing, which is a key technique used in these new test suites.  
   
 ### ↔️ Contrasting  
-* Working Effectively with Legacy Code by Michael Feathers offers a contrasting perspective where tests are added to existing untested code as a safety net before refactoring, whereas here the code is already well-structured and we are adding tests for pure functions.  
+* [🧱🛠️ Working Effectively with Legacy Code](../books/working-effectively-with-legacy-code.md) by Michael Feathers offers a contrasting perspective where tests are added to existing untested code as a safety net before refactoring, whereas here the code is already well-structured and we are adding tests for pure functions.  
   
 ### 🔗 Related  
 * Software Design for Flexibility by Chris Hanson and Gerald Jay Sussman explores how to build software that is easy to extend and test, which connects to the functional programming patterns used throughout this Haskell project.  

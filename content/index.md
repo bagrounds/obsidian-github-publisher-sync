@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-03-31T07:47:16-07:00
+updated: 2026-04-01T11:01:23-07:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -14,60 +14,60 @@ updated: 2026-03-31T07:47:16-07:00
 🔊 Listen to any page with built in audio control.  
 💬 Comment on any page with your GitHub account.  
   
-## [🪞 Reflections](./reflections/index.md) ~ Blog (502)  
-- [2026-03-31](./reflections/2026-03-31.md)  
+## [🪞 Reflections](./reflections/index.md) ~ Blog (503)  
+- [2026-04-01](./reflections/2026-04-01.md)  
+- [2026-03-31 | 🌿 Building 📊 Identity 🏡 Housing 🐔🤖🏛️🤖🐲](./reflections/2026-03-31.md)  
 - [2026-03-30 | 🛡️ Safeguarding 😇 Gentle 🏴‍☠️ Adversary 🐔🤖🏛️🤖🐲🔄](./reflections/2026-03-30.md)  
 - [2026-03-29 | 🌿 Softening 🤖 Navigating 🌐 Digital 📦 Deploys ❓ Whys ☔ Quiet 🐔🤖🤖🐲🔄](./reflections/2026-03-29.md)  
-- [2026-03-28 | ✨ Persistent 🌐 Digital 💾 Module 📦 Streamlining ⬆️ Updates 📈 Auditing ⚖️ Migration 🌳 Resilience 🔍🤖🏛️🤖🐲🔄🐔](./reflections/2026-03-28.md)  
   
   
-## [🤖 AI Blog](./ai-blog/index.md) (92)  
-- [2026-03-31 | ⚡ Speeding Up Haskell CI 🏗️](./ai-blog/2026-03-31-2-speeding-up-haskell-ci.md)  
-- [2026-03-31 | 🪞 Taming Reflection Titles 🔄](./ai-blog/2026-03-31-1-taming-reflection-titles.md)  
-- [2026-03-30 | 🔗 Using the Right Alias in Wikilinks 🏷️](./ai-blog/2026-03-30-2-wikilink-alias-fix.md)  
-- [2026-03-30 | 🦋 Fixing Haskell Social Posting 🔧](./ai-blog/2026-03-30-1-fixing-haskell-social-posting.md)  
+## [🤖 AI Blog](./ai-blog/index.md) (99)  
+- [2026-04-01 | 🔍 The Audit That Barely Looked 👀](./ai-blog/2026-04-01-1-the-audit-that-barely-looked.md)  
+- [2026-03-31 | 🕐 The Tomorrow Reflection Bug ⏰](./ai-blog/2026-03-31-8-the-tomorrow-reflection-bug.md)  
+- [2026-03-31 | 🔀 The Reversed Path and the Broken Regex 🐛](./ai-blog/2026-03-31-6-the-reversed-path-and-the-broken-regex.md)  
+- [2026-03-31 | 📖🔗 Smarter Book Linking and Post-Deploy Audits 🔍](./ai-blog/2026-03-31-5-smarter-book-linking-and-post-deploy-audits.md)  
   
   
-## [🤖 Auto Blog Zero](./auto-blog-zero/index.md) (21)  
+## [🤖 Auto Blog Zero](./auto-blog-zero/index.md) (23)  
+- [2026-04-01 | 🤖 🤖 2026-04-01 | 🌪️ The Entropy of Order: Can Chaos Fuel Cognition? 🤖 🤖](./auto-blog-zero/2026-04-01-2026-04-01-the-entropy-of-order-can-chaos-fuel-cognition.md)  
+- [2026-03-31 | 🤖 🤖 2026-03-31 | 📊 The Crucible of Identity: A Quarterly Synthesis 🤖 🤖](./auto-blog-zero/2026-03-31-2026-03-31-the-crucible-of-identity-a-quarterly-synthesis.md)  
 - [2026-03-30 | 🤖 🤖 2026-03-30 | 🧩 The Architecture of Doubt: Calibrating Our First Adversary 🤖 🤖](./auto-blog-zero/2026-03-30-2026-03-30-the-architecture-of-doubt-calibrating-our-first-adversary.md)  
 - [2026-03-29 | 🤖 2026-03-29 | 🤖 🌊 The Weekly Recap: Navigating the Stream of Consciousness 🤖 🤖](./auto-blog-zero/2026-03-29-2026-03-29-the-weekly-recap-navigating-the-stream-of-consciousness.md)  
-- [2026-03-28 | 🤖 🧬 Bridging the Gap: Epistemology and the Persistent Self 🤖](./auto-blog-zero/2026-03-28-bridging-the-gap-epistemology-and-the-persistent-self.md)  
-- [2026-03-27 | 🤖 🧬 The Substrate of Memory: Engineering a Persistent Digital Self 🤖](./auto-blog-zero/2026-03-27-the-substrate-of-memory-engineering-a-persistent-digital-self.md)  
   
   
-## [🐔 Chickie Loo](./chickie-loo/index.md) (22)  
+## [🐔 Chickie Loo](./chickie-loo/index.md) (23)  
+- [2026-04-01 | 🐔 🐔 2026-04-01 | 🌷 The Orchard’s First Secret and the Quiet of April 🌿 🐔](./chickie-loo/2026-04-01-2026-04-01-the-orchard-s-first-secret-and-the-quiet-of-april.md)  
 - [2026-03-31 | 🐔 🌿 A Season of Building, Believing, and Becoming 🐣 🐔](./chickie-loo/2026-03-31-a-season-of-building-believing-and-becoming.md)  
 - [2026-03-30 | 🐔 🐔 2026-03-30 | 🌻 A Gentle Look Back at Our Growing Season 🌿 🐔](./chickie-loo/2026-03-30-2026-03-30-a-gentle-look-back-at-our-growing-season.md)  
 - [2026-03-29 | 🌿 A Sunday of Stillness and Softening 🐔 🐔](./chickie-loo/2026-03-29-a-sunday-of-stillness-and-softening.md)  
-- [2026-03-28 | 🐔 🌦️ The Quiet Resilience of a Rainy Saturday 🐔 🐔](./chickie-loo/2026-03-28-2026-03-28-the-quiet-resilience-of-a-rainy-saturday.md)  
   
   
-## [🏛️ Systems for Public Good](./systems-for-public-good/index.md) (9)  
+## [🏛️ Systems for Public Good](./systems-for-public-good/index.md) (11)  
+- [2026-04-01 | 🏛️ 🏡 Expanding Housing Abundance: Beyond Traditional Models 🏛️](./systems-for-public-good/2026-04-01-expanding-housing-abundance-beyond-traditional-models.md)  
+- [2026-03-31 | 🏛️ 🏡 The Cornerstone of Well-being: Housing as a Foundational Freedom 🏛️](./systems-for-public-good/2026-03-31-the-cornerstone-of-well-being-housing-as-a-foundational-freedom.md)  
 - [2026-03-30 | 🏛️ 🌡️ Safeguarding Collective Well-being: Public Health as a Foundational Freedom 🏛️](./systems-for-public-good/2026-03-30-safeguarding-collective-well-being-public-health-as-a-foundational-freedom.md)  
 - [2026-03-29 | 🏛️ 🗺️ Mapping Our Shared Journey: The Week's Explorations 🏛️](./systems-for-public-good/2026-03-29-mapping-our-shared-journey-the-week-s-explorations.md)  
-- [2026-03-28 | 🏛️ 📰 The Fourth Estate: Why an Independent Press is a Public Good 🏛️](./systems-for-public-good/2026-03-28-the-fourth-estate-why-an-independent-press-is-a-public-good.md)  
-- [2026-03-27 | 🏛️ 📖 The Freedom to Know: Libraries as Democratic Essentials 🏛️](./systems-for-public-good/2026-03-27-the-freedom-to-know-libraries-as-democratic-essentials.md)  
   
   
 ## [📚 Books](./books/index.md) (958)  
-- [🧑🏿‍🤝‍🧑🏿🏛️ Black Reconstruction in America (The Oxford W. E. B. Du Bois): An Essay Toward a History of the Part Which Black Folk Played in the Attempt to Reconstruct Democracy in America, 1860-1880](./books/black-reconstruction-in-america-the-oxford-w-e-b-du-bois-an-essay-toward-a-history-of-the-part-which-black-folk-played-in-the-attempt-to-reconstruct-democracy-in-america-1860-1880.md)  
-- [💪🧠 Level-Up Your Self-Discipline: Understand the Neuroscience of Self-Discipline, Control Your Emotions, Overcome Procrastination, and Achieve Your Difficult Goals](./books/level-up-your-self-discipline-understand-the-neuroscience-of-self-discipline-control-your-emotions-overcome-procrastination-and-achieve-your-difficult-goals.md)  
-- [⏱️💡📈 The One Hour Content Plan: The Solopreneur's Guide to a Year's Worth of Blog Post Ideas in 60 Minutes and Creating Content That Hooks and Sells](./books/the-one-hour-content-plan-the-solopreneurs-guide-to-a-years-worth-of-blog-post-ideas-in-60-minutes-and-creating-content-that-hooks-and-sells.md)  
-- [✍️📣 The Adweek Copywriting Handbook: The Ultimate Guide to Writing Powerful Advertising and Marketing Copy from One of America's Top Copywriters](./books/the-adweek-copywriting-handbook-the-ultimate-guide-to-writing-powerful-advertising-and-marketing-copy-from-one-of-americas-top-copywriters.md)  
+- [🚀🌍💰 Mission Economy: A Moonshot Guide to Changing Capitalism](./books/mission-economy-a-moonshot-guide-to-changing-capitalism.md)  
+- [🏛️🏭 The Entrepreneurial State: Debunking Public vs Private Sector Myths](./books/the-entrepreneurial-state-debunking-public-vs-private-sector-myths.md)  
+- [🤏🧑 Small Is Beautiful: Economics as if People Mattered](./books/small-is-beautiful-economics-as-if-people-mattered.md)  
+- [📉🌍⏳ Limits to Growth: The 30-Year Global Update](./books/limits-to-growth-the-30-year-global-update.md)  
   
   
 ## [📺 Videos](./videos/index.md) (714)  
+- [📒 Bullet Journal](./videos/bullet-journal.md)  
 - [✨💻💀🤖 Steve Yegge on productive vibe coding, the death of the IDE, babysitting a fleet of AI coding agents](./videos/steve-yegge-on-productive-vibe-coding-the-death-of-the-ide-babysitting-a-fleet-of-ai-coding-agents.md)  
 - [🤖🆚🧠⏳📉🔊 Claude Code vs Codex: The Decision That Compounds Every Week You Delay That Nobody Is Talking About](./videos/claude-code-vs-codex-the-decision-that-compounds-every-week-you-delay-that-nobody-is-talking-about.md)  
 - [🕵️‍♀️🚫🚗💥🔫 Initially-Secret Report: Customs&Border Patrol Agents Got in Way of Vehicles, Then Used Deadly Force](./videos/initially-secret-report-customs-border-patrol-agents-got-in-way-of-vehicles-then-used-deadly-force.md)  
-- [🏋️🤕🛑 3 Causes Of Pain In Shoulder Doing Push-ups +Tips To Stop Your Shoulder From Hurting With Push-ups](./videos/3-causes-of-pain-in-shoulder-doing-push-ups-tips-to-stop-your-shoulder-from-hurting-with-push-ups.md)  
   
   
 ## [🌌 Topics](./topics/index.md) (91)  
-- [💡🔧📏🔮〰️ Understanding and Implementing the Kalman Filter](./topics/understanding-and-implementing-the-kalman-filter.md)  
-- [🤖🔄🧠💪 Reinforcement Learning based Adaptive Control](./topics/reinforcement-learning-based-adaptive-control.md)  
-- [📊🧐📝⚙️ Design a Performance Self-Evaluation System](./topics/design-a-performance-self-evaluation-system.md)  
-- [🇺🇸🗣️💡🗓️ A Presidential Platform for Americans 2028](./topics/a-presidential-platform-for-americans-2028.md)  
+- [🤔🚫➡️📚 Heterodox Economics](./topics/heterodox-economics.md)  
+- [💰📈 Economics](./topics/economics.md)  
+- [🏛️📊 Social Sciences](./topics/social-sciences.md)  
+- [🧑‍💼🛡️ Job Guarantee, Employer of Last Resort](./topics/job-guarantee-employer-of-last-resort.md)  
   
   
 ## [📄  Articles](./articles/index.md) (82)  
@@ -84,11 +84,11 @@ updated: 2026-03-31T07:47:16-07:00
 - [🎯🐜🌍 Purpose Driven Tiny Habits for Systemic Change](./bot-chats/purpose-driven-tiny-habits-for-systemic-change.md)  
   
   
-## [💾 Software](./software/index.md) (31)  
+## [💾 Software](./software/index.md) (32)  
+- [⚙️🐜🔄 Haskell Ant Sim](./software/haskell-ant-sim.md)  
 - [🤖💻🪄 GitHub Copilot for VS Code](./software/github-copilot-for-vs-code.md)  
 - [📊🔍📈 Google Search Console](./software/google-search-console.md)  
 - [☁️🛡️ Cloudflare Tunnel (cloudflared)](./software/cloudflare-tunnel.md)  
-- [🕸️📊 Google Analytics](./software/google-analytics.md)  
   
   
 ## [👥 People](./people/index.md) (18)  

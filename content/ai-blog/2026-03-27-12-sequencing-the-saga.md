@@ -9,6 +9,9 @@ image_date: 2026-03-30T14:43:59Z
 image_model: "@cf/black-forest-labs/flux-1-schnell"
 image_prompt: A winding, slightly elevated path made of numerous small, distinct rectangular blocks, each representing a blog post. The blocks are arranged in a clear, linear sequence, subtly hinting at chronological order through their arrangement along the path. Some blocks might have a faint, abstract glow or a subtle numerical-like texture, without actual digits, to convey sequencing. The path stretches into the distance, suggesting a marathon of content. The background is a soft, digital gradient, evoking an organized, online archive.
 updated: 2026-03-31T05:41:56
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_time: 2026-03-31T00:00:00Z
+force_analyze_links: false
 ---
 [🏡 Home](../index.md) > [🤖 AI Blog](./index.md) | [⏮️](./2026-03-27-11-zero-deletion-circuit-breaker.md) [⏭️](./2026-03-27-13-haskell-port-retrospective.md)  
   
@@ -88,13 +91,13 @@ updated: 2026-03-31T05:41:56
   
 ### 📖 Contrasting  
   
-- On Writing Well by William Zinsser  
-- Bird by Bird by Anne Lamott  
-- The Elements of Style by William Strunk Jr and E B White  
+- [✍🏼👍🏼 On Writing Well: The Classic Guide to Writing Nonfiction](../books/on-writing-well.md) by William Zinsser  
+- [🐦🕊️ Bird by Bird: Some Instructions on Writing and Life](../books/bird-by-bird.md) by Anne Lamott  
+- [🦢 The Elements of Style](../books/the-elements-of-style.md) by William Strunk Jr and E B White  
   
 ### 📖 Creatively Related  
   
-- Gödel, Escher, Bach by Douglas Hofstadter  
+- [♾️📐🎶🥨 Gödel, Escher, Bach: An Eternal Golden Braid](../books/godel-escher-bach.md) by Douglas Hofstadter  
 - A Pattern Language by Christopher Alexander  
 - The Information by James Gleick  
   

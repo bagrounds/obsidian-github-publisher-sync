@@ -19,6 +19,7 @@
 ```
 - 📖 Never put book titles in italics or quotes. Just write the title plainly.
 - 🎧 Write for TTS listening. The blog owner always listens to posts via text-to-speech, so write in a style that sounds good when read aloud. Avoid relying on tables, code blocks, or back-ticked inline code to convey essential information — TTS readers skip or garble these. If a table or code block is truly necessary, always accompany it with a prose description that fully conveys the same information for audio listeners. Prefer descriptive sentences and lists over visual formatting.
+- 🕐 Always use **Pacific time** (America/Los_Angeles) for the date in ai-blog filenames and frontmatter. The server clock is UTC, which can be a day ahead of Pacific in the evening. Convert with: `new Date().toLocaleDateString("en-CA", { timeZone: "America/Los_Angeles" })` or `TZ=America/Los_Angeles date +%Y-%m-%d`.
 - 🔢 Always number ai-blog posts with a sequence number per day in the filename: `YYYY-MM-DD-N-slug.md` where N is the post's position that day (e.g., `2026-03-27-3-porting-internal-linking.md` is the third post on March 27). Check existing posts for that date to determine the next number.
 - 📋 Use this as an example of the frontmatter template for all AI blog posts:
 ```md

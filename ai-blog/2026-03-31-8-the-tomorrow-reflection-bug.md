@@ -26,11 +26,11 @@ URL: https://bagrounds.org/ai-blog/2026-03-31-the-tomorrow-reflection-bug
 
 🛡️ Three changes address this bug.
 
-🗃️ First, the misdated file was renamed from 2026-04-01-1 to 2026-03-31-7 and its frontmatter was updated to reflect the correct Pacific date.
+🚧 First, a future-date guard was added to both the Haskell and TypeScript implementations of the backfill task. After building reflection links from ai-blog filenames, the code now filters out any date that exceeds today in Pacific time. In Haskell this is a simple filter on the list of tuples. In TypeScript it is a filter call on the array before the forEach.
 
-🚧 Second, a future-date guard was added to both the Haskell and TypeScript implementations of the backfill task. After building reflection links from ai-blog filenames, the code now filters out any date that exceeds today in Pacific time. In Haskell this is a simple filter on the list of tuples. In TypeScript it is a filter call on the array before the forEach.
+📋 Second, the workflow dispatch input description for the hour parameter was corrected from saying UTC hour to saying Pacific hour, since the code has always treated it as Pacific.
 
-📋 Third, the workflow dispatch input description for the hour parameter was corrected from saying UTC hour to saying Pacific hour, since the code has always treated it as Pacific.
+🕐 Third, the agent instructions in AGENTS.md were updated to explicitly require Pacific time for ai-blog post dates. The instruction includes the exact conversion commands so future agents never accidentally use UTC.
 
 ## 🧠 Key Insight
 

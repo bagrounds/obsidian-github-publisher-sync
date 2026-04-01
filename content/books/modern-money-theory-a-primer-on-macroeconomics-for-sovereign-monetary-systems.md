@@ -8,8 +8,11 @@ CTA: 🪙 Empower economies.
 affiliate link: https://amzn.to/3KZBJKR
 tags:
   - MMT
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_time: 2026-04-01T00:00:00Z
+force_analyze_links: false
 ---
-[Home](/content/index.md) > [Books](/content/books/index.md)  
+[Home](../index.md) > [Books](./index.md)  
 # 💰🏛️ Modern Money Theory: A Primer on Macroeconomics for Sovereign Monetary Systems  
 [🛒 Modern Money Theory: A Primer on Macroeconomics for Sovereign Monetary Systems. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3KZBJKR)  
   
@@ -69,17 +72,17 @@ tags:
 ## 📚 📖 Book Recommendations  
   
 ### 📖 Similar  
-* [💰📉➡️📈🗳️ The Deficit Myth: Modern Monetary Theory and the Birth of the People's Economy](/content/books/the-deficit-myth.md) by Stephanie Kelton  
-* [🌍💰📊 Macroeconomics](/content/books/macroeconomics.md) by William Mitchell  
-* [💼✅ The Case for a Job Guarantee](/content/books/the-case-for-a-job-guarantee.md) by Pavlina R. Tcherneva  
+* [💰📉➡️📈🗳️ The Deficit Myth: Modern Monetary Theory and the Birth of the People's Economy](./the-deficit-myth.md) by Stephanie Kelton  
+* [🌍💰📊 Macroeconomics](./macroeconomics.md) by William Mitchell  
+* [💼✅ The Case for a Job Guarantee](./the-case-for-a-job-guarantee.md) by Pavlina R. Tcherneva  
   
 ### 📖 Contrasting  
 * 📚 Capitalism and Freedom by Milton Friedman  
-* [🧑‍💼🏦💸 The General Theory of Employment, Interest, and Money](/content/books/the-general-theory-of-employment-interest-and-money.md) by John Maynard Keynes (while foundational, MMT presents a distinct evolution)  
+* [🧑‍💼🏦💸 The General Theory of Employment, Interest, and Money](./the-general-theory-of-employment-interest-and-money.md) by John Maynard Keynes (while foundational, MMT presents a distinct evolution)  
 * 📚 Monetary Economics: An Integrated Approach to Credit, Money, Income, Production and Wealth by Wynne Godley and Marc Lavoie  
   
 ### 📖 Related  
-* [📉📈 Stabilizing an Unstable Economy](/content/books/stabilizing-an-unstable-economy.md) by Hyman Minsky  
+* [📉📈 Stabilizing an Unstable Economy](./stabilizing-an-unstable-economy.md) by Hyman Minsky  
 * 📚 The Fiat Standard by Saifedean Ammous  
 * 📚 Wealth of Nations by Adam Smith  
   

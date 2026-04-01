@@ -6,8 +6,11 @@ URL: https://bagrounds.org/books/how-to-avoid-a-climate-disaster-the-solutions-w
 share: true
 CTA: 💡 Build a sustainable future.
 affiliate link: https://amzn.to/48WOvlt
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_time: 2026-04-01T00:00:00Z
+force_analyze_links: false
 ---
-[Home](/content/index.md) > [Books](/content/books/index.md)  
+[Home](../index.md) > [Books](./index.md)  
 # 🌍🔥💡 How to Avoid a Climate Disaster: The Solutions We Have and the Breakthroughs We Need  
 [🛒 How to Avoid a Climate Disaster: The Solutions We Have and the Breakthroughs We Need. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/48WOvlt)  
   
@@ -82,7 +85,7 @@ affiliate link: https://amzn.to/48WOvlt
   
 ### 🔗 Similar  
 * 📖 Drawdown by Paul Hawken  
-* [🔥🌎⚔️ The New Climate War: The Fight to Take Back Our Planet](/content/books/the-new-climate-war-the-fight-to-take-back-our-planet.md) by Michael E. Mann  
+* [🔥🌎⚔️ The New Climate War: The Fight to Take Back Our Planet](./the-new-climate-war-the-fight-to-take-back-our-planet.md) by Michael E. Mann  
 * 📖 Speed & Scale by John Doerr  
   
 ### ⚖️ Contrasting  
@@ -91,9 +94,9 @@ affiliate link: https://amzn.to/48WOvlt
 * 📖 This Changes Everything by Naomi Klein  
   
 ### ⛓️ Related  
-* [🍩🌍⚖️ Doughnut Economics: Seven Ways to Think Like a 21st-Century Economist](/content/books/doughnut-economics-seven-ways-to-think-like-a-21st-century-economist.md) by Kate Raworth  
-* [🤔🌍📈✅ Factfulness: Ten Reasons We're Wrong About the World - and Why Things Are Better Than You Think](/content/books/factfulness.md) by Hans Rosling  
-* [💀🌍📉⏳ The Sixth Extinction: An Unnatural History](/content/books/the-sixth-extinction.md) by Elizabeth Kolbert  
+* [🍩🌍⚖️ Doughnut Economics: Seven Ways to Think Like a 21st-Century Economist](./doughnut-economics-seven-ways-to-think-like-a-21st-century-economist.md) by Kate Raworth  
+* [🤔🌍📈✅ Factfulness: Ten Reasons We're Wrong About the World - and Why Things Are Better Than You Think](./factfulness.md) by Hans Rosling  
+* [💀🌍📉⏳ The Sixth Extinction: An Unnatural History](./the-sixth-extinction.md) by Elizabeth Kolbert  
   
 ## 🫵 What Do You Think?  
 ❓ Which of the five emission sectors identified by Bill Gates presents the greatest challenge for achieving net-zero?

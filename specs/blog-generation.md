@@ -13,10 +13,10 @@
 
 | 🧩 Component | 📂 Path | 📝 Purpose |
 |---|---|---|
-| 🧠 Prompt Builder | `scripts/lib/blog-prompt.ts` | 🔧 Constructs system and user prompts from blog context with recap awareness |
-| 📚 Series Logic | `scripts/lib/blog-series.ts` | 🔄 Context assembly, post parsing, index generation, navigation linking |
-| 📄 Post Reader | `scripts/lib/blog-posts.ts` | 📖 Reads and parses markdown posts from series directories |
-| ⚙️ Series Config | `scripts/lib/blog-series-config.ts` | 🗺️ Defines the three blog series with metadata and posting schedules |
+| 🧠 Prompt Builder | `haskell/src/Automation/BlogPrompt.hs` | 🔧 Constructs system and user prompts from blog context with recap awareness |
+| 📚 Series Logic | `haskell/src/Automation/BlogSeries.hs` | 🔄 Context assembly, post parsing, index generation, navigation linking |
+| 📄 Post Reader | `haskell/src/Automation/BlogPosts.hs` | 📖 Reads and parses markdown posts from series directories |
+| ⚙️ Series Config | `haskell/src/Automation/BlogSeriesConfig.hs` | 🗺️ Defines the three blog series with metadata and posting schedules |
 
 ### 🔄 Data Flow
 
@@ -85,7 +85,7 @@
 🔗 The URL is constructed as `baseUrl/today-slug` to include the date prefix in the URL path.
 📝 The Author field is quoted with `quoteForYaml` to prevent YAML from interpreting wikilink syntax `[[author]]` as nested lists.
 🛡️ The `quoteForYaml` helper always wraps values in double quotes, escaping internal quotes and backslashes for YAML safety.
-🚫 No `date:` field is included in the frontmatter, matching the TypeScript implementation.
+🚫 No `date:` field is included in the frontmatter.
 
 ## 🔗 Navigation Links
 
@@ -138,7 +138,7 @@
 
 ## 🧪 Testing
 
-🔬 Tests in `scripts/lib/blog-series.test.ts` with 44 test cases across 8 suites covering:
+🔬 Tests in `haskell/test/Automation/BlogSeriesTest.hs` with 44 test cases across 8 suites covering:
 - 📄 `readSeriesPosts`: empty directory, newest-first sorting, index/AGENTS exclusion, date extraction
 - 📖 `readAgentsMd`: present and missing AGENTS.md handling
 - 📚 `buildBlogContext`: unknown series error, complete context assembly

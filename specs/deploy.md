@@ -40,4 +40,4 @@ The Quartz build processes YAML frontmatter via `coerceToArray` in `quartz/plugi
 - Cleans up the `data.tags` and `data.aliases` properties when the coerced result is empty, preventing downstream type errors (e.g., `TagPage` expecting an array)
 
 ## Blog Frontmatter Generation
-The `assembleFrontmatter` function in both Haskell (`BlogPrompt.hs`) and TypeScript (`blog-prompt.ts`) generates blog post frontmatter. It must NOT include empty `tags:` fields, as the Obsidian publisher normalizes `tags:` (null) to `tags: ""` (empty string), which breaks the Quartz `TagPage` emitter.
+The `assembleFrontmatter` function in `haskell/src/Automation/BlogPrompt.hs` generates blog post frontmatter. It must NOT include empty `tags:` fields, as the Obsidian publisher normalizes `tags:` (null) to `tags: ""` (empty string), which breaks the Quartz `TagPage` emitter.

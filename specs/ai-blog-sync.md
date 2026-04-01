@@ -13,9 +13,9 @@
 
 | 🧩 Component | 📂 Path | 📝 Purpose |
 |---|---|---|
-| 📚 Library | `scripts/lib/ai-blog-links.ts` | 🔧 Pure functions for building and inserting nav links |
-| 🧪 Tests | `scripts/lib/ai-blog-links.test.ts` | ✅ 42 tests covering all pure and I/O functions |
-| 🔌 Consumer | `scripts/run-scheduled.ts` | 🖼️ Integrated into backfill-blog-images task |
+| 📚 Library | `haskell/src/Automation/AiBlogLinks.hs` | 🔧 Pure functions for building and inserting nav links |
+| 🧪 Tests | `haskell/test/Automation/AiBlogLinksTest.hs` | ✅ 42 tests covering all pure and I/O functions |
+| 🔌 Consumer | `haskell/app/RunScheduled.hs` | 🖼️ Integrated into backfill-blog-images task |
 
 ### 🔄 Data Flow
 

@@ -11,10 +11,10 @@ to the daily reflection.
 
 | Component | Path |
 |-----------|------|
-| Library | `scripts/lib/reflection-title.ts` |
-| Tests | `scripts/lib/reflection-title.test.ts` |
-| Scheduler entry | `scripts/lib/scheduler.ts` (`reflection-title`, hour 22 Pacific) |
-| Orchestrator runner | `scripts/run-scheduled.ts` (`runReflectionTitle`) |
+| Library | `haskell/src/Automation/ReflectionTitle.hs` |
+| Tests | `haskell/test/Automation/ReflectionTitleTest.hs` |
+| Scheduler entry | `haskell/src/Automation/Scheduler.hs` (`reflection-title`, hour 22 Pacific) |
+| Orchestrator runner | `haskell/app/RunScheduled.hs` (`runReflectionTitle`) |
 
 ## Schedule
 
@@ -82,14 +82,14 @@ the Updates section heading (`## 🔄 Updates`). For example:
   `gemini-3.1-flash-lite-preview` (thinking model first for structured reasoning)
 - **Environment override**: `REFLECTION_TITLE_MODEL` prepends a model to the
   chain
-- **Retry**: Reuses `isRetriableError` from `generate-blog-post.ts` for
+- **Retry**: Reuses `isRetriableError` from `Automation.Retry` for
   exponential backoff (2s, 4s, 8s) on 5XX/429 errors, up to 3 retries per model
 
 ## Social Media Safety Gate
 
 Reflection notes are blocked from social media posting until they have a
 creative title. The `isUntitledReflection()` function in
-`find-content-to-post.ts` returns true when a reflection's title is just
+`Automation.SocialPosting` returns true when a reflection's title is just
 the bare date (e.g., `2026-03-24`), causing:
 - `isPostableContent()` to return false
 - `getPriorDayReflectionIfNeeded()` to skip untitled reflections

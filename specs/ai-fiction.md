@@ -14,10 +14,10 @@
 
 | 🧩 Component | 📂 Path | 📝 Purpose |
 |---|---|---|
-| 📚 Library | `scripts/lib/ai-fiction.ts` | 🔧 Pure functions for prompt building, response parsing, and content application |
-| 🧪 Tests | `scripts/lib/ai-fiction.test.ts` | ✅ Tests covering all pure functions |
-| ⏰ Scheduler entry | `scripts/lib/scheduler.ts` | 📅 `ai-fiction` task at hour 22 Pacific with `atOrAfter` |
-| 🎛️ Orchestrator | `scripts/run-scheduled.ts` | 🔄 `runAiFiction` — vault sync, idempotency, Gemini call, write-back |
+| 📚 Library | `haskell/src/Automation/AiFiction.hs` | 🔧 Pure functions for prompt building, response parsing, and content application |
+| 🧪 Tests | `haskell/test/Automation/AiFictionTest.hs` | ✅ Tests covering all pure functions |
+| ⏰ Scheduler entry | `haskell/src/Automation/Scheduler.hs` | 📅 `ai-fiction` task at hour 22 Pacific with `atOrAfter` |
+| 🎛️ Orchestrator | `haskell/app/RunScheduled.hs` | 🔄 `runAiFiction` — vault sync, idempotency, Gemini call, write-back |
 
 ### 🔄 Data Flow
 
@@ -123,7 +123,7 @@
 
 ## 🧪 Testing
 
-🔬 Tests in `scripts/lib/ai-fiction.test.ts` covering:
+🔬 Tests in `haskell/test/Automation/AiFictionTest.hs` covering:
 - 🧹 `stripForPrompt`: frontmatter removal, embed section removal, updates section removal, content preservation
 - 🛡️ `reflectionNeedsFiction`: detection of existing fiction section, fresh reflections
 - 🧠 `buildFictionPrompt`: prompt structure, fiction rules inclusion, content forwarding

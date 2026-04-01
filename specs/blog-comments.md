@@ -10,15 +10,15 @@
 
 ### 📦 Components
 
-- 📚 Library at scripts/lib/blog-comments.ts provides comment fetching and priority flagging
-- 🧪 Tests at scripts/lib/blog-comments.test.ts (mock-based testing not included)
+- 📚 Library at haskell/src/Automation/BlogComments.hs provides comment fetching and priority flagging
+- 🧪 Tests at haskell/test/Automation/BlogCommentsTest.hs (mock-based testing not included)
 
 ### 🔄 Data Flow
 
 - 🔍 Given a series config and repo info, search GitHub Discussions by pathname
 - 📡 GraphQL query fetches up to 50 discussions with their comment threads
 - ⭐ Comments from the priority user are flagged as isPriority
-- 📅 filterCommentsAfterLastPost in blog-prompt.ts filters by date cutoff
+- 📅 filterCommentsAfterLastPost in BlogPrompt.hs filters by date cutoff
 
 ## 🔧 Key Functions
 

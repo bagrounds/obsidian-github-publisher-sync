@@ -3,7 +3,7 @@
 ## 🎯 Overview
 
 📋 All recurring automation tasks run through a single hourly GitHub Actions cron job.
-🧠 A TypeScript scheduler determines which tasks to execute based on the current **Pacific** hour.
+🧠 A Haskell scheduler determines which tasks to execute based on the current **Pacific** hour.
 🚫 Zero scheduling logic lives in YAML — the workflow file is purely declarative.
 🔄 Blog series and reflection-title use "at or after" scheduling with idempotency checks for resilience.
 
@@ -13,28 +13,26 @@
 
 | 🧩 Component | 📂 Path | 📝 Purpose |
 |---|---|---|
-| 📚 Scheduler | `scripts/lib/scheduler.ts` / `haskell/src/Automation/Scheduler.hs` | 🧠 Pure functions: given Pacific hour → task IDs to run |
-| 🎯 Orchestrator | `scripts/run-scheduled.ts` / `haskell/app/RunScheduled.hs` | 🔧 Single entry point that calls library functions directly |
+| 📚 Scheduler | `haskell/src/Automation/Scheduler.hs` | 🧠 Pure functions: given Pacific hour → task IDs to run |
+| 🎯 Orchestrator | `haskell/app/RunScheduled.hs` | 🔧 Single entry point that calls library functions directly |
 | ⚙️ Workflow | `.github/workflows/scheduled.yml` | 🕐 Hourly cron, declarative YAML only |
 
 ### 🔀 Haskell Implementation
 
-🏗️ The Haskell orchestrator (RunScheduled.hs) is the active implementation used in CI.
+🏗️ The Haskell orchestrator (RunScheduled.hs) is the sole implementation used in CI.
 🐳 The executable is pre-built by the `haskell.yml` CI workflow (using the `haskell:9.14.1` Docker container) and uploaded as an artifact with 90 day retention.
 🔍 The `haskell.yml` workflow only triggers on pushes that change files under `haskell/` or the workflow file itself, avoiding unnecessary builds.
 🔄 The `haskell.yml` workflow uses `concurrency` with `cancel-in-progress: true` to automatically cancel superseded CI runs on the same branch.
 ⬇️ The scheduled workflow downloads the pre-built binary from the latest successful Haskell CI run — no compilation at runtime.
 ✅ Fully implemented task runners: blog-series (all 3), ai-fiction, reflection-title.
 ⚠️ Stubbed task runners (log and skip): backfill-blog-images, internal-linking, social-posting.
-🔙 Rolling back to TypeScript is a workflow file revert: restore `npx tsx scripts/run-scheduled.ts`.
-📦 The TypeScript implementation remains fully functional and tested (1298 tests).
 
 ### 🔄 Data Flow
 
 ```
 ⏰ GitHub Actions cron (hourly)
          ↓
-📜 npx tsx scripts/run-scheduled.ts
+📜 bin/run-scheduled
          ↓
 🧠 getScheduledTasks(nowPacificHour())
          ↓
@@ -190,11 +188,8 @@ Pacific before making decisions via `nowPacificHour()`.
 ## 🖥️ CLI Interface
 
 ```bash
-# Run tasks for current Pacific hour (Haskell — active in CI)
-cd haskell && cabal run run-scheduled
-
-# Run tasks for current Pacific hour (TypeScript — fallback)
-npx tsx scripts/run-scheduled.ts
+# Run tasks for current Pacific hour
+bin/run-scheduled
 
 # Simulate a specific Pacific hour (for testing)
 cd haskell && cabal run run-scheduled -- --hour 15
@@ -254,7 +249,7 @@ cd haskell && cabal run run-scheduled -- --task blog-series:chickie-loo
 ## ➕ Adding a New Scheduled Task
 
 1. 📋 Define the task's library function
-2. 🏷️ Add a `TaskId` variant to `scripts/lib/scheduler.ts`
+2. 🏷️ Add a `TaskId` variant to `haskell/src/Automation/Scheduler.hs`
 3. ⏰ Add a `ScheduleEntry` to the `SCHEDULE` array
-4. 🔧 Add a runner function and register it in `TASK_RUNNERS` in `scripts/run-scheduled.ts`
+4. 🔧 Add a runner function and register it in `TASK_RUNNERS` in `haskell/app/RunScheduled.hs`
 5. 🧪 Tests will automatically verify the new task appears in the 24-hour cycle

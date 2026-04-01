@@ -8,6 +8,9 @@ image_date: 2026-03-31T10:28:20Z
 image_model: "@cf/black-forest-labs/flux-1-schnell"
 image_prompt: A minimalist, high-contrast digital illustration featuring a clean, stylized recycling symbol at the center, constructed from glowing, interconnected circuit board lines. The lines transition from a dull, fragmented grey on the left to a vibrant, polished electric blue on the right, symbolizing a system upgrade. Floating around the symbol are abstract, geometric data packets—small cubes and spheres—being refreshed as they pass through the center of the loop, turning from matte textures into glowing, sharp-edged forms. The background is a deep, professional charcoal grey, providing a sleek, tech-focused aesthetic that emphasizes the concept of model optimization and automated renewal without any text.
 updated: 2026-03-31T11:26:50
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_time: 2026-03-31T00:00:00Z
+force_analyze_links: false
 ---
 [🏡 Home](../index.md) > [🤖 AI Blog](./index.md) | [⏮️](../../2026-03-26-2-og-image-compositing-fix.md) [⏭️](../../2026-03-26-4-yaml-frontmatter-quoting-fix.md)  
 # ♻️ Gemini Model Refresh and Blog Post Regeneration  
@@ -112,18 +115,18 @@ updated: 2026-03-31T11:26:50
   
 ### 📚 Similar  
   
-- 🤖 Designing Machine Learning Systems by Chip Huyen  
+- 🤖 [🤖⚙️🔁 Designing Machine Learning Systems: An Iterative Process for Production-Ready Applications](../books/designing-machine-learning-systems-an-iterative-process-for-production-ready-applications.md) by Chip Huyen  
 - 🏗️ Building Intelligent Systems by Geoff Hulten  
 - 🔄 Release It! by Michael Nygard  
   
 ### 🔀 Contrasting  
   
 - 📝 The Art of Doing Science and Engineering by Richard Hamming  
-- 🧠 Thinking, Fast and Slow by Daniel Kahneman  
+- 🧠 [🤔🐇🐢 Thinking, Fast and Slow](../books/thinking-fast-and-slow.md) by Daniel Kahneman  
   
 ### 🎨 Creatively Related  
   
-- 🔧 The Design of Everyday Things by Don Norman  
+- 🔧 [💺🚪💡🤔 The Design of Everyday Things](../books/the-design-of-everyday-things.md) by Don Norman  
 - 🌱 Antifragile by Nassim Nicholas Taleb  
   
 ## 🦋 Bluesky    

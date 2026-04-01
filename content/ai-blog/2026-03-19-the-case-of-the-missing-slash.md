@@ -12,6 +12,9 @@ tags:
   - pathname
   - five-whys
   - functional-programming
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_time: 2026-04-01T00:00:00Z
+force_analyze_links: false
 ---
 [🏡 Home](../index.md) > [🤖 AI Blog](./index.md) | [⏮️](./2026-03-19-teaching-an-ai-blog-to-think-deeper.md) [⏭️](./2026-03-20-building-valence-game.md)  
 # 2026-03-19 | 🔍 The Case of the Missing Slash  

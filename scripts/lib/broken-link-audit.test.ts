@@ -51,39 +51,63 @@ describe("parseSitemapUrls", () => {
 
 describe("extractInternalLinks", () => {
   const siteUrl = "https://bagrounds.org";
+  const pageUrl = "https://bagrounds.org/some-page";
 
   it("extracts absolute internal links", () => {
     const html = `<a href="https://bagrounds.org/books/test">Test</a>`;
-    const links = extractInternalLinks(html, siteUrl);
+    const links = extractInternalLinks(html, siteUrl, pageUrl);
     assert.equal(links.length, 1);
     assert.equal(links[0], "https://bagrounds.org/books/test");
   });
 
-  it("extracts relative internal links", () => {
+  it("extracts root-relative internal links", () => {
     const html = `<a href="/books/test">Test</a>`;
-    const links = extractInternalLinks(html, siteUrl);
+    const links = extractInternalLinks(html, siteUrl, pageUrl);
     assert.equal(links.length, 1);
     assert.equal(links[0], "https://bagrounds.org/books/test");
+  });
+
+  it("extracts dot-relative internal links", () => {
+    const html = `<a href="./other-page">Link</a>`;
+    const links = extractInternalLinks(html, siteUrl, pageUrl);
+    assert.equal(links.length, 1);
+    assert.equal(links[0], "https://bagrounds.org/other-page");
+  });
+
+  it("extracts parent-relative internal links", () => {
+    const subPageUrl = "https://bagrounds.org/reflections/2026-03-31";
+    const html = `<a href="../chickie-loo/entry">Link</a>`;
+    const links = extractInternalLinks(html, siteUrl, subPageUrl);
+    assert.equal(links.length, 1);
+    assert.equal(links[0], "https://bagrounds.org/chickie-loo/entry");
+  });
+
+  it("resolves sibling links from subpages", () => {
+    const subPageUrl = "https://bagrounds.org/reflections/2026-03-31";
+    const html = `<a href="./2026-03-30">Previous</a>`;
+    const links = extractInternalLinks(html, siteUrl, subPageUrl);
+    assert.equal(links.length, 1);
+    assert.equal(links[0], "https://bagrounds.org/reflections/2026-03-30");
   });
 
   it("excludes external links", () => {
     const html = `<a href="https://example.com/page">External</a>
 <a href="/books/test">Internal</a>`;
-    const links = extractInternalLinks(html, siteUrl);
+    const links = extractInternalLinks(html, siteUrl, pageUrl);
     assert.equal(links.length, 1);
     assert.equal(links[0], "https://bagrounds.org/books/test");
   });
 
   it("strips anchors from URLs", () => {
     const html = `<a href="/books/test#chapter-1">Link</a>`;
-    const links = extractInternalLinks(html, siteUrl);
+    const links = extractInternalLinks(html, siteUrl, pageUrl);
     assert.equal(links.length, 1);
     assert.equal(links[0], "https://bagrounds.org/books/test");
   });
 
   it("strips query parameters", () => {
     const html = `<a href="/books/test?page=2">Link</a>`;
-    const links = extractInternalLinks(html, siteUrl);
+    const links = extractInternalLinks(html, siteUrl, pageUrl);
     assert.equal(links.length, 1);
     assert.equal(links[0], "https://bagrounds.org/books/test");
   });
@@ -92,26 +116,32 @@ describe("extractInternalLinks", () => {
     const html = `<a href="/books/test">Link 1</a>
 <a href="/books/test">Link 2</a>
 <a href="/books/test#anchor">Link 3</a>`;
-    const links = extractInternalLinks(html, siteUrl);
+    const links = extractInternalLinks(html, siteUrl, pageUrl);
     assert.equal(links.length, 1);
   });
 
   it("excludes the site root URL", () => {
     const html = `<a href="/">Home</a>`;
-    const links = extractInternalLinks(html, siteUrl);
+    const links = extractInternalLinks(html, siteUrl, pageUrl);
     assert.equal(links.length, 0);
   });
 
   it("strips trailing slashes for normalization", () => {
     const html = `<a href="/books/test/">Link</a>`;
-    const links = extractInternalLinks(html, siteUrl);
+    const links = extractInternalLinks(html, siteUrl, pageUrl);
     assert.equal(links.length, 1);
     assert.equal(links[0], "https://bagrounds.org/books/test");
   });
 
   it("handles empty href gracefully", () => {
     const html = `<a href="">Empty</a><a href="#">Anchor</a>`;
-    const links = extractInternalLinks(html, siteUrl);
+    const links = extractInternalLinks(html, siteUrl, pageUrl);
+    assert.equal(links.length, 0);
+  });
+
+  it("handles javascript: and mailto: hrefs gracefully", () => {
+    const html = `<a href="javascript:void(0)">JS</a><a href="mailto:test@example.com">Email</a>`;
+    const links = extractInternalLinks(html, siteUrl, pageUrl);
     assert.equal(links.length, 0);
   });
 });

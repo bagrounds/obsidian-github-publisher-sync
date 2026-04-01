@@ -29,7 +29,7 @@
          ↓
 📄 For each sampled page:
    ├─ 🌐 fetch(pageUrl) → get HTML
-   ├─ 🔗 extractInternalLinks(html, siteUrl) → find internal hrefs
+   ├─ 🔗 extractInternalLinks(html, siteUrl, pageUrl) → find internal hrefs
    └─ ✅ checkUrl(linkUrl) → HEAD request to verify
          ↓
 📊 Report: broken links, failed pages, totals
@@ -50,7 +50,7 @@
 | 🔧 Function | 📝 Purpose |
 |---|---|
 | `parseSitemapUrls(xml)` | 📋 Extract page URLs from sitemap XML |
-| `extractInternalLinks(html, siteUrl)` | 🔗 Extract same-domain link hrefs from HTML |
+| `extractInternalLinks(html, siteUrl, pageUrl)` | 🔗 Extract same-domain link hrefs from HTML, resolving relative URLs |
 | `randomSample(items, count)` | 🎲 Unbiased Fisher-Yates partial shuffle sampling |
 
 ### 💾 I/O Functions

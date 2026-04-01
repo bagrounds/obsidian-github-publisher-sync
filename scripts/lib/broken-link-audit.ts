@@ -87,35 +87,39 @@ export const fetchSitemapUrls = async (
 
 /**
  * Extract internal link hrefs from an HTML page.
- * Only includes same-domain links (starting with / or the site URL).
- * Strips anchors and query parameters for comparison.
+ * Resolves relative URLs (e.g., ./path, ../path) against the page URL.
+ * Only includes same-domain links. Strips anchors and query parameters.
  */
 export const extractInternalLinks = (
   html: string,
   siteUrl: string,
+  pageUrl: string,
 ): readonly string[] => {
   const hrefRegex = /href="([^"]+)"/g;
   const seen = new Set<string>();
   const links: string[] = [];
+  const normalizedSiteUrl = siteUrl.replace(/\/$/, "");
 
   Array.from(html.matchAll(hrefRegex)).forEach((match) => {
-    const href = (match[1] as string).split("#")[0]?.split("?")[0] ?? "";
-    if (!href) return;
+    const rawHref = match[1] as string;
+    if (!rawHref || rawHref.startsWith("#")) return;
 
-    let absoluteUrl: string;
-    if (href.startsWith("/")) {
-      absoluteUrl = `${siteUrl}${href}`;
-    } else if (href.startsWith(siteUrl)) {
-      absoluteUrl = href;
-    } else {
-      return;
-    }
+    try {
+      const resolved = new URL(rawHref, pageUrl);
+      resolved.hash = "";
+      resolved.search = "";
+      const normalized = resolved.href.replace(/\/$/, "");
 
-    // Normalize: strip trailing slash for consistency
-    const normalized = absoluteUrl.replace(/\/$/, "");
-    if (!seen.has(normalized) && normalized !== siteUrl) {
-      seen.add(normalized);
-      links.push(normalized);
+      if (
+        normalized.startsWith(normalizedSiteUrl) &&
+        normalized !== normalizedSiteUrl &&
+        !seen.has(normalized)
+      ) {
+        seen.add(normalized);
+        links.push(normalized);
+      }
+    } catch {
+      // Invalid URL (e.g., javascript:void(0)), skip
     }
   });
 
@@ -212,7 +216,7 @@ export const runAudit = async (config: AuditConfig): Promise<AuditResult> => {
       }
 
       const html = await response.text();
-      const internalLinks = extractInternalLinks(html, config.siteUrl);
+      const internalLinks = extractInternalLinks(html, config.siteUrl, response.url);
 
       for (const linkUrl of internalLinks) {
         let status: number;

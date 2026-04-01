@@ -8,8 +8,11 @@ Author:
 tags:
 affiliate link: https://amzn.to/4kM2OO4
 updated: 2026-03-20T02:59:18.498Z
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_time: 2026-04-01T00:00:00Z
+force_analyze_links: false
 ---
-[Home](/content/index.md) > [Books](/content/books/index.md)  
+[Home](../index.md) > [Books](./index.md)  
 # 📜 On Writing: A Memoir of the Craft  
 by Stephen King  
 [🛒 On Writing: A Memoir of the Craft. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4kM2OO4)  
@@ -56,7 +59,7 @@ by Stephen King
 **⭐ Prominent Examples:**  
   
 * 👑 King uses his own books, such as 🩸 *Carrie*, 🤕 *Misery*, and 🧍 *The Stand*, as examples to illustrate his writing principles. He dissects scenes 🔪 and explains his thought process 🧠 behind them. 📖  
-* ✍️ He also refers to the works of other authors, such as William Strunk Jr. and E.B. White's 📜 *[The Elements of Style](/content/books/the-elements-of-style.md)*, to support 💪 his arguments about grammar 🔤 and style. 🎨  
+* ✍️ He also refers to the works of other authors, such as William Strunk Jr. and E.B. White's 📜 *[The Elements of Style](./the-elements-of-style.md)*, to support 💪 his arguments about grammar 🔤 and style. 🎨  
 * 💍 The anecdote about his wife Tabitha rescuing the discarded manuscript 📄 of 🩸 *Carrie* from the trash highlights the importance of perseverance 🏃 and belief 🙏 in one's own work. 🗑️➡️🏆  
   
 **💡Practical Takeaways:**  
@@ -83,14 +86,14 @@ by Stephen King
   
 ### 📚 Book Recommendations 📖  
   
-* **Best Alternate Book on the Same Topic:** *[🐦🕊️ Bird by Bird: Some Instructions on Writing and Life](/content/books/bird-by-bird.md)* by Anne Lamott. A similarly insightful and humorous guide to writing, with a focus on overcoming writer's block and embracing imperfection. 🐦  
-* **Best Book That is Tangentially Related:** *[The War of Art](/content/books/the-war-of-art.md)* by Steven Pressfield. Explores the internal resistance that prevents people from pursuing their creative endeavors, and offers strategies for overcoming it. ⚔️  
+* **Best Alternate Book on the Same Topic:** *[🐦🕊️ Bird by Bird: Some Instructions on Writing and Life](./bird-by-bird.md)* by Anne Lamott. A similarly insightful and humorous guide to writing, with a focus on overcoming writer's block and embracing imperfection. 🐦  
+* **Best Book That is Tangentially Related:** *[The War of Art](./the-war-of-art.md)* by Steven Pressfield. Explores the internal resistance that prevents people from pursuing their creative endeavors, and offers strategies for overcoming it. ⚔️  
 * **Best Book That is Diametrically Opposed:** *The Art of Fiction* by David Lodge. A more academic and theoretical approach to fiction writing, focusing on literary techniques and analysis. 👨‍🏫  
 * **Best Fiction Book That Incorporates Related Ideas:** *Misery* by Stephen King. A suspenseful novel about a writer who is held captive by an obsessive fan, exploring themes of creativity, obsession, and the relationship between writers and their audience. 😨  
 * **Best Book That is More General:** *Writing Tools: 50 Essential Strategies for Every Writer* by Roy Peter Clark. A comprehensive guide to writing techniques, covering a wide range of topics and styles. 🛠️  
 * **Best Book That is More Specific:** *Self-Editing for Fiction Writers* by Renni Browne and Dave King. A detailed guide to the self-editing process, with specific techniques for improving plot, character, dialogue, and more. 🔍  
 * **Best Book That is More Rigorous:** *Story: Substance, Structure, Style and the Principles of Screenwriting* by Robert McKee. Though focused on screenwriting, the principles discussed are applicable to various other forms of fiction. The book provides a deep dive into structure and storytelling. 🎬  
-* **Best Book That is More Accessible:** [🌍✍🏿 Everybody Writes: Your Go-To Guide to Creating Ridiculously Good Content](/content/books/everybody-writes.md) by Ann Handley. A straightforward guide with tips for anyone writing online content. 💻  
+* **Best Book That is More Accessible:** [🌍✍🏿 Everybody Writes: Your Go-To Guide to Creating Ridiculously Good Content](./everybody-writes.md) by Ann Handley. A straightforward guide with tips for anyone writing online content. 💻  
   
 ## 💬 [Gemini](https://gemini.google.com) Prompt  
 > Summarize the book: On Writing. Start with a TL;DR - a single statement that conveys a maximum of the useful information provided in the book. Next, explain how this book may offer a new or surprising perspective. Follow this with a deep dive. Catalogue the topics, methods, and research discussed. Be sure to highlight any significant theories, theses, or mental models proposed. Summarize prominent examples discussed. Emphasize practical takeaways, including detailed, specific, concrete, step-by-step advice, guidance, or techniques discussed. Provide a critical analysis of the quality of the information presented, using scientific backing, author credentials, authoritative reviews, and other markers of high quality information as justification. Make the following additional book recommendations: the best alternate book on the same topic; the best book that is tangentially related; the best book that is diametrically opposed; the best fiction book that incorporates related ideas; the best book that is more general or more specific; and the best book that is more rigorous or more accessible than this book. Format your response as markdown, starting at heading level H3, with inline links, for easy copy paste. Use meaningful emojis generously (at least one per heading, bullet point, and paragraph) to enhance readability. Do not include broken links or links to commercial sites.  

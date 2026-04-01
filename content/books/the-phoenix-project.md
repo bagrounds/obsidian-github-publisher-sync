@@ -8,8 +8,11 @@ Author:
 tags:
 affiliate link: https://amzn.to/4jzdwqd
 updated: 2026-03-10T12:11:58.317Z
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_time: 2026-03-31T00:00:00Z
+force_analyze_links: false
 ---
-[Home](/content/index.md) > [Books](/content/books/index.md)  
+[Home](../index.md) > [Books](./index.md)  
 # 🐦‍🔥💻 The Phoenix Project  
 [🛒 The Phoenix Project. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4jzdwqd)  
   
@@ -72,12 +75,12 @@ updated: 2026-03-10T12:11:58.317Z
 * The book draws from established theories like the Theory of Constraints and Lean manufacturing, providing a solid foundation for its recommendations. ⛓️  
   
 ### **Book Recommendations 📚**  
-* **Best Alternate Book on the Same Topic:** "[The DevOps Handbook](/content/books/the-devops-handbook.md): How to Create World-Class Agility, Reliability, and Security in Technology Organizations" by Gene Kim, Patrick Debois, John Willis, and Jez Humble. This book provides a more detailed and technical explanation of DevOps principles and practices. 📖  
-* **Best Tangentially Related Book:** "[Accelerate](/content/books/accelerate.md): The Science of Lean Software and DevOps: Building and Scaling High Performing Technology Organizations" by Nicole Forsgren, Jez Humble, and Gene Kim. This book provides scientific evidence supporting the benefits of DevOps practices. 📊  
-* **Best Diametrically Opposed Book:** [🦄👤🗓️ The Mythical Man-Month: Essays on Software Engineering](/content/books/the-mythical-man-month.md) by Frederick P. Brooks Jr. While a classic, it represents a more traditional, waterfall-oriented approach to software development, contrasting with the agile and DevOps principles advocated in The Phoenix Project.  
-* **Best Fiction Book That Incorporates Related Ideas:** [☄️🧑‍🚀🙏🌍 Project Hail Mary](/content/books/project-hail-mary.md) by Andy Weir. While not directly about IT, it showcases problem-solving, collaboration, and resource management under extreme pressure, reflecting some core themes of "The Phoenix Project." 🚀  
+* **Best Alternate Book on the Same Topic:** "[The DevOps Handbook](./the-devops-handbook.md): How to Create World-Class Agility, Reliability, and Security in Technology Organizations" by Gene Kim, Patrick Debois, John Willis, and Jez Humble. This book provides a more detailed and technical explanation of DevOps principles and practices. 📖  
+* **Best Tangentially Related Book:** "[Accelerate](./accelerate.md): The Science of Lean Software and DevOps: Building and Scaling High Performing Technology Organizations" by Nicole Forsgren, Jez Humble, and Gene Kim. This book provides scientific evidence supporting the benefits of DevOps practices. 📊  
+* **Best Diametrically Opposed Book:** [🦄👤🗓️ The Mythical Man-Month: Essays on Software Engineering](./the-mythical-man-month.md) by Frederick P. Brooks Jr. While a classic, it represents a more traditional, waterfall-oriented approach to software development, contrasting with the agile and DevOps principles advocated in The Phoenix Project.  
+* **Best Fiction Book That Incorporates Related Ideas:** [☄️🧑‍🚀🙏🌍 Project Hail Mary](./project-hail-mary.md) by Andy Weir. While not directly about IT, it showcases problem-solving, collaboration, and resource management under extreme pressure, reflecting some core themes of "The Phoenix Project." 🚀  
 * **Best Book That Is More General:** "The Goal: A Process of Ongoing Improvement" by Eliyahu M. Goldratt. This is the original book describing the Theory of Constraints, the core of the Phoenix Project. ⛓️  
-* **Best Book That Is More Specific:** "[Site Reliability Engineering](/content/books/site-reliability-engineering.md): How Google Runs Production Systems" by Betsy Beyer, Chris Jones, Jennifer Petoff, and Niall Richard Murphy. This book provides a detailed look at how Google implements SRE practices, offering a more specific and technical perspective on IT operations. ⚙️  
+* **Best Book That Is More Specific:** "[Site Reliability Engineering](./site-reliability-engineering.md): How Google Runs Production Systems" by Betsy Beyer, Chris Jones, Jennifer Petoff, and Niall Richard Murphy. This book provides a detailed look at how Google implements SRE practices, offering a more specific and technical perspective on IT operations. ⚙️  
 * **Best Book That Is More Rigorous:** "Lean Enterprise: How High-Performance Organizations Innovate at Scale" by Jez Humble, Joanne Molesky, and Barry O'Reilly. This book provides a more rigorous and comprehensive framework for applying Lean principles to enterprise-level software development. 📈  
 * **Best Book That Is More Accessible:** "It's Not Luck" by Eliyahu M. Goldratt. This book is a business novel that continues the story and lessons of "The Goal" but is written in a more accessible and conversational style. 💬  
   

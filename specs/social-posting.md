@@ -41,7 +41,7 @@
 🔧 If the frontmatter URL returns a 404, the system derives the correct URL from the file path using `urlFromFilePath` (format: `https://bagrounds.org/{relative-path-without-.md}`).
 🔄 If the file-path-derived URL differs from the frontmatter URL and is live, the frontmatter `URL` property is automatically updated via `updateFrontmatterUrl` and the corrected note proceeds to posting.
 🚫 If both the frontmatter URL and the file-path-derived URL return 404, the note is skipped but BFS still follows its links to discover other content.
-📋 URL validation is injected into `FindContentConfig` via the optional `fccPublicationChecker` callback, matching the TypeScript `isPublished` pattern.
+📋 URL validation is injected into `FindContentConfig` via the optional `fccPublicationChecker` callback.
 ⚡ URL checks are only performed on notes that pass all other content filters (postable and eligible), avoiding unnecessary HTTP requests during BFS traversal.
 
 ## 🤖 Post Text Generation
@@ -76,12 +76,12 @@
 
 | 🧩 Component | 📂 Path | 📝 Purpose |
 |---|---|---|
-| 🐦 Twitter | `scripts/lib/platforms/twitter.ts` | 📤 Twitter v2 API posting with idempotency keys and oEmbed fallback |
-| 🦋 Bluesky | `scripts/lib/platforms/bluesky.ts` | 📤 AT Protocol posting with rich link cards and thumbnail uploads |
-| 🐘 Mastodon | `scripts/lib/platforms/mastodon.ts` | 📤 Mastodon REST API posting with iframe embed fallback |
-| 🔍 OG Metadata | `scripts/lib/platforms/og-metadata.ts` | 🌐 OpenGraph metadata extraction for link card generation |
-| 📝 Embed Sections | `scripts/lib/embed-section.ts` | 🔧 Higher-order section builders for embed markdown |
-| ✂️ Text Fitting | `scripts/lib/text.ts` | 📏 Unicode-aware text fitting with five progressive strategies |
+| 🐦 Twitter | `haskell/src/Automation/Platforms/Twitter.hs` | 📤 Twitter v2 API posting with idempotency keys and oEmbed fallback |
+| 🦋 Bluesky | `haskell/src/Automation/Platforms/Bluesky.hs` | 📤 AT Protocol posting with rich link cards and thumbnail uploads |
+| 🐘 Mastodon | `haskell/src/Automation/Platforms/Mastodon.hs` | 📤 Mastodon REST API posting with iframe embed fallback |
+| 🔍 OG Metadata | `haskell/src/Automation/Platforms/OgMetadata.hs` | 🌐 OpenGraph metadata extraction for link card generation |
+| 📝 Embed Sections | `haskell/src/Automation/EmbedSection.hs` | 🔧 Higher-order section builders for embed markdown |
+| ✂️ Text Fitting | `haskell/src/Automation/Text.hs` | 📏 Unicode-aware text fitting with five progressive strategies |
 
 ### 🔄 Data Flow
 
@@ -136,7 +136,7 @@
 🔁 Uses UUID-based Idempotency-Key headers for retry safety against duplicate posts.
 🖼️ Embed generation tries the instance's oEmbed endpoint first, then falls back to an iframe-based embed.
 🔧 Pure URL parsing functions extract instance URL, status ID, and username from post URLs.
-🏗️ Haskell implementation in `haskell/src/Automation/Platforms/Mastodon.hs` follows the same error handling patterns as the Twitter module, using `Either Text` return types and `HttpCodeException` for transient failure retry.
+🏗️ The `haskell/src/Automation/Platforms/Mastodon.hs` module follows the same error handling patterns as the Twitter module, using `Either Text` return types and `HttpCodeException` for transient failure retry.
 🔌 All IO functions accept a `Manager` parameter for HTTP connection pooling.
 
 ## 🔍 OpenGraph Metadata Extraction
@@ -222,14 +222,14 @@
 
 ## 🧪 Testing
 
-🔬 Tests in `scripts/lib/text.test.ts` with 29 test cases covering:
+🔬 Tests in `haskell/test/Automation/TextTest.hs` with 29 test cases covering:
 - 📏 `countGraphemes`: ASCII, emoji, flags, mixed, family emoji, accented characters
 - ✂️ `truncateToGraphemeLimit`: unchanged, at limit, truncation with ellipsis, emoji edge cases
 - 📐 `calculateTweetLength`: plain text, single URL, multiple URLs, empty input
 - ✅ `validateTweetLength`: short text, at 280, over 280
 - 🎯 `fitPostToLimit`: unchanged, tag removal, URL preservation, full strategy cascade
 
-🔬 Tests in `scripts/lib/embed-section.test.ts` with 9 test cases covering:
+🔬 Tests in `haskell/test/Automation/EmbedSectionTest.hs` with 9 test cases covering:
 - 🔧 `createSectionBuilder`: header inclusion, newline handling
 - 📝 Platform builders: correct header assignment for all three platforms
 - 🛡️ `createSectionAppender`: file append and idempotency check

@@ -7,7 +7,7 @@
 
 ## 📦 Components
 
-### 📄 Frontmatter (scripts/lib/frontmatter.ts, haskell/src/Automation/Frontmatter.hs)
+### 📄 Frontmatter (`haskell/src/Automation/Frontmatter.hs`)
 
 - 🔍 parseFrontmatter extracts YAML key-value pairs from markdown content between triple-dash delimiters
 - 📖 readReflection reads a daily reflection file and detects social media section presence
@@ -19,8 +19,7 @@
 
 - 📐 YamlValue is a sum type with two constructors: YamlText for double-quoted strings and YamlBool for native YAML booleans
 - 🔐 renderYamlValue serializes values according to the YAML 1.2 specification: strings are always double-quoted with proper escaping, booleans render as unquoted true or false
-- 🧩 Single source of truth: all Haskell modules import YamlValue and renderYamlValue from Automation.Frontmatter
-- 🔄 TypeScript uses js-yaml library with typed values (string or boolean or null) for equivalent behavior
+- 🧩 Single source of truth: all modules import YamlValue and renderYamlValue from Automation.Frontmatter
 - ⚠️ Never construct YAML key-value lines without rendering values through renderYamlValue or quoteYamlValue
 
 ### 🧹 YAML Sanitization (sanitizeForYaml)
@@ -31,7 +30,7 @@
 - 📏 Collapses multiple spaces and trims whitespace
 - 🔧 Applied to image prompts and other AI-generated content before quoting
 
-### 🌍 Environment (scripts/lib/env.ts)
+### 🌍 Environment (`haskell/src/Automation/Env.hs`)
 
 - ✅ validateEnvironment validates and constructs configuration from environment variables
 - 🚫 isPlatformDisabled checks if a platform is disabled via env var (true, 1, yes)
@@ -39,19 +38,19 @@
 - 🔑 Requires GEMINI_API_KEY, OBSIDIAN_AUTH_TOKEN, OBSIDIAN_VAULT_NAME
 - 🔧 Optionally loads Twitter, Bluesky, and Mastodon credentials
 
-### 🏷️ HTML (scripts/lib/html.ts)
+### 🏷️ HTML (`haskell/src/Automation/Html.hs`)
 
 - 🔒 escapeHtml escapes ampersand, angle brackets, quotes, and single quotes
 - 📝 textToHtml replaces newlines with br tags after escaping
 - 📅 formatDisplayDate converts YYYY-MM-DD to human-readable format like March 10, 2026
 
-### ⏱️ Timer (scripts/lib/timer.ts)
+### ⏱️ Timer (`haskell/src/Automation/Timer.hs`)
 
 - 📊 PipelineTimer tracks multiple timed entries with start and end timestamps
 - 🔧 timerStart, timerEnd, and timerTime control timer lifecycle
 - 📈 printTimerSummary displays formatted timing with duration and percentage of total
 
-### 🔄 Pipeline (scripts/lib/pipeline.ts)
+### 🔄 Pipeline (`haskell/src/Automation/Pipeline.hs`)
 
 - 📋 Pipeline data type represents a sequence of processing steps
 - 🔧 runPipeline executes steps in sequence

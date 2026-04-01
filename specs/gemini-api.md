@@ -11,11 +11,11 @@
 
 ### 📦 Components
 
-- 📚 Gemini Client at scripts/lib/gemini.ts provides content generation with model fallback
-- 🔐 GCP Auth at scripts/lib/gcp-auth.ts handles JWT creation and OAuth token exchange
-- 📊 Quota Checker at scripts/lib/gemini-quota.ts fetches model catalog and quota info
-- 🔄 Retry at scripts/lib/retry.ts provides exponential backoff for transient HTTP errors
-- ⏱️ Timer at scripts/lib/timer.ts tracks pipeline timing for performance monitoring
+- 📚 Gemini Client at haskell/src/Automation/Gemini.hs provides content generation with model fallback
+- 🔐 GCP Auth at haskell/src/Automation/GcpAuth.hs handles JWT creation and OAuth token exchange
+- 📊 Quota Checker at haskell/src/Automation/GeminiQuota.hs fetches model catalog and quota info
+- 🔄 Retry at haskell/src/Automation/Retry.hs provides exponential backoff for transient HTTP errors
+- ⏱️ Timer at haskell/src/Automation/Timer.hs tracks pipeline timing for performance monitoring
 
 ### 🔄 Data Flow
 

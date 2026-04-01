@@ -14,11 +14,9 @@
 
 | 🧩 Component | 📂 Path | 📝 Purpose |
 |---|---|---|
-| 🔗 Library (TS) | `scripts/lib/internal-linking.ts` | 🔧 BFS traversal, Gemini identification, wikilink insertion, frontmatter tracking |
-| 🔗 Library (HS) | `haskell/src/Automation/InternalLinking.hs` | 🔧 Haskell port with equivalent functionality |
-| 🧪 Tests (TS) | `scripts/lib/internal-linking.test.ts` | ✅ 160+ tests covering all pure functions and logic |
-| 🧪 Tests (HS) | `haskell/test/Automation/InternalLinkingTest.hs` | ✅ Haskell test suite with equivalent coverage |
-| ⏰ Scheduler entry | `scripts/lib/scheduler.ts` | 📅 Internal linking task scheduled in the pipeline |
+| 🔗 Library | `haskell/src/Automation/InternalLinking.hs` | 🔧 BFS traversal, Gemini identification, wikilink insertion, frontmatter tracking |
+| 🧪 Tests | `haskell/test/Automation/InternalLinkingTest.hs` | ✅ 160+ tests covering all pure functions and logic |
+| ⏰ Scheduler entry | `haskell/src/Automation/Scheduler.hs` | 📅 Internal linking task scheduled in the pipeline |
 
 ### 🔄 Data Flow
 
@@ -131,7 +129,7 @@
 
 ## 🧪 Testing
 
-🔬 Tests in `scripts/lib/internal-linking.test.ts` with 160+ test cases across 36+ suites covering:
+🔬 Tests in `haskell/test/Automation/InternalLinkingTest.hs` with 160+ test cases across 36+ suites covering:
 - 🧹 `stripEmojis`: emoji removal, preservation of non-emoji text, edge cases
 - 🛡️ `escapeRegex`: special character escaping
 - 🔗 `formatWikilink`: wikilink formatting from content entries
@@ -146,4 +144,4 @@
 - 📖 Subtitle matching: on-the-fly main title extraction, full title preference, full title in wikilink, protected region respect
 - 🤖 `buildIdentificationPrompt`: also-known-as annotations for subtitle entries
 
-🔬 Haskell tests in `haskell/test/Automation/InternalLinkingTest.hs` with equivalent coverage.
+🔬 Haskell tests in `haskell/test/Automation/InternalLinkingTest.hs` with comprehensive coverage.

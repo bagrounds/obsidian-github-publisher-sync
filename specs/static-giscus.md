@@ -10,10 +10,8 @@
 
 ### 📦 Components
 
-- 📚 TypeScript library at scripts/lib/static-giscus.ts provides comment fetching, rendering, and injection
-- 🖥️ TypeScript CLI at scripts/inject-static-giscus.ts runs as a standalone entry point
-- 🦀 Haskell library at haskell/src/Automation/StaticGiscus.hs provides the same logic for the compiled binary
-- 🖥️ Haskell binary inject-giscus at haskell/app/InjectGiscus.hs is used by the deploy workflow
+- 📚 Haskell library at haskell/src/Automation/StaticGiscus.hs provides comment fetching, rendering, and injection
+- 🖥️ Haskell binary inject-giscus at haskell/app/InjectGiscus.hs runs as the deploy workflow entry point
 
 ### 🔄 Data Flow
 

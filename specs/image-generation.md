@@ -420,9 +420,9 @@ Image name: chickie-loo-2026-03-22-weekly-recap.jpg
 
 ### 📦 Module Overview
 
-🔧 The Haskell module `Automation.BlogImage` is a complete port of the TypeScript `scripts/lib/blog-image.ts`. It provides the same functionality using idiomatic Haskell patterns with strong static types.
+🔧 The Haskell module `Automation.BlogImage` provides image generation functionality using idiomatic Haskell patterns with strong static types.
 
-### 🏗️ Key Differences from TypeScript
+### 🏗️ Key Design Decisions
 
 1. 🧩 **Manager parameter** — All HTTP functions accept an `http-client` `Manager` explicitly rather than using global fetch
 2. 📋 **`Map Text Text`** — Environment variables are passed as a strict `Map` rather than a `Record`

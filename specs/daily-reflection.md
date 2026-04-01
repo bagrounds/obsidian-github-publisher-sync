@@ -12,16 +12,15 @@
 
 | 🧩 Component | 📂 Path | 📝 Purpose |
 |---|---|---|
-| 📚 Library | `scripts/lib/daily-reflection.ts` | 🔧 Pure functions for reflection creation and post link insertion |
-| 🧪 Tests | `scripts/lib/daily-reflection.test.ts` | ✅ 40 tests covering all pure and I/O functions |
-| 🔌 Integration | `scripts/generate-blog-post.ts` | 📝 Calls reflection update after generating a post |
-| 🖥️ CLI | `scripts/update-daily-reflection.ts` | 🚀 Standalone entry point for manual use |
+| 📚 Library | `haskell/src/Automation/DailyReflection.hs` | 🔧 Pure functions for reflection creation and post link insertion |
+| 🧪 Tests | `haskell/test/Automation/DailyReflectionTest.hs` | ✅ 40 tests covering all pure and I/O functions |
+| 🔌 Integration | `haskell/app/RunScheduled.hs` | 📝 Calls reflection update after generating a post |
 | ⚙️ Workflow | `.github/workflows/scheduled.yml` | 🤖 Consolidated hourly cron (runs all blog series) |
 
 ### 🔄 Data Flow
 
 ```
-📝 generate-blog-post.ts
+📝 RunScheduled.hs (blog generation)
          ↓
 🤖 Generate blog post (Gemini AI)
          ↓
@@ -120,13 +119,13 @@ tags:
 
 🌎 All reflection dates use Pacific time via `todayPacific()`. Reflections must never be created for a date after today in Pacific time.
 
-🛡️ The `runBackfillImages` task derives dates from ai-blog filenames (via `extractPostDate`). Because filenames may be committed with UTC dates that are ahead of Pacific time, both the Haskell and TypeScript implementations filter out any date that exceeds today Pacific before linking to the reflection.
+🛡️ The `runBackfillImages` task derives dates from ai-blog filenames (via `extractPostDate`). Because filenames may be committed with UTC dates that are ahead of Pacific time, the Haskell implementation filters out any date that exceeds today Pacific before linking to the reflection.
 
 🤖 AI blog posts are linked using the same `insertPostLink` mechanism as blog series, creating a dedicated `## [[ai-blog/index|🤖 AI Blog]]` section rather than placing links in the Updates section.
 
 ## ⚙️ Workflow Integration
 
-🔌 The daily reflection update is integrated directly into `generate-blog-post.ts` and runs automatically when Obsidian vault credentials are available as environment variables.
+🔌 The daily reflection update is integrated directly into the blog generation task in `RunScheduled.hs` and runs automatically when Obsidian vault credentials are available as environment variables.
 
 🔑 When `OBSIDIAN_AUTH_TOKEN` and `OBSIDIAN_VAULT_NAME` are set, the script:
 1. 📥 Pulls the vault via `syncObsidianVault`
@@ -137,13 +136,11 @@ tags:
 
 📎 The script also writes the exact post path to `$GITHUB_OUTPUT` so downstream workflow steps reference the precise file — no glob-based filename guessing.
 
-🖥️ The standalone CLI (`scripts/update-daily-reflection.ts`) remains available for manual use.
-
 ### ➕ Adding a New Series
 
 🆕 To add a new blog series with automatic reflection updates:
-1. 📋 Add a `BlogSeriesConfig` entry to `scripts/lib/blog-series-config.ts`
-2. ⚙️ Add a `BlogSeriesRunConfig` entry in `scripts/lib/scheduler.ts` and a schedule entry
+1. 📋 Add a `BlogSeriesConfig` entry to `haskell/src/Automation/BlogSeriesConfig.hs`
+2. ⚙️ Add a `BlogSeriesRunConfig` entry in `haskell/src/Automation/Scheduler.hs` and a schedule entry
 3. ✅ The reflection update comes for free — no additional configuration needed
 
 ## 🧪 Testing

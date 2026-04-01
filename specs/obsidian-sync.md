@@ -14,8 +14,7 @@
 
 | 🧩 Component | 📂 Path | 📝 Purpose |
 |---|---|---|
-| 📱 Sync Library (TS) | `scripts/lib/obsidian-sync.ts` | 🔧 Vault sync, push, lock management, embed appending |
-| 📱 Sync Library (HS) | `haskell/src/Automation/ObsidianSync.hs` | 🔧 Haskell implementation with identical safeguards |
+| 📱 Sync Library | `haskell/src/Automation/ObsidianSync.hs` | 🔧 Vault sync, push, lock management, embed appending |
 
 ### 🔄 Data Flow — Scheduled Run
 

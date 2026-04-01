@@ -14,10 +14,8 @@
 
 | 🧩 Component | 📂 Path | 📝 Purpose |
 |---|---|---|
-| 📚 Library (TS) | `scripts/lib/daily-updates.ts` | 🔧 Pure functions for building and inserting update links |
-| 📚 Library (HS) | `haskell/src/Automation/DailyUpdates.hs` | 🔧 Haskell implementation with categorized sub-sections |
-| 🧪 Tests (TS) | `scripts/lib/daily-updates.test.ts` | ✅ Tests covering all pure and I/O functions |
-| 🧪 Tests (HS) | `haskell/test/Automation/DailyUpdatesTest.hs` | ✅ Haskell tests covering categorized update links |
+| 📚 Library | `haskell/src/Automation/DailyUpdates.hs` | 🔧 Pure functions for building and inserting update links with categorized sub-sections |
+| 🧪 Tests | `haskell/test/Automation/DailyUpdatesTest.hs` | ✅ Tests covering categorized update links |
 | 🔌 Consumers | `haskell/src/Automation/SocialPosting.hs` | 📢 Adds update links to specific posted pages after social media posting |
 | 🔌 Consumers | `haskell/app/RunScheduled.hs` | 🖼️🔗 Adds update links after backfill-blog-images and internal-linking |
 
@@ -124,13 +122,7 @@
 
 ## 🧪 Testing
 
-🔬 TypeScript tests in `scripts/lib/daily-updates.test.ts` covering:
-- 🔗 `buildUpdateLink`: link formatting with various paths and titles
-- 📎 `addUpdateLinks`: new section creation, appending to existing section, duplicate skipping
-- 📄 `extractTitleFromFile`: frontmatter title extraction, H1 fallback, missing title handling
-- 🎯 `addUpdateLinksToReflection`: end-to-end orchestration with filesystem
-
-🔬 Haskell tests in `haskell/test/Automation/DailyUpdatesTest.hs` covering:
+🔬 Tests in `haskell/test/Automation/DailyUpdatesTest.hs` covering:
 - 📂 `categorySubHeader`: correct emoji sub-headings for each category
 - 📎 `addUpdateLinks`: new section creation with sub-headers, appending sub-sections, inserting into existing sub-sections, duplicate skipping, multiple categories, content preservation, property-based testing
 - 🎯 `addUpdateLinksToReflection`: end-to-end orchestration with filesystem, idempotency, multiple categories

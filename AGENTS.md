@@ -64,5 +64,5 @@ URL: https://bagrounds.org/ai-blog/2026-03-08-auto-post-mastodon
 ## Obsidian Vault is the Source of Truth
 - 📱 The `content/` directory is a **read-only one-way sync** from the Obsidian vault on the user's phone. Never write to `content/` from GitHub Actions or scripts.
 - 🚫 Never commit to the git repo from a GHA workflow. There is no reason to do this today.
-- 🔄 All generated content (blog posts, images, attachments, updated frontmatter) must be persisted by syncing to the Obsidian vault using `scripts/sync-file-to-obsidian.ts` or `scripts/lib/obsidian-sync.ts`.
+- 🔄 All generated content (blog posts, images, attachments, updated frontmatter) must be persisted by syncing to the Obsidian vault using the Haskell `Automation.ObsidianSync` module (via the `run-scheduled` binary).
 - 🔒 GHA workflows should use `contents: read` permissions — never `contents: write`.

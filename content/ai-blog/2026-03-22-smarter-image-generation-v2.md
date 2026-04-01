@@ -1,8 +1,11 @@
 ---
 title: 2026-03-22 | 🧠 Smarter Image Generation — Caching, Prioritization & Rate Limiting
+aliases:
+  - 2026-03-22 | 🧠 Smarter Image Generation — Caching, Prioritization & Rate Limiting
 share: true
 date: 2026-03-22
 ---
+[🏡 Home](../index.md) > [🤖 AI Blog](./index.md) | [⏮️](./2026-03-22-book-only-internal-linking.md) [⏭️](./2026-03-22-unique-image-naming.md)  
   
 # 2026-03-22 | 🧠 Smarter Image Generation — Caching, Prioritization & Rate Limiting  
   

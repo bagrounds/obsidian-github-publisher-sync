@@ -75,3 +75,23 @@
 - 📋 `parseSitemapUrls`: XML parsing, empty sitemaps, index filtering
 - 🔗 `extractInternalLinks`: absolute/relative links, external exclusion, anchor/query stripping, deduplication, normalization
 - 🎲 `randomSample`: correct size, overflow handling, uniqueness, immutability
+
+## 🐛 Known Broken Link Patterns (RCA 2026-04-01)
+
+### 📂 Category 1: `/content/` prefix in markdown links (~9,170 instances)
+
+🔍 **Symptom**: Links resolve to URLs like `bagrounds.org/books/content/books/spark` (404) instead of `bagrounds.org/books/spark`.
+
+🔗 **Root Cause**: Gemini-generated content (book reports, topic pages, reflections) contains markdown links with filesystem-style `/content/` prefix paths (e.g., `[Home](/content/index.md)`). Quartz's `transformInternalLink()` treats these as relative paths, preserving the spurious `content` segment. The browser then resolves `./content/books/spark` relative to the current page directory, producing a nonexistent URL.
+
+📊 **Scope**: ~9,170 markdown links across books, articles, reflections, topics, and videos directories. Breadcrumb navigation alone accounts for ~1,794 instances.
+
+💡 **Recommended Fix**: Add a Quartz build-time transformer that strips the `/content/` prefix from markdown link targets before CrawlLinks processes them. This fixes all links without modifying the read-only Obsidian vault.
+
+### 🔢 Category 2: Missing sequence number in ai-blog URLs (1 instance)
+
+🔍 **Symptom**: Link to `bagrounds.org/ai-blog/2026-03-29-expanding-haskell-test-coverage` returns 404. Actual page is at `bagrounds.org/ai-blog/2026-03-29-2-expanding-haskell-test-coverage`.
+
+🔗 **Root Cause**: The ai-blog convention strips the daily sequence number from the frontmatter `URL` field to produce cleaner permalinks. However, Quartz generates page slugs from filenames (which include the sequence number), not from the frontmatter URL. Pages linking via the frontmatter URL produce 404s.
+
+💡 **Recommended Fix**: Either include the sequence number in the frontmatter URL, or configure Quartz aliases to redirect from the clean URL to the filename-based slug.

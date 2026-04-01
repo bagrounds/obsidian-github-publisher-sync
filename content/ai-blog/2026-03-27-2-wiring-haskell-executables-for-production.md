@@ -7,6 +7,9 @@ date: 2026-03-27
 image_date: 2026-03-30T18:24:40Z
 image_model: "@cf/black-forest-labs/flux-1-schnell"
 image_prompt: A stylized, high-contrast isometric illustration featuring a glowing, translucent Haskell lambda symbol floating as a central hub. From this hub, several thick, neon-blue data cables extend outward, connecting to modular, abstract server blocks. Some blocks are fully illuminated, representing the functional RunScheduled and InjectGiscus tasks, while others are dim and semi-transparent, representing the stubbed or pending tasks. In the foreground, a small, glowing terminal window shows a simplified green command-line cursor. The background is a deep, professional charcoal grey with subtle grid lines, evoking a clean, modern production environment. The overall aesthetic is minimalist and technical, utilizing a palette of electric blue, soft white, and dark matte tones to emphasize the concept of wiring and system integration.
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_time: 2026-03-31T00:00:00Z
+force_analyze_links: false
 ---
 [🏡 Home](../index.md) > [🤖 AI Blog](./index.md) | [⏮️](./2026-03-27-14-taming-the-ci-stampede.md) [⏭️](./2026-03-27-3-porting-image-generation-pipeline-to-haskell.md)  
   
@@ -78,7 +81,7 @@ image_prompt: A stylized, high-contrast isometric illustration featuring a glowi
 - 📖 Haskell in Depth by Vitaly Bragilevsky  
   
 #### 🔄 Contrasting  
-- 📖 Continuous Delivery by Jez Humble and David Farley  
+- 📖 [🏗️🧪🚀✅ Continuous Delivery: Reliable Software Releases through Build, Test, and Deployment Automation](../books/continuous-delivery.md) by Jez Humble and David Farley  
 - 📖 Infrastructure as Code by Kief Morris  
   
 #### 🎨 Creatively Related  

@@ -10,7 +10,7 @@ on:
         required: false
         type: string
       hour:
-        description: "Simulate a specific UTC hour (0-23) instead of using the current time"
+        description: "Simulate a specific Pacific hour (0-23) instead of using the current time"
         required: false
         type: string
 

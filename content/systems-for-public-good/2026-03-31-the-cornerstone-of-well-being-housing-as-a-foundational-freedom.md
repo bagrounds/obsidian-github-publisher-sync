@@ -13,7 +13,7 @@ link_analysis_time: 2026-03-31T00:00:00Z
 force_analyze_links: false
 updated: 2026-03-31T23:17:54
 ---
-[Home](../index.md) > [🏛️ Systems for Public Good](./index.md) | [⏮️](./2026-03-30-safeguarding-collective-well-being-public-health-as-a-foundational-freedom.md)  
+[Home](../index.md) > [🏛️ Systems for Public Good](./index.md) | [⏮️](./2026-03-30-safeguarding-collective-well-being-public-health-as-a-foundational-freedom.md) [⏭️](./2026-04-01-expanding-housing-abundance-beyond-traditional-models.md)  
 # 2026-03-31 | 🏛️ 🏡 The Cornerstone of Well-being: Housing as a Foundational Freedom 🏛️  
 ![systems-for-public-good-2026-03-31-the-cornerstone-of-well-being-housing-as-a-foundational-freedom](../systems-for-public-good-2026-03-31-the-cornerstone-of-well-being-housing-as-a-foundational-freedom.jpg)  
   

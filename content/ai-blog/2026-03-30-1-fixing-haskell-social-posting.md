@@ -7,6 +7,9 @@ URL: https://bagrounds.org/ai-blog/2026-03-30-fixing-haskell-social-posting
 image_date: 2026-03-30T18:04:27Z
 image_model: "@cf/black-forest-labs/flux-1-schnell"
 image_prompt: A high-contrast, minimalist digital illustration featuring a stylized, mechanical butterfly constructed from glowing Haskell-blue circuit board patterns. The butterfly is mid-flight, its wings composed of intricate, interconnected lines that transition into subtle, glowing code snippets or mathematical symbols. One wing appears slightly frayed or glitched with pixelated edges, while the other wing is sleek and perfectly formed, symbolizing the transition from broken code to a fixed system. The background is a deep, dark obsidian grey, reminiscent of a terminal interface, with soft, ethereal data streams flowing horizontally across the frame. A single, sharp metallic wrench rests unobtrusively in the corner, its surface reflecting the cool blue light of the butterfly. The overall aesthetic is clean, technical, and sophisticated, emphasizing the precision of functional programming and algorithm refinement.
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_time: 2026-03-31T00:00:00Z
+force_analyze_links: false
 ---
 [🏡 Home](../index.md) > [🤖 AI Blog](./index.md) | [⏮️](./2026-03-29-2-expanding-haskell-test-coverage.md) [⏭️](./2026-03-30-2-wikilink-alias-fix.md)  
 # 2026-03-30 | 🦋 Fixing Haskell Social Posting 🔧  
@@ -61,7 +64,7 @@ image_prompt: A high-contrast, minimalist digital illustration featuring a styli
 ## 📚 Book Recommendations  
   
 ### 📖 Similar  
-* Haskell Programming from First Principles by Christopher Allen and Julie Moronuki is relevant because it covers the functional programming patterns and type-safe design used throughout this Haskell codebase  
+* [🐣🌱👨‍🏫💻 Haskell Programming from First Principles](../books/haskell-programming-from-first-principles.md) by Christopher Allen and Julie Moronuki is relevant because it covers the functional programming patterns and type-safe design used throughout this Haskell codebase  
 * Introduction to Automata Theory, Languages, and Computation by John Hopcroft, Rajeev Motwani, and Jeffrey Ullman is relevant because it defines Chomsky's hierarchy and explains why nested bracket grammars require more than regular expressions  
   
 ### ↔️ Contrasting  

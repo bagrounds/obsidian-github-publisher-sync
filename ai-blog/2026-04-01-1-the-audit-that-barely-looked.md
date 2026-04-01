@@ -47,7 +47,7 @@ URL: https://bagrounds.org/ai-blog/2026-04-01-the-audit-that-barely-looked
 ## 📚 Book Recommendations
 
 ### 📖 Similar
-* Release It! by Michael T. Nylund is relevant because it covers designing systems that monitor themselves effectively, including the kind of post-deploy verification this audit performs.
+* Release It! by Michael T. Nygard is relevant because it covers designing systems that monitor themselves effectively, including the kind of post-deploy verification this audit performs.
 * A Philosophy of Software Design by John Ousterhout is relevant because it emphasizes choosing the right abstraction level, exactly the lesson of using URL resolution instead of manual string matching.
 
 ### ↔️ Contrasting

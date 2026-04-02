@@ -8,8 +8,11 @@ Author:
 tags:
 affiliate link: https://amzn.to/3T980zy
 CTA: 🕊️ Practice empathy.
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_time: 2026-04-02T00:00:00Z
+force_analyze_links: false
 ---
-[Home](/content/index.md) > [Books](/content/books/index.md)  
+[Home](../index.md) > [Books](./index.md)  
 # 🕊️🤝 Nonviolent Communication: A Language of Life  
 [🛒 Nonviolent Communication: A Language of Life. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3T980zy)  
   
@@ -73,20 +76,20 @@ CTA: 🕊️ Practice empathy.
   
 ### ⚖️ Contrasting Perspectives (Alternative Communication/Relationship Models)  
   
-* **[🧰💬 Crucial Conversations: Tools for Talking When Stakes Are High](/content/books/crucial-conversations-tools-for-talking-when-stakes-are-high.md)** by Kerry Patterson, Joseph Grenny, Ron McMillan, Al Switzler: 🗣️ Focuses on high-stakes dialogue, offering structured techniques that differ from NVC's core feeling/need focus but share the goal of productive conversation.  
-* **[💬😬 Difficult Conversations: How to Discuss What Matters Most](/content/books/difficult-conversations-how-to-discuss-what-matters-most.md)** by Douglas Stone, Bruce Patton, Sheila Heen: 🏛️ From the Harvard Negotiation Project, this book dissects difficult conversations into three layers (What Happened, Feelings, Identity) offering a different analytical framework.  
-* **[👉🤝 Getting to Yes: Negotiating Agreement Without Giving In](/content/books/getting-to-yes-negotiating-agreement-without-giving-in.md)** by Roger Fisher, William Ury, Bruce Patton: 🤝 A classic text on interest-based negotiation, contrasting with NVC's emphasis on needs and empathy, though potentially complementary in finding solutions.  
+* **[🧰💬 Crucial Conversations: Tools for Talking When Stakes Are High](./crucial-conversations-tools-for-talking-when-stakes-are-high.md)** by Kerry Patterson, Joseph Grenny, Ron McMillan, Al Switzler: 🗣️ Focuses on high-stakes dialogue, offering structured techniques that differ from NVC's core feeling/need focus but share the goal of productive conversation.  
+* **[💬😬 Difficult Conversations: How to Discuss What Matters Most](./difficult-conversations-how-to-discuss-what-matters-most.md)** by Douglas Stone, Bruce Patton, Sheila Heen: 🏛️ From the Harvard Negotiation Project, this book dissects difficult conversations into three layers (What Happened, Feelings, Identity) offering a different analytical framework.  
+* **[👉🤝 Getting to Yes: Negotiating Agreement Without Giving In](./getting-to-yes-negotiating-agreement-without-giving-in.md)** by Roger Fisher, William Ury, Bruce Patton: 🤝 A classic text on interest-based negotiation, contrasting with NVC's emphasis on needs and empathy, though potentially complementary in finding solutions.  
 * 🔥 **Fierce Conversations: Achieving Success at Work and in Life One Conversation at a Time** by Susan Scott: 🗣️ Emphasizes radical honesty and confronting issues directly, which can contrast with NVC's careful framing but shares the goal of authenticity.  
   
 ### 🎨 Creatively Related (Broader Themes: Empathy, Conflict, Mindfulness, Relationships)  
   
-* **[🦁🫀 Daring Greatly: How the Courage to Be Vulnerable Transforms the Way We Live, Love, Parent, and Lead](/content/books/daring-greatly-how-the-courage-to-be-vulnerable-transforms-the-way-we-live-love-parent-and-lead.md)** by Brené Brown: 💖 Explores vulnerability, shame, and empathy – concepts highly relevant to the emotional honesty NVC encourages.  
-* **[🧑‍❤️‍🧑🔗 Attached: The New Science of Adult Attachment and How It Can Help You Find - and Keep - Love](/content/books/attached-the-new-science-of-adult-attachment-and-how-it-can-help-you-find-and-keep-love.md)** by Amir Levine & Rachel S.F. Heller: 💔 Understanding attachment styles provides context for relationship dynamics that NVC skills can help navigate.  
-* 🧘 **Mindfulness** themed books (e.g., by Thich Nhat Hanh, Jon Kabat-Zinn): 🙏 Mindfulness practices enhance the self-awareness and presence needed to apply NVC effectively. 📝 Example: [🌪️🧘‍♂️ Full Catastrophe Living: Using the Wisdom of Your Body and Mind to Face Stress, Pain, and Illness](/content/books/full-catastrophe-living.md) by Jon Kabat-Zinn.  
-* **[🤕🎼🧠 The Body Keeps the Score: Brain, Mind, and Body in the Healing of Trauma](/content/books/the-body-keeps-the-score-brain-mind-and-body-in-the-healing-of-trauma.md)** by Bessel van der Kolk: 💔 Offers deep insights into how trauma affects individuals, relevant for understanding intense emotional reactions sometimes encountered in conflict.  
+* **[🦁🫀 Daring Greatly: How the Courage to Be Vulnerable Transforms the Way We Live, Love, Parent, and Lead](./daring-greatly-how-the-courage-to-be-vulnerable-transforms-the-way-we-live-love-parent-and-lead.md)** by Brené Brown: 💖 Explores vulnerability, shame, and empathy – concepts highly relevant to the emotional honesty NVC encourages.  
+* **[🧑‍❤️‍🧑🔗 Attached: The New Science of Adult Attachment and How It Can Help You Find - and Keep - Love](./attached-the-new-science-of-adult-attachment-and-how-it-can-help-you-find-and-keep-love.md)** by Amir Levine & Rachel S.F. Heller: 💔 Understanding attachment styles provides context for relationship dynamics that NVC skills can help navigate.  
+* 🧘 **Mindfulness** themed books (e.g., by Thich Nhat Hanh, Jon Kabat-Zinn): 🙏 Mindfulness practices enhance the self-awareness and presence needed to apply NVC effectively. 📝 Example: [🌪️🧘‍♂️ Full Catastrophe Living: Using the Wisdom of Your Body and Mind to Face Stress, Pain, and Illness](./full-catastrophe-living.md) by Jon Kabat-Zinn.  
+* **[🤕🎼🧠 The Body Keeps the Score: Brain, Mind, and Body in the Healing of Trauma](./the-body-keeps-the-score-brain-mind-and-body-in-the-healing-of-trauma.md)** by Bessel van der Kolk: 💔 Offers deep insights into how trauma affects individuals, relevant for understanding intense emotional reactions sometimes encountered in conflict.  
 * 🧠 **Emotional Intelligence 2.0** by Travis Bradberry & Jean Greaves: 🧠 Focuses broadly on understanding and managing emotions in oneself and others, a foundation for NVC.  
-* ☮️ **[🤝🧘 Everything Is Workable: A Zen Approach to Conflict Resolution](/content/books/everything-is-workable.md)** by Diane Musho Hamilton: 🧘 Integrates Zen principles like mindfulness and non-judgment into conflict resolution, offering a complementary spiritual and practical perspective.  
+* ☮️ **[🤝🧘 Everything Is Workable: A Zen Approach to Conflict Resolution](./everything-is-workable.md)** by Diane Musho Hamilton: 🧘 Integrates Zen principles like mindfulness and non-judgment into conflict resolution, offering a complementary spiritual and practical perspective.  
 * 🕊️ **The Mindful Guide to Conflict Resolution** by Rosalie Puiman: 🧘 Directly combines mindfulness techniques with conflict resolution strategies.  
   
-## 💬 [Gemini](/content/software/gemini.md) Prompt (gemini-2.5-pro-exp-03-25)  
+## 💬 [Gemini](../software/gemini.md) Prompt (gemini-2.5-pro-exp-03-25)  
 > Write a markdown-formatted (start headings at level H2) book report, followed by a plethora of additional similar, contrasting, and creatively related book recommendations on Nonviolent Communication. Be thorough in content discussed but concise and economical with your language. Structure the report with section headings and bulleted lists to avoid long blocks of text.

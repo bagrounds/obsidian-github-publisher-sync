@@ -10,7 +10,7 @@ Channel: PBS NewsHour
 tags:
 youtube: https://youtu.be/nJtnwbmcWjg
 ---
-[Home](/content/index.md) > [Videos](/content/videos/index.md)  
+[Home](../index.md) > [Videos](./index.md)  
 # 📉❓⬇️💰 Federal Reserve cuts interest rates amid economic uncertainty  
 ![Federal Reserve cuts interest rates amid economic uncertainty](https://youtu.be/nJtnwbmcWjg)  
   
@@ -29,6 +29,6 @@ For a better understanding, it would be helpful to explore:
   
 ## 📚 Book Recommendations  
 * **The Courage to Act** by Ben S. Bernanke: A memoir by the former Fed chair offering an inside look at the challenges of monetary policy during the 2008 financial crisis.  
-* **[🏷️🏚️💔🏰 The Price of Inequality: How Today's Divided Society Endangers Our Future](/content/books/the-price-of-inequality-how-todays-divided-society-endangers-our-future.md)** by Joseph E. Stiglitz: An exploration of how economic policies, including those of the Federal Reserve, can contribute to income inequality.  
+* **[🏷️🏚️💔🏰 The Price of Inequality: How Today's Divided Society Endangers Our Future](../books/the-price-of-inequality-how-todays-divided-society-endangers-our-future.md)** by Joseph E. Stiglitz: An exploration of how economic policies, including those of the Federal Reserve, can contribute to income inequality.  
 * **A Random Walk Down Wall Street** by Burton Malkiel: A classic on investing that provides a broader context for how a central bank's decisions ripple through financial markets.  
 * **Principles for Navigating Big Debt Crises** by Ray Dalio: A deep dive into the historical patterns of debt cycles and how governments and central banks have responded to them.

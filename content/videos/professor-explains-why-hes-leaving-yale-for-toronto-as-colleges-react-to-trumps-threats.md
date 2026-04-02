@@ -9,7 +9,7 @@ Platform:
 Channel: PBS NewsHour
 tags:
 ---
-[Home](/content/index.md) > [Videos](/content/videos/index.md)  
+[Home](../index.md) > [Videos](./index.md)  
 # Professor explains why he's leaving Yale for Toronto as colleges react to Trump's threats  
 ![Professor explains why he's leaving Yale for Toronto as colleges react to Trump's threats](https://youtu.be/yvgIpnk-2H4)  
   

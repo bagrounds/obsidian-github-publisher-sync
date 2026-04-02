@@ -10,7 +10,7 @@ Channel: Heather Cox Richardson
 tags:
 youtube: https://www.youtube.com/embed/oFzH_qj9Lh0
 ---
-[Home](/content/index.md) > [Videos](/content/videos/index.md) | [🏛️🇺🇸📖 Heather Cox Richardson](/content/people/heather-cox-richardson.md)  
+[Home](../index.md) > [Videos](./index.md) | [🏛️🇺🇸📖 Heather Cox Richardson](../people/heather-cox-richardson.md)  
 # ❓🤯😵‍💫 What the Heck Just Happened | 2025-11-15  
 ![What the Heck Just Happened?](https://www.youtube.com/embed/oFzH_qj9Lh0)  
   
@@ -52,7 +52,7 @@ youtube: https://www.youtube.com/embed/oFzH_qj9Lh0
   
 * 🌎 The Global Rise of Populism Performance Political Style and Representation by Benjamin Moffitt. This book analyzes populism as a political style that is performed, embodied, and enacted across different political and cultural contexts.  
 * 🇺🇸 The Populist Persuasion An American History by Michael Kazin. This work examines the long history of American populism, offering crucial context for the recurring anti-elite discourse discussed in the video.  
-* [🗳️🏛️☠️ How Democracies Die](/content/books/how-democracies-die.md) What History Reveals About Our Future by Steven Levitsky. It discusses how elected leaders can erode democratic norms and institutions, relating to the video's theme of rule-breaking behavior.  
+* [🗳️🏛️☠️ How Democracies Die](../books/how-democracies-die.md) What History Reveals About Our Future by Steven Levitsky. It discusses how elected leaders can erode democratic norms and institutions, relating to the video's theme of rule-breaking behavior.  
   
 ### 🆚 Contrasting  
   

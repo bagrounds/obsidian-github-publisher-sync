@@ -10,7 +10,7 @@ Channel: The Ezra Klein Show
 tags:
 youtube: https://youtu.be/T8iw1A2utVA
 ---
-[Home](/content/index.md) > [Videos](/content/videos/index.md)  
+[Home](../index.md) > [Videos](./index.md)  
 # 🗳️🎉➡️ Ezra Klein: This Is How Democrats Win  
 ![Ezra Klein: This Is How Democrats Win](https://youtu.be/T8iw1A2utVA)  
   
@@ -72,7 +72,7 @@ youtube: https://youtu.be/T8iw1A2utVA
   
 ### ↔️ Similar  
   
-- [🏘️↔️ The Big Sort: Why the Clustering of Like-Minded America Is Tearing Us Apart](/content/books/the-big-sort-why-the-clustering-of-like-minded-america-is-tearing-us-apart.md) by Bill Bishop. 🏡 This book explores the sociological and demographic trend of Americans moving to communities where people share their political and social views, which intensifies political polarization and reinforces the geographic sorting discussed in the video.  
+- [🏘️↔️ The Big Sort: Why the Clustering of Like-Minded America Is Tearing Us Apart](../books/the-big-sort-why-the-clustering-of-like-minded-america-is-tearing-us-apart.md) by Bill Bishop. 🏡 This book explores the sociological and demographic trend of Americans moving to communities where people share their political and social views, which intensifies political polarization and reinforces the geographic sorting discussed in the video.  
   
 - _In Defense of Politics_ by Bernard Crick. 📜 A foundational work that the video explicitly cites \[[03:12](http://www.youtube.com/watch?v=T8iw1A2utVA&t=192)], arguing that politics is a precious, civilizing activity that arises from accepting the simultaneous existence of different groups and traditions within a common rule.  
   
@@ -84,6 +84,6 @@ youtube: https://youtu.be/T8iw1A2utVA
   
 ### 🎨 Creatively Related  
   
-- [😇🧠 The Righteous Mind: Why Good People Are Divided by Politics and Religion](/content/books/the-righteous-mind.md) by Jonathan Haidt. 🧠 This work on moral psychology offers a framework for understanding the deep-seated, instinctual, and moral reasons why people on the left and right differ, which can help explain the feeling of cultural vibe and alienation mentioned in the video \[[05:56](http://www.youtube.com/watch?v=T8iw1A2utVA&t=356)].  
+- [😇🧠 The Righteous Mind: Why Good People Are Divided by Politics and Religion](../books/the-righteous-mind.md) by Jonathan Haidt. 🧠 This work on moral psychology offers a framework for understanding the deep-seated, instinctual, and moral reasons why people on the left and right differ, which can help explain the feeling of cultural vibe and alienation mentioned in the video \[[05:56](http://www.youtube.com/watch?v=T8iw1A2utVA&t=356)].  
   
-- [🎳🏘️📉📈 Bowling Alone: The Collapse and Revival of American Community](/content/books/bowling-alone.md) by Robert D. Putnam. 🎳 This classic examines the decline of social capital and face-to-face civic engagement in America, offering a look at the historical loss of non-political community institutions that once built the genuine relationships the video advocates for \[[04:02](http://www.youtube.com/watch?v=T8iw1A2utVA&t=242)].
+- [🎳🏘️📉📈 Bowling Alone: The Collapse and Revival of American Community](../books/bowling-alone.md) by Robert D. Putnam. 🎳 This classic examines the decline of social capital and face-to-face civic engagement in America, offering a look at the historical loss of non-political community institutions that once built the genuine relationships the video advocates for \[[04:02](http://www.youtube.com/watch?v=T8iw1A2utVA&t=242)].

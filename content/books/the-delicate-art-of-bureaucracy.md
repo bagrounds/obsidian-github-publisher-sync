@@ -6,7 +6,7 @@ URL: https://bagrounds.org/books/the-delicate-art-of-bureaucracy
 share: true
 affiliate link: https://amzn.to/4l7d9ED
 ---
-[Home](/content/index.md) > [Books](/content/books/index.md)  
+[Home](../index.md) > [Books](./index.md)  
 # 🏢📋🐒🪒🤼‍♂️ The Delicate Art of Bureaucracy: Digital Transformation with the Monkey, the Razor, and the Sumo Wrestler  
 [🛒 The Delicate Art of Bureaucracy: Digital Transformation with the Monkey, the Razor, and the Sumo Wrestler. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4l7d9ED)  
   
@@ -41,7 +41,7 @@ affiliate link: https://amzn.to/4l7d9ED
 ## 📚 Book Recommendations  
   
 ### 🤝 Similar Books (Navigating/Improving Bureaucracy)  
-* **[⚙️🏢 Hack Your Bureaucracy: Get Things Done No Matter What Your Role on Any Team](/content/books/hack-your-bureaucracy-get-things-done-no-matter-what-your-role-on-any-team.md)** by Marina Nitze & Nick Sinai: Offers practical tactics for navigating and achieving results within bureaucratic systems, drawing from experience in government (like the VA and White House).  
+* **[⚙️🏢 Hack Your Bureaucracy: Get Things Done No Matter What Your Role on Any Team](./hack-your-bureaucracy-get-things-done-no-matter-what-your-role-on-any-team.md)** by Marina Nitze & Nick Sinai: Offers practical tactics for navigating and achieving results within bureaucratic systems, drawing from experience in government (like the VA and White House).  
 * 👨‍💼 **A Seat at the Table: IT Leadership in the Age of Agility** by Mark Schwartz: Another book by the same author, focusing on IT leadership within potentially bureaucratic business environments.  
 * 💰 **The Art of Business Value** by Mark Schwartz: A related work by Schwartz focusing on value creation within organizations.  
 * 📣 **Rebels at Work: A Handbook for Leading Change from Within** by Lois Kelly & Carmen Medina: Provides guidance for non-managers on how to champion ideas and drive positive change within established organizations, even resistant ones.  
@@ -56,8 +56,8 @@ affiliate link: https://amzn.to/4l7d9ED
   
 ### 💡 Creatively Related Books  
 * 🧠 **Systems Thinking (General):**  
-    * ♾️ *[The Fifth Discipline](/content/books/the-fifth-discipline.md): The Art & Practice of The Learning Organization* by Peter M. Senge: A classic on systems thinking and building learning organizations.  
-    * 🧐 Books by [Russell Ackoff](/content/people/russell-ackoff.md) (e.g., *Ackoff's Best*, *Systems Thinking for Curious Managers*, *On Purposeful Systems*, *Beating the System: Using Creativity to Outsmart Bureaucracies*, *Ackoff's Fables: Irreverent Reflections on Business and Bureaucracy*): Ackoff was a pioneer in systems thinking and organizational design, often addressing bureaucracy with wit and insight.  
+    * ♾️ *[The Fifth Discipline](./the-fifth-discipline.md): The Art & Practice of The Learning Organization* by Peter M. Senge: A classic on systems thinking and building learning organizations.  
+    * 🧐 Books by [Russell Ackoff](../people/russell-ackoff.md) (e.g., *Ackoff's Best*, *Systems Thinking for Curious Managers*, *On Purposeful Systems*, *Beating the System: Using Creativity to Outsmart Bureaucracies*, *Ackoff's Fables: Irreverent Reflections on Business and Bureaucracy*): Ackoff was a pioneer in systems thinking and organizational design, often addressing bureaucracy with wit and insight.  
 * 🧠 **Organizational Psychology/Behavior:**  
     * 📊 *Business Psychology and Organizational Behaviour* by Eugene McKenna: Covers principles of psychology applied to work, including topics relevant to navigating organizational structures.  
     * 🎭 *Moral Mazes: The World of Corporate Managers* by Robert Jackall: Explores how bureaucratic structures shape managerial behavior, thinking, and ethics.  
@@ -68,7 +68,7 @@ affiliate link: https://amzn.to/4l7d9ED
 * 🎭 **Fiction/Satire on Bureaucracy:**  
     * 🎣 *Salmon Fishing in the Yemen* by Paul Torday: A satirical novel involving a bizarre project navigating political and bureaucratic environments.  
     * 🤪 *Incompetence* by Rob Grant: A humorous satire set in a future where incompetence is protected, highlighting bureaucratic absurdity.  
-    * 📜 Classic examples (not in search results but relevant): [🔁🤪 Catch-22](/content/books/catch-22.md) by Joseph Heller, *The Castle* or *The Trial* by Franz Kafka.  
+    * 📜 Classic examples (not in search results but relevant): [🔁🤪 Catch-22](./catch-22.md) by Joseph Heller, *The Castle* or *The Trial* by Franz Kafka.  
   
-## 💬 [Gemini](/content/software/gemini.md) Prompt (gemini-2.5-pro-exp-03-25)  
+## 💬 [Gemini](../software/gemini.md) Prompt (gemini-2.5-pro-exp-03-25)  
 > Write a markdown-formatted (start headings at level H2) book report, followed by a plethora of additional similar, contrasting, and creatively related book recommendations on The Delicate Art of Bureaucracy. Be thorough in content discussed but concise and economical with your language. Structure the report with section headings and bulleted lists to avoid long blocks of text.

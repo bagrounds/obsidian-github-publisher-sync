@@ -6,6 +6,9 @@ title: 🗺️🚀🤖 A Field Guide to Rapidly Improving AI Products
 URL: https://bagrounds.org/articles/a-field-guide-to-rapidly-improving-ai-products
 Author:
 tags:
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_time: 2026-04-02T00:00:00Z
+force_analyze_links: false
 ---
 [Home](../index.md) > [Articles](./index.md)  
 # [🗺️🚀🤖 A Field Guide to Rapidly Improving AI Products](https://hamel.dev/blog/posts/field-guide)  
@@ -46,13 +49,13 @@ tags:
 ## 📚 Book Recommendations  
   
 ### ↔️ Similar  
-* 📘 Designing Machine Learning Systems by Chip Huyen explores the iterative nature of building reliable production-ready AI systems with a focus on data-centric approaches.  
-* 📙 Machine Learning Engineering by Andriy Burkov provides a practical guide to the technical and procedural steps required to deploy and maintain successful AI models.  
+* 📘 [🤖⚙️🔁 Designing Machine Learning Systems: An Iterative Process for Production-Ready Applications](../books/designing-machine-learning-systems-an-iterative-process-for-production-ready-applications.md) by Chip Huyen explores the iterative nature of building reliable production-ready AI systems with a focus on data-centric approaches.  
+* 📙 [🤖⚙️ Machine Learning Engineering](../books/machine-learning-engineering.md) by Andriy Burkov provides a practical guide to the technical and procedural steps required to deploy and maintain successful AI models.  
   
 ### 🆚 Contrasting  
 * 📕 Superintelligence by Nick Bostrom examines the long-term existential risks and theoretical alignment challenges of AI from a philosophical and high-level perspective.  
-* 📗 The Alignment Problem by Brian Christian discusses the broader societal and ethical implications of AI systems deviating from human values through historical case studies.  
+* 📗 [⚖️🤖 The Alignment Problem](../books/the-alignment-problem.md) by Brian Christian discusses the broader societal and ethical implications of AI systems deviating from human values through historical case studies.  
   
 ### 🎨 Creatively Related  
-* 📓 The Elements of Style by William Strunk Jr. and E.B. White relates to the guide's emphasis on clarity, economy of language, and removing unnecessary complexity.  
+* 📓 [🦢 The Elements of Style](../books/the-elements-of-style.md) by William Strunk Jr. and E.B. White relates to the guide's emphasis on clarity, economy of language, and removing unnecessary complexity.  
 * 📒 Lean Startup by Eric Ries shares the principle of using rapid experimentation and validated learning to develop products in an environment of extreme uncertainty.

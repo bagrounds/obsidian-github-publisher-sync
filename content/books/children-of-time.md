@@ -11,7 +11,7 @@ force_analyze_links: false
 link_analysis_time: 2026-03-22T06:01:18.091Z
 link_analysis_model: gemini-3.1-flash-lite-preview
 ---
-[Home](/content/index.md) > [Books](/content/books/index.md)  
+[Home](../index.md) > [Books](./index.md)  
 # 🕷️⏳ Children of Time  
 [🛒 Children of Time. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4qauY7F)  
   
@@ -35,7 +35,7 @@ link_analysis_model: gemini-3.1-flash-lite-preview
   
 ### ❓ Q: Is Children of Time part of a series?  
   
-A: 🤓 Children of Time is the first installment in a series that continues with Children of Ruin and [🧠📖✨ Children of Memory](/content/books/children-of-memory.md).  
+A: 🤓 Children of Time is the first installment in a series that continues with Children of Ruin and [🧠📖✨ Children of Memory](./children-of-memory.md).  
   
 ### ❓ Q: What is the main theme of Children of Time?  
   
@@ -67,18 +67,18 @@ A: 🤓 The book features detailed descriptions of multi-legged creatures, which
 * 🧊 Pushing Ice by Alastair Reynolds  
   
 ### 📖 Similar  
-* **[☄️🧑‍🚀🙏🌍 Project Hail Mary](/content/books/project-hail-mary.md)** by Andy Weir: Humanity's sole survivor confronts alien intelligence to save Earth.  
+* **[☄️🧑‍🚀🙏🌍 Project Hail Mary](./project-hail-mary.md)** by Andy Weir: Humanity's sole survivor confronts alien intelligence to save Earth.  
 * 👁️ **Blindsight** by Peter Watts: Exploration of alien intelligence and the nature of consciousness.  
 * 🌟 **A Fire Upon the Deep** by Vernor Vinge: Vast galactic civilizations, diverse alien species, and deep time.  
   
 ### 🔄 Contrasting  
-* **[👨‍🚀🔴✨ The Martian](/content/books/the-martian.md)** by Andy Weir: Focus on immediate human ingenuity and survival against nature, less on deep evolution.  
-* **[🏜️🐛 Dune](/content/books/dune.md)** by Frank Herbert: Grand ecological and political saga, but human-centric and less focused on non-human biological intelligence.  
+* **[👨‍🚀🔴✨ The Martian](./the-martian.md)** by Andy Weir: Focus on immediate human ingenuity and survival against nature, less on deep evolution.  
+* **[🏜️🐛 Dune](./dune.md)** by Frank Herbert: Grand ecological and political saga, but human-centric and less focused on non-human biological intelligence.  
   
 ### 🔗 Related  
 * 🌌 **Children of Ruin** by Adrian Tchaikovsky: The direct sequel, expanding the universe with new alien species.  
 * 🌿 **Semiosis** by Sue Burke: First contact and co-evolution with sentient plants on an alien planet.  
-* ⏳ **Remembrance of Earth's Past - [🌌3️⃣⚛️ The Three-Body Problem](/content/books/the-three-body-problem.md) by Cixin Liu: Epic scope, cosmic sociology, and humanity's desperate struggle against a superior alien civilization.  
+* ⏳ **Remembrance of Earth's Past - [🌌3️⃣⚛️ The Three-Body Problem](./the-three-body-problem.md) by Cixin Liu: Epic scope, cosmic sociology, and humanity's desperate struggle against a superior alien civilization.  
   
 ## 🫵 What Do You Think?  
 * 🧠 Does the idea of a non-human civilization reaching intelligence excite you or unsettle you?  

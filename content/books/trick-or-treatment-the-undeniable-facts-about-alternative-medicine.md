@@ -7,7 +7,7 @@ share: true
 CTA: 🧐 Question remedies.
 affiliate link: https://amzn.to/3IViotn
 ---
-[Home](/content/index.md) > [Books](/content/books/index.md)  
+[Home](../index.md) > [Books](./index.md)  
 # ❓✅ Trick or Treatment: The Undeniable Facts about Alternative Medicine  
 [🛒 Trick or Treatment: The Undeniable Facts about Alternative Medicine. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3IViotn)  
   
@@ -34,7 +34,7 @@ affiliate link: https://amzn.to/3IViotn
     💉 This book by a vaccine expert continues the critical examination of alternative therapies, exploring why people believe in them and detailing the scientific evidence (or lack thereof) for various practices.  
 * ✨ **Alternative Medicine: A Critical Assessment of 202 Modalities by Edzard Ernst**  
     ✍️ Co-authored by one of the writers of Trick or Treatment, this book offers an updated and even more extensive critical assessment of numerous alternative medicine modalities, making it a direct and thorough follow-up for readers seeking deeper analysis.  
-* **[🧪👎 Bad Science: Quacks, Hacks, and Big Pharma Flacks](/content/books/bad-science-quacks-hacks-and-big-pharma-flacks.md) by Ben Goldacre**  
+* **[🧪👎 Bad Science: Quacks, Hacks, and Big Pharma Flacks](./bad-science-quacks-hacks-and-big-pharma-flacks.md) by Ben Goldacre**  
     📰 Goldacre’s work is an exposé of bad science, misinformation, and misleading health claims, particularly in medicine and the pharmaceutical industry, resonating with the skeptical, evidence-based approach of Trick or Treatment.  
   
 ### 🔄 Contrasting Books (Supportive of Alternative Medicine)  

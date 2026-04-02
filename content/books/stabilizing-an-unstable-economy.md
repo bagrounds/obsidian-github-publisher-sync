@@ -8,8 +8,11 @@ CTA: ⚖️ Fortify finances.
 affiliate link: https://amzn.to/4qt1iDY
 tags:
   - MMT
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_time: 2026-04-01T00:00:00Z
+force_analyze_links: false
 ---
-[Home](/content/index.md) > [Books](/content/books/index.md)  
+[Home](../index.md) > [Books](./index.md)  
 # 📉📈 Stabilizing an Unstable Economy  
 [🛒 Stabilizing an Unstable Economy. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4qt1iDY)  
   
@@ -45,7 +48,7 @@ tags:
 * ✅ **Final Verdict**: Minsky's core claim that stability inevitably leads to instability in capitalist economies, culminating in crises, remains highly relevant and has been substantially confirmed by modern financial history, though some critical perspectives highlight areas for expanded consideration like fraud and broader macroeconomic contexts beyond purely financial mechanisms.  
   
 ## 🔍 Topics for Further Understanding  
-* 💡 [🏦♾️📈💸 Modern Monetary Theory](/content/topics/modern-monetary-theory.md) (MMT) and its intersection with Minsky's policy implications.  
+* 💡 [🏦♾️📈💸 Modern Monetary Theory](../topics/modern-monetary-theory.md) (MMT) and its intersection with Minsky's policy implications.  
 * 🧠 Behavioral economics and its influence on risk perception during speculative booms.  
 * 🏦 The impact of shadow banking on financial fragility and regulatory challenges.  
 * 🌎 International dimensions of financial instability and Minsky's applicability to global crises.  
@@ -71,15 +74,15 @@ tags:
 ### 🤝 Similar  
 * 📖 This Time Is Different: Eight Centuries of Financial Folly by Carmen M. Reinhart and Kenneth Rogoff  
 * 📖 Manias, Panics, and Crashes: A History of Financial Crises by Charles P. Kindleberger  
-* [👨‍🏫❓ Why Minsky Matters: An Introduction to the Work of a Maverick Economist](/content/books/why-minsky-matters-an-introduction-to-the-work-of-a-maverick-economist.md) by L. Randall Wray  
+* [👨‍🏫❓ Why Minsky Matters: An Introduction to the Work of a Maverick Economist](./why-minsky-matters-an-introduction-to-the-work-of-a-maverick-economist.md) by L. Randall Wray  
   
 ### 🆚 Contrasting  
-* [🧑‍💼🏦💸 The General Theory of Employment, Interest, and Money](/content/books/the-general-theory-of-employment-interest-and-money.md) by John Maynard Keynes (for its foundational role and Minsky's critical extension of it)  
-* [👉🤏 Nudge: Improving Decisions about Health, Wealth, and Happiness](/content/books/nudge.md) by Richard H. Thaler and Cass R. Sunstein (focus on behavioral interventions vs. structural regulation)  
-* [🤔🐇🐢 Thinking, Fast and Slow](/content/books/thinking-fast-and-slow.md) by Daniel Kahneman (explores cognitive biases relevant to economic decision-making without Minsky's structural focus)  
+* [🧑‍💼🏦💸 The General Theory of Employment, Interest, and Money](./the-general-theory-of-employment-interest-and-money.md) by John Maynard Keynes (for its foundational role and Minsky's critical extension of it)  
+* [👉🤏 Nudge: Improving Decisions about Health, Wealth, and Happiness](./nudge.md) by Richard H. Thaler and Cass R. Sunstein (focus on behavioral interventions vs. structural regulation)  
+* [🤔🐇🐢 Thinking, Fast and Slow](./thinking-fast-and-slow.md) by Daniel Kahneman (explores cognitive biases relevant to economic decision-making without Minsky's structural focus)  
   
 ### ➕ Related  
-* [💰💥📉 The Big Short: Inside the Doomsday Machine](/content/books/the-big-short-inside-the-doomsday-machine.md) by Michael Lewis  
+* [💰💥📉 The Big Short: Inside the Doomsday Machine](./the-big-short-inside-the-doomsday-machine.md) by Michael Lewis  
 * 📖 Crashed: How a Decade of Financial Crises Changed the World by Adam Tooze  
 * 📖 Lords of Finance: The Bankers Who Broke the World by Liaquat Ahamed  
   

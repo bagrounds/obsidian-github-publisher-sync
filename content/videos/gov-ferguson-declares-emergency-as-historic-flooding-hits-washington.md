@@ -10,7 +10,7 @@ Channel: KING 5 Seattle
 tags:
 youtube: https://youtu.be/lDKhq2ykiZA
 ---
-[Home](/content/index.md) > [Videos](/content/videos/index.md)  
+[Home](../index.md) > [Videos](./index.md)  
 # 🌊🚨🇺🇸 Gov. Ferguson Declares Emergency as ‘Historic Flooding’ Hits Washington  
 ![Gov. Ferguson Declares Emergency as ‘Historic Flooding’ Hits Washington](https://youtu.be/lDKhq2ykiZA)  
   
@@ -52,7 +52,7 @@ youtube: https://youtu.be/lDKhq2ykiZA
 ## 📚 Book Recommendations  
   
 ### ↔️ Similar  
-* 🌎 [🌋🌊🌪️🔥 The Big Ones: How Natural Disasters Have Shaped Us (and What We Can Do About Them)](/content/books/the-big-ones-how-natural-disasters-have-shaped-us-and-what-we-can-do-about-them.md) by Dr. Lucy Jones explores disaster science and policy, urging proactive preparedness against mega-disasters like this historic flood.  
+* 🌎 [🌋🌊🌪️🔥 The Big Ones: How Natural Disasters Have Shaped Us (and What We Can Do About Them)](../books/the-big-ones-how-natural-disasters-have-shaped-us-and-what-we-can-do-about-them.md) by Dr. Lucy Jones explores disaster science and policy, urging proactive preparedness against mega-disasters like this historic flood.  
 * 🧊 A Farewell to Ice: A Report from the Arctic by Peter Wadhams details the mechanics of global warming and arctic ice melt, which are major factors influencing extreme weather events, including intense atmospheric rivers.  
   
 ### 🆚 Contrasting  

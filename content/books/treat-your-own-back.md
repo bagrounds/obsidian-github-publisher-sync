@@ -6,7 +6,7 @@ URL: https://bagrounds.org/books/treat-your-own-back
 share: true
 affiliate link: https://amzn.to/46e59NA
 ---
-[Home](/content/index.md) > [Books](/content/books/index.md)  
+[Home](../index.md) > [Books](./index.md)  
 # 🍬🫵🔙 Treat Your Own Back  
 [🛒 Treat Your Own Back. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/46e59NA)  
   
@@ -45,7 +45,7 @@ The book typically includes:
 ### 🤝 Similar Approaches (Focus on Self-Treatment & Exercise)  
   
 * 📚 **Treat Your Own Neck** by Robin McKenzie: Part of the same series, applying the McKenzie Method to neck pain.  
-* **[🔙🛠️ Back Mechanic](/content/books/back-mechanic.md)** by Dr. Stuart McGill: Provides a detailed self-assessment guide to identify specific back pain triggers and offers targeted exercises based on individual needs. Known for its emphasis on spine-sparing strategies.  
+* **[🔙🛠️ Back Mechanic](./back-mechanic.md)** by Dr. Stuart McGill: Provides a detailed self-assessment guide to identify specific back pain triggers and offers targeted exercises based on individual needs. Known for its emphasis on spine-sparing strategies.  
 * 📚 **The Trigger Point Therapy Workbook: Your Self-Treatment Guide for Pain Relief** by Clair Davies and Amber Davies: Focuses on releasing muscle knots and tension (trigger points) that can contribute to back pain through self-massage techniques.  
 * 📚 **Trigger Point Therapy for Low Back Pain: A Self-Treatment Workbook** by Sharon Sauer and Mary Biancalana: A more specific application of trigger point therapy to lower back pain.  
 * 📚 **Pain Free** by Pete Egoscue: Presents the Egoscue Method, which focuses on corrective exercises and postural alignment to address musculoskeletal imbalances.  
@@ -70,5 +70,5 @@ The book typically includes:
 * 📚 **The Painful Truth: The New Science of Why We Hurt and How We Can Heal** by Monty Lyman: Provides a readable introduction to the latest pain science, including the mind-body connection.  
 * 📚 **Ergonomics in Back Pain: A Guide to Prevention and Rehabilitation:** Delves into the principles of ergonomics and bioengineering related to back health.  
   
-## 💬 [Gemini](/content/software/gemini.md) Prompt (gemini-2.5-flash-preview-04-17)  
+## 💬 [Gemini](../software/gemini.md) Prompt (gemini-2.5-flash-preview-04-17)  
 > Write a markdown-formatted (start headings at level H2) book report, followed by a plethora of additional similar, contrasting, and creatively related book recommendations on Treat Your Own Back. Be thorough in content discussed but concise and economical with your language. Structure the report with section headings and bulleted lists to avoid long blocks of text.

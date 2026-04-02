@@ -6,7 +6,7 @@ URL: https://bagrounds.org/books/fluke-chance-chaos-and-why-everything-we-do-mat
 share: true
 affiliate link: https://amzn.to/4mFRDYY
 ---
-[Home](/content/index.md) > [Books](/content/books/index.md)  
+[Home](../index.md) > [Books](./index.md)  
 # 🍀⁉️ Fluke: Chance, Chaos, and Why Everything We Do Matters  
 [🛒 Fluke: Chance, Chaos, and Why Everything We Do Matters. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4mFRDYY)  
   
@@ -46,18 +46,18 @@ affiliate link: https://amzn.to/4mFRDYY
   
 ## 📚 Book Recommendations  
 ### 👯 Similar Books (Exploring Chance, Complexity, Contingency)  
-* **[⚫🦢🎲 The Black Swan: The Impact of the Highly Improbable](/content/books/the-black-swan-the-impact-of-the-highly-improbable.md)** by Nassim Nicholas Taleb: A seminal work on the profound impact of rare, unpredictable events and the limitations of forecasting. *Fluke* is often compared to Taleb's work.  
-* **[🃏🎲 Fooled by Randomness: The Hidden Role of Chance in Life and in the Markets](/content/books/fooled-by-randomness-the-hidden-role-of-chance-in-life-and-in-the-markets.md)** by Nassim Nicholas Taleb: Explores how we underestimate the role of randomness, particularly in finance and personal success.  
-* 🧠 **[Thinking, Fast and Slow](/content/books/thinking-fast-and-slow.md)** by Daniel Kahneman: While focused on cognitive biases, it delves into how our minds create narratives and struggle with probability and randomness, complementing *Fluke's* themes on perception.  
+* **[⚫🦢🎲 The Black Swan: The Impact of the Highly Improbable](./the-black-swan-the-impact-of-the-highly-improbable.md)** by Nassim Nicholas Taleb: A seminal work on the profound impact of rare, unpredictable events and the limitations of forecasting. *Fluke* is often compared to Taleb's work.  
+* **[🃏🎲 Fooled by Randomness: The Hidden Role of Chance in Life and in the Markets](./fooled-by-randomness-the-hidden-role-of-chance-in-life-and-in-the-markets.md)** by Nassim Nicholas Taleb: Explores how we underestimate the role of randomness, particularly in finance and personal success.  
+* 🧠 **[Thinking, Fast and Slow](./thinking-fast-and-slow.md)** by Daniel Kahneman: While focused on cognitive biases, it delves into how our minds create narratives and struggle with probability and randomness, complementing *Fluke's* themes on perception.  
 * 🌍 **Ubiquity: Why Catastrophes Happen** by Mark Buchanan: Explores universal patterns in complex systems, from earthquakes to market crashes, touching on concepts like criticality discussed in *Fluke*.  
-* 🌀 **[Chaos: Making a New Science](/content/books/chaos.md)** by James Gleick: A classic popular science book introducing chaos theory and its pioneers, providing foundational context for the scientific concepts Klaas employs.  
+* 🌀 **[Chaos: Making a New Science](./chaos.md)** by James Gleick: A classic popular science book introducing chaos theory and its pioneers, providing foundational context for the scientific concepts Klaas employs.  
 * 🔎 **A Crude Look at the Whole** by John H. Miller: Discusses complexity science and how simple rules can lead to complex emergent behaviors in social systems.  
 * 📱 **Overcomplicated: Technology at the Limits of Comprehension** by Samuel Arbesman: Examines the increasing complexity of our technological systems and the unpredictability that results.  
   
 ### 🆚 Contrasting Books (Focusing on Determinism, Agency, Order)  
 * 🤖 **Determined: A Science of Life Without Free Will** by Robert M. Sapolsky: Argues strongly against free will from a neurobiological perspective, presenting a more deterministic view of human action than Klaas's focus on unpredictable contingency.  
 * 🌠 **The Beginning of Infinity: Explanations That Transform the World** by David Deutsch: Presents an optimistic view of human potential and progress driven by knowledge creation, emphasizing human agency in shaping the future, potentially contrasting with *Fluke's* emphasis on uncontrollable factors.  
-* **[🔮🎨🔬 Superforecasting: The Art and Science of Prediction](/content/books/superforecasting-the-art-and-science-of-prediction.md)** by Philip E. Tetlock and Dan Gardner: While acknowledging uncertainty, this book focuses on *improving* prediction skills for political and economic events, contrasting with *Fluke's* emphasis on the fundamental unpredictability stemming from chaos and contingency.  
+* **[🔮🎨🔬 Superforecasting: The Art and Science of Prediction](./superforecasting-the-art-and-science-of-prediction.md)** by Philip E. Tetlock and Dan Gardner: While acknowledging uncertainty, this book focuses on *improving* prediction skills for political and economic events, contrasting with *Fluke's* emphasis on the fundamental unpredictability stemming from chaos and contingency.  
 * 🏛️ **(Potentially) Works Emphasizing Grand Historical Forces or Structures:** Books focusing on Marxist historical materialism, certain geopolitical theories, or structural explanations for social phenomena might offer a contrast by emphasizing large-scale, deterministic forces over individual contingencies. (Specific titles would depend on the exact contrasting theory desired).  
   
 ### 🎨 Creatively Related Books (Fiction, Philosophy, Specific Concepts)  
@@ -70,7 +70,7 @@ affiliate link: https://amzn.to/4mFRDYY
 * 👩‍🚀 **Martian Contingency** by Mary Robinette Kowal: A science fiction novel (part of the Lady Astronaut series) set in an alternate history triggered by a catastrophic event, where uncovering past secrets is crucial for survival on Mars.  
 * 🚨 **Contingency Plan** by Lou Allin: A thriller novel whose plot revolves around contingency planning in a dangerous situation, offering a narrative take on the concept.  
   
-## 💬 [Gemini](/content/software/gemini.md) Prompt (gemini-2.5-pro-exp-03-25)  
+## 💬 [Gemini](../software/gemini.md) Prompt (gemini-2.5-pro-exp-03-25)  
 > Write a markdown-formatted (start headings at level H2) book report, followed by a plethora of additional similar, contrasting, and creatively related book recommendations on Fluke: Chance, Chaos, and Why Everything We Do Matters. Be thorough in content discussed but concise and economical with your language. Structure the report with section headings and bulleted lists to avoid long blocks of text.  
   
 ## 🐦 Tweet  

@@ -10,7 +10,7 @@ Channel: Hopkins Natural Philosophy Forum
 tags:
 youtube: https://youtu.be/CBmz3pFdK-4
 ---
-[Home](/content/index.md) > [Videos](/content/videos/index.md)  
+[Home](../index.md) > [Videos](./index.md)  
 # 🧠👶🐒 Alison Gopnik, The Evolution of Human Intelligences | Natural Philosophy Forum Lecture 2025  
 ![Alison Gopnik, The Evolution of Human Intelligences | Natural Philosophy Forum Lecture 2025](https://youtu.be/CBmz3pFdK-4)  
   
@@ -55,21 +55,21 @@ youtube: https://youtu.be/CBmz3pFdK-4
 ### ↔️ Similar  
   
 - The Lifecycle of Software Objects  
-* [👶🤔❤️ The Philosophical Baby: What Children's Minds Tell Us About Truth, Love, and the Meaning of Life](/content/books/the-philosophical-baby-what-childrens-minds-tell-us-about-truth-love-and-the-meaning-of-life.md) by Alison Gopnik: 🧠 Explores how babies and children learn about the world through consciousness, causality, and love, connecting early cognitive development to deep philosophical questions.  
+* [👶🤔❤️ The Philosophical Baby: What Children's Minds Tell Us About Truth, Love, and the Meaning of Life](../books/the-philosophical-baby-what-childrens-minds-tell-us-about-truth-love-and-the-meaning-of-life.md) by Alison Gopnik: 🧠 Explores how babies and children learn about the world through consciousness, causality, and love, connecting early cognitive development to deep philosophical questions.  
 * 📚 Play by Stuart Brown with Christopher Vaughan: 🧸 Documents the evolutionary importance of play across species and how it fundamentally shapes brain structure, social behavior, and creativity, aligning with the video's exploration theme.  
 * 🧠 The Enigma of Reason by Hugo Mercier and Dan Sperber: 🤔 Discusses the evolutionary function of reason as primarily social and argumentative, complementing the video's idea of intelligence as a socially-distributed, developmental process.  
   
 ### 🆚 Contrasting  
   
-* [🤔🐇🐢 Thinking, Fast and Slow](/content/books/thinking-fast-and-slow.md) by Daniel Kahneman: 💡 Focuses on the systematic biases and two distinct systems of thought in adult decision-making, offering an account of the efficient, but often constrained, adult exploitation phase.  
+* [🤔🐇🐢 Thinking, Fast and Slow](../books/thinking-fast-and-slow.md) by Daniel Kahneman: 💡 Focuses on the systematic biases and two distinct systems of thought in adult decision-making, offering an account of the efficient, but often constrained, adult exploitation phase.  
 * 🤝 The Social Contract by Jean-Jacques Rousseau: 🗳️ Presents a foundational political philosophy that views society as a reciprocal contract between autonomous agents, which contrasts sharply with the video's emphasis on asymmetric, non-reciprocal caregiving relationships.  
-* [👤🧬 The Selfish Gene](/content/books/the-selfish-gene.md) by Richard Dawkins: 🧐 Advocates a gene's-eye view of evolution where individuals act to maximize the survival of their own genes, providing a stark theoretical contrast to the altruistic focus of the caregiving intelligence.  
+* [👤🧬 The Selfish Gene](../books/the-selfish-gene.md) by Richard Dawkins: 🧐 Advocates a gene's-eye view of evolution where individuals act to maximize the survival of their own genes, providing a stark theoretical contrast to the altruistic focus of the caregiving intelligence.  
   
 ### 🎨 Creatively Related  
   
 * 🌐 Diffusion of Innovations by Everett Rogers: 📣 Provides a social science theory on how new ideas and technology spread, linking the video's exploration/exploitation concepts to the mechanics of social change and adoption rates in a system.  
 * 👨‍👩‍👧 All Our Relations by Sarah Blaffer Hrdy: 🐒 Examines the evolutionary roots of human cooperative breeding and alloparenting (care by non-parents), providing a deep anthropological context for the video's focus on the communal role of caregivers.  
-* [🔬🔄 The Structure of Scientific Revolutions](/content/books/the-structure-of-scientific-revolutions.md) by Thomas S. Kuhn: 🧪 Explores how scientific understanding changes, shifting from a stable period of exploitation (normal science) to a period of broad exploration (revolutionary science), mirroring the developmental shift discussed in the video.  
+* [🔬🔄 The Structure of Scientific Revolutions](../books/the-structure-of-scientific-revolutions.md) by Thomas S. Kuhn: 🧪 Explores how scientific understanding changes, shifting from a stable period of exploitation (normal science) to a period of broad exploration (revolutionary science), mirroring the developmental shift discussed in the video.  
   
 ## 🐦 Tweet  
 <blockquote class="twitter-tweet" data-theme="dark"><p lang="en" dir="ltr">🧠👶🐒 Alison Gopnik, The Evolution of Human Intelligences | Natural Philosophy Forum Lecture 2025<br><br>🧠 Knowledge Acquisition | 👶 Child Development | 🐒 Primate Evolution | 👵 Eldercare | 🤖 Artificial Intelligence<a href="https://twitter.com/AlisonGopnik?ref_src=twsrc%5Etfw">@AlisonGopnik</a><a href="https://t.co/xHajYyEjHU">https://t.co/xHajYyEjHU</a></p>&mdash; Bryan Grounds (@bagrounds) <a href="https://twitter.com/bagrounds/status/1991194828894568908?ref_src=twsrc%5Etfw">November 19, 2025</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>

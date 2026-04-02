@@ -10,7 +10,7 @@ Channel: Y Combinator
 tags:
 youtube: https://youtu.be/RNJCfif1dPY
 ---
-[Home](/content/index.md) > [Videos](/content/videos/index.md) | [👨‍🏫🤖 Andrew Ng](/content/people/andrew-ng.md)  
+[Home](../index.md) > [Videos](./index.md) | [👨‍🏫🤖 Andrew Ng](../people/andrew-ng.md)  
 # 🤖🚀📈 Andrew Ng: Building Faster with AI  
 ![Andrew Ng: Building Faster with AI](https://youtu.be/RNJCfif1dPY)  
   
@@ -29,12 +29,12 @@ youtube: https://youtu.be/RNJCfif1dPY
   
 ## 📚 📖 Book Recommendations  
 * **🤖 For AI and Machine Learning Foundations:**  
-    * [🧠💻🤖 Deep Learning](/content/books/deep-learning.md) by Ian Goodfellow, Yoshua Bengio, and Aaron Courville  
+    * [🧠💻🤖 Deep Learning](../books/deep-learning.md) by Ian Goodfellow, Yoshua Bengio, and Aaron Courville  
     * 🧑‍🏫 "Machine Learning Yearning" by Andrew Ng (available for free online)  
 * **🚀 For Startup Execution and Speed:**  
-    * [📉🧪🚀 The Lean Startup: How Today's Entrepreneurs Use Continuous Innovation to Create Radically Successful Businesses](/content/books/the-lean-startup.md) by Eric Ries  
+    * [📉🧪🚀 The Lean Startup: How Today's Entrepreneurs Use Continuous Innovation to Create Radically Successful Businesses](../books/the-lean-startup.md) by Eric Ries  
     * 📈 "Blitzscaling" by Reid Hoffman and Chris Yeh  
-    * [❓🎯 Start with Why: How Great Leaders Inspire Everyone to Take Action](/content/books/start-with-why-how-great-leaders-inspire-everyone-to-take-action.md) by Simon Sinek (for developing concrete ideas and purpose)  
+    * [❓🎯 Start with Why: How Great Leaders Inspire Everyone to Take Action](../books/start-with-why-how-great-leaders-inspire-everyone-to-take-action.md) by Simon Sinek (for developing concrete ideas and purpose)  
 * **📣 For Product Management and Feedback:**  
     * 🧑‍💻 "Inspired: How to Create Tech Products Customers Love" by Marty Cagan  
     * 🗣️ "The Mom Test: How to talk to anyone about your business idea and know if it's good" by Rob Fitzpatrick  

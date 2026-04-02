@@ -9,7 +9,7 @@ Platform:
 Channel: Saturday Night Live
 tags:
 ---
-[Home](/content/index.md) > [Videos](/content/videos/index.md)  
+[Home](../index.md) > [Videos](./index.md)  
 # Trump Tariff Cold Open - SNL  
 ![Trump Tariff Cold Open - SNL](https://youtu.be/VEle3pZRqmI)  
   

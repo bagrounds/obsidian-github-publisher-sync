@@ -6,8 +6,11 @@ URL: https://bagrounds.org/books/extreme-ownership-how-us-navy-seals-lead-and-wi
 share: true
 CTA: 🚀 Seize control.
 affiliate link: https://amzn.to/4bfzKwM
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_time: 2026-04-02T00:00:00Z
+force_analyze_links: false
 ---
-[Home](/content/index.md) > [Books](/content/books/index.md)  
+[Home](../index.md) > [Books](./index.md)  
 # 🫡👑🏆 Extreme Ownership: How U.S. Navy SEALs Lead and Win  
 [🛒 Extreme Ownership: How U.S. Navy SEALs Lead and Win. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4bfzKwM)  
   
@@ -65,7 +68,7 @@ affiliate link: https://amzn.to/4bfzKwM
 ## 📚 Book Recommendations  
 ### ➡️ Similar Books  
 * 📖 The Dichotomy of Leadership by Jocko Willink and Leif Babin  
-* [🧘🟰🕊️ Discipline Equals Freedom: Field Manual](/content/books/discipline-equals-freedom-field-manual.md) by Jocko Willink  
+* [🧘🟰🕊️ Discipline Equals Freedom: Field Manual](./discipline-equals-freedom-field-manual.md) by Jocko Willink  
 * 📖 Can't Hurt Me: Master Your Mind and Defy the Odds by David Goggins  
 * 📖 Turn the Ship Around! by L. David Marquet  
   
@@ -75,10 +78,10 @@ affiliate link: https://amzn.to/4bfzKwM
 * 📖 Radical Candor: Be a Kickass Boss Without Losing Your Humanity by Kim Scott  
   
 ### 🔗 Related Books  
-* [🔄🧠💪 The Power of Habit: Why We Do What We Do in Life and Business](/content/books/the-power-of-habit.md) by Charles Duhigg  
-* [⚛️🔄 Atomic Habits: An Easy & Proven Way to Build Good Habits & Break Bad Ones](/content/books/atomic-habits.md) by James Clear  
-* [❓🎯 Start with Why: How Great Leaders Inspire Everyone to Take Action](/content/books/start-with-why-how-great-leaders-inspire-everyone-to-take-action.md) by Simon Sinek  
-* [👍➡️👍👍 Good to Great: Why Some Companies Make the Leap...And Others Don't](/content/books/good-to-great.md) by Jim Collins  
+* [🔄🧠💪 The Power of Habit: Why We Do What We Do in Life and Business](./the-power-of-habit.md) by Charles Duhigg  
+* [⚛️🔄 Atomic Habits: An Easy & Proven Way to Build Good Habits & Break Bad Ones](./atomic-habits.md) by James Clear  
+* [❓🎯 Start with Why: How Great Leaders Inspire Everyone to Take Action](./start-with-why-how-great-leaders-inspire-everyone-to-take-action.md) by Simon Sinek  
+* [👍➡️👍👍 Good to Great: Why Some Companies Make the Leap...And Others Don't](./good-to-great.md) by Jim Collins  
   
 ## 🫵 What Do You Think?  
 🤔 Which of the Extreme Ownership principles resonates most with your own leadership philosophy, and which do you find most challenging to implement in your daily life or work? Share your thoughts below!

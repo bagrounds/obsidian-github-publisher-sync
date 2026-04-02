@@ -7,7 +7,7 @@ share: true
 affiliate link: https://amzn.to/41jFDTS
 CTA: 🫁 Discover proper breathing.
 ---
-[Home](/content/index.md) > [Books](/content/books/index.md)  
+[Home](../index.md) > [Books](./index.md)  
 # 🫁🌬️ Breath: The New Science of a Lost Art  
 [🛒 Breath: The New Science of a Lost Art. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/41jFDTS)  
   
@@ -43,20 +43,20 @@ CTA: 🫁 Discover proper breathing.
   
 * 📖 **The Story of the Human Body: Evolution, Health, and Disease** by Daniel Lieberman: This book provides a broader evolutionary context for many of the health issues Nestor touches upon, exploring how our bodies are mismatched for the modern world.  
 * 📖 **Gut: The Inside Story of Our Body's Most Underrated Organ** by Giulia Enders: Much like *Breath* focuses on a single bodily function, this book offers a fascinating and accessible deep dive into the science of the digestive system and its profound impact on our overall health.  
-* **[😴💭 Why We Sleep: Unlocking the Power of Sleep and Dreams](/content/books/why-we-sleep-unlocking-the-power-of-sleep-and-dreams.md)** by Matthew Walker: This book is a comprehensive exploration of another fundamental pillar of health that is often neglected in modern society, much like proper breathing.  
+* **[😴💭 Why We Sleep: Unlocking the Power of Sleep and Dreams](./why-we-sleep-unlocking-the-power-of-sleep-and-dreams.md)** by Matthew Walker: This book is a comprehensive exploration of another fundamental pillar of health that is often neglected in modern society, much like proper breathing.  
   
 ### ⚖️ Contrasting Perspectives and Wider Views  
   
 * 📖 **The Oxygen Advantage: The Simple, Scientifically Proven Breathing Techniques for a Healthier, Slimmer, Faster, and Fitter You** by Patrick McKeown: While also focused on breathing, this book offers a more performance-oriented approach, with specific techniques for athletes and those looking to optimize their physical capabilities.  
 * 📖 **Exercised: Why Something We Never Evolved to Do Is Healthy and Rewarding** by Daniel Lieberman: This book provides a contrasting perspective on health by examining the evolutionary history of physical activity and challenging many modern myths about exercise.  
-* **[🤕🎼🧠 The Body Keeps the Score: Brain, Mind, and Body in the Healing of Trauma](/content/books/the-body-keeps-the-score-brain-mind-and-body-in-the-healing-of-trauma.md)** by Bessel van der Kolk: This book offers a different lens on how the body holds onto experiences, focusing on trauma and its physiological and psychological effects, where breathing techniques can be a powerful tool for healing.  
+* **[🤕🎼🧠 The Body Keeps the Score: Brain, Mind, and Body in the Healing of Trauma](./the-body-keeps-the-score-brain-mind-and-body-in-the-healing-of-trauma.md)** by Bessel van der Kolk: This book offers a different lens on how the body holds onto experiences, focusing on trauma and its physiological and psychological effects, where breathing techniques can be a powerful tool for healing.  
   
 ### 🎨 Creatively Related Reads: Lost Arts and Fundamental Skills  
   
-* **[🏃‍♂️⛰️ Born to Run: A Hidden Tribe, Superathletes, and the Greatest Race the World Has Never Seen](/content/books/born-to-run-a-hidden-tribe-superathletes-and-the-greatest-race-the-world-has-never-seen.md)** by Christopher McDougall: This book explores another "lost art" of human movement—natural running—and tells a captivating story of a remote tribe that has maintained this ability.  
-* **[📵 How to Do Nothing: Resisting the Attention Economy](/content/books/how-to-do-nothing-resisting-the-attention-economy.md)** by Jenny Odell: In a world of constant distraction, this book makes a case for rediscovering the lost art of paying attention and being present in our physical surroundings.  
+* **[🏃‍♂️⛰️ Born to Run: A Hidden Tribe, Superathletes, and the Greatest Race the World Has Never Seen](./born-to-run-a-hidden-tribe-superathletes-and-the-greatest-race-the-world-has-never-seen.md)** by Christopher McDougall: This book explores another "lost art" of human movement—natural running—and tells a captivating story of a remote tribe that has maintained this ability.  
+* **[📵 How to Do Nothing: Resisting the Attention Economy](./how-to-do-nothing-resisting-the-attention-economy.md)** by Jenny Odell: In a world of constant distraction, this book makes a case for rediscovering the lost art of paying attention and being present in our physical surroundings.  
 * 📖 **Salt, Fat, Acid, Heat: Mastering the Elements of Good Cooking** by Samin Nosrat: This book breaks down the fundamentals of cooking into four simple elements, empowering readers to become more intuitive and creative in the kitchen, much like *Breath* aims to do for our breathing.  
 * 📖 **The Wim Hof Method: Activate Your Full Human Potential** by Wim Hof: For those intrigued by the more extreme breathing techniques mentioned in *Breath*, this book offers a firsthand account and practical guide to the Wim Hof Method, which involves a combination of breathing exercises, cold exposure, and mindset training.  
   
-## 💬 [Gemini](/content/software/gemini.md) Prompt (gemini-2.5-pro)  
+## 💬 [Gemini](../software/gemini.md) Prompt (gemini-2.5-pro)  
 > Write a markdown-formatted (start headings at level H2) book report, followed by a plethora of additional similar, contrasting, and creatively related book recommendations on Breath: The New Science of a Lost Art. Never put book titles in quotes or italics. Be thorough in content discussed but concise and economical with your language. Structure the report with section headings and bulleted lists to avoid long blocks of text.

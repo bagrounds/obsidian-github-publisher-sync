@@ -10,7 +10,7 @@ Channel: SpoonFedStudy
 tags:
 youtube: https://youtu.be/4h5NnHzBS1M
 ---
-[Home](/content/index.md) > [Videos](/content/videos/index.md) | [🥄👶📚 SpoonFedStudy](/content/topics/spoonfedstudy.md)  
+[Home](../index.md) > [Videos](./index.md) | [🥄👶📚 SpoonFedStudy](../topics/spoonfedstudy.md)  
 # 🧠🛠️♾️💪 How to reprogram your mind to have infinite resilience  
 ![How to reprogram your mind to have infinite resilience.](https://youtu.be/4h5NnHzBS1M)  
   
@@ -28,7 +28,7 @@ youtube: https://youtu.be/4h5NnHzBS1M
 * 🧐 For a better understanding, one could explore the neurological basis of the "theater of the mind" concept or research the role of societal and economic structures in creating or diminishing resilience.  
   
 ## 📚 Book Recommendations  
-* [❤️‍🔥💪 Grit: The Power of Passion and Perseverance](/content/books/grit-the-power-of-passion-and-perseverance.md) by Angela Duckworth: This book argues that success comes from a combination of passion and perseverance, a concept very similar to the video's "R."  
-* [🌱🧘🏼‍♀️🏆 Mindset: The New Psychology of Success](/content/books/mindset.md) by Carol S. Dweck: This book explores the power of a growth mindset, which is the foundational belief that you can improve your abilities and is a prerequisite for the video's methods.  
+* [❤️‍🔥💪 Grit: The Power of Passion and Perseverance](../books/grit-the-power-of-passion-and-perseverance.md) by Angela Duckworth: This book argues that success comes from a combination of passion and perseverance, a concept very similar to the video's "R."  
+* [🌱🧘🏼‍♀️🏆 Mindset: The New Psychology of Success](../books/mindset.md) by Carol S. Dweck: This book explores the power of a growth mindset, which is the foundational belief that you can improve your abilities and is a prerequisite for the video's methods.  
 * 💡 The Antidote by Oliver Burkeman: This book offers a contrasting, more "negative" approach to self-help, suggesting that embracing uncertainty and failure is a more effective path to peace of mind.  
-* [🤔🐇🐢 Thinking, Fast and Slow](/content/books/thinking-fast-and-slow.md) by Daniel Kahneman: This book provides a scientific understanding of how we think and make decisions, offering a deeper explanation for the mental processes described in the video.
+* [🤔🐇🐢 Thinking, Fast and Slow](../books/thinking-fast-and-slow.md) by Daniel Kahneman: This book provides a scientific understanding of how we think and make decisions, offering a deeper explanation for the mental processes described in the video.

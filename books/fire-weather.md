@@ -9,7 +9,7 @@ tags:
 affiliate link: https://amzn.to/3JIwH4B
 CTA: 🌎 Confront catastrophe.
 ---
-[Home](../index.md) > [Books](./index.md)  
+[🏡 Home](../index.md) > [📚 Books](./index.md)  
 # 🔥⛈️ Fire Weather: A True Story from a Hotter World  
 [🛒 Fire Weather: A True Story from a Hotter World. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3JIwH4B)  
   

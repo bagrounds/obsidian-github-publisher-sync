@@ -7,7 +7,7 @@ share: true
 affiliate link: https://amzn.to/3GytSlA
 CTA: 📢 Confront deception.
 ---
-[Home](/content/index.md) > [Books](/content/books/index.md)  
+[Home](../index.md) > [Books](./index.md)  
 # 🚫✅🤥 Post-Truth  
 [🛒 Post-Truth. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3GytSlA)  
   
@@ -34,9 +34,9 @@ CTA: 📢 Confront deception.
   
 ### ✅ Similar & Supporting Works  
   
-* **[💀👨‍🏫 The Death of Expertise: The Campaign Against Established Knowledge and Why It Matters](/content/books/the-death-of-expertise-the-campaign-against-established-knowledge-and-why-it-matters.md)** **by Tom Nichols:** Explores the societal rejection of expert opinion and the dangerous consequences of a culture that values personal opinion over established knowledge.  
+* **[💀👨‍🏫 The Death of Expertise: The Campaign Against Established Knowledge and Why It Matters](./the-death-of-expertise-the-campaign-against-established-knowledge-and-why-it-matters.md)** **by Tom Nichols:** Explores the societal rejection of expert opinion and the dangerous consequences of a culture that values personal opinion over established knowledge.  
 * ⚔️ ***Weaponized Lies: How to Think Critically in the Post-Truth Era*** **by Daniel J. Levitin:** Provides a practical guide to identifying and navigating the flood of misinformation, focusing on developing critical thinking skills for the digital age.  
-* **[💰🤥 Merchants of Doubt](/content/books/merchants-of-doubt.md): How a Handful of Scientists Obscured the Truth on Issues from Tobacco Smoke to Global Warming** **by Naomi Oreskes and Erik M. Conway:** Offers a detailed historical account of the tactics used by politically and corporately motivated scientists to deliberately obscure facts and manufacture doubt.  
+* **[💰🤥 Merchants of Doubt](./merchants-of-doubt.md): How a Handful of Scientists Obscured the Truth on Issues from Tobacco Smoke to Global Warming** **by Naomi Oreskes and Erik M. Conway:** Offers a detailed historical account of the tactics used by politically and corporately motivated scientists to deliberately obscure facts and manufacture doubt.  
 * 🗣️ ***How to Talk to a Science Denier*** **by Lee McIntyre:** A follow-up to *Post-Truth*, this book offers practical strategies for engaging in productive conversations with those who reject scientific consensus on various topics.  
   
 ### 🆚 Contrasting & Critical Perspectives  
@@ -47,10 +47,10 @@ CTA: 📢 Confront deception.
   
 ### 🎨 Creatively Related Recommendations  
   
-* **[👁️ Nineteen Eighty-Four](/content/books/1984.md)** **by George Orwell:** The classic dystopian novel that masterfully illustrates the concept of a state-controlled reality where truth is whatever the ruling party says it is. McIntyre himself quotes Orwell frequently in his work.  
-* **[😇🧠 The Righteous Mind: Why Good People Are Divided by Politics and Religion](/content/books/the-righteous-mind.md)** **by Jonathan Haidt:** A work of social psychology that explains the moral foundations of different political viewpoints, offering insight into why people on opposite sides of an issue can feel so certain of their own righteousness and so dismissive of the other's facts.  
+* **[👁️ Nineteen Eighty-Four](./1984.md)** **by George Orwell:** The classic dystopian novel that masterfully illustrates the concept of a state-controlled reality where truth is whatever the ruling party says it is. McIntyre himself quotes Orwell frequently in his work.  
+* **[😇🧠 The Righteous Mind: Why Good People Are Divided by Politics and Religion](./the-righteous-mind.md)** **by Jonathan Haidt:** A work of social psychology that explains the moral foundations of different political viewpoints, offering insight into why people on opposite sides of an issue can feel so certain of their own righteousness and so dismissive of the other's facts.  
 * 🔥 ***Fahrenheit 451*** **by Ray Bradbury:** A novel that explores a future where books are outlawed and critical thought is suppressed in favor of mindless entertainment, serving as a powerful allegory for the dangers of intellectual apathy.  
-* **[🧑‍🤝‍🧑🧠 The Undoing Project: A Friendship That Changed Our Minds](/content/books/the-undoing-project-a-friendship-that-changed-our-minds.md)** **by Michael Lewis:** Tells the story of psychologists Daniel Kahneman and Amos Tversky, whose work on cognitive biases forms the scientific backbone for understanding why humans are so susceptible to the irrational thinking that post-truth exploits.  
+* **[🧑‍🤝‍🧑🧠 The Undoing Project: A Friendship That Changed Our Minds](./the-undoing-project-a-friendship-that-changed-our-minds.md)** **by Michael Lewis:** Tells the story of psychologists Daniel Kahneman and Amos Tversky, whose work on cognitive biases forms the scientific backbone for understanding why humans are so susceptible to the irrational thinking that post-truth exploits.  
   
-## 💬 [Gemini](/content/software/gemini.md) Prompt (gemini-2.5-pro)  
+## 💬 [Gemini](../software/gemini.md) Prompt (gemini-2.5-pro)  
 > Write a markdown-formatted (start headings at level H2) book report, followed by a plethora of additional similar, contrasting, and creatively related book recommendations on Post-Truth. Be thorough in content discussed but concise and economical with your language. Structure the report with section headings and bulleted lists to avoid long blocks of text.

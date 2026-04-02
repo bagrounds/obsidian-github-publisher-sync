@@ -8,13 +8,16 @@ Author:
 tags:
 affiliate link: https://amzn.to/43YVI2Y
 CTA: 🧠 Reclaim focus.
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_time: 2026-04-01T00:00:00Z
+force_analyze_links: false
 ---
-[Home](/content/index.md) > [Books](/content/books/index.md)  
+[Home](../index.md) > [Books](./index.md)  
 # 🧘 Indistractable: How to Control Your Attention and Choose Your Life  
 [🛒 Indistractable: How to Control Your Attention and Choose Your Life. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/43YVI2Y)  
   
 ## 📝🐒 Human Notes   
-- [🎣📱 Hooked: How to Build Habit-Forming Products](/content/books/hooked-how-to-build-habit-forming-products.md)  
+- [🎣📱 Hooked: How to Build Habit-Forming Products](./hooked-how-to-build-habit-forming-products.md)  
   
 ## 📖 Book Report: Indistractable  
   
@@ -74,14 +77,14 @@ CTA: 🧠 Reclaim focus.
 * 🎯 The ultimate goal is to live a life of intention and choice ✅, free from the constant pull of distraction 🚫📱🔔.  
   
 ### 📚 Book Recommendations  
-* **Best Alternate Book on the Same Topic:** [🤿💼 Deep Work: Rules for Focused Success in a Distracted World](/content/books/deep-work.md) by Cal Newport. 🧘 (Focuses on the value of deep, focused work in a distracted world.)  
-* **Best Tangentially Related Book:** [⚛️🔄 Atomic Habits: An Easy & Proven Way to Build Good Habits & Break Bad Ones](/content/books/atomic-habits.md) by James Clear. ⚛️ (Provides a comprehensive framework for habit formation and change.)  
-* **Best Diametrically Opposed Book:** [🥱🤓 Bored and Brilliant: How Spacing Out Can Unlock Your Most Productive and Creative Self](/content/books/bored-and-brilliant.md) by Manoush Zomorodi. 😴 (Argues for the importance of boredom and unstructured time for creativity and innovation.)  
+* **Best Alternate Book on the Same Topic:** [🤿💼 Deep Work: Rules for Focused Success in a Distracted World](./deep-work.md) by Cal Newport. 🧘 (Focuses on the value of deep, focused work in a distracted world.)  
+* **Best Tangentially Related Book:** [⚛️🔄 Atomic Habits: An Easy & Proven Way to Build Good Habits & Break Bad Ones](./atomic-habits.md) by James Clear. ⚛️ (Provides a comprehensive framework for habit formation and change.)  
+* **Best Diametrically Opposed Book:** [🥱🤓 Bored and Brilliant: How Spacing Out Can Unlock Your Most Productive and Creative Self](./bored-and-brilliant.md) by Manoush Zomorodi. 😴 (Argues for the importance of boredom and unstructured time for creativity and innovation.)  
 * **Best Fiction Book That Incorporates Related Ideas:** The Circle by Dave Eggers. ⭕ (Explores the dangers of constant connectivity and the erosion of privacy.)  
-* **Best More General Book:** [🤔🐇🐢 Thinking, Fast and Slow](/content/books/thinking-fast-and-slow.md) by Daniel Kahneman. 🧠 (Explores the two systems of thinking and their impact on decision-making.)  
-* **Best More Specific Book:** [🎣📱 Hooked: How to Build Habit-Forming Products](/content/books/hooked-how-to-build-habit-forming-products.md) by Nir Eyal. 🎣 (Focuses on the psychology of habit formation in product design.)  
-* **Best More Rigorous Book:** [💪📈 Willpower: Rediscovering the Greatest Human Strength](/content/books/willpower.md) by Roy F. Baumeister and John Tierney. 💪 (Provides a more in-depth, research-based exploration of willpower and self-control.)  
-* **Best More Accessible Book:** [🔄🧠💪 The Power of Habit: Why We Do What We Do in Life and Business](/content/books/the-power-of-habit.md) by Charles Duhigg. 💡 (Explains the science of habit formation in a clear and engaging way.)  
+* **Best More General Book:** [🤔🐇🐢 Thinking, Fast and Slow](./thinking-fast-and-slow.md) by Daniel Kahneman. 🧠 (Explores the two systems of thinking and their impact on decision-making.)  
+* **Best More Specific Book:** [🎣📱 Hooked: How to Build Habit-Forming Products](./hooked-how-to-build-habit-forming-products.md) by Nir Eyal. 🎣 (Focuses on the psychology of habit formation in product design.)  
+* **Best More Rigorous Book:** [💪📈 Willpower: Rediscovering the Greatest Human Strength](./willpower.md) by Roy F. Baumeister and John Tierney. 💪 (Provides a more in-depth, research-based exploration of willpower and self-control.)  
+* **Best More Accessible Book:** [🔄🧠💪 The Power of Habit: Why We Do What We Do in Life and Business](./the-power-of-habit.md) by Charles Duhigg. 💡 (Explains the science of habit formation in a clear and engaging way.)  
   
 ## 💬 [Gemini](https://gemini.google.com) Prompt  
 > Write a markdown-formatted (start headings at level H2) book report on Indistractable. Be thorough in content discussed but concise and economical with your language. Structure the report with section headings and bulleted lists to avoid long blocks of text. Make the following additional book recommendations: the best alternate book on the same topic; the best book that is tangentially related; the best book that is diametrically opposed; the best fiction book that incorporates related ideas; the best book that is more general or more specific; and the best book that is more rigorous or more accessible than this book.

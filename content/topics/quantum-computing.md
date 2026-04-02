@@ -4,8 +4,11 @@ aliases:
   - ⚛️ Quantum Computing
 title: ⚛️ Quantum Computing
 URL: https://bagrounds.org/topics/quantum-computing
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_time: 2026-04-01T00:00:00Z
+force_analyze_links: false
 ---
-[Home](/content/index.md) > [Topics](/content/topics/index.md)  
+[Home](../index.md) > [Topics](./index.md)  
 # ⚛️ Quantum Computing  
 ## 🤖 AI Summary  
 ### ⚛️ What Is It?  
@@ -175,11 +178,11 @@ Quantum computing is weird. It's like a coin that's both heads and tails until y
 - **Topical:** "Quantum Computing for Everyone" by Chris Bernhardt 📖  
 - **Tangentially Related:** "The Fabric of Reality" by David Deutsch 🌌  
 - **Topically Opposed:** "The Emperor's New Mind" by Roger Penrose 🤔  
-- **More General:** [♾️📐🎶🥨 Gödel, Escher, Bach: An Eternal Golden Braid](/content/books/godel-escher-bach.md) by Douglas Hofstadter  
+- **More General:** [♾️📐🎶🥨 Gödel, Escher, Bach: An Eternal Golden Braid](../books/godel-escher-bach.md) by Douglas Hofstadter  
 - **More Specific:** "Quantum Computation and Quantum Information" by Nielsen and Chuang ⚛️ℹ️  
 - **Fictional:** "Permutation City" by Greg Egan 🏙️  
 - **Rigorous:** "Principles of Quantum Mechanics" by R. Shankar 📚⚛️  
-- **Accessible:** [🍄🌍🧠🔮 Entangled Life: How Fungi Make Our Worlds, Change Our Minds & Shape Our Futures](/content/books/entangled-life-how-fungi-make-our-worlds-change-our-minds-shape-our-futures.md) by Merlin Sheldrake (uses entanglement metaphorically, but explores fascinating complex systems) 🍄🔗  
+- **Accessible:** [🍄🌍🧠🔮 Entangled Life: How Fungi Make Our Worlds, Change Our Minds & Shape Our Futures](../books/entangled-life-how-fungi-make-our-worlds-change-our-minds-shape-our-futures.md) by Merlin Sheldrake (uses entanglement metaphorically, but explores fascinating complex systems) 🍄🔗  
   
 ### 📺 Links To Relevant YouTube Channels Or Videos  
   

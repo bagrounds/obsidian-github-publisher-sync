@@ -10,7 +10,7 @@ Channel: Yuval Noah Harari
 tags:
 youtube: https://youtu.be/5qIfC-fsxgM
 ---
-[Home](/content/index.md) > [Videos](/content/videos/index.md)  
+[Home](../index.md) > [Videos](./index.md)  
 # 🌍❓🤔 Making Sense of a World in Crisis | Yuval Noah Harari  
 ![Making Sense of a World in Crisis | Yuval Noah Harari](https://youtu.be/5qIfC-fsxgM)  
   
@@ -54,13 +54,13 @@ youtube: https://youtu.be/5qIfC-fsxgM
   
 ## 📚 Book Recommendations  
 ### ↔️ Similar  
-* [👁️‍🗨️💰⛓️👤 The Age of Surveillance Capitalism: The Fight for a Human Future at the New Frontier of Power](/content/books/the-age-of-surveillance-capitalism.md) by Shoshana Zuboff: 👁️ This book details how technology giants profit by monitoring and predicting behavior, closely paralleling the video's concerns about algorithms hacking human systems for engagement.  
-* [🧠🧑‍💻 The Hacking of the American Mind: The Science Behind the Corporate Takeover of Our Bodies and Brains](/content/books/the-hacking-of-the-american-mind-the-science-behind-the-corporate-takeover-of-our-bodies-and-brains.md) by Robert Lustig: 🍬 This book explains the neurochemical basis of pleasure versus happiness, relevant to the speaker's claim that tech companies exploit the brain's weaknesses for addiction and engagement.  
+* [👁️‍🗨️💰⛓️👤 The Age of Surveillance Capitalism: The Fight for a Human Future at the New Frontier of Power](../books/the-age-of-surveillance-capitalism.md) by Shoshana Zuboff: 👁️ This book details how technology giants profit by monitoring and predicting behavior, closely paralleling the video's concerns about algorithms hacking human systems for engagement.  
+* [🧠🧑‍💻 The Hacking of the American Mind: The Science Behind the Corporate Takeover of Our Bodies and Brains](../books/the-hacking-of-the-american-mind-the-science-behind-the-corporate-takeover-of-our-bodies-and-brains.md) by Robert Lustig: 🍬 This book explains the neurochemical basis of pleasure versus happiness, relevant to the speaker's claim that tech companies exploit the brain's weaknesses for addiction and engagement.  
   
 ### 🆚 Contrasting  
 * 💡 The Better Angels of Our Nature by Steven Pinker: 🕊️ This provides a data-driven argument that human violence and irrationality are declining globally, contrasting the video's pessimistic assessment of the current collapse of the global order and rise in political fighting.  
 * 🧭 Political Tribes by Amy Chua: 👨‍👩‍👧‍👦 This argues that group loyalty and tribal identity are fundamental human impulses that shape politics worldwide, suggesting tribalism is an inevitable reality rather than just a cynical tool used by leaders.  
   
 ### 🎨 Creatively Related  
-* [🤔🌍📈✅ Factfulness: Ten Reasons We're Wrong About the World - and Why Things Are Better Than You Think](/content/books/factfulness.md) by Hans Rosling: 📈 This book promotes a fact-based worldview, offering practical ways to avoid the distortions and emotional manipulation that the video claims are amplified by algorithmic news editors.  
+* [🤔🌍📈✅ Factfulness: Ten Reasons We're Wrong About the World - and Why Things Are Better Than You Think](../books/factfulness.md) by Hans Rosling: 📈 This book promotes a fact-based worldview, offering practical ways to avoid the distortions and emotional manipulation that the video claims are amplified by algorithmic news editors.  
 * 🧘 21 Lessons for the 21st Century by Yuval Noah Harari: 🔮 This features Harari's own deeper dives into many topics covered, including the threat of AI, surveillance, and the need for mental resilience in a chaotic world.

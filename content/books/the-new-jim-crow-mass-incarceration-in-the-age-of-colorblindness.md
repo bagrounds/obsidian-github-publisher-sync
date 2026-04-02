@@ -6,8 +6,11 @@ URL: https://bagrounds.org/books/the-new-jim-crow-mass-incarceration-in-the-age-
 share: true
 affiliate link: https://amzn.to/4l1KOja
 CTA: Recognize the system.
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_time: 2026-04-01T00:00:00Z
+force_analyze_links: false
 ---
-[Home](/content/index.md) > [Books](/content/books/index.md)  
+[Home](../index.md) > [Books](./index.md)  
 # 🧑🏿⛓️🙈 The New Jim Crow: Mass Incarceration in the Age of Colorblindness  
 [🛒 The New Jim Crow: Mass Incarceration in the Age of Colorblindness. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4l1KOja)  
   
@@ -45,7 +48,7 @@ CTA: Recognize the system.
 * 📚 **Locking Up Our Own: Crime and Punishment in Black America** by 👨🏿 James Forman Jr.: Explores the complex history of how 👨🏿 Black elected officials and community members grappled with rising crime and contributed to the era of ⛓️ mass incarceration.  
 * 📚 **Golden Gulag: Prisons, Surplus, Crisis, and Opposition in Globalizing California** by 👩🏽‍🏫 Ruth Wilson Gilmore: An academic analysis of the political economy of prison building in California and its connection to capitalism and state formation.  
 * 🎬 **The House I Live In** (film, but often recommended alongside the book): A documentary exploring the history and impact of the 💊 War on Drugs.  
-* **[🧑🏿‍⚖️🔄 Just Mercy: A Story of Justice and Redemption](/content/books/just-mercy-a-story-of-justice-and-redemption.md)** by 👨🏿 Bryan Stevenson: A powerful memoir and account of fighting for justice for wrongly condemned individuals, highlighting systemic issues within the justice system.  
+* **[🧑🏿‍⚖️🔄 Just Mercy: A Story of Justice and Redemption](./just-mercy-a-story-of-justice-and-redemption.md)** by 👨🏿 Bryan Stevenson: A powerful memoir and account of fighting for justice for wrongly condemned individuals, highlighting systemic issues within the justice system.  
 * 📚 **Chokehold: Policing Black Men** by 👨🏿 Paul Butler: Examines the history and current reality of aggressive policing targeting 👨🏿 Black men.  
 * 📚 **The Color of Law: A Forgotten History of How Our Government Segregated America** by 👨🏻 Richard Rothstein: While focused on 🏘️ housing, it provides crucial context for understanding how government policies created and maintain racial segregation, which intersects with the themes in *📚 The New Jim Crow*.  
 * 📚 **Slavery by Another Name: The Re-Enslavement of Black People in America from the Civil War to World War II** by 👨🏻 Douglas A. Blackmon: Explores the post-Civil War system of forced labor, including convict leasing, which served as a precursor to later forms of racial control.  
@@ -74,5 +77,5 @@ CTA: Recognize the system.
 * 📚 **Chain-Gang All-Stars** by 👨🏿 Nana Kwame Adjei-Brenyah: A dystopian novel offering a satirical but searing critique of the for-profit prison system through the lens of televised death matches.  
 * 📚 **Hijab Butch Blues** by 👩 Lamya H.: A memoir exploring themes of identity, power, and justice through the experiences of a queer hijabi Muslim immigrant, touching on navigating systems of control and marginalization.  
   
-## 💬 [Gemini](/content/software/gemini.md) Prompt (gemini-2.5-flash-preview-04-17)  
+## 💬 [Gemini](../software/gemini.md) Prompt (gemini-2.5-flash-preview-04-17)  
 > Write a markdown-formatted (start headings at level H2) book report, followed by a plethora of additional similar, contrasting, and creatively related book recommendations on The New Jim Crow: Mass Incarceration in the Age of Colorblindness. Be thorough in content discussed but concise and economical with your language. Structure the report with section headings and bulleted lists to avoid long blocks of text.

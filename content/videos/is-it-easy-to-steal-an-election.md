@@ -10,7 +10,7 @@ Channel: Howtown
 tags:
 youtube: https://youtu.be/oa7tcuE2TP0
 ---
-[Home](/content/index.md) > [Videos](/content/videos/index.md)  
+[Home](../index.md) > [Videos](./index.md)  
 # 🗳️🔓🤔 Is it easy to steal an election?  
 ![Is it easy to steal an election?](https://youtu.be/oa7tcuE2TP0)  
   
@@ -30,10 +30,10 @@ This video provides a practical, ground-level perspective on election security b
   
 ## 📚 Book Recommendations  
 * 📚 *Cybersecurity and the Future of Elections* by Robert K. Knake: Explores the technological threats to election systems and potential solutions.  
-* [🧠🧑‍💻 The Hacking of the American Mind: The Science Behind the Corporate Takeover of Our Bodies and Brains](/content/books/the-hacking-of-the-american-mind-the-science-behind-the-corporate-takeover-of-our-bodies-and-brains.md) by Robert Lustig: Delves into how modern technologies and information can be used to manipulate public opinion and behavior.  
-* [🏛️⛓️ Democracy in Chains: The Deep History of the Radical Right's Stealth Plan for America](/content/books/democracy-in-chains-the-deep-history-of-the-radical-rights-stealth-plan-for-america.md) by Nancy MacLean: Provides a historical perspective on efforts to influence and reshape democratic processes.  
-* [🤔🐇🐢 Thinking, Fast and Slow](/content/books/thinking-fast-and-slow.md) by Daniel Kahneman: Offers insights into cognitive biases that can make individuals susceptible to misinformation.  
-* [⚠️🥴🕹️🌐 The Fifth Risk](/content/books/the-fifth-risk.md) by Michael Lewis: Discusses the importance of competent governance and the dangers of undermining public institutions, including those responsible for elections.  
+* [🧠🧑‍💻 The Hacking of the American Mind: The Science Behind the Corporate Takeover of Our Bodies and Brains](../books/the-hacking-of-the-american-mind-the-science-behind-the-corporate-takeover-of-our-bodies-and-brains.md) by Robert Lustig: Delves into how modern technologies and information can be used to manipulate public opinion and behavior.  
+* [🏛️⛓️ Democracy in Chains: The Deep History of the Radical Right's Stealth Plan for America](../books/democracy-in-chains-the-deep-history-of-the-radical-rights-stealth-plan-for-america.md) by Nancy MacLean: Provides a historical perspective on efforts to influence and reshape democratic processes.  
+* [🤔🐇🐢 Thinking, Fast and Slow](../books/thinking-fast-and-slow.md) by Daniel Kahneman: Offers insights into cognitive biases that can make individuals susceptible to misinformation.  
+* [⚠️🥴🕹️🌐 The Fifth Risk](../books/the-fifth-risk.md) by Michael Lewis: Discusses the importance of competent governance and the dangers of undermining public institutions, including those responsible for elections.  
   
 ## 🐦 Tweets  
 <blockquote class="twitter-tweet" data-theme="dark"><p lang="en" dir="ltr">🗳️🔓🤔 Is it easy to steal an election?<br><br>🇺🇸 Pennsylvania | 🧑‍💼 Poll Workers | 🆔 Voter ID | ✅ Checks and Balances | 🤥 Misinformation | 😈 Disinformation<a href="https://t.co/vHL7kFohHc">https://t.co/vHL7kFohHc</a></p>&mdash; Bryan Grounds (@bagrounds) <a href="https://twitter.com/bagrounds/status/1986479375085441241?ref_src=twsrc%5Etfw">November 6, 2025</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>  

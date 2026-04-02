@@ -10,7 +10,7 @@ Channel: ACMSIGGRAPH
 tags:
 youtube: https://youtu.be/8esFWCQ_46Y
 ---
-[Home](/content/index.md) > [Videos](/content/videos/index.md)  
+[Home](../index.md) > [Videos](./index.md)  
 # 🧑‍💻📈⏩ SIGGRAPH Thesis Fast Forward 2025  
 ![SIGGRAPH Thesis Fast Forward 2025](https://youtu.be/8esFWCQ_46Y)  
   
@@ -81,15 +81,15 @@ The 🎬 presentation covers six distinct thesis projects spanning computational
   
 ### Similar Books  
 * ⚛️ **Physically Based Rendering: From Theory to Implementation** by *Matt Pharr, Wenzel Jakob, and Greg Humphreys*. The definitive guide for physically based light transport, directly relevant to the **BRDF** modeling and **inverse rendering** work in the video.  
-* **[🧠💻🤖 Deep Learning](/content/books/deep-learning.md)** by *Ian Goodfellow, Yoshua Bengio, and Aaron Courville*. Provides the foundational knowledge for the deep learning techniques used in **MetAppearance** and **ZeroGrads** for intelligent optimization.  
+* **[🧠💻🤖 Deep Learning](../books/deep-learning.md)** by *Ian Goodfellow, Yoshua Bengio, and Aaron Courville*. Provides the foundational knowledge for the deep learning techniques used in **MetAppearance** and **ZeroGrads** for intelligent optimization.  
 * 💻 **Fundamentals of Computer Graphics** by *Steve Marschner and Peter Shirley*. A comprehensive textbook that covers mesh processing, rendering pipelines, and geometric concepts like the **Medial Axis Transform**.  
   
 ### Contrasting Books  
-* **[🦢 The Elements of Style](/content/books/the-elements-of-style.md)** by *William Strunk Jr. and E. B. White*. This book on concise, clear writing contrasts with the need for formal, unambiguous language in the DSL design (**AATALa**), highlighting the tension between natural and formal language.  
+* **[🦢 The Elements of Style](../books/the-elements-of-style.md)** by *William Strunk Jr. and E. B. White*. This book on concise, clear writing contrasts with the need for formal, unambiguous language in the DSL design (**AATALa**), highlighting the tension between natural and formal language.  
 * 🎨 **Art and Fear: Observations on the Perils (and Rewards) of Artmaking** by *David Bayles and Ted Orland*. A philosophical look at the creative process, offering a counterpoint to the analytical approach of the **human-centered digital painting** thesis.  
-* **[🤖📈 The Second Machine Age: Work, Progress, and Prosperity in a Time of Brilliant Technologies](/content/books/the-second-machine-age-work-progress-and-prosperity-in-a-time-of-brilliant-technologies.md)** by *Erik Brynjolfsson and Andrew McAfee*. Provides an economic and social perspective on how AI and automation (like **Flat Magic**) change creative and professional labor.  
+* **[🤖📈 The Second Machine Age: Work, Progress, and Prosperity in a Time of Brilliant Technologies](../books/the-second-machine-age-work-progress-and-prosperity-in-a-time-of-brilliant-technologies.md)** by *Erik Brynjolfsson and Andrew McAfee*. Provides an economic and social perspective on how AI and automation (like **Flat Magic**) change creative and professional labor.  
   
 ### Creatively Related Books  
-* **[💺🚪💡🤔 The Design of Everyday Things](/content/books/the-design-of-everyday-things.md)** by *Don Norman*. A classic text on human-centered design, highly relevant to the goal of creating **digital painting tools** that better align AI with the user's creative process.  
+* **[💺🚪💡🤔 The Design of Everyday Things](../books/the-design-of-everyday-things.md)** by *Don Norman*. A classic text on human-centered design, highly relevant to the goal of creating **digital painting tools** that better align AI with the user's creative process.  
 * 🧬 **The Book of Skin** by *Steven Connor*. A literary and philosophical exploration of skin as a surface and boundary, providing a creative context for the work on **biologically plausible skin texture generation**.  
 * 🧱 **Generative Design: Visualize, Program, and Create with Processing** by *Hartmut Bohnacker, Benedikt Gross, and Julia Laub*. A practical book on using code to create art, connecting the structured world of DSLs and algorithms to the more abstract output of digital creativity.

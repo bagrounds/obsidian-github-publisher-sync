@@ -8,7 +8,7 @@ Author:
 tags:
 affiliate link: https://amzn.to/4kQGums
 ---
-[Home](/content/index.md) > [Books](/content/books/index.md)  
+[Home](../index.md) > [Books](./index.md)  
 # 😊🧠📈🎯 The How of Happiness: A Scientific Approach to Getting the Life You Want  
 [🛒 The How of Happiness: A Scientific Approach to Getting the Life You Want. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4kQGums)  
   
@@ -60,10 +60,10 @@ Happiness is not solely determined by external circumstances; it's significantly
   
 ### Book Recommendations 📚  
 * **Best Alternate Book on the Same Topic:** "Flourish" by Martin Seligman. 🌸 This book offers a comprehensive overview of positive psychology, focusing on well-being and flourishing.  
-* **Best Tangentially Related Book:** "[Mindset](/content/books/mindset.md): The New Psychology of Success" by Carol S. Dweck. 🧠 This book explores the power of a growth mindset and its impact on achievement and happiness.  
+* **Best Tangentially Related Book:** "[Mindset](./mindset.md): The New Psychology of Success" by Carol S. Dweck. 🧠 This book explores the power of a growth mindset and its impact on achievement and happiness.  
 * **Best Diametrically Opposed Book:** "The Antidote: Happiness for People Who Can't Stand Positive Thinking" by Oliver Burkeman. 🙃 This book challenges conventional positive thinking and explores the value of negativity and uncertainty.  
 * **Best Fiction Book That Incorporates Related Ideas:** "Eleanor Oliphant Is Completely Fine" by Gail Honeyman. 📖 This novel explores themes of loneliness, social connection, and the possibility of finding happiness through small changes.  
-* **Best Book That Is More General:** "[Thinking, Fast and Slow](/content/books/thinking-fast-and-slow.md)" by Daniel Kahneman. 🧠 This book provides a broader understanding of human cognition and decision-making, which influences happiness.  
+* **Best Book That Is More General:** "[Thinking, Fast and Slow](./thinking-fast-and-slow.md)" by Daniel Kahneman. 🧠 This book provides a broader understanding of human cognition and decision-making, which influences happiness.  
 * **Best Book That Is More Specific:** "Hardwiring Happiness: The Brain Science That Changes Everything" by Rick Hanson. 🧠 This book focuses on specific brain mechanisms and practices to cultivate positive emotions.  
 * **Best Book That Is More Rigorous:** "Authentic Happiness" by Martin Seligman. 🔬 This is a more in-depth exploration of positive psychology, with a focus on scientific research and theory.  
 * **Best Book That Is More Accessible:** "The Little Book of Hygge: Danish Secrets to Happy Living" by Meik Wiking. 🕯️ This book is a lighthearted and practical guide to finding joy in simple pleasures.  

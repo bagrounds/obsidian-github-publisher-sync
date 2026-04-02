@@ -7,7 +7,7 @@ share: true
 affiliate link: https://amzn.to/40uJFbA
 CTA: Embrace change.
 ---
-[Home](/content/index.md) > [Books](/content/books/index.md)  
+[Home](../index.md) > [Books](./index.md)  
 # ➡️ Pivot: The Only Move That Matters Is Your Next One  
 [🛒 Pivot: The Only Move That Matters Is Your Next One. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/40uJFbA)  
   
@@ -45,7 +45,7 @@ The book also highlights the importance of:
   
 ### 🤝 Similar Books (Career Change & Development)  
   
-* **[🏗️😊🗺️✨ Designing Your Life: How to Build a Well-Lived, Joyful Life](/content/books/designing-your-life.md) by Bill Burnett and Dave Evans:** Uses design thinking principles from Stanford's popular course to help readers build a life and career they love through prototyping and experimentation.  
+* **[🏗️😊🗺️✨ Designing Your Life: How to Build a Well-Lived, Joyful Life](./designing-your-life.md) by Bill Burnett and Dave Evans:** Uses design thinking principles from Stanford's popular course to help readers build a life and career they love through prototyping and experimentation.  
 * 🪂 **What Color Is Your Parachute? by Richard N. Bolles:** A long-standing classic career guide, updated annually, offering comprehensive advice on job hunting and career changes, including self-assessment exercises.  
 * 🚀 **The Start-up of You: Adapt to the Future, Invest in Yourself, and Transform Your Career by Reid Hoffman and Ben Casnocha:** Applies Silicon Valley entrepreneurial principles to individual career management, emphasizing the need for constant adaptation and building a network.  
 * 🥇 **Reinventing You: Define Your Brand, Imagine Your Future by Dorie Clark:** Focuses on personal branding and reputation building as key elements in successfully navigating career changes and being recognized for your expertise.  
@@ -60,13 +60,13 @@ The book also highlights the importance of:
   
 ### 🎨 Creatively Related Books (Mindset, Creativity, and Personal Growth)  
   
-* **[🌱🧘🏼‍♀️🏆 Mindset: The New Psychology of Success](/content/books/mindset.md) by Carol S. Dweck:** Explores the power of the growth mindset (believing abilities can be developed) versus the fixed mindset (believing abilities are static), directly impacting one's willingness and ability to pivot and learn new skills.  
-* **[🪄 Big Magic: Creative Living Beyond Fear](/content/books/big-magic.md) by Elizabeth Gilbert:** While not strictly a career book, it offers profound insights into living a creative life and pursuing curiosity despite fear, highly relevant for those piloting new, potentially unconventional career paths.  
-* **[⚛️🔄 Atomic Habits: An Easy & Proven Way to Build Good Habits & Break Bad Ones](/content/books/atomic-habits.md) by James Clear:** Provides practical strategies for making small changes and building systems that lead to remarkable results, aligning with the "small steps, not big leaps" philosophy of pivoting.  
-* **[👤📈🎯🌟🔑🤝🏆 The 7 Habits of Highly Effective People](/content/books/the-7-habits-of-highly-effective-people.md) by Stephen R. Covey:** A foundational book on personal and professional effectiveness, emphasizing principles like proactivity and beginning with the end in mind, which are essential for intentional career navigation.  
+* **[🌱🧘🏼‍♀️🏆 Mindset: The New Psychology of Success](./mindset.md) by Carol S. Dweck:** Explores the power of the growth mindset (believing abilities can be developed) versus the fixed mindset (believing abilities are static), directly impacting one's willingness and ability to pivot and learn new skills.  
+* **[🪄 Big Magic: Creative Living Beyond Fear](./big-magic.md) by Elizabeth Gilbert:** While not strictly a career book, it offers profound insights into living a creative life and pursuing curiosity despite fear, highly relevant for those piloting new, potentially unconventional career paths.  
+* **[⚛️🔄 Atomic Habits: An Easy & Proven Way to Build Good Habits & Break Bad Ones](./atomic-habits.md) by James Clear:** Provides practical strategies for making small changes and building systems that lead to remarkable results, aligning with the "small steps, not big leaps" philosophy of pivoting.  
+* **[👤📈🎯🌟🔑🤝🏆 The 7 Habits of Highly Effective People](./the-7-habits-of-highly-effective-people.md) by Stephen R. Covey:** A foundational book on personal and professional effectiveness, emphasizing principles like proactivity and beginning with the end in mind, which are essential for intentional career navigation.  
 * 💪 **Choose Yourself by James Altucher:** Encourages readers to invest in themselves, their ideas, and their well-being, particularly relevant for those considering striking out on their own or building a career on their unique strengths and interests.  
 * 🛡️ **Rejection Proof: How I Beat Fear and Became Invincible Through 100 Days of Rejection by Jia Jiang:** Offers a new perspective on overcoming the fear of rejection, a common obstacle when networking, pitching ideas, or seeking new opportunities during a pivot.  
-* **[❓🎯 Start with Why: How Great Leaders Inspire Everyone to Take Action](/content/books/start-with-why-how-great-leaders-inspire-everyone-to-take-action.md) by Simon Sinek:** Helps individuals identify their core motivation and purpose, providing a strong foundation and direction for any significant career pivot.".  
+* **[❓🎯 Start with Why: How Great Leaders Inspire Everyone to Take Action](./start-with-why-how-great-leaders-inspire-everyone-to-take-action.md) by Simon Sinek:** Helps individuals identify their core motivation and purpose, providing a strong foundation and direction for any significant career pivot.".  
   
-## 💬 [Gemini](/content/software/gemini.md) Prompt (gemini-2.5-flash-preview-04-17)  
+## 💬 [Gemini](../software/gemini.md) Prompt (gemini-2.5-flash-preview-04-17)  
 > Write a markdown-formatted (start headings at level H2) book report, followed by a plethora of additional similar, contrasting, and creatively related book recommendations on Pivot: The Only Move That Matters Is Your Next One. Be thorough in content discussed but concise and economical with your language. Structure the report with section headings and bulleted lists to avoid long blocks of text.

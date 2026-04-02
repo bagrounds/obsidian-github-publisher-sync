@@ -7,7 +7,7 @@ share: true
 affiliate link: https://amzn.to/3Te4Xq3
 CTA: 🚶‍♀️ Restore your back.
 ---
-[Home](/content/index.md) > [Books](/content/books/index.md)  
+[Home](../index.md) > [Books](./index.md)  
 # 🔙🛠️ Back Mechanic  
 [🛒 Back Mechanic. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3Te4Xq3)  
   
@@ -48,7 +48,7 @@ CTA: 🚶‍♀️ Restore your back.
 * 🏋️ **Ultimate Back Fitness and Performance by Stuart McGill:** Written by the same author, this book delves deeper into back exercises and performance, geared towards coaches and trainers, building upon the foundational concepts in "Back Mechanic."  
 * ⚕️ **Low Back Disorders: Evidence-Based Prevention and Rehabilitation by Stuart McGill:** A more technical book for clinicians, providing in-depth scientific evidence on low back injury and rehabilitation.  
 * 🤕 **Gift of Injury by Stuart McGill and Brian Carroll:** Co-authored with a strength athlete who recovered from a severe back injury using McGill's methods, offering a practical application of the principles for athletes.  
-* **[🍬🫵🔙 Treat Your Own Back](/content/books/treat-your-own-back.md) by Robin McKenzie:** Introduces the McKenzie Method, which uses mechanical diagnosis and therapy to address back pain, often involving specific movements to centralize pain.  
+* **[🍬🫵🔙 Treat Your Own Back](./treat-your-own-back.md) by Robin McKenzie:** Introduces the McKenzie Method, which uses mechanical diagnosis and therapy to address back pain, often involving specific movements to centralize pain.  
 * 🤸‍♀️ **Back Exercise: Stabilize, Mobilize, and Reduce Pain by Brian Richey:** Explores spine anatomy, movement, and provides exercises with illustrations, focusing on stabilization, mobilization, and pain reduction.  
 * 💪 **Foundation: Redefine Your Core, Conquer Back Pain, and Move with Confidence by Eric Goodman:** Advocates for strengthening the posterior chain and using movement patterns to alleviate back pain.  
 * 🤲 **Body Mechanics and Self-care Manual by Marian Wolfe Dixon:** While aimed at bodywork professionals, it provides principles of body mechanics relevant to injury prevention and self-care.  
@@ -66,14 +66,14 @@ CTA: 🚶‍♀️ Restore your back.
   
 * 🛡️ **Resilience by Ross Edgley:** Explores mental and physical resilience through extreme endurance feats, connecting to the idea of building a robust and capable body and mind.  
 * ⬆️ **Rising Strong by Brené Brown:** Focuses on the process of overcoming failure and adversity, which can be applied to the journey of recovering from chronic pain.  
-* **[❤️‍🔥💪 Grit: The Power of Passion and Perseverance](/content/books/grit-the-power-of-passion-and-perseverance.md) by Angela Duckworth:** Examines the role of passion and perseverance in achieving long-term goals, relevant to the dedication required for back pain recovery.  
-* **[⚛️🔄 Atomic Habits: An Easy & Proven Way to Build Good Habits & Break Bad Ones](/content/books/atomic-habits.md) by James Clear:** Provides a framework for building good habits and breaking bad ones, which is essential for consistently applying spine hygiene and exercise principles.  
-* **[🦓 Why Zebras Don't Get Ulcers: The Acclaimed Guide to Stress, Stress-Related Disease, and Coping](/content/books/why-zebras-dont-get-ulcers.md) by Robert M. Sapolsky:** Explores the impact of stress on the body, including chronic pain, offering a biological perspective on the mind-body connection.  
-* **[🧠🔄🏆 The Brain That Changes Itself: Stories of Personal Triumph from the Frontiers of Brain Science](/content/books/the-brain-that-changes-itself.md) by Norman Doidge:** Discusses neuroplasticity, the brain's ability to change, which provides a scientific basis for how consistent effort in rehabilitation can rewire pain pathways.  
-* **[🤸🤕 Becoming a Supple Leopard: The Ultimate Guide to Resolving Pain, Preventing Injury, and Optimizing Athletic Performance](/content/books/becoming-a-supple-leopard-the-ultimate-guide-to-resolving-pain-preventing-injury-and-optimizing-athletic-performance.md) by Kelly Starrett:** Focuses on movement and mobility to address pain and improve performance, often used by athletes and those interested in optimizing physical function.  
+* **[❤️‍🔥💪 Grit: The Power of Passion and Perseverance](./grit-the-power-of-passion-and-perseverance.md) by Angela Duckworth:** Examines the role of passion and perseverance in achieving long-term goals, relevant to the dedication required for back pain recovery.  
+* **[⚛️🔄 Atomic Habits: An Easy & Proven Way to Build Good Habits & Break Bad Ones](./atomic-habits.md) by James Clear:** Provides a framework for building good habits and breaking bad ones, which is essential for consistently applying spine hygiene and exercise principles.  
+* **[🦓 Why Zebras Don't Get Ulcers: The Acclaimed Guide to Stress, Stress-Related Disease, and Coping](./why-zebras-dont-get-ulcers.md) by Robert M. Sapolsky:** Explores the impact of stress on the body, including chronic pain, offering a biological perspective on the mind-body connection.  
+* **[🧠🔄🏆 The Brain That Changes Itself: Stories of Personal Triumph from the Frontiers of Brain Science](./the-brain-that-changes-itself.md) by Norman Doidge:** Discusses neuroplasticity, the brain's ability to change, which provides a scientific basis for how consistent effort in rehabilitation can rewire pain pathways.  
+* **[🤸🤕 Becoming a Supple Leopard: The Ultimate Guide to Resolving Pain, Preventing Injury, and Optimizing Athletic Performance](./becoming-a-supple-leopard-the-ultimate-guide-to-resolving-pain-preventing-injury-and-optimizing-athletic-performance.md) by Kelly Starrett:** Focuses on movement and mobility to address pain and improve performance, often used by athletes and those interested in optimizing physical function.  
 * 🤕 **End Back Pain Forever: A Groundbreaking Approach to Eliminate Your Suffering by Norman Marcus:** Presents an approach that emphasizes treating muscular causes of back pain, often overlooked by conventional medicine.  
   
-## 💬 [Gemini](/content/software/gemini.md) Prompt (gemini-2.5-flash-preview-04-17)  
+## 💬 [Gemini](../software/gemini.md) Prompt (gemini-2.5-flash-preview-04-17)  
 > Write a markdown-formatted (start headings at level H2) book report, followed by a plethora of additional similar, contrasting, and creatively related book recommendations on Back Mechanic. Be thorough in content discussed but concise and economical with your language. Structure the report with section headings and bulleted lists to avoid long blocks of text.  
   
 ## 🐦 Tweet  

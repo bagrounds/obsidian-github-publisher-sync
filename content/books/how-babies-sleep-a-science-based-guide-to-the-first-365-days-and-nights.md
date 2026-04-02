@@ -7,7 +7,7 @@ share: true
 CTA: 😴 Decode infant slumber.
 affiliate link: https://amzn.to/48qs2gx
 ---
-[Home](/content/index.md) > [Books](/content/books/index.md)  
+[Home](../index.md) > [Books](./index.md)  
 # 👶😴 How Babies Sleep: A Science-Based Guide to the First 365 Days and Nights  
 [🛒 How Babies Sleep: A Science-Based Guide to the First 365 Days and Nights. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/48qs2gx)  
   
@@ -62,15 +62,15 @@ affiliate link: https://amzn.to/48qs2gx
   
 ### 📖 Similar  
 * The Discontented Little Baby Book by Dr. Pamela Douglas: Offers a responsive, evidence-based approach to infant care, including sleep.  
-* [😴🤱 Sweet Sleep: Nighttime and Naptime Strategies for the Breastfeeding Family](/content/books/sweet-sleep-nighttime-and-naptime-strategies-for-the-breastfeeding-family.md) by La Leche League International: Focuses on biologically normal infant sleep within the context of breastfeeding.  
+* [😴🤱 Sweet Sleep: Nighttime and Naptime Strategies for the Breastfeeding Family](./sweet-sleep-nighttime-and-naptime-strategies-for-the-breastfeeding-family.md) by La Leche League International: Focuses on biologically normal infant sleep within the context of breastfeeding.  
   
 ### ↔️ Contrasting  
-* [😴👶  Solve Your Child's Sleep Problems](/content/books/solve-your-childs-sleep-problems.md) by Richard Ferber, M.D.: A classic guide to structured sleep training, often associated with controlled crying methods.  
+* [😴👶  Solve Your Child's Sleep Problems](./solve-your-childs-sleep-problems.md) by Richard Ferber, M.D.: A classic guide to structured sleep training, often associated with controlled crying methods.  
 * Healthy Sleep Habits, Happy Child by Marc Weissbluth, M.D.: Provides a prescriptive, schedule-focused approach to developing healthy sleep patterns, emphasizing cry-it-out in some contexts.  
   
 ### ➕ Related  
 * The Wonder Weeks by Hetty van de Rijt and Frans Plooij: Explores mental developmental leaps in babies and how they can affect behavior, including sleep.  
-* [👶😊😴 The Happiest Baby on the Block: The New Way to Calm Crying and Help Your Newborn Baby Sleep Longer](/content/books/the-happiest-baby-on-the-block.md) by Harvey Karp, M.D.: Focuses on calming newborns using the 5 S's and understanding the fourth trimester.  
+* [👶😊😴 The Happiest Baby on the Block: The New Way to Calm Crying and Help Your Newborn Baby Sleep Longer](./the-happiest-baby-on-the-block.md) by Harvey Karp, M.D.: Focuses on calming newborns using the 5 S's and understanding the fourth trimester.  
   
 ## 🫵 What Do You Think?  
 🤔 After exploring the science and anthropology of infant sleep, what aspects of your baby's sleep patterns have you found most surprising, and how has cultural advice shaped your personal approach to bedtime?

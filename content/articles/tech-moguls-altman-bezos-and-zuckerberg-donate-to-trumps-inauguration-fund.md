@@ -7,7 +7,7 @@ URL: https://bagrounds.org/articles/tech-moguls-altman-bezos-and-zuckerberg-dona
 Author:
 tags:
 ---
-[Home](/content/index.md) > [Articles](/content/articles/index.md)  
+[Home](../index.md) > [Articles](./index.md)  
 # 💻💰🤝👹🇺🇸 [Tech moguls Altman, Bezos and Zuckerberg donate to Trump's inauguration fund](https://www.npr.org/2024/12/13/nx-s1-5227874/trump-bezos-zuckerberg-amazon-facebook-open-ai-meta-inauguration-fund)  
 ## 🤖 AI Summary  
 🚀 Tech industry leaders have made significant contributions to President Donald Trump's inauguration fund, signaling a notable shift in their relationship with the new administration. 🤝  
@@ -28,14 +28,14 @@ Specific issues covered include:
   
 ## 📚 Book Recommendations  
 * 🧠 **For a deeper understanding of the intersection of technology, power, and politics:**  
-    * [👁️‍🗨️💰⛓️👤 The Age of Surveillance Capitalism: The Fight for a Human Future at the New Frontier of Power](/content/books/the-age-of-surveillance-capitalism.md) by Shoshana Zuboff  
+    * [👁️‍🗨️💰⛓️👤 The Age of Surveillance Capitalism: The Fight for a Human Future at the New Frontier of Power](../books/the-age-of-surveillance-capitalism.md) by Shoshana Zuboff  
     * *System Error: Where Big Tech Went Wrong and How We Can Reboot* by Rob Reich, Mehran Sahami, and Jeremy M. Weinstein  
     * *The Master Switch: The Rise and Fall of Information Empires* by Tim Wu  
 * 📜 **For insights into the history and influence of Silicon Valley:**  
     * *The Code Breaker: Jennifer Doudna, Gene Editing, and the Future of the Human Race* by Walter Isaacson  
     * *Lords of Strategy: The Great Founders of Management Thought* by Walter Kiechel III  
 * 🤖 **For books on AI and its societal impact:**  
-    * [🧬👥💾 Life 3.0: Being Human in the Age of Artificial Intelligence](/content/books/life-3-0.md) by Max Tegmark  
+    * [🧬👥💾 Life 3.0: Being Human in the Age of Artificial Intelligence](../books/life-3-0.md) by Max Tegmark  
     * AI Superpowers by Kai-Fu Lee  
   
 ## 🐦 Tweet  

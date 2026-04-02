@@ -6,7 +6,7 @@ URL: https://bagrounds.org/books/the-one-hour-content-plan-the-solopreneurs-guid
 share: true
 affiliate link: https://amzn.to/3St0UWy
 ---
-[Home](/content/index.md) > [Books](/content/books/index.md)  
+[Home](../index.md) > [Books](./index.md)  
 # ⏱️💡📈 The One Hour Content Plan: The Solopreneur's Guide to a Year's Worth of Blog Post Ideas in 60 Minutes and Creating Content That Hooks and Sells  
 [🛒 The One Hour Content Plan: The Solopreneur's Guide to a Year's Worth of Blog Post Ideas in 60 Minutes and Creating Content That Hooks and Sells. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3St0UWy)  
   
@@ -67,21 +67,21 @@ affiliate link: https://amzn.to/3St0UWy
   
 ### ↔️ Contrasting Books (Focus on Different Aspects)  
   
-* ✍️ **[🌍✍🏿 Everybody Writes: Your Go-To Guide to Creating Ridiculously Good Content](/content/books/everybody-writes.md)** by Ann Handley: While covering strategy, it places a stronger emphasis on the *craft* of writing itself – improving writing quality, grammar, style, and storytelling for reader empathy.  
-* 📜 **[✍🏼👍🏼 On Writing Well: The Classic Guide to Writing Nonfiction](/content/books/on-writing-well.md)** by William Zinsser: A foundational text focused purely on the principles of clear, concise, and effective non-fiction writing.  
-* ✏️ **[🦢 The Elements of Style](/content/books/the-elements-of-style.md)** by William Strunk Jr. (and E.B. White): A classic, concise guide focused on grammar, usage, and principles of composition.  
+* ✍️ **[🌍✍🏿 Everybody Writes: Your Go-To Guide to Creating Ridiculously Good Content](./everybody-writes.md)** by Ann Handley: While covering strategy, it places a stronger emphasis on the *craft* of writing itself – improving writing quality, grammar, style, and storytelling for reader empathy.  
+* 📜 **[✍🏼👍🏼 On Writing Well: The Classic Guide to Writing Nonfiction](./on-writing-well.md)** by William Zinsser: A foundational text focused purely on the principles of clear, concise, and effective non-fiction writing.  
+* ✏️ **[🦢 The Elements of Style](./the-elements-of-style.md)** by William Strunk Jr. (and E.B. White): A classic, concise guide focused on grammar, usage, and principles of composition.  
 * 💻 **The Art and Business of Online Writing** by Nicolas Cole: Explores building a writing career online, mastering attention economics, and monetizing content.  
 * 📣 **Ca$hvertising** by Drew Eric Whitman: Focuses heavily on the psychology of advertising and persuasive copywriting techniques to drive sales, less on planning.  
   
 ### 🎨 Creatively Related Books  
   
-* 🧘 **[🤿💼 Deep Work](/content/books/deep-work.md): Rules for Focused Success in a Distracted World** by Cal Newport: Addresses the ability to focus without distraction, essential for productive content creation and strategic thinking.  
-* **[⚛️🔄 Atomic Habits](/content/books/atomic-habits.md): An Easy & Proven Way to Build Good Habits & Break Bad Ones** by James Clear: Focuses on building consistent habits, applicable to maintaining a regular content creation schedule.  
-* **[🐦🕊️ Bird by Bird: Some Instructions on Writing and Life](/content/books/bird-by-bird.md)** by Anne Lamott: Offers humorous and practical advice on overcoming writer's block, perfectionism, and the messy process of writing first drafts.  
+* 🧘 **[🤿💼 Deep Work](./deep-work.md): Rules for Focused Success in a Distracted World** by Cal Newport: Addresses the ability to focus without distraction, essential for productive content creation and strategic thinking.  
+* **[⚛️🔄 Atomic Habits](./atomic-habits.md): An Easy & Proven Way to Build Good Habits & Break Bad Ones** by James Clear: Focuses on building consistent habits, applicable to maintaining a regular content creation schedule.  
+* **[🐦🕊️ Bird by Bird: Some Instructions on Writing and Life](./bird-by-bird.md)** by Anne Lamott: Offers humorous and practical advice on overcoming writer's block, perfectionism, and the messy process of writing first drafts.  
 * 📖 **Storycraft: The Complete Guide to Writing Narrative Nonfiction** by Jack Hart: Delves deep into the techniques of compelling narrative nonfiction, useful for engaging storytelling in content.  
 * ⏳ **Productivity For Authors** by Joanna Penn: Specifically targets writers, offering advice on finding time, organizing, goal setting, and mindset for creative productivity.  
 * 🥇 **Mastery** by Robert Greene: Explores the long-term path to achieving mastery in a field, relevant for developing deep expertise reflected in content.  
 * 🧠 **Wired for Story: The Writer's Guide to Using Science to Hook Readers** by Lisa Cron: Uses cognitive science to explain how to craft stories that captivate readers, applicable to creating "hooky" content.  
   
-## 💬 [Gemini](/content/software/gemini.md) Prompt (gemini-2.5-pro-exp-03-25)  
+## 💬 [Gemini](../software/gemini.md) Prompt (gemini-2.5-pro-exp-03-25)  
 > Write a markdown-formatted (start headings at level H2) book report, followed by a plethora of additional similar, contrasting, and creatively related book recommendations on The One Hour Content Plan: The Solopreneur's Guide to a Year's Worth of Blog Post Ideas in 60 Minutes and Creating Content That Hooks and Sells. Be thorough in content discussed but concise and economical with your language. Structure the report with section headings and bulleted lists to avoid long blocks of text.

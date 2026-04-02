@@ -6,8 +6,11 @@ URL: https://bagrounds.org/books/the-logic-of-scientific-discovery
 share: true
 CTA: 💡 Question assumptions.
 affiliate link: https://amzn.to/4eOMMkw
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_time: 2026-04-02T00:00:00Z
+force_analyze_links: false
 ---
-[Home](/content/index.md) > [Books](/content/books/index.md)  
+[Home](../index.md) > [Books](./index.md)  
 # 🤔🔬 The Logic of Scientific Discovery  
 [🛒 The Logic of Scientific Discovery. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4eOMMkw)  
   
@@ -48,7 +51,7 @@ affiliate link: https://amzn.to/4eOMMkw
   
 ### 👎 Contrasting & Critiquing Popper  
   
-* **[🔬🔄 The Structure of Scientific Revolutions](/content/books/the-structure-of-scientific-revolutions.md)** **by Thomas S. Kuhn:** 🔄 A highly influential work that offers a contrasting view of scientific progress. 🕰️ Kuhn argues that science proceeds through periods of "normal science" within a dominant "paradigm," punctuated by "scientific revolutions" that involve paradigm shifts, rather than a continuous process of conjecture and refutation.  
+* **[🔬🔄 The Structure of Scientific Revolutions](./the-structure-of-scientific-revolutions.md)** **by Thomas S. Kuhn:** 🔄 A highly influential work that offers a contrasting view of scientific progress. 🕰️ Kuhn argues that science proceeds through periods of "normal science" within a dominant "paradigm," punctuated by "scientific revolutions" that involve paradigm shifts, rather than a continuous process of conjecture and refutation.  
 * 📖 ***Against Method*** **by Paul Feyerabend:** 🚫 A radical critique of the idea of a universal scientific method, often summarized by the phrase "anything goes." 💥 Feyerabend argues that scientific progress often occurs outside of prescribed methodological rules, presenting a direct challenge to Popper's emphasis on method.  
 * 📖 ***Falsification and the Methodology of Scientific Research Programmes*** **by Imre Lakatos:** 🔬 Lakatos, a student of Popper, offered a sophisticated refinement of falsificationism, introducing the concept of "scientific research programmes" with hard cores and protective belts of auxiliary hypotheses. 🛡️ He provided a framework for understanding the progress and degeneration of research programs, addressing some criticisms of naive falsificationism.  
 * 📖 ***Science in Action: How to Follow Scientists and Engineers Through Society*** **by Bruno Latour:** 👥 A sociological perspective on how scientific knowledge is constructed, emphasizing the role of social factors, networks, and practices in scientific work. 🌐 This offers a significant contrast to Popper's more logical and epistemological focus.  
@@ -57,13 +60,13 @@ affiliate link: https://amzn.to/4eOMMkw
   
 ### 🎨 Creatively Related  
   
-* **[⚫🦢🎲 The Black Swan: The Impact of the Highly Improbable](/content/books/the-black-swan-the-impact-of-the-highly-improbable.md)** **by Nassim Nicholas Taleb:** While not strictly philosophy of science, Taleb's work on the impact of rare, unpredictable events (black swans) draws heavily on Popper's ideas about falsification and the limits of inductive reasoning and prediction.  
-* **[🤔🐇🐢 Thinking, Fast and Slow](/content/books/thinking-fast-and-slow.md)** **by Daniel Kahneman:** 🧠 Explores cognitive biases and heuristics, including confirmation bias, which is highly relevant to Popper's arguments against the human tendency to seek verification rather than falsification.  
-* **[😈🌍🔬🕯️🌑 The Demon-Haunted World: Science as a Candle in the Dark](/content/books/the-demon-haunted-world.md)** **by Carl Sagan:** A passionate defense of science and critical thinking against pseudoscience, aligning with Popper's concerns about demarcation and the importance of testability.  
+* **[⚫🦢🎲 The Black Swan: The Impact of the Highly Improbable](./the-black-swan-the-impact-of-the-highly-improbable.md)** **by Nassim Nicholas Taleb:** While not strictly philosophy of science, Taleb's work on the impact of rare, unpredictable events (black swans) draws heavily on Popper's ideas about falsification and the limits of inductive reasoning and prediction.  
+* **[🤔🐇🐢 Thinking, Fast and Slow](./thinking-fast-and-slow.md)** **by Daniel Kahneman:** 🧠 Explores cognitive biases and heuristics, including confirmation bias, which is highly relevant to Popper's arguments against the human tendency to seek verification rather than falsification.  
+* **[😈🌍🔬🕯️🌑 The Demon-Haunted World: Science as a Candle in the Dark](./the-demon-haunted-world.md)** **by Carl Sagan:** A passionate defense of science and critical thinking against pseudoscience, aligning with Popper's concerns about demarcation and the importance of testability.  
 * 📖 ***Surely You're Joking, Mr. Feynman!*** **by Richard Feynman:** 🤣 Anecdotal but insightful reflections on the nature of scientific inquiry, integrity, and the importance of doubt and testing, resonating with the spirit of critical rationalism.  
-* **[♾️📐🎶🥨 Gödel, Escher, Bach: An Eternal Golden Braid](/content/books/godel-escher-bach.md)** **by Douglas R. Hofstadter:** ♾️ A Pulitzer Prize-winning book exploring themes of logic, recursion, artificial intelligence, and the nature of creativity, which, while not directly about Popper, touches upon the foundations of formal systems and knowledge representation relevant to the logic of scientific theories.  
-* **[👹 The Origins of Totalitarianism](/content/books/the-origins-of-totalitarianism.md)** **by Hannah Arendt:** 🏛️ While a work of political philosophy and history, Arendt's analysis of ideologies and their closed, unfalsifiable systems offers a compelling real-world parallel to Popper's concerns about dogmatic thinking and the dangers of unfalsifiable doctrines in the social and political realm (a theme Popper also explored in *The Open Society and Its Enemies*).  
-* **[🤔🌍📈✅ Factfulness: Ten Reasons We're Wrong About the World - and Why Things Are Better Than You Think](/content/books/factfulness.md)** **by Hans Rosling with Ola Rosling and Anna Rosling Rönnlund:** 🌍 This book promotes a data-driven, critical-thinking approach to understanding the world, encouraging readers to test their assumptions and be open to evidence that contradicts their beliefs, echoing the empirical and critical spirit of Popper's philosophy.".  
+* **[♾️📐🎶🥨 Gödel, Escher, Bach: An Eternal Golden Braid](./godel-escher-bach.md)** **by Douglas R. Hofstadter:** ♾️ A Pulitzer Prize-winning book exploring themes of logic, recursion, artificial intelligence, and the nature of creativity, which, while not directly about Popper, touches upon the foundations of formal systems and knowledge representation relevant to the logic of scientific theories.  
+* **[👹 The Origins of Totalitarianism](./the-origins-of-totalitarianism.md)** **by Hannah Arendt:** 🏛️ While a work of political philosophy and history, Arendt's analysis of ideologies and their closed, unfalsifiable systems offers a compelling real-world parallel to Popper's concerns about dogmatic thinking and the dangers of unfalsifiable doctrines in the social and political realm (a theme Popper also explored in *The Open Society and Its Enemies*).  
+* **[🤔🌍📈✅ Factfulness: Ten Reasons We're Wrong About the World - and Why Things Are Better Than You Think](./factfulness.md)** **by Hans Rosling with Ola Rosling and Anna Rosling Rönnlund:** 🌍 This book promotes a data-driven, critical-thinking approach to understanding the world, encouraging readers to test their assumptions and be open to evidence that contradicts their beliefs, echoing the empirical and critical spirit of Popper's philosophy.".  
   
-## 💬 [Gemini](/content/software/gemini.md) Prompt (gemini-2.5-flash-preview-04-17)  
+## 💬 [Gemini](../software/gemini.md) Prompt (gemini-2.5-flash-preview-04-17)  
 > Write a markdown-formatted (start headings at level H2) book report, followed by a plethora of additional similar, contrasting, and creatively related book recommendations on The Logic of Scientific Discovery. Be thorough in content discussed but concise and economical with your language. Structure the report with section headings and bulleted lists to avoid long blocks of text.

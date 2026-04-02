@@ -6,7 +6,7 @@ URL: https://bagrounds.org/books/big-ideas-for-little-philosophers-imagination-w
 share: true
 affiliate link: https://amzn.to/4egVN5X
 ---
-[Home](/content/index.md) > [Books](/content/books/index.md)  
+[Home](../index.md) > [Books](./index.md)  
 # 🤔👶💭 Big Ideas for Little Philosophers: Imagination with René Descartes  
 [🛒 Big Ideas for Little Philosophers: Imagination with René Descartes. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4egVN5X)  
   
@@ -37,14 +37,14 @@ affiliate link: https://amzn.to/4egVN5X
 ### 🗂️ Similar Books (Philosophy for Kids)  
   
 * 📚 **Other books in the "Big Ideas for Little Philosophers" series:**  
-    * [❓🏛️👶 Truth with Socrates](/content/books/big-ideas-for-little-philosophers-truth-with-socrates.md)  
-    * [🤔👶😊 Happiness with Aristotle](/content/books/big-ideas-for-little-philosophers-happiness-with-aristotle.md)  
+    * [❓🏛️👶 Truth with Socrates](./big-ideas-for-little-philosophers-truth-with-socrates.md)  
+    * [🤔👶😊 Happiness with Aristotle](./big-ideas-for-little-philosophers-happiness-with-aristotle.md)  
     * 📖 *Equality with Simone de Beauvoir*  
     * 📖 *Kindness with Confucius*  
     * 📖 *Love with Plato*  
     * (These books follow a similar format, introducing another philosopher and their key idea in a simple, accessible way for young children). 👶  
 * 😂 **Plato and the Platypus Walk Into a Bar...: Understanding Philosophy Through Jokes** by Thomas Cathcart and Daniel Klein: (While for an older audience, this book also makes philosophy accessible, using humor to explain complex ideas). 😆  
-* **[🤔🌍 Sophie’s World](/content/books/sophies-world.md)** by Jostein Gaarder: (A young adult novel that provides a comprehensive history of philosophy through a narrative, suitable for older children and teens). 🧑‍🎓  
+* **[🤔🌍 Sophie’s World](./sophies-world.md)** by Jostein Gaarder: (A young adult novel that provides a comprehensive history of philosophy through a narrative, suitable for older children and teens). 🧑‍🎓  
 * ❓ **Philosophy for Kids: 40 Fun Questions That Help You Explore Big Ideas** by David White: (An activity-based book for middle-grade readers that encourages critical thinking through questions and exercises). 🤔  
   
 ### ⚖️ Contrasting Books (More Complex Philosophical Ideas or Different Formats)  
@@ -59,10 +59,10 @@ affiliate link: https://amzn.to/4egVN5X
 * 🐺 **Where the Wild Things Are** by Maurice Sendak: (A classic picture book exploring imagination, emotions, and the power of play). 🎭  
 * 💥 **Beautiful Oops!** by Barney Saltzberg: (A book that shows how mistakes can be opportunities for creativity and imagination). 💡  
 * 📦 **Not a Box** by Antoinette Portis: (A simple yet profound picture book demonstrating how a box can be anything you imagine it to be). 🎁  
-* **[🤴 The Little Prince](/content/books/the-little-prince.md)** by Antoine de Saint-Exupéry: (A novella with philosophical undertones about imagination, friendship, and seeing with the heart, suitable for older children and adults). 🦊  
+* **[🤴 The Little Prince](./the-little-prince.md)** by Antoine de Saint-Exupéry: (A novella with philosophical undertones about imagination, friendship, and seeing with the heart, suitable for older children and adults). 🦊  
 * 🔭 **Zoom** by Istvan Banyai: (A wordless picture book that plays with perspective and challenges the reader's assumptions about what they are seeing, encouraging different ways of thinking). 👀  
   
-## 💬 [Gemini](/content/software/gemini.md) Prompt (gemini-2.5-flash-preview-04-17)  
+## 💬 [Gemini](../software/gemini.md) Prompt (gemini-2.5-flash-preview-04-17)  
 > Write a markdown-formatted (start headings at level H2) book report, followed by a plethora of additional similar, contrasting, and creatively related book recommendations on Big Ideas for Little Philosophers: Imagination with René Descartes. Be thorough in content discussed but concise and economical with your language. Structure the report with section headings and bulleted lists to avoid long blocks of text.  
   
 ## 🐦 Tweet  

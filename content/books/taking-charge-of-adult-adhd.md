@@ -8,7 +8,7 @@ Author:
 tags:
 affiliate link: https://amzn.to/3SBUTH3
 ---
-[Home](/content/index.md) > [Books](/content/books/index.md)  
+[Home](../index.md) > [Books](./index.md)  
 # 🧠⬆️💼🏠❤️ Taking Charge of Adult ADHD: Proven Strategies to Succeed at Work, at Home, and in Relationships  
 [🛒 Taking Charge of Adult ADHD: Proven Strategies to Succeed at Work, at Home, and in Relationships. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3SBUTH3)  
   
@@ -70,8 +70,8 @@ Barkley's book offers a perspective that emphasizes ADHD as a disorder of execut
 "Taking Charge of Adult ADHD" is a highly credible and authoritative resource. Russell Barkley is a leading expert in ADHD, and the book is grounded in extensive research and clinical experience. The information is presented clearly and accessibly, making it valuable for both individuals with ADHD and professionals. The book is well-reviewed and widely recognized as a definitive guide to adult ADHD. The information is backed by scientific studies, and the author's credentials are very strong. 🥇  
   
 #### Additional Book Recommendations 📚  
-* **Best Alternate Book on the Same Topic:** "[Driven to Distraction](/content/books/driven-to-distraction.md) (Revised): Recognizing and Coping with Attention Deficit Disorder from Childhood Through Adulthood" by Edward M. Hallowell and John J. Ratey. This is another classic book on ADHD, offering a more narrative and personal approach. 📖  
-* **Best Tangentially Related Book:** "[The Power of Habit](/content/books/the-power-of-habit.md): Why We Do What We Do in Life and Business" by Charles Duhigg. This book explores the science of habit formation, which is crucial for managing ADHD. 🔄  
+* **Best Alternate Book on the Same Topic:** "[Driven to Distraction](./driven-to-distraction.md) (Revised): Recognizing and Coping with Attention Deficit Disorder from Childhood Through Adulthood" by Edward M. Hallowell and John J. Ratey. This is another classic book on ADHD, offering a more narrative and personal approach. 📖  
+* **Best Tangentially Related Book:** "[The Power of Habit](./the-power-of-habit.md): Why We Do What We Do in Life and Business" by Charles Duhigg. This book explores the science of habit formation, which is crucial for managing ADHD. 🔄  
 * **Best Diametrically Opposed Book:** "The Myth of ADHD and Other Learning Disabilities" by Richard Saul. This book challenges the diagnosis of ADHD and offers alternative explanations for attention and learning difficulties. 🤨  
 * **Best Fiction Book That Incorporates Related Ideas:** "Percy Jackson & the Olympians" series by Rick Riordan. The main character, Percy, exhibits many traits of ADHD and dyslexia, which are framed as strengths in the context of the story. ⚡  
 * **Best More General Book:** "Scattered Minds: The Origins and Healing of Attention Deficit Disorder" by Gabor Maté. This book explores the emotional and developmental roots of ADHD. 🧠  

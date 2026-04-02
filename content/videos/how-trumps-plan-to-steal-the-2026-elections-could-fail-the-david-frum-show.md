@@ -10,7 +10,7 @@ Channel: The Atlantic
 tags:
 youtube: https://youtu.be/W9dezs4O0bo
 ---
-[Home](/content/index.md) > [Videos](/content/videos/index.md)  
+[Home](../index.md) > [Videos](./index.md)  
 # 🗳️📉🏛️❌🇺🇸 How Trump’s Plan to Steal the 2026 Elections Could Fail | The David Frum Show  
 ![How Trump’s Plan to Steal the 2026 Elections Could Fail | The David Frum Show](https://youtu.be/W9dezs4O0bo)  
   
@@ -64,14 +64,14 @@ youtube: https://youtu.be/W9dezs4O0bo
 ### ↔️ Similar  
   
 * 🏛️ The Fight to Vote by Michael Waldman: Explores the long history of American voting rights and the ongoing struggle to protect them, highly relevant as Waldman is the featured speaker in the video.  
-* [👑🚫📜2️⃣0️⃣ On Tyranny: Twenty Lessons from the Twentieth Century](/content/books/on-tyranny.md) by Timothy Snyder: Provides a concise guide on protecting democratic institutions and norms from creeping authoritarianism, echoing the video's concerns about norm-breaking.  
+* [👑🚫📜2️⃣0️⃣ On Tyranny: Twenty Lessons from the Twentieth Century](../books/on-tyranny.md) by Timothy Snyder: Provides a concise guide on protecting democratic institutions and norms from creeping authoritarianism, echoing the video's concerns about norm-breaking.  
   
 ### 🆚 Contrasting  
   
-* [🇺🇸📜 The Federalist Papers](/content/books/the-federalist-papers.md) by Alexander Hamilton, James Madison, and John Jay: Offers the original arguments for the constitutional structure, separation of powers, and checks and balances that the video claims are currently under attack.  
+* [🇺🇸📜 The Federalist Papers](../books/the-federalist-papers.md) by Alexander Hamilton, James Madison, and John Jay: Offers the original arguments for the constitutional structure, separation of powers, and checks and balances that the video claims are currently under attack.  
 * 🧠 A Time for Choosing: The Speeches of Ronald Reagan, 1961-1983 edited by Anthony C. H. Smith: Presents a foundational conservative perspective on limited government and individual responsibility, offering a philosophical contrast to the current administration's approach to governance described in the video.  
   
 ### 🎨 Creatively Related  
   
-* [🤔🐇🐢 Thinking, Fast and Slow](/content/books/thinking-fast-and-slow.md) by Daniel Kahneman: Explains the psychological mechanisms of intuition and logic, helping to explain the effectiveness of the emotional appeals and flattery that the video describes as manipulating the President \[[04:20](http://www.youtube.com/watch?v=W9dezs4O0bo&t=260)].  
+* [🤔🐇🐢 Thinking, Fast and Slow](../books/thinking-fast-and-slow.md) by Daniel Kahneman: Explains the psychological mechanisms of intuition and logic, helping to explain the effectiveness of the emotional appeals and flattery that the video describes as manipulating the President \[[04:20](http://www.youtube.com/watch?v=W9dezs4O0bo&t=260)].  
 * 🇬🇧 The Splendid and the Vile: A Saga of Churchill, Family, and Defiance During the Blitz by Erik Larson: A historical narrative that highlights the core tenets of wartime leadership and accountability, contrasting sharply with the refusal of responsibility discussed at the video's conclusion \[[50:14](http://www.youtube.com/watch?v=W9dezs4O0bo&t=3014)].

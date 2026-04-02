@@ -10,7 +10,7 @@ Channel: TED
 tags:
 youtube: https://youtu.be/GZKU7TgR6IU
 ---
-[Home](/content/index.md) > [Videos](/content/videos/index.md)  
+[Home](../index.md) > [Videos](./index.md)  
 # 👥🌍📢💡 How Common Knowledge Shapes the World | Steven Pinker | TED  
 ![How Common Knowledge Shapes the World | Steven Pinker | TED](https://youtu.be/GZKU7TgR6IU)  
   
@@ -61,19 +61,19 @@ A: 💰 Financial speculation, according to Keynes, is a game of recursive menta
   
 ### Similar  
   
-* [⚔️♟️ The Strategy of Conflict](/content/books/the-strategy-of-conflict.md) by Thomas Schelling [Source: Princeton University Press]. This book introduces the concept of the focal point, which is central to the video’s explanation of how unspoken common knowledge facilitates coordination problems.  
-* [🗣️🧠 The Language Instinct: How the Mind Creates Language](/content/books/the-language-instinct-how-the-mind-creates-language.md) by Steven Pinker [Source: William Morrow and Company]. This work explores the nature of language as an innate human ability, touching upon how direct speech evolved and functions as a powerful, public mechanism for generating common knowledge.  
+* [⚔️♟️ The Strategy of Conflict](../books/the-strategy-of-conflict.md) by Thomas Schelling [Source: Princeton University Press]. This book introduces the concept of the focal point, which is central to the video’s explanation of how unspoken common knowledge facilitates coordination problems.  
+* [🗣️🧠 The Language Instinct: How the Mind Creates Language](../books/the-language-instinct-how-the-mind-creates-language.md) by Steven Pinker [Source: William Morrow and Company]. This work explores the nature of language as an innate human ability, touching upon how direct speech evolved and functions as a powerful, public mechanism for generating common knowledge.  
 * 🎲 Game Theory: A Nontechnical Introduction by Morten D. Davis [Source: Dover Publications]. Provides a highly accessible overview of the mathematical principles, including coordination games, that underpin the logic of common assumptions in social interaction.  
   
 ### Contrasting  
   
 * 💸 Extraordinary Popular Delusions and the Madness of Crowds by Charles Mackay [Source: Richard Bentley]. This classic text details historical failures of collective common belief, such as the Tulip Mania, illustrating the dangers that arise when recursive mentalizing detaches from objective reality.  
-* [🤔🐇🐢 Thinking, Fast and Slow](/content/books/thinking-fast-and-slow.md) by Daniel Kahneman [Source: Farrar, Straus and Giroux]. Explores the systemic cognitive biases (System 1 vs. System 2) that can override the logical decision-making framework implied by the common knowledge model, often leading to collective irrationality.  
+* [🤔🐇🐢 Thinking, Fast and Slow](../books/thinking-fast-and-slow.md) by Daniel Kahneman [Source: Farrar, Straus and Giroux]. Explores the systemic cognitive biases (System 1 vs. System 2) that can override the logical decision-making framework implied by the common knowledge model, often leading to collective irrationality.  
 * 🐘 Why We Are So Cranky by Elisha C. Pool and Robert B. Cialdini [Source: Journal of Personality and Social Psychology]. This work discusses the backfiring of descriptive norms, which is a related concept that contrasts with the video's focus on successful coordination by highlighting how the awareness of what *most people do* can be a detriment to social behavior.  
   
 ### Creatively Related  
   
-* [♟️🧠📈🎯 The Art of Strategy: A Game Theorist's Guide to Success in Business and Life](/content/books/the-art-of-strategy-a-game-theorists-guide-to-success-in-business-and-life.md) by Avinash K. Dixit and Barry J. Nalebuff [Source: W. W. Norton & Company]. This book offers a practical, modern application of the game theory concepts—including coordination and threats—discussed in the context of the video's examples of veiled language.  
+* [♟️🧠📈🎯 The Art of Strategy: A Game Theorist's Guide to Success in Business and Life](../books/the-art-of-strategy-a-game-theorists-guide-to-success-in-business-and-life.md) by Avinash K. Dixit and Barry J. Nalebuff [Source: W. W. Norton & Company]. This book offers a practical, modern application of the game theory concepts—including coordination and threats—discussed in the context of the video's examples of veiled language.  
 * 🌍 Albion's Seed: Four British Folkways in America by David Hackett Fischer [Source: Oxford University Press]. This historical work demonstrates how distinct founding cultures established durable, unspoken social conventions and norms that continue to shape regional differences in the United States.  
 * 🖼️ The Presentation of Self in Everyday Life by Erving Goffman [Source: Anchor Books]. Examines social interaction through the lens of theatrical performance, which is directly relevant to the video's discussion of *role-playing* and the need to maintain polite *fictions* to avoid polluting the pool of common assumptions.  
   

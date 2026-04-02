@@ -10,7 +10,7 @@ Channel: Heather Cox Richardson
 tags:
 youtube: https://youtu.be/IEkx7D87hg4
 ---
-[Home](/content/index.md) > [Videos](/content/videos/index.md) | [🏛️🇺🇸📖 Heather Cox Richardson](/content/people/heather-cox-richardson.md)  
+[Home](../index.md) > [Videos](./index.md) | [🏛️🇺🇸📖 Heather Cox Richardson](../people/heather-cox-richardson.md)  
 # 🏛️📉🇺🇸 The Democracy Crisis Underneath America’s Affordability Crisis | Zohran Mamdani  
 ![The Democracy Crisis Underneath America’s Affordability Crisis | Zohran Mamdani](https://youtu.be/IEkx7D87hg4)  
   
@@ -61,5 +61,5 @@ youtube: https://youtu.be/IEkx7D87hg4
   
 ### 🎨 Creatively Related  
   
-* [🏛️💰 Debt: The First 5,000 Years](/content/books/debt-the-first-5000-years.md) by David Graeber. This book is tangentially related by exploring the fundamental moral and economic relationship between citizens and the state, linking back to the video's discussion of human agency and belonging within a democratic society.  
+* [🏛️💰 Debt: The First 5,000 Years](../books/debt-the-first-5000-years.md) by David Graeber. This book is tangentially related by exploring the fundamental moral and economic relationship between citizens and the state, linking back to the video's discussion of human agency and belonging within a democratic society.  
 * 🏗️ The Power Broker: Robert Moses and the Fall of New York by Robert A. Caro. This historical account details the immense, often destructive, power wielded by unelected officials in New York City's history, providing critical context for the Mayor-Elect's pledge to restore democratic control and effectiveness to municipal government.

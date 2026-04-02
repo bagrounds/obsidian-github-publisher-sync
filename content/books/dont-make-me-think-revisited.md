@@ -7,8 +7,11 @@ URL: https://bagrounds.org/books/dont-make-me-think-revisited
 Author:
 tags:
 affiliate link: https://amzn.to/3HF6Qt9
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_time: 2026-04-01T00:00:00Z
+force_analyze_links: false
 ---
-[Home](/content/index.md) > [Books](/content/books/index.md)  
+[Home](../index.md) > [Books](./index.md)  
 # 🚫💭🌐 Don't Make Me Think, Revisited: A Common Sense Approach to Web Usability  
 [🛒 Don't Make Me Think, Revisited: A Common Sense Approach to Web Usability. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3HF6Qt9)  
   
@@ -74,10 +77,10 @@ affiliate link: https://amzn.to/3HF6Qt9
 ### Additional Book Recommendations 📚  
   
 * **Best Alternate Book on the Same Topic:** "Rocket Surgery Made Easy" by Steve Krug (more focused on practical usability testing) 🚀🧑‍⚕️  
-* **Best Tangentially Related Book:** "[The Design of Everyday Things](/content/books/the-design-of-everyday-things.md)" by Don Norman (broader principles of design and usability) 🚪💡  
+* **Best Tangentially Related Book:** "[The Design of Everyday Things](./the-design-of-everyday-things.md)" by Don Norman (broader principles of design and usability) 🚪💡  
 * **Best Diametrically Opposed Book:** "Designing Interactions" by Bill Moggridge (more theoretical and in-depth exploration of interaction design) 💻🤔  
 * **Best Fiction Book That Incorporates Related Ideas:** "Ready Player One" by Ernest Cline (explores virtual interfaces and user experience in a fictional setting) 🎮👾  
-* **Best More General Book:** "[Universal Principles of Design](/content/books/universal-principles-of-design.md)" by William Lidwell, Kritina Holden, and Jill Butler (covers a wide range of design principles) 🌐📐  
+* **Best More General Book:** "[Universal Principles of Design](./universal-principles-of-design.md)" by William Lidwell, Kritina Holden, and Jill Butler (covers a wide range of design principles) 🌐📐  
 * **Best More Specific Book:** "Mobile First" by Luke Wroblewski (focuses specifically on mobile design) 📱🥇  
 * **Best More Rigorous Book:** "Human-Computer Interaction" by Alan Dix, Janet Finlay, Gregory Abowd, and Russell Beale (academic textbook on HCI) 🧑‍🏫📚  
 * **Best More Accessible Book:** "100 Things Every Designer Needs to Know About People" by Susan Weinschenk (easy-to-digest insights on user psychology) 🧠😊  

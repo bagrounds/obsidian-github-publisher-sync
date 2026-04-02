@@ -6,8 +6,11 @@ URL: https://bagrounds.org/books/zen-in-the-art-of-archery
 share: true
 CTA: 🎯 Master your shot.
 affiliate link: https://amzn.to/3Z3rcBT
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_time: 2026-04-01T00:00:00Z
+force_analyze_links: false
 ---
-[Home](/content/index.md) > [Books](/content/books/index.md)  
+[Home](../index.md) > [Books](./index.md)  
 # 🧘🏹 Zen in the Art of Archery  
 [🛒 Zen in the Art of Archery. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3Z3rcBT)  
   
@@ -73,8 +76,8 @@ affiliate link: https://amzn.to/3Z3rcBT
 * 💡 **Awareness** by Anthony de Mello: Short, punchy essays on self-observation, letting go, and living in the present.  
   
 ### Contrasting  
-* **[🎨🤓 The Art of Learning: A Journey in the Pursuit of Excellence](/content/books/the-art-of-learning.md)** by Josh Waitzkin: A grandmaster's journey through chess and Tai Chi, offering a Western perspective on deliberate practice, progressive skill acquisition, and psychological resilience.  
-* **[🌱🧘🏼‍♀️🏆 Mindset: The New Psychology of Success](/content/books/mindset.md)** by Carol Dweck: Explores the impact of fixed vs. growth mindsets on learning, achievement, and mastery, from a modern psychological perspective.  
+* **[🎨🤓 The Art of Learning: A Journey in the Pursuit of Excellence](./the-art-of-learning.md)** by Josh Waitzkin: A grandmaster's journey through chess and Tai Chi, offering a Western perspective on deliberate practice, progressive skill acquisition, and psychological resilience.  
+* **[🌱🧘🏼‍♀️🏆 Mindset: The New Psychology of Success](./mindset.md)** by Carol Dweck: Explores the impact of fixed vs. growth mindsets on learning, achievement, and mastery, from a modern psychological perspective.  
   
 ### Related  
 * 🗡️ **Musashi** by Eiji Yoshikawa: A fictionalized account of Miyamoto Musashi's life, delving into the path of the sword as a spiritual discipline.  

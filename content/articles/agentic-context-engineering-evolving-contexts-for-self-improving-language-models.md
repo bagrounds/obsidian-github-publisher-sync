@@ -7,7 +7,7 @@ URL: https://bagrounds.org/articles/agentic-context-engineering-evolving-context
 Author:
 tags:
 ---
-[Home](/content/index.md) > [Articles](/content/articles/index.md)  
+[Home](../index.md) > [Articles](./index.md)  
 # [🤖⚙️🔄🗣️ Agentic Context Engineering: Evolving Contexts for Self Improving Language Models](https://www.arxiv.org/pdf/2510.04618)  
 ## 🤖 AI Summary  
 The 🤖 paper introduces **Agentic Context Engineering (ACE)** to address crucial limitations in large language model (LLM) context adaptation.  
@@ -54,13 +54,13 @@ A: 🛠️ The exact prompts used for all three core components—the **ACE Gene
 ## 📚 Book Recommendations  
   
 ### Similar Books  
-* [🤖⚙️ AI Agents in Action](/content/books/ai-agents-in-action.md): 🛠️ Focuses on building production-ready, autonomous agents by mastering knowledge management, memory systems, and incorporating feedback loops for continuous self-improvement, directly mirroring ACE's goals.  
-* [🤖🧠🔗 Building AI Agents with LLMs, RAG, and Knowledge Graphs: A practical guide to autonomous and modern AI agents](/content/books/building-ai-agents-with-llms-rag-and-knowledge-graphs-a-practical-guide-to-autonomous-and-modern-ai-agents.md): 💡 Explores advanced Retrieval-Augmented Generation (RAG) techniques and the use of knowledge graphs, which are foundational methods for extending and structuring the "brain" (context) of an AI agent, analogous to the evolving playbook of ACE.  
+* [🤖⚙️ AI Agents in Action](../books/ai-agents-in-action.md): 🛠️ Focuses on building production-ready, autonomous agents by mastering knowledge management, memory systems, and incorporating feedback loops for continuous self-improvement, directly mirroring ACE's goals.  
+* [🤖🧠🔗 Building AI Agents with LLMs, RAG, and Knowledge Graphs: A practical guide to autonomous and modern AI agents](../books/building-ai-agents-with-llms-rag-and-knowledge-graphs-a-practical-guide-to-autonomous-and-modern-ai-agents.md): 💡 Explores advanced Retrieval-Augmented Generation (RAG) techniques and the use of knowledge graphs, which are foundational methods for extending and structuring the "brain" (context) of an AI agent, analogous to the evolving playbook of ACE.  
   
 ### Contrasting Books  
-* [🤖🏗️ AI Engineering: Building Applications with Foundation Models](/content/books/ai-engineering-building-applications-with-foundation-models.md): 🌐 Presents a comprehensive roadmap for building and deploying large-scale AI systems, focusing on *infrastructure*, MLOps, and scalable architecture, providing a necessary counterbalance to ACE's purely context-centric optimization.  
+* [🤖🏗️ AI Engineering: Building Applications with Foundation Models](../books/ai-engineering-building-applications-with-foundation-models.md): 🌐 Presents a comprehensive roadmap for building and deploying large-scale AI systems, focusing on *infrastructure*, MLOps, and scalable architecture, providing a necessary counterbalance to ACE's purely context-centric optimization.  
 * 📘 The LLM Engineering Handbook: 🔧 Offers a practical guide that covers *fine-tuning* and advanced *prompt engineering* techniques, showcasing model weight updates and single-prompt optimization as alternative or complementary solutions to context manipulation.  
   
 ### Creatively Related Books  
-* [✨🤖🔗🐍 Generative AI with LangChain: A Hands On Guide to Crafting Scalable, Intelligent Systems and Advanced AI Agents with Python](/content/books/generative-ai-with-langchain-a-hands-on-guide-to-crafting-scalable-intelligent-systems-and-advanced-ai-agents-with-python.md): 🧩 LangChain is a premier orchestration framework; this book explores how to chain together tools, memory, and LLMs into complex workflows, providing the architectural environment in which context engineering methods like ACE are implemented and scaled.  
-* [🔬🔄 The Structure of Scientific Revolutions](/content/books/the-structure-of-scientific-revolutions.md) by Thomas S. Kuhn: 💡 While not an AI book, this work discusses how paradigms evolve through **reflection** and **revision**, offering a philosophical parallel to how ACE’s modular process *reflects* on failure and *revises* the agent’s core *playbook* (its current paradigm) to achieve self-improvement.
+* [✨🤖🔗🐍 Generative AI with LangChain: A Hands On Guide to Crafting Scalable, Intelligent Systems and Advanced AI Agents with Python](../books/generative-ai-with-langchain-a-hands-on-guide-to-crafting-scalable-intelligent-systems-and-advanced-ai-agents-with-python.md): 🧩 LangChain is a premier orchestration framework; this book explores how to chain together tools, memory, and LLMs into complex workflows, providing the architectural environment in which context engineering methods like ACE are implemented and scaled.  
+* [🔬🔄 The Structure of Scientific Revolutions](../books/the-structure-of-scientific-revolutions.md) by Thomas S. Kuhn: 💡 While not an AI book, this work discusses how paradigms evolve through **reflection** and **revision**, offering a philosophical parallel to how ACE’s modular process *reflects* on failure and *revises* the agent’s core *playbook* (its current paradigm) to achieve self-improvement.

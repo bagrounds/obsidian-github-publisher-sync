@@ -7,8 +7,11 @@ URL: https://bagrounds.org/books/causality
 Author:
 tags:
 affiliate link: https://amzn.to/4dOAtEw
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_time: 2026-04-02T00:00:00Z
+force_analyze_links: false
 ---
-[Home](/content/index.md) > [Books](/content/books/index.md)  
+[Home](../index.md) > [Books](./index.md)  
 # ❓➡️⚙️ Causality: Models, Reasoning, and Inference  
 [🛒 Causality: Models, Reasoning, and Inference. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4dOAtEw)  
   
@@ -62,11 +65,11 @@ affiliate link: https://amzn.to/4dOAtEw
     * The concepts presented have been used in many scientific papers, and are widely accepted.  
   
 ### **Book Recommendations:** 📚  
-* **Best Alternate Book on the Same Topic:** [❓➡️💡🧮 Elements of Causal Inference: Foundations and Learning Algorithms](/content/books/elements-of-causal-inference-foundations-and-learning-algorithms.md) by Jonas Peters, Dominik Janzing, and Bernhard Schölkopf. This book provides a more technical and algorithmic perspective on causal inference. 💻  
-* **Best Tangentially Related Book:** [🤔🐇🐢 Thinking, Fast and Slow](/content/books/thinking-fast-and-slow.md) by Daniel Kahneman. This book explores the cognitive biases and heuristics that influence human judgment and decision-making, which are closely related to causal reasoning. 🧠  
-* **Best Diametrically Opposed Book:** [⚫🦢🎲 The Black Swan: The Impact of the Highly Improbable](/content/books/the-black-swan-the-impact-of-the-highly-improbable.md) by Nassim Nicholas Taleb. While Taleb acknowledges the importance of causality, he emphasizes the limitations of our ability to predict and understand complex events, particularly those that are rare and unpredictable. 🦢  
+* **Best Alternate Book on the Same Topic:** [❓➡️💡🧮 Elements of Causal Inference: Foundations and Learning Algorithms](./elements-of-causal-inference-foundations-and-learning-algorithms.md) by Jonas Peters, Dominik Janzing, and Bernhard Schölkopf. This book provides a more technical and algorithmic perspective on causal inference. 💻  
+* **Best Tangentially Related Book:** [🤔🐇🐢 Thinking, Fast and Slow](./thinking-fast-and-slow.md) by Daniel Kahneman. This book explores the cognitive biases and heuristics that influence human judgment and decision-making, which are closely related to causal reasoning. 🧠  
+* **Best Diametrically Opposed Book:** [⚫🦢🎲 The Black Swan: The Impact of the Highly Improbable](./the-black-swan-the-impact-of-the-highly-improbable.md) by Nassim Nicholas Taleb. While Taleb acknowledges the importance of causality, he emphasizes the limitations of our ability to predict and understand complex events, particularly those that are rare and unpredictable. 🦢  
 * **Best Fiction Book That Incorporates Related Ideas:** *The Man Who Folded Himself* by David Gerrold. This science fiction novel explores the implications of time travel and alternate realities, which are closely related to counterfactual reasoning. ⏳  
-* **Best Book That Is More General:** *[Factfulness](/content/books/factfulness.md): Ten Reasons We're Wrong About the World – and Why Things Are Better Than You Think* by Hans Rosling. This book uses data and statistics to challenge common misconceptions about the world, highlighting the importance of accurate causal reasoning. 📊  
+* **Best Book That Is More General:** *[Factfulness](./factfulness.md): Ten Reasons We're Wrong About the World – and Why Things Are Better Than You Think* by Hans Rosling. This book uses data and statistics to challenge common misconceptions about the world, highlighting the importance of accurate causal reasoning. 📊  
 * **Best Book That Is More Specific:** *Causal Inference: What If* by Miguel A. Hernán and James M. Robins. This textbook provides a more advanced and technical treatment of causal inference, with a focus on applications in epidemiology and biostatistics. 🔬  
 * **Best Book That Is More Rigorous:** *Probabilistic Reasoning in Intelligent Systems: Networks of Plausible Inference* by Judea Pearl. This is a more technical book by Pearl that covers the basics of Bayesian networks and probabilistic reasoning, providing a foundation for understanding causal inference. 🤓  
 * **Best Book That Is More Accessible:** *Statistical Rethinking: A Bayesian Course with Examples in R and Stan* by Richard McElreath. Although it focuses on Bayesian statistics, it provides a very accessible introduction to causal inference and the importance of model building. 🧑‍🏫  

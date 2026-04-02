@@ -7,7 +7,7 @@ share: true
 affiliate link: https://amzn.to/4lAXY6F
 CTA: ⚖️ Demand fairness.
 ---
-[Home](/content/index.md) > [Books](/content/books/index.md)  
+[Home](../index.md) > [Books](./index.md)  
 # 💰➡️ The Triumph of Injustice: How the Rich Dodge Taxes and How to Make Them Pay  
 [🛒 The Triumph of Injustice: How the Rich Dodge Taxes and How to Make Them Pay. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4lAXY6F)  
   
@@ -44,9 +44,9 @@ CTA: ⚖️ Demand fairness.
   
 🔎 These books explore similar themes of inequality, taxation, and the concentration of wealth and power.  
   
-* **[💰📈🌍⏳ Capital in the Twenty-First Century](/content/books/capital-in-the-twenty-first-century.md) by Thomas Piketty:** 📈 A monumental work that provides a comprehensive historical analysis of wealth and income inequality across several countries, arguing that without intervention, capitalism tends to generate unsustainable inequalities. 🤝 Saez and Zucman's work builds on Piketty's research.  
+* **[💰📈🌍⏳ Capital in the Twenty-First Century](./capital-in-the-twenty-first-century.md) by Thomas Piketty:** 📈 A monumental work that provides a comprehensive historical analysis of wealth and income inequality across several countries, arguing that without intervention, capitalism tends to generate unsustainable inequalities. 🤝 Saez and Zucman's work builds on Piketty's research.  
 * 🏝️ **The Hidden Wealth of Nations: The Scourge of Tax Havens by Gabriel Zucman:** 🤫 Zucman's earlier work specifically focuses on the scale and impact of wealth hidden in tax havens, a key component of tax avoidance discussed in "The Triumph of Injustice."  
-* **[🏷️🏚️💔🏰 The Price of Inequality: How Today's Divided Society Endangers Our Future](/content/books/the-price-of-inequality-how-todays-divided-society-endangers-our-future.md) by Joseph E. Stiglitz:** 💔 Stiglitz examines the various costs of inequality to the economy and society, including how the financial system and political processes have been shaped to benefit the few.  
+* **[🏷️🏚️💔🏰 The Price of Inequality: How Today's Divided Society Endangers Our Future](./the-price-of-inequality-how-todays-divided-society-endangers-our-future.md) by Joseph E. Stiglitz:** 💔 Stiglitz examines the various costs of inequality to the economy and society, including how the financial system and political processes have been shaped to benefit the few.  
 * 🛡️ **The Wealth Hoarders: How Billionaires Pay Millions to Hide Trillions by Chuck Collins:** 🤑 This book delves into the "Wealth Defense Industry" and the specific mechanisms used by the ultra-rich to hide their assets and avoid taxes.  
 * ❓ **Inequality: What Can Be Done? by Anthony B. Atkinson:** 🤔 A detailed analysis of the causes and consequences of inequality, offering a range of policy solutions beyond just taxation.  
   
@@ -64,10 +64,10 @@ CTA: ⚖️ Demand fairness.
 👓 These books offer broader historical, social, or philosophical contexts related to wealth, power, and justice, providing different lenses through which to view the issues raised in "The Triumph of Injustice."  
   
 * 🎭 **The Gilded Age: A Tale of Today by Mark Twain and Charles Dudley Warner:** ✍️ A satirical novel from the late 19th century that critiques the corruption and materialism of the era, highlighting issues of wealth concentration and political influence that resonate with the themes of contemporary inequality.  
-* **[🧑🏿⛓️🙈 The New Jim Crow: Mass Incarceration in the Age of Colorblindness](/content/books/the-new-jim-crow-mass-incarceration-in-the-age-of-colorblindness.md) by Michelle Alexander:** ⚖️ While focused on the justice system, this book highlights how seemingly neutral policies can perpetuate racial and economic inequality, offering a parallel to how tax policy can disproportionately impact different groups.  
-* **[🗳️🕊️🇺🇸 Democracy in America](/content/books/democracy-in-america.md) by Alexis de Tocqueville:** 🏛️ A classic analysis of American democracy in the 19th century, discussing the tension between equality and liberty and the potential pitfalls of democratic societies, providing a historical backdrop for discussions about the influence of concentrated wealth on governance.  
-* **[⚖️⬆️🤝 The Spirit Level: Why Greater Equality Makes Societies Stronger](/content/books/the-spirit-level-why-greater-equality-makes-societies-stronger.md) by Richard Wilkinson and Kate Pickett:** 💯 This book argues that more equal societies have better outcomes across a range of social indicators, from health and education to trust and social mobility, reinforcing the broader societal benefits of addressing inequality.  
+* **[🧑🏿⛓️🙈 The New Jim Crow: Mass Incarceration in the Age of Colorblindness](./the-new-jim-crow-mass-incarceration-in-the-age-of-colorblindness.md) by Michelle Alexander:** ⚖️ While focused on the justice system, this book highlights how seemingly neutral policies can perpetuate racial and economic inequality, offering a parallel to how tax policy can disproportionately impact different groups.  
+* **[🗳️🕊️🇺🇸 Democracy in America](./democracy-in-america.md) by Alexis de Tocqueville:** 🏛️ A classic analysis of American democracy in the 19th century, discussing the tension between equality and liberty and the potential pitfalls of democratic societies, providing a historical backdrop for discussions about the influence of concentrated wealth on governance.  
+* **[⚖️⬆️🤝 The Spirit Level: Why Greater Equality Makes Societies Stronger](./the-spirit-level-why-greater-equality-makes-societies-stronger.md) by Richard Wilkinson and Kate Pickett:** 💯 This book argues that more equal societies have better outcomes across a range of social indicators, from health and education to trust and social mobility, reinforcing the broader societal benefits of addressing inequality.  
 * 📚 **Capital and Ideology by Thomas Piketty:** 💭 A follow-up to *Capital in the Twenty-First Century*, this book examines the historical and ideological justifications for inequality in different societies, providing a deeper understanding of the narratives that support or oppose progressive taxation and wealth redistribution.  
   
-## 💬 [Gemini](/content/software/gemini.md) Prompt (gemini-2.5-flash-preview-04-17)  
+## 💬 [Gemini](../software/gemini.md) Prompt (gemini-2.5-flash-preview-04-17)  
 > Write a markdown-formatted (start headings at level H2) book report, followed by a plethora of additional similar, contrasting, and creatively related book recommendations on The Triumph of Injustice: How the Rich Dodge Taxes and How to Make Them Pay. Be thorough in content discussed but concise and economical with your language. Structure the report with section headings and bulleted lists to avoid long blocks of text.

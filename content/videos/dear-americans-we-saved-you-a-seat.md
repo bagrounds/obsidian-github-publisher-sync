@@ -10,7 +10,7 @@ Channel: Tod Maffin
 tags:
 youtube: https://youtube.com/shorts/9iI-vtifUVw
 ---
-[Home](/content/index.md) > [Videos](/content/videos/index.md)  
+[Home](../index.md) > [Videos](./index.md)  
 # 🇺🇸➡️🇨🇦 Dear Americans… we saved you a seat  
 ![Dear Americans… we saved you a seat](https://youtube.com/embed/9iI-vtifUVw)  
   
@@ -32,5 +32,5 @@ This video presents a 💡 perspective focused on the benefits of living in Cana
   
 ## 📚 Book Recommendations  
 * O Canada: A History of Hockey, Hot Dogs, and How We've Got It Wrong, a lighthearted and informative look at Canadian culture and history.  
-* [🙋‍♂️🏛️ Why I Am a Liberal: Being Definitions and Personal Confessions of Faith by the Best Minds of the Liberal Party](/content/books/why-i-am-a-liberal-being-definitions-and-personal-confessions-of-faith-by-the-best-minds-of-the-liberal-party.md), a book that explores the principles of liberalism and how they apply to modern politics, providing a contrasting view to the more conservative ideals often associated with American politics.  
+* [🙋‍♂️🏛️ Why I Am a Liberal: Being Definitions and Personal Confessions of Faith by the Best Minds of the Liberal Party](../books/why-i-am-a-liberal-being-definitions-and-personal-confessions-of-faith-by-the-best-minds-of-the-liberal-party.md), a book that explores the principles of liberalism and how they apply to modern politics, providing a contrasting view to the more conservative ideals often associated with American politics.  
 * Uprooting, a book about the experience of immigration and adapting to a new country.

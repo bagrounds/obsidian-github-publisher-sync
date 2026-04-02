@@ -7,7 +7,7 @@ share: true
 affiliate link: https://amzn.to/40nBWMn
 CTA: Understand immigration.
 ---
-[Home](/content/index.md) > [Books](/content/books/index.md)  
+[Home](../index.md) > [Books](./index.md)  
 # 🛂⛓️ From Deportation to Prison: The Politics of Immigration Enforcement in Post-Civil Rights America  
 [🛒 From Deportation to Prison: The Politics of Immigration Enforcement in Post-Civil Rights America. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/40nBWMn)  
   
@@ -56,10 +56,10 @@ These books touch upon broader themes interconnected with "➡️ From Deportati
   
 * 🏛️ **Golden Gulag: Prisons, Surplus, Crisis, and Opposition in Globalizing California** by Ruth Wilson Gilmore: Provides a detailed analysis of the growth of the prison system in California, offering insights into the forces behind mass incarceration that provide a backdrop to Macías-Rojas's work.  
 * 👦 **Punished: Policing the Lives of Black and Latino Boys** by Victor M. Rios: Explores the experiences of young Black and Latino men with policing and the criminal justice system, highlighting the intersection of race and criminalization.  
-* **[🧑🏿⛓️🙈 The New Jim Crow: Mass Incarceration in the Age of Colorblindness](/content/books/the-new-jim-crow-mass-incarceration-in-the-age-of-colorblindness.md)** by Michelle Alexander: A foundational text on the US system of mass incarceration and its racial implications, highly relevant to understanding the context in which immigration enforcement became increasingly punitive.  
+* **[🧑🏿⛓️🙈 The New Jim Crow: Mass Incarceration in the Age of Colorblindness](./the-new-jim-crow-mass-incarceration-in-the-age-of-colorblindness.md)** by Michelle Alexander: A foundational text on the US system of mass incarceration and its racial implications, highly relevant to understanding the context in which immigration enforcement became increasingly punitive.  
 * ❓ **Tell Me How It Ends: An Essay in Forty Questions** by Valeria Luiselli: Uses a unique structure based on questions asked of undocumented child migrants to humanize their experiences and critique the immigration system.  
 * 😔 **Enduring Uncertainty: Deportation, Punishment and Everyday Life** by Ines Hasselberg: An ethnography exploring the experiences of those facing deportation from the UK, offering a comparative perspective on the human cost of deportation policies.  
 * 💔 **Raiding the Heartland** by William D. Lopez: Chronicles the impact of immigration raids on communities and the resistance they engender.  
   
-## 💬 [Gemini](/content/software/gemini.md) Prompt (gemini-2.5-flash-preview-04-17)  
+## 💬 [Gemini](../software/gemini.md) Prompt (gemini-2.5-flash-preview-04-17)  
 > Write a markdown-formatted (start headings at level H2) book report, followed by a plethora of additional similar, contrasting, and creatively related book recommendations on From Deportation to Prison: The Politics of Immigration Enforcement in Post-Civil Rights America. Be thorough in content discussed but concise and economical with your language. Structure the report with section headings and bulleted lists to avoid long blocks of text.

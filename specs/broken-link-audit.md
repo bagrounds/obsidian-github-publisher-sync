@@ -82,7 +82,7 @@
 
 🔍 **Symptom**: Links resolve to URLs like `bagrounds.org/books/content/books/spark` (404) instead of `bagrounds.org/books/spark`.
 
-🔗 **Root Cause**: Gemini-generated content (book reports, topic pages, reflections) contains markdown links with filesystem-style `/content/` prefix paths (e.g., `[Home](/content/index.md)`). Quartz's `transformInternalLink()` treats these as relative paths, preserving the spurious `content` segment. The browser then resolves `./content/books/spark` relative to the current page directory, producing a nonexistent URL.
+🔗 **Root Cause**: The Enveloppe Obsidian plugin's historical link conversion configuration produced markdown links with `/content/` prefix paths when converting wikilinks from the vault. Before December 28, 2025, Enveloppe was configured with absolute path resolution that included the target folder name (`content/`), producing links like `[Home](/content/index.md)`. The configuration was corrected around that date to use relative paths, but the ~9,170 links in previously published files were never retroactively fixed. Quartz's `transformInternalLink()` treats these as relative paths, preserving the spurious `content` segment, and the browser resolves them to nonexistent URLs.
 
 📊 **Scope**: ~9,170 markdown links across books, articles, reflections, topics, and videos directories. Breadcrumb navigation alone accounts for ~1,794 instances.
 

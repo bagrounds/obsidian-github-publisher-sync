@@ -8,8 +8,11 @@ Author:
 tags:
 affiliate link: https://amzn.to/45zltYW
 CTA: 🧠 Reshape perspectives.
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_time: 2026-04-02T00:00:00Z
+force_analyze_links: false
 ---
-[Home](/content/index.md) > [Books](/content/books/index.md)  
+[Home](../index.md) > [Books](./index.md)  
 # 🔊🎞️🌱🤯 Resonate: Present Visual Stories that Transform Audiences  
 [🛒 Resonate: Present Visual Stories that Transform Audiences. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/45zltYW)  
   
@@ -75,12 +78,12 @@ Nancy Duarte is a highly respected presentation expert with extensive experience
 ### Additional Book Recommendations 📚  
   
 * **Best alternate book on the same topic:** "Slide:ology: The Art and Science of Creating Great Presentations" by Nancy Duarte. This book focuses more on the design aspects of presentations. 🎨  
-* **Best book that is tangentially related:** "[Made to Stick: Why Some Ideas Survive and Others Die](/content/books/made-to-stick.md)" by Chip Heath and Dan Heath. This book explores the principles of making ideas memorable and impactful. 🧠  
-* **Best book that is diametrically opposed:** "[Presentation Zen: Simple Ideas on Presentation Design and Delivery](/content/books/presentation-zen.md)" by Garr Reynolds. While sharing some similarities, Reynolds emphasizes simplicity and minimalism, which can be seen as a different approach to Duarte's more structured narrative approach. ☯️  
+* **Best book that is tangentially related:** "[Made to Stick: Why Some Ideas Survive and Others Die](./made-to-stick.md)" by Chip Heath and Dan Heath. This book explores the principles of making ideas memorable and impactful. 🧠  
+* **Best book that is diametrically opposed:** "[Presentation Zen: Simple Ideas on Presentation Design and Delivery](./presentation-zen.md)" by Garr Reynolds. While sharing some similarities, Reynolds emphasizes simplicity and minimalism, which can be seen as a different approach to Duarte's more structured narrative approach. ☯️  
 * **Best fiction book that incorporates related ideas:** "Storyworthy: Engage, Teach, Persuade, and Change Your Life Through the Power of Storytelling" by Matthew Dicks. While not about presentations, it's about the power of storytelling. 📖  
 * **Best book that is more general:** "Talk Like TED: The 9 Public-Speaking Secrets of the World's Top Minds" by Carmine Gallo. This book covers broader public speaking skills. 🗣️  
 * **Best book that is more specific:** "Data Storytelling: The Essential Guide to Turning Data into a Compelling Narrative" by Brent Dykes. This book focuses on using data to tell stories. 📊  
-* **Best book that is more rigorous:** "[Influence](/content/books/influence.md): The Psychology of Persuasion" by Robert Cialdini. This book provides a deeper dive into the psychological principles of persuasion. 🧠  
+* **Best book that is more rigorous:** "[Influence](./influence.md): The Psychology of Persuasion" by Robert Cialdini. This book provides a deeper dive into the psychological principles of persuasion. 🧠  
 * **Best book that is more accessible:** "The Quick Fix Presentation Playbook" by Simon Raybould. This book is a very fast read, and contains immediately actionable advice. ⚡  
   
 ## 💬 [Gemini](https://gemini.google.com) Prompt  

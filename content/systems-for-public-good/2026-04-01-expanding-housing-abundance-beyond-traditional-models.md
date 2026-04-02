@@ -13,7 +13,7 @@ link_analysis_time: 2026-04-01T00:00:00Z
 force_analyze_links: false
 updated: 2026-04-01T23:19:38
 ---
-[Home](../index.md) > [🏛️ Systems for Public Good](./index.md) | [⏮️](./2026-03-31-the-cornerstone-of-well-being-housing-as-a-foundational-freedom.md)  
+[Home](../index.md) > [🏛️ Systems for Public Good](./index.md) | [⏮️](./2026-03-31-the-cornerstone-of-well-being-housing-as-a-foundational-freedom.md) [⏭️](./2026-04-02-cultivating-care-beyond-subsidies-and-elevating-a-vital-profession.md)  
 # 2026-04-01 | 🏛️ 🏡 Expanding Housing Abundance: Beyond Traditional Models 🏛️  
 ![systems-for-public-good-2026-04-01-expanding-housing-abundance-beyond-traditional-models](../systems-for-public-good-2026-04-01-expanding-housing-abundance-beyond-traditional-models.jpg)  
   

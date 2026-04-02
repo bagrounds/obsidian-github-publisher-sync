@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-04-02T06:56:53-07:00
+updated: 2026-04-02T14:11:32-07:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -50,10 +50,10 @@ updated: 2026-04-02T06:56:53-07:00
   
   
 ## [📚 Books](./books/index.md) (958)  
-- [🧠🤔💡➡️ Cognitive Psychology and Its Implications](./books/cognitive-psychology-and-its-implications.md)  
-- [🧠📚🍎💡📝 How Learning Works: Eight Research-Based Principles for Smart Teaching](./books/how-learning-works.md)  
-- [🚀🧠🏆 Ultralearning: Master Hard Skills, Outsmart the Competition, and Accelerate Your Career](./books/ultralearning-master-hard-skills-outsmart-the-competition-and-accelerate-your-career.md)  
-- [🧠🧑‍🤝‍🧑 The Developing Mind: How Relationships and the Brain Interact to Shape Who We Are](./books/the-developing-mind-how-relationships-and-the-brain-interact-to-shape-who-we-are.md)  
+- [👦🟣🖍️ Harold and the Purple Crayon](./books/harold-and-the-purple-crayon.md)  
+- [🐛🍎 The Very Hungry Caterpillar](./books/the-very-hungry-caterpillar.md)  
+- [🧘🏼‍♀️📅 The Daily Stoic: 366 Meditations on Wisdom, Perseverance, and the Art of Living](./books/the-daily-stoic-366-meditations-on-wisdom-perseverance-and-the-art-of-living.md)  
+- [🛠️💖 Shop Class as Soulcraft: An Inquiry Into the Value of Work](./books/shop-class-as-soulcraft-an-inquiry-into-the-value-of-work.md)  
   
   
 ## [📺 Videos](./videos/index.md) (714)  
@@ -70,11 +70,11 @@ updated: 2026-04-02T06:56:53-07:00
 - [🤔📚 Philosophy](./topics/philosophy.md)  
   
   
-## [📄  Articles](./articles/index.md) (82)  
+## [📄  Articles](./articles/index.md) (83)  
+- [🗺️🚀🤖 A Field Guide to Rapidly Improving AI Products](./articles/a-field-guide-to-rapidly-improving-ai-products.md)  
 - [📈❤️⏱️💪🧘 High Intensity Functional Training Guided by Individualized Heart Rate Variability Results in Similar Health and Fitness Improvements as Predetermined Training with Less Effort](./articles/high-intensity-functional-training-guided-by-individualized-heart-rate-variability-results-in-similar-health-and-fitness-improvements-as-predetermined-training-with-less-effort.md)  
 - [🧠🤖📈 Scientists just developed a new AI modeled on the human brain — it's outperforming LLMs like ChatGPT at reasoning tasks](./articles/scientists-just-developed-a-new-ai-modeled-on-the-human-brain-its-outperforming-llms-like-chatgpt-at-reasoning-tasks.md)  
 - [💪🧠📉💊🔎 Creatine Supplementation in Depression: A Review of Mechanisms, Efficacy, Clinical Outcomes, and Future Directions](./articles/creatine-supplementation-in-depression-a-review-of-mechanisms-efficacy-clinical-outcomes-and-future-directions.md)  
-- [😨 ‘We are all afraid’: Speaking to Alaska nonprofit leaders, Murkowski gets candid on upheaval in federal government](./articles/we-are-all-afraid-speaking-to-alaska-nonprofit-leaders-murkowski-gets-candid-on-upheaval-in-federal-government.md)  
   
   
 ## [🤖💬 Bot Chats](./bot-chats/index.md) (49)  
@@ -92,10 +92,10 @@ updated: 2026-04-02T06:56:53-07:00
   
   
 ## [👥 People](./people/index.md) (18)  
+- [🧠🔬🧘‍♀️💪📈❤️‍🩹🗣️📚🌟 Kelly McGonigal](./people/kelly-mcgonigal.md)  
 - [🧠🤝🐘 Jonathan Haidt](./people/jonathan-haidt.md)  
 - [🏛️🇺🇸📖 Heather Cox Richardson](./people/heather-cox-richardson.md)  
 - [📈📊⚙️🎯 W Edwards Deming](./people/w-edwards-deming.md)  
-- [🤖🧠💻 Andrej Karpathy](./people/andrej-karpathy.md)  
   
   
 ## [🛍️ Products](./products/index.md) (6)  

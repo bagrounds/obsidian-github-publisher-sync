@@ -11,7 +11,7 @@ force_analyze_links: false
 link_analysis_time: 2026-03-22T06:08:01.786Z
 link_analysis_model: gemini-3.1-flash-lite-preview
 ---
-[Home](/content/index.md) > [Books](/content/books/index.md)  
+[Home](../index.md) > [Books](./index.md)  
 # 🥀 Twilight of Democracy: 🐍 The Seductive Lure of Authoritarianism  
 [🛒 Twilight of Democracy: 🐍 The Seductive Lure of Authoritarianism. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3ZO5UZJ)  
   
@@ -55,10 +55,10 @@ Applebaum argues that the current wave 🌊 of authoritarianism is not solely dr
 ## 📚 Book Recommendations  
   
 ### 📖 Similar Themes (Democratic Backsliding & Authoritarianism)  
-1. **[🗳️🏛️☠️ How Democracies Die](/content/books/how-democracies-die.md) by Steven Levitsky & Daniel Ziblatt:** A widely cited academic analysis identifying key indicators of democratic erosion, drawing historical parallels (including US history) to diagnose threats to modern democracies. Focuses on institutional decay and the breakdown of mutual toleration and forbearance.  
-2. 📜 **_[On Tyranny: Twenty Lessons from the Twentieth Century](/content/books/on-tyranny.md)_ by Timothy Snyder:** A concise, impactful book drawing lessons from 20th-century European history (particularly the rise of fascism and communism) to provide practical guidance for resisting authoritarianism today.  
+1. **[🗳️🏛️☠️ How Democracies Die](./how-democracies-die.md) by Steven Levitsky & Daniel Ziblatt:** A widely cited academic analysis identifying key indicators of democratic erosion, drawing historical parallels (including US history) to diagnose threats to modern democracies. Focuses on institutional decay and the breakdown of mutual toleration and forbearance.  
+2. 📜 **_[On Tyranny: Twenty Lessons from the Twentieth Century](./on-tyranny.md)_ by Timothy Snyder:** A concise, impactful book drawing lessons from 20th-century European history (particularly the rise of fascism and communism) to provide practical guidance for resisting authoritarianism today.  
 3. 🇷🇺 **_The Road to Unfreedom: Russia, Europe, America_ by Timothy Snyder:** Explores the intellectual underpinnings and spread of Russian authoritarian ideas and their influence on politics in Europe and the United States.  
-4. 💪 **_[Strongmen: Mussolini to the Present](/content/books/strongmen.md)_ by Ruth Ben-Ghiat:** A historical survey examining the "strongman" playbook across different eras and regions, identifying common tactics related to corruption 💰, violence 🔪, propaganda 📢, and virility.  
+4. 💪 **_[Strongmen: Mussolini to the Present](./strongmen.md)_ by Ruth Ben-Ghiat:** A historical survey examining the "strongman" playbook across different eras and regions, identifying common tactics related to corruption 💰, violence 🔪, propaganda 📢, and virility.  
 5. ⚠️ **_Fascism: A Warning_ by Madeleine K. Albright:** A former US Secretary of State draws on her experiences and historical knowledge to warn about the resurgence of fascist tendencies globally and within the US.  
   
 ### ⚖️ Contrasting Perspectives & Nuances  
@@ -68,13 +68,13 @@ Applebaum argues that the current wave 🌊 of authoritarianism is not solely dr
 4. 🤔 **_In Praise of Skepticism: Trust but Verify_ by Pippa Norris:** While not directly contrasting, Norris's work often explores the cultural roots of political shifts, such as the role of changing values and trust in institutions, potentially offering different causal explanations for democratic malaise compared to Applebaum's focus on elite choices and ideology. (Note: Her book *Cultural Backlash* is also highly relevant).  
   
 ### 🎨 Creatively Related (Fiction, History, Philosophy, Psychology)  
-1. 👁️ **_[1984](/content/books/1984.md)_ by George Orwell:** The classic dystopian novel exploring totalitarianism, surveillance, and the manipulation of truth – themes resonant in discussions of modern authoritarianism.  
-2. **[👹 The Origins of Totalitarianism](/content/books/the-origins-of-totalitarianism.md) by Hannah Arendt:** A foundational philosophical and historical analysis of the origins and characteristics of totalitarian movements (Nazism and Stalinism), exploring themes of ideology, terror 😱, loneliness 😔, and the "banality of evil".  
+1. 👁️ **_[1984](./1984.md)_ by George Orwell:** The classic dystopian novel exploring totalitarianism, surveillance, and the manipulation of truth – themes resonant in discussions of modern authoritarianism.  
+2. **[👹 The Origins of Totalitarianism](./the-origins-of-totalitarianism.md) by Hannah Arendt:** A foundational philosophical and historical analysis of the origins and characteristics of totalitarian movements (Nazism and Stalinism), exploring themes of ideology, terror 😱, loneliness 😔, and the "banality of evil".  
 3. 🕰️ **_The World of Yesterday_ by Stefan Zweig:** A poignant memoir written in exile during WWII, vividly describing the cultural and political disintegration of Europe and the loss of a cosmopolitan, liberal world – echoes Applebaum's themes of cultural despair and political transformation.  
 4. 🤯 **_The Authoritarian Personality_ by Theodor W. Adorno et al.:** A landmark, though controversial, work of social psychology attempting to identify personality traits predisposed to authoritarian beliefs and anti-democratic attitudes. While methodology is debated, the core questions about psychological factors remain relevant.  
 5. 🏘️ **_Prelude to a Riot_ by Annie Zaidi:** A novel set in an imaginary Indian town exploring rising intolerance and communal tensions through multiple perspectives, offering a fictional lens on the societal dynamics that can precede authoritarian shifts.  
 6. ❤️‍🩹 **_Alone in Berlin_ by Hans Fallada:** A novel based on a true story about an ordinary German couple who resist the Nazi regime in small ways, highlighting individual courage and conscience under authoritarianism.  
   
-## 💬 [Gemini](/content/software/gemini.md) Prompt (gemini-2.5-pro-exp-03-25)  
+## 💬 [Gemini](../software/gemini.md) Prompt (gemini-2.5-pro-exp-03-25)  
 > Write a markdown-formatted (start headings at level H2) book report, followed by a plethora of additional similar, contrasting, and creatively related book recommendations on Twilight of Democracy. Be thorough in content discussed but concise and economical with your language. Structure the report with section headings and bulleted lists to avoid long blocks of text..  
   

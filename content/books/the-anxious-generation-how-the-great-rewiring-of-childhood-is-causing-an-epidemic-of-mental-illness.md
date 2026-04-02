@@ -6,8 +6,11 @@ URL: https://bagrounds.org/books/the-anxious-generation-how-the-great-rewiring-o
 share: true
 affiliate link: https://amzn.to/488y2M5
 CTA: 🌱 Nurture resilience.
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_time: 2026-04-01T00:00:00Z
+force_analyze_links: false
 ---
-[Home](/content/index.md) > [Books](/content/books/index.md) | [🧠🤝🐘 Jonathan Haidt](/content/people/jonathan-haidt.md)  
+[Home](../index.md) > [Books](./index.md) | [🧠🤝🐘 Jonathan Haidt](../people/jonathan-haidt.md)  
 # 📱😥 The Anxious Generation: How the Great Rewiring of Childhood Is Causing an Epidemic of Mental Illness  
 [🛒 The Anxious Generation: How the Great Rewiring of Childhood Is Causing an Epidemic of Mental Illness. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/488y2M5)  
   
@@ -51,7 +54,7 @@ CTA: 🌱 Nurture resilience.
 ### 📖 Similar Books  
   
 * 📱 **iGen: Why Today's Super-Connected Kids Are Growing Up Less Rebellious, More Tolerant, Less Happy—and Completely Unprepared for Adulthood** by Jean M Twenge. 📊 This book also examines the impact of smartphones and social media on Generation Z's mental health and development, providing extensive data and analysis. 🤝 Haidt frequently collaborates with Jean Twenge, and her work provides a strong empirical foundation for many of the trends discussed in The Anxious Generation.  
-* **[🤕👶 The Coddling of the American Mind: How Good Intentions and Bad Ideas Are Setting Up a Generation for Failure](/content/books/the-coddling-of-the-american-mind-how-good-intentions-and-bad-ideas-are-setting-up-a-generation-for-failure.md)** by Greg Lukianoff and Jonathan Haidt. 🛡️ Co-authored by Haidt, this book explores how an overprotective culture, combined with certain ideas taught in universities, has contributed to a generation that is less resilient and more prone to anxiety. 🌍 It shares the theme of overprotection in the real world that is further developed in The Anxious Generation.  
+* **[🤕👶 The Coddling of the American Mind: How Good Intentions and Bad Ideas Are Setting Up a Generation for Failure](./the-coddling-of-the-american-mind-how-good-intentions-and-bad-ideas-are-setting-up-a-generation-for-failure.md)** by Greg Lukianoff and Jonathan Haidt. 🛡️ Co-authored by Haidt, this book explores how an overprotective culture, combined with certain ideas taught in universities, has contributed to a generation that is less resilient and more prone to anxiety. 🌍 It shares the theme of overprotection in the real world that is further developed in The Anxious Generation.  
   
 ### 🔄 Contrasting Books  
   
@@ -60,8 +63,8 @@ CTA: 🌱 Nurture resilience.
   
 ### 🎭 Creatively Related Books  
   
-* **[🎳🏘️📉📈 Bowling Alone: The Collapse and Revival of American Community](/content/books/bowling-alone.md)** by Robert D Putnam. 🏘️ This seminal work examines the decline of social capital and civic engagement in America. 🤝 While written before the widespread adoption of smartphones, its themes of declining community ties and face-to-face interaction resonate strongly with Haidt's discussion of social deprivation and the loss of real-world play. 🌳 The book provides a broader historical context for the erosion of social connections that digital technologies may have accelerated.  
-* **[📜🌍⏳ Sapiens: A Brief History of Humankind](/content/books/sapiens-a-brief-history-of-humankind.md)** by Yuval Noah Harari. 🐒 Harari's sweeping history explores the major revolutions that have shaped humanity, from cognitive to agricultural to scientific. 🔄 The Anxious Generation discusses a "Great Rewiring" on a societal scale, and Sapiens provides a macro-historical framework for understanding how profound technological and social shifts can fundamentally alter human experience and psychology. 🧠 It encourages thinking about the current digital transformation in the context of previous epochal changes in human history.  
+* **[🎳🏘️📉📈 Bowling Alone: The Collapse and Revival of American Community](./bowling-alone.md)** by Robert D Putnam. 🏘️ This seminal work examines the decline of social capital and civic engagement in America. 🤝 While written before the widespread adoption of smartphones, its themes of declining community ties and face-to-face interaction resonate strongly with Haidt's discussion of social deprivation and the loss of real-world play. 🌳 The book provides a broader historical context for the erosion of social connections that digital technologies may have accelerated.  
+* **[📜🌍⏳ Sapiens: A Brief History of Humankind](./sapiens-a-brief-history-of-humankind.md)** by Yuval Noah Harari. 🐒 Harari's sweeping history explores the major revolutions that have shaped humanity, from cognitive to agricultural to scientific. 🔄 The Anxious Generation discusses a "Great Rewiring" on a societal scale, and Sapiens provides a macro-historical framework for understanding how profound technological and social shifts can fundamentally alter human experience and psychology. 🧠 It encourages thinking about the current digital transformation in the context of previous epochal changes in human history.  
   
 ## 💬 [Gemini](https://gemini.google.com) Prompt (gemini-2.5-flash)  
 > Write a markdown-formatted (start headings at level H2) book report, followed by similar, contrasting, and creatively related book recommendations on The Anxious Generation: How the Great Rewiring of Childhood Is Causing an Epidemic of Mental Illness. Never quote or italicize titles. Be thorough but concise. Use section headings and bulleted lists to avoid long blocks of text.

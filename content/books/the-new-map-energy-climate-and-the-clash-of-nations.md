@@ -7,7 +7,7 @@ share: true
 CTA: ⚔️ Prepare for geopolitical change.
 affiliate link: https://amzn.to/3XBn6jN
 ---
-[Home](/content/index.md) > [Books](/content/books/index.md)  
+[Home](../index.md) > [Books](./index.md)  
 # ⚡🌍⚔️ The New Map: Energy, Climate, and the Clash of Nations  
 [🛒 The New Map: Energy, Climate, and the Clash of Nations. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3XBn6jN)  
   
@@ -74,7 +74,7 @@ affiliate link: https://amzn.to/3XBn6jN
 * ⚙️ How the World Really Works: How Science Can Set Us Straight on Our Past, Present, and Future by Vaclav Smil. Provides a data-driven perspective on fundamental systems shaping civilization, including energy, often with a more grounded view on energy transitions than optimistic narratives.  
   
 ### 🔗 Related  
-* [🌎👎👑💰🏚️ Why Nations Fail: The Origins of Power, Prosperity, and Poverty](/content/books/why-nations-fail-the-origins-of-power-prosperity-and-poverty.md) by Daron Acemoglu and James A. Robinson. Explores how political and economic institutions drive national success or failure, relevant to the clash of nations theme.  
+* [🌎👎👑💰🏚️ Why Nations Fail: The Origins of Power, Prosperity, and Poverty](./why-nations-fail-the-origins-of-power-prosperity-and-poverty.md) by Daron Acemoglu and James A. Robinson. Explores how political and economic institutions drive national success or failure, relevant to the clash of nations theme.  
 * 💡 The Grid: Electrical Infrastructure for a New Era by Gretchen Bakke. Examines the history, challenges, and future of the electrical grid, a critical component of the energy transition.  
 * 🕰️ Energy and Civilization: A History by Vaclav Smil. A comprehensive historical overview of energy's role in human development, offering a broad context for Yergin's more contemporary analysis.  
   

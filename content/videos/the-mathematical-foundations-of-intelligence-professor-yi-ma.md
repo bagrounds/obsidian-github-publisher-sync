@@ -10,7 +10,7 @@ Channel: Machine Learning Street Talk
 tags:
 youtube: https://youtu.be/QWidx8cYVRs
 ---
-[Home](/content/index.md) > [Videos](/content/videos/index.md)  
+[Home](../index.md) > [Videos](./index.md)  
 # 🧠💡📐🧑‍🏫 The Mathematical Foundations of Intelligence [Professor Yi Ma]  
 ![https://youtu.be/QWidx8cYVRs](https://youtu.be/QWidx8cYVRs)  
   
@@ -48,13 +48,13 @@ youtube: https://youtu.be/QWidx8cYVRs
 ## 📚 Book Recommendations  
   
 ### ↔️ Similar  
-* [🧠🧠🧠🧠 A Thousand Brains: A New Theory of Intelligence](/content/books/a-thousand-brains.md) by Jeff Hawkins describes the Thousand Brains Theory, where every cortical column builds a complete world model, echoing the idea of constant internal world model building and refinement.  
-* [🌐🧭❓🔍🗺️ Complexity: A Guided Tour](/content/books/complexity.md) by Melanie Mitchell explores how complex systems, including intelligent behavior, arise from simple underlying rules and principles, similar to how intelligence is argued to emerge from parsimony and self-consistency.  
+* [🧠🧠🧠🧠 A Thousand Brains: A New Theory of Intelligence](../books/a-thousand-brains.md) by Jeff Hawkins describes the Thousand Brains Theory, where every cortical column builds a complete world model, echoing the idea of constant internal world model building and refinement.  
+* [🌐🧭❓🔍🗺️ Complexity: A Guided Tour](../books/complexity.md) by Melanie Mitchell explores how complex systems, including intelligent behavior, arise from simple underlying rules and principles, similar to how intelligence is argued to emerge from parsimony and self-consistency.  
   
 ### 🆚 Contrasting  
-* [♾️📐🎶🥨 Gödel, Escher, Bach: An Eternal Golden Braid](/content/books/godel-escher-bach.md) by Douglas R Hofstadter focuses on the emergence of meaning, consciousness, and self-reference through recursive structures, suggesting that intelligence is rooted in high-level symbolic manipulation and subjective experience rather than pure compression efficiency.  
-* [❓➡️💡 The Book of Why: The New Science of Cause and Effect](/content/books/the-book-of-why.md) by Judea Pearl and Dana Mackenzie argues that the key leap for advanced intelligence is the ability to handle counterfactuals and establish causation, moving beyond correlation which is the fundamental output of compression-based models.  
+* [♾️📐🎶🥨 Gödel, Escher, Bach: An Eternal Golden Braid](../books/godel-escher-bach.md) by Douglas R Hofstadter focuses on the emergence of meaning, consciousness, and self-reference through recursive structures, suggesting that intelligence is rooted in high-level symbolic manipulation and subjective experience rather than pure compression efficiency.  
+* [❓➡️💡 The Book of Why: The New Science of Cause and Effect](../books/the-book-of-why.md) by Judea Pearl and Dana Mackenzie argues that the key leap for advanced intelligence is the ability to handle counterfactuals and establish causation, moving beyond correlation which is the fundamental output of compression-based models.  
   
 ### 🎨 Creatively Related  
-* [🔬🔄 The Structure of Scientific Revolutions](/content/books/the-structure-of-scientific-revolutions.md) by Thomas S Kuhn discusses the conceptual change and phase transitions in science, providing a historical context for the video's notion of a phase transition from empirical knowledge to scientific abstraction.  
-* 📝 [✍🏼👍🏼 On Writing Well: The Classic Guide to Writing Nonfiction](/content/books/on-writing-well.md) by William Zinsser advocates for the principle of parsimony in prose, instructing writers to eliminate clutter and keep sentences lean, which is a conceptual parallel to the mathematical principle of parsimony applied to information representation.
+* [🔬🔄 The Structure of Scientific Revolutions](../books/the-structure-of-scientific-revolutions.md) by Thomas S Kuhn discusses the conceptual change and phase transitions in science, providing a historical context for the video's notion of a phase transition from empirical knowledge to scientific abstraction.  
+* 📝 [✍🏼👍🏼 On Writing Well: The Classic Guide to Writing Nonfiction](../books/on-writing-well.md) by William Zinsser advocates for the principle of parsimony in prose, instructing writers to eliminate clutter and keep sentences lean, which is a conceptual parallel to the mathematical principle of parsimony applied to information representation.

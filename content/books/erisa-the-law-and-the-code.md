@@ -8,7 +8,7 @@ tags:
   - law
 affiliate link: https://amzn.to/3HlwLWQ
 ---
-[Home](/content/index.md) > [Books](/content/books/index.md)  
+[Home](../index.md) > [Books](./index.md)  
 # 🏛️💻 ERISA: The Law and the Code  
 [🛒 ERISA: The Law and the Code. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3HlwLWQ)  
   
@@ -39,7 +39,7 @@ affiliate link: https://amzn.to/3HlwLWQ
   
 ### 👯 Similar Books (Focus on Employee Benefits Law and ERISA Practice)  
   
-* **[🇺🇸❓📚 ERISA Law Answer Book](/content/books/erisa-law-answer-book.md)** This resource offers extensive coverage of case law, legislative, and regulatory issues in ERISA compliance, focusing on retirement plan administration. 🗣️ It provides detailed discussion on various benefit arrangements, fiduciary duties, and preemption.  
+* **[🇺🇸❓📚 ERISA Law Answer Book](./erisa-law-answer-book.md)** This resource offers extensive coverage of case law, legislative, and regulatory issues in ERISA compliance, focusing on retirement plan administration. 🗣️ It provides detailed discussion on various benefit arrangements, fiduciary duties, and preemption.  
 * 🧑‍⚖️ **ERISA Practice and Procedure:** This book outlines ERISA coverage and scope, reporting and disclosure requirements, participation, vesting, benefit accrual, minimum funding standards, and plan termination insurance.  
 * 🎓 **Introduction to Employee Benefits Law: Policy and Practice:** This book provides an updated overview of federal employee benefits law, including welfare benefits, health insurance, and retirement plans. 🧐 It offers analysis of relevant statutes, regulations, case law, and opinion letters.  
 * 🏦 **Pension and Employee Benefits Code ERISA Regulations:** A multi-volume set providing access to the latest text of the Internal Revenue Code and ERISA, along with final and proposed regulations governing various employee benefit plans.  
@@ -57,5 +57,5 @@ affiliate link: https://amzn.to/3HlwLWQ
 * 📊 **Books on the Economics of Employee Benefits:** Exploring the economic rationale and impact of employee benefit plans provides a different lens through which to view the purpose and effects of ERISA.  
 * 🛡️ **Books on Social Safety Nets and Welfare Policy:** Placing ERISA within the broader context of U.S. social policy and safety nets can offer a deeper understanding of its role in providing economic security to individuals.  
   
-## 💬 [Gemini](/content/software/gemini.md) Prompt (gemini-2.5-flash-preview-04-17)  
+## 💬 [Gemini](../software/gemini.md) Prompt (gemini-2.5-flash-preview-04-17)  
 > Write a markdown-formatted (start headings at level H2) book report, followed by a plethora of additional similar, contrasting, and creatively related book recommendations on Erisa: The Law and the Code. Be thorough in content discussed but concise and economical with your language. Structure the report with section headings and bulleted lists to avoid long blocks of text.

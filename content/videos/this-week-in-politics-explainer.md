@@ -10,7 +10,7 @@ Channel: Heather Cox Richardson
 tags:
 youtube: https://youtu.be/H3f-nnlTwG4
 ---
-[Home](/content/index.md) > [Videos](/content/videos/index.md) | [🏛️🇺🇸📖 Heather Cox Richardson](/content/people/heather-cox-richardson.md)  
+[Home](../index.md) > [Videos](./index.md) | [🏛️🇺🇸📖 Heather Cox Richardson](../people/heather-cox-richardson.md)  
 # 📰🗣️❓ This Week in Politics | Explainer  
 ![This Week in Politics | Explainer](https://youtu.be/H3f-nnlTwG4)  
   
@@ -72,7 +72,7 @@ youtube: https://youtu.be/H3f-nnlTwG4
   
 ### ↔️ Similar  
   
-- [😇🧠 The Righteous Mind: Why Good People Are Divided by Politics and Religion](/content/books/the-righteous-mind.md) by Politics and Religion by Jonathan Haidt. 💡 This book offers a psychological framework for understanding the deep ideological splits that are fracturing the Republican movement and the country at large.  
+- [😇🧠 The Righteous Mind: Why Good People Are Divided by Politics and Religion](../books/the-righteous-mind.md) by Politics and Religion by Jonathan Haidt. 💡 This book offers a psychological framework for understanding the deep ideological splits that are fracturing the Republican movement and the country at large.  
   
 - 🏛️ The Political Crisis of the 1850s by Michael F. Holt. ⏳ A detailed historical study of the collapse of a political party system and the rise of the Republican Party, aligning with the speaker's analogy to the 1850s as a time of political reinvention.  
   
@@ -88,7 +88,7 @@ youtube: https://youtu.be/H3f-nnlTwG4
   
 ### 🎨 Creatively Related  
   
-- [👁️‍🗨️💰⛓️👤 The Age of Surveillance Capitalism: The Fight for a Human Future at the New Frontier of Power](/content/books/the-age-of-surveillance-capitalism.md) by Shoshana Zuboff. 📱 Explores the non-stop data collection and manipulation of behavior, tangentially related to how political messages are circulated and how grassroots movements gather information in the digital age.  
+- [👁️‍🗨️💰⛓️👤 The Age of Surveillance Capitalism: The Fight for a Human Future at the New Frontier of Power](../books/the-age-of-surveillance-capitalism.md) by Shoshana Zuboff. 📱 Explores the non-stop data collection and manipulation of behavior, tangentially related to how political messages are circulated and how grassroots movements gather information in the digital age.  
   
 - 🌍 The Great Migration An American Odyssey by Jacob Lawrence. 🚶 Explores the themes of movement, social change, and the search for a better future, connecting to the current crises of migration and the generational political shifts the speaker highlights.  
   

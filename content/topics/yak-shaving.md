@@ -5,7 +5,7 @@ aliases:
 title: 🦬🪒 Yak Shaving
 URL: https://bagrounds.org/topics/yak-shaving
 ---
-[Home](/content/index.md) > [Topics](/content/topics/index.md)  
+[Home](../index.md) > [Topics](./index.md)  
 # 🦬🪒 Yak Shaving  
 ## 🤖 AI Summary  
 ### Yak Shaving 🪒  
@@ -130,14 +130,14 @@ The term "yak shaving" originated in a 1991 episode of the Ren & Stimpy cartoon 
   
 📖 **Book Recommendations** 📚  
   
-  * **Topical:** [🦄👤🗓️ The Mythical Man-Month: Essays on Software Engineering](/content/books/the-mythical-man-month.md) by Frederick P. Brooks Jr. (discusses complexities in software projects) 💻  
-  * **Tangentially Related:** [♾️📐🎶🥨 Gödel, Escher, Bach: An Eternal Golden Braid](/content/books/godel-escher-bach.md) by Douglas Hofstadter (explores recursion and interconnected systems) ♾️  
-  * **Topically Opposed:** [✅😌 Getting Things Done: The Art of Stress-Free Productivity](/content/books/getting-things-done-the-art-of-stress-free-productivity.md) by David Allen (focuses on direct action and minimizing wasted effort) ✅  
-  * **More General:** [🤔🐇🐢 Thinking, Fast and Slow](/content/books/thinking-fast-and-slow.md) by Daniel Kahneman (explores cognitive biases that can lead to unnecessary complexity) 🤔  
+  * **Topical:** [🦄👤🗓️ The Mythical Man-Month: Essays on Software Engineering](../books/the-mythical-man-month.md) by Frederick P. Brooks Jr. (discusses complexities in software projects) 💻  
+  * **Tangentially Related:** [♾️📐🎶🥨 Gödel, Escher, Bach: An Eternal Golden Braid](../books/godel-escher-bach.md) by Douglas Hofstadter (explores recursion and interconnected systems) ♾️  
+  * **Topically Opposed:** [✅😌 Getting Things Done: The Art of Stress-Free Productivity](../books/getting-things-done-the-art-of-stress-free-productivity.md) by David Allen (focuses on direct action and minimizing wasted effort) ✅  
+  * **More General:** [🤔🐇🐢 Thinking, Fast and Slow](../books/thinking-fast-and-slow.md) by Daniel Kahneman (explores cognitive biases that can lead to unnecessary complexity) 🤔  
   * **More Specific:** Documentation for your specific development environment or tools (e.g., Docker documentation, package manager guides) 🐳  
   * **Fictional:** *Hitchhiker's Guide to the Galaxy* by Douglas Adams (often features absurd and escalating situations) 🌌  
   * **Rigorous:** *Introduction to Algorithms* by Thomas H. Cormen et al. (provides a formal understanding of computational complexity) 📈  
-  * **Accessible:** [🧑‍💻📈 The Pragmatic Programmer: Your Journey to Mastery](/content/books/the-pragmatic-programmer-your-journey-to-mastery.md) by David Thomas and Andrew Hunt (offers practical advice on avoiding common pitfalls) 🛠️  
+  * **Accessible:** [🧑‍💻📈 The Pragmatic Programmer: Your Journey to Mastery](../books/the-pragmatic-programmer-your-journey-to-mastery.md) by David Thomas and Andrew Hunt (offers practical advice on avoiding common pitfalls) 🛠️  
   
 📺 **Links To Relevant YouTube Channels Or Videos** ▶️  
   

@@ -10,7 +10,7 @@ Channel: Forbes Breaking News
 tags:
 youtube: https://youtu.be/2I46qw_A6vs
 ---
-[Home](/content/index.md) > [Videos](/content/videos/index.md)  
+[Home](../index.md) > [Videos](./index.md)  
 # 🗣️🤫🐘 Mike Levin Reveals What Republicans Told Him Behind Closed Doors About Big Beautiful Bill  
 ![JUST IN: Mike Levin Reveals What Republicans Told Him Behind Closed Doors About Big Beautiful Bill](https://youtu.be/2I46qw_A6vs)  
   
@@ -41,17 +41,17 @@ youtube: https://youtu.be/2I46qw_A6vs
   
 ## 📚 Book Recommendations  
 * 📖 **On Fiscal Policy and National Debt:**  
-    * [💰📉➡️📈🗳️ The Deficit Myth: Modern Monetary Theory and the Birth of the People's Economy](/content/books/the-deficit-myth.md) by Stephanie Kelton  
-    * [🏷️🏚️💔🏰 The Price of Inequality: How Today's Divided Society Endangers Our Future](/content/books/the-price-of-inequality-how-todays-divided-society-endangers-our-future.md) by Joseph E. Stiglitz  
+    * [💰📉➡️📈🗳️ The Deficit Myth: Modern Monetary Theory and the Birth of the People's Economy](../books/the-deficit-myth.md) by Stephanie Kelton  
+    * [🏷️🏚️💔🏰 The Price of Inequality: How Today's Divided Society Endangers Our Future](../books/the-price-of-inequality-how-todays-divided-society-endangers-our-future.md) by Joseph E. Stiglitz  
 * 🏥 **On Healthcare Policy and the Affordable Care Act:**  
-    * [⚕️💰🇺🇸 The Healing of America: A Global Quest for Better, Cheaper, and Fairer Health Care](/content/books/the-healing-of-america-a-global-quest-for-better-cheaper-and-fairer-health-care.md) by T.R. Reid  
-    * [💰⚕️⬆️ An American Sickness: How Healthcare Became Big Business and How You Can Take It Back](/content/books/an-american-sickness-how-healthcare-became-big-business-and-how-you-can-take-it-back.md) by Elisabeth Rosenthal  
+    * [⚕️💰🇺🇸 The Healing of America: A Global Quest for Better, Cheaper, and Fairer Health Care](../books/the-healing-of-america-a-global-quest-for-better-cheaper-and-fairer-health-care.md) by T.R. Reid  
+    * [💰⚕️⬆️ An American Sickness: How Healthcare Became Big Business and How You Can Take It Back](../books/an-american-sickness-how-healthcare-became-big-business-and-how-you-can-take-it-back.md) by Elisabeth Rosenthal  
 * 🍃 **On Environmental Policy and Clean Energy:**  
     * *Drawdown: The Most Comprehensive Plan Ever Proposed to Reverse Global Warming* edited by Paul Hawken  
     * *This Changes Everything: Capitalism vs. The Climate* by Naomi Klein  
 * 🇺🇸 **On American Politics and Legislation:**  
     * *Bending the Arc: My Journey from Chaos to Clarity* by Joe Biden  
-    * [😇🧠 The Righteous Mind: Why Good People Are Divided by Politics and Religion](/content/books/the-righteous-mind.md) by Jonathan Haidt  
+    * [😇🧠 The Righteous Mind: Why Good People Are Divided by Politics and Religion](../books/the-righteous-mind.md) by Jonathan Haidt  
   
 ## 🐦 Tweet  
 <blockquote class="twitter-tweet" data-theme="dark"><p lang="en" dir="ltr">🗣️🤫🐘 Mike Levin Reveals What Republicans Told Him Behind Closed Doors About Big Beautiful Bill<a href="https://twitter.com/MikeLevin?ref_src=twsrc%5Etfw">@MikeLevin</a><br><br>🤫 Republican Duplicity | 👹👑 Fealty to <a href="https://twitter.com/realDonaldTrump?ref_src=twsrc%5Etfw">@realDonaldTrump</a> | 💸 Rising Debt | 🏥✂️ Healthcare Cuts | ⏳ Delayed Effects | 🍃✂️ Clean Energy Cuts<a href="https://t.co/JrZMvLPKY5">https://t.co/JrZMvLPKY5</a></p>&mdash; Bryan Grounds (@bagrounds) <a href="https://twitter.com/bagrounds/status/1941315239255154813?ref_src=twsrc%5Etfw">July 5, 2025</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>

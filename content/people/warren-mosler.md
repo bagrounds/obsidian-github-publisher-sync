@@ -10,7 +10,7 @@ force_analyze_links: false
 link_analysis_time: 2026-03-25T07:24:38.569Z
 link_analysis_model: gemini-3.1-flash-lite-preview
 ---
-[Home](/content/index.md) > [People](/content/people/index.md)  
+[Home](../index.md) > [People](./index.md)  
 # 👨‍🏫📉💵 Warren Mosler  
 - https://moslereconomics.com  
 - https://x.com/wbmosler  
@@ -52,18 +52,18 @@ Modern Monetary Theory (MMT), largely developed by Warren Mosler, presents a fra
   
 ### ↔️ Similar  
   
-* [💸😇 The 7 Deadly Innocent Frauds of Economic Policy](/content/books/the-7-deadly-innocent-frauds-of-economic-policy.md) by Warren Mosler: **Mosler's foundational text** that clearly outlines the core MMT principles, dismantling common economic misconceptions about deficits, debt, and Social Security.  
-* [💰📈🤔 Understanding Modern Money](/content/books/understanding-modern-money.md): The Key to Full Employment and Price Stability by L. Randall Wray: A **detailed academic exploration of MMT** that integrates Mosler's chartalist view of money with concepts like functional finance and the Job Guarantee.  
+* [💸😇 The 7 Deadly Innocent Frauds of Economic Policy](../books/the-7-deadly-innocent-frauds-of-economic-policy.md) by Warren Mosler: **Mosler's foundational text** that clearly outlines the core MMT principles, dismantling common economic misconceptions about deficits, debt, and Social Security.  
+* [💰📈🤔 Understanding Modern Money](../books/understanding-modern-money.md): The Key to Full Employment and Price Stability by L. Randall Wray: A **detailed academic exploration of MMT** that integrates Mosler's chartalist view of money with concepts like functional finance and the Job Guarantee.  
   
 ### 🆚 Contrasting  
   
 * *💸 The Road to Serfdom* by F.A. Hayek: A **classic treatise on classical liberal thought** that strongly argues against excessive government planning and intervention, contrasting with MMT's call for active, expansive fiscal policy to maintain full employment.  
-* [💰📉➡️📈🗳️ The Deficit Myth: Modern Monetary Theory and the Birth of the People's Economy](/content/books/the-deficit-myth.md) by Stephanie Kelton: While written by an MMT proponent, it offers a **more accessible, policy-focused explanation** that contrasts with traditional deficit hawk perspectives and mainstream fears of national debt.  
+* [💰📉➡️📈🗳️ The Deficit Myth: Modern Monetary Theory and the Birth of the People's Economy](../books/the-deficit-myth.md) by Stephanie Kelton: While written by an MMT proponent, it offers a **more accessible, policy-focused explanation** that contrasts with traditional deficit hawk perspectives and mainstream fears of national debt.  
   
 ### 🎨 Creatively Related  
   
-* [🏛️💰 Debt: The First 5,000 Years](/content/books/debt-the-first-5000-years.md) by David Graeber: An **anthropological history of money and debt** that supports the idea that debt often *precedes* money, lending historical weight to MMT's view of currency as a form of state-created debt/credit.  
-* [🌍🏛️ The Great Transformation: The Political and Economic Origins of Our Time](/content/books/the-great-transformation-the-political-and-economic-origins-of-our-time.md) by Karl Polanyi: Explores the **historical shift from embedded to disembedded markets**, providing context on how the modern conception of money and the market economy came to dominate social life, relating tangentially to MMT's discussion of currency as a state construct.  
+* [🏛️💰 Debt: The First 5,000 Years](../books/debt-the-first-5000-years.md) by David Graeber: An **anthropological history of money and debt** that supports the idea that debt often *precedes* money, lending historical weight to MMT's view of currency as a form of state-created debt/credit.  
+* [🌍🏛️ The Great Transformation: The Political and Economic Origins of Our Time](../books/the-great-transformation-the-political-and-economic-origins-of-our-time.md) by Karl Polanyi: Explores the **historical shift from embedded to disembedded markets**, providing context on how the modern conception of money and the market economy came to dominate social life, relating tangentially to MMT's discussion of currency as a state construct.  
   
 ## 🦋 Bluesky    
 <blockquote class="bluesky-embed" data-bluesky-uri="at://did:plc:i4yli6h7x2uoj7acxunww2fc/app.bsky.feed.post/3mhsyfao2ab27" data-bluesky-cid="bafyreigf4bmgfn7a2oh36ddj2jsvutpdtdv4vawui6cz5nxpzgo5zxw75q" data-bluesky-embed-color-mode="system"><p lang="en">👨‍🏫📉💵 Warren Mosler<br><br>#AI Q: 🤔 Do higher interest rates curb inflation or cause it?<br><br>💸 Monetary Policy | 🏛️ Fiscal Theory | 📈 Inflation Control | 📚 Economic History<br>https://bagrounds.org/people/warren-mosler</p>  

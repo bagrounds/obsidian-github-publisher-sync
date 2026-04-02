@@ -9,7 +9,7 @@ tags:
 affiliate link: https://amzn.to/3FmLost
 CTA: Expose the madness.
 ---
-[Home](/content/index.md) > [Books](/content/books/index.md)  
+[Home](../index.md) > [Books](./index.md)  
 # 🤯🐍🏘️🎪💥 Mad House: How Donald Trump, MAGA Mean Girls, a Former Used Car Salesman, a Florida Nepo Baby, and a Man with Rats in His Walls Broke Congress  
 By Annie Karni  
 [🛒 Mad House: How Donald Trump, MAGA Mean Girls, a Former Used Car Salesman, a Florida Nepo Baby, and a Man with Rats in His Walls Broke Congress. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3FmLost)  
@@ -74,15 +74,15 @@ By Annie Karni
   
 #### Additional Book Recommendations 📚  
   
-* 🏆 **Best Alternate Book (Same Topic):** [⚠️😬😰 Peril](/content/books/peril.md) by Bob Woodward and Robert Costa. 🇺🇸 This book provides a broader look at the transition of power from Trump to Biden, which is tangentially related to the congressional chaos.  
+* 🏆 **Best Alternate Book (Same Topic):** [⚠️😬😰 Peril](./peril.md) by Bob Woodward and Robert Costa. 🇺🇸 This book provides a broader look at the transition of power from Trump to Biden, which is tangentially related to the congressional chaos.  
   
-* 🤝 **Best Tangentially Related Book:** [↔️ Why We're Polarized](/content/books/why-were-polarized.md) by Ezra Klein. 🤝 This book explores the roots of political polarization in the United States, providing context for the events described in "Mad House." 🇺🇸 📚  
+* 🤝 **Best Tangentially Related Book:** [↔️ Why We're Polarized](./why-were-polarized.md) by Ezra Klein. 🤝 This book explores the roots of political polarization in the United States, providing context for the events described in "Mad House." 🇺🇸 📚  
   
 * ⚔️ **Best Diametrically Opposed Book:** 🇺🇸 "The Case for Trump" by Victor David Hanson. 🛡️ This book offers a defense of Donald Trump and his policies, presenting a contrasting perspective to the critical view in "Mad House." 📰  
   
 * 🎭 **Best Fiction Book (Related Ideas):** 🃏 "House of Cards" by Michael Dobbs. 🇬🇧 This fictional political thriller explores the dark side of power and ambition in British politics, offering a dramatic portrayal of political maneuvering. 😈 👑  
   
-* 🌍 **Best More General Book:** [⚠️🥴🕹️🌐 The Fifth Risk](/content/books/the-fifth-risk.md) by Michael Lewis. 💼 This book examines the transition of power in the Trump administration, highlighting the importance of competent governance. 💡✍️  
+* 🌍 **Best More General Book:** [⚠️🥴🕹️🌐 The Fifth Risk](./the-fifth-risk.md) by Michael Lewis. 💼 This book examines the transition of power in the Trump administration, highlighting the importance of competent governance. 💡✍️  
   
 * 🎯 **Best More Specific Book:** 💥 "Insurgency: How Republicans Lost Their Party and Got Everything They Ever Wanted" by Jeremy Peters.🐘 This book dives into the Republican party's internal struggles. 🐘 🔥  
   

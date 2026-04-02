@@ -7,7 +7,7 @@ URL: https://bagrounds.org/articles/analysis-heritage-foundations-database-under
 Author:
 tags:
 ---
-[Home](/content/index.md) > [Articles](/content/articles/index.md)  
+[Home](../index.md) > [Articles](./index.md)  
 # [🏛️🔍❌🗳️ Analysis: Heritage Foundation’s Database Undermines Claims of Recent Voter Fraud](https://www.brennancenter.org/our-work/analysis-opinion/analysis-heritage-foundations-database-undermines-claims-recent-voter)  
   
 ## 🤖 AI Summary  

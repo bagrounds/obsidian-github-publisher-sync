@@ -10,7 +10,7 @@ Channel: TEDx Talks
 tags:
 youtube: https://youtu.be/fdDJub69Hnk
 ---
-[Home](/content/index.md) > [Videos](/content/videos/index.md)  
+[Home](../index.md) > [Videos](./index.md)  
 # 👶🏆🧠✨ What kids know about motivation (and we don't) | Betsy Blackard | TEDx Claremont Graduate University  
 ![What kids know about motivation (and we don't) | Betsy Blackard | TEDxClaremontGraduateUniversity](https://youtu.be/fdDJub69Hnk)  
   
@@ -58,27 +58,27 @@ youtube: https://youtu.be/fdDJub69Hnk
   
 ### ↔️ Similar  
   
-* **[👨‍🚀 The Self-Driven Child: The 🔬 Science and 🤔 Sense of Giving Your Kids More 🕹️ Control Over Their Lives](/content/books/the-self-driven-child.md)** by William Stixrud and Ned Johnson  
+* **[👨‍🚀 The Self-Driven Child: The 🔬 Science and 🤔 Sense of Giving Your Kids More 🕹️ Control Over Their Lives](../books/the-self-driven-child.md)** by William Stixrud and Ned Johnson  
     * 📖 This book explores how fostering a child's autonomy is the best antidote to stress and the key to developing intrinsic motivation and resilience.  
 * 🐬 **The Self-Motivated Kid** by Dr. Shimi Kang  
     * 💡 Drawing on neuroscience, this book advocates for a Dolphin Parent model, which guides children with compassion and authority while focusing on balance, play, and exploration to nurture internal drive.  
-* **[🏎️⛽ Drive: The Surprising Truth About What Motivates Us](/content/books/drive-the-surprising-truth-about-what-motivates-us.md)** by Daniel H. Pink  
+* **[🏎️⛽ Drive: The Surprising Truth About What Motivates Us](../books/drive-the-surprising-truth-about-what-motivates-us.md)** by Daniel H. Pink  
     * 📚 Pink details the science of intrinsic motivation—mastery, autonomy, and purpose—which is the same internal drive the speaker suggests children naturally possess.  
   
 ### 🆚 Contrasting  
   
 * 🐅 **Battle Hymn of the Tiger Mother** by Amy Chua  
     * ⚖️ This book advocates for strict, high-pressure parenting focused on academic achievement and extrinsic measures of success, offering a stark contrast to the video's emphasis on non-interference and intrinsic motivation.  
-* **[❤️🧠 Unconditional Parenting: Moving from Rewards and Punishments to Love and Reason](/content/books/unconditional-parenting-moving-from-rewards-and-punishments-to-love-and-reason.md)** by Alfie Kohn  
+* **[❤️🧠 Unconditional Parenting: Moving from Rewards and Punishments to Love and Reason](../books/unconditional-parenting-moving-from-rewards-and-punishments-to-love-and-reason.md)** by Alfie Kohn  
     * 🗣️ While similar in valuing autonomy, Kohn's work is contrasting in its specific attack on all forms of extrinsic control, including praise and rewards, whereas the video implicitly allows for goal-oriented motivation (finishing math to go play) when driven by the child's end goal.  
 * 🚦 **Setting Limits with Your Child** by Robert J. MacKenzie  
     * 📏 This resource focuses heavily on parental control, discipline, and establishing clear boundaries to manage behavior, which presents a practical, more structured, and less do nothing alternative to the approach presented.  
   
 ### 🎨 Creatively Related  
   
-* **[🌊🧘🏼‍♀️🧠📈 Flow: The Psychology of Optimal Experience](/content/books/flow-the-psychology-of-optimal-experience.md)** by Mihály Csíkszentmihályi  
+* **[🌊🧘🏼‍♀️🧠📈 Flow: The Psychology of Optimal Experience](../books/flow-the-psychology-of-optimal-experience.md)** by Mihály Csíkszentmihályi  
     * 💡 This book describes the mental state of flow, achieved when a challenge perfectly matches one's skill level. The running leap is the child actively managing their environment to enter this optimal state of challenge and competence.  
-* **[🌱🧘🏼‍♀️🏆 Mindset: The New Psychology of Success](/content/books/mindset.md)** by Carol S. Dweck  
+* **[🌱🧘🏼‍♀️🏆 Mindset: The New Psychology of Success](../books/mindset.md)** by Carol S. Dweck  
     * 🧠 Dweck's work on fixed versus growth mindsets relates to the video's core idea: by focusing on the process and effort (backing up) rather than the outcome (making the jump), adults help children adopt a growth mindset essential for embracing challenges.  
-* **[🧒🎮 Free to Learn: Why Unleashing the Instinct to Play Will Make Our Children Happier, More Self-Reliant, and Better Students for Life](/content/books/free-to-learn-why-unleashing-the-instinct-to-play-will-make-our-children-happier-more-self-reliant-and-better-students-for-life.md)** by Peter Gray  
+* **[🧒🎮 Free to Learn: Why Unleashing the Instinct to Play Will Make Our Children Happier, More Self-Reliant, and Better Students for Life](../books/free-to-learn-why-unleashing-the-instinct-to-play-will-make-our-children-happier-more-self-reliant-and-better-students-for-life.md)** by Peter Gray  
     * 🏞️ This book argues that children are inherently educational and designed to learn through self-directed play, which is the foundational belief supporting the speaker's advice to trust the child's inner process and stay out of their way.

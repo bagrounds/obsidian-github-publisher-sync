@@ -7,7 +7,7 @@ share: true
 CTA: 🤔 Discern purpose.
 affiliate link: https://amzn.to/3MNYUs7
 ---
-[Home](/content/index.md) > [Books](/content/books/index.md)  
+[Home](../index.md) > [Books](./index.md)  
 # ⬇️⬆️🧭🌟 Theory U: Leading from the Future as It Emerges  
 [🛒 Theory U: Leading from the Future as It Emerges. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3MNYUs7)  
   
@@ -75,16 +75,16 @@ affiliate link: https://amzn.to/3MNYUs7
 ### ✨ Similar Books  
 * 📘 Presence: Human Purpose and the Field of the Future by Peter Senge, C. Otto Scharmer, Joseph Jaworski, and Betty Sue Flowers  
 * 📘 Leading from the Emerging Future: From Ego-System to Eco-System Economies by Otto Scharmer and Katrin Kaufer  
-* [🎨🔄🧠🏢 The Fifth Discipline: The Art and Practice of the Learning Organization](/content/books/the-fifth-discipline.md) by Peter Senge  
+* [🎨🔄🧠🏢 The Fifth Discipline: The Art and Practice of the Learning Organization](./the-fifth-discipline.md) by Peter Senge  
   
 ### ↔️ Contrasting Books  
 * 📕 How Big Things Get Done by Bent Flyvbjerg and Dan Gardner  
-* [💺🚪💡🤔 The Design of Everyday Things](/content/books/the-design-of-everyday-things.md) by Donald A. Norman (Offers a more traditional, problem-solving design approach.)  
+* [💺🚪💡🤔 The Design of Everyday Things](./the-design-of-everyday-things.md) by Donald A. Norman (Offers a more traditional, problem-solving design approach.)  
 * 📕 Radical Candor: Be a Kickass Boss Without Losing Your Humanity by Kim Scott (Focuses on direct communication and feedback in contrast to Theory U's emphasis on deep listening and inner knowing before action.)  
   
 ### 🔗 Related Books  
 * 📗 Think Again: The Power of Knowing What You Don't Know by Adam Grant  
-* [👉🤏 Nudge: Improving Decisions about Health, Wealth, and Happiness](/content/books/nudge.md) by Richard H. Thaler and Cass R. Sunstein  
+* [👉🤏 Nudge: Improving Decisions about Health, Wealth, and Happiness](./nudge.md) by Richard H. Thaler and Cass R. Sunstein  
 * 📗 The Inner Game of Tennis by W. Timothy Gallwey (Focus on inner state and overcoming self-interference)  
   
 ## 🫵 What Do You Think?  

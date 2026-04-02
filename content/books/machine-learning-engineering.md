@@ -6,6 +6,9 @@ URL: https://bagrounds.org/books/machine-learning-engineering
 share: true
 CTA: 🤖 Construct intelligence.
 affiliate link: https://amzn.to/4oo9og9
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_time: 2026-04-02T00:00:00Z
+force_analyze_links: false
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🤖⚙️ Machine Learning Engineering  

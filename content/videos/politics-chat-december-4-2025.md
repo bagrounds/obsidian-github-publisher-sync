@@ -10,7 +10,7 @@ Channel: Heather Cox Richardson
 tags:
 youtube: https://www.youtube.com/embed/r6AJHeeVhQk
 ---
-[Home](/content/index.md) > [Videos](/content/videos/index.md) | [🏛️🇺🇸📖 Heather Cox Richardson](/content/people/heather-cox-richardson.md)  
+[Home](../index.md) > [Videos](./index.md) | [🏛️🇺🇸📖 Heather Cox Richardson](../people/heather-cox-richardson.md)  
 # 🗣️🏛️🗓️ Politics Chat, December 4, 2025  
 ![Politics Chat, December 4, 2025](https://www.youtube.com/embed/r6AJHeeVhQk)  
   
@@ -49,9 +49,9 @@ youtube: https://www.youtube.com/embed/r6AJHeeVhQk
   
 ### ↔️ Similar  
   
-* [🏛️⛓️ Democracy in Chains: The Deep History of the Radical Right's Stealth Plan for America](/content/books/democracy-in-chains-the-deep-history-of-the-radical-rights-stealth-plan-for-america.md) by Nancy MacLean  
+* [🏛️⛓️ Democracy in Chains: The Deep History of the Radical Right's Stealth Plan for America](../books/democracy-in-chains-the-deep-history-of-the-radical-rights-stealth-plan-for-america.md) by Nancy MacLean  
     * 📘 Description: This book traces the intellectual origins of the radical right's strategy to dismantle public institutions, focusing on the ideas of economist James McGill Buchanan, providing a detailed context for the political end-game discussed in the video.  
-* [💰🤫 Dark Money: The Hidden History of the Billionaires Behind the Rise of the Radical Right](/content/books/dark-money-the-hidden-history-of-the-billionaires-behind-the-rise-of-the-radical-right.md) by Jane Mayer  
+* [💰🤫 Dark Money: The Hidden History of the Billionaires Behind the Rise of the Radical Right](../books/dark-money-the-hidden-history-of-the-billionaires-behind-the-rise-of-the-radical-right.md) by Jane Mayer  
     * 💰 Description: Details the vast network of wealthy donors who bankrolled the think tanks and political groups that drove the movement to deregulate business and cut taxes, directly supporting the video's focus on moneyed opposition.  
   
 ### 🆚 Contrasting  
@@ -63,7 +63,7 @@ youtube: https://www.youtube.com/embed/r6AJHeeVhQk
   
 ### 🎨 Creatively Related  
   
-* [💩💼 Bullshit Jobs: A Theory](/content/books/bullshit-jobs-a-theory.md) by David Graeber  
+* [💩💼 Bullshit Jobs: A Theory](../books/bullshit-jobs-a-theory.md) by David Graeber  
     * 💼 Description: Tangentially relates by exploring how modern bureaucratic and corporate systems generate pointless employment, which ties into the video's discussion of a political-economic system that prioritizes extraction and wealth concentration over productive or socially beneficial work.  
 * 📚 The Power Broker Robert Moses and the Fall of New York by Robert A Caro  
     * 🏗️ Description: This book illustrates the detailed mechanics of concentrating political power, focusing on Robert Moses's ability to manipulate government structures for decades, providing a granular look at the institutional tactics of power concentration described in the video.

@@ -10,7 +10,7 @@ Channel: Fadhel Kaboub
 tags:
 youtube: https://youtu.be/Lyy1jgpTTc0
 ---
-[Home](/content/index.md) > [Videos](/content/videos/index.md)  
+[Home](../index.md) > [Videos](./index.md)  
 # 🇿🇼💸📈⏱️ Zimbabwe hyperinflation explained in 8 minutes ~ Fadhel Kaboub #MMT  
 ![Zimbabwe hyperinflation explained in 8 minutes ~ Fadhel Kaboub #MMT](https://youtu.be/Lyy1jgpTTc0)  
   
@@ -52,7 +52,7 @@ youtube: https://youtu.be/Lyy1jgpTTc0
   
 ### ↔️ Similar  
   
-* **[💰📉➡️📈🗳️ The Deficit Myth: Modern Monetary Theory and the Birth of the People's Economy](/content/books/the-deficit-myth.md)** by Stephanie Kelton. 📘 A comprehensive explanation of MMT principles, directly covering the core argument that currency-issuing countries are constrained by real resources/inflation, not finance, which is the key takeaway from the Zimbabwe case.  
+* **[💰📉➡️📈🗳️ The Deficit Myth: Modern Monetary Theory and the Birth of the People's Economy](../books/the-deficit-myth.md)** by Stephanie Kelton. 📘 A comprehensive explanation of MMT principles, directly covering the core argument that currency-issuing countries are constrained by real resources/inflation, not finance, which is the key takeaway from the Zimbabwe case.  
 * 📉 **When Money Dies: The Nightmare of the Weimar Collapse** by Adam Fergusson. 📚 Details the real-life consequences and social breakdown of hyperinflation in 🇩🇪 Weimar Germany, providing a historical parallel to Zimbabwe's experience with the collapse of currency and moral order.  
   
 ### 🆚 Contrasting  
@@ -62,8 +62,8 @@ youtube: https://youtu.be/Lyy1jgpTTc0
   
 ### 🎨 Creatively Related  
   
-* **[🌎👎👑💰🏚️ Why Nations Fail: The Origins of Power, Prosperity, and Poverty](/content/books/why-nations-fail-the-origins-of-power-prosperity-and-poverty.md)** by Daron Acemoglu and James A. Robinson. 🏢 Analyzes how **extractive political and economic institutions** (such as the corruption and political patronage seen in Zimbabwe \[[00:59](http://www.youtube.com/watch?v=Lyy1jgpTTc0&t=59)]) lead to national failure, while inclusive institutions foster prosperity.  
-* **[👑😈👎📈 The Dictator's Handbook: Why Bad Behavior Is Almost Always Good Politics](/content/books/the-dictators-handbook.md)** by Bruce Bueno de Mesquita and Alastair Smith. 👑 Provides a non-economic, **realpolitik** perspective on why leaders make decisions that appear disastrous to the public (like rewarding security forces despite food shortages \[[02:05](http://www.youtube.com/watch?v=Lyy1jgpTTc0&t=125)]), arguing that they are simply following the logic of staying in power.  
+* **[🌎👎👑💰🏚️ Why Nations Fail: The Origins of Power, Prosperity, and Poverty](../books/why-nations-fail-the-origins-of-power-prosperity-and-poverty.md)** by Daron Acemoglu and James A. Robinson. 🏢 Analyzes how **extractive political and economic institutions** (such as the corruption and political patronage seen in Zimbabwe \[[00:59](http://www.youtube.com/watch?v=Lyy1jgpTTc0&t=59)]) lead to national failure, while inclusive institutions foster prosperity.  
+* **[👑😈👎📈 The Dictator's Handbook: Why Bad Behavior Is Almost Always Good Politics](../books/the-dictators-handbook.md)** by Bruce Bueno de Mesquita and Alastair Smith. 👑 Provides a non-economic, **realpolitik** perspective on why leaders make decisions that appear disastrous to the public (like rewarding security forces despite food shortages \[[02:05](http://www.youtube.com/watch?v=Lyy1jgpTTc0&t=125)]), arguing that they are simply following the logic of staying in power.  
   
 ## 🐦 Tweet  
 <blockquote class="twitter-tweet" data-theme="dark"><p lang="en" dir="ltr">🇿🇼💸📈⏱️ Zimbabwe hyperinflation explained in 8 minutes ~ Fadhel Kaboub <a href="https://twitter.com/hashtag/MMT?src=hash&amp;ref_src=twsrc%5Etfw">#MMT</a><br><br>🧑‍🌾 Land | 🍎 Food | 👮‍♂️ Security Forces | 🇿🇦 Border Trafficking | 🚫 Corruption | 🏭 Capacity | 🏛️ American Enterprise Institute | 😈 Criminal Entities | 👩‍🌾 Food Sovereignty<a href="https://t.co/T2SwuUF0YB">https://t.co/T2SwuUF0YB</a></p>&mdash; Bryan Grounds (@bagrounds) <a href="https://twitter.com/bagrounds/status/1986338546614214961?ref_src=twsrc%5Etfw">November 6, 2025</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>

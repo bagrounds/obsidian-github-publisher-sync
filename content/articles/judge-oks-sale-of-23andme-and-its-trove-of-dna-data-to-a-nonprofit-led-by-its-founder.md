@@ -7,7 +7,7 @@ URL: https://bagrounds.org/articles/judge-oks-sale-of-23andme-and-its-trove-of-d
 Author:
 tags:
 ---
-[Home](/content/index.md) > [Articles](/content/articles/index.md)  
+[Home](../index.md) > [Articles](./index.md)  
 # 🧑‍⚖️🧬💰🤝 Judge OKs sale of 23andMe - and its trove of DNA data - to a nonprofit led by its founder  
   
 ## 🤖 AI Summary  
@@ -29,5 +29,5 @@ tags:
 * 📖 **Genome: The Autobiography of a Species in 23 Chapters** by Matt Ridley, an engaging read about the human genome.  
 * 📖 **An Owner's Guide to the Human Genome: An Introduction to Human Population Genetics, Variation and Disease** by Jonathan Pritchard, covering genetic variation, human history, and the role of genetics in human phenotypes and diseases.  
 * 📖 **The Social Life of DNA** by Alondra Nelson, which explores how genetic genealogy is used to address issues related to race and heritage.  
-* **[📜🌍👥 A Brief History of Everyone Who Ever Lived](/content/books/a-brief-history-of-everyone-who-ever-lived.md)** by Adam Rutherford, revealing what genes can tell us about history and how unraveling the human genome has challenged beliefs about identity.  
+* **[📜🌍👥 A Brief History of Everyone Who Ever Lived](../books/a-brief-history-of-everyone-who-ever-lived.md)** by Adam Rutherford, revealing what genes can tell us about history and how unraveling the human genome has challenged beliefs about identity.  
 * 📖 **The Human Genome: Mapping the Blueprint of Human Life** by Carla Mooney, an accessible book for ages 12-15 on how genes work, DNA structure, and genetic inheritance.

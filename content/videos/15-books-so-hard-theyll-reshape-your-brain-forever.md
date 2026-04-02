@@ -10,7 +10,7 @@ Channel: Stephen Petro
 tags:
 youtube: https://youtu.be/XxWOZs9v3NM
 ---
-[Home](/content/index.md) > [Videos](/content/videos/index.md)  
+[Home](../index.md) > [Videos](./index.md)  
 # 🧠💪🤯🔄♾️ 15 Books So Hard They’ll Reshape Your Brain Forever  
 ![15 Books So Hard They’ll Reshape Your Brain Forever](https://youtu.be/XxWOZs9v3NM)  
   
@@ -20,7 +20,7 @@ youtube: https://youtu.be/XxWOZs9v3NM
 🎲 **Probability** \[[00:43](http://www.youtube.com/watch?v=XxWOZs9v3NM&t=43)\]  
 * 📖 *Bayesian Statistics the Fun Way* by Will Kurt \[[00:30](http://www.youtube.com/watch?v=XxWOZs9v3NM&t=30)\]  
 * 📖 *Foundations of the Theory of Probability* by Andrey Kolmogorov \[[02:15](http://www.youtube.com/watch?v=XxWOZs9v3NM&t=135)\]  
-* [🧪👁️ The Scientific Image](/content/books/the-scientific-image.md) by Bas van Fraassen \[[03:24](http://www.youtube.com/watch?v=XxWOZs9v3NM&t=204)\]  
+* [🧪👁️ The Scientific Image](../books/the-scientific-image.md) by Bas van Fraassen \[[03:24](http://www.youtube.com/watch?v=XxWOZs9v3NM&t=204)\]  
 * 📖 *An Introduction to the Philosophy of Science* by Kent W. Staley \[[03:34](http://www.youtube.com/watch?v=XxWOZs9v3NM&t=214)\]  
   
 💡 **Truth and Meaning** \[[00:48](http://www.youtube.com/watch?v=XxWOZs9v3NM&t=48)\]  
@@ -48,9 +48,9 @@ youtube: https://youtu.be/XxWOZs9v3NM
 While this video provides an excellent introduction to books that foster first principles thinking, it primarily focuses on a Western philosophical and scientific canon. 🌍 To gain a richer, more nuanced understanding, it would be beneficial to explore perspectives from diverse philosophical traditions, such as Eastern philosophies (e.g., Buddhism, Taoism) which offer alternative frameworks for understanding consciousness, truth, and value. 🧠 Additionally, exploring the practical application of these theoretical concepts in various fields like decision-making, problem-solving, and creativity could provide a more thorough understanding.  
   
 ## 📚 Book Recommendations  
-* **[🤔🐇🐢 Thinking, Fast and Slow](/content/books/thinking-fast-and-slow.md) by Daniel Kahneman**: A classic that explores the two systems that drive the way we think and make decisions, highly relevant to the probability and logic aspects discussed.  
+* **[🤔🐇🐢 Thinking, Fast and Slow](../books/thinking-fast-and-slow.md) by Daniel Kahneman**: A classic that explores the two systems that drive the way we think and make decisions, highly relevant to the probability and logic aspects discussed.  
 * 🧘‍♀️ **"The Book of Joy: Lasting Happiness in a Changing World" by Dalai Lama XIV and Desmond Tutu**: Offers a contrasting perspective on truth, meaning, and consciousness through the lens of spiritual wisdom and practical advice.  
-* **[🌌 Cosmos](/content/books/cosmos.md) by Carl Sagan**: While not strictly philosophical, this book broadens the scope of thinking about the universe and our place in it, touching upon scientific reasoning and the search for truth.  
+* **[🌌 Cosmos](../books/cosmos.md) by Carl Sagan**: While not strictly philosophical, this book broadens the scope of thinking about the universe and our place in it, touching upon scientific reasoning and the search for truth.  
 * 🎨 **"A Whole New Mind: Why Right-Brainers Will Rule the Future" by Daniel H. Pink**: This book offers a creative and contrasting view on thinking skills, emphasizing the importance of creativity, empathy, and meaning in the modern world.  
   
 ## 🐦 Tweet  

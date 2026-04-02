@@ -10,7 +10,7 @@ Channel: PBS NewsHour
 tags:
 youtube: https://youtu.be/DytgWAowxe8
 ---
-[Home](/content/index.md) > [Videos](/content/videos/index.md)  
+[Home](../index.md) > [Videos](./index.md)  
 # 🤖🗣️⚠️😵‍💫 AI content supercharges confusion and spreads misleading information, critics warn  
 ![AI content supercharges confusion and spreads misleading information, critics warn](https://youtu.be/DytgWAowxe8)  
   
@@ -59,4 +59,4 @@ A: ✅ Yes, 🗳️ political figures have used and been targets of AI-generated
     * 📙 **Reality Lost: Markets of Attention, Misinformation and Manipulation** by Vincent F. Hendricks and Mads Vestergaard: 💡 Analyzes the mechanics of the **information market** and the **attention economy**, explaining how the scarcity of attention in an abundance of information can lead to a post-factual democracy [Source: ResearchGate].  
 * **Creatively Related (Focusing on Media Literacy and Misinformation History):**  
     * 📔 **Misinformation** by Yotam Ophir: 🧠 Explores the history, psychology, and social impact of misinformation, addressing why humans are susceptible to **conspiracy theories and other baseless ideas** due to inherent cognitive biases [Source: University at Buffalo].  
-    * **[📱🧠 The Shallows: What the Internet Is Doing to Our Brains](/content/books/the-shallows-what-the-internet-is-doing-to-our-brains.md)** by Nicholas Carr: 🧠 Examines how the internet, with its constant stream of information and calls to multitask, is **rewiring our brains** and changing our cognitive processes [Source: Five Books Reader List].
+    * **[📱🧠 The Shallows: What the Internet Is Doing to Our Brains](../books/the-shallows-what-the-internet-is-doing-to-our-brains.md)** by Nicholas Carr: 🧠 Examines how the internet, with its constant stream of information and calls to multitask, is **rewiring our brains** and changing our cognitive processes [Source: Five Books Reader List].

@@ -9,7 +9,7 @@ Platform: "#YouTube"
 Channel: "[[A Life Engineered]]"
 tags:
 ---
-[Home](/content/index.md) > [Videos](/content/videos/index.md)  
+[Home](../index.md) > [Videos](./index.md)  
 # 🤫🔑👨‍💻 The Secret Skill Every Tech Leader Possesses  
 ![The Secret Skill Every Tech Leader Possesses](https://youtu.be/uUKAVfIahCY)  
   

@@ -10,7 +10,7 @@ Channel:
 tags:
 youtube: https://youtu.be/vLbn78SFvO8
 ---
-[Home](/content/index.md) > [Videos](/content/videos/index.md)  
+[Home](../index.md) > [Videos](./index.md)  
 # 👨‍⚕️➡️😬💉💥 Former CDC director reacts to RFK Jr.'s firing of entire vaccine advisory panel  
 ![](https://youtu.be/vLbn78SFvO8)  
   
@@ -35,7 +35,7 @@ youtube: https://youtu.be/vLbn78SFvO8
   
 * 🏥 **On Public Health and Disease Control:**  
     * 🦠 **The Great Influenza: The Story of the Deadliest Pandemic in History** by John M. Barry: While focused on the 1918 flu pandemic, it offers profound insights into public health responses, the role of science 🧪, and societal reactions 😲 to widespread disease.  
-    * **[💀🚫🦠 Deadly Choices: How the Anti-Vaccine Movement Threatens Us All](/content/books/deadly-choices-how-the-anti-vaccine-movement-threatens-us-all.md)** by Paul A. Offit: Written by a prominent vaccinologist 👨‍⚕️, this book directly addresses the anti-vaccine movement, its origins, and its public health implications.  
+    * **[💀🚫🦠 Deadly Choices: How the Anti-Vaccine Movement Threatens Us All](../books/deadly-choices-how-the-anti-vaccine-movement-threatens-us-all.md)** by Paul A. Offit: Written by a prominent vaccinologist 👨‍⚕️, this book directly addresses the anti-vaccine movement, its origins, and its public health implications.  
   
 * 🔬 **On Scientific Integrity and Misinformation:**  
-    * **[💰🤥 Merchants of Doubt](/content/books/merchants-of-doubt.md): How a Handful of Scientists Obscured the Truth on Issues from Tobacco Smoke to Global Warming** by Naomi Oreskes and Erik M. Conway: While not exclusively about vaccines, this book brilliantly exposes tactics 🎭 used to sow doubt 🤔 about scientific consensus, a highly relevant topic when discussing public trust 🙏 in health institutions.
+    * **[💰🤥 Merchants of Doubt](../books/merchants-of-doubt.md): How a Handful of Scientists Obscured the Truth on Issues from Tobacco Smoke to Global Warming** by Naomi Oreskes and Erik M. Conway: While not exclusively about vaccines, this book brilliantly exposes tactics 🎭 used to sow doubt 🤔 about scientific consensus, a highly relevant topic when discussing public trust 🙏 in health institutions.

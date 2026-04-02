@@ -7,7 +7,7 @@ share: true
 affiliate link: https://amzn.to/487h5ln
 CTA: 🧠 Cultivate resilience.
 ---
-[Home](/content/index.md) > [Books](/content/books/index.md)  
+[Home](../index.md) > [Books](./index.md)  
 # 🧠💪😊 Mental Fitness: Maximizing Mood, Motivation, & Mental Wellness by Optimizing the Brain-Body-Biome  
 [🛒 Mental Fitness: Maximizing Mood, Motivation, & Mental Wellness by Optimizing the Brain-Body-Biome. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/487h5ln)  
   
@@ -49,8 +49,8 @@ CTA: 🧠 Cultivate resilience.
   
 ### 💡 Creatively Related Books  
   
-* [🤕🎼🧠 The Body Keeps the Score: Brain, Mind, and Body in the Healing of Trauma](/content/books/the-body-keeps-the-score-brain-mind-and-body-in-the-healing-of-trauma.md) by Bessel van der Kolk: This book offers a profound exploration of how trauma impacts the body and brain, affecting pleasure, engagement, self-control, and trust. While differing in its focus on trauma, it creatively relates by demonstrating the deep, intricate connection between mental states and physical physiology, highlighting how the body holds experiences and influences mental health.  
-* [⚡🧠🏃 Spark: The Revolutionary New Science of Exercise and the Brain](/content/books/spark-the-revolutionary-new-science-of-exercise-and-the-brain.md) by John J Ratey: This book investigates the powerful link between exercise and brain function, showcasing how physical activity can enhance cognitive abilities, improve mood, and even mitigate mental health disorders. It explores a key component (movement) of Mental Fitness in greater depth, offering a complementary scientific perspective on optimizing brain health through physical means.  
+* [🤕🎼🧠 The Body Keeps the Score: Brain, Mind, and Body in the Healing of Trauma](./the-body-keeps-the-score-brain-mind-and-body-in-the-healing-of-trauma.md) by Bessel van der Kolk: This book offers a profound exploration of how trauma impacts the body and brain, affecting pleasure, engagement, self-control, and trust. While differing in its focus on trauma, it creatively relates by demonstrating the deep, intricate connection between mental states and physical physiology, highlighting how the body holds experiences and influences mental health.  
+* [⚡🧠🏃 Spark: The Revolutionary New Science of Exercise and the Brain](./spark-the-revolutionary-new-science-of-exercise-and-the-brain.md) by John J Ratey: This book investigates the powerful link between exercise and brain function, showcasing how physical activity can enhance cognitive abilities, improve mood, and even mitigate mental health disorders. It explores a key component (movement) of Mental Fitness in greater depth, offering a complementary scientific perspective on optimizing brain health through physical means.  
 * 🧪 Huberman Lab Protocols by Andrew Huberman: These protocols, often discussed through Dr. Huberman's work, provide actionable, science-based strategies for improving brain function, enhancing mood and energy, and optimizing physical performance. This resource creatively relates by offering practical applications of neuroscience and physiology to achieve peak mental and physical states, similar to the goal of Mental Fitness but often with a broader scope of bio-optimizing techniques.  
   
 ## 💬 [Gemini](https://gemini.google.com) Prompt (gemini-2.5-flash)  

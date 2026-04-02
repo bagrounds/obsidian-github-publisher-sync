@@ -6,8 +6,11 @@ URL: https://bagrounds.org/books/the-case-against-reality-why-evolution-hid-the-
 share: true
 CTA: 🎭 Uncover illusion.
 affiliate link: https://amzn.to/44kl37A
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_time: 2026-04-01T00:00:00Z
+force_analyze_links: false
 ---
-[Home](/content/index.md) > [Books](/content/books/index.md)  
+[Home](../index.md) > [Books](./index.md)  
 # 🧬🎭👁️ The Case Against Reality: Why Evolution Hid the Truth from Our Eyes  
 [🛒 The Case Against Reality: Why Evolution Hid the Truth from Our Eyes. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/44kl37A)  
   
@@ -69,7 +72,7 @@ affiliate link: https://amzn.to/44kl37A
 ### 📖 Similar Books  
 - 🌀 I Am a Strange Loop by Douglas R. Hofstadter explores consciousness and the mind through self-referential strange loops and paradoxes, challenging traditional notions of self and identity.  
 - 🧠 Consciousness and the Social Brain by Michael S.A. Graziano examines the relationship between consciousness and attention, proposing consciousness as a model the brain constructs of attention.  
-- ✨ [👤🧠 Being You: A New Science of Consciousness](/content/books/being-you-a-new-science-of-consciousness.md) presents a contemporary scientific perspective on the nature of consciousness.  
+- ✨ [👤🧠 Being You: A New Science of Consciousness](./being-you-a-new-science-of-consciousness.md) presents a contemporary scientific perspective on the nature of consciousness.  
 - ⚖️ The Master and His Emissary by Iain McGilchrist investigates how the brain's hemispheres shape our perception of reality, critiquing the dominance of the left hemisphere's analytical view.  
   
 ### 🆚 Contrasting Books  
@@ -78,7 +81,7 @@ affiliate link: https://amzn.to/44kl37A
   
 ### 🔗 Related Books  
 - ⏳ From Eternity to Here: The Quest for the Ultimate Theory of Time by Sean Carroll delves into the physics of time, entropy, and cosmology, discussing whether spacetime is fundamental.  
-- 🍄 [🧠🍄 How to Change Your Mind: What the New Science of Psychedelics Teaches Us About Consciousness, Dying, Addiction, Depression, and Transcendence](/content/books/how-to-change-your-mind-what-the-new-science-of-psychedelics-teaches-us-about-consciousness-dying-addiction-depression-and-transcendence.md) by Michael Pollan explores the science and history of psychedelics and their potential impact on consciousness and perception.  
+- 🍄 [🧠🍄 How to Change Your Mind: What the New Science of Psychedelics Teaches Us About Consciousness, Dying, Addiction, Depression, and Transcendence](./how-to-change-your-mind-what-the-new-science-of-psychedelics-teaches-us-about-consciousness-dying-addiction-depression-and-transcendence.md) by Michael Pollan explores the science and history of psychedelics and their potential impact on consciousness and perception.  
 - 🛠️ Intuition Pumps and Other Tools for Thinking by Daniel C. Dennett offers conceptual strategies and mental tools for critical thinking across complex topics like consciousness and evolution.  
   
 ## 🫵 What Do You Think?  

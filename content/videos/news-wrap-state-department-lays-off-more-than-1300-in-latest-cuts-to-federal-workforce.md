@@ -10,7 +10,7 @@ Channel: PBS NewsHour
 tags:
 youtube: https://youtu.be/c-b9F5IZhRs
 ---
-[Home](/content/index.md) > [Videos](/content/videos/index.md)  
+[Home](../index.md) > [Videos](./index.md)  
 # 📰🏛️📉 News Wrap: State Department lays off more than 1,300 in latest cuts to federal workforce  
 ![News Wrap: State Department lays off more than 1,300 in latest cuts to federal workforce](https://youtu.be/c-b9F5IZhRs)  
   
@@ -28,7 +28,7 @@ youtube: https://youtu.be/c-b9F5IZhRs
   
 ## 📚 📖 Book Recommendations  
 * **🏛️ On the State Department and Foreign Service:**  
-    * [🤝🌍 Diplomacy](/content/books/diplomacy.md) by Henry Kissinger  
+    * [🤝🌍 Diplomacy](../books/diplomacy.md) by Henry Kissinger  
     * *The American Foreign Service: A History* by William Barnes and John Heath  
 * **💥 ✈️ On the September 11th Attacks:**  
     * *The Looming Tower: Al-Qaeda and the Road to 9/11* by Lawrence Wright  
@@ -40,10 +40,10 @@ youtube: https://youtu.be/c-b9F5IZhRs
     * *Safe Area Gorazde* by Joe Sacco  
     * *The Fall of Srebrenica: The Last European Genocide* by Jan Willem Honig and Norbert Both  
 * **📊 📈 On Financial Markets:**  
-    * [🧠📈💰 The Intelligent Investor: The Definitive Book on Value Investing](/content/books/the-intelligent-investor.md) by Benjamin Graham  
+    * [🧠📈💰 The Intelligent Investor: The Definitive Book on Value Investing](../books/the-intelligent-investor.md) by Benjamin Graham  
     * *A Random Walk Down Wall Street* by Burton G. Malkiel  
 * **🌌 🌠 On Astronomy and Comets:**  
-    * [🌌 Cosmos](/content/books/cosmos.md) by Carl Sagan  
+    * [🌌 Cosmos](../books/cosmos.md) by Carl Sagan  
     * *Comet* by Carl Sagan and Ann Druyan  
   
 ## 🐦 Tweet  

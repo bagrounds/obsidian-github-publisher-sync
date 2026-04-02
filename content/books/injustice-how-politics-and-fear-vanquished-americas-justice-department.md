@@ -7,7 +7,7 @@ share: true
 CTA: ⚖️ Demand accountability.
 affiliate link: https://amzn.to/3LnOMG3
 ---
-[Home](/content/index.md) > [Books](/content/books/index.md)  
+[Home](../index.md) > [Books](./index.md)  
 # 🏛️💔 Injustice: How Politics and Fear Vanquished America's Justice Department  
 [🛒 Injustice: How Politics and Fear Vanquished America's Justice Department. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3LnOMG3)  
   
@@ -74,7 +74,7 @@ affiliate link: https://amzn.to/3LnOMG3
 * 🛡️ Defending the Executive Branch by Saikrishna Prakash  
   
 ### 🔗 Related  
-* [💰🤫 Dark Money: The Hidden History of the Billionaires Behind the Rise of the Radical Right](/content/books/dark-money-the-hidden-history-of-the-billionaires-behind-the-rise-of-the-radical-right.md) by Jane Mayer  
+* [💰🤫 Dark Money: The Hidden History of the Billionaires Behind the Rise of the Radical Right](./dark-money-the-hidden-history-of-the-billionaires-behind-the-rise-of-the-radical-right.md) by Jane Mayer  
 * 😵‍💫 Chaos: Charles Manson, the CIA, and the Secret History of the Sixties by Tom O'Neill  
   
 ## 🫵 What Do You Think?  

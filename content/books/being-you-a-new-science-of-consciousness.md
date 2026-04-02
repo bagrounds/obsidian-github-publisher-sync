@@ -6,13 +6,16 @@ URL: https://bagrounds.org/books/being-you-a-new-science-of-consciousness
 share: true
 affiliate link: https://amzn.to/4jubxDi
 CTA: 🧠 Explore awareness.
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_time: 2026-04-02T00:00:00Z
+force_analyze_links: false
 ---
-[Home](/content/index.md) > [Books](/content/books/index.md)  
+[Home](../index.md) > [Books](./index.md)  
 # 👤🧠 Being You: A New Science of Consciousness  
 [🛒 Being You: A New Science of Consciousness. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4jubxDi)  
   
 ## 📝🐒 Human Notes  
-- [🌡️⚙️ Inventing Temperature: Measurement and Scientific Progress](/content/books/inventing-temperature-measurement-and-scientific-progress.md)  
+- [🌡️⚙️ Inventing Temperature: Measurement and Scientific Progress](./inventing-temperature-measurement-and-scientific-progress.md)  
   
 ## 🧠 Book Report: 📖 Being You: A New Science of Consciousness by Anil Seth  
   
@@ -39,7 +42,7 @@ CTA: 🧠 Explore awareness.
   
 ### 🧠 Similar Books (Exploring Consciousness and the Brain)  
   
-* **[❓🧠 The Hidden Spring: A Journey to the Source of Consciousness](/content/books/the-hidden-spring-a-journey-to-the-source-of-consciousness.md) by Mark Solms:** This book also investigates the biological basis of consciousness, focusing on the role of the brainstem and affect (feelings) as the fundamental source of consciousness.  
+* **[❓🧠 The Hidden Spring: A Journey to the Source of Consciousness](./the-hidden-spring-a-journey-to-the-source-of-consciousness.md) by Mark Solms:** This book also investigates the biological basis of consciousness, focusing on the role of the brainstem and affect (feelings) as the fundamental source of consciousness.  
 * ⚙️ **The Experience Machine: How Our Minds Predict and Shape Reality by Andy Clark:** Clark's work aligns with Seth's by exploring the predictive processing framework and how our brains actively construct our perception of reality.  
 * 🧠 **Consciousness and the Brain: Deciphering How the Brain Codes Our Thoughts by Stanislas Dehaene:** Dehaene's book provides an in-depth look at the neural correlates of consciousness and global workspace theory.  
 * ❓ **Conscious: A Brief Guide to the Fundamental Mystery of the Mind by Annaka Harris:** Harris explores various theories of consciousness, including panpsychism, and delves into the philosophical implications of subjective experience.  
@@ -57,11 +60,11 @@ CTA: 🧠 Explore awareness.
 * 🚪 **The Doors of Perception by Aldous Huxley:** A classic exploration of altered states of consciousness induced by psychedelics, offering a different perspective on the nature of perception and reality.  
 * 🎩 **The Man Who Mistook His Wife for a Hat and Other Clinical Tales by Oliver Sacks:** Through fascinating case studies of neurological disorders, Sacks reveals the intricate and sometimes bizarre ways the brain shapes our perception of the world and ourselves.  
 * ♾️ **I Am a Strange Loop by Douglas Hofstadter:** Hofstadter explores the nature of consciousness and the self through analogies and Gödel's incompleteness theorems, presenting a perspective on how selfhood can arise from complex systems.  
-* 🧘 **[Flow: The Psychology of Optimal Experience](/content/books/flow-the-psychology-of-optimal-experience.md) by Mihaly Csikszentmihalyi:** This book examines states of optimal experience and absorption, where the sense of a separate self can diminish as one becomes fully immersed in an activity, offering a psychological perspective on the fluidity of self-awareness.  
+* 🧘 **[Flow: The Psychology of Optimal Experience](./flow-the-psychology-of-optimal-experience.md) by Mihaly Csikszentmihalyi:** This book examines states of optimal experience and absorption, where the sense of a separate self can diminish as one becomes fully immersed in an activity, offering a psychological perspective on the fluidity of self-awareness.  
 * 🙏 **The Power of Now: A Guide to Spiritual Enlightenment by Eckhart Tolle:** A spiritual and philosophical text that emphasizes the importance of present moment awareness and transcending the ego- identificated self, offering a stark contrast to a purely neuroscientific view of selfhood.  
-* **[🎨🙏✨ The Artist's Way: A Spiritual Path to Higher Creativity](/content/books/the-artists-way.md): A Spiritual Path to Higher Creativity by Julia Cameron:** This book provides practical exercises and guidance for unlocking creativity, often addressing self-doubt and self-consciousness as barriers to artistic expression.  
-* **[🤔🌍 Sophie’s World](/content/books/sophies-world.md) by Jostein Gaarder:** A philosophical novel that introduces fundamental philosophical questions, including the nature of consciousness and reality, through the story of a young girl and her mysterious philosophy teacher.  
+* **[🎨🙏✨ The Artist's Way: A Spiritual Path to Higher Creativity](./the-artists-way.md): A Spiritual Path to Higher Creativity by Julia Cameron:** This book provides practical exercises and guidance for unlocking creativity, often addressing self-doubt and self-consciousness as barriers to artistic expression.  
+* **[🤔🌍 Sophie’s World](./sophies-world.md) by Jostein Gaarder:** A philosophical novel that introduces fundamental philosophical questions, including the nature of consciousness and reality, through the story of a young girl and her mysterious philosophy teacher.  
 * 🤔 **Discourse on the Method and Meditations on First Philosophy by René Descartes:** The foundational texts of Cartesian dualism, which posits a fundamental separation between mind and body, a view that Seth's work implicitly challenges.  
   
-## 💬 [Gemini](/content/software/gemini.md) Prompt (gemini-2.5-flash-preview-04-17)  
+## 💬 [Gemini](../software/gemini.md) Prompt (gemini-2.5-flash-preview-04-17)  
 > Write a markdown-formatted (start headings at level H2) book report, followed by a plethora of additional similar, contrasting, and creatively related book recommendations on Being You: A New Science of Consciousness. Be thorough in content discussed but concise and economical with your language. Structure the report with section headings and bulleted lists to avoid long blocks of text.

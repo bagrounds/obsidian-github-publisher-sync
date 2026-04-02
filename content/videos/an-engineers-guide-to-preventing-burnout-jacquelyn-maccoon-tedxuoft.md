@@ -10,7 +10,7 @@ Channel: TEDx Talks
 tags:
 youtube: https://youtu.be/cRtKZMw3rto
 ---
-[Home](/content/index.md) > [Videos](/content/videos/index.md)  
+[Home](../index.md) > [Videos](./index.md)  
 # ⚙️🚫🔥 An engineer's guide to preventing burnout | Jacquelyn MacCoon | TEDxUofT  
 ![An engineer's guide to preventing burnout | Jacquelyn MacCoon | TEDxUofT](https://youtu.be/cRtKZMw3rto)  
   
@@ -51,13 +51,13 @@ youtube: https://youtu.be/cRtKZMw3rto
   
 ## 📚 Book Recommendations  
 ### ↔️ Similar  
-* [🤿💼 Deep Work: Rules for Focused Success in a Distracted World](/content/books/deep-work.md): Cal Newport offers systematic strategies for focused work and 🧠 managing cognitive load, directly supporting the video's principle of 'Avoid Overloading.'  
-* [👤📈🎯🌟🔑🤝🏆 The 7 Habits of Highly Effective People](/content/books/the-7-habits-of-highly-effective-people.md): Stephen Covey provides a principle-centered approach to 🎯 personal and professional effectiveness, aligning with the video's holistic 'Composition' and 'Design' concepts.  
+* [🤿💼 Deep Work: Rules for Focused Success in a Distracted World](../books/deep-work.md): Cal Newport offers systematic strategies for focused work and 🧠 managing cognitive load, directly supporting the video's principle of 'Avoid Overloading.'  
+* [👤📈🎯🌟🔑🤝🏆 The 7 Habits of Highly Effective People](../books/the-7-habits-of-highly-effective-people.md): Stephen Covey provides a principle-centered approach to 🎯 personal and professional effectiveness, aligning with the video's holistic 'Composition' and 'Design' concepts.  
   
 ### 🆚 Contrasting  
 * 🏥 Dying for a Paycheck: Jeffrey Pfeffer contrasts the video's individual focus by arguing that the modern workplace is often toxic and a significant cause of stress, demanding 🏢 organizational, not just personal, solutions.  
 * 👥 The Fearless Organization: Amy Edmondson focuses on creating 🛡️ psychological safety in the workplace, offering an organizational design perspective that contrasts with the video's individual focus for reducing insecurity.  
   
 ### 🎨 Creatively Related  
-* [💺🚪💡🤔 The Design of Everyday Things](/content/books/the-design-of-everyday-things.md): Don Norman explains how to design 💻 user-friendly systems and interfaces, connecting conceptually to the speaker's idea of engineering a 💡 simple life system to reduce stress and failure points.  
-* [🤔🐇🐢 Thinking, Fast and Slow](/content/books/thinking-fast-and-slow.md): Daniel Kahneman explores the two systems that drive human thought, providing insight into the mental 'composition' and 'design' of the mind and why 📉 impulsive decisions can lead to burnout.
+* [💺🚪💡🤔 The Design of Everyday Things](../books/the-design-of-everyday-things.md): Don Norman explains how to design 💻 user-friendly systems and interfaces, connecting conceptually to the speaker's idea of engineering a 💡 simple life system to reduce stress and failure points.  
+* [🤔🐇🐢 Thinking, Fast and Slow](../books/thinking-fast-and-slow.md): Daniel Kahneman explores the two systems that drive human thought, providing insight into the mental 'composition' and 'design' of the mind and why 📉 impulsive decisions can lead to burnout.

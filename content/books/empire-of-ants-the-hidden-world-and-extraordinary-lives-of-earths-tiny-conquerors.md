@@ -7,7 +7,7 @@ share: true
 CTA: 🐜 Unearth ant civilization.
 affiliate link: https://amzn.to/3JGkqy9
 ---
-[Home](/content/index.md) > [Books](/content/books/index.md)  
+[Home](../index.md) > [Books](./index.md)  
 # 🐜👑 Empire of Ants: The Hidden World and Extraordinary Lives of Earth's Tiny Conquerors  
 [🛒 Empire of Ants: The Hidden World and Extraordinary Lives of Earth's Tiny Conquerors. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3JGkqy9)  
   
@@ -70,16 +70,16 @@ affiliate link: https://amzn.to/3JGkqy9
 ## 📚 🐜 Book Recommendations  
   
 ### ➕ 🐜 Similar  
-* [🐜 The Ants](/content/books/the-ants.md) by Bert Hölldobler and Edward O. Wilson: A classic, more academic exploration of ant biology.  
+* [🐜 The Ants](./the-ants.md) by Bert Hölldobler and Edward O. Wilson: A classic, more academic exploration of ant biology.  
 * 📖 🐜 Journey to the Ants by Bert Hölldobler and Edward O. Wilson: A more accessible overview from the renowned ant experts.  
 * 📖 🐜 The Superorganism by Bert Hölldobler and Edward O. Wilson: Focuses on the collective intelligence of social insects.  
   
 ### ➖ 🐜 Contrasting  
-* [👤🧬 The Selfish Gene](/content/books/the-selfish-gene.md) by Richard Dawkins: Explores evolution from a gene-centric view, contrasting with the superorganism concept.  
-* [🌐🔗🧠📖 Thinking in Systems: A Primer](/content/books/thinking-in-systems.md) by Donella H. Meadows: Provides a broader framework for understanding complex interconnected systems.  
+* [👤🧬 The Selfish Gene](./the-selfish-gene.md) by Richard Dawkins: Explores evolution from a gene-centric view, contrasting with the superorganism concept.  
+* [🌐🔗🧠📖 Thinking in Systems: A Primer](./thinking-in-systems.md) by Donella H. Meadows: Provides a broader framework for understanding complex interconnected systems.  
   
 ### 🔗 🐜 Related  
-* [🌳🗣️ The Hidden Life of Trees: What They Feel, How They Communicate: Discoveries from a Secret World](/content/books/the-hidden-life-of-trees-what-they-feel-how-they-communicate-discoveries-from-a-secret-world.md) by Peter Wohlleben: Reveals the complex communication and social structures in forests.  
+* [🌳🗣️ The Hidden Life of Trees: What They Feel, How They Communicate: Discoveries from a Secret World](./the-hidden-life-of-trees-what-they-feel-how-they-communicate-discoveries-from-a-secret-world.md) by Peter Wohlleben: Reveals the complex communication and social structures in forests.  
 * 🦠 🐜 I Contain Multitudes by Ed Yong: Explores the microbial worlds within and around living beings, including insects.  
 * 🧠 🐜 Other Minds by Peter Godfrey-Smith: Discusses the evolution of intelligence in cephalopods, offering another perspective on non-human cognition.  
   

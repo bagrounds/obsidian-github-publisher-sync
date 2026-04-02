@@ -124,6 +124,38 @@ main()
 | `validatePrePushFileCount(vaultDir, currentCount)` | 🛑 Circuit breaker validation |
 | `vaultFileCountPath(vaultDir)` | 📂 Path to baseline file count marker |
 
+## 🛡️ Vault Content Protection — Targeted File Sync
+
+### ❌ Problem: Broad Directory Sync Corrupts Vault
+
+🚨 **Incident (2026-04-02):** The `backfill-blog-images` task previously used `syncMarkdownDir` to sync ALL `.md` files from `repoRoot/<dir>/` to `vaultDir/<dir>/` for each directory in `backfillContentIds`. When the Enveloppe plugin's root folder was misconfigured (changed from `content` to empty), it published ~2986 files to the repo root instead of `content/`. These Enveloppe-published files had:
+- 📝 Wikilinks converted to markdown links (Enveloppe transforms during publish)
+- ⬜ Trailing whitespace added to every line
+- 📊 Dataview queries rendered as static markdown lists
+
+🔄 The `syncMarkdownDir` function blindly synced these corrupted files back to the vault, overwriting:
+- 📄 Index pages with dataview queries → replaced with rendered static lists
+- 📅 Reflection date files → wikilinks replaced with markdown links
+
+📊 The corruption matched exactly the `backfillContentIds` directories: reflections, ai-blog, auto-blog-zero, chickie-loo, systems-for-public-good. Directories NOT in this list (books, videos, topics) were unaffected.
+
+### ✅ Fix: Targeted File Sync
+
+🎯 The backfill task now syncs ONLY files that were actually modified by the current task:
+- 🖼️ Files modified by image backfill (`brModifiedFiles` from `backfillImages`)
+- 🔗 Files modified by nav link updates (`nlrModified` from `ensureAllNavLinks`)
+
+🚫 Vault-managed files like `index.md` (dataview queries), unmodified reflection files, and other user-created content are NEVER overwritten by the sync.
+
+### 🔒 Rule: Never Blindly Sync Repo → Vault
+
+⚠️ **Critical invariant:** The vault is the source of truth for user-created content. The scheduled task may only write to the vault:
+1. ✏️ Files it generated (blog posts, images, AI fiction)
+2. 📝 Files it modified (frontmatter updates, link insertions, titles)
+3. 🔗 Files explicitly tracked as modified by the current run
+
+🚫 **Never** use broad directory sync (`syncMarkdownDir`) from repo to vault. The repo may contain Enveloppe-published versions that have destructive transformations applied.
+
 ## 🛡️ Idempotency
 
 ✅ Sync operations are safe to re-run:
@@ -132,3 +164,4 @@ main()
 - 📂 Every pull starts from an empty ephemeral directory — no stale state
 - 📝 Embed writing checks for existing sections before appending
 - 🛑 Circuit breaker prevents catastrophic deletion propagation
+- 🎯 Only task-modified files are synced back to vault — no accidental overwrites

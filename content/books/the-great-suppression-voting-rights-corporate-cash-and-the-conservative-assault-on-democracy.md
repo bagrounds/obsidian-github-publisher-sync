@@ -7,7 +7,7 @@ share: true
 CTA: 🗳️ Defend self-governance.
 affiliate link: https://amzn.to/478nIlb
 ---
-[Home](/content/index.md) > [Books](/content/books/index.md)  
+[Home](../index.md) > [Books](./index.md)  
 # 🗳️💰⬇️ The Great Suppression: Voting Rights, Corporate Cash, and the Conservative Assault on Democracy  
 [🛒 The Great Suppression: Voting Rights, Corporate Cash, and the Conservative Assault on Democracy. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/478nIlb)  
   
@@ -92,9 +92,9 @@ A: Yes, The Great Suppression remains highly relevant as discussions around voti
   
 * 🗳️ Give Us the Ballot The Modern Struggle for Voting Rights in America by Ari Berman  
 * 🕵️‍♂️ Uncounted The Crisis of Voter Suppression in America by Gilda R. Daniels  
-* [🏛️⛓️ Democracy in Chains: The Deep History of the Radical Right's Stealth Plan for America](/content/books/democracy-in-chains-the-deep-history-of-the-radical-rights-stealth-plan-for-america.md) by Nancy MacLean  
-* [💰🤫 Dark Money: The Hidden History of the Billionaires Behind the Rise of the Radical Right](/content/books/dark-money-the-hidden-history-of-the-billionaires-behind-the-rise-of-the-radical-right.md) by Jane Mayer  
-* [🗳️⬇️🏛️ One Person, No Vote: How Voter Suppression Is Destroying Our Democracy](/content/books/one-person-no-vote-how-voter-suppression-is-destroying-our-democracy.md) by Carol Anderson  
+* [🏛️⛓️ Democracy in Chains: The Deep History of the Radical Right's Stealth Plan for America](./democracy-in-chains-the-deep-history-of-the-radical-rights-stealth-plan-for-america.md) by Nancy MacLean  
+* [💰🤫 Dark Money: The Hidden History of the Billionaires Behind the Rise of the Radical Right](./dark-money-the-hidden-history-of-the-billionaires-behind-the-rise-of-the-radical-right.md) by Jane Mayer  
+* [🗳️⬇️🏛️ One Person, No Vote: How Voter Suppression Is Destroying Our Democracy](./one-person-no-vote-how-voter-suppression-is-destroying-our-democracy.md) by Carol Anderson  
   
 #### 🆚 Contrasting Books (Arguments for Election Security, Conservative Viewpoints)  
   
@@ -102,10 +102,10 @@ A: Yes, The Great Suppression remains highly relevant as discussions around voti
   
 #### 💡 Creatively Related Books (Broader Themes of Democracy, Power, and Public Engagement)  
   
-* [👑🚫📜2️⃣0️⃣ On Tyranny: Twenty Lessons from the Twentieth Century](/content/books/on-tyranny.md) by Timothy Snyder  
-* [🧑🏿⛓️🙈 The New Jim Crow: Mass Incarceration in the Age of Colorblindness](/content/books/the-new-jim-crow-mass-incarceration-in-the-age-of-colorblindness.md) by Michelle Alexander (Explores systemic disenfranchisement through the criminal justice system)  
-* [🎳🏘️📉📈 Bowling Alone: The Collapse and Revival of American Community](/content/books/bowling-alone.md) by Robert D. Putnam (Discusses declining civic engagement, related to the health of democracy)  
-* [🤔🐇🐢 Thinking, Fast and Slow](/content/books/thinking-fast-and-slow.md) by Daniel Kahneman (Relevant for understanding cognitive biases impacting political decisions and public opinion)  
+* [👑🚫📜2️⃣0️⃣ On Tyranny: Twenty Lessons from the Twentieth Century](./on-tyranny.md) by Timothy Snyder  
+* [🧑🏿⛓️🙈 The New Jim Crow: Mass Incarceration in the Age of Colorblindness](./the-new-jim-crow-mass-incarceration-in-the-age-of-colorblindness.md) by Michelle Alexander (Explores systemic disenfranchisement through the criminal justice system)  
+* [🎳🏘️📉📈 Bowling Alone: The Collapse and Revival of American Community](./bowling-alone.md) by Robert D. Putnam (Discusses declining civic engagement, related to the health of democracy)  
+* [🤔🐇🐢 Thinking, Fast and Slow](./thinking-fast-and-slow.md) by Daniel Kahneman (Relevant for understanding cognitive biases impacting political decisions and public opinion)  
 * 💥 The Shock Doctrine The Rise of Disaster Capitalism by Naomi Klein (Explores how crises are used to push through unpopular policies, relevant to challenges to democratic norms).  
   
 ## 💬 [Gemini](https://gemini.google.com) Prompt (gemini-2.5-flash)  

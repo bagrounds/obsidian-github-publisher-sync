@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-04-02T14:49:57-07:00
+updated: 2026-04-02T15:55:50-07:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -50,31 +50,31 @@ updated: 2026-04-02T14:49:57-07:00
   
   
 ## [📚 Books](./books/index.md) (958)  
+- [🕵️‍♀️📜💻 Rogue Protocol](./books/rogue-protocol.md)  
+- [👥⚔️🏛️ The People vs. Democracy: Why Our 🗽 Freedom Is in ⚠️ Danger and How to Save It](./books/the-people-vs-democracy.md)  
+- [❓✅ Trick or Treatment: The Undeniable Facts about Alternative Medicine](./books/trick-or-treatment-the-undeniable-facts-about-alternative-medicine.md)  
 - [💰🤫 Dark Money: The Hidden History of the Billionaires Behind the Rise of the Radical Right](./books/dark-money-the-hidden-history-of-the-billionaires-behind-the-rise-of-the-radical-right.md)  
-- [🏛️➡️👑 How to Lose a Country: The 7 Steps from Democracy to Dictatorship](./books/how-to-lose-a-country.md)  
-- [⚔️🕊️ War and Peace](./books/war-and-peace.md)  
-- [⚙️🔄 The Nature of Technology: What It Is and How It Evolves](./books/the-nature-of-technology-what-it-is-and-how-it-evolves.md)  
   
   
 ## [📺 Videos](./videos/index.md) (714)  
+- [🗓️🎯📈💡 2025 Yearly Themes](./videos/2025-yearly-themes.md)  
+- [🔑🖼️🎨👤 Your Theme](./videos/your-theme.md)  
 - [❌🤔💡 On being wrong | Kathryn Schulz](./videos/on-being-wrong-kathryn-schulz.md)  
 - [📓 This Journal Keeps Me Productive (& Maybe You Too)](./videos/this-journal-keeps-me-productive-and-maybe-you-too.md)  
-- [📒 Bullet Journal](./videos/bullet-journal.md)  
-- [✨💻💀🤖 Steve Yegge on productive vibe coding, the death of the IDE, babysitting a fleet of AI coding agents](./videos/steve-yegge-on-productive-vibe-coding-the-death-of-the-ide-babysitting-a-fleet-of-ai-coding-agents.md)  
   
   
 ## [🌌 Topics](./topics/index.md) (91)  
+- [🗣️📚🧠 Linguistics](./topics/linguistics.md)  
+- [💻⚙️🧩🏗️ Software Engineering](./topics/software-engineering.md)  
+- [⚡🔌 Electrical Engineering](./topics/electrical-engineering.md)  
 - [♻️🫀🧠💪 Cognitive Behavioral Therapy](./topics/cognitive-behavioral-therapy.md)  
-- [🫂💖 Attachment Theory](./topics/attachment-theory.md)  
-- [🔄🎯 Kuramoto Model](./topics/kuramoto-model.md)  
-- [🗣️📢 Communication Studies](./topics/communication-studies.md)  
   
   
-## [📄  Articles](./articles/index.md) (83)  
+## [📄  Articles](./articles/index.md) (84)  
+- [🤖🧠💻 Agentic Code Reasoning](./articles/agentic-code-reasoning.md)  
 - [🗺️🚀🤖 A Field Guide to Rapidly Improving AI Products](./articles/a-field-guide-to-rapidly-improving-ai-products.md)  
 - [📈❤️⏱️💪🧘 High Intensity Functional Training Guided by Individualized Heart Rate Variability Results in Similar Health and Fitness Improvements as Predetermined Training with Less Effort](./articles/high-intensity-functional-training-guided-by-individualized-heart-rate-variability-results-in-similar-health-and-fitness-improvements-as-predetermined-training-with-less-effort.md)  
 - [🧠🤖📈 Scientists just developed a new AI modeled on the human brain — it's outperforming LLMs like ChatGPT at reasoning tasks](./articles/scientists-just-developed-a-new-ai-modeled-on-the-human-brain-its-outperforming-llms-like-chatgpt-at-reasoning-tasks.md)  
-- [💪🧠📉💊🔎 Creatine Supplementation in Depression: A Review of Mechanisms, Efficacy, Clinical Outcomes, and Future Directions](./articles/creatine-supplementation-in-depression-a-review-of-mechanisms-efficacy-clinical-outcomes-and-future-directions.md)  
   
   
 ## [🤖💬 Bot Chats](./bot-chats/index.md) (49)  

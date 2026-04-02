@@ -10,7 +10,7 @@ Channel: New York Times Podcasts
 tags:
 youtube: https://youtu.be/mc8oeIz_1Wg
 ---
-[Home](/content/index.md) > [Videos](/content/videos/index.md)  
+[Home](../index.md) > [Videos](./index.md)  
 # 💯🥇📚🗓️✨ The 10 Best Books of 2025  
 ![The 10 Best Books of 2025](https://youtu.be/mc8oeIz_1Wg)  
   
@@ -21,7 +21,7 @@ youtube: https://youtu.be/mc8oeIz_1Wg
 * 🎬 The Director portrays Austrian filmmaker G.W. Pabst's struggle with artistic integrity and survival after returning to Europe when the Nazis took control \[[01:11](http://www.youtube.com/watch?v=mc8oeIz_1Wg&t=71)].  
 * ⛪ Stoneyard Devotional chronicles a woman's midlife retreat to a remote Australian convent, reading like a diary of her search for peace interrupted by persistent worldly intrusions, like a horrific mouse infestation \[[01:11](http://www.youtube.com/watch?v=mc8oeIz_1Wg&t=71)].  
 * 🌊 A Marriage at Sea recounts the true 1972 survival story of Morris and Marilyn Bailey, who endured 118 days adrift in a dinghy after a sperm whale shipwrecked their boat \[[35:48](http://www.youtube.com/watch?v=mc8oeIz_1Wg&t=2148)].  
-* [🏚️🚫 There Is No Place for Us: Working and Homeless in America](/content/books/there-is-no-place-for-us-working-and-homeless-in-america.md) investigates the hidden working homeless in America, following five families in Atlanta and detailing the nationwide housing affordability crisis \[[35:48](http://www.youtube.com/watch?v=mc8oeIz_1Wg&t=2148)].  
+* [🏚️🚫 There Is No Place for Us: Working and Homeless in America](../books/there-is-no-place-for-us-working-and-homeless-in-america.md) investigates the hidden working homeless in America, following five families in Atlanta and detailing the nationwide housing affordability crisis \[[35:48](http://www.youtube.com/watch?v=mc8oeIz_1Wg&t=2148)].  
 * 🎨 Wild Thing: A Life of Paul Gauguin is a biography that uses newly discovered material to reassess the painter's troubling reputation, exploring his contradictory life and innovative art \[[35:48](http://www.youtube.com/watch?v=mc8oeIz_1Wg&t=2148)].  
 * ✍️ Mother Mary Comes to Me is an unsentimental, humorous memoir/portrait of Arundhati Roy's formidable, dynamic, and abusive mother \[[35:48](http://www.youtube.com/watch?v=mc8oeIz_1Wg&t=2148)].  
 * 🕯️ Mother Emanuel: Two Centuries of Race, Resistance, and Forgiveness in One Charleston Church frames the history of the AME church and race in the South around the 2015 hate crime massacre \[[35:48](http://www.youtube.com/watch?v=mc8oeIz_1Wg&t=2148)].  
@@ -47,7 +47,7 @@ youtube: https://youtu.be/mc8oeIz_1Wg
 ## 📚 Book Recommendations  
   
 ### ↔️ Similar  
-* [🏚️💰 Evicted: Poverty and Profit in the American City](/content/books/evicted-poverty-and-profit-in-the-american-city.md) by Matthew Desmond. This book also uses intensive ethnographic research to detail the devastating human cost of housing instability and eviction in America, similar to the scope of There Is No Place for Us.  
+* [🏚️💰 Evicted: Poverty and Profit in the American City](../books/evicted-poverty-and-profit-in-the-american-city.md) by Matthew Desmond. This book also uses intensive ethnographic research to detail the devastating human cost of housing instability and eviction in America, similar to the scope of There Is No Place for Us.  
 * 🐅 Life of Pi by Yann Martel. It focuses on the psychological and spiritual dimensions of extreme survival at sea on a lifeboat, mirroring the themes of endurance and marriage under duress in A Marriage at Sea.  
   
 ### 🆚 Contrasting  

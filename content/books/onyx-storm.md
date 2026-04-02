@@ -8,7 +8,7 @@ Author:
 tags:
 affiliate link: https://amzn.to/3Z95D3u
 ---
-[Home](/content/index.md) > [Books](/content/books/index.md)  
+[Home](../index.md) > [Books](./index.md)  
 # 🖤🐲⛈️ Onyx Storm  
 [🛒 Onyx Storm. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3Z95D3u)  
   
@@ -41,7 +41,7 @@ affiliate link: https://amzn.to/3Z95D3u
 #### Non-Fiction 🤔  
 * **"The Hero with a Thousand Faces" by Joseph Campbell:** If you are fascinated by the underlying structures of storytelling and the archetypes that appear across different myths and legends, this book explores the common patterns in heroic narratives, which often form the backbone of fantasy epics like _Onyx Storm_. It can offer a deeper appreciation for the story's construction and the characters' journeys. 🤓  
 * **"Romancing the Beat: Story Structure for Romance Novels" by Gwen Hayes**: For readers who particularly enjoy the romantic elements in Onyx Storm and are curious about the craft behind creating compelling love stories, this book provides insights into the specific structural elements and emotional beats that make romance novels work. It could be interesting for aspiring writers or anyone wanting a behind-the-scenes look at the genre. ✍️💖  
-* **[✍️🦴 Writing Down the Bones](/content/books/writing-down-the-bones.md) by Natalie Goldberg:** For readers inspired by Yarros's storytelling, this book offers practical and encouraging advice on developing your own writing skills and unleashing your creativity. ✍️  
+* **[✍️🦴 Writing Down the Bones](./writing-down-the-bones.md) by Natalie Goldberg:** For readers inspired by Yarros's storytelling, this book offers practical and encouraging advice on developing your own writing skills and unleashing your creativity. ✍️  
   
 #### If You Loved This 🥰  
 * **"A Court of Thorns and Roses" by Sarah J. Maas:** If you were captivated by the blend of fantasy, romance, and strong characters in *Onyx Storm*, this series offers a similar reading experience with a different but equally enthralling world. 🌹  

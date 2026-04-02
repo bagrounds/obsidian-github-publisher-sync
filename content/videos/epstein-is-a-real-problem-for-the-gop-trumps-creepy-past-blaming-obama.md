@@ -10,7 +10,7 @@ Channel: The Late Show with Stephen Colbert
 tags:
 youtube: https://youtu.be/oZ9GobGTOt0
 ---
-[Home](/content/index.md) > [Videos](/content/videos/index.md)  
+[Home](../index.md) > [Videos](./index.md)  
 # 🐘🔴👴🏿💥 Epstein Is A Real Problem For The GOP | Trump's Creepy Past | Blaming Obama  
 ![Epstein Is A Real Problem For The GOP | Trump's Creepy Past | Blaming Obama](https://youtu.be/oZ9GobGTOt0)  
   
@@ -35,8 +35,8 @@ This video presents a comedic and critical perspective on recent political event
 * 📊 **Economic Analysis:** Research independent economic analyses regarding the causes of rising beef prices and the potential impact of tariffs on the agricultural market.  
   
 ## 📚 Book Recommendations  
-* [😱🤡🇺🇸 Fear: Trump in the White House](/content/books/fear.md) by Bob Woodward: A detailed account of the Trump administration, offering an insider's perspective on the presidency.  
-* [🔥💣💥😡🤬 Fire and Fury: Inside the Trump White House](/content/books/fire-and-fury-inside-the-trump-white-house.md) by Michael Wolff: Another controversial look into the early days of the Trump presidency.  
+* [😱🤡🇺🇸 Fear: Trump in the White House](../books/fear.md) by Bob Woodward: A detailed account of the Trump administration, offering an insider's perspective on the presidency.  
+* [🔥💣💥😡🤬 Fire and Fury: Inside the Trump White House](../books/fire-and-fury-inside-the-trump-white-house.md) by Michael Wolff: Another controversial look into the early days of the Trump presidency.  
 * The Art of the Deal by Donald J. Trump: Provides insight into Trump's business philosophy and negotiation tactics.  
-* [🧑🏿⛓️🙈 The New Jim Crow: Mass Incarceration in the Age of Colorblindness](/content/books/the-new-jim-crow-mass-incarceration-in-the-age-of-colorblindness.md) by Michelle Alexander: Offers a contrasting perspective on legal systems and social justice in the U.S.  
+* [🧑🏿⛓️🙈 The New Jim Crow: Mass Incarceration in the Age of Colorblindness](../books/the-new-jim-crow-mass-incarceration-in-the-age-of-colorblindness.md) by Michelle Alexander: Offers a contrasting perspective on legal systems and social justice in the U.S.  
 * The Omnivore's Dilemma by Michael Pollan: Explores the complexities of the American food system, including factors influencing meat production and prices.

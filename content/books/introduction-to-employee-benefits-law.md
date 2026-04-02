@@ -8,7 +8,7 @@ tags:
   - law
 affiliate link: https://amzn.to/43C3pe9
 ---
-[Home](/content/index.md) > [Books](/content/books/index.md)  
+[Home](../index.md) > [Books](./index.md)  
 # 👨‍💼➕ Introduction to Employee Benefits Law  
 [🛒 Introduction to Employee Benefits Law. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/43C3pe9)  
   
@@ -59,5 +59,5 @@ The content of "Introduction to Employee Benefits Law" generally includes, but i
 * 📚 **Motivational Books for Employees (e.g., Atomic Habits by James Clear, The Checklist Manifesto by Atul Gawande):** 🚀 While not legal books, these types of books focus on employee well-being, productivity, and workplace culture, which are indirectly related to the goals of some employee benefits (e.g., wellness programs, employee satisfaction). 😊 They offer a contrasting perspective on how to improve the workplace beyond legal compliance.  
 * 📚 **Books on the History of Labor Movements:** ✊ Understanding the historical context of labor rights and negotiations provides valuable insight into the origins and evolution of employee benefits law.  
   
-## 💬 [Gemini](/content/software/gemini.md) Prompt (gemini-2.5-flash-preview-04-17)  
+## 💬 [Gemini](../software/gemini.md) Prompt (gemini-2.5-flash-preview-04-17)  
 > Write a markdown-formatted (start headings at level H2) book report, followed by a plethora of additional similar, contrasting, and creatively related book recommendations on Introduction to Employee Benefits Law. Be thorough in content discussed but concise and economical with your language. Structure the report with section headings and bulleted lists to avoid long blocks of text.

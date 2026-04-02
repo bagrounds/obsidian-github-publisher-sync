@@ -4,10 +4,10 @@ aliases:
   - I Built an AI That Does My Work For Me
 title: I Built an AI That Does My Work For Me
 URL: https://youtu.be/AfAIS7_jJrk
-Author: 
+Author:
 Platform: "#YouTube"
 Channel: Coding with Lewis
-tags: 
+tags:
 ---
   
 [Home](../index.md) > [Videos](./index.md)  

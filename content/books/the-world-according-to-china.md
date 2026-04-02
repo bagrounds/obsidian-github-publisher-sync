@@ -7,7 +7,7 @@ share: true
 CTA: 🌐 Reframe geopolitics.
 affiliate link: https://amzn.to/48ztA7K
 ---
-[Home](/content/index.md) > [Books](/content/books/index.md)  
+[Home](../index.md) > [Books](./index.md)  
 # 🇨🇳🌍 The World According to China  
 [🛒 The World According to China. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/48ztA7K)  
   
@@ -77,7 +77,7 @@ affiliate link: https://amzn.to/48ztA7K
   
 ### ➕ Related  
 * 🛤️ The Silk Roads A New History of the World by Peter Frankopan  
-* [⚡🌍⚔️ The New Map: Energy, Climate, and the Clash of Nations](/content/books/the-new-map-energy-climate-and-the-clash-of-nations.md) by Daniel Yergin  
+* [⚡🌍⚔️ The New Map: Energy, Climate, and the Clash of Nations](./the-new-map-energy-climate-and-the-clash-of-nations.md) by Daniel Yergin  
 * 🌪️ Geopolitics for the End Time From the Pandemic to the Climate Crisis by Bruno Maçães  
   
 ## 🫵 What Do You Think?  

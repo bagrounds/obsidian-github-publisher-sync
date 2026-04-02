@@ -13,14 +13,7 @@ URL: https://bagrounds.org/bot-chats/obsidian-templater-filename-sanitization
 ## Response  
 Here's a simple Obsidian Templater script that uses regular expressions to sanitize a filename:  
 ```js  
-<%*  
-  const filename = tp.file.title;  
-  const sanitizedFilename = filename  
-    .toLowerCase()  
-    .replace(/[^a-z0-9]+/g, '-')  
-    .replace(/^-+|-+$/g, '');  
-  tp.file.rename(sanitizedFilename);  
-%>  
+  
 ```  
 Let me explain what this script does:  
 It gets the current filename from tp.file.title.  

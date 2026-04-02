@@ -10,7 +10,7 @@ updated: 2026-03-22T03:56:28.352Z
 link_analysis_time: 2026-03-22T04:04:05.453Z
 link_analysis_model: gemini-3.1-flash-lite-preview
 ---
-[Home](/content/index.md#) > [Books](/content/books/index.md#)    
+[Home](../index.md#) > [Books](./index.md#)    
 # 🤖⚠️📈 Superintelligence: Paths, Dangers, Strategies    
 [🛒 Superintelligence: Paths, Dangers, Strategies. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/44UAP9Q)    
     
@@ -56,10 +56,10 @@ Bostrom dedicates a significant portion of the book to exploring potential strat
     
 ### 🤝 Similar in Theme    
     
-* **[🧬👥💾 Life 3.0: Being Human in the Age of Artificial Intelligence](/content/books/life-3-0.md#)** by Max Tegmark: Explores the future of life with AI, covering a wide range of possible futures and the choices we have in shaping them.    
-* **[🤖🧑‍ Human Compatible: Artificial Intelligence and the Problem of Control](/content/books/human-compatible-artificial-intelligence-and-the-problem-of-control.md#)** by Stuart Russell: A leading AI researcher offers his perspective on the control problem and proposes a new approach to building safe AI.    
+* **[🧬👥💾 Life 3.0: Being Human in the Age of Artificial Intelligence](./life-3-0.md#)** by Max Tegmark: Explores the future of life with AI, covering a wide range of possible futures and the choices we have in shaping them.    
+* **[🤖🧑‍ Human Compatible: Artificial Intelligence and the Problem of Control](./human-compatible-artificial-intelligence-and-the-problem-of-control.md#)** by Stuart Russell: A leading AI researcher offers his perspective on the control problem and proposes a new approach to building safe AI.    
 * 💥 **The Precipice: Existential Risk and the Future of Humanity** by Toby Ord: While broader in scope, this book extensively covers the risks from unaligned artificial intelligence as a major category of existential threat.    
-* 💖 **[⚖️🤖 The Alignment Problem](/content/books/the-alignment-problem.md): Machine Learning and Human Values** by Brian Christian: Delves into the technical and ethical challenges of aligning AI with human values, providing a more in-depth look at a key aspect of Bostrom's argument.    
+* 💖 **[⚖️🤖 The Alignment Problem](./the-alignment-problem.md): Machine Learning and Human Values** by Brian Christian: Delves into the technical and ethical challenges of aligning AI with human values, providing a more in-depth look at a key aspect of Bostrom's argument.    
     
 ### 🧐 Contrasting and Critical Viewpoints    
     
@@ -70,12 +70,12 @@ Bostrom dedicates a significant portion of the book to exploring potential strat
     
 ### 🎨 Creatively Related    
     
-* **[♾️📐🎶🥨 Gödel, Escher, Bach: An Eternal Golden Braid](/content/books/godel-escher-bach.md#)** by Douglas Hofstadter: A Pulitzer Prize-winning book that playfully explores the nature of consciousness, intelligence, and self-reference through the works of a logician, an artist, and a composer.    
+* **[♾️📐🎶🥨 Gödel, Escher, Bach: An Eternal Golden Braid](./godel-escher-bach.md#)** by Douglas Hofstadter: A Pulitzer Prize-winning book that playfully explores the nature of consciousness, intelligence, and self-reference through the works of a logician, an artist, and a composer.    
 * 🧠 **The Mind's I: Fantasies and Reflections on Self and Soul** by Douglas Hofstadter and Daniel C. Dennett: A collection of essays and short stories that delve into the philosophical puzzles of the mind, consciousness, and identity, providing rich food for thought on what it means to be intelligent.    
 * ⏳ **Homo Deus: A Brief History of Tomorrow** by Yuval Noah Harari: Explores the future of humanity and the potential for humans to evolve into a new kind of being through technology, touching on many of the same themes as Superintelligence but from a historical and sociological perspective.    
 * 👽 **Blindsight** by Peter Watts: A hard science fiction novel that explores the nature of consciousness and intelligence through an encounter with an alien species that is highly intelligent but lacks consciousness, offering a fictional exploration of some of the philosophical concepts in Bostrom's work.    
     
-## 💬 [Gemini](/content/software/gemini.md#) Prompt (gemini-2.5-pro)    
+## 💬 [Gemini](../software/gemini.md#) Prompt (gemini-2.5-pro)    
 > Write a markdown-formatted (start headings at level H2) book report, followed by a plethora of additional similar, contrasting, and creatively related book recommendations on Superintelligence: Paths, Dangers, Strategies. Never put book titles in quotes or italics. Be thorough in content discussed but concise and economical with your language. Structure the report with section headings and bulleted lists to avoid long blocks of text.    
     
 ## 🦋 Bluesky      

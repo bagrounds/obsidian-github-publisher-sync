@@ -9,7 +9,7 @@ tags:
 affiliate link: https://amzn.to/4kKKnsZ
 CTA: 🤝 Cultivate collaboration.
 ---
-[Home](/content/index.md) > [Books](/content/books/index.md)  
+[Home](../index.md) > [Books](./index.md)  
 # 🗣️💡🦠 Social Physics: How Good Ideas Spread - The Lessons from a New Science  
 [🛒 Social Physics: How Good Ideas Spread - The Lessons from a New Science. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4kKKnsZ)  
   
@@ -71,18 +71,18 @@ This 📝 report summarizes Alex "Sandy" Pentland's *Social Physics: How Good Id
   
 ### 🧐 Contrasting Perspectives (Qualitative, Critical, Individual Focus)  
   
-* **[📊📉🏛️ Weapons of Math Destruction: How Big Data Increases Inequality and Threatens Democracy](/content/books/weapons-of-math-destruction-how-big-data-increases-inequality-and-threatens-democracy.md)** by Cathy O'Neil: A critical look at how algorithms and big data, often deployed with goals similar to those Pentland discusses, can perpetuate bias, increase inequality, and lack transparency. ⚠️ A necessary counterpoint regarding the potential harms of data-driven social engineering.  
-* **[🤔🐇🐢 Thinking, Fast and Slow](/content/books/thinking-fast-and-slow.md)** by Daniel Kahneman: Focuses on individual cognitive biases and the psychology of decision-making, contrasting with Pentland's network-level focus. 🧠 Explains *why* individuals might act irrationally, complementing the *how* of idea spread in networks.  
-* **[📖🏛️📉 Seeing Like a State: How Certain Schemes to Improve the Human Condition Have Failed](/content/books/seeing-like-a-state-how-certain-schemes-to-improve-the-human-condition-have-failed.md)** by James C. Scott: Critiques large-scale, top-down planning efforts (often data-driven) that ignore local, practical knowledge ("metis"). 🌳 Offers a cautionary tale about imposing simplified models onto complex social realities, relevant to the ambition of Social Physics.  
+* **[📊📉🏛️ Weapons of Math Destruction: How Big Data Increases Inequality and Threatens Democracy](./weapons-of-math-destruction-how-big-data-increases-inequality-and-threatens-democracy.md)** by Cathy O'Neil: A critical look at how algorithms and big data, often deployed with goals similar to those Pentland discusses, can perpetuate bias, increase inequality, and lack transparency. ⚠️ A necessary counterpoint regarding the potential harms of data-driven social engineering.  
+* **[🤔🐇🐢 Thinking, Fast and Slow](./thinking-fast-and-slow.md)** by Daniel Kahneman: Focuses on individual cognitive biases and the psychology of decision-making, contrasting with Pentland's network-level focus. 🧠 Explains *why* individuals might act irrationally, complementing the *how* of idea spread in networks.  
+* **[📖🏛️📉 Seeing Like a State: How Certain Schemes to Improve the Human Condition Have Failed](./seeing-like-a-state-how-certain-schemes-to-improve-the-human-condition-have-failed.md)** by James C. Scott: Critiques large-scale, top-down planning efforts (often data-driven) that ignore local, practical knowledge ("metis"). 🌳 Offers a cautionary tale about imposing simplified models onto complex social realities, relevant to the ambition of Social Physics.  
 * **The Human Condition** by Hannah Arendt: A deep philosophical work exploring human activity (labor, work, action) and the public sphere. 🕊️ Provides a rich, qualitative counterpoint to the quantitative, data-centric view of social interaction.  
   
 ### ✨ Creatively Related (Complexity, Behavior, Systems Thinking)  
   
-* **[Complexity](/content/books/complexity.md): A Guided Tour** by Melanie Mitchell: An accessible introduction to complexity science, the broader field encompassing emergent behavior, self-organization, and network dynamics that underpin concepts in *Social Physics*. 🌀  
-* **[Nudge](/content/books/nudge.md): Improving Decisions About Health, Wealth, and Happiness** by Richard H. Thaler and Cass R. Sunstein: Explores how behavioral economics insights can be used to design "choice architectures" that steer people toward better decisions without restricting freedom. ➡️ Relates to Pentland's goal of designing better social systems, but rooted more in behavioral psychology.  
+* **[Complexity](./complexity.md): A Guided Tour** by Melanie Mitchell: An accessible introduction to complexity science, the broader field encompassing emergent behavior, self-organization, and network dynamics that underpin concepts in *Social Physics*. 🌀  
+* **[Nudge](./nudge.md): Improving Decisions About Health, Wealth, and Happiness** by Richard H. Thaler and Cass R. Sunstein: Explores how behavioral economics insights can be used to design "choice architectures" that steer people toward better decisions without restricting freedom. ➡️ Relates to Pentland's goal of designing better social systems, but rooted more in behavioral psychology.  
 * **The Wisdom of Crowds** by James Surowiecki: Investigates why large groups of people are often smarter than an elite few, exploring conditions for collective intelligence. 🧠 Complements Pentland's work on group performance but focuses less on interaction patterns and more on aggregation of diverse, independent judgments.  
-* **[Antifragile: Things That Gain from Disorder](/content/books/antifragile-things-that-gain-from-disorder.md)** by Nassim Nicholas Taleb: Explores systems that benefit from stress, volatility, and uncertainty. 💪 Offers a different lens on resilience and adaptation in social and economic systems than the optimization focus sometimes found in *Social Physics*.  
-* **[Sapiens: A Brief History of Humankind](/content/books/sapiens-a-brief-history-of-humankind.md)** by Yuval Noah Harari: Provides a grand historical context for large-scale human cooperation, the role of shared fictions (ideas), and communication in shaping societies, offering a macro-level backdrop to the micro-dynamics Pentland studies. 🌍  
+* **[Antifragile: Things That Gain from Disorder](./antifragile-things-that-gain-from-disorder.md)** by Nassim Nicholas Taleb: Explores systems that benefit from stress, volatility, and uncertainty. 💪 Offers a different lens on resilience and adaptation in social and economic systems than the optimization focus sometimes found in *Social Physics*.  
+* **[Sapiens: A Brief History of Humankind](./sapiens-a-brief-history-of-humankind.md)** by Yuval Noah Harari: Provides a grand historical context for large-scale human cooperation, the role of shared fictions (ideas), and communication in shaping societies, offering a macro-level backdrop to the micro-dynamics Pentland studies. 🌍  
   
-## 💬 [Gemini](/content/software/gemini.md) Prompt (gemini-2.5-pro-exp-03-25)  
+## 💬 [Gemini](../software/gemini.md) Prompt (gemini-2.5-pro-exp-03-25)  
 > Write a markdown-formatted (start headings at level H2) book report, followed by a plethora of additional similar, contrasting, and creatively related book recommendations on Social Physics. Be thorough in content discussed but concise and economical with your language. Structure the report with section headings and bulleted lists to avoid long blocks of text.

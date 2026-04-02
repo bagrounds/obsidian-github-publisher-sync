@@ -9,7 +9,7 @@ URL: https://bagrounds.org/books/planning-for-everything
 affiliate link: https://amzn.to/3HsfA5T
 CTA: 🧭 Chart your course.
 ---
-[Home](/content/index.md) > [Books](/content/books/index.md)  
+[Home](../index.md) > [Books](./index.md)  
 # 🗺️🎯🪜🏗️ Planning for Everything: The Design of Paths and Goals  
 [🛒 Planning for Everything: The Design of Paths and Goals. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3HsfA5T)  
   
@@ -66,22 +66,22 @@ CTA: 🧭 Chart your course.
   
 ### Additional Book Recommendations 📖  
 - **Alternate on the Same Topic:**  
-  - [✅😌 Getting Things Done: The Art of Stress-Free Productivity](/content/books/getting-things-done-the-art-of-stress-free-productivity.md) by David Allen offers a structured, practical system for managing workflow and tasks—a complementary approach to planning with a focus on productivity. ✅  
+  - [✅😌 Getting Things Done: The Art of Stress-Free Productivity](./getting-things-done-the-art-of-stress-free-productivity.md) by David Allen offers a structured, practical system for managing workflow and tasks—a complementary approach to planning with a focus on productivity. ✅  
   
 - **Tangentially Related:**  
   - [The Art of Possibility](https://en.wikipedia.org/wiki/The_Art_of_Possibility) by Rosamund Stone Zander and Benjamin Zander, which inspires creative thinking and reimagining possibilities, aligning well with the book’s emphasis on flexible planning. 🎨  
   
 - **Diametrically Opposed:**  
-  - [📉📈🌪️💪 Antifragile: Things That Gain from Disorder](/content/books/antifragile-things-that-gain-from-disorder.md) by Nassim Nicholas Taleb challenges the very idea of over-planning by advocating for systems that benefit from disorder and uncertainty, offering a counterpoint to traditional planning methods. ⚡  
+  - [📉📈🌪️💪 Antifragile: Things That Gain from Disorder](./antifragile-things-that-gain-from-disorder.md) by Nassim Nicholas Taleb challenges the very idea of over-planning by advocating for systems that benefit from disorder and uncertainty, offering a counterpoint to traditional planning methods. ⚡  
   
 - **Fiction Incorporating Related Ideas:**  
-  - [🏜️🐛 Dune](/content/books/dune.md) by Frank Herbert is a science fiction epic that weaves intricate themes of strategy, foresight, and adaptive planning into its narrative, resonating with the core ideas of designing futures. 🌌  
+  - [🏜️🐛 Dune](./dune.md) by Frank Herbert is a science fiction epic that weaves intricate themes of strategy, foresight, and adaptive planning into its narrative, resonating with the core ideas of designing futures. 🌌  
   
 - **More General or More Specific:**  
-  - [🤔🐇🐢 Thinking, Fast and Slow](/content/books/thinking-fast-and-slow.md) by Daniel Kahneman provides a broader exploration of human decision-making processes that underpin planning, offering context to why we plan the way we do. 🧠  
+  - [🤔🐇🐢 Thinking, Fast and Slow](./thinking-fast-and-slow.md) by Daniel Kahneman provides a broader exploration of human decision-making processes that underpin planning, offering context to why we plan the way we do. 🧠  
   
 - **More Rigorous or More Accessible:**  
-  - [♟️🧠📈🎯 The Art of Strategy: A Game Theorist's Guide to Success in Business and Life](/content/books/the-art-of-strategy-a-game-theorists-guide-to-success-in-business-and-life.md) by Avinash K. Dixit and Barry J. Nalebuff delves into strategic decision-making with academic rigor, ideal for readers seeking a more systematic, analytical approach to planning. 📐  
+  - [♟️🧠📈🎯 The Art of Strategy: A Game Theorist's Guide to Success in Business and Life](./the-art-of-strategy-a-game-theorists-guide-to-success-in-business-and-life.md) by Avinash K. Dixit and Barry J. Nalebuff delves into strategic decision-making with academic rigor, ideal for readers seeking a more systematic, analytical approach to planning. 📐  
   
 Each section of 🗺️ **Planning for Everything** is enriched with 🖼️ illustrative examples, 🤔 reflective questions, and ✅ actionable advice—all of which make it a 🚀 compelling guide for anyone looking to 🧠 master the art of 🗓️ planning in an 🌪️ unpredictable world. 🎉 Happy planning! 😊  
   
@@ -103,7 +103,7 @@ Systems & Contexts
     4. formulating a plan  
     5. executing and monitoring the plan  
     6. and learning from the plan  
-  2. [Tower of Hanoi](/tower-of-hanoi.md)  
+  2. [Tower of Hanoi](../../tower-of-hanoi.md)  
     1. Used to measure planning ability  
   3. STAR FINDER  
     1. Principles  
@@ -149,4 +149,4 @@ Flipping a coin may help
 Habits bind  
   
 ## Referenced books  
-- [🎨😨 The Art of Fear: Why Conquering Fear Won't Work and What to Do Instead](/content/books/the-art-of-fear.md)  
+- [🎨😨 The Art of Fear: Why Conquering Fear Won't Work and What to Do Instead](./the-art-of-fear.md)  

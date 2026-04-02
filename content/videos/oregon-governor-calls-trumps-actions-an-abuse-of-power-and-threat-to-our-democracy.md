@@ -10,7 +10,7 @@ Channel: PBS NewsHour
 tags:
 youtube: https://youtu.be/PxDxhsDkxao
 ---
-[Home](/content/index.md) > [Videos](/content/videos/index.md)  
+[Home](../index.md) > [Videos](./index.md)  
 # 👩‍⚖️🛑🇺🇸🏛️ Oregon governor calls Trump's actions 'an abuse of power and threat to our democracy'  
 ![Oregon governor calls Trump's actions 'an abuse of power and threat to our democracy'](https://youtu.be/PxDxhsDkxao)  
   
@@ -43,7 +43,7 @@ youtube: https://youtu.be/PxDxhsDkxao
   
 ### 📚 Similar Themes  
   
-* **[🏛️⚖️ The Rule of Law](/content/books/the-rule-of-law.md)** by Tom Bingham: 🗣️ Explores the constitutional principles that limit executive power and ensure everyone, including the government, is bound by law, directly relevant to the Governor's argument.  
+* **[🏛️⚖️ The Rule of Law](../books/the-rule-of-law.md)** by Tom Bingham: 🗣️ Explores the constitutional principles that limit executive power and ensure everyone, including the government, is bound by law, directly relevant to the Governor's argument.  
 * 👨‍⚖️ **The Price of Loyalty: George W. Bush, the White House, and the Education of Paul O'Neill** by Ron Suskind: 🧭 Provides an inside look at conflicts within an administration regarding policy and integrity, paralleling the internal governmental pushback discussed.  
   
 ### 📚 Contrasting Perspectives  

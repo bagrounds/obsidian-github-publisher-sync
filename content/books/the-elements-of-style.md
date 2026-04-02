@@ -13,7 +13,7 @@ force_analyze_links: false
 link_analysis_time: 2026-03-26T03:05:28.318Z
 link_analysis_model: gemini-3.1-flash-lite-preview
 ---
-[Home](/content/index.md) > [Books](/content/books/index.md)  
+[Home](../index.md) > [Books](./index.md)  
 # 🦢 The Elements of Style  
 [🛒 The Elements of Style. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4dNkTcj)  
   
@@ -61,7 +61,7 @@ link_analysis_model: gemini-3.1-flash-lite-preview
   
 ### 📖 Similar Guides (Focus on Clarity, Mechanics, Plain English)  
   
-* **[✍🏼👍🏼 On Writing Well: The Classic Guide to Writing Nonfiction](/content/books/on-writing-well.md)** by William Zinsser: 🥇 A highly regarded classic focusing on non-fiction, emphasizing clarity, simplicity, and humanity. 🤝 Often recommended alongside *Elements*.  
+* **[✍🏼👍🏼 On Writing Well: The Classic Guide to Writing Nonfiction](./on-writing-well.md)** by William Zinsser: 🥇 A highly regarded classic focusing on non-fiction, emphasizing clarity, simplicity, and humanity. 🤝 Often recommended alongside *Elements*.  
 * 💡 **The Oxford Guide to Plain English** by Martin Cutts: 🔍 Focuses intensely on clear and effective writing, using evidence-based examples of rewriting complex sentences into plain English.  
 * 🤣 **Dreyer's English** by Benjamin Dreyer: 🆕 A modern, witty, and opinionated guide from a professional copy chief, covering common errors and style choices.  
 * 📜 **Garner's Modern English Usage** by Bryan A. Garner: 📚 A comprehensive and authoritative reference on usage, more descriptive and detailed than *Elements*.  
@@ -72,8 +72,8 @@ link_analysis_model: gemini-3.1-flash-lite-preview
   
 * 🗣️ **Style: Lessons in Clarity and Grace** by Joseph M. Williams & Joseph Bizup: 🤔 Explores *why* certain sentence structures work, focusing on rhetorical effects and reader perception. ⚖️ Considered more comprehensive and less prescriptive than *Elements*.  
 * 🧠 **The Sense of Style** by Steven Pinker: 🔬 A modern perspective grounded in linguistics and cognitive science, arguing that good style enhances comprehension. 🌊 Recognizes language fluidity and sometimes challenges traditional rules.  
-* **[📜 On Writing: A Memoir of the Craft](/content/books/on-writing.md)** by Stephen King: 🎭 Part memoir, part practical advice, focusing heavily on storytelling, voice, and the writer's discipline, rather than strict grammatical rules.  
-* **[🐦🕊️ Bird by Bird: Some Instructions on Writing and Life](/content/books/bird-by-bird.md)** by Anne Lamott: 🌱 Emphasizes the writing process, overcoming writer's block, finding authenticity, and embracing imperfection.  
+* **[📜 On Writing: A Memoir of the Craft](./on-writing.md)** by Stephen King: 🎭 Part memoir, part practical advice, focusing heavily on storytelling, voice, and the writer's discipline, rather than strict grammatical rules.  
+* **[🐦🕊️ Bird by Bird: Some Instructions on Writing and Life](./bird-by-bird.md)** by Anne Lamott: 🌱 Emphasizes the writing process, overcoming writer's block, finding authenticity, and embracing imperfection.  
 * 🧰 **Writing Tools: 55 Essential Strategies for Every Writer** by Roy Peter Clark: 🛠️ Presents a collection of practical techniques and "tools" rather than overarching rules.  
 * 💥 **Spunk & Bite: A Writer's Guide to Punchier, More Engaging Language & Style** by Arthur Plotnik: ⚡ Focuses on making language more lively and engaging.  
   
@@ -81,12 +81,12 @@ link_analysis_model: gemini-3.1-flash-lite-preview
   
 * 🐼 **Eats, Shoots & Leaves: The Zero Tolerance Approach to Punctuation** by Lynne Truss: 😂 A humorous yet informative look at the importance and common misuses of punctuation.  
 * 👑 **The Elements of Eloquence: How to Turn the Perfect English Phrase** by Mark Forsyth: 🗣️ Explores rhetorical figures and devices that make language memorable and beautiful.  
-* **[✍️🦴 Writing Down the Bones](/content/books/writing-down-the-bones.md): Freeing the Writer Within** by Natalie Goldberg: ✍️ Focuses on writing practice, mindfulness, and tapping into creative flow.  
+* **[✍️🦴 Writing Down the Bones](./writing-down-the-bones.md): Freeing the Writer Within** by Natalie Goldberg: ✍️ Focuses on writing practice, mindfulness, and tapping into creative flow.  
 * 🎭 **Metaphors We Live By** by George Lakoff & Mark Johnson: 💡 Explores how metaphors fundamentally shape thought and language, impacting communication style.  
 * ✍️ **Several Short Sentences About Writing** by Verlyn Klinkenborg: 💭 An unconventional meditation on the power and craft of the sentence itself.  
 * 📚 **Stylized: A Slightly Obsessive History of Strunk & White's The Elements of Style** by Mark Garvey: 📜 Explores the history, creation, and cultural impact of *The Elements of Style* itself.  
   
-## 💬 [Gemini](/content/software/gemini.md) Prompt (gemini-2.5-pro-exp-03-25)  
+## 💬 [Gemini](../software/gemini.md) Prompt (gemini-2.5-pro-exp-03-25)  
 > Write a markdown-formatted (start headings at level H2) book report, followed by a plethora of additional similar, contrasting, and creatively related book recommendations on The Elements of Style. Be thorough in content discussed but concise and economical with your language. Structure the report with section headings and bulleted lists to avoid long blocks of text.  
   
 ## 🦋 Bluesky    

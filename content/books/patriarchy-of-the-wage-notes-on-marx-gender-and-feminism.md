@@ -7,7 +7,7 @@ share: true
 CTA: 💸 Dismantle the wage patriarchy.
 affiliate link: https://amzn.to/4qddQ1t
 ---
-[Home](/content/index.md) > [Books](/content/books/index.md)  
+[Home](../index.md) > [Books](./index.md)  
 # ♂️💰♀️🚩 Patriarchy of the Wage: Notes on Marx, Gender, and Feminism  
 [🛒 Patriarchy of the Wage: Notes on Marx, Gender, and Feminism. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4qddQ1t)  
   
@@ -81,8 +81,8 @@ affiliate link: https://amzn.to/4qddQ1t
   
 ### 🔗 Related  
 * 📚 The Invisible Life of Addie LaRue by V.E. Schwab  
-* [🏛️💰 Debt: The First 5,000 Years](/content/books/debt-the-first-5000-years.md) Years by David Graeber  
-* [🪢🌾 Braiding Sweetgrass: Indigenous Wisdom, Scientific Knowledge, and the Teachings of Plants](/content/books/braiding-sweetgrass.md) by Robin Wall Kimmerer  
+* [🏛️💰 Debt: The First 5,000 Years](./debt-the-first-5000-years.md) Years by David Graeber  
+* [🪢🌾 Braiding Sweetgrass: Indigenous Wisdom, Scientific Knowledge, and the Teachings of Plants](./braiding-sweetgrass.md) by Robin Wall Kimmerer  
   
 ## 🫵 What Do You Think?  
   

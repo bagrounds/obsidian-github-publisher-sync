@@ -9,7 +9,7 @@ CTA: 🤖 Engineer autonomy.
 tags:
   - AIEngineering
 ---
-[Home](/content/index.md) > [Books](/content/books/index.md)  
+[Home](../index.md) > [Books](./index.md)  
 # 🤖🧠⚙️💡 Building Agentic AI Systems: Create intelligent, autonomous AI agents that can reason, plan, and adapt  
 [🛒 Building Agentic AI Systems: Create intelligent, autonomous AI agents that can reason, plan, and adapt. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3UdszvC)  
   
@@ -45,23 +45,23 @@ tags:
   
 ### 👯 Similar Books  
   
-* **[🤖🏗️ AI Engineering: Building Applications with Foundation Models](/content/books/ai-engineering-building-applications-with-foundation-models.md)** by Chip Huyen: 🏗️ This book offers a broad overview of AI engineering, covering the use of foundation models to build real-world applications.  
-* **[✨🤖🔗🐍 Generative AI with LangChain: A Hands On Guide to Crafting Scalable, Intelligent Systems and Advanced AI Agents with Python](/content/books/generative-ai-with-langchain-a-hands-on-guide-to-crafting-scalable-intelligent-systems-and-advanced-ai-agents-with-python.md)** by Ben Auffarth and Leonid Kuligin: 🐍 This book dives into a popular framework for developing applications powered by large language models.  
+* **[🤖🏗️ AI Engineering: Building Applications with Foundation Models](./ai-engineering-building-applications-with-foundation-models.md)** by Chip Huyen: 🏗️ This book offers a broad overview of AI engineering, covering the use of foundation models to build real-world applications.  
+* **[✨🤖🔗🐍 Generative AI with LangChain: A Hands On Guide to Crafting Scalable, Intelligent Systems and Advanced AI Agents with Python](./generative-ai-with-langchain-a-hands-on-guide-to-crafting-scalable-intelligent-systems-and-advanced-ai-agents-with-python.md)** by Ben Auffarth and Leonid Kuligin: 🐍 This book dives into a popular framework for developing applications powered by large language models.  
 * 📖 **The AI Engineering Bible** by various authors: 📖 This guide provides a comprehensive look at building, developing, and scaling production-ready AI systems.  
 * 🤖 **Hands-on AI Agent Development** by Corby Allen: 🧪 A practical guide to designing and building high-performance, intelligent agents for real-world applications.  
   
 ### 🎭 Contrasting Books  
   
 * 🤖 **The Age of AI: And Our Human Future** by Henry A. Kissinger, Eric Schmidt, and Daniel Huttenlocher: 🌍 This book explores the societal and philosophical implications of artificial intelligence.  
-* **[🤖⚠️📈 Superintelligence: Paths, Dangers, Strategies](/content/books/superintelligence-paths-dangers-strategies.md)** by Nick Bostrom: ⚠️ A philosophical examination of the potential risks and existential threats posed by advanced artificial intelligence.  
+* **[🤖⚠️📈 Superintelligence: Paths, Dangers, Strategies](./superintelligence-paths-dangers-strategies.md)** by Nick Bostrom: ⚠️ A philosophical examination of the potential risks and existential threats posed by advanced artificial intelligence.  
 * 🤝 **The Alignment Problem: Machine Learning and Human Values** by Brian Christian: ✅ This book delves into the challenge of ensuring that AI systems act in accordance with human values.  
   
 ### 🎨 Creatively Related Books  
   
   
-* **[♾️📐🎶🥨 Gödel, Escher, Bach: An Eternal Golden Braid](/content/books/godel-escher-bach.md)** by Douglas Hofstadter: 🏆 A Pulitzer Prize-winning book that explores the connections between mathematics, art, and music, and what they reveal about the nature of intelligence.  
+* **[♾️📐🎶🥨 Gödel, Escher, Bach: An Eternal Golden Braid](./godel-escher-bach.md)** by Douglas Hofstadter: 🏆 A Pulitzer Prize-winning book that explores the connections between mathematics, art, and music, and what they reveal about the nature of intelligence.  
 * 🤖 Klara and the Sun by Kazuo Ishiguro: 💖 A novel told from the perspective of an "Artificial Friend," exploring themes of love, humanity, and consciousness.  
 * 🐑 **Do Androids Dream of Electric Sheep?** by Philip K. Dick: ❓ The science fiction novel that inspired the movie *Blade Runner*, it questions what it truly means to be human in a world with sophisticated androids.  
   
-## 💬 [Gemini](/content/software/gemini.md) Prompt (gemini-2.5-pro)  
+## 💬 [Gemini](../software/gemini.md) Prompt (gemini-2.5-pro)  
 > Write a markdown-formatted (start headings at level H2) book report, followed by a plethora of additional similar, contrasting, and creatively related book recommendations on Building Agentic AI Systems: Create intelligent, autonomous AI agents that can reason, plan, and adapt. Never put book titles in quotes or italics. Be thorough in content discussed but concise and economical with your language. Structure the report with section headings and bulleted lists to avoid long blocks of text.

@@ -10,7 +10,7 @@ Channel: WIRED
 tags:
 youtube: https://youtu.be/2uURMKLAPZw
 ---
-[Home](/content/index.md) > [Videos](/content/videos/index.md)  
+[Home](../index.md) > [Videos](./index.md)  
 # 💉👩‍⚕️💻 Doctor Answers Vaccine Questions | Tech Support | WIRED  
 ![Doctor Answers Vaccine Questions | Tech Support | WIRED](https://youtu.be/2uURMKLAPZw)  
   
@@ -69,7 +69,7 @@ Dr. Paul Offit, a 👨‍⚕️ pediatrician and professor, addressed key public
   
 ### ↔️ Similar  
   
-* **[💀🚫🦠 Deadly Choices: How the Anti-Vaccine Movement Threatens Us All](/content/books/deadly-choices-how-the-anti-vaccine-movement-threatens-us-all.md)** by Paul Offit delves deeper into the anti-vaccine movement and provides a robust defense of vaccines, mirroring Dr. Offit's arguments in the video.  
+* **[💀🚫🦠 Deadly Choices: How the Anti-Vaccine Movement Threatens Us All](../books/deadly-choices-how-the-anti-vaccine-movement-threatens-us-all.md)** by Paul Offit delves deeper into the anti-vaccine movement and provides a robust defense of vaccines, mirroring Dr. Offit's arguments in the video.  
 * 🔍 **The Vaccine Book: Making the Right Decision for Your Child** by Robert Sears offers a detailed, science-based review of each recommended vaccine on the childhood schedule, providing parents with a reference tool for making informed choices.  
 * 🦠 **A Shot in the Dark: The Untold History of the Vaccination Scare and the Challenge of Human Trust** by Seth Mnookin explores the historical and cultural context of vaccine scares, particularly focusing on the role of misinformation and the difficulty of restoring public trust in medicine.  
 * 💉 **Vaccines and Your Family: Separating Fact from Fiction** by Paul Offit and Charlotte A. Moser offers a comprehensive, factual guide to vaccines, directly addressing common parent concerns and misinformation.  

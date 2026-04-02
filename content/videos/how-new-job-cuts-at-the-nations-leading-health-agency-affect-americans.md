@@ -9,7 +9,7 @@ Platform:
 Channel: PBS NewsHour
 tags:
 ---
-[Home](/content/index.md) > [Videos](/content/videos/index.md)  
+[Home](../index.md) > [Videos](./index.md)  
 # How new job cuts at the nation’s leading health agency affect Americans  
 ![How new job cuts at the nation’s leading health agency affect Americans](https://youtu.be/jTpkXW1d53M)  
   

@@ -7,7 +7,7 @@ share: true
 CTA: Confront division.
 affiliate link: https://amzn.to/4nNmpje
 ---
-[Home](/content/index.md) > [Books](/content/books/index.md)  
+[Home](../index.md) > [Books](./index.md)  
 # 🏘️↔️ The Big Sort: Why the Clustering of Like-Minded America Is Tearing Us Apart  
 [🛒 The Big Sort: Why the Clustering of Like-Minded America Is Tearing Us Apart. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4nNmpje)  
   
@@ -35,9 +35,9 @@ The book presents data 📊 and analysis to support its claims of increasing hom
   
 ### 🤝 Similar Books (Exploring Political Polarization and Social Divides)  
   
-* **[🎳🏘️📉📈 Bowling Alone: The Collapse and Revival of American Community](/content/books/bowling-alone.md) by Robert D. Putnam:** Explores the decline of civic engagement and social capital in America, offering a broader context for the weakening of community ties that *The Big Sort* also addresses.  
-* **[↔️ Why We're Polarized](/content/books/why-were-polarized.md) by Ezra Klein:** Delves into the psychological and political forces that have deepened partisan divides in America, offering a complementary perspective on the mechanisms of polarization.  
-* **[😇🧠 The Righteous Mind: Why Good People Are Divided by Politics and Religion](/content/books/the-righteous-mind.md) by Jonathan Haidt:** Examines the moral and psychological foundations that underlie political and religious differences, helping to explain why people hold such divergent views.  
+* **[🎳🏘️📉📈 Bowling Alone: The Collapse and Revival of American Community](./bowling-alone.md) by Robert D. Putnam:** Explores the decline of civic engagement and social capital in America, offering a broader context for the weakening of community ties that *The Big Sort* also addresses.  
+* **[↔️ Why We're Polarized](./why-were-polarized.md) by Ezra Klein:** Delves into the psychological and political forces that have deepened partisan divides in America, offering a complementary perspective on the mechanisms of polarization.  
+* **[😇🧠 The Righteous Mind: Why Good People Are Divided by Politics and Religion](./the-righteous-mind.md) by Jonathan Haidt:** Examines the moral and psychological foundations that underlie political and religious differences, helping to explain why people hold such divergent views.  
 * 👨‍👩‍👧‍👦 **Political Tribes: Group Instinct and the Fate of Nations by Amy Chua:** Argues that loyalty to identity groups often trumps ideological alignment in shaping political landscapes, providing another lens through which to view the forces of social sorting.  
 * 🏙️ **The Density Divide: Urbanization, Polarization, and Populist Backlash by Will Wilkinson:** Focuses on the increasing political and cultural divergence between denser urban areas and less dense rural areas, offering a more geographically specific analysis related to Bishop's work.  
   
@@ -47,15 +47,15 @@ The book presents data 📊 and analysis to support its claims of increasing hom
 * ⚖️ **Sustaining Democracy: What We Owe to the Other Side by Robert Talisse:** Examines the obligations citizens have to one another in a democracy, particularly in the face of deep disagreements, and discusses how extreme polarization can undermine democratic norms.  
 * 🕊️ **The Anatomy of Peace: Resolving the Heart of Conflict by The Arbinger Institute:** While not strictly political, this book uses a narrative approach to explore the roots of conflict and how individual perspectives and attitudes can perpetuate division, offering insights applicable to political polarization.  
 * 🤷 **Neither Liberal nor Conservative: Ideological Innocence in the American Public by Nathan P. Kalmoe and Lilliana Mason:** Challenges the notion that most Americans hold strong, coherent political ideologies, suggesting that group attachments and antagonisms may play a larger role in shaping political preferences than ideology itself.  
-* **[🤝📈🇺🇸🔁 The Upswing: How America Came Together a Century Ago and How We Can Do It Again](/content/books/the-upswing.md) by Robert D. Putnam:** Offers a historical perspective on periods of both division and unity in American history, suggesting that societal integration and cooperation are possible and have occurred before.  
+* **[🤝📈🇺🇸🔁 The Upswing: How America Came Together a Century Ago and How We Can Do It Again](./the-upswing.md) by Robert D. Putnam:** Offers a historical perspective on periods of both division and unity in American history, suggesting that societal integration and cooperation are possible and have occurred before.  
   
 ### 🎨 Creatively Related Books (Exploring Identity, Community, and Belonging)  
   
 * 🎭 **There There by Tommy Orange:** A novel that explores the intersecting lives of urban Native Americans, highlighting themes of identity, community, and the search for belonging in a complex modern world.  
 * 🗺️ **American Nations: A History of the Eleven Rival Regional Cultures of North America by Colin Woodard:** Presents a historical and cultural geography of North America, arguing for the existence of distinct regional cultures that have shaped American history and politics, offering a deeper historical context for regional differences that can contribute to sorting.  
 * 🏞️ **Hillbilly Elegy: A Memoir of a Family and Culture in Crisis by J.D. Vance:** Provides a personal account of the social and economic struggles in a white working-class community, offering a ground-level perspective on the cultural and economic anxieties that can contribute to political and geographic sorting.  
-* **[🏚️💰 Evicted: Poverty and Profit in the American City](/content/books/evicted-poverty-and-profit-in-the-american-city.md) by Matthew Desmond:** Examines the lives of people facing eviction in Milwaukee, illustrating the profound impact of economic instability and housing issues on individuals and communities, which can intersect with and exacerbate the effects of the "big sort."  
+* **[🏚️💰 Evicted: Poverty and Profit in the American City](./evicted-poverty-and-profit-in-the-american-city.md) by Matthew Desmond:** Examines the lives of people facing eviction in Milwaukee, illustrating the profound impact of economic instability and housing issues on individuals and communities, which can intersect with and exacerbate the effects of the "big sort."  
 * ✍️ **NDN Coping Mechanisms by Billy-Ray Belcourt:** A collection of poetry and prose that explores Indigenous and queer identities and communities, offering a creative and personal perspective on belonging and marginalization outside of mainstream narratives.  
   
-## 💬 [Gemini](/content/software/gemini.md) Prompt (gemini-2.5-flash-preview-04-17)  
+## 💬 [Gemini](../software/gemini.md) Prompt (gemini-2.5-flash-preview-04-17)  
 > Write a markdown-formatted (start headings at level H2) book report, followed by a plethora of additional similar, contrasting, and creatively related book recommendations on The Big Sort: Why the Clustering of Like-Minded America Is Tearing Us Apart. Be thorough in content discussed but concise and economical with your language. Structure the report with section headings and bulleted lists to avoid long blocks of text.

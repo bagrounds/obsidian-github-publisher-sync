@@ -10,7 +10,7 @@ Channel: LastWeekTonight
 tags:
 youtube: https://youtu.be/DfTBhrkae74
 ---
-[Home](/content/index.md) > [Videos](/content/videos/index.md)  
+[Home](../index.md) > [Videos](./index.md)  
 # 🛂🛑🇺🇸🎤 Immigration Enforcement: Last Week Tonight with John Oliver (HBO)  
 ![Immigration Enforcement: Last Week Tonight with John Oliver (HBO)](https://youtu.be/DfTBhrkae74)  
   
@@ -31,9 +31,9 @@ youtube: https://youtu.be/DfTBhrkae74
   
 ## 📚 Book Recommendations  
 - The Making of a Police State by Alex Vitale: a critical look at how policing and enforcement have expanded beyond their traditional roles.  
-- [🧑🏿⛓️🙈 The New Jim Crow: Mass Incarceration in the Age of Colorblindness](/content/books/the-new-jim-crow-mass-incarceration-in-the-age-of-colorblindness.md) by Michelle Alexander: an examination of how the US justice system and enforcement policies disproportionately affect certain populations.  
-- [🇺🇸🧠 American Amnesia: How the War on Government Led Us to Forget What Made America Prosper](/content/books/american-amnesia-how-the-war-on-government-led-us-to-forget-what-made-america-prosper.md) by Jacob S. Hacker and Paul Pierson: a book that discusses the breakdown of American political institutions and how it has led to policy failures.  
-- [😠🎭 Uncivil Agreement: How Politics Became Our Identity](/content/books/uncivil-agreement-how-politics-became-our-identity.md) by Lilliana Mason: explores how political polarization in the US is driven by social and cultural identities.  
+- [🧑🏿⛓️🙈 The New Jim Crow: Mass Incarceration in the Age of Colorblindness](../books/the-new-jim-crow-mass-incarceration-in-the-age-of-colorblindness.md) by Michelle Alexander: an examination of how the US justice system and enforcement policies disproportionately affect certain populations.  
+- [🇺🇸🧠 American Amnesia: How the War on Government Led Us to Forget What Made America Prosper](../books/american-amnesia-how-the-war-on-government-led-us-to-forget-what-made-america-prosper.md) by Jacob S. Hacker and Paul Pierson: a book that discusses the breakdown of American political institutions and how it has led to policy failures.  
+- [😠🎭 Uncivil Agreement: How Politics Became Our Identity](../books/uncivil-agreement-how-politics-became-our-identity.md) by Lilliana Mason: explores how political polarization in the US is driven by social and cultural identities.  
   
 ## 🐦 Tweet  
 <blockquote class="twitter-tweet" data-theme="dark"><p lang="en" dir="ltr">🛂🛑🇺🇸🎤 Immigration Enforcement: Last Week Tonight with John Oliver (HBO)<br><br>👮‍♂️ ICE Raids | 😠 White House Social Media | 🎯 Deportation Goals | ⚖️ Resource Redirection | 🇺🇸 Citizen Detentions | 🍦 Scant Criminal Convictions | 🏛️ Expedited Removal<a href="https://t.co/YldNeaVz9T">https://t.co/YldNeaVz9T</a></p>&mdash; Bryan Grounds (@bagrounds) <a href="https://twitter.com/bagrounds/status/1967346355636244831?ref_src=twsrc%5Etfw">September 14, 2025</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>

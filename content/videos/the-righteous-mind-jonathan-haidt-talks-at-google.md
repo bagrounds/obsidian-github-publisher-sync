@@ -10,7 +10,7 @@ Channel: Talks at Google
 tags:
 youtube: https://youtu.be/2APK3tlPL_0
 ---
-[Home](/content/index.md) > [Videos](/content/videos/index.md) | [😇🧠 The Righteous Mind: Why Good People Are Divided by Politics and Religion](/content/books/the-righteous-mind.md)  
+[Home](../index.md) > [Videos](./index.md) | [😇🧠 The Righteous Mind: Why Good People Are Divided by Politics and Religion](../books/the-righteous-mind.md)  
 # 😇🧠⚖️ The Righteous Mind | Jonathan Haidt | Talks at Google  
 ![The Righteous Mind | Jonathan Haidt | Talks at Google](https://youtu.be/2APK3tlPL_0)  
   
@@ -32,7 +32,7 @@ youtube: https://youtu.be/2APK3tlPL_0
   
 ## 📚 Book Recommendations  
   
-* **[😇🧠 The Righteous Mind: Why Good People Are Divided by Politics and Religion](/content/books/the-righteous-mind.md)** by Jonathan Haidt: This is the book on which the talk is based, providing a deeper exploration of moral psychology, political divisions, and the origins of human morality.  
-* **[📜🌍⏳ Sapiens: A Brief History of Humankind](/content/books/sapiens-a-brief-history-of-humankind.md)** by Yuval Noah Harari: This book offers a broad historical and evolutionary perspective on how large-scale human cooperation, a concept similar to "hivishness," enabled our species to dominate the planet.  
-* **[🔄🧠💪 The Power of Habit: Why We Do What We Do in Life and Business](/content/books/the-power-of-habit.md)** by Charles Duhigg: This book explains how habits are formed in individuals, companies, and societies, offering practical insights into how a company can intentionally create the kind of cultural routines and habits Dr. Haidt discusses.  
-* **[👉🤏 Nudge: Improving Decisions about Health, Wealth, and Happiness](/content/books/nudge.md)** by Richard H. Thaler and Cass R. Sunstein: This work explores how subtle changes in an environment can influence people's decisions, providing an alternative or complementary view on shaping group behavior without relying on a shared noble mission or self-sacrifice.
+* **[😇🧠 The Righteous Mind: Why Good People Are Divided by Politics and Religion](../books/the-righteous-mind.md)** by Jonathan Haidt: This is the book on which the talk is based, providing a deeper exploration of moral psychology, political divisions, and the origins of human morality.  
+* **[📜🌍⏳ Sapiens: A Brief History of Humankind](../books/sapiens-a-brief-history-of-humankind.md)** by Yuval Noah Harari: This book offers a broad historical and evolutionary perspective on how large-scale human cooperation, a concept similar to "hivishness," enabled our species to dominate the planet.  
+* **[🔄🧠💪 The Power of Habit: Why We Do What We Do in Life and Business](../books/the-power-of-habit.md)** by Charles Duhigg: This book explains how habits are formed in individuals, companies, and societies, offering practical insights into how a company can intentionally create the kind of cultural routines and habits Dr. Haidt discusses.  
+* **[👉🤏 Nudge: Improving Decisions about Health, Wealth, and Happiness](../books/nudge.md)** by Richard H. Thaler and Cass R. Sunstein: This work explores how subtle changes in an environment can influence people's decisions, providing an alternative or complementary view on shaping group behavior without relying on a shared noble mission or self-sacrifice.

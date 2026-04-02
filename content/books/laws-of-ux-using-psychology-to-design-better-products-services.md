@@ -7,7 +7,7 @@ share: true
 affiliate link: https://amzn.to/3HetfOr
 CTA: 🧠 Apply user insights.
 ---
-[Home](/content/index.md) > [Books](/content/books/index.md)  
+[Home](../index.md) > [Books](./index.md)  
 # 🧠📐 Laws of UX: Using Psychology to Design Better Products & Services  
 [🛒 Laws of UX: Using Psychology to Design Better Products & Services. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3HetfOr)  
   
@@ -40,8 +40,8 @@ CTA: 🧠 Apply user insights.
   
 ### 🧠 Similar Reads: Deepening Your UX Psychology Toolkit  
   
-* **[💺🚪💡🤔 The Design of Everyday Things](/content/books/the-design-of-everyday-things.md)** by Don Norman: 📚 A foundational text that explores the psychology of everyday objects and how to design them with the user in mind.  
-* **[🚫💭🌐 Don't Make Me Think, Revisited: A Common Sense Approach to Web Usability](/content/books/dont-make-me-think-revisited.md)** by Steve Krug: 💡 A practical and witty guide to web usability that emphasizes clarity and simplicity in design.  
+* **[💺🚪💡🤔 The Design of Everyday Things](./the-design-of-everyday-things.md)** by Don Norman: 📚 A foundational text that explores the psychology of everyday objects and how to design them with the user in mind.  
+* **[🚫💭🌐 Don't Make Me Think, Revisited: A Common Sense Approach to Web Usability](./dont-make-me-think-revisited.md)** by Steve Krug: 💡 A practical and witty guide to web usability that emphasizes clarity and simplicity in design.  
 * 💯 **100 Things Every Designer Needs to Know About People** by Susan Weinschenk: 👀 This book delves into the psychology of how people see, read, remember, think, focus, and are motivated, providing designers with actionable insights.  
 * 🧠 **Designing with the Mind in Mind** by Jeff Johnson: 💻 Explores cognitive and perceptual psychology and applies it to the design of interactive systems.  
 * 👩‍💻 **Psychology for Designers** by Joe Leech: 🧑‍🏫 A practical guide that teaches designers how to find and apply psychological principles to their work.  
@@ -55,12 +55,12 @@ CTA: 🧠 Apply user insights.
   
 ### 💡 Creatively Related: Exploring the Human Mind and Behavior  
   
-* **[🤔🐇🐢 Thinking, Fast and Slow](/content/books/thinking-fast-and-slow.md)** by Daniel Kahneman: 🚀 A groundbreaking exploration of the two systems that drive the way we think, offering profound insights into human judgment and decision-making.  
-* **[🎣📱 Hooked: How to Build Habit-Forming Products](/content/books/hooked-how-to-build-habit-forming-products.md)** by Nir Eyal: 🎣 Examines the psychology behind what makes some products so engaging and how to apply those principles to create products people love.  
-* **[👉🤏 Nudge: Improving Decisions about Health, Wealth, and Happiness](/content/books/nudge.md)** by Richard H. Thaler and Cass R. Sunstein: ➡️ This book introduces the concept of "choice architecture" and how subtle "nudges" can influence behavior in positive ways.  
-* **[🔮🤷🏼‍♀️🤪 Predictably Irrational: The Hidden Forces That Shape Our Decisions](/content/books/predictably-irrational.md)** by Dan Ariely: ❓ Uncovers the hidden forces that shape our decisions, revealing the consistent and often surprising patterns of human irrationality.  
-* **[🔄🧠💪 The Power of Habit: Why We Do What We Do in Life and Business](/content/books/the-power-of-habit.md)** by Charles Duhigg: 🔄 Explores the science of habit formation in our lives, companies, and societies.  
-* **[🌊🧘🏼‍♀️🧠📈 Flow: The Psychology of Optimal Experience](/content/books/flow-the-psychology-of-optimal-experience.md)** by Mihaly Csikszentmihalyi: 🧘 Investigates the state of "flow," a state of deep immersion and engagement, and how to design experiences that foster it.  
+* **[🤔🐇🐢 Thinking, Fast and Slow](./thinking-fast-and-slow.md)** by Daniel Kahneman: 🚀 A groundbreaking exploration of the two systems that drive the way we think, offering profound insights into human judgment and decision-making.  
+* **[🎣📱 Hooked: How to Build Habit-Forming Products](./hooked-how-to-build-habit-forming-products.md)** by Nir Eyal: 🎣 Examines the psychology behind what makes some products so engaging and how to apply those principles to create products people love.  
+* **[👉🤏 Nudge: Improving Decisions about Health, Wealth, and Happiness](./nudge.md)** by Richard H. Thaler and Cass R. Sunstein: ➡️ This book introduces the concept of "choice architecture" and how subtle "nudges" can influence behavior in positive ways.  
+* **[🔮🤷🏼‍♀️🤪 Predictably Irrational: The Hidden Forces That Shape Our Decisions](./predictably-irrational.md)** by Dan Ariely: ❓ Uncovers the hidden forces that shape our decisions, revealing the consistent and often surprising patterns of human irrationality.  
+* **[🔄🧠💪 The Power of Habit: Why We Do What We Do in Life and Business](./the-power-of-habit.md)** by Charles Duhigg: 🔄 Explores the science of habit formation in our lives, companies, and societies.  
+* **[🌊🧘🏼‍♀️🧠📈 Flow: The Psychology of Optimal Experience](./flow-the-psychology-of-optimal-experience.md)** by Mihaly Csikszentmihalyi: 🧘 Investigates the state of "flow," a state of deep immersion and engagement, and how to design experiences that foster it.  
   
-## 💬 [Gemini](/content/software/gemini.md) Prompt (gemini-2.5-pro)  
+## 💬 [Gemini](../software/gemini.md) Prompt (gemini-2.5-pro)  
 > Write a markdown-formatted (start headings at level H2) book report, followed by a plethora of additional similar, contrasting, and creatively related book recommendations on Laws of UX: Using Psychology to Design Better Products & Services. Never put book titles in quotes or italics. Be thorough in content discussed but concise and economical with your language. Structure the report with section headings and bulleted lists to avoid long blocks of text.

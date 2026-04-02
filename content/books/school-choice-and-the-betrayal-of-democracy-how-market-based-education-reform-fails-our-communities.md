@@ -7,7 +7,7 @@ share: true
 CTA: 📚 Defend public schools.
 affiliate link: https://amzn.to/46XpRkY
 ---
-[Home](/content/index.md) > [Books](/content/books/index.md)  
+[Home](../index.md) > [Books](./index.md)  
 # 🏫💔🏛️ School Choice and the Betrayal of Democracy: How Market-Based Education Reform Fails Our Communities  
 [🛒 School Choice and the Betrayal of Democracy: How Market-Based Education Reform Fails Our Communities. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/46XpRkY)  
   
@@ -66,8 +66,8 @@ affiliate link: https://amzn.to/46XpRkY
   
 ### 📖 Similar  
 * 📖 Democracy, Deliberation, and Education by Robert Asen  
-* [💀🇺🇸🏫 The Death and Life of the Great American School System: How Testing and Choice Are Undermining Education](/content/books/the-death-and-life-of-the-great-american-school-system-how-testing-and-choice-are-undermining-education.md) by Diane Ravitch  
-* [👑🏫🤥 Reign of Error: The Hoax of the Privatization Movement and the Danger to America's Public Schools](/content/books/reign-of-error-the-hoax-of-the-privatization-movement-and-the-danger-to-americas-public-schools.md) by Diane Ravitch  
+* [💀🇺🇸🏫 The Death and Life of the Great American School System: How Testing and Choice Are Undermining Education](./the-death-and-life-of-the-great-american-school-system-how-testing-and-choice-are-undermining-education.md) by Diane Ravitch  
+* [👑🏫🤥 Reign of Error: The Hoax of the Privatization Movement and the Danger to America's Public Schools](./reign-of-error-the-hoax-of-the-privatization-movement-and-the-danger-to-americas-public-schools.md) by Diane Ravitch  
   
 ### 📖 Contrasting  
 * 📖 The School Choice Journey: Education Reform and Its Impact in the United States by John Merrifield  
@@ -76,7 +76,7 @@ affiliate link: https://amzn.to/46XpRkY
   
 ### 📖 Related  
 * 📖 The Public and Its Problems by John Dewey  
-* [🎳🏘️📉📈 Bowling Alone: The Collapse and Revival of American Community](/content/books/bowling-alone.md) by Robert D. Putnam  
+* [🎳🏘️📉📈 Bowling Alone: The Collapse and Revival of American Community](./bowling-alone.md) by Robert D. Putnam  
 * 📖 The Revolt of the Elites and the Betrayal of Democracy by Christopher Lasch  
   
 ## 🫵 What Do You Think?  

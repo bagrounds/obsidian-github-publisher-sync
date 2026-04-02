@@ -9,7 +9,7 @@ Platform:
 Channel: 60 Minutes Australia
 tags:
 ---
-[Home](/content/index.md) > [Videos](/content/videos/index.md)  
+[Home](../index.md) > [Videos](./index.md)  
 # The far-right Proud Boys’ chilling message for the world | 60 Minutes Australia  
 ![The far-right Proud Boys’ chilling message for the world | 60 Minutes Australia](https://youtu.be/x002yRpmeT0)  
   

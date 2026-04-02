@@ -7,7 +7,7 @@ share: true
 CTA: 🌍 Build equity.
 affiliate link: https://amzn.to/4nr8heh
 ---
-[Home](/content/index.md) > [Books](/content/books/index.md)  
+[Home](../index.md) > [Books](./index.md)  
 # ✊🏿 How to Be An Antiracist  
 [🛒 How to Be An Antiracist. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4nr8heh)  
   
@@ -92,7 +92,7 @@ affiliate link: https://amzn.to/4nr8heh
 * 📖 Stamped from the Beginning by Ibram X. Kendi  
 * 📖 White Fragility by Robin DiAngelo  
 * 📖 So You Want to Talk About Race by Ijeoma Oluo  
-* [🧑🏿⛓️🙈 The New Jim Crow: Mass Incarceration in the Age of Colorblindness](/content/books/the-new-jim-crow-mass-incarceration-in-the-age-of-colorblindness.md) by Michelle Alexander  
+* [🧑🏿⛓️🙈 The New Jim Crow: Mass Incarceration in the Age of Colorblindness](./the-new-jim-crow-mass-incarceration-in-the-age-of-colorblindness.md) by Michelle Alexander  
 * 📖 Caste by Isabel Wilkerson  
 * 📖 Between the World and Me by Ta-Nehisi Coates  
 * 📖 The Color of Law by Richard Rothstein  
@@ -100,7 +100,7 @@ affiliate link: https://amzn.to/4nr8heh
   
 #### 📖 Contrasting Books  
 * 📖 The New White Nationalism in America by Carol M. Swain (offers a different perspective on racial issues, often critiquing current anti-racist movements)  
-* [🤕👶 The Coddling of the American Mind: How Good Intentions and Bad Ideas Are Setting Up a Generation for Failure](/content/books/the-coddling-of-the-american-mind-how-good-intentions-and-bad-ideas-are-setting-up-a-generation-for-failure.md) by Greg Lukianoff and Jonathan Haidt (critiques aspects of contemporary social justice movements and identity politics, which might include some antiracist tenets)  
+* [🤕👶 The Coddling of the American Mind: How Good Intentions and Bad Ideas Are Setting Up a Generation for Failure](./the-coddling-of-the-american-mind-how-good-intentions-and-bad-ideas-are-setting-up-a-generation-for-failure.md) by Greg Lukianoff and Jonathan Haidt (critiques aspects of contemporary social justice movements and identity politics, which might include some antiracist tenets)  
 * 📖 Waking Up White and Finding Myself in the Story of Race by Debby Irving (while supportive of racial justice, it often focuses more on individual awakening than systemic policy, offering a stylistic contrast to Kendi's policy-first approach)  
 * 📖 Why We Can't Wait by Martin Luther King Jr. (offers a historical civil rights perspective that, while advocating for racial justice, might differ in specific proposed methods or theoretical underpinnings compared to Kendi's modern antiracism)  
   

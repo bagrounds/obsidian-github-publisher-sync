@@ -10,7 +10,7 @@ Channel: Reuters
 tags:
 youtube: https://youtu.be/GMWrUnwgnkM
 ---
-[Home](/content/index.md) > [Videos](/content/videos/index.md)  
+[Home](../index.md) > [Videos](./index.md)  
 # 💉🚫🌴 Florida to end state vaccine mandates  
 ![Florida to end state vaccine mandates | REUTERS](https://youtu.be/GMWrUnwgnkM)  
   

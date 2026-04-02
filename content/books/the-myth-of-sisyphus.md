@@ -7,8 +7,11 @@ URL: https://bagrounds.org/books/the-myth-of-sisyphus
 Author:
 tags:
 affiliate link: https://amzn.to/43JseFh
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_time: 2026-04-01T00:00:00Z
+force_analyze_links: false
 ---
-[Home](/content/index.md) > [Books](/content/books/index.md)  
+[Home](../index.md) > [Books](./index.md)  
 # 🏔️ The Myth of Sisyphus  
 [🛒 The Myth of Sisyphus. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/43JseFh)  
   
@@ -69,7 +72,7 @@ affiliate link: https://amzn.to/43JseFh
 ### ⚖️ Contrasting Philosophical Works (Finding Meaning/Different Perspectives)  
   
 * **Viktor Frankl:**  
-    * [🔦💡 Man's Search for Meaning](/content/books/mans-search-for-meaning.md): Argues for finding meaning *through* suffering, based on his experiences in Nazi concentration camps; presents logotherapy, emphasizing the human drive for meaning. 🆚 Contrasts with Camus's rejection of inherent meaning but complements the focus on finding value in lived experience.  
+    * [🔦💡 Man's Search for Meaning](./mans-search-for-meaning.md): Argues for finding meaning *through* suffering, based on his experiences in Nazi concentration camps; presents logotherapy, emphasizing the human drive for meaning. 🆚 Contrasts with Camus's rejection of inherent meaning but complements the focus on finding value in lived experience.  
 * **Friedrich Nietzsche:**  
     * 🗣️ *Thus Spoke Zarathustra:* Explores overcoming nihilism through the "Übermensch" and the affirmation of life ("amor fati" - love of fate), resonating with Camus's call to embrace one's fate, albeit with different philosophical underpinnings.  
     * 🤔 *The Gay Science:* Contains the famous "God is dead" proclamation and explores the implications of a godless world, a starting point shared with Camus.  
@@ -96,5 +99,5 @@ affiliate link: https://amzn.to/43JseFh
 * **Kamel Daoud:**  
     * 🕵️ *The Meursault Investigation:* A novel retelling *The Stranger* from the perspective of the brother of the Arab man Meursault killed, offering a post-colonial critique and re-examination of Camus's narrative.  
   
-## 💬 [Gemini](/content/software/gemini.md) Prompt (gemini-2.5-pro-exp-03-25)  
+## 💬 [Gemini](../software/gemini.md) Prompt (gemini-2.5-pro-exp-03-25)  
 > Write a markdown-formatted (start headings at level H2) book report, followed by a plethora of additional similar, contrasting, and creatively related book recommendations on The Myth of Sisyphus. Be thorough in content discussed but concise and economical with your language. Structure the report with section headings and bulleted lists to avoid long blocks of text.

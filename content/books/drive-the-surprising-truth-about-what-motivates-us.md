@@ -8,8 +8,11 @@ Author:
 tags:
 affiliate link: https://amzn.to/4o1nZyf
 CTA: 🚀 Fuel progress.
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_time: 2026-04-01T00:00:00Z
+force_analyze_links: false
 ---
-[Home](/content/index.md) > [Books](/content/books/index.md)  
+[Home](../index.md) > [Books](./index.md)  
 # 🏎️⛽ Drive: The Surprising Truth About What Motivates Us  
 [🛒 Drive: The Surprising Truth About What Motivates Us. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4o1nZyf)  
   
@@ -64,11 +67,11 @@ CTA: 🚀 Fuel progress.
   
 #### Book Recommendations 📚  
 * **Best Alternate Book on the Same Topic:** "Intrinsic Motivation" by Edward L. Deci and Richard M. Ryan. This book is a more academic and in-depth exploration of self-determination theory. 🤓  
-* **Best Tangentially Related Book:** "[Thinking, Fast and Slow](/content/books/thinking-fast-and-slow.md)" by Daniel Kahneman. This book explores the cognitive biases that influence our decision-making, providing a broader understanding of human behavior. 🧠  
+* **Best Tangentially Related Book:** "[Thinking, Fast and Slow](./thinking-fast-and-slow.md)" by Daniel Kahneman. This book explores the cognitive biases that influence our decision-making, providing a broader understanding of human behavior. 🧠  
 * **Best Diametrically Opposed Book:** "The One Minute Manager" by Kenneth Blanchard and Spencer Johnson. This book advocates for a more directive and results-oriented management style, focusing on clear goals and feedback. ⏱️  
 * **Best Fiction Book That Incorporates Related Ideas:** "Atlas Shrugged" by Ayn Rand. This novel explores themes of individual achievement and the importance of personal motivation, although from a very different philosophical perspective. 🗽  
-* **Best Book That Is More General:** [❓🎯 Start with Why: How Great Leaders Inspire Everyone to Take Action](/content/books/start-with-why-how-great-leaders-inspire-everyone-to-take-action.md) by Simon Sinek. Sinek explores the concept of purpose, and how starting with "why" can lead to greater motivation and success. ❓  
-* **Best Book That Is More Specific:** [🤿💼 Deep Work: Rules for Focused Success in a Distracted World](/content/books/deep-work.md) by Cal Newport. This book provides practical strategies for cultivating focus and mastery in a specific area. 🧘  
+* **Best Book That Is More General:** [❓🎯 Start with Why: How Great Leaders Inspire Everyone to Take Action](./start-with-why-how-great-leaders-inspire-everyone-to-take-action.md) by Simon Sinek. Sinek explores the concept of purpose, and how starting with "why" can lead to greater motivation and success. ❓  
+* **Best Book That Is More Specific:** [🤿💼 Deep Work: Rules for Focused Success in a Distracted World](./deep-work.md) by Cal Newport. This book provides practical strategies for cultivating focus and mastery in a specific area. 🧘  
 * **Best Book That Is More Rigorous:** "Self-Determination Theory: Basic Psychological Needs in Motivation, Development, and Wellness" by Richard M. Ryan and Edward L. Deci. This book is a comprehensive and scientific exploration of the theory. 🧪  
 * **Best Book That Is More Accessible:** "The Happiness Advantage" by Shawn Achor. This book provides an accessible and practical approach to applying positive psychology to improve happiness and performance. 😊  
   

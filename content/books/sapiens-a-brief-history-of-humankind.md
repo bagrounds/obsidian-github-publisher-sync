@@ -13,7 +13,7 @@ force_analyze_links: false
 link_analysis_time: 2026-03-22T06:09:02.999Z
 link_analysis_model: gemini-3.1-flash-lite-preview
 ---
-[Home](/content/index.md) > [Books](/content/books/index.md)  
+[Home](../index.md) > [Books](./index.md)  
 # 📜🌍⏳ Sapiens: A Brief History of Humankind  
 [🛒 Sapiens: A Brief History of Humankind. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3HEBDX1)  
   
@@ -37,7 +37,7 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 📚 **Additional Book Recommendations**  
   
 1. 🥇 **Best Alternate Book on the Same Topic:** 🌍  
-   [🔫🦠🔩 Guns, Germs, and Steel: The Fates of Human Societies](/content/books/guns-germs-and-steel-the-fates-of-human-societies.md) by Jared Diamond  
+   [🔫🦠🔩 Guns, Germs, and Steel: The Fates of Human Societies](./guns-germs-and-steel-the-fates-of-human-societies.md) by Jared Diamond  
    *Why:* 🤔 Like *Sapiens*, this book explores the factors that shaped human civilizations but places a stronger emphasis on environmental and geographical determinants, offering a complementary yet distinct perspective. 🗺️  
   
 2. 🥈 **Best Book Tangentially Related:** 🕊️  
@@ -45,7 +45,7 @@ link_analysis_model: gemini-3.1-flash-lite-preview
    *Why:* This book examines the long-term decline of violence in human societies and provides insights into the evolution of human behavior, making it a valuable companion to the themes of progress and human organization discussed in *Sapiens*. 🧠  
   
 3. 🥉 **Best Book Diametrically Opposed:** 🙅‍♂️  
-   [🌅🧑‍🤝‍🧑 The Dawn of Everything: A New History of Humanity](/content/books/the-dawn-of-everything-a-new-history-of-humanity.md) by David Graeber and David Wengrow  
+   [🌅🧑‍🤝‍🧑 The Dawn of Everything: A New History of Humanity](./the-dawn-of-everything-a-new-history-of-humanity.md) by David Graeber and David Wengrow  
    *Why:* This work challenges conventional narratives of human history, questioning the inevitability of hierarchical societies and linear progress. 🔄 It offers a radically different interpretation of early human organization, serving as a counterpoint to Harari’s framework. 🎭  
   
 4. 📖 **Best Fiction Book Incorporating Related Ideas:** ✍️  

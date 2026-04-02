@@ -10,7 +10,7 @@ Channel: Noam Chomsky Wisdom
 tags:
 youtube: https://youtu.be/OT3iwYsuWOw
 ---
-[Home](/content/index.md) > [Videos](/content/videos/index.md)  
+[Home](../index.md) > [Videos](./index.md)  
 # 🤔⏳👹⬇️ Noam Chomsky || How Much Time Is Left Until the End of Trump ( Must Watch )  
 ![Noam Chomsky || How Much Time Is Left Until the End of Trump ( Must Watch )](https://youtu.be/OT3iwYsuWOw)  
 ## 🤖 AI Summary  
@@ -36,15 +36,15 @@ The video includes several calls to action:
   
 ## 📚 Book Recommendations  
 * **⚖️ On political systems:**  
-    * [🗳️🕊️🇺🇸 Democracy in America](/content/books/democracy-in-america.md) by Alexis de Tocqueville.  
+    * [🗳️🕊️🇺🇸 Democracy in America](../books/democracy-in-america.md) by Alexis de Tocqueville.  
     * *The Prince* by Niccolo Machiavelli.  
-    * [👑🚫📜2️⃣0️⃣ On Tyranny: Twenty Lessons from the Twentieth Century](/content/books/on-tyranny.md) by Timothy Snyder.  
-    * [🌎👎👑💰🏚️ Why Nations Fail: The Origins of Power, Prosperity, and Poverty](/content/books/why-nations-fail-the-origins-of-power-prosperity-and-poverty.md) by Daron Acemoglu and James A. Robinson.  
+    * [👑🚫📜2️⃣0️⃣ On Tyranny: Twenty Lessons from the Twentieth Century](../books/on-tyranny.md) by Timothy Snyder.  
+    * [🌎👎👑💰🏚️ Why Nations Fail: The Origins of Power, Prosperity, and Poverty](../books/why-nations-fail-the-origins-of-power-prosperity-and-poverty.md) by Daron Acemoglu and James A. Robinson.  
 * **🔎 On truth and misinformation:**  
-    * [🤥📣 This Is Not Propaganda: Adventures in the War Against Reality](/content/books/this-is-not-propaganda.md) by Peter Pomerantsev.  
-    * [🚫✅🤥 Post-Truth](/content/books/post-truth.md) by Lee McIntyre.  
-    * [📢🕸️ Network Propaganda: Manipulation, Disinformation, and Radicalization in American Politics](/content/books/network-propaganda-manipulation-disinformation-and-radicalization-in-american-politics.md) by Yochai Benkler, Robert Faris, and Hal Roberts. 🤖 The book includes analysis of how information can spread and affect political views.  
-    * [📢🛡️ On Disinformation: How to Fight for Truth and Protect Democracy](/content/books/on-disinformation-how-to-fight-for-truth-and-protect-democracy.md) by Lee McIntyre.  
+    * [🤥📣 This Is Not Propaganda: Adventures in the War Against Reality](../books/this-is-not-propaganda.md) by Peter Pomerantsev.  
+    * [🚫✅🤥 Post-Truth](../books/post-truth.md) by Lee McIntyre.  
+    * [📢🕸️ Network Propaganda: Manipulation, Disinformation, and Radicalization in American Politics](../books/network-propaganda-manipulation-disinformation-and-radicalization-in-american-politics.md) by Yochai Benkler, Robert Faris, and Hal Roberts. 🤖 The book includes analysis of how information can spread and affect political views.  
+    * [📢🛡️ On Disinformation: How to Fight for Truth and Protect Democracy](../books/on-disinformation-how-to-fight-for-truth-and-protect-democracy.md) by Lee McIntyre.  
 * **🌍 On collective action and social change:**  
     * *Collective Action and Exchange: A Game-Theoretic Approach to Contemporary Political Economy* by William D. Ferguson.  
     * *Collective Action for Social Change: An Introduction to Community Organizing* by Aaron Schutz and Marie G. Sandy.  

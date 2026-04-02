@@ -7,7 +7,7 @@ share: true
 CTA: ✨ Uncover insight.
 affiliate link: https://amzn.to/4qlSS0F
 ---
-[Home](/content/index.md) > [Books](/content/books/index.md)  
+[Home](../index.md) > [Books](./index.md)  
 # 🧩⚙️ Constraint Processing  
 [🛒 Constraint Processing. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4qlSS0F)  
   
@@ -65,7 +65,7 @@ affiliate link: https://amzn.to/4qlSS0F
   
 * 🤖 Integration of Machine Learning with Constraint Programming (e.g., learning constraints, guiding search).  
 * 🗣️ Explainable AI and Constraint Programming: How CSPs can provide transparent decision-making.  
-* [⚛️ Quantum Computing](/content/topics/quantum-computing.md) approaches for solving Constraint Satisfaction Problems.  
+* [⚛️ Quantum Computing](../topics/quantum-computing.md) approaches for solving Constraint Satisfaction Problems.  
 * 🆕 Recent advancements in MiniZinc, Picat, and other modern constraint programming languages and solvers.  
 * 🌐 Application of constraint programming in areas like cybersecurity, drug discovery, and climate modeling.  
 * 🧩 Hybrid optimization techniques combining CP with Integer Linear Programming (ILP) or Satisfiability (SAT) solvers.  
@@ -93,7 +93,7 @@ affiliate link: https://amzn.to/4qlSS0F
 ### ➡️ Similar  
 * 📖 Handbook of Constraint Programming by Francesca Rossi, Peter van Beek, Toby Walsh  
 * 💻 Programming with Constraints: An Introduction by Kim Marriott  
-* [🤖🧠 Artificial Intelligence: A Modern Approach](/content/books/artificial-intelligence-a-modern-approach.md) by Stuart Russell, Peter Norvig  
+* [🤖🧠 Artificial Intelligence: A Modern Approach](./artificial-intelligence-a-modern-approach.md) by Stuart Russell, Peter Norvig  
   
 ### ⬅️ Contrasting  
 * 📊 Algorithms by Robert Sedgewick, Kevin Wayne  

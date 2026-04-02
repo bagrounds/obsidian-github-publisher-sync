@@ -10,7 +10,7 @@ Channel: LastWeekTonight
 tags:
 youtube: https://youtu.be/dB1-lg-xZWc
 ---
-[Home](/content/index.md) > [Videos](/content/videos/index.md)  
+[Home](../index.md) > [Videos](./index.md)  
 # 🏛️😂📺 Presidential Libraries: Last Week Tonight with John Oliver (HBO)  
 ![Presidential Libraries: Last Week Tonight with John Oliver (HBO)](https://youtu.be/dB1-lg-xZWc)  
   
@@ -61,7 +61,7 @@ A: ⏳ *Records are technically subject to public request* under the Freedom of 
   
 ### **Similar (Focus on Political Corruption and Opacity):**  
   
-* [💰🤫 Dark Money: The Hidden History of the Billionaires Behind the Rise of the Radical Right](/content/books/dark-money-the-hidden-history-of-the-billionaires-behind-the-rise-of-the-radical-right.md) 💰 **Relevance:** Explores how unlimited, undisclosed donations to foundations and non-profits are used to influence American politics and policy, mirroring the library funding loophole.  
+* [💰🤫 Dark Money: The Hidden History of the Billionaires Behind the Rise of the Radical Right](../books/dark-money-the-hidden-history-of-the-billionaires-behind-the-rise-of-the-radical-right.md) 💰 **Relevance:** Explores how unlimited, undisclosed donations to foundations and non-profits are used to influence American politics and policy, mirroring the library funding loophole.  
 * *Secrecy and Power: An American Life, The Biography of J. Edgar Hoover* 🕵️ **Relevance:** Provides a historical context on how powerful government figures maintain control over their legacy and records, highlighting the temptation to conceal wrongdoing, much like the whitewashing in presidential libraries.  
   
 ### **Contrasting (Focus on Archival Value and Transparency Solutions):**  

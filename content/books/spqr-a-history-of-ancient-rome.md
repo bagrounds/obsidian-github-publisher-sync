@@ -7,7 +7,7 @@ share: true
 CTA: 🏛️ Master Rome.
 affiliate link: https://amzn.to/3MaZNvf
 ---
-[Home](/content/index.md) > [Books](/content/books/index.md)  
+[Home](../index.md) > [Books](./index.md)  
 # 🏛️📜 SPQR: A History of Ancient Rome  
 [🛒 SPQR: A History of Ancient Rome. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3MaZNvf)  
   
@@ -69,7 +69,7 @@ affiliate link: https://amzn.to/3MaZNvf
   
 ## 📚 Book Recommendations  
 ### 🤝 Similar  
-* [🥀🏛️ The Ruin of the Roman Empire: A New History](/content/books/the-ruin-of-the-roman-empire-a-new-history.md) by James J. O'Donnell  
+* [🥀🏛️ The Ruin of the Roman Empire: A New History](./the-ruin-of-the-roman-empire-a-new-history.md) by James J. O'Donnell  
 * 📜 The Histories by Tacitus  
 * 👑 The Twelve Caesars by Suetonius  
   

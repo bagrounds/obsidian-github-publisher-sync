@@ -15,7 +15,7 @@ updated: 2026-04-01T11:01:23-07:00
 💬 Comment on any page with your GitHub account.  
   
 ## [🪞 Reflections](./reflections/index.md) ~ Blog (503)  
-- [2026-04-01](./reflections/2026-04-01.md)  
+- [2026-04-01 | ⏳ Time 🐜 Sim 🤫 Secret 🌀 Chaos 🏘️ Abundance 📚💾🐔🤖🏛️🤖🐲](./reflections/2026-04-01.md)  
 - [2026-03-31 | 🌿 Building 📊 Identity 🏡 Housing 🐔🤖🏛️🤖🐲](./reflections/2026-03-31.md)  
 - [2026-03-30 | 🛡️ Safeguarding 😇 Gentle 🏴‍☠️ Adversary 🐔🤖🏛️🤖🐲🔄](./reflections/2026-03-30.md)  
 - [2026-03-29 | 🌿 Softening 🤖 Navigating 🌐 Digital 📦 Deploys ❓ Whys ☔ Quiet 🐔🤖🤖🐲🔄](./reflections/2026-03-29.md)  
@@ -50,10 +50,10 @@ updated: 2026-04-01T11:01:23-07:00
   
   
 ## [📚 Books](./books/index.md) (958)  
-- [🏆🎭 Winners Take All: The Elite Charade of Changing the World](./books/winners-take-all-the-elite-charade-of-changing-the-world.md)  
-- [🧑‍🤝‍🧑✅🌍 Full Employment and Social Justice: Solidarity and Sustainability](./books/full-employment-and-social-justice-solidarity-and-sustainability.md)  
-- [🙉📢😵‍💫🔇 Noise: A Flaw in Human Judgment](./books/noise.md)  
-- [🤓🕵️‍♂️❓ Freakonomics: A Rogue Economist Explores the Hidden Side of Everything](./books/freakonomics.md)  
+- [🏚️💰 Evicted: Poverty and Profit in the American City](./books/evicted-poverty-and-profit-in-the-american-city.md)  
+- [⚖️⬆️🤝 The Spirit Level: Why Greater Equality Makes Societies Stronger](./books/the-spirit-level-why-greater-equality-makes-societies-stronger.md)  
+- [🎨⚔️ The Art of War](./books/the-art-of-war.md)  
+- [💰🤥 Merchants of Doubt](./books/merchants-of-doubt.md)  
   
   
 ## [📺 Videos](./videos/index.md) (714)  
@@ -64,10 +64,10 @@ updated: 2026-04-01T11:01:23-07:00
   
   
 ## [🌌 Topics](./topics/index.md) (91)  
-- [➗📐 Math](./topics/math.md)  
-- [🧪🔬🔭 Science](./topics/science.md)  
-- [⚛️ Quantum Computing](./topics/quantum-computing.md)  
-- [❤️‍🩹⚖️🤝👑😇🗽 Moral Foundations Theory](./topics/moral-foundations-theory.md)  
+- [🗣️📢 Communication Studies](./topics/communication-studies.md)  
+- [🤔📚 Philosophy](./topics/philosophy.md)  
+- [🕊️⛪ Religion](./topics/religion.md)  
+- [🎨🖼️ Arts](./topics/arts.md)  
   
   
 ## [📄  Articles](./articles/index.md) (82)  

@@ -11,7 +11,7 @@ tags:
   - AIEngineering
 youtube: https://youtu.be/G7kXuVlo6tU
 ---
-[Home](/content/index.md) > [Videos](/content/videos/index.md)  
+[Home](../index.md) > [Videos](./index.md)  
 # ✨💻💀🤖 Steve Yegge on productive vibe coding, the death of the IDE, babysitting a fleet of AI coding agents  
 ![Steve Yegge on productive vibe coding, the death of the IDE, babysitting a fleet of AI coding agents](https://youtu.be/G7kXuVlo6tU)  
   
@@ -52,18 +52,18 @@ youtube: https://youtu.be/G7kXuVlo6tU
   
 ## 📚 Book Recommendations  
 ### ↔️ Similar  
-- [🤖💻 Vibe Coding: Building Production-Grade Software With GenAI, Chat, Agents, and Beyond](/content/books/vibe-coding-building-production-grade-software-with-genai-chat-agents-and-beyond.md)  
-- [🤖🏗️ AI Engineering: Building Applications with Foundation Models](/content/books/ai-engineering-building-applications-with-foundation-models.md)  
-* [🦄👤🗓️ The Mythical Man-Month: Essays on Software Engineering](/content/books/the-mythical-man-month.md) by Frederick Brooks Jr. explores fundamental software project productivity challenges, particularly how tool friction and adding staff to late projects increase latency, mirroring the talk's emphasis on minimizing delay.  
-* [🤿💼 Deep Work: Rules for Focused Success in a Distracted World](/content/books/deep-work.md) by Cal Newport provides a strong foundation for understanding the neuroscience and value of the deep focus or flow state that the talk refers to as the vibe.  
+- [🤖💻 Vibe Coding: Building Production-Grade Software With GenAI, Chat, Agents, and Beyond](../books/vibe-coding-building-production-grade-software-with-genai-chat-agents-and-beyond.md)  
+- [🤖🏗️ AI Engineering: Building Applications with Foundation Models](../books/ai-engineering-building-applications-with-foundation-models.md)  
+* [🦄👤🗓️ The Mythical Man-Month: Essays on Software Engineering](../books/the-mythical-man-month.md) by Frederick Brooks Jr. explores fundamental software project productivity challenges, particularly how tool friction and adding staff to late projects increase latency, mirroring the talk's emphasis on minimizing delay.  
+* [🤿💼 Deep Work: Rules for Focused Success in a Distracted World](../books/deep-work.md) by Cal Newport provides a strong foundation for understanding the neuroscience and value of the deep focus or flow state that the talk refers to as the vibe.  
   
 ### 🆚 Contrasting  
-* [✅💻 Code Complete](/content/books/code-complete.md): A Practical Handbook of Software Construction by Steve McConnell is the definitive guide to meticulous, structured code construction, representing the high-level human mastery achieved *within* the highly structured environment that a robust IDE often supports.  
+* [✅💻 Code Complete](../books/code-complete.md): A Practical Handbook of Software Construction by Steve McConnell is the definitive guide to meticulous, structured code construction, representing the high-level human mastery achieved *within* the highly structured environment that a robust IDE often supports.  
 * 📙 The Practice of Programming by Brian Kernighan and Rob Pike advocates for elegant, minimalist programming principles and simple tool use, offering a perspective where mastery over basic tools is prioritized over reliance on complex, feature-rich environments.  
   
 ### 🎨 Creatively Related  
-* [🏍️🧘❓ Zen and the Art of Motorcycle Maintenance: An Inquiry into Values](/content/books/zen-and-the-art-of-motorcycle-maintenance-an-inquiry-into-values.md) by Robert M. Pirsig explores the relationship between humans and technology, and the nature of quality, which ties directly into the vibe and mastery needed to achieve effortless interaction with the toolchain.  
-* [🧑‍🤝‍🧑⚙️➡️ Team Topologies: Organizing Business and Technology Teams for Fast Flow](/content/books/team-topologies-organizing-business-and-technology-teams-for-fast-flow.md) by Matthew Skelton and Manuel Pais provides an organizational structure for teams to design their boundaries and systems to achieve fast, autonomous flow, which directly addresses the organizational investment in infrastructure needed to support the developer's vibe.  
+* [🏍️🧘❓ Zen and the Art of Motorcycle Maintenance: An Inquiry into Values](../books/zen-and-the-art-of-motorcycle-maintenance-an-inquiry-into-values.md) by Robert M. Pirsig explores the relationship between humans and technology, and the nature of quality, which ties directly into the vibe and mastery needed to achieve effortless interaction with the toolchain.  
+* [🧑‍🤝‍🧑⚙️➡️ Team Topologies: Organizing Business and Technology Teams for Fast Flow](../books/team-topologies-organizing-business-and-technology-teams-for-fast-flow.md) by Matthew Skelton and Manuel Pais provides an organizational structure for teams to design their boundaries and systems to achieve fast, autonomous flow, which directly addresses the organizational investment in infrastructure needed to support the developer's vibe.  
   
 ## 🐦 Tweet  
 <blockquote class="twitter-tweet" data-theme="dark"><p lang="en" dir="ltr">✨💻💀🤖 Steve Yegge on productive vibe coding, the death of the IDE, babysitting a fleet of AI coding agents<br><br>✨ Flow State | ☁️ Cloud Development | 🧑‍💻 Developer Role | ⚙️ Toolchains<a href="https://t.co/E8RHLZkVQA">https://t.co/E8RHLZkVQA</a></p>&mdash; Bryan Grounds (@bagrounds) <a href="https://twitter.com/bagrounds/status/1983712966605467736?ref_src=twsrc%5Etfw">October 30, 2025</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>

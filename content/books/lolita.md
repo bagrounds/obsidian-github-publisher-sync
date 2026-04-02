@@ -8,7 +8,7 @@ Author:
 tags:
 affiliate link: https://amzn.to/3NT9Xkh
 ---
-[Home](/content/index.md) > [Books](/content/books/index.md)  
+[Home](../index.md) > [Books](./index.md)  
 # 👧💔🥀 Lolita  
 [🛒 Lolita. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3NT9Xkh)  
   

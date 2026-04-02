@@ -8,8 +8,11 @@ Author:
 tags:
 affiliate link: https://amzn.to/43sW41K
 CTA: 👶 Embrace informed parenthood.
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_time: 2026-04-01T00:00:00Z
+force_analyze_links: false
 ---
-[Home](/content/index.md) > [Books](/content/books/index.md)  
+[Home](../index.md) > [Books](./index.md)  
 # 👶📊😌 Cribsheet: A Data-Driven Guide to Better, More Relaxed Parenting, from Birth to Preschool  
 [🛒 Cribsheet: A Data-Driven Guide to Better, More Relaxed Parenting, from Birth to Preschool. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/43sW41K)  
   
@@ -66,7 +69,7 @@ CTA: 👶 Embrace informed parenthood.
   
 **📚 Additional Book Recommendations**  
 1. 🥇 **Best Alternate Book on the Same Topic:**    
-   [🤓👩‍👦 The Informed Parent: A Science-Based Resource for Your Child's First Four Years](/content/books/the-informed-parent.md) by Tara Haelle    
+   [🤓👩‍👦 The Informed Parent: A Science-Based Resource for Your Child's First Four Years](./the-informed-parent.md) by Tara Haelle    
    – 📖 This book similarly uses a scientific approach to guide early parenting decisions and provides another evidence-based perspective on child development.  
   
 2. 🤝 **Best Book Tangentially Related to the Topic:**    
@@ -74,7 +77,7 @@ CTA: 👶 Embrace informed parenthood.
    – 📖 While not entirely data-driven, this book offers a culturally contrasting perspective on parenting that complements the empirical approach of *Cribsheet*.  
   
 3. ☯️ **Best Book Diametrically Opposed to the Data-Driven Approach:**    
-   [❤️🧠 Unconditional Parenting: Moving from Rewards and Punishments to Love and Reason](/content/books/unconditional-parenting-moving-from-rewards-and-punishments-to-love-and-reason.md) by Alfie Kohn    
+   [❤️🧠 Unconditional Parenting: Moving from Rewards and Punishments to Love and Reason](./unconditional-parenting-moving-from-rewards-and-punishments-to-love-and-reason.md) by Alfie Kohn    
    – 📖 Kohn’s work challenges behaviorist, data-driven methods in parenting, advocating instead for an intuitive, unconditional approach that stands in stark contrast to the cost–benefit analysis found in *Cribsheet*.  
   
 4. 🎭 **Best Fiction Book Incorporating Related Ideas:**    

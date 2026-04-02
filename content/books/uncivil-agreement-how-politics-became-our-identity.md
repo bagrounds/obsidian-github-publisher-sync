@@ -7,7 +7,7 @@ share: true
 CTA: 🗳️ Understand division.
 affiliate link: https://amzn.to/42q6IFp
 ---
-[Home](/content/index.md) > [Books](/content/books/index.md)  
+[Home](../index.md) > [Books](./index.md)  
 # 😠🎭 Uncivil Agreement: How Politics Became Our Identity  
 [🛒 Uncivil Agreement: How Politics Became Our Identity. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/42q6IFp)  
   
@@ -35,23 +35,23 @@ affiliate link: https://amzn.to/42q6IFp
   
 ### ➕ Similar Books  
   
-* [↔️ Why We're Polarized](/content/books/why-were-polarized.md) by Ezra Klein  
-* [😇🧠 The Righteous Mind: Why Good People Are Divided by Politics and Religion](/content/books/the-righteous-mind.md) by Jonathan Haidt  
+* [↔️ Why We're Polarized](./why-were-polarized.md) by Ezra Klein  
+* [😇🧠 The Righteous Mind: Why Good People Are Divided by Politics and Religion](./the-righteous-mind.md) by Jonathan Haidt  
 * ❓ Identity Crisis: 🇺🇸 The 2016 Presidential Campaign and the Battle for the Meaning of America by John Sides, Michael Tesler, and Lynn Vavreck  
-* 💥 Culture Crash: 💀 The Killing of the Creative Class by [👨‍🏫📈💻 Scott Galloway](/content/people/scott-galloway.md)  
+* 💥 Culture Crash: 💀 The Killing of the Creative Class by [👨‍🏫📈💻 Scott Galloway](../people/scott-galloway.md)  
   
 ### ➖ Contrasting Books  
   
-* [🇺🇸📜 The Federalist Papers](/content/books/the-federalist-papers.md) by Alexander Hamilton, James Madison, and John Jay  
-* [🎳🏘️📉📈 Bowling Alone: The Collapse and Revival of American Community](/content/books/bowling-alone.md) by Robert D. Putnam  
+* [🇺🇸📜 The Federalist Papers](./the-federalist-papers.md) by Alexander Hamilton, James Madison, and John Jay  
+* [🎳🏘️📉📈 Bowling Alone: The Collapse and Revival of American Community](./bowling-alone.md) by Robert D. Putnam  
 * 🇺🇸 Coming Apart: ⚪ The State of White America, 1960-2010 by Charles Murray  
 * 🗣️ The Great Debate: 🏛️ Edmund Burke, Thomas Paine, and the Birth of Right and Left by Yuval Levin  
   
 ### 💡 Creatively Related Books  
   
-* [👦🏝️🐷 Lord of the Flies](/content/books/lord-of-the-flies.md) by William Golding  
+* [👦🏝️🐷 Lord of the Flies](./lord-of-the-flies.md) by William Golding  
 * 🐷 Animal Farm by George Orwell  
-* [📜🌍⏳ Sapiens: A Brief History of Humankind](/content/books/sapiens-a-brief-history-of-humankind.md) by Yuval Noah Harari  
+* [📜🌍⏳ Sapiens: A Brief History of Humankind](./sapiens-a-brief-history-of-humankind.md) by Yuval Noah Harari  
 * 🏛️ The Republic by Plato  
   
 ## 💬 [Gemini](https://gemini.google.com) Prompt (gemini-2.5-flash)  

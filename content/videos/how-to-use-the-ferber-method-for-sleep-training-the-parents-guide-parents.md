@@ -10,7 +10,7 @@ Channel: Parents
 tags:
 youtube: https://youtu.be/XVV4WCnqFA8
 ---
-[Home](/content/index.md) > [Videos](/content/videos/index.md)  
+[Home](../index.md) > [Videos](./index.md)  
 # 👶⏰😴 How to Use the Ferber Method for Sleep Training | The Parents Guide | Parents  
 ![How to Use the Ferber Method for Sleep Training | The Parents Guide | Parents](https://youtu.be/XVV4WCnqFA8)  
   
@@ -54,13 +54,13 @@ A: 🔑 The recommended age window for starting the Ferber sleep training method
   
 ### ↔️ Similar  
   
-* [😴👶  Solve Your Child's Sleep Problems](/content/books/solve-your-childs-sleep-problems.md) by Richard Ferber: 📘 This is the original text that provides the authoritative guide on the graduated extinction method described in the video.  
+* [😴👶  Solve Your Child's Sleep Problems](../books/solve-your-childs-sleep-problems.md) by Richard Ferber: 📘 This is the original text that provides the authoritative guide on the graduated extinction method described in the video.  
 * The Sleepeasy Solution by Jennifer Waldburger and Jill Spivack: 🚪 A popular step-by-step guide that details another structured, controlled crying approach aimed at achieving independent sleep.  
   
 ### 🆚 Contrasting  
   
 * The Gentle Sleep Book by Sarah Ockwell-Smith: 💖 Proposes gentle, **no-cry** approaches to infant sleep that focus on biological norms and secure attachment, offering a direct contrast to Ferber’s timed crying.  
-* [😴🤱 Sweet Sleep: Nighttime and Naptime Strategies for the Breastfeeding Family](/content/books/sweet-sleep-nighttime-and-naptime-strategies-for-the-breastfeeding-family.md) by La Leche League International: 🤱 Focuses on **attachment parenting** and maximizing breastfeeding, advocating for parental responsiveness to night wakings rather than behavioral protocols.  
+* [😴🤱 Sweet Sleep: Nighttime and Naptime Strategies for the Breastfeeding Family](../books/sweet-sleep-nighttime-and-naptime-strategies-for-the-breastfeeding-family.md) by La Leche League International: 🤱 Focuses on **attachment parenting** and maximizing breastfeeding, advocating for parental responsiveness to night wakings rather than behavioral protocols.  
   
 ### 🎨 Creatively Related  
   

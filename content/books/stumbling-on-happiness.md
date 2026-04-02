@@ -6,8 +6,11 @@ URL: https://bagrounds.org/books/stumbling-on-happiness
 share: true
 CTA: 🤔 Question your desires.
 affiliate link: https://amzn.to/4s2vXZZ
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_time: 2026-04-01T00:00:00Z
+force_analyze_links: false
 ---
-[Home](/content/index.md) > [Books](/content/books/index.md)  
+[Home](../index.md) > [Books](./index.md)  
 # 😮😊 Stumbling on Happiness  
 [🛒 Stumbling on Happiness. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4s2vXZZ)  
   
@@ -70,17 +73,17 @@ affiliate link: https://amzn.to/4s2vXZZ
 ## 📚 Book Recommendations  
   
 ### 🤝 Similar  
-* [🤔🐇🐢 Thinking, Fast and Slow](/content/books/thinking-fast-and-slow.md) by Daniel Kahneman: Explores cognitive biases and two systems of thinking, deepening understanding of human irrationality.  
-* [🔮🤷🏼‍♀️🤪 Predictably Irrational: The Hidden Forces That Shape Our Decisions](/content/books/predictably-irrational.md) by Dan Ariely: Examines the hidden forces that shape our decisions, complementing Gilbert's exploration of flawed predictions.  
-* [👉🤏 Nudge: Improving Decisions about Health, Wealth, and Happiness](/content/books/nudge.md) by Richard H. Thaler and Cass R. Sunstein: Discusses how subtle interventions can influence choices, building on the idea of our predictable irrationality.  
+* [🤔🐇🐢 Thinking, Fast and Slow](./thinking-fast-and-slow.md) by Daniel Kahneman: Explores cognitive biases and two systems of thinking, deepening understanding of human irrationality.  
+* [🔮🤷🏼‍♀️🤪 Predictably Irrational: The Hidden Forces That Shape Our Decisions](./predictably-irrational.md) by Dan Ariely: Examines the hidden forces that shape our decisions, complementing Gilbert's exploration of flawed predictions.  
+* [👉🤏 Nudge: Improving Decisions about Health, Wealth, and Happiness](./nudge.md) by Richard H. Thaler and Cass R. Sunstein: Discusses how subtle interventions can influence choices, building on the idea of our predictable irrationality.  
   
 ### 🆚 Contrasting  
 * 🧘‍♂️ The Power of Now by Eckhart Tolle: Focuses on living in the present moment to achieve peace, offering a spiritual counterpoint to Gilbert's scientific dissection of future-thinking.  
-* [🌊🧘🏼‍♀️🧠📈 Flow: The Psychology of Optimal Experience](/content/books/flow-the-psychology-of-optimal-experience.md) by Mihaly Csikszentmihalyi: Explores states of deep engagement and enjoyment, contrasting with Gilbert's focus on the *prediction* of happiness.  
+* [🌊🧘🏼‍♀️🧠📈 Flow: The Psychology of Optimal Experience](./flow-the-psychology-of-optimal-experience.md) by Mihaly Csikszentmihalyi: Explores states of deep engagement and enjoyment, contrasting with Gilbert's focus on the *prediction* of happiness.  
   
 ### 🔗 Related  
 * 🤯 The Paradox of Choice by Barry Schwartz: Discusses how an abundance of options can lead to anxiety and dissatisfaction, relevant to how we miswant in Gilbert's framework.  
-* [🌱🧘🏼‍♀️🏆 Mindset: The New Psychology of Success](/content/books/mindset.md) by Carol S. Dweck: Explores how our beliefs about our abilities (fixed vs. growth mindset) impact our resilience and approach to challenges, connecting to our psychological immune system.  
+* [🌱🧘🏼‍♀️🏆 Mindset: The New Psychology of Success](./mindset.md) by Carol S. Dweck: Explores how our beliefs about our abilities (fixed vs. growth mindset) impact our resilience and approach to challenges, connecting to our psychological immune system.  
   
 ## 🫵 What Do You Think?  
 🤔 Do you trust your intuition about what will make you happy? How has your psychological immune system changed your perspective on unexpected outcomes?

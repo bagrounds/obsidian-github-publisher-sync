@@ -9,13 +9,13 @@ Platform:
 Channel: What The Func? w/ Ed Zynda
 tags:
 ---
-[Home](/content/index.md) > [Videos](/content/videos/index.md)  
-# 🤖🧠🚫 Anthropic MCP + [Ollama](/content/software/ollama.md). No Claude Needed? Check it out!  
+[Home](../index.md) > [Videos](./index.md)  
+# 🤖🧠🚫 Anthropic MCP + [Ollama](../software/ollama.md). No Claude Needed? Check it out!  
 ![Anthropic MCP + Ollama. No Claude Needed? Check it out!](https://youtu.be/2zAUXs1Z9vA)  
   
 ## 🤖 AI Summary  
 ### 💡 **Executive Summary (TL;DR)**  
-🚀 Anthropic recently introduced the ⚙️ **[Model Context Protocol](/content/topics/model-context-protocol.md) (MCP)**—an open standard enabling 🤝 **secure, two-way connections** between AI-powered applications and external data sources. The protocol 🧰 **standardizes tool access** for [LLMs](/content/topics/large-language-models.md), allowing them to 🔍 **fetch real-time information** from databases, file systems, and web APIs. 🌐 MCP is designed to be 🧠 **model-agnostic**, meaning it works with 🤖 **Anthropic’s Claude, OpenAI’s GPT, local Llama models, and any LLM supporting the specification**.  
+🚀 Anthropic recently introduced the ⚙️ **[Model Context Protocol](../topics/model-context-protocol.md) (MCP)**—an open standard enabling 🤝 **secure, two-way connections** between AI-powered applications and external data sources. The protocol 🧰 **standardizes tool access** for [LLMs](../topics/large-language-models.md), allowing them to 🔍 **fetch real-time information** from databases, file systems, and web APIs. 🌐 MCP is designed to be 🧠 **model-agnostic**, meaning it works with 🤖 **Anthropic’s Claude, OpenAI’s GPT, local Llama models, and any LLM supporting the specification**.  
   
 🎬 The video explains:  
 - 🧠 **How LLMs work and their limitations** (e.g., they can’t access real-time data). ⏳  

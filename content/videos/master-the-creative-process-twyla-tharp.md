@@ -10,7 +10,7 @@ Channel: Andrew Huberman
 tags:
 youtube: https://youtu.be/VnPQ4mLRG-c
 ---
-[Home](/content/index.md) > [Videos](/content/videos/index.md) | [🧠🫀👀🔬 Andrew Huberman](/content/people/andrew-huberman.md)  
+[Home](../index.md) > [Videos](./index.md) | [🧠🫀👀🔬 Andrew Huberman](../people/andrew-huberman.md)  
 # 💡🎨💃 Master the Creative Process | Twyla Tharp  
 ![Master the Creative Process | Twyla Tharp](https://youtu.be/VnPQ4mLRG-c)  
   
@@ -56,15 +56,15 @@ youtube: https://youtu.be/VnPQ4mLRG-c
   
 ### ↔️ Similar  
   
-* [💡🌱♾️ The Creative Habit: Learn It and Use It for Life](/content/books/the-creative-habit.md) by Twyla Tharp details the practical exercises and mindsets Tharp uses to maintain a lifelong creative practice.  
-* [🪖🎨 The War of Art: Break Through the Blocks and Win Your Inner Creative Battles](/content/books/the-war-of-art.md) by Steven Pressfield focuses on overcoming internal resistance and the necessity of professional discipline in creative work.  
+* [💡🌱♾️ The Creative Habit: Learn It and Use It for Life](../books/the-creative-habit.md) by Twyla Tharp details the practical exercises and mindsets Tharp uses to maintain a lifelong creative practice.  
+* [🪖🎨 The War of Art: Break Through the Blocks and Win Your Inner Creative Battles](../books/the-war-of-art.md) by Steven Pressfield focuses on overcoming internal resistance and the necessity of professional discipline in creative work.  
   
 ### 🆚 Contrasting  
   
-* [🌊🧘🏼‍♀️🧠📈 Flow: The Psychology of Optimal Experience](/content/books/flow-the-psychology-of-optimal-experience.md) by Mihaly Csikszentmihalyi emphasizes the spontaneous state of effortless involvement rather than the grueling discipline Tharp highlights.  
-* [🪄 Big Magic: Creative Living Beyond Fear](/content/books/big-magic.md) by Elizabeth Gilbert presents a more mystical and curiosity-driven approach to creativity compared to Tharp's rigorous physical reality.  
+* [🌊🧘🏼‍♀️🧠📈 Flow: The Psychology of Optimal Experience](../books/flow-the-psychology-of-optimal-experience.md) by Mihaly Csikszentmihalyi emphasizes the spontaneous state of effortless involvement rather than the grueling discipline Tharp highlights.  
+* [🪄 Big Magic: Creative Living Beyond Fear](../books/big-magic.md) by Elizabeth Gilbert presents a more mystical and curiosity-driven approach to creativity compared to Tharp's rigorous physical reality.  
   
 ### 🎨 Creatively Related  
   
 * 🏗️ The Timeless Way of Building by Christopher Alexander explores the underlying structures of life and beauty that mirror Tharp's focus on center and coordination.  
-* [🦢 The Elements of Style](/content/books/the-elements-of-style.md) by William Strunk Jr. and E.B. White emphasizes economical language and structural precision and reflects Tharp's appreciation for disciplined artistic form.
+* [🦢 The Elements of Style](../books/the-elements-of-style.md) by William Strunk Jr. and E.B. White emphasizes economical language and structural precision and reflects Tharp's appreciation for disciplined artistic form.

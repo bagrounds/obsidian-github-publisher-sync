@@ -10,7 +10,7 @@ Channel: PBS NewsHour
 tags:
 youtube: https://youtu.be/lFbd9Suj4uI
 ---
-[Home](/content/index.md) > [Videos](/content/videos/index.md)  
+[Home](../index.md) > [Videos](./index.md)  
 # 👩‍💼🗣️🇺🇸 Tamara Keith and Amy Walter on what to watch in Tuesday's elections  
 ![Tamara Keith and Amy Walter on what to watch in Tuesday's elections](https://youtu.be/lFbd9Suj4uI)  
   
@@ -67,7 +67,7 @@ youtube: https://youtu.be/lFbd9Suj4uI
   
 ### ↔️ Similar  
   
-  * [😇🧠 The Righteous Mind: Why Good People Are Divided by Politics and Religion](/content/books/the-righteous-mind.md) by Jonathan Haidt. 🧠 This book explores the moral psychology that drives political tribalism, offering insight into why partisans react so differently to issues like the economy or a government shutdown.  
+  * [😇🧠 The Righteous Mind: Why Good People Are Divided by Politics and Religion](../books/the-righteous-mind.md) by Jonathan Haidt. 🧠 This book explores the moral psychology that drives political tribalism, offering insight into why partisans react so differently to issues like the economy or a government shutdown.  
   * *Tension City: Inside the Presidential Debates, from Kennedy-Nixon to Obama-McCain* by Jim Lehrer. 🗣️ The book provides a look at political messaging and how candidates, like those discussed in the video, attempt to control the narrative and pivot away from unfavorable topics.  
   * *The Unwinding: An Inner History of the New America* by George Packer. 🇺🇸 This narrative nonfiction explores the decline of American institutions and the rise of economic anxiety and political polarization, which are central themes of the video's analysis.  
   
@@ -81,7 +81,7 @@ youtube: https://youtu.be/lFbd9Suj4uI
   
   * *The Great Reversal: How America Gave Up on Free Markets* by Thomas Philippon. 🏭 This economic book explains how a rise in corporate concentration and decreased competition has hurt American consumers, offering a deep-dive reason behind the cost-of-living anxieties discussed in the video.  
   * *The Power Broker: Robert Moses and the Fall of New York* by Robert A. Caro. 🏗️ This biography is a classic study of how power is wielded at the state and local level, providing a tangential lens for understanding the political machinations behind the New York mayoral race mentioned in the video.  
-  * [⚠️🥴🕹️🌐 The Fifth Risk](/content/books/the-fifth-risk.md) by Michael Lewis. 🚨 The book focuses on the competence and vital work of federal agencies, illustrating the real-world impact that a government shutdown, as discussed in the video, has on the nation's operations and safety.  
+  * [⚠️🥴🕹️🌐 The Fifth Risk](../books/the-fifth-risk.md) by Michael Lewis. 🚨 The book focuses on the competence and vital work of federal agencies, illustrating the real-world impact that a government shutdown, as discussed in the video, has on the nation's operations and safety.  
   
 ## 🐦 Tweet  
 <blockquote class="twitter-tweet" data-theme="dark"><p lang="en" dir="ltr">👩‍💼🗣️🇺🇸 Tamara Keith and Amy Walter on what to watch in Tuesday&#39;s elections<br><br>🗳️ Vote | 💸 Affordability | 🏛️ Government Shutdown | 🗺️ Redistricting | 🐘 Republican Party | 🟦 Democratic Party | 📈 Economy<a href="https://t.co/4WMXQ6Zw0m">https://t.co/4WMXQ6Zw0m</a></p>&mdash; Bryan Grounds (@bagrounds) <a href="https://twitter.com/bagrounds/status/1985783107526803938?ref_src=twsrc%5Etfw">November 4, 2025</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>

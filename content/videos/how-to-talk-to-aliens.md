@@ -9,7 +9,7 @@ Platform:
 Channel: Vsauce
 tags:
 ---
-[Home](/content/index.md) > [Videos](/content/videos/index.md)  
+[Home](../index.md) > [Videos](./index.md)  
 # 🗣️👽 How to Talk to Aliens  
 ![How to Talk to Aliens](https://youtu.be/xna-kdXZQHQ)  
   

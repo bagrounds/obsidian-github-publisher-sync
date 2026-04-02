@@ -10,7 +10,7 @@ Channel: AudibleAnarchist
 tags:
 youtube: https://youtu.be/I0ihTe4AcG4
 ---
-[Home](/content/index.md) > [Videos](/content/videos/index.md)  
+[Home](../index.md) > [Videos](./index.md)  
 # 👎💲 Against Economics by David Graeber  
 ![Against Economics by David Graeber](https://youtu.be/I0ihTe4AcG4)  
   
@@ -60,8 +60,8 @@ youtube: https://youtu.be/I0ihTe4AcG4
   
 ### ↔️ Similar  
   
-* 📚 [🏛️💰 Debt: The First 5,000 Years](/content/books/debt-the-first-5000-years.md) by David Graeber explores the historical relationship between debt, money, and social organization, challenging the myth that money originated as barter.  
-* [💰📉➡️📈🗳️ The Deficit Myth: Modern Monetary Theory and the Birth of the People's Economy](/content/books/the-deficit-myth.md) by Stephanie Kelton offers a framework MMT that aligns with the video's recognition of money as government credit and its endogenous creation.  
+* 📚 [🏛️💰 Debt: The First 5,000 Years](../books/debt-the-first-5000-years.md) by David Graeber explores the historical relationship between debt, money, and social organization, challenging the myth that money originated as barter.  
+* [💰📉➡️📈🗳️ The Deficit Myth: Modern Monetary Theory and the Birth of the People's Economy](../books/the-deficit-myth.md) by Stephanie Kelton offers a framework MMT that aligns with the video's recognition of money as government credit and its endogenous creation.  
   
 ### 🆚 Contrasting  
   
@@ -70,5 +70,5 @@ youtube: https://youtu.be/I0ihTe4AcG4
   
 ### 🎨 Creatively Related  
   
-* [🤔🐇🐢 Thinking, Fast and Slow](/content/books/thinking-fast-and-slow.md) by Daniel Kahneman explores the two systems that drive human thought—System 1 intuitive and System 2 deliberate—providing the psychological basis for why the rational actor assumption of economics is flawed.  
+* [🤔🐇🐢 Thinking, Fast and Slow](../books/thinking-fast-and-slow.md) by Daniel Kahneman explores the two systems that drive human thought—System 1 intuitive and System 2 deliberate—providing the psychological basis for why the rational actor assumption of economics is flawed.  
 * 🐻 Animal Spirits How Human Psychology Drives the Economy and Why It Matters for Global Capitalism by George A Akerlof revives Keynes' concept of animal spirits to show how non-rational factors like confidence, fairness, and corruption are crucial, often ignored drivers of macroeconomic phenomena.

@@ -7,7 +7,7 @@ share: true
 CTA: 👶 Grasp the cosmos.
 affiliate link: https://amzn.to/4a1DCPT
 ---
-[Home](/content/index.md) > [Books](/content/books/index.md)  
+[Home](../index.md) > [Books](./index.md)  
 # ⚛️ℹ️👶 Quantum Information for Babies  
 [🛒 Quantum Information for Babies. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4a1DCPT)  
   
@@ -45,7 +45,7 @@ affiliate link: https://amzn.to/4a1DCPT
 * 🚪 **Quantum Gates:** The fundamental operations performed on qubits in quantum computing.  
 * 💻 **Quantum Algorithms:** Examples like Shor's or Grover's algorithm and their potential applications.  
 * 🚧 **Decoherence and Error Correction:** Challenges in maintaining quantum states and building robust quantum computers.  
-* 🏢 **Different [⚛️ Quantum Computing](/content/topics/quantum-computing.md) Architectures:** Superconducting qubits, trapped ions, photonic qubits.  
+* 🏢 **Different [⚛️ Quantum Computing](../topics/quantum-computing.md) Architectures:** Superconducting qubits, trapped ions, photonic qubits.  
 * 🤔 **The Measurement Problem:** Philosophical implications of observation in quantum mechanics.  
   
 ## ❓ Frequently Asked Questions (FAQ)  
@@ -68,10 +68,10 @@ affiliate link: https://amzn.to/4a1DCPT
 ## 📚 Book Recommendations  
   
 ### ✨ Similar  
-* [⚛️👶 Quantum Physics for Babies](/content/books/quantum-physics-for-babies.md) for Babies by Chris Ferrie  
+* [⚛️👶 Quantum Physics for Babies](./quantum-physics-for-babies.md) for Babies by Chris Ferrie  
 * 📊 Statistical Physics for Babies by Chris Ferrie  
 * 🚀 Rocket Science for Babies by Chris Ferrie  
-* [👶📚 Baby University Complete for Babies Board Book Set](/content/books/baby-university-complete-for-babies-board-book-set.md)  
+* [👶📚 Baby University Complete for Babies Board Book Set](./baby-university-complete-for-babies-board-book-set.md)  
   
 ### 🧩 Contrasting  
 * 👶 Baby Loves Quantum Physics! by Ruth Spiro (Focuses more on real-world phenomena)  

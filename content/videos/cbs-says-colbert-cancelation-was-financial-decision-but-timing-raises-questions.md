@@ -10,7 +10,7 @@ Channel: PBS NewsHour
 tags:
 youtube: https://youtu.be/J5dkwpS0QHo
 ---
-[Home](/content/index.md) > [Videos](/content/videos/index.md)  
+[Home](../index.md) > [Videos](./index.md)  
 # 📺💸❓ CBS says Colbert cancelation was financial decision, but timing raises questions  
 ![CBS says Colbert cancelation was financial decision, but timing raises questions](https://youtu.be/J5dkwpS0QHo)  
   
@@ -30,7 +30,7 @@ youtube: https://youtu.be/J5dkwpS0QHo
 This video provides a focused perspective on the cancellation of "The Late Show with Stephen Colbert," primarily attributing it to financial pressures and potential political motivations related to a corporate merger. While it thoroughly covers these aspects, it could be enriched by exploring broader trends in media consumption and the evolving landscape of late-night television beyond the specific financial and political angles presented. A deeper dive into the historical context of late-night show cancellations and renewals, as well as the impact of diverse streaming platforms on traditional broadcast models, would offer a more nuanced understanding.  
   
 ## 📚 Book Recommendations  
-* [📺🌃⚔️ The Late Shift: Letterman, Leno, and the Network Battle for the Night](/content/books/the-late-shift-letterman-leno-and-the-network-battle-for-the-night.md) by Bill Carter: 🎤 Offers a look into the world of late-night talk shows from a comedian's perspective, providing context on the genre's evolution.  
+* [📺🌃⚔️ The Late Shift: Letterman, Leno, and the Network Battle for the Night](../books/the-late-shift-letterman-leno-and-the-network-battle-for-the-night.md) by Bill Carter: 🎤 Offers a look into the world of late-night talk shows from a comedian's perspective, providing context on the genre's evolution.  
 * 💸 *Mergers, Acquisitions, and Corporate Restructurings* by Patrick A. Gaughan: 📈 For a deeper understanding of the financial and regulatory complexities involved in large corporate mergers, like the one mentioned in the video.  
 * 📺 *Live from New York: An Uncensored History of Saturday Night Live* by Tom Shales and James Andrew Miller: 🎭 While not directly about late-night talk shows, it provides insight into the challenges and transformations of long-running television institutions.  
 * 📱 *Streaming, Sharing, Stealing: Big Data and the Future of Entertainment* by Michael D. Smith and Rahul Telang: 🌐 Explores the shift in audience behavior towards streaming and its impact on traditional media, offering a broader view of the challenges faced by broadcast networks.  

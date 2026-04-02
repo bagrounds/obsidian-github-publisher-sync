@@ -12,7 +12,7 @@ force_analyze_links: false
 link_analysis_time: 2026-03-22T06:07:10.709Z
 link_analysis_model: gemini-3.1-flash-lite-preview
 ---
-[Home](/content/index.md) > [Books](/content/books/index.md)  
+[Home](../index.md) > [Books](./index.md)  
 # 🙅‍♀️👹 It Can't Happen Here  
 [🛒 It Can't Happen Here. As an Amazon Associate I earn from qualifying purchases.](https://www.amazon.com/dp/0451525825?tag=bagrounds-20)  
 ✨⚠️ A demagogue exploits fear and division to seize power in America, illustrating democracy's fragility.  
@@ -71,19 +71,19 @@ link_analysis_model: gemini-3.1-flash-lite-preview
   
 ## 📚 Book Recommendations  
 ### 🤝 Similar  
-* [👁️📖 1984](/content/books/1984.md) by George Orwell  
-* [🧪📖 Brave New World](/content/books/brave-new-world.md) by Aldous Huxley  
+* [👁️📖 1984](./1984.md) by George Orwell  
+* [🧪📖 Brave New World](./brave-new-world.md) by Aldous Huxley  
 * 📖 The Handmaid's Tale by Margaret Atwood  
   
 ### ↔️ Contrasting  
-* [🇺🇸 Democracy in America](/content/books/democracy-in-america.md) by Alexis de Tocqueville  
-* [🇺🇸📜 The Federalist Papers](/content/books/the-federalist-papers.md) by Alexander Hamilton, James Madison, and John Jay  
-* 📉 [🌎👎👑💰🏚️ Why Nations Fail: The Origins of Power, Prosperity, and Poverty](/content/books/why-nations-fail-the-origins-of-power-prosperity-and-poverty.md) by Daron Acemoglu and James A. Robinson  
+* [🇺🇸 Democracy in America](./democracy-in-america.md) by Alexis de Tocqueville  
+* [🇺🇸📜 The Federalist Papers](./the-federalist-papers.md) by Alexander Hamilton, James Madison, and John Jay  
+* 📉 [🌎👎👑💰🏚️ Why Nations Fail: The Origins of Power, Prosperity, and Poverty](./why-nations-fail-the-origins-of-power-prosperity-and-poverty.md) by Daron Acemoglu and James A. Robinson  
   
 ### 🔗 Related  
 * 📖 The Rise and Fall of the Third Reich by William L. Shirer  
-* 📖 [👑🚫📜2️⃣0️⃣ On Tyranny: Twenty Lessons from the Twentieth Century](/content/books/on-tyranny.md) by Timothy Snyder  
-* 📖 [💰🤫 Dark Money: The Hidden History of the Billionaires Behind the Rise of the Radical Right](/content/books/dark-money-the-hidden-history-of-the-billionaires-behind-the-rise-of-the-radical-right.md) by Jane Mayer  
+* 📖 [👑🚫📜2️⃣0️⃣ On Tyranny: Twenty Lessons from the Twentieth Century](./on-tyranny.md) by Timothy Snyder  
+* 📖 [💰🤫 Dark Money: The Hidden History of the Billionaires Behind the Rise of the Radical Right](./dark-money-the-hidden-history-of-the-billionaires-behind-the-rise-of-the-radical-right.md) by Jane Mayer  
   
 ## 🫵 What Do You Think?  
 💭 What aspects of It Can't Happen Here resonate most powerfully with current events, or which character's response to the crisis do you find most compelling or cautionary?  

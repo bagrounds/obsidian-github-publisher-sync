@@ -11,7 +11,7 @@ tags:
   - MMT
 youtube: https://youtu.be/tF1JIT9kcpw
 ---
-[Home](/content/index.md) > [Videos](/content/videos/index.md) | [👨‍🏫📉💵 Warren Mosler](/content/people/warren-mosler.md)  
+[Home](../index.md) > [Videos](./index.md) | [👨‍🏫📉💵 Warren Mosler](../people/warren-mosler.md)  
 # 🇦🇹💰🆚 Modern Monetary Theory Showdown  
 ![The Austrian Economics vs Modern Monetary Theory Showdown | Robert Murphy and Nathan Tankus](https://youtu.be/tF1JIT9kcpw)  
   
@@ -56,7 +56,7 @@ youtube: https://youtu.be/tF1JIT9kcpw
   
 ### ↔️ Similar  
   
-* [💰📉➡️📈🗳️ The Deficit Myth: Modern Monetary Theory and the Birth of the People's Economy](/content/books/the-deficit-myth.md) by Stephanie Kelton  
+* [💰📉➡️📈🗳️ The Deficit Myth: Modern Monetary Theory and the Birth of the People's Economy](../books/the-deficit-myth.md) by Stephanie Kelton  
     * 📝 This book is foundational to understanding the core MMT position, explaining the sectoral balance approach and arguing that the only constraint on government spending is inflation, not solvency.  
 * 📙 What Has Government Done to Our Money? by Murray N. Rothbard  
     * 💰 This classic Austrian text provides a deep dive into the historical progression of monetary systems, strongly critiquing fiat money and the government's monopoly over money creation, aligning with the video's Austrian perspective.  
@@ -65,12 +65,12 @@ youtube: https://youtu.be/tF1JIT9kcpw
   
 * 📘 Economics in One Lesson by Henry Hazlitt  
     * 💡 This book provides a clear, microeconomic-focused critique of government interventions and spending, arguing for the importance of considering unseen consequences, which directly contrasts with MMT's macro-focused functional finance approach.  
-* [🧑‍💼🏦💸 The General Theory of Employment, Interest, and Money](/content/books/the-general-theory-of-employment-interest-and-money.md) by John Maynard Keynes  
+* [🧑‍💼🏦💸 The General Theory of Employment, Interest, and Money](../books/the-general-theory-of-employment-interest-and-money.md) by John Maynard Keynes  
     * 🌍 This is the seminal work that provides the theoretical basis for modern macroeconomics and countercyclical fiscal policy, which MMT expands upon but fundamentally differs from in its understanding of the monetary operations of a sovereign government.  
   
 ### 🎨 Creatively Related  
   
-* [🏛️💰 Debt: The First 5,000 Years](/content/books/debt-the-first-5000-years.md) by David Graeber  
+* [🏛️💰 Debt: The First 5,000 Years](../books/debt-the-first-5000-years.md) by David Graeber  
     * 🤯 This anthropological study offers a compelling history of debt, challenging conventional economic narratives about money and barter, and providing a historical context that supports MMT's focus on money as a social and legal creation rather than just a medium of exchange.  
-* [🤔🐇🐢 Thinking, Fast and Slow](/content/books/thinking-fast-and-slow.md) by Daniel Kahneman  
+* [🤔🐇🐢 Thinking, Fast and Slow](../books/thinking-fast-and-slow.md) by Daniel Kahneman  
     * 🧠 This book on behavioral economics is relevant because it explores the cognitive biases that influence financial decision-making, which can help explain why economic policies, like fear of the deficit, often rely on emotionally resonant but economically flawed arguments from the public and policymakers.

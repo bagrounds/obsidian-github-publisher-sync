@@ -7,7 +7,7 @@ share: true
 affiliate link: https://amzn.to/43HjoI1
 CTA: 🤰 Support mothers.
 ---
-[Home](/content/index.md) > [Books](/content/books/index.md)  
+[Home](../index.md) > [Books](./index.md)  
 # 😫👩‍👧‍👦 Screaming on the Inside: The Unsustainability of American Motherhood  
 [🛒 Screaming on the Inside: The Unsustainability of American Motherhood. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/43HjoI1)  
   
@@ -42,9 +42,9 @@ CTA: 🤰 Support mothers.
   
 ### ⚖️ Contrasting Perspectives (Offering Different Angles on Motherhood or Societal Expectations)  
   
-* 📊 **[🫄➕ Expecting Better: Why the Conventional Pregnancy Wisdom Is Wrong - and What You Really Need to Know](/content/books/expecting-better.md) by Emily Oster:** While acknowledging the difficulties, Oster's book takes a data-driven approach to pregnancy and parenting, empowering mothers with information to make informed choices rather than focusing solely on societal pressures.  
+* 📊 **[🫄➕ Expecting Better: Why the Conventional Pregnancy Wisdom Is Wrong - and What You Really Need to Know](./expecting-better.md) by Emily Oster:** While acknowledging the difficulties, Oster's book takes a data-driven approach to pregnancy and parenting, empowering mothers with information to make informed choices rather than focusing solely on societal pressures.  
 * 🇨🇳 **The First 40 Days: The Essential Art of Nourishing the New Mother by Heng Ou, Amely Greeven, and Marisa Belger:** This book focuses on the importance of postpartum care and nourishment based on traditional Chinese philosophy, offering a different cultural perspective on supporting new mothers.  
-* 🧠 **[❤️👪 Good Inside: A Guide to Becoming the Parent You Want to Be](/content/books/good-inside-a-guide-to-becoming-the-parent-you-want-to-be.md) by Dr. Becky Kennedy:** This book focuses on a specific parenting philosophy centered on connection and understanding a child's inner world, offering a different approach to navigating the parent-child relationship.  
+* 🧠 **[❤️👪 Good Inside: A Guide to Becoming the Parent You Want to Be](./good-inside-a-guide-to-becoming-the-parent-you-want-to-be.md) by Dr. Becky Kennedy:** This book focuses on a specific parenting philosophy centered on connection and understanding a child's inner world, offering a different approach to navigating the parent-child relationship.  
   
 ### ✨ Creatively Related (Exploring Motherhood Through Different Genres or Lenses)  
   
@@ -58,5 +58,5 @@ CTA: 🤰 Support mothers.
 * 🚐 **Rage Against the Minivan by Kristen Howerton:** A candid exploration of modern motherhood, societal pressures, and embracing imperfection, told through personal anecdotes.  
 * 📜 **Of Woman Born: Motherhood as Experience and Institution by Adrienne Rich:** A foundational feminist text that critically analyzes the institution of motherhood and its societal constraints on women.  
   
-## 💬 [Gemini](/content/software/gemini.md) Prompt (gemini-2.5-flash-preview-04-17)  
+## 💬 [Gemini](../software/gemini.md) Prompt (gemini-2.5-flash-preview-04-17)  
 > Write a markdown-formatted (start headings at level H2) book report, followed by a plethora of additional similar, contrasting, and creatively related book recommendations on Screaming on the Inside: The Unsustainability of American Motherhood. Be thorough in content discussed but concise and economical with your language. Structure the report with section headings and bulleted lists to avoid long blocks of text.

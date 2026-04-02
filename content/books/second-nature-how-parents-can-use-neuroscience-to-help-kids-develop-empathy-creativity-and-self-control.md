@@ -6,7 +6,7 @@ URL: https://bagrounds.org/books/second-nature-how-parents-can-use-neuroscience-
 share: true
 affiliate link: https://amzn.to/4lbJnhQ
 ---
-[Home](/content/index.md) > [Books](/content/books/index.md)  
+[Home](../index.md) > [Books](./index.md)  
 # 👨‍👩‍👧‍👦🧠 Second Nature: How Parents Can Use Neuroscience to Help Kids Develop Empathy, Creativity, and Self-Control  
 [🛒 Second Nature: How Parents Can Use Neuroscience to Help Kids Develop Empathy, Creativity, and Self-Control. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4lbJnhQ)  
   
@@ -33,9 +33,9 @@ affiliate link: https://amzn.to/4lbJnhQ
   
 ### 👪 Similar Books (Parenting, Neuroscience, Emotional Intelligence)  
   
-* **[🕳️🧠👶🏽 The Whole-Brain Child: 12 Revolutionary Strategies to Nurture Your Child's Developing Mind](/content/books/the-whole-brain-child.md)** by Daniel J. Siegel and Tina Payne Bryson: This highly recommended book by a neuroscientist and parenting expert also focuses on 🧠 brain development and offers practical strategies for dealing with everyday parenting challenges by fostering emotional intelligence and integration of the child's brain.  
-* **[🚫🎭🧠 No-Drama Discipline: The Whole-Brain Way to Calm the Chaos and Nurture Your Child's Developing Mind](/content/books/no-drama-discipline.md)** by Daniel J. Siegel and Tina Payne Bryson: A follow-up to *The Whole-Brain Child*, this book specifically applies neuroscience principles to discipline, emphasizing connection over punishment to help children develop self-regulation.  
-* **[👍🧠 The Yes Brain: How to Cultivate Courage, Curiosity, and Resilience in Your Child](/content/books/the-yes-brain.md)** by Daniel J. Siegel and Tina Payne Bryson: This book explores how to foster a "yes brain" in children, characterized by openness, resilience, and creativity, aligning well with *Second Nature*'s themes.  
+* **[🕳️🧠👶🏽 The Whole-Brain Child: 12 Revolutionary Strategies to Nurture Your Child's Developing Mind](./the-whole-brain-child.md)** by Daniel J. Siegel and Tina Payne Bryson: This highly recommended book by a neuroscientist and parenting expert also focuses on 🧠 brain development and offers practical strategies for dealing with everyday parenting challenges by fostering emotional intelligence and integration of the child's brain.  
+* **[🚫🎭🧠 No-Drama Discipline: The Whole-Brain Way to Calm the Chaos and Nurture Your Child's Developing Mind](./no-drama-discipline.md)** by Daniel J. Siegel and Tina Payne Bryson: A follow-up to *The Whole-Brain Child*, this book specifically applies neuroscience principles to discipline, emphasizing connection over punishment to help children develop self-regulation.  
+* **[👍🧠 The Yes Brain: How to Cultivate Courage, Curiosity, and Resilience in Your Child](./the-yes-brain.md)** by Daniel J. Siegel and Tina Payne Bryson: This book explores how to foster a "yes brain" in children, characterized by openness, resilience, and creativity, aligning well with *Second Nature*'s themes.  
 * 😊 **Calm Parents, Happy Kids: The Secrets of Stress-Free Parenting** by Laura Markham: This book presents a program based on brain development research focusing on emotional intelligence, connection, empathy, and positive communication and discipline.  
 * 🗣️ **How to Talk So Kids Will Listen & Listen So Kids Will Talk** by Adele Faber and Elaine Mazlish: A classic in parenting communication, this book provides practical techniques for improving communication with children, which is foundational for building empathy and understanding.  
   
@@ -47,13 +47,13 @@ affiliate link: https://amzn.to/4lbJnhQ
   
 ### 🎨 Creatively Related Books (Broader Themes)  
   
-* **[🌱🧘🏼‍♀️🏆 Mindset: The New Psychology of Success](/content/books/mindset.md)** by Carol S. Dweck: This book explores the power of a growth mindset, which is closely related to fostering creativity and resilience by emphasizing effort and learning over fixed abilities.  
-* **[⚛️🔄 Atomic Habits: An Easy & Proven Way to Build Good Habits & Break Bad Ones](/content/books/atomic-habits.md)** by James Clear: While not specifically about parenting, the principles of habit formation discussed in this book can be applied by parents to help children develop positive routines related to self-control and responsibility.  
-* **[❤️🧠📈🤔 Emotional Intelligence: Why It Can Matter More Than IQ](/content/books/emotional-intelligence.md)** by Daniel Goleman: This foundational book on emotional intelligence in adults provides a broader understanding of the skills *Second Nature* aims to cultivate in children, highlighting their importance throughout life.  
-* **[🌊🧘🧠📈 Flow: The Psychology of Optimal Experience](/content/books/flow-the-psychology-of-optimal-experience.md)** by Mihaly Csikszentmihalyi: This book explores the concept of "flow," a state of complete absorption in an activity, which is highly relevant to fostering creativity and intrinsic motivation in children.  
+* **[🌱🧘🏼‍♀️🏆 Mindset: The New Psychology of Success](./mindset.md)** by Carol S. Dweck: This book explores the power of a growth mindset, which is closely related to fostering creativity and resilience by emphasizing effort and learning over fixed abilities.  
+* **[⚛️🔄 Atomic Habits: An Easy & Proven Way to Build Good Habits & Break Bad Ones](./atomic-habits.md)** by James Clear: While not specifically about parenting, the principles of habit formation discussed in this book can be applied by parents to help children develop positive routines related to self-control and responsibility.  
+* **[❤️🧠📈🤔 Emotional Intelligence: Why It Can Matter More Than IQ](./emotional-intelligence.md)** by Daniel Goleman: This foundational book on emotional intelligence in adults provides a broader understanding of the skills *Second Nature* aims to cultivate in children, highlighting their importance throughout life.  
+* **[🌊🧘🧠📈 Flow: The Psychology of Optimal Experience](./flow-the-psychology-of-optimal-experience.md)** by Mihaly Csikszentmihalyi: This book explores the concept of "flow," a state of complete absorption in an activity, which is highly relevant to fostering creativity and intrinsic motivation in children.  
 * 💖 **The Gifts of Imperfection: Let Go of Who You Think You're Supposed to Be and Embrace Who You Are** by Brené Brown: This book focuses on vulnerability, courage, compassion, and connection in adults, themes that are deeply connected to fostering empathy and self-acceptance in both parents and children.  
   
-## 💬 [Gemini](/content/software/gemini.md) Prompt (gemini-2.5-flash-preview-04-17)  
+## 💬 [Gemini](../software/gemini.md) Prompt (gemini-2.5-flash-preview-04-17)  
 > Write a markdown-formatted (start headings at level H2) book report, followed by a plethora of additional similar, contrasting, and creatively related book recommendations on Second Nature: How Parents Can Use Neuroscience to Help Kids Develop Empathy, Creativity, and Self-Control. Be thorough in content discussed but concise and economical with your language. Structure the report with section headings and bulleted lists to avoid long blocks of text.  
   
 ## 🐦 Tweet  

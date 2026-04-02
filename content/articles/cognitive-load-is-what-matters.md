@@ -7,7 +7,7 @@ URL: https://bagrounds.org/articles/cognitive-load-is-what-matters
 Author:
 tags:
 ---
-[Home](/content/index.md) > [Articles](/content/articles/index.md)  
+[Home](../index.md) > [Articles](./index.md)  
 # [🧠📈🔑 Cognitive load is what matters](https://minds.md/zakirullin/cognitive#long)  
 ## 🤖 AI Summary  
 * 🧠 **Cognitive load** is how much a developer needs to think in order to complete a task.  
@@ -36,10 +36,10 @@ tags:
 ## 📚 Book Recommendations  
 * 💡 **Similar**  
     * A Philosophy of Software Design: 📘 Reinforces the concepts of deep modules and complexity reduction through principles like information hiding and simple interfaces.  
-    * [🧑‍🤝‍🧑⚙️➡️ Team Topologies: Organizing Business and Technology Teams for Fast Flow](/content/books/team-topologies-organizing-business-and-technology-teams-for-fast-flow.md): 🗺️ Provides a better framework for splitting cognitive load across teams by defining clear team interaction patterns and service boundaries, contrasting with the ambiguity of some DDD principles.  
+    * [🧑‍🤝‍🧑⚙️➡️ Team Topologies: Organizing Business and Technology Teams for Fast Flow](../books/team-topologies-organizing-business-and-technology-teams-for-fast-flow.md): 🗺️ Provides a better framework for splitting cognitive load across teams by defining clear team interaction patterns and service boundaries, contrasting with the ambiguity of some DDD principles.  
 * 🥊 **Contrasting**  
-    * [🧼💾 Clean Code: A Handbook of Agile Software Craftsmanship](/content/books/clean-code.md): 📖 Advocates for many of the practices the article labels as harmful, such as extremely short functions and classes, which the author argues lead to mentally taxing shallow modules.  
-    * [🧩🧱⚙️❤️ Domain-Driven Design: Tackling Complexity in the Heart of Software](/content/books/domain-driven-design.md): 🏰 Focuses on managing the *intrinsic* complexity of a domain through modeling, potentially increasing *extraneous* cognitive load initially, but promising long-term clarity within bounded contexts.  
+    * [🧼💾 Clean Code: A Handbook of Agile Software Craftsmanship](../books/clean-code.md): 📖 Advocates for many of the practices the article labels as harmful, such as extremely short functions and classes, which the author argues lead to mentally taxing shallow modules.  
+    * [🧩🧱⚙️❤️ Domain-Driven Design: Tackling Complexity in the Heart of Software](../books/domain-driven-design.md): 🏰 Focuses on managing the *intrinsic* complexity of a domain through modeling, potentially increasing *extraneous* cognitive load initially, but promising long-term clarity within bounded contexts.  
 * 🔭 **Creatively Related**  
-    * [🤔🐇🐢 Thinking, Fast and Slow](/content/books/thinking-fast-and-slow.md): 🧠 Explores the two systems of thought in the brain, providing a psychological basis for why code should be designed to minimize effortful, high cognitive load (System 2) thinking.  
-    * [💺🚪💡🤔 The Design of Everyday Things](/content/books/the-design-of-everyday-things.md): 🛠️ Discusses how good design minimizes the cognitive effort required to use physical objects, a principle directly applicable to designing software interfaces and codebases for human consumption.
+    * [🤔🐇🐢 Thinking, Fast and Slow](../books/thinking-fast-and-slow.md): 🧠 Explores the two systems of thought in the brain, providing a psychological basis for why code should be designed to minimize effortful, high cognitive load (System 2) thinking.  
+    * [💺🚪💡🤔 The Design of Everyday Things](../books/the-design-of-everyday-things.md): 🛠️ Discusses how good design minimizes the cognitive effort required to use physical objects, a principle directly applicable to designing software interfaces and codebases for human consumption.

@@ -7,7 +7,7 @@ share: true
 affiliate link: https://amzn.to/3GJIMFp
 CTA: Expose the conspiracy.
 ---
-[Home](/content/index.md) > [Books](/content/books/index.md)  
+[Home](../index.md) > [Books](./index.md)  
 # 🇷🇺🤫🇺🇸 Collusion: Secret Meetings, Dirty Money, and How Russia Helped Donald Trump Win  
 [🛒 Collusion: Secret Meetings, Dirty Money, and How Russia Helped Donald Trump Win. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3GJIMFp)  
   
@@ -46,8 +46,8 @@ Critics have noted that while the book presents a compelling case based on circu
   
 These books delve into related aspects of 🇷🇺 Russian influence, the Trump administration, and the investigations into the 🇺🇸 2016 election.  
   
-* **[😱🤡🇺🇸 Fear: Trump in the White House](/content/books/fear.md) by Bob Woodward:** Provides an inside look at the Trump administration during the period of the Russia investigation, detailing the environment and key players involved.  
-* **[🇷🇺🪝🇺🇸 American Kompromat: How the KGB Cultivated Donald Trump, and Other Tales of Sex, Greed, Power, and Treachery](/content/books/american-kompromat-how-the-kgb-cultivated-donald-trump-and-other-tales-of-sex-greed-power-and-treachery.md) by Craig Unger:** Explores alleged long-term connections between Trump and Russian intelligence using the concept of "kompromat" as a central theme.  
+* **[😱🤡🇺🇸 Fear: Trump in the White House](./fear.md) by Bob Woodward:** Provides an inside look at the Trump administration during the period of the Russia investigation, detailing the environment and key players involved.  
+* **[🇷🇺🪝🇺🇸 American Kompromat: How the KGB Cultivated Donald Trump, and Other Tales of Sex, Greed, Power, and Treachery](./american-kompromat-how-the-kgb-cultivated-donald-trump-and-other-tales-of-sex-greed-power-and-treachery.md) by Craig Unger:** Explores alleged long-term connections between Trump and Russian intelligence using the concept of "kompromat" as a central theme.  
 * 📜 **"The Mueller Report: The Final Report of the Special Counsel Into Donald Trump, Russia, and Collusion" by Robert S. Mueller III:** The official document outlining the findings of the Special Counsel's investigation into Russian interference and related matters.  
 * 🤝 **"Proof of Conspiracy: How Trump's International Collusion Is Threatening American Democracy" by Seth Abramson:** Builds a case for a conspiracy by connecting various public pieces of evidence and events.  
 * 💸 **"Freezing Order: A True Story of Money Laundering, Murder, and Surviving Vladimir Putin's Wrath" by Bill Browder:** While not directly about the 🇺🇸 2016 election, it exposes the mechanisms of Russian financial corruption and state-sponsored violence, providing crucial context for the "dirty money" aspect of *Collusion*.  
@@ -70,7 +70,7 @@ These books explore broader themes connected to *Collusion*, such as espionage, 
 * 🎭 **"The Plot Against America" by Philip Roth:** A fictional work imagining an alternate American history where an isolationist, potentially fascistic leader comes to power, offering a literary lens on anxieties about democracy's fragility.  
 * 🕵️ **Works by John le Carré:** Classic espionage novels that explore the complexities of the spy world, trust, and betrayal, echoing the atmosphere and themes of intrigue present in *Collusion*.  
   
-## 💬 [Gemini](/content/software/gemini.md) Prompt (gemini-2.5-flash-preview-04-17)  
+## 💬 [Gemini](../software/gemini.md) Prompt (gemini-2.5-flash-preview-04-17)  
 > Write a markdown-formatted (start headings at level H2) book report, followed by a plethora of additional similar, contrasting, and creatively related book recommendations on Collusion: Secret Meetings, Dirty Money, and How Russia Helped Donald Trump Win. Be thorough in content discussed but concise and economical with your language. Structure the report with section headings and bulleted lists to avoid long blocks of text.  
   
 ## 🐦 Tweet  

@@ -10,7 +10,7 @@ Channel: More Perfect Union
 tags:
 youtube: https://youtube.com/shorts/PU_ItsNyhGA
 ---
-[Home](/content/index.md) > [Videos](/content/videos/index.md)  
+[Home](../index.md) > [Videos](./index.md)  
 # 🚫🏢👑🔄👥 Corporate America’s Biggest Enemy Will Now Lead Mamdani’s Transition Team  
 ![Corporate America’s Biggest Enemy Will Now Lead Mamdani’s Transition Team](https://youtube.com/embed/PU_ItsNyhGA)  
   
@@ -44,7 +44,7 @@ youtube: https://youtube.com/shorts/PU_ItsNyhGA
 ## 📚 Book Recommendations  
   
 ### ↔️ Similar  
-* [👑⚖️ The Curse of Bigness: Antitrust in the New Gilded Age](/content/books/the-curse-of-bigness-antitrust-in-the-new-gilded-age.md) by Tim Wu advocates for a return to the older, broader anti-monopoly tradition to curb the power of massive corporations, a key idea of the New Brandeis movement.  
+* [👑⚖️ The Curse of Bigness: Antitrust in the New Gilded Age](../books/the-curse-of-bigness-antitrust-in-the-new-gilded-age.md) by Tim Wu advocates for a return to the older, broader anti-monopoly tradition to curb the power of massive corporations, a key idea of the New Brandeis movement.  
 * 📗 The Antitrust Casebook: Principles and Applications by William E Kovacic and Andrew N Kleit provides a detailed look at contemporary antitrust law, offering a comprehensive framework that aligns with Khan's enforcement efforts against powerful firms.  
   
 ### 🆚 Contrasting  
@@ -53,4 +53,4 @@ youtube: https://youtube.com/shorts/PU_ItsNyhGA
   
 ### 🎨 Creatively Related  
 * 📖 The Power Broker: Robert Moses and the Fall of New York by Robert A Caro details how a single unelected official amassed and wielded immense, unchecked power over the public sphere through control of infrastructure, tangentially relating to the video's theme of **private economic power overwhelming public governance**.  
-* [🏛️💰 Debt: The First 5,000 Years](/content/books/debt-the-first-5000-years.md) by David Graeber explores the relationship between debt, money, and power across societies, offering a creative context for understanding how **economic relationships affect liberty and democracy**, Khan's stated concern.
+* [🏛️💰 Debt: The First 5,000 Years](../books/debt-the-first-5000-years.md) by David Graeber explores the relationship between debt, money, and power across societies, offering a creative context for understanding how **economic relationships affect liberty and democracy**, Khan's stated concern.

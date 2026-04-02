@@ -7,7 +7,7 @@ share: true
 affiliate link: https://amzn.to/44dqshb
 CTA: 💥 Uncover the chaos.
 ---
-[Home](/content/index.md) > [Books](/content/books/index.md)  
+[Home](../index.md) > [Books](./index.md)  
 # 🔥💣💥😡🤬 Fire and Fury: Inside the Trump White House  
 [🛒 Fire and Fury: Inside the Trump White House. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/44dqshb)  
   
@@ -37,10 +37,10 @@ CTA: 💥 Uncover the chaos.
   
 ### 📖 Similar Books (Focus on Trump Administration/Politics)  
   
-* **[😱🤡🇺🇸 Fear: Trump in the White House](/content/books/fear.md) by Bob Woodward:** ⚖️ Similar to "Fire and Fury" in its focus on the internal dynamics and perceived dysfunction of the Trump White House, but generally regarded as more rigorously reported by a veteran investigative journalist.  
-* **[⬆️🤥🏛️ A Higher Loyalty: Truth, Lies, and Leadership](/content/books/a-higher-loyalty-truth-lies-and-leadership.md) by James Comey:** 🕵️ Offers a firsthand account from the perspective of the former FBI Director who was fired by Trump, providing an insider's view of interactions with the President and the political climate.  
+* **[😱🤡🇺🇸 Fear: Trump in the White House](./fear.md) by Bob Woodward:** ⚖️ Similar to "Fire and Fury" in its focus on the internal dynamics and perceived dysfunction of the Trump White House, but generally regarded as more rigorously reported by a veteran investigative journalist.  
+* **[⬆️🤥🏛️ A Higher Loyalty: Truth, Lies, and Leadership](./a-higher-loyalty-truth-lies-and-leadership.md) by James Comey:** 🕵️ Offers a firsthand account from the perspective of the former FBI Director who was fired by Trump, providing an insider's view of interactions with the President and the political climate.  
 * 📖 **The Divider: Trump in the White House, 2017-2021 by Peter Baker and Susan Glasser:** 🗓️ Provides an extensive account covering the entire Trump presidency, offering a broad historical perspective based on numerous interviews.  
-* **[👹🐍🛢️🇺🇸 Confidence Man: The Making of Donald Trump and the Breaking of America](/content/books/confidence-man-the-making-of-donald-trump-and-the-breaking-of-america.md) by Maggie Haberman:** 👤 Written by a long-time Trump observer, this book delves into Trump's background and career, providing context for his presidency based on deep sourcing.  
+* **[👹🐍🛢️🇺🇸 Confidence Man: The Making of Donald Trump and the Breaking of America](./confidence-man-the-making-of-donald-trump-and-the-breaking-of-america.md) by Maggie Haberman:** 👤 Written by a long-time Trump observer, this book delves into Trump's background and career, providing context for his presidency based on deep sourcing.  
 * 📖 **Unhinged: An Insider's Account of the Trump White House by Omarosa Manigault Newman:** 😠 Another tell-all from a former White House insider, offering a highly critical perspective on the President and his administration.  
   
 ### 📖 Contrasting Books (Different perspectives on Trump/Politics)  
@@ -55,9 +55,9 @@ CTA: 💥 Uncover the chaos.
 * 📖 **The Man Who Owns the News: Inside the Secret World of Rupert Murdoch by Michael Wolff:** 📰 Another book by Michael Wolff that examines a powerful media figure, relevant for understanding the media landscape Trump operated within and Wolff's own focus.  
 * 📖 **Behind the White House Curtain: A Senior Journalist's Story of Covering the President—and Why It Matters by Steven L Herman:** 🎤 Offers a perspective on covering the Trump White House from the viewpoint of a nonpartisan journalist, highlighting the challenges faced by the press during this period.  
 * 📖 **The Last Politician: Inside Joe Biden's White House and the Struggle for America's Future by Franklin Foer:** 🇺🇸 Provides an insider account of the subsequent presidency, offering a point of comparison in terms of White House operations, challenges, and leadership style.  
-* **[🏭🫡 Manufacturing Consent: The Political Economy of the Mass Media](/content/books/manufacturing-consent.md) by Edward S. Herman and Noam Chomsky:** 📚 While a more academic text, it provides a critical framework for analyzing how media operates and shapes public perception, offering a broader context for understanding the media dynamics described in "Fire and Fury."  
+* **[🏭🫡 Manufacturing Consent: The Political Economy of the Mass Media](./manufacturing-consent.md) by Edward S. Herman and Noam Chomsky:** 📚 While a more academic text, it provides a critical framework for analyzing how media operates and shapes public perception, offering a broader context for understanding the media dynamics described in "Fire and Fury."  
   
-## 💬 [Gemini](/content/software/gemini.md) Prompt (gemini-2.5-flash-preview-04-17)  
+## 💬 [Gemini](../software/gemini.md) Prompt (gemini-2.5-flash-preview-04-17)  
 > Write a markdown-formatted (start headings at level H2) book report, followed by a plethora of additional similar, contrasting, and creatively related book recommendations on Fire and Fury: Inside the Trump White House. Be thorough in content discussed but concise and economical with your language. Structure the report with section headings and bulleted lists to avoid long blocks of text.  
   
 ## 🐦 Tweet  

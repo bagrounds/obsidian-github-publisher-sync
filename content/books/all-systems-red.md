@@ -13,7 +13,7 @@ force_analyze_links: false
 link_analysis_time: 2026-03-25T04:40:04.747Z
 link_analysis_model: gemini-3.1-flash-lite-preview
 ---
-[Home](/content/index.md) > [Books](/content/books/index.md) | [⏭️ 🤖🧠⚙️ Artificial Condition](/content/books/artificial-condition.md)  
+[Home](../index.md) > [Books](./index.md) | [⏭️ 🤖🧠⚙️ Artificial Condition](./artificial-condition.md)  
 # 🚨🤖💥 All Systems Red  
 [🛒 All Systems Red. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3OLjFFR)  
   
@@ -63,7 +63,7 @@ A: 🤓 All Systems Red is popular with both adult and young adult audiences due
 ### ↔️ Similar But Different  
   
 * 🕵️ Altered Carbon by Richard K. Morgan  
-* [☄️🧑‍🚀🙏🌍 Project Hail Mary](/content/books/project-hail-mary.md) by Andy Weir  
+* [☄️🧑‍🚀🙏🌍 Project Hail Mary](./project-hail-mary.md) by Andy Weir  
   
 ## 🫵 What Do You Think?  
   

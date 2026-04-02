@@ -10,7 +10,7 @@ Channel: Senator Sheldon Whitehouse
 tags:
 youtube: https://youtu.be/AwW_117CODk
 ---
-[Home](/content/index.md) > [Videos](/content/videos/index.md)  
+[Home](../index.md) > [Videos](./index.md)  
 # 🧑‍🤝‍🧑💰⛽ Sen. Whitehouse: «Trump is Moving Money from Pockets of Normal Americans to Fossil Fuel Megadonors»  
 ![Sen. Whitehouse: «Trump is Moving Money from Pockets of Normal Americans to Fossil Fuel Megadonors»](https://youtu.be/AwW_117CODk)  
   
@@ -50,7 +50,7 @@ youtube: https://youtu.be/AwW_117CODk
 ## 📚 Book Recommendations  
   
 * 📚 **Similar**  
-    * [💰🤫 Dark Money: The Hidden History of the Billionaires Behind the Rise of the Radical Right](/content/books/dark-money-the-hidden-history-of-the-billionaires-behind-the-rise-of-the-radical-right.md): This book deeply explores the secretive funding network used by wealthy conservatives to influence politics and policy, aligning with the video's theme of big donors dictating energy policy.  
+    * [💰🤫 Dark Money: The Hidden History of the Billionaires Behind the Rise of the Radical Right](../books/dark-money-the-hidden-history-of-the-billionaires-behind-the-rise-of-the-radical-right.md): This book deeply explores the secretive funding network used by wealthy conservatives to influence politics and policy, aligning with the video's theme of big donors dictating energy policy.  
     * 💰 The Shock Doctrine The Rise of Disaster Capitalism: Discusses how powerful entities exploit crises—like the "energy emergency" mentioned—to push through unpopular policies that enrich a few, directly relating to the idea of a manufactured crisis for wealth transfer.  
     * 🛢️ The Citizens Guide to the Climate Resistance: Offers strategies for combating fossil fuel influence and provides a framework for understanding the political opposition to climate action.  
   
@@ -60,6 +60,6 @@ youtube: https://youtu.be/AwW_117CODk
     * 📉 False Alarm How Climate Change Panic Costs Us Trillions, Hurts the Poor, and Fails to Fix the Planet: Challenges the narrative of impending climate catastrophe and argues that aggressive climate policies are economically harmful, contrasting the video's warning about a climate-driven economic collapse.  
   
 * 📚 **Creatively Related**  
-    * [💰💥📉 The Big Short: Inside the Doomsday Machine](/content/books/the-big-short-inside-the-doomsday-machine.md): Excellent narrative non-fiction detailing the mechanics of the 2008 housing collapse, providing crucial context for the video's prediction of a climate-risk-driven coastal property crash mirroring the mortgage crisis.  
+    * [💰💥📉 The Big Short: Inside the Doomsday Machine](../books/the-big-short-inside-the-doomsday-machine.md): Excellent narrative non-fiction detailing the mechanics of the 2008 housing collapse, providing crucial context for the video's prediction of a climate-risk-driven coastal property crash mirroring the mortgage crisis.  
     * 🪙 Cryptoassets The Innovative Investor's Guide to Bitcoin and Beyond: Provides background on the "crypto world" and technology, giving context on the new powerful donor class whose energy demands are highlighted as a cause of soaring electric prices.  
     * 🌊 The Uninhabitable Earth Life After Warming: A powerful book detailing worst-case scenarios for climate change, serving as a creative link to the extreme home value loss (minus 100%) predicted in the video's conclusion.

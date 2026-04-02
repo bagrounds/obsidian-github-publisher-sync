@@ -6,7 +6,7 @@ URL: https://bagrounds.org/books/an-american-sickness-how-healthcare-became-big-
 share: true
 affiliate link: https://amzn.to/3WXwRZi
 ---
-[Home](/content/index.md) > [Books](/content/books/index.md)  
+[Home](../index.md) > [Books](./index.md)  
 # 💰⚕️⬆️ An American Sickness: How Healthcare Became Big Business and How You Can Take It Back  
 [🛒 An American Sickness: How Healthcare Became Big Business and How You Can Take It Back. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3WXwRZi)  
   
@@ -81,12 +81,12 @@ affiliate link: https://amzn.to/3WXwRZi
 * 🤕 Sick: The Untold Story of America's Health Care Crisis by Jonathan Cohn  
   
 ### Contrasting  
-* [⚕️💰🇺🇸 The Healing of America: A Global Quest for Better, Cheaper, and Fairer Health Care](/content/books/the-healing-of-america-a-global-quest-for-better-cheaper-and-fairer-health-care.md) by T.R. Reid (explores global healthcare systems)  
+* [⚕️💰🇺🇸 The Healing of America: A Global Quest for Better, Cheaper, and Fairer Health Care](./the-healing-of-america-a-global-quest-for-better-cheaper-and-fairer-health-care.md) by T.R. Reid (explores global healthcare systems)  
 * 📱 The Patient Will See You Now by Eric J. Topol (focus on digital health)  
 * 🏛️ Reinventing American Healthcare by Ezekiel Emanuel (policy-focused solutions)  
   
 ### Related  
-* [⚕️💀 Being Mortal: Medicine and What Matters in the End](/content/books/being-mortal-medicine-and-what-matters-in-the-end.md) by Atul Gawande (ethics and end-of-life care)  
+* [⚕️💀 Being Mortal: Medicine and What Matters in the End](./being-mortal-medicine-and-what-matters-in-the-end.md) by Atul Gawande (ethics and end-of-life care)  
 * 📜 Medical Apartheid by Harriet A. Washington (history of medical experimentation)  
 * 📊 Economics of Health and Medical Care by Paul J. Feldstein (academic health economics)  
   

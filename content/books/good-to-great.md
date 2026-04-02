@@ -7,8 +7,11 @@ URL: https://bagrounds.org/books/good-to-great
 Author:
 tags:
 affiliate link: https://amzn.to/455mhoo
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_time: 2026-04-01T00:00:00Z
+force_analyze_links: false
 ---
-[Home](/content/index.md) > [Books](/content/books/index.md)  
+[Home](../index.md) > [Books](./index.md)  
 # 👍➡️👍👍 Good to Great: Why Some Companies Make the Leap...And Others Don't  
 [🛒 Good to Great: Why Some Companies Make the Leap...And Others Don't. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/455mhoo)  
   
@@ -75,10 +78,10 @@ affiliate link: https://amzn.to/455mhoo
   
 ### Additional Book Recommendations 📚  
 * **Best Alternate Book on the Same Topic:** "Built to Last" by Jim Collins and Jerry I. Porras. This book examines what makes truly enduring companies. 🏢  
-* **Best Tangentially Related Book:** "[The 7 Habits of Highly Effective People](/content/books/the-7-habits-of-highly-effective-people.md)" by Stephen R. Covey. It focuses on personal effectiveness and character development, which are essential for Level 5 leadership. 👤  
-* **Best Diametrically Opposed Book:** "[The Lean Startup](/content/books/the-lean-startup.md)" by Eric Ries. It emphasizes rapid experimentation and pivoting, contrasting with the disciplined, long-term approach of "Good to Great". 🧪  
+* **Best Tangentially Related Book:** "[The 7 Habits of Highly Effective People](./the-7-habits-of-highly-effective-people.md)" by Stephen R. Covey. It focuses on personal effectiveness and character development, which are essential for Level 5 leadership. 👤  
+* **Best Diametrically Opposed Book:** "[The Lean Startup](./the-lean-startup.md)" by Eric Ries. It emphasizes rapid experimentation and pivoting, contrasting with the disciplined, long-term approach of "Good to Great". 🧪  
 * **Best Fiction Book That Incorporates Related Ideas:** "The Goal" by Eliyahu M. Goldratt. It teaches about the theory of constraints and the importance of focusing on key bottlenecks, which aligns with the Hedgehog Concept. 🏭  
-* **Best Book That Is More General:** "[Thinking, Fast and Slow](/content/books/thinking-fast-and-slow.md)" by Daniel Kahneman. Provides an excellent understanding of how humans think, which is useful for all aspects of leadership. 🧠  
+* **Best Book That Is More General:** "[Thinking, Fast and Slow](./thinking-fast-and-slow.md)" by Daniel Kahneman. Provides an excellent understanding of how humans think, which is useful for all aspects of leadership. 🧠  
 * **Best Book That Is More Specific:** "Measure What Matters" by John Doerr. Focuses on the practical application of Objectives and Key Results (OKRs), which can help implement a culture of discipline. 🎯  
 * **Best Book That is More Rigorous:** "Competing on Analytics" by Thomas H. Davenport and Jeanne G. Harris. Provides a more data driven and analytical approach to business strategy. 📈  
 * **Best Book That is More Accessible:** "Who Moved My Cheese?" by Spencer Johnson. A simple parable about change management. 🧀  

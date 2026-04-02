@@ -9,7 +9,7 @@ Platform:
 Channel: Washington Post
 tags:
 ---
-[Home](/content/index.md) > [Videos](/content/videos/index.md)  
+[Home](../index.md) > [Videos](./index.md)  
 # Why Bob Woodward worries about Trump's America  
 ![Why Bob Woodward worries about Trump's America](https://youtu.be/b5Zy5YQ2WFY)  
   

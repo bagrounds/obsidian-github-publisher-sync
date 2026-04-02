@@ -11,7 +11,7 @@ Wikipedia: https://wikipedia.org/wiki/Cybernetics:_Or_Control_and_Communication_
 affiliate link: https://amzn.to/3FmVo4Z
 CTA: Understand control.
 ---
-[Home](/content/index.md) > [Books](/content/books/index.md)  
+[Home](../index.md) > [Books](./index.md)  
 # 🤖🗣️🐒⚙️ Cybernetics: or Control and Communication in the Animal and the Machine  
 [🛒 Cybernetics: or Control and Communication in the Animal and the Machine. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3FmVo4Z)  
   
@@ -21,7 +21,7 @@ CTA: Understand control.
 ---  
   
 ### Books on Related Topics  
-1. **"[Thinking in Systems](/content/books/thinking-in-systems.md): A Primer" by Donella H. Meadows**  
+1. **"[Thinking in Systems](./thinking-in-systems.md): A Primer" by Donella H. Meadows**  
    An accessible introduction to systems thinking, explaining how systems work and how feedback loops influence complex behaviors in real-world scenarios.  
   
 2. **"The Human Use of Human Beings" by Norbert Wiener**  
@@ -36,7 +36,7 @@ CTA: Understand control.
    This book expands on the concepts Wiener introduced, particularly the application of cybernetics to learning systems and human behavior.  
   
 2. **Tangentially related**:  
-   [🔬🔄 The Structure of Scientific Revolutions](/content/books/the-structure-of-scientific-revolutions.md) by Thomas S. Kuhn  
+   [🔬🔄 The Structure of Scientific Revolutions](./the-structure-of-scientific-revolutions.md) by Thomas S. Kuhn  
    While not about cybernetics directly, Kuhn's exploration of paradigm shifts in science resonates with Wiener's ideas on systems thinking and change.  
   
 3. **Diametrically opposed**:  

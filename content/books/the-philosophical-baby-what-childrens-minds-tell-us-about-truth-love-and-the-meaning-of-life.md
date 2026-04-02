@@ -10,7 +10,7 @@ force_analyze_links: false
 link_analysis_time: 2026-03-22T06:09:05.967Z
 link_analysis_model: gemini-3.1-flash-lite-preview
 ---
-[Home](/content/index.md) > [Books](/content/books/index.md)  
+[Home](../index.md) > [Books](./index.md)  
 # 👶🤔❤️ The Philosophical Baby: What Children's Minds Tell Us About Truth, Love, and the Meaning of Life  
 [🛒 The Philosophical Baby: What Children's Minds Tell Us About Truth, Love, and the Meaning of Life. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3HNVMKl)  
   
@@ -34,10 +34,10 @@ link_analysis_model: gemini-3.1-flash-lite-preview
   
 ### 🤝 Similar Books  
   
-* **[👶🧠🔬 The Scientist in the Crib: Minds, Brains, And How Children Learn](/content/books/the-scientist-in-the-crib-minds-brains-and-how-children-learn.md)** by Alison Gopnik, Andrew N. Meltzoff, and Patricia K. Kuhl. 👶 Gopnik's earlier work, this book also explores how infants and young children learn about the world like scientists, focusing on their innate abilities and learning mechanisms.  
+* **[👶🧠🔬 The Scientist in the Crib: Minds, Brains, And How Children Learn](./the-scientist-in-the-crib-minds-brains-and-how-children-learn.md)** by Alison Gopnik, Andrew N. Meltzoff, and Patricia K. Kuhl. 👶 Gopnik's earlier work, this book also explores how infants and young children learn about the world like scientists, focusing on their innate abilities and learning mechanisms.  
 * 👩‍🌾 **The Gardener and the Carpenter: What the New Science of Child Development Tells Us About the Relationship Between Parents and Children** by Alison Gopnik. 🏡 In this book, Gopnik applies the insights from developmental psychology to parenting, advocating for a "gardening" approach that provides a rich and stable environment for children to explore, as opposed to a "carpentry" approach focused on shaping a child into a specific kind of adult.  
 * 🤔 **How Babies Think: The Science of Childhood** by Andrew Meltzoff. 🤝 Co-authored with Gopnik on other works, Meltzoff delves into the scientific understanding of infant and child cognition, presenting research on how babies learn and understand the world around them.  
-* **[🕳️🧠👶🏽 The Whole-Brain Child: 12 Revolutionary Strategies to Nurture Your Child's Developing Mind](/content/books/the-whole-brain-child.md)** by Daniel J. Siegel and Tina Payne Bryson. 👪 This book translates neuroscience and child psychology into practical parenting strategies, focusing on integrating different parts of the developing brain for emotional regulation and well-being.  
+* **[🕳️🧠👶🏽 The Whole-Brain Child: 12 Revolutionary Strategies to Nurture Your Child's Developing Mind](./the-whole-brain-child.md)** by Daniel J. Siegel and Tina Payne Bryson. 👪 This book translates neuroscience and child psychology into practical parenting strategies, focusing on integrating different parts of the developing brain for emotional regulation and well-being.  
   
 ### 🆚 Contrasting Books  
   
@@ -53,7 +53,7 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 * 🎭 **The Mind's I: Fantasies and Reflections on Self and Soul** by Douglas R. Hofstadter and Daniel C. Dennett. 💫 This unique book uses a collection of fictional pieces and essays to explore complex questions about consciousness, selfhood, and artificial intelligence, prompting creative thinking about the nature of mind that resonates with the philosophical inquiries in "The Philosophical Baby."  
 * 🌳 **Nature-Based Learning for Young Children: Anytime, Anywhere, on Any Budget** by Julie Powers and Sheila Williams Ridge. 🌍 This book connects to the theme of childhood learning and exploration but with a specific focus on the natural world as a context for development, offering practical ideas that align with the idea of children as active learners in their environment.  
   
-## 💬 [Gemini](/content/software/gemini.md) Prompt (gemini-2.5-flash-preview-04-17)  
+## 💬 [Gemini](../software/gemini.md) Prompt (gemini-2.5-flash-preview-04-17)  
 > Write a markdown-formatted (start headings at level H2) book report, followed by a plethora of additional similar, contrasting, and creatively related book recommendations on The Philosophical Baby: What Children's Minds Tell Us About Truth, Love, and the Meaning of Life. Be thorough in content discussed but concise and economical with your language. Structure the report with section headings and bulleted lists to avoid long blocks of text.  
   
 ## 🐦 Tweet  

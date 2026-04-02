@@ -8,7 +8,7 @@ Author:
 tags:
 affiliate link: https://amzn.to/3FIloYq
 ---
-[Home](/content/index.md) > [Books](/content/books/index.md)  
+[Home](../index.md) > [Books](./index.md)  
 # 📊📈✅🔍 Statistical Quality Control  
 [🛒 Statistical Quality Control. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3FIloYq)  
   

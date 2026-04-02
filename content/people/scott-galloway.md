@@ -7,7 +7,7 @@ aliases:
 title: 👨‍🏫📈💻 Scott Galloway
 URL: https://bagrounds.org/people/scott-galloway
 ---
-[Home](/content/index.md) > [People](/content/people/index.md)  
+[Home](../index.md) > [People](./index.md)  
 # 👨‍🏫📈💻 Scott Galloway  
 **🧑‍🏫 Scott Galloway** is a prominent American **🎤 public speaker, 👨‍🏫 academic, ✍️ author, 🎙️ podcast host, and 🚀 serial entrepreneur**.  
   

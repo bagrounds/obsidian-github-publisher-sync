@@ -5,11 +5,11 @@ aliases:
 title: 🦙💬 Ollama
 URL: https://bagrounds.org/software/ollama
 ---
-[Home](/content/index.md) > [Software](/content/software/index.md)  
+[Home](../index.md) > [Software](./index.md)  
 # 🦙💬 Ollama  
   
 ## 🤖 AI Summary  
-### Ollama: Run [Language Models](/content/topics/large-language-models.md) Locally  
+### Ollama: Run [Language Models](../topics/large-language-models.md) Locally  
 **High-Level Overview:**  
   
 * **For a Child:** Imagine a friendly robot 🤖 living in your computer 💻, ready to chat 💬 and answer questions ❓ without needing the internet 🌐🚫! Ollama brings that robot friend to life! 🧒🌟  
@@ -25,7 +25,7 @@ URL: https://bagrounds.org/software/ollama
     * Local AI conversations 🗣️🧠.  
     * Model library 📚 management (pulling 📥, listing 📋, running ▶️).  
     * Easy-peasy API integration 🤝.  
-    * Works on all your devices 🖥️🐧🍎! (Mac 🍎, [Linux](/content/software/linux.md) 🐧, Windows 🪟)  
+    * Works on all your devices 🖥️🐧🍎! (Mac 🍎, [Linux](./linux.md) 🐧, Windows 🪟)  
   
 **Examples of Prominent Products or Services/Hypothetical Use Cases:**  
   
@@ -100,8 +100,8 @@ URL: https://bagrounds.org/software/ollama
   
 **Relevant Book Recommendations:**  
   
-* [🧠💻🤖 Deep Learning](/content/books/deep-learning.md)  
-* [🗣️💻 Natural Language Processing with Transformers](/content/books/natural-language-processing-with-transformers.md)  
+* [🧠💻🤖 Deep Learning](../books/deep-learning.md)  
+* [🗣️💻 Natural Language Processing with Transformers](../books/natural-language-processing-with-transformers.md)  
   
 **Links to Relevant YouTube Channels or Videos:**  
   

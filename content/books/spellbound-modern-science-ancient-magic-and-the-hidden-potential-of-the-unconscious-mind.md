@@ -6,7 +6,7 @@ URL: https://bagrounds.org/books/spellbound-modern-science-ancient-magic-and-the
 share: true
 affiliate link: https://amzn.to/43VlUfd
 ---
-[Home](/content/index.md) > [Books](/content/books/index.md)  
+[Home](../index.md) > [Books](./index.md)  
 # 🧪✨🧠 Spellbound: Modern Science, Ancient Magic, and the Hidden Potential of the Unconscious Mind  
 [🛒 Spellbound: Modern Science, Ancient Magic, and the Hidden Potential of the Unconscious Mind. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/43VlUfd)  
   
@@ -39,7 +39,7 @@ affiliate link: https://amzn.to/43VlUfd
 * 👤 **Anything by Carl Jung:** For a direct dive into the source material on archetypes, the collective unconscious, and the process of individuation. While potentially more academic, his work is foundational to many concepts in "Spellbound".  
 * 🧠 ***The Power of Your Subconscious Mind*** by Joseph Murphy: A classic self-help book focusing on harnessing the power of the subconscious mind for personal growth and success.  
 * 🧬 ***The Biology of Belief: Unleashing the Power of Consciousness, Matter and Miracles*** by Bruce H. Lipton: Explores the connection between biology, consciousness, and the power of belief, aligning with the idea of the mind's influence on reality.  
-* **[🎭🤫🧠 Incognito: The Secret Lives of the Brain](/content/books/incognito.md)** by David Eagleman: A neuroscientific perspective on the vast amount of brain activity that occurs beneath our conscious awareness.  
+* **[🎭🤫🧠 Incognito: The Secret Lives of the Brain](./incognito.md)** by David Eagleman: A neuroscientific perspective on the vast amount of brain activity that occurs beneath our conscious awareness.  
 * 🧠 ***Mind to Matter: The Astonishing Science of How Your Brain Creates Material Reality*** by Dawson Church: Bridges neuroscience and the power of consciousness in shaping reality.  
 * 🧘 ***Inner Work: Using Dreams and Active Imagination for Personal Growth*** by Robert A. Johnson: Provides practical guidance on engaging with the unconscious through Jungian techniques like active imagination.  
 * 🏞️ ***Mysterious Remnants: A Vision of American Words, Space, and Magic*** by Daniel A. Burr: While potentially more focused on American context, it hints at the enduring presence of mystery and the idea of "magic" in understanding the world, aligning with the book's broader theme. (Based on publication information related to the author).  
@@ -48,7 +48,7 @@ affiliate link: https://amzn.to/43VlUfd
   
 * 🔬 ***The Astonishing Hypothesis: The Scientific Search for the Soul*** by Francis Crick: A purely reductionist neuroscientific view of consciousness, arguing that mental life is solely a product of physical brain activity. This would offer a strong contrast to the integration of mystical ideas in "Spellbound".  
 * 🧐 ***Skeptic: Viewing the World with a Critical Eye*** by Michael Shermer: Explores critical thinking and the debunking of supernatural or pseudoscientific claims, providing a counterpoint to the exploration of magic and mysticism.  
-* **[🤔🐇🐢 Thinking, Fast and Slow](/content/books/thinking-fast-and-slow.md)** by Daniel Kahneman: Focuses on the two systems of thought – the fast, intuitive (often unconscious) system and the slow, deliberate (conscious) system – from a behavioral economics and cognitive psychology perspective, without incorporating mystical elements.  
+* **[🤔🐇🐢 Thinking, Fast and Slow](./thinking-fast-and-slow.md)** by Daniel Kahneman: Focuses on the two systems of thought – the fast, intuitive (often unconscious) system and the slow, deliberate (conscious) system – from a behavioral economics and cognitive psychology perspective, without incorporating mystical elements.  
 * 👶 ***The Blank Slate: The Modern Denial of Human Nature*** by Steven Pinker: Argues against the idea of the mind as a blank slate and discusses the evolutionary psychology behind human behavior, offering a scientific basis that might contrast with interpretations drawn from ancient traditions.  
   
 ### 🎨 Creatively Related Reads (Fiction and Non-Fiction Exploring Similar Themes Imaginatively)  
@@ -61,5 +61,5 @@ affiliate link: https://amzn.to/43VlUfd
 * 🕵️ ***The Lord Darcy*** stories by Randall Garrett: These stories feature a detective in an alternate world where magic is a recognized and regulated force, used alongside forensic science to solve crimes, presenting a unique blend of magic and a scientific/logical approach.  
 * 🌍 ***The Broken Earth*** trilogy by N.K. Jemisin: A critically acclaimed fantasy series where individuals have the power to manipulate energy and the earth, with the "magic" being integral to the world's science and history, demonstrating a fictional world where the lines are blurred.  
   
-## 💬 [Gemini](/content/software/gemini.md) Prompt (gemini-2.5-flash-preview-04-17)  
+## 💬 [Gemini](../software/gemini.md) Prompt (gemini-2.5-flash-preview-04-17)  
 > Write a markdown-formatted (start headings at level H2) book report, followed by a plethora of additional similar, contrasting, and creatively related book recommendations on Spellbound: Modern Science, Ancient Magic, and the Hidden Potential of the Unconscious Mind. Be thorough in content discussed but concise and economical with your language. Structure the report with section headings and bulleted lists to avoid long blocks of text.

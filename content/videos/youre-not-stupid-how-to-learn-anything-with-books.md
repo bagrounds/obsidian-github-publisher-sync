@@ -10,7 +10,7 @@ Channel: im bri
 tags:
 youtube: https://youtu.be/U23HVqrY_fI
 ---
-[Home](/content/index.md) > [Videos](/content/videos/index.md)  
+[Home](../index.md) > [Videos](./index.md)  
 # 🧠🚫📚 You’re Not Stupid: How to Learn Anything With Books  
 ![You’re Not Stupid: How to Learn Anything With Books](https://youtu.be/U23HVqrY_fI)  
   
@@ -73,7 +73,7 @@ This video provides a 💡 practical and structured approach to self-directed le
   
 ## 📚 Book Recommendations  
 * 📖 *How to Read a Book* by Mortimer J. Adler and Charles Van Doren: This classic delves into different levels of reading and provides techniques for active and analytical reading, complementing the "Interact with Your Books" step.  
-* [🚀🧠🏆 Ultralearning: Master Hard Skills, Outsmart the Competition, and Accelerate Your Career](/content/books/ultralearning-master-hard-skills-outsmart-the-competition-and-accelerate-your-career.md) by Scott H. Young: Explores intensive, self-directed learning strategies, offering broader principles that can be applied to creating and executing a reading map.  
-* [🧠🔒 Make It Stick: The Science of Successful Learning](/content/books/make-it-stick.md) by Peter C. Brown, Henry L. Roediger III, and Mark A. McDaniel: This book explains research-backed strategies for effective learning and memory, providing scientific context for the benefits of active engagement with material.  
-* [🐦🕊️ Bird by Bird: Some Instructions on Writing and Life](/content/books/bird-by-bird.md) by Anne Lamott: While focused on writing, its insights into the creative process, perseverance, and dealing with imperfections can be inspiring for anyone undertaking a long-term learning project like a reading map.  
-* [❤️‍🔥💪 Grit: The Power of Passion and Perseverance](/content/books/grit-the-power-of-passion-and-perseverance.md) by Angela Duckworth: This book explores the importance of passion and sustained effort in achieving long-term goals, which is crucial for completing a comprehensive reading map.
+* [🚀🧠🏆 Ultralearning: Master Hard Skills, Outsmart the Competition, and Accelerate Your Career](../books/ultralearning-master-hard-skills-outsmart-the-competition-and-accelerate-your-career.md) by Scott H. Young: Explores intensive, self-directed learning strategies, offering broader principles that can be applied to creating and executing a reading map.  
+* [🧠🔒 Make It Stick: The Science of Successful Learning](../books/make-it-stick.md) by Peter C. Brown, Henry L. Roediger III, and Mark A. McDaniel: This book explains research-backed strategies for effective learning and memory, providing scientific context for the benefits of active engagement with material.  
+* [🐦🕊️ Bird by Bird: Some Instructions on Writing and Life](../books/bird-by-bird.md) by Anne Lamott: While focused on writing, its insights into the creative process, perseverance, and dealing with imperfections can be inspiring for anyone undertaking a long-term learning project like a reading map.  
+* [❤️‍🔥💪 Grit: The Power of Passion and Perseverance](../books/grit-the-power-of-passion-and-perseverance.md) by Angela Duckworth: This book explores the importance of passion and sustained effort in achieving long-term goals, which is crucial for completing a comprehensive reading map.

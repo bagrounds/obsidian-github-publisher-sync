@@ -9,7 +9,7 @@ Platform:
 Channel: PBS NewsHour
 tags:
 ---
-[Home](/content/index.md) > [Videos](/content/videos/index.md)  
+[Home](../index.md) > [Videos](./index.md)  
 # 👴🏻🪖🇺🇸🤥👹❓ Retired military leaders analyze Trump's deployment of Marines and National Guard in LAW  
 ![Retired military leaders analyze Trump's deployment of Marines and National Guard in LA](https://youtu.be/DO3sCf2jZeU)  
   

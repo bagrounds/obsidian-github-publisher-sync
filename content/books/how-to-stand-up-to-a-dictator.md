@@ -9,7 +9,7 @@ tags:
 affiliate link: https://amzn.to/4kq8ddX
 CTA: ✊ Challenge tyranny.
 ---
-[Home](/content/index.md) > [Books](/content/books/index.md)  
+[Home](../index.md) > [Books](./index.md)  
 # 👥⚔️👑 How to Stand Up to a Dictator: The Fight for Our Future  
 [🛒 How to Stand Up to a Dictator: The Fight for Our Future. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4kq8ddX)  
   
@@ -56,28 +56,28 @@ CTA: ✊ Challenge tyranny.
 ## 📚 Further Reading Recommendations  
 ### 📰 Similar Reads (Journalism, Disinformation, Authoritarianism)  
   
-1. 📜 **[The Dictator's Handbook: Why Bad Behavior Is Almost Always Good Politics](/content/books/the-dictators-handbook.md)** by Bruce Bueno de Mesquita & Alastair Smith: Explores the pragmatic, often ruthless 🔪, logic leaders use to gain and maintain power 💪, providing context for the actions Ressa opposes.  
-2. 📜 **[🥀 Twilight of Democracy: 🐍 The Seductive Lure of Authoritarianism](/content/books/twilight-of-democracy.md)** by Anne Applebaum: Analyzes why elites in democracies across the world 🌍 are turning towards nationalism and authoritarianism.  
-3. 📜 **[On Tyranny: Twenty Lessons from the Twentieth Century](/content/books/on-tyranny.md)** by Timothy Snyder: A concise historical guide drawing lessons from the failures of democracy in 20th-century Europe 🇪🇺 to identify and resist 💪 modern authoritarianism.  
+1. 📜 **[The Dictator's Handbook: Why Bad Behavior Is Almost Always Good Politics](./the-dictators-handbook.md)** by Bruce Bueno de Mesquita & Alastair Smith: Explores the pragmatic, often ruthless 🔪, logic leaders use to gain and maintain power 💪, providing context for the actions Ressa opposes.  
+2. 📜 **[🥀 Twilight of Democracy: 🐍 The Seductive Lure of Authoritarianism](./twilight-of-democracy.md)** by Anne Applebaum: Analyzes why elites in democracies across the world 🌍 are turning towards nationalism and authoritarianism.  
+3. 📜 **[On Tyranny: Twenty Lessons from the Twentieth Century](./on-tyranny.md)** by Timothy Snyder: A concise historical guide drawing lessons from the failures of democracy in 20th-century Europe 🇪🇺 to identify and resist 💪 modern authoritarianism.  
 4. 📜 **Surviving Autocracy** by Masha Gessen: Offers sharp insights into the nature of autocratic power 💪, drawing parallels between Trump's America 🇺🇸 and Putin's Russia 🇷🇺.  
-5. 📜 **[🤥📣 This Is Not Propaganda: Adventures in the War Against Reality](/content/books/this-is-not-propaganda.md)** by Peter Pomerantsev: An investigative look into the mechanics of modern propaganda 📢 and disinformation campaigns globally.  
+5. 📜 **[🤥📣 This Is Not Propaganda: Adventures in the War Against Reality](./this-is-not-propaganda.md)** by Peter Pomerantsev: An investigative look into the mechanics of modern propaganda 📢 and disinformation campaigns globally.  
 6. 📜 **Some People Need Killing: A Memoir of Murder in My Country** by Patricia Evangelista: Another powerful journalistic account from the Philippines 🇵🇭, focusing on the human cost 💸 of Duterte's drug war. (Often recommended alongside Ressa's book 📖).  
 7. 📜 **Attack from Within: How Disinformation Is Sabotaging America** by Barbara McQuade: Explores how disinformation campaigns specifically target and undermine American democracy and institutions.  
 8. 📜 **Authoritarian Journalism: Controlling the News in Post-Conflict Rwanda** by Ruth Moon: Examines how journalists navigate competing pressures from the state 🏛️, global actors 🌍, and local history in an authoritarian context.  
   
 ### ⚖️ Contrasting Perspectives/Approaches  
   
-1. **[📱🗳️📉🩺 The Hype Machine: How Social Media Disrupts Our Elections, Our Economy, and Our Health - and How We Must Adapt](/content/books/the-hype-machine-how-social-media-disrupts-our-elections-our-economy-and-our-health-and-how-we-must-adapt.md)** by Sinan Aral: While acknowledging the dangers ⚠️, Aral also explores the potential benefits 👍 and complexities of social media, focusing on adaptation rather than solely confrontation.  
+1. **[📱🗳️📉🩺 The Hype Machine: How Social Media Disrupts Our Elections, Our Economy, and Our Health - and How We Must Adapt](./the-hype-machine-how-social-media-disrupts-our-elections-our-economy-and-our-health-and-how-we-must-adapt.md)** by Sinan Aral: While acknowledging the dangers ⚠️, Aral also explores the potential benefits 👍 and complexities of social media, focusing on adaptation rather than solely confrontation.  
 2. 📜 **Frenemies: How Social Media Polarizes America** by Jaime Settle: Focuses empirically on *how* social media mechanics contribute to polarization 💔, perhaps offering a more academic 🧑‍🏫, less activist perspective than Ressa's memoir-driven account.  
 3. 📜 **`#`Republic: Divided Democracy in the Age of Social Media** by Cass R. Sunstein: Discusses the dangers of echo chambers 🗣️ and filter bubbles 🫧 created by personalization online 💻, focusing on the architectural aspects of division.  
   
 ### 💡 Creatively Related Reads (Broader Themes, Fiction, Philosophy)  
   
-1. 📜 **[1984](/content/books/1984.md)** by George Orwell: The classic dystopian novel 🤖 exploring themes of surveillance 👁️, truth manipulation 🤥, and totalitarian control 💪 – timelessly relevant to Ressa's concerns.  
-2. **[👹 The Origins of Totalitarianism](/content/books/the-origins-of-totalitarianism.md)** by Hannah Arendt: A seminal philosophical 🧠 and historical analysis of the elements that coalesce into totalitarian movements.  
-3. 📜 **[The Age of Surveillance Capitalism](/content/books/the-age-of-surveillance-capitalism.md): The Fight for a Human Future at the New Frontier of Power** by Shoshana Zuboff: A deep dive 🏊 into the economic model 💸 driving many tech platforms Ressa critiques, focusing on the commodification of personal data 💾.  
+1. 📜 **[1984](./1984.md)** by George Orwell: The classic dystopian novel 🤖 exploring themes of surveillance 👁️, truth manipulation 🤥, and totalitarian control 💪 – timelessly relevant to Ressa's concerns.  
+2. **[👹 The Origins of Totalitarianism](./the-origins-of-totalitarianism.md)** by Hannah Arendt: A seminal philosophical 🧠 and historical analysis of the elements that coalesce into totalitarian movements.  
+3. 📜 **[The Age of Surveillance Capitalism](./the-age-of-surveillance-capitalism.md): The Fight for a Human Future at the New Frontier of Power** by Shoshana Zuboff: A deep dive 🏊 into the economic model 💸 driving many tech platforms Ressa critiques, focusing on the commodification of personal data 💾.  
 4. 📜 **The Handmaid's Tale** by Margaret Atwood: A fictional exploration of the rapid loss of rights ⚖️ and the establishment of a theocratic dictatorship, touching on themes of resistance 💪 and control.  
-5. **[🏭🫡 Manufacturing Consent: The Political Economy of the Mass Media](/content/books/manufacturing-consent.md)** by Edward S. Herman & Noam Chomsky: A classic critique of how media structures and economic imperatives can shape news coverage 📰, offering a different lens 👁️ on information control.  
+5. **[🏭🫡 Manufacturing Consent: The Political Economy of the Mass Media](./manufacturing-consent.md)** by Edward S. Herman & Noam Chomsky: A classic critique of how media structures and economic imperatives can shape news coverage 📰, offering a different lens 👁️ on information control.  
   
-## 💬 [Gemini](/content/software/gemini.md) Prompt (gemini-2.5-pro-exp-03-25)  
+## 💬 [Gemini](../software/gemini.md) Prompt (gemini-2.5-pro-exp-03-25)  
 > Write a markdown-formatted (start headings at level H2) book report, followed by a plethora of additional similar, contrasting, and creatively related book recommendations on How to Stand Up to a Dictator The Fight for Our Future. Be thorough in content discussed but concise and economical with your language. Structure the report with section headings and bulleted lists to avoid long blocks of text.

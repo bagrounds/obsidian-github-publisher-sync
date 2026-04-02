@@ -10,7 +10,7 @@ Channel: The Prof G Pod – Scott Galloway
 tags:
 youtube: https://youtu.be/3NIwH4nKaDg
 ---
-[Home](/content/index.md) > [Videos](/content/videos/index.md) | [👨‍🏫📈💻 Scott Galloway](/content/people/scott-galloway.md)  
+[Home](../index.md) > [Videos](./index.md) | [👨‍🏫📈💻 Scott Galloway](../people/scott-galloway.md)  
 # 👊👹🇺🇸🛡️ How to Fight Fascism in America — with Timothy Snyder | Prof G Conversations  
 ![How to Fight Fascism in America — with Timothy Snyder | Prof G Conversations](https://youtu.be/3NIwH4nKaDg)  
   
@@ -35,10 +35,10 @@ This interview with Professor Timothy Snyder discusses the 🌍 return of fascis
 * ⭐ Optimism about American protests and a new generation of European leaders. \[[39:08](http://www.youtube.com/watch?v=3NIwH4nKaDg&t=2348)\]  
   
 ## 📚 Book Recommendations  
-* **[👑🚫📜2️⃣0️⃣ On Tyranny: Twenty Lessons from the Twentieth Century](/content/books/on-tyranny.md)** by Timothy Snyder.  
+* **[👑🚫📜2️⃣0️⃣ On Tyranny: Twenty Lessons from the Twentieth Century](../books/on-tyranny.md)** by Timothy Snyder.  
 * 📖 **How Fascism Works: The Politics of Us and Them** by Jason Stanley.  
 * 📖 **The Anatomy of Fascism** by Robert O. Paxton.  
-* **[👹 The Origins of Totalitarianism](/content/books/the-origins-of-totalitarianism.md)** by Hannah Arendt.  
+* **[👹 The Origins of Totalitarianism](../books/the-origins-of-totalitarianism.md)** by Hannah Arendt.  
 * 🌐 **The World Is Flat: A Brief History of the Twenty-first Century** by Thomas L. Friedman.  
 * 😠 **Globalization and its Discontents** by Joseph E. Stiglitz.  
   

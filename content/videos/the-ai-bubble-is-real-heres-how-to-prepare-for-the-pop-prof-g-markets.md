@@ -10,7 +10,7 @@ Channel: The Prof G Pod – Scott Galloway
 tags:
 youtube: https://youtu.be/E1QY1FqwRAM
 ---
-[Home](/content/index.md) > [Videos](/content/videos/index.md) | [👨‍🏫📈💻 Scott Galloway](/content/people/scott-galloway.md)  
+[Home](../index.md) > [Videos](./index.md) | [👨‍🏫📈💻 Scott Galloway](../people/scott-galloway.md)  
 # 🤖🫧💥📉 The AI Bubble Is Real — Here’s How to Prepare for the Pop | Prof G Markets  
 ![The AI Bubble Is Real — Here’s How to Prepare for the Pop | Prof G Markets](https://youtu.be/E1QY1FqwRAM)  
   
@@ -52,9 +52,9 @@ youtube: https://youtu.be/E1QY1FqwRAM
 ### 🆚 Contrasting  
 * 📚 The Three Worlds of Welfare Capitalism by Gøsta Esping-Andersen. This 🧑‍🏫 academic work provides a 🗺️ framework for understanding the fundamental differences in 🇪🇺 European and 🇺🇸 American welfare states, contrasting the labor models.  
 * 📚 Viking Economics: How the Scandinavians Got It Right—and How We Can, Too by George Lakey. This book details the 🇳🇴 Nordic model, an example of 🛠️ highly regulated social democracy that still achieves high levels of 💡 innovation.  
-* [💡🤖💰💥🏢📉 The Innovator's Dilemma: When New Technologies Cause Great Firms to Fail](/content/books/the-innovators-dilemma.md) by Clayton M. Christensen. This seminal book 💡 explains why successful companies often fail to capitalize on 🚀 disruptive technologies, contrasting the video's focus on capital and labor with 🧭 strategic challenges.  
+* [💡🤖💰💥🏢📉 The Innovator's Dilemma: When New Technologies Cause Great Firms to Fail](../books/the-innovators-dilemma.md) by Clayton M. Christensen. This seminal book 💡 explains why successful companies often fail to capitalize on 🚀 disruptive technologies, contrasting the video's focus on capital and labor with 🧭 strategic challenges.  
   
 ### 🎨 Creatively Related  
-* [👁️‍🗨️💰⛓️👤 The Age of Surveillance Capitalism: The Fight for a Human Future at the New Frontier of Power](/content/books/the-age-of-surveillance-capitalism.md) by Shoshana Zuboff. This book 🔍 explores the massive 💰 economic and 🏛️ political power amassed by ☁️ tech giants, providing context for the current 👑 concentration of tech power.  
+* [👁️‍🗨️💰⛓️👤 The Age of Surveillance Capitalism: The Fight for a Human Future at the New Frontier of Power](../books/the-age-of-surveillance-capitalism.md) by Shoshana Zuboff. This book 🔍 explores the massive 💰 economic and 🏛️ political power amassed by ☁️ tech giants, providing context for the current 👑 concentration of tech power.  
 * 📚 Corporate Giants: The Economics of Big Business by Victor Goldberg. This work provides an 🔎 economic analysis of 🏭 vertical integration and 👑 market power, which is relevant to understanding the 🔄 circular financing and supply chain control by AI leaders.  
-* [💰📈🌍⏳ Capital in the Twenty-First Century](/content/books/capital-in-the-twenty-first-century.md) by Thomas Piketty. A 📊 data-driven analysis of 💸 wealth and income inequality, pertinent to the discussion of how 🤖 automation's 📈 productivity gains are distributed in society.
+* [💰📈🌍⏳ Capital in the Twenty-First Century](../books/capital-in-the-twenty-first-century.md) by Thomas Piketty. A 📊 data-driven analysis of 💸 wealth and income inequality, pertinent to the discussion of how 🤖 automation's 📈 productivity gains are distributed in society.

@@ -7,7 +7,7 @@ share: true
 CTA: ♟️ Outmaneuver the competition.
 affiliate link: https://amzn.to/4oiUXt9
 ---
-[Home](/content/index.md) > [Books](/content/books/index.md)  
+[Home](../index.md) > [Books](./index.md)  
 # 🧠📈 Thinking Strategically: The Competitive Edge in Business, Politics and Everyday Life  
 [🛒 Thinking Strategically: The Competitive Edge in Business, Politics and Everyday Life. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4oiUXt9)  
   
@@ -113,11 +113,11 @@ A: Commitment and credibility are crucial because they influence the perceptions
 ### 📚 Book Recommendations  
   
 #### 👍 Similar Books (Game Theory & Strategy)  
-* **[♟️🧠📈🎯 The Art of Strategy: A Game Theorist's Guide to Success in Business and Life](/content/books/the-art-of-strategy-a-game-theorists-guide-to-success-in-business-and-life.md)** by Avinash K. Dixit and Barry J. Nalebuff  
+* **[♟️🧠📈🎯 The Art of Strategy: A Game Theorist's Guide to Success in Business and Life](./the-art-of-strategy-a-game-theorists-guide-to-success-in-business-and-life.md)** by Avinash K. Dixit and Barry J. Nalebuff  
     * An updated take on similar themes by the same authors. Focuses on applying game theory to practical scenarios.  
 * **Games of Strategy** by Avinash K. Dixit and Susan Skeath  
     * A more formal, textbook approach to game theory, delving deeper into mathematical models and concepts.  
-* **[⚔️♟️ The Strategy of Conflict](/content/books/the-strategy-of-conflict.md)** by Thomas Schelling  
+* **[⚔️♟️ The Strategy of Conflict](./the-strategy-of-conflict.md)** by Thomas Schelling  
     * A seminal work in game theory focusing on bargaining, deterrence, and strategic interaction in conflict situations.  
 * **Strategy: A History** by Lawrence Freedman  
     * A comprehensive historical and conceptual overview of strategy across various domains.  
@@ -127,17 +127,17 @@ A: Commitment and credibility are crucial because they influence the perceptions
     * Challenges common misconceptions about strategy, emphasizing a coherent "kernel" of diagnosis, guiding policy, and coherent action. Less focused on game theory, more on practical implementation.  
 * **Playing to Win: How Strategy Really Works** by A.G. Lafley and Roger L. Martin  
     * Focuses on a practical, choice-centric approach to corporate strategy, emphasizing where to play and how to win, rather than game theory's interactive decision-making.  
-* **[🎨🔄🧠🏢 The Fifth Discipline: The Art and Practice of the Learning Organization](/content/books/the-fifth-discipline.md)** by Peter Senge  
+* **[🎨🔄🧠🏢 The Fifth Discipline: The Art and Practice of the Learning Organization](./the-fifth-discipline.md)** by Peter Senge  
     * Focuses on systems thinking, personal mastery, mental models, shared vision, and team learning as strategic organizational capabilities, offering a more internal, systemic perspective.  
   
 #### 🧠 Creatively Related Books (Broader Insights into Decision Making & Human Behavior)  
-* **[🤔🐇🐢 Thinking, Fast and Slow](/content/books/thinking-fast-and-slow.md)** by Daniel Kahneman  
+* **[🤔🐇🐢 Thinking, Fast and Slow](./thinking-fast-and-slow.md)** by Daniel Kahneman  
     * Explores cognitive biases and heuristics that influence decision-making, providing a psychological counterpoint to purely rational game theory.  
-* **[🍃🧠🤝🏼 Influence: The Psychology of Persuasion](/content/books/influence.md)** by Robert Cialdini  
+* **[🍃🧠🤝🏼 Influence: The Psychology of Persuasion](./influence.md)** by Robert Cialdini  
     * Examines principles of persuasion, useful for understanding how others' decisions can be influenced, complementing strategic interaction.  
-* **[🃏🎲 Fooled by Randomness: The Hidden Role of Chance in Life and in the Markets](/content/books/fooled-by-randomness-the-hidden-role-of-chance-in-life-and-in-the-markets.md)** by Nassim Nicholas Taleb  
+* **[🃏🎲 Fooled by Randomness: The Hidden Role of Chance in Life and in the Markets](./fooled-by-randomness-the-hidden-role-of-chance-in-life-and-in-the-markets.md)** by Nassim Nicholas Taleb  
     * Discusses the role of luck and chance in outcomes, cautioning against overestimating strategic control and underestimating randomness.  
-* **[🤔🧘 Meditations](/content/books/meditations.md)** by Marcus Aurelius  
+* **[🤔🧘 Meditations](./meditations.md)** by Marcus Aurelius  
     * Offers a philosophical perspective on control, perception, and inner life, relevant for maintaining strategic calm amidst external interactions.  
   
 ## 💬 [Gemini](https://gemini.google.com) Prompt (gemini-2.5-flash)  

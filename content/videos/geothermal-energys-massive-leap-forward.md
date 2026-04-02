@@ -10,7 +10,7 @@ Channel: The Economist
 tags:
 youtube: https://youtu.be/JeTAeF3Ft6E
 ---
-[Home](/content/index.md) > [Videos](/content/videos/index.md)  
+[Home](../index.md) > [Videos](./index.md)  
 # 🌋☀️🚀 Geothermal energy’s massive leap forward  
 ![Geothermal energy’s massive leap forward](https://youtu.be/JeTAeF3Ft6E)  
   
@@ -68,5 +68,5 @@ youtube: https://youtu.be/JeTAeF3Ft6E
   
 ### 🎨 Creatively Related  
   
-* [🤖📈 The Second Machine Age: Work, Progress, and Prosperity in a Time of Brilliant Technologies](/content/books/the-second-machine-age-work-progress-and-prosperity-in-a-time-of-brilliant-technologies.md) analyzes how the convergence of digital and physical technologies - similar to big tech and big oil's convergence - drives massive, unexpected societal and economic change.  
-* [📉📈🌪️💪 Antifragile: Things That Gain from Disorder](/content/books/antifragile-things-that-gain-from-disorder.md) discusses engineered systems that benefit from stress and volatility, a concept relevant to designing robust, redundant, and flexible EGS systems that can be turned on and off for storage.
+* [🤖📈 The Second Machine Age: Work, Progress, and Prosperity in a Time of Brilliant Technologies](../books/the-second-machine-age-work-progress-and-prosperity-in-a-time-of-brilliant-technologies.md) analyzes how the convergence of digital and physical technologies - similar to big tech and big oil's convergence - drives massive, unexpected societal and economic change.  
+* [📉📈🌪️💪 Antifragile: Things That Gain from Disorder](../books/antifragile-things-that-gain-from-disorder.md) discusses engineered systems that benefit from stress and volatility, a concept relevant to designing robust, redundant, and flexible EGS systems that can be turned on and off for storage.

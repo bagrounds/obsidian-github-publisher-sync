@@ -10,7 +10,7 @@ Channel: PBS NewsHour
 tags:
 youtube: https://youtu.be/BluwqcJMhNo
 ---
-[Home](/content/index.md) > [Videos](/content/videos/index.md)  
+[Home](../index.md) > [Videos](./index.md)  
 # 👨‍⚖️📧❓ Trump faces fresh Epstein questions as new emails and files are released  
 ![Trump faces fresh Epstein questions as new emails and files are released](https://youtu.be/BluwqcJMhNo)  
   
@@ -54,7 +54,7 @@ youtube: https://youtu.be/BluwqcJMhNo
 * 📰 She Said Breaking the Sexual Harassment Story That Helped Ignite a Movement by Jodi Kantor and Megan Twohey: 📰 The book details the investigative work required to expose the abuses of a powerful figure (Harvey Weinstein), similar to the media and political struggle to reveal the full Epstein files.  
   
 ### 🆚 Contrasting  
-* [🏛️⚖️ The Rule of Law](/content/books/the-rule-of-law.md) by Tom Bingham: ⚖️ Provides a detailed, contrasting perspective on the fundamental principles of legal accountability, offering a framework by which to evaluate the government's handling and potential obstruction of the Epstein investigation.  
+* [🏛️⚖️ The Rule of Law](../books/the-rule-of-law.md) by Tom Bingham: ⚖️ Provides a detailed, contrasting perspective on the fundamental principles of legal accountability, offering a framework by which to evaluate the government's handling and potential obstruction of the Epstein investigation.  
 * 🗽 White House Years by Henry Kissinger: 🗽 Offers a contrasting look at how political power operates and is defended within the highest levels of government, providing a perspective on past administration maneuvering.  
   
 ### 🎨 Creatively Related  

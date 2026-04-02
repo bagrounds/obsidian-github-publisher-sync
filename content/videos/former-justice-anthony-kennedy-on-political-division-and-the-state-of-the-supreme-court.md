@@ -10,7 +10,7 @@ Channel: PBS NewsHour
 tags:
 youtube: https://youtu.be/jMneFUWkWJI
 ---
-[Home](/content/index.md) > [Videos](/content/videos/index.md)  
+[Home](../index.md) > [Videos](./index.md)  
 # 🏛️🇺🇸⚖️💔 Former Justice Anthony Kennedy on political division and the state of the Supreme Court  
 ![Former Justice Anthony Kennedy on political division and the state of the Supreme Court](https://youtu.be/jMneFUWkWJI)  
   
@@ -78,5 +78,5 @@ A: 🏠 The "refrigerator test" is a personal measure of an opinion's cultural i
 * *The Legacy of Justice Rehnquist* edited by Earl M. Maltz. 🏛️ This work explores the jurisprudence of former Chief Justice William Rehnquist, who championed judicial restraint, federalism, and judicial conservatism, representing a different vision for the Court's role than Kennedy's.  
   
 **Creatively Related: Democracy and Digital Discourse**  
-* [🤕👶 The Coddling of the American Mind: How Good Intentions and Bad Ideas Are Setting Up a Generation for Failure](/content/books/the-coddling-of-the-american-mind-how-good-intentions-and-bad-ideas-are-setting-up-a-generation-for-failure.md) by Greg Lukianoff and Jonathan Haidt. 🗣️ This book is relevant to Justice Kennedy's concern that people are losing the ability to have a thoughtful, probing discussion and respect disagreement \[[04:41](http://www.youtube.com/watch?v=jMneFUWkWJI&t=281)].  
-* [👁️‍🗨️💰⛓️👤 The Age of Surveillance Capitalism: The Fight for a Human Future at the New Frontier of Power](/content/books/the-age-of-surveillance-capitalism.md) by Shoshana Zuboff. 💻 This work provides a deep exploration of the digital age and the architecture of the internet, connecting to the Justice's worry that the digital public sphere inherently prevents debate and encourages echo chambers \[[05:16](http://www.youtube.com/watch?v=jMneFUWkWJI&t=316)].
+* [🤕👶 The Coddling of the American Mind: How Good Intentions and Bad Ideas Are Setting Up a Generation for Failure](../books/the-coddling-of-the-american-mind-how-good-intentions-and-bad-ideas-are-setting-up-a-generation-for-failure.md) by Greg Lukianoff and Jonathan Haidt. 🗣️ This book is relevant to Justice Kennedy's concern that people are losing the ability to have a thoughtful, probing discussion and respect disagreement \[[04:41](http://www.youtube.com/watch?v=jMneFUWkWJI&t=281)].  
+* [👁️‍🗨️💰⛓️👤 The Age of Surveillance Capitalism: The Fight for a Human Future at the New Frontier of Power](../books/the-age-of-surveillance-capitalism.md) by Shoshana Zuboff. 💻 This work provides a deep exploration of the digital age and the architecture of the internet, connecting to the Justice's worry that the digital public sphere inherently prevents debate and encourages echo chambers \[[05:16](http://www.youtube.com/watch?v=jMneFUWkWJI&t=316)].

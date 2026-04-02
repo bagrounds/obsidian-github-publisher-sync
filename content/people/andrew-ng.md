@@ -4,7 +4,7 @@ aliases:
 share: true
 title: 👨‍🏫🤖 Andrew Ng
 ---
-[Home](/content/index.md) > [People](/content/people/index.md)  
+[Home](../index.md) > [People](./index.md)  
 # 👨‍🏫🤖 Andrew Ng  
 👨‍🏫 Andrew Ng is a highly influential figure in the field of 🤖 Artificial Intelligence (AI) and 💻 online education. He is widely recognized for his pioneering work in 🧠 machine learning and 💡 deep learning, as well as his efforts to democratize AI education 🌎 globally.  
   
@@ -31,7 +31,7 @@ Here are some of his key contributions and roles:
 * 🗣️ **"AI For Everyone" by Andrew Ng:** 🌍 This is a non-technical course and accompanying material designed to help anyone understand AI technologies and spot opportunities to apply AI in various organizations.  
   
 **👨‍💻 II. Technical Machine Learning and Deep Learning Books (often recommended in conjunction with his courses):**  
-* **[🧠💻🤖 Deep Learning](/content/books/deep-learning.md) by Ian Goodfellow, Yoshua Bengio, and Aaron Courville:** 📜 This is a foundational textbook for deep learning, often considered the "bible" of the field. 🔬 It's comprehensive and goes into significant mathematical depth.  
+* **[🧠💻🤖 Deep Learning](../books/deep-learning.md) by Ian Goodfellow, Yoshua Bengio, and Aaron Courville:** 📜 This is a foundational textbook for deep learning, often considered the "bible" of the field. 🔬 It's comprehensive and goes into significant mathematical depth.  
 * 📊 **"The Elements of Statistical Learning" by Trevor Hastie, Robert Tibshirani, and Jerome Friedman:** 📚 This is a rigorous and comprehensive book covering a wide array of machine learning methods. 🎓 It's considered a graduate-level textbook and provides an extensive overview.  
 * 👁️ **"Pattern Recognition and Machine Learning" by Christopher M. Bishop:** 👍 Another highly respected and mathematically thorough book on machine learning and pattern recognition.  
 * 🧠 **"Machine Learning: A Probabilistic Perspective" by Kevin P. Murphy:** 🔬 This book provides a comprehensive and detailed treatment of machine learning from a probabilistic perspective. 🤯 It's quite advanced but highly valuable for those seeking deep understanding.  
@@ -40,16 +40,16 @@ Here are some of his key contributions and roles:
   
 **🌎 III. Broader AI and Future of AI Books (recommended by Andrew Ng for general understanding and societal impact):**  
 * 🤝 **"Human Compatible: AI and the Problem of Control" by Stuart Russell:** 🤔 This book explores the challenges of developing AI systems that are aligned with human values and interests, and the potential implications for humanity.  
-* **[🧬👥💾 Life 3.0: Being Human in the Age of Artificial Intelligence](/content/books/life-3-0.md) by Max Tegmark:** ⏳ This book delves into the potential futures of AI and its profound impact on human existence, examining both risks and rewards.  
+* **[🧬👥💾 Life 3.0: Being Human in the Age of Artificial Intelligence](../books/life-3-0.md) by Max Tegmark:** ⏳ This book delves into the potential futures of AI and its profound impact on human existence, examining both risks and rewards.  
 * 🎯 **"The Master Algorithm: How the Quest for the Ultimate Learning Machine Will Remake Our World" by Pedro Domingos:** ✨ This book offers an engaging look at the pursuit of a "master algorithm" that could drive artificial general intelligence.  
-* **[🤖⚠️📈 Superintelligence: Paths, Dangers, Strategies](/content/books/superintelligence-paths-dangers-strategies.md) by Nick Bostrom:** 📜 This philosophical and cautionary book examines the potential paths and hazards that may arise as AI systems surpass human cognitive abilities.  
+* **[🤖⚠️📈 Superintelligence: Paths, Dangers, Strategies](../books/superintelligence-paths-dangers-strategies.md) by Nick Bostrom:** 📜 This philosophical and cautionary book examines the potential paths and hazards that may arise as AI systems surpass human cognitive abilities.  
   
 **🏢 IV. Business and Entrepreneurship Books (from Andrew Ng's broader recommendations):**  
 👔 Andrew Ng also recommends books that go beyond technical AI, focusing on innovation, business building, and understanding user needs:  
   
-* **[0️⃣➡️1️⃣ Zero To One](/content/books/zero-to-one.md): Notes on Startups, or How to Build the Future by Peter Thiel:** 💡 An overview of entrepreneurship and innovation.  
+* **[0️⃣➡️1️⃣ Zero To One](../books/zero-to-one.md): Notes on Startups, or How to Build the Future by Peter Thiel:** 💡 An overview of entrepreneurship and innovation.  
 * 🌉 **"Crossing the Chasm: Marketing and Selling High-Tech Products to Mainstream Customers" by Geoffrey A. Moore:** 💼 Essential for B2B entrepreneurship.  
-* **[📉🧪🚀 The Lean Startup: How Today's Entrepreneurs Use Continuous Innovation to Create Radically Successful Businesses](/content/books/the-lean-startup.md) by Eric Ries:** 🏛️ A classic for building businesses efficiently.  
+* **[📉🧪🚀 The Lean Startup: How Today's Entrepreneurs Use Continuous Innovation to Create Radically Successful Businesses](../books/the-lean-startup.md) by Eric Ries:** 🏛️ A classic for building businesses efficiently.  
 * 🗣️ **"Talking to Humans" by Giff Constable:** ❤️ A short book on developing empathy for users.  
 * 🩺 **"Rocket Surgery Made Easy" by Steve Krug:** ⚙️ Practical tactics for learning about users through studies and interviews.  
 * 🤕 **"The Hard Thing About Hard Things: Building a Business When There Are No Easy Answers" by Ben Horowitz:** 🏢 Covers the realities and challenges of building an organization.  

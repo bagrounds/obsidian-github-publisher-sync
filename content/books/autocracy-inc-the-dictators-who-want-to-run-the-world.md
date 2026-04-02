@@ -7,7 +7,7 @@ share: true
 CTA: 🌍 Confront their ambition.
 affiliate link: https://amzn.to/4aiO4Ez
 ---
-[Home](/content/index.md) > [Books](/content/books/index.md)  
+[Home](../index.md) > [Books](./index.md)  
 # 👑🌎 Autocracy, Inc.: The Dictators Who Want to Run the World  
 [🛒 Autocracy, Inc.: The Dictators Who Want to Run the World. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4aiO4Ez)  
   
@@ -81,17 +81,17 @@ affiliate link: https://amzn.to/4aiO4Ez
 ## 📚 Book Recommendations  
   
 ### 📚 Similar  
-* [🥀 Twilight of Democracy: 🐍 The Seductive Lure of Authoritarianism](/content/books/twilight-of-democracy.md) by Anne Applebaum  
+* [🥀 Twilight of Democracy: 🐍 The Seductive Lure of Authoritarianism](./twilight-of-democracy.md) by Anne Applebaum  
 * 🛤️ The Road to Unfreedom: Russia, Europe, America by Timothy Snyder  
-* [👑😈👎📈 The Dictator's Handbook: Why Bad Behavior Is Almost Always Good Politics](/content/books/the-dictators-handbook.md) by Bruce Bueno de Mesquita and Alastair Smith  
+* [👑😈👎📈 The Dictator's Handbook: Why Bad Behavior Is Almost Always Good Politics](./the-dictators-handbook.md) by Bruce Bueno de Mesquita and Alastair Smith  
   
 ### 📚 Contrasting  
-* [🌎👎👑💰🏚️ Why Nations Fail: The Origins of Power, Prosperity, and Poverty](/content/books/why-nations-fail-the-origins-of-power-prosperity-and-poverty.md) by Daron Acemoglu and James A. Robinson  
+* [🌎👎👑💰🏚️ Why Nations Fail: The Origins of Power, Prosperity, and Poverty](./why-nations-fail-the-origins-of-power-prosperity-and-poverty.md) by Daron Acemoglu and James A. Robinson  
 * 📜 The End of History and the Last Man by Francis Fukuyama  
-* [💡🔬🧑‍🤝‍🧑📈 Enlightenment Now: The Case for Reason, Science, Humanism, and Progress](/content/books/enlightenment-now-the-case-for-reason-science-humanism-and-progress.md) by Steven Pinker  
+* [💡🔬🧑‍🤝‍🧑📈 Enlightenment Now: The Case for Reason, Science, Humanism, and Progress](./enlightenment-now-the-case-for-reason-science-humanism-and-progress.md) by Steven Pinker  
   
 ### 📚 Related  
-* [💰🤫 Dark Money: The Hidden History of the Billionaires Behind the Rise of the Radical Right](/content/books/dark-money-the-hidden-history-of-the-billionaires-behind-the-rise-of-the-radical-right.md) by Jane Mayer  
+* [💰🤫 Dark Money: The Hidden History of the Billionaires Behind the Rise of the Radical Right](./dark-money-the-hidden-history-of-the-billionaires-behind-the-rise-of-the-radical-right.md) by Jane Mayer  
 * 🔌 The Master Switch: The Rise and Fall of Information Empires by Tim Wu  
 * 🗺️ Prisoners of Geography: Ten Maps That Tell You Everything You Need to Know About Global Politics by Tim Marshall  
   

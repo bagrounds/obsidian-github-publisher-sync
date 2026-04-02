@@ -4,8 +4,11 @@ aliases:
   - 🏛️📊 Social Sciences
 title: 🏛️📊 Social Sciences
 URL: https://bagrounds.org/topics/social-sciences
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_time: 2026-04-01T00:00:00Z
+force_analyze_links: false
 ---
-[Home](/content/index.md) > [Topics](/content/topics/index.md) > [Knowledge](/content/topics/a-hierarchical-view-of-human-knowledge.md)  
+[Home](../index.md) > [Topics](./index.md) > [Knowledge](./a-hierarchical-view-of-human-knowledge.md)  
 # 🏛️📊 Social Sciences  
 ## 🤖 AI Summary  
 **High-Level Summary:**  
@@ -18,18 +21,18 @@ Here's a breakdown of major subcategories:
 * **Sociology:** 🏙️ The study of social behavior, institutions, and the development of societies. It examines social structures, interactions, and problems.  
 * **Political Science:** 🏛️ The study of governments, political processes, and political behavior. It analyzes power, governance, and public policy.  
 * **Psychology:** 🧠 The study of the human mind and behavior. It explores cognitive processes, emotions, and individual differences.  
-* **[Economics](/content/topics/economics.md):** 💰 The study of the production, distribution, and consumption of goods and services. It analyzes how individuals, businesses, and governments make choices.  
+* **[Economics](./economics.md):** 💰 The study of the production, distribution, and consumption of goods and services. It analyzes how individuals, businesses, and governments make choices.  
 * **Geography:** 🗺️ The study of the Earth's surface, its physical features, inhabitants, and phenomena. It explores the relationships between people and their environments.  
 * **History:** 📜 The study of past events, particularly in human affairs. It analyzes and interprets records of human activities.  
-* **[Communication Studies](/content/topics/communication-studies.md):** 🗣️ The study of human communication, including verbal, nonverbal, and mediated forms. It examines how messages are created, transmitted, and interpreted.  
+* **[Communication Studies](./communication-studies.md):** 🗣️ The study of human communication, including verbal, nonverbal, and mediated forms. It examines how messages are created, transmitted, and interpreted.  
 * **Criminology:** 🕵️ The study of crime and criminal behavior. It examines the causes, consequences, and prevention of crime.  
   
 **Book Recommendations:**  
 Here are some influential and accessible books that provide a good introduction to Social Sciences:  
   
-1.  **"[Thinking, Fast and Slow](/content/books/thinking-fast-and-slow.md)" by Daniel Kahneman:** 🤯 This book explores the two systems of thinking that drive our judgment and decision-making, providing deep insights into psychology and behavioral economics. It's a fantastic look into how we make decisions, and how often we make mistakes.  
+1.  **"[Thinking, Fast and Slow](../books/thinking-fast-and-slow.md)" by Daniel Kahneman:** 🤯 This book explores the two systems of thinking that drive our judgment and decision-making, providing deep insights into psychology and behavioral economics. It's a fantastic look into how we make decisions, and how often we make mistakes.  
 2.  **"The Sociological Imagination" by C. Wright Mills:** 🔍 This classic work introduces the concept of the sociological imagination, which enables us to connect personal experiences with broader social forces. It's a great introduction to the basics of sociology.  
-3.  **"[Sapiens: A Brief History of Humankind](/content/books/sapiens-a-brief-history-of-humankind.md)" by Yuval Noah Harari:** 🌍 This book offers a sweeping overview of human history, from the Stone Age to the present, drawing on anthropology, history, and other social sciences. It explains how humans have evolved and created the societies we live in today.  
+3.  **"[Sapiens: A Brief History of Humankind](../books/sapiens-a-brief-history-of-humankind.md)" by Yuval Noah Harari:** 🌍 This book offers a sweeping overview of human history, from the Stone Age to the present, drawing on anthropology, history, and other social sciences. It explains how humans have evolved and created the societies we live in today.  
 4.  **"Prisoners of Geography: Ten Maps That Tell You Everything You Need to Know About Global Politics" by Tim Marshall:** 🗺️ This book explains how geography shapes the political and strategic decisions of nations, providing a fascinating perspective on international relations. It helps to understand why countries and people act the way they do.  
 5.  **"Freakonomics: A Rogue Economist Explores the Hidden Side of Everything" by Steven D. Levitt and Stephen J. Dubner:** 📊 This book uses economic principles to analyze a wide range of social phenomena, from crime to parenting, in a highly engaging and accessible way. It makes economics fun and relatable.  
   

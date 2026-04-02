@@ -6,7 +6,7 @@ URL: https://bagrounds.org/books/big-ideas-for-little-philosophers-truth-with-so
 share: true
 affiliate link: https://amzn.to/3G9KUWP
 ---
-[Home](/content/index.md) > [Books](/content/books/index.md)  
+[Home](../index.md) > [Books](./index.md)  
 # ❓🏛️👶 Big Ideas for Little Philosophers: Truth with Socrates  
 [🛒 Big Ideas for Little Philosophers: Truth with Socrates. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3G9KUWP)  
   
@@ -35,7 +35,7 @@ affiliate link: https://amzn.to/3G9KUWP
   
 ### 🗂️ Similar Books (Introduction to Philosophy for Children)  
   
-* 📚 **Other Books in the *Big Ideas for Little Philosophers* Series:** 🌟 This series covers other prominent philosophers and their core ideas, such as Love with Plato, [🤔👶😊 Happiness with Aristotle](/content/books/big-ideas-for-little-philosophers-happiness-with-aristotle.md), Imagination with René Descartes, Kindness with Confucius, and Equality with Simone de Beauvoir.  
+* 📚 **Other Books in the *Big Ideas for Little Philosophers* Series:** 🌟 This series covers other prominent philosophers and their core ideas, such as Love with Plato, [🤔👶😊 Happiness with Aristotle](./big-ideas-for-little-philosophers-happiness-with-aristotle.md), Imagination with René Descartes, Kindness with Confucius, and Equality with Simone de Beauvoir.  
 * 💭 ***Big Ideas for Curious Minds: An Introduction to Philosophy*** by The School of Life: 🌍 Uses everyday situations to explain philosophical concepts in a kid-friendly way.  
 * 🤔 ***Philosophy for Kids: Key Ideas Clearly Explained*** by David A. White: 💡 Introduces philosophical concepts through engaging stories and discussions.  
 * ❓ ***I Wonder: A Book of Questions with No Answers*** by Annaka Harris: 🧐 Encourages curiosity and philosophical thinking through a series of open-ended questions.  
@@ -49,7 +49,7 @@ affiliate link: https://amzn.to/3G9KUWP
   
 ### 🎨 Creatively Related Books (Sparking Philosophical Thought Through Story)  
   
-* **[🤴 The Little Prince](/content/books/the-little-prince.md)** by Antoine de Saint-Exupéry: 🦊 A classic novella rich in philosophical reflections on human nature, truth, and what is essential.  
+* **[🤴 The Little Prince](./the-little-prince.md)** by Antoine de Saint-Exupéry: 🦊 A classic novella rich in philosophical reflections on human nature, truth, and what is essential.  
 * 🐻 ***Winnie-the-Pooh*** by A. A. Milne: 🍯 Contains subtle undercurrents of philosophical and psychological insights within simple narratives.  
 * 🔎 ***Through the Looking-Glass*** by Lewis Carroll: 🐇 Explores logic, language, and perception in a whimsical and mind-bending way.  
 * 🧙 ***The Wizard of Oz*** by L. Frank Baum: 🌈 Offers reflections on courage, wisdom, and the nature of home and desires.  
@@ -60,5 +60,5 @@ affiliate link: https://amzn.to/3G9KUWP
 * 👩‍🏫 ***Thinking Through Stories: Children, Philosophy, and Picture Books*** by Thomas E. Wartenberg: 🤓 While for adults, this book discusses how to use various children's picture books to engage children in philosophical discussions. 📚 He also authored *Big Ideas for Little Kids: Teaching Philosophy Through Children's Literature*.  
 * 👴 ***Wise Guy: The Life and Philosophy of Socrates*** by M. D. Usher: 🗣️ An engaging introduction to Socrates specifically for young readers.  
   
-## 💬 [Gemini](/content/software/gemini.md) Prompt (gemini-2.5-flash-preview-04-17)  
+## 💬 [Gemini](../software/gemini.md) Prompt (gemini-2.5-flash-preview-04-17)  
 > Write a markdown-formatted (start headings at level H2) book report, followed by a plethora of additional similar, contrasting, and creatively related book recommendations on Big Ideas for Little Philosophers: Truth with Socrates. Be thorough in content discussed but concise and economical with your language. Structure the report with section headings and bulleted lists to avoid long blocks of text.

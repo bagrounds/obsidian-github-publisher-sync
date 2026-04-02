@@ -7,7 +7,7 @@ share: true
 affiliate link: https://amzn.to/3W37Vzf
 CTA: 🏃 Transcend limitations.
 ---
-[Home](/content/index.md) > [Books](/content/books/index.md)  
+[Home](../index.md) > [Books](./index.md)  
 # 💪🧠 Endure: Mind, Body, and the Curiously Elastic Limits of Human Performance  
 [🛒 Endure: Mind, Body, and the Curiously Elastic Limits of Human Performance. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3W37Vzf)  
   
@@ -41,16 +41,16 @@ CTA: 🏃 Transcend limitations.
   
 * 🧠 **How Bad Do You Want It? Mastering the Psychology of Mind over Muscle** by Matt Fitzgerald  
     * This book directly complements Endure by focusing extensively on the mental aspects of athletic performance, arguing that the mind, rather than the body, is the primary determinant of peak athletic achievement. 🧠 It examines how elite athletes leverage psychological strategies to overcome perceived physical limits.  
-* **[🏃‍♂️⛰️ Born to Run: A Hidden Tribe, Superathletes, and the Greatest Race the World Has Never Seen](/content/books/born-to-run-a-hidden-tribe-superathletes-and-the-greatest-race-the-world-has-never-seen.md)** by Christopher McDougall  
+* **[🏃‍♂️⛰️ Born to Run: A Hidden Tribe, Superathletes, and the Greatest Race the World Has Never Seen](./born-to-run-a-hidden-tribe-superathletes-and-the-greatest-race-the-world-has-never-seen.md)** by Christopher McDougall  
     * While more narrative-driven, this book delves into the evolutionary biology of running and the extraordinary endurance capabilities of the Tarahumara tribe, echoing Endure's exploration of human potential and physical limits.  
-* **[❤️‍🔥💪 Grit: The Power of Passion and Perseverance](/content/books/grit-the-power-of-passion-and-perseverance.md)** by Angela Duckworth  
+* **[❤️‍🔥💪 Grit: The Power of Passion and Perseverance](./grit-the-power-of-passion-and-perseverance.md)** by Angela Duckworth  
     * Duckworth's work focuses on the importance of passion and sustained effort toward achieving long-term goals. This aligns with Endure's emphasis on mental toughness and the willingness to push through discomfort over extended periods, not just in sports but in any challenging endeavor.  
   
 ### ⚖️ Contrasting Books  
   
 📖 These recommendations offer a different perspective, perhaps focusing on acceptance, rest, or the limitations of pushing oneself, providing a counterbalance to Endure's high-performance focus.  
   
-* **[😴📈 Rest: Why You Get More Done When You Work Less](/content/books/rest-why-you-get-more-done-when-you-work-less.md)** by Alex Soojung-Kim Pang  
+* **[😴📈 Rest: Why You Get More Done When You Work Less](./rest-why-you-get-more-done-when-you-work-less.md)** by Alex Soojung-Kim Pang  
     * While Endure champions pushing limits, Rest highlights the crucial, often overlooked, role of deliberate rest, deep play, and recovery in fostering creativity, productivity, and long-term sustainable performance. It offers a contrasting view by emphasizing the importance of not always "enduring."  
 * 🧘 **The Art of Stillness: Adventures in Going Nowhere** by Pico Iyer  
     * This book explores the benefits of slowing down, disengaging, and embracing solitude. It stands in contrast to the constant striving depicted in Endure, suggesting that profound insights and rejuvenation can come from stillness rather than relentless forward motion.  
@@ -61,11 +61,11 @@ CTA: 🏃 Transcend limitations.
   
 📖 These books draw broader connections to the themes of human experience, challenge, and the mind-body connection, extending beyond athletic endurance.  
   
-* **[🔦💡 Man's Search for Meaning](/content/books/mans-search-for-meaning.md)** by Viktor Frankl  
+* **[🔦💡 Man's Search for Meaning](./mans-search-for-meaning.md)** by Viktor Frankl  
     * Frankl's powerful memoir explores the human capacity for resilience and finding purpose even in the most extreme suffering. It resonates with Endure's themes of mental fortitude and the mind's ability to shape one's experience of hardship, though in a profoundly different, existential context.  
-* **[📜🌍⏳ Sapiens: A Brief History of Humankind](/content/books/sapiens-a-brief-history-of-humankind.md)** by Yuval Noah Harari  
+* **[📜🌍⏳ Sapiens: A Brief History of Humankind](./sapiens-a-brief-history-of-humankind.md)** by Yuval Noah Harari  
     * This sweeping historical overview touches on the evolution of human capabilities, including our capacity for cooperation and collective action that allows for incredible feats. While not directly about athletic endurance, it offers a grander narrative of human potential and adaptation.  
-* **[🤿💼 Deep Work: Rules for Focused Success in a Distracted World](/content/books/deep-work.md)** by Cal Newport  
+* **[🤿💼 Deep Work: Rules for Focused Success in a Distracted World](./deep-work.md)** by Cal Newport  
     * Newport's book focuses on the ability to concentrate deeply on a single task without distraction, a form of mental endurance essential for high-level intellectual performance. It offers parallels to the mental discipline and focus required in physical endurance, translating the concept of "enduring" to the realm of cognitive effort.  
   
 ## 💬 [Gemini](https://gemini.google.com) Prompt (gemini-2.5-flash)  

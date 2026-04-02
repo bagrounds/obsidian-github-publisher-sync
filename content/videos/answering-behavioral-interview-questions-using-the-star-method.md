@@ -9,7 +9,7 @@ Platform: "#YouTube"
 Channel: "[[Self Made Millennial]]"
 tags:
 ---
-[Home](/content/index.md) > [Videos](/content/videos/index.md)  
+[Home](../index.md) > [Videos](./index.md)  
 # 🗣️⭐💼 Answering Behavioral Interview Questions Using the STAR Method  
 ![Answering Behavioral Interview Questions Using the STAR Method](https://youtu.be/ZSSID5mp93o)  
   

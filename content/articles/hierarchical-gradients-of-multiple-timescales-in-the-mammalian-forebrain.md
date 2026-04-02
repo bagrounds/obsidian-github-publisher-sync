@@ -7,7 +7,7 @@ URL: https://bagrounds.org/articles/hierarchical-gradients-of-multiple-timescale
 Author:
 tags:
 ---
-[Home](/content/index.md) > [Articles](/content/articles/index.md)  
+[Home](../index.md) > [Articles](./index.md)  
 # [🧠🪜⏱️📈 Hierarchical gradients of multiple timescales in the mammalian forebrain](https://pmc.ncbi.nlm.nih.gov/articles/PMC11665873)  
 ## 🤖 AI Summary  
   
@@ -27,5 +27,5 @@ tags:
 ## 📚 Book Recommendations  
 - 📖 **Principles of Neural Science** by Eric R. Kandel, James H. Schwartz, and Thomas M. Jessell: A comprehensive textbook for a deeper understanding of the foundational principles of neuroscience, including neural circuits and brain organization.  
 - 🧠 **The Brain: The Story of You** by David Eagleman: A more accessible look at the brain's complex workings, offering a broad perspective on how neural activity gives rise to consciousness and behavior.  
-- **[🤔🐇🐢 Thinking, Fast and Slow](/content/books/thinking-fast-and-slow.md)** by Daniel Kahneman: This book explores the two systems that drive how we think and make decisions, which relates to the concept of different processing speeds and timescales in the brain.  
-- **[🧠🫂 The Embodied Mind: Cognitive Science and Human Experience](/content/books/the-embodied-mind-cognitive-science-and-human-experience.md)** by Francisco Varela, Evan Thompson, and Eleanor Rosch: A contrasting perspective that moves beyond a purely neural focus, examining how the brain, body, and environment are interconnected in shaping cognition.
+- **[🤔🐇🐢 Thinking, Fast and Slow](../books/thinking-fast-and-slow.md)** by Daniel Kahneman: This book explores the two systems that drive how we think and make decisions, which relates to the concept of different processing speeds and timescales in the brain.  
+- **[🧠🫂 The Embodied Mind: Cognitive Science and Human Experience](../books/the-embodied-mind-cognitive-science-and-human-experience.md)** by Francisco Varela, Evan Thompson, and Eleanor Rosch: A contrasting perspective that moves beyond a purely neural focus, examining how the brain, body, and environment are interconnected in shaping cognition.

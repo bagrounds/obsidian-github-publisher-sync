@@ -10,7 +10,7 @@ Channel: Neutrality Studies
 tags:
 youtube: https://youtu.be/kb_cxeICQKE
 ---
-[Home](/content/index.md) > [Videos](/content/videos/index.md)  
+[Home](../index.md) > [Videos](./index.md)  
 # 🤫💰🪙 This Is What They Don't Tell You About Money And Gold | Prof. L. Randall Wray  
 ![This Is What They Don't Tell You About Money And Gold | Prof. L. Randall Wray](https://youtu.be/kb_cxeICQKE)  
   
@@ -47,9 +47,9 @@ youtube: https://youtu.be/kb_cxeICQKE
 ## 📚 Book Recommendations  
   
 ### ↔️ Similar  
-* [💰📉➡️📈🗳️ The Deficit Myth: Modern Monetary Theory and the Birth of the People's Economy](/content/books/the-deficit-myth.md) by Stephanie Kelton.  
+* [💰📉➡️📈🗳️ The Deficit Myth: Modern Monetary Theory and the Birth of the People's Economy](../books/the-deficit-myth.md) by Stephanie Kelton.  
     * 💡 This book provides a popular and accessible explanation of MMT's core principles, arguing that deficits are not inherently harmful.  
-* [💰🏛️ Modern Money Theory: A Primer on Macroeconomics for Sovereign Monetary Systems](/content/books/modern-money-theory-a-primer-on-macroeconomics-for-sovereign-monetary-systems.md) by L. Randall Wray.  
+* [💰🏛️ Modern Money Theory: A Primer on Macroeconomics for Sovereign Monetary Systems](../books/modern-money-theory-a-primer-on-macroeconomics-for-sovereign-monetary-systems.md) by L. Randall Wray.  
     * 🔑 A comprehensive academic text directly from the speaker, detailing the MMT framework for sovereign monetary systems.  
   
 ### 🆚 Contrasting  
@@ -59,7 +59,7 @@ youtube: https://youtu.be/kb_cxeICQKE
     * 🏛️ This offers a detailed, conventional analysis of US monetary and fiscal policy, providing an orthodox perspective on the debt, the Fed's role, and policy outcomes.  
   
 ### 🎨 Creatively Related  
-* [🏛️💰 Debt: The First 5,000 Years](/content/books/debt-the-first-5000-years.md) by David Graeber.  
+* [🏛️💰 Debt: The First 5,000 Years](../books/debt-the-first-5000-years.md) by David Graeber.  
     * 🌍 An anthropological history that explores how money originated as debt and social obligation, reinforcing the MMT concept of money as a debt relation.  
-* [🚀🌍💰 Mission Economy: A Moonshot Guide to Changing Capitalism](/content/books/mission-economy-a-moonshot-guide-to-changing-capitalism.md) by Mariana Mazzucato.  
+* [🚀🌍💰 Mission Economy: A Moonshot Guide to Changing Capitalism](../books/mission-economy-a-moonshot-guide-to-changing-capitalism.md) by Mariana Mazzucato.  
     * 🚀 This book argues for a proactive, mission-oriented role for the state in economic life, aligning with MMT's emphasis on using fiscal policy to achieve public purpose.

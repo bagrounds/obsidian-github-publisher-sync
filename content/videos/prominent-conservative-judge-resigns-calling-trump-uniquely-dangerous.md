@@ -10,7 +10,7 @@ Channel: PBS NewsHour
 tags:
 youtube: https://youtu.be/kMJM9ozAsPg
 ---
-[Home](/content/index.md) > [Videos](/content/videos/index.md)  
+[Home](../index.md) > [Videos](./index.md)  
 # 🏛️➡️🚪⚠️ Prominent conservative judge resigns, calling Trump 'uniquely dangerous'  
 ![Prominent conservative judge resigns, calling Trump 'uniquely dangerous'](https://youtu.be/kMJM9ozAsPg)  
   
@@ -46,12 +46,12 @@ youtube: https://youtu.be/kMJM9ozAsPg
 ## 📚 Book Recommendations  
   
 ### ↔️ Similar  
-* [🗳️🏛️☠️ How Democracies Die](/content/books/how-democracies-die.md) by Steven Levitsky and Daniel Ziblatt. 🔎 Examines the subtle ways democratic institutions can erode through the misuse of legal and institutional mechanisms, mirroring Judge Wolf's concerns about presidential tactics.  
-* [👥⚔️🏛️ The People vs. Democracy: Why Our 🗽 Freedom Is in ⚠️ Danger and How to Save It](/content/books/the-people-vs-democracy.md) by Yascha Mounk. 🌐 Discusses the rise of populism worldwide and how it threatens liberal rights and independent institutions, showing the global context for the judicial concerns raised.  
+* [🗳️🏛️☠️ How Democracies Die](../books/how-democracies-die.md) by Steven Levitsky and Daniel Ziblatt. 🔎 Examines the subtle ways democratic institutions can erode through the misuse of legal and institutional mechanisms, mirroring Judge Wolf's concerns about presidential tactics.  
+* [👥⚔️🏛️ The People vs. Democracy: Why Our 🗽 Freedom Is in ⚠️ Danger and How to Save It](../books/the-people-vs-democracy.md) by Yascha Mounk. 🌐 Discusses the rise of populism worldwide and how it threatens liberal rights and independent institutions, showing the global context for the judicial concerns raised.  
   
 ### 🆚 Contrasting  
 * 📚 The Constitution of Liberty by F.A. Hayek. 💡 Offers a foundational text for conservative legal thought, emphasizing limited government and the rule of law as protection against coercion, providing a framework to assess Judge Wolf's critique from a different conservative viewpoint.  
-* 📚 [🇺🇸➡️ A Time for Choosing: The Rise of Modern American Conservatism](/content/books/a-time-for-choosing-the-rise-of-modern-american-conservatism.md). 🇺🇸 Provides insight into the core conservative judicial philosophy that informed Judge Wolf's appointment and contrasts with the executive power arguments currently being advanced.  
+* 📚 [🇺🇸➡️ A Time for Choosing: The Rise of Modern American Conservatism](../books/a-time-for-choosing-the-rise-of-modern-american-conservatism.md). 🇺🇸 Provides insight into the core conservative judicial philosophy that informed Judge Wolf's appointment and contrasts with the executive power arguments currently being advanced.  
   
 ### 🎨 Creatively Related  
 * 📚 The Brethren: Inside the Supreme Court by Bob Woodward and Scott Armstrong. 👨‍⚖️ Provides an inside look at the internal workings of the Supreme Court during high-stakes constitutional confrontations, including the Nixon tapes case that Judge Wolf referenced in the interview.  

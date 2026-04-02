@@ -9,7 +9,7 @@ Platform:
 Channel: PBS NewsHour
 tags:
 ---
-[Home](/content/index.md) > [Videos](/content/videos/index.md)  
+[Home](../index.md) > [Videos](./index.md)  
 # Immigration judge rules Trump administration can deport Columbia protestor Mahmoud Khalil  
 ![Immigration judge rules Trump administration can deport Columbia protestor Mahmoud Khalil](https://youtu.be/OG8D1dcm8vk)  
   

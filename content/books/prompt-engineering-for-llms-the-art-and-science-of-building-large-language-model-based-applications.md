@@ -9,7 +9,7 @@ affiliate link: https://amzn.to/3J6B21F
 tags:
   - AIEngineering
 ---
-[Home](/content/index.md) > [Books](/content/books/index.md)  
+[Home](../index.md) > [Books](./index.md)  
 # ⌨️🤖 Prompt Engineering for LLMs: The Art and Science of Building Large Language Model-Based Applications  
 [🛒 Prompt Engineering for LLMs: The Art and Science of Building Large Language Model-Based Applications. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3J6B21F)  
   
@@ -80,12 +80,12 @@ tags:
   
 ### ➖ Contrasting  
 * 🏢 Generative AI: The Insights You Need from Harvard Business Review: Provides a high-level business perspective on generative AI, less technical than prompt engineering.  
-* [🧠💻🤖 Deep Learning](/content/books/deep-learning.md) by Ian Goodfellow et al.: A foundational text on deep learning, offering the underlying mathematical and architectural details of LLMs.  
+* [🧠💻🤖 Deep Learning](./deep-learning.md) by Ian Goodfellow et al.: A foundational text on deep learning, offering the underlying mathematical and architectural details of LLMs.  
   
 ### ➗ Related  
 * 🔎 Relevant Search by John Berryman (Manning): Explores search relevance, a key component related to context gathering and RAG in LLM applications.  
-* [🤖🏗️ AI Engineering: Building Applications with Foundation Models](/content/books/ai-engineering-building-applications-with-foundation-models.md) by Chip Huyen: Covers the broader engineering aspects of building AI systems, including deployment and infrastructure.  
-* [🧑‍💻📈 The Pragmatic Programmer: Your Journey to Mastery](/content/books/the-pragmatic-programmer-your-journey-to-mastery.md) by David Thomas and Andrew Hunt: Focuses on general software development best practices applicable to any domain, including LLM application development.  
+* [🤖🏗️ AI Engineering: Building Applications with Foundation Models](./ai-engineering-building-applications-with-foundation-models.md) by Chip Huyen: Covers the broader engineering aspects of building AI systems, including deployment and infrastructure.  
+* [🧑‍💻📈 The Pragmatic Programmer: Your Journey to Mastery](./the-pragmatic-programmer-your-journey-to-mastery.md) by David Thomas and Andrew Hunt: Focuses on general software development best practices applicable to any domain, including LLM application development.  
   
 ## 🫵 What Do You Think?  
 🤔 Which prompt engineering technique do you find most impactful in your LLM projects, and what novel strategies do you believe will define the future of LLM application development?

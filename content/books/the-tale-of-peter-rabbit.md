@@ -7,7 +7,7 @@ share: true
 CTA: 🥕 Discover mischief.
 affiliate link: https://amzn.to/4ibUNBY
 ---
-[Home](/content/index.md) > [Books](/content/books/index.md)  
+[Home](../index.md) > [Books](./index.md)  
 # 🐰🥕 The Tale of Peter Rabbit  
 [🛒 The Tale of Peter Rabbit. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4ibUNBY)  
   
@@ -82,7 +82,7 @@ affiliate link: https://amzn.to/4ibUNBY
 ### 🔗📚 Related  
 * 🎨👩‍🌾 Beatrix Potter: A Life in Nature by Linda Lear (biography of the author)  
 * 🌳🐸 The Wind in the Willows by Kenneth Grahame (classic anthropomorphic animal tale)  
-* [🕷️🕸️ Charlotte's Web](/content/books/charlottes-web.md) by E.B. White (animal friendships, life cycles, profound themes for children)  
+* [🕷️🕸️ Charlotte's Web](./charlottes-web.md) by E.B. White (animal friendships, life cycles, profound themes for children)  
   
 ## 🫵🤔 What Do You Think?  
   

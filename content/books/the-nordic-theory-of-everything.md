@@ -9,7 +9,7 @@ tags:
 affiliate link: https://amzn.to/4jCN5Qm
 CTA: 🌍 Explore well-being.
 ---
-[Home](/content/index.md) > [Books](/content/books/index.md)  
+[Home](../index.md) > [Books](./index.md)  
 # 🇸🇪🇩🇰🇳🇴🇫🇮🧩 The Nordic Theory of Everything: In Search of a Better Life  
 [🛒 The Nordic Theory of Everything: In Search of a Better Life. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4jCN5Qm)  
   
@@ -65,10 +65,10 @@ Partanen's book offers a compelling and accessible perspective on Nordic societi
 #### Further Reading 📚➡️➡️➡️  
   
 - **Best Alternate Book on the Same Topic:** _The Almost Nearly Perfect People: Behind the Myth of the Scandinavian Utopia_ by Michael Booth. This book offers a more humorous and sometimes critical look at Nordic culture and societies, providing a balanced perspective. 😂  
-- **Best Book That Is Tangentially Related:** _[Bowling Alone](/content/books/bowling-alone.md): The Collapse and Revival of American Community_ by Robert D. Putnam. This book explores the decline of social capital in the United States, a10 concept closely linked to the high levels of trust found in Nordic countries. 🏘️  
+- **Best Book That Is Tangentially Related:** _[Bowling Alone](./bowling-alone.md): The Collapse and Revival of American Community_ by Robert D. Putnam. This book explores the decline of social capital in the United States, a10 concept closely linked to the high levels of trust found in Nordic countries. 🏘️  
 - **Best Book That Is Diametrically Opposed:** _Atlas Shrugged_ by Ayn Rand. This novel champions radical individualism and limited government intervention, offering a stark contrast to the Nordic model. 🗽  
 - **Best Fiction Book That Incorporates Related Ideas:** _The Dispossessed_ by Ursula K. Le Guin. This science fiction novel explores the complexities of a society based on collectivist principles, prompting reflection on different social structures. 👽  
 - **Best Book That Is More General:** _Utopia for Realists: How We Can Build the Ideal Society_ by Rutger Bregman. This book explores various progressive ideas for societal improvement, some of which align with Nordic principles. ✨  
 - **Best Book That Is More Specific:** Any in-depth academic study on the specific social welfare policies of a particular Nordic country (e.g., a book focusing solely on the Finnish education system). 🇫🇮  
-- **Best Book That Is More Rigorous:** [🌎👎👑💰🏚️ Why Nations Fail: The Origins of Power, Prosperity, and Poverty](/content/books/why-nations-fail-the-origins-of-power-prosperity-and-poverty.md) by Daron Acemoglu and James A. Robinson. This book offers a broad, historically grounded analysis of the factors contributing to national success, including institutional structures. 🏛️  
+- **Best Book That Is More Rigorous:** [🌎👎👑💰🏚️ Why Nations Fail: The Origins of Power, Prosperity, and Poverty](./why-nations-fail-the-origins-of-power-prosperity-and-poverty.md) by Daron Acemoglu and James A. Robinson. This book offers a broad, historically grounded analysis of the factors contributing to national success, including institutional structures. 🏛️  
 - **Best Book That Is More Accessible:** Articles and reports from organizations like the OECD that compare social and economic indicators across different countries. 🌐

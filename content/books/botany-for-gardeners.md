@@ -7,7 +7,7 @@ share: true
 affiliate link: https://amzn.to/4jt9qQg
 CTA: Grow smarter.
 ---
-[Home](/content/index.md) > [Books](/content/books/index.md)  
+[Home](../index.md) > [Books](./index.md)  
 # 🌿🧑‍🌾 Botany for Gardeners  
 [🛒 Botany for Gardeners. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4jt9qQg)  
   
@@ -75,5 +75,5 @@ CTA: Grow smarter.
 * ✍️ **A Botanist's Vocabulary: 1300 Terms Explained and Illustrated:** A reference focusing purely on defining botanical terminology.  
 * 📜 **Latin for Gardeners: Over 3,000 Plant Names Explained and Explored:** Delves into the meaning and origin of scientific plant names.  
   
-## 💬 [Gemini](/content/software/gemini.md) Prompt (gemini-2.5-pro-exp-03-25)  
+## 💬 [Gemini](../software/gemini.md) Prompt (gemini-2.5-pro-exp-03-25)  
 > Write a markdown-formatted (start headings at level H2) book report, followed by a plethora of additional similar, contrasting, and creatively related book recommendations on Botany for Gardeners. Be thorough in content discussed but concise and economical with your language. Structure the report with section headings and bulleted lists to avoid long blocks of text.

@@ -9,7 +9,7 @@ Platform:
 Channel: Senator Chris Murphy
 tags:
 ---
-[Home](/content/index.md) > [Videos](/content/videos/index.md)  
+[Home](../index.md) > [Videos](./index.md)  
 # Murphy: Trump Is Dismantling Our Democracy. We Must Come Together And Act Before It’s Too Late.  
 ![Murphy: Trump Is Dismantling Our Democracy. We Must Come Together And Act Before It’s Too Late.](https://youtu.be/7aDbEmHo9Fo)  
   
@@ -25,12 +25,12 @@ tags:
   
 ## 📚 Book Recommendations  
   
-- **[On Tyranny: Twenty Lessons from the Twentieth Century](/content/books/on-tyranny.md)** by Timothy Snyder: This book offers historical perspectives on resisting authoritarianism.  
-- **[🗳️🏛️☠️ How Democracies Die](/content/books/how-democracies-die.md)** by Steven Levitsky and Daniel Ziblatt: This book examines how elected autocrats undermine democracy, using historical and global examples.  
+- **[On Tyranny: Twenty Lessons from the Twentieth Century](../books/on-tyranny.md)** by Timothy Snyder: This book offers historical perspectives on resisting authoritarianism.  
+- **[🗳️🏛️☠️ How Democracies Die](../books/how-democracies-die.md)** by Steven Levitsky and Daniel Ziblatt: This book examines how elected autocrats undermine democracy, using historical and global examples.  
 - **The Assault on Reason** by Al Gore: This book discusses the role of truth and reason in democratic discourse.  
-- **[💰🤫 Dark Money: The Hidden History of the Billionaires Behind the Rise of the Radical Right](/content/books/dark-money-the-hidden-history-of-the-billionaires-behind-the-rise-of-the-radical-right.md)** by Jane Mayer: This book investigates the influence of money on political institutions.  
-- [Strongmen: Mussolini to the Present](/content/books/strongmen.md)  
-- [1984](/content/books/1984.md)  
+- **[💰🤫 Dark Money: The Hidden History of the Billionaires Behind the Rise of the Radical Right](../books/dark-money-the-hidden-history-of-the-billionaires-behind-the-rise-of-the-radical-right.md)** by Jane Mayer: This book investigates the influence of money on political institutions.  
+- [Strongmen: Mussolini to the Present](../books/strongmen.md)  
+- [1984](../books/1984.md)  
   
 ## 🐦 Tweet  
 <blockquote class="twitter-tweet" data-theme="dark"><p lang="en" dir="ltr">🇺🇸 Democracy is being dismantled by attacks on key institutions: 📰 press, 🎓 universities, ⚖️ legal profession, 🏢 business. 🫏 &amp; 🐘 must unite to defend their independence. ✊ Collective action needed to prevent shift to fake democracy.<a href="https://t.co/vDBayMVqme">https://t.co/vDBayMVqme</a><a href="https://twitter.com/SenWhitehouse?ref_src=twsrc%5Etfw">@SenWhitehouse</a></p>&mdash; Bryan Grounds (@bagrounds) <a href="https://twitter.com/bagrounds/status/1910964805344649359?ref_src=twsrc%5Etfw">April 12, 2025</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>

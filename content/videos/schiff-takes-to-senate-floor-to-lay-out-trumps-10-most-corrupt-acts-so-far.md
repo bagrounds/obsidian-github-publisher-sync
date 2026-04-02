@@ -9,7 +9,7 @@ Platform:
 Channel: Sen. Adam Schiff
 tags:
 ---
-[Home](/content/index.md) > [Videos](/content/videos/index.md)  
+[Home](../index.md) > [Videos](./index.md)  
 # 🏛️📣👹🤑 Schiff Takes To Senate Floor to Lay Out Trump's 10 Most Corrupt Acts So Far  
 ![Schiff Takes To Senate Floor to Lay Out Trump's 10 Most Corrupt Acts So Far](https://youtu.be/000yxkGXSVM)  
   
@@ -48,7 +48,7 @@ Schiff concludes 🏁 by stating that these deals 🤝 demonstrate Trump's focus
   
 ### 📜 On the Emoluments Clause  
   
-* **[💰🇺🇸 Corruption in America: From Benjamin Franklin's Snuff Box to Citizens United](/content/books/corruption-in-america-from-benjamin-franklins-snuff-box-to-citizens-united.md)** by Zephyr Teachout: This book 📖 provides a deep dive 🤿 into the history 📜 of corruption 😈 in America 🇺🇸, including a significant discussion 💬 of the Emoluments Clause 📜 and its original intent 🎯, offering context 🌍 for its modern application.  
+* **[💰🇺🇸 Corruption in America: From Benjamin Franklin's Snuff Box to Citizens United](../books/corruption-in-america-from-benjamin-franklins-snuff-box-to-citizens-united.md)** by Zephyr Teachout: This book 📖 provides a deep dive 🤿 into the history 📜 of corruption 😈 in America 🇺🇸, including a significant discussion 💬 of the Emoluments Clause 📜 and its original intent 🎯, offering context 🌍 for its modern application.  
 * 📜 **"The Emoluments Clause: Its text, meaning, and application to Donald J. Trump"** (a paper/brief available from the Brookings Institution by Laurence H. Tribe and Richard Painter): While not a full book 📖, this detailed analysis 🔎 by prominent legal scholars 🧑‍🎓 specifically examines the Emoluments Clause 📜 in relation to the business dealings 💼 of President Donald Trump, offering a legal perspective 🧑‍⚖️ on the alleged constitutional violations ⚠️.  
   
 ### 🪙 On Cryptocurrency and Political Influence  

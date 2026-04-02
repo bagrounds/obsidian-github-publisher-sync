@@ -8,7 +8,7 @@ Author:
 tags:
 affiliate link: https://amzn.to/43JcK3N
 ---
-[Home](/content/index.md) > [Books](/content/books/index.md)  
+[Home](../index.md) > [Books](./index.md)  
 # 🔬🗣️🎭 The Science of Storytelling: Why Stories Make Us Human and How to Tell Them Better  
 by Will Storr  
 [🛒 The Science of Storytelling: Why Stories Make Us Human and How to Tell Them Better. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/43JcK3N)  
@@ -76,14 +76,14 @@ Storr's work is well-researched and supported by a combination of scientific stu
 * **Best Alternate Books on the Same Topic:**  
     * "Story Genius" by Lisa Cron. 🧠💡  
     * *Wired for Story* by Lisa Cron – Explains the brain's response to storytelling and offers practical advice for writers. 🔌📖  
-* **Best Book Tangentially Related:** "[Thinking, Fast and Slow](/content/books/thinking-fast-and-slow.md)" by Daniel Kahneman. 🧠⚡  
+* **Best Book Tangentially Related:** "[Thinking, Fast and Slow](./thinking-fast-and-slow.md)" by Daniel Kahneman. 🧠⚡  
 * **Best Books Diametrically Opposed:**  
     * "Zen in the Art of Writing" by Ray Bradbury. ✍️🧘  
     * *Storynomics* by Robert McKee and Thomas Gerace – Focuses on storytelling as a business tool, emphasizing commercial strategy over psychological depth. 💰  
 * **Best Fiction Books That Incorporates Related Ideas:**  
     * "The Curious Incident of the Dog in the Night-Time" by Mark Haddon. 🐕‍🦺  
     * *Life of Pi* by Yann Martel – A novel that explores the power of storytelling to shape perception and convey truth. 🥧  
-* **Best Book More General:** [✍🏼👍🏼 On Writing Well: The Classic Guide to Writing Nonfiction](/content/books/on-writing-well.md) by William Zinsser. ✍️  
+* **Best Book More General:** [✍🏼👍🏼 On Writing Well: The Classic Guide to Writing Nonfiction](./on-writing-well.md) by William Zinsser. ✍️  
 * **Best Book More Specific:** "Save the Cat! Writes a Novel" by Jessica Brody. 🐱📖  
 * **Best Book More Rigorous:** "The Writer's Journey: Mythic Structure for Writers" by Christopher Vogler. 🗺️📜  
-* **Best Book More Accessible:** "[🐦🕊️ Bird by Bird: Some Instructions on Writing and Life](/content/books/bird-by-bird.md)" by Anne Lamott. 🐦✍️  
+* **Best Book More Accessible:** "[🐦🕊️ Bird by Bird: Some Instructions on Writing and Life](./bird-by-bird.md)" by Anne Lamott. 🐦✍️  

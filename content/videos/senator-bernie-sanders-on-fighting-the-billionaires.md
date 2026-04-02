@@ -10,7 +10,7 @@ Channel: Katie Couric
 tags:
 youtube: https://youtu.be/f9jFmnxssg0
 ---
-[Home](/content/index.md) > [Videos](/content/videos/index.md)  
+[Home](../index.md) > [Videos](./index.md)  
 # 👨‍🦳🆚💰 Senator Bernie Sanders on Fighting the Billionaires  
 ![Senator Bernie Sanders on Fighting the Billionaires](https://youtu.be/f9jFmnxssg0)  
   
@@ -49,19 +49,19 @@ A: 🧗 Real change takes place from the bottom up, through grassroots mobilizat
 ## 📚 Book Recommendations  
   
 ### ↔️ Similar  
-* [🏆🎭 Winners Take All: The Elite Charade of Changing the World](/content/books/winners-take-all-the-elite-charade-of-changing-the-world.md) by Anand Giridharadas: Argues that elites use philanthropy to maintain power and avoid real systemic change, similar to the critique of oligarchy.  
-* [💰📈🌍⏳ Capital in the Twenty-First Century](/content/books/capital-in-the-twenty-first-century.md) by Thomas Piketty: A comprehensive study on wealth and income inequality, showing a historical tendency for wealth concentration.  
-* [💰🤫 Dark Money: The Hidden History of the Billionaires Behind the Rise of the Radical Right](/content/books/dark-money-the-hidden-history-of-the-billionaires-behind-the-rise-of-the-radical-right.md) by Jane Mayer: Exposes how a network of wealthy donors secretly funds conservative political efforts, detailing the political power of a few.  
+* [🏆🎭 Winners Take All: The Elite Charade of Changing the World](../books/winners-take-all-the-elite-charade-of-changing-the-world.md) by Anand Giridharadas: Argues that elites use philanthropy to maintain power and avoid real systemic change, similar to the critique of oligarchy.  
+* [💰📈🌍⏳ Capital in the Twenty-First Century](../books/capital-in-the-twenty-first-century.md) by Thomas Piketty: A comprehensive study on wealth and income inequality, showing a historical tendency for wealth concentration.  
+* [💰🤫 Dark Money: The Hidden History of the Billionaires Behind the Rise of the Radical Right](../books/dark-money-the-hidden-history-of-the-billionaires-behind-the-rise-of-the-radical-right.md) by Jane Mayer: Exposes how a network of wealthy donors secretly funds conservative political efforts, detailing the political power of a few.  
   
 ### 🆚 Contrasting  
 * 📚 Atlas Shrugged by Ayn Rand: A philosophical defense of laissez-faire capitalism, championing economic elites as progress engines stifled by government regulation.  
-* [😇🧠 The Righteous Mind: Why Good People Are Divided by Politics and Religion](/content/books/the-righteous-mind.md) by Jonathan Haidt: Explores the moral foundations of political divisions, offering a psychological counterpoint to purely economic explanations for conflict.  
+* [😇🧠 The Righteous Mind: Why Good People Are Divided by Politics and Religion](../books/the-righteous-mind.md) by Jonathan Haidt: Explores the moral foundations of political divisions, offering a psychological counterpoint to purely economic explanations for conflict.  
 * 📚 The Road to Serfdom by F. A. Hayek: Argues that government planning and socialist policies inevitably lead to the loss of freedom and the rise of a totalitarian state.  
   
 ### 🎨 Creatively Related  
 * 📚 The Lonely Century: How to Restore Human Connection in a World That’s Pulling Apart by Noreena Hertz: Discusses the loneliness epidemic and loss of community accelerated by technology, relating to the video’s point on isolation \[[37:52](http://www.youtube.com/watch?v=f9jFmnxssg0&t=2272)].  
-* [🎳🏘️📉📈 Bowling Alone: The Collapse and Revival of American Community](/content/books/bowling-alone.md) by Robert D. Putnam: Details the decline of social capital and civic engagement in America, contextualizing the erosion of community \[[42:42](http://www.youtube.com/watch?v=f9jFmnxssg0&t=2562)].  
-* [📜🌍⏳ Sapiens: A Brief History of Humankind](/content/books/sapiens-a-brief-history-of-humankind.md) by Yuval Noah Harari: A broad historical survey that frames modern economic and technological developments, touching on the fundamental question of efficiency versus human happiness \[[42:26](http://www.youtube.com/watch?v=f9jFmnxssg0&t=2546)].  
+* [🎳🏘️📉📈 Bowling Alone: The Collapse and Revival of American Community](../books/bowling-alone.md) by Robert D. Putnam: Details the decline of social capital and civic engagement in America, contextualizing the erosion of community \[[42:42](http://www.youtube.com/watch?v=f9jFmnxssg0&t=2562)].  
+* [📜🌍⏳ Sapiens: A Brief History of Humankind](../books/sapiens-a-brief-history-of-humankind.md) by Yuval Noah Harari: A broad historical survey that frames modern economic and technological developments, touching on the fundamental question of efficiency versus human happiness \[[42:26](http://www.youtube.com/watch?v=f9jFmnxssg0&t=2546)].  
   
 ## 🐦 Tweet  
 <blockquote class="twitter-tweet" data-theme="dark"><p lang="en" dir="ltr">👨‍🦳🆚💰 Senator Bernie Sanders on Fighting the Billionaires<br><br>🗳️ Political System | 👨‍👩‍👧‍👦 Working Families | 🤖 Artificial Intelligence | ✊ Grassroots Movement | 🇮🇱 Israeli-Palestinian Conflict<a href="https://twitter.com/BernieSanders?ref_src=twsrc%5Etfw">@BernieSanders</a> <a href="https://twitter.com/katiecouric?ref_src=twsrc%5Etfw">@katiecouric</a><a href="https://t.co/BvJAhZnuow">https://t.co/BvJAhZnuow</a></p>&mdash; Bryan Grounds (@bagrounds) <a href="https://twitter.com/bagrounds/status/1981927229933379811?ref_src=twsrc%5Etfw">October 25, 2025</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>

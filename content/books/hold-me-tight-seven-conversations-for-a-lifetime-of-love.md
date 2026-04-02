@@ -6,8 +6,11 @@ URL: https://bagrounds.org/books/hold-me-tight-seven-conversations-for-a-lifetim
 share: true
 affiliate link: https://amzn.to/4mIuiG0
 updated: 2026-03-12T14:19:45.210Z
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_time: 2026-04-02T00:00:00Z
+force_analyze_links: false
 ---
-[Home](/content/index.md) > [Books](/content/books/index.md)  
+[Home](../index.md) > [Books](./index.md)  
 # 🫂 Hold Me Tight: Seven Conversations for a Lifetime of Love  
 [🛒 Hold Me Tight: Seven Conversations for a Lifetime of Love. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4mIuiG0)  
   
@@ -19,7 +22,7 @@ updated: 2026-03-12T14:19:45.210Z
   
 ### 🔑 Key Concepts  
   
-* **[🫂💖 Attachment Theory](/content/topics/attachment-theory.md):** 👶 The book applies principles of attachment theory, typically used to understand parent-child bonds, to adult romantic relationships. ❤️‍🩹 It suggests that humans have an innate need for safe emotional connection with a loved one, similar to a child's need for a parent.  
+* **[🫂💖 Attachment Theory](../topics/attachment-theory.md):** 👶 The book applies principles of attachment theory, typically used to understand parent-child bonds, to adult romantic relationships. ❤️‍🩹 It suggests that humans have an innate need for safe emotional connection with a loved one, similar to a child's need for a parent.  
 * ❤️‍🩹 **Emotional Responsiveness (A.R.E.):** 🎯 A core concept is the importance of emotional responsiveness, broken down into Accessibility, Responsiveness, and Engagement.  
     * 👂 Accessibility: 🤝 Can you reach your partner and get their attention?  
     * 👂 Responsiveness: 🫂 Can you rely on your partner to respond emotionally to your needs and concerns?  
@@ -47,8 +50,8 @@ updated: 2026-03-12T14:19:45.210Z
   
 ### 🫂 Similar Books (Focus on Attachment and Relationship Repair)  
   
-* **[❤️🧠 Love Sense: The Revolutionary New Science of Romantic Relationships](/content/books/love-sense-the-revolutionary-new-science-of-romantic-relationships.md) by Sue Johnson:** ❤️‍🩹 Also by Dr. Sue Johnson, this book delves deeper into the science of love and attachment, explaining how understanding these principles can help couples create lasting connection.  
-* **[🧑‍❤️‍🧑🔗 Attached: The New Science of Adult Attachment and How It Can Help You Find - and Keep - Love](/content/books/attached-the-new-science-of-adult-attachment-and-how-it-can-help-you-find-and-keep-love.md) by Amir Levine and Rachel S.F. Heller:** 👨‍👩‍👧‍👦 This book explores adult attachment styles (Anxious, Avoidant, and Secure) and how they influence romantic relationships, offering insights into understanding yourself and your partner.  
+* **[❤️🧠 Love Sense: The Revolutionary New Science of Romantic Relationships](./love-sense-the-revolutionary-new-science-of-romantic-relationships.md) by Sue Johnson:** ❤️‍🩹 Also by Dr. Sue Johnson, this book delves deeper into the science of love and attachment, explaining how understanding these principles can help couples create lasting connection.  
+* **[🧑‍❤️‍🧑🔗 Attached: The New Science of Adult Attachment and How It Can Help You Find - and Keep - Love](./attached-the-new-science-of-adult-attachment-and-how-it-can-help-you-find-and-keep-love.md) by Amir Levine and Rachel S.F. Heller:** 👨‍👩‍👧‍👦 This book explores adult attachment styles (Anxious, Avoidant, and Secure) and how they influence romantic relationships, offering insights into understanding yourself and your partner.  
 * 🧑‍⚕️ **The Practice of Emotionally Focused Couple Therapy: Creating Connection by Sue Johnson:** 🫂 This is a more clinical text for therapists, providing a deeper dive into the EFT model. 📚 While not a self-help book, it offers a comprehensive understanding of the therapeutic approach behind *Hold Me Tight*.  
 * ✍️ **The Hold Me Tight Workbook: A Couple's Guide For a Lifetime of Love by Sue Johnson:** 📖 A direct companion to *Hold Me Tight*, this workbook offers additional exercises and prompts to help couples apply the concepts from the original book.  
 * ✝️ **Created for Connection: The "Hold Me Tight" Guide for Christian Couples by Sue Johnson and Kenneth Sanderfer:** 🙏 This adaptation of *Hold Me Tight* incorporates biblical principles for Christian couples.  
@@ -70,7 +73,7 @@ updated: 2026-03-12T14:19:45.210Z
 * 🏛️ **Plato's Symposium:** 📜 A philosophical dialogue exploring the nature and meaning of love. 🤔 While ancient, it provides a foundational perspective on the enduring human fascination with love.  
 * 📖 **Love's Executioner and Other Tales of Psychotherapy by Irvin D. Yalom:** 🫂 A collection of therapeutic stories that explore various human struggles, including those related to love and relationships, offering a more narrative and less prescriptive approach.  
   
-## 💬 [Gemini](/content/software/gemini.md) Prompt (gemini-2.5-flash-preview-04-17)  
+## 💬 [Gemini](../software/gemini.md) Prompt (gemini-2.5-flash-preview-04-17)  
 > Write a markdown-formatted (start headings at level H2) book report, followed by a plethora of additional similar, contrasting, and creatively related book recommendations on Hold Me Tight: Seven Conversations for a Lifetime of Love. Be thorough in content discussed but concise and economical with your language. Structure the report with section headings and bulleted lists to avoid long blocks of text.  
   
 ## 🦋 Bluesky    

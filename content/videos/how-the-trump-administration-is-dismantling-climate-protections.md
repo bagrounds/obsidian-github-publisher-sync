@@ -9,7 +9,7 @@ Platform:
 Channel: PBS NewsHour
 tags:
 ---
-[Home](/content/index.md) > [Videos](/content/videos/index.md)  
+[Home](../index.md) > [Videos](./index.md)  
 # ⛽🔥🌪️🌀🌍 How the Trump administration is dismantling climate protections  
 ![How the Trump administration is dismantling climate protections](https://youtu.be/MjfXVUozQ2Q)  
   
@@ -26,11 +26,11 @@ tags:
 🌍 **Climate Change & Science:**  
   
 * 🔥 **The Uninhabitable Earth: Life After Warming** by David Wallace-Wells: 🌡️ Explores the potential devastation and crises caused by climate change.  
-* 💀 **[The Sixth Extinction](/content/books/the-sixth-extinction.md): An Unnatural History** by Elizabeth Kolbert: 🐒 Discusses how human activity is driving a major extinction event.  
+* 💀 **[The Sixth Extinction](../books/the-sixth-extinction.md): An Unnatural History** by Elizabeth Kolbert: 🐒 Discusses how human activity is driving a major extinction event.  
 * 🔄 **Drawdown: The Most Comprehensive Plan Ever Proposed to Reverse Global Warming** edited by Paul Hawken: ✅ Gathers effective solutions to halt global warming.  
 * 🤝 **Saving Us: A Climate Scientist's Case for Hope and Healing in a Divided World** by Katharine Hayhoe: 👩‍🔬 A climate scientist discusses bridging divides and inspiring action.  
 * 🤔 **Unsettled: What Climate Science Tells Us, What It Doesn't, and Why It Matters** by Steven E. Koonin: 📈 Offers a perspective on climate science insights, drawing from experience as a science advisor.  
-* **[🔥⛈️ Fire Weather: A True Story from a Hotter World](/content/books/fire-weather.md)** by John Vaillant: 🔥 Examines a catastrophic wildfire and the changing relationship between fire and humanity.  
+* **[🔥⛈️ Fire Weather: A True Story from a Hotter World](../books/fire-weather.md)** by John Vaillant: 🔥 Examines a catastrophic wildfire and the changing relationship between fire and humanity.  
   
 🏛️ **Environmental Policy & Activism:**  
   
@@ -43,6 +43,6 @@ tags:
   
 ☀️ **Renewable Energy:**  
   
-* **[🌞🌬️🌊🌋 Sustainable Energy - Without the Hot Air](/content/books/sustainable-energy-without-the-hot-air.md)** by David J.C. MacKay: 🔢 Objectively addresses the energy crisis with numbers and facts.  
+* **[🌞🌬️🌊🌋 Sustainable Energy - Without the Hot Air](../books/sustainable-energy-without-the-hot-air.md)** by David J.C. MacKay: 🔢 Objectively addresses the energy crisis with numbers and facts.  
 * ⚡ **Renewable Energy: A Primer for the Twenty-first Century** by Bruce Usher: 🔋 Discusses the transition from fossil fuels to renewables like wind and solar.  
 * 🌍 **Renewable Energy: Physics, Engineering, Environmental Impacts, Economics and Planning** by Bent Sørensen: 📚 A comprehensive overview of the renewable energy field.  

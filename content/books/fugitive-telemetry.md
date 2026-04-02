@@ -13,7 +13,7 @@ force_analyze_links: false
 link_analysis_time: 2026-03-25T00:49:46.661Z
 link_analysis_model: gemini-3.1-flash-lite-preview
 ---
-[Home](/content/index.md) > [Books](/content/books/index.md) | [⏮️ 🌐🤖🚀 Network Effect](/content/books/network-effect.md)  
+[Home](../index.md) > [Books](./index.md) | [⏮️ 🌐🤖🚀 Network Effect](./network-effect.md)  
 # 🕵️ Fugitive Telemetry  
 [🛒 Fugitive Telemetry. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4l69AQ6)  
 🤖 Mystery, artificial intelligence, and societal norms.  
@@ -40,9 +40,9 @@ A: 🤓 Themes include self-discovery, corporate ethics, and the definition of p
 ## 📚 Recommendations  
 ### 📖 Non-Fiction  
 * 🤖 Our Robots, Ourselves: Robotics and the Limits of Autonomy by David Mindell  
-* [📱🧠 The Shallows: What the Internet Is Doing to Our Brains](/content/books/the-shallows-what-the-internet-is-doing-to-our-brains.md) by Nicholas Carr  
+* [📱🧠 The Shallows: What the Internet Is Doing to Our Brains](./the-shallows-what-the-internet-is-doing-to-our-brains.md) by Nicholas Carr  
 ### ❤️ If You Loved This  
-* [🚨🤖💥 All Systems Red](/content/books/all-systems-red.md) by Martha Wells  
+* [🚨🤖💥 All Systems Red](./all-systems-red.md) by Martha Wells  
 * 🌌 A Closed and Common Orbit by Becky Chambers  
 ### ↔️ Similar But Different  
 * 🕵️ The Locked Tomb series by Tamsyn Muir (for unique narrative voice and mystery)  

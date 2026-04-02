@@ -9,7 +9,7 @@ Platform:
 Channel: PBS NewsHour
 tags:
 ---
-[Home](/content/index.md) > [Videos](/content/videos/index.md)  
+[Home](../index.md) > [Videos](./index.md)  
 # The conditions inside the infamous El Salvador prison where deported migrants are held  
 ![The conditions inside the infamous El Salvador prison where deported migrants are held](https://youtu.be/0fVYIOu_gHI)  
   

@@ -10,7 +10,7 @@ Channel: PBS NewsHour
 tags:
 youtube: https://youtu.be/spCXl6frtlo
 ---
-[Home](/content/index.md) > [Videos](/content/videos/index.md)  
+[Home](../index.md) > [Videos](./index.md)  
 # ⛈️🇺🇸🗣️💬 Brooks and Capehart on the federal response to the Texas flooding disaster  
 ![Brooks and Capehart on the federal response to the Texas flooding disaster](https://youtu.be/spCXl6frtlo)  
   
@@ -22,18 +22,18 @@ youtube: https://youtu.be/spCXl6frtlo
   
 ## 📚 Book Recommendations  
 * **On U.S. Politics and Presidential Administrations**:  
-    * [😱🤡🇺🇸 Fear: Trump in the White House](/content/books/fear.md) by Bob Woodward  
+    * [😱🤡🇺🇸 Fear: Trump in the White House](../books/fear.md) by Bob Woodward  
     * *A Warning* by Anonymous  
-    * [🤝🏛️ Team of Rivals: The Political Genius of Abraham Lincoln](/content/books/team-of-rivals-the-political-genius-of-abraham-lincoln.md) by Doris Kearns Goodwin (for historical context on political leadership and navigating crises)  
+    * [🤝🏛️ Team of Rivals: The Political Genius of Abraham Lincoln](../books/team-of-rivals-the-political-genius-of-abraham-lincoln.md) by Doris Kearns Goodwin (for historical context on political leadership and navigating crises)  
 * **On Economics and Trade Policy (Tariffs)**:  
     * *Free to Choose* by Milton Friedman (for a classic perspective on free markets)  
     * *The World Is Flat: A Brief History of the Twenty-first Century* by Thomas L. Friedman (for insights into globalization and trade)  
 * **On Diplomacy and Foreign Policy**:  
-    * [🤝🌍 Diplomacy](/content/books/diplomacy.md) by Henry Kissinger  
+    * [🤝🌍 Diplomacy](../books/diplomacy.md) by Henry Kissinger  
     * *The Art of Diplomacy: How to Negotiate an Agreement and Keep It* by James P. Farwell  
 * **On Political Discourse and Civility**:  
-    * [😇🧠 The Righteous Mind: Why Good People Are Divided by Politics and Religion](/content/books/the-righteous-mind.md) by Jonathan Haidt  
-    * [🎳🏘️📉📈 Bowling Alone: The Collapse and Revival of American Community](/content/books/bowling-alone.md) by Robert D. Putnam  
+    * [😇🧠 The Righteous Mind: Why Good People Are Divided by Politics and Religion](../books/the-righteous-mind.md) by Jonathan Haidt  
+    * [🎳🏘️📉📈 Bowling Alone: The Collapse and Revival of American Community](../books/bowling-alone.md) by Robert D. Putnam  
 * **On the Role of the Federal Government in Disasters**:  
     * *The Great Deluge: Hurricane Katrina, New Orleans, and the Mississippi Gulf Coast* by Douglas Brinkley (for a detailed account of a major disaster response)  
   

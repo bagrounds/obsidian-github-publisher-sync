@@ -6,6 +6,9 @@ URL: https://bagrounds.org/books/the-nature-of-technology-what-it-is-and-how-it-
 share: true
 CTA: 💡 Grasp the future's forge.
 affiliate link: https://amzn.to/4prhPaV
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_time: 2026-04-02T00:00:00Z
+force_analyze_links: false
 ---
 [Home](../index.md) > [Books](./index.md)  
 # ⚙️🔄 The Nature of Technology: What It Is and How It Evolves  
@@ -37,7 +40,7 @@ affiliate link: https://amzn.to/4prhPaV
 ## ⚖️ Evaluation  
   
 * 🏗️ **Groundbreaking Framework**: Arthur's theory provides a robust, coherent framework for understanding technology's origins and evolution, moving beyond simplistic views of individual genius.  
-* 📚 **Comparison to Kuhn**: The book is often lauded for achieving for technological development what Thomas Kuhn's The Structure of Scientific Revolutions did for scientific progress, offering a paradigm shift in understanding.  
+* 📚 **Comparison to Kuhn**: The book is often lauded for achieving for technological development what Thomas Kuhn's [🔬🔄 The Structure of Scientific Revolutions](./the-structure-of-scientific-revolutions.md) did for scientific progress, offering a paradigm shift in understanding.  
 * 🧬 **Distinction from Darwinian Evolution**: While using biological metaphors, Arthur explicitly states that technological evolution is not Darwinian in its base mechanism, emphasizing combination over cumulative small changes and natural selection for radically novel creations.  
 * 🧩 **Emphasis on Combinatorial Growth**: The concept of combinatorial evolution is widely recognized as a key driver of technological change, explaining how existing elements form new, complex entities.  
 * 🤔 **Critique on Demystification**: Some critics suggest Arthur may go too far in demystifying innovation, implying solutions are out there to be found rather than actively created, given the vast permutations of possible combinations.  

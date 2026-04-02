@@ -8,8 +8,11 @@ Author:
 tags:
 affiliate link: https://amzn.to/4jCApcr
 CTA: 🚀 Design for scale.
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_time: 2026-04-01T00:00:00Z
+force_analyze_links: false
 ---
-[Home](/content/index.md) > [Books](/content/books/index.md)  
+[Home](../index.md) > [Books](./index.md)  
 # ⚙️🕸️🧩🔑 Distributed Systems: Principles and Paradigms  
 [🛒 Distributed Systems: Principles and Paradigms. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4jCApcr)  
   
@@ -81,10 +84,10 @@ This book may offer a surprising perspective by emphasizing practical design pat
 * **Authoritative Reviews:** The book has received positive reviews from experts and practitioners, who praise its clarity, depth, and practical relevance. 👍  
   
 ### **Book Recommendations** 📚  
-* **Best Alternate Book on the Same Topic:** [💾⬆️🛡️ Designing Data-Intensive Applications: The Big Ideas Behind Reliable, Scalable, and Maintainable Systems](/content/books/designing-data-intensive-applications.md) by Martin Kleppmann. This book provides a more modern and practical perspective on distributed systems, with a focus on data storage and processing. 🔄  
+* **Best Alternate Book on the Same Topic:** [💾⬆️🛡️ Designing Data-Intensive Applications: The Big Ideas Behind Reliable, Scalable, and Maintainable Systems](./designing-data-intensive-applications.md) by Martin Kleppmann. This book provides a more modern and practical perspective on distributed systems, with a focus on data storage and processing. 🔄  
 * **Best Book Tangentially Related:** "Release It!: Design and Deploy Production-Ready Software" by Michael T. Nygard. This book focuses on the practical aspects of building and deploying resilient software systems, which is essential for distributed systems. 🚀  
-* **Best Book Diametrically Opposed:** [🤖🧬⬆️ The Singularity Is Near: When Humans Transcend Biology](/content/books/the-singularity-is-near-when-humans-transcend-biology.md) by Ray Kurzweil. This book explores the potential of artificial intelligence and technological singularity, which contrasts with the challenges of coordinating distributed systems. 🤖  
-* **Best Fiction Book That Incorporates Related Ideas:** "[Daemon](/content/books/daemon.md)" by Daniel Suarez. This thriller explores the implications of a distributed AI system that takes over the world, highlighting the potential dangers of complex networked systems. 👾  
+* **Best Book Diametrically Opposed:** [🤖🧬⬆️ The Singularity Is Near: When Humans Transcend Biology](./the-singularity-is-near-when-humans-transcend-biology.md) by Ray Kurzweil. This book explores the potential of artificial intelligence and technological singularity, which contrasts with the challenges of coordinating distributed systems. 🤖  
+* **Best Fiction Book That Incorporates Related Ideas:** "[Daemon](./daemon.md)" by Daniel Suarez. This thriller explores the implications of a distributed AI system that takes over the world, highlighting the potential dangers of complex networked systems. 👾  
 * **Best Book More General:** "Computer Networks" by Andrew S. Tanenbaum and David J. Wetherall. This book provides a broader overview of computer networking, which is the foundation for distributed systems. 🌐  
 * **Best Book More Specific:** "Database Internals: A Deep Dive into How Relational Databases Work" by Alex Petrov. This book delves into the specific details of database systems, which are often used in distributed applications. 📊  
 * **Best Book More Rigorous:** "Distributed Algorithms" by Nancy Lynch. This book provides a formal and theoretical treatment of distributed algorithms, suitable for advanced readers. 🤓  

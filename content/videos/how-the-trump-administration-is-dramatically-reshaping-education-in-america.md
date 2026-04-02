@@ -10,7 +10,7 @@ Channel: PBS NewsHour
 tags:
 youtube: https://youtu.be/p18MsEioDrM
 ---
-[Home](/content/index.md) > [Videos](/content/videos/index.md)  
+[Home](../index.md) > [Videos](./index.md)  
 # 🧑‍🏫🌪️🇺🇸 How the Trump administration is dramatically reshaping education in America  
 ![How the Trump administration is dramatically reshaping education in America](https://youtu.be/p18MsEioDrM)  
   
@@ -61,9 +61,9 @@ A: 🏛️ States with majority Republican legislatures have served as **"red st
   
 ### **Similar Perspectives (Critical of Market-Based Reform/Pro-Public Education)**  
   
-1. **[💀🇺🇸🏫 The Death and Life of the Great American School System: How Testing and Choice Are Undermining Education](/content/books/the-death-and-life-of-the-great-american-school-system-how-testing-and-choice-are-undermining-education.md)**: By Diane Ravitch. A **powerful critique** of the market-based reforms, such as charter schools and vouchers, arguing they are **undermining** the core mission of public education.  
-2. **[👑🏫🤥 Reign of Error: The Hoax of the Privatization Movement and the Danger to America's Public Schools](/content/books/reign-of-error-the-hoax-of-the-privatization-movement-and-the-danger-to-americas-public-schools.md)**: By Diane Ravitch. Offers a **detailed refutation** of the claims that public schools are failing, viewing the privatization movement as an ideological threat to the system.  
-3. **[🏫💔🏛️ School Choice and the Betrayal of Democracy: How Market-Based Education Reform Fails Our Communities](/content/books/school-choice-and-the-betrayal-of-democracy-how-market-based-education-reform-fails-our-communities.md)**: By Robert Asen. Explores how the values of the **market** (competition, self-interest) embedded in school choice are fundamentally **at odds** with the shared values necessary for a democratic society.  
+1. **[💀🇺🇸🏫 The Death and Life of the Great American School System: How Testing and Choice Are Undermining Education](../books/the-death-and-life-of-the-great-american-school-system-how-testing-and-choice-are-undermining-education.md)**: By Diane Ravitch. A **powerful critique** of the market-based reforms, such as charter schools and vouchers, arguing they are **undermining** the core mission of public education.  
+2. **[👑🏫🤥 Reign of Error: The Hoax of the Privatization Movement and the Danger to America's Public Schools](../books/reign-of-error-the-hoax-of-the-privatization-movement-and-the-danger-to-americas-public-schools.md)**: By Diane Ravitch. Offers a **detailed refutation** of the claims that public schools are failing, viewing the privatization movement as an ideological threat to the system.  
+3. **[🏫💔🏛️ School Choice and the Betrayal of Democracy: How Market-Based Education Reform Fails Our Communities](../books/school-choice-and-the-betrayal-of-democracy-how-market-based-education-reform-fails-our-communities.md)**: By Robert Asen. Explores how the values of the **market** (competition, self-interest) embedded in school choice are fundamentally **at odds** with the shared values necessary for a democratic society.  
   
 ### **Contrasting Perspectives (Supportive of School Choice/Market-Based Reform)**  
   

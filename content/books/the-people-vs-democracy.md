@@ -8,7 +8,7 @@ Author:
 tags:
 affiliate link: https://amzn.to/43rSo0c
 ---
-[Home](/content/index.md) > [Books](/content/books/index.md)  
+[Home](../index.md) > [Books](./index.md)  
 # 👥⚔️🏛️ The People vs. Democracy: Why Our 🗽 Freedom Is in ⚠️ Danger and How to Save It  
 [🛒 The People vs. Democracy: Why Our 🗽 Freedom Is in ⚠️ Danger and How to Save It. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/43rSo0c)  
   
@@ -62,8 +62,8 @@ While painting a concerning picture, Mounk offers potential remedies focused on 
 ## 📚 Further Reading Recommendations  
 ### 🤝 Similar Themes (Democratic Decline, Populism, Liberalism Under Threat)  
   
-1. **[🗳️🏛️☠️ How Democracies Die](/content/books/how-democracies-die.md)** by Steven Levitsky & Daniel Ziblatt: Examines how democracies erode from within, often through elected leaders subverting democratic norms and institutions, drawing historical parallels and focusing heavily on the US case.  
-2. 🌑 **[🥀 Twilight of Democracy: 🐍 The Seductive Lure of Authoritarianism](/content/books/twilight-of-democracy.md)** by Anne Applebaum: A more personal and historical reflection on why elites in various countries have abandoned democratic ideals for authoritarianism or illiberalism.  
+1. **[🗳️🏛️☠️ How Democracies Die](./how-democracies-die.md)** by Steven Levitsky & Daniel Ziblatt: Examines how democracies erode from within, often through elected leaders subverting democratic norms and institutions, drawing historical parallels and focusing heavily on the US case.  
+2. 🌑 **[🥀 Twilight of Democracy: 🐍 The Seductive Lure of Authoritarianism](./twilight-of-democracy.md)** by Anne Applebaum: A more personal and historical reflection on why elites in various countries have abandoned democratic ideals for authoritarianism or illiberalism.  
 3. 🇷🇺 **The Road to Unfreedom: Russia, Europe, America** by Timothy Snyder: Analyzes the rise of authoritarianism, particularly focusing on Russia's influence and the philosophical underpinnings of illiberal ideologies.  
 4. 🌪️ **Ill Winds: Saving Democracy from Russian Rage, Chinese Ambition, and American Complacency** by Larry Diamond: A comprehensive look at the internal and external threats facing democracy globally.  
 5. 🗣️ **Populism: A Very Short Introduction** by Cas Mudde & Cristóbal Rovira Kaltwasser: A concise academic overview of the concept of populism, its causes, and manifestations.  
@@ -78,13 +78,13 @@ While painting a concerning picture, Mounk offers potential remedies focused on 
   
 ### 🎨 Creatively Related Themes  
   
-1. 👁️ **[The Age of Surveillance Capitalism](/content/books/the-age-of-surveillance-capitalism.md): The Fight for a Human Future at the New Frontier of Power** by Shoshana Zuboff: Explores the societal impact of big tech and data collection, relating to Mounk's concerns about social media and technology's effect on democracy.  
+1. 👁️ **[The Age of Surveillance Capitalism](./the-age-of-surveillance-capitalism.md): The Fight for a Human Future at the New Frontier of Power** by Shoshana Zuboff: Explores the societal impact of big tech and data collection, relating to Mounk's concerns about social media and technology's effect on democracy.  
 2. 🌍 **The Great Experiment: Why Diverse Democracies Fall Apart and How They Can Endure** by Yascha Mounk: Mounk's subsequent book, focusing specifically on the challenge of building successful multi-ethnic democracies.  
-3. 📜 **[On Tyranny: Twenty Lessons from the Twentieth Century](/content/books/on-tyranny.md)** by Timothy Snyder: A short, punchy book drawing lessons from 20th-century history on resisting authoritarianism in everyday life.  
+3. 📜 **[On Tyranny: Twenty Lessons from the Twentieth Century](./on-tyranny.md)** by Timothy Snyder: A short, punchy book drawing lessons from 20th-century history on resisting authoritarianism in everyday life.  
 4. 🏛️ **Discourses on Livy** by Niccolò Machiavelli: A foundational text exploring the conditions for establishing and maintaining republics, offering historical perspective on governance, civic virtue, and decay.  
 5. 💥 **Capitalism, Socialism, and Democracy** by Joseph A. Schumpeter: A classic work that includes influential theories on democracy, elitism, and the process of "creative destruction," relevant to economic shifts impacting democracy.  
   
   
-## 💬 [Gemini](/content/software/gemini.md) Prompt (gemini-2.5-pro-exp-03-25)  
+## 💬 [Gemini](../software/gemini.md) Prompt (gemini-2.5-pro-exp-03-25)  
 > Write a markdown-formatted (start headings at level H2) book report, followed by a plethora of additional similar, contrasting, and creatively related book recommendations on The People vs. Democracy. Be thorough in content discussed but concise and economical with your language. Structure the report with section headings and bulleted lists to avoid long blocks of text..  
   

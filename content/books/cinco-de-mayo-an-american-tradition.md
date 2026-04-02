@@ -6,7 +6,7 @@ URL: https://bagrounds.org/books/cinco-de-mayo-an-american-tradition
 share: true
 affiliate link: https://amzn.to/43YipV6
 ---
-[Home](/content/index.md) > [Books](/content/books/index.md)  
+[Home](../index.md) > [Books](./index.md)  
 # 🇲🇽🇺🇸 Cinco de Mayo: An American Tradition  
 [🛒 Cinco de Mayo: An American Tradition. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/43YipV6)  
   
@@ -71,5 +71,5 @@ affiliate link: https://amzn.to/43YipV6
   
 These recommendations should provide a rich tapestry of reading, deepening the understanding gained from *El Cinco de Mayo: An American Tradition* and exploring the complex histories and cultures it touches upon.  
   
-## 💬 [Gemini](/content/software/gemini.md) Prompt (gemini-2.5-pro-exp-03-25)  
+## 💬 [Gemini](../software/gemini.md) Prompt (gemini-2.5-pro-exp-03-25)  
 > Write a markdown-formatted (start headings at level H2) book report, followed by a plethora of additional similar, contrasting, and creatively related book recommendations on Cinco de Mayo: An American Tradition. Be thorough in content discussed but concise and economical with your language. Structure the report with section headings and bulleted lists to avoid long blocks of text.

@@ -8,7 +8,7 @@ tags:
   - law
 affiliate link: https://amzn.to/3T5az5M
 ---
-[Home](/content/index.md) > [Books](/content/books/index.md)  
+[Home](../index.md) > [Books](./index.md)  
 # 🧑‍💼✅ Case Studies In ERISA: Why It Matters And How It Benefits You  
 [🛒 Case Studies In ERISA: Why It Matters And How It Benefits You. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3T5az5M)  
   
@@ -35,8 +35,8 @@ affiliate link: https://amzn.to/3T5az5M
   
 * 📖 **Understanding ERISA: A Compact Guide to the Landmark Act** by Ken Ziesenheim. 📝 This book offers a concise overview of ERISA, suitable for those seeking a foundational understanding of the act.  
 * 📖 **ERISA Principles** by Peter J. Wiedenbeck and Brendan Maher. 🧑‍⚖️ This text explores employee benefit law from a policy perspective, explaining how common themes apply across different benefit plan types and factual contexts. 🏛️ It analyzes key cases to provide a coherent account of ERISA's principal features.  
-* **[🇺🇸❓📚 ERISA Law Answer Book](/content/books/erisa-law-answer-book.md)** by Wolters Kluwer Legal & Regulatory. ℹ️ This comprehensive resource provides extensive coverage of ERISA case law, legislative, and regulatory developments, focusing on decision-making in retirement program administration. 💼 It discusses various benefit arrangements, fiduciary duties, and preemption.  
-* **[🧑‍💼💰⚖️ Employee Benefits Law: ERISA and Beyond](/content/books/employee-benefits-law-erisa-and-beyond.md)** (published via Research and Markets). ✅ This book details the compliance requirements and processes of ERISA, explaining how it is enforced by the IRS, DOL, and PBGC. 🤝 It also covers how ERISA interacts with other major legislation.  
+* **[🇺🇸❓📚 ERISA Law Answer Book](./erisa-law-answer-book.md)** by Wolters Kluwer Legal & Regulatory. ℹ️ This comprehensive resource provides extensive coverage of ERISA case law, legislative, and regulatory developments, focusing on decision-making in retirement program administration. 💼 It discusses various benefit arrangements, fiduciary duties, and preemption.  
+* **[🧑‍💼💰⚖️ Employee Benefits Law: ERISA and Beyond](./employee-benefits-law-erisa-and-beyond.md)** (published via Research and Markets). ✅ This book details the compliance requirements and processes of ERISA, explaining how it is enforced by the IRS, DOL, and PBGC. 🤝 It also covers how ERISA interacts with other major legislation.  
 * 📖 **An Employment Attorney's Guide to ERISA Long Term Disability Claims** and **ERISA Disability Claims and Litigation** by Scott Riemer and Jennifer Hess. 🧑‍⚖️ These books focus specifically on the intersection of employment law and ERISA in the context of disability claims, providing specialized knowledge for legal professionals.  
 * 📖 **Introduction to Employee Benefits Law** by Kathryn J. Kennedy. 📚 This book serves as an introduction to the field, covering both the labor law and tax law changes made by ERISA and highlighting qualification requirements for retirement plans.  
   
@@ -56,5 +56,5 @@ affiliate link: https://amzn.to/3T5az5M
 * 📖 **Books on Personal Finance and Retirement Planning (Non-Legal Focus).** 💰 While ERISA is the legal framework, books aimed at individuals planning for retirement or managing personal finances offer the perspective of the plan participant or beneficiary, highlighting the real-world impact of the regulations discussed in the ERISA case studies.  
 * 📖 **Fiction featuring ERISA or employee benefits.** 🎭 Interestingly, ERISA has even appeared in fiction. 📖 Reading novels where employee benefits or pension issues play a role, like Sara Paretsky's V.I. Warshawski novels, can provide a unique and accessible, albeit fictionalized, perspective on the human side of these legal matters.".  
   
-## 💬 [Gemini](/content/software/gemini.md) Prompt (gemini-2.5-flash-preview-04-17)  
+## 💬 [Gemini](../software/gemini.md) Prompt (gemini-2.5-flash-preview-04-17)  
 > Write a markdown-formatted (start headings at level H2) book report, followed by a plethora of additional similar, contrasting, and creatively related book recommendations on Case Studies In ERISA: Why It Matters And How It Benefits You. Be thorough in content discussed but concise and economical with your language. Structure the report with section headings and bulleted lists to avoid long blocks of text.

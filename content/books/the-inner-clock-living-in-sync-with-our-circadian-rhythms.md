@@ -6,7 +6,7 @@ URL: https://bagrounds.org/books/the-inner-clock-living-in-sync-with-our-circadi
 share: true
 affiliate link: https://amzn.to/4kJoHgP
 ---
-[Home](/content/index.md) > [Books](/content/books/index.md)  
+[Home](../index.md) > [Books](./index.md)  
 # ⏰👤 The Inner Clock: Living in Sync with Our Circadian Rhythms  
 [🛒 The Inner Clock: Living in Sync with Our Circadian Rhythms. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4kJoHgP)  
   
@@ -56,8 +56,8 @@ affiliate link: https://amzn.to/4kJoHgP
 ### 😴 Similar Books (Circadian Rhythms & Sleep Science)  
   
 1. 📚 ***Internal Time: Chronotypes, Social Jet Lag, and Why You're So Tired*** **by Till Roenneberg:** Often considered a foundational text in popular chronobiology, focusing on individual differences in sleep timing (chronotypes) and the mismatch between biological and social clocks ("social jetlag"). A must-read companion or precursor to Peeples' work.  
-2. **[😴💭 Why We Sleep: Unlocking the Power of Sleep and Dreams](/content/books/why-we-sleep-unlocking-the-power-of-sleep-and-dreams.md)** **by Matthew Walker:** A highly influential bestseller diving deep into the science of sleep, explaining *why* it's critical for physical and mental health, learning, and longevity.  
-3. **[🌄⏳ The Circadian Code: Lose Weight, Supercharge Your Energy, and Transform Your Health from Morning to Midnight](/content/books/the-circadian-code.md)** **by Satchin Panda:** Focuses heavily on the timing of eating (chrononutrition) and light exposure as key levers for aligning with circadian rhythms for health benefits. Dr. Panda is a leading researcher in the field.  
+2. **[😴💭 Why We Sleep: Unlocking the Power of Sleep and Dreams](./why-we-sleep-unlocking-the-power-of-sleep-and-dreams.md)** **by Matthew Walker:** A highly influential bestseller diving deep into the science of sleep, explaining *why* it's critical for physical and mental health, learning, and longevity.  
+3. **[🌄⏳ The Circadian Code: Lose Weight, Supercharge Your Energy, and Transform Your Health from Morning to Midnight](./the-circadian-code.md)** **by Satchin Panda:** Focuses heavily on the timing of eating (chrononutrition) and light exposure as key levers for aligning with circadian rhythms for health benefits. Dr. Panda is a leading researcher in the field.  
 4. 📚 ***Life Time: Your Body Clock and Its Essential Roles in Good Health and Sleep*** **by Russell Foster:** Another leading chronobiologist explains how our body clocks work and their vital role in health, often drawing on his own extensive research.  
 5. 📚 ***Rhythms of Life: The Biological Clocks That Control the Daily Lives of Every Living Thing*** **by Russell G. Foster and Leon Kreitzman:** A broader look at biological clocks across different species, providing context for human circadian rhythms.  
 6. 📚 ***Change Your Schedule, Change Your Life: How to Harness the Power of Clock Genes...*** **by Suhas Kshirsagar:** Integrates principles of Ayurveda with modern circadian science to offer practical advice on timing daily activities.  
@@ -68,9 +68,9 @@ affiliate link: https://amzn.to/4kJoHgP
   
 9. 📚 ***When: The Scientific Secrets of Perfect Timing*** **by Daniel H. Pink:** Explores the science of timing beyond just circadian rhythms, looking at how timing impacts decision-making, creativity, and performance throughout the day and life.  
 10. 📚 ***Do Less: A Revolutionary Approach to Time and Energy Management for Ambitious Women*** **by Kate Northrup:** While *The Inner Clock* focuses on daily circadian cycles, this book explores cyclical productivity aligned with the monthly menstrual cycle, offering a complementary perspective on biological rhythms and energy management, particularly for women.  
-11. **[🤿💼 Deep Work](/content/books/deep-work.md): Rules for Focused Success in a Distracted World** **by Cal Newport:** While not about biological clocks, it addresses managing energy and focus for high-value work, which often aligns best with understanding one's peak cognitive periods (related to circadian rhythm).  
-12. **[🔋📈 The Power of Full Engagement: Managing Energy, Not Time, Is the Key to High Performance and Personal Renewal](/content/books/the-power-of-full-engagement-managing-energy-not-time-is-the-key-to-high-performance-and-personal-renewal.md)** **by Jim Loehr and Tony Schwartz:** Argues that managing energy (physical, emotional, mental, spiritual) in cycles of stress and recovery is more crucial than managing time for sustained high performance. This resonates with the cyclical nature of chronobiology.  
-13. **[⚛️🔄 Atomic Habits](/content/books/atomic-habits.md): An Easy & Proven Way to Build Good Habits & Break Bad Ones** **by James Clear:** While a general habit formation book, its principles can be directly applied to establishing routines (like consistent sleep times, morning light exposure) that support healthy circadian rhythms.  
+11. **[🤿💼 Deep Work](./deep-work.md): Rules for Focused Success in a Distracted World** **by Cal Newport:** While not about biological clocks, it addresses managing energy and focus for high-value work, which often aligns best with understanding one's peak cognitive periods (related to circadian rhythm).  
+12. **[🔋📈 The Power of Full Engagement: Managing Energy, Not Time, Is the Key to High Performance and Personal Renewal](./the-power-of-full-engagement-managing-energy-not-time-is-the-key-to-high-performance-and-personal-renewal.md)** **by Jim Loehr and Tony Schwartz:** Argues that managing energy (physical, emotional, mental, spiritual) in cycles of stress and recovery is more crucial than managing time for sustained high performance. This resonates with the cyclical nature of chronobiology.  
+13. **[⚛️🔄 Atomic Habits](./atomic-habits.md): An Easy & Proven Way to Build Good Habits & Break Bad Ones** **by James Clear:** While a general habit formation book, its principles can be directly applied to establishing routines (like consistent sleep times, morning light exposure) that support healthy circadian rhythms.  
   
 ### 🤨 Contrasting Perspectives & Critiques  
   
@@ -84,5 +84,5 @@ affiliate link: https://amzn.to/4kJoHgP
 18. 📚 ***Mapping the Darkness: The Visionary Scientists Who Unlocked the Secrets of Sleep*** **by Kenneth Miller:** Tells the story of the pioneering scientists who advanced the field of sleep research.  
 19. 📚 ***Chronobiology: Principles and Methods*** **by Pietro Cugini (or similar academic texts):** For those wanting a highly technical, scientific understanding of the field's principles and research methodologies.  
   
-## 💬 [Gemini](/content/software/gemini.md) Prompt (gemini-2.5-pro-exp-03-25)  
+## 💬 [Gemini](../software/gemini.md) Prompt (gemini-2.5-pro-exp-03-25)  
 > Write a markdown-formatted (start headings at level H2) book report, followed by a plethora of additional similar, contrasting, and creatively related book recommendations on The Inner Clock: Living in Sync with Our Circadian Rhythms. Be thorough in content discussed but concise and economical with your language. Structure the report with section headings and bulleted lists to avoid long blocks of text.

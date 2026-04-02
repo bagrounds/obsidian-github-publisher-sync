@@ -5,7 +5,7 @@ aliases:
 title: 🧠🤖🗣️💡 Self-Aware Learning Chatbot
 URL: https://bagrounds.org/topics/self-aware-learning-chatbot
 ---
-[Home](/content/index.md) > [Topics](/content/topics/index.md)  
+[Home](../index.md) > [Topics](./index.md)  
 # 🧠🤖🗣️💡 Self-Aware Learning Chatbot  
   
 - Grant a chatbot tool access via MCP  

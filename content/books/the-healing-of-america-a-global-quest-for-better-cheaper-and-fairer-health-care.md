@@ -7,7 +7,7 @@ share: true
 affiliate link: https://amzn.to/3L3ijoo
 CTA: 🩺 Examine healthcare.
 ---
-[Home](/content/index.md) > [Books](/content/books/index.md)  
+[Home](../index.md) > [Books](./index.md)  
 # ⚕️💰🇺🇸 The Healing of America: A Global Quest for Better, Cheaper, and Fairer Health Care  
 [🛒 The Healing of America: A Global Quest for Better, Cheaper, and Fairer Health Care. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3L3ijoo)  
   
@@ -87,14 +87,14 @@ CTA: 🩺 Examine healthcare.
 ### ➕ Similar  
 * 🎥 SICKO by Michael Moore (documentary, explores similar themes)  
 * 📜 The Social Transformation of American Medicine by Paul Starr  
-* [💰⚕️⬆️ An American Sickness: How Healthcare Became Big Business and How You Can Take It Back](/content/books/an-american-sickness-how-healthcare-became-big-business-and-how-you-can-take-it-back.md) by Elisabeth Rosenthal  
+* [💰⚕️⬆️ An American Sickness: How Healthcare Became Big Business and How You Can Take It Back](./an-american-sickness-how-healthcare-became-big-business-and-how-you-can-take-it-back.md) by Elisabeth Rosenthal  
   
 ### ➖ Contrasting  
 * 👨‍⚕️ The Patient Will See You Now: The Future of Medicine Is in Your Hands by Eric Topol  
 * 🙅 The Case Against Universal Health Care: How Private Markets Can Fix Our Broken System by Scott Atlas  
   
 ### 🔗 Related  
-* [⚕️💀 Being Mortal: Medicine and What Matters in the End](/content/books/being-mortal-medicine-and-what-matters-in-the-end.md) by Atul Gawande (focus on end-of-life care)  
+* [⚕️💀 Being Mortal: Medicine and What Matters in the End](./being-mortal-medicine-and-what-matters-in-the-end.md) by Atul Gawande (focus on end-of-life care)  
 * 🩸 Bad Blood: Secrets and Lies in a Silicon Valley Startup by John Carreyrou (critique of health tech)  
 * 🎗️ The Emperor of All Maladies: A Biography of Cancer by Siddhartha Mukherjee (medical history)  
   

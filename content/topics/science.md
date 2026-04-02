@@ -4,8 +4,11 @@ aliases:
   - 🧪🔬🔭 Science
 title: 🧪🔬🔭 Science
 URL: https://bagrounds.org/topics/science
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_time: 2026-04-01T00:00:00Z
+force_analyze_links: false
 ---
-[Home](/content/index.md) > [Topics](/content/topics/index.md) > [Knowledge](/content/topics/a-hierarchical-view-of-human-knowledge.md)  
+[Home](../index.md) > [Topics](./index.md) > [Knowledge](./a-hierarchical-view-of-human-knowledge.md)  
 # 🧪🔬🔭 Science  
 ## 🤖 AI Summary  
 **Science** 🧪🔬🔭  
@@ -20,10 +23,10 @@ URL: https://bagrounds.org/topics/science
     * **Earth Science:** The study of the Earth's physical structure, composition, processes, and history. It includes geology, meteorology, oceanography, and environmental science. 🌎⛰️  
   
 * **Book Recommendations:**  
-    * "[A Brief History of Time](/content/books/a-brief-history-of-time.md)" by Stephen Hawking: 🕰️➡️🌌  
+    * "[A Brief History of Time](../books/a-brief-history-of-time.md)" by Stephen Hawking: 🕰️➡️🌌  
     * "The Periodic Table" by Primo Levi: 📖➡️⚛️  
-    * "[Sapiens: A Brief History of Humankind](/content/books/sapiens-a-brief-history-of-humankind.md)" by Yuval Noah Harari: 🚶➡️🌍  
-    * "[The Sixth Extinction](/content/books/the-sixth-extinction.md): An Unnatural History" by Elizabeth Kolbert: 💀➡️⚠️  
+    * "[Sapiens: A Brief History of Humankind](../books/sapiens-a-brief-history-of-humankind.md)" by Yuval Noah Harari: 🚶➡️🌍  
+    * "[The Sixth Extinction](../books/the-sixth-extinction.md): An Unnatural History" by Elizabeth Kolbert: 💀➡️⚠️  
     * "What If?: Serious Scientific Answers to Absurd Hypothetical Questions" by Randall Munroe:❓➡️💡  
   
 ## 💬 [Gemini](https://gemini.google.com/app) Prompt  

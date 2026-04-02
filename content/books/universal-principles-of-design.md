@@ -7,8 +7,11 @@ URL: https://bagrounds.org/books/universal-principles-of-design
 Author:
 tags:
 affiliate link: https://amzn.to/3SuNedH
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_time: 2026-04-01T00:00:00Z
+force_analyze_links: false
 ---
-[Home](/content/index.md) > [Books](/content/books/index.md)  
+[Home](../index.md) > [Books](./index.md)  
 # 🌌📐🧩🗝️ Universal Principles of Design: 200 Ways to Increase Appeal, Enhance Usability, Influence Perception, and Make Better Design Decisions  
 [🛒 Universal Principles of Design: 200 Ways to Increase Appeal, Enhance Usability, Influence Perception, and Make Better Design Decisions. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3SuNedH)  
   
@@ -70,12 +73,12 @@ affiliate link: https://amzn.to/3SuNedH
   
 **Additional Book Recommendations:**  
   
-* **Best Alternate Book on the Same Topic:** "[The Design of Everyday Things](/content/books/the-design-of-everyday-things.md)" by Don Norman. 🚪 (Focuses more on usability and interaction design.)  
-* **Best Tangentially Related Book:** "[Thinking, Fast and Slow](/content/books/thinking-fast-and-slow.md)" by Daniel Kahneman. 🧠 (Explores cognitive biases and decision-making.)  
+* **Best Alternate Book on the Same Topic:** "[The Design of Everyday Things](./the-design-of-everyday-things.md)" by Don Norman. 🚪 (Focuses more on usability and interaction design.)  
+* **Best Tangentially Related Book:** "[Thinking, Fast and Slow](./thinking-fast-and-slow.md)" by Daniel Kahneman. 🧠 (Explores cognitive biases and decision-making.)  
 * **Best Diametrically Opposed Book:** "Ruined by Design" by Mike Monteiro. 😈 (Critiques design's role in societal problems and advocates for ethical design.)  
 * **Best Fiction Book That Incorporates Related Ideas:** Neuromancer by William Gibson. 💻 (Explores the intersection of humans and technology, highlighting design's impact on society.)  
 * **Best More General Book:** "Design: The Whole Story" by Elizabeth Wilhide. 🌐 (Comprehensive overview of design history and theory.)  
-* **Best More Specific Book:** "[Don't Make Me Think, Revisited: A Common Sense Approach to Web Usability](/content/books/dont-make-me-think-revisited.md)" by Steve Krug. 💻 (Focuses specifically on web usability.)  
+* **Best More Specific Book:** "[Don't Make Me Think, Revisited: A Common Sense Approach to Web Usability](./dont-make-me-think-revisited.md)" by Steve Krug. 💻 (Focuses specifically on web usability.)  
 * **Best More Rigorous Book:** "Human-Computer Interaction" by Alan Dix et al. 🧑‍💻 (Academic textbook covering HCI research and theory.)  
 * **Best More Accessible Book:** "100 Things Every Designer Needs to Know About People" by Susan Weinschenk. 🧑‍🤝‍🧑 (Easy-to-understand explanations of psychological principles for designers.)  
   

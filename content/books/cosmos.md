@@ -6,8 +6,11 @@ URL: https://bagrounds.org/books/cosmos
 share: true
 CTA: ✨ Discover infinity.
 affiliate link: https://amzn.to/49G7Jhi
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_time: 2026-04-01T00:00:00Z
+force_analyze_links: false
 ---
-[Home](/content/index.md) > [Books](/content/books/index.md)  
+[Home](../index.md) > [Books](./index.md)  
 # 🌌 Cosmos  
 [🛒 Cosmos. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/49G7Jhi)  
   
@@ -42,7 +45,7 @@ A 🔭 profound, beautifully articulated journey through 14 billion years of cos
 * ⚛️ The Standard Model of particle physics and its current challenges.  
 * ⚫ Dark matter and dark energy, and their implications for cosmic evolution.  
 * 🪐 Exoplanetary science advancements and the search for biosignatures.  
-* [⚛️ Quantum Computing](/content/topics/quantum-computing.md) and its potential to revolutionize scientific discovery.  
+* [⚛️ Quantum Computing](../topics/quantum-computing.md) and its potential to revolutionize scientific discovery.  
 * 🧠 Neuroscience of consciousness and the origin of intelligence.  
 * 🤖 The ethics of artificial intelligence and its future impact on humanity.  
 * 👽 Advanced concepts in astrobiology beyond simple life detection.  
@@ -67,15 +70,15 @@ A 🔭 profound, beautifully articulated journey through 14 billion years of cos
 ## 📚 Book Recommendations  
   
 ### Similar Books  
-* 🕰️ [🤏📜⏳ A Brief History of Time](/content/books/a-brief-history-of-time.md) by Stephen Hawking  
+* 🕰️ [🤏📜⏳ A Brief History of Time](./a-brief-history-of-time.md) by Stephen Hawking  
 * 🌠 Pale Blue Dot: A Vision of the Human Future in Space by Carl Sagan  
 * 🌌 Cosmos: Possible Worlds by Ann Druyan  
 * 🚀 Astrophysics for People in a Hurry by Neil deGrasse Tyson  
   
 ### Contrasting Books  
-* [😈🌍🔬🕯️🌑 The Demon-Haunted World: Science as a Candle in the Dark](/content/books/the-demon-haunted-world.md) by Carl Sagan (Focuses more on skepticism against pseudoscience)  
-* [📜🌍⏳ Sapiens: A Brief History of Humankind](/content/books/sapiens-a-brief-history-of-humankind.md) by Yuval Noah Harari (Human history, less cosmic scope)  
-* [🔫🦠🔩 Guns, Germs, and Steel: The Fates of Human Societies](/content/books/guns-germs-and-steel-the-fates-of-human-societies.md) by Jared Diamond (Geographic and environmental factors in human history)  
+* [😈🌍🔬🕯️🌑 The Demon-Haunted World: Science as a Candle in the Dark](./the-demon-haunted-world.md) by Carl Sagan (Focuses more on skepticism against pseudoscience)  
+* [📜🌍⏳ Sapiens: A Brief History of Humankind](./sapiens-a-brief-history-of-humankind.md) by Yuval Noah Harari (Human history, less cosmic scope)  
+* [🔫🦠🔩 Guns, Germs, and Steel: The Fates of Human Societies](./guns-germs-and-steel-the-fates-of-human-societies.md) by Jared Diamond (Geographic and environmental factors in human history)  
   
 ### Related Books  
 * ⚠️ Silent Spring by Rachel Carson (Environmental awareness, connecting to Sagan's advocacy)  

@@ -10,7 +10,7 @@ Channel: The Prof G Pod – Scott Galloway
 tags:
 youtube: https://youtu.be/qVV1rZUw-jI
 ---
-[Home](/content/index.md) > [Videos](/content/videos/index.md) | [🏛️🇺🇸📖 Heather Cox Richardson](/content/people/heather-cox-richardson.md) | [👨‍🏫📈💻 Scott Galloway](/content/people/scott-galloway.md)  
+[Home](../index.md) > [Videos](./index.md) | [🏛️🇺🇸📖 Heather Cox Richardson](../people/heather-cox-richardson.md) | [👨‍🏫📈💻 Scott Galloway](../people/scott-galloway.md)  
 # 🇺🇸⚔️🏛️ The Fight to Save American Democracy — with Heather Cox Richardson | Prof G Conversations  
 ![The Fight to Save American Democracy — with Heather Cox Richardson | Prof G Conversations](https://youtu.be/qVV1rZUw-jI)  
   
@@ -59,9 +59,9 @@ youtube: https://youtu.be/qVV1rZUw-jI
   
 ### ↔️ Similar  
   
-- [🏛️☀️⬆️ Democracy Awakening: 📝 Notes on the State of 🇺🇸 America](/content/books/democracy-awakening.md) by Heather Cox Richardson. The book further develops the speaker’s theme of contemporary American politics and the historical roots of the current crisis in democracy.  
+- [🏛️☀️⬆️ Democracy Awakening: 📝 Notes on the State of 🇺🇸 America](../books/democracy-awakening.md) by Heather Cox Richardson. The book further develops the speaker’s theme of contemporary American politics and the historical roots of the current crisis in democracy.  
 - 🐍 How Civil Wars Start: And How to Stop Them by Barbara F. Walter. This book uses political science and history to analyze the conditions that lead to political instability and civil conflict, similar to the video's concern about the "enemy within."  
-- [😇🧠 The Righteous Mind: Why Good People Are Divided by Politics and Religion](/content/books/the-righteous-mind.md) by Jonathan Haidt. This book explores the moral and psychological roots of partisan division, offering a deep dive into the tribalism that the speaker identifies as the juice of fascism.  
+- [😇🧠 The Righteous Mind: Why Good People Are Divided by Politics and Religion](../books/the-righteous-mind.md) by Jonathan Haidt. This book explores the moral and psychological roots of partisan division, offering a deep dive into the tribalism that the speaker identifies as the juice of fascism.  
   
 ### 🆚 Contrasting  
   
@@ -71,6 +71,6 @@ youtube: https://youtu.be/qVV1rZUw-jI
   
 ### 🎨 Creatively Related  
   
-- [🛠️💖 Shop Class as Soulcraft: An Inquiry Into the Value of Work](/content/books/shop-class-as-soulcraft-an-inquiry-into-the-value-of-work.md) by Matthew B. Crawford. This book explores the dignity and intellectual satisfaction of skilled manual labor, tangentially relating to the speaker's discussion about the loss of the cultural value of hard work and the "joy in the work".  
-- [🎳🏘️📉📈 Bowling Alone: The Collapse and Revival of American Community](/content/books/bowling-alone.md) by Robert D. Putnam. This book provides a sociological study of the decline of civic engagement and community life in America, which relates to the video’s theme of national unity and the need for public service to "reclaim" community.  
+- [🛠️💖 Shop Class as Soulcraft: An Inquiry Into the Value of Work](../books/shop-class-as-soulcraft-an-inquiry-into-the-value-of-work.md) by Matthew B. Crawford. This book explores the dignity and intellectual satisfaction of skilled manual labor, tangentially relating to the speaker's discussion about the loss of the cultural value of hard work and the "joy in the work".  
+- [🎳🏘️📉📈 Bowling Alone: The Collapse and Revival of American Community](../books/bowling-alone.md) by Robert D. Putnam. This book provides a sociological study of the decline of civic engagement and community life in America, which relates to the video’s theme of national unity and the need for public service to "reclaim" community.  
 - 🚀 The Founders' Fortunes: How Money Shaped the Birth of America by Willis P. Whichard. This book explores the financial and commercial interests of the Founding Fathers, offering a historical context to the modern discussion about the link between wealth, power, and political principles.

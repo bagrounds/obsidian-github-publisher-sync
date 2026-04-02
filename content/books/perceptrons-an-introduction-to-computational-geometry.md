@@ -7,7 +7,7 @@ share: true
 CTA: 📐 Construct understanding.
 affiliate link: https://amzn.to/45Bwclc
 ---
-[Home](/content/index.md) > [Books](/content/books/index.md)  
+[Home](../index.md) > [Books](./index.md)  
 # 🤖📐 Perceptrons: An Introduction to Computational Geometry  
 [🛒 Perceptrons: An Introduction to Computational Geometry. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/45Bwclc)  
   
@@ -55,7 +55,7 @@ affiliate link: https://amzn.to/45Bwclc
 📖 These books represent the "connectionist" approach that rose in prominence after Perceptrons and demonstrated the power of multi-layer neural networks.  
   
 * 🤝 **Parallel Distributed Processing: Explorations in the Microstructure of Cognition** by David E. Rumelhart, James L. McClelland, and the PDP Research Group: 🚀 This seminal two-volume work from 1986 is often credited with leading the revival of neural networks. 🔄 It introduced the concept of backpropagation and demonstrated the power of parallel distributed processing models.  
-* **[🧠💻🤖 Deep Learning](/content/books/deep-learning.md)** by Ian Goodfellow, Yoshua Bengio, and Aaron Courville: 🥇 Considered the definitive textbook on modern deep learning, this book showcases the incredible capabilities of the very technologies that overcame the limitations identified in Perceptrons.  
+* **[🧠💻🤖 Deep Learning](./deep-learning.md)** by Ian Goodfellow, Yoshua Bengio, and Aaron Courville: 🥇 Considered the definitive textbook on modern deep learning, this book showcases the incredible capabilities of the very technologies that overcame the limitations identified in Perceptrons.  
 * 💻 **Hands-On Machine Learning with Scikit-Learn, Keras & TensorFlow** by Aurélien Géron: 👨‍💻 A practical guide to implementing the powerful neural network models that stand in contrast to the simple perceptrons analyzed by Minsky and Papert.  
   
 ### ✨ Creative Connections: History, Philosophy, and Broader Context  
@@ -63,12 +63,12 @@ affiliate link: https://amzn.to/45Bwclc
 📚 This selection of books provides a wider context for understanding the impact of Perceptrons and the ongoing quest for artificial intelligence.  
   
 * 🕰️ **The Quest for Artificial Intelligence** by Nils J. Nilsson: 🤖 A comprehensive history of the field of AI, providing context for the controversies and paradigm shifts, including the one influenced by Perceptrons.  
-* 🤖 **[🤖🧠 Artificial Intelligence: A Modern Approach](/content/books/artificial-intelligence-a-modern-approach.md)** by Stuart Russell and Peter Norvig: 🥇 The leading textbook in artificial intelligence, offering a broad overview of the field and placing the contributions of works like Perceptrons in a larger historical and technical perspective.  
-* **[🧠👥 The Society of Mind](/content/books/the-society-of-mind.md)** by Marvin Minsky: 🤔 In this later work, Minsky presents his theory of how intelligence can emerge from the interactions of many non-intelligent agents, a conceptual leap from the simpler models analyzed in Perceptrons.  
+* 🤖 **[🤖🧠 Artificial Intelligence: A Modern Approach](./artificial-intelligence-a-modern-approach.md)** by Stuart Russell and Peter Norvig: 🥇 The leading textbook in artificial intelligence, offering a broad overview of the field and placing the contributions of works like Perceptrons in a larger historical and technical perspective.  
+* **[🧠👥 The Society of Mind](./the-society-of-mind.md)** by Marvin Minsky: 🤔 In this later work, Minsky presents his theory of how intelligence can emerge from the interactions of many non-intelligent agents, a conceptual leap from the simpler models analyzed in Perceptrons.  
 * 🍎 **Mindstorms: Children, Computers, and Powerful Ideas** by Seymour Papert: 💡 Papert's influential book explores his vision for how computers can be used as powerful learning tools for children, a different facet of his work that also touches on the nature of thinking and learning.  
-* **[🔬🔄 The Structure of Scientific Revolutions](/content/books/the-structure-of-scientific-revolutions.md)** by Thomas S. Kuhn: 📖 This classic work in the philosophy of science provides a framework for understanding how scientific fields undergo paradigm shifts, a lens through which the impact of Perceptrons on AI research can be viewed.  
+* **[🔬🔄 The Structure of Scientific Revolutions](./the-structure-of-scientific-revolutions.md)** by Thomas S. Kuhn: 📖 This classic work in the philosophy of science provides a framework for understanding how scientific fields undergo paradigm shifts, a lens through which the impact of Perceptrons on AI research can be viewed.  
 * 🤖 **A Brief History of Artificial Intelligence** by Michael Wooldridge: 📚 This book offers a concise and accessible history of AI, perfect for understanding the timeline and key events surrounding Perceptrons.  
 * 🤖 **AI & I: An Intellectual History of Artificial Intelligence** by Eugene Charniak: 🧐 An insider's perspective on the history of AI, offering personal insights into the developments and debates that shaped the field.  
   
-## 💬 [Gemini](/content/software/gemini.md) Prompt (gemini-2.5-pro)  
+## 💬 [Gemini](../software/gemini.md) Prompt (gemini-2.5-pro)  
 > Write a markdown-formatted (start headings at level H2) book report, followed by a plethora of additional similar, contrasting, and creatively related book recommendations on Perceptrons: An Introduction to Computational Geometry. Never put book titles in quotes or italics. Be thorough in content discussed but concise and economical with your language. Structure the report with section headings and bulleted lists to avoid long blocks of text.

@@ -10,7 +10,7 @@ Channel: SpoonFedStudy
 tags:
 youtube: https://youtu.be/EkifXx9I_tg
 ---
-[Home](/content/index.md) > [Videos](/content/videos/index.md) | [🥄👶📚 SpoonFedStudy](/content/topics/spoonfedstudy.md)  
+[Home](../index.md) > [Videos](./index.md) | [🥄👶📚 SpoonFedStudy](../topics/spoonfedstudy.md)  
 # 🚀⏱️💥🏆 How to do more in 90 days than most do in their entire lives  
 ![How to do more in 90 days than most do in their entire lives.](https://youtu.be/EkifXx9I_tg)  
   
@@ -33,9 +33,9 @@ While this video presents a compelling productivity system, it primarily focuses
 * 🧠 **Neuroscience of Productivity:** Deeper dives into the specific neurological mechanisms behind "diffuse mode thinking" and how to optimize them.  
   
 ## 📚 Book Recommendations  
-* [✅😌 Getting Things Done: The Art of Stress-Free Productivity](/content/books/getting-things-done-the-art-of-stress-free-productivity.md) by David Allen: 📖 A classic in productivity, offering a comprehensive system for organizing tasks and projects.  
-* [🤿💼 Deep Work: Rules for Focused Success in a Distracted World](/content/books/deep-work.md) by Cal Newport: 📚 Explores the importance of focused, uninterrupted work and provides strategies for cultivating it.  
-* [⚛️🔄 Atomic Habits: An Easy & Proven Way to Build Good Habits & Break Bad Ones](/content/books/atomic-habits.md) by James Clear: 💡 Focuses on building small, incremental habits that lead to significant long-term results.  
-* [🔄🧠💪 The Power of Habit: Why We Do What We Do in Life and Business](/content/books/the-power-of-habit.md) by Charles Duhigg: 🧠 Delves into the science of habit formation and how habits influence our lives.  
-* [🤔🐇🐢 Thinking, Fast and Slow](/content/books/thinking-fast-and-slow.md) by Daniel Kahneman: 🧐 Explores the two systems of thinking (fast, intuitive and slow, deliberate) which could provide a deeper understanding of the "diffuse mode thinking" mentioned in the video.  
-* [👤📈🎯🌟🔑🤝🏆 The 7 Habits of Highly Effective People](/content/books/the-7-habits-of-highly-effective-people.md) by Stephen Covey: 🌟 A foundational text on personal and professional effectiveness, emphasizing principles-centered living.
+* [✅😌 Getting Things Done: The Art of Stress-Free Productivity](../books/getting-things-done-the-art-of-stress-free-productivity.md) by David Allen: 📖 A classic in productivity, offering a comprehensive system for organizing tasks and projects.  
+* [🤿💼 Deep Work: Rules for Focused Success in a Distracted World](../books/deep-work.md) by Cal Newport: 📚 Explores the importance of focused, uninterrupted work and provides strategies for cultivating it.  
+* [⚛️🔄 Atomic Habits: An Easy & Proven Way to Build Good Habits & Break Bad Ones](../books/atomic-habits.md) by James Clear: 💡 Focuses on building small, incremental habits that lead to significant long-term results.  
+* [🔄🧠💪 The Power of Habit: Why We Do What We Do in Life and Business](../books/the-power-of-habit.md) by Charles Duhigg: 🧠 Delves into the science of habit formation and how habits influence our lives.  
+* [🤔🐇🐢 Thinking, Fast and Slow](../books/thinking-fast-and-slow.md) by Daniel Kahneman: 🧐 Explores the two systems of thinking (fast, intuitive and slow, deliberate) which could provide a deeper understanding of the "diffuse mode thinking" mentioned in the video.  
+* [👤📈🎯🌟🔑🤝🏆 The 7 Habits of Highly Effective People](../books/the-7-habits-of-highly-effective-people.md) by Stephen Covey: 🌟 A foundational text on personal and professional effectiveness, emphasizing principles-centered living.

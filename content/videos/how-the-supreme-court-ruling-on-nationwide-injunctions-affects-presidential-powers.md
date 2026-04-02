@@ -10,7 +10,7 @@ Channel: PBS NewsHour
 tags:
 youtube: https://youtu.be/V9IrathROWk
 ---
-[Home](/content/index.md) > [Videos](/content/videos/index.md)  
+[Home](../index.md) > [Videos](./index.md)  
 # 🏛️🚫🛑👑 How the Supreme Court ruling on nationwide injunctions affects presidential powers  
 ![How the Supreme Court ruling on nationwide injunctions affects presidential powers](https://youtu.be/V9IrathROWk)  
   
@@ -28,7 +28,7 @@ youtube: https://youtu.be/V9IrathROWk
 * 📚 ***A People's History of the Supreme Court: The Men and Women Whose Cases and Decisions Have Shaped Our Constitution*** by Peter Irons: Offers a critical perspective on the Court's history and its impact on American society 🏛️.  
 * 📚 ***The Brethren: Inside the Supreme Court*** by Bob Woodward and Scott Armstrong: A classic exposé on the inner workings of the Supreme Court during the Burger Court era.  
 * 📚 ***Justice on the Brink: A Requiem for the Supreme Court*** by Linda Greenhouse: Examines the recent shifts and challenges facing the Supreme Court 👨‍⚖️.  
-* **[⚠️🏛️👹🇺🇸 The Most Dangerous Branch: Inside the Supreme Court in the Age of Trump](/content/books/the-most-dangerous-branch-inside-the-supreme-court-in-the-age-of-trump.md)** by David A. Kaplan: Explores how the Supreme Court's power has evolved and its implications for democracy 🏛️.  
+* **[⚠️🏛️👹🇺🇸 The Most Dangerous Branch: Inside the Supreme Court in the Age of Trump](../books/the-most-dangerous-branch-inside-the-supreme-court-in-the-age-of-trump.md)** by David A. Kaplan: Explores how the Supreme Court's power has evolved and its implications for democracy 🏛️.  
   
 **On Presidential Power and Executive Orders:**  
 * 📚 ***By Executive Order: Bureaucratic Management and the Limits of Presidential Power*** by Andrew Rudalevige: Examines how executive orders 📜 are formulated and the constraints on presidential power 👨‍💼.  

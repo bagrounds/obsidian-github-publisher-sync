@@ -10,7 +10,7 @@ Channel: Heather Cox Richardson
 tags:
 youtube: https://youtu.be/YdxkifYjBFY
 ---
-[Home](/content/index.md) > [Videos](/content/videos/index.md) | [🏛️🇺🇸📖 Heather Cox Richardson](/content/people/heather-cox-richardson.md)  
+[Home](../index.md) > [Videos](./index.md) | [🏛️🇺🇸📖 Heather Cox Richardson](../people/heather-cox-richardson.md)  
 # 💬⚖️🏛️ A Conversation with Lina Khan, Former Commissioner of the FTC  
 ![A Conversation with Lina Khan, Former Commissioner of the FTC](https://youtu.be/YdxkifYjBFY)  
   
@@ -48,8 +48,8 @@ youtube: https://youtu.be/YdxkifYjBFY
 ## 📚 Book Recommendations  
   
 ### ↔️ Similar  
-* [👑⚔️🏛️ Goliath: The 100-Year War Between Monopoly Power and Democracy](/content/books/goliath-the-100-year-war-between-monopoly-power-and-democracy.md) by Matt Stoller explores the continuous fight against concentrated economic power throughout US history, mirroring the video's emphasis on the political origins of anti-monopoly thought.  
-* [👑⚖️ The Curse of Bigness: Antitrust in the New Gilded Age](/content/books/the-curse-of-bigness-antitrust-in-the-new-gilded-age.md) by Tim Wu is a concise argument for reinvigorating competition policy to address the concentrated power of modern tech monopolies, aligning with the video's critique of the status quo.  
+* [👑⚔️🏛️ Goliath: The 100-Year War Between Monopoly Power and Democracy](../books/goliath-the-100-year-war-between-monopoly-power-and-democracy.md) by Matt Stoller explores the continuous fight against concentrated economic power throughout US history, mirroring the video's emphasis on the political origins of anti-monopoly thought.  
+* [👑⚖️ The Curse of Bigness: Antitrust in the New Gilded Age](../books/the-curse-of-bigness-antitrust-in-the-new-gilded-age.md) by Tim Wu is a concise argument for reinvigorating competition policy to address the concentrated power of modern tech monopolies, aligning with the video's critique of the status quo.  
   
 ### 🆚 Contrasting  
 * 🧑‍🏫 The Antitrust Paradox by Robert H Bork is the foundational text of the Chicago School, arguing that the only legitimate purpose of antitrust is to maximize efficiency and consumer welfare, the very viewpoint the video's speaker seeks to overturn.  

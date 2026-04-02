@@ -6,7 +6,7 @@ URL: https://bagrounds.org/books/growing-fruit-trees-12-simple-steps-to-abundant
 share: true
 affiliate link: https://amzn.to/3SxiVD6
 ---
-[Home](/content/index.md) > [Books](/content/books/index.md)  
+[Home](../index.md) > [Books](./index.md)  
 # 🌱🍎🌳 Growing Fruit Trees: 12 Simple Steps to Abundant Fruit Production and Reconnecting with the Food You Eat  
 [🛒 Growing Fruit Trees: 12 Simple Steps to Abundant Fruit Production and Reconnecting with the Food You Eat. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3SxiVD6)  
   
@@ -60,11 +60,11 @@ affiliate link: https://amzn.to/3SxiVD6
 * 🍎 **The Backyard Homestead Guide to Growing Organic Food: A Bountiful Harvest in Any Size Yard** by Various Authors (part of The Backyard Homestead series): Broader than just fruit trees, but good for integrating them into a larger self-sufficiency plan.  
 * 🍇 **Successful Berry Growing: How to Plant, Prune, Pick, and Preserve Bush and Vine Fruits** by Gene Logsdon: For those specifically interested in berry cultivation.  
 * 💧 **Rainwater Harvesting for Drylands and Beyond** by Brad Lancaster: While not solely about fruit trees, crucial for sustainable water practices in arid or drought-prone regions.  
-* **[🌍🌿 Gaia's Garden: A Guide to Home-Scale Permaculture](/content/books/gaias-garden.md)** by Toby Hemenway: For those interested in designing their fruit tree plantings within a permaculture system, emphasizing ecological harmony.  
+* **[🌍🌿 Gaia's Garden: A Guide to Home-Scale Permaculture](./gaias-garden.md)** by Toby Hemenway: For those interested in designing their fruit tree plantings within a permaculture system, emphasizing ecological harmony.  
   
 ### 💫 Creatively Related (Expanding on Themes):  
   
-* **[🪢🌾 Braiding Sweetgrass: Indigenous Wisdom, Scientific Knowledge, and the Teachings of Plants](/content/books/braiding-sweetgrass.md)** by Robin Wall Kimmerer: Explores a deeper, more spiritual connection to plants and the natural world, resonating with the "reconnecting with food" theme.  
+* **[🪢🌾 Braiding Sweetgrass: Indigenous Wisdom, Scientific Knowledge, and the Teachings of Plants](./braiding-sweetgrass.md)** by Robin Wall Kimmerer: Explores a deeper, more spiritual connection to plants and the natural world, resonating with the "reconnecting with food" theme.  
 * 🌾 **The One-Straw Revolution: An Introduction to Natural Farming** by Masanobu Fukuoka: A philosophical and practical guide to a "do-nothing" approach to farming that has inspired many in the permaculture and natural farming movements.  
 * 👨‍👩‍👧‍👦 **Animal, Vegetable, Miracle: A Year of Food Life** by Barbara Kingsolver: A narrative of a family's attempt to eat locally and seasonally, which could inspire similar fruit-growing endeavors.  
 * 🏞️ **Public Produce: The New Urban Agriculture** by Darrin Nordahl: Explores the concept of fruit and vegetable gardens in public spaces, expanding the idea of reconnecting with food to a community level.  
@@ -80,5 +80,5 @@ affiliate link: https://amzn.to/3SxiVD6
   
 💡 When selecting further reading, consider your specific climate, the scale of your ambition (a few backyard trees vs. a small orchard), and any particular areas of interest, such as organic methods, specific fruit types, or water-wise gardening.  
   
-## 💬 [Gemini](/content/software/gemini.md) Prompt (gemini-2.5-pro-exp-03-25)  
+## 💬 [Gemini](../software/gemini.md) Prompt (gemini-2.5-pro-exp-03-25)  
 > Write a markdown-formatted (start headings at level H2) book report, followed by a plethora of additional similar, contrasting, and creatively related book recommendations on Growing Fruit Trees: 12 Simple Steps to Abundant Fruit Production and Reconnecting with the Food You Eat. Be thorough in content discussed but concise and economical with your language. Structure the report with section headings and bulleted lists to avoid long blocks of text.

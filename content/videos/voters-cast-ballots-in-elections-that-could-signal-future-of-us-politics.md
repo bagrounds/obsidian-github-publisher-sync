@@ -10,7 +10,7 @@ Channel: PBS NewsHour
 tags:
 youtube: https://youtu.be/WC8ZvPtnFnU
 ---
-[Home](/content/index.md) > [Videos](/content/videos/index.md)  
+[Home](../index.md) > [Videos](./index.md)  
 # 🗳️🇺🇸🔮 Voters cast ballots in elections that could signal future of U.S. politics  
 ![Voters cast ballots in elections that could signal future of U.S. politics](https://youtu.be/WC8ZvPtnFnU)  
   
@@ -82,7 +82,7 @@ youtube: https://youtu.be/WC8ZvPtnFnU
   
 ### ↔️ Similar  
   
-- [🧑‍🤝‍🧑🐘⬆️ The Great Alignment: Race, Party Transformation, and the Rise of Donald Trump](/content/books/the-great-alignment-race-party-transformation-and-the-rise-of-donald-trump.md) by Alan Abramowitz: Explores the increasing partisan polarization in American politics and how it affects election outcomes and the focus on national figures like Trump.  
+- [🧑‍🤝‍🧑🐘⬆️ The Great Alignment: Race, Party Transformation, and the Rise of Donald Trump](../books/the-great-alignment-race-party-transformation-and-the-rise-of-donald-trump.md) by Alan Abramowitz: Explores the increasing partisan polarization in American politics and how it affects election outcomes and the focus on national figures like Trump.  
   
 - 🗳️ Identity Crisis: The 2016 Presidential Campaign and the Battle for the Meaning of America by John Sides, Michael Tesler, and Lynn Vavreck: Provides a deep dive into the role of identity politics and social issues in modern elections, which is relevant to the idea of the state races being a national referendum.  
   

@@ -7,7 +7,7 @@ URL: https://bagrounds.org/articles/why-we-think
 Author:
 tags:
 ---
-[Home](/content/index.md) > [Articles](/content/articles/index.md)  
+[Home](../index.md) > [Articles](./index.md)  
 # [🤔💭🤔💭 Why We Think](https://lilianweng.github.io/posts/2025-05-01-thinking)  
 ## 🤖 AI Summary  
 * 🧠 Enabling models to think longer mirrors the human dual process theory: 💨 fast (System 1) versus 🐌 slow (System 2) thinking.  
@@ -53,13 +53,13 @@ tags:
 ## 📚 Book Recommendations  
   
 ### ↔️ Similar  
-* [🤔🐇🐢 Thinking, Fast and Slow](/content/books/thinking-fast-and-slow.md) by Daniel Kahneman: It explains the dual process theory of System 1 and System 2 thinking, which the article directly uses as a psychological analogy for model reasoning.  
-* [❓➡️💡 The Book of Why: The New Science of Cause and Effect](/content/books/the-book-of-why.md) by Judea Pearl and Dana Mackenzie: This book focuses on the importance of causal inference and formal reasoning, the ultimate goal of improving LLM thinking and problem-solving capabilities.  
+* [🤔🐇🐢 Thinking, Fast and Slow](../books/thinking-fast-and-slow.md) by Daniel Kahneman: It explains the dual process theory of System 1 and System 2 thinking, which the article directly uses as a psychological analogy for model reasoning.  
+* [❓➡️💡 The Book of Why: The New Science of Cause and Effect](../books/the-book-of-why.md) by Judea Pearl and Dana Mackenzie: This book focuses on the importance of causal inference and formal reasoning, the ultimate goal of improving LLM thinking and problem-solving capabilities.  
   
 ### 🆚 Contrasting  
-* [♾️📐🎶🥨 Gödel, Escher, Bach: An Eternal Golden Braid](/content/books/godel-escher-bach.md) by Douglas Hofstadter: This work explores intelligence, formal systems, and self-reference from a more symbolic and philosophical perspective, contrasting with the purely statistical approach of current large language models.  
+* [♾️📐🎶🥨 Gödel, Escher, Bach: An Eternal Golden Braid](../books/godel-escher-bach.md) by Douglas Hofstadter: This work explores intelligence, formal systems, and self-reference from a more symbolic and philosophical perspective, contrasting with the purely statistical approach of current large language models.  
 * 🤖 The Second Self: Computers and the Human Spirit by Sherry Turkle: It offers a sociological and psychological contrast, exploring how human identity and modes of thought are reflected in and contrasted with computational thinking.  
   
 ### 🎨 Creatively Related  
-* [🤔💻🧠 Algorithms to Live By: The Computer Science of Human Decisions](/content/books/algorithms-to-live-by.md) by Brian Christian and Tom Griffiths: This connects computational problem-solving principles, like optimal stopping and caching, to human decision-making and practical thought processes.  
-* [🔬🔄 The Structure of Scientific Revolutions](/content/books/the-structure-of-scientific-revolutions.md) by Thomas S. Kuhn: It discusses how intellectual frameworks (paradigms) fundamentally shift, creatively relating to how new techniques like CoT or tool use fundamentally change the capabilities and research approaches in AI.
+* [🤔💻🧠 Algorithms to Live By: The Computer Science of Human Decisions](../books/algorithms-to-live-by.md) by Brian Christian and Tom Griffiths: This connects computational problem-solving principles, like optimal stopping and caching, to human decision-making and practical thought processes.  
+* [🔬🔄 The Structure of Scientific Revolutions](../books/the-structure-of-scientific-revolutions.md) by Thomas S. Kuhn: It discusses how intellectual frameworks (paradigms) fundamentally shift, creatively relating to how new techniques like CoT or tool use fundamentally change the capabilities and research approaches in AI.

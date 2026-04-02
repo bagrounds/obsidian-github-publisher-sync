@@ -10,7 +10,7 @@ Channel: The Prof G Pod – Scott Galloway
 tags:
 youtube: https://youtu.be/pA9Bwd1zYDQ
 ---
-[Home](/content/index.md) > [Videos](/content/videos/index.md) | [👨‍🏫📈💻 Scott Galloway](/content/people/scott-galloway.md)  
+[Home](../index.md) > [Videos](./index.md) | [👨‍🏫📈💻 Scott Galloway](../people/scott-galloway.md)  
 # 🇺🇸🤔❓ What Happened to American Conservatism? — with David Brooks | Prof G Conversations  
 ![What Happened to American Conservatism? — with David Brooks | Prof G Conversations](https://youtu.be/pA9Bwd1zYDQ)  
   
@@ -68,5 +68,5 @@ youtube: https://youtu.be/pA9Bwd1zYDQ
 ### 🎨 Creatively Related  
   
 * 📚 Pedagogy of the Oppressed by Paulo Freire: 🗣️ This foundational text in critical pedagogy explores the power dynamics within the education system, framing it as a tool for domination but arguing for its emancipatory potential through critical consciousness.  
-* [🏛️💰 Debt: The First 5,000 Years](/content/books/debt-the-first-5000-years.md) by David Graeber: 🪙 A vast historical and anthropological examination of debt and credit, offering context for why the student loan system is viewed as a form of social control and oppression.  
-* [🛠️💖 Shop Class as Soulcraft: An Inquiry Into the Value of Work](/content/books/shop-class-as-soulcraft-an-inquiry-into-the-value-of-work.md) by Matthew B. Crawford: 🔧 Argues for the intellectual and social value of manual labor and skilled trades, offering a cultural critique of an educational system that exclusively promotes college-bound, white-collar work.
+* [🏛️💰 Debt: The First 5,000 Years](../books/debt-the-first-5000-years.md) by David Graeber: 🪙 A vast historical and anthropological examination of debt and credit, offering context for why the student loan system is viewed as a form of social control and oppression.  
+* [🛠️💖 Shop Class as Soulcraft: An Inquiry Into the Value of Work](../books/shop-class-as-soulcraft-an-inquiry-into-the-value-of-work.md) by Matthew B. Crawford: 🔧 Argues for the intellectual and social value of manual labor and skilled trades, offering a cultural critique of an educational system that exclusively promotes college-bound, white-collar work.

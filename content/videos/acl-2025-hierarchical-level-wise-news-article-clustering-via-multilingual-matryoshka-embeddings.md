@@ -10,7 +10,7 @@ Channel: Hans Hanley
 tags:
 youtube: https://youtu.be/8hBLKBKAEAI
 ---
-[Home](/content/index.md) > [Videos](/content/videos/index.md)  
+[Home](../index.md) > [Videos](./index.md)  
 # 📰🌍🏘️ Matryoshka ACL 2025: Hierarchical Level-Wise News Article Clustering via Multilingual Matryoshka Embeddings  
 ![ACL 2025: Hierarchical Level-Wise News Article Clustering via Multilingual Matryoshka Embeddings](https://youtu.be/8hBLKBKAEAI)  
   
@@ -61,16 +61,16 @@ A: ✍️ The system uses a sophisticated, three-step pipeline to create meaning
 These books explore the nature of propaganda and misinformation, which is the core problem the clustering method attempts to solve.  
   
 * Foolproof: Why Misinformation Infects Our Minds and How to Build Immunity by Sander van der Linden. 🧠 Explores the psychological science behind why false beliefs spread and outlines strategies to build cognitive immunity against deceptive information.  
-* [🤥📣 This Is Not Propaganda: Adventures in the War Against Reality](/content/books/this-is-not-propaganda.md) by Peter Pomerantsev. 📰 Offers a contemporary and global look at information warfare, highlighting how propaganda has evolved in the age of digital media to manipulate public perception.  
+* [🤥📣 This Is Not Propaganda: Adventures in the War Against Reality](../books/this-is-not-propaganda.md) by Peter Pomerantsev. 📰 Offers a contemporary and global look at information warfare, highlighting how propaganda has evolved in the age of digital media to manipulate public perception.  
   
 ### Contrasting  
 These books provide context on the systems and underlying technologies that allow news and information to spread and cluster, offering an important contrast to the model's focus on the *content* itself.  
   
-* [👁️‍🗨️💰⛓️👤 The Age of Surveillance Capitalism: The Fight for a Human Future at the New Frontier of Power](/content/books/the-age-of-surveillance-capitalism.md) by Shoshana Zuboff. 💰 Focuses on the economic and data-driven systems that generate and monetize information flows, providing a critical perspective on the media environment.  
-* [👁️ 1984](/content/books/1984.md) by George Orwell. 🖋️ A foundational work of fiction offering a literary and philosophical contrast, exploring a totalitarian government's absolute control over information and history through language and propaganda.  
+* [👁️‍🗨️💰⛓️👤 The Age of Surveillance Capitalism: The Fight for a Human Future at the New Frontier of Power](../books/the-age-of-surveillance-capitalism.md) by Shoshana Zuboff. 💰 Focuses on the economic and data-driven systems that generate and monetize information flows, providing a critical perspective on the media environment.  
+* [👁️ 1984](../books/1984.md) by George Orwell. 🖋️ A foundational work of fiction offering a literary and philosophical contrast, exploring a totalitarian government's absolute control over information and history through language and propaganda.  
   
 ### Creatively Related  
 These technical books delve into the concepts of **embeddings** and **language models** that are the foundational technology enabling the Matryoshka clustering method.  
   
 * Embeddings in Natural Language Processing: Theory and Advances in Vector Representations of Meaning* by Mohammad Taher Pilehvar and Jose Camacho-Collados. 📐 Provides a technical and theoretical deep dive into vector representations of meaning, which is the mathematical basis for the Matryoshka technique \[[01:25](http://www.youtube.com/watch?v=8hBLKBKAEAI&t=85)].  
-* [🗣️💻 Natural Language Processing with Transformers](/content/books/natural-language-processing-with-transformers.md) by Lewis Tunstall, Leandro von Werra, and Thomas Wolf. 🤖 Explores the Transformer architecture, the underlying technology for the large language models (LLMs) used to generate the encoder-based embeddings and perform summarization \[[02:51](http://www.youtube.com/watch?v=8hBLKBKAEAI&t=171)], \[[09:24](http://www.youtube.com/watch?v=8hBLKBKAEAI&t=564)].
+* [🗣️💻 Natural Language Processing with Transformers](../books/natural-language-processing-with-transformers.md) by Lewis Tunstall, Leandro von Werra, and Thomas Wolf. 🤖 Explores the Transformer architecture, the underlying technology for the large language models (LLMs) used to generate the encoder-based embeddings and perform summarization \[[02:51](http://www.youtube.com/watch?v=8hBLKBKAEAI&t=171)], \[[09:24](http://www.youtube.com/watch?v=8hBLKBKAEAI&t=564)].

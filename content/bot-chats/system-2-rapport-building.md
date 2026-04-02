@@ -5,15 +5,15 @@ aliases:
 title: 🧠🤝 System 2 Rapport Building
 URL: https://bagrounds.org/bot-chats/system-2-rapport-building
 ---
-[Home](/content/index.md) > [Bot Chats](/content/bot-chats/index.md)  
+[Home](../index.md) > [Bot Chats](./index.md)  
 # 🧠🤝 System 2 Rapport Building  
-## 💬 [Gemini](/content/software/gemini.md) Prompt 1  
+## 💬 [Gemini](../software/gemini.md) Prompt 1  
 > 🤔 Identify novel insights that emerge from the synthesis of ideas from the following books.  
 💡 Pick the most valuable insight and write a guide for exercising this idea to great practical benefit.  
 ✍️ Condense this guide into the most concise expression of this idea. 💎 Channel Strunk and White’s The Elements of Style to compress the core, most valuable essence of this idea into the fewest, densest, most valuable words possible.  
 📚 Recommend unmentioned books closely related to these ideas.  
->- [🤝🐾 Rapport: The Four Ways to Read People](/content/books/rapport.md)  
->- [🤔🐇🐢 Thinking, Fast and Slow](/content/books/thinking-fast-and-slow.md)  
+>- [🤝🐾 Rapport: The Four Ways to Read People](../books/rapport.md)  
+>- [🤔🐇🐢 Thinking, Fast and Slow](../books/thinking-fast-and-slow.md)  
   
 ### ✨ Novel Insight  
   
@@ -64,7 +64,7 @@ URL: https://bagrounds.org/bot-chats/system-2-rapport-building
   
 ### 📚 Recommended Reading  
   
-* **[🧰💬 Crucial Conversations: Tools for Talking When Stakes Are High](/content/books/crucial-conversations-tools-for-talking-when-stakes-are-high.md) by Kerry Patterson, Joseph Grenny, Ron McMillan, and Al Switzler:** 🤝 This book provides a practical framework for handling difficult conversations, which is a key aspect of building and maintaining rapport.  
-* **[🍃🧠🤝🏼 Influence: The Psychology of Persuasion](/content/books/influence.md) by Robert Cialdini:** 🧠 This classic work explores the principles of influence and persuasion, which are closely related to the concepts of rapport and communication.  
-* **[👉🤏 Nudge: Improving Decisions about Health, Wealth, and Happiness](/content/books/nudge.md) by Richard H. Thaler and Cass R. Sunstein:** 🧠 This book, a cornerstone of behavioral economics, explores how to design choices that "nudge" people toward better decisions, which has applications in both personal and professional interactions.  
+* **[🧰💬 Crucial Conversations: Tools for Talking When Stakes Are High](../books/crucial-conversations-tools-for-talking-when-stakes-are-high.md) by Kerry Patterson, Joseph Grenny, Ron McMillan, and Al Switzler:** 🤝 This book provides a practical framework for handling difficult conversations, which is a key aspect of building and maintaining rapport.  
+* **[🍃🧠🤝🏼 Influence: The Psychology of Persuasion](../books/influence.md) by Robert Cialdini:** 🧠 This classic work explores the principles of influence and persuasion, which are closely related to the concepts of rapport and communication.  
+* **[👉🤏 Nudge: Improving Decisions about Health, Wealth, and Happiness](../books/nudge.md) by Richard H. Thaler and Cass R. Sunstein:** 🧠 This book, a cornerstone of behavioral economics, explores how to design choices that "nudge" people toward better decisions, which has applications in both personal and professional interactions.  
 * 🦸‍♀️ **"Dare to Lead" by Brené Brown:** ❤️‍🩹 Brown's work on vulnerability, courage, and empathy offers a powerful complement to the more technical aspects of rapport-building, emphasizing the importance of authenticity and human connection.".

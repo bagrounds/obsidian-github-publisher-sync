@@ -10,7 +10,7 @@ Channel: Talks at Google
 tags:
 youtube: https://youtu.be/tke6X2eME3c
 ---
-[Home](/content/index.md) > [Videos](/content/videos/index.md) | [🔋📈 The Power of Full Engagement: Managing Energy, Not Time, Is the Key to High Performance and Personal Renewal](/content/books/the-power-of-full-engagement-managing-energy-not-time-is-the-key-to-high-performance-and-personal-renewal.md)  
+[Home](../index.md) > [Videos](./index.md) | [🔋📈 The Power of Full Engagement: Managing Energy, Not Time, Is the Key to High Performance and Personal Renewal](../books/the-power-of-full-engagement-managing-energy-not-time-is-the-key-to-high-performance-and-personal-renewal.md)  
 # 🔋⚡💡 The Energy Project | Tony Schwartz | Talks at Google  
 ![The Energy Project | Tony Schwartz | Talks at Google](https://youtu.be/tke6X2eME3c)  
 ## 📝🐒 Human Notes  
@@ -58,8 +58,8 @@ Furthermore, some critics of this approach might argue that it places too much r
   
 ## 📚 Book Recommendations  
   
-* [🤿💼 Deep Work: Rules for Focused Success in a Distracted World](/content/books/deep-work.md) by Cal Newport: Explores the value of single-tasking and focused work in a distracted world.  
-* [🔋⬇️⬆️ The Power of the Downstate: Recharge Your Life Using Your Body's Own Restorative Systems](/content/books/the-power-of-the-downstate-recharge-your-life-using-your-bodys-own-restorative-systems.md) by Charles Duhigg: Explains the science behind habits and provides a framework for creating lasting behavioral change.  
-* [➖💯 Essentialism: The Disciplined Pursuit of Less](/content/books/essentialism-the-disciplined-pursuit-of-less.md) by Greg McKeown: Encourages a disciplined pursuit of doing less but better to achieve maximum impact.  
-* [😴📈 Rest: Why You Get More Done When You Work Less](/content/books/rest-why-you-get-more-done-when-you-work-less.md) by Alex Soojung-Kim Pang: Argues that rest is not the opposite of work, but an integral part of high performance.  
-* [🌊🧘🏼‍♀️🧠📈 Flow: The Psychology of Optimal Experience](/content/books/flow-the-psychology-of-optimal-experience.md) by Mihaly Csikszentmihalyi: Investigates the concept of "flow," or being completely absorbed in an activity for its own sake, which aligns with the video's discussion of deep absorption.
+* [🤿💼 Deep Work: Rules for Focused Success in a Distracted World](../books/deep-work.md) by Cal Newport: Explores the value of single-tasking and focused work in a distracted world.  
+* [🔋⬇️⬆️ The Power of the Downstate: Recharge Your Life Using Your Body's Own Restorative Systems](../books/the-power-of-the-downstate-recharge-your-life-using-your-bodys-own-restorative-systems.md) by Charles Duhigg: Explains the science behind habits and provides a framework for creating lasting behavioral change.  
+* [➖💯 Essentialism: The Disciplined Pursuit of Less](../books/essentialism-the-disciplined-pursuit-of-less.md) by Greg McKeown: Encourages a disciplined pursuit of doing less but better to achieve maximum impact.  
+* [😴📈 Rest: Why You Get More Done When You Work Less](../books/rest-why-you-get-more-done-when-you-work-less.md) by Alex Soojung-Kim Pang: Argues that rest is not the opposite of work, but an integral part of high performance.  
+* [🌊🧘🏼‍♀️🧠📈 Flow: The Psychology of Optimal Experience](../books/flow-the-psychology-of-optimal-experience.md) by Mihaly Csikszentmihalyi: Investigates the concept of "flow," or being completely absorbed in an activity for its own sake, which aligns with the video's discussion of deep absorption.

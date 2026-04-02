@@ -10,7 +10,7 @@ Channel: PBS NewsHour
 tags:
 youtube: https://youtu.be/mjF76sofb0E
 ---
-[Home](/content/index.md) > [Videos](/content/videos/index.md)  
+[Home](../index.md) > [Videos](./index.md)  
 # ⚔️💥🏛️🇮🇱🇮🇷🪧🇺🇸🎂 PBS News Weekend full episode, June 14, 2025  
 ![PBS News Weekend full episode, June 14, 2025](https://youtu.be/mjF76sofb0E)  
   
@@ -25,7 +25,7 @@ youtube: https://youtu.be/mjF76sofb0E
 ## 📚 Book Recommendations  
 * **Political Violence and Threats Against Lawmakers:**  
     * **"The Field of Blood: Violence in Congress and the Road to Civil War" by Joanne B. Freeman:** This book recounts the history of physical violence in the U.S. Congress leading up to the Civil War, offering historical context for political animosity.  
-    * **[🇺🇸💥 Political Violence in America: Historical Flashpoints and Modern-Day Trends](/content/books/political-violence-in-america-historical-flashpoints-and-modern-day-trends.md) (2 volumes) edited by Lori Cox Han and Tomislav Han:** This encyclopedia provides a comprehensive look at the history and driving factors of political violence and intimidation in America.  
+    * **[🇺🇸💥 Political Violence in America: Historical Flashpoints and Modern-Day Trends](../books/political-violence-in-america-historical-flashpoints-and-modern-day-trends.md) (2 volumes) edited by Lori Cox Han and Tomislav Han:** This encyclopedia provides a comprehensive look at the history and driving factors of political violence and intimidation in America.  
   
 * **Israel-Iran Conflict:**  
     * **"Israel vs. Iran: The Shadow War" by Yaakov Katz and Yoaz Hendel:** This book unveils the clandestine warfare between Israel and Iran since the 2006 Lebanon War, detailing covert operations and strategic considerations.  

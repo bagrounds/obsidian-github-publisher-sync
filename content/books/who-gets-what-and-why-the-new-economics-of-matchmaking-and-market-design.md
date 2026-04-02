@@ -6,7 +6,7 @@ URL: https://bagrounds.org/books/who-gets-what-and-why-the-new-economics-of-matc
 share: true
 affiliate link: https://amzn.to/3Iu9HpX
 ---
-[Home](/content/index.md) > [Books](/content/books/index.md)  
+[Home](../index.md) > [Books](./index.md)  
 # ❓🎁 Who Gets What - and Why: The New Economics of Matchmaking and Market Design  
 [🛒 Who Gets What - and Why: The New Economics of Matchmaking and Market Design. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3Iu9HpX)  
   
@@ -54,16 +54,16 @@ affiliate link: https://amzn.to/3Iu9HpX
 ### 📚 Book Recommendations  
   
 #### 👯 Similar Focus  
-* [🔮🤷🏼‍♀️🤪 Predictably Irrational: The Hidden Forces That Shape Our Decisions](/content/books/predictably-irrational.md) by Dan Ariely  
+* [🔮🤷🏼‍♀️🤪 Predictably Irrational: The Hidden Forces That Shape Our Decisions](./predictably-irrational.md) by Dan Ariely  
     * 🧠 **Focus:** Behavioral economics, irrational decision-making.  
     * 🔗 **Connection:** Explores human behavior in markets beyond rational self-interest.  
-* [👉🤏 Nudge: Improving Decisions about Health, Wealth, and Happiness](/content/books/nudge.md) by Richard H. Thaler and Cass R. Sunstein  
+* [👉🤏 Nudge: Improving Decisions about Health, Wealth, and Happiness](./nudge.md) by Richard H. Thaler and Cass R. Sunstein  
     * 🎯 **Focus:** Libertarian paternalism, how choices are influenced by design.  
     * 🔗 **Connection:** Directly related to market design's impact on choices.  
-* [🤔🐇🐢 Thinking, Fast and Slow](/content/books/thinking-fast-and-slow.md) by Daniel Kahneman  
+* [🤔🐇🐢 Thinking, Fast and Slow](./thinking-fast-and-slow.md) by Daniel Kahneman  
     * 💭 **Focus:** Two systems of thought, biases in judgment and decision-making.  
     * 🔗 **Connection:** Underpins how individuals interact with market designs.  
-* [🤓🕵️‍♂️❓ Freakonomics: A Rogue Economist Explores the Hidden Side of Everything](/content/books/freakonomics.md) by Steven D. Levitt and Stephen J. Dubner  
+* [🤓🕵️‍♂️❓ Freakonomics: A Rogue Economist Explores the Hidden Side of Everything](./freakonomics.md) by Steven D. Levitt and Stephen J. Dubner  
     * 🕵️ **Focus:** Hidden incentives and unconventional economic explanations.  
     * 🔗 **Connection:** Examines real-world phenomena through an economic lens, similar to Roth's approach to matching markets.  
   
@@ -76,7 +76,7 @@ affiliate link: https://amzn.to/3Iu9HpX
     * 🤔 **Contrast:** Highlights how market failures often involve deliberate exploitation, whereas Roth often focuses on structural design flaws.  
   
 #### ✨ Creatively Related Concepts  
-* [⚛️🔄 Atomic Habits: An Easy & Proven Way to Build Good Habits & Break Bad Ones](/content/books/atomic-habits.md) by James Clear  
+* [⚛️🔄 Atomic Habits: An Easy & Proven Way to Build Good Habits & Break Bad Ones](./atomic-habits.md) by James Clear  
     * 🌱 **Focus:** Systems thinking, small changes for significant outcomes, behavior design.  
     * 🔗 **Connection:** Applicable to designing individual "markets" for personal goals and choices.  
 * 🌍 Good Economics for Hard Times by Abhijit V. Banerjee and Esther Duflo  

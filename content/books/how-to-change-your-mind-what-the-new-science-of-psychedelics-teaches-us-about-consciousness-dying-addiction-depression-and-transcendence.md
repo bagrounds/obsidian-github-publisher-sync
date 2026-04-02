@@ -5,8 +5,11 @@ aliases:
 URL: https://bagrounds.org/books/how-to-change-your-mind-what-the-new-science-of-psychedelics-teaches-us-about-consciousness-dying-addiction-depression-and-transcendence
 share: true
 affiliate link: https://amzn.to/4kFyVyO
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_time: 2026-04-02T00:00:00Z
+force_analyze_links: false
 ---
-[Home](/content/index.md) > [Books](/content/books/index.md)  
+[Home](../index.md) > [Books](./index.md)  
 # 🧠🍄 How to Change Your Mind: What the New Science of Psychedelics Teaches Us About Consciousness, Dying, Addiction, Depression, and Transcendence  
 [🛒 How to Change Your Mind: What the New Science of Psychedelics Teaches Us About Consciousness, Dying, Addiction, Depression, and Transcendence. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4kFyVyO)  
   
@@ -43,19 +46,19 @@ Pollan's writing blends scientific 📰 reporting, historical 📜 narrative, an
   
 * 📖 ***Unbroken Brain: A Revolutionary New Way of Understanding Addiction*** by Maia Szalavitz. Offers a different perspective on addiction, viewing it as a learning disorder rather than a moral failing, which can provide a contrasting view to the potential of psychedelics in addiction treatment.  
 * 📖 ***Against Empathy: The Case for Rational Compassion*** by Paul Bloom. While not directly about psychedelics, this book challenges the uncritical embrace of empathy and could offer a contrasting view on the subjective emotional shifts sometimes reported during psychedelic experiences.  
-* **[🤕🎼🧠 The Body Keeps the Score: Brain, Mind, and Body in the Healing of Trauma](/content/books/the-body-keeps-the-score-brain-mind-and-body-in-the-healing-of-trauma.md)** by Bessel van der Kolk. Focuses on the physiological impact of trauma and various therapeutic approaches, including somatic therapies, which can be seen as alternative or complementary methods for addressing mental health without psychedelics.  
-* **[🔬🧘🏼‍♀️🧠 Altered Traits: Science Reveals How Meditation Changes Your Mind, Brain, and Body](/content/books/altered-traits-science-reveals-how-meditation-changes-your-mind-brain-and-body.md)** by Daniel Goleman and Richard Davidson. Explores the science of meditation and its long-term effects on the brain and consciousness, offering a non-pharmacological path to altering the mind.  
+* **[🤕🎼🧠 The Body Keeps the Score: Brain, Mind, and Body in the Healing of Trauma](./the-body-keeps-the-score-brain-mind-and-body-in-the-healing-of-trauma.md)** by Bessel van der Kolk. Focuses on the physiological impact of trauma and various therapeutic approaches, including somatic therapies, which can be seen as alternative or complementary methods for addressing mental health without psychedelics.  
+* **[🔬🧘🏼‍♀️🧠 Altered Traits: Science Reveals How Meditation Changes Your Mind, Brain, and Body](./altered-traits-science-reveals-how-meditation-changes-your-mind-brain-and-body.md)** by Daniel Goleman and Richard Davidson. Explores the science of meditation and its long-term effects on the brain and consciousness, offering a non-pharmacological path to altering the mind.  
   
 ### ✨ Creatively Related (Philosophy, Anthropology, Neuroscience, Psychology)  
   
 * 📖 ***The Anthropology of the Brain: Consciousness, Culture, and Free Will*** by Roger Bartra. Explores consciousness from an anthropological perspective, arguing that it's linked to external symbolic systems and culture, providing a broader context for understanding how substances might influence the mind within a cultural framework.  
 * 📖 ***Food of the Gods: A Radical History of Plants, Psychedelics, and Human Evolution*** by Terence McKenna. A highly speculative but influential work proposing that the consumption of psilocybin mushrooms played a significant role in the evolution of human consciousness and language ("the stoned ape theory").  
-* **[😀📜 The Happiness Hypothesis: Finding Modern Truth in Ancient Wisdom](/content/books/the-happiness-hypothesis-finding-modern-truth-in-ancient-wisdom.md)** by Jonathan Haidt. Blends ancient philosophical wisdom with modern psychological research on happiness, offering different frameworks for understanding well-being and the human mind.  
-* **[🌊🧘🧠📈 Flow: The Psychology of Optimal Experience](/content/books/flow-the-psychology-of-optimal-experience.md)** by Mihaly Csikszentmihalyi. Explores the state of "flow," a state of optimal consciousness characterized by absorption and enjoyment, which can be compared or contrasted with the altered states induced by psychedelics.  
+* **[😀📜 The Happiness Hypothesis: Finding Modern Truth in Ancient Wisdom](./the-happiness-hypothesis-finding-modern-truth-in-ancient-wisdom.md)** by Jonathan Haidt. Blends ancient philosophical wisdom with modern psychological research on happiness, offering different frameworks for understanding well-being and the human mind.  
+* **[🌊🧘🧠📈 Flow: The Psychology of Optimal Experience](./flow-the-psychology-of-optimal-experience.md)** by Mihaly Csikszentmihalyi. Explores the state of "flow," a state of optimal consciousness characterized by absorption and enjoyment, which can be compared or contrasted with the altered states induced by psychedelics.  
 * 📖 ***The Teachings of Don Juan: A Yaqui Way of Knowledge*** by Carlos Castaneda. A controversial but widely read work exploring shamanism and altered states of consciousness through hallucinogenic plants within a specific cultural context.  
 * 📖 ***Beyond Anxiety*** by Martha Beck. Offers a new approach to anxiety, viewing it as a potential doorway to creativity and higher consciousness, drawing on psychology and personal experience.  
 * 📖 ***An Unquiet Mind: A Memoir of Moods and Madness*** by Kay Redfield Jamison. A memoir by a clinical psychologist about her own experience with bipolar disorder, offering a personal account of navigating significant mood and consciousness alterations.  
-* **[🍄🌍🧠🔮 Entangled Life: How Fungi Make Our Worlds, Change Our Minds & Shape Our Futures](/content/books/entangled-life-how-fungi-make-our-worlds-change-our-minds-shape-our-futures.md)** by Merlin Sheldrake. While focused on fungi broadly, this book includes discussion of psilocybin-containing mushrooms and the profound impact fungi have on ecosystems and potentially on human consciousness, offering a biological and ecological perspective.  
+* **[🍄🌍🧠🔮 Entangled Life: How Fungi Make Our Worlds, Change Our Minds & Shape Our Futures](./entangled-life-how-fungi-make-our-worlds-change-our-minds-shape-our-futures.md)** by Merlin Sheldrake. While focused on fungi broadly, this book includes discussion of psilocybin-containing mushrooms and the profound impact fungi have on ecosystems and potentially on human consciousness, offering a biological and ecological perspective.  
   
-## 💬 [Gemini](/content/software/gemini.md) Prompt (gemini-2.5-flash-preview-04-17)  
+## 💬 [Gemini](../software/gemini.md) Prompt (gemini-2.5-flash-preview-04-17)  
 > Write a markdown-formatted (start headings at level H2) book report, followed by a plethora of additional similar, contrasting, and creatively related book recommendations on How to Change Your Mind: What the New Science of Psychedelics Teaches Us About Consciousness, Dying, Addiction, Depression, and Transcendence. Be thorough in content discussed but concise and economical with your language. Structure the report with section headings and bulleted lists to avoid long blocks of text.

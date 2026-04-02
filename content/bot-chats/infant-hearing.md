@@ -5,9 +5,9 @@ aliases:
 title: 👶👂 Infant Hearing
 URL: https://bagrounds.org/bot-chats/infant-hearing
 ---
-[Home](/content/index.md) > [Bot Chats](/content/bot-chats/index.md)  
+[Home](../index.md) > [Bot Chats](./index.md)  
 # 👶👂 Infant Hearing  
-## 💬 [Gemini](/content/software/gemini.md) Prompt 1  
+## 💬 [Gemini](../software/gemini.md) Prompt 1  
 > Tell me about infant hearing tests. What? Why? How? When?  
   
 👶👂 Infant hearing tests are a crucial part of newborn care, designed to identify potential hearing loss as early as possible. Here's a breakdown of the what, why, how, and when:  
@@ -159,7 +159,7 @@ While specific individual names of "experts" might fluctuate as research evolves
   
 **🌎📚 For Broader Understanding (Culture, History, and Identity):**  
   
-1. **[👁️🔇 Seeing Voices: A Journey into the World of the Deaf](/content/books/seeing-voices-a-journey-into-the-world-of-the-deaf.md) by Oliver Sacks:**  
+1. **[👁️🔇 Seeing Voices: A Journey into the World of the Deaf](../books/seeing-voices-a-journey-into-the-world-of-the-deaf.md) by Oliver Sacks:**  
     * ✅👂 **Why recommended:** A classic work by the renowned neurologist. Sacks explores the unique cognitive and cultural aspects of the Deaf world, particularly focusing on American Sign Language (ASL) and the development of Deaf culture. It's a fascinating and empathetic read.  
     * ℹ️📚 **Topics:** Sign language, Deaf culture, the neurological basis of language, and the experience of deafness.  
   

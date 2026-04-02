@@ -8,8 +8,11 @@ Author:
 tags:
 affiliate link: https://amzn.to/3INeYZQ
 CTA: 🗣️ Spread the word.
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_time: 2026-04-02T00:00:00Z
+force_analyze_links: false
 ---
-[Home](/content/index.md) > [Books](/content/books/index.md)  
+[Home](../index.md) > [Books](./index.md)  
 # 🦠 Contagious: Why Things Catch On  
 [🛒 Contagious: Why Things Catch On. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3INeYZQ)  
   
@@ -47,21 +50,21 @@ Berger proposes six key principles (STEPPS) that make things contagious:
 ## 📚 Further Reading: Exploring Virality, Influence, and Ideas  
   
 ### 🧐 Similar Books (Focus on Virality & Marketing Psychology)  
-* 🧠 **[Made to Stick: Why Some Ideas Survive and Others Die](/content/books/made-to-stick.md)** by Chip Heath & Dan Heath: Explores what makes ideas memorable and impactful, using the SUCCESs framework (Simple, Unexpected, Concrete, Credible, Emotional, Stories). Complements "Contagious" by focusing on the stickiness *within* an idea.  
-* **[🍃🧠🤝🏼 Influence: The Psychology of Persuasion](/content/books/influence.md)** by Robert Cialdini: A foundational text on the psychological principles (reciprocity, commitment/consistency, social proof, authority, liking, scarcity) that cause people to say "yes." Provides a broader understanding of the persuasion tactics often underlying contagious content.  
-* **[🎣📱 Hooked: How to Build Habit-Forming Products](/content/books/hooked-how-to-build-habit-forming-products.md)** by Nir Eyal: Focuses on creating products users return to repeatedly without conscious thought, using the "Hook Model" (Trigger, Action, Variable Reward, Investment). Relevant for making *behaviors* around a product contagious.  
+* 🧠 **[Made to Stick: Why Some Ideas Survive and Others Die](./made-to-stick.md)** by Chip Heath & Dan Heath: Explores what makes ideas memorable and impactful, using the SUCCESs framework (Simple, Unexpected, Concrete, Credible, Emotional, Stories). Complements "Contagious" by focusing on the stickiness *within* an idea.  
+* **[🍃🧠🤝🏼 Influence: The Psychology of Persuasion](./influence.md)** by Robert Cialdini: A foundational text on the psychological principles (reciprocity, commitment/consistency, social proof, authority, liking, scarcity) that cause people to say "yes." Provides a broader understanding of the persuasion tactics often underlying contagious content.  
+* **[🎣📱 Hooked: How to Build Habit-Forming Products](./hooked-how-to-build-habit-forming-products.md)** by Nir Eyal: Focuses on creating products users return to repeatedly without conscious thought, using the "Hook Model" (Trigger, Action, Variable Reward, Investment). Relevant for making *behaviors* around a product contagious.  
 * 🐮 **Purple Cow: Transform Your Business by Being Remarkable** by Seth Godin: Argues that in a cluttered marketplace, products need to be inherently remarkable (like a purple cow) to get noticed and talked about. Aligns with the "Social Currency" and "Emotion" aspects of STEPPS.  
   
 ### ⚖️ Contrasting Perspectives (Different Angles on Popularity/Success)  
-* 📍 **[⚖️👈 The Tipping Point: How Little Things Can Make a Big Difference](/content/books/the-tipping-point.md)** by Malcolm Gladwell: While also exploring epidemics of ideas, Gladwell emphasizes the role of specific types of people (Connectors, Mavens, Salesmen), the "Stickiness Factor," and the "Power of Context," offering a different framework than STEPPS. Berger specifically argues against the oversized importance often attributed to "influencers."  
+* 📍 **[⚖️👈 The Tipping Point: How Little Things Can Make a Big Difference](./the-tipping-point.md)** by Malcolm Gladwell: While also exploring epidemics of ideas, Gladwell emphasizes the role of specific types of people (Connectors, Mavens, Salesmen), the "Stickiness Factor," and the "Power of Context," offering a different framework than STEPPS. Berger specifically argues against the oversized importance often attributed to "influencers."  
 * 📈 **Hit Makers: The Science of Popularity in an Age of Distraction** by Derek Thompson: Argues that hits often blend familiarity with surprise ("MAYA - Most Advanced Yet Acceptable") and benefit significantly from distribution and network effects, sometimes more than inherent contagiousness.  
 * 🌐 **Diffusion of Innovations** by Everett M. Rogers: A classic academic work outlining how innovations spread through social systems over time, focusing on adopter categories (Innovators, Early Adopters, etc.) and the characteristics of innovations that influence adoption rates. Provides a more macro, sociological perspective.  
   
 ### 🎨 Creatively Related (Broader Themes: Idea Generation, Social Dynamics, Behavioral Economics)  
-* **[🤔🐇🐢 Thinking, Fast and Slow](/content/books/thinking-fast-and-slow.md)** by Daniel Kahneman: Explores the two systems driving human thought and decision-making, providing deep insights into the cognitive biases that influence sharing behavior and receptiveness to messages.  
-* **[🔄🧠💪 The Power of Habit: Why We Do What We Do in Life and Business](/content/books/the-power-of-habit.md)** by Charles Duhigg: Examines the science of habit formation, relevant to understanding how triggers work and how behaviors become ingrained and potentially spread.  
+* **[🤔🐇🐢 Thinking, Fast and Slow](./thinking-fast-and-slow.md)** by Daniel Kahneman: Explores the two systems driving human thought and decision-making, providing deep insights into the cognitive biases that influence sharing behavior and receptiveness to messages.  
+* **[🔄🧠💪 The Power of Habit: Why We Do What We Do in Life and Business](./the-power-of-habit.md)** by Charles Duhigg: Examines the science of habit formation, relevant to understanding how triggers work and how behaviors become ingrained and potentially spread.  
 * 💡 **Originals: How Non-Conformists Move the World** by Adam Grant: Discusses how to champion novel ideas, manage dissent, and foster creativity, offering insights into the *generation* of potentially contagious ideas.  
-* **[📜🌍⏳ Sapiens: A Brief History of Humankind](/content/books/sapiens-a-brief-history-of-humankind.md)** by Yuval Noah Harari: While broad, it touches on the power of shared myths and stories (similar to Berger's "Stories" principle) in enabling large-scale human cooperation and shaping societies.  
+* **[📜🌍⏳ Sapiens: A Brief History of Humankind](./sapiens-a-brief-history-of-humankind.md)** by Yuval Noah Harari: While broad, it touches on the power of shared myths and stories (similar to Berger's "Stories" principle) in enabling large-scale human cooperation and shaping societies.  
   
-## 💬 [Gemini](/content/software/gemini.md) Prompt (gemini-2.5-pro-exp-03-25)  
+## 💬 [Gemini](../software/gemini.md) Prompt (gemini-2.5-pro-exp-03-25)  
 > Write a markdown-formatted (start headings at level H2) book report, followed by a plethora of additional similar, contrasting, and creatively related book recommendations on Contagious Why Things Catch On. Be thorough in content discussed but concise and economical with your language. Structure the report with section headings and bulleted lists to avoid long blocks of text..

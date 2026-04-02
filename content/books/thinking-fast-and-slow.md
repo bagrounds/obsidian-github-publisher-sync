@@ -13,7 +13,7 @@ force_analyze_links: false
 link_analysis_time: 2026-03-22T23:32:05.309Z
 link_analysis_model: gemini-3.1-flash-lite-preview
 ---
-[Home](/content/index.md) > [Books](/content/books/index.md)  
+[Home](../index.md) > [Books](./index.md)  
 # 🤔🐇🐢 Thinking, Fast and Slow  
 [🛒 Thinking, Fast and Slow. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4jQ0Tax)  
   
@@ -89,11 +89,11 @@ link_analysis_model: gemini-3.1-flash-lite-preview
   
 ### Book Recommendations 📚  
 - 🔄 **Alternate on the Same Topic:**  
-  - **[🔮🤷🏼‍♀️🤪 Predictably Irrational: The Hidden Forces That Shape Our Decisions](/content/books/predictably-irrational.md)** by Dan Ariely  
+  - **[🔮🤷🏼‍♀️🤪 Predictably Irrational: The Hidden Forces That Shape Our Decisions](./predictably-irrational.md)** by Dan Ariely  
     * 🧠 Explores similar themes of human irrationality with 🧑‍🔬 engaging experiments and 🌎 real-world applications.  
   
 - ➕ **Tangentially Related:**  
-  - [⚡🚫💭 Blink: The Power of Thinking Without Thinking](/content/books/blink-the-power-of-thinking-without-thinking.md) by Malcolm Gladwell  
+  - [⚡🚫💭 Blink: The Power of Thinking Without Thinking](./blink-the-power-of-thinking-without-thinking.md) by Malcolm Gladwell  
     * 🎯 Focuses on the strengths and ⚠️ pitfalls of our rapid, intuitive judgments, 🤝 complementing Kahneman’s insights.  
   
 - ⚔️ **Diametrically Opposed:**  
@@ -101,7 +101,7 @@ link_analysis_model: gemini-3.1-flash-lite-preview
     * 🚀 Presents a counter-narrative emphasizing how 🧑‍🤝‍🧑 human progress and 💰 market forces often reflect ✅ rational behavior, 🤔 challenging the focus on bias.  
   
 - 📖 **Fiction Incorporating Related Ideas:**  
-  - **[🔁🤪 Catch-22](/content/books/catch-22.md)** by Joseph Heller  
+  - **[🔁🤪 Catch-22](./catch-22.md)** by Joseph Heller  
     * 🎭 A satirical novel that encapsulates the absurdity of human logic and the pervasiveness of irrational decision-making in a bureaucratic setting. 🏢 😵‍💫  
   
 ### Final Thoughts 🤔  

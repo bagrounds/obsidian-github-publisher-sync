@@ -10,7 +10,7 @@ Channel: The Atlantic
 tags:
 youtube: https://youtu.be/eyY05fD9dk4
 ---
-[Home](/content/index.md) > [Videos](/content/videos/index.md)  
+[Home](../index.md) > [Videos](./index.md)  
 # 🏛️🤕❓ Architect of Obamacare: Health Care Is Still a Mess | The David Frum Show  
 ![Architect of Obamacare: Health Care Is Still a Mess | The David Frum Show](https://youtu.be/eyY05fD9dk4)  
   
@@ -52,16 +52,16 @@ youtube: https://youtu.be/eyY05fD9dk4
   
 ### ↔️ Similar  
   
-* [⚖️⬆️🤝 The Spirit Level: Why Greater Equality Makes Societies Stronger](/content/books/the-spirit-level-why-greater-equality-makes-societies-stronger.md) supports the video's core point about disparities, demonstrating how income inequality correlates with poorer health outcomes and social problems across wealthy nations.  
-* [💰🤫 Dark Money: The Hidden History of the Billionaires Behind the Rise of the Radical Right](/content/books/dark-money-the-hidden-history-of-the-billionaires-behind-the-rise-of-the-radical-right.md) details the organized political efforts and funding mechanisms behind campaigns to dismantle regulations and government programs like the ACA, relating directly to the political opposition and misinformation discussed in the video.  
-* [💰⚕️⬆️ An American Sickness: How Healthcare Became Big Business and How You Can Take It Back](/content/books/an-american-sickness-how-healthcare-became-big-business-and-how-you-can-take-it-back.md) explores the specific economic drivers of high US healthcare costs, focusing on specialists, hospitals, and the lack of price transparency, reinforcing the video's analysis of a broken market.  
+* [⚖️⬆️🤝 The Spirit Level: Why Greater Equality Makes Societies Stronger](../books/the-spirit-level-why-greater-equality-makes-societies-stronger.md) supports the video's core point about disparities, demonstrating how income inequality correlates with poorer health outcomes and social problems across wealthy nations.  
+* [💰🤫 Dark Money: The Hidden History of the Billionaires Behind the Rise of the Radical Right](../books/dark-money-the-hidden-history-of-the-billionaires-behind-the-rise-of-the-radical-right.md) details the organized political efforts and funding mechanisms behind campaigns to dismantle regulations and government programs like the ACA, relating directly to the political opposition and misinformation discussed in the video.  
+* [💰⚕️⬆️ An American Sickness: How Healthcare Became Big Business and How You Can Take It Back](../books/an-american-sickness-how-healthcare-became-big-business-and-how-you-can-take-it-back.md) explores the specific economic drivers of high US healthcare costs, focusing on specialists, hospitals, and the lack of price transparency, reinforcing the video's analysis of a broken market.  
   
 ### 🆚 Contrasting  
   
 * ⚖️ The Cost-Conscious Consumer: How to Get the Best Care for the Least Money contrasts with the video's perspective that consumer skin in the game is only minimally effective, arguing that patients **can** be effective shoppers and manage costs in the existing US system with the right strategies.  
-* [⚕️💰🇺🇸 The Healing of America: A Global Quest for Better, Cheaper, and Fairer Health Care](/content/books/the-healing-of-america-a-global-quest-for-better-cheaper-and-fairer-health-care.md) contrasts by offering a detailed, comparative look at how other nations implement universal healthcare systems, providing specific models of price regulation and coverage that are only generally alluded to in the video.  
+* [⚕️💰🇺🇸 The Healing of America: A Global Quest for Better, Cheaper, and Fairer Health Care](../books/the-healing-of-america-a-global-quest-for-better-cheaper-and-fairer-health-care.md) contrasts by offering a detailed, comparative look at how other nations implement universal healthcare systems, providing specific models of price regulation and coverage that are only generally alluded to in the video.  
   
 ### 🎨 Creatively Related  
   
-* [💀👨‍🏫 The Death of Expertise: The Campaign Against Established Knowledge and Why It Matters](/content/books/the-death-of-expertise-the-campaign-against-established-knowledge-and-why-it-matters.md) tangentially relates by examining the social and cultural environment in which misinformation and the rejection of scientific consensus (like the anti-vaccine movement discussed) thrive, linking it to the broader devaluation of expert knowledge.  
-* 🏛️ [⚠️🥴🕹️🌐 The Fifth Risk](/content/books/the-fifth-risk.md) discusses the complexity and critical functions of overlooked government agencies and the political risks associated with failing to staff them with competent, committed individuals, connecting tangentially to the themes of government competence and the consequences of scandal-driven governance.
+* [💀👨‍🏫 The Death of Expertise: The Campaign Against Established Knowledge and Why It Matters](../books/the-death-of-expertise-the-campaign-against-established-knowledge-and-why-it-matters.md) tangentially relates by examining the social and cultural environment in which misinformation and the rejection of scientific consensus (like the anti-vaccine movement discussed) thrive, linking it to the broader devaluation of expert knowledge.  
+* 🏛️ [⚠️🥴🕹️🌐 The Fifth Risk](../books/the-fifth-risk.md) discusses the complexity and critical functions of overlooked government agencies and the political risks associated with failing to staff them with competent, committed individuals, connecting tangentially to the themes of government competence and the consequences of scandal-driven governance.

@@ -7,7 +7,7 @@ share: true
 affiliate link: https://amzn.to/4gGFu3m
 CTA: ⚖️ Judge character.
 ---
-[Home](/content/index.md) > [Books](/content/books/index.md)  
+[Home](../index.md) > [Books](./index.md)  
 # ⬆️🤥🏛️ A Higher Loyalty: Truth, Lies, and Leadership  
 [🛒 A Higher Loyalty: Truth, Lies, and Leadership. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4gGFu3m)  
   
@@ -34,9 +34,9 @@ CTA: ⚖️ Judge character.
   
 These books offer insider perspectives on recent American politics, particularly focusing on the Trump administration, or explore themes of leadership and ethics in public service.  
   
-* **[😱🤡🇺🇸 Fear: Trump in the White House](/content/books/fear.md)** by Bob Woodward  
+* **[😱🤡🇺🇸 Fear: Trump in the White House](./fear.md)** by Bob Woodward  
     This book provides another detailed, journalistic account of the Trump administration's inner workings, based on hundreds of hours of interviews. 📰 It shares the characteristic of being an insider's view, aiming to reveal the truth about leadership and governance during a tumultuous period.  
-* **[🔥💣💥😡🤬 Fire and Fury: Inside the Trump White House](/content/books/fire-and-fury-inside-the-trump-white-house.md)** by Michael Wolff  
+* **[🔥💣💥😡🤬 Fire and Fury: Inside the Trump White House](./fire-and-fury-inside-the-trump-white-house.md)** by Michael Wolff  
     Similar to Comey's memoir, Wolff's book offers an often-scathing portrayal of the early Trump presidency, drawing on extensive access to the White House. 🌪️ It delves into the personalities and dynamics at play, reflecting a chaotic atmosphere that parallels some of Comey's observations.  
 * 🏛️ **The FBI Way: Inside the Bureau's Code of Excellence** by Frank Figliuzzi  
     This book provides a contrasting, yet similar, perspective on the values and ethical standards of the FBI. 🌟 Written by a former assistant director, it outlines the core principles of the Bureau, offering a blueprint for integrity and leadership that aligns with many of the ideals Comey espouses.  
@@ -47,7 +47,7 @@ These recommendations offer different viewpoints on American politics, ethical d
   
 * ⛰️ **Hillbilly Elegy: A Memoir of a Family and Culture in Crisis** by J D Vance  
     While not directly about political leadership, this memoir offers a personal window into the struggles of the white working class in rural America, a demographic that heavily influenced the 2016 election. 🏘️ It provides a grassroots perspective on the cultural and economic anxieties that fueled political shifts, which implicitly contrasts with Comey's focus on institutional elite ethics.  
-* **[😇🧠 The Righteous Mind: Why Good People Are Divided by Politics and Religion](/content/books/the-righteous-mind.md)** by Jonathan Haidt  
+* **[😇🧠 The Righteous Mind: Why Good People Are Divided by Politics and Religion](./the-righteous-mind.md)** by Jonathan Haidt  
     This work of moral psychology explores the evolutionary basis of moral judgments and how they divide people along political and religious lines. 🤔 It offers a framework for understanding differing ethical perspectives, which can help readers analyze the moral and political disagreements highlighted in Comey's book from a broader sociological standpoint.  
   
 ### 📖 Creatively Related Books  

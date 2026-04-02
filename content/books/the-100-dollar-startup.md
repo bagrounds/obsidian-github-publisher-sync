@@ -7,8 +7,11 @@ URL: https://bagrounds.org/books/the-100-dollar-startup
 Author:
 tags:
 affiliate link: https://amzn.to/3Ht9v9p
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_time: 2026-04-01T00:00:00Z
+force_analyze_links: false
 ---
-[Home](/content/index.md) > [Books](/content/books/index.md)  
+[Home](../index.md) > [Books](./index.md)  
 # 🪙💯🚀 The $100 Startup: Reinvent the Way You Make a Living, Do What You Love, and Create a New Future  
 [🛒 The $100 Startup: Reinvent the Way You Make a Living, Do What You Love, and Create a New Future. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3Ht9v9p)  
   
@@ -65,13 +68,13 @@ affiliate link: https://amzn.to/3Ht9v9p
 #### **Book Recommendations:** 📚  
 * **Best alternate book on the same topic:** *Vagabonding: An Uncommon Guide to the Art of Long-Term World Travel* by Rolf Potts. While focused on travel, it shares a similar ethos of unconventional living and entrepreneurship. 🗺️  
 * **Best book that is tangentially related:** *The 4-Hour Workweek* by Timothy Ferriss. This book explores lifestyle design and creating a business that supports your desired lifestyle. ⏳  
-* **Best book that is diametrically opposed:** *[Zero to One](/content/books/zero-to-one.md): Notes on Startups, or How to Build the Future* by Peter Thiel. This book focuses on building innovative, scalable tech companies with significant venture capital, a sharp contrast to the micro-business approach. 🤖  
+* **Best book that is diametrically opposed:** *[Zero to One](./zero-to-one.md): Notes on Startups, or How to Build the Future* by Peter Thiel. This book focuses on building innovative, scalable tech companies with significant venture capital, a sharp contrast to the micro-business approach. 🤖  
 * **Best fiction book that incorporates related ideas:** *Atlas Shrugged* by Ayn Rand. While controversial, it explores themes of entrepreneurship, innovation, and the power of individual initiative. 🏭  
 * **Best book that is more general or more specific:**  
     * **More General:** *The Personal MBA: Master the Art of Business* by Josh Kaufman. A comprehensive overview of essential business concepts. 🎓  
     * **More Specific:** *Will It Fly?: How to Test Your Next Business Idea So You Don't Waste Your Time and Money* by Pat Flynn. ✈️  
 * **Best book that is more rigorous or more accessible:**  
-    * **More Rigorous:** *[The Lean Startup](/content/books/the-lean-startup.md)* by Eric Ries. A data-driven approach to building and scaling businesses. 📊  
+    * **More Rigorous:** *[The Lean Startup](./the-lean-startup.md)* by Eric Ries. A data-driven approach to building and scaling businesses. 📊  
     * **More Accessible:** *Side Hustle: From Idea to Income in 27 Days* by Chris Guillebeau (also). A simplified, actionable guide to launching a side business. 🗓️  
   
 ## 💬 [Gemini](https://gemini.google.com) Prompt  

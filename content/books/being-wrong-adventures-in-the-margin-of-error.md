@@ -7,7 +7,7 @@ share: true
 affiliate link: https://amzn.to/3VwOyhF
 CTA: 🧐 Question everything.
 ---
-[Home](/content/index.md) > [Books](/content/books/index.md)  
+[Home](../index.md) > [Books](./index.md)  
 # ❌ Being Wrong: Adventures in the Margin of Error  
 [🛒 Being Wrong: Adventures in the Margin of Error. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3VwOyhF)  
   
@@ -37,8 +37,8 @@ CTA: 🧐 Question everything.
 📖 These books delve into the intricacies of human cognition, decision-making, and the psychological roots of our biases and errors.  
   
 * 😬 **Mistakes Were Made (But Not by Me) by Carol Tavris and Elliot Aronson:** This book explores how cognitive dissonance drives self-justification, explaining why people cling to false beliefs and justify their actions, even when faced with contradictory evidence. 💯 It deeply resonates with Schulz's themes about our resistance to acknowledging error.  
-* **[🤔🐇🐢 Thinking, Fast and Slow](/content/books/thinking-fast-and-slow.md) by Daniel Kahneman:** A seminal work on cognitive psychology that distinguishes between two systems of thought – fast, intuitive thinking and slow, deliberative thinking. 🚦 Kahneman meticulously details various cognitive biases and heuristics that lead to systematic errors in judgment.  
-* **[🔮🤷🏼‍♀️🤪 Predictably Irrational: The Hidden Forces That Shape Our Decisions](/content/books/predictably-irrational.md) by Dan Ariely:** Ariely examines the hidden forces that shape our decisions, demonstrating how irrationality is a predictable and systematic part of human behavior. 🤝 This book complements Schulz's exploration of why we err in consistent ways.  
+* **[🤔🐇🐢 Thinking, Fast and Slow](./thinking-fast-and-slow.md) by Daniel Kahneman:** A seminal work on cognitive psychology that distinguishes between two systems of thought – fast, intuitive thinking and slow, deliberative thinking. 🚦 Kahneman meticulously details various cognitive biases and heuristics that lead to systematic errors in judgment.  
+* **[🔮🤷🏼‍♀️🤪 Predictably Irrational: The Hidden Forces That Shape Our Decisions](./predictably-irrational.md) by Dan Ariely:** Ariely examines the hidden forces that shape our decisions, demonstrating how irrationality is a predictable and systematic part of human behavior. 🤝 This book complements Schulz's exploration of why we err in consistent ways.  
 * 🤯 **Why We Make Mistakes by Joseph T. Hallinan:** This book focuses on the myriad ways our brains are wired to make mistakes, from simple slips to critical errors, offering an engaging look at the science behind our blunders.  
 * 🙈 **The Invisible Gorilla by Christopher Chabris and Daniel Simons:** Drawing from psychological experiments, this book reveals the "invisible gorillas" in our lives – cognitive illusions that lead us to miss obvious information and misunderstand how our minds work.  
   
@@ -47,14 +47,14 @@ CTA: 🧐 Question everything.
 ⚖️ While Being Wrong embraces the value of error, these books, in various ways, focus on the pursuit of accuracy, the dangers of misinformation, or methods to improve critical thinking and avoid common pitfalls.  
   
 * 📖 **How to Read a Book by Mortimer J. Adler and Charles Van Doren:** A classic guide to intelligent and active reading, emphasizing critical engagement with texts to achieve a deeper understanding and discern truth. 💪 It implicitly advocates for rigorous intellectual discipline to minimize errors in comprehension and judgment.  
-* **[😈🌍🔬🕯️🌑 The Demon-Haunted World: Science as a Candle in the Dark](/content/books/the-demon-haunted-world.md) by Carl Sagan:** Sagan champions scientific skepticism, critical thinking, and the scientific method as tools to combat pseudoscience, superstition, and flawed reasoning. 🔎 It offers a powerful argument for striving for factual accuracy and evidence-based understanding.  
-* **[💀👨‍🏫 The Death of Expertise: The Campaign Against Established Knowledge and Why It Matters](/content/books/the-death-of-expertise-the-campaign-against-established-knowledge-and-why-it-matters.md) by Tom Nichols:** This book critiques the contemporary devaluation of knowledge and experts, arguing that a widespread disregard for factual accuracy and informed opinion leads to a society prone to misinformation and incorrect beliefs.  
+* **[😈🌍🔬🕯️🌑 The Demon-Haunted World: Science as a Candle in the Dark](./the-demon-haunted-world.md) by Carl Sagan:** Sagan champions scientific skepticism, critical thinking, and the scientific method as tools to combat pseudoscience, superstition, and flawed reasoning. 🔎 It offers a powerful argument for striving for factual accuracy and evidence-based understanding.  
+* **[💀👨‍🏫 The Death of Expertise: The Campaign Against Established Knowledge and Why It Matters](./the-death-of-expertise-the-campaign-against-established-knowledge-and-why-it-matters.md) by Tom Nichols:** This book critiques the contemporary devaluation of knowledge and experts, arguing that a widespread disregard for factual accuracy and informed opinion leads to a society prone to misinformation and incorrect beliefs.  
   
 ### 💡 Creatively Related Books  
   
 ✨ These recommendations branch out to related concepts, exploring how we cope with uncertainty, learn from experience, or construct our understanding of reality.  
   
-* **[📡🌫️🔮🎲 The Signal and the Noise: Why So Many Predictions Fail - but Some Don't](/content/books/the-signal-and-the-noise.md) by Nate Silver:** While focusing on forecasting, Silver's work examines how to distinguish valuable information (signal) from irrelevant data (noise) and how to improve predictions by understanding the nature of uncertainty and learning from past mistakes in data analysis and probability.  
+* **[📡🌫️🔮🎲 The Signal and the Noise: Why So Many Predictions Fail - but Some Don't](./the-signal-and-the-noise.md) by Nate Silver:** While focusing on forecasting, Silver's work examines how to distinguish valuable information (signal) from irrelevant data (noise) and how to improve predictions by understanding the nature of uncertainty and learning from past mistakes in data analysis and probability.  
 * 🧠 **Psych: The Story of the Human Mind by Paul Bloom:** This comprehensive overview of psychology offers deeper insights into the mechanisms of the mind that contribute to both accurate perceptions and decisions, and the systematic ways we can be led astray. 🔬 It provides a broader scientific context for understanding the human brain's role in error.  
 * 🧘 **Meditation for Fidgety Skeptics: A 10% Happier How-To Book by Dan Harris and Jeff Warren:** This book, while about meditation, touches on self-awareness and managing internal states like anxiety and judgment. 😌 It relates to Schulz's themes by offering strategies for navigating the discomfort of uncertainty and emotional reactions often associated with confronting one's own perceived "wrongness".  
 * 💀 **The Denial of Death by Ernest Becker:** Awarded a Pulitzer Prize, Becker's work explores humanity's fundamental fear of mortality and how we construct meaning and "immortality projects" to cope. 🤔 This can be creatively related to Schulz's discussion of how deeply intertwined our beliefs are with our identities and how challenging those beliefs can feel like an existential threat, akin to our deep-seated need for certainty in the face of impermanence.".  

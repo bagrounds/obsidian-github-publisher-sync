@@ -9,7 +9,7 @@ Platform:
 Channel: PBS NewsHour
 tags:
 ---
-[Home](/content/index.md) > [Videos](/content/videos/index.md)  
+[Home](../index.md) > [Videos](./index.md)  
 # 👹🪖🇺🇸🚧✊🏾 Troops deployed in LA as immigration raids stir fear and protests  
 ![Troops deployed in LA as immigration raids stir fear and protests](https://youtu.be/qnE_xe_bC8g)  
   

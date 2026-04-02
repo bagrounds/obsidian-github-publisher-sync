@@ -7,7 +7,7 @@ share: true
 CTA: 💰 Defy exploitation.
 affiliate link: https://amzn.to/45qLk4s
 ---
-[Home](/content/index.md) > [Books](/content/books/index.md)  
+[Home](../index.md) > [Books](./index.md)  
 # ⚔️💰 War Is a Racket  
 [🛒 War Is a Racket. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/45qLk4s)  
   
@@ -75,7 +75,7 @@ affiliate link: https://amzn.to/45qLk4s
   
 ### ⚔️ Contrasting  
 * 📚 On War by Carl von Clausewitz  
-* [🎨⚔️ The Art of War](/content/books/the-art-of-war.md) by Sun Tzu  
+* [🎨⚔️ The Art of War](./the-art-of-war.md) by Sun Tzu  
   
 ### 🔗 Related  
 * 📜 Dulles: A Biography of Eleanor, Allen, and John Foster Dulles and Their Family's Rise to American Power by Stephen Kinzer  

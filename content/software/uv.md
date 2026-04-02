@@ -5,7 +5,7 @@ aliases:
 title: 🐍🏎️📦 uv
 URL: https://bagrounds.org/software/uv
 ---
-[Home](/content/index.md) > [Software](/content/software/index.md)  
+[Home](../index.md) > [Software](./index.md)  
 # [🐍🏎️📦 uv](https://docs.astral.sh/uv)  
   
 ## 🤖 AI Summary  
@@ -265,8 +265,8 @@ Because they met **uv** and suddenly, all their dependencies were resolved so mu
   
 #### 🌍 More General (Software Engineering):  
   
-* **[🧑‍💻📈 The Pragmatic Programmer: Your Journey to Mastery](/content/books/the-pragmatic-programmer-your-journey-to-mastery.md) by Andrew Hunt and David Thomas:** General software development wisdom, including managing dependencies and tooling effectively.  
-* **[🏎️💾 Accelerate: The Science of Lean Software and DevOps: Building and Scaling High Performing Technology Organizations](/content/books/accelerate.md): by Nicole Forsgren, Jez Humble, and Gene Kim:** Discusses how to build and scale high-performing technology organizations, where efficient tooling (like `uv`) plays a role in reducing lead times.  
+* **[🧑‍💻📈 The Pragmatic Programmer: Your Journey to Mastery](../books/the-pragmatic-programmer-your-journey-to-mastery.md) by Andrew Hunt and David Thomas:** General software development wisdom, including managing dependencies and tooling effectively.  
+* **[🏎️💾 Accelerate: The Science of Lean Software and DevOps: Building and Scaling High Performing Technology Organizations](../books/accelerate.md): by Nicole Forsgren, Jez Humble, and Gene Kim:** Discusses how to build and scale high-performing technology organizations, where efficient tooling (like `uv`) plays a role in reducing lead times.  
   
 #### 🔬 More Specific (Deep Dive into Resolvers - Highly Academic):  
   
@@ -274,7 +274,7 @@ Because they met **uv** and suddenly, all their dependencies were resolved so mu
   
 #### 📚 Fictional (For a bit of fun 😄):  
   
-* **[🐦‍🔥💻 The Phoenix Project](/content/books/the-phoenix-project.md) by Gene Kim, Kevin Behr, and George Spafford:** A novel about DevOps and improving IT workflows; you can imagine the characters struggling with slow builds before discovering a tool like `uv`.  
+* **[🐦‍🔥💻 The Phoenix Project](../books/the-phoenix-project.md) by Gene Kim, Kevin Behr, and George Spafford:** A novel about DevOps and improving IT workflows; you can imagine the characters struggling with slow builds before discovering a tool like `uv`.  
   
 #### 💪 Rigorous (Standards & Specifications):  
   

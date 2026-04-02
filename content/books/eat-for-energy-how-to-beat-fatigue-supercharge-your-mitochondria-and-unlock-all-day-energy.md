@@ -6,7 +6,7 @@ URL: https://bagrounds.org/books/eat-for-energy-how-to-beat-fatigue-supercharge-
 share: true
 affiliate link: https://amzn.to/3HkgWQ4
 ---
-[Home](/content/index.md) > [Books](/content/books/index.md)  
+[Home](../index.md) > [Books](./index.md)  
 # 🍎⚡ Eat for Energy: How to Beat Fatigue, Supercharge Your Mitochondria, and Unlock All-Day Energy  
 [🛒 Eat for Energy: How to Beat Fatigue, Supercharge Your Mitochondria, and Unlock All-Day Energy. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3HkgWQ4)  
   
@@ -57,7 +57,7 @@ affiliate link: https://amzn.to/3HkgWQ4
   
 ### ➕ Similar Books (Focus on Energy/Mitochondria/Nutrition)  
   
-* **[🔋⚕️⏳ Mitochondria and the Future of Medicine: The Key to Understanding Disease, Chronic Illness, Aging, and Life Itself](/content/books/mitochondria-and-the-future-of-medicine-the-key-to-understanding-disease-chronic-illness-aging-and-life-itself.md)** by Lee Know: Explores the crucial role of mitochondria in health, disease, and aging.  
+* **[🔋⚕️⏳ Mitochondria and the Future of Medicine: The Key to Understanding Disease, Chronic Illness, Aging, and Life Itself](./mitochondria-and-the-future-of-medicine-the-key-to-understanding-disease-chronic-illness-aging-and-life-itself.md)** by Lee Know: Explores the crucial role of mitochondria in health, disease, and aging.  
 * 👨‍⚕️ **Mitochondrial Dysfunction: A Functional Medicine Approach** by Michael T. Chang: Focuses on diagnosing and treating mitochondrial issues to alleviate fatigue, fat gain, and brain fog using a functional medicine lens.  
 * 🤕 **Diagnosis and Treatment of Chronic Fatigue Syndrome and Myalgic Encephalitis: It's Mitochondria, Not Hypochondria** by Dr. Sarah Myhill: Argues that mitochondrial malfunction is central to CFS/ME and outlines recovery programs.  
 * 🧠 **Head Strong** by Dave Asprey: Focuses on boosting brain energy by optimizing mitochondrial function, using "Bulletproof" diet principles and biohacking techniques.  
@@ -66,19 +66,19 @@ affiliate link: https://amzn.to/3HkgWQ4
 ### ➖ Contrasting Books (Alternative Perspectives on Fatigue/Health)  
   
 * 🧠 **The Psychology of Fatigue** by Robert Hockey: Views fatigue not just as energy failure, but as affecting goal selection and motivation, exploring its psychological and adaptive roles.  
-* **[😴💭 Why We Sleep: Unlocking the Power of Sleep and Dreams](/content/books/why-we-sleep-unlocking-the-power-of-sleep-and-dreams.md)** by Matthew Walker: While aligning on the importance of sleep, this book delves deeper specifically into the science of sleep and dreams and their profound impact on every aspect of health, including energy.  
+* **[😴💭 Why We Sleep: Unlocking the Power of Sleep and Dreams](./why-we-sleep-unlocking-the-power-of-sleep-and-dreams.md)** by Matthew Walker: While aligning on the importance of sleep, this book delves deeper specifically into the science of sleep and dreams and their profound impact on every aspect of health, including energy.  
 * 🥦 **Eat to Live** by Joel Fuhrman, M.D.: Focuses on a high-nutrient, plant-rich diet primarily for weight loss and disease reversal, contrasting with Whitten's specific mitochondrial-centric nutritional strategies, although sharing the whole-foods principle.  
 * 💪 **From Fatigued to Fantastic!** by Jacob Teitelbaum, M.D.: A well-known book offering a broader, often more conventional medical and supplemental approach to diagnosing and treating chronic fatigue and fibromyalgia.  
   
 ### ✨ Creatively Related Books (Broader Health/Biohacking/Lifestyle)  
   
-* **[🌄⏳ The Circadian Code: Lose Weight, Supercharge Your Energy, and Transform Your Health from Morning to Midnight](/content/books/the-circadian-code.md)** by Satchin Panda, PhD: Deep dives into the science of circadian rhythms and how aligning daily schedules (eating, sleeping, light exposure) can optimize health, energy, and weight.  
+* **[🌄⏳ The Circadian Code: Lose Weight, Supercharge Your Energy, and Transform Your Health from Morning to Midnight](./the-circadian-code.md)** by Satchin Panda, PhD: Deep dives into the science of circadian rhythms and how aligning daily schedules (eating, sleeping, light exposure) can optimize health, energy, and weight.  
 * 🚀 **Boundless** by Ben Greenfield: A comprehensive biohacking guide covering a vast range of topics including brain optimization, body performance, anti-aging, sleep, nutrition, and more.  
 * 💡 **The Ultimate Guide To Red Light Therapy** by Ari Whitten: Another book by Whitten focusing on a specific biohacking modality (light therapy) relevant to cellular health and energy.  
 * 🛠️ **Biohacking for Life** by Tony Wrighton: An accessible guide to biohacking for optimizing sleep, energy, and overall wellness using science-backed techniques.  
 * ⏰ **Change Your Schedule, Change Your Life** by Suhas Kshirsagar: Blends Ayurvedic principles with modern science to align lifestyle with natural body rhythms for better health and energy.  
-* **[⏰👤 The Inner Clock: Living in Sync with Our Circadian Rhythms](/content/books/the-inner-clock-living-in-sync-with-our-circadian-rhythms.md)** by Lynne Peeples: Explores the science of circadian rhythms and how modern life disrupts them, offering insights into resetting internal clocks for better health.  
+* **[⏰👤 The Inner Clock: Living in Sync with Our Circadian Rhythms](./the-inner-clock-living-in-sync-with-our-circadian-rhythms.md)** by Lynne Peeples: Explores the science of circadian rhythms and how modern life disrupts them, offering insights into resetting internal clocks for better health.  
 * 🧬 **Biohacker's Handbook** by Olli Sovijärvi, et al.: A detailed guide covering various biohacking domains like sleep, nutrition, exercise, work, and mind.  
   
-## 💬 [Gemini](/content/software/gemini.md) Prompt (gemini-2.5-pro-exp-03-25)  
+## 💬 [Gemini](../software/gemini.md) Prompt (gemini-2.5-pro-exp-03-25)  
 > Write a markdown-formatted (start headings at level H2) book report, followed by a plethora of additional similar, contrasting, and creatively related book recommendations on Eat for Energy: How to Beat Fatigue, Supercharge Your Mitochondria, and Unlock All-Day Energy. Be thorough in content discussed but concise and economical with your language. Structure the report with section headings and bulleted lists to avoid long blocks of text.

@@ -8,7 +8,7 @@ Author:
 tags:
 affiliate link: https://amzn.to/3ZcZzac
 ---
-[Home](/content/index.md) > [Books](/content/books/index.md)  
+[Home](../index.md) > [Books](./index.md)  
 # 🧠🔄💡🌱✨ Soft Wired: How the New Science of Brain Plasticity Can Change Your Life  
 [🛒 Soft Wired: How the New Science of Brain Plasticity Can Change Your Life. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3ZcZzac)  
   
@@ -60,14 +60,14 @@ This book offers a surprisingly optimistic and empowering perspective on brain f
 Dr. Michael Merzenich is a highly respected neuroscientist with decades of research experience in brain plasticity. His work is supported by numerous scientific studies and clinical trials, lending credibility to his claims. 🔬 The book is well-written and accessible to a general audience, while still providing detailed explanations of complex scientific concepts. 📚 Reviews from scientific journals and publications confirm the significance of his work. 📝 The advice is practical and grounded in scientific evidence, making it a valuable resource for anyone interested in improving their cognitive function. 👍  
   
 ### 📚 Additional Book Recommendations  
-* **Best Alternate Book on the Same Topic:** "[The Brain That Changes Itself](/content/books/the-brain-that-changes-itself.md)" by Norman Doidge. 🧠🔄 (More case studies, similar theme)  
-* **Best Tangentially Related Book:** "[Thinking, Fast and Slow](/content/books/thinking-fast-and-slow.md)" by Daniel Kahneman. 🧠💭 (Cognitive biases and decision-making)  
+* **Best Alternate Book on the Same Topic:** "[The Brain That Changes Itself](./the-brain-that-changes-itself.md)" by Norman Doidge. 🧠🔄 (More case studies, similar theme)  
+* **Best Tangentially Related Book:** "[Thinking, Fast and Slow](./thinking-fast-and-slow.md)" by Daniel Kahneman. 🧠💭 (Cognitive biases and decision-making)  
 * **Best Diametrically Opposed Book:** "The Myth of Aging: Instantly Create a Younger Body and Mind" by Christiane Northrup. 👵➡️👶 (While it also discusses aging, it relies on more general wellness concepts rather than specific neuroplasticity research.)  
 * **Best Fiction Book That Incorporates Related Ideas:** Flowers for Algernon by Daniel Keyes. 🐭➡️🧠 (Explores the ethical implications of cognitive enhancement)  
-* **Best More General Book:** "[Incognito: The Secret Lives of the Brain](/content/books/incognito.md)" by David Eagleman. 🧠🕵️ (Broader overview of brain function)  
+* **Best More General Book:** "[Incognito: The Secret Lives of the Brain](./incognito.md)" by David Eagleman. 🧠🕵️ (Broader overview of brain function)  
 * **Best More Specific Book:** "Train Your Mind, Change Your Brain: How a New Science Reveals Our Extraordinary Potential to Transform Ourselves" by Sharon Begley. 🧠🧘 (Focuses on the impact of mindfulness and meditation on brain plasticity)  
 * **Best More Rigorous Book:** "Principles of Neural Science" by Eric R. Kandel, James H. Schwartz, and Thomas M. Jessell. 🧠🔬 (Comprehensive textbook on neuroscience)  
-* **Best More Accessible Book:** "[Spark: The Revolutionary New Science of Exercise and the Brain](/content/books/spark-the-revolutionary-new-science-of-exercise-and-the-brain.md)" by John J. Ratey MD. 🏃🧠 (Focuses on the effects of exercise on brain health.)  
+* **Best More Accessible Book:** "[Spark: The Revolutionary New Science of Exercise and the Brain](./spark-the-revolutionary-new-science-of-exercise-and-the-brain.md)" by John J. Ratey MD. 🏃🧠 (Focuses on the effects of exercise on brain health.)  
   
 ## 💬 [Gemini](https://gemini.google.com) Prompt  
 > Summarize the book: Soft Wired: How the New Science of Brain Plasticity Can Change Your Life. Start with a TL;DR - a single statement that conveys a maximum of the useful information provided in the book. Next, explain how this book may offer a new or surprising perspective. Follow this with a deep dive. Catalogue the topics, methods, and research discussed. Be sure to highlight any significant theories, theses, or mental models proposed. Summarize prominent examples discussed. Emphasize practical takeaways, including detailed, specific, concrete, step-by-step advice, guidance, or techniques discussed. Provide a critical analysis of the quality of the information presented, using scientific backing, author credentials, authoritative reviews, and other markers of high quality information as justification. Make the following additional book recommendations: the best alternate book on the same topic; the best book that is tangentially related; the best book that is diametrically opposed; the best fiction book that incorporates related ideas; the best book that is more general or more specific; and the best book that is more rigorous or more accessible than this book. Format your response as markdown, starting at heading level H3, with inline links, for easy copy paste. Use meaningful emojis generously (at least one per heading, bullet point, and paragraph) to enhance readability. Do not include broken links or links to commercial sites.

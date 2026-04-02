@@ -7,7 +7,7 @@ URL: https://bagrounds.org/articles/from-frege-to-chatgpt-compositionality-in-la
 Author:
 tags:
 ---
-[Home](/content/index.md) > [Articles](/content/articles/index.md)  
+[Home](../index.md) > [Articles](./index.md)  
 # [🧠🗣️💻 From Frege to ChatGPT: Compositionality in Language, Cognition, and Deep Neural Networks](https://arxiv.org/pdf/2405.15164)  
   
 ## 🤖 AI Summary  
@@ -45,12 +45,12 @@ tags:
   
 ### ↔️ Similar  
 * 📘 The Oxford Handbook of Compositionality: A comprehensive resource edited by Oxford Academic exploring compositionality across linguistics, philosophy, and computation.  
-* [🏢🤖 Compositional Intelligence: Architectural Typology Through Generative AI](/content/books/compositional-intelligence-architectural-typology-through-generative-ai.md) by Daniel Koehler (Routledge): Investigates how compositional principles in urban design and architecture intersect with Generative AI and LLMs.  
+* [🏢🤖 Compositional Intelligence: Architectural Typology Through Generative AI](../books/compositional-intelligence-architectural-typology-through-generative-ai.md) by Daniel Koehler (Routledge): Investigates how compositional principles in urban design and architecture intersect with Generative AI and LLMs.  
   
 ### 🆚 Contrasting  
 * 🌐 Parallel Distributed Processing Explorations in the Microstructure of Cognition: Volume 1 Foundations by David E Rumelhart and James L McClelland: The foundational text for connectionism, which presents an alternative, non-symbolic view of cognition that the compositionality debate fundamentally addresses.  
 * ♟️ The Algebraic Mind Integrating Connectionism and Cognitive Science by Gary F Marcus: Argues that connectionist models require innate, symbolic structure to achieve systematic generalization, upholding the necessity of a classical-style approach against pure neural networks.  
   
 ### 🎨 Creatively Related  
-* [🧠💻 The Computational Brain](/content/books/the-computational-brain.md) by Patricia S Churchland: Explores the philosophy of mind and computational neuroscience, providing a biologically grounded framework for understanding how the brain supports complex cognitive functions like language.  
+* [🧠💻 The Computational Brain](../books/the-computational-brain.md) by Patricia S Churchland: Explores the philosophy of mind and computational neuroscience, providing a biologically grounded framework for understanding how the brain supports complex cognitive functions like language.  
 * ✍️ Rethinking Writing Instruction in the Age of AI A Universal Design for Learning Approach by Randy Laist (CAST Professional Publishing): Discusses the practical impact of LLMs on critical thinking and language education, relating the theoretical capabilities of AI to real-world applications in human communication.

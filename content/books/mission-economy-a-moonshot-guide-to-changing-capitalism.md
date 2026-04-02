@@ -6,8 +6,11 @@ URL: https://bagrounds.org/books/mission-economy-a-moonshot-guide-to-changing-ca
 share: true
 CTA: 🚀 Launch innovation.
 affiliate link: https://amzn.to/4puMiEr
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_time: 2026-04-01T00:00:00Z
+force_analyze_links: false
 ---
-[Home](/content/index.md) > [Books](/content/books/index.md)  
+[Home](../index.md) > [Books](./index.md)  
 # 🚀🌍💰 Mission Economy: A Moonshot Guide to Changing Capitalism  
 [🛒 Mission Economy: A Moonshot Guide to Changing Capitalism. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4puMiEr)  
   
@@ -67,8 +70,8 @@ affiliate link: https://amzn.to/4puMiEr
 ## 📚 Book Recommendations  
   
 ### ➕ Similar  
-* [🏛️🏭 The Entrepreneurial State: Debunking Public vs Private Sector Myths](/content/books/the-entrepreneurial-state-debunking-public-vs-private-sector-myths.md) by Mariana Mazzucato  
-* [🍩🌍 Doughnut Economics: Seven Ways to Think Like a 21st-Century Economist](/content/books/doughnut-economics-seven-ways-to-think-like-a-21st-century-economist.md) by Kate Raworth  
+* [🏛️🏭 The Entrepreneurial State: Debunking Public vs Private Sector Myths](./the-entrepreneurial-state-debunking-public-vs-private-sector-myths.md) by Mariana Mazzucato  
+* [🍩🌍 Doughnut Economics: Seven Ways to Think Like a 21st-Century Economist](./doughnut-economics-seven-ways-to-think-like-a-21st-century-economist.md) by Kate Raworth  
 * ✨ Value(s) by Mark Carney  
   
 ### ➖ Contrasting  
@@ -79,7 +82,7 @@ affiliate link: https://amzn.to/4puMiEr
 ### 🔗 Related  
 * 🏘️ Governing the Commons by Elinor Ostrom  
 * 💡 Innovation and Its Enemies by Calestous Juma  
-* [📖🏛️📉 Seeing Like a State: How Certain Schemes to Improve the Human Condition Have Failed](/content/books/seeing-like-a-state-how-certain-schemes-to-improve-the-human-condition-have-failed.md) by James C. Scott  
+* [📖🏛️📉 Seeing Like a State: How Certain Schemes to Improve the Human Condition Have Failed](./seeing-like-a-state-how-certain-schemes-to-improve-the-human-condition-have-failed.md) by James C. Scott  
   
 ## 🫵 What Do You Think?  
   

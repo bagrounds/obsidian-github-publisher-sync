@@ -7,7 +7,7 @@ aliases:
 title: 😴🧠🌃 Sara C. Mednick
 URL: https://bagrounds.org/people/sara-c-mednick
 ---
-[Home](/content/index.md) > [People](/content/people/index.md)  
+[Home](../index.md) > [People](./index.md)  
 # 😴🧠🌃 Sara C. Mednick  
 😴 Sara C. Mednick is a professor of cognitive science and a sleep researcher 🧑‍🏫 at the University of California, Irvine. She is widely known for her work on the benefits of 💤 napping and is the author of several popular 📚 books and numerous scientific 🔬 papers on the subject.  
   
@@ -17,5 +17,5 @@ URL: https://bagrounds.org/people/sara-c-mednick
   
 ### 📖 Published Books  
   
-* **[😴🧠📈 Take a Nap! Change Your Life.: The Scientific Plan to Make You Smarter, Healthier, More Productive](/content/books/take-a-nap-change-your-life-the-scientific-plan-to-make-you-smarter-healthier-more-productive.md)**: This book provides a scientifically-backed guide to napping, explaining how to use short periods of sleep to improve productivity 🚀, creativity 🎨, and overall health ⚕️.  
-* **[🔋⬇️⬆️ The Power of the Downstate: Recharge Your Life Using Your Body's Own Restorative Systems](/content/books/the-power-of-the-downstate-recharge-your-life-using-your-bodys-own-restorative-systems.md)**: In this book, Mednick introduces the concept of the "downstate" and argues that our modern, fast-paced 🏃‍♀️ lives often disrupt the body's natural rhythms. She offers practical, evidence-based advice on how to activate this restorative state through activities like breathing 🌬️, exercise 🏋️‍♀️, and diet 🍎, in addition to sleep 😴.
+* **[😴🧠📈 Take a Nap! Change Your Life.: The Scientific Plan to Make You Smarter, Healthier, More Productive](../books/take-a-nap-change-your-life-the-scientific-plan-to-make-you-smarter-healthier-more-productive.md)**: This book provides a scientifically-backed guide to napping, explaining how to use short periods of sleep to improve productivity 🚀, creativity 🎨, and overall health ⚕️.  
+* **[🔋⬇️⬆️ The Power of the Downstate: Recharge Your Life Using Your Body's Own Restorative Systems](../books/the-power-of-the-downstate-recharge-your-life-using-your-bodys-own-restorative-systems.md)**: In this book, Mednick introduces the concept of the "downstate" and argues that our modern, fast-paced 🏃‍♀️ lives often disrupt the body's natural rhythms. She offers practical, evidence-based advice on how to activate this restorative state through activities like breathing 🌬️, exercise 🏋️‍♀️, and diet 🍎, in addition to sleep 😴.

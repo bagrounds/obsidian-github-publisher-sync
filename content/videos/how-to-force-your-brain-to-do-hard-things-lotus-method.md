@@ -10,7 +10,7 @@ Channel: simple, actually
 tags:
 youtube: https://youtu.be/GpsWTFciswE
 ---
-[Home](/content/index.md) > [Videos](/content/videos/index.md)  
+[Home](../index.md) > [Videos](./index.md)  
 # 🧠💪🧘 How To Force Your Brain To Do Hard Things (Lotus Method)  
 ![How To Force Your Brain To Do Hard Things (Lotus Method)](https://youtu.be/GpsWTFciswE)  
   
@@ -33,7 +33,7 @@ Topics to explore for a better understanding include:
   
 ## 📚 Book Recommendations  
   
-* [⚛️🔄 Atomic Habits: An Easy & Proven Way to Build Good Habits & Break Bad Ones](/content/books/atomic-habits.md) by James Clear: Similar to the video's focus on consistency and small steps, this book provides a framework for building good habits and breaking bad ones.  
-* [🤿💼 Deep Work: Rules for Focused Success in a Distracted World](/content/books/deep-work.md) by Cal Newport: This book aligns with the video's "Intentional Action" step, arguing that the ability to focus without distraction on a cognitively demanding task is a skill that can be developed.  
-* [🔄🧠💪 The Power of Habit: Why We Do What We Do in Life and Business](/content/books/the-power-of-habit.md) by Charles Duhigg: This book explains the science behind why habits exist and how they can be changed, providing a different but related perspective on the neurological underpinnings of behavior.  
-* [🪖🎨 The War of Art: Break Through the Blocks and Win Your Inner Creative Battles](/content/books/the-war-of-art.md) by Steven Pressfield: This book addresses the psychological resistance that creative individuals and entrepreneurs face, which is similar to the "monkey mind" described in the video.
+* [⚛️🔄 Atomic Habits: An Easy & Proven Way to Build Good Habits & Break Bad Ones](../books/atomic-habits.md) by James Clear: Similar to the video's focus on consistency and small steps, this book provides a framework for building good habits and breaking bad ones.  
+* [🤿💼 Deep Work: Rules for Focused Success in a Distracted World](../books/deep-work.md) by Cal Newport: This book aligns with the video's "Intentional Action" step, arguing that the ability to focus without distraction on a cognitively demanding task is a skill that can be developed.  
+* [🔄🧠💪 The Power of Habit: Why We Do What We Do in Life and Business](../books/the-power-of-habit.md) by Charles Duhigg: This book explains the science behind why habits exist and how they can be changed, providing a different but related perspective on the neurological underpinnings of behavior.  
+* [🪖🎨 The War of Art: Break Through the Blocks and Win Your Inner Creative Battles](../books/the-war-of-art.md) by Steven Pressfield: This book addresses the psychological resistance that creative individuals and entrepreneurs face, which is similar to the "monkey mind" described in the video.

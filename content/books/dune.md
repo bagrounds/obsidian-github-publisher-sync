@@ -10,7 +10,7 @@ force_analyze_links: false
 link_analysis_time: 2026-03-22T06:07:03.653Z
 link_analysis_model: gemini-3.1-flash-lite-preview
 ---
-[Home](/content/index.md) > [Books](/content/books/index.md)  
+[Home](../index.md) > [Books](./index.md)  
 # 🏜️🐛 Dune  
 [🛒 Dune. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/47VKBce)  
   
@@ -49,7 +49,7 @@ A: 📏 **Dune** is **400 to 500 pages** and its dense content often makes it fe
 ### ❤️ If You Loved This  
   
 * 👑 **A Game of Thrones** by George R.R. Martin: Features similar feudal structure, high-stakes political intrigue, and power struggles.  
-* **[🏗️🧱🌍 Foundation](/content/books/Foundation.md)** by Isaac Asimov: Foundational sci-fi saga dealing with future humanity and manipulated socio-historical forces.  
+* **[🏗️🧱🌍 Foundation](./Foundation.md)** by Isaac Asimov: Foundational sci-fi saga dealing with future humanity and manipulated socio-historical forces.  
   
 ### ↔️ Similar But Different  
   

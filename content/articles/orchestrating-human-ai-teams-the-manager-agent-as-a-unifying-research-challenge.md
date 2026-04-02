@@ -7,7 +7,7 @@ URL: https://bagrounds.org/articles/orchestrating-human-ai-teams-the-manager-age
 Author:
 tags:
 ---
-[Home](/content/index.md) > [Articles](/content/articles/index.md)  
+[Home](../index.md) > [Articles](./index.md)  
 # [🧑‍🤝‍🧑🤖🧠 Orchestrating Human AI Teams: The Manager Agent as a Unifying Research Challenge](https://arxiv.org/pdf/2510.02557)  
   
 ## 🤖 AI Summary  
@@ -41,7 +41,7 @@ tags:
 ## 📚 Book Recommendations  
   
 ### ↔️ Similar  
-* [🤖📈 The AI Revolution in Project Management: Elevating Productivity with Generative AI](/content/books/the-ai-revolution-in-project-management-elevating-productivity-with-generative-ai.md) by Vijay Kanabar and Jason Wong. This book focuses on the direct application of generative AI to project management, covering planning, team building, and risk management.  
+* [🤖📈 The AI Revolution in Project Management: Elevating Productivity with Generative AI](../books/the-ai-revolution-in-project-management-elevating-productivity-with-generative-ai.md) by Vijay Kanabar and Jason Wong. This book focuses on the direct application of generative AI to project management, covering planning, team building, and risk management.  
 * 🤝 Human-AI Interaction and Collaboration from Cambridge University Press. This text explores the complexities of collaboration between humans and AI, offering frameworks for interaction, trust, and managing the challenges of shared agency in complex systems.  
   
 ### 🆚 Contrasting  

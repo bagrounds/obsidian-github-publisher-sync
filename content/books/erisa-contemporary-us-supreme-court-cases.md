@@ -8,7 +8,7 @@ tags:
   - law
 affiliate link: https://amzn.to/43tlvjW
 ---
-[Home](/content/index.md) > [Books](/content/books/index.md)  
+[Home](../index.md) > [Books](./index.md)  
 # 🇺🇸⚖️ ERISA: Contemporary US Supreme Court Cases  
 [🛒 ERISA: Contemporary US Supreme Court Cases. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/43tlvjW)  
   
@@ -72,5 +72,5 @@ While a specific review of this exact book title was not readily available, the 
 * 💰 **Books on the Economics of Retirement and Healthcare:** Exploring the financial and economic contexts within which ERISA operates.  
 * 🎭 **Fictional Works:** Novels or plays that touch upon themes of retirement, healthcare access, corporate responsibility, or 👨‍⚖️ legal disputes, which could provide a narrative counterpoint to the legal analysis.  
   
-## 💬 [Gemini](/content/software/gemini.md) Prompt (gemini-2.5-flash-preview-04-17)  
+## 💬 [Gemini](../software/gemini.md) Prompt (gemini-2.5-flash-preview-04-17)  
 > Write a markdown-formatted (start headings at level H2) book report, followed by a plethora of additional similar, contrasting, and creatively related book recommendations on ERISA: Contemporary US Supreme Court Cases. Be thorough in content discussed but concise and economical with your language. Structure the report with section headings and bulleted lists to avoid long blocks of text.

@@ -7,7 +7,7 @@ share: true
 affiliate link: https://amzn.to/4mKYZKl
 CTA: 🦺 Secure adventures.
 ---
-[Home](/content/index.md) > [Products](/content/products/index.md)  
+[Home](../index.md) > [Products](./index.md)  
 # 👶🏃🌆 Thule Urban Glide 3  
 [🛒 Thule Urban Glide 3. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4mKYZKl)  
   
@@ -51,7 +51,7 @@ CTA: 🦺 Secure adventures.
   
 ### 🎨 Creatively Related  
 * 🚲 **A Short History of the Bicycle: From Boneshakers to Biometrics** **by Mark W. Clark:** This book is a creative parallel, exploring the history of human-powered mobility devices. 🕰️ The evolution of the bicycle mirrors the Urban Glide 3's own journey from a simple utility to a highly engineered, specialized piece of equipment designed for performance.  
-* **[🏍️🧘❓ Zen and the Art of Motorcycle Maintenance: An Inquiry into Values](/content/books/zen-and-the-art-of-motorcycle-maintenance-an-inquiry-into-values.md)** **by Robert M. Pirsig:** This classic explores the philosophical intersection of technology and human experience. 🛠️ The act of maintaining and using the Thule Urban Glide 3—inflating tires, adjusting the harness—can be seen as a micro-version of Pirsig's deeper inquiry into quality, craftsmanship, and the harmony between human and machine.  
+* **[🏍️🧘❓ Zen and the Art of Motorcycle Maintenance: An Inquiry into Values](../books/zen-and-the-art-of-motorcycle-maintenance-an-inquiry-into-values.md)** **by Robert M. Pirsig:** This classic explores the philosophical intersection of technology and human experience. 🛠️ The act of maintaining and using the Thule Urban Glide 3—inflating tires, adjusting the harness—can be seen as a micro-version of Pirsig's deeper inquiry into quality, craftsmanship, and the harmony between human and machine.  
   
 ## 💬 Gemini Prompt (gemini-2.5-flash)  
 > Write a markdown-formatted (start headings at level H2) product report for Thule Urban Glide 3. Follow this with similar, contrasting, and creatively related book recommendations. Be thorough in content discussed but concise and economical with your language. Structure the report with section headings and bulleted lists to avoid long blocks of text.

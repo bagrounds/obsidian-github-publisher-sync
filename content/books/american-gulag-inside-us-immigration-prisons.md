@@ -7,7 +7,7 @@ share: true
 affiliate link: https://amzn.to/4exgfzo
 CTA: Confront injustice.
 ---
-[Home](/content/index.md) > [Books](/content/books/index.md)  
+[Home](../index.md) > [Books](./index.md)  
 # 🇺🇸🔒 American Gulag: Inside U.S. Immigration Prisons  
 [🛒 American Gulag: Inside U.S. Immigration Prisons. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4exgfzo)  
   
@@ -54,10 +54,10 @@ CTA: Confront injustice.
 ### 🧠 Creatively Related Books (Exploring Broader Themes or Using Different Forms)  
   
 * ***Golden Gulag: Prisons, Surplus, Crisis, and Opposition in Globalizing California*** by Ruth Wilson Gilmore: While focused on the 🌉 California prison system, Gilmore's seminal work provides a crucial understanding of the 💰 economic, 🏛️ political, and 👥 social forces driving the 📈 growth of the carceral state, offering a framework applicable to understanding the expansion of immigration detention.  
-* **[🧑🏿⛓️🙈 The New Jim Crow: Mass Incarceration in the Age of Colorblindness](/content/books/the-new-jim-crow-mass-incarceration-in-the-age-of-colorblindness.md)** by Michelle Alexander: This highly influential book examines the 🇺🇸 U.S. system of mass incarceration and its devastating impact on 🖤 Black communities, drawing parallels to the Jim Crow era. While not solely about immigration, it provides a broader context of how the 🇺🇸 U.S. uses carceral systems to control 👤 marginalized populations, a theme relevant to *American Gulag*.  
+* **[🧑🏿⛓️🙈 The New Jim Crow: Mass Incarceration in the Age of Colorblindness](./the-new-jim-crow-mass-incarceration-in-the-age-of-colorblindness.md)** by Michelle Alexander: This highly influential book examines the 🇺🇸 U.S. system of mass incarceration and its devastating impact on 🖤 Black communities, drawing parallels to the Jim Crow era. While not solely about immigration, it provides a broader context of how the 🇺🇸 U.S. uses carceral systems to control 👤 marginalized populations, a theme relevant to *American Gulag*.  
 * ***Rightlessness: Citizens and the State in U.S. Law*** by Sally E. Merry: This book explores how legal status shapes individuals' rights and experiences in the 🇺🇸 U.S., a concept highly relevant to the situation of immigration detainees who often exist in a state of "subconstitutional" existence with 🔒 limited legal protections.  
 * **📝 Memoirs or 🗣️ Personal Accounts of Detention:** Personal narratives from individuals who have experienced immigration detention could offer a powerful, intimate, and creatively related perspective, complementing Dow's investigative journalism with first-hand emotional and personal accounts. (Specific titles would require a search for memoirs by former detainees).  
 * **🖼️ Works of Fiction or Poetry:** Creative works exploring the themes of 🚧 borders, 🏠 displacement, 🔒 detention, and the 🔎 search for home could offer an emotional and imaginative engagement with the issues raised in *American Gulag*.  
   
-## 💬 [Gemini](/content/software/gemini.md) Prompt (gemini-2.5-flash-preview-04-17)  
+## 💬 [Gemini](../software/gemini.md) Prompt (gemini-2.5-flash-preview-04-17)  
 > Write a markdown-formatted (start headings at level H2) book report, followed by a plethora of additional similar, contrasting, and creatively related book recommendations on American Gulag: Inside U.S. Immigration Prisons. Be thorough in content discussed but concise and economical with your language. Structure the report with section headings and bulleted lists to avoid long blocks of text.

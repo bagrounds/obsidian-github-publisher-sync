@@ -7,7 +7,7 @@ share: true
 CTA: 💡 Master the future of computing.
 affiliate link: https://amzn.to/4p93S03
 ---
-[Home](/content/index.md) > [Books](/content/books/index.md)  
+[Home](../index.md) > [Books](./index.md)  
 # 🧠🔌 The Thinking Machine: Jensen Huang, Nvidia, and the World's Most Coveted Microchip  
 [🛒 The Thinking Machine: Jensen Huang, Nvidia, and the World's Most Coveted Microchip. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4p93S03)  
   
@@ -50,7 +50,7 @@ affiliate link: https://amzn.to/4p93S03
 * 💡 Ethical considerations and societal impact of increasingly powerful, autonomous AI systems driven by advanced microchips.  
 * ⚡ The energy consumption and environmental footprint of large-scale AI training and inference, and sustainable hardware solutions.  
 * 💰 Detailed economic analysis of Nvidia's market power and potential antitrust concerns in the AI hardware sector.  
-* 🌌 The role of neuromorphic and [⚛️ Quantum Computing](/content/topics/quantum-computing.md) in the next generation of AI hardware beyond GPUs.  
+* 🌌 The role of neuromorphic and [⚛️ Quantum Computing](../topics/quantum-computing.md) in the next generation of AI hardware beyond GPUs.  
 * 🔬 Comparison of different AI chip architectures (ASICs, FPGAs, TPUs) and their specific advantages for various AI workloads.  
   
 ## ❓ Frequently Asked Questions (FAQ)  
@@ -77,12 +77,12 @@ affiliate link: https://amzn.to/4p93S03
   
 ### ↔️ Contrasting  
 * 🧠 The Master Algorithm by Pedro Domingos (focuses more on AI algorithms than hardware)  
-* [🧬👥💾 Life 3.0: Being Human in the Age of Artificial Intelligence](/content/books/life-3-0.md) by Max Tegmark (explores broader societal impacts and existential risks of AI)  
+* [🧬👥💾 Life 3.0: Being Human in the Age of Artificial Intelligence](./life-3-0.md) by Max Tegmark (explores broader societal impacts and existential risks of AI)  
   
 ### 🔗 Related  
 * 📜 The Innovators by Walter Isaacson (history of digital revolution)  
 * 🧑‍💻 Becoming Steve Jobs by Brent Schlender and Rick Tetzeli (CEO biography, leadership)  
-* [🤖🔮🌍 AI 2041: Ten Visions for Our Future](/content/books/ai-2041-ten-visions-for-our-future.md) by Kai-Fu Lee and Chen Qiufan (future AI scenarios)  
+* [🤖🔮🌍 AI 2041: Ten Visions for Our Future](./ai-2041-ten-visions-for-our-future.md) by Kai-Fu Lee and Chen Qiufan (future AI scenarios)  
   
 ## 🫵 What Do You Think?  
 🤔 How will increasing competition in AI hardware impact Nvidia's long-term dominance and innovation strategy?

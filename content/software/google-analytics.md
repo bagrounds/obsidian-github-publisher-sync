@@ -5,7 +5,7 @@ aliases:
 title: 🕸️📊 Google Analytics
 URL: https://bagrounds.org/software/google-analytics
 ---
-[Home](/content/index.md) > [Software](/content/software/index.md)  
+[Home](../index.md) > [Software](./index.md)  
 # 🕸️📊 Google Analytics  
   
 ## 🤖 AI Summary  
@@ -169,8 +169,8 @@ Why did the website owner break up with Google Analytics? Because it kept tellin
   
   * **Topical:** *Google Analytics 4 for Dummies* by Kristie McDonald 📖 (accessible introduction).  
   * **Tangentially Related:** *Lean Analytics: How to Use Data to Build a Better Startup Faster* by Alistair Croll and Benjamin Yoskovitz 📈 (focuses on using data for business growth).  
-  * **Topically Opposed:** *[The Age of Surveillance Capitalism](/content/books/the-age-of-surveillance-capitalism.md): The Fight for a Human Future at the New Frontier of Power* by Shoshana Zuboff 🛡️ (critical perspective on data collection and privacy).  
-  * **More General:** *[Naked Statistics](/content/books/naked-statistics.md): Stripping the Dread from the Data* by Charles Wheelan 📊 (introduces statistical concepts in an accessible way).  
+  * **Topically Opposed:** *[The Age of Surveillance Capitalism](../books/the-age-of-surveillance-capitalism.md): The Fight for a Human Future at the New Frontier of Power* by Shoshana Zuboff 🛡️ (critical perspective on data collection and privacy).  
+  * **More General:** *[Naked Statistics](../books/naked-statistics.md): Stripping the Dread from the Data* by Charles Wheelan 📊 (introduces statistical concepts in an accessible way).  
   * **More Specific:** *Advanced Web Metrics with Google Analytics* by Brian Clifton 🧙‍♂️ (in-depth exploration of advanced features).  
   * **Fictional:** *The Circle* by Dave Eggers 📖 (explores themes of data transparency and surveillance in a fictional context).  
   * **Rigorous:** *Statistical Models* by David Freedman 📚 (provides a theoretical foundation for statistical analysis).  

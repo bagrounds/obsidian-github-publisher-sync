@@ -11,7 +11,7 @@ force_analyze_links: false
 link_analysis_time: 2026-03-22T23:35:06.742Z
 link_analysis_model: gemini-3.1-flash-lite-preview
 ---
-[Home](/content/index.md) > [Books](/content/books/index.md)  
+[Home](../index.md) > [Books](./index.md)  
 # 🧑‍💻🤖 Human + Machine: Reimagining Work in the Age of AI  
 [🛒 Human + Machine: Reimagining Work in the Age of AI. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4fA8bOX)  
   
@@ -42,14 +42,14 @@ In conclusion, 🏁 *Human + Machine* offers a practical and optimistic roadmap 
   
 ### 👍 Similar in Spirit: Collaboration and Co-evolution  
   
-* **[🤖📈 Prediction Machines: The Simple Economics of Artificial Intelligence](/content/books/prediction-machines-the-simple-economics-of-artificial-intelligence.md)** by Ajay Agrawal, Joshua Gans, and Avi Goldfarb: This book breaks down the economic principles behind AI, arguing that its primary function is to lower the cost 📉 of prediction, thereby creating new opportunities for innovation and efficiency.  
+* **[🤖📈 Prediction Machines: The Simple Economics of Artificial Intelligence](./prediction-machines-the-simple-economics-of-artificial-intelligence.md)** by Ajay Agrawal, Joshua Gans, and Avi Goldfarb: This book breaks down the economic principles behind AI, arguing that its primary function is to lower the cost 📉 of prediction, thereby creating new opportunities for innovation and efficiency.  
 * 💼 **The Future of Work: How Artificial Intelligence Can Augment Human Capabilities** by Business Expert Press: This book offers a roadmap 🗺️ for leaders to navigate the AI-driven transformation, focusing on organizational design and process re-engineering to create a hyper-automated yet human-centric workplace.  
 * 🔄 **Reinventing Jobs: A 4-Step Approach for Applying Automation to Work** by Ravin Jesuthasan and John W. Boudreau: Providing a practical framework, this book guides leaders on how to strategically integrate automation ⚙️ while optimizing human roles and redesigning workflows.  
   
 ### ⚠️ Contrasting Perspectives: Cautionary Tales and Critical Eyes  
   
 * 🌐 **The Big Nine: How the Tech Titans and Their Thinking Machines Could Warp Humanity** by Amy Webb: This book raises concerns 😟 about the concentration of AI development in the hands of a few powerful tech companies and the potential for their biases and agendas to shape the future of humanity.  
-* **[📊📉🏛️ Weapons of Math Destruction: How Big Data Increases Inequality and Threatens Democracy](/content/books/weapons-of-math-destruction-how-big-data-increases-inequality-and-threatens-democracy.md)** by Cathy O'Neil: This work exposes the dark side 🌑 of algorithms, showing how they can perpetuate and even amplify existing biases, leading to unfair outcomes in areas like hiring, lending, and criminal justice 🏛️.  
+* **[📊📉🏛️ Weapons of Math Destruction: How Big Data Increases Inequality and Threatens Democracy](./weapons-of-math-destruction-how-big-data-increases-inequality-and-threatens-democracy.md)** by Cathy O'Neil: This work exposes the dark side 🌑 of algorithms, showing how they can perpetuate and even amplify existing biases, leading to unfair outcomes in areas like hiring, lending, and criminal justice 🏛️.  
 * 🤔 **Mindless: The Human Condition in the Age of Artificial Intelligence** by Robert Skidelsky: This book takes a philosophical and historical look 🧐 at the impact of machines on work and life, questioning the narrative of inevitable progress and exploring the potential for AI to devalue human skills and judgment.  
   
 ### 🎭 Creatively Related: Fictional Explorations of AI and Humanity  
@@ -60,7 +60,7 @@ In conclusion, 🏁 *Human + Machine* offers a practical and optimistic roadmap 
 * 🤖 **I, Robot** by Isaac Asimov: A collection of short stories that laid the groundwork for modern thinking about robotics and AI, introducing the famous "Three Laws of Robotics" and exploring the logical and ethical dilemmas that arise from them.  
 * 💻 **Neuromancer** by William Gibson: A seminal work of the cyberpunk genre, this novel envisions a future where hackers navigate a global computer network and interact with powerful, and sometimes dangerous, artificial intelligences.  
   
-## 💬 [Gemini](/content/software/gemini.md) Prompt (gemini-2.5-pro)  
+## 💬 [Gemini](../software/gemini.md) Prompt (gemini-2.5-pro)  
 > Write a markdown-formatted (start headings at level H2) book report, followed by a plethora of additional similar, contrasting, and creatively related book recommendations on Human + Machine: Reimagining Work in the Age of AI. Never put book titles in quotes or italics. Be thorough in content discussed but concise and economical with your language. Structure the report with section headings and bulleted lists to avoid long blocks of text.  
   
 ## 🦋 Bluesky    

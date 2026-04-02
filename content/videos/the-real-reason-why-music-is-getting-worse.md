@@ -4,10 +4,10 @@ aliases:
   - 📉🎶👎 The Real Reason Why Music Is Getting Worse
 title: 📉🎶👎 The Real Reason Why Music Is Getting Worse
 URL: https://youtu.be/1bZ0OSEViyo
-Author: 
+Author:
 Platform: "#YouTube"
-Channel: 
-tags: 
+Channel:
+tags:
 ---
 [Home](../index.md) > [Videos](./index.md)  
 # 📉🎶👎 The Real Reason Why Music Is Getting Worse  

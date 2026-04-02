@@ -7,7 +7,7 @@ URL: https://bagrounds.org/articles/judge-says-deportation-of-maryland-man-to-an
 Author:
 tags:
 ---
-[Home](/content/index.md) > [Articles](/content/articles/index.md)  
+[Home](../index.md) > [Articles](./index.md)  
 # [👨‍⚖️🚫🇸🇻 Judge says deportation of Maryland man to an El Salvador prison was ‘wholly lawless’](https://apnews.com/article/ice-trump-immigration-el-savador-5d2f7b919cb1a4ed5ce31d44f391d8f5)  
 ## 🤖 AI Summary  
 ### 🚨 Erroneous Deportation of Maryland Man to El Salvador 🇸🇻  

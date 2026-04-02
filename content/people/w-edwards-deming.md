@@ -8,7 +8,7 @@ link_analysis_time: 2026-03-22T23:32:08.286Z
 link_analysis_model: gemini-3.1-flash-lite-preview
 updated: 2026-03-23T08:20:15.795Z
 ---
-[Home](/content/index.md) > [People](/content/people/index.md)  
+[Home](../index.md) > [People](./index.md)  
 # 📈📊⚙️🎯 W Edwards Deming  
 ## 🤖 AI Summary  
 👤 W. Edwards Deming (1900-1993) was an American statistician, 👨‍🏫 professor, ✍️ author, 🗣️ lecturer, and 💼 consultant who is widely recognized as a pivotal figure in the development of modern quality management. His work profoundly influenced the post-World War II economic recovery of Japan and, later, the quality movement in the United States. 🇺🇸 🇯🇵  
@@ -44,10 +44,10 @@ Later in his life, Deming gained significant recognition in the U.S., becoming a
   
 ## 📚 Books  
 **By W. Edwards Deming Himself:**  
-1.  **[📉⬆️ Out Of The Crisis](/content/books/out-of-the-crisis.md)**  
+1.  **[📉⬆️ Out Of The Crisis](../books/out-of-the-crisis.md)**  
     * This is arguably Deming's most famous and influential book. It lays out his renowned **14 Points for Management** in detail, advocating for a complete transformation of management philosophy. It's a foundational text for understanding his approach to quality, productivity, and competitive position.  
   
-2.  **[📈🏛️🏫 The New Economics: For Industry, Government, Education](/content/books/the-new-economics.md)**  
+2.  **[📈🏛️🏫 The New Economics: For Industry, Government, Education](../books/the-new-economics.md)**  
     * In this later work, Deming delves deeper into his **System of Profound Knowledge**, which he considered the theoretical basis for his 14 Points. It explores the four interconnected components: Appreciation for a System, Knowledge about Variation, Theory of Knowledge, and Psychology. This book provides a more philosophical and holistic view of his ideas.  
   
 3.  **"The Essential Deming: Leadership Principles from the Father of Quality"**  
@@ -70,9 +70,9 @@ Later in his life, Deming gained significant recognition in the U.S., becoming a
     * While focused on education, this book provides an excellent explanation of Deming's System of Profound Knowledge and how it can be applied to improve any system. It offers real-world strategies for leaders.  
   
 **Related & Complementary Books:**  
-* **[🇯🇵⚙️📈💯 The Toyota Way: 14 Management Principles from the World's Greatest Manufacturer](/content/books/the-toyota-way.md) by Jeffrey K. Liker:** Explores the management principles behind Toyota's success, many of which align with Deming's philosophy (e.g., continuous improvement, respect for people, long-term thinking).  
+* **[🇯🇵⚙️📈💯 The Toyota Way: 14 Management Principles from the World's Greatest Manufacturer](../books/the-toyota-way.md) by Jeffrey K. Liker:** Explores the management principles behind Toyota's success, many of which align with Deming's philosophy (e.g., continuous improvement, respect for people, long-term thinking).  
 * **"Lean Thinking: Banish Waste and Create Wealth in Your Corporation" by James P. Womack and Daniel T. Jones:** Introduces the concept of "lean" production, which has strong roots in the Toyota Production System and, by extension, Deming's ideas.  
-* **[📈⚙️♾️ The Goal: A Process of Ongoing Improvement](/content/books/the-goal.md) by Eliyahu M. Goldratt:** A business novel that introduces the Theory of Constraints, another powerful methodology for system optimization.  
+* **[📈⚙️♾️ The Goal: A Process of Ongoing Improvement](../books/the-goal.md) by Eliyahu M. Goldratt:** A business novel that introduces the Theory of Constraints, another powerful methodology for system optimization.  
   
 ## 🦋 Bluesky    
 <blockquote class="bluesky-embed" data-bluesky-uri="at://did:plc:i4yli6h7x2uoj7acxunww2fc/app.bsky.feed.post/3mhpmuc3jcp2v" data-bluesky-cid="bafyreigyd5i6j4snt46cjrinjdxmdkcbcntweui35g5eisckklstyio43u" data-bluesky-embed-color-mode="system"><p lang="en">📈📊⚙️🎯 W Edwards Deming<br><br>#AI Q: 📈 Does constant focus on quality actually stifle creativity?<br><br>📊 Statistical Control | 🔄 PDCA Cycle | 🧠 Systems Thinking | 🏆 Quality Management<br>https://bagrounds.org/people/w-edwards-deming</p>  

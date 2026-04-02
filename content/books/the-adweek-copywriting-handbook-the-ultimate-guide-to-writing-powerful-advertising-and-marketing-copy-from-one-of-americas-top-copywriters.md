@@ -7,7 +7,7 @@ share: true
 affiliate link: https://amzn.to/42if95X
 CTA: 🚀 Elevate messaging.
 ---
-[Home](/content/index.md) > [Books](/content/books/index.md)  
+[Home](../index.md) > [Books](./index.md)  
 # ✍️📣 The Adweek Copywriting Handbook: The Ultimate Guide to Writing Powerful Advertising and Marketing Copy from One of America's Top Copywriters  
 [🛒 The Adweek Copywriting Handbook: The Ultimate Guide to Writing Powerful Advertising and Marketing Copy from One of America's Top Copywriters. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/42if95X)  
   
@@ -51,16 +51,16 @@ These books share The Adweek Copywriting Handbook's emphasis on measurable resul
 These recommendations offer a perspective that contrasts with Sugarman's purely direct-response approach, often focusing on long-term brand building, creative concepting, or modern online content strategy:  
   
 * 🎨 **Hey Whipple Squeeze This by Luke Sullivan:** This book focuses heavily on the creative side of agency life, concept generation, and the art of crafting short, memorable brand-building ads for various media, shifting the focus from sales letters to broad creative campaigns.  
-* **[🌍✍🏿 Everybody Writes: Your Go-To Guide to Creating Ridiculously Good Content](/content/books/everybody-writes.md) by Ann Handley:** This guide centers on content marketing and online communication, stressing the importance of attracting and retaining customers through stellar, trustworthy content rather than hard-sell direct-response techniques.  
+* **[🌍✍🏿 Everybody Writes: Your Go-To Guide to Creating Ridiculously Good Content](./everybody-writes.md) by Ann Handley:** This guide centers on content marketing and online communication, stressing the importance of attracting and retaining customers through stellar, trustworthy content rather than hard-sell direct-response techniques.  
 * 🏢 **Ogilvy on Advertising by David Ogilvy:** While still a master of persuasion, Ogilvy’s work is more famously associated with high-profile brand image and overall advertising strategy, which contrasts with Sugarman's niche as a mail-order direct-response specialist.  
   
 ### 🧠 Creatively Related Books (Psychology, Behavior, and Persuasion)  
   
 These titles explore the deeper psychological and behavioral science that underpins all persuasive writing, providing the academic foundation for Sugarman’s practical advice:  
   
-* **[🍃🧠🤝🏼 Influence: The Psychology of Persuasion](/content/books/influence.md) by Robert Cialdini:** This seminal work provides the framework for the "psychological triggers" Sugarman discusses, detailing the six universal principles of influence (Reciprocity, Scarcity, Authority, etc.) that marketers leverage.  
-* **[🧠🌱💀 Made to Stick: Why Some Ideas Survive and Others Die](/content/books/made-to-stick.md) by Chip Heath and Dan Heath:** This book examines why certain ideas and messages are memorable and contagious, which is highly relevant to Sugarman's concept of selling an idea or concept rather than just a product.  
-* **[🤔🐇🐢 Thinking, Fast and Slow](/content/books/thinking-fast-and-slow.md) by Daniel Kahneman:** The Nobel Prize-winning psychologist introduces the concept of System 1 (fast, emotional) and System 2 (slow, logical) thinking, providing a scientific explanation for why customers "buy for emotional reasons and justify with logic," a core theme in the handbook.".  
+* **[🍃🧠🤝🏼 Influence: The Psychology of Persuasion](./influence.md) by Robert Cialdini:** This seminal work provides the framework for the "psychological triggers" Sugarman discusses, detailing the six universal principles of influence (Reciprocity, Scarcity, Authority, etc.) that marketers leverage.  
+* **[🧠🌱💀 Made to Stick: Why Some Ideas Survive and Others Die](./made-to-stick.md) by Chip Heath and Dan Heath:** This book examines why certain ideas and messages are memorable and contagious, which is highly relevant to Sugarman's concept of selling an idea or concept rather than just a product.  
+* **[🤔🐇🐢 Thinking, Fast and Slow](./thinking-fast-and-slow.md) by Daniel Kahneman:** The Nobel Prize-winning psychologist introduces the concept of System 1 (fast, emotional) and System 2 (slow, logical) thinking, providing a scientific explanation for why customers "buy for emotional reasons and justify with logic," a core theme in the handbook.".  
   
 ## 💬 [Gemini](https://gemini.google.com) Prompt (gemini-flash-latest)  
 > Write a markdown-formatted (start headings at level H2) book report, followed by similar, contrasting, and creatively related book recommendations on The Adweek Copywriting Handbook: The Ultimate Guide to Writing Powerful Advertising and Marketing Copy from One of America's Top Copywriters. Never quote or italicize titles. Be thorough but concise. Use section headings and bulleted lists to avoid long blocks of text.

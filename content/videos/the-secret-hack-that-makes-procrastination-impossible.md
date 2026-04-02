@@ -10,7 +10,7 @@ Channel: SpoonFedStudy
 tags:
 youtube: https://youtu.be/_ic1jc91RO8
 ---
-[Home](/content/index.md) > [Videos](/content/videos/index.md) | [🥄👶📚 SpoonFedStudy](/content/topics/spoonfedstudy.md)  
+[Home](../index.md) > [Videos](./index.md) | [🥄👶📚 SpoonFedStudy](../topics/spoonfedstudy.md)  
 # 🚫⏳🔓 the secret hack that makes procrastination impossible  
 ![the secret hack that makes procrastination impossible.](https://youtu.be/_ic1jc91RO8)  
   
@@ -25,13 +25,13 @@ youtube: https://youtu.be/_ic1jc91RO8
 ## 🤔 Evaluation  
 While the "2x Marshmallow Rule" and "Life Score" offer a gamified approach to productivity, they primarily focus on self-monitoring and immediate gratification for delayed tasks. This contrasts with approaches that emphasize intrinsic motivation or task restructuring. For a better understanding, it would be beneficial to explore:  
   
-* **[♻️🫀🧠💪 Cognitive Behavioral Therapy](/content/topics/cognitive-behavioral-therapy.md) (CBT) techniques**: How do these compare to more established psychological methods for addressing procrastination, which often delve into underlying thought patterns and emotional regulation?  
+* **[♻️🫀🧠💪 Cognitive Behavioral Therapy](../topics/cognitive-behavioral-therapy.md) (CBT) techniques**: How do these compare to more established psychological methods for addressing procrastination, which often delve into underlying thought patterns and emotional regulation?  
 * ⏱️ **Time management methodologies**: How might this "marshmallow" system integrate with or differ from popular time management techniques like the Pomodoro Technique or time blocking, which focus on structured work intervals?  
 * 🌱 **Habit formation science**: The video touches on tracking, but a deeper dive into the science of habit formation (e.g., cue-routine-reward loop) could provide more robust strategies for long-term behavior change.  
   
 ## 📚 Book Recommendations  
-* [⚛️🔄 Atomic Habits: An Easy & Proven Way to Build Good Habits & Break Bad Ones](/content/books/atomic-habits.md) by James Clear: Explores how small changes can lead to remarkable results in habit formation.  
-* [🔄🧠💪 The Power of Habit: Why We Do What We Do in Life and Business](/content/books/the-power-of-habit.md) by Charles Duhigg: Delves into the science of habit formation in individuals, organizations, and societies.  
-* [✅😌 Getting Things Done: The Art of Stress-Free Productivity](/content/books/getting-things-done-the-art-of-stress-free-productivity.md) by David Allen: A classic in productivity, offering a comprehensive system for organizing tasks and managing workflow.  
-* [❤️‍🔥💪 Grit: The Power of Passion and Perseverance](/content/books/grit-the-power-of-passion-and-perseverance.md) by Angela Duckworth: Examines the power of passion and perseverance in achieving long-term goals.  
-* [🤔🐇🐢 Thinking, Fast and Slow](/content/books/thinking-fast-and-slow.md) by Daniel Kahneman: Explores the two systems that drive the way we think and make decisions, relevant to understanding instant gratification.
+* [⚛️🔄 Atomic Habits: An Easy & Proven Way to Build Good Habits & Break Bad Ones](../books/atomic-habits.md) by James Clear: Explores how small changes can lead to remarkable results in habit formation.  
+* [🔄🧠💪 The Power of Habit: Why We Do What We Do in Life and Business](../books/the-power-of-habit.md) by Charles Duhigg: Delves into the science of habit formation in individuals, organizations, and societies.  
+* [✅😌 Getting Things Done: The Art of Stress-Free Productivity](../books/getting-things-done-the-art-of-stress-free-productivity.md) by David Allen: A classic in productivity, offering a comprehensive system for organizing tasks and managing workflow.  
+* [❤️‍🔥💪 Grit: The Power of Passion and Perseverance](../books/grit-the-power-of-passion-and-perseverance.md) by Angela Duckworth: Examines the power of passion and perseverance in achieving long-term goals.  
+* [🤔🐇🐢 Thinking, Fast and Slow](../books/thinking-fast-and-slow.md) by Daniel Kahneman: Explores the two systems that drive the way we think and make decisions, relevant to understanding instant gratification.

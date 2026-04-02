@@ -10,7 +10,7 @@ Channel: The Daily Show
 tags:
 youtube: https://youtu.be/ggIBtdtypCw
 ---
-[Home](/content/index.md) > [Videos](/content/videos/index.md)  
+[Home](../index.md) > [Videos](./index.md)  
 # 👑⬇️🗣️📺 No Kings Protests Defy GOP Expectations & Jon Gives Trump a Royal Inspection | The Daily Show  
 ![«No Kings» Protests Defy GOP Expectations & Jon Gives Trump a Royal Inspection | The Daily Show](https://youtu.be/ggIBtdtypCw)  
   
@@ -59,10 +59,10 @@ A: 💥 Yes, the video 🎥 featured a segment that compared specific actions of
   
 ### Similar ⚖️  
   
-* **[👑🚫📜2️⃣0️⃣ On Tyranny: Twenty Lessons from the Twentieth Century](/content/books/on-tyranny.md)** by Timothy Snyder  
+* **[👑🚫📜2️⃣0️⃣ On Tyranny: Twenty Lessons from the Twentieth Century](../books/on-tyranny.md)** by Timothy Snyder  
     * ✏️ This *New York Times* bestseller 📖 distills lessons from 20th-century authoritarian regimes into practical advice for citizens to **recognize and resist tyranny** in the present day.  
   
-* **[🗳️🏛️☠️ How Democracies Die](/content/books/how-democracies-die.md): What History Reveals About Our Future** by Steven Levitsky and Daniel Ziblatt  
+* **[🗳️🏛️☠️ How Democracies Die](../books/how-democracies-die.md): What History Reveals About Our Future** by Steven Levitsky and Daniel Ziblatt  
     * 🤔 Political scientists 🧐 examine how democracies often collapse not through violent coups, but through **slow erosion** by elected leaders who undermine democratic institutions, using tactics like **"constitutional hardball."**  
   
 ### Contrasting 🤝  
@@ -75,10 +75,10 @@ A: 💥 Yes, the video 🎥 featured a segment that compared specific actions of
   
 ### Creatively Related 🎭  
   
-* **[👁️ 1984](/content/books/1984.md)** by George Orwell  
+* **[👁️ 1984](../books/1984.md)** by George Orwell  
     * 📖 A classic dystopian  dystopia warning about a future where a **totalitarian regime** monitors all aspects of life, rewriting history and truth, highly relevant to discussions of **media manipulation** and **government overreach**.  
   
-* **[🙅‍♀️👹 It Can't Happen Here](/content/books/it-cant-happen-here.md)** by Sinclair Lewis  
+* **[🙅‍♀️👹 It Can't Happen Here](../books/it-cant-happen-here.md)** by Sinclair Lewis  
     * 🇺🇸 Written in 1935, this chillingly 🥶 prescient novel imagines the **rise of a populist American dictator** named Buzz Windrip, illustrating how an authoritarian movement could take root in the United States.  
   
 ## 🐦 Tweet  

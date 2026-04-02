@@ -7,7 +7,7 @@ share: true
 affiliate link: https://amzn.to/3FFXOeQ
 CTA: 🧠 Understand connections.
 ---
-[Home](/content/index.md) > [Books](/content/books/index.md)  
+[Home](../index.md) > [Books](./index.md)  
 # 🧠🧑‍🤝‍🧑 The Developing Mind: How Relationships and the Brain Interact to Shape Who We Are  
 [🛒 The Developing Mind: How Relationships and the Brain Interact to Shape Who We Are. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3FFXOeQ)  
   
@@ -44,10 +44,10 @@ CTA: 🧠 Understand connections.
   
 ### 🧠 Similar Reads (Interpersonal Neurobiology, Attachment, & Related Neuroscience)  
 1. 👁️ **Mindsight: The New Science of Personal Transformation** by Daniel J. Siegel: Explores the concept of "mindsight" (seeing one's own mind and others') in more detail, with practical applications for personal growth.  
-2. 👨‍👩‍👧‍👦 **[🤱🏼🤿🪞🌱 Parenting from the Inside Out: How a Deeper Self-Understanding Can Help You Raise Children Who Thrive](/content/books/parenting-from-the-inside-out-how-a-deeper-self-understanding-can-help-you-raise-children-who-thrive.md)** by Daniel J. Siegel & Mary Hartzell: Applies IPNB principles specifically to parenting, focusing on how parents' self-understanding impacts their relationship with their children.  
-3. **[🕳️🧠👶🏽 The Whole-Brain Child: 12 Revolutionary Strategies to Nurture Your Child's Developing Mind](/content/books/the-whole-brain-child.md)** by Daniel J. Siegel & Tina Payne Bryson: Offers practical strategies for parents based on brain development, helping nurture emotional intelligence in children.  
+2. 👨‍👩‍👧‍👦 **[🤱🏼🤿🪞🌱 Parenting from the Inside Out: How a Deeper Self-Understanding Can Help You Raise Children Who Thrive](./parenting-from-the-inside-out-how-a-deeper-self-understanding-can-help-you-raise-children-who-thrive.md)** by Daniel J. Siegel & Mary Hartzell: Applies IPNB principles specifically to parenting, focusing on how parents' self-understanding impacts their relationship with their children.  
+3. **[🕳️🧠👶🏽 The Whole-Brain Child: 12 Revolutionary Strategies to Nurture Your Child's Developing Mind](./the-whole-brain-child.md)** by Daniel J. Siegel & Tina Payne Bryson: Offers practical strategies for parents based on brain development, helping nurture emotional intelligence in children.  
 4. 🧘 **Aware: The Science and Practice of Presence** by Daniel J. Siegel: Focuses on mindfulness practices and the Wheel of Awareness tool to cultivate integration and well-being.  
-5. **[🤕🎼🧠 The Body Keeps the Score: Brain, Mind, and Body in the Healing of Trauma](/content/books/the-body-keeps-the-score-brain-mind-and-body-in-the-healing-of-trauma.md)** by Bessel van der Kolk: While focused on trauma, it deeply explores the interplay of brain, body, and relationships, complementing Siegel's work.  
+5. **[🤕🎼🧠 The Body Keeps the Score: Brain, Mind, and Body in the Healing of Trauma](./the-body-keeps-the-score-brain-mind-and-body-in-the-healing-of-trauma.md)** by Bessel van der Kolk: While focused on trauma, it deeply explores the interplay of brain, body, and relationships, complementing Siegel's work.  
 6. 📚 **Affect Regulation and the Origin of the Self: The Neurobiology of Emotional Development** by Allan N. Schore: A seminal, more academic work on the neurobiology of attachment and emotional development, often cited alongside Siegel.  
 7. 🗣️ **The Polyvagal Theory: Neurophysiological Foundations of Emotions, Attachment, Communication, Self-Regulation** by Stephen W. Porges: Explores the neurological underpinnings of safety, connection, and social engagement, highly relevant to IPNB.  
 8. 🧠 **Buddha's Brain: The Practical Neuroscience of Happiness, Love, and Wisdom** by Rick Hanson & Richard Mendius: Blends neuroscience, positive psychology, and mindfulness, offering practical ways to reshape the brain for well-being.  
@@ -65,9 +65,9 @@ CTA: 🧠 Understand connections.
 2. 🧠 **The Mindful Brain: Reflection and Attunement in the Cultivation of Well-Being** by Daniel J. Siegel: A direct follow-up to *The Developing Mind*, focusing specifically on the neuroscience of mindfulness.  
 3. 🫂 **Social: Why Our Brains Are Wired to Connect** by Matthew D. Lieberman: Explores the neuroscience of social connection, reinforcing the "interpersonal" aspect of IPNB from a social neuroscience perspective.  
 4. 💔 **Lost Connections: Uncovering the Real Causes of Depression – and the Unexpected Solutions** by Johann Hari: Argues that disconnection (from meaningful work, people, values, etc.) is a primary driver of depression and anxiety, resonating with the IPNB focus on relationships and integration for well-being.  
-5. **[🧠🤔 How Emotions Are Made: The Secret Life of the Brain](/content/books/how-emotions-are-made-the-secret-life-of-the-brain.md)** by Lisa Feldman Barrett: Offers a theory of constructed emotion, providing a different but related perspective on how the brain creates emotional experiences.  
-6. **[❤️🧠 Unconditional Parenting: Moving from Rewards and Punishments to Love and Reason](/content/books/unconditional-parenting-moving-from-rewards-and-punishments-to-love-and-reason.md)** by Alfie Kohn: Advocates for parenting based on children's needs and understanding, challenging traditional discipline methods, which aligns with the attuned relational approach implicit in IPNB.  
+5. **[🧠🤔 How Emotions Are Made: The Secret Life of the Brain](./how-emotions-are-made-the-secret-life-of-the-brain.md)** by Lisa Feldman Barrett: Offers a theory of constructed emotion, providing a different but related perspective on how the brain creates emotional experiences.  
+6. **[❤️🧠 Unconditional Parenting: Moving from Rewards and Punishments to Love and Reason](./unconditional-parenting-moving-from-rewards-and-punishments-to-love-and-reason.md)** by Alfie Kohn: Advocates for parenting based on children's needs and understanding, challenging traditional discipline methods, which aligns with the attuned relational approach implicit in IPNB.  
 7. 🎉 **Thank & Grow Rich: A 30-Day Experiment in Shameless Gratitude and Unabashed Joy** by Pam Grout: Explores the power of mindset and gratitude, touching on themes of subjective experience shaping reality, albeit from a less neurobiological perspective.  
   
-## 💬 [Gemini](/content/software/gemini.md) Prompt (gemini-2.5-pro-exp-03-25)  
+## 💬 [Gemini](../software/gemini.md) Prompt (gemini-2.5-pro-exp-03-25)  
 > Write a markdown-formatted (start headings at level H2) book report, followed by a plethora of additional similar, contrasting, and creatively related book recommendations on The Developing Mind: How Relationships and the Brain Interact to Shape Who We Are. Be thorough in content discussed but concise and economical with your language. Structure the report with section headings and bulleted lists to avoid long blocks of text.

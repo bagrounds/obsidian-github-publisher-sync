@@ -10,7 +10,7 @@ Channel: Big Think
 tags:
 youtube: https://youtu.be/ESVLE2jX-8k
 ---
-[Home](/content/index.md) > [Videos](/content/videos/index.md)  
+[Home](../index.md) > [Videos](./index.md)  
 # 👶🧠➡️👴🏽🕳️ How childhood wiring impacts adult life, in 90 minutes | Becky Kennedy: Full Interview  
 ![How childhood wiring impacts adult life, in 90 minutes | Becky Kennedy: Full Interview](https://youtu.be/ESVLE2jX-8k)  
   
@@ -55,9 +55,9 @@ youtube: https://youtu.be/ESVLE2jX-8k
   
 ### ↔️ Similar  
   
-* [❤️👪 Good Inside: A Guide to Becoming the Parent You Want to Be](/content/books/good-inside-a-guide-to-becoming-the-parent-you-want-to-be.md)  
-* [🕳️🧠👶🏽 The Whole-Brain Child: 12 Revolutionary Strategies to Nurture Your Child's Developing Mind](/content/books/the-whole-brain-child.md) by Daniel J. Siegel and Tina Payne Bryson explains how to integrate a childs brain through connection.  
-* [❤️🧠 Unconditional Parenting: Moving from Rewards and Punishments to Love and Reason](/content/books/unconditional-parenting-moving-from-rewards-and-punishments-to-love-and-reason.md) by Alfie Kohn advocates for moving beyond carrots and sticks to reach a childs heart.  
+* [❤️👪 Good Inside: A Guide to Becoming the Parent You Want to Be](../books/good-inside-a-guide-to-becoming-the-parent-you-want-to-be.md)  
+* [🕳️🧠👶🏽 The Whole-Brain Child: 12 Revolutionary Strategies to Nurture Your Child's Developing Mind](../books/the-whole-brain-child.md) by Daniel J. Siegel and Tina Payne Bryson explains how to integrate a childs brain through connection.  
+* [❤️🧠 Unconditional Parenting: Moving from Rewards and Punishments to Love and Reason](../books/unconditional-parenting-moving-from-rewards-and-punishments-to-love-and-reason.md) by Alfie Kohn advocates for moving beyond carrots and sticks to reach a childs heart.  
   
 ### 🆚 Contrasting  
   
@@ -67,4 +67,4 @@ youtube: https://youtu.be/ESVLE2jX-8k
 ### 🎨 Creatively Related  
   
 * 🫂 No Bad Parts by Richard C. Schwartz introduces the Internal Family Systems model that informs the good inside philosophy.  
-* [👩🏼‍❤️‍💋‍👨🏻🔗 Attached: The New Science of Adult Attachment and How It Can Help You Find - and Keep - Love](/content/books/attached-the-new-science-of-adult-attachment-and-how-it-can-help-you-find-and-keep-love.md) by Amir Levine and Rachel Heller explains how adult attachment styles are formed by early childhood experiences.
+* [👩🏼‍❤️‍💋‍👨🏻🔗 Attached: The New Science of Adult Attachment and How It Can Help You Find - and Keep - Love](../books/attached-the-new-science-of-adult-attachment-and-how-it-can-help-you-find-and-keep-love.md) by Amir Levine and Rachel Heller explains how adult attachment styles are formed by early childhood experiences.

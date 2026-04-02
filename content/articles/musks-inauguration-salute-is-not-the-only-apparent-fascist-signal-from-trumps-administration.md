@@ -7,7 +7,7 @@ URL: https://bagrounds.org/articles/musks-inauguration-salute-is-not-the-only-ap
 Author:
 tags:
 ---
-[Home](/content/index.md) > [Articles](/content/articles/index.md)  
+[Home](../index.md) > [Articles](./index.md)  
 # 🙋‍♂️🚩🚫 Musk’s inauguration salute is not the only apparent fascist signal from Trump’s administration  
   
 ## 🤖 AI Summary Expansion  
@@ -32,12 +32,12 @@ The controversy surrounding 🚀 **Musk's** salute is contextualized by other si
   
 ### ↔️ Similar  
 * 🧠 The Authoritarians by Bob Altemeyer: 📚 Analyzes the psychology of followers who enable 👤 authoritarian leaders, relevant to understanding the varied public reception of **Musk's** action.  
-* [👑🚫📜2️⃣0️⃣ On Tyranny: Twenty Lessons from the Twentieth Century](/content/books/on-tyranny.md) by Timothy Snyder: 🗺️ Offers historical guidance on recognizing and 🛡️ resisting the erosion of 🏛️ democracy, applicable to analyzing modern political signals.  
+* [👑🚫📜2️⃣0️⃣ On Tyranny: Twenty Lessons from the Twentieth Century](../books/on-tyranny.md) by Timothy Snyder: 🗺️ Offers historical guidance on recognizing and 🛡️ resisting the erosion of 🏛️ democracy, applicable to analyzing modern political signals.  
   
 ### 🆚 Contrasting  
-* [😇🧠 The Righteous Mind: Why Good People Are Divided by Politics and Religion](/content/books/the-righteous-mind.md) by Jonathan Haidt: ⚖️ Provides a framework for understanding the deep partisan divides in interpreting the gesture's true **intent**.  
+* [😇🧠 The Righteous Mind: Why Good People Are Divided by Politics and Religion](../books/the-righteous-mind.md) by Jonathan Haidt: ⚖️ Provides a framework for understanding the deep partisan divides in interpreting the gesture's true **intent**.  
 * 🤫 The Power Broker: Robert Moses and the Fall of New York by Robert A. Caro: 🏗️ Illustrates how unelected figures wield massive influence, drawing parallels to concerns about **techno-elite** power in politics.  
   
 ### 🎨 Creatively Related  
-* [🤖⚠️📈 Superintelligence: Paths, Dangers, Strategies](/content/books/superintelligence-paths-dangers-strategies.md) by Nick Bostrom: 🧠 Explores existential risks tied to unchecked power held by technological figures like **Musk**.  
-* [📺💀 Amusing Ourselves to Death: Public Discourse in the Age of Show Business](/content/books/amusing-ourselves-to-death-public-discourse-in-the-age-of-show-business.md) by Neil Postman: 📺 Critiques how media turns serious politics into **spectacle**, explaining the intense focus on the gesture's visual nature.
+* [🤖⚠️📈 Superintelligence: Paths, Dangers, Strategies](../books/superintelligence-paths-dangers-strategies.md) by Nick Bostrom: 🧠 Explores existential risks tied to unchecked power held by technological figures like **Musk**.  
+* [📺💀 Amusing Ourselves to Death: Public Discourse in the Age of Show Business](../books/amusing-ourselves-to-death-public-discourse-in-the-age-of-show-business.md) by Neil Postman: 📺 Critiques how media turns serious politics into **spectacle**, explaining the intense focus on the gesture's visual nature.

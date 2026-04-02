@@ -7,7 +7,7 @@ share: true
 CTA: 🧬 Reshape biopharma's future.
 affiliate link: https://amzn.to/4p4mZJB
 ---
-[Home](/content/index.md) > [Books](/content/books/index.md)  
+[Home](../index.md) > [Books](./index.md)  
 # 🧑‍🤝‍🧑⚙️🧬 Beyond the Science: How People, Process, and Systems Transform the Business of Life Sciences  
 [🛒 Beyond the Science: How People, Process, and Systems Transform the Business of Life Sciences. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4p4mZJB)  
   
@@ -66,13 +66,13 @@ affiliate link: https://amzn.to/4p4mZJB
 ## 📚 Book Recommendations  
   
 ### 📖 Similar Books  
-- [👍➡️👍👍 Good to Great: Why Some Companies Make the Leap...And Others Don't](/content/books/good-to-great.md) by Jim Collins  
-- [📈⚙️♾️ The Goal: A Process of Ongoing Improvement](/content/books/the-goal.md) by Eliyahu M. Goldratt  
+- [👍➡️👍👍 Good to Great: Why Some Companies Make the Leap...And Others Don't](./good-to-great.md) by Jim Collins  
+- [📈⚙️♾️ The Goal: A Process of Ongoing Improvement](./the-goal.md) by Eliyahu M. Goldratt  
 - 🚦 Lean Thinking by James P. Womack and Daniel T. Jones  
   
 ### 📖 Contrasting Books  
-- [💡🤖💰💥🏢📉 The Innovator's Dilemma: When New Technologies Cause Great Firms to Fail](/content/books/the-innovators-dilemma.md) by Clayton M. Christensen  
-- [🤔🐇🐢 Thinking, Fast and Slow](/content/books/thinking-fast-and-slow.md) by Daniel Kahneman  
+- [💡🤖💰💥🏢📉 The Innovator's Dilemma: When New Technologies Cause Great Firms to Fail](./the-innovators-dilemma.md) by Clayton M. Christensen  
+- [🤔🐇🐢 Thinking, Fast and Slow](./thinking-fast-and-slow.md) by Daniel Kahneman  
   
 ### 📖 Related Books  
 - 🧬 The Digital Transformation of the Life Sciences Industry by Inder Singh  

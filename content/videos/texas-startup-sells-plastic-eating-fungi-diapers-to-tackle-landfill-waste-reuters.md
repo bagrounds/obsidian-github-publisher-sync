@@ -10,7 +10,7 @@ Channel: Reuters
 tags:
 youtube: https://youtu.be/iWfTopfzBHA
 ---
-[Home](/content/index.md) > [Videos](/content/videos/index.md)  
+[Home](../index.md) > [Videos](./index.md)  
 # 💩🍄👶♻️🗑️ Texas startup sells plastic-eating fungi diapers to tackle landfill waste | REUTERS  
 ![Texas startup sells plastic-eating fungi diapers to tackle landfill waste | REUTERS](https://youtu.be/iWfTopfzBHA)  
   
@@ -27,6 +27,6 @@ youtube: https://youtu.be/iWfTopfzBHA
 * 🚀 Hero Technologies plans to expand this technology \[[02:22](http://www.youtube.com/watch?v=iWfTopfzBHA&t=142)\].  
   
 ## 📚 Book Recommendations  
-* **[🍄🌍🧠🔮 Entangled Life: How Fungi Make Our Worlds, Change Our Minds & Shape Our Futures](/content/books/entangled-life-how-fungi-make-our-worlds-change-our-minds-shape-our-futures.md)** by Merlin Sheldrake: This book explores the fascinating world of fungi and their vital role in ecosystems 🌿 and human life.  
+* **[🍄🌍🧠🔮 Entangled Life: How Fungi Make Our Worlds, Change Our Minds & Shape Our Futures](../books/entangled-life-how-fungi-make-our-worlds-change-our-minds-shape-our-futures.md)** by Merlin Sheldrake: This book explores the fascinating world of fungi and their vital role in ecosystems 🌿 and human life.  
 * 🚫 **Plastic-Free: How I Kicked Plastic, and How You Can Too** by Beth Terry: This book provides practical advice on reducing plastic consumption and explores the environmental impact 🌎 of plastic waste.  
-* **[🪢🌾 Braiding Sweetgrass: Indigenous Wisdom, Scientific Knowledge, and the Teachings of Plants](/content/books/braiding-sweetgrass.md)** by Robin Wall Kimmerer: While not directly about fungi 🍄 or plastics ♻️, this book offers a perspective on ecological relationships and the importance of sustainability 🌎.
+* **[🪢🌾 Braiding Sweetgrass: Indigenous Wisdom, Scientific Knowledge, and the Teachings of Plants](../books/braiding-sweetgrass.md)** by Robin Wall Kimmerer: While not directly about fungi 🍄 or plastics ♻️, this book offers a perspective on ecological relationships and the importance of sustainability 🌎.

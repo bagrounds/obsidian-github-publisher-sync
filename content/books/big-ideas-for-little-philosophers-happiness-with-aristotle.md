@@ -6,7 +6,7 @@ URL: https://bagrounds.org/books/big-ideas-for-little-philosophers-happiness-wit
 share: true
 affiliate link: https://amzn.to/3ZLGBaU
 ---
-[Home](/content/index.md) > [Books](/content/books/index.md)  
+[Home](../index.md) > [Books](./index.md)  
 # 🤔👶😊 Big Ideas for Little Philosophers: Happiness with Aristotle  
 [🛒 Big Ideas for Little Philosophers: Happiness with Aristotle. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3ZLGBaU)  
   
@@ -37,12 +37,12 @@ affiliate link: https://amzn.to/3ZLGBaU
   
 * 📚 **Other Books in the "Big Ideas for Little Philosophers" Series:** 🌍 Explore more philosophers and their core ideas presented in the same accessible board book format.  
     * ⚖️ *Equality with Simone de Beauvoir*  
-    * [❓🏛️👶 Truth with Socrates](/content/books/big-ideas-for-little-philosophers-truth-with-socrates.md)  
-    * [🤔👶💭 Imagination with René Descartes](/content/books/big-ideas-for-little-philosophers-imagination-with-rene-descartes.md)  
+    * [❓🏛️👶 Truth with Socrates](./big-ideas-for-little-philosophers-truth-with-socrates.md)  
+    * [🤔👶💭 Imagination with René Descartes](./big-ideas-for-little-philosophers-imagination-with-rene-descartes.md)  
     * ❤️ *Kindness with Confucius*  
     * 💞 *Love with Plato*  
 * 🦸 **Ordinary People Change the World Series by Brad Meltzer:** 📚 While not strictly philosophy, this biography series introduces young readers to historical figures who embodied important virtues and ideas.  
-* **[👶📚 Baby University Series](/content/books/baby-university-complete-for-babies-board-book-set.md) by Chris Ferrie:** 🔬 This series introduces complex scientific concepts using simple language and illustrations for babies and toddlers, similar in approach to making "big ideas" accessible.  
+* **[👶📚 Baby University Series](./baby-university-complete-for-babies-board-book-set.md) by Chris Ferrie:** 🔬 This series introduces complex scientific concepts using simple language and illustrations for babies and toddlers, similar in approach to making "big ideas" accessible.  
 * 😂 **Plato and the Platypus Walk into a Bar... by Thomas Cathcart and Daniel Klein (Adapted for Young Readers):** 🤣 While the original is for adults, simplified versions or similar concept books that use humor to introduce philosophical ideas could be a good fit for slightly older children.  
 * 🤔 **"Big Ideas for Curious Minds: An Introduction to Philosophy" by The School of Life:** 🧑‍🏫 Aimed at slightly older children, this book covers a range of philosophical topics in an engaging way.  
   
@@ -65,16 +65,16 @@ affiliate link: https://amzn.to/3ZLGBaU
     * 🎁 *The Quiltmaker's Gift* by Jeff Brumbeau (explores the joy of generosity).  
     * 🧑‍🤝‍🧑 Books specifically about friendship and its value.  
 * ❓ **Stories Encouraging Inquiry and Asking Questions:** ❓ Aligned with the idea of children as "little philosophers" who ask big questions.  
-    * [👦🟣🖍️ Harold and the Purple Crayon](/content/books/harold-and-the-purple-crayon.md) by Crockett Johnson (explores imagination and creativity).  
+    * [👦🟣🖍️ Harold and the Purple Crayon](./harold-and-the-purple-crayon.md) by Crockett Johnson (explores imagination and creativity).  
     * 🌍 Books that encourage curiosity about the world.  
 * 🦊 **Fables and Folktales:** 👵 Many traditional stories offer simple moral lessons and insights into human nature and the consequences of different actions, often touching on themes relevant to living a good life.  
 * 🤝 **Books on Social-Emotional Learning (SEL):** ❤️ These books help children develop self-awareness, self-management, social awareness, relationship skills, and responsible decision-making, all of which contribute to a flourishing life.  
-* **[🤴 The Little Prince](/content/books/the-little-prince.md) by Antoine de Saint-Exupéry:** 🌟 While for slightly older children (or to be read with adults), this classic is deeply philosophical and touches on themes of friendship, love, and what is truly important in life, resonating with some of Aristotle's ideas on meaningful relationships.  
+* **[🤴 The Little Prince](./the-little-prince.md) by Antoine de Saint-Exupéry:** 🌟 While for slightly older children (or to be read with adults), this classic is deeply philosophical and touches on themes of friendship, love, and what is truly important in life, resonating with some of Aristotle's ideas on meaningful relationships.  
 * 👨‍⚖️ **Books on Ethics for Children:** ✅ More direct introductions to ethical reasoning and making good choices.  
     * 🤔 *Ethics for Kids: 40 Fun Projects That Help You Explore Good and Evil, Right and Wrong, and More* by Sharon Kaye.  
 * 🌟 **Biographies of People Who Lived Virtuous or Meaningful Lives:** 📖 Stories of individuals who exemplified courage, kindness, perseverance, and other virtues.  
   
-## 💬 [Gemini](/content/software/gemini.md) Prompt (gemini-2.5-flash-preview-04-17)  
+## 💬 [Gemini](../software/gemini.md) Prompt (gemini-2.5-flash-preview-04-17)  
 > Write a markdown-formatted (start headings at level H2) book report, followed by a plethora of additional similar, contrasting, and creatively related book recommendations on Big Ideas for Little Philosophers: Happiness with Aristotle. Be thorough in content discussed but concise and economical with your language. Structure the report with section headings and bulleted lists to avoid long blocks of text.  
   
 ## 🐦 Tweet  

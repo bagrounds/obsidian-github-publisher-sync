@@ -7,7 +7,7 @@ share: true
 affiliate link: https://amzn.to/47JFbma
 CTA: ⚖️ Uphold equality.
 ---
-[Home](/content/index.md) > [Books](/content/books/index.md)  
+[Home](../index.md) > [Books](./index.md)  
 # 🙋‍♂️🏛️ Why I Am a Liberal: Being Definitions and Personal Confessions of Faith by the Best Minds of the Liberal Party  
 [🛒 Why I Am a Liberal: Being Definitions and Personal Confessions of Faith by the Best Minds of the Liberal Party. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/47JFbma)  
   
@@ -44,7 +44,7 @@ CTA: ⚖️ Uphold equality.
 ### ✨ Creatively Related Books  
   
 * 📖 **Letter from Birmingham Jail by Martin Luther King Jr.:** ✉️ While a powerful civil rights document rather than a political party manifesto, King's letter is a profound "personal confession of faith" in the principles of justice, equality, and nonviolent direct action, reflecting a deeply held conviction in a liberal cause.  
-* **[😇🧠 The Righteous Mind: Why Good People Are Divided by Politics and Religion](/content/books/the-righteous-mind.md) by Jonathan Haidt:** 🧠 This book delves into the psychological and moral foundations of political divisions, offering insights into why individuals gravitate towards different ideologies, including liberalism and conservatism. 🧐 It provides a modern, analytical lens on the "why I am a..." question.  
+* **[😇🧠 The Righteous Mind: Why Good People Are Divided by Politics and Religion](./the-righteous-mind.md) by Jonathan Haidt:** 🧠 This book delves into the psychological and moral foundations of political divisions, offering insights into why individuals gravitate towards different ideologies, including liberalism and conservatism. 🧐 It provides a modern, analytical lens on the "why I am a..." question.  
 * 📖 **The Social Contract by Jean-Jacques Rousseau:** 🤝 An influential work from the Enlightenment, this book explores the basis of legitimate political authority and the concept of the general will. 💡 It represents an earlier, yet foundational, attempt to articulate the principles of a just society, influencing subsequent liberal thought and raising questions about collective versus individual freedoms.  
   
 ## 💬 [Gemini](https://gemini.google.com) Prompt (gemini-2.5-flash)  

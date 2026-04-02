@@ -10,7 +10,7 @@ Channel: Katie Couric
 tags:
 youtube: https://youtu.be/NntPWHpkPqQ
 ---
-[Home](/content/index.md) > [Videos](/content/videos/index.md)  
+[Home](../index.md) > [Videos](./index.md)  
 # 🇩🇪⚖️🇺🇸 Blueprint Why Germany's Legacy of Accountability Should Be A Blueprint for America's Moral Reckoning  
 ![Why Germany's Legacy of Accountability Should Be A Blueprint for America's Moral Reckoning](https://youtu.be/NntPWHpkPqQ)  
   
@@ -53,8 +53,8 @@ A: 💡 *Romanticizing* the past and glorifying eras of *violence* and *injustic
   
 ### Similar Books (The US Reckoning)  
   
-* **[🧑🏿‍⚖️🔄 Just Mercy: A Story of Justice and Redemption](/content/books/just-mercy-a-story-of-justice-and-redemption.md)** by Bryan Stevenson. This book details the author's work with the Equal Justice Initiative, providing a personal foundation for the principles of *justice* and *redemption* discussed in the video.  
-* **[🧑🏿⛓️🙈 The New Jim Crow: Mass Incarceration in the Age of Colorblindness](/content/books/the-new-jim-crow-mass-incarceration-in-the-age-of-colorblindness.md)** by Michelle Alexander. It argues that mass *incarceration* today functions as a modern racial caste system, directly relating to the video’s claim that racial hierarchy was never fully *repudiated* \[[14:09](http://www.youtube.com/watch?v=NntPWHpkPqQ&t=849)].  
+* **[🧑🏿‍⚖️🔄 Just Mercy: A Story of Justice and Redemption](../books/just-mercy-a-story-of-justice-and-redemption.md)** by Bryan Stevenson. This book details the author's work with the Equal Justice Initiative, providing a personal foundation for the principles of *justice* and *redemption* discussed in the video.  
+* **[🧑🏿⛓️🙈 The New Jim Crow: Mass Incarceration in the Age of Colorblindness](../books/the-new-jim-crow-mass-incarceration-in-the-age-of-colorblindness.md)** by Michelle Alexander. It argues that mass *incarceration* today functions as a modern racial caste system, directly relating to the video’s claim that racial hierarchy was never fully *repudiated* \[[14:09](http://www.youtube.com/watch?v=NntPWHpkPqQ&t=849)].  
 * 📚 **White Rage** by Carol Anderson. This book supports the video's observation of *historical resistance*, showing how Black advancement is repeatedly met with a calculated, policy-driven *backlash* from dominant powers \[[03:04](http://www.youtube.com/watch?v=NntPWHpkPqQ&t=184)].  
   
 ### Contrasting Books (Alternative Historical Perspectives)  

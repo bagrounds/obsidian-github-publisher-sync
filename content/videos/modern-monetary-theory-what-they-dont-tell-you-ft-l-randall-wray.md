@@ -12,7 +12,7 @@ tags:
 youtube: https://youtu.be/o2FvYmBq1jg
 CTA: 🧐 Question economic orthodoxy.
 ---
-[Home](/content/index.md) > [Videos](/content/videos/index.md)  
+[Home](../index.md) > [Videos](./index.md)  
 # 💰🤫 Modern Monetary Theory: What They Don’t Tell You (Ft. L. Randall Wray)  
 ![Modern Monetary Theory: What They Don’t Tell You (Ft. L. Randall Wray)](https://youtu.be/o2FvYmBq1jg)  
   
@@ -50,13 +50,13 @@ CTA: 🧐 Question economic orthodoxy.
 ## 📚 Book Recommendations 📖  
   
 ### ↔️ Similar 🤝  
-* **[💰📉➡️📈🗳️ The Deficit Myth: Modern Monetary Theory and the Birth of the People's Economy](/content/books/the-deficit-myth.md)** by Stephanie Kelton is a bestselling, accessible guide that explains MMT concepts and advocates for policies like the Job Guarantee.  
-* **[💸😇 The 7 Deadly Innocent Frauds of Economic Policy](/content/books/the-7-deadly-innocent-frauds-of-economic-policy.md)** by Warren Mosler is a foundational MMT text by one of the theory's originators, presenting core MMT ideas in a direct, easy-to-read format.  
+* **[💰📉➡️📈🗳️ The Deficit Myth: Modern Monetary Theory and the Birth of the People's Economy](../books/the-deficit-myth.md)** by Stephanie Kelton is a bestselling, accessible guide that explains MMT concepts and advocates for policies like the Job Guarantee.  
+* **[💸😇 The 7 Deadly Innocent Frauds of Economic Policy](../books/the-7-deadly-innocent-frauds-of-economic-policy.md)** by Warren Mosler is a foundational MMT text by one of the theory's originators, presenting core MMT ideas in a direct, easy-to-read format.  
   
 ### 🆚 Contrasting ⚔️  
 * 📘 **A Monetary and Fiscal History of the United States, 1961–2021** by Alan S. Blinder offers a traditional, mainstream macroeconomic perspective, providing a historical context on US fiscal and monetary policy that contrasts with MMT's interpretations.  
 * 📙 **Modern Monetary Theory: A Comprehensive and Constructive Criticism** by Eduardo Garzón Espinosa offers a detailed, balanced critique of MMT, examining its core claims on money, debt, and inflation from an opposing standpoint.  
   
 ### 🎨 Creatively Related 💡  
-* **[🏛️💰 Debt: The First 5,000 Years](/content/books/debt-the-first-5000-years.md)** by David Graeber is an anthropological work that strongly supports the MMT perspective on the origins of money, arguing that it arose from systems of credit and debt, not barter.  
-* **[💰🏭🌍 The Value of Everything: Making and Taking in the Global Economy](/content/books/the-value-of-everything-making-and-taking-in-the-global-economy.md)** by Mariana Mazzucato explores the concept of value creation, arguing for an active role of government in the economy, which aligns with MMT's view of government as a necessary enabler of economic activity.
+* **[🏛️💰 Debt: The First 5,000 Years](../books/debt-the-first-5000-years.md)** by David Graeber is an anthropological work that strongly supports the MMT perspective on the origins of money, arguing that it arose from systems of credit and debt, not barter.  
+* **[💰🏭🌍 The Value of Everything: Making and Taking in the Global Economy](../books/the-value-of-everything-making-and-taking-in-the-global-economy.md)** by Mariana Mazzucato explores the concept of value creation, arguing for an active role of government in the economy, which aligns with MMT's view of government as a necessary enabler of economic activity.

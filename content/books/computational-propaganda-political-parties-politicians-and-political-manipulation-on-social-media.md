@@ -7,7 +7,7 @@ share: true
 CTA: 🧐 Uncover online deception.
 affiliate link: https://amzn.to/3KULv0G
 ---
-[Home](/content/index.md) > [Books](/content/books/index.md)  
+[Home](../index.md) > [Books](./index.md)  
 # 📱📢🤖 Computational Propaganda: Political Parties, Politicians, and Political Manipulation on Social Media  
 [🛒 Computational Propaganda: Political Parties, Politicians, and Political Manipulation on Social Media. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3KULv0G)  
   
@@ -94,11 +94,11 @@ A: ⚔️ Combating computational propaganda requires interdisciplinary research
 ## 📚 Book Recommendations  
   
 ### 📖 Similar Reads  
-* [🤖🏛️ Lie Machines: How to Save Democracy from Troll Armies, Deceitful Robots, Junk News Operations, and Political Operatives](/content/books/lie-machines-how-to-save-democracy-from-troll-armies-deceitful-robots-junk-news-operations-and-political-operatives.md) by Philip N. Howard.  
+* [🤖🏛️ Lie Machines: How to Save Democracy from Troll Armies, Deceitful Robots, Junk News Operations, and Political Operatives](./lie-machines-how-to-save-democracy-from-troll-armies-deceitful-robots-junk-news-operations-and-political-operatives.md) by Philip N. Howard.  
     * 🔍 Expands on the mechanisms and impacts of digital disinformation.  
-* [🧠🧑‍💻 The Hacking of the American Mind: The Science Behind the Corporate Takeover of Our Bodies and Brains](/content/books/the-hacking-of-the-american-mind-the-science-behind-the-corporate-takeover-of-our-bodies-and-brains.md) by Robert Lustig.  
+* [🧠🧑‍💻 The Hacking of the American Mind: The Science Behind the Corporate Takeover of Our Bodies and Brains](./the-hacking-of-the-american-mind-the-science-behind-the-corporate-takeover-of-our-bodies-and-brains.md) by Robert Lustig.  
     * 🤯 Examines how tech platforms exploit psychology to manipulate users.  
-* [👁️‍🗨️💰⛓️👤 The Age of Surveillance Capitalism: The Fight for a Human Future at the New Frontier of Power](/content/books/the-age-of-surveillance-capitalism.md) by Shoshana Zuboff.  
+* [👁️‍🗨️💰⛓️👤 The Age of Surveillance Capitalism: The Fight for a Human Future at the New Frontier of Power](./the-age-of-surveillance-capitalism.md) by Shoshana Zuboff.  
     * 💰 Investigates how tech giants profit from predicting and modifying human behavior.  
   
 ### 🤔 Contrasting Perspectives  
@@ -110,9 +110,9 @@ A: ⚔️ Combating computational propaganda requires interdisciplinary research
 ### 🎨 Creatively Related  
 * 🇦🇺 Dark Emu by Bruce Pascoe.  
     * 📜 A non-fiction book that challenges traditional narratives and highlights historical disinformation, offering a different lens on how dominant narratives are constructed and maintained.  
-* [👁️ Nineteen Eighty-Four](/content/books/1984.md)r by George Orwell.  
+* [👁️ Nineteen Eighty-Four](./1984.md)r by George Orwell.  
     * 📕 A classic dystopian novel that explores themes of surveillance, propaganda, and manipulation of truth by an authoritarian regime, providing a fictional parallel to the concerns raised in Computational Propaganda.  
-* [📺💀 Amusing Ourselves to Death: Public Discourse in the Age of Show Business](/content/books/amusing-ourselves-to-death-public-discourse-in-the-age-of-show-business.md) by Neil Postman.  
+* [📺💀 Amusing Ourselves to Death: Public Discourse in the Age of Show Business](./amusing-ourselves-to-death-public-discourse-in-the-age-of-show-business.md) by Neil Postman.  
     * 📰 Examines how media forms shape public discourse, with television diminishing serious content to entertainment, offering historical context to contemporary concerns about online information quality.  
   
 ## 💬 [Gemini](https://gemini.google.com) Prompt (gemini-2.5-flash)  

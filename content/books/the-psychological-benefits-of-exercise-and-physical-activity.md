@@ -7,7 +7,7 @@ share: true
 affiliate link: https://amzn.to/3Gf0Uaa
 CTA: 💪 Embrace movement.
 ---
-[Home](/content/index.md) > [Books](/content/books/index.md)  
+[Home](../index.md) > [Books](./index.md)  
 # 🧠🏃 The Psychological Benefits of Exercise and Physical Activity  
 [🛒 The Psychological Benefits of Exercise and Physical Activity. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3Gf0Uaa)  
   
@@ -30,7 +30,7 @@ This report focuses on the themes presented in books and research concerning the
   
 ### 👍 Similar  
   
-* **[⚡🧠🏃 Spark: The Revolutionary New Science of Exercise and the Brain](/content/books/spark-the-revolutionary-new-science-of-exercise-and-the-brain.md)** by John J. Ratey. 👍 This book is highly recommended for its in-depth exploration of how aerobic exercise specifically impacts brain function and can mitigate symptoms of various mental health conditions.  
+* **[⚡🧠🏃 Spark: The Revolutionary New Science of Exercise and the Brain](./spark-the-revolutionary-new-science-of-exercise-and-the-brain.md)** by John J. Ratey. 👍 This book is highly recommended for its in-depth exploration of how aerobic exercise specifically impacts brain function and can mitigate symptoms of various mental health conditions.  
 * 🧠 **The Exercise Effect on Mental Health: Neurobiological Mechanisms** edited by Henning Budde and Mirko Wegner. 🔬 This text offers a detailed overview of the links between exercise and mental health, focusing on the underlying neurobiological mechanisms. ⚕️ It provides an evidence-based case for exercise as a treatment for mental illness and distress.  
 * 🏋️ **Psychological Dynamics of Physical Activity** (Multiple Editions). 🧠 This type of textbook provides an examination of the psychological antecedents and consequences of physical activity, covering mental health benefits and factors in exercise adoption and adherence.  
 * 🧠 **Keep Sharp: Build a Better Brain at Any Age** by Sanjay Gupta. 👴 While broader than just exercise, this book includes exercise as one of the key pillars for maintaining brain health and preventing cognitive decline.  
@@ -45,10 +45,10 @@ This report focuses on the themes presented in books and research concerning the
 ### 🎨 Creatively Related  
   
 * 🧠 **Psychology of Sport and Exercise** (Various Authors). 🏅 These books delve into the mental aspects of athletic performance, motivation, and the psychological experiences within sports and exercise contexts.  
-* **[🛠️💖 Shop Class as Soulcraft: An Inquiry Into the Value of Work](/content/books/shop-class-as-soulcraft-an-inquiry-into-the-value-of-work.md)** by Matthew B. Crawford. 🧠 This book explores the cognitive and psychological benefits of manual labor and skilled craftsmanship, offering a perspective on the mental engagement derived from physical activity that isn't necessarily traditional "exercise."  
-* **[🎨🙏✨ The Artist's Way: A Spiritual Path to Higher Creativity](/content/books/the-artists-way.md)** by Julia Cameron. 🚶 This popular book on unlocking creativity often incorporates physical activities like walking as tools for clearing the mind and fostering creative flow, linking physical movement to artistic and psychological processes.  
+* **[🛠️💖 Shop Class as Soulcraft: An Inquiry Into the Value of Work](./shop-class-as-soulcraft-an-inquiry-into-the-value-of-work.md)** by Matthew B. Crawford. 🧠 This book explores the cognitive and psychological benefits of manual labor and skilled craftsmanship, offering a perspective on the mental engagement derived from physical activity that isn't necessarily traditional "exercise."  
+* **[🎨🙏✨ The Artist's Way: A Spiritual Path to Higher Creativity](./the-artists-way.md)** by Julia Cameron. 🚶 This popular book on unlocking creativity often incorporates physical activities like walking as tools for clearing the mind and fostering creative flow, linking physical movement to artistic and psychological processes.  
 * 🏃 **Exercised: Why Something We Never Evolved to Do Is Healthy and Rewarding** by Daniel E. Lieberman. 🐒 This book takes an evolutionary perspective on physical activity, exploring why exercise, despite its benefits, is often viewed as a chore and how our evolutionary history shapes our relationship with movement.  
-* **[💪🧠 Endure: Mind, Body, and the Curiously Elastic Limits of Human Performance](/content/books/endure-mind-body-and-the-curiously-elastic-limits-of-human-performance.md)** by Alex Hutchinson. 🧠 This book investigates the science of human endurance, examining the psychological and physical factors that determine our limits and how we can push past them, offering insights into the mental fortitude developed through challenging physical activity.  
+* **[💪🧠 Endure: Mind, Body, and the Curiously Elastic Limits of Human Performance](./endure-mind-body-and-the-curiously-elastic-limits-of-human-performance.md)** by Alex Hutchinson. 🧠 This book investigates the science of human endurance, examining the psychological and physical factors that determine our limits and how we can push past them, offering insights into the mental fortitude developed through challenging physical activity.  
   
-## 💬 [Gemini](/content/software/gemini.md) Prompt (gemini-2.5-flash-preview-04-17)  
+## 💬 [Gemini](../software/gemini.md) Prompt (gemini-2.5-flash-preview-04-17)  
 > Write a markdown-formatted (start headings at level H2) book report, followed by a plethora of additional similar, contrasting, and creatively related book recommendations on The Psychological Benefits of Exercise and Physical Activity. Be thorough in content discussed but concise and economical with your language. Structure the report with section headings and bulleted lists to avoid long blocks of text.

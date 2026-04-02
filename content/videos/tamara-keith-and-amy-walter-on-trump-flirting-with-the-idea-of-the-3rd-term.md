@@ -10,7 +10,7 @@ Channel: PBS NewsHour
 tags:
 youtube: https://youtu.be/S-yqQ73IKW8
 ---
-[Home](/content/index.md) > [Videos](/content/videos/index.md)  
+[Home](../index.md) > [Videos](./index.md)  
 # 🇺🇸🔄👑😬 Tamara Keith and Amy Walter on Trump flirting with the idea of the 3rd term  
 ![Tamara Keith and Amy Walter on Trump flirting with the idea of the 3rd term](https://youtu.be/S-yqQ73IKW8)  
   
@@ -58,5 +58,5 @@ youtube: https://youtu.be/S-yqQ73IKW8
 - 💡 The Populist's Guide to 2020: A New Right and New Left Are Shaping America's Future by Krystal Ball and Saagar Enjeti: This book offers an analysis of modern populist movements from both the left and right, providing an alternative perspective to viewing the "Trump Party" as a singular, monolithic entity.  
   
 ### 🎨 Creatively Related  
-- [📺💀 Amusing Ourselves to Death: Public Discourse in the Age of Show Business](/content/books/amusing-ourselves-to-death-public-discourse-in-the-age-of-show-business.md) by Neil Postman: This classic work explores how the form of media—specifically television—changes the nature of public communication, which tangentially relates to the idea of a politician's power resting on their "shine" and ability to project an image of power.  
-- [🤔🐇🐢 Thinking, Fast and Slow](/content/books/thinking-fast-and-slow.md) by Daniel Kahneman: The book examines the two systems that drive the way people think, relating to the psychological underpinnings of why a politician's power can be based on whether **people believe he is powerful** and the resulting political maneuvering.
+- [📺💀 Amusing Ourselves to Death: Public Discourse in the Age of Show Business](../books/amusing-ourselves-to-death-public-discourse-in-the-age-of-show-business.md) by Neil Postman: This classic work explores how the form of media—specifically television—changes the nature of public communication, which tangentially relates to the idea of a politician's power resting on their "shine" and ability to project an image of power.  
+- [🤔🐇🐢 Thinking, Fast and Slow](../books/thinking-fast-and-slow.md) by Daniel Kahneman: The book examines the two systems that drive the way people think, relating to the psychological underpinnings of why a politician's power can be based on whether **people believe he is powerful** and the resulting political maneuvering.

@@ -7,7 +7,7 @@ share: true
 CTA: 💰 Analyze elites.
 affiliate link: https://amzn.to/3Lh3kas
 ---
-[Home](/content/index.md) > [Books](/content/books/index.md)  
+[Home](../index.md) > [Books](./index.md)  
 # 💰👑 How to be a Billionaire: Proven Strategies from the Titans of Wealth  
 [🛒 How to be a Billionaire: Proven Strategies from the Titans of Wealth. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3Lh3kas)  
   
@@ -83,7 +83,7 @@ affiliate link: https://amzn.to/3Lh3kas
 ### 📖 Related  
 * 🦉 Poor Charlie's Almanack by Charles T. Munger  
 * 🎭 The Art of Persuasion by Robert Greene  
-* [0️⃣➡️1️⃣ Zero To One](/content/books/zero-to-one.md) by Peter Thiel  
+* [0️⃣➡️1️⃣ Zero To One](./zero-to-one.md) by Peter Thiel  
   
 ## 🫵 What Do You Think?  
   

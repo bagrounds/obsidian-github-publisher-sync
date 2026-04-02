@@ -7,7 +7,7 @@ share: true
 affiliate link: https://amzn.to/3Zbj8Q4
 CTA: 🌱 Cultivate resilience.
 ---
-[Home](/content/index.md) > [Books](/content/books/index.md)  
+[Home](../index.md) > [Books](./index.md)  
 # 🌍🌿 Gaia's Garden: A Guide to Home-Scale Permaculture  
 [🛒 Gaia's Garden: A Guide to Home-Scale Permaculture. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3Zbj8Q4)  
   
@@ -51,7 +51,7 @@ CTA: 🌱 Cultivate resilience.
 ### 🌿 Similar Reads (Permaculture & Ecological Gardening)  
 * 📖 **Practical Permaculture** by Jessi Bloom and Dave Boehnlein: An excellent, well-illustrated broad introduction, covering basics often taught in introductory courses and outlining a design process for home landscapes.  
 * 🏙️ **The Permaculture City: Regenerative Design for Urban, Suburban, and Town Resilience** by Toby Hemenway: Hemenway's follow-up book, focusing specifically on applying permaculture beyond the garden to broader urban systems.  
-* **[🍎🌳 Edible Forest Gardens](/content/books/edible-forest-gardens.md) (Volumes 1 & 2)** by Dave Jacke and Eric Toensmeier: Considered a comprehensive and foundational work on designing layered, edible ecosystems, particularly in temperate climates. Volume 1 focuses on theory and Volume 2 on practice and species.  
+* **[🍎🌳 Edible Forest Gardens](./edible-forest-gardens.md) (Volumes 1 & 2)** by Dave Jacke and Eric Toensmeier: Considered a comprehensive and foundational work on designing layered, edible ecosystems, particularly in temperate climates. Volume 1 focuses on theory and Volume 2 on practice and species.  
 * 🌲 **Creating a Forest Garden** by Martin Crawford: Another key text focusing on the design and practice of temperate climate forest gardens.  
 * 🌱 **Introduction to Permaculture** by Bill Mollison and Reny Mia Slay: A more accessible introduction to the foundational concepts by one of permaculture's co-founders.  
 * 📐 **Permaculture Design: A Step-by-Step Guide** by Aranya: A practical guide offering a structured approach to the permaculture design process.  
@@ -61,7 +61,7 @@ CTA: 🌱 Cultivate resilience.
   
 ### ↔️ Contrasting Perspectives (Different Approaches to Food & Land)  
 * 🧑‍🌾 **The Market Gardener** by Jean-Martin Fortier: Focuses on intensive, small-scale *market* gardening using efficient, biointensive methods, which contrasts with the ecosystem-mimicry focus of permaculture, though shares organic principles.  
-* **[🌱🟩⬆️ Square Foot Gardening, 4th Edition: The World’s Most Popular Growing Method to Harvest MORE Food from Less Space](/content/books/square-foot-gardening-4th-edition-the-worlds-most-popular-growing-method-to-harvest-more-food-from-less-space.md)** by Mel Bartholomew: A highly structured, space-optimizing method focused on maximizing vegetable yields in small, gridded raised beds, contrasting with permaculture's emphasis on naturalistic design and perennial systems.  
+* **[🌱🟩⬆️ Square Foot Gardening, 4th Edition: The World’s Most Popular Growing Method to Harvest MORE Food from Less Space](./square-foot-gardening-4th-edition-the-worlds-most-popular-growing-method-to-harvest-more-food-from-less-space.md)** by Mel Bartholomew: A highly structured, space-optimizing method focused on maximizing vegetable yields in small, gridded raised beds, contrasting with permaculture's emphasis on naturalistic design and perennial systems.  
 * 🚜 **Books on Conventional/Industrial Agriculture:** While not specific titles from the search, texts focusing on large-scale monocultures, synthetic inputs, and mechanization would offer a stark contrast to Gaia's Garden's principles.  
 * 🤷‍♀️ **Clueless in the Garden** by Yvonne Cunnington: A general beginner's guide covering conventional gardening topics like non-edible plants, lawns, and basic horticulture, contrasting with Gaia's Garden's specialized ecological focus.  
   
@@ -80,8 +80,8 @@ CTA: 🌱 Cultivate resilience.
     * 🍎 **The Holistic Orchard** by Michael Phillips: Focuses on ecological orchard management.  
 * 🧘 **Philosophical / Foundational:**  
     * 🌾 **The One-Straw Revolution** by Masanobu Fukuoka: A classic manifesto on natural farming and minimal intervention, influential to permaculture's founders.  
-    * **[🏘️🧱🏗️ A Pattern Language: Towns, Buildings, Construction](/content/books/a-pattern-language-towns-buildings-construction.md)** by Christopher Alexander, et al.: While about architecture and urban design, its pattern-based design thinking deeply influenced permaculture.  
-    * **[🪢🌾 Braiding Sweetgrass: Indigenous Wisdom, Scientific Knowledge, and the Teachings of Plants](/content/books/braiding-sweetgrass.md)** by Robin Wall Kimmerer: Explores indigenous wisdom, scientific knowledge, and the interconnectedness of life, resonating with permaculture ethics.  
+    * **[🏘️🧱🏗️ A Pattern Language: Towns, Buildings, Construction](./a-pattern-language-towns-buildings-construction.md)** by Christopher Alexander, et al.: While about architecture and urban design, its pattern-based design thinking deeply influenced permaculture.  
+    * **[🪢🌾 Braiding Sweetgrass: Indigenous Wisdom, Scientific Knowledge, and the Teachings of Plants](./braiding-sweetgrass.md)** by Robin Wall Kimmerer: Explores indigenous wisdom, scientific knowledge, and the interconnectedness of life, resonating with permaculture ethics.  
     * 📜 **Permaculture: Principles and Pathways Beyond Sustainability** by David Holmgren: A deep dive into the ethics and principles of permaculture by its other co-founder.  
     * 📘 **Permaculture: A Designer's Manual** by Bill Mollison: The dense, comprehensive foundational text of permaculture, considered advanced reading.  
 * 🌍 **Broader Ecology / Design:**  
@@ -92,5 +92,5 @@ CTA: 🌱 Cultivate resilience.
     * ❄️ **Resilient Farm and Homestead** by Ben Falk: An example of applying permaculture systems in a specific (often cold climate) context.  
     * 🏔️ **Sepp Holzer's Permaculture** by Sepp Holzer: Documents the unique, intensive permaculture systems developed on his Austrian mountain farm.  
   
-## 💬 [Gemini](/content/software/gemini.md) Prompt (gemini-2.5-pro-exp-03-25)  
+## 💬 [Gemini](../software/gemini.md) Prompt (gemini-2.5-pro-exp-03-25)  
 > Write a markdown-formatted (start headings at level H2) book report, followed by a plethora of additional similar, contrasting, and creatively related book recommendations on Gaia's Garden: A Guide to Home-Scale Permaculture. Be thorough in content discussed but concise and economical with your language. Structure the report with section headings and bulleted lists to avoid long blocks of text.

@@ -10,7 +10,7 @@ Channel: Heather Cox Richardson
 tags:
 youtube: https://www.youtube.com/embed/ShlbzDtSrVI
 ---
-[Home](/content/index.md) > [Videos](/content/videos/index.md) | [🏛️🇺🇸📖 Heather Cox Richardson](/content/people/heather-cox-richardson.md)  
+[Home](../index.md) > [Videos](./index.md) | [🏛️🇺🇸📖 Heather Cox Richardson](../people/heather-cox-richardson.md)  
 # ❓🤯😵‍💫🤷 What the Heck Just Happened? | 2025-09-27  
 ![What the Heck Just Happened?](https://www.youtube.com/embed/ShlbzDtSrVI)  
   
@@ -41,7 +41,7 @@ youtube: https://www.youtube.com/embed/ShlbzDtSrVI
   
 ## 📚 Book Recommendations  
   
-* 💰 **Similar:** [🇺🇸⚔️ Alexander Hamilton](/content/books/alexander-hamilton.md) by Ron Chernow. 🇺🇸 This biography provides the deep context necessary to understand Hamilton's visionary financial and political systems, including his concept of national credit.  
+* 💰 **Similar:** [🇺🇸⚔️ Alexander Hamilton](../books/alexander-hamilton.md) by Ron Chernow. 🇺🇸 This biography provides the deep context necessary to understand Hamilton's visionary financial and political systems, including his concept of national credit.  
 * ⚖️ **Contrasting:** The Reactionary Mind by Corey Robin. 💡 Explores the enduring themes and motivations behind conservative and right-wing political thought, offering a framework for understanding the administration's ideology as discussed.  
-* 🏛️ **Creatively Related:** [🏛️⛓️ Democracy in Chains: The Deep History of the Radical Right's Stealth Plan for America](/content/books/democracy-in-chains-the-deep-history-of-the-radical-rights-stealth-plan-for-america.md) by Nancy MacLean. ⛓️ Details the organized, decades-long effort by radical right-wing thinkers to limit democracy and shift power to the wealthy elite, directly relating to the ideological conflict described in the video.  
+* 🏛️ **Creatively Related:** [🏛️⛓️ Democracy in Chains: The Deep History of the Radical Right's Stealth Plan for America](../books/democracy-in-chains-the-deep-history-of-the-radical-rights-stealth-plan-for-america.md) by Nancy MacLean. ⛓️ Details the organized, decades-long effort by radical right-wing thinkers to limit democracy and shift power to the wealthy elite, directly relating to the ideological conflict described in the video.  
 * 📰 **Similar:** The Death of Truth by Michiko Kakutani. 📢 Analyzes the erosion of objective facts, the rise of disinformation, and its threat to democracy, which H.C.R. touches upon as a reason for public ignorance of key issues.

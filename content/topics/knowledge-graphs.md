@@ -5,7 +5,7 @@ aliases:
 title: 🧠🌐 Knowledge Graphs
 URL: https://bagrounds.org/topics/knowledge-graphs
 ---
-[Home](/content/index.md) > [Topics](/content/topics/index.md)  
+[Home](../index.md) > [Topics](./index.md)  
 # 🧠🌐 Knowledge Graphs  
 ## 🤖 AI Summary  
 ### 👉 What Is It?  
@@ -127,7 +127,7 @@ URL: https://bagrounds.org/topics/knowledge-graphs
 * 📖 Topical: "Foundations of Semantic Web Technologies" by Pascal Hitzler 🌐  
 * 📖 Tangentially Related: "Linked Data: Evolving the Web into a Global Data Space" by Tom Heath 🔗  
 * 📖 Topically Opposed: "Database System Concepts" by Abraham Silberschatz 📊  
-* 📖 More General: [🤖🧠 Artificial Intelligence: A Modern Approach](/content/books/artificial-intelligence-a-modern-approach.md) by Stuart Russell 🤖  
+* 📖 More General: [🤖🧠 Artificial Intelligence: A Modern Approach](../books/artificial-intelligence-a-modern-approach.md) by Stuart Russell 🤖  
 * 📖 More Specific: "Graph Databases" by Ian Robinson 💾  
 * 📖 Fictional: "Neuromancer" by William Gibson 💻  
 * 📖 Rigorous: "Description Logic Handbook: Theory, Implementation and Applications" by Franz Baader 🧠  

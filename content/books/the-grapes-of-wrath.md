@@ -11,7 +11,7 @@ force_analyze_links: false
 link_analysis_time: 2026-03-25T22:13:31.999Z
 link_analysis_model: gemini-3.1-flash-lite-preview
 ---
-[Home](/content/index.md) > [Books](/content/books/index.md)  
+[Home](../index.md) > [Books](./index.md)  
 # 🍇😡 The Grapes of Wrath  
 [🛒 The Grapes of Wrath. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/49uywwn)  
   

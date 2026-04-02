@@ -7,8 +7,11 @@ URL: https://bagrounds.org/books/noise
 Author:
 tags:
 affiliate link: https://amzn.to/4jB8bi7
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_time: 2026-04-01T00:00:00Z
+force_analyze_links: false
 ---
-[Home](/content/index.md) > [Books](/content/books/index.md)  
+[Home](../index.md) > [Books](./index.md)  
 # 🙉📢😵‍💫🔇 Noise: A Flaw in Human Judgment  
 [🛒 Noise: A Flaw in Human Judgment. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4jB8bi7)  
   
@@ -64,19 +67,19 @@ affiliate link: https://amzn.to/4jB8bi7
   
 ### Additional Book Recommendations 📖  
 - **Alternate on the Same Topic**:  
-  - [🤔🐇🐢 Thinking, Fast and Slow](/content/books/thinking-fast-and-slow.md) by Daniel Kahneman  
+  - [🤔🐇🐢 Thinking, Fast and Slow](./thinking-fast-and-slow.md) by Daniel Kahneman  
     *Explores cognitive biases and the dual systems of thought that underpin our decision-making, providing a foundational context for understanding noise.*  
   
 - **Tangentially Related**:  
-  - [Nudge](/content/books/nudge.md): Improving Decisions About Health, Wealth, and Happiness by Richard Thaler and Cass Sunstein  
+  - [Nudge](./nudge.md): Improving Decisions About Health, Wealth, and Happiness by Richard Thaler and Cass Sunstein  
     *Focuses on how subtle changes in choice architecture can significantly improve decision outcomes, resonating with the themes of structured decision-making.*  
   
 - **Diametrically Opposed**:  
-  - [⚡🚫💭 Blink: The Power of Thinking Without Thinking](/content/books/blink-the-power-of-thinking-without-thinking.md) by Malcolm Gladwell  
+  - [⚡🚫💭 Blink: The Power of Thinking Without Thinking](./blink-the-power-of-thinking-without-thinking.md) by Malcolm Gladwell  
     *Celebrates the strengths of rapid, intuitive decision-making, offering a counterpoint to the emphasis on reducing noise and standardizing judgments.*  
   
 - **Fiction Incorporating Related Ideas**:  
-  - [🔁🤪 Catch-22](/content/books/catch-22.md) by Joseph Heller  
+  - [🔁🤪 Catch-22](./catch-22.md) by Joseph Heller  
     *A satirical novel that captures the absurdity and randomness of bureaucratic decision-making, echoing the unpredictable nature of noise.*  
   
 ## 💬 [ChatGPT](https://chat.com) Prompt  

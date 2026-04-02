@@ -7,7 +7,7 @@ share: true
 CTA: 🔬 Explore longevity.
 affiliate link: https://amzn.to/486SRHZ
 ---
-[Home](/content/index.md) > [Books](/content/books/index.md)  
+[Home](../index.md) > [Books](./index.md)  
 # ⏳🙅 Lifespan: Why We Age - and Why We Don't Have To  
 [🛒 Lifespan: Why We Age - and Why We Don't Have To. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/486SRHZ)  
   
@@ -56,7 +56,7 @@ affiliate link: https://amzn.to/486SRHZ
 📖 These recommendations offer alternative perspectives, critiques, or focus on aspects of aging and mortality that might diverge from Sinclair's optimistic view of conquering aging.  
   
 * 🧍 **The Story of the Human Body: Evolution, Health, and Disease** by Daniel E. Lieberman. 🧬 While not directly contradicting longevity science, this book provides an evolutionary perspective on the human body, explaining how our Stone Age biology clashes with modern environments, leading to chronic diseases. ⚕️ It frames health in a broader evolutionary context rather than solely as a battle against aging.  
-* **[⚕️💀 Being Mortal: Medicine and What Matters in the End](/content/books/being-mortal-medicine-and-what-matters-in-the-end.md)** by Atul Gawande. 🏥 This book provides a profound exploration of aging, illness, and mortality from a medical and philosophical standpoint, advocating for quality of life and dignity in old age rather than solely focusing on extending life at all costs. ❤️ It offers a humanistic perspective on the limitations and challenges of medical intervention in the face of inevitable decline.  
+* **[⚕️💀 Being Mortal: Medicine and What Matters in the End](./being-mortal-medicine-and-what-matters-in-the-end.md)** by Atul Gawande. 🏥 This book provides a profound exploration of aging, illness, and mortality from a medical and philosophical standpoint, advocating for quality of life and dignity in old age rather than solely focusing on extending life at all costs. ❤️ It offers a humanistic perspective on the limitations and challenges of medical intervention in the face of inevitable decline.  
 * 💀 **The Denial of Death** by Ernest Becker. 🤔 This Pulitzer Prize-winning work of cultural anthropology and psychology explores humanity's fundamental fear of death and how this fear shapes our societies, cultures, and individual behaviors. 🕊️ It delves into the existential acceptance of mortality, offering a philosophical counterpoint to the scientific quest for indefinite life extension.  
   
 ### 🎭 Creatively Related Books  

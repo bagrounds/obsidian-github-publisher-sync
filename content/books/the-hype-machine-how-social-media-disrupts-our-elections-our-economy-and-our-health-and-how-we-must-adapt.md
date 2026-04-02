@@ -7,7 +7,7 @@ share: true
 CTA: 🛡️ Safeguard democracy.
 affiliate link: https://amzn.to/4nUhnku
 ---
-[Home](/content/index.md) > [Books](/content/books/index.md)  
+[Home](../index.md) > [Books](./index.md)  
 # 📱🗳️📉🩺 The Hype Machine: How Social Media Disrupts Our Elections, Our Economy, and Our Health - and How We Must Adapt  
 [🛒 The Hype Machine: How Social Media Disrupts Our Elections, Our Economy, and Our Health - and How We Must Adapt. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4nUhnku)  
   
@@ -103,7 +103,7 @@ affiliate link: https://amzn.to/4nUhnku
   
 * 🎬 **The Social Dilemma** (documentary, mentioned in relation to the book)  
 * 📱 **Ten Arguments** for Deleting Your Social Media Accounts Right Now by Jaron Lanier  
-* **[👁️‍🗨️💰⛓️👤 The Age of Surveillance Capitalism: The Fight for a Human Future at the New Frontier of Power](/content/books/the-age-of-surveillance-capitalism.md)** by Shoshana Zuboff  
+* **[👁️‍🗨️💰⛓️👤 The Age of Surveillance Capitalism: The Fight for a Human Future at the New Frontier of Power](./the-age-of-surveillance-capitalism.md)** by Shoshana Zuboff  
 * 📝 **Permanent Record** by Edward Snowden  
 * 📢 **Frenemies: The** Epic Disruption of the Ad Business (and Everything Else) by Ken Auletta  
 * 📰 **An Ugly Truth:** Inside Facebook's Battle for Domination by Sheera Frenkel and Cecilia Kang  
@@ -112,13 +112,13 @@ affiliate link: https://amzn.to/4nUhnku
   
 * ☁️ **Life After Google:** The Fall of Big Data and the Rise of the Blockchain Economy by George Gilder (more optimistic on decentralized tech)  
 * 😇 **Don't Be Evil:** How Big Tech Betrayed Its Founding Principles—and How We Can Turn the Tide by Rana Foroohar (focuses more on corporate ethics and governance)  
-* **[🤔💻🧠 Algorithms to Live By: The Computer Science of Human Decisions](/content/books/algorithms-to-live-by.md)** by Brian Christian and Tom Griffiths (explores algorithms in a broader, often positive, context of decision-making)  
+* **[🤔💻🧠 Algorithms to Live By: The Computer Science of Human Decisions](./algorithms-to-live-by.md)** by Brian Christian and Tom Griffiths (explores algorithms in a broader, often positive, context of decision-making)  
   
 #### 🎨 Creatively Related Books  
   
-* **[🤔🐇🐢 Thinking, Fast and Slow](/content/books/thinking-fast-and-slow.md)** by Daniel Kahneman (on cognitive biases, relevant to misinformation spread)  
-* **[🍃🧠🤝🏼 Influence: The Psychology of Persuasion](/content/books/influence.md)** by Robert Cialdini (on mechanisms of social influence)  
-* **[📜🌍⏳ Sapiens: A Brief History of Humankind](/content/books/sapiens-a-brief-history-of-humankind.md)** by Yuval Noah Harari (broader historical context of human communication and collective belief)  
+* **[🤔🐇🐢 Thinking, Fast and Slow](./thinking-fast-and-slow.md)** by Daniel Kahneman (on cognitive biases, relevant to misinformation spread)  
+* **[🍃🧠🤝🏼 Influence: The Psychology of Persuasion](./influence.md)** by Robert Cialdini (on mechanisms of social influence)  
+* **[📜🌍⏳ Sapiens: A Brief History of Humankind](./sapiens-a-brief-history-of-humankind.md)** by Yuval Noah Harari (broader historical context of human communication and collective belief)  
 * 🎬 **The Great Hack** (documentary) (on data exploitation and political manipulation)  
   
 ## 💬 [Gemini](https://gemini.google.com) Prompt (gemini-2.5-flash)  

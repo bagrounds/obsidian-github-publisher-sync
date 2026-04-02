@@ -6,7 +6,7 @@ URL: https://bagrounds.org/books/whats-in-the-air-the-complete-guide-to-seasonal
 share: true
 affiliate link: https://amzn.to/4kmYZit
 ---
-[Home](/content/index.md) > [Books](/content/books/index.md)  
+[Home](../index.md) > [Books](./index.md)  
 # 👃🤧 What's in the Air?: The Complete Guide to Seasonal and Year-Round Airborne Allergies  
 [🛒 What's in the Air?: The Complete Guide to Seasonal and Year-Round Airborne Allergies. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4kmYZit)  
   
@@ -90,5 +90,5 @@ affiliate link: https://amzn.to/4kmYZit
   
 This list offers a starting point for readers interested in allergies, air quality, and related health topics, ranging from practical guides to more academic and specialized texts.  
   
-## 💬 [Gemini](/content/software/gemini.md) Prompt (gemini-2.5-pro-exp-03-25)  
+## 💬 [Gemini](../software/gemini.md) Prompt (gemini-2.5-pro-exp-03-25)  
 > Write a markdown-formatted (start headings at level H2) book report, followed by a plethora of additional similar, contrasting, and creatively related book recommendations on What's in the Air?: The Complete Guide to Seasonal and Year-Round Airborne Allergies. Be thorough in content discussed but concise and economical with your language. Structure the report with section headings and bulleted lists to avoid long blocks of text.

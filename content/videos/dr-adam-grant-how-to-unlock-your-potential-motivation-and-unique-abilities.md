@@ -37,7 +37,7 @@ This discussion offers a 💡 practical framework for personal and professional 
   
 - [🌱🧘🏼‍♀️🏆 Mindset: The New Psychology of Success](../books/mindset.md) by Carol Dweck: Explores the power of a growth mindset and its impact on achievement.  
       
-- Originals by Adam Grant: Delves into how to champion new ideas and fight groupthink, offering insights into creativity and overcoming conventional thinking.  
+- [💡🎨 Originals](../books/originals.md) by Adam Grant: Delves into how to champion new ideas and fight groupthink, offering insights into creativity and overcoming conventional thinking.  
       
 - [🤿💼 Deep Work: Rules for Focused Success in a Distracted World](../books/deep-work.md) by Cal Newport: Provides strategies for focused, uninterrupted work to maximize productivity and creativity.  
       

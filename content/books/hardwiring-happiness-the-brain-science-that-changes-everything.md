@@ -8,7 +8,7 @@ Author:
 tags:
 affiliate link: https://amzn.to/45LixIK
 ---
-[Home](/content/index.md) > [Books](/content/books/index.md)  
+[Home](../index.md) > [Books](./index.md)  
 # 🔌😁🧠🔬 Hardwiring Happiness: The New Brain Science of Contentment, Calm, and Confidence  
 [🛒 Hardwiring Happiness: The New Brain Science of Contentment, Calm, and Confidence. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/45LixIK)  
   
@@ -49,10 +49,10 @@ Rick Hanson, PhD, is a well-respected neuropsychologist and meditation teacher, 
   
 ### Book Recommendations 📚  
 * **Best Alternate Book on the Same Topic:** "Buddha's Brain: The Practical Neuroscience of Happiness, Love, and Wisdom" by Rick Hanson and Richard Mendius. This book provides a more in-depth exploration of the neuroscience behind happiness and mindfulness. 🧠☯️  
-* **Best Tangentially Related Book:** "[Thinking, Fast and Slow](/content/books/thinking-fast-and-slow.md)" by Daniel Kahneman. This book explores the cognitive biases that influence our thinking and decision-making, providing a broader understanding of how the mind works. 🧠💡  
+* **Best Tangentially Related Book:** "[Thinking, Fast and Slow](./thinking-fast-and-slow.md)" by Daniel Kahneman. This book explores the cognitive biases that influence our thinking and decision-making, providing a broader understanding of how the mind works. 🧠💡  
 * **Best Diametrically Opposed Book:** "The Subtle Art of Not Giving a F*ck: A Counterintuitive Approach to Living a Good Life" by Mark Manson. While "Hardwiring Happiness" focuses on cultivating positive experiences, Manson's book emphasizes accepting negativity and focusing on what truly matters. 🚫✨  
 * **Best Fiction Book That Incorporates Related Ideas:** "The Midnight Library" by Matt Haig. This novel explores the concept of alternative realities and the impact of choices on happiness, touching on themes of self-acceptance and finding joy in the present moment. 📖🌌  
-* **Best More General Book:** "[Sapiens: A Brief History of Humankind](/content/books/sapiens-a-brief-history-of-humankind.md)" by Yuval Noah Harari. This book provides a broad overview of human history and the evolution of consciousness, offering a larger context for understanding happiness and well-being. 🌍📜  
+* **Best More General Book:** "[Sapiens: A Brief History of Humankind](./sapiens-a-brief-history-of-humankind.md)" by Yuval Noah Harari. This book provides a broad overview of human history and the evolution of consciousness, offering a larger context for understanding happiness and well-being. 🌍📜  
 * **Best More Specific Book:** "Unwinding Anxiety: New Science Shows How to Break the Cycles of Worry and Fear to Heal Your Mind" by Judson Brewer. This book dives deep into the specific topic of anxiety, and how to use mindfulness techniques to overcome it. 🧘‍♀️😟  
 * **Best More Rigorous Book:** "Principles of Neural Science" by Eric R. Kandel, James H. Schwartz, and Thomas M. Jessell. This is a comprehensive textbook on neuroscience, providing a deep dive into the biological mechanisms of the brain. 🔬🧠  
 * **Best More Accessible Book:** "The Little Book of Hygge: Danish Secrets to Happy Living" by Meik Wiking. This book focuses on simple pleasures and creating a cozy, joyful atmosphere, offering a lighter and more practical approach to happiness. 🕯️☕️  

@@ -10,7 +10,7 @@ Channel: Heather Cox Richardson
 tags:
 youtube: https://youtu.be/juxS6qgVNuc
 ---
-[Home](/content/index.md) > [Videos](/content/videos/index.md) | [🏛️🇺🇸📖 Heather Cox Richardson](/content/people/heather-cox-richardson.md)  
+[Home](../index.md) > [Videos](./index.md) | [🏛️🇺🇸📖 Heather Cox Richardson](../people/heather-cox-richardson.md)  
 # 🇺🇸🛡️💪 Never Give Up A Conversation with Joyce White Vance—«Giving Up Is Unforgivable: A Manual for Keeping a Democracy»  
 ![A Conversation with Joyce White Vance—«Giving Up Is Unforgivable: A Manual for Keeping a Democracy»](https://youtu.be/juxS6qgVNuc)  
   
@@ -57,7 +57,7 @@ youtube: https://youtu.be/juxS6qgVNuc
 ## 📚 Book Recommendations  
   
 ### ↔️ Similar  
-- [🏛️💪 Giving Up Is Unforgivable: A Manual for Keeping a Democracy](/content/books/giving-up-is-unforgivable-a-manual-for-keeping-a-democracy.md)  
+- [🏛️💪 Giving Up Is Unforgivable: A Manual for Keeping a Democracy](../books/giving-up-is-unforgivable-a-manual-for-keeping-a-democracy.md)  
 * 📚 The Authoritarian Moment by Ben Sasse. 🤝 Details how the breakdown of civil discourse and the rise of political extremism creates a fertile ground for the democratic threats discussed in the video.  
 * 📚 How Civil Wars Start: And How to Stop Them by Barbara F. Walter. 🛑 Explores the conditions and warning signs of democratic breakdown and political violence, echoing the speaker's concerns about the fragility of the current system.  
   
@@ -66,8 +66,8 @@ youtube: https://youtu.be/juxS6qgVNuc
 * 📚 Saving Justice: A Step-by-Step Plan to Renew Our Legal System and Mend Our Republic by Robert Post. ⚖️ Proposes judicial and legal reforms from a different legal perspective than court expansion, offering a contrasting view on how to fix the court's integrity and political nature.  
   
 ### 🎨 Creatively Related  
-* [💰🤫 Dark Money: The Hidden History of the Billionaires Behind the Rise of the Radical Right](/content/books/dark-money-the-hidden-history-of-the-billionaires-behind-the-rise-of-the-radical-right.md) by Jane Mayer. 💰 Investigates the financial infrastructure and key players behind the political movements, like the Federalist Society, that pushed the Unitary Executive Theory and anti-regulatory agendas.  
-* [🏚️💰 Evicted: Poverty and Profit in the American City](/content/books/evicted-poverty-and-profit-in-the-american-city.md) by Matthew Desmond. 🏘️ Tangentially relates by illustrating the downstream, human consequences of policy decisions—like the denial of SNAP funds—highlighting the social crises that citizen action, as encouraged by the speaker, is necessary to address.  
+* [💰🤫 Dark Money: The Hidden History of the Billionaires Behind the Rise of the Radical Right](../books/dark-money-the-hidden-history-of-the-billionaires-behind-the-rise-of-the-radical-right.md) by Jane Mayer. 💰 Investigates the financial infrastructure and key players behind the political movements, like the Federalist Society, that pushed the Unitary Executive Theory and anti-regulatory agendas.  
+* [🏚️💰 Evicted: Poverty and Profit in the American City](../books/evicted-poverty-and-profit-in-the-american-city.md) by Matthew Desmond. 🏘️ Tangentially relates by illustrating the downstream, human consequences of policy decisions—like the denial of SNAP funds—highlighting the social crises that citizen action, as encouraged by the speaker, is necessary to address.  
   
 ## 🐦 Tweet  
 <blockquote class="twitter-tweet" data-theme="dark"><p lang="en" dir="ltr">🇺🇸🛡️💪 A Manual for Keeping a Democracy<br><br>🇺🇸 Political Polarization | 🗳️ Voter Suppression | 🏛️ Judicial Review | 👑 Executive Power | ⚖️ Supreme Court | 💥 Election Interference | 🤝 Citizen Engagement | 📜 Legal Theories<a href="https://twitter.com/HC_Richardson?ref_src=twsrc%5Etfw">@HC_Richardson</a><a href="https://t.co/IECVM0Rxs0">https://t.co/IECVM0Rxs0</a></p>&mdash; Bryan Grounds (@bagrounds) <a href="https://twitter.com/bagrounds/status/1983695525640860112?ref_src=twsrc%5Etfw">October 30, 2025</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>

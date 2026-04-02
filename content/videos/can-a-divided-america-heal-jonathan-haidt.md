@@ -10,7 +10,7 @@ Channel: TED
 tags:
 youtube: https://youtu.be/D-_Az5nZBBM
 ---
-[Home](/content/index.md) > [Videos](/content/videos/index.md) | [🧠🤝🐘 Jonathan Haidt](/content/people/jonathan-haidt.md)  
+[Home](../index.md) > [Videos](./index.md) | [🧠🤝🐘 Jonathan Haidt](../people/jonathan-haidt.md)  
 # 🇺🇸💔🩹❓ Can a divided America heal? | Jonathan Haidt  
 ![Can a divided America heal? | Jonathan Haidt](https://youtu.be/D-_Az5nZBBM)  
   
@@ -32,11 +32,11 @@ To gain a more comprehensive understanding, it would be beneficial to explore to
 * The historical context of political division in the United States, including past periods of intense partisanship.  
   
 ## 📚 Book Recommendations  
-* [😇🧠 The Righteous Mind: Why Good People Are Divided by Politics and Religion](/content/books/the-righteous-mind.md) by Jonathan Haidt  
+* [😇🧠 The Righteous Mind: Why Good People Are Divided by Politics and Religion](../books/the-righteous-mind.md) by Jonathan Haidt  
     * Expands on the moral foundations theory discussed in the video, providing a deeper dive into the psychological principles that drive political and social division.  
-* [🫂🤝🗣️ How To Win Friends And Influence People](/content/books/how-to-win-friends-and-influence-people.md) by Dale Carnegie  
+* [🫂🤝🗣️ How To Win Friends And Influence People](../books/how-to-win-friends-and-influence-people.md) by Dale Carnegie  
     * Offers practical advice on communication and empathy, which is recommended in the video as a way to bridge the divide between opposing groups.  
-* [🤕👶 The Coddling of the American Mind: How Good Intentions and Bad Ideas Are Setting Up a Generation for Failure](/content/books/the-coddling-of-the-american-mind-how-good-intentions-and-bad-ideas-are-setting-up-a-generation-for-failure.md) by Greg Lukianoff and Jonathan Haidt  
+* [🤕👶 The Coddling of the American Mind: How Good Intentions and Bad Ideas Are Setting Up a Generation for Failure](../books/the-coddling-of-the-american-mind-how-good-intentions-and-bad-ideas-are-setting-up-a-generation-for-failure.md) by Greg Lukianoff and Jonathan Haidt  
     * Analyzes the impact of safetyism and political correctness on a generation, which is a theme related to the political tribalism discussed in the video.  
-* [🫥🇺🇸😡💔 Strangers in Their Own Land](/content/books/strangers-in-their-own-land.md) by Arlie Russell Hochschild  
+* [🫥🇺🇸😡💔 Strangers in Their Own Land](../books/strangers-in-their-own-land.md) by Arlie Russell Hochschild  
     * Provides a contrasting perspective by offering an empathetic look at the worldview of people in conservative Louisiana, which can help readers understand the moral and emotional dimensions of the political divide.

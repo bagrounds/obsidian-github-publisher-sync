@@ -10,7 +10,7 @@ Channel: Charlotte Fraza
 tags:
 youtube: https://youtu.be/6gjzCrOFETE
 ---
-[Home](/content/index.md) > [Videos](/content/videos/index.md)  
+[Home](../index.md) > [Videos](./index.md)  
 # 🤿📚🔬🎓 How to Research Any Topic - Deep-Dive like a PhD Student  
 ![How to Research Any Topic - Deep-Dive like a PhD Student](https://youtu.be/6gjzCrOFETE)  
   
@@ -57,7 +57,7 @@ youtube: https://youtu.be/6gjzCrOFETE
   
 ### 🆚 Contrasting  
   
-* [📱🧠 The Shallows: What the Internet Is Doing to Our Brains](/content/books/the-shallows-what-the-internet-is-doing-to-our-brains.md) by Nicholas Carr argues that digital tools and hyperlinking might actually hinder our ability to engage in deep, linear thinking.  
+* [📱🧠 The Shallows: What the Internet Is Doing to Our Brains](../books/the-shallows-what-the-internet-is-doing-to-our-brains.md) by Nicholas Carr argues that digital tools and hyperlinking might actually hinder our ability to engage in deep, linear thinking.  
 * 📘 Anti-Intellectualism in American Life by Richard Hofstadter examines why expert-led research is often met with skepticism and how cultural attitudes impact the pursuit of knowledge.  
   
 ### 🎨 Creatively Related  

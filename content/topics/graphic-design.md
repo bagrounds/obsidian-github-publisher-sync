@@ -5,7 +5,7 @@ aliases:
 title: 🎨✏️ Graphic Design
 URL: https://bagrounds.org/topics/graphic-design
 ---
-[Home](/content/index.md) > [Topics](/content/topics/index.md) > [Knowledge](/content/topics/a-hierarchical-view-of-human-knowledge.md) > [Arts](/content/topics/arts.md) > [Applied Arts](/content/topics/applied-arts.md)  
+[Home](../index.md) > [Topics](./index.md) > [Knowledge](./a-hierarchical-view-of-human-knowledge.md) > [Arts](./arts.md) > [Applied Arts](./applied-arts.md)  
 # 🎨✏️ Graphic Design  
 ## 🤖 AI Summary  
 **🎨 High-Level Summary:**  

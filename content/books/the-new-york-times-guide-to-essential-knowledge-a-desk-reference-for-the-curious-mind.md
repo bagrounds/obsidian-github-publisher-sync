@@ -7,7 +7,7 @@ share: true
 affiliate link: https://amzn.to/4gNennh
 CTA: 🧠 Absorb everything.
 ---
-[Home](/content/index.md) > [Books](/content/books/index.md)  
+[Home](../index.md) > [Books](./index.md)  
 # 📚🧠 The New York Times Guide to Essential Knowledge: A Desk Reference for the Curious Mind  
 [🛒 The New York Times Guide to Essential Knowledge: A Desk Reference for the Curious Mind. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4gNennh)  
   
@@ -60,13 +60,13 @@ The book caters to a diverse audience of "curious minds". It is designed for any
   
 * 📖 **The Know-It-All** by A.J. Jacobs: While related to the pursuit of general knowledge, this book is a humorous memoir chronicling the author's attempt to read the entire Encyclopaedia Britannica, offering a subjective and narrative experience rather than an objective reference.  
 * 📖 **The Philosophy Book: Big Ideas Simply Explained** by Will Buckingham (and similar titles in the "Big Ideas Simply Explained" series): Instead of a broad general knowledge overview, this series from DK Publishing focuses on providing deep but accessible dives into specific subjects like philosophy, psychology, or science, offering more focused content than a general guide.  
-* **[🌱🧘🏼‍♀️🏆 Mindset: The New Psychology of Success](/content/books/mindset.md)** by Carol S. Dweck: This book contrasts by focusing not on *what* to know, but *how* we approach learning and challenges. It explores the difference between fixed and growth mindsets, impacting how individuals acquire and apply knowledge.  
+* **[🌱🧘🏼‍♀️🏆 Mindset: The New Psychology of Success](./mindset.md)** by Carol S. Dweck: This book contrasts by focusing not on *what* to know, but *how* we approach learning and challenges. It explores the difference between fixed and growth mindsets, impacting how individuals acquire and apply knowledge.  
   
 ### ✨ Creatively Related Books  
   
-* **[📜🌍⏳ Sapiens: A Brief History of Humankind](/content/books/sapiens-a-brief-history-of-humankind.md)** by Yuval Noah Harari: This book provides a sweeping, interdisciplinary account of human history, integrating insights from biology, anthropology, economics, and history to offer a grand narrative of how humanity developed and accumulated knowledge over millennia.  
+* **[📜🌍⏳ Sapiens: A Brief History of Humankind](./sapiens-a-brief-history-of-humankind.md)** by Yuval Noah Harari: This book provides a sweeping, interdisciplinary account of human history, integrating insights from biology, anthropology, economics, and history to offer a grand narrative of how humanity developed and accumulated knowledge over millennia.  
 * 📖 **How to Be a Stoic: Using Ancient Philosophy to Live a Modern Life** by Massimo Pigliucci: This book encourages a specific intellectual and practical approach to life, emphasizing reason, virtue, and tranquility. It connects to the essence of "essential knowledge" by illustrating how philosophical wisdom can be applied to contemporary existence.  
-* **[🌌 Cosmos](/content/books/cosmos.md)** by Carl Sagan: Inspiring wonder and curiosity about the universe, this classic book explores astronomy, science, and humanity's place in the cosmos, exemplifying a deep dive into one of the many scientific subjects covered generally in The New York Times Guide.  
+* **[🌌 Cosmos](./cosmos.md)** by Carl Sagan: Inspiring wonder and curiosity about the universe, this classic book explores astronomy, science, and humanity's place in the cosmos, exemplifying a deep dive into one of the many scientific subjects covered generally in The New York Times Guide.  
 * 📖 **A Short History of Nearly Everything** by Bill Bryson: This engaging book humorously and accessibly explains complex scientific and historical topics, fostering a general appreciation for knowledge and the processes of discovery, making it a compelling read for curious minds.  
   
 ## 💬 [Gemini](https://gemini.google.com) Prompt (gemini-2.5-flash)  

@@ -9,7 +9,7 @@ Platform:
 Channel: TEDx Talks
 tags:
 ---
-[Home](/content/index.md) > [Videos](/content/videos/index.md)  
+[Home](../index.md) > [Videos](./index.md)  
 # ⏰👵🔬 Circadian Code to Extend Longevity | Satchin Panda | TEDxVeniceBeach  
 ![Circadian Code to Extend Longevity | Satchin Panda | TEDxVeniceBeach](https://youtu.be/wrP78K1objc)  
   
@@ -28,16 +28,16 @@ tags:
 ## 📚 Book Recommendations  
   
 ### ⏰ Circadian Rhythms  
-* [🌄⏳ The Circadian Code: Lose Weight, Supercharge Your Energy, and Transform Your Health from Morning to Midnight](/content/books/the-circadian-code.md) by Satchin Panda  
-* [⏰👤 The Inner Clock: Living in Sync with Our Circadian Rhythms](/content/books/the-inner-clock-living-in-sync-with-our-circadian-rhythms.md) by Lynne Peeples  
+* [🌄⏳ The Circadian Code: Lose Weight, Supercharge Your Energy, and Transform Your Health from Morning to Midnight](../books/the-circadian-code.md) by Satchin Panda  
+* [⏰👤 The Inner Clock: Living in Sync with Our Circadian Rhythms](../books/the-inner-clock-living-in-sync-with-our-circadian-rhythms.md) by Lynne Peeples  
   
 ### 😴 Sleep  
-* [😴💭 Why We Sleep: Unlocking the Power of Sleep and Dreams](/content/books/why-we-sleep-unlocking-the-power-of-sleep-and-dreams.md) by Matthew Walker  
+* [😴💭 Why We Sleep: Unlocking the Power of Sleep and Dreams](../books/why-we-sleep-unlocking-the-power-of-sleep-and-dreams.md) by Matthew Walker  
   
 ### 🍎 Nutrition  
 * Eat, Drink, and Be Healthy: The Harvard Medical School Guide to Healthy Eating by Walter C. Willett  
-* [🛡️🥦 In Defense of Food: An Eater's Manifesto](/content/books/in-defense-of-food-an-eaters-manifesto.md) by Michael Pollan  
+* [🛡️🥦 In Defense of Food: An Eater's Manifesto](../books/in-defense-of-food-an-eaters-manifesto.md) by Michael Pollan  
   
 ### ⚙️ Metabolism  
 * The Glucose Goddess Method: The 4-Week Guide to Cutting Cravings, Getting Your Energy Back, and Feeling Amazing by Jessie Inchauspé  
-* [⏳🔬🎨 Outlive: The Science and Art of Longevity](/content/books/outlive.md) by Peter Attia
+* [⏳🔬🎨 Outlive: The Science and Art of Longevity](../books/outlive.md) by Peter Attia

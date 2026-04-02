@@ -5,7 +5,7 @@ aliases:
 title: 📢🎓 Informative Speaking
 URL: https://bagrounds.org/topics/informative-speaking
 ---
-[Home](/content/index.md) > [Topics](/content/topics/index.md) > [Knowledge](/content/topics/a-hierarchical-view-of-human-knowledge.md) > [Social Sciences](/content/topics/social-sciences.md) > [Communication Studies](/content/topics/communication-studies.md) > [Public Speaking and Rhetoric](/content/topics/public-speaking-and-rhetoric.md)  
+[Home](../index.md) > [Topics](./index.md) > [Knowledge](./a-hierarchical-view-of-human-knowledge.md) > [Social Sciences](./social-sciences.md) > [Communication Studies](./communication-studies.md) > [Public Speaking and Rhetoric](./public-speaking-and-rhetoric.md)  
 # 📢🎓 Informative Speaking  
 ## 🤖 AI Summary  
 **🌟 High-Level Summary:**  
@@ -22,10 +22,10 @@ Informative speaking is all about sharing knowledge, facts, and understanding wi
   
 **📖 Book Recommendations:**  
   
-1.  **🧠➡️💡 "[Made to Stick: Why Some Ideas Survive and Others Die](/content/books/made-to-stick.md)" by Chip Heath and Dan Heath:** This book delves into the principles of making ideas memorable and impactful, essential for effective informative speaking. It's filled with practical advice and engaging examples. You'll be a master of memory! 🤩  
+1.  **🧠➡️💡 "[Made to Stick: Why Some Ideas Survive and Others Die](../books/made-to-stick.md)" by Chip Heath and Dan Heath:** This book delves into the principles of making ideas memorable and impactful, essential for effective informative speaking. It's filled with practical advice and engaging examples. You'll be a master of memory! 🤩  
 2.  **🗣️🌟 "Talk Like TED: The 9 Public-Speaking Secrets of the World's Top Minds" by Carmine Gallo:** While focusing on TED Talks, this book provides valuable insights into captivating an audience, structuring a speech, and delivering information with passion and clarity. It's a great guide for making informative speeches engaging. 🎤✨  
-3.  **🖼️✨ "[Presentation Zen: Simple Ideas on Presentation Design and Delivery](/content/books/presentation-zen.md)" by Garr Reynolds:** Visually engaging presentations are crucial for informative speaking. This book teaches how to create clean, simple, and effective visuals that enhance the audience's understanding. Make your presentations shine! 🌈  
-4.  **[🔊🎞️🌱🤯 Resonate: Present Visual Stories that Transform Audiences](/content/books/resonate.md) by Nancy Duarte:** This book examines the power of storytelling in presentations and speeches. It helps speakers connect with their audience on an emotional level while delivering informative content. Connect and inspire! 🤝  
+3.  **🖼️✨ "[Presentation Zen: Simple Ideas on Presentation Design and Delivery](../books/presentation-zen.md)" by Garr Reynolds:** Visually engaging presentations are crucial for informative speaking. This book teaches how to create clean, simple, and effective visuals that enhance the audience's understanding. Make your presentations shine! 🌈  
+4.  **[🔊🎞️🌱🤯 Resonate: Present Visual Stories that Transform Audiences](../books/resonate.md) by Nancy Duarte:** This book examines the power of storytelling in presentations and speeches. It helps speakers connect with their audience on an emotional level while delivering informative content. Connect and inspire! 🤝  
 5.  **🧑‍🏫👍 "The Art of Explanation: Making Your Everyday Communication Make a Difference" by Lee LeFever:** This book is directly about the skills needed to explain things clearly. It is a very practical guide to making complex information understandable. Become an explanation expert! 🤓  
   
 ## 💬 [Gemini](https://gemini.google.com/app) Prompt  

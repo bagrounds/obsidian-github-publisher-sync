@@ -8,7 +8,7 @@ Author:
 tags:
 affiliate link: https://amzn.to/3HBPu0g
 ---
-[Home](/content/index.md) > [Books](/content/books/index.md)  
+[Home](../index.md) > [Books](./index.md)  
 # 🗳️✊🤺🇺🇸 Democracy, If We Can Keep It: The ACLU's 100-Year Fight for Rights in America  
 [🛒 Democracy, If We Can Keep It: The ACLU's 100-Year Fight for Rights in America. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3HBPu0g)  
   
@@ -73,21 +73,21 @@ affiliate link: https://amzn.to/3HBPu0g
 - 💥 **"If We Can Keep It: How the Republic Collapsed and How It Might Be Saved" by Michael Tomasky**  
     – 📘 While sharing a title echoing Cose’s work, Tomasky’s book focuses on modern polarization and the risks to democratic institutions, offering a more contemporary, analytical, and sometimes alarmist view.  
   
-- **[🗳️🏛️☠️ How Democracies Die](/content/books/how-democracies-die.md) by Steven Levitsky and Daniel Ziblatt**  
+- **[🗳️🏛️☠️ How Democracies Die](./how-democracies-die.md) by Steven Levitsky and Daniel Ziblatt**  
     – 🛑 Explores the warning signs and systemic weaknesses that can lead to the demise of democratic norms, providing a provocative counterpoint with an emphasis on political dynamics and institutional decay.  
   
-- 🚨 **[🏛️⛓️ Democracy in Chains: The Deep History of the Radical Right's Stealth Plan for America](/content/books/democracy-in-chains-the-deep-history-of-the-radical-rights-stealth-plan-for-america.md) by Nancy MacLean**  
+- 🚨 **[🏛️⛓️ Democracy in Chains: The Deep History of the Radical Right's Stealth Plan for America](./democracy-in-chains-the-deep-history-of-the-radical-rights-stealth-plan-for-america.md) by Nancy MacLean**  
     – 📖 Investigates the historical evolution of American democracy from a critical perspective, questioning how economic and political forces have sometimes undermined it.  
   
 ### 🎨 Creatively Related Works  
   
-- 📚 **"[Democracy in America](/content/books/democracy-in-america.md)" by Alexis de Tocqueville**  
+- 📚 **"[Democracy in America](./democracy-in-america.md)" by Alexis de Tocqueville**  
     – 📖 A timeless classic that offers penetrating insights into the strengths and vulnerabilities of American democracy, complementing Cose’s historical analysis.  
   
-- 📘 **"[👥⚔️🏛️ The People vs. Democracy: Why Our 🗽 Freedom Is in ⚠️ Danger and How to Save It](/content/books/the-people-vs-democracy.md)" by Yascha Mounk**  
+- 📘 **"[👥⚔️🏛️ The People vs. Democracy: Why Our 🗽 Freedom Is in ⚠️ Danger and How to Save It](./the-people-vs-democracy.md)" by Yascha Mounk**  
     – 🌍 An exploration of the modern challenges facing representative government and the ways that populism and economic inequality are reshaping democratic life.  
   
-- 📖 **"[On Tyranny: Twenty Lessons from the Twentieth Century](/content/books/on-tyranny.md)" by Timothy Snyder**  
+- 📖 **"[On Tyranny: Twenty Lessons from the Twentieth Century](./on-tyranny.md)" by Timothy Snyder**  
     – 📘 A succinct guide to resisting authoritarianism that, while more didactic, reinforces many of the lessons about safeguarding democracy found in Cose’s work.  
   
 - 📚 **"Freedom Is a Constant Struggle: Ferguson, Palestine, and the Foundations of a Movement" by Angela Davis**  

@@ -10,7 +10,7 @@ Channel: The Daily Show
 tags:
 youtube: https://youtu.be/eFI6MwlLJ08
 ---
-[Home](/content/index.md) > [Videos](/content/videos/index.md)  
+[Home](../index.md) > [Videos](./index.md)  
 # 😡🏛️🤝 Jon Stewart «Can't F**king Believe» Democrats Caved on the Shutdown | The Daily Show  
 ![Jon Stewart «Can't F**king Believe» Democrats Caved on the Shutdown | The Daily Show](https://youtu.be/eFI6MwlLJ08)  
   
@@ -65,13 +65,13 @@ The video, a segment from *The Daily Show* with Jon Stewart, strongly criticizes
   
 ### 🆚 Contrasting  
   
-* [🇺🇸➡️ A Time for Choosing: The Rise of Modern American Conservatism](/content/books/a-time-for-choosing-the-rise-of-modern-american-conservatism.md) by 📚 Paul Ryan. This book presents a 🐘 conservative vision for fiscal and policy reform, offering an ideological contrast to the Democratic demands for expanding the ACA. Ryan's perspective would likely frame the subsidies as a form of unsustainable 💸 government overreach.  
-* [💀👨‍🏫 The Death of Expertise: The Campaign Against Established Knowledge and Why It Matters](/content/books/the-death-of-expertise-the-campaign-against-established-knowledge-and-why-it-matters.md) by 📚 Tom Nichols. This book is a contrast because it focuses on the anti-intellectual and 🤥 reality distortion themes mentioned in the video. It offers a framework for understanding why fact-based political arguments, like those supporting the ACA's importance, can struggle against 🗣️ partisan rhetoric and political tribalism.  
+* [🇺🇸➡️ A Time for Choosing: The Rise of Modern American Conservatism](../books/a-time-for-choosing-the-rise-of-modern-american-conservatism.md) by 📚 Paul Ryan. This book presents a 🐘 conservative vision for fiscal and policy reform, offering an ideological contrast to the Democratic demands for expanding the ACA. Ryan's perspective would likely frame the subsidies as a form of unsustainable 💸 government overreach.  
+* [💀👨‍🏫 The Death of Expertise: The Campaign Against Established Knowledge and Why It Matters](../books/the-death-of-expertise-the-campaign-against-established-knowledge-and-why-it-matters.md) by 📚 Tom Nichols. This book is a contrast because it focuses on the anti-intellectual and 🤥 reality distortion themes mentioned in the video. It offers a framework for understanding why fact-based political arguments, like those supporting the ACA's importance, can struggle against 🗣️ partisan rhetoric and political tribalism.  
   
 ### 🎨 Creatively Related  
   
 * *The Power Broker: 🏗️ Robert Moses and the Fall of New York* by 📚 Robert A. Caro. This biography is relevant as a creative parallel, exploring the 🤫 raw, cynical power dynamics and backroom deals of politics—themes that mirror Stewart’s criticism that Senator Chuck Schumer was manipulating the situation for political gain, regardless of 📈 public leverage.  
-* [🤔🐇🐢 Thinking, Fast and Slow](/content/books/thinking-fast-and-slow.md) by 📚 Daniel Kahneman. The book is tangentially related because it discusses the 🧠 psychological biases that influence decision-making, including the tendency to value immediate, certain gains (ending the shutdown) over larger, uncertain future gains (a policy win for ACA subsidies), which explains the Democrats' 🤦‍♂️ political capitulation.  
+* [🤔🐇🐢 Thinking, Fast and Slow](../books/thinking-fast-and-slow.md) by 📚 Daniel Kahneman. The book is tangentially related because it discusses the 🧠 psychological biases that influence decision-making, including the tendency to value immediate, certain gains (ending the shutdown) over larger, uncertain future gains (a policy win for ACA subsidies), which explains the Democrats' 🤦‍♂️ political capitulation.  
   
 ## 🐦 Tweet  
 <blockquote class="twitter-tweet" data-theme="dark"><p lang="en" dir="ltr">😡🏛️🤝 Jon Stewart «Can&#39;t F**king Believe» Democrats Caved on the Shutdown | The Daily Show<br><br>Democrats squandered their advantage, snatching defeat from the jaws of victory.<a href="https://twitter.com/jonstewart?ref_src=twsrc%5Etfw">@jonstewart</a> <a href="https://twitter.com/TheDailyShow?ref_src=twsrc%5Etfw">@TheDailyShow</a><a href="https://t.co/Vx1s4p0pk9">https://t.co/Vx1s4p0pk9</a></p>&mdash; Bryan Grounds (@bagrounds) <a href="https://twitter.com/bagrounds/status/1988271417667002824?ref_src=twsrc%5Etfw">November 11, 2025</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>

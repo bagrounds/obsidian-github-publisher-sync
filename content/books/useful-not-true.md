@@ -7,7 +7,7 @@ share: true
 affiliate link: https://amzn.to/4lsbKc3
 CTA: ✅ Embrace paradox.
 ---
-[Home](/content/index.md) > [Books](/content/books/index.md)  
+[Home](../index.md) > [Books](./index.md)  
 # ✅🤔 Useful Not True  
 [🛒 Useful Not True. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4lsbKc3)  
   
@@ -36,9 +36,9 @@ CTA: ✅ Embrace paradox.
   
 * 📜 **"Pragmatism: A New Name for Some Old Ways of Thinking" by William James:** 🏛️ Go to the source of American pragmatism with this collection of lectures. 🧠 James argues that the meaning and truth of an idea are determined by its practical consequences.  
 * 📚 **"The Meaning of Truth" by William James:** ➕ A sequel to *Pragmatism*, this book further explores the nature of truth as a dynamic and evolving concept shaped by human experience.  
-* **[🌱🧘🏼‍♀️🏆 Mindset: The New Psychology of Success](/content/books/mindset.md) by Carol S. Dweck:** 📈 Dweck's influential work explores the difference between a "fixed mindset" and a "growth mindset," aligning with Sivers' emphasis on the power of belief in shaping outcomes.  
-* **[⚛️🔄 Atomic Habits: An Easy & Proven Way to Build Good Habits & Break Bad Ones](/content/books/atomic-habits.md) by James Clear:** 🪜 This book provides a practical framework for building good habits and breaking bad ones, which is a direct application of choosing useful actions to achieve desired results.  
-* **[😩😊 The Happiness Trap: How to Stop Struggling and Start Living](/content/books/the-happiness-trap-how-to-stop-struggling-and-start-living.md) by Russ Harris:** ❤️‍🩹 Based on Acceptance and Commitment Therapy (ACT), this book teaches readers to stop struggling against difficult thoughts and feelings and instead focus on living a rich and meaningful life, a sentiment that resonates with Sivers' focus on useful action over internal struggle.  
+* **[🌱🧘🏼‍♀️🏆 Mindset: The New Psychology of Success](./mindset.md) by Carol S. Dweck:** 📈 Dweck's influential work explores the difference between a "fixed mindset" and a "growth mindset," aligning with Sivers' emphasis on the power of belief in shaping outcomes.  
+* **[⚛️🔄 Atomic Habits: An Easy & Proven Way to Build Good Habits & Break Bad Ones](./atomic-habits.md) by James Clear:** 🪜 This book provides a practical framework for building good habits and breaking bad ones, which is a direct application of choosing useful actions to achieve desired results.  
+* **[😩😊 The Happiness Trap: How to Stop Struggling and Start Living](./the-happiness-trap-how-to-stop-struggling-and-start-living.md) by Russ Harris:** ❤️‍🩹 Based on Acceptance and Commitment Therapy (ACT), this book teaches readers to stop struggling against difficult thoughts and feelings and instead focus on living a rich and meaningful life, a sentiment that resonates with Sivers' focus on useful action over internal struggle.  
   
 ### ⚔️ Contrasting Perspectives: The Case for Objective Truth  
   
@@ -49,11 +49,11 @@ CTA: ✅ Embrace paradox.
   
 ### 🎨 Creatively Related Reads: Expanding Your Mental Toolkit  
   
-* **[🤔🐇🐢 Thinking, Fast and Slow](/content/books/thinking-fast-and-slow.md) by Daniel Kahneman:** 🏆 The Nobel laureate's exploration of the two systems of thought that drive our judgments and decisions provides a scientific underpinning to Sivers' observations about the non-rational nature of our beliefs.  
-* **[🧠🌱💀 Made to Stick: Why Some Ideas Survive and Others Die](/content/books/made-to-stick.md) by Chip Heath and Dan Heath:** 📌 This book examines the characteristics of memorable and influential ideas, offering a framework for understanding why certain narratives (or beliefs) are more "sticky" than others.  
+* **[🤔🐇🐢 Thinking, Fast and Slow](./thinking-fast-and-slow.md) by Daniel Kahneman:** 🏆 The Nobel laureate's exploration of the two systems of thought that drive our judgments and decisions provides a scientific underpinning to Sivers' observations about the non-rational nature of our beliefs.  
+* **[🧠🌱💀 Made to Stick: Why Some Ideas Survive and Others Die](./made-to-stick.md) by Chip Heath and Dan Heath:** 📌 This book examines the characteristics of memorable and influential ideas, offering a framework for understanding why certain narratives (or beliefs) are more "sticky" than others.  
 * ✍️ **"Wired for Story: The Writer's Guide to Using Brain Science to Hook Readers from the Very First Sentence" by Lisa Cron:** 🧬 This book explores the neuroscience behind storytelling, revealing how our brains are wired to respond to narrative, a concept that aligns with Sivers' focus on the power of the stories we tell ourselves.  
 * 🧩 **"Creative Problem Solving: An Introduction" by Donald J. Treffinger, et al.:** 🚀 This book and others on creative problem-solving offer practical techniques for generating new ideas and perspectives, which is a key skill for applying the principles of *Useful Not True*.  
 * 🐒 **"The Storytelling Animal: How Stories Make Us Human" by Jonathan Gottschall:** 📖 This book explores the fundamental role of stories in human cognition and culture, reinforcing the idea that our realities are largely shaped by the narratives we create and consume.  
   
-## 💬 [Gemini](/content/software/gemini.md) Prompt (gemini-2.5-pro)  
+## 💬 [Gemini](../software/gemini.md) Prompt (gemini-2.5-pro)  
 > Write a markdown-formatted (start headings at level H2) book report, followed by a plethora of additional similar, contrasting, and creatively related book recommendations on Useful Not True. Be thorough in content discussed but concise and economical with your language. Structure the report with section headings and bulleted lists to avoid long blocks of text.

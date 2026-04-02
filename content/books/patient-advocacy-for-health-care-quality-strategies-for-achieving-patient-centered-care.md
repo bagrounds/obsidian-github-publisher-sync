@@ -6,7 +6,7 @@ URL: https://bagrounds.org/books/patient-advocacy-for-health-care-quality-strate
 share: true
 affiliate link: https://amzn.to/4kHFy3z
 ---
-[Home](/content/index.md) > [Books](/content/books/index.md)  
+[Home](../index.md) > [Books](./index.md)  
 # 🧑‍⚕️🗣️ Patient Advocacy for Health Care Quality: Strategies for Achieving Patient-Centered Care  
 [🛒 Patient Advocacy for Health Care Quality: Strategies for Achieving Patient-Centered Care. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4kHFy3z)  
   
@@ -58,5 +58,5 @@ The book blends ℹ️ concrete examples, 🎬 real-life vignettes, and 🔬 cur
 * 🌍 ***Reimagining Global Health: An Introduction*** by Paul Farmer. This book offers a broader perspective on health disparities and the need for advocacy on a global scale, providing context for the challenges faced in ensuring equitable healthcare access and quality.  
 * 🤝 ***The PFMD Book of Good Practices*** by Patient Focused Medicines Development. This resource provides examples of good practices in patient engagement within the pharmaceutical development process, highlighting how patient voices are being integrated into different areas of healthcare.  
   
-## 💬 [Gemini](/content/software/gemini.md) Prompt (gemini-2.5-flash-preview-04-17)  
+## 💬 [Gemini](../software/gemini.md) Prompt (gemini-2.5-flash-preview-04-17)  
 > Write a markdown-formatted (start headings at level H2) book report, followed by a plethora of additional similar, contrasting, and creatively related book recommendations on Patient Advocacy for Health Care Quality: Strategies for Achieving Patient-Centered Care. Be thorough in content discussed but concise and economical with your language. Structure the report with section headings and bulleted lists to avoid long blocks of text.

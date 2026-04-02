@@ -7,7 +7,7 @@ URL: https://bagrounds.org/articles/how-we-built-our-multi-agent-research-system
 Author:
 tags:
 ---
-[Home](/content/index.md) > [Articles](/content/articles/index.md)  
+[Home](../index.md) > [Articles](./index.md)  
 # [🤖🧠👨‍💻🏗️ How we built our multi Agent research system](https://www.anthropic.com/engineering/multi-agent-research-system)  
 ## 🤖 AI Summary  
 * 🧠 **The multi-agent research system** is an architecture developed by Anthropic that uses multiple Claude agents to explore complex topics.  
@@ -31,13 +31,13 @@ tags:
   
 #### ⚖️ Contrasting Perspectives: Single-Agent and Philosophical Approaches  
   
-* **[🧠💻🤖 Deep Learning](/content/books/deep-learning.md)** by Ian Goodfellow, Yoshua Bengio, and Aaron Courville: This is a foundational textbook on the opposing paradigm of deep neural networks. It focuses on single, large models that learn complex representations from data, representing a contrasting "single-agent" approach to AI.  
-* **[🤖⚠️📈 Superintelligence: Paths, Dangers, Strategies](/content/books/superintelligence-paths-dangers-strategies.md)** by Nick Bostrom: This book contrasts with the multi-agent approach by focusing on the risks and ethical considerations of building a singular, highly intelligent AI, including the potential for complex systems to act in ways that are misaligned with human intentions.  
+* **[🧠💻🤖 Deep Learning](../books/deep-learning.md)** by Ian Goodfellow, Yoshua Bengio, and Aaron Courville: This is a foundational textbook on the opposing paradigm of deep neural networks. It focuses on single, large models that learn complex representations from data, representing a contrasting "single-agent" approach to AI.  
+* **[🤖⚠️📈 Superintelligence: Paths, Dangers, Strategies](../books/superintelligence-paths-dangers-strategies.md)** by Nick Bostrom: This book contrasts with the multi-agent approach by focusing on the risks and ethical considerations of building a singular, highly intelligent AI, including the potential for complex systems to act in ways that are misaligned with human intentions.  
 * 💻 **The Master Algorithm** by Pedro Domingos: This book provides a broad overview of different machine learning paradigms, offering a wider context on the various ways AI systems can be designed to learn and solve problems, beyond just a multi-agent architecture.  
 * 🧘 **I Am a Strange Loop** by Douglas Hofstadter: A contrasting perspective that delves into the nature of consciousness and self-awareness, offering a philosophical counterpoint to the purely functional and technical approach of building an AI research system.  
   
 #### 💡 Creatively Related: Analogies from Other Fields  
   
-* **[👤🧬 The Selfish Gene](/content/books/the-selfish-gene.md)** by Richard Dawkins: While not about AI, it offers a foundational understanding of how independent agents (genes) interact to produce complex, emergent behaviors in biological systems, which is a great creative analogy for a multi-agent AI system.  
-* **[♾️📐🎶🥨 Gödel, Escher, Bach: An Eternal Golden Braid](/content/books/godel-escher-bach.md)** by Douglas Hofstadter: A deeply creative recommendation, this book explores how complex, hierarchical systems and emergent properties arise from simple, self-referential rules. It is a masterpiece that provides a philosophical and logical framework for understanding complex systems like multi-agent AI.  
+* **[👤🧬 The Selfish Gene](../books/the-selfish-gene.md)** by Richard Dawkins: While not about AI, it offers a foundational understanding of how independent agents (genes) interact to produce complex, emergent behaviors in biological systems, which is a great creative analogy for a multi-agent AI system.  
+* **[♾️📐🎶🥨 Gödel, Escher, Bach: An Eternal Golden Braid](../books/godel-escher-bach.md)** by Douglas Hofstadter: A deeply creative recommendation, this book explores how complex, hierarchical systems and emergent properties arise from simple, self-referential rules. It is a masterpiece that provides a philosophical and logical framework for understanding complex systems like multi-agent AI.  
 * 💰 **The Wealth of Nations** by Adam Smith: This classic economic text introduces the idea of the "invisible hand," where individual agents (people) pursuing their own interests can lead to a coherent, functional system (a market). This concept is a powerful analogy for how decentralized, multi-agent AI systems can achieve a collective goal.

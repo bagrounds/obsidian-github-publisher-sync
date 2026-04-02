@@ -7,7 +7,7 @@ share: true
 affiliate link: https://amzn.to/43I7HAG
 CTA: 🫂 Embrace stillness.
 ---
-[Home](/content/index.md) > [Books](/content/books/index.md)  
+[Home](../index.md) > [Books](./index.md)  
 # 🥶🛌 Wintering: The Power of Rest and Retreat in Difficult Times  
 [🛒 Wintering: The Power of Rest and Retreat in Difficult Times. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/43I7HAG)  
   
@@ -51,9 +51,9 @@ CTA: 🫂 Embrace stillness.
 ## 📚 Further Reading Recommendations  
   
 ### ☯️ Similar Themes (Rest, Nature, Reflection, Cycles)  
-* **[📵 How to Do Nothing: Resisting the Attention Economy](/content/books/how-to-do-nothing-resisting-the-attention-economy.md) by Jenny Odell:** Explores withdrawing attention from the "attention economy" and finding value outside constant productivity.  
-* **[🪢🌾 Braiding Sweetgrass: Indigenous Wisdom, Scientific Knowledge, and the Teachings of Plants](/content/books/braiding-sweetgrass.md) by Robin Wall Kimmerer:** Blends Indigenous wisdom, scientific knowledge, and personal reflection on nature, reciprocity, and connection.  
-* **[😴📈 Rest: Why You Get More Done When You Work Less](/content/books/rest-why-you-get-more-done-when-you-work-less.md) by Alex Soojung-Kim Pang:** Presents scientific and practical arguments for the importance of rest for productivity and well-being.  
+* **[📵 How to Do Nothing: Resisting the Attention Economy](./how-to-do-nothing-resisting-the-attention-economy.md) by Jenny Odell:** Explores withdrawing attention from the "attention economy" and finding value outside constant productivity.  
+* **[🪢🌾 Braiding Sweetgrass: Indigenous Wisdom, Scientific Knowledge, and the Teachings of Plants](./braiding-sweetgrass.md) by Robin Wall Kimmerer:** Blends Indigenous wisdom, scientific knowledge, and personal reflection on nature, reciprocity, and connection.  
+* **[😴📈 Rest: Why You Get More Done When You Work Less](./rest-why-you-get-more-done-when-you-work-less.md) by Alex Soojung-Kim Pang:** Presents scientific and practical arguments for the importance of rest for productivity and well-being.  
 * 🤫 **_Silence: In the Age of Noise_ by Erling Kagge:** An explorer's meditation on the power and scarcity of silence.  
 * 🚶‍♀️ **_The Salt Path_ by Raynor Winn:** A memoir about finding solace and resilience through walking in nature amidst homelessness and illness.  
 * 🏞️ **_Pilgrim at Tinker Creek_ by Annie Dillard:** Classic nature writing focused on deep observation and philosophical reflection.  
@@ -63,8 +63,8 @@ CTA: 🫂 Embrace stillness.
 * 🧘‍♀️ **_When Things Fall Apart: Heart Advice for Difficult Times_ by Pema Chödrön:** Buddhist teachings on embracing pain and difficulty with compassion.  
   
 ### 🚀 Contrasting Perspectives (Action, Productivity, Grit)  
-* **[❤️‍🔥💪 Grit: The Power of Passion and Perseverance](/content/books/grit-the-power-of-passion-and-perseverance.md) by Angela Duckworth:** Focuses on the importance of sustained effort and passion towards long-term goals.  
-* **[⚛️🔄 Atomic Habits](/content/books/atomic-habits.md) by James Clear:** A guide to building small, consistent habits for self-improvement and productivity.  
+* **[❤️‍🔥💪 Grit: The Power of Passion and Perseverance](./grit-the-power-of-passion-and-perseverance.md) by Angela Duckworth:** Focuses on the importance of sustained effort and passion towards long-term goals.  
+* **[⚛️🔄 Atomic Habits](./atomic-habits.md) by James Clear:** A guide to building small, consistent habits for self-improvement and productivity.  
 * 🧠 **_Can't Hurt Me: Master Your Mind and Defy the Odds_ by David Goggins:** Memoir emphasizing extreme mental toughness and pushing physical/mental limits.  
   
 ### 🪄 Creatively Related (Transformation, Mythology, Seasons, Metaphor)  
@@ -72,8 +72,8 @@ CTA: 🫂 Embrace stillness.
 * ❄️ **_The Snow Child_ by Eowyn Ivey:** A novel set in 1920s Alaska, weaving fairy tale elements with themes of winter, isolation, longing, and transformation.  
 * 🦛 **_Moominland Midwinter_ by Tove Jansson:** A beloved children's book about navigating the strangeness and solitude of winter, balancing darkness with consolation.  
 * 🦁 **_The Lion, the Witch and the Wardrobe_ by C.S. Lewis:** A classic fantasy where winter represents a state of oppression and lack of vitality, overcome by hope and sacrifice.  
-* 🎨 **[The Artist's Way](/content/books/the-artists-way.md) by Julia Cameron:** A course on discovering and recovering your creative self, dealing with blocks and embracing cycles.  
+* 🎨 **[The Artist's Way](./the-artists-way.md) by Julia Cameron:** A course on discovering and recovering your creative self, dealing with blocks and embracing cycles.  
 * 🇦🇶 **_Skating to Antarctica_ by Jenny Diski:** A memoir mentioned by May, exploring themes of depression, retreat, and the allure of white, empty spaces.  
   
-## 💬 [Gemini](/content/software/gemini.md) Prompt (gemini-2.5-pro-exp-03-25)  
+## 💬 [Gemini](../software/gemini.md) Prompt (gemini-2.5-pro-exp-03-25)  
 > Write a markdown-formatted (start headings at level H2) book report, followed by a plethora of additional similar, contrasting, and creatively related book recommendations on Wintering: The Power of Rest and Retreat in Difficult Times. Be thorough in content discussed but concise and economical with your language. Structure the report with section headings and bulleted lists to avoid long blocks of text.

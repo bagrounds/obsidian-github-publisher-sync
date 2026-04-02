@@ -6,7 +6,7 @@ URL: https://bagrounds.org/books/trust-how-societies-lost-it-and-how-they-might-
 share: true
 affiliate link: https://amzn.to/3ZarwiN
 ---
-[Home](/content/index.md) > [Books](/content/books/index.md)  
+[Home](../index.md) > [Books](./index.md)  
 # 💔🤝 A Question of Trust: The BBC Reith Lectures 2002  
 [🛒 A Question of Trust: The BBC Reith Lectures 2002. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3ZarwiN)  
   
@@ -51,10 +51,10 @@ This report references *A Question of Trust: The BBC Reith Lectures 2002*, the p
   
 ### 🤝 Similar Explorations of Trust (Philosophical/Societal Focus)  
   
-* **[🤝😇💰 Trust: The Social Virtues and the Creation of Prosperity](/content/books/trust-the-social-virtues-and-the-creation-of-prosperity.md) by Francis Fukuyama:** Explores how levels of trust within different societies (high-trust vs. low-trust cultures) impact economic prosperity and social structure.  
+* **[🤝😇💰 Trust: The Social Virtues and the Creation of Prosperity](./trust-the-social-virtues-and-the-creation-of-prosperity.md) by Francis Fukuyama:** Explores how levels of trust within different societies (high-trust vs. low-trust cultures) impact economic prosperity and social structure.  
 * 🤔 **_Social Trust: Foundational and Philosophical Issues_ edited by Kevin Vallier & Michael Weber:** An interdisciplinary collection addressing foundational questions about social trust from philosophical perspectives.  
 * 👩‍🏫 **_Reading Onora O'Neill_ edited by David Archard et al.:** Contains essays critically examining O'Neill's work, including specific chapters dedicated to her influential ideas on trust.  
-* **_[🤝🐧🐳 The Penguin and the Leviathan: How Cooperation Triumphs over Self-Interest](/content/books/the-penguin-and-the-leviathan-how-cooperation-triumphs-over-self-interest.md)_ by Yochai Benkler:** Challenges the view of humans as purely selfish, arguing for our inherent capacity for cooperation and its value, particularly in the information age – a perspective that complements O'Neill's focus on rebuilding societal bonds.  
+* **_[🤝🐧🐳 The Penguin and the Leviathan: How Cooperation Triumphs over Self-Interest](./the-penguin-and-the-leviathan-how-cooperation-triumphs-over-self-interest.md)_ by Yochai Benkler:** Challenges the view of humans as purely selfish, arguing for our inherent capacity for cooperation and its value, particularly in the information age – a perspective that complements O'Neill's focus on rebuilding societal bonds.  
 * 🏛️ **Trust and Governance edited by Valerie Braithwaite & Margaret Levi:** Explores the relationship between trust and government performance, considering trust as social bonding and examining how shared values influence citizen behavior.  
   
 ### 🆚 Contrasting Perspectives or Domain-Specific Focus  
@@ -62,7 +62,7 @@ This report references *A Question of Trust: The BBC Reith Lectures 2002*, the p
 * 🚀 **_The Speed of Trust: The One Thing that Changes Everything_ by Stephen M.R. Covey:** Focuses more pragmatically on how building trust rapidly impacts efficiency and results, particularly in business and organizational contexts.  
 * 🌱 **_Trust & Inspire: How Truly Great Leaders Unleash Greatness in Others_ by Stephen M. R. Covey:** Contrasts traditional "Command & Control" leadership with a "Trust & Inspire" model, arguing the latter is necessary for the modern world, focusing on leadership style as the driver of trust.  
 * ✅ **_The Thin Book of Trust: An Essential Primer for Building Trust at Work_ by Charles Feltman:** Offers a very concise, actionable framework for building interpersonal trust in the workplace, defining trust through sincerity, reliability, competence, and care.  
-* **_[🤥😈 Liars and Outliers: Enabling the Trust That Society Needs to Thrive](/content/books/liars-and-outliers.md)_ by Bruce Schneier:** A security expert's take on trust, analyzing the various societal pressures (moral, reputational, institutional, security systems) that induce cooperation and manage deception in the information age.  
+* **_[🤥😈 Liars and Outliers: Enabling the Trust That Society Needs to Thrive](./liars-and-outliers.md)_ by Bruce Schneier:** A security expert's take on trust, analyzing the various societal pressures (moral, reputational, institutional, security systems) that induce cooperation and manage deception in the information age.  
 * 🧐 **_In Praise of Skepticism: Trust but Verify_ by Pippa Norris:** Argues for prudent skepticism as a beneficial stance for citizens when evaluating authorities, contrasting with views that might see public cynicism as inherently problematic.  
 * 🌐 **_Trust in Social and Business Relations: Theory and Practice_ (Various Authors, Routledge):** Explores trust specifically within the context of the digital age, covering online relationships, social media impacts, and trust dynamics in digital industries.  
   
@@ -73,5 +73,5 @@ This report references *A Question of Trust: The BBC Reith Lectures 2002*, the p
 * 🤝 **_Building Communities of Trust: Creative Work for Social Change_ by Ann Feldman:** Uses ethnographic research and case studies from social impact projects to explore practical pathways for building trust within diverse communities aiming for social change.  
 * 🧠 **_Braintrust: What Neuroscience Tells Us about Morality_ by Patricia S. Churchland:** Explores the neurobiological underpinnings of morality, trust, and cooperation, offering a scientific perspective on the foundations of social bonds.  
   
-## 💬 [Gemini](/content/software/gemini.md) Prompt (gemini-2.5-pro-exp-03-25)  
+## 💬 [Gemini](../software/gemini.md) Prompt (gemini-2.5-pro-exp-03-25)  
 > Write a markdown-formatted (start headings at level H2) book report, followed by a plethora of additional similar, contrasting, and creatively related book recommendations on Trust: How Societies Lost It and How They Might Regain It. Be thorough in content discussed but concise and economical with your language. Structure the report with section headings and bulleted lists to avoid long blocks of text.

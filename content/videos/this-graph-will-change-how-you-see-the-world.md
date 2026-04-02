@@ -10,7 +10,7 @@ Channel: Veritasium
 tags:
 youtube: https://youtu.be/HBluLfX2F_k
 ---
-[Home](/content/index.md) > [Videos](/content/videos/index.md)  
+[Home](../index.md) > [Videos](./index.md)  
 # 📊👀🌍 This graph will change how you see the world  
 ![This graph will change how you see the world](https://youtu.be/HBluLfX2F_k)  
   
@@ -55,13 +55,13 @@ youtube: https://youtu.be/HBluLfX2F_k
 ## 📚 Book Recommendations  
   
 ### ↔️ Similar  
-* [⚫🦢🎲 The Black Swan: The Impact of the Highly Improbable](/content/books/the-black-swan-the-impact-of-the-highly-improbable.md) by Nassim Nicholas Taleb: Focuses on the extreme impact of rare, unpredictable outliers (Black Swans) and critiques the use of normal distribution models for high-impact events.  
-* [♾️〰️📊 Fractals, Chaos, Power Laws: Minutes from an Infinite Paradise](/content/books/fractals-chaos-power-laws-minutes-from-an-infinite-paradise.md) by Manfred Schroeder: A detailed technical exploration of fractal geometry and power laws in nature, touching on the mathematical principles behind scale invariance.  
+* [⚫🦢🎲 The Black Swan: The Impact of the Highly Improbable](../books/the-black-swan-the-impact-of-the-highly-improbable.md) by Nassim Nicholas Taleb: Focuses on the extreme impact of rare, unpredictable outliers (Black Swans) and critiques the use of normal distribution models for high-impact events.  
+* [♾️〰️📊 Fractals, Chaos, Power Laws: Minutes from an Infinite Paradise](../books/fractals-chaos-power-laws-minutes-from-an-infinite-paradise.md) by Manfred Schroeder: A detailed technical exploration of fractal geometry and power laws in nature, touching on the mathematical principles behind scale invariance.  
   
 ### 🆚 Contrasting  
-* [💰📈🌍⏳ Capital in the Twenty-First Century](/content/books/capital-in-the-twenty-first-century.md) by Thomas Piketty: Provides a comprehensive economic argument on wealth distribution, focusing on institutional and policy factors where the rate of return on capital ($r$) exceeds the rate of economic growth ($g$).  
+* [💰📈🌍⏳ Capital in the Twenty-First Century](../books/capital-in-the-twenty-first-century.md) by Thomas Piketty: Provides a comprehensive economic argument on wealth distribution, focusing on institutional and policy factors where the rate of return on capital ($r$) exceeds the rate of economic growth ($g$).  
 * 📈 The Theory of Wages by Paul Douglas: Presents the foundations of the neoclassical marginal productivity theory of income distribution, which contrasts with the purely statistical power law models by focusing on economic factors like labor and capital inputs.  
   
 ### 🎨 Creatively Related  
 * 🧠 How Nature Works: The Science of Self-Organized Criticality by Per Bak: The seminal book by one of the founders of SOC, offering a non-mathematical explanation of how systems from the earth's crust to the brain operate at the edge of chaos.  
-* [💥🌀➡️⏳⚖️🕰️ ️ Sync: How Order Emerges From Chaos In The Universe, Nature, And Daily Life](/content/books/sync.md) by Steven Strogatz: Explores the universality of synchronization across diverse systems (fireflies, neurons, and even mechanical oscillators) demonstrating how simple local rules can lead to emergent, large-scale order, a core theme related to universality.
+* [💥🌀➡️⏳⚖️🕰️ ️ Sync: How Order Emerges From Chaos In The Universe, Nature, And Daily Life](../books/sync.md) by Steven Strogatz: Explores the universality of synchronization across diverse systems (fireflies, neurons, and even mechanical oscillators) demonstrating how simple local rules can lead to emergent, large-scale order, a core theme related to universality.

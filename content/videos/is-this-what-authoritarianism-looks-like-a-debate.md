@@ -10,7 +10,7 @@ Channel: The Opinions Podcast
 tags:
 youtube: https://youtu.be/dIjTBNOK1tc
 ---
-[Home](/content/index.md) > [Videos](/content/videos/index.md)  
+[Home](../index.md) > [Videos](./index.md)  
 # 👑⛓️🤔 Is This What Authoritarianism Looks Like? A Debate.  
 ![Is This What Authoritarianism Looks Like? A Debate.](https://youtu.be/dIjTBNOK1tc)  
   
@@ -40,8 +40,8 @@ Topics to explore for a better understanding include:
 * 💰 The economic drivers behind the working class's sense of betrayal by the elites.  
   
 ## 📚 Book Recommendations  
-* [😇🧠 The Righteous Mind: Why Good People Are Divided by Politics and Religion](/content/books/the-righteous-mind.md) by Jonathan Haidt provides a deep dive into the moral and psychological roots of political division.  
+* [😇🧠 The Righteous Mind: Why Good People Are Divided by Politics and Religion](../books/the-righteous-mind.md) by Jonathan Haidt provides a deep dive into the moral and psychological roots of political division.  
 * 📖 The Populist Explosion by John B. Judis explores the historical context and rise of populist movements globally.  
 * 📖 Hillbilly Elegy by J.D. Vance offers a look at the cultural and economic anxieties of the white working class, which is a key demographic discussed in the video.  
-* [👑🚫📜2️⃣0️⃣ On Tyranny: Twenty Lessons from the Twentieth Century](/content/books/on-tyranny.md) by Timothy Snyder offers a concise guide to historical lessons on how to resist authoritarianism.  
-* [👻🇺🇸⚔️🪽 The Soul of America: The Battle for Our Better Angels](/content/books/the-soul-of-america-the-battle-for-our-better-angels.md) by Jon Meacham explores how America has overcome periods of political and social crisis in its history.
+* [👑🚫📜2️⃣0️⃣ On Tyranny: Twenty Lessons from the Twentieth Century](../books/on-tyranny.md) by Timothy Snyder offers a concise guide to historical lessons on how to resist authoritarianism.  
+* [👻🇺🇸⚔️🪽 The Soul of America: The Battle for Our Better Angels](../books/the-soul-of-america-the-battle-for-our-better-angels.md) by Jon Meacham explores how America has overcome periods of political and social crisis in its history.

@@ -7,7 +7,7 @@ share: true
 affiliate link: https://amzn.to/46jyS7D
 CTA: 🤔 Question everything.
 ---
-[Home](/content/index.md) > [Books](/content/books/index.md)  
+[Home](../index.md) > [Books](./index.md)  
 # 🧑‍🏫🆚⛪ The Case Against The Case For Christ: A New Testament Scholar Refutes the Reverend Lee Strobel  
 [🛒 The Case Against The Case For Christ: A New Testament Scholar Refutes the Reverend Lee Strobel. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/46jyS7D)  
   
@@ -47,14 +47,14 @@ CTA: 🤔 Question everything.
   
 ### ➖ Contrasting Books  
   
-* **[📰❓✝️ The Case for Christ: A Journalist's Personal Investigation of the Evidence for Jesus](/content/books/the-case-for-christ-a-journalists-personal-investigation-of-the-evidence-for-jesus.md)** by Lee Strobel. This is the original book to which Price's work is a direct response. It presents a former atheist journalist's investigation into the evidence for Jesus's divinity and resurrection, featuring interviews with Christian scholars and apologists.  
-* **[✝️ Mere Christianity](/content/books/mere-christianity.md)** by C. S. Lewis. A classic work of Christian apologetics, this book presents a rational case for the Christian faith, making fundamental arguments for belief without delving into the specific historical critiques that Price addresses.  
+* **[📰❓✝️ The Case for Christ: A Journalist's Personal Investigation of the Evidence for Jesus](./the-case-for-christ-a-journalists-personal-investigation-of-the-evidence-for-jesus.md)** by Lee Strobel. This is the original book to which Price's work is a direct response. It presents a former atheist journalist's investigation into the evidence for Jesus's divinity and resurrection, featuring interviews with Christian scholars and apologists.  
+* **[✝️ Mere Christianity](./mere-christianity.md)** by C. S. Lewis. A classic work of Christian apologetics, this book presents a rational case for the Christian faith, making fundamental arguments for belief without delving into the specific historical critiques that Price addresses.  
 * 🤔 **The Reason for God: Belief in an Age of Skepticism** by Timothy J. Keller. This book offers a defense of Christian faith by addressing common doubts and objections from a modern perspective, providing apologetic arguments that contrast with Price's skeptical stance.  
   
 ### 💡 Creatively Related Books  
   
-* **[😈🌍🔬🕯️🌑 The Demon-Haunted World: Science as a Candle in the Dark](/content/books/the-demon-haunted-world.md)** by Carl Sagan. This book champions scientific thinking and critical inquiry, arguing against pseudoscience and irrationality, which creatively relates to Price's emphasis on rational analysis over credulity in examining religious claims.  
-* **[🤔🐇🐢 Thinking, Fast and Slow](/content/books/thinking-fast-and-slow.md)** by Daniel Kahneman. This book explores cognitive biases and the two systems of thinking that guide human judgment. It offers insight into why people might accept arguments based on intuition or prior belief, which can be creatively linked to Price's critique of apologetic methodologies and Strobel's perceived "credulousness."  
+* **[😈🌍🔬🕯️🌑 The Demon-Haunted World: Science as a Candle in the Dark](./the-demon-haunted-world.md)** by Carl Sagan. This book champions scientific thinking and critical inquiry, arguing against pseudoscience and irrationality, which creatively relates to Price's emphasis on rational analysis over credulity in examining religious claims.  
+* **[🤔🐇🐢 Thinking, Fast and Slow](./thinking-fast-and-slow.md)** by Daniel Kahneman. This book explores cognitive biases and the two systems of thinking that guide human judgment. It offers insight into why people might accept arguments based on intuition or prior belief, which can be creatively linked to Price's critique of apologetic methodologies and Strobel's perceived "credulousness."  
 * 🏺 **Mythos** by Stephen Fry. A humorous and engaging retelling of Greek myths, this book highlights the rich and often contradictory narratives of ancient religions. It creatively connects to Price's discussions on myth-making and the derivation of religious stories from earlier traditions.  
   
 ## 💬 [Gemini](https://gemini.google.com) Prompt (gemini-2.5-flash)  

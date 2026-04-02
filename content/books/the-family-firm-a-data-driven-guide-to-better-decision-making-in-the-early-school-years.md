@@ -7,7 +7,7 @@ share: true
 CTA: 📈 Optimize family life.
 affiliate link: https://amzn.to/48awcKQ
 ---
-[Home](/content/index.md) > [Books](/content/books/index.md)  
+[Home](../index.md) > [Books](./index.md)  
 # 👨‍👩‍👧‍👦📊 The Family Firm: A Data-Driven Guide to Better Decision Making in the Early School Years  
 [🛒 The Family Firm: A Data-Driven Guide to Better Decision Making in the Early School Years. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/48awcKQ)  
   
@@ -78,18 +78,18 @@ affiliate link: https://amzn.to/48awcKQ
 **📖 Similar Books (Data-Driven, Practical Parenting)**  
   
 * 👩‍⚕️ **Emily Oster ParentData Series:**  
-    * [🫄➕ Expecting Better: Why the Conventional Pregnancy Wisdom Is Wrong - and What You Really Need to Know](/content/books/expecting-better.md)  
-    * **[👶📊😌 Cribsheet: A Data-Driven Guide to Better, More Relaxed Parenting, from Birth to Preschool](/content/books/cribsheet.md)**  
+    * [🫄➕ Expecting Better: Why the Conventional Pregnancy Wisdom Is Wrong - and What You Really Need to Know](./expecting-better.md)  
+    * **[👶📊😌 Cribsheet: A Data-Driven Guide to Better, More Relaxed Parenting, from Birth to Preschool](./cribsheet.md)**  
     * ⚠️ **The Unexpected**  
-* **[❤️👪 Good Inside: A Guide to Becoming the Parent You Want to Be](/content/books/good-inside-a-guide-to-becoming-the-parent-you-want-to-be.md) by Becky Kennedy**  
-* 🚀 **[👨‍🚀 The Self-Driven Child: The 🔬 Science and 🤔 Sense of Giving Your Kids More 🕹️ Control Over Their Lives](/content/books/the-self-driven-child.md) by William Stixrud and Ned Johnson**  
+* **[❤️👪 Good Inside: A Guide to Becoming the Parent You Want to Be](./good-inside-a-guide-to-becoming-the-parent-you-want-to-be.md) by Becky Kennedy**  
+* 🚀 **[👨‍🚀 The Self-Driven Child: The 🔬 Science and 🤔 Sense of Giving Your Kids More 🕹️ Control Over Their Lives](./the-self-driven-child.md) by William Stixrud and Ned Johnson**  
   
 **🤔 Contrasting/Related Perspectives (Different Approaches or Complementary Topics)**  
   
 * 🌍 **Hunt, Gather, Parent by Michaeleen Doucleff**  
 * 🇫🇷 **Bringing Up Bébé by Pamela Druckerman**  
 * 🗣️ **How to Talk So Little Kids Will Listen by Adele Faber and Elaine Mazlish**  
-* **[🕳️🧠👶🏽 The Whole-Brain Child: 12 Revolutionary Strategies to Nurture Your Child's Developing Mind](/content/books/the-whole-brain-child.md) by Daniel Siegel and Tina Payne Bryson**  
+* **[🕳️🧠👶🏽 The Whole-Brain Child: 12 Revolutionary Strategies to Nurture Your Child's Developing Mind](./the-whole-brain-child.md) by Daniel Siegel and Tina Payne Bryson**  
 * ⚖️ **Fair Play by Eve Rodsky**  
 * 🦄 **Find Your Unicorn Space by Eve Rodsky**  
   

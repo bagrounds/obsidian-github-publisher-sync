@@ -7,7 +7,7 @@ share: true
 affiliate link: https://amzn.to/4kasfrO
 CTA: ⚫ Imagine possibilities.
 ---
-[Home](/content/index.md) > [Books](/content/books/index.md)  
+[Home](../index.md) > [Books](./index.md)  
 # ⚫🔢 Ten Black Dots  
 [🛒 Ten Black Dots. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4kasfrO)  
   
@@ -34,15 +34,15 @@ CTA: ⚫ Imagine possibilities.
   
 * 🍎 **Feast for 10 by Cathryn Falwell:** A counting book featuring a family shopping for food for a feast, incorporating counting up to ten.  
 * 🔤 **Chicka Chicka Boom Boom by Bill Martin Jr. and John Archambault:** While focused on the alphabet, it shares the rhythmic and repetitive text structure that engages young learners.  
-* **[🐛🍎 The Very Hungry Caterpillar](/content/books/the-very-hungry-caterpillar.md) by Eric Carle:** A classic that incorporates counting as the caterpillar eats through various foods, also featuring distinctive illustrations.  
+* **[🐛🍎 The Very Hungry Caterpillar](./the-very-hungry-caterpillar.md) by Eric Carle:** A classic that incorporates counting as the caterpillar eats through various foods, also featuring distinctive illustrations.  
 * 💋 **Counting Kisses by Karen Katz:** A simple counting book centered around a baby and different family members giving kisses.  
 * 🦁 **1, 2, 3 to the Zoo by Eric Carle:** Another counting book by Eric Carle, following animals on their way to the zoo.  
   
 ### 🎭 Contrasting Books (Narrative and Different Themes)  
   
 * 🐺 **Where the Wild Things Are by Maurice Sendak:** A classic picture book with a strong narrative arc, focusing on emotions and imagination rather than basic concepts.  
-* **[🐰🥕 The Tale of Peter Rabbit](/content/books/the-tale-of-peter-rabbit.md) by Beatrix Potter:** A longer story with a clear plot and detailed illustrations, representing a traditional narrative picture book.  
-* **[🌙🛌 Goodnight Moon](/content/books/goodnight-moon.md) by Margaret Wise Brown:** Focuses on a calming bedtime routine with a lyrical text and gentle illustrations, centered on observation rather than explicit counting or concept instruction.  
+* **[🐰🥕 The Tale of Peter Rabbit](./the-tale-of-peter-rabbit.md) by Beatrix Potter:** A longer story with a clear plot and detailed illustrations, representing a traditional narrative picture book.  
+* **[🌙🛌 Goodnight Moon](./goodnight-moon.md) by Margaret Wise Brown:** Focuses on a calming bedtime routine with a lyrical text and gentle illustrations, centered on observation rather than explicit counting or concept instruction.  
 * 🧜‍♀️ **Julian Is a Mermaid by Jessica Love:** A story celebrating individuality and self-expression through a narrative and vibrant illustrations, with a focus on social-emotional themes.  
   
 ### 🎨 Creatively Related Books (Art, Shapes, and Alternative Concepts)  
@@ -53,7 +53,7 @@ CTA: ⚫ Imagine possibilities.
 * 👆 **Press Here by Hervé Tullet:** Another interactive book by Tullet that uses simple dots and instructions to create a sense of magic and engagement through physical interaction with the book.  
 * 🖌️ **Ish by Peter H. Reynolds:** A story about a boy who learns to embrace his own unique artistic style, encouraging creative freedom similar to how "Ten Black Dots" shows multiple possibilities from simple elements.  
   
-## 💬 [Gemini](/content/software/gemini.md) Prompt (gemini-2.5-flash-preview-04-17)  
+## 💬 [Gemini](../software/gemini.md) Prompt (gemini-2.5-flash-preview-04-17)  
 > Write a markdown-formatted (start headings at level H2) book report, followed by a plethora of additional similar, contrasting, and creatively related book recommendations on Ten Black Dots. Be thorough in content discussed but concise and economical with your language. Structure the report with section headings and bulleted lists to avoid long blocks of text.  
   
 ## 🐦 Tweet  

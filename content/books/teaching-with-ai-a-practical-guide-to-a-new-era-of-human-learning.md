@@ -7,7 +7,7 @@ share: true
 affiliate link: https://amzn.to/45WGtcr
 CTA: Transform education.
 ---
-[Home](/content/index.md) > [Books](/content/books/index.md)  
+[Home](../index.md) > [Books](./index.md)  
 # 🤖🧑‍🏫 Teaching with AI: A Practical Guide to a New Era of Human Learning  
 [🛒 Teaching with AI: A Practical Guide to a New Era of Human Learning. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/45WGtcr)  
   
@@ -53,18 +53,18 @@ CTA: Transform education.
 ### 💔 Contrasting Books (Focus on Traditional Pedagogy, Critiques of EdTech, or Human-Centric Learning)  
   
 * 📝 **Teaching Naked: How Moving Technology Out of Your College Classroom Will Improve Student Learning** by José Antonio Bowen: By the same co-author, this earlier work advocates for reducing technology use in the classroom to foster deeper human interaction and learning, offering a point of contrast to the integration of AI.  
-* **[💀🇺🇸🏫 The Death and Life of the Great American School System: How Testing and Choice Are Undermining Education](/content/books/the-death-and-life-of-the-great-american-school-system-how-testing-and-choice-are-undermining-education.md)** by Diane Ravitch: A critical look at education reform movements, which can provide a contrasting perspective on technology-driven changes in education by emphasizing systemic and human factors.  
+* **[💀🇺🇸🏫 The Death and Life of the Great American School System: How Testing and Choice Are Undermining Education](./the-death-and-life-of-the-great-american-school-system-how-testing-and-choice-are-undermining-education.md)** by Diane Ravitch: A critical look at education reform movements, which can provide a contrasting perspective on technology-driven changes in education by emphasizing systemic and human factors.  
 * 📚 **In Defense of a Liberal Education** by Fareed Zakaria: Argues for the enduring value of a liberal arts education, emphasizing critical thinking, communication, and broad knowledge, skills the authors of *Teaching with AI* also argue are enhanced by thoughtful AI integration but offering a different foundational perspective.  
 * 🚧 **Blurring the Lines: The New Boundaries of Learning, Teaching, and Technology** by Curtis J. Bonk: Explores a wide range of learning technologies but might offer perspectives that highlight the potential downsides or complexities of over-reliance on technology.  
   
 ### 🧠 Creatively Related Books (Exploring the Future, Ethics, and Human-Technology Interaction)  
   
 * 🔮 **Homo Deus: A Brief History of Tomorrow** by Yuval Noah Harari: Explores the future of humanity in the face of technological advancements, including AI, providing a broader societal context for the changes discussed in *Teaching with AI*.  
-* **[🧬👥💾 Life 3.0: Being Human in the Age of Artificial Intelligence](/content/books/life-3-0.md)** by Max Tegmark: Discusses the potential impacts of advanced AI on society and humanity's future, prompting deeper thought about the long-term implications of AI in education and beyond.  
+* **[🧬👥💾 Life 3.0: Being Human in the Age of Artificial Intelligence](./life-3-0.md)** by Max Tegmark: Discusses the potential impacts of advanced AI on society and humanity's future, prompting deeper thought about the long-term implications of AI in education and beyond.  
 * ⚖️ **Ethics of Artificial Intelligence** edited by Matthew Kramer, Luke Nossek, Claire Craig, and Alan Winfield: A collection exploring the ethical dimensions of AI, directly relevant to the ethical considerations of using AI in educational settings.  
-* **[💡🤖💰💥🏢📉 The Innovator's Dilemma: When New Technologies Cause Great Firms to Fail](/content/books/the-innovators-dilemma.md)** by Clayton M. Christensen: While a business book, its concepts about disruptive technologies can be applied metaphorically to understand how AI might disrupt traditional educational models.  
-* **[🔫🦠🔩 Guns, Germs, and Steel: The Fates of Human Societies](/content/books/guns-germs-and-steel-the-fates-of-human-societies.md)** by Jared Diamond: A macro-historical perspective on societal development, which can inspire thinking about how major technological shifts like the rise of AI fit into the broader sweep of human progress and adaptation. While not directly about AI or education, its framework for understanding transformative changes can offer a creative lens.  
+* **[💡🤖💰💥🏢📉 The Innovator's Dilemma: When New Technologies Cause Great Firms to Fail](./the-innovators-dilemma.md)** by Clayton M. Christensen: While a business book, its concepts about disruptive technologies can be applied metaphorically to understand how AI might disrupt traditional educational models.  
+* **[🔫🦠🔩 Guns, Germs, and Steel: The Fates of Human Societies](./guns-germs-and-steel-the-fates-of-human-societies.md)** by Jared Diamond: A macro-historical perspective on societal development, which can inspire thinking about how major technological shifts like the rise of AI fit into the broader sweep of human progress and adaptation. While not directly about AI or education, its framework for understanding transformative changes can offer a creative lens.  
 * 🚶‍♀️ **Mind in Motion: How Action Shapes Thought** by Barbara Tversky: Explores the relationship between our physical actions and our cognitive processes, offering a more fundamental look at how humans learn and think, which can provide a valuable counterpoint to purely technology-centric views of learning.  
   
-## 💬 [Gemini](/content/software/gemini.md) Prompt (gemini-2.5-flash-preview-04-17)  
+## 💬 [Gemini](../software/gemini.md) Prompt (gemini-2.5-flash-preview-04-17)  
 > Write a markdown-formatted (start headings at level H2) book report, followed by a plethora of additional similar, contrasting, and creatively related book recommendations on Teaching with AI: A Practical Guide to a New Era of Human Learning. Be thorough in content discussed but concise and economical with your language. Structure the report with section headings and bulleted lists to avoid long blocks of text.

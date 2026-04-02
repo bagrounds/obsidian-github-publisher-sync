@@ -8,8 +8,11 @@ Author:
 tags:
 affiliate link: https://amzn.to/3T8Kdje
 CTA: 🧘🏼‍♀️ Be present.
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_time: 2026-04-01T00:00:00Z
+force_analyze_links: false
 ---
-[Home](/content/index.md) > [Books](/content/books/index.md)  
+[Home](../index.md) > [Books](./index.md)  
 # 👣➡️🌍 Wherever You Go, There You Are  
 [🛒 Wherever You Go, There You Are. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3T8Kdje)  
   
@@ -61,25 +64,25 @@ CTA: 🧘🏼‍♀️ Be present.
   
 ### 🧘‍♀️ Similar Mindfulness Guides (Practical & Foundational)  
   
-* 📖 **[🌪️🧘‍♂️ Full Catastrophe Living: Using the Wisdom of Your Body and Mind to Face Stress, Pain, and Illness](/content/books/full-catastrophe-living.md)** by Jon Kabat-Zinn: His earlier, more comprehensive work detailing the MBSR program, focusing on using mindfulness for stress, pain, and illness.  
+* 📖 **[🌪️🧘‍♂️ Full Catastrophe Living: Using the Wisdom of Your Body and Mind to Face Stress, Pain, and Illness](./full-catastrophe-living.md)** by Jon Kabat-Zinn: His earlier, more comprehensive work detailing the MBSR program, focusing on using mindfulness for stress, pain, and illness.  
 * 📖 **Mindfulness for Beginners** by Jon Kabat-Zinn: A concise introduction, often accompanied by guided meditations.  
 * 📖 **The Miracle of Mindfulness** by Thich Nhat Hanh: A classic introduction by the revered Zen master, emphasizing mindful breathing and daily activities.  
 * 📖 **Peace is Every Step** by Thich Nhat Hanh: Short, accessible teachings on finding peace in everyday moments.  
 * 📖 **Radical Acceptance** by Tara Brach: Integrates Buddhist teachings and psychology, focusing on accepting ourselves and our lives with compassion.  
 * 📖 **Lovingkindness** by Sharon Salzberg: Focuses on cultivating compassion and kindness towards oneself and others through Metta meditation.  
-* **[🧘🗣️ Mindfulness in Plain English](/content/books/mindfulness-in-plain-english.md)** by Henepola Gunaratana: A straightforward, practical guide to insight meditation (Vipassanā).  
+* **[🧘🗣️ Mindfulness in Plain English](./mindfulness-in-plain-english.md)** by Henepola Gunaratana: A straightforward, practical guide to insight meditation (Vipassanā).  
   
 ### 🧠 Deeper Dives into Mindfulness & Meditation Theory  
   
 * 📖 **Aware: The Science and Practice of Presence** by Daniel J. Siegel, M.D.: Explores the neuroscience behind meditation and introduces the "Wheel of Awareness" practice for focus and emotional resilience.  
-* **[🧘🧠✅ Why Buddhism is True: The Science and Philosophy of Meditation and Enlightenment](/content/books/why-buddhism-is-true-the-science-and-philosophy-of-meditation-and-enlightenment.md)** by Robert Wright: Examines Buddhist philosophy and psychology through the lens of evolutionary psychology and modern science.  
+* **[🧘🧠✅ Why Buddhism is True: The Science and Philosophy of Meditation and Enlightenment](./why-buddhism-is-true-the-science-and-philosophy-of-meditation-and-enlightenment.md)** by Robert Wright: Examines Buddhist philosophy and psychology through the lens of evolutionary psychology and modern science.  
 * 📖 **Coming to Our Senses** by Jon Kabat-Zinn: A deeper, more expansive exploration of mindfulness and its potential for personal and global healing.  
 * 📖 **The Routledge Handbook of Phenomenology of Mindfulness** edited by Susi Ferrarello & Christos Hadjioannou: An academic collection exploring mindfulness through the lens of phenomenology, contrasting it with various philosophical traditions.  
   
 ### 🤔 Contrasting Perspectives (Alternative Approaches to Well-being)  
   
 * 📖 **Mindfulness** by Ellen J. Langer: Presents a different, more cognitive perspective on mindfulness developed in social psychology, distinct from meditative traditions. 💡 Often focuses on actively noticing novelty and questioning assumptions ("mindlessness").  
-* **[📈🧘🏼‍♀️ 10% Happier](/content/books/10-percent-happier.md)** by Dan Harris: A skeptical journalist's journey into meditation, offering a relatable perspective for those wary of spiritual jargon.  
+* **[📈🧘🏼‍♀️ 10% Happier](./10-percent-happier.md)** by Dan Harris: A skeptical journalist's journey into meditation, offering a relatable perspective for those wary of spiritual jargon.  
 * 📖 **The Subtle Art of Not Giving a F*ck** by Mark Manson: A counterintuitive approach focusing on choosing what to care about and accepting life's struggles, contrasting with non-judgmental acceptance.  
 * 📖 **Books on Stoicism (e.g., Meditations by Marcus Aurelius, Letters from a Stoic by Seneca):** 🏛️ Ancient philosophy focused on virtue, reason, and accepting what you cannot control, offering a different framework for resilience.  
 * 📖 **Books on Cognitive Behavioral Therapy (CBT) or Acceptance and Commitment Therapy (ACT):** 🧑‍⚕️ Psychological approaches that focus on changing thought patterns or accepting thoughts/feelings without struggle to improve well-being.  
@@ -92,9 +95,9 @@ CTA: 🧘🏼‍♀️ Be present.
 * 📖 **Presence: Bringing Your Boldest Self to Your Biggest Challenges** by Amy Cuddy: Focuses on embodying confidence and presence in high-stakes situations, drawing on social psychology.  
 * 📖 **The Untethered Soul** by Michael A. Singer: Explores consciousness, identity, and freeing oneself from limiting thoughts and emotions.  
 * 📖 **Forest Bathing** by Dr. Qing Li: Explores the Japanese practice of Shinrin-yoku (mindfully immersing oneself in nature) for health and well-being.  
-* 📖 **[The Creative Act: A Way of Being](/content/books/the-creative-act.md)** by Rick Rubin: While focused on creativity, it delves deeply into awareness, presence, and connecting with inner wisdom, themes resonant with mindfulness.  
+* 📖 **[The Creative Act: A Way of Being](./the-creative-act.md)** by Rick Rubin: While focused on creativity, it delves deeply into awareness, presence, and connecting with inner wisdom, themes resonant with mindfulness.  
   
   
-## 💬 [Gemini](/content/software/gemini.md) Prompt (gemini-2.5-pro-exp-03-25)  
+## 💬 [Gemini](../software/gemini.md) Prompt (gemini-2.5-pro-exp-03-25)  
 > Write a markdown-formatted (start headings at level H2) book report, followed by a plethora of additional similar, contrasting, and creatively related book recommendations on Wherever You Go, There You Are. Be thorough in content discussed but concise and economical with your language. Structure the report with section headings and bulleted lists to avoid long blocks of text..  
   

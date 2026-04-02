@@ -9,7 +9,7 @@ Platform:
 Channel: PBS NewsHour
 tags:
 ---
-[Home](/content/index.md) > [Videos](/content/videos/index.md)  
+[Home](../index.md) > [Videos](./index.md)  
 # Migrants in U.S. legally and with no criminal history caught up in Trump crackdown  
   
 ![Migrants in U.S. legally and with no criminal history caught up in Trump crackdown](https://youtu.be/iPNi3UxD7NQ)  

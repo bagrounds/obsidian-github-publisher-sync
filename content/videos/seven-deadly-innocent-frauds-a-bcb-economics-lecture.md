@@ -10,7 +10,7 @@ Channel: Bard College Berlin
 tags:
 youtube: https://www.youtube.com/watch?v=v14iP_qnlgU
 ---
-[Home](/content/index.md) > [Videos](/content/videos/index.md) | [👨‍🏫📉💵 Warren Mosler](/content/people/warren-mosler.md)  
+[Home](../index.md) > [Videos](./index.md) | [👨‍🏫📉💵 Warren Mosler](../people/warren-mosler.md)  
 # 😇😈📉🚫 7️⃣ Deadly Innocent Frauds-A BCB Economics Lecture  
 ![Seven Deadly Innocent Frauds-A BCB Economics Lecture](https://www.youtube.com/watch?v=v14iP_qnlgU)  
   
@@ -45,7 +45,7 @@ youtube: https://www.youtube.com/watch?v=v14iP_qnlgU
 📜 A: MMT is an economic framework asserting that governments issuing their own non-convertible fiat currency face no financial constraint on spending. 💰 They do not need to tax or borrow to fund public works; the only limit to spending is the availability of real resources and the risk of 📈 inflation (Investopedia, What Is Modern Monetary Theory).  
   
 ### 💸 Q: How does government debt affect future generations according to MMT?  
-👶 A: According to MMT, government debt does not burden future generations in real terms 🚫 because future generations will consume what they produce. The debt represents 🏦 net financial savings accumulated by the private sector and is merely a score-keeping mechanism for outstanding currency ([💸😇 The 7 Deadly Innocent Frauds of Economic Policy](/content/books/the-7-deadly-innocent-frauds-of-economic-policy.md)).  
+👶 A: According to MMT, government debt does not burden future generations in real terms 🚫 because future generations will consume what they produce. The debt represents 🏦 net financial savings accumulated by the private sector and is merely a score-keeping mechanism for outstanding currency ([💸😇 The 7 Deadly Innocent Frauds of Economic Policy](../books/the-7-deadly-innocent-frauds-of-economic-policy.md)).  
   
 ### 🎯 Q: What is the primary purpose of taxation in a sovereign currency system?  
 🛡️ A: The main purpose of taxation is to create demand for the government's currency by imposing a tax liability. 📉 More importantly, taxes manage aggregate demand by reducing private spending to prevent the economy from overheating and causing inflation (Investopedia, What Is Modern Monetary Theory).  
@@ -54,8 +54,8 @@ youtube: https://www.youtube.com/watch?v=v14iP_qnlgU
   
 ### ↔️ Similar  
   
-* [💰📉➡️📈🗳️ The Deficit Myth: Modern Monetary Theory and the Birth of the People's Economy](/content/books/the-deficit-myth.md) by Stephanie Kelton: 📚 Provides an accessible and persuasive explanation of MMT concepts in non-technical language.  
-* [💰🏛️ Modern Money Theory: A Primer on Macroeconomics for Sovereign Monetary Systems](/content/books/modern-money-theory-a-primer-on-macroeconomics-for-sovereign-monetary-systems.md) by L. Randall Wray: 📖 Offers a fundamental textbook treatment of MMT's core mechanics and accounting identities.  
+* [💰📉➡️📈🗳️ The Deficit Myth: Modern Monetary Theory and the Birth of the People's Economy](../books/the-deficit-myth.md) by Stephanie Kelton: 📚 Provides an accessible and persuasive explanation of MMT concepts in non-technical language.  
+* [💰🏛️ Modern Money Theory: A Primer on Macroeconomics for Sovereign Monetary Systems](../books/modern-money-theory-a-primer-on-macroeconomics-for-sovereign-monetary-systems.md) by L. Randall Wray: 📖 Offers a fundamental textbook treatment of MMT's core mechanics and accounting identities.  
   
 ### 🆚 Contrasting  
   
@@ -64,5 +64,5 @@ youtube: https://www.youtube.com/watch?v=v14iP_qnlgU
   
 ### 🎨 Creatively Related  
   
-* [🚀🌍💰 Mission Economy: A Moonshot Guide to Changing Capitalism](/content/books/mission-economy-a-moonshot-guide-to-changing-capitalism.md) by Mariana Mazzucato: 🚀 Focuses on the idea of government proactively using fiscal policy and public investments to shape markets and solve grand societal challenges.  
-* [🏛️💰 Debt: The First 5,000 Years](/content/books/debt-the-first-5000-years.md) by David Graeber: 📜 Explores the historical and anthropological relationship between debt, money, and power, providing crucial context for understanding the social function of currency.
+* [🚀🌍💰 Mission Economy: A Moonshot Guide to Changing Capitalism](../books/mission-economy-a-moonshot-guide-to-changing-capitalism.md) by Mariana Mazzucato: 🚀 Focuses on the idea of government proactively using fiscal policy and public investments to shape markets and solve grand societal challenges.  
+* [🏛️💰 Debt: The First 5,000 Years](../books/debt-the-first-5000-years.md) by David Graeber: 📜 Explores the historical and anthropological relationship between debt, money, and power, providing crucial context for understanding the social function of currency.

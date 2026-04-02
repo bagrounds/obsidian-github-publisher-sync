@@ -10,7 +10,7 @@ Channel: Dave Zoller, CFP®
 tags:
 youtube: https://youtu.be/VjjGHw5MeEI
 ---
-[Home](/content/index.md) > [Videos](/content/videos/index.md)  
+[Home](../index.md) > [Videos](./index.md)  
 # 🎓💰🚀 The 529 Plan Just Got A Big Upgrade  
 ![The 529 Plan Just Got A Big Upgrade](https://youtu.be/VjjGHw5MeEI)  
   
@@ -73,5 +73,5 @@ youtube: https://youtu.be/VjjGHw5MeEI
   
 ### 🎨 Creatively Related  
   
-* [💰🤔😊 Psychology of Money: Timeless lessons on wealth, greed, and happiness](/content/books/the-psychology-of-money.md) by Morgan Housel explores how human behavior, not just financial formulas, drives investment and savings outcomes, relating to the decision-making of overfunding a 529 plan.  
-* [📈➕ The Compound Effect](/content/books/the-compound-effect.md) by Darren Hardy uses the principle of compounding to explain how small, consistent actions lead to massive, long-term results, perfectly illustrating the growth potential of the $35,000 rollover over decades.
+* [💰🤔😊 Psychology of Money: Timeless lessons on wealth, greed, and happiness](../books/the-psychology-of-money.md) by Morgan Housel explores how human behavior, not just financial formulas, drives investment and savings outcomes, relating to the decision-making of overfunding a 529 plan.  
+* [📈➕ The Compound Effect](../books/the-compound-effect.md) by Darren Hardy uses the principle of compounding to explain how small, consistent actions lead to massive, long-term results, perfectly illustrating the growth potential of the $35,000 rollover over decades.

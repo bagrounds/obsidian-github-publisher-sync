@@ -7,7 +7,7 @@ share: true
 CTA: ♟️ Master the political game.
 affiliate link: https://amzn.to/449rDxv
 ---
-[Home](/content/index.md) > [Books](/content/books/index.md)  
+[Home](../index.md) > [Books](./index.md)  
 # ⚡🏛️ Short Circuiting Policy: Interest Groups and the Battle Over Clean Energy and Climate Policy in the American States  
 [🛒 Short Circuiting Policy: Interest Groups and the Battle Over Clean Energy and Climate Policy in the American States. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/449rDxv)  
   
@@ -69,11 +69,11 @@ affiliate link: https://amzn.to/449rDxv
 ## 📚 Book Recommendations  
   
 ### 🤝 Similar  
-* [🔥🌎⚔️ The New Climate War: The Fight to Take Back Our Planet](/content/books/the-new-climate-war-the-fight-to-take-back-our-planet.md) by Michael E. Mann: Explores tactics used by fossil fuel interests to delay climate action.  
-* [💰🤥 Merchants of Doubt](/content/books/merchants-of-doubt.md) by Naomi Oreskes and Erik M. Conway: Details how a small group of scientists obscured public knowledge on various scientific issues, including climate change.  
+* [🔥🌎⚔️ The New Climate War: The Fight to Take Back Our Planet](./the-new-climate-war-the-fight-to-take-back-our-planet.md) by Michael E. Mann: Explores tactics used by fossil fuel interests to delay climate action.  
+* [💰🤥 Merchants of Doubt](./merchants-of-doubt.md) by Naomi Oreskes and Erik M. Conway: Details how a small group of scientists obscured public knowledge on various scientific issues, including climate change.  
   
 ### ↔️ Contrasting  
-* [🌍🔥💡 How to Avoid a Climate Disaster: The Solutions We Have and the Breakthroughs We Need](/content/books/how-to-avoid-a-climate-disaster-the-solutions-we-have-and-the-breakthroughs-we-need.md) by Bill Gates: Focuses on technological innovation and policy solutions from a pragmatic perspective.  
+* [🌍🔥💡 How to Avoid a Climate Disaster: The Solutions We Have and the Breakthroughs We Need](./how-to-avoid-a-climate-disaster-the-solutions-we-have-and-the-breakthroughs-we-need.md) by Bill Gates: Focuses on technological innovation and policy solutions from a pragmatic perspective.  
 * ⬇️ Drawdown edited by Paul Hawken: Presents a comprehensive plan of solutions for reversing global warming.  
   
 ### ➕ Related  

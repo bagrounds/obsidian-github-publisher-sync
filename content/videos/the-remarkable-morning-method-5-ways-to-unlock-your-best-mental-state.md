@@ -10,7 +10,7 @@ Channel: Dr. Tracey Marks
 tags:
 youtube: https://youtu.be/T5pDMLnEhus
 ---
-[Home](/content/index.md) > [Videos](/content/videos/index.md)  
+[Home](../index.md) > [Videos](./index.md)  
 # 🌅🧠🗝️🚀📈 The Remarkable Morning Method: 5 Ways to Unlock Your Best Mental State  
 ![The Remarkable Morning Method: 5 Ways to Unlock Your Best Mental State](https://youtu.be/T5pDMLnEhus)  
   
@@ -28,8 +28,8 @@ youtube: https://youtu.be/T5pDMLnEhus
 * ✨🧠 These practices activate the prefrontal cortex, calm the nervous system, and restore natural rhythms, serving as a neurological reset \[[06:08](http://www.youtube.com/watch?v=T5pDMLnEhus&t=368)\].  
   
 ## 📚📖 Book Recommendations  
-1.  **[⚛️🔄 Atomic Habits: An Easy & Proven Way to Build Good Habits & Break Bad Ones](/content/books/atomic-habits.md) by James Clear** - This book provides a framework for improving every day, focusing on small changes that make a big difference, which aligns with the video's emphasis on building consistent habits.  
+1.  **[⚛️🔄 Atomic Habits: An Easy & Proven Way to Build Good Habits & Break Bad Ones](../books/atomic-habits.md) by James Clear** - This book provides a framework for improving every day, focusing on small changes that make a big difference, which aligns with the video's emphasis on building consistent habits.  
 2.  **🌅📚 "The Miracle Morning: The Not-So-Obvious Secret to Transform Your Life (Before 8AM)" by Hal Elrod** - This book outlines a specific morning routine designed to improve various aspects of life before 8 AM, resonating with the video's focus on the importance of morning habits.  
-3.  **[😴💭 Why We Sleep: Unlocking the Power of Sleep and Dreams](/content/books/why-we-sleep-unlocking-the-power-of-sleep-and-dreams.md) by Matthew Walker** - Given the video's mention of how poor sleep can disrupt the cortisol rhythm, this book provides a comprehensive look at the importance of sleep for overall health and well-being.  
+3.  **[😴💭 Why We Sleep: Unlocking the Power of Sleep and Dreams](../books/why-we-sleep-unlocking-the-power-of-sleep-and-dreams.md) by Matthew Walker** - Given the video's mention of how poor sleep can disrupt the cortisol rhythm, this book provides a comprehensive look at the importance of sleep for overall health and well-being.  
 4.  **🤔📚 "Declutter Your Mind: How to Stop Worrying, Relieve Anxiety, and Eliminate Negative Thinking" by S.J. Scott and Barrie Davenport** - This book offers techniques for managing stress and anxiety, which can impact morning routines, aligning with the video's advice on mental priming.  
 5.  **🧠📚 "Your Brain at Work: Strategies for Overcoming Distraction, Regaining Focus, and Working Smarter All Day Long" by David Rock** - This book explores the neuroscience behind productivity and focus, providing strategies for optimizing brain function throughout the day, including in the morning.

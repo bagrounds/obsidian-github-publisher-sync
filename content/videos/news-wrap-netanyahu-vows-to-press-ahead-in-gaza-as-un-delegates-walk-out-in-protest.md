@@ -10,7 +10,7 @@ Channel: PBS NewsHour
 tags:
 youtube: https://youtu.be/gELQjWcc0pw
 ---
-[Home](/content/index.md) > [Videos](/content/videos/index.md)  
+[Home](../index.md) > [Videos](./index.md)  
 # 🇮🇱⚔️🌍🚶 News Wrap: Netanyahu vows to press ahead in Gaza as U.N. delegates walk out in protest  
 ![News Wrap: Netanyahu vows to press ahead in Gaza as U.N. delegates walk out in protest](https://youtu.be/gELQjWcc0pw)  
   
@@ -36,7 +36,7 @@ youtube: https://youtu.be/gELQjWcc0pw
 * 🌍 Investigating the official Cuban and U.S. government stances on **political asylum** for Assata Shakur provides deeper insight into international relations and the definition of a "fugitive" versus a "symbol of resistance" \[[05:43](http://www.youtube.com/watch?v=gELQjWcc0pw&t=343)].  
   
 ## 📚 Book Recommendations  
-* [🇮🇱⏳ The Hundred Years' War on Palestine: A History of Settler Colonialism and Resistance, 1917–2017](/content/books/the-hundred-years-war-on-palestine-a-history-of-settler-colonialism-and-resistance-1917-2017.md) by Rashid Khalidi is relevant for providing deep historical and political context to the ongoing conflict in Gaza.  
+* [🇮🇱⏳ The Hundred Years' War on Palestine: A History of Settler Colonialism and Resistance, 1917–2017](../books/the-hundred-years-war-on-palestine-a-history-of-settler-colonialism-and-resistance-1917-2017.md) by Rashid Khalidi is relevant for providing deep historical and political context to the ongoing conflict in Gaza.  
 * 🪙 Free to Choose by Milton Friedman contrasts with the protectionist trade policies discussed in the news wrap, offering a strong argument for free-market capitalism and minimal government intervention.  
 * 👤 Assata: An Autobiography by Assata Shakur provides the first-person perspective of one of the figures announced as deceased, offering insight into the Black Liberation Army and the fight for justice in the 1970s.  
 * 🏛️ The Gatekeepers: How the White House Chiefs of Staff Define Every Presidency by Chris Whipple is creatively related by exploring the Washington power structure, similar to the influence of dealmakers like Robert Barnett.

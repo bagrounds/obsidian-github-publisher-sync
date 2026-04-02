@@ -10,7 +10,7 @@ Channel: Nobel Prize
 tags:
 youtube: https://youtu.be/rJBQJzjw0WY
 ---
-[Home](/content/index.md) > [Videos](/content/videos/index.md)  
+[Home](../index.md) > [Videos](./index.md)  
 # 🇮🇹🏆🗣️ Giorgio Parisi: Nobel Prize Conversations  
 ![Giorgio Parisi: Nobel Prize Conversations](https://youtu.be/rJBQJzjw0WY)  
   
@@ -68,15 +68,15 @@ youtube: https://youtu.be/rJBQJzjw0WY
 ## 📚 Book Recommendations  
 * **Similar Perspectives**  
     * 💡 **Surely You're Joking, Mr. Feynman!** Shares an intimate, curious, and witty look into a Nobel laureate's life, showing how wide-ranging curiosity and playfulness fuel scientific breakthroughs.  
-    * **[🤏📜⏳ A Brief History of Time](/content/books/a-brief-history-of-time.md)** Offers a clear, authoritative explanation of complex physics concepts, mirroring the speaker's emphasis on making physics understandable and communicative \[[18:50](http://www.youtube.com/watch?v=rJBQJzjw0WY&t=1130)].  
+    * **[🤏📜⏳ A Brief History of Time](../books/a-brief-history-of-time.md)** Offers a clear, authoritative explanation of complex physics concepts, mirroring the speaker's emphasis on making physics understandable and communicative \[[18:50](http://www.youtube.com/watch?v=rJBQJzjw0WY&t=1130)].  
     * 🔢 **The Great Equations: Breakthroughs in Science from Pythagoras to Heisenberg** Explores the intellectual path of various scientists, which is relevant to the discussion of how fundamental math concepts were self-taught \[[14:20](http://www.youtube.com/watch?v=rJBQJzjw0WY&t=860)].  
   
 * **Contrasting Perspectives**  
-    * **[🔬🔄 The Structure of Scientific Revolutions](/content/books/the-structure-of-scientific-revolutions.md)** Argues that science progresses not by continuous curiosity but through "paradigm shifts," offering a contrast to the speaker's emphasis on continuous curiosity and "tool box" development \[[27:09](http://www.youtube.com/watch?v=rJBQJzjw0WY&t=1629)].  
+    * **[🔬🔄 The Structure of Scientific Revolutions](../books/the-structure-of-scientific-revolutions.md)** Argues that science progresses not by continuous curiosity but through "paradigm shifts," offering a contrast to the speaker's emphasis on continuous curiosity and "tool box" development \[[27:09](http://www.youtube.com/watch?v=rJBQJzjw0WY&t=1629)].  
     * 💰 **The Idea Factory: Bell Labs and the Great Age of American Innovation** Presents a model of science funding where corporate/industrial backing drives research, contrasting with the speaker's focus on public and governmental support in Italy.  
     * 🗣️ **The Fabric of the Cosmos** A theoretical physics book that focuses on abstract concepts like string theory and cosmology, representing the kind of highly abstract physics the speaker contrasted with his desire for more communicative and concrete physics \[[18:50](http://www.youtube.com/watch?v=rJBQJzjw0WY&t=1130)].  
   
 * **Creatively Related**  
-    * **[🧽🧠 The Absorbent Mind](/content/books/the-absorbent-mind.md)** The foundational text by Maria Montessori, directly related to the educational philosophy mentioned by the speaker \[[20:37](http://www.youtube.com/watch?v=rJBQJzjw0WY&t=1237)].  
+    * **[🧽🧠 The Absorbent Mind](../books/the-absorbent-mind.md)** The foundational text by Maria Montessori, directly related to the educational philosophy mentioned by the speaker \[[20:37](http://www.youtube.com/watch?v=rJBQJzjw0WY&t=1237)].  
     * 📜 **The Penguin Book of Italian Folk Tales** A collection edited by Italo Calvino, whose work in compiling Italian fairy tales was explicitly referenced by the speaker when discussing communicating values to children \[[23:07](http://www.youtube.com/watch?v=rJBQJzjw0WY&t=1387)].  
     * ⚔️ **A History of the Second World War** Written by Winston Churchill, this is the massive, multi-volume work the speaker mentioned reading in his youth to satisfy his wide-ranging curiosity \[[13:47](http://www.youtube.com/watch?v=rJBQJzjw0WY&t=827)].

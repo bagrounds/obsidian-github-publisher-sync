@@ -10,7 +10,7 @@ Channel: International Association for Safe & Ethical AI
 tags:
 youtube: https://youtu.be/6fvXWG9Auyg
 ---
-[Home](/content/index.md) > [Videos](/content/videos/index.md)  
+[Home](../index.md) > [Videos](./index.md)  
 # 🤔💡🧠🤖 What Is Understanding? – Geoffrey Hinton | IASEAI 2025  
 ![What Is Understanding? – Geoffrey Hinton | IASEAI 2025](https://youtu.be/6fvXWG9Auyg)  
   
@@ -60,8 +60,8 @@ youtube: https://youtu.be/6fvXWG9Auyg
   
 ### ↔️ Similar  
   
-* **[🧠💻🤖 Deep Learning](/content/books/deep-learning.md)** by Ian Goodfellow, Yoshua Bengio, and Aaron Courville. 📘 Provides a comprehensive, technical foundation for the biologically-inspired approach, neural networks, and the deep learning architectures that underpin all modern LLMs.  
-* **[👀 Attention Is All You Need](/content/articles/attention-is-all-you-need.md)** by Ashish Vaswani, Noam Shazeer, Niki Parmar, et al. 📖 The original paper introducing the Transformer architecture, explaining the mechanism of multi-headed attention, or handshakes, that the video references.  
+* **[🧠💻🤖 Deep Learning](../books/deep-learning.md)** by Ian Goodfellow, Yoshua Bengio, and Aaron Courville. 📘 Provides a comprehensive, technical foundation for the biologically-inspired approach, neural networks, and the deep learning architectures that underpin all modern LLMs.  
+* **[👀 Attention Is All You Need](../articles/attention-is-all-you-need.md)** by Ashish Vaswani, Noam Shazeer, Niki Parmar, et al. 📖 The original paper introducing the Transformer architecture, explaining the mechanism of multi-headed attention, or handshakes, that the video references.  
   
 ### 🆚 Contrasting  
   
@@ -71,4 +71,4 @@ youtube: https://youtu.be/6fvXWG9Auyg
 ### 🎨 Creatively Related  
   
 * 🌌 **Permutation City** by Greg Egan. 🔬 A hard science fiction novel exploring the philosophical consequences of digital consciousness, digital replication, and the efficient sharing of knowledge and identity, echoing the video's conclusion about digital agents' sharing superiority.  
-* **[🤔🐇🐢 Thinking, Fast and Slow](/content/books/thinking-fast-and-slow.md)** by Daniel Kahneman. 🧑‍🔬 Describes the two systems of human thought (fast, intuitive System 1 and slow, deliberate System 2), offering context for how human error, including confabulation in constructing narratives, arises.
+* **[🤔🐇🐢 Thinking, Fast and Slow](../books/thinking-fast-and-slow.md)** by Daniel Kahneman. 🧑‍🔬 Describes the two systems of human thought (fast, intuitive System 1 and slow, deliberate System 2), offering context for how human error, including confabulation in constructing narratives, arises.

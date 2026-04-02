@@ -7,7 +7,7 @@ share: true
 affiliate link: https://amzn.to/45BkIhZ
 CTA: ✊ Challenge inflated costs.
 ---
-[Home](/content/index.md) > [Books](/content/books/index.md)  
+[Home](../index.md) > [Books](./index.md)  
 # 🙅🏼‍♀️🧾🏥⚔️ Never Pay the First Bill: And Other Ways to Fight the Health Care System and Win  
 [🛒 Never Pay the First Bill: And Other Ways to Fight the Health Care System and Win. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/45BkIhZ)  
   
@@ -39,7 +39,7 @@ Marshall Allen was an 🏆 award-winning investigative journalist who focused on
 These books delve into the complexities and issues within the American healthcare system, often from a critical perspective, and provide insights into patient experiences and advocacy.  
   
 * 💸 **The Price We Pay: What Broke American Health Care—and How to Fix It by Marty Makary M.D.** 🧑‍⚕️ Explores the dysfunction of the U.S. healthcare system and proposes solutions.  
-* **[💰⚕️⬆️ An American Sickness: How Healthcare Became Big Business and How You Can Take It Back](/content/books/an-american-sickness-how-healthcare-became-big-business-and-how-you-can-take-it-back.md) by Elisabeth Rosenthal.** An investigative look at how healthcare became a profit-driven industry and offers ways for patients to regain control.  
+* **[💰⚕️⬆️ An American Sickness: How Healthcare Became Big Business and How You Can Take It Back](./an-american-sickness-how-healthcare-became-big-business-and-how-you-can-take-it-back.md) by Elisabeth Rosenthal.** An investigative look at how healthcare became a profit-driven industry and offers ways for patients to regain control.  
 * 🙈 **Unaccountable: What Hospitals Won't Tell You and How Transparency Can Revolutionize Health Care by Marty Makary M.D.** Focuses on the lack of transparency in hospitals and its impact on patient care and costs.  
 * 🛡️ **What Your Doctor Wants You to Know to Crush Medical Debt: A Health System Insider's 3 Steps to Protect Yourself from America's #1 Cause of Bankruptcy by Virgie Bright Ellington.** Provides guidance from a healthcare insider on avoiding and managing medical debt.  
 * 🔍 **Blind Spots: When Medicine Gets It Wrong, and What It Means for Our Health by Marty Makary M.D.** Examines hidden flaws in the healthcare system affecting patient safety and outcomes.  
@@ -48,7 +48,7 @@ These books delve into the complexities and issues within the American healthcar
   
 These books might offer different perspectives on healthcare, focus on broader health and wellness outside the traditional billing system, or explore healthcare systems in other countries.  
   
-* **[⚕️💰🇺🇸 The Healing of America: A Global Quest for Better, Cheaper, and Fairer Health Care](/content/books/the-healing-of-america-a-global-quest-for-better-cheaper-and-fairer-health-care.md) by T. R. Reid.** Compares the U.S. healthcare system to successful universal healthcare systems in other industrialized democracies.  
+* **[⚕️💰🇺🇸 The Healing of America: A Global Quest for Better, Cheaper, and Fairer Health Care](./the-healing-of-america-a-global-quest-for-better-cheaper-and-fairer-health-care.md) by T. R. Reid.** Compares the U.S. healthcare system to successful universal healthcare systems in other industrialized democracies.  
 * ✊🏿 **Legacy: A Black Physician Reckons with Racism in American Medicine by Uché Blackstock, MD.** Explores the intersection of racism and healthcare, highlighting systemic inequities that impact patient care and outcomes.  
 * ⚕️ **Random Acts of Medicine: The Hidden Forces That Sway Doctors, Impact Patients, and Shape Our Health by Anupam B. Jena.** Examines unseen factors influencing medical decisions and patient care, offering a different lens than purely financial motivations.  
 * 🎗️ **Dear Cancer: A Collection of Letters from One Woman's Fight by Rita Pamplin.** A personal account of navigating a health crisis, focusing on the emotional and personal fight rather than systemic financial battles.  
@@ -58,13 +58,13 @@ These books might offer different perspectives on healthcare, focus on broader h
   
 These books might not be directly about healthcare but share themes of challenging established systems, navigating complex bureaucracies, or emphasizing individual empowerment and creative problem-solving in the face of obstacles.  
   
-* **[👁️ 1984](/content/books/1984.md) by George Orwell.** A classic dystopian novel about fighting against a totalitarian regime and pervasive surveillance, resonating with the theme of challenging an overreaching system.  
+* **[👁️ 1984](./1984.md) by George Orwell.** A classic dystopian novel about fighting against a totalitarian regime and pervasive surveillance, resonating with the theme of challenging an overreaching system.  
 * 🏢 **The Trial by Franz Kafka.** Explores an individual's struggle against an inscrutable and oppressive bureaucratic system.  
-* **[🪖🎨 The War of Art](/content/books/the-war-of-art.md): Break Through the Blocks and Win Your Inner Creative Battles by Steven Pressfield.** While focused on creative blocks, it frames the struggle against internal resistance as a battle, aligning with the idea of fighting against external obstacles and inertia.  
-* **[⚛️🔄 Atomic Habits](/content/books/atomic-habits.md): An Easy & Proven Way to Build Good Habits & Break Bad Ones by James Clear.** Provides a framework for making small changes that can lead to significant results, applicable to the persistent effort needed to challenge bills and navigate complex systems.  
+* **[🪖🎨 The War of Art](./the-war-of-art.md): Break Through the Blocks and Win Your Inner Creative Battles by Steven Pressfield.** While focused on creative blocks, it frames the struggle against internal resistance as a battle, aligning with the idea of fighting against external obstacles and inertia.  
+* **[⚛️🔄 Atomic Habits](./atomic-habits.md): An Easy & Proven Way to Build Good Habits & Break Bad Ones by James Clear.** Provides a framework for making small changes that can lead to significant results, applicable to the persistent effort needed to challenge bills and navigate complex systems.  
 * 🎯 **The Little Book of Talent: 52 Tips for Improving Your Skills by Daniel Coyle.** Offers actionable tips for skill-building and improvement, which can be related to developing the skills needed to effectively challenge the healthcare system.  
 * 🛤️ **Make Your Own Rules: A Creative Manifesto by Andrew Huang.** Encourages thinking outside the box and forging one's own path, relevant to finding unconventional ways to fight bureaucratic systems.  
 * 💧 **What the Eyes Don't See: A Story of Crisis, Resistance, and Community by Mona Hanna-Attisha.** The story of the Flint water crisis, highlighting how individuals fought against a negligent system to expose the truth and advocate for their community.  
   
-## 💬 [Gemini](/content/software/gemini.md) Prompt (gemini-2.5-flash-preview-04-17)  
+## 💬 [Gemini](../software/gemini.md) Prompt (gemini-2.5-flash-preview-04-17)  
 > Write a markdown-formatted (start headings at level H2) book report, followed by a plethora of additional similar, contrasting, and creatively related book recommendations on Never Pay the First Bill: And Other Ways to Fight the Health Care System and Win. Be thorough in content discussed but concise and economical with your language. Structure the report with section headings and bulleted lists to avoid long blocks of text.

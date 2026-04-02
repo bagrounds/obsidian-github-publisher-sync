@@ -7,7 +7,7 @@ share: true
 affiliate link: https://amzn.to/4kTTWXi
 CTA: 🕊️ Embrace tranquility.
 ---
-[Home](/content/index.md) > [Books](/content/books/index.md)  
+[Home](../index.md) > [Books](./index.md)  
 # 🎨😴🧘☕⏳ The Art of Rest: How to Find Respite in the Modern Age  
 [🛒 The Art of Rest: How to Find Respite in the Modern Age. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4kTTWXi)  
   
@@ -52,10 +52,10 @@ Claudia Hammond's *The Art of Rest* serves as a timely reminder that rest is not
   
 ### 😴 Similar Reads (Focus on Rest, Downtime, Slowing Down)  
   
-* **[😴📈 Rest: Why You Get More Done When You Work Less](/content/books/rest-why-you-get-more-done-when-you-work-less.md)** **by Alex Soojung-Kim Pang:** Argues that rest is not the opposite of work but a partner to it, demonstrating how deliberate rest enhances creativity and productivity through historical and scientific examples.  
-* **[🥶🛌 Wintering: The Power of Rest and Retreat in Difficult Times](/content/books/wintering-the-power-of-rest-and-retreat-in-difficult-times.md)** **by Katherine May:** A personal and cultural exploration of periods of enforced rest or withdrawal and how embracing these "wintering" times can be transformative.  
+* **[😴📈 Rest: Why You Get More Done When You Work Less](./rest-why-you-get-more-done-when-you-work-less.md)** **by Alex Soojung-Kim Pang:** Argues that rest is not the opposite of work but a partner to it, demonstrating how deliberate rest enhances creativity and productivity through historical and scientific examples.  
+* **[🥶🛌 Wintering: The Power of Rest and Retreat in Difficult Times](./wintering-the-power-of-rest-and-retreat-in-difficult-times.md)** **by Katherine May:** A personal and cultural exploration of periods of enforced rest or withdrawal and how embracing these "wintering" times can be transformative.  
 * ***Sabbath: Finding Rest, Renewal, and Delight in Our Busy Lives*** **by Wayne Muller:** Explores the spiritual and practical aspects of observing a Sabbath, offering guidance on creating a regular practice of rest and replenishment.  
-* **[📵 How to Do Nothing: Resisting the Attention Economy](/content/books/how-to-do-nothing-resisting-the-attention-economy.md)** **by Jenny Odell:** While not strictly about "rest," it's a powerful argument for disengaging from the demands of the attention economy and reclaiming our time and focus, aligning with the idea of finding respite from constant stimulation.  
+* **[📵 How to Do Nothing: Resisting the Attention Economy](./how-to-do-nothing-resisting-the-attention-economy.md)** **by Jenny Odell:** While not strictly about "rest," it's a powerful argument for disengaging from the demands of the attention economy and reclaiming our time and focus, aligning with the idea of finding respite from constant stimulation.  
 * ***Pause, Rest, Be: Stillness Practices for Courage in Times of Change*** **by Octavia F. Raheem:** Offers guided practices for finding moments of stillness and rest amidst life's challenges.  
 * ***Reset: Living a Grace-Paced Life in a Burnout Culture*** **by David P. Murray:** Addresses the issue of burnout and advocates for a more sustainable, grace-filled rhythm of life that includes rest.  
 * ***Rest To Reset: The Busy Person's Guide To Pausing With Purpose*** **by Suzy Reading:** Provides practical tips and short exercises for incorporating rest into a busy schedule.  
@@ -64,9 +64,9 @@ Claudia Hammond's *The Art of Rest* serves as a timely reminder that rest is not
   
 ### 🚀 Contrasting Perspectives (Focus on Productivity, Efficiency, Busyness)  
   
-* **[✅😌 Getting Things Done: The Art of Stress-Free Productivity](/content/books/getting-things-done-the-art-of-stress-free-productivity.md)** **by David Allen:** A classic in the productivity genre, offering a system for organizing tasks and managing workflow to increase efficiency and reduce stress. While aiming for "stress-free," its focus is primarily on *doing* effectively.  
-* **[🤿💼 Deep Work: Rules for Focused Success in a Distracted World](/content/books/deep-work.md)** **by Cal Newport:** Argues for the importance of focused, undistracted work in a world of constant interruption, presenting strategies for cultivating this skill. This contrasts with the embrace of less structured downtime.  
-* **[⚛️🔄 Atomic Habits: An Easy & Proven Way to Build Good Habits & Break Bad Ones](/content/books/atomic-habits.md)** **by James Clear:** Provides a framework for building good habits and breaking bad ones, often applied to increasing productivity and achieving goals.  
+* **[✅😌 Getting Things Done: The Art of Stress-Free Productivity](./getting-things-done-the-art-of-stress-free-productivity.md)** **by David Allen:** A classic in the productivity genre, offering a system for organizing tasks and managing workflow to increase efficiency and reduce stress. While aiming for "stress-free," its focus is primarily on *doing* effectively.  
+* **[🤿💼 Deep Work: Rules for Focused Success in a Distracted World](./deep-work.md)** **by Cal Newport:** Argues for the importance of focused, undistracted work in a world of constant interruption, presenting strategies for cultivating this skill. This contrasts with the embrace of less structured downtime.  
+* **[⚛️🔄 Atomic Habits: An Easy & Proven Way to Build Good Habits & Break Bad Ones](./atomic-habits.md)** **by James Clear:** Provides a framework for building good habits and breaking bad ones, often applied to increasing productivity and achieving goals.  
 * ***The 4-Hour Workweek*** **by Timothy Ferriss:** A controversial but influential book advocating for optimizing work to achieve more freedom and leisure time, though often framed through the lens of efficiency and automation.  
   
 ### 🧠 Creatively Related Explorations (Philosophy, Psychology, Society, Technology)  
@@ -76,10 +76,10 @@ Claudia Hammond's *The Art of Rest* serves as a timely reminder that rest is not
 * ***The Brain at Rest: The New Science and Philosophy of Idleness*** **by Joseph Jebelli:** Explores the neuroscience of the resting brain and the importance of the "default mode network" for creativity, memory, and well-being.  
 * ***The Upside of Downtime: Why Boredom is Good*** **by Sandi Mann:** Argues for the benefits of boredom and unstructured downtime for creativity and inspiration.  
 * ***The Procrastination Economy: The Big Business of Downtime*** **by Ethan Tussey:** Examines how industries have capitalized on our downtime and moments of waiting, offering a societal perspective on the commercialization of non-working time.  
-* **[🥵🔥💨 Burnout: The Secret to Unlocking the Stress Cycle](/content/books/burnout-the-secret-to-unlocking-the-stress-cycle.md)** **by Amelia Nagoski and Emily Nagoski:** While focused on stress and burnout, it highlights the physiological need to complete the stress cycle, which often involves rest and recovery.  
-* **[📱⬇️🧘 Digital Minimalism: Choosing a Focused Life in a Noisy World](/content/books/digital-minimalism-choosing-a-focused-life-in-a-noisy-world.md)** **by Cal Newport:** Advocates for a philosophy of technology use that focuses on optimizing for deeply valued activities and intentionally scheduling periods away from digital connectivity, directly supporting the ability to rest.  
+* **[🥵🔥💨 Burnout: The Secret to Unlocking the Stress Cycle](./burnout-the-secret-to-unlocking-the-stress-cycle.md)** **by Amelia Nagoski and Emily Nagoski:** While focused on stress and burnout, it highlights the physiological need to complete the stress cycle, which often involves rest and recovery.  
+* **[📱⬇️🧘 Digital Minimalism: Choosing a Focused Life in a Noisy World](./digital-minimalism-choosing-a-focused-life-in-a-noisy-world.md)** **by Cal Newport:** Advocates for a philosophy of technology use that focuses on optimizing for deeply valued activities and intentionally scheduling periods away from digital connectivity, directly supporting the ability to rest.  
   
-## 💬 [Gemini](/content/software/gemini.md) Prompt (gemini-2.5-flash-preview-04-17)  
+## 💬 [Gemini](../software/gemini.md) Prompt (gemini-2.5-flash-preview-04-17)  
 > Write a markdown-formatted (start headings at level H2) book report, followed by a plethora of additional similar, contrasting, and creatively related book recommendations on The Art of Rest: How to Find Respite in the Modern Age. Be thorough in content discussed but concise and economical with your language. Structure the report with section headings and bulleted lists to avoid long blocks of text.  
   
 ## 🐦 Tweet  

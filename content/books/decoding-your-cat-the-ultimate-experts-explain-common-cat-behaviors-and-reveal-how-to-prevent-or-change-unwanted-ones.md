@@ -7,7 +7,7 @@ share: true
 affiliate link: https://amzn.to/43tHKpa
 CTA: 🐈 Understand felines.
 ---
-[Home](/content/index.md) > [Books](/content/books/index.md)  
+[Home](../index.md) > [Books](./index.md)  
 # 🐈‍⬛❓ Decoding Your Cat: The Ultimate Experts Explain Common Cat Behaviors and Reveal How to Prevent or Change Unwanted Ones  
 [🛒 Decoding Your Cat: The Ultimate Experts Explain Common Cat Behaviors and Reveal How to Prevent or Change Unwanted Ones. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/43tHKpa)  
   
@@ -75,8 +75,8 @@ CTA: 🐈 Understand felines.
   
 ## 📚 Book Recommendations  
 ### 👍 Similar  
-* [🐱👑 Total Cat Mojo: The Ultimate Guide to Life with Your Cat](/content/books/total-cat-mojo-the-ultimate-guide-to-life-with-your-cat.md) by Jackson Galaxy  
-* [🐱👍 Think Like a Cat: How to Raise a Well-Adjusted Cat - Not a Sour Puss](/content/books/think-like-a-cat-how-to-raise-a-well-adjusted-cat-not-a-sour-puss.md) by Pam Johnson-Bennett  
+* [🐱👑 Total Cat Mojo: The Ultimate Guide to Life with Your Cat](./total-cat-mojo-the-ultimate-guide-to-life-with-your-cat.md) by Jackson Galaxy  
+* [🐱👍 Think Like a Cat: How to Raise a Well-Adjusted Cat - Not a Sour Puss](./think-like-a-cat-how-to-raise-a-well-adjusted-cat-not-a-sour-puss.md) by Pam Johnson-Bennett  
 * Cat Sense: The Feline Enigma Revealed by John Bradshaw  
   
 ### 👎 Contrasting  

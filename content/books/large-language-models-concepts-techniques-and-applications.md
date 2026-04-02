@@ -7,7 +7,7 @@ share: true
 affiliate link: https://amzn.to/3Ty40sY
 CTA: 💡 Unlock LLM potential.
 ---
-[Home](/content/index.md) > [Books](/content/books/index.md)  
+[Home](../index.md) > [Books](./index.md)  
 # 🤖🦜 Large Language Models: Concepts, Techniques and Applications  
 [🛒 Large Language Models: Concepts, Techniques and Applications. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3Ty40sY)  
   
@@ -58,7 +58,7 @@ CTA: 💡 Unlock LLM potential.
 * ⭐ ***Decoding Large Language Models*** by Irena Cronin: Provides a thorough journey through LLM architecture, training, and application, balancing theoretical foundations with practical examples and covering advanced topics like fine-tuning and ethical considerations.  
 * 🚀 ***Quick Start Guide to Large Language Models: Strategies and Best Practices for Using ChatGPT and Other LLMs*** by Sinan Ozdemir: A practical guide exploring the function, capabilities, and limitations of prominent LLMs, focusing on chat systems and leveraging frameworks like LangChain for application implementation.  
 * 🧠 ***Understanding Large Language Models: Learning Their Underlying Concepts and Technologies***: Explores the underlying concepts and technologies of LLMs.  
-* **[🤖🗣️ Hands-On Large Language Models: Language Understanding and Generation](/content/books/hands-on-large-language-models-language-understanding-and-generation.md)** by Jay Alammar: Offers a practical resource for leveraging pretrained LLMs for various applications like text classification and retrieval-augmented generation (RAG), using intuitive diagrams and example-based walkthroughs.  
+* **[🤖🗣️ Hands-On Large Language Models: Language Understanding and Generation](./hands-on-large-language-models-language-understanding-and-generation.md)** by Jay Alammar: Offers a practical resource for leveraging pretrained LLMs for various applications like text classification and retrieval-augmented generation (RAG), using intuitive diagrams and example-based walkthroughs.  
 * 🎓 ***Foundations of Large Language Models*** by Tong Xiao and Jingbo Zhu: An academically grounded book focusing on the theoretical underpinnings like pretraining objectives, RLHF, and instruction tuning.  
   
 ### ⚖️ Contrasting Books (Different Perspectives or Related Fields)  
@@ -71,10 +71,10 @@ CTA: 💡 Unlock LLM potential.
 ### 💡 Creatively Related Books (Broader AI, Philosophy, Ethics, etc.)  
   
 * 📈 ***Introduction to Large Language Models for Business Leaders: Responsible AI Strategy Beyond Fear and Hype*** by I Almeida: Focuses on the strategic and business implications of LLMs, including responsible AI.  
-* **[💾⬆️🛡️ Designing Data-Intensive Applications: The Big Ideas Behind Reliable, Scalable, and Maintainable Systems](/content/books/designing-data-intensive-applications.md)** by Martin Kleppmann: While not directly about LLMs, this book is highly relevant for understanding the underlying systems and data infrastructure required to build and deploy large-scale AI applications.  
-* **[⌨️🤖 Prompt Engineering for LLMs: The Art and Science of Building Large Language Model-Based Applications](/content/books/prompt-engineering-for-llms-the-art-and-science-of-building-large-language-model-based-applications.md)** by John Berryman and Albert Ziegler: Concentrates on the crucial skill of crafting effective prompts to get the best results from LLMs, a vital practical aspect of working with these models.  
-* **[🤖🏗️ AI Engineering: Building Applications with Foundation Models](/content/books/ai-engineering-building-applications-with-foundation-models.md)**: A broader look at the principles and practices of building AI applications with foundation models, including prompt engineering and model evaluation.  
+* **[💾⬆️🛡️ Designing Data-Intensive Applications: The Big Ideas Behind Reliable, Scalable, and Maintainable Systems](./designing-data-intensive-applications.md)** by Martin Kleppmann: While not directly about LLMs, this book is highly relevant for understanding the underlying systems and data infrastructure required to build and deploy large-scale AI applications.  
+* **[⌨️🤖 Prompt Engineering for LLMs: The Art and Science of Building Large Language Model-Based Applications](./prompt-engineering-for-llms-the-art-and-science-of-building-large-language-model-based-applications.md)** by John Berryman and Albert Ziegler: Concentrates on the crucial skill of crafting effective prompts to get the best results from LLMs, a vital practical aspect of working with these models.  
+* **[🤖🏗️ AI Engineering: Building Applications with Foundation Models](./ai-engineering-building-applications-with-foundation-models.md)**: A broader look at the principles and practices of building AI applications with foundation models, including prompt engineering and model evaluation.  
 * 🤔 Books on the philosophy of AI or the ethics of artificial intelligence would provide a contrasting, more theoretical perspective on the societal impact and considerations surrounding powerful AI systems like LLMs. (Based on the general knowledge about AI ethics)  
   
-## 💬 [Gemini](/content/software/gemini.md) Prompt (gemini-2.5-flash-preview-04-17)  
+## 💬 [Gemini](../software/gemini.md) Prompt (gemini-2.5-flash-preview-04-17)  
 > Write a markdown-formatted (start headings at level H2) book report, followed by a plethora of additional similar, contrasting, and creatively related book recommendations on Large Language Models: Concepts, Techniques and Applications. Be thorough in content discussed but concise and economical with your language. Structure the report with section headings and bulleted lists to avoid long blocks of text.

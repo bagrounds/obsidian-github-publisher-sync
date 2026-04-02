@@ -10,7 +10,7 @@ Channel: TED
 tags:
 youtube: https://youtu.be/lGeoH4SaFIo
 ---
-[Home](/content/index.md) > [Videos](/content/videos/index.md)  
+[Home](../index.md) > [Videos](./index.md)  
 # 🫂🔑📈 The Secret Trick to Improve Your Social Connections | Kasley Killam | How to Be a Better Human | TED  
 ![The Secret Trick to Improve Your Social Connections | Kasley Killam | How to Be a Better Human | TED](https://youtu.be/lGeoH4SaFIo)  
   
@@ -59,7 +59,7 @@ A: 🎁 The act of asking for help, especially for a **small, low-effort favor**
   
 ### Similar Concepts: Intentional Connection and Social Science  
   
-* [🎳🏘️📉📈 Bowling Alone: The Collapse and Revival of American Community](/content/books/bowling-alone.md) by Robert Putnam: 📉 Explores the decline of **social capital** and community involvement in America, particularly civic engagement, and suggests pathways for renewal.  
+* [🎳🏘️📉📈 Bowling Alone: The Collapse and Revival of American Community](../books/bowling-alone.md) by Robert Putnam: 📉 Explores the decline of **social capital** and community involvement in America, particularly civic engagement, and suggests pathways for renewal.  
 * Belong: Find Your People, Create Community, and Live a More Connected Life by Radha Agrawal: 🎯 Provides a **practical guide** and framework for discovering personal interests and intentionally building a community around shared values and activities.  
   
 ### Contrasting Perspectives: The Modern Digital Landscape  
@@ -69,5 +69,5 @@ A: 🎁 The act of asking for help, especially for a **small, low-effort favor**
   
 ### Creatively Related: Behavioral Change and Community Infrastructure  
   
-* [🔄🧠💪 The Power of Habit: Why We Do What We Do in Life and Business](/content/books/the-power-of-habit.md) by Charles Duhigg: 🔄 Explains the **science of habit formation** (Cue, Routine, Reward), which is essential for making the intentional practice of the 531 rule stick in daily life.  
+* [🔄🧠💪 The Power of Habit: Why We Do What We Do in Life and Business](../books/the-power-of-habit.md) by Charles Duhigg: 🔄 Explains the **science of habit formation** (Cue, Routine, Reward), which is essential for making the intentional practice of the 531 rule stick in daily life.  
 * Palaces for the People: How Social Infrastructure Can Help Fight Inequality, Polarization, and the Decline of Civic Life by Eric Klinenberg: 🏘️ Argues that **physical social infrastructure**—libraries, parks, and public spaces—is crucial for fostering community bonds, offering a structural solution that complements individual efforts.

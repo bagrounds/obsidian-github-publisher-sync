@@ -90,7 +90,7 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 * 🏥 **_One Flew Over the Cuckoo's Nest_ by Ken Kesey:** 😵‍💫 Explores themes of oppressive systems, individual rebellion, and the questioning of sanity within the confines of a psychiatric hospital, drawing parallels to Yossarian's struggle against the military machine  
 * 🌃 **_Journey to the End of the Night_ by Louis-Ferdinand Céline:** 🖤 An influential, darkly nihilistic, and misanthropic novel that uses a semi-autobiographical style and black humor to critique society, war (WWI), and human nature  
 * 🌈 **_Gravity's Rainbow_ by Thomas Pynchon:** 🚀 A complex, dense postmodern novel set during WWII that shares *Catch-22*'s satirical elements, exploration of paranoia, bureaucracy, and the absurdity of war, but takes them to a more experimental and sprawling extreme  
-* **[👍🦮🌌 The Hitchhiker's Guide to the Galaxy](books/the-hitchhikers-guide-to-the-galaxy.md) by Douglas Adams:** 👽 Shares *Catch-22*'s absurdist humor and satirical take on bureaucracy, though applied to science fiction and the universe at large rather than war  
+* **[👍🦮🌌 The Hitchhiker's Guide to the Galaxy](./the-hitchhikers-guide-to-the-galaxy.md) by Douglas Adams:** 👽 Shares *Catch-22*'s absurdist humor and satirical take on bureaucracy, though applied to science fiction and the universe at large rather than war  
 * **[⚠️👤 Something Happened](./something-happened.md) by Joseph Heller:** 💔 Heller's follow-up novel, exploring corporate life, conformity, and existential dread with a similar, though perhaps bleaker, satirical and psychological depth  
   
 ## 💬 [Gemini](../software/gemini.md) Prompt (gemini-2.5-pro-exp-03-25)  

@@ -8,7 +8,7 @@ Author:
 tags:
 affiliate link: https://amzn.to/3HnZSZw
 ---
-[Home](/content/index.md) > [Books](/content/books/index.md)  
+[Home](../index.md) > [Books](./index.md)  
 # 🌐💰 Networks, Crowds, and Markets: Reasoning About a Highly Connected World  
 [🛒 Networks, Crowds, and Markets: Reasoning About a Highly Connected World. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3HnZSZw)  
   
@@ -17,7 +17,7 @@ affiliate link: https://amzn.to/3HnZSZw
   
 * 📚 **Title:** Networks, Crowds, and Markets: Reasoning About a Highly Connected World  
 * ✍️ **Authors:** David Easley and Jon Kleinberg  
-* 🎭 **Genre:** 💻 [Computer Science](/content/topics/computer-science.md), 💰 [Economics](/content/topics/economics.md), Sociology, 🕸️ Network Science  
+* 🎭 **Genre:** 💻 [Computer Science](../topics/computer-science.md), 💰 [Economics](../topics/economics.md), Sociology, 🕸️ Network Science  
 * 🎯 **Main Theme:** Explores the 🔗 interconnectedness of individuals and entities through networks and how this 🏗️ structure influences behavior, 📈 markets, and the 📢 spread of information. It uses 📊 mathematical and ⚙️ computational models to analyze phenomena like 🌐 network formation, 🌊 cascading behavior, and 🛒 market dynamics.  
   
 ### 🔑 Key Concepts  
@@ -68,17 +68,17 @@ affiliate link: https://amzn.to/3HnZSZw
   
 ### ↔️ Contrasting Books (Focus on Specific Aspects)  
   
-* 💥 **[⚖️👈 The Tipping Point: How Little Things Can Make a Big Difference](/content/books/the-tipping-point.md) by Malcolm Gladwell:** Explores the social epidemics and how ideas, products, and behaviors spread like viruses. Less focused on formal network models.  
-* 🤔 **[Thinking, Fast and Slow](/content/books/thinking-fast-and-slow.md) by Daniel Kahneman:** While not directly about networks, it provides insights into human decision-making biases that influence behavior within crowds and markets.  
-* 💡 **[Nudge](/content/books/nudge.md): Improving Decisions About Health, Wealth, and Happiness by Richard H. Thaler and Cass R. Sunstein:** Focuses on behavioral economics and how subtle cues (nudges) can influence choices in markets and social contexts.  
-* **[🤔💻🧠 Algorithms to Live By: The Computer Science of Human Decisions](/content/books/algorithms-to-live-by.md) by Brian Christian and Tom Griffiths:** Explores how computer science algorithms can provide insights into everyday human decision-making, relevant to strategic interactions in networks and markets.  
+* 💥 **[⚖️👈 The Tipping Point: How Little Things Can Make a Big Difference](./the-tipping-point.md) by Malcolm Gladwell:** Explores the social epidemics and how ideas, products, and behaviors spread like viruses. Less focused on formal network models.  
+* 🤔 **[Thinking, Fast and Slow](./thinking-fast-and-slow.md) by Daniel Kahneman:** While not directly about networks, it provides insights into human decision-making biases that influence behavior within crowds and markets.  
+* 💡 **[Nudge](./nudge.md): Improving Decisions About Health, Wealth, and Happiness by Richard H. Thaler and Cass R. Sunstein:** Focuses on behavioral economics and how subtle cues (nudges) can influence choices in markets and social contexts.  
+* **[🤔💻🧠 Algorithms to Live By: The Computer Science of Human Decisions](./algorithms-to-live-by.md) by Brian Christian and Tom Griffiths:** Explores how computer science algorithms can provide insights into everyday human decision-making, relevant to strategic interactions in networks and markets.  
   
 ### ✨ Creatively Related Books (Exploring Networked Concepts in Different Contexts)  
   
-* 🌌 **[Snow Crash](/content/books/snow-crash.md) by Neal Stephenson:** A science fiction novel that explores the concept of a global virtual reality and its impact on society, touching on ideas of interconnectedness and information spread in a fictional context. 🕶️💻🌐  
+* 🌌 **[Snow Crash](./snow-crash.md) by Neal Stephenson:** A science fiction novel that explores the concept of a global virtual reality and its impact on society, touching on ideas of interconnectedness and information spread in a fictional context. 🕶️💻🌐  
 * 🏛️ **The Cathedral and the Bazaar by Eric S. Raymond:** An essay that examines the contrasting development models of open-source software (the "bazaar") versus traditional software (the "cathedral"), offering insights into collaborative networked systems. 💻🤝  
 * 🧠 **The Wisdom of Crowds by James Surowiecki:** Argues that under the right circumstances, large groups of people can collectively make surprisingly accurate predictions and decisions, relevant to understanding aggregate behavior in networked systems. 🧑‍🤝‍🧑📊🎯  
-* 🚀 **[Zero To One](/content/books/zero-to-one.md): Notes on Startups, or How to Build the Future by Peter Thiel with Blake Masters:** While focused on entrepreneurship, it touches upon the importance of network effects and creating defensible market positions in interconnected economies. 💡💰🌐  
+* 🚀 **[Zero To One](./zero-to-one.md): Notes on Startups, or How to Build the Future by Peter Thiel with Blake Masters:** While focused on entrepreneurship, it touches upon the importance of network effects and creating defensible market positions in interconnected economies. 💡💰🌐  
   
-## 💬 [Gemini](/content/software/gemini.md) Prompt (gemini-2.0-flash)  
+## 💬 [Gemini](../software/gemini.md) Prompt (gemini-2.0-flash)  
 > Write a markdown-formatted (start headings at level H2) book report, followed by a plethora of additional similar, contrasting, and creatively related book recommendations on Networks, Crowds, and Markets. Be thorough in content discussed but concise and economical with your language. Structure the report with section headings and bulleted lists to avoid long blocks of text.

@@ -4,10 +4,10 @@ aliases:
   - Spaceship You
 title: Spaceship You
 URL: https://youtu.be/snAhsXyO3Ck
-Author: 
-Platform: 
-Channel: 
-tags: 
+Author:
+Platform:
+Channel:
+tags:
 ---
 [Home](../index.md) > [Videos](./index.md)  
 # Spaceship You  

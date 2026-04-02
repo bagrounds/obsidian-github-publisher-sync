@@ -10,7 +10,7 @@ Channel: The Prof G Pod – Scott Galloway
 tags:
 youtube: https://youtu.be/ieAwLyEDHqE
 ---
-[Home](/content/index.md) > [Videos](/content/videos/index.md) | [🏛️🇺🇸📖 Heather Cox Richardson](/content/people/heather-cox-richardson.md) | [👨‍🏫📈💻 Scott Galloway](/content/people/scott-galloway.md)  
+[Home](../index.md) > [Videos](./index.md) | [🏛️🇺🇸📖 Heather Cox Richardson](../people/heather-cox-richardson.md) | [👨‍🏫📈💻 Scott Galloway](../people/scott-galloway.md)  
 # 🇺🇸🤕📢 America’s Branding Crisis — with Heather Cox Richardson | Prof G Conversations  
 ![America’s Branding Crisis — with Heather Cox Richardson | Prof G Conversations](https://youtu.be/ieAwLyEDHqE)  
   
@@ -57,16 +57,16 @@ youtube: https://youtu.be/ieAwLyEDHqE
 ## 📚 Book Recommendations  
   
 ### ↔️ Similar  
-* [🏛️☀️⬆️ Democracy Awakening: 📝 Notes on the State of 🇺🇸 America](/content/books/democracy-awakening.md) by Heather Cox Richardson: The author's latest book, which synthesizes historical analysis with modern political issues to discuss the state of American democracy.  
-* [😇🧠 The Righteous Mind: Why Good People Are Divided by Politics and Religion](/content/books/the-righteous-mind.md) by Jonathan Haidt: Focuses on the deep moral and psychological foundations that drive political polarization and conflict between different groups.  
+* [🏛️☀️⬆️ Democracy Awakening: 📝 Notes on the State of 🇺🇸 America](../books/democracy-awakening.md) by Heather Cox Richardson: The author's latest book, which synthesizes historical analysis with modern political issues to discuss the state of American democracy.  
+* [😇🧠 The Righteous Mind: Why Good People Are Divided by Politics and Religion](../books/the-righteous-mind.md) by Jonathan Haidt: Focuses on the deep moral and psychological foundations that drive political polarization and conflict between different groups.  
   
 ### 🆚 Contrasting  
 * ⚖️ A Theory of Justice by John Rawls: Presents a powerful liberal political philosophy that argues for principles of justice that rational individuals would agree to in a fair, initial state, offering a robust contrast to the video's discussion of wealth concentration and inequality.  
 * 🛣️ The Road to Serfdom by F. A. Hayek: This classic work argues that government planning and increasing state control over the economy inevitably lead to totalitarianism, providing an intellectual counterpoint to the video’s calls for increased community and government investment.  
   
 ### 🎨 Creatively Related  
-* [📜🌍⏳ Sapiens: A Brief History of Humankind](/content/books/sapiens-a-brief-history-of-humankind.md) by Yuval Noah Harari: Connects to the idea of powerful mythology (like the cowboy/individualist myth) that political parties market to the populace by exploring how human cooperation is built on shared fictions and narratives.  
-* [🎨⚔️ The Art of War](/content/books/the-art-of-war.md) by Sun Tzu: Tangentially relates by providing an ancient framework for understanding political and social strategy, including how to define and market to an opponent, a key theme in the discussion of political party branding and division.  
+* [📜🌍⏳ Sapiens: A Brief History of Humankind](../books/sapiens-a-brief-history-of-humankind.md) by Yuval Noah Harari: Connects to the idea of powerful mythology (like the cowboy/individualist myth) that political parties market to the populace by exploring how human cooperation is built on shared fictions and narratives.  
+* [🎨⚔️ The Art of War](../books/the-art-of-war.md) by Sun Tzu: Tangentially relates by providing an ancient framework for understanding political and social strategy, including how to define and market to an opponent, a key theme in the discussion of political party branding and division.  
   
 ## 🐦 Tweet  
 <blockquote class="twitter-tweet" data-theme="dark"><p lang="en" dir="ltr">🇺🇸🤕📢 America’s Branding Crisis — with Heather Cox Richardson | Prof G Conversations<br><br>🇺🇸 Patriotism | 🐘 Republican Party | 💰 Wealth Inequality | 😠 Political Anger | 📚 Historical Parallels | 🤝 Democratic Rebranding<a href="https://twitter.com/HC_Richardson?ref_src=twsrc%5Etfw">@HC_Richardson</a> <a href="https://twitter.com/profgalloway?ref_src=twsrc%5Etfw">@profgalloway</a><a href="https://t.co/RhT24nUZ7Q">https://t.co/RhT24nUZ7Q</a></p>&mdash; Bryan Grounds (@bagrounds) <a href="https://twitter.com/bagrounds/status/1986350980754214915?ref_src=twsrc%5Etfw">November 6, 2025</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>

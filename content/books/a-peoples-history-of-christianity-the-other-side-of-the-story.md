@@ -7,7 +7,7 @@ share: true
 CTA: 🗣️ Uncover suppressed narratives.
 affiliate link: https://amzn.to/3JOysh4
 ---
-[Home](/content/index.md) > [Books](/content/books/index.md)  
+[Home](../index.md) > [Books](./index.md)  
 # 👥✝️ A People's History of Christianity: The Other Side of the Story  
 [🛒 A People's History of Christianity: The Other Side of the Story. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3JOysh4)  
   

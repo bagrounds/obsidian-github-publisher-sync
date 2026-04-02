@@ -10,7 +10,7 @@ Channel: PBS NewsHour
 tags:
 youtube: https://youtu.be/03rBVFd4ITA
 ---
-[Home](/content/index.md) > [Videos](/content/videos/index.md)  
+[Home](../index.md) > [Videos](./index.md)  
 # 🚢🛢️🇺🇸🇻🇪💥 U.S. seizes oil tanker off the coast of Venezuela, escalating tensions with Maduro  
 ![U.S. seizes oil tanker off the coast of Venezuela, escalating tensions with Maduro](https://youtu.be/03rBVFd4ITA)  
   
@@ -54,7 +54,7 @@ youtube: https://youtu.be/03rBVFd4ITA
 ## 📚 Book Recommendations  
   
 ### ↔️ Similar  
-* [👑😈👎📈 The Dictator's Handbook: Why Bad Behavior Is Almost Always Good Politics](/content/books/the-dictators-handbook.md) by Bruce Bueno de Mesquita and Alastair Smith: Explores the mechanics of power and loyalty, relevant to understanding how Maduro maintains his regime by paying off key supporters.  
+* [👑😈👎📈 The Dictator's Handbook: Why Bad Behavior Is Almost Always Good Politics](../books/the-dictators-handbook.md) by Bruce Bueno de Mesquita and Alastair Smith: Explores the mechanics of power and loyalty, relevant to understanding how Maduro maintains his regime by paying off key supporters.  
 * 📚 Blackout: The World's Government Under the Influence of Russia's Secret Technology by Ted Koppel: Discusses geopolitical conflicts and the tactics major world powers use to pressure and engage with smaller states.  
   
 ### 🆚 Contrasting  

@@ -4,8 +4,8 @@ aliases:
   - "💾🔮🤔🎲🎱 Software Estimation: Demystifying the Black Art"
 title: "💾🔮🤔🎲🎱 Software Estimation: Demystifying the Black Art"
 URL: https://bagrounds.org/books/software-estimation
-Author: 
-tags: 
+Author:
+tags:
 affiliate link: https://amzn.to/4kUnd3v
 ---
 [Home](../index.md) > [Books](./index.md)  

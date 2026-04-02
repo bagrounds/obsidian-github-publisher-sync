@@ -5,8 +5,11 @@ aliases:
 title: 🫂💖 Attachment Theory
 URL: https://bagrounds.org/topics/attachment-theory
 updated: 2026-03-12T10:15:10.815Z
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_time: 2026-04-02T00:00:00Z
+force_analyze_links: false
 ---
-[Home](/content/index.md) > [Topics](/content/topics/index.md)  
+[Home](../index.md) > [Topics](./index.md)  
 # 🫂💖 Attachment Theory  
 ## 🤖 AI Summary  
 ### 🔨 Tool Report: Attachment Theory 👶👩‍👧‍👦🧙‍♂️  
@@ -140,13 +143,13 @@ Why did the anxiously attached person break up with their mirror? Because they k
 📖 **Book Recommendations** 📚  
   
   * **Topical:** *Attachment* by John Bowlby 📖  
-  * **Tangentially Related:** *[Emotional Intelligence](/content/books/emotional-intelligence.md)* by Daniel Goleman 🧠  
+  * **Tangentially Related:** *[Emotional Intelligence](../books/emotional-intelligence.md)* by Daniel Goleman 🧠  
   * **Topically Opposed:** *The Myth of Independence* by Wendy M. Williams and Stephen J. Ceci (explores the importance of interdependence) 🤝  
   * **More General:** *Developmental Psychology: Childhood and Adolescence* by David R. Shaffer and Katherine Kipp 👶➡️🧑  
   * **More Specific:** *Adult Attachment in Close Relationships* by R. Chris Fraley and Phillip R. Shaver ❤️  
   * **Fictional:** *Room* by Emma Donoghue (explores the intense bond between a mother and child in extreme circumstances) 😥➡️💖  
-  * **Rigorous:** *[📖🫂🥼 Handbook of Attachment: Theory, Research, and Clinical Applications](/content/books/handbook-of-attachment-theory-research-and-clinical-applications.md)* edited by Jude Cassidy and Phillip R. Shaver 🤓  
-  * **Accessible:** *[🧑‍❤️‍🧑🔗 Attached: The New Science of Adult Attachment and How It Can Help You Find - and Keep - Love](/content/books/attached-the-new-science-of-adult-attachment-and-how-it-can-help-you-find-and-keep-love.md)* by Amir Levine and Rachel S.F. Heller 🥰  
+  * **Rigorous:** *[📖🫂🥼 Handbook of Attachment: Theory, Research, and Clinical Applications](../books/handbook-of-attachment-theory-research-and-clinical-applications.md)* edited by Jude Cassidy and Phillip R. Shaver 🤓  
+  * **Accessible:** *[🧑‍❤️‍🧑🔗 Attached: The New Science of Adult Attachment and How It Can Help You Find - and Keep - Love](../books/attached-the-new-science-of-adult-attachment-and-how-it-can-help-you-find-and-keep-love.md)* by Amir Levine and Rachel S.F. Heller 🥰  
   
 📺 **Links To Relevant YouTube Channels Or Videos** ▶️  
   

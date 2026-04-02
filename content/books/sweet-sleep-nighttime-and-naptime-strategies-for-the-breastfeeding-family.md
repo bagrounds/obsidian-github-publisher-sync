@@ -7,7 +7,7 @@ share: true
 CTA: 😴 Embrace restful nights.
 affiliate link: https://amzn.to/4iKUQoN
 ---
-[Home](/content/index.md) > [Books](/content/books/index.md)  
+[Home](../index.md) > [Books](./index.md)  
 # 😴🤱 Sweet Sleep: Nighttime and Naptime Strategies for the Breastfeeding Family  
 [🛒 Sweet Sleep: Nighttime and Naptime Strategies for the Breastfeeding Family. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4iKUQoN)  
   
@@ -80,14 +80,14 @@ affiliate link: https://amzn.to/4iKUQoN
 * Attached at the Heart: Eight Promises to Raise a Resilient, Compassionate, and Confident Child by Barbara Nicholson and Lysa Parker  
   
 ### 📖 Contrasting Books  
-* [😴👶  Solve Your Child's Sleep Problems](/content/books/solve-your-childs-sleep-problems.md) by Richard Ferber  
+* [😴👶  Solve Your Child's Sleep Problems](./solve-your-childs-sleep-problems.md) by Richard Ferber  
 * Healthy Sleep Habits, Happy Child by Marc Weissbluth  
 * On Becoming Baby Wise: Giving Your Infant the Gift of Nighttime Sleep by Gary Ezzo and Robert Bucknam  
   
 ### 📖 Related Books  
 * The Continuum Concept by Jean Liedloff  
 * The Wonder Weeks by Hetty van de Rijt and Frans Plooij  
-* [🤱🏼🤿🪞🌱 Parenting from the Inside Out: How a Deeper Self-Understanding Can Help You Raise Children Who Thrive](/content/books/parenting-from-the-inside-out-how-a-deeper-self-understanding-can-help-you-raise-children-who-thrive.md) by Daniel Siegel and Mary Hartzell  
+* [🤱🏼🤿🪞🌱 Parenting from the Inside Out: How a Deeper Self-Understanding Can Help You Raise Children Who Thrive](./parenting-from-the-inside-out-how-a-deeper-self-understanding-can-help-you-raise-children-who-thrive.md) by Daniel Siegel and Mary Hartzell  
   
 ## 🫵 What Do You Think?  
 What aspects of infant sleep do you find most challenging, and how do you reconcile different philosophies on nighttime parenting? Share your experiences and perspectives below!

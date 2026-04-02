@@ -6,8 +6,11 @@ URL: https://bagrounds.org/books/entangled-life-how-fungi-make-our-worlds-change
 share: true
 affiliate link: https://amzn.to/4n6kNAM
 updated: 2026-03-18T08:14:56.817Z
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_time: 2026-04-01T00:00:00Z
+force_analyze_links: false
 ---
-[Home](/content/index.md) > [Books](/content/books/index.md)  
+[Home](../index.md) > [Books](./index.md)  
 # 🍄🌍🧠🔮 Entangled Life: How Fungi Make Our Worlds, Change Our Minds & Shape Our Futures  
 [🛒 Entangled Life: How Fungi Make Our Worlds, Change Our Minds & Shape Our Futures. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4n6kNAM)  
   
@@ -34,8 +37,8 @@ updated: 2026-03-18T08:14:56.817Z
   
 ### 📖 Similar Reads (Nature, Biology, Interconnectedness)  
   
-* **[🪢🌾 Braiding Sweetgrass: Indigenous Wisdom, Scientific Knowledge, and the Teachings of Plants](/content/books/braiding-sweetgrass.md)** by Robin Wall Kimmerer. 🌸 Like *Entangled Life*, this book beautifully weaves together scientific understanding with traditional knowledge and personal reflection to explore the reciprocal relationship between humans and the natural world, focusing on plants. 🌱  
-* **[🌳🗣️ The Hidden Life of Trees: What They Feel, How They Communicate: Discoveries from a Secret World](/content/books/the-hidden-life-of-trees-what-they-feel-how-they-communicate-discoveries-from-a-secret-world.md)** by Peter Wohlleben. 🌲 Explores the complex social lives of trees and their interconnectedness, particularly through the mycorrhizal networks discussed in *Entangled Life*. 🍄  
+* **[🪢🌾 Braiding Sweetgrass: Indigenous Wisdom, Scientific Knowledge, and the Teachings of Plants](./braiding-sweetgrass.md)** by Robin Wall Kimmerer. 🌸 Like *Entangled Life*, this book beautifully weaves together scientific understanding with traditional knowledge and personal reflection to explore the reciprocal relationship between humans and the natural world, focusing on plants. 🌱  
+* **[🌳🗣️ The Hidden Life of Trees: What They Feel, How They Communicate: Discoveries from a Secret World](./the-hidden-life-of-trees-what-they-feel-how-they-communicate-discoveries-from-a-secret-world.md)** by Peter Wohlleben. 🌲 Explores the complex social lives of trees and their interconnectedness, particularly through the mycorrhizal networks discussed in *Entangled Life*. 🍄  
 * 🦠 **I Contain Multitudes: The Microbes Within Us and a Grander View of Life** by Ed Yong. 🧬 Shifts the focus from fungi to the equally vast and impactful world of microbes, exploring the symbiotic relationships between microorganisms and their hosts, including humans, and challenging the idea of the individual organism. 🧪  
 * 🌍 **An Immense World: How Animal Senses Reveal the Hidden Realms Around Us** by Ed Yong. 🐾 While focusing on animals, this book similarly reveals unseen aspects of the world by exploring the diverse ways different creatures perceive their environment, offering a perspective beyond the human. 👁️  
 * 🌿 **Gathering Moss: A Natural and Cultural History of Mosses** by Robin Wall Kimmerer. 💚 A focused exploration of another often-overlooked group of organisms, blending scientific detail with personal and cultural perspectives, much like Sheldrake does with fungi. 🍄  
@@ -43,7 +46,7 @@ updated: 2026-03-18T08:14:56.817Z
   
 ### ⚖️ Contrasting or Adjacent Perspectives  
   
-* **[👤🧬 The Selfish Gene](/content/books/the-selfish-gene.md)** by Richard Dawkins. 🧫 Presents a gene-centric view of evolution, often emphasizing competition as a driving force, which offers a contrast to the cooperative and symbiotic relationships highlighted in *Entangled Life*. 🌱  
+* **[👤🧬 The Selfish Gene](./the-selfish-gene.md)** by Richard Dawkins. 🧫 Presents a gene-centric view of evolution, often emphasizing competition as a driving force, which offers a contrast to the cooperative and symbiotic relationships highlighted in *Entangled Life*. 🌱  
 * 🐛 **Silent Earth: Averting the Insect Apocalypse** by Dave Goulson. 🌍 Focuses on the critical role and alarming decline of insects, another vital but often unappreciated group of organisms within ecosystems. 🐝  
 * 🏙️ **Darwin Comes to Town: How the Urban Jungle Drives Evolution** by Menno Schilthuizen. 🏙️ Explores evolution and adaptation in urban environments, focusing on how human-altered landscapes impact species, offering a different lens on the interaction between life and its environment. 🧬  
   
@@ -57,7 +60,7 @@ updated: 2026-03-18T08:14:56.817Z
 * 🏜️ **Desert Notebooks: A Natural History of the Anthropocene** by Ben Ehrenreich. 🌵 Blends personal experience, history, and science to explore the complexities of life in the desert and the impact of human activity, offering a meditation on survival and interconnectedness in a harsh environment. ☀️  
 * 🌊 **Spineless: The Science of Jellyfish and the Art of Growing a Backbone** by Juli Berwald. 🐠 Delves into the fascinating world of jellyfish, exploring their biology and ecology, and prompting reflection on the diversity and strangeness of life beyond familiar forms. 🐙  
   
-## 💬 [Gemini](/content/software/gemini.md) Prompt (gemini-2.5-flash-preview-04-17)  
+## 💬 [Gemini](../software/gemini.md) Prompt (gemini-2.5-flash-preview-04-17)  
 > Write a markdown-formatted (start headings at level H2) book report, followed by a plethora of additional similar, contrasting, and creatively related book recommendations on Entangled Life: How Fungi Make Our Worlds, Change Our Minds & Shape Our Futures. Be thorough in content discussed but concise and economical with your language. Structure the report with section headings and bulleted lists to avoid long blocks of text  
   
 ## 🐦 Tweet  

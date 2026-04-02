@@ -10,7 +10,7 @@ Channel: Hillary Lin, MD
 tags:
 youtube: https://youtu.be/dYVOIN7NXB0
 ---
-[Home](/content/index.md) > [Videos](/content/videos/index.md)  
+[Home](../index.md) > [Videos](./index.md)  
 # ⚡🔋💪 The Mitochondria Protocol: How to Actually Fix Your Energy  
 ![The Mitochondria Protocol: How to Actually Fix Your Energy](https://youtu.be/dYVOIN7NXB0)  
   
@@ -60,18 +60,18 @@ A: 🏋️‍♀️ The **most powerful** intervention is **exercise**, particul
   
 ### **Similar** (Focusing on cellular health, energy, and longevity):  
   
-* [🔋⚕️⏳ Mitochondria and the Future of Medicine: The Key to Understanding Disease, Chronic Illness, Aging, and Life Itself](/content/books/mitochondria-and-the-future-of-medicine-the-key-to-understanding-disease-chronic-illness-aging-and-life-itself.md) by **Lee Know**: 🧪 A book that delves into the **science** of **mitochondrial function** and dysfunction, focusing on **nutrients** and **supplements** (like **CoQ10** and **ALA**) to support the **cellular energy** system.  
-* [⏳🙅 Lifespan: Why We Age - and Why We Don't Have To](/content/books/lifespan-why-we-age-and-why-we-dont-have-to.md) by **David Sinclair**: 🧬 Explores the role of **epigenetics** and key pathways like **NAD+** and **sirtuins** in the **aging process**, which are deeply interconnected with **mitochondrial** health and **function**.  
+* [🔋⚕️⏳ Mitochondria and the Future of Medicine: The Key to Understanding Disease, Chronic Illness, Aging, and Life Itself](../books/mitochondria-and-the-future-of-medicine-the-key-to-understanding-disease-chronic-illness-aging-and-life-itself.md) by **Lee Know**: 🧪 A book that delves into the **science** of **mitochondrial function** and dysfunction, focusing on **nutrients** and **supplements** (like **CoQ10** and **ALA**) to support the **cellular energy** system.  
+* [⏳🙅 Lifespan: Why We Age - and Why We Don't Have To](../books/lifespan-why-we-age-and-why-we-dont-have-to.md) by **David Sinclair**: 🧬 Explores the role of **epigenetics** and key pathways like **NAD+** and **sirtuins** in the **aging process**, which are deeply interconnected with **mitochondrial** health and **function**.  
 * The Telomere Effect: A Revolutionary Approach to Living Younger, Healthier, Longer by **Elizabeth Blackburn** and **Elissa Epel**: ⏱️ Focuses on **telomere** length as a biological marker of **aging** and how **lifestyle factors**—including those that improve **cellular health** and reduce **oxidative stress**—can protect them.  
   
 ### **Contrasting** (Focusing on other health paradigms or alternative energy models):  
   
-* [😴💭 Why We Sleep: Unlocking the Power of Sleep and Dreams](/content/books/why-we-sleep-unlocking-the-power-of-sleep-and-dreams.md) by **Matthew Walker**: 😴 While the video mentions the importance of **sleep** for mitochondrial repair, **this book** gives a comprehensive, non-mitochondrial-focused view of **sleep's necessity** for **memory**, **learning**, and overall **health**.  
-* [🌄⏳ The Circadian Code: Lose Weight, Supercharge Your Energy, and Transform Your Health from Morning to Midnight](/content/books/the-circadian-code.md) by **Satchin Panda**: ☀️ Focuses primarily on **Time-Restricted Eating** (TRE) and the **circadian clock** as the *master* regulator of **health**, with less emphasis on the sub-cellular mechanism of **mitochondria**.  
-* [⚡🧠🏃 Spark: The Revolutionary New Science of Exercise and the Brain](/content/books/spark-the-revolutionary-new-science-of-exercise-and-the-brain.md) by **John J. Ratey**: 🏃 Focuses on **exercise** as medicine for the **brain**, detailing its effects on **neuroplasticity** and **mood** through chemical changes, without the detailed focus on **mitochondrial biogenesis**.  
+* [😴💭 Why We Sleep: Unlocking the Power of Sleep and Dreams](../books/why-we-sleep-unlocking-the-power-of-sleep-and-dreams.md) by **Matthew Walker**: 😴 While the video mentions the importance of **sleep** for mitochondrial repair, **this book** gives a comprehensive, non-mitochondrial-focused view of **sleep's necessity** for **memory**, **learning**, and overall **health**.  
+* [🌄⏳ The Circadian Code: Lose Weight, Supercharge Your Energy, and Transform Your Health from Morning to Midnight](../books/the-circadian-code.md) by **Satchin Panda**: ☀️ Focuses primarily on **Time-Restricted Eating** (TRE) and the **circadian clock** as the *master* regulator of **health**, with less emphasis on the sub-cellular mechanism of **mitochondria**.  
+* [⚡🧠🏃 Spark: The Revolutionary New Science of Exercise and the Brain](../books/spark-the-revolutionary-new-science-of-exercise-and-the-brain.md) by **John J. Ratey**: 🏃 Focuses on **exercise** as medicine for the **brain**, detailing its effects on **neuroplasticity** and **mood** through chemical changes, without the detailed focus on **mitochondrial biogenesis**.  
   
 ### **Creatively Related** (Exploring the cultural, historical, or macro implications of energy and biology):  
   
 * The Emperor of All Maladies: A Biography of Cancer by **Siddhartha Mukherjee**: 🔬 Provides a sweeping, **historical** and **scientific narrative** of **cancer**, touching upon **cellular metabolism** and the **Warburg effect**, which is an alternative energy strategy related to **mitochondrial** function.  
 * The Vital Question: Energy, Evolution, and the Origins of Complex Life by **Nick Lane**: 🦠 A deeper, more **academic** look at the **evolutionary** link between **energy** and the rise of complex life, specifically detailing the **endosymbiotic event** that created **mitochondria**.  
-* [📜🌍⏳ Sapiens: A Brief History of Humankind](/content/books/sapiens-a-brief-history-of-humankind.md) of Humankind by **Yuval Noah Harari**: 🌍 A broad, **historical perspective** on humanity's journey, which can be creatively related by considering the **energy constraints** and **metabolic flexibility** that underpinned the **cognitive demands** of human evolution.
+* [📜🌍⏳ Sapiens: A Brief History of Humankind](../books/sapiens-a-brief-history-of-humankind.md) of Humankind by **Yuval Noah Harari**: 🌍 A broad, **historical perspective** on humanity's journey, which can be creatively related by considering the **energy constraints** and **metabolic flexibility** that underpinned the **cognitive demands** of human evolution.

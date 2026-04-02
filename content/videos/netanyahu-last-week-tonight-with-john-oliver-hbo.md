@@ -10,7 +10,7 @@ Channel: LastWeekTonight
 tags:
 youtube: https://youtu.be/0_Bwix9IjOE
 ---
-[Home](/content/index.md) > [Videos](/content/videos/index.md)  
+[Home](../index.md) > [Videos](./index.md)  
 # 🇮🇱🎤📺 Netanyahu: Last Week Tonight with John Oliver (HBO)  
 ![Netanyahu: Last Week Tonight with John Oliver (HBO)](https://youtu.be/0_Bwix9IjOE)  
   
@@ -40,7 +40,7 @@ youtube: https://youtu.be/0_Bwix9IjOE
   
 ### Similar  
 * 📘 Catch and Kill: Lies, Spies, and a Conspiracy to Protect Predators 🕵️ by Ronan Farrow. 📜 Explores how powerful figures use their influence, media control, and political connections to suppress damaging information, paralleling the video's discussion of *quid pro quo* with news platforms.  
-* [➡️🌟🗺️ A Promised Land](/content/books/a-promised-land.md) 🕊️ by Barack Obama. 🏛️ Offers an in-depth, firsthand perspective on the immense diplomatic challenges and entrenched political hurdles involved in Mideast peace negotiations, including his dealings with Netanyahu.  
+* [➡️🌟🗺️ A Promised Land](../books/a-promised-land.md) 🕊️ by Barack Obama. 🏛️ Offers an in-depth, firsthand perspective on the immense diplomatic challenges and entrenched political hurdles involved in Mideast peace negotiations, including his dealings with Netanyahu.  
   
 ### Contrasting  
 * 🛡️ Bibi: The Turbulent Life and Times of Benjamin Netanyahu 🇮🇱 by Anshel Pfeffer. 🖋️ Provides a more nuanced, full biography of Netanyahu's life, tracing his evolution from a young diplomat influenced by his father's revisionist Zionism to his status as Israel's longest-serving Prime Minister.  

@@ -7,8 +7,11 @@ URL: https://bagrounds.org/books/full-catastrophe-living
 Author:
 tags:
 affiliate link: https://amzn.to/4mJU6Sg
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_time: 2026-04-02T00:00:00Z
+force_analyze_links: false
 ---
-[Home](/content/index.md) > [Books](/content/books/index.md)  
+[Home](../index.md) > [Books](./index.md)  
 # 🌪️🧘🏼‍♀️ Full Catastrophe Living: Using the Wisdom of Your Body and Mind to Face Stress, Pain, and Illness  
 [🛒 Full Catastrophe Living: Using the Wisdom of Your Body and Mind to Face Stress, Pain, and Illness. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4mJU6Sg)  
   
@@ -62,10 +65,10 @@ Kabat-Zinn's work is highly regarded and supported by extensive research. 📚 H
   
 #### Additional Book Recommendations 📚  
   
-- **Best Alternate Book on the Same Topic:** [👣➡️🌍 Wherever You Go, There You Are](/content/books/wherever-you-go-there-you-are.md) also by Jon Kabat-Zinn. 🗺️  
-- **Best Tangentially Related Book:** "[Thinking, Fast and Slow](/content/books/thinking-fast-and-slow.md)" by Daniel Kahneman, for understanding cognitive biases that mindfulness can help address. 🧠  
+- **Best Alternate Book on the Same Topic:** [👣➡️🌍 Wherever You Go, There You Are](./wherever-you-go-there-you-are.md) also by Jon Kabat-Zinn. 🗺️  
+- **Best Tangentially Related Book:** "[Thinking, Fast and Slow](./thinking-fast-and-slow.md)" by Daniel Kahneman, for understanding cognitive biases that mindfulness can help address. 🧠  
 - **Best Diametrically Opposed Book:** "The Subtle Art of Not Giving a F*ck" by Mark Manson, for a more direct, action-oriented approach to life's challenges. 🤬➡️ 😌  
 - **Best Fiction Book That Incorporates Related Ideas:** "The Buddha in the Attic" by Julie Otsuka, for exploring themes of acceptance and cultural adaptation. 🎎  
 - **Best More General Book:** "The Power of Now" by Eckhart Tolle, for a broader perspective on present-moment awareness. 🕰️  
 - **Best More Rigorous Book:** "Mindfulness-Based Cognitive Therapy for Depression" by Mark Williams, John Teasdale, Zindel Segal, and Jon Kabat-Zinn. 👩‍⚕️  
-- **Best More Accessible Book:** [📈🧘🏼‍♀️ 10% Happier](/content/books/10-percent-happier.md) by Dan Harris, for a relatable and humorous introduction to mindfulness. 😂
+- **Best More Accessible Book:** [📈🧘🏼‍♀️ 10% Happier](./10-percent-happier.md) by Dan Harris, for a relatable and humorous introduction to mindfulness. 😂

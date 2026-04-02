@@ -6,7 +6,7 @@ title: 💾✍️🌋⚫️ Obsidian
 URL: https://bagrounds.org/software/obsidian
 updated: 2026-03-11T14:59:59.847Z
 ---
-[Home](/content/index.md) > [Software](/content/software/index.md)  
+[Home](../index.md) > [Software](./index.md)  
 # 💾✍️🌋⚫️ Obsidian  
   
 ## 🤖 AI Summary  

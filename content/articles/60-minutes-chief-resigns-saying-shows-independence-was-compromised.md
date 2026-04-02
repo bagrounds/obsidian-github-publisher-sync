@@ -7,7 +7,7 @@ URL: https://bagrounds.org/articles/60-minutes-chief-resigns-saying-shows-indepe
 Author:
 tags:
 ---
-[Home](/content/index.md) > [Articles](/content/articles/index.md)  
+[Home](../index.md) > [Articles](./index.md)  
 # [⏱️⚔️🏛️ '60 Minutes' chief resigns, saying show's independence was compromised](https://www.npr.org/2025/04/22/nx-s1-5372733/60-minutes-bill-owens-cbs-trump-paramount)  
 ## 🤖 AI Summary  
   
@@ -34,7 +34,7 @@ tags:
   
 **🏦 On Media, Power, and Corporate Influence:**  
   
-* [🏭🫡 Manufacturing Consent: The Political Economy of the Mass Media](/content/books/manufacturing-consent.md) by Edward S. Herman and Noam Chomsky: 🧐 A classic critical analysis of how 🏢 corporate ownership, 📣 advertising, and 📍 sourcing can shape news coverage.  
+* [🏭🫡 Manufacturing Consent: The Political Economy of the Mass Media](../books/manufacturing-consent.md) by Edward S. Herman and Noam Chomsky: 🧐 A classic critical analysis of how 🏢 corporate ownership, 📣 advertising, and 📍 sourcing can shape news coverage.  
 * 🗞️ *The Media Monopoly* by Ben H. Bagdikian: 📉 A seminal work documenting the concentration of media ownership and its potential impact on democracy and the free flow of information.  
 * 💸 *Rich Media, Poor Democracy: Communication Politics in Dubious Times* by Robert W. McChesney: 🗣️ Explores the effects of media deregulation and consolidation on public discourse.  
   
@@ -42,7 +42,7 @@ tags:
   
 * 🦊 *Hoax: Donald Trump, Fox News, and the Dangerous Distortion of Truth* by Brian Stelter: 📢 Examines the relationship between Trump and a specific media outlet, highlighting issues of bias and influence.  
 * 🏛️ *The Divider: Trump in the White House, 2017-2021* by Peter Baker and Susan Glasser: 📰 Provides extensive reporting on the Trump presidency, including his administration's interactions and conflicts with the press.  
-* [🙅🗣️💻 Antisocial: Online Extremists, Techno-Utopians, and the Hijacking of the American Conversation](/content/books/antisocial-online-extremists-techno-utopians-and-the-hijacking-of-the-american-conversation.md) by Andrew Marantz: 📱 Looks at how media, including social media, has been influenced and manipulated in the modern political era.  
+* [🙅🗣️💻 Antisocial: Online Extremists, Techno-Utopians, and the Hijacking of the American Conversation](../books/antisocial-online-extremists-techno-utopians-and-the-hijacking-of-the-american-conversation.md) by Andrew Marantz: 📱 Looks at how media, including social media, has been influenced and manipulated in the modern political era.  
   
 **🔎 On the History and Practice of Investigative Journalism:**  
   

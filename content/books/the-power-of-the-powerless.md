@@ -7,7 +7,7 @@ share: true
 CTA: 💪 Empower change.
 affiliate link: https://amzn.to/4qBJKp8
 ---
-[Home](/content/index.md) > [Books](/content/books/index.md)  
+[Home](../index.md) > [Books](./index.md)  
 # 👤✊ The Power of the Powerless  
 [🛒 The Power of the Powerless. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4qBJKp8)  
   
@@ -60,16 +60,16 @@ affiliate link: https://amzn.to/4qBJKp8
 ## 📚 Book Recommendations  
 ### 🤝 Similar Books  
 * ⛓️ The Gulag Archipelago by Aleksandr Solzhenitsyn: A harrowing account of Soviet forced labor camps, detailing the brutal reality behind totalitarian ideology.  
-* [👁️ 1984](/content/books/1984.md) by George Orwell: A dystopian novel exploring themes of surveillance, propaganda, and individual resistance against an omnipresent totalitarian state.  
-* [👑🚫📜2️⃣0️⃣ On Tyranny: Twenty Lessons from the Twentieth Century](/content/books/on-tyranny.md) by Timothy Snyder: Concise historical lessons on how to resist modern forms of authoritarianism.  
+* [👁️ 1984](./1984.md) by George Orwell: A dystopian novel exploring themes of surveillance, propaganda, and individual resistance against an omnipresent totalitarian state.  
+* [👑🚫📜2️⃣0️⃣ On Tyranny: Twenty Lessons from the Twentieth Century](./on-tyranny.md) by Timothy Snyder: Concise historical lessons on how to resist modern forms of authoritarianism.  
   
 ### ↔️ Contrasting Books  
 * 👑 The Prince by Niccolò Machiavelli: A pragmatic treatise on acquiring and maintaining political power, often advocating for cunning and deception, contrasting Havel's moral stance.  
 * 🏛️ The Republic by Plato: An exploration of an ideal state governed by philosopher-kings, where individual roles are subservient to the collective good, differing from Havel's emphasis on individual truth.  
   
 ### 🔗 Related Books  
-* [🔦💡 Man's Search for Meaning](/content/books/mans-search-for-meaning.md) by Viktor Frankl: Explores the human quest for meaning even in the most oppressive circumstances, resonating with Havel's emphasis on existential authenticity.  
-* [⚙️⛓️ Discipline and Punish: The Birth of the Prison](/content/books/discipline-and-punish-the-birth-of-the-prison.md) by Michel Foucault: Examines the historical development of punitive systems and the pervasive nature of power in modern society, offering a different lens on control.  
+* [🔦💡 Man's Search for Meaning](./mans-search-for-meaning.md) by Viktor Frankl: Explores the human quest for meaning even in the most oppressive circumstances, resonating with Havel's emphasis on existential authenticity.  
+* [⚙️⛓️ Discipline and Punish: The Birth of the Prison](./discipline-and-punish-the-birth-of-the-prison.md) by Michel Foucault: Examines the historical development of punitive systems and the pervasive nature of power in modern society, offering a different lens on control.  
 * 🚶 Civil Disobedience by Henry David Thoreau: An argument for individual resistance to unjust government, aligning with the spirit of nonviolent defiance.  
   
 ## 🫵 What Do You Think?  

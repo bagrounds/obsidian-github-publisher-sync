@@ -10,7 +10,7 @@ Channel: Heather Cox Richardson
 tags:
 youtube: https://youtu.be/nuDS-WX2yv4
 ---
-[Home](/content/index.md) > [Videos](/content/videos/index.md) | [🏛️🇺🇸📖 Heather Cox Richardson](/content/people/heather-cox-richardson.md)  
+[Home](../index.md) > [Videos](./index.md) | [🏛️🇺🇸📖 Heather Cox Richardson](../people/heather-cox-richardson.md)  
 # 🤔🗣️🏛️🇺🇸 A New Way to Think About Religion and Politics with James Talarico | American Conversations  
 ![A New Way to Think About Religion and Politics with James Talarico | American Conversations](https://youtu.be/nuDS-WX2yv4)  
   
@@ -57,7 +57,7 @@ A: 🧑‍🤝‍🧑 Countering the crisis requires a **spiritual commitment** 
   
 * **Similar (Expanding on the Intersection of Faith and Social Justice)**  
     * ✝️ The Prophetic Imagination by Walter Brueggemann: Examines the role of the prophet in challenging the status quo and providing an alternative vision, directly relating to the concept of religion maintaining its "prophetic voice" by resisting political power.  
-    * [❓🏘️ Where Do We Go from Here: Chaos or Community?](/content/books/where-do-we-go-from-here-chaos-or-community.md) by Martin Luther King Jr.: Discusses the pursuit of economic justice and nonviolent action as the next phase of the Civil Rights movement, mirroring the call for loving one's neighbor and addressing systemic inequality.  
+    * [❓🏘️ Where Do We Go from Here: Chaos or Community?](../books/where-do-we-go-from-here-chaos-or-community.md) by Martin Luther King Jr.: Discusses the pursuit of economic justice and nonviolent action as the next phase of the Civil Rights movement, mirroring the call for loving one's neighbor and addressing systemic inequality.  
 * **Contrasting (Exploring Christian Nationalism and the Threat to Separation)**  
     * 🇺🇸 Taking America Back for God: Christian Nationalism in the United States by Andrew L. Whitehead and Samuel L. Perry: Provides a sociological, data-driven analysis of the Christian nationalist ideology that the speaker defines his own faith-based politics against.  
     * 📜 The Founding Fathers and the Place of Religion in America by Frank Lambert: Offers a historical view of the separation of church and state, presenting evidence that contradicts the Christian nationalist claim of the U.S. being founded as a Christian nation.  

@@ -9,7 +9,7 @@ Platform: "#YouTube"
 Channel: "[[Benjamin Keep, PhD, JD]]"
 tags:
 ---
-[Home](/content/index.md) > [Videos](/content/videos/index.md)  
+[Home](../index.md) > [Videos](./index.md)  
 # What makes something memorable?  
 ![What makes something memorable?](https://youtu.be/UW4EMIucmHs)  
 ## Notes  

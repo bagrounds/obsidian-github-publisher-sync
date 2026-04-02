@@ -6,8 +6,11 @@ URL: https://bagrounds.org/books/creating-capabilities-the-human-development-app
 share: true
 CTA: ✨ Build potential.
 affiliate link: https://amzn.to/3YWbxEk
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_time: 2026-04-01T00:00:00Z
+force_analyze_links: false
 ---
-[Home](/content/index.md) > [Books](/content/books/index.md)  
+[Home](../index.md) > [Books](./index.md)  
 # 👤🌱 Creating Capabilities: The Human Development Approach  
 [🛒 Creating Capabilities: The Human Development Approach. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3YWbxEk)  
   
@@ -80,7 +83,7 @@ affiliate link: https://amzn.to/3YWbxEk
 ## 📚 Book Recommendations  
   
 ### ➕ Similar  
-* **[🌟🔓 Development as Freedom](/content/books/development-as-freedom.md)** by Amartya Sen: Explores the intertwined nature of development and individual liberties, emphasizing capabilities.  
+* **[🌟🔓 Development as Freedom](./development-as-freedom.md)** by Amartya Sen: Explores the intertwined nature of development and individual liberties, emphasizing capabilities.  
 * 🚺 **Women and Human Development: The Capabilities Approach** by Martha C. Nussbaum: An earlier, more detailed work by Nussbaum on the capabilities approach with a focus on gender.  
 * 🧑‍🦼 **Frontiers of Justice: Disability, Nationality, Species Membership** by Martha C. Nussbaum: Extends the capabilities approach to address justice for individuals with disabilities, across national borders, and for non-human animals.  
   

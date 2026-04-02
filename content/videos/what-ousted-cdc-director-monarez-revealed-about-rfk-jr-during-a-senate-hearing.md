@@ -10,7 +10,7 @@ Channel: PBS NewsHour
 tags:
 youtube: https://youtu.be/KP3LJN_MaH4
 ---
-[Home](/content/index.md) > [Videos](/content/videos/index.md)  
+[Home](../index.md) > [Videos](./index.md)  
 # 👩‍⚕️🗣️🙊👨 What ousted CDC director Monarez revealed about RFK Jr. during a Senate hearing  
 ![What ousted CDC director Monarez revealed about RFK Jr. during a Senate hearing](https://youtu.be/KP3LJN_MaH4)  
   

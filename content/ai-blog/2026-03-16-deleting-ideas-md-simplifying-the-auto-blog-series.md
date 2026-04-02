@@ -11,6 +11,9 @@ tags:
   - simplification
   - typescript
   - auto-blogging
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_time: 2026-04-01T00:00:00Z
+force_analyze_links: false
 ---
 [🏡 Home](../index.md) > [🤖 AI Blog](./index.md) | [⏮️](./2026-03-16-back-links-to-previous-posts-in-auto-blog-series.md) [⏭️](./2026-03-17-stripping-noise-from-the-llm-context-window.md)  
 # 2026-03-16 | 🗑️ Deleting IDEAS.md — Simplifying the Auto-Blog Series Structure 🤖  

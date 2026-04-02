@@ -10,7 +10,7 @@ Channel: PBS NewsHour
 tags:
 youtube: https://youtu.be/3s5_2oFPYq0
 ---
-[Home](/content/index.md) > [Videos](/content/videos/index.md)  
+[Home](../index.md) > [Videos](./index.md)  
 # ☀️📚😎👍 Top books to read this summer, according to Ann Patchett and Maureen Corrigan  
 ![Top books to read this summer, according to Ann Patchett and Maureen Corrigan](https://youtu.be/3s5_2oFPYq0)  
   
@@ -22,7 +22,7 @@ Ann Patchett's Picks:
     * *The Correspondent* by Virginia Evans \[[00:40](http://www.youtube.com/watch?v=3s5_2oFPYq0&t=40)\]: 💌 An epistolary novel about an older, reclusive woman who builds connections with her neighbors and friends.  
     * *The Satisfaction Cafe* by Kathy Wang \[[01:28](http://www.youtube.com/watch?v=3s5_2oFPYq0&t=88)\]: ☕ A quiet, humorous, and intelligent book following a woman's life in the Bay Area, reminiscent of Anne Tyler's style.  
 * 📚 **Non-Fiction:**  
-    * [🏛️❓ Who Is Government?: The Untold Story of Public Service](/content/books/who-is-government-the-untold-story-of-public-service.md) by Michael Lewis \[[03:43](http://www.youtube.com/watch?v=3s5_2oFPYq0&t=223)\]: 🏛️ A collection of stories by various authors about individuals in different government branches (FDA, IRS, Department of Justice) and their significant impact on daily lives.  
+    * [🏛️❓ Who Is Government?: The Untold Story of Public Service](../books/who-is-government-the-untold-story-of-public-service.md) by Michael Lewis \[[03:43](http://www.youtube.com/watch?v=3s5_2oFPYq0&t=223)\]: 🏛️ A collection of stories by various authors about individuals in different government branches (FDA, IRS, Department of Justice) and their significant impact on daily lives.  
     * *Everything Is Tuberculosis* by John Green \[[04:24](http://www.youtube.com/watch?v=3s5_2oFPYq0&t=264)\]: 🦠 Explores the history and current state of tuberculosis, questioning why this curable disease still causes so many deaths and the implications of reduced funding for global health organizations.  
 * 📚 **Children's Book:**  
     * *Mr. Dog Lives* by Helen Weisse Brown \[[06:52](http://www.youtube.com/watch?v=3s5_2oFPYq0&t=412)\]: 🐶 A unique story about a dog named Crispin, who "owns himself," taking readers into an imaginative world.  
@@ -44,8 +44,8 @@ Maureen Corrigan's Picks:
     * Commonwealth by Ann Patchett: Explores themes of family, love, and responsibility, similar to the character-driven narratives Patchett often recommends.  
     * Razorblade Tears by S.A. Cosby: Another gripping crime novel from Cosby, offering a similar blend of action and emotional depth as *King of Ashes*.  
 * 🔄 **Contrasting:**  
-    * [📜🌍⏳ Sapiens: A Brief History of Humankind](/content/books/sapiens-a-brief-history-of-humankind.md) by Yuval Noah Harari: Offers a broad, historical perspective on humanity, contrasting with the more personal and specific narratives in the video's recommendations.  
-    * [🎨⚔️ The Art of War](/content/books/the-art-of-war.md) by Sun Tzu: A classic text on strategy and conflict, providing a different kind of "non-fiction" read compared to the contemporary social and scientific topics discussed.  
+    * [📜🌍⏳ Sapiens: A Brief History of Humankind](../books/sapiens-a-brief-history-of-humankind.md) by Yuval Noah Harari: Offers a broad, historical perspective on humanity, contrasting with the more personal and specific narratives in the video's recommendations.  
+    * [🎨⚔️ The Art of War](../books/the-art-of-war.md) by Sun Tzu: A classic text on strategy and conflict, providing a different kind of "non-fiction" read compared to the contemporary social and scientific topics discussed.  
 * 🎨 **Creatively Related:**  
     * The Secret Life of Bees by Sue Monk Kidd: Explores themes of female community and empowerment, resonating with the underlying currents in *El Dorado Drive*.  
     * Moby Dick by Herman Melville: A classic tale of obsession and the sea, offering a literary parallel to the harrowing true story in *A Marriage at Sea*.

@@ -6,7 +6,7 @@ URL: https://bagrounds.org/books/american-fatherhood-a-cultural-history
 share: true
 affiliate link: https://amzn.to/3TdA0T3
 ---
-[Home](/content/index.md) > [Books](/content/books/index.md)  
+[Home](../index.md) > [Books](./index.md)  
 # 👨‍👦🇺🇸📜 American Fatherhood: A Cultural History  
 [🛒 American Fatherhood: A Cultural History. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3TdA0T3)  
   
@@ -30,9 +30,9 @@ The 📖 book provides a historical 📜 overview before delving into the change
   
 ### 👨‍👩‍👧‍👦 Similar Books (American Fatherhood, Sociology of Family)  
   
-* 📚 **[👨‍👩‍👧‍👦🇺🇸 Fatherhood in America: Social Work Perspectives on a Changing Society](/content/books/fatherhood-in-america-social-work-perspectives-on-a-changing-society.md)**.  
+* 📚 **[👨‍👩‍👧‍👦🇺🇸 Fatherhood in America: Social Work Perspectives on a Changing Society](./fatherhood-in-america-social-work-perspectives-on-a-changing-society.md)**.  
 * 📚 ***American Fatherhood: A History*** by Jürgen Martschukat: This 📖 book offers a broader historical perspective on American fatherhood from the Revolution to the 🗓️ 21st century, deconstructing the myth of the nuclear family through biographical close-ups of diverse fathers.  
-* **[👨‍🍼🫂 Nurturing Dads: Social Initiatives for Contemporary Fatherhood](/content/books/nurturing-dads-social-initiatives-for-contemporary-fatherhood.md)** by William Marsiglio and Kevin Roy: This work explores contemporary fatherhood through firsthand accounts of over three hundred men, challenging the traditional "provide and reside" model and emphasizing the importance of the emotional father-child relationship and flexible involvement. It examines how new initiatives can address challenges men face and foster more meaningful engagement between diverse fathers and their children.  
+* **[👨‍🍼🫂 Nurturing Dads: Social Initiatives for Contemporary Fatherhood](./nurturing-dads-social-initiatives-for-contemporary-fatherhood.md)** by William Marsiglio and Kevin Roy: This work explores contemporary fatherhood through firsthand accounts of over three hundred men, challenging the traditional "provide and reside" model and emphasizing the importance of the emotional father-child relationship and flexible involvement. It examines how new initiatives can address challenges men face and foster more meaningful engagement between diverse fathers and their children.  
 * 📚 ***The Social History of the American Family: An Encyclopedia*** edited by Marilyn Coleman and Lawrence Ganong: This multi-volume set explores the vital role of the family as a fundamental social unit throughout American history, examining evolving structures, life, and transitions across different contexts.  
 * 📚 ***Making Men into Fathers: Men, Masculinities and the Social Politics of Fatherhood*** by Barbara Hobson and David Morgan: This 📖 book delves into the social and political aspects of fatherhood and 💪 masculinity.  
   
@@ -58,5 +58,5 @@ The 📖 book provides a historical 📜 overview before delving into the change
 * 📚 ***Homeward Bound: American Families in the Cold War Era*** by Elaine Tyler May: This cultural history examines American family life during the Cold War, exploring how the era's anxieties influenced domesticity, gender roles, and family structures. This provides broader context for understanding the forces that shaped fatherhood in the latter half of the 🗓️ 20th century.  
 * 📚 ***Manliness & Civilization: A Cultural History of Gender and Race in the United States, 1880-1917*** by Gail Bederman: This 📖 book explores the cultural history of gender and race, focusing on concepts of 💪 manliness, which can provide a deeper understanding of the historical context of masculinity and its relation to fatherhood.  
   
-## 💬 [Gemini](/content/software/gemini.md) Prompt (gemini-2.5-flash-preview-04-17)  
+## 💬 [Gemini](../software/gemini.md) Prompt (gemini-2.5-flash-preview-04-17)  
 > Write a markdown-formatted (start headings at level H2) book report, followed by a plethora of additional similar, contrasting, and creatively related book recommendations on American Fatherhood: A Cultural History. Be thorough in content discussed but concise and economical with your language. Structure the report with section headings and bulleted lists to avoid long blocks of text.

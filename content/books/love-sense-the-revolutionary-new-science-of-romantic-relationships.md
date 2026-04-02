@@ -7,7 +7,7 @@ share: true
 affiliate link: https://amzn.to/4ktDD3c
 updated: 2026-03-12T14:19:45.210Z
 ---
-[Home](/content/index.md) > [Books](/content/books/index.md)  
+[Home](../index.md) > [Books](./index.md)  
 # ❤️🧠 Love Sense: The Revolutionary New Science of Romantic Relationships  
 [🛒 Love Sense: The Revolutionary New Science of Romantic Relationships. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4ktDD3c)  
   
@@ -19,7 +19,7 @@ updated: 2026-03-12T14:19:45.210Z
   
 ### ❤️ Key Concepts  
   
-* **[🫂💖 Attachment Theory](/content/topics/attachment-theory.md):** A central theme is the application of attachment theory, originally describing the bond between infants and caregivers, to adult romantic relationships. 🤱 Johnson posits that romantic love is an attachment bond similar to that between a mother and child. 🏠 This bond provides a "safe haven" that reduces fear, stress, and emotional turmoil, while also offering a secure base from which individuals can confidently explore the world.  
+* **[🫂💖 Attachment Theory](../topics/attachment-theory.md):** A central theme is the application of attachment theory, originally describing the bond between infants and caregivers, to adult romantic relationships. 🤱 Johnson posits that romantic love is an attachment bond similar to that between a mother and child. 🏠 This bond provides a "safe haven" that reduces fear, stress, and emotional turmoil, while also offering a secure base from which individuals can confidently explore the world.  
 * 🤔 **The Logic of Love:** The book argues that love is not illogical but has a discernible logic rooted in our need for connection. 💔 Relationship problems often arise when partners no longer feel emotionally safe or connected, losing their sense of each other as a reliable "safe haven."  
 * 🫂 **Emotionally Focused Therapy (EFT):** As the developer of EFT, Johnson incorporates its principles throughout the book. 🔄 EFT focuses on identifying and changing negative interaction patterns that create disconnection and fostering new emotional experiences that build secure bonds.  
 * 🧠 **The Science of Emotion:** Johnson delves into the science behind emotion, exploring how it shapes our relationships, impacts the brain, and influences sexuality. 🥰 She highlights how emotional connection can regulate negative emotions and promote resilience.  
@@ -43,8 +43,8 @@ updated: 2026-03-12T14:19:45.210Z
   
 These books share *Love Sense*'s focus on attachment theory and the science of relationships, offering further insights into building secure connections.  
   
-* **[🫂 Hold Me Tight: Seven Conversations for a Lifetime of Love](/content/books/hold-me-tight-seven-conversations-for-a-lifetime-of-love.md) by Sue Johnson:** Written by the same author, this book is a more direct self-help guide based on Emotionally Focused Therapy (EFT), providing specific conversations for couples to deepen their bond.  
-* **[🧑‍❤️‍🧑🔗 Attached: The New Science of Adult Attachment and How It Can Help You Find - and Keep - Love](/content/books/attached-the-new-science-of-adult-attachment-and-how-it-can-help-you-find-and-keep-love.md) by Amir Levine and Rachel Heller:** This book explores adult attachment styles (anxious, avoidant, and secure) and provides strategies for understanding your own style and navigating relationships with others based on their attachment patterns.  
+* **[🫂 Hold Me Tight: Seven Conversations for a Lifetime of Love](./hold-me-tight-seven-conversations-for-a-lifetime-of-love.md) by Sue Johnson:** Written by the same author, this book is a more direct self-help guide based on Emotionally Focused Therapy (EFT), providing specific conversations for couples to deepen their bond.  
+* **[🧑‍❤️‍🧑🔗 Attached: The New Science of Adult Attachment and How It Can Help You Find - and Keep - Love](./attached-the-new-science-of-adult-attachment-and-how-it-can-help-you-find-and-keep-love.md) by Amir Levine and Rachel Heller:** This book explores adult attachment styles (anxious, avoidant, and secure) and provides strategies for understanding your own style and navigating relationships with others based on their attachment patterns.  
 * 👩‍⚕️ **The Practice of Emotionally Focused Couple Therapy: Creating Connection by Susan M. Johnson:** A more clinically oriented book detailing the EFT model for therapists working with couples.  
 * 👨‍👩‍👧‍👦 **Attachment Theory in Practice: Emotionally Focused Therapy (EFT) with Individuals, Couples, and Families by Susan M. Johnson:** This book expands on EFT to include individuals and families, offering a broader application of attachment principles in therapy.  
 * 🥰 **Love is Here to Stay: A Guide to Building Lasting Connections by Sara Johnson:** (Note: While a book with this exact title by Sara Johnson might not exist, a book focused on building lasting connections aligns with the themes of *Love Sense*).  
@@ -63,15 +63,15 @@ These books may offer different perspectives on love, relationships, or human co
   
 These books may not be directly about romantic relationships but offer creative connections through themes of human connection, vulnerability, personal growth, or the broader science of well-being.  
   
-* **[🦁🫀 Daring Greatly: How the Courage to Be Vulnerable Transforms the Way We Live, Love, Parent, and Lead](/content/books/daring-greatly-how-the-courage-to-be-vulnerable-transforms-the-way-we-live-love-parent-and-lead.md) by Brené Brown:** Brown's work on vulnerability and shame resonates strongly with the emotional openness encouraged in EFT and *Love Sense*, highlighting the courage required for genuine connection.  
+* **[🦁🫀 Daring Greatly: How the Courage to Be Vulnerable Transforms the Way We Live, Love, Parent, and Lead](./daring-greatly-how-the-courage-to-be-vulnerable-transforms-the-way-we-live-love-parent-and-lead.md) by Brené Brown:** Brown's work on vulnerability and shame resonates strongly with the emotional openness encouraged in EFT and *Love Sense*, highlighting the courage required for genuine connection.  
 * 🧘 **The Power of Now: A Guide to Spiritual Enlightenment by Eckhart Tolle:** While spiritual in nature, Tolle's emphasis on presence and mindfulness can be creatively related to the idea of being emotionally available and responsive within a relationship, a key component of secure attachment.  
 * 🤫 **Quiet: The Power of Introverts in a World That Can't Stop Talking by Susan Cain:** This book explores the strengths of introversion, which can offer a different perspective on communication and interaction styles within relationships compared to potentially more extrusively focused relationship advice.  
 * 🧑‍🎨 **The Art of Loving by Erich Fromm:** A classic work that examines love as an art, requiring knowledge, effort, and practice. 💖 It explores different forms of love beyond the romantic, offering a broader philosophical context.  
 * 🕰️ **The Time Traveler's Wife by Audrey Niffenegger:** A novel that, through a fantastical premise, explores the challenges and enduring nature of a passionate love and attachment bond tested by extraordinary circumstances.  
 * 🔥 **Come Together: The Science (and Art!) of Creating Lasting Sexual Connections by Emily Nagoski:** Focusing specifically on sexual connection within long-term relationships, this book complements *Love Sense*'s broader scope by delving into the science and practice of maintaining a fulfilling sexual relationship.  
-* **[🤕🎼🧠 The Body Keeps the Score: Brain, Mind, and Body in the Healing of Trauma](/content/books/the-body-keeps-the-score-brain-mind-and-body-in-the-healing-of-trauma.md) by Bessel van der Kolk:** This book explores the impact of trauma on the brain and body, which can profoundly affect an individual's ability to form secure attachments and engage in healthy relationships. 🧠 It provides a deeper understanding of potential underlying challenges individuals may face.".  
+* **[🤕🎼🧠 The Body Keeps the Score: Brain, Mind, and Body in the Healing of Trauma](./the-body-keeps-the-score-brain-mind-and-body-in-the-healing-of-trauma.md) by Bessel van der Kolk:** This book explores the impact of trauma on the brain and body, which can profoundly affect an individual's ability to form secure attachments and engage in healthy relationships. 🧠 It provides a deeper understanding of potential underlying challenges individuals may face.".  
   
-## 💬 [Gemini](/content/software/gemini.md) Prompt (gemini-2.5-flash-preview-04-17)  
+## 💬 [Gemini](../software/gemini.md) Prompt (gemini-2.5-flash-preview-04-17)  
 > Write a markdown-formatted (start headings at level H2) book report, followed by a plethora of additional similar, contrasting, and creatively related book recommendations on Love Sense: The Revolutionary New Science of Romantic Relationships. Be thorough in content discussed but concise and economical with your language. Structure the report with section headings and bulleted lists to avoid long blocks of text.  
   
 ## 🦋 Bluesky    

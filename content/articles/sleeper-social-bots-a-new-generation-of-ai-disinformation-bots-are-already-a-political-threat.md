@@ -7,7 +7,7 @@ URL: https://bagrounds.org/articles/sleeper-social-bots-a-new-generation-of-ai-d
 Author:
 tags:
 ---
-[Home](/content/index.md) > [Articles](/content/articles/index.md)  
+[Home](../index.md) > [Articles](./index.md)  
 # [🤖😴📢🗳️ Sleeper Social Bots: A New Generation of AI Disinformation Bots are Already a Political Threat](https://arxiv.org/pdf/2408.12603)  
   
 ## 🤖 AI Summary  
@@ -64,9 +64,9 @@ A: 🕵️ Identifying these advanced, LLM-driven bots is a _tedious and frustra
   
 ### Similar Books  
   
-- [📱🗳️📉🩺 The Hype Machine: How Social Media Disrupts Our Elections, Our Economy, and Our Health - and How We Must Adapt](/content/books/the-hype-machine-how-social-media-disrupts-our-elections-our-economy-and-our-health-and-how-we-must-adapt.md). This book offers a _data-driven overview_ of social media's impact, aligning with the paper's empirical approach by looking at how technology disrupts elections and society.  
+- [📱🗳️📉🩺 The Hype Machine: How Social Media Disrupts Our Elections, Our Economy, and Our Health - and How We Must Adapt](../books/the-hype-machine-how-social-media-disrupts-our-elections-our-economy-and-our-health-and-how-we-must-adapt.md). This book offers a _data-driven overview_ of social media's impact, aligning with the paper's empirical approach by looking at how technology disrupts elections and society.  
   
-- 🌐 [📱📢🤖 Computational Propaganda: Political Parties, Politicians, and Political Manipulation on Social Media](/content/books/computational-propaganda-political-parties-politicians-and-political-manipulation-on-social-media.md). This work provides the _historical and theoretical context_ for the paper, detailing the rise of algorithms and automation in political communication globally, which directly precedes the LLM bot era.  
+- 🌐 [📱📢🤖 Computational Propaganda: Political Parties, Politicians, and Political Manipulation on Social Media](../books/computational-propaganda-political-parties-politicians-and-political-manipulation-on-social-media.md). This work provides the _historical and theoretical context_ for the paper, detailing the rise of algorithms and automation in political communication globally, which directly precedes the LLM bot era.  
   
 ### Contrasting Perspectives  
   

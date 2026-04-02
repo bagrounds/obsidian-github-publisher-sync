@@ -10,7 +10,7 @@ Channel: PBS NewsHour
 tags:
 youtube: https://youtu.be/dTItqH0WsWY
 ---
-[Home](/content/index.md) > [Videos](/content/videos/index.md)  
+[Home](../index.md) > [Videos](./index.md)  
 # ⚕️🗣️💊 Health experts respond to Trump's claims linking autism to acetaminophen  
 ![Health experts respond to Trump's claims linking autism to acetaminophen](https://youtu.be/dTItqH0WsWY)  
   
@@ -53,5 +53,5 @@ youtube: https://youtu.be/dTItqH0WsWY
 ## 📚 **Book Recommendations**  
   
 * *NeuroTribes: The Legacy of Autism and the Future of Neurodiversity* by Steve Silberman. **Description:** 🌍 Provides an extensive historical context on the understanding of autism and the development of the neurodiversity movement.  
-* [🧪👎 Bad Science: Quacks, Hacks, and Big Pharma Flacks](/content/books/bad-science-quacks-hacks-and-big-pharma-flacks.md) by Ben Goldacre. **Description:** 🧪 Critiques the misuse, misrepresentation, and poor reporting of scientific studies by the media and public figures, a theme central to the video's evaluation of evidence.  
-* [💀👨‍🏫 The Death of Expertise: The Campaign Against Established Knowledge and Why It Matters](/content/books/the-death-of-expertise-the-campaign-against-established-knowledge-and-why-it-matters.md) by Tom Nichols. **Description:** 💡 Explores the societal and political trend of distrusting experts and institutions, which provides context for why public health officials might be contradicting medical consensus.
+* [🧪👎 Bad Science: Quacks, Hacks, and Big Pharma Flacks](../books/bad-science-quacks-hacks-and-big-pharma-flacks.md) by Ben Goldacre. **Description:** 🧪 Critiques the misuse, misrepresentation, and poor reporting of scientific studies by the media and public figures, a theme central to the video's evaluation of evidence.  
+* [💀👨‍🏫 The Death of Expertise: The Campaign Against Established Knowledge and Why It Matters](../books/the-death-of-expertise-the-campaign-against-established-knowledge-and-why-it-matters.md) by Tom Nichols. **Description:** 💡 Explores the societal and political trend of distrusting experts and institutions, which provides context for why public health officials might be contradicting medical consensus.

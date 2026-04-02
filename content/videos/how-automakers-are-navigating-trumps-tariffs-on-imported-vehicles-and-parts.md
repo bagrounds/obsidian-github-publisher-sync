@@ -9,7 +9,7 @@ Platform:
 Channel: PBS NewsHour
 tags:
 ---
-[Home](/content/index.md) > [Videos](/content/videos/index.md)  
+[Home](../index.md) > [Videos](./index.md)  
 # How automakers are navigating Trump’s tariffs on imported vehicles and parts  
 ![How automakers are navigating Trump’s tariffs on imported vehicles and parts](https://youtu.be/UxdHZEYEY4A)  
   

@@ -6,8 +6,11 @@ URL: https://bagrounds.org/books/a-brief-history-of-everyone-who-ever-lived
 share: true
 affiliate link: https://amzn.to/3Irost0
 CTA: Decode ancestry.
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_time: 2026-04-02T00:00:00Z
+force_analyze_links: false
 ---
-[Home](/content/index.md) > [Books](/content/books/index.md)  
+[Home](../index.md) > [Books](./index.md)  
 # 📜🌍👥 A Brief History of Everyone Who Ever Lived  
 [🛒 A Brief History of Everyone Who Ever Lived. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3Irost0)  
   
@@ -53,18 +56,18 @@ CTA: Decode ancestry.
   
 ### ⚖️ Contrasting Books (Different Historical/Scientific Focus)  
   
-* **[📜🌍⏳ Sapiens: A Brief History of Humankind](/content/books/sapiens-a-brief-history-of-humankind.md)** 👨‍🏫 **by Yuval Noah Harari:** 🌍 While also a history of humanity, *Sapiens* focuses more on cognitive, agricultural, and scientific revolutions and the development of human societies and cultures, offering a broader historical and philosophical perspective compared to Rutherford's genetic focus.  
-* **[🔫🦠🔩 Guns, Germs, and Steel: The Fates of Human Societies](/content/books/guns-germs-and-steel-the-fates-of-human-societies.md)** 👨‍🏫 **by Jared Diamond:** 🌍 Explores how environmental and geographical factors, rather than genetics, contributed to the rise of different civilizations, offering a contrasting materialist perspective on historical inequality.  
+* **[📜🌍⏳ Sapiens: A Brief History of Humankind](./sapiens-a-brief-history-of-humankind.md)** 👨‍🏫 **by Yuval Noah Harari:** 🌍 While also a history of humanity, *Sapiens* focuses more on cognitive, agricultural, and scientific revolutions and the development of human societies and cultures, offering a broader historical and philosophical perspective compared to Rutherford's genetic focus.  
+* **[🔫🦠🔩 Guns, Germs, and Steel: The Fates of Human Societies](./guns-germs-and-steel-the-fates-of-human-societies.md)** 👨‍🏫 **by Jared Diamond:** 🌍 Explores how environmental and geographical factors, rather than genetics, contributed to the rise of different civilizations, offering a contrasting materialist perspective on historical inequality.  
 * 📚 ***The Secret of Our Success: How Culture Is Driving Human Evolution, Domesticating Our Species, and Making Us Smarter*** 👨‍🏫 **by Joseph Henrich:** 🗣️ Argues that cultural evolution and our ability to learn from others have been the primary drivers of human success, offering a counterpoint to purely genetic explanations.  
 * 📚 ***At the Water's Edge: Fish with Fingers, Whales with Legs, and How Life Came Ashore But Then Went Back to Sea*** 👨‍🔬 **by Carl Zimmer:** 🌊 While still science, this book focuses on major evolutionary transitions in the broader tree of life, rather than solely on human history and genetics.  
   
 ### ✨ Creatively Related Books (Themes of Connection, Identity, Deep Time)  
   
 * 📚 ***Cloud Atlas*** ✍️ **by David Mitchell:** 📖 A novel that weaves together interconnected stories across different time periods, exploring themes of how actions in one era can resonate and influence others throughout history.  
-* **[🍄🌍🧠🔮 Entangled Life: How Fungi Make Our Worlds, Change Our Minds & Shape Our Futures](/content/books/entangled-life-how-fungi-make-our-worlds-change-our-minds-shape-our-futures.md)** 🍄 **by Merlin Sheldrake:** 🌍 Explores the fascinating and interconnected world of fungi, highlighting the hidden biological networks that underpin life on Earth and offering a different perspective on biological interconnectedness.  
+* **[🍄🌍🧠🔮 Entangled Life: How Fungi Make Our Worlds, Change Our Minds & Shape Our Futures](./entangled-life-how-fungi-make-our-worlds-change-our-minds-shape-our-futures.md)** 🍄 **by Merlin Sheldrake:** 🌍 Explores the fascinating and interconnected world of fungi, highlighting the hidden biological networks that underpin life on Earth and offering a different perspective on biological interconnectedness.  
 * 📚 ***The Immortal Life of Henrietta Lacks*** 👩‍⚕️ **by Rebecca Skloot:** 🧬 Tells the story of Henrietta Lacks and the immortal cell line (HeLa) derived from her tissues, raising profound ethical questions about genetics, identity, race, and the ownership of biological material.  
 * 📚 ***Underland: A Deep Time Journey*** 🌍 **by Robert Macfarlane:** ⛰️ A lyrical exploration of the world beneath our feet, delving into geological time, deep history, and our relationship with the Earth, providing a sense of immense temporal scale akin to genetic deep history.  
 * 📚 ***Orlando*** 🎭 **by Virginia Woolf:** ⏳ A novel that follows a protagonist who lives for centuries and changes sex, offering a fluid and unconventional look at identity, history, and change over long periods.  
   
-## 💬 [Gemini](/content/software/gemini.md) Prompt (gemini-2.5-flash-preview-04-17)  
+## 💬 [Gemini](../software/gemini.md) Prompt (gemini-2.5-flash-preview-04-17)  
 > Write a markdown-formatted (start headings at level H2) book report, followed by a plethora of additional similar, contrasting, and creatively related book recommendations on A Brief History of Everyone Who Ever Lived. Be thorough in content discussed but concise and economical with your language. Structure the report with section headings and bulleted lists to avoid long blocks of text.

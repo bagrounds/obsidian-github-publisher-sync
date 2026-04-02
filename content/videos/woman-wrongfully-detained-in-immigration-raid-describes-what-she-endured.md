@@ -10,7 +10,7 @@ Channel: PBS NewsHour
 tags:
 youtube: https://youtu.be/AmfpngmLIzQ
 ---
-[Home](/content/index.md) > [Videos](/content/videos/index.md)  
+[Home](../index.md) > [Videos](./index.md)  
 # 👩‍⚖️🔒🗣️ Woman wrongfully detained in immigration raid describes what she endured  
 ![Woman wrongfully detained in immigration raid describes what she endured](https://youtu.be/AmfpngmLIzQ)  
   
@@ -29,7 +29,7 @@ Here are the specific issues covered:
 This video presents a 👩‍⚖️ legal and personal perspective on a specific incident of alleged wrongful detention by ICE. To better understand this issue, it's helpful to consider 🧐 other perspectives. An 👮 official law enforcement perspective might argue that agents were operating within their legal authority to maintain public safety during a raid and that Velez's actions were perceived as interference. A deeper exploration could focus on the specific legal precedents that govern ICE's authority, the rights of U.S. citizens during immigration enforcement actions, and the 🔍 effectiveness and legality of "catch and release" tactics. A journalist's perspective might involve investigating similar cases to determine if Velez's experience is part of a 🔄 pattern or an isolated event. It would also be 📈 beneficial to research what happens after a claim is filed against the federal government and how frequently such cases result in a payout or change in policy.  
   
 ## 📚 Book Recommendations  
-* [🧑🏿⛓️🙈 The New Jim Crow: Mass Incarceration in the Age of Colorblindness](/content/books/the-new-jim-crow-mass-incarceration-in-the-age-of-colorblindness.md) by Michelle Alexander 📖 explores how the U.S. justice system, through mass incarceration, perpetuates racial hierarchy, offering a broad social and historical context for issues of race and law enforcement.  
+* [🧑🏿⛓️🙈 The New Jim Crow: Mass Incarceration in the Age of Colorblindness](../books/the-new-jim-crow-mass-incarceration-in-the-age-of-colorblindness.md) by Michelle Alexander 📖 explores how the U.S. justice system, through mass incarceration, perpetuates racial hierarchy, offering a broad social and historical context for issues of race and law enforcement.  
 * A Well-Regulated Militia by James B. Jacobs 📖 provides a detailed look into the legal and political debates surrounding the Second Amendment, offering a contrasting perspective on how individual rights and government power are interpreted in different contexts.  
 * The Great Derangement by Amitav Ghosh 📖 creatively connects the topics of climate change, history, and fiction, and in a similar vein, could prompt a discussion on how large-scale, seemingly uncontrollable forces (like climate change or immigration) impact individual lives and are represented in literature.  
 * Bordered by Sarah G. W. Smith 📖 offers a collection of personal stories and essays from people living on or near borders, providing a different perspective on immigration and citizenship.  

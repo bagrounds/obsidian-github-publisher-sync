@@ -10,7 +10,7 @@ Channel: Big Think
 tags:
 youtube: https://youtu.be/-gfqi6ztHgw
 ---
-[Home](/content/index.md) > [Videos](/content/videos/index.md)  
+[Home](../index.md) > [Videos](./index.md)  
 # 🗣️🛠️☮️ A simple tool for better communication during toxic conflict | Amanda Ripley  
 ![A simple tool for better communication during toxic conflict | Amanda Ripley](https://youtu.be/-gfqi6ztHgw)  
   
@@ -41,10 +41,10 @@ youtube: https://youtu.be/-gfqi6ztHgw
   
 ## 📚 Book Recommendations  
 * **📖 High Conflict: Why We Get Trapped and How We Get Out** by Amanda Ripley: **📚** This is the author's own book, which contains the deep reporting, detailed case studies, and practical steps (like **looping**) that form the basis of the video's concepts \[[07:16](http://www.youtube.com/watch?v=-gfqi6ztHgw&t=436)].  
-* **[👉🤝 Getting to Yes: Negotiating Agreement Without Giving In](/content/books/getting-to-yes-negotiating-agreement-without-giving-in.md)** by Roger Fisher and William Ury: **🤝** This offers the classic, foundational framework for **interest-based negotiation**, which is the rational counterpart to the emotional concept of the **understory** \[[03:05](http://www.youtube.com/watch?v=-gfqi6ztHgw&t=185)].  
+* **[👉🤝 Getting to Yes: Negotiating Agreement Without Giving In](../books/getting-to-yes-negotiating-agreement-without-giving-in.md)** by Roger Fisher and William Ury: **🤝** This offers the classic, foundational framework for **interest-based negotiation**, which is the rational counterpart to the emotional concept of the **understory** \[[03:05](http://www.youtube.com/watch?v=-gfqi6ztHgw&t=185)].  
 * **💖 The Seven Principles for Making Marriage Work** by John M. Gottman and Nan Silver: **🔢** This empirically-based book details the research behind the **Magic Ratio** (5:1 positive-to-negative interactions), providing scientific support for building the "buffer of goodwill" needed for healthy conflict \[[02:00:59](http://www.youtube.com/watch?v=-gfqi6ztHgw&t=7259)].  
-* **[🤔🐇🐢 Thinking, Fast and Slow](/content/books/thinking-fast-and-slow.md)** by Daniel Kahneman: **🧠** This provides a broader, essential understanding of the cognitive shortcuts and systemic biases, such as the **Fundamental Attribution Error**, that impair judgment and lead to the poor decisions mentioned during high conflict \[[06:58](http://www.youtube.com/watch?v=-gfqi6ztHgw&t=418)].  
-* **[🕊️🤝 Nonviolent Communication: A Language of Life](/content/books/nonviolent-communication.md)** by Marshall B. Rosenberg: **💬** This comprehensive methodology offers a structured process for identifying and articulating universal **needs** (similar to the understory) and feelings, providing an alternative, complete system for managing communication under duress.  
+* **[🤔🐇🐢 Thinking, Fast and Slow](../books/thinking-fast-and-slow.md)** by Daniel Kahneman: **🧠** This provides a broader, essential understanding of the cognitive shortcuts and systemic biases, such as the **Fundamental Attribution Error**, that impair judgment and lead to the poor decisions mentioned during high conflict \[[06:58](http://www.youtube.com/watch?v=-gfqi6ztHgw&t=418)].  
+* **[🕊️🤝 Nonviolent Communication: A Language of Life](../books/nonviolent-communication.md)** by Marshall B. Rosenberg: **💬** This comprehensive methodology offers a structured process for identifying and articulating universal **needs** (similar to the understory) and feelings, providing an alternative, complete system for managing communication under duress.  
   
 ## 🐦 Tweet  
 <blockquote class="twitter-tweet" data-theme="dark"><p lang="en" dir="ltr">🗣️🛠️☮️ A simple tool for better communication during toxic conflict | Amanda Ripley<br><br>👂 Active Listening | 🧠 Cognitive Biases | 💖 Relationships | 📚 Book Recommendations | 🌐 Understory | 🚦 Tripwires | 🔢 Magic Ratio<a href="https://twitter.com/amandaripley?ref_src=twsrc%5Etfw">@amandaripley</a><a href="https://t.co/NgM4FwDk1S">https://t.co/NgM4FwDk1S</a></p>&mdash; Bryan Grounds (@bagrounds) <a href="https://twitter.com/bagrounds/status/1971296791682482287?ref_src=twsrc%5Etfw">September 25, 2025</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>

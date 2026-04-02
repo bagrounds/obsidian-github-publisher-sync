@@ -10,7 +10,7 @@ Channel: PBS NewsHour
 tags:
 youtube: https://youtu.be/K6LPvk6VF9w
 ---
-[Home](/content/index.md) > [Videos](/content/videos/index.md)  
+[Home](../index.md) > [Videos](./index.md)  
 # 🔒✈️🍔 Longest shutdown on record disrupts air travel and food assistance for Americans  
 ![Longest shutdown on record disrupts air travel and food assistance for Americans](https://youtu.be/K6LPvk6VF9w)  
   
@@ -68,7 +68,7 @@ youtube: https://youtu.be/K6LPvk6VF9w
   
 ### ↔️ Similar  
   
-- [⚠️🥴🕹️🌐 The Fifth Risk](/content/books/the-fifth-risk.md) by Michael Lewis. 💼 Explores the critical, unheralded work done by government agencies (like those related to weather, food, and air travel) and the dangers when political transitions or budget impasses undermine them.  
+- [⚠️🥴🕹️🌐 The Fifth Risk](../books/the-fifth-risk.md) by Michael Lewis. 💼 Explores the critical, unheralded work done by government agencies (like those related to weather, food, and air travel) and the dangers when political transitions or budget impasses undermine them.  
   
 - 📚 Government Shutdowns: A Detailed History by Robert P. Watson. 📜 Provides a comprehensive history and analysis of past U.S. government shutdowns, detailing the political, legal, and operational failures that recur during these events.  
   
@@ -76,7 +76,7 @@ youtube: https://youtu.be/K6LPvk6VF9w
   
 - 📚 Why Government Fails and How to Fix It by Roger C. Altman. 💡 Offers a perspective on how the government can be reformed to increase efficiency, reduce waste, and potentially avoid the kind of dysfunction that leads to shutdowns.  
   
-- [🤕👶 The Coddling of the American Mind: How Good Intentions and Bad Ideas Are Setting Up a Generation for Failure](/content/books/the-coddling-of-the-american-mind-how-good-intentions-and-bad-ideas-are-setting-up-a-generation-for-failure.md) by Greg Lukianoff and Jonathan Haidt. 🛡️ While not directly about government, it explores the societal effects of over-protection and a lack of resilience, which can be contrasted with the essential, high-stress services federal employees perform during a shutdown.  
+- [🤕👶 The Coddling of the American Mind: How Good Intentions and Bad Ideas Are Setting Up a Generation for Failure](../books/the-coddling-of-the-american-mind-how-good-intentions-and-bad-ideas-are-setting-up-a-generation-for-failure.md) by Greg Lukianoff and Jonathan Haidt. 🛡️ While not directly about government, it explores the societal effects of over-protection and a lack of resilience, which can be contrasted with the essential, high-stress services federal employees perform during a shutdown.  
   
 ### 🎨 Creatively Related  
   

@@ -8,8 +8,11 @@ affiliate link: https://amzn.to/4oEQjpj
 CTA: 💰 Understand economics.
 tags:
   - MMT
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_time: 2026-04-01T00:00:00Z
+force_analyze_links: false
 ---
-[Home](/content/index.md) > [Books](/content/books/index.md)  
+[Home](../index.md) > [Books](./index.md)  
 # 🧑‍💼🏦💸 The General Theory of Employment, Interest, and Money  
 [🛒 The General Theory of Employment, Interest, and Money. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4oEQjpj)  
   
@@ -66,7 +69,7 @@ tags:
 * 📊 The IS-LM Model (Hicks-Hansen Synthesis)  
 * 📦 Supply-Side Economics  
 * 🎭 Behavioral Economics and its modern interpretation of animal spirits  
-* 🌐 [🏦♾️📈💸 Modern Monetary Theory (MMT)](/content/topics/modern-monetary-theory.md)  
+* 🌐 [🏦♾️📈💸 Modern Monetary Theory (MMT)](../topics/modern-monetary-theory.md)  
   
 ## ❓ Frequently Asked Questions (FAQ)  
   
@@ -88,19 +91,19 @@ tags:
 ## 📚 Book Recommendations  
   
 ### Similar Books  
-* [💰 Keynes: A Very Short Introduction](/content/books/keynes-a-very-short-introduction.md)  
+* [💰 Keynes: A Very Short Introduction](./keynes-a-very-short-introduction.md)  
 * 🛑 The End of Laissez-Faire  
 * 🕊️ The Economic Consequences of the Peace  
   
 ### Contrasting Books  
 * 🗽 Free to Choose  
 * 🛤️ The Road to Serfdom  
-* [🧑‍🤝‍🧑💰 Human Action: A Treatise on Economics](/content/books/human-action-a-treatise-on-economics.md)  
+* [🧑‍🤝‍🧑💰 Human Action: A Treatise on Economics](./human-action-a-treatise-on-economics.md)  
   
 ### Related Books  
-* [👉🤏 Nudge: Improving Decisions about Health, Wealth, and Happiness](/content/books/nudge.md)  
-* [🤔🐇🐢 Thinking, Fast and Slow](/content/books/thinking-fast-and-slow.md)  
-* [💰📈🌍⏳ Capital in the Twenty-First Century](/content/books/capital-in-the-twenty-first-century.md)  
+* [👉🤏 Nudge: Improving Decisions about Health, Wealth, and Happiness](./nudge.md)  
+* [🤔🐇🐢 Thinking, Fast and Slow](./thinking-fast-and-slow.md)  
+* [💰📈🌍⏳ Capital in the Twenty-First Century](./capital-in-the-twenty-first-century.md)  
   
 ## 🫵 What Do You Think?  
 🤔 Which of Keynes's arguments resonates most with current economic challenges? 🤔 Do you believe government intervention is always the optimal solution for managing aggregate demand, or are there situations where it could exacerbate problems? 🗣️ Share your insights below!.

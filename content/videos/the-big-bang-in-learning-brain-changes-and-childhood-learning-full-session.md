@@ -10,7 +10,7 @@ Channel: The Aspen Institute
 tags:
 youtube: https://youtu.be/4zgkSObH4dU
 ---
-[Home](/content/index.md) > [Videos](/content/videos/index.md)  
+[Home](../index.md) > [Videos](./index.md)  
 # 💥🧠👶 The «Big Bang» in Learning: Brain Changes and Childhood Learning (Full Session)  
 ![The «Big Bang» in Learning: Brain Changes and Childhood Learning (Full Session)](https://youtu.be/4zgkSObH4dU)  
   
@@ -28,18 +28,18 @@ youtube: https://youtu.be/4zgkSObH4dU
   
 ## 📚 Book Recommendations  
 ### For Early Childhood Brain Development and General Parenting  
-* **[🕳️🧠👶🏽 The Whole-Brain Child: 12 Revolutionary Strategies to Nurture Your Child's Developing Mind](/content/books/the-whole-brain-child.md)** by Daniel J. Siegel and Tina Payne Bryson: This popular book explains how a child's brain is wired and how it matures, offering practical strategies for parents to integrate different parts of their child's brain for healthier development.  
+* **[🕳️🧠👶🏽 The Whole-Brain Child: 12 Revolutionary Strategies to Nurture Your Child's Developing Mind](../books/the-whole-brain-child.md)** by Daniel J. Siegel and Tina Payne Bryson: This popular book explains how a child's brain is wired and how it matures, offering practical strategies for parents to integrate different parts of their child's brain for healthier development.  
 * **"Raising Mentally Strong Kids"** by Daniel G. Amen and Charles Fay: This book offers evidence-based strategies for parents to foster mental well-being in their children.  
-* **[👨‍👩‍👧‍👦🧠 Second Nature: How Parents Can Use Neuroscience to Help Kids Develop Empathy, Creativity, and Self-Control](/content/books/second-nature-how-parents-can-use-neuroscience-to-help-kids-develop-empathy-creativity-and-self-control.md)** by Erin Clabough: A neuroscientist and mother provides insights into how brain development research can help parents cultivate essential life skills in their children.  
+* **[👨‍👩‍👧‍👦🧠 Second Nature: How Parents Can Use Neuroscience to Help Kids Develop Empathy, Creativity, and Self-Control](../books/second-nature-how-parents-can-use-neuroscience-to-help-kids-develop-empathy-creativity-and-self-control.md)** by Erin Clabough: A neuroscientist and mother provides insights into how brain development research can help parents cultivate essential life skills in their children.  
   
 ### For Language Acquisition  
-* **[👶🗣️ How Babies Talk: The Magic and Mystery of Language in the First Three Years of Life](/content/books/how-babies-talk-the-magic-and-mystery-of-language-in-the-first-three-years-of-life.md)** by Kathy Hirsh-Pasek and Roberta Golinkoff: Written by developmental psychologists and language experts, this guide offers insights into how infants begin to learn language, even from the womb.  
-* **[🗣️🧠 The Language Instinct: How the Mind Creates Language](/content/books/the-language-instinct-how-the-mind-creates-language.md)** by Steven Pinker: A more in-depth look at the science behind language and how it's acquired.  
+* **[👶🗣️ How Babies Talk: The Magic and Mystery of Language in the First Three Years of Life](../books/how-babies-talk-the-magic-and-mystery-of-language-in-the-first-three-years-of-life.md)** by Kathy Hirsh-Pasek and Roberta Golinkoff: Written by developmental psychologists and language experts, this guide offers insights into how infants begin to learn language, even from the womb.  
+* **[🗣️🧠 The Language Instinct: How the Mind Creates Language](../books/the-language-instinct-how-the-mind-creates-language.md)** by Steven Pinker: A more in-depth look at the science behind language and how it's acquired.  
 * **"Child Language: Acquisition and Development"** by Matthew Saxton: A more academic resource for those interested in the theoretical aspects of child language development.  
   
 ### For Executive Function in Children  
-* **[🧠🧩📈🧑‍🏫 Smart but Scattered: The Revolutionary Executive Skills Approach to Helping Kids Reach Their Potential](/content/books/smart-but-scattered.md)** by Peg Dawson and Richard Guare: This book provides practical strategies for parents and educators to help children develop crucial executive function skills like organization, planning, and impulse control.  
-* **[🧠⚙️🐒💡 Executive Functions: What They Are, How They Work, and Why They Evolved](/content/books/executive-functions.md)** by Russell A. Barkley: A comprehensive look at executive functions, their mechanisms, and their evolutionary significance.  
+* **[🧠🧩📈🧑‍🏫 Smart but Scattered: The Revolutionary Executive Skills Approach to Helping Kids Reach Their Potential](../books/smart-but-scattered.md)** by Peg Dawson and Richard Guare: This book provides practical strategies for parents and educators to help children develop crucial executive function skills like organization, planning, and impulse control.  
+* **[🧠⚙️🐒💡 Executive Functions: What They Are, How They Work, and Why They Evolved](../books/executive-functions.md)** by Russell A. Barkley: A comprehensive look at executive functions, their mechanisms, and their evolutionary significance.  
 * **"Late, Lost, and Unprepared: A Parents' Guide to Helping Children with Executive Functioning"** by Joyce Cooper-Kahn and Laurie Dietzel: Written by clinical psychologists, this book aims to help children manage tasks and improve problem-solving.  
   
 ### For Social-Emotional Development  

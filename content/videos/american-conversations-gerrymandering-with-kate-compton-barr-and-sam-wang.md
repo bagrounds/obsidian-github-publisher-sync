@@ -10,7 +10,7 @@ Channel: Heather Cox Richardson
 tags:
 youtube: https://www.youtube.com/embed/ksAI4ypzvb0
 ---
-[Home](/content/index.md) > [Videos](/content/videos/index.md)  
+[Home](../index.md) > [Videos](./index.md)  
 # 🗺️✂️🏛️🗣️ American Conversations: Gerrymandering with Kate Compton Barr and Sam Wang  
 ![American Conversations: Gerrymandering with Kate Compton Barr and Sam Wang](https://www.youtube.com/embed/ksAI4ypzvb0)  
   
@@ -60,7 +60,7 @@ The video's central theme, that **partisan gerrymandering** is anti-democratic, 
   
 ### ↔️ Similar  
   
-* [🗳️⬇️🏛️ One Person, No Vote: How Voter Suppression Is Destroying Our Democracy](/content/books/one-person-no-vote-how-voter-suppression-is-destroying-our-democracy.md) by Carol Anderson. 📜 This book examines the history of **voter suppression** tactics beyond gerrymandering, detailing how laws and policies have been used to systematically block or dilute the votes of minority groups, which is closely related to the video's theme of **diminishing electoral competition**.  
+* [🗳️⬇️🏛️ One Person, No Vote: How Voter Suppression Is Destroying Our Democracy](../books/one-person-no-vote-how-voter-suppression-is-destroying-our-democracy.md) by Carol Anderson. 📜 This book examines the history of **voter suppression** tactics beyond gerrymandering, detailing how laws and policies have been used to systematically block or dilute the votes of minority groups, which is closely related to the video's theme of **diminishing electoral competition**.  
 * *Partisan Gerrymandering and the Construction of American Democracy* by Erik J. Engstrom. 🏛️ This offers a deep, historical analysis of **congressional redistricting** from the founding of the US up to the 1960s, showing how gerrymandering consistently shaped election outcomes and the partisan control of the House of Representatives.  
 * *Gerrymandering the States: Partisanship, Race, and the Transformation of American Federalism* by Alex Keena, Michael Latner, Anthony J. McGann, and Charles Anthony Smith. ⚖️ This book provides a contemporary analysis of the **redistricting wars** at the state legislative level, focusing on the role of partisanship and race, and is highly relevant to the speakers' concerns about state-level manipulation.  
   
@@ -73,7 +73,7 @@ The video's central theme, that **partisan gerrymandering** is anti-democratic, 
 ### 🎨 Creatively Related  
   
 * *The Politics Industry: How Political Innovation Can Break Partisan Gridlock and Save Our Democracy* by Katherine M. Gehl and Michael E. Porter. 💡 This book views the political system as a **dysfunctional industry** that requires **market-based innovation** to fix, such as using open primaries and ranked-choice voting, offering structural solutions that complement the goal of ending gerrymandering.  
-* [🗳️🇺🇸 The Right to Vote: The Contested History of Democracy in the United States](/content/books/the-right-to-vote-the-contested-history-of-democracy-in-the-united-states.md) by Alexander Keyssar. 📜 This provides a broad, contested **history of suffrage** in the U.S., placing the modern fight against gerrymandering in the long arc of struggles for a more inclusive democracy.  
+* [🗳️🇺🇸 The Right to Vote: The Contested History of Democracy in the United States](../books/the-right-to-vote-the-contested-history-of-democracy-in-the-united-states.md) by Alexander Keyssar. 📜 This provides a broad, contested **history of suffrage** in the U.S., placing the modern fight against gerrymandering in the long arc of struggles for a more inclusive democracy.  
 * *Bushmanders & Bullwinkles: How Politicians Manipulate Electronic Maps and Census Data to Win Elections* by Mark S. Monmonier. 💻 This book explores the **technology and data-driven methods** used by politicians, including the misuse of electronic maps and census data, offering a look behind the curtain at the tools of modern gerrymandering.  
   
 ## 🐦 Tweet  

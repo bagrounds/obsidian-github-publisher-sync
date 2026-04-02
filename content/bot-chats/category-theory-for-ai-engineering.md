@@ -5,16 +5,16 @@ aliases:
 title: 📐🔗🤖🧠 Category Theory for AI Engineering
 URL: https://bagrounds.org/bot-chats/category-theory-for-ai-engineering
 ---
-[Home](/content/index.md) > [Bot Chats](/content/bot-chats/index.md)  
+[Home](../index.md) > [Bot Chats](./index.md)  
 # 📐🔗🤖🧠 Category Theory for AI Engineering  
-## 💬 [Gemini](/content/software/gemini.md) Prompt 1  
+## 💬 [Gemini](../software/gemini.md) Prompt 1  
 > 💡 Think creatively and systematically.  
 📚 Consider the following books.  
 ✨ Generate novel ideas that arise from the combination of ideas across these books.  
 ✍️ Generate as many as you can and be succinct to allow for a long list.  
 🥇 Prioritize ideas that seem the most valuable and unique to this combination.  
->- [🤖🏗️ AI Engineering: Building Applications with Foundation Models](/content/books/ai-engineering-building-applications-with-foundation-models.md)  
->- [🧮➡️👩🏼‍💻 Category Theory for Programmers](/content/books/category-theory-for-programmers.md)  
+>- [🤖🏗️ AI Engineering: Building Applications with Foundation Models](../books/ai-engineering-building-applications-with-foundation-models.md)  
+>- [🧮➡️👩🏼‍💻 Category Theory for Programmers](../books/category-theory-for-programmers.md)  
   
 Here's a list of novel ideas arising from the combination of "AI Engineering: Building Applications with Foundation Models" and "Category Theory for Programmers," prioritized for value and uniqueness:  
   
@@ -238,15 +238,15 @@ You have a "summarization" task. One FM might prefer a prompt like "Summarize th
   
 **🤖 For a Deeper Dive into AI Engineering (especially with Foundation Models):**  
   
-1. **[🤖🏗️ AI Engineering: Building Applications with Foundation Models](/content/books/ai-engineering-building-applications-with-foundation-models.md) by Chip Huyen:** This is a direct hit, as it's one of the books that inspired our initial thinking. 📚 It's a highly practical guide to building real-world AI applications using FMs, covering the entire lifecycle from prompt engineering and RAG to fine-tuning, evaluation, and deployment. 🔑 Essential for understanding the "objects" (FMs) and many "morphisms" (operations) in our categorical framework.  
+1. **[🤖🏗️ AI Engineering: Building Applications with Foundation Models](../books/ai-engineering-building-applications-with-foundation-models.md) by Chip Huyen:** This is a direct hit, as it's one of the books that inspired our initial thinking. 📚 It's a highly practical guide to building real-world AI applications using FMs, covering the entire lifecycle from prompt engineering and RAG to fine-tuning, evaluation, and deployment. 🔑 Essential for understanding the "objects" (FMs) and many "morphisms" (operations) in our categorical framework.  
   
-2. **[🤖⚙️🔁 Designing Machine Learning Systems: An Iterative Process for Production-Ready Applications](/content/books/designing-machine-learning-systems-an-iterative-process-for-production-ready-applications.md) by Chip Huyen:** While not exclusively about FMs, this book provides a robust foundation in designing scalable and maintainable machine learning systems. 🧩 It covers crucial topics like data pipelines, deployment strategies, and overall software design principles for ML, which are all vital for constructing the "categories" and ensuring the "composition" of your AI systems.  
+2. **[🤖⚙️🔁 Designing Machine Learning Systems: An Iterative Process for Production-Ready Applications](../books/designing-machine-learning-systems-an-iterative-process-for-production-ready-applications.md) by Chip Huyen:** While not exclusively about FMs, this book provides a robust foundation in designing scalable and maintainable machine learning systems. 🧩 It covers crucial topics like data pipelines, deployment strategies, and overall software design principles for ML, which are all vital for constructing the "categories" and ensuring the "composition" of your AI systems.  
   
 3. 🗣️ **"The LLM Engineering Handbook" by Paul Iusztin and Maxime Labonne:** This book focuses specifically on Large Language Models (LLMs), a prominent type of Foundation Model. 🖐️ It provides hands-on guidance for building, fine-tuning, and deploying LLM applications, covering practical aspects like LangChain, OpenAI APIs, RAG, and evaluation. 🧪 This will give you concrete examples of the "morphisms" related to LLMs.  
   
 **📐 For a Strong Foundation in Category Theory for Programmers:**  
   
-4. 📚 **[🧮➡️👩🏼‍💻 Category Theory for Programmers](/content/books/category-theory-for-programmers.md) by Bartosz Milewski:** This is the other foundational book from your initial prompt. 👨‍💻 It's an excellent, accessible introduction to category theory for those with a programming background, making abstract concepts like functors, natural transformations, and monads tangible through code examples, primarily in Haskell. 🧠 It's crucial for understanding the formal language we're applying.  
+4. 📚 **[🧮➡️👩🏼‍💻 Category Theory for Programmers](../books/category-theory-for-programmers.md) by Bartosz Milewski:** This is the other foundational book from your initial prompt. 👨‍💻 It's an excellent, accessible introduction to category theory for those with a programming background, making abstract concepts like functors, natural transformations, and monads tangible through code examples, primarily in Haskell. 🧠 It's crucial for understanding the formal language we're applying.  
   
 5. 🔬 **"Category Theory for the Sciences" by David Spivak:** While a bit more mathematically rigorous than Milewski's, Spivak's book is specifically geared towards applying category theory to various scientific domains, including computer science. 🎓 It provides a deeper understanding of concepts like adjoint functors and operads, which can be immensely powerful for formalizing complex AI system architectures. 🏛️ He also has free MIT OpenCourseWare lectures accompanying the book.  
   

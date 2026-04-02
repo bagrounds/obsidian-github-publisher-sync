@@ -7,7 +7,7 @@ share: true
 CTA: 🧑‍💻 Empower AI.
 affiliate link: https://amzn.to/3HLE5eT
 ---
-[Home](/content/index.md) > [Books](/content/books/index.md)  
+[Home](../index.md) > [Books](./index.md)  
 # 🧑‍💻🤖 Human-in-the-Loop Machine Learning: Active learning and annotation for human-centered AI  
 [🛒 Human-in-the-Loop Machine Learning: Active learning and annotation for human-centered AI. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3HLE5eT)  
   
@@ -34,7 +34,7 @@ This 📖 book is primarily aimed at data scientists, 🤖 machine learning engi
   
 ### 📚 Similar Books  
   
-* **[🤖🧑‍🏫 Training Data for Machine Learning: Human Supervision from Annotation to Data Science](/content/books/training-data-for-machine-learning-human-supervision-from-annotation-to-data-science.md)** by Anthony Sarkis offers a comprehensive guide to working with and scaling training data, emphasizing the 🧑‍🤝‍🧑 human element in supervising machines for AI success. It covers schemas, raw data, annotations, and addresses issues like data bias, aligning closely with the annotation and 🧑‍🤝‍🧑 human supervision themes.  
+* **[🤖🧑‍🏫 Training Data for Machine Learning: Human Supervision from Annotation to Data Science](./training-data-for-machine-learning-human-supervision-from-annotation-to-data-science.md)** by Anthony Sarkis offers a comprehensive guide to working with and scaling training data, emphasizing the 🧑‍🤝‍🧑 human element in supervising machines for AI success. It covers schemas, raw data, annotations, and addresses issues like data bias, aligning closely with the annotation and 🧑‍🤝‍🧑 human supervision themes.  
 * 📖 **Active Learning** by Burr Settles outlines various scenarios for formulating queries and details numerous query selection algorithms. It delves into the theoretical foundations of active learning, a core component of 🧑‍🤝‍🧑 Human-in-the-Loop Machine Learning.  
 * 📖 **Data Labeling in Machine Learning with Python** focuses specifically on the technical aspects of data labeling, including annotating and preparing diverse datasets like text, image, and audio files using Python. It bridges the gap between raw data and intelligent AI systems, providing practical skills for data annotation and analysis.  
   
@@ -47,9 +47,9 @@ This 📖 book is primarily aimed at data scientists, 🤖 machine learning engi
 ### 📚 Creatively Related Books  
   
 * 📖 **The Ethical Algorithm: The Science of Socially Aware Algorithm Design** by Aaron Roth and Michael Kearns explores the design of algorithms that are socially aware and ethical. It delves into the science of building algorithms that consider fairness, privacy, and accountability, providing a critical perspective on the societal impact of AI that complements the technical aspects of 🧑‍🤝‍🧑 Human-in-the-Loop Machine Learning.  
-* **[🤖🧑‍ Human Compatible: Artificial Intelligence and the Problem of Control](/content/books/human-compatible-artificial-intelligence-and-the-problem-of-control.md)** by Stuart Russell addresses the fundamental challenge of ensuring that AI systems remain beneficial and aligned with 🧑‍🤝‍🧑 human values as their capabilities grow. It tackles the "control problem" in AI, offering a high-level, critical examination of the future of humanity with advanced AI, which underscores the necessity of 🧑‍🤝‍🧑 human oversight and value alignment discussed in 🧑‍🤝‍🧑 Human-in-the-Loop Machine Learning.  
+* **[🤖🧑‍ Human Compatible: Artificial Intelligence and the Problem of Control](./human-compatible-artificial-intelligence-and-the-problem-of-control.md)** by Stuart Russell addresses the fundamental challenge of ensuring that AI systems remain beneficial and aligned with 🧑‍🤝‍🧑 human values as their capabilities grow. It tackles the "control problem" in AI, offering a high-level, critical examination of the future of humanity with advanced AI, which underscores the necessity of 🧑‍🤝‍🧑 human oversight and value alignment discussed in 🧑‍🤝‍🧑 Human-in-the-Loop Machine Learning.  
 * 📖 **Atlas of AI: Power, Politics, and the Planetary Costs of Artificial Intelligence** by Kate Crawford offers a critical examination of the hidden costs and implications of AI, exploring its environmental impact, political dimensions, and the power structures it reinforces. It provides a macro-level, socio-political context to AI development, highlighting why a 🧑‍🤝‍🧑 human-centered approach and ethical considerations are vital beyond just technical accuracy.  
 * 📖 **The Political Philosophy of AI: An Introduction** by Mark Coeckelbergh provides an accessible introduction to the political challenges of AI, using political philosophy to explore issues like justice, discrimination, democracy, and surveillance impacted by emerging AI technologies. It frames AI as inherently political, offering a conceptual toolbox to understand the "artificial power" of AI, making it creatively related by providing a deeper, ethical, and societal framework for the practical 🧑‍🤝‍🧑 human-in-the-loop approaches.  
   
-## 💬 [Gemini](/content/software/gemini.md) Prompt (gemini-2.5-flash)  
+## 💬 [Gemini](../software/gemini.md) Prompt (gemini-2.5-flash)  
 > Write a markdown-formatted (start headings at level H2) book report, followed by similar, contrasting, and creatively related book recommendations on Human-in-the-Loop Machine Learning: Active learning and annotation for human-centered AI. Never put book titles in quotes or italics. Be thorough in content discussed but concise and economical with your language. Structure the report with section headings and bulleted lists to avoid long blocks of text.

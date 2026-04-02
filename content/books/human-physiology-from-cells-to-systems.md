@@ -6,7 +6,7 @@ URL: https://bagrounds.org/books/human-physiology-from-cells-to-systems
 share: true
 affiliate link: https://amzn.to/3SZ9TyW
 ---
-[Home](/content/index.md) > [Books](/content/books/index.md)  
+[Home](../index.md) > [Books](./index.md)  
 # 🧑‍⚕️🧩 Human Physiology: From Cells to Systems  
 [🛒 Human Physiology: From Cells to Systems. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3SZ9TyW)  
   
@@ -79,7 +79,7 @@ affiliate link: https://amzn.to/3SZ9TyW
 * 📰 **Popular Science Books about the Body:** 📖 Many books for general readers explore fascinating aspects of human biology, disease, or the latest physiological research in an engaging and non-textbook format. (Specific titles would vary widely but represent a valid category).  
 * 🧬 **Texts on Cellular and Molecular Biology:** 🦠 Given the "Cells to Systems" approach, books focusing specifically on cell biology, biochemistry, or molecular biology provide essential foundational knowledge for understanding physiological mechanisms at the smallest scales. (Specific titles would depend on the desired level of detail).  
   
-## 💬 [Gemini](/content/software/gemini.md) Prompt (gemini-2.5-flash-preview-04-17)  
+## 💬 [Gemini](../software/gemini.md) Prompt (gemini-2.5-flash-preview-04-17)  
 > Write a markdown-formatted (start headings at level H2) book report, followed by a plethora of additional similar, contrasting, and creatively related book recommendations on Human Physiology: From Cells to Systems. Be thorough in content discussed but concise and economical with your language. Structure the report with section headings and bulleted lists to avoid long blocks of text.  
   
 ## 🐦 Tweet  

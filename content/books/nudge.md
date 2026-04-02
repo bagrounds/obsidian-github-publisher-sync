@@ -8,8 +8,11 @@ Author:
 tags:
 affiliate link: https://amzn.to/3ZLXT7C
 CTA: 🍎 Choose wisely.
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_time: 2026-04-01T00:00:00Z
+force_analyze_links: false
 ---
-[Home](/content/index.md) > [Books](/content/books/index.md)  
+[Home](../index.md) > [Books](./index.md)  
 # 👉🤏 Nudge: Improving Decisions about Health, Wealth, and Happiness  
 [🛒 Nudge: Improving Decisions about Health, Wealth, and Happiness. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3ZLXT7C)  
   
@@ -57,9 +60,9 @@ Nudge: Improving Decisions About Health, Wealth, and Happiness argues that by un
 * Simplify complex choices, and make information easier to understand.  
   
 **Book Recommendations:** 📚  
-* **Best Alternate Book on the Same Topic:** [🤔🐇🐢 Thinking, Fast and Slow](/content/books/thinking-fast-and-slow.md) by Daniel Kahneman. This book provides a deeper dive into the cognitive biases that underlie human decision-making. 🧠  
-* **Best Tangentially Related Book:** [Predictably Irrational](/content/books/predictably-irrational.md) by Dan Ariely. This book explores the ways in which people make irrational decisions in various aspects of their lives. 🤯  
-* **Best Diametrically Opposed Book:** [🤓🕵️‍♂️❓ Freakonomics: A Rogue Economist Explores the Hidden Side of Everything](/content/books/freakonomics.md) by Steven D. Levitt and Stephen J. Dubner. While "Nudge" focuses on subtle interventions, "Freakonomics" often explores how incentives and disincentives drive behavior in unexpected ways. 💰  
+* **Best Alternate Book on the Same Topic:** [🤔🐇🐢 Thinking, Fast and Slow](./thinking-fast-and-slow.md) by Daniel Kahneman. This book provides a deeper dive into the cognitive biases that underlie human decision-making. 🧠  
+* **Best Tangentially Related Book:** [Predictably Irrational](./predictably-irrational.md) by Dan Ariely. This book explores the ways in which people make irrational decisions in various aspects of their lives. 🤯  
+* **Best Diametrically Opposed Book:** [🤓🕵️‍♂️❓ Freakonomics: A Rogue Economist Explores the Hidden Side of Everything](./freakonomics.md) by Steven D. Levitt and Stephen J. Dubner. While "Nudge" focuses on subtle interventions, "Freakonomics" often explores how incentives and disincentives drive behavior in unexpected ways. 💰  
 * **Best Fiction Book That Incorporates Related Ideas:** "The Circle" by Dave Eggers. This novel explores the potential dangers of excessive transparency and social influence, which are relevant to the discussion of nudges and choice architecture. 💻  
   
 ## 💬 [Gemini](https://gemini.google.com) Prompt  

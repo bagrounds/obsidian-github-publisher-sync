@@ -6,7 +6,7 @@ title: 🔢💯 Hundred Board
 URL: https://bagrounds.org/topics/hundred-board
 affiliate link: https://amzn.to/4njWMGm
 ---
-[Home](/content/index.md) > [Topics](/content/topics/index.md)  
+[Home](../index.md) > [Topics](./index.md)  
 # 🔢💯 Hundred Board  
 [🛒 Hundred Board. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4njWMGm)  
   
@@ -113,7 +113,7 @@ The Hundred Board is a versatile tool used in early math education, particularly
   
 ### 🎨 Children's Picture Books to Foster Number Sense (Great for Read-Alouds)  
   
-7.  **[⚫🔢 Ten Black Dots](/content/books/ten-black-dots.md) by Donald Crews**  
+7.  **[⚫🔢 Ten Black Dots](../books/ten-black-dots.md) by Donald Crews**  
     * 🔢 A classic for introducing numbers 1-10 and subitizing (instantly recognizing the quantity of a small group of objects).  
   
 8.  🚪 **"The Doorbell Rang" by Pat Hutchins**  

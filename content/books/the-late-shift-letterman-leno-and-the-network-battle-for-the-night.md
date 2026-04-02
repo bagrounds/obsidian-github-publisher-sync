@@ -7,7 +7,7 @@ share: true
 affiliate link: https://amzn.to/4nXNxMk
 CTA: 📺 Relive the rivalry.
 ---
-[Home](/content/index.md) > [Books](/content/books/index.md)  
+[Home](../index.md) > [Books](./index.md)  
 # 📺🌃⚔️ The Late Shift: Letterman, Leno, and the Network Battle for the Night  
 [🛒 The Late Shift: Letterman, Leno, and the Network Battle for the Night. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4nXNxMk)  
   
@@ -58,5 +58,5 @@ CTA: 📺 Relive the rivalry.
 * 📸 ***Paparazzi: Media Practices and Celebrity Culture*** by Kim McNamara: An examination of the controversial world of paparazzi and their role in the celebrity ecosystem, providing a different angle on the media's relationship with fame.  
 * 📝 ***Memo from David O. Selznick*** by Rudy Behlmer: A collection of memos from the legendary film producer, this book offers a fascinating and often-tyrannical look at the creative and business battles behind some of classic Hollywood's greatest films.  
   
-## 💬 [Gemini](/content/software/gemini.md) Prompt (gemini-2.5-pro)  
+## 💬 [Gemini](../software/gemini.md) Prompt (gemini-2.5-pro)  
 > Write a markdown-formatted (start headings at level H2) book report, followed by a plethora of additional similar, contrasting, and creatively related book recommendations on The Late Shift: Letterman, Leno, and the Network Battle for the Night. Be thorough in content discussed but concise and economical with your language. Structure the report with section headings and bulleted lists to avoid long blocks of text.

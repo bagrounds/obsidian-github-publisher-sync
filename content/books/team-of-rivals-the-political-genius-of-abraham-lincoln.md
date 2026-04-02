@@ -6,8 +6,11 @@ URL: https://bagrounds.org/books/team-of-rivals-the-political-genius-of-abraham-
 share: true
 affiliate link: https://amzn.to/463g50l
 CTA: 🇺🇸 Grasp leadership.
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_time: 2026-04-02T00:00:00Z
+force_analyze_links: false
 ---
-[Home](/content/index.md) > [Books](/content/books/index.md)  
+[Home](../index.md) > [Books](./index.md)  
 # 🤝🏛️ Team of Rivals: The Political Genius of Abraham Lincoln  
 [🛒 Team of Rivals: The Political Genius of Abraham Lincoln. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/463g50l)  
   

@@ -7,7 +7,7 @@ share: true
 affiliate link: https://amzn.to/4pIxPWA
 CTA: 💀 Confront dogma.
 ---
-[Home](/content/index.md) > [Books](/content/books/index.md)  
+[Home](../index.md) > [Books](./index.md)  
 # 🙏🚫🌍 God Is Not Great: How Religion Poisons Everything  
 [🛒 God Is Not Great: How Religion Poisons Everything. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4pIxPWA)  
   
@@ -40,10 +40,10 @@ CTA: 💀 Confront dogma.
   
 📚 These books share God Is Not Great's critical stance on religion, promoting atheism, secularism, and scientific reason.  
   
-* **[❓✝️ The God Delusion](/content/books/the-god-delusion.md) by Richard Dawkins:** 🏛️ A cornerstone of the New Atheism movement, this book argues that belief in a supernatural creator is a delusion and that religion is harmful.  
+* **[❓✝️ The God Delusion](./the-god-delusion.md) by Richard Dawkins:** 🏛️ A cornerstone of the New Atheism movement, this book argues that belief in a supernatural creator is a delusion and that religion is harmful.  
 * 💥 **The End of Faith: Religion, Terror, and the Future of Reason by Sam Harris:** 🤔 Harris critically examines the clash between religion and reason, particularly focusing on how religious belief can inspire violence and suspend rational thought.  
 * ✨ **Breaking the Spell: Religion as a Natural Phenomenon by Daniel C. Dennett:** 🔬 This book explores the origins and evolution of religion from a scientific and philosophical perspective, seeking to understand why humans believe in God.  
-* **[😈🌍🔬🕯️🌑 The Demon-Haunted World: Science as a Candle in the Dark](/content/books/the-demon-haunted-world.md) by Carl Sagan:** 🧪 Sagan champions scientific thinking and reason as a defense against pseudoscience and irrationality, offering a cautionary tale about abandoning critical thought.  
+* **[😈🌍🔬🕯️🌑 The Demon-Haunted World: Science as a Candle in the Dark](./the-demon-haunted-world.md) by Carl Sagan:** 🧪 Sagan champions scientific thinking and reason as a defense against pseudoscience and irrationality, offering a cautionary tale about abandoning critical thought.  
 * 📜 **Why I Am Not a Christian by Bertrand Russell:** 🤔 A classic essay collection that articulates philosophical and ethical arguments against religious belief.  
   
 ### 👎 Contrasting Books  
@@ -61,7 +61,7 @@ CTA: 💀 Confront dogma.
   
 * ❓ **Agnostic: A Spirited Manifesto by Lesley Hazleton:** 👐 Hazleton celebrates agnosticism not as indecision, but as an active, vibrant, and honest stance toward the mysteries of existence, embracing intellectual humility.  
 * 📊 **The Moral Landscape: How Science Can Determine Human Values by Sam Harris:** 🧪 Harris argues that science can and should play a role in determining human values and morality, proposing that moral truths exist objectively and can be explored scientifically.  
-* **[🏔️ The Myth of Sisyphus](/content/books/the-myth-of-sisyphus.md) by Albert Camus:** 🤔 This philosophical essay delves into absurdism, exploring humanity's search for meaning in a silent, indifferent universe and how one can find purpose and revolt against the absurd.  
+* **[🏔️ The Myth of Sisyphus](./the-myth-of-sisyphus.md) by Albert Camus:** 🤔 This philosophical essay delves into absurdism, exploring humanity's search for meaning in a silent, indifferent universe and how one can find purpose and revolt against the absurd.  
 * 📜 **The Good Book: A Humanist Bible by A. C. Grayling:** ✂️ Grayling compiles and curates selections from various philosophical, literary, and historical sources to create a secular alternative to traditional religious texts, offering wisdom for living a good life without supernatural belief.  
 * 🤔 **Finding Purpose in a Godless World: Why We Care Even if the Universe Doesn't by Ralph Lewis:** ❤️ This book explores how humans create purpose and meaning in their lives without relying on theistic explanations, focusing on our intrinsic motivations and connections with others.  
   

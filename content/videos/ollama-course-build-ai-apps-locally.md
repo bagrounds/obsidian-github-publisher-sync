@@ -10,14 +10,14 @@ Channel: freeCodeCamp.org
 tags:
 ---
   
-[Home](/content/index.md) > [Videos](/content/videos/index.md)  
+[Home](../index.md) > [Videos](./index.md)  
 # 💻🤖🏠📚 Ollama Course – Build AI Apps Locally  
 ![Ollama Course – Build AI Apps Locally](https://youtu.be/GWB9ApTPTv4)  
   
 ## 🤖 AI Summary  
 ### TL;DR 🚀  
   
-▶️ This video provides a practical, 🧑‍💻 hands-on introduction to using 🦙 [Ollama](/content/software/ollama.md) for running large language models (LLMs) locally, 🏠 enabling users to 🤖 build AI applications without relying on ☁️ cloud-based APIs.  
+▶️ This video provides a practical, 🧑‍💻 hands-on introduction to using 🦙 [Ollama](../software/ollama.md) for running large language models (LLMs) locally, 🏠 enabling users to 🤖 build AI applications without relying on ☁️ cloud-based APIs.  
   
 ### New or Surprising Perspective 🤔  
   
@@ -75,9 +75,9 @@ tags:
 * **Best Diametrically Opposed Resource:**  
     * Any documentation or white paper that focuses on the cloud based LLM APIs, such as those provided by OpenAI. This will provide the contrast between local and cloud based systems. ☁️  
 * **Best Fiction Incorporating Related Ideas:**  
-    * "[Daemon](/content/books/daemon.md)" by Daniel Suarez. This novel explores the implications of decentralized AI systems, which relates to the local control aspect of Ollama. 🤖📖  
+    * "[Daemon](../books/daemon.md)" by Daniel Suarez. This novel explores the implications of decentralized AI systems, which relates to the local control aspect of Ollama. 🤖📖  
 * **Best More General Resource:**  
-    * "[Deep Learning](/content/books/deep-learning.md)" by Ian Goodfellow, Yoshua Bengio, and Aaron Courville. This book provides a comprehensive overview of deep learning, including the principles behind LLMs. 🧠  
+    * "[Deep Learning](../books/deep-learning.md)" by Ian Goodfellow, Yoshua Bengio, and Aaron Courville. This book provides a comprehensive overview of deep learning, including the principles behind LLMs. 🧠  
 * **Best More Specific Resource:**  
     * Tutorials and documentation related to the specific LLM models being used with Ollama, like Llama 2 documentation, to understand the models architecture and limitations. 📑  
 * **Best More Rigorous Resource:**  

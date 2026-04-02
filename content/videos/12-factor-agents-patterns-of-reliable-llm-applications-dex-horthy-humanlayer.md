@@ -11,7 +11,7 @@ tags:
   - AIEngineering
 youtube: https://youtu.be/8kMaTybvDUw
 ---
-[Home](/content/index.md) > [Videos](/content/videos/index.md)  
+[Home](../index.md) > [Videos](./index.md)  
 # 🤖🔗⬆️✅ 12-Factor Agents: Patterns of reliable LLM applications — Dex Horthy, HumanLayer  
 ![12-Factor Agents: Patterns of reliable LLM applications — Dex Horthy, HumanLayer](https://youtu.be/8kMaTybvDUw)  
   
@@ -42,10 +42,10 @@ The video discusses several challenges and issues related to building reliable A
 * 🏗️ **Frameworks abstracting away hard AI parts** \[[15:48](http://www.youtube.com/watch?v=8kMaTybvDUw&t=948)\]: Current frameworks often hide complex AI aspects of agent building 🧱, when they should instead handle other hard parts, allowing developers to focus on critical AI elements.  
   
 ## 📚 Book Recommendations  
-* **[🤖⚙️🔁 Designing Machine Learning Systems: An Iterative Process for Production-Ready Applications](/content/books/designing-machine-learning-systems-an-iterative-process-for-production-ready-applications.md)** by Chip Huyen: This book covers the entire lifecycle 🔄 of machine learning systems, including deployment, monitoring, and maintenance, which is relevant to the challenges of building reliable AI agents.  
-* 📚 **[💻⚙️ Software Engineering at Google: Lessons Learned from Programming Over Time](/content/books/software-engineering-at-google-lessons-learned-from-programming-over-time.md)** by Titus Winters, Tom Manshreck, and Hyrum Wright: Given the video's parallels to traditional software engineering principles 💻, this book offers insights into building robust 💪 and scalable software, which can be applied to AI development.  
+* **[🤖⚙️🔁 Designing Machine Learning Systems: An Iterative Process for Production-Ready Applications](../books/designing-machine-learning-systems-an-iterative-process-for-production-ready-applications.md)** by Chip Huyen: This book covers the entire lifecycle 🔄 of machine learning systems, including deployment, monitoring, and maintenance, which is relevant to the challenges of building reliable AI agents.  
+* 📚 **[💻⚙️ Software Engineering at Google: Lessons Learned from Programming Over Time](../books/software-engineering-at-google-lessons-learned-from-programming-over-time.md)** by Titus Winters, Tom Manshreck, and Hyrum Wright: Given the video's parallels to traditional software engineering principles 💻, this book offers insights into building robust 💪 and scalable software, which can be applied to AI development.  
 * 📖 **"Building Intelligent Agents: A Tutorial"** by Michael Wooldridge: For a more theoretical understanding of intelligent agents 🤖, this book provides a good foundation 🏛️.  
-* **[🗣️💻 Natural Language Processing with Transformers](/content/books/natural-language-processing-with-transformers.md)** by Lewis Tunstall, Leandro von Werra, and Thomas Wolf: To delve deeper into LLMs and their applications 🤖, this book provides practical guidance 🧭 on working with transformer models.  
+* **[🗣️💻 Natural Language Processing with Transformers](../books/natural-language-processing-with-transformers.md)** by Lewis Tunstall, Leandro von Werra, and Thomas Wolf: To delve deeper into LLMs and their applications 🤖, this book provides practical guidance 🧭 on working with transformer models.  
   
 ## 🐦 Tweet  
 <blockquote class="twitter-tweet" data-theme="dark"><p lang="en" dir="ltr">🤖🔗⬆️✅ 12-Factor Agents: Patterns of reliable LLM applications - <a href="https://twitter.com/dexhorthy?ref_src=twsrc%5Etfw">@dexhorthy</a>, <a href="https://twitter.com/humanlayer_dev?ref_src=twsrc%5Etfw">@humanlayer_dev</a><br><br>🤖 AI Agents | 🛠️ Tool Use | ⚙️ Software Engineering | 💬 Human Interaction | 🐛 Error Handling | ⏱️ Context Window | 📝 Prompt Engineering<a href="https://twitter.com/aiDotEngineer?ref_src=twsrc%5Etfw">@aiDotEngineer</a><a href="https://t.co/SFlvXWdD4Y">https://t.co/SFlvXWdD4Y</a></p>&mdash; Bryan Grounds (@bagrounds) <a href="https://twitter.com/bagrounds/status/1944162181752533322?ref_src=twsrc%5Etfw">July 12, 2025</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>

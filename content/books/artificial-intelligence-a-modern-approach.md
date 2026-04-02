@@ -5,8 +5,11 @@ aliases:
 URL: https://bagrounds.org/books/artificial-intelligence-a-modern-approach
 share: true
 affiliate link: https://amzn.to/4obYudu
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_time: 2026-04-01T00:00:00Z
+force_analyze_links: false
 ---
-[Home](/content/index.md) > [Books](/content/books/index.md)  
+[Home](../index.md) > [Books](./index.md)  
 # 🤖🧠 Artificial Intelligence: A Modern Approach  
 [🛒 Artificial Intelligence: A Modern Approach. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4obYudu)  
   
@@ -37,19 +40,19 @@ affiliate link: https://amzn.to/4obYudu
   
 ### 📖 Similar Comprehensive Textbooks  
   
-* **[🧠💻🤖 Deep Learning](/content/books/deep-learning.md) by Ian Goodfellow, Yoshua Bengio, and Aaron Courville:** 📚 Often considered the foundational text for deep learning, this book provides a thorough and mathematical treatment of the subject, making it an excellent next step for those particularly interested in this subfield of machine learning.  
+* **[🧠💻🤖 Deep Learning](./deep-learning.md) by Ian Goodfellow, Yoshua Bengio, and Aaron Courville:** 📚 Often considered the foundational text for deep learning, this book provides a thorough and mathematical treatment of the subject, making it an excellent next step for those particularly interested in this subfield of machine learning.  
 * 📊 **"The Elements of Statistical Learning: Data Mining, Inference, and Prediction" by Trevor Hastie, Robert Tibshirani, and Jerome Friedman:** 📈 This book offers a more statistically-oriented perspective on machine learning, covering many of the same topics as the machine learning section of AIMA but with a greater emphasis on the underlying statistical theory.  
   
 ### 👓 Contrasting and Focused Perspectives  
   
-* **[🤖⚠️📈 Superintelligence: Paths, Dangers, Strategies](/content/books/superintelligence-paths-dangers-strategies.md) by Nick Bostrom:** ⚠️ This book moves away from the technical implementation of AI and delves into the philosophical and existential questions surrounding the potential creation of artificial superintelligence. 🎯 It contrasts with AIMA's focus on building rational agents by exploring the long-term consequences of succeeding in that endeavor.  
-* **[❓➡️💡 The Book of Why: The New Science of Cause and Effect](/content/books/the-book-of-why.md) by Judea Pearl and Dana Mackenzie:** ❓ Written by one of the pioneers of Bayesian networks, a topic covered in AIMA, this book argues for the importance of causal reasoning in AI. 💡 It presents a different paradigm for building intelligent systems, one that goes beyond pattern recognition to understand cause and effect.  
+* **[🤖⚠️📈 Superintelligence: Paths, Dangers, Strategies](./superintelligence-paths-dangers-strategies.md) by Nick Bostrom:** ⚠️ This book moves away from the technical implementation of AI and delves into the philosophical and existential questions surrounding the potential creation of artificial superintelligence. 🎯 It contrasts with AIMA's focus on building rational agents by exploring the long-term consequences of succeeding in that endeavor.  
+* **[❓➡️💡 The Book of Why: The New Science of Cause and Effect](./the-book-of-why.md) by Judea Pearl and Dana Mackenzie:** ❓ Written by one of the pioneers of Bayesian networks, a topic covered in AIMA, this book argues for the importance of causal reasoning in AI. 💡 It presents a different paradigm for building intelligent systems, one that goes beyond pattern recognition to understand cause and effect.  
   
 ### ✨ Creatively Related and Inspirational Reads  
   
-* **[♾️📐🎶🥨 Gödel, Escher, Bach: An Eternal Golden Braid](/content/books/godel-escher-bach.md) by Douglas Hofstadter:** 🏆 This Pulitzer Prize-winning book is a classic and creatively explores the foundations of intelligence and consciousness through the interconnectedness of mathematics, art, and music. 🤔 It provides a more philosophical and abstract counterpoint to AIMA's practical approach.  
-* **[🧬👥💾 Life 3.0: Being Human in the Age of Artificial Intelligence](/content/books/life-3-0.md) by Max Tegmark:** 🌍 This book offers a highly accessible and engaging exploration of the potential futures of AI and its impact on humanity. 🔮 It covers many of the same future-oriented topics as the final chapters of AIMA but in a more narrative and speculative style.  
+* **[♾️📐🎶🥨 Gödel, Escher, Bach: An Eternal Golden Braid](./godel-escher-bach.md) by Douglas Hofstadter:** 🏆 This Pulitzer Prize-winning book is a classic and creatively explores the foundations of intelligence and consciousness through the interconnectedness of mathematics, art, and music. 🤔 It provides a more philosophical and abstract counterpoint to AIMA's practical approach.  
+* **[🧬👥💾 Life 3.0: Being Human in the Age of Artificial Intelligence](./life-3-0.md) by Max Tegmark:** 🌍 This book offers a highly accessible and engaging exploration of the potential futures of AI and its impact on humanity. 🔮 It covers many of the same future-oriented topics as the final chapters of AIMA but in a more narrative and speculative style.  
 * 🎯 **"The Master Algorithm: How the Quest for the Ultimate Learning Machine Will Remake Our World" by Pedro Domingos:** 🔎 This book provides a high-level overview of the different paradigms within machine learning, framing them as a quest for a single "master algorithm" that can learn anything from data. 🔗 It offers a unifying narrative for the diverse learning techniques presented in AIMA.  
   
-## 💬 [Gemini](/content/software/gemini.md) Prompt (gemini-2.5-pro)  
+## 💬 [Gemini](../software/gemini.md) Prompt (gemini-2.5-pro)  
 > Write a markdown-formatted (start headings at level H2) book report, followed by a plethora of additional similar, contrasting, and creatively related book recommendations on Artificial Intelligence: A Modern Approach. Be thorough in content discussed but concise and economical with your language. Structure the report with section headings and bulleted lists to avoid long blocks of text.

@@ -7,7 +7,7 @@ share: true
 CTA: 🏛️ Reimagine buildings.
 affiliate link: https://amzn.to/4pI6CCn
 ---
-[Home](/content/index.md) > [Books](/content/books/index.md)  
+[Home](../index.md) > [Books](./index.md)  
 # 🏢🤖 Compositional Intelligence: Architectural Typology Through Generative AI  
 [🛒 Compositional Intelligence: Architectural Typology Through Generative AI. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4pI6CCn)  
   
@@ -38,7 +38,7 @@ affiliate link: https://amzn.to/4pI6CCn
 ## 🔍 Topics for Further Understanding  
 * 🧑‍⚖️ Ethical frameworks for AI-generated architectural authorship and intellectual property.  
 * 🏘️ The socio-cultural impact of AI-driven urban typologies on human experience and community identity.  
-* ⚛️ Integration of [⚛️ Quantum Computing](/content/topics/quantum-computing.md) with generative AI for exponentially complex architectural simulations.  
+* ⚛️ Integration of [⚛️ Quantum Computing](../topics/quantum-computing.md) with generative AI for exponentially complex architectural simulations.  
 * 🤝 Developing human-AI collaborative design interfaces that prioritize intuition and critical human input.  
 * 💡 The role of explainable AI (XAI) in architectural design decisions and public acceptance.  
 * 🧪 Advanced material science integration with generative AI for optimized performative structures.  
@@ -64,13 +64,13 @@ affiliate link: https://amzn.to/4pI6CCn
 * 📖 Machine Learning for Architects by David Newton  
   
 ### ➖ Contrasting  
-* [🏘️🧱🏗️ A Pattern Language: Towns, Buildings, Construction](/content/books/a-pattern-language-towns-buildings-construction.md) by Christopher Alexander, Sara Ishikawa, and Murray Silverstein  
+* [🏘️🧱🏗️ A Pattern Language: Towns, Buildings, Construction](./a-pattern-language-towns-buildings-construction.md) by Christopher Alexander, Sara Ishikawa, and Murray Silverstein  
 * 📖 The Eyes of the Skin: Architecture and the Senses by Juhani Pallasmaa  
 * 📖 Thinking Architecture by Peter Zumthor  
   
 ### 🔗 Related  
 * 📖 Generative Design: Visualize, Program, and Create with Processing by Hartmut Bohnacker, Benedikt Gross, and Julia Laub  
-* [🧬👥💾 Life 3.0: Being Human in the Age of Artificial Intelligence](/content/books/life-3-0.md) by Max Tegmark  
+* [🧬👥💾 Life 3.0: Being Human in the Age of Artificial Intelligence](./life-3-0.md) by Max Tegmark  
 * 📖 Smarter Than You Think: How Technology Is Changing Our Minds for the Better by Clive Thompson  
   
 ## 🫵 What Do You Think?  

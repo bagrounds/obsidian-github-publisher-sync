@@ -7,7 +7,7 @@ share: true
 CTA: 🤝 Cultivate inclusivity.
 affiliate link: https://amzn.to/4onq5YS
 ---
-[Home](/content/index.md) > [Books](/content/books/index.md)  
+[Home](../index.md) > [Books](./index.md)  
 # 🧑‍🤝‍🧑 Belonging: The Science of Creating Connection and Bridging Divides  
 [🛒 Belonging: The Science of Creating Connection and Bridging Divides. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4onq5YS)  
   
@@ -75,15 +75,15 @@ affiliate link: https://amzn.to/4onq5YS
 * 🌍 Together by Vivek Murthy  
   
 ### ⚔️ Contrasting Books  
-* [🎳🏘️📉📈 Bowling Alone: The Collapse and Revival of American Community](/content/books/bowling-alone.md) by Robert D. Putnam (explores decline of social capital)  
-* [😇🧠 The Righteous Mind: Why Good People Are Divided by Politics and Religion](/content/books/the-righteous-mind.md) by Jonathan Haidt (focuses on moral psychology and political division)  
+* [🎳🏘️📉📈 Bowling Alone: The Collapse and Revival of American Community](./bowling-alone.md) by Robert D. Putnam (explores decline of social capital)  
+* [😇🧠 The Righteous Mind: Why Good People Are Divided by Politics and Religion](./the-righteous-mind.md) by Jonathan Haidt (focuses on moral psychology and political division)  
 * 🎭 Identity by Francis Fukuyama (examines demand for recognition)  
   
 ### 🔗 Related Books  
-* [🕊️🤝 Nonviolent Communication: A Language of Life](/content/books/nonviolent-communication.md) by Marshall B. Rosenberg  
-* [💡🎨 Originals](/content/books/originals.md) by Adam Grant  
-* 📣 [🍃🧠🤝🏼 Influence: The Psychology of Persuasion](/content/books/influence.md) and Pre-Suasion by Robert B. Cialdini  
-* 🧠 [🤔🐇🐢 Thinking, Fast and Slow](/content/books/thinking-fast-and-slow.md) by Daniel Kahneman  
+* [🕊️🤝 Nonviolent Communication: A Language of Life](./nonviolent-communication.md) by Marshall B. Rosenberg  
+* [💡🎨 Originals](./originals.md) by Adam Grant  
+* 📣 [🍃🧠🤝🏼 Influence: The Psychology of Persuasion](./influence.md) and Pre-Suasion by Robert B. Cialdini  
+* 🧠 [🤔🐇🐢 Thinking, Fast and Slow](./thinking-fast-and-slow.md) by Daniel Kahneman  
   
 ## 🫵 What Do You Think?  
   

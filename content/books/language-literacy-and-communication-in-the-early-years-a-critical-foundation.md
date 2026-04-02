@@ -6,7 +6,7 @@ URL: https://bagrounds.org/books/language-literacy-and-communication-in-the-earl
 share: true
 affiliate link: https://amzn.to/4jDDN6Q
 ---
-[Home](/content/index.md) > [Books](/content/books/index.md)  
+[Home](../index.md) > [Books](./index.md)  
 # 🗣️👶📚 Language, Literacy and Communication in the Early Years: A critical foundation  
 [🛒 Language, Literacy and Communication in the Early Years: A critical foundation. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4jDDN6Q)  
   
@@ -43,7 +43,7 @@ affiliate link: https://amzn.to/4jDDN6Q
 * 🗣️ **Language & Literacy in the Early Years 0-7 by Henrietta Whitehead:** This book provides comprehensive coverage of language, literacy, and learning for children from birth to seven years, incorporating recent developments, social/emotional dimensions, and difficulties. 🎨 It emphasizes creativity and flexible teaching methods.  
 * 📖 **Language and Literacy for the Early Years by Sue Colliver:** Focusing on the pre-school years, this text explores language acquisition theories, factors affecting development, and practical guidance on supporting language through activities like stories and rhymes.  
 * 💬 **Communication, Language and Literacy in the Early Years Foundation Stage by Helen Bradford:** Part of a series on the EYFS, this book offers practical guidance, clear explanations, and activities for supporting communication, language, and literacy within this framework.  
-* 🗣️ **Communication and Interaction in the Early Years by Ann Clare:** This book offers a thorough account of early communication and interaction for the 0-5 age range, including discussions on [🗣️🗣️ Bilingualism](/content/topics/bilingualism.md), reading, writing, and the vital role of adults.  
+* 🗣️ **Communication and Interaction in the Early Years by Ann Clare:** This book offers a thorough account of early communication and interaction for the 0-5 age range, including discussions on [🗣️🗣️ Bilingualism](../topics/bilingualism.md), reading, writing, and the vital role of adults.  
 * 🌱 **Language and Literacy Development in Early Childhood by Robyn Ewing, Jon Callow, and Kathleen Rushton:** This text provides an integrated approach to language and literacy from birth through early school years, highlighting imagination, play, digital literacies, and the impact of diverse backgrounds.  
   
 ### 🔄 Contrasting or Alternative Perspective Books  
@@ -51,7 +51,7 @@ affiliate link: https://amzn.to/4jDDN6Q
 ≠ While direct theoretical "contrasts" can be complex, these books offer different angles, broader contexts, or focus on specific aspects related to early communication and development.  
   
 * 🌍 **Communication for the Early Years: A Holistic Approach edited by Julie Kent and Moira Moran:** This book takes an ecological systems approach to communication, considering the impact of environment, digital media, and advocating for a holistic, collaborative understanding involving child, family, and practitioner perspectives.  
-* **[🕳️🧠👶🏽 The Whole-Brain Child: 12 Revolutionary Strategies to Nurture Your Child's Developing Mind](/content/books/the-whole-brain-child.md) by Daniel J. Siegel and Tina Payne Bryson:** Although broader than just language, this book delves into brain development and integration, providing a neurological context that underpins cognitive and communication skills.  
+* **[🕳️🧠👶🏽 The Whole-Brain Child: 12 Revolutionary Strategies to Nurture Your Child's Developing Mind](./the-whole-brain-child.md) by Daniel J. Siegel and Tina Payne Bryson:** Although broader than just language, this book delves into brain development and integration, providing a neurological context that underpins cognitive and communication skills.  
 * 🗣️ **How to Talk to Kids So Will Listen and Listen so Kids Will Talk by Adele Faber and Elaine Mazlish:** This classic focuses on practical communication strategies for *adults* interacting with children, offering techniques to foster positive relationships and encourage children's expression, which is foundational to their own communication development.  
   
 ### 🎨 Creatively Related Books  
@@ -63,7 +63,7 @@ affiliate link: https://amzn.to/4jDDN6Q
 * 📱 **Books on Children and Media:** Given the increasing presence of digital media, books exploring its impact on child development and communication offer a relevant contemporary angle.  
 * 🧩 **Books on Specific Learning Differences/Communication Difficulties:** Resources that delve deeper into conditions like dyslexia or communication disorders can provide more specialized knowledge for practitioners supporting children with specific needs mentioned in the core text.  
   
-## 💬 [Gemini](/content/software/gemini.md) Prompt (gemini-2.5-flash-preview-04-17)  
+## 💬 [Gemini](../software/gemini.md) Prompt (gemini-2.5-flash-preview-04-17)  
 > Write a markdown-formatted (start headings at level H2) book report, followed by a plethora of additional similar, contrasting, and creatively related book recommendations on Language, Literacy and Communication in the Early Years: A critical foundation. Be thorough in content discussed but concise and economical with your language. Structure the report with section headings and bulleted lists to avoid long blocks of text.  
   
 ## 🐦 Tweet  

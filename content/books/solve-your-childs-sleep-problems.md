@@ -6,8 +6,11 @@ URL: https://bagrounds.org/books/solve-your-childs-sleep-problems
 share: true
 CTA: 😴 Conquer sleeplessness.
 affiliate link: https://amzn.to/4a5orqs
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_time: 2026-04-02T00:00:00Z
+force_analyze_links: false
 ---
-[Home](/content/index.md) > [Books](/content/books/index.md)  
+[Home](../index.md) > [Books](./index.md)  
 # 😴👶  Solve Your Child's Sleep Problems  
 [🛒 Solve Your Child's Sleep Problems. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4a5orqs)  
   
@@ -80,11 +83,11 @@ affiliate link: https://amzn.to/4a5orqs
   
 ### Contrasting Books  
 * 😭 The No-Cry Sleep Solution by Elizabeth Pantley  
-* [😴 The Happy Sleeper: The Science-Backed Guide to Helping Your Baby Get a Good Night's Sleep - Newborn to School Age](/content/books/the-happy-sleeper-the-science-backed-guide-to-helping-your-baby-get-a-good-nights-sleep-newborn-to-school-age.md) by Heather Turgeon and Julie Wright  
+* [😴 The Happy Sleeper: The Science-Backed Guide to Helping Your Baby Get a Good Night's Sleep - Newborn to School Age](./the-happy-sleeper-the-science-backed-guide-to-helping-your-baby-get-a-good-nights-sleep-newborn-to-school-age.md) by Heather Turgeon and Julie Wright  
 * 🧸 The Gentle Sleep Book by Sarah Ockwell-Smith  
   
 ### Related Books  
-* [👶😊😴 The Happiest Baby on the Block: The New Way to Calm Crying and Help Your Newborn Baby Sleep Longer](/content/books/the-happiest-baby-on-the-block.md) by Harvey Karp  
+* [👶😊😴 The Happiest Baby on the Block: The New Way to Calm Crying and Help Your Newborn Baby Sleep Longer](./the-happiest-baby-on-the-block.md) by Harvey Karp  
 * 🗓️ The Wonder Weeks by Hetty van de Rijt and Frans Plooij  
 * 🇫🇷 Bringing Up Bébé by Pamela Druckerman  
   

@@ -10,7 +10,7 @@ force_analyze_links: false
 link_analysis_time: 2026-03-26T04:49:19.377Z
 link_analysis_model: gemini-3.1-flash-lite-preview
 ---
-[Home](/content/index.md) > [Books](/content/books/index.md)  
+[Home](../index.md) > [Books](./index.md)  
 # 🤖🤖🤖 We Are Legion (We Are Bob)  
 ## 🤖 AI Summary  
 🚀 High-concept transhumanism meets irreverent humor in a galaxy-spanning adventure focused on consciousness and cosmic exploration.  
@@ -47,17 +47,17 @@ A: 🤓 The narrative is heavily driven by an irreverent and sarcastic voice tha
   
 ### 📖 Non-Fiction  
   
-* [🤖🧬⬆️ The Singularity Is Near: When Humans Transcend Biology](/content/books/the-singularity-is-near-when-humans-transcend-biology.md) by Ray Kurzweil  
+* [🤖🧬⬆️ The Singularity Is Near: When Humans Transcend Biology](./the-singularity-is-near-when-humans-transcend-biology.md) by Ray Kurzweil  
 * 🛰️ Physics of the Future by Michio Kaku  
   
 ### ❤️ If You Loved This  
   
-* [☄️🧑‍🚀🙏🌍 Project Hail Mary](/content/books/project-hail-mary.md) by Andy Weir  
-* [🚨🤖💥 All Systems Red](/content/books/all-systems-red.md) by Martha Wells  
+* [☄️🧑‍🚀🙏🌍 Project Hail Mary](./project-hail-mary.md) by Andy Weir  
+* [🚨🤖💥 All Systems Red](./all-systems-red.md) by Martha Wells  
   
 ### ↔️ Similar But Different  
   
-* [👍🦮🌌 The Hitchhiker's Guide to the Galaxy](/content/books/the-hitchhikers-guide-to-the-galaxy.md) by Douglas Adams  
+* [👍🦮🌌 The Hitchhiker's Guide to the Galaxy](./the-hitchhikers-guide-to-the-galaxy.md) by Douglas Adams  
 * 🪖 Old Man's War by John Scalzi  
   
 ## 🫵 What Do You Think?  

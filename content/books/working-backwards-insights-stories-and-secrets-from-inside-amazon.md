@@ -6,7 +6,7 @@ URL: https://bagrounds.org/books/working-backwards-insights-stories-and-secrets-
 share: true
 affiliate link: https://amzn.to/3Sw6siY
 ---
-[Home](/content/index.md) > [Books](/content/books/index.md)  
+[Home](../index.md) > [Books](./index.md)  
 # 💼🔙📦 Working Backwards: Insights, Stories, and Secrets from Inside Amazon  
 [🛒 Working Backwards: Insights, Stories, and Secrets from Inside Amazon. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3Sw6siY)  
   
@@ -50,11 +50,11 @@ The book is structured to explain Amazon's core principles and then illustrate t
 * 📖 ***Build: An Unorthodox Guide to Making Things Worth Making*** by Tony Fadell: Written by one of the creators of the iPod and iPhone, this book shares lessons on building products and companies, with an emphasis on design and user experience that complements the customer-centric theme of *Working Backwards*.  
 * 📖 ***How Google Works*** by Eric Schmidt and Jonathan Rosenberg: Provides an insider's look at Google's culture, strategy, and hiring practices, offering a comparison point to Amazon's operational style.  
 * 📖 ***The Hard Thing About Hard Things: Building a Business When There Are No Easy Answers*** by Ben Horowitz: Offers candid advice on the challenges of building and running a startup, providing a ground-level perspective on the difficulties that management principles aim to address.  
-* 📖 ***[Good To Great](/content/books/good-to-great.md): Why Some Companies Make the Leap...And Others Don't*** by Jim Collins: A classic in business literature that identifies the characteristics of companies that achieve sustained success, offering a broader strategic context for Amazon's specific practices.  
+* 📖 ***[Good To Great](./good-to-great.md): Why Some Companies Make the Leap...And Others Don't*** by Jim Collins: A classic in business literature that identifies the characteristics of companies that achieve sustained success, offering a broader strategic context for Amazon's specific practices.  
   
 ### ⚖️ Contrasting Books (Critiques, Alternative Approaches)  
   
-* 📖 ***The Four: The Hidden DNA of Amazon, Apple, Facebook, and Google*** by [👨‍🏫📈💻 Scott Galloway](/content/people/scott-galloway.md): Critically examines the power and influence of the four major tech companies, including Amazon, offering a less internal and more societal perspective.  
+* 📖 ***The Four: The Hidden DNA of Amazon, Apple, Facebook, and Google*** by [👨‍🏫📈💻 Scott Galloway](../people/scott-galloway.md): Critically examines the power and influence of the four major tech companies, including Amazon, offering a less internal and more societal perspective.  
 * 📚 Books focusing on different organizational structures (e.g., flatter hierarchies, co-operatives) or management philosophies that prioritize different values than Amazon's intense, results-driven culture.  
 * 🌍 Works exploring the social and economic impacts of large e-commerce platforms, providing a counterpoint to the internal business focus of *Working Backwards*.  
   
@@ -62,9 +62,9 @@ The book is structured to explain Amazon's core principles and then illustrate t
   
 * 📖 ***Several Short Sentences About Writing*** by Verlyn Klinkenborg: Given Amazon's emphasis on written narratives, a book focusing on clear and effective writing can provide a complementary skill set for implementing the "Working Backwards" methodology.  
 * 📖 ***Creativity, Inc.: Overcoming the Unseen Forces That Stand in the Way of True Inspiration*** by Ed Catmull and Amy Wallace: Explores the principles behind building a creative culture at Pixar Animation Studios, offering insights into fostering innovation and collaboration in a different industry context.  
-* **[💡📜 Where Good Ideas Come From: The Natural History of Innovation](/content/books/where-good-ideas-come-from-the-natural-history-of-innovation.md)** by Steven Johnson: Examines the patterns and environments that lead to groundbreaking ideas throughout history, providing a broader perspective on the innovation process that is central to Amazon's growth.  
-* 📖 **[The Innovator's Dilemma](/content/books/the-innovators-dilemma.md): When New Technologies Cause Great Firms to Fail** by Clayton M. Christensen: A foundational book on disruptive innovation, offering a framework for understanding how established companies can struggle to adapt to new technologies and market shifts, a challenge Amazon has navigated successfully in many areas.  
+* **[💡📜 Where Good Ideas Come From: The Natural History of Innovation](./where-good-ideas-come-from-the-natural-history-of-innovation.md)** by Steven Johnson: Examines the patterns and environments that lead to groundbreaking ideas throughout history, providing a broader perspective on the innovation process that is central to Amazon's growth.  
+* 📖 **[The Innovator's Dilemma](./the-innovators-dilemma.md): When New Technologies Cause Great Firms to Fail** by Clayton M. Christensen: A foundational book on disruptive innovation, offering a framework for understanding how established companies can struggle to adapt to new technologies and market shifts, a challenge Amazon has navigated successfully in many areas.  
 * 📖 ***Silent Spring*** by Rachel Carson: While seemingly unrelated, this book's impact highlights the power of compelling written narrative to drive significant change and influence public perception, echoing the importance of the PR/FAQ in aligning teams and communicating vision.  
   
-## 💬 [Gemini](/content/software/gemini.md) Prompt (gemini-2.5-flash-preview-04-17)  
+## 💬 [Gemini](../software/gemini.md) Prompt (gemini-2.5-flash-preview-04-17)  
 > Write a markdown-formatted (start headings at level H2) book report, followed by a plethora of additional similar, contrasting, and creatively related book recommendations on Working Backwards: Insights, Stories, and Secrets from Inside Amazon. Be thorough in content discussed but concise and economical with your language. Structure the report with section headings and bulleted lists to avoid long blocks of text.

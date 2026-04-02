@@ -4,10 +4,10 @@ aliases:
   - 🇺🇸🚫⛑️ USAID closes its doors after six decades
 title: 🇺🇸🚫⛑️ USAID closes its doors after six decades
 URL: https://bagrounds.org/videos/
-Author: 
-Platform: 
+Author:
+Platform:
 Channel: Associated Press
-tags: 
+tags:
 youtube: https://youtu.be/zWB0Xd3ZB5g
 ---
 [Home](../index.md) > [Videos](./index.md)  

@@ -7,7 +7,7 @@ share: true
 CTA: 📺 Advocate for information.
 affiliate link: https://amzn.to/3NcYQ5G
 ---
-[Home](/content/index.md) > [Books](/content/books/index.md)  
+[Home](../index.md) > [Books](./index.md)  
 # 📢💡 Public Broadcasting and the Public Interest  
 [🛒 Public Broadcasting and the Public Interest. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3NcYQ5G)  
   
@@ -65,16 +65,16 @@ affiliate link: https://amzn.to/3NcYQ5G
 ## 📚 Book Recommendations  
 ### 📖 Similar  
 * 📖 Democracy's Discontent by Michael J. Sandel  
-* [🏭🫡 Manufacturing Consent: The Political Economy of the Mass Media](/content/books/manufacturing-consent.md) by Edward S. Herman and Noam Chomsky  
+* [🏭🫡 Manufacturing Consent: The Political Economy of the Mass Media](./manufacturing-consent.md) by Edward S. Herman and Noam Chomsky  
 * 📰 The Vanishing Newspaper by Philip Meyer  
   
 ### ↔️ Contrasting  
 * 💸 Rich Media, Poor Democracy by Robert W. McChesney  
-* [📱🧠 The Shallows: What the Internet Is Doing to Our Brains](/content/books/the-shallows-what-the-internet-is-doing-to-our-brains.md) by Nicholas Carr  
-* [📺💀 Amusing Ourselves to Death: Public Discourse in the Age of Show Business](/content/books/amusing-ourselves-to-death-public-discourse-in-the-age-of-show-business.md) by Neil Postman  
+* [📱🧠 The Shallows: What the Internet Is Doing to Our Brains](./the-shallows-what-the-internet-is-doing-to-our-brains.md) by Nicholas Carr  
+* [📺💀 Amusing Ourselves to Death: Public Discourse in the Age of Show Business](./amusing-ourselves-to-death-public-discourse-in-the-age-of-show-business.md) by Neil Postman  
   
 ### 🔗 Related  
-* [🎳🏘️📉📈 Bowling Alone: The Collapse and Revival of American Community](/content/books/bowling-alone.md) by Robert D. Putnam  
+* [🎳🏘️📉📈 Bowling Alone: The Collapse and Revival of American Community](./bowling-alone.md) by Robert D. Putnam  
 * 💻 Network Smarts by Vanda Rideout  
 * 💡 The Information by James Gleick  
   

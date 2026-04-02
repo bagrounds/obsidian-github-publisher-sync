@@ -6,8 +6,11 @@ URL: https://bagrounds.org/books/the-narrow-corridor-states-societies-and-the-fa
 share: true
 affiliate link: https://amzn.to/48ZXzI2
 CTA: ⚖️ Shackle Leviathans.
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_time: 2026-04-01T00:00:00Z
+force_analyze_links: false
 ---
-[Home](/content/index.md) > [Books](/content/books/index.md)  
+[Home](../index.md) > [Books](./index.md)  
 # ↔️🏛️ The Narrow Corridor: States, Societies, and the Fate of Liberty  
 [🛒 The Narrow Corridor: States, Societies, and the Fate of Liberty. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/48ZXzI2)  
   
@@ -72,7 +75,7 @@ CTA: ⚖️ Shackle Leviathans.
 ## 📚 Book Recommendations  
   
 ### Similar Books  
-* [🌎👎👑💰🏚️ Why Nations Fail: The Origins of Power, Prosperity, and Poverty](/content/books/why-nations-fail-the-origins-of-power-prosperity-and-poverty.md) by Daron Acemoglu and James A. Robinson  
+* [🌎👎👑💰🏚️ Why Nations Fail: The Origins of Power, Prosperity, and Poverty](./why-nations-fail-the-origins-of-power-prosperity-and-poverty.md) by Daron Acemoglu and James A. Robinson  
 * Economic Origins of Dictatorship and Democracy by Daron Acemoglu and James A. Robinson  
 * Violence and Social Orders by Douglass C. North, John Joseph Wallis, and Barry R. Weingast  
   
@@ -82,10 +85,10 @@ CTA: ⚖️ Shackle Leviathans.
 * Order Without Law by Robert C. Ellickson  
   
 ### Related Books  
-* [📜🌍⏳ Sapiens: A Brief History of Humankind](/content/books/sapiens-a-brief-history-of-humankind.md) by Yuval Noah Harari  
-* [😇🧠 The Righteous Mind: Why Good People Are Divided by Politics and Religion](/content/books/the-righteous-mind.md) by Jonathan Haidt  
-* [🗳️🕊️🇺🇸 Democracy in America](/content/books/democracy-in-america.md) by Alexis de Tocqueville  
-* [👑😈👎📈 The Dictator's Handbook: Why Bad Behavior Is Almost Always Good Politics](/content/books/the-dictators-handbook.md) by Bruce Bueno de Mesquita and Alastair Smith  
+* [📜🌍⏳ Sapiens: A Brief History of Humankind](./sapiens-a-brief-history-of-humankind.md) by Yuval Noah Harari  
+* [😇🧠 The Righteous Mind: Why Good People Are Divided by Politics and Religion](./the-righteous-mind.md) by Jonathan Haidt  
+* [🗳️🕊️🇺🇸 Democracy in America](./democracy-in-america.md) by Alexis de Tocqueville  
+* [👑😈👎📈 The Dictator's Handbook: Why Bad Behavior Is Almost Always Good Politics](./the-dictators-handbook.md) by Bruce Bueno de Mesquita and Alastair Smith  
   
 ## 🫵 What Do You Think?  
   

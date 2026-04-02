@@ -12,7 +12,7 @@ force_analyze_links: false
 link_analysis_time: 2026-03-22T23:38:05.312Z
 link_analysis_model: gemini-3.1-flash-lite-preview
 ---
-[Home](/content/index.md) > [Books](/content/books/index.md)  
+[Home](../index.md) > [Books](./index.md)  
 # 📈⚙️♾️ The Goal: A Process of Ongoing Improvement  
 [🛒 The Goal: A Process of Ongoing Improvement. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/459fwBT)  
   
@@ -65,14 +65,14 @@ The Goal is a business novel teaching the Theory of Constraints (TOC) by showing
 *   **Authoritative Reviews and Recognition:** Its widespread adoption and recognition by reputable sources validate the quality and impact of its ideas. 🌟  
   
 ### Recommended Reads 📚  
-*   **Best Alternate Book on the Same Topic:** *[The Phoenix Project](/content/books/the-phoenix-project.md): A Novel About IT, DevOps, and Helping Your Business Win* by Gene Kim, Kevin Behr, and George Spafford. 🧑‍💻  
+*   **Best Alternate Book on the Same Topic:** *[The Phoenix Project](./the-phoenix-project.md): A Novel About IT, DevOps, and Helping Your Business Win* by Gene Kim, Kevin Behr, and George Spafford. 🧑‍💻  
 *   **Best Book That Is Tangentially Related:** *Lean Thinking: Banish Waste and Create Wealth in Your Corporation* by James P. Womack and Daniel T. Jones. 🏭  
 *   **Best Book That Is Diametrically Opposed:** *Reengineering the Corporation: A Manifesto for Business Revolution* by Michael Hammer and James Champy. 🔨  
-*   **Best Fiction Book That Incorporates Related Ideas:** *[The Toyota Way](/content/books/the-toyota-way.md): 14 Management Principles from the World's Greatest Manufacturer* by Jeffrey K. Liker. 🚗  
-*   **Best Book That Is More General:** *[Good To Great](/content/books/good-to-great.md): Why Some Companies Make the Leap...And Others Don't* by Jim Collins. 🚀  
+*   **Best Fiction Book That Incorporates Related Ideas:** *[The Toyota Way](./the-toyota-way.md): 14 Management Principles from the World's Greatest Manufacturer* by Jeffrey K. Liker. 🚗  
+*   **Best Book That Is More General:** *[Good To Great](./good-to-great.md): Why Some Companies Make the Leap...And Others Don't* by Jim Collins. 🚀  
 *   **Best Book That Is More Specific:** *Critical Chain* by Eliyahu M. Goldratt. 🔗  
 *   **Best Book That Is More Rigorous:** *Factory Physics* by Wallace J. Hopp and Mark L. Spearman. 🔬  
-*   **Best Book That Is More Accessible:** *[The 7 Habits of Highly Effective People](/content/books/the-7-habits-of-highly-effective-people.md)* by Stephen Covey. 👤  
+*   **Best Book That Is More Accessible:** *[The 7 Habits of Highly Effective People](./the-7-habits-of-highly-effective-people.md)* by Stephen Covey. 👤  
   
 ## 💬 [Gemini](https://gemini.google.com) Prompt (Deep Research)  
 > Summarize the book: The Goal by Eliyahu M. Goldratt. Start with a TL;DR - a single statement that conveys a maximum of the useful information provided in the book. Next, explain how this book may offer a new or surprising perspective. Follow this with a deep dive. Catalogue the topics, methods, and research discussed. Be sure to highlight any significant theories, theses, or mental models proposed. Summarize prominent examples discussed. Emphasize practical takeaways, including detailed, specific, concrete, step-by-step advice, guidance, or techniques discussed. Provide a critical analysis of the quality of the information presented, using scientific backing, author credentials, authoritative reviews, and other markers of high quality information as justification. Make the following additional book recommendations: the best alternate book on the same topic; the best book that is tangentially related; the best book that is diametrically opposed; the best fiction book that incorporates related ideas; the best book that is more general or more specific; and the best book that is more rigorous or more accessible than this book. Format your response as markdown, starting at heading level H3, with inline links, for easy copy paste. Use meaningful emojis generously (at least one per heading, bullet point, and paragraph) to enhance readability. Do not include broken links or links to commercial sites.  

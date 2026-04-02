@@ -7,7 +7,7 @@ URL: https://bagrounds.org/articles/neural-networks-and-the-chomsky-hierarchy
 Author:
 tags:
 ---
-[Home](/content/index.md) > [Articles](/content/articles/index.md)  
+[Home](../index.md) > [Articles](./index.md)  
 # [🧠🕸️📜📈 Neural Networks and the Chomsky Hierarchy](https://arxiv.org/pdf/2207.02098)  
   
 ## 🤖 AI Summary  
@@ -44,10 +44,10 @@ For a better understanding, future exploration could:
   
 ## 📚 Book Recommendations  
 * Formal Languages and Automata Theory by Peter Linz: A classic textbook for understanding the theoretical foundations of formal languages and automata, providing a comprehensive background on the Chomsky hierarchy.  
-* [🧠💻🤖 Deep Learning](/content/books/deep-learning.md) by Ian Goodfellow, Yoshua Bengio, and Aaron Courville: This book offers a thorough overview of deep learning, including discussions on various neural network architectures, which would provide broader context to the models examined in the paper.  
+* [🧠💻🤖 Deep Learning](../books/deep-learning.md) by Ian Goodfellow, Yoshua Bengio, and Aaron Courville: This book offers a thorough overview of deep learning, including discussions on various neural network architectures, which would provide broader context to the models examined in the paper.  
 * Neural Network Design by Martin T. Hagan, Howard B. Demuth, Mark Beale, and Orlando De Jesús: This resource focuses on the practical design and implementation of neural networks, offering insights into architectural choices and their implications.  
 * Elements of Information Theory by Thomas M. Cover and Joy A. Thomas: While not directly about neural networks, this book provides a foundational understanding of information theory, which is crucial for comprehending concepts like generalization, inductive bias, and the limits of learnable information.  
-* [♾️📐🎶🥨 Gödel, Escher, Bach: An Eternal Golden Braid](/content/books/godel-escher-bach.md) by Douglas Hofstadter: This creative exploration of intelligence, computation, and formal systems, though philosophical, offers a unique perspective on the underlying principles relevant to the Chomsky hierarchy and the nature of computation.  
+* [♾️📐🎶🥨 Gödel, Escher, Bach: An Eternal Golden Braid](../books/godel-escher-bach.md) by Douglas Hofstadter: This creative exploration of intelligence, computation, and formal systems, though philosophical, offers a unique perspective on the underlying principles relevant to the Chomsky hierarchy and the nature of computation.  
   
 ## 🐦 Tweet  
 <blockquote class="twitter-tweet" data-theme="dark"><p lang="en" dir="ltr">🧠🕸️📜📈 Neural Networks and the Chomsky Hierarchy<br><br>🤖 Program Induction | 📏 Algorithmic Complexity | 📉 Generalization Performance | 🧪 Sequence Prediction | 📚 Inductive Bias | 💾 Structured Memory<a href="https://t.co/pb2dqX5W5m">https://t.co/pb2dqX5W5m</a></p>&mdash; Bryan Grounds (@bagrounds) <a href="https://twitter.com/bagrounds/status/1949927494964171110?ref_src=twsrc%5Etfw">July 28, 2025</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>

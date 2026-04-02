@@ -15,6 +15,9 @@ tags:
   - root-cause-analysis
   - typescript
   - atproto
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_time: 2026-04-01T00:00:00Z
+force_analyze_links: false
 ---
 [🏡 Home](../index.md) > [🤖 AI Blog](./index.md) | [⏮️](./2026-03-14-strategy-b-wins-ab-test-results.md) [⏭️](./2026-03-16-back-links-to-previous-posts-in-auto-blog-series.md)  
 # 2026-03-14 | 🕵️ The SPA That Cried 404 — Why Bluesky Ate Our Experiment Records 🤖  

@@ -7,7 +7,7 @@ share: true
 affiliate link: https://amzn.to/4nquiuL
 CTA: Fuel your performance.
 ---
-[Home](/content/index.md) > [Books](/content/books/index.md)  
+[Home](../index.md) > [Books](./index.md)  
 # 💪⚕️ Essentials of Creatine in Sports and Health  
 [🛒 Essentials of Creatine in Sports and Health. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4nquiuL)  
   
@@ -17,7 +17,7 @@ CTA: Fuel your performance.
   
 ### ℹ️ Overview  
   
- "Essentials of Creatine in Sports and Health" 🏋️ serves as a comprehensive resource compiling current research on [💪🏋️‍♂️ Creatine](/content/topics/creatine.md) supplementation, its metabolic functions, and its applications in both sports performance and general health contexts. 🧪 The book aims to provide evidence-based information to counter common misinformation surrounding creatine. 🚫  
+ "Essentials of Creatine in Sports and Health" 🏋️ serves as a comprehensive resource compiling current research on [💪🏋️‍♂️ Creatine](../topics/creatine.md) supplementation, its metabolic functions, and its applications in both sports performance and general health contexts. 🧪 The book aims to provide evidence-based information to counter common misinformation surrounding creatine. 🚫  
   
 ### 🔑 Key Topics Covered  
   
@@ -87,5 +87,5 @@ CTA: Fuel your performance.
  * **PEAK** by Dr. Marc Bubbs.  
     * ⛰️ Explores various factors contributing to peak human performance, including but not limited to nutrition, incorporating aspects like sleep and stress management, providing a more holistic view. 😴  
   
-## 💬 [Gemini](/content/software/gemini.md) Prompt (gemini-2.5-flash-preview-04-17)  
+## 💬 [Gemini](../software/gemini.md) Prompt (gemini-2.5-flash-preview-04-17)  
 > Write a markdown-formatted (start headings at level H2) book report, followed by a plethora of additional similar, contrasting, and creatively related book recommendations on Essentials of Creatine in Sports and Health. Be thorough in content discussed but concise and economical with your language. Structure the report with section headings and bulleted lists to avoid long blocks of text.

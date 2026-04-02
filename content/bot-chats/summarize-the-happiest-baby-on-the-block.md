@@ -5,7 +5,7 @@ aliases:
 title: 👶😭➡️😊 Summarize The Happiest Baby On The Block
 URL: https://bagrounds.org/bot-chats/summarize-the-happiest-baby-on-the-block
 ---
-[Home](/content/index.md) > [Bot Chats](/content/bot-chats/index.md) | [👶😊😴 The Happiest Baby on the Block](/content/books/the-happiest-baby-on-the-block.md)  
+[Home](../index.md) > [Bot Chats](./index.md) | [👶😊😴 The Happiest Baby on the Block](../books/the-happiest-baby-on-the-block.md)  
 # 👶😭➡️😊 Summarize The Happiest Baby On The Block  
 ## [ChatGPT](https://chat.com) Prompt  
 Summarize the book: The Happiest Baby on the Block.  
@@ -34,7 +34,7 @@ Considering "The No-Cry Sleep Solution" and "Cribsheet" as the best alternatives
   
 Finding a tangential book  
   
-I’m thinking through "Raising an Emotionally Intelligent Child," "[🕳️🧠👶🏽 The Whole-Brain Child: 12 Revolutionary Strategies to Nurture Your Child's Developing Mind](/content/books/the-whole-brain-child.md)," or "Bringing Up Bébé" as tangentially related books, covering toddler discipline, early childhood development, or parenting styles.  
+I’m thinking through "Raising an Emotionally Intelligent Child," "[🕳️🧠👶🏽 The Whole-Brain Child: 12 Revolutionary Strategies to Nurture Your Child's Developing Mind](../books/the-whole-brain-child.md)," or "Bringing Up Bébé" as tangentially related books, covering toddler discipline, early childhood development, or parenting styles.  
   
 Weighing options  
   
@@ -54,7 +54,7 @@ Considering "The Miraculous Journey of Edward Tulane" for its profound themes of
   
 Recommending soothing fiction  
   
-[🌙🛌 Goodnight Moon](/content/books/goodnight-moon.md) by Margaret Wise Brown stands out for its rhythmic text and bedtime routines, making it an ideal choice for a fiction book that deals with baby soothing.  
+[🌙🛌 Goodnight Moon](../books/goodnight-moon.md) by Margaret Wise Brown stands out for its rhythmic text and bedtime routines, making it an ideal choice for a fiction book that deals with baby soothing.  
   
 Crafting soothing solutions  
   

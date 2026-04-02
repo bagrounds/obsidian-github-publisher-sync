@@ -6,7 +6,7 @@ URL: https://bagrounds.org/books/the-very-hungry-caterpillar
 share: true
 affiliate link: https://amzn.to/4kef75a
 ---
-[Home](/content/index.md) > [Books](/content/books/index.md)  
+[Home](../index.md) > [Books](./index.md)  
 # 🐛🍎 The Very Hungry Caterpillar  
 [🛒 The Very Hungry Caterpillar. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4kef75a)  
   
@@ -80,5 +80,5 @@ affiliate link: https://amzn.to/4kef75a
 * **Books Highlighting Diversity:**  
     * 🌍 Books chosen specifically to offer broader representation, contrasting with potential criticisms of classic books like *The Very Hungry Caterpillar* regarding diversity.  
   
-## 💬 [Gemini](/content/software/gemini.md) Prompt (gemini-2.5-flash-preview-04-17)  
+## 💬 [Gemini](../software/gemini.md) Prompt (gemini-2.5-flash-preview-04-17)  
 > Write a markdown-formatted (start headings at level H2) book report, followed by a plethora of additional similar, contrasting, and creatively related book recommendations on The Very Hungry Caterpillar. Be thorough in content discussed but concise and economical with your language. Structure the report with section headings and bulleted lists to avoid long blocks of text.

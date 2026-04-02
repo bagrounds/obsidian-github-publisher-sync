@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org/books/the-abcs-of-language-development-discover-language-with-your-child
 share: true
 ---
-[Home](/content/index.md) > [Books](/content/books/index.md) | [📺 👶🗣️🔤📢 📖 The ABCs of Language Development: Discover Language With Your Child](/content/videos/the-abcs-of-language-development-discover-language-with-your-child.md)  
+[Home](../index.md) > [Books](./index.md) | [📺 👶🗣️🔤📢 📖 The ABCs of Language Development: Discover Language With Your Child](../videos/the-abcs-of-language-development-discover-language-with-your-child.md)  
 # 👶🔤 The ABC’s of Language Development: Discover Language with Your Child  
 [🆓 The ABCs of Language Development Book](https://languagesciences.ubc.ca/abcs-book)  
   
@@ -78,7 +78,7 @@ Parents, caregivers, educators, and even pediatricians can use this book to:
   
 ### 👯 Similar Books (Focus on Practical Guidance for Parents/Caregivers)  
   
-* **[🗣️👶 Talk to Me, Baby!: How You Can Support Young Children's Language Development](/content/books/talk-to-me-baby-how-you-can-support-young-childrens-language-development.md) by Betty Bardige:** This book guides parents and professionals through six stages of language development from infancy to kindergarten, offering research-based strategies and downloadable resources for engaging talk.  
+* **[🗣️👶 Talk to Me, Baby!: How You Can Support Young Children's Language Development](./talk-to-me-baby-how-you-can-support-young-childrens-language-development.md) by Betty Bardige:** This book guides parents and professionals through six stages of language development from infancy to kindergarten, offering research-based strategies and downloadable resources for engaging talk.  
 * 💬 **Beyond Baby Talk: From Speaking to Spelling by Kenn Apel and Julie Masterson:** Provides parents and caregivers with information on speech and language development, along with strategies and activities to boost language and literacy skills at home.  
 * 🤝 **It Takes Two to Talk: A Practical Guide for Parents of Children with Language Delays by Jan Pepper and Elaine Weitzman:** A step-by-step guide with practical activities and real-life examples for parents of children with language delays.  
 * 🧩 **Helping Your Child with Language-Based Learning Disabilities by Daniel Franklin:** A comprehensive guide for parents navigating language-based learning disabilities.  
@@ -90,7 +90,7 @@ Parents, caregivers, educators, and even pediatricians can use this book to:
 * 🧐 **Child Language Acquisition: Contrasting Theoretical Approaches by Ben Ambridge and Elena V. M. Lieven:** This academic text reviews the major theoretical debates in child language acquisition, specifically contrasting generativist/nativist and constructivist/empiricist approaches across core domains like phonology, word-learning, and syntax.  
 * 🌐 **An Introduction to Bilingual Development by Annick De Houwer:** A concise book focusing on the language development milestones of bilingual children from birth to preschool and beyond.  
 * 📚 **Bilingual First Language Acquisition by Annick De Houwer:** A more comprehensive textbook delving into the intricacies and research on raising children to speak multiple languages.  
-* **[👨‍👩‍👧‍👦🗣️🗣️ A Parents' and Teachers' Guide to Bilingualism](/content/books/a-parents-and-teachers-guide-to-bilingualism.md) by Colin Baker:** A classic guide offering questions and answers on various aspects of raising bilingual children.  
+* **[👨‍👩‍👧‍👦🗣️🗣️ A Parents' and Teachers' Guide to Bilingualism](./a-parents-and-teachers-guide-to-bilingualism.md) by Colin Baker:** A classic guide offering questions and answers on various aspects of raising bilingual children.  
 * 🗣️ **The Natural Approach: Language Acquisition in the Classroom by Stephen D. Krashen:** While focused on second language acquisition in a classroom setting, it presents a theoretical approach (the Natural Approach) that contrasts with some traditional methods and has implications for understanding language learning processes more broadly.  
   
 ### 🎨 Creatively Related Books (Connecting Language with Other Areas and Creative Expression)  
@@ -98,9 +98,9 @@ Parents, caregivers, educators, and even pediatricians can use this book to:
 * 🎶 **Creative Approaches to Child Development With Music, Language, and Movement by Grace Nash:** Explores using music, language, and movement, incorporating philosophies like Orff, Kodaly, and Laban, to foster child development.  
 * ✍️ **The Creative Word: The Young Child's Experience of Language and Stories by Daniel Udo de Haes:** Discusses supporting young children as they transition from wordless understanding to using human language, focusing on their experience of language and stories.  
 * 🖼️ **Art In the Classroom: Growing Language & Literacy Through Picture Book Exploration & Open-Ended Creative Experiences:** Focuses on using picture books and open-ended art activities to develop language, literacy, and storytelling skills in young children.  
-* 🧸 **Children's Storybooks for Speech Therapy:** Many children's books are recommended by speech pathologists for their ability to help develop communication and language skills through engaging stories, repetition, and interactive elements. Examples include [🐛🍎 The Very Hungry Caterpillar](/content/books/the-very-hungry-caterpillar.md), 🐻 "Brown Bear, Brown Bear, What Do You See?", and 🌴 "Chicka Chicka Boom Boom."  
+* 🧸 **Children's Storybooks for Speech Therapy:** Many children's books are recommended by speech pathologists for their ability to help develop communication and language skills through engaging stories, repetition, and interactive elements. Examples include [🐛🍎 The Very Hungry Caterpillar](./the-very-hungry-caterpillar.md), 🐻 "Brown Bear, Brown Bear, What Do You See?", and 🌴 "Chicka Chicka Boom Boom."  
   
-## 💬 [Gemini](/content/software/gemini.md) Prompt (gemini-2.5-flash-preview-04-17)  
+## 💬 [Gemini](../software/gemini.md) Prompt (gemini-2.5-flash-preview-04-17)  
 > Write a markdown-formatted (start headings at level H2) book report, followed by a plethora of additional similar, contrasting, and creatively related book recommendations on The ABC’s of Language Development: Discover Language with Your Child. Be thorough in content discussed but concise and economical with your language. Structure the report with section headings and bulleted lists to avoid long blocks of text.  
   
 ## 🐦 Tweet  

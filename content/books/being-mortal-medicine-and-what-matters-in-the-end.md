@@ -7,7 +7,7 @@ share: true
 affiliate link: https://amzn.to/4nxP2jC
 CTA: 🕊️ Reframe mortality.
 ---
-[Home](/content/index.md) > [Books](/content/books/index.md)  
+[Home](../index.md) > [Books](./index.md)  
 # ⚕️💀 Being Mortal: Medicine and What Matters in the End  
 [🛒 Being Mortal: Medicine and What Matters in the End. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4nxP2jC)  
   

@@ -7,7 +7,7 @@ share: true
 affiliate link: https://amzn.to/4nZplJK
 CTA: 🌱 Cultivate thriving minds.
 ---
-[Home](/content/index.md) > [Books](/content/books/index.md)  
+[Home](../index.md) > [Books](./index.md)  
 # 🔬🧠👶📈😊 The Science of Parenting: How Today's Brain Research Can Help You Raise Happy, Emotionally Balanced Children  
 [🛒 The Science of Parenting: How Today's Brain Research Can Help You Raise Happy, Emotionally Balanced Children. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4nZplJK)  
   
@@ -60,5 +60,5 @@ CTA: 🌱 Cultivate thriving minds.
     * 🧠 **"Children's Imagination: Creativity Under Our Noses" by Ursula Kolbe:** This book explores how to notice and nurture the spontaneous creativity that arises in children's everyday play. 🌻  
     * 📦 **"Not a Box" by Antoinette Portis:** A simple yet profound book that celebrates the power of a child's imagination to transform the ordinary into the extraordinary.". 💫  
   
-## 💬 [Gemini](/content/software/gemini.md) Prompt (gemini-2.5-pro)  
+## 💬 [Gemini](../software/gemini.md) Prompt (gemini-2.5-pro)  
 > Write a markdown-formatted (start headings at level H2) book report, followed by a plethora of additional similar, contrasting, and creatively related book recommendations on The Science of Parenting: How Today's Brain Research Can Help You Raise Happy, Emotionally Balanced Children. Be thorough in content discussed but concise and economical with your language. Structure the report with section headings and bulleted lists to avoid long blocks of text.

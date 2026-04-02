@@ -10,7 +10,7 @@ Channel: PBS NewsHour
 tags:
 youtube: https://youtu.be/4E4fd2ozHlw
 ---
-[Home](/content/index.md) > [Videos](/content/videos/index.md)  
+[Home](../index.md) > [Videos](./index.md)  
 # 🗣️🚪 Sen. Padilla gives remarks after forcible removal from Noem briefing  
 ![WATCH: Sen. Padilla gives remarks after forcible removal from Noem briefing](https://youtu.be/4E4fd2ozHlw)  
   
@@ -29,7 +29,7 @@ youtube: https://youtu.be/4E4fd2ozHlw
   
 **On Immigration Enforcement:**  
   
-* **[🛂⛓️ From Deportation to Prison: The Politics of Immigration Enforcement in Post-Civil Rights America](/content/books/from-deportation-to-prison-the-politics-of-immigration-enforcement-in-post-civil-rights-america.md)** by Tanya Golash-Boza: This book explores the significant increase in criminal prosecutions for immigration offenses and the intersection of mass incarceration and immigration enforcement.  
+* **[🛂⛓️ From Deportation to Prison: The Politics of Immigration Enforcement in Post-Civil Rights America](../books/from-deportation-to-prison-the-politics-of-immigration-enforcement-in-post-civil-rights-america.md)** by Tanya Golash-Boza: This book explores the significant increase in criminal prosecutions for immigration offenses and the intersection of mass incarceration and immigration enforcement.  
 * ***Denied, Detained, Deported: Stories from the Dark Side of American Immigration*** by Ann Bausum: This book offers a historical perspective on immigration in America, highlighting the challenges and injustices faced by immigrants.  
 * ***Immigration Realities: Challenging Common Misperceptions***: While the author is not specified in the search result, this book focuses on debunking common myths and providing evidence-based information about immigrants and immigration.  
   
@@ -48,7 +48,7 @@ youtube: https://youtu.be/4E4fd2ozHlw
   
 **On Civil Rights:**  
   
-* **[🧑🏿⛓️🙈 The New Jim Crow: Mass Incarceration in the Age of Colorblindness](/content/books/the-new-jim-crow-mass-incarceration-in-the-age-of-colorblindness.md)** by Michelle Alexander: A powerful and influential book arguing that the U.S. criminal justice system acts as a contemporary system of racial control.  
+* **[🧑🏿⛓️🙈 The New Jim Crow: Mass Incarceration in the Age of Colorblindness](../books/the-new-jim-crow-mass-incarceration-in-the-age-of-colorblindness.md)** by Michelle Alexander: A powerful and influential book arguing that the U.S. criminal justice system acts as a contemporary system of racial control.  
 * ***The Autobiography of Malcolm X*** as told to Alex Haley: A seminal work offering a vital perspective on the Civil Rights Movement and Black identity.  
 * ***March*** (Trilogy) by John Lewis, Andrew Aydin, and Nate Powell: A graphic novel series recounting the life of Civil Rights leader John Lewis and key events of the movement.  
 * ***The Color of Law: A Forgotten History of How Our Government Segregated America*** by Richard Rothstein: This book details how government policies at all levels intentionally created residential segregation.  

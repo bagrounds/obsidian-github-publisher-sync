@@ -7,7 +7,7 @@ share: true
 CTA: 🧠 Reclaim agency.
 affiliate link: https://amzn.to/3LNxfqL
 ---
-[Home](/content/index.md) > [Books](/content/books/index.md)  
+[Home](../index.md) > [Books](./index.md)  
 # 🧠🧑‍💻 The Hacking of the American Mind: The Science Behind the Corporate Takeover of Our Bodies and Brains  
 [🛒 The Hacking of the American Mind: The Science Behind the Corporate Takeover of Our Bodies and Brains. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3LNxfqL)  
   
@@ -67,19 +67,19 @@ affiliate link: https://amzn.to/3LNxfqL
 ## 📚 Book Recommendations  
   
 ### ➕ Similar  
-* [📱⬇️🧘 Digital Minimalism: Choosing a Focused Life in a Noisy World](/content/books/digital-minimalism-choosing-a-focused-life-in-a-noisy-world.md) by Cal Newport  
+* [📱⬇️🧘 Digital Minimalism: Choosing a Focused Life in a Noisy World](./digital-minimalism-choosing-a-focused-life-in-a-noisy-world.md) by Cal Newport  
 * 📱 Irresistible: The Rise of Addictive Technology and the Business of Keeping Us Hooked by Adam Alter  
 * 🧠 Dopamine Nation: Finding Balance in the Age of Indulgence by Anna Lembke  
 * 🎬 The Social Dilemma (documentary, features Tristan Harris)  
   
 ### ➖ Contrasting  
-* [💡🔬🧑‍🤝‍🧑📈 Enlightenment Now: The Case for Reason, Science, Humanism, and Progress](/content/books/enlightenment-now-the-case-for-reason-science-humanism-and-progress.md) by Steven Pinker  
-* [🤔🐇🐢 Thinking, Fast and Slow](/content/books/thinking-fast-and-slow.md) by Daniel Kahneman  
+* [💡🔬🧑‍🤝‍🧑📈 Enlightenment Now: The Case for Reason, Science, Humanism, and Progress](./enlightenment-now-the-case-for-reason-science-humanism-and-progress.md) by Steven Pinker  
+* [🤔🐇🐢 Thinking, Fast and Slow](./thinking-fast-and-slow.md) by Daniel Kahneman  
   
 ### 🔗 Related  
-* [🎣📱 Hooked: How to Build Habit-Forming Products](/content/books/hooked-how-to-build-habit-forming-products.md) by Nir Eyal  
-* [👉🤏 Nudge: Improving Decisions about Health, Wealth, and Happiness](/content/books/nudge.md) by Richard H. Thaler and Cass R. Sunstein  
-* [📱🧠 The Shallows: What the Internet Is Doing to Our Brains](/content/books/the-shallows-what-the-internet-is-doing-to-our-brains.md) by Nicholas Carr  
+* [🎣📱 Hooked: How to Build Habit-Forming Products](./hooked-how-to-build-habit-forming-products.md) by Nir Eyal  
+* [👉🤏 Nudge: Improving Decisions about Health, Wealth, and Happiness](./nudge.md) by Richard H. Thaler and Cass R. Sunstein  
+* [📱🧠 The Shallows: What the Internet Is Doing to Our Brains](./the-shallows-what-the-internet-is-doing-to-our-brains.md) by Nicholas Carr  
   
 ## 🫵 What Do You Think?  
   

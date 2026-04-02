@@ -5,7 +5,7 @@ aliases:
 title: ⚡🔌 Electrical Engineering
 URL: https://bagrounds.org/topics/electrical-engineering
 ---
-[Home](/content/index.md) > [Topics](/content/topics/index.md) > [Knowledge](/content/topics/a-hierarchical-view-of-human-knowledge.md) > [Engineering](/content/topics/engineering.md)  
+[Home](../index.md) > [Topics](./index.md) > [Knowledge](./a-hierarchical-view-of-human-knowledge.md) > [Engineering](./engineering.md)  
 # ⚡🔌 Electrical Engineering  
 ## 🤖 AI Summary  
 **High-Level Summary:**  
@@ -17,7 +17,7 @@ Here are some major subcategories within Electrical Engineering:
 * **Power Systems:** ⚡️ Deals with the generation, transmission, distribution, and utilization of electrical power. This includes designing power plants, grids, and renewable energy systems.  
 * **Electronics:** 💻 Focuses on the design and development of electronic circuits and devices, such as transistors, integrated circuits, and microprocessors. This subcategory is crucial for consumer electronics, computers, and embedded systems.  
 * **Telecommunications:** 📡 Involves the transmission of information over long distances using electrical signals. This includes technologies like wireless communication, fiber optics, and networking.  
-* **[Control Systems](/content/topics/control-systems.md):** 🤖 Concerned with the design and implementation of systems that regulate and control the behavior of other systems. This is essential for automation, robotics, and aerospace engineering.  
+* **[Control Systems](./control-systems.md):** 🤖 Concerned with the design and implementation of systems that regulate and control the behavior of other systems. This is essential for automation, robotics, and aerospace engineering.  
 * **Signal Processing:** 🔊 Deals with the analysis, manipulation, and interpretation of signals, such as audio, video, and data. This subcategory is vital for areas like image processing, speech recognition, and medical imaging.  
 * **Computer Engineering:** 🖥️ Though often seen as a separate field, it is heavily intertwined with electrical engineering. It focuses on the design of computer hardware and software, including embedded systems and digital circuits.  
 * **Electromagnetics:** 🌐 Studies the interaction between electric and magnetic fields. This is fundamental to understanding antennas, microwaves, and electromagnetic compatibility.  

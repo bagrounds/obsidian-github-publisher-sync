@@ -11,7 +11,7 @@ tags:
 youtube: https://youtu.be/IdosEYLQRlU
 CTA: 🏃‍♀️ Conquer the path.
 ---
-[Home](/content/index.md) > [Videos](/content/videos/index.md) | [👶🏃🌆 Thule Urban Glide 3](/content/products/thule-urban-glide-3.md)  
+[Home](../index.md) > [Videos](./index.md) | [👶🏃🌆 Thule Urban Glide 3](../products/thule-urban-glide-3.md)  
 # 👶🏃‍♀️🏅✅ Thule Urban Glide 3 Full Review | Best Running / Jogging Stroller 2024  
 ![Thule Urban Glide 3 Full Review | Best Running / Jogging Stroller 2024](https://youtu.be/IdosEYLQRlU)  
   
@@ -39,6 +39,6 @@ To explore this topic further, consider these questions 🤔:
 * ⏳ What is the long-term durability 💪 of the stroller and its components, particularly the hand brake and wheels ⚙️, with consistent running 🏃‍♀️ use?  
   
 ## 📚 Book Recommendations  
-* **[👶😊😴 The Happiest Baby on the Block: The New Way to Calm Crying and Help Your Newborn Baby Sleep Longer](/content/books/the-happiest-baby-on-the-block.md)** by Harvey Karp: This classic parenting book offers soothing techniques for newborns, which could be helpful when using the stroller for infants.  
+* **[👶😊😴 The Happiest Baby on the Block: The New Way to Calm Crying and Help Your Newborn Baby Sleep Longer](../books/the-happiest-baby-on-the-block.md)** by Harvey Karp: This classic parenting book offers soothing techniques for newborns, which could be helpful when using the stroller for infants.  
 * **Go Ahead, Stop and Pee: Running During Pregnancy and Postpartum** by PrecisionPT: This book provides science-based advice for mothers who want to continue running before and after childbirth, making it a relevant companion to a jogging stroller.  
 * **The Minimalist Mom** by Rachel Jonat: Taking a contrasting approach, this book encourages parents to live with less baby gear, offering a different perspective on the necessity of high-end equipment.

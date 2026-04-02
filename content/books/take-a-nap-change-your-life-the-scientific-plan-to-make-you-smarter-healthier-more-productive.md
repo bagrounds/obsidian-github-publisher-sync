@@ -7,7 +7,7 @@ share: true
 CTA: 🛌 Revitalize existence.
 affiliate link: https://amzn.to/3U9wZ6E
 ---
-[Home](/content/index.md) > [Books](/content/books/index.md) | [😴🎡 The Nap Wheel](/content/articles/the-nap-wheel.md)  
+[Home](../index.md) > [Books](./index.md) | [😴🎡 The Nap Wheel](../articles/the-nap-wheel.md)  
 # 😴🧠📈 Take a Nap! Change Your Life.: The Scientific Plan to Make You Smarter, Healthier, More Productive  
 [🛒 Take a Nap! Change Your Life.: The Scientific Plan to Make You Smarter, Healthier, More Productive. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3U9wZ6E)  
   
@@ -35,20 +35,20 @@ affiliate link: https://amzn.to/3U9wZ6E
   
 ### 📚 Similar Book Recommendations  
   
-* **[😴💭 Why We Sleep: Unlocking the Power of Sleep and Dreams](/content/books/why-we-sleep-unlocking-the-power-of-sleep-and-dreams.md) by Matthew Walker, PhD:** 🧠 A comprehensive deep dive into the science of sleep and dreams, this 📰 New York Times bestseller explains the vital role sleep plays in every aspect of our physical and mental health.  
+* **[😴💭 Why We Sleep: Unlocking the Power of Sleep and Dreams](./why-we-sleep-unlocking-the-power-of-sleep-and-dreams.md) by Matthew Walker, PhD:** 🧠 A comprehensive deep dive into the science of sleep and dreams, this 📰 New York Times bestseller explains the vital role sleep plays in every aspect of our physical and mental health.  
 * 📖 **The Sleep Revolution: Transforming Your Life, One Night at a Time by Arianna Huffington:** 👩‍💼 The co-founder of The Huffington Post makes a compelling case for the importance of sleep, drawing on scientific research and personal anecdotes to show how sleep deprivation negatively impacts our lives.  
 * 📖 **Sleep Smarter: 21 Essential Strategies to Sleep Your Way to a Better Body, Better Health, and Bigger Success by Shawn Stevenson:** ✅ This book provides actionable tips for improving sleep quality, from optimizing your sleep environment to understanding the connection between diet and rest.  
-* **[😴🔬 The Science of Sleep: What It Is, How It Works, and Why It Matters](/content/books/the-science-of-sleep-what-it-is-how-it-works-and-why-it-matters.md) by Wallace B. Mendelson:** 🧑‍🔬 This book offers an accessible scientific account of sleep science, helping readers understand their personal relationship with sleep and develop better sleep habits.  
+* **[😴🔬 The Science of Sleep: What It Is, How It Works, and Why It Matters](./the-science-of-sleep-what-it-is-how-it-works-and-why-it-matters.md) by Wallace B. Mendelson:** 🧑‍🔬 This book offers an accessible scientific account of sleep science, helping readers understand their personal relationship with sleep and develop better sleep habits.  
   
 ### 📚 Contrasting and Creatively Related Book Recommendations  
   
-* **[😴📈 Rest: Why You Get More Done When You Work Less](/content/books/rest-why-you-get-more-done-when-you-work-less.md) by Alex Soojung-Kim Pang:** 🧘‍♀️ This book argues that rest is not the opposite of work, but an essential component of it. It explores how deliberate rest can enhance 🎨 creativity and 🚀 productivity.  
-* **[🤿💼 Deep Work: Rules for Focused Success in a Distracted World](/content/books/deep-work.md) by Cal Newport:** 👨‍💻 Newport's work provides strategies for cultivating intense focus in a world of constant distractions, a skill that complements the restorative benefits of napping.  
-* **[➖💯 Essentialism: The Disciplined Pursuit of Less](/content/books/essentialism-the-disciplined-pursuit-of-less.md) by Greg McKeown:** 🎯 This book challenges the "more is better" mindset and advocates for focusing on what is truly essential to achieve greater 🚀 productivity and 🧘‍♀️ fulfillment.  
+* **[😴📈 Rest: Why You Get More Done When You Work Less](./rest-why-you-get-more-done-when-you-work-less.md) by Alex Soojung-Kim Pang:** 🧘‍♀️ This book argues that rest is not the opposite of work, but an essential component of it. It explores how deliberate rest can enhance 🎨 creativity and 🚀 productivity.  
+* **[🤿💼 Deep Work: Rules for Focused Success in a Distracted World](./deep-work.md) by Cal Newport:** 👨‍💻 Newport's work provides strategies for cultivating intense focus in a world of constant distractions, a skill that complements the restorative benefits of napping.  
+* **[➖💯 Essentialism: The Disciplined Pursuit of Less](./essentialism-the-disciplined-pursuit-of-less.md) by Greg McKeown:** 🎯 This book challenges the "more is better" mindset and advocates for focusing on what is truly essential to achieve greater 🚀 productivity and 🧘‍♀️ fulfillment.  
 * 📖 **Four Thousand Weeks: Time Management for Mortals by Oliver Burkeman:** ⏳ A philosophical take on productivity, this book encourages readers to embrace their limitations and focus on what truly matters in their finite lives.  
 * 📖 **Work Won't Love You Back: How Devotion to Our Jobs Keeps Us Exploited, Exhausted, and Alone by Sarah Jaffe:** 😔 This book offers a critical perspective on modern work culture and the "do what you love" mantra, prompting a reevaluation of our relationship with work and the importance of rest.  
   
-## 💬 [Gemini](/content/software/gemini.md) Prompt (gemini-2.5-pro)  
+## 💬 [Gemini](../software/gemini.md) Prompt (gemini-2.5-pro)  
 > Write a markdown-formatted (start headings at level H2) book report, followed by a plethora of additional similar, contrasting, and creatively related book recommendations on Take a Nap! Change Your Life.: The Scientific Plan to Make You Smarter, Healthier, More Productive. Be thorough in content discussed but concise and economical with your language. Structure the report with section headings and bulleted lists to avoid long blocks of text.  
   
 ## 🐦 Tweet  

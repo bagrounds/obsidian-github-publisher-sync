@@ -8,8 +8,11 @@ Author:
 tags:
 affiliate link: https://amzn.to/3SzAlPy
 CTA: 💡 Embrace reason.
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_time: 2026-04-02T00:00:00Z
+force_analyze_links: false
 ---
-[Home](/content/index.md) > [Books](/content/books/index.md)  
+[Home](../index.md) > [Books](./index.md)  
 # 😈🌍🔬🕯️🌑 The Demon-Haunted World: Science as a Candle in the Dark  
 [🛒 The Demon-Haunted World: Science as a Candle in the Dark. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3SzAlPy)  
   
@@ -73,8 +76,8 @@ This book offers a surprisingly accessible and passionate defense of scientific 
 "The Demon-Haunted World" is a highly regarded work, praised for its clarity, accessibility, and passionate defense of science. Sagan's credentials as an astronomer and science communicator lend significant authority to his arguments. The book is backed by numerous examples and references to scientific studies, demonstrating a commitment to evidence-based reasoning. Reviews from reputable sources consistently highlight the book's importance and relevance in an age of misinformation. Ann Druyan, Sagan's wife, a writer and producer, contributed to the book's creation. The book's strength lies in its ability to make complex scientific concepts accessible to a broad audience. However, some critics might argue that it oversimplifies certain issues or that its tone can be overly didactic. Nonetheless, its enduring relevance and widespread acclaim solidify its status as a valuable resource for promoting scientific literacy.  
   
 ### Book Recommendations 📚  
-* **Best alternate book on the same topic:** [🧪👎 Bad Science: Quacks, Hacks, and Big Pharma Flacks](/content/books/bad-science-quacks-hacks-and-big-pharma-flacks.md) by Ben Goldacre. This book gives many real world examples of bad science, and how to spot it. 🧪  
-* **Best book that is tangentially related:** [🤔🐇🐢 Thinking, Fast and Slow](/content/books/thinking-fast-and-slow.md) by Daniel Kahneman. This book dives deep into the cognitive biases that Sagan warns against. 🧠  
+* **Best alternate book on the same topic:** [🧪👎 Bad Science: Quacks, Hacks, and Big Pharma Flacks](./bad-science-quacks-hacks-and-big-pharma-flacks.md) by Ben Goldacre. This book gives many real world examples of bad science, and how to spot it. 🧪  
+* **Best book that is tangentially related:** [🤔🐇🐢 Thinking, Fast and Slow](./thinking-fast-and-slow.md) by Daniel Kahneman. This book dives deep into the cognitive biases that Sagan warns against. 🧠  
 * **Best book that is diametrically opposed:** "The Case for Faith" by Lee Strobel. This book presents arguments for religious faith and challenges scientific skepticism. 🙏  
 * **Best fiction book that incorporates related ideas:** "Contact" by Carl Sagan. This novel explores the search for extraterrestrial intelligence and the implications of scientific discovery, and was written by the same author. 👽  
 * **Best book that is more general:** "A Short History of Nearly Everything" by Bill Bryson. This book covers a wide range of scientific topics in an engaging and accessible manner. 🌍  

@@ -10,7 +10,7 @@ Channel: Heather Cox Richardson
 tags:
 youtube: https://youtu.be/O3BRI6Ng7ZQ
 ---
-[Home](/content/index.md) > [Videos](/content/videos/index.md)  
+[Home](../index.md) > [Videos](./index.md)  
 # 📢👁️🗣️💡 It's Our Job to Make Sure People Know the Truth  
 ![It's Our Job to Make Sure People Know the Truth](https://youtu.be/O3BRI6Ng7ZQ)  
   
@@ -28,16 +28,16 @@ Richardson discusses several key issues related to the current political climate
 ## 📚 Book Recommendations  
 * 📖 **On Government Cuts and Public Policy:**  
     * *The Shock Doctrine: The Rise of Disaster Capitalism* by Naomi Klein  
-    * [🏛️⛓️ Democracy in Chains: The Deep History of the Radical Right's Stealth Plan for America](/content/books/democracy-in-chains-the-deep-history-of-the-radical-rights-stealth-plan-for-america.md) by Nancy MacLean  
+    * [🏛️⛓️ Democracy in Chains: The Deep History of the Radical Right's Stealth Plan for America](../books/democracy-in-chains-the-deep-history-of-the-radical-rights-stealth-plan-for-america.md) by Nancy MacLean  
 * 📣 **On Public Engagement and Activism:**  
     * *Rules for Radicals: A Pragmatic Primer for Realistic Radicals* by Saul Alinsky  
     * *This Is an Uprising: How Nonviolent Revolt Is Shaping the Twenty-First Century* by Mark Engler and Paul Engler  
 * 🗣️ **On Political Communication and Media:**  
-    * [🤔🐇🐢 Thinking, Fast and Slow](/content/books/thinking-fast-and-slow.md) by Daniel Kahneman (for understanding cognitive biases in public perception)  
+    * [🤔🐇🐢 Thinking, Fast and Slow](../books/thinking-fast-and-slow.md) by Daniel Kahneman (for understanding cognitive biases in public perception)  
     * *Contagious: How to Build Word of Mouth in the Digital Age* by Jonah Berger  
 * ⚖️ **On Human Rights and Social Justice (related to concentration camps):**  
     * *Ordinary Men: Reserve Police Battalion 101 and the Final Solution in Poland* by Christopher R. Browning (for understanding how ordinary people can participate in atrocities)  
-    * [🧑🏿⛓️🙈 The New Jim Crow: Mass Incarceration in the Age of Colorblindness](/content/books/the-new-jim-crow-mass-incarceration-in-the-age-of-colorblindness.md) by Michelle Alexander  
+    * [🧑🏿⛓️🙈 The New Jim Crow: Mass Incarceration in the Age of Colorblindness](../books/the-new-jim-crow-mass-incarceration-in-the-age-of-colorblindness.md) by Michelle Alexander  
   
 ## 🐦 Tweet  
 <blockquote class="twitter-tweet" data-theme="dark"><p lang="en" dir="ltr">📢👁️🗣️💡 It&#39;s Our Job to Make Sure People Know the Truth<a href="https://twitter.com/HC_Richardson?ref_src=twsrc%5Etfw">@HC_Richardson</a> <br>💰📉 Government Funding Cuts | 😥📢 Public Helplessness | 🗳️🏛️ Local Elections | 📣✍️ Communication Strategies | ⚠️📢 Public Awareness | 🚧😥 Concentration Camps | 💪🌟 Call to Action<a href="https://t.co/qCY7M34u7B">https://t.co/qCY7M34u7B</a></p>&mdash; Bryan Grounds (@bagrounds) <a href="https://twitter.com/bagrounds/status/1942972188342276371?ref_src=twsrc%5Etfw">July 9, 2025</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>

@@ -7,7 +7,7 @@ share: true
 CTA: ✊ Defend enfranchisement.
 affiliate link: https://amzn.to/47BTSHt
 ---
-[Home](/content/index.md) > [Books](/content/books/index.md)  
+[Home](../index.md) > [Books](./index.md)  
 # 🗳️⬇️🏛️ One Person, No Vote: How Voter Suppression Is Destroying Our Democracy  
 [🛒 One Person, No Vote: How Voter Suppression Is Destroying Our Democracy. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/47BTSHt)  
   
@@ -78,7 +78,7 @@ affiliate link: https://amzn.to/47BTSHt
   
 ### 📖 Similar  
 * 🔥 White Rage by Carol Anderson  
-* ⛓️ [🧑🏿⛓️🙈 The New Jim Crow: Mass Incarceration in the Age of Colorblindness](/content/books/the-new-jim-crow-mass-incarceration-in-the-age-of-colorblindness.md) by Michelle Alexander  
+* ⛓️ [🧑🏿⛓️🙈 The New Jim Crow: Mass Incarceration in the Age of Colorblindness](./the-new-jim-crow-mass-incarceration-in-the-age-of-colorblindness.md) by Michelle Alexander  
 * ⏰ Our Time Is Now by Stacey Abrams  
 * ⚔️ The Voting Rights War by Gloria Browne-Marshall  
   
@@ -88,8 +88,8 @@ affiliate link: https://amzn.to/47BTSHt
 * 💥 Election Meltdown: Dirty Tricks, Rabid Partisanship, and the Threat to American Democracy by Richard L. Hasen  
   
 ### ➕ Related  
-* [💰🤫 Dark Money: The Hidden History of the Billionaires Behind the Rise of the Radical Right](/content/books/dark-money-the-hidden-history-of-the-billionaires-behind-the-rise-of-the-radical-right.md) by Jane Mayer  
-* [🏛️⛓️ Democracy in Chains: The Deep History of the Radical Right's Stealth Plan for America](/content/books/democracy-in-chains-the-deep-history-of-the-radical-rights-stealth-plan-for-america.md) by Nancy MacLean  
+* [💰🤫 Dark Money: The Hidden History of the Billionaires Behind the Rise of the Radical Right](./dark-money-the-hidden-history-of-the-billionaires-behind-the-rise-of-the-radical-right.md) by Jane Mayer  
+* [🏛️⛓️ Democracy in Chains: The Deep History of the Radical Right's Stealth Plan for America](./democracy-in-chains-the-deep-history-of-the-radical-rights-stealth-plan-for-america.md) by Nancy MacLean  
 * 🗳️ Give Us the Ballot: The Modern Struggle for Voting Rights in America by Ari Berman  
   
 ## 🫵 What Do You Think?  

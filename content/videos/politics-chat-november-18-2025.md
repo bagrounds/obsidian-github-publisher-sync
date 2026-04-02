@@ -10,7 +10,7 @@ Channel: Heather Cox Richardson
 tags:
 youtube: https://www.youtube.com/embed/ESDFH9KRzdE
 ---
-[Home](/content/index.md) > [Videos](/content/videos/index.md)  
+[Home](../index.md) > [Videos](./index.md)  
 # 🏛️🗣️🗓️ Politics Chat, November 18, 2025  
 ![Politics Chat, November 18, 2025](https://www.youtube.com/embed/ESDFH9KRzdE)  
   
@@ -50,9 +50,9 @@ youtube: https://www.youtube.com/embed/ESDFH9KRzdE
   
 ### ↔️ Similar  
   
-* [🇺🇲⚔️ How the South Won the Civil War: Oligarchy, Democracy, and the Continuing Fight for the Soul of America](/content/books/how-the-south-won-the-civil-war-oligarchy-democracy-and-the-continuing-fight-for-the-soul-of-america.md) by Heather Cox Richardson. 🇺🇸 This book is relevant as it provides a historical framework for understanding the deep-rooted political and economic divisions discussed in the video, continuing the speaker’s theme of oligarchic influence in American democracy.  
+* [🇺🇲⚔️ How the South Won the Civil War: Oligarchy, Democracy, and the Continuing Fight for the Soul of America](../books/how-the-south-won-the-civil-war-oligarchy-democracy-and-the-continuing-fight-for-the-soul-of-america.md) by Heather Cox Richardson. 🇺🇸 This book is relevant as it provides a historical framework for understanding the deep-rooted political and economic divisions discussed in the video, continuing the speaker’s theme of oligarchic influence in American democracy.  
 * 🏛️ The Imperial Presidency by Arthur M. Schlesinger Jr. 👑 The work is relevant because it explores the expansion of executive power, particularly in foreign policy and war, offering a critical lens on the current administration’s use of tariffs and geopolitical actions like Operation Southern Spear.  
-* [👑🚫📜2️⃣0️⃣ On Tyranny: Twenty Lessons from the Twentieth Century](/content/books/on-tyranny.md) by Timothy Snyder. 🛑 This brief guide offers lessons from history on recognizing and resisting authoritarianism, directly relating to the speaker’s commentary on Trump’s authoritarian performance in front of MBS and the erosion of democratic norms like non-partisan redistricting.  
+* [👑🚫📜2️⃣0️⃣ On Tyranny: Twenty Lessons from the Twentieth Century](../books/on-tyranny.md) by Timothy Snyder. 🛑 This brief guide offers lessons from history on recognizing and resisting authoritarianism, directly relating to the speaker’s commentary on Trump’s authoritarian performance in front of MBS and the erosion of democratic norms like non-partisan redistricting.  
   
 ### 🆚 Contrasting  
   

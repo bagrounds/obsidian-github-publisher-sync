@@ -7,7 +7,7 @@ share: true
 affiliate link: https://amzn.to/3IoKflF
 CTA: 🛑 Resist ignorance.
 ---
-[Home](/content/index.md) > [Books](/content/books/index.md)  
+[Home](../index.md) > [Books](./index.md)  
 # 💀👨‍🏫 The Death of Expertise: The Campaign Against Established Knowledge and Why It Matters  
 [🛒 The Death of Expertise: The Campaign Against Established Knowledge and Why It Matters. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3IoKflF)  
   
@@ -58,9 +58,9 @@ The "💀 death of expertise" carries profound implications for society:
   
 ### ✨ Creatively Related Books  
   
-* **[🤔🐇🐢 Thinking, Fast and Slow](/content/books/thinking-fast-and-slow.md)** by Daniel Kahneman: This influential book on cognitive biases and heuristics helps explain *why* people often resist logical arguments and 👨‍🏫 expert advice, detailing the dual processes of human thought (System 1 and System 2) that influence our judgments and decision-making.  
-* **[😇🧠 The Righteous Mind: Why Good People Are Divided by Politics and Religion](/content/books/the-righteous-mind.md)** by Jonathan Haidt: Haidt explores moral psychology and the intuitive basis of our moral judgments, shedding light on why people cling to beliefs, even in the face of contradictory evidence, and how tribalism impacts our engagement with truth and 👨‍🏫 expertise.  
-* **[🙉📢😵‍💫🔇 Noise: A Flaw in Human Judgment](/content/books/noise.md)** by Daniel Kahneman, Olivier Sibony, and Cass Sunstein: This book investigates the problem of variability in human judgment, even among 👨‍🏫 experts. It acknowledges the value of 👨‍🏫 expertise but delves into the inconsistencies and biases that can affect 👨‍🏫 expert decisions, adding a nuanced layer to the discussion of trust in 👨‍🏫 experts.  
+* **[🤔🐇🐢 Thinking, Fast and Slow](./thinking-fast-and-slow.md)** by Daniel Kahneman: This influential book on cognitive biases and heuristics helps explain *why* people often resist logical arguments and 👨‍🏫 expert advice, detailing the dual processes of human thought (System 1 and System 2) that influence our judgments and decision-making.  
+* **[😇🧠 The Righteous Mind: Why Good People Are Divided by Politics and Religion](./the-righteous-mind.md)** by Jonathan Haidt: Haidt explores moral psychology and the intuitive basis of our moral judgments, shedding light on why people cling to beliefs, even in the face of contradictory evidence, and how tribalism impacts our engagement with truth and 👨‍🏫 expertise.  
+* **[🙉📢😵‍💫🔇 Noise: A Flaw in Human Judgment](./noise.md)** by Daniel Kahneman, Olivier Sibony, and Cass Sunstein: This book investigates the problem of variability in human judgment, even among 👨‍🏫 experts. It acknowledges the value of 👨‍🏫 expertise but delves into the inconsistencies and biases that can affect 👨‍🏫 expert decisions, adding a nuanced layer to the discussion of trust in 👨‍🏫 experts.  
 * 🗣️ **Talking to Strangers: What We Should Know about the People We Don't Know** by Malcolm Gladwell: Gladwell examines the challenges and pitfalls of human interaction and judgment when encountering unfamiliar people or situations. This relates to the "💀 death of expertise" by exploring how fundamental human tendencies can lead to misinterpretations or misjudgments of credibility and intent.  
   
 ## 💬 [Gemini](https://gemini.google.com) Prompt (gemini-2.5-flash)  

@@ -9,7 +9,7 @@ Platform:
 Channel: PBS NewsHour
 tags:
 ---
-[Home](/content/index.md) > [Videos](/content/videos/index.md)  
+[Home](../index.md) > [Videos](./index.md)  
 # News Wrap: Trump says he’s ‘not joking’ about a third term as president  
 ![News Wrap: Trump says he’s ‘not joking’ about a third term as president](https://youtu.be/q-_6xaPNldM)  
   

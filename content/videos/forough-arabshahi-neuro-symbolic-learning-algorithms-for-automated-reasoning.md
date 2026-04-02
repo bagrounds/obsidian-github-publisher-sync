@@ -10,7 +10,7 @@ Channel: Ai2
 tags:
 youtube: https://youtu.be/83sTGeR6kdg
 ---
-[Home](/content/index.md) > [Videos](/content/videos/index.md)  
+[Home](../index.md) > [Videos](./index.md)  
 # 🧠💡🧮🧠 Forough Arabshahi: Neuro-Symbolic Learning Algorithms for Automated Reasoning  
 ![Forough Arabshahi: Neuro-Symbolic Learning Algorithms for Automated Reasoning](https://youtu.be/83sTGeR6kdg)  
   
@@ -53,15 +53,15 @@ youtube: https://youtu.be/83sTGeR6kdg
   
 ### ↔️ Similar  
   
-* [🧠💻🤖 Deep Learning](/content/books/deep-learning.md) by Ian Goodfellow, Yoshua Bengio, and Aaron Courville is essential for understanding the connectionist foundation and state-of-the-art neural network architectures that form half of the hybrid approach.  
-* [❓➡️💡 The Book of Why: The New Science of Cause and Effect](/content/books/the-book-of-why.md) by Judea Pearl and Dana Mackenzie explores the formal logic and mathematical language necessary for structured symbolic reasoning and causality, the other half of NeSy AI.  
+* [🧠💻🤖 Deep Learning](../books/deep-learning.md) by Ian Goodfellow, Yoshua Bengio, and Aaron Courville is essential for understanding the connectionist foundation and state-of-the-art neural network architectures that form half of the hybrid approach.  
+* [❓➡️💡 The Book of Why: The New Science of Cause and Effect](../books/the-book-of-why.md) by Judea Pearl and Dana Mackenzie explores the formal logic and mathematical language necessary for structured symbolic reasoning and causality, the other half of NeSy AI.  
   
 ### 🆚 Contrasting  
   
 * 🤖 Rebooting AI Building Artificial Intelligence We Can Trust by Gary Marcus and Ernest Davis presents a detailed argument on the limitations of purely deep learning systems and advocates for the necessity of structured, symbolic representation to achieve robust AI.  
-* [🤔🐇🐢 Thinking, Fast and Slow](/content/books/thinking-fast-and-slow.md) by Daniel Kahneman describes the two systems of human thought - intuitive (System 1) and deliberative (System 2) - providing a cognitive framework often invoked in the dual-system design of neuro-symbolic models.  
+* [🤔🐇🐢 Thinking, Fast and Slow](../books/thinking-fast-and-slow.md) by Daniel Kahneman describes the two systems of human thought - intuitive (System 1) and deliberative (System 2) - providing a cognitive framework often invoked in the dual-system design of neuro-symbolic models.  
   
 ### 🎨 Creatively Related  
   
-* [♾️📐🎶🥨 Gödel, Escher, Bach: An Eternal Golden Braid](/content/books/godel-escher-bach.md) by Douglas Hofstadter explores recursion, self-reference, and formal systems, offering a philosophical and mathematical perspective on the origins of intelligence and computational structure.  
+* [♾️📐🎶🥨 Gödel, Escher, Bach: An Eternal Golden Braid](../books/godel-escher-bach.md) by Douglas Hofstadter explores recursion, self-reference, and formal systems, offering a philosophical and mathematical perspective on the origins of intelligence and computational structure.  
 * 💻 Structure and Interpretation of Computer Programs by Harold Abelson and Gerald Jay Sussman teaches programming principles centered on hierarchical abstraction and recursive thinking, highly relevant to designing structured algorithms like Tree-LSTMs.

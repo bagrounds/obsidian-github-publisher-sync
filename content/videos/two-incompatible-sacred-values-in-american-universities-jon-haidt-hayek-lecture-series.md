@@ -10,7 +10,7 @@ Channel: Duke University Department of Political Science
 tags:
 youtube: https://youtu.be/Gatn5ameRr8
 ---
-[Home](/content/index.md) > [Videos](/content/videos/index.md) | [🧠🤝🐘 Jonathan Haidt](/content/people/jonathan-haidt.md)  
+[Home](../index.md) > [Videos](./index.md) | [🧠🤝🐘 Jonathan Haidt](../people/jonathan-haidt.md)  
 # 🏛️⚖️💥 «Two incompatible sacred values in American universities» Jon Haidt, Hayek Lecture Series  
 ![«Two incompatible sacred values in American universities» Jon Haidt, Hayek Lecture Series](https://youtu.be/Gatn5ameRr8)  
   
@@ -33,7 +33,7 @@ Haidt's perspective presents a compelling critique of modern higher education, b
 For a better understanding, one could explore the arguments of scholars who see social justice as a necessary corrective to historical biases within academia. It would also be valuable to examine the data on political diversity in universities more closely and to consider how different disciplines might be affected by these trends. Lastly, exploring the history of university missions and how they have evolved over time could provide a richer context for Haidt's claims.  
   
 ## 📚 Book Recommendations  
-* [🤕👶 The Coddling of the American Mind: How Good Intentions and Bad Ideas Are Setting Up a Generation for Failure](/content/books/the-coddling-of-the-american-mind-how-good-intentions-and-bad-ideas-are-setting-up-a-generation-for-failure.md) by Greg Lukianoff and Jonathan Haidt. This book expands on the ideas of the lecture, exploring how a culture of safetyism on college campuses is making students and society more fragile.  
+* [🤕👶 The Coddling of the American Mind: How Good Intentions and Bad Ideas Are Setting Up a Generation for Failure](../books/the-coddling-of-the-american-mind-how-good-intentions-and-bad-ideas-are-setting-up-a-generation-for-failure.md) by Greg Lukianoff and Jonathan Haidt. This book expands on the ideas of the lecture, exploring how a culture of safetyism on college campuses is making students and society more fragile.  
 * So You've Been Publicly Shamed by Jon Ronson. This book explores the rise of public shaming on the internet and its psychological and social effects, which is creatively related to the "victimhood culture" described in the video.  
-* [✊🏿 How To Be An Antiracist](/content/books/how-to-be-an-antiracist.md) by Ibram X. Kendi. This book offers a contrasting perspective on how to achieve social justice, arguing that the opposite of racist is not "not racist" but "antiracist," which requires active work to dismantle racist systems.  
+* [✊🏿 How To Be An Antiracist](../books/how-to-be-an-antiracist.md) by Ibram X. Kendi. This book offers a contrasting perspective on how to achieve social justice, arguing that the opposite of racist is not "not racist" but "antiracist," which requires active work to dismantle racist systems.  
 * Justice: What's the Right Thing to Do? by Michael J. Sandel. This book provides an overview of different moral and political philosophies, which can help readers evaluate Haidt's arguments about the goals and values of a university.

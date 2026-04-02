@@ -7,7 +7,7 @@ share: true
 affiliate link: https://amzn.to/4ln5XnQ
 CTA: Reclaim your brain.
 ---
-[Home](/content/index.md) > [Books](/content/books/index.md)  
+[Home](../index.md) > [Books](./index.md)  
 # 🧠📈 Outsmart Yourself: Brain-Based Strategies for a Bettery You  
 [🛒 Outsmart Yourself: Brain-Based Strategies for a Bettery You. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4ln5XnQ)  
   
@@ -68,26 +68,26 @@ The core of "Outsmart Yourself" lies in bridging the gap 🌉 between understand
   
 ### 🧠 Similar Reads (Neuroscience and Self-Improvement)  
   
-* **[⚛️🔄 Atomic Habits: An Easy & Proven Way to Build Good Habits & Break Bad Ones](/content/books/atomic-habits.md) by James Clear:** Focuses on the science of habit formation 🔁 and provides a practical framework for building good habits and breaking bad ones through small, incremental changes.  
-* **[🔄🧠💪 The Power of Habit: Why We Do What We Do in Life and Business](/content/books/the-power-of-habit.md) by Charles Duhigg:** Explores the science behind why habits exist and how they can be changed 🔄, looking at habits in individuals' lives, organizations, and societies.  
-* **[🤔🐇🐢 Thinking, Fast and Slow](/content/books/thinking-fast-and-slow.md) by Daniel Kahneman:** While broader, this book introduces the two systems of thought that drive the way we think and make choices 🤔 (System 1: fast, intuitive, and emotional; System 2: slow, deliberate, and logical), highly relevant to understanding our automatic brain 🧠.  
-* **[🤫🧠 Subliminal: How Your Unconscious Mind Rules Your Behavior](/content/books/subliminal-how-your-unconscious-mind-rules-your-behavior.md) by Leonard Mlodinow:** Explores the profound influence of the subconscious on our perceptions, behaviors, and decisions.  
-* **[🧠💡📈🏠🏢🧑‍🎓 Brain Rules: 12 Principles for Surviving and Thriving at Work, Home, and School](/content/books/brain-rules-12-principles-for-surviving-and-thriving-at-work-home-and-school.md) by John Medina:** Presents 12 principles for how the brain works 🧠 and how to apply them to daily life, covering topics like exercise 🏃‍♀️, sleep 😴, stress 😫, and memory 💭.  
+* **[⚛️🔄 Atomic Habits: An Easy & Proven Way to Build Good Habits & Break Bad Ones](./atomic-habits.md) by James Clear:** Focuses on the science of habit formation 🔁 and provides a practical framework for building good habits and breaking bad ones through small, incremental changes.  
+* **[🔄🧠💪 The Power of Habit: Why We Do What We Do in Life and Business](./the-power-of-habit.md) by Charles Duhigg:** Explores the science behind why habits exist and how they can be changed 🔄, looking at habits in individuals' lives, organizations, and societies.  
+* **[🤔🐇🐢 Thinking, Fast and Slow](./thinking-fast-and-slow.md) by Daniel Kahneman:** While broader, this book introduces the two systems of thought that drive the way we think and make choices 🤔 (System 1: fast, intuitive, and emotional; System 2: slow, deliberate, and logical), highly relevant to understanding our automatic brain 🧠.  
+* **[🤫🧠 Subliminal: How Your Unconscious Mind Rules Your Behavior](./subliminal-how-your-unconscious-mind-rules-your-behavior.md) by Leonard Mlodinow:** Explores the profound influence of the subconscious on our perceptions, behaviors, and decisions.  
+* **[🧠💡📈🏠🏢🧑‍🎓 Brain Rules: 12 Principles for Surviving and Thriving at Work, Home, and School](./brain-rules-12-principles-for-surviving-and-thriving-at-work-home-and-school.md) by John Medina:** Presents 12 principles for how the brain works 🧠 and how to apply them to daily life, covering topics like exercise 🏃‍♀️, sleep 😴, stress 😫, and memory 💭.  
   
 ### ⚖️ Contrasting Reads (Different Perspectives on Change)  
   
-* **[🔦💡 Man's Search for Meaning](/content/books/mans-search-for-meaning.md) by Viktor Frankl:** While not brain-based 🧠, this book emphasizes the human search for meaning in life as a primary motivational force 💪, offering a profound psychological and philosophical perspective on overcoming adversity 😔.  
-* **[🌱🧘🏼‍♀️🏆 Mindset: The New Psychology of Success](/content/books/mindset.md) by Carol S. Dweck:** Focuses on the power of mindset (fixed vs. growth) in shaping our lives, learning 🧑‍🏫, and success 🏆, offering a different lens through which to view potential and change.  
+* **[🔦💡 Man's Search for Meaning](./mans-search-for-meaning.md) by Viktor Frankl:** While not brain-based 🧠, this book emphasizes the human search for meaning in life as a primary motivational force 💪, offering a profound psychological and philosophical perspective on overcoming adversity 😔.  
+* **[🌱🧘🏼‍♀️🏆 Mindset: The New Psychology of Success](./mindset.md) by Carol S. Dweck:** Focuses on the power of mindset (fixed vs. growth) in shaping our lives, learning 🧑‍🏫, and success 🏆, offering a different lens through which to view potential and change.  
 * 🙅‍♀️ **The Subtle Art of Not Giving a F\*ck by Mark Manson:** Takes a more unconventional and philosophical approach to self-help, focusing on accepting limitations and choosing what to care about ❤️‍🩹, contrasting with purely strategy-based methods.  
-* **[🌊🧘🧠📈 Flow: The Psychology of Optimal Experience](/content/books/flow-the-psychology-of-optimal-experience.md) by Mihaly Csikszentmihalyi:** Explores the concept of "flow," a state of complete absorption in an activity 🧘‍♀️, offering a psychological perspective on motivation and happiness 😄 that is experience-focused rather than solely brain-mechanics focused.  
+* **[🌊🧘🧠📈 Flow: The Psychology of Optimal Experience](./flow-the-psychology-of-optimal-experience.md) by Mihaly Csikszentmihalyi:** Explores the concept of "flow," a state of complete absorption in an activity 🧘‍♀️, offering a psychological perspective on motivation and happiness 😄 that is experience-focused rather than solely brain-mechanics focused.  
   
 ### 🎨 Creatively Related Reads (Exploring the Mind and Human Experience)  
   
-* **[🔮🤷🏼‍♀️🤪 Predictably Irrational: The Hidden Forces That Shape Our Decisions](/content/books/predictably-irrational.md) by Dan Ariely:** Explores the irrationality of human behavior in economic contexts 💸, offering often surprising insights into why we make the decisions we do.  
+* **[🔮🤷🏼‍♀️🤪 Predictably Irrational: The Hidden Forces That Shape Our Decisions](./predictably-irrational.md) by Dan Ariely:** Explores the irrationality of human behavior in economic contexts 💸, offering often surprising insights into why we make the decisions we do.  
 * 😵‍💫 **The Paradox of Choice: Why More Is Less by Barry Schwartz:** Examines the negative effects of having too many choices on our psychological well-being 😔, creativity 🎨, and decision-making 🤔, offering a unique perspective on a modern challenge.  
-* **[🏎️⛽ Drive: The Surprising Truth About What Motivates Us](/content/books/drive-the-surprising-truth-about-what-motivates-us.md) by Daniel H. Pink:** Looks at the science of motivation 💪, arguing for the importance of autonomy, mastery, and purpose 🎯, which complements brain-based strategies by exploring the drivers behind behavior.  
-* **[🎭🤫🧠 Incognito: The Secret Lives of the Brain](/content/books/incognito.md) by David Eagleman:** A fascinating journey into the hidden workings of the conscious and subconscious mind 🧠, offering intriguing examples of how our brains operate beneath our awareness.  
-* **[⚕️💀 Being Mortal: Medicine and What Matters in the End](/content/books/being-mortal-medicine-and-what-matters-in-the-end.md) by Atul Gawande:** While seemingly unrelated, this book prompts reflection on what makes life meaningful in the face of aging 👴 and mortality 🪦, indirectly influencing perspectives on personal goals 🎯 and well-being 😊.  
+* **[🏎️⛽ Drive: The Surprising Truth About What Motivates Us](./drive-the-surprising-truth-about-what-motivates-us.md) by Daniel H. Pink:** Looks at the science of motivation 💪, arguing for the importance of autonomy, mastery, and purpose 🎯, which complements brain-based strategies by exploring the drivers behind behavior.  
+* **[🎭🤫🧠 Incognito: The Secret Lives of the Brain](./incognito.md) by David Eagleman:** A fascinating journey into the hidden workings of the conscious and subconscious mind 🧠, offering intriguing examples of how our brains operate beneath our awareness.  
+* **[⚕️💀 Being Mortal: Medicine and What Matters in the End](./being-mortal-medicine-and-what-matters-in-the-end.md) by Atul Gawande:** While seemingly unrelated, this book prompts reflection on what makes life meaningful in the face of aging 👴 and mortality 🪦, indirectly influencing perspectives on personal goals 🎯 and well-being 😊.  
   
-## 💬 [Gemini](/content/software/gemini.md) Prompt (gemini-2.5-flash-preview-04-17)  
+## 💬 [Gemini](../software/gemini.md) Prompt (gemini-2.5-flash-preview-04-17)  
 > Write a markdown-formatted (start headings at level H2) book report, followed by a plethora of additional similar, contrasting, and creatively related book recommendations on Outsmart Yourself: Brain-Based Strategies for a Bettery You. Be thorough in content discussed but concise and economical with your language. Structure the report with section headings and bulleted lists to avoid long blocks of text.

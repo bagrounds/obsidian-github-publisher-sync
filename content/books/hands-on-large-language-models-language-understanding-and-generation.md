@@ -6,8 +6,12 @@ URL: https://bagrounds.org/books/hands-on-large-language-models-language-underst
 share: true
 CTA: 🤖 Master LLMs.
 affiliate link: https://amzn.to/4f2wnct
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_time: 2026-04-02T00:00:00Z
+force_analyze_links: false
+updated: 2026-04-02T11:26:03
 ---
-[Home](/content/index.md) > [Books](/content/books/index.md)  
+[Home](../index.md) > [Books](./index.md)  
 # 🤖🗣️ Hands-On Large Language Models: Language Understanding and Generation  
 [🛒 Hands-On Large Language Models: Language Understanding and Generation. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4f2wnct)  
   
@@ -40,7 +44,7 @@ affiliate link: https://amzn.to/4f2wnct
   
 * 🧱 **Build a Large Language Model (From Scratch) by Sebastian Raschka:** As the title suggests, this book takes a deep dive into the process of creating an LLM from the ground up, offering an unparalleled understanding of the underlying mechanics.  
 * 🏭 **AI Engineering: Building Applications with Foundation Models by Chip Huyen:** This book provides a comprehensive overview of the engineering principles and best practices for building real-world applications on top of large-scale AI models.  
-* **[🗣️💻 Natural Language Processing with Transformers](/content/books/natural-language-processing-with-transformers.md), Revised Edition by Lewis Tunstall, Leandro von Werra, and Thomas Wolf:** This book, written by engineers from Hugging Face, is a definitive guide to using the popular Transformers library for a wide range of NLP tasks.  
+* **[🗣️💻 Natural Language Processing with Transformers](./natural-language-processing-with-transformers.md), Revised Edition by Lewis Tunstall, Leandro von Werra, and Thomas Wolf:** This book, written by engineers from Hugging Face, is a definitive guide to using the popular Transformers library for a wide range of NLP tasks.  
 * ⚙️ **Practical Natural Language Processing by Sowmya Vajjala, Bodhisattwa Majumder, Anuj Gupta, and Harshit Surana:** This book provides a practical introduction to NLP, covering a wide range of techniques and applications.  
 * 🖐️ **Hands-On Machine Learning with Scikit-Learn, Keras & TensorFlow by Aurélien Géron:** A classic in the field, this book provides a comprehensive and practical guide to machine learning, with later editions including more on deep learning and NLP.  
   
@@ -49,16 +53,16 @@ affiliate link: https://amzn.to/4f2wnct
 * 🗣️ **Speech and Language Processing by Daniel Jurafsky and James H. Martin:** Often considered the bible of NLP, this textbook provides a comprehensive and rigorous introduction to the field, covering a vast range of topics from linguistic fundamentals to advanced algorithms.  
 * 💯 **The Hundred-Page Machine Learning Book by Andriy Burkov:** A concise yet thorough overview of the fundamental concepts and algorithms in machine learning.  
 * 📊 **Foundations of Statistical Natural Language Processing by Christopher D. Manning and Hinrich Schütze:** A classic text that delves into the statistical methods that form the bedrock of modern NLP.  
-* 🧠 **[🧠💻🤖 Deep Learning](/content/books/deep-learning.md) by Ian Goodfellow, Yoshua Bengio, and Aaron Courville:** A comprehensive and theoretical exploration of the field of deep learning, written by some of its leading pioneers.  
+* 🧠 **[🧠💻🤖 Deep Learning](./deep-learning.md) by Ian Goodfellow, Yoshua Bengio, and Aaron Courville:** A comprehensive and theoretical exploration of the field of deep learning, written by some of its leading pioneers.  
 * 🧪 **The Elements of Statistical Learning by Trevor Hastie, Robert Tibshirani, and Jerome Friedman:** A seminal work that provides a deep and mathematically grounded treatment of statistical learning methods.  
   
 ### 🎨 Creatively Related Books  
   
 #### ⚖️ On the Ethics and Societal Impact of AI  
   
-* **[📊📉🏛️ Weapons of Math Destruction: How Big Data Increases Inequality and Threatens Democracy](/content/books/weapons-of-math-destruction-how-big-data-increases-inequality-and-threatens-democracy.md) by Cathy O'Neil:** This book explores how big data and algorithms can perpetuate and even amplify inequality.  
+* **[📊📉🏛️ Weapons of Math Destruction: How Big Data Increases Inequality and Threatens Democracy](./weapons-of-math-destruction-how-big-data-increases-inequality-and-threatens-democracy.md) by Cathy O'Neil:** This book explores how big data and algorithms can perpetuate and even amplify inequality.  
 * 🌍 **Atlas of AI by Kate Crawford:** A critical examination of the hidden social, political, and environmental costs of artificial intelligence.  
-* **[👁️‍🗨️💰⛓️👤 The Age of Surveillance Capitalism: The Fight for a Human Future at the New Frontier of Power](/content/books/the-age-of-surveillance-capitalism.md) by Shoshana Zuboff:** A groundbreaking analysis of the new form of capitalism that uses human experience as raw material for commercial practices.  
+* **[👁️‍🗨️💰⛓️👤 The Age of Surveillance Capitalism: The Fight for a Human Future at the New Frontier of Power](./the-age-of-surveillance-capitalism.md) by Shoshana Zuboff:** A groundbreaking analysis of the new form of capitalism that uses human experience as raw material for commercial practices.  
 * ✊ **Algorithms of Oppression by Safiya Umoja Noble:** This book reveals how search engines and other algorithmic platforms can reinforce racism and other forms of discrimination.  
 * 🤖 **AI Ethics by Mark Coeckelbergh:** Provides a structured and accessible overview of the key ethical issues and debates surrounding artificial intelligence.  
   
@@ -66,9 +70,16 @@ affiliate link: https://amzn.to/4f2wnct
   
 * 🌿 **The Nature of Code by Daniel Shiffman:** A fun and engaging introduction to creative coding, showing how to simulate natural systems with code.  
 * 🎨 **Generative Art: A Practical Guide Using Processing by Matt Pearson:** This book provides a hands-on introduction to the world of generative art, teaching readers how to create their own algorithmic artwork.  
-* 📊 **Storytelling with Data by Cole Nussbaumer Knaflic:** A guide to the fundamentals of data visualization and how to communicate effectively with data.  
+* 📊 **[📖📊📈 Storytelling with Data: A Data Visualization Guide for Business Professionals](./storytelling-with-data-a-data-visualization-guide-for-business-professionals.md) by Cole Nussbaumer Knaflic:** A guide to the fundamentals of data visualization and how to communicate effectively with data.  
 * 📈 **Data-Driven Graphic Design by Andrew Richardson:** Explores the intersection of data, design, and programming to create visually compelling and informative graphics.  
 * 👩‍💻 **The Creative Programmer by Wouter Groeneveld:** This book explores the creative aspects of software development, offering techniques and exercises to enhance problem-solving and innovation in programming.  
   
-## 💬 [Gemini](/content/software/gemini.md) Prompt (gemini-2.5-pro)  
-> Write a markdown-formatted (start headings at level H2) book report, followed by a plethora of additional similar, contrasting, and creatively related book recommendations on Hands-On Large Language Models: Language Understanding and Generation. Be thorough in content discussed but concise and economical with your language. Structure the report with section headings and bulleted lists to avoid long blocks of text.
+## 💬 [Gemini](../software/gemini.md) Prompt (gemini-2.5-pro)  
+> Write a markdown-formatted (start headings at level H2) book report, followed by a plethora of additional similar, contrasting, and creatively related book recommendations on Hands-On Large Language Models: Language Understanding and Generation. Be thorough in content discussed but concise and economical with your language. Structure the report with section headings and bulleted lists to avoid long blocks of text.  
+  
+## 🦋 Bluesky    
+<blockquote class="bluesky-embed" data-bluesky-uri="https://bsky.app/profile/bagrounds.bsky.social/post/3mij3vq7e332u" data-bluesky-embed-color-mode="system"><p lang="en">did:plc:i4yli6h7x2uoj7acxunww2fc</p>  
+&mdash; Bryan Grounds (<a href="https://bsky.app/profile/bagrounds.bsky.social?ref_src=embed">@3mij3vq7e332u</a>) <a href="https://bsky.app/profile/bagrounds.bsky.social/post/3mij3vq7e332u?ref_src=embed">bagrounds.bsky.social</a></blockquote><script async src="https://embed.bsky.app/static/embed.js" charset="utf-8"></script>  
+  
+## 🐘 Mastodon    
+<blockquote class="mastodon-embed" data-embed-url="https://mastodon.social/@bagrounds/116334865062505179/embed" style="background: #FCF8FF; border-radius: 8px; border: 1px solid #C9C4DA; margin: 0; max-width: 540px; min-width: 270px; overflow: hidden; padding: 0;"> <a href="https://mastodon.social/@bagrounds/116334865062505179" target="_blank" style="align-items: center; color: #1C1A25; display: flex; flex-direction: column; font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Oxygen, Ubuntu, Cantarell, 'Fira Sans', 'Droid Sans', 'Helvetica Neue', Roboto, sans-serif; font-size: 14px; justify-content: center; letter-spacing: 0.25px; line-height: 20px; padding: 24px; text-decoration: none;"> <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="32" height="32" viewBox="0 0 79 75"><path d="M63 45.3v-20c0-4.1-1-7.3-3.2-9.7-2.1-2.4-5-3.7-8.5-3.7-4.1 0-7.2 1.6-9.3 4.7l-2 3.3-2-3.3c-2-3.1-5.1-4.7-9.2-4.7-3.5 0-6.4 1.3-8.6 3.7-2.1 2.4-3.1 5.6-3.1 9.7v20h8V25.9c0-4.1 1.7-6.2 5.2-6.2 3.8 0 5.8 2.5 5.8 7.4V37.7H44V27.1c0-4.9 1.9-7.4 5.8-7.4 3.5 0 5.2 2.1 5.2 6.2V45.3h8ZM74.7 16.6c.6 6 .1 15.7.1 17.3 0 .5-.1 4.8-.1 5.3-.7 11.5-8 16-15.6 17.5-.1 0-.2 0-.3 0-4.9 1-10 1.2-14.9 1.4-1.2 0-2.4 0-3.6 0-4.8 0-9.7-.6-14.4-1.7-.1 0-.1 0-.1 0s-.1 0-.1 0 0 .1 0 .1 0 0 0 0c.1 1.6.4 3.1 1 4.5.6 1.7 2.9 5.7 11.4 5.7 5 0 9.9-.6 14.8-1.7 0 0 0 0 0 0 .1 0 .1 0 .1 0 0 .1 0 .1 0 .1.1 0 .1 0 .1.1v5.6s0 .1-.1.1c0 0 0 0 0 .1-1.6 1.1-3.7 1.7-5.6 2.3-.8.3-1.6.5-2.4.7-7.5 1.7-15.4 1.3-22.7-1.2-6.8-2.4-13.8-8.2-15.5-15.2-.9-3.8-1.6-7.6-1.9-11.5-.6-5.8-.6-11.7-.8-17.5C3.9 24.5 4 20 4.9 16 6.7 7.9 14.1 2.2 22.3 1c1.4-.2 4.1-1 16.5-1h.1C51.4 0 56.7.8 58.1 1c8.4 1.2 15.5 7.5 16.6 15.6Z" fill="currentColor"/></svg> <div style="color: #787588; margin-top: 16px;">Post by @bagrounds@mastodon.social</div> <div style="font-weight: 500;">View on Mastodon</div> </a> </blockquote> <script data-allowed-prefixes="https://mastodon.social/" async src="https://mastodon.social/embed.js"></script>

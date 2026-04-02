@@ -8,7 +8,7 @@ Author:
 tags:
 affiliate link: https://amzn.to/4mIM241
 ---
-[Home](/content/index.md) > [Books](/content/books/index.md)  
+[Home](../index.md) > [Books](./index.md)  
 # ⛔🌎🔚 Not the End of the World: How We Can Be the First Generation to Build a Sustainable Planet  
 [🛒 Not the End of the World: How We Can Be the First Generation to Build a Sustainable Planet. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4mIM241)  
   
@@ -60,8 +60,8 @@ affiliate link: https://amzn.to/4mIM241
   
 ### 📖 Similar Reads (Data-Driven Optimism & Solutions)  
   
-* **[🤔🌍📈✅ Factfulness: Ten Reasons We're Wrong About the World - and Why Things Are Better Than You Think](/content/books/factfulness.md)** by Hans Rosling, Ola Rosling, and Anna Rosling Rönnlund: A major inspiration for Ritchie, this book uses data to challenge pessimistic assumptions about global health, poverty, and development.  
-* **[💡🔬🧑‍🤝‍🧑📈 Enlightenment Now: The Case for Reason, Science, Humanism, and Progress](/content/books/enlightenment-now-the-case-for-reason-science-humanism-and-progress.md)** by Steven Pinker: Argues that, on balance, life has improved dramatically across various metrics thanks to Enlightenment values, though it faces criticism for downplaying certain risks.  
+* **[🤔🌍📈✅ Factfulness: Ten Reasons We're Wrong About the World - and Why Things Are Better Than You Think](./factfulness.md)** by Hans Rosling, Ola Rosling, and Anna Rosling Rönnlund: A major inspiration for Ritchie, this book uses data to challenge pessimistic assumptions about global health, poverty, and development.  
+* **[💡🔬🧑‍🤝‍🧑📈 Enlightenment Now: The Case for Reason, Science, Humanism, and Progress](./enlightenment-now-the-case-for-reason-science-humanism-and-progress.md)** by Steven Pinker: Argues that, on balance, life has improved dramatically across various metrics thanks to Enlightenment values, though it faces criticism for downplaying certain risks.  
 * 📚 **How the World Really Works: A Scientist's Guide to Our Past, Present and Future** by Vaclav Smil: Provides a data-heavy look at the fundamental systems (energy, food production, materials) underpinning modern civilization. Less overtly optimistic than Ritchie, but deeply informative and reality-based.  
 * 📚 **The Big Fix: Seven Practical Steps to Save Our Planet** by Hal Harvey and Justin Gillis: Focuses on concrete policy and technological solutions for climate change, emphasizing practicality and achievable goals.  
   
@@ -69,16 +69,16 @@ affiliate link: https://amzn.to/4mIM241
   
 * 📚 **This Changes Everything: Capitalism vs. The Climate** by Naomi Klein: Argues that the climate crisis demands a fundamental rejection of neoliberal capitalism and a restructuring of our economies and societies.  
 * 📚 **The Uninhabitable Earth: Life After Warming** by David Wallace-Wells: Paints a stark, often terrifying picture of the potential consequences of unchecked climate change, serving as a counterpoint to optimistic takes.  
-* **[📉🌎 Less is More: How Degrowth Will Save the World](/content/books/less-is-more-how-degrowth-will-save-the-world.md)** by Jason Hickel: Critiques the pursuit of endless economic growth and argues for a "degrowth" strategy focused on reducing consumption and production in wealthy nations.  
-* **[🪢🌾 Braiding Sweetgrass: Indigenous Wisdom, Scientific Knowledge, and the Teachings of Plants](/content/books/braiding-sweetgrass.md)** by Robin Wall Kimmerer: Offers a perspective grounded in Indigenous wisdom, emphasizing reciprocity with nature, relationality, and ways of knowing beyond purely scientific data.  
+* **[📉🌎 Less is More: How Degrowth Will Save the World](./less-is-more-how-degrowth-will-save-the-world.md)** by Jason Hickel: Critiques the pursuit of endless economic growth and argues for a "degrowth" strategy focused on reducing consumption and production in wealthy nations.  
+* **[🪢🌾 Braiding Sweetgrass: Indigenous Wisdom, Scientific Knowledge, and the Teachings of Plants](./braiding-sweetgrass.md)** by Robin Wall Kimmerer: Offers a perspective grounded in Indigenous wisdom, emphasizing reciprocity with nature, relationality, and ways of knowing beyond purely scientific data.  
   
 ### 🎨 Creatively Related (Broader Context & Inspiration)  
   
-* **[🍩🌍 Doughnut Economics: Seven Ways to Think Like a 21st-Century Economist](/content/books/doughnut-economics-seven-ways-to-think-like-a-21st-century-economist.md)** by Kate Raworth: Proposes an economic model that aims to meet human needs within planetary boundaries.  
-* 📚 **[Thinking in Systems](/content/books/thinking-in-systems.md): A Primer** by Donella H. Meadows: An essential guide to understanding complex systems, crucial for tackling interconnected environmental and social problems.  
+* **[🍩🌍 Doughnut Economics: Seven Ways to Think Like a 21st-Century Economist](./doughnut-economics-seven-ways-to-think-like-a-21st-century-economist.md)** by Kate Raworth: Proposes an economic model that aims to meet human needs within planetary boundaries.  
+* 📚 **[Thinking in Systems](./thinking-in-systems.md): A Primer** by Donella H. Meadows: An essential guide to understanding complex systems, crucial for tackling interconnected environmental and social problems.  
 * 📚 **Drawdown: The Most Comprehensive Plan Ever Proposed to Reverse Global Warming** edited by Paul Hawken: Catalogs a wide array of existing solutions for reducing greenhouse gas emissions.  
-* 📚 **[The Sixth Extinction](/content/books/the-sixth-extinction.md): An Unnatural History** by Elizabeth Kolbert: Explores the ongoing biodiversity crisis through the lens of past mass extinction events, providing context for Ritchie's chapter on biodiversity loss.  
+* 📚 **[The Sixth Extinction](./the-sixth-extinction.md): An Unnatural History** by Elizabeth Kolbert: Explores the ongoing biodiversity crisis through the lens of past mass extinction events, providing context for Ritchie's chapter on biodiversity loss.  
 * The Ministry for the Future by Kim Stanley Robinson: A science fiction novel imagining the near-future challenges and potential institutional responses to the climate crisis, blending technical solutions with social and political struggle.  
   
-## 💬 [Gemini](/content/software/gemini.md) Prompt (gemini-2.5-pro-exp-03-25)  
+## 💬 [Gemini](../software/gemini.md) Prompt (gemini-2.5-pro-exp-03-25)  
 > Write a markdown-formatted (start headings at level H2) book report, followed by a plethora of additional similar, contrasting, and creatively related book recommendations on Not the End of the World How We Can Be the First Generation to Build a Sustainable Planet. Be thorough in content discussed but concise and economical with your language. Structure the report with section headings and bulleted lists to avoid long blocks of text.

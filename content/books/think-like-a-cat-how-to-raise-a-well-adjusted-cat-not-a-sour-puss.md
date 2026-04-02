@@ -7,7 +7,7 @@ share: true
 CTA: 🐱 Embrace feline wisdom.
 affiliate link: https://amzn.to/49c02Ps
 ---
-[Home](/content/index.md) > [Books](/content/books/index.md)  
+[Home](../index.md) > [Books](./index.md)  
 # 🐱👍 Think Like a Cat: How to Raise a Well-Adjusted Cat - Not a Sour Puss  
 [🛒 Think Like a Cat: How to Raise a Well-Adjusted Cat - Not a Sour Puss. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/49c02Ps)  
   
@@ -68,7 +68,7 @@ A definitive guide to decoding feline behavior through understanding their natur
 ## 📚 Book Recommendations  
   
 ### 👍 Similar  
-* 📚 [🐱👑 Total Cat Mojo: The Ultimate Guide to Life with Your Cat](/content/books/total-cat-mojo-the-ultimate-guide-to-life-with-your-cat.md) by Jackson Galaxy  
+* 📚 [🐱👑 Total Cat Mojo: The Ultimate Guide to Life with Your Cat](./total-cat-mojo-the-ultimate-guide-to-life-with-your-cat.md) by Jackson Galaxy  
 * 📚 Cat Sense by John Bradshaw  
 * 📚 The Special Needs Cat by Celeste Yarnall  
   
@@ -77,7 +77,7 @@ A definitive guide to decoding feline behavior through understanding their natur
 * 🎯 Don't Shoot the Dog! by Karen Pryor (general behavioral science, but not cat-specific)  
   
 ### ➕ Related  
-* [🐈‍⬛❓ Decoding Your Cat: The Ultimate Experts Explain Common Cat Behaviors and Reveal How to Prevent or Change Unwanted Ones](/content/books/decoding-your-cat-the-ultimate-experts-explain-common-cat-behaviors-and-reveal-how-to-prevent-or-change-unwanted-ones.md) by American College of Veterinary Behaviorists  
+* [🐈‍⬛❓ Decoding Your Cat: The Ultimate Experts Explain Common Cat Behaviors and Reveal How to Prevent or Change Unwanted Ones](./decoding-your-cat-the-ultimate-experts-explain-common-cat-behaviors-and-reveal-how-to-prevent-or-change-unwanted-ones.md) by American College of Veterinary Behaviorists  
 * 🤫 Cat Confidential by Vicky Halls  
 * 🪄 The Little Book of Cat Tricks by Kat Brown  
   

@@ -7,7 +7,7 @@ share: true
 CTA: 📚 Uncover Rome's downfall.
 affiliate link: https://amzn.to/4rRNqmD
 ---
-[Home](/content/index.md) > [Books](/content/books/index.md)  
+[Home](../index.md) > [Books](./index.md)  
 # 🥀🏛️ The Ruin of the Roman Empire: A New History  
 [🛒 The Ruin of the Roman Empire: A New History. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4rRNqmD)  
   

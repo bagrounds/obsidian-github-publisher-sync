@@ -7,7 +7,7 @@ URL: https://bagrounds.org/articles/ai-traffic-is-up-527-percent-seo-is-being-re
 Author:
 tags:
 ---
-[Home](/content/index.md) > [Articles](/content/articles/index.md)  
+[Home](../index.md) > [Articles](./index.md)  
 # [📈🤖✍️🔄 AI traffic is up 527%. SEO is being rewritten.](https://searchengineland.com/ai-traffic-up-seo-rewritten-459954)  
 ## 🤖 AI Summary  
 📈 AI-driven traffic has 🚀 increased by 527% between January and May 2025.  
@@ -38,8 +38,8 @@ tags:
 ## 📚 Book Recommendations  
   
 ### 💡 Similar Reading  
-* **[🌊🤖🤔 The Coming Wave: Technology, Power, and the 21st Century's Greatest Dilemma](/content/books/the-coming-wave-technology-power-and-the-21st-centurys-greatest-dilemma.md)** by Mustafa Suleyman: A deep dive into AI and the societal implications that will define our future.  
-* **[🤖📈 AI for Marketing and Product Innovation: Powerful New Tools for Predicting Trends, Connecting with Customers, and Closing Sales](/content/books/ai-for-marketing-and-product-innovation-powerful-new-tools-for-predicting-trends-connecting-with-customers-and-closing-sales.md)** by A.K. Pradeep: A practical framework for applying AI to business challenges like predicting trends and engaging customers.  
+* **[🌊🤖🤔 The Coming Wave: Technology, Power, and the 21st Century's Greatest Dilemma](../books/the-coming-wave-technology-power-and-the-21st-centurys-greatest-dilemma.md)** by Mustafa Suleyman: A deep dive into AI and the societal implications that will define our future.  
+* **[🤖📈 AI for Marketing and Product Innovation: Powerful New Tools for Predicting Trends, Connecting with Customers, and Closing Sales](../books/ai-for-marketing-and-product-innovation-powerful-new-tools-for-predicting-trends-connecting-with-customers-and-closing-sales.md)** by A.K. Pradeep: A practical framework for applying AI to business challenges like predicting trends and engaging customers.  
   
 ### 🔄 Contrasting Perspectives  
 * **Building a StoryBrand** by Donald Miller: A different approach focused on crafting clear, human-centric messages that resonate with any audience, regardless of how they discover your content.  
@@ -48,7 +48,7 @@ tags:
 * **The Master Algorithm** by Pedro Domingos: An accessible guide to machine learning paradigms and the quest for a unifying algorithm.  
 * **Index, a History of the** by Dennis Duncan: A unique history of the index, providing historical context for how we've always organized information.  
 * **Content Strategy for the Web** by Kristina Halvorson and Melissa Rach: Foundational principles for creating structured, purposeful content, now critical for AI discovery.  
-* **[📱🧠 The Shallows: What the Internet Is Doing to Our Brains](/content/books/the-shallows-what-the-internet-is-doing-to-our-brains.md)** by Nicholas Carr: A thought-provoking look at how digital information consumption is reshaping our minds.  
+* **[📱🧠 The Shallows: What the Internet Is Doing to Our Brains](../books/the-shallows-what-the-internet-is-doing-to-our-brains.md)** by Nicholas Carr: A thought-provoking look at how digital information consumption is reshaping our minds.  
   
 ## 🐦 Tweet  
 <blockquote class="twitter-tweet" data-theme="dark"><p lang="en" dir="ltr">📈🤖✍️🔄 AI traffic is up 527%. SEO is being rewritten.<br><br>📈 Traffic Shift | 🤖 LLM Influence | 📝 Content Creation | 🌐 Online Visibility | 🧑‍💻 Marketing Mindset<a href="https://t.co/zR1YpYtQT4">https://t.co/zR1YpYtQT4</a></p>&mdash; Bryan Grounds (@bagrounds) <a href="https://twitter.com/bagrounds/status/1953631670982352993?ref_src=twsrc%5Etfw">August 8, 2025</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>

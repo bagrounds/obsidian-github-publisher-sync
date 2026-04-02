@@ -4,8 +4,11 @@ aliases:
   - 🎨🖼️ Arts
 title: 🎨🖼️ Arts
 URL: https://bagrounds.org/topics/arts
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_time: 2026-04-01T00:00:00Z
+force_analyze_links: false
 ---
-[Home](/content/index.md) > [Topics](/content/topics/index.md) > [Knowledge](/content/topics/a-hierarchical-view-of-human-knowledge.md)  
+[Home](../index.md) > [Topics](./index.md) > [Knowledge](./a-hierarchical-view-of-human-knowledge.md)  
 # 🎨🖼️ Arts  
 ## 🤖 AI Summary  
 **🎨 High-Level Summary:**  
@@ -20,11 +23,11 @@ Here are some major subcategories within the Arts:
     * This includes painting 🖌️, sculpture 🗿, drawing ✏️, photography 📸, printmaking 🖨️, and other forms of visual expression. It focuses on creating works that are primarily visual in nature 🌈✨.  
 * **💃 Performing Arts:**  
     * This covers disciplines like theater 🎭, dance 🩰, music 🎶, and opera 🎤, where artists perform for an audience. It emphasizes live performance and dynamic expression 🌟👏.  
-* **📖 [Literary Arts](/content/topics/literary-arts.md):**  
+* **📖 [Literary Arts](./literary-arts.md):**  
     * This encompasses writing ✍️, including poetry 📜, fiction 📚, drama 🎭, and non-fiction 📝. It focuses on the use of language to create artistic works 🖋️💭.  
 * **🎬 Media Arts:**  
     * This includes film 🎥, television 📺, digital art 💻, and video games 🎮. It uses technology to create and distribute artistic content 🌐🚀.  
-* **🏠 [Applied Arts](/content/topics/applied-arts.md):**  
+* **🏠 [Applied Arts](./applied-arts.md):**  
     * This includes fields like architecture 🏗️, design (graphic 🎨, fashion 👗, interior 🛋️), and crafts 🧶. It focuses on the application of artistic principles to functional objects and spaces 🏡🛠️.  
   
 **📚 Book Recommendations:**  

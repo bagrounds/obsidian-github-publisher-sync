@@ -10,7 +10,7 @@ Channel: UC Berkeley EECS
 tags:
 youtube: https://www.youtube.com/watch?v=RvEwFvl-TrY
 ---
-[Home](/content/index.md) > [Videos](/content/videos/index.md)  
+[Home](../index.md) > [Videos](./index.md)  
 # 🤖🧠👁️ Ilya Sutskever, OpenAI  
 ![Ilya Sutskever, OpenAI](https://www.youtube.com/watch?v=RvEwFvl-TrY)  
   
@@ -40,10 +40,10 @@ youtube: https://www.youtube.com/watch?v=RvEwFvl-TrY
 💡 The presentation offers a compelling overview of advanced topics in deep learning and reinforcement learning, particularly highlighting the transformative potential of meta-learning and self-play. 🧠 It provides a strong argument for the "fortunate mystery" of backpropagation's effectiveness in finding optimal "small circuits" in deep learning. 🔄 While the video effectively showcases successes, it could benefit from exploring the limitations and challenges associated with these cutting-edge techniques, such as the computational cost of meta-learning or the potential for adversarial behaviors in complex self-play environments. ⚖️ Comparing these approaches with more traditional AI methods or discussing the ethical implications of creating superhuman AI through self-play would offer a more comprehensive understanding. 🚀 Further exploration into the theoretical underpinnings of why self-play leads to such rapid increases in agent capability could also be a valuable area for deeper understanding.  
   
 ## 📚 Book Recommendations  
-* [🧠💻🤖 Deep Learning](/content/books/deep-learning.md) by Ian Goodfellow, Yoshua Bengio, and Aaron Courville: 📚 A foundational text for understanding the mathematical and conceptual underpinnings of deep learning.  
-* [🤖➕🧠➡️ Reinforcement Learning: An Introduction](/content/books/reinforcement-learning-an-introduction.md) by Richard S. Sutton and Andrew G. Barto: 🧠 The definitive textbook on reinforcement learning, covering policy gradients, Q-learning, and more.  
-* [🧬👥💾 Life 3.0: Being Human in the Age of Artificial Intelligence](/content/books/life-3-0.md) by Max Tegmark: 🤔 Explores the broader societal implications of advanced AI, including the potential for superhuman intelligence and the future of humanity.  
+* [🧠💻🤖 Deep Learning](../books/deep-learning.md) by Ian Goodfellow, Yoshua Bengio, and Aaron Courville: 📚 A foundational text for understanding the mathematical and conceptual underpinnings of deep learning.  
+* [🤖➕🧠➡️ Reinforcement Learning: An Introduction](../books/reinforcement-learning-an-introduction.md) by Richard S. Sutton and Andrew G. Barto: 🧠 The definitive textbook on reinforcement learning, covering policy gradients, Q-learning, and more.  
+* [🧬👥💾 Life 3.0: Being Human in the Age of Artificial Intelligence](../books/life-3-0.md) by Max Tegmark: 🤔 Explores the broader societal implications of advanced AI, including the potential for superhuman intelligence and the future of humanity.  
 * ♟️ AlphaGo by Fan Hui: 🎬 While not a book, this documentary provides a fascinating look into the development of AlphaGo, a prime example of self-play in action.  
-* [🤖⚠️📈 Superintelligence: Paths, Dangers, Strategies](/content/books/superintelligence-paths-dangers-strategies.md) by Nick Bostrom: ⚠️ A thought-provoking book that delves into the potential risks and benefits of developing superintelligent AI, relevant to the discussion of self-play leading to superhuman capabilities.  
+* [🤖⚠️📈 Superintelligence: Paths, Dangers, Strategies](../books/superintelligence-paths-dangers-strategies.md) by Nick Bostrom: ⚠️ A thought-provoking book that delves into the potential risks and benefits of developing superintelligent AI, relevant to the discussion of self-play leading to superhuman capabilities.  
 * 🧠 The Master Algorithm by Pedro Domingos: 🌐 Explores five different "tribes" of machine learning, offering a broader perspective on various AI paradigms beyond deep learning.  
-* [📜🌍⏳ Sapiens: A Brief History of Humankind](/content/books/sapiens-a-brief-history-of-humankind.md) by Yuval Noah Harari: 🌍 Provides a historical and evolutionary context for human intelligence and social structures, relevant to the discussion of social environments and brain development.
+* [📜🌍⏳ Sapiens: A Brief History of Humankind](../books/sapiens-a-brief-history-of-humankind.md) by Yuval Noah Harari: 🌍 Provides a historical and evolutionary context for human intelligence and social structures, relevant to the discussion of social environments and brain development.

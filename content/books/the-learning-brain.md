@@ -7,7 +7,7 @@ share: true
 affiliate link: https://amzn.to/46vl2Pm
 CTA: 🧠 Absorb knowledge.
 ---
-[Home](/content/index.md) > [Books](/content/books/index.md)  
+[Home](../index.md) > [Books](./index.md)  
 # 🧠📚💡🧩 The Learning Brain  
 [🛒 The Learning Brain. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/46vl2Pm)  
   
@@ -67,9 +67,9 @@ The course provides a thorough overview of the brain's role in learning and memo
   
 These books offer further exploration into the neuroscience of learning, cognitive psychology, and brain function.  
   
-* [🧠🔒 Make It Stick: The Science of Successful Learning](/content/books/make-it-stick.md) by Peter C Brown, Henry L Roediger III, and Mark A McDaniel: This book delves into how individuals learn and how to turn material into lasting memories, backed by scientific research and personal anecdotes.  
-* [🧠💡📈🏠🏢🧑‍🎓 Brain Rules: 12 Principles for Surviving and Thriving at Work, Home, and School](/content/books/brain-rules-12-principles-for-surviving-and-thriving-at-work-home-and-school.md) by John Medina: This book explores how the brain works and how factors like stress, sleep, and multitasking affect it, providing practical tips to improve daily function.  
-* [🧠🔄🏆 The Brain That Changes Itself: Stories of Personal Triumph from the Frontiers of Brain Science](/content/books/the-brain-that-changes-itself.md) by Norman Doidge: This work explores neuroplasticity and the brain's ability to rewire itself.  
+* [🧠🔒 Make It Stick: The Science of Successful Learning](./make-it-stick.md) by Peter C Brown, Henry L Roediger III, and Mark A McDaniel: This book delves into how individuals learn and how to turn material into lasting memories, backed by scientific research and personal anecdotes.  
+* [🧠💡📈🏠🏢🧑‍🎓 Brain Rules: 12 Principles for Surviving and Thriving at Work, Home, and School](./brain-rules-12-principles-for-surviving-and-thriving-at-work-home-and-school.md) by John Medina: This book explores how the brain works and how factors like stress, sleep, and multitasking affect it, providing practical tips to improve daily function.  
+* [🧠🔄🏆 The Brain That Changes Itself: Stories of Personal Triumph from the Frontiers of Brain Science](./the-brain-that-changes-itself.md) by Norman Doidge: This work explores neuroplasticity and the brain's ability to rewire itself.  
 * 🧠 The Molecule of More: How a Single Chemical in Your Brain Drives Love, Sex, and Creativity—and Will Determine the Fate of the Human Race by Daniel Z Lieberman: This book discusses the role of dopamine in various aspects of human experience.  
 * 🧠 Protocols by Andrew Huberman: This resource serves as a guide to improving brain function, enhancing mood and energy, and rewiring the nervous system for new skills and behaviors.  
   
@@ -86,10 +86,10 @@ These recommendations explore alternative perspectives on learning, human cognit
   
 These selections offer broader, more philosophical, or artistic takes on the human mind, creativity, and the nature of knowledge.  
   
-* [🪄 Big Magic: Creative Living Beyond Fear](/content/books/big-magic.md) by Elizabeth Gilbert: An inspiring read for those working on creative projects or grappling with fear around creativity, it offers a more spiritual and practical guide to living a creative life.  
-* [🎨🙏✨ The Artist's Way: A Spiritual Path to Higher Creativity](/content/books/the-artists-way.md) by Julia Cameron: This is a 12-week journey designed to help individuals discover or reconnect with their creativity, emphasizing self-discovery and artistic practice.  
+* [🪄 Big Magic: Creative Living Beyond Fear](./big-magic.md) by Elizabeth Gilbert: An inspiring read for those working on creative projects or grappling with fear around creativity, it offers a more spiritual and practical guide to living a creative life.  
+* [🎨🙏✨ The Artist's Way: A Spiritual Path to Higher Creativity](./the-artists-way.md) by Julia Cameron: This is a 12-week journey designed to help individuals discover or reconnect with their creativity, emphasizing self-discovery and artistic practice.  
 * 🧠 Proust Was a Neuroscientist by Jonah Lehrer: This book argues that artists and writers often intuit discoveries about the mind and brain before science formally proves them, weaving together stories of art, science, and creative breakthroughs.  
-* [😀📜 The Happiness Hypothesis: Finding Modern Truth in Ancient Wisdom](/content/books/the-happiness-hypothesis-finding-modern-truth-in-ancient-wisdom.md) by Jonathan Haidt: This book explores ancient wisdom and modern psychological science to understand the workings of our minds and how to find happiness, often using metaphors to explain complex concepts.  
+* [😀📜 The Happiness Hypothesis: Finding Modern Truth in Ancient Wisdom](./the-happiness-hypothesis-finding-modern-truth-in-ancient-wisdom.md) by Jonathan Haidt: This book explores ancient wisdom and modern psychological science to understand the workings of our minds and how to find happiness, often using metaphors to explain complex concepts.  
 * 🧠 You Are Not Your Brain by Jeffrey Schwartz and Rebecca Gladding: This book provides a four-step solution for changing bad habits and ending ruminating thoughts, approaching the brain from a perspective of self-control and cognitive therapy rather than just passive learning.  
   
 ## 💬 [Gemini](https://gemini.google.com) Prompt (gemini-2.5-flash)  

@@ -7,7 +7,7 @@ share: true
 affiliate link: https://amzn.to/3LAGV83
 CTA: ⚖️ Understand history's impact.
 ---
-[Home](/content/index.md) > [Books](/content/books/index.md)  
+[Home](../index.md) > [Books](./index.md)  
 # 🇺🇸👑🌺 Nation Within: The Story of America's Annexation of the Nation of Hawaii  
 [🛒 Nation Within: The Story of America's Annexation of the Nation of Hawaii. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3LAGV83)  
   
@@ -67,7 +67,7 @@ CTA: ⚖️ Understand history's impact.
 ## 📚 Book Recommendations  
   
 ### 📖 Similar  
-* [🇺🇸💥🏛️ Overthrow: America's Century of Regime Change from Hawaii to Iraq](/content/books/overthrow-americas-century-of-regime-change-from-hawaii-to-iraq.md) by Stephen Kinzer  
+* [🇺🇸💥🏛️ Overthrow: America's Century of Regime Change from Hawaii to Iraq](./overthrow-americas-century-of-regime-change-from-hawaii-to-iraq.md) by Stephen Kinzer  
 * 👑 Hawaii's Story by Hawaii's Queen Liliuokalani (first-hand account)  
 * 🌺 From a Native Daughter: Colonialism and Sovereignty in Hawaii by Haunani-Kay Trask  
   
@@ -76,7 +76,7 @@ CTA: ⚖️ Understand history's impact.
 * 🇺🇸 The Americans in Hawaii: An Annotated Bibliography by William R. Tansil (focuses on American perspectives)  
   
 ### ➕ Related  
-* [🇺🇸🏹 An Indigenous Peoples' History of the United States](/content/books/an-indigenous-peoples-history-of-the-united-states.md) by Roxanne Dunbar-Ortiz  
+* [🇺🇸🏹 An Indigenous Peoples' History of the United States](./an-indigenous-peoples-history-of-the-united-states.md) by Roxanne Dunbar-Ortiz  
 * 🇵🇭 The Blood of Government: Race, Empire, the United States, & the Philippines by Paul A. Kramer  
 * 🌍 Imperialism: The Highest Stage of Capitalism by V.I. Lenin  
   

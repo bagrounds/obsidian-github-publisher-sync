@@ -7,7 +7,7 @@ share: true
 affiliate link: https://amzn.to/3IUwknt
 CTA: 💪 Transform your mindset.
 ---
-[Home](/content/index.md) > [Books](/content/books/index.md)  
+[Home](../index.md) > [Books](./index.md)  
 # 🏃😊 Exercise for Mood and Anxiety: Proven Strategies for Overcoming Depression and Enhancing Well-Being  
 [🛒 Exercise for Mood and Anxiety: Proven Strategies for Overcoming Depression and Enhancing Well-Being. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3IUwknt)  
   
@@ -55,14 +55,14 @@ The book is written for a broad audience, including:
   
 ### ➖ Contrasting Books  
   
-* [🤕🎼🧠 The Body Keeps the Score: Brain, Mind, and Body in the Healing of Trauma](/content/books/the-body-keeps-the-score-brain-mind-and-body-in-the-healing-of-trauma.md) by Bessel van der Kolk: While also addressing the mind-body connection, this book primarily focuses on the profound impact of trauma on the human body, mind, and soul. 💔 It delves into how traumatic experiences reshape the brain and body and offers avenues for healing through various therapies, rather than solely focusing on exercise as the primary intervention.  
+* [🤕🎼🧠 The Body Keeps the Score: Brain, Mind, and Body in the Healing of Trauma](./the-body-keeps-the-score-brain-mind-and-body-in-the-healing-of-trauma.md) by Bessel van der Kolk: While also addressing the mind-body connection, this book primarily focuses on the profound impact of trauma on the human body, mind, and soul. 💔 It delves into how traumatic experiences reshape the brain and body and offers avenues for healing through various therapies, rather than solely focusing on exercise as the primary intervention.  
 * 🚧 Set Boundaries, Find Peace by Nedra Glover Tawwab: This book shifts the focus from physical activity to interpersonal dynamics, demystifying how to establish healthy boundaries in all aspects of life. ⚖️ It provides powerful ways to express needs and maintain balance, addressing a different facet of mental well-being.  
-* [😊👍 Feeling Good: The New Mood Therapy](/content/books/feeling-good-the-new-mood-therapy.md) by David D. Burns: This book is a classic in cognitive behavioral therapy (CBT) and focuses on overcoming depression, pessimism, and negative thinking through cognitive interventions. 💭 It emphasizes changing thought patterns and uses evidence-based processes to bring about positive outcomes, with less emphasis on physical exercise.  
+* [😊👍 Feeling Good: The New Mood Therapy](./feeling-good-the-new-mood-therapy.md) by David D. Burns: This book is a classic in cognitive behavioral therapy (CBT) and focuses on overcoming depression, pessimism, and negative thinking through cognitive interventions. 💭 It emphasizes changing thought patterns and uses evidence-based processes to bring about positive outcomes, with less emphasis on physical exercise.  
   
 ### 🎨 Creatively Related Books  
   
 * 🧘 The Power of Now by Eckhart Tolle: This transformative guide emphasizes the significance of living in the present moment and cultivating mindfulness to achieve a harmonious connection between mind and body. 🧘 While not about exercise, its focus on mental presence and reducing "mental clutter" can creatively relate to the mindful aspect of movement and how it enhances well-being.  
-* [✨🎭🧘‍♂️🌌 The Creative Act: A Way of Being](/content/books/the-creative-act.md) by Rick Rubin: This book explores the creative process through the lens of self-awareness and attention. 🎶 Its spiritual wisdom aligns with yogic philosophy and reminds readers that daily life can be an art, and mindful engagement in each moment, including physical habits, can catalyze creativity and a more powerful way of being.  
+* [✨🎭🧘‍♂️🌌 The Creative Act: A Way of Being](./the-creative-act.md) by Rick Rubin: This book explores the creative process through the lens of self-awareness and attention. 🎶 Its spiritual wisdom aligns with yogic philosophy and reminds readers that daily life can be an art, and mindful engagement in each moment, including physical habits, can catalyze creativity and a more powerful way of being.  
 * 🤕 Healing Back Pain: The Mind-Body Connection by John E. Sarno: This book explores the mind-body connection in the context of chronic physical pain, particularly back pain. 🧠 It argues that repressed emotions and stress can manifest as physical discomfort, offering a perspective on how mental states profoundly influence bodily sensations, which creatively relates to how physical activity can also alleviate emotionally driven physical symptoms.  
   
 ## 💬 [Gemini](https://gemini.google.com) Prompt (gemini-2.5-flash)  

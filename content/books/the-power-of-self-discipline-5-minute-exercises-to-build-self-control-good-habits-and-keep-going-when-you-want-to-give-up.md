@@ -7,7 +7,7 @@ share: true
 CTA: 💪 Master your willpower.
 affiliate link: https://amzn.to/4iGkZES
 ---
-[Home](/content/index.md) > [Books](/content/books/index.md)  
+[Home](../index.md) > [Books](./index.md)  
 # 💪🧠⏳ The Power of Self-Discipline: 5-Minute Exercises to Build Self-Control, Good Habits, and Keep Going When You Want to Give Up  
 [🛒 The Power of Self-Discipline: 5-Minute Exercises to Build Self-Control, Good Habits, and Keep Going When You Want to Give Up. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4iGkZES)  
   
@@ -91,17 +91,17 @@ affiliate link: https://amzn.to/4iGkZES
 ## 📚 Book Recommendations  
   
 ### Similar Books  
-- [⚛️🔄 Atomic Habits: An Easy & Proven Way to Build Good Habits & Break Bad Ones](/content/books/atomic-habits.md) by James Clear: Focuses on building good habits and breaking bad ones through small, incremental changes.  
-- [❤️‍🔥💪 Grit: The Power of Passion and Perseverance](/content/books/grit-the-power-of-passion-and-perseverance.md) by Angela Duckworth: Explores the importance of sustained effort and passion in achieving long-term goals.  
-- [👤📈🎯🌟🔑🤝🏆 The 7 Habits of Highly Effective People](/content/books/the-7-habits-of-highly-effective-people.md) by Stephen R. Covey: A classic guide to personal and professional effectiveness, emphasizing principles like proactivity and prioritizing.  
+- [⚛️🔄 Atomic Habits: An Easy & Proven Way to Build Good Habits & Break Bad Ones](./atomic-habits.md) by James Clear: Focuses on building good habits and breaking bad ones through small, incremental changes.  
+- [❤️‍🔥💪 Grit: The Power of Passion and Perseverance](./grit-the-power-of-passion-and-perseverance.md) by Angela Duckworth: Explores the importance of sustained effort and passion in achieving long-term goals.  
+- [👤📈🎯🌟🔑🤝🏆 The 7 Habits of Highly Effective People](./the-7-habits-of-highly-effective-people.md) by Stephen R. Covey: A classic guide to personal and professional effectiveness, emphasizing principles like proactivity and prioritizing.  
   
 ### Contrasting Books  
-- [🪖🎨 The War of Art: Break Through the Blocks and Win Your Inner Creative Battles](/content/books/the-war-of-art.md) by Steven Pressfield: Explores the internal battle against resistance and the creative process, offering a more philosophical take on overcoming inertia.  
-- [🌱🧘🏼‍♀️🏆 Mindset: The New Psychology of Success](/content/books/mindset.md) by Carol S. Dweck: Differentiates between fixed and growth mindsets, highlighting how beliefs about one's abilities impact achievement.  
+- [🪖🎨 The War of Art: Break Through the Blocks and Win Your Inner Creative Battles](./the-war-of-art.md) by Steven Pressfield: Explores the internal battle against resistance and the creative process, offering a more philosophical take on overcoming inertia.  
+- [🌱🧘🏼‍♀️🏆 Mindset: The New Psychology of Success](./mindset.md) by Carol S. Dweck: Differentiates between fixed and growth mindsets, highlighting how beliefs about one's abilities impact achievement.  
   
 ### Related Books  
-- [🤔🐇🐢 Thinking, Fast and Slow](/content/books/thinking-fast-and-slow.md) by Daniel Kahneman: Delves into the two systems that drive the way we think, offering insights into decision-making and cognitive biases.  
-- [🤿💼 Deep Work: Rules for Focused Success in a Distracted World](/content/books/deep-work.md) by Cal Newport: Discusses the importance of focused, distraction-free work for high-value output.  
+- [🤔🐇🐢 Thinking, Fast and Slow](./thinking-fast-and-slow.md) by Daniel Kahneman: Delves into the two systems that drive the way we think, offering insights into decision-making and cognitive biases.  
+- [🤿💼 Deep Work: Rules for Focused Success in a Distracted World](./deep-work.md) by Cal Newport: Discusses the importance of focused, distraction-free work for high-value output.  
   
 ## 🫵 What Do You Think?  
   

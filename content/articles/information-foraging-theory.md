@@ -7,7 +7,7 @@ URL: https://bagrounds.org/articles/information-foraging-theory
 Author:
 tags:
 ---
-[Home](/content/index.md) > [Articles](/content/articles/index.md)  
+[Home](../index.md) > [Articles](./index.md)  
 # [🔍🍎🌲📚 Information Foraging Theory](https://www.peterpirolli.com/ewExternalFiles/31354_C01_UNCORRECTED_PROOF.pdf)  
 ## 🤖 AI Summary  
 * 🎯 Information foraging theory aims to explain and predict how people will best shape themselves for their information environments and how those environments can best be shaped for people.  
@@ -21,7 +21,7 @@ tags:
 * **Topics to Explore:** An open question remains as to why humans have evolved such information collection strategies. Further exploration could delve into the "probabilistically textured information environment" which differs from the well-defined tasks that have been the dominant paradigms in HCI.  
   
 ## 📚 Book Recommendations  
-* [🧭🍎 Foraging Theory](/content/books/foraging-theory.md). 🐦 This book provides the foundational biological concepts of optimal foraging theory that Information Foraging Theory draws upon.  
+* [🧭🍎 Foraging Theory](../books/foraging-theory.md). 🐦 This book provides the foundational biological concepts of optimal foraging theory that Information Foraging Theory draws upon.  
 * The Architecture of Cognition. 🧠 A classic work that details the production systems and cognitive architecture that are extended in Information Foraging Theory.  
 * The Adaptive Character of Thought. 🤔 This work provides the foundation for the rational analysis approach that is central to Information Foraging Theory.  
 * The Economics of Information. 📈 A seminal paper that explores the economic concepts of information, which is a key influence on the theory.  

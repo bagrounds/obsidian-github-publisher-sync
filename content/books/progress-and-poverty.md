@@ -7,7 +7,7 @@ share: true
 CTA: 💡 Advance toward prosperity.
 affiliate link: https://amzn.to/3KXhOw8
 ---
-[Home](/content/index.md) > [Books](/content/books/index.md)  
+[Home](../index.md) > [Books](./index.md)  
 # 📈📉 Progress and Poverty  
 [🛒 Progress and Poverty. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3KXhOw8)  
   
@@ -78,9 +78,9 @@ affiliate link: https://amzn.to/3KXhOw8
 * 📖 The Natural Economic Order through Free Land and Free Money by Silvio Gesell  
   
 ### 🔗 Related  
-* [🏛️💰 Debt: The First 5,000 Years](/content/books/debt-the-first-5000-years.md) by David Graeber  
+* [🏛️💰 Debt: The First 5,000 Years](./debt-the-first-5000-years.md) by David Graeber  
 * 📖 Rentier Capitalism by Brett Christophers  
-* [🏚️💰 Evicted: Poverty and Profit in the American City](/content/books/evicted-poverty-and-profit-in-the-american-city.md) by Matthew Desmond  
+* [🏚️💰 Evicted: Poverty and Profit in the American City](./evicted-poverty-and-profit-in-the-american-city.md) by Matthew Desmond  
   
 ## 🫵 What Do You Think?  
 🤔 Considering the ongoing debates about wealth inequality and housing crises, do you believe Henry George's proposal for a single tax on land value offers a viable solution for contemporary societies, or are there fundamental challenges that prevent its widespread adoption?

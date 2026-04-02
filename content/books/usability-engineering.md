@@ -6,7 +6,7 @@ URL: https://bagrounds.org/books/usability-engineering
 share: true
 affiliate link: https://amzn.to/42uEutb
 ---
-[Home](/content/index.md) > [Books](/content/books/index.md)  
+[Home](../index.md) > [Books](./index.md)  
 # 💻⚙️ Usability Engineering  
 [🛒 Usability Engineering. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/42uEutb)  
   
@@ -43,14 +43,14 @@ affiliate link: https://amzn.to/42uEutb
   
 * 🌐 **Designing Web Usability** by Jakob Nielsen  
     * This book, also by Jakob Nielsen, extends the concepts of usability engineering specifically to the context of web design. 💡 It provides insights into how users interact with web content and navigation, emphasizing the importance of simplicity and speed for a positive user experience.  
-* **[🚫💭🌐 Don't Make Me Think, Revisited: A Common Sense Approach to Web Usability](/content/books/dont-make-me-think-revisited.md)** by Steve Krug  
+* **[🚫💭🌐 Don't Make Me Think, Revisited: A Common Sense Approach to Web Usability](./dont-make-me-think-revisited.md)** by Steve Krug  
     * Steve Krug's book offers a highly accessible and common-sense approach to web usability. 👍 It shares many of Nielsen's practical principles but focuses more on intuitive design and qualitative usability testing, often serving as an excellent entry point for new practitioners.  
 * 📈 **Measuring the User Experience** by Tom Tullis and Bill Albert  
     * For those interested in the more quantitative aspects of usability, this book provides a comprehensive guide to measuring user experience. ➕ It complements Nielsen's work by focusing on rigorous UX metrics analysis and demystifying measurement methods.  
   
 ### ➖ Contrasting Books  
   
-* **[💺🚪💡🤔 The Design of Everyday Things](/content/books/the-design-of-everyday-things.md)** by Donald Norman  
+* **[💺🚪💡🤔 The Design of Everyday Things](./the-design-of-everyday-things.md)** by Donald Norman  
     * While foundational to understanding user-centered design, Norman's book takes a broader cognitive psychology approach to design, examining how people interact with everyday objects. 🧠 It focuses less on specific "engineering" methods and more on the underlying psychological principles that dictate good and bad design, often critiquing designs that ignore user needs.  
 * 👤 **About Face 4.0** by Alan Cooper  
     * Alan Cooper's work advocates for "goal-directed design," a methodology that centers on understanding user goals and motivations through personas. 🧭 This contrasts with a purely "usability engineering" approach by placing a strong emphasis on upfront user research and strategic design decisions rather than just optimizing existing interfaces.  
@@ -59,11 +59,11 @@ affiliate link: https://amzn.to/42uEutb
   
 ### ✨ Creatively Related Books  
   
-* **[🌌📐🧩🗝️ Universal Principles of Design: 200 Ways to Increase Appeal, Enhance Usability, Influence Perception, and Make Better Design Decisions](/content/books/universal-principles-of-design.md)** by William Lidwell, Kritina Holden, and Jill Butler  
+* **[🌌📐🧩🗝️ Universal Principles of Design: 200 Ways to Increase Appeal, Enhance Usability, Influence Perception, and Make Better Design Decisions](./universal-principles-of-design.md)** by William Lidwell, Kritina Holden, and Jill Butler  
     * This comprehensive encyclopedia of design principles offers a cross-disciplinary view that can inspire usability practitioners. 💡 It provides a wide range of design concepts, from the 80/20 rule to storytelling, enriching a designer's toolkit beyond strict usability guidelines.  
 * 🖥️ **The Psychology of Human Computer Interaction** by Stuart Card, Thomas Moran, and Allen Newell  
     * For a deeper dive into the theoretical underpinnings of human-computer interaction, this classic text explores cognitive models like GOMS (Goals, Operators, Methods & Selection Rules). 🧠 It provides a more academic and detailed understanding of how users interact with systems, offering a scientific lens through which to view usability problems.  
-* **[🤔🐇🐢 Thinking, Fast and Slow](/content/books/thinking-fast-and-slow.md)** by Daniel Kahneman  
+* **[🤔🐇🐢 Thinking, Fast and Slow](./thinking-fast-and-slow.md)** by Daniel Kahneman  
     * While not directly about design, Kahneman's exploration of two systems of thinking—System 1 (fast, intuitive) and System 2 (slow, deliberate)—provides profound insights into cognitive biases and human decision-making. 🧠 This understanding can significantly inform how designers create intuitive interfaces that cater to natural human thought processes, making it an excellent creative companion for understanding the "human" in human-computer interaction.  
   
 ## 💬 [Gemini](https://gemini.google.com) Prompt (gemini-2.5-flash)  

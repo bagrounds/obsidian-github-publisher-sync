@@ -4,11 +4,14 @@ aliases:
   - ❤️‍🩹⚖️🤝👑😇🗽 Moral Foundations Theory
 title: ❤️‍🩹⚖️🤝👑😇🗽 Moral Foundations Theory
 URL: https://bagrounds.org/topics/moral-foundations-theory
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_time: 2026-04-01T00:00:00Z
+force_analyze_links: false
 ---
-[Home](/content/index.md) > [Topics](/content/topics/index.md)  
+[Home](../index.md) > [Topics](./index.md)  
 # ❤️‍🩹⚖️🤝👑😇🗽 Moral Foundations Theory  
 ## 🤖 AI Summary  
-🧠 Moral Foundations Theory (MFT) is a social psychological theory that explains the origins of and variations in human moral reasoning. 👨‍🏫👩‍🏫 Developed primarily by psychologists [🧠🤝🐘 Jonathan Haidt](/content/people/jonathan-haidt.md) and Jesse Graham, the theory proposes that our moral judgments are not based on pure reason but are rooted in a set of innate, evolved psychological systems. These systems, or "foundations," act as a kind of intuitive ethics 🤔 we use to evaluate what's right and wrong.  
+🧠 Moral Foundations Theory (MFT) is a social psychological theory that explains the origins of and variations in human moral reasoning. 👨‍🏫👩‍🏫 Developed primarily by psychologists [🧠🤝🐘 Jonathan Haidt](../people/jonathan-haidt.md) and Jesse Graham, the theory proposes that our moral judgments are not based on pure reason but are rooted in a set of innate, evolved psychological systems. These systems, or "foundations," act as a kind of intuitive ethics 🤔 we use to evaluate what's right and wrong.  
   
 ### 🧱 The Moral Foundations  
   

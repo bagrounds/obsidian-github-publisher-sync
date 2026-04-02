@@ -8,7 +8,7 @@ Author:
 tags:
 affiliate link: https://amzn.to/4kRG3bD
 ---
-[Home](/content/index.md) > [Books](/content/books/index.md)  
+[Home](../index.md) > [Books](./index.md)  
 # 🤯 Mindf\*ck: Cambridge Analytica and the Plot to Break America  
 [🛒 Mindf*ck: Cambridge Analytica and the Plot to Break America. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4kRG3bD)  
   
@@ -49,7 +49,7 @@ affiliate link: https://amzn.to/4kRG3bD
 ### 📖 Similar Reads (Focus: Data, Politics, Social Media)  
   
 * 🎯 **Targeted: My Inside Story of Cambridge Analytica and How Trump and Facebook Broke Democracy** by Brittany Kaiser: Another insider account from a CA whistleblower, offering a complementary perspective. Often cited alongside *Mindf\*ck*.  
-* 🤖 **[The Age of Surveillance Capitalism](/content/books/the-age-of-surveillance-capitalism.md): The Fight for a Human Future at the New Frontier of Power** by Shoshana Zuboff: A foundational text exploring how tech companies harvest personal data for profit and control, providing the broader theoretical context for practices detailed in *Mindf\*ck*.  
+* 🤖 **[The Age of Surveillance Capitalism](./the-age-of-surveillance-capitalism.md): The Fight for a Human Future at the New Frontier of Power** by Shoshana Zuboff: A foundational text exploring how tech companies harvest personal data for profit and control, providing the broader theoretical context for practices detailed in *Mindf\*ck*.  
 * 🔒 **Privacy is Power: Why and How You Should Take Back Control of Your Data** by Carissa Véliz: Argues for ending the trade in personal data and discusses the implications of surveillance capitalism for individual autonomy and democracy.  
 * 🕵️‍♂️ **Means of Control: How the Hidden Alliance of Tech and Government Is Creating a New American Surveillance State** by Byron Tau: Investigates the collaboration between tech companies and government agencies in surveillance.  
 * 😥 **Careless People: A Cautionary Tale of Power, Greed, and Lost Idealism** by Sarah Wynn-Williams: A whistleblower account from a former Facebook/Meta executive detailing the company's culture and alleged disregard for user safety, particularly teenagers'.  
@@ -79,5 +79,5 @@ affiliate link: https://amzn.to/4kRG3bD
 * 🧠 **Psychology of Influence:**  
     * 🤔 Books exploring cognitive biases, persuasion techniques, and cult dynamics can offer insight into the psychological mechanisms allegedly exploited by CA. (e.g., works by Robert Cialdini, Daniel Kahneman).  
   
-## 💬 [Gemini](/content/software/gemini.md) Prompt (gemini-2.5-pro-exp-03-25)  
+## 💬 [Gemini](../software/gemini.md) Prompt (gemini-2.5-pro-exp-03-25)  
 > Write a markdown-formatted (start headings at level H2) book report, followed by a plethora of additional similar, contrasting, and creatively related book recommendations on Mindfuck Cambridge Analytica and the Plot to Break America. Be thorough in content discussed but concise and economical with your language. Structure the report with section headings and bulleted lists to avoid long blocks of text.

@@ -5,7 +5,7 @@ aliases:
 title: 💾🌐 Static APIs
 URL: https://bagrounds.org/topics/static-apis
 ---
-[Home](/content/index.md) > [Topics](/content/topics/index.md)  
+[Home](../index.md) > [Topics](./index.md)  
 # 💾🌐 Static APIs  
 Under certain circumstances, it can be beneficial to replace servers hosting a web API with a pre-generated set of data hosted as static files.  
 I've seen this idea bare fruit at work in the past and I'm about to apply the trick again in a new context.  

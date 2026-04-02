@@ -6,8 +6,11 @@ URL: https://bagrounds.org/books/numerical-optimization
 share: true
 CTA: ⚡️ Conquer complex problems.
 affiliate link: https://amzn.to/49m0s5A
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_time: 2026-04-02T00:00:00Z
+force_analyze_links: false
 ---
-[Home](/content/index.md) > [Books](/content/books/index.md)  
+[Home](../index.md) > [Books](./index.md)  
 # 🔢🎯 Numerical Optimization  
 [🛒 Numerical Optimization. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/49m0s5A)  
   
@@ -85,12 +88,12 @@ affiliate link: https://amzn.to/49m0s5A
 * ➡️ Iterative Methods in Optimization by C.T. Kelley (Focus on iterative algorithms)  
   
 ### 🔄 Contrasting Books  
-* [⛰️⬇️📈 Convex Optimization](/content/books/convex-optimization.md) by Stephen Boyd and Lieven Vandenberghe (Focuses solely on convex problems with a strong application emphasis)  
-* [⚙️🎯 Algorithms for Optimization](/content/books/algorithms-for-optimization.md) by Mykel Kochenderfer and Tim Wheeler (Broader introduction with a focus on practical algorithms for engineering systems, relevant to ML)  
+* [⛰️⬇️📈 Convex Optimization](./convex-optimization.md) by Stephen Boyd and Lieven Vandenberghe (Focuses solely on convex problems with a strong application emphasis)  
+* [⚙️🎯 Algorithms for Optimization](./algorithms-for-optimization.md) by Mykel Kochenderfer and Tim Wheeler (Broader introduction with a focus on practical algorithms for engineering systems, relevant to ML)  
   
 ### 🔗 Related Books  
 * 🧠 Optimization for Machine Learning edited by Suvrit Sra, Sebastian Nowozin, and Stephen J. Wright (Explores optimization's role in ML, including regularized and robust optimization)  
-* [🧠💻🤖 Deep Learning](/content/books/deep-learning.md) by Ian Goodfellow, Yoshua Bengio, and Aaron Courville (Covers optimization methods specifically tailored for neural networks)  
+* [🧠💻🤖 Deep Learning](./deep-learning.md) by Ian Goodfellow, Yoshua Bengio, and Aaron Courville (Covers optimization methods specifically tailored for neural networks)  
 * 🔬 Numerical Recipes: The Art of Scientific Computing by William H. Press et al. (Broader scope of numerical methods, including some optimization techniques)  
   
 ## 🫵 What Do You Think?  

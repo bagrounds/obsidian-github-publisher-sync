@@ -10,7 +10,7 @@ Channel: Hank Green
 tags:
 youtube: https://youtu.be/UtBa6BM-2OE
 ---
-[Home](/content/index.md) > [Videos](/content/videos/index.md)  
+[Home](../index.md) > [Videos](./index.md)  
 # 📊📈📉📃👁️ 10 Charts to Understand the 900 Page Budget Bill  
 ![10 Charts to Understand the 900 Page Budget Bill](https://youtu.be/UtBa6BM-2OE)  
   
@@ -26,16 +26,16 @@ youtube: https://youtu.be/UtBa6BM-2OE
 ## 📚 Book Recommendations  
 * 💰 **For understanding the national debt and budget deficits:**  
     * 📖 The National Debt: A Primer by William G. Gale  
-    * [🏛️💰 Debt: The First 5,000 Years](/content/books/debt-the-first-5000-years.md) by David Graeber  
+    * [🏛️💰 Debt: The First 5,000 Years](../books/debt-the-first-5000-years.md) by David Graeber  
 * 💸 **For insights into tax policy and its economic impact:**  
     * 📖 Taxing the Rich: A History of Fiscal Fairness in the United States by Kenneth Scheve and David Stasavage  
-    * [💰➡️ The Triumph of Injustice: How the Rich Dodge Taxes and How to Make Them Pay](/content/books/the-triumph-of-injustice-how-the-rich-dodge-taxes-and-how-to-make-them-pay.md) by Emmanuel Saez and Gabriel Zucman  
+    * [💰➡️ The Triumph of Injustice: How the Rich Dodge Taxes and How to Make Them Pay](../books/the-triumph-of-injustice-how-the-rich-dodge-taxes-and-how-to-make-them-pay.md) by Emmanuel Saez and Gabriel Zucman  
 * 🩺 **For information on healthcare policy and Medicaid:**  
-    * [⚕️💰🇺🇸 The Healing of America: A Global Quest for Better, Cheaper, and Fairer Health Care](/content/books/the-healing-of-america-a-global-quest-for-better-cheaper-and-fairer-health-care.md) by T.R. Reid  
-    * [💰⚕️⬆️ An American Sickness: How Healthcare Became Big Business and How You Can Take It Back](/content/books/an-american-sickness-how-healthcare-became-big-business-and-how-you-can-take-it-back.md) by Elisabeth Rosenthal  
+    * [⚕️💰🇺🇸 The Healing of America: A Global Quest for Better, Cheaper, and Fairer Health Care](../books/the-healing-of-america-a-global-quest-for-better-cheaper-and-fairer-health-care.md) by T.R. Reid  
+    * [💰⚕️⬆️ An American Sickness: How Healthcare Became Big Business and How You Can Take It Back](../books/an-american-sickness-how-healthcare-became-big-business-and-how-you-can-take-it-back.md) by Elisabeth Rosenthal  
 * 🧑‍🎓 **For discussions on student loan debt and its economic effects:**  
     * 📖 The Debt Trap: How Student Loans Became a National Catastrophe by Josh Mitchell  
     * 📖 Lower Ed: The Troubling Rise of For-Profit Colleges in the New Economy by Tressie McMillan Cottom  
 * 🌎 **For understanding clean energy policy and climate change economics:**  
-    * [🔥🌎⚔️ The New Climate War: The Fight to Take Back Our Planet](/content/books/the-new-climate-war-the-fight-to-take-back-our-planet.md) by Michael E. Mann  
+    * [🔥🌎⚔️ The New Climate War: The Fight to Take Back Our Planet](../books/the-new-climate-war-the-fight-to-take-back-our-planet.md) by Michael E. Mann  
     * 📖 Shorting the Grid: The Hidden Fragility of Our Electric Grid by Meredith Angwin

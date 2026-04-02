@@ -8,7 +8,7 @@ Author:
 tags:
 affiliate link: https://amzn.to/3LE4hJX
 ---
-[Home](/content/index.md) > [Books](/content/books/index.md)  
+[Home](../index.md) > [Books](./index.md)  
 # 🏠💙🌈 The House in the Cerulean Sea  
 [🛒 The House in the Cerulean Sea. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3LE4hJX)  
   
@@ -70,7 +70,7 @@ A: ✨ The book uses **magical realism** and **allegory**. The fantasy elements�
 #### 🧠📚 **Non-Fiction**  
   
 * 😇 **The Book of Joy:** Read this for a practical, philosophical exploration of how to maintain hope, perspective, and compassion in the face of widespread suffering and systematic injustice, mirroring the book's core emotional mission.  
-* **[🤔🐇🐢 Thinking, Fast and Slow](/content/books/thinking-fast-and-slow.md):** This book offers a deep dive into the cognitive biases and ingrained, habitual ways of thinking that the protagonist must unlearn, providing a real-world framework for understanding the system-versus-individual conflict presented in the story.  
+* **[🤔🐇🐢 Thinking, Fast and Slow](./thinking-fast-and-slow.md):** This book offers a deep dive into the cognitive biases and ingrained, habitual ways of thinking that the protagonist must unlearn, providing a real-world framework for understanding the system-versus-individual conflict presented in the story.  
   
 #### 💚✨ **If You Loved This**  
   

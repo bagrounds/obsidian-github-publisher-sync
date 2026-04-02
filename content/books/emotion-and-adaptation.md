@@ -7,7 +7,7 @@ share: true
 affiliate link: https://amzn.to/3KoOmyy
 CTA: 🌱 Nurture resilience.
 ---
-[Home](/content/index.md) > [Books](/content/books/index.md)  
+[Home](../index.md) > [Books](./index.md)  
 # 😢🔄 Emotion and Adaptation  
 [🛒 Emotion and Adaptation. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3KoOmyy)  
   
@@ -47,7 +47,7 @@ CTA: 🌱 Nurture resilience.
   
 ### 🆚 Contrasting Books  
   
-* **[🧠🤔 How Emotions Are Made: The Secret Life of the Brain](/content/books/how-emotions-are-made-the-secret-life-of-the-brain.md) by Lisa Feldman Barrett**  
+* **[🧠🤔 How Emotions Are Made: The Secret Life of the Brain](./how-emotions-are-made-the-secret-life-of-the-brain.md) by Lisa Feldman Barrett**  
     🧱 This book presents a constructivist theory of emotion, challenging the idea of universal, discrete emotions with unique physiological signatures. 🧠 Barrett argues that emotions are not pre-wired but are constructed by the brain based on predictions, interoception, and conceptual knowledge. ➡️ This directly contrasts Lazarus's focus on universal appraisal processes leading to distinct emotions.  
   
 * 🤔 **Feeling and Thinking: Preferences Need No Inferences by Robert Zajonc**  
@@ -58,7 +58,7 @@ CTA: 🌱 Nurture resilience.
 * ❤️‍🩹 **Atlas of the Heart: Mapping Meaningful Connection and the Language of Human Experience by Brené Brown**  
     🚫 While not a psychology textbook, Brown's work delves into the nuances of human emotions and experiences, focusing on emotional literacy and the language we use to understand ourselves and connect with others. 🫂 It offers a practical and accessible exploration of emotions and their role in meaningful connection, providing a real-world application of emotional understanding and adaptation beyond academic theory.  
   
-* **[🐦🕊️ Bird by Bird: Some Instructions on Writing and Life](/content/books/bird-by-bird.md) by Anne Lamott**  
+* **[🐦🕊️ Bird by Bird: Some Instructions on Writing and Life](./bird-by-bird.md) by Anne Lamott**  
     📝 This book, a guide for writers, explores the human condition and the creative process, often touching upon the emotional struggles and triumphs inherent in both. 🎭 It relates to emotion and adaptation by demonstrating how individuals navigate inner emotional landscapes (fear, self-doubt, joy) to produce creative work and adapt to the demands of life, albeit from a narrative and reflective standpoint rather than a scientific one.  
   
 * 🌊 **The Ocean at the End of the Lane by Neil Gaiman**  

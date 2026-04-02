@@ -5,7 +5,7 @@ aliases:
 title: 🌳🗺️🔗🏛️ Ontologies
 URL: https://bagrounds.org/topics/ontologies
 ---
-[Home](/content/index.md) > [Topics](/content/topics/index.md)  
+[Home](../index.md) > [Topics](./index.md)  
 # 🌳🗺️🔗🏛️ Ontologies  
 ## 🤖 AI Summary  
 ### 🔨 What Is It?  
@@ -68,7 +68,7 @@ URL: https://bagrounds.org/topics/ontologies
     * Semantic Networks 🔗  
     * Description Logics 📜  
     * Controlled Vocabularies 📝  
-    * [Knowledge Graphs](/content/topics/knowledge-graphs.md) 📊  
+    * [Knowledge Graphs](./knowledge-graphs.md) 📊  
 * 🧙‍♂️ Advanced topics:  
     * Temporal Ontologies 🕰️  
     * Spatial Ontologies 🗺️  
@@ -140,7 +140,7 @@ URL: https://bagrounds.org/topics/ontologies
 ### 📖 Book Recommendations  
   
 * 📖 Topical: "Foundations of Semantic Web Technologies" by Pascal Hitzler, Markus Krötzsch, and Sebastian Rudolph. 🕸️  
-* 📖 Tangentially Related: [🤖🧠 Artificial Intelligence: A Modern Approach](/content/books/artificial-intelligence-a-modern-approach.md) by Stuart Russell and Peter Norvig. 🤖  
+* 📖 Tangentially Related: [🤖🧠 Artificial Intelligence: A Modern Approach](../books/artificial-intelligence-a-modern-approach.md) by Stuart Russell and Peter Norvig. 🤖  
 * 📖 Topically Opposed: "Data and Goliath: The Hidden Battles to Collect Your Data and Control Your World" by Bruce Schneier. 🛡️  
 * 📖 More General: "Knowledge Representation and Reasoning" by Ronald Brachman and Hector Levesque. 🧠  
 * 📖 More Specific: "Description Logic Handbook: Theory, Implementation and Applications" by Franz Baader, Diego Calvanese, Deborah McGuinness, Peter Patel-Schneider, and Carsten Lutz. 📜  

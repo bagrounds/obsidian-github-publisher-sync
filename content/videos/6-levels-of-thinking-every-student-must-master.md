@@ -10,7 +10,7 @@ Channel: Justin Sung
 tags:
 youtube: https://youtu.be/1xqerXscTsE
 ---
-[Home](/content/index.md) > [Videos](/content/videos/index.md) | [🧠👨‍🎓📈 Justin Sung](/content/people/justin-sung.md)  
+[Home](../index.md) > [Videos](./index.md) | [🧠👨‍🎓📈 Justin Sung](../people/justin-sung.md)  
 # 🧠🪜💡🤔⬆️🎓 6 Levels of Thinking Every Student MUST Master  
 ![6 Levels of Thinking Every Student MUST Master](https://youtu.be/1xqerXscTsE)  
   
@@ -52,10 +52,10 @@ youtube: https://youtu.be/1xqerXscTsE
 * 🤔 For a richer understanding, one could explore alternative models of thinking, such as a "systems thinking" approach, which focuses on understanding the interconnectedness of parts within a whole, or "design thinking," which is a solution-focused approach to problem-solving.  
   
 ## 📚 Book Recommendations  
-* **[🧠🔒 Make It Stick: The Science of Successful Learning](/content/books/make-it-stick.md) by Peter C. Brown, Henry L. Roediger III, and Mark A. McDaniel:** This book delves into the cognitive science behind effective learning strategies, many of which align with the higher levels of thinking described in the video.  
-* **[🤔🐇🐢 Thinking, Fast and Slow](/content/books/thinking-fast-and-slow.md) by Daniel Kahneman:** A groundbreaking book that explores the two systems of thought that drive the way we think. It provides a deeper understanding of the mental processes involved in evaluation and analysis.  
+* **[🧠🔒 Make It Stick: The Science of Successful Learning](../books/make-it-stick.md) by Peter C. Brown, Henry L. Roediger III, and Mark A. McDaniel:** This book delves into the cognitive science behind effective learning strategies, many of which align with the higher levels of thinking described in the video.  
+* **[🤔🐇🐢 Thinking, Fast and Slow](../books/thinking-fast-and-slow.md) by Daniel Kahneman:** A groundbreaking book that explores the two systems of thought that drive the way we think. It provides a deeper understanding of the mental processes involved in evaluation and analysis.  
 * 📖 **"A Mind for Numbers: How to Excel at Math and Science (Even If You Flunked Algebra)" by Barbara Oakley:** While focused on STEM fields, this book offers practical advice on how to learn effectively, combat procrastination, and master difficult subjects, which complements the strategies discussed in the video.  
-* **[🎨🤔🖼️ The Art of Thinking Clearly](/content/books/the-art-of-thinking-clearly.md) by Rolf Dobelli:** This book presents a catalogue of cognitive biases and errors in thinking, which can help you to improve your ability to evaluate information and make sound judgments.  
+* **[🎨🤔🖼️ The Art of Thinking Clearly](../books/the-art-of-thinking-clearly.md) by Rolf Dobelli:** This book presents a catalogue of cognitive biases and errors in thinking, which can help you to improve your ability to evaluate information and make sound judgments.  
   
 ## 🐦 Tweet  
 <blockquote class="twitter-tweet" data-theme="dark"><p lang="en" dir="ltr">🧠🪜💡🤔⬆️🎓 6 Levels of Thinking Every Student MUST Master<br><br>🧠 Bloom&#39;s Taxonomy | 🪜 Learning Stages | 🎯 Problem Solving | ⚖️ Information Comparison | 🏆 Prioritization | 🧪 Hypothesis | 🤓 Learning Theories<a href="https://twitter.com/DrJustinSung?ref_src=twsrc%5Etfw">@DrJustinSung</a><a href="https://t.co/ltc3GUrl3G">https://t.co/ltc3GUrl3G</a></p>&mdash; Bryan Grounds (@bagrounds) <a href="https://twitter.com/bagrounds/status/1944902262113100081?ref_src=twsrc%5Etfw">July 14, 2025</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>  

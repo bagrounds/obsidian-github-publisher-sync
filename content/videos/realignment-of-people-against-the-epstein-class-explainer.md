@@ -10,7 +10,7 @@ Channel: Heather Cox Richardson
 tags:
 youtube: https://youtu.be/56BIZkdwp1A
 ---
-[Home](/content/index.md) > [Videos](/content/videos/index.md) | [🏛️🇺🇸📖 Heather Cox Richardson](/content/people/heather-cox-richardson.md)  
+[Home](../index.md) > [Videos](./index.md) | [🏛️🇺🇸📖 Heather Cox Richardson](../people/heather-cox-richardson.md)  
 # 👥➡️⚖️ Realignment of People Against the ‘Epstein Class’ | Explainer  
 ![There’s a Larger Story Here | Explainer](https://youtu.be/56BIZkdwp1A)  
   
@@ -61,4 +61,4 @@ youtube: https://youtu.be/56BIZkdwp1A
 ### 🎨 Creatively Related  
 * 🕊️ Preparing for War: The Making of the Geneva Conventions by Boyd van Dijk. 📜 Explores the complex, often messy international politics and humanitarian goals that led to the creation of the Geneva Conventions, providing background context to the laws of war being violated.  
 * 🔗 American Oligarchy by Ron Formisano. 🏙️ Focuses on the permanent political class, its corruption, and the resulting economic inequality, connecting the administration's actions to a wider system of elite self-dealing.  
-* [✍🏼👍🏼 On Writing Well: The Classic Guide to Writing Nonfiction](/content/books/on-writing-well.md) by William Zinsser. 📝 A classic guide to brevity, clarity, and precision, directly applying the Strunk and White principle of economical language mentioned in the prompt's instructions.
+* [✍🏼👍🏼 On Writing Well: The Classic Guide to Writing Nonfiction](../books/on-writing-well.md) by William Zinsser. 📝 A classic guide to brevity, clarity, and precision, directly applying the Strunk and White principle of economical language mentioned in the prompt's instructions.

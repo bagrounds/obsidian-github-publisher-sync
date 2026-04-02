@@ -6,8 +6,11 @@ URL: https://bagrounds.org/books/decluttering-at-the-speed-of-life-winning-your-
 share: true
 affiliate link: https://amzn.to/4oZI2wu
 CTA: 🚀 Simplify existence.
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_time: 2026-04-02T00:00:00Z
+force_analyze_links: false
 ---
-[Home](/content/index.md) > [Books](/content/books/index.md)  
+[Home](../index.md) > [Books](./index.md)  
 # 🗑️⏱️ Decluttering at the Speed of Life: Winning Your Never-Ending Battle with Stuff  
 [🛒 Decluttering at the Speed of Life: Winning Your Never-Ending Battle with Stuff. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4oZI2wu)  
   
@@ -81,8 +84,8 @@ CTA: 🚀 Simplify existence.
 * 🏠 The Minimalist Home by Joshua Becker  
   
 ### 🔗 Related  
-* [⚛️🔄 Atomic Habits: An Easy & Proven Way to Build Good Habits & Break Bad Ones](/content/books/atomic-habits.md) by James Clear  
-* 💪 [🔄🧠💪 The Power of Habit: Why We Do What We Do in Life and Business](/content/books/the-power-of-habit.md) by Charles Duhigg  
+* [⚛️🔄 Atomic Habits: An Easy & Proven Way to Build Good Habits & Break Bad Ones](./atomic-habits.md) by James Clear  
+* 💪 [🔄🧠💪 The Power of Habit: Why We Do What We Do in Life and Business](./the-power-of-habit.md) by Charles Duhigg  
 * 🧘 Outer Order, Inner Calm by Gretchen Rubin  
   
 ## 🫵 What Do You Think?  

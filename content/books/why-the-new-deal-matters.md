@@ -7,7 +7,7 @@ share: true
 CTA: 🇺🇸 Understand Roosevelt's legacy.
 affiliate link: https://amzn.to/49zbANc
 ---
-[Home](/content/index.md) > [Books](/content/books/index.md)  
+[Home](../index.md) > [Books](./index.md)  
 # 🇺🇸🏛️ Why the New Deal Matters  
 [🛒 Why the New Deal Matters. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/49zbANc)  
   
@@ -83,9 +83,9 @@ affiliate link: https://amzn.to/49zbANc
 * 🇺🇸 America's Great Depression by Murray N. Rothbard  
   
 ### 🔗 Related  
-* [💰📈🌍⏳ Capital in the Twenty-First Century](/content/books/capital-in-the-twenty-first-century.md) by Thomas Piketty  
-* [🌍🏛️ The Great Transformation: The Political and Economic Origins of Our Time](/content/books/the-great-transformation-the-political-and-economic-origins-of-our-time.md) by Karl Polanyi  
-* [📜🌍⏳ Sapiens: A Brief History of Humankind](/content/books/sapiens-a-brief-history-of-humankind.md) by Yuval Noah Harari  
+* [💰📈🌍⏳ Capital in the Twenty-First Century](./capital-in-the-twenty-first-century.md) by Thomas Piketty  
+* [🌍🏛️ The Great Transformation: The Political and Economic Origins of Our Time](./the-great-transformation-the-political-and-economic-origins-of-our-time.md) by Karl Polanyi  
+* [📜🌍⏳ Sapiens: A Brief History of Humankind](./sapiens-a-brief-history-of-humankind.md) by Yuval Noah Harari  
   
 ## 🫵 🫵 What Do You Think?  
 ❓ Which New Deal program do you believe has had the most significant lasting impact on American society, and why? ❓ What contemporary issues do you think could benefit from a New Deal approach?

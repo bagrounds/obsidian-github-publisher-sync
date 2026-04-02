@@ -10,7 +10,7 @@ Channel: WIRED
 tags:
 youtube: https://youtu.be/4QUG8czGScU
 ---
-[Home](/content/index.md) > [Videos](/content/videos/index.md)  
+[Home](../index.md) > [Videos](./index.md)  
 # 🕵️🇺🇸💻👁️ How ICE Spies On American Citizens | Incognito Mode | WIRED  
 ![How ICE Spies On American Citizens | Incognito Mode | WIRED](https://youtu.be/4QUG8czGScU)  
   
@@ -30,5 +30,5 @@ The video's perspective is 📢 critical of the expansion of ICE's power, framin
 ## 📚 Book Recommendations  
   
 * Permanent Record by Edward Snowden: A look at the history of government surveillance and a first-hand account of the NSA's mass data collection programs.  
-* [🧑🏿⛓️🙈 The New Jim Crow: Mass Incarceration in the Age of Colorblindness](/content/books/the-new-jim-crow-mass-incarceration-in-the-age-of-colorblindness.md) by Michelle Alexander: Examines the American justice system and how it has created a new caste system through mass incarceration, offering a parallel to the video's discussion of targeting and surveillance.  
+* [🧑🏿⛓️🙈 The New Jim Crow: Mass Incarceration in the Age of Colorblindness](../books/the-new-jim-crow-mass-incarceration-in-the-age-of-colorblindness.md) by Michelle Alexander: Examines the American justice system and how it has created a new caste system through mass incarceration, offering a parallel to the video's discussion of targeting and surveillance.  
 * The Great Chain of Numbers: A Political History of Statistics as a Science and an Art by Lorena Dezso: Provides historical context on how governments have used data and statistics to manage populations, offering a different lens through which to view the video's discussion of data brokering and surveillance.

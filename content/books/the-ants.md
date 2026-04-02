@@ -7,7 +7,7 @@ share: true
 CTA: 🐜 Observe tiny titans.
 affiliate link: https://amzn.to/480Adjd
 ---
-[Home](/content/index.md) > [Books](/content/books/index.md)  
+[Home](../index.md) > [Books](./index.md)  
 # 🐜 The Ants  
 [🛒 The Ants. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/480Adjd)  
   
@@ -79,12 +79,12 @@ affiliate link: https://amzn.to/480Adjd
 ### Similar  
 * 🐜 Journey to the Ants by Bert Hölldobler and Edward O. Wilson  
 * 🌐 The Superorganism: The Beauty, Elegance, and Strangeness of Insect Societies by Bert Hölldobler and Edward O. Wilson  
-* [🐜👑 Empire of Ants: The Hidden World and Extraordinary Lives of Earth's Tiny Conquerors](/content/books/empire-of-ants-the-hidden-world-and-extraordinary-lives-of-earths-tiny-conquerors.md) by Susanne Foitzik and Olaf Fritsche  
+* [🐜👑 Empire of Ants: The Hidden World and Extraordinary Lives of Earth's Tiny Conquerors](./empire-of-ants-the-hidden-world-and-extraordinary-lives-of-earths-tiny-conquerors.md) by Susanne Foitzik and Olaf Fritsche  
 * 🐜 Ants at Work: How an Insect Society is Organized by Deborah M. Gordon  
   
 ### Contrasting (Broader Sociobiology Implications)  
 * 🧬 Sociobiology: The New Synthesis by Edward O. Wilson (the work that broadly extended sociobiology, sparking controversy)  
-* [👤🧬 The Selfish Gene](/content/books/the-selfish-gene.md) by Richard Dawkins (offers a gene-centric view of evolution and behavior)  
+* [👤🧬 The Selfish Gene](./the-selfish-gene.md) by Richard Dawkins (offers a gene-centric view of evolution and behavior)  
 * 🧑‍🤝‍🧑 Not by Genes Alone: How Culture Transformed Human Evolution by Peter J. Richerson and Robert Boyd (contrasts genetic determinism with cultural evolution)  
   
 ### Related  

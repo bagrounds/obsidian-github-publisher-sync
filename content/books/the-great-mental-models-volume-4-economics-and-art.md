@@ -7,7 +7,7 @@ share: true
 affiliate link: https://amzn.to/44qOgxv
 CTA: 🎨 Grasp value.
 ---
-[Home](/content/index.md) > [Books](/content/books/index.md) | [⏮️ ⚙️🔢 The Great Mental Models, Volume 3: Systems and Mathematics](/content/books/the-great-mental-models-volume-3-systems-and-mathematics.md)  
+[Home](../index.md) > [Books](./index.md) | [⏮️ ⚙️🔢 The Great Mental Models, Volume 3: Systems and Mathematics](./the-great-mental-models-volume-3-systems-and-mathematics.md)  
 # 💸🎨 The Great Mental Models, Volume 4: Economics and Art  
 [🛒 The Great Mental Models, Volume 4: Economics and Art. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/44qOgxv)  
   
@@ -77,16 +77,16 @@ CTA: 🎨 Grasp value.
   
 ### ➕ Similar  
 * 👴 Poor Charlie's Almanack by Charlie Munger  
-* [🤔🐇🐢 Thinking, Fast and Slow](/content/books/thinking-fast-and-slow.md) by Daniel Kahneman  
+* [🤔🐇🐢 Thinking, Fast and Slow](./thinking-fast-and-slow.md) by Daniel Kahneman  
 * 🦉 Seeking Wisdom: From Darwin to Munger by Peter Bevelin  
   
 ### 🆚 Contrasting  
-* [🎨🤔🖼️ The Art of Thinking Clearly](/content/books/the-art-of-thinking-clearly.md) by Rolf Dobelli (focuses on cognitive biases)  
-* [👉🤏 Nudge: Improving Decisions about Health, Wealth, and Happiness](/content/books/nudge.md) by Richard H. Thaler and Cass R. Sunstein (behavioral economics for policy)  
+* [🎨🤔🖼️ The Art of Thinking Clearly](./the-art-of-thinking-clearly.md) by Rolf Dobelli (focuses on cognitive biases)  
+* [👉🤏 Nudge: Improving Decisions about Health, Wealth, and Happiness](./nudge.md) by Richard H. Thaler and Cass R. Sunstein (behavioral economics for policy)  
   
 ### 🔗 Related  
-* [🌐🔗🧠📖 Thinking in Systems: A Primer](/content/books/thinking-in-systems.md) by Donella H. Meadows  
-* [💰🤔😊 Psychology of Money: Timeless lessons on wealth, greed, and happiness](/content/books/the-psychology-of-money.md) by Morgan Housel  
+* [🌐🔗🧠📖 Thinking in Systems: A Primer](./thinking-in-systems.md) by Donella H. Meadows  
+* [💰🤔😊 Psychology of Money: Timeless lessons on wealth, greed, and happiness](./the-psychology-of-money.md) by Morgan Housel  
 * 🖼️ Art as Experience by John Dewey  
   
 ## 🫵 What Do You Think?  

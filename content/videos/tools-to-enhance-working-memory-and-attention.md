@@ -9,7 +9,7 @@ Platform: "#YouTube"
 Channel: "[[Huberman Lab]]"
 tags:
 ---
-[Home](/content/index.md) > [Videos](/content/videos/index.md) | [🧠🫀👀🔬 Andrew Huberman](/content/people/andrew-huberman.md)  
+[Home](../index.md) > [Videos](./index.md) | [🧠🫀👀🔬 Andrew Huberman](../people/andrew-huberman.md)  
 # 🧠🎯⬆️ Tools to Enhance Working Memory & Attention  
 ![Tools to Enhance Working Memory & Attention](https://youtu.be/CQlTmOFM4Qs)  
 ## 📝🐒 Human Notes  

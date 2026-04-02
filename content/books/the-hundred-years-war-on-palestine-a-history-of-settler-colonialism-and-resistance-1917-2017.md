@@ -7,7 +7,7 @@ share: true
 affiliate link: https://amzn.to/4nLQzm2
 CTA: 🇵🇸 Understand occupation.
 ---
-[Home](/content/index.md) > [Books](/content/books/index.md)  
+[Home](../index.md) > [Books](./index.md)  
 # 🇮🇱⏳ The Hundred Years' War on Palestine: A History of Settler Colonialism and Resistance, 1917–2017  
 [🛒 The Hundred Years' War on Palestine: A History of Settler Colonialism and Resistance, 1917–2017. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4nLQzm2)  
   
@@ -49,7 +49,7 @@ CTA: 🇵🇸 Understand occupation.
   
 ### 🧠 Creatively Related Books  
   
-* [📜🌍⏳ Sapiens: A Brief History of Humankind](/content/books/sapiens-a-brief-history-of-humankind.md) by Yuval Noah Harari explores how collective narratives, myths, and imagined orders drive human cooperation and conflict, offering a macro lens through which to consider the power of competing historical narratives in the region.  
+* [📜🌍⏳ Sapiens: A Brief History of Humankind](./sapiens-a-brief-history-of-humankind.md) by Yuval Noah Harari explores how collective narratives, myths, and imagined orders drive human cooperation and conflict, offering a macro lens through which to consider the power of competing historical narratives in the region.  
 * ⚖️ Dispossession: The Performative in the Political by Judith Butler explores themes of dispossession, resistance, and the political significance of public assembly and protest. Its theoretical insights can be applied to understanding the ongoing Palestinian struggle for recognition and rights in the face of political erasure.  
 * 🗣️ Decolonizing the Mind: The Politics of Language in African Literature by Ngugi wa Thiong'o examines the lasting impact of colonialism on language, culture, and identity, and the importance of reclaiming indigenous narratives. 🇵🇸 This resonates with Khalidi's project of foregrounding a Palestinian historical perspective against externally imposed interpretations.  
   

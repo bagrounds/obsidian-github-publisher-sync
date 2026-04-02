@@ -6,8 +6,11 @@ URL: https://bagrounds.org/books/an-indigenous-peoples-history-of-the-united-sta
 share: true
 CTA: ✊ Honor native sovereignty.
 affiliate link: https://amzn.to/4hSFyO1
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_time: 2026-04-01T00:00:00Z
+force_analyze_links: false
 ---
-[Home](/content/index.md) > [Books](/content/books/index.md)  
+[Home](../index.md) > [Books](./index.md)  
 # 🇺🇸🏹 An Indigenous Peoples' History of the United States  
 [🛒 An Indigenous Peoples' History of the United States. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4hSFyO1)  
   
@@ -76,7 +79,7 @@ affiliate link: https://amzn.to/4hSFyO1
 * 📚 1776 by David McCullough  
   
 ### 🔗 Related  
-* [🪢🌾 Braiding Sweetgrass: Indigenous Wisdom, Scientific Knowledge, and the Teachings of Plants](/content/books/braiding-sweetgrass.md) by Robin Wall Kimmerer  
+* [🪢🌾 Braiding Sweetgrass: Indigenous Wisdom, Scientific Knowledge, and the Teachings of Plants](./braiding-sweetgrass.md) by Robin Wall Kimmerer  
 * 📚 The Inconvenient Indian: A Curious Account of Native People in North America by Thomas King  
 * 📚 The Other Slavery: The Uncovered Story of Indian Enslavement in America by Andrés Reséndez  
 * 📚 Our History Is the Future: Standing Rock Versus the Dakota Access Pipeline, and the Long Tradition of Indigenous Resistance by Nick Estes  

@@ -5,7 +5,7 @@ aliases:
 title: 💻🎨⚙️ ANSI escape codes
 URL: https://bagrounds.org/topics/ansi-escape-codes
 ---
-[Home](/content/index.md) > [Topics](/content/topics/index.md)  
+[Home](../index.md) > [Topics](./index.md)  
 # 💻🎨⚙️ ANSI escape codes  
 ## 🤖 AI Summary  
 ### 👉 What Is It?  
@@ -139,7 +139,7 @@ URL: https://bagrounds.org/topics/ansi-escape-codes
 ### 📖 Book Recommendations  
   
 - **Topical:**  
-    - "[Linux](/content/software/linux.md) Command Line and Shell Scripting Bible" by Richard Blum and Christine Bresnahan. 📖💻 (Comprehensive guide to command-line mastery!)  
+    - "[Linux](../software/linux.md) Command Line and Shell Scripting Bible" by Richard Blum and Christine Bresnahan. 📖💻 (Comprehensive guide to command-line mastery!)  
 - **Tangentially Related:**  
     - "The Art of Unix Programming" by Eric S. Raymond. 💻🧙‍♂️ (Philosophical and practical insights into Unix and command-line culture.)  
 - **Topically Opposed:**  

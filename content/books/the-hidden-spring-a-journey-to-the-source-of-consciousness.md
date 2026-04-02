@@ -7,7 +7,7 @@ share: true
 affiliate link: https://amzn.to/4mqT3VO
 CTA: 👁️ Uncover sentience.
 ---
-[Home](/content/index.md) > [Books](/content/books/index.md)  
+[Home](../index.md) > [Books](./index.md)  
 # ❓🧠 The Hidden Spring: A Journey to the Source of Consciousness  
 [🛒 The Hidden Spring: A Journey to the Source of Consciousness. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4mqT3VO)  
   
@@ -40,7 +40,7 @@ CTA: 👁️ Uncover sentience.
   
 * 🧠 **Descartes' Error: Emotion, Reason, and the Human Brain by Antonio Damasio**  
     ⚖️ Damasio's seminal work explores the critical role of emotions and the body in rational thought and decision-making, aligning with Solms's argument that feelings are central to consciousness. 💖 Both authors emphasize the intertwined nature of mind, body, and emotion.  
-* **[👤🧠 Being You: A New Science of Consciousness](/content/books/being-you-a-new-science-of-consciousness.md) by Anil Seth**  
+* **[👤🧠 Being You: A New Science of Consciousness](./being-you-a-new-science-of-consciousness.md) by Anil Seth**  
     🔬 Seth offers a comprehensive exploration of how our brains construct our subjective reality, emphasizing predictive processing and controlled hallucinations. 🤔 While differing in some specifics, it shares Solms's commitment to a rigorous, empirically grounded understanding of consciousness and the self.  
 * 🧠 **Affective Neuroscience: The Foundations of Human and Animal Emotions by Jaak Panksepp**  
     ❤️ Panksepp's work provides a foundational understanding of the brain's primary emotional systems, directly supporting Solms's thesis on the primacy of feelings and homeostatic regulation as the bedrock of consciousness.  
@@ -62,7 +62,7 @@ CTA: 👁️ Uncover sentience.
   
 * 🧠 **How to Create a Mind: The Secret of Human Thought Revealed by Ray Kurzweil**  
     🤖 Given Solms's belief in the possibility of creating conscious machines, Kurzweil's book provides a vision of how artificial intelligence might eventually achieve human-level intelligence and potentially consciousness through reverse-engineering the brain. 🔬 This offers a technological and computational counterpoint to Solms's biological explanation.  
-* **[📜🌍⏳ Sapiens: A Brief History of Humankind](/content/books/sapiens-a-brief-history-of-humankind.md) by Yuval Noah Harari**  
+* **[📜🌍⏳ Sapiens: A Brief History of Humankind](./sapiens-a-brief-history-of-humankind.md) by Yuval Noah Harari**  
     📜 While not directly about neuroscience, Harari's sweeping history explores the evolution of human cognition, culture, and subjective experience, providing a macro-level context for understanding how consciousness and our unique mental capacities have shaped our species' journey.  
 * 🤕 **The Man Who Mistook His Wife for a Hat and Other Clinical Tales by Oliver Sacks**  
     ✍️ Sacks's classic collection of neurological case studies offers vivid and often poignant accounts of how brain damage can profoundly alter perception, identity, and subjective experience. 🏥 These real-world examples resonate with Solms's use of clinical data to illuminate the underpinnings of consciousness and demonstrate the fragility and complexity of the mind.  

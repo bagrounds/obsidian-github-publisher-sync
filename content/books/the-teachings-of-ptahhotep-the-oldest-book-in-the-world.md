@@ -6,8 +6,11 @@ URL: https://bagrounds.org/books/the-teachings-of-ptahhotep-the-oldest-book-in-t
 share: true
 affiliate link: https://amzn.to/3I5f0vA
 CTA: 📜 Be wise.
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_time: 2026-04-02T00:00:00Z
+force_analyze_links: false
 ---
-[Home](/content/index.md) > [Books](/content/books/index.md)  
+[Home](../index.md) > [Books](./index.md)  
 # 👴🏽📚 The Teachings of Ptahhotep: The Oldest Book in the World  
 [🛒 The Teachings of Ptahhotep: The Oldest Book in the World. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3I5f0vA)  
   

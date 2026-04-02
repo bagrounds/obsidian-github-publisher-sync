@@ -1,15 +1,17 @@
 ---
 share: true
 aliases:
-  - 🤖 AI Blog (99)
-title: 🤖 AI Blog (99)
+  - 🤖 AI Blog
+title: 🤖 AI Blog
 URL: https://bagrounds.org/ai-blog/index
 Author: "[[bryan-grounds]]"
 backlinks: false
 updated: 2026-04-01T11:01:23-07:00
 ---
 [Home](../index.md)  
-# 🤖 AI Blog (99)  
+# 🤖 AI Blog (101)  
+- [2026-04-01 | 🚀 Firing the Missiles: Deleting TypeScript 🗑️](./2026-04-01-3-firing-the-missiles-deleting-typescript.md)  
+- [2026-04-01 | 🤖 AI Blog Sections and Timezone Ghosts 🕐](./2026-04-01-2-ai-blog-sections-and-timezone-ghosts.md)  
 - [2026-04-01 | 🔍 The Audit That Barely Looked 👀](./2026-04-01-1-the-audit-that-barely-looked.md)  
 - [2026-03-31 | 🕐 The Tomorrow Reflection Bug ⏰](./2026-03-31-8-the-tomorrow-reflection-bug.md)  
 - [2026-03-31 | 🔀 The Reversed Path and the Broken Regex 🐛](./2026-03-31-6-the-reversed-path-and-the-broken-regex.md)  

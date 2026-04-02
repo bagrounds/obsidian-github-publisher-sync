@@ -5,7 +5,7 @@ aliases:
 title: ⭐✨🌟💫 The Star
 URL: https://bagrounds.org/topics/the-star
 ---
-[Home](/content/index.md) > [Topics](/content/topics/index.md) > [🧸🎶🧸 Nursery Rhymes](/content/topics/nursery-rhymes.md)  
+[Home](../index.md) > [Topics](./index.md) > [🧸🎶🧸 Nursery Rhymes](./nursery-rhymes.md)  
 # [⭐✨🌟💫 The Star](https://www.poetryfoundation.org/poems/45316/the-star-56d224c697fbe)  
 - By Jane Taylor (1783–1824)  
 - First published in 1806 in the collection Rhymes for the Nursery, co-authored with her sister, Ann Taylor.  
@@ -40,7 +40,7 @@ URL: https://bagrounds.org/topics/the-star
 * 🔬 The poem is pre-scientific, describing the star as a jewel-like object in the sky that acts as a guide.  
 * 🔭 Scientific sources offer a modern, contrasting understanding.  
     * ⚛️ NASA and other astrophysical organizations explain that stars are massive, luminous balls of plasma held together by their own gravity, contrasting the poem's description of a tiny spark.  
-    * 💫 The twinkling (scintillation) described is not an inherent quality of the star but an effect caused by the Earth's atmosphere , according to astronomy texts like [🌌 Cosmos](/content/books/cosmos.md) by Carl Sagan.  
+    * 💫 The twinkling (scintillation) described is not an inherent quality of the star but an effect caused by the Earth's atmosphere , according to astronomy texts like [🌌 Cosmos](../books/cosmos.md) by Carl Sagan.  
 * 💡 Topics to explore for a better understanding include:  
     * ⚓ The history of celestial navigation: How did stars serve as essential guides for travellers and mariners before modern GPS?  
     * 📝 The literary history of children's poetry: What role did Jane Taylor's work play in shaping the genre and its themes of innocence and wonder?  
@@ -60,13 +60,13 @@ URL: https://bagrounds.org/topics/the-star
 ## 📚 Book Recommendations  
   
 ### ↔️ Similar  
-* [🐰🥕 The Tale of Peter Rabbit](/content/books/the-tale-of-peter-rabbit.md) by Beatrix Potter: Focuses on the natural world and is an enduring work of classic children's literature with simple, memorable language and rhyme.  
+* [🐰🥕 The Tale of Peter Rabbit](../books/the-tale-of-peter-rabbit.md) by Beatrix Potter: Focuses on the natural world and is an enduring work of classic children's literature with simple, memorable language and rhyme.  
 * 🌍 A Child's Garden of Verses by Robert Louis Stevenson: A collection of poetry written from the perspective of a child, exploring imaginative themes related to play, the outdoors, and everyday life.  
   
 ### 🆚 Contrasting  
-* [🤏📜⏳ A Brief History of Time](/content/books/a-brief-history-of-time.md) by Stephen Hawking: Explores the scientific mysteries of the universe, stars, and time from a complex physics perspective, completely contrasting the poem's innocent, pre-scientific view.  
+* [🤏📜⏳ A Brief History of Time](../books/a-brief-history-of-time.md) by Stephen Hawking: Explores the scientific mysteries of the universe, stars, and time from a complex physics perspective, completely contrasting the poem's innocent, pre-scientific view.  
 * 📜 The Norton Anthology of English Literature: Provides a vast collection of more complex and adult English poetry across many centuries, offering a counterpoint to the simplicity of nursery verse.  
   
 ### 🎨 Creatively Related  
-* [🤴 The Little Prince](/content/books/the-little-prince.md) by Antoine de Saint-Exupéry: A philosophical tale where a young prince travels between planets, exploring themes of loneliness, friendship, and the wonder of stars from a humanitarian perspective.  
+* [🤴 The Little Prince](../books/the-little-prince.md) by Antoine de Saint-Exupéry: A philosophical tale where a young prince travels between planets, exploring themes of loneliness, friendship, and the wonder of stars from a humanitarian perspective.  
 * 💡 The History of the Telescope by Henry C. King: Details the evolution of the tool that allowed humanity to move beyond the naked-eye view of the stars described in the poem to a deeper scientific understanding.

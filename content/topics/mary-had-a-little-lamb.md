@@ -5,7 +5,7 @@ aliases:
 title: 🐑🎀 Mary Had a Little Lamb
 URL: https://bagrounds.org/topics/mary-had-a-little-lamb
 ---
-[Home](/content/index.md) > [Topics](/content/topics/index.md) > [🧸🎶🧸 Nursery Rhymes](/content/topics/nursery-rhymes.md)  
+[Home](../index.md) > [Topics](./index.md) > [🧸🎶🧸 Nursery Rhymes](./nursery-rhymes.md)  
 # 🐑🎀 Mary Had a Little Lamb  
 - By Sarah Josepha Hale (1788–1879)  
 - First published in 1830 in her book _Poems for Our Children_. It was inspired by a real-life incident involving a young girl named Mary Sawyer and her pet lamb.  
@@ -53,7 +53,7 @@ URL: https://bagrounds.org/topics/mary-had-a-little-lamb
   
 ## 📚 Book Recommendations  
 ### ↔️ Similar  
-- **[🕷️🕸️ Charlotte's Web](/content/books/charlottes-web.md) by E.B. White:** A classic exploration of the deep bond between a girl (Fern) and a farm animal (Wilbur), emphasizing themes of loyalty and friendship.  
+- **[🕷️🕸️ Charlotte's Web](../books/charlottes-web.md) by E.B. White:** A classic exploration of the deep bond between a girl (Fern) and a farm animal (Wilbur), emphasizing themes of loyalty and friendship.  
 - 🐂🛒 **Ox-Cart Man by Donald Hall:** A beautifully illustrated look at 19th-century New England farm life, capturing the same era in which the poem was written.  
   
 ### 🆚 Contrasting  

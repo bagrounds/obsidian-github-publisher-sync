@@ -6,14 +6,17 @@ URL: https://bagrounds.org/books/the-coddling-of-the-american-mind-how-good-inte
 share: true
 affiliate link: https://amzn.to/4mRH2d2
 CTA: 🛡️ Fortify resilience.
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_time: 2026-04-02T00:00:00Z
+force_analyze_links: false
 ---
-[Home](/content/index.md) > [Books](/content/books/index.md) | [🧠🤝🐘 Jonathan Haidt](/content/people/jonathan-haidt.md)  
+[Home](../index.md) > [Books](./index.md) | [🧠🤝🐘 Jonathan Haidt](../people/jonathan-haidt.md)  
 # 🤕👶 The Coddling of the American Mind: How Good Intentions and Bad Ideas Are Setting Up a Generation for Failure  
 [🛒 The Coddling of the American Mind: How Good Intentions and Bad Ideas Are Setting Up a Generation for Failure. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4mRH2d2)  
   
 ## 📝🐒 Human Notes  
 - 🌐 [TheCoddling.com](https://www.thecoddling.com)  
-- [❌🤔💡 On being wrong | Kathryn Schulz](/content/videos/on-being-wrong-kathryn-schulz.md)  
+- [❌🤔💡 On being wrong | Kathryn Schulz](../videos/on-being-wrong-kathryn-schulz.md)  
   
 ## 📚 Book Report: The Coddling of the American Mind: How Good Intentions and Bad Ideas Are Setting Up a Generation for Failure  
   
@@ -80,7 +83,7 @@ CTA: 🛡️ Fortify resilience.
   
 * 👥 **The Rise of Victimhood Culture by Bradley Campbell and Jason Manning**  
     📖 This book offers a sociological framework for understanding contemporary moral conflicts, particularly on college campuses, by examining the shift from a "dignity culture" to a "victimhood culture." 🔑 It provides a theoretical underpinning for one of the key phenomena discussed in The Coddling of the American Mind.  
-* **[😇🧠 The Righteous Mind: Why Good People Are Divided by Politics and Religion](/content/books/the-righteous-mind.md) by Jonathan Haidt**  
+* **[😇🧠 The Righteous Mind: Why Good People Are Divided by Politics and Religion](./the-righteous-mind.md) by Jonathan Haidt**  
     ✍️ Written by one of the co-authors of The Coddling of the American Mind, this book delves into moral psychology from an evolutionary perspective, proposing a theory of Moral Foundations. 🤯 It offers insights into the tribalism and political divisions that are exacerbated by the "Untruth of Us Versus Them" discussed in The Coddling of the American Mind.  
 * 🚫 **The Canceling of the American Mind: Cancel Culture Undermines Trust and Threatens Us All—But There Is a Solution by Greg Lukianoff**  
     ✍️ Co-authored by Greg Lukianoff, this book serves as a direct follow-up, exploring the phenomenon of "cancel culture" and its dangers to free expression and trust. 🗣️ It builds upon the themes of restricted speech and intellectual intolerance introduced in The Coddling of the American Mind.  
@@ -96,7 +99,7 @@ CTA: 🛡️ Fortify resilience.
   
 ### 🎨 Creatively Related Books  
   
-* **[📱😥 The Anxious Generation: How the Great Rewiring of Childhood Is Causing an Epidemic of Mental Illness](/content/books/the-anxious-generation-how-the-great-rewiring-of-childhood-is-causing-an-epidemic-of-mental-illness.md) by Jonathan Haidt**  
+* **[📱😥 The Anxious Generation: How the Great Rewiring of Childhood Is Causing an Epidemic of Mental Illness](./the-anxious-generation-how-the-great-rewiring-of-childhood-is-causing-an-epidemic-of-mental-illness.md) by Jonathan Haidt**  
     ✍️ This book, by one of The Coddling of the American Mind's authors, expands on one of the explanatory threads by specifically focusing on how the pervasive use of smartphones and social media in childhood has contributed to the mental health crisis among adolescents. 🔎 It offers a deeper dive into the technological factors impacting the generation discussed.  
 * 📊 **Discrimination and Disparities by Thomas Sowell**  
     🤔 Sowell's work often challenges conventional wisdom regarding social inequalities, examining economic and historical data to argue against what he perceives as misinterpretations of disparities. 👓 His analytical approach, which emphasizes systemic processes over individual or group malevolence, offers a different lens through which to view societal divisions, providing a broader context for discussions related to the "Untruth of Us Versus Them."  

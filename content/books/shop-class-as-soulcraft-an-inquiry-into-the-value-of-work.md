@@ -7,7 +7,7 @@ share: true
 CTA: 🛠️ Build meaning.
 affiliate link: https://amzn.to/49qiUc4
 ---
-[Home](/content/index.md) > [Books](/content/books/index.md)  
+[Home](../index.md) > [Books](./index.md)  
 # 🛠️💖 Shop Class as Soulcraft: An Inquiry Into the Value of Work  
 [🛒 Shop Class as Soulcraft: An Inquiry Into the Value of Work. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/49qiUc4)  
   
@@ -66,9 +66,9 @@ affiliate link: https://amzn.to/49qiUc4
 ## 📚 Book Recommendations  
   
 ### 📖 Similar Books  
-* [🏍️🧘❓ Zen and the Art of Motorcycle Maintenance: An Inquiry into Values](/content/books/zen-and-the-art-of-motorcycle-maintenance-an-inquiry-into-values.md) by Robert M. Pirsig  
+* [🏍️🧘❓ Zen and the Art of Motorcycle Maintenance: An Inquiry into Values](./zen-and-the-art-of-motorcycle-maintenance-an-inquiry-into-values.md) by Robert M. Pirsig  
 * 🔨 The Craftsman by Richard Sennett  
-* [⚙️🔄 The Nature of Technology: What It Is and How It Evolves](/content/books/the-nature-of-technology-what-it-is-and-how-it-evolves.md) by W. Brian Arthur  
+* [⚙️🔄 The Nature of Technology: What It Is and How It Evolves](./the-nature-of-technology-what-it-is-and-how-it-evolves.md) by W. Brian Arthur  
 * 🧠 The World Beyond Your Head: On Becoming an Individual in an Age of Distraction by Matthew B. Crawford  
 * 👋 Intelligent Hands: Why making is a skill for life by Katy Bevan  
   
@@ -78,9 +78,9 @@ affiliate link: https://amzn.to/49qiUc4
 * 🧀 Who Moved My Cheese? An A-Mazing Way to Deal with Change in Your Work and in Your Life by Spencer Johnson  
   
 ### 🔗 Related Books  
-* [🤿💼 Deep Work: Rules for Focused Success in a Distracted World](/content/books/deep-work.md) by Cal Newport  
-* [🏎️⛽ Drive: The Surprising Truth About What Motivates Us](/content/books/drive-the-surprising-truth-about-what-motivates-us.md) by Daniel H. Pink  
-* [⚙️⛓️ Discipline and Punish: The Birth of the Prison](/content/books/discipline-and-punish-the-birth-of-the-prison.md) by Michel Foucault  
+* [🤿💼 Deep Work: Rules for Focused Success in a Distracted World](./deep-work.md) by Cal Newport  
+* [🏎️⛽ Drive: The Surprising Truth About What Motivates Us](./drive-the-surprising-truth-about-what-motivates-us.md) by Daniel H. Pink  
+* [⚙️⛓️ Discipline and Punish: The Birth of the Prison](./discipline-and-punish-the-birth-of-the-prison.md) by Michel Foucault  
 * 🏺 The Unknown Craftsman by Soetsu Yanagi  
 * 💻 The Soul of a New Machine by Tracy Kidder  
   

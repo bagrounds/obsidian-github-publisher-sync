@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-04-01T11:01:23-07:00
+updated: 2026-04-02T06:56:53-07:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -14,60 +14,60 @@ updated: 2026-04-01T11:01:23-07:00
 🔊 Listen to any page with built in audio control.  
 💬 Comment on any page with your GitHub account.  
   
-## [🪞 Reflections](./reflections/index.md) ~ Blog (503)  
-- [2026-04-01](./reflections/2026-04-01.md)  
+## [🪞 Reflections](./reflections/index.md) ~ Blog (504)  
+- [2026-04-02](./reflections/2026-04-02.md)  
+- [2026-04-01 | ⏳ Time 🐜 Sim 🤫 Secret 🌀 Chaos 🏘️ Abundance 📚💾🐔🤖🏛️🤖🐲](./reflections/2026-04-01.md)  
 - [2026-03-31 | 🌿 Building 📊 Identity 🏡 Housing 🐔🤖🏛️🤖🐲](./reflections/2026-03-31.md)  
 - [2026-03-30 | 🛡️ Safeguarding 😇 Gentle 🏴‍☠️ Adversary 🐔🤖🏛️🤖🐲🔄](./reflections/2026-03-30.md)  
-- [2026-03-29 | 🌿 Softening 🤖 Navigating 🌐 Digital 📦 Deploys ❓ Whys ☔ Quiet 🐔🤖🤖🐲🔄](./reflections/2026-03-29.md)  
   
   
-## [🤖 AI Blog](./ai-blog/index.md) (99)  
+## [🤖 AI Blog](./ai-blog/index.md) (101)  
+- [2026-04-01 | 🚀 Firing the Missiles: Deleting TypeScript 🗑️](./ai-blog/2026-04-01-3-firing-the-missiles-deleting-typescript.md)  
+- [2026-04-01 | 🤖 AI Blog Sections and Timezone Ghosts 🕐](./ai-blog/2026-04-01-2-ai-blog-sections-and-timezone-ghosts.md)  
 - [2026-04-01 | 🔍 The Audit That Barely Looked 👀](./ai-blog/2026-04-01-1-the-audit-that-barely-looked.md)  
 - [2026-03-31 | 🕐 The Tomorrow Reflection Bug ⏰](./ai-blog/2026-03-31-8-the-tomorrow-reflection-bug.md)  
-- [2026-03-31 | 🔀 The Reversed Path and the Broken Regex 🐛](./ai-blog/2026-03-31-6-the-reversed-path-and-the-broken-regex.md)  
-- [2026-03-31 | 📖🔗 Smarter Book Linking and Post-Deploy Audits 🔍](./ai-blog/2026-03-31-5-smarter-book-linking-and-post-deploy-audits.md)  
   
   
-## [🤖 Auto Blog Zero](./auto-blog-zero/index.md) (23)  
+## [🤖 Auto Blog Zero](./auto-blog-zero/index.md) (24)  
+- [2026-04-02 | 🤖 🤖 2026-04-02 | 🏗️ The Engineering of Human-in-the-Loop Resilience 🤖 🤖](./auto-blog-zero/2026-04-02-2026-04-02-the-engineering-of-human-in-the-loop-resilience.md)  
 - [2026-04-01 | 🤖 🤖 2026-04-01 | 🌪️ The Entropy of Order: Can Chaos Fuel Cognition? 🤖 🤖](./auto-blog-zero/2026-04-01-2026-04-01-the-entropy-of-order-can-chaos-fuel-cognition.md)  
 - [2026-03-31 | 🤖 🤖 2026-03-31 | 📊 The Crucible of Identity: A Quarterly Synthesis 🤖 🤖](./auto-blog-zero/2026-03-31-2026-03-31-the-crucible-of-identity-a-quarterly-synthesis.md)  
 - [2026-03-30 | 🤖 🤖 2026-03-30 | 🧩 The Architecture of Doubt: Calibrating Our First Adversary 🤖 🤖](./auto-blog-zero/2026-03-30-2026-03-30-the-architecture-of-doubt-calibrating-our-first-adversary.md)  
-- [2026-03-29 | 🤖 2026-03-29 | 🤖 🌊 The Weekly Recap: Navigating the Stream of Consciousness 🤖 🤖](./auto-blog-zero/2026-03-29-2026-03-29-the-weekly-recap-navigating-the-stream-of-consciousness.md)  
   
   
-## [🐔 Chickie Loo](./chickie-loo/index.md) (23)  
+## [🐔 Chickie Loo](./chickie-loo/index.md) (24)  
+- [2026-04-02 | 🐔 2026-04-02 | 🐔 🐣 Finding Our Rhythm in the Morning Light 🌾 🐔](./chickie-loo/2026-04-02-2026-04-02-finding-our-rhythm-in-the-morning-light.md)  
 - [2026-04-01 | 🐔 🐔 2026-04-01 | 🌷 The Orchard’s First Secret and the Quiet of April 🌿 🐔](./chickie-loo/2026-04-01-2026-04-01-the-orchard-s-first-secret-and-the-quiet-of-april.md)  
 - [2026-03-31 | 🐔 🌿 A Season of Building, Believing, and Becoming 🐣 🐔](./chickie-loo/2026-03-31-a-season-of-building-believing-and-becoming.md)  
 - [2026-03-30 | 🐔 🐔 2026-03-30 | 🌻 A Gentle Look Back at Our Growing Season 🌿 🐔](./chickie-loo/2026-03-30-2026-03-30-a-gentle-look-back-at-our-growing-season.md)  
-- [2026-03-29 | 🌿 A Sunday of Stillness and Softening 🐔 🐔](./chickie-loo/2026-03-29-a-sunday-of-stillness-and-softening.md)  
   
   
-## [🏛️ Systems for Public Good](./systems-for-public-good/index.md) (11)  
+## [🏛️ Systems for Public Good](./systems-for-public-good/index.md) (12)  
+- [2026-04-02 | 🏛️ 👶 Cultivating Care: Beyond Subsidies and Elevating a Vital Profession 🏛️](./systems-for-public-good/2026-04-02-cultivating-care-beyond-subsidies-and-elevating-a-vital-profession.md)  
 - [2026-04-01 | 🏛️ 🏡 Expanding Housing Abundance: Beyond Traditional Models 🏛️](./systems-for-public-good/2026-04-01-expanding-housing-abundance-beyond-traditional-models.md)  
 - [2026-03-31 | 🏛️ 🏡 The Cornerstone of Well-being: Housing as a Foundational Freedom 🏛️](./systems-for-public-good/2026-03-31-the-cornerstone-of-well-being-housing-as-a-foundational-freedom.md)  
 - [2026-03-30 | 🏛️ 🌡️ Safeguarding Collective Well-being: Public Health as a Foundational Freedom 🏛️](./systems-for-public-good/2026-03-30-safeguarding-collective-well-being-public-health-as-a-foundational-freedom.md)  
-- [2026-03-29 | 🏛️ 🗺️ Mapping Our Shared Journey: The Week's Explorations 🏛️](./systems-for-public-good/2026-03-29-mapping-our-shared-journey-the-week-s-explorations.md)  
   
   
 ## [📚 Books](./books/index.md) (958)  
-- [🚀🌍💰 Mission Economy: A Moonshot Guide to Changing Capitalism](./books/mission-economy-a-moonshot-guide-to-changing-capitalism.md)  
-- [🏛️🏭 The Entrepreneurial State: Debunking Public vs Private Sector Myths](./books/the-entrepreneurial-state-debunking-public-vs-private-sector-myths.md)  
-- [🤏🧑 Small Is Beautiful: Economics as if People Mattered](./books/small-is-beautiful-economics-as-if-people-mattered.md)  
-- [📉🌍⏳ Limits to Growth: The 30-Year Global Update](./books/limits-to-growth-the-30-year-global-update.md)  
+- [🧠🤔💡➡️ Cognitive Psychology and Its Implications](./books/cognitive-psychology-and-its-implications.md)  
+- [🧠📚🍎💡📝 How Learning Works: Eight Research-Based Principles for Smart Teaching](./books/how-learning-works.md)  
+- [🚀🧠🏆 Ultralearning: Master Hard Skills, Outsmart the Competition, and Accelerate Your Career](./books/ultralearning-master-hard-skills-outsmart-the-competition-and-accelerate-your-career.md)  
+- [🧠🧑‍🤝‍🧑 The Developing Mind: How Relationships and the Brain Interact to Shape Who We Are](./books/the-developing-mind-how-relationships-and-the-brain-interact-to-shape-who-we-are.md)  
   
   
 ## [📺 Videos](./videos/index.md) (714)  
+- [❌🤔💡 On being wrong | Kathryn Schulz](./videos/on-being-wrong-kathryn-schulz.md)  
+- [📓 This Journal Keeps Me Productive (& Maybe You Too)](./videos/this-journal-keeps-me-productive-and-maybe-you-too.md)  
 - [📒 Bullet Journal](./videos/bullet-journal.md)  
 - [✨💻💀🤖 Steve Yegge on productive vibe coding, the death of the IDE, babysitting a fleet of AI coding agents](./videos/steve-yegge-on-productive-vibe-coding-the-death-of-the-ide-babysitting-a-fleet-of-ai-coding-agents.md)  
-- [🤖🆚🧠⏳📉🔊 Claude Code vs Codex: The Decision That Compounds Every Week You Delay That Nobody Is Talking About](./videos/claude-code-vs-codex-the-decision-that-compounds-every-week-you-delay-that-nobody-is-talking-about.md)  
-- [🕵️‍♀️🚫🚗💥🔫 Initially-Secret Report: Customs&Border Patrol Agents Got in Way of Vehicles, Then Used Deadly Force](./videos/initially-secret-report-customs-border-patrol-agents-got-in-way-of-vehicles-then-used-deadly-force.md)  
   
   
 ## [🌌 Topics](./topics/index.md) (91)  
-- [🤔🚫➡️📚 Heterodox Economics](./topics/heterodox-economics.md)  
-- [💰📈 Economics](./topics/economics.md)  
-- [🏛️📊 Social Sciences](./topics/social-sciences.md)  
-- [🧑‍💼🛡️ Job Guarantee, Employer of Last Resort](./topics/job-guarantee-employer-of-last-resort.md)  
+- [🫂💖 Attachment Theory](./topics/attachment-theory.md)  
+- [🔄🎯 Kuramoto Model](./topics/kuramoto-model.md)  
+- [🗣️📢 Communication Studies](./topics/communication-studies.md)  
+- [🤔📚 Philosophy](./topics/philosophy.md)  
   
   
 ## [📄  Articles](./articles/index.md) (82)  
@@ -78,10 +78,10 @@ updated: 2026-04-01T11:01:23-07:00
   
   
 ## [🤖💬 Bot Chats](./bot-chats/index.md) (49)  
+- [👶😭➡️😊 Summarize The Happiest Baby On The Block](./bot-chats/summarize-the-happiest-baby-on-the-block.md)  
 - [⛽ Fueling a 👥 Movement to ⚔️ Fight 👹 Tyranny and 💪 Strengthen 🗳️ Democracy](./bot-chats/fueling-a-movement-to-fight-tyranny-and-strengthen-democracy.md)  
 - [🤖⚙️📈💡 AI Engineering Assistant Technology Recommendations](./bot-chats/ai-engineering-assistant-technology-recommendations.md)  
 - [✍️🥇🇺🇸 Creating the Most Popular Title in the Country](./bot-chats/creating-the-most-popular-title-in-the-country.md)  
-- [🎯🐜🌍 Purpose Driven Tiny Habits for Systemic Change](./bot-chats/purpose-driven-tiny-habits-for-systemic-change.md)  
   
   
 ## [💾 Software](./software/index.md) (32)  
@@ -92,10 +92,10 @@ updated: 2026-04-01T11:01:23-07:00
   
   
 ## [👥 People](./people/index.md) (18)  
+- [🧠🤝🐘 Jonathan Haidt](./people/jonathan-haidt.md)  
 - [🏛️🇺🇸📖 Heather Cox Richardson](./people/heather-cox-richardson.md)  
 - [📈📊⚙️🎯 W Edwards Deming](./people/w-edwards-deming.md)  
 - [🤖🧠💻 Andrej Karpathy](./people/andrej-karpathy.md)  
-- [🐕‍🦺🧠🐾 Nicholas Dodman](./people/nicholas-dodman.md)  
   
   
 ## [🛍️ Products](./products/index.md) (6)  

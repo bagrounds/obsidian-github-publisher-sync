@@ -6,7 +6,7 @@ URL: https://bagrounds.org/books/the-upside-of-stress-why-stress-is-good-for-you
 share: true
 affiliate link: https://amzn.to/3Fu7XLN
 ---
-[Home](/content/index.md) > [Books](/content/books/index.md)  
+[Home](../index.md) > [Books](./index.md)  
 # ⬆️💪 The Upside of Stress: Why Stress Is Good for You, and How to Get Good at It  
 [🛒 The Upside of Stress: Why Stress Is Good for You, and How to Get Good at It. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3Fu7XLN)  
   
@@ -14,7 +14,7 @@ affiliate link: https://amzn.to/3Fu7XLN
   
 ### ✍️ Introduction  
   
-* 👩‍⚕️ **Author:** [Kelly McGonigal](/content/people/kelly-mcgonigal.md), PhD, a health psychologist and lecturer at Stanford University.  
+* 👩‍⚕️ **Author:** [Kelly McGonigal](../people/kelly-mcgonigal.md), PhD, a health psychologist and lecturer at Stanford University.  
 * 🧠 **Central Premise:** This book challenges the widespread belief that stress is inherently harmful. ⚠️ McGonigal argues that stress itself isn't bad; rather, it's the *belief* that stress is bad for you that causes the most damage. 💡 She proposes that changing your mindset about stress can make you healthier, happier, and more capable.  
   
 ### 🔑 Key Concepts  
@@ -41,27 +41,27 @@ affiliate link: https://amzn.to/3Fu7XLN
   
 ### 💡 Similar Perspectives: Embracing Challenges & Mindset  
   
-* 🧠 **[Mindset](/content/books/mindset.md): The New Psychology of Success by Carol S. Dweck:** Explores the foundational concept of fixed vs. growth mindsets, which aligns closely with McGonigal's emphasis on how beliefs shape outcomes. 👩‍🏫 Dweck's work is referenced by McGonigal.  
-* **[❤️‍🔥💪 Grit: The Power of Passion and Perseverance](/content/books/grit-the-power-of-passion-and-perseverance.md) by Angela Duckworth:** Focuses on the importance of perseverance and passion for long-term goals, complementing the idea of embracing challenges found in *The Upside of Stress*.  
-* **[🦁🫀 Daring Greatly: How the Courage to Be Vulnerable Transforms the Way We Live, Love, Parent, and Lead](/content/books/daring-greatly-how-the-courage-to-be-vulnerable-transforms-the-way-we-live-love-parent-and-lead.md) by Brené Brown:** Discusses vulnerability and courage in facing difficult situations, echoing the theme of engaging with challenges rather than avoiding them.  
+* 🧠 **[Mindset](./mindset.md): The New Psychology of Success by Carol S. Dweck:** Explores the foundational concept of fixed vs. growth mindsets, which aligns closely with McGonigal's emphasis on how beliefs shape outcomes. 👩‍🏫 Dweck's work is referenced by McGonigal.  
+* **[❤️‍🔥💪 Grit: The Power of Passion and Perseverance](./grit-the-power-of-passion-and-perseverance.md) by Angela Duckworth:** Focuses on the importance of perseverance and passion for long-term goals, complementing the idea of embracing challenges found in *The Upside of Stress*.  
+* **[🦁🫀 Daring Greatly: How the Courage to Be Vulnerable Transforms the Way We Live, Love, Parent, and Lead](./daring-greatly-how-the-courage-to-be-vulnerable-transforms-the-way-we-live-love-parent-and-lead.md) by Brené Brown:** Discusses vulnerability and courage in facing difficult situations, echoing the theme of engaging with challenges rather than avoiding them.  
 * 🛤️ **The Obstacle Is the Way: The Timeless Art of Turning Trials into Triumph by Ryan Holiday:** Draws on Stoic philosophy to argue that obstacles can be sources of strength and opportunity, similar to McGonigal's reframing of stress.  
 * 😊 **Hardwiring Happiness: The New Brain Science of Contentment, Calm, and Confidence by Rick Hanson:** Focuses on neuroplasticity and actively cultivating positive mental states, relating to the idea of intentionally shifting one's response to experiences.  
   
 ### ⚖️ Contrasting Perspectives: Managing & Reducing Stress  
   
-* **[🦓 Why Zebras Don't Get Ulcers: The Acclaimed Guide to Stress, Stress-Related Disease, and Coping](/content/books/why-zebras-dont-get-ulcers.md) by Robert M. Sapolsky:** A classic text detailing the physiological impacts of chronic stress, offering a strong counterpoint by emphasizing the detrimental effects stress *can* have, particularly when prolonged. ⚠️ While McGonigal acknowledges potential harm, Sapolsky focuses more heavily on the negative consequences.  
-* **[🥵🔥💨 Burnout: The Secret to Unlocking the Stress Cycle](/content/books/burnout-the-secret-to-unlocking-the-stress-cycle.md) by Emily Nagoski and Amelia Nagoski:** Focuses on completing the stress cycle and managing the exhaustion that can result from chronic stress, offering practical strategies for mitigating the negative side effects McGonigal seeks to reframe.  
-* **[🌪️🧘‍♂️ Full Catastrophe Living: Using the Wisdom of Your Body and Mind to Face Stress, Pain, and Illness](/content/books/full-catastrophe-living.md) by Jon Kabat-Zinn:** A foundational book on mindfulness-based stress reduction (MBSR), emphasizing acceptance and awareness to manage stress, rather than primarily reframing it as potentially beneficial.  
+* **[🦓 Why Zebras Don't Get Ulcers: The Acclaimed Guide to Stress, Stress-Related Disease, and Coping](./why-zebras-dont-get-ulcers.md) by Robert M. Sapolsky:** A classic text detailing the physiological impacts of chronic stress, offering a strong counterpoint by emphasizing the detrimental effects stress *can* have, particularly when prolonged. ⚠️ While McGonigal acknowledges potential harm, Sapolsky focuses more heavily on the negative consequences.  
+* **[🥵🔥💨 Burnout: The Secret to Unlocking the Stress Cycle](./burnout-the-secret-to-unlocking-the-stress-cycle.md) by Emily Nagoski and Amelia Nagoski:** Focuses on completing the stress cycle and managing the exhaustion that can result from chronic stress, offering practical strategies for mitigating the negative side effects McGonigal seeks to reframe.  
+* **[🌪️🧘‍♂️ Full Catastrophe Living: Using the Wisdom of Your Body and Mind to Face Stress, Pain, and Illness](./full-catastrophe-living.md) by Jon Kabat-Zinn:** A foundational book on mindfulness-based stress reduction (MBSR), emphasizing acceptance and awareness to manage stress, rather than primarily reframing it as potentially beneficial.  
 * 😌 **Don't Sweat the Small Stuff... and It's All Small Stuff by Richard Carlson:** Advocates for minimizing stress by changing one's perspective on what is worth worrying about, focusing on reduction rather than harnessing stress.  
 * 🤕 **When the Body Says No: The Cost of Hidden Stress by Gabor Maté:** Explores the deep connections between chronic stress, emotions, and physical illness, highlighting the potential severe negative consequences of unaddressed stress.  
   
 ### 🎨 Creatively Related: Broader Themes  
   
-* **[🧘🏋️ The Willpower Instinct: How Self-Control Works, Why It Matters, and What You Can Do to Get More of It](/content/books/the-willpower-instinct.md) by Kelly McGonigal:** McGonigal's earlier work, focusing on self-control, which relates to managing responses under pressure.  
-* **[⚛️🔄 Atomic Habits](/content/books/atomic-habits.md): An Easy & Proven Way to Build Good Habits & Break Bad Ones by James Clear:** While not directly about stress, its focus on building systems and small changes can be applied to developing healthier stress response habits.  
-* 🚀 **[Drive: The Surprising Truth About What Motivates Us](/content/books/drive-the-surprising-truth-about-what-motivates-us.md) by Daniel H. Pink:** Explores intrinsic motivation, which connects to finding meaning in challenging (and potentially stressful) work.  
+* **[🧘🏋️ The Willpower Instinct: How Self-Control Works, Why It Matters, and What You Can Do to Get More of It](./the-willpower-instinct.md) by Kelly McGonigal:** McGonigal's earlier work, focusing on self-control, which relates to managing responses under pressure.  
+* **[⚛️🔄 Atomic Habits](./atomic-habits.md): An Easy & Proven Way to Build Good Habits & Break Bad Ones by James Clear:** While not directly about stress, its focus on building systems and small changes can be applied to developing healthier stress response habits.  
+* 🚀 **[Drive: The Surprising Truth About What Motivates Us](./drive-the-surprising-truth-about-what-motivates-us.md) by Daniel H. Pink:** Explores intrinsic motivation, which connects to finding meaning in challenging (and potentially stressful) work.  
 * 🤸 **Emotional Agility: Get Unstuck, Embrace Change, and Thrive in Work and Life by Susan David:** Discusses navigating complex emotions and thoughts adaptively, which is relevant to changing one's relationship with stress.  
-* 🌊 **[Flow: The Psychology of Optimal Experience](/content/books/flow-the-psychology-of-optimal-experience.md) by Mihaly Csikszentmihalyi:** Discusses the concept of "flow," a state of deep engagement often found in challenging activities, which connects to McGonigal's "challenge response".  
+* 🌊 **[Flow: The Psychology of Optimal Experience](./flow-the-psychology-of-optimal-experience.md) by Mihaly Csikszentmihalyi:** Discusses the concept of "flow," a state of deep engagement often found in challenging activities, which connects to McGonigal's "challenge response".  
   
-## 💬 [Gemini](/content/software/gemini.md) Prompt (gemini-2.5-pro-exp-03-25)  
+## 💬 [Gemini](../software/gemini.md) Prompt (gemini-2.5-pro-exp-03-25)  
 > Write a markdown-formatted (start headings at level H2) book report, followed by a plethora of additional similar, contrasting, and creatively related book recommendations on The Upside of Stress: Why Stress Is Good for You, and How to Get Good at It. Be thorough in content discussed but concise and economical with your language. Structure the report with section headings and bulleted lists to avoid long blocks of text.

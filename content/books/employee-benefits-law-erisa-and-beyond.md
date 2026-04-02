@@ -8,7 +8,7 @@ tags:
   - law
 affiliate link: https://amzn.to/3ZFRdI3
 ---
-[Home](/content/index.md) > [Books](/content/books/index.md)  
+[Home](../index.md) > [Books](./index.md)  
 # 🧑‍💼💰⚖️ Employee Benefits Law: ERISA and Beyond  
 [🛒 Employee Benefits Law: ERISA and Beyond. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3ZFRdI3)  
   
@@ -46,7 +46,7 @@ As with any legal treatise, the dynamic nature of employee benefits law necessit
   
 These books offer similar comprehensive coverage of employee benefits law, often serving as primary resources for legal professionals.  
   
-* **[💼📜 ERISA: A Comprehensive Guide](/content/books/erisa-a-comprehensive-guide.md):** A detailed analysis of ERISA's statutory provisions, regulations, and case law, often cited by courts.  
+* **[💼📜 ERISA: A Comprehensive Guide](./erisa-a-comprehensive-guide.md):** A detailed analysis of ERISA's statutory provisions, regulations, and case law, often cited by courts.  
 * 🏥 **Health and Welfare Benefits Answer Book:** Focuses specifically on the rapidly changing laws governing health and welfare plans, including detailed discussions of various benefit arrangements and relevant federal laws like ACA, FMLA, and HIPAA.  
 * 🧠 **Understanding Employee Benefits Law:** Provides a broad overview and understanding of employee benefits law, addressing both pension and health care plans, including the impact of the ACA and key court decisions.  
 * 🏛️ **Medill's Introduction to Employee Benefits Law: Policy and Practice:** Offers an introduction to the field, incorporating recent legal changes and focusing on both policy and practical aspects.  
@@ -78,5 +78,5 @@ These books explore related fields, economic theories, or historical contexts th
 * 🤝 **Work, Pay, and Sustainability: A New Economics of Labor:** Presents a pluralist labor economics perspective, considering job quality and the broader societal and environmental impacts of work and pay, offering a critical and expansive view beyond traditional legal structures.  
 * 📜 **Origins and Evolution of Employment-Based Health Benefits:** Delves into the historical reasons behind the U.S. system of employment-based health benefits, providing crucial context for understanding current health benefits law.  
   
-## 💬 [Gemini](/content/software/gemini.md) Prompt (gemini-2.5-flash-preview-04-17)  
+## 💬 [Gemini](../software/gemini.md) Prompt (gemini-2.5-flash-preview-04-17)  
 > Write a markdown-formatted (start headings at level H2) book report, followed by a plethora of additional similar, contrasting, and creatively related book recommendations on Employee Benefits Law: ERISA and Beyond. Be thorough in content discussed but concise and economical with your language. Structure the report with section headings and bulleted lists to avoid long blocks of text.

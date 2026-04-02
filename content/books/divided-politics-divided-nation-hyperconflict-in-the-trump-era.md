@@ -7,7 +7,7 @@ share: true
 CTA: 🇺🇸 Rebuild unity.
 affiliate link: https://amzn.to/3JlaV78
 ---
-[Home](/content/index.md) > [Books](/content/books/index.md)  
+[Home](../index.md) > [Books](./index.md)  
 # 🇺🇸⚔️ Divided Politics, Divided Nation: Hyperconflict in the Trump Era  
 [🛒 Divided Politics, Divided Nation: Hyperconflict in the Trump Era. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3JlaV78)  
   
@@ -66,7 +66,7 @@ affiliate link: https://amzn.to/3JlaV78
 ## 📚 Book Recommendations  
   
 ### 🤝 Similar  
-* [😇🧠 The Righteous Mind: Why Good People Are Divided by Politics and Religion](/content/books/the-righteous-mind.md) by Jonathan Haidt  
+* [😇🧠 The Righteous Mind: Why Good People Are Divided by Politics and Religion](./the-righteous-mind.md) by Jonathan Haidt  
 * 🎭 Identity: The Demand for Dignity and the Politics of Resentment by Francis Fukuyama  
 * ⚕️ The Casualties of Polarization: How Our Divided Politics Undermines America's Health by Darrell M. West  
   
@@ -76,7 +76,7 @@ affiliate link: https://amzn.to/3JlaV78
 * 💪 Still Standing: Surviving Cancer, Riots, and the Toxic Politics That Divide America by Larry Hogan  
   
 ### 🔗 Related  
-* [💰🤫 Dark Money: The Hidden History of the Billionaires Behind the Rise of the Radical Right](/content/books/dark-money-the-hidden-history-of-the-billionaires-behind-the-rise-of-the-radical-right.md) by Jane Mayer  
+* [💰🤫 Dark Money: The Hidden History of the Billionaires Behind the Rise of the Radical Right](./dark-money-the-hidden-history-of-the-billionaires-behind-the-rise-of-the-radical-right.md) by Jane Mayer  
 * 💥 Chaos Mongers: How the Far Right Conspiracy Movement Threatens to Destroy American Democracy by Eric Boehlert  
 * 🗣️ Talking Across the Divide: How to Engage with People You Disagree With and Make a Difference by Justin Lee  
   

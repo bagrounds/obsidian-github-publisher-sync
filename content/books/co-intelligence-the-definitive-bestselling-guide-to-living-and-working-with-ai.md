@@ -7,7 +7,7 @@ share: true
 CTA: 🚀 Navigate the future of work.
 affiliate link: https://amzn.to/4p7nbH9
 ---
-[Home](/content/index.md) > [Books](/content/books/index.md)  
+[Home](../index.md) > [Books](./index.md)  
 # 🧑‍🤝‍🤖 Co-Intelligence: The Definitive, Bestselling Guide to Living and Working with AI  
 [🛒 Co-Intelligence: The Definitive, Bestselling Guide to Living and Working with AI. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4p7nbH9)  
   
@@ -39,7 +39,7 @@ A guide to blend human ingenuity with AI's capabilities to thrive in our rapidly
 * 🧠 Neuro-symbolic AI and Hybrid Intelligence Architectures  
 * 🌱 The Long-term Societal Impact of AI on Human Cognition and Creativity  
 * 🏭 Specific Industry Case Studies of AI Transformation Beyond Generic Examples  
-* ⚛️ The Role of [⚛️ Quantum Computing](/content/topics/quantum-computing.md) in Future AI Development  
+* ⚛️ The Role of [⚛️ Quantum Computing](../topics/quantum-computing.md) in Future AI Development  
 * 🧘‍♀️ AI's Impact on Mental Health and Digital Well-being  
   
 ## ❓ Frequently Asked Questions (FAQ)  
@@ -58,18 +58,18 @@ A guide to blend human ingenuity with AI's capabilities to thrive in our rapidly
 ## 📚 Book Recommendations  
 ### Similar  
 * ✍️ One Useful Thing by Ethan Mollick (Author's Substack, often cited as complementary content)  
-* [🧑‍💻🤖 Human + Machine: Reimagining Work in the Age of AI](/content/books/human-machine-reimagining-work-in-the-age-of-ai.md) by Paul R. Daugherty and H. James Wilson  
+* [🧑‍💻🤖 Human + Machine: Reimagining Work in the Age of AI](./human-machine-reimagining-work-in-the-age-of-ai.md) by Paul R. Daugherty and H. James Wilson  
 * 🧑‍💻 Working with AI: Real Stories and Practical Advice from the First Wave of AI Adopters by Mariya Yao  
   
 ### Contrasting  
-* [🤖⚠️📈 Superintelligence: Paths, Dangers, Strategies](/content/books/superintelligence-paths-dangers-strategies.md) by Nick Bostrom  
-* [🧬👥💾 Life 3.0: Being Human in the Age of Artificial Intelligence](/content/books/life-3-0.md) by Max Tegmark  
-* [🔮🤖 The Age of AI](/content/books/the-age-of-ai.md): And Our Human Future by Henry A. Kissinger, Eric Schmidt, Daniel Huttenlocher  
+* [🤖⚠️📈 Superintelligence: Paths, Dangers, Strategies](./superintelligence-paths-dangers-strategies.md) by Nick Bostrom  
+* [🧬👥💾 Life 3.0: Being Human in the Age of Artificial Intelligence](./life-3-0.md) by Max Tegmark  
+* [🔮🤖 The Age of AI](./the-age-of-ai.md): And Our Human Future by Henry A. Kissinger, Eric Schmidt, Daniel Huttenlocher  
   
 ### Related  
 * 🧠 Building a Second Brain by Tiago Forte  
-* [🤿💼 Deep Work: Rules for Focused Success in a Distracted World](/content/books/deep-work.md) by Cal Newport  
-* [🌐🔭🎨🧩👨‍🎓 Range: Why Generalists Triumph in a Specialized World](/content/books/range.md) by David Epstein  
+* [🤿💼 Deep Work: Rules for Focused Success in a Distracted World](./deep-work.md) by Cal Newport  
+* [🌐🔭🎨🧩👨‍🎓 Range: Why Generalists Triumph in a Specialized World](./range.md) by David Epstein  
   
 ## 🫵 What Do You Think?  
 💬 How are you integrating AI into your daily workflow, and what has been the most surprising outcome? Which of Mollick's four rules resonates most with your own experience?

@@ -7,7 +7,7 @@ share: true
 affiliate link: https://amzn.to/47N5VSM
 CTA: 🧠 Master memory.
 ---
-[Home](/content/index.md) > [Books](/content/books/index.md)  
+[Home](../index.md) > [Books](./index.md)  
 # 🚶‍♂️🧠 Moonwalking with Einstein: The Art and Science of Remembering Everything  
 [🛒 Moonwalking with Einstein: The Art and Science of Remembering Everything. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/47N5VSM)  
   
@@ -37,12 +37,12 @@ CTA: 🧠 Master memory.
 ### 🤝 Similar Books  
   
 * 🧠 **Unlimited Memory by Kevin Horsley**: This book offers practical memory techniques and strategies for improving memory retention and learning efficiency, echoing Foer's focus on learnable skills.  
-* **[🧠🔒 Make It Stick: The Science of Successful Learning](/content/books/make-it-stick.md) by Peter C. Brown, Henry L. Roediger III, and Mark A. McDaniel**: Exploring the science behind effective learning, this book provides research-backed strategies for enhancing memory and understanding, such as retrieval practice and spaced repetition.  
+* **[🧠🔒 Make It Stick: The Science of Successful Learning](./make-it-stick.md) by Peter C. Brown, Henry L. Roediger III, and Mark A. McDaniel**: Exploring the science behind effective learning, this book provides research-backed strategies for enhancing memory and understanding, such as retrieval practice and spaced repetition.  
 * 📐 **A Mind for Numbers by Barbara Oakley**: Geared towards improving learning in mathematics and science, this guide provides practical advice and study techniques for enhancing learning abilities and memory retention.  
   
 ### ↔️ Contrasting Books  
   
-* **[🤔🐇🐢 Thinking, Fast and Slow](/content/books/thinking-fast-and-slow.md) by Daniel Kahneman**: While not directly about memory training, this book explores the two systems that drive thought and decision-making, highlighting cognitive biases and the limitations of human rationality. 🧐 It offers a broader, sometimes contrasting, perspective on the intricacies and fallibilities of the human mind beyond just the capacity for recall.  
+* **[🤔🐇🐢 Thinking, Fast and Slow](./thinking-fast-and-slow.md) by Daniel Kahneman**: While not directly about memory training, this book explores the two systems that drive thought and decision-making, highlighting cognitive biases and the limitations of human rationality. 🧐 It offers a broader, sometimes contrasting, perspective on the intricacies and fallibilities of the human mind beyond just the capacity for recall.  
   
 ### 🎨 Creatively Related Books  
   

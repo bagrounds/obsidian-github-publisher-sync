@@ -10,7 +10,7 @@ Channel: New York Times Podcasts
 tags:
 youtube: https://youtu.be/pqgRYWdBd0I
 ---
-[Home](/content/index.md) > [Videos](/content/videos/index.md)  
+[Home](../index.md) > [Videos](./index.md)  
 # 🇺🇸💻💰💥 Inside the Tech Company Powering Trump’s Most Controversial Policies  
 ![Inside the Tech Company Powering Trump’s Most Controversial Policies](https://youtu.be/pqgRYWdBd0I)  
   
@@ -48,15 +48,15 @@ youtube: https://youtu.be/pqgRYWdBd0I
   
 ### ↔️ Similar  
   
-* [👁️‍🗨️💰⛓️👤 The Age of Surveillance Capitalism: The Fight for a Human Future at the New Frontier of Power](/content/books/the-age-of-surveillance-capitalism.md) by Shoshana Zuboff: Explores how tech giants utilize personal data to predict and control human behavior.  
+* [👁️‍🗨️💰⛓️👤 The Age of Surveillance Capitalism: The Fight for a Human Future at the New Frontier of Power](../books/the-age-of-surveillance-capitalism.md) by Shoshana Zuboff: Explores how tech giants utilize personal data to predict and control human behavior.  
 * ⚔️ The Kill Chain by Christian Brose: Details the necessity of high-tech software and AI in modernizing the American military for future conflicts.  
   
 ### 🆚 Contrasting  
   
-* [📊📉🏛️ Weapons of Math Destruction: How Big Data Increases Inequality and Threatens Democracy](/content/books/weapons-of-math-destruction-how-big-data-increases-inequality-and-threatens-democracy.md) by Cathy O'Neil: Examines how algorithms and big data can reinforce inequality and threaten democratic processes.  
+* [📊📉🏛️ Weapons of Math Destruction: How Big Data Increases Inequality and Threatens Democracy](../books/weapons-of-math-destruction-how-big-data-increases-inequality-and-threatens-democracy.md) by Cathy O'Neil: Examines how algorithms and big data can reinforce inequality and threaten democratic processes.  
 * 🛡️ Privacy is Power by Carissa Véliz: Argues that the collection of data by corporations and governments is inherently incompatible with a free society.  
   
 ### 🎨 Creatively Related  
   
-* [👹 The Origins of Totalitarianism](/content/books/the-origins-of-totalitarianism.md) by Hannah Arendt: A foundational text on the rise of fascism that informs Karp's own philosophical background \[[09:20](http://www.youtube.com/watch?v=pqgRYWdBd0I&t=560)].  
+* [👹 The Origins of Totalitarianism](../books/the-origins-of-totalitarianism.md) by Hannah Arendt: A foundational text on the rise of fascism that informs Karp's own philosophical background \[[09:20](http://www.youtube.com/watch?v=pqgRYWdBd0I&t=560)].  
 * 🕸️ The Sovereign Individual by James Dale Davidson and Lord William Rees-Mogg: A book frequently cited by Palantir co-founder Peter Thiel regarding the shift of power from states to technology.

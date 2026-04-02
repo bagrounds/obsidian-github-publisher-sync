@@ -8,8 +8,11 @@ Author:
 tags:
 affiliate link: https://amzn.to/4jsHpZa
 CTA: 🔭 Explore existence.
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_time: 2026-04-02T00:00:00Z
+force_analyze_links: false
 ---
-[Home](/content/index.md) > [Books](/content/books/index.md)  
+[Home](../index.md) > [Books](./index.md)  
 # 🤏📜⏳ A Brief History of Time  
 [🛒 A Brief History of Time. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4jsHpZa)  
   
@@ -58,10 +61,10 @@ CTA: 🔭 Explore existence.
 **Additional Book Recommendations:**  
   
 * **Best Alternate Book (Same Topic):** The Universe in a Nutshell by Stephen Hawking. (Also by Hawking, but more visually descriptive) 🌰  
-* **Best Tangentially Related Book:** [🌌 Cosmos](/content/books/cosmos.md) by Carl Sagan. (Explores the universe with a philosophical and poetic touch) 🌌  
-* **Best Diametrically Opposed Book:** [🗺️❤️📐 Flatland: A Romance of Many Dimensions](/content/books/flatland-a-romance-of-many-dimensions.md) by Edwin Abbott Abbott. (A fictional exploration of dimensions, challenging our assumptions about reality) 📐  
+* **Best Tangentially Related Book:** [🌌 Cosmos](./cosmos.md) by Carl Sagan. (Explores the universe with a philosophical and poetic touch) 🌌  
+* **Best Diametrically Opposed Book:** [🗺️❤️📐 Flatland: A Romance of Many Dimensions](./flatland-a-romance-of-many-dimensions.md) by Edwin Abbott Abbott. (A fictional exploration of dimensions, challenging our assumptions about reality) 📐  
 * **Best Fiction Book with Related Ideas:** "Contact" by Carl Sagan. (Explores the implications of extraterrestrial contact and the vastness of the universe) 👽  
-* **Best More General Book:** [📜🌍⏳ Sapiens: A Brief History of Humankind](/content/books/sapiens-a-brief-history-of-humankind.md) by Yuval Noah Harari. (Provides a broad overview of human history and our place in the universe) 🧑‍🤝‍🧑  
+* **Best More General Book:** [📜🌍⏳ Sapiens: A Brief History of Humankind](./sapiens-a-brief-history-of-humankind.md) by Yuval Noah Harari. (Provides a broad overview of human history and our place in the universe) 🧑‍🤝‍🧑  
 * **Best More Specific Book:** "Black Holes and Time Warps: Einstein's Outrageous Legacy" by Kip S. Thorne. (Delves deeper into the physics of black holes and spacetime) ⏳  
 * **Best More Rigorous Book:** "Gravitation" by Charles W. Misner, Kip S. Thorne, and John Archibald Wheeler. (A graduate-level textbook on general relativity) 📚  
 * **Best More Accessible Book:** "Astrophysics for People in a Hurry" by Neil deGrasse Tyson. (Concise and engaging explanations of astrophysical concepts) 🏃  

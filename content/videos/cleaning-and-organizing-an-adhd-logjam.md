@@ -10,7 +10,7 @@ Channel: Midwest Magic Cleaning
 tags:
 youtube: https://youtu.be/BLu_Yu6bgNg
 ---
-[Home](/content/index.md) > [Videos](/content/videos/index.md)  
+[Home](../index.md) > [Videos](./index.md)  
 # ✨🧠🧹🗄️ Cleaning And Organizing An ADHD Logjam  
 ![Cleaning And Organizing An ADHD Logjam](https://youtu.be/BLu_Yu6bgNg)  
   
@@ -63,7 +63,7 @@ youtube: https://youtu.be/BLu_Yu6bgNg
 ## 📚 Book Recommendations  
   
 ### ↔️ Similar  
-* **[🧹🌊😵‍💫 How to Keep House While Drowning: A Gentle Approach to Cleaning and Organizing](/content/books/how-to-keep-house-while-drowning.md)** – Offers a compassionate, practical approach to cleaning for neurodivergent brains, focusing on function over aesthetics.  
+* **[🧹🌊😵‍💫 How to Keep House While Drowning: A Gentle Approach to Cleaning and Organizing](../books/how-to-keep-house-while-drowning.md)** – Offers a compassionate, practical approach to cleaning for neurodivergent brains, focusing on function over aesthetics.  
 * **Organizing Solutions for People with ADHD** – Provides visual, efficiency-based strategies that align with the video’s advice to avoid complex systems.  
   
 ### 🆚 Contrasting  

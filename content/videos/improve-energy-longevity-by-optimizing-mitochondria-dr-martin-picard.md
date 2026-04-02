@@ -10,7 +10,7 @@ Channel: Andrew Huberman
 tags:
 youtube: https://youtu.be/nMkQUlBtFlk
 ---
-[Home](/content/index.md) > [Videos](/content/videos/index.md) | [🧠🫀👀🔬 Andrew Huberman](/content/people/andrew-huberman.md)  
+[Home](../index.md) > [Videos](./index.md) | [🧠🫀👀🔬 Andrew Huberman](../people/andrew-huberman.md)  
 # ⚡️🔋💪⬆️ Improve Energy & Longevity by Optimizing Mitochondria | Dr. Martin Picard  
 ![Improve Energy & Longevity by Optimizing Mitochondria | Dr. Martin Picard](https://youtu.be/nMkQUlBtFlk)  
   
@@ -52,11 +52,11 @@ youtube: https://youtu.be/nMkQUlBtFlk
 ### ↔️ Similar  
   
 * 🍎 The Mitochondriac Manifesto by R.D. Lee explores environmental impacts on cellular power.  
-* [🦓 Why Zebras Don't Get Ulcers: The Acclaimed Guide to Stress, Stress-Related Disease, and Coping](/content/books/why-zebras-dont-get-ulcers.md) by Robert Sapolsky examines how stress degrades physical systems.  
+* [🦓 Why Zebras Don't Get Ulcers: The Acclaimed Guide to Stress, Stress-Related Disease, and Coping](../books/why-zebras-dont-get-ulcers.md) by Robert Sapolsky examines how stress degrades physical systems.  
   
 ### 🆚 Contrasting  
   
-* [⏳🙅 Lifespan: Why We Age - and Why We Don't Have To](/content/books/lifespan-why-we-age-and-why-we-dont-have-to.md) by David Sinclair argues that aging is a manageable information problem solved by chemistry.  
+* [⏳🙅 Lifespan: Why We Age - and Why We Don't Have To](../books/lifespan-why-we-age-and-why-we-dont-have-to.md) by David Sinclair argues that aging is a manageable information problem solved by chemistry.  
 * 🧪 The Blind Watchmaker by Richard Dawkins views biological systems through a strictly mechanical lens.  
   
 ### 🎨 Creatively Related  

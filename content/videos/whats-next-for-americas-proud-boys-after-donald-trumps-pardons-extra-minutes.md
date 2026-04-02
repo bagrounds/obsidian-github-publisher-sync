@@ -9,7 +9,7 @@ Platform:
 Channel: 60 Minutes Australia
 tags:
 ---
-[Home](/content/index.md) > [Videos](/content/videos/index.md)  
+[Home](../index.md) > [Videos](./index.md)  
 # What’s next for America’s Proud Boys after Donald Trump’s pardons | Extra Minutes  
 ![What’s next for America’s Proud Boys after Donald Trump’s pardons | Extra Minutes](https://youtu.be/PMoxyYqJF3U)  
   

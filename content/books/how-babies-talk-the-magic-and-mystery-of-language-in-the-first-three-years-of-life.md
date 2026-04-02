@@ -7,7 +7,7 @@ share: true
 affiliate link: https://amzn.to/4kqtDYr
 CTA: 👶 Decode infant communication.
 ---
-[Home](/content/index.md) > [Books](/content/books/index.md)  
+[Home](../index.md) > [Books](./index.md)  
 # 👶🗣️ How Babies Talk: The Magic and Mystery of Language in the First Three Years of Life  
 [🛒 How Babies Talk: The Magic and Mystery of Language in the First Three Years of Life. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4kqtDYr)  
   
@@ -45,17 +45,17 @@ The 📖 book is primarily aimed at 👨‍👩‍👧‍👦 parents and is ✍
   
 ### 👶 Similar Books (Child Language Development, Early Cognitive Science)  
   
-* [👶🧠🔬 The Scientist in the Crib: Minds, Brains, And How Children Learn](/content/books/the-scientist-in-the-crib-minds-brains-and-how-children-learn.md) by Alison Gopnik, Andrew N. Meltzoff, and Patricia K. Kuhl: Explores how very young children learn about the world, including language, using scientific research.  
+* [👶🧠🔬 The Scientist in the Crib: Minds, Brains, And How Children Learn](./the-scientist-in-the-crib-minds-brains-and-how-children-learn.md) by Alison Gopnik, Andrew N. Meltzoff, and Patricia K. Kuhl: Explores how very young children learn about the world, including language, using scientific research.  
 * 🗣️ *Beginning to Learn: Thinking, Talking, Reading, Writing* by Gordon Wells: A detailed look at language development in early childhood within social contexts.  
 * 📚 *Child Language: Acquisition and Development* by Matthew Saxton: A more academic textbook providing an in-depth overview of child language acquisition theories and research.  
-* [🗣️🧠 The Language Instinct: How the Mind Creates Language](/content/books/the-language-instinct-how-the-mind-creates-language.md) by Steven Pinker: While broader than just child development, it offers a foundational understanding of the human capacity for language.  
+* [🗣️🧠 The Language Instinct: How the Mind Creates Language](./the-language-instinct-how-the-mind-creates-language.md) by Steven Pinker: While broader than just child development, it offers a foundational understanding of the human capacity for language.  
   
 ### 🔄 Contrasting Books (Later Language Acquisition, Animal Communication, Adult Language Processing)  
   
 * 🗣️ *Second Language Acquisition: An Introductory Course* by Susan Gass and Larry Selinker: Focuses on how individuals learn a second language after the critical period of first language acquisition.  
 * 🐒 *Are We Smart Enough to Know How Smart Animals Are?* by Frans de Waal: Explores cognitive abilities in animals, including aspects of their communication systems, offering a contrast to human language.  
 * 🌍 *The Power of Babel: A Natural History of Language* by John McWhorter: Examines the evolution and structure of language across different cultures and time periods.  
-* 🤔 [Thinking, Fast and Slow](/content/books/thinking-fast-and-slow.md) by Daniel Kahneman: While not directly about language acquisition, it delves into the two systems of thought that influence human judgment and decision-making, relevant to adult cognitive processes that utilize language.  
+* 🤔 [Thinking, Fast and Slow](./thinking-fast-and-slow.md) by Daniel Kahneman: While not directly about language acquisition, it delves into the two systems of thought that influence human judgment and decision-making, relevant to adult cognitive processes that utilize language.  
   
 ### 🎨 Creatively Related Books (Parenting, Early Childhood Education, Communication)  
   
@@ -65,5 +65,5 @@ The 📖 book is primarily aimed at 👨‍👩‍👧‍👦 parents and is ✍
 * 📖 *The Read-Aloud Handbook* by Jim Trelease: Emphasizes the importance of reading aloud to children for language development and literacy.  
 * 👨‍👩‍👧‍👦 *Between Parent and Child: The Bestselling Classic That Revolutionized Parent-Child Communication* by Haim G. Ginott: Focuses on respectful communication between parents and children.  
   
-## 💬 [Gemini](/content/software/gemini.md) Prompt (gemini-2.5-flash-preview-04-17)  
+## 💬 [Gemini](../software/gemini.md) Prompt (gemini-2.5-flash-preview-04-17)  
 > Write a markdown-formatted (start headings at level H2) book report, followed by a plethora of additional similar, contrasting, and creatively related book recommendations on How Babies Talk: The Magic and Mystery of Language in the First Three Years of Life. Be thorough in content discussed but concise and economical with your language. Structure the report with section headings and bulleted lists to avoid long blocks of text.

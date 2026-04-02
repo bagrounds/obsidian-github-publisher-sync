@@ -9,7 +9,7 @@ Platform: "#YouTube"
 Channel: "[[A Life Engineered]]"
 tags:
 ---
-[Home](/content/index.md) > [Videos](/content/videos/index.md)  
+[Home](../index.md) > [Videos](./index.md)  
 # 🗑️👩‍💻👎 Most Tech Interview Prep is GARBAGE  
 ![Most Tech Interview Prep is GARBAGE. (From a Principal Engineer at Amazon)](https://youtu.be/0Z9RW_hhUT4)  
 ## 💡 What's Wrong with Most Advice?  
@@ -74,9 +74,9 @@ tags:
     * 👍 *Ace the Software Engineering Interview: An Interview Preparation Framework to Land the Job You Will Love*. 🌟  
   
 * ⚙️ **System Design:**  
-    * [💾⬆️🛡️ Designing Data-Intensive Applications: The Big Ideas Behind Reliable, Scalable, and Maintainable Systems](/content/books/designing-data-intensive-applications.md) by Martin Kleppmann. A deep dive into distributed systems. 📚  
-    * [🖥️🔑 System Design Interview - An Insider's Guide](/content/books/system-design-interview-an-insiders-guide.md) by Alex Xu. 💡  
+    * [💾⬆️🛡️ Designing Data-Intensive Applications: The Big Ideas Behind Reliable, Scalable, and Maintainable Systems](../books/designing-data-intensive-applications.md) by Martin Kleppmann. A deep dive into distributed systems. 📚  
+    * [🖥️🔑 System Design Interview - An Insider's Guide](../books/system-design-interview-an-insiders-guide.md) by Alex Xu. 💡  
   
 * 🚀 **Leadership in Software Engineering:**  
-    * [👶⬆️👨‍💻📈 The Staff Engineer's Path](/content/books/the-staff-engineers-path.md) by Tanya Reilly. For senior engineers looking to level up! 📈  
+    * [👶⬆️👨‍💻📈 The Staff Engineer's Path](../books/the-staff-engineers-path.md) by Tanya Reilly. For senior engineers looking to level up! 📈  
     * 🤝 *Become an Effective Software Engineering Manager* by James Stanier. A practical guide to management. ✨

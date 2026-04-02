@@ -7,7 +7,7 @@ share: true
 CTA: 🚀 Embrace imperfection.
 affiliate link: https://amzn.to/43zLwgZ
 ---
-[Home](/content/index.md) > [Books](/content/books/index.md)  
+[Home](../index.md) > [Books](./index.md)  
 # 📉🏆 How to Fail at Almost Everything and Still Win Big: Kind of the Story of My Life  
 [🛒 How to Fail at Almost Everything and Still Win Big: Kind of the Story of My Life. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/43zLwgZ)  
   
@@ -45,7 +45,7 @@ affiliate link: https://amzn.to/43zLwgZ
   
 * 🌱 Growth Mindset vs. Fixed Mindset  
 * 🎯 Deliberate Practice and Skill Acquisition Theory  
-* [♻️🫀🧠💪 Cognitive Behavioral Therapy](/content/topics/cognitive-behavioral-therapy.md) (CBT) principles for thought management  
+* [♻️🫀🧠💪 Cognitive Behavioral Therapy](../topics/cognitive-behavioral-therapy.md) (CBT) principles for thought management  
 * 🔁 The science of habit formation and habit stacking  
 * 🤔 Decision-making under uncertainty and probabilistic thinking  
 * 🧘 Stoicism and managing expectations  
@@ -69,16 +69,16 @@ affiliate link: https://amzn.to/43zLwgZ
   
 ### 👍 Similar  
 * 🧱 The Slight Edge by Jeff Olson: Focuses on the power of small, consistent daily actions for massive long-term success.  
-* [⚛️🔄 Atomic Habits: An Easy & Proven Way to Build Good Habits & Break Bad Ones](/content/books/atomic-habits.md) by James Clear: A practical guide to building good habits and breaking bad ones.  
-* [❤️‍🔥💪 Grit: The Power of Passion and Perseverance](/content/books/grit-the-power-of-passion-and-perseverance.md) by Angela Duckworth: Explores the importance of passion and perseverance for achieving long-term goals.  
+* [⚛️🔄 Atomic Habits: An Easy & Proven Way to Build Good Habits & Break Bad Ones](./atomic-habits.md) by James Clear: A practical guide to building good habits and breaking bad ones.  
+* [❤️‍🔥💪 Grit: The Power of Passion and Perseverance](./grit-the-power-of-passion-and-perseverance.md) by Angela Duckworth: Explores the importance of passion and perseverance for achieving long-term goals.  
   
 ### 👎 Contrasting  
 * 💰 Think and Grow Rich by Napoleon Hill: Classic text emphasizing goal-setting, positive thinking, and desire to achieve wealth.  
-* [👤📈🎯🌟🔑🤝🏆 The 7 Habits of Highly Effective People](/content/books/the-7-habits-of-highly-effective-people.md) by Stephen Covey: Focuses on principle-centered character ethics, including goal-setting and proactive behavior.  
+* [👤📈🎯🌟🔑🤝🏆 The 7 Habits of Highly Effective People](./the-7-habits-of-highly-effective-people.md) by Stephen Covey: Focuses on principle-centered character ethics, including goal-setting and proactive behavior.  
   
 ### 🔗 Related  
 * 🛠️ Tools of Titans by Tim Ferriss: A collection of routines, habits, and advice from world-class performers, including a section on Scott Adams.  
-* [🌐🔗🧠📖 Thinking in Systems: A Primer](/content/books/thinking-in-systems.md) by Donella H. Meadows: Provides a foundational understanding of systems theory and how systems work.  
+* [🌐🔗🧠📖 Thinking in Systems: A Primer](./thinking-in-systems.md) by Donella H. Meadows: Provides a foundational understanding of systems theory and how systems work.  
 * 📜 The Almanack of Naval Ravikant: A Guide to Wealth and Happiness: Offers insights into wealth creation and happiness, with emphasis on judgment and leverage.  
   
 ## 🫵 What Do You Think?  

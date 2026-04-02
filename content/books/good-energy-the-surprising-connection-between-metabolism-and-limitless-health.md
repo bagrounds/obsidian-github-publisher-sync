@@ -6,7 +6,7 @@ URL: https://bagrounds.org/books/good-energy-the-surprising-connection-between-m
 share: true
 affiliate link: https://amzn.to/3FiAkws
 ---
-[Home](/content/index.md) > [Books](/content/books/index.md)  
+[Home](../index.md) > [Books](./index.md)  
 # ⚡❤️‍🩹 Good Energy: The Surprising Connection Between Metabolism and Limitless Health  
 [🛒 Good Energy: The Surprising Connection Between Metabolism and Limitless Health. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3FiAkws)  
   
@@ -61,7 +61,7 @@ affiliate link: https://amzn.to/3FiAkws
 * 📈 **_Glucose Revolution_ (US) / _Glucose Goddess Method_ (UK) by Jessie Inchauspé:** Focuses specifically on stabilizing blood sugar through practical food hacks, echoing Means' emphasis on glucose control.  
 * ⚖️ **_The Obesity Code_ by Jason Fung, MD:** Argues that hormonal imbalances, particularly insulin, are key drivers of obesity, overlapping with metabolic health themes.  
 * 🧬 **_Deep Nutrition_ by Catherine Shanahan, MD:** Connects traditional diets to genetic expression and cellular health, offering a different lens on nutrient density and food quality.  
-* ⏳ **_[Outlive](/content/books/outlive.md): The Science & Art of Longevity_ by Peter Attia, MD:** A comprehensive look at extending healthspan by tackling the "four horsemen" of chronic disease (cancer, neurodegenerative disease, cardiovascular disease, metabolic disease), similar in scope but potentially more in-depth scientifically.  
+* ⏳ **_[Outlive](./outlive.md): The Science & Art of Longevity_ by Peter Attia, MD:** A comprehensive look at extending healthspan by tackling the "four horsemen" of chronic disease (cancer, neurodegenerative disease, cardiovascular disease, metabolic disease), similar in scope but potentially more in-depth scientifically.  
   
 ### 🆚 Contrasting Perspectives or Focus  
   
@@ -75,15 +75,15 @@ affiliate link: https://amzn.to/3FiAkws
   
 **😴 Sleep Science:**  
   
-* **[😴💭 Why We Sleep: Unlocking the Power of Sleep and Dreams](/content/books/why-we-sleep-unlocking-the-power-of-sleep-and-dreams.md) by Matthew Walker, PhD:** The seminal work on the critical importance of sleep for every aspect of health, including metabolism.  
-* **[🌄⏳ The Circadian Code: Lose Weight, Supercharge Your Energy, and Transform Your Health from Morning to Midnight](/content/books/the-circadian-code.md) by Satchin Panda, PhD:** Focuses on aligning lifestyle (especially eating patterns) with natural circadian rhythms for optimal health.  
-* **[😴🛠️ The Sleep Solution: Why Your Sleep is Broken and How to Fix It](/content/books/the-sleep-solution-why-your-sleep-is-broken-and-how-to-fix-it.md) by W. Chris Winter, MD:** Practical advice on overcoming sleep problems.  
+* **[😴💭 Why We Sleep: Unlocking the Power of Sleep and Dreams](./why-we-sleep-unlocking-the-power-of-sleep-and-dreams.md) by Matthew Walker, PhD:** The seminal work on the critical importance of sleep for every aspect of health, including metabolism.  
+* **[🌄⏳ The Circadian Code: Lose Weight, Supercharge Your Energy, and Transform Your Health from Morning to Midnight](./the-circadian-code.md) by Satchin Panda, PhD:** Focuses on aligning lifestyle (especially eating patterns) with natural circadian rhythms for optimal health.  
+* **[😴🛠️ The Sleep Solution: Why Your Sleep is Broken and How to Fix It](./the-sleep-solution-why-your-sleep-is-broken-and-how-to-fix-it.md) by W. Chris Winter, MD:** Practical advice on overcoming sleep problems.  
   
 **🧘 Stress Management:**  
   
-* **[🥵🔥💨 Burnout: The Secret to Unlocking the Stress Cycle](/content/books/burnout-the-secret-to-unlocking-the-stress-cycle.md) by Emily Nagoski, PhD & Amelia Nagoski, DMA:** Explains the stress cycle and provides actionable strategies to complete it.  
-* **[🦓 Why Zebras Don't Get Ulcers: The Acclaimed Guide to Stress, Stress-Related Disease, and Coping](/content/books/why-zebras-dont-get-ulcers.md) by Robert M. Sapolsky:** Explores the physiology of the chronic stress response and its health consequences.  
-* **[👣➡️🌍 Wherever You Go, There You Are](/content/books/wherever-you-go-there-you-are.md) by Jon Kabat-Zinn:** A classic guide to mindfulness meditation for stress reduction.  
+* **[🥵🔥💨 Burnout: The Secret to Unlocking the Stress Cycle](./burnout-the-secret-to-unlocking-the-stress-cycle.md) by Emily Nagoski, PhD & Amelia Nagoski, DMA:** Explains the stress cycle and provides actionable strategies to complete it.  
+* **[🦓 Why Zebras Don't Get Ulcers: The Acclaimed Guide to Stress, Stress-Related Disease, and Coping](./why-zebras-dont-get-ulcers.md) by Robert M. Sapolsky:** Explores the physiology of the chronic stress response and its health consequences.  
+* **[👣➡️🌍 Wherever You Go, There You Are](./wherever-you-go-there-you-are.md) by Jon Kabat-Zinn:** A classic guide to mindfulness meditation for stress reduction.  
 * 📚 **_Principles and Practice of Stress Management_ edited by Paul M. Lehrer & Robert L. Woolfolk:** A comprehensive clinical reference on various stress management techniques.  
 * 🆘 **_The Stress Handbook_ by Dr. Abbie Lane:** Practical advice on making stress work for you.  
 * 🤝 **_Doing What Matters in Times of Stress_ by WHO:** An illustrated guide with practical skills for coping with adversity.  
@@ -98,10 +98,10 @@ affiliate link: https://amzn.to/3FiAkws
   
 **⚙️ Habit Formation & Behavior Change:**  
   
-* **[⚛️🔄 Atomic Habits](/content/books/atomic-habits.md) by James Clear:** A highly practical guide to building good habits and breaking bad ones through small, consistent changes.  
-* 🔄 **_[The Power of Habit](/content/books/the-power-of-habit.md)_ by Charles Duhigg:** Explores the science of habit formation through compelling stories and the "habit loop" concept.  
-* 🤏 **_[Tiny Habits](/content/books/tiny-habits.md)_ by BJ Fogg, PhD:** Focuses on making new habits incredibly small and easy to start.  
-* 🤝 **_[The 7 Habits of Highly Effective People](/content/books/the-7-habits-of-highly-effective-people.md)_ by Stephen R. Covey:** A classic framework for personal and professional effectiveness based on principles.  
+* **[⚛️🔄 Atomic Habits](./atomic-habits.md) by James Clear:** A highly practical guide to building good habits and breaking bad ones through small, consistent changes.  
+* 🔄 **_[The Power of Habit](./the-power-of-habit.md)_ by Charles Duhigg:** Explores the science of habit formation through compelling stories and the "habit loop" concept.  
+* 🤏 **_[Tiny Habits](./tiny-habits.md)_ by BJ Fogg, PhD:** Focuses on making new habits incredibly small and easy to start.  
+* 🤝 **_[The 7 Habits of Highly Effective People](./the-7-habits-of-highly-effective-people.md)_ by Stephen R. Covey:** A classic framework for personal and professional effectiveness based on principles.  
 * 👯‍♀️ **_Better Than Before_ by Gretchen Rubin:** Explores different personality tendencies and how they affect habit formation.  
   
 **🔋 Mitochondria & Cellular Health:**  
@@ -112,5 +112,5 @@ affiliate link: https://amzn.to/3FiAkws
 * 🔑 **_Your Mitochondria: Key to Health and Longevity_ by Warren L. Cargal:** Discusses the link between mitochondrial health and various age-related diseases.  
 * 🚀 **_Mitochondria Health: Unlocking the Power Within_ by Dr. Dave Wilson:** Practical guide linking mitochondrial health to overall well-being.  
   
-## 💬 [Gemini](/content/software/gemini.md) Prompt (gemini-2.5-pro-exp-03-25)  
+## 💬 [Gemini](../software/gemini.md) Prompt (gemini-2.5-pro-exp-03-25)  
 > Write a markdown-formatted (start headings at level H2) book report, followed by a plethora of additional similar, contrasting, and creatively related book recommendations on Good Energy: The Surprising Connection Between Metabolism and Limitless Health. Be thorough in content discussed but concise and economical with your language. Structure the report with section headings and bulleted lists to avoid long blocks of text.

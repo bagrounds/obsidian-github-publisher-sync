@@ -8,7 +8,7 @@ Author:
 tags:
 affiliate link: https://amzn.to/3ZRR706
 ---
-[Home](/content/index.md) > [Books](/content/books/index.md)  
+[Home](../index.md) > [Books](./index.md)  
 # 🤖🔍✅ Model Checking  
 [🛒 Model Checking. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3ZRR706)  
   
@@ -64,7 +64,7 @@ This book provides a comprehensive, rigorous, and practical foundation for under
 "Model Checking" is considered a definitive and authoritative text on the subject. The authors are pioneers in the field, and the book is widely used in academia and industry. It provides a rigorous and comprehensive treatment of the topic, backed by solid theoretical foundations and practical examples. The book's quality is supported by its extensive citations in research literature and its adoption as a standard textbook. It is a highly respected source.  
   
 #### Additional Book Recommendations 📚  
-* **Best Alternate Book on the Same Topic:** "[Principles of Model Checking](/content/books/principles-of-model-checking.md)" by Christel Baier and Joost-Pieter Katoen. This is another highly regarded textbook that offers a comprehensive treatment of model checking. 📖  
+* **Best Alternate Book on the Same Topic:** "[Principles of Model Checking](./principles-of-model-checking.md)" by Christel Baier and Joost-Pieter Katoen. This is another highly regarded textbook that offers a comprehensive treatment of model checking. 📖  
 * **Best Book Tangentially Related:** "The Algorithm Design Manual" by Steven S. Skiena. This book provides a broad overview of algorithm design techniques, which are essential for developing efficient model checking algorithms. ⚙️  
 * **Best Book Diametrically Opposed:** "Software Testing and Analysis: Process, Principles, and Techniques" by Mauro Pezzè and Michal Young. This book focuses on traditional software testing methods, which are complementary to, but fundamentally different from, model checking. 🧪  
 * **Best Fiction Book Incorporating Related Ideas:** "Permutation City" by Greg Egan. This science fiction novel explores concepts of computational complexity and virtual reality, which are tangentially related to the challenges of state space exploration in model checking. 🌌  

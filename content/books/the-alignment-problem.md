@@ -12,7 +12,7 @@ link_analysis_time: 2026-03-22T23:35:01.458Z
 link_analysis_model: gemini-3.1-flash-lite-preview
 updated: 2026-03-25T04:40:42.267Z
 ---
-[Home](/content/index.md) > [Books](/content/books/index.md)  
+[Home](../index.md) > [Books](./index.md)  
 # ⚖️🤖 The Alignment Problem  
 [🛒 The Alignment Problem. As an Amazon Associate I earn from qualifying purchases.](https://www.amazon.com/dp/0393635821?tag=bagrounds-20)  
   
@@ -51,18 +51,18 @@ A: 🤓 It's grounded in actual ML research and the experiences of practitioners
   
 ### 📖 Non-Fiction  
   
-* [🤖 Human Compatible](/content/books/human-compatible-artificial-intelligence-and-the-problem-of-control.md) by Stuart Russell  
-* [📊 Weapons of Math Destruction](/content/books/weapons-of-math-destruction-how-big-data-increases-inequality-and-threatens-democracy.md) by Cathy O'Neil  
+* [🤖 Human Compatible](./human-compatible-artificial-intelligence-and-the-problem-of-control.md) by Stuart Russell  
+* [📊 Weapons of Math Destruction](./weapons-of-math-destruction-how-big-data-increases-inequality-and-threatens-democracy.md) by Cathy O'Neil  
   
 ### ❤️ If You Loved This  
   
-* [🌊 The Coming Wave](/content/books/the-coming-wave-technology-power-and-the-21st-centurys-greatest-dilemma.md) by Mustafa Suleyman  
+* [🌊 The Coming Wave](./the-coming-wave-technology-power-and-the-21st-centurys-greatest-dilemma.md) by Mustafa Suleyman  
 * [🔮 The Age of AI](books/the-age-of-ai-and-our-human-future.md) by Kissinger, Schmidt, and Huttenlocher  
   
 ### ↔️ Similar But Different  
   
-* [🧠 Superintelligence](/content/books/superintelligence-paths-dangers-strategies.md) by Nick Bostrom - More theoretical/philosophical  
-* [🤖 Life 3.0](/content/books/life-3-0.md) by Max Tegmark - Broader scope on AI's future  
+* [🧠 Superintelligence](./superintelligence-paths-dangers-strategies.md) by Nick Bostrom - More theoretical/philosophical  
+* [🤖 Life 3.0](./life-3-0.md) by Max Tegmark - Broader scope on AI's future  
   
 ## 🫵 What Do You Think?  
   

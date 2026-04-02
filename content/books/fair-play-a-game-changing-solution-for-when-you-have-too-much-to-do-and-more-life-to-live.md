@@ -6,7 +6,7 @@ URL: https://bagrounds.org/books/fair-play-a-game-changing-solution-for-when-you
 share: true
 affiliate link: https://amzn.to/3Su3Kur
 ---
-[Home](/content/index.md) > [Books](/content/books/index.md)  
+[Home](../index.md) > [Books](./index.md)  
 # ⚖️🎮 Fair Play: A Game-Changing Solution for When You Have Too Much to Do (and More Life to Live)  
 [🛒 Fair Play: A Game-Changing Solution for When You Have Too Much to Do (and More Life to Live). As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3Su3Kur)  
   
@@ -49,5 +49,5 @@ affiliate link: https://amzn.to/3Su3Kur
 * 🏞️ ***Braving the Wilderness: The Quest for True Belonging and the Courage to Stand Alone*** by Brené Brown: While not directly about domestic labor, Brown's work on vulnerability, courage, and belonging speaks to the personal journey of reclaiming identity and space that is central to "Unicorn Space." 🌟  
 * 💰 ***The Price of Motherhood*** by Ann Crittenden: This older but still relevant book examines the economic and societal devaluation of motherhood and caregiving, providing a broader context for the issues of invisible labor discussed in *Fair Play*. 🤱  
   
-## 💬 [Gemini](/content/software/gemini.md) Prompt (gemini-2.5-flash-preview-04-17)  
+## 💬 [Gemini](../software/gemini.md) Prompt (gemini-2.5-flash-preview-04-17)  
 > Write a markdown-formatted (start headings at level H2) book report, followed by a plethora of additional similar, contrasting, and creatively related book recommendations on Fair Play: A Game-Changing Solution for When You Have Too Much to Do (and More Life to Live). Be thorough in content discussed but concise and economical with your language. Structure the report with section headings and bulleted lists to avoid long blocks of text.

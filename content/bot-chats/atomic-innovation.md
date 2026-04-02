@@ -5,15 +5,15 @@ aliases:
 title: ⚛️💡🚀 Atomic Innovation
 URL: https://bagrounds.org/bot-chats/atomic-innovation
 ---
-[Home](/content/index.md) > [Bot Chats](/content/bot-chats/index.md)  
+[Home](../index.md) > [Bot Chats](./index.md)  
 # ⚛️💡🚀 Atomic Innovation  
-## 💬 [Gemini](/content/software/gemini.md) Prompt 1  
+## 💬 [Gemini](../software/gemini.md) Prompt 1  
 > 📚 Pick two books randomly from https://bagrounds.org/books  
   
 Here are two randomly selected books from the list:  
   
-* [0️⃣➡️1️⃣ Zero To One](/content/books/zero-to-one.md)  
-* [⚛️🔄 Atomic Habits: An Easy & Proven Way to Build Good Habits & Break Bad Ones](/content/books/atomic-habits.md)  
+* [0️⃣➡️1️⃣ Zero To One](../books/zero-to-one.md)  
+* [⚛️🔄 Atomic Habits: An Easy & Proven Way to Build Good Habits & Break Bad Ones](../books/atomic-habits.md)  
   
 ## 💬 Prompt 2  
 > 🔎 Identify novel insights that emerge from the synthesis of ideas from these books.  
@@ -148,14 +148,14 @@ To achieve it:
   
 Drawing upon the "Atomic Innovation" insight – the idea that radical innovation stems from a compounding effect of consistent, small steps and a systematic approach – here are some unmentioned books that offer valuable perspectives:  
   
-1. [📉🧪🚀 The Lean Startup: How Today's Entrepreneurs Use Continuous Innovation to Create Radically Successful Businesses](/content/books/the-lean-startup.md) by Eric Ries: This book is a foundational text for applying scientific methods to building and managing startups, emphasizing rapid experimentation, validated learning, and iterative product development through "Minimum Viable Products" (MVPs). It directly aligns with the idea of making experimentation easy and learning satisfying through small, measurable steps.  
+1. [📉🧪🚀 The Lean Startup: How Today's Entrepreneurs Use Continuous Innovation to Create Radically Successful Businesses](../books/the-lean-startup.md) by Eric Ries: This book is a foundational text for applying scientific methods to building and managing startups, emphasizing rapid experimentation, validated learning, and iterative product development through "Minimum Viable Products" (MVPs). It directly aligns with the idea of making experimentation easy and learning satisfying through small, measurable steps.  
   
-2. [💡🤖💰💥🏢📉 The Innovator's Dilemma: When New Technologies Cause Great Firms to Fail](/content/books/the-innovators-dilemma.md) by Clayton M. Christensen: While focused on why established companies fail to adapt to disruptive innovations, it provides crucial context for understanding the "zero to one" challenge. It highlights the importance of recognizing and nurturing seemingly small, overlooked innovations that eventually disrupt entire markets, reinforcing the idea that breakthroughs often start small.  
+2. [💡🤖💰💥🏢📉 The Innovator's Dilemma: When New Technologies Cause Great Firms to Fail](../books/the-innovators-dilemma.md) by Clayton M. Christensen: While focused on why established companies fail to adapt to disruptive innovations, it provides crucial context for understanding the "zero to one" challenge. It highlights the importance of recognizing and nurturing seemingly small, overlooked innovations that eventually disrupt entire markets, reinforcing the idea that breakthroughs often start small.  
   
-3. [🔟💡 Ten Types of Innovation: The Discipline of Building Breakthroughs](/content/books/ten-types-of-innovation-the-discipline-of-building-breakthroughs.md) by Larry Keeley, Ryan Pikkel, Brian Quinn, and Helen Walters: This book offers a practical framework for analyzing and executing innovation by breaking it down into ten distinct types. It provides a systematic approach to thinking about innovation beyond just product development, helping to "make discovery obvious" and enabling more targeted "atomic experiments."  
+3. [🔟💡 Ten Types of Innovation: The Discipline of Building Breakthroughs](../books/ten-types-of-innovation-the-discipline-of-building-breakthroughs.md) by Larry Keeley, Ryan Pikkel, Brian Quinn, and Helen Walters: This book offers a practical framework for analyzing and executing innovation by breaking it down into ten distinct types. It provides a systematic approach to thinking about innovation beyond just product development, helping to "make discovery obvious" and enabling more targeted "atomic experiments."  
   
 4. 📕 "The Art of Contrary Thinking" by Humphrey B. Neill: This classic focuses on developing a contrarian mindset, which is essential for identifying those "secrets" that Peter Thiel discusses. It helps cultivate the "contrarian thinking ritual" by providing insights into how to go against the herd and find opportunities where others see none.  
   
 5. 📕 "Disciplined Dreaming: A Proven System to Drive Breakthrough Creativity" by Josh Linkner: This book directly tackles the notion that creativity and innovation can be systematized. It provides a five-step process for generating profitable new ideas and fostering a culture of continuous innovation, resonating with the idea of making the creation of new ideas a disciplined, habitual practice.  
   
-6. [💡📜 Where Good Ideas Come From: The Natural History of Innovation](/content/books/where-good-ideas-come-from-the-natural-history-of-innovation.md) by Steven Johnson: Johnson explores the historical and environmental conditions that foster innovation, highlighting the importance of "liquid networks," "slow hunches," and "adjacent possibilities." This book supports the "Atomic Innovation" framework by illustrating how creating the right environment and allowing for the slow burn and synthesis of small insights can lead to major breakthroughs.
+6. [💡📜 Where Good Ideas Come From: The Natural History of Innovation](../books/where-good-ideas-come-from-the-natural-history-of-innovation.md) by Steven Johnson: Johnson explores the historical and environmental conditions that foster innovation, highlighting the importance of "liquid networks," "slow hunches," and "adjacent possibilities." This book supports the "Atomic Innovation" framework by illustrating how creating the right environment and allowing for the slow burn and synthesis of small insights can lead to major breakthroughs.

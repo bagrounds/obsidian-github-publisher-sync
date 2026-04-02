@@ -7,7 +7,7 @@ share: true
 affiliate link: https://amzn.to/3I3XBmG
 CTA: 💪 Discover vitality.
 ---
-[Home](/content/index.md) > [Books](/content/books/index.md)  
+[Home](../index.md) > [Books](./index.md)  
 # 🏃😊❤️ The Joy of Movement: How Exercise Helps Us Find Happiness, Hope, Connection, and Courage  
 [🛒 The Joy of Movement: How Exercise Helps Us Find Happiness, Hope, Connection, and Courage. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3I3XBmG)  
   
@@ -15,7 +15,7 @@ CTA: 💪 Discover vitality.
   
 ### 🔍 Overview  
   
-* 🤸 *The Joy of Movement: How Exercise Helps Us Find Happiness, Hope, Connection, and Courage* by [🧠🔬🧘‍♀️💪📈❤️‍🩹🗣️📚🌟 Kelly McGonigal](/content/people/kelly-mcgonigal.md) is a compelling exploration of the profound psychological and emotional benefits of physical activity. 🧠 Moving beyond the conventional focus on physical health metrics, McGonigal delves into the science and personal stories that reveal how movement is fundamental to human well-being, fostering states like joy, resilience, social connection, and a sense of purpose.  
+* 🤸 *The Joy of Movement: How Exercise Helps Us Find Happiness, Hope, Connection, and Courage* by [🧠🔬🧘‍♀️💪📈❤️‍🩹🗣️📚🌟 Kelly McGonigal](../people/kelly-mcgonigal.md) is a compelling exploration of the profound psychological and emotional benefits of physical activity. 🧠 Moving beyond the conventional focus on physical health metrics, McGonigal delves into the science and personal stories that reveal how movement is fundamental to human well-being, fostering states like joy, resilience, social connection, and a sense of purpose.  
   
 ### ✨ Key Themes and Ideas  
   
@@ -37,8 +37,8 @@ CTA: 💪 Discover vitality.
   
 ### 🧠 Similar Books (Focus on Mental/Emotional Benefits of Exercise)  
   
-* **[⚡🧠🏃 Spark: The Revolutionary New Science of Exercise and the Brain](/content/books/spark-the-revolutionary-new-science-of-exercise-and-the-brain.md)** **by John J. Ratey:** 💡 Explores the direct link between exercise and brain health, showing how physical activity can improve learning, alleviate depression, reduce stress, and slow down aging. 📖 Often cited alongside McGonigal's work for its focus on the science of exercise's mental effects.  
-* **[🧠🏃 The Psychological Benefits of Exercise and Physical Activity](/content/books/the-psychological-benefits-of-exercise-and-physical-activity.md)** **by Jennifer L. Etnier:** 🔬 A more academic text rooted in science, focusing specifically on the psychological outcomes affected by physical activity behaviors, such as effects on depression, anxiety, cognitive performance, memory, pain, and sleep.  
+* **[⚡🧠🏃 Spark: The Revolutionary New Science of Exercise and the Brain](./spark-the-revolutionary-new-science-of-exercise-and-the-brain.md)** **by John J. Ratey:** 💡 Explores the direct link between exercise and brain health, showing how physical activity can improve learning, alleviate depression, reduce stress, and slow down aging. 📖 Often cited alongside McGonigal's work for its focus on the science of exercise's mental effects.  
+* **[🧠🏃 The Psychological Benefits of Exercise and Physical Activity](./the-psychological-benefits-of-exercise-and-physical-activity.md)** **by Jennifer L. Etnier:** 🔬 A more academic text rooted in science, focusing specifically on the psychological outcomes affected by physical activity behaviors, such as effects on depression, anxiety, cognitive performance, memory, pain, and sleep.  
 * 🧠 ***The Exercise Effect on Mental Health: Neurobiological Mechanisms*** **edited by Lars-Olov Blanke and Andreas Strohle:** 🔬 This book provides a detailed, evidence-based look at how physical activity impacts the neurobiological mechanisms underlying common psychological and psychiatric disorders.  
 * 🧠 ***Psychological Dynamics of Sport and Exercise*** **by Maureen R. Weiss and Tony W. Taylor:** 🤸 Covers various psychological aspects related to sport and exercise, including motivation, mental skills, and the social environment.  
 * 💪 ***ACSM's Behavioral Aspects of Physical Activity and Exercise*** **by American College of Sports Medicine:** 🏋️ Focuses on the theoretical foundation of behavior change and practical strategies for motivating individuals to be active and maintain healthy habits.  
@@ -47,14 +47,14 @@ CTA: 💪 Discover vitality.
   
 * 🏋️ ***Starting Strength: Basic Barbell Training*** **by Mark Rippetoe:** 🔩 A foundational text focused purely on the technical execution and programming of basic barbell exercises for strength development. 💪 Represents a focus solely on the physical 'how-to' of exercise.  
 * 🧪 ***The Physiology of Physical Training*** **by Zsolt Radák:** 🔬 Delves into the detailed physiological and methodological aspects of physical training, covering cellular adaptation and training techniques from a biological perspective, rather than the psychological or emotional benefits.  
-* **[💪🧠 Endure: Mind, Body, and the Curiously Elastic Limits of Human Performance](/content/books/endure-mind-body-and-the-curiously-elastic-limits-of-human-performance.md)** **by Alex Hutchinson:** 🧠 While it touches on the mental aspect, this book primarily investigates the *physical* limits of human endurance and the science behind pushing those boundaries, often in extreme conditions.  
+* **[💪🧠 Endure: Mind, Body, and the Curiously Elastic Limits of Human Performance](./endure-mind-body-and-the-curiously-elastic-limits-of-human-performance.md)** **by Alex Hutchinson:** 🧠 While it touches on the mental aspect, this book primarily investigates the *physical* limits of human endurance and the science behind pushing those boundaries, often in extreme conditions.  
 * 🧘 ***Pause, Rest, Be: Stillness Practices for Courage in Times of Change*** **by Octavia F. Raheem:** ☮️ Offers practices focused on rest, stillness, and reflection as tools for courage and restoration, presenting an alternative or complementary approach to well-being that emphasizes the absence of movement.  
 * 🧘 ***Strength in Stillness: The Power of Transcendental Meditation*** **by Bob Roth:** 🧠 Focuses on meditation as a means to access inner calm, reduce stress, and build resilience through stillness, providing a contrast to the idea of achieving these states through physical movement.  
 * 🧘 ***Sitting in the Stillness*** **by Martin Underwood:** 🌳 Explores stillness and mindfulness through therapeutic stories, highlighting the peace available beyond mental agitation, a contrasting approach to finding well-being compared to the energy of movement.  
   
 ### 🎨 Creatively Related Books (Movement, Embodiment, Philosophy, Nature, Community)  
   
-* **[🧠🫂 The Embodied Mind: Cognitive Science and Human Experience](/content/books/the-embodied-mind-cognitive-science-and-human-experience.md)** **by Francisco J. Varela, Evan Thompson, and Eleanor Rosch:** 👤 A classic text that originated the "embodied cognition" movement, arguing that the mind is not separate from the body and its interaction with the environment. ☯️ Connects cognitive science with phenomenology and Buddhist practices.  
+* **[🧠🫂 The Embodied Mind: Cognitive Science and Human Experience](./the-embodied-mind-cognitive-science-and-human-experience.md)** **by Francisco J. Varela, Evan Thompson, and Eleanor Rosch:** 👤 A classic text that originated the "embodied cognition" movement, arguing that the mind is not separate from the body and its interaction with the environment. ☯️ Connects cognitive science with phenomenology and Buddhist practices.  
 * 🧠 ***Embodied Minds in Action*** **by Robert Hanna and Michelle Maiese:** 👤 Explores the philosophical problems of the mind-body relationship, mental causation, and intentional action through the lens of an "Essential Embodiment Theory," offering a philosophical perspective on the interconnectedness of mind and body in movement.  
 * 💃 ***Kinaesthesia in the Psychology, Philosophy and Culture of Human Experience*** **by Sarah Groff Hennigh-Palermo:** 👤 Explores the nature and importance of kinaesthesia (the sense of movement) across psychological, philosophical, and cultural perspectives, discussing how the subjective feeling of movement is fundamental to feeling embodied.  
 * 🌲 ***Pilgrim at Tinker Creek*** **by Annie Dillard:** 🏞️ A nature narrative that, while not directly about exercise, deeply explores embodied experience and mindful observation in the natural world, highlighting the connection between physical presence in nature and profound personal insight.  
@@ -62,7 +62,7 @@ CTA: 💪 Discover vitality.
 * 💃 ***What the Body Remembers*** **by Shauna Singh Baldwin:** 📖 A novel that uses the physical experiences and resilience of women in colonial India to explore themes of identity, trauma, and survival, highlighting how the body holds and expresses personal and historical narratives.  
 * 🧠 ***Ontohackers: Radical Movement Philosophy in the Age of Extinctions and Algorithms, Part I*** **by Jaym*/Jaime del Val:** 💡 Presents a radical philosophical theory of the body as movement and explores proprioception, connecting embodiment to larger ideas about planetary crisis and the potential for cognitive and relational plasticity through movement.".  
   
-## 💬 [Gemini](/content/software/gemini.md) Prompt (gemini-2.5-flash-preview-04-17)  
+## 💬 [Gemini](../software/gemini.md) Prompt (gemini-2.5-flash-preview-04-17)  
 > Write a markdown-formatted (start headings at level H2) book report, followed by a plethora of additional similar, contrasting, and creatively related book recommendations on The Joy of Movement: How Exercise Helps Us Find Happiness, Hope, Connection, and Courage. Be thorough in content discussed but concise and economical with your language. Structure the report with section headings and bulleted lists to avoid long blocks of text.  
   
 ## 🐦 Tweet  

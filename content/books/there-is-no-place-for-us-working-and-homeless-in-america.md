@@ -7,7 +7,7 @@ share: true
 CTA: 💔 See the unseen.
 affiliate link: https://amzn.to/48vNBMF
 ---
-[Home](/content/index.md) > [Books](/content/books/index.md)  
+[Home](../index.md) > [Books](./index.md)  
 # 🏚️🚫 There Is No Place for Us: Working and Homeless in America  
 [🛒 There Is No Place for Us: Working and Homeless in America. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/48vNBMF)  
   
@@ -71,7 +71,7 @@ affiliate link: https://amzn.to/48vNBMF
 ## 📚 Book Recommendations  
   
 ### 📚 Similar  
-* [🏚️💰 Evicted: Poverty and Profit in the American City](/content/books/evicted-poverty-and-profit-in-the-american-city.md) by Matthew Desmond  
+* [🏚️💰 Evicted: Poverty and Profit in the American City](./evicted-poverty-and-profit-in-the-american-city.md) by Matthew Desmond  
 * 👨‍👩‍👧‍👦 Random Family Love, Drugs, Trouble, and Coming of Age in the Bronx by Adrian Nicole LeBlanc  
 * 🧹 Maid Hard Work, Low Pay, and a Mother's Will to Survive by Stephanie Land  
   

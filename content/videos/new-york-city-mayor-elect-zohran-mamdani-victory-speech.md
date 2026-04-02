@@ -10,7 +10,7 @@ Channel: C-SPAN
 tags:
 youtube: https://youtu.be/1tPBasNfhLs
 ---
-[Home](/content/index.md) > [Videos](/content/videos/index.md)  
+[Home](../index.md) > [Videos](./index.md)  
 # 🗽🏙️🗣️ New York City Mayor-elect Zohran Mamdani Victory Speech  
 ![New York City Mayor-elect Zohran Mamdani Victory Speech](https://youtu.be/1tPBasNfhLs)  
   
@@ -71,19 +71,19 @@ To 🔎 explore for a better understanding, further topics include:
 ## 📚 Book Recommendations  
   
 ### ↔️ Similar  
-* [🚩⚖️ The Socialist Manifesto: The Case for Radical Politics in an Era of Extreme Inequality](/content/books/the-socialist-manifesto-the-case-for-radical-politics-in-an-era-of-extreme-inequality.md) by Bhaskar Sunkara: A 🌍 contemporary argument for **democratic socialism**, outlining a vision for a more equitable economy and political system that aligns with the speaker's core ideology.  
+* [🚩⚖️ The Socialist Manifesto: The Case for Radical Politics in an Era of Extreme Inequality](../books/the-socialist-manifesto-the-case-for-radical-politics-in-an-era-of-extreme-inequality.md) by Bhaskar Sunkara: A 🌍 contemporary argument for **democratic socialism**, outlining a vision for a more equitable economy and political system that aligns with the speaker's core ideology.  
 * 🗽 The Power Broker: Robert Moses and the Fall of New York by Robert Caro: A 🏛️ comprehensive biography detailing the vast and unchecked power of a single individual in New York City, providing historical context for the idea of **toppling political dynasties** and the mechanisms of city power.  
 * 📖 A People’s History of the United States by Howard Zinn: An ✊ authoritative look at American history from the perspective of the **marginalized and working class**, mirroring the speaker's focus on the hands of workers who built the city.  
   
 ### 🆚 Contrasting  
 * 📘 Basic Economics: A Common Sense Guide to the Economy by Thomas Sowell: A 💡 defense of **free-market principles** and a critique of government intervention in areas like rent control, offering an opposing view to the speaker's economic agenda.  
 * 📈 The Affluent Society by John Kenneth Galbraith: A 💰 critique of post-war American capitalism and the need for greater **public spending**, but approaching the problem from a more traditional liberal economic perspective than democratic socialism.  
-* [🏚️💰 Evicted: Poverty and Profit in the American City](/content/books/evicted-poverty-and-profit-in-the-american-city.md) by Matthew Desmond: A powerful 🔎 look at the mechanics of **poverty and housing instability** in America, providing a sociological counterpoint that highlights the human costs of the crisis the speaker wants to solve.  
+* [🏚️💰 Evicted: Poverty and Profit in the American City](../books/evicted-poverty-and-profit-in-the-american-city.md) by Matthew Desmond: A powerful 🔎 look at the mechanics of **poverty and housing instability** in America, providing a sociological counterpoint that highlights the human costs of the crisis the speaker wants to solve.  
   
 ### 🎨 Creatively Related  
 * 🌆 Exit West by Mohsin Hamid: A magical realist novel exploring the 🚶 experience of **migrants** who use mysterious doors to cross the globe, relating tangentially to the themes of the immigrant experience and finding community in a new, often hostile, place.  
 * 🍎 The Death and Life of Great American Cities by Jane Jacobs: A seminal work of urban studies arguing for **community-focused urban planning** and against large-scale, top-down development, relating to the vision of a city that loves them back.  
-* [🎳🏘️📉📈 Bowling Alone: The Collapse and Revival of American Community](/content/books/bowling-alone.md) by Robert Putnam: A 🧑‍🤝‍🧑 sociological study on the decline of **social capital and civic engagement**, which relates to the speech's themes of building a grassroots movement and forging a new, shared political hope.  
+* [🎳🏘️📉📈 Bowling Alone: The Collapse and Revival of American Community](../books/bowling-alone.md) by Robert Putnam: A 🧑‍🤝‍🧑 sociological study on the decline of **social capital and civic engagement**, which relates to the speech's themes of building a grassroots movement and forging a new, shared political hope.  
   
 ## 🐦 Tweet  
 <blockquote class="twitter-tweet" data-theme="dark"><p lang="en" dir="ltr">🗽🏙️🗣️ New York City Mayor-elect Zohran Mamdani Victory Speech<br><br>🗳️ Mandate | ✊ Workers | ❄️ Rent Freeze | 🚌 Free Buses | 👶 Universal Childcare | 🤝 Safety and Justice | 🏳️‍🌈 Community Support | 🛑 End Corruption | 🗽 Immigrant Leadership<a href="https://twitter.com/ZohranKMamdani?ref_src=twsrc%5Etfw">@ZohranKMamdani</a><a href="https://t.co/RMDua5vijq">https://t.co/RMDua5vijq</a></p>&mdash; Bryan Grounds (@bagrounds) <a href="https://twitter.com/bagrounds/status/1985985705374597353?ref_src=twsrc%5Etfw">November 5, 2025</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>

@@ -10,7 +10,7 @@ Channel: PBS NewsHour
 tags:
 youtube: https://youtu.be/ZrC4_Ops7m0
 ---
-[Home](/content/index.md) > [Videos](/content/videos/index.md)  
+[Home](../index.md) > [Videos](./index.md)  
 # 🏛️🔨🗑️ Brooks and Atkins Stohr on the East Wing demolition  
 ![Brooks and Atkins Stohr on the East Wing demolition](https://youtu.be/ZrC4_Ops7m0)  
   
@@ -57,14 +57,14 @@ youtube: https://youtu.be/ZrC4_Ops7m0
 ### ↔️ Similar  
   
 * 📖 The Gatekeepers: How the White House Chiefs of Staff Define Every Presidency by Chris Whipple. A book that explores the inner workings and power dynamics within the physical and institutional spaces of the White House, similar to the discussion of the East Wing's function and the President's image.  
-* [📜🌍⏳ Sapiens: A Brief History of Humankind](/content/books/sapiens-a-brief-history-of-humankind.md) by Yuval Noah Harari. A broad look at how abstract concepts like corporations and power structures are created and how they govern human society, relating to the themes of corporatization of public space and political accountability.  
+* [📜🌍⏳ Sapiens: A Brief History of Humankind](../books/sapiens-a-brief-history-of-humankind.md) by Yuval Noah Harari. A broad look at how abstract concepts like corporations and power structures are created and how they govern human society, relating to the themes of corporatization of public space and political accountability.  
 * 📖 Unrigged: How Americans Are Fighting Back to Save Democracy by David Daley. A deep dive into the nationwide fight against partisan gerrymandering, providing comprehensive context on the "race to the bottom" and the efforts to secure fair political maps.  
   
 ### 🆚 Contrasting  
   
-* [➡️🌟🗺️ A Promised Land](/content/books/a-promised-land.md) by Barack Obama. A presidential memoir that offers an insider's view of the challenges of governing and the traditions of the White House, providing a contrast to the current administration's approach to remodeling and fundraising.  
+* [➡️🌟🗺️ A Promised Land](../books/a-promised-land.md) by Barack Obama. A presidential memoir that offers an insider's view of the challenges of governing and the traditions of the White House, providing a contrast to the current administration's approach to remodeling and fundraising.  
 * 📖 The Education of an Idealist: A Memoir by Samantha Power. Provides a perspective on foreign policy from a former U.S. Ambassador, offering a more conventional, ideals-driven view on diplomatic engagement that contrasts with the transactional style discussed regarding the Middle East cease-fire.  
-* [🇺🇸📜 The Federalist Papers](/content/books/the-federalist-papers.md) by Alexander Hamilton, James Madison, and John Jay. A foundational text on American political theory, which offers the original framers' intent for constitutional structures and checks on executive influence, providing a direct counterpoint to the ethical concerns raised by the current administration's actions.  
+* [🇺🇸📜 The Federalist Papers](../books/the-federalist-papers.md) by Alexander Hamilton, James Madison, and John Jay. A foundational text on American political theory, which offers the original framers' intent for constitutional structures and checks on executive influence, providing a direct counterpoint to the ethical concerns raised by the current administration's actions.  
   
 ### 🎨 Creatively Related  
   

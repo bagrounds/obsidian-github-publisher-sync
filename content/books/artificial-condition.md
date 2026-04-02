@@ -12,7 +12,7 @@ force_analyze_links: false
 link_analysis_time: 2026-03-25T14:28:16.710Z
 link_analysis_model: gemini-3.1-flash-lite-preview
 ---
-[Home](/content/index.md) > [Books](/content/books/index.md) | [⏮️ 🚨🤖💥 All Systems Red](/content/books/all-systems-red.md) [⏭️ 🕵️‍♀️📜💻 Rogue Protocol](/content/books/rogue-protocol.md)  
+[Home](../index.md) > [Books](./index.md) | [⏮️ 🚨🤖💥 All Systems Red](./all-systems-red.md) [⏭️ 🕵️‍♀️📜💻 Rogue Protocol](./rogue-protocol.md)  
 # 🤖🧠⚙️ Artificial Condition  
 [🛒 Artificial Condition. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/46WtZ45)  
   
@@ -51,7 +51,7 @@ A: 🤓 Artificial Condition maintains the signature dry humor of the debut whil
   
 ### 📖 Non-Fiction  
   
-* 🤖 [⚖️🤖 The Alignment Problem](/content/books/the-alignment-problem.md) by Brian Christian  
+* 🤖 [⚖️🤖 The Alignment Problem](./the-alignment-problem.md) by Brian Christian  
 * 🦾 How We Became Posthuman by N. Katherine Hayles  
   
 ### ❤️ If You Loved This  
@@ -61,7 +61,7 @@ A: 🤓 Artificial Condition maintains the signature dry humor of the debut whil
   
 ### ↔️ Similar But Different  
   
-* [🤖🤖🤖 We Are Legion (We Are Bob)](/content/books/we-are-legion-we-are-bob.md) by Dennis E. Taylor  
+* [🤖🤖🤖 We Are Legion (We Are Bob)](./we-are-legion-we-are-bob.md) by Dennis E. Taylor  
 * 🌌 The Long Way to a Small, Angry Planet by Becky Chambers  
   
 ## 🫵 What Do You Think?  

@@ -6,8 +6,11 @@ URL: https://bagrounds.org/books/enlightenment-now-the-case-for-reason-science-h
 share: true
 CTA: 🌍 Champion humanity.
 affiliate link: https://amzn.to/4mziiGD
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_time: 2026-04-01T00:00:00Z
+force_analyze_links: false
 ---
-[Home](/content/index.md) > [Books](/content/books/index.md)  
+[Home](../index.md) > [Books](./index.md)  
 # 💡🔬🧑‍🤝‍🧑📈 Enlightenment Now: The Case for Reason, Science, Humanism, and Progress  
 [🛒 Enlightenment Now: The Case for Reason, Science, Humanism, and Progress. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4mziiGD)  
   
@@ -57,7 +60,7 @@ affiliate link: https://amzn.to/4mziiGD
   
 ### 🤝 Similar Books  
   
-* **[🤔🌍📈✅ Factfulness: Ten Reasons We're Wrong About the World - and Why Things Are Better Than You Think](/content/books/factfulness.md)** by Hans Rosling with Ola Rosling and Anna Rosling Rönnlund  
+* **[🤔🌍📈✅ Factfulness: Ten Reasons We're Wrong About the World - and Why Things Are Better Than You Think](./factfulness.md)** by Hans Rosling with Ola Rosling and Anna Rosling Rönnlund  
     * 📊 Like Enlightenment Now, this book uses extensive data to combat common misconceptions about global trends and presents an optimistic, evidence-based view of human progress across health, wealth, and other indicators. ✅ It advocates for a fact-based worldview over emotional biases.  
 * 🌱 **The Rational Optimist: How Prosperity Evolves** by Matt Ridley  
     * 🚀 Ridley's work similarly champions the power of human ingenuity, trade, and innovation as drivers of progress. 💡 It explores how ideas combine and evolve through collective intelligence, leading to ever-improving living standards, echoing Pinker's emphasis on reason and scientific advancement.  
@@ -68,16 +71,16 @@ affiliate link: https://amzn.to/4mziiGD
   
 * 🤔 **A Brief History of Thought: From Ancient Philosophers to Today's Thinkers** by Luc Ferry  
     * ⚠️ While not directly "anti-Enlightenment," Ferry's work, particularly his examination of Romanticism and post-Enlightenment philosophies, can offer a contrasting perspective on the limits or criticisms of pure rationalism and the emergence of other intellectual currents that challenged Enlightenment ideals.  
-* **[⚙️⛓️ Discipline and Punish: The Birth of the Prison](/content/books/discipline-and-punish-the-birth-of-the-prison.md)** by Michel Foucault  
+* **[⚙️⛓️ Discipline and Punish: The Birth of the Prison](./discipline-and-punish-the-birth-of-the-prison.md)** by Michel Foucault  
     * 🧐 Foucault's work critically examines the historical development of modern institutions, including those emerging from the Enlightenment, arguing that concepts like reason and progress can also be mechanisms of power and social control, offering a stark contrast to Pinker's largely celebratory view.  
 * 🛑 **The End of Progress: How Modern Economics Has Failed Us** by Graeme Maxton and Jorgen Randers  
     * 📉 This book challenges the very idea of continuous, unlimited progress, particularly in economic terms. 🌍 It highlights environmental limits and the potential downsides of unchecked growth, providing a more pessimistic outlook on humanity's trajectory than Pinker's optimistic data-driven narrative.  
   
 ### 🎨 Creatively Related Books  
   
-* **[📜🌍⏳ Sapiens: A Brief History of Humankind](/content/books/sapiens-a-brief-history-of-humankind.md)** by Yuval Noah Harari  
+* **[📜🌍⏳ Sapiens: A Brief History of Humankind](./sapiens-a-brief-history-of-humankind.md)** by Yuval Noah Harari  
     * ⏳ Harari's expansive history explores the cognitive revolution, the agricultural revolution, and the scientific revolution, providing a broader historical and anthropological context for understanding humanity's trajectory and the role of ideas, including those of the Enlightenment, in shaping our world.  
-* **[🤔🐇🐢 Thinking, Fast and Slow](/content/books/thinking-fast-and-slow.md)** by Daniel Kahneman  
+* **[🤔🐇🐢 Thinking, Fast and Slow](./thinking-fast-and-slow.md)** by Daniel Kahneman  
     * 💭 This book delves into the two systems of human thought—intuitive and rational—exploring the cognitive biases that often lead to irrational decisions and skewed perceptions of reality. 🤯 It offers a psychological underpinning for why people might be prone to pessimism or reject data-driven optimism, as Pinker describes.  
 * ✨ **The Age of Wonder: How the Romantic Generation Discovered the Beauty and Terror of Science** by Richard Holmes  
     * 🔬 While Enlightenment Now champions science, Holmes's book offers a nuanced look at the intersection of science and Romanticism in the late 18th and early 19th centuries. 😮‍💨 It explores how scientific discovery was intertwined with awe, wonder, and sometimes apprehension, providing a richer cultural context for Pinker's "science" theme.  

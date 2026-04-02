@@ -10,7 +10,7 @@ Channel: Rowena Tsai
 tags:
 youtube: https://youtu.be/gDgk7rsy2Ik
 ---
-[Home](/content/index.md) > [Videos](/content/videos/index.md)  
+[Home](../index.md) > [Videos](./index.md)  
 # ⏱️🔋✅ The one productivity system you need: time vs energy management (ep. 1)  
 ![the one productivity system you need: time vs energy management (ep. 1)](https://youtu.be/gDgk7rsy2Ik)  
 ## 🤖 AI Summary  
@@ -28,7 +28,7 @@ While the video argues that energy management is superior to time management, ot
   
 ## 📚 Book Recommendations  
   
-  * [🔋📈 The Power of Full Engagement: Managing Energy, Not Time, Is the Key to High Performance and Personal Renewal](/content/books/the-power-of-full-engagement-managing-energy-not-time-is-the-key-to-high-performance-and-personal-renewal.md) by Jim Loehr and Tony Schwartz: This book 🎯 popularizes the concept of managing energy, not time, and provides a framework for managing physical, emotional, mental, and spiritual energy.  
-  * [🤿💼 Deep Work: Rules for Focused Success in a Distracted World](/content/books/deep-work.md) by Cal Newport: This book 🧠 champions the ability to focus without distraction on a cognitively demanding task, which is a key component of effective energy management.  
-  * [⚛️🔄 Atomic Habits: An Easy & Proven Way to Build Good Habits & Break Bad Ones](/content/books/atomic-habits.md) by James Clear: A great read for building effective routines that can help with both time and energy management. It focuses on the power of small, consistent changes to build momentum.  
+  * [🔋📈 The Power of Full Engagement: Managing Energy, Not Time, Is the Key to High Performance and Personal Renewal](../books/the-power-of-full-engagement-managing-energy-not-time-is-the-key-to-high-performance-and-personal-renewal.md) by Jim Loehr and Tony Schwartz: This book 🎯 popularizes the concept of managing energy, not time, and provides a framework for managing physical, emotional, mental, and spiritual energy.  
+  * [🤿💼 Deep Work: Rules for Focused Success in a Distracted World](../books/deep-work.md) by Cal Newport: This book 🧠 champions the ability to focus without distraction on a cognitively demanding task, which is a key component of effective energy management.  
+  * [⚛️🔄 Atomic Habits: An Easy & Proven Way to Build Good Habits & Break Bad Ones](../books/atomic-habits.md) by James Clear: A great read for building effective routines that can help with both time and energy management. It focuses on the power of small, consistent changes to build momentum.  
   * Four Thousand Weeks: Time Management for Mortals by Oliver Burkeman: This book offers a contrasting, philosophical perspective on time management, questioning the modern obsession with productivity and offering a more realistic, liberating view of our limited time on earth.

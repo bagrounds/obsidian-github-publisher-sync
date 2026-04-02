@@ -7,7 +7,7 @@ share: true
 affiliate link: https://amzn.to/4nuh7IA
 CTA: 🏃‍♀️ Fortify your stride.
 ---
-[Home](/content/index.md) > [Books](/content/books/index.md)  
+[Home](../index.md) > [Books](./index.md)  
 # 🏃‍♀️🦴 Anatomy for Runners: Unlocking Your Athletic Potential for Health, Speed, and Injury Prevention  
 [🛒 Anatomy for Runners: Unlocking Your Athletic Potential for Health, Speed, and Injury Prevention. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4nuh7IA)  
   
@@ -51,21 +51,21 @@ Purpose: 🎯 The overall purpose of Anatomy for Runners is to provide runners w
   
 ### 🤝 Similar Books  
   
-* **[🏃🛠️⚡ Running Rewired: Reinvent Your Run for Stability, Strength, and Speed](/content/books/running-rewired-reinvent-your-run-for-stability-strength-and-speed.md) by Jay Dicharry:** Also by Dicharry, this book offers a continuation of his work on running biomechanics, injury prevention, and targeted exercises to build a stronger, more resilient runner.  
-* **[🏃‍♂️🦴 Running Anatomy](/content/books/running-anatomy.md) by Joseph Puleo:** This illustrated guide provides detailed anatomical insights into the muscles involved in running, offering exercises to strengthen these groups and improve overall performance and injury prevention.  
-* **[🏃🤕 Injury-Free Running: Your Illustrated Guide to Biomechanics, Gait Analysis, and Injury Prevention](/content/books/injury-free-running-your-illustrated-guide-to-biomechanics-gait-analysis-and-injury-prevention.md) by Tom Michaud:** This guide focuses on understanding anatomy, biomechanics, and gait analysis, coupled with strengthening exercises and rehabilitation protocols to help runners avoid injuries and improve efficiency.  
+* **[🏃🛠️⚡ Running Rewired: Reinvent Your Run for Stability, Strength, and Speed](./running-rewired-reinvent-your-run-for-stability-strength-and-speed.md) by Jay Dicharry:** Also by Dicharry, this book offers a continuation of his work on running biomechanics, injury prevention, and targeted exercises to build a stronger, more resilient runner.  
+* **[🏃‍♂️🦴 Running Anatomy](./running-anatomy.md) by Joseph Puleo:** This illustrated guide provides detailed anatomical insights into the muscles involved in running, offering exercises to strengthen these groups and improve overall performance and injury prevention.  
+* **[🏃🤕 Injury-Free Running: Your Illustrated Guide to Biomechanics, Gait Analysis, and Injury Prevention](./injury-free-running-your-illustrated-guide-to-biomechanics-gait-analysis-and-injury-prevention.md) by Tom Michaud:** This guide focuses on understanding anatomy, biomechanics, and gait analysis, coupled with strengthening exercises and rehabilitation protocols to help runners avoid injuries and improve efficiency.  
 * 🔬 **Running Mechanics and Gait Analysis:** This resource offers a comprehensive review of recent research and clinical concepts related to gait and injury analysis, providing an advanced clinical assessment of gait and guidelines for treatment.  
   
 ### ⚖️ Contrasting Books  
   
-* **[💪🧠 Endure: Mind, Body, and the Curiously Elastic Limits of Human Performance](/content/books/endure-mind-body-and-the-curiously-elastic-limits-of-human-performance.md) by Alex Hutchinson:** While Dicharry focuses on the physical, Hutchinson explores the psychological limits of endurance, challenging conventional notions of toughness and offering insights into the mental strategies athletes use to push their boundaries.  
+* **[💪🧠 Endure: Mind, Body, and the Curiously Elastic Limits of Human Performance](./endure-mind-body-and-the-curiously-elastic-limits-of-human-performance.md) by Alex Hutchinson:** While Dicharry focuses on the physical, Hutchinson explores the psychological limits of endurance, challenging conventional notions of toughness and offering insights into the mental strategies athletes use to push their boundaries.  
 * 🤔 **How Bad Do You Want It? Mastering the Psychology of Mind over Muscle by Matt Fitzgerald:** This book delves into the mental and psychological aspects of athletic performance, featuring inspiring stories and strategies for developing mental fortitude in sport, contrasting with the purely physical approach of Anatomy for Runners.  
 * ✍️ **Let Your Mind Run by Deena Kastor:** An introspective memoir that draws parallels between running and writing, offering insights into discipline, self-discovery, and the power of mental fitness in achieving athletic success, providing a narrative contrast to Dicharry's clinical approach.  
 * 🧠 **The Psychology of Running by Noel Brick and Stuart Holliday:** This book explores the psychological motivations and benefits of running, from evolutionary perspectives to evidence-based interventions for improving performance and mental well-being, offering a different lens through which to understand the sport.  
   
 ### ✨ Creatively Related Books  
   
-* **[🤸🤕 Becoming a Supple Leopard: The Ultimate Guide to Resolving Pain, Preventing Injury, and Optimizing Athletic Performance](/content/books/becoming-a-supple-leopard-the-ultimate-guide-to-resolving-pain-preventing-injury-and-optimizing-athletic-performance.md) by Kelly Starrett:** This book provides a broad framework for understanding human movement, mobility, and stability across various athletic endeavors, offering a more general but highly applicable approach to physical potential beyond just running.  
+* **[🤸🤕 Becoming a Supple Leopard: The Ultimate Guide to Resolving Pain, Preventing Injury, and Optimizing Athletic Performance](./becoming-a-supple-leopard-the-ultimate-guide-to-resolving-pain-preventing-injury-and-optimizing-athletic-performance.md) by Kelly Starrett:** This book provides a broad framework for understanding human movement, mobility, and stability across various athletic endeavors, offering a more general but highly applicable approach to physical potential beyond just running.  
 * 💪 **Strength Training Anatomy by Frederic Delavier:** While not specific to running, this book offers a visually rich and detailed guide to human musculature and how different exercises target specific muscles, which can deepen a runner's understanding of their body's capabilities and limitations.  
 * 🧬 **Move Your DNA: Restore Your Health Through Natural Movement by Katy Bowman:** Bowman's work challenges modern sedentary lifestyles and advocates for more varied, natural movement patterns. 🚶‍♀️ This offers a philosophical and biomechanical perspective that broadens the understanding of how daily movement (or lack thereof) impacts the body's overall function and resilience, going beyond the specific mechanics of running.  
 * 🔬 **Kinesiology: The Mechanics and Pathomechanics of Human Movement by Carol A. Oatis:** A more academic textbook, this resource provides a foundational understanding of the mechanics and pathomechanics of human movement, offering a deeper scientific context for the biomechanical principles discussed in Anatomy for Runners.  

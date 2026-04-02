@@ -5,7 +5,7 @@ aliases:
 title: 🎨🛠️ Applied Arts
 URL: https://bagrounds.org/topics/applied-arts
 ---
-[Home](/content/index.md) > [Topics](/content/topics/index.md) > [Knowledge](/content/topics/a-hierarchical-view-of-human-knowledge.md) > [Arts](/content/topics/arts.md)  
+[Home](../index.md) > [Topics](./index.md) > [Knowledge](./a-hierarchical-view-of-human-knowledge.md) > [Arts](./arts.md)  
 # 🎨🛠️ Applied Arts  
 ## 🤖 AI Summary  
 **🎨 High-Level Summary:**  
@@ -16,7 +16,7 @@ Applied Arts encompasses all artistic disciplines that apply design and aestheti
   
 Here's a breakdown of the major subcategories within Applied Arts:  
   
-* **🖥️ [Graphic Design](/content/topics/graphic-design.md):**  
+* **🖥️ [Graphic Design](./graphic-design.md):**  
     * Focuses on visual communication and problem-solving using typography, imagery, and layout. Includes branding, advertising, web design, and print media. Think logos that pop! 💥 And websites that wow! 🌐  
 * **⚙️ Industrial Design:**  
     * Deals with the design of mass-produced products, considering both aesthetics and functionality. This encompasses everything from furniture and appliances to vehicles and electronics. Making everyday items extraordinary! 🚗🛋️💡  
@@ -35,7 +35,7 @@ Here's a breakdown of the major subcategories within Applied Arts:
   
 Here are some influential and accessible books that provide a great introduction to Applied Arts:  
   
-1.  **📚 "[The Design of Everyday Things](/content/books/the-design-of-everyday-things.md)" by Don Norman:**  
+1.  **📚 "[The Design of Everyday Things](../books/the-design-of-everyday-things.md)" by Don Norman:**  
     * This book delves into the principles of good design, focusing on usability and functionality. It's a must-read for anyone interested in industrial design and how design impacts our daily lives. This book really opens your eyes to how we interact with objects. 💡🧐  
 2.  **📖 "Thinking with Type" by Ellen Lupton:**  
     * A comprehensive guide to typography, covering everything from the history of typefaces to practical applications in graphic design. It's an essential resource for anyone working with text. This book is a staple for Graphic Designers. 🅰️📝🎉  

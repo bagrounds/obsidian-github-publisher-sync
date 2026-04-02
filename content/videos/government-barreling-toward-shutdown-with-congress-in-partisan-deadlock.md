@@ -10,7 +10,7 @@ Channel: PBS NewsHour
 tags:
 youtube: https://youtu.be/esBQsoyBSQY
 ---
-[Home](/content/index.md) > [Videos](/content/videos/index.md)  
+[Home](../index.md) > [Videos](./index.md)  
 # 🏛️💥🧱🚫 Government barreling toward shutdown with Congress in partisan deadlock  
 ![Government barreling toward shutdown with Congress in partisan deadlock](https://youtu.be/esBQsoyBSQY)  
   
@@ -35,13 +35,13 @@ youtube: https://youtu.be/esBQsoyBSQY
   
 ## 📚 Book Recommendations  
 ### Similar  
-* [💀👨‍🏫 The Death of Expertise: The Campaign Against Established Knowledge and Why It Matters](/content/books/the-death-of-expertise-the-campaign-against-established-knowledge-and-why-it-matters.md) by Tom Nichols: Explores the political environment where expert warnings about the shutdown's cost are often dismissed in favor of political posturing.  
+* [💀👨‍🏫 The Death of Expertise: The Campaign Against Established Knowledge and Why It Matters](../books/the-death-of-expertise-the-campaign-against-established-knowledge-and-why-it-matters.md) by Tom Nichols: Explores the political environment where expert warnings about the shutdown's cost are often dismissed in favor of political posturing.  
 * 🗳️ It Was All a Lie by Stuart Stevens: Offers an insider's perspective on the political calculations and strategies within one party that lead to confrontations like the government shutdown standoff.  
   
 ### Contrasting  
 * 🤝 Leadership by Doris Kearns Goodwin: Provides historical examples of presidential leadership, focusing on figures who managed to forge consensus and govern during periods of intense political division.  
-* [👍➡️👍👍 Good to Great: Why Some Companies Make the Leap...And Others Don't](/content/books/good-to-great.md) by Jim Collins: Though focused on business, this book's principles of disciplined thought and action offer a model contrasting with the reactive, crisis-driven nature of government by shutdown.  
+* [👍➡️👍👍 Good to Great: Why Some Companies Make the Leap...And Others Don't](../books/good-to-great.md) by Jim Collins: Though focused on business, this book's principles of disciplined thought and action offer a model contrasting with the reactive, crisis-driven nature of government by shutdown.  
   
 ### Creatively Related  
 * 🤥 Telling the Truth About History by Joyce Appleby, Lynn Hunt, and Margaret Jacob: Discusses how historical narratives are created and manipulated, connecting to the video's section on disputed claims about health care funding.  
-* [⚠️🥴🕹️🌐 The Fifth Risk](/content/books/the-fifth-risk.md) by Michael Lewis: Details the critical, often unseen functions of federal agencies and the dangers of undermining the permanent government, directly relating to the threat of mass firings and long-term agency capacity.
+* [⚠️🥴🕹️🌐 The Fifth Risk](../books/the-fifth-risk.md) by Michael Lewis: Details the critical, often unseen functions of federal agencies and the dangers of undermining the permanent government, directly relating to the threat of mass firings and long-term agency capacity.

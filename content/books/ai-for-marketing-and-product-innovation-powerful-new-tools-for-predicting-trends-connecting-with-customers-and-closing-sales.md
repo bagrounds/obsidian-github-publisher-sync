@@ -7,7 +7,7 @@ share: true
 CTA: 🚀 Leverage AI.
 affiliate link: https://amzn.to/47hWcmX
 ---
-[Home](/content/index.md) > [Books](/content/books/index.md)  
+[Home](../index.md) > [Books](./index.md)  
 # 🤖📈 AI for Marketing and Product Innovation: Powerful New Tools for Predicting Trends, Connecting with Customers, and Closing Sales  
 [🛒 AI for Marketing and Product Innovation: Powerful New Tools for Predicting Trends, Connecting with Customers, and Closing Sales. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/47hWcmX)  
   
@@ -38,8 +38,8 @@ affiliate link: https://amzn.to/47hWcmX
   
 ### ⚖️ Contrasting Perspectives: 🔎 The Critical Lens on AI  
   
-* **[📊📉🏛️ Weapons of Math Destruction: How Big Data Increases Inequality and Threatens Democracy](/content/books/weapons-of-math-destruction-how-big-data-increases-inequality-and-threatens-democracy.md)** by Cathy O'Neil: 🌑 This book explores the dark side of big data and algorithms, arguing that they can perpetuate and even worsen societal inequalities.  
-* **[👁️‍🗨️💰⛓️👤 The Age of Surveillance Capitalism: The Fight for a Human Future at the New Frontier of Power](/content/books/the-age-of-surveillance-capitalism.md)** by Shoshana Zuboff: 🏛️ A seminal work that examines how technology companies are using our personal data to predict and control our behavior for profit.  
+* **[📊📉🏛️ Weapons of Math Destruction: How Big Data Increases Inequality and Threatens Democracy](./weapons-of-math-destruction-how-big-data-increases-inequality-and-threatens-democracy.md)** by Cathy O'Neil: 🌑 This book explores the dark side of big data and algorithms, arguing that they can perpetuate and even worsen societal inequalities.  
+* **[👁️‍🗨️💰⛓️👤 The Age of Surveillance Capitalism: The Fight for a Human Future at the New Frontier of Power](./the-age-of-surveillance-capitalism.md)** by Shoshana Zuboff: 🏛️ A seminal work that examines how technology companies are using our personal data to predict and control our behavior for profit.  
 * 🌍 **Atlas of AI: ✊ Power, 🏛️ Politics, and the 💸 Planetary Costs of Artificial Intelligence** by Kate Crawford: 🌿 This book reveals the hidden costs of AI, from the natural resources it consumes to the human labor it exploits, and questions the narratives of AI as a neutral and objective technology.  
 * 😇 **Ethical AI in Marketing: 🤝 Aligning Growth, ⚖️ Responsibility and 🫂 Customer Trust** by Nicole M. Alexander: 🛠️ This practical guide equips marketing professionals to navigate the ethical complexities of AI-driven marketing, focusing on fostering consumer trust.  
 * 📢 **AI Marketing and Ethical Considerations in Consumer Engagement** by Business Science Reference: 📖 This book examines the use of AI in marketing practices with a focus on ethical issues like data privacy and sustainability.  
@@ -49,8 +49,8 @@ affiliate link: https://amzn.to/47hWcmX
 * 🎨 **The Artist in the Machine: 🤖 The World of AI-Powered Creativity** by Arthur I. Miller: 🚀 This book explores the evolving landscape of AI-enhanced artistry and how AI can be a powerful tool for generating novel ideas and pushing creative boundaries.  
 * ✨ **AI for Creativity** by Niklas Hageback: 💡 This book delves into the question of whether AI can learn to be creative and explores the applications of computational creativity.  
 * 🧑‍🤝‍🧑 **Interaction Design: 🧑‍💻 Beyond Human-Computer Interaction** by Jenny Preece, Helen Sharp, and Yvonne Rogers: 👨‍🏫 A comprehensive introduction to the principles of designing for user experience, a crucial aspect of making technology that truly connects with people.  
-* **[💺🚪💡🤔 The Design of Everyday Things](/content/books/the-design-of-everyday-things.md)** by Don Norman: 📖 A classic text that explains the principles of human-centered design, offering timeless insights into why some products satisfy customers while others frustrate them.  
-* **[💡🤖💰💥🏢📉 The Innovator's Dilemma: When New Technologies Cause Great Firms to Fail](/content/books/the-innovators-dilemma.md)** by Clayton M. Christensen: 🚀 While not about AI specifically, this influential book provides a foundational understanding of how disruptive innovation can transform industries, a relevant concept for the AI revolution in marketing.  
+* **[💺🚪💡🤔 The Design of Everyday Things](./the-design-of-everyday-things.md)** by Don Norman: 📖 A classic text that explains the principles of human-centered design, offering timeless insights into why some products satisfy customers while others frustrate them.  
+* **[💡🤖💰💥🏢📉 The Innovator's Dilemma: When New Technologies Cause Great Firms to Fail](./the-innovators-dilemma.md)** by Clayton M. Christensen: 🚀 While not about AI specifically, this influential book provides a foundational understanding of how disruptive innovation can transform industries, a relevant concept for the AI revolution in marketing.  
   
-## 💬 [Gemini](/content/software/gemini.md) Prompt (gemini-2.5-pro)  
+## 💬 [Gemini](../software/gemini.md) Prompt (gemini-2.5-pro)  
 > Write a markdown-formatted (start headings at level H2) book report, followed by a plethora of additional similar, contrasting, and creatively related book recommendations on AI for Marketing and Product Innovation: Powerful New Tools for Predicting Trends, Connecting with Customers, and Closing Sales. Never put book titles in quotes or italics. Be thorough in content discussed but concise and economical with your language. Structure the report with section headings and bulleted lists to avoid long blocks of text.

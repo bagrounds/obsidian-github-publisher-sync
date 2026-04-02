@@ -7,11 +7,11 @@ URL: https://bagrounds.org/articles/creatine-supplementation-in-depression-a-rev
 Author:
 tags:
 ---
-[Home](/content/index.md) > [Articles](/content/articles/index.md)  
+[Home](../index.md) > [Articles](./index.md)  
 # 💪🧠📉💊🔎 [Creatine Supplementation in Depression: A Review of Mechanisms, Efficacy, Clinical Outcomes, and Future Directions](https://pmc.ncbi.nlm.nih.gov/articles/PMC11567172)  
   
 ## 🤖 AI Summary  
-* [💪🏋️‍♂️ Creatine](/content/topics/creatine.md), traditionally recognized for boosting physical performance, has recently shown potential as an adjunctive therapy for treating depression 😔.  
+* [💪🏋️‍♂️ Creatine](../topics/creatine.md), traditionally recognized for boosting physical performance, has recently shown potential as an adjunctive therapy for treating depression 😔.  
 * 🧠 Creatine's ability to enhance brain energy metabolism and provide neuroprotection 🛡️ suggests it can alleviate mood disorders by improving mitochondrial function, increasing cellular resilience, and modulating neurotransmitter systems that regulate mood 😌.  
 * 🧪🔬 Both animal models and human trials indicate creatine's efficacy for the treatment of depression.  
 * 💊 Creatine supplementation reduces depressive symptoms, particularly when combined with selective serotonin reuptake inhibitors, and may improve brain energy metabolism and neuroplasticity 🌱.  
@@ -22,8 +22,8 @@ tags:
   
 ## 📚 Book Recommendations  
 * 🧠 **On Depression and Mental Health:**  
-    * 📖 [😊👍 Feeling Good: The New Mood Therapy](/content/books/feeling-good-the-new-mood-therapy.md) by David D. Burns (for cognitive behavioral therapy approaches to depression)  
-    * [☀️👿 The Noonday Demon: An Atlas of Depression](/content/books/the-noonday-demon-an-atlas-of-depression.md) by Andrew Solomon (a comprehensive look at depression)  
+    * 📖 [😊👍 Feeling Good: The New Mood Therapy](../books/feeling-good-the-new-mood-therapy.md) by David D. Burns (for cognitive behavioral therapy approaches to depression)  
+    * [☀️👿 The Noonday Demon: An Atlas of Depression](../books/the-noonday-demon-an-atlas-of-depression.md) by Andrew Solomon (a comprehensive look at depression)  
     * 📖 *Lost Connections: Why You’re Depressed and How to Find Hope* by Johann Hari (exploring societal causes of depression and anxiety)  
 * 🍎 **On Nutrition, Supplements, and Brain Health:**  
     * 📖 *Brain Food: The Surprising Science of Eating Smart* by Lisa Mosconi (focuses on the impact of diet on brain health)  

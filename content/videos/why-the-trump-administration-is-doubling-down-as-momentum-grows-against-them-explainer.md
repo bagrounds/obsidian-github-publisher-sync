@@ -10,7 +10,7 @@ Channel: Heather Cox Richardson
 tags:
 youtube: https://youtu.be/AKSU660ILJc
 ---
-[Home](/content/index.md) > [Videos](/content/videos/index.md) | [🏛️🇺🇸📖 Heather Cox Richardson](/content/people/heather-cox-richardson.md)  
+[Home](../index.md) > [Videos](./index.md) | [🏛️🇺🇸📖 Heather Cox Richardson](../people/heather-cox-richardson.md)  
 # 👴🚫📈 Why the Trump Administration Is Doubling Down as Momentum Grows Against Them | Explainer  
 ![Why the Trump Administration Is Doubling Down as Momentum Grows Against Them | Explainer](https://youtu.be/AKSU660ILJc)  
   
@@ -34,12 +34,12 @@ The video presents a critical perspective on the Trump administration's legal an
   
 ## 📚 Book Recommendations  
   
-- [👻🇺🇸⚔️🪽 The Soul of America: The Battle for Our Better Angels](/content/books/the-soul-of-america-the-battle-for-our-better-angels.md) by Jon Meacham explores American history and how it can inform modern political discourse. 🏛️  
+- [👻🇺🇸⚔️🪽 The Soul of America: The Battle for Our Better Angels](../books/the-soul-of-america-the-battle-for-our-better-angels.md) by Jon Meacham explores American history and how it can inform modern political discourse. 🏛️  
   
-- [🧑🏿⛓️🙈 The New Jim Crow: Mass Incarceration in the Age of Colorblindness](/content/books/the-new-jim-crow-mass-incarceration-in-the-age-of-colorblindness.md) by Michelle Alexander examines how the legal system perpetuates racial inequality, providing a different perspective on legal challenges and law enforcement. 🚓  
+- [🧑🏿⛓️🙈 The New Jim Crow: Mass Incarceration in the Age of Colorblindness](../books/the-new-jim-crow-mass-incarceration-in-the-age-of-colorblindness.md) by Michelle Alexander examines how the legal system perpetuates racial inequality, providing a different perspective on legal challenges and law enforcement. 🚓  
   
 - The Looming Tower by Lawrence Wright delves into the history of al-Qaeda and the events leading up to 9/11, offering a detailed look at government intelligence and its implications. 💥  
   
-- [🏷️🏚️💔🏰 The Price of Inequality: How Today's Divided Society Endangers Our Future](/content/books/the-price-of-inequality-how-todays-divided-society-endangers-our-future.md) by Joseph Stiglitz provides a contrasting economic perspective on the effects of tariffs and trade policies. 💰  
+- [🏷️🏚️💔🏰 The Price of Inequality: How Today's Divided Society Endangers Our Future](../books/the-price-of-inequality-how-todays-divided-society-endangers-our-future.md) by Joseph Stiglitz provides a contrasting economic perspective on the effects of tariffs and trade policies. 💰  
   
 - The Great Influenza by John M. Barry details the 1918 flu pandemic and the government's response, offering a historical perspective on public health crises. 🦠

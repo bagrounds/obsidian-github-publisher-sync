@@ -6,8 +6,11 @@ URL: https://bagrounds.org/books/the-end-of-policing
 share: true
 CTA: ⚖️ Rethink public safety.
 affiliate link: https://amzn.to/4nXMOtu
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_time: 2026-04-01T00:00:00Z
+force_analyze_links: false
 ---
-[Home](/content/index.md) > [Books](/content/books/index.md)  
+[Home](../index.md) > [Books](./index.md)  
 # 🛑👮 The End of Policing  
 [🛒 The End of Policing. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4nXMOtu)  
   
@@ -69,7 +72,7 @@ affiliate link: https://amzn.to/4nXMOtu
   
 ### 👍 Similar  
 * 📕 Are Prisons Obsolete? by Angela Y. Davis: Explores the history and function of the prison industrial complex, arguing for its abolition and imagining alternative justice systems.  
-* [🧑🏿⛓️🙈 The New Jim Crow: Mass Incarceration in the Age of Colorblindness](/content/books/the-new-jim-crow-mass-incarceration-in-the-age-of-colorblindness.md) by Michelle Alexander: Argues that the U.S. criminal justice system acts as a new caste system, disproportionately affecting Black Americans, perpetuating racial hierarchy through mass incarceration.  
+* [🧑🏿⛓️🙈 The New Jim Crow: Mass Incarceration in the Age of Colorblindness](./the-new-jim-crow-mass-incarceration-in-the-age-of-colorblindness.md) by Michelle Alexander: Argues that the U.S. criminal justice system acts as a new caste system, disproportionately affecting Black Americans, perpetuating racial hierarchy through mass incarceration.  
   
 ### 👎 Contrasting  
 * 📕 Arrested Justice: Black Women, Violence, and America's Prison Nation by Beth Richie: While critical of the carceral state, it emphasizes the specific vulnerability of marginalized women to violence and the complex issues around seeking justice, offering a nuanced perspective on interventions.  

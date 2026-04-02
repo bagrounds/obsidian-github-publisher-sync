@@ -8,7 +8,7 @@ affiliate link: https://amzn.to/450yhHJ
 tags:
   - gardening
 ---
-[Home](/content/index.md) > [Books](/content/books/index.md)  
+[Home](../index.md) > [Books](./index.md)  
 # 🪴🌱 RHS How to Garden When You're New to Gardening: The Basics for Absolute Beginners  
 [🛒 RHS How to Garden When You're New to Gardening: The Basics for Absolute Beginners. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/450yhHJ)  
   
@@ -48,10 +48,10 @@ tags:
 ## 📚 Further Reading Recommendations  
   
 ### 🌱 Similar Beginner Guides  
-* 📅 **[🗓️🌷 RHS Gardening Through the Year](/content/books/rhs-gardening-through-the-year.md) by Ian Spence:** 🗓️ A month-by-month guide, often paired with "How to Garden When You're New," focusing on seasonal tasks.  
+* 📅 **[🗓️🌷 RHS Gardening Through the Year](./rhs-gardening-through-the-year.md) by Ian Spence:** 🗓️ A month-by-month guide, often paired with "How to Garden When You're New," focusing on seasonal tasks.  
 * 🧑‍🌾 **The Old Farmer's Almanac Vegetable Gardener's Handbook:** 🍅 A popular choice focusing specifically on growing vegetables for beginners.  
 * 🌷 **Gardening for Everyone by Julia Watkins:** 📸 Praised for its beautiful photography and simple, practical information and projects.  
-* **[🌱🟩⬆️ Square Foot Gardening, 4th Edition: The World’s Most Popular Growing Method to Harvest MORE Food from Less Space](/content/books/square-foot-gardening-4th-edition-the-worlds-most-popular-growing-method-to-harvest-more-food-from-less-space.md) by Mel Bartholomew:** 📏 Focuses on a specific, space-saving method for vegetable gardening, great for beginners.  
+* **[🌱🟩⬆️ Square Foot Gardening, 4th Edition: The World’s Most Popular Growing Method to Harvest MORE Food from Less Space](./square-foot-gardening-4th-edition-the-worlds-most-popular-growing-method-to-harvest-more-food-from-less-space.md) by Mel Bartholomew:** 📏 Focuses on a specific, space-saving method for vegetable gardening, great for beginners.  
 * 🧱 **Raised-Bed Gardening for Beginners:** 🧑‍🔧 Guides readers specifically on creating and managing raised garden beds.  
 * 🪴 **RHS How to Garden New Edition by Guy Barter:** 🌼 Another RHS title offering a practical introduction, covering essentials from bulbs to borders.  
   
@@ -66,7 +66,7 @@ tags:
     * 🌱 **Seed to Seed by Suzanne Ashworth:** 🍅 Focuses specifically on seed saving techniques for vegetable gardeners.  
     * 🌶️ **Veggie Garden Remix by Niki Jabbour:** 🍆 Encourages experimenting with unusual vegetable varieties.  
 * 🌍 **Permaculture & Sustainable Gardening:**  
-    * 🏡 **[🌍🌿 Gaia's Garden: A Guide to Home-Scale Permaculture](/content/books/gaias-garden.md) by Toby Hemenway:** 🌿 Highly recommended introduction to permaculture principles for home gardens.  
+    * 🏡 **[🌍🌿 Gaia's Garden: A Guide to Home-Scale Permaculture](./gaias-garden.md) by Toby Hemenway:** 🌿 Highly recommended introduction to permaculture principles for home gardens.  
     * 🌳 **Permaculture: A Designers' Manual by Bill Mollison:** 🌳 The foundational, comprehensive (and dense) text on permaculture design.  
     * 🌱 **Practical Permaculture by Jessi Bloom and Dave Boehnlein:** 🌍 A broader, well-illustrated introduction to permaculture concepts.  
     * 🦋 **The Living Landscape by Rick Darke & Doug Tallamy:** 🐛 Focuses on designing for beauty and biodiversity.  
@@ -98,5 +98,5 @@ tags:
     * 🌱 **Plantology by Michael Perry:** 🔬 Explores the science and wonder of plants.  
     * 🌈 **Flower Color Guide by Darroch & Michael Putnam:** 💐 A visual reference for flower colour combinations.  
   
-## 💬 [Gemini](/content/software/gemini.md) Prompt (gemini-2.5-pro-exp-03-25)  
+## 💬 [Gemini](../software/gemini.md) Prompt (gemini-2.5-pro-exp-03-25)  
 > Write a markdown-formatted (start headings at level H2) book report, followed by a plethora of additional similar, contrasting, and creatively related book recommendations on RHS How to Garden When You're New to Gardening: The Basics For Beginners. Be thorough in content discussed but concise and economical with your language. Structure the report with section headings and bulleted lists to avoid long blocks of text.

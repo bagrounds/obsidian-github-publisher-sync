@@ -5,9 +5,9 @@ aliases:
 title: 👨‍👧‍👦👔🎁 Fathers Day
 URL: https://bagrounds.org/bot-chats/fathers-day
 ---
-[Home](/content/index.md) > [Bot Chats](/content/bot-chats/index.md)  
+[Home](../index.md) > [Bot Chats](./index.md)  
 # 👨‍👧‍👦👔🎁 Fathers Day  
-## 💬 [Gemini](/content/software/gemini.md) Prompt 1  
+## 💬 [Gemini](../software/gemini.md) Prompt 1  
 > 🗣️ Tell me about the history of Father's Day. And recommend some good books 📚 on the topic.  
   
 👨‍👧 Father's Day, as we know it in the United States 🇺🇸, has a rich and somewhat winding history. 🛤️ It wasn't as readily embraced 🤗 as Mother's Day, with some initial resistance 🙅‍♂️ and even skepticism 🤔, but it eventually became a national holiday. 🥳  
@@ -38,9 +38,9 @@ URL: https://bagrounds.org/bot-chats/fathers-day
   
 📜 While there aren't many widely known, dedicated historical tomes solely on the origins of Father's Day itself, you can find insights into the evolution of fatherhood and its societal recognition in broader historical works. Here are some recommendations that touch upon the history of fatherhood and, by extension, the cultural context that led to Father's Day:  
   
-- **[👨‍👧‍👦❤️💪 Fatherhood: A History of Love and Power](/content/books/fatherhood-a-history-of-love-and-power.md) by Augustine Sedgewick:** This recent publication (2025) offers a comprehensive look at the history of fatherhood across various cultures and time periods. It delves into the changing roles and perceptions of fathers, which provides a valuable backdrop for understanding the emergence of a day dedicated to them.  
+- **[👨‍👧‍👦❤️💪 Fatherhood: A History of Love and Power](../books/fatherhood-a-history-of-love-and-power.md) by Augustine Sedgewick:** This recent publication (2025) offers a comprehensive look at the history of fatherhood across various cultures and time periods. It delves into the changing roles and perceptions of fathers, which provides a valuable backdrop for understanding the emergence of a day dedicated to them.  
       
-- **[👨‍👦🇺🇸📜 American Fatherhood: A Cultural History](/content/books/american-fatherhood-a-cultural-history.md) by Lawrence R. Samuel:** This book explores the cultural history of fatherhood in America, which would certainly include discussions of how the concept of fatherhood evolved, leading to the eventual acceptance and celebration of Father's Day.  
+- **[👨‍👦🇺🇸📜 American Fatherhood: A Cultural History](../books/american-fatherhood-a-cultural-history.md) by Lawrence R. Samuel:** This book explores the cultural history of fatherhood in America, which would certainly include discussions of how the concept of fatherhood evolved, leading to the eventual acceptance and celebration of Father's Day.  
       
 - 🎉 **"Father's Day (Holidays, Festivals, & Celebrations)" by Ann Heinrichs:** While this might be a more concise or introductory book, it's specifically about Father's Day and could provide a good overview of its origins and traditions, especially if you're looking for something more direct and accessible.  
       

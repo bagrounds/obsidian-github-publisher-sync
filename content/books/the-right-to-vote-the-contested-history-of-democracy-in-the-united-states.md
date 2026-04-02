@@ -6,7 +6,7 @@ URL: https://bagrounds.org/books/the-right-to-vote-the-contested-history-of-demo
 share: true
 affiliate link: https://amzn.to/43np2Q9
 ---
-[Home](/content/index.md) > [Books](/content/books/index.md)  
+[Home](../index.md) > [Books](./index.md)  
 # 🗳️🇺🇸 The Right to Vote: The Contested History of Democracy in the United States  
 [🛒 The Right to Vote: The Contested History of Democracy in the United States. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/43np2Q9)  
   
@@ -73,13 +73,13 @@ affiliate link: https://amzn.to/43np2Q9
 ### ➕ Similar  
 * 🗳️ Give Us the Ballot: The Modern Struggle for Voting Rights in America by Ari Berman  
 * 🏛️ Fragile Democracy by Robert Korstad and James Leloudis  
-* [🧑🏿⛓️🙈 The New Jim Crow: Mass Incarceration in the Age of Colorblindness](/content/books/the-new-jim-crow-mass-incarceration-in-the-age-of-colorblindness.md) by Michelle Alexander  
+* [🧑🏿⛓️🙈 The New Jim Crow: Mass Incarceration in the Age of Colorblindness](./the-new-jim-crow-mass-incarceration-in-the-age-of-colorblindness.md) by Michelle Alexander  
   
 ### ➖ Contrasting  
-* [🗳️🕊️🇺🇸 Democracy in America](/content/books/democracy-in-america.md) by Alexis de Tocqueville (Provides an early 19th-century perspective on American democracy, before Keyssar's comprehensive historical contestation).  
+* [🗳️🕊️🇺🇸 Democracy in America](./democracy-in-america.md) by Alexis de Tocqueville (Provides an early 19th-century perspective on American democracy, before Keyssar's comprehensive historical contestation).  
   
 ### 🤝 Related  
-* [🗳️🏛️☠️ How Democracies Die](/content/books/how-democracies-die.md): What History Reveals About Our Future by Steven Levitsky and Daniel Ziblatt  
+* [🗳️🏛️☠️ How Democracies Die](./how-democracies-die.md): What History Reveals About Our Future by Steven Levitsky and Daniel Ziblatt  
 * 🏘️ The Color of Law: A Forgotten History of How Our Government Segregated America by Richard Rothstein  
 * 🚺 The Woman's Hour by Elaine Weiss (Focuses on the ratification of the 19th Amendment).  
 * ✊ On the Freedom Side by Wesley C. Hogan (Examines youth-led movements for democracy).  

@@ -10,7 +10,7 @@ Channel: Heather Cox Richardson
 tags:
 youtube: https://youtu.be/q3Tmk1r7qLA
 ---
-[Home](/content/index.md) > [Videos](/content/videos/index.md) | [🏛️🇺🇸📖 Heather Cox Richardson](/content/people/heather-cox-richardson.md)  
+[Home](../index.md) > [Videos](./index.md) | [🏛️🇺🇸📖 Heather Cox Richardson](../people/heather-cox-richardson.md)  
 # 🗣️🏛️📈 This Moment in Politics | Explainer  
 ![This Moment in Politics | Explainer](https://youtu.be/q3Tmk1r7qLA)  
   
@@ -48,13 +48,13 @@ youtube: https://youtu.be/q3Tmk1r7qLA
 ## 📚 Book Recommendations  
   
 ### ↔️ Similar  
-* [👑🚫📜2️⃣0️⃣ On Tyranny: Twenty Lessons from the Twentieth Century](/content/books/on-tyranny.md) by Timothy Snyder. 🛡️ This short book offers practical, historical advice for resisting authoritarianism, 💡 providing direct relevance to the video's closing warnings about the fragility of democratic institutions.  
+* [👑🚫📜2️⃣0️⃣ On Tyranny: Twenty Lessons from the Twentieth Century](../books/on-tyranny.md) by Timothy Snyder. 🛡️ This short book offers practical, historical advice for resisting authoritarianism, 💡 providing direct relevance to the video's closing warnings about the fragility of democratic institutions.  
 * 📖 *The Storm Is Here: America on the Brink* by Luke Mogelson. 🇺🇸 The book presents a contemporary, on-the-ground look at the political polarization and extremism described in the video, 🚨 focusing on the actions and psychology of the most extreme political wing.  
   
 ### 🆚 Contrasting  
-* [😇🧠 The Righteous Mind: Why Good People Are Divided by Politics and Religion](/content/books/the-righteous-mind.md) by Jonathan Haidt. 🤔 This work provides a deep dive into the psychological and moral foundations of political divides, 🧠 contrasting the video’s political focus with an explanation of why people hold opposing views.  
+* [😇🧠 The Righteous Mind: Why Good People Are Divided by Politics and Religion](../books/the-righteous-mind.md) by Jonathan Haidt. 🤔 This work provides a deep dive into the psychological and moral foundations of political divides, 🧠 contrasting the video’s political focus with an explanation of why people hold opposing views.  
 * 🏭 *Coming Apart: The State of White America, 1960–2010* by Charles Murray. 🏡 The book explores the class and cultural divergence in white America, 📉 offering a socio-economic explanation for the rise of populism 💡 that emphasizes changing community and familial structures rather than political manipulation alone.  
   
 ### 🎨 Creatively Related  
-* [🏭🫡 Manufacturing Consent: The Political Economy of the Mass Media](/content/books/manufacturing-consent.md) by Edward S. Herman and Noam Chomsky. 📣 This book analyzes how news filters, driven by corporate and government interests, shape media content, 💡 providing a creative counterpoint to the video's discussion of cable news incentives.  
+* [🏭🫡 Manufacturing Consent: The Political Economy of the Mass Media](../books/manufacturing-consent.md) by Edward S. Herman and Noam Chomsky. 📣 This book analyzes how news filters, driven by corporate and government interests, shape media content, 💡 providing a creative counterpoint to the video's discussion of cable news incentives.  
 * 📜 *The Half Has Never Been Told: Slavery and the Making of American Capitalism* by Edward E. Baptist. 💰 This historical work fundamentally reframes the origins of American economic power, 🔗 offering a deeper understanding of the economic roots of political history, connecting to the video’s theme of economic issues driving political crises.

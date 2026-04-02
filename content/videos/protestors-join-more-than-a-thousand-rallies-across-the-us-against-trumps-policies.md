@@ -9,7 +9,7 @@ Platform:
 Channel: PBS NewsHour
 tags:
 ---
-[Home](/content/index.md) > [Videos](/content/videos/index.md)  
+[Home](../index.md) > [Videos](./index.md)  
 # Protestors join more than a thousand rallies across the U.S. against Trump’s policies  
 ![Protestors join more than a thousand rallies across the U.S. against Trump’s policies](https://youtu.be/aDMLNPCYtwI)  
   

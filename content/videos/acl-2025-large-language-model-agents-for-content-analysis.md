@@ -10,7 +10,7 @@ Channel: Chengshuai Zhao
 tags:
 youtube: https://youtu.be/Fq7cutzHdOM
 ---
-[Home](/content/index.md) > [Videos](/content/videos/index.md)  
+[Home](../index.md) > [Videos](./index.md)  
 # 🤖📰🧐 [ACL 2025] Large Language Model Agents for Content Analysis  
 ![ACL 2025 Large Language Model Agents for Content Analysis](https://youtu.be/Fq7cutzHdOM)  
   
@@ -65,9 +65,9 @@ A: 🤝 The framework addresses subjectivity by simulating human-like processes:
 * 📘 The Content Analysis Guidebook by Kimberly A. Neuendorf: Details the systematic, traditional content analysis methodology that SCALE seeks to automate and scale.  
 * 📕 Agent-Based Modeling and Simulation by Jason M. O'Kane: Explores the technical and conceptual basis for designing autonomous, goal-directed agents to simulate complex systems.  
 * 📗 Principles of Qualitative Research: Designing a Qualitative Study by Juliet Corbin and Anselm Strauss: Focuses on **Grounded Theory** and the subjective nature of qualitative coding, which stands in conceptual contrast to the LLM-agent's quantitative, rule-based approach.  
-* [📊📉🏛️ Weapons of Math Destruction: How Big Data Increases Inequality and Threatens Democracy](/content/books/weapons-of-math-destruction-how-big-data-increases-inequality-and-threatens-democracy.md) by Cathy O'Neil: Critically examines how algorithmic systems can embed **bias**, providing a necessary ethical counterpoint to the video's focus on mitigating algorithmic bias.  
-* [🤔🐇🐢 Thinking, Fast and Slow](/content/books/thinking-fast-and-slow.md) by Daniel Kahneman: The dual-process model (**System 1** vs. **System 2**) parallels the SCALE process of rapid initial coding followed by slow, deliberative agent *discussion* to resolve conflict.  
-* [🔬🔄 The Structure of Scientific Revolutions](/content/books/the-structure-of-scientific-revolutions.md) by Thomas S. Kuhn: Discusses scientific progress through **paradigm evolution**, relating to the SCALE framework's dynamic feature of *codebook evolution* by the collaborating agents.  
+* [📊📉🏛️ Weapons of Math Destruction: How Big Data Increases Inequality and Threatens Democracy](../books/weapons-of-math-destruction-how-big-data-increases-inequality-and-threatens-democracy.md) by Cathy O'Neil: Critically examines how algorithmic systems can embed **bias**, providing a necessary ethical counterpoint to the video's focus on mitigating algorithmic bias.  
+* [🤔🐇🐢 Thinking, Fast and Slow](../books/thinking-fast-and-slow.md) by Daniel Kahneman: The dual-process model (**System 1** vs. **System 2**) parallels the SCALE process of rapid initial coding followed by slow, deliberative agent *discussion* to resolve conflict.  
+* [🔬🔄 The Structure of Scientific Revolutions](../books/the-structure-of-scientific-revolutions.md) by Thomas S. Kuhn: Discusses scientific progress through **paradigm evolution**, relating to the SCALE framework's dynamic feature of *codebook evolution* by the collaborating agents.  
   
 ## 🐦 Tweet  
 <blockquote class="twitter-tweet" data-theme="dark"><p lang="en" dir="ltr">🤖📰🧐 [ACL 2025] Large Language Model Agents for Content Analysis<br><br>🧑‍🔬 Research Method | 🗣️ Collaborative Discussions | 👨‍🏫 Human Intervention | 📈 Coding Accuracy | 🤖 Multi-agent Framework<a href="https://t.co/P9W3dPxN48">https://t.co/P9W3dPxN48</a></p>&mdash; Bryan Grounds (@bagrounds) <a href="https://twitter.com/bagrounds/status/1978622106712658118?ref_src=twsrc%5Etfw">October 16, 2025</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>

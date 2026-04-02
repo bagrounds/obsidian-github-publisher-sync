@@ -10,7 +10,7 @@ Channel: Pod Save America
 tags:
 youtube: https://youtu.be/JSDXB8L7WNM
 ---
-[Home](/content/index.md) > [Videos](/content/videos/index.md) | [🏛️🇺🇸📖 Heather Cox Richardson](/content/people/heather-cox-richardson.md)  
+[Home](../index.md) > [Videos](./index.md) | [🏛️🇺🇸📖 Heather Cox Richardson](../people/heather-cox-richardson.md)  
 # 🏛️🐘⬆️🙏 Heather Cox Richardson on Why She's Still Hopeful Under MAGA and Donald Trump  
 ![Heather Cox Richardson on Why She's Still Hopeful Under MAGA and Donald Trump](https://youtu.be/JSDXB8L7WNM)  
   
@@ -26,8 +26,8 @@ youtube: https://youtu.be/JSDXB8L7WNM
 📖 The perspective presented is that of historian Heather Cox Richardson, who interprets current American political events through the lens of historical parallels. A contrasting perspective might argue that contemporary issues are unique to the digital age and cannot be fully understood by looking at 19th-century or post-Civil War history. 🌎 Other viewpoints might also attribute the "MAGA movement" to economic factors, cultural shifts, or globalization rather than a continuous, multi-decade ideological effort. 💡 To gain a better understanding, it would be beneficial to explore the specific historical periods mentioned, such as the Reconstruction Era, the 1890s, and the 1930s, to better evaluate the validity and limitations of the historical parallels drawn. Further topics for exploration could include the impact of social media on modern political movements and a deeper dive into the economics and demographics of political polarization.  
   
 ## 📚 Book Recommendations  
-* [🇺🇲⚔️ How the South Won the Civil War: Oligarchy, Democracy, and the Continuing Fight for the Soul of America](/content/books/how-the-south-won-the-civil-war-oligarchy-democracy-and-the-continuing-fight-for-the-soul-of-america.md) by Heather Cox Richardson: For a more detailed look at the historical patterns mentioned in the interview.  
+* [🇺🇲⚔️ How the South Won the Civil War: Oligarchy, Democracy, and the Continuing Fight for the Soul of America](../books/how-the-south-won-the-civil-war-oligarchy-democracy-and-the-continuing-fight-for-the-soul-of-america.md) by Heather Cox Richardson: For a more detailed look at the historical patterns mentioned in the interview.  
 * 📖 The American Political Tradition by Richard Hofstadter: A classic work of American political history that offers a different, more cynical perspective on historical figures and movements.  
-* [🏭🫡 Manufacturing Consent: The Political Economy of the Mass Media](/content/books/manufacturing-consent.md) by Edward S. Herman and Noam Chomsky: A contrasting view on media's role, arguing that it serves corporate interests rather than being a tool for political expression.  
+* [🏭🫡 Manufacturing Consent: The Political Economy of the Mass Media](../books/manufacturing-consent.md) by Edward S. Herman and Noam Chomsky: A contrasting view on media's role, arguing that it serves corporate interests rather than being a tool for political expression.  
 * 📖 The Information Age by Manuel Castells: To explore the role of technology and media revolutions in society, a theme creatively related to the video's discussion of the 19th-century media model.  
-* [🧑🏿⛓️🙈 The New Jim Crow: Mass Incarceration in the Age of Colorblindness](/content/books/the-new-jim-crow-mass-incarceration-in-the-age-of-colorblindness.md) by Michelle Alexander: To gain a different perspective on the legacy of the post-Civil War era and its impact on modern society.
+* [🧑🏿⛓️🙈 The New Jim Crow: Mass Incarceration in the Age of Colorblindness](../books/the-new-jim-crow-mass-incarceration-in-the-age-of-colorblindness.md) by Michelle Alexander: To gain a different perspective on the legacy of the post-Civil War era and its impact on modern society.

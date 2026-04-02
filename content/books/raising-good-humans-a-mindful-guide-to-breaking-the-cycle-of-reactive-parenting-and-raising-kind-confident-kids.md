@@ -5,8 +5,11 @@ aliases:
 URL: https://bagrounds.org/books/raising-good-humans-a-mindful-guide-to-breaking-the-cycle-of-reactive-parenting-and-raising-kind-confident-kids
 share: true
 affiliate link: https://amzn.to/44f8QjL
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_time: 2026-04-02T00:00:00Z
+force_analyze_links: false
 ---
-[Home](/content/index.md) > [Books](/content/books/index.md)  
+[Home](../index.md) > [Books](./index.md)  
 # 🌱👼🏼 Raising Good Humans: A Mindful Guide to Breaking the Cycle of Reactive Parenting and Raising Kind, Confident Kids  
 [🛒 Raising Good Humans: A Mindful Guide to Breaking the Cycle of Reactive Parenting and Raising Kind, Confident Kids. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/44f8QjL)  
   
@@ -20,7 +23,7 @@ affiliate link: https://amzn.to/44f8QjL
   
 * 🧠 **Mindful Parenting:** At the core of the book is the practice of mindfulness, defined as the intentional ability to be present with kindness and curiosity. 🙏 The book teaches parents how to incorporate mindfulness into their daily lives to reduce stress and increase presence with their children.  
 * 💔 **Breaking the Cycle of Reactive Parenting:** The book helps parents identify and break negative generational patterns and ingrained reactions, such as yelling, that stem from their own childhood experiences. 🚫🗣️ It provides tools to interrupt these automatic reactions and respond more skillfully.  
-* 💖 **Inner Work and Self-Compassion:** A significant focus is placed on the parent's internal experience. 🧘‍♀️ Clarke-Fields argues that managing one's own emotions is crucial for helping children manage theirs. 🥰 The book encourages self-compassion, acknowledging that mistakes are part of being human and promoting a "good-enough" parenting approach over perfectionism. 😌 Parents are encouraged to be kind to themselves and manage their stress.  
+* 💖 **Inner Work and [💗 Self-Compassion](./self-compassion.md):** A significant focus is placed on the parent's internal experience. 🧘‍♀️ Clarke-Fields argues that managing one's own emotions is crucial for helping children manage theirs. 🥰 The book encourages self-compassion, acknowledging that mistakes are part of being human and promoting a "good-enough" parenting approach over perfectionism. 😌 Parents are encouraged to be kind to themselves and manage their stress.  
 * 🗣️ **Skillful Communication and Connection:** The book provides strategies for fostering respectful communication, reflective listening, and effective conflict resolution. 🤝 Building a strong connection with children through presence, empathy, and understanding is highlighted as a key to cooperation.  
 * 🎭 **Modeling Behavior:** Clarke-Fields emphasizes that children learn more from observing their parents' actions than from instructions. 🌟 By modeling calmness, kindness, and self-regulation, parents teach these crucial skills to their children.  
 * 🛠️ **Practical Application:** The book includes practical exercises and tools in each chapter to help parents apply the concepts learned in their everyday interactions with their children.  
@@ -38,10 +41,10 @@ affiliate link: https://amzn.to/44f8QjL
 ### 👨‍👩‍👧‍👦 Similar Books (Mindful and Conscious Parenting)  
   
 * ☮️ **Peaceful Parent, Happy Kids: How to Stop Yelling and Start Connecting** by Dr. Laura Markham: Focuses on connecting with your child, coaching instead of controlling, and the importance of emotion coaching.  
-* **[🕳️🧠👶🏽 The Whole-Brain Child: 12 Revolutionary Strategies to Nurture Your Child's Developing Mind](/content/books/the-whole-brain-child.md)** by Daniel J. Siegel and Tina Payne Bryson: Explores the neuroscience behind children's behavior and provides strategies for fostering healthy emotional and intellectual development.  
-* **[🚫🎭🧠 No-Drama Discipline: The Whole-Brain Way to Calm the Chaos and Nurture Your Child's Developing Mind](/content/books/no-drama-discipline.md)** by Daniel J. Siegel and Tina Payne Bryson: Offers a compassionate and effective approach to discipline that focuses on connection and teaching.  
+* **[🕳️🧠👶🏽 The Whole-Brain Child: 12 Revolutionary Strategies to Nurture Your Child's Developing Mind](./the-whole-brain-child.md)** by Daniel J. Siegel and Tina Payne Bryson: Explores the neuroscience behind children's behavior and provides strategies for fostering healthy emotional and intellectual development.  
+* **[🚫🎭🧠 No-Drama Discipline: The Whole-Brain Way to Calm the Chaos and Nurture Your Child's Developing Mind](./no-drama-discipline.md)** by Daniel J. Siegel and Tina Payne Bryson: Offers a compassionate and effective approach to discipline that focuses on connection and teaching.  
 * ➕ **Positive Discipline** by Jane Nelsen: Introduces a non-punitive approach to discipline that emphasizes mutual respect and problem-solving.  
-* **[🤱🏼🤿🪞🌱 Parenting from the Inside Out: How a Deeper Self-Understanding Can Help You Raise Children Who Thrive](/content/books/parenting-from-the-inside-out-how-a-deeper-self-understanding-can-help-you-raise-children-who-thrive.md)** by Daniel J. Siegel and Mary Hartzell: Delves into how a parent's own upbringing and experiences impact their parenting style.  
+* **[🤱🏼🤿🪞🌱 Parenting from the Inside Out: How a Deeper Self-Understanding Can Help You Raise Children Who Thrive](./parenting-from-the-inside-out-how-a-deeper-self-understanding-can-help-you-raise-children-who-thrive.md)** by Daniel J. Siegel and Mary Hartzell: Delves into how a parent's own upbringing and experiences impact their parenting style.  
 * 🧘‍♀️ **The Awakened Family: How to Live with Ease, Joy, and Presence** by Dr. Shefali Tsabary: Advocates for conscious parenting, urging parents to let go of ego and connect with their children authentically.  
   
 ### 🆚 Contrasting Books (Perhaps More Traditional or Behaviorally Focused)  
@@ -52,15 +55,15 @@ affiliate link: https://amzn.to/44f8QjL
   
 ### ✨ Creatively Related Books (Mindfulness, Emotional Intelligence, Child Development from Different Angles)  
   
-* **[👣➡️🌍 Wherever You Go, There You Are](/content/books/wherever-you-go-there-you-are.md): Mindfulness Meditation in Everyday Life** by Jon Kabat-Zinn: A foundational book on mindfulness practices for general well-being.  
-* **[❤️🧠📈🤔 Emotional Intelligence: Why It Can Matter More Than IQ](/content/books/emotional-intelligence.md)** by Daniel Goleman: Explores the importance of understanding and managing one's own emotions and recognizing emotions in others.  
-* **[🕊️🤝 Nonviolent Communication: A Language of Life](/content/books/nonviolent-communication.md)** by Marshall B. Rosenberg: Introduces a framework for compassionate communication focused on needs and feelings.  
+* **[👣➡️🌍 Wherever You Go, There You Are](./wherever-you-go-there-you-are.md): Mindfulness Meditation in Everyday Life** by Jon Kabat-Zinn: A foundational book on mindfulness practices for general well-being.  
+* **[❤️🧠📈🤔 Emotional Intelligence: Why It Can Matter More Than IQ](./emotional-intelligence.md)** by Daniel Goleman: Explores the importance of understanding and managing one's own emotions and recognizing emotions in others.  
+* **[🕊️🤝 Nonviolent Communication: A Language of Life](./nonviolent-communication.md)** by Marshall B. Rosenberg: Introduces a framework for compassionate communication focused on needs and feelings.  
 * 🧬 **Epigenetics: How Environment Shapes Our Genes** by Nessa Carey: While not a parenting book, it offers a scientific perspective on how experiences and environment can impact genetic expression, highlighting the long-term impact of a child's environment.  
 * 🫂 **Hold On to Your Kids: Why Parents Need to Matter More Than Peers** by Gordon Neufeld and Gabor Maté: Discusses the importance of parental attachment and influence in a world where peer orientation is increasingly prevalent.  
 * 💖 **Self-Compassion: The Proven Power of Being Kind to Yourself** by Kristin Neff: Delves into the research and practice of self-compassion as a way to build emotional resilience.  
-* **[🌱🧘🏼‍♀️🏆 Mindset: The New Psychology of Success](/content/books/mindset.md)** by Carol S. Dweck: Explores the power of a growth mindset and how it can influence learning and resilience in both children and adults.  
+* **[🌱🧘🏼‍♀️🏆 Mindset: The New Psychology of Success](./mindset.md)** by Carol S. Dweck: Explores the power of a growth mindset and how it can influence learning and resilience in both children and adults.  
   
-## 💬 [Gemini](/content/software/gemini.md) Prompt (gemini-2.5-flash-preview-04-17)  
+## 💬 [Gemini](../software/gemini.md) Prompt (gemini-2.5-flash-preview-04-17)  
 > Write a markdown-formatted (start headings at level H2) book report, followed by a plethora of additional similar, contrasting, and creatively related book recommendations on Raising Good Humans: A Mindful Guide to Breaking the Cycle of Reactive Parenting and Raising Kind, Confident Kids. Be thorough in content discussed but concise and economical with your language. Structure the report with section headings and bulleted lists to avoid long blocks of text.  
   
 ## 🐦 Tweet  

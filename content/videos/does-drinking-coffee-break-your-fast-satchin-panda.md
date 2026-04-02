@@ -9,7 +9,7 @@ Platform:
 Channel: FoundMyFitness Clips
 tags:
 ---
-[Home](/content/index.md) > [Videos](/content/videos/index.md)  
+[Home](../index.md) > [Videos](./index.md)  
 # ☕⛓️‍💥🚄❓ Does drinking coffee break your fast? | Satchin Panda  
 ![Does drinking coffee break your fast? | Satchin Panda](https://youtu.be/a_3H876jWmI)  
   
@@ -24,7 +24,7 @@ tags:
 * ☕ *If you drink coffee* outside your 🍽️ *eating window*, opt for 🖤 *black coffee* to avoid ⚡ *triggering an insulin response*.  
   
 ## 📚 Book Recommendations  
-* **[😴💭 Why We Sleep: Unlocking the Power of Sleep and Dreams](/content/books/why-we-sleep-unlocking-the-power-of-sleep-and-dreams.md) by Matthew Walker** - Explores the science of sleep, its impact on health, and how to improve sleep quality.  
+* **[😴💭 Why We Sleep: Unlocking the Power of Sleep and Dreams](../books/why-we-sleep-unlocking-the-power-of-sleep-and-dreams.md) by Matthew Walker** - Explores the science of sleep, its impact on health, and how to improve sleep quality.  
 * **"Fast. Feast. Repeat.: The Comprehensive Guide to Delay, Don't Deny Intermittent Fasting--Including More Than 100 Recipes" by Gin Stephens** - Provides a comprehensive guide to intermittent fasting, including its benefits and how to implement it effectively.  
-* **[🌄⏳ The Circadian Code: Lose Weight, Supercharge Your Energy, and Transform Your Health from Morning to Midnight](/content/books/the-circadian-code.md) by Satchin Panda** - Explains how to align your lifestyle with your body's natural rhythms to optimize health and well-being.  
+* **[🌄⏳ The Circadian Code: Lose Weight, Supercharge Your Energy, and Transform Your Health from Morning to Midnight](../books/the-circadian-code.md) by Satchin Panda** - Explains how to align your lifestyle with your body's natural rhythms to optimize health and well-being.  
 * **"Gut: The Inside Story of Our Body's Most Underrated Organ" by Giulia Enders** - Explores the fascinating world of the gut microbiome and its impact on overall health.

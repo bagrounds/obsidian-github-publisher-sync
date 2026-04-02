@@ -6,8 +6,11 @@ URL: https://bagrounds.org/books/recovering-from-emotionally-immature-parents-pr
 share: true
 CTA: 💪 Reclaim your autonomy.
 affiliate link: https://amzn.to/3YgJKyl
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_time: 2026-04-02T00:00:00Z
+force_analyze_links: false
 ---
-[Home](/content/index.md) > [Books](/content/books/index.md)  
+[Home](../index.md) > [Books](./index.md)  
 # ❤️‍🩹👶🚫🌱 Recovering from Emotionally Immature Parents: Practical Tools to Establish Boundaries & Reclaim Your Emotional Autonomy  
 [🛒 Recovering from Emotionally Immature Parents: Practical Tools to Establish Boundaries & Reclaim Your Emotional Autonomy. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3YgJKyl)  
   
@@ -67,15 +70,15 @@ affiliate link: https://amzn.to/3YgJKyl
   
 ## 📚 Book Recommendations  
 ### 📖 Similar  
-* [🧑‍🧒💔🩹 Adult Children of Emotionally Immature Parents: How to Heal from Distant, Rejecting, or Self-Involved Parents](/content/books/adult-children-of-emotionally-immature-parents-how-to-heal-from-distant-rejecting-or-self-involved-parents.md) by Lindsay C. Gibson  
+* [🧑‍🧒💔🩹 Adult Children of Emotionally Immature Parents: How to Heal from Distant, Rejecting, or Self-Involved Parents](./adult-children-of-emotionally-immature-parents-how-to-heal-from-distant-rejecting-or-self-involved-parents.md) by Lindsay C. Gibson  
 * 🔋 Running on Empty: Overcome Your Childhood Emotional Neglect by Jonice Webb  
 * 🧘‍♀️ Set Boundaries, Find Peace by Nedra Glover Tawwab  
 ### 🔄 Contrasting  
 * 🎭 The Drama of the Gifted Child by Alice Miller  
-* [👩🏼‍❤️‍💋‍👨🏻🔗 Attached: The New Science of Adult Attachment and How It Can Help You Find - and Keep - Love](/content/books/attached-the-new-science-of-adult-attachment-and-how-it-can-help-you-find-and-keep-love.md) by Amir Levine and Rachel Heller  
+* [👩🏼‍❤️‍💋‍👨🏻🔗 Attached: The New Science of Adult Attachment and How It Can Help You Find - and Keep - Love](./attached-the-new-science-of-adult-attachment-and-how-it-can-help-you-find-and-keep-love.md) by Amir Levine and Rachel Heller  
 ### ➕ Related  
 * 🚫 Boundaries: When to Say Yes, How to Say No to Take Control of Your Life by Henry Cloud and John Townsend  
-* [🤕🎼🧠 The Body Keeps the Score: Brain, Mind, and Body in the Healing of Trauma](/content/books/the-body-keeps-the-score-brain-mind-and-body-in-the-healing-of-trauma.md) by Bessel van der Kolk  
+* [🤕🎼🧠 The Body Keeps the Score: Brain, Mind, and Body in the Healing of Trauma](./the-body-keeps-the-score-brain-mind-and-body-in-the-healing-of-trauma.md) by Bessel van der Kolk  
 * 🤝 Codependent No More: How to Stop Controlling Others and Start Caring for Yourself by Melody Beattie  
 * 🧬 It Didn't Start with You: How Inherited Family Trauma Shapes Who We Are and How to End the Cycle by Mark Wolynn  
   

@@ -9,7 +9,7 @@ tags:
 affiliate link: https://amzn.to/45DF6Px
 updated: 2026-03-14T06:40:07.839Z
 ---
-[Home](/content/index.md) > [Books](/content/books/index.md)  
+[Home](../index.md) > [Books](./index.md)  
 # 🧱✅🐛 Foundations of Software Testing  
 [🛒 Foundations of Software Testing. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/45DF6Px)  
   
@@ -63,13 +63,13 @@ This book offers a surprisingly rigorous, mathematically inclined perspective on
   
 #### 📚 Additional Book Recommendations  
 * **Best Alternate Book (Same Topic):** "Software Testing" by Ron Patton. This book is more accessible for practitioners and provides a broader overview of testing practices. 📖  
-* **Best Tangentially Related Book:** [🧑‍💻📈 The Pragmatic Programmer: Your Journey to Mastery](/content/books/the-pragmatic-programmer-your-journey-to-mastery.md) by Andrew Hunt and David Thomas. This book offers practical advice on software development, including testing principles. 🧑‍💻  
+* **Best Tangentially Related Book:** [🧑‍💻📈 The Pragmatic Programmer: Your Journey to Mastery](./the-pragmatic-programmer-your-journey-to-mastery.md) by Andrew Hunt and David Thomas. This book offers practical advice on software development, including testing principles. 🧑‍💻  
 * **Best Diametrically Opposed Book:** "Release It!: Design and Deploy Production-Ready Software" by Michael T. Nygard. This book focuses on the practical aspects of deploying and maintaining software in production, with less emphasis on formal testing methods. 🚀  
 * **Best Fiction Book (Related Ideas):** "The Cuckoo's Egg" by Clifford Stoll. This book is a real-life story about tracking down a computer hacker, demonstrating the importance of security testing and anomaly detection. 🕵️  
 * **Best More General Book:** "Software Engineering" by Ian Sommerville. This textbook covers the entire software development lifecycle, including testing as a component. 🏗️  
 * **Best More Specific Book:** "Effective Unit Testing" by Lasse Koskela. This book dives deep into the specific techniques and best practices for unit testing. 🧪  
-* **Best More Rigorous Book:** "[Model Checking](/content/books/model-checking.md)" by Christel Baier and Joost-Pieter Katoen. This book provides a much deeper dive into formal methods and model checking, a very rigorous method of software verification. 💻  
-* **Best More Accessible Book:** "[How Google Tests Software](/content/books/how-google-tests-software.md)" by James A. Whittaker, Jason Arbon, and Jeff Carollo. This book explains Google's testing practices in a very readable and practical way. 🔍  
+* **Best More Rigorous Book:** "[Model Checking](./model-checking.md)" by Christel Baier and Joost-Pieter Katoen. This book provides a much deeper dive into formal methods and model checking, a very rigorous method of software verification. 💻  
+* **Best More Accessible Book:** "[How Google Tests Software](./how-google-tests-software.md)" by James A. Whittaker, Jason Arbon, and Jeff Carollo. This book explains Google's testing practices in a very readable and practical way. 🔍  
   
 ## 💬 [Gemini](https://gemini.google.com) Prompt  
 > Summarize the book: Foundations of Software Testing by Aditya P. Mathur. Start with a TL;DR - a single statement that conveys a maximum of the useful information provided in the book. Next, explain how this book may offer a new or surprising perspective. Follow this with a deep dive. Catalogue the topics, methods, and research discussed. Be sure to highlight any significant theories, theses, or mental models proposed. Summarize prominent examples discussed. Emphasize practical takeaways, including detailed, specific, concrete, step-by-step advice, guidance, or techniques discussed. Provide a critical analysis of the quality of the information presented, using scientific backing, author credentials, authoritative reviews, and other markers of high quality information as justification. Make the following additional book recommendations: the best alternate book on the same topic; the best book that is tangentially related; the best book that is diametrically opposed; the best fiction book that incorporates related ideas; the best book that is more general or more specific; and the best book that is more rigorous or more accessible than this book. Format your response as markdown, starting at heading level H3, with inline links, for easy copy paste. Use meaningful emojis generously (at least one per heading, bullet point, and paragraph) to enhance readability. Do not include broken links or links to commercial sites.  

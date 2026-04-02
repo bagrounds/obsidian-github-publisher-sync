@@ -7,7 +7,7 @@ share: true
 CTA: ⚙️ Master complex systems.
 affiliate link: https://amzn.to/4pigwKS
 ---
-[Home](/content/index.md) > [Books](/content/books/index.md) | [⏭️ 💸🎨 The Great Mental Models, Volume 4: Economics and Art](/content/books/the-great-mental-models-volume-4-economics-and-art.md)  
+[Home](../index.md) > [Books](./index.md) | [⏭️ 💸🎨 The Great Mental Models, Volume 4: Economics and Art](./the-great-mental-models-volume-4-economics-and-art.md)  
 # ⚙️🔢 The Great Mental Models, Volume 3: Systems and Mathematics  
 [🛒 The Great Mental Models, Volume 3: Systems and Mathematics. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4pigwKS)  
   
@@ -75,18 +75,18 @@ affiliate link: https://amzn.to/4pigwKS
 ## 📚 Book Recommendations  
   
 ### 🧑‍🤝‍🧑 Similar  
-* [🌐🔗🧠📖 Thinking in Systems: A Primer](/content/books/thinking-in-systems.md) by Donella H. Meadows  
-* [🧠📊 The Model Thinker: What You Need to Know to Make Data Work for You](/content/books/the-model-thinker-what-you-need-to-know-to-make-data-work-for-you.md) by Scott E. Page  
+* [🌐🔗🧠📖 Thinking in Systems: A Primer](./thinking-in-systems.md) by Donella H. Meadows  
+* [🧠📊 The Model Thinker: What You Need to Know to Make Data Work for You](./the-model-thinker-what-you-need-to-know-to-make-data-work-for-you.md) by Scott E. Page  
 * 📘 Poor Charlie's Almanack by Charlie Munger (collection of his thoughts on mental models)  
   
 ### 🆚 Contrasting  
 * 📘 The Drunkard's Walk: How Randomness Rules Our Lives by Leonard Mlodinow (focuses more on the unpredictable nature of randomness)  
-* [👉🤏 Nudge: Improving Decisions about Health, Wealth, and Happiness](/content/books/nudge.md) by Richard H. Thaler and Cass R. Sunstein (behavioral economics approach to decision-making)  
+* [👉🤏 Nudge: Improving Decisions about Health, Wealth, and Happiness](./nudge.md) by Richard H. Thaler and Cass R. Sunstein (behavioral economics approach to decision-making)  
   
 ### ➕ Related  
-* [🤔🐇🐢 Thinking, Fast and Slow](/content/books/thinking-fast-and-slow.md) by Daniel Kahneman (explores cognitive biases and decision-making systems)  
-* [🤔💻🧠 Algorithms to Live By: The Computer Science of Human Decisions](/content/books/algorithms-to-live-by.md) by Brian Christian and Tom Griffiths (mathematical algorithms applied to everyday problems)  
-* [🌐🧭❓🔍🗺️ Complexity: A Guided Tour](/content/books/complexity.md) by Melanie Mitchell (introduces concepts of complex adaptive systems)  
+* [🤔🐇🐢 Thinking, Fast and Slow](./thinking-fast-and-slow.md) by Daniel Kahneman (explores cognitive biases and decision-making systems)  
+* [🤔💻🧠 Algorithms to Live By: The Computer Science of Human Decisions](./algorithms-to-live-by.md) by Brian Christian and Tom Griffiths (mathematical algorithms applied to everyday problems)  
+* [🌐🧭❓🔍🗺️ Complexity: A Guided Tour](./complexity.md) by Melanie Mitchell (introduces concepts of complex adaptive systems)  
   
 ## 🫵 What Do You Think?  
 🤔 Which mental model do you find most impactful in your daily life, and why? 💬 Share your favorite application or a mental model you believe should have been included!

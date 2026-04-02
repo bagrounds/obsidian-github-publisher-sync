@@ -6,8 +6,11 @@ URL: https://bagrounds.org/books/born-to-run-a-hidden-tribe-superathletes-and-th
 share: true
 affiliate link: https://amzn.to/41R4BdG
 CTA: 👣 Discover endurance.
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_time: 2026-04-02T00:00:00Z
+force_analyze_links: false
 ---
-[Home](/content/index.md) > [Books](/content/books/index.md)  
+[Home](../index.md) > [Books](./index.md)  
 # 🏃‍♂️⛰️ Born to Run: A Hidden Tribe, Superathletes, and the Greatest Race the World Has Never Seen  
 [🛒 Born to Run: A Hidden Tribe, Superathletes, and the Greatest Race the World Has Never Seen. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/41R4BdG)  
   
@@ -50,9 +53,9 @@ CTA: 👣 Discover endurance.
   
 ### 🎨 Creatively Related Books  
   
-* **[🌌 Cosmos](/content/books/cosmos.md)** by Carl Sagan: This seminal work connects humanity to the vastness of the universe, our evolutionary past, and the sense of wonder in discovery. ✨ It resonates with the primal connection to nature and the profound feeling of being part of something larger, a sentiment often described by runners pushing their limits, similar to the spiritual dimensions of running explored in Born to Run.  
+* **[🌌 Cosmos](./cosmos.md)** by Carl Sagan: This seminal work connects humanity to the vastness of the universe, our evolutionary past, and the sense of wonder in discovery. ✨ It resonates with the primal connection to nature and the profound feeling of being part of something larger, a sentiment often described by runners pushing their limits, similar to the spiritual dimensions of running explored in Born to Run.  
 * 🏡 **Walden** by Henry David Thoreau: A classic exploration of living simply and self-sufficiently in nature 🌲, deliberately detaching from societal conventions to find deeper meaning. 🤔 This echoes McDougall's quest for an authentic, uncomplicated running experience and the Tarahumara's lifestyle, which questions the complexities and perceived necessities of modern life.  
-* **[✨🧙‍♂️⚗️ The Alchemist](/content/books/the-alchemist.md)** by Paulo Coelho: This allegorical novel tells the story of a young shepherd boy who journeys to find his "personal legend," encountering challenges and wisdom along the way. 💫 It metaphorically relates to the transformative personal quests undertaken by ultrarunners and McDougall himself, emphasizing intuition, perseverance, and the discovery of profound truths through an arduous journey.  
+* **[✨🧙‍♂️⚗️ The Alchemist](./the-alchemist.md)** by Paulo Coelho: This allegorical novel tells the story of a young shepherd boy who journeys to find his "personal legend," encountering challenges and wisdom along the way. 💫 It metaphorically relates to the transformative personal quests undertaken by ultrarunners and McDougall himself, emphasizing intuition, perseverance, and the discovery of profound truths through an arduous journey.  
   
 ## 💬 [Gemini](https://gemini.google.com) Prompt (gemini-2.5-flash)  
 > Write a markdown-formatted (start headings at level H2) book report, followed by similar, contrasting, and creatively related book recommendations on Born to Run: A Hidden Tribe, Superathletes, and the Greatest Race the World Has Never Seen. Never quote or italicize titles. Be thorough but concise. Use section headings and bulleted lists to avoid long blocks of text.

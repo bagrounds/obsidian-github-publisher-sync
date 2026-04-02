@@ -6,7 +6,7 @@ URL: https://bagrounds.org/books/hidden-potential-the-science-of-achieving-great
 share: true
 affiliate link: https://amzn.to/4kQ8hn9
 ---
-[Home](/content/index.md) > [Books](/content/books/index.md)  
+[Home](../index.md) > [Books](./index.md)  
 # 🙈⚡🔬🌌 Hidden Potential: The Science of Achieving Greater Things  
 [🛒 Hidden Potential: The Science of Achieving Greater Things. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4kQ8hn9)  
   
@@ -36,8 +36,8 @@ affiliate link: https://amzn.to/4kQ8hn9
 ## 📚 Book Recommendations  
   
 ### 📖 Similar Reads (Focus on Potential & Growth)  
-* 🧠 **[Mindset](/content/books/mindset.md): The New Psychology of Success** by Carol S. Dweck: Explores the foundational concept of fixed versus growth mindsets, a core theme echoed in *Hidden Potential*. Dweck's work details how believing abilities can be developed (growth mindset) is crucial for success.  
-* **[❤️‍🔥💪 Grit: The Power of Passion and Perseverance](/content/books/grit-the-power-of-passion-and-perseverance.md)** by Angela Duckworth: Focuses on passion ❤️ and perseverance as key ingredients for long-term achievement, aligning with Grant's emphasis on character skills like determination.  
+* 🧠 **[Mindset](./mindset.md): The New Psychology of Success** by Carol S. Dweck: Explores the foundational concept of fixed versus growth mindsets, a core theme echoed in *Hidden Potential*. Dweck's work details how believing abilities can be developed (growth mindset) is crucial for success.  
+* **[❤️‍🔥💪 Grit: The Power of Passion and Perseverance](./grit-the-power-of-passion-and-perseverance.md)** by Angela Duckworth: Focuses on passion ❤️ and perseverance as key ingredients for long-term achievement, aligning with Grant's emphasis on character skills like determination.  
 * 🤔 **Think Again: The Power of Knowing What You Don't Know** by Adam Grant: Grant's previous bestseller encourages intellectual humility and the willingness to rethink assumptions, complementing *Hidden Potential*'s themes of learning and adaptability.  
 * 🚀 **Originals: How Non-Conformists Move the World** by Adam Grant: Explores how individuals champion novel ideas, linking to the themes of overcoming conformity and finding unique paths to success discussed in *Hidden Potential*.  
 * 📈 **Outliers: The Story of Success** by Malcolm Gladwell: While sometimes seen as focusing on circumstance, *Outliers* examines the factors (including opportunity and practice) that contribute to high achievement, offering a different lens on potential and success.  
@@ -48,13 +48,13 @@ affiliate link: https://amzn.to/4kQ8hn9
 * 🏛️ *(While not a specific book, consider sociological texts on inequality):* Books exploring structural barriers related to class, race, gender, etc., provide a critical perspective on the "systems of opportunity" Grant discusses, highlighting how potential is often constrained by societal structures beyond individual control.  
   
 ### 🎨 Creatively Related (Broader Connections)  
-* **[⚛️🔄 Atomic Habits](/content/books/atomic-habits.md): An Easy & Proven Way to Build Good Habits & Break Bad Ones** by James Clear: Offers practical strategies for building the small, consistent habits that underpin the skill development and perseverance Grant advocates.  
-* 🧘‍♀️ **[Flow: The Psychology of Optimal Experience](/content/books/flow-the-psychology-of-optimal-experience.md)** by Mihaly Csikszentmihalyi: Explores the state of "flow," connecting to Grant's idea of finding joy in the process ("deliberate play") as a motivational structure.  
-* 🎯 **[Drive: The Surprising Truth About What Motivates Us](/content/books/drive-the-surprising-truth-about-what-motivates-us.md)** by Daniel H. Pink: Examines the science of motivation, focusing on autonomy, mastery, and purpose – elements relevant to sustaining the effort needed to unlock potential.  
-* **[🎨⚔️ The Art of War](/content/books/the-art-of-war.md)** by Sun Tzu: Though ancient and focused on strategy, its principles can be creatively applied to overcoming obstacles and navigating challenges, akin to building "structures for motivation".  
-* 📊 **[Factfulness](/content/books/factfulness.md): Ten Reasons We're Wrong About the World – and Why Things Are Better Than You Think** by Hans Rosling, Ola Rosling, Anna Rosling Rönnlund: Encourages a data-driven, realistic worldview, which can help in accurately assessing progress and potential, avoiding common biases Grant implicitly addresses.  
-* 🗣️ **Books on Specific Skills Mentioned:** e.g., *[How To Win Friends And Influence People](/content/books/how-to-win-friends-and-influence-people.md)* by Dale Carnegie for interpersonal skills, or books on specific learning techniques.  
+* **[⚛️🔄 Atomic Habits](./atomic-habits.md): An Easy & Proven Way to Build Good Habits & Break Bad Ones** by James Clear: Offers practical strategies for building the small, consistent habits that underpin the skill development and perseverance Grant advocates.  
+* 🧘‍♀️ **[Flow: The Psychology of Optimal Experience](./flow-the-psychology-of-optimal-experience.md)** by Mihaly Csikszentmihalyi: Explores the state of "flow," connecting to Grant's idea of finding joy in the process ("deliberate play") as a motivational structure.  
+* 🎯 **[Drive: The Surprising Truth About What Motivates Us](./drive-the-surprising-truth-about-what-motivates-us.md)** by Daniel H. Pink: Examines the science of motivation, focusing on autonomy, mastery, and purpose – elements relevant to sustaining the effort needed to unlock potential.  
+* **[🎨⚔️ The Art of War](./the-art-of-war.md)** by Sun Tzu: Though ancient and focused on strategy, its principles can be creatively applied to overcoming obstacles and navigating challenges, akin to building "structures for motivation".  
+* 📊 **[Factfulness](./factfulness.md): Ten Reasons We're Wrong About the World – and Why Things Are Better Than You Think** by Hans Rosling, Ola Rosling, Anna Rosling Rönnlund: Encourages a data-driven, realistic worldview, which can help in accurately assessing progress and potential, avoiding common biases Grant implicitly addresses.  
+* 🗣️ **Books on Specific Skills Mentioned:** e.g., *[How To Win Friends And Influence People](./how-to-win-friends-and-influence-people.md)* by Dale Carnegie for interpersonal skills, or books on specific learning techniques.  
 * 🔄 **Master of Change** by Brad Stulberg: Focuses on navigating change and uncertainty with "rugged flexibility," complementing Grant's ideas on resilience and adapting through discomfort.  
   
-## 💬 [Gemini](/content/software/gemini.md) Prompt (gemini-2.5-pro-exp-03-25)  
+## 💬 [Gemini](../software/gemini.md) Prompt (gemini-2.5-pro-exp-03-25)  
 > Write a markdown-formatted (start headings at level H2) book report, followed by a plethora of additional similar, contrasting, and creatively related book recommendations on Hidden Potential: The Science of Achieving Greater Things. Be thorough in content discussed but concise and economical with your language. Structure the report with section headings and bulleted lists to avoid long blocks of text.

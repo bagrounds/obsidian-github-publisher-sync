@@ -10,7 +10,7 @@ Channel: MM Azizi
 tags:
 youtube: https://youtu.be/G4u_pr9Ty2U
 ---
-[Home](/content/index.md) > [Videos](/content/videos/index.md)  
+[Home](../index.md) > [Videos](./index.md)  
 # 🆕🧱🗣️ A New Theory of Compositionality  
 ![A New Theory of Compositionality](https://youtu.be/G4u_pr9Ty2U)  
   
@@ -31,7 +31,7 @@ youtube: https://youtu.be/G4u_pr9Ty2U
 * 🧩 The video’s core assertion, that compositionality is a key explanatory property of human intelligence permitting infinite expressive capacity from finite experience, is a traditional viewpoint acknowledged across philosophy and cognitive science, as confirmed by the Stanford Encyclopedia of Philosophy.  
 * 📜 The video correctly identifies the fundamental flaw in the traditional definition: that despite strong intuition, there is no formal, measurable, and mathematical definition, a point also made in the paper A Complexity-Based Theory of Compositionality on arXiv.  
 * ⚙️ The proposed solution, using algorithmic information theory and Kolmogorov complexity to create a quantitative metric, is supported by literature showing its relevance in measuring algorithmic efficiency, risk of overfitting, and data randomness in AI, as discussed in Kolmogorov Complexity in AI: A Guide for Investors by Alphanome.ai.  
-* 🆚 Contrasting views exist regarding AI implementation: influential arguments held that neural networks (NNs) could not generalize compositionally, relying instead on statistical regularities, as noted in the paper [🧠🗣️💻 From Frege to ChatGPT: Compositionality in Language, Cognition, and Deep Neural Networks](/content/articles/from-frege-to-chatgpt-compositionality-in-language-cognition-and-deep-neural-networks.md) on arXiv.  
+* 🆚 Contrasting views exist regarding AI implementation: influential arguments held that neural networks (NNs) could not generalize compositionally, relying instead on statistical regularities, as noted in the paper [🧠🗣️💻 From Frege to ChatGPT: Compositionality in Language, Cognition, and Deep Neural Networks](../articles/from-frege-to-chatgpt-compositionality-in-language-cognition-and-deep-neural-networks.md) on arXiv.  
 * 🧠 Further contrasting perspectives challenge the human-centric compositionality claim itself: some scholars propose that human language processing is not purely compositional, but uses an asyntactic processing stream, or alternates between compositional and noncompositional strategies, explaining productivity via analogical inferences rather than formal rules, according to Constructions and Compositionality published by Cambridge University Press.  
 * 💡 Topics for further exploration include how the new metric handles non-compositional linguistic elements like metaphors and idioms in real-world data, and its direct application to improving the generalization capability of large language models.  
   
@@ -49,7 +49,7 @@ youtube: https://youtu.be/G4u_pr9Ty2U
 ## 📚 Book Recommendations  
   
 ### ↔️ Similar  
-* [🗣️🧠 The Language Instinct: How the Mind Creates Language](/content/books/the-language-instinct-how-the-mind-creates-language.md) by Steven Pinker: Explores the evolutionary and biological basis for language, aligning with the idea of a universal, elegant system of finite means generating infinite use.  
+* [🗣️🧠 The Language Instinct: How the Mind Creates Language](../books/the-language-instinct-how-the-mind-creates-language.md) by Steven Pinker: Explores the evolutionary and biological basis for language, aligning with the idea of a universal, elegant system of finite means generating infinite use.  
 * 🧠 The Computational Theory of Mind by Jerry Fodor: Argues for a classical symbolic architecture of the mind, where concepts and mental representations are inherently compositional and systematic, supporting the cognitive science foundation of the video's topic.  
   
 ### 🆚 Contrasting  
@@ -57,5 +57,5 @@ youtube: https://youtu.be/G4u_pr9Ty2U
 * 🤔 The Structure of Language: An Introduction to the Philosophy of Language by Stephen Schiffer: Examines the philosophical debates and potential counterarguments to compositionality, especially concerning context-dependence and ambiguities that challenge the simple 'sum of parts' notion.  
   
 ### 🎨 Creatively Related  
-* [❓➡️💡 The Book of Why: The New Science of Cause and Effect](/content/books/the-book-of-why.md) by Judeaa Pearl: Addresses the challenge of building AI that moves beyond statistical correlation to causal reasoning, tying into the video's goal of designing AI that can generalize and handle new, novel situations.  
+* [❓➡️💡 The Book of Why: The New Science of Cause and Effect](../books/the-book-of-why.md) by Judeaa Pearl: Addresses the challenge of building AI that moves beyond statistical correlation to causal reasoning, tying into the video's goal of designing AI that can generalize and handle new, novel situations.  
 * 📜 Compression: A Metaphor for Thought by David Lowenthal: Focuses on compression and information efficiency as a fundamental mechanism for human thought and creativity, paralleling the video's use of Kolmogorov complexity to define intelligence.

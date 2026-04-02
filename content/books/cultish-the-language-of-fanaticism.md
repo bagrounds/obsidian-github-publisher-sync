@@ -7,7 +7,7 @@ share: true
 affiliate link: https://amzn.to/3UXkpI9
 CTA: 🗣️ Decode devotion.
 ---
-[Home](/content/index.md) > [Books](/content/books/index.md)  
+[Home](../index.md) > [Books](./index.md)  
 # ✝️🗣️ Cultish: The Language of Fanaticism  
 [🛒 Cultish: The Language of Fanaticism. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3UXkpI9)  
   
@@ -46,7 +46,7 @@ CTA: 🗣️ Decode devotion.
   
 ### ➖ Contrasting Books  
   
-* [😈🌍🔬🕯️🌑 The Demon-Haunted World: Science as a Candle in the Dark](/content/books/the-demon-haunted-world.md) by Carl Sagan: This 📖 book champions 🔬 scientific skepticism and 🤔 critical thinking, offering a stark contrast to the uncritical acceptance and blind faith often seen in 😈 cultish groups. It emphasizes the importance of evidence-based reasoning against pseudoscience and irrationality.  
+* [😈🌍🔬🕯️🌑 The Demon-Haunted World: Science as a Candle in the Dark](./the-demon-haunted-world.md) by Carl Sagan: This 📖 book champions 🔬 scientific skepticism and 🤔 critical thinking, offering a stark contrast to the uncritical acceptance and blind faith often seen in 😈 cultish groups. It emphasizes the importance of evidence-based reasoning against pseudoscience and irrationality.  
   
 ### 🎨 Creatively Related Books  
   
@@ -56,5 +56,5 @@ CTA: 🗣️ Decode devotion.
 * 👑 How Fascism Works: The Politics of Us and Them by Jason Stanley: This 📖 book defines fascism, in part, through the lens of a "cult of the leader" promising national restoration, directly linking the concept of 😈 fanaticism to broader political ideologies.  
 * ✍ Still, It Rains (Manhwa): This ongoing South Korean graphic novel (manhwa) explores the themes of 😈 cults, 😇 devotion, and exploitation through a journalist working undercover in a "Heaven's Harvest Sect," offering a fictionalized but dark and gripping portrayal of similar concepts.  
   
-## 💬 [Gemini](/content/software/gemini.md) Prompt (gemini-2.5-flash)  
+## 💬 [Gemini](../software/gemini.md) Prompt (gemini-2.5-flash)  
 > Write a markdown-formatted (start headings at level H2) book report, followed by similar, contrasting, and creatively related book recommendations on Cultish: The Language of Fanaticism. Never put book titles in quotes or italics. Be thorough in content discussed but concise and economical with your language. Structure the report with section headings and bulleted lists to avoid long blocks of text.

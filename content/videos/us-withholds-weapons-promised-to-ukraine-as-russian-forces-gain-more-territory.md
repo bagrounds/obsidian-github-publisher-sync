@@ -10,7 +10,7 @@ Channel: PBS NewsHour
 tags:
 youtube: https://youtu.be/d4aLV8sKvZM
 ---
-[Home](/content/index.md) > [Videos](/content/videos/index.md)  
+[Home](../index.md) > [Videos](./index.md)  
 # 🇺🇸🚫➡️🇺🇦⚔️🇷🇺 U.S. withholds weapons promised to Ukraine as Russian forces gain more territory  
 ![U.S. withholds weapons promised to Ukraine as Russian forces gain more territory](https://youtu.be/d4aLV8sKvZM)  
   
@@ -26,7 +26,7 @@ youtube: https://youtu.be/d4aLV8sKvZM
 🗺️ **U.S. Foreign Policy, Geopolitics, and Great Power Competition:**  
 - ♟️ **_The Grand Chessboard: American Primacy and Its Geostrategic Imperatives_** by Zbigniew Brzezinski: A classic text on 🇺🇸 U.S. foreign policy and its strategic interests in Eurasia.  
   
-- **[🤝🌍 Diplomacy](/content/books/diplomacy.md)** by Henry Kissinger: Provides a historical overview of diplomacy and foreign policy from a realist perspective.  
+- **[🤝🌍 Diplomacy](../books/diplomacy.md)** by Henry Kissinger: Provides a historical overview of diplomacy and foreign policy from a realist perspective.  
   
 - 🇺🇸 **_America's Great-Power Opportunity: Revitalizing U.S. Foreign Policy to Meet the Challenges of Strategic Competition_** by Ali Wyne: This book analyzes the concept of great-power competition, particularly with 🇨🇳 China and 🇷🇺 Russia, and argues for a focus on American self-renewal.  
   
@@ -50,7 +50,7 @@ youtube: https://youtu.be/d4aLV8sKvZM
 ⚔️ **Military Strategy and Defense Readiness:**  
 - 📜 **_On War_** by Carl von Clausewitz: A foundational text in military theory, exploring the nature of war, its political objectives, and its conduct.  
   
-- [🎨⚔️ The Art of War](/content/books/the-art-of-war.md) by Sun Tzu: An ancient Chinese treatise on military strategy that remains influential today.  
+- [🎨⚔️ The Art of War](../books/the-art-of-war.md) by Sun Tzu: An ancient Chinese treatise on military strategy that remains influential today.  
   
 - 🧠 **_Strategy: A History_** by Lawrence Freedman: A comprehensive exploration of the concept of strategy across various fields, including military and political.  
   

@@ -7,7 +7,7 @@ share: true
 affiliate link: https://amzn.to/4oWwhHf
 CTA: 🗣️ Master connection.
 ---
-[Home](/content/index.md) > [Books](/content/books/index.md)  
+[Home](../index.md) > [Books](./index.md)  
 # 🧑‍🤝‍🧑🗣️ The Social Skills Guidebook: Manage Shyness, Improve Your Conversations, and Make Friends, Without Giving Up Who You Are  
 [🛒 The Social Skills Guidebook: Manage Shyness, Improve Your Conversations, and Make Friends, Without Giving Up Who You Are. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4oWwhHf)  
   
@@ -72,7 +72,7 @@ CTA: 🗣️ Master connection.
 ## 📚 Book Recommendations  
   
 ### 👍 Similar  
-* [🫂🤝🗣️ How To Win Friends And Influence People](/content/books/how-to-win-friends-and-influence-people.md) by Dale Carnegie: Classic guide on likability and influence through genuine interest.  
+* [🫂🤝🗣️ How To Win Friends And Influence People](./how-to-win-friends-and-influence-people.md) by Dale Carnegie: Classic guide on likability and influence through genuine interest.  
 * ✨ The Charisma Myth: How Anyone Can Master the Art and Science of Personal Magnetism by Olivia Fox Cabane: Breaks down charisma into learnable skills.  
 * 🌱 Improve Your Social Skills by Daniel Wendler: Practical, ground-up approach to social development.  
   
@@ -82,8 +82,8 @@ CTA: 🗣️ Master connection.
   
 ### ➕ Related  
 * 🗣️ What Every Body Is Saying: An Ex-FBI Agent's Guide to Speed-Reading People by Joe Navarro: Focuses on nonverbal communication and body language interpretation.  
-* [❤️🧠📈🤔 Emotional Intelligence: Why It Can Matter More Than IQ](/content/books/emotional-intelligence.md) by Daniel Goleman: Defines and explores emotional intelligence, a foundational aspect of social skills.  
-* [🧰💬 Crucial Conversations: Tools for Talking When Stakes Are High](/content/books/crucial-conversations-tools-for-talking-when-stakes-are-high.md) by Kerry Patterson: Provides strategies for navigating difficult and high-impact discussions.  
+* [❤️🧠📈🤔 Emotional Intelligence: Why It Can Matter More Than IQ](./emotional-intelligence.md) by Daniel Goleman: Defines and explores emotional intelligence, a foundational aspect of social skills.  
+* [🧰💬 Crucial Conversations: Tools for Talking When Stakes Are High](./crucial-conversations-tools-for-talking-when-stakes-are-high.md) by Kerry Patterson: Provides strategies for navigating difficult and high-impact discussions.  
   
 ## 🫵 What Do You Think?  
   

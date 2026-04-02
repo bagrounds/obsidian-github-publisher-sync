@@ -10,7 +10,7 @@ Channel: Daniel Pink
 tags:
 youtube: https://youtu.be/TEQL2ZRDRVM
 ---
-[Home](/content/index.md) > [Videos](/content/videos/index.md)  
+[Home](../index.md) > [Videos](./index.md)  
 # ❓🧭🗺️💡 How To Find Your Life's Purpose  
 ![How To Find Your Life's Purpose](https://youtu.be/TEQL2ZRDRVM)  
   
@@ -33,8 +33,8 @@ The 🎬 video 🔚 concludes by 🗣️ encouraging viewers to 🎯 pick ☝️
 This 🎬 video offers a 🔄 refreshing perspective on 🔍 finding one's 🗺️ purpose by moving ↔️ beyond the often-vague concept of "💖 passion." It provides 💡 actionable questions that encourage  introspective 💭 thought and a 💡 shift from self-focus to 🤝 contribution. While the 🎬 video primarily focuses on 👤 individual self-discovery, a  richer 📚 understanding could be gained by exploring the 🤝 societal and 🌍 cultural influences on 🗺️ purpose, as well as the 🔄 iterative nature of 🗺️ purpose discovery throughout 🧬 life stages.  
   
 ## 📚 Book Recommendations  
-* [🌊🧘🏼‍♀️🧠📈 Flow: The Psychology of Optimal Experience](/content/books/flow-the-psychology-of-optimal-experience.md) by Mihaly Csikszentmihalyi: Explores the concept of "flow" discussed in the video, providing a deeper understanding of this state of complete absorption and its connection to happiness and purpose.  
-* [❓🎯 Start with Why: How Great Leaders Inspire Everyone to Take Action](/content/books/start-with-why-how-great-leaders-inspire-everyone-to-take-action.md) by Simon Sinek: While focused on leadership, this book's core message about understanding one's fundamental "why" resonates with the video's emphasis on purpose and intrinsic motivation.  
-* [✨🧙‍♂️⚗️ The Alchemist](/content/books/the-alchemist.md) by Paulo Coelho: A fictional allegorical novel about a shepherd boy who journeys to find his "Personal Legend," offering a more spiritual and narrative perspective on discovering one's purpose.  
-* [🔦💡 Man's Search for Meaning](/content/books/mans-search-for-meaning.md) by Viktor Frankl: A profound book that details Frankl's experiences in concentration camps and his theory of logotherapy, which posits that the primary motivational force of an individual is to find a meaning in life. This offers a contrasting, more existential view of purpose.  
-* [🏗️😊🗺️✨ Designing Your Life: How to Build a Well-Lived, Joyful Life](/content/books/designing-your-life.md) by Bill Burnett and Dave Evans: This book applies design thinking principles to life planning, providing practical exercises and frameworks for exploring different life paths and discovering what truly works for you, aligning with the video's actionable approach.
+* [🌊🧘🏼‍♀️🧠📈 Flow: The Psychology of Optimal Experience](../books/flow-the-psychology-of-optimal-experience.md) by Mihaly Csikszentmihalyi: Explores the concept of "flow" discussed in the video, providing a deeper understanding of this state of complete absorption and its connection to happiness and purpose.  
+* [❓🎯 Start with Why: How Great Leaders Inspire Everyone to Take Action](../books/start-with-why-how-great-leaders-inspire-everyone-to-take-action.md) by Simon Sinek: While focused on leadership, this book's core message about understanding one's fundamental "why" resonates with the video's emphasis on purpose and intrinsic motivation.  
+* [✨🧙‍♂️⚗️ The Alchemist](../books/the-alchemist.md) by Paulo Coelho: A fictional allegorical novel about a shepherd boy who journeys to find his "Personal Legend," offering a more spiritual and narrative perspective on discovering one's purpose.  
+* [🔦💡 Man's Search for Meaning](../books/mans-search-for-meaning.md) by Viktor Frankl: A profound book that details Frankl's experiences in concentration camps and his theory of logotherapy, which posits that the primary motivational force of an individual is to find a meaning in life. This offers a contrasting, more existential view of purpose.  
+* [🏗️😊🗺️✨ Designing Your Life: How to Build a Well-Lived, Joyful Life](../books/designing-your-life.md) by Bill Burnett and Dave Evans: This book applies design thinking principles to life planning, providing practical exercises and frameworks for exploring different life paths and discovering what truly works for you, aligning with the video's actionable approach.

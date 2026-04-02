@@ -9,7 +9,7 @@ Platform:
 Channel: PBS NewsHour
 tags:
 ---
-[Home](/content/index.md) > [Videos](/content/videos/index.md)  
+[Home](../index.md) > [Videos](./index.md)  
 # NPR and PBS heads face sharp questioning about federal funding during House hearing  
 ![NPR and PBS heads face sharp questioning about federal funding during House hearing](https://youtu.be/Hidsx0Lx4us)  
   

@@ -6,7 +6,7 @@ URL: https://bagrounds.org/books/time-restricted-eating-a-look-into-the-lifestyl
 share: true
 affiliate link: https://amzn.to/4jxa8fy
 ---
-[Home](/content/index.md) > [Books](/content/books/index.md)  
+[Home](../index.md) > [Books](./index.md)  
 # ⏱️🍎 Time Restricted Eating: A Look into the Lifestyle  
 [🛒 Time Restricted Eating: A Look into the Lifestyle. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4jxa8fy)  
   
@@ -50,7 +50,7 @@ affiliate link: https://amzn.to/4jxa8fy
   
 * 📖 **"The Obesity Code" by Dr. Jason Fung:** 👨‍⚕️ While covering broader intermittent fasting (IF) strategies beyond just TRE, it delves deep into the hormonal theory of obesity, particularly insulin's role, providing a strong scientific rationale for fasting.  
 * 📖 **"Fast. Feast. Repeat." by Gin Stephens:** 🙋‍♀️ A highly practical and accessible guide to various IF lifestyles, including TRE. Offers troubleshooting tips, success stories, and emphasizes a gradual, sustainable approach.  
-* **[🌄⏳ The Circadian Code: Lose Weight, Supercharge Your Energy, and Transform Your Health from Morning to Midnight](/content/books/the-circadian-code.md) by Dr. Satchin Panda:** 👨‍🔬 Focuses heavily on the science of circadian rhythms and how timing of light, sleep, *and* food intake impacts health. Provides scientific backing for TRE principles from a leading researcher in the field.  
+* **[🌄⏳ The Circadian Code: Lose Weight, Supercharge Your Energy, and Transform Your Health from Morning to Midnight](./the-circadian-code.md) by Dr. Satchin Panda:** 👨‍🔬 Focuses heavily on the science of circadian rhythms and how timing of light, sleep, *and* food intake impacts health. Provides scientific backing for TRE principles from a leading researcher in the field.  
 * 📖 **"Delay, Don't Deny" by Gin Stephens:** 🙋‍♀️ Another practical guide focusing on intermittent fasting, particularly emphasizing the mindset and flexibility needed for long-term success.  
 * 📖 **"Life in the Fasting Lane" by Dr. Jason Fung, Eve Mayer, and Megan Ramos:** 👨‍⚕️ Combines scientific explanations with practical advice and patient experiences regarding various fasting protocols.  
   
@@ -64,12 +64,12 @@ affiliate link: https://amzn.to/4jxa8fy
   
 ### 🎨 Creatively Related (Broader Health & Lifestyle Themes)  
   
-* **[😴💭 Why We Sleep: Unlocking the Power of Sleep and Dreams](/content/books/why-we-sleep-unlocking-the-power-of-sleep-and-dreams.md) by Dr. Matthew Walker:** 😴 Explores the critical importance of sleep, which is deeply intertwined with circadian rhythms and overall metabolic health – a crucial companion topic to TRE.  
-* **[⚛️🔄 Atomic Habits: An Easy & Proven Way to Build Good Habits & Break Bad Ones](/content/books/atomic-habits.md) by James Clear:** While not about diet specifically, this book offers powerful strategies for building small, consistent habits, essential for integrating any lifestyle change like TRE sustainably.  
+* **[😴💭 Why We Sleep: Unlocking the Power of Sleep and Dreams](./why-we-sleep-unlocking-the-power-of-sleep-and-dreams.md) by Dr. Matthew Walker:** 😴 Explores the critical importance of sleep, which is deeply intertwined with circadian rhythms and overall metabolic health – a crucial companion topic to TRE.  
+* **[⚛️🔄 Atomic Habits: An Easy & Proven Way to Build Good Habits & Break Bad Ones](./atomic-habits.md) by James Clear:** While not about diet specifically, this book offers powerful strategies for building small, consistent habits, essential for integrating any lifestyle change like TRE sustainably.  
 * 📖 **"Gut: The Inside Story of Our Body's Most Underrated Organ" by Giulia Enders:** 🫄 A fascinating look at the digestive system and gut microbiome, relevant to understanding how fasting periods might impact digestive health.  
-* **[⏳🙅 Lifespan: Why We Age - and Why We Don't Have To](/content/books/lifespan-why-we-age-and-why-we-dont-have-to.md) by Dr. David A. Sinclair:** 🧬 Discusses the science of aging and longevity, including research on fasting and caloric restriction mimetics as potential interventions.  
-* 📖 **[Spark: The Revolutionary New Science of Exercise and the Brain](/content/books/spark-the-revolutionary-new-science-of-exercise-and-the-brain.md) by Dr. John J. Ratey:** 🧠 Explores the profound impact of physical activity on brain health and cognitive function, another key pillar of a healthy lifestyle often synergistic with dietary changes.  
-* **[🫁🌬️ Breath: The New Science of a Lost Art](/content/books/breath-the-new-science-of-a-lost-art.md) by James Nestor:** 🌬️ Examines the importance of proper breathing techniques for overall health, stress management, and physiological balance – a foundational aspect of well-being.  
+* **[⏳🙅 Lifespan: Why We Age - and Why We Don't Have To](./lifespan-why-we-age-and-why-we-dont-have-to.md) by Dr. David A. Sinclair:** 🧬 Discusses the science of aging and longevity, including research on fasting and caloric restriction mimetics as potential interventions.  
+* 📖 **[Spark: The Revolutionary New Science of Exercise and the Brain](./spark-the-revolutionary-new-science-of-exercise-and-the-brain.md) by Dr. John J. Ratey:** 🧠 Explores the profound impact of physical activity on brain health and cognitive function, another key pillar of a healthy lifestyle often synergistic with dietary changes.  
+* **[🫁🌬️ Breath: The New Science of a Lost Art](./breath-the-new-science-of-a-lost-art.md) by James Nestor:** 🌬️ Examines the importance of proper breathing techniques for overall health, stress management, and physiological balance – a foundational aspect of well-being.  
   
-## 💬 [Gemini](/content/software/gemini.md) Prompt (gemini-2.5-pro-exp-03-25)  
+## 💬 [Gemini](../software/gemini.md) Prompt (gemini-2.5-pro-exp-03-25)  
 > Write a markdown-formatted (start headings at level H2) book report, followed by a plethora of additional similar, contrasting, and creatively related book recommendations on Time Restricted Eating: A Look into the Lifestyle. Be thorough in content discussed but concise and economical with your language. Structure the report with section headings and bulleted lists to avoid long blocks of text.

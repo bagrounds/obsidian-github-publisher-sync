@@ -5,7 +5,7 @@ aliases:
 title: 🧪🔬 Code Testing and Validation
 URL: https://bagrounds.org/topics/code-testing-and-validation
 ---
-[Home](/content/index.md) > [Topics](/content/topics/index.md) > [Knowledge](/content/topics/a-hierarchical-view-of-human-knowledge.md) > [Engineering](/content/topics/engineering.md) > [Software Engineering](/content/topics/software-engineering.md) > [Software Development and Coding](/content/topics/software-development-and-coding.md)  
+[Home](../index.md) > [Topics](./index.md) > [Knowledge](./a-hierarchical-view-of-human-knowledge.md) > [Engineering](./engineering.md) > [Software Engineering](./software-engineering.md) > [Software Development and Coding](./software-development-and-coding.md)  
 # 🧪🔬 Code Testing and Validation  
 ## 🤖 AI Summary  
 **High-Level Summary:**  

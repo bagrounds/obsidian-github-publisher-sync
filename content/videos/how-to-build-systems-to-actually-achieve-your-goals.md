@@ -10,7 +10,7 @@ Channel: Justin Sung
 tags:
 youtube: https://youtu.be/fXyRprdoEoE
 ---
-[Home](/content/index.md) > [Videos](/content/videos/index.md) | [🧠👨‍🎓📈 Justin Sung](/content/people/justin-sung.md)  
+[Home](../index.md) > [Videos](./index.md) | [🧠👨‍🎓📈 Justin Sung](../people/justin-sung.md)  
 # 🎯🪜🏗️✅ How to Build Systems to Actually Achieve Your Goals  
 ![How to Build Systems to Actually Achieve Your Goals](https://youtu.be/fXyRprdoEoE)  
   
@@ -29,8 +29,8 @@ By following these principles, your plans become clearer and more specific, adap
 The video offers a practical and actionable approach to goal achievement by shifting focus from individual effort to systemic design. This contrasts with perspectives that heavily emphasize self-discipline and motivation as primary drivers. To gain a richer understanding, one could explore the psychological underpinnings of habit formation, the role of environmental design in behavior change, and advanced concepts in systems thinking beyond personal goal setting, such as in organizational development or complex problem-solving.  
   
 ## 📚 Book Recommendations  
-* [🌐🔗🧠📖 Thinking in Systems: A Primer](/content/books/thinking-in-systems.md) by Donella H. Meadows: A foundational text for understanding systems thinking, providing a comprehensive overview of how systems work and how to influence them.  
-* [⚛️🔄 Atomic Habits: An Easy & Proven Way to Build Good Habits & Break Bad Ones](/content/books/atomic-habits.md) by James Clear: This book provides a practical framework for building good habits and breaking bad ones by focusing on small, incremental changes and system design, aligning perfectly with the video's principles.  
-* [🔄🧠💪 The Power of Habit: Why We Do What We Do in Life and Business](/content/books/the-power-of-habit.md) by Charles Duhigg: Explores the science behind habit formation and offers insights into how habits can be changed, providing a deeper understanding of the "build for repeatability" principle.  
+* [🌐🔗🧠📖 Thinking in Systems: A Primer](../books/thinking-in-systems.md) by Donella H. Meadows: A foundational text for understanding systems thinking, providing a comprehensive overview of how systems work and how to influence them.  
+* [⚛️🔄 Atomic Habits: An Easy & Proven Way to Build Good Habits & Break Bad Ones](../books/atomic-habits.md) by James Clear: This book provides a practical framework for building good habits and breaking bad ones by focusing on small, incremental changes and system design, aligning perfectly with the video's principles.  
+* [🔄🧠💪 The Power of Habit: Why We Do What We Do in Life and Business](../books/the-power-of-habit.md) by Charles Duhigg: Explores the science behind habit formation and offers insights into how habits can be changed, providing a deeper understanding of the "build for repeatability" principle.  
 * ⛰️ *The Obstacle Is the Way* by Ryan Holiday: This book, based on Stoic philosophy, teaches readers how to turn challenges and obstacles into opportunities for growth, complementing the video's emphasis on anticipating and adapting to failures.  
-* [🤏♻️ Tiny Habits: The Small Changes That Change Everything](/content/books/tiny-habits.md) by BJ Fogg: Offers a simple, neuroscience-backed method for creating lasting behavior change by starting with extremely small actions, reinforcing the idea of minimizing friction and building for repeatability.
+* [🤏♻️ Tiny Habits: The Small Changes That Change Everything](../books/tiny-habits.md) by BJ Fogg: Offers a simple, neuroscience-backed method for creating lasting behavior change by starting with extremely small actions, reinforcing the idea of minimizing friction and building for repeatability.

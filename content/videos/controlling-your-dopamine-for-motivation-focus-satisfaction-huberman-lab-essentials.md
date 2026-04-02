@@ -10,7 +10,7 @@ Channel: Andrew Huberman
 tags:
 youtube: https://youtu.be/XeN6eGO6FVQ
 ---
-[Home](/content/index.md) > [Videos](/content/videos/index.md) | [🧠🫀👀🔬 Andrew Huberman](/content/people/andrew-huberman.md)  
+[Home](../index.md) > [Videos](./index.md) | [🧠🫀👀🔬 Andrew Huberman](../people/andrew-huberman.md)  
 # 🧠🎯🏆😌 Controlling Your Dopamine for Motivation, Focus & Satisfaction | Huberman Lab Essentials  
 ![Controlling Your Dopamine for Motivation, Focus & Satisfaction | Huberman Lab Essentials](https://youtu.be/XeN6eGO6FVQ)  
   
@@ -89,15 +89,15 @@ youtube: https://youtu.be/XeN6eGO6FVQ
   
 ### Similar 💡  
   
-- **[🔄🧠💪 The Power of Habit: Why We Do What We Do in Life and Business](/content/books/the-power-of-habit.md)** by Charles Duhigg: Discusses how **cue-routine-reward loops** drive behavior, offering a complementary psychological view on controlling the seeking and reinforcement pathway described in the video.  
-- **[🏎️⛽ Drive: The Surprising Truth About What Motivates Us](/content/books/drive-the-surprising-truth-about-what-motivates-us.md)** by Daniel H. Pink: Explores the science of **intrinsic motivation** (autonomy, mastery, purpose), reinforcing the video's core message about rewarding the *effort* (the intrinsic drive) rather than the *outcome* (the extrinsic reward).  
+- **[🔄🧠💪 The Power of Habit: Why We Do What We Do in Life and Business](../books/the-power-of-habit.md)** by Charles Duhigg: Discusses how **cue-routine-reward loops** drive behavior, offering a complementary psychological view on controlling the seeking and reinforcement pathway described in the video.  
+- **[🏎️⛽ Drive: The Surprising Truth About What Motivates Us](../books/drive-the-surprising-truth-about-what-motivates-us.md)** by Daniel H. Pink: Explores the science of **intrinsic motivation** (autonomy, mastery, purpose), reinforcing the video's core message about rewarding the *effort* (the intrinsic drive) rather than the *outcome* (the extrinsic reward).  
   
 ### Contrasting ⚖️  
   
-- **[🔦💡 Man's Search for Meaning](/content/books/mans-search-for-meaning.md)** by Viktor Frankl: Presents motivation and the will to live as fundamentally about finding **meaning** in suffering, offering a powerful spiritual/existential counterpoint to the purely chemical, mechanistic view of drive.  
-- **[⚛️🔄 Atomic Habits: An Easy & Proven Way to Build Good Habits & Break Bad Ones](/content/books/atomic-habits.md)** by James Clear: Provides a systematic, **environment-design approach** to habit formation that is less focused on the internal neurobiology and more on making desired behaviors *easy, attractive, and satisfying*.  
+- **[🔦💡 Man's Search for Meaning](../books/mans-search-for-meaning.md)** by Viktor Frankl: Presents motivation and the will to live as fundamentally about finding **meaning** in suffering, offering a powerful spiritual/existential counterpoint to the purely chemical, mechanistic view of drive.  
+- **[⚛️🔄 Atomic Habits: An Easy & Proven Way to Build Good Habits & Break Bad Ones](../books/atomic-habits.md)** by James Clear: Provides a systematic, **environment-design approach** to habit formation that is less focused on the internal neurobiology and more on making desired behaviors *easy, attractive, and satisfying*.  
   
 ### Creatively Related 🔗  
   
-- **[📜🌍⏳ Sapiens: A Brief History of Humankind](/content/books/sapiens-a-brief-history-of-humankind.md)** by Yuval Noah Harari: Places human existence in an evolutionary context, discussing **foraging** and **seeking behavior** at length, aligning with the video's statement that this is the primary, universal evolutionary function of the dopamine system.  
-- **[🤿💼 Deep Work: Rules for Focused Success in a Distracted World](/content/books/deep-work.md)** by Cal Newport: Offers practical strategies for achieving intense, focused, and *undistracted* work, which serves as the ultimate **application** of the motivation and focus control mechanisms explained in the video.
+- **[📜🌍⏳ Sapiens: A Brief History of Humankind](../books/sapiens-a-brief-history-of-humankind.md)** by Yuval Noah Harari: Places human existence in an evolutionary context, discussing **foraging** and **seeking behavior** at length, aligning with the video's statement that this is the primary, universal evolutionary function of the dopamine system.  
+- **[🤿💼 Deep Work: Rules for Focused Success in a Distracted World](../books/deep-work.md)** by Cal Newport: Offers practical strategies for achieving intense, focused, and *undistracted* work, which serves as the ultimate **application** of the motivation and focus control mechanisms explained in the video.

@@ -6,8 +6,11 @@ URL: https://bagrounds.org/books/small-is-beautiful-economics-as-if-people-matte
 share: true
 CTA: 🌱 Nurture humanity.
 affiliate link: https://amzn.to/4oDqFSv
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_time: 2026-04-01T00:00:00Z
+force_analyze_links: false
 ---
-[Home](/content/index.md) > [Books](/content/books/index.md)  
+[Home](../index.md) > [Books](./index.md)  
 # 🤏🧑 Small Is Beautiful: Economics as if People Mattered  
 [🛒 Small Is Beautiful: Economics as if People Mattered. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4oDqFSv)  
   
@@ -82,17 +85,17 @@ affiliate link: https://amzn.to/4oDqFSv
 ## 📚 Book Recommendations  
   
 ### 📖 Similar  
-* [📉🌍⏳ Limits to Growth: The 30-Year Global Update](/content/books/limits-to-growth-the-30-year-global-update.md) by Donella H. Meadows, Dennis L. Meadows, Jørgen Randers, William W. Behrens III  
-* [🍩🌍 Doughnut Economics: Seven Ways to Think Like a 21st-Century Economist](/content/books/doughnut-economics-seven-ways-to-think-like-a-21st-century-economist.md) by Kate Raworth  
-* [🪢🌾 Braiding Sweetgrass: Indigenous Wisdom, Scientific Knowledge, and the Teachings of Plants](/content/books/braiding-sweetgrass.md) by Robin Wall Kimmerer  
+* [📉🌍⏳ Limits to Growth: The 30-Year Global Update](./limits-to-growth-the-30-year-global-update.md) by Donella H. Meadows, Dennis L. Meadows, Jørgen Randers, William W. Behrens III  
+* [🍩🌍 Doughnut Economics: Seven Ways to Think Like a 21st-Century Economist](./doughnut-economics-seven-ways-to-think-like-a-21st-century-economist.md) by Kate Raworth  
+* [🪢🌾 Braiding Sweetgrass: Indigenous Wisdom, Scientific Knowledge, and the Teachings of Plants](./braiding-sweetgrass.md) by Robin Wall Kimmerer  
   
 ### 🆚 Contrasting  
 * 💰 The Wealth of Nations by Adam Smith  
-* [💰📈🌍⏳ Capital in the Twenty-First Century](/content/books/capital-in-the-twenty-first-century.md) by Thomas Piketty  
+* [💰📈🌍⏳ Capital in the Twenty-First Century](./capital-in-the-twenty-first-century.md) by Thomas Piketty  
 * 🌐 The World Is Flat by Thomas L. Friedman  
   
 ### 🔗 Related  
-* [🌲 Walden](/content/books/walden.md) by Henry David Thoreau  
+* [🌲 Walden](./walden.md) by Henry David Thoreau  
 * ⚠️ Silent Spring by Rachel Carson  
 * 🧑‍🤝‍🧑 The Human Condition by Hannah Arendt  
   

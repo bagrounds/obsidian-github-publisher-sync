@@ -10,7 +10,7 @@ Channel: PBS NewsHour
 tags:
 youtube: https://youtu.be/f1JvfM0fVVM
 ---
-[Home](/content/index.md) > [Videos](/content/videos/index.md)  
+[Home](../index.md) > [Videos](./index.md)  
 # 👩‍👧‍👦💼⬇️ Why so many mothers with young children are leaving the workforce  
 ![Why so many mothers with young children are leaving the workforce](https://youtu.be/f1JvfM0fVVM)  
   
@@ -37,7 +37,7 @@ youtube: https://youtu.be/f1JvfM0fVVM
   
 ## 📚 Book Recommendations  
 ### Similar  
-* **[🧑‍🤝‍🧑💸 The Two-Income Trap](/content/books/the-two-income-trap.md)** by Elizabeth Warren and Amelia Warren Tyagi: Explains how the modern economy forces families into a precarious financial situation where two incomes are essential, making the high cost of childcare a central and devastating problem.  
+* **[🧑‍🤝‍🧑💸 The Two-Income Trap](../books/the-two-income-trap.md)** by Elizabeth Warren and Amelia Warren Tyagi: Explains how the modern economy forces families into a precarious financial situation where two incomes are essential, making the high cost of childcare a central and devastating problem.  
 * ⚖️ **Unfinished Business** by Anne-Marie Slaughter: Discusses the failures of societal and workplace structures to truly support working families and calls for a fundamental rethinking of work-life integration.  
   
 ### Contrasting  

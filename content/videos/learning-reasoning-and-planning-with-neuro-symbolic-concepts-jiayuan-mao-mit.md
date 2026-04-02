@@ -10,7 +10,7 @@ Channel: Paul G. Allen School
 tags:
 youtube: https://youtu.be/g3-uFiCQ_KI
 ---
-[Home](/content/index.md) > [Videos](/content/videos/index.md)  
+[Home](../index.md) > [Videos](./index.md)  
 # 🧠💡📈🚀 Learning, Reasoning, and Planning with Neuro-Symbolic Concepts–Jiayuan Mao (MIT)  
 ![Learning, Reasoning, and Planning with Neuro-Symbolic Concepts–Jiayuan Mao (MIT)](https://youtu.be/g3-uFiCQ_KI)  
   
@@ -46,13 +46,13 @@ youtube: https://youtu.be/g3-uFiCQ_KI
   
 ## 📚 Book Recommendations  
 ### ↔️ Similar  
-* [❓➡️💡 The Book of Why: The New Science of Cause and Effect](/content/books/the-book-of-why.md) by Judeaa Pearl: 💡 Focuses on causality and structured logical reasoning, which is the foundational goal of the symbolic component in NSC.  
-* [🧠💻🤖 Deep Learning](/content/books/deep-learning.md) by Ian Goodfellow, Yoshua Bengio, and Aaron Courville: ⚛️ Provides the foundational mathematics and theory behind the neural networks used for perception and pattern recognition in NSC.  
+* [❓➡️💡 The Book of Why: The New Science of Cause and Effect](../books/the-book-of-why.md) by Judeaa Pearl: 💡 Focuses on causality and structured logical reasoning, which is the foundational goal of the symbolic component in NSC.  
+* [🧠💻🤖 Deep Learning](../books/deep-learning.md) by Ian Goodfellow, Yoshua Bengio, and Aaron Courville: ⚛️ Provides the foundational mathematics and theory behind the neural networks used for perception and pattern recognition in NSC.  
   
 ### 🆚 Contrasting  
 * 🎓 The Master Algorithm by Pedro Domingos: ⚖️ Discusses the five competing tribes of machine learning, contrasting the Connectionist (neural) approach with the Symbolist (logic) approach NSC attempts to merge.  
-* [🤔🐇🐢 Thinking, Fast and Slow](/content/books/thinking-fast-and-slow.md) by Daniel Kahneman: 🧠 Explores the two systems of human thought - intuitive System 1 and logical System 2 - which serves as an analogy for the neural and symbolic components of the hybrid AI.  
+* [🤔🐇🐢 Thinking, Fast and Slow](../books/thinking-fast-and-slow.md) by Daniel Kahneman: 🧠 Explores the two systems of human thought - intuitive System 1 and logical System 2 - which serves as an analogy for the neural and symbolic components of the hybrid AI.  
   
 ### 🎨 Creatively Related  
-* [♾️📐🎶🥨 Gödel, Escher, Bach: An Eternal Golden Braid](/content/books/godel-escher-bach.md) by Douglas Hofstadter: 🌀 Delves into symbolic representation, recursion, and the complex nature of human cognition, paralleling the structure of the neuro-symbolic approach.  
-* [🔬🔄 The Structure of Scientific Revolutions](/content/books/the-structure-of-scientific-revolutions.md) by Thomas S Kuhn: 🚀 Examines how scientific disciplines undergo paradigm shifts, relevant to the speaker’s call for a new paradigm in physical intelligence research.
+* [♾️📐🎶🥨 Gödel, Escher, Bach: An Eternal Golden Braid](../books/godel-escher-bach.md) by Douglas Hofstadter: 🌀 Delves into symbolic representation, recursion, and the complex nature of human cognition, paralleling the structure of the neuro-symbolic approach.  
+* [🔬🔄 The Structure of Scientific Revolutions](../books/the-structure-of-scientific-revolutions.md) by Thomas S Kuhn: 🚀 Examines how scientific disciplines undergo paradigm shifts, relevant to the speaker’s call for a new paradigm in physical intelligence research.

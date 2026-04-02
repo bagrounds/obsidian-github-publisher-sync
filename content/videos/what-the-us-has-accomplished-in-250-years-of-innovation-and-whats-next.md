@@ -10,7 +10,7 @@ Channel: PBS NewsHour
 tags:
 youtube: https://youtu.be/Keytao-qAWI
 ---
-[Home](/content/index.md) > [Videos](/content/videos/index.md)  
+[Home](../index.md) > [Videos](./index.md)  
 # 🇺🇸📈💡🔮🚀 What the U.S. has accomplished in 250 years of innovation and what’s next  
 ![What the U.S. has accomplished in 250 years of innovation and what’s next](https://youtu.be/Keytao-qAWI)  
   
@@ -27,17 +27,17 @@ youtube: https://youtu.be/Keytao-qAWI
 ## 📚 Book Recommendations  
 * **For 🧪 American innovation in science and technology:**  
     * "The Innovators: How a Group of Hackers, Geniuses, and Geeks Created the Digital Revolution" by Walter Isaacson  
-    * [📜🌍⏳ Sapiens: A Brief History of Humankind](/content/books/sapiens-a-brief-history-of-humankind.md) by Yuval Noah Harari (for a broader perspective on human innovation)  
+    * [📜🌍⏳ Sapiens: A Brief History of Humankind](../books/sapiens-a-brief-history-of-humankind.md) by Yuval Noah Harari (for a broader perspective on human innovation)  
 * **For 🏛️ American innovation in democracy and political systems:**  
-    * [🗳️🕊️🇺🇸 Democracy in America](/content/books/democracy-in-america.md) by Alexis de Tocqueville  
-    * [🇺🇸📜 The Federalist Papers](/content/books/the-federalist-papers.md) by Alexander Hamilton, James Madison, and John Jay  
-    * [🗳️🏛️☠️ How Democracies Die](/content/books/how-democracies-die.md) by Steven Levitsky and Daniel Ziblatt  
+    * [🗳️🕊️🇺🇸 Democracy in America](../books/democracy-in-america.md) by Alexis de Tocqueville  
+    * [🇺🇸📜 The Federalist Papers](../books/the-federalist-papers.md) by Alexander Hamilton, James Madison, and John Jay  
+    * [🗳️🏛️☠️ How Democracies Die](../books/how-democracies-die.md) by Steven Levitsky and Daniel Ziblatt  
 * **For the 🇺🇸 character and its relationship with innovation:**  
     * "Albion's Seed: Four British Folkways in America" by David Hackett Fischer  
     * "The American Character" by Denis Brogan  
 * **For the idea of 🇺🇸 as a "work in progress" and civic engagement:**  
     * A People's History of the United States by Howard Zinn  
-    * [👻🇺🇸⚔️🪽 The Soul of America: The Battle for Our Better Angels](/content/books/the-soul-of-america-the-battle-for-our-better-angels.md) by Jon Meacham.  
+    * [👻🇺🇸⚔️🪽 The Soul of America: The Battle for Our Better Angels](../books/the-soul-of-america-the-battle-for-our-better-angels.md) by Jon Meacham.  
   
 ## 🐦 Tweet  
 <blockquote class="twitter-tweet" data-theme="dark"><p lang="en" dir="ltr">🇺🇸📈💡🔮🚀 What the U.S. has accomplished in 250 years of innovation and what’s next<a href="https://twitter.com/NewsHour?ref_src=twsrc%5Etfw">@NewsHour</a><br><br>📺 PBS | 🔬 Science | 🏛️ Democracy | 🚀 Risk-Taking | 😥 Stress Test | 🌊🚪 Watergate<a href="https://t.co/gD0ltb0lHu">https://t.co/gD0ltb0lHu</a></p>&mdash; Bryan Grounds (@bagrounds) <a href="https://twitter.com/bagrounds/status/1941653293119496460?ref_src=twsrc%5Etfw">July 6, 2025</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>

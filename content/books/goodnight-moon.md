@@ -7,7 +7,7 @@ share: true
 CTA: 😴 Dream peacefully.
 affiliate link: https://amzn.to/490VIAY
 ---
-[Home](/content/index.md) > [Books](/content/books/index.md)  
+[Home](../index.md) > [Books](./index.md)  
 # 🌙🛌 Goodnight Moon  
 [🛒 Goodnight Moon. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/490VIAY)  
   
@@ -66,12 +66,12 @@ affiliate link: https://amzn.to/490VIAY
   
 ### ↔️ Contrasting  
 * **👹 Where the Wild Things Are by Maurice Sendak (focuses on adventure and imagination rather than routine)  
-* **[🐛🍎 The Very Hungry Caterpillar](/content/books/the-very-hungry-caterpillar.md) by Eric Carle (explores growth and transformation with a more complex narrative)  
+* **[🐛🍎 The Very Hungry Caterpillar](./the-very-hungry-caterpillar.md) by Eric Carle (explores growth and transformation with a more complex narrative)  
 * **😠 Alexander and the Terrible, Horrible, No Good, Very Bad Day by Judith Viorst  
   
 ### 🔗 Related  
 * **📖 The Important Thing About Margaret Wise Brown by Mac Barnett (a biography about the author)  
-* **[👦🟣🖍️ Harold and the Purple Crayon](/content/books/harold-and-the-purple-crayon.md) by Crockett Johnson (explores imagination and bedtime themes)  
+* **[👦🟣🖍️ Harold and the Purple Crayon](./harold-and-the-purple-crayon.md) by Crockett Johnson (explores imagination and bedtime themes)  
 * **🎵 Lullaby and Goodnight by Elizabeth D. Crawford (a collection of classic lullabies)  
   
 ## 🫵 What Do You Think?  

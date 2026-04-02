@@ -12,7 +12,7 @@ force_analyze_links: false
 link_analysis_time: 2026-03-22T23:35:05.628Z
 link_analysis_model: gemini-3.1-flash-lite-preview
 ---
-[Home](/content/index.md) > [Books](/content/books/index.md)  
+[Home](../index.md) > [Books](./index.md)  
 # 🕳️🧠👶🏽 The Whole-Brain Child: 12 Revolutionary Strategies to Nurture Your Child's Developing Mind  
 [🛒 The Whole-Brain Child: 12 Revolutionary Strategies to Nurture Your Child's Developing Mind. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4mHBl1R)  
   
@@ -51,18 +51,18 @@ link_analysis_model: gemini-3.1-flash-lite-preview
   
 ### 👪 Similar Books (Parenting & Child Development Focus)  
 * ✍️ **By the Same Authors (Siegel & Bryson):**  
-    * **[🚫🎭🧠 No-Drama Discipline: The Whole-Brain Way to Calm the Chaos and Nurture Your Child's Developing Mind](/content/books/no-drama-discipline.md)**: 💖 Extends the whole-brain approach specifically to discipline, focusing on connection before correction.  
-    * **[👍🧠 The Yes Brain: How to Cultivate Courage, Curiosity, and Resilience in Your Child](/content/books/the-yes-brain.md)**: 🌟 Focuses on fostering curiosity, resilience, and courage in children.  
-    * 🫂 **[🔌👋 The Power of Showing Up: How Parental Presence Shapes Who Our Kids Become and How Their Brains Get Wired](/content/books/the-power-of-showing-up.md)**: 👨‍👧‍👦 Explores how parental presence shapes children's development, outlining the "Four S's" (Safe, Seen, Soothed, Secure).  
+    * **[🚫🎭🧠 No-Drama Discipline: The Whole-Brain Way to Calm the Chaos and Nurture Your Child's Developing Mind](./no-drama-discipline.md)**: 💖 Extends the whole-brain approach specifically to discipline, focusing on connection before correction.  
+    * **[👍🧠 The Yes Brain: How to Cultivate Courage, Curiosity, and Resilience in Your Child](./the-yes-brain.md)**: 🌟 Focuses on fostering curiosity, resilience, and courage in children.  
+    * 🫂 **[🔌👋 The Power of Showing Up: How Parental Presence Shapes Who Our Kids Become and How Their Brains Get Wired](./the-power-of-showing-up.md)**: 👨‍👧‍👦 Explores how parental presence shapes children's development, outlining the "Four S's" (Safe, Seen, Soothed, Secure).  
 * 🧠 **Neuroscience & Attachment-Based Parenting:**  
     * 🧠 *Brain-Based Parenting* by Daniel A. Hughes & Jonathan Baylin: 🤝 Delves into the neuroscience of attachment and caregiving.  
     * 🧠 *Brain-Body Parenting* by Mona Delahooke: 👶 Focuses on understanding children's behavior through the lens of their nervous system.  
-    * [🤱🏼🤿🪞🌱 Parenting from the Inside Out: How a Deeper Self-Understanding Can Help You Raise Children Who Thrive](/content/books/parenting-from-the-inside-out-how-a-deeper-self-understanding-can-help-you-raise-children-who-thrive.md) by Daniel J. Siegel & Mary Hartzell: 👨‍👩‍👧‍👦 Explores how parents' own childhood experiences impact their parenting.  
+    * [🤱🏼🤿🪞🌱 Parenting from the Inside Out: How a Deeper Self-Understanding Can Help You Raise Children Who Thrive](./parenting-from-the-inside-out-how-a-deeper-self-understanding-can-help-you-raise-children-who-thrive.md) by Daniel J. Siegel & Mary Hartzell: 👨‍👩‍👧‍👦 Explores how parents' own childhood experiences impact their parenting.  
 * 💖 **Emotional Intelligence & Connection:**  
     * 💖 *Raising an Emotionally Intelligent Child* by John Gottman & Joan Declaire: 👨‍🏫 A classic guide to coaching children through their emotional world.  
     * 🗣️ *How to Talk So Kids Will Listen & Listen So Kids Will Talk* by Adele Faber & Elaine Mazlish: 👂 Practical communication strategies for fostering cooperation and connection.  
     * 👶 *How to Talk So Little Kids Will Listen* by Joanna Faber & Julie King: 🗣️ Adapts the "How to Talk" principles for younger children (ages 2-7).  
-    * [❤️👪 Good Inside: A Guide to Becoming the Parent You Want to Be](/content/books/good-inside-a-guide-to-becoming-the-parent-you-want-to-be.md) by Dr. Becky Kennedy: 🫂 Focuses on building connection and resilience through understanding children's internal experiences.  
+    * [❤️👪 Good Inside: A Guide to Becoming the Parent You Want to Be](./good-inside-a-guide-to-becoming-the-parent-you-want-to-be.md) by Dr. Becky Kennedy: 🫂 Focuses on building connection and resilience through understanding children's internal experiences.  
   
 ### ⚖️ Contrasting Approaches or Focus  
 * 📜 **Behaviorism-Focused:**  
@@ -82,11 +82,11 @@ link_analysis_model: gemini-3.1-flash-lite-preview
     * 💖 *Atlas of the Heart* by Brené Brown: 🗣️ Explores the language and landscape of human emotions, enhancing emotional literacy for parents and individuals.  
 * 💖 **Emotional Intelligence for Adults/Parents:**  
     * 💖 *Emotional Intelligence for Parents* by Grace Cohen: 👨‍👩‍👧‍👦 A guide for parents to manage their own emotions and foster emotional intelligence in their children.  
-    * 🗣️ *[🕊️🤝 Nonviolent Communication](/content/books/nonviolent-communication.md)* by Marshall B. Rosenberg: 🤝 Teaches a communication framework focused on empathy and needs, applicable to parenting and all relationships.  
+    * 🗣️ *[🕊️🤝 Nonviolent Communication](./nonviolent-communication.md)* by Marshall B. Rosenberg: 🤝 Teaches a communication framework focused on empathy and needs, applicable to parenting and all relationships.  
 * 🎓 **Educational Philosophies:**  
     * 👶 *The Montessori Toddler/Child* by Simone Davies: 🏡 While not neuroscience-focused, the Montessori approach aligns with fostering independence and respecting child development, complementing the respect inherent in *The Whole-Brain Child*.  
   
-## 💬 [Gemini](/content/software/gemini.md) Prompt (gemini-2.5-pro-exp-03-25)  
+## 💬 [Gemini](../software/gemini.md) Prompt (gemini-2.5-pro-exp-03-25)  
 > Write a markdown-formatted (start headings at level H2) book report, followed by a plethora of additional similar, contrasting, and creatively related book recommendations on The Whole-Brain Child. Be thorough in content discussed but concise and economical with your language. Structure the report with section headings and bulleted lists to avoid long blocks of text.  
   
 ## 🦋 Bluesky    

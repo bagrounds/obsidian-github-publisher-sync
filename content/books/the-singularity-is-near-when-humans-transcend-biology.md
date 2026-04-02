@@ -7,8 +7,11 @@ share: true
 CTA: 🧠 Redefine existence.
 affiliate link: https://amzn.to/3Mwqyd5
 updated: 2026-03-17T14:26:02.823Z
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_time: 2026-04-01T00:00:00Z
+force_analyze_links: false
 ---
-[Home](/content/index.md) > [Books](/content/books/index.md)  
+[Home](../index.md) > [Books](./index.md)  
 # 🤖🧬⬆️ The Singularity Is Near: When Humans Transcend Biology  
 [🛒 The Singularity Is Near: When Humans Transcend Biology. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3Mwqyd5)  
   
@@ -40,7 +43,7 @@ updated: 2026-03-17T14:26:02.823Z
 * 🔬 **Nanotechnology:** Self-replicating nanobots for internal body repair, environmental manipulation.  
 * 🧬 **Genetics & Biotechnology:** Gene editing (CRISPR), synthetic biology, organ regeneration, radical life extension.  
 * 🔌 **Brain-Computer Interfaces (BCIs):** Direct connection of human brains to computers.  
-* **[⚛️ Quantum Computing](/content/topics/quantum-computing.md):** Exponential increase in computing power and efficiency.  
+* **[⚛️ Quantum Computing](../topics/quantum-computing.md):** Exponential increase in computing power and efficiency.  
   
 ## ⚖️ Evaluation  
   
@@ -80,21 +83,21 @@ updated: 2026-03-17T14:26:02.823Z
 ## 📚 Book Recommendations  
   
 ### ➡️ Similar  
-* [🤖⚠️📈 Superintelligence: Paths, Dangers, Strategies](/content/books/superintelligence-paths-dangers-strategies.md) by Nick Bostrom: Explores the risks and strategies for managing the creation of superintelligent AI.  
-* [🧬👥💾 Life 3.0: Being Human in the Age of Artificial Intelligence](/content/books/life-3-0.md) by Max Tegmark: Discusses AI's potential futures and its implications for human existence.  
+* [🤖⚠️📈 Superintelligence: Paths, Dangers, Strategies](./superintelligence-paths-dangers-strategies.md) by Nick Bostrom: Explores the risks and strategies for managing the creation of superintelligent AI.  
+* [🧬👥💾 Life 3.0: Being Human in the Age of Artificial Intelligence](./life-3-0.md) by Max Tegmark: Discusses AI's potential futures and its implications for human existence.  
 * 💡 How to Create a Mind by Ray Kurzweil: Delves into reverse-engineering the brain for AI development.  
 * 🚀 The Singularity Is Nearer: When We Merge with AI by Ray Kurzweil: A more recent exploration of similar themes by the same author.  
 * 🔮 Homo Deus: A History of Tomorrow by Yuval Noah Harari: Explores humanity's future goals of immortality, happiness, and divinity.  
   
 ### ⬅️ Contrasting  
-* [📱🧠 The Shallows: What the Internet Is Doing to Our Brains](/content/books/the-shallows-what-the-internet-is-doing-to-our-brains.md) by Nicholas Carr: Examines the negative cognitive impacts of digital technology.  
+* [📱🧠 The Shallows: What the Internet Is Doing to Our Brains](./the-shallows-what-the-internet-is-doing-to-our-brains.md) by Nicholas Carr: Examines the negative cognitive impacts of digital technology.  
 * 🚫 Jaron Lanier's work (e.g., You Are Not a Gadget): Often critiques techno-utopianism and advocates for human-centric technology.  
 * 🎨 Against the Machine: Why an Age of Robots and AI Still Needs Human Creativity by Michael Bhaskar: Argues for enduring human creativity in an automated world.  
   
 ### 🔄 Related  
 * 🌃 Permutation City by Greg Egan: Science fiction exploring mind uploading, simulated realities, and immortality.  
 * 🦍 Artificial Intelligence and Human Evolution: Contextualizing AI in Human History by Ameet Joshi: Explores parallels between human and machine evolution.  
-* [🤖📈 The Second Machine Age: Work, Progress, and Prosperity in a Time of Brilliant Technologies](/content/books/the-second-machine-age-work-progress-and-prosperity-in-a-time-of-brilliant-technologies.md) by Erik Brynjolfsson and Andrew McAfee: Discusses the impact of digital technologies on labor, prosperity, and innovation.  
+* [🤖📈 The Second Machine Age: Work, Progress, and Prosperity in a Time of Brilliant Technologies](./the-second-machine-age-work-progress-and-prosperity-in-a-time-of-brilliant-technologies.md) by Erik Brynjolfsson and Andrew McAfee: Discusses the impact of digital technologies on labor, prosperity, and innovation.  
 * 🔭 Physics of the Future by Michio Kaku: Provides a broad scientific outlook on future technological advancements.  
 * 🌐 Nexus: A Brief History of Information Networks from the Stone Age to AI by Yuval Noah Harari: Examines how information flow has shaped civilizations and AI's transformative impact.  
   

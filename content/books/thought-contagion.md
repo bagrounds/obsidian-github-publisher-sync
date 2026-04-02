@@ -9,7 +9,7 @@ tags:
 affiliate link: https://amzn.to/4jBAflr
 CTA: Understand belief.
 ---
-[Home](/content/index.md) > [Books](/content/books/index.md)  
+[Home](../index.md) > [Books](./index.md)  
 # 💭🦠 Thought Contagion: How Belief Spreads Through Society  
 [🛒 Thought Contagion: How Belief Spreads Through Society. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4jBAflr)  
   
@@ -43,7 +43,7 @@ CTA: Understand belief.
 ## 📚 Book Recommendations  
   
 ### 📖 Similar Reads (Memetics & Idea Spread)  
-* **[👤🧬 The Selfish Gene](/content/books/the-selfish-gene.md)** 🧬 **by Richard Dawkins (1976):** ➡️ The book that coined the term "meme" and introduced the concept of cultural replicators analogous to genes. 🦠 A foundational text. 🌟  
+* **[👤🧬 The Selfish Gene](./the-selfish-gene.md)** 🧬 **by Richard Dawkins (1976):** ➡️ The book that coined the term "meme" and introduced the concept of cultural replicators analogous to genes. 🦠 A foundational text. 🌟  
 * 🤖 ***The Meme Machine*** 🤖 **by Susan Blackmore (1999):** ➡️ Argues humans evolved as "meme machines" and explores the implications of memetics for understanding consciousness, language, and culture. 🧠  
 * ☣️ ***Virus of the Mind: The New Science of the Meme*** ☣️ **by Richard Brodie (1996):** ➡️ Another early popularization of memetics, exploring how ideas infect and propagate through minds. 🦠  
 * 🤔 ***Darwin's Dangerous Idea: Evolution and the Meanings of Life*** 🤔 **by Daniel C. Dennett (1995):** ➡️ Develops memetics within a broader philosophical framework, arguing consciousness itself is a complex of memes. 🧠  
@@ -57,14 +57,14 @@ CTA: Understand belief.
 * 📰 **Works critiquing memetics (Articles/Chapters rather than whole books):** ➡️ Look for critiques by Stephen Jay Gould (called memetics a "meaningless metaphor"), Dan Sperber (argues ideas are reproduced, not replicated), Mary Midgley, and Luis Benitez-Bribiesca. 🤔 Collections like *Darwinizing Culture* (edited by Aunger) include critical perspectives alongside proponents. 📖  
   
 ### 💡 Creatively Related (Broader Connections)  
-* **[🦠 Contagious: Why Things Catch On](/content/books/contagious.md)** 🗣️ **by Jonah Berger (2013):** ➡️ Explores the science behind word-of-mouth and social transmission from a marketing and social psychology perspective, focusing on practical principles (STEPPS: Social Currency, Triggers, Emotion, Public, Practical Value, Stories). 📣  
-* 📈 **[⚖️👈 The Tipping Point: How Little Things Can Make a Big Difference](/content/books/the-tipping-point.md)** 📈 **by Malcolm Gladwell (2000):** ➡️ Popularizes the concept of social epidemics, examining how ideas, products, and behaviors spread like outbreaks, focusing on key types of people and context. 🦠  
+* **[🦠 Contagious: Why Things Catch On](./contagious.md)** 🗣️ **by Jonah Berger (2013):** ➡️ Explores the science behind word-of-mouth and social transmission from a marketing and social psychology perspective, focusing on practical principles (STEPPS: Social Currency, Triggers, Emotion, Public, Practical Value, Stories). 📣  
+* 📈 **[⚖️👈 The Tipping Point: How Little Things Can Make a Big Difference](./the-tipping-point.md)** 📈 **by Malcolm Gladwell (2000):** ➡️ Popularizes the concept of social epidemics, examining how ideas, products, and behaviors spread like outbreaks, focusing on key types of people and context. 🦠  
 * 😲 ***Strange Contagion: Inside the Surprising Science of Infectious Behaviors and Viral Emotions*** 😲 **by Lee Daniel Kravetz (2017):** ➡️ Investigates social contagion through phenomena like suicide clusters, blending personal narrative with scientific research. 🧪  
 * 🌍 ***Cultural Evolution: How Darwinian Theory Can Explain Human Culture and Synthesize the Social Sciences*** 🌍 **by Alex Mesoudi (2011):** ➡️ Provides an accessible overview of the broader field of cultural evolution, integrating various approaches. 📖  
 * 🧑‍🤝‍🧑 ***The Secret of Our Success: How Culture Is Driving Human Evolution, Domesticating Our Species, and Making Us Smarter*** 🧑‍🤝‍🧑 **by Joseph Henrich (2015):** ➡️ Focuses on how cumulative cultural evolution is central to human adaptation and success. 🏆  
 * 🔗 ***Networks and the Spread of Ideas in the Past: Strong Ties, Innovation and Knowledge Exchange*** 🔗 **edited by Anna Collar et al. (2022):** ➡️ Explores how social network structures, particularly strong ties, influenced the transmission of ideas historically. 🏛️  
-* **[🔬🔄 The Structure of Scientific Revolutions](/content/books/the-structure-of-scientific-revolutions.md)** **by Thomas S. Kuhn (1962):** ➡️ A classic work on how scientific ideas change, focusing on paradigm shifts and community acceptance, offering a different perspective on idea propagation within a specific domain. 🧪  
-* ✅ **[Made to Stick: Why Some Ideas Survive and Others Die](/content/books/made-to-stick.md)** ✅ **by Chip Heath & Dan Heath (2007):** ➡️ Offers practical advice on making ideas memorable and impactful, based on principles like simplicity, unexpectedness, concreteness, credibility, emotions, and stories. ✨  
+* **[🔬🔄 The Structure of Scientific Revolutions](./the-structure-of-scientific-revolutions.md)** **by Thomas S. Kuhn (1962):** ➡️ A classic work on how scientific ideas change, focusing on paradigm shifts and community acceptance, offering a different perspective on idea propagation within a specific domain. 🧪  
+* ✅ **[Made to Stick: Why Some Ideas Survive and Others Die](./made-to-stick.md)** ✅ **by Chip Heath & Dan Heath (2007):** ➡️ Offers practical advice on making ideas memorable and impactful, based on principles like simplicity, unexpectedness, concreteness, credibility, emotions, and stories. ✨  
   
-## 💬 [Gemini](/content/software/gemini.md) Prompt (gemini-2.5-pro-exp-03-25)  
+## 💬 [Gemini](../software/gemini.md) Prompt (gemini-2.5-pro-exp-03-25)  
 > Write a markdown-formatted (start headings at level H2) book report, followed by a plethora of additional similar, contrasting, and creatively related book recommendations on Thought Contagion. Be thorough in content discussed but concise and economical with your language. Structure the report with section headings and bulleted lists to avoid long blocks of text.

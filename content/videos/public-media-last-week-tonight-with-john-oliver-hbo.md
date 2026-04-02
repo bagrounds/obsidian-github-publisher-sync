@@ -10,7 +10,7 @@ Channel: LastWeekTonight
 tags:
 youtube: https://youtu.be/yknMJOgy2pA
 ---
-[Home](/content/index.md) > [Videos](/content/videos/index.md)  
+[Home](../index.md) > [Videos](./index.md)  
 # 📺🎤📰 Public Media: Last Week Tonight with John Oliver (HBO)  
 ![Public Media: Last Week Tonight with John Oliver (HBO)](https://youtu.be/yknMJOgy2pA)  
   
@@ -51,7 +51,7 @@ A: 📊 The United States is a global anomaly, funding its public media at less 
   
 ### ↔️ Similar  
   
-* [🇺🇸📻 Shadow of the New Deal: The Victory of Public Broadcasting](/content/books/shadow-of-the-new-deal-the-victory-of-public-broadcasting.md) by Josh Shepperd. 📖 Traces the history of educational and public-interest broadcasters, detailing the decades-long struggle to create a decentralized, 🤝 noncommercial media system in the US.  
+* [🇺🇸📻 Shadow of the New Deal: The Victory of Public Broadcasting](../books/shadow-of-the-new-deal-the-victory-of-public-broadcasting.md) by Josh Shepperd. 📖 Traces the history of educational and public-interest broadcasters, detailing the decades-long struggle to create a decentralized, 🤝 noncommercial media system in the US.  
 * *Losing the News* by Alex Jones. 📰 Explores the commercial pressures that have led to the decline of hard news reporting in America, underscoring the vital, 🛡️ non-market role that public media fills for essential information.  
   
 ### 🆚 Contrasting  

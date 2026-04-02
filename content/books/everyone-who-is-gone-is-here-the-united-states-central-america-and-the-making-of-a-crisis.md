@@ -7,7 +7,7 @@ share: true
 CTA: 🌍 Uncover the roots of displacement.
 affiliate link: https://amzn.to/49cljXP
 ---
-[Home](/content/index.md) > [Books](/content/books/index.md)  
+[Home](../index.md) > [Books](./index.md)  
 # 👣🗺️💥 Everyone Who Is Gone Is Here: The United States, Central America, and the Making of a Crisis  
 [🛒 Everyone Who Is Gone Is Here: The United States, Central America, and the Making of a Crisis. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/49cljXP)  
   

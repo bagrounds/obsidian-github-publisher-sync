@@ -6,7 +6,7 @@ URL: https://bagrounds.org/books/fatherhood-a-history-of-love-and-power
 share: true
 affiliate link: https://amzn.to/4e3NtGg
 ---
-[Home](/content/index.md) > [Books](/content/books/index.md)  
+[Home](../index.md) > [Books](./index.md)  
 # 👨‍👧‍👦❤️💪 Fatherhood: A History of Love and Power  
 [🛒 Fatherhood: A History of Love and Power. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4e3NtGg)  
   
@@ -38,7 +38,7 @@ Here is a selection of books 📚 that offer various perspectives 👁️ on fat
   
 * ***👨‍👧‍👦 The Modernization of Fatherhood: A Social and Political History*** **by Ralph LaRossa:** A key work 🔑 by a prominent sociologist 🧑‍🏫 in the field, focusing on the evolution 🔄 of American fatherhood, particularly from World War I 🕊️ through the post-WWII era. LaRossa examines how social and economic changes 💰, as well as cultural influences 🎭 like magazines 📰 and the "fathercraft movement," shaped the image and practice of fatherhood.  
 * ***⚔️ Of War and Men: World War II in the Lives of Fathers and Their Families*** **by Ralph LaRossa:** Explores the significant impact 💥 of World War II ⚔️ on fathers and families 👨‍👩‍👧‍👦, challenging stereotypes of fathers in the 1950s and examining themes like the effects of combat 💥 and the culture of fear 😨.  
-* **[👨‍👩‍👧‍👦🇺🇸 Fatherhood in America: Social Work Perspectives on a Changing Society](/content/books/fatherhood-in-america-social-work-perspectives-on-a-changing-society.md)** **by Armon R. Perry**.  
+* **[👨‍👩‍👧‍👦🇺🇸 Fatherhood in America: Social Work Perspectives on a Changing Society](./fatherhood-in-america-social-work-perspectives-on-a-changing-society.md)** **by Armon R. Perry**.  
 * ***♂️ Making Men into Fathers: Men, Masculinities and the Social Politics of Fatherhood*** **edited by Barbara Hobson:** An academic collection 🧑‍🏫 exploring the social and political aspects of making men into fathers across different contexts 🌍, including discussions on compulsory fatherhood and the fatherhood responsibility movement.  
 * ***❤️ Intimate Fatherhood: A Sociological Analysis*** **by Esther Dermott:** This book provides a sociological analysis 🔎 of contemporary fatherhood in Britain 🇬🇧, examining how ideas of "good fatherhood" relate to time use ⏰, finances 💰, emotion ❤️, and policy debates 🏛️, arguing for the centrality of the emotional father-child relationship.  
   
@@ -58,7 +58,7 @@ Here is a selection of books 📚 that offer various perspectives 👁️ on fat
 * ***✉️ Gilead*** **by Marilynne Robinson:** Written as a letter ✉️ from an elderly father to his young son, this novel is a meditative exploration of family history 👨‍👩‍👧‍👦, faith 🙏, and the complexities of a father's legacy 📜.  
 * ***🍻 The Tender Bar*** **by J.R. Moehringer:** A memoir about growing up without a biological father but finding father figures among the patrons of a local bar 🍻. It explores the idea of chosen family 👨‍👩‍👧‍👦 and the different forms that paternal guidance can take.  
   
-## 💬 [Gemini](/content/software/gemini.md) Prompt (gemini-2.5-flash-preview-04-17)  
+## 💬 [Gemini](../software/gemini.md) Prompt (gemini-2.5-flash-preview-04-17)  
 > Write a markdown-formatted (start headings at level H2) book report, followed by a plethora of additional similar, contrasting, and creatively related book recommendations on Fatherhood: A History of Love and Power. Be thorough in content discussed but concise and economical with your language. Structure the report with section headings and bulleted lists to avoid long blocks of text.  
   
 ## 🐦 Tweet  

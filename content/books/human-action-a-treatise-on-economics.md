@@ -6,8 +6,11 @@ URL: https://bagrounds.org/books/human-action-a-treatise-on-economics
 share: true
 CTA: 🚀 Master prosperity.
 affiliate link: https://amzn.to/48lI1fQ
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_time: 2026-04-01T00:00:00Z
+force_analyze_links: false
 ---
-[Home](/content/index.md) > [Books](/content/books/index.md)  
+[Home](../index.md) > [Books](./index.md)  
 # 🧑‍🤝‍🧑💰 Human Action: A Treatise on Economics  
 [🛒 Human Action: A Treatise on Economics. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/48lI1fQ)  
   
@@ -77,7 +80,7 @@ affiliate link: https://amzn.to/48lI1fQ
 * 📒 Theory and History by Ludwig von Mises  
   
 ### 👎 Contrasting Books  
-* [🧑‍💼🏦💸 The General Theory of Employment, Interest, and Money](/content/books/the-general-theory-of-employment-interest-and-money.md) by John Maynard Keynes  
+* [🧑‍💼🏦💸 The General Theory of Employment, Interest, and Money](./the-general-theory-of-employment-interest-and-money.md) by John Maynard Keynes  
 * ☭ Das Kapital by Karl Marx  
 * 🗳️ Capitalism, Socialism, and Democracy by Joseph A. Schumpeter  
   

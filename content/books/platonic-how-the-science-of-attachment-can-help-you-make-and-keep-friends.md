@@ -7,7 +7,7 @@ share: true
 affiliate link: https://amzn.to/47Bpagm
 CTA: 🫂 Cultivate connection.
 ---
-[Home](/content/index.md) > [Books](/content/books/index.md)  
+[Home](../index.md) > [Books](./index.md)  
 # 🧑‍🤝‍🧑 Platonic: How the Science of Attachment Can Help You Make - and Keep - Friends  
 [🛒 Platonic: How the Science of Attachment Can Help You Make - and Keep - Friends. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/47Bpagm)  
   
@@ -66,19 +66,19 @@ CTA: 🫂 Cultivate connection.
 ## 📚 Book Recommendations  
   
 ### 👯 Similar  
-* [👩🏼‍❤️‍💋‍👨🏻🔗 Attached: The New Science of Adult Attachment and How It Can Help You Find - and Keep - Love](/content/books/attached-the-new-science-of-adult-attachment-and-how-it-can-help-you-find-and-keep-love.md) by Amir Levine and Rachel Heller  
+* [👩🏼‍❤️‍💋‍👨🏻🔗 Attached: The New Science of Adult Attachment and How It Can Help You Find - and Keep - Love](./attached-the-new-science-of-adult-attachment-and-how-it-can-help-you-find-and-keep-love.md) by Amir Levine and Rachel Heller  
 * The Art of Gathering: How We Meet and Why It Matters by Priya Parker  
 * Friendship: The Evolution, Biology, and Extraordinary Power of Life's Fundamental Bond by Lydia Denworth  
   
 ### ☯️ Contrasting  
 * Solitude: A Return to the Self by Anthony Storr  
 * The Comfort Book by Matt Haig  
-* [🌲 Walden](/content/books/walden.md) by Henry David Thoreau  
+* [🌲 Walden](./walden.md) by Henry David Thoreau  
   
 ### ➕ Related  
 * Quiet: The Power of Introverts in a World That Can't Stop Talking by Susan Cain  
 * Dare to Lead by Brené Brown  
-* [🌱🧘🏼‍♀️🏆 Mindset: The New Psychology of Success](/content/books/mindset.md) by Carol S. Dweck  
+* [🌱🧘🏼‍♀️🏆 Mindset: The New Psychology of Success](./mindset.md) by Carol S. Dweck  
   
 ## 🫵 What Do You Think?  
 Which attachment style do you most identify with in your friendships, and how has understanding it impacted your approach to connection? Share your thoughts below!

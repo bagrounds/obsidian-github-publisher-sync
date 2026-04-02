@@ -9,7 +9,7 @@ tags:
 affiliate link: https://amzn.to/4qS3Mfk
 CTA: 🇺🇸 Protect self-governance.
 ---
-[Home](/content/index.md) > [Books](/content/books/index.md)  
+[Home](../index.md) > [Books](./index.md)  
 # 🏛️🛡️ Democracy or Else: How to Save America in 10 Easy Steps  
 [🛒 Democracy or Else: How to Save America in 10 Easy Steps. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4qS3Mfk)  
   
@@ -63,10 +63,10 @@ While the specific chapter titles aren't fully detailed in the search results, t
 ## 📚 Book Recommendations  
 ### 🤝 Similar Books (Practical Guides & Modern Diagnosis/Reform)  
   
-* **[🏛️☀️⬆️ Democracy Awakening: 📝 Notes on the State of 🇺🇸 America](/content/books/democracy-awakening.md)** by 🧑‍🏫 Heather Cox Richardson: 📜 Offers historical context alongside analysis of the current political moment, emphasizing democratic threats and civic responsibility.  
+* **[🏛️☀️⬆️ Democracy Awakening: 📝 Notes on the State of 🇺🇸 America](./democracy-awakening.md)** by 🧑‍🏫 Heather Cox Richardson: 📜 Offers historical context alongside analysis of the current political moment, emphasizing democratic threats and civic responsibility.  
 * 🔄 **Democracy in Retrograde: 🛠️ How to Make Changes Big and Small in Our Country and in Our Lives** by 🫂 Sami Sage: 🤝 Similar focus on practical steps and maintaining hope for democracy, framed partly as self-help.  
 * 🧩 **Solving Public Problems: 🛠️ A Practical Guide to Fix Our Government and Change Our World** by 👩‍💻 Beth Simone Noveck: 💻 Focuses on how governments can leverage technology, data, and citizen input to address challenges.  
-* **[📜🤝 The Bill of Obligations: The Ten Habits of Good Citizens](/content/books/the-bill-of-obligations.md)** by 👨‍💼 Richard Haass: ✅ Argues for expanding the definition of citizenship to include obligations alongside rights for democracy to thrive.  
+* **[📜🤝 The Bill of Obligations: The Ten Habits of Good Citizens](./the-bill-of-obligations.md)** by 👨‍💼 Richard Haass: ✅ Argues for expanding the definition of citizenship to include obligations alongside rights for democracy to thrive.  
 * 🛡️ **Saving Democracy** by 👨‍💼 Kevin O'Leary: 🩺 Diagnoses political ills and proposes a plan combining town halls and the internet to empower citizens (note: this appears distinct from the more recent podcast book).  
   
 ### ⚔️ Contrasting Books (Different Angles & Critiques)  
@@ -74,12 +74,12 @@ While the specific chapter titles aren't fully detailed in the search results, t
 * 📉 **10% Less Democracy: 🤔 Why You Should Trust Elites a Little More and the Masses a Little Less** by 👨‍🏫 Garett Jones: 🚫 Argues against hyper-democratic participation, suggesting more deference to expert elites might be beneficial.  
 * 😡 **White Rural Rage: ⚠️ The Threat to American Democracy** by 👨‍🏫 Tom Schaller and 👨‍🏫 Paul Waldman: 😠 Explores the specific grievances and political power of white rural voters and why they might turn against democratic norms.  
 * 💔 **Breaking the Two-Party Doom Loop: 🏛️ The Case for Multiparty Democracy in America** by 👨‍🏫 Lee Drutman: 🏛️ Argues that the fundamental problem is the two-party system itself and advocates for structural reforms like multi-party democracy.  
-* 🧠 **[The Righteous Mind](/content/books/the-righteous-mind.md): 🤔 Why Good People Are Divided by Politics and Religion** by 👨‍🏫 Jonathan Haidt: 🧠 Explores the psychological roots of political division, suggesting moral intuitions, not just policy disagreements, drive conflict.  
+* 🧠 **[The Righteous Mind](./the-righteous-mind.md): 🤔 Why Good People Are Divided by Politics and Religion** by 👨‍🏫 Jonathan Haidt: 🧠 Explores the psychological roots of political division, suggesting moral intuitions, not just policy disagreements, drive conflict.  
 * 🔎 **Democracy Hypocrisy: 🇺🇸 Examining America's Fragile Democratic Convictions** (Democracy Fund Report, authors include 👨‍💼 Joe Goldman & 👨‍🏫 Lee Drutman): 📊 Uses survey data to show how support for democratic norms can be inconsistent and influenced by partisanship.  
   
 ### 💡 Creatively Related Books (Broader Context & Inspiration)  
   
-* 💀 **[How Democracies Die](/content/books/how-democracies-die.md)** by 👨‍🏫 Steven Levitsky and 👨‍🏫 Daniel Ziblatt: 🏛️ Comparative analysis drawing historical parallels to show how democracies erode from within. (Their *Tyranny of the Minority* is also relevant).  
+* 💀 **[How Democracies Die](./how-democracies-die.md)** by 👨‍🏫 Steven Levitsky and 👨‍🏫 Daniel Ziblatt: 🏛️ Comparative analysis drawing historical parallels to show how democracies erode from within. (Their *Tyranny of the Minority* is also relevant).  
 * ⚠️ **Four Threats: 🇺🇸 The Recurring Crises of American Democracy** by 👩‍🏫 Suzanne Mettler and 👨‍🏫 Robert C. Lieberman: ⏳ Examines historical moments when US democracy faced severe challenges (political polarization, racism/nativism, economic inequality, executive power).  
 * 🔦 **Democracy in Darkness: 🤫 Secrecy and Transparency in the Age of Revolutions** by 👩‍🏫 Katlyn Carter: 📜 Historical perspective on the early debates in America and France about transparency and secrecy in representative government.  
 * ⛪ **Sacred Foundations: 🏰 The Religious and Medieval Roots of the Modern State** by 👩‍🏫 Anna Grzymala-Busse: 📜 Explores the deep historical origins (including religious and medieval) of concepts like representation and law that underpin modern states and democracy.  
@@ -87,6 +87,6 @@ While the specific chapter titles aren't fully detailed in the search results, t
 * 💰 **Capitalism v. Democracy: 💸 Money in Politics and the Free Market Constitution** by 👨‍🏫 Timothy K. Kuhner: ⚖️ Examines the tensions between capitalism and democratic ideals, particularly concerning money in politics.  
   
   
-## 💬 [Gemini](/content/software/gemini.md) Prompt (gemini-2.5-pro-exp-03-25)  
+## 💬 [Gemini](../software/gemini.md) Prompt (gemini-2.5-pro-exp-03-25)  
 > Write a markdown-formatted (start headings at level H2) book report, followed by a plethora of additional similar, contrasting, and creatively related book recommendations on Democracy or Else How to Save America in 10 Easy Steps. Be thorough in content discussed but concise and economical with your language. Structure the report with section headings and bulleted lists to avoid long blocks of text..  
   

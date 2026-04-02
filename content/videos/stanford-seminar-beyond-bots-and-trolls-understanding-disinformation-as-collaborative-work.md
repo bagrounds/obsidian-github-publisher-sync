@@ -10,7 +10,7 @@ Channel: Stanford Online
 tags:
 youtube: https://youtu.be/SvEItxWb6Ek
 ---
-[Home](/content/index.md) > [Videos](/content/videos/index.md)  
+[Home](../index.md) > [Videos](./index.md)  
 # 🤖🗣️🤝 Stanford Seminar - Beyond «Bots and Trolls» - Understanding Disinformation as Collaborative Work  
 ![Stanford Seminar - Beyond «Bots and Trolls» - Understanding Disinformation as Collaborative Work](https://youtu.be/SvEItxWb6Ek)  
   
@@ -52,8 +52,8 @@ youtube: https://youtu.be/SvEItxWb6Ek
   
 ### 🆚 Contrasting  
 * 📖 Free Speech: A History from Socrates to Social Media by Jacob Mchangama traces the evolution of free speech principles and debates, often highlighting the tension between censorship and information freedom.  
-* [😇🧠 The Righteous Mind: Why Good People Are Divided by Politics and Religion](/content/books/the-righteous-mind.md) by Jonathan Haidt provides a social psychological perspective on why good people are divided by politics and religion, explaining the deep-seated divisions that disinformation exploits.  
+* [😇🧠 The Righteous Mind: Why Good People Are Divided by Politics and Religion](../books/the-righteous-mind.md) by Jonathan Haidt provides a social psychological perspective on why good people are divided by politics and religion, explaining the deep-seated divisions that disinformation exploits.  
   
 ### 🎨 Creatively Related  
-* [🦠 Contagious: Why Things Catch On](/content/books/contagious.md) by Jonah Berger investigates the science behind social transmission, explaining why certain messages and stories become viral across any medium.  
-* [🤯 Mindf*ck: Cambridge Analytica and the Plot to Break America](/content/books/mindf-ck-cambridge-analytica-and-the-plot-to-break-america.md) by Christopher Wylie, a former employee, details how data harvesting and psychological targeting were used to manipulate elections.
+* [🦠 Contagious: Why Things Catch On](../books/contagious.md) by Jonah Berger investigates the science behind social transmission, explaining why certain messages and stories become viral across any medium.  
+* [🤯 Mindf*ck: Cambridge Analytica and the Plot to Break America](../books/mindf-ck-cambridge-analytica-and-the-plot-to-break-america.md) by Christopher Wylie, a former employee, details how data harvesting and psychological targeting were used to manipulate elections.

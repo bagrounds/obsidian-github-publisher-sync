@@ -7,7 +7,7 @@ URL: https://bagrounds.org/articles/relating-natural-language-aptitude-to-indivi
 Author:
 tags:
 ---
-[Home](/content/index.md) > [Articles](/content/articles/index.md)  
+[Home](../index.md) > [Articles](./index.md)  
 # [🗣️🧠🧑‍💻📚 Relating Natural Language Aptitude to Individual Differences in Learning Programming Languages](https://www.nature.com/articles/s41598-020-60661-8)  
   
 ## 🤖 AI Summary  
@@ -74,7 +74,7 @@ tags:
   
 ### ↔️ Similar  
   
-- [🗣️🧠 The Language Instinct: How the Mind Creates Language](/content/books/the-language-instinct-how-the-mind-creates-language.md)by Steven Pinker explores the cognitive underpinnings of language acquisition, which is highly relevant to the study's parallel between natural and programming language learning.  
+- [🗣️🧠 The Language Instinct: How the Mind Creates Language](../books/the-language-instinct-how-the-mind-creates-language.md)by Steven Pinker explores the cognitive underpinnings of language acquisition, which is highly relevant to the study's parallel between natural and programming language learning.  
   
 - 🧠 Intelligence: All That Matters by Stuart Ritchie offers a concise overview of fluid reasoning, working memory, and other forms of general cognitive ability found to be the strongest predictors in the research.  
   
@@ -82,10 +82,10 @@ tags:
   
 - 🔢 The Number Sense: How the Mind Creates Mathematics by Stanislas Dehaene provides insight into the cognitive basis of numeracy, contrasting with the study's finding that mathematical ability is a less significant predictor of programming aptitude.  
   
-- [✅💻 Code Complete](/content/books/code-complete.md): A Practical Handbook of Software Construction by Steve McConnell emphasizes the engineering and structured logic aspects of programming, which can be viewed as more mathematical than linguistic.  
+- [✅💻 Code Complete](../books/code-complete.md): A Practical Handbook of Software Construction by Steve McConnell emphasizes the engineering and structured logic aspects of programming, which can be viewed as more mathematical than linguistic.  
   
 ### 🎨 Creatively Related  
   
-- [🤔🐇🐢 Thinking, Fast and Slow](/content/books/thinking-fast-and-slow.md) by Daniel Kahneman discusses the two systems of thinking—intuitive and deliberate—which relates to the cognitive demands of problem-solving and debugging in programming.  
+- [🤔🐇🐢 Thinking, Fast and Slow](../books/thinking-fast-and-slow.md) by Daniel Kahneman discusses the two systems of thinking—intuitive and deliberate—which relates to the cognitive demands of problem-solving and debugging in programming.  
   
-- [🎨🤓 The Art of Learning: A Journey in the Pursuit of Excellence](/content/books/the-art-of-learning.md) by Josh Waitzkin explores principles of accelerated learning and performance, providing a broader context for the individual differences in learning rate observed.
+- [🎨🤓 The Art of Learning: A Journey in the Pursuit of Excellence](../books/the-art-of-learning.md) by Josh Waitzkin explores principles of accelerated learning and performance, providing a broader context for the individual differences in learning rate observed.

@@ -7,7 +7,7 @@ share: true
 affiliate link: https://amzn.to/4524SME
 CTA: Think bigger.
 ---
-[Home](/content/index.md) > [Books](/content/books/index.md)  
+[Home](../index.md) > [Books](./index.md)  
 # ✅➕ Abundance  
 [🛒 Abundance. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4524SME)  
   
@@ -36,7 +36,7 @@ CTA: Think bigger.
   
 ### 🤝 Similar Books (Progress, Building, Supply-Side Solutions)  
   
-* **[📉❓ Why Nothing Works: Who Killed Progress - and How to Bring It Back](/content/books/why-nothing-works-who-killed-progress-and-how-to-bring-it-back.md) by Marc J. Dunkelman:** Explores similar themes of institutional failure and the inability of American systems to effectively address contemporary problems, often seen as a companion volume to *Abundance*.  
+* **[📉❓ Why Nothing Works: Who Killed Progress - and How to Bring It Back](./why-nothing-works-who-killed-progress-and-how-to-bring-it-back.md) by Marc J. Dunkelman:** Explores similar themes of institutional failure and the inability of American systems to effectively address contemporary problems, often seen as a companion volume to *Abundance*.  
 * **_Stuck_ by Yoni Appelbaum:** Discusses the reasons behind American political and societal stagnation, aligning with *Abundance*'s analysis of gridlock and inertia.  
 * **_On the Housing Crisis_ by Jerusalem Demsas:** A more focused look at the specific issue of housing unaffordability, delving into the policy choices and regulations that have created scarcity.  
 * **_Arbitrary Lines: How Zoning Broke the American City and How to Fix It_ by M. Nolan Gray:** Provides an in-depth examination of zoning laws and their detrimental impact on urban development and housing affordability, a key topic in *Abundance*.  
@@ -44,7 +44,7 @@ CTA: Think bigger.
   
 ### 🙅‍♀️ Contrasting Books (Critiques of Growth, Limits, Alternative Systems)  
   
-* **[📉🌎 Less is More: How Degrowth Will Save the World](/content/books/less-is-more-how-degrowth-will-save-the-world.md) by Jason Hickel:** Directly contrasts with the abundance framework by arguing that endless economic growth is unsustainable and advocates for a degrowth approach, particularly in wealthy nations.  
+* **[📉🌎 Less is More: How Degrowth Will Save the World](./less-is-more-how-degrowth-will-save-the-world.md) by Jason Hickel:** Directly contrasts with the abundance framework by arguing that endless economic growth is unsustainable and advocates for a degrowth approach, particularly in wealthy nations.  
 * **_The Party's Over: Oil, War, and the Fate of Industrial Societies_ by Richard Heinberg:** A foundational text on peak oil and resource depletion, presenting a view centered on the physical limits to growth and the inevitability of scarcity.  
 * **_Ecology and the Politics of Scarcity_ by William Ophuls:** An earlier work exploring the political implications of ecological limits and resource scarcity, offering a more pessimistic view on the potential for continued material abundance.  
 * **_Four Futures: Life After Capitalism_ by Peter Frase:** Explores potential future societal models based on different combinations of scarcity/abundance and equality/hierarchy, offering a more speculative and critical perspective on potential outcomes.  
@@ -53,10 +53,10 @@ CTA: Think bigger.
 ### 💡 Creatively Related Books (Historical Context, Societal Dynamics, Innovation)  
   
 * **_The Captured Economy: How Today's Anti-Competition Lobbying Enriches the Few, Hurts the Many, and Leaves the Country Behind_ by Brink Lindsey and Steven Teles:** Examines how various industries and professional groups use regulation to entrench their power and limit competition, providing a detailed look at the mechanisms behind some of the "chosen scarcities" discussed in *Abundance*.  
-* **[🤝📈🇺🇸🔁 The Upswing: How America Came Together a Century Ago and How We Can Do It Again](/content/books/the-upswing.md) by Robert D. Putnam:** Looks at historical periods of greater social cohesion and collective action in the U.S., offering context for the decline in the ability to undertake large-scale projects discussed in *Abundance*.  
+* **[🤝📈🇺🇸🔁 The Upswing: How America Came Together a Century Ago and How We Can Do It Again](./the-upswing.md) by Robert D. Putnam:** Looks at historical periods of greater social cohesion and collective action in the U.S., offering context for the decline in the ability to undertake large-scale projects discussed in *Abundance*.  
 * **_Golden Gates: Fighting for the Future of San Francisco_ by Conor Dougherty:** Provides a focused case study of the housing crisis in the San Francisco Bay Area, illustrating many of the dynamics of regulatory barriers and local opposition discussed in *Abundance*.  
-* **[🤔🌍📈✅ Factfulness: Ten Reasons We're Wrong About the World - and Why Things Are Better Than You Think](/content/books/factfulness.md) by Hans Rosling:** While broader in scope, this book's data-driven approach to global trends highlights significant progress in many areas, offering a counterpoint to declinist narratives and aligning with the underlying optimism about human potential found in *Abundance*.  
+* **[🤔🌍📈✅ Factfulness: Ten Reasons We're Wrong About the World - and Why Things Are Better Than You Think](./factfulness.md) by Hans Rosling:** While broader in scope, this book's data-driven approach to global trends highlights significant progress in many areas, offering a counterpoint to declinist narratives and aligning with the underlying optimism about human potential found in *Abundance*.  
 * **_The Raging 2020s: Companies, Countries, People—and the Fight for Our Future_ by Alec Ross:** Discusses the technological and economic shifts shaping the current era and the policy choices countries face, touching on themes of innovation, competitiveness, and the role of government in shaping the future.  
   
-## 💬 [Gemini](/content/software/gemini.md) Prompt (gemini-2.5-flash-preview-04-17)  
+## 💬 [Gemini](../software/gemini.md) Prompt (gemini-2.5-flash-preview-04-17)  
 > Write a markdown-formatted (start headings at level H2) book report, followed by a plethora of additional similar, contrasting, and creatively related book recommendations on Abundance by Ezra Klein. Be thorough in content discussed but concise and economical with your language. Structure the report with section headings and bulleted lists to avoid long blocks of text.

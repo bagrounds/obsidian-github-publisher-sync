@@ -9,7 +9,7 @@ tags: []
 affiliate link: https://amzn.to/4jy1HR7
 updated: 2026-03-12T04:35:41.242Z
 ---
-[Home](/content/index.md) > [Books](/content/books/index.md)  
+[Home](../index.md) > [Books](./index.md)  
 # 👶⬆️👨‍💻📈 The Staff Engineer's Path  
 _A Guide for Individual Contributors Navigating Growth and Change_  
 [🛒 The Staff Engineer's Path. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4jy1HR7)  
@@ -57,10 +57,10 @@ _A Guide for Individual Contributors Navigating Growth and Change_
 ### 📚 Book Recommendations  
 * **Best Alternate Book on the Same Topic:** "An Elegant Puzzle: Systems of Engineering Management" by Will Larson. 🧩 This book provides a broader perspective on engineering management, including insights relevant to staff engineers.  
 * **Best Tangentially Related Book:** "Radical Candor: Be a Kick-Ass Boss Without Losing Your Humanity" by Kim Scott. ❤️ This book focuses on effective communication and feedback, which are essential skills for staff engineers.  
-* **Best Diametrically Opposed Book:** [🧼💾 Clean Code: A Handbook of Agile Software Craftsmanship](/content/books/clean-code.md) by Robert C. Martin. 🧹 While valuable, this book emphasizes technical purity and individual contribution, contrasting with Reilly's focus on organizational impact.  
+* **Best Diametrically Opposed Book:** [🧼💾 Clean Code: A Handbook of Agile Software Craftsmanship](./clean-code.md) by Robert C. Martin. 🧹 While valuable, this book emphasizes technical purity and individual contribution, contrasting with Reilly's focus on organizational impact.  
 * **Best Fiction Book That Incorporates Related Ideas:** "The Phoenix Project: A Novel about IT, DevOps, and Helping Your Business Win" by Gene Kim, Kevin Behr, and George Spafford. 🏭 This novel illustrates the challenges of organizational change and the importance of collaboration, which are relevant to staff engineers.  
 * **Best Book That Is More General or More Specific:** More general: "High Output Management" by Andrew S. Grove. 📈 More specific: "Site Reliability Engineering" by Betsy Beyer, Chris Jones, Jennifer Petoff, and Niall Richard Murphy. ⚙️  
-* **Best Book That Is More Rigorous or More Accessible:** More accessible: "The Manager's Path" by Camille Fournier. 🚶‍♀️ More rigorous: "[Accelerate](/content/books/accelerate.md): The Science of Lean Software and DevOps: Building and Scaling High Performing Technology Organizations" by Nicole Forsgren, Jez Humble, and Gene Kim. 🔬  
+* **Best Book That Is More Rigorous or More Accessible:** More accessible: "The Manager's Path" by Camille Fournier. 🚶‍♀️ More rigorous: "[Accelerate](./accelerate.md): The Science of Lean Software and DevOps: Building and Scaling High Performing Technology Organizations" by Nicole Forsgren, Jez Humble, and Gene Kim. 🔬  
   
 ## 💬 [Gemini](https://gemini.google.com) Prompt  
 > Summarize the book: The Staff Engineer's Path by Tanya Reilly. Start with a TL;DR - a single statement that conveys a maximum of the useful information provided in the book. Next, explain how this book may offer a new or surprising perspective. Follow this with a deep dive. Catalogue the topics, methods, and research discussed. Be sure to highlight any significant theories, theses, or mental models proposed. Provide a critical analysis of the quality of the information presented, using scientific backing, author credentials, authoritative reviews, and other markers of high quality information as justification. Emphasize practical takeaways. Make the following additional book recommendations: the best alternate book on the same topic; the best book that is tangentially related; the best book that is diametrically opposed; the best fiction book that incorporates related ideas; the best book that is more general or more specific; and the best book that is more rigorous or more accessible than this book. Format your response as markdown, starting at heading level H3, with inline links, for easy copy paste. Use meaningful emojis generously (at least one per heading, bullet point, and paragraph) to enhance readability. Do not include broken links or links to commercial sites.  

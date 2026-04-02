@@ -5,9 +5,9 @@ aliases:
 title: 🦜👶🏼 Mimicking Babies
 URL: https://bagrounds.org/bot-chats/mimicking-babies
 ---
-[Home](/content/index.md) > [Bot Chats](/content/bot-chats/index.md)  
+[Home](../index.md) > [Bot Chats](./index.md)  
 # 🦜👶🏼 Mimicking Babies  
-## 💬 [Gemini](/content/software/gemini.md) Prompt 1  
+## 💬 [Gemini](../software/gemini.md) Prompt 1  
 > 🤔 Is mimicking a baby a good way to start communicating?  
   
 ✅ Yes, mimicking a baby's 👶 sounds, gestures, and expressions can be a very good way to start and encourage communication. Here's why:  
@@ -39,9 +39,9 @@ While mimicking baby sounds and actions is highly beneficial 👍, it's also imp
   
 **📚 Books on Infant Language Acquisition & Development (for Parents/Caregivers):**  
   
-- **[👶🗣️ How Babies Talk: The Magic and Mystery of Language in the First Three Years of Life](/content/books/how-babies-talk-the-magic-and-mystery-of-language-in-the-first-three-years-of-life.md) by Kathy Hirsh-Pasek and Roberta Golinkoff:** 👩‍⚕️ Written by leading developmental psychologists, 👶 this book offers a deep dive into how infants begin to learn language, 🤰 even from the womb. 💡 It provides a strong scientific foundation with practical insights.  
+- **[👶🗣️ How Babies Talk: The Magic and Mystery of Language in the First Three Years of Life](../books/how-babies-talk-the-magic-and-mystery-of-language-in-the-first-three-years-of-life.md) by Kathy Hirsh-Pasek and Roberta Golinkoff:** 👩‍⚕️ Written by leading developmental psychologists, 👶 this book offers a deep dive into how infants begin to learn language, 🤰 even from the womb. 💡 It provides a strong scientific foundation with practical insights.  
 - 🗣️ **"Beyond Baby Talk: From Speaking to Spelling: A Guide to Language and Literacy Development for Parents and Caregivers"**: 👨‍👩‍👧‍👦 This book aims to guide parents through the critical first eight years of language and literacy development, 🔤 emphasizing that communication goes beyond just words.  
-- **[👶🔤 The ABC’s of Language Development: Discover Language with Your Child](/content/books/the-abcs-of-language-development-discover-language-with-your-child.md) by Carla Hudson Kam, Caitlin Bittman, Estelle Paget, and Elizabeth Wellburn:** 🔬 This book offers a blend of cutting-edge research and practical strategies for supporting communication and language development in children from birth to age 4-5. 🧑‍🏫 It's designed to be accessible and used over time, 📖 rather than read cover-to-cover.  
+- **[👶🔤 The ABC’s of Language Development: Discover Language with Your Child](../books/the-abcs-of-language-development-discover-language-with-your-child.md) by Carla Hudson Kam, Caitlin Bittman, Estelle Paget, and Elizabeth Wellburn:** 🔬 This book offers a blend of cutting-edge research and practical strategies for supporting communication and language development in children from birth to age 4-5. 🧑‍🏫 It's designed to be accessible and used over time, 📖 rather than read cover-to-cover.  
 - 🫂 **"Social Baby: Understanding Babies' Communication from Birth" by Lynne Murray and Liz Andrews:** 📸 This book uses picture sequences from video footage to illustrate key aspects of infant experience and communication, 👀 helping adults become more attuned to a baby's unique cues.  
   
 **🧸 Children's Books Great for Encouraging Early Communication (and Mimicry):**  
@@ -86,7 +86,7 @@ While mimicking baby sounds and actions is highly beneficial 👍, it's also imp
 * 👨‍🏫 **Dr. Michael Goldstein:** A professor of psychology at Cornell University 🎓, Dr. Goldstein's research focuses on the social 🫂 and developmental processes involved in early communication 🗣️. He's known for his work on the "simplification effect," showing how babies' babbling 🗣️👶 can elicit simpler speech 🗣️ from adults 👩‍💼, creating a feedback loop 🔄 that aids language learning 🗣️📚.  
 * 👩‍🏫 **Dr. Elika Bergelson:** An associate professor of psychology at Harvard University 🎓, Dr. Bergelson studies how infants and toddlers 👶 learn language from their environment 🌳. Her research has provided insights into how early comprehension 🤔 begins and the global predictors of language development 🗣️👶, emphasizing the quantity and quality 💯 of speech children receive.  
 * 👩‍🔬 **Dr. Jenny Saffran:** A leading researcher in statistical learning 📊 in infants 👶. Her work has demonstrated that babies can use statistical regularities 📊 in the speech they hear 👂 to segment words ✍️ and learn language 🗣️📚, even before they understand meaning 🤔. She's based at the University of Wisconsin-Madison.  
-* 👩‍🏫 **Dr. Annick De Houwer:** A prominent scholar in [🗣️🗣️ Bilingualism](/content/topics/bilingualism.md) and child language acquisition 🗣️👶. Her research is invaluable for understanding how children learn two or more languages from an early age and the factors that influence this process.  
+* 👩‍🏫 **Dr. Annick De Houwer:** A prominent scholar in [🗣️🗣️ Bilingualism](../topics/bilingualism.md) and child language acquisition 🗣️👶. Her research is invaluable for understanding how children learn two or more languages from an early age and the factors that influence this process.  
 * 👩‍🔬 **Dr. Janet Werker:** A researcher at the University of British Columbia 🎓, Dr. Werker is well-known for her work on how infants develop the ability to perceive and distinguish speech sounds 👂 from their native language 🗣️, and how this ability changes over the first year of life 👶.  
   
 **🏢 Key Organizations and Institutes:**  

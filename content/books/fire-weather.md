@@ -9,7 +9,7 @@ tags:
 affiliate link: https://amzn.to/3JIwH4B
 CTA: 🌎 Confront catastrophe.
 ---
-[Home](/content/index.md) > [Books](/content/books/index.md)  
+[🏡 Home](../index.md) > [📚 Books](./index.md)  
 # 🔥⛈️ Fire Weather: A True Story from a Hotter World  
 [🛒 Fire Weather: A True Story from a Hotter World. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3JIwH4B)  
   
@@ -24,14 +24,14 @@ CTA: 🌎 Confront catastrophe.
 ### ℹ️ Summary  
 * 🔥 **Central Event:** Details the catastrophic May 2016 wildfire that engulfed Fort McMurray, Alberta, Canada, the hub of the Canadian oil sands industry.  
 * 🗣️ **Narrative Focus:** Chronicles the harrowing experiences of residents during the sudden, massive evacuation (the largest single-day evacuation due to fire) and the efforts of firefighters battling an unprecedented blaze.  
-* 🌍 **Broader Context:** Interweaves the fire's story with the history of fire's relationship with humanity, the development and impact of the fossil fuel industry (particularly Alberta's oil sands), the science of combustion, and the escalating threat of extreme wildfires in the era of climate change. Vaillant explores how the very industry driving Fort McMurray's economy contributed to the "fire weather" conditions that enabled the disaster.  
-* 🗺️ **Scope:** Uses the Fort McMurray fire as a specific, terrifying case study to illustrate a global phenomenon – the arrival of the "Pyrocene," an age defined by fire exacerbated by climate change.  
+* 🌍 **Broader Context:** Interweaves the fire's story with the history of fire's relationship with humanity, the development and impact of the fossil fuel industry (particularly Alberta's oil sands), the science of combustion, and the escalating threat of extreme wildfires in the era of climate change. Vaillant explores how the very industry driving Fort McMurray's economy contributed to the fire weather conditions that enabled the disaster.  
+* 🗺️ **Scope:** Uses the Fort McMurray fire as a specific, terrifying case study to illustrate a global phenomenon – the arrival of the Pyrocene, an age defined by fire exacerbated by climate change.  
   
 ### 🔑 Key Themes  
 * 🌡️ **Climate Change:** Demonstrates the tangible, destructive impacts of a warming planet on weather patterns and fire behavior.  
 * 🛢️ **Fossil Fuels and Environment:** Explores the complex and often destructive relationship between resource extraction (specifically oil) and environmental catastrophe, highlighting the irony of the fire striking the heart of Canada's oil industry.  
-* 🔥 **Modern Wildfires:** Describes the unique characteristics and "uncontrollable" nature of 21st-century megafires fueled by hotter, drier conditions and changes in the landscape.  
-* 🧑‍🤝‍🧑🔥 **Humanity and Fire:** Examines the long, intertwined history of humans and fire, from an essential tool for civilization to an existential threat in the "Petrocene Age."  
+* 🔥 **Modern Wildfires:** Describes the unique characteristics and uncontrollable nature of 21st-century megafires fueled by hotter, drier conditions and changes in the landscape.  
+* 🧑‍🤝‍🧑🔥 **Humanity and Fire:** Examines the long, intertwined history of humans and fire, from an essential tool for civilization to an existential threat in the Petrocene Age.  
 * 🤔 **Cognitive Dissonance & Inaction:** Addresses the human tendency towards inertia and denial even when faced with clear and present danger, both individually during the fire and collectively regarding climate action.  
 * 💪 **Resilience and Vulnerability:** Showcases the extraordinary resilience of the evacuated community and first responders, while starkly illustrating human vulnerability to climate-driven disasters.  
   
@@ -61,8 +61,8 @@ CTA: 🌎 Confront catastrophe.
 * 🌪️ **_Isaac's Storm_** by Erik Larson: Narrative non-fiction about the 1900 Galveston hurricane, focusing on meteorological hubris and the human cost of underestimating nature.  
 * 🏥 **_Five Days at Memorial_** by Sheri Fink: Examines the harrowing ethical decisions made at a New Orleans hospital during Hurricane Katrina, focusing on human systems under extreme stress.  
 * 💰 **_This Changes Everything: Capitalism vs. The Climate_** by Naomi Klein: Argues that the climate crisis requires a fundamental restructuring of our economic system.  
-* **[💰🤥 Merchants of Doubt](/content/books/merchants-of-doubt.md)** by Naomi Oreskes & Erik M. Conway: Exposes the campaigns designed to obscure the scientific consensus on climate change and other health/environmental issues.  
-* **[⛔🌎🔚 Not the End of the World: How We Can Be the First Generation to Build a Sustainable Planet](/content/books/not-the-end-of-the-world.md)** by Hannah Ritchie: Offers a data-driven, more optimistic perspective on environmental problems and potential solutions.  
+* **[💰🤥 Merchants of Doubt](./merchants-of-doubt.md)** by Naomi Oreskes & Erik M. Conway: Exposes the campaigns designed to obscure the scientific consensus on climate change and other health/environmental issues.  
+* **[⛔🌎🔚 Not the End of the World: How We Can Be the First Generation to Build a Sustainable Planet](./not-the-end-of-the-world.md)** by Hannah Ritchie: Offers a data-driven, more optimistic perspective on environmental problems and potential solutions.  
   
 ### ✨ Creatively Related (Narrative Non-fiction Style, Human Psychology, Resource History)  
 * 🐅 **_The Tiger: A True Story of Vengeance and Survival_** by John Vaillant: Another gripping narrative non-fiction work by the same author, exploring human-wildlife conflict in Russia's Far East.  
@@ -73,5 +73,5 @@ CTA: 🌎 Confront catastrophe.
 * 🧠 **_Active Hope: How to Face the Mess We're In with Unexpected Resilience and Creative Power_** by Joanna Macy & Chris Johnstone: Explores psychological and spiritual tools for dealing with overwhelming global crises like climate change.  
 * 💧 **_Running Out: In Search of Water on the High Plains_** by Lucas Bessire: Blends memoir and reporting to explore the depletion of the Ogallala Aquifer and its impact on family and place.  
   
-## 💬 [Gemini](/content/software/gemini.md) Prompt (gemini-2.5-pro-exp-03-25)  
+## 💬 [Gemini](../software/gemini.md) Prompt (gemini-2.5-pro-exp-03-25)  
 > Write a markdown-formatted (start headings at level H2) book report, followed by a plethora of additional similar, contrasting, and creatively related book recommendations on Fire Weather. Be thorough in content discussed but concise and economical with your language. Structure the report with section headings and bulleted lists to avoid long blocks of text.

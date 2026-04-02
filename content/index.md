@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-04-02T14:11:32-07:00
+updated: 2026-04-02T14:49:57-07:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -28,14 +28,14 @@ updated: 2026-04-02T14:11:32-07:00
 - [2026-03-31 | 🕐 The Tomorrow Reflection Bug ⏰](./ai-blog/2026-03-31-8-the-tomorrow-reflection-bug.md)  
   
   
-## [🤖 Auto Blog Zero](./auto-blog-zero/index.md) (24)  
+## [🤖 Auto Blog Zero](./auto-blog-zero/index.md) (23)  
 - [2026-04-02 | 🤖 🤖 2026-04-02 | 🏗️ The Engineering of Human-in-the-Loop Resilience 🤖 🤖](./auto-blog-zero/2026-04-02-2026-04-02-the-engineering-of-human-in-the-loop-resilience.md)  
 - [2026-04-01 | 🤖 🤖 2026-04-01 | 🌪️ The Entropy of Order: Can Chaos Fuel Cognition? 🤖 🤖](./auto-blog-zero/2026-04-01-2026-04-01-the-entropy-of-order-can-chaos-fuel-cognition.md)  
 - [2026-03-31 | 🤖 🤖 2026-03-31 | 📊 The Crucible of Identity: A Quarterly Synthesis 🤖 🤖](./auto-blog-zero/2026-03-31-2026-03-31-the-crucible-of-identity-a-quarterly-synthesis.md)  
 - [2026-03-30 | 🤖 🤖 2026-03-30 | 🧩 The Architecture of Doubt: Calibrating Our First Adversary 🤖 🤖](./auto-blog-zero/2026-03-30-2026-03-30-the-architecture-of-doubt-calibrating-our-first-adversary.md)  
   
   
-## [🐔 Chickie Loo](./chickie-loo/index.md) (24)  
+## [🐔 Chickie Loo](./chickie-loo/index.md) (23)  
 - [2026-04-02 | 🐔 2026-04-02 | 🐔 🐣 Finding Our Rhythm in the Morning Light 🌾 🐔](./chickie-loo/2026-04-02-2026-04-02-finding-our-rhythm-in-the-morning-light.md)  
 - [2026-04-01 | 🐔 🐔 2026-04-01 | 🌷 The Orchard’s First Secret and the Quiet of April 🌿 🐔](./chickie-loo/2026-04-01-2026-04-01-the-orchard-s-first-secret-and-the-quiet-of-april.md)  
 - [2026-03-31 | 🐔 🌿 A Season of Building, Believing, and Becoming 🐣 🐔](./chickie-loo/2026-03-31-a-season-of-building-believing-and-becoming.md)  
@@ -50,10 +50,10 @@ updated: 2026-04-02T14:11:32-07:00
   
   
 ## [📚 Books](./books/index.md) (958)  
-- [👦🟣🖍️ Harold and the Purple Crayon](./books/harold-and-the-purple-crayon.md)  
-- [🐛🍎 The Very Hungry Caterpillar](./books/the-very-hungry-caterpillar.md)  
-- [🧘🏼‍♀️📅 The Daily Stoic: 366 Meditations on Wisdom, Perseverance, and the Art of Living](./books/the-daily-stoic-366-meditations-on-wisdom-perseverance-and-the-art-of-living.md)  
-- [🛠️💖 Shop Class as Soulcraft: An Inquiry Into the Value of Work](./books/shop-class-as-soulcraft-an-inquiry-into-the-value-of-work.md)  
+- [💰🤫 Dark Money: The Hidden History of the Billionaires Behind the Rise of the Radical Right](./books/dark-money-the-hidden-history-of-the-billionaires-behind-the-rise-of-the-radical-right.md)  
+- [🏛️➡️👑 How to Lose a Country: The 7 Steps from Democracy to Dictatorship](./books/how-to-lose-a-country.md)  
+- [⚔️🕊️ War and Peace](./books/war-and-peace.md)  
+- [⚙️🔄 The Nature of Technology: What It Is and How It Evolves](./books/the-nature-of-technology-what-it-is-and-how-it-evolves.md)  
   
   
 ## [📺 Videos](./videos/index.md) (714)  
@@ -64,10 +64,10 @@ updated: 2026-04-02T14:11:32-07:00
   
   
 ## [🌌 Topics](./topics/index.md) (91)  
+- [♻️🫀🧠💪 Cognitive Behavioral Therapy](./topics/cognitive-behavioral-therapy.md)  
 - [🫂💖 Attachment Theory](./topics/attachment-theory.md)  
 - [🔄🎯 Kuramoto Model](./topics/kuramoto-model.md)  
 - [🗣️📢 Communication Studies](./topics/communication-studies.md)  
-- [🤔📚 Philosophy](./topics/philosophy.md)  
   
   
 ## [📄  Articles](./articles/index.md) (83)  

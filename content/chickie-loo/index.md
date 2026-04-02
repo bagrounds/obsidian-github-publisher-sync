@@ -5,10 +5,10 @@ aliases:
 title: 🐔 Chickie Loo
 URL: https://bagrounds.org/chickie-loo
 backlinks: false
-updated: 2026-04-02T14:11:32-07:00
+updated: 2026-04-02T14:49:57-07:00
 ---
 [Home](../index.md)  
-# 🐔 Chickie Loo (24)  
+# 🐔 Chickie Loo (23)  
 - [🐔 Chickie Loo — AGENTS.md](./AGENTS.md)  
 - [2026-04-02 | 🐔 2026-04-02 | 🐔 🐣 Finding Our Rhythm in the Morning Light 🌾 🐔](./2026-04-02-2026-04-02-finding-our-rhythm-in-the-morning-light.md)  
 - [2026-04-01 | 🐔 🐔 2026-04-01 | 🌷 The Orchard’s First Secret and the Quiet of April 🌿 🐔](./2026-04-01-2026-04-01-the-orchard-s-first-secret-and-the-quiet-of-april.md)  

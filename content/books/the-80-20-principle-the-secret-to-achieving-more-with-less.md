@@ -7,7 +7,7 @@ share: true
 CTA: 🎯 Prioritize effectively.
 affiliate link: https://amzn.to/3WJxsxJ
 ---
-[Home](/content/index.md) > [Books](/content/books/index.md)  
+[Home](../index.md) > [Books](./index.md)  
 # 💯⬇️⬆️ The 80/20 Principle: The Secret to Achieving More with Less  
 [🛒 The 80 20 Principle: The Secret to Achieving More with Less. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3WJxsxJ)  
   
@@ -35,20 +35,20 @@ While widely praised 👍, it's important to note 📝 that the 80/20 ratio is n
 ### 🔎 Similar Reads: Deepening the Focus on Less  
   
 * 🎯 **"The ONE Thing: The Surprisingly Simple Truth Behind Extraordinary Results" by Gary Keller and Jay Papasan:** This book takes the 80/20 principle to its logical extreme 🤯, arguing that you should focus on the one most important task that will make everything else easier or unnecessary.  
-* **[➖💯 Essentialism: The Disciplined Pursuit of Less](/content/books/essentialism-the-disciplined-pursuit-of-less.md) by Greg McKeown:** Like *The 80/20 Principle*, this book champions the idea of doing less, but better. It provides a systematic approach ⚙️ for identifying what is truly essential 💎 and eliminating everything that is not 🗑️.  
+* **[➖💯 Essentialism: The Disciplined Pursuit of Less](./essentialism-the-disciplined-pursuit-of-less.md) by Greg McKeown:** Like *The 80/20 Principle*, this book champions the idea of doing less, but better. It provides a systematic approach ⚙️ for identifying what is truly essential 💎 and eliminating everything that is not 🗑️.  
 * 🐸 **"Eat That Frog!: 21 Great Ways to Stop Procrastinating and Get More Done in Less Time" by Brian Tracy:** This practical guide 🧭 aligns with the 80/20 principle by encouraging readers to tackle their most challenging and important task first thing in the morning 🌄.  
   
 ### 🆚 Contrasting Perspectives: The Other Side of the Coin  
   
-* **[❤️‍🔥💪 Grit: The Power of Passion and Perseverance](/content/books/grit-the-power-of-passion-and-perseverance.md) by Angela Duckworth:** While Koch emphasizes smart work 😎, Duckworth champions the importance of sustained effort 💪 and passion ❤️ over time ⏳. This provides a valuable counterpoint ☯️ to the idea of focusing only on the "vital few."  
-* **[🤿💼 Deep Work: Rules for Focused Success in a Distracted World](/content/books/deep-work.md) by Cal Newport:** Newport argues for the value of intense, focused work sessions 🧘 to produce high-quality output 🏆. While not directly contradicting the 80/20 principle, it emphasizes the importance of the "how" 🤔 in addition to the "what" ❓.  
+* **[❤️‍🔥💪 Grit: The Power of Passion and Perseverance](./grit-the-power-of-passion-and-perseverance.md) by Angela Duckworth:** While Koch emphasizes smart work 😎, Duckworth champions the importance of sustained effort 💪 and passion ❤️ over time ⏳. This provides a valuable counterpoint ☯️ to the idea of focusing only on the "vital few."  
+* **[🤿💼 Deep Work: Rules for Focused Success in a Distracted World](./deep-work.md) by Cal Newport:** Newport argues for the value of intense, focused work sessions 🧘 to produce high-quality output 🏆. While not directly contradicting the 80/20 principle, it emphasizes the importance of the "how" 🤔 in addition to the "what" ❓.  
 * 🌟 **"Outliers: The Story of Success" by Malcolm Gladwell:** Gladwell explores the various factors that contribute to high levels of success 💯, including cultural background 🌍, opportunity 🚪, and the "10,000-hour rule." This offers a broader perspective 🔭 on achievement beyond simply identifying high-leverage activities.  
   
 ### 🎨 Creative Connections: Expanding the Principles  
   
 * 🏝️ **"The 4-Hour Workweek: Escape 9-5, Live Anywhere, and Join the New Rich" by Timothy Ferriss:** Ferriss was heavily influenced by *The 80/20 Principle* and applies its concepts to lifestyle design 🏡, advocating for outsourcing 🤝, automation 🤖, and focusing on income-generating activities 💰 to create a life of freedom and flexibility 🤸.  
-* **[📉📈🌪️💪 Antifragile: Things That Gain from Disorder](/content/books/antifragile-things-that-gain-from-disorder.md) by Nassim Nicholas Taleb:** This book explores systems that not only resist shocks ⚡ but actually benefit from them 🌱. This can be seen as a creative extension 💡 of the 80/20 principle, as it encourages focusing on activities and systems that have the potential for disproportionate upside 🚀.  
-* **[🤔🐇🐢 Thinking, Fast and Slow](/content/books/thinking-fast-and-slow.md) by Daniel Kahneman:** Understanding the cognitive biases 🧠 that Kahneman outlines can help in applying the 80/20 principle more effectively 👍. By recognizing our mental shortcuts and irrational tendencies 🤪, we can make better decisions about where to focus our efforts 🎯.  
+* **[📉📈🌪️💪 Antifragile: Things That Gain from Disorder](./antifragile-things-that-gain-from-disorder.md) by Nassim Nicholas Taleb:** This book explores systems that not only resist shocks ⚡ but actually benefit from them 🌱. This can be seen as a creative extension 💡 of the 80/20 principle, as it encourages focusing on activities and systems that have the potential for disproportionate upside 🚀.  
+* **[🤔🐇🐢 Thinking, Fast and Slow](./thinking-fast-and-slow.md) by Daniel Kahneman:** Understanding the cognitive biases 🧠 that Kahneman outlines can help in applying the 80/20 principle more effectively 👍. By recognizing our mental shortcuts and irrational tendencies 🤪, we can make better decisions about where to focus our efforts 🎯.  
   
-## 💬 [Gemini](/content/software/gemini.md) Prompt (gemini-2.5-pro)  
+## 💬 [Gemini](../software/gemini.md) Prompt (gemini-2.5-pro)  
 > Write a markdown-formatted (start headings at level H2) book report, followed by a plethora of additional similar, contrasting, and creatively related book recommendations on The 80/20 Principle: The Secret to Achieving More with Less. Be thorough in content discussed but concise and economical with your language. Structure the report with section headings and bulleted lists to avoid long blocks of text.

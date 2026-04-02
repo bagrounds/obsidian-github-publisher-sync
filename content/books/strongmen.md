@@ -7,8 +7,11 @@ URL: https://bagrounds.org/books/strongmen
 Author:
 tags:
 affiliate link: https://amzn.to/43Mp17S
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_time: 2026-04-02T00:00:00Z
+force_analyze_links: false
 ---
-[Home](/content/index.md) > [Books](/content/books/index.md)  
+[Home](../index.md) > [Books](./index.md)  
 # 🇮🇹🇩🇪🇱🇾🇷🇺🇺🇸 Strongmen: Mussolini to the Present  
 by Ruth Ben-Ghiat  
 [🛒 Strongmen: Mussolini to the Present. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/43Mp17S)  
@@ -70,11 +73,11 @@ Ruth Ben-Ghiat's *Strongmen* argues that 📢 authoritarian leaders, ⏳ past an
   
 ### Book Recommendations 📚  
   
-* ⭐ **Best Alternate Book on the Same Topic:** *[On Tyranny: Twenty Lessons from the Twentieth Century](/content/books/on-tyranny.md)* by Timothy Snyder. 📖 A concise and practical guide to resisting authoritarianism, ✊ drawing on the lessons of the 20th century. 🕰️  
-* 🔗 **Best Book That is Tangentially Related:** [🗳️🏛️☠️ How Democracies Die](/content/books/how-democracies-die.md) by Steven Levitsky and Daniel Ziblatt. 💔 Explores how democracies can be undermined by seemingly innocuous actions by political leaders. 🤵  
+* ⭐ **Best Alternate Book on the Same Topic:** *[On Tyranny: Twenty Lessons from the Twentieth Century](./on-tyranny.md)* by Timothy Snyder. 📖 A concise and practical guide to resisting authoritarianism, ✊ drawing on the lessons of the 20th century. 🕰️  
+* 🔗 **Best Book That is Tangentially Related:** [🗳️🏛️☠️ How Democracies Die](./how-democracies-die.md) by Steven Levitsky and Daniel Ziblatt. 💔 Explores how democracies can be undermined by seemingly innocuous actions by political leaders. 🤵  
 * 🔄 **Best Book That is Diametrically Opposed:** *The End of History and the Last Man* by Francis Fukuyama. 📜 While not directly advocating for authoritarianism, 🚫 this book's thesis that liberal democracy is the endpoint 🏁 of ideological evolution presents a stark contrast ↔️ to the cyclical nature of authoritarianism depicted in *Strongmen*. 🔄  
-* 🎭 **Best Fiction Book That Incorporates Related Ideas:** [🙅‍♀️👹 It Can't Happen Here](/content/books/it-cant-happen-here.md) by Sinclair Lewis. ✍️ A satirical novel that imagines the rise 🚀 of a populist demagogue in the United States. 🇺🇸  
-* 🌍 **Best Book That is More General:** [👹 The Origins of Totalitarianism](/content/books/the-origins-of-totalitarianism.md) by Hannah Arendt. 💭 A more philosophical and theoretical exploration of the roots 🌱 of totalitarianism. 👿  
+* 🎭 **Best Fiction Book That Incorporates Related Ideas:** [🙅‍♀️👹 It Can't Happen Here](./it-cant-happen-here.md) by Sinclair Lewis. ✍️ A satirical novel that imagines the rise 🚀 of a populist demagogue in the United States. 🇺🇸  
+* 🌍 **Best Book That is More General:** [👹 The Origins of Totalitarianism](./the-origins-of-totalitarianism.md) by Hannah Arendt. 💭 A more philosophical and theoretical exploration of the roots 🌱 of totalitarianism. 👿  
 * 🎯 **Best Book That is More Specific:** *Blackshirts and Reds: Rational Fascism and the Overthrow of Communism* by Michael Parenti. ⚔️ Takes a narrower focus, presenting a defense 🛡️ of communism in contrast to fascism. 🚩  
 * 🔬 **Best Book That is More Rigorous:** *The Anatomy of Fascism* by Robert O. Paxton. 📚 Provides a more scholarly and in-depth analysis of the historical and social context of fascism. 🏛️  
 * 💡 **Best Book That is More Accessible:** *The Authoritarian Temptation* by Yascha Mounk. 🗣️ A more accessible and contemporary analysis of the rise 📈 of populism and the threat to democracy. ⚠️  

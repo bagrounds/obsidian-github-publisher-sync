@@ -10,7 +10,7 @@ Channel: Heather Cox Richardson
 tags:
 youtube: https://www.youtube.com/embed/ICXBZ1X1UhU
 ---
-[Home](/content/index.md) > [Videos](/content/videos/index.md)  
+[Home](../index.md) > [Videos](./index.md)  
 # 🗣️🗓️🇺🇸 Politics Chat, November 11, 2025  
 ![Politics Chat, November 11, 2025](https://www.youtube.com/embed/ICXBZ1X1UhU)  
   
@@ -53,17 +53,17 @@ youtube: https://www.youtube.com/embed/ICXBZ1X1UhU
   
 ### ↔️ Similar  
   
-* [🇺🇸⛓️‍💥📜🐘 To Make Men Free: A History of the Republican Party](/content/books/to-make-men-free-a-history-of-the-republican-party.md) by Heather Cox Richardson. 🏛️ Explores the historical evolution of the Republican Party from Lincoln to the present, focusing on the concepts of freedom and oligarchy.  
-* [🇺🇲⚔️ How the South Won the Civil War: Oligarchy, Democracy, and the Continuing Fight for the Soul of America](/content/books/how-the-south-won-the-civil-war-oligarchy-democracy-and-the-continuing-fight-for-the-soul-of-america.md) by Heather Cox Richardson. 💡 Uses historical parallels to explain how the ideology of a powerful, wealthy elite has threatened American democracy throughout history.  
+* [🇺🇸⛓️‍💥📜🐘 To Make Men Free: A History of the Republican Party](../books/to-make-men-free-a-history-of-the-republican-party.md) by Heather Cox Richardson. 🏛️ Explores the historical evolution of the Republican Party from Lincoln to the present, focusing on the concepts of freedom and oligarchy.  
+* [🇺🇲⚔️ How the South Won the Civil War: Oligarchy, Democracy, and the Continuing Fight for the Soul of America](../books/how-the-south-won-the-civil-war-oligarchy-democracy-and-the-continuing-fight-for-the-soul-of-america.md) by Heather Cox Richardson. 💡 Uses historical parallels to explain how the ideology of a powerful, wealthy elite has threatened American democracy throughout history.  
   
 ### 🆚 Contrasting  
   
 * *Suicide of the West: How the Rebirth of Tribalism, Populism, and Nationalism is Destroying American Democracy* by Jonah Goldberg. 🗽 Argues that the principles of the American experiment are being destroyed by the rise of divisive political movements and emotional tribalism.  
-* [😇🧠 The Righteous Mind: Why Good People Are Divided by Politics and Religion](/content/books/the-righteous-mind.md) by Jonathan Haidt. 🤔 Provides a psychological perspective on political division, explaining the moral foundations that cause liberals and conservatives to hold fundamentally different views on governance and justice.  
+* [😇🧠 The Righteous Mind: Why Good People Are Divided by Politics and Religion](../books/the-righteous-mind.md) by Jonathan Haidt. 🤔 Provides a psychological perspective on political division, explaining the moral foundations that cause liberals and conservatives to hold fundamentally different views on governance and justice.  
   
 ### 🎨 Creatively Related  
   
-* [👹 The Origins of Totalitarianism](/content/books/the-origins-of-totalitarianism.md) by Hannah Arendt. 📜 A foundational work that explores the historical and political conditions that lead to the rise of authoritarian and totalitarian regimes.  
+* [👹 The Origins of Totalitarianism](../books/the-origins-of-totalitarianism.md) by Hannah Arendt. 📜 A foundational work that explores the historical and political conditions that lead to the rise of authoritarian and totalitarian regimes.  
 * *Rules for Radicals: A Practical Primer for Realistic Radicals* by Saul Alinsky. ✊ A classic guide to community organizing and political change, focused on using the power of citizens to challenge established systems and power structures.  
   
 ## 🐦 Tweet  

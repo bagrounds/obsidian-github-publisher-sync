@@ -7,7 +7,7 @@ share: true
 affiliate link: https://amzn.to/4dISzYB
 CTA: 🌱 Nurture successful children.
 ---
-[Home](/content/index.md) > [Books](/content/books/index.md)  
+[Home](../index.md) > [Books](./index.md)  
 # 🧪👶📈 Scientific Secrets for Raising Kids Who Thrive  
 [🛒 Scientific Secrets for Raising Kids Who Thrive. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4dISzYB)  
   
@@ -27,7 +27,7 @@ CTA: 🌱 Nurture successful children.
     - ➡️ instead  
         - 😇🙌 reward good behavior  
         - 🗣️❔ explain why  
-- ✅🧭 Be [👨‍👩‍👦🧭🤝 Authoritative](/content/topics/authoritative-parenting.md)  
+- ✅🧭 Be [👨‍👩‍👦🧭🤝 Authoritative](../topics/authoritative-parenting.md)  
     - 🚫👑 not authoritarian  
     - 🚫🟢 not permissive  
     - 🚫🥱 not uninvolved  
@@ -39,9 +39,9 @@ CTA: 🌱 Nurture successful children.
     - 🙌🏋️‍♀️ Praise effort, not intelligence  
 - 🧮 Number Sense  
     - 🌱🚀 Early math skill predicts long term success  
-    - [🔢💯 Hundred Board](/content/topics/hundred-board.md)  
+    - [🔢💯 Hundred Board](../topics/hundred-board.md)  
     - 🧩🃏♟️ Board Games  
-- 🦜🌎 [🗣️🗣️ Bilingualism](/content/topics/bilingualism.md)  
+- 🦜🌎 [🗣️🗣️ Bilingualism](../topics/bilingualism.md)  
     - 📈 improves  
         - 📚 reading comprehension  
         - 🧠 working memory  
@@ -102,14 +102,14 @@ The book/course explores numerous themes crucial for raising thriving children, 
   
 ### 🔬 Similar Books (Science-Based Parenting & Child Development)  
   
-* **[🕳️🧠👶🏽 The Whole-Brain Child: 12 Revolutionary Strategies to Nurture Your Child's Developing Mind](/content/books/the-whole-brain-child.md)** by Daniel J. Siegel and Tina Payne Bryson. This highly respected book explains the science of a child's developing brain in an accessible way and offers practical strategies for parents. 🚀  
-* **[🤱🏼🤿🪞🌱 Parenting from the Inside Out: How a Deeper Self-Understanding Can Help You Raise Children Who Thrive](/content/books/parenting-from-the-inside-out-how-a-deeper-self-understanding-can-help-you-raise-children-who-thrive.md)** by Daniel J. Siegel and Mary Hartzell. This book explores how a parent's own experiences and self-understanding impact their parenting and a child's development. 🤝  
-* **[🔬🧠👶📈😊 The Science of Parenting: How Today's Brain Research Can Help You Raise Happy, Emotionally Balanced Children](/content/books/the-science-of-parenting-how-todays-brain-research-can-help-you-raise-happy-emotionally-balanced-children.md)** by Margot Sunderland. This guide compiles the latest scientific and neurobiological research to help parents understand their children's brains and offers scientifically proven advice. 💡  
-* **[🤰👶🔬👩‍⚕️ 🧪 The Science of Mom: A Research-Based Guide to Your Baby's First Year](/content/books/the-science-of-mom.md)** by Alice Callahan. Written by a scientist, this book explains the research behind common "science-based" parenting advice for a baby's first year. 🍼  
+* **[🕳️🧠👶🏽 The Whole-Brain Child: 12 Revolutionary Strategies to Nurture Your Child's Developing Mind](./the-whole-brain-child.md)** by Daniel J. Siegel and Tina Payne Bryson. This highly respected book explains the science of a child's developing brain in an accessible way and offers practical strategies for parents. 🚀  
+* **[🤱🏼🤿🪞🌱 Parenting from the Inside Out: How a Deeper Self-Understanding Can Help You Raise Children Who Thrive](./parenting-from-the-inside-out-how-a-deeper-self-understanding-can-help-you-raise-children-who-thrive.md)** by Daniel J. Siegel and Mary Hartzell. This book explores how a parent's own experiences and self-understanding impact their parenting and a child's development. 🤝  
+* **[🔬🧠👶📈😊 The Science of Parenting: How Today's Brain Research Can Help You Raise Happy, Emotionally Balanced Children](./the-science-of-parenting-how-todays-brain-research-can-help-you-raise-happy-emotionally-balanced-children.md)** by Margot Sunderland. This guide compiles the latest scientific and neurobiological research to help parents understand their children's brains and offers scientifically proven advice. 💡  
+* **[🤰👶🔬👩‍⚕️ 🧪 The Science of Mom: A Research-Based Guide to Your Baby's First Year](./the-science-of-mom.md)** by Alice Callahan. Written by a scientist, this book explains the research behind common "science-based" parenting advice for a baby's first year. 🍼  
 * 😇 **How to Raise Kids Who Aren't Assholes: Science-Based Strategies for Better Parenting-from Tots to Teens** by Melinda Wenner Moyer. This book provides research-backed strategies for instilling positive traits like honesty and generosity in children. 💖  
-* **[🔌👋 The Power of Showing Up: How Parental Presence Shapes Who Our Kids Become and How Their Brains Get Wired](/content/books/the-power-of-showing-up.md)** by Daniel J. Siegel and Tina Payne Bryson. This book focuses on the importance of parental presence and attachment based on neuroscience and attachment science. 👨‍👩‍👧‍👦  
-* **[👶📊😌 Cribsheet: A Data-Driven Guide to Better, More Relaxed Parenting, from Birth to Preschool](/content/books/cribsheet.md)** by Emily Oster. An economist analyzes data to provide insights on common parenting questions during the early years. 📈  
-* **[🫄➕ Expecting Better: Why the Conventional Pregnancy Wisdom Is Wrong - and What You Really Need to Know](/content/books/expecting-better.md)** by Emily Oster. This book applies a data-driven approach to pregnancy, similar to *Cribsheet*. 🤰  
+* **[🔌👋 The Power of Showing Up: How Parental Presence Shapes Who Our Kids Become and How Their Brains Get Wired](./the-power-of-showing-up.md)** by Daniel J. Siegel and Tina Payne Bryson. This book focuses on the importance of parental presence and attachment based on neuroscience and attachment science. 👨‍👩‍👧‍👦  
+* **[👶📊😌 Cribsheet: A Data-Driven Guide to Better, More Relaxed Parenting, from Birth to Preschool](./cribsheet.md)** by Emily Oster. An economist analyzes data to provide insights on common parenting questions during the early years. 📈  
+* **[🫄➕ Expecting Better: Why the Conventional Pregnancy Wisdom Is Wrong - and What You Really Need to Know](./expecting-better.md)** by Emily Oster. This book applies a data-driven approach to pregnancy, similar to *Cribsheet*. 🤰  
   
 ### ☯️ Contrasting Perspectives  
   
@@ -126,7 +126,7 @@ The book/course explores numerous themes crucial for raising thriving children, 
 * 📖 **Children's Literature Highlighting Key Themes:** Reading and discussing children's books that feature characters demonstrating resilience, empathy, problem-solving, or a love of learning can be a creative way to reinforce the concepts from the parenting book with children. 👦 For instance, books using high contrast for infants are scientifically supported for visual development. 👀 Similarly, books with individually named characters can aid language development. 🗣️  
 * 🧸 **Books on the Importance of Play:** Exploring works that champion the necessity of unstructured play for child development aligns with themes in 🧪 Scientific Secrets. ⚽  
   
-## 💬 [Gemini](/content/software/gemini.md) Prompt (gemini-2.5-flash-preview-04-17)  
+## 💬 [Gemini](../software/gemini.md) Prompt (gemini-2.5-flash-preview-04-17)  
 > Write a markdown-formatted (start headings at level H2) book report, followed by a plethora of additional similar, contrasting, and creatively related book recommendations on Scientific Secrets for Raising Kids Who Thrive. Be thorough in content discussed but concise and economical with your language. Structure the report with section headings and bulleted lists to avoid long blocks of text.  
   
 ## 🐦 Tweet  

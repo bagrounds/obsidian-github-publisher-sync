@@ -5,16 +5,16 @@ aliases:
 title: ♟️👑⚔️🧠 Chess
 URL: https://bagrounds.org/bot-chats/chess
 ---
-[Home](/content/index.md) > [Bot Chats](/content/bot-chats/index.md)  
+[Home](../index.md) > [Bot Chats](./index.md)  
 # ♟️👑⚔️🧠 Chess  
-## 💬 [Gemini](/content/software/gemini.md) Prompt 1  
+## 💬 [Gemini](../software/gemini.md) Prompt 1  
 > Recommend some books on chess 📚  
   
 Choosing the right chess book depends heavily on your current skill level and what you want to focus on. Here's a breakdown by common skill levels, with some highly recommended titles:  
   
 ⭐ **For Absolute Beginners:**  
   
-* **[♟️🧑‍🏫 Bobby Fischer Teaches Chess](/content/books/bobby-fischer-teaches-chess.md) by Bobby Fischer, Stuart Margulies, and Don Mosenfelder:** This classic uses a "programmed learning" method, asking questions and guiding you through basic tactics and checkmates. It's excellent for understanding fundamental concepts and patterns.💡  
+* **[♟️🧑‍🏫 Bobby Fischer Teaches Chess](../books/bobby-fischer-teaches-chess.md) by Bobby Fischer, Stuart Margulies, and Don Mosenfelder:** This classic uses a "programmed learning" method, asking questions and guiding you through basic tactics and checkmates. It's excellent for understanding fundamental concepts and patterns.💡  
 * 📺 **"How to Win at Chess: The Ultimate Guide for Beginners and Beyond" by Levy Rozman (GothamChess):** Written by a popular YouTube chess instructor, this book is known for being fun, engaging, and covering essential moves and strategies for new players.😄  
 * 🤓 **"Chess for Dummies" by James Eade:** A comprehensive guide that breaks down chess principles in an accessible way for those completely new to the game.  
 * ✍️ **"Logical Chess: Move By Move" by Irving Chernev:** While it might appear a bit more advanced due to its game analysis, Chernev explains *every* move in detail, making it incredibly instructive for beginners who want to understand the reasoning behind each action. 🤔  

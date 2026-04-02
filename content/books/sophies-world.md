@@ -6,8 +6,11 @@ URL: https://bagrounds.org/books/sophies-world
 share: true
 CTA: 💡 Uncover wisdom.
 affiliate link: https://amzn.to/4bc7idt
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_time: 2026-04-01T00:00:00Z
+force_analyze_links: false
 ---
-[Home](/content/index.md) > [Books](/content/books/index.md)  
+[Home](../index.md) > [Books](./index.md)  
 # 🤔🌍 Sophie’s World  
 [🛒 Sophie’s World. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4bc7idt)  
   
@@ -73,7 +76,7 @@ affiliate link: https://amzn.to/4bc7idt
 ## 📚 Book Recommendations  
   
 ### ✨ Similar  
-* [🏍️🧘❓ Zen and the Art of Motorcycle Maintenance: An Inquiry into Values](/content/books/zen-and-the-art-of-motorcycle-maintenance-an-inquiry-into-values.md) by Robert M. Pirsig (philosophical journey)  
+* [🏍️🧘❓ Zen and the Art of Motorcycle Maintenance: An Inquiry into Values](./zen-and-the-art-of-motorcycle-maintenance-an-inquiry-into-values.md) by Robert M. Pirsig (philosophical journey)  
 * 🏛️ The Republic by Plato (dialogue-based philosophy, foundational text)  
 * 👴 Thus Spoke Zarathustra by Friedrich Nietzsche (philosophical narrative)  
   
@@ -82,7 +85,7 @@ affiliate link: https://amzn.to/4bc7idt
 * 🧠 Critique of Pure Reason by Immanuel Kant (dense, rigorous primary text)  
   
 ### 🔗 Related  
-* [🗺️❤️📐 Flatland: A Romance of Many Dimensions](/content/books/flatland-a-romance-of-many-dimensions.md) by Edwin A. Abbott (explores dimensions, perception)  
+* [🗺️❤️📐 Flatland: A Romance of Many Dimensions](./flatland-a-romance-of-many-dimensions.md) by Edwin A. Abbott (explores dimensions, perception)  
 * 🥚 The Egg by Andy Weir (short story on existence, purpose)  
 * 🧚 The Phantom Tollbooth by Norton Juster (children's fantasy with wordplay and philosophical undertones)  
   

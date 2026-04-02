@@ -10,7 +10,7 @@ Channel: Y Combinator
 tags:
 youtube: https://youtu.be/LCEmiRjPEtQ
 ---
-[Home](/content/index.md) > [Videos](/content/videos/index.md) | [🤖🧠💻 Andrej Karpathy](/content/people/andrej-karpathy.md)  
+[Home](../index.md) > [Videos](./index.md) | [🤖🧠💻 Andrej Karpathy](../people/andrej-karpathy.md)  
 # 💻🔄💻 Andrej Karpathy: Software Is Changing (Again)  
 ![Andrej Karpathy: Software Is Changing (Again)](https://youtu.be/LCEmiRjPEtQ)  
   
@@ -18,7 +18,7 @@ youtube: https://youtu.be/LCEmiRjPEtQ
 * ⚙️ **Evolution of Software**:  
     * 👨‍💻 **Software 1.0:** ⌨️ Traditional code written by humans \[[01:42](http://www.youtube.com/watch?v=LCEmiRjPEtQ&t=102)\].  
     * 🧠 **Software 2.0:** 🕸️ Neural networks, where the code is learned through data and optimization \[[01:48](http://www.youtube.com/watch?v=LCEmiRjPEtQ&t=108)\].  
-    * 🗣️ **Software 3.0:** [🤖🦜 Large Language Models (LLMs)](/content/topics/large-language-models.md) that are programmable using natural language prompts \[[03:06](http://www.youtube.com/watch?v=LCEmiRjPEtQ&t=186)\].  
+    * 🗣️ **Software 3.0:** [🤖🦜 Large Language Models (LLMs)](../topics/large-language-models.md) that are programmable using natural language prompts \[[03:06](http://www.youtube.com/watch?v=LCEmiRjPEtQ&t=186)\].  
 * 🏢 **LLMs as New Operating Systems**:  
     * 💡 LLMs are likened to utilities due to centralized training (capex) and metered access via APIs (opex) \[[06:35](http://www.youtube.com/watch?v=LCEmiRjPEtQ&t=395)\].  
     * 🏭 LLMs are analogous to fabs due to significant capital investment and rapid technological advancements \[[08:04](http://www.youtube.com/watch?v=LCEmiRjPEtQ&t=484)\].  
@@ -38,12 +38,12 @@ youtube: https://youtu.be/LCEmiRjPEtQ
 * 🔮 **Future Outlook:** ⏳ The industry is in an exciting, early stage, akin to the 1960s of operating systems \[[38:16](http://www.youtube.com/watch?v=LCEmiRjPEtQ&t=2296)\]. 📈 The next decade will see a gradual shift towards more autonomous products \[[39:08](http://www.youtube.com/watch?v=LCEmiRjPEtQ&t=2348)\].  
   
 ## 📚 Book Recommendations  
-- [🤖💻 Vibe Coding: Building Production-Grade Software With GenAI, Chat, Agents, and Beyond](/content/books/vibe-coding-building-production-grade-software-with-genai-chat-agents-and-beyond.md)  
-* **[🧠💻🤖 Deep Learning](/content/books/deep-learning.md)** by Ian Goodfellow, Yoshua Bengio, and Aaron Courville: 🏆 This is the **definitive guide to neural networks and deep learning** (what the video calls "Software 2.0"). 🤓 It's technical but comprehensive.  
+- [🤖💻 Vibe Coding: Building Production-Grade Software With GenAI, Chat, Agents, and Beyond](../books/vibe-coding-building-production-grade-software-with-genai-chat-agents-and-beyond.md)  
+* **[🧠💻🤖 Deep Learning](../books/deep-learning.md)** by Ian Goodfellow, Yoshua Bengio, and Aaron Courville: 🏆 This is the **definitive guide to neural networks and deep learning** (what the video calls "Software 2.0"). 🤓 It's technical but comprehensive.  
 * 🗺️ **The Master Algorithm: How the Quest for the Ultimate Learning Machine Will Remake Our World** by Pedro Domingos: 🧩 It **explains different types of machine learning**, helping you understand where deep learning fits in the broader AI landscape.  
-* **[🤖🦜 Large Language Models: Concepts, Techniques and Applications](/content/books/large-language-models-concepts-techniques-and-applications.md)** by David Atkinson and Victor Abutridy: 📖 A great introduction to **how LLMs work, the models available, and how they're evaluated**.  
-* **[🤖🗣️ Hands-On Large Language Models: Language Understanding and Generation](/content/books/hands-on-large-language-models-language-understanding-and-generation.md)** by Jay Alammar and Maarten Grootendorst: 🛠️ This is a **practical guide for building with LLMs**, covering key techniques like prompt engineering and RAG.  
-* **[🧬👥💾 Life 3.0: Being Human in the Age of Artificial Intelligence](/content/books/life-3-0.md)** by Max Tegmark: 🤔 Explores the **long-term impact of AI on humanity** and why aligning AI with human values is crucial.  
+* **[🤖🦜 Large Language Models: Concepts, Techniques and Applications](../books/large-language-models-concepts-techniques-and-applications.md)** by David Atkinson and Victor Abutridy: 📖 A great introduction to **how LLMs work, the models available, and how they're evaluated**.  
+* **[🤖🗣️ Hands-On Large Language Models: Language Understanding and Generation](../books/hands-on-large-language-models-language-understanding-and-generation.md)** by Jay Alammar and Maarten Grootendorst: 🛠️ This is a **practical guide for building with LLMs**, covering key techniques like prompt engineering and RAG.  
+* **[🧬👥💾 Life 3.0: Being Human in the Age of Artificial Intelligence](../books/life-3-0.md)** by Max Tegmark: 🤔 Explores the **long-term impact of AI on humanity** and why aligning AI with human values is crucial.  
 * 🇨🇳 **AI Superpowers** by Kai-Fu Lee: 🌎 Provides insight into the **global competition in AI** and its economic and societal effects.  
-* **[🤖🧑‍ Human Compatible: Artificial Intelligence and the Problem of Control](/content/books/human-compatible-artificial-intelligence-and-the-problem-of-control.md)** by Stuart Russell: ✅ Addresses the **challenge of designing AI to always benefit humanity**, avoiding unintended negative consequences.  
-* **[🤖⚠️📈 Superintelligence: Paths, Dangers, Strategies](/content/books/superintelligence-paths-dangers-strategies.md)** by Nick Bostrom: ⚠️ A foundational book examining the **potential for superintelligent AI** and strategies for ensuring its safe development.
+* **[🤖🧑‍ Human Compatible: Artificial Intelligence and the Problem of Control](../books/human-compatible-artificial-intelligence-and-the-problem-of-control.md)** by Stuart Russell: ✅ Addresses the **challenge of designing AI to always benefit humanity**, avoiding unintended negative consequences.  
+* **[🤖⚠️📈 Superintelligence: Paths, Dangers, Strategies](../books/superintelligence-paths-dangers-strategies.md)** by Nick Bostrom: ⚠️ A foundational book examining the **potential for superintelligent AI** and strategies for ensuring its safe development.

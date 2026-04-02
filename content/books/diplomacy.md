@@ -6,8 +6,11 @@ URL: https://bagrounds.org/books/diplomacy
 share: true
 affiliate link: https://amzn.to/3U9t21C
 CTA: Review history.
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_time: 2026-04-02T00:00:00Z
+force_analyze_links: false
 ---
-[Home](/content/index.md) > [Books](/content/books/index.md)  
+[Home](../index.md) > [Books](./index.md)  
 # 🤝🌍 Diplomacy  
 [🛒 Diplomacy. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3U9t21C)  
   
@@ -69,7 +72,7 @@ CTA: Review history.
 * ***A Memory Called Empire*** by Arkady Martine: 🚀 A science fiction novel that uses an imperial setting to explore themes of identity, cultural assimilation, and political maneuvering, offering a creative lens on diplomatic challenges.  
 * ***Outpost: Life on the Frontlines of American Diplomacy*** by Christopher R. Hill: 🇺🇸 Provides a firsthand account of modern American diplomacy from the perspective of a career diplomat in various global hotspots.  
   
-## 💬 [Gemini](/content/software/gemini.md) Prompt (gemini-2.5-flash-preview-04-17)  
+## 💬 [Gemini](../software/gemini.md) Prompt (gemini-2.5-flash-preview-04-17)  
 > Write a markdown-formatted (start headings at level H2) book report, followed by a plethora of additional similar, contrasting, and creatively related book recommendations on Diplomacy. Be thorough in content discussed but concise and economical with your language. Structure the report with section headings and bulleted lists to avoid long blocks of text.  
   
 ## 🐦 Tweet  

@@ -7,7 +7,7 @@ share: true
 CTA: 🛡️ Defend the truth.
 affiliate link: https://amzn.to/4hdvb76
 ---
-[Home](/content/index.md) > [Books](/content/books/index.md)  
+[Home](../index.md) > [Books](./index.md)  
 # 🤖🏛️ Lie Machines: How to Save Democracy from Troll Armies, Deceitful Robots, Junk News Operations, and Political Operatives  
 [🛒 Lie Machines: How to Save Democracy from Troll Armies, Deceitful Robots, Junk News Operations, and Political Operatives. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4hdvb76)  
   
@@ -47,7 +47,7 @@ affiliate link: https://amzn.to/4hdvb76
 * 🤝 International cooperation frameworks and digital sovereignty in combating cross-border disinformation.  
 * 💰 The economic incentives driving misinformation and the business models of junk news operations.  
 * 📚 Curriculum development for digital literacy and critical thinking in education systems globally.  
-* ⚛️ The impact of [⚛️ Quantum Computing](/content/topics/quantum-computing.md) and advanced AI on the future landscape of disinformation.  
+* ⚛️ The impact of [⚛️ Quantum Computing](../topics/quantum-computing.md) and advanced AI on the future landscape of disinformation.  
 * 🌍 Comparative analysis of misinformation strategies in non-democratic versus democratic regimes.  
   
 ## ❓ Frequently Asked Questions (FAQ)  
@@ -70,19 +70,19 @@ affiliate link: https://amzn.to/4hdvb76
 ## 📚 Book Recommendations  
   
 ### Similar  
-* [📱🗳️📉🩺 The Hype Machine: How Social Media Disrupts Our Elections, Our Economy, and Our Health - and How We Must Adapt](/content/books/the-hype-machine-how-social-media-disrupts-our-elections-our-economy-and-our-health-and-how-we-must-adapt.md) by Sinan Aral  
+* [📱🗳️📉🩺 The Hype Machine: How Social Media Disrupts Our Elections, Our Economy, and Our Health - and How We Must Adapt](./the-hype-machine-how-social-media-disrupts-our-elections-our-economy-and-our-health-and-how-we-must-adapt.md) by Sinan Aral  
 * ✉️ Messengers by Stephen Martin and Joseph Marks  
 * 📰 Fakenews by Robert W McChesney and John Nichols  
   
 ### Contrasting  
 * 🛂 The Case for Open Borders by Bryan Caplan  
-* [💡🔬🧑‍🤝‍🧑📈 Enlightenment Now: The Case for Reason, Science, Humanism, and Progress](/content/books/enlightenment-now-the-case-for-reason-science-humanism-and-progress.md) by Steven Pinker  
+* [💡🔬🧑‍🤝‍🧑📈 Enlightenment Now: The Case for Reason, Science, Humanism, and Progress](./enlightenment-now-the-case-for-reason-science-humanism-and-progress.md) by Steven Pinker  
 * ⚙️ Technocracy in America by Parag Khanna  
   
 ### Related  
-* [🤔🐇🐢 Thinking, Fast and Slow](/content/books/thinking-fast-and-slow.md) by Daniel Kahneman  
-* [📱🧠 The Shallows: What the Internet Is Doing to Our Brains](/content/books/the-shallows-what-the-internet-is-doing-to-our-brains.md) by Nicholas Carr  
-* [📢 Propaganda](/content/books/propaganda.md) by Edward Bernays  
+* [🤔🐇🐢 Thinking, Fast and Slow](./thinking-fast-and-slow.md) by Daniel Kahneman  
+* [📱🧠 The Shallows: What the Internet Is Doing to Our Brains](./the-shallows-what-the-internet-is-doing-to-our-brains.md) by Nicholas Carr  
+* [📢 Propaganda](./propaganda.md) by Edward Bernays  
   
 ## 🫵 What Do You Think?  
 ❓ What single aspect of "lie machines" do you find most concerning for the future of democracy, and what individual action do you believe is most effective in combating digital misinformation? Share your thoughts below!

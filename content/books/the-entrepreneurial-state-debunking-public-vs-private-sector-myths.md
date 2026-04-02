@@ -6,8 +6,11 @@ URL: https://bagrounds.org/books/the-entrepreneurial-state-debunking-public-vs-p
 share: true
 CTA: 💡 Dismantle false narratives.
 affiliate link: https://amzn.to/3XkqlMl
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_time: 2026-04-01T00:00:00Z
+force_analyze_links: false
 ---
-[Home](/content/index.md) > [Books](/content/books/index.md)  
+[Home](../index.md) > [Books](./index.md)  
 # 🏛️🏭 The Entrepreneurial State: Debunking Public vs Private Sector Myths  
 [🛒 The Entrepreneurial State: Debunking Public vs Private Sector Myths. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3XkqlMl)  
   
@@ -72,9 +75,9 @@ affiliate link: https://amzn.to/3XkqlMl
 ## 📚 Book Recommendations  
   
 ### ➕ Similar  
-* [🚀🌍💰 Mission Economy: A Moonshot Guide to Changing Capitalism](/content/books/mission-economy-a-moonshot-guide-to-changing-capitalism.md) by Mariana Mazzucato  
-* [💰🏭🌍 The Value of Everything: Making and Taking in the Global Economy](/content/books/the-value-of-everything-making-and-taking-in-the-global-economy.md) by Mariana Mazzucato  
-* [🍩🌍 Doughnut Economics: Seven Ways to Think Like a 21st-Century Economist](/content/books/doughnut-economics-seven-ways-to-think-like-a-21st-century-economist.md) by Kate Raworth  
+* [🚀🌍💰 Mission Economy: A Moonshot Guide to Changing Capitalism](./mission-economy-a-moonshot-guide-to-changing-capitalism.md) by Mariana Mazzucato  
+* [💰🏭🌍 The Value of Everything: Making and Taking in the Global Economy](./the-value-of-everything-making-and-taking-in-the-global-economy.md) by Mariana Mazzucato  
+* [🍩🌍 Doughnut Economics: Seven Ways to Think Like a 21st-Century Economist](./doughnut-economics-seven-ways-to-think-like-a-21st-century-economist.md) by Kate Raworth  
   
 ### ➖ Contrasting  
 * 🚧 The Road to Serfdom by F.A. Hayek  
@@ -82,7 +85,7 @@ affiliate link: https://amzn.to/3XkqlMl
 * 🏛️ Capitalism and Freedom by Milton Friedman  
   
 ### 🔗 Related  
-* [📖🏛️📉 Seeing Like a State: How Certain Schemes to Improve the Human Condition Have Failed](/content/books/seeing-like-a-state-how-certain-schemes-to-improve-the-human-condition-have-failed.md) by James C. Scott  
+* [📖🏛️📉 Seeing Like a State: How Certain Schemes to Improve the Human Condition Have Failed](./seeing-like-a-state-how-certain-schemes-to-improve-the-human-condition-have-failed.md) by James C. Scott  
 * ⚠️ The Innovation Delusion: How Our Obsession with Novelty Harms Organizations, Blocks Progress, and Threatens Our Lives by Lee Vinsel and Andrew L. Russell  
 * 📈 Scale: The Universal Laws of Growth, Innovation, Sustainability, and the Pace of Life in Organisms, Cities, Economies, and Companies by Geoffrey West  
   

@@ -7,7 +7,7 @@ share: true
 CTA: 📜 Trace identity.
 affiliate link: https://amzn.to/4qMD0Ve
 ---
-[Home](/content/index.md) > [Books](/content/books/index.md)  
+[Home](../index.md) > [Books](./index.md)  
 # 🌊🌎 One Mighty and Irresistible Tide: The Epic Struggle Over American Immigration, 1924-1965  
 [🛒 One Mighty and Irresistible Tide: The Epic Struggle Over American Immigration, 1924-1965. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4qMD0Ve)  
   

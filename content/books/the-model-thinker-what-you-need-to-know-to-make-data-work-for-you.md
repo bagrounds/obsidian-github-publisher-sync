@@ -7,7 +7,7 @@ share: true
 CTA: 🎯 Grasp analytical methods.
 affiliate link: https://amzn.to/4ipmtn6
 ---
-[Home](/content/index.md) > [Books](/content/books/index.md)  
+[Home](../index.md) > [Books](./index.md)  
 # 🧠📊 The Model Thinker: What You Need to Know to Make Data Work for You  
 [🛒 The Model Thinker: What You Need to Know to Make Data Work for You. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4ipmtn6)  
   
@@ -81,15 +81,15 @@ affiliate link: https://amzn.to/4ipmtn6
   
 ### 📖 Similar Books  
 * 🧠 The Great Mental Models Volume 1: General Thinking Concepts by Shane Parrish  
-* [🌐🔗🧠📖 Thinking in Systems: A Primer](/content/books/thinking-in-systems.md) by Donella H. Meadows  
+* [🌐🔗🧠📖 Thinking in Systems: A Primer](./thinking-in-systems.md) by Donella H. Meadows  
 * 💡 Super Thinking: The Big Book of Mental Models by Gabriel Weinberg and Lauren McCann  
   
 ### ⚔️ Contrasting Books  
-* [🤔🐇🐢 Thinking, Fast and Slow](/content/books/thinking-fast-and-slow.md) by Daniel Kahneman (Focuses more on cognitive biases and heuristics that can *distort* thinking)  
-* [🙉📢😵‍💫🔇 Noise: A Flaw in Human Judgment](/content/books/noise.md) by Daniel Kahneman, Olivier Sibony, and Cass Sunstein (Examines unwanted variability in judgments and decision-making)  
+* [🤔🐇🐢 Thinking, Fast and Slow](./thinking-fast-and-slow.md) by Daniel Kahneman (Focuses more on cognitive biases and heuristics that can *distort* thinking)  
+* [🙉📢😵‍💫🔇 Noise: A Flaw in Human Judgment](./noise.md) by Daniel Kahneman, Olivier Sibony, and Cass Sunstein (Examines unwanted variability in judgments and decision-making)  
   
 ### 🔗 Related Books  
-* [🔮🎨🔬 Superforecasting: The Art and Science of Prediction](/content/books/superforecasting-the-art-and-science-of-prediction.md) by Philip Tetlock and Dan Gardner  
+* [🔮🎨🔬 Superforecasting: The Art and Science of Prediction](./superforecasting-the-art-and-science-of-prediction.md) by Philip Tetlock and Dan Gardner  
 * 📊 Predictive Analytics For Dummies by Anasse Bari, Mohamed Chaouchi, and Tommy Jung  
 * 🧩 Models Demystified by Michael Clark  
 * 🦉 Seeking Wisdom: From Darwin to Munger by Peter Bevelin  

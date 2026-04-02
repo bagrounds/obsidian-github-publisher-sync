@@ -7,7 +7,7 @@ share: true
 CTA: 🕵️ Expose corruption.
 affiliate link: https://amzn.to/4nNNz9x
 ---
-[Home](/content/index.md) > [Books](/content/books/index.md)  
+[Home](../index.md) > [Books](./index.md)  
 # 🇷🇺🪝🇺🇸 American Kompromat: How the KGB Cultivated Donald Trump, and Other Tales of Sex, Greed, Power, and Treachery  
 [🛒 American Kompromat: How the KGB Cultivated Donald Trump, and Other Tales of Sex, Greed, Power, and Treachery. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4nNNz9x)  
   
@@ -44,7 +44,7 @@ affiliate link: https://amzn.to/4nNNz9x
   
 ### 📚 Similar Books (Focus on Russian Influence, Espionage, and Politics)  
   
-* **[🏛️👹🇺🇸🏰👹🇷🇺 House of Trump, House of Putin: The Untold Story of Donald Trump and the Russian Mafia](/content/books/house-of-trump-house-of-putin-the-untold-story-of-donald-trump-and-the-russian-mafia.md)** by Craig Unger: Also by the same author, this book similarly explores the alleged ties between the Trump family and Russia.  
+* **[🏛️👹🇺🇸🏰👹🇷🇺 House of Trump, House of Putin: The Untold Story of Donald Trump and the Russian Mafia](./house-of-trump-house-of-putin-the-untold-story-of-donald-trump-and-the-russian-mafia.md)** by Craig Unger: Also by the same author, this book similarly explores the alleged ties between the Trump family and Russia.  
 * 🔴 **Red Notice: A True Story of High Finance, Murder, and One Man's Fight for Justice** by Bill Browder: While focusing on financial corruption and human rights, it provides insight into the nature of the Putin regime and its methods.  
 * 🤝 **The Russia Hand: A Memoir of Presidential Diplomacy** by Strobe Talbott: Offers a perspective on US-Russia relations from a former diplomat, covering a different era but highlighting the complexities of the relationship.  
 * 📉 **Collapse: The Fall of the Soviet Union** by Vladislav M. Zubok: Provides historical context for the post-Soviet landscape from which contemporary Russian intelligence operations emerged.  
@@ -56,21 +56,21 @@ affiliate link: https://amzn.to/4nNNz9x
   
 * ⛰️ **Hillbilly Elegy: A Memoir of a Family and Culture in Crisis** by J.D. Vance: Provides a look at socioeconomic factors and cultural shifts in the American working class that some argue contributed to the political climate.  
 * 🌊 **The Great Deluge: Hurricane Katrina, New Orleans, and the Mississippis Gulf Coast** by Douglas Brinkley: A historical account focusing on a domestic crisis, offering a different perspective on challenges facing the US.  
-* **[🫥🇺🇸😡💔 Strangers in Their Own Land: Anger and Mourning on the American Right](/content/books/strangers-in-their-own-land.md)** by Arlie Russell Hochschild: Explores the deep-seated beliefs and emotions of a group of conservative Americans, offering insight into political polarization from a sociological perspective.  
-* **[🤝🏛️ Team of Rivals: The Political Genius of Abraham Lincoln](/content/books/team-of-rivals-the-political-genius-of-abraham-lincoln.md)** by Doris Kearns Goodwin: A historical account of leadership and political maneuvering during a period of national crisis, providing a contrast to contemporary political narratives.  
+* **[🫥🇺🇸😡💔 Strangers in Their Own Land: Anger and Mourning on the American Right](./strangers-in-their-own-land.md)** by Arlie Russell Hochschild: Explores the deep-seated beliefs and emotions of a group of conservative Americans, offering insight into political polarization from a sociological perspective.  
+* **[🤝🏛️ Team of Rivals: The Political Genius of Abraham Lincoln](./team-of-rivals-the-political-genius-of-abraham-lincoln.md)** by Doris Kearns Goodwin: A historical account of leadership and political maneuvering during a period of national crisis, providing a contrast to contemporary political narratives.  
 * 🏛️ **The Room Where It Happened: A White House Memoir** by John Bolton: Offers an insider's account of the Trump White House, providing a different perspective on the administration's dynamics and foreign policy.  
   
 ### ✨ Creatively Related Books (Exploring Themes of Deception, Power, and Hidden Influences through Fiction or Broader Nonfiction)  
   
 * 🕵️‍♂️ **Tinker Tailor Soldier Spy** by John le Carré: A classic espionage novel exploring themes of betrayal, moles, and the complex moral landscape of intelligence work.  
-* **[👁️ Nineteen Eighty-Four](/content/books/1984.md)** by George Orwell: A dystopian novel that explores themes of surveillance, manipulation of information, and authoritarianism.  
+* **[👁️ Nineteen Eighty-Four](./1984.md)** by George Orwell: A dystopian novel that explores themes of surveillance, manipulation of information, and authoritarianism.  
 * 🎭 **The Master and Margarita** by Mikhail Bulgakov: A satirical novel from the Soviet era that, in part, critiques the society and its underlying Faustian bargains and hidden forces.  
 * 👑 **The Prince** by Niccolò Machiavelli: A classic treatise on political power, realpolitik, and the methods rulers use to acquire and maintain control.  
-* **[🍃🧠🤝🏼 Influence: The Psychology of Persuasion](/content/books/influence.md)** by Robert B. Cialdini: Explores the psychological principles behind why people say yes, offering insight into the mechanisms of manipulation.  
+* **[🍃🧠🤝🏼 Influence: The Psychology of Persuasion](./influence.md)** by Robert B. Cialdini: Explores the psychological principles behind why people say yes, offering insight into the mechanisms of manipulation.  
 * ❓ **Chaos: Charles Manson, the CIA, and the Secret History of the Sixties** by Tom O'Neill: An investigative work that delves into murky histories, conspiracy, and alleged hidden connections, albeit on a different topic.  
 * 🤫 **The Secret History** by Donna Tartt: A novel exploring a group of college students who become involved in a murder, touching on themes of secrets, manipulation, and the consequences of hidden actions within a privileged group.  
   
-## 💬 [Gemini](/content/software/gemini.md) Prompt (gemini-2.5-flash-preview-04-17)  
+## 💬 [Gemini](../software/gemini.md) Prompt (gemini-2.5-flash-preview-04-17)  
 > Write a markdown-formatted (start headings at level H2) book report, followed by a plethora of additional similar, contrasting, and creatively related book recommendations on American Kompromat: How the KGB Cultivated Donald Trump, and Other Tales of Sex, Greed, Power, and Treachery. Be thorough in content discussed but concise and economical with your language. Structure the report with section headings and bulleted lists to avoid long blocks of text.  
   
 ## 🐦 Tweet  

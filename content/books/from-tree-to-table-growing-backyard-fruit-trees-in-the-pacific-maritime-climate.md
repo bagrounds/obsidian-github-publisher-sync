@@ -6,7 +6,7 @@ URL: https://bagrounds.org/books/from-tree-to-table-growing-backyard-fruit-trees
 share: true
 affiliate link: https://amzn.to/45DykJD
 ---
-[Home](/content/index.md) > [Books](/content/books/index.md)  
+[Home](../index.md) > [Books](./index.md)  
 # 🌳🍎🍽️ From Tree to Table: Growing Backyard Fruit Trees in the Pacific Maritime Climate  
 [🛒 From Tree to Table: Growing Backyard Fruit Trees in the Pacific Maritime Climate. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/45DykJD)  
   
@@ -48,7 +48,7 @@ affiliate link: https://amzn.to/45DykJD
 **🍎 Similar (Focus on Fruit Trees & Specific Regions/Climates):**  
   
 * 🌳 **"Grow a Little Fruit Tree" by Ann Ralph:** ℹ️ Focuses on techniques for keeping fruit trees small and manageable. 🍎 Covers selection, planting, and the needs of various fruit types like stone and pome fruits, figs, and persimmons.  
-* **[🏡🍎🌳 The Home Orchard: Growing Your Own Deciduous Fruit and Nut Trees](/content/books/the-home-orchard-growing-your-own-deciduous-fruit-and-nut-trees.md) (UC ANR Publication 3485) edited by Chuck A. Ingels, Pamela M. Geisel, and Maxwell V. Norton:** ℹ️ An authoritative reference for home orchardists, covering temperate-zone deciduous fruit and nut trees with in-depth chapters on various aspects of orchard management.  
+* **[🏡🍎🌳 The Home Orchard: Growing Your Own Deciduous Fruit and Nut Trees](./the-home-orchard-growing-your-own-deciduous-fruit-and-nut-trees.md) (UC ANR Publication 3485) edited by Chuck A. Ingels, Pamela M. Geisel, and Maxwell V. Norton:** ℹ️ An authoritative reference for home orchardists, covering temperate-zone deciduous fruit and nut trees with in-depth chapters on various aspects of orchard management.  
 * 🍎 **"Fruit Trees for Every Garden: An Organic Approach to Growing Apples, Pears, Peaches, Plums, Citrus, and More" by Orin Martin:** ℹ️ Offers extensive information on planning, organic site preparation, and fruit variety/rootstock selection, written by an experienced orchard manager and educator.  
 * ✂️ **"How to Prune Fruit Trees and Roses" by R. Sanford Martin (updated edition):** 🌳 A user-friendly guide that demystifies pruning with clear instructions and illustrations for various temperate zone fruit trees and berries.  
   
@@ -68,5 +68,5 @@ affiliate link: https://amzn.to/45DykJD
 * ✍️ **Nature writing or memoirs about gardening and connecting with the land:** 📖 Offers a more reflective and narrative exploration of the joys and challenges of cultivation.  
 * 🍏 **Specialized guides on specific fruit types (e.g., "Growing Backyard Figs" - a chapter mentioned as downloadable from "From Tree to Table").**  
   
-## 💬 [Gemini](/content/software/gemini.md) Prompt (gemini-2.5-pro-exp-03-25)  
+## 💬 [Gemini](../software/gemini.md) Prompt (gemini-2.5-pro-exp-03-25)  
 > Write a markdown-formatted (start headings at level H2) book report, followed by a plethora of additional similar, contrasting, and creatively related book recommendations on From Tree to Table: Growing Backyard Fruit Trees in the Pacific Maritime Climate. Be thorough in content discussed but concise and economical with your language. Structure the report with section headings and bulleted lists to avoid long blocks of text.

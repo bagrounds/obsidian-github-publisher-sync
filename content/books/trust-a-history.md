@@ -6,7 +6,7 @@ URL: https://bagrounds.org/books/trust-a-history
 share: true
 affiliate link: https://amzn.to/43MZpb3
 ---
-[Home](/content/index.md) > [Books](/content/books/index.md)  
+[Home](../index.md) > [Books](./index.md)  
 # 🤝📜 Trust: A History  
 [🛒 Trust: A History. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/43MZpb3)  
   
@@ -56,8 +56,8 @@ affiliate link: https://amzn.to/43MZpb3
   
 ### 🎨 Creatively Related Reads  
 * 🧑‍🤝‍🧑 **Social Capital:**  
-    * 🎳 **[Bowling Alone](/content/books/bowling-alone.md): The Collapse and Revival of American Community** by Robert Putnam: Famous work arguing for a decline in social capital (networks, norms, and trust) in the United States.  
-    * **[🤝😇💰 Trust: The Social Virtues and the Creation of Prosperity](/content/books/trust-the-social-virtues-and-the-creation-of-prosperity.md)** by Francis Fukuyama: Links trust levels within societies to economic prosperity and development, comparing high-trust and low-trust societies.  
+    * 🎳 **[Bowling Alone](./bowling-alone.md): The Collapse and Revival of American Community** by Robert Putnam: Famous work arguing for a decline in social capital (networks, norms, and trust) in the United States.  
+    * **[🤝😇💰 Trust: The Social Virtues and the Creation of Prosperity](./trust-the-social-virtues-and-the-creation-of-prosperity.md)** by Francis Fukuyama: Links trust levels within societies to economic prosperity and development, comparing high-trust and low-trust societies.  
     * 📖 **Advanced Introduction to Social Capital** by Karen S. Cook: Provides a modern overview of social capital research, highlighting the roles of networks, norms, and trust in facilitating cooperation and social order.  
     * 🤝 **Social Capital and Economics: Social Values, Power, and Social Identity** edited by Asimina Christoforou and John B. Davis: Examines how social values, power, and identity interact with social capital (norms, networks, trust, cooperation).  
     * 🌑 Works examining the "dark side" of social capital, where strong in-group trust can lead to exclusion or negative outcomes for outsiders or society as a whole.  
@@ -67,5 +67,5 @@ affiliate link: https://amzn.to/43MZpb3
 * 🎭 **Fiction Exploring Trust/Distrust:** (Note: Searches mainly returned non-fiction or unrelated fiction titles named "Trust" or "Distrust" or "Broken Trust". A relevant fictional example would need manual selection).  
     * 💔 Novels where themes of betrayal, loyalty, confidence, and the breakdown or building of trust between characters or within communities are central to the plot. 🕵️ For example, John le Carré's espionage novels often hinge on complex dynamics of trust and betrayal.  
   
-## 💬 [Gemini](/content/software/gemini.md) Prompt (gemini-2.5-pro-exp-03-25)  
+## 💬 [Gemini](../software/gemini.md) Prompt (gemini-2.5-pro-exp-03-25)  
 > Write a markdown-formatted (start headings at level H2) book report, followed by a plethora of additional similar, contrasting, and creatively related book recommendations on Trust: A History. Be thorough in content discussed but concise and economical with your language. Structure the report with section headings and bulleted lists to avoid long blocks of text.

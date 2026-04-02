@@ -9,7 +9,7 @@ Platform:
 Channel: PBS NewsHour
 tags:
 ---
-[Home](/content/index.md) > [Videos](/content/videos/index.md)  
+[Home](../index.md) > [Videos](./index.md)  
 # WATCH: 'Whose throat do I get to choke’ if tariff approach fails, Tillis asks trade rep  
 ![WATCH: 'Whose throat do I get to choke’ if tariff approach fails, Tillis asks trade rep](https://youtu.be/ufuZo15ZA08)  
   

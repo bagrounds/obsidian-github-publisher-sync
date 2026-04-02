@@ -9,7 +9,7 @@ tags:
 affiliate link: https://amzn.to/4kq0rk3
 CTA: Witness chaos.
 ---
-[Home](/content/index.md) > [Books](/content/books/index.md)  
+[Home](../index.md) > [Books](./index.md)  
 # ⚠️😬😰 Peril  
 [🛒 Peril. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4kq0rk3)  
   
@@ -67,15 +67,15 @@ The book offers an 🕵️ *insider* view of the events leading up to and follow
   
 ### Book Recommendations 📚  
   
-* ⭐ **Best Alternate Book on the Same Topic:** [🍊🤡🤥👹💥🏛️🇺🇸 I Alone Can Fix It: Donald J. Trump's Catastrophic Final Year](/content/books/i-alone-can-fix-it-donald-j-trumps-catastrophic-final-year.md) by Carol Leonnig and Philip Rucker. 🗓️  
+* ⭐ **Best Alternate Book on the Same Topic:** [🍊🤡🤥👹💥🏛️🇺🇸 I Alone Can Fix It: Donald J. Trump's Catastrophic Final Year](./i-alone-can-fix-it-donald-j-trumps-catastrophic-final-year.md) by Carol Leonnig and Philip Rucker. 🗓️  
   
-* ✨ **Best Tangentially Related Book:** [⚠️🥴🕹️🌐 The Fifth Risk](/content/books/the-fifth-risk.md) by Michael Lewis, which explores the transition process ➡️ and the challenges 😥 faced by incoming administrations. ⚠️  
+* ✨ **Best Tangentially Related Book:** [⚠️🥴🕹️🌐 The Fifth Risk](./the-fifth-risk.md) by Michael Lewis, which explores the transition process ➡️ and the challenges 😥 faced by incoming administrations. ⚠️  
   
 * ⚖️ **Best Diametrically Opposed Book:** 🚩 *Rigged: How the Media, 📰 Big Tech, 💻 and the Democrats 💙 Seized Our Elections* by Mollie Hemingway, which presents a conservative perspective 🤔 on the 2020 election. 🇺🇸  
   
 * 🎭 **Best Fiction Book that Incorporates Related Ideas:** 👑 *All the King's Men* by Robert Penn Warren, which explores themes of power ✊, corruption 👿, and the abuse of authority. 🚨  
   
-* 🌍 **Best Book that is More General:** [🗳️🏛️☠️ How Democracies Die](/content/books/how-democracies-die.md) by Steven Levitsky and Daniel Ziblatt, which examines the warning signs ⚠️ of democratic decline. 📉  
+* 🌍 **Best Book that is More General:** [🗳️🏛️☠️ How Democracies Die](./how-democracies-die.md) by Steven Levitsky and Daniel Ziblatt, which examines the warning signs ⚠️ of democratic decline. 📉  
   
 * 🔎 **Best Book that is More Specific:** 💥 *January 6: An American Trauma* by the Washington Post Staff, which focuses specifically 🎯 on the attack on the Capitol. 🏛️💥  
   

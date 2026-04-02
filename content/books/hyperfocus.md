@@ -7,8 +7,11 @@ URL: https://bagrounds.org/books/hyperfocus
 Author:
 tags:
 affiliate link: https://amzn.to/4dMMEll
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_time: 2026-04-01T00:00:00Z
+force_analyze_links: false
 ---
-[Home](/content/index.md) > [Books](/content/books/index.md)  
+[Home](../index.md) > [Books](./index.md)  
 # 🎯👓🧠 Hyperfocus: How to Be More Productive in a World of Distraction  
 [🛒 Hyperfocus: How to Be More Productive in a World of Distraction. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4dMMEll)  
   
@@ -57,13 +60,13 @@ affiliate link: https://amzn.to/4dMMEll
 * The concepts are presented in a very practical, actionable way, which is a strength for many readers.  
   
 **Book Recommendations 📚:**  
-* **Best Alternate Book on the Same Topic:** [🤿💼 Deep Work: Rules for Focused Success in a Distracted World](/content/books/deep-work.md) by Cal Newport. This book also explores the importance of focused work, but with a greater emphasis on the value of deep work in a knowledge economy. 💼  
-* **Best Tangentially Related Book:** [⚛️🔄 Atomic Habits: An Easy & Proven Way to Build Good Habits & Break Bad Ones](/content/books/atomic-habits.md) by James Clear. This book offers valuable insights into habit formation, which is crucial for managing attention and productivity. 🔄  
-* **Best Diametrically Opposed Book:** [📱🧠 The Shallows: What the Internet Is Doing to Our Brains](/content/books/the-shallows-what-the-internet-is-doing-to-our-brains.md) by Nicholas Carr. This book presents a cautionary view of the internet's impact on attention and cognitive abilities, contrasting with "Hyperfocus's" emphasis on managing attention in a digital world. 🌐  
+* **Best Alternate Book on the Same Topic:** [🤿💼 Deep Work: Rules for Focused Success in a Distracted World](./deep-work.md) by Cal Newport. This book also explores the importance of focused work, but with a greater emphasis on the value of deep work in a knowledge economy. 💼  
+* **Best Tangentially Related Book:** [⚛️🔄 Atomic Habits: An Easy & Proven Way to Build Good Habits & Break Bad Ones](./atomic-habits.md) by James Clear. This book offers valuable insights into habit formation, which is crucial for managing attention and productivity. 🔄  
+* **Best Diametrically Opposed Book:** [📱🧠 The Shallows: What the Internet Is Doing to Our Brains](./the-shallows-what-the-internet-is-doing-to-our-brains.md) by Nicholas Carr. This book presents a cautionary view of the internet's impact on attention and cognitive abilities, contrasting with "Hyperfocus's" emphasis on managing attention in a digital world. 🌐  
 * **Best Fiction Book That Incorporates Related Ideas:** Flowers for Algernon by Daniel Keyes. This novel explores the complexities of intelligence and attention, raising thought-provoking questions about the nature of focus and cognitive abilities. 🧠🌷  
-* **Best More General Book:** "[Thinking, Fast and Slow](/content/books/thinking-fast-and-slow.md)" by Daniel Kahneman. This book gives a broad overview of how the brain works, and the two systems of thinking. 🧠🧠  
+* **Best More General Book:** "[Thinking, Fast and Slow](./thinking-fast-and-slow.md)" by Daniel Kahneman. This book gives a broad overview of how the brain works, and the two systems of thinking. 🧠🧠  
 * **Best More Specific Book:** "Your Brain at Work" by David Rock. This book delves deeper into the neuroscience of attention and cognitive performance in the workplace. 🏢  
-* **Best More Rigorous Book:** "[Attention](/content/books/attention.md)" by Daniel Kahneman. This book is a very in depth academic study of attention. 🤓  
+* **Best More Rigorous Book:** "[Attention](./attention.md)" by Daniel Kahneman. This book is a very in depth academic study of attention. 🤓  
 * **Best More Accessible Book:** "The Productivity Project: Accomplishing More by Managing Your Time, Attention, and Energy" by Chris Bailey. This is another book by the same author, and it covers a wider range of productivity topics in a very easy to understand way. 🚀  
   
 ## 💬 [Gemini](https://gemini.google.com) Prompt  

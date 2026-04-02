@@ -4,7 +4,7 @@ aliases:
 share: true
 title: 🤖🧠💻 Andrej Karpathy
 ---
-[Home](/content/index.md) > [People](/content/people/index.md)  
+[Home](../index.md) > [People](./index.md)  
 # 🤖🧠💻 Andrej Karpathy  
 ## 🤖 AI Summary  
 🧑‍💻 Andrej Karpathy is a highly influential Slovak-Canadian computer scientist, AI researcher 🤖, and educator 👨‍🏫 known for his significant contributions to deep learning 🧠, computer vision 👁️, and natural language processing 🗣️.  
@@ -33,13 +33,13 @@ Here's a summary of his background, career, and impact:
   
 ## 📚 Book Recommendations  
 **🧠 For Vibe Coding and Deep Learning Fundamentals (often recommended by Karpathy and others):**  
-1. [🤖💻 Vibe Coding: Building Production-Grade Software With GenAI, Chat, Agents, and Beyond](/content/books/vibe-coding-building-production-grade-software-with-genai-chat-agents-and-beyond.md)  
-2. **📖 [🧠💻🤖 Deep Learning](/content/books/deep-learning.md) by Ian Goodfellow, Yoshua Bengio, and Aaron Courville:**  
+1. [🤖💻 Vibe Coding: Building Production-Grade Software With GenAI, Chat, Agents, and Beyond](../books/vibe-coding-building-production-grade-software-with-genai-chat-agents-and-beyond.md)  
+2. **📖 [🧠💻🤖 Deep Learning](../books/deep-learning.md) by Ian Goodfellow, Yoshua Bengio, and Aaron Courville:**  
     * 📚 This is often referred to as "the Deep Learning book." 🎓 It's a comprehensive, theoretical textbook that covers the mathematical and conceptual foundations of deep learning. 👨‍🏫 Karpathy mentioned that there were "very few books to draw on during my PhD for DL," but this book has become a definitive resource.  
     * 👍 **Best for:** 🤔 Those who want a rigorous, in-depth understanding of the underlying theory. 💻 It's not a hands-on coding book, but it's essential for a solid academic foundation.  
     * ❗ *Note: 🌐 It's available for free online.*  
   
-2. **🤖 [🤖➕🧠➡️ Reinforcement Learning: An Introduction](/content/books/reinforcement-learning-an-introduction.md) by Richard S. Sutton and Andrew G. Barto:**  
+2. **🤖 [🤖➕🧠➡️ Reinforcement Learning: An Introduction](../books/reinforcement-learning-an-introduction.md) by Richard S. Sutton and Andrew G. Barto:**  
     * 🧑‍💻 Karpathy explicitly stated he "methodologically read cover to cover over few weeks and reimplemented a lot of it in ReinforceJS." 📖 This book is the bible for reinforcement learning.  
     * 👍 **Best for:** 🙋‍♀️ Anyone interested in understanding how AI agents learn through trial and error, particularly relevant for fields like 🤖 robotics and 🎮 game playing.  
   
@@ -64,5 +64,5 @@ Here's a summary of his background, career, and impact:
   
 **🚀 Sci-Fi Books (Karpathy also shares his favorite sci-fi):**  
 * 🌌 **"Stories of Your Life and Others" & "Exhalation" by Ted Chiang:** 🧐 Short story collections highly praised for their thought-provoking explorations of AI, language, and the human condition.  
-* **[👨‍🚀🔴✨ The Martian](/content/books/the-martian.md) and [☄️🧑‍🚀🙏🌍 Project Hail Mary](/content/books/project-hail-mary.md) by Andy Weir:** 🔬 Known for their scientifically accurate and entertaining narratives.  
+* **[👨‍🚀🔴✨ The Martian](../books/the-martian.md) and [☄️🧑‍🚀🙏🌍 Project Hail Mary](../books/project-hail-mary.md) by Andy Weir:** 🔬 Known for their scientifically accurate and entertaining narratives.  
 * 👽 **Books by Stanisław Lem (e.g., "His Master's Voice," "Fiasco," "Solaris"):** 🤯 For their unique and often philosophical takes on alien contact and intelligence.

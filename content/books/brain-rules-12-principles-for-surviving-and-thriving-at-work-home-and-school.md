@@ -6,8 +6,11 @@ URL: https://bagrounds.org/books/brain-rules-12-principles-for-surviving-and-thr
 share: true
 affiliate link: https://amzn.to/3TQGlUy
 CTA: Optimize your brain.
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_time: 2026-04-02T00:00:00Z
+force_analyze_links: false
 ---
-[Home](/content/index.md) > [Books](/content/books/index.md)  
+[Home](../index.md) > [Books](./index.md)  
 # 🧠💡📈🏠🏢🧑‍🎓 Brain Rules: 12 Principles for Surviving and Thriving at Work, Home, and School  
 [🛒 Brain Rules: 12 Principles for Surviving and Thriving at Work, Home, and School. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3TQGlUy)  
   
@@ -42,10 +45,10 @@ Medina provides practical tips at the end of each chapter for applying these rul
 * ***Your Brain at Work: Strategies for Overcoming Distraction, Regaining Focus, and Working Smarter All Day Long*** by David Rock: Focuses on using neuroscience to improve productivity and manage distractions in the workplace.  
 * ***Limitless: Develop a New Relationship with Your Brain, Learn Anything Faster, and Unlock Your Exceptional Life*** by Jim Kwik: Provides strategies based on neuroscience to improve 🧠 memory, 📚 learning, and 📖 reading speed.  
 * ***A Whole New Mind: Why Right-Brainers Will Rule the Future*** by Daniel H. Pink: Argues that the future belongs to individuals with "right-brain" qualities like creativity, empathy, and big-picture thinking, complementing the logical "left-brain" focus of the past era.  
-* **[🤔🐇🐢 Thinking, Fast and Slow](/content/books/thinking-fast-and-slow.md)** by Daniel Kahneman: Explores the two systems that drive the way we think: the fast, intuitive system and the slow, logical system, and how they affect our decisions.  
-* **[🌱🧘🏼‍♀️🏆 Mindset: The New Psychology of Success](/content/books/mindset.md)** by Carol S. Dweck: While not strictly neuroscience, it delves into the impact of mindset (fixed vs. growth) on learning and achievement, which has implications for brain plasticity.  
-* **[🧠🔒 Make It Stick: The Science of Successful Learning](/content/books/make-it-stick.md)** by Peter C. Brown, Henry L. Roediger III, Mark A. McDaniel: Examines research-backed learning strategies that are more effective than common but inefficient methods.  
-* **[⚛️🔄 Atomic Habits: An Easy & Proven Way to Build Good Habits & Break Bad Ones](/content/books/atomic-habits.md)** by James Clear: Focuses on the science of habit formation and how small changes can lead to remarkable results, relevant to implementing brain-friendly practices.  
+* **[🤔🐇🐢 Thinking, Fast and Slow](./thinking-fast-and-slow.md)** by Daniel Kahneman: Explores the two systems that drive the way we think: the fast, intuitive system and the slow, logical system, and how they affect our decisions.  
+* **[🌱🧘🏼‍♀️🏆 Mindset: The New Psychology of Success](./mindset.md)** by Carol S. Dweck: While not strictly neuroscience, it delves into the impact of mindset (fixed vs. growth) on learning and achievement, which has implications for brain plasticity.  
+* **[🧠🔒 Make It Stick: The Science of Successful Learning](./make-it-stick.md)** by Peter C. Brown, Henry L. Roediger III, Mark A. McDaniel: Examines research-backed learning strategies that are more effective than common but inefficient methods.  
+* **[⚛️🔄 Atomic Habits: An Easy & Proven Way to Build Good Habits & Break Bad Ones](./atomic-habits.md)** by James Clear: Focuses on the science of habit formation and how small changes can lead to remarkable results, relevant to implementing brain-friendly practices.  
   
 ### ⚖️ Contrasting Books (Different Perspectives, Critiques)  
   
@@ -56,15 +59,15 @@ Medina provides practical tips at the end of each chapter for applying these rul
   
 ### 🎨 Creatively Related Books (Adjacent Fields, Deeper Dives, or Different Formats)  
   
-* **[👶🧠😊📈📚 Brain Rules for Baby: How to Raise a Smart and Happy Child from Zero to Five](/content/books/brain-rules-for-baby.md)** by John Medina: Applies the brain rules specifically to early childhood development.  
-* **[🕳️🧠👶🏽 The Whole-Brain Child: 12 Revolutionary Strategies to Nurture Your Child's Developing Mind](/content/books/the-whole-brain-child.md)** by Daniel J. Siegel and Tina Payne Bryson: Focuses on integrating different parts of a child's brain to promote healthy development and emotional intelligence.  
-* **[🚫🎭🧠 No-Drama Discipline: The Whole-Brain Way to Calm the Chaos and Nurture Your Child's Developing Mind](/content/books/no-drama-discipline.md)** by Daniel J. Siegel and Tina Payne Bryson: Applies a similar whole-brain approach to parenting and discipline.  
+* **[👶🧠😊📈📚 Brain Rules for Baby: How to Raise a Smart and Happy Child from Zero to Five](./brain-rules-for-baby.md)** by John Medina: Applies the brain rules specifically to early childhood development.  
+* **[🕳️🧠👶🏽 The Whole-Brain Child: 12 Revolutionary Strategies to Nurture Your Child's Developing Mind](./the-whole-brain-child.md)** by Daniel J. Siegel and Tina Payne Bryson: Focuses on integrating different parts of a child's brain to promote healthy development and emotional intelligence.  
+* **[🚫🎭🧠 No-Drama Discipline: The Whole-Brain Way to Calm the Chaos and Nurture Your Child's Developing Mind](./no-drama-discipline.md)** by Daniel J. Siegel and Tina Payne Bryson: Applies a similar whole-brain approach to parenting and discipline.  
 * ***Bringing Up Bébé: One American Mother Discovers the Wisdom of French Parenting*** by Pamela Druckerman: Explores cultural differences in parenting styles, offering a different lens on child development and behavior compared to a purely neuroscientific one.  
 * ***How We Learn: The Surprising Truth About When, Where, and Why It Happens*** by Benedict Carey: Investigates less intuitive but highly effective learning strategies based on psychological research.  
 * ***Oliver Sacks' works*** (e.g., *The Man Who Mistook His Wife for a Hat*): Case studies of neurological disorders that offer profound insights into the complexities and mysteries of the human brain and mind through compelling narratives.  
-* **[♾️📐🎶🥨 Gödel, Escher, Bach: An Eternal Golden Braid](/content/books/godel-escher-bach.md)** by Douglas Hofstadter: A Pulitzer Prize-winning book exploring common themes in the lives and works of mathematician Kurt Gödel, artist M. C. Escher, and composer Johann Sebastian Bach, delving into concepts of intelligence, consciousness, and complexity, often through creative and unexpected connections.  
+* **[♾️📐🎶🥨 Gödel, Escher, Bach: An Eternal Golden Braid](./godel-escher-bach.md)** by Douglas Hofstadter: A Pulitzer Prize-winning book exploring common themes in the lives and works of mathematician Kurt Gödel, artist M. C. Escher, and composer Johann Sebastian Bach, delving into concepts of intelligence, consciousness, and complexity, often through creative and unexpected connections.  
 * ***Proust and the Squid: The Story and Science of the Reading Brain*** by Maryanne Wolf: Explores the neuroscience and history of reading, providing a deep dive into a specific and crucial cognitive function.  
-* **[🤫🧠 Subliminal: How Your Unconscious Mind Rules Your Behavior](/content/books/subliminal-how-your-unconscious-mind-rules-your-behavior.md)** by Leonard Mlodinow: Explores the powerful influence of the unconscious mind on our perceptions, decisions, and behavior, adding another layer to understanding human action beyond conscious thought.  
+* **[🤫🧠 Subliminal: How Your Unconscious Mind Rules Your Behavior](./subliminal-how-your-unconscious-mind-rules-your-behavior.md)** by Leonard Mlodinow: Explores the powerful influence of the unconscious mind on our perceptions, decisions, and behavior, adding another layer to understanding human action beyond conscious thought.  
   
-## 💬 [Gemini](/content/software/gemini.md) Prompt (gemini-2.5-flash-preview-04-17)  
+## 💬 [Gemini](../software/gemini.md) Prompt (gemini-2.5-flash-preview-04-17)  
 > Write a markdown-formatted (start headings at level H2) book report, followed by a plethora of additional similar, contrasting, and creatively related book recommendations on Brain Rules: 12 Principles for Surviving and Thriving at Work, Home, and School. Be thorough in content discussed but concise and economical with your language. Structure the report with section headings and bulleted lists to avoid long blocks of text.

@@ -6,8 +6,11 @@ URL: https://bagrounds.org/books/good-to-go-what-the-athlete-in-all-of-us-can-le
 share: true
 affiliate link: https://amzn.to/3JggfZg
 CTA: 💪 Optimize wellbeing.
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_time: 2026-04-02T00:00:00Z
+force_analyze_links: false
 ---
-[Home](/content/index.md) > [Books](/content/books/index.md)  
+[Home](../index.md) > [Books](./index.md)  
 # 💪🧪 Good to Go: What the Athlete in All of Us Can Learn from the Strange Science of Recovery  
 [🛒 Good to Go: What the Athlete in All of Us Can Learn from the Strange Science of Recovery. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3JggfZg)  
   
@@ -37,31 +40,31 @@ CTA: 💪 Optimize wellbeing.
 ### 👯 Similar Books  
   
 * 🧬 The Sports Gene: Inside the Unexpected Science of Extraordinary Athletic Performance by David Epstein  
-* [💪🧠 Endure: Mind, Body, and the Curiously Elastic Limits of Human Performance](/content/books/endure-mind-body-and-the-curiously-elastic-limits-of-human-performance.md) by Alex Hutchinson  
+* [💪🧠 Endure: Mind, Body, and the Curiously Elastic Limits of Human Performance](./endure-mind-body-and-the-curiously-elastic-limits-of-human-performance.md) by Alex Hutchinson  
 * 👩 Roar: How to Match Your Food and Fitness to Your Unique Female Physiology for Optimum Performance, Great Health, and a Strong, Lean Body for Life by Stacy Sims  
-* [😴💭 Why We Sleep: Unlocking the Power of Sleep and Dreams](/content/books/why-we-sleep-unlocking-the-power-of-sleep-and-dreams.md) by Matthew Walker  
+* [😴💭 Why We Sleep: Unlocking the Power of Sleep and Dreams](./why-we-sleep-unlocking-the-power-of-sleep-and-dreams.md) by Matthew Walker  
 * 🎾 Bounce: Mozart, Federer, Picasso, Beckham, and the Science of Success by Matthew Syed  
 * 🏋️‍♂️ Chasing Excellence: A Story About Building the World's Fittest Athletes by Ben Bergeron  
-* [🚀📈🧘 Peak Performance: Elevate Your Game, Avoid Burnout, and Thrive with the New Science of Success](/content/books/peak-performance-elevate-your-game-avoid-burnout-and-thrive-with-the-new-science-of-success.md) by Brad Stulberg and Steve Magness  
-* [🤿💼 Deep Work: Rules for Focused Success in a Distracted World](/content/books/deep-work.md) by Cal Newport  
+* [🚀📈🧘 Peak Performance: Elevate Your Game, Avoid Burnout, and Thrive with the New Science of Success](./peak-performance-elevate-your-game-avoid-burnout-and-thrive-with-the-new-science-of-success.md) by Brad Stulberg and Steve Magness  
+* [🤿💼 Deep Work: Rules for Focused Success in a Distracted World](./deep-work.md) by Cal Newport  
   
 ### 🆚 Contrasting Books  
   
 * ⏱️ The 4-Hour Body: An Uncommon Guide to Rapid Fat-Loss, Incredible Sex, and Becoming Superhuman by Timothy Ferriss (often advocates for specific, sometimes unconventional, "biohacks" and practices)  
 * 🏋️‍♂️ Bigger Leaner Stronger by Michael Matthews (focuses heavily on training methodology and macro-nutrient tracking for muscle gain and fat loss, with less emphasis on holistic recovery science)  
 * 💪 The New Rules of Lifting Supercharged: Ten All-New Muscle-Building Rules for Men and Women by Lou Schuler and Alwyn Cosgrove (a training-focused book that might promote specific recovery tools without the same level of scientific skepticism)  
-* [🤸🤕 Becoming a Supple Leopard: The Ultimate Guide to Resolving Pain, Preventing Injury, and Optimizing Athletic Performance](/content/books/becoming-a-supple-leopard-the-ultimate-guide-to-resolving-pain-preventing-injury-and-optimizing-athletic-performance.md) by Kelly Starrett (emphasizes specific mobility and soft tissue work for performance and recovery, a more prescriptive approach than Good to Go)  
+* [🤸🤕 Becoming a Supple Leopard: The Ultimate Guide to Resolving Pain, Preventing Injury, and Optimizing Athletic Performance](./becoming-a-supple-leopard-the-ultimate-guide-to-resolving-pain-preventing-injury-and-optimizing-athletic-performance.md) by Kelly Starrett (emphasizes specific mobility and soft tissue work for performance and recovery, a more prescriptive approach than Good to Go)  
   
 ### 🧠 Creatively Related Books  
   
-* [🤔🐇🐢 Thinking, Fast and Slow](/content/books/thinking-fast-and-slow.md) by Daniel Kahneman (explores cognitive biases and decision-making, highly relevant to understanding how people fall for unproven remedies and the placebo effect)  
-* [🎨🤔🖼️ The Art of Thinking Clearly](/content/books/the-art-of-thinking-clearly.md) by Rolf Dobelli (provides a framework for recognizing and avoiding common thinking errors, aligning with Good to Go's debunking theme)  
-* [⚛️🔄 Atomic Habits: An Easy & Proven Way to Build Good Habits & Break Bad Ones](/content/books/atomic-habits.md) by James Clear (while not directly about recovery, it offers a framework for building consistent positive habits, including sleep and nutrition, which are key to recovery)  
-* [🪄 Big Magic: Creative Living Beyond Fear](/content/books/big-magic.md) by Elizabeth Gilbert (explores creativity, fear, and living a fulfilling life, touching on the idea of trusting one's intuition and process, which resonates with Aschwanden's call to "listen to your body")  
+* [🤔🐇🐢 Thinking, Fast and Slow](./thinking-fast-and-slow.md) by Daniel Kahneman (explores cognitive biases and decision-making, highly relevant to understanding how people fall for unproven remedies and the placebo effect)  
+* [🎨🤔🖼️ The Art of Thinking Clearly](./the-art-of-thinking-clearly.md) by Rolf Dobelli (provides a framework for recognizing and avoiding common thinking errors, aligning with Good to Go's debunking theme)  
+* [⚛️🔄 Atomic Habits: An Easy & Proven Way to Build Good Habits & Break Bad Ones](./atomic-habits.md) by James Clear (while not directly about recovery, it offers a framework for building consistent positive habits, including sleep and nutrition, which are key to recovery)  
+* [🪄 Big Magic: Creative Living Beyond Fear](./big-magic.md) by Elizabeth Gilbert (explores creativity, fear, and living a fulfilling life, touching on the idea of trusting one's intuition and process, which resonates with Aschwanden's call to "listen to your body")  
 * 🧘 The Subtle Art of Not Giving a F*ck by Mark Manson (a self-help book about prioritizing what truly matters and letting go of external pressures, which could relate to an athlete letting go of the pressure to adopt every new recovery fad)  
 * 🧠 A Guide to Rational Living by Albert Ellis and Robert Harper (focuses on self-management and changing negative emotions and behaviors, a stoic-like approach to mental well-being which can indirectly influence recovery)  
-* [📜🌍⏳ Sapiens: A Brief History of Humankind](/content/books/sapiens-a-brief-history-of-humankind.md) by Yuval Noah Harari (offers a broad historical perspective on human beliefs and practices, which can provide context for understanding why certain "strange sciences" gain traction)  
-* [🪖🎨 The War of Art: Break Through the Blocks and Win Your Inner Creative Battles](/content/books/the-war-of-art.md) by Steven Pressfield (explores the concept of "resistance" and overcoming internal obstacles, a metaphorical parallel to an athlete's mental battles with training and recovery)  
+* [📜🌍⏳ Sapiens: A Brief History of Humankind](./sapiens-a-brief-history-of-humankind.md) by Yuval Noah Harari (offers a broad historical perspective on human beliefs and practices, which can provide context for understanding why certain "strange sciences" gain traction)  
+* [🪖🎨 The War of Art: Break Through the Blocks and Win Your Inner Creative Battles](./the-war-of-art.md) by Steven Pressfield (explores the concept of "resistance" and overcoming internal obstacles, a metaphorical parallel to an athlete's mental battles with training and recovery)  
   
-## 💬 [Gemini](/content/software/gemini.md) Prompt (gemini-2.5-flash)  
+## 💬 [Gemini](../software/gemini.md) Prompt (gemini-2.5-flash)  
 > Write a markdown-formatted (start headings at level H2) book report, followed by a plethora of additional similar, contrasting, and creatively related book recommendations on Good to Go: What the Athlete in All of Us Can Learn from the Strange Science of Recovery. Never put book titles in quotes or italics. Be thorough in content discussed but concise and economical with your language. Structure the report with section headings and bulleted lists to avoid long blocks of text.

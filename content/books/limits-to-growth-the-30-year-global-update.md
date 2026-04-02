@@ -6,8 +6,11 @@ URL: https://bagrounds.org/books/limits-to-growth-the-30-year-global-update
 share: true
 CTA: 🌍 Confront the future.
 affiliate link: https://amzn.to/3JusFxb
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_time: 2026-04-01T00:00:00Z
+force_analyze_links: false
 ---
-[Home](/content/index.md) > [Books](/content/books/index.md)  
+[Home](../index.md) > [Books](./index.md)  
 # 📉🌍⏳ Limits to Growth: The 30-Year Global Update  
 [🛒 Limits to Growth: The 30-Year Global Update. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3JusFxb)  
   
@@ -75,17 +78,17 @@ affiliate link: https://amzn.to/3JusFxb
   
 ### 📖 Similar  
 * The Limits to Growth by Donella H. Meadows, Dennis L. Meadows, Jorgen Randers, William W. Behrens III  
-* [🌐🔗🧠📖 Thinking in Systems: A Primer](/content/books/thinking-in-systems.md) by Donella H. Meadows  
-* [🌍🆘 Earth for All: A Survival Guide for Humanity](/content/books/earth-for-all-a-survival-guide-for-humanity.md) by Sandrine Dixson-Declève, Owen Gaffney, Jayati Ghosh, Jørgen Randers, Johan Rockström  
+* [🌐🔗🧠📖 Thinking in Systems: A Primer](./thinking-in-systems.md) by Donella H. Meadows  
+* [🌍🆘 Earth for All: A Survival Guide for Humanity](./earth-for-all-a-survival-guide-for-humanity.md) by Sandrine Dixson-Declève, Owen Gaffney, Jayati Ghosh, Jørgen Randers, Johan Rockström  
   
 ### 🆚 Contrasting  
 * The Skeptical Environmentalist by Bjørn Lomborg  
 * More From Less: The Surprising Story of How We Learned to Prosper Using Fewer Resources—and What Happens Next by Andrew McAfee  
   
 ### 🔗 Related  
-* [🍩🌍 Doughnut Economics: Seven Ways to Think Like a 21st-Century Economist](/content/books/doughnut-economics-seven-ways-to-think-like-a-21st-century-economist.md) by Kate Raworth  
+* [🍩🌍 Doughnut Economics: Seven Ways to Think Like a 21st-Century Economist](./doughnut-economics-seven-ways-to-think-like-a-21st-century-economist.md) by Kate Raworth  
 * Collapse: How Societies Choose to Fail or Succeed by Jared Diamond  
-* [🤏🧑 Small Is Beautiful: Economics as if People Mattered](/content/books/small-is-beautiful-economics-as-if-people-mattered.md) by E. F. Schumacher  
+* [🤏🧑 Small Is Beautiful: Economics as if People Mattered](./small-is-beautiful-economics-as-if-people-mattered.md) by E. F. Schumacher  
   
 ## 🫵 What Do You Think?  
   

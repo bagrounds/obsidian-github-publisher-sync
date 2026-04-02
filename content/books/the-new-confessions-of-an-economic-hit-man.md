@@ -7,7 +7,7 @@ share: true
 CTA: 🤫 Uncover the hidden economic levers.
 affiliate link: https://amzn.to/3Ynsqrw
 ---
-[Home](/content/index.md) > [Books](/content/books/index.md)  
+[Home](../index.md) > [Books](./index.md)  
 # 🤫💰🕵️ The New Confessions of an Economic Hit Man  
 [🛒 The New Confessions of an Economic Hit Man. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3Ynsqrw)  
   
@@ -67,12 +67,12 @@ affiliate link: https://amzn.to/3Ynsqrw
   
 ### ↔️ Contrasting  
 * 🌍 The White Man's Burden: Why the West's Efforts to Aid the Rest Have Done So Much Ill and So Little Good by William Easterly  
-* [🤔🌍📈✅ Factfulness: Ten Reasons We're Wrong About the World - and Why Things Are Better Than You Think](/content/books/factfulness.md) by Hans Rosling  
-* [🌎👎👑💰🏚️ Why Nations Fail: The Origins of Power, Prosperity, and Poverty](/content/books/why-nations-fail-the-origins-of-power-prosperity-and-poverty.md) by Daron Acemoglu and James A. Robinson  
+* [🤔🌍📈✅ Factfulness: Ten Reasons We're Wrong About the World - and Why Things Are Better Than You Think](./factfulness.md) by Hans Rosling  
+* [🌎👎👑💰🏚️ Why Nations Fail: The Origins of Power, Prosperity, and Poverty](./why-nations-fail-the-origins-of-power-prosperity-and-poverty.md) by Daron Acemoglu and James A. Robinson  
   
 ### 🔗 Related  
 * ⚖️ The Divide: A Brief Guide to Global Inequality and its Solutions by Jason Hickel  
-* [🏛️💰 Debt: The First 5,000 Years](/content/books/debt-the-first-5000-years.md) by David Graeber  
+* [🏛️💰 Debt: The First 5,000 Years](./debt-the-first-5000-years.md) by David Graeber  
 * 🤡 Griftopia: Bubble Machines, Puppet Masters, and the New Age of Stupidity in an Economy Gone Wild by Matt Taibbi  
   
 ## 🫵 What Do You Think?  

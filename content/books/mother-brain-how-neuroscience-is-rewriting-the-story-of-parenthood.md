@@ -6,7 +6,7 @@ URL: https://bagrounds.org/books/mother-brain-how-neuroscience-is-rewriting-the-
 share: true
 affiliate link: https://amzn.to/45ocnyr
 ---
-[Home](/content/index.md) > [Books](/content/books/index.md)  
+[Home](../index.md) > [Books](./index.md)  
 # 🤱🏼🧠 Mother Brain: How Neuroscience Is Rewriting the Story of Parenthood  
 [🛒 Mother Brain: How Neuroscience Is Rewriting the Story of Parenthood. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/45ocnyr)  
   
@@ -54,7 +54,7 @@ affiliate link: https://amzn.to/45ocnyr
 ### 🧠 Similar Reads (Focus on Neuroscience of Parenthood/Brain Changes):  
   
 * 🧠 **Brain-Based Parenting: The Neuroscience of Caregiving for Healthy Attachment** by Daniel A. Hughes and Jonathan Baylin: Explores how attachment-focused therapy works at a neural level and the brain science of early childhood. 👶  
-* **[🕳️🧠👶🏽 The Whole-Brain Child: 12 Revolutionary Strategies to Nurture Your Child's Developing Mind](/content/books/the-whole-brain-child.md)** by Daniel J. Siegel and Tina Payne Bryson: While focused on the child's brain, it offers insights into parent-child interactions and brain development, which complements the understanding of the parent's brain. 🧠  
+* **[🕳️🧠👶🏽 The Whole-Brain Child: 12 Revolutionary Strategies to Nurture Your Child's Developing Mind](./the-whole-brain-child.md)** by Daniel J. Siegel and Tina Payne Bryson: While focused on the child's brain, it offers insights into parent-child interactions and brain development, which complements the understanding of the parent's brain. 🧠  
 * 🫂 **The Neurobiology of Attachment-Focused Therapy** by Daniel A. Hughes and Jonathan Baylin: Delves into the brain science of attachment and trauma in children, relevant for understanding the caregiver's role in shaping brain development. 🧠  
   
 ### 🏛️ Contrasting Perspectives (Traditional/Sociological Views on Parenthood):  
@@ -79,7 +79,7 @@ affiliate link: https://amzn.to/45ocnyr
   
 #### 🧠 Books on Brain Plasticity and Learning in Adults:  
   
-* 🔄 **[The Brain That Changes Itself](/content/books/the-brain-that-changes-itself.md): Stories of Personal Triumph from the Frontiers of Brain Science** by Norman Doidge: A classic in popular neuroscience, detailing the brain's capacity for change. 💪  
+* 🔄 **[The Brain That Changes Itself](./the-brain-that-changes-itself.md): Stories of Personal Triumph from the Frontiers of Brain Science** by Norman Doidge: A classic in popular neuroscience, detailing the brain's capacity for change. 💪  
 * 🌱 **The Brain's Way of Healing: Remarkable Discoveries and Recoveries from the Frontiers of Neuroplasticity** by Norman Doidge: Further explores the healing capacities of the brain. 🩹  
 * 🦸 **Neuroplasticity: Your Brain's Superpower** by Philippe Douyon: Explores how the brain can adapt and heal, and how we can actively engage with our neurological health. 🧠  
 * 💡 **Rewire Your Brain: Think Your Way to a Better Life** by John B. Arden: Offers practical strategies based on neuroscience to rewire the brain for positivity and well-being. ✨  
@@ -87,8 +87,8 @@ affiliate link: https://amzn.to/45ocnyr
   
 #### 🫂 Books on the Neurobiology/Psychology of Attachment:  
   
-* **[🧑‍❤️‍🧑🔗 Attached: The New Science of Adult Attachment and How It Can Help You Find - and Keep - Love](/content/books/attached-the-new-science-of-adult-attachment-and-how-it-can-help-you-find-and-keep-love.md)** by Amir Levine and Rachel S.F. Heller: Explores adult attachment styles and their impact on relationships. 👩‍❤️‍👨  
-* **[🧠🧑‍🤝‍🧑 The Developing Mind: How Relationships and the Brain Interact to Shape Who We Are](/content/books/the-developing-mind-how-relationships-and-the-brain-interact-to-shape-who-we-are.md)** by Daniel J. Siegel: Discusses how relationships, particularly early attachments, shape brain development and our sense of self. 🧠  
+* **[🧑‍❤️‍🧑🔗 Attached: The New Science of Adult Attachment and How It Can Help You Find - and Keep - Love](./attached-the-new-science-of-adult-attachment-and-how-it-can-help-you-find-and-keep-love.md)** by Amir Levine and Rachel S.F. Heller: Explores adult attachment styles and their impact on relationships. 👩‍❤️‍👨  
+* **[🧠🧑‍🤝‍🧑 The Developing Mind: How Relationships and the Brain Interact to Shape Who We Are](./the-developing-mind-how-relationships-and-the-brain-interact-to-shape-who-we-are.md)** by Daniel J. Siegel: Discusses how relationships, particularly early attachments, shape brain development and our sense of self. 🧠  
 * 🤝 **Attachment Theory: A Guide to Strengthening the Relationships in Your Life** by Thais Gibson: Offers guidance on understanding and improving attachment patterns. 💖  
 * 🧠 **"Attachment" chapter in Cambridge Textbook of Neuroscience for Psychiatrists** by Lane Strathearn: Provides a neurobiological overview of attachment theory. 🔗  
   
@@ -111,5 +111,5 @@ affiliate link: https://amzn.to/45ocnyr
 * 💚 **Brain-Body Parenting: How to Stop Managing Behavior and Start Raising Joyful, Resilient Kids** by Mona Delahooke: Focuses on understanding child behavior through the lens of brain and nervous system development. 🧠  
 * 🧭 **Beyond Behaviors: Using Brain Science and Compassion to Understand and Solve Children's Behavioral Challenges** by Mona Delahooke: Offers a paradigm shift towards understanding the root causes of behavior.". ✨  
   
-## 💬 [Gemini](/content/software/gemini.md) Prompt (gemini-2.5-pro-exp-03-25)  
+## 💬 [Gemini](../software/gemini.md) Prompt (gemini-2.5-pro-exp-03-25)  
 > Write a markdown-formatted (start headings at level H2) book report, followed by a plethora of additional similar, contrasting, and creatively related book recommendations on Mother Brain: How Neuroscience Is Rewriting the Story of Parenthood. Be thorough in content discussed but concise and economical with your language. Structure the report with section headings and bulleted lists to avoid long blocks of text.

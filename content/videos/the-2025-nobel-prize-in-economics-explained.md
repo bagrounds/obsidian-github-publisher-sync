@@ -10,7 +10,7 @@ Channel: Economics Explained
 tags:
 youtube: https://youtu.be/u4hZAMp25s4
 ---
-[Home](/content/index.md) > [Videos](/content/videos/index.md)  
+[Home](../index.md) > [Videos](./index.md)  
 # 🥇💰📈🧑‍🏫 The 2025 Nobel Prize in Economics: Explained  
 ![The 2025 Nobel Prize in Economics: Explained](https://youtu.be/u4hZAMp25s4)  
   
@@ -55,12 +55,12 @@ A: ⚖️ Optimal policy involves balancing the protection of IP to grant innova
 ## 📚 Book Recommendations  
   
 ### ↔️ Similar  
-* [🧑‍💼💥 Prophet of Innovation: Joseph Schumpeter and Creative Destruction](/content/books/prophet-of-innovation-joseph-schumpeter-and-creative-destruction.md): Joseph Schumpeter and Creative Destruction by Thomas K. McCraw. 💡 This book provides an essential biography and detailed analysis of the economist who originally coined and championed the concept of creative destruction.  
+* [🧑‍💼💥 Prophet of Innovation: Joseph Schumpeter and Creative Destruction](../books/prophet-of-innovation-joseph-schumpeter-and-creative-destruction.md): Joseph Schumpeter and Creative Destruction by Thomas K. McCraw. 💡 This book provides an essential biography and detailed analysis of the economist who originally coined and championed the concept of creative destruction.  
 * 📚 The Power of Creative Destruction by Philippe Aghion, Céline Antonin, and Simon Bunel. 💡 Written by one of the Nobel laureates, this book further explains their model and directly explores its applications for contemporary economic and policy challenges.  
   
 ### 🆚 Contrasting  
-* [🌍🏛️ The Great Transformation: The Political and Economic Origins of Our Time](/content/books/the-great-transformation-the-political-and-economic-origins-of-our-time.md) by Karl Polanyi. 🌍 This seminal work challenges the idea of self-regulating markets by arguing that capitalist markets are historically recent, deeply embedded in, and dependent upon social and political institutions.  
-* [💡🤖💰💥🏢📉 The Innovator's Dilemma: When New Technologies Cause Great Firms to Fail](/content/books/the-innovators-dilemma.md) by Clayton Christensen. 🛑 This book contrasts with the idea that new innovations are always better by explaining why successful, well-managed companies often fail when confronted by **disruptive technologies** that are initially inferior but appeal to smaller, emerging markets.  
+* [🌍🏛️ The Great Transformation: The Political and Economic Origins of Our Time](../books/the-great-transformation-the-political-and-economic-origins-of-our-time.md) by Karl Polanyi. 🌍 This seminal work challenges the idea of self-regulating markets by arguing that capitalist markets are historically recent, deeply embedded in, and dependent upon social and political institutions.  
+* [💡🤖💰💥🏢📉 The Innovator's Dilemma: When New Technologies Cause Great Firms to Fail](../books/the-innovators-dilemma.md) by Clayton Christensen. 🛑 This book contrasts with the idea that new innovations are always better by explaining why successful, well-managed companies often fail when confronted by **disruptive technologies** that are initially inferior but appeal to smaller, emerging markets.  
   
 ### 🎨 Creatively Related  
 * 📚 Diffusion of Innovations by Everett Rogers. 🗣️ This classic work in sociology provides a foundational theory on how, why, and at what rate new ideas, products, and technologies spread through social systems and cultures.  

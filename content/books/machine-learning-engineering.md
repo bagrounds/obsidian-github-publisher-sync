@@ -7,7 +7,7 @@ share: true
 CTA: 🤖 Construct intelligence.
 affiliate link: https://amzn.to/4oo9og9
 ---
-[Home](/content/index.md) > [Books](/content/books/index.md)  
+[Home](../index.md) > [Books](./index.md)  
 # 🤖⚙️ Machine Learning Engineering  
 [🛒 Machine Learning Engineering. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4oo9og9)  
   
@@ -48,8 +48,8 @@ affiliate link: https://amzn.to/4oo9og9
 🧠 For readers who appreciate the engineering-focused and practical nature of Burkov's work, these books offer a deeper dive into related and foundational topics.  
   
 * 📖 **The Hundred-Page Machine Learning Book by Andriy Burkov:** 📝 As the precursor to *Machine Learning Engineering*, this book provides a concise and accessible overview of core machine learning concepts. 🚀 It's an excellent starting point for those who need to solidify their foundational knowledge before tackling the engineering complexities.  
-* **[💾🏗️ Fundamentals of Data Engineering: Plan and Build Robust Data Systems](/content/books/fundamentals-of-data-engineering-plan-and-build-robust-data-systems.md) by Joe Reis and Matt Housley:** 🏗️ This book offers a comprehensive look at the entire data engineering lifecycle, from generation and storage to transformation and serving. 🛠️ It provides a tool-agnostic and high-level framework for planning and building robust data systems, making it a natural companion to Burkov's focus on the ML-specific aspects of engineering.  
-* **[💾⬆️🛡️ Designing Data-Intensive Applications: The Big Ideas Behind Reliable, Scalable, and Maintainable Systems](/content/books/designing-data-intensive-applications.md) by Martin Kleppmann:** 🏛️ A seminal work in the field of data systems, this book explores the fundamental principles behind reliable, scalable, and maintainable systems. 📚 It provides a deep understanding of the trade-offs involved in designing complex data infrastructures, which is essential context for any machine learning engineer.  
+* **[💾🏗️ Fundamentals of Data Engineering: Plan and Build Robust Data Systems](./fundamentals-of-data-engineering-plan-and-build-robust-data-systems.md) by Joe Reis and Matt Housley:** 🏗️ This book offers a comprehensive look at the entire data engineering lifecycle, from generation and storage to transformation and serving. 🛠️ It provides a tool-agnostic and high-level framework for planning and building robust data systems, making it a natural companion to Burkov's focus on the ML-specific aspects of engineering.  
+* **[💾⬆️🛡️ Designing Data-Intensive Applications: The Big Ideas Behind Reliable, Scalable, and Maintainable Systems](./designing-data-intensive-applications.md) by Martin Kleppmann:** 🏛️ A seminal work in the field of data systems, this book explores the fundamental principles behind reliable, scalable, and maintainable systems. 📚 It provides a deep understanding of the trade-offs involved in designing complex data infrastructures, which is essential context for any machine learning engineer.  
   
 ### ⚖️ Contrasting Read: A Critical Lens on AI  
   
@@ -64,5 +64,5 @@ affiliate link: https://amzn.to/4oo9og9
 * 🐍 **Deep Learning with Python by François Chollet:** ✍️ Written by the creator of the Keras library, this book provides a practical and accessible introduction to deep learning. 💡 It emphasizes intuitive explanations and hands-on examples, making it an excellent resource for those who want to understand the "how" and "why" of deep learning models. 🧠 The book covers the use of pre-trained models and the Keras/TensorFlow ecosystem, which are highly relevant skills for any machine learning practitioner.  
 * 💻 **Hands-On Machine Learning with Scikit-Learn, Keras & TensorFlow by Aurélien Géron:** 👨‍💻 This book is a highly practical guide that walks readers through building machine learning models using popular Python libraries. ✅ It's an excellent choice for those who learn best by doing and want to gain hands-on experience with real-world applications.  
   
-## 💬 [Gemini](/content/software/gemini.md) Prompt (gemini-2.5-pro)  
+## 💬 [Gemini](../software/gemini.md) Prompt (gemini-2.5-pro)  
 > Write a markdown-formatted (start headings at level H2) book report, followed by a plethora of additional similar, contrasting, and creatively related book recommendations on Machine Learning Engineering by Andriy Burkov. Never put book titles in quotes or italics. Be thorough in content discussed but concise and economical with your language. Structure the report with section headings and bulleted lists to avoid long blocks of text.

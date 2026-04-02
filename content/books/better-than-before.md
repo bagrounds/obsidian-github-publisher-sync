@@ -7,8 +7,11 @@ URL: https://bagrounds.org/books/better-than-before
 Author:
 tags:
 affiliate link: https://amzn.to/4556LsH
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_time: 2026-04-01T00:00:00Z
+force_analyze_links: false
 ---
-[Home](/content/index.md) > [Books](/content/books/index.md)  
+[Home](../index.md) > [Books](./index.md)  
 # 📉➡️👍 Better Than Before: What I Learned About Making and Breaking Habits - to Sleep More, Quit Sugar, Procrastinate Less, and Generally Build a Happier Life  
 [🛒 Better Than Before: What I Learned About Making and Breaking Habits - to Sleep More, Quit Sugar, Procrastinate Less, and Generally Build a Happier Life. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4556LsH)  
   
@@ -58,14 +61,14 @@ Gretchen Rubin's book provides a unique perspective by shifting the focus from g
   
 ### 📚 Additional Book Recommendations 🌟  
   
-* **Best Alternate Book on the Same Topic:** "[Atomic Habits](/content/books/atomic-habits.md)" by James Clear. This book provides a more scientifically backed and detailed approach to habit formation. ⚛️  
-* **Best Tangentially Related Book:** "[Drive: The Surprising Truth About What Motivates Us](/content/books/drive-the-surprising-truth-about-what-motivates-us.md)" by Daniel H. Pink. This book explores the science of motivation, which is closely related to habit formation. 🚗  
-* **Best Diametrically Opposed Book:** "[The Power of Habit](/content/books/the-power-of-habit.md)" by Charles Duhigg. While also about habits, it focuses more on the neuroscience of habits and less on individual tendencies. 🧠  
-* **Best Fiction Book Incorporating Related Ideas:** "[👨‍🚀🔴✨ The Martian](/content/books/the-martian.md)" by Andy Weir. This book illustrates how structured routines and problem-solving habits can lead to survival in extreme circumstances. 🚀  
+* **Best Alternate Book on the Same Topic:** "[Atomic Habits](./atomic-habits.md)" by James Clear. This book provides a more scientifically backed and detailed approach to habit formation. ⚛️  
+* **Best Tangentially Related Book:** "[Drive: The Surprising Truth About What Motivates Us](./drive-the-surprising-truth-about-what-motivates-us.md)" by Daniel H. Pink. This book explores the science of motivation, which is closely related to habit formation. 🚗  
+* **Best Diametrically Opposed Book:** "[The Power of Habit](./the-power-of-habit.md)" by Charles Duhigg. While also about habits, it focuses more on the neuroscience of habits and less on individual tendencies. 🧠  
+* **Best Fiction Book Incorporating Related Ideas:** "[👨‍🚀🔴✨ The Martian](./the-martian.md)" by Andy Weir. This book illustrates how structured routines and problem-solving habits can lead to survival in extreme circumstances. 🚀  
 * **Best More General Book:** "The Happiness Project" by Gretchen Rubin. This is a great starting point to learn more about Gretchen Rubin's work, and the foundations of happiness. 😊  
-* **Best More Specific Book:** "[Tiny Habits](/content/books/tiny-habits.md): The Small Changes That Change Everything" by BJ Fogg. This book provides a very specific methodology for habit formation. 🤏  
+* **Best More Specific Book:** "[Tiny Habits](./tiny-habits.md): The Small Changes That Change Everything" by BJ Fogg. This book provides a very specific methodology for habit formation. 🤏  
 * **Best More Accessible Book:** "The Little Book of Hygge: Danish Secrets to Happy Living" by Meik Wiking. This book offers a lighthearted and accessible approach to creating a happier life through simple habits and rituals. 🕯️  
-* **Best More Rigorous Book:** "[Thinking, Fast and Slow](/content/books/thinking-fast-and-slow.md)" by Daniel Kahneman. This book delves into the cognitive biases and mental processes that influence decision-making and habits. 🧠  
+* **Best More Rigorous Book:** "[Thinking, Fast and Slow](./thinking-fast-and-slow.md)" by Daniel Kahneman. This book delves into the cognitive biases and mental processes that influence decision-making and habits. 🧠  
   
 ## 💬 [Gemini](https://gemini.google.com) Prompt  
 > Summarize the book: Better Than Before: What I Learned About Making and Breaking Habits - to Sleep More, Quit Sugar, Procrastinate Less, and Generally Build a Happier Life. Start with a TL;DR - a single statement that conveys a maximum of the useful information provided in the book. Next, explain how this book may offer a new or surprising perspective. Follow this with a deep dive. Catalogue the topics, methods, and research discussed. Be sure to highlight any significant theories, theses, or mental models proposed. Summarize prominent examples discussed. Emphasize practical takeaways, including detailed, specific, concrete, step-by-step advice, guidance, or techniques discussed. Provide a critical analysis of the quality of the information presented, using scientific backing, author credentials, authoritative reviews, and other markers of high quality information as justification. Make the following additional book recommendations: the best alternate book on the same topic; the best book that is tangentially related; the best book that is diametrically opposed; the best fiction book that incorporates related ideas; the best book that is more general or more specific; and the best book that is more rigorous or more accessible than this book. Format your response as markdown, starting at heading level H3, with inline links, for easy copy paste. Use meaningful emojis generously (at least one per heading, bullet point, and paragraph) to enhance readability. Do not include broken links or links to commercial sites.

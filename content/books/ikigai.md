@@ -7,8 +7,11 @@ URL: https://bagrounds.org/books/ikigai
 Author:
 tags:
 affiliate link: https://amzn.to/4jzQLm4
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_time: 2026-04-01T00:00:00Z
+force_analyze_links: false
 ---
-[Home](/content/index.md) > [Books](/content/books/index.md)  
+[Home](../index.md) > [Books](./index.md)  
 # 🇯🇵🔑😊💯 Ikigai: The Japanese Secret to a Long and Happy Life  
 [🛒 Ikigai: The Japanese Secret to a Long and Happy Life. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4jzQLm4)  
   
@@ -57,12 +60,12 @@ The book presents a compelling case for the importance of Ikigai and community i
   
 #### Additional Book Recommendations 📚  
 * **Best Alternate Book on the Same Topic:** "The Blue Zones: 9 Lessons for Living Longer From the People Who've Lived Longest" by Dan Buettner. 🌍  
-* **Best Tangentially Related Book:** [😮😊 Stumbling on Happiness](/content/books/stumbling-on-happiness.md) by Daniel Gilbert. 😊  
+* **Best Tangentially Related Book:** [😮😊 Stumbling on Happiness](./stumbling-on-happiness.md) by Daniel Gilbert. 😊  
 * **Best Diametrically Opposed Book:** "The Subtle Art of Not Giving a F*ck: A Counterintuitive Approach to Living a Good Life" by Mark Manson. 🖕  
 * **Best Fiction Book That Incorporates Related Ideas:** "The Midnight Library" by Matt Haig. 🌌  
-* **Best More General Book:** "[Sapiens: A Brief History of Humankind](/content/books/sapiens-a-brief-history-of-humankind.md)" by Yuval Noah Harari. 📜  
+* **Best More General Book:** "[Sapiens: A Brief History of Humankind](./sapiens-a-brief-history-of-humankind.md)" by Yuval Noah Harari. 📜  
 * **Best More Specific Book:** "Kaizen: The Japanese Method for Transforming Habits, One Small Step at a Time" by Masaaki Imai. 👣  
-* **Best More Rigorous Book:** "[Thinking, Fast and Slow](/content/books/thinking-fast-and-slow.md)" by Daniel Kahneman. 🧠  
+* **Best More Rigorous Book:** "[Thinking, Fast and Slow](./thinking-fast-and-slow.md)" by Daniel Kahneman. 🧠  
 * **Best More Accessible Book:** "The Little Book of Hygge: Danish Secrets to Happy Living" by Meik Wiking. 🕯️  
   
 ## 💬 [Gemini](https://gemini.google.com) Prompt  

@@ -8,7 +8,7 @@ Author: "[[Emily Oster]]"
 tags:
 affiliate link: https://amzn.to/3ZbhEoY
 ---
-[Home](/content/index.md) > [Books](/content/books/index.md)  
+[Home](../index.md) > [Books](./index.md)  
 # 🫄➕ Expecting Better: Why the Conventional Pregnancy Wisdom Is Wrong - and What You Really Need to Know  
 [🛒 Expecting Better: Why the Conventional Pregnancy Wisdom Is Wrong - and What You Really Need to Know. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3ZbhEoY)  
   
@@ -77,7 +77,7 @@ This book offers a refreshing and often surprising perspective by applying an ec
   
 ### 📚 Book Recommendations  
 - Best Alternate (Same Topic): Mayo Clinic Guide to a Healthy Pregnancy 🏥 - Offers comprehensive, authoritative, but more conventional medical advice from a trusted institution. Less data-analysis focus, more standard recommendations. 👍📋  
-- Best Tangentially Related: [Cribsheet](/content/books/cribsheet.md) by Emily Oster 👶 - Applies the same data-driven, myth-busting approach to decisions in early childhood (sleep training, breastfeeding, potty training, etc.). 😴🍼🚽 Perfect follow-up!  
+- Best Tangentially Related: [Cribsheet](./cribsheet.md) by Emily Oster 👶 - Applies the same data-driven, myth-busting approach to decisions in early childhood (sleep training, breastfeeding, potty training, etc.). 😴🍼🚽 Perfect follow-up!  
 - Best Diametrically Opposed: Ina May's Guide to Childbirth by Ina May Gaskin 🧘‍♀️ - Focuses on natural childbirth, midwifery care, intuition, and minimizing medical interventions, often based on anecdotal experience and a different philosophy rather than statistical analysis. 🤰✨ Represents a trust-the-body, low-intervention approach.  
 - Best Fiction Incorporating Related Ideas: The Farm by Joanne Ramos 📚 dystopia/social commentary exploring surrogacy, socioeconomic divides, and the intense scrutiny and control over pregnant bodies, albeit in a fictional context. 🤔🤰💲  
 - More General: What to Expect When You're Expecting by Heidi Murkoff 📖 - The classic, comprehensive week-by-week guide, though less focused on deep data analysis and more on general advice and symptom tracking. 🗓️👍  

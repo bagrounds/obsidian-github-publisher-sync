@@ -10,7 +10,7 @@ Channel: Times Radio
 tags:
 youtube: https://youtu.be/7duenc71Uok
 ---
-[Home](/content/index.md) > [Videos](/content/videos/index.md)  
+[Home](../index.md) > [Videos](./index.md)  
 # 💰🔄 Trump’s mega bill ‘hasn’t even cut taxes, it’s redistributed them’ | Justin Wolfers  
 ![Trump’s mega bill ‘hasn’t even cut taxes, it’s redistributed them’ | Justin Wolfers](https://youtu.be/7duenc71Uok)  
   
@@ -21,12 +21,12 @@ youtube: https://youtu.be/7duenc71Uok
   
 ## 📚 Book Recommendations  
 * **On Tax Policy and Economics:**  
-    * [💰📈🌍⏳ Capital in the Twenty-First Century](/content/books/capital-in-the-twenty-first-century.md) by Thomas Piketty  
-    * [🏷️🏚️💔🏰 The Price of Inequality: How Today's Divided Society Endangers Our Future](/content/books/the-price-of-inequality-how-todays-divided-society-endangers-our-future.md) by Joseph E. Stiglitz  
+    * [💰📈🌍⏳ Capital in the Twenty-First Century](../books/capital-in-the-twenty-first-century.md) by Thomas Piketty  
+    * [🏷️🏚️💔🏰 The Price of Inequality: How Today's Divided Society Endangers Our Future](../books/the-price-of-inequality-how-todays-divided-society-endangers-our-future.md) by Joseph E. Stiglitz  
     * *Economics in One Lesson* by Henry Hazlitt  
 * **On US National Debt and Fiscal Policy:**  
-    * [💰📉➡️📈🗳️ The Deficit Myth: Modern Monetary Theory and the Birth of the People's Economy](/content/books/the-deficit-myth.md) by Stephanie Kelton  
-    * [🏛️💰 Debt: The First 5,000 Years](/content/books/debt-the-first-5000-years.md) by David Graeber  
+    * [💰📉➡️📈🗳️ The Deficit Myth: Modern Monetary Theory and the Birth of the People's Economy](../books/the-deficit-myth.md) by Stephanie Kelton  
+    * [🏛️💰 Debt: The First 5,000 Years](../books/debt-the-first-5000-years.md) by David Graeber  
 * **On Trade and Tariffs:**  
     * *Trade Wars Are Class Wars: How Globalism Hurts Workers and Harms Our Future* by Matthew C. Klein and Michael Pettis  
     * *The Myth of Free Trade: A Historical Reassessment* by Peter D. Sutherland  

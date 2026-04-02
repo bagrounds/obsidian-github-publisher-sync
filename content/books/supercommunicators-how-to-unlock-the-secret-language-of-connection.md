@@ -7,7 +7,7 @@ share: true
 affiliate link: https://amzn.to/4npQHYA
 CTA: 🗣️ Master conversations.
 ---
-[Home](/content/index.md) > [Books](/content/books/index.md)  
+[Home](../index.md) > [Books](./index.md)  
 # 🗣️🔗 Supercommunicators: How to Unlock the Secret Language of Connection  
 [🛒 Supercommunicators: How to Unlock the Secret Language of Connection. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4npQHYA)  
   
@@ -50,8 +50,8 @@ These narratives demonstrate how applying Duhigg's principles can transform chal
   
 These books share Supercommunicators' focus on improving interpersonal communication, understanding human behavior, and building stronger connections.  
   
-* **[🙅‍♀️✂️⚖️ Never Split the Difference: Negotiating As If Your Life Depended On It](/content/books/never-split-the-difference.md)** by Chris Voss. Written by a former FBI hostage negotiator, this book offers a field-tested approach to high-stakes negotiations, focusing on tactical empathy and active listening to achieve persuasive outcomes. 🗣️ It provides practical strategies for understanding and influencing others in critical conversations. 💪  
-* **[🍃🧠🤝🏼 Influence: The Psychology of Persuasion](/content/books/influence.md)** by Robert Cialdini. A foundational text in persuasion, Cialdini's book details six universal principles of influence (reciprocity, commitment and consistency, social proof, liking, authority, and scarcity) that drive human decision-making. 🤔 It provides insight into the psychological mechanisms behind why people say "yes." 👍  
+* **[🙅‍♀️✂️⚖️ Never Split the Difference: Negotiating As If Your Life Depended On It](./never-split-the-difference.md)** by Chris Voss. Written by a former FBI hostage negotiator, this book offers a field-tested approach to high-stakes negotiations, focusing on tactical empathy and active listening to achieve persuasive outcomes. 🗣️ It provides practical strategies for understanding and influencing others in critical conversations. 💪  
+* **[🍃🧠🤝🏼 Influence: The Psychology of Persuasion](./influence.md)** by Robert Cialdini. A foundational text in persuasion, Cialdini's book details six universal principles of influence (reciprocity, commitment and consistency, social proof, liking, authority, and scarcity) that drive human decision-making. 🤔 It provides insight into the psychological mechanisms behind why people say "yes." 👍  
 * 👂 **You're Not Listening** by Kate Murphy. This book emphasizes the underappreciated skill of listening as the key to understanding others and building better relationships. 🔗 It delves into why we've stopped listening and offers ways to reclaim this vital communication art. 🎧  
 * 🗣️ **Skilled Interpersonal Communication** by Owen Hargie. This academic yet accessible book covers a broad range of interpersonal communication skills, including explaining, listening, assertiveness, negotiation, and persuasion, offering a comprehensive guide to effective interaction. 🧑‍🤝‍🧑  
   
@@ -69,8 +69,8 @@ These recommendations explore themes that highlight the *absence* or *breakdown*
 These books touch upon themes of understanding, connection, or the complexities of human interaction in unique or unexpected ways, offering a broadened perspective beyond direct communication techniques.  
   
 * ⏳ **The Sense of an Ending** by Julian Barnes. This novel delves into memory, self-deception, and the subjective nature of personal history. 📝 It subtly illustrates how our internal narratives and misunderstandings of the past can profoundly impact our present relationships and our ability to connect authentically with others. 🗣️  
-* **[🤔🌍 Sophie’s World](/content/books/sophies-world.md)** by Jostein Gaarder. This philosophical novel, aimed at younger readers but enjoyed by all, takes the protagonist on a journey through the history of Western philosophy. 📜 It creatively explores the human quest for understanding the world and our place within it, a fundamental precursor to truly understanding and connecting with fellow humans. 🌍  
-* **[🏍️🧘❓ Zen and the Art of Motorcycle Maintenance: An Inquiry into Values](/content/books/zen-and-the-art-of-motorcycle-maintenance-an-inquiry-into-values.md)** by Robert M. Pirsig. Blending memoir with philosophical inquiry, this book explores concepts of "quality" and the relationship between technology and human values. ⚙️ Its deep reflections on self-discovery and perception offer an indirect lens through which to consider the profound mental and emotional states that underpin effective human connection. 🧘  
+* **[🤔🌍 Sophie’s World](./sophies-world.md)** by Jostein Gaarder. This philosophical novel, aimed at younger readers but enjoyed by all, takes the protagonist on a journey through the history of Western philosophy. 📜 It creatively explores the human quest for understanding the world and our place within it, a fundamental precursor to truly understanding and connecting with fellow humans. 🌍  
+* **[🏍️🧘❓ Zen and the Art of Motorcycle Maintenance: An Inquiry into Values](./zen-and-the-art-of-motorcycle-maintenance-an-inquiry-into-values.md)** by Robert M. Pirsig. Blending memoir with philosophical inquiry, this book explores concepts of "quality" and the relationship between technology and human values. ⚙️ Its deep reflections on self-discovery and perception offer an indirect lens through which to consider the profound mental and emotional states that underpin effective human connection. 🧘  
 * 🌐 **How We Are Translated** by Jessica Albert. This novel explores the nuances of language and its powerful role in connection and isolation. 🗣️ It tells the story of a relationship where a well-intentioned effort to learn a partner's language unexpectedly creates new barriers and misunderstandings, highlighting the complexities that go beyond mere verbal exchange.". 💬  
   
 ## 💬 [Gemini](https://gemini.google.com) Prompt (gemini-2.5-flash)  

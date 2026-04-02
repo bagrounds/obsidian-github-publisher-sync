@@ -10,7 +10,7 @@ Channel: AI Engineer
 tags:
 youtube: https://youtu.be/eIoohUmYpGI
 ---
-[Home](/content/index.md) > [Videos](/content/videos/index.md)  
+[Home](../index.md) > [Videos](./index.md)  
 # ♾️🐛💻 The Infinite Software Crisis – Jake Nations, Netflix  
 ![The Infinite Software Crisis – Jake Nations, Netflix](https://youtu.be/eIoohUmYpGI)  
   
@@ -49,15 +49,15 @@ youtube: https://youtu.be/eIoohUmYpGI
   
 ### ↔️ Similar  
   
-* [🦄👤🗓️ The Mythical Man-Month: Essays on Software Engineering](/content/books/the-mythical-man-month.md) by Fred Brooks (Addison-Wesley): 🏛️ Classic text on the inherent difficulties of software engineering and 👥 team management.  
-* [🧼💾 Clean Code: A Handbook of Agile Software Craftsmanship](/content/books/clean-code.md) by Robert C. Martin (Prentice Hall): 🧼 Focuses on writing code that is readable and maintainable by 👨‍💻 humans.  
+* [🦄👤🗓️ The Mythical Man-Month: Essays on Software Engineering](../books/the-mythical-man-month.md) by Fred Brooks (Addison-Wesley): 🏛️ Classic text on the inherent difficulties of software engineering and 👥 team management.  
+* [🧼💾 Clean Code: A Handbook of Agile Software Craftsmanship](../books/clean-code.md) by Robert C. Martin (Prentice Hall): 🧼 Focuses on writing code that is readable and maintainable by 👨‍💻 humans.  
   
 ### 🆚 Contrasting  
   
-* [🧑‍💻📈 The Pragmatic Programmer: Your Journey to Mastery](/content/books/the-pragmatic-programmer-your-journey-to-mastery.md) by Andrew Hunt and David Thomas (Addison-Wesley): 🛠️ Emphasizes practical, tool-heavy approaches to 📈 productivity.  
-* [🏎️💾 Accelerate: The Science of Lean Software and DevOps: Building and Scaling High Performing Technology Organizations](/content/books/accelerate.md) by Nicole Forsgren (IT Revolution Press): 🚀 Focuses on high-velocity delivery and 📊 metrics rather than deep architectural philosophy.  
+* [🧑‍💻📈 The Pragmatic Programmer: Your Journey to Mastery](../books/the-pragmatic-programmer-your-journey-to-mastery.md) by Andrew Hunt and David Thomas (Addison-Wesley): 🛠️ Emphasizes practical, tool-heavy approaches to 📈 productivity.  
+* [🏎️💾 Accelerate: The Science of Lean Software and DevOps: Building and Scaling High Performing Technology Organizations](../books/accelerate.md) by Nicole Forsgren (IT Revolution Press): 🚀 Focuses on high-velocity delivery and 📊 metrics rather than deep architectural philosophy.  
   
 ### 🎨 Creatively Related  
   
-* [🌐🔗🧠📖 Thinking in Systems: A Primer](/content/books/thinking-in-systems.md) by Donella Meadows (Chelsea Green Publishing): ⛓️ Provides a framework for understanding how 🧩 complex parts interact within a whole.  
-* [🏍️🧘❓ Zen and the Art of Motorcycle Maintenance: An Inquiry into Values](/content/books/zen-and-the-art-of-motorcycle-maintenance-an-inquiry-into-values.md) by Robert Pirsig (William Morrow): 🏍️ Explores the concept of 💎 quality and the relationship between the 🛠️ creator and their work.
+* [🌐🔗🧠📖 Thinking in Systems: A Primer](../books/thinking-in-systems.md) by Donella Meadows (Chelsea Green Publishing): ⛓️ Provides a framework for understanding how 🧩 complex parts interact within a whole.  
+* [🏍️🧘❓ Zen and the Art of Motorcycle Maintenance: An Inquiry into Values](../books/zen-and-the-art-of-motorcycle-maintenance-an-inquiry-into-values.md) by Robert Pirsig (William Morrow): 🏍️ Explores the concept of 💎 quality and the relationship between the 🛠️ creator and their work.

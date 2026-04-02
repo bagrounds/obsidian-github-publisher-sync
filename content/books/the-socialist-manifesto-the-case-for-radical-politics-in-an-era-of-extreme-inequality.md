@@ -7,7 +7,7 @@ share: true
 affiliate link: https://amzn.to/4lCBiD8
 CTA: ✊ Seize the future.
 ---
-[Home](/content/index.md) > [Books](/content/books/index.md)  
+[Home](../index.md) > [Books](./index.md)  
 # 🚩⚖️ The Socialist Manifesto: The Case for Radical Politics in an Era of Extreme Inequality  
 [🛒 The Socialist Manifesto: The Case for Radical Politics in an Era of Extreme Inequality. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4lCBiD8)  
   
@@ -38,7 +38,7 @@ Reviewers have noted that *The Socialist Manifesto* is an accessible introductio
 * ***Socialism: Past and Future*** by Michael Harrington: An influential text that provided a framework for democratic socialism in the United States 🇺🇸, offering a historical perspective 🕰️ and a vision for the future.  
 * ***The People's Republic of Walmart: How the World's Biggest Corporations Are Laying the Foundation for Socialism*** by Leigh Phillips and Michal Rozworski: This book argues that the complex planning and logistical operations 🚚 within large corporations like Walmart demonstrate that large-scale socialist planning is feasible ✅.  
 * ***Fully Automated Luxury Communism*** by Aaron Bastani: A provocative manifesto envisioning a post-scarcity future 🤖 enabled by technological automation, where resources are abundant 🎁 and controlled for the benefit of all.  
-* **[🫵🤝🌍🏛️ Why You Should Be a Socialist](/content/books/why-you-should-be-a-socialist.md)** by Nathan J. Robinson: A straightforward and accessible argument 👍 for socialism, addressing common misconceptions 🤔 and making a moral and practical case.  
+* **[🫵🤝🌍🏛️ Why You Should Be a Socialist](./why-you-should-be-a-socialist.md)** by Nathan J. Robinson: A straightforward and accessible argument 👍 for socialism, addressing common misconceptions 🤔 and making a moral and practical case.  
 * ***Democracy at Work: A Cure for Capitalism*** by Richard D. Wolff: Explores the concept of worker cooperatives 🤝 and democratizing the workplace 🏢 as a viable alternative to traditional capitalist enterprises.  
 * ***Understanding Marxism*** by Richard D. Wolff and Stephen Resnick: Provides a clear introduction 📖 to key concepts of Marxist economics 📈 and theory.  
 * ***The Communist Manifesto*** by Karl Marx and Friedrich Engels: The foundational text 📜 of scientific socialism, outlining the materialist conception of history and the role of class struggle. While Sunkara analyzes historical movements influenced by this, reading the original provides essential context.  
@@ -55,17 +55,17 @@ Reviewers have noted that *The Socialist Manifesto* is an accessible introductio
   
 ### 🎨 Creatively Related Reads (Exploring Relevant Themes in Different Ways)  
   
-* **[🍇😡 The Grapes of Wrath](/content/books/the-grapes-of-wrath.md)** by John Steinbeck: A powerful novel 💪 depicting the struggles of a poor farming family 👨‍🌾 during the Great Depression, highlighting themes of class struggle ✊, poverty 🏚️, and the failures of capitalism 😠.  
-* **[👁️ 1984](/content/books/1984.md)** by George Orwell: A dystopian novel 😥 serving as a cautionary tale against totalitarianism 👮, often interpreted as a critique of authoritarian communism, prompting reflection on the relationship between power 💪 and ideology.  
+* **[🍇😡 The Grapes of Wrath](./the-grapes-of-wrath.md)** by John Steinbeck: A powerful novel 💪 depicting the struggles of a poor farming family 👨‍🌾 during the Great Depression, highlighting themes of class struggle ✊, poverty 🏚️, and the failures of capitalism 😠.  
+* **[👁️ 1984](./1984.md)** by George Orwell: A dystopian novel 😥 serving as a cautionary tale against totalitarianism 👮, often interpreted as a critique of authoritarian communism, prompting reflection on the relationship between power 💪 and ideology.  
 * ***Animal Farm*** by George Orwell: An allegorical novella 🐷 critiquing the corruption of socialist ideals in the Soviet Union under Stalinist rule.  
 * ***The Jungle*** by Upton Sinclair: A novel exposing the harsh conditions and exploitation of immigrant workers 👷 in the American meatpacking industry 🏭, a classic example of literature highlighting capitalist injustices.  
 * ***Looking Backward*** by Edward Bellamy: A utopian science fiction novel 🚀 from the late 19th century envisioning a future socialist society 🌍, offering a historical perspective on socialist aspirations.  
 * ***News from Nowhere*** by William Morris: Another utopian novel 🏡 from the same period, presenting a vision of a future socialist society that is decentralized and agrarian 🌾.  
 * ***The Dispossessed*** by Ursula K. Le Guin: A science fiction novel 👽 exploring two contrasting societies, one capitalist and the other anarcho-syndicalist, offering a nuanced look at different social and economic systems.  
 * ***The Shock Doctrine: The Rise of Disaster Capitalism*** by Naomi Klein: Examines how neoliberal economic policies 🏛️ have been implemented in various countries following crises 💥, linking economic policy to political power.  
-* **[🌎👎👑💰🏚️ Why Nations Fail: The Origins of Power, Prosperity, and Poverty](/content/books/why-nations-fail-the-origins-of-power-prosperity-and-poverty.md)** by Daron Acemoglu and James A. Robinson: Analyzes the role of political and economic institutions 🏛️ in determining the wealth 💰 and poverty 🏚️ of nations, providing a framework for understanding systemic inequality.  
+* **[🌎👎👑💰🏚️ Why Nations Fail: The Origins of Power, Prosperity, and Poverty](./why-nations-fail-the-origins-of-power-prosperity-and-poverty.md)** by Daron Acemoglu and James A. Robinson: Analyzes the role of political and economic institutions 🏛️ in determining the wealth 💰 and poverty 🏚️ of nations, providing a framework for understanding systemic inequality.  
 * ***Requiem for the American Dream: The 10 Principles of Concentration of Wealth & Power*** by Noam Chomsky: Examines the concentration of wealth 🤑 and its detrimental impact on democracy 🗳️ and social progress 🌱 in the United States.  
-* **[🧑🏿⛓️🙈 The New Jim Crow: Mass Incarceration in the Age of Colorblindness](/content/books/the-new-jim-crow-mass-incarceration-in-the-age-of-colorblindness.md)** by Michelle Alexander: While focused on the US justice system ⚖️, this book intersects with themes of systemic inequality and the impact of social structures on marginalized communities.  
+* **[🧑🏿⛓️🙈 The New Jim Crow: Mass Incarceration in the Age of Colorblindness](./the-new-jim-crow-mass-incarceration-in-the-age-of-colorblindness.md)** by Michelle Alexander: While focused on the US justice system ⚖️, this book intersects with themes of systemic inequality and the impact of social structures on marginalized communities.  
   
-## 💬 [Gemini](/content/software/gemini.md) Prompt (gemini-2.5-flash-preview-04-17)  
+## 💬 [Gemini](../software/gemini.md) Prompt (gemini-2.5-flash-preview-04-17)  
 > Write a markdown-formatted (start headings at level H2) book report, followed by a plethora of additional similar, contrasting, and creatively related book recommendations on The Socialist Manifesto: The Case for Radical Politics in an Era of Extreme Inequality. Be thorough in content discussed but concise and economical with your language. Structure the report with section headings and bulleted lists to avoid long blocks of text.

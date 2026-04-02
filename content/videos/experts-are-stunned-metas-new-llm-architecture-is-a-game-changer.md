@@ -4,10 +4,10 @@ aliases:
   - Experts are STUNNED! Meta's NEW LLM Architecture is a GAME-CHANGER!
 title: Experts are STUNNED! Meta's NEW LLM Architecture is a GAME-CHANGER!
 URL: https://youtu.be/1Z1vKdrmpj4
-Author: 
-Platform: 
+Author:
+Platform:
 Channel: TheAIGRID
-tags: 
+tags:
 ---
   
 [Home](../index.md) > [Videos](./index.md)  

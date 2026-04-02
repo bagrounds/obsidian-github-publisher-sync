@@ -24,14 +24,14 @@ CTA: 🌎 Confront catastrophe.
 ### ℹ️ Summary  
 * 🔥 **Central Event:** Details the catastrophic May 2016 wildfire that engulfed Fort McMurray, Alberta, Canada, the hub of the Canadian oil sands industry.  
 * 🗣️ **Narrative Focus:** Chronicles the harrowing experiences of residents during the sudden, massive evacuation (the largest single-day evacuation due to fire) and the efforts of firefighters battling an unprecedented blaze.  
-* 🌍 **Broader Context:** Interweaves the fire's story with the history of fire's relationship with humanity, the development and impact of the fossil fuel industry (particularly Alberta's oil sands), the science of combustion, and the escalating threat of extreme wildfires in the era of climate change. Vaillant explores how the very industry driving Fort McMurray's economy contributed to the "fire weather" conditions that enabled the disaster.  
-* 🗺️ **Scope:** Uses the Fort McMurray fire as a specific, terrifying case study to illustrate a global phenomenon – the arrival of the "Pyrocene," an age defined by fire exacerbated by climate change.  
+* 🌍 **Broader Context:** Interweaves the fire's story with the history of fire's relationship with humanity, the development and impact of the fossil fuel industry (particularly Alberta's oil sands), the science of combustion, and the escalating threat of extreme wildfires in the era of climate change. Vaillant explores how the very industry driving Fort McMurray's economy contributed to the fire weather conditions that enabled the disaster.  
+* 🗺️ **Scope:** Uses the Fort McMurray fire as a specific, terrifying case study to illustrate a global phenomenon – the arrival of the Pyrocene, an age defined by fire exacerbated by climate change.  
   
 ### 🔑 Key Themes  
 * 🌡️ **Climate Change:** Demonstrates the tangible, destructive impacts of a warming planet on weather patterns and fire behavior.  
 * 🛢️ **Fossil Fuels and Environment:** Explores the complex and often destructive relationship between resource extraction (specifically oil) and environmental catastrophe, highlighting the irony of the fire striking the heart of Canada's oil industry.  
-* 🔥 **Modern Wildfires:** Describes the unique characteristics and "uncontrollable" nature of 21st-century megafires fueled by hotter, drier conditions and changes in the landscape.  
-* 🧑‍🤝‍🧑🔥 **Humanity and Fire:** Examines the long, intertwined history of humans and fire, from an essential tool for civilization to an existential threat in the "Petrocene Age."  
+* 🔥 **Modern Wildfires:** Describes the unique characteristics and uncontrollable nature of 21st-century megafires fueled by hotter, drier conditions and changes in the landscape.  
+* 🧑‍🤝‍🧑🔥 **Humanity and Fire:** Examines the long, intertwined history of humans and fire, from an essential tool for civilization to an existential threat in the Petrocene Age.  
 * 🤔 **Cognitive Dissonance & Inaction:** Addresses the human tendency towards inertia and denial even when faced with clear and present danger, both individually during the fire and collectively regarding climate action.  
 * 💪 **Resilience and Vulnerability:** Showcases the extraordinary resilience of the evacuated community and first responders, while starkly illustrating human vulnerability to climate-driven disasters.  
   

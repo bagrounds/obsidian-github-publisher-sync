@@ -7,7 +7,7 @@ share: true
 affiliate link: https://amzn.to/3ImidqP
 CTA: 🗝️ Unlock fulfillment.
 ---
-[Home](/content/index.md) > [Books](/content/books/index.md)  
+[Home](../index.md) > [Books](./index.md)  
 # 🚫💰❤️ The Wealth Money Can't Buy: The 8 Hidden Habits to Live Your Richest Life  
 [🛒 The Wealth Money Can't Buy: The 8 Hidden Habits to Live Your Richest Life. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3ImidqP)  
   
@@ -55,9 +55,9 @@ CTA: 🗝️ Unlock fulfillment.
 ### ➕ Similar Books  
   
 * ⏰ **The 5 AM Club by Robin Sharma:** Also by Robin Sharma, this book focuses on developing a powerful morning routine to maximize productivity and personal growth, aligning with the themes of discipline and self-mastery found in The Wealth Money Can't Buy.  
-* **[⚛️🔄 Atomic Habits: An Easy & Proven Way to Build Good Habits & Break Bad Ones](/content/books/atomic-habits.md) by James Clear:** This book provides a practical, science-backed framework for building good habits and breaking bad ones. 🚀 Its emphasis on small, consistent actions leading to significant results resonates with Sharma's message of cultivating hidden habits for a richer life.  
+* **[⚛️🔄 Atomic Habits: An Easy & Proven Way to Build Good Habits & Break Bad Ones](./atomic-habits.md) by James Clear:** This book provides a practical, science-backed framework for building good habits and breaking bad ones. 🚀 Its emphasis on small, consistent actions leading to significant results resonates with Sharma's message of cultivating hidden habits for a richer life.  
 * 🙅 **The Courage to Be Disliked by Ichiro Kishimi and Fumitake Koga:** This philosophical dialogue explores Adlerian psychology, advocating for individual empowerment, personal responsibility, and the idea that happiness is a choice independent of external validation, echoing the focus on inner wealth.  
-* **[💰🤔😊 Psychology of Money: Timeless lessons on wealth, greed, and happiness](/content/books/the-psychology-of-money.md) by Morgan Housel:** While it deals with financial wealth, Housel's book emphasizes the behavioral aspects of money management, highlighting that financial success is often less about math and more about psychology, patience, and perspective. 🤔 This aligns with Sharma's view that one's mindset profoundly impacts overall well-being.  
+* **[💰🤔😊 Psychology of Money: Timeless lessons on wealth, greed, and happiness](./the-psychology-of-money.md) by Morgan Housel:** While it deals with financial wealth, Housel's book emphasizes the behavioral aspects of money management, highlighting that financial success is often less about math and more about psychology, patience, and perspective. 🤔 This aligns with Sharma's view that one's mindset profoundly impacts overall well-being.  
   
 ### ➖ Contrasting Books  
   
@@ -68,8 +68,8 @@ CTA: 🗝️ Unlock fulfillment.
 ### 🎨 Creatively Related Books  
   
 * ⚡ **Your Money or Your Life by Vicki Robin and Joe Dominguez:** This classic challenges readers to rethink their relationship with money by valuing "life energy" spent earning it. 🌍 It encourages financial independence not just for accumulation, but for a life aligned with one's values, bridging the gap between financial and non-financial wealth.  
-* **[🔦💡 Man's Search for Meaning](/content/books/mans-search-for-meaning.md) by Viktor E. Frankl:** This profound book, based on Frankl's experiences in concentration camps, explores the human search for meaning amidst suffering. 💔 It deeply resonates with Sharma's emphasis on purpose and inner resilience as essential, non-material forms of wealth.  
-* **[✨🧙‍♂️⚗️ The Alchemist](/content/books/the-alchemist.md) by Paulo Coelho:** A philosophical novel that tells the story of a shepherd boy's journey to find a hidden treasure. 💭 While fictional, it's a powerful allegory for following one's dreams, listening to one's heart, and discovering personal legends, tying into the themes of adventure, purpose, and inner fulfillment that transcend material gain.  
+* **[🔦💡 Man's Search for Meaning](./mans-search-for-meaning.md) by Viktor E. Frankl:** This profound book, based on Frankl's experiences in concentration camps, explores the human search for meaning amidst suffering. 💔 It deeply resonates with Sharma's emphasis on purpose and inner resilience as essential, non-material forms of wealth.  
+* **[✨🧙‍♂️⚗️ The Alchemist](./the-alchemist.md) by Paulo Coelho:** A philosophical novel that tells the story of a shepherd boy's journey to find a hidden treasure. 💭 While fictional, it's a powerful allegory for following one's dreams, listening to one's heart, and discovering personal legends, tying into the themes of adventure, purpose, and inner fulfillment that transcend material gain.  
   
 ## 💬 [Gemini](https://gemini.google.com) Prompt (gemini-2.5-flash)  
 > Write a markdown-formatted (start headings at level H2) book report, followed by similar, contrasting, and creatively related book recommendations on The Wealth Money Can't Buy: The 8 Hidden Habits to Live Your Richest Life. Never quote or italicize titles. Be thorough but concise. Use section headings and bulleted lists to avoid long blocks of text.

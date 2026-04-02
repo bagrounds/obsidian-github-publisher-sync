@@ -4,10 +4,10 @@ aliases:
   - Pediatrician's Top Tips For Newborn Sleep
 title: Pediatrician's Top Tips For Newborn Sleep
 URL: https://youtu.be/W44ohGqaicw
-Author: 
-Platform: 
+Author:
+Platform:
 Channel: The Doctors Bjorkman
-tags: 
+tags:
 ---
 [Home](../index.md) > [Videos](./index.md)  
 # Pediatrician's Top Tips For Newborn Sleep  

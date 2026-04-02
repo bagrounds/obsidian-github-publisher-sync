@@ -4,8 +4,11 @@ aliases:
   - 🤔📚 Philosophy
 title: 🤔📚 Philosophy
 URL: https://bagrounds.org/topics/philosophy
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_time: 2026-04-01T00:00:00Z
+force_analyze_links: false
 ---
-[Home](/content/index.md) > [Topics](/content/topics/index.md) > [Knowledge](/content/topics/a-hierarchical-view-of-human-knowledge.md)   
+[Home](../index.md) > [Topics](./index.md) > [Knowledge](./a-hierarchical-view-of-human-knowledge.md)   
 # 🤔📚 Philosophy  
 ## 🤖 AI Summary  
 **High-Level Summary:**  
@@ -27,8 +30,8 @@ Here are some major subcategories of Philosophy:
 **Book Recommendations:**  
 Here are some influential and accessible books to get you started on your philosophical journey:  
   
-1.  **[🤔🌍 Sophie’s World](/content/books/sophies-world.md) by Jostein Gaarder:** A novel that introduces the history of philosophy through a young girl's correspondence with a mysterious philosopher. It's a fantastic and engaging way to learn about key philosophical concepts and figures. 📖✨  
-2.  **[🤔🧘 Meditations](/content/books/meditations.md) by Marcus Aurelius:** A collection of personal reflections by the Roman emperor and Stoic philosopher. It offers timeless wisdom on how to live a virtuous and meaningful life. 🏛️📜  
+1.  **[🤔🌍 Sophie’s World](../books/sophies-world.md) by Jostein Gaarder:** A novel that introduces the history of philosophy through a young girl's correspondence with a mysterious philosopher. It's a fantastic and engaging way to learn about key philosophical concepts and figures. 📖✨  
+2.  **[🤔🧘 Meditations](../books/meditations.md) by Marcus Aurelius:** A collection of personal reflections by the Roman emperor and Stoic philosopher. It offers timeless wisdom on how to live a virtuous and meaningful life. 🏛️📜  
 3.  **"Think: A Compelling Introduction to Philosophy" by Simon Blackburn:** A clear and comprehensive introduction to the major areas of philosophy, covering topics like knowledge, mind, free will, and ethics. 🧠🤔  
 4.  **"What Does It All Mean? A Very Short Introduction to Philosophy" by Thomas Nagel:** A concise and accessible overview of some of the central problems of philosophy, written in a clear and engaging style. ❓💡  
 5.  **"The Republic" by Plato:** A foundational text in political philosophy that explores questions of justice, the ideal state, and the nature of reality. It's a classic that continues to shape philosophical thought. 🏛️💭  

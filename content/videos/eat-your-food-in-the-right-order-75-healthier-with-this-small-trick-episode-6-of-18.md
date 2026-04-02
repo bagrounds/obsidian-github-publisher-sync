@@ -9,7 +9,7 @@ Platform: "#YouTube"
 Channel: "[[Glucose Revolution]]"
 tags:
 ---
-[Home](/content/index.md) > [Videos](/content/videos/index.md)  
+[Home](../index.md) > [Videos](./index.md)  
 # 🍎➡️🥗💯 Eat your food in the RIGHT ORDER: 75% healthier with this small trick | Episode 6 of 18  
 ![Eat your food in the RIGHT ORDER: 75% healthier with this small trick | Episode 6 of 18](https://youtu.be/HEEUrIQ_3O4)  
   
@@ -37,4 +37,4 @@ While the 🎬 video offers a compelling and easy-to-follow method, its primary 
   
 * **Glucose Goddess Method** by Jessie Inchauspé: This is a direct recommendation as it is by the speaker in the video and elaborates on the concepts presented, offering a structured approach to a healthier lifestyle without restrictive diets.  
 * **The Big Fat Surprise** by Nina Teicholz: This book offers a contrasting perspective on dietary advice by challenging the conventional wisdom on fats and their role in health, providing a broader context for the discussion of macronutrients.  
-* **[😴💭 Why We Sleep: Unlocking the Power of Sleep and Dreams](/content/books/why-we-sleep-unlocking-the-power-of-sleep-and-dreams.md)** by Matthew Walker: This book creatively relates to the video's content by exploring the profound impact of sleep on every aspect of our health, including hormonal balance and glucose regulation, topics mentioned in the video.
+* **[😴💭 Why We Sleep: Unlocking the Power of Sleep and Dreams](../books/why-we-sleep-unlocking-the-power-of-sleep-and-dreams.md)** by Matthew Walker: This book creatively relates to the video's content by exploring the profound impact of sleep on every aspect of our health, including hormonal balance and glucose regulation, topics mentioned in the video.

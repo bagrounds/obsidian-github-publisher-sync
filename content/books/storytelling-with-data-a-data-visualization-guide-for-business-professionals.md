@@ -5,8 +5,11 @@ aliases:
 URL: https://bagrounds.org/books/storytelling-with-data-a-data-visualization-guide-for-business-professionals
 share: true
 affiliate link: https://amzn.to/4kOCbZa
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_time: 2026-04-01T00:00:00Z
+force_analyze_links: false
 ---
-[Home](/content/index.md) > [Books](/content/books/index.md)  
+[Home](../index.md) > [Books](./index.md)  
 # 📖📊📈 Storytelling with Data: A Data Visualization Guide for Business Professionals  
 [🛒 Storytelling with Data: A Data Visualization Guide for Business Professionals. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4kOCbZa)  
   
@@ -56,21 +59,21 @@ affiliate link: https://amzn.to/4kOCbZa
 * 🏛️ **The Visual Display of Quantitative Information 📈 by Edward R. Tufte:** 📜 A foundational classic in data visualization theory, focusing on design principles, data-ink ratio, and graphical integrity. 🗣️ It is less focused on the "storytelling" aspect and more on the accurate and efficient display of quantitative data.  
 * 🗺️ **Semiology of Graphics: 🕸️ Diagrams, Networks, Maps 🌍 by Jacques Bertin:** 🧪 A highly theoretical and foundational work on information design and cartography, analyzing the fundamental principles of visual variables and their use in graphical representation.  
 * 🎨 **Visualizing Data: 🧑‍💻 Exploring and Explaining Data with the Processing Environment 🖥️ by Ben Fry:** 💫 Focuses on the creative possibilities of data representation using the Processing programming environment, leaning more towards data art and interactive visualizations than purely business communication.  
-* **[💾⬆️🛡️ Designing Data-Intensive Applications: The Big Ideas Behind Reliable, Scalable, and Maintainable Systems](/content/books/designing-data-intensive-applications.md) ⚙️ by Martin Kleppmann:** 🛠️ A technical deep dive into the systems and concepts behind data storage and processing, contrasting sharply with the user-focused communication aspects of data visualization.  
+* **[💾⬆️🛡️ Designing Data-Intensive Applications: The Big Ideas Behind Reliable, Scalable, and Maintainable Systems](./designing-data-intensive-applications.md) ⚙️ by Martin Kleppmann:** 🛠️ A technical deep dive into the systems and concepts behind data storage and processing, contrasting sharply with the user-focused communication aspects of data visualization.  
 * 📝 **The Minto Pyramid Principle: 🧠 Logic in Writing, Thinking, & Problem Solving ✍️ by Barbara Minto:** 📐 Focuses on structuring logical arguments for effective communication, particularly in consulting and business writing, without a specific emphasis on data visualization.  
   
 ### 🎨 Creatively Related Books (Storytelling, Design, Psychology, etc.)  
   
-* **[🧠🌱💀 Made to Stick: Why Some Ideas Survive and Others Die](/content/books/made-to-stick.md) by Chip Heath and Dan Heath:** 🤔 Explores what makes ideas memorable and impactful, drawing on principles of storytelling, simplicity, unexpectedness, credibility, emotional, and concrete (SUCCESs).  
-* **[🤔🐇🐢 Thinking, Fast and Slow](/content/books/thinking-fast-and-slow.md) by Daniel Kahneman:** 🚀 Delves into the two systems of thought that drive the way we think, providing valuable insights into cognitive biases and how people process information, which is relevant to designing visualizations that are easily understood.  
-* **[🧑‍🏫📉🎤🧘 Presentation Zen: Simple Ideas on Presentation Design and Delivery](/content/books/presentation-zen.md) by Garr Reynolds:** 🗣️ Focuses on creating engaging and effective presentations using design principles, storytelling, and a minimalist approach, applicable to presentations that include data visualizations.  
+* **[🧠🌱💀 Made to Stick: Why Some Ideas Survive and Others Die](./made-to-stick.md) by Chip Heath and Dan Heath:** 🤔 Explores what makes ideas memorable and impactful, drawing on principles of storytelling, simplicity, unexpectedness, credibility, emotional, and concrete (SUCCESs).  
+* **[🤔🐇🐢 Thinking, Fast and Slow](./thinking-fast-and-slow.md) by Daniel Kahneman:** 🚀 Delves into the two systems of thought that drive the way we think, providing valuable insights into cognitive biases and how people process information, which is relevant to designing visualizations that are easily understood.  
+* **[🧑‍🏫📉🎤🧘 Presentation Zen: Simple Ideas on Presentation Design and Delivery](./presentation-zen.md) by Garr Reynolds:** 🗣️ Focuses on creating engaging and effective presentations using design principles, storytelling, and a minimalist approach, applicable to presentations that include data visualizations.  
 * 🎨 **The Non-Designer's Design Book ✏️ by Robin Williams:** 📐 Introduces fundamental design principles (Proximity, Alignment, Repetition, Contrast - PARC) in an accessible way, directly relevant to improving the aesthetic and clarity of data visualizations.  
 * 🚺 **Invisible Women: ⚠️ Data Bias in a World Designed for Men 🌍 by Caroline Criado Perez:** 👩‍💻 While not about creating visualizations, this book highlights the critical importance of considering the audience and potential biases in data collection and analysis, which is foundational to responsible data storytelling.  
-* **[🌌📐🧩🗝️ Universal Principles of Design: 200 Ways to Increase Appeal, Enhance Usability, Influence Perception, and Make Better Design Decisions](/content/books/universal-principles-of-design.md) 📚 by William Lidwell, Kritina Holden, Jill Butler:** 🔎 A comprehensive reference of design concepts and how they affect human perception and interaction, offering a deeper understanding of the principles behind effective visual communication.  
+* **[🌌📐🧩🗝️ Universal Principles of Design: 200 Ways to Increase Appeal, Enhance Usability, Influence Perception, and Make Better Design Decisions](./universal-principles-of-design.md) 📚 by William Lidwell, Kritina Holden, Jill Butler:** 🔎 A comprehensive reference of design concepts and how they affect human perception and interaction, offering a deeper understanding of the principles behind effective visual communication.  
 * 👁️ **Visual Thinking for Design 🧠 by Colin Ware:** 🔬 Explores the cognitive psychology behind visual perception and how it applies to the design of visualizations, providing a scientific basis for many of the "best practices" in data visualization.  
 * ✉️ **Dear Data 🤝 by Giorgia Lupi and Stefanie Posavec:** ✨ A unique and creative project where two designers exchanged hand-drawn postcards visualizing personal data, demonstrating imaginative ways to explore and represent data outside of conventional business charts.".  
   
-## 💬 [Gemini](/content/software/gemini.md) Prompt (gemini-2.5-flash-preview-04-17)  
+## 💬 [Gemini](../software/gemini.md) Prompt (gemini-2.5-flash-preview-04-17)  
 > Write a markdown-formatted (start headings at level H2) book report, followed by a plethora of additional similar, contrasting, and creatively related book recommendations on Storytelling with Data: A Data Visualization Guide for Business Professionals. Be thorough in content discussed but concise and economical with your language. Structure the report with section headings and bulleted lists to avoid long blocks of text.  
   
 ## 🐦 Tweet  

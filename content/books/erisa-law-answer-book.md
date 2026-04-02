@@ -8,7 +8,7 @@ tags:
   - law
 affiliate link: https://amzn.to/4kRju6V
 ---
-[Home](/content/index.md) > [Books](/content/books/index.md)  
+[Home](../index.md) > [Books](./index.md)  
 # 🇺🇸❓📚 ERISA Law Answer Book  
 [🛒 ERISA Law Answer Book. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4kRju6V)  
   
@@ -48,7 +48,7 @@ The book is generally available in hardbound format and sometimes with online ac
 ### 🧑‍⚖️ Similar Books (Focus on ERISA and Employee Benefits Law)  
   
 * 📘 ***ERISA Fiduciary Answer Book*** (Wolters Kluwer): Specifically focuses on the complex area of ERISA fiduciary duties, liabilities, and related issues, offering a deeper dive than the broader ERISA Law Answer Book.  
-* **[🧑‍⚖️❓ ERISA Benefits Litigation Answer Book](/content/books/erisa-benefits-litigation-answer-book.md)** (Wolters Kluwer): Concentrates on the litigation aspects of ERISA, detailing causes of action, defenses, and unique litigation issues related to various benefit plans.  
+* **[🧑‍⚖️❓ ERISA Benefits Litigation Answer Book](./erisa-benefits-litigation-answer-book.md)** (Wolters Kluwer): Concentrates on the litigation aspects of ERISA, detailing causes of action, defenses, and unique litigation issues related to various benefit plans.  
 * 📘 ***The ERISA Survey of Federal Circuits*** (American Bar Association): Provides a circuit-by-circuit analysis of key ERISA litigation issues, offering a different perspective focusing on judicial interpretation across different jurisdictions.  
 * 📘 ***Qualified Retirement Plans*** by Bruce J. Temkin (Aspen Publishers): A comprehensive treatise covering the technical aspects of qualified retirement plans, including design, implementation, and compliance under ERISA and the Internal Revenue Code.  
   
@@ -60,12 +60,12 @@ The book is generally available in hardbound format and sometimes with online ac
   
 ### ✨ Creatively Related Books (Broader Themes or Underlying Concepts)  
   
-* 🧠 ***[Thinking, Fast and Slow](/content/books/thinking-fast-and-slow.md)*** by Daniel Kahneman: Explores how people make decisions, which can offer insights into participant behavior regarding retirement savings and investment choices within ERISA plans.  
+* 🧠 ***[Thinking, Fast and Slow](./thinking-fast-and-slow.md)*** by Daniel Kahneman: Explores how people make decisions, which can offer insights into participant behavior regarding retirement savings and investment choices within ERISA plans.  
 * 📉 ***The Big Short: Inside the Doomsday Machine*** by Michael Lewis: While focused on the financial crisis, this book illustrates the complexities and potential pitfalls of complex financial instruments and regulations, offering a parallel to the intricate nature of ERISA and the financial structures it governs.  
 * 🏢 ***Compliance Handbook (Industry Specific)***: A compliance handbook from a heavily regulated industry (e.g., healthcare, finance) could offer a comparative perspective on navigating complex regulatory landscapes, similar to the challenges presented by ERISA.  
 * 📈 ***Behavioral Economics***: Books in this field explore how psychological factors influence economic decisions, relevant to understanding how plan design and communication can impact participant savings and investment behavior under ERISA.  
   
 This selection provides a starting point for exploring the detailed world of ERISA law and its broader connections to finance, decision-making, and regulatory compliance.  
   
-## 💬 [Gemini](/content/software/gemini.md) Prompt (gemini-2.5-flash-preview-04-17)  
+## 💬 [Gemini](../software/gemini.md) Prompt (gemini-2.5-flash-preview-04-17)  
 > Write a markdown-formatted (start headings at level H2) book report, followed by a plethora of additional similar, contrasting, and creatively related book recommendations on ERISA Law Answer Book. Be thorough in content discussed but concise and economical with your language. Structure the report with section headings and bulleted lists to avoid long blocks of text.

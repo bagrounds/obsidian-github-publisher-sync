@@ -7,7 +7,7 @@ Medium: "#Audiobook"
 share: true
 affiliate link: https://amzn.to/4jzV3d7
 ---
-[Home](/content/index.md) > [Books](/content/books/index.md)  
+[Home](../index.md) > [Books](./index.md)  
 # 🧠🧠🧠🧠 A Thousand Brains: A New Theory of Intelligence  
 [🛒 A Thousand Brains: A New Theory of Intelligence. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4jzV3d7)  
   
@@ -17,7 +17,7 @@ Written by Jeff Hawkins, this book presents a groundbreaking theory of intellige
   
 ### Book Recommendations    
 1. **Best Alternate on the Same Topic**: *On Intelligence* by Jeff Hawkins and Sandra Blakeslee – Hawkins’ earlier work introducing his ideas about the brain’s prediction-based mechanisms.    
-2. **Best Tangentially Related Book**: [🤖⚠️📈 Superintelligence: Paths, Dangers, Strategies](/content/books/superintelligence-paths-dangers-strategies.md) by Nick Bostrom – Examines the future of artificial intelligence and its potential impacts on humanity.    
+2. **Best Tangentially Related Book**: [🤖⚠️📈 Superintelligence: Paths, Dangers, Strategies](./superintelligence-paths-dangers-strategies.md) by Nick Bostrom – Examines the future of artificial intelligence and its potential impacts on humanity.    
 3. **Best Diametrically Opposed Book**: *The Blank Slate: The Modern Denial of Human Nature* by Steven Pinker – Critiques purely structural views of the brain, emphasizing innate behaviors and evolutionary psychology.    
 4. **Best Fiction Book Incorporating Related Ideas**: *Blindsight* by Peter Watts – A sci-fi novel that explores consciousness, intelligence, and the limits of human cognition in the context of first contact with alien life.  
   

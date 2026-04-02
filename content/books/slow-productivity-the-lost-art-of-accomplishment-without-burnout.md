@@ -7,7 +7,7 @@ share: true
 affiliate link: https://amzn.to/45x3xxT
 CTA: 🐌 Cultivate calm output.
 ---
-[Home](/content/index.md) > [Books](/content/books/index.md)  
+[Home](../index.md) > [Books](./index.md)  
 # 🐌🎯 Slow Productivity: The Lost Art of Accomplishment Without Burnout  
 [🛒 Slow Productivity: The Lost Art of Accomplishment Without Burnout. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/45x3xxT)  
   
@@ -35,9 +35,9 @@ The book outlines three core principles for adopting a "slow productivity" philo
   
 ### ➕ Similar Books  
   
-* **[🤿💼 Deep Work: Rules for Focused Success in a Distracted World](/content/books/deep-work.md) by Cal Newport**: This earlier work by Newport also advocates for focused, uninterrupted concentration on demanding tasks, directly aligning with the "slow productivity" principles of doing fewer things and obsessing over quality.  
-* **[📱⬇️🧘 Digital Minimalism: Choosing a Focused Life in a Noisy World](/content/books/digital-minimalism-choosing-a-focused-life-in-a-noisy-world.md) by Cal Newport**: Another book by the same author, it encourages a philosophy of technology use where individuals consciously decide how and when to use digital tools, fostering more time and mental space for deep work and, by extension, slow productivity.  
-* **[➖💯 Essentialism: The Disciplined Pursuit of Less](/content/books/essentialism-the-disciplined-pursuit-of-less.md) by Greg McKeown**: This book champions the idea of identifying and pursuing only the most essential tasks and eliminating everything else, resonating strongly with Newport's "do fewer things" principle.  
+* **[🤿💼 Deep Work: Rules for Focused Success in a Distracted World](./deep-work.md) by Cal Newport**: This earlier work by Newport also advocates for focused, uninterrupted concentration on demanding tasks, directly aligning with the "slow productivity" principles of doing fewer things and obsessing over quality.  
+* **[📱⬇️🧘 Digital Minimalism: Choosing a Focused Life in a Noisy World](./digital-minimalism-choosing-a-focused-life-in-a-noisy-world.md) by Cal Newport**: Another book by the same author, it encourages a philosophy of technology use where individuals consciously decide how and when to use digital tools, fostering more time and mental space for deep work and, by extension, slow productivity.  
+* **[➖💯 Essentialism: The Disciplined Pursuit of Less](./essentialism-the-disciplined-pursuit-of-less.md) by Greg McKeown**: This book champions the idea of identifying and pursuing only the most essential tasks and eliminating everything else, resonating strongly with Newport's "do fewer things" principle.  
 * ⏳ **Four Thousand Weeks: Time Management for Mortals by Oliver Burkeman**: Burkeman's book challenges conventional time management, urging readers to accept their limited time and make deliberate choices about how to spend it on what truly matters, echoing the sustainable and intentional aspects of slow productivity.  
   
 ### ➖ Contrasting Books  
@@ -48,10 +48,10 @@ The book outlines three core principles for adopting a "slow productivity" philo
   
 ### ✨ Creatively Related Books  
   
-* **[🏍️🧘❓ Zen and the Art of Motorcycle Maintenance: An Inquiry into Values](/content/books/zen-and-the-art-of-motorcycle-maintenance-an-inquiry-into-values.md) by Robert M. Pirsig**: This philosophical novel explores the concept of "quality" and the integration of work, life, and meaning, aligning with the "obsess over quality" tenet and the pursuit of deeper fulfillment in one's craft.  
+* **[🏍️🧘❓ Zen and the Art of Motorcycle Maintenance: An Inquiry into Values](./zen-and-the-art-of-motorcycle-maintenance-an-inquiry-into-values.md) by Robert M. Pirsig**: This philosophical novel explores the concept of "quality" and the integration of work, life, and meaning, aligning with the "obsess over quality" tenet and the pursuit of deeper fulfillment in one's craft.  
 * 🔨 **The Craftsman by Richard Sennett**: Sennett's work examines the dedication, skill, and satisfaction derived from manual craftsmanship, offering insights into the intrinsic value of focused, high-quality work over time, a perspective that resonates with the slow productivity philosophy's emphasis on quality and deliberate practice.  
-* **[😴📈 Rest: Why You Get More Done When You Work Less](/content/books/rest-why-you-get-more-done-when-you-work-less.md) by Alex Soojung-Kim Pang**: This book argues for the importance of deliberate rest in fostering creativity and productivity, providing a complementary perspective to slow productivity by highlighting how strategic periods of downtime are integral to high-quality output and avoiding burnout.  
-* **[🛠️💖 Shop Class as Soulcraft: An Inquiry Into the Value of Work](/content/books/shop-class-as-soulcraft-an-inquiry-into-the-value-of-work.md) by Matthew B. Crawford**: Crawford's book critiques modern knowledge work and champions the tangible satisfaction and intellectual demands of manual labor, implicitly questioning the "busyness as productivity" paradigm and celebrating the deliberate, skilled work ethic central to slow productivity.  
+* **[😴📈 Rest: Why You Get More Done When You Work Less](./rest-why-you-get-more-done-when-you-work-less.md) by Alex Soojung-Kim Pang**: This book argues for the importance of deliberate rest in fostering creativity and productivity, providing a complementary perspective to slow productivity by highlighting how strategic periods of downtime are integral to high-quality output and avoiding burnout.  
+* **[🛠️💖 Shop Class as Soulcraft: An Inquiry Into the Value of Work](./shop-class-as-soulcraft-an-inquiry-into-the-value-of-work.md) by Matthew B. Crawford**: Crawford's book critiques modern knowledge work and champions the tangible satisfaction and intellectual demands of manual labor, implicitly questioning the "busyness as productivity" paradigm and celebrating the deliberate, skilled work ethic central to slow productivity.  
   
 ## 💬 [Gemini](https://gemini.google.com) Prompt (gemini-2.5-flash)  
 > Write a markdown-formatted (start headings at level H2) book report, followed by similar, contrasting, and creatively related book recommendations on Slow Productivity: The Lost Art of Accomplishment Without Burnout. Never quote or italicize titles. Be thorough but concise. Use section headings and bulleted lists to avoid long blocks of text.

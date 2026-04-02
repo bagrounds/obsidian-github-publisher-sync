@@ -6,7 +6,7 @@ Author: "[[jay-kreps]]"
 share: true
 title: "🪵 The Log: What every software engineer should know about real-time data's unifying abstraction"
 ---
-[Home](/content/index.md) > [Articles](/content/articles/index.md) | [👨‍💻☁️🐘 Jay Kreps](/content/people/jay-kreps.md)  
+[Home](../index.md) > [Articles](./index.md) | [👨‍💻☁️🐘 Jay Kreps](../people/jay-kreps.md)  
 # 🪵 [The Log: What every software engineer should know about real-time data's unifying abstraction](https://engineering.linkedin.com/distributed-systems/log-what-every-software-engineer-should-know-about-real-time-datas-unifying)  
   
 ## 🤖 AI Summary  
@@ -32,11 +32,11 @@ The article argues that the "log," 🪵 or an append-only, ➕ ordered sequence 
 * ✅ **Best Alternate Resource on the Same Topic:**  
     * 💖 "I Heart Logs: Event Data, Stream Processing, and Data Integration" by Jay Kreps. This is a more 🧐 in-depth exploration of the log concept, written by one of the creators of 🐘 Kafka. It provides a 💯 comprehensive overview of the log's applications and benefits. 📚  
 * ➕ **Best Resource That Is Tangentially Related:**  
-    * [💾⬆️🛡️ Designing Data-Intensive Applications: The Big Ideas Behind Reliable, Scalable, and Maintainable Systems](/content/books/designing-data-intensive-applications.md) by Martin Kleppmann. While it covers a 🌐 broad range of data system topics, it provides excellent context on 👯‍♀️ distributed systems, 🤝 consistency, and 💾 data storage, all of which are closely related to the log concept. This book provides excellent ℹ️ background information. 💻  
+    * [💾⬆️🛡️ Designing Data-Intensive Applications: The Big Ideas Behind Reliable, Scalable, and Maintainable Systems](../books/designing-data-intensive-applications.md) by Martin Kleppmann. While it covers a 🌐 broad range of data system topics, it provides excellent context on 👯‍♀️ distributed systems, 🤝 consistency, and 💾 data storage, all of which are closely related to the log concept. This book provides excellent ℹ️ background information. 💻  
 * ➖ **Best Resource That Is Diametrically Opposed:**  
     * 🏛️ "Database System Concepts" by Abraham Silberschatz, Henry F. Korth, and S. Sudarshan. While a 🕰️ classic, traditional database texts often emphasize relational databases and transactional systems, which can sometimes 💥 clash with the event-driven, log-centric approach. This resource is great to show the traditional side of 🗄️ Data bases. 💾  
 * 📖 **Best Fiction That Incorporates Related Ideas:**  
-    * [😈💻👹🤖 Daemon](/content/books/daemon.md) and "Freedom™" by Daniel Suarez. These 🤖 techno-thrillers explore the concept of 👯‍♀️ distributed systems and ⚙️ autonomous agents, which rely on ⏱️ real-time data and event-driven architectures. While fictional, they offer a 🤩 compelling glimpse into the potential of these technologies. 🤖 These books contain many real world computer science concepts.  
+    * [😈💻👹🤖 Daemon](../books/daemon.md) and "Freedom™" by Daniel Suarez. These 🤖 techno-thrillers explore the concept of 👯‍♀️ distributed systems and ⚙️ autonomous agents, which rely on ⏱️ real-time data and event-driven architectures. While fictional, they offer a 🤩 compelling glimpse into the potential of these technologies. 🤖 These books contain many real world computer science concepts.  
   
 ## 💬 [Gemini](https://Gemini.google.com) Prompt  
 > Summarize the article: [The Log: What every software engineer should know about real-time data's unifying abstraction](https://engineering.linkedin.com/distributed-systems/log-what-every-software-engineer-should-know-about-real-time-datas-unifying). Emphasize practical takeaways. Make the following additional recommendations: the best alternate resource on the same topic, the best resource that is tangentially related, the best resource that is diametrically opposed, and the best fiction that incorporates related ideas. Use lots of emojis.

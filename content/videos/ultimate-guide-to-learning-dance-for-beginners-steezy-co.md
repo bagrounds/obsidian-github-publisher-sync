@@ -10,7 +10,7 @@ Channel: STEEZY
 tags:
 youtube: https://youtu.be/C62596gVnT8
 ---
-[Home](/content/index.md) > [Videos](/content/videos/index.md)  
+[Home](../index.md) > [Videos](./index.md)  
 # 🩰🤸‍♀️🧑‍🏫📖 Ultimate Guide To Learning Dance For Beginners | STEEZY.CO  
 ![Ultimate Guide To Learning Dance For Beginners | STEEZY.CO](https://youtu.be/C62596gVnT8)  
   
@@ -36,4 +36,4 @@ While this video provides a  comprehensive introduction to dance for beginners, 
 * The Art of Practicing by Madeline Bruser: This book 📖 offers insights into effective practice methods applicable to any skill, including dance.  
 * The Dancer's Way: The New York City Ballet Guide to Mind, Body, and Spirit by Robert Barnett and Liz Aron: This book 🩰 provides a perspective on classical dance training and the holistic approach to a dancer's life.  
 * Sweat the Technique: Revelations on Creativity from the Hip-Hop Dance Floor by Jorge "Popmaster Fabel" Pabon: For a more in-depth look at hip-hop dance, this book 🎤 offers personal stories and technical insights from a legendary figure.  
-* [🌱🧘🏼‍♀️🏆 Mindset: The New Psychology of Success](/content/books/mindset.md) by Carol S. Dweck: This book 🧠 explores the concepts of fixed and growth mindsets, which are crucial for embracing challenges and continuous learning in any field, including dance.
+* [🌱🧘🏼‍♀️🏆 Mindset: The New Psychology of Success](../books/mindset.md) by Carol S. Dweck: This book 🧠 explores the concepts of fixed and growth mindsets, which are crucial for embracing challenges and continuous learning in any field, including dance.

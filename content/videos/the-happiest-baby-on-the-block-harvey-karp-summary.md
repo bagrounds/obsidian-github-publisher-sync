@@ -4,10 +4,10 @@ aliases:
   - The Happiest Baby on the Block - Harvey Karp (Summary)
 title: The Happiest Baby on the Block - Harvey Karp (Summary)
 URL: https://youtu.be/crdQy8zliZw
-Author: 
-Platform: 
+Author:
+Platform:
 Channel: Real Happy Endings
-tags: 
+tags:
 ---
 [Home](../index.md) > [Videos](./index.md)  
 # The Happiest Baby on the Block - Harvey Karp (Summary)  

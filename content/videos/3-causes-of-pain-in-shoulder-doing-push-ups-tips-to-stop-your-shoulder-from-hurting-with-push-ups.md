@@ -10,7 +10,7 @@ Channel: More 4 Life
 tags:
 youtube: https://youtu.be/bMl4eJsaI0w
 ---
-[Home](/content/index.md) > [Videos](/content/videos/index.md)  
+[Home](../index.md) > [Videos](./index.md)  
 # 🏋️🤕🛑 3 Causes Of Pain In Shoulder Doing Push-ups +Tips To Stop Your Shoulder From Hurting With Push-ups  
 ![3 Causes Of Pain In Shoulder Doing Push-ups +Tips To Stop Your Shoulder From Hurting With Push-ups](https://youtu.be/bMl4eJsaI0w)  
   
@@ -49,7 +49,7 @@ A: 📉 Start by reducing the load and range of motion. The best modification is
   
 ## 📚 Book Recommendations  
 * **Similar** 🤝 (Focused on Injury Prevention and Movement Optimization)  
-    * [🤸🤕 Becoming a Supple Leopard: The Ultimate Guide to Resolving Pain, Preventing Injury, and Optimizing Athletic Performance](/content/books/becoming-a-supple-leopard-the-ultimate-guide-to-resolving-pain-preventing-injury-and-optimizing-athletic-performance.md): 📖 Offers a comprehensive system for mobility, stability, and biomechanics, which is essential for correcting push-up form issues and resolving underlying pain.  
+    * [🤸🤕 Becoming a Supple Leopard: The Ultimate Guide to Resolving Pain, Preventing Injury, and Optimizing Athletic Performance](../books/becoming-a-supple-leopard-the-ultimate-guide-to-resolving-pain-preventing-injury-and-optimizing-athletic-performance.md): 📖 Offers a comprehensive system for mobility, stability, and biomechanics, which is essential for correcting push-up form issues and resolving underlying pain.  
     * Invincible: Injury Prevention for Weight Lifters: 🛡️ Provides a battle-tested playbook with strategies and training tweaks for pain-free performance and training longevity, directly relevant to avoiding chronic joint pain in pressing movements.  
 * **Contrasting** 🏋️ (Focused on Foundational Strength and Programming)  
     * Starting Strength: Basic Barbell Training: 📘 A classic resource focused on the technique and programming of fundamental compound barbell lifts, offering a load-focused perspective that contrasts with bodyweight training principles.  

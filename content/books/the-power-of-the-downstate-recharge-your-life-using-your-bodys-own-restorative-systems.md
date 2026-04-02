@@ -7,7 +7,7 @@ share: true
 affiliate link: https://amzn.to/4m0GWzw
 CTA: ⚡️ Awaken vitality.
 ---
-[Home](/content/index.md) > [Books](/content/books/index.md)  
+[Home](../index.md) > [Books](./index.md)  
 # 🔋⬇️⬆️ The Power of the Downstate: Recharge Your Life Using Your Body's Own Restorative Systems  
 [🛒 The Power of the Downstate: Recharge Your Life Using Your Body's Own Restorative Systems. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4m0GWzw)  
   
@@ -35,23 +35,23 @@ The Power of the Downstate offers readers practical, evidence-based strategies t
   
 ### 📖 Similar Reads  
   
-* **[🫁🌬️ Breath: The New Science of a Lost Art](/content/books/breath-the-new-science-of-a-lost-art.md) by James Nestor:** 🫁 This book delves deep into the science and practice of breathing, exploring how conscious control of our breath can have profound effects on our physical and mental health.  
-* **[😴💭 Why We Sleep: Unlocking the Power of Sleep and Dreams](/content/books/why-we-sleep-unlocking-the-power-of-sleep-and-dreams.md) by Matthew Walker:** 🧠 A comprehensive exploration of the vital role sleep plays in every aspect of our lives, from learning and memory to emotional regulation and physical health.  
-* **[😴📈 Rest: Why You Get More Done When You Work Less](/content/books/rest-why-you-get-more-done-when-you-work-less.md) by Alex Soojung-Kim Pang:** ⏱️ This book challenges the modern cult of busyness and makes a compelling case for the importance of deliberate rest in achieving peak performance and a more fulfilling life.  
-* **[🤕🎼🧠 The Body Keeps the Score: Brain, Mind, and Body in the Healing of Trauma](/content/books/the-body-keeps-the-score-brain-mind-and-body-in-the-healing-of-trauma.md) by Bessel van der Kolk:** 🧠 While focused on trauma, this book provides profound insights into the mind-body connection and the importance of somatic practices for healing and well-being.  
+* **[🫁🌬️ Breath: The New Science of a Lost Art](./breath-the-new-science-of-a-lost-art.md) by James Nestor:** 🫁 This book delves deep into the science and practice of breathing, exploring how conscious control of our breath can have profound effects on our physical and mental health.  
+* **[😴💭 Why We Sleep: Unlocking the Power of Sleep and Dreams](./why-we-sleep-unlocking-the-power-of-sleep-and-dreams.md) by Matthew Walker:** 🧠 A comprehensive exploration of the vital role sleep plays in every aspect of our lives, from learning and memory to emotional regulation and physical health.  
+* **[😴📈 Rest: Why You Get More Done When You Work Less](./rest-why-you-get-more-done-when-you-work-less.md) by Alex Soojung-Kim Pang:** ⏱️ This book challenges the modern cult of busyness and makes a compelling case for the importance of deliberate rest in achieving peak performance and a more fulfilling life.  
+* **[🤕🎼🧠 The Body Keeps the Score: Brain, Mind, and Body in the Healing of Trauma](./the-body-keeps-the-score-brain-mind-and-body-in-the-healing-of-trauma.md) by Bessel van der Kolk:** 🧠 While focused on trauma, this book provides profound insights into the mind-body connection and the importance of somatic practices for healing and well-being.  
   
 ### ⚔️ Contrasting Perspectives  
   
 * 🧑‍💻 **The 4-Hour Workweek: Escape 9-5, Live Anywhere, and Join the New Rich by Timothy Ferriss:** 💰 This influential book promotes a hyper-productive, results-oriented approach to work and life, often seen as a cornerstone of modern hustle culture.  
-* **[❤️‍🔥💪 Grit: The Power of Passion and Perseverance](/content/books/grit-the-power-of-passion-and-perseverance.md) by Angela Duckworth:** 🚀 Duckworth's work champions the importance of sustained effort and resilience in achieving success, a perspective that can sometimes be interpreted as a call for relentless striving.  
-* **[🙅‍♀️✂️⚖️ Never Split the Difference: Negotiating As If Your Life Depended On It](/content/books/never-split-the-difference.md) by Chris Voss with Tahl Raz:** 🗣️ While a book on negotiation, its high-stakes, "always-on" approach to communication and strategy can be seen as a reflection of the competitive, upstate-dominant mindset.  
+* **[❤️‍🔥💪 Grit: The Power of Passion and Perseverance](./grit-the-power-of-passion-and-perseverance.md) by Angela Duckworth:** 🚀 Duckworth's work champions the importance of sustained effort and resilience in achieving success, a perspective that can sometimes be interpreted as a call for relentless striving.  
+* **[🙅‍♀️✂️⚖️ Never Split the Difference: Negotiating As If Your Life Depended On It](./never-split-the-difference.md) by Chris Voss with Tahl Raz:** 🗣️ While a book on negotiation, its high-stakes, "always-on" approach to communication and strategy can be seen as a reflection of the competitive, upstate-dominant mindset.  
   
 ### 🎨 Creative Connections  
   
-* **[📵 How to Do Nothing: Resisting the Attention Economy](/content/books/how-to-do-nothing-resisting-the-attention-economy.md) by Jenny Odell:** 🌍 A powerful critique of the forces that seek to monetize our attention and a call for a more intentional and engaged way of being in the world.  
+* **[📵 How to Do Nothing: Resisting the Attention Economy](./how-to-do-nothing-resisting-the-attention-economy.md) by Jenny Odell:** 🌍 A powerful critique of the forces that seek to monetize our attention and a call for a more intentional and engaged way of being in the world.  
 * 😥 **When the Body Says No: The Cost of Hidden Stress by Gabor Maté:** ❤️‍🩹 This book explores the deep connections between emotional stress and physical illness, offering a compassionate and holistic view of health.  
 * 🏝️ **The Art of Stillness: Adventures in Going Nowhere by Pico Iyer:** 🧘 A beautiful and meditative exploration of the value of slowing down, being present, and finding sanctuary in a world of constant motion.  
-* **[🥶🛌 Wintering: The Power of Rest and Retreat in Difficult Times](/content/books/wintering-the-power-of-rest-and-retreat-in-difficult-times.md) by Katherine May:** 🐻‍❄️ A memoir and exploration of the "fallow periods" in our lives, arguing for the necessity of rest and retreat as a natural and essential part of the human experience.  
+* **[🥶🛌 Wintering: The Power of Rest and Retreat in Difficult Times](./wintering-the-power-of-rest-and-retreat-in-difficult-times.md) by Katherine May:** 🐻‍❄️ A memoir and exploration of the "fallow periods" in our lives, arguing for the necessity of rest and retreat as a natural and essential part of the human experience.  
   
-## 💬 [Gemini](/content/software/gemini.md) Prompt (gemini-2.5-pro)  
+## 💬 [Gemini](../software/gemini.md) Prompt (gemini-2.5-pro)  
 > Write a markdown-formatted (start headings at level H2) book report, followed by a plethora of additional similar, contrasting, and creatively related book recommendations on The Power of the Downstate: Recharge Your Life Using Your Body's Own Restorative Systems. Never put book titles in quotes or italics. Be thorough in content discussed but concise and economical with your language. Structure the report with section headings and bulleted lists to avoid long blocks of text.

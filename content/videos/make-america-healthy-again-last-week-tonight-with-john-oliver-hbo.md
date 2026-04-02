@@ -10,7 +10,7 @@ Channel: LastWeekTonight
 tags:
 youtube: https://youtu.be/3lzfH86avIc
 ---
-[Home](/content/index.md) > [Videos](/content/videos/index.md)  
+[Home](../index.md) > [Videos](./index.md)  
 # 🇺🇸💪🏥😂 Make America Healthy Again: Last Week Tonight with John Oliver (HBO)  
 ![Make America Healthy Again: Last Week Tonight with John Oliver (HBO)](https://youtu.be/3lzfH86avIc)  
   
@@ -34,7 +34,7 @@ To explore a better understanding, it would be beneficial to examine the argumen
   
 ## 📚 Book Recommendations  
 * Food Politics by Marion Nestle: A similar book that examines the political and economic forces behind what we eat, and how corporations and the government influence dietary choices.  
-* [💰🤥 Merchants of Doubt](/content/books/merchants-of-doubt.md) by Naomi Oreskes and Erik M. Conway: A creatively related book that explores how a small group of scientists with connections to corporations and think tanks deliberately obscured scientific research on issues like tobacco and climate change.  
+* [💰🤥 Merchants of Doubt](../books/merchants-of-doubt.md) by Naomi Oreskes and Erik M. Conway: A creatively related book that explores how a small group of scientists with connections to corporations and think tanks deliberately obscured scientific research on issues like tobacco and climate change.  
 * The Healthy Deviant by Pilar Gerasimo: A book that offers a different perspective on health, encouraging readers to question conventional health advice and carve their own path.  
   
 ## 🐦 Tweet  

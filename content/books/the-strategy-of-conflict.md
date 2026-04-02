@@ -7,7 +7,7 @@ share: true
 CTA: ⚔️ Master competition.
 affiliate link: https://amzn.to/46XRQ2B
 ---
-[Home](/content/index.md) > [Books](/content/books/index.md)  
+[Home](../index.md) > [Books](./index.md)  
 # ⚔️♟️ The Strategy of Conflict  
 [🛒 The Strategy of Conflict. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/46XRQ2B)  
   
@@ -94,18 +94,18 @@ A: ☢️ The book, published in 1960, built its concepts by slowly moving towar
   
 #### 🤝 Similar Books (Strategic Interaction, Game Theory)  
 * 🎮 Game Theory: A Nontechnical Introduction by Morton M Davis  
-* [🧠📈 Thinking Strategically: The Competitive Edge in Business, Politics and Everyday Life](/content/books/thinking-strategically-the-competitive-edge-in-business-politics-and-everyday-life.md) by Avinash K Dixit and Barry J Nalebuff  
-* [♟️🧠📈🎯 The Art of Strategy: A Game Theorist's Guide to Success in Business and Life](/content/books/the-art-of-strategy-a-game-theorists-guide-to-success-in-business-and-life.md) by Avinash K Dixit and Barry J Nalebuff  
+* [🧠📈 Thinking Strategically: The Competitive Edge in Business, Politics and Everyday Life](./thinking-strategically-the-competitive-edge-in-business-politics-and-everyday-life.md) by Avinash K Dixit and Barry J Nalebuff  
+* [♟️🧠📈🎯 The Art of Strategy: A Game Theorist's Guide to Success in Business and Life](./the-art-of-strategy-a-game-theorists-guide-to-success-in-business-and-life.md) by Avinash K Dixit and Barry J Nalebuff  
   
 #### 🆚 Contrasting Books (Alternative Views on Conflict, Power, Cooperation)  
 * ⚔️ On War by Carl von Clausewitz  
-* [🤝🌍 Diplomacy](/content/books/diplomacy.md) by Henry Kissinger  
-* [👑🎭♟️ The 48 Laws of Power](/content/books/the-48-laws-of-power.md) by Robert Greene  
+* [🤝🌍 Diplomacy](./diplomacy.md) by Henry Kissinger  
+* [👑🎭♟️ The 48 Laws of Power](./the-48-laws-of-power.md) by Robert Greene  
   
 #### 🧠 Creatively Related Books (Applying Strategic Thinking to Different Domains)  
-* [🍃🧠🤝🏼 Influence: The Psychology of Persuasion](/content/books/influence.md) by Robert Cialdini  
-* [🤔🐇🐢 Thinking, Fast and Slow](/content/books/thinking-fast-and-slow.md) by Daniel Kahneman  
-* [🔮🤷🏼‍♀️🤪 Predictably Irrational: The Hidden Forces That Shape Our Decisions](/content/books/predictably-irrational.md) by Dan Ariely  
+* [🍃🧠🤝🏼 Influence: The Psychology of Persuasion](./influence.md) by Robert Cialdini  
+* [🤔🐇🐢 Thinking, Fast and Slow](./thinking-fast-and-slow.md) by Daniel Kahneman  
+* [🔮🤷🏼‍♀️🤪 Predictably Irrational: The Hidden Forces That Shape Our Decisions](./predictably-irrational.md) by Dan Ariely  
 * 🎯 Good Strategy Bad Strategy: The Difference and Why It Matters by Richard Rumelt  
   
 ## 💬 [Gemini](https://gemini.google.com) Prompt (gemini-2.5-flash)  

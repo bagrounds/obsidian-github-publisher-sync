@@ -13,7 +13,7 @@ force_analyze_links: false
 link_analysis_time: 2026-03-25T11:17:43.615Z
 link_analysis_model: gemini-3.1-flash-lite-preview
 ---
-[Home](/content/index.md) > [Books](/content/books/index.md)  
+[Home](../index.md) > [Books](./index.md)  
 # ➡️🌌🚀😡 A Long Way to a Small, Angry Planet  
 [🛒 A Long Way to a Small, Angry Planet. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4plv8K6)  
   
@@ -45,15 +45,15 @@ The book has been widely praised for its optimistic and inclusive vision of scie
 ### 🎯 Recommendations  
 #### 🤓 Non-Fiction  
 * **The Anthropocene Reviewed by John Green** 🏞️: Both books share a similar quality of finding beauty and hope in the small details of life and the human experience.  
-* **[🪢🌾 Braiding Sweetgrass: Indigenous Wisdom, Scientific Knowledge, and the Teachings of Plants](/content/books/braiding-sweetgrass.md) by Robin Wall Kimmerer** 🌿: This book, like A Long Way to a Small, Angry Planet, explores the interconnectedness of different beings and the importance of relationships in a complex world.  
+* **[🪢🌾 Braiding Sweetgrass: Indigenous Wisdom, Scientific Knowledge, and the Teachings of Plants](./braiding-sweetgrass.md) by Robin Wall Kimmerer** 🌿: This book, like A Long Way to a Small, Angry Planet, explores the interconnectedness of different beings and the importance of relationships in a complex world.  
   
 #### ❤️ If You Loved This  
-* **[☄️🧑‍🚀🙏🌍 Project Hail Mary](/content/books/project-hail-mary.md) by Andy Weir** 👽: While more plot-driven, this book also features a delightful found family dynamic and a charming, quirky protagonist navigating space.  
+* **[☄️🧑‍🚀🙏🌍 Project Hail Mary](./project-hail-mary.md) by Andy Weir** 👽: While more plot-driven, this book also features a delightful found family dynamic and a charming, quirky protagonist navigating space.  
 * **Gideon the Ninth by Tamsyn Muir** 💀: For readers who love the witty banter and compelling character relationships, this book offers a much darker, gothic sci-fi setting with a similar emphasis on unforgettable duo.  
   
 #### ☯️ Similar But Different  
-* **[👍🦮🌌 The Hitchhiker's Guide to the Galaxy](/content/books/the-hitchhikers-guide-to-the-galaxy.md) by Douglas Adams** 🤣: If you enjoy the crew's dynamic and the playful tone, you might appreciate this classic for its satirical take on a journey through space.  
-* **[🏜️🐛 Dune](/content/books/dune.md) by Frank Herbert** 🏜️: For readers who want more complex, sprawling world-building with a focus on politics and societal structures, Dune offers a high-concept alternative to the character-driven story.  
+* **[👍🦮🌌 The Hitchhiker's Guide to the Galaxy](./the-hitchhikers-guide-to-the-galaxy.md) by Douglas Adams** 🤣: If you enjoy the crew's dynamic and the playful tone, you might appreciate this classic for its satirical take on a journey through space.  
+* **[🏜️🐛 Dune](./dune.md) by Frank Herbert** 🏜️: For readers who want more complex, sprawling world-building with a focus on politics and societal structures, Dune offers a high-concept alternative to the character-driven story.  
   
 ## 🦋 Bluesky    
 <blockquote class="bluesky-embed" data-bluesky-uri="at://did:plc:i4yli6h7x2uoj7acxunww2fc/app.bsky.feed.post/3mhuhcvjvzu2e" data-bluesky-cid="bafyreieecf4mzo32a36v3x6esmv6kaobw7ru6thtt6emxjftdaosrt4myq" data-bluesky-embed-color-mode="system"><p lang="en">➡️🌌🚀😡 A Long Way to a Small, Angry Planet<br><br>#AI Q: 🏡 Can a ship full of diverse strangers truly become a home?<br><br>👩‍🚀 Space Travel | ❤️ Found Family | 👽 Diverse Cultures | 🏞️ Hopeful Futures<br>https://bagrounds.org/books/a-long-way-to-a-small-angry-planet</p>  

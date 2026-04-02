@@ -7,7 +7,7 @@ share: true
 CTA: 💡 Discover interconnectedness.
 affiliate link: https://amzn.to/4oButnl
 ---
-[Home](/content/index.md) > [Books](/content/books/index.md)  
+[Home](../index.md) > [Books](./index.md)  
 # 🤖🔗👁️ Systems Thinking: An AI’s Guide to 100 Ways to Spot Connections Humans Often Overlook  
 [🛒 Systems Thinking: An AI’s Guide to 100 Ways to Spot Connections Humans Often Overlook. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4oButnl)  
   
@@ -50,7 +50,7 @@ affiliate link: https://amzn.to/4oButnl
 * 🤝 Human-AI Teaming and Collaborative Intelligence Frameworks  
 * 📊 The Role of AI in Complex Adaptive Systems Modeling and Simulation  
 * 🌐 Sociotechnical Systems Design for Human-AI Ecosystems  
-* [⚛️ Quantum Computing](/content/topics/quantum-computing.md)'s Potential for Hyper-Complex Systems Analysis  
+* [⚛️ Quantum Computing](../topics/quantum-computing.md)'s Potential for Hyper-Complex Systems Analysis  
   
 ## ❓ Frequently Asked Questions (FAQ)  
   
@@ -69,19 +69,19 @@ affiliate link: https://amzn.to/4oButnl
 ## 📚 Book Recommendations  
   
 ### 👯 Similar  
-* [🌐🔗🧠📖 Thinking in Systems: A Primer](/content/books/thinking-in-systems.md) by Donella Meadows  
-* [🎨🔄🧠🏢 The Fifth Discipline: The Art and Practice of the Learning Organization](/content/books/the-fifth-discipline.md) by Peter Senge  
-* [⚙️🧠 The Systems Thinking Playbook: Exercises to Stretch and Build Learning and Systems Thinking Capabilities](/content/books/the-systems-thinking-playbook-exercises-to-stretch-and-build-learning-and-systems-thinking-capabilities.md) by Dennis Meadows  
+* [🌐🔗🧠📖 Thinking in Systems: A Primer](./thinking-in-systems.md) by Donella Meadows  
+* [🎨🔄🧠🏢 The Fifth Discipline: The Art and Practice of the Learning Organization](./the-fifth-discipline.md) by Peter Senge  
+* [⚙️🧠 The Systems Thinking Playbook: Exercises to Stretch and Build Learning and Systems Thinking Capabilities](./the-systems-thinking-playbook-exercises-to-stretch-and-build-learning-and-systems-thinking-capabilities.md) by Dennis Meadows  
   
 ### 🆚 Contrasting  
-* [⚫🦢🎲 The Black Swan: The Impact of the Highly Improbable](/content/books/the-black-swan-the-impact-of-the-highly-improbable.md) by Nassim Nicholas Taleb  
-* [📉📈🌪️💪 Antifragile: Things That Gain from Disorder](/content/books/antifragile-things-that-gain-from-disorder.md) by Nassim Nicholas Taleb  
-* [🙉📢😵‍💫🔇 Noise: A Flaw in Human Judgment](/content/books/noise.md) by Daniel Kahneman  
+* [⚫🦢🎲 The Black Swan: The Impact of the Highly Improbable](./the-black-swan-the-impact-of-the-highly-improbable.md) by Nassim Nicholas Taleb  
+* [📉📈🌪️💪 Antifragile: Things That Gain from Disorder](./antifragile-things-that-gain-from-disorder.md) by Nassim Nicholas Taleb  
+* [🙉📢😵‍💫🔇 Noise: A Flaw in Human Judgment](./noise.md) by Daniel Kahneman  
   
 ### 💡 Related  
-* [🤖⚠️📈 Superintelligence: Paths, Dangers, Strategies](/content/books/superintelligence-paths-dangers-strategies.md) by Nick Bostrom  
-* [🤖🧑‍ Human Compatible: Artificial Intelligence and the Problem of Control](/content/books/human-compatible-artificial-intelligence-and-the-problem-of-control.md) by Stuart Russell  
-* [⏳🙅 Lifespan: Why We Age - and Why We Don't Have To](/content/books/lifespan-why-we-age-and-why-we-dont-have-to.md) by David Sinclair  
+* [🤖⚠️📈 Superintelligence: Paths, Dangers, Strategies](./superintelligence-paths-dangers-strategies.md) by Nick Bostrom  
+* [🤖🧑‍ Human Compatible: Artificial Intelligence and the Problem of Control](./human-compatible-artificial-intelligence-and-the-problem-of-control.md) by Stuart Russell  
+* [⏳🙅 Lifespan: Why We Age - and Why We Don't Have To](./lifespan-why-we-age-and-why-we-dont-have-to.md) by David Sinclair  
   
 ## 🫵 What Do You Think?  
 🤔 What systemic connections has AI revealed to you in your domain, and what unexpected challenges or opportunities did that uncover? Share your insights below! 👇

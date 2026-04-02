@@ -7,7 +7,7 @@ share: true
 CTA: 🧠 Uncover the mind's code.
 affiliate link: https://amzn.to/3KzzcqG
 ---
-[Home](/content/index.md) > [Books](/content/books/index.md)  
+[Home](../index.md) > [Books](./index.md)  
 # 🧠💻 The Computational Brain  
 [🛒 The Computational Brain. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3KzzcqG)  
   
@@ -83,7 +83,7 @@ affiliate link: https://amzn.to/3KzzcqG
 ### Related  
 * 🧠 Principles of Neural Science by Eric R. Kandel, James H. Schwartz, Thomas M. Jessell, Steven A. Siegelbaum, A. J. Hudspeth  
 * 🏄 Surfing Uncertainty: Prediction, Action, and the Embodied Mind by Andy Clark  
-* [🤔🐇🐢 Thinking, Fast and Slow](/content/books/thinking-fast-and-slow.md) by Daniel Kahneman  
+* [🤔🐇🐢 Thinking, Fast and Slow](./thinking-fast-and-slow.md) by Daniel Kahneman  
   
 ## 🫵 What Do You Think?  
 🧠 Which computational model of brain function do you find most compelling? 🤔 What aspects of consciousness can be explained by computational processes?

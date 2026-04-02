@@ -10,7 +10,7 @@ Channel: Heather Cox Richardson
 tags:
 youtube: https://youtu.be/FxG6O127EQQ
 ---
-[Home](/content/index.md) > [Videos](/content/videos/index.md)  
+[Home](../index.md) > [Videos](./index.md)  
 # 👮‍♂️💪🚫📜 How Trump’s Bill Creates a Super Police Force  
 ![How Trump’s Bill Creates a Super Police Force](https://youtu.be/FxG6O127EQQ)  
   
@@ -27,15 +27,15 @@ youtube: https://youtu.be/FxG6O127EQQ
 * ⚖️ **Case of Kilmar Abrego Garcia**: 😢 The video references the case of Kilmar Abrego Garcia, who was rendered to prison in El Salvador against U.S. court orders and tortured 🤕. He is currently held in a U.S. prison by his own request, fearing being sent back to El Salvador if released \[[04:47](http://www.youtube.com/watch?v=FxG6O127EQQ&t=287)\].  
   
 ## 📚 Book Recommendations  
-- **[🧑🏿⛓️🙈 The New Jim Crow: Mass Incarceration in the Age of Colorblindness](/content/books/the-new-jim-crow-mass-incarceration-in-the-age-of-colorblindness.md)** by Michelle Alexander: Explores how mass incarceration, like expanded ICE operations, controls marginalized groups.  
+- **[🧑🏿⛓️🙈 The New Jim Crow: Mass Incarceration in the Age of Colorblindness](../books/the-new-jim-crow-mass-incarceration-in-the-age-of-colorblindness.md)** by Michelle Alexander: Explores how mass incarceration, like expanded ICE operations, controls marginalized groups.  
   
 - 🗺️ **Borderlands/La Frontera: The New Mestiza** by Gloria Anzaldúa: A personal and theoretical look at the human experience of living on the U.S.-Mexico border.  
   
-- **[🇺🇸🔒 American Gulag: Inside U.S. Immigration Prisons](/content/books/american-gulag-inside-us-immigration-prisons.md)** by Mark Dow: Investigates the realities and conditions of U.S. immigration detention centers.  
+- **[🇺🇸🔒 American Gulag: Inside U.S. Immigration Prisons](../books/american-gulag-inside-us-immigration-prisons.md)** by Mark Dow: Investigates the realities and conditions of U.S. immigration detention centers.  
   
-- **[⛓️🏕️📜 Concentration Camps: A Short History](/content/books/concentration-camps-a-short-history.md)** by Andrea Pitzer: Provides a historical framework for understanding the concept of "concentration camps" in detention contexts.  
+- **[⛓️🏕️📜 Concentration Camps: A Short History](../books/concentration-camps-a-short-history.md)** by Andrea Pitzer: Provides a historical framework for understanding the concept of "concentration camps" in detention contexts.  
   
-- **[🚫📄🇺🇸 The Undocumented Americans](/content/books/the-undocumented-americans.md)** by Karla Cornejo Villavicencio: Shares humanizing personal stories of undocumented immigrants.  
+- **[🚫📄🇺🇸 The Undocumented Americans](../books/the-undocumented-americans.md)** by Karla Cornejo Villavicencio: Shares humanizing personal stories of undocumented immigrants.  
   
 - 📜 **Detention Empire: Reagan's War on Immigrants and the Seeds of Resistance** by Kristina Shull: Traces the historical expansion of the U.S. immigration detention system.  
   

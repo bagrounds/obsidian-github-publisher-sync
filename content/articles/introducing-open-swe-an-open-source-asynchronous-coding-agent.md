@@ -7,7 +7,7 @@ URL: https://bagrounds.org/articles/introducing-open-swe-an-open-source-asynchro
 Author:
 tags:
 ---
-[Home](/content/index.md) > [Articles](/content/articles/index.md)  
+[Home](../index.md) > [Articles](./index.md)  
 # [🤖🗣️🔑 Introducing Open SWE: An Open Source Asynchronous Coding Agent](https://blog.langchain.com/introducing-open-swe-an-open-source-asynchronous-coding-agent)  
 ## 🤖 AI Summary  
 - ✨ **Open SWE is an open-source, asynchronous coding agent** built to operate in the cloud. It is designed to act like another engineer on a development team.  
@@ -24,7 +24,7 @@ tags:
 🔍 To better understand the system, it would be beneficial to explore topics like its effectiveness across different programming languages and frameworks, as the post primarily focuses on its use with LangGraph. Another area for exploration is the agent's long-term cost-effectiveness and resource consumption compared to hiring an entry-level developer, especially given its cloud-hosted and asynchronous nature. The potential for the agent to introduce new types of security vulnerabilities or a need for specialized security auditing could also be a topic for further investigation.  
   
 ## 📚 Book Recommendations  
-[🤖⚙️ AI Agents in Action](/content/books/ai-agents-in-action.md) by Micheal Lanham is a fantastic read for those who want to master a proven framework for developing practical AI agents. It teaches how to build production-ready assistants and multi-agent systems.  
+[🤖⚙️ AI Agents in Action](../books/ai-agents-in-action.md) by Micheal Lanham is a fantastic read for those who want to master a proven framework for developing practical AI agents. It teaches how to build production-ready assistants and multi-agent systems.  
   
 💻 *Building Applications with AI Agents* by Michael Albada is a great resource that provides a practical, research-based approach to designing and implementing single- and multi-agent systems.  
   

@@ -7,8 +7,11 @@ URL: https://bagrounds.org/books/everything-is-workable-a-zen-approach-to-confli
 Author:
 tags:
 affiliate link: https://amzn.to/3SwE3JK
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_time: 2026-04-02T00:00:00Z
+force_analyze_links: false
 ---
-[Home](/content/index.md) > [Books](/content/books/index.md)  
+[Home](../index.md) > [Books](./index.md)  
 # 🤝🧘 Everything Is Workable: A Zen Approach to Conflict Resolution  
 [🛒 Everything Is Workable: A Zen Approach to Conflict Resolution. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3SwE3JK)  
   
@@ -49,16 +52,16 @@ affiliate link: https://amzn.to/3SwE3JK
 ### 🧘 Similar Approaches (Zen, Mindfulness, Conscious Communication)  
 * 🧘 **The Zen of You and Me: A Guide to Getting Along with Just About Anyone** by Diane Musho Hamilton: A follow-up focusing more broadly on relationship dynamics through a Zen lens.  
 * 💬 **Compassionate Conversations: How to Speak and Listen from the Heart** by Diane Musho Hamilton, Gabriel Wilson, and Kimberly Loh: Focuses specifically on the communication aspect, co-authored by Hamilton.  
-* **[🕊️🤝 Nonviolent Communication: A Language of Life](/content/books/nonviolent-communication.md)** by Marshall B. Rosenberg: A foundational text on compassionate communication, focusing on needs and feelings. Often cited alongside Hamilton's work.  
+* **[🕊️🤝 Nonviolent Communication: A Language of Life](./nonviolent-communication.md)** by Marshall B. Rosenberg: A foundational text on compassionate communication, focusing on needs and feelings. Often cited alongside Hamilton's work.  
 * 🧠 **Say What You Mean: A Mindful Approach to Nonviolent Communication** by Oren Jay Sofer: Integrates mindfulness, somatics, and Nonviolent Communication.  
 * 🔑 **The Five Keys to Mindful Communication** by Susan Gillis Chapman: Explores mindful communication through specific keys like silence, mirroring, and encouraging.  
 * 👂 **The Zen of Listening: Mindful Communication in the Age of Distraction** by Rebecca Z. Shafir: Focuses specifically on the practice of mindful listening.  
 * 🌊 **Bridging Troubled Waters: Conflict Resolution from the Heart** by Michelle LeBaron: Emphasizes the human and emotional aspects of conflict resolution, aligning with the compassionate core of Hamilton's approach.  
   
 ### ⚔️ Contrasting Approaches (Negotiation, Psychology, Strategy)  
-* **[👉🤝 Getting to Yes: Negotiating Agreement Without Giving In](/content/books/getting-to-yes-negotiating-agreement-without-giving-in.md)** by Roger Fisher, William Ury, and Bruce Patton: A classic, highly influential text on interest-based negotiation strategy. Hamilton's work is sometimes compared to it in terms of impact.  
-* **[💬😬 Difficult Conversations: How to Discuss What Matters Most](/content/books/difficult-conversations-how-to-discuss-what-matters-most.md)** by Douglas Stone, Bruce Patton, and Sheila Heen: From the Harvard Negotiation Project, focuses on the structure and emotional undercurrents of difficult talks.  
-* **[🧰💬 Crucial Conversations: Tools for Talking When Stakes Are High](/content/books/crucial-conversations-tools-for-talking-when-stakes-are-high.md)** by Kerry Patterson, Joseph Grenny, Ron McMillan, and Al Switzler: Offers tools for high-stakes communication, often in organizational settings.  
+* **[👉🤝 Getting to Yes: Negotiating Agreement Without Giving In](./getting-to-yes-negotiating-agreement-without-giving-in.md)** by Roger Fisher, William Ury, and Bruce Patton: A classic, highly influential text on interest-based negotiation strategy. Hamilton's work is sometimes compared to it in terms of impact.  
+* **[💬😬 Difficult Conversations: How to Discuss What Matters Most](./difficult-conversations-how-to-discuss-what-matters-most.md)** by Douglas Stone, Bruce Patton, and Sheila Heen: From the Harvard Negotiation Project, focuses on the structure and emotional undercurrents of difficult talks.  
+* **[🧰💬 Crucial Conversations: Tools for Talking When Stakes Are High](./crucial-conversations-tools-for-talking-when-stakes-are-high.md)** by Kerry Patterson, Joseph Grenny, Ron McMillan, and Al Switzler: Offers tools for high-stakes communication, often in organizational settings.  
 * ❤️ **The Anatomy of Peace: Resolving the Heart of Conflict** by The Arbinger Institute: Focuses on shifting one's mindset ("heart") from inward (self-focused) to outward (considering others) as the key to resolving conflict.  
 * 💪 **Negotiate Without Fear: Strategies and Tools to Maximize Your Outcomes** by Victoria Medvec: A modern take on negotiation strategy, emphasizing assertiveness and maximizing outcomes.  
 * 🗺️ **The Dynamics of Conflict Resolution: A Practitioner's Guide** by Bernard S. Mayer: Provides a comprehensive analysis of conflict dynamics and resolution models from a practitioner's viewpoint.  
@@ -66,11 +69,11 @@ affiliate link: https://amzn.to/3SwE3JK
 ### ✨ Creatively Related (Zen Practice, Emotional Intelligence, Related Skills)  
 * 🧘 **Zen Mind, Beginner's Mind** by Shunryu Suzuki: A foundational text on Soto Zen practice, offering insights into the beginner's mindset that fosters openness.  
 * ☮️ **Everyday Zen: Love and Work** by Charlotte Joko Beck: Focuses on integrating Zen practice into the challenges of daily life, including relationships and work.  
-* 🧠 **[Emotional Intelligence](/content/books/emotional-intelligence.md): Why It Can Matter More Than IQ** by Daniel Goleman: The seminal work popularizing the concept of emotional intelligence, crucial for self-awareness and empathy in conflict.  
+* 🧠 **[Emotional Intelligence](./emotional-intelligence.md): Why It Can Matter More Than IQ** by Daniel Goleman: The seminal work popularizing the concept of emotional intelligence, crucial for self-awareness and empathy in conflict.  
 * 🧭 **Atlas of the Heart** by Brené Brown: Explores the landscape of human emotions and experiences, fostering the emotional literacy needed for navigating conflict.  
-* **[👣➡️🌍 Wherever You Go, There You Are](/content/books/wherever-you-go-there-you-are.md): Mindfulness Meditation in Everyday Life** by Jon Kabat-Zinn: A classic introduction to mindfulness practice for laypeople.  
+* **[👣➡️🌍 Wherever You Go, There You Are](./wherever-you-go-there-you-are.md): Mindfulness Meditation in Everyday Life** by Jon Kabat-Zinn: A classic introduction to mindfulness practice for laypeople.  
 * 🌐 **Integral Spirituality** by Ken Wilber: Explores the developmental framework (Integral Theory) that informs some of Hamilton's perspectives on worldviews and conflict.  
 * 🧠 **Embodied Conflict: The Neural Basis of Conflict and Communication** by Tim Hicks: Explores the physiological and neurological aspects of conflict and communication.  
   
-## 💬 [Gemini](/content/software/gemini.md) Prompt (gemini-2.5-pro-exp-03-25)  
+## 💬 [Gemini](../software/gemini.md) Prompt (gemini-2.5-pro-exp-03-25)  
 > Write a markdown-formatted (start headings at level H2) book report, followed by a plethora of additional similar, contrasting, and creatively related book recommendations on Everything Is Workable A Zen Approach to Conflict Resolution. Be thorough in content discussed but concise and economical with your language. Structure the report with section headings and bulleted lists to avoid long blocks of text.

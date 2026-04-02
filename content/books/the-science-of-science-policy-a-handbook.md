@@ -7,7 +7,7 @@ share: true
 CTA: 🔬 Strengthen decision-making.
 affiliate link: https://amzn.to/3JCcPAm
 ---
-[Home](/content/index.md) > [Books](/content/books/index.md)  
+[Home](../index.md) > [Books](./index.md)  
 # 🧪🏛️ The Science of Science Policy: A Handbook  
 [🛒 The Science of Science Policy: A Handbook. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3JCcPAm)  
   
@@ -72,14 +72,14 @@ affiliate link: https://amzn.to/3JCcPAm
 ## 📚 Book Recommendations  
   
 ### Similar  
-* **[🤔🐇🐢 Thinking, Fast and Slow](/content/books/thinking-fast-and-slow.md)** by Daniel Kahneman  
-* **[👉🤏 Nudge: Improving Decisions about Health, Wealth, and Happiness](/content/books/nudge.md):** Improving Decisions About Health, Wealth, and Happiness by Richard H. Thaler and Cass R. Sunstein  
+* **[🤔🐇🐢 Thinking, Fast and Slow](./thinking-fast-and-slow.md)** by Daniel Kahneman  
+* **[👉🤏 Nudge: Improving Decisions about Health, Wealth, and Happiness](./nudge.md):** Improving Decisions About Health, Wealth, and Happiness by Richard H. Thaler and Cass R. Sunstein  
 * 🔬 **The Strategy of Science:** Insights from a New Kind of Scholarship by Nicholas W. S. Souleles  
   
 ### Contrasting  
-* **[🧑‍🤝‍🧑🧠 The Undoing Project: A Friendship That Changed Our Minds](/content/books/the-undoing-project-a-friendship-that-changed-our-minds.md):** A Friendship That Changed Our Minds by Michael Lewis  
-* **[💰🤥 Merchants of Doubt](/content/books/merchants-of-doubt.md):** How a Handful of Scientists Obscured the Truth on Issues from Tobacco Smoke to Global Warming by Naomi Oreskes and Erik M. Conway  
-* **[⚫🦢🎲 The Black Swan: The Impact of the Highly Improbable](/content/books/the-black-swan-the-impact-of-the-highly-improbable.md):** The Impact of the Highly Improbable by Nassim Nicholas Taleb  
+* **[🧑‍🤝‍🧑🧠 The Undoing Project: A Friendship That Changed Our Minds](./the-undoing-project-a-friendship-that-changed-our-minds.md):** A Friendship That Changed Our Minds by Michael Lewis  
+* **[💰🤥 Merchants of Doubt](./merchants-of-doubt.md):** How a Handful of Scientists Obscured the Truth on Issues from Tobacco Smoke to Global Warming by Naomi Oreskes and Erik M. Conway  
+* **[⚫🦢🎲 The Black Swan: The Impact of the Highly Improbable](./the-black-swan-the-impact-of-the-highly-improbable.md):** The Impact of the Highly Improbable by Nassim Nicholas Taleb  
   
 ### Related  
 * 🚀 **The Age of Innovation:** The Global Equity Implications of the Fourth Industrial Revolution by Klaus Schwab  

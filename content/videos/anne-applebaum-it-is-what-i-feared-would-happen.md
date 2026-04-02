@@ -10,7 +10,7 @@ Channel: To the Contrary With Charlie Sykes
 tags:
 youtube: https://youtu.be/Kp1MUqZKOUA
 ---
-[Home](/content/index.md) > [Videos](/content/videos/index.md)  
+[Home](../index.md) > [Videos](./index.md)  
 # 😟🔮 Anne Applebaum: «It Is What I Feared Would Happen»  
 ![Anne Applebaum: «It Is What I Feared Would Happen»](https://youtu.be/Kp1MUqZKOUA)  
   
@@ -25,15 +25,15 @@ youtube: https://youtu.be/Kp1MUqZKOUA
   
 ## 📚 Book Recommendations  
 * 📖 **On Authoritarianism and Democracies:**  
-    * [🥀 Twilight of Democracy: 🐍 The Seductive Lure of Authoritarianism](/content/books/twilight-of-democracy.md) by Anne Applebaum (The author of the video, directly relevant to her insights).  
-    * [👑🚫📜2️⃣0️⃣ On Tyranny: Twenty Lessons from the Twentieth Century](/content/books/on-tyranny.md) by Timothy Snyder.  
+    * [🥀 Twilight of Democracy: 🐍 The Seductive Lure of Authoritarianism](../books/twilight-of-democracy.md) by Anne Applebaum (The author of the video, directly relevant to her insights).  
+    * [👑🚫📜2️⃣0️⃣ On Tyranny: Twenty Lessons from the Twentieth Century](../books/on-tyranny.md) by Timothy Snyder.  
     * *The Road to Unfreedom: Russia, Europe, America* by Timothy Snyder.  
 * 📰 **On Disinformation and Truth:**  
     * *The Death of Truth: Notes on Falsehood in the Age of Trump* by Michiko Kakutani.  
-    * [🚫✅🤥 Post-Truth](/content/books/post-truth.md) by Lee McIntyre.  
+    * [🚫✅🤥 Post-Truth](../books/post-truth.md) by Lee McIntyre.  
 * 🏛️ **On US Politics and Institutions:**  
-    * [🗳️🏛️☠️ How Democracies Die](/content/books/how-democracies-die.md) by Steven Levitsky and Daniel Ziblatt.  
-    * [⚠️🥴🕹️🌐 The Fifth Risk](/content/books/the-fifth-risk.md) by Michael Lewis (While not directly about authoritarianism, it touches on the undermining of government institutions).  
+    * [🗳️🏛️☠️ How Democracies Die](../books/how-democracies-die.md) by Steven Levitsky and Daniel Ziblatt.  
+    * [⚠️🥴🕹️🌐 The Fifth Risk](../books/the-fifth-risk.md) by Michael Lewis (While not directly about authoritarianism, it touches on the undermining of government institutions).  
   
 ## 🐦 Tweet  
 <blockquote class="twitter-tweet" data-theme="dark"><p lang="en" dir="ltr">😟🔮 Anne Applebaum: «It Is What I Feared Would Happen»<br><br>🇺🇸 Political Climate | 👮 Immigration and Customs Enforcement | 🏢 Mass Prisons | 🚫 Disinformation | 🚀 Elon Musk | 🇺🇦 War in Ukraine | 🇮🇷 U.S. Iran Strategy | 🤥 Lies<a href="https://twitter.com/anneapplebaum?ref_src=twsrc%5Etfw">@anneapplebaum</a><a href="https://twitter.com/SykesCharlie?ref_src=twsrc%5Etfw">@SykesCharlie</a><a href="https://t.co/JpyuqsJCUQ">https://t.co/JpyuqsJCUQ</a></p>&mdash; Bryan Grounds (@bagrounds) <a href="https://twitter.com/bagrounds/status/1944216740805951962?ref_src=twsrc%5Etfw">July 13, 2025</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>

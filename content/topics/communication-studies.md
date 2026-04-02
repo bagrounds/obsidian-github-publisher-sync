@@ -4,8 +4,11 @@ aliases:
   - 🗣️📢 Communication Studies
 title: 🗣️📢 Communication Studies
 URL: https://bagrounds.org/topics/communication-studies
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_time: 2026-04-01T00:00:00Z
+force_analyze_links: false
 ---
-[Home](/content/index.md) > [Topics](/content/topics/index.md) > [Knowledge](/content/topics/a-hierarchical-view-of-human-knowledge.md) > [Social Sciences](/content/topics/social-sciences.md)  
+[Home](../index.md) > [Topics](./index.md) > [Knowledge](./a-hierarchical-view-of-human-knowledge.md) > [Social Sciences](./social-sciences.md)  
 # 🗣️📢 Communication Studies  
 ## 🤖 AI Summary  
 **🗣️ High-Level Summary:**  
@@ -19,7 +22,7 @@ Here are some major subcategories within Communication Studies, each with its ow
 * **👩‍❤️‍👨 Interpersonal Communication:** This focuses on communication between two or more people in close relationships, exploring topics like conflict resolution, relationship development, and nonverbal cues. It's about understanding the nuances of human connection. 💕  
 * **🏢📈 Organizational Communication:** This examines communication within and between organizations, exploring topics like leadership, teamwork, and internal/external communications. It's about navigating the complexities of workplace interactions. 💼🤝  
 * **📺💻 Mass Communication:** This focuses on how messages are disseminated through mass media channels (e.g., television, radio, internet), including media effects, audience analysis, and media literacy. It's about understanding the power of media in shaping our world. 📰📱  
-* **🎤📜 [Public Speaking and Rhetoric](/content/topics/public-speaking-and-rhetoric.md):** This explores the art of persuasive speaking and argumentation, analyzing how speakers craft messages to influence audiences. It's about mastering the power of words. 🗣️🌟  
+* **🎤📜 [Public Speaking and Rhetoric](./public-speaking-and-rhetoric.md):** This explores the art of persuasive speaking and argumentation, analyzing how speakers craft messages to influence audiences. It's about mastering the power of words. 🗣️🌟  
 * **🩺💊 Health Communication:** This examines how communication influences health behaviors, patient-provider interactions, and health campaigns. It's about promoting well-being through effective communication. 💖🏥  
 * **🌍🤝 Cultural Communication:** This explores how communication varies across cultures and how cultural differences impact communication processes. It's about building bridges across diverse communities. 🌈🤗  
 * **👀🖐️ Nonverbal Communication:** This studies the ways in which people communicate without words, including body language, facial expressions, and tone of voice. It's about understanding the silent language we all speak. 🤫✨  

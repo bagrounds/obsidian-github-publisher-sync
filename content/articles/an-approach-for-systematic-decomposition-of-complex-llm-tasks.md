@@ -7,12 +7,12 @@ URL: https://bagrounds.org/articles/an-approach-for-systematic-decomposition-of-
 Author:
 tags:
 ---
-[Home](/content/index.md) > [Articles](/content/articles/index.md)  
+[Home](../index.md) > [Articles](./index.md)  
 # [🧠🧩🎯⚙️ An Approach for Systematic Decomposition of Complex LLM Tasks](https://arxiv.org/pdf/2510.07772)  
   
 ## 🤖 🧐 AI Summary  
   
-* [🤖🦜 Large Language Models](/content/topics/large-language-models.md) struggle with reliability on complex tasks because current decomposition methods are heuristic or manual.  
+* [🤖🦜 Large Language Models](../topics/large-language-models.md) struggle with reliability on complex tasks because current decomposition methods are heuristic or manual.  
 * 🏗️ ACONIC introduces a systematic framework that models tasks as constraint problems to guide decomposition using formal complexity measures.  
 * 📏 We use properties like graph size and treewidth from induced constraint graphs to measure task difficulty.  
 * 🧩 Our method partitions tasks into manageable subgraphs called bags, arranged in a tree structure to ensure global consistency.  
@@ -47,17 +47,17 @@ tags:
   
 ### ↔️ Similar  
   
-* [🧩⚙️ Constraint Processing](/content/books/constraint-processing.md) by Rina Dechter. 🧠 This book provides the foundational theory on constraint satisfaction problems and graph-based decomposition methods used in ACONIC.  
+* [🧩⚙️ Constraint Processing](../books/constraint-processing.md) by Rina Dechter. 🧠 This book provides the foundational theory on constraint satisfaction problems and graph-based decomposition methods used in ACONIC.  
 * 🤖 Fundamentals of Multiagent Systems by José M. Vidal. 🏗️ It explores how multiple agents can coordinate to solve complex problems through structured communication and task sharing.  
   
 ### 🆚 Contrasting  
   
-* [🤔🐇🐢 Thinking, Fast and Slow](/content/books/thinking-fast-and-slow.md) by Daniel Kahneman. 🧠 This work describes the intuitive System 1 and logical System 2 thinking, contrasting ACONIC's rigid logic with human heuristic shortcuts.  
-* [⚙️🎯 Algorithms for Optimization](/content/books/algorithms-for-optimization.md) by Mykel J. Kochenderfer and Tim A. Wheeler. 📉 This text focuses on continuous optimization and stochastic methods rather than the discrete symbolic constraints of ACONIC.  
+* [🤔🐇🐢 Thinking, Fast and Slow](../books/thinking-fast-and-slow.md) by Daniel Kahneman. 🧠 This work describes the intuitive System 1 and logical System 2 thinking, contrasting ACONIC's rigid logic with human heuristic shortcuts.  
+* [⚙️🎯 Algorithms for Optimization](../books/algorithms-for-optimization.md) by Mykel J. Kochenderfer and Tim A. Wheeler. 📉 This text focuses on continuous optimization and stochastic methods rather than the discrete symbolic constraints of ACONIC.  
   
 ### 🎨 Creatively Related  
   
-- [🤖🏗️ AI Engineering: Building Applications with Foundation Models](/content/books/ai-engineering-building-applications-with-foundation-models.md)  
-- [🤖💻 Vibe Coding: Building Production-Grade Software With GenAI, Chat, Agents, and Beyond](/content/books/vibe-coding-building-production-grade-software-with-genai-chat-agents-and-beyond.md)  
+- [🤖🏗️ AI Engineering: Building Applications with Foundation Models](../books/ai-engineering-building-applications-with-foundation-models.md)  
+- [🤖💻 Vibe Coding: Building Production-Grade Software With GenAI, Chat, Agents, and Beyond](../books/vibe-coding-building-production-grade-software-with-genai-chat-agents-and-beyond.md)  
 * 🕸️ Linked: The New Science of Networks by Albert-László Barabási. 🔗 This book explains the power of graph structures in the real world, mirroring how ACONIC maps reasoning tasks to networks.  
-* [♾️📐🎶🥨 Gödel, Escher, Bach: An Eternal Golden Braid](/content/books/godel-escher-bach.md) by Douglas Hofstadter. 🧩 It dives into the nature of formal systems and self-reference, providing a philosophical backdrop for systematic logic.
+* [♾️📐🎶🥨 Gödel, Escher, Bach: An Eternal Golden Braid](../books/godel-escher-bach.md) by Douglas Hofstadter. 🧩 It dives into the nature of formal systems and self-reference, providing a philosophical backdrop for systematic logic.

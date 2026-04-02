@@ -7,7 +7,7 @@ URL: https://bagrounds.org/articles/new-evaluation-library-and-analysis-of-step-
 Author:
 tags:
 ---
-[Home](/content/index.md) > [Articles](/content/articles/index.md)  
+[Home](../index.md) > [Articles](./index.md)  
 # [📊🔎🤖🪜 New Evaluation, Library, and Analysis of Step By Step Reasoning with Large Language Models](https://arxiv.org/pdf/2404.05221)  
   
 ## 🤖 AI Summary  
@@ -22,11 +22,11 @@ tags:
   
 ## 📚 Book Recommendations  
 * 🧠 The Hundred-Page Machine Learning Book: A concise overview of machine learning for foundational knowledge.  
-* [🧠💻🤖 Deep Learning](/content/books/deep-learning.md): A comprehensive textbook for the theoretical background of the models discussed.  
-* [🤔🐇🐢 Thinking, Fast and Slow](/content/books/thinking-fast-and-slow.md): A book on human cognition that parallels the paper's discussion of AI reasoning.  
+* [🧠💻🤖 Deep Learning](../books/deep-learning.md): A comprehensive textbook for the theoretical background of the models discussed.  
+* [🤔🐇🐢 Thinking, Fast and Slow](../books/thinking-fast-and-slow.md): A book on human cognition that parallels the paper's discussion of AI reasoning.  
 * 🤖 The Master Algorithm: Provides a broader perspective on the various schools of thought in machine learning.  
-* [🧬👥💾 Life 3.0: Being Human in the Age of Artificial Intelligence](/content/books/life-3-0.md): Explores the societal implications of advanced AI, offering a philosophical perspective.  
-* [🤔💻🧠 Algorithms to Live By: The Computer Science of Human Decisions](/content/books/algorithms-to-live-by.md): Connects computer algorithms to real-world human decision-making.  
+* [🧬👥💾 Life 3.0: Being Human in the Age of Artificial Intelligence](../books/life-3-0.md): Explores the societal implications of advanced AI, offering a philosophical perspective.  
+* [🤔💻🧠 Algorithms to Live By: The Computer Science of Human Decisions](../books/algorithms-to-live-by.md): Connects computer algorithms to real-world human decision-making.  
   
 ## 🐦 Tweet  
 <blockquote class="twitter-tweet" data-theme="dark"><p lang="en" dir="ltr">📊🔎🤖🪜 New Evaluation, Library, and Analysis of Step By Step Reasoning with Large Language Models<br><br>🤖 Automated Evaluation | 📚 Unified Library | 🧐 Reasoning Analysis | 🏆 Reward-Guided Search | 🌐 Embodied Environments | 🎯 Prompt Design | 🗄️ Arxiv<a href="https://t.co/CMMotBgOmJ">https://t.co/CMMotBgOmJ</a></p>&mdash; Bryan Grounds (@bagrounds) <a href="https://twitter.com/bagrounds/status/1951090600054497510?ref_src=twsrc%5Etfw">August 1, 2025</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>

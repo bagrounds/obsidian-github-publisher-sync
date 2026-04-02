@@ -6,8 +6,11 @@ URL: https://bagrounds.org/books/algorithms-for-optimization
 share: true
 CTA: 💡 Discover optimal solutions.
 affiliate link: https://amzn.to/3Y3tZdT
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_time: 2026-04-02T00:00:00Z
+force_analyze_links: false
 ---
-[Home](/content/index.md) > [Books](/content/books/index.md)  
+[Home](../index.md) > [Books](./index.md)  
 # ⚙️🎯 Algorithms for Optimization  
 [🛒 Algorithms for Optimization. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3Y3tZdT)  
   
@@ -74,8 +77,8 @@ affiliate link: https://amzn.to/3Y3tZdT
 ## 📚 Book Recommendations  
   
 ### 👍 Similar Books  
-* [⛰️⬇️📈 Convex Optimization](/content/books/convex-optimization.md) by Stephen Boyd and Lieven Vandenberghe  
-* [🔢🎯 Numerical Optimization](/content/books/numerical-optimization.md) by Jorge Nocedal and Stephen Wright  
+* [⛰️⬇️📈 Convex Optimization](./convex-optimization.md) by Stephen Boyd and Lieven Vandenberghe  
+* [🔢🎯 Numerical Optimization](./numerical-optimization.md) by Jorge Nocedal and Stephen Wright  
 * 📖 Practical Methods of Optimization by R. Fletcher  
   
 ### ↔️ Contrasting Books  

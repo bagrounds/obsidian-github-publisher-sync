@@ -9,7 +9,7 @@ Platform:
 Channel: PBS NewsHour
 tags:
 ---
-[Home](/content/index.md) > [Videos](/content/videos/index.md)  
+[Home](../index.md) > [Videos](./index.md)  
 # 📺🏛️💸🎯 A look at the history of public media in the U.S. as Republicans target federal funding  
 ![A look at the history of public media in the U.S. as Republicans target federal funding](https://youtu.be/jttdzOXeW0Q)  
   

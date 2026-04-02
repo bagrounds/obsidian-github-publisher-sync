@@ -10,7 +10,7 @@ Channel: Heather Cox Richardson
 tags:
 youtube: https://youtu.be/0vohywJZ-Vk
 ---
-[Home](/content/index.md) > [Videos](/content/videos/index.md) | [🏛️🇺🇸📖 Heather Cox Richardson](/content/people/heather-cox-richardson.md)  
+[Home](../index.md) > [Videos](./index.md) | [🏛️🇺🇸📖 Heather Cox Richardson](../people/heather-cox-richardson.md)  
 # 🚪🏃‍♂️❓ Why Are They Leaving Office? | Explainer  
 ![Why Are They Leaving Office? | Explainer](https://youtu.be/0vohywJZ-Vk)  
   
@@ -55,8 +55,8 @@ youtube: https://youtu.be/0vohywJZ-Vk
   
 ### ↔️ Similar  
   
-* **[🏘️↔️ The Big Sort: Why the Clustering of Like-Minded America Is Tearing Us Apart](/content/books/the-big-sort-why-the-clustering-of-like-minded-america-is-tearing-us-apart.md)** by Bill Bishop: Explores how Americans increasingly live in communities with people who share their political beliefs, leading to political polarization and a decline in moderate voices, which directly relates to the speaker's discussion of increasingly extreme, homogeneous congressional districts.  
-* **[😇🧠 The Righteous Mind: Why Good People Are Divided by Politics and Religion](/content/books/the-righteous-mind.md)** by Jonathan Haidt: Provides a social-psychological framework for understanding moral foundations and why political groups become tribal and unable to understand opposing viewpoints, offering context for the deep cultural and ideological divide described in the video.  
+* **[🏘️↔️ The Big Sort: Why the Clustering of Like-Minded America Is Tearing Us Apart](../books/the-big-sort-why-the-clustering-of-like-minded-america-is-tearing-us-apart.md)** by Bill Bishop: Explores how Americans increasingly live in communities with people who share their political beliefs, leading to political polarization and a decline in moderate voices, which directly relates to the speaker's discussion of increasingly extreme, homogeneous congressional districts.  
+* **[😇🧠 The Righteous Mind: Why Good People Are Divided by Politics and Religion](../books/the-righteous-mind.md)** by Jonathan Haidt: Provides a social-psychological framework for understanding moral foundations and why political groups become tribal and unable to understand opposing viewpoints, offering context for the deep cultural and ideological divide described in the video.  
   
 ### 🆚 Contrasting  
   
@@ -66,4 +66,4 @@ youtube: https://youtu.be/0vohywJZ-Vk
 ### 🎨 Creatively Related  
   
 * 📙 **The Power Broker: Robert Moses and the Fall of New York** by Robert A. Caro: A massive biography detailing how a single unelected official used networks of wealth and power to reshape New York City for decades, which tangentially relates to the speaker's warning about the dangers of a wealthy **broligarchy** or an entrenched **aristocracy** using power outside of democratic control.  
-* **[🔫🦠🔩 Guns, Germs, and Steel: The Fates of Human Societies](/content/books/guns-germs-and-steel-the-fates-of-human-societies.md)** by Jared Diamond: A deep history examining the ultimate factors driving historical inequalities, providing a sweeping, non-political framework for understanding long-term economic shifts and power accumulation that makes the current political moment feel less exceptional and more like a recurring pattern.
+* **[🔫🦠🔩 Guns, Germs, and Steel: The Fates of Human Societies](../books/guns-germs-and-steel-the-fates-of-human-societies.md)** by Jared Diamond: A deep history examining the ultimate factors driving historical inequalities, providing a sweeping, non-political framework for understanding long-term economic shifts and power accumulation that makes the current political moment feel less exceptional and more like a recurring pattern.

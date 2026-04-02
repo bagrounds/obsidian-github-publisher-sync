@@ -4,8 +4,8 @@ aliases:
   - "Systems Thinking Course - Lesson 03 - Pillar 2: Communication"
 title: "Systems Thinking Course - Lesson 03 - Pillar 2: Communication"
 URL: https://youtu.be/wxGBbz_imJU
-Author: 
-tags: 
+Author:
+tags:
 ---
 [Home](../index.md) > [Videos](./index.md)  
 # Systems Thinking Course - Lesson 03 - Pillar 2: Communication  

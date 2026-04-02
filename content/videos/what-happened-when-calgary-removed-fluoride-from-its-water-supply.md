@@ -9,7 +9,7 @@ Platform:
 Channel: PBS NewsHour
 tags:
 ---
-[Home](/content/index.md) > [Videos](/content/videos/index.md)  
+[Home](../index.md) > [Videos](./index.md)  
 # 🥼🦷💧 What happened when Calgary removed fluoride from its water supply  
 ![What happened when Calgary removed fluoride from its water supply](https://youtu.be/-ibXDDDqpHA)  
   

@@ -7,7 +7,7 @@ share: true
 CTA: 🚀 Evolve your skillset.
 affiliate link: https://amzn.to/48XR5cy
 ---
-[Home](/content/index.md) > [Books](/content/books/index.md)  
+[Home](../index.md) > [Books](./index.md)  
 # 🧑‍💻🤖 Beyond Vibe Coding: From Coder to AI-Era Developer  
 [🛒 Beyond Vibe Coding: From Coder to AI-Era Developer. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/48XR5cy)  
   
@@ -78,17 +78,17 @@ affiliate link: https://amzn.to/48XR5cy
 ## 📚 Book Recommendations  
   
 ### ➕ Similar  
-* [🤖🏗️ AI Engineering: Building Applications with Foundation Models](/content/books/ai-engineering-building-applications-with-foundation-models.md) by Chip Huyen: Focuses on the practical aspects of building and deploying AI systems, complementing the strategic shift in development.  
+* [🤖🏗️ AI Engineering: Building Applications with Foundation Models](./ai-engineering-building-applications-with-foundation-models.md) by Chip Huyen: Focuses on the practical aspects of building and deploying AI systems, complementing the strategic shift in development.  
 * 🤝 Working with AI: Real Stories from Developers and Designers by Cassie Kozyrkov: Offers practical insights and case studies on human-AI collaboration in various contexts.  
   
 ### ➖ Contrasting  
-* [🦄👤🗓️ The Mythical Man-Month: Essays on Software Engineering](/content/books/the-mythical-man-month.md) by Frederick Brooks Jr.: A classic on software project management challenges, providing a foundational perspective on team dynamics and planning that AI tools aim to optimize.  
+* [🦄👤🗓️ The Mythical Man-Month: Essays on Software Engineering](./the-mythical-man-month.md) by Frederick Brooks Jr.: A classic on software project management challenges, providing a foundational perspective on team dynamics and planning that AI tools aim to optimize.  
 * 👨‍💻 Structure and Interpretation of Computer Programs by Harold Abelson and Gerald Jay Sussman: Emphasizes deep understanding of programming fundamentals and abstraction, contrasting with AI's potential to abstract away implementation details.  
   
 ### 🔗 Related  
-* [💾⬆️🛡️ Designing Data-Intensive Applications: The Big Ideas Behind Reliable, Scalable, and Maintainable Systems](/content/books/designing-data-intensive-applications.md) by Martin Kleppmann: Essential for understanding the data infrastructure that often underpins AI-driven applications.  
-* [🗑️✨ Refactoring: Improving the Design of Existing Code](/content/books/refactoring-improving-the-design-of-existing-code.md) by Martin Fowler: Guides on improving code quality, a critical skill when refining AI-generated code.  
-* [🤔🐇🐢 Thinking, Fast and Slow](/content/books/thinking-fast-and-slow.md) by Daniel Kahneman: Explores cognitive biases and decision-making, relevant for understanding human limitations and critical evaluation in AI-assisted workflows.  
+* [💾⬆️🛡️ Designing Data-Intensive Applications: The Big Ideas Behind Reliable, Scalable, and Maintainable Systems](./designing-data-intensive-applications.md) by Martin Kleppmann: Essential for understanding the data infrastructure that often underpins AI-driven applications.  
+* [🗑️✨ Refactoring: Improving the Design of Existing Code](./refactoring-improving-the-design-of-existing-code.md) by Martin Fowler: Guides on improving code quality, a critical skill when refining AI-generated code.  
+* [🤔🐇🐢 Thinking, Fast and Slow](./thinking-fast-and-slow.md) by Daniel Kahneman: Explores cognitive biases and decision-making, relevant for understanding human limitations and critical evaluation in AI-assisted workflows.  
   
 ## 🫵 What Do You Think?  
 ❓ How has AI already changed your daily development workflow, and what's the single most critical skill you believe developers need to master for the next five years?

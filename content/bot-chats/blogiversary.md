@@ -5,9 +5,9 @@ aliases:
 title: ✍🏼 Blogiversary 🕯️
 URL: https://bagrounds.org/bot-chats/blogiversary
 ---
-[Home](/content/index.md) > [Bot Chats](/content/bot-chats/index.md)  
+[Home](../index.md) > [Bot Chats](./index.md)  
 # ✍🏼 Blogiversary 🕯️  
-## 💬 [Gemini](/content/software/gemini.md) Prompt 1  
+## 💬 [Gemini](../software/gemini.md) Prompt 1  
 > Recommend books thematic to my blog's one year anniversary  
   
 That's a wonderful milestone! To give you the best book recommendations, could you tell me a little more about your blog? Specifically, what are its main themes or topics? Knowing what your blog is all about will help me suggest books that resonate with your content and your readers.  
@@ -21,20 +21,20 @@ Here are some book recommendations that touch on those themes:
   
 **Celebrating the Journey & Achievements:**  
   
-* **[🐦🕊️ Bird by Bird: Some Instructions on Writing and Life](/content/books/bird-by-bird.md) by Anne Lamott:** This is a classic for a reason. It's a warm, funny, and insightful guide to the writing process, filled with practical advice and encouragement for sticking with it, which perfectly aligns with celebrating a year of dedication.  
-* **[🪄 Big Magic: Creative Living Beyond Fear](/content/books/big-magic.md) by Elizabeth Gilbert:** This book explores the nature of creativity, curiosity, and the courage it takes to pursue your passions. It's inspiring for anyone who puts themselves out there through their blog.  
-* **[📝🎨🎶 Show Your Work!: 10 Ways to Share Your Creativity and Get Discovered](/content/books/show-your-work.md) by Austin Kleon:** This book is all about the power of sharing your creative process and connecting with an audience, which is exactly what blogging is about. It's practical and encouraging for continued growth.  
+* **[🐦🕊️ Bird by Bird: Some Instructions on Writing and Life](../books/bird-by-bird.md) by Anne Lamott:** This is a classic for a reason. It's a warm, funny, and insightful guide to the writing process, filled with practical advice and encouragement for sticking with it, which perfectly aligns with celebrating a year of dedication.  
+* **[🪄 Big Magic: Creative Living Beyond Fear](../books/big-magic.md) by Elizabeth Gilbert:** This book explores the nature of creativity, curiosity, and the courage it takes to pursue your passions. It's inspiring for anyone who puts themselves out there through their blog.  
+* **[📝🎨🎶 Show Your Work!: 10 Ways to Share Your Creativity and Get Discovered](../books/show-your-work.md) by Austin Kleon:** This book is all about the power of sharing your creative process and connecting with an audience, which is exactly what blogging is about. It's practical and encouraging for continued growth.  
   
 **Cultivating Writing Habits:**  
   
-* **[Atomic Habits](/content/books/atomic-habits.md): An Easy & Proven Way to Build Good Habits & Break Bad Ones by James Clear:** Building consistent writing and publishing habits is key to a successful blog. This book offers a fantastic framework for understanding and implementing those habits.  
-* **"[The War of Art](/content/books/the-war-of-art.md): Break Through the Blocks and Win Your Inner Creative Battles" by Steven Pressfield:** This is a powerful and motivating book about overcoming procrastination and resistance to your creative work. It's a great reminder to keep showing up for your blog.  
-* **"[Deep Work](/content/books/deep-work.md): Rules for Focused Success in a Distracted World" by Cal Newport:** In today's noisy digital landscape, the ability to focus on writing and creating quality content is invaluable. This book provides strategies for cultivating that deep focus.  
+* **[Atomic Habits](../books/atomic-habits.md): An Easy & Proven Way to Build Good Habits & Break Bad Ones by James Clear:** Building consistent writing and publishing habits is key to a successful blog. This book offers a fantastic framework for understanding and implementing those habits.  
+* **"[The War of Art](../books/the-war-of-art.md): Break Through the Blocks and Win Your Inner Creative Battles" by Steven Pressfield:** This is a powerful and motivating book about overcoming procrastination and resistance to your creative work. It's a great reminder to keep showing up for your blog.  
+* **"[Deep Work](../books/deep-work.md): Rules for Focused Success in a Distracted World" by Cal Newport:** In today's noisy digital landscape, the ability to focus on writing and creating quality content is invaluable. This book provides strategies for cultivating that deep focus.  
   
 **The World of Publishing (Broadly):**  
   
-* **[✍🏼👍🏼 On Writing Well: The Classic Guide to Writing Nonfiction](/content/books/on-writing-well.md) by William Zinsser:** While not specifically about blogging, this book offers timeless advice on clear, concise, and engaging writing, which is essential for any blogger.  
-* **[🌍✍🏿 Everybody Writes: Your Go-To Guide to Creating Ridiculously Good Content](/content/books/everybody-writes.md) by Ann Handley:** This is a more modern take on writing for the web, covering various aspects of content creation, which is highly relevant to blogging.  
+* **[✍🏼👍🏼 On Writing Well: The Classic Guide to Writing Nonfiction](../books/on-writing-well.md) by William Zinsser:** While not specifically about blogging, this book offers timeless advice on clear, concise, and engaging writing, which is essential for any blogger.  
+* **[🌍✍🏿 Everybody Writes: Your Go-To Guide to Creating Ridiculously Good Content](../books/everybody-writes.md) by Ann Handley:** This is a more modern take on writing for the web, covering various aspects of content creation, which is highly relevant to blogging.  
   
 Given your blog uses lots of emojis, you might also appreciate books that have a friendly and approachable tone, like "Bird by Bird" or "Everybody Writes."  
   
@@ -74,24 +74,24 @@ Okay, I've had a look at your blog. It's a fascinating mix of technical insights
   
 **AI & Software Engineering:**  
   
-* **[🧬👥💾 Life 3.0: Being Human in the Age of Artificial Intelligence](/content/books/life-3-0.md) by Max Tegmark:** A thought-provoking exploration of the potential future of AI and its impact on humanity.  
-* **[🦄👤🗓️ The Mythical Man-Month: Essays on Software Engineering](/content/books/the-mythical-man-month.md) by Frederick P. Brooks Jr.:** A classic in the field, offering timeless wisdom on managing complex software projects.  
-* **[🧼💾 Clean Code: A Handbook of Agile Software Craftsmanship](/content/books/clean-code.md) by Robert C. Martin:** For the software engineer in you, this book provides practical advice on writing maintainable and efficient code.  
+* **[🧬👥💾 Life 3.0: Being Human in the Age of Artificial Intelligence](../books/life-3-0.md) by Max Tegmark:** A thought-provoking exploration of the potential future of AI and its impact on humanity.  
+* **[🦄👤🗓️ The Mythical Man-Month: Essays on Software Engineering](../books/the-mythical-man-month.md) by Frederick P. Brooks Jr.:** A classic in the field, offering timeless wisdom on managing complex software projects.  
+* **[🧼💾 Clean Code: A Handbook of Agile Software Craftsmanship](../books/clean-code.md) by Robert C. Martin:** For the software engineer in you, this book provides practical advice on writing maintainable and efficient code.  
   
 **System Thinking:**  
   
-* **"[Thinking in Systems](/content/books/thinking-in-systems.md): A Primer" by Donella H. Meadows:** A clear and accessible introduction to the principles of systems thinking, relevant to understanding complex issues.  
-* **"[The Fifth Discipline](/content/books/the-fifth-discipline.md): The Art & Practice of The Learning Organization" by Peter M. Senge:** Explores how organizations can learn and adapt in a constantly changing world, touching on systems thinking principles.  
+* **"[Thinking in Systems](../books/thinking-in-systems.md): A Primer" by Donella H. Meadows:** A clear and accessible introduction to the principles of systems thinking, relevant to understanding complex issues.  
+* **"[The Fifth Discipline](../books/the-fifth-discipline.md): The Art & Practice of The Learning Organization" by Peter M. Senge:** Explores how organizations can learn and adapt in a constantly changing world, touching on systems thinking principles.  
   
 **Democracy & Current Events:**  
   
-* **[🗳️🏛️☠️ How Democracies Die](/content/books/how-democracies-die.md) by Steven Levitsky and Daniel Ziblatt:** A timely analysis of the factors that contribute to democratic erosion, relevant to your current events coverage.  
-* **"[On Tyranny: Twenty Lessons from the Twentieth Century](/content/books/on-tyranny.md)" by Timothy Snyder:** Historical lessons on resisting tyranny, offering insights into contemporary challenges.  
+* **[🗳️🏛️☠️ How Democracies Die](../books/how-democracies-die.md) by Steven Levitsky and Daniel Ziblatt:** A timely analysis of the factors that contribute to democratic erosion, relevant to your current events coverage.  
+* **"[On Tyranny: Twenty Lessons from the Twentieth Century](../books/on-tyranny.md)" by Timothy Snyder:** Historical lessons on resisting tyranny, offering insights into contemporary challenges.  
   
 **Parenting (Given the hints):**  
   
-* **[🕳️🧠👶🏽 The Whole-Brain Child: 12 Revolutionary Strategies to Nurture Your Child's Developing Mind](/content/books/the-whole-brain-child.md) by Daniel J. Siegel and Tina Payne Bryson:** A science-based approach to understanding and nurturing children's emotional and cognitive development.  
-* **[📗🚀🌍 Operating Manual for Spaceship Earth](/content/books/operating-manual-for-spaceship-earth.md) by Buckminster Fuller:** This book is a radical call to action to create a sustainable environment. It is a good book to read to understand the world that babies will inherit.  
+* **[🕳️🧠👶🏽 The Whole-Brain Child: 12 Revolutionary Strategies to Nurture Your Child's Developing Mind](../books/the-whole-brain-child.md) by Daniel J. Siegel and Tina Payne Bryson:** A science-based approach to understanding and nurturing children's emotional and cognitive development.  
+* **[📗🚀🌍 Operating Manual for Spaceship Earth](../books/operating-manual-for-spaceship-earth.md) by Buckminster Fuller:** This book is a radical call to action to create a sustainable environment. It is a good book to read to understand the world that babies will inherit.  
   
 Given your use of Obsidian and templates, you might also find books on productivity and workflow optimization helpful, but I've focused on the thematic elements of your blog.  
   

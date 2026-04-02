@@ -7,8 +7,11 @@ share: true
 affiliate link: https://amzn.to/4nof1uB
 CTA: Confront injustice.
 updated: 2026-03-20T12:11:10.857Z
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_time: 2026-04-01T00:00:00Z
+force_analyze_links: false
 ---
-[Home](/content/index.md) > [Books](/content/books/index.md)  
+[Home](../index.md) > [Books](./index.md)  
 # 🏚️💰 Evicted: Poverty and Profit in the American City  
 [🛒 Evicted: Poverty and Profit in the American City. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4nof1uB)  
   
@@ -62,8 +65,8 @@ Evicted: 🏘️ Poverty and 💰 Profit in the 🇺🇸 American City by 🧑�
   
 * 🏛️ ***The Color of Law: A Forgotten History of How Our Government Segregated America*** by 🧑‍🏫 Richard Rothstein: 🎯 Focuses on the 📜 historical and 📜 policy-driven creation of 🧑‍🤝‍🧑 racial segregation in 🏠 housing, providing crucial context for the ⚖️ inequalities seen in *📖 Evicted*.  
 * ⛰️ ***Hillbilly Elegy: A Memoir of a Family and Culture in Crisis*** by 🧑‍🏫 J.D. Vance: Offers a first-person account of 📉 poverty and social issues in working-class white 🇺🇸 America, providing a different geographic and cultural perspective than *📖 Evicted*'s 🏙️ urban setting.  
-* **[💰📈🌍⏳ Capital in the Twenty-First Century](/content/books/capital-in-the-twenty-first-century.md)** by 🧑‍🏫 Thomas Piketty: A sweeping economic analysis of 💰 wealth ⚖️ inequality, offering a macro-level perspective on the forces that contribute to the disparities detailed in *📖 Evicted*.  
-* **[🧑🏿⛓️🙈 The New Jim Crow: Mass Incarceration in the Age of Colorblindness](/content/books/the-new-jim-crow-mass-incarceration-in-the-age-of-colorblindness.md)** by 🧑‍🏫 Michelle Alexander: 🔎 Explores the impact of the ⚖️ criminal justice system on Black communities, a system that intersects with 🏠 housing instability and 📉 poverty.  
+* **[💰📈🌍⏳ Capital in the Twenty-First Century](./capital-in-the-twenty-first-century.md)** by 🧑‍🏫 Thomas Piketty: A sweeping economic analysis of 💰 wealth ⚖️ inequality, offering a macro-level perspective on the forces that contribute to the disparities detailed in *📖 Evicted*.  
+* **[🧑🏿⛓️🙈 The New Jim Crow: Mass Incarceration in the Age of Colorblindness](./the-new-jim-crow-mass-incarceration-in-the-age-of-colorblindness.md)** by 🧑‍🏫 Michelle Alexander: 🔎 Explores the impact of the ⚖️ criminal justice system on Black communities, a system that intersects with 🏠 housing instability and 📉 poverty.  
 * 🏘️ ***Palaces for the People: How Social Infrastructure Can Help Fight Inequality, Polarization, and the Decline of Civic Life*** by 🧑‍🏫 Eric Klinenberg: Argues for the 🗝️ importance of shared spaces like 📚 libraries, 🏞️ parks, and 🏘️ community centers in fostering social connection and resilience, offering a different kind of 🔑 solution-oriented perspective on 🏙️ urban life and ⚖️ inequality.  
   
 ### 🎨 Creatively Related Books (🔗 Connecting through 🎭 Fiction, 📜 History, or 🌐 Broader Social Issues)  
@@ -75,7 +78,7 @@ Evicted: 🏘️ Poverty and 💰 Profit in the 🇺🇸 American City by 🧑�
 * 🤰 ***This Is All I Got: A New Mother's Search for Home*** by 🧑‍🏫 Lauren Sandler: Follows a 🤰 young mother navigating homelessness in 📍 New York City, offering another intimate look at 🏠 housing insecurity and the challenges faced by 👨‍👩‍👧‍👦 families.  
 * 🧑‍🤝‍🧑 ***Women, Race & Class*** by 🧑‍🏫 Angela Y. Davis: A collection of essays examining the interconnectedness of various forms of oppression, providing a theoretical framework for understanding the intersecting disadvantages faced by individuals in *📖 Evicted*.  
   
-## 💬 [Gemini](/content/software/gemini.md) Prompt (gemini-2.5-flash-preview-04-17)  
+## 💬 [Gemini](../software/gemini.md) Prompt (gemini-2.5-flash-preview-04-17)  
 > Write a markdown-formatted (start headings at level H2) book report, followed by a plethora of additional similar, contrasting, and creatively related book recommendations on Evicted: Poverty and Profit in the American City. Be thorough in content discussed but concise and economical with your language. Structure the report with section headings and bulleted lists to avoid long blocks of text.  
   
 ## 🦋 Bluesky    

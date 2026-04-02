@@ -8,7 +8,7 @@ Author:
 tags:
 affiliate link: https://amzn.to/4knXcKd
 ---
-[Home](/content/index.md) > [Books](/content/books/index.md)  
+[Home](../index.md) > [Books](./index.md)  
 # 📗🚀🌍 Operating Manual for Spaceship Earth  
 [🛒 Operating Manual for Spaceship Earth. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4knXcKd)  
   
@@ -48,23 +48,23 @@ affiliate link: https://amzn.to/4knXcKd
 ## 📚 Further Reading Recommendations 📖  
   
 ### 🤝 Similar Perspectives: Systems Thinking and Global Solutions 🌎  
-* **[🌐🔗🧠📖 Thinking in Systems: A Primer](/content/books/thinking-in-systems.md) by Donella H. Meadows:** 📚 A foundational and highly accessible text explaining systems thinking concepts, complementing Fuller's holistic approach. 👩‍🔬 Meadows was a lead author of *Limits to Growth*.  
+* **[🌐🔗🧠📖 Thinking in Systems: A Primer](./thinking-in-systems.md) by Donella H. Meadows:** 📚 A foundational and highly accessible text explaining systems thinking concepts, complementing Fuller's holistic approach. 👩‍🔬 Meadows was a lead author of *Limits to Growth*.  
 * 🔑 **_Critical Path_ by R. Buckminster Fuller:** 💡 A later, more detailed work expanding on Fuller's ideas for global problem-solving, technological evolution, and historical perspectives.  
 * 🤔 **_Utopia or Oblivion: The Prospects for Humanity_ by R. Buckminster Fuller:** 🌍 Another collection of Fuller's essays exploring similar themes of technological potential, design science, and the critical choices facing humanity.  
-* **[🤏🧑 Small Is Beautiful: Economics as if People Mattered](/content/books/small-is-beautiful-economics-as-if-people-mattered.md) by E. F. Schumacher:** 💰 While focused on economics, it shares Fuller's critique of large-scale industrial systems and advocates for human-scale, sustainable technologies.  
+* **[🤏🧑 Small Is Beautiful: Economics as if People Mattered](./small-is-beautiful-economics-as-if-people-mattered.md) by E. F. Schumacher:** 💰 While focused on economics, it shares Fuller's critique of large-scale industrial systems and advocates for human-scale, sustainable technologies.  
 * ♻️ **_Cradle to Cradle: Remaking the Way We Make Things_ by William McDonough & Michael Braungart:** 🛠️ Focuses on practical design principles for a sustainable future, echoing Fuller's call for a design revolution by rethinking materials and industrial processes to eliminate waste.  
   
 ### ⚖️ Contrasting Viewpoints: Critiques and Alternatives 🙅‍♀️  
-* **[📉🌍⏳ Limits to Growth](/content/books/limits-to-growth-the-30-year-global-update.md) by Donella H. Meadows, Dennis L. Meadows, Jørgen Randers, and William W. Behrens III:** ⚠️ While sharing concerns about resource limits, this work uses computer modeling to present a potentially more pessimistic outlook based on then-current trends, contrasting with Fuller's technological optimism.  
+* **[📉🌍⏳ Limits to Growth](./limits-to-growth-the-30-year-global-update.md) by Donella H. Meadows, Dennis L. Meadows, Jørgen Randers, and William W. Behrens III:** ⚠️ While sharing concerns about resource limits, this work uses computer modeling to present a potentially more pessimistic outlook based on then-current trends, contrasting with Fuller's technological optimism.  
 * 💻 **_Technopoly: The Surrender of Culture to Technology_ by Neil Postman:** 🤔 Offers a critical perspective on the unquestioned embrace of technology, questioning whether technological progress always leads to human betterment, a counterpoint to Fuller's faith in design science.  
 * 🏚️ **_Collapse: How Societies Choose to Fail or Succeed_ by Jared Diamond:** 📜 Examines historical societal collapses, often linking them to environmental mismanagement and inflexible social structures, providing case studies that challenge purely optimistic or technologically deterministic views of societal survival.  
 * 🔥 **_This Changes Everything: Capitalism vs. The Climate_ by Naomi Klein:** 🌍 Argues that the climate crisis requires fundamental changes to capitalist economic structures, contrasting with Fuller's primary focus on technological and design solutions over political economy.  
   
 ### 🎨 Creatively Related: Expanding the Context 🗺️  
-* 🧑‍🤝‍🧑 **[Sapiens: A Brief History of Humankind](/content/books/sapiens-a-brief-history-of-humankind.md) by Yuval Noah Harari:** 📜 Provides a broad historical sweep similar to parts of Fuller's narrative but from an anthropological and historical perspective, exploring humanity's development and its impact on the planet.  
-* **[🏍️🧘❓ Zen and the Art of Motorcycle Maintenance: An Inquiry into Values](/content/books/zen-and-the-art-of-motorcycle-maintenance-an-inquiry-into-values.md) by Robert M. Pirsig:** ⚙️ Explores themes of technology, quality, and different ways of understanding the world, touching upon the integration of technology and human values, albeit in a more personal, philosophical narrative style.  
-* 🌱 **[🦋 Emergent Strategy: Shaping Change, Changing Worlds](/content/books/emergent-strategy.md) by adrienne maree brown:** 🤝 Explores systems thinking through the lens of natural patterns, adaptation, and social justice movements, offering a different, perhaps more organic, approach to large-scale change.  
-* 🚀 **Science Fiction exploring resource management and closed systems:** 👽 Works like Kim Stanley Robinson's *Mars Trilogy* (terraforming and resource management) or Andy Weir's [👨‍🚀🔴✨ The Martian](/content/books/the-martian.md) (resourcefulness in a hostile, closed environment) explore fictional scenarios that resonate with the "Spaceship Earth" concept.  
+* 🧑‍🤝‍🧑 **[Sapiens: A Brief History of Humankind](./sapiens-a-brief-history-of-humankind.md) by Yuval Noah Harari:** 📜 Provides a broad historical sweep similar to parts of Fuller's narrative but from an anthropological and historical perspective, exploring humanity's development and its impact on the planet.  
+* **[🏍️🧘❓ Zen and the Art of Motorcycle Maintenance: An Inquiry into Values](./zen-and-the-art-of-motorcycle-maintenance-an-inquiry-into-values.md) by Robert M. Pirsig:** ⚙️ Explores themes of technology, quality, and different ways of understanding the world, touching upon the integration of technology and human values, albeit in a more personal, philosophical narrative style.  
+* 🌱 **[🦋 Emergent Strategy: Shaping Change, Changing Worlds](./emergent-strategy.md) by adrienne maree brown:** 🤝 Explores systems thinking through the lens of natural patterns, adaptation, and social justice movements, offering a different, perhaps more organic, approach to large-scale change.  
+* 🚀 **Science Fiction exploring resource management and closed systems:** 👽 Works like Kim Stanley Robinson's *Mars Trilogy* (terraforming and resource management) or Andy Weir's [👨‍🚀🔴✨ The Martian](./the-martian.md) (resourcefulness in a hostile, closed environment) explore fictional scenarios that resonate with the "Spaceship Earth" concept.  
   
-## 💬 [Gemini](/content/software/gemini.md) Prompt (gemini-2.5-pro-exp-03-25)  
+## 💬 [Gemini](../software/gemini.md) Prompt (gemini-2.5-pro-exp-03-25)  
 > Write a markdown-formatted (start headings at level H2) book report, followed by a plethora of additional similar, contrasting, and creatively related book recommendations on Operating Manual for Spaceship Earth. Be thorough in content discussed but concise and economical with your language. Structure the report with section headings and bulleted lists to avoid long blocks of text.

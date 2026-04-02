@@ -6,8 +6,11 @@ URL: https://bagrounds.org/books/the-new-climate-war-the-fight-to-take-back-our-
 share: true
 CTA: 💪 Confront obstruction.
 affiliate link: https://amzn.to/4rDB1Dz
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_time: 2026-04-01T00:00:00Z
+force_analyze_links: false
 ---
-[Home](/content/index.md) > [Books](/content/books/index.md)  
+[Home](../index.md) > [Books](./index.md)  
 # 🔥🌎⚔️ The New Climate War: The Fight to Take Back Our Planet  
 [🛒 The New Climate War: The Fight to Take Back Our Planet. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4rDB1Dz)  
   
@@ -76,14 +79,14 @@ affiliate link: https://amzn.to/4rDB1Dz
 ### ➕ Similar  
 * 🏒 **The Hockey Stick and the Climate Wars** by Michael E. Mann: Mann's earlier work detailing his personal experiences fighting climate change denial.  
 * ⏳ **Losing Earth: A Recent History** by Nathaniel Rich: A narrative account of the decade when climate change became clear, but action faltered.  
-* **[💰🤥 Merchants of Doubt](/content/books/merchants-of-doubt.md)** by Naomi Oreskes and Erik M. Conway: Exposes how a handful of scientists obscured the truth on issues from tobacco smoke to global warming.  
+* **[💰🤥 Merchants of Doubt](./merchants-of-doubt.md)** by Naomi Oreskes and Erik M. Conway: Exposes how a handful of scientists obscured the truth on issues from tobacco smoke to global warming.  
   
 ### ➖ Contrasting  
-* **[🌍🔥💡 How to Avoid a Climate Disaster: The Solutions We Have and the Breakthroughs We Need](/content/books/how-to-avoid-a-climate-disaster-the-solutions-we-have-and-the-breakthroughs-we-need.md)** by Bill Gates: Focuses on technological innovation and market-based solutions, often more optimistic about carbon capture.  
+* **[🌍🔥💡 How to Avoid a Climate Disaster: The Solutions We Have and the Breakthroughs We Need](./how-to-avoid-a-climate-disaster-the-solutions-we-have-and-the-breakthroughs-we-need.md)** by Bill Gates: Focuses on technological innovation and market-based solutions, often more optimistic about carbon capture.  
 * 🚨 **Apocalypse Never: Why Environmental Alarmism Hurts Us All** by Michael Shellenberger: Argues against climate alarmism and advocates for nuclear power and adaptation.  
   
 ### ♻️ Related  
-* **[🍩🌍 Doughnut Economics: Seven Ways to Think Like a 21st-Century Economist](/content/books/doughnut-economics-seven-ways-to-think-like-a-21st-century-economist.md)** by Kate Raworth: Explores a new economic model for sustainable development.  
+* **[🍩🌍 Doughnut Economics: Seven Ways to Think Like a 21st-Century Economist](./doughnut-economics-seven-ways-to-think-like-a-21st-century-economist.md)** by Kate Raworth: Explores a new economic model for sustainable development.  
 * 🧘 **Active Hope: How to Face the Mess We're in Without Going Crazy** by Joanna Macy and Chris Johnstone: Offers psychological tools for engaging with environmental crises.  
 * 🔥 **The Uninhabitable Earth: Life After Warming** by David Wallace-Wells: A stark exploration of the potential impacts of climate change, often cited for its doomist tendencies.  
   

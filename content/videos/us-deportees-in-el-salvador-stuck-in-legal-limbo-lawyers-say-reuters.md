@@ -9,7 +9,7 @@ Platform:
 Channel: Reuters
 tags:
 ---
-[Home](/content/index.md) > [Videos](/content/videos/index.md)  
+[Home](../index.md) > [Videos](./index.md)  
 # US deportees in El Salvador stuck in legal limbo, lawyers say | REUTERS  
 ![US deportees in El Salvador stuck in legal limbo, lawyers say | REUTERS](https://youtu.be/O27Lew8dU8M)  
   

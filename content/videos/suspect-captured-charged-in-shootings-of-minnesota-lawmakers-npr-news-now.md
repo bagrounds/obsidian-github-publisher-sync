@@ -10,7 +10,7 @@ Channel: NPR
 tags:
 youtube: https://youtu.be/1t1KbqguXz8
 ---
-[Home](/content/index.md) > [Videos](/content/videos/index.md)  
+[Home](../index.md) > [Videos](./index.md)  
 # 👤💀🏛️🚓 Suspect Captured, Charged In Shootings Of Minnesota Lawmakers | NPR News Now  
 ![Suspect Captured, Charged In Shootings Of Minnesota Lawmakers | NPR News Now](https://youtu.be/1t1KbqguXz8)  
   
@@ -43,15 +43,15 @@ youtube: https://youtu.be/1t1KbqguXz8
   
 **On US Immigration Policy and Agricultural Labor:**  
 * 🛂 **"Impossible Subjects: Illegal Aliens and the Making of Modern America"** by Mae M. Ngai: Examines the historical construction of "illegality" in U.S. immigration 🇺🇸.  
-* **[🌊🌎 One Mighty and Irresistible Tide: The Epic Struggle Over American Immigration, 1924-1965](/content/books/one-mighty-and-irresistible-tide-the-epic-struggle-over-american-immigration-1924-1965.md)** by Jia Lynn Yang: A history of 20th-century American immigration law reform.  
-* **[🚫📄🇺🇸 The Undocumented Americans](/content/books/the-undocumented-americans.md)** by Karla Cornejo Villavicencio: Offers personal stories and insights into the lives of undocumented immigrants.  
+* **[🌊🌎 One Mighty and Irresistible Tide: The Epic Struggle Over American Immigration, 1924-1965](../books/one-mighty-and-irresistible-tide-the-epic-struggle-over-american-immigration-1924-1965.md)** by Jia Lynn Yang: A history of 20th-century American immigration law reform.  
+* **[🚫📄🇺🇸 The Undocumented Americans](../books/the-undocumented-americans.md)** by Karla Cornejo Villavicencio: Offers personal stories and insights into the lives of undocumented immigrants.  
 * 📖 **"Under the Feet of Jesus"** by Helena María Viramontes: A novel that evokes the physical and emotional experiences of farmworkers 🧑‍🌾.  
 * 📝 **"All They Will Call You"** by Tim Z. Hernandez: Researches and reconstructs the lives of Mexican field workers killed in a 1948 plane crash ✈️. This book is a testament to their lives, giving voice to those often forgotten.  
 * 👦 **"The Circuit: Stories from the Life of a Migrant Child"** by Francisco Jiménez: Autobiographical stories detailing a childhood of migrant farm work and schooling 🎒.  
   
 **On Political Violence and Targeting of Lawmakers in the US:**  
 * 🏛️ **"Political Assassinations and Attempts in US History: The Encyclopedia"** by James W. Clarke: Provides a comprehensive overview of assassination attempts and successes in U.S. history 🇺🇸, offering context on political violence 💥.  
-* **[🏛️⛓️ Democracy in Chains: The Deep History of the Radical Right's Stealth Plan for America](/content/books/democracy-in-chains-the-deep-history-of-the-radical-rights-stealth-plan-for-america.md)** by Nancy MacLean: While not directly about physical violence, this book explores ideological conflicts and strategies that can lead to extreme political polarization 😠.  
+* **[🏛️⛓️ Democracy in Chains: The Deep History of the Radical Right's Stealth Plan for America](../books/democracy-in-chains-the-deep-history-of-the-radical-rights-stealth-plan-for-america.md)** by Nancy MacLean: While not directly about physical violence, this book explores ideological conflicts and strategies that can lead to extreme political polarization 😠.  
 * ⚠️ **"It Can Happen Here: Why America Is Tipping from Hate to the Unthinkable"** by Jonathan Greenblatt: Discusses the rising tide 🌊 of extremism and hate in America and its potential consequences, including violence 😔.  
   
 **On Disaster Management and Climate Change:**  

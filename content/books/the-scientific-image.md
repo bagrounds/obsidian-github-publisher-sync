@@ -7,7 +7,7 @@ share: true
 affiliate link: https://amzn.to/44x9iLz
 CTA: 🔬 Question everything.
 ---
-[Home](/content/index.md) > [Books](/content/books/index.md)  
+[Home](../index.md) > [Books](./index.md)  
 # 🧪👁️ The Scientific Image  
 [🛒 The Scientific Image. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/44x9iLz)  
   
@@ -54,12 +54,12 @@ Van Fraassen's approach involves a critique of scientific realism, challenging i
   
 ### 🎨 Creatively Related Reads (Nature of Knowledge, Observation, Scientific Practice)  
   
-* **[🔬🔄 The Structure of Scientific Revolutions](/content/books/the-structure-of-scientific-revolutions.md)** by Thomas S. Kuhn: While not directly about realism, Kuhn's work on paradigm shifts and the incommensurability of scientific theories profoundly impacted how the scientific enterprise is viewed, influencing discussions about the nature of scientific knowledge and progress. 📖  
+* **[🔬🔄 The Structure of Scientific Revolutions](./the-structure-of-scientific-revolutions.md)** by Thomas S. Kuhn: While not directly about realism, Kuhn's work on paradigm shifts and the incommensurability of scientific theories profoundly impacted how the scientific enterprise is viewed, influencing discussions about the nature of scientific knowledge and progress. 📖  
 * 🧑‍🔬 **Science in Action: How to Follow Scientists and Engineers Through Society** by Bruno Latour: Approaches science from a sociological perspective, examining how scientific facts are constructed through social practices and networks. Offers a different lens on the "scientific image" by focusing on the practical, situated nature of scientific work. 👥  
 * ⚛️ **Physics and Philosophy: The Revolution in Modern Science** by Werner Heisenberg: Written by one of the pioneers of quantum mechanics, this book reflects on the philosophical implications of modern physics, touching on the nature of observation, reality, and the limits of classical intuition. Provides a scientist's perspective on fundamental concepts relevant to the interpretation of scientific theories. 💭  
 * 🤔 **Science and Hypothesis** by Henri Poincaré: An older classic exploring the role of convention and hypothesis in science, prefiguring some later discussions about the relationship between theories and empirical data. ❓  
-* **[🤔🔬 The Logic of Scientific Discovery](/content/books/the-logic-of-scientific-discovery.md)** by Karl Popper: Presents falsificationism as a criterion for demarcating science from non-science, offering a different perspective on the aims and methods of science compared to both realism and constructive empiricism. 🔍  
+* **[🤔🔬 The Logic of Scientific Discovery](./the-logic-of-scientific-discovery.md)** by Karl Popper: Presents falsificationism as a criterion for demarcating science from non-science, offering a different perspective on the aims and methods of science compared to both realism and constructive empiricism. 🔍  
 * 🌌 **Philosophy and the Scientific Image of Man** by Wilfrid Sellars: The essay that introduced the concepts of the "manifest image" and the "scientific image," providing the background for van Fraassen's title and offering a broader philosophical context for considering the relationship between our everyday understanding of the world and the scientific one. 🌠  
   
-## 💬 [Gemini](/content/software/gemini.md) Prompt (gemini-2.5-flash-preview-04-17)  
+## 💬 [Gemini](../software/gemini.md) Prompt (gemini-2.5-flash-preview-04-17)  
 > Write a markdown-formatted (start headings at level H2) book report, followed by a plethora of additional similar, contrasting, and creatively related book recommendations on The Scientific Image. Be thorough in content discussed but concise and economical with your language. Structure the report with section headings and bulleted lists to avoid long blocks of text.

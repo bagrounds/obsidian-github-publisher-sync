@@ -6,7 +6,7 @@ URL: https://bagrounds.org/books/blog-inc-blogging-for-passion-profit-and-to-cre
 share: true
 affiliate link: https://amzn.to/43GdDdr
 ---
-[Home](/content/index.md) > [Books](/content/books/index.md)  
+[Home](../index.md) > [Books](./index.md)  
 # ✍️💻💰 Blog, Inc.: Blogging for Passion, Profit, and to Create Community  
 [🛒 Blog, Inc.: Blogging for Passion, Profit, and to Create Community. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/43GdDdr)  
   
@@ -62,7 +62,7 @@ The book explores several core areas of blogging:
 ### Contrasting Books (Different Angles/Critiques)  
 * **🙋 They Ask You Answer** by Marcus Sheridan: 📖 Focuses intensely on content marketing strategy driven by answering customer questions, applicable beyond traditional blogging.  
 * **🏢 Company of One** by Paul Jarvis: 📖 Challenges the assumption that bigger is always better, advocating for building sustainable, small, lifestyle-focused businesses (relevant for solo bloggers).  
-* **[🤿💼 Deep Work](/content/books/deep-work.md)** by Cal Newport: 📖 Not about blogging *per se*, but essential for anyone needing focused concentration to create high-quality content in a distracted world.  
+* **[🤿💼 Deep Work](./deep-work.md)** by Cal Newport: 📖 Not about blogging *per se*, but essential for anyone needing focused concentration to create high-quality content in a distracted world.  
 * **🧑‍💻 Working in Public: The Making and Maintenance of Open Source Software** by Nadia Eghbal: 📖 While focused on open source, it provides deep insights into online collaboration and community dynamics that contrast with typical blogging guides.  
 * **📰 An Ugly Truth: Inside Facebook's Battle for Domination** by Sheera Frenkel & Cecilia Kang: 📖 Explores the darker side and ethical challenges of large social platforms, offering a critical perspective on the online ecosystem where blogs exist.  
   
@@ -71,10 +71,10 @@ The book explores several core areas of blogging:
 * **🐝 Buzzing Communities** by Richard Millington: 📖 A practical guide focused specifically on building and managing active online communities.  
 * **🏘️ Building Successful Online Communities: Evidence-Based Social Design** by Robert E. Kraut et al.: 📖 A research-backed guide to designing effective online communities.  
 * **🎨 Creative Confidence** by Tom Kelley & David Kelley: 📖 A guide to unlocking creative potential, useful for generating blog ideas and overcoming creative blocks.  
-* **[🌍✍🏿 Everybody Writes: Your Go-To Guide to Creating Ridiculously Good Content](/content/books/everybody-writes.md)** by Ann Handley: 📖 A go-to guide for improving writing skills for online content, emphasizing quality and clarity.  
+* **[🌍✍🏿 Everybody Writes: Your Go-To Guide to Creating Ridiculously Good Content](./everybody-writes.md)** by Ann Handley: 📖 A go-to guide for improving writing skills for online content, emphasizing quality and clarity.  
 * **🌟 Superfans** by Pat Flynn: 📖 Focuses on building a loyal audience and dedicated fanbase, essential for long-term blogging success.  
 * 👩‍💼 `#`GIRLBOSS by Sophia Amoruso: 📖 An inspirational (though sometimes controversial) story about building an online business from scratch.  
 * **🤝 Get Together: How to Build a Community With Your People** by Bailey Richardson, Kevin Huynh, Kai Elmer Sotto: 📖 Offers practical steps and case studies for building communities around shared interests.  
   
-## 💬 [Gemini](/content/software/gemini.md) Prompt (gemini-2.5-pro-exp-03-25)  
+## 💬 [Gemini](../software/gemini.md) Prompt (gemini-2.5-pro-exp-03-25)  
 > Write a markdown-formatted (start headings at level H2) book report, followed by a plethora of additional similar, contrasting, and creatively related book recommendations on Blog, Inc.: Blogging for Passion, Profit, and to Create Community. Be thorough in content discussed but concise and economical with your language. Structure the report with section headings and bulleted lists to avoid long blocks of text.

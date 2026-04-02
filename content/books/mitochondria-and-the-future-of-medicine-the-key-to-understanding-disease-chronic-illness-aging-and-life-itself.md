@@ -6,7 +6,7 @@ URL: https://bagrounds.org/books/mitochondria-and-the-future-of-medicine-the-key
 share: true
 affiliate link: https://amzn.to/4kk6nuX
 ---
-[Home](/content/index.md) > [Books](/content/books/index.md)  
+[Home](../index.md) > [Books](./index.md)  
 # 🔋⚕️⏳ Mitochondria and the Future of Medicine: The Key to Understanding Disease, Chronic Illness, Aging, and Life Itself  
 [🛒 Mitochondria and the Future of Medicine: The Key to Understanding Disease, Chronic Illness, Aging, and Life Itself. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4kk6nuX)  
   
@@ -54,19 +54,19 @@ affiliate link: https://amzn.to/4kk6nuX
 * 🩺 **Mitochondrial Dysfunction: A Functional Medicine Approach to Diagnosis and Treatment: Get Rid of Fat, Fatigue, and Brain Fog** by Michael T. Chang: Focuses on a functional medicine perspective to diagnosing and treating mitochondrial issues.  
 * 💧 **NADH: The Biological Hydrogen** by George D. Birkmayer: Explores the role of NADH in cellular energy.  
 * 🗝️ **Your Mitochondria: Key to Health and Longevity** (Author not specified in snippets, but aligns thematically).  
-* **[🍎⚡ Eat for Energy: How to Beat Fatigue, Supercharge Your Mitochondria, and Unlock All-Day Energy](/content/books/eat-for-energy-how-to-beat-fatigue-supercharge-your-mitochondria-and-unlock-all-day-energy.md)** by Ari Whitten: Focuses on nutrition and lifestyle to boost mitochondrial function and energy.  
+* **[🍎⚡ Eat for Energy: How to Beat Fatigue, Supercharge Your Mitochondria, and Unlock All-Day Energy](./eat-for-energy-how-to-beat-fatigue-supercharge-your-mitochondria-and-unlock-all-day-energy.md)** by Ari Whitten: Focuses on nutrition and lifestyle to boost mitochondrial function and energy.  
 * ⚛️ **Life - The Epic Story of Our Mitochondria** by Lee Know: An earlier work by the same author, likely covering foundational concepts.  
 * 🔬 **Mitochondrial Medicine: Volume I & II** edited by Volkmar Weissig and Marvin Edeas: Comprehensive and practical volumes for researchers, discussing the strategic role of mitochondria in health and disease, and how to evaluate and manipulate mitochondrial function.  
   
 ### ⚖️ Contrasting or Complementary Perspectives (Broader Health & Medicine):  
 * 🎗️ **The Metabolic Approach to Cancer** by Dr. Nasha Winters and Jess Higgins Kelley: Co-authored by a practitioner who endorsed Know's book, this likely offers a broader metabolic view on a specific disease.  
 * ☣️ **Toxic Legacy** by Stephanie Seneff: By a researcher who also endorsed Know's book, this book likely explores environmental toxins and their impact on health, which can relate to mitochondrial function.  
-* **[⚡❤️‍🩹 Good Energy: The Surprising Connection Between Metabolism and Limitless Health](/content/books/good-energy-the-surprising-connection-between-metabolism-and-limitless-health.md)** by Dr. Casey Means: Connects metabolic health, blood sugar control, and cellular health to overall well-being, with a unique perspective linking cellular health to broader issues like soil biodiversity and healthcare incentives.  
+* **[⚡❤️‍🩹 Good Energy: The Surprising Connection Between Metabolism and Limitless Health](./good-energy-the-surprising-connection-between-metabolism-and-limitless-health.md)** by Dr. Casey Means: Connects metabolic health, blood sugar control, and cellular health to overall well-being, with a unique perspective linking cellular health to broader issues like soil biodiversity and healthcare incentives.  
 * 🧪 **Understanding Cellular Metabolism: Nutrition, health and beauty** by Leonard Sonnenschein: Presents a new theory that the cell is controlled by the cell wall rather than the nucleus and discusses nutrient absorption for wellness, beauty, and longevity.  
 * 🔬 **Cellular Metabolism in Health and Disease** by Christian Stokes: Focuses on how deregulation of cellular bioenergetics leads to various pathologies like neurodegenerative diseases, cancer, and diabetes.  
   
 ### ⏳ Books on Aging and Longevity Science:  
-* ⚕️ **[Outlive](/content/books/outlive.md): The Science and Art of Longevity** by Peter Attia, MD: Challenges conventional medical thinking on aging and offers a strategy for preventing chronic disease and extending long-term health by teaching readers how to think about long-term health.  
+* ⚕️ **[Outlive](./outlive.md): The Science and Art of Longevity** by Peter Attia, MD: Challenges conventional medical thinking on aging and offers a strategy for preventing chronic disease and extending long-term health by teaching readers how to think about long-term health.  
 * 🧬 **Ageless: The New Science of Getting Older Without Getting Old** by Andrew Steele: Explores revolutionary science in aging, genetics, gerontology, and medical research, discussing the potential of scientific advancements to prolong life and improve health.  
 * 🍎 **The Longevity Solution** by Dr. James DiNicolantonio and Dr. Jason Fung: Provides steps for a longer, healthier life by exploring wellness traditions like intermittent fasting and balanced diets.  
 * 🧘 **Healthy Aging** by Andrew Weil, M.D.: Focuses on an anti-inflammatory diet and separates fact from fiction regarding longevity solutions, also sharing exercise and stress-relief techniques.  
@@ -101,5 +101,5 @@ affiliate link: https://amzn.to/4kk6nuX
     * 📚 Books or chapters on **Mitochondrial Diseases** or **Diseases of Mitochondrial Metabolism**, which detail specific conditions arising from mitochondrial dysfunction.  
     * 🧪 Works on **Mitochondrial Replacement Therapies**, discussing scientific and ethical aspects.  
   
-## 💬 [Gemini](/content/software/gemini.md) Prompt (gemini-2.5-pro-exp-03-25)  
+## 💬 [Gemini](../software/gemini.md) Prompt (gemini-2.5-pro-exp-03-25)  
 > Write a markdown-formatted (start headings at level H2) book report, followed by a plethora of additional similar, contrasting, and creatively related book recommendations on Mitochondria and the Future of Medicine: The Key to Understanding Disease, Chronic Illness, Aging, and Life Itself. Be thorough in content discussed but concise and economical with your language. Structure the report with section headings and bulleted lists to avoid long blocks of text.

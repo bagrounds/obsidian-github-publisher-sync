@@ -10,7 +10,7 @@ Channel: PBS NewsHour
 tags:
 youtube: https://youtu.be/ULWRcyk0o-o
 ---
-[Home](/content/index.md) > [Videos](/content/videos/index.md)  
+[Home](../index.md) > [Videos](./index.md)  
 # 🪖👨‍⚖️❓ Military personnel seek legal advice on whether Trump-ordered missions are lawful  
 ![Military personnel seek legal advice on whether Trump-ordered missions are lawful](https://youtu.be/ULWRcyk0o-o)  
   
@@ -50,7 +50,7 @@ youtube: https://youtu.be/ULWRcyk0o-o
   
 ### ↔️ Similar  
   
-* [😱🏛️ The Terror Presidency: Law and Judgment Inside the Bush Administration](/content/books/the-terror-presidency-law-and-judgment-inside-the-bush-administration.md) by Jack Goldsmith  
+* [😱🏛️ The Terror Presidency: Law and Judgment Inside the Bush Administration](../books/the-terror-presidency-law-and-judgment-inside-the-bush-administration.md) by Jack Goldsmith  
     * 📚 Explores the expansion of executive power and the internal legal arguments made within the Justice Department regarding national 🛡️ security and the war on terror, relating to executive overreach.  
   
 ### 🆚 Contrasting  

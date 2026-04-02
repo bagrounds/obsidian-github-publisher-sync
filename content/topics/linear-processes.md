@@ -5,7 +5,7 @@ aliases:
 title: ➕ Linear Processes
 URL: https://bagrounds.org/topics/linear-processes
 ---
-[Home](/content/index.md) > [Topics](/content/topics/index.md)  
+[Home](../index.md) > [Topics](./index.md)  
 # ➕ Linear Processes  
 Some processes have very nice properties.  
   

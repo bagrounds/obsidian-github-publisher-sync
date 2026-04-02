@@ -8,7 +8,7 @@ Author:
 tags:
 affiliate link: https://amzn.to/4kpswbq
 ---
-[Home](/content/index.md) > [Books](/content/books/index.md)  
+[Home](../index.md) > [Books](./index.md)  
 # ℹ️🌻 The Informed Gardener Blooms Again  
 [🛒 The Informed Gardener Blooms Again. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4kpswbq)  
   
@@ -50,8 +50,8 @@ affiliate link: https://amzn.to/4kpswbq
 ## 📚 Further Reading: 📖 Expanding Your Gardening Library  
   
 ### 🌿 Similar Reads (Science-Based & Myth-Busting)  
-* **[ℹ️🌱 The Informed Gardener](/content/books/the-informed-gardener.md)** by Linda Chalker-Scott: The essential first volume in this series, laying the groundwork for science-based gardening.  
-* **[🌿🔬 How Plants Work: The Science Behind the Amazing Things Plants Do](/content/books/how-plants-work.md)** by Linda Chalker-Scott: Delves deeper into plant physiology, explaining the biological processes relevant to gardeners.  
+* **[ℹ️🌱 The Informed Gardener](./the-informed-gardener.md)** by Linda Chalker-Scott: The essential first volume in this series, laying the groundwork for science-based gardening.  
+* **[🌿🔬 How Plants Work: The Science Behind the Amazing Things Plants Do](./how-plants-work.md)** by Linda Chalker-Scott: Delves deeper into plant physiology, explaining the biological processes relevant to gardeners.  
 * 🚫 **_Garden Myths (Book 1 & Book 2)_** by Robert Pavlis: Another excellent series dedicated to debunking common gardening misconceptions using scientific evidence.  
 * 🌱 **_Plant Science for Gardeners_** by Robert Pavlis: Focuses on the botanical science needed for successful gardening.  
 * 🌍 **_Soil Science for Gardeners_** by Robert Pavlis: Explains soil composition, health, and management from a scientific perspective.  
@@ -78,5 +78,5 @@ affiliate link: https://amzn.to/4kpswbq
 * ✂️ **_Easy Garden Projects_** (Country Gardens Magazine): Focuses on creative, hands-on garden crafts and constructions.  
 * 🪴 **_Urban Jungle: Living and Styling with Plants_** by Igor Josifovic & Judith de Graaff: Concentrates on indoor plants and creative ways to incorporate greenery into home decor.  
   
-## 💬 [Gemini](/content/software/gemini.md) Prompt (gemini-2.5-pro-exp-03-25)  
+## 💬 [Gemini](../software/gemini.md) Prompt (gemini-2.5-pro-exp-03-25)  
 > Write a markdown-formatted (start headings at level H2) book report, followed by a plethora of additional similar, contrasting, and creatively related book recommendations on The Informed Gardener Blooms Again. Be thorough in content discussed but concise and economical with your language. Structure the report with section headings and bulleted lists to avoid long blocks of text.

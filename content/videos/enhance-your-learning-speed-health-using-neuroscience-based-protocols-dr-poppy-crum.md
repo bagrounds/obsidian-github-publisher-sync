@@ -10,7 +10,7 @@ Channel: Andrew Huberman
 tags:
 youtube: https://youtu.be/MlmFj1-mOtg
 ---
-[Home](/content/index.md) > [Videos](/content/videos/index.md) | [🧠🫀👀🔬 Andrew Huberman](/content/people/andrew-huberman.md)  
+[Home](../index.md) > [Videos](./index.md) | [🧠🫀👀🔬 Andrew Huberman](../people/andrew-huberman.md)  
 # 🧠⬆️🍎🚀 Enhance Your Learning Speed & Health Using Neuroscience Based Protocols | Dr. Poppy Crum  
 ![Enhance Your Learning Speed & Health Using Neuroscience Based Protocols | Dr. Poppy Crum](https://youtu.be/MlmFj1-mOtg)  
   
@@ -32,11 +32,11 @@ youtube: https://youtu.be/MlmFj1-mOtg
   
 ## 📚 Book Recommendations  
 ### Similar  
-* **[👁️‍🗨️💰⛓️👤 The Age of Surveillance Capitalism: The Fight for a Human Future at the New Frontier of Power](/content/books/the-age-of-surveillance-capitalism.md)** by Shoshana Zuboff: Explores the **economic and social implications** of pervasive data monitoring, a similar theme to the video's discussion of **constant environmental and state-of-mind sensing**.  
-* **[🧠🗂️ The Organized Mind: Thinking Straight in the Age of Information Overload](/content/books/the-organized-mind-thinking-straight-in-the-age-of-information-overload.md)** by Daniel J. Levitin: Discusses how the **brain manages and processes information overload**, relating to the video's focus on **optimizing focus** through technological and environmental adjustments.  
+* **[👁️‍🗨️💰⛓️👤 The Age of Surveillance Capitalism: The Fight for a Human Future at the New Frontier of Power](../books/the-age-of-surveillance-capitalism.md)** by Shoshana Zuboff: Explores the **economic and social implications** of pervasive data monitoring, a similar theme to the video's discussion of **constant environmental and state-of-mind sensing**.  
+* **[🧠🗂️ The Organized Mind: Thinking Straight in the Age of Information Overload](../books/the-organized-mind-thinking-straight-in-the-age-of-information-overload.md)** by Daniel J. Levitin: Discusses how the **brain manages and processes information overload**, relating to the video's focus on **optimizing focus** through technological and environmental adjustments.  
 ### Contrasting  
-* **[🤿💼 Deep Work: Rules for Focused Success in a Distracted World](/content/books/deep-work.md)** by Cal Newport: Argues for the **elimination of technology and distraction** to achieve high-value focus, which directly contrasts with the video's premise of using **technology as an omnipresent tool for focus**.  
-* **[📺💀 Amusing Ourselves to Death: Public Discourse in the Age of Show Business](/content/books/amusing-ourselves-to-death-public-discourse-in-the-age-of-show-business.md)** by Neil Postman: Critiques the **adverse effects of mass media** on public discourse, offering a counterpoint to the video's positive view of **data compression's efficiency** in communication.  
+* **[🤿💼 Deep Work: Rules for Focused Success in a Distracted World](../books/deep-work.md)** by Cal Newport: Argues for the **elimination of technology and distraction** to achieve high-value focus, which directly contrasts with the video's premise of using **technology as an omnipresent tool for focus**.  
+* **[📺💀 Amusing Ourselves to Death: Public Discourse in the Age of Show Business](../books/amusing-ourselves-to-death-public-discourse-in-the-age-of-show-business.md)** by Neil Postman: Critiques the **adverse effects of mass media** on public discourse, offering a counterpoint to the video's positive view of **data compression's efficiency** in communication.  
 ### Creatively Related  
 * 🎶 **Musicophilia** by Oliver Sacks: A collection of clinical tales exploring the **relationship between the brain and music**, creatively related to Dr. Crum's background as a violinist and the discussion of her **specialized somatosensory cortex**.  
 * ♟️ **The Glass Bead Game** by Hermann Hesse: Presents a futuristic intellectual order focused on integrating all arts and sciences, which resonates with the idea of **technology creating an optimized, inter-connected learning environment**.

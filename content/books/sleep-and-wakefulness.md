@@ -6,7 +6,7 @@ URL: https://bagrounds.org/books/sleep-and-wakefulness
 share: true
 affiliate link: https://amzn.to/445lxxn
 ---
-[Home](/content/index.md) > [Books](/content/books/index.md)  
+[Home](../index.md) > [Books](./index.md)  
 # 😴🌞 Sleep and Wakefulness  
 [🛒 Sleep and Wakefulness. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/445lxxn)  
   
@@ -47,7 +47,7 @@ affiliate link: https://amzn.to/445lxxn
   
 ### 🔄 Contrasting/Different Perspectives  
   
-* **[😴💭 Why We Sleep: Unlocking the Power of Sleep and Dreams](/content/books/why-we-sleep-unlocking-the-power-of-sleep-and-dreams.md)** by Matthew Walker: 📣 A popular modern book that emphasizes the critical importance of sleep for health, cognition, and well-being, presenting a strong case for prioritizing sleep based on current scientific understanding.  
+* **[😴💭 Why We Sleep: Unlocking the Power of Sleep and Dreams](./why-we-sleep-unlocking-the-power-of-sleep-and-dreams.md)** by Matthew Walker: 📣 A popular modern book that emphasizes the critical importance of sleep for health, cognition, and well-being, presenting a strong case for prioritizing sleep based on current scientific understanding.  
 * 🌃 **Dreamland: Adventures in the Strange Science of Sleep** by David K. Randall: 🕵️ Explores the science and history of sleep through a journalistic lens, delving into sleep disorders and the societal impact of changing sleep patterns.  
 * 🤯 **The Nocturnal Brain: Nightmares, Neuroscience and the Secret World of Sleep** by Guy Leschziner: 🧐 Examines unusual sleep disorders and the neuroscience behind them through patient case studies.  
   
@@ -57,10 +57,10 @@ affiliate link: https://amzn.to/445lxxn
 * 🧘 **Exploring the World of Lucid Dreaming** by Stephen LaBerge: 👁️ Focuses on the phenomenon of lucid dreaming, where the dreamer is aware they are dreaming, delving into techniques and the potential applications of this state.  
 * 🧠 **When Brains Dream: Exploring the Science and Mystery of Sleep** by Antonio Zadra and Robert Stickgold: ✨ A modern look at the science of dreaming, moving beyond Freudian interpretations to explore what recent research reveals about the purpose and function of dreams.  
 * 🤝 **Sleeping, Dreaming, and Dying: An Exploration of Consciousness** (Edited by Francisco J. Varela): 🗣️ Records a dialogue between Western scientists and the Dalai Lama, exploring the nature of consciousness across different states, including sleep and dreams, from both scientific and contemplative perspectives.  
-* **[🌄⏳ The Circadian Code: Lose Weight, Supercharge Your Energy, and Transform Your Health from Morning to Midnight](/content/books/the-circadian-code.md)** by Satchin Panda: ⏰ Focuses on the importance of circadian rhythms, the body's internal clocks, for overall health and well-being, a concept fundamentally linked to Kleitman's work on sleep-wake cycles.  
+* **[🌄⏳ The Circadian Code: Lose Weight, Supercharge Your Energy, and Transform Your Health from Morning to Midnight](./the-circadian-code.md)** by Satchin Panda: ⏰ Focuses on the importance of circadian rhythms, the body's internal clocks, for overall health and well-being, a concept fundamentally linked to Kleitman's work on sleep-wake cycles.  
 * 🌍 **Wild Nights: How Taming Sleep Created Our Restless World** by Benjamin Reiss: 🌃 A cultural and historical look at how societal changes have transformed sleep practices and our relationship with sleep.  
   
-## 💬 [Gemini](/content/software/gemini.md) Prompt (gemini-2.5-flash-preview-04-17)  
+## 💬 [Gemini](../software/gemini.md) Prompt (gemini-2.5-flash-preview-04-17)  
 > Write a markdown-formatted (start headings at level H2) book report, followed by a plethora of additional similar, contrasting, and creatively related book recommendations on Sleep and Wakefulness by Nathaniel Kleitman. Be thorough in content discussed but concise and economical with your language. Structure the report with section headings and bulleted lists to avoid long blocks of text.  
   
 ## 🐦 Tweet  

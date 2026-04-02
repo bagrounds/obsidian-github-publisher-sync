@@ -7,8 +7,11 @@ URL: https://bagrounds.org/books/the-power-of-showing-up
 Author:
 tags:
 affiliate link: https://amzn.to/4kqoFea
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_time: 2026-04-02T00:00:00Z
+force_analyze_links: false
 ---
-[Home](/content/index.md) > [Books](/content/books/index.md)  
+[Home](../index.md) > [Books](./index.md)  
 # 🔌👋 The Power of Showing Up: How Parental Presence Shapes Who Our Kids Become and How Their Brains Get Wired  
 [🛒 The Power of Showing Up: How Parental Presence Shapes Who Our Kids Become and How Their Brains Get Wired. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4kqoFea)  
   
@@ -35,7 +38,7 @@ affiliate link: https://amzn.to/4kqoFea
   
 ### 🎯 Target Audience  
 * 👨‍👩‍👧‍👦 Parents, caregivers, educators, and anyone working with children.  
-* 🧠 Particularly valuable for those interested in [🫂💖 Attachment Theory](/content/topics/attachment-theory.md), mindful parenting, and understanding the neurological basis of child development.  
+* 🧠 Particularly valuable for those interested in [🫂💖 Attachment Theory](../topics/attachment-theory.md), mindful parenting, and understanding the neurological basis of child development.  
 * 🤔 Helpful for parents seeking foundational parenting principles and those reflecting on how their own upbringing influences their parenting.  
   
 ### 📢 Overall Message  
@@ -44,13 +47,13 @@ affiliate link: https://amzn.to/4kqoFea
 ## 📚 Book Recommendations  
   
 ### 📖 Similar Reads (Focus on Secure Attachment & Mindful Parenting)  
-* **[🕳️🧠👶🏽 The Whole-Brain Child: 12 Revolutionary Strategies to Nurture Your Child's Developing Mind](/content/books/the-whole-brain-child.md)** by Daniel J. Siegel & Tina Payne Bryson: 🧠 Explores brain development and offers strategies for nurturing emotional intelligence.  
-* **[🚫🎭🧠 No-Drama Discipline: The Whole-Brain Way to Calm the Chaos and Nurture Your Child's Developing Mind](/content/books/no-drama-discipline.md)** by Daniel J. Siegel & Tina Payne Bryson: 🚫🎭 Focuses on discipline techniques that connect with the child and teach skills, rather than just punishing.  
-* **[🤱🏼🤿🪞🌱 Parenting from the Inside Out: How a Deeper Self-Understanding Can Help You Raise Children Who Thrive](/content/books/parenting-from-the-inside-out-how-a-deeper-self-understanding-can-help-you-raise-children-who-thrive.md)** by Daniel J. Siegel & Mary Hartzell: 💖 Delves deeper into how parents' understanding of their own life experiences impacts their parenting.  
+* **[🕳️🧠👶🏽 The Whole-Brain Child: 12 Revolutionary Strategies to Nurture Your Child's Developing Mind](./the-whole-brain-child.md)** by Daniel J. Siegel & Tina Payne Bryson: 🧠 Explores brain development and offers strategies for nurturing emotional intelligence.  
+* **[🚫🎭🧠 No-Drama Discipline: The Whole-Brain Way to Calm the Chaos and Nurture Your Child's Developing Mind](./no-drama-discipline.md)** by Daniel J. Siegel & Tina Payne Bryson: 🚫🎭 Focuses on discipline techniques that connect with the child and teach skills, rather than just punishing.  
+* **[🤱🏼🤿🪞🌱 Parenting from the Inside Out: How a Deeper Self-Understanding Can Help You Raise Children Who Thrive](./parenting-from-the-inside-out-how-a-deeper-self-understanding-can-help-you-raise-children-who-thrive.md)** by Daniel J. Siegel & Mary Hartzell: 💖 Delves deeper into how parents' understanding of their own life experiences impacts their parenting.  
 * ***Raising a Secure Child*** by Kent Hoffman, Glen Cooper, & Bert Powell: 🛡️ Based on the Circle of Security program, focusing on nurturing attachment and emotional resilience.  
 * ***The Attachment Parenting Book*** by Dr. William & Martha Sears: 🤱 A foundational text outlining attachment parenting principles like bonding, breastfeeding, and babywearing.  
 * ***The Conscious Parent*** by Shefali Tsabary: 🧘 A philosophical guide emphasizing mindfulness and parental self-awareness in raising children.  
-* **[🫂 Hold Me Tight: Seven Conversations for a Lifetime of Love](/content/books/hold-me-tight-seven-conversations-for-a-lifetime-of-love.md)** by Dr. Sue Johnson: 🤗 While focused on romantic relationships, it uses attachment theory (Emotionally Focused Therapy) to foster connection, relevant for understanding attachment bonds generally.  
+* **[🫂 Hold Me Tight: Seven Conversations for a Lifetime of Love](./hold-me-tight-seven-conversations-for-a-lifetime-of-love.md)** by Dr. Sue Johnson: 🤗 While focused on romantic relationships, it uses attachment theory (Emotionally Focused Therapy) to foster connection, relevant for understanding attachment bonds generally.  
   
 ### 🎭 Contrasting Perspectives (Alternative Parenting Approaches)  
 * ***Battle Hymn of the Tiger Mother*** by Amy Chua: 🐅 Presents a stricter, achievement-focused parenting style contrasting sharply with the attachment-based approach.  
@@ -61,11 +64,11 @@ affiliate link: https://amzn.to/4kqoFea
 ### 🎨 Creatively Related (Broader Themes of Presence & Connection)  
 * ***The Power of Now*** by Eckhart Tolle: ⏱️ Explores the spiritual importance of living in the present moment, a core theme in "showing up".  
 * ***Atlas of the Heart*** by Brené Brown: ❤️ Maps complex human emotions and experiences, enhancing the ability to "see" and understand others (and oneself).  
-* **[👣➡️🌍 Wherever You Go, There You Are](/content/books/wherever-you-go-there-you-are.md)** by Jon Kabat-Zinn: 🧘 A classic guide to mindfulness meditation for everyday life, cultivating the presence needed for showing up.  
+* **[👣➡️🌍 Wherever You Go, There You Are](./wherever-you-go-there-you-are.md)** by Jon Kabat-Zinn: 🧘 A classic guide to mindfulness meditation for everyday life, cultivating the presence needed for showing up.  
 * ***The Art of Communicating*** by Thich Nhat Hanh: 🗣️ Offers Buddhist wisdom on mindful communication, deep listening, and loving speech to build connection.  
 * ***How to Be an Adult in Relationships*** by David Richo: 🧑‍🤝‍🧑 Explores mindful loving and the keys to mature relationships, extending the concept of presence and understanding beyond parenting.  
 * ***Passion and Presence*** by Maci Daye: 🔥 Focuses on awakened intimacy and mindful connection in romantic relationships, touching on themes of presence and overcoming barriers.  
 * ***Find Your People*** by Jennie Allen: 🫂 Discusses building community and deep connections in friendships.  
   
-## 💬 [Gemini](/content/software/gemini.md) Prompt (gemini-2.5-pro-exp-03-25)  
+## 💬 [Gemini](../software/gemini.md) Prompt (gemini-2.5-pro-exp-03-25)  
 > Write a markdown-formatted (start headings at level H2) book report, followed by a plethora of additional similar, contrasting, and creatively related book recommendations on The Power of Showing Up. Be thorough in content discussed but concise and economical with your language. Structure the report with section headings and bulleted lists to avoid long blocks of text.

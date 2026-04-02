@@ -10,7 +10,7 @@ Channel: PBS NewsHour
 tags:
 youtube: https://youtu.be/akOR0E-9J6c
 ---
-[Home](/content/index.md) > [Videos](/content/videos/index.md)  
+[Home](../index.md) > [Videos](./index.md)  
 # 👮🚨🇺🇸 ICE escalates aggressive raids in Chicago as Trump moves to deploy National Guard  
 ![ICE escalates aggressive raids in Chicago as Trump moves to deploy National Guard](https://youtu.be/akOR0E-9J6c)  
   
@@ -63,11 +63,11 @@ A: 💥 Aggressive tactics used by federal agents included: 🔗 Zip-tying child
 * 🚨 City of Exclusion: Multi-Racial Segregation and the Road to Mass Deportation by Liza Jacobs: Details how local policies and federal power interact to create environments hostile to immigrant communities, directly related to the Chicago situation.  
   
 ### Contrasting (Focusing on Federalism and Executive Power)  
-* [🇺🇸📜 The Federalist Papers](/content/books/the-federalist-papers.md) by Alexander Hamilton, James Madison, and John Jay: Offers the foundational arguments for the U.S. system of federalism and the division of powers, providing the intellectual framework against which the presidential overreach is measured.  
+* [🇺🇸📜 The Federalist Papers](../books/the-federalist-papers.md) by Alexander Hamilton, James Madison, and John Jay: Offers the foundational arguments for the U.S. system of federalism and the division of powers, providing the intellectual framework against which the presidential overreach is measured.  
 * 👑 The Imperial Presidency by Arthur M. Schlesinger Jr.: Examines the historical growth of presidential power, especially in foreign and domestic crises, contrasting with the constitutional limits asserted by state and local leaders in the video.  
   
 ### Creatively Related (Focusing on Civil Liberties and Policing)  
-* [🧑🏿⛓️🙈 The New Jim Crow: Mass Incarceration in the Age of Colorblindness](/content/books/the-new-jim-crow-mass-incarceration-in-the-age-of-colorblindness.md) by Michelle Alexander: Connects the current system of law enforcement and incarceration to historical forms of racial control, offering a powerful lens through which to analyze the racial profiling claims in the Chicago raids.  
+* [🧑🏿⛓️🙈 The New Jim Crow: Mass Incarceration in the Age of Colorblindness](../books/the-new-jim-crow-mass-incarceration-in-the-age-of-colorblindness.md) by Michelle Alexander: Connects the current system of law enforcement and incarceration to historical forms of racial control, offering a powerful lens through which to analyze the racial profiling claims in the Chicago raids.  
 * ✍️ A People's History of the United States by : Provides a perspective on American history focused on the struggles of marginalized groups against government authority, framing the protests and resistance in Chicago as part of a longer tradition of dissent.  
   
 ## 🐦 Tweet  

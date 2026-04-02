@@ -6,7 +6,7 @@ URL: https://bagrounds.org/books/the-backyard-orchardist-a-complete-guide-to-gro
 share: true
 affiliate link: https://amzn.to/3Hp6K95
 ---
-[Home](/content/index.md) > [Books](/content/books/index.md)  
+[Home](../index.md) > [Books](./index.md)  
 # 🏡🍎 The Backyard Orchardist: A Complete Guide to Growing Fruit Trees in the Home Garden  
 [🛒 The Backyard Orchardist: A Complete Guide to Growing Fruit Trees in the Home Garden. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3Hp6K95)  
   
@@ -62,7 +62,7 @@ affiliate link: https://amzn.to/3Hp6K95
   
 * 🍎 **"The Fruit Gardener's Bible: A Complete Guide to Growing Fruits and Nuts in the Home Garden"** 🏡 by Lewis Hill.  
     * 🍎 Offers a complete guide 📖 to growing fruits 🍓 and nuts 🌰 in a home garden. 🏡  
-* **[🏡🍎🌳 The Home Orchard: Growing Your Own Deciduous Fruit and Nut Trees](/content/books/the-home-orchard-growing-your-own-deciduous-fruit-and-nut-trees.md)** 🌳 by Chuck A. Ingels, Pamela M. Geisel, and Maxwell V. Norton (UC ANR Publication 3485).  
+* **[🏡🍎🌳 The Home Orchard: Growing Your Own Deciduous Fruit and Nut Trees](./the-home-orchard-growing-your-own-deciduous-fruit-and-nut-trees.md)** 🌳 by Chuck A. Ingels, Pamela M. Geisel, and Maxwell V. Norton (UC ANR Publication 3485).  
     * 🌳 An authoritative reference 📚 covering temperate-zone deciduous nut 🌰 and fruit trees, 🌳 with in-depth chapters 📖 on various aspects of orchard management. 🧑‍🌾  
 * 🍎 **"Fruit Trees for Every Garden: An Organic Approach to Growing Apples, Pears, Peaches, Plums, Citrus, and More"** 🌳 by Orin Martin and Manjula Martin.  
     * 📅 Excels at explaining seasonal care requirements 🚿 with systematic, season-specific instructions 📝 and variety selection guides. 🍎  
@@ -102,9 +102,9 @@ affiliate link: https://amzn.to/3Hp6K95
   
 ### 🌎 Region-Specific Guides  
   
-* **[🍓🌳 Growing Berries and Fruit Trees in the Pacific Northwest: How to Grow Abundant, Organic Fruit in Your Backyard](/content/books/growing-berries-and-fruit-trees-in-the-pacific-northwest-how-to-grow-abundant-organic-fruit-in-your-backyard.md)** 🌳 by Tara Austen Weaver.  
+* **[🍓🌳 Growing Berries and Fruit Trees in the Pacific Northwest: How to Grow Abundant, Organic Fruit in Your Backyard](./growing-berries-and-fruit-trees-in-the-pacific-northwest-how-to-grow-abundant-organic-fruit-in-your-backyard.md)** 🌳 by Tara Austen Weaver.  
     * 🌎 A guide specifically for Pacific Northwest climates. 🏔️  
-* **[🌳🍎🍽️ From Tree to Table: Growing Backyard Fruit Trees in the Pacific Maritime Climate](/content/books/from-tree-to-table-growing-backyard-fruit-trees-in-the-pacific-maritime-climate.md)** 🌳 by Barbara Edwards and Mary Olivella.  
+* **[🌳🍎🍽️ From Tree to Table: Growing Backyard Fruit Trees in the Pacific Maritime Climate](./from-tree-to-table-growing-backyard-fruit-trees-in-the-pacific-maritime-climate.md)** 🌳 by Barbara Edwards and Mary Olivella.  
     * 🌊 Targets fruit varieties 🍎 that thrive in maritime West Coast USDA zones 8A through 10. ☀️  
 * 🍎 **"Florida Fruit"** 🍊 by Lewis & Betty Maxwell.  
     * ☀️ A guide to selecting fruit 🍓 that grows well in Florida, 🌴 covering plant descriptions, 📝 tolerances, and cultural practices. 👨‍🌾  
@@ -134,5 +134,5 @@ affiliate link: https://amzn.to/3Hp6K95
   
 This list provides a wide range of options 📖 for anyone interested in fruit cultivation, 🧑‍🌾 from detailed practical guides 📚 to explorations of the cultural and historical aspects 🏛️ of fruit 🍓 and orchards. 🌳  
   
-## 💬 [Gemini](/content/software/gemini.md) Prompt (gemini-2.5-pro-exp-03-25)  
+## 💬 [Gemini](../software/gemini.md) Prompt (gemini-2.5-pro-exp-03-25)  
 > Write a markdown-formatted (start headings at level H2) book report, followed by a plethora of additional similar, contrasting, and creatively related book recommendations on The Backyard Orchardist: A Complete Guide to Growing Fruit Trees in the Home Garden. Be thorough in content discussed but concise and economical with your language. Structure the report with section headings and bulleted lists to avoid long blocks of text.

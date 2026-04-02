@@ -7,7 +7,7 @@ share: true
 affiliate link: https://amzn.to/44DV6jX
 CTA: 🚨 Unmask deception.
 ---
-[Home](/content/index.md) > [Books](/content/books/index.md)  
+[Home](../index.md) > [Books](./index.md)  
 # 📢🕸️ Network Propaganda: Manipulation, Disinformation, and Radicalization in American Politics  
 [🛒 Network Propaganda: Manipulation, Disinformation, and Radicalization in American Politics. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/44DV6jX)  
   
@@ -36,20 +36,20 @@ CTA: 🚨 Unmask deception.
 #### **🤝 Similar & Supporting**  
   
 * 🎭 **"The Lies That Bind: Rethinking Identity" by Kwame Anthony Appiah:** While not directly about network propaganda, Appiah's exploration of identity—creed, country, color, class, and culture—provides a philosophical underpinning to understand the tribalism that fuels media polarization.  
-* **[🗳️🏛️☠️ How Democracies Die](/content/books/how-democracies-die.md) by Steven Levitsky and Daniel Ziblatt:** This book offers a historical and comparative perspective on the erosion of democratic norms, which complements the media-focused analysis of "Network Propaganda."  
-* **[💀👨‍🏫 The Death of Expertise: The Campaign Against Established Knowledge and Why It Matters](/content/books/the-death-of-expertise-the-campaign-against-established-knowledge-and-why-it-matters.md) by Tom Nichols:** Nichols' work delves into the societal trend of rejecting expert knowledge, a phenomenon that "Network Propaganda" shows is exploited by the right-wing media ecosystem.  
+* **[🗳️🏛️☠️ How Democracies Die](./how-democracies-die.md) by Steven Levitsky and Daniel Ziblatt:** This book offers a historical and comparative perspective on the erosion of democratic norms, which complements the media-focused analysis of "Network Propaganda."  
+* **[💀👨‍🏫 The Death of Expertise: The Campaign Against Established Knowledge and Why It Matters](./the-death-of-expertise-the-campaign-against-established-knowledge-and-why-it-matters.md) by Tom Nichols:** Nichols' work delves into the societal trend of rejecting expert knowledge, a phenomenon that "Network Propaganda" shows is exploited by the right-wing media ecosystem.  
   
 #### **🤔 Contrasting & Critical**  
   
-* **[😇🧠 The Righteous Mind: Why Good People Are Divided by Politics and Religion](/content/books/the-righteous-mind.md) by Jonathan Haidt:** Haidt's moral psychology perspective offers a different lens for understanding political division, suggesting that liberals and conservatives have different moral foundations, which could be seen as a counterpoint to the asymmetry argument.  
-* **[🏭🫡 Manufacturing Consent: The Political Economy of the Mass Media](/content/books/manufacturing-consent.md) by Edward S. Herman and Noam Chomsky:** A classic work of media criticism, "Manufacturing Consent" argues that all mass media, regardless of political leaning, serve the interests of the powerful, a broader critique than the specific focus on the right-wing in "Network Propaganda."  
+* **[😇🧠 The Righteous Mind: Why Good People Are Divided by Politics and Religion](./the-righteous-mind.md) by Jonathan Haidt:** Haidt's moral psychology perspective offers a different lens for understanding political division, suggesting that liberals and conservatives have different moral foundations, which could be seen as a counterpoint to the asymmetry argument.  
+* **[🏭🫡 Manufacturing Consent: The Political Economy of the Mass Media](./manufacturing-consent.md) by Edward S. Herman and Noam Chomsky:** A classic work of media criticism, "Manufacturing Consent" argues that all mass media, regardless of political leaning, serve the interests of the powerful, a broader critique than the specific focus on the right-wing in "Network Propaganda."  
 * 🌐 **"The Filter Bubble: What the Internet Is Hiding from You" by Eli Pariser:** While "Network Propaganda" downplays the role of algorithms, Pariser's book was one of the first to popularize the idea that personalized online experiences create ideological echo chambers for everyone, a more technologically deterministic view.  
   
 #### **🎨 Creative & Thematic Pairings**  
   
-* **[📺💀 Amusing Ourselves to Death: Public Discourse in the Age of Show Business](/content/books/amusing-ourselves-to-death-public-discourse-in-the-age-of-show-business.md) by Neil Postman:** Postman's prescient 1985 critique of how television was shaping public discourse provides a historical and philosophical backdrop to the issues of infotainment and political spectacle discussed in "Network Propaganda."  
+* **[📺💀 Amusing Ourselves to Death: Public Discourse in the Age of Show Business](./amusing-ourselves-to-death-public-discourse-in-the-age-of-show-business.md) by Neil Postman:** Postman's prescient 1985 critique of how television was shaping public discourse provides a historical and philosophical backdrop to the issues of infotainment and political spectacle discussed in "Network Propaganda."  
 * 👩‍🦰 **"The Handmaid's Tale" by Margaret Atwood:** This dystopian novel, while fictional, offers a chilling portrayal of how a society can be radicalized and its perception of reality manipulated, providing a narrative companion to the non-fiction analysis of "Network Propaganda."  
-* 🧠 **[🤔🐇🐢 Thinking, Fast and Slow](/content/books/thinking-fast-and-slow.md) by Daniel Kahneman:** Kahneman's exploration of the two systems of human thought provides a cognitive science foundation for understanding why people are susceptible to the very disinformation and propaganda that "Network Propaganda" documents.  
+* 🧠 **[🤔🐇🐢 Thinking, Fast and Slow](./thinking-fast-and-slow.md) by Daniel Kahneman:** Kahneman's exploration of the two systems of human thought provides a cognitive science foundation for understanding why people are susceptible to the very disinformation and propaganda that "Network Propaganda" documents.  
   
-## 💬 [Gemini](/content/software/gemini.md) Prompt (gemini-2.5-pro)  
+## 💬 [Gemini](../software/gemini.md) Prompt (gemini-2.5-pro)  
 > Write a markdown-formatted (start headings at level H2) book report, followed by a plethora of additional similar, contrasting, and creatively related book recommendations on Network Propaganda: Manipulation, Disinformation, and Radicalization in American Politics. Be thorough in content discussed but concise and economical with your language. Structure the report with section headings and bulleted lists to avoid long blocks of text.

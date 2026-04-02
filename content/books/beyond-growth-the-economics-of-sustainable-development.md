@@ -7,7 +7,7 @@ share: true
 CTA: 🌍 Redefine flourishing.
 affiliate link: https://amzn.to/4iXp87F
 ---
-[Home](/content/index.md) > [Books](/content/books/index.md)  
+[Home](../index.md) > [Books](./index.md)  
 # 🧠💰🌍 Beyond Growth: The Economics of Sustainable Development  
 [🛒 Beyond Growth: The Economics of Sustainable Development. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4iXp87F)  
   
@@ -77,8 +77,8 @@ affiliate link: https://amzn.to/4iXp87F
   
 ### ➕ Similar  
 * 🌱 Prosperity Without Growth by Tim Jackson  
-* [🍩🌍 Doughnut Economics: Seven Ways to Think Like a 21st-Century Economist](/content/books/doughnut-economics-seven-ways-to-think-like-a-21st-century-economist.md) by Kate Raworth  
-* [📉🌍⏳ Limits to Growth: The 30-Year Global Update](/content/books/limits-to-growth-the-30-year-global-update.md) by Donella Meadows, Dennis Meadows, Jørgen Randers, William W. Behrens III  
+* [🍩🌍 Doughnut Economics: Seven Ways to Think Like a 21st-Century Economist](./doughnut-economics-seven-ways-to-think-like-a-21st-century-economist.md) by Kate Raworth  
+* [📉🌍⏳ Limits to Growth: The 30-Year Global Update](./limits-to-growth-the-30-year-global-update.md) by Donella Meadows, Dennis Meadows, Jørgen Randers, William W. Behrens III  
   
 ### 🆚 Contrasting  
 * 🌐 The World is Flat by Thomas L. Friedman  
@@ -86,7 +86,7 @@ affiliate link: https://amzn.to/4iXp87F
 * ♻️ Environmental Economics and Management: Theory, Policy, and Applications by Scott J. Callan, Janet M. Thomas  
   
 ### 🔗 Related  
-* [🤏🧑 Small Is Beautiful: Economics as if People Mattered](/content/books/small-is-beautiful-economics-as-if-people-mattered.md) by E.F. Schumacher  
+* [🤏🧑 Small Is Beautiful: Economics as if People Mattered](./small-is-beautiful-economics-as-if-people-mattered.md) by E.F. Schumacher  
 * 🌊 Deep Economy by Bill McKibben  
 * 🌍 This Changes Everything by Naomi Klein  
   

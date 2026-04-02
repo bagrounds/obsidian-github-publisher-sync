@@ -10,7 +10,7 @@ Channel: The Bulwark
 tags:
 youtube: https://youtube.com/watch?v=vp1xD3bcFo4
 ---
-[Home](/content/index.md) > [Videos](/content/videos/index.md) | [🏛️🇺🇸📖 Heather Cox Richardson](/content/people/heather-cox-richardson.md)  
+[Home](../index.md) > [Videos](./index.md) | [🏛️🇺🇸📖 Heather Cox Richardson](../people/heather-cox-richardson.md)  
 # 🧠📉⚠️ Heather Cox Richardson: Trump Is Mentally Crumbling—But Still Dangerous | The Bulwark Podcast  
 ![Heather Cox Richardson: Trump Is Mentally Crumbling—But Still Dangerous | The Bulwark Podcast](https://youtube.com/watch?v=vp1xD3bcFo4)  
   
@@ -58,9 +58,9 @@ A: 💵 The **"power of the purse,"** as outlined in the US Constitution, is the
     * 📜 **After Liberalism** by Immanuel Wallerstein: *Examines the historical trajectory and crisis of the liberal world order*, arguing that the system of world-market capitalism is in a state of terminal decline, which is conceptually similar to Schmitt's critique of the liberal state.  
   
 * **Contrasting Perspectives (The Defense of Liberalism):**  
-    * **[🏛️⚖️ The Rule of Law](/content/books/the-rule-of-law.md)** by Tom Bingham: *A robust defense of the principle of the rule of law* against arbitrary power, detailing the essential conditions for its existence and its role in a free society, which directly opposes the Schmittian "state of exception."  
+    * **[🏛️⚖️ The Rule of Law](../books/the-rule-of-law.md)** by Tom Bingham: *A robust defense of the principle of the rule of law* against arbitrary power, detailing the essential conditions for its existence and its role in a free society, which directly opposes the Schmittian "state of exception."  
     * ⚖️ **The Pure Theory of Law** by Hans Kelsen: *Kelsen was a contemporary and intellectual rival of Schmitt.* This book presents a **positivist defense of law** as a self-contained, objective system of norms, directly rejecting Schmitt's idea that law is subservient to political decision and sovereignty.  
-    * **[🇺🇸📜 The Federalist Papers](/content/books/the-federalist-papers.md)** by Alexander Hamilton, James Madison, and John Jay: *The primary source document for American constitutionalism,* detailing the principles of **separation of powers** and **checks and balances** (including the **power of the purse**), which Schmittian theory seeks to undermine.  
+    * **[🇺🇸📜 The Federalist Papers](../books/the-federalist-papers.md)** by Alexander Hamilton, James Madison, and John Jay: *The primary source document for American constitutionalism,* detailing the principles of **separation of powers** and **checks and balances** (including the **power of the purse**), which Schmittian theory seeks to undermine.  
   
 * **Creatively Related Books (The Practice of Unconstrained Power):**  
     * 💣 **The True American: Murder and Mercy in Texas** by Anand Giridharadas: *A compelling non-fiction narrative that explores the political creation of "the other"* (the *enemy*) in post-9/11 America, demonstrating the real-world impact of the friend/enemy framework on a small scale.  

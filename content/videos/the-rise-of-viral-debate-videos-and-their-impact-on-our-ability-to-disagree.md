@@ -10,7 +10,7 @@ Channel: PBS NewsHour
 tags:
 youtube: https://youtu.be/-9QQNgMxdPY
 ---
-[Home](/content/index.md) > [Videos](/content/videos/index.md)  
+[Home](../index.md) > [Videos](./index.md)  
 # 📈🗣️💥😵‍💫 The rise of viral debate videos and their impact on our ability to disagree  
 ![The rise of viral debate videos and their impact on our ability to disagree](https://youtu.be/-9QQNgMxdPY)  
   
@@ -50,13 +50,13 @@ A: 🚀 Jubilee is an LA-based media company 🏢 founded after the 2016 electio
 ## 📚 Book Recommendations  
   
 ### Similar: Books on Productive Dialogue and Disagreement  
-* [🧰💬 Crucial Conversations: Tools for Talking When Stakes Are High](/content/books/crucial-conversations-tools-for-talking-when-stakes-are-high.md) by Kerry Patterson, Joseph Grenny, Ron McMillan, and Al Switzler. 💡 This book provides practical steps 🪜 and methods for holding difficult, high-stakes conversations where opinions vary and emotions run strong, aligning with the video's goal of improving debate.  
-* [💬😬 Difficult Conversations: How to Discuss What Matters Most](/content/books/difficult-conversations-how-to-discuss-what-matters-most.md) by Douglas Stone, Bruce Patton, and Sheila Heen. 🤝 This text offers a framework for analyzing and navigating the emotional and informational challenges inherent in difficult conversations, promoting a **dialogue-first approach** over confrontation.  
+* [🧰💬 Crucial Conversations: Tools for Talking When Stakes Are High](../books/crucial-conversations-tools-for-talking-when-stakes-are-high.md) by Kerry Patterson, Joseph Grenny, Ron McMillan, and Al Switzler. 💡 This book provides practical steps 🪜 and methods for holding difficult, high-stakes conversations where opinions vary and emotions run strong, aligning with the video's goal of improving debate.  
+* [💬😬 Difficult Conversations: How to Discuss What Matters Most](../books/difficult-conversations-how-to-discuss-what-matters-most.md) by Douglas Stone, Bruce Patton, and Sheila Heen. 🤝 This text offers a framework for analyzing and navigating the emotional and informational challenges inherent in difficult conversations, promoting a **dialogue-first approach** over confrontation.  
   
 ### Contrasting: Books on Polarization, Media, and Echo Chambers  
-* [🤕👶 The Coddling of the American Mind: How Good Intentions and Bad Ideas Are Setting Up a Generation for Failure](/content/books/the-coddling-of-the-american-mind-how-good-intentions-and-bad-ideas-are-setting-up-a-generation-for-failure.md) by Greg Lukianoff and Jonathan Haidt. 🛡️ This book explores the psychological and cultural forces contributing to fragility and intolerance on college campuses, providing a **contrasting critique** of the environment where many viral debates originate.  
-* [😇🧠 The Righteous Mind: Why Good People Are Divided by Politics and Religion](/content/books/the-righteous-mind.md) by Jonathan Haidt. 🌐 This work explores the deep psychological and moral roots of political division, suggesting that human moral intuition drives political judgment, **complicating the assumption** that rational debate alone can bridge divides.  
+* [🤕👶 The Coddling of the American Mind: How Good Intentions and Bad Ideas Are Setting Up a Generation for Failure](../books/the-coddling-of-the-american-mind-how-good-intentions-and-bad-ideas-are-setting-up-a-generation-for-failure.md) by Greg Lukianoff and Jonathan Haidt. 🛡️ This book explores the psychological and cultural forces contributing to fragility and intolerance on college campuses, providing a **contrasting critique** of the environment where many viral debates originate.  
+* [😇🧠 The Righteous Mind: Why Good People Are Divided by Politics and Religion](../books/the-righteous-mind.md) by Jonathan Haidt. 🌐 This work explores the deep psychological and moral roots of political division, suggesting that human moral intuition drives political judgment, **complicating the assumption** that rational debate alone can bridge divides.  
   
 ### Creatively Related: Books on Rhetoric, Persuasion, and Civic Life  
 * 🗣️ Thank You for Arguing What Aristotle, Lincoln, and Homer Can Teach Us About the Art of Persuasion by Jay Heinrichs. 🏛️ This book offers a witty, practical guide to classical rhetoric, connecting the zingers of history to modern persuasion tactics and the **art of winning** arguments.  
-* [🎳🏘️📉📈 Bowling Alone: The Collapse and Revival of American Community](/content/books/bowling-alone.md) by Robert D. Putnam. 🏡 This classic examines the decay of civic engagement and social capital in America, providing a **broader context** for the breakdown of trust and community dialogue that fuels modern political polarization.
+* [🎳🏘️📉📈 Bowling Alone: The Collapse and Revival of American Community](../books/bowling-alone.md) by Robert D. Putnam. 🏡 This classic examines the decay of civic engagement and social capital in America, providing a **broader context** for the breakdown of trust and community dialogue that fuels modern political polarization.

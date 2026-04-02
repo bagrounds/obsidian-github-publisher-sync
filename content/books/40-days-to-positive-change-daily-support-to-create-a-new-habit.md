@@ -6,7 +6,7 @@ URL: https://bagrounds.org/books/40-days-to-positive-change-daily-support-to-cre
 share: true
 affiliate link: https://amzn.to/3Fm62Jb
 ---
-[Home](/content/index.md) > [Books](/content/books/index.md)  
+[Home](../index.md) > [Books](./index.md)  
 # 🗓️➕ 40 Days to Positive Change: Daily Support to Create a New Habit  
 [🛒 40 Days to Positive Change: Daily Support to Create a New Habit. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3Fm62Jb)  
   
@@ -31,7 +31,7 @@ affiliate link: https://amzn.to/3Fm62Jb
   
 ## 📖 Book Report: *40 Days to Positive Change: Daily Support to Create a New Habit* by Kelly McGonigal  
   
-This report summarizes [Kelly McGonigal](/content/people/kelly-mcgonigal.md)'s audio program, *40 Days to Positive Change*, which offers a 🗓️ structured approach to instilling new, ✨ positive habits.  
+This report summarizes [Kelly McGonigal](../people/kelly-mcgonigal.md)'s audio program, *40 Days to Positive Change*, which offers a 🗓️ structured approach to instilling new, ✨ positive habits.  
   
 **💡 Key Concepts Discussed:**  
   
@@ -57,14 +57,14 @@ This report summarizes [Kelly McGonigal](/content/people/kelly-mcgonigal.md)'s a
   
 ### 👯 Similar Books (Focus on Habit Formation & Positive Change):  
   
-* **[⚛️🔄 Atomic Habits](/content/books/atomic-habits.md) by James Clear:** This book provides a step-by-step plan for building good habits and breaking bad ones, drawing on cognitive and behavioral sciences. 🤏 It emphasizes making small, "atomic" changes that compound over time. 🔁 It also discusses the "Habit Loop" (cue, craving, response, reward) and four laws for habit change.  
-* 💪 **[The Power of Habit](/content/books/the-power-of-habit.md) by Charles Duhigg:** This book explores the science behind why habits exist and how they can be changed. 🔑 It introduces the "Golden Rule" of habit change: keep the same cue and reward, but change the routine.  
+* **[⚛️🔄 Atomic Habits](./atomic-habits.md) by James Clear:** This book provides a step-by-step plan for building good habits and breaking bad ones, drawing on cognitive and behavioral sciences. 🤏 It emphasizes making small, "atomic" changes that compound over time. 🔁 It also discusses the "Habit Loop" (cue, craving, response, reward) and four laws for habit change.  
+* 💪 **[The Power of Habit](./the-power-of-habit.md) by Charles Duhigg:** This book explores the science behind why habits exist and how they can be changed. 🔑 It introduces the "Golden Rule" of habit change: keep the same cue and reward, but change the routine.  
 * 🗓️ **30 Days—Change Your Habits, Change Your Life by Marc Reklau:** This guide focuses on transforming life by changing habits over a 30-day period, offering simple, actionable daily steps. 🧠 It emphasizes mindset alteration and taking responsibility for one's life.  
   
 ### 🆚 Contrasting Books (Different Approaches or Focus):  
   
-* **[🧘🏋️ The Willpower Instinct: How Self-Control Works, Why It Matters, and What You Can Do to Get More of It](/content/books/the-willpower-instinct.md) by Kelly McGonigal:** While by the same author, this book delves deeper into the science of self-control and willpower, which is a component of habit change but not the sole focus.  
-* **[🦁🫀 Daring Greatly: How the Courage to Be Vulnerable Transforms the Way We Live, Love, Parent, and Lead](/content/books/daring-greatly-how-the-courage-to-be-vulnerable-transforms-the-way-we-live-love-parent-and-lead.md) by Brené Brown:** This book focuses on vulnerability, shame, and courage, which can be underlying factors in the ability to make positive changes but approaches change from an emotional and interpersonal perspective rather than a purely habit-focused one.  
+* **[🧘🏋️ The Willpower Instinct: How Self-Control Works, Why It Matters, and What You Can Do to Get More of It](./the-willpower-instinct.md) by Kelly McGonigal:** While by the same author, this book delves deeper into the science of self-control and willpower, which is a component of habit change but not the sole focus.  
+* **[🦁🫀 Daring Greatly: How the Courage to Be Vulnerable Transforms the Way We Live, Love, Parent, and Lead](./daring-greatly-how-the-courage-to-be-vulnerable-transforms-the-way-we-live-love-parent-and-lead.md) by Brené Brown:** This book focuses on vulnerability, shame, and courage, which can be underlying factors in the ability to make positive changes but approaches change from an emotional and interpersonal perspective rather than a purely habit-focused one.  
   
 ### ✨ Creatively Related Books (Broader Themes of Well-being & Personal Growth):  
   
@@ -73,7 +73,7 @@ This report summarizes [Kelly McGonigal](/content/people/kelly-mcgonigal.md)'s a
 * 🌍 **Positive Psychology as Social Change (edited collection):** This volume explores how positive psychology can be leveraged to enhance social welfare and group-level flourishing, broadening the scope from individual habit change to wider societal impact.  
 * 🌿 **Living with a Green Heart: How to Keep Your Body, Your Home, and the Planet Healthy in a Toxic World by Gay Browne:** This book connects personal well-being with environmental health, suggesting that positive changes in one's lifestyle can have a broader impact.  
   
-## 💬 [Gemini](/content/software/gemini.md) Prompt (gemini-2.5-pro-exp-03-25)  
+## 💬 [Gemini](../software/gemini.md) Prompt (gemini-2.5-pro-exp-03-25)  
 > Write a markdown-formatted (start headings at level H2) book report, followed by a plethora of additional similar, contrasting, and creatively related book recommendations on 40 Days to Positive Change: Daily Support to Create a New Habit. Be thorough in content discussed but concise and economical with your language. Structure the report with section headings and bulleted lists to avoid long blocks of text.  
   
 ## 🐦 Tweet  

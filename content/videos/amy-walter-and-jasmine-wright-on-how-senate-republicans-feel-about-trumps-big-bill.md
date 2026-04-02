@@ -9,7 +9,7 @@ Platform:
 Channel: PBS NewsHour
 tags:
 ---
-[Home](/content/index.md) > [Videos](/content/videos/index.md)  
+[Home](../index.md) > [Videos](./index.md)  
 # 🏛️📜💰🚨 Amy Walter and Jasmine Wright on how Senate Republicans feel about Trump's big bill  
 ![Amy Walter and Jasmine Wright on how Senate Republicans feel about Trump's big bill](https://youtu.be/3kA4hJmCS-I)  
   
@@ -37,7 +37,7 @@ tags:
 * ⚔️ The divide within the Democratic party is increasingly seen as between "fighters" and those who are more "passive" 🧘 \[[10:47](http://www.youtube.com/watch?v=3kA4hJmCS-I&t=647), [10:52](http://www.youtube.com/watch?v=3kA4hJmCS-I&t=652)\].  
   
 ## 📚 Book Recommendations  
-* 📖 **For understanding US Budget and National Debt:** *[The Deficit Myth](/content/books/the-deficit-myth.md): Modern Monetary Theory and the Birth of the People's Economy* by Stephanie Kelton.  
+* 📖 **For understanding US Budget and National Debt:** *[The Deficit Myth](../books/the-deficit-myth.md): Modern Monetary Theory and the Birth of the People's Economy* by Stephanie Kelton.  
 * 📖 **For insights into Trump's rhetoric and its impact:** *American Psychosis: A Historical Investigation of How the Republican Party Went Crazy* by David Corn.  
 * 📖 **For strategies and challenges facing the Democratic Party:** *What Happened* by Hillary Rodham Clinton.  
 * 📖 **For understanding the judiciary and due process:** *Due Process* by Peter J. Henning.  

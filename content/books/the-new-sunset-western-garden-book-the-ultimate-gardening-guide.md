@@ -9,7 +9,7 @@ affiliate link: https://amzn.to/4lpccrr
 tags:
   - gardening
 ---
-[Home](/content/index.md) > [Books](/content/books/index.md)  
+[Home](../index.md) > [Books](./index.md)  
 # ☀️📖🌿 The New Sunset Western Garden Book: The Ultimate Gardening Guide  
 [🛒 The New Sunset Western Garden Book: The Ultimate Gardening Guide. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4lpccrr)  
   
@@ -58,18 +58,18 @@ tags:
 * 📖 ***Fresh From The Garden: An Organic Guide to Growing Vegetables, Berries, and Herbs in Cold Climates*** by 🧑‍🌾 John Whitman. 🧊 Provides comprehensive organic gardening advice specifically for cold climates, covering various gardening methods and 🪴 plant types suitable for shorter growing seasons.  
 * 📖 ***Gardening Practices in Different Climate Zones: Understanding the Impact of Climate on Your Garden***. 🌎 While potentially broader, this type of 📖 book would contrast by covering a wider range of global climate zones beyond just the American West.  
 * 📖 ***Planting in a Post-Wild World: Designing Plant Communities for a Resilient Landscape*** by 🧑‍🌾 Claudia West and 🧑‍🌾 Thomas Rainer. 🌳 This book offers a different philosophy, focusing on ecological landscape design principles and creating sustainable 🪴 plant communities, rather than individual 🪴 plant selection based purely on aesthetics or basic needs.  
-* **[🌿🧑‍🌾 Botany for Gardeners](/content/books/botany-for-gardeners.md)** by 🧑‍🌾 Brian Capon. 🔬 Contrasts by delving into the scientific principles of how plants grow, providing a deeper understanding of 🪴 plant biology relevant to gardening.  
+* **[🌿🧑‍🌾 Botany for Gardeners](./botany-for-gardeners.md)** by 🧑‍🌾 Brian Capon. 🔬 Contrasts by delving into the scientific principles of how plants grow, providing a deeper understanding of 🪴 plant biology relevant to gardening.  
   
 ### 🎨 Creatively Related Books (Connecting Gardening to Broader Themes)  
   
-* **[🪢🌾 Braiding Sweetgrass: Indigenous Wisdom, Scientific Knowledge, and the Teachings of Plants](/content/books/braiding-sweetgrass.md)** by 🧑‍🌾 Robin Wall Kimmerer. 🌿 While not strictly a gardening guide, this 📖 book by a botanist and member of the Citizen Potawatomi Nation explores the relationship between humans and the natural world, weaving together scientific knowledge, Indigenous wisdom, and personal reflections on 🪴 plants and their gifts.  
+* **[🪢🌾 Braiding Sweetgrass: Indigenous Wisdom, Scientific Knowledge, and the Teachings of Plants](./braiding-sweetgrass.md)** by 🧑‍🌾 Robin Wall Kimmerer. 🌿 While not strictly a gardening guide, this 📖 book by a botanist and member of the Citizen Potawatomi Nation explores the relationship between humans and the natural world, weaving together scientific knowledge, Indigenous wisdom, and personal reflections on 🪴 plants and their gifts.  
 * 📖 ***The History of Gardens*** by 🧑‍🏫 Christopher Thacker. 🏛️ Provides a historical perspective on garden design and evolution across different cultures and time periods, offering context for contemporary gardening practices.  
 * 📖 ***Plant Ecology and Conservation*** by 🧑‍🏫 Andrew Lack. 🌳 This book connects gardening to the broader scientific field of 🪴 plant ecology, explaining how 🪴 plants interact with their environment and the importance of 🪴 plant diversity for conservation.  
 * 📖 ***The Reason for Flowers: Their History, Culture, Biology, and How They Change Our Lives*** by 🧑‍🏫 Stephen Buchmann. 🌸 Explores the multifaceted role of flowers from biological, cultural, and historical perspectives, enriching a gardener's appreciation for the 🪴 plants they grow.  
 * 📖 ***Landscape as Urbanism: A General Theory*** by 🧑‍🏫 Charles Waldheim. 🏙️ Offers a theoretical perspective on the role of landscape in shaping urban environments, which can provide a different lens through which to view gardening and landscape design.  
 * 📖 ***Dereck Jarman's Garden***. 🖼️ This book (or similar ones focusing on notable or unique gardens) offers artistic and personal inspiration, showcasing a specific vision and approach to creating a garden space.  
   
-## 💬 [Gemini](/content/software/gemini.md) Prompt (gemini-2.5-flash-preview-04-17)  
+## 💬 [Gemini](../software/gemini.md) Prompt (gemini-2.5-flash-preview-04-17)  
 > Write a markdown-formatted (start headings at level H2) book report, followed by a plethora of additional similar, contrasting, and creatively related book recommendations on The New Sunset Western Garden Book: The Ultimate Gardening Guide. Be thorough in content discussed but concise and economical with your language. Structure the report with section headings and bulleted lists to avoid long blocks of text.  
   
 ## 🐦 Tweet  

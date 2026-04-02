@@ -4,8 +4,8 @@ aliases:
   - "🗣️🤝✅ Consensus through Conversation: How to Achieve High-Commitment Decisions"
 title: "🗣️🤝✅ Consensus through Conversation: How to Achieve High-Commitment Decisions"
 URL: https://bagrounds.org/books/consensus-through-conversation
-Author: 
-tags: 
+Author:
+tags:
 affiliate link: https://amzn.to/3FLfoOB
 ---
 [Home](../index.md) > [Books](./index.md)  

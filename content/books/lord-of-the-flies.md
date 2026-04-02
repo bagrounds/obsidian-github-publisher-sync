@@ -6,8 +6,11 @@ URL: https://bagrounds.org/books/lord-of-the-flies
 share: true
 CTA: 🐷 Contemplate humanity.
 affiliate link: https://amzn.to/4oK6eUe
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_time: 2026-04-01T00:00:00Z
+force_analyze_links: false
 ---
-[Home](/content/index.md) > [Books](/content/books/index.md)  
+[Home](../index.md) > [Books](./index.md)  
 # 👦🏝️🐷 Lord of the Flies  
 [🛒 Lord of the Flies. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4oK6eUe)  
   
@@ -60,8 +63,8 @@ Lord of the Flies is considered a masterpiece of English literature due to its p
 ### 💡 Creatively Related Books  
   
 * 🧬 **The Origin of Species by Charles Darwin:** While a scientific text, Darwin's groundbreaking work on evolution and natural selection provides a fascinating biological backdrop to the "survival of the fittest" dynamics and the more primal aspects of human behavior explored in Lord of the Flies.  
-* **[⚙️⛓️ Discipline and Punish: The Birth of the Prison](/content/books/discipline-and-punish-the-birth-of-the-prison.md) by Michel Foucault:** This philosophical work examines the historical development of power structures, surveillance, and the mechanisms of discipline in society. It offers a theoretical lens through which to understand the emergence of power dynamics, control, and punishment among the boys on the island.  
-* **[📜🌍⏳ Sapiens: A Brief History of Humankind](/content/books/sapiens-a-brief-history-of-humankind.md) by Yuval Noah Harari:** This non-fiction book explores the history of humans, examining how our ability to create shared fictions (like laws, religions, and money) has enabled large-scale cooperation. It provides a broad context for understanding the social constructs that the boys initially try to replicate and ultimately fail to sustain.  
+* **[⚙️⛓️ Discipline and Punish: The Birth of the Prison](./discipline-and-punish-the-birth-of-the-prison.md) by Michel Foucault:** This philosophical work examines the historical development of power structures, surveillance, and the mechanisms of discipline in society. It offers a theoretical lens through which to understand the emergence of power dynamics, control, and punishment among the boys on the island.  
+* **[📜🌍⏳ Sapiens: A Brief History of Humankind](./sapiens-a-brief-history-of-humankind.md) by Yuval Noah Harari:** This non-fiction book explores the history of humans, examining how our ability to create shared fictions (like laws, religions, and money) has enabled large-scale cooperation. It provides a broad context for understanding the social constructs that the boys initially try to replicate and ultimately fail to sustain.  
   
 ## 💬 [Gemini](https://gemini.google.com) Prompt (gemini-2.5-flash)  
 > Write a markdown-formatted (start headings at level H2) book report, followed by similar, contrasting, and creatively related book recommendations on Lord of the Flies. Never quote or italicize titles. Be thorough but concise. Use section headings and bulleted lists to avoid long blocks of text.

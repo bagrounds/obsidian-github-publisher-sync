@@ -10,7 +10,7 @@ Channel: PBS NewsHour
 tags:
 youtube: https://www.youtube.com/watch?v=vRaJbydnfQw
 ---
-[Home](/content/index.md) > [Videos](/content/videos/index.md)  
+[Home](../index.md) > [Videos](./index.md)  
 # 💰📈🤕 Why millions of Americans are facing a spike in health care costs  
 ![Why millions of Americans are facing a spike in health care costs](https://www.youtube.com/watch?v=vRaJbydnfQw)  
   
@@ -49,11 +49,11 @@ A: 👨‍👩‍👧‍👦 **Middle-income families** and individuals with inc
   
 ## 📚 Book Recommendations  
 * 📖 **Similar Perspectives (Focus on US Healthcare Policy and Structure):**  
-    * [⚕️💰🇺🇸 The Healing of America: A Global Quest for Better, Cheaper, and Fairer Health Care](/content/books/the-healing-of-america-a-global-quest-for-better-cheaper-and-fairer-health-care.md) by T.R. Reid. 🌎 Explores how other developed nations manage to cover everyone and control costs, providing crucial context for the US system's struggles with affordability.  
+    * [⚕️💰🇺🇸 The Healing of America: A Global Quest for Better, Cheaper, and Fairer Health Care](../books/the-healing-of-america-a-global-quest-for-better-cheaper-and-fairer-health-care.md) by T.R. Reid. 🌎 Explores how other developed nations manage to cover everyone and control costs, providing crucial context for the US system's struggles with affordability.  
     * *The Cost Disease: Why Computers Get Cheaper and Health Care Keeps Getting More Expensive* by John V. C. Nye and Thomas A. Glass. 💰 Analyzes the unique economic reasons for persistent cost inflation in healthcare, directly addressing the underlying premium drivers mentioned in the video.  
 * 📖 **Contrasting Perspectives (Focus on Free-Market or Technology-Driven Solutions):**  
     * *The Patient Will See You Now: The Future of Medicine Is in Your Hands* by Eric Topol. 📱 Offers a perspective focused on digital health and patient empowerment as the solution to costs and quality issues, shifting the focus away from government policy debates like the subsidy renewal.  
     * *Priceless: Curing the Healthcare Crisis* by John C. Goodman. ⚖️ Advocates for free-market solutions, deregulation, and tax reform to empower consumers and bring down costs, providing an ideological counterpoint to the reliance on federal subsidies.  
 * 📖 **Creatively Related (Focus on the Business/Politics of Health Costs):**  
-    * [💰⚕️⬆️ An American Sickness: How Healthcare Became Big Business and How You Can Take It Back](/content/books/an-american-sickness-how-healthcare-became-big-business-and-how-you-can-take-it-back.md) by Elisabeth Rosenthal. 💊 Details how the profit-driven incentives across hospitals, insurers, and drug companies directly contribute to the unaffordability and high premiums discussed in the report.  
+    * [💰⚕️⬆️ An American Sickness: How Healthcare Became Big Business and How You Can Take It Back](../books/an-american-sickness-how-healthcare-became-big-business-and-how-you-can-take-it-back.md) by Elisabeth Rosenthal. 💊 Details how the profit-driven incentives across hospitals, insurers, and drug companies directly contribute to the unaffordability and high premiums discussed in the report.  
     * *The Great Experiment: Why Diverse Democracies Fall Apart and How They Can Endure* by Yascha Mounk. 🏛️ Provides a broader academic analysis of political polarization and legislative gridlock, which is the direct political cause of the subsidy expiration and government shutdown mentioned at the beginning of the video.

@@ -7,7 +7,7 @@ share: true
 CTA: 🛑 Protect education.
 affiliate link: https://amzn.to/43txYmZ
 ---
-[Home](/content/index.md) > [Books](/content/books/index.md)  
+[Home](../index.md) > [Books](./index.md)  
 # 👑🏫🤥 Reign of Error: The Hoax of the Privatization Movement and the Danger to America's Public Schools  
 [🛒 Reign of Error: The Hoax of the Privatization Movement and the Danger to America's Public Schools. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/43txYmZ)  
   
@@ -80,9 +80,9 @@ affiliate link: https://amzn.to/43txYmZ
 ## 📚 Book Recommendations  
   
 ### 📖 Similar Books  
-* [💀🇺🇸🏫 The Death and Life of the Great American School System: How Testing and Choice Are Undermining Education](/content/books/the-death-and-life-of-the-great-american-school-system-how-testing-and-choice-are-undermining-education.md) by Diane Ravitch  
+* [💀🇺🇸🏫 The Death and Life of the Great American School System: How Testing and Choice Are Undermining Education](./the-death-and-life-of-the-great-american-school-system-how-testing-and-choice-are-undermining-education.md) by Diane Ravitch  
 * 📖 Left Back: A Century of Battles for School Reform by Diane Ravitch  
-* [😥🏫🇺🇸 The Shame of the Nation: The Restoration of Apartheid Schooling in America](/content/books/the-shame-of-the-nation-the-restoration-of-apartheid-schooling-in-america.md) by Jonathan Kozol  
+* [😥🏫🇺🇸 The Shame of the Nation: The Restoration of Apartheid Schooling in America](./the-shame-of-the-nation-the-restoration-of-apartheid-schooling-in-america.md) by Jonathan Kozol  
   
 ### 📖 Contrasting Books  
 * 📖 The Charter School Experiment: A National Search for Education Reform by Jeffrey R. Henig and Stephen D. Sugarman  
@@ -90,9 +90,9 @@ affiliate link: https://amzn.to/43txYmZ
 * 📖 Waiting for Superman: How We Can Save America's Failing Public Schools by Michael Stone  
   
 ### 📖 Related Books  
-* [🏚️💰 Evicted: Poverty and Profit in the American City](/content/books/evicted-poverty-and-profit-in-the-american-city.md) by Matthew Desmond  
-* [🧑🏿⛓️🙈 The New Jim Crow: Mass Incarceration in the Age of Colorblindness](/content/books/the-new-jim-crow-mass-incarceration-in-the-age-of-colorblindness.md) by Michelle Alexander  
-* [🎳🏘️📉📈 Bowling Alone: The Collapse and Revival of American Community](/content/books/bowling-alone.md) by Robert D. Putnam  
+* [🏚️💰 Evicted: Poverty and Profit in the American City](./evicted-poverty-and-profit-in-the-american-city.md) by Matthew Desmond  
+* [🧑🏿⛓️🙈 The New Jim Crow: Mass Incarceration in the Age of Colorblindness](./the-new-jim-crow-mass-incarceration-in-the-age-of-colorblindness.md) by Michelle Alexander  
+* [🎳🏘️📉📈 Bowling Alone: The Collapse and Revival of American Community](./bowling-alone.md) by Robert D. Putnam  
   
 ## 🫵 What Do You Think?  
 ❓ After exploring the arguments presented in *Reign of Error: The Hoax of the Privatization Movement and the Danger to America's Public Schools*, which of Diane Ravitch's proposed solutions do you believe holds the most promise for strengthening public education in your community, and why?

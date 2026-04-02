@@ -8,8 +8,11 @@ Author:
 tags:
 affiliate link: https://amzn.to/4ko04qa
 CTA: 📈 Outsmart the system.
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_time: 2026-04-02T00:00:00Z
+force_analyze_links: false
 ---
-[Home](/content/index.md) > [Books](/content/books/index.md)  
+[Home](../index.md) > [Books](./index.md)  
 # 📉⚾💰 Moneyball: The Art of Winning an Unfair Game  
 [🛒 Moneyball: The Art of Winning an Unfair Game. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4ko04qa)  
   
@@ -60,7 +63,7 @@ CTA: 📈 Outsmart the system.
   
 ### Book Recommendations 📚  
 * **Best Alternate Book on the Same Topic:** "The Extra 2%: How Wall Street Strategies Took a Major League Baseball Team from Worst to First" by Jonah Keri. 🏆 This book focuses on the Tampa Bay Rays, another team that used sabermetrics to achieve success on a limited budget.  
-* **Best Book That Is Tangentially Related:** "[Thinking, Fast and Slow](/content/books/thinking-fast-and-slow.md)" by Daniel Kahneman. 🧠 This book explores the cognitive biases that influence decision-making, which is a key theme in "Moneyball."  
+* **Best Book That Is Tangentially Related:** "[Thinking, Fast and Slow](./thinking-fast-and-slow.md)" by Daniel Kahneman. 🧠 This book explores the cognitive biases that influence decision-making, which is a key theme in "Moneyball."  
 * **Best Book That Is Diametrically Opposed:** "The Book of Baseball Anecdotes" by Peter Seddon. 📖 This book celebrates the traditional, anecdotal side of baseball, which contrasts with the data-driven approach of "Moneyball."  
 * **Best Fiction Book That Incorporates Related Ideas:** "The Art of Fielding" by Chad Harbach. ⚾️ This novel explores the psychological and emotional aspects of baseball, while also touching on themes of talent and performance.  
 * **Best Book That Is More General:** "Freakonomics" by Steven D. Levitt and Stephen J. Dubner. 📊 This book uses economic principles to explore a wide range of unconventional topics, including sports.  

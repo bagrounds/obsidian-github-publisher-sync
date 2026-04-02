@@ -10,7 +10,7 @@ Channel: PBS NewsHour
 tags:
 youtube: https://youtu.be/l6CNWu-siCA
 ---
-[Home](/content/index.md) > [Videos](/content/videos/index.md)  
+[Home](../index.md) > [Videos](./index.md)  
 # 📢👨⚖️🗣️ Tamara Keith and Amy Walter on the public response to Trump's handling of the Epstein case  
 ![Tamara Keith and Amy Walter on the public response to Trump's handling of the Epstein case](https://youtu.be/l6CNWu-siCA)  
   
@@ -30,7 +30,7 @@ While the video provides a snapshot of political discussions, it primarily focus
   
 ## 📚 Book Recommendations  
 * Gerrymander: The Politics of Redistricting in America by Bernard Grofman: Explores the history and impact of redistricting on American politics.  
-* [🏦👨‍💼💥 Dark Towers: Deutsche Bank, Donald Trump, and an Epic Trail of Destruction](/content/books/dark-towers-deutsche-bank-donald-trump-and-an-epic-trail-of-destruction.md) by David Enrich: Delves into the financial dealings and controversies surrounding Donald Trump.  
-* [🔥💣💥😡🤬 Fire and Fury: Inside the Trump White House](/content/books/fire-and-fury-inside-the-trump-white-house.md) by Michael Wolff: Offers an inside look at the early days of the Trump administration.  
-* [🧑🏿⛓️🙈 The New Jim Crow: Mass Incarceration in the Age of Colorblindness](/content/books/the-new-jim-crow-mass-incarceration-in-the-age-of-colorblindness.md) by Michelle Alexander: Provides a critical perspective on the justice system, relevant to discussions of public demand for transparency in legal cases.  
+* [🏦👨‍💼💥 Dark Towers: Deutsche Bank, Donald Trump, and an Epic Trail of Destruction](../books/dark-towers-deutsche-bank-donald-trump-and-an-epic-trail-of-destruction.md) by David Enrich: Delves into the financial dealings and controversies surrounding Donald Trump.  
+* [🔥💣💥😡🤬 Fire and Fury: Inside the Trump White House](../books/fire-and-fury-inside-the-trump-white-house.md) by Michael Wolff: Offers an inside look at the early days of the Trump administration.  
+* [🧑🏿⛓️🙈 The New Jim Crow: Mass Incarceration in the Age of Colorblindness](../books/the-new-jim-crow-mass-incarceration-in-the-age-of-colorblindness.md) by Michelle Alexander: Provides a critical perspective on the justice system, relevant to discussions of public demand for transparency in legal cases.  
 * The Power Broker: Robert Moses and the Fall of New York by Robert A. Caro: A classic on the use and abuse of power, offering parallels to discussions of executive power.

@@ -4,8 +4,11 @@ aliases:
   - 🔄🎯 Kuramoto Model
 title: 🔄🎯 Kuramoto Model
 URL: https://bagrounds.org/topics/kuramoto-model
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_time: 2026-04-02T00:00:00Z
+force_analyze_links: false
 ---
-[Home](/content/index.md) > [Topics](/content/topics/index.md)  
+[Home](../index.md) > [Topics](./index.md)  
 # 🔄🎯 Kuramoto Model  
 ## 🤖 AI Summary  
 Alright, buckle up, buttercup, it's time for the 🔨 Tool Report 🔨 on the fascinating Kuramoto model! 🤩  
@@ -138,13 +141,13 @@ Yoshiki Kuramoto developed the model in the 1970s to understand self-synchroniza
 ### 📖 Book Recommendations  
   
 * Topical: "Synchronization: A Universal Concept in Nonlinear Sciences" by Arkady Pikovsky, Michael Rosenblum, and Jürgen Kurths. 📚  
-* Tangentially related: "[Nonlinear Dynamics and Chaos](/content/books/nonlinear-dynamics-and-chaos.md): With Applications to Physics, Biology, Chemistry, and Engineering" by Steven H. Strogatz. 🌀  
-* Topically opposed: "[Chaos: Making a New Science](/content/books/chaos.md)" by James Gleick. 🤯  
+* Tangentially related: "[Nonlinear Dynamics and Chaos](../books/nonlinear-dynamics-and-chaos.md): With Applications to Physics, Biology, Chemistry, and Engineering" by Steven H. Strogatz. 🌀  
+* Topically opposed: "[Chaos: Making a New Science](../books/chaos.md)" by James Gleick. 🤯  
 * More general: "Complex Systems" by John H. Holland. 🌐  
 * More specific: "Oscillator Death: The Quest for Incoherence in Coupled Systems" by Adilson E. Motter. 💀  
 * Fictional: "The Clockwork Universe: Isaac Newton, the Royal Society, and the Birth of the Modern World" by Edward Dolnick. 🕰️  
 * Rigorous: "Dynamical Systems" by Kathleen T. Alligood, Tim D. Sauer, and James A. Yorke. ⚛️  
-* Accessible: "[Sync](/content/books/sync.md): The Emerging Science of Spontaneous Order" by Steven Strogatz. 🤝  
+* Accessible: "[Sync](../books/sync.md): The Emerging Science of Spontaneous Order" by Steven Strogatz. 🤝  
   
 ### 📺 Links To Relevant YouTube Channels Or Videos  
   

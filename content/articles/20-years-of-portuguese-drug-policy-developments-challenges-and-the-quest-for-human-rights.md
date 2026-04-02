@@ -7,7 +7,7 @@ URL: https://bagrounds.org/articles/20-years-of-portuguese-drug-policy-developme
 Author:
 tags:
 ---
-[Home](/content/index.md) > [Articles](/content/articles/index.md)  
+[Home](../index.md) > [Articles](./index.md)  
 # [🗓️🇵🇹💉✅🕊️ 20 years of Portuguese drug policy - developments, challenges and the quest for human rights](https://pmc.ncbi.nlm.nih.gov/articles/PMC8285857)  
   
 ## 🤖 AI Summary  
@@ -41,7 +41,7 @@ tags:
 ## 📚 Book Recommendations  
   
 ### ↔️ Similar  
-* [👻🔗 In the Realm of Hungry Ghosts: Close Encounters with Addiction](/content/books/in-the-realm-of-hungry-ghosts-close-encounters-with-addiction.md) by Gabor Maté. This book explores the 💔 trauma and social roots of addiction, aligning with Portugal's public health approach of viewing addiction as an 🩺 illness rather than a crime.  
+* [👻🔗 In the Realm of Hungry Ghosts: Close Encounters with Addiction](../books/in-the-realm-of-hungry-ghosts-close-encounters-with-addiction.md) by Gabor Maté. This book explores the 💔 trauma and social roots of addiction, aligning with Portugal's public health approach of viewing addiction as an 🩺 illness rather than a crime.  
 * 📚 Drug Use for Grown-Ups: Chasing Liberty in the Land of Fear by Carl L. Hart. It advocates for a pragmatic, science-based view of drug use and 🗽 personal liberty, which mirrors the non-punitive spirit of Portugal’s decriminalization model.  
   
 ### 🆚 Contrasting  
@@ -49,5 +49,5 @@ tags:
 * 📚 High Price: A Neuroscientist's Journey of Self-Discovery That Challenges Everything You Know About Drugs and Society by Carl L. Hart. This book directly challenges many of the ⚠️ prevailing, fear-based narratives of the War on Drugs that Portugal abandoned, offering a scientific perspective that contrasts with prohibitionist mindsets.  
   
 ### 🎨 Creatively Related  
-* [🧑🏿⛓️🙈 The New Jim Crow: Mass Incarceration in the Age of Colorblindness](/content/books/the-new-jim-crow-mass-incarceration-in-the-age-of-colorblindness.md) by Michelle Alexander. It provides a ⛓️ powerful legal and social analysis of how the War on Drugs has fueled mass incarceration, which offers a stark contrast to Portugal's approach of reducing the criminal justice burden.  
-* [🏚️💰 Evicted: Poverty and Profit in the American City](/content/books/evicted-poverty-and-profit-in-the-american-city.md) by Matthew Desmond. This book explores 🏡 housing instability and poverty, illustrating the critical social determinants of health that contribute to addiction, which directly relates to the broad social and reintegration support that was part of the Portuguese policy.
+* [🧑🏿⛓️🙈 The New Jim Crow: Mass Incarceration in the Age of Colorblindness](../books/the-new-jim-crow-mass-incarceration-in-the-age-of-colorblindness.md) by Michelle Alexander. It provides a ⛓️ powerful legal and social analysis of how the War on Drugs has fueled mass incarceration, which offers a stark contrast to Portugal's approach of reducing the criminal justice burden.  
+* [🏚️💰 Evicted: Poverty and Profit in the American City](../books/evicted-poverty-and-profit-in-the-american-city.md) by Matthew Desmond. This book explores 🏡 housing instability and poverty, illustrating the critical social determinants of health that contribute to addiction, which directly relates to the broad social and reintegration support that was part of the Portuguese policy.

@@ -4,10 +4,10 @@ aliases:
   - Infant Cosleeping with James McKenna, PhD
 title: Infant Cosleeping with James McKenna, PhD
 URL: https://youtu.be/-gEjattIqlY
-Author: 
-Platform: 
+Author:
+Platform:
 Channel: Gentle Finds
-tags: 
+tags:
 ---
   
 [Home](../index.md) > [Videos](./index.md)  

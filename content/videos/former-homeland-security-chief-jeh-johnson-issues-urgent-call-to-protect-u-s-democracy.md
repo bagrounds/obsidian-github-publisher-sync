@@ -10,7 +10,7 @@ Channel: PBS NewsHour
 tags:
 youtube: https://youtu.be/tD7XYElWCb4
 ---
-[Home](/content/index.md) > [Videos](/content/videos/index.md)  
+[Home](../index.md) > [Videos](./index.md)  
 # 🏛️🚨🇺🇸 Former Homeland Security chief Jeh Johnson issues urgent call to protect U.S. democracy  
 ![Former Homeland Security chief Jeh Johnson issues urgent call to protect U.S. democracy](https://youtu.be/tD7XYElWCb4)  
   
@@ -29,5 +29,5 @@ The video offers a specific perspective from a former government official and a 
   
 ## 📚 Book Recommendations  
 * The Great Delusion: Liberal Dreams and International Realities by John Mearsheimer offers a contrasting perspective on American foreign policy and its domestic consequences.  
-* [🧑🏿⛓️🙈 The New Jim Crow: Mass Incarceration in the Age of Colorblindness](/content/books/the-new-jim-crow-mass-incarceration-in-the-age-of-colorblindness.md) by Michelle Alexander provides a legal and social critique of the justice system, which could offer a deeper understanding of the legal profession's role in society.  
-* [🗳️🕊️🇺🇸 Democracy in America](/content/books/democracy-in-america.md) by Alexis de Tocqueville is a classic work on the American political system and its civic life, offering historical context for the current discussion on civics education.
+* [🧑🏿⛓️🙈 The New Jim Crow: Mass Incarceration in the Age of Colorblindness](../books/the-new-jim-crow-mass-incarceration-in-the-age-of-colorblindness.md) by Michelle Alexander provides a legal and social critique of the justice system, which could offer a deeper understanding of the legal profession's role in society.  
+* [🗳️🕊️🇺🇸 Democracy in America](../books/democracy-in-america.md) by Alexis de Tocqueville is a classic work on the American political system and its civic life, offering historical context for the current discussion on civics education.

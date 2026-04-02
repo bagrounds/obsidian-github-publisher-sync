@@ -6,8 +6,11 @@ URL: https://bagrounds.org/books/the-hitchhikers-guide-to-the-galaxy
 share: true
 CTA: 🌌 Explore the universe.
 affiliate link: https://amzn.to/41qogAX
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_time: 2026-04-01T00:00:00Z
+force_analyze_links: false
 ---
-[Home](/content/index.md) > [Books](/content/books/index.md)  
+[Home](../index.md) > [Books](./index.md)  
 # 👍🦮🌌 The Hitchhiker's Guide to the Galaxy  
 [🛒 The Hitchhiker's Guide to the Galaxy. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/41qogAX)  
   
@@ -57,16 +60,16 @@ affiliate link: https://amzn.to/41qogAX
   
 ### ⚖️ Contrasting Books  
   
-* **[🏜️🐛 Dune](/content/books/dune.md) by Frank Herbert:** In stark contrast to Adams's comedy, Dune is an epic, serious science fiction saga that delves into complex themes of ecology, religion, politics, and human evolution in a vast, intricately imagined universe.  
-* **[👁️ 1984](/content/books/1984.md) by George Orwell:** While Adams satirizes bureaucracy with humor, Orwell presents a chilling, dystopian vision of absolute governmental control and the manipulation of truth, offering a serious look at oppressive systems.  
-* **[🌌 Cosmos](/content/books/cosmos.md) by Carl Sagan:** Instead of a humorous and absurd exploration, this non-fiction work offers a scientific and awe-inspiring journey through the universe, exploring the wonders of space and humanity's place within it with profound curiosity and reverence.  
-* 😨 **[💊 Brave New World](/content/books/brave-new-world.md)** by Aldous Huxley: This dystopian novel portrays a future society controlled by technological and psychological conditioning, exploring societal control and the loss of individuality with a serious and thought-provoking tone, contrasting Adams's more playful critique of civilization.  
+* **[🏜️🐛 Dune](./dune.md) by Frank Herbert:** In stark contrast to Adams's comedy, Dune is an epic, serious science fiction saga that delves into complex themes of ecology, religion, politics, and human evolution in a vast, intricately imagined universe.  
+* **[👁️ 1984](./1984.md) by George Orwell:** While Adams satirizes bureaucracy with humor, Orwell presents a chilling, dystopian vision of absolute governmental control and the manipulation of truth, offering a serious look at oppressive systems.  
+* **[🌌 Cosmos](./cosmos.md) by Carl Sagan:** Instead of a humorous and absurd exploration, this non-fiction work offers a scientific and awe-inspiring journey through the universe, exploring the wonders of space and humanity's place within it with profound curiosity and reverence.  
+* 😨 **[💊 Brave New World](./brave-new-world.md)** by Aldous Huxley: This dystopian novel portrays a future society controlled by technological and psychological conditioning, exploring societal control and the loss of individuality with a serious and thought-provoking tone, contrasting Adams's more playful critique of civilization.  
   
 ### 🎨 Creatively Related Books  
   
 * 💀 **Cat's Cradle by Kurt Vonnegut:** This satirical novel delves into themes of science, religion, and the end of the world with dark humor and a deeply absurd worldview, reminiscent of Adams's philosophical musings on meaninglessness.  
-* **[🗺️❤️📐 Flatland: A Romance of Many Dimensions](/content/books/flatland-a-romance-of-many-dimensions.md) by Edwin A Abbott:** This mathematical novella explores concepts of different dimensions and societal structures through the eyes of a square, offering a unique narrative perspective and mind-bending ideas about reality, similar to the imaginative scope of Adams's universe.  
-* **[🏍️🧘❓ Zen and the Art of Motorcycle Maintenance: An Inquiry into Values](/content/books/zen-and-the-art-of-motorcycle-maintenance-an-inquiry-into-values.md) by Robert M Pirsig:** This philosophical novel explores a man's intellectual and spiritual journey, delving into questions of quality, values, and the meaning of life, echoing the underlying philosophical quest present in Arthur Dent's cosmic wanderings.  
+* **[🗺️❤️📐 Flatland: A Romance of Many Dimensions](./flatland-a-romance-of-many-dimensions.md) by Edwin A Abbott:** This mathematical novella explores concepts of different dimensions and societal structures through the eyes of a square, offering a unique narrative perspective and mind-bending ideas about reality, similar to the imaginative scope of Adams's universe.  
+* **[🏍️🧘❓ Zen and the Art of Motorcycle Maintenance: An Inquiry into Values](./zen-and-the-art-of-motorcycle-maintenance-an-inquiry-into-values.md) by Robert M Pirsig:** This philosophical novel explores a man's intellectual and spiritual journey, delving into questions of quality, values, and the meaning of life, echoing the underlying philosophical quest present in Arthur Dent's cosmic wanderings.  
   
 ## 💬 [Gemini](https://gemini.google.com) Prompt (gemini-2.5-flash)  
 > Write a markdown-formatted (start headings at level H2) book report, followed by similar, contrasting, and creatively related book recommendations on The Hitchhiker's Guide to the Galaxy. Never quote or italicize titles. Be thorough but concise. Use section headings and bulleted lists to avoid long blocks of text.

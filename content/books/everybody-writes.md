@@ -8,8 +8,11 @@ Author:
 tags:
 affiliate link: https://amzn.to/3Ze8194
 updated: 2026-03-20T02:59:18.498Z
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_time: 2026-04-01T00:00:00Z
+force_analyze_links: false
 ---
-[Home](/content/index.md) > [Books](/content/books/index.md)  
+[Home](../index.md) > [Books](./index.md)  
 # 🌍✍🏿 Everybody Writes: Your Go-To Guide to Creating Ridiculously Good Content  
 [🛒 Everybody Writes: Your Go-To Guide to Creating Ridiculously Good Content. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3Ze8194)  
   
@@ -69,23 +72,23 @@ While generally well-received, some minor points noted include:
 * **Content Strategy for the Web** by Kristina Halvorson: A foundational text on developing and implementing content strategy within organizations.  
   
 ### 🆚 Contrasting Books (Different Approaches/Focus)  
-* **[✍🏼👍🏼 On Writing Well: The Classic Guide to Writing Nonfiction](/content/books/on-writing-well.md)** by William Zinsser: A classic guide focused primarily on the principles of writing clear, concise non-fiction, less tied to digital marketing specifics. Praised for its emphasis on elegance and omitting needless words.  
-* **[🦢 The Elements of Style](/content/books/the-elements-of-style.md)** by Strunk & White: A concise, prescriptive guide to American English style and usage, focusing on rules and precision rather than broader content strategy.  
+* **[✍🏼👍🏼 On Writing Well: The Classic Guide to Writing Nonfiction](./on-writing-well.md)** by William Zinsser: A classic guide focused primarily on the principles of writing clear, concise non-fiction, less tied to digital marketing specifics. Praised for its emphasis on elegance and omitting needless words.  
+* **[🦢 The Elements of Style](./the-elements-of-style.md)** by Strunk & White: A concise, prescriptive guide to American English style and usage, focusing on rules and precision rather than broader content strategy.  
 * **Several Short Sentences About Writing** by Verlyn Klinkenborg: Challenges conventional writing advice, advocating for careful sentence-level craft and attentiveness, differing from Handley's more marketing-centric, rule-based approach.  
 * **Writing Tools** by Roy Peter Clark: Offers 50+ specific tools and techniques for writers, drawn more from journalism and literary craft than marketing.  
 * **The Sense of Style** by Steven Pinker: Explores writing style from a cognitive science perspective, focusing on clarity, coherence, and avoiding the "curse of knowledge," more academic than Handley's practical marketing focus.  
   
 ### 🎨 Creatively Related Books (Writing Craft, Creativity, Storytelling)  
-* **[📜 On Writing: A Memoir of the Craft](/content/books/on-writing.md)** by Stephen King: Part memoir, part masterclass on the writing craft, offering broader insights into dedication, routine, and storytelling applicable beyond marketing.  
-* **[🐦🕊️ Bird by Bird: Some Instructions on Writing and Life](/content/books/bird-by-bird.md)** by Anne Lamott: Offers advice on writing and life, emphasizing process, managing overwhelm ("bird by bird"), and embracing "shitty first drafts."  
-* **[The War of Art](/content/books/the-war-of-art.md)** by Steven Pressfield: Focuses on overcoming the internal barriers ("Resistance") to creative work, relevant for anyone producing content.  
-* **[🪄 Big Magic: Creative Living Beyond Fear](/content/books/big-magic.md)** by Elizabeth Gilbert: Explores living a creative life, encouraging curiosity and releasing fear, broader than just writing technique.  
+* **[📜 On Writing: A Memoir of the Craft](./on-writing.md)** by Stephen King: Part memoir, part masterclass on the writing craft, offering broader insights into dedication, routine, and storytelling applicable beyond marketing.  
+* **[🐦🕊️ Bird by Bird: Some Instructions on Writing and Life](./bird-by-bird.md)** by Anne Lamott: Offers advice on writing and life, emphasizing process, managing overwhelm ("bird by bird"), and embracing "shitty first drafts."  
+* **[The War of Art](./the-war-of-art.md)** by Steven Pressfield: Focuses on overcoming the internal barriers ("Resistance") to creative work, relevant for anyone producing content.  
+* **[🪄 Big Magic: Creative Living Beyond Fear](./big-magic.md)** by Elizabeth Gilbert: Explores living a creative life, encouraging curiosity and releasing fear, broader than just writing technique.  
 * **Story Genius** or **Wired for Story** by Lisa Cron: Delves into the neuroscience of storytelling and how to craft narratives that resonate deeply with readers, focusing on internal character arcs and plot.  
-* **[The Artist's Way](/content/books/the-artists-way.md)** by Julia Cameron: A spiritual path to higher creativity, offering exercises and techniques like "morning pages" to unlock creative potential.  
+* **[The Artist's Way](./the-artists-way.md)** by Julia Cameron: A spiritual path to higher creativity, offering exercises and techniques like "morning pages" to unlock creative potential.  
 * **Draft No. 4** by John McPhee: Essays on the writing process from a master of non-fiction, focusing heavily on structure and craft.  
-* **[✍️🦴 Writing Down the Bones](/content/books/writing-down-the-bones.md)** by Natalie Goldberg: Connects writing practice with Zen principles, focusing on freeing the writer's voice.  
+* **[✍️🦴 Writing Down the Bones](./writing-down-the-bones.md)** by Natalie Goldberg: Connects writing practice with Zen principles, focusing on freeing the writer's voice.  
   
-## 💬 [Gemini](/content/software/gemini.md) Prompt (gemini-2.5-pro-exp-03-25)  
+## 💬 [Gemini](../software/gemini.md) Prompt (gemini-2.5-pro-exp-03-25)  
 > Write a markdown-formatted (start headings at level H2) book report, followed by a plethora of additional similar, contrasting, and creatively related book recommendations on Everybody Writes Your Go-To Guide to Creating Ridiculously Good Content. Be thorough in content discussed but concise and economical with your language. Structure the report with section headings and bulleted lists to avoid long blocks of text.  
   
 ## 🦋 Bluesky    

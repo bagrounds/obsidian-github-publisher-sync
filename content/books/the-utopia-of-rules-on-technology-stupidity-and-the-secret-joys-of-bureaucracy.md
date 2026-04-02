@@ -7,7 +7,7 @@ share: true
 CTA: 🤔 Ponder paradox.
 affiliate link: https://amzn.to/4iHbbdV
 ---
-[Home](/content/index.md) > [Books](/content/books/index.md)  
+[Home](../index.md) > [Books](./index.md)  
 # 🤖📝😇 The Utopia of Rules: On Technology, Stupidity, and the Secret Joys of Bureaucracy  
 [🛒 The Utopia of Rules: On Technology, Stupidity, and the Secret Joys of Bureaucracy. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4iHbbdV)  
   
@@ -69,9 +69,9 @@ affiliate link: https://amzn.to/4iHbbdV
 ## 📚 Book Recommendations  
   
 ### 📖 Similar  
-* [💩💼 Bullshit Jobs: A Theory](/content/books/bullshit-jobs-a-theory.md) by David Graeber: Explores the phenomenon of pointless employment, deeply related to bureaucratic expansion.  
-* [🏛️💰 Debt: The First 5,000 Years](/content/books/debt-the-first-5000-years.md) by David Graeber: Examines the moral and historical underpinnings of debt, linking it to systems of power and control.  
-* [🌅🧑‍🤝‍🧑 The Dawn of Everything: A New History of Humanity](/content/books/the-dawn-of-everything-a-new-history-of-humanity.md) by David Graeber and David Wengrow: Critiques conventional narratives of human progress, often touching on early forms of social organization and hierarchy.  
+* [💩💼 Bullshit Jobs: A Theory](./bullshit-jobs-a-theory.md) by David Graeber: Explores the phenomenon of pointless employment, deeply related to bureaucratic expansion.  
+* [🏛️💰 Debt: The First 5,000 Years](./debt-the-first-5000-years.md) by David Graeber: Examines the moral and historical underpinnings of debt, linking it to systems of power and control.  
+* [🌅🧑‍🤝‍🧑 The Dawn of Everything: A New History of Humanity](./the-dawn-of-everything-a-new-history-of-humanity.md) by David Graeber and David Wengrow: Critiques conventional narratives of human progress, often touching on early forms of social organization and hierarchy.  
   
 ### ⚔️ Contrasting  
 * ✝️ The Protestant Ethic and the Spirit of Capitalism by Max Weber: Classic sociological work on bureaucracy as a rational, efficient, and necessary form of organization.  
@@ -79,8 +79,8 @@ affiliate link: https://amzn.to/4iHbbdV
 * 💻 Recoding America: Why Government Is Failing in the Digital Age and How to Fix It by Jennifer Pahlka: Offers a more pragmatic, solution-oriented perspective on improving government technology and efficiency.  
   
 ### ➕ Related  
-* [📖🏛️📉 Seeing Like a State: How Certain Schemes to Improve the Human Condition Have Failed](/content/books/seeing-like-a-state-how-certain-schemes-to-improve-the-human-condition-have-failed.md) by James C. Scott: Explores how state-imposed order and rational planning often lead to disastrous outcomes.  
-* [📺💀 Amusing Ourselves to Death: Public Discourse in the Age of Show Business](/content/books/amusing-ourselves-to-death-public-discourse-in-the-age-of-show-business.md) by Neil Postman: Critiques the impact of media on public discourse and rationality.  
+* [📖🏛️📉 Seeing Like a State: How Certain Schemes to Improve the Human Condition Have Failed](./seeing-like-a-state-how-certain-schemes-to-improve-the-human-condition-have-failed.md) by James C. Scott: Explores how state-imposed order and rational planning often lead to disastrous outcomes.  
+* [📺💀 Amusing Ourselves to Death: Public Discourse in the Age of Show Business](./amusing-ourselves-to-death-public-discourse-in-the-age-of-show-business.md) by Neil Postman: Critiques the impact of media on public discourse and rationality.  
 * 😔 Capitalist Realism: Is There No Alternative? by Mark Fisher: Analyzes the pervasive sense that capitalism is the only viable political and economic system, making it difficult to even imagine alternatives.  
   
 ## 🫵 What Do You Think?  

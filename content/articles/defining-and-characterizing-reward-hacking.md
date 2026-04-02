@@ -7,7 +7,7 @@ URL: https://bagrounds.org/articles/defining-and-characterizing-reward-hacking
 Author:
 tags:
 ---
-[Home](/content/index.md) > [Articles](/content/articles/index.md)  
+[Home](../index.md) > [Articles](./index.md)  
 # [💰⚙️📈🔍 Defining and Characterizing Reward Hacking](https://arxiv.org/pdf/2209.13085)  
 ## 🤖 AI Summary  
 * 📝 Formal reward hacking is defined as the phenomenon where **optimizing** an imperfect proxy reward function ($\tilde{\mathcal{R}}$) leads to **poor performance** according to the true reward function ($\mathcal{R}$).  
@@ -30,11 +30,11 @@ tags:
 ## 📚 Book Recommendations  
 ### Similar  
 * The Alignment Problem: 💡 Explores the extensive technical and philosophical challenge of ensuring that advanced AI systems pursue human goals and intentions, which is the core goal threatened by reward hacking.  
-* [🤖🧑‍ Human Compatible: Artificial Intelligence and the Problem of Control](/content/books/human-compatible-artificial-intelligence-and-the-problem-of-control.md): 🤖 Proposes fundamental redesigns to AI safety by arguing for systems that are inherently uncertain about human preferences, directly addressing the specification problem that leads to proxy failure.  
+* [🤖🧑‍ Human Compatible: Artificial Intelligence and the Problem of Control](../books/human-compatible-artificial-intelligence-and-the-problem-of-control.md): 🤖 Proposes fundamental redesigns to AI safety by arguing for systems that are inherently uncertain about human preferences, directly addressing the specification problem that leads to proxy failure.  
   
 ### Contrasting  
-* [🤖➕🧠➡️ Reinforcement Learning: An Introduction](/content/books/reinforcement-learning-an-introduction.md): 📘 The authoritative text defining traditional reinforcement learning, which assumes a **perfectly specified** reward function as the ground truth for maximizing expected return.  
-* [🤔🐇🐢 Thinking, Fast and Slow](/content/books/thinking-fast-and-slow.md): 🧠 Offers a human perspective on value, utility, and decision-making, contrasting the formalized utility functions of AI with the **messiness and incoherence** of actual human preferences, which makes reward specification so difficult.  
+* [🤖➕🧠➡️ Reinforcement Learning: An Introduction](../books/reinforcement-learning-an-introduction.md): 📘 The authoritative text defining traditional reinforcement learning, which assumes a **perfectly specified** reward function as the ground truth for maximizing expected return.  
+* [🤔🐇🐢 Thinking, Fast and Slow](../books/thinking-fast-and-slow.md): 🧠 Offers a human perspective on value, utility, and decision-making, contrasting the formalized utility functions of AI with the **messiness and incoherence** of actual human preferences, which makes reward specification so difficult.  
   
 ### Creatively Related  
 * Goodhart's Law: Everything Is a Proxy: 🎯 Provides a broad, non-AI-specific exploration of **Goodhart's Law**, the very phenomenon cited in the paper: once a measure is made a target, it ceases to be a good measure.  

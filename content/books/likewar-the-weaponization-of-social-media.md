@@ -7,7 +7,7 @@ share: true
 affiliate link: https://amzn.to/3JBVvvr
 CTA: 🛡️ Defend democracy.
 ---
-[Home](/content/index.md) > [Books](/content/books/index.md)  
+[Home](../index.md) > [Books](./index.md)  
 # 📱⚔️ LikeWar: The Weaponization of Social Media  
 [🛒 LikeWar: The Weaponization of Social Media. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3JBVvvr)  
   
@@ -76,15 +76,15 @@ CTA: 🛡️ Defend democracy.
 * 🚢 Ghost Fleet by P.W. Singer and August Cole  
 * 🔥 Burn-In by P.W. Singer and August Cole  
 * 🔒 Cybersecurity and Cyberwar by P.W. Singer and Allan Friedman  
-* [🤯 Mindf*ck: Cambridge Analytica and the Plot to Break America](/content/books/mindf-ck-cambridge-analytica-and-the-plot-to-break-america.md) by Christopher Wylie  
-* [👁️‍🗨️💰⛓️👤 The Age of Surveillance Capitalism: The Fight for a Human Future at the New Frontier of Power](/content/books/the-age-of-surveillance-capitalism.md) by Shoshana Zuboff  
+* [🤯 Mindf*ck: Cambridge Analytica and the Plot to Break America](./mindf-ck-cambridge-analytica-and-the-plot-to-break-america.md) by Christopher Wylie  
+* [👁️‍🗨️💰⛓️👤 The Age of Surveillance Capitalism: The Fight for a Human Future at the New Frontier of Power](./the-age-of-surveillance-capitalism.md) by Shoshana Zuboff  
   
 ### ⚔️ Contrasting  
 * 💪 The Utility of Force by Rupert Smith  
 * 🐦 War in 140 Characters by David Patrikarakos  
   
 ### 💡 Related  
-* [🤔🐇🐢 Thinking, Fast and Slow](/content/books/thinking-fast-and-slow.md) by Daniel Kahneman  
+* [🤔🐇🐢 Thinking, Fast and Slow](./thinking-fast-and-slow.md) by Daniel Kahneman  
 * ⚠️ This Is How They Tell Me The World Ends by Nicole Perlroth  
 * 🚨 Warnings by Richard A. Clarke and R.P. Eddy  
   

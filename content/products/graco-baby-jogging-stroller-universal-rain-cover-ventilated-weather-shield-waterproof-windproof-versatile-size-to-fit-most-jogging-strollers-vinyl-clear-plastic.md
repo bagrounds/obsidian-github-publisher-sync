@@ -7,12 +7,12 @@ share: true
 affiliate link: https://amzn.to/4grnWID
 CTA: 🛡️ Defend precious cargo.
 ---
-[Home](/content/index.md) > [Products](/content/products/index.md)  
+[Home](../index.md) > [Products](./index.md)  
 # 👶🌧️💨 Graco Baby Jogging Stroller Universal Rain Cover, Ventilated Weather Shield, Waterproof, Windproof, Versatile Size to Fit Most Jogging Strollers, Vinyl, Clear, Plastic  
 [🛒 Graco Baby Jogging Stroller Universal Rain Cover, Ventilated Weather Shield, Waterproof, Windproof, Versatile Size to Fit Most Jogging Strollers, Vinyl, Clear, Plastic. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4grnWID)  
   
 ## 📝🐒 Human Notes  
-- For my [👶🏃🌆 Thule Urban Glide 3](/content/products/thule-urban-glide-3.md)  
+- For my [👶🏃🌆 Thule Urban Glide 3](./thule-urban-glide-3.md)  
 - 👍 Fits great; no issues after first run in light rain.  
   
 ## 🛍️📋 Product Report: Graco Baby Jogging Stroller Universal Rain Cover  
@@ -43,7 +43,7 @@ CTA: 🛡️ Defend precious cargo.
 ### 📚 Book Recommendations  
   
 #### ➕ Similar  
-* **[👨‍🚀🔴✨ The Martian](/content/books/the-martian.md)** **by Andy Weir:** 🛡️ This book mirrors the rain cover's function by focusing on creating a sealed, protected habitat for survival against a hostile environment.  
+* **[👨‍🚀🔴✨ The Martian](../books/the-martian.md)** **by Andy Weir:** 🛡️ This book mirrors the rain cover's function by focusing on creating a sealed, protected habitat for survival against a hostile environment.  
 * 🛸 **A Long Way to a Small, Angry Planet** **by Becky Chambers:** A novel about a spaceship crew, the ship itself acts as a weather shield, creating a safe, traveling bubble for its inhabitants against the vacuum of space.  
 * 🚂 **The Boxcar Children** **by Gertrude Chandler Warner:** 🏠 This story highlights resourceful children who create their own shelter, a boxcar, to provide a safe, mobile home, much like the Graco cover creates a safe, mobile space.  
   
@@ -53,7 +53,7 @@ CTA: 🛡️ Defend precious cargo.
 * 🏝️ **Robinson Crusoe** **by Daniel Defoe:** Crusoe is initially exposed to the elements, but his journey is about gradually building shelter and a protected life on a deserted island, showing a slow progression from vulnerability to protection.  
   
 #### ✨ Creatively Related  
-* **[🤴 The Little Prince](/content/books/the-little-prince.md)** **by Antoine de Saint-Exupéry:** 🔮 The prince places a glass dome over his rose, protecting it from the harshness of his tiny planet—a direct metaphor for the rain cover protecting a precious, fragile being.  
+* **[🤴 The Little Prince](../books/the-little-prince.md)** **by Antoine de Saint-Exupéry:** 🔮 The prince places a glass dome over his rose, protecting it from the harshness of his tiny planet—a direct metaphor for the rain cover protecting a precious, fragile being.  
 * 🌳 **The Giving Tree** **by Shel Silverstein:** ❤️ This book relates creatively through its theme of a protector (the tree) offering a part of itself (its leaves, trunk) to shelter and support another being (the boy), similar to the cover shielding a child.  
 * ☔ **The Umbrella by Stephenie Alexander:** A children's book that personifies a simple umbrella, celebrating its role in providing protection, comfort, and security against the rain—the exact function of the Graco rain cover.  
   

@@ -7,7 +7,7 @@ share: true
 CTA: 🗽 Grasp destiny.
 affiliate link: https://amzn.to/4nUh0pP
 ---
-[Home](/content/index.md) > [Books](/content/books/index.md)  
+[Home](../index.md) > [Books](./index.md)  
 # 🇺🇸⚔️ Alexander Hamilton  
 [🛒 Alexander Hamilton. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4nUh0pP)  
   
@@ -38,7 +38,7 @@ affiliate link: https://amzn.to/4nUh0pP
 ### ➕ Similar Books  
 * 👴 **Washington: A Life by Ron Chernow:** Given Chernow's comprehensive and engaging biographical style, his book on George Washington offers a deep dive into another pivotal figure of the Revolutionary era, with whom Hamilton shared a close and defining relationship.  
 * ✍️ **John Adams by David McCullough:** This Pulitzer Prize-winning biography offers a detailed look at the life of another prominent Founding Father, showcasing his contributions to the nation's founding and his complex relationships with contemporaries like Hamilton and Jefferson.  
-* **[🤝🏛️ Team of Rivals: The Political Genius of Abraham Lincoln](/content/books/team-of-rivals-the-political-genius-of-abraham-lincoln.md) by Doris Kearns Goodwin:** While set in a later period, this book shares Chernow's focus on political leadership and the interplay of strong personalities within a cabinet, exploring how Abraham Lincoln managed his former rivals to unite a nation during crisis.  
+* **[🤝🏛️ Team of Rivals: The Political Genius of Abraham Lincoln](./team-of-rivals-the-political-genius-of-abraham-lincoln.md) by Doris Kearns Goodwin:** While set in a later period, this book shares Chernow's focus on political leadership and the interplay of strong personalities within a cabinet, exploring how Abraham Lincoln managed his former rivals to unite a nation during crisis.  
   
 ### ➖ Contrasting Books  
 * 😠 **Jefferson and Hamilton: The Rivalry That Forged a Nation by John Ferling:** This book focuses specifically on the ideological and personal animosity between Alexander Hamilton and Thomas Jefferson, offering a direct exploration of their conflicting visions for America and how their rivalry shaped the early republic.  

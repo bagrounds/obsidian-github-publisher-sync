@@ -11,7 +11,7 @@ force_analyze_links: false
 link_analysis_time: 2026-03-22T23:37:06.492Z
 link_analysis_model: gemini-3.1-flash-lite-preview
 ---
-[Home](/content/index.md) > [Books](/content/books/index.md)  
+[Home](../index.md) > [Books](./index.md)  
 # ⚡🚫💭 Blink: The Power of Thinking Without Thinking  
 [🛒 Blink: The Power of Thinking Without Thinking. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/496yeMw)  
   
@@ -46,28 +46,28 @@ link_analysis_model: gemini-3.1-flash-lite-preview
   
 ### 🤝 Similar Books (Exploring Intuition, Decision Making, and the Mind)  
   
-* 🤔 ***[Thinking, Fast and Slow](/content/books/thinking-fast-and-slow.md)*** by Daniel Kahneman: 🧠 A seminal work in psychology and behavioral economics that details the two systems of thinking: the fast, intuitive System 1 and the slower, deliberate System 2. 📊 It provides a deeper dive into the cognitive biases that can affect our decisions.  
-* **[⚖️👈 The Tipping Point: How Little Things Can Make a Big Difference](/content/books/the-tipping-point.md)** by Malcolm Gladwell: 🦠 Gladwell's first book explores how ideas, trends, and social behaviors spread like epidemics, touching on how seemingly small factors can have a massive impact.  
+* 🤔 ***[Thinking, Fast and Slow](./thinking-fast-and-slow.md)*** by Daniel Kahneman: 🧠 A seminal work in psychology and behavioral economics that details the two systems of thinking: the fast, intuitive System 1 and the slower, deliberate System 2. 📊 It provides a deeper dive into the cognitive biases that can affect our decisions.  
+* **[⚖️👈 The Tipping Point: How Little Things Can Make a Big Difference](./the-tipping-point.md)** by Malcolm Gladwell: 🦠 Gladwell's first book explores how ideas, trends, and social behaviors spread like epidemics, touching on how seemingly small factors can have a massive impact.  
 * 🏆 ***Outliers: The Story of Success*** by Malcolm Gladwell: 🌟 Another popular book by Gladwell that examines the factors contributing to high levels of success, often highlighting the hidden advantages and opportunities individuals have.  
-* 🤪 ***[Predictably Irrational](/content/books/predictably-irrational.md)*** by Dan Ariely: 🤯 Explores the irrational forces that shape our decisions, often in ways that are systematic and predictable.  
-* 🔁 ***[The Power of Habit](/content/books/the-power-of-habit.md): Why We Do What We Do in Life and Business*** by Charles Duhigg: 🧠 Delves into the science behind habit formation and how understanding habits can lead to significant changes in individuals and organizations.  
-* **[🍃🧠🤝🏼 Influence: The Psychology of Persuasion](/content/books/influence.md)** by Robert Cialdini: 📣 A classic book on the principles of persuasion and how they are used to influence our decisions and behaviors.  
+* 🤪 ***[Predictably Irrational](./predictably-irrational.md)*** by Dan Ariely: 🤯 Explores the irrational forces that shape our decisions, often in ways that are systematic and predictable.  
+* 🔁 ***[The Power of Habit](./the-power-of-habit.md): Why We Do What We Do in Life and Business*** by Charles Duhigg: 🧠 Delves into the science behind habit formation and how understanding habits can lead to significant changes in individuals and organizations.  
+* **[🍃🧠🤝🏼 Influence: The Psychology of Persuasion](./influence.md)** by Robert Cialdini: 📣 A classic book on the principles of persuasion and how they are used to influence our decisions and behaviors.  
   
 ### 🙅 Contrasting Books (Emphasizing Deliberate Thought and System)  
   
-* **[🤿💼 Deep Work](/content/books/deep-work.md): Rules for Focused Success in a Distracted World** by Cal Newport: 🎯 Argues for the importance of focused, uninterrupted deep work in achieving high-quality results in a world of constant distractions, contrasting with the rapid, often distracted nature of "thin-slicing."  
-* **[🔮🎨🔬 Superforecasting: The Art and Science of Prediction](/content/books/superforecasting-the-art-and-science-of-prediction.md)** by Philip Tetlock: 📈 Examines the traits and techniques of individuals who are exceptionally good at predicting future events, emphasizing deliberate analysis, probability, and updating beliefs based on new information.  
+* **[🤿💼 Deep Work](./deep-work.md): Rules for Focused Success in a Distracted World** by Cal Newport: 🎯 Argues for the importance of focused, uninterrupted deep work in achieving high-quality results in a world of constant distractions, contrasting with the rapid, often distracted nature of "thin-slicing."  
+* **[🔮🎨🔬 Superforecasting: The Art and Science of Prediction](./superforecasting-the-art-and-science-of-prediction.md)** by Philip Tetlock: 📈 Examines the traits and techniques of individuals who are exceptionally good at predicting future events, emphasizing deliberate analysis, probability, and updating beliefs based on new information.  
 * 😖 ***The Paradox of Choice: Why More Is Less*** by Barry Schwartz: 🤯 Argues that while some choice is good, an excessive amount of options can lead to anxiety, indecision, and decreased satisfaction, suggesting the limitations of purely rational, maximizing decision-making.  
   
 ### 🎨 Creatively Related Books (Exploring Creativity, Perception, and the Unconscious)  
   
-* ✍️ **[The Artist's Way](/content/books/the-artists-way.md)** by Julia Cameron: 🌈 A practical guide and workbook for unlocking creativity, focusing on spiritual and psychological exercises to overcome creative blocks.  
-* **[💡📜 Where Good Ideas Come From: The Natural History of Innovation](/content/books/where-good-ideas-come-from-the-natural-history-of-innovation.md)** by Steven Johnson: 🤝 Explores the origins of innovation and creativity, suggesting that good ideas often arise from the slow, messy process of connecting existing concepts rather than sudden flashes of insight.  
+* ✍️ **[The Artist's Way](./the-artists-way.md)** by Julia Cameron: 🌈 A practical guide and workbook for unlocking creativity, focusing on spiritual and psychological exercises to overcome creative blocks.  
+* **[💡📜 Where Good Ideas Come From: The Natural History of Innovation](./where-good-ideas-come-from-the-natural-history-of-innovation.md)** by Steven Johnson: 🤝 Explores the origins of innovation and creativity, suggesting that good ideas often arise from the slow, messy process of connecting existing concepts rather than sudden flashes of insight.  
 * 🤓 ***Think Like a Freak*** by Steven D. Levitt and Stephen J. Dubner: 🤪 From the authors of *Freakonomics*, this book offers a guide to thinking more creatively and unconventionally to solve problems.  
 * 🧠 ***Phantoms in the Brain: Probing the Mysteries of the Human Mind*** by V.S. Ramachandran: 🤔 Explores fascinating neurological cases to shed light on how the brain creates our perception of reality, offering insights into the often mysterious workings of the mind that underpin both conscious and unconscious processes.  
 * 🎩 ***The Man Who Mistook His Wife for a Hat and Other Clinical Tales*** by Oliver Sacks: 🎭 A collection of captivating case studies of individuals with neurological disorders, illustrating the complex and sometimes bizarre ways in which the brain can function and how this impacts perception and understanding.  
   
-## 💬 [Gemini](/content/software/gemini.md) Prompt (gemini-2.5-flash-preview-04-17)  
+## 💬 [Gemini](../software/gemini.md) Prompt (gemini-2.5-flash-preview-04-17)  
 > Write a markdown-formatted (start headings at level H2) book report, followed by a plethora of additional similar, contrasting, and creatively related book recommendations on Blink: The Power of Thinking Without Thinking. Be thorough in content discussed but concise and economical with your language. Structure the report with section headings and bulleted lists to avoid long blocks of text.  
   
 ## 🦋 Bluesky    

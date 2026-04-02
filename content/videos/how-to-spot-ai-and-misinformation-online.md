@@ -10,7 +10,7 @@ Channel: PBS NewsHour
 tags:
 youtube: https://youtu.be/uEPqf7fLgTM
 ---
-[Home](/content/index.md) > [Videos](/content/videos/index.md)  
+[Home](../index.md) > [Videos](./index.md)  
 # 🤖👀❌📰 How to spot AI and misinformation online  
 ![How to spot AI and misinformation online](https://youtu.be/uEPqf7fLgTM)  
   
@@ -59,18 +59,18 @@ A: 📡 AI is a cheap and fast tool for campaigns to create political content th
   
 ### **Similar**  
   
-* [📱🗳️📉🩺 The Hype Machine: How Social Media Disrupts Our Elections, Our Economy, and Our Health - and How We Must Adapt](/content/books/the-hype-machine-how-social-media-disrupts-our-elections-our-economy-and-our-health-and-how-we-must-adapt.md) by Sinan Aral explores how social media algorithms influence our politics and public health, linking directly to the platform dynamics and emotional sharing discussed in the video.  
-* [📊📉🏛️ Weapons of Math Destruction: How Big Data Increases Inequality and Threatens Democracy](/content/books/weapons-of-math-destruction-how-big-data-increases-inequality-and-threatens-democracy.md) by Cathy O'Neil discusses the hidden ways that algorithms reinforce inequality and undermine democracy, similar to the video's focus on AI's negative societal impact.  
+* [📱🗳️📉🩺 The Hype Machine: How Social Media Disrupts Our Elections, Our Economy, and Our Health - and How We Must Adapt](../books/the-hype-machine-how-social-media-disrupts-our-elections-our-economy-and-our-health-and-how-we-must-adapt.md) by Sinan Aral explores how social media algorithms influence our politics and public health, linking directly to the platform dynamics and emotional sharing discussed in the video.  
+* [📊📉🏛️ Weapons of Math Destruction: How Big Data Increases Inequality and Threatens Democracy](../books/weapons-of-math-destruction-how-big-data-increases-inequality-and-threatens-democracy.md) by Cathy O'Neil discusses the hidden ways that algorithms reinforce inequality and undermine democracy, similar to the video's focus on AI's negative societal impact.  
   
 ### **Contrasting**  
   
-* [🧠🧠🧠🧠 A Thousand Brains: A New Theory of Intelligence](/content/books/a-thousand-brains.md) by Jeff Hawkins presents an optimistic, high-level theory of brain function, offering a contrasting, hopeful perspective on AI's theoretical potential beyond its current misuse.  
-* [🤔🌍📈✅ Factfulness: Ten Reasons We're Wrong About the World - and Why Things Are Better Than You Think](/content/books/factfulness.md) by Hans Rosling argues for adopting a fact-based worldview instead of a pessimistic, emotionally-driven one, offering a contrasting solution to the problem of emotional content spread by AI.  
+* [🧠🧠🧠🧠 A Thousand Brains: A New Theory of Intelligence](../books/a-thousand-brains.md) by Jeff Hawkins presents an optimistic, high-level theory of brain function, offering a contrasting, hopeful perspective on AI's theoretical potential beyond its current misuse.  
+* [🤔🌍📈✅ Factfulness: Ten Reasons We're Wrong About the World - and Why Things Are Better Than You Think](../books/factfulness.md) by Hans Rosling argues for adopting a fact-based worldview instead of a pessimistic, emotionally-driven one, offering a contrasting solution to the problem of emotional content spread by AI.  
   
 ### **Creatively Related**  
   
-* [🤔🐇🐢 Thinking, Fast and Slow](/content/books/thinking-fast-and-slow.md) by Daniel Kahneman details the cognitive biases and systems of thinking that make people susceptible to emotional and non-skeptical content, which AI exploits for engagement.  
-* [👁️‍🗨️💰⛓️👤 The Age of Surveillance Capitalism: The Fight for a Human Future at the New Frontier of Power](/content/books/the-age-of-surveillance-capitalism.md) by Shoshana Zuboff explains the fundamental economic model of social media—the extraction of user data for profit—which drives the entire ecosystem where misinformation thrives.  
+* [🤔🐇🐢 Thinking, Fast and Slow](../books/thinking-fast-and-slow.md) by Daniel Kahneman details the cognitive biases and systems of thinking that make people susceptible to emotional and non-skeptical content, which AI exploits for engagement.  
+* [👁️‍🗨️💰⛓️👤 The Age of Surveillance Capitalism: The Fight for a Human Future at the New Frontier of Power](../books/the-age-of-surveillance-capitalism.md) by Shoshana Zuboff explains the fundamental economic model of social media—the extraction of user data for profit—which drives the entire ecosystem where misinformation thrives.  
   
 ## 🐦 Tweet  
 <blockquote class="twitter-tweet" data-theme="dark"><p lang="en" dir="ltr">🤖👀❌📰 How to spot AI and misinformation online<br><br>🤖 Bots | 📝 False Content | 🛡️ Defense | 📱 Social Media | 🍎 Content Accuracy | 🗳️ Elections | 📰 Media Literacy<a href="https://twitter.com/NewsHour?ref_src=twsrc%5Etfw">@NewsHour</a><a href="https://t.co/r2DA326v7i">https://t.co/r2DA326v7i</a></p>&mdash; Bryan Grounds (@bagrounds) <a href="https://twitter.com/bagrounds/status/1981501505908986003?ref_src=twsrc%5Etfw">October 23, 2025</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>

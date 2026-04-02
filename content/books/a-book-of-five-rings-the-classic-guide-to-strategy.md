@@ -6,8 +6,11 @@ URL: https://bagrounds.org/books/a-book-of-five-rings-the-classic-guide-to-strat
 share: true
 CTA: ⚔️ Master strategy.
 affiliate link: https://amzn.to/4bdrddS
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_time: 2026-04-02T00:00:00Z
+force_analyze_links: false
 ---
-[Home](/content/index.md) > [Books](/content/books/index.md)  
+[Home](../index.md) > [Books](./index.md)  
 # 🇯🇵⚔️ A Book of Five Rings: The Classic Guide to Strategy  
 [🛒 A Book of Five Rings: The Classic Guide to Strategy. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4bdrddS)  
   
@@ -89,7 +92,7 @@ affiliate link: https://amzn.to/4bdrddS
 ## 📚 Book Recommendations  
   
 ### 🤝 Similar  
-* [🎨⚔️ The Art of War](/content/books/the-art-of-war.md) by Sun Tzu: Classic Eastern strategic thought, military focus with broad applicability.  
+* [🎨⚔️ The Art of War](./the-art-of-war.md) by Sun Tzu: Classic Eastern strategic thought, military focus with broad applicability.  
 * 🌸 Bushido Shoshinshu by Taira Shigesuke: Guidance on the Japanese Bushido Code for aspiring warriors.  
 * 🧘‍♂️ The Unfettered Mind by Takuan Sōhō: Zen Buddhist principles applied to swordsmanship and life.  
   
@@ -100,7 +103,7 @@ affiliate link: https://amzn.to/4bdrddS
 ### 🔗 Related  
 * 📖 Eiji Yoshikawa's Musashi: A fictionalized historical novel expanding on Miyamoto Musashi's life and journey.  
 * ♟️ The 33 Strategies of War by Robert Greene: Modern synthesis of historical military and strategic principles.  
-* [🤔🧘 Meditations](/content/books/meditations.md) by Marcus Aurelius: Roman Stoic philosophy, emphasizing self-control and living in accordance with principles, similar to aspects of Musashi's approach.  
+* [🤔🧘 Meditations](./meditations.md) by Marcus Aurelius: Roman Stoic philosophy, emphasizing self-control and living in accordance with principles, similar to aspects of Musashi's approach.  
   
 ## 🫵 What Do You Think?  
 💭 Which of Musashi's Five Rings resonates most with your personal or professional challenges, and how have you tried to embody its principles?

@@ -9,7 +9,7 @@ Platform:
 Channel: PBS NewsHour
 tags:
 ---
-[Home](/content/index.md) > [Videos](/content/videos/index.md)  
+[Home](../index.md) > [Videos](./index.md)  
 # FTC commissioner fired by Trump says move threatens agency designed to protect consumers  
 ![FTC commissioner fired by Trump says move threatens agency designed to protect consumers](https://youtu.be/Cu70uB6iU5c)  
   

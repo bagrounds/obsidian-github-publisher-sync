@@ -7,7 +7,7 @@ share: true
 CTA: 🕊️ Question martial fervor.
 affiliate link: https://amzn.to/4p3Q9bL
 ---
-[Home](/content/index.md) > [Books](/content/books/index.md)  
+[Home](../index.md) > [Books](./index.md)  
 # 🇺🇸🪖❤️ The New American Militarism: How Americans Are Seduced by War  
 [🛒 The New American Militarism: How Americans Are Seduced by War. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4p3Q9bL)  
   
@@ -75,12 +75,12 @@ affiliate link: https://amzn.to/4p3Q9bL
 ### Similar  
 * Washington Rules: America's Path to Permanent War by Andrew Bacevich  
 * The Limits of Power: The End of American Exceptionalism by Andrew Bacevich  
-* [⚔️💰 War Is a Racket](/content/books/war-is-a-racket.md) by Smedley D. Butler  
+* [⚔️💰 War Is a Racket](./war-is-a-racket.md) by Smedley D. Butler  
   
 ### Contrasting  
 * The Grand Chessboard: American Primacy and Its Geostrategic Imperatives by Zbigniew Brzezinski  
 * The Clash of Civilizations and the Remaking of World Order by Samuel P. Huntington  
-* [🤝🏛️ Team of Rivals: The Political Genius of Abraham Lincoln](/content/books/team-of-rivals-the-political-genius-of-abraham-lincoln.md) by Doris Kearns Goodwin (Focus on diplomatic solutions and internal unity)  
+* [🤝🏛️ Team of Rivals: The Political Genius of Abraham Lincoln](./team-of-rivals-the-political-genius-of-abraham-lincoln.md) by Doris Kearns Goodwin (Focus on diplomatic solutions and internal unity)  
   
 ### Related  
 * Blowback: The Costs and Consequences of American Empire by Chalmers Johnson  

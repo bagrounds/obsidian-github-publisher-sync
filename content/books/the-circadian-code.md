@@ -7,7 +7,7 @@ share: true
 affiliate link: https://amzn.to/4mKeliI
 CTA: ⏰  Synchronize your life.
 ---
-[Home](/content/index.md) > [Books](/content/books/index.md)  
+[Home](../index.md) > [Books](./index.md)  
 # 🌄⏳ The Circadian Code: Lose Weight, Supercharge Your Energy, and Transform Your Health from Morning to Midnight  
 [🛒 The Circadian Code: Lose Weight, Supercharge Your Energy, and Transform Your Health from Morning to Midnight. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4mKeliI)  
   
@@ -40,12 +40,12 @@ CTA: ⏰  Synchronize your life.
 ## 📚 Book Recommendations  
   
 ### 📖 Similar Books (Focus on Circadian Rhythms, Sleep, TRE)  
-* **[😴💭 Why We Sleep: Unlocking the Power of Sleep and Dreams](/content/books/why-we-sleep-unlocking-the-power-of-sleep-and-dreams.md)** by Matthew Walker: A deep dive into the critical importance of sleep for every aspect of physical and mental health, covering memory, immunity, lifespan, and more. Walker emphasizes the detrimental effects of sleep deprivation, a theme complementary to Panda's focus on circadian rhythm disruption.  
+* **[😴💭 Why We Sleep: Unlocking the Power of Sleep and Dreams](./why-we-sleep-unlocking-the-power-of-sleep-and-dreams.md)** by Matthew Walker: A deep dive into the critical importance of sleep for every aspect of physical and mental health, covering memory, immunity, lifespan, and more. Walker emphasizes the detrimental effects of sleep deprivation, a theme complementary to Panda's focus on circadian rhythm disruption.  
 * 🍬 **The Circadian Diabetes Code** by Satchin Panda: Panda's follow-up book applying the principles of circadian rhythms specifically to preventing and reversing prediabetes and Type 2 diabetes.  
 * 📅 **Change Your Schedule, Change Your Life** by Dr. Suhas Kshirsagar: Explores harnessing the power of the body's clock, drawing from Ayurvedic principles alongside modern science to optimize health, weight, and sleep.  
 * ⏰ **Life Time: The New Science of the Body Clock, and How It Can Revolutionize Your Sleep and Health** by Russell Foster: Another exploration of circadian biology and its essential role in health and sleep.  
-* **[⏰👤 The Inner Clock: Living in Sync with Our Circadian Rhythms](/content/books/the-inner-clock-living-in-sync-with-our-circadian-rhythms.md)** by Lynne Peeples: Discusses the science of internal clocks and how modern life disrupts them, offering ways to reclaim natural rhythms for better health.  
-* **[⏱️🍎 Time Restricted Eating: A Look into the Lifestyle](/content/books/time-restricted-eating-a-look-into-the-lifestyle.md)** by Dr. Julie Wei-Shatzel: Focuses specifically on the practical application and benefits of TRE aligned with circadian rhythms.  
+* **[⏰👤 The Inner Clock: Living in Sync with Our Circadian Rhythms](./the-inner-clock-living-in-sync-with-our-circadian-rhythms.md)** by Lynne Peeples: Discusses the science of internal clocks and how modern life disrupts them, offering ways to reclaim natural rhythms for better health.  
+* **[⏱️🍎 Time Restricted Eating: A Look into the Lifestyle](./time-restricted-eating-a-look-into-the-lifestyle.md)** by Dr. Julie Wei-Shatzel: Focuses specifically on the practical application and benefits of TRE aligned with circadian rhythms.  
   
 ### ⚖️ Contrasting Books (Different Approaches to Health/Diet)  
 * 🥗 **Books Promoting Frequent Small Meals:** Many traditional diet plans advocate for eating small meals or snacks every few hours to "keep metabolism high." This contrasts sharply with TRE's emphasis on a consolidated eating window and an extended fasting period.  
@@ -54,11 +54,11 @@ CTA: ⏰  Synchronize your life.
   
 ### 🎨 Creatively Related Books (Broader Themes)  
 * ⚖️ **The Obesity Code** by Dr. Jason Fung: Focuses on the hormonal theory of obesity, particularly insulin resistance, and advocates for intermittent fasting (including TRE) and dietary changes (reducing sugar/refined carbs) as solutions. This aligns closely with the metabolic benefits discussed by Panda.  
-* **[⏳🙅 Lifespan: Why We Age - and Why We Don't Have To](/content/books/lifespan-why-we-age-and-why-we-dont-have-to.md)** by David Sinclair: Explores the science of aging and longevity, touching upon factors like diet, fasting, and cellular repair mechanisms (like autophagy) that overlap with the health benefits attributed to TRE.  
-* **[⚛️🔄 Atomic Habits: An Easy & Proven Way to Build Good Habits & Break Bad Ones](/content/books/atomic-habits.md)** by James Clear: While not about circadian rhythms, this book provides a practical framework for building the consistent habits (like regular sleep times, eating windows, and exercise routines) needed to implement the advice in "The Circadian Code."  
+* **[⏳🙅 Lifespan: Why We Age - and Why We Don't Have To](./lifespan-why-we-age-and-why-we-dont-have-to.md)** by David Sinclair: Explores the science of aging and longevity, touching upon factors like diet, fasting, and cellular repair mechanisms (like autophagy) that overlap with the health benefits attributed to TRE.  
+* **[⚛️🔄 Atomic Habits: An Easy & Proven Way to Build Good Habits & Break Bad Ones](./atomic-habits.md)** by James Clear: While not about circadian rhythms, this book provides a practical framework for building the consistent habits (like regular sleep times, eating windows, and exercise routines) needed to implement the advice in "The Circadian Code."  
 * ☀️ **Chasing the Sun: How the Science of Sunlight Shapes Our Bodies and Minds** by Linda Geddes: Explores the profound impact of sunlight (and its absence) on human health, sleep, and biology, connecting directly to Panda's emphasis on light's role in circadian rhythm regulation.  
 * 🦠 **Gut: The Inside Story of Our Body's Most Underrated Organ** by Giulia Enders: Discusses the importance of gut health and the microbiome, which research suggests is influenced by meal timing and circadian rhythms.  
 * 🔆 **The Light Doctor: Using Light to Boost Health, Improve Sleep, and Live Longer** by Dr. Martin Moore-Ede: Focuses specifically on the therapeutic and regulatory power of light for health and circadian alignment.  
   
-## 💬 [Gemini](/content/software/gemini.md) Prompt (gemini-2.5-pro-exp-03-25)  
+## 💬 [Gemini](../software/gemini.md) Prompt (gemini-2.5-pro-exp-03-25)  
 > Write a markdown-formatted (start headings at level H2) book report, followed by a plethora of additional similar, contrasting, and creatively related book recommendations on The Circadian Code. Be thorough in content discussed but concise and economical with your language. Structure the report with section headings and bulleted lists to avoid long blocks of text.

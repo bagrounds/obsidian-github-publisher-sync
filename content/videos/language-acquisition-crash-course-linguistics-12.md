@@ -9,7 +9,7 @@ Platform:
 Channel: CrashCourse
 tags:
 ---
-[Home](/content/index.md) > [Videos](/content/videos/index.md)  
+[Home](../index.md) > [Videos](./index.md)  
 # 🗣️💬🧠 Language Acquisition: Crash Course Linguistics #12  
 ![Language Acquisition: Crash Course Linguistics #12](https://youtu.be/Ccsf0yX7ECg)  
   
@@ -36,6 +36,6 @@ tags:
   
 ## 📚 Book Recommendations  
   
-* **[🗣️🧠 The Language Instinct: How the Mind Creates Language](/content/books/the-language-instinct-how-the-mind-creates-language.md) by Steven Pinker:** A classic exploration of how humans acquire and use language.  
-* 📖🗣️ - **"Bilingual: Life and Reality" by François Grosjean:** This book provides a comprehensive overview of [🗣️🗣️ Bilingualism](/content/topics/bilingualism.md), covering various aspects such as language acquisition, cognitive effects, and social implications.  
+* **[🗣️🧠 The Language Instinct: How the Mind Creates Language](../books/the-language-instinct-how-the-mind-creates-language.md) by Steven Pinker:** A classic exploration of how humans acquire and use language.  
+* 📖🗣️ - **"Bilingual: Life and Reality" by François Grosjean:** This book provides a comprehensive overview of [🗣️🗣️ Bilingualism](../topics/bilingualism.md), covering various aspects such as language acquisition, cognitive effects, and social implications.  
 * 📖👧🗣️ - **"Languages and Children: Making the Match" by Helena Curtain and Carol Ann Dahlberg:** This book focuses on language education for children, covering topics like early language learning, bilingual education, and heritage language maintenance.

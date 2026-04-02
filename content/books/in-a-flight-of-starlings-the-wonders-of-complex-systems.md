@@ -7,7 +7,7 @@ share: true
 affiliate link: https://amzn.to/4pRxgcO
 CTA: ✨ Explore emergence.
 ---
-[Home](/content/index.md) > [Books](/content/books/index.md)  
+[Home](../index.md) > [Books](./index.md)  
 # 🐦➕ In a Flight of Starlings: The Wonders of Complex Systems  
 [🛒 In a Flight of Starlings: The Wonders of Complex Systems. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4pRxgcO)  
   
@@ -41,13 +41,13 @@ CTA: ✨ Explore emergence.
 * ➕ More Is Different by P. W. Anderson  
     * 📜 Foundational essay on emergent phenomena.  
     * 🪜 Hierarchy of sciences, new laws at each level of complexity.  
-* [🌐🧭❓🔍🗺️ Complexity: A Guided Tour](/content/books/complexity.md) by Melanie Mitchell  
+* [🌐🧭❓🔍🗺️ Complexity: A Guided Tour](./complexity.md) by Melanie Mitchell  
     * 📖 Comprehensive introduction to complex systems science.  
     * 🔄 Covers adaptation, computation, evolution.  
-* [🌪️💥🦋🆕 Chaos: Making a New Science](/content/books/chaos.md) by James Gleick  
+* [🌪️💥🦋🆕 Chaos: Making a New Science](./chaos.md) by James Gleick  
     * 🕰️ Classic exploration of chaos theory.  
     * 🌪️ Focus on deterministic yet unpredictable systems.  
-* [🌐🔗🧠📖 Thinking in Systems: A Primer](/content/books/thinking-in-systems.md) by Donella H. Meadows  
+* [🌐🔗🧠📖 Thinking in Systems: A Primer](./thinking-in-systems.md) by Donella H. Meadows  
     * 🧭 Accessible guide to systems thinking.  
     * 🔑 Identifies leverage points for change.  
   
@@ -55,7 +55,7 @@ CTA: ✨ Explore emergence.
 * ➖ The God Particle If the Universe Is the Answer, What Is the Question? by Leon Lederman  
     * ⚛️ Focuses on fundamental particles and reductionist physics.  
     * 🧱 Emphasis on elementary constituents.  
-* [🤏📜⏳ A Brief History of Time](/content/books/a-brief-history-of-time.md) by Stephen Hawking  
+* [🤏📜⏳ A Brief History of Time](./a-brief-history-of-time.md) by Stephen Hawking  
     * 🌌 Explores cosmological and quantum theories.  
     * 🕰️ Often presents deterministic frameworks for the universe, less on emergent everyday complexity.  
 * ➖ The Clockwork Universe Isaac Newton, the Royal Society, and the Birth of the Modern World by Edward Dolnick  
@@ -63,13 +63,13 @@ CTA: ✨ Explore emergence.
     * ⚙️ Pre-complexity perspective on universal order.  
   
 #### ✨ Creatively Related Books (Broader Contexts of Emergence & Interconnectedness)  
-* [📜🌍⏳ Sapiens: A Brief History of Humankind](/content/books/sapiens-a-brief-history-of-humankind.md) by Yuval Noah Harari  
+* [📜🌍⏳ Sapiens: A Brief History of Humankind](./sapiens-a-brief-history-of-humankind.md) by Yuval Noah Harari  
     * 🧑‍🤝‍🧑 Examines human collective behavior and emergent social structures.  
     * 🌍 Covers complex systems in history, culture, and economics.  
-* [👤🧬 The Selfish Gene](/content/books/the-selfish-gene.md) by Richard Dawkins  
+* [👤🧬 The Selfish Gene](./the-selfish-gene.md) by Richard Dawkins  
     * 🧬 Explores emergent evolutionary phenomena from individual gene interactions.  
     * 🌱 Focus on bottom-up dynamics in biology.  
-* [🌌 Cosmos](/content/books/cosmos.md) by Carl Sagan  
+* [🌌 Cosmos](./cosmos.md) by Carl Sagan  
     * 🌠 Connects scientific discovery with human wonder and societal progress.  
     * 🔗 Emphasizes the interconnectedness of all phenomena, from stars to life.  
   

@@ -7,7 +7,7 @@ share: true
 affiliate link: https://amzn.to/4oknBe2
 CTA: 🛠️ Build impactful LLMs.
 ---
-[Home](/content/index.md) > [Books](/content/books/index.md)  
+[Home](../index.md) > [Books](./index.md)  
 # 🤖🛠️ LLM Engineer's Handbook: Master the art of engineering large language models from concept to production  
 [🛒 LLM Engineer's Handbook: Master the art of engineering large language models from concept to production. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4oknBe2)  
   
@@ -37,24 +37,24 @@ CTA: 🛠️ Build impactful LLMs.
   
 ### 🔩 Similar Reads: The Nuts and Bolts of LLM Engineering  
   
-* **[🤖🗣️ Hands-On Large Language Models: Language Understanding and Generation](/content/books/hands-on-large-language-models-language-understanding-and-generation.md)** by Jay Alammar and Maarten Grootendorst: 👓 This book offers a practical guide to using pretrained LLMs for various NLP tasks, with a strong emphasis on visual explanations and real-world applications.  
+* **[🤖🗣️ Hands-On Large Language Models: Language Understanding and Generation](./hands-on-large-language-models-language-understanding-and-generation.md)** by Jay Alammar and Maarten Grootendorst: 👓 This book offers a practical guide to using pretrained LLMs for various NLP tasks, with a strong emphasis on visual explanations and real-world applications.  
 * 🏗️ **Building a Large Language Model (from Scratch)** by Sebastian Raschka: 🧱 For those who want to go deeper into the mechanics of LLMs, this book provides a step-by-step guide to creating and pretraining a language model from the ground up.  
-* **[🤖🏗️ AI Engineering: Building Applications with Foundation Models](/content/books/ai-engineering-building-applications-with-foundation-models.md)** by Chip Huyen: 🧰 This book provides a comprehensive overview of building AI applications with foundation models, covering prompt engineering, dataset preparation, and model evaluation.  
+* **[🤖🏗️ AI Engineering: Building Applications with Foundation Models](./ai-engineering-building-applications-with-foundation-models.md)** by Chip Huyen: 🧰 This book provides a comprehensive overview of building AI applications with foundation models, covering prompt engineering, dataset preparation, and model evaluation.  
 * 🗣️ **Practical Natural Language Processing** by Sowmya Vajjala, Bodhisattwa Majumder, Anuj Gupta, and Harshit Surana: 📚 This book offers a comprehensive guide to building real-world NLP systems, covering both traditional and deep learning approaches.  
   
 ### 🧠 Contrasting Perspectives: The Theory and Foundations  
   
 * 🗣️ **Speech and Language Processing** by Dan Jurafsky and James H. Martin: 📜 Often considered a foundational text in NLP, this book provides a deep dive into the linguistic and computational principles that underpin the field.  
-* **[🧠💻🤖 Deep Learning](/content/books/deep-learning.md)** by Ian Goodfellow, Yoshua Bengio, and Aaron Courville: 📚 This book is a comprehensive theoretical introduction to the field of deep learning, covering the mathematical and conceptual foundations.  
-* **[💯💻 The Hundred-Page Language Models Book: hands-on with PyTorch](/content/books/the-hundred-page-language-models-book-hands-on-with-pytorch-.md)** by Andriy Burkov: 📄 This concise book offers a clear and mathematically grounded explanation of how language models work, from basic concepts to modern transformer architectures.  
+* **[🧠💻🤖 Deep Learning](./deep-learning.md)** by Ian Goodfellow, Yoshua Bengio, and Aaron Courville: 📚 This book is a comprehensive theoretical introduction to the field of deep learning, covering the mathematical and conceptual foundations.  
+* **[💯💻 The Hundred-Page Language Models Book: hands-on with PyTorch](./the-hundred-page-language-models-book-hands-on-with-pytorch-.md)** by Andriy Burkov: 📄 This concise book offers a clear and mathematically grounded explanation of how language models work, from basic concepts to modern transformer architectures.  
 * 🔍 **Large Language Models: A Deep Dive: Bridging Theory and Practice** by Uday Kamath: 📚 This book offers an in-depth exploration of the design, training, and application of LLMs, with a strong emphasis on the underlying algorithms and techniques.  
   
 ### 🎨 Creative Connections: Expanding the Engineer's Mindset  
   
-* **[🤖⚙️🔁 Designing Machine Learning Systems: An Iterative Process for Production-Ready Applications](/content/books/designing-machine-learning-systems-an-iterative-process-for-production-ready-applications.md)** by Chip Huyen: 🧱 This book focuses on the iterative process of designing and building reliable, scalable, and maintainable machine learning systems, a crucial skill for any MLOps-focused engineer.  
-* **[🧑‍💻📈 The Pragmatic Programmer: Your Journey to Mastery](/content/books/the-pragmatic-programmer-your-journey-to-mastery.md)** by David Thomas and Andrew Hunt: 🕰️ A classic in software engineering, this book offers timeless advice on writing better software and becoming a more effective developer.  
+* **[🤖⚙️🔁 Designing Machine Learning Systems: An Iterative Process for Production-Ready Applications](./designing-machine-learning-systems-an-iterative-process-for-production-ready-applications.md)** by Chip Huyen: 🧱 This book focuses on the iterative process of designing and building reliable, scalable, and maintainable machine learning systems, a crucial skill for any MLOps-focused engineer.  
+* **[🧑‍💻📈 The Pragmatic Programmer: Your Journey to Mastery](./the-pragmatic-programmer-your-journey-to-mastery.md)** by David Thomas and Andrew Hunt: 🕰️ A classic in software engineering, this book offers timeless advice on writing better software and becoming a more effective developer.  
 * 🗺️ **Atlas of AI** by Kate Crawford: 🌏 This book offers a critical perspective on the social, political, and environmental costs of artificial intelligence, encouraging engineers to consider the broader implications of their work.  
 * 🤖 **AI Ethics** by Mark Coeckelbergh: ⚖️ This book provides a practical and accessible analysis of the ethical issues surrounding AI, a vital topic for anyone building and deploying these powerful technologies.  
   
-## 💬 [Gemini](/content/software/gemini.md) Prompt (gemini-2.5-pro)  
+## 💬 [Gemini](../software/gemini.md) Prompt (gemini-2.5-pro)  
 > Write a markdown-formatted (start headings at level H2) book report, followed by a plethora of additional similar, contrasting, and creatively related book recommendations on LLM Engineer's Handbook: Master the art of engineering large language models from concept to production. Never put book titles in quotes or italics. Be thorough in content discussed but concise and economical with your language. Structure the report with section headings and bulleted lists to avoid long blocks of text.

@@ -10,7 +10,7 @@ Channel: PBS NewsHour
 tags:
 youtube: https://youtu.be/7C1kTI-KCNA
 ---
-[Home](/content/index.md) > [Videos](/content/videos/index.md)  
+[Home](../index.md) > [Videos](./index.md)  
 # 🧠🌱⬆️ Lisa Lawson explores the neuroscience of adolescence in 'Thrive'  
 ![Lisa Lawson explores the neuroscience of adolescence in 'Thrive'](https://youtu.be/7C1kTI-KCNA)  
   
@@ -37,6 +37,6 @@ While the video makes a compelling case, a deeper understanding would benefit fr
   
 ## 📚 Book Recommendations  
 * The Teenage Brain by Frances E. Jensen: A book that provides a 🔬 detailed look at the neuroscientific research behind adolescent brain development.  
-* [🤕👶 The Coddling of the American Mind: How Good Intentions and Bad Ideas Are Setting Up a Generation for Failure](/content/books/the-coddling-of-the-american-mind-how-good-intentions-and-bad-ideas-are-setting-up-a-generation-for-failure.md) by Greg Lukianoff and Jonathan Haidt: This book offers a contrasting perspective by arguing that certain trends in parenting and education have unintentionally hindered young people's resilience and emotional development.  
+* [🤕👶 The Coddling of the American Mind: How Good Intentions and Bad Ideas Are Setting Up a Generation for Failure](../books/the-coddling-of-the-american-mind-how-good-intentions-and-bad-ideas-are-setting-up-a-generation-for-failure.md) by Greg Lukianoff and Jonathan Haidt: This book offers a contrasting perspective by arguing that certain trends in parenting and education have unintentionally hindered young people's resilience and emotional development.  
 * Between Parent and Child by Haim Ginott: A classic book on child psychology that focuses on 🗣️ communication and empathy, providing a historical context for the parenting advice in the video.  
-* [❤️‍🔥💪 Grit: The Power of Passion and Perseverance](/content/books/grit-the-power-of-passion-and-perseverance.md) by Angela Duckworth: This book is creatively related as it explores the importance of resilience and long-term goals, which are key themes in the video's discussion of opportunities and development.
+* [❤️‍🔥💪 Grit: The Power of Passion and Perseverance](../books/grit-the-power-of-passion-and-perseverance.md) by Angela Duckworth: This book is creatively related as it explores the importance of resilience and long-term goals, which are key themes in the video's discussion of opportunities and development.

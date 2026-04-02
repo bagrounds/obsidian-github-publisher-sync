@@ -7,7 +7,7 @@ share: true
 affiliate link: https://amzn.to/461CTOe
 CTA: Demand equality.
 ---
-[Home](/content/index.md) > [Books](/content/books/index.md)  
+[Home](../index.md) > [Books](./index.md)  
 # 🫵🤝🌍🏛️ Why You Should Be a Socialist  
 [🛒 Why You Should Be a Socialist. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/461CTOe)  
   
@@ -58,15 +58,15 @@ Robinson's approach is characterized by its direct address to skeptics 🗣️ a
   
 ### 🎨 Creatively Related Books (Exploring Relevant Themes)  
   
-* **[👁️ Nineteen Eighty-Four](/content/books/1984.md)** by George Orwell: A dystopian novel 🌃 exploring totalitarianism ⛓️ and the dangers of unchecked state power 👑, often interpreted as a critique of authoritarian socialism.  
+* **[👁️ Nineteen Eighty-Four](./1984.md)** by George Orwell: A dystopian novel 🌃 exploring totalitarianism ⛓️ and the dangers of unchecked state power 👑, often interpreted as a critique of authoritarian socialism.  
 * 📕 **Brave New World** by Aldous Huxley: Another dystopian novel 🌃 examining social control, technological manipulation 🤖, and the loss of individuality 👤 in a seemingly perfect society.  
 * 📕 **Looking Backward** by Edward Bellamy: A utopian novel 🌈 from the 19th century depicting a future socialist state that has eradicated social ills 🚫.  
-* **[🍇😡 The Grapes of Wrath](/content/books/the-grapes-of-wrath.md)** by John Steinbeck: A novel depicting the struggles of a poor farming family 🧑‍🌾 during the Great Depression 📉, highlighting economic hardship 💔 and social inequality 💸.  
+* **[🍇😡 The Grapes of Wrath](./the-grapes-of-wrath.md)** by John Steinbeck: A novel depicting the struggles of a poor farming family 🧑‍🌾 during the Great Depression 📉, highlighting economic hardship 💔 and social inequality 💸.  
 * 🌍 **Slouching Towards Utopia: An Economic History of the Twentieth Century** by J. Bradford DeLong: An economic history exploring the "long 20th century" through the lenses of technological change ⚙️, markets 📈, and government intervention 🏛️, often referencing figures like Hayek and Polanyi.  
 * 💸 **Economic Inequality: Utopian Explorations** by Donald Morris: Explores the theme of economic inequality through the lens of utopian and dystopian literature, examining various proposed solutions and their implications.  
 * ⚖️ **Capitalism vs. Socialism: Comparing Economic Systems** by Edward F. Stuart: Offers a comparative analysis of capitalist and socialist economic systems.  
 * 🧑‍💼 **The Ragged Trousered Philanthropists** by Robert Tressell: A novel depicting the lives of working-class people in early 20th-century Britain and advocating for socialism ✊.  
 * 🧠 **Requiem for the American Dream: The 10 Principles of Concentration of Wealth & Power** by Noam Chomsky: Examines the concentration of wealth 💰 and its detrimental impact on democracy 🗳️ and social progress 🌱.  
   
-## 💬 [Gemini](/content/software/gemini.md) Prompt (gemini-2.5-flash-preview-04-17)  
+## 💬 [Gemini](../software/gemini.md) Prompt (gemini-2.5-flash-preview-04-17)  
 > Write a markdown-formatted (start headings at level H2) book report, followed by a plethora of additional similar, contrasting, and creatively related book recommendations on Why You Should Be a Socialist. Be thorough in content discussed but concise and economical with your language. Structure the report with section headings and bulleted lists to avoid long blocks of text.

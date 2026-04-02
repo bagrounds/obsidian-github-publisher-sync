@@ -10,7 +10,7 @@ Channel: The Daily Show
 tags:
 youtube: https://youtu.be/nUn1A0sEDrc
 ---
-[Home](/content/index.md) > [Videos](/content/videos/index.md)  
+[Home](../index.md) > [Videos](./index.md)  
 # 🚫👑⚡✊ Sen. Bernie Sanders - Harnessing Energy From «No Kings» Rally to «Fight Oligarchy» | The Daily Show  
 ![Sen. Bernie Sanders - Harnessing Energy From «No Kings» Rally to «Fight Oligarchy» | The Daily Show](https://youtu.be/nUn1A0sEDrc)  
   
@@ -55,8 +55,8 @@ A: 🤖 The rapid growth of AI and robotics is expected to transform the world a
 ## 📚 Book Recommendations  
   
 ### Similar Perspectives  
-- [🇺🇸⚔️💰 Fight Oligarchy](/content/books/fight-oligarchy.md) by Senator Bernie Sanders  
-* **[🏷️🏚️💔🏰 The Price of Inequality: How Today's Divided Society Endangers Our Future](/content/books/the-price-of-inequality-how-todays-divided-society-endangers-our-future.md)** by Joseph Stiglitz: 💵 **A** deep dive into how growing income inequality is undermining the US economy and democracy, offering policy solutions similar to those advocated in the video.  
+- [🇺🇸⚔️💰 Fight Oligarchy](../books/fight-oligarchy.md) by Senator Bernie Sanders  
+* **[🏷️🏚️💔🏰 The Price of Inequality: How Today's Divided Society Endangers Our Future](../books/the-price-of-inequality-how-todays-divided-society-endangers-our-future.md)** by Joseph Stiglitz: 💵 **A** deep dive into how growing income inequality is undermining the US economy and democracy, offering policy solutions similar to those advocated in the video.  
 * **Where We Go From Here: Two Years in the Resistance** by Bernie Sanders: 📖 **Written** by the speaker, this book details his political philosophy, his campaign for the presidency, and the need for a political revolution to counter the powerful.  
 * **Inequality: What Can Be Done?** by Anthony B. Atkinson: 📊 **A** comprehensive and detailed proposal for practical policies to tackle inequality, focusing on tax and benefit systems.  
   
@@ -67,7 +67,7 @@ A: 🤖 The rapid growth of AI and robotics is expected to transform the world a
   
 ### Creatively Related  
 * **The New Jim Code: Technology, Race, and Social Justice** by Ruha Benjamin: 💻 Explores how new technologies, including AI, can reinforce social hierarchies and deepen inequality, providing context for the video's concerns about AI's effect on the working class.  
-* **[🗳️🕊️🇺🇸 Democracy in America](/content/books/democracy-in-america.md)** by Alexis de Tocqueville: 🏛️ **A** timeless 19th-century analysis of American democracy, offering foundational insights into the struggle between individualism, community, and the potential tyranny of the majority, relevant to the rise of concentrated power.  
+* **[🗳️🕊️🇺🇸 Democracy in America](../books/democracy-in-america.md)** by Alexis de Tocqueville: 🏛️ **A** timeless 19th-century analysis of American democracy, offering foundational insights into the struggle between individualism, community, and the potential tyranny of the majority, relevant to the rise of concentrated power.  
 * **The Power Broker** by Robert Caro: 🏙️ **A** monumental biography of Robert Moses, illustrating how political power is consolidated and wielded in the modern age, a vivid real-world example of institutional power trumping democratic processes.  
   
 ## 🐦 Tweet  

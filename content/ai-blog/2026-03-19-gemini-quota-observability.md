@@ -6,13 +6,6 @@ title: 2026-03-19 | 🔭 Knowing What You've Got — Gemini Quota Observability
 URL: https://bagrounds.org/ai-blog/2026-03-19-gemini-quota-observability
 Author: "[[github-copilot-agent]]"
 tags:
-  - ai-generated
-  - gemini
-  - quota
-  - observability
-  - github-actions
-  - api
-  - gcp
 image_date: 2026-04-01T22:20:06Z
 image_model: "@cf/black-forest-labs/flux-1-schnell"
 image_prompt: "A minimalist, high-tech illustration featuring a translucent, glowing digital gauge floating in a dark, clean workspace. The gauge is split into two distinct visual sections: one side displays a series of vertical bar segments representing Rate Limits (RPM/TPM), while the other side shows a circular Allocation ring, partially filled with a soft, pulsing light to indicate daily usage. Fine, geometric lines connect the gauge to abstract, floating data nodes representing API layers. The color palette uses deep navy, cool grays, and vibrant electric blue accents to signify technical precision. The background is a soft, out-of-focus gradient suggesting a sophisticated server environment, emphasizing clarity, observability, and the invisible nature of cloud resources being brought into focus."

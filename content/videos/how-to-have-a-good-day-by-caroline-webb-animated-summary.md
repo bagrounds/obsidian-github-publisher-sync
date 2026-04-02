@@ -10,7 +10,7 @@ Channel: Productivity Game
 tags:
 youtube: https://youtu.be/jyxkRYrEfiE
 ---
-[Home](/content/index.md) > [Videos](/content/videos/index.md) | [😃☀️👍📈 ️ HOW TO HAVE A GOOD DAY by Caroline Webb | Animated Summary](how-to-have-a-good-day-by-caroline-webb-animated-summary.md)  
+[Home](../index.md) > [Videos](./index.md) | [😃☀️👍📈 ️ HOW TO HAVE A GOOD DAY by Caroline Webb | Animated Summary](how-to-have-a-good-day-by-caroline-webb-animated-summary.md)  
 # 😃☀️👍📈 ️ HOW TO HAVE A GOOD DAY by Caroline Webb | Animated Summary  
 ![HOW TO HAVE A GOOD DAY by Caroline Webb | Animated Summary](https://youtu.be/jyxkRYrEfiE)  
   
@@ -80,20 +80,20 @@ A: 👓 **Mental contrasting** is a behavioral science tool used to adjust one's
   
 ### Similar Focus (Behavioral Science & Productivity)  
   
-- [🌊🧘🏼‍♀️🧠📈 Flow: The Psychology of Optimal Experience](/content/books/flow-the-psychology-of-optimal-experience.md) by Mihaly Csikszentmihalyi. 💡 Describes the state of being completely absorbed in a task, which provides a framework for maximizing the effectiveness of the video's suggested "uninterrupted block of time."  
+- [🌊🧘🏼‍♀️🧠📈 Flow: The Psychology of Optimal Experience](../books/flow-the-psychology-of-optimal-experience.md) by Mihaly Csikszentmihalyi. 💡 Describes the state of being completely absorbed in a task, which provides a framework for maximizing the effectiveness of the video's suggested "uninterrupted block of time."  
   
-- [🤔🐇🐢 Thinking, Fast and Slow](/content/books/thinking-fast-and-slow.md) by Daniel Kahneman. 🧠 Explores the two systems of thinking—the fast, automatic system and the slow, deliberate system—providing the fundamental scientific context for the video's **discover-defend** axis.  
+- [🤔🐇🐢 Thinking, Fast and Slow](../books/thinking-fast-and-slow.md) by Daniel Kahneman. 🧠 Explores the two systems of thinking—the fast, automatic system and the slow, deliberate system—providing the fundamental scientific context for the video's **discover-defend** axis.  
   
 - The Happiness Advantage: How a Positive Brain Fuels Success in Work and Life by Shawn Achor. 😊 Posits that happiness and a positive brain state lead to success, which directly reinforces the video's theme that having a _good day_ is the key to greater productivity and performance.  
   
 ### Contrasting Focus (Mindset & Long-Term Success)  
   
-- [🌱🧘🏼‍♀️🏆 Mindset: The New Psychology of Success](/content/books/mindset.md) by Carol S. Dweck. 🌱 Focuses on the "growth mindset" versus the "fixed mindset," offering a deeper psychological layer to the video's advice on adjusting one's daily attitude.  
+- [🌱🧘🏼‍♀️🏆 Mindset: The New Psychology of Success](../books/mindset.md) by Carol S. Dweck. 🌱 Focuses on the "growth mindset" versus the "fixed mindset," offering a deeper psychological layer to the video's advice on adjusting one's daily attitude.  
   
-- [❤️‍🔥💪 Grit: The Power of Passion and Perseverance](/content/books/grit-the-power-of-passion-and-perseverance.md) by Angela Duckworth. 💪 Argues that passion and persistence are the strongest predictors of outstanding achievement, contrasting with the video's daily tactics by focusing on the necessary long-term endurance for success.  
+- [❤️‍🔥💪 Grit: The Power of Passion and Perseverance](../books/grit-the-power-of-passion-and-perseverance.md) by Angela Duckworth. 💪 Argues that passion and persistence are the strongest predictors of outstanding achievement, contrasting with the video's daily tactics by focusing on the necessary long-term endurance for success.  
   
 ### Creatively Related (Well-being & Life Design)  
   
-- [🔄🧠💪 The Power of Habit: Why We Do What We Do in Life and Business](/content/books/the-power-of-habit.md) by Charles Duhigg. 🔄 Provides a deep dive into the neurological science of how habits form and how they can be changed, which is essential for making the video's day-to-day strategies into automatic, lasting routines.  
+- [🔄🧠💪 The Power of Habit: Why We Do What We Do in Life and Business](../books/the-power-of-habit.md) by Charles Duhigg. 🔄 Provides a deep dive into the neurological science of how habits form and how they can be changed, which is essential for making the video's day-to-day strategies into automatic, lasting routines.  
   
-- [👤📈🎯🌟🔑🤝🏆 The 7 Habits of Highly Effective People](/content/books/the-7-habits-of-highly-effective-people.md): Powerful Lessons in Personal Change by Stephen R. Covey. 🧭 Offers a classic, principle-centered approach to personal and professional effectiveness that provides a values-based framework for prioritizing the "one or two clear outcomes" mentioned in the video.
+- [👤📈🎯🌟🔑🤝🏆 The 7 Habits of Highly Effective People](../books/the-7-habits-of-highly-effective-people.md): Powerful Lessons in Personal Change by Stephen R. Covey. 🧭 Offers a classic, principle-centered approach to personal and professional effectiveness that provides a values-based framework for prioritizing the "one or two clear outcomes" mentioned in the video.

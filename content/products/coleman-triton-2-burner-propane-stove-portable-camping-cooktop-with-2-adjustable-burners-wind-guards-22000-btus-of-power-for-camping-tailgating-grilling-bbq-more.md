@@ -7,7 +7,7 @@ share: true
 affiliate link: https://amzn.to/4nbgxPW
 CTA: 🍔 Grill up goodness.
 ---
-[Home](/content/index.md) > [Products](/content/products/index.md)  
+[Home](../index.md) > [Products](./index.md)  
 # 🔥💨🏕️ Coleman Triton 2-Burner Propane Stove, Portable Camping Cooktop with 2 Adjustable Burners & Wind Guards, 22,000 BTUs of Power for Camping, Tailgating, Grilling, BBQ, & More  
 [🛒 Coleman Triton 2-Burner Propane Stove, Portable Camping Cooktop with 2 Adjustable Burners & Wind Guards, 22,000 BTUs of Power for Camping, Tailgating, Grilling, BBQ, & More. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4nbgxPW)  
   
@@ -47,7 +47,7 @@ CTA: 🍔 Grill up goodness.
   
 ### 🧑‍🤝‍🧑 Similar  
   
-* [⛺🔥 The Campout Cookbook: Inspired Recipes for Cooking Around the Fire and Under the Stars](/content/books/the-campout-cookbook-inspired-recipes-for-cooking-around-the-fire-and-under-the-stars.md) by Marnie Hanel, Jen Stevenson, and Ashley English. 🍳 This book focuses on recipes and meal planning specifically for camping and outdoor cooking. It shares the Triton stove's emphasis on practical, satisfying meals prepared away from a traditional kitchen.  
+* [⛺🔥 The Campout Cookbook: Inspired Recipes for Cooking Around the Fire and Under the Stars](../books/the-campout-cookbook-inspired-recipes-for-cooking-around-the-fire-and-under-the-stars.md) by Marnie Hanel, Jen Stevenson, and Ashley English. 🍳 This book focuses on recipes and meal planning specifically for camping and outdoor cooking. It shares the Triton stove's emphasis on practical, satisfying meals prepared away from a traditional kitchen.  
 * 🌲 *Bushcraft 101* by Dave Canterbury. 🏕️ This guide to wilderness survival and self-reliance includes sections on outdoor cooking methods and gear. It complements the Triton's function by providing a broader context for outdoor skills and equipment.  
   
 ### 🆚 Contrasting  
@@ -57,8 +57,8 @@ CTA: 🍔 Grill up goodness.
   
 ### 💡 Creatively Related  
   
-* [🏍️🧘❓ Zen and the Art of Motorcycle Maintenance: An Inquiry into Values](/content/books/zen-and-the-art-of-motorcycle-maintenance-an-inquiry-into-values.md) by Robert M. Pirsig. 📖 This philosophical novel explores the relationship between technology and human values. The simple, mechanical nature of the Coleman stove, which functions as a reliable tool for an outdoor experience, resonates with the book's themes of quality, craftsmanship, and the harmony between man and machine.  
-* [👨‍🚀🔴✨ The Martian](/content/books/the-martian.md) by Andy Weir. 🍅 This sci-fi novel tells the story of an astronaut stranded on Mars who must use his scientific knowledge to survive. 🛠️ His resourceful use of limited tools and supplies to create a livable environment and grow food mirrors the spirit of innovation and self-sufficiency that a portable stove like the Triton enables in a challenging outdoor setting.  
+* [🏍️🧘❓ Zen and the Art of Motorcycle Maintenance: An Inquiry into Values](../books/zen-and-the-art-of-motorcycle-maintenance-an-inquiry-into-values.md) by Robert M. Pirsig. 📖 This philosophical novel explores the relationship between technology and human values. The simple, mechanical nature of the Coleman stove, which functions as a reliable tool for an outdoor experience, resonates with the book's themes of quality, craftsmanship, and the harmony between man and machine.  
+* [👨‍🚀🔴✨ The Martian](../books/the-martian.md) by Andy Weir. 🍅 This sci-fi novel tells the story of an astronaut stranded on Mars who must use his scientific knowledge to survive. 🛠️ His resourceful use of limited tools and supplies to create a livable environment and grow food mirrors the spirit of innovation and self-sufficiency that a portable stove like the Triton enables in a challenging outdoor setting.  
   
 ## 💬 Gemini Prompt (gemini-2.5-flash)  
 > Write a markdown-formatted (start headings at level H2) product report for "Coleman Triton 2-Burner Propane Stove, Portable Camping Cooktop with 2 Adjustable Burners & Wind Guards, 22,000 BTUs of Power for Camping, Tailgating, Grilling, BBQ, & More". Follow this with similar, contrasting, and creatively related book recommendations. Never quote or italicize titles. Be thorough in content discussed but concise and economical with your language. Structure the report with section headings and bulleted lists to avoid long blocks of text.

@@ -10,7 +10,7 @@ Channel: Playtime with Veer and Kabir
 tags:
 youtube: https://youtu.be/DKSHX3MjKKk
 ---
-[Home](/content/index.md) > [Videos](/content/videos/index.md)  
+[Home](../index.md) > [Videos](./index.md)  
 # 👶❓😴👩‍⚕️ Baby sleep Q & A with Dr. Sofia Axelrod, PhD  
 ![Baby sleep Q & A with Dr. Sofia Axelrod, PhD](https://youtu.be/DKSHX3MjKKk)  
   
@@ -65,12 +65,12 @@ youtube: https://youtu.be/DKSHX3MjKKk
   
 ### ↔️ Similar  
 * 🕰️ Internal Time Chronotypes Social Jet Lag and Why You're So Tired by Till Roenneberg. This book focuses on chronobiology, chronotypes (owls vs. larks), and social jet lag, which are core concepts of the video's sleep science framework.  
-* [😴💭 Why We Sleep: Unlocking the Power of Sleep and Dreams](/content/books/why-we-sleep-unlocking-the-power-of-sleep-and-dreams.md) by Matthew Walker. A comprehensive look at sleep science and its vital impact on overall health, reinforcing the video's foundation that good sleep is a biological necessity.  
+* [😴💭 Why We Sleep: Unlocking the Power of Sleep and Dreams](../books/why-we-sleep-unlocking-the-power-of-sleep-and-dreams.md) by Matthew Walker. A comprehensive look at sleep science and its vital impact on overall health, reinforcing the video's foundation that good sleep is a biological necessity.  
   
 ### 🆚 Contrasting  
-* [😴👶  Solve Your Child's Sleep Problems](/content/books/solve-your-childs-sleep-problems.md) by Richard Ferber. This classic guide introduces the progressive waiting method, a form of controlled crying that contrasts with the video's gentle, minimal-delay approach to teaching self-soothing.  
+* [😴👶  Solve Your Child's Sleep Problems](../books/solve-your-childs-sleep-problems.md) by Richard Ferber. This classic guide introduces the progressive waiting method, a form of controlled crying that contrasts with the video's gentle, minimal-delay approach to teaching self-soothing.  
 * ✨ The Gentle Sleep Book Gentle No-tears Sleep Solutions for Parents of Newborns to Five-year-olds by Sarah Ockwell-Smith. This book offers alternative, attachment-focused methods that often prioritize parental responsiveness over a strict schedule, contrasting the video's schedule-first approach.  
   
 ### 🎨 Creatively Related  
-* [🌄⏳ The Circadian Code: Lose Weight, Supercharge Your Energy, and Transform Your Health from Morning to Midnight](/content/books/the-circadian-code.md) by Satchin Panda. This book expands the video's circadian rhythm concept, showing how timing (of eating, exercise) influences metabolic health and overall wellbeing beyond just sleep.  
+* [🌄⏳ The Circadian Code: Lose Weight, Supercharge Your Energy, and Transform Your Health from Morning to Midnight](../books/the-circadian-code.md) by Satchin Panda. This book expands the video's circadian rhythm concept, showing how timing (of eating, exercise) influences metabolic health and overall wellbeing beyond just sleep.  
 * 🧬 Life Time by Russell Foster. Written by a leading neuroscientist, this work takes a broad, scientific look at the 24-hour body clock and how to live in harmony with our natural rhythms, giving context to the sleep advice provided in the video.

@@ -7,7 +7,7 @@ share: true
 affiliate link: https://amzn.to/3I0d5s4
 CTA: 🧠 Explore consciousness.
 ---
-[Home](/content/index.md) > [Books](/content/books/index.md)  
+[Home](../index.md) > [Books](./index.md)  
 # 🧠🌱🤔 Mind in Life: Biology, Phenomenology, and the Sciences of Mind  
 [🛒 Mind in Life: Biology, Phenomenology, and the Sciences of Mind. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3I0d5s4)  
   
@@ -34,7 +34,7 @@ Thompson's work is founded on several core interconnected themes:
   
 ### 🤝 Similar Books  
   
-* [🧠🫂 The Embodied Mind: Cognitive Science and Human Experience](/content/books/the-embodied-mind-cognitive-science-and-human-experience.md) by Francisco J. Varela, Evan Thompson, and Eleanor Rosch  
+* [🧠🫂 The Embodied Mind: Cognitive Science and Human Experience](./the-embodied-mind-cognitive-science-and-human-experience.md) by Francisco J. Varela, Evan Thompson, and Eleanor Rosch  
     * 🏛️ This foundational text, co-authored by Thompson, introduced many of the core ideas of the enactive approach, including the concept of "enaction" itself, and explores the connections between cognitive science, phenomenology, and Buddhist philosophy.  
 * 🧠 Radical Embodied Cognitive Science by Anthony Chemero  
     * 🗣️ Chemero's book offers a clear and forceful articulation of radical embodied cognitive science, arguing for a thoroughly non-representational account of cognition that resonates strongly with Thompson's enactive perspective.  
@@ -54,11 +54,11 @@ Thompson's work is founded on several core interconnected themes:
   
 ### ✨ Creatively Related Books  
   
-* [📜🌍⏳ Sapiens: A Brief History of Humankind](/content/books/sapiens-a-brief-history-of-humankind.md) by Yuval Noah Harari  
+* [📜🌍⏳ Sapiens: A Brief History of Humankind](./sapiens-a-brief-history-of-humankind.md) by Yuval Noah Harari  
     * 🧑‍🤝‍🧑 While not about cognitive science directly, Harari's sweeping history explores how collective fictions, shared narratives, and intersubjective meanings have "enacted" and shaped human reality and civilization. 🗣️ This resonates with the enactive idea of humans "bringing forth a world of significance" through their actions and interactions, but on a societal and cultural scale.  
 * 🌲 The Overstory by Richard Powers  
     * 🌳 This Pulitzer Prize-winning novel intricately weaves together the lives of disparate characters connected by trees, exploring themes of deep ecological interconnectedness, sentience beyond human forms, and the profound impact of embodied existence within a larger natural system. 🌱 It evokes the "deep continuity of life and mind" and the inherent value and agency in non-human life in a powerful, narrative form.  
-* [🍄🌍🧠🔮 Entangled Life: How Fungi Make Our Worlds, Change Our Minds & Shape Our Futures](/content/books/entangled-life-how-fungi-make-our-worlds-change-our-minds-shape-our-futures.md) by Merlin Sheldrake  
+* [🍄🌍🧠🔮 Entangled Life: How Fungi Make Our Worlds, Change Our Minds & Shape Our Futures](./entangled-life-how-fungi-make-our-worlds-change-our-minds-shape-our-futures.md) by Merlin Sheldrake  
     * 🍄 Sheldrake's book delves into the complex, networked, and often hidden lives of fungi. 💡 It highlights how these organisms engage in sophisticated forms of self-organization, communication, and "sense-making" within their environments, offering vivid biological examples that echo the themes of life-mind continuity and the dynamic, interactive nature of living systems that Thompson explores.  
   
 ## 💬 [Gemini](https://gemini.google.com) Prompt (gemini-2.5-flash)  

@@ -10,7 +10,7 @@ Channel: Heather Cox Richardson
 tags:
 youtube: https://youtu.be/iZ0lB-EOEDI
 ---
-[Home](/content/index.md) > [Videos](/content/videos/index.md)  
+[Home](../index.md) > [Videos](./index.md)  
 # 🏛️📉⚠️🎭 A Brittle Administration Inventing a Crime Crisis | Explainer  
 ![A Brittle Administration Inventing a Crime Crisis | Explainer](https://youtu.be/iZ0lB-EOEDI)  
   
@@ -29,6 +29,6 @@ The perspective presented in the video is a highly critical one, focusing on a n
   
 ## 📚 Book Recommendations  
   
-* [👑🚫📜2️⃣0️⃣ On Tyranny: Twenty Lessons from the Twentieth Century](/content/books/on-tyranny.md) by Timothy Snyder: This 📖 book provides a historical guide to resisting authoritarianism.  
+* [👑🚫📜2️⃣0️⃣ On Tyranny: Twenty Lessons from the Twentieth Century](../books/on-tyranny.md) by Timothy Snyder: This 📖 book provides a historical guide to resisting authoritarianism.  
 * The Authoritarian Personality by Theodor W. Adorno: This classic work explores the psychological roots of authoritarianism, offering a contrasting perspective on why people might be drawn to such a leader.  
 * The American Presidency by Robert Dallek: A comprehensive historical account of the presidency, which could provide a broader context for evaluating the claims made in the video.

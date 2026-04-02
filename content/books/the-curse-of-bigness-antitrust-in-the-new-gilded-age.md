@@ -7,7 +7,7 @@ share: true
 CTA: 🗳️ Defend democracy.
 affiliate link: https://amzn.to/4pUfRiO
 ---
-[Home](/content/index.md) > [Books](/content/books/index.md)  
+[Home](../index.md) > [Books](./index.md)  
 # 👑⚖️ The Curse of Bigness: Antitrust in the New Gilded Age  
 [🛒 The Curse of Bigness: Antitrust in the New Gilded Age. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4pUfRiO)  
   
@@ -67,7 +67,7 @@ affiliate link: https://amzn.to/4pUfRiO
 ## 📚 Book Recommendations  
   
 ### ↔️ Similar  
-* [👑⚔️🏛️ Goliath: The 100-Year War Between Monopoly Power and Democracy](/content/books/goliath-the-100-year-war-between-monopoly-power-and-democracy.md) by Matt Stoller  
+* [👑⚔️🏛️ Goliath: The 100-Year War Between Monopoly Power and Democracy](./goliath-the-100-year-war-between-monopoly-power-and-democracy.md) by Matt Stoller  
 * 📉 The Great Reversal: How America Gave Up on Free Markets by Thomas Philippon  
 * 🔄 The Antitrust Paradigm: Restoring a Competitive Economy by Jonathan B. Baker  
 * 👩‍⚖️ Antitrust: Taking on Monopoly Power from the Gilded Age to the Digital Age by Amy Klobuchar  
@@ -78,7 +78,7 @@ affiliate link: https://amzn.to/4pUfRiO
 * 💔 Competition is Killing Us: How Big Business is Harming Our Society and Planet by Michelle Meagher (This book presents a different perspective on how competition impacts society but may not be directly contrasting to the core solution of antitrust, rather it points to issues within the current competitive landscape)  
   
 ### 🔗 Related  
-* [🤔🐇🐢 Thinking, Fast and Slow](/content/books/thinking-fast-and-slow.md) by Daniel Kahneman (Examines cognitive biases relevant to economic decision-making and policy)  
+* [🤔🐇🐢 Thinking, Fast and Slow](./thinking-fast-and-slow.md) by Daniel Kahneman (Examines cognitive biases relevant to economic decision-making and policy)  
 * 🏢 Corporate Power and the Politics of Change by Matteo Gatti (Explores how corporations act as political actors)  
 * 🌐 The Political Power of Global Corporations by John Mikler (Analyzes corporations as political actors with complex strategies)  
 * 💥 The Shock Doctrine: The Rise of Disaster Capitalism by Naomi Klein (Examines the influence of corporate power on political and economic shifts)  

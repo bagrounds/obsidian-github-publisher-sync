@@ -4,8 +4,11 @@ aliases:
   - 🏗️🔧 Engineering
 title: 🏗️🔧 Engineering
 URL: https://bagrounds.org/topics/engineering
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_time: 2026-04-01T00:00:00Z
+force_analyze_links: false
 ---
-[Home](/content/index.md) > [Topics](/content/topics/index.md) > [Knowledge](/content/topics/a-hierarchical-view-of-human-knowledge.md)  
+[Home](../index.md) > [Topics](./index.md) > [Knowledge](./a-hierarchical-view-of-human-knowledge.md)  
 # 🏗️🔧 Engineering  
 ## 🤖 AI Summary  
 **High-Level Summary:**  
@@ -16,11 +19,11 @@ Here are the major subcategories within Engineering:
   
 - **Civil Engineering:** 🌉 Deals with the design, construction, and maintenance of the physical and naturally built environment, including roads, bridges, canals, dams, and buildings.2  
 - **Mechanical Engineering:** ⚙️ Focuses on the design, analysis, manufacturing, and maintenance of mechanical systems, including machines, engines, and tools.  
-- **[Electrical Engineering](/content/topics/electrical-engineering.md):** ⚡ Involves the design, development, and testing of electrical systems and devices, including power generation, distribution, and electronics.  
+- **[Electrical Engineering](./electrical-engineering.md):** ⚡ Involves the design, development, and testing of electrical systems and devices, including power generation, distribution, and electronics.  
 - **Chemical Engineering:** 🧪 Applies chemical principles to design and develop industrial processes, including the production of chemicals, pharmaceuticals, and materials.  
 - **Aerospace Engineering:** ✈️ Concerned with the design, development, and testing of aircraft and spacecraft.  
 - **Computer Engineering:** 💻 Integrates electrical engineering and computer science to develop computer hardware and software systems, with a focus on hardware and hardware/software interactions.  
-- **[Software Engineering](/content/topics/software-engineering.md):** 🖥️ Focuses specifically on the design, development, testing, and maintenance of software applications, emphasizing systematic and disciplined approaches to software development.  
+- **[Software Engineering](./software-engineering.md):** 🖥️ Focuses specifically on the design, development, testing, and maintenance of software applications, emphasizing systematic and disciplined approaches to software development.  
 - **Biomedical Engineering:** 🩺 Applies engineering principles to the field of medicine and biology, including the development of medical devices, prosthetics, and diagnostic tools.  
 - **Materials Engineering:** 🧱 Focuses on the properties and applications of materials, including metals, ceramics, polymers, and composites.  
 - **Industrial Engineering:** 🏭 Deals with the optimization of complex processes or systems. Industrial engineers work to eliminate waste of time, money, materials, machine3 time, energy and other resources.  

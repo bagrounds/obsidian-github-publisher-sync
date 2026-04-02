@@ -4,10 +4,10 @@ aliases:
   - ✏️🗂️⏱️✨ The Excalidraw Obsidian Showcase 57 key features in just 17 minutes
 title: ✏️🗂️⏱️✨ The Excalidraw Obsidian Showcase 57 key features in just 17 minutes
 URL: https://bagrounds.org/videos/the-excalidraw-obsidian-showcase-57-key-features-in-just-17-minutes
-Author: 
-Platform: 
-Channel: 
-tags: 
+Author:
+Platform:
+Channel:
+tags:
 ---
 [Home](../index.md) > [Videos](./index.md)  
 # ✏️🗂️⏱️✨ The Excalidraw Obsidian Showcase 57 key features in just 17 minutes  

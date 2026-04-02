@@ -10,7 +10,7 @@ Channel: Steve Magness
 tags:
 youtube: https://youtu.be/iQI4-ayPlYY
 ---
-[Home](/content/index.md) > [Videos](/content/videos/index.md)  
+[Home](../index.md) > [Videos](./index.md)  
 # 🫀💪📈 Guide How to Build a Monster Aerobic System | Your Detailed Guide  
 ![How to Build a Monster Aerobic System | Your Detailed Guide](https://youtu.be/iQI4-ayPlYY)  
   
@@ -72,5 +72,5 @@ A: 🏃 The key is to _counterbalance_ heavy endurance blocks with specific, hig
   
 ### Creatively Related Topics (Systems and Complexity)  
   
-- [🌐🔗🧠📖 Thinking in Systems: A Primer](/content/books/thinking-in-systems.md): Explores the concepts of interconnected systems, feedback loops, and non-linear results, providing a conceptual framework that mirrors the video’s "network effect" analogy in muscle physiology.  
-- [💪🧠 Endure: Mind, Body, and the Curiously Elastic Limits of Human Performance](/content/books/endure-mind-body-and-the-curiously-elastic-limits-of-human-performance.md): Discusses the psychological and central governor theories of endurance limits, offering a contrasting view to the video’s focus on muscle and cellular biology.
+- [🌐🔗🧠📖 Thinking in Systems: A Primer](../books/thinking-in-systems.md): Explores the concepts of interconnected systems, feedback loops, and non-linear results, providing a conceptual framework that mirrors the video’s "network effect" analogy in muscle physiology.  
+- [💪🧠 Endure: Mind, Body, and the Curiously Elastic Limits of Human Performance](../books/endure-mind-body-and-the-curiously-elastic-limits-of-human-performance.md): Discusses the psychological and central governor theories of endurance limits, offering a contrasting view to the video’s focus on muscle and cellular biology.

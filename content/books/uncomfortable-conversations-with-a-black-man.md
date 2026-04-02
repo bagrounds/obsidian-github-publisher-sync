@@ -9,7 +9,7 @@ tags:
 affiliate link: https://amzn.to/3WMLCxX
 CTA: ✊ Confront racism.
 ---
-[Home](/content/index.md) > [Books](/content/books/index.md)  
+[Home](../index.md) > [Books](./index.md)  
 # 😬👨🏿 Uncomfortable Conversations With A Black Man  
 [🛒 Uncomfortable Conversations With A Black Man. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3WMLCxX)  
   
@@ -44,7 +44,7 @@ CTA: ✊ Confront racism.
 ## 📚 Further Reading Recommendations  
   
 ### 🗣️ Similar Conversations (Focus on Anti-Racism, Dialogue, Personal Experience)  
-* **[✊🏿 How To Be An Antiracist](/content/books/how-to-be-an-antiracist.md)** by Ibram X. Kendi: A foundational text that defines antiracism and explores different forms of racism through history and personal narrative.  
+* **[✊🏿 How To Be An Antiracist](./how-to-be-an-antiracist.md)** by Ibram X. Kendi: A foundational text that defines antiracism and explores different forms of racism through history and personal narrative.  
 * ❓ **So You Want to Talk About Race** by Ijeoma Oluo: Directly addresses complex issues like privilege, intersectionality, microaggressions, and police brutality in an accessible Q&A style.  
 * 🧘 **Me and White Supremacy** by Layla F. Saad: A 28-day challenge designed to help readers with white privilege understand and dismantle their participation in white supremacy.  
 * 💌 **Between the World and Me** by Ta-Nehisi Coates: A powerful, personal letter from the author to his son about the realities of being Black in America.  
@@ -59,11 +59,11 @@ CTA: ✊ Confront racism.
 * 🇬🇧 **Why I'm No Longer Talking to White People About Race** by Reni Eddo-Lodge: Offers a contrasting viewpoint from Britain, explaining the author's frustration with unproductive conversations about race and focusing on systemic issues.  
   
 ### 🎨 Creatively Related Reads (Themes of Empathy, Communication, Bridge-Building, Related Narratives)  
-* **[🧑🏿‍⚖️🔄 Just Mercy: A Story of Justice and Redemption](/content/books/just-mercy-a-story-of-justice-and-redemption.md)** by Bryan Stevenson: A memoir focused on fighting injustice within the legal system, highlighting empathy and the human cost of systemic bias.  
+* **[🧑🏿‍⚖️🔄 Just Mercy: A Story of Justice and Redemption](./just-mercy-a-story-of-justice-and-redemption.md)** by Bryan Stevenson: A memoir focused on fighting injustice within the legal system, highlighting empathy and the human cost of systemic bias.  
 * ❤️‍🩹 **The Antiracist Heart: A Self-Compassion and Activism Handbook** by Roxy Manning & Sarah Peyton: Combines neuroscience, self-compassion, and Nonviolent Communication principles for internal and interpersonal antiracist work.  
 * 🎤 **Finding Me: A Memoir** by Viola Davis: A powerful memoir exploring identity, trauma, and finding one's voice, touching on themes of race and belonging in America.  
 * 🤕 **What Happened To You?: Conversations on Trauma, Resilience, and Healing** by Bruce D. Perry & Oprah Winfrey: Explores how past trauma shapes present behavior, fostering empathy and understanding for others' experiences.  
 * 🤫 **Race Talk and the Conspiracy of Silence: Understanding and Facilitating Difficult Dialogues on Race** by Derald Wing Sue: Provides tools and debunks myths surrounding conversations about race, emphasizing the need to break the silence.  
   
-## 💬 [Gemini](/content/software/gemini.md) Prompt (gemini-2.5-pro-exp-03-25)  
+## 💬 [Gemini](../software/gemini.md) Prompt (gemini-2.5-pro-exp-03-25)  
 > Write a markdown-formatted (start headings at level H2) book report, followed by a plethora of additional similar, contrasting, and creatively related book recommendations on Uncomfortable Conversations With A Black Man. Be thorough in content discussed but concise and economical with your language. Structure the report with section headings and bulleted lists to avoid long blocks of text.

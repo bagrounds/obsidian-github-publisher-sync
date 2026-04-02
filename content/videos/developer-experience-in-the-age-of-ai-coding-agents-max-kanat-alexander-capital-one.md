@@ -10,7 +10,7 @@ Channel: AI Engineer
 tags:
 youtube: https://youtu.be/rT2Del5pwg4
 ---
-[Home](/content/index.md) > [Videos](/content/videos/index.md)  
+[Home](../index.md) > [Videos](./index.md)  
 # 🤖💻✨ Developer Experience in the Age of AI Coding Agents – Max Kanat-Alexander, Capital One  
 ![Developer Experience in the Age of AI Coding Agents – Max Kanat-Alexander, Capital One](https://youtu.be/rT2Del5pwg4)  
   
@@ -27,8 +27,8 @@ youtube: https://youtu.be/rT2Del5pwg4
   
 ## 🤔 Evaluation  
   
-* 🤖 While the speaker emphasizes standardizing tools, [🧑‍💻📈 The Pragmatic Programmer: Your Journey to Mastery](/content/books/the-pragmatic-programmer-your-journey-to-mastery.md) by Andrew Hunt and David Thomas (Addison-Wesley) argues for deep mastery of specific tools regardless of popularity.  
-* 🤖 Research from [🏎️💾 Accelerate: The Science of Lean Software and DevOps: Building and Scaling High Performing Technology Organizations](/content/books/accelerate.md) by Nicole Forsgren, Jez Humble, and Gene Kim (IT Revolution Press) supports the claim that fast feedback loops are critical for high performing teams.  
+* 🤖 While the speaker emphasizes standardizing tools, [🧑‍💻📈 The Pragmatic Programmer: Your Journey to Mastery](../books/the-pragmatic-programmer-your-journey-to-mastery.md) by Andrew Hunt and David Thomas (Addison-Wesley) argues for deep mastery of specific tools regardless of popularity.  
+* 🤖 Research from [🏎️💾 Accelerate: The Science of Lean Software and DevOps: Building and Scaling High Performing Technology Organizations](../books/accelerate.md) by Nicole Forsgren, Jez Humble, and Gene Kim (IT Revolution Press) supports the claim that fast feedback loops are critical for high performing teams.  
 * 🤖 Topics to explore include the specific security risks of giving AI agents full CLI access to enterprise environments.  
   
 ## ❓ Frequently Asked Questions (FAQ)  
@@ -58,10 +58,10 @@ youtube: https://youtu.be/rT2Del5pwg4
   
 ### 🆚 Contrasting  
   
-* [🤿💼 Deep Work: Rules for Focused Success in a Distracted World](/content/books/deep-work.md) by Cal Newport. 🤖 Argues for long periods of uninterrupted human focus which contrasts with the rapid iterative pulses of AI agents.  
-* [🦄👤🗓️ The Mythical Man-Month: Essays on Software Engineering](/content/books/the-mythical-man-month.md) by Frederick Brooks. 🤖 Discusses the inherent limits of adding more resources to software projects, even automated ones.  
+* [🤿💼 Deep Work: Rules for Focused Success in a Distracted World](../books/deep-work.md) by Cal Newport. 🤖 Argues for long periods of uninterrupted human focus which contrasts with the rapid iterative pulses of AI agents.  
+* [🦄👤🗓️ The Mythical Man-Month: Essays on Software Engineering](../books/the-mythical-man-month.md) by Frederick Brooks. 🤖 Discusses the inherent limits of adding more resources to software projects, even automated ones.  
   
 ### 🎨 Creatively Related  
   
-* [🌐🔗🧠📖 Thinking in Systems: A Primer](/content/books/thinking-in-systems.md) by Donella Meadows. 🤖 Provides a framework for understanding how changing one part of a development environment affects the whole.  
-* [⚛️🔄 Atomic Habits: An Easy & Proven Way to Build Good Habits & Break Bad Ones](/content/books/atomic-habits.md) by James Clear. 🤖 Relevant for building the small, consistent documentation and review habits needed to sustain a virtuous development cycle.
+* [🌐🔗🧠📖 Thinking in Systems: A Primer](../books/thinking-in-systems.md) by Donella Meadows. 🤖 Provides a framework for understanding how changing one part of a development environment affects the whole.  
+* [⚛️🔄 Atomic Habits: An Easy & Proven Way to Build Good Habits & Break Bad Ones](../books/atomic-habits.md) by James Clear. 🤖 Relevant for building the small, consistent documentation and review habits needed to sustain a virtuous development cycle.

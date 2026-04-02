@@ -10,7 +10,7 @@ Channel: The Prof G Pod – Scott Galloway
 tags:
 youtube: https://youtu.be/aAn3B_XNSMs
 ---
-[Home](/content/index.md) > [Videos](/content/videos/index.md) | [👨‍🏫📈💻 Scott Galloway](/content/people/scott-galloway.md)  
+[Home](../index.md) > [Videos](./index.md) | [👨‍🏫📈💻 Scott Galloway](../people/scott-galloway.md)  
 # 🇺🇦🤝🤥 Ukraine and America’s Credibility Crisis - with Anne Applebaum  
 ![Ukraine and America’s Credibility Crisis - with Anne Applebaum](https://youtu.be/aAn3B_XNSMs)  
   
@@ -46,12 +46,12 @@ youtube: https://youtu.be/aAn3B_XNSMs
 ## 📚 Book Recommendations  
   
 ### ↔️ Similar  
-* [👑🌎 Autocracy, Inc.: The Dictators Who Want to Run the World](/content/books/autocracy-inc-the-dictators-who-want-to-run-the-world.md): Explores how modern authoritarian regimes are connected by networks of kleptocratic finance and propaganda, actively working to undermine democracies worldwide.  
-* [💸🌍 Kleptopia: How Dirty Money Is Conquering the World](/content/books/kleptopia-how-dirty-money-is-conquering-the-world.md): Details through investigative journalism how globalized dirty money from states like Russia and Kazakhstan flows into and corrupts Western financial systems and political elites.  
+* [👑🌎 Autocracy, Inc.: The Dictators Who Want to Run the World](../books/autocracy-inc-the-dictators-who-want-to-run-the-world.md): Explores how modern authoritarian regimes are connected by networks of kleptocratic finance and propaganda, actively working to undermine democracies worldwide.  
+* [💸🌍 Kleptopia: How Dirty Money Is Conquering the World](../books/kleptopia-how-dirty-money-is-conquering-the-world.md): Details through investigative journalism how globalized dirty money from states like Russia and Kazakhstan flows into and corrupts Western financial systems and political elites.  
 * 🗺️ Grand Corruption: Curbing Kleptocracy Globally: A multi-author volume that examines the nature, causes, and consequences of grand corruption, including its assessment, measurement, and legal strategies for attack.  
   
 ### 🆚 Contrasting  
-* [↔️🏛️ The Narrow Corridor: States, Societies, and the Fate of Liberty](/content/books/the-narrow-corridor-states-societies-and-the-fate-of-liberty.md): Compares the historical development of states, arguing that liberty thrives only in the narrow corridor between a despotic state and a weak state lacking the capacity to govern.  
+* [↔️🏛️ The Narrow Corridor: States, Societies, and the Fate of Liberty](../books/the-narrow-corridor-states-societies-and-the-fate-of-liberty.md): Compares the historical development of states, arguing that liberty thrives only in the narrow corridor between a despotic state and a weak state lacking the capacity to govern.  
 * ⚖️ Democracy Versus Autocracy: A Comparative Study of Governments in the World War: A historical work, published in 1918, that provides an ideological comparison of democratic and autocratic systems, offering a framework for understanding their fundamental differences in governance.  
   
 ### 🎨 Creatively Related  

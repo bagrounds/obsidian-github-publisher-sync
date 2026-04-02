@@ -7,7 +7,7 @@ share: true
 CTA: 📜 Secure your freedom.
 affiliate link: https://amzn.to/4pFY8vj
 ---
-[Home](/content/index.md) > [Books](/content/books/index.md)  
+[Home](../index.md) > [Books](./index.md)  
 # 📜👶🗽 Magna Carta: The Birth of Liberty  
 [🛒 Magna Carta: The Birth of Liberty. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4pFY8vj)  
   
@@ -83,8 +83,8 @@ affiliate link: https://amzn.to/4pFY8vj
 * 🤖 Leviathan by Thomas Hobbes (Advocacy for a strong, undivided sovereign, contrasting limitations on royal authority)  
   
 ### 🔗 Related  
-* [🇺🇸📜 The Federalist Papers](/content/books/the-federalist-papers.md) by Alexander Hamilton, James Madison, and John Jay (Discusses constitutional government, checks and balances)  
-* [🗳️🕊️🇺🇸 Democracy in America](/content/books/democracy-in-america.md) by Alexis de Tocqueville (Explores the foundations and implications of American democracy, partly influenced by Magna Carta's legacy)  
+* [🇺🇸📜 The Federalist Papers](./the-federalist-papers.md) by Alexander Hamilton, James Madison, and John Jay (Discusses constitutional government, checks and balances)  
+* [🗳️🕊️🇺🇸 Democracy in America](./democracy-in-america.md) by Alexis de Tocqueville (Explores the foundations and implications of American democracy, partly influenced by Magna Carta's legacy)  
 * 📜 The Bill of Rights: A User's Guide by Akhil Reed Amar (Examines the American Bill of Rights, drawing connections to its historical roots)  
   
 ## 🫵 What Do You Think?  

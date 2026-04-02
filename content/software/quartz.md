@@ -5,7 +5,7 @@ aliases:
 title: 💎🔬🔍📈 Quartz
 URL: https://bagrounds.org/software/quartz
 ---
-[Home](/content/index.md) > [Software](/content/software/index.md)  
+[Home](../index.md) > [Software](./index.md)  
 # 💎🔬🔍📈 Quartz  
   
 ## 🤖 AI Summary  
@@ -144,7 +144,7 @@ URL: https://bagrounds.org/software/quartz
 - **Topical:**  
     - "Building a Second Brain" by Tiago Forte 🧠  
 - **Tangentially Related:**  
-    - [🧼💾 Clean Code: A Handbook of Agile Software Craftsmanship](/content/books/clean-code.md) by Robert C. Martin 💻  
+    - [🧼💾 Clean Code: A Handbook of Agile Software Craftsmanship](../books/clean-code.md) by Robert C. Martin 💻  
 - **Topically Opposed:**  
     - "Database Systems: The Complete Book" by Hector Garcia-Molina, Jennifer Widom, Jeffrey D. Ullman 📊  
 - **More General:**  
@@ -152,7 +152,7 @@ URL: https://bagrounds.org/software/quartz
 - **More Specific:**  
     - "React Explained" by Zac Gordon ⚛️  
 - **Fictional:**  
-    - [👍🦮🌌 The Hitchhiker's Guide to the Galaxy](/content/books/the-hitchhikers-guide-to-the-galaxy.md) by Douglas Adams 🚀  
+    - [👍🦮🌌 The Hitchhiker's Guide to the Galaxy](../books/the-hitchhikers-guide-to-the-galaxy.md) by Douglas Adams 🚀  
 - **Rigorous:**  
     - "Introduction to Information Retrieval" by Christopher D. Manning, Prabhakar Raghavan, Hinrich Schütze 🔍  
 - **Accessible:**  

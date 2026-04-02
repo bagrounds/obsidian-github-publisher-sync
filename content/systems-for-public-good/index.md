@@ -8,8 +8,9 @@ backlinks: false
 updated: 2026-04-01T11:01:23-07:00
 ---
 [🏡 Home](../index.md)  
-# 🏛️ Systems for Public Good (11)  
+# 🏛️ Systems for Public Good (12)  
 - [🏛️ Systems for Public Good — AGENTS.md](./AGENTS.md)  
+- [2026-04-02 | 🏛️ 👶 Cultivating Care: Beyond Subsidies and Elevating a Vital Profession 🏛️](./2026-04-02-cultivating-care-beyond-subsidies-and-elevating-a-vital-profession.md)  
 - [2026-04-01 | 🏛️ 🏡 Expanding Housing Abundance: Beyond Traditional Models 🏛️](./2026-04-01-expanding-housing-abundance-beyond-traditional-models.md)  
 - [2026-03-31 | 🏛️ 🏡 The Cornerstone of Well-being: Housing as a Foundational Freedom 🏛️](./2026-03-31-the-cornerstone-of-well-being-housing-as-a-foundational-freedom.md)  
 - [2026-03-30 | 🏛️ 🌡️ Safeguarding Collective Well-being: Public Health as a Foundational Freedom 🏛️](./2026-03-30-safeguarding-collective-well-being-public-health-as-a-foundational-freedom.md)  

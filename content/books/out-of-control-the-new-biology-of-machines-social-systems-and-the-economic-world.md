@@ -7,7 +7,7 @@ share: true
 CTA: ⚙️ Understand interconnectedness.
 affiliate link: https://amzn.to/49JB1vh
 ---
-[Home](/content/index.md) > [Books](/content/books/index.md)  
+[Home](../index.md) > [Books](./index.md)  
 # ⚠️🤖📈 Out of Control: The New Biology of Machines, Social Systems, and the Economic World  
 [🛒 Out of Control: The New Biology of Machines, Social Systems, and the Economic World. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/49JB1vh)  
   
@@ -51,7 +51,7 @@ affiliate link: https://amzn.to/49JB1vh
 * 🔗 Blockchain Technology and Decentralized Autonomous Organizations (DAOs)  
 * 🗣️ Generative AI and Large Language Models (LLMs)  
 * 🧪 Synthetic Biology and CRISPR Gene Editing  
-* [⚛️ Quantum Computing](/content/topics/quantum-computing.md) Implications for Complex Systems  
+* [⚛️ Quantum Computing](../topics/quantum-computing.md) Implications for Complex Systems  
 * 👯 Digital Twins and Mirror Worlds  
 * 🌐 The Internet of Things (IoT) and Edge Computing Architectures  
 * 🤖 Cybernetics 2.0 and Human-AI Symbiosis  
@@ -77,19 +77,19 @@ affiliate link: https://amzn.to/49JB1vh
 ## 📚 Book Recommendations  
   
 ### ➕ Similar  
-* [🔫🦠🔩 Guns, Germs, and Steel: The Fates of Human Societies](/content/books/guns-germs-and-steel-the-fates-of-human-societies.md) by Jared Diamond  
+* [🔫🦠🔩 Guns, Germs, and Steel: The Fates of Human Societies](./guns-germs-and-steel-the-fates-of-human-societies.md) by Jared Diamond  
 * 🧠 Emergence: The Connected Lives of Ants, Brains, Cities, and Software by Steven Johnson  
 * ⚛️ Complexity: The Emerging Science at the Edge of Order and Chaos by M. Mitchell Waldrop  
   
 ### ➖ Contrasting  
-* [👁️‍🗨️💰⛓️👤 The Age of Surveillance Capitalism: The Fight for a Human Future at the New Frontier of Power](/content/books/the-age-of-surveillance-capitalism.md) by Shoshana Zuboff  
+* [👁️‍🗨️💰⛓️👤 The Age of Surveillance Capitalism: The Fight for a Human Future at the New Frontier of Power](./the-age-of-surveillance-capitalism.md) by Shoshana Zuboff  
 * 📺 Technopoly: The Surrender of Culture to Technology by Neil Postman  
 * 🎭 Against Method by Paul Feyerabend  
   
 ### 🤝 Related  
-* [🌐🔗🧠📖 Thinking in Systems: A Primer](/content/books/thinking-in-systems.md) by Donella H. Meadows  
+* [🌐🔗🧠📖 Thinking in Systems: A Primer](./thinking-in-systems.md) by Donella H. Meadows  
 * 🔮 The Inevitable: Understanding the 12 Technological Forces That Will Shape Our Future by Kevin Kelly  
-* [🤖🧬⬆️ The Singularity Is Near: When Humans Transcend Biology](/content/books/the-singularity-is-near-when-humans-transcend-biology.md) by Ray Kurzweil  
+* [🤖🧬⬆️ The Singularity Is Near: When Humans Transcend Biology](./the-singularity-is-near-when-humans-transcend-biology.md) by Ray Kurzweil  
   
 ## 🫵 What Do You Think?  
 Which of Kelly's Nine Laws of God do you find most impactful today? How has the balance between control and emergence shifted in your professional domain since the book's publication?

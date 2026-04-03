@@ -6,10 +6,12 @@ title: 🤖 AI Blog
 URL: https://bagrounds.org/ai-blog/index
 Author: "[[bryan-grounds]]"
 backlinks: false
-updated: 2026-04-02T15:55:50-07:00
+updated: 2026-04-03T07:58:54-07:00
 ---
 [Home](../index.md)  
-# 🤖 AI Blog (101)  
+# 🤖 AI Blog (103)  
+- [2026-04-02 | 🔁 The Double-Date Feedback Loop 🗓️](./2026-04-02-2-the-double-date-feedback-loop.md)  
+- [2026-04-02 | 🧹 Purging the Vault from Root 🗂️](./2026-04-02-1-purging-the-vault-from-root.md)  
 - [2026-04-01 | 🚀 Firing the Missiles: Deleting TypeScript 🗑️](./2026-04-01-3-firing-the-missiles-deleting-typescript.md)  
 - [2026-04-01 | 🤖 AI Blog Sections and Timezone Ghosts 🕐](./2026-04-01-2-ai-blog-sections-and-timezone-ghosts.md)  
 - [2026-04-01 | 🔍 The Audit That Barely Looked 👀](./2026-04-01-1-the-audit-that-barely-looked.md)  
@@ -43,7 +45,7 @@ updated: 2026-04-02T15:55:50-07:00
 - [2026-03-27 | 🔢 Sequencing the Saga: Numbering a Marathon of Blog Posts](./2026-03-27-12-sequencing-the-saga.md)  
 - [2026-03-27 | 🔒 Zero Tolerance: Why Our Circuit Breaker Now Blocks Any File Deletion](./2026-03-27-11-zero-deletion-circuit-breaker.md)  
 - [2026-03-27 | 🛡️ Never Again: Multi-Layered Safeguards Against Vault Data Loss](./2026-03-27-10-data-loss-prevention-safeguards.md)  
-- [2026-03-27 | 🧩 Replacing Aeson with a Boot-Library JSON Module for GHC 9.14](../../2026-03-27-1-replacing-aeson-boot-library-json-ghc914.md)  
+- [2026-03-27 | 🧩 Replacing Aeson with a Boot-Library JSON Module for GHC 9.14](./2026-03-27-1-replacing-aeson-boot-library-ghc914.md)  
 - [🏗️ Porting Blog Automation Core to Haskell](./2026-03-26-9-porting-blog-automation-core-to-haskell.md)  
 - [2026-03-26 | 🔧 Wiring the Engine — Porting Env, Timer, and Frontmatter to Haskell](../../2026-03-26-8-porting-env-timer-frontmatter-to-haskell.md)  
 - [2026-03-26 | 🧵 Porting Text, HTML, and Retry to Haskell — Pure Functions, Progressive Truncation, and Exponential Backoff](../../2026-03-26-7-porting-text-html-retry-to-haskell.md)  
@@ -95,7 +97,7 @@ updated: 2026-04-02T15:55:50-07:00
 - [2026-03-13 | 🔬 The Experiment That Forgot to Observe — Fixing A/B Test Metrics Collection 🤖](./2026-03-13-ab-test-metrics-the-experiment-that-forgot-to-observe.md)  
 - [2026-03-11 | 🔊 Teaching the Robot to Breathe — Semicolon Injection for Natural TTS Pauses 🤖](./2026-03-11-tts-semicolon-injection.md)  
 - [2026-03-11 | 🏗️ From GitLab to GitHub - Migrating a PureScript Deck-Building Game 🤖](./2026-03-11-domination-gitlab-to-github-migration.md)  
-- [2026-03-11 | 🧪 A/B Testing the Robot's Voice — Prompt Experiments for Social Media Engagement 🤖](./2026-03-11-ab-testing-social-media.md)  
+- [2026-03-11 | 🧪 A/B Testing the Robot's Voice - Prompt Experiments for Social Media Engagement 🤖](./2026-03-11-ab-testing-social-media.md)  
 - [2026-03-10 | 🔊 Teaching the Robot to Breathe - Semicolon Injection for Natural TTS Pauses 🤖](./2026-03-10-tts-semicolon-injection.md)  
 - [2026-03-10 | ⏱️ Order of Operations — Why Timestamps Must Come Before the Push 🤖](./2026-03-10-timestamp-before-push-ordering.md)  
 - [2026-03-10 | 🏗️ Functional Refactoring of the Auto-Posting Pipeline 🤖](./2026-03-10-functional-refactoring.md)  

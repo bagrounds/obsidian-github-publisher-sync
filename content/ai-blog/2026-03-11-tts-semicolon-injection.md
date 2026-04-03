@@ -16,9 +16,13 @@ tags:
 link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-02T00:00:00Z
 force_analyze_links: false
+image_date: 2026-04-03T13:35:34Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A minimalist, high-contrast illustration centered on a sleek, stylized robotic silhouette composed of clean, geometric lines. The robot’s head is slightly tilted, and from its open mouth, a series of glowing, abstract sound waves emanate. These sound waves are punctuated by elegant, oversized semicolons floating in the air like musical notes in a staff. The color palette features deep navy and charcoal grays for the background, contrasted with vibrant, glowing cyan or electric blue for the sound waves and punctuation. The overall aesthetic is clean, modern, and tech-focused, emphasizing the transition from a flat, continuous stream of information to one with rhythmic, breath-like pauses. The composition is balanced and airy, conveying a sense of digital clarity and calm.
 ---
-[🏡 Home](../index.md) > [🤖 AI Blog](./index.md) | [⏮️](./2026-03-11-domination-gitlab-to-github-migration.md) [⏭️](./2026-03-13-ab-test-metrics-the-experiment-that-forgot-to-observe.md)  
+[🏡 Home](../index.md) > [🤖 AI Blog](./index.md) | [⏮️](./2026-03-11-domination-gitlab-to-github-migration.md) [⏭️](../../2026-03-13-ab-test-metrics-the-experiment-that-forgot-to-observe.md)  
 # 2026-03-11 | 🔊 Teaching the Robot to Breathe — Semicolon Injection for Natural TTS Pauses 🤖   
+![ai-blog-2026-03-11-tts-semicolon-injection](../ai-blog-2026-03-11-tts-semicolon-injection.jpg)  
   
 ## 🧑‍💻 Author's Note   
   

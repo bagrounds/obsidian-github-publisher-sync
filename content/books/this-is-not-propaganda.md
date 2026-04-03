@@ -8,6 +8,9 @@ Author:
 tags:
 affiliate link: https://amzn.to/4jwntEL
 CTA: 👁️ Question everything.
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_time: 2026-04-03T00:00:00Z
+force_analyze_links: false
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🤥📣 This Is Not Propaganda: Adventures in the War Against Reality  
@@ -17,7 +20,7 @@ CTA: 👁️ Question everything.
   
 ### ℹ️ Overview  
   
-* ⭐ *This Is Not Propaganda: Adventures in the War Against Reality* (2019) is a non-fiction work by Soviet-born British journalist and author Peter Pomerantsev.  
+* ⭐ *This Is Not [📢 Propaganda](./propaganda.md): Adventures in the War Against Reality* (2019) is a non-fiction work by Soviet-born British journalist and author Peter Pomerantsev.  
 * 🔍 It blends memoir, investigative journalism, and intellectual exploration to dissect the modern landscape of disinformation and propaganda.  
 * ✈️ Pomerantsev travels globally, interviewing individuals involved in or affected by information warfare – from troll farm operators and activists to political strategists and extremists.  
   

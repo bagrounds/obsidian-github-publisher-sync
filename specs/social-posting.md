@@ -141,11 +141,11 @@
 
 ## 🔍 OpenGraph Metadata Extraction
 
-🌐 `fetchOgMetadata` parses `<meta property="og:*">` tags from any URL to extract title, description, and image URL.
-🔄 Handles both attribute orders: `property` before `content` and `content` before `property`.
-⏱️ Uses a 10-second fetch timeout with `AbortSignal.timeout` to prevent hanging.
-🛡️ Returns partial results on incomplete metadata and an empty object on complete failure.
-📷 `fetchImageAsBuffer` retrieves images as Uint8Array buffers with MIME type detection from Content-Type headers.
+🌐 `fetchOgMetadata` fetches a URL via HTTPS and decodes the response body as UTF-8 using `decodeUtf8Lenient` for robust handling of non-UTF-8 bytes.
+🔍 `extractOgProperty` parses `<meta property="og:*">` tags to extract title, description, and image URL by searching for `property="og:{name}" content="` markers.
+🛡️ Returns partial results on incomplete metadata (`Nothing` for missing properties).
+📷 `fetchImageAsBuffer` retrieves images as lazy ByteString buffers for blob uploads.
+🏷️ `detectContentType` infers MIME type from the image URL extension (webp, png, gif, svg) with jpeg as the default fallback. Used by the Bluesky blob upload to set the correct `Content-Type` header.
 
 ## 📝 Embed Section Builders
 
@@ -216,8 +216,10 @@
 | `deleteMastodonPost(statusId, credentials)` | 🗑️ Delete Mastodon status |
 | `fetchMastodonOEmbed(postUrl)` | 🖼️ Fetch Mastodon oEmbed HTML |
 | `getMastodonEmbedHtml(postUrl, text, date)` | 🖼️ Get Mastodon embed with oEmbed-to-iframe fallback |
-| `fetchOgMetadata(url)` | 🔍 Extract OpenGraph metadata from URL |
-| `fetchImageAsBuffer(imageUrl)` | 📷 Fetch image as Uint8Array buffer with MIME type |
+| `fetchOgMetadata(url)` | 🔍 Extract OpenGraph metadata from URL via UTF-8 decoded HTTP response |
+| `extractOgProperty(property, html)` | 🔍 Pure extraction of a single OG property from HTML text |
+| `fetchImageAsBuffer(imageUrl)` | 📷 Fetch image as lazy ByteString buffer |
+| `detectContentType(imageUrl)` | 🏷️ Infer MIME type from image URL extension |
 | `createSectionAppender(header)` | 📝 Factory for effectful section appenders with idempotency |
 
 ## 🧪 Testing
@@ -234,3 +236,11 @@
 - 📝 Platform builders: correct header assignment for all three platforms
 - 🛡️ `createSectionAppender`: file append and idempotency check
 - 🏭 Factory consistency: factory-created builders match direct builders
+
+🔬 Tests in `haskell/test/Automation/OgMetadataTest.hs` with 16 test cases covering:
+- 🔍 `extractOgProperty`: title, description, image, URL extraction from HTML
+- 🚫 Missing properties, empty HTML, large HTML offsets
+- 🎵 Emoji and special character handling in OG content
+- 🔗 Real-world Quartz HTML structure with CSS/JS interleaved
+- 🏷️ `detectContentType`: webp, png, gif, svg, jpeg fallback, case insensitivity
+- 🎲 Property-based tests for roundtripping and MIME type validity

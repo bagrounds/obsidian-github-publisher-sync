@@ -10,6 +10,9 @@ updated: 2026-03-23T17:33:53.550Z
 image_date: 2026-03-23T17:31:48.038Z
 image_model: black-forest-labs/FLUX.1-schnell
 image_prompt: A warm, sun-drenched pastoral scene featuring a weathered wooden journal lying open on a rustic porch railing. Resting atop the journal is a simple, vintage-style fountain pen. In the soft-focus background, a lush green pasture stretches toward a horizon of rolling hills, with a small, tidy coop visible in the distance. The lighting is golden and hazy, evocative of late Sunday afternoon. A few stray feathers catch the light near the journal, and the texture of aged paper and rough-hewn wood is prominent. The color palette consists of soft earth tones, muted greens, and warm amber light, creating an atmosphere of quiet reflection and peaceful stewardship.
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_time: 2026-04-03T00:00:00Z
+force_analyze_links: false
 ---
 [🏡 Home](../index.md) > [🐔 Chickie Loo](./index.md) | [⏮️](./2026-03-14-the-quiet-after-the-storm-moving-forward-together.md) [⏭️](./2026-03-16-the-quiet-art-of-waiting.md)  
 # 2026-03-15 | 🐔📊 Weekly Recap 🐔  

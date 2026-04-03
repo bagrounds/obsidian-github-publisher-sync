@@ -6,6 +6,9 @@ URL: https://bagrounds.org/books/american-amnesia-how-the-war-on-government-led-
 share: true
 affiliate link: https://amzn.to/4nzpWAQ
 CTA: 🇺🇸 Reclaim our heritage.
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_time: 2026-04-03T00:00:00Z
+force_analyze_links: false
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🇺🇸🧠 American Amnesia: How the War on Government Led Us to Forget What Made America Prosper  

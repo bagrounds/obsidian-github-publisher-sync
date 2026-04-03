@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-04-03T08:06:59-07:00
+updated: 2026-04-03T08:14:34-07:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -50,10 +50,10 @@ updated: 2026-04-03T08:06:59-07:00
   
   
 ## [📚 Books](./books/index.md) (958)  
+- [📢 Propaganda](./books/propaganda.md)  
 - [🗣️🧠 The Language Instinct: How the Mind Creates Language](./books/the-language-instinct-how-the-mind-creates-language.md)  
 - [🏃‍♀️🦴 Anatomy for Runners: Unlocking Your Athletic Potential for Health, Speed, and Injury Prevention](./books/anatomy-for-runners-unlocking-your-athletic-potential-for-health-speed-and-injury-prevention.md)  
 - [😠🎭 Uncivil Agreement: How Politics Became Our Identity](./books/uncivil-agreement-how-politics-became-our-identity.md)  
-- [🇺🇸🧠 American Amnesia: How the War on Government Led Us to Forget What Made America Prosper](./books/american-amnesia-how-the-war-on-government-led-us-to-forget-what-made-america-prosper.md)  
   
   
 ## [📺 Videos](./videos/index.md) (714)  

@@ -5,10 +5,10 @@ aliases:
 title: 📺 Videos
 URL: https://bagrounds.org/videos
 backlinks: false
-updated: 2026-04-03T15:51:51-07:00
+updated: 2026-04-03T15:57:34-07:00
 ---
 [Home](../index.md)  
-# 📺 Videos (717)  
+# 📺 Videos (718)  
 - [💰🤑🤖💡🚀💲 $0.10/Month Runs My Entire AI Life. I'll Show You How.](./0-10-month-runs-my-entire-ai-life-ill-show-you-how.md)  
 - [📊📈📉📃👁️ 10 Charts to Understand the 900 Page Budget Bill](./10-charts-to-understand-the-900-page-budget-bill.md)  
 - [🤖🔗⬆️✅ 12-Factor Agents: Patterns of reliable LLM applications — Dex Horthy, HumanLayer](./12-factor-agents-patterns-of-reliable-llm-applications-dex-horthy-humanlayer.md)  
@@ -199,6 +199,7 @@ updated: 2026-04-03T15:51:51-07:00
 - [⛺➡️🏡🏙️🏠💖 From Encampments to Homes: How Dallas Is Solving Homelessness](./from-encampments-to-homes-how-dallas-is-solving-homelessness.md)  
 - [💻✨🤖 From IDEs to AI Agents with Steve Yegge](./from-ides-to-ai-agents-with-steve-yegge.md)  
 - [🌳🍎❓🛠️ Fruit Tree Care Troubleshooting](./fruit-tree-care-troubleshooting.md)  
+- [🍏🌳✅✂️ Fruit Tree selection and pruning](./fruit-tree-selection-and-pruning.md)  
 - [FTC commissioner fired by Trump says move threatens agency designed to protect consumers](./ftc-commissioner-fired-by-trump-says-move-threatens-agency-designed-to-protect-consumers.md)  
 - [🚨🗣️🔥🗳️ Full Briefing: Mayor Frey Addresses Outrage Over ICE Shooting in Minneapolis | DRM News | AC1F](./full-briefing-mayor-frey-addresses-outrage-over-ice-shooting-in-minneapolis-drm-news-ac1f.md)  
 - [🇫🇮🇪🇺🗣️🌍🇺🇸💥🇮🇷⚔️🇺🇦 FULL DISCUSSION: Finland President Stubb Slams Brexit, Talks Trump, Iran War, Ukraine, EU | AC1G](./full-discussion-finland-president-stubb-slams-brexit-talks-trump-iran-war-ukraine-eu-ac1g.md)  

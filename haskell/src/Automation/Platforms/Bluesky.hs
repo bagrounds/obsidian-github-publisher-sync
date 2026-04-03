@@ -34,7 +34,7 @@ import Network.HTTP.Types.Status (statusCode)
 import Automation.Html (formatDisplayDate, textToHtml)
 import qualified Automation.Json as Json
 import Automation.Json ((.=), (.:), encode, eitherDecode, object, withObject)
-import Automation.Platforms.OgMetadata (fetchImageAsBuffer)
+import Automation.Platforms.OgMetadata (detectContentType, fetchImageAsBuffer)
 import Automation.Retry (HttpCodeException (..), defaultRetryOptions, withRetry)
 import Automation.Types
   ( BlueskyCredentials (..)
@@ -182,8 +182,8 @@ normalizeUrl t
 
 -- ── Blob Upload ────────────────────────────────────────────────────────
 
-uploadBlob :: Manager -> AtpSession -> LBS.ByteString -> IO (Either Text Json.Value)
-uploadBlob manager AtpSession{..} imageData = do
+uploadBlob :: Manager -> AtpSession -> BS.ByteString -> LBS.ByteString -> IO (Either Text Json.Value)
+uploadBlob manager AtpSession{..} contentType imageData = do
   let url = T.unpack (atpBaseUrl <> "com.atproto.repo.uploadBlob")
   result <- try @SomeException $ withRetry defaultRetryOptions $ do
     initialReq <- parseRequest url
@@ -192,7 +192,7 @@ uploadBlob manager AtpSession{..} imageData = do
           , requestBody = RequestBodyLBS imageData
           , requestHeaders =
               [ ("Authorization", "Bearer " <> TE.encodeUtf8 asAccessToken)
-              , ("Content-Type", "image/jpeg")
+              , ("Content-Type", contentType)
               ]
           }
     response <- httpLbs req manager
@@ -282,7 +282,8 @@ buildEmbed manager session (Just LinkCard{..}) = do
     Nothing       -> pure (Right Nothing)
     Just thumbUrl -> do
       imageData <- fetchImageAsBuffer thumbUrl
-      blobResult <- uploadBlob manager session imageData
+      let mimeType = TE.encodeUtf8 (detectContentType thumbUrl)
+      blobResult <- uploadBlob manager session mimeType imageData
       pure (fmap Just blobResult)
   pure $ case thumbResult of
     Left err -> Left err

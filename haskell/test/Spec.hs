@@ -24,6 +24,7 @@ import qualified Automation.AiFictionTest
 import qualified Automation.DailyReflectionTest
 import qualified Automation.PromptsTest
 import qualified Automation.JsonTest
+import qualified Automation.OgMetadataTest
 import qualified Automation.ReflectionTitleTest
 
 main :: IO ()
@@ -51,4 +52,5 @@ main = defaultMain $ testGroup "Automation"
   , Automation.PromptsTest.tests
   , Automation.JsonTest.tests
   , Automation.ReflectionTitleTest.tests
+  , Automation.OgMetadataTest.tests
   ]

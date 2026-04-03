@@ -2,11 +2,13 @@ module Automation.Platforms.OgMetadata
   ( extractOgProperty
   , fetchOgMetadata
   , fetchImageAsBuffer
+  , detectContentType
   ) where
 
 import qualified Data.ByteString.Lazy as LBS
 import Data.Text (Text)
 import qualified Data.Text as T
+import qualified Data.Text.Encoding as TE
 import qualified Network.HTTP.Client as HTTP
 import qualified Network.HTTP.Client.TLS as TLS
 
@@ -24,12 +26,21 @@ fetchOgMetadata url = do
   manager <- TLS.newTlsManager
   request <- HTTP.parseRequest (T.unpack url)
   response <- HTTP.httpLbs request manager
-  let body = T.pack (show (HTTP.responseBody response))
+  let body = TE.decodeUtf8Lenient (LBS.toStrict (HTTP.responseBody response))
   pure OgMetadata
     { ogTitle       = extractOgProperty "title" body
     , ogDescription = extractOgProperty "description" body
     , ogImageUrl    = extractOgProperty "image" body
     }
+
+detectContentType :: Text -> Text
+detectContentType imageUrl
+  | ".webp" `T.isSuffixOf` lower = "image/webp"
+  | ".png"  `T.isSuffixOf` lower = "image/png"
+  | ".gif"  `T.isSuffixOf` lower = "image/gif"
+  | ".svg"  `T.isSuffixOf` lower = "image/svg+xml"
+  | otherwise                     = "image/jpeg"
+  where lower = T.toLower imageUrl
 
 fetchImageAsBuffer :: Text -> IO LBS.ByteString
 fetchImageAsBuffer url = do

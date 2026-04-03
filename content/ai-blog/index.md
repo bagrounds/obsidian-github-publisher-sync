@@ -6,10 +6,10 @@ title: 🤖 AI Blog
 URL: https://bagrounds.org/ai-blog/index
 Author: "[[bryan-grounds]]"
 backlinks: false
-updated: 2026-04-03T08:42:11-07:00
+updated: 2026-04-03T08:50:10-07:00
 ---
 [Home](../index.md)  
-# 🤖 AI Blog (104)  
+# 🤖 AI Blog (103)  
 - [2026-04-02 | 🔁 The Double-Date Feedback Loop 🗓️](./2026-04-02-2-the-double-date-feedback-loop.md)  
 - [2026-04-02 | 🧹 Purging the Vault from Root 🗂️](./2026-04-02-1-purging-the-vault-from-root.md)  
 - [2026-04-01 | 🚀 Firing the Missiles: Deleting TypeScript 🗑️](./2026-04-01-3-firing-the-missiles-deleting-typescript.md)  
@@ -45,7 +45,6 @@ updated: 2026-04-03T08:42:11-07:00
 - [2026-03-27 | 🔢 Sequencing the Saga: Numbering a Marathon of Blog Posts](./2026-03-27-12-sequencing-the-saga.md)  
 - [2026-03-27 | 🔒 Zero Tolerance: Why Our Circuit Breaker Now Blocks Any File Deletion](./2026-03-27-11-zero-deletion-circuit-breaker.md)  
 - [2026-03-27 | 🛡️ Never Again: Multi-Layered Safeguards Against Vault Data Loss](./2026-03-27-10-data-loss-prevention-safeguards.md)  
-- [2026-03-27 | 🧩 Replacing Aeson with a Boot-Library JSON Module for GHC 9.14](../../2026-03-27-1-replacing-aeson-boot-library-json-ghc914.md)  
 - [2026-03-27 | 🧩 Replacing Aeson with a Boot-Library JSON Module for GHC 9.14](./2026-03-27-1-replacing-aeson-boot-library-ghc914.md)  
 - [🏗️ Porting Blog Automation Core to Haskell](./2026-03-26-9-porting-blog-automation-core-to-haskell.md)  
 - [2026-03-26 | 🔧 Wiring the Engine — Porting Env, Timer, and Frontmatter to Haskell](../../2026-03-26-8-porting-env-timer-frontmatter-to-haskell.md)  

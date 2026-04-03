@@ -99,6 +99,15 @@
 🏷️ The title is extracted from the first H1 or H2 heading in the generated markdown.
 🔗 `extractSlug` strips the YYYY-MM-DD date prefix from filenames to produce URL-friendly slugs.
 
+## 🧹 Title Sanitization
+
+🛡️ `sanitizeTitle` strips date prefixes, pipe separators, and series icon emoji from AI-generated titles before they reach `buildDisplayTitle`.
+🔄 The AI sometimes mimics the display-title format it sees in previous post context, producing headings like `# 2026-03-30 | 🤖 Title 🤖` instead of just `# Title`.
+🧩 Without sanitization, `buildDisplayTitle` would double the date and icon, producing malformed titles like `2026-03-30 | 🤖 🤖 2026-03-30 | Title 🤖 🤖`.
+📝 The sanitization pipeline strips in order: leading series icon, date-pipe prefix, leading series icon again, trailing series icon, then trims whitespace.
+📖 Additionally, `formatPost` applies `sanitizeTitle` when displaying previous post titles in the AI prompt context, preventing the AI from learning the display-title pattern.
+💬 The user prompt includes an explicit instruction telling the AI not to include dates or icons in its heading.
+
 ## 📇 Series Index Generation
 
 📋 `generateSeriesIndex` creates a dataview-based markdown index page listing all posts newest-first.

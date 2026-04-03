@@ -38,6 +38,7 @@ import Automation.BlogPrompt
   , buildBlogPrompt
   , buildDisplayTitle
   , mkSlug
+  , sanitizeTitle
   , todayPacific
   )
 import Automation.BlogSeries
@@ -404,8 +405,9 @@ runBlogSeries manager repoRoot vaultDir seriesId = do
               usedModel = grModel' resp
           case parseGeneratedPost rawText of
             Nothing -> error "Failed to parse generated blog post"
-            Just (body, title) -> do
-              let slugText = generateSlug title
+            Just (body, rawTitle) -> do
+              let title = sanitizeTitle series rawTitle
+                  slugText = generateSlug title
                   slug = case mkSlug slugText of
                     Right s -> s
                     Left e  -> error $ "Invalid slug: " <> T.unpack e

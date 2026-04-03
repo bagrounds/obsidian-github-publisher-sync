@@ -126,4 +126,44 @@ tests = testGroup "BlogPrompt"
       case mkDateStr "2026-03-28" of
         Right (DateStr d) -> d @?= "2026-03-28"
         Left _ -> assertBool "valid date should be accepted" False
+
+  -- sanitizeTitle tests (TDD: reproducing double-date bug)
+  , testCase "sanitizeTitle passes through clean title unchanged" $
+      let Right series = lookupSeries "auto-blog-zero"
+      in sanitizeTitle series "My Great Post" @?= "My Great Post"
+
+  , testCase "sanitizeTitle strips date pipe prefix" $
+      let Right series = lookupSeries "auto-blog-zero"
+      in sanitizeTitle series "2026-03-30 | The Architecture of Doubt" @?= "The Architecture of Doubt"
+
+  , testCase "sanitizeTitle strips date pipe prefix and leading icon" $
+      let Right series = lookupSeries "auto-blog-zero"
+      in sanitizeTitle series "2026-03-30 | 🤖 The Architecture of Doubt" @?= "The Architecture of Doubt"
+
+  , testCase "sanitizeTitle strips leading and trailing series icon" $
+      let Right series = lookupSeries "auto-blog-zero"
+      in sanitizeTitle series "🤖 The Architecture of Doubt 🤖" @?= "The Architecture of Doubt"
+
+  , testCase "sanitizeTitle strips full display title format" $
+      let Right series = lookupSeries "auto-blog-zero"
+      in sanitizeTitle series "🤖 2026-03-30 | 🧩 The Architecture of Doubt: Calibrating Our First Adversary 🤖"
+           @?= "🧩 The Architecture of Doubt: Calibrating Our First Adversary"
+
+  , testCase "sanitizeTitle strips date prefix for chickie-loo" $
+      let Right series = lookupSeries "chickie-loo"
+      in sanitizeTitle series "2026-04-02 | 🐔 🐣 Finding Our Rhythm in the Morning Light 🌾"
+           @?= "🐣 Finding Our Rhythm in the Morning Light 🌾"
+
+  , testCase "sanitizeTitle strips full display title for chickie-loo" $
+      let Right series = lookupSeries "chickie-loo"
+      in sanitizeTitle series "🐔 2026-04-02 | 🐣 Finding Our Rhythm 🐔"
+           @?= "🐣 Finding Our Rhythm"
+
+  , testCase "sanitizeTitle preserves non-series emoji in title" $
+      let Right series = lookupSeries "auto-blog-zero"
+      in sanitizeTitle series "🧩 The Architecture of Doubt" @?= "🧩 The Architecture of Doubt"
+
+  , testCase "sanitizeTitle handles date without pipe separator" $
+      let Right series = lookupSeries "auto-blog-zero"
+      in sanitizeTitle series "2026-03-30 The Architecture of Doubt" @?= "The Architecture of Doubt"
   ]

@@ -139,6 +139,7 @@ test-suite automation-tests
     Automation.JsonTest
     Automation.OgMetadataTest
     Automation.ReflectionTitleTest
+    Automation.ObsidianSyncTest
   build-depends:
     base,
     automation,

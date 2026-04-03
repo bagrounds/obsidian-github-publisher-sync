@@ -10,6 +10,7 @@ module Automation.ObsidianSync
   , runObSyncWithRetry
   , syncObsidianVault
   , pushObsidianVault
+  , validatePrePushFileCount
   , writeEmbedsToNote
   , appendEmbedsToObsidianNote
   , countVaultFiles

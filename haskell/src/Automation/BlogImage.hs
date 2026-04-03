@@ -12,7 +12,6 @@ module Automation.BlogImage
   , resolveImageProviders
   , processNote
   , backfillImages
-  , syncMarkdownDir
   , syncAttachmentsDir
   , updateFrontmatterFields
   , applyField
@@ -1115,17 +1114,6 @@ safeIO action =
 -- Sync directories
 --------------------------------------------------------------------------------
 
-syncMarkdownDir :: FilePath -> FilePath -> IO ()
-syncMarkdownDir srcDir dstDir = do
-  srcExists <- doesDirectoryExist srcDir
-  case srcExists of
-    False -> pure ()
-    True  -> do
-      createDirectoryIfMissing True dstDir
-      entries <- listDirectory srcDir
-      let mdFiles = filter (\f -> takeExtension f == ".md") entries
-      mapM_ (syncFile srcDir dstDir) mdFiles
-
 syncAttachmentsDir :: FilePath -> FilePath -> IO ()
 syncAttachmentsDir srcDir dstDir = do
   srcExists <- doesDirectoryExist srcDir
@@ -1136,19 +1124,6 @@ syncAttachmentsDir srcDir dstDir = do
       entries <- listDirectory srcDir
       let imageFiles = filter isImageFile entries
       mapM_ (syncIfMissing srcDir dstDir) imageFiles
-
-syncFile :: FilePath -> FilePath -> FilePath -> IO ()
-syncFile srcDir dstDir filename = do
-  let src = srcDir </> filename
-      dst = dstDir </> filename
-  srcContent <- TIO.readFile src
-  dstExists <- doesFileExist dst
-  dstContent <- case dstExists of
-    True  -> TIO.readFile dst
-    False -> pure ""
-  case srcContent == dstContent of
-    True  -> pure ()
-    False -> copyFile src dst
 
 syncIfMissing :: FilePath -> FilePath -> FilePath -> IO ()
 syncIfMissing srcDir dstDir filename = do

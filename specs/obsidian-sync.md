@@ -132,3 +132,16 @@ main()
 - 📂 Every pull starts from an empty ephemeral directory — no stale state
 - 📝 Embed writing checks for existing sections before appending
 - 🛑 Circuit breaker prevents catastrophic deletion propagation
+
+## 🎯 Targeted File Sync
+
+🚫 Never use broad directory-level syncs from repo to vault. The repo's content directories contain Enveloppe-published versions of vault files, which may differ from vault originals due to wikilink conversion, dataview query expansion, or other publishing transforms.
+
+✅ Only sync files from repo to vault that were actually modified during the current run.
+
+📦 Modified files are tracked by:
+- 🖼️ Image backfill results via `brModifiedFiles` in `BackfillResult`
+- 🔗 Nav link updates via `nlrModified` in `NavLinkResult`
+- 📝 Blog series posts via targeted `syncFileToVault` calls for the specific generated post, updated previous post, and AGENTS.md
+
+⚠️ The `syncMarkdownDir` function was intentionally removed from the public API to prevent accidental broad directory syncs. Attachment syncs via `syncAttachmentsDir` use `syncIfMissing` which only copies files that are missing in the destination, making them safe for one-directional addition of newly generated images.

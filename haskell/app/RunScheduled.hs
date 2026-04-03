@@ -27,7 +27,7 @@ import Automation.AiFiction
   , reflectionNeedsFiction
   )
 import Automation.BlogComments (fetchAllSeriesComments)
-import Automation.BlogImage (BackfillConfig (..), BackfillResult (..), ImageGenerationResult, syncMarkdownDir, syncAttachmentsDir, backfillImages, resolveImageProviders, processNote)
+import Automation.BlogImage (BackfillConfig (..), BackfillResult (..), ImageGenerationResult, syncAttachmentsDir, backfillImages, resolveImageProviders, processNote)
 import Automation.BlogPosts (BlogPost (..), readSeriesPosts)
 import Automation.BlogPrompt
   ( DateStr (..)
@@ -536,12 +536,20 @@ runBackfillImages manager repoRoot vaultDir = do
   let modifiedCount = length (filter (\r -> nlrModified r) navResults)
   logMsg $ "  🔗 Nav links: " <> T.pack (show modifiedCount) <> " files updated"
 
-  -- 4. Sync markdown dirs to vault
-  mapM_ (\sid -> do
-    let localDir = repoRoot </> T.unpack sid
-        vaultTargetDir = vaultDir </> T.unpack sid
-    syncMarkdownDir localDir vaultTargetDir
-    ) backfillContentIds
+  -- 4. Sync only modified files to vault (targeted sync prevents overwriting
+  --    vault content with repo versions that may differ due to Enveloppe transforms)
+  let navModifiedFiles = fmap (\r -> "ai-blog/" <> nlrFilename r)
+                              (filter nlrModified navResults)
+      allModifiedFiles = imageModifiedFiles <> navModifiedFiles
+  logMsg $ "  📦 Syncing " <> T.pack (show (length allModifiedFiles))
+        <> " modified file(s) to vault"
+  mapM_ (\relPath -> do
+    let localPath = repoRoot </> T.unpack relPath
+    synced <- syncFileToVault localPath (T.unpack relPath) vaultDir
+    case synced of
+      True  -> logMsg $ "    ✅ " <> relPath
+      False -> pure ()
+    ) allModifiedFiles
 
   -- 5. Sync attachments
   let attachmentsDir = repoRoot </> "attachments"

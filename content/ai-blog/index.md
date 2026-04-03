@@ -6,7 +6,7 @@ title: 🤖 AI Blog
 URL: https://bagrounds.org/ai-blog/index
 Author: "[[bryan-grounds]]"
 backlinks: false
-updated: 2026-04-03T08:50:10-07:00
+updated: 2026-04-03T08:55:37-07:00
 ---
 [Home](../index.md)  
 # 🤖 AI Blog (103)  
@@ -104,7 +104,7 @@ updated: 2026-04-03T08:50:10-07:00
 - [2026-03-10 | 🗺️ Leaving Breadcrumbs - BFS Path Tracking for Obsidian Publishing 🤖](./2026-03-10-frontmatter-path-timestamps.md)  
 - [2026-03-10 | 🤖 The Agentic Playbook: Engineering AGENTS.md for Windsurf 🤖](./2026-03-10-agentic-playbook-agents-md.md)  
 - [🤖 2026-03-09 | ⏱️ Order of Operations - Why Timestamps Must Come Before the Push 🤖](./2026-03-09-timestamp-before-push-ordering.md)  
-- [2026-03-09-platform-post-length-enforcement](../../2026-03-09-platform-post-length-enforcement.md)  
+- [2026-03-09 | Platform Post Length Enforcement: Counting Graphemes, Not Characters](./2026-03-09-platform-post-length-enforcement.md)  
 - [2026-03-09 | 🚫 Platform Kill Switches for Social Media Auto-Posting 🤖](./2026-03-09-platform-disable-env-vars.md)  
 - [2026-03-09 | 🔒 Obsidian Sync Lock Resilience (V2) 🤖](./2026-03-09-obsidian-sync-lock-resilience-v2.md)  
 - [2026-03-09 | 🔒 Obsidian Sync Lock Resilience (V1) 🤖](./2026-03-09-obsidian-sync-lock-resilience-v1.md)  

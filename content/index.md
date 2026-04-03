@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-04-03T15:57:34-07:00
+updated: 2026-04-03T16:16:43-07:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -56,11 +56,11 @@ updated: 2026-04-03T15:57:34-07:00
 - [🔥💣💥😡🤬 Fire and Fury: Inside the Trump White House](./books/fire-and-fury-inside-the-trump-white-house.md)  
   
   
-## [📺 Videos](./videos/index.md) (718)  
+## [📺 Videos](./videos/index.md) (719)  
+- [✂️🌳🍎 Pruning Fruit Trees - OSU Master Gardeners](./videos/pruning-fruit-trees-osu-master-gardeners.md)  
 - [🍏🌳✅✂️ Fruit Tree selection and pruning](./videos/fruit-tree-selection-and-pruning.md)  
 - [🌳🍎❓🛠️ Fruit Tree Care Troubleshooting](./videos/fruit-tree-care-troubleshooting.md)  
 - [🏡🌳🍎 Backyard Fruit Trees](./videos/backyard-fruit-trees.md)  
-- [🧠⏱️⚡️📚 How to learn ANYTHING in less than 24 hours](./videos/how-to-learn-anything-in-less-than-24-hours.md)  
   
   
 ## [🌌 Topics](./topics/index.md) (91)  

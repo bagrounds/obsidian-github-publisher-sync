@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-04-03T12:29:07-07:00
+updated: 2026-04-03T15:47:50-07:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -50,17 +50,17 @@ updated: 2026-04-03T12:29:07-07:00
   
   
 ## [📚 Books](./books/index.md) (958)  
-- [❓🎁 Who Gets What - and Why: The New Economics of Matchmaking and Market Design](./books/who-gets-what-and-why-the-new-economics-of-matchmaking-and-market-design.md)  
-- [👨‍👩‍👧‍👦📊 The Family Firm: A Data-Driven Guide to Better Decision Making in the Early School Years](./books/the-family-firm-a-data-driven-guide-to-better-decision-making-in-the-early-school-years.md)  
-- [🏛️⚖️ The Rule of Law](./books/the-rule-of-law.md)  
-- [🏛️⚖️ On the Rule of Law: History, Politics, Theory](./books/on-the-rule-of-law-history-politics-theory.md)  
+- [👻🇺🇸⚔️🪽 The Soul of America: The Battle for Our Better Angels](./books/the-soul-of-america-the-battle-for-our-better-angels.md)  
+- [✊🏿 How to Be An Antiracist](./books/how-to-be-an-antiracist.md)  
+- [⏱️🚀 The First 20 Hours: How to Learn Anything... Fast](./books/the-first-20-hours-how-to-learn-anything-fast.md)  
+- [🔥💣💥😡🤬 Fire and Fury: Inside the Trump White House](./books/fire-and-fury-inside-the-trump-white-house.md)  
   
   
-## [📺 Videos](./videos/index.md) (715)  
-- [🎙️📰🧠 Podcasting Through It with Heather Cox Richardson | The Weekly Show with Jon Stewart](./videos/podcasting-through-it-with-heather-cox-richardson-the-weekly-show-with-jon-stewart.md)  
-- [👶🧸8️⃣🗓️ Montessori Items For An 8 Month Old Baby](./videos/8-montessori-items-for-an-8-month-old-baby-cc.md)  
-- [🇮🇹🏆🗣️ Giorgio Parisi: Nobel Prize Conversations](./videos/giorgio-parisi-nobel-prize-conversations.md)  
-- [🧠🎯🏆😌 Controlling Your Dopamine for Motivation, Focus & Satisfaction | Huberman Lab Essentials](./videos/controlling-your-dopamine-for-motivation-focus-satisfaction-huberman-lab-essentials.md)  
+## [📺 Videos](./videos/index.md) (716)  
+- [🏡🌳🍎 Backyard Fruit Trees](./videos/backyard-fruit-trees.md)  
+- [🧠⏱️⚡️📚 How to learn ANYTHING in less than 24 hours](./videos/how-to-learn-anything-in-less-than-24-hours.md)  
+- [👩‍👧‍👦💼⬇️ Why so many mothers with young children are leaving the workforce](./videos/why-so-many-mothers-with-young-children-are-leaving-the-workforce.md)  
+- [📺🪖🇺🇸 WATCH: Hegseth's full remarks on new military directives ending 'politically correct' leadership](./videos/watch-hegseths-full-remarks-on-new-military-directives-ending-politically-correct-leadership.md)  
   
   
 ## [🌌 Topics](./topics/index.md) (91)  
@@ -71,17 +71,17 @@ updated: 2026-04-03T12:29:07-07:00
   
   
 ## [📄  Articles](./articles/index.md) (84)  
-- [🤖⚙️🔄🗣️ Agentic Context Engineering: Evolving Contexts for Self Improving Language Models](./articles/agentic-context-engineering-evolving-contexts-for-self-improving-language-models.md)  
-- [🤖🧠💻 Agentic Code Reasoning](./articles/agentic-code-reasoning.md)  
-- [🗺️🚀🤖 A Field Guide to Rapidly Improving AI Products](./articles/a-field-guide-to-rapidly-improving-ai-products.md)  
-- [📈❤️⏱️💪🧘 High Intensity Functional Training Guided by Individualized Heart Rate Variability Results in Similar Health and Fitness Improvements as Predetermined Training with Less Effort](./articles/high-intensity-functional-training-guided-by-individualized-heart-rate-variability-results-in-similar-health-and-fitness-improvements-as-predetermined-training-with-less-effort.md)  
+- [🧠📈🔑 Cognitive load is what matters](./articles/cognitive-load-is-what-matters.md)  
+- [🤔⚙️🧩🏗️💡 Everything I know about good system design](./articles/everything-i-know-about-good-system-design.md)  
+- [❓📈🤦 Failing to Understand the Exponential, Again](./articles/failing-to-understand-the-exponential-again.md)  
+- [💰⚙️📈🔍 Defining and Characterizing Reward Hacking](./articles/defining-and-characterizing-reward-hacking.md)  
   
   
 ## [🤖💬 Bot Chats](./bot-chats/index.md) (49)  
+- [✍️🥇🇺🇸 Creating the Most Popular Title in the Country](./bot-chats/creating-the-most-popular-title-in-the-country.md)  
 - [👶😭➡️😊 Summarize The Happiest Baby On The Block](./bot-chats/summarize-the-happiest-baby-on-the-block.md)  
 - [⛽ Fueling a 👥 Movement to ⚔️ Fight 👹 Tyranny and 💪 Strengthen 🗳️ Democracy](./bot-chats/fueling-a-movement-to-fight-tyranny-and-strengthen-democracy.md)  
 - [🤖⚙️📈💡 AI Engineering Assistant Technology Recommendations](./bot-chats/ai-engineering-assistant-technology-recommendations.md)  
-- [✍️🥇🇺🇸 Creating the Most Popular Title in the Country](./bot-chats/creating-the-most-popular-title-in-the-country.md)  
   
   
 ## [💾 Software](./software/index.md) (33)  

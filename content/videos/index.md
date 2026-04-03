@@ -5,10 +5,10 @@ aliases:
 title: 📺 Videos
 URL: https://bagrounds.org/videos
 backlinks: false
-updated: 2026-04-03T12:29:07-07:00
+updated: 2026-04-03T15:47:50-07:00
 ---
 [Home](../index.md)  
-# 📺 Videos (715)  
+# 📺 Videos (716)  
 - [💰🤑🤖💡🚀💲 $0.10/Month Runs My Entire AI Life. I'll Show You How.](./0-10-month-runs-my-entire-ai-life-ill-show-you-how.md)  
 - [📊📈📉📃👁️ 10 Charts to Understand the 900 Page Budget Bill](./10-charts-to-understand-the-900-page-budget-bill.md)  
 - [🤖🔗⬆️✅ 12-Factor Agents: Patterns of reliable LLM applications — Dex Horthy, HumanLayer](./12-factor-agents-patterns-of-reliable-llm-applications-dex-horthy-humanlayer.md)  
@@ -102,6 +102,7 @@ updated: 2026-04-03T12:29:07-07:00
 - [🔬🛡️🤥 Authors of 'Science Under Siege' warn of concerted effort to discredit science](./authors-of-science-under-siege-warn-of-concerted-effort-to-discredit-science.md)  
 - [🧩🗣️👎 Autism advocate calls Trump's statements on the condition 'stigmatizing'](./autism-advocate-calls-trumps-statements-on-the-condition-stigmatizing.md)  
 - [👶❓😴👩‍⚕️ Baby sleep Q & A with Dr. Sofia Axelrod, PhD](./baby-sleep-q-a-with-dr-sofia-axelrod-phd.md)  
+- [🏡🌳🍎 Backyard Fruit Trees](./backyard-fruit-trees.md)  
 - [🌊🥋🤸💨 Be Like Water - The Philosophy of Bruce Lee](./be-like-water-the-philosophy-of-bruce-lee.md)  
 - [👨‍💻➡️🤖🧩 Beyond the IDE: Toward Multi-Agent Orchestration](./beyond-the-ide-toward-multi-agent-orchestration.md)  
 - [🧫❓❌📱 Biomedical Scientist Answers Pseudoscience Questions From Twitter | Tech Support | WIRED](./biomedical-scientist-answers-pseudoscience-questions-from-twitter-tech-support-wired.md)  

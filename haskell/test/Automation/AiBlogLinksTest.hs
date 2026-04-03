@@ -6,6 +6,10 @@ import Test.Tasty.HUnit (testCase, (@?=), assertBool)
 import Test.Tasty.QuickCheck (testProperty)
 import qualified Test.Tasty.QuickCheck as QC
 
+import System.FilePath ((</>))
+import qualified Data.Text.IO as TIO
+import System.IO.Temp (withSystemTempDirectory)
+
 import Automation.AiBlogLinks
 import Automation.BlogSeriesConfig (BlogSeriesConfig (..))
 
@@ -19,6 +23,7 @@ tests = testGroup "AiBlogLinks"
   , updateNavLinksTests
   , navLinksMatchTests
   , extractPostDateTests
+  , buildReflectionLinksTests
   , propertyTests
   ]
 
@@ -184,6 +189,45 @@ extractPostDateTests = testGroup "extractPostDate"
       extractPostDate "" @?= Nothing
   , testCase "returns Nothing when dashes in wrong place" $
       extractPostDate "20260328ab.md" @?= Nothing
+  ]
+
+--------------------------------------------------------------------------------
+-- buildReflectionLinks
+--------------------------------------------------------------------------------
+
+buildReflectionLinksTests :: TestTree
+buildReflectionLinksTests = testGroup "buildReflectionLinks"
+  [ testCase "includes unmodified posts in reflection links" $
+      withSystemTempDirectory "ai-blog-test" $ \tmpDir -> do
+        let postFile = tmpDir </> "2026-04-03-1-my-post.md"
+        TIO.writeFile postFile "---\ntitle: \"My Post Title\"\n---\n[[index|🏡 Home]] > [[/ai-blog/index|🤖 AI Blog]]\n# My Post"
+        let results =
+              [ NavLinkResult { nlrFilename = "2026-04-03-1-my-post.md", nlrModified = False }
+              ]
+        links <- buildReflectionLinks tmpDir results
+        assertBool "should include unmodified post" (length links == 1)
+        let (relPath, title, date) = head links
+        relPath @?= "ai-blog/2026-04-03-1-my-post.md"
+        title @?= "My Post Title"
+        date @?= "2026-04-03"
+  , testCase "includes both modified and unmodified posts" $
+      withSystemTempDirectory "ai-blog-test" $ \tmpDir -> do
+        TIO.writeFile (tmpDir </> "2026-04-01-1-old.md") "---\ntitle: \"Old Post\"\n---\nContent"
+        TIO.writeFile (tmpDir </> "2026-04-03-1-new.md") "---\ntitle: \"New Post\"\n---\nContent"
+        let results =
+              [ NavLinkResult { nlrFilename = "2026-04-01-1-old.md", nlrModified = True }
+              , NavLinkResult { nlrFilename = "2026-04-03-1-new.md", nlrModified = False }
+              ]
+        links <- buildReflectionLinks tmpDir results
+        assertBool "should include both posts" (length links == 2)
+  , testCase "still filters out posts without valid dates" $
+      withSystemTempDirectory "ai-blog-test" $ \tmpDir -> do
+        TIO.writeFile (tmpDir </> "no-date.md") "---\ntitle: \"No Date\"\n---\nContent"
+        let results =
+              [ NavLinkResult { nlrFilename = "no-date.md", nlrModified = False }
+              ]
+        links <- buildReflectionLinks tmpDir results
+        assertBool "should exclude posts without valid dates" (null links)
   ]
 
 --------------------------------------------------------------------------------

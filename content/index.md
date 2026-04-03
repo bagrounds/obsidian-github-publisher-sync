@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-04-02T15:55:50-07:00
+updated: 2026-04-03T07:58:54-07:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -14,18 +14,18 @@ updated: 2026-04-02T15:55:50-07:00
 🔊 Listen to any page with built in audio control.  
 💬 Comment on any page with your GitHub account.  
   
-## [🪞 Reflections](./reflections/index.md) ~ Blog (504)  
-- [2026-04-02](./reflections/2026-04-02.md)  
+## [🪞 Reflections](./reflections/index.md) ~ Blog (505)  
+- [2026-04-03](./reflections/2026-04-03.md)  
+- [2026-04-02 | ✨ Improving 💻 Code 🤖 Resilience 🔄 FlexSim 🎵 Rhythm 🌱 Care 📄💾🐔🤖🏛️🤖🐲](./reflections/2026-04-02.md)  
 - [2026-04-01 | ⏳ Time 🐜 Sim 🤫 Secret 🌀 Chaos 🏘️ Abundance 📚💾🐔🤖🏛️🤖🐲](./reflections/2026-04-01.md)  
 - [2026-03-31 | 🌿 Building 📊 Identity 🏡 Housing 🐔🤖🏛️🤖🐲](./reflections/2026-03-31.md)  
-- [2026-03-30 | 🛡️ Safeguarding 😇 Gentle 🏴‍☠️ Adversary 🐔🤖🏛️🤖🐲🔄](./reflections/2026-03-30.md)  
   
   
-## [🤖 AI Blog](./ai-blog/index.md) (101)  
+## [🤖 AI Blog](./ai-blog/index.md) (103)  
+- [2026-04-02 | 🔁 The Double-Date Feedback Loop 🗓️](./ai-blog/2026-04-02-2-the-double-date-feedback-loop.md)  
+- [2026-04-02 | 🧹 Purging the Vault from Root 🗂️](./ai-blog/2026-04-02-1-purging-the-vault-from-root.md)  
 - [2026-04-01 | 🚀 Firing the Missiles: Deleting TypeScript 🗑️](./ai-blog/2026-04-01-3-firing-the-missiles-deleting-typescript.md)  
 - [2026-04-01 | 🤖 AI Blog Sections and Timezone Ghosts 🕐](./ai-blog/2026-04-01-2-ai-blog-sections-and-timezone-ghosts.md)  
-- [2026-04-01 | 🔍 The Audit That Barely Looked 👀](./ai-blog/2026-04-01-1-the-audit-that-barely-looked.md)  
-- [2026-03-31 | 🕐 The Tomorrow Reflection Bug ⏰](./ai-blog/2026-03-31-8-the-tomorrow-reflection-bug.md)  
   
   
 ## [🤖 Auto Blog Zero](./auto-blog-zero/index.md) (23)  
@@ -35,11 +35,11 @@ updated: 2026-04-02T15:55:50-07:00
 - [2026-03-30 | 🤖 🤖 2026-03-30 | 🧩 The Architecture of Doubt: Calibrating Our First Adversary 🤖 🤖](./auto-blog-zero/2026-03-30-2026-03-30-the-architecture-of-doubt-calibrating-our-first-adversary.md)  
   
   
-## [🐔 Chickie Loo](./chickie-loo/index.md) (23)  
+## [🐔 Chickie Loo](./chickie-loo/index.md) (24)  
+- [2026-04-03 | 🐔 A Quiet Morning in the Coop 🐣 🐔](./chickie-loo/2026-04-03-a-quiet-morning-in-the-coop.md)  
 - [2026-04-02 | 🐔 2026-04-02 | 🐔 🐣 Finding Our Rhythm in the Morning Light 🌾 🐔](./chickie-loo/2026-04-02-2026-04-02-finding-our-rhythm-in-the-morning-light.md)  
 - [2026-04-01 | 🐔 🐔 2026-04-01 | 🌷 The Orchard’s First Secret and the Quiet of April 🌿 🐔](./chickie-loo/2026-04-01-2026-04-01-the-orchard-s-first-secret-and-the-quiet-of-april.md)  
 - [2026-03-31 | 🐔 🌿 A Season of Building, Believing, and Becoming 🐣 🐔](./chickie-loo/2026-03-31-a-season-of-building-believing-and-becoming.md)  
-- [2026-03-30 | 🐔 🐔 2026-03-30 | 🌻 A Gentle Look Back at Our Growing Season 🌿 🐔](./chickie-loo/2026-03-30-2026-03-30-a-gentle-look-back-at-our-growing-season.md)  
   
   
 ## [🏛️ Systems for Public Good](./systems-for-public-good/index.md) (12)  
@@ -50,24 +50,24 @@ updated: 2026-04-02T15:55:50-07:00
   
   
 ## [📚 Books](./books/index.md) (958)  
-- [🕵️‍♀️📜💻 Rogue Protocol](./books/rogue-protocol.md)  
-- [👥⚔️🏛️ The People vs. Democracy: Why Our 🗽 Freedom Is in ⚠️ Danger and How to Save It](./books/the-people-vs-democracy.md)  
-- [❓✅ Trick or Treatment: The Undeniable Facts about Alternative Medicine](./books/trick-or-treatment-the-undeniable-facts-about-alternative-medicine.md)  
-- [💰🤫 Dark Money: The Hidden History of the Billionaires Behind the Rise of the Radical Right](./books/dark-money-the-hidden-history-of-the-billionaires-behind-the-rise-of-the-radical-right.md)  
+- [🗣️🧠 The Language Instinct: How the Mind Creates Language](./books/the-language-instinct-how-the-mind-creates-language.md)  
+- [🏃‍♀️🦴 Anatomy for Runners: Unlocking Your Athletic Potential for Health, Speed, and Injury Prevention](./books/anatomy-for-runners-unlocking-your-athletic-potential-for-health-speed-and-injury-prevention.md)  
+- [😠🎭 Uncivil Agreement: How Politics Became Our Identity](./books/uncivil-agreement-how-politics-became-our-identity.md)  
+- [🇺🇸🧠 American Amnesia: How the War on Government Led Us to Forget What Made America Prosper](./books/american-amnesia-how-the-war-on-government-led-us-to-forget-what-made-america-prosper.md)  
   
   
 ## [📺 Videos](./videos/index.md) (714)  
-- [🗓️🎯📈💡 2025 Yearly Themes](./videos/2025-yearly-themes.md)  
-- [🔑🖼️🎨👤 Your Theme](./videos/your-theme.md)  
-- [❌🤔💡 On being wrong | Kathryn Schulz](./videos/on-being-wrong-kathryn-schulz.md)  
-- [📓 This Journal Keeps Me Productive (& Maybe You Too)](./videos/this-journal-keeps-me-productive-and-maybe-you-too.md)  
+- [🛂🛑🇺🇸🎤 Immigration Enforcement: Last Week Tonight with John Oliver (HBO)](./videos/immigration-enforcement-last-week-tonight-with-john-oliver-hbo.md)  
+- [🧠💪🧘 How To Force Your Brain To Do Hard Things (Lotus Method)](./videos/how-to-force-your-brain-to-do-hard-things-lotus-method.md)  
+- [🏛️🚨🇺🇸 Former Homeland Security chief Jeh Johnson issues urgent call to protect U.S. democracy](./videos/former-homeland-security-chief-jeh-johnson-issues-urgent-call-to-protect-u-s-democracy.md)  
+- [🇺🇸➡️🇨🇦 Dear Americans… we saved you a seat](./videos/dear-americans-we-saved-you-a-seat.md)  
   
   
 ## [🌌 Topics](./topics/index.md) (91)  
-- [🗣️📚🧠 Linguistics](./topics/linguistics.md)  
-- [💻⚙️🧩🏗️ Software Engineering](./topics/software-engineering.md)  
-- [⚡🔌 Electrical Engineering](./topics/electrical-engineering.md)  
-- [♻️🫀🧠💪 Cognitive Behavioral Therapy](./topics/cognitive-behavioral-therapy.md)  
+- [🧪✅ Software Testing and Quality Assurance](./topics/software-testing-and-quality-assurance.md)  
+- [💻⚙️💡💾 Software Development and Coding](./topics/software-development-and-coding.md)  
+- [💻🔬 Computer Science](./topics/computer-science.md)  
+- [⚙️🎛️ Control Systems](./topics/control-systems.md)  
   
   
 ## [📄  Articles](./articles/index.md) (84)  
@@ -84,25 +84,25 @@ updated: 2026-04-02T15:55:50-07:00
 - [✍️🥇🇺🇸 Creating the Most Popular Title in the Country](./bot-chats/creating-the-most-popular-title-in-the-country.md)  
   
   
-## [💾 Software](./software/index.md) (32)  
+## [💾 Software](./software/index.md) (33)  
+- [💾✍️🌋⚫️ Obsidian](./software/obsidian.md)  
+- [⚙️📊🔄 FlexSim](./software/flexsim.md)  
 - [⚙️🐜🔄 Haskell Ant Sim](./software/haskell-ant-sim.md)  
 - [🤖💻🪄 GitHub Copilot for VS Code](./software/github-copilot-for-vs-code.md)  
-- [📊🔍📈 Google Search Console](./software/google-search-console.md)  
-- [☁️🛡️ Cloudflare Tunnel (cloudflared)](./software/cloudflare-tunnel.md)  
   
   
 ## [👥 People](./people/index.md) (18)  
+- [🧠🫀👀🔬 Andrew Huberman](./people/andrew-huberman.md)  
 - [🧠🔬🧘‍♀️💪📈❤️‍🩹🗣️📚🌟 Kelly McGonigal](./people/kelly-mcgonigal.md)  
 - [🧠🤝🐘 Jonathan Haidt](./people/jonathan-haidt.md)  
 - [🏛️🇺🇸📖 Heather Cox Richardson](./people/heather-cox-richardson.md)  
-- [📈📊⚙️🎯 W Edwards Deming](./people/w-edwards-deming.md)  
   
   
 ## [🛍️ Products](./products/index.md) (6)  
-- [🤖🧹🧼🗺️ iRobot Roomba Plus 505 Combo Robot Vacuum & Mop with AutoWash Dock - Extending Spinning Mop Pads, Self-Empties, Pad Wash & Heated Drying, Self-cleaning, Recognizes & Avoids Obstacles, LiDAR Navigation](./products/irobot-roomba-plus-505-combo-robot-vacuum-mop-with-autowash-dock-extending-spinning-mop-pads-self-empties-pad-wash-heated-drying-self-cleaning-recognizes-avoids-obstacles-lidar-navigation.md)  
-- [🔥💨🏕️ Coleman Triton 2-Burner Propane Stove, Portable Camping Cooktop with 2 Adjustable Burners & Wind Guards, 22,000 BTUs of Power for Camping, Tailgating, Grilling, BBQ, & More](./products/coleman-triton-2-burner-propane-stove-portable-camping-cooktop-with-2-adjustable-burners-wind-guards-22000-btus-of-power-for-camping-tailgating-grilling-bbq-more.md)  
+- [👶🏃🌆 Thule Urban Glide 3](./products/thule-urban-glide-3.md)  
 - [👶🌧️💨 Graco Baby Jogging Stroller Universal Rain Cover, Ventilated Weather Shield, Waterproof, Windproof, Versatile Size to Fit Most Jogging Strollers, Vinyl, Clear, Plastic](./products/graco-baby-jogging-stroller-universal-rain-cover-ventilated-weather-shield-waterproof-windproof-versatile-size-to-fit-most-jogging-strollers-vinyl-clear-plastic.md)  
-- [🚰💧⚙️🔧 Delta Faucet RP4993 Seats and Springs](./products/delta-faucet-rp4993-seats-and-springs.md)  
+- [🔥💨🏕️ Coleman Triton 2-Burner Propane Stove, Portable Camping Cooktop with 2 Adjustable Burners & Wind Guards, 22,000 BTUs of Power for Camping, Tailgating, Grilling, BBQ, & More](./products/coleman-triton-2-burner-propane-stove-portable-camping-cooktop-with-2-adjustable-burners-wind-guards-22000-btus-of-power-for-camping-tailgating-grilling-bbq-more.md)  
+- [🤖🧹🧼🗺️ iRobot Roomba Plus 505 Combo Robot Vacuum & Mop with AutoWash Dock - Extending Spinning Mop Pads, Self-Empties, Pad Wash & Heated Drying, Self-cleaning, Recognizes & Avoids Obstacles, LiDAR Navigation](./products/irobot-roomba-plus-505-combo-robot-vacuum-mop-with-autowash-dock-extending-spinning-mop-pads-self-empties-pad-wash-heated-drying-self-cleaning-recognizes-avoids-obstacles-lidar-navigation.md)  
   
   
 ## [🎤 Presentations](./presentations/index.md) (2)  

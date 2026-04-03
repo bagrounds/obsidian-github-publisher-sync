@@ -40,7 +40,7 @@ detectContentType imageUrl
   | ".gif"  `T.isSuffixOf` lower = "image/gif"
   | ".svg"  `T.isSuffixOf` lower = "image/svg+xml"
   | otherwise                     = "image/jpeg"
-  where lower = T.toLower imageUrl
+  where lower = T.toLower (T.takeWhile (\c -> c /= '?' && c /= '#') imageUrl)
 
 fetchImageAsBuffer :: Text -> IO LBS.ByteString
 fetchImageAsBuffer url = do

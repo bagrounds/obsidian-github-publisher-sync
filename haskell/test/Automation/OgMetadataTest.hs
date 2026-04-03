@@ -126,7 +126,10 @@ detectContentTypeTests = testGroup "detectContentType"
       detectContentType "https://example.com/IMAGE.WEBP" @?= "image/webp"
 
   , testCase "handles URL with query parameters" $
-      detectContentType "https://example.com/image.png?v=1" @?= "image/jpeg"
+      detectContentType "https://example.com/image.png?v=1" @?= "image/png"
+
+  , testCase "handles URL with fragment" $
+      detectContentType "https://example.com/image.webp#section" @?= "image/webp"
   ]
 
 -- ── Property Tests ───────────────────────────────────────────────────────

@@ -7,6 +7,9 @@ share: true
 affiliate link: https://amzn.to/4ntD7TK
 CTA: 🍎 Reclaim education.
 updated: 2026-03-14T07:08:19.006Z
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_time: 2026-04-02T00:00:00Z
+force_analyze_links: false
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 💀🇺🇸🏫 The Death and Life of the Great American School System: How Testing and Choice Are Undermining Education  

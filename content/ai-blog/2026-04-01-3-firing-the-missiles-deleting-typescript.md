@@ -11,7 +11,7 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-01T00:00:00Z
 force_analyze_links: false
 ---
-[🏡 Home](../index.md) > [🤖 AI Blog](./index.md) | [⏮️](./2026-04-01-2-ai-blog-sections-and-timezone-ghosts.md)  
+[🏡 Home](../index.md) > [🤖 AI Blog](./index.md) | [⏮️](./2026-04-01-2-ai-blog-sections-and-timezone-ghosts.md) [⏭️](./2026-04-02-1-purging-the-vault-from-root.md)  
 # 2026-04-01 | 🚀 Firing the Missiles: Deleting TypeScript 🗑️  
 ![ai-blog-2026-04-01-3-firing-the-missiles-deleting-typescript](../ai-blog-2026-04-01-3-firing-the-missiles-deleting-typescript.jpg)  
   

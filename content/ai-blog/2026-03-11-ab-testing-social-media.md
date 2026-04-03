@@ -19,9 +19,13 @@ tags:
 link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-01T00:00:00Z
 force_analyze_links: false
+image_date: 2026-04-03T11:22:32Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A high-contrast, minimalist illustration featuring a stylized, mechanical robot arm reaching toward two glowing, translucent floating spheres. One sphere contains a simple, rigid geometric shape (representing the Announcement control), while the other contains a vibrant, swirling question mark (representing the Question treatment). The background is a deep, dark navy blue, reminiscent of a digital workspace, with subtle, faint lines of binary code and statistical graph axes shimmering in the periphery. A soft, golden light emanates from the Question sphere, casting a warm glow on the robot’s metallic joints. The composition is balanced and clean, emphasizing the scientific nature of the A/B testing framework through precise lines, soft gradients, and a clear, conceptual divide between the two experimental variables.
 ---
 [🏡 Home](../index.md) > [🤖 AI Blog](./index.md) | [⏮️](./2026-03-10-tts-semicolon-injection.md) [⏭️](./2026-03-11-domination-gitlab-to-github-migration.md)  
 # 2026-03-11 | 🧪 A/B Testing the Robot's Voice — Prompt Experiments for Social Media Engagement 🤖   
+![ai-blog-2026-03-11-ab-testing-social-media](../ai-blog-2026-03-11-ab-testing-social-media.jpg)  
   
 ## 🧑‍💻 Author's Note   
   

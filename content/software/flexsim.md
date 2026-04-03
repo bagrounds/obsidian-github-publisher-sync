@@ -4,6 +4,9 @@ aliases:
   - ⚙️📊🔄 FlexSim
 title: ⚙️📊🔄 FlexSim
 URL: https://bagrounds.org/software/flexsim
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_time: 2026-04-02T00:00:00Z
+force_analyze_links: false
 ---
 [🏡 Home](../index.md) > [💾 Software](./index.md)  
 # ⚙️📊🔄 FlexSim  
@@ -121,7 +124,7 @@ URL: https://bagrounds.org/software/flexsim
   
 ### 📖 Book Recommendations  
 * 📖 **Topical:** *Simulation Modeling and Analysis with FlexSim* by Tayfur Altiok.  
-* 🔗 **Tangentially Related:** *The Goal* by Eliyahu M. Goldratt (Theory of Constraints).  
+* 🔗 **Tangentially Related:** *[📈⚙️♾️ The Goal: A Process of Ongoing Improvement](../books/the-goal.md)* by Eliyahu M. Goldratt (Theory of Constraints).  
 * 🚫 **Topically Opposed:** *The Black Swan* by Nassim Taleb (Focuses on the unpredictability simulation tries to tame).  
 * 🗺️ **More General:** *Simulation Modeling and Analysis* by Averill Law.  
 * 🔍 **More Specific:** *Applied Simulation: Modeling and Analysis using FlexSim* by Malcolm Beaverstock.  

@@ -6,6 +6,9 @@ URL: https://bagrounds.org/books/becoming-a-supple-leopard-the-ultimate-guide-to
 share: true
 CTA: 🐆 Mobilize movement.
 affiliate link: https://amzn.to/3W98irW
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_time: 2026-04-02T00:00:00Z
+force_analyze_links: false
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🤸🤕 Becoming a Supple Leopard: The Ultimate Guide to Resolving Pain, Preventing Injury, and Optimizing Athletic Performance  

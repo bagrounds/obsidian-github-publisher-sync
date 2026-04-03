@@ -57,7 +57,7 @@ A: 🤓 It's grounded in actual ML research and the experiences of practitioners
 ### ❤️ If You Loved This  
   
 * [🌊 The Coming Wave](./the-coming-wave-technology-power-and-the-21st-centurys-greatest-dilemma.md) by Mustafa Suleyman  
-* [🔮 The Age of AI](books/the-age-of-ai-and-our-human-future.md) by Kissinger, Schmidt, and Huttenlocher  
+* [🔮 The Age of AI](./the-age-of-ai.md) by Kissinger, Schmidt, and Huttenlocher  
   
 ### ↔️ Similar But Different  
   

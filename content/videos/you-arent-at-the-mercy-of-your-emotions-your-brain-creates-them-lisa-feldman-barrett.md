@@ -9,6 +9,9 @@ Platform:
 Channel: TED
 tags:
 youtube: https://youtu.be/0gks6ceq4eQ
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_time: 2026-04-02T00:00:00Z
+force_analyze_links: false
 ---
 [Home](../index.md) > [Videos](./index.md)  
 # 🧠⚙️🛠️💡 You aren't at the mercy of your emotions -- your brain creates them | Lisa Feldman Barrett  
@@ -40,7 +43,7 @@ youtube: https://youtu.be/0gks6ceq4eQ
 ## 📚 Book Recommendations  
 * **[🧠🤔 How Emotions Are Made: The Secret Life of the Brain](../books/how-emotions-are-made-the-secret-life-of-the-brain.md)** Offers the comprehensive scientific background and detailed arguments for the speaker's own theory of constructed emotion, serving as the definitive resource for the concepts discussed.  
 * **Emotions Revealed: Recognizing Faces and Feelings to Improve Communication and Emotional Life** 😡: Provides the classic, contrasting view of emotion from Paul Ekman, detailing the **universality** of basic emotions and their corresponding facial expressions, which the TED Talk critiques.  
-* **The Power of Habit: Why We Do What We Do in Life and Business** 🔄: Explores the neuroscience of **habit formation**, which relates to the speaker's concept of the brain using past actions and experiences to form future **predictions**, offering a pathway to becoming the "architect of your experience."  
+* **[🔄🧠💪 The Power of Habit: Why We Do What We Do in Life and Business](../books/the-power-of-habit.md)** 🔄: Explores the neuroscience of **habit formation**, which relates to the speaker's concept of the brain using past actions and experiences to form future **predictions**, offering a pathway to becoming the "architect of your experience."  
 * **Search Inside Yourself: The Unexpected Path to Achieving Success Through Mindfulness and Emotional Intelligence** 🧘: Delivers practical, business-focused applications of mindfulness to emotional intelligence, aligning with the speaker's call to use self-awareness to **cultivate emotional intelligence in action** and transform emotional life.  
   
 ## 🐦 Tweet  

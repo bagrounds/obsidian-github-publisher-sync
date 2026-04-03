@@ -6,6 +6,9 @@ title: 🤖🧠💻 Agentic Code Reasoning
 URL: https://bagrounds.org/articles/agentic-code-reasoning
 Author:
 tags:
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_time: 2026-04-02T00:00:00Z
+force_analyze_links: false
 ---
 [Home](../index.md) > [Articles](./index.md)  
 # [🤖🧠💻 Agentic Code Reasoning](https://arxiv.org/html/2603.01896v2)  

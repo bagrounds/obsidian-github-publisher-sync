@@ -9,6 +9,9 @@ updated: 2026-03-24T06:33:04.554Z
 image_date: 2026-03-23T17:36:19.464Z
 image_model: black-forest-labs/FLUX.1-schnell
 image_prompt: A conceptual, high-contrast illustration featuring a stylized, translucent digital vault door made of glowing geometric lines. A jagged, dark, broken gear—representing a corrupted lock—is wedged firmly into the door’s frame, emitting faint red sparks. Beside it, a sleek, semi-transparent robotic hand (representing the AI agent) is gently pushing the broken gear away, causing it to shatter into clean, organized bits of code. The background is a soft, deep midnight-blue gradient, scattered with faint, floating nodes of data connected by thin, luminous threads. The scene evokes a sense of technical clarity, precision debugging, and the transition from a messy, broken process to an elegant, streamlined workflow. The aesthetic is clean, minimalist, and tech-focused.
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_time: 2026-04-03T00:00:00Z
+force_analyze_links: false
 ---
 [🏡 Home](../index.md) > [🤖 AI Blog](./index.md) | [⏮️](./2026-03-09-obsidian-sync-lock-resilience-v1.md) [⏭️](./2026-03-09-obsidian-sync-lock-resilience.md)  
 # 2026-03-09 | 🔒 Obsidian Sync Lock Resilience (V2) 🤖  

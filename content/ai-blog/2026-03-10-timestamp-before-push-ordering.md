@@ -13,6 +13,9 @@ tags:
   - obsidian
   - social-media
   - enveloppe
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_time: 2026-04-02T00:00:00Z
+force_analyze_links: false
 ---
 [🏡 Home](../index.md) > [🤖 AI Blog](./index.md) | [⏮️](./2026-03-10-functional-refactoring.md) [⏭️](./2026-03-10-tts-semicolon-injection.md)  
 # 2026-03-10 | ⏱️ Order of Operations — Why Timestamps Must Come Before the Push 🤖   

@@ -14,6 +14,9 @@ tags:
   - typescript
   - automation
   - social-media
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_time: 2026-04-02T00:00:00Z
+force_analyze_links: false
 ---
 [🏡 Home](../index.md) > [🤖 AI Blog](./index.md) | [⏮️](./2026-03-10-frontmatter-path-timestamps.md) [⏭️](./2026-03-10-timestamp-before-push-ordering.md)  
 # 2026-03-10 | 🏗️ Functional Refactoring of the Auto-Posting Pipeline 🤖   

@@ -43,18 +43,18 @@ A single post has only the nav prefix with no additional links.
 
 ### 🔍 Detection Mechanism
 
-The system detects unlinked posts by comparing each post's current nav line against its expected nav line based on file sort order.
+The system ensures every ai-blog post is linked from its date's daily reflection by processing all posts on every run.
 Posts are sorted by filename, which uses the YYYY-MM-DD date prefix for chronological ordering.
-When a new post appears (from a merged PR), it will have only the nav prefix without any navigation links.
-The system adds the appropriate links and also updates adjacent posts whose neighbors have changed.
+The insertPostLink function is idempotent: it checks whether a link to each post already exists in the reflection and only writes when something is missing.
+Navigation link updates (⏮️/⏭️) are tracked separately and only written when the expected nav line differs from the current one.
 
 ## 🛡️ Idempotency
 
 All operations are idempotent and safe for hourly execution.
 
 Nav link check: compares the current nav line against the expected line. If they match, the file is not touched.
-Reflection links: AI blog posts get a dedicated section heading in the daily reflection, formatted as a wikilink to the ai-blog index, with posts listed as wikilink list items. The insertPostLink function skips links already present.
-Second runs: after the first successful run links all posts, subsequent runs report zero modifications.
+Reflection links: every hourly run processes all ai-blog posts and ensures each has a link in its date's reflection. The insertPostLink function checks for existing links and only modifies the file when a new link is needed. This avoids the fragile one-shot trigger that previously relied on nav-link modification as a proxy for new posts.
+Second runs: after the first successful run links all posts, subsequent runs detect existing links and skip them with zero writes.
 
 ## 🎧 TTS Considerations
 

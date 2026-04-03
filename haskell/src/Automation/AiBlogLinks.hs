@@ -153,9 +153,8 @@ extractAiBlogTitle aiBlogDir filename = do
         Nothing    -> stripMdExt filename
 
 buildReflectionLinks :: FilePath -> [NavLinkResult] -> IO [(Text, Text, Text)]
-buildReflectionLinks aiBlogDir modifiedResults = do
-  let modified = filter nlrModified modifiedResults
-  entries <- traverse (buildEntry aiBlogDir) modified
+buildReflectionLinks aiBlogDir results = do
+  entries <- traverse (buildEntry aiBlogDir) results
   pure $ filter (\(_, _, d) -> not (T.null d)) entries
 
 buildEntry :: FilePath -> NavLinkResult -> IO (Text, Text, Text)

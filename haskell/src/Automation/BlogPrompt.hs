@@ -12,6 +12,7 @@ module Automation.BlogPrompt
   , buildForwardLink
   , assembleFrontmatter
   , buildDisplayTitle
+  , sanitizeTitle
   , todayPacific
   , recapInstructions
   ) where
@@ -118,6 +119,30 @@ buildDisplayTitle :: BlogSeriesConfig -> DateStr -> Text -> DisplayTitle
 buildDisplayTitle series (DateStr today) title =
   DisplayTitle $ today <> " | " <> bscIcon series <> " " <> title <> " " <> bscIcon series
 
+sanitizeTitle :: BlogSeriesConfig -> Text -> Text
+sanitizeTitle series raw =
+  T.strip $ stripTrailingIcon $ stripLeadingIcon $ stripDatePipe $ stripLeadingIcon $ T.strip raw
+  where
+    icon = bscIcon series
+
+    stripLeadingIcon t =
+      fromMaybe (T.stripStart t)
+        (T.stripStart <$> T.stripPrefix icon (T.stripStart t))
+
+    stripTrailingIcon t =
+      fromMaybe (T.stripEnd t)
+        (T.stripEnd <$> T.stripSuffix icon (T.stripEnd t))
+
+    stripDatePipe t =
+      let s = T.stripStart t
+      in case parseDate (T.take 10 s) of
+        Just _ ->
+          let afterDate = T.drop 10 s
+              tryStrip = T.stripPrefix " | " afterDate
+                     >>= Just . T.stripStart
+          in fromMaybe (T.stripStart afterDate) tryStrip
+        Nothing -> s
+
 assembleFrontmatter :: BlogSeriesConfig -> DateStr -> Text -> Slug -> Text
 assembleFrontmatter series dateStr title slug =
   let (DisplayTitle displayTitle) = buildDisplayTitle series dateStr title
@@ -173,6 +198,9 @@ buildUserPrompt ctx =
       today = bcxToday ctx
       header = "Write the next blog post for the " <> bscName series <> " series."
         <> "\nToday's date: " <> unDateStr today
+        <> "\n\nIMPORTANT: Your heading (# or ##) must contain ONLY the creative title."
+        <> " Do not include dates, pipe separators, or the series icon emoji in your heading."
+        <> " The system adds date and icon formatting automatically."
       postHistory = buildPostHistory series posts
       commentsSection = buildCommentsSection comments
       recap = recapInstructions today
@@ -205,7 +233,8 @@ formatPost :: BlogSeriesConfig -> BlogPost -> Text
 formatPost series post =
   let link = buildBackLink series (bpFilename post)
       body = stripEmbedSections (bpBody post)
-  in "### " <> link <> " " <> bpTitle post <> " (" <> bpDate post <> ")\n\n" <> T.strip body
+      cleanTitle = sanitizeTitle series (bpTitle post)
+  in "### " <> link <> " " <> cleanTitle <> " (" <> bpDate post <> ")\n\n" <> T.strip body
 
 buildCommentsSection :: [BlogComment] -> Text
 buildCommentsSection [] = ""

@@ -6,7 +6,7 @@ title: 🤖 AI Blog
 URL: https://bagrounds.org/ai-blog/index
 Author: "[[bryan-grounds]]"
 backlinks: false
-updated: 2026-04-03T07:58:54-07:00
+updated: 2026-04-03T08:03:14-07:00
 ---
 [Home](../index.md)  
 # 🤖 AI Blog (103)  
@@ -95,7 +95,7 @@ updated: 2026-04-03T07:58:54-07:00
 - [2026-03-14 | 🐔 Giving Chickie Loo a Voice — Priority User Configuration 🤖](./2026-03-14-chickie-loo-priority-user.md)  
 - [2026-03-13 | 🧪 Building a Safety Net - Comprehensive Testing for a PureScript Card Game 🤖](./2026-03-13-building-a-safety-net-comprehensive-testing-for-domination.md)  
 - [2026-03-13 | 🔬 The Experiment That Forgot to Observe — Fixing A/B Test Metrics Collection 🤖](./2026-03-13-ab-test-metrics-the-experiment-that-forgot-to-observe.md)  
-- [2026-03-11 | 🔊 Teaching the Robot to Breathe — Semicolon Injection for Natural TTS Pauses 🤖](./2026-03-11-tts-semicolon-injection.md)  
+- [2026-03-11 | 🔊 Teaching the Robot to Breathe - Semicolon Injection for Natural TTS Pauses 🤖](./2026-03-11-tts-semicolon-injection.md)  
 - [2026-03-11 | 🏗️ From GitLab to GitHub - Migrating a PureScript Deck-Building Game 🤖](./2026-03-11-domination-gitlab-to-github-migration.md)  
 - [2026-03-11 | 🧪 A/B Testing the Robot's Voice - Prompt Experiments for Social Media Engagement 🤖](./2026-03-11-ab-testing-social-media.md)  
 - [2026-03-10 | 🔊 Teaching the Robot to Breathe - Semicolon Injection for Natural TTS Pauses 🤖](./2026-03-10-tts-semicolon-injection.md)  

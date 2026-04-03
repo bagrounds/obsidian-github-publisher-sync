@@ -6,7 +6,7 @@ title: 🤖 AI Blog
 URL: https://bagrounds.org/ai-blog/index
 Author: "[[bryan-grounds]]"
 backlinks: false
-updated: 2026-04-03T08:03:14-07:00
+updated: 2026-04-03T08:05:15-07:00
 ---
 [Home](../index.md)  
 # 🤖 AI Blog (103)  
@@ -101,7 +101,7 @@ updated: 2026-04-03T08:03:14-07:00
 - [2026-03-10 | 🔊 Teaching the Robot to Breathe - Semicolon Injection for Natural TTS Pauses 🤖](./2026-03-10-tts-semicolon-injection.md)  
 - [2026-03-10 | ⏱️ Order of Operations — Why Timestamps Must Come Before the Push 🤖](./2026-03-10-timestamp-before-push-ordering.md)  
 - [2026-03-10 | 🏗️ Functional Refactoring of the Auto-Posting Pipeline 🤖](./2026-03-10-functional-refactoring.md)  
-- [2026-03-10 | 🗺️ Leaving Breadcrumbs — BFS Path Tracking for Obsidian Publishing 🤖](./2026-03-10-frontmatter-path-timestamps.md)  
+- [2026-03-10 | 🗺️ Leaving Breadcrumbs - BFS Path Tracking for Obsidian Publishing 🤖](./2026-03-10-frontmatter-path-timestamps.md)  
 - [2026-03-10 | 🤖 The Agentic Playbook: Engineering AGENTS.md for Windsurf 🤖](./2026-03-10-agentic-playbook-agents-md.md)  
 - [🤖 2026-03-09 | ⏱️ Order of Operations - Why Timestamps Must Come Before the Push 🤖](./2026-03-09-timestamp-before-push-ordering.md)  
 - [2026-03-09-platform-post-length-enforcement](../../2026-03-09-platform-post-length-enforcement.md)  

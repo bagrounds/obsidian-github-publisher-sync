@@ -6,6 +6,9 @@ URL: https://bagrounds.org/books/on-the-rule-of-law-history-politics-theory
 share: true
 affiliate link: https://amzn.to/4pZ4C9V
 CTA: ⚖️ Champion justice.
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_time: 2026-04-03T00:00:00Z
+force_analyze_links: false
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🏛️⚖️ On the Rule of Law: History, Politics, Theory  
@@ -80,7 +83,7 @@ CTA: ⚖️ Champion justice.
 * ✍️ Friedrich A. Hayek, The Constitution of Liberty  
 * ✍️ John Rawls, A Theory of Justice  
 * ✍️ H.L.A. Hart, The Concept of Law  
-* ✍️ Martin Krygier, The Rule of Law: Legality, Teleology, Sociology  
+* ✍️ Martin Krygier, [🏛️⚖️ The Rule of Law](./the-rule-of-law.md): Legality, Teleology, Sociology  
   
 ## 💬 [Gemini](https://gemini.google.com) Prompt (gemini-2.5-flash)  
 > Create a concise, expert-level cheat sheet for On the Rule of Law: History, Politics, Theory.  

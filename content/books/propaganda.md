@@ -16,7 +16,7 @@ force_analyze_links: false
 [🛒 Propaganda. As an Amazon Associate I earn from qualifying purchases.](https://www.amazon.com/dp/1684228417?tag=bagrounds-20)  
   
 ## 🤖 AI Summary  
-The "father of public relations" candidly explains how the masses are manipulated—and why he believes such manipulation is essential to democracy.  
+The "father of public relations" candidly explains how the masses are manipulated - and why he believes such manipulation is essential to democracy.  
   
 ## 🗺️ Context  
   
@@ -36,7 +36,7 @@ The "father of public relations" candidly explains how the masses are manipulate
   
 ### ❓ Q: Is this book still relevant?  
   
-A: 🤓 Remarkably so. The techniques Bernays describes—using experts, creating events, manipulating symbols—remain central to modern PR, advertising, and political campaigns.  
+A: 🤓 Remarkably so. The techniques Bernays describes - using experts, creating events, manipulating symbols - remain central to modern PR, advertising, and political campaigns.  
   
 ### ❓ Q: Is Bernays promoting or exposing propaganda?  
   
@@ -55,8 +55,8 @@ A: 🤓 They complement each other perfectly: Orwell shows where propaganda lead
   
 ### ❤️ If You Loved This  
   
-* [🤥 Trust Me, I'm Lying](books/trust-me-im-lying.md) by Ryan Holiday  
-* [👥 The True Believer](books/the-true-believer.md) by Eric Hoffer  
+* 🤥 Trust Me, I'm Lying by Ryan Holiday  
+* 👥 The True Believer by Eric Hoffer  
   
 ### ↔️ Similar But Different  
   
@@ -65,5 +65,5 @@ A: 🤓 They complement each other perfectly: Orwell shows where propaganda lead
   
 ## 🫵 What Do You Think?  
   
-* Is "engineering consent" compatible with democracy, or its antithesis?  
-* How do Bernays's techniques appear in today's social media landscape?  
+* Is engineering consent compatible with democracy, or its antithesis?  
+* How do Bernays's techniques appear in today's social media landscape?

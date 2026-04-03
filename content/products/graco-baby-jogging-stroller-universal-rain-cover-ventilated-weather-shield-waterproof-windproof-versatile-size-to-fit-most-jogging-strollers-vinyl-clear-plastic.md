@@ -56,9 +56,9 @@ force_analyze_links: false
 * 🏝️ **Robinson Crusoe** **by Daniel Defoe:** Crusoe is initially exposed to the elements, but his journey is about gradually building shelter and a protected life on a deserted island, showing a slow progression from vulnerability to protection.  
   
 #### ✨ Creatively Related  
-* **[🤴 The Little Prince](../books/the-little-prince.md)** **by Antoine de Saint-Exupéry:** 🔮 The prince places a glass dome over his rose, protecting it from the harshness of his tiny planet—a direct metaphor for the rain cover protecting a precious, fragile being.  
+* **[🤴 The Little Prince](../books/the-little-prince.md)** **by Antoine de Saint-Exupéry:** 🔮 The prince places a glass dome over his rose, protecting it from the harshness of his tiny planet - a direct metaphor for the rain cover protecting a precious, fragile being.  
 * 🌳 **The Giving Tree** **by Shel Silverstein:** ❤️ This book relates creatively through its theme of a protector (the tree) offering a part of itself (its leaves, trunk) to shelter and support another being (the boy), similar to the cover shielding a child.  
-* ☔ **The Umbrella by Stephenie Alexander:** A children's book that personifies a simple umbrella, celebrating its role in providing protection, comfort, and security against the rain—the exact function of the Graco rain cover.  
+* ☔ **The Umbrella by Stephenie Alexander:** A children's book that personifies a simple umbrella, celebrating its role in providing protection, comfort, and security against the rain - the exact function of the Graco rain cover.  
   
 ## 💬 Gemini Prompt (gemini-2.5-flash)  
 > Write a markdown-formatted (start headings at level H2) product report for Thule Urban Glide 3. Follow this with similar, contrasting, and creatively related book recommendations. Be thorough in content discussed but concise and economical with your language. Structure the report with section headings and bulleted lists to avoid long blocks of text.

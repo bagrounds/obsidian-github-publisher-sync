@@ -8,6 +8,9 @@ Author:
 tags:
 affiliate link: https://amzn.to/3ZcSgPK
 CTA: 🛡️ Fortify truth.
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_time: 2026-04-03T00:00:00Z
+force_analyze_links: false
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 📰⚔️🧠 Information Wars: How We Lost the Global Battle Against Disinformation and What We Can Do About It  
@@ -69,7 +72,7 @@ While acknowledging the difficulties, Stengel outlines potential strategies:
   
 ### 🧠 Creatively Related Books (Broader Context)  
   
-1. 📢 **Propaganda** by Edward Bernays: The foundational 1928 text by the "father of public relations," outlining the techniques of influencing public opinion (often seen as a precursor to modern tactics).  
+1. 📢 **[📢 Propaganda](./propaganda.md)** by Edward Bernays: The foundational 1928 text by the "father of public relations," outlining the techniques of influencing public opinion (often seen as a precursor to modern tactics).  
 2. 👑 **[🥀 Twilight of Democracy: 🐍 The Seductive Lure of Authoritarianism](./twilight-of-democracy.md)** by Anne Applebaum: Explores why elites in democracies worldwide are turning towards authoritarianism, providing context for the societal vulnerabilities exploited by disinformation.  
 3. **[👁️‍🗨️💰⛓️👤 The Age of Surveillance Capitalism: The Fight for a Human Future at the New Frontier of Power](./the-age-of-surveillance-capitalism.md)** by Shoshana Zuboff: A deep dive into how tech companies harvest user data for profit and control, underpinning many mechanisms used for disinformation spread.  
 4. **[📊🤥 How to Lie with Statistics](./how-to-lie-with-statistics.md)** by Darrell Huff: A classic guide to understanding how statistics can be manipulated, crucial for media literacy in an age of data-driven claims.  

@@ -9,7 +9,7 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-02T00:00:00Z
 force_analyze_links: false
 ---
-[Home](../index.md) > [🐔 Chickie Loo](./index.md) | [⏮️](./IDEAS.md)  
+[Home](../index.md) > [🐔 Chickie Loo](./index.md) | [⏮️](chickie-loo/IDEAS.md) [⏭️](./2026-04-03-a-quiet-morning-in-the-coop.md)  
 # 2026-04-02 | 🐔 2026-04-02 | 🐔 🐣 Finding Our Rhythm in the Morning Light 🌾 🐔  
   
 # 2026-04-02 | 🐔 🐣 Finding Our Rhythm in the Morning Light 🌾  

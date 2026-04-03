@@ -6,6 +6,9 @@ title: 💰⚙️📈🔍 Defining and Characterizing Reward Hacking
 URL: https://bagrounds.org/articles/defining-and-characterizing-reward-hacking
 Author:
 tags:
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_time: 2026-04-03T00:00:00Z
+force_analyze_links: false
 ---
 [Home](../index.md) > [Articles](./index.md)  
 # [💰⚙️📈🔍 Defining and Characterizing Reward Hacking](https://arxiv.org/pdf/2209.13085)  
@@ -29,7 +32,7 @@ tags:
   
 ## 📚 Book Recommendations  
 ### Similar  
-* The Alignment Problem: 💡 Explores the extensive technical and philosophical challenge of ensuring that advanced AI systems pursue human goals and intentions, which is the core goal threatened by reward hacking.  
+* [⚖️🤖 The Alignment Problem](../books/the-alignment-problem.md): 💡 Explores the extensive technical and philosophical challenge of ensuring that advanced AI systems pursue human goals and intentions, which is the core goal threatened by reward hacking.  
 * [🤖🧑‍ Human Compatible: Artificial Intelligence and the Problem of Control](../books/human-compatible-artificial-intelligence-and-the-problem-of-control.md): 🤖 Proposes fundamental redesigns to AI safety by arguing for systems that are inherently uncertain about human preferences, directly addressing the specification problem that leads to proxy failure.  
   
 ### Contrasting  

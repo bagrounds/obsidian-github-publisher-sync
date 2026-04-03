@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-04-03T08:55:37-07:00
+updated: 2026-04-03T12:29:07-07:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -21,11 +21,11 @@ updated: 2026-04-03T08:55:37-07:00
 - [2026-03-31 | 🌿 Building 📊 Identity 🏡 Housing 🐔🤖🏛️🤖🐲](./reflections/2026-03-31.md)  
   
   
-## [🤖 AI Blog](./ai-blog/index.md) (103)  
+## [🤖 AI Blog](./ai-blog/index.md) (105)  
+- [2026-04-03 | 🎯 The One-Shot Trigger That Never Fired Again 🔫](./ai-blog/2026-04-03-1-the-one-shot-trigger-that-never-fired-again.md)  
 - [2026-04-02 | 🔁 The Double-Date Feedback Loop 🗓️](./ai-blog/2026-04-02-2-the-double-date-feedback-loop.md)  
 - [2026-04-02 | 🧹 Purging the Vault from Root 🗂️](./ai-blog/2026-04-02-1-purging-the-vault-from-root.md)  
 - [2026-04-01 | 🚀 Firing the Missiles: Deleting TypeScript 🗑️](./ai-blog/2026-04-01-3-firing-the-missiles-deleting-typescript.md)  
-- [2026-04-01 | 🤖 AI Blog Sections and Timezone Ghosts 🕐](./ai-blog/2026-04-01-2-ai-blog-sections-and-timezone-ghosts.md)  
   
   
 ## [🤖 Auto Blog Zero](./auto-blog-zero/index.md) (24)  
@@ -42,25 +42,25 @@ updated: 2026-04-03T08:55:37-07:00
 - [2026-03-31 | 🐔 🌿 A Season of Building, Believing, and Becoming 🐣 🐔](./chickie-loo/2026-03-31-a-season-of-building-believing-and-becoming.md)  
   
   
-## [🏛️ Systems for Public Good](./systems-for-public-good/index.md) (12)  
+## [🏛️ Systems for Public Good](./systems-for-public-good/index.md) (13)  
+- [2026-04-03 | 🏛️ 🌐 Connecting Every Corner: Bridging the Digital Divide's Last Mile 🏛️](./systems-for-public-good/2026-04-03-connecting-every-corner-bridging-the-digital-divide-s-last-mile.md)  
 - [2026-04-02 | 🏛️ 👶 Cultivating Care: Beyond Subsidies and Elevating a Vital Profession 🏛️](./systems-for-public-good/2026-04-02-cultivating-care-beyond-subsidies-and-elevating-a-vital-profession.md)  
 - [2026-04-01 | 🏛️ 🏡 Expanding Housing Abundance: Beyond Traditional Models 🏛️](./systems-for-public-good/2026-04-01-expanding-housing-abundance-beyond-traditional-models.md)  
 - [2026-03-31 | 🏛️ 🏡 The Cornerstone of Well-being: Housing as a Foundational Freedom 🏛️](./systems-for-public-good/2026-03-31-the-cornerstone-of-well-being-housing-as-a-foundational-freedom.md)  
-- [2026-03-30 | 🏛️ 🌡️ Safeguarding Collective Well-being: Public Health as a Foundational Freedom 🏛️](./systems-for-public-good/2026-03-30-safeguarding-collective-well-being-public-health-as-a-foundational-freedom.md)  
   
   
 ## [📚 Books](./books/index.md) (958)  
-- [🤖🏛️ Lie Machines: How to Save Democracy from Troll Armies, Deceitful Robots, Junk News Operations, and Political Operatives](./books/lie-machines-how-to-save-democracy-from-troll-armies-deceitful-robots-junk-news-operations-and-political-operatives.md)  
-- [🤥📣 This Is Not Propaganda: Adventures in the War Against Reality](./books/this-is-not-propaganda.md)  
-- [🧠🌱🤔 Mind in Life: Biology, Phenomenology, and the Sciences of Mind](./books/mind-in-life-biology-phenomenology-and-the-sciences-of-mind.md)  
-- [💰🤔😊 The Psychology of Money: Timeless lessons on wealth, greed, and happiness](./books/the-psychology-of-money.md)  
+- [❓🎁 Who Gets What - and Why: The New Economics of Matchmaking and Market Design](./books/who-gets-what-and-why-the-new-economics-of-matchmaking-and-market-design.md)  
+- [👨‍👩‍👧‍👦📊 The Family Firm: A Data-Driven Guide to Better Decision Making in the Early School Years](./books/the-family-firm-a-data-driven-guide-to-better-decision-making-in-the-early-school-years.md)  
+- [🏛️⚖️ The Rule of Law](./books/the-rule-of-law.md)  
+- [🏛️⚖️ On the Rule of Law: History, Politics, Theory](./books/on-the-rule-of-law-history-politics-theory.md)  
   
   
-## [📺 Videos](./videos/index.md) (714)  
-- [🛂🛑🇺🇸🎤 Immigration Enforcement: Last Week Tonight with John Oliver (HBO)](./videos/immigration-enforcement-last-week-tonight-with-john-oliver-hbo.md)  
-- [🧠💪🧘 How To Force Your Brain To Do Hard Things (Lotus Method)](./videos/how-to-force-your-brain-to-do-hard-things-lotus-method.md)  
-- [🏛️🚨🇺🇸 Former Homeland Security chief Jeh Johnson issues urgent call to protect U.S. democracy](./videos/former-homeland-security-chief-jeh-johnson-issues-urgent-call-to-protect-u-s-democracy.md)  
-- [🇺🇸➡️🇨🇦 Dear Americans… we saved you a seat](./videos/dear-americans-we-saved-you-a-seat.md)  
+## [📺 Videos](./videos/index.md) (715)  
+- [🎙️📰🧠 Podcasting Through It with Heather Cox Richardson | The Weekly Show with Jon Stewart](./videos/podcasting-through-it-with-heather-cox-richardson-the-weekly-show-with-jon-stewart.md)  
+- [👶🧸8️⃣🗓️ Montessori Items For An 8 Month Old Baby](./videos/8-montessori-items-for-an-8-month-old-baby-cc.md)  
+- [🇮🇹🏆🗣️ Giorgio Parisi: Nobel Prize Conversations](./videos/giorgio-parisi-nobel-prize-conversations.md)  
+- [🧠🎯🏆😌 Controlling Your Dopamine for Motivation, Focus & Satisfaction | Huberman Lab Essentials](./videos/controlling-your-dopamine-for-motivation-focus-satisfaction-huberman-lab-essentials.md)  
   
   
 ## [🌌 Topics](./topics/index.md) (91)  
@@ -71,10 +71,10 @@ updated: 2026-04-03T08:55:37-07:00
   
   
 ## [📄  Articles](./articles/index.md) (84)  
+- [🤖⚙️🔄🗣️ Agentic Context Engineering: Evolving Contexts for Self Improving Language Models](./articles/agentic-context-engineering-evolving-contexts-for-self-improving-language-models.md)  
 - [🤖🧠💻 Agentic Code Reasoning](./articles/agentic-code-reasoning.md)  
 - [🗺️🚀🤖 A Field Guide to Rapidly Improving AI Products](./articles/a-field-guide-to-rapidly-improving-ai-products.md)  
 - [📈❤️⏱️💪🧘 High Intensity Functional Training Guided by Individualized Heart Rate Variability Results in Similar Health and Fitness Improvements as Predetermined Training with Less Effort](./articles/high-intensity-functional-training-guided-by-individualized-heart-rate-variability-results-in-similar-health-and-fitness-improvements-as-predetermined-training-with-less-effort.md)  
-- [🧠🤖📈 Scientists just developed a new AI modeled on the human brain — it's outperforming LLMs like ChatGPT at reasoning tasks](./articles/scientists-just-developed-a-new-ai-modeled-on-the-human-brain-its-outperforming-llms-like-chatgpt-at-reasoning-tasks.md)  
   
   
 ## [🤖💬 Bot Chats](./bot-chats/index.md) (49)  

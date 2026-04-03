@@ -8,6 +8,9 @@ Author:
 tags:
 affiliate link: https://amzn.to/4kLWjL2
 CTA: ⚔️ Resist disinformation.
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_time: 2026-04-03T00:00:00Z
+force_analyze_links: false
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🏆📰📣 How to Win an Information War: The Propagandist Who Outwitted Hitler  
@@ -31,7 +34,7 @@ CTA: ⚔️ Resist disinformation.
   
 ### 🔑 Key Themes/Concepts  
   
-* 📢 **The Nature of Propaganda:** Explores propaganda not just as lies, but as a tool to shape perceptions, manipulate emotions (like humiliation, fear, hope), and foster a sense of belonging, often by creating compelling narratives and characters.  
+* 📢 **The Nature of [📢 Propaganda](./propaganda.md):** Explores propaganda not just as lies, but as a tool to shape perceptions, manipulate emotions (like humiliation, fear, hope), and foster a sense of belonging, often by creating compelling narratives and characters.  
 * 🕵️ **Black Propaganda:** Focuses on Delmer's specialty – propaganda that purports to come from the enemy itself. 📻 Delmer created fictional German characters and radio stations (like "Der Chef") that subtly undermined Nazi narratives from within.  
 * ❤️‍🔥 **Emotional Resonance over Facts:** Argues that successful propaganda, like Hitler's, often connects with pre-existing feelings and takes audiences on an emotional journey, rather than relying solely on rational argument. 🧠 Countering this requires similar emotional intelligence.  
 * ⚖️ **Ethical Dilemmas:** Confronts the moral complexities of using deceptive techniques even for a "good cause," acknowledging the risk of fostering pervasive distrust.  

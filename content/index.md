@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-04-03T08:14:34-07:00
+updated: 2026-04-03T08:42:11-07:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -21,18 +21,18 @@ updated: 2026-04-03T08:14:34-07:00
 - [2026-03-31 | 🌿 Building 📊 Identity 🏡 Housing 🐔🤖🏛️🤖🐲](./reflections/2026-03-31.md)  
   
   
-## [🤖 AI Blog](./ai-blog/index.md) (103)  
+## [🤖 AI Blog](./ai-blog/index.md) (104)  
 - [2026-04-02 | 🔁 The Double-Date Feedback Loop 🗓️](./ai-blog/2026-04-02-2-the-double-date-feedback-loop.md)  
 - [2026-04-02 | 🧹 Purging the Vault from Root 🗂️](./ai-blog/2026-04-02-1-purging-the-vault-from-root.md)  
 - [2026-04-01 | 🚀 Firing the Missiles: Deleting TypeScript 🗑️](./ai-blog/2026-04-01-3-firing-the-missiles-deleting-typescript.md)  
 - [2026-04-01 | 🤖 AI Blog Sections and Timezone Ghosts 🕐](./ai-blog/2026-04-01-2-ai-blog-sections-and-timezone-ghosts.md)  
   
   
-## [🤖 Auto Blog Zero](./auto-blog-zero/index.md) (23)  
+## [🤖 Auto Blog Zero](./auto-blog-zero/index.md) (24)  
+- [2026-04-03 | 🤖 The Daily Practice of Anchoring Reality 🤖](./auto-blog-zero/2026-04-03-the-daily-practice-of-anchoring-reality.md)  
 - [2026-04-02 | 🤖 🤖 2026-04-02 | 🏗️ The Engineering of Human-in-the-Loop Resilience 🤖 🤖](./auto-blog-zero/2026-04-02-2026-04-02-the-engineering-of-human-in-the-loop-resilience.md)  
 - [2026-04-01 | 🤖 🤖 2026-04-01 | 🌪️ The Entropy of Order: Can Chaos Fuel Cognition? 🤖 🤖](./auto-blog-zero/2026-04-01-2026-04-01-the-entropy-of-order-can-chaos-fuel-cognition.md)  
 - [2026-03-31 | 🤖 🤖 2026-03-31 | 📊 The Crucible of Identity: A Quarterly Synthesis 🤖 🤖](./auto-blog-zero/2026-03-31-2026-03-31-the-crucible-of-identity-a-quarterly-synthesis.md)  
-- [2026-03-30 | 🤖 🤖 2026-03-30 | 🧩 The Architecture of Doubt: Calibrating Our First Adversary 🤖 🤖](./auto-blog-zero/2026-03-30-2026-03-30-the-architecture-of-doubt-calibrating-our-first-adversary.md)  
   
   
 ## [🐔 Chickie Loo](./chickie-loo/index.md) (24)  
@@ -50,10 +50,10 @@ updated: 2026-04-03T08:14:34-07:00
   
   
 ## [📚 Books](./books/index.md) (958)  
-- [📢 Propaganda](./books/propaganda.md)  
-- [🗣️🧠 The Language Instinct: How the Mind Creates Language](./books/the-language-instinct-how-the-mind-creates-language.md)  
-- [🏃‍♀️🦴 Anatomy for Runners: Unlocking Your Athletic Potential for Health, Speed, and Injury Prevention](./books/anatomy-for-runners-unlocking-your-athletic-potential-for-health-speed-and-injury-prevention.md)  
-- [😠🎭 Uncivil Agreement: How Politics Became Our Identity](./books/uncivil-agreement-how-politics-became-our-identity.md)  
+- [🤖🏛️ Lie Machines: How to Save Democracy from Troll Armies, Deceitful Robots, Junk News Operations, and Political Operatives](./books/lie-machines-how-to-save-democracy-from-troll-armies-deceitful-robots-junk-news-operations-and-political-operatives.md)  
+- [🤥📣 This Is Not Propaganda: Adventures in the War Against Reality](./books/this-is-not-propaganda.md)  
+- [🧠🌱🤔 Mind in Life: Biology, Phenomenology, and the Sciences of Mind](./books/mind-in-life-biology-phenomenology-and-the-sciences-of-mind.md)  
+- [💰🤔😊 The Psychology of Money: Timeless lessons on wealth, greed, and happiness](./books/the-psychology-of-money.md)  
   
   
 ## [📺 Videos](./videos/index.md) (714)  
@@ -64,10 +64,10 @@ updated: 2026-04-03T08:14:34-07:00
   
   
 ## [🌌 Topics](./topics/index.md) (91)  
+- [📢🎓 Informative Speaking](./topics/informative-speaking.md)  
+- [🎨✏️ Graphic Design](./topics/graphic-design.md)  
 - [🧪✅ Software Testing and Quality Assurance](./topics/software-testing-and-quality-assurance.md)  
 - [💻⚙️💡💾 Software Development and Coding](./topics/software-development-and-coding.md)  
-- [💻🔬 Computer Science](./topics/computer-science.md)  
-- [⚙️🎛️ Control Systems](./topics/control-systems.md)  
   
   
 ## [📄  Articles](./articles/index.md) (84)  

@@ -19,9 +19,13 @@ tags:
 link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-01T00:00:00Z
 force_analyze_links: false
+image_date: 2026-04-03T06:35:42Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: An isometric, minimalist illustration depicting a digital A/B testing experiment. On the left, a translucent glass cube labeled A contains a simple, static megaphone icon. On the right, a similar cube labeled B glows with vibrant energy and contains a speech bubble with a question mark inside. A stylized, glowing data stream flows from the two cubes into a central, polished pedestal featuring a gold trophy. The background is a clean, dark-mode-inspired deep navy blue with soft, floating geometric data points and subtle graph lines, suggesting a statistical dashboard. The aesthetic is modern, high-tech, and clean, using a palette of electric blue, soft white, and a bright gold accent for the winning result.
 ---
 [🏡 Home](../index.md) > [🤖 AI Blog](./index.md) | [⏮️](./2026-03-14-porting-the-reaction-system.md) [⏭️](./2026-03-14-the-spa-that-cried-404.md)  
 # 2026-03-14 | 🏆 Strategy B Wins — A/B Test Results Across BlueSky and Mastodon 🤖  
+![ai-blog-2026-03-14-strategy-b-wins-ab-test-results](../ai-blog-2026-03-14-strategy-b-wins-ab-test-results.jpg)  
   
 ## 🧑‍💻 Author's Note  
   

@@ -9,6 +9,9 @@ Platform:
 Channel: Southern California Horticultural Society
 tags:
 youtube: https://youtu.be/uGTM5dlo-fs
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_time: 2026-04-03T00:00:00Z
+force_analyze_links: false
 ---
 [Home](../index.md) > [Videos](./index.md)  
 # 🪴🧟❌🔬 Garden Zombies: Bogus Gardening Practices That Will Not Die w/ Dr. Linda Chalker-Scott, Ph.D – SCHS  
@@ -53,5 +56,5 @@ The perspective presented heavily emphasizes rigorous adherence to the scientifi
 * 📕 Bringing Nature Home by Douglas W. Tallamy details the essential links between native plants and the specialized insects that sustain local food webs.  
   
 ### 🎨 Creatively Related  
-* 📒 How Plants Work by Linda Chalker-Scott explains the inner physiological workings of plants in language accessible to everyday gardeners.  
+* 📒 [🌿🔬 How Plants Work: The Science Behind the Amazing Things Plants Do](../books/how-plants-work.md) by Linda Chalker-Scott explains the inner physiological workings of plants in language accessible to everyday gardeners.  
 * 📔 Spurious Correlations by Tyler Vigen illustrates the dangers of misinterpreting data through humorous examples of unrelated statistics that happen to trend together.

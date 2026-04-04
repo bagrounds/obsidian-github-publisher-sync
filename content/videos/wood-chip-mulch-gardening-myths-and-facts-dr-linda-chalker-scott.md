@@ -9,6 +9,9 @@ Platform:
 Channel: Back to Eden Gardening
 tags:
 youtube: https://youtu.be/iC7GQHp9-8Q
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_time: 2026-04-03T00:00:00Z
+force_analyze_links: false
 ---
 [Home](../index.md) > [Videos](./index.md)  
 # 🪵🪴🤥✅🔬 Wood Chip Mulch Gardening Myths and Facts! Dr. Linda Chalker Scott  
@@ -55,5 +58,5 @@ youtube: https://youtu.be/iC7GQHp9-8Q
 * 📒 Lasagna Gardening by Patricia Lanza advocates for the multi-layered sheet mulching approach using cardboard and various organic materials to create garden beds.  
   
 ### 🎨 Creatively Related  
-* 📕 Entangled Life by Merlin Sheldrake explores the fascinating world of fungi and how they connect and sustain the natural world through underground networks.  
+* 📕 [🍄🌍🧠🔮 Entangled Life: How Fungi Make Our Worlds, Change Our Minds & Shape Our Futures](../books/entangled-life-how-fungi-make-our-worlds-change-our-minds-shape-our-futures.md) by Merlin Sheldrake explores the fascinating world of fungi and how they connect and sustain the natural world through underground networks.  
 * 📓 Finding the Mother Tree by Suzanne Simard details the complex communication and nutrient-sharing systems between trees in a forest ecosystem.

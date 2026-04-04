@@ -9,6 +9,9 @@ Platform:
 Channel:
 tags:
 youtube: https://youtu.be/ZDaZa7P5zSI
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_time: 2026-04-03T00:00:00Z
+force_analyze_links: false
 ---
 [Home](../index.md) > [Videos](./index.md)  
 # 🪴🔬📚 Soil and Planting Lessons from Research  
@@ -56,5 +59,5 @@ youtube: https://youtu.be/ZDaZa7P5zSI
 * 🌻 Teaming with Microbes by Jeff Lowenfels focuses heavily on the addition of specific biological inoculants and compost teas which the video suggests may be unnecessary in many soils.  
   
 ### 🎨 Creatively Related  
-* 🍄 Entangled Life by Merlin Sheldrake describes the complex underground fungal networks that connect root systems and soil in ways the naked eye cannot see.  
+* 🍄 [🍄🌍🧠🔮 Entangled Life: How Fungi Make Our Worlds, Change Our Minds & Shape Our Futures](../books/entangled-life-how-fungi-make-our-worlds-change-our-minds-shape-our-futures.md) by Merlin Sheldrake describes the complex underground fungal networks that connect root systems and soil in ways the naked eye cannot see.  
 * 🗺️ Finding the Mother Tree by Suzanne Simard provides a narrative look at how forest trees communicate and support each other through the very soil structures discussed in the lesson.

@@ -6,6 +6,9 @@ URL: https://bagrounds.org/books/botany-for-gardeners
 share: true
 affiliate link: https://amzn.to/4jt9qQg
 CTA: Grow smarter.
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_time: 2026-04-03T00:00:00Z
+force_analyze_links: false
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🌿🧑‍🌾 Botany for Gardeners  
@@ -69,7 +72,7 @@ CTA: Grow smarter.
 ### ✨ Creatively Related (Expanding the Botanical Horizon)  
   
 * 🌍 **Soil Science for Gardeners by Robert Pavlis:** Focuses specifically on the science of soil, the rhizosphere, and building soil health – crucial for plant growth but distinct from pure botany.  
-* 🧑‍🤝‍🧑 **Ethnobotany Books (e.g., Ethnobotany for Beginners, Braiding Sweetgrass):** Explore the relationship between people and plants, including traditional knowledge, cultural uses, and folklore.  
+* 🧑‍🤝‍🧑 **Ethnobotany Books (e.g., Ethnobotany for Beginners, [🪢🌾 Braiding Sweetgrass: Indigenous Wisdom, Scientific Knowledge, and the Teachings of Plants](./braiding-sweetgrass.md)):** Explore the relationship between people and plants, including traditional knowledge, cultural uses, and folklore.  
 * 🖍️ **Botanical Illustration Books (Various authors like Christabel King, Valerie Oxley, Wendy Hollender, Bobbi Angell):** Focus on the art of depicting plants accurately and beautifully, combining artistic skill with scientific observation.  
 * 📜 **The Signature of All Things by Elizabeth Gilbert:** A historical novel centered around a 19th-century female botanist, bringing the field to life through narrative.  
 * ✍️ **A Botanist's Vocabulary: 1300 Terms Explained and Illustrated:** A reference focusing purely on defining botanical terminology.  

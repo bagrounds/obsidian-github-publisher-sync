@@ -5,6 +5,9 @@ aliases:
 URL: https://bagrounds.org/books/democracy-in-chains-the-deep-history-of-the-radical-rights-stealth-plan-for-america
 share: true
 affiliate link: https://amzn.to/3G2kqGH
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_time: 2026-04-02T00:00:00Z
+force_analyze_links: false
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🏛️⛓️ Democracy in Chains: The Deep History of the Radical Right's Stealth Plan for America  

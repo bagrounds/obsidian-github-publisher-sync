@@ -9,6 +9,9 @@ Platform:
 Channel: Heather Cox Richardson
 tags:
 youtube: https://youtu.be/3eGUFiK6EUg
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_time: 2026-04-03T00:00:00Z
+force_analyze_links: false
 ---
 [Home](../index.md) > [Videos](./index.md) | [🏛️🇺🇸📖 Heather Cox Richardson](../people/heather-cox-richardson.md)  
 # 🇺🇸🗓️👎 Project 2025 Is Here and Americans Hate It | Explainer  
@@ -58,7 +61,7 @@ youtube: https://youtu.be/3eGUFiK6EUg
   
 ### Creatively Related  
   
-* 📚 **The Power Broker: Robert Moses and the Fall of New York** by Robert A. Caro. 🏗️ A study of how unchecked political power, accumulated through control over government infrastructure and process, can be used to reshape a city and society, relating to the weaponization of infrastructure funding mentioned in the video.  
+* 📚 **[👑🏙️ The Power Broker](../books/the-power-broker.md): Robert Moses and the Fall of New York** by Robert A. Caro. 🏗️ A study of how unchecked political power, accumulated through control over government infrastructure and process, can be used to reshape a city and society, relating to the weaponization of infrastructure funding mentioned in the video.  
 * **[🌍🏛️ The Great Transformation: The Political and Economic Origins of Our Time](../books/the-great-transformation-the-political-and-economic-origins-of-our-time.md)** by Karl Polanyi. 🌍 A classic work examining the massive upheaval caused by the rise of market society and the resultant counter-movements demanding social protection, offering a broad historical framework for understanding the current radical political shifts.  
   
 ## 🐦 Tweet  

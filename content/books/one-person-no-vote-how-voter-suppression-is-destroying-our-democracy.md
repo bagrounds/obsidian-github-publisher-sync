@@ -6,6 +6,9 @@ URL: https://bagrounds.org/books/one-person-no-vote-how-voter-suppression-is-des
 share: true
 CTA: ✊ Defend enfranchisement.
 affiliate link: https://amzn.to/47BTSHt
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_time: 2026-04-04T00:00:00Z
+force_analyze_links: false
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🗳️⬇️🏛️ One Person, No Vote: How Voter Suppression Is Destroying Our Democracy  

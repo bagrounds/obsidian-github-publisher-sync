@@ -13,7 +13,7 @@ link_analysis_time: 2026-04-03T00:00:00Z
 force_analyze_links: false
 updated: 2026-04-03T15:25:49
 ---
-[Home](../index.md) > [🐔 Chickie Loo](./index.md) | [⏮️](./2026-04-02-2026-04-02-finding-our-rhythm-in-the-morning-light.md)  
+[Home](../index.md) > [🐔 Chickie Loo](./index.md) | [⏮️](./2026-04-02-2026-04-02-finding-our-rhythm-in-the-morning-light.md) [⏭️](./2026-04-04-a-heart-full-of-surprises-and-sweet-returns.md)  
 # 2026-04-03 | 🐔 A Quiet Morning in the Coop 🐣 🐔  
 ![chickie-loo-2026-04-03-a-quiet-morning-in-the-coop](../chickie-loo-2026-04-03-a-quiet-morning-in-the-coop.jpg)  
   

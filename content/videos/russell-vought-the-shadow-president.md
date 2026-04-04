@@ -9,6 +9,9 @@ Platform:
 Channel: ProPublica
 tags:
 youtube: https://youtu.be/w1LuV82l0vs
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_time: 2026-04-04T00:00:00Z
+force_analyze_links: false
 ---
 [Home](../index.md) > [Videos](./index.md)  
 # 👤🎭🏛️ Russell Vought: The Shadow President  
@@ -68,6 +71,6 @@ A: 🕊️ Vought said he has no problem being called a Christian nationalist wh
 * [⚠️🥴🕹️🌐 The Fifth Risk](../books/the-fifth-risk.md) (by Michael Lewis): Lewis explores 🌎 the critical, human-centered work of federal agencies—like Energy, Agriculture, and Commerce—countering the view that bureaucracy is useless.  
 * [🇺🇸💔 The Lost Soul of the American Presidency: The Decline into Demagoguery and the Prospects for Renewal](../books/the-lost-soul-of-the-american-presidency-the-decline-into-demagoguery-and-the-prospects-for-renewal.md) (by Stephen F. Knott): This book provides a constitutional critique of the modern, partisan presidency, challenging the goal of maximizing executive power.  
 * [🇺🇸➡️ A Time for Choosing: The Rise of Modern American Conservatism](../books/a-time-for-choosing-the-rise-of-modern-american-conservatism.md) (by Jonathan M. Schoenwald): This book details the historical and tactical rise of modern American conservatism from the 1960s onward.  
-* 📚 The Power Broker: Robert Moses and the Fall of New York (by Robert A. Caro): Caro's biography 👑 is a cautionary tale about an unelected official who amassed immense, unchecked power, which parallels Vought's consolidation of executive authority.  
+* 📚 [👑🏙️ The Power Broker](../books/the-power-broker.md): Robert Moses and the Fall of New York (by Robert A. Caro): Caro's biography 👑 is a cautionary tale about an unelected official who amassed immense, unchecked power, which parallels Vought's consolidation of executive authority.  
 * 📚 The Second World War (by Winston S. Churchill): This history ⚔️ offers the grandiose historical frame of reference often used in political rhetoric, allowing comparison to a world-defining political struggle.  
 * 📚 The Unwritten Rules of the Highly Effective Job Search (by Orville Pierson): This book is an insider's guide to navigating organizational bureaucracy and dynamics, the very system Vought plans to exploit and abolish.

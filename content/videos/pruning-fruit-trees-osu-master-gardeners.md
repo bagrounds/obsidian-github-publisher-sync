@@ -9,6 +9,9 @@ Platform:
 Channel:
 tags:
 youtube: https://youtu.be/dfkn1fC0gbo
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_time: 2026-04-03T00:00:00Z
+force_analyze_links: false
 ---
 [Home](../index.md) > [Videos](./index.md)  
 # ✂️🌳🍎 Pruning Fruit Trees - OSU Master Gardeners  
@@ -61,5 +64,5 @@ youtube: https://youtu.be/dfkn1fC0gbo
   
 ### 🎨 Creatively Related  
   
-* 📖 The Hidden Life of Trees by Peter Wohlleben describes the complex communication and resource-sharing networks between trees that inform how they respond to limb loss.  
-* 📖 Botany for Gardeners by Brian Capon offers a deep dive into the physiological processes like apical dominance that dictate how a tree reacts to every cut you make.
+* 📖 [🌳🗣️ The Hidden Life of Trees: What They Feel, How They Communicate: Discoveries from a Secret World](../books/the-hidden-life-of-trees-what-they-feel-how-they-communicate-discoveries-from-a-secret-world.md) by Peter Wohlleben describes the complex communication and resource-sharing networks between trees that inform how they respond to limb loss.  
+* 📖 [🌿🧑‍🌾 Botany for Gardeners](../books/botany-for-gardeners.md) by Brian Capon offers a deep dive into the physiological processes like apical dominance that dictate how a tree reacts to every cut you make.

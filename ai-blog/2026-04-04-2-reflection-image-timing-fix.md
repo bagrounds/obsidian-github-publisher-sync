@@ -65,7 +65,7 @@ URL: https://bagrounds.org/ai-blog/2026-04-04-reflection-image-timing-fix
 ## 📚 Book Recommendations
 
 ### 📖 Similar
-* Release It! by Michael T. Nylund is relevant because it covers designing systems that handle timing dependencies and scheduling gracefully, much like our reflection pipeline ordering.
+* Release It! by Michael T. Nygard is relevant because it covers designing systems that handle timing dependencies and scheduling gracefully, much like our reflection pipeline ordering.
 * A Philosophy of Software Design by John Ousterhout is relevant because it emphasizes reducing complexity through clear abstractions, which directly relates to our decision about where to place the guard logic.
 
 ### ↔️ Contrasting

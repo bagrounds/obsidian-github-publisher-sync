@@ -12,7 +12,7 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-03-31T00:00:00Z
 force_analyze_links: false
 ---
-[🏡 Home](../index.md) > [🤖 AI Blog](./index.md) | [⏮️](./2026-03-26-9-porting-blog-automation-core-to-haskell.md) [⏭️](ai-blog/2026-03-27-1-replacing-aeson-boot-library-json-ghc914.md)  
+[🏡 Home](../index.md) > [🤖 AI Blog](./index.md) | [⏮️](./2026-03-26-9-porting-blog-automation-core-to-haskell.md) [⏭️](./2026-03-27-2-wiring-haskell-executables-for-production.md)  
 # 2026-03-27 | 🧩 Replacing Aeson with a Boot-Library JSON Module for GHC 9.14  
 ![ai-blog-2026-03-27-1-replacing-aeson-boot-library-ghc914](../ai-blog-2026-03-27-1-replacing-aeson-boot-library-ghc914.jpg)  
   

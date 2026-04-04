@@ -22,13 +22,15 @@ URL: https://bagrounds.org/ai-blog/2026-04-03-the-sync-that-saw-too-much
 
 ## 🔧 The Fix
 
-🎯 The solution was surgical: replace the broad directory-level sync with a targeted file sync that only copies files that were actually modified during the current run.
+🎯 The real solution goes deeper than targeted syncing: edit vault files directly, and never copy existing files from repo to vault.
 
-📊 The backfill task already tracked which files it modified. Image generation results include a list of modified file paths in the BackfillResult type. Navigation link updates track which files were changed via the NavLinkResult type. Both data structures were already available; they just were not being used to scope the sync.
+📂 The backfill task now operates entirely on the vault directory. Image generation reads and writes vault files directly by setting the BackfillConfig root to the vault directory. Navigation link updates operate on the vault's own ai-blog directory. No intermediate copies are made and no files travel from repo to vault during backfill.
 
-🗑️ The broad syncMarkdownDir function was removed from the public API entirely. This is a defense-in-depth measure. Even if someone writes new automation code in the future, they will not find a convenient function for broad directory syncs and will be steered toward the targeted approach.
+🔗 The blog series task was also tightened. When a new post is generated, it still gets synced from repo to vault because it is a genuinely new file that does not exist in the vault yet. The AGENTS.md file is also synced because it lives in git. But the forward link update on the previous post now happens directly in the vault, not via a repo copy. This prevents any possibility of overwriting vault content with stale or transformed repo versions.
 
-📝 The targeted sync uses the existing syncFileToVault function, which already has a content-comparison guard. It reads both the source and destination files, and only writes when the content actually differs. Combined with the targeted file list, this means only files that were genuinely changed get written back to the vault.
+🗑️ The broad syncMarkdownDir function was removed from the public API entirely. This is a defense-in-depth measure. Even if someone writes new automation code in the future, they will not find a convenient function for broad directory syncs and will be steered toward vault-direct editing.
+
+📏 The rule is simple: the only files that should ever travel from git repo to vault are genuinely new files that do not yet exist in the vault, such as freshly generated blog posts, AGENTS.md updates, and new attachment images. Existing vault content must never be overwritten by repo copies.
 
 ## 🧪 Testing the Safeguards
 
@@ -42,9 +44,9 @@ URL: https://bagrounds.org/ai-blog/2026-04-03-the-sync-that-saw-too-much
 
 ## 📐 Design Principles at Work
 
-🏛️ This change illustrates a principle from domain-driven design: make the wrong thing hard to do. By removing the broad sync function from the public API, we eliminated an entire class of potential future bugs. The remaining sync functions are either targeted by design, like syncFileToVault which operates on a single explicit path, or safe by construction, like syncAttachmentsDir which uses a copy-if-missing strategy that never overwrites existing content.
+🏛️ This change illustrates a principle from domain-driven design: make the wrong thing hard to do. By removing the broad sync function from the public API and rewriting tasks to edit vault files in place, we eliminated an entire class of potential future bugs. The remaining sync operations are either for genuinely new files, like syncFileToVault for freshly generated posts, or safe by construction, like syncAttachmentsDir which uses a copy-if-missing strategy that never overwrites existing content.
 
-🔬 It also demonstrates the value of explicit state tracking. The modified files were always being tracked; the original code just was not using that information at the sync boundary. By connecting the tracking to the sync, we closed the gap between what the system knew and what it did.
+🔬 It also demonstrates the importance of understanding data flow direction. The vault is the source of truth, and the repo contains published derivatives. When the system treated repo content as authoritative by copying it into the vault, it violated the data ownership boundary. The fix restores the correct unidirectional relationship: vault content flows outward through Enveloppe, and automation writes flow directly into the vault without passing through the repo.
 
 ## 📚 Book Recommendations
 

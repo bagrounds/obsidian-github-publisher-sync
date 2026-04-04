@@ -450,9 +450,9 @@ runBlogSeries manager repoRoot vaultDir seriesId = do
                     Right _ -> logMsg $ "  🖼️  Image generated for " <> filename
                     Left err -> logMsg $ "  ⚠️  Image generation failed for " <> filename <> ": " <> T.pack (show err)
 
-              -- Update previous post with forward link
+              -- Update previous post with forward link — edit directly in vault
               case previousPost of
-                Just pp -> updatePreviousPost seriesDir pp series filename
+                Just pp -> updatePreviousPost (vaultDir </> T.unpack seriesId) pp series filename
                 Nothing -> pure ()
 
               -- Write metadata
@@ -469,41 +469,29 @@ runBlogSeries manager repoRoot vaultDir seriesId = do
                     Nothing -> Nothing
               _ <- updateDailyReflection vaultDir todayText series filenameNoExt title regenFilenameNoExt
 
-              -- Sync generated files to vault directory
+              -- Sync new post to vault (this is a genuinely new file)
               let postRelPath = T.unpack seriesId </> T.unpack filename
                   postLocalPath = repoRoot </> postRelPath
               _ <- syncFileToVault postLocalPath postRelPath vaultDir
 
-              -- Sync previous post if updated
-              prevPostFilename <- readPreviousPostFilename metadataPath
-              case prevPostFilename of
-                Just pf -> do
-                  let prevRelPath = T.unpack seriesId </> T.unpack pf
-                  _ <- syncFileToVault (repoRoot </> prevRelPath) prevRelPath vaultDir
-                  pure ()
-                Nothing -> pure ()
-
-              -- Sync AGENTS.md
+              -- Sync AGENTS.md (lives in git, needs to go to vault)
               let agentsRelPath = T.unpack seriesId </> "AGENTS.md"
               _ <- syncFileToVault (repoRoot </> agentsRelPath) agentsRelPath vaultDir
 
-              -- Sync attachments (image files) to vault
+              -- Sync attachments (new image files) to vault
               syncAttachmentsDir (repoRoot </> "attachments") (vaultDir </> "attachments")
               pure ()
 
   logMsg $ "✅ " <> taskName
 
-runBackfillImages :: Manager -> FilePath -> FilePath -> IO ()
-runBackfillImages manager repoRoot vaultDir = do
+runBackfillImages :: Manager -> FilePath -> IO ()
+runBackfillImages manager vaultDir = do
   logMsg "▶️  backfill-blog-images"
 
   today <- todayPacific
   let todayText = unDateStr today
 
-  -- 1. Copy vault posts to local repo
-  mapM_ (\sid -> copySeriesPosts vaultDir sid repoRoot) backfillContentIds
-
-  -- 2. Image backfill
+  -- 1. Image backfill — operates directly on vault files
   envMap <- buildEnvMap
     [ "GEMINI_API_KEY", "CLOUDFLARE_API_TOKEN", "CLOUDFLARE_ACCOUNT_ID"
     , "CLOUDFLARE_IMAGE_MODEL", "HUGGINGFACE_API_TOKEN", "HUGGINGFACE_IMAGE_MODEL"
@@ -518,9 +506,9 @@ runBackfillImages manager repoRoot vaultDir = do
     _  -> do
       logMsg $ "  🎨 Image providers: " <> T.pack (show (length providers))
       let bfConfig = BackfillConfig
-            { bfcRepoRoot = repoRoot
+            { bfcRepoRoot = vaultDir
             , bfcContentDirs = backfillContentIds
-            , bfcAttachmentsDir = repoRoot </> "attachments"
+            , bfcAttachmentsDir = vaultDir </> "attachments"
             , bfcProviders = providers
             , bfcMaxImages = 1
             }
@@ -530,32 +518,13 @@ runBackfillImages manager repoRoot vaultDir = do
             <> " files updated, " <> T.pack (show (brFilesSkipped result)) <> " skipped"
       pure (brModifiedFiles result)
 
-  -- 3. Update AI blog nav links
-  let aiBlogDir = repoRoot </> "ai-blog"
+  -- 2. Update AI blog nav links — operates directly on vault files
+  let aiBlogDir = vaultDir </> "ai-blog"
   navResults <- ensureAllNavLinks aiBlogDir
   let modifiedCount = length (filter (\r -> nlrModified r) navResults)
   logMsg $ "  🔗 Nav links: " <> T.pack (show modifiedCount) <> " files updated"
 
-  -- 4. Sync only modified files to vault (targeted sync prevents overwriting
-  --    vault content with repo versions that may differ due to Enveloppe transforms)
-  let navModifiedFiles = fmap (\r -> "ai-blog/" <> nlrFilename r)
-                              (filter nlrModified navResults)
-      allModifiedFiles = imageModifiedFiles <> navModifiedFiles
-  logMsg $ "  📦 Syncing " <> T.pack (show (length allModifiedFiles))
-        <> " modified file(s) to vault"
-  mapM_ (\relPath -> do
-    let localPath = repoRoot </> T.unpack relPath
-    synced <- syncFileToVault localPath (T.unpack relPath) vaultDir
-    case synced of
-      True  -> logMsg $ "    ✅ " <> relPath
-      False -> pure ()
-    ) allModifiedFiles
-
-  -- 5. Sync attachments
-  let attachmentsDir = repoRoot </> "attachments"
-  syncAttachmentsDir attachmentsDir (vaultDir </> "attachments")
-
-  -- 6. Add update links from image backfill results
+  -- 3. Add update links from image backfill results
   let reflectionsDir = vaultDir </> "reflections"
   imageUpdateLinks <- traverse (\f -> do
         title <- extractTitleFromFile (vaultDir </> T.unpack f)
@@ -567,7 +536,7 @@ runBackfillImages manager repoRoot vaultDir = do
       _ <- addUpdateLinksToReflection reflectionsDir todayText ImageUpdate imageUpdateLinks
       pure ()
 
-  -- 7. Link AI blog posts to their date's reflection with a dedicated AI Blog section
+  -- 4. Link AI blog posts to their date's reflection with a dedicated AI Blog section
   --    Filter out future dates to avoid creating reflections ahead of Pacific time
   aiBlogLinks <- buildReflectionLinks aiBlogDir navResults
   let todayLinks = filter (\(_, _, date) -> date <= todayText) aiBlogLinks
@@ -737,7 +706,7 @@ taskRunners manager repoRoot vaultDir = Map.fromList
   [ (BlogSeriesChickieLoo, runBlogSeries manager repoRoot vaultDir "chickie-loo")
   , (BlogSeriesAutoBlogZero, runBlogSeries manager repoRoot vaultDir "auto-blog-zero")
   , (BlogSeriesSystemsForPublicGood, runBlogSeries manager repoRoot vaultDir "systems-for-public-good")
-  , (BackfillBlogImages, runBackfillImages manager repoRoot vaultDir)
+  , (BackfillBlogImages, runBackfillImages manager vaultDir)
   , (InternalLinking, runInternalLinking manager vaultDir)
   , (SocialPosting, runSocialPosting manager vaultDir)
   , (AiFiction, runAiFiction manager vaultDir)

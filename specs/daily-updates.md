@@ -48,7 +48,7 @@
 | 🏷️ Source | 📝 Detail Text | 📋 Used By |
 |---|---|---|
 | Image backfill | `🖼️ added image` | backfill-blog-images |
-| Internal linking | `🔗 added N internal link(s)` | internal-linking (count from FileResult) |
+| Internal linking | `🔗 added N internal link(s)` (e.g., `🔗 added 1 internal link` or `🔗 added 2 internal links`) | internal-linking (count from FileResult) |
 | Social posting | `🦋 posted to BlueSky`, `🐘 posted to Mastodon`, `🐦 posted to Twitter` | auto-post (per-platform details) |
 
 📄 Example reflection with page-based updates:

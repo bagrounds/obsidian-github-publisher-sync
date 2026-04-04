@@ -5,10 +5,10 @@ aliases:
 title: 📺 Videos
 URL: https://bagrounds.org/videos
 backlinks: false
-updated: 2026-04-03T18:17:51-07:00
+updated: 2026-04-03T18:28:26-07:00
 ---
 [Home](../index.md)  
-# 📺 Videos (721)  
+# 📺 Videos (722)  
 - [💰🤑🤖💡🚀💲 $0.10/Month Runs My Entire AI Life. I'll Show You How.](./0-10-month-runs-my-entire-ai-life-ill-show-you-how.md)  
 - [📊📈📉📃👁️ 10 Charts to Understand the 900 Page Budget Bill](./10-charts-to-understand-the-900-page-budget-bill.md)  
 - [🤖🔗⬆️✅ 12-Factor Agents: Patterns of reliable LLM applications — Dex Horthy, HumanLayer](./12-factor-agents-patterns-of-reliable-llm-applications-dex-horthy-humanlayer.md)  
@@ -719,6 +719,7 @@ updated: 2026-04-03T18:17:51-07:00
 - [📰🕒❓ With government jobs report delayed, what other data reveals about the economy](./with-government-jobs-report-delayed-what-other-data-reveals-about-the-economy.md)  
 - [👹🇺🇸📉🔨👁️ With Trump “We Are Watching the Deliberate Dismantling of American Democracy”](./with-trump-we-are-watching-the-deliberate-dismantling-of-american-democracy.md)  
 - [👩‍⚖️🔒🗣️ Woman wrongfully detained in immigration raid describes what she endured](./woman-wrongfully-detained-in-immigration-raid-describes-what-she-endured.md)  
+- [🪵🪴🤥✅🔬 Wood Chip Mulch Gardening Myths and Facts! Dr. Linda Chalker Scott](./wood-chip-mulch-gardening-myths-and-facts-dr-linda-chalker-scott.md)  
 - [🧠⚙️🛠️💡 You aren't at the mercy of your emotions -- your brain creates them | Lisa Feldman Barrett](./you-arent-at-the-mercy-of-your-emotions-your-brain-creates-them-lisa-feldman-barrett.md)  
 - [🤯😲😳 You Aren't Going to Believe This](./you-arent-going-to-believe-this.md)  
 - [You Are Two](./you-are-two.md)  

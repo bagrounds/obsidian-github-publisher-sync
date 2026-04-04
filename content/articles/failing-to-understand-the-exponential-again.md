@@ -6,6 +6,9 @@ title: ❓📈🤦 Failing to Understand the Exponential, Again
 URL: https://bagrounds.org/articles/failing-to-understand-the-exponential-again
 Author:
 tags:
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_time: 2026-04-03T00:00:00Z
+force_analyze_links: false
 ---
 [Home](../index.md) > [Articles](./index.md)  
 # [❓📈🤦 Failing to Understand the Exponential, Again](https://www.julian.ac/blog/2025/09/27/failing-to-understand-the-exponential-again)  

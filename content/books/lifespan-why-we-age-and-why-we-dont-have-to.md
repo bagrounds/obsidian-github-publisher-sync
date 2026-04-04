@@ -6,6 +6,9 @@ URL: https://bagrounds.org/books/lifespan-why-we-age-and-why-we-dont-have-to
 share: true
 CTA: 🔬 Explore longevity.
 affiliate link: https://amzn.to/486SRHZ
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_time: 2026-04-03T00:00:00Z
+force_analyze_links: false
 ---
 [Home](../index.md) > [Books](./index.md)  
 # ⏳🙅 Lifespan: Why We Age - and Why We Don't Have To  

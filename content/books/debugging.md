@@ -8,6 +8,9 @@ Author:
 tags:
 affiliate link: https://amzn.to/4kmA3HP
 CTA: 🛠️ Conquer errors.
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_time: 2026-04-04T00:00:00Z
+force_analyze_links: false
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🐞🔍🤔✅ Debugging: The 9 Indispensable Rules for Finding Even the Most Elusive Software and Hardware Problems  

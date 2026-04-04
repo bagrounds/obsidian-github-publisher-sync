@@ -6,6 +6,9 @@ URL: https://bagrounds.org/books/co-intelligence-the-definitive-bestselling-guid
 share: true
 CTA: 🚀 Navigate the future of work.
 affiliate link: https://amzn.to/4p7nbH9
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_time: 2026-04-02T00:00:00Z
+force_analyze_links: false
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🧑‍🤝‍🤖 Co-Intelligence: The Definitive, Bestselling Guide to Living and Working with AI  

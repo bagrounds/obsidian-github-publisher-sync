@@ -74,6 +74,8 @@
 
 ```
 1. 📁 Scan all directories from BACKFILL_CONTENT_IDS for candidate files
+   - 🚫 Skip future-dated reflections (date > today)
+   - 🚫 Skip reflections whose title is still just the bare date (awaiting creative title from reflection-title task at 10 PM Pacific)
 2. 🗓️ Sort ALL candidates by date descending (cross-directory)
 3. 🔗 Build provider chain from all configured providers
 4. 🔄 For each candidate (newest first globally):
@@ -374,6 +376,14 @@ Image name: chickie-loo-2026-03-22-weekly-recap.jpg
 🔍 Root cause: Descriptions were stored directly from Gemini's response without sanitization.
 
 ✅ Fix: Added `sanitizeForYaml` that strips quotes, backslashes, backticks, and collapses whitespace before storage. Combined with proper `js-yaml` serialization, this provides defense in depth.
+
+### 🔧 Reflections Getting Images Before Creative Title (Fixed)
+
+📍 Daily reflections were receiving generated images before the reflection-title task (10 PM Pacific) assigned a creative title. The image would be based on the bare date (e.g., "2026-04-04") rather than the full day's content and creative title.
+
+🔍 Root cause: `processNote` skipped image generation only when the title was empty (`T.null title`). Reflections start with `title: YYYY-MM-DD` in frontmatter, which passes the null check. The backfill candidate collector (`checkCandidate`) had no awareness of whether a reflection's title was a creative title or just the bare date.
+
+✅ Fix: Added `isDateOnlyTitle` function that checks whether a note's extracted title exactly equals the date string. The `checkCandidate` function now skips reflections with date-only titles, ensuring images are only generated after the reflection-title task assigns a creative title.
 
 ---
 

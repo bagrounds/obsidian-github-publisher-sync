@@ -116,7 +116,7 @@
 ## 🛡️ Idempotency
 
 ✅ All operations are idempotent:
-- 🔗 Link insertion checks whether the link target already appears in the Updates section
+- 🔗 Link insertion checks whether the link target already appears **within the Updates section only** (not the entire reflection body), preventing false-positive deduplication when a note is already linked as a topic elsewhere in the reflection
 - 📌 Section and sub-section creation only happens when the heading is absent
 - 🔄 Re-running with the same modified paths produces no changes
 

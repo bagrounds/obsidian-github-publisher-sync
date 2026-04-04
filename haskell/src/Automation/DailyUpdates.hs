@@ -49,9 +49,19 @@ linkAlreadyPresent :: Text -> UpdateLink -> Bool
 linkAlreadyPresent content ul =
   T.isInfixOf ("[[" <> stripMd (ulRelativePath ul) <> "|") content
 
+extractUpdatesSection :: Text -> Text
+extractUpdatesSection content
+  | not (T.isInfixOf updatesSectionHeader content) = ""
+  | otherwise =
+      let allLines = T.splitOn "\n" content
+          updateIdx = findLineIndex updatesSectionHeader allLines 0
+          endIdx = findNextH2OrEnd allLines (updateIdx + 1)
+      in T.intercalate "\n" (take (endIdx - updateIdx) (drop updateIdx allLines))
+
 addUpdateLinks :: Text -> UpdateCategory -> [UpdateLink] -> Text
 addUpdateLinks content category links =
-  let newLinks = filter (not . linkAlreadyPresent content) links
+  let updatesSection = extractUpdatesSection content
+      newLinks = filter (not . linkAlreadyPresent updatesSection) links
   in case newLinks of
     [] -> content
     _  ->

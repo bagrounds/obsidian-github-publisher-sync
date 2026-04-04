@@ -216,4 +216,39 @@ addUpdateLinksToReflectionTests = testGroup "addUpdateLinksToReflection"
         assertBool "has social sub-header" (T.isInfixOf "### 📢 Social Posts" content)
         assertBool "has image link" (T.isInfixOf "[[img|Image Page]]" content)
         assertBool "has social link" (T.isInfixOf "[[social|Social Page]]" content)
+
+  , testCase "link in body does NOT prevent adding update link" $
+      let content = T.unlines
+            [ "# 2026-04-03"
+            , ""
+            , "## 📺 Videos"
+            , "- [[videos/backyard-fruit-trees|🏡🌳🍎 Backyard Fruit Trees]]"
+            , ""
+            , "## 🔄 Updates"
+            , ""
+            , "### 🖼️ Images"
+            , ""
+            , "- [[ai-blog/some-post|Some Post]]"
+            ]
+          result = addUpdateLinks content SocialPostUpdate
+                     [UpdateLink "videos/backyard-fruit-trees.md" "🏡🌳🍎 Backyard Fruit Trees"]
+      in do
+        assertBool "should contain social posts sub-header"
+          (T.isInfixOf "### 📢 Social Posts" result)
+        assertBool "should contain social post link in updates section"
+          (T.isInfixOf "- [[videos/backyard-fruit-trees|🏡🌳🍎 Backyard Fruit Trees]]" result)
+
+  , testCase "duplicate within updates section is still skipped" $
+      let content = T.unlines
+            [ "# 2026-04-03"
+            , ""
+            , "## 🔄 Updates"
+            , ""
+            , "### 📢 Social Posts"
+            , ""
+            , "- [[videos/backyard-fruit-trees|🏡🌳🍎 Backyard Fruit Trees]]"
+            ]
+          result = addUpdateLinks content SocialPostUpdate
+                     [UpdateLink "videos/backyard-fruit-trees.md" "🏡🌳🍎 Backyard Fruit Trees"]
+      in assertEqual "should not change content" content result
   ]

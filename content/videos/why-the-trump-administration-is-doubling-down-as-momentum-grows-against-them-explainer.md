@@ -9,6 +9,9 @@ Platform:
 Channel: Heather Cox Richardson
 tags:
 youtube: https://youtu.be/AKSU660ILJc
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_time: 2026-04-04T00:00:00Z
+force_analyze_links: false
 ---
 [Home](../index.md) > [Videos](./index.md) | [🏛️🇺🇸📖 Heather Cox Richardson](../people/heather-cox-richardson.md)  
 # 👴🚫📈 Why the Trump Administration Is Doubling Down as Momentum Grows Against Them | Explainer  
@@ -42,4 +45,4 @@ The video presents a critical perspective on the Trump administration's legal an
   
 - [🏷️🏚️💔🏰 The Price of Inequality: How Today's Divided Society Endangers Our Future](../books/the-price-of-inequality-how-todays-divided-society-endangers-our-future.md) by Joseph Stiglitz provides a contrasting economic perspective on the effects of tariffs and trade policies. 💰  
   
-- The Great Influenza by John M. Barry details the 1918 flu pandemic and the government's response, offering a historical perspective on public health crises. 🦠
+- [🦠🌍💀 The Great Influenza](../books/the-great-influenza.md) by John M. Barry details the 1918 flu pandemic and the government's response, offering a historical perspective on public health crises. 🦠

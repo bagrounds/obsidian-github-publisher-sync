@@ -9,6 +9,9 @@ Platform:
 Channel: WSU Extension Clark County Master Gardener Program
 tags:
 youtube: https://youtu.be/NjdMiizUyG4
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_time: 2026-04-03T00:00:00Z
+force_analyze_links: false
 ---
 [Home](../index.md) > [Videos](./index.md)  
 # 🏡🌳🍎 Backyard Fruit Trees  
@@ -53,7 +56,7 @@ youtube: https://youtu.be/NjdMiizUyG4
 ## 📚 Book Recommendations  
   
 ### ↔️ Similar  
-* 📖 The Home Orchard by Chuck A. Ingels covers the fundamentals of selecting, planting, and maintaining fruit trees for the home gardener.  
+* 📖 [🏡🍎🌳 The Home Orchard: Growing Your Own Deciduous Fruit and Nut Trees](../books/the-home-orchard-growing-your-own-deciduous-fruit-and-nut-trees.md) by Chuck A. Ingels covers the fundamentals of selecting, planting, and maintaining fruit trees for the home gardener.  
 * 📖 Grow Your Own Tea, Fruit, and Veg by the Royal Horticultural Society provides a practical guide to cultivating a wide variety of food-producing plants in small spaces.  
   
 ### 🆚 Contrasting  
@@ -61,5 +64,5 @@ youtube: https://youtu.be/NjdMiizUyG4
 * 📖 Restoration Agriculture by Mark Shepard argues for large-scale perennial agricultural systems modeled on native ecosystems rather than intensive backyard management.  
   
 ### 🎨 Creatively Related  
-* 📖 The Hidden Life of Trees by Peter Wohlleben explores the social networks and communication methods used by trees in a forest setting.  
+* 📖 [🌳🗣️ The Hidden Life of Trees: What They Feel, How They Communicate: Discoveries from a Secret World](../books/the-hidden-life-of-trees-what-they-feel-how-they-communicate-discoveries-from-a-secret-world.md) by Peter Wohlleben explores the social networks and communication methods used by trees in a forest setting.  
 * 📖 The Botany of Desire by Michael Pollan examines the relationship between humans and plants, including a deep dive into the history and evolution of the apple.

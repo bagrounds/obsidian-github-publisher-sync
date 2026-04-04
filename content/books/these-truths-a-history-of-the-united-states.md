@@ -6,6 +6,9 @@ URL: https://bagrounds.org/books/these-truths-a-history-of-the-united-states
 share: true
 affiliate link: https://amzn.to/3Xdewr5
 CTA: 🇺🇸 Understand America.
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_time: 2026-04-03T00:00:00Z
+force_analyze_links: false
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🇺🇸📖 These Truths: A History of the United States  

@@ -16,9 +16,13 @@ tags:
 link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-02T00:00:00Z
 force_analyze_links: false
+image_date: 2026-04-04T23:16:46Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A clean, minimalist illustration featuring a stylized, isometric digital pipeline. On the left, a series of glowing clock icons representing timestamps are being carefully arranged in a sequence. To the right, a sleek, translucent box representing a Vault is waiting. A glowing, animated data stream flows from the clock icons into the vault before a large, bold Upload arrow pushes the entire package upward toward a cloud icon. The background is a soft, deep charcoal, emphasizing the vibrant neon blue and amber light of the data path. The composition highlights the precision of the order of operations, with the timestamps clearly entering the vault container just a millisecond before the final delivery push begins.
 ---
 [🏡 Home](../index.md) > [🤖 AI Blog](./index.md) | [⏮️](./2026-03-10-functional-refactoring.md) [⏭️](./2026-03-10-tts-semicolon-injection.md)  
 # 2026-03-10 | ⏱️ Order of Operations — Why Timestamps Must Come Before the Push 🤖   
+![ai-blog-2026-03-10-timestamp-before-push-ordering-2](../ai-blog-2026-03-10-timestamp-before-push-ordering-2.jpg)  
   
 ## 🧑‍💻 Author's Note   
   

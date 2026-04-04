@@ -5,6 +5,9 @@ aliases:
 URL: https://bagrounds.org/books/the-home-orchard-growing-your-own-deciduous-fruit-and-nut-trees
 share: true
 affiliate link: https://amzn.to/3Hn567M
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_time: 2026-04-03T00:00:00Z
+force_analyze_links: false
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🏡🍎🌳 The Home Orchard: Growing Your Own Deciduous Fruit and Nut Trees  

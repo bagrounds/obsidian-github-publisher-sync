@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-04-03T16:16:43-07:00
+updated: 2026-04-03T18:02:08-07:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -50,17 +50,17 @@ updated: 2026-04-03T16:16:43-07:00
   
   
 ## [📚 Books](./books/index.md) (958)  
-- [👻🇺🇸⚔️🪽 The Soul of America: The Battle for Our Better Angels](./books/the-soul-of-america-the-battle-for-our-better-angels.md)  
-- [✊🏿 How to Be An Antiracist](./books/how-to-be-an-antiracist.md)  
-- [⏱️🚀 The First 20 Hours: How to Learn Anything... Fast](./books/the-first-20-hours-how-to-learn-anything-fast.md)  
-- [🔥💣💥😡🤬 Fire and Fury: Inside the Trump White House](./books/fire-and-fury-inside-the-trump-white-house.md)  
+- [🌱🟩⬆️ Square Foot Gardening, 4th Edition: The World’s Most Popular Growing Method to Harvest MORE Food from Less Space](./books/square-foot-gardening-4th-edition-the-worlds-most-popular-growing-method-to-harvest-more-food-from-less-space.md)  
+- [🍎🌳 Edible Forest Gardens](./books/edible-forest-gardens.md)  
+- [🌍🌿 Gaia's Garden: A Guide to Home-Scale Permaculture](./books/gaias-garden.md)  
+- [🌳🍎🍽️ From Tree to Table: Growing Backyard Fruit Trees in the Pacific Maritime Climate](./books/from-tree-to-table-growing-backyard-fruit-trees-in-the-pacific-maritime-climate.md)  
   
   
-## [📺 Videos](./videos/index.md) (719)  
+## [📺 Videos](./videos/index.md) (720)  
+- [🪴🔬📚 Soil and Planting Lessons from Research](./videos/soil-and-planting-lessons-from-research.md)  
+- [🇺🇸✂️🩺🤕 States face hard choices after major cuts to federal health care funding](./videos/states-face-hard-choices-after-major-cuts-to-federal-health-care-funding.md)  
+- [👶🧑‍👩‍👧‍👦💲➡️ New Mexico to launch universal free childcare for all New Mexicans](./videos/new-mexico-to-launch-universal-free-childcare-for-all-new-mexicans.md)  
 - [✂️🌳🍎 Pruning Fruit Trees - OSU Master Gardeners](./videos/pruning-fruit-trees-osu-master-gardeners.md)  
-- [🍏🌳✅✂️ Fruit Tree selection and pruning](./videos/fruit-tree-selection-and-pruning.md)  
-- [🌳🍎❓🛠️ Fruit Tree Care Troubleshooting](./videos/fruit-tree-care-troubleshooting.md)  
-- [🏡🌳🍎 Backyard Fruit Trees](./videos/backyard-fruit-trees.md)  
   
   
 ## [🌌 Topics](./topics/index.md) (91)  

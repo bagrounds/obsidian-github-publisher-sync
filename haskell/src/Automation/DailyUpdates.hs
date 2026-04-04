@@ -1,8 +1,6 @@
 module Automation.DailyUpdates
   ( updatesSectionHeader
   , UpdateLink (..)
-  , UpdateCategory (..)
-  , categorySubHeader
   , buildUpdateLink
   , addUpdateLinks
   , extractTitleFromFile
@@ -20,20 +18,10 @@ import Automation.DailyReflection (ensureDailyReflection, EnsureReflectionResult
 import Automation.Frontmatter (parseFrontmatter)
 import Automation.Types (updatesSectionHeader)
 
-data UpdateCategory
-  = ImageUpdate
-  | InternalLinkUpdate
-  | SocialPostUpdate
-  deriving (Show, Eq, Ord)
-
-categorySubHeader :: UpdateCategory -> Text
-categorySubHeader ImageUpdate        = "### 🖼️ Images"
-categorySubHeader InternalLinkUpdate = "### 🔗 Internal Links"
-categorySubHeader SocialPostUpdate   = "### 📢 Social Posts"
-
 data UpdateLink = UpdateLink
   { ulRelativePath :: Text
   , ulTitle        :: Text
+  , ulDetails      :: [Text]
   } deriving (Show, Eq)
 
 stripMd :: Text -> Text
@@ -45,28 +33,47 @@ buildUpdateLink :: Text -> Text -> Text
 buildUpdateLink relativePath title =
   "- [[" <> stripMd relativePath <> "|" <> title <> "]]"
 
-linkAlreadyPresent :: Text -> UpdateLink -> Bool
-linkAlreadyPresent content ul =
-  T.isInfixOf ("[[" <> stripMd (ulRelativePath ul) <> "|") content
+buildPageEntry :: Text -> Text -> [Text] -> [Text]
+buildPageEntry path title details =
+  buildUpdateLink path title : fmap ("  - " <>) details
 
-addUpdateLinks :: Text -> UpdateCategory -> [UpdateLink] -> Text
-addUpdateLinks content category links =
-  let newLinks = filter (not . linkAlreadyPresent content) links
-  in case newLinks of
+extractUpdatesText :: Text -> Text
+extractUpdatesText content =
+  case T.breakOn updatesSectionHeader content of
+    (_, "") -> ""
+    (_, sectionStart) ->
+      let afterHeader = T.drop (T.length updatesSectionHeader) sectionStart
+      in case T.breakOn "\n## " afterHeader of
+        (section, _) -> section
+
+pagePresent :: Text -> Text -> Bool
+pagePresent updatesText path = T.isInfixOf ("[[" <> stripMd path <> "|") updatesText
+
+detailPresent :: Text -> Text -> Bool
+detailPresent updatesText detail = T.isInfixOf ("  - " <> detail) updatesText
+
+addUpdateLinks :: Text -> [UpdateLink] -> Text
+addUpdateLinks content [] = content
+addUpdateLinks content links = foldl addSingleUpdate content links
+
+addSingleUpdate :: Text -> UpdateLink -> Text
+addSingleUpdate content (UpdateLink path title details) =
+  let updatesText = extractUpdatesText content
+      newDetails = filter (not . detailPresent updatesText) details
+  in case newDetails of
     [] -> content
-    _  ->
-      let linkLines = fmap (\ul -> buildUpdateLink (ulRelativePath ul) (ulTitle ul)) newLinks
-          subHeader = categorySubHeader category
-      in case (T.isInfixOf updatesSectionHeader content, T.isInfixOf subHeader content) of
-        (False, _)    -> appendNewCategorizedSection content subHeader linkLines
-        (True, False) -> appendSubSection content subHeader linkLines
-        (True, True)  -> insertLinksIntoSubSection content subHeader linkLines
+    _  | not (T.isInfixOf updatesSectionHeader content) ->
+           appendNewSection content path title newDetails
+       | not (pagePresent updatesText path) ->
+           appendPageToSection content path title newDetails
+       | otherwise ->
+           insertDetailsUnderPage content path newDetails
 
-appendNewCategorizedSection :: Text -> Text -> [Text] -> Text
-appendNewCategorizedSection content subHeader linkLines =
-  let sectionBlock = updatesSectionHeader
-        <> "\n\n" <> subHeader
-        <> "\n\n" <> T.intercalate "\n" linkLines <> "\n"
+appendNewSection :: Text -> Text -> Text -> [Text] -> Text
+appendNewSection content path title details =
+  let entryLines = buildPageEntry path title details
+      sectionBlock = updatesSectionHeader
+        <> "\n" <> T.intercalate "\n" entryLines <> "\n"
   in case findFirstSectionIndex embedSectionHeaders content of
     Just idx ->
       let (before, after) = T.splitAt idx content
@@ -74,28 +81,37 @@ appendNewCategorizedSection content subHeader linkLines =
     Nothing ->
       T.stripEnd content <> "\n\n" <> sectionBlock
 
-insertLinksIntoSubSection :: Text -> Text -> [Text] -> Text
-insertLinksIntoSubSection content subHeader linkLines =
-  let allLines = T.splitOn "\n" content
-      subIdx = findLineIndex subHeader allLines 0
-      insertIdx = skipToInsertPoint allLines (subIdx + 1)
-      (before, after) = splitAt insertIdx allLines
-  in T.intercalate "\n" (before <> linkLines <> after)
-
-appendSubSection :: Text -> Text -> [Text] -> Text
-appendSubSection content subHeader linkLines =
+appendPageToSection :: Text -> Text -> Text -> [Text] -> Text
+appendPageToSection content path title details =
   let allLines = T.splitOn "\n" content
       updateIdx = findLineIndex updatesSectionHeader allLines 0
       endIdx = findNextH2OrEnd allLines (updateIdx + 1)
       (before, after) = splitAt endIdx allLines
       trimmedBefore = dropTrailingBlanks before
-  in T.intercalate "\n" (trimmedBefore <> ["", subHeader, ""] <> linkLines <> [""] <> after)
+      entryLines = buildPageEntry path title details
+  in T.intercalate "\n" (trimmedBefore <> entryLines <> [""] <> after)
+
+insertDetailsUnderPage :: Text -> Text -> [Text] -> Text
+insertDetailsUnderPage content path details =
+  let allLines = T.splitOn "\n" content
+      pageNeedle = "[[" <> stripMd path <> "|"
+      pageIdx = findLineContaining pageNeedle allLines 0
+      insertIdx = skipSubBullets allLines (pageIdx + 1)
+      detailLines = fmap ("  - " <>) details
+      (before, after) = splitAt insertIdx allLines
+  in T.intercalate "\n" (before <> detailLines <> after)
 
 findLineIndex :: Text -> [Text] -> Int -> Int
 findLineIndex _ [] n = n
 findLineIndex header (l : rest) n
   | T.isPrefixOf header l = n
   | otherwise              = findLineIndex header rest (n + 1)
+
+findLineContaining :: Text -> [Text] -> Int -> Int
+findLineContaining _ [] n = n
+findLineContaining needle (l : rest) n
+  | T.isInfixOf needle l = n
+  | otherwise             = findLineContaining needle rest (n + 1)
 
 findNextH2OrEnd :: [Text] -> Int -> Int
 findNextH2OrEnd allLines idx
@@ -108,25 +124,16 @@ safeIdx xs i
   | i >= 0 && i < length xs = xs !! i
   | otherwise                = ""
 
-skipToInsertPoint :: [Text] -> Int -> Int
-skipToInsertPoint allLines idx =
-  let atIdx = safeIndex allLines idx
-      skippedBlank = case atIdx of
-        Just l | T.strip l == "" -> idx + 1
-        _                       -> idx
-      skippedItems = skipListItems allLines skippedBlank
-  in skippedItems
-
 safeIndex :: [a] -> Int -> Maybe a
 safeIndex xs i
   | i < 0 || i >= length xs = Nothing
   | otherwise                = Just (xs !! i)
 
-skipListItems :: [Text] -> Int -> Int
-skipListItems allLines idx =
+skipSubBullets :: [Text] -> Int -> Int
+skipSubBullets allLines idx =
   case safeIndex allLines idx of
-    Just l | T.isPrefixOf "- " l -> skipListItems allLines (idx + 1)
-    _                            -> idx
+    Just l | T.isPrefixOf "  - " l -> skipSubBullets allLines (idx + 1)
+    _                              -> idx
 
 dropTrailingBlanks :: [Text] -> [Text]
 dropTrailingBlanks = reverse . dropWhile (\l -> T.strip l == "") . reverse
@@ -137,14 +144,14 @@ extractTitleFromFile filePath = do
   case exists of
     False -> pure (T.pack (takeBaseName filePath))
     True  -> do
-      content <- TIO.readFile filePath
-      let (frontmatter, _) = parseFrontmatter content
+      fileContent <- TIO.readFile filePath
+      let (frontmatter, _) = parseFrontmatter fileContent
           fallback = T.pack (takeBaseName filePath)
       pure (maybe fallback (\t -> if T.null t then fallback else t) (Map.lookup "title" frontmatter))
 
-addUpdateLinksToReflection :: FilePath -> Text -> UpdateCategory -> [UpdateLink] -> IO Bool
-addUpdateLinksToReflection _ _ _ [] = pure False
-addUpdateLinksToReflection reflectionsDir date category links = do
+addUpdateLinksToReflection :: FilePath -> Text -> [UpdateLink] -> IO Bool
+addUpdateLinksToReflection _ _ [] = pure False
+addUpdateLinksToReflection reflectionsDir date links = do
   let reflectionPath = reflectionsDir </> T.unpack date <> ".md"
   exists <- doesFileExist reflectionPath
   case exists of
@@ -154,9 +161,9 @@ addUpdateLinksToReflection reflectionsDir date category links = do
         True  -> TIO.putStrLn ("  📝 Created daily reflection for " <> date)
         False -> pure ()
     True -> pure ()
-  content <- TIO.readFile reflectionPath
-  let updated = addUpdateLinks content category links
-  case updated == content of
+  fileContent <- TIO.readFile reflectionPath
+  let updated = addUpdateLinks fileContent links
+  case updated == fileContent of
     True  -> pure False
     False -> do
       TIO.writeFile reflectionPath updated

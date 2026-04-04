@@ -55,7 +55,7 @@ import System.Directory (doesDirectoryExist, doesFileExist, listDirectory)
 import System.FilePath (takeBaseName, takeDirectory, (</>))
 import Text.Regex.TDFA ((=~))
 
-import Automation.DailyUpdates (UpdateCategory (..), UpdateLink (..), addUpdateLinksToReflection)
+import Automation.DailyUpdates (UpdateLink (..), addUpdateLinksToReflection)
 import Automation.EmbedSection
   ( buildBlueskySection
   , buildMastodonSection
@@ -85,6 +85,14 @@ import Automation.Types
 
 data Platform = Twitter | Bluesky | Mastodon
   deriving (Show, Eq, Ord)
+
+platformDetail :: Platform -> Text
+platformDetail Twitter  = "🐦 posted to Twitter"
+platformDetail Bluesky  = "🦋 posted to BlueSky"
+platformDetail Mastodon = "🐘 posted to Mastodon"
+
+platformDetails :: ContentNote -> [Text]
+platformDetails cn = fmap platformDetail (Set.toList (cnPostedPlatforms cn))
 
 data ContentNote = ContentNote
   { cnFilePath       :: FilePath
@@ -836,6 +844,8 @@ autoPost manager vaultDir = do
 
   let reflectionsDir = vaultDir </> "reflections"
   DateStr todayStr <- todayPacific
-  let updateLinks = fmap (\cn -> UpdateLink (cnRelativePath cn) (cnTitle cn)) postedNotes
-  _ <- addUpdateLinksToReflection reflectionsDir todayStr SocialPostUpdate updateLinks
+  let updateLinks = fmap (\cn ->
+        UpdateLink (cnRelativePath cn) (cnTitle cn) (platformDetails cn)
+        ) postedNotes
+  _ <- addUpdateLinksToReflection reflectionsDir todayStr updateLinks
   pure ()

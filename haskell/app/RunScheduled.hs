@@ -53,7 +53,7 @@ import Automation.BlogSeriesConfig
   , lookupSeries
   )
 import Automation.DailyReflection (UpdateReflectionResult (..), updateDailyReflection)
-import Automation.DailyUpdates (UpdateCategory (..), UpdateLink (..), addUpdateLinksToReflection, extractTitleFromFile)
+import Automation.DailyUpdates (UpdateLink (..), addUpdateLinksToReflection, extractTitleFromFile)
 import Automation.Gemini
   ( GenerationConfig (..)
   , GeminiResponse (..)
@@ -528,12 +528,12 @@ runBackfillImages manager vaultDir = do
   let reflectionsDir = vaultDir </> "reflections"
   imageUpdateLinks <- traverse (\f -> do
         title <- extractTitleFromFile (vaultDir </> T.unpack f)
-        pure (UpdateLink f title)
+        pure (UpdateLink f title ["🖼️ added image"])
         ) imageModifiedFiles
   case imageUpdateLinks of
     [] -> pure ()
     _  -> do
-      _ <- addUpdateLinksToReflection reflectionsDir todayText ImageUpdate imageUpdateLinks
+      _ <- addUpdateLinksToReflection reflectionsDir todayText imageUpdateLinks
       pure ()
 
   -- 4. Link AI blog posts to their date's reflection with a dedicated AI Blog section
@@ -573,9 +573,11 @@ runInternalLinking manager vaultDir = do
           reflectionsDir = vaultDir </> "reflections"
       links <- traverse (\fr -> do
         title <- extractTitleFromFile (vaultDir </> T.unpack (IL.frRelativePath fr))
-        pure (UpdateLink (IL.frRelativePath fr) title)
+        let n = IL.frLinksAdded fr
+            detail = "🔗 added " <> T.pack (show n) <> " internal link" <> (if n == 1 then "" else "s")
+        pure (UpdateLink (IL.frRelativePath fr) title [detail])
         ) modifiedResults
-      _ <- addUpdateLinksToReflection reflectionsDir todayText InternalLinkUpdate links
+      _ <- addUpdateLinksToReflection reflectionsDir todayText links
       pure ()
 
   logMsg "✅ internal-linking"

@@ -9,6 +9,9 @@ Platform:
 Channel: Master Gardener Foundation of Cowlitz County
 tags:
 youtube: https://youtu.be/twfzPEuDjOk
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_time: 2026-04-03T00:00:00Z
+force_analyze_links: false
 ---
 [Home](../index.md) > [Videos](./index.md)  
 # 🍏🌳✅✂️ Fruit Tree selection and pruning  
@@ -51,12 +54,12 @@ youtube: https://youtu.be/twfzPEuDjOk
   
 ### ↔️ Similar  
 * 📘 Grow a Little Fruit Tree by Ann Ralph explains how to use pruning to keep fruit trees at a manageable height for home gardeners.  
-* 📗 The Home Orchard by Chuck Ingels is a comprehensive guide from the University of California on selecting and caring for deciduous fruit trees.  
+* 📗 [🏡🍎🌳 The Home Orchard: Growing Your Own Deciduous Fruit and Nut Trees](../books/the-home-orchard-growing-your-own-deciduous-fruit-and-nut-trees.md) by Chuck Ingels is a comprehensive guide from the University of California on selecting and caring for deciduous fruit trees.  
   
 ### 🆚 Contrasting  
 * 📙 The Holistic Orchard by Michael Phillips focuses on biological orchid civiluring and fungal health rather than just mechanical pruning and NPK fertilization.  
 * 📓 Restoration Agriculture by Mark Shepard advocates for a broadacre, perennial ecosystem approach that differs from intensive backyard fruit management.  
   
 ### 🎨 Creatively Related  
-* 📕 The Hidden Life of Trees by Peter Wohlleben explores the social networks and communication methods of forest trees.  
+* 📕 [🌳🗣️ The Hidden Life of Trees: What They Feel, How They Communicate: Discoveries from a Secret World](../books/the-hidden-life-of-trees-what-they-feel-how-they-communicate-discoveries-from-a-secret-world.md) by Peter Wohlleben explores the social networks and communication methods of forest trees.  
 * 📒 Finding the Mother Tree by Suzanne Simard provides a scientific look at how trees in a forest cooperate through underground fungal networks.

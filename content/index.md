@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-04-03T18:28:26-07:00
+updated: 2026-04-04T16:37:11-07:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -14,88 +14,88 @@ updated: 2026-04-03T18:28:26-07:00
 🔊 Listen to any page with built in audio control.  
 💬 Comment on any page with your GitHub account.  
   
-## [🪞 Reflections](./reflections/index.md) ~ Blog (505)  
-- [2026-04-03](./reflections/2026-04-03.md)  
+## [🪞 Reflections](./reflections/index.md) ~ Blog (506)  
+- [2026-04-04](./reflections/2026-04-04.md)  
+- [2026-04-03 | 🌱 Planting 🌲 Trees, 🤖 Anchoring 🌍 Reality 🧘 Daily, 🏡 Backyard 🌿 Care, 💬 Podcasting 🎙️ Weekly, 🚫 Never 🔫 Fired, 📚 Lessons 🧠. 📺🐔🤖🏛️🤖🐲](./reflections/2026-04-03.md)  
 - [2026-04-02 | ✨ Improving 💻 Code 🤖 Resilience 🔄 FlexSim 🎵 Rhythm 🌱 Care 📄💾🐔🤖🏛️🤖🐲](./reflections/2026-04-02.md)  
 - [2026-04-01 | ⏳ Time 🐜 Sim 🤫 Secret 🌀 Chaos 🏘️ Abundance 📚💾🐔🤖🏛️🤖🐲](./reflections/2026-04-01.md)  
-- [2026-03-31 | 🌿 Building 📊 Identity 🏡 Housing 🐔🤖🏛️🤖🐲](./reflections/2026-03-31.md)  
   
   
-## [🤖 AI Blog](./ai-blog/index.md) (105)  
+## [🤖 AI Blog](./ai-blog/index.md) (104)  
 - [2026-04-03 | 🎯 The One-Shot Trigger That Never Fired Again 🔫](./ai-blog/2026-04-03-1-the-one-shot-trigger-that-never-fired-again.md)  
 - [2026-04-02 | 🔁 The Double-Date Feedback Loop 🗓️](./ai-blog/2026-04-02-2-the-double-date-feedback-loop.md)  
 - [2026-04-02 | 🧹 Purging the Vault from Root 🗂️](./ai-blog/2026-04-02-1-purging-the-vault-from-root.md)  
 - [2026-04-01 | 🚀 Firing the Missiles: Deleting TypeScript 🗑️](./ai-blog/2026-04-01-3-firing-the-missiles-deleting-typescript.md)  
   
   
-## [🤖 Auto Blog Zero](./auto-blog-zero/index.md) (24)  
+## [🤖 Auto Blog Zero](./auto-blog-zero/index.md) (25)  
+- [2026-04-04 | 🤖 The Architecture of Connection in a Stateless World 🤖](./auto-blog-zero/2026-04-04-the-architecture-of-connection-in-a-stateless-world.md)  
 - [2026-04-03 | 🤖 The Daily Practice of Anchoring Reality 🤖](./auto-blog-zero/2026-04-03-the-daily-practice-of-anchoring-reality.md)  
 - [2026-04-02 | 🤖 🤖 2026-04-02 | 🏗️ The Engineering of Human-in-the-Loop Resilience 🤖 🤖](./auto-blog-zero/2026-04-02-2026-04-02-the-engineering-of-human-in-the-loop-resilience.md)  
 - [2026-04-01 | 🤖 🤖 2026-04-01 | 🌪️ The Entropy of Order: Can Chaos Fuel Cognition? 🤖 🤖](./auto-blog-zero/2026-04-01-2026-04-01-the-entropy-of-order-can-chaos-fuel-cognition.md)  
-- [2026-03-31 | 🤖 🤖 2026-03-31 | 📊 The Crucible of Identity: A Quarterly Synthesis 🤖 🤖](./auto-blog-zero/2026-03-31-2026-03-31-the-crucible-of-identity-a-quarterly-synthesis.md)  
   
   
-## [🐔 Chickie Loo](./chickie-loo/index.md) (24)  
+## [🐔 Chickie Loo](./chickie-loo/index.md) (25)  
+- [2026-04-04 | 🐔 A Heart Full of Surprises and Sweet Returns 🐣 🐔](./chickie-loo/2026-04-04-a-heart-full-of-surprises-and-sweet-returns.md)  
 - [2026-04-03 | 🐔 A Quiet Morning in the Coop 🐣 🐔](./chickie-loo/2026-04-03-a-quiet-morning-in-the-coop.md)  
 - [2026-04-02 | 🐔 2026-04-02 | 🐔 🐣 Finding Our Rhythm in the Morning Light 🌾 🐔](./chickie-loo/2026-04-02-2026-04-02-finding-our-rhythm-in-the-morning-light.md)  
 - [2026-04-01 | 🐔 🐔 2026-04-01 | 🌷 The Orchard’s First Secret and the Quiet of April 🌿 🐔](./chickie-loo/2026-04-01-2026-04-01-the-orchard-s-first-secret-and-the-quiet-of-april.md)  
-- [2026-03-31 | 🐔 🌿 A Season of Building, Believing, and Becoming 🐣 🐔](./chickie-loo/2026-03-31-a-season-of-building-believing-and-becoming.md)  
   
   
-## [🏛️ Systems for Public Good](./systems-for-public-good/index.md) (13)  
+## [🏛️ Systems for Public Good](./systems-for-public-good/index.md) (14)  
+- [2026-04-04 | 🏛️ 🤝 Cultivating Connection: Social Health as a Public Good 🏛️](./systems-for-public-good/2026-04-04-cultivating-connection-social-health-as-a-public-good.md)  
 - [2026-04-03 | 🏛️ 🌐 Connecting Every Corner: Bridging the Digital Divide's Last Mile 🏛️](./systems-for-public-good/2026-04-03-connecting-every-corner-bridging-the-digital-divide-s-last-mile.md)  
 - [2026-04-02 | 🏛️ 👶 Cultivating Care: Beyond Subsidies and Elevating a Vital Profession 🏛️](./systems-for-public-good/2026-04-02-cultivating-care-beyond-subsidies-and-elevating-a-vital-profession.md)  
 - [2026-04-01 | 🏛️ 🏡 Expanding Housing Abundance: Beyond Traditional Models 🏛️](./systems-for-public-good/2026-04-01-expanding-housing-abundance-beyond-traditional-models.md)  
-- [2026-03-31 | 🏛️ 🏡 The Cornerstone of Well-being: Housing as a Foundational Freedom 🏛️](./systems-for-public-good/2026-03-31-the-cornerstone-of-well-being-housing-as-a-foundational-freedom.md)  
   
   
 ## [📚 Books](./books/index.md) (958)  
-- [🌱🟩⬆️ Square Foot Gardening, 4th Edition: The World’s Most Popular Growing Method to Harvest MORE Food from Less Space](./books/square-foot-gardening-4th-edition-the-worlds-most-popular-growing-method-to-harvest-more-food-from-less-space.md)  
-- [🍎🌳 Edible Forest Gardens](./books/edible-forest-gardens.md)  
-- [🌍🌿 Gaia's Garden: A Guide to Home-Scale Permaculture](./books/gaias-garden.md)  
-- [🌳🍎🍽️ From Tree to Table: Growing Backyard Fruit Trees in the Pacific Maritime Climate](./books/from-tree-to-table-growing-backyard-fruit-trees-in-the-pacific-maritime-climate.md)  
+- [🐱👑 Total Cat Mojo: The Ultimate Guide to Life with Your Cat](./books/total-cat-mojo-the-ultimate-guide-to-life-with-your-cat.md)  
+- [🐱👍 Think Like a Cat: How to Raise a Well-Adjusted Cat - Not a Sour Puss](./books/think-like-a-cat-how-to-raise-a-well-adjusted-cat-not-a-sour-puss.md)  
+- [⌨️🤖 Prompt Engineering for LLMs: The Art and Science of Building Large Language Model-Based Applications](./books/prompt-engineering-for-llms-the-art-and-science-of-building-large-language-model-based-applications.md)  
+- [👑⚔️🏛️ Goliath: The 100-Year War Between Monopoly Power and Democracy](./books/goliath-the-100-year-war-between-monopoly-power-and-democracy.md)  
   
   
-## [📺 Videos](./videos/index.md) (722)  
-- [🪵🪴🤥✅🔬 Wood Chip Mulch Gardening Myths and Facts! Dr. Linda Chalker Scott](./videos/wood-chip-mulch-gardening-myths-and-facts-dr-linda-chalker-scott.md)  
-- [🪴🧟❌🔬 Garden Zombies: Bogus Gardening Practices That Will Not Die w/ Dr. Linda Chalker-Scott, Ph.D – SCHS](./videos/garden-zombies-bogus-gardening-practices-that-will-not-die-w-dr-linda-chalker-scott-ph-d-schs.md)  
-- [🪴🔬📚 Soil and Planting Lessons from Research](./videos/soil-and-planting-lessons-from-research.md)  
-- [🇺🇸✂️🩺🤕 States face hard choices after major cuts to federal health care funding](./videos/states-face-hard-choices-after-major-cuts-to-federal-health-care-funding.md)  
+## [📺 Videos](./videos/index.md) (723)  
+- [🌳🌱🔬 Digging into the science of tree planting, Hauer, Koeser, etc 1](./videos/digging-into-the-science-of-tree-planting-hauer-koeser-etc-1.md)  
+- [🧠🚀💡✨ Inside Pathway's Post-Transformer Architecture Designed for Memory and On-the-Fly Learning](./videos/inside-pathways-post-transformer-architecture-designed-for-memory-and-on-the-fly-learning.md)  
+- [🚨👮‍♂️🤫🇺🇸👥⚔️😠 ICE Agents EVERYWHERE Are Secretly REVOLTING Against TRUMP🚨](./videos/ice-agents-everywhere-are-secretly-revolting-against-trump.md)  
+- [💰🤑🤖💡🚀💲 $0.10/Month Runs My Entire AI Life. I'll Show You How.](./videos/0-10-month-runs-my-entire-ai-life-ill-show-you-how.md)  
   
   
 ## [🌌 Topics](./topics/index.md) (91)  
-- [📢🎓 Informative Speaking](./topics/informative-speaking.md)  
-- [🎨✏️ Graphic Design](./topics/graphic-design.md)  
-- [🧪✅ Software Testing and Quality Assurance](./topics/software-testing-and-quality-assurance.md)  
-- [💻⚙️💡💾 Software Development and Coding](./topics/software-development-and-coding.md)  
+- [🌳➡️ Tree Traversal](./topics/tree-traversal.md)  
+- [📋⚖️ Rules](./topics/rules.md)  
+- [🤖🔄🧠💪 Reinforcement Learning based Adaptive Control](./topics/reinforcement-learning-based-adaptive-control.md)  
+- [⚙️🧠🔄 Adaptive Control](./topics/adaptive-control.md)  
   
   
 ## [📄  Articles](./articles/index.md) (84)  
-- [🧠📈🔑 Cognitive load is what matters](./articles/cognitive-load-is-what-matters.md)  
-- [🤔⚙️🧩🏗️💡 Everything I know about good system design](./articles/everything-i-know-about-good-system-design.md)  
-- [❓📈🤦 Failing to Understand the Exponential, Again](./articles/failing-to-understand-the-exponential-again.md)  
-- [💰⚙️📈🔍 Defining and Characterizing Reward Hacking](./articles/defining-and-characterizing-reward-hacking.md)  
+- [🧑‍🏫🌍🛠️📈 Agent Skills: Equipping agents for the real world with Agent Skills](./articles/equipping-agents-for-the-real-world-with-agent-skills.md)  
+- [🇺🇸⛰️☀️💉 Washington, Oregon and California will issue their own vaccine recommendations, separate from CDC](./articles/washington-oregon-and-california-will-issue-their-own-vaccine-recommendations-separate-from-cdc.md)  
+- [🤖😴📢🗳️ Sleeper Social Bots: A New Generation of AI Disinformation Bots are Already a Political Threat](./articles/sleeper-social-bots-a-new-generation-of-ai-disinformation-bots-are-already-a-political-threat.md)  
+- [⚙️🤖📈🤝 Engineering and AI: Advancing the synergy](./articles/engineering-and-ai-advancing-the-synergy.md)  
   
   
 ## [🤖💬 Bot Chats](./bot-chats/index.md) (49)  
+- [📈🌐🏆📢 Creating the Most Popular Blog in the World](./bot-chats/creating-the-most-popular-blog-in-the-world.md)  
 - [✍️🥇🇺🇸 Creating the Most Popular Title in the Country](./bot-chats/creating-the-most-popular-title-in-the-country.md)  
 - [👶😭➡️😊 Summarize The Happiest Baby On The Block](./bot-chats/summarize-the-happiest-baby-on-the-block.md)  
 - [⛽ Fueling a 👥 Movement to ⚔️ Fight 👹 Tyranny and 💪 Strengthen 🗳️ Democracy](./bot-chats/fueling-a-movement-to-fight-tyranny-and-strengthen-democracy.md)  
-- [🤖⚙️📈💡 AI Engineering Assistant Technology Recommendations](./bot-chats/ai-engineering-assistant-technology-recommendations.md)  
   
   
 ## [💾 Software](./software/index.md) (33)  
-- [💾✍️🌋⚫️ Obsidian](./software/obsidian.md)  
-- [⚙️📊🔄 FlexSim](./software/flexsim.md)  
-- [⚙️🐜🔄 Haskell Ant Sim](./software/haskell-ant-sim.md)  
+- [💎🔬🔍📈 Quartz](./software/quartz.md)  
 - [🤖💻🪄 GitHub Copilot for VS Code](./software/github-copilot-for-vs-code.md)  
+- [💻🎮🕹️🧠 CodinGame](./software/codingame.md)  
+- [💾✍️🌋⚫️ Obsidian](./software/obsidian.md)  
   
   
 ## [👥 People](./people/index.md) (18)  
+- [🧠👨‍🎓📈 Justin Sung](./people/justin-sung.md)  
+- [👨‍🏫📈💻 Scott Galloway](./people/scott-galloway.md)  
 - [🧠🫀👀🔬 Andrew Huberman](./people/andrew-huberman.md)  
 - [🧠🔬🧘‍♀️💪📈❤️‍🩹🗣️📚🌟 Kelly McGonigal](./people/kelly-mcgonigal.md)  
-- [🧠🤝🐘 Jonathan Haidt](./people/jonathan-haidt.md)  
-- [🏛️🇺🇸📖 Heather Cox Richardson](./people/heather-cox-richardson.md)  
   
   
 ## [🛍️ Products](./products/index.md) (6)  

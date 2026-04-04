@@ -5,10 +5,10 @@ aliases:
 title: 📺 Videos
 URL: https://bagrounds.org/videos
 backlinks: false
-updated: 2026-04-03T18:28:26-07:00
+updated: 2026-04-04T16:37:11-07:00
 ---
 [Home](../index.md)  
-# 📺 Videos (722)  
+# 📺 Videos (723)  
 - [💰🤑🤖💡🚀💲 $0.10/Month Runs My Entire AI Life. I'll Show You How.](./0-10-month-runs-my-entire-ai-life-ill-show-you-how.md)  
 - [📊📈📉📃👁️ 10 Charts to Understand the 900 Page Budget Bill](./10-charts-to-understand-the-900-page-budget-bill.md)  
 - [🤖🔗⬆️✅ 12-Factor Agents: Patterns of reliable LLM applications — Dex Horthy, HumanLayer](./12-factor-agents-patterns-of-reliable-llm-applications-dex-horthy-humanlayer.md)  
@@ -151,6 +151,7 @@ updated: 2026-04-03T18:28:26-07:00
 - [🏛️❤️🗣️ Democracy and Emotions– A Dialogue with Philosopher Martha C. Nussbaum](./democracy-and-emotions-a-dialogue-with-philosopher-martha-c-nussbaum.md)  
 - [🏛️⚠️⏳ Democracy Isn’t Dead. Yet. | The Focus Group Podcast](./heather-cox-richardson-democracy-isnt-dead-yet-the-focus-group-podcast.md)  
 - [🤖💻✨ Developer Experience in the Age of AI Coding Agents – Max Kanat-Alexander, Capital One](./developer-experience-in-the-age-of-ai-coding-agents-max-kanat-alexander-capital-one.md)  
+- [🌳🌱🔬 Digging into the science of tree planting, Hauer, Koeser, etc 1](./digging-into-the-science-of-tree-planting-hauer-koeser-etc-1.md)  
 - [💉👩‍⚕️💻 Doctor Answers Vaccine Questions | Tech Support | WIRED](./doctor-answers-vaccine-questions-tech-support-wired.md)  
 - [📱🧠📉 Doctor on How Screen Time Hurts Kids' Cognitive Development](./doctor-on-how-screen-time-hurts-kids-cognitive-development.md)  
 - [☕⛓️‍💥🚄❓ Does drinking coffee break your fast? | Satchin Panda](./does-drinking-coffee-break-your-fast-satchin-panda.md)  

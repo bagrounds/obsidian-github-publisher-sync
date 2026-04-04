@@ -132,3 +132,28 @@ main()
 - 📂 Every pull starts from an empty ephemeral directory — no stale state
 - 📝 Embed writing checks for existing sections before appending
 - 🛑 Circuit breaker prevents catastrophic deletion propagation
+
+## 🎯 Vault-Direct Editing
+
+🚫 Never copy existing files from the git repo to the vault. The repo's content directories contain Enveloppe-published versions of vault files, which may differ from vault originals due to wikilink conversion, dataview query expansion, or other publishing transforms. Copying these back would silently corrupt vault content and resurrect files that have been renamed or deleted in the vault.
+
+✅ Edit vault files directly. When a task needs to modify vault content (image backfill, nav links, forward links), operate on the vault directory, not on repo copies.
+
+📤 The only files that should go from git repo to vault are:
+- 🆕 New ai-blog posts written during PRs (these don't exist in the vault yet)
+- 🆕 Initial posts in new auto blog series
+- 📝 Modified AGENTS.md files for blog series (these live in git)
+- 🖼️ New attachment images via `syncAttachmentsDir` (uses `syncIfMissing` — never overwrites)
+
+🔧 Backfill task (`runBackfillImages`):
+- 🖼️ Image backfill operates directly on vault files via `bfcRepoRoot = vaultDir`
+- 🔗 Nav link updates operate directly on vault's ai-blog directory
+- 🚫 No files are copied from repo to vault
+
+🔧 Blog series task (`runBlogSeries`):
+- 📝 New posts are generated in the repo directory, then synced to vault (new file)
+- 🔗 Previous post forward links are added directly in the vault directory
+- 📝 AGENTS.md is synced from repo to vault (it lives in git)
+- 🖼️ New attachment images are synced via `syncAttachmentsDir` (copy-if-missing)
+
+⚠️ The `syncMarkdownDir` function was intentionally removed from the public API to prevent accidental broad directory syncs.

@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-04-03T18:17:51-07:00
+updated: 2026-04-03T18:28:26-07:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -56,11 +56,11 @@ updated: 2026-04-03T18:17:51-07:00
 - [🌳🍎🍽️ From Tree to Table: Growing Backyard Fruit Trees in the Pacific Maritime Climate](./books/from-tree-to-table-growing-backyard-fruit-trees-in-the-pacific-maritime-climate.md)  
   
   
-## [📺 Videos](./videos/index.md) (721)  
+## [📺 Videos](./videos/index.md) (722)  
+- [🪵🪴🤥✅🔬 Wood Chip Mulch Gardening Myths and Facts! Dr. Linda Chalker Scott](./videos/wood-chip-mulch-gardening-myths-and-facts-dr-linda-chalker-scott.md)  
 - [🪴🧟❌🔬 Garden Zombies: Bogus Gardening Practices That Will Not Die w/ Dr. Linda Chalker-Scott, Ph.D – SCHS](./videos/garden-zombies-bogus-gardening-practices-that-will-not-die-w-dr-linda-chalker-scott-ph-d-schs.md)  
 - [🪴🔬📚 Soil and Planting Lessons from Research](./videos/soil-and-planting-lessons-from-research.md)  
 - [🇺🇸✂️🩺🤕 States face hard choices after major cuts to federal health care funding](./videos/states-face-hard-choices-after-major-cuts-to-federal-health-care-funding.md)  
-- [👶🧑‍👩‍👧‍👦💲➡️ New Mexico to launch universal free childcare for all New Mexicans](./videos/new-mexico-to-launch-universal-free-childcare-for-all-new-mexicans.md)  
   
   
 ## [🌌 Topics](./topics/index.md) (91)  

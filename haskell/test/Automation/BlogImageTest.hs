@@ -392,6 +392,22 @@ tests = testGroup "BlogImage"
       , testCase "rejects IDEAS.md" $
           isPostFile "IDEAS.md" @?= False
       ]
+  , testGroup "isDateOnlyTitle"
+      [ testCase "returns True when title matches date" $
+          isDateOnlyTitle "---\ntitle: 2026-04-04\n---\n# 2026-04-04\nbody" "2026-04-04" @?= True
+      , testCase "returns True for quoted date title" $
+          isDateOnlyTitle "---\ntitle: \"2026-04-04\"\n---\nbody" "2026-04-04" @?= True
+      , testCase "returns False for creative title" $
+          isDateOnlyTitle "---\ntitle: \"2026-04-04 | Creative Title\"\n---\nbody" "2026-04-04" @?= False
+      , testCase "returns False when title is empty" $
+          isDateOnlyTitle "---\ntags: foo\n---\nbody" "2026-04-04" @?= False
+      , testCase "returns False for non-date title" $
+          isDateOnlyTitle "---\ntitle: My Post\n---\nbody" "2026-04-04" @?= False
+      , testCase "returns True when H1 is the date" $
+          isDateOnlyTitle "# 2026-04-04\nbody" "2026-04-04" @?= True
+      , testCase "returns False when date does not match" $
+          isDateOnlyTitle "---\ntitle: 2026-04-03\n---\nbody" "2026-04-04" @?= False
+      ]
   , testGroup "properties"
       [ testProperty "buildImagePrompt never exceeds max length" $
           \content -> T.length (buildImagePrompt (T.pack content)) <= 2048

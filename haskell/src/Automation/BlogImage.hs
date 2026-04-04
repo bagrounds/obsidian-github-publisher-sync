@@ -24,6 +24,7 @@ module Automation.BlogImage
   , isDailyQuotaError
   , isProviderUnavailableError
   , isPostFile
+  , isDateOnlyTitle
   , removeImageEmbed
   , generateWithCloudflare
   , generateWithHuggingFace
@@ -293,6 +294,11 @@ extractDateFromFilename :: Text -> Text
 extractDateFromFilename filename =
   let prefix = T.take 10 filename
   in if hasDatePrefix filename then prefix else ""
+
+isDateOnlyTitle :: Text -> Text -> Bool
+isDateOnlyTitle content date =
+  let title = extractTitle content
+  in title == date
 
 --------------------------------------------------------------------------------
 -- Content processing
@@ -1028,7 +1034,8 @@ checkCandidate dirPath dirId today filename = do
     False -> do
       content <- TIO.readFile filePath
       let needsRegen = shouldRegenerateImage content
-      case hasEmbeddedImage content && not needsRegen of
+          untitledReflection = dirId == "reflections" && isDateOnlyTitle content date
+      case (hasEmbeddedImage content && not needsRegen) || untitledReflection of
         True  -> pure []
         False -> pure [BackfillCandidate filePath dirId filename date needsRegen]
 

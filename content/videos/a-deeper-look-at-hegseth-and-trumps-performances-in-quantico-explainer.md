@@ -9,6 +9,9 @@ Platform:
 Channel: Heather Cox Richardson
 tags:
 youtube: https://youtu.be/Jz3Wl4Fo0-8
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_time: 2026-04-03T00:00:00Z
+force_analyze_links: false
 ---
 [Home](../index.md) > [Videos](./index.md) | [🏛️🇺🇸📖 Heather Cox Richardson](../people/heather-cox-richardson.md)  
 # 🔎🎭🇺🇸 A Deeper Look at Hegseth and Trump’s Performances in Quantico | Explainer  
@@ -48,4 +51,4 @@ youtube: https://youtu.be/Jz3Wl4Fo0-8
   
 ### Creatively Related  
 * [🏚️💰 Evicted: Poverty and Profit in the American City](../books/evicted-poverty-and-profit-in-the-american-city.md) by Matthew Desmond: 🚪 Connects the broad policy impacts (like cuts to nutrition and healthcare) to the real-life struggles and precariousness of low-income Americans, mirroring the anxiety created by ICE raids.  
-* 🎭 *The Power Broker* by Robert Caro: 🏗️ A massive biography of Robert Moses that illustrates how institutional power is amassed and wielded, showing how an individual can operate outside normal democratic constraints, similar to the powerful non-military federal agencies.
+* 🎭 *[👑🏙️ The Power Broker](../books/the-power-broker.md)* by Robert Caro: 🏗️ A massive biography of Robert Moses that illustrates how institutional power is amassed and wielded, showing how an individual can operate outside normal democratic constraints, similar to the powerful non-military federal agencies.

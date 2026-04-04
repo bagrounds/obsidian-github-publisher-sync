@@ -200,15 +200,15 @@ The source-level test is unusual — it reads the actual TypeScript file and che
   
 ### ✨ Similar    
   
-- [🌐🔗🤝💻 Distributed Algorithms](../content/books/distributed-algorithms.md) by Nancy A. Lynch — the canonical reference for reasoning about operation ordering, message passing, and the pitfalls of distributed state; our "push before timestamps are set" bug is a microcosm of the consistency challenges Lynch covers    
-- [💾⬆️🛡️ Designing Data-Intensive Applications: The Big Ideas Behind Reliable, Scalable, and Maintainable Systems](../content/books/designing-data-intensive-applications.md) by Martin Kleppmann — Chapter 9 on consistency and consensus directly applies; our vault push is effectively a "write" to a remote data store, and the ordering of local modifications before that write is a consistency concern    
+- [🌐🔗🤝💻 Distributed Algorithms](../books/distributed-algorithms.md#) by Nancy A. Lynch — the canonical reference for reasoning about operation ordering, message passing, and the pitfalls of distributed state; our "push before timestamps are set" bug is a microcosm of the consistency challenges Lynch covers    
+- [💾⬆️🛡️ Designing Data-Intensive Applications: The Big Ideas Behind Reliable, Scalable, and Maintainable Systems](../books/designing-data-intensive-applications.md#) by Martin Kleppmann — Chapter 9 on consistency and consensus directly applies; our vault push is effectively a "write" to a remote data store, and the ordering of local modifications before that write is a consistency concern    
   
 ### 🆚 Contrasting    
   
-- [🏍️🧘❓ Zen and the Art of Motorcycle Maintenance: An Inquiry into Values](../content/books/zen-and-the-art-of-motorcycle-maintenance-an-inquiry-into-values.md) by Robert M. Pirsig — Pirsig argues that quality emerges from care and attention to process; our bug came from not paying enough attention to the order of two simple operations    
-- [🤔🌍 Sophie's World](../content/books/sophies-world.md) by Jostein Gaarder — what is the nature of time? Our bug was a temporal one: the timestamps existed, but at the wrong moment in the timeline    
+- [🏍️🧘❓ Zen and the Art of Motorcycle Maintenance: An Inquiry into Values](../books/zen-and-the-art-of-motorcycle-maintenance-an-inquiry-into-values.md#) by Robert M. Pirsig — Pirsig argues that quality emerges from care and attention to process; our bug came from not paying enough attention to the order of two simple operations    
+- [🤔🌍 Sophie's World](../books/sophies-world.md#) by Jostein Gaarder — what is the nature of time? Our bug was a temporal one: the timestamps existed, but at the wrong moment in the timeline    
   
 ### 🧠 Deeper Exploration    
   
-- [🌐🔗🧠📖 Thinking in Systems: A Primer](../content/books/thinking-in-systems.md) by Donella Meadows — the pipeline is a system with feedback loops and delays; the push is a delay in the information flow, and the bug was a failure to account for when information crosses that boundary    
-- [⚛️🔄 Atomic Habits: An Easy & Proven Way to Build Good Habits & Break Bad Ones](../content/books/atomic-habits.md) by James Clear — the fix was one line moved; tiny changes in habit (or code ordering) can have outsized effects on outcomes    
+- [🌐🔗🧠📖 Thinking in Systems: A Primer](../books/thinking-in-systems.md#) by Donella Meadows — the pipeline is a system with feedback loops and delays; the push is a delay in the information flow, and the bug was a failure to account for when information crosses that boundary    
+- [⚛️🔄 Atomic Habits: An Easy & Proven Way to Build Good Habits & Break Bad Ones](../books/atomic-habits.md#) by James Clear — the fix was one line moved; tiny changes in habit (or code ordering) can have outsized effects on outcomes    

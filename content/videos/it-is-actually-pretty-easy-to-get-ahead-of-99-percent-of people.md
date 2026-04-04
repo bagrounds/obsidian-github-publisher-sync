@@ -8,6 +8,9 @@ Author:
 Platform: "#YouTube"
 Channel: "[[Spoon Fed Study]]"
 tags:
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_time: 2026-04-04T00:00:00Z
+force_analyze_links: false
 ---
 [Home](../index.md) > [Videos](./index.md) | [🥄👶📚 SpoonFedStudy](../topics/spoonfedstudy.md)  
 # 📈🚀🏁🏆  It’s actually pretty easy to get ahead of 99% of people  

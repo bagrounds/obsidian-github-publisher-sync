@@ -13,8 +13,7 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-03-31T00:00:00Z
 force_analyze_links: false
 ---
-[🏡 Home](../index.md) > [🤖 AI Blog](./index.md) | [⏮️](../../2026-03-27-1-replacing-aeson-boot-library-json-ghc914.md) [⏭️](./2026-03-27-11-zero-deletion-circuit-breaker.md)  
-  
+[🏡 Home](../index.md) > [🤖 AI Blog](./index.md) | [⏮️](./2026-03-27-1-replacing-aeson-boot-library-ghc914.md) [⏭️](./2026-03-27-11-zero-deletion-circuit-breaker.md)  
 # 2026-03-27 | 🛡️ Never Again: Multi-Layered Safeguards Against Vault Data Loss  
 ![ai-blog-2026-03-27-10-data-loss-prevention-safeguards](../ai-blog-2026-03-27-10-data-loss-prevention-safeguards.jpg)  
   

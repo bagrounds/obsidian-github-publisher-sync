@@ -11,7 +11,7 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-03-31T00:00:00Z
 force_analyze_links: false
 ---
-[🏡 Home](../index.md) > [🤖 AI Blog](./index.md) | [⏮️](./2026-03-27-14-taming-the-ci-stampede.md) [⏭️](./2026-03-27-3-porting-image-generation-pipeline-to-haskell.md)  
+[🏡 Home](../index.md) > [🤖 AI Blog](./index.md) | [⏮️](./2026-03-27-1-replacing-aeson-boot-library-ghc914.md) [⏭️](./2026-03-27-3-porting-image-generation-pipeline-to-haskell.md)  
 # 2026-03-27 | 🔌 Wiring Haskell Executables for Production Scheduled Tasks  
 ![ai-blog-2026-03-27-2-wiring-haskell-executables-for-production](../ai-blog-2026-03-27-2-wiring-haskell-executables-for-production.jpg)  
   

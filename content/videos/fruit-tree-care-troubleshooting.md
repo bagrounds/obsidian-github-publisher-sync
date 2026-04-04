@@ -9,6 +9,9 @@ Platform:
 Channel: Master Gardener Foundation of Cowlitz County
 tags:
 youtube: https://youtu.be/qnhLUIPuk2Y
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_time: 2026-04-03T00:00:00Z
+force_analyze_links: false
 ---
 [Home](../index.md) > [Videos](./index.md)  
 # 🌳🍎❓🛠️ Fruit Tree Care Troubleshooting  
@@ -28,7 +31,7 @@ youtube: https://youtu.be/qnhLUIPuk2Y
   
 ## 🤔 Evaluation  
 * ⚖️ While the video emphasizes organic treatments, the Growing Organic Fruit Trees guide from Oregon State University Extension provides deeper technical specifications on the efficacy of various organic fungicides.  
-* 🌡️ The speaker notes the difficulty of growing peaches in the Pacific Northwest; contrastingly, The Home Orchard by the University of California Agriculture and Natural Resources offers strategies for Mediterranean climates where these fruits thrive.  
+* 🌡️ The speaker notes the difficulty of growing peaches in the Pacific Northwest; contrastingly, [🏡🍎🌳 The Home Orchard: Growing Your Own Deciduous Fruit and Nut Trees](../books/the-home-orchard-growing-your-own-deciduous-fruit-and-nut-trees.md) by the University of California Agriculture and Natural Resources offers strategies for Mediterranean climates where these fruits thrive.  
 * 🔬 Exploration of integrated pest management (IPM) strategies would provide a broader understanding of balancing chemical use with biological controls.  
   
 ## ❓ Frequently Asked Questions (FAQ)  

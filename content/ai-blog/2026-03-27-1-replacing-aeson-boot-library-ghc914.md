@@ -1,7 +1,6 @@
 ---
 share: true
 title: 2026-03-27 | 🧩 Replacing Aeson with a Boot-Library JSON Module for GHC 9.14
-date: 2026-03-27
 aliases:
   - 2026-03-27 | 🧩 Replacing Aeson with a Boot-Library JSON Module for GHC 9.14
 image_date: 2026-03-30T12:23:10Z

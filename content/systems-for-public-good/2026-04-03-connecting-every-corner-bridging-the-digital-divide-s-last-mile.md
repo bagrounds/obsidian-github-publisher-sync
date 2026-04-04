@@ -13,7 +13,7 @@ link_analysis_time: 2026-04-03T00:00:00Z
 force_analyze_links: false
 updated: 2026-04-03T21:17:31
 ---
-[Home](../index.md) > [🏛️ Systems for Public Good](./index.md) | [⏮️](./2026-04-02-cultivating-care-beyond-subsidies-and-elevating-a-vital-profession.md)  
+[Home](../index.md) > [🏛️ Systems for Public Good](./index.md) | [⏮️](./2026-04-02-cultivating-care-beyond-subsidies-and-elevating-a-vital-profession.md) [⏭️](./2026-04-04-cultivating-connection-social-health-as-a-public-good.md)  
 # 2026-04-03 | 🏛️ 🌐 Connecting Every Corner: Bridging the Digital Divide's Last Mile 🏛️  
 ![systems-for-public-good-2026-04-03-connecting-every-corner-bridging-the-digital-divide-s-last-mile](../systems-for-public-good-2026-04-03-connecting-every-corner-bridging-the-digital-divide-s-last-mile.jpg)  
   

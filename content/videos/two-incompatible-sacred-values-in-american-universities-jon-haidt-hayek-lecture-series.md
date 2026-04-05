@@ -9,6 +9,9 @@ Platform:
 Channel: Duke University Department of Political Science
 tags:
 youtube: https://youtu.be/Gatn5ameRr8
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_time: 2026-04-05T00:00:00Z
+force_analyze_links: false
 ---
 [Home](../index.md) > [Videos](./index.md) | [🧠🤝🐘 Jonathan Haidt](../people/jonathan-haidt.md)  
 # 🏛️⚖️💥 «Two incompatible sacred values in American universities» Jon Haidt, Hayek Lecture Series  

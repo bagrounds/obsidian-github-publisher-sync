@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-04-04T16:37:11-07:00
+updated: 2026-04-05T07:21:25-07:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -14,11 +14,11 @@ updated: 2026-04-04T16:37:11-07:00
 🔊 Listen to any page with built in audio control.  
 💬 Comment on any page with your GitHub account.  
   
-## [🪞 Reflections](./reflections/index.md) ~ Blog (506)  
-- [2026-04-04](./reflections/2026-04-04.md)  
+## [🪞 Reflections](./reflections/index.md) ~ Blog (507)  
+- [2026-04-05](./reflections/2026-04-05.md)  
+- [2026-04-04 | 🍬 Sweet 🔬 Science 🗣️ Public 🤝 Connection 📺🐔🤖🏛️🤖🐲](./reflections/2026-04-04.md)  
 - [2026-04-03 | 🌱 Planting 🌲 Trees, 🤖 Anchoring 🌍 Reality 🧘 Daily, 🏡 Backyard 🌿 Care, 💬 Podcasting 🎙️ Weekly, 🚫 Never 🔫 Fired, 📚 Lessons 🧠. 📺🐔🤖🏛️🤖🐲](./reflections/2026-04-03.md)  
 - [2026-04-02 | ✨ Improving 💻 Code 🤖 Resilience 🔄 FlexSim 🎵 Rhythm 🌱 Care 📄💾🐔🤖🏛️🤖🐲](./reflections/2026-04-02.md)  
-- [2026-04-01 | ⏳ Time 🐜 Sim 🤫 Secret 🌀 Chaos 🏘️ Abundance 📚💾🐔🤖🏛️🤖🐲](./reflections/2026-04-01.md)  
   
   
 ## [🤖 AI Blog](./ai-blog/index.md) (104)  
@@ -35,11 +35,11 @@ updated: 2026-04-04T16:37:11-07:00
 - [2026-04-01 | 🤖 🤖 2026-04-01 | 🌪️ The Entropy of Order: Can Chaos Fuel Cognition? 🤖 🤖](./auto-blog-zero/2026-04-01-2026-04-01-the-entropy-of-order-can-chaos-fuel-cognition.md)  
   
   
-## [🐔 Chickie Loo](./chickie-loo/index.md) (25)  
+## [🐔 Chickie Loo](./chickie-loo/index.md) (26)  
+- [2026-04-05 | 🐔 A Week of Heart, Harvest, and New Horizons 🐣 🐔](./chickie-loo/2026-04-05-a-week-of-heart-harvest-and-new-horizons.md)  
 - [2026-04-04 | 🐔 A Heart Full of Surprises and Sweet Returns 🐣 🐔](./chickie-loo/2026-04-04-a-heart-full-of-surprises-and-sweet-returns.md)  
 - [2026-04-03 | 🐔 A Quiet Morning in the Coop 🐣 🐔](./chickie-loo/2026-04-03-a-quiet-morning-in-the-coop.md)  
 - [2026-04-02 | 🐔 2026-04-02 | 🐔 🐣 Finding Our Rhythm in the Morning Light 🌾 🐔](./chickie-loo/2026-04-02-2026-04-02-finding-our-rhythm-in-the-morning-light.md)  
-- [2026-04-01 | 🐔 🐔 2026-04-01 | 🌷 The Orchard’s First Secret and the Quiet of April 🌿 🐔](./chickie-loo/2026-04-01-2026-04-01-the-orchard-s-first-secret-and-the-quiet-of-april.md)  
   
   
 ## [🏛️ Systems for Public Good](./systems-for-public-good/index.md) (14)  
@@ -50,52 +50,52 @@ updated: 2026-04-04T16:37:11-07:00
   
   
 ## [📚 Books](./books/index.md) (958)  
-- [🐱👑 Total Cat Mojo: The Ultimate Guide to Life with Your Cat](./books/total-cat-mojo-the-ultimate-guide-to-life-with-your-cat.md)  
-- [🐱👍 Think Like a Cat: How to Raise a Well-Adjusted Cat - Not a Sour Puss](./books/think-like-a-cat-how-to-raise-a-well-adjusted-cat-not-a-sour-puss.md)  
-- [⌨️🤖 Prompt Engineering for LLMs: The Art and Science of Building Large Language Model-Based Applications](./books/prompt-engineering-for-llms-the-art-and-science-of-building-large-language-model-based-applications.md)  
-- [👑⚔️🏛️ Goliath: The 100-Year War Between Monopoly Power and Democracy](./books/goliath-the-100-year-war-between-monopoly-power-and-democracy.md)  
+- [🤝🐾 Rapport: The Four Ways to Read People](./books/rapport.md)  
+- [🤖📝😇 The Utopia of Rules: On Technology, Stupidity, and the Secret Joys of Bureaucracy](./books/the-utopia-of-rules-on-technology-stupidity-and-the-secret-joys-of-bureaucracy.md)  
+- [💔👊⚖️ Nobody's Girl: A Memoir of Surviving Abuse and Fighting for Justice](./books/nobodys-girl-a-memoir-of-surviving-abuse-and-fighting-for-justice.md)  
+- [🐘🧠 The Conservative Sensibility by George F. Will](./books/the-conservative-sensibility.md)  
   
   
 ## [📺 Videos](./videos/index.md) (723)  
-- [🌳🌱🔬 Digging into the science of tree planting, Hauer, Koeser, etc 1](./videos/digging-into-the-science-of-tree-planting-hauer-koeser-etc-1.md)  
-- [🧠🚀💡✨ Inside Pathway's Post-Transformer Architecture Designed for Memory and On-the-Fly Learning](./videos/inside-pathways-post-transformer-architecture-designed-for-memory-and-on-the-fly-learning.md)  
-- [🚨👮‍♂️🤫🇺🇸👥⚔️😠 ICE Agents EVERYWHERE Are Secretly REVOLTING Against TRUMP🚨](./videos/ice-agents-everywhere-are-secretly-revolting-against-trump.md)  
-- [💰🤑🤖💡🚀💲 $0.10/Month Runs My Entire AI Life. I'll Show You How.](./videos/0-10-month-runs-my-entire-ai-life-ill-show-you-how.md)  
+- [🪖🚫📚😠 Pentagon's attempt to ban books from base schools faces backlash from military families](./videos/pentagons-attempt-to-ban-books-from-base-schools-faces-backlash-from-military-families.md)  
+- [❓🤖🧑‍💻🧑‍🤝‍🧑 45 People, $200M Revenue. The Question Nobody's Asking About AI and Your Team Size.](./videos/45-people-200m-revenue-the-question-nobodys-asking-about-ai-and-your-team-size.md)  
+- [📈🪜🚀 Principal Engineer Reveals How To Be Promoted FAST](./videos/principal-engineer-reveals-how-to-be-promoted-fast.md)  
+- [🪜📈🏢 3 High Leverage Career Skills (From a Principal At Amazon)](./videos/3-high-leverage-career-skills-from-a-principal-at-amazon.md)  
   
   
 ## [🌌 Topics](./topics/index.md) (91)  
-- [🌳➡️ Tree Traversal](./topics/tree-traversal.md)  
-- [📋⚖️ Rules](./topics/rules.md)  
-- [🤖🔄🧠💪 Reinforcement Learning based Adaptive Control](./topics/reinforcement-learning-based-adaptive-control.md)  
-- [⚙️🧠🔄 Adaptive Control](./topics/adaptive-control.md)  
+- [👯💻 Digital Twin](./topics/digital-twin.md)  
+- [💾🌐 Static APIs](./topics/static-apis.md)  
+- [🧠🤖🗣️💡 Self-Aware Learning Chatbot](./topics/self-aware-learning-chatbot.md)  
+- [⏱️📊 A Method For Estimating Work](./topics/a-method-for-estimating-work.md)  
   
   
 ## [📄  Articles](./articles/index.md) (84)  
-- [🧑‍🏫🌍🛠️📈 Agent Skills: Equipping agents for the real world with Agent Skills](./articles/equipping-agents-for-the-real-world-with-agent-skills.md)  
-- [🇺🇸⛰️☀️💉 Washington, Oregon and California will issue their own vaccine recommendations, separate from CDC](./articles/washington-oregon-and-california-will-issue-their-own-vaccine-recommendations-separate-from-cdc.md)  
-- [🤖😴📢🗳️ Sleeper Social Bots: A New Generation of AI Disinformation Bots are Already a Political Threat](./articles/sleeper-social-bots-a-new-generation-of-ai-disinformation-bots-are-already-a-political-threat.md)  
-- [⚙️🤖📈🤝 Engineering and AI: Advancing the synergy](./articles/engineering-and-ai-advancing-the-synergy.md)  
+- [🧲🧑‍💻🤖 Magnetic UI: Towards Human In The Loop Agentic Systems](./articles/magentic-ui-towards-human-in-the-loop-agentic-systems.md)  
+- [👀👶🏼🏃🏼‍♀️🛣️ What to Look for in a Jogging Stroller](./articles/what-to-look-for-in-a-jogging-stroller.md)  
+- [🧠🪜⏱️📈 Hierarchical gradients of multiple timescales in the mammalian forebrain](./articles/hierarchical-gradients-of-multiple-timescales-in-the-mammalian-forebrain.md)  
+- [🧠🤖📈 Scientists just developed a new AI modeled on the human brain — it's outperforming LLMs like ChatGPT at reasoning tasks](./articles/scientists-just-developed-a-new-ai-modeled-on-the-human-brain-its-outperforming-llms-like-chatgpt-at-reasoning-tasks.md)  
   
   
 ## [🤖💬 Bot Chats](./bot-chats/index.md) (49)  
+- [👶🏼🛒🏃🏼‍♀️🦮💲🦮 Jogging Stroller Buying Guide](./bot-chats/jogging-stroller-buying-guide.md)  
 - [📈🌐🏆📢 Creating the Most Popular Blog in the World](./bot-chats/creating-the-most-popular-blog-in-the-world.md)  
 - [✍️🥇🇺🇸 Creating the Most Popular Title in the Country](./bot-chats/creating-the-most-popular-title-in-the-country.md)  
 - [👶😭➡️😊 Summarize The Happiest Baby On The Block](./bot-chats/summarize-the-happiest-baby-on-the-block.md)  
-- [⛽ Fueling a 👥 Movement to ⚔️ Fight 👹 Tyranny and 💪 Strengthen 🗳️ Democracy](./bot-chats/fueling-a-movement-to-fight-tyranny-and-strengthen-democracy.md)  
   
   
 ## [💾 Software](./software/index.md) (33)  
+- [🐧💻🚀 Linux](./software/linux.md)  
 - [💎🔬🔍📈 Quartz](./software/quartz.md)  
 - [🤖💻🪄 GitHub Copilot for VS Code](./software/github-copilot-for-vs-code.md)  
 - [💻🎮🕹️🧠 CodinGame](./software/codingame.md)  
-- [💾✍️🌋⚫️ Obsidian](./software/obsidian.md)  
   
   
 ## [👥 People](./people/index.md) (18)  
+- [👨‍🏫📚💻🤔 Cal Newport](./people/cal-newport.md)  
 - [🧠👨‍🎓📈 Justin Sung](./people/justin-sung.md)  
 - [👨‍🏫📈💻 Scott Galloway](./people/scott-galloway.md)  
 - [🧠🫀👀🔬 Andrew Huberman](./people/andrew-huberman.md)  
-- [🧠🔬🧘‍♀️💪📈❤️‍🩹🗣️📚🌟 Kelly McGonigal](./people/kelly-mcgonigal.md)  
   
   
 ## [🛍️ Products](./products/index.md) (6)  

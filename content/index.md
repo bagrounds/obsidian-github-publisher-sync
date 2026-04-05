@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-04-05T08:19:46-07:00
+updated: 2026-04-05T08:50:57-07:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -56,11 +56,11 @@ updated: 2026-04-05T08:19:46-07:00
 - [🤖📝😇 The Utopia of Rules: On Technology, Stupidity, and the Secret Joys of Bureaucracy](./books/the-utopia-of-rules-on-technology-stupidity-and-the-secret-joys-of-bureaucracy.md)  
   
   
-## [📺 Videos](./videos/index.md) (725)  
+## [📺 Videos](./videos/index.md) (726)  
+- [🌍🌱🛠️🌳 Unit 6: Tree Planting and Care- Planting Preparation](./videos/unit-6-tree-planting-and-care-planting-preparation.md)  
 - [🌳🚿🪴 Unit 6: Tree Planting and Care- Root Washing](./videos/unit-6-tree-planting-and-care-root-washing.md)  
 - [🤖📈🌟 The Only Trait for Success in the AI Era—How to Build It | Carnegie Mellon University Po-Shen Loh](./videos/the-only-trait-for-success-in-the-ai-era-how-to-build-it-carnegie-mellon-university-po-shen-loh.md)  
 - [🔬⬇️🌿🔗💧⚙️💻 Characterizing Root-zone and Plant Integrated Hydraulic Systems Based on... TREE Fund Webinar Series](./videos/characterizing-root-zone-and-plant-integrated-hydraulic-systems-based-on-tree-fund-webinar-series.md)  
-- [🪖🚫📚😠 Pentagon's attempt to ban books from base schools faces backlash from military families](./videos/pentagons-attempt-to-ban-books-from-base-schools-faces-backlash-from-military-families.md)  
   
   
 ## [🌌 Topics](./topics/index.md) (91)  

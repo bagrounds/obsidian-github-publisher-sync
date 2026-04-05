@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-04-05T07:21:25-07:00
+updated: 2026-04-05T07:41:52-07:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -49,18 +49,18 @@ updated: 2026-04-05T07:21:25-07:00
 - [2026-04-01 | 🏛️ 🏡 Expanding Housing Abundance: Beyond Traditional Models 🏛️](./systems-for-public-good/2026-04-01-expanding-housing-abundance-beyond-traditional-models.md)  
   
   
-## [📚 Books](./books/index.md) (958)  
+## [📚 Books](./books/index.md) (959)  
+- [🌳🎶 The Songs of Trees: Stories from Nature's Great Connectors](./books/the-songs-of-trees-stories-from-natures-great-connectors.md)  
 - [🤝🐾 Rapport: The Four Ways to Read People](./books/rapport.md)  
 - [🤖📝😇 The Utopia of Rules: On Technology, Stupidity, and the Secret Joys of Bureaucracy](./books/the-utopia-of-rules-on-technology-stupidity-and-the-secret-joys-of-bureaucracy.md)  
 - [💔👊⚖️ Nobody's Girl: A Memoir of Surviving Abuse and Fighting for Justice](./books/nobodys-girl-a-memoir-of-surviving-abuse-and-fighting-for-justice.md)  
-- [🐘🧠 The Conservative Sensibility by George F. Will](./books/the-conservative-sensibility.md)  
   
   
-## [📺 Videos](./videos/index.md) (723)  
+## [📺 Videos](./videos/index.md) (724)  
+- [🔬⬇️🌿🔗💧⚙️💻 Characterizing Root-zone and Plant Integrated Hydraulic Systems Based on... TREE Fund Webinar Series](./videos/characterizing-root-zone-and-plant-integrated-hydraulic-systems-based-on-tree-fund-webinar-series.md)  
 - [🪖🚫📚😠 Pentagon's attempt to ban books from base schools faces backlash from military families](./videos/pentagons-attempt-to-ban-books-from-base-schools-faces-backlash-from-military-families.md)  
 - [❓🤖🧑‍💻🧑‍🤝‍🧑 45 People, $200M Revenue. The Question Nobody's Asking About AI and Your Team Size.](./videos/45-people-200m-revenue-the-question-nobodys-asking-about-ai-and-your-team-size.md)  
 - [📈🪜🚀 Principal Engineer Reveals How To Be Promoted FAST](./videos/principal-engineer-reveals-how-to-be-promoted-fast.md)  
-- [🪜📈🏢 3 High Leverage Career Skills (From a Principal At Amazon)](./videos/3-high-leverage-career-skills-from-a-principal-at-amazon.md)  
   
   
 ## [🌌 Topics](./topics/index.md) (91)  

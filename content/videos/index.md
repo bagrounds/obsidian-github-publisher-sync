@@ -5,10 +5,10 @@ aliases:
 title: 📺 Videos
 URL: https://bagrounds.org/videos
 backlinks: false
-updated: 2026-04-05T07:21:25-07:00
+updated: 2026-04-05T07:41:52-07:00
 ---
 [Home](../index.md)  
-# 📺 Videos (723)  
+# 📺 Videos (724)  
 - [💰🤑🤖💡🚀💲 $0.10/Month Runs My Entire AI Life. I'll Show You How.](./0-10-month-runs-my-entire-ai-life-ill-show-you-how.md)  
 - [📊📈📉📃👁️ 10 Charts to Understand the 900 Page Budget Bill](./10-charts-to-understand-the-900-page-budget-bill.md)  
 - [🤖🔗⬆️✅ 12-Factor Agents: Patterns of reliable LLM applications — Dex Horthy, HumanLayer](./12-factor-agents-patterns-of-reliable-llm-applications-dex-horthy-humanlayer.md)  
@@ -137,6 +137,7 @@ updated: 2026-04-05T07:21:25-07:00
 - [🤖📈 💯📊 👩‍💻👨‍💻 Can you prove AI ROI in Software Eng? (Stanford 120k Devs Study) – Yegor Denisov-Blanch, Stanford](./can-you-prove-ai-roi-in-software-eng-stanford-120k-devs-study-yegor-denisov-blanch-stanford.md)  
 - [👨‍⚖️🗣️😠🔫 Capehart and Wehner on Trump's reaction to the National Guard shooting](./capehart-and-wehner-on-trumps-reaction-to-the-national-guard-shooting.md)  
 - [📺💸❓ CBS says Colbert cancelation was financial decision, but timing raises questions](./cbs-says-colbert-cancelation-was-financial-decision-but-timing-raises-questions.md)  
+- [🔬⬇️🌿🔗💧⚙️💻 Characterizing Root-zone and Plant Integrated Hydraulic Systems Based on... TREE Fund Webinar Series](./characterizing-root-zone-and-plant-integrated-hydraulic-systems-based-on-tree-fund-webinar-series.md)  
 - [⏰👵🔬 Circadian Code to Extend Longevity | Satchin Panda | TEDxVeniceBeach](./circadian-code-to-extend-longevity-satchin-panda-tedx-venice-beach.md)  
 - [💰🚫🌍✨ Clara Mattei: capitalism is not natural - it’s enforced](./clara-mattei-capitalism-is-not-natural-its-enforced.md)  
 - [🤖🆚🧠⏳📉🔊 Claude Code vs Codex: The Decision That Compounds Every Week You Delay That Nobody Is Talking About](./claude-code-vs-codex-the-decision-that-compounds-every-week-you-delay-that-nobody-is-talking-about.md)  

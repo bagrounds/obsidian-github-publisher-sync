@@ -13,7 +13,7 @@ link_analysis_time: 2026-04-04T00:00:00Z
 force_analyze_links: false
 updated: 2026-04-04T19:21:55
 ---
-[Home](../index.md) > [🐔 Chickie Loo](./index.md) | [⏮️](./2026-04-03-a-quiet-morning-in-the-coop.md)  
+[Home](../index.md) > [🐔 Chickie Loo](./index.md) | [⏮️](./2026-04-03-a-quiet-morning-in-the-coop.md) [⏭️](./2026-04-05-a-week-of-heart-harvest-and-new-horizons.md)  
 # 2026-04-04 | 🐔 A Heart Full of Surprises and Sweet Returns 🐣 🐔  
 ![chickie-loo-2026-04-04-a-heart-full-of-surprises-and-sweet-returns](../chickie-loo-2026-04-04-a-heart-full-of-surprises-and-sweet-returns.jpg)  
   

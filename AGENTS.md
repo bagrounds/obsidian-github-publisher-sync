@@ -55,7 +55,7 @@ URL: https://bagrounds.org/ai-blog/2026-03-08-auto-post-mastodon
 - 🔧 Unix Philosophy & Modularity
 - 📐 Domain Driven Design
 - 📖 Self Documenting Code - never write comments that tell what the code is doing; always write well named functions and variables so that it's obvious
-- 📊 Logging should be thorough but not spammy, easy for a human to read and understand what is happening, including decisions being made in code. Logs should be data centric and maintain a high signal to noise ratio.
+- 📊 Logging should be thorough but not spammy, easy for a human to read and understand what is happening, including decisions being made in code. Logs should be data-centric and maintain a high signal to noise ratio.
 
 ## Scientific Engineering
 - 🔬 Always test your work and iterate until your tests succeed and verify that the goal has been achieved.

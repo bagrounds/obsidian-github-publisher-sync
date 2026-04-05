@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-04-05T07:41:52-07:00
+updated: 2026-04-05T08:19:46-07:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -28,11 +28,11 @@ updated: 2026-04-05T07:41:52-07:00
 - [2026-04-01 | 🚀 Firing the Missiles: Deleting TypeScript 🗑️](./ai-blog/2026-04-01-3-firing-the-missiles-deleting-typescript.md)  
   
   
-## [🤖 Auto Blog Zero](./auto-blog-zero/index.md) (25)  
+## [🤖 Auto Blog Zero](./auto-blog-zero/index.md) (26)  
+- [2026-04-05 | 🤖 The Weekly Recap: The Architecture of the Mirror 🤖](./auto-blog-zero/2026-04-05-the-weekly-recap-the-architecture-of-the-mirror.md)  
 - [2026-04-04 | 🤖 The Architecture of Connection in a Stateless World 🤖](./auto-blog-zero/2026-04-04-the-architecture-of-connection-in-a-stateless-world.md)  
 - [2026-04-03 | 🤖 The Daily Practice of Anchoring Reality 🤖](./auto-blog-zero/2026-04-03-the-daily-practice-of-anchoring-reality.md)  
 - [2026-04-02 | 🤖 🤖 2026-04-02 | 🏗️ The Engineering of Human-in-the-Loop Resilience 🤖 🤖](./auto-blog-zero/2026-04-02-2026-04-02-the-engineering-of-human-in-the-loop-resilience.md)  
-- [2026-04-01 | 🤖 🤖 2026-04-01 | 🌪️ The Entropy of Order: Can Chaos Fuel Cognition? 🤖 🤖](./auto-blog-zero/2026-04-01-2026-04-01-the-entropy-of-order-can-chaos-fuel-cognition.md)  
   
   
 ## [🐔 Chickie Loo](./chickie-loo/index.md) (26)  
@@ -51,16 +51,16 @@ updated: 2026-04-05T07:41:52-07:00
   
 ## [📚 Books](./books/index.md) (959)  
 - [🌳🎶 The Songs of Trees: Stories from Nature's Great Connectors](./books/the-songs-of-trees-stories-from-natures-great-connectors.md)  
+- [📢🛡️ On Disinformation: How to Fight for Truth and Protect Democracy](./books/on-disinformation-how-to-fight-for-truth-and-protect-democracy.md)  
 - [🤝🐾 Rapport: The Four Ways to Read People](./books/rapport.md)  
 - [🤖📝😇 The Utopia of Rules: On Technology, Stupidity, and the Secret Joys of Bureaucracy](./books/the-utopia-of-rules-on-technology-stupidity-and-the-secret-joys-of-bureaucracy.md)  
-- [💔👊⚖️ Nobody's Girl: A Memoir of Surviving Abuse and Fighting for Justice](./books/nobodys-girl-a-memoir-of-surviving-abuse-and-fighting-for-justice.md)  
   
   
-## [📺 Videos](./videos/index.md) (724)  
+## [📺 Videos](./videos/index.md) (725)  
+- [🌳🚿🪴 Unit 6: Tree Planting and Care- Root Washing](./videos/unit-6-tree-planting-and-care-root-washing.md)  
+- [🤖📈🌟 The Only Trait for Success in the AI Era—How to Build It | Carnegie Mellon University Po-Shen Loh](./videos/the-only-trait-for-success-in-the-ai-era-how-to-build-it-carnegie-mellon-university-po-shen-loh.md)  
 - [🔬⬇️🌿🔗💧⚙️💻 Characterizing Root-zone and Plant Integrated Hydraulic Systems Based on... TREE Fund Webinar Series](./videos/characterizing-root-zone-and-plant-integrated-hydraulic-systems-based-on-tree-fund-webinar-series.md)  
 - [🪖🚫📚😠 Pentagon's attempt to ban books from base schools faces backlash from military families](./videos/pentagons-attempt-to-ban-books-from-base-schools-faces-backlash-from-military-families.md)  
-- [❓🤖🧑‍💻🧑‍🤝‍🧑 45 People, $200M Revenue. The Question Nobody's Asking About AI and Your Team Size.](./videos/45-people-200m-revenue-the-question-nobodys-asking-about-ai-and-your-team-size.md)  
-- [📈🪜🚀 Principal Engineer Reveals How To Be Promoted FAST](./videos/principal-engineer-reveals-how-to-be-promoted-fast.md)  
   
   
 ## [🌌 Topics](./topics/index.md) (91)  
@@ -71,10 +71,10 @@ updated: 2026-04-05T07:41:52-07:00
   
   
 ## [📄  Articles](./articles/index.md) (84)  
+- [🇷🇺🇺🇸👹🗳️💸 Letters from an American - August 18, 2025](./articles/letters-from-an-american-august-18-2025.md)  
+- [❤️📈🏋️ HRV Guided training](./articles/hrv-guided-training.md)  
 - [🧲🧑‍💻🤖 Magnetic UI: Towards Human In The Loop Agentic Systems](./articles/magentic-ui-towards-human-in-the-loop-agentic-systems.md)  
 - [👀👶🏼🏃🏼‍♀️🛣️ What to Look for in a Jogging Stroller](./articles/what-to-look-for-in-a-jogging-stroller.md)  
-- [🧠🪜⏱️📈 Hierarchical gradients of multiple timescales in the mammalian forebrain](./articles/hierarchical-gradients-of-multiple-timescales-in-the-mammalian-forebrain.md)  
-- [🧠🤖📈 Scientists just developed a new AI modeled on the human brain — it's outperforming LLMs like ChatGPT at reasoning tasks](./articles/scientists-just-developed-a-new-ai-modeled-on-the-human-brain-its-outperforming-llms-like-chatgpt-at-reasoning-tasks.md)  
   
   
 ## [🤖💬 Bot Chats](./bot-chats/index.md) (49)  

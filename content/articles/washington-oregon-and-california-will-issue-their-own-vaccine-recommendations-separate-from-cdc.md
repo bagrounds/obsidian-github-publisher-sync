@@ -6,6 +6,9 @@ title: 🇺🇸⛰️☀️💉 Washington, Oregon and California will issue the
 URL: https://bagrounds.org/articles/washington-oregon-and-california-will-issue-their-own-vaccine-recommendations-separate-from-cdc
 Author:
 tags:
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_time: 2026-04-04T00:00:00Z
+force_analyze_links: false
 ---
 [Home](../index.md) > [Articles](./index.md)  
 # 🇺🇸⛰️☀️💉 Washington, Oregon and California will issue their own vaccine recommendations, separate from CDC  
@@ -34,6 +37,6 @@ For a better understanding, it would be beneficial to explore:
 - 🤝 **Coronavirus Politics: The Comparative Politics and Policy of COVID-19** by Scott L. Greer provides a detailed look at how different states and nations responded to health crises, offering insight into decentralized health policy.  
 * **[💰🤥 Merchants of Doubt](../books/merchants-of-doubt.md)** by Naomi Oreskes and Erik M. Conway investigates how a small group of scientists obscured the truth on issues from tobacco to climate change, directly addressing the theme of science versus politics.  
 * 📜 **The Politics of Public Health** by David L. Perlin provides an in-depth look at how political systems and policy decisions impact public health outcomes.  
-- 😷 The Great Influenza by John M. Barry details the history of a major public health crisis and the response of authorities.  
+- 😷 [🦠🌍💀 The Great Influenza](../books/the-great-influenza.md) by John M. Barry details the history of a major public health crisis and the response of authorities.  
 - 🦠 The Power of Plagues by Irwin W. Sherman explores how epidemics and pandemics have shaped human history and society.  
 * 🏃‍♂️ **The Story of the Human Body** by Daniel E. Lieberman offers a different perspective by exploring the evolutionary origins of modern health problems and diseases, highlighting the conflict between our ancient bodies and our modern environment.

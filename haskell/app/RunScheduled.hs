@@ -49,7 +49,7 @@ import Automation.BlogSeries
   )
 import Automation.BlogSeriesConfig
   ( BlogSeriesConfig (..)
-  , backfillContentIds
+  , imageBackfillContentIds
   , lookupSeries
   )
 import Automation.DailyReflection (UpdateReflectionResult (..), updateDailyReflection)
@@ -507,10 +507,10 @@ runBackfillImages manager vaultDir = do
       logMsg $ "  🎨 Image providers: " <> T.pack (show (length providers))
       let bfConfig = BackfillConfig
             { bfcRepoRoot = vaultDir
-            , bfcContentDirs = backfillContentIds
+            , bfcContentDirs = imageBackfillContentIds
             , bfcAttachmentsDir = vaultDir </> "attachments"
             , bfcProviders = providers
-            , bfcMaxImages = 1
+            , bfcMaxImages = 2
             }
       result <- backfillImages manager bfConfig
       logMsg $ "  🖼️  Images: " <> T.pack (show (brImagesGenerated result))

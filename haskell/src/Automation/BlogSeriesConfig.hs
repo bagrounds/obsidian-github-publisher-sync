@@ -5,6 +5,7 @@ module Automation.BlogSeriesConfig
   , lookupSeries
   , extraContentDirs
   , backfillContentIds
+  , imageBackfillContentIds
   ) where
 
 import Data.Map.Strict (Map)
@@ -76,3 +77,12 @@ extraContentDirs = ["reflections", "ai-blog"]
 
 backfillContentIds :: [Text]
 backfillContentIds = extraContentDirs <> fmap bscId blogSeries
+
+libraryContentDirs :: [Text]
+libraryContentDirs =
+  [ "articles", "books", "bot-chats", "games"
+  , "presentations", "products", "software", "tools", "topics"
+  ]
+
+imageBackfillContentIds :: [Text]
+imageBackfillContentIds = backfillContentIds <> libraryContentDirs

@@ -24,6 +24,7 @@ module Automation.BlogImage
   , isDailyQuotaError
   , isProviderUnavailableError
   , isPostFile
+  , isContentFile
   , isDateOnlyTitle
   , removeImageEmbed
   , generateWithCloudflare
@@ -280,6 +281,11 @@ isPostFile filename =
   T.isSuffixOf ".md" filename
     && notElem filename excludedFiles
     && hasDatePrefix filename
+
+isContentFile :: Text -> Bool
+isContentFile filename =
+  T.isSuffixOf ".md" filename
+    && notElem filename excludedFiles
 
 hasDatePrefix :: Text -> Bool
 hasDatePrefix t =
@@ -1021,8 +1027,8 @@ collectFromDir repoRoot today dirId = do
       pure []
     True -> do
       entries <- listDirectory dirPath
-      let postFiles = filter isPostFile (fmap T.pack entries)
-          sortedFiles = sortByTextDesc postFiles
+      let contentFiles = filter isContentFile (fmap T.pack entries)
+          sortedFiles = sortByTextDesc contentFiles
       fmap concat $ traverse (checkCandidate dirPath dirId today) sortedFiles
 
 checkCandidate :: FilePath -> Text -> Text -> Text -> IO [BackfillCandidate]

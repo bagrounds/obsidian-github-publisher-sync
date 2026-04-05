@@ -24,6 +24,7 @@ module Automation.BlogImage
   , isDailyQuotaError
   , isProviderUnavailableError
   , isPostFile
+  , shouldHaveImage
   , isDateOnlyTitle
   , removeImageEmbed
   , generateWithCloudflare
@@ -280,6 +281,11 @@ isPostFile filename =
   T.isSuffixOf ".md" filename
     && notElem filename excludedFiles
     && hasDatePrefix filename
+
+shouldHaveImage :: Text -> Bool
+shouldHaveImage filename =
+  T.isSuffixOf ".md" filename
+    && notElem filename excludedFiles
 
 hasDatePrefix :: Text -> Bool
 hasDatePrefix t =
@@ -999,6 +1005,8 @@ backfillImages manager config = do
   today <- todayPacific
   candidates <- collectCandidates (bfcRepoRoot config) (bfcContentDirs config) (unDateStr today)
   putStrLn $ "📋 Candidates: " <> show (length candidates) <> " notes need images"
+         <> " | providers: " <> show (length (bfcProviders config))
+         <> " | max: " <> show (bfcMaxImages config)
   processWithProviders manager config candidates 0 emptyResult
 
 emptyResult :: BackfillResult
@@ -1021,8 +1029,8 @@ collectFromDir repoRoot today dirId = do
       pure []
     True -> do
       entries <- listDirectory dirPath
-      let postFiles = filter isPostFile (fmap T.pack entries)
-          sortedFiles = sortByTextDesc postFiles
+      let contentFiles = filter shouldHaveImage (fmap T.pack entries)
+          sortedFiles = sortByTextDesc contentFiles
       fmap concat $ traverse (checkCandidate dirPath dirId today) sortedFiles
 
 checkCandidate :: FilePath -> Text -> Text -> Text -> IO [BackfillCandidate]
@@ -1058,20 +1066,31 @@ sortByTextDesc = foldl' ins []
 processWithProviders
   :: Manager -> BackfillConfig -> [BackfillCandidate]
   -> Int -> BackfillResult -> IO BackfillResult
-processWithProviders _ _ [] _ result = pure result
+processWithProviders _ _ [] _ result = do
+  putStrLn $ "📭 No more candidates | generated: " <> show (brImagesGenerated result)
+          <> " | skipped: " <> show (brFilesSkipped result)
+          <> " | errors: " <> show (length (brErrors result))
+  pure result
 processWithProviders _ config _ _ result
-  | null (bfcProviders config) = pure result { brErrors = brErrors result <> ["No providers available"] }
+  | null (bfcProviders config) = do
+      putStrLn "🚫 No providers available"
+      pure result { brErrors = brErrors result <> ["No providers available"] }
 processWithProviders _manager config _candidates providerIdx result
-  | providerIdx >= length (bfcProviders config) =
+  | providerIdx >= length (bfcProviders config) = do
+      putStrLn $ "🛑 All providers exhausted | generated: " <> show (brImagesGenerated result)
+             <> " | errors: " <> show (length (brErrors result))
       pure result { brErrors = brErrors result <> ["All providers exhausted"] }
   | brImagesGenerated result >= bfcMaxImages config = do
       putStrLn $ "🎯 Max images reached: " <> show (brImagesGenerated result)
+             <> "/" <> show (bfcMaxImages config)
       pure result
 processWithProviders manager config (candidate : rest) providerIdx result = do
   let provider = bfcProviders config !! providerIdx
       action = if bcNeedsRegeneration candidate then "Regenerating" else "Generating"
-  putStrLn $ "🎨 " <> action <> " image for " <> T.unpack (bcDirId candidate) <> "/" <> T.unpack (bcFilename candidate)
-           <> " with " <> T.unpack (ipcName provider)
+      progress = show (brImagesGenerated result + 1) <> "/" <> show (bfcMaxImages config)
+  putStrLn $ "🎨 [" <> progress <> "] " <> action <> " image for "
+          <> T.unpack (bcDirId candidate) <> "/" <> T.unpack (bcFilename candidate)
+          <> " via " <> T.unpack (ipcName provider)
   genResult <- tryGenerate manager provider candidate (bfcAttachmentsDir config)
   case genResult of
     Right imgResult
@@ -1084,23 +1103,32 @@ processWithProviders manager config (candidate : rest) providerIdx result = do
                 , brModifiedFiles = brModifiedFiles result <> [relativePath]
                 }
           case brImagesGenerated newResult >= bfcMaxImages config of
-            True  -> pure newResult
+            True  -> do
+              putStrLn $ "🎯 Max images reached: " <> show (brImagesGenerated newResult)
+                     <> "/" <> show (bfcMaxImages config)
+              pure newResult
             False -> processWithProviders manager config rest providerIdx newResult
       | otherwise -> do
+          putStrLn $ "⏭️  Skipped: " <> T.unpack (bcDirId candidate) <> "/" <> T.unpack (bcFilename candidate)
           let newResult = result { brFilesSkipped = brFilesSkipped result + 1 }
           processWithProviders manager config rest providerIdx newResult
     Left err
       | isDailyQuotaError err || isQuotaError err || isProviderUnavailableError err -> do
-          putStrLn $ "⚠️ Provider " <> T.unpack (ipcName provider) <> " quota/unavailable: " <> T.unpack err
+          putStrLn $ "⚠️  Quota/unavailable on " <> T.unpack (ipcName provider) <> ": " <> T.unpack err
           let nextIdx = providerIdx + 1
           case nextIdx < length (bfcProviders config) of
             True -> do
               let nextProvider = bfcProviders config !! nextIdx
-              putStrLn $ "🔄 Switching to " <> T.unpack (ipcName nextProvider)
+              putStrLn $ "🔄 Switching to provider " <> show (nextIdx + 1)
+                     <> "/" <> show (length (bfcProviders config))
+                     <> ": " <> T.unpack (ipcName nextProvider)
               processWithProviders manager config (candidate : rest) nextIdx result
-            False -> pure result { brErrors = brErrors result <> [err] }
+            False -> do
+              putStrLn $ "🛑 All " <> show (length (bfcProviders config)) <> " providers exhausted"
+              pure result { brErrors = brErrors result <> [err] }
       | otherwise -> do
-          putStrLn $ "❌ Error: " <> T.unpack err
+          putStrLn $ "❌ Error on " <> T.unpack (bcDirId candidate) <> "/" <> T.unpack (bcFilename candidate)
+                  <> ": " <> T.unpack err
           let newResult = result { brErrors = brErrors result <> [err] }
           processWithProviders manager config rest providerIdx newResult
 

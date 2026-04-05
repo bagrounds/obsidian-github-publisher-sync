@@ -2,7 +2,7 @@
 
 ## 📋 Overview
 
-🎯 The image generation system automatically creates cover images for blog posts across four content series: **reflections**, **ai-blog**, **auto-blog-zero**, and **chickie-loo**.
+🎯 The image generation system automatically creates cover images for published content across **13 content directories**: **reflections**, **ai-blog**, **auto-blog-zero**, **chickie-loo**, **systems-for-public-good**, **articles**, **books**, **bot-chats**, **games**, **products**, **software**, **tools**, and **topics**. Videos, people, and presentations are excluded (videos already use the video embed as a cover image; people are excluded to avoid AI-hallucinated likenesses; presentations are slide collections that benefit from manually chosen images).
 
 🏗️ It operates in two modes:
 1. **Single-post generation** — triggered by individual blog workflows (auto-blog-zero, chickie-loo) immediately after a post is created
@@ -73,7 +73,8 @@
 ### 📦 Batch Backfill (`backfillImages`)
 
 ```
-1. 📁 Scan all directories from BACKFILL_CONTENT_IDS for candidate files
+1. 📁 Scan all directories from IMAGE_BACKFILL_CONTENT_IDS for candidate files
+   - ✅ Accept any `.md` file not in the exclusion list (index.md, AGENTS.md, IDEAS.md)
    - 🚫 Skip future-dated reflections (date > today)
    - 🚫 Skip reflections whose title is still just the bare date (awaiting creative title from reflection-title task at 10 PM Pacific)
 2. 🗓️ Sort ALL candidates by date descending (cross-directory)
@@ -86,7 +87,7 @@
    c. ⏭️ Skip and continue on non-quota errors
    d. 🔗 Update "chain" timestamps for all newer files in same directory
    e. 💤 Proactive rate limit delay between successful generations
-   f. 🎯 Stop if maxImages limit reached (default: 1 per hourly run)
+   f. 🎯 Stop if maxImages limit reached (default: 4 per hourly run)
 ```
 
 ---
@@ -207,23 +208,53 @@ Attempt 4 → fail → propagate error (exhausted retries)
 
 ### 🎯 Cross-Directory Date-Based Ordering
 
-🗓️ All candidates from all `BACKFILL_CONTENT_IDS` directories are collected and sorted by date descending:
+🗓️ All candidates from all `IMAGE_BACKFILL_CONTENT_IDS` directories are collected and sorted by date descending. Date-prefixed blog content (reflections, ai-blog, blog series) is prioritized over library content (books, articles, topics, etc.) which has no date prefix and sorts after all dated entries.
 
 ```
-Example with 5 directories (derived from BACKFILL_CONTENT_IDS):
+Example with dated + library content:
   reflections/2026-03-15.md                → date: 2026-03-15
   ai-blog/2026-03-20-post.md               → date: 2026-03-20
   auto-blog-zero/2026-03-21-x.md           → date: 2026-03-21
-  chickie-loo/2026-03-19-y.md              → date: 2026-03-19
-  systems-for-public-good/2026-03-22-z.md  → date: 2026-03-22
+  books/sapiens.md                          → date: (none)
+  articles/some-article.md                  → date: (none)
 
-Processing order (newest first):
-  1. systems-for-public-good/2026-03-22-z.md  (most recent)
-  2. auto-blog-zero/2026-03-21-x.md
-  3. ai-blog/2026-03-20-post.md
-  4. chickie-loo/2026-03-19-y.md
-  5. reflections/2026-03-15.md                (oldest)
+Processing order (newest first, then undated):
+  1. auto-blog-zero/2026-03-21-x.md   (most recent dated)
+  2. ai-blog/2026-03-20-post.md
+  3. reflections/2026-03-15.md
+  4. books/sapiens.md                  (undated library content)
+  5. articles/some-article.md          (undated library content)
 ```
+
+### 📂 Content Types
+
+| Category | Directories | Date-Prefixed | Notes |
+|----------|-------------|---------------|-------|
+| Blog content | reflections, ai-blog, auto-blog-zero, chickie-loo, systems-for-public-good | ✅ Yes | Prioritized (sorted newest first) |
+| Library content | articles, books, bot-chats, games, products, software, tools, topics | ❌ No | Processed after all dated content |
+| Excluded | videos | N/A | Already use video embed as cover image |
+| Excluded | people | N/A | Avoiding AI-hallucinated likenesses |
+| Excluded | presentations | N/A | Slide collections benefit from manual image selection |
+
+### 📊 Backfill Capacity Analysis (as of 2026-04-05)
+
+🔢 **Current backlog:**
+- Blog content needing images: ~268 files (mostly reflections)
+- Library content needing images: ~1,210 files (mostly books at ~955)
+- **Total: ~1,478 files**
+
+⏱️ **Throughput:** 4 images per hourly run × 24 runs per day = **96 images/day**
+
+📅 **Estimated backfill timeline:** ~1,478 ÷ 96 ≈ **15 days** (~2.2 weeks)
+
+💰 **Free tier quota estimates across providers:**
+- Cloudflare Workers AI: Paid tier (primary provider, fastest)
+- Hugging Face: ~20–50 images/day (free tier, ~$0.10/month equivalent compute)
+- Together AI: ~50–200 images/day (FLUX.1-schnell-Free endpoint, rate-limited)
+- Pollinations.ai: Unlimited but community-supported (no API key, variable reliability)
+- Google Gemini: ~50–100 images/day (free tier rate limits)
+- **Combined free capacity: ~150–350+ images/day** (provider chain fallback maximizes utilization)
+- **At 96 images/day, we are within free tier limits** with headroom for further increases
 
 ### 🔗 Chain Updates
 

@@ -49,7 +49,7 @@ import Automation.BlogSeries
   )
 import Automation.BlogSeriesConfig
   ( BlogSeriesConfig (..)
-  , backfillContentIds
+  , imageBackfillContentIds
   , lookupSeries
   )
 import Automation.DailyReflection (UpdateReflectionResult (..), updateDailyReflection)
@@ -507,15 +507,19 @@ runBackfillImages manager vaultDir = do
       logMsg $ "  🎨 Image providers: " <> T.pack (show (length providers))
       let bfConfig = BackfillConfig
             { bfcRepoRoot = vaultDir
-            , bfcContentDirs = backfillContentIds
+            , bfcContentDirs = imageBackfillContentIds
             , bfcAttachmentsDir = vaultDir </> "attachments"
             , bfcProviders = providers
-            , bfcMaxImages = 1
+            , bfcMaxImages = 4
             }
       result <- backfillImages manager bfConfig
       logMsg $ "  🖼️  Images: " <> T.pack (show (brImagesGenerated result))
+            <> "/" <> T.pack (show (bfcMaxImages bfConfig))
             <> " generated, " <> T.pack (show (brFilesUpdated result))
             <> " files updated, " <> T.pack (show (brFilesSkipped result)) <> " skipped"
+      case brErrors result of
+        [] -> pure ()
+        errs -> logMsg $ "  ⚠️  Errors: " <> T.intercalate "; " errs
       pure (brModifiedFiles result)
 
   -- 2. Update AI blog nav links — operates directly on vault files

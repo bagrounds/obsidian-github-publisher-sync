@@ -392,6 +392,24 @@ tests = testGroup "BlogImage"
       , testCase "rejects IDEAS.md" $
           isPostFile "IDEAS.md" @?= False
       ]
+  , testGroup "shouldHaveImage"
+      [ testCase "accepts dated markdown file" $
+          shouldHaveImage "2024-01-15-my-post.md" @?= True
+      , testCase "accepts non-dated markdown file" $
+          shouldHaveImage "sapiens.md" @?= True
+      , testCase "accepts kebab-case markdown file" $
+          shouldHaveImage "a-brief-history-of-time.md" @?= True
+      , testCase "rejects index.md" $
+          shouldHaveImage "index.md" @?= False
+      , testCase "rejects AGENTS.md" $
+          shouldHaveImage "AGENTS.md" @?= False
+      , testCase "rejects IDEAS.md" $
+          shouldHaveImage "IDEAS.md" @?= False
+      , testCase "rejects non-markdown files" $
+          shouldHaveImage "photo.jpg" @?= False
+      , testCase "rejects empty string" $
+          shouldHaveImage "" @?= False
+      ]
   , testGroup "isDateOnlyTitle"
       [ testCase "returns True when title matches date" $
           isDateOnlyTitle "---\ntitle: 2026-04-04\n---\n# 2026-04-04\nbody" "2026-04-04" @?= True

@@ -6,6 +6,9 @@ title: 🧠🤖📈 Scientists just developed a new AI modeled on the human brai
 URL: https://bagrounds.org/articles/scientists-just-developed-a-new-ai-modeled-on-the-human-brain-its-outperforming-llms-like-chatgpt-at-reasoning-tasks
 Author:
 tags:
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_time: 2026-04-04T00:00:00Z
+force_analyze_links: false
 ---
 [Home](../index.md) > [Articles](./index.md) | [🧠🪜⏱️📈 Hierarchical gradients of multiple timescales in the mammalian forebrain](./hierarchical-gradients-of-multiple-timescales-in-the-mammalian-forebrain.md)  
 # [🧠🤖📈 Scientists just developed a new AI modeled on the human brain — it's outperforming LLMs like ChatGPT at reasoning tasks](https://www.livescience.com/technology/artificial-intelligence/scientists-just-developed-an-ai-modeled-on-the-human-brain-and-its-outperforming-llms-like-chatgpt-at-reasoning-tasks)  
@@ -41,7 +44,7 @@ The ⚖️ HRM presents a compelling alternative to current **large language mod
   
 ### ✨ Creatively Related  
   
-- **The Alignment Problem** by Brian Christian: This book tackles the critical question of ensuring AI's goals align with human values, a vital topic as these models become more capable and integrated into society.  
+- **[⚖️🤖 The Alignment Problem](../books/the-alignment-problem.md)** by Brian Christian: This book tackles the critical question of ensuring AI's goals align with human values, a vital topic as these models become more capable and integrated into society.  
   
 - **[🌊🤖🤔 The Coming Wave: Technology, Power, and the 21st Century's Greatest Dilemma](../books/the-coming-wave-technology-power-and-the-21st-centurys-greatest-dilemma.md)** by Mustafa Suleyman: An insider's look at the immense power and societal risks of AI, this book puts new model developments into a real-world, geopolitical context.  
   

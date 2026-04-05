@@ -6,6 +6,9 @@ URL: https://bagrounds.org/books/the-daily-stoic-366-meditations-on-wisdom-perse
 share: true
 affiliate link: https://amzn.to/4n87C1v
 CTA: ⏳ Cultivate resilience.
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_time: 2026-04-02T00:00:00Z
+force_analyze_links: false
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🧘🏼‍♀️📅 The Daily Stoic: 366 Meditations on Wisdom, Perseverance, and the Art of Living  

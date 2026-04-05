@@ -10,6 +10,9 @@ Channel: The Baby Gear Guy
 tags:
 youtube: https://youtu.be/IdosEYLQRlU
 CTA: 🏃‍♀️ Conquer the path.
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_time: 2026-04-04T00:00:00Z
+force_analyze_links: false
 ---
 [Home](../index.md) > [Videos](./index.md) | [👶🏃🌆 Thule Urban Glide 3](../products/thule-urban-glide-3.md)  
 # 👶🏃‍♀️🏅✅ Thule Urban Glide 3 Full Review | Best Running / Jogging Stroller 2024  

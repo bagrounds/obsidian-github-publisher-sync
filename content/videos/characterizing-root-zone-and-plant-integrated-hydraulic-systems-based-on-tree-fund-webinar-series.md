@@ -9,6 +9,9 @@ Platform:
 Channel: TREE Fund
 tags:
 youtube: https://youtu.be/Xrfuq240mdk
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_time: 2026-04-05T00:00:00Z
+force_analyze_links: false
 ---
 [Home](../index.md) > [Videos](./index.md)  
 # 🔬⬇️🌿🔗💧⚙️💻 Characterizing Root-zone and Plant Integrated Hydraulic Systems Based on... TREE Fund Webinar Series  
@@ -44,11 +47,11 @@ youtube: https://youtu.be/Xrfuq240mdk
   
 ### ↔️ Similar  
 * 📘 Plant Physiological Ecology by Hans Lambers, F. Stuart Chapin III, and Thijs L. Pons explores how plants function and survive in their natural environments.  
-* 📗 The Songs of Trees by David George Haskell examines the biological and environmental networks that sustain individual trees.  
+* 📗 [🌳🎶 The Songs of Trees: Stories from Nature's Great Connectors](../books/the-songs-of-trees-stories-from-natures-great-connectors.md) by David George Haskell examines the biological and environmental networks that sustain individual trees.  
   
 ### 🆚 Contrasting  
 * 📙 Finding the Mother Tree by Suzanne Simard focuses on the social and fungal networks between trees rather than individual hydraulic mechanics.  
-* 📒 The Hidden Life of Trees by Peter Wohlleben presents a more anthropomorphic and community focused view of forest intelligence and communication.  
+* 📒 [🌳🗣️ The Hidden Life of Trees: What They Feel, How They Communicate: Discoveries from a Secret World](../books/the-hidden-life-of-trees-what-they-feel-how-they-communicate-discoveries-from-a-secret-world.md) by Peter Wohlleben presents a more anthropomorphic and community focused view of forest intelligence and communication.  
   
 ### 🎨 Creatively Related  
 * 📕 The Overstory by Richard Powers is a fictional epic that weaves the lives of humans with the slow, mechanical brilliance of trees.  

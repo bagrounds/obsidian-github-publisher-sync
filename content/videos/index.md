@@ -5,10 +5,10 @@ aliases:
 title: 📺 Videos
 URL: https://bagrounds.org/videos
 backlinks: false
-updated: 2026-04-05T07:41:52-07:00
+updated: 2026-04-05T08:19:46-07:00
 ---
 [Home](../index.md)  
-# 📺 Videos (724)  
+# 📺 Videos (725)  
 - [💰🤑🤖💡🚀💲 $0.10/Month Runs My Entire AI Life. I'll Show You How.](./0-10-month-runs-my-entire-ai-life-ill-show-you-how.md)  
 - [📊📈📉📃👁️ 10 Charts to Understand the 900 Page Budget Bill](./10-charts-to-understand-the-900-page-budget-bill.md)  
 - [🤖🔗⬆️✅ 12-Factor Agents: Patterns of reliable LLM applications — Dex Horthy, HumanLayer](./12-factor-agents-patterns-of-reliable-llm-applications-dex-horthy-humanlayer.md)  
@@ -641,6 +641,7 @@ updated: 2026-04-05T07:41:52-07:00
 - [🇺🇦🤝🤥 Ukraine and America’s Credibility Crisis - with Anne Applebaum](./ukraine-and-americas-credibility-crisis-with-anne-applebaum.md)  
 - [🩰🤸‍♀️🧑‍🏫📖 Ultimate Guide To Learning Dance For Beginners | STEEZY.CO](./ultimate-guide-to-learning-dance-for-beginners-steezy-co.md)  
 - [🇺🇸💣🇮🇷⚠️ UN chief says US bombing of Iran marks 'perilous turn' | REUTERS](./un-chief-says-us-bombing-of-iran-marks-perilous-turn-reuters.md)  
+- [🌳🚿🪴 Unit 6: Tree Planting and Care- Root Washing](./unit-6-tree-planting-and-care-root-washing.md)  
 - [❓🪙💡🇺🇸 Unraveling the Mysteries of Modern Monetary Theory with Warren Mosler](./unraveling-the-mysteries-of-modern-monetary-theory-with-warren-mosler.md)  
 - [🌊🏄‍♂️✋🧠 Urge Surfing Demonstration and Explanation by a Therapist | Effectively manage cravings and urges](./urge-surfing-demonstration-and-explanation-by-a-therapist-effectively-manage-cravings-and-urges.md)  
 - [🇺🇸🚫⛑️ USAID closes its doors after six decades](./usaid-closes-its-doors-after-six-decades.md)  

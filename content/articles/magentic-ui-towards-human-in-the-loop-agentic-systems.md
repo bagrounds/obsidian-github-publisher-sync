@@ -6,6 +6,9 @@ title: "🧲🧑‍💻🤖 Magnetic UI: Towards Human In The Loop Agentic Syste
 URL: https://bagrounds.org/articles/magentic-ui-towards-human-in-the-loop-agentic-systems
 Author:
 tags:
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_time: 2026-04-05T00:00:00Z
+force_analyze_links: false
 ---
 [Home](../index.md) > [Articles](./index.md)  
 # [🧲🧑‍💻🤖 Magnetic UI: Towards Human In The Loop Agentic Systems](https://arxiv.org/abs/2507.22358)  

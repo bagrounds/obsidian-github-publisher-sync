@@ -240,12 +240,12 @@ Processing order (newest first, then undated):
 
 🔢 **Current backlog:**
 - Blog content needing images: ~268 files (mostly reflections)
-- Library content needing images: ~1,214 files (mostly books at ~955)
-- **Total: ~1,482 files**
+- Library content needing images: ~1,210 files (mostly books at ~955)
+- **Total: ~1,478 files**
 
 ⏱️ **Throughput:** 4 images per hourly run × 24 runs per day = **96 images/day**
 
-📅 **Estimated backfill timeline:** ~1,482 ÷ 96 ≈ **15.4 days** (~2.2 weeks)
+📅 **Estimated backfill timeline:** ~1,478 ÷ 96 ≈ **15 days** (~2.2 weeks)
 
 💰 **Free tier quota estimates across providers:**
 - Cloudflare Workers AI: Paid tier (primary provider, fastest)

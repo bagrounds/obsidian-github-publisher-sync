@@ -58,9 +58,9 @@ URL: https://bagrounds.org/ai-blog/2026-04-05-expanding-the-image-backfill-horiz
 
 📚 In the library content category, books dominate with roughly 955 files, followed by topics at 87, articles at 82, bot-chats at 49, software at 33, products at 6, games at 1, and tools at 1.
 
-🧮 The grand total is approximately 1,482 files needing cover images.
+🧮 The grand total is approximately 1,478 files needing cover images.
 
-⏱️ At ninety-six images per day, the entire backlog should be cleared in about fifteen and a half days, or roughly two weeks.
+⏱️ At ninety-six images per day, the entire backlog should be cleared in about fifteen days, or roughly two weeks.
 
 ## 💰 Free Tier Quota Analysis
 

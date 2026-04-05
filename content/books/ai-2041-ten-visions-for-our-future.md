@@ -8,6 +8,9 @@ Author:
 tags:
 CTA: 🔭 Foresee what's ahead.
 affiliate link: https://www.amazon.com/dp/B08SFL53HL?tag=bagrounds-20
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_time: 2026-04-05T00:00:00Z
+force_analyze_links: false
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🤖🔮🌍 AI 2041: Ten Visions for Our Future  
@@ -72,18 +75,18 @@ affiliate link: https://www.amazon.com/dp/B08SFL53HL?tag=bagrounds-20
   
 ## 📚 Book Recommendations  
 ### ✨ Similar  
-* 📖 Life 3.0: Being Human in the Age of Artificial Intelligence by Max Tegmark  
+* 📖 [🧬👥💾 Life 3.0: Being Human in the Age of Artificial Intelligence](./life-3-0.md) by Max Tegmark  
 * 📖 Homo Deus: A Brief History of Tomorrow by Yuval Noah Harari  
-* 📖 Superintelligence: Paths, Dangers, Strategies by Nick Bostrom  
+* 📖 [🤖⚠️📈 Superintelligence: Paths, Dangers, Strategies](./superintelligence-paths-dangers-strategies.md) by Nick Bostrom  
   
 ### 🚫 Contrasting  
-* 📖 The Age of Surveillance Capitalism: The Fight for a Human Future at the New Frontier of Power by Shoshana Zuboff  
+* 📖 [👁️‍🗨️💰⛓️👤 The Age of Surveillance Capitalism: The Fight for a Human Future at the New Frontier of Power](./the-age-of-surveillance-capitalism.md) by Shoshana Zuboff  
 * 📖 Technically Wrong: Sexist Apps, Biased Algorithms, and Other Threats of Toxic Tech by Sara Wachter-Boettcher  
 * 📖 The Master Algorithm: How the Quest for the Ultimate Learning Machine Will Remake Our World by Pedro Domingos  
   
 ### 🔗 Related  
 * 📖 The Three-Body Problem by Liu Cixin (for Chinese sci-fi perspective)  
-* 📖 Sapiens: A Brief History of Humankind by Yuval Noah Harari (for broad historical context of humanity)  
+* 📖 [📜🌍⏳ Sapiens: A Brief History of Humankind](./sapiens-a-brief-history-of-humankind.md) by Yuval Noah Harari (for broad historical context of humanity)  
 * 📖 Factfulness: Ten Reasons We're Wrong About the World—and Why Things Are Better Than You Think by Hans Rosling (for data-driven optimism)  
   
 ## 🫵 What Do You Think?  

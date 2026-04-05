@@ -9,6 +9,9 @@ Platform:
 Channel: Trees Virginia
 tags:
 youtube: https://youtu.be/0WLl8Mmk46g
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_time: 2026-04-05T00:00:00Z
+force_analyze_links: false
 ---
 [Home](../index.md) > [Videos](./index.md)  
 # 🌍🌱🛠️🌳 Unit 6: Tree Planting and Care- Planting Preparation  
@@ -52,7 +55,7 @@ youtube: https://youtu.be/0WLl8Mmk46g
 * 📖 The Homeowner's Complete Tree-Control Handbook by Richard V. Westcott covers essential maintenance tasks from planting to pruning for residential landscapes.  
   
 ### 🆚 Contrasting  
-* 📖 The Hidden Life of Trees by Peter Wohlleben explores the social and biological networks of forest trees rather than individual horticultural care.  
+* 📖 [🌳🗣️ The Hidden Life of Trees: What They Feel, How They Communicate: Discoveries from a Secret World](../books/the-hidden-life-of-trees-what-they-feel-how-they-communicate-discoveries-from-a-secret-world.md) by Peter Wohlleben explores the social and biological networks of forest trees rather than individual horticultural care.  
 * 📖 Finding the Mother Tree by Suzanne Simard details the scientific discovery of how trees communicate and share nutrients through fungal networks in old-growth forests.  
   
 ### 🎨 Creatively Related  

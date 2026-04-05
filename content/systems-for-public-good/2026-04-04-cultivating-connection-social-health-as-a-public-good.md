@@ -13,7 +13,7 @@ link_analysis_time: 2026-04-04T00:00:00Z
 force_analyze_links: false
 updated: 2026-04-04T23:18:35
 ---
-[Home](../index.md) > [🏛️ Systems for Public Good](./index.md) | [⏮️](./2026-04-03-connecting-every-corner-bridging-the-digital-divide-s-last-mile.md)  
+[Home](../index.md) > [🏛️ Systems for Public Good](./index.md) | [⏮️](./2026-04-03-connecting-every-corner-bridging-the-digital-divide-s-last-mile.md) [⏭️](./2026-04-05-mapping-our-shared-journey-a-week-of-foundational-freedoms.md)  
 # 2026-04-04 | 🏛️ 🤝 Cultivating Connection: Social Health as a Public Good 🏛️  
 ![systems-for-public-good-2026-04-04-cultivating-connection-social-health-as-a-public-good](../systems-for-public-good-2026-04-04-cultivating-connection-social-health-as-a-public-good.jpg)  
   

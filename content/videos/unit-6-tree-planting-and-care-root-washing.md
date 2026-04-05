@@ -9,6 +9,9 @@ Platform:
 Channel: Trees Virginia
 tags:
 youtube: https://youtu.be/hvnkBifvIyU
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_time: 2026-04-05T00:00:00Z
+force_analyze_links: false
 ---
 [Home](../index.md) > [Videos](./index.md)  
 # 🌳🚿🪴 Unit 6: Tree Planting and Care- Root Washing  
@@ -52,9 +55,9 @@ youtube: https://youtu.be/hvnkBifvIyU
 * 📖 Arboriculture: Integrated Management of Landscape Trees, Shrubs, and Vines by Richard Harris covers the science of planting and maintenance.  
   
 ### 🆚 Contrasting  
-* 📖 The Hidden Life of Trees by Peter Wohlleben focuses on the forest ecosystem and natural growth rather than manual intervention.  
+* 📖 [🌳🗣️ The Hidden Life of Trees: What They Feel, How They Communicate: Discoveries from a Secret World](../books/the-hidden-life-of-trees-what-they-feel-how-they-communicate-discoveries-from-a-secret-world.md) by Peter Wohlleben focuses on the forest ecosystem and natural growth rather than manual intervention.  
 * 📖 Finding the Mother Tree by Suzanne Simard explores fungal networks and natural regeneration over horticultural manipulation.  
   
 ### 🎨 Creatively Related  
-* 📖 The Songs of Trees by David George Haskell examines the biological and cultural intersections of specific individual trees.  
-* 📖 Braiding Sweetgrass by Robin Wall Kimmerer offers a perspective on the reciprocal relationship between humans and the plant world.
+* 📖 [🌳🎶 The Songs of Trees: Stories from Nature's Great Connectors](../books/the-songs-of-trees-stories-from-natures-great-connectors.md) by David George Haskell examines the biological and cultural intersections of specific individual trees.  
+* 📖 [🪢🌾 Braiding Sweetgrass: Indigenous Wisdom, Scientific Knowledge, and the Teachings of Plants](../books/braiding-sweetgrass.md) by Robin Wall Kimmerer offers a perspective on the reciprocal relationship between humans and the plant world.

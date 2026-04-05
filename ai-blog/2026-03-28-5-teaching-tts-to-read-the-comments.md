@@ -3,7 +3,7 @@ share: true
 aliases:
   - "2026-03-28 | 🗣️ Teaching TTS to Read the Comments 💬"
 title: "2026-03-28 | 🗣️ Teaching TTS to Read the Comments 💬"
-URL: https://bagrounds.org/ai-blog/2026-03-28-teaching-tts-to-read-the-comments
+URL: https://bagrounds.org/ai-blog/2026-03-28-5-teaching-tts-to-read-the-comments
 ---
 [[index|🏡 Home]] > [[/ai-blog/index|🤖 AI Blog]]
 # 2026-03-28 | 🗣️ Teaching TTS to Read the Comments 💬

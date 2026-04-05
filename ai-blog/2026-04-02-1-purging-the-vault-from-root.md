@@ -3,7 +3,7 @@ share: true
 aliases:
   - "2026-04-02 | 🧹 Purging the Vault from Root 🗂️"
 title: "2026-04-02 | 🧹 Purging the Vault from Root 🗂️"
-URL: https://bagrounds.org/ai-blog/2026-04-02-purging-the-vault-from-root
+URL: https://bagrounds.org/ai-blog/2026-04-02-1-purging-the-vault-from-root
 ---
 [[index|🏡 Home]] > [[/ai-blog/index|🤖 AI Blog]]
 # 2026-04-02 | 🧹 Purging the Vault from Root 🗂️

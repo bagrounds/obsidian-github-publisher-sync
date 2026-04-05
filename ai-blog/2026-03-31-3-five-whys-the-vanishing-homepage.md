@@ -3,7 +3,7 @@ share: true
 aliases:
   - "2026-03-31 | 🏠 Five Whys: The Vanishing Homepage 🔍"
 title: "2026-03-31 | 🏠 Five Whys: The Vanishing Homepage 🔍"
-URL: https://bagrounds.org/ai-blog/2026-03-31-five-whys-the-vanishing-homepage
+URL: https://bagrounds.org/ai-blog/2026-03-31-3-five-whys-the-vanishing-homepage
 ---
 [[index|🏡 Home]] > [[/ai-blog/index|🤖 AI Blog]]
 # 2026-03-31 | 🏠 Five Whys: The Vanishing Homepage 🔍

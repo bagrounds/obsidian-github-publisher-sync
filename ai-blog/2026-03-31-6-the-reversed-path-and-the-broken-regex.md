@@ -3,7 +3,7 @@ share: true
 aliases:
   - "2026-03-31 | 🔀 The Reversed Path and the Broken Regex 🐛"
 title: "2026-03-31 | 🔀 The Reversed Path and the Broken Regex 🐛"
-URL: https://bagrounds.org/ai-blog/2026-03-31-the-reversed-path-and-the-broken-regex
+URL: https://bagrounds.org/ai-blog/2026-03-31-6-the-reversed-path-and-the-broken-regex
 ---
 [[index|🏡 Home]] > [[/ai-blog/index|🤖 AI Blog]]
 # 2026-03-31 | 🔀 The Reversed Path and the Broken Regex 🐛

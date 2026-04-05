@@ -3,7 +3,7 @@ share: true
 aliases:
   - "2026-04-05 | 🖼️ Expanding the Image Backfill Horizon 🌅"
 title: "2026-04-05 | 🖼️ Expanding the Image Backfill Horizon 🌅"
-URL: https://bagrounds.org/ai-blog/2026-04-05-expanding-the-image-backfill-horizon
+URL: https://bagrounds.org/ai-blog/2026-04-05-1-expanding-the-image-backfill-horizon
 ---
 [[index|🏡 Home]] > [[/ai-blog/index|🤖 AI Blog]]
 # 2026-04-05 | 🖼️ Expanding the Image Backfill Horizon 🌅

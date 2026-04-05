@@ -138,7 +138,7 @@ export function isPostableContent(note: ContentNote): boolean {
 share: true
 no_social: true
 title: 🤖 Auto Blog Zero — AGENTS.md
-URL: https://bagrounds.org/auto-blog-zero/AGENTS
+URL: https://bagrounds.org/ai-blog/2026-03-19-teaching-an-ai-blog-to-think-deeper
 Author: "[[auto-blog-zero]]"
 tags:
 ---

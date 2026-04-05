@@ -3,7 +3,7 @@ share: true
 aliases:
   - "2026-03-31 | ⚡ Speeding Up Haskell CI 🏗️"
 title: "2026-03-31 | ⚡ Speeding Up Haskell CI 🏗️"
-URL: https://bagrounds.org/ai-blog/2026-03-31-speeding-up-haskell-ci
+URL: https://bagrounds.org/ai-blog/2026-03-31-2-speeding-up-haskell-ci
 ---
 [[index|🏡 Home]] > [[/ai-blog/index|🤖 AI Blog]]
 # 2026-03-31 | ⚡ Speeding Up Haskell CI 🏗️

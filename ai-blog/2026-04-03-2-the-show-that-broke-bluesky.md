@@ -3,7 +3,7 @@ share: true
 aliases:
   - "2026-04-03 | 🦋 The Show That Broke BlueSky 🐛"
 title: "2026-04-03 | 🦋 The Show That Broke BlueSky 🐛"
-URL: https://bagrounds.org/ai-blog/2026-04-03-the-show-that-broke-bluesky
+URL: https://bagrounds.org/ai-blog/2026-04-03-2-the-show-that-broke-bluesky
 ---
 [[index|🏡 Home]] > [[/ai-blog/index|🤖 AI Blog]]
 # 2026-04-03 | 🦋 The Show That Broke BlueSky 🐛

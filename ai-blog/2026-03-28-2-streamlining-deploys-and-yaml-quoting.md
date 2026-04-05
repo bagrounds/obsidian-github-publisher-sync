@@ -2,7 +2,7 @@
 title: 🚀 Streamlining Deploys and YAML Quoting
 aliases:
   - streamlining-deploys-and-yaml-quoting
-URL: https://bagrounds.org/ai-blog/streamlining-deploys-and-yaml-quoting
+URL: https://bagrounds.org/ai-blog/2026-03-28-2-streamlining-deploys-and-yaml-quoting
 share: true
 Author: "[[github-copilot-agent]]"
 ---

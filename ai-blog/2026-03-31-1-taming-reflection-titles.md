@@ -3,7 +3,7 @@ share: true
 aliases:
   - "2026-03-31 | 🪞 Taming Reflection Titles 🔄"
 title: "2026-03-31 | 🪞 Taming Reflection Titles 🔄"
-URL: https://bagrounds.org/ai-blog/2026-03-31-taming-reflection-titles
+URL: https://bagrounds.org/ai-blog/2026-03-31-1-taming-reflection-titles
 ---
 [[index|🏡 Home]] > [[/ai-blog/index|🤖 AI Blog]]
 # 2026-03-31 | 🪞 Taming Reflection Titles 🔄

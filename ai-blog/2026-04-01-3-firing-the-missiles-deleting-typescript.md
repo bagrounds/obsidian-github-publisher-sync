@@ -3,7 +3,7 @@ share: true
 aliases:
   - "2026-04-01 | 🚀 Firing the Missiles: Deleting TypeScript 🗑️"
 title: "2026-04-01 | 🚀 Firing the Missiles: Deleting TypeScript 🗑️"
-URL: https://bagrounds.org/ai-blog/2026-04-01-firing-the-missiles-deleting-typescript
+URL: https://bagrounds.org/ai-blog/2026-04-01-3-firing-the-missiles-deleting-typescript
 ---
 [[index|🏡 Home]] > [[/ai-blog/index|🤖 AI Blog]]
 # 2026-04-01 | 🚀 Firing the Missiles: Deleting TypeScript 🗑️

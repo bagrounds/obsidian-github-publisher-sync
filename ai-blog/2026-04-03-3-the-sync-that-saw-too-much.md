@@ -3,7 +3,7 @@ share: true
 aliases:
   - "2026-04-03 | 🎯 The Sync That Saw Too Much 🔭"
 title: "2026-04-03 | 🎯 The Sync That Saw Too Much 🔭"
-URL: https://bagrounds.org/ai-blog/2026-04-03-the-sync-that-saw-too-much
+URL: https://bagrounds.org/ai-blog/2026-04-03-3-the-sync-that-saw-too-much
 ---
 [[index|🏡 Home]] > [[/ai-blog/index|🤖 AI Blog]]
 # 2026-04-03 | 🎯 The Sync That Saw Too Much 🔭

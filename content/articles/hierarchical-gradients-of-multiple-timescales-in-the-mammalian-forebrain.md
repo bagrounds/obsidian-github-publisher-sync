@@ -6,6 +6,9 @@ title: 🧠🪜⏱️📈 Hierarchical gradients of multiple timescales in the m
 URL: https://bagrounds.org/articles/hierarchical-gradients-of-multiple-timescales-in-the-mammalian-forebrain
 Author:
 tags:
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_time: 2026-04-04T00:00:00Z
+force_analyze_links: false
 ---
 [Home](../index.md) > [Articles](./index.md)  
 # [🧠🪜⏱️📈 Hierarchical gradients of multiple timescales in the mammalian forebrain](https://pmc.ncbi.nlm.nih.gov/articles/PMC11665873)  

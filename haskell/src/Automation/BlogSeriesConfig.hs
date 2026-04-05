@@ -81,7 +81,7 @@ backfillContentIds = extraContentDirs <> fmap bscId blogSeries
 libraryContentDirs :: [Text]
 libraryContentDirs =
   [ "articles", "books", "bot-chats", "games"
-  , "presentations", "products", "software", "tools", "topics"
+  , "products", "software", "tools", "topics"
   ]
 
 imageBackfillContentIds :: [Text]

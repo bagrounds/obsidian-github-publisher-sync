@@ -2,7 +2,7 @@
 
 ## 📋 Overview
 
-🎯 The image generation system automatically creates cover images for published content across **14 content directories**: **reflections**, **ai-blog**, **auto-blog-zero**, **chickie-loo**, **systems-for-public-good**, **articles**, **books**, **bot-chats**, **games**, **presentations**, **products**, **software**, **tools**, and **topics**. Videos and people are excluded (videos already use the video embed as a cover image; people are excluded to avoid AI-hallucinated likenesses).
+🎯 The image generation system automatically creates cover images for published content across **13 content directories**: **reflections**, **ai-blog**, **auto-blog-zero**, **chickie-loo**, **systems-for-public-good**, **articles**, **books**, **bot-chats**, **games**, **products**, **software**, **tools**, and **topics**. Videos, people, and presentations are excluded (videos already use the video embed as a cover image; people are excluded to avoid AI-hallucinated likenesses; presentations are slide collections that benefit from manually chosen images).
 
 🏗️ It operates in two modes:
 1. **Single-post generation** — triggered by individual blog workflows (auto-blog-zero, chickie-loo) immediately after a post is created
@@ -87,7 +87,7 @@
    c. ⏭️ Skip and continue on non-quota errors
    d. 🔗 Update "chain" timestamps for all newer files in same directory
    e. 💤 Proactive rate limit delay between successful generations
-   f. 🎯 Stop if maxImages limit reached (default: 2 per hourly run)
+   f. 🎯 Stop if maxImages limit reached (default: 4 per hourly run)
 ```
 
 ---
@@ -231,20 +231,21 @@ Processing order (newest first, then undated):
 | Category | Directories | Date-Prefixed | Notes |
 |----------|-------------|---------------|-------|
 | Blog content | reflections, ai-blog, auto-blog-zero, chickie-loo, systems-for-public-good | ✅ Yes | Prioritized (sorted newest first) |
-| Library content | articles, books, bot-chats, games, presentations, products, software, tools, topics | ❌ No | Processed after all dated content |
+| Library content | articles, books, bot-chats, games, products, software, tools, topics | ❌ No | Processed after all dated content |
 | Excluded | videos | N/A | Already use video embed as cover image |
 | Excluded | people | N/A | Avoiding AI-hallucinated likenesses |
+| Excluded | presentations | N/A | Slide collections benefit from manual image selection |
 
 ### 📊 Backfill Capacity Analysis (as of 2026-04-05)
 
 🔢 **Current backlog:**
 - Blog content needing images: ~268 files (mostly reflections)
-- Library content needing images: ~1,216 files (mostly books at ~955)
-- **Total: ~1,484 files**
+- Library content needing images: ~1,214 files (mostly books at ~955)
+- **Total: ~1,482 files**
 
-⏱️ **Throughput:** 2 images per hourly run × 24 runs per day = **48 images/day**
+⏱️ **Throughput:** 4 images per hourly run × 24 runs per day = **96 images/day**
 
-📅 **Estimated backfill timeline:** ~1,484 ÷ 48 ≈ **31 days** (~4.4 weeks)
+📅 **Estimated backfill timeline:** ~1,482 ÷ 96 ≈ **15.4 days** (~2.2 weeks)
 
 💰 **Free tier quota estimates across providers:**
 - Cloudflare Workers AI: Paid tier (primary provider, fastest)
@@ -253,7 +254,7 @@ Processing order (newest first, then undated):
 - Pollinations.ai: Unlimited but community-supported (no API key, variable reliability)
 - Google Gemini: ~50–100 images/day (free tier rate limits)
 - **Combined free capacity: ~150–350+ images/day** (provider chain fallback maximizes utilization)
-- **At 48 images/day, we are well within free tier limits** and could increase further if desired
+- **At 96 images/day, we are within free tier limits** with headroom for further increases
 
 ### 🔗 Chain Updates
 

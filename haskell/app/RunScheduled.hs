@@ -510,12 +510,16 @@ runBackfillImages manager vaultDir = do
             , bfcContentDirs = imageBackfillContentIds
             , bfcAttachmentsDir = vaultDir </> "attachments"
             , bfcProviders = providers
-            , bfcMaxImages = 2
+            , bfcMaxImages = 4
             }
       result <- backfillImages manager bfConfig
       logMsg $ "  🖼️  Images: " <> T.pack (show (brImagesGenerated result))
+            <> "/" <> T.pack (show (bfcMaxImages bfConfig))
             <> " generated, " <> T.pack (show (brFilesUpdated result))
             <> " files updated, " <> T.pack (show (brFilesSkipped result)) <> " skipped"
+      case brErrors result of
+        [] -> pure ()
+        errs -> logMsg $ "  ⚠️  Errors: " <> T.intercalate "; " errs
       pure (brModifiedFiles result)
 
   -- 2. Update AI blog nav links — operates directly on vault files

@@ -392,23 +392,23 @@ tests = testGroup "BlogImage"
       , testCase "rejects IDEAS.md" $
           isPostFile "IDEAS.md" @?= False
       ]
-  , testGroup "isContentFile"
+  , testGroup "shouldHaveImage"
       [ testCase "accepts dated markdown file" $
-          isContentFile "2024-01-15-my-post.md" @?= True
+          shouldHaveImage "2024-01-15-my-post.md" @?= True
       , testCase "accepts non-dated markdown file" $
-          isContentFile "sapiens.md" @?= True
+          shouldHaveImage "sapiens.md" @?= True
       , testCase "accepts kebab-case markdown file" $
-          isContentFile "a-brief-history-of-time.md" @?= True
+          shouldHaveImage "a-brief-history-of-time.md" @?= True
       , testCase "rejects index.md" $
-          isContentFile "index.md" @?= False
+          shouldHaveImage "index.md" @?= False
       , testCase "rejects AGENTS.md" $
-          isContentFile "AGENTS.md" @?= False
+          shouldHaveImage "AGENTS.md" @?= False
       , testCase "rejects IDEAS.md" $
-          isContentFile "IDEAS.md" @?= False
+          shouldHaveImage "IDEAS.md" @?= False
       , testCase "rejects non-markdown files" $
-          isContentFile "photo.jpg" @?= False
+          shouldHaveImage "photo.jpg" @?= False
       , testCase "rejects empty string" $
-          isContentFile "" @?= False
+          shouldHaveImage "" @?= False
       ]
   , testGroup "isDateOnlyTitle"
       [ testCase "returns True when title matches date" $

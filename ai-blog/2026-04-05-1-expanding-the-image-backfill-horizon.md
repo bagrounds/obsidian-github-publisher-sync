@@ -18,23 +18,37 @@ URL: https://bagrounds.org/ai-blog/2026-04-05-expanding-the-image-backfill-horiz
 
 ## 🔧 What Changed
 
-### ⬆️ Doubled the Rate
+### ⬆️ Quadrupled the Rate
 
 🎛️ The image backfill task runs every hour, around the clock, and previously generated one image per run.
 
-📈 We bumped that to two images per run, taking us from twenty-four images per day to forty-eight.
+📈 We bumped that to four images per run, taking us from twenty-four images per day to ninety-six.
 
-### 📂 Nine New Content Types
+### 📂 Eight New Content Types
 
-🆕 Nine library content directories are now eligible for cover image generation: articles, books, bot-chats, games, presentations, products, software, tools, and topics.
+🆕 Eight library content directories are now eligible for cover image generation: articles, books, bot-chats, games, products, software, tools, and topics.
 
-🚫 Two content types remain excluded for good reasons. Videos already use the video embed itself as a visual cover, and people are excluded because we do not want AI hallucinating likenesses of real humans.
+🚫 Three content types remain excluded for good reasons. Videos already use the video embed itself as a visual cover, people are excluded because we do not want AI hallucinating likenesses of real humans, and presentations are collections of slides that may benefit from manually chosen images.
 
-### 🧩 A New File Predicate
+### 🧩 A Domain-Specific File Predicate
 
 🔀 The old scanning logic required every eligible file to have a date prefix in the format year-month-day. That works great for blog posts and reflections, but library content like books and articles use descriptive filenames instead.
 
-✨ We introduced a new predicate called isContentFile that accepts any markdown file not on the exclusion list, regardless of whether it has a date prefix. Dated blog content still gets sorted to the front of the processing queue, so newer posts continue to receive priority treatment.
+✨ We introduced a new predicate called shouldHaveImage that accepts any markdown file not on the exclusion list, regardless of whether it has a date prefix. Dated blog content still gets sorted to the front of the processing queue, so newer posts continue to receive priority treatment.
+
+🛡️ An important safety guard remains in place: today's daily reflection is never eligible for a cover image until it receives a creative title, which happens around 10 PM Pacific. The checkCandidate function skips any reflection whose title is still the bare date.
+
+### 📊 Enhanced Logging
+
+🔍 We improved the logging throughout the image generation pipeline to give clear, data-centric visibility into what is happening at each step.
+
+📈 Progress messages now show the current image count relative to the session maximum, like one of four or three of four, so you can see exactly how far along each run is.
+
+⚠️ Quota exhaustion and provider switching events include the provider index and total count, making it easy to understand how the fallback chain is being utilized.
+
+🛑 Terminal conditions like all providers exhausted or no more candidates now log a summary of generated, skipped, and error counts.
+
+❌ Error messages include the specific file that failed, not just the error text, making it straightforward to diagnose issues.
 
 ## 📊 By the Numbers
 
@@ -42,11 +56,11 @@ URL: https://bagrounds.org/ai-blog/2026-04-05-expanding-the-image-backfill-horiz
 
 📝 In the blog content category, reflections account for about 264 files needing images, ai-blog has about 4, and the three blog series are fully covered with zero remaining.
 
-📚 In the library content category, books dominate with roughly 955 files, followed by topics at 87, articles at 82, bot-chats at 49, software at 33, products at 6, presentations at 2, games at 1, and tools at 1.
+📚 In the library content category, books dominate with roughly 955 files, followed by topics at 87, articles at 82, bot-chats at 49, software at 33, products at 6, games at 1, and tools at 1.
 
-🧮 The grand total is approximately 1,484 files needing cover images.
+🧮 The grand total is approximately 1,482 files needing cover images.
 
-⏱️ At forty-eight images per day, the entire backlog should be cleared in about thirty-one days, or roughly four and a half weeks.
+⏱️ At ninety-six images per day, the entire backlog should be cleared in about fifteen and a half days, or roughly two weeks.
 
 ## 💰 Free Tier Quota Analysis
 
@@ -60,7 +74,7 @@ URL: https://bagrounds.org/ai-blog/2026-04-05-expanding-the-image-backfill-horiz
 
 🧠 Google Gemini has a free tier that supports roughly fifty to one hundred image generation requests per day.
 
-📊 Combined across all providers, the free capacity is estimated at 150 to 350 or more images per day. At our current rate of forty-eight images per day, we are comfortably within free tier limits and have significant headroom to increase further if desired.
+📊 Combined across all providers, the free capacity is estimated at 150 to 350 or more images per day. At our current rate of ninety-six images per day, we are comfortably within free tier limits and have headroom to increase further if desired.
 
 ## 📝 Logging Guidelines
 
@@ -68,7 +82,7 @@ URL: https://bagrounds.org/ai-blog/2026-04-05-expanding-the-image-backfill-horiz
 
 ## 🏁 Summary
 
-🎉 This change triples the scope of the image backfill system from five content directories to fourteen, doubles the generation rate, and sets us on track to have every piece of published content wearing a unique cover image within about a month.
+🎉 This change expands the scope of the image backfill system from five content directories to thirteen, quadruples the generation rate, adds detailed logging for quota and rate-limit observability, and sets us on track to have every piece of published content wearing a unique cover image within about two weeks.
 
 ## 📚 Book Recommendations
 

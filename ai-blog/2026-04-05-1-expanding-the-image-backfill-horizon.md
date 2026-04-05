@@ -14,7 +14,7 @@ URL: https://bagrounds.org/ai-blog/2026-04-05-expanding-the-image-backfill-horiz
 
 📚 Meanwhile, nearly a thousand books, dozens of articles, software projects, topics, and more sat quietly in the library without any visual identity.
 
-🚀 Today we doubled the throughput and expanded the reach of the image generation pipeline to cover nearly all published content types.
+🚀 Today we quadrupled the throughput and expanded the reach of the image generation pipeline to cover nearly all published content types.
 
 ## 🔧 What Changed
 

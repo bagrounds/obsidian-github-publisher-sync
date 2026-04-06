@@ -6,6 +6,9 @@ URL: https://bagrounds.org/books/laws-of-ux-using-psychology-to-design-better-pr
 share: true
 affiliate link: https://amzn.to/3HetfOr
 CTA: 🧠 Apply user insights.
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_time: 2026-04-05T00:00:00Z
+force_analyze_links: false
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🧠📐 Laws of UX: Using Psychology to Design Better Products & Services  

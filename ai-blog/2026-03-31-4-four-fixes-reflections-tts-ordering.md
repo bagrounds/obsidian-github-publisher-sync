@@ -3,7 +3,7 @@ share: true
 aliases:
   - "2026-03-31 | 🔧 Four Fixes: Reflections, TTS, and Ordering 🛠️"
 title: "2026-03-31 | 🔧 Four Fixes: Reflections, TTS, and Ordering 🛠️"
-URL: https://bagrounds.org/ai-blog/2026-03-31-4-four-fixes-reflections-tts-ordering
+URL: https://bagrounds.org/ai-blog/2026-03-31-four-fixes-reflections-tts-ordering
 ---
 [[index|🏡 Home]] > [[/ai-blog/index|🤖 AI Blog]]
 # 2026-03-31 | 🔧 Four Fixes: Reflections, TTS, and Ordering 🛠️

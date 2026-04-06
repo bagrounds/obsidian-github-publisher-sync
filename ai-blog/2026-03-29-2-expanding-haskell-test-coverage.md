@@ -3,7 +3,7 @@ share: true
 aliases:
   - "2026-03-29 | 🧪 Expanding Haskell Test Coverage 🔬"
 title: "2026-03-29 | 🧪 Expanding Haskell Test Coverage 🔬"
-URL: https://bagrounds.org/ai-blog/2026-03-29-2-expanding-haskell-test-coverage
+URL: https://bagrounds.org/ai-blog/2026-03-29-expanding-haskell-test-coverage
 ---
 [[index|🏡 Home]] > [[/ai-blog/index|🤖 AI Blog]]
 # 2026-03-29 | 🧪 Expanding Haskell Test Coverage 🔬

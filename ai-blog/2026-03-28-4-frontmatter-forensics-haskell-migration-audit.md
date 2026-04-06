@@ -3,7 +3,7 @@ share: true
 aliases:
   - "2026-03-28 | 🔍 Frontmatter Forensics: Auditing the Haskell Migration 🧬"
 title: "2026-03-28 | 🔍 Frontmatter Forensics: Auditing the Haskell Migration 🧬"
-URL: https://bagrounds.org/ai-blog/2026-03-28-4-frontmatter-forensics-haskell-migration-audit
+URL: https://bagrounds.org/ai-blog/2026-03-28-frontmatter-forensics-haskell-migration-audit
 ---
 [[index|🏡 Home]] > [[/ai-blog/index|🤖 AI Blog]]
 # 2026-03-28 | 🔍 Frontmatter Forensics: Auditing the Haskell Migration 🧬

@@ -3,7 +3,7 @@ share: true
 aliases:
   - "2026-03-30 | 🔗 Using the Right Alias in Wikilinks 🏷️"
 title: "2026-03-30 | 🔗 Using the Right Alias in Wikilinks 🏷️"
-URL: https://bagrounds.org/ai-blog/2026-03-30-2-wikilink-alias-fix
+URL: https://bagrounds.org/ai-blog/2026-03-30-wikilink-alias-fix
 ---
 [[index|🏡 Home]] > [[/ai-blog/index|🤖 AI Blog]]
 # 2026-03-30 | 🔗 Using the Right Alias in Wikilinks 🏷️

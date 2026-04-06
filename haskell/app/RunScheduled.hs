@@ -19,6 +19,7 @@ import System.FilePath ((</>), dropExtension, takeExtension)
 import System.IO (hSetBuffering, stdout, stderr, BufferMode(..))
 
 import Automation.AiBlogLinks (NavLinkResult (..), aiBlogConfig, ensureAllNavLinks, buildReflectionLinks)
+import Automation.Frontmatter (parseFrontmatter)
 import Automation.AiFiction
   ( FictionConfig (..)
   , FictionResult (..)
@@ -230,7 +231,7 @@ syncFileToVault localPath vaultRelPath vaultDir = do
     takeDirectory = reverse . dropWhile (/= '/') . reverse
 
 -- ---------------------------------------------------------------------------
--- syncNewAiBlogPosts (copy-if-missing: only sync genuinely new files)
+-- syncNewAiBlogPosts (copy-if-missing with title and date-sequence dedup)
 -- ---------------------------------------------------------------------------
 
 syncNewAiBlogPosts :: FilePath -> FilePath -> IO Int
@@ -240,22 +241,84 @@ syncNewAiBlogPosts repoDir vaultDir = do
     False -> pure 0
     True -> do
       createDirectoryIfMissing True vaultDir
-      entries <- listDirectory repoDir
-      let mdFiles = filter isAiBlogPost entries
-      counts <- traverse (syncIfMissing' repoDir vaultDir) mdFiles
+      -- Build index of vault files: filenames and titles
+      vaultEntries <- listDirectory vaultDir
+      let vaultMdFiles = filter isAiBlogPost vaultEntries
+      vaultIndex <- traverse (extractTitle vaultDir) vaultMdFiles
+      let vaultFilenames = fmap (T.pack . fst) vaultIndex
+          vaultTitles = fmap snd vaultIndex
+      -- Check each repo file against vault index
+      repoEntries <- listDirectory repoDir
+      let repoMdFiles = filter isAiBlogPost repoEntries
+      counts <- traverse (syncIfNew repoDir vaultDir vaultFilenames vaultTitles) repoMdFiles
       pure (sum counts)
   where
     isAiBlogPost f = takeExtension f == ".md" && f /= "index.md" && f /= "AGENTS.md"
-    syncIfMissing' srcDir dstDir filename = do
-      let dst = dstDir </> filename
-      exists <- doesFileExist dst
-      case exists of
-        True  -> pure 0
-        False -> do
+
+extractTitle :: FilePath -> FilePath -> IO (FilePath, Text)
+extractTitle dir filename = do
+  content <- TIO.readFile (dir </> filename)
+  let (fm, _) = parseFrontmatter content
+      title = Map.findWithDefault "" "title" fm
+  pure (filename, title)
+
+syncIfNew :: FilePath -> FilePath -> [Text] -> [Text] -> FilePath -> IO Int
+syncIfNew srcDir dstDir vaultFilenames vaultTitles filename = do
+  let fnameText = T.pack filename
+  case fnameText `elem` vaultFilenames of
+    True -> pure 0
+    False -> do
+      -- File not in vault by name — check if vault has file with same date-sequence prefix
+      let dateSeqPrefix = extractDateSeqPrefix fnameText
+      case dateSeqPrefix >>= (\p -> findMatchingPrefix p vaultFilenames) of
+        Just matchedFile -> do
+          logMsg $ "  ⏭️  Skipping " <> fnameText <> " (vault has " <> matchedFile <> " with same date-sequence prefix)"
+          pure 0
+        Nothing -> do
+          -- Check title similarity
           content <- TIO.readFile (srcDir </> filename)
-          TIO.writeFile dst content
-          logMsg $ "  📄 New post → vault: " <> T.pack filename
-          pure 1
+          let (fm, _) = parseFrontmatter content
+              repoTitle = Map.findWithDefault "" "title" fm
+          case findSimilarTitle repoTitle vaultTitles of
+            Just vaultTitle -> do
+              logMsg $ "  ⏭️  Skipping " <> fnameText <> " (similar title in vault: " <> vaultTitle <> ")"
+              pure 0
+            Nothing -> do
+              TIO.writeFile (dstDir </> filename) content
+              logMsg $ "  📄 New post → vault: " <> fnameText
+              pure 1
+
+-- | Extract date-sequence prefix like "2026-03-27-1-" from a filename.
+--   Returns Nothing for filenames without a sequence number.
+extractDateSeqPrefix :: Text -> Maybe Text
+extractDateSeqPrefix fname =
+  -- Pattern: YYYY-MM-DD-N- where N is one or more digits
+  let parts = T.splitOn "-" fname
+  in case parts of
+    (y : m : d : n : _)
+      | T.length y == 4 && T.all isDigit y
+      , T.length m == 2 && T.all isDigit m
+      , T.length d == 2 && T.all isDigit d
+      , not (T.null n) && T.all isDigit n
+        -> Just (y <> "-" <> m <> "-" <> d <> "-" <> n <> "-")
+    _ -> Nothing
+
+findMatchingPrefix :: Text -> [Text] -> Maybe Text
+findMatchingPrefix prefix = safeHead . filter (T.isPrefixOf prefix)
+  where
+    safeHead (x : _) = Just x
+    safeHead []      = Nothing
+
+findSimilarTitle :: Text -> [Text] -> Maybe Text
+findSimilarTitle repoTitle vaultTitles =
+  case T.null repoTitle of
+    True  -> Nothing
+    False ->
+      let normalizedRepo = T.toCaseFold repoTitle
+      in safeHead (filter (\vt -> not (T.null vt) && T.toCaseFold vt == normalizedRepo) vaultTitles)
+  where
+    safeHead (x : _) = Just x
+    safeHead []      = Nothing
 
 -- ---------------------------------------------------------------------------
 -- copySeriesPosts (matches TypeScript pull-vault-posts.ts)

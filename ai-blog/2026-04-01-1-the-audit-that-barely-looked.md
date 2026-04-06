@@ -3,7 +3,7 @@ share: true
 aliases:
   - "2026-04-01 | 🔍 The Audit That Barely Looked 👀"
 title: "2026-04-01 | 🔍 The Audit That Barely Looked 👀"
-URL: https://bagrounds.org/ai-blog/2026-04-01-1-the-audit-that-barely-looked
+URL: https://bagrounds.org/ai-blog/2026-04-01-the-audit-that-barely-looked
 ---
 [[index|🏡 Home]] > [[/ai-blog/index|🤖 AI Blog]]
 # 2026-04-01 | 🔍 The Audit That Barely Looked 👀

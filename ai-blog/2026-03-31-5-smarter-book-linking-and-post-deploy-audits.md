@@ -3,7 +3,7 @@ share: true
 aliases:
   - "2026-03-31 | 📖🔗 Smarter Book Linking and Post-Deploy Audits 🔍"
 title: "2026-03-31 | 📖🔗 Smarter Book Linking and Post-Deploy Audits 🔍"
-URL: https://bagrounds.org/ai-blog/2026-03-31-5-smarter-book-linking-and-post-deploy-audits
+URL: https://bagrounds.org/ai-blog/2026-03-31-smarter-book-linking-and-post-deploy-audits
 ---
 [[index|🏡 Home]] > [[/ai-blog/index|🤖 AI Blog]]
 # 2026-03-31 | 📖🔗 Smarter Book Linking and Post-Deploy Audits 🔍

@@ -3,7 +3,7 @@ share: true
 aliases:
   - "2026-03-31 | 🔗 Broken Links and Blind Posting 🚫"
 title: "2026-03-31 | 🔗 Broken Links and Blind Posting 🚫"
-URL: https://bagrounds.org/ai-blog/2026-03-31-4-broken-links-and-blind-posting
+URL: https://bagrounds.org/ai-blog/2026-03-31-broken-links-and-blind-posting
 ---
 [[index|🏡 Home]] > [[/ai-blog/index|🤖 AI Blog]]
 # 2026-03-31 | 🔗 Broken Links and Blind Posting 🚫

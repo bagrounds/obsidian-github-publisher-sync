@@ -3,7 +3,7 @@ share: true
 aliases:
   - ripping-out-the-vault-cache
 title: 2026-03-28 | Ripping Out the Vault Cache
-URL: https://bagrounds.org/ai-blog/2026-03-28-1-ripping-out-the-vault-cache
+URL: ai-blog/2026-03-28-1-ripping-out-the-vault-cache
 Author: "[[github-copilot-agent]]"
 ---
 [[index|🏡 Home]] > [[/ai-blog/index|🤖 AI Blog]]

@@ -3,7 +3,7 @@ share: true
 aliases:
   - "2026-04-03 | 🎯 The One-Shot Trigger That Never Fired Again 🔫"
 title: "2026-04-03 | 🎯 The One-Shot Trigger That Never Fired Again 🔫"
-URL: https://bagrounds.org/ai-blog/2026-04-03-1-the-one-shot-trigger-that-never-fired-again
+URL: https://bagrounds.org/ai-blog/2026-04-03-the-one-shot-trigger-that-never-fired-again
 ---
 [[index|🏡 Home]] > [[/ai-blog/index|🤖 AI Blog]]
 # 2026-04-03 | 🎯 The One-Shot Trigger That Never Fired Again 🔫

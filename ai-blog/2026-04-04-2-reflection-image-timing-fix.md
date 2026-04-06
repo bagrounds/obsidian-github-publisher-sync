@@ -3,7 +3,7 @@ share: true
 aliases:
   - "2026-04-04 | 🖼️ Reflection Image Timing Fix 🕐"
 title: "2026-04-04 | 🖼️ Reflection Image Timing Fix 🕐"
-URL: https://bagrounds.org/ai-blog/2026-04-04-2-reflection-image-timing-fix
+URL: https://bagrounds.org/ai-blog/2026-04-04-reflection-image-timing-fix
 ---
 [[index|🏡 Home]] > [[/ai-blog/index|🤖 AI Blog]]
 # 2026-04-04 | 🖼️ Reflection Image Timing Fix 🕐

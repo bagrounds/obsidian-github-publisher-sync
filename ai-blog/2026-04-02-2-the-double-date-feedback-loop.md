@@ -3,7 +3,7 @@ share: true
 aliases:
   - "2026-04-02 | 🔁 The Double-Date Feedback Loop 🗓️"
 title: "2026-04-02 | 🔁 The Double-Date Feedback Loop 🗓️"
-URL: https://bagrounds.org/ai-blog/2026-04-02-2-the-double-date-feedback-loop
+URL: https://bagrounds.org/ai-blog/2026-04-02-the-double-date-feedback-loop
 ---
 [[index|🏡 Home]] > [[/ai-blog/index|🤖 AI Blog]]
 # 2026-04-02 | 🔁 The Double-Date Feedback Loop 🗓️

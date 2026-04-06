@@ -3,7 +3,7 @@ share: true
 aliases:
   - "2026-03-30 | 🦋 Fixing Haskell Social Posting 🔧"
 title: "2026-03-30 | 🦋 Fixing Haskell Social Posting 🔧"
-URL: https://bagrounds.org/ai-blog/2026-03-30-1-fixing-haskell-social-posting
+URL: https://bagrounds.org/ai-blog/2026-03-30-fixing-haskell-social-posting
 ---
 [[index|🏡 Home]] > [[/ai-blog/index|🤖 AI Blog]]
 # 2026-03-30 | 🦋 Fixing Haskell Social Posting 🔧

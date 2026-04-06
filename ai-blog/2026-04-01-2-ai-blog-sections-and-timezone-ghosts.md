@@ -3,7 +3,7 @@ share: true
 aliases:
   - "2026-04-01 | 🤖 AI Blog Sections and Timezone Ghosts 🕐"
 title: "2026-04-01 | 🤖 AI Blog Sections and Timezone Ghosts 🕐"
-URL: https://bagrounds.org/ai-blog/2026-04-01-2-ai-blog-sections-and-timezone-ghosts
+URL: https://bagrounds.org/ai-blog/2026-04-01-ai-blog-sections-and-timezone-ghosts
 ---
 [[index|🏡 Home]] > [[/ai-blog/index|🤖 AI Blog]]
 # 2026-04-01 | 🤖 AI Blog Sections and Timezone Ghosts 🕐

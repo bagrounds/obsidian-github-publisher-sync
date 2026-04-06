@@ -21,7 +21,7 @@
 
 The ai-blog sync runs as part of the backfill-blog-images task.
 
-Step 1: Sync new AI blog posts from repo to vault (copy-if-missing only — never overwrites existing vault files).
+Step 1: Sync new AI blog posts from repo to vault. Uses word-based Jaccard similarity (threshold 0.25) to distinguish genuinely new posts from renamed or modified versions of existing vault files. Never overwrites.
 Step 2: Backfill blog images (max 4 per hour).
 Step 3: Scan ai-blog posts in vault and add missing navigation links (⏮️/⏭️).
 Step 4: Add update links from image backfill results to daily reflections.

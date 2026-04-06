@@ -55,4 +55,39 @@ tests = testGroup "Text"
           result = fitPostToLimit post 60
       in assertBool "should fit within limit" $
            countGraphemes result <= 60
+
+  -- wordJaccardSimilarity tests
+  , testCase "identical texts have similarity 1.0" $
+      wordJaccardSimilarity "hello world" "hello world" @?= 1.0
+
+  , testCase "completely different texts have similarity 0.0" $
+      wordJaccardSimilarity "alpha beta" "gamma delta" @?= 0.0
+
+  , testCase "empty texts have similarity 1.0" $
+      wordJaccardSimilarity "" "" @?= 1.0
+
+  , testCase "one empty text has similarity 0.0" $
+      wordJaccardSimilarity "hello" "" @?= 0.0
+
+  , testCase "half-overlapping word sets have similarity 0.33" $
+      -- words A: {hello, world}  words B: {hello, there}
+      -- intersection: {hello} = 1, union: {hello, world, there} = 3
+      let sim = wordJaccardSimilarity "hello world" "hello there"
+      in assertBool ("expected ~0.33, got " <> show sim) (abs (sim - 1/3) < 0.01)
+
+  , testCase "similarity is case-insensitive" $
+      wordJaccardSimilarity "Hello World" "hello world" @?= 1.0
+
+  , testCase "modified blog post scores above 0.25" $
+      -- Simulates a post that was edited (title changed, some content modified)
+      let original = "---\ntitle: The Big Fix\n---\n# The Big Fix\n\nWe found and fixed a major bug in the deployment pipeline.\n\n## The Investigation\n\nThe logs showed errors starting at 3am."
+          modified = "---\ntitle: 2026-04-01 | The Big Fix\naliases:\n  - The Big Fix\n---\n# 2026-04-01 | The Big Fix\n\nWe found and fixed a major bug in the deployment pipeline.\n\n## The Investigation\n\nThe logs showed errors starting at 3am.\n\n## 📚 Book Recommendations"
+          sim = wordJaccardSimilarity original modified
+      in assertBool ("modified post should score > 0.25, got " <> show sim) (sim > 0.25)
+
+  , testCase "completely different blog post scores below 0.25" $
+      let post1 = "---\ntitle: Fixing the Cache\n---\n# Fixing the Cache\n\nThe cache invalidation bug caused stale data to persist across deployments."
+          post2 = "---\ntitle: Porting to Haskell\n---\n# Porting to Haskell\n\nWe migrated the automation pipeline from TypeScript to a strongly-typed functional language."
+          sim = wordJaccardSimilarity post1 post2
+      in assertBool ("different posts should score < 0.25, got " <> show sim) (sim < 0.25)
   ]

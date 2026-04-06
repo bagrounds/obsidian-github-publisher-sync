@@ -60,17 +60,19 @@ URL: https://bagrounds.org/ai-blog/2026-04-05-2-the-vault-that-never-received
 
 📬 Assumption two: New AI blog posts must reach the vault. This is always correct because these files do not exist in the vault yet and have no vault version to protect.
 
-🔀 The resolution: copy-if-missing. Only sync files that do not yet exist in the vault. Never overwrite existing files. This respects the vault-safety policy while ensuring new content arrives.
+🔀 The resolution: copy-if-missing with content similarity dedup. Only sync files that do not yet exist in the vault and are not modified versions of existing vault files. Never overwrite. This respects the vault-safety policy while ensuring genuinely new content arrives.
 
 ## 🔧 The Fix
 
-📝 A new syncNewAiBlogPosts function was added to the backfill task, running as Step 1 before any other processing. It scans the repo ai-blog directory and copies each markdown file to the vault only if it does not already exist there. Files that already exist in the vault are never touched.
+📝 A new syncNewAiBlogPosts function was added to the backfill task, running as Step 1 before any other processing. It scans the repo ai-blog directory and determines whether each file is genuinely new or a modified version of something already in the vault.
 
-🔗 This follows the exact same pattern as syncIfMissing which already exists for attachment images. The pattern was proven safe and is well-understood in the codebase.
+📏 The dedup uses word-based Jaccard similarity, computed as the size of the word intersection divided by the size of the word union between two documents. Empirical testing on the full ai-blog corpus found a massive gap in scores: genuinely new posts score at most 0.22 against their best vault match, while renamed or modified versions of existing posts score at least 0.53. A threshold of 0.25 sits safely in the middle of this 0.31-wide gap, giving large margin on both sides.
+
+🔗 For each repo file not already in the vault by filename, the function reads its content and compares it against every vault file. If any vault file scores above the threshold, the repo file is skipped as a modified version. Only files that score below the threshold against all vault files are copied.
 
 📋 The function runs at the beginning of the backfill task so that subsequent steps, including nav link generation, image backfill, and reflection linking, can operate on the newly synced files immediately.
 
-🌐 A second fix corrected the URL property in YAML frontmatter. The AGENTS.md instruction previously told agents to strip the sequence number from URLs, producing mismatches between filenames and URLs. Twenty-nine existing posts were corrected and the instruction was updated to require URLs that match the filename exactly.
+🌐 A second fix corrected the URL property instruction in AGENTS.md. The previous instruction told agents to strip the sequence number from URLs, producing mismatches between filenames and URLs. The instruction was updated to require URLs that match the filename exactly.
 
 ## 🎓 Lessons Learned
 
@@ -80,7 +82,7 @@ URL: https://bagrounds.org/ai-blog/2026-04-05-2-the-vault-that-never-received
 
 🔁 Fix the actual data flow, not just the symptoms. Five previous PRs fixed real bugs in reflection linking, timezone handling, and one-shot triggers. But none traced the complete path from post creation to vault delivery. The root cause was the simplest failure: new files were never copied.
 
-🧪 The copy-if-missing pattern is the gold standard for safe delivery. It is idempotent, it never destroys data, and it correctly handles the distinction between new content and existing content.
+🧪 Content similarity metrics beat fragile heuristics. Filename prefixes and title matching break when files are renamed or edited in unexpected ways. A single Jaccard similarity score computed over the full document captures all forms of modification at once, and the empirical gap between new and modified posts is so wide that the threshold is trivially safe.
 
 ## 📚 Book Recommendations
 

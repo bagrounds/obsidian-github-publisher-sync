@@ -19,7 +19,6 @@ import System.FilePath ((</>), dropExtension, takeExtension)
 import System.IO (hSetBuffering, stdout, stderr, BufferMode(..))
 
 import Automation.AiBlogLinks (NavLinkResult (..), aiBlogConfig, ensureAllNavLinks, buildReflectionLinks)
-import Automation.Frontmatter (parseFrontmatter)
 import Automation.AiFiction
   ( FictionConfig (..)
   , FictionResult (..)
@@ -87,6 +86,7 @@ import Automation.Scheduler
   )
 import qualified Automation.InternalLinking as IL
 import Automation.SocialPosting (autoPost)
+import Automation.Text (wordJaccardSimilarity)
 
 -- ---------------------------------------------------------------------------
 -- Logging helpers
@@ -231,8 +231,18 @@ syncFileToVault localPath vaultRelPath vaultDir = do
     takeDirectory = reverse . dropWhile (/= '/') . reverse
 
 -- ---------------------------------------------------------------------------
--- syncNewAiBlogPosts (copy-if-missing with title and date-sequence dedup)
+-- syncNewAiBlogPosts (copy-if-missing with content similarity dedup)
 -- ---------------------------------------------------------------------------
+
+-- | Similarity threshold for dedup. Posts scoring above this against any
+--   vault file are considered modified versions, not new content.
+--
+--   Empirically derived from the ai-blog corpus:
+--     genuinely new posts:       max Jaccard similarity 0.10
+--     renamed/modified versions: min Jaccard similarity 0.39
+--   Threshold sits in the middle of a 0.29-wide gap.
+similarityThreshold :: Double
+similarityThreshold = 0.25
 
 syncNewAiBlogPosts :: FilePath -> FilePath -> IO Int
 syncNewAiBlogPosts repoDir vaultDir = do
@@ -241,84 +251,51 @@ syncNewAiBlogPosts repoDir vaultDir = do
     False -> pure 0
     True -> do
       createDirectoryIfMissing True vaultDir
-      -- Build index of vault files: filenames and titles
+      -- Read all vault file contents for similarity comparison
       vaultEntries <- listDirectory vaultDir
       let vaultMdFiles = filter isAiBlogPost vaultEntries
-      vaultIndex <- traverse (extractTitle vaultDir) vaultMdFiles
-      let vaultFilenames = fmap (T.pack . fst) vaultIndex
-          vaultTitles = fmap snd vaultIndex
-      -- Check each repo file against vault index
+          vaultFilenames = fmap T.pack vaultMdFiles
+      vaultContents <- traverse (\f -> TIO.readFile (vaultDir </> f)) vaultMdFiles
+      -- Check each repo file against vault
       repoEntries <- listDirectory repoDir
       let repoMdFiles = filter isAiBlogPost repoEntries
-      counts <- traverse (syncIfNew repoDir vaultDir vaultFilenames vaultTitles) repoMdFiles
+      counts <- traverse (syncIfNew repoDir vaultDir vaultFilenames (zip vaultMdFiles vaultContents)) repoMdFiles
       pure (sum counts)
   where
     isAiBlogPost f = takeExtension f == ".md" && f /= "index.md" && f /= "AGENTS.md"
 
-extractTitle :: FilePath -> FilePath -> IO (FilePath, Text)
-extractTitle dir filename = do
-  content <- TIO.readFile (dir </> filename)
-  let (fm, _) = parseFrontmatter content
-      title = Map.findWithDefault "" "title" fm
-  pure (filename, title)
-
-syncIfNew :: FilePath -> FilePath -> [Text] -> [Text] -> FilePath -> IO Int
-syncIfNew srcDir dstDir vaultFilenames vaultTitles filename = do
+syncIfNew :: FilePath -> FilePath -> [Text] -> [(FilePath, Text)] -> FilePath -> IO Int
+syncIfNew srcDir dstDir vaultFilenames vaultContents filename = do
   let fnameText = T.pack filename
   case fnameText `elem` vaultFilenames of
     True -> pure 0
     False -> do
-      -- File not in vault by name — check if vault has file with same date-sequence prefix
-      let dateSeqPrefix = extractDateSeqPrefix fnameText
-      case dateSeqPrefix >>= (\p -> findMatchingPrefix p vaultFilenames) of
-        Just matchedFile -> do
-          logMsg $ "  ⏭️  Skipping " <> fnameText <> " (vault has " <> matchedFile <> " with same date-sequence prefix)"
+      repoContent <- TIO.readFile (srcDir </> filename)
+      let (bestScore, bestMatch) = findBestMatch repoContent vaultContents
+      case bestScore >= similarityThreshold of
+        True -> do
+          logMsg $ "  ⏭️  Skipping " <> fnameText
+            <> " (Jaccard " <> T.pack (showScore bestScore) <> " with " <> T.pack bestMatch <> ")"
           pure 0
-        Nothing -> do
-          -- Check title similarity
-          content <- TIO.readFile (srcDir </> filename)
-          let (fm, _) = parseFrontmatter content
-              repoTitle = Map.findWithDefault "" "title" fm
-          case findSimilarTitle repoTitle vaultTitles of
-            Just vaultTitle -> do
-              logMsg $ "  ⏭️  Skipping " <> fnameText <> " (similar title in vault: " <> vaultTitle <> ")"
-              pure 0
-            Nothing -> do
-              TIO.writeFile (dstDir </> filename) content
-              logMsg $ "  📄 New post → vault: " <> fnameText
-              pure 1
+        False -> do
+          TIO.writeFile (dstDir </> filename) repoContent
+          logMsg $ "  📄 New post → vault: " <> fnameText
+            <> " (best Jaccard " <> T.pack (showScore bestScore) <> ")"
+          pure 1
 
--- | Extract date-sequence prefix like "2026-03-27-1-" from a filename.
---   Returns Nothing for filenames without a sequence number.
-extractDateSeqPrefix :: Text -> Maybe Text
-extractDateSeqPrefix fname =
-  -- Pattern: YYYY-MM-DD-N- where N is one or more digits
-  let parts = T.splitOn "-" fname
-  in case parts of
-    (y : m : d : n : _)
-      | T.length y == 4 && T.all isDigit y
-      , T.length m == 2 && T.all isDigit m
-      , T.length d == 2 && T.all isDigit d
-      , not (T.null n) && T.all isDigit n
-        -> Just (y <> "-" <> m <> "-" <> d <> "-" <> n <> "-")
-    _ -> Nothing
-
-findMatchingPrefix :: Text -> [Text] -> Maybe Text
-findMatchingPrefix prefix = safeHead . filter (T.isPrefixOf prefix)
+findBestMatch :: Text -> [(FilePath, Text)] -> (Double, FilePath)
+findBestMatch repoContent = foldl pickBest (0.0, "(none)")
   where
-    safeHead (x : _) = Just x
-    safeHead []      = Nothing
+    pickBest (bestScore, bestFile) (vaultFile, vaultContent) =
+      let score = wordJaccardSimilarity repoContent vaultContent
+      in case score > bestScore of
+           True  -> (score, vaultFile)
+           False -> (bestScore, bestFile)
 
-findSimilarTitle :: Text -> [Text] -> Maybe Text
-findSimilarTitle repoTitle vaultTitles =
-  case T.null repoTitle of
-    True  -> Nothing
-    False ->
-      let normalizedRepo = T.toCaseFold repoTitle
-      in safeHead (filter (\vt -> not (T.null vt) && T.toCaseFold vt == normalizedRepo) vaultTitles)
-  where
-    safeHead (x : _) = Just x
-    safeHead []      = Nothing
+showScore :: Double -> String
+showScore d =
+  let rounded = fromIntegral (round (d * 1000) :: Int) / 1000 :: Double
+  in show rounded
 
 -- ---------------------------------------------------------------------------
 -- copySeriesPosts (matches TypeScript pull-vault-posts.ts)

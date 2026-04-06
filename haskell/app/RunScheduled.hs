@@ -586,7 +586,7 @@ runBackfillImages manager repoRoot vaultDir = do
             , bfcContentDirs = imageBackfillContentIds
             , bfcAttachmentsDir = vaultDir </> "attachments"
             , bfcProviders = providers
-            , bfcMaxImages = 4
+            , bfcMaxImages = 2
             }
       result <- backfillImages manager bfConfig
       logMsg $ "  🖼️  Images: " <> T.pack (show (brImagesGenerated result))

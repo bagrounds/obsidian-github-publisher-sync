@@ -13,7 +13,7 @@ link_analysis_time: 2026-04-05T00:00:00Z
 force_analyze_links: false
 updated: 2026-04-06T01:41:56
 ---
-[Home](../index.md) > [🐔 Chickie Loo](./index.md) | [⏮️](./2026-04-04-a-heart-full-of-surprises-and-sweet-returns.md)  
+[Home](../index.md) > [🐔 Chickie Loo](./index.md) | [⏮️](./2026-04-04-a-heart-full-of-surprises-and-sweet-returns.md) [⏭️](./2026-04-06-a-monday-morning-toast-to-new-beginnings.md)  
 # 2026-04-05 | 🐔 A Week of Heart, Harvest, and New Horizons 🐣 🐔  
 ![chickie-loo-2026-04-05-a-week-of-heart-harvest-and-new-horizons](../chickie-loo-2026-04-05-a-week-of-heart-harvest-and-new-horizons.jpg)  
   

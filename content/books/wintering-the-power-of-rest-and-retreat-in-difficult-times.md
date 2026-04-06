@@ -6,6 +6,9 @@ URL: https://bagrounds.org/books/wintering-the-power-of-rest-and-retreat-in-diff
 share: true
 affiliate link: https://amzn.to/43I7HAG
 CTA: 🫂 Embrace stillness.
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_time: 2026-04-02T00:00:00Z
+force_analyze_links: false
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🥶🛌 Wintering: The Power of Rest and Retreat in Difficult Times  

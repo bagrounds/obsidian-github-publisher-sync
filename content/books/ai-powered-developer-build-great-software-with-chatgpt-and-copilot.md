@@ -6,6 +6,9 @@ URL: https://bagrounds.org/books/ai-powered-developer-build-great-software-with-
 share: true
 affiliate link: https://amzn.to/3JeV0a9
 CTA: 🤖 Automate development.
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_time: 2026-04-05T00:00:00Z
+force_analyze_links: false
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🤖💻 AI-Powered Developer: Build great software with ChatGPT and Copilot  

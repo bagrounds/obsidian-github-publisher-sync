@@ -87,7 +87,7 @@
    c. ⏭️ Skip and continue on non-quota errors
    d. 🔗 Update "chain" timestamps for all newer files in same directory
    e. 💤 Proactive rate limit delay between successful generations
-   f. 🎯 Stop if maxImages limit reached (default: 4 per hourly run)
+   f. 🎯 Stop if maxImages limit reached (default: 2 per hourly run)
 ```
 
 ---

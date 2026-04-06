@@ -5,10 +5,10 @@ aliases:
 title: 📺 Videos
 URL: https://bagrounds.org/videos
 backlinks: false
-updated: 2026-04-06T12:21:22-07:00
+updated: 2026-04-06T13:34:23-07:00
 ---
 [Home](../index.md)  
-# 📺 Videos (727)  
+# 📺 Videos (728)  
 - [💰🤑🤖💡🚀💲 $0.10/Month Runs My Entire AI Life. I'll Show You How.](./0-10-month-runs-my-entire-ai-life-ill-show-you-how.md)  
 - [📊📈📉📃👁️ 10 Charts to Understand the 900 Page Budget Bill](./10-charts-to-understand-the-900-page-budget-bill.md)  
 - [🤖🔗⬆️✅ 12-Factor Agents: Patterns of reliable LLM applications — Dex Horthy, HumanLayer](./12-factor-agents-patterns-of-reliable-llm-applications-dex-horthy-humanlayer.md)  
@@ -169,6 +169,7 @@ updated: 2026-04-06T12:21:22-07:00
 - [🍎➡️🥗💯 Eat your food in the RIGHT ORDER: 75% healthier with this small trick | Episode 6 of 18](./eat-your-food-in-the-right-order-75-healthier-with-this-small-trick-episode-6-of-18.md)  
 - [🏃‍♀️⚕️💪 ECFIT Expert Series - Jay Dicharry](./ecfit-expert-series-jay-dicharry.md)  
 - [🌱⛰️💪 Effective Resistance to Authoritarianism: «The violets in the mountains have broken the rocks»](./effective-resistance-to-authoritarianism-the-violets-in-the-mountains-have-broken-the-rocks.md)  
+- [⚙️⚖️📈 Eliyahu Goldratt - Matter of Choice | Goldratt on the Economy](./eliyahu-goldratt-matter-of-choice-goldratt-on-the-economy.md)  
 - [🤑🤥💡💰🗣️ Eliza Filby: Hard Work Is a Lie, This Is What Rich People Never Tell You](./eliza-filby-hard-work-is-a-lie-this-is-what-rich-people-never-tell-you.md)  
 - [🇿🇦👨‍👩‍👧‍👦⛓️卐 Elon Musk's Family History in South Africa Reveals Ties to Apartheid & Neo-Nazi Movements](./elon-musks-family-history-in-south-africa-reveals-ties-to-apartheid-neo-nazi-movements.md)  
 - [🤯🔋🚫💪 Emily Nagoski and Amelia Nagoski: The cure for burnout (hint: it isn't self-care) | TED](./emily-nagoski-and-amelia-nagoski-the-cure-for-burnout-hint-it-isnt-self-care-ted.md)  

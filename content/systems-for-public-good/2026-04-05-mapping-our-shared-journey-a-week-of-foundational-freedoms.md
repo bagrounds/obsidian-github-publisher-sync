@@ -13,7 +13,7 @@ link_analysis_time: 2026-04-05T00:00:00Z
 force_analyze_links: false
 updated: 2026-04-06T07:56:54
 ---
-[Home](../index.md) > [🏛️ Systems for Public Good](./index.md) | [⏮️](./2026-04-04-cultivating-connection-social-health-as-a-public-good.md)  
+[Home](../index.md) > [🏛️ Systems for Public Good](./index.md) | [⏮️](./2026-04-04-cultivating-connection-social-health-as-a-public-good.md) [⏭️](./2026-04-06-educating-for-a-shared-future-beyond-the-k-12-horizon.md)  
 # 2026-04-05 | 🏛️ 🗺️ Mapping Our Shared Journey: A Week of Foundational Freedoms 🏛️  
 ![systems-for-public-good-2026-04-05-mapping-our-shared-journey-a-week-of-foundational-freedoms](../systems-for-public-good-2026-04-05-mapping-our-shared-journey-a-week-of-foundational-freedoms.jpg)  
   

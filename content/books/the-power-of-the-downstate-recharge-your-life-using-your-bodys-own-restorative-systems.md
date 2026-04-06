@@ -6,6 +6,9 @@ URL: https://bagrounds.org/books/the-power-of-the-downstate-recharge-your-life-u
 share: true
 affiliate link: https://amzn.to/4m0GWzw
 CTA: ⚡️ Awaken vitality.
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_time: 2026-04-05T00:00:00Z
+force_analyze_links: false
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🔋⬇️⬆️ The Power of the Downstate: Recharge Your Life Using Your Body's Own Restorative Systems  

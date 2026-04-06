@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-04-06T12:21:22-07:00
+updated: 2026-04-06T13:34:23-07:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -50,38 +50,38 @@ updated: 2026-04-06T12:21:22-07:00
   
   
 ## [📚 Books](./books/index.md) (959)  
-- [🔑🧭❤️ The Power of Meaning: Crafting a Life That Matters](./books/the-power-of-meaning.md)  
-- [🧠🔗🤔💡 Knowledge Representation and Reasoning](./books/knowledge-representation-and-reasoning.md)  
-- [🤖👑 Empire of AI: Dreams and Nightmares in Sam Altman's OpenAI](./books/empire-of-ai-dreams-and-nightmares-in-sam-altmans-openai.md)  
-- [😈🔥👹 The Devils](./books/the-devils.md)  
+- [⛔🌎🔚 Not the End of the World: How We Can Be the First Generation to Build a Sustainable Planet](./books/not-the-end-of-the-world.md)  
+- [🌞🌬️🌊🌋 Sustainable Energy - Without the Hot Air](./books/sustainable-energy-without-the-hot-air.md)  
+- [🥼🛡️ The Scientific Attitude: Defending Science from Denial, Fraud, and Pseudoscience](./books/the-scientific-attitude.md)  
+- [📗🚀🌍 Operating Manual for Spaceship Earth](./books/operating-manual-for-spaceship-earth.md)  
   
   
-## [📺 Videos](./videos/index.md) (727)  
-- [🪵🍎🌳🔬 Wood Mulch for Fruit Trees with Linda Chalker-Scott](./videos/wood-mulch-for-fruit-trees-with-linda-chalker-scott-fruittrees.md)  
-- [Presentation Zen | Garr Reynolds | Talks at Google](./videos/presentation-zen-garr-reynolds-talks-at-google.md)  
-- [📣👮🏿‍♂️🧑🏿‍🤝‍🧑🏿 LIVE: LAPD press conference after protests in Los Angeles over National Guard deployment](./videos/live-lapd-press-conference-after-protests-in-los-angeles-over-national-guard-deployment.md)  
-- [🤖🏢👁️ New book ‘Empire of AI’ investigates OpenAI, the company behind ChatGPT](./videos/new-book-empire-of-ai-investigates-openai-the-company-behind-chatgpt.md)  
+## [📺 Videos](./videos/index.md) (728)  
+- [⚙️⚖️📈 Eliyahu Goldratt - Matter of Choice | Goldratt on the Economy](./videos/eliyahu-goldratt-matter-of-choice-goldratt-on-the-economy.md)  
+- [💪🧠⚔️🤝 How to Become Resilient, Forge Your Identity & Lead Others | Jocko Willink](./videos/how-to-become-resilient-forge-your-identity-lead-others-jocko-willink.md)  
+- [💪🧠🔒5️⃣ How To Build Unbreakable Discipline (5 Steps)](./videos/how-to-build-unbreakable-discipline-5-steps.md)  
+- [🪖💪💯 Jocko Willink «GOOD» (Official)](./videos/jocko-willink-good-official.md)  
   
   
 ## [🌌 Topics](./topics/index.md) (91)  
+- [🇨🇳🤖 DeepSeek](./topics/deepseek.md)  
 - [🌳🗺️🔗🏛️ Ontologies](./topics/ontologies.md)  
 - [🧠🌐 Knowledge Graphs](./topics/knowledge-graphs.md)  
 - [🧠🌍⚙️ Model Context Protocol](./topics/model-context-protocol.md)  
-- [🤖🕸️💸🔎 Google Search Crawl Budget](./topics/google-search-crawl-budget.md)  
   
   
 ## [📄  Articles](./articles/index.md) (84)  
+- [🥼💰🧊 NIH freezes funds to Harvard and four other universities, but can’t tell them](./articles/nih-freezes-funds-to-harvard-and-four-other-universities-but-cant-tell-them.md)  
+- [✊🏾✊🏽✊🏿 Protesters unite against Trump in hundreds of rallies across the U.S.](./articles/protesters-unite-against-trump-in-hundreds-of-rallies-across-the-us.md)  
 - [🤱😴👶 Safe Sleep for Breastfeeding Babies](./articles/safe-sleep-for-breastfeeding-babies.md)  
 - [🪵 The Log: What every software engineer should know about real-time data's unifying abstraction](./articles/the-log-what-every-software%20engineer-should-know-about-real-time-datas-unifying-abstraction.md)  
-- [🧑‍💻🤖🤝 How Anthropic Teams Use Claude Code](./articles/how-anthropic-teams-use-claude-code.md)  
-- [🤖🛠️🧠📄 What Fred Brooks Can Teach Us About Writing Specs for AI](./articles/what-fred-brooks-can-teach-us-about-writing-specs-for-ai.md)  
   
   
 ## [🤖💬 Bot Chats](./bot-chats/index.md) (49)  
+- [✍🏼 Blogiversary 🕯️](./bot-chats/blogiversary.md)  
+- [📖 Book 🧭 Explorer 1](./bot-chats/book-explorer-1.md)  
 - [⚙️📝🧹 Obsidian Templater Filename Sanitization](./bot-chats/obsidian-templater-filename-sanitization.md)  
 - [⛽ Fueling a 👥 Movement to ⚔️ Fight 👹 Tyranny and 💪 Strengthen 🗳️ Democracy](./bot-chats/fueling-a-movement-to-fight-tyranny-and-strengthen-democracy.md)  
-- [📏💻✅ Engineering as Specification](./bot-chats/engineering-as-specification.md)  
-- [🤖⚙️📈💡 AI Engineering Assistant Technology Recommendations](./bot-chats/ai-engineering-assistant-technology-recommendations.md)  
   
   
 ## [💾 Software](./software/index.md) (33)  

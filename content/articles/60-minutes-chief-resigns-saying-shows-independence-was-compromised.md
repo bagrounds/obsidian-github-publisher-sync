@@ -6,6 +6,9 @@ title: ⏱️⚔️🏛️ '60 Minutes' chief resigns, saying show's independenc
 URL: https://bagrounds.org/articles/60-minutes-chief-resigns-saying-shows-independence-was-compromised
 Author:
 tags:
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_time: 2026-04-06T00:00:00Z
+force_analyze_links: false
 ---
 [Home](../index.md) > [Articles](./index.md)  
 # [⏱️⚔️🏛️ '60 Minutes' chief resigns, saying show's independence was compromised](https://www.npr.org/2025/04/22/nx-s1-5372733/60-minutes-bill-owens-cbs-trump-paramount)  

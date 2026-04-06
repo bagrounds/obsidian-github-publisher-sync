@@ -238,9 +238,9 @@ syncFileToVault localPath vaultRelPath vaultDir = do
 --   vault file are considered modified versions, not new content.
 --
 --   Empirically derived from the ai-blog corpus:
---     genuinely new posts:       max Jaccard similarity 0.10
---     renamed/modified versions: min Jaccard similarity 0.39
---   Threshold sits in the middle of a 0.29-wide gap.
+--     genuinely new posts:       max Jaccard similarity 0.22
+--     renamed/modified versions: min Jaccard similarity 0.53
+--   Threshold sits in the middle of a 0.31-wide gap.
 similarityThreshold :: Double
 similarityThreshold = 0.25
 

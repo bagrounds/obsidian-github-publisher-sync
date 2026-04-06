@@ -66,7 +66,9 @@ URL: https://bagrounds.org/ai-blog/2026-04-05-2-the-vault-that-never-received
 
 📝 A new syncNewAiBlogPosts function was added to the backfill task, running as Step 1 before any other processing. It scans the repo ai-blog directory and determines whether each file is genuinely new or a modified version of something already in the vault.
 
-📏 The dedup uses word-based Jaccard similarity, computed as the size of the word intersection divided by the size of the word union between two documents. Empirical testing on the full ai-blog corpus found a massive gap in scores: genuinely new posts score at most 0.22 against their best vault match, while renamed or modified versions of existing posts score at least 0.53. A threshold of 0.25 sits safely in the middle of this 0.31-wide gap, giving large margin on both sides.
+📏 The dedup uses word-based Jaccard similarity. This metric splits both documents into word sets and computes the ratio of shared words to total unique words. A score of 1.0 means identical content, and 0.0 means no words in common.
+
+📊 Empirical testing on the full ai-blog corpus revealed a massive gap. Genuinely new posts score at most 0.22 against their best vault match. Renamed or modified versions of existing posts score at least 0.53. A threshold of 0.25 sits safely in the middle of this 0.31-wide gap, giving large margin on both sides.
 
 🔗 For each repo file not already in the vault by filename, the function reads its content and compares it against every vault file. If any vault file scores above the threshold, the repo file is skipped as a modified version. Only files that score below the threshold against all vault files are copied.
 

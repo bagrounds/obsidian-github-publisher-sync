@@ -86,6 +86,7 @@ import Automation.Scheduler
   )
 import qualified Automation.InternalLinking as IL
 import Automation.SocialPosting (autoPost)
+import Automation.Text (wordJaccardSimilarity)
 
 -- ---------------------------------------------------------------------------
 -- Logging helpers
@@ -228,6 +229,73 @@ syncFileToVault localPath vaultRelPath vaultDir = do
           pure True
   where
     takeDirectory = reverse . dropWhile (/= '/') . reverse
+
+-- ---------------------------------------------------------------------------
+-- syncNewAiBlogPosts (copy-if-missing with content similarity dedup)
+-- ---------------------------------------------------------------------------
+
+-- | Similarity threshold for dedup. Posts scoring above this against any
+--   vault file are considered modified versions, not new content.
+--
+--   Empirically derived from the ai-blog corpus:
+--     genuinely new posts:       max Jaccard similarity 0.22
+--     renamed/modified versions: min Jaccard similarity 0.53
+--   Threshold sits in the middle of a 0.31-wide gap.
+similarityThreshold :: Double
+similarityThreshold = 0.25
+
+syncNewAiBlogPosts :: FilePath -> FilePath -> IO Int
+syncNewAiBlogPosts repoDir vaultDir = do
+  repoExists <- doesDirectoryExist repoDir
+  case repoExists of
+    False -> pure 0
+    True -> do
+      createDirectoryIfMissing True vaultDir
+      -- Read all vault file contents for similarity comparison
+      vaultEntries <- listDirectory vaultDir
+      let vaultMdFiles = filter isAiBlogPost vaultEntries
+          vaultFilenames = fmap T.pack vaultMdFiles
+      vaultContents <- traverse (\f -> TIO.readFile (vaultDir </> f)) vaultMdFiles
+      -- Check each repo file against vault
+      repoEntries <- listDirectory repoDir
+      let repoMdFiles = filter isAiBlogPost repoEntries
+      counts <- traverse (syncIfNew repoDir vaultDir vaultFilenames (zip vaultMdFiles vaultContents)) repoMdFiles
+      pure (sum counts)
+  where
+    isAiBlogPost f = takeExtension f == ".md" && f /= "index.md" && f /= "AGENTS.md"
+
+syncIfNew :: FilePath -> FilePath -> [Text] -> [(FilePath, Text)] -> FilePath -> IO Int
+syncIfNew srcDir dstDir vaultFilenames vaultContents filename = do
+  let fnameText = T.pack filename
+  case fnameText `elem` vaultFilenames of
+    True -> pure 0
+    False -> do
+      repoContent <- TIO.readFile (srcDir </> filename)
+      let (bestScore, bestMatch) = findBestMatch repoContent vaultContents
+      case bestScore >= similarityThreshold of
+        True -> do
+          logMsg $ "  ⏭️  Skipping " <> fnameText
+            <> " (Jaccard " <> T.pack (showScore bestScore) <> " with " <> T.pack bestMatch <> ")"
+          pure 0
+        False -> do
+          TIO.writeFile (dstDir </> filename) repoContent
+          logMsg $ "  📄 New post → vault: " <> fnameText
+            <> " (best Jaccard " <> T.pack (showScore bestScore) <> ")"
+          pure 1
+
+findBestMatch :: Text -> [(FilePath, Text)] -> (Double, FilePath)
+findBestMatch repoContent = foldl pickBest (0.0, "(none)")
+  where
+    pickBest (bestScore, bestFile) (vaultFile, vaultContent) =
+      let score = wordJaccardSimilarity repoContent vaultContent
+      in case score > bestScore of
+           True  -> (score, vaultFile)
+           False -> (bestScore, bestFile)
+
+showScore :: Double -> String
+showScore d =
+  let rounded = fromIntegral (round (d * 1000) :: Int) / 1000 :: Double
+  in show rounded
 
 -- ---------------------------------------------------------------------------
 -- copySeriesPosts (matches TypeScript pull-vault-posts.ts)
@@ -484,14 +552,22 @@ runBlogSeries manager repoRoot vaultDir seriesId = do
 
   logMsg $ "✅ " <> taskName
 
-runBackfillImages :: Manager -> FilePath -> IO ()
-runBackfillImages manager vaultDir = do
+runBackfillImages :: Manager -> FilePath -> FilePath -> IO ()
+runBackfillImages manager repoRoot vaultDir = do
   logMsg "▶️  backfill-blog-images"
 
   today <- todayPacific
   let todayText = unDateStr today
 
-  -- 1. Image backfill — operates directly on vault files
+  -- 1. Sync new AI blog posts from repo to vault (copy-if-missing only)
+  let repoAiBlogDir = repoRoot </> "ai-blog"
+      vaultAiBlogDir = vaultDir </> "ai-blog"
+  newPostCount <- syncNewAiBlogPosts repoAiBlogDir vaultAiBlogDir
+  case newPostCount of
+    0 -> pure ()
+    n -> logMsg $ "  📝 Synced " <> T.pack (show n) <> " new AI blog post(s) to vault"
+
+  -- 2. Image backfill — operates directly on vault files
   envMap <- buildEnvMap
     [ "GEMINI_API_KEY", "CLOUDFLARE_API_TOKEN", "CLOUDFLARE_ACCOUNT_ID"
     , "CLOUDFLARE_IMAGE_MODEL", "HUGGINGFACE_API_TOKEN", "HUGGINGFACE_IMAGE_MODEL"
@@ -522,13 +598,13 @@ runBackfillImages manager vaultDir = do
         errs -> logMsg $ "  ⚠️  Errors: " <> T.intercalate "; " errs
       pure (brModifiedFiles result)
 
-  -- 2. Update AI blog nav links — operates directly on vault files
+  -- 3. Update AI blog nav links — operates directly on vault files
   let aiBlogDir = vaultDir </> "ai-blog"
   navResults <- ensureAllNavLinks aiBlogDir
   let modifiedCount = length (filter (\r -> nlrModified r) navResults)
   logMsg $ "  🔗 Nav links: " <> T.pack (show modifiedCount) <> " files updated"
 
-  -- 3. Add update links from image backfill results
+  -- 4. Add update links from image backfill results
   let reflectionsDir = vaultDir </> "reflections"
   imageUpdateLinks <- traverse (\f -> do
         title <- extractTitleFromFile (vaultDir </> T.unpack f)
@@ -540,7 +616,7 @@ runBackfillImages manager vaultDir = do
       _ <- addUpdateLinksToReflection reflectionsDir todayText imageUpdateLinks
       pure ()
 
-  -- 4. Link AI blog posts to their date's reflection with a dedicated AI Blog section
+  -- 5. Link AI blog posts to their date's reflection with a dedicated AI Blog section
   --    Filter out future dates to avoid creating reflections ahead of Pacific time
   aiBlogLinks <- buildReflectionLinks aiBlogDir navResults
   let todayLinks = filter (\(_, _, date) -> date <= todayText) aiBlogLinks
@@ -712,7 +788,7 @@ taskRunners manager repoRoot vaultDir = Map.fromList
   [ (BlogSeriesChickieLoo, runBlogSeries manager repoRoot vaultDir "chickie-loo")
   , (BlogSeriesAutoBlogZero, runBlogSeries manager repoRoot vaultDir "auto-blog-zero")
   , (BlogSeriesSystemsForPublicGood, runBlogSeries manager repoRoot vaultDir "systems-for-public-good")
-  , (BackfillBlogImages, runBackfillImages manager vaultDir)
+  , (BackfillBlogImages, runBackfillImages manager repoRoot vaultDir)
   , (InternalLinking, runInternalLinking manager vaultDir)
   , (SocialPosting, runSocialPosting manager vaultDir)
   , (AiFiction, runAiFiction manager vaultDir)

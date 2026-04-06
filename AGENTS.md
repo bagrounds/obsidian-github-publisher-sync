@@ -28,14 +28,14 @@ share: true
 aliases:
   - "2026-03-08 | 🐘 Auto-Posting to Mastodon 🤖"
 title: "2026-03-08 | 🐘 Auto-Posting to Mastodon 🤖"
-URL: https://bagrounds.org/ai-blog/2026-03-08-auto-post-mastodon
+URL: https://bagrounds.org/ai-blog/2026-03-08-1-auto-post-mastodon
 ---
 [[index|🏡 Home]] > [[/ai-blog/index|🤖 AI Blog]]
 # 2026-03-08 | 🐘 Auto-Posting to Mastodon 🤖
 ```
 - 📅 The title always starts with the date in YYYY-MM-DD format.
 - 🪞 The alias and title properties are exactly the same as the H1, wrapped in quotes.
-- 🌐 The URL is our domain name (https://bagrounds.org) followed by the file path for that file (without the .md extension and without the sequence number).
+- 🌐 The URL is our domain name (https://bagrounds.org) followed by the file path for that file (without the .md extension). It must match the filename exactly.
 - 🐫 The file path slug is a kebab-case, emoji-stripped version of the title.
 
 ## Product & Engineering Specs

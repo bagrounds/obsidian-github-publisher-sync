@@ -19,13 +19,13 @@
 
 ### 🔄 Data Flow
 
-The ai-blog sync runs as steps 3 and 5 of the backfill-blog-images task.
+The ai-blog sync runs as part of the backfill-blog-images task.
 
-Step 1: Pull vault posts for all content directories (vault to repo).
-Step 2: Backfill blog images (max 1 per hour).
-Step 3 (NEW): Scan ai-blog posts and add missing navigation links (⏮️/⏭️).
-Step 4: Sync modified repo files back to vault.
-Step 5 (NEW): Link newly-linked ai-blog posts from their respective daily reflections.
+Step 1: Sync new AI blog posts from repo to vault. Uses word-based Jaccard similarity (threshold 0.25) to distinguish genuinely new posts from renamed or modified versions of existing vault files. Never overwrites.
+Step 2: Backfill blog images (max 4 per hour).
+Step 3: Scan ai-blog posts in vault and add missing navigation links (⏮️/⏭️).
+Step 4: Add update links from image backfill results to daily reflections.
+Step 5: Link AI blog posts to their date's daily reflection with a dedicated AI Blog section.
 Step 6: Push vault.
 
 ### 🧭 Navigation Links

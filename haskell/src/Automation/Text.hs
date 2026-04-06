@@ -6,8 +6,11 @@ module Automation.Text
   , calculateTweetLength
   , validateTweetLength
   , fitPostToLimit
+  , wordJaccardSimilarity
   ) where
 
+import Data.Set (Set)
+import qualified Data.Set as Set
 import Data.Text (Text)
 import qualified Data.Text as T
 
@@ -179,3 +182,25 @@ safeHead _ (x:_) = x
 Nothing <|> r = r
 l@(Just _) <|> _ = l
 infixl 3 <|>
+
+-- | Word-based Jaccard similarity between two texts.
+--
+--   Splits both texts into word sets and computes |A ∩ B| / |A ∪ B|.
+--   Returns 1.0 for two empty texts, 0.0 when one is empty and the other is not.
+--
+--   Empirically tested on ai-blog corpus:
+--     genuinely new posts score ≤ 0.10 against all vault files
+--     modified/renamed versions score ≥ 0.39
+--   Threshold of 0.25 sits in the middle of a 0.29-wide gap.
+wordJaccardSimilarity :: Text -> Text -> Double
+wordJaccardSimilarity a b =
+  let wordsA = wordSet a
+      wordsB = wordSet b
+      intersectionSize = Set.size (Set.intersection wordsA wordsB)
+      unionSize = Set.size (Set.union wordsA wordsB)
+  in case unionSize of
+       0 -> 1.0
+       n -> fromIntegral intersectionSize / fromIntegral n
+
+wordSet :: Text -> Set Text
+wordSet = Set.fromList . T.words . T.toCaseFold

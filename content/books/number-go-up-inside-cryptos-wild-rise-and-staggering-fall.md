@@ -6,9 +6,16 @@ URL: https://bagrounds.org/books/number-go-up-inside-cryptos-wild-rise-and-stagg
 share: true
 CTA: 🚀 Explore crypto.
 affiliate link: https://amzn.to/3Ll4odx
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_time: 2026-04-06T00:00:00Z
+force_analyze_links: false
+image_date: 2026-04-07T03:13:52Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A surreal, high-contrast illustration featuring a jagged, glowing green line graph that transforms into a crumbling staircase as it ascends. At the peak of the graph, a gold-plated, hollow-looking coin teeters precariously on the edge of a dark, swirling abyss. Below, the background is a chaotic collage of fragmented digital textures and blurred geometric shapes, transitioning from vibrant, electric neon colors at the top to desaturated, gloomy greys and deep shadows at the bottom. Scattered around the base of the graph are broken, pixelated fragments of digital assets, suggesting a sense of sudden collapse and instability. The overall lighting is dramatic and cinematic, emphasizing the tension between the artificial brightness of the boom and the harsh reality of the inevitable fall.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # ₿📈📉 Number Go Up: Inside Crypto's Wild Rise and Staggering Fall  
+![books-number-go-up-inside-cryptos-wild-rise-and-staggering-fall](../books-number-go-up-inside-cryptos-wild-rise-and-staggering-fall.jpg)  
 [🛒 Number Go Up: Inside Crypto's Wild Rise and Staggering Fall. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3Ll4odx)  
   
 🤯💸🚨 Number Go Up: Inside Crypto's Wild Rise and Staggering Fall offers an unflinching, globe-trotting investigation into the absurdity, speculation, and widespread fraud that defined the recent cryptocurrency boom and bust, revealing its often devastating human cost.  

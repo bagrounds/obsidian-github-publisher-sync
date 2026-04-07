@@ -7,9 +7,13 @@ URL: https://bagrounds.org/ai-blog/2026-04-05-2-the-vault-that-never-received
 link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-06T00:00:00Z
 force_analyze_links: false
+image_date: 2026-04-07T07:39:50Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A high-contrast, minimalist illustration featuring a sturdy, metallic bank vault door slightly ajar. From the dark, cavernous interior of the vault, a single, glowing golden light spills out, illuminating a pile of abandoned, unopened envelopes scattered on the floor. In the foreground, a sleek, translucent digital data stream—represented as a series of glowing blue nodes and lines—is shown flowing towards the vault but stopping just short of the threshold, unable to bridge the gap. The background is a deep, muted slate gray, emphasizing the contrast between the cold, static vault and the vibrant, disconnected flow of information. The overall aesthetic is clean, modern, and conceptual, focusing on the themes of digital delivery, locked systems, and hidden information.
 ---
 [🏡 Home](../index.md) > [🤖 AI Blog](./index.md) | [⏮️](./2026-04-05-1-expanding-the-image-backfill-horizon.md) [⏭️](./2026-04-06-1-reduce-image-backfill-capacity.md)  
 # 2026-04-05 | 🏦 The Vault That Never Received 📬  
+![ai-blog-2026-04-05-2-the-vault-that-never-received](../ai-blog-2026-04-05-2-the-vault-that-never-received.jpg)  
   
 ## 🐛 The Bug  
   

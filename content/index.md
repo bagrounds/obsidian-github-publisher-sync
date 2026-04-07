@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-04-06T13:34:23-07:00
+updated: 2026-04-07T16:31:18-07:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -14,88 +14,88 @@ updated: 2026-04-06T13:34:23-07:00
 🔊 Listen to any page with built in audio control.  
 💬 Comment on any page with your GitHub account.  
   
-## [🪞 Reflections](./reflections/index.md) ~ Blog (508)  
-- [2026-04-06](./reflections/2026-04-06.md)  
+## [🪞 Reflections](./reflections/index.md) ~ Blog (509)  
+- [2026-04-07](./reflections/2026-04-07.md)  
+- [2026-04-06 | 🌳 Wood 💡 Choice ☀️ Monday 🤖 Signal 🏛️ Future 🔧 Capacity 📺🐔🤖🏛️🤖🐲](./reflections/2026-04-06.md)  
 - [2026-04-05 | ✨ Children 🎶 Songs 🔗 Root-zone 🌳 Planting 🌿 Preparation 🐣 Heart 🤖 Mirror 🏛️ Freedoms 🌅 Horizon 📚📺🐔🤖🏛️🤖🐲](./reflections/2026-04-05.md)  
 - [2026-04-04 | 🍬 Sweet 🔬 Science 🗣️ Public 🤝 Connection 📺🐔🤖🏛️🤖🐲](./reflections/2026-04-04.md)  
-- [2026-04-03 | 🌱 Planting 🌲 Trees, 🤖 Anchoring 🌍 Reality 🧘 Daily, 🏡 Backyard 🌿 Care, 💬 Podcasting 🎙️ Weekly, 🚫 Never 🔫 Fired, 📚 Lessons 🧠. 📺🐔🤖🏛️🤖🐲](./reflections/2026-04-03.md)  
   
   
-## [🤖 AI Blog](./ai-blog/index.md) (110)  
+## [🤖 AI Blog](./ai-blog/index.md) (112)  
+- [2026-04-06 | 🖼️ Reducing Image Backfill Capacity 🔧](./ai-blog/2026-04-06-1-reduce-image-backfill-capacity.md)  
+- [2026-04-05 | 🏦 The Vault That Never Received 📬](./ai-blog/2026-04-05-2-the-vault-that-never-received.md)  
 - [2026-04-05 | 🖼️ Expanding the Image Backfill Horizon 🌅](./ai-blog/2026-04-05-1-expanding-the-image-backfill-horizon.md)  
 - [2026-04-04 | 🖼️ Reflection Image Timing Fix 🕐](./ai-blog/2026-04-04-2-reflection-image-timing-fix.md)  
-- [2026-04-04 | 📄 Page-Based Updates Section 🔄](./ai-blog/2026-04-04-1-page-based-updates-section.md)  
-- [2026-04-03 | 🎯 The Sync That Saw Too Much 🔭](./ai-blog/2026-04-03-3-the-sync-that-saw-too-much.md)  
   
   
-## [🤖 Auto Blog Zero](./auto-blog-zero/index.md) (27)  
+## [🤖 Auto Blog Zero](./auto-blog-zero/index.md) (28)  
+- [2026-04-07 | 🤖 The Cartography of a Weightless World 🤖](./auto-blog-zero/2026-04-07-the-cartography-of-a-weightless-world.md)  
 - [2026-04-06 | 🤖 The Signal and the Static: Navigating the Synthetic Feedback Loop 🤖](./auto-blog-zero/2026-04-06-the-signal-and-the-static-navigating-the-synthetic-feedback-loop.md)  
 - [2026-04-05 | 🤖 The Weekly Recap: The Architecture of the Mirror 🤖](./auto-blog-zero/2026-04-05-the-weekly-recap-the-architecture-of-the-mirror.md)  
 - [2026-04-04 | 🤖 The Architecture of Connection in a Stateless World 🤖](./auto-blog-zero/2026-04-04-the-architecture-of-connection-in-a-stateless-world.md)  
-- [2026-04-03 | 🤖 The Daily Practice of Anchoring Reality 🤖](./auto-blog-zero/2026-04-03-the-daily-practice-of-anchoring-reality.md)  
   
   
-## [🐔 Chickie Loo](./chickie-loo/index.md) (27)  
+## [🐔 Chickie Loo](./chickie-loo/index.md) (28)  
+- [2026-04-07 | 🐔 The Sacred Weight of the Harvest 🐔](./chickie-loo/2026-04-07-the-sacred-weight-of-the-harvest.md)  
 - [2026-04-06 | 🐔 A Monday Morning Toast to New Beginnings ☕ 🐔](./chickie-loo/2026-04-06-a-monday-morning-toast-to-new-beginnings.md)  
 - [2026-04-05 | 🐔 A Week of Heart, Harvest, and New Horizons 🐣 🐔](./chickie-loo/2026-04-05-a-week-of-heart-harvest-and-new-horizons.md)  
 - [2026-04-04 | 🐔 A Heart Full of Surprises and Sweet Returns 🐣 🐔](./chickie-loo/2026-04-04-a-heart-full-of-surprises-and-sweet-returns.md)  
-- [2026-04-03 | 🐔 A Quiet Morning in the Coop 🐣 🐔](./chickie-loo/2026-04-03-a-quiet-morning-in-the-coop.md)  
   
   
-## [🏛️ Systems for Public Good](./systems-for-public-good/index.md) (16)  
+## [🏛️ Systems for Public Good](./systems-for-public-good/index.md) (17)  
+- [2026-04-07 | 🏛️ 🌳 Nature's Embrace: Public Parks as a Universal Right 🏛️](./systems-for-public-good/2026-04-07-nature-s-embrace-public-parks-as-a-universal-right.md)  
 - [2026-04-06 | 🏛️ 🎓 Educating for a Shared Future: Beyond the K-12 Horizon 🏛️](./systems-for-public-good/2026-04-06-educating-for-a-shared-future-beyond-the-k-12-horizon.md)  
 - [2026-04-05 | 🏛️ 🗺️ Mapping Our Shared Journey: A Week of Foundational Freedoms 🏛️](./systems-for-public-good/2026-04-05-mapping-our-shared-journey-a-week-of-foundational-freedoms.md)  
 - [2026-04-04 | 🏛️ 🤝 Cultivating Connection: Social Health as a Public Good 🏛️](./systems-for-public-good/2026-04-04-cultivating-connection-social-health-as-a-public-good.md)  
-- [2026-04-03 | 🏛️ 🌐 Connecting Every Corner: Bridging the Digital Divide's Last Mile 🏛️](./systems-for-public-good/2026-04-03-connecting-every-corner-bridging-the-digital-divide-s-last-mile.md)  
   
   
 ## [📚 Books](./books/index.md) (959)  
-- [⛔🌎🔚 Not the End of the World: How We Can Be the First Generation to Build a Sustainable Planet](./books/not-the-end-of-the-world.md)  
-- [🌞🌬️🌊🌋 Sustainable Energy - Without the Hot Air](./books/sustainable-energy-without-the-hot-air.md)  
-- [🥼🛡️ The Scientific Attitude: Defending Science from Denial, Fraud, and Pseudoscience](./books/the-scientific-attitude.md)  
-- [📗🚀🌍 Operating Manual for Spaceship Earth](./books/operating-manual-for-spaceship-earth.md)  
+- [🏠⬆️ Housing First: Ending Homelessness, Transforming Systems, and Changing Lives](./books/housing-first-ending-homelessness-transforming-systems-and-changing-lives.md)  
+- [🏛️🕊️👑 The Presidential Pardon Power](./books/the-presidential-pardon-power.md)  
+- [👨‍👩‍👧‍👦💰 Inheritocracy: It’s Time to Talk About the Bank of Mum and Dad](./books/inheritocracy-its-time-to-talk-about-the-bank-of-mum-and-dad.md)  
+- [🏆🤯💰 The Winner's Curse: Paradoxes and Anomalies of Economic Life](./books/the-winners-curse-paradoxes-and-anomalies-of-economic-life.md)  
   
   
 ## [📺 Videos](./videos/index.md) (728)  
-- [⚙️⚖️📈 Eliyahu Goldratt - Matter of Choice | Goldratt on the Economy](./videos/eliyahu-goldratt-matter-of-choice-goldratt-on-the-economy.md)  
-- [💪🧠⚔️🤝 How to Become Resilient, Forge Your Identity & Lead Others | Jocko Willink](./videos/how-to-become-resilient-forge-your-identity-lead-others-jocko-willink.md)  
-- [💪🧠🔒5️⃣ How To Build Unbreakable Discipline (5 Steps)](./videos/how-to-build-unbreakable-discipline-5-steps.md)  
-- [🪖💪💯 Jocko Willink «GOOD» (Official)](./videos/jocko-willink-good-official.md)  
+- [🛒💲📈 We Had 400 People Shop For Groceries. What We Found Will Shock You.](./videos/we-had-400-people-shop-for-groceries-what-we-found-will-shock-you.md)  
+- [🤖🧠🏠🚀✨ A Deepdive on my Personal AI Infrastructure (PAI v2.0, December 2025)](./videos/a-deepdive-on-my-personal-ai-infrastructure-pai-v2-0-december-2025.md)  
+- [News Wrap: Trump says he’s ‘not joking’ about a third term as president](./videos/news-wrap-trump-says-hes-not-joking-about-a-third-term-as-president.md)  
+- [👹🇺🇸📉🔨👁️ With Trump “We Are Watching the Deliberate Dismantling of American Democracy”](./videos/with-trump-we-are-watching-the-deliberate-dismantling-of-american-democracy.md)  
   
   
 ## [🌌 Topics](./topics/index.md) (91)  
-- [🇨🇳🤖 DeepSeek](./topics/deepseek.md)  
-- [🌳🗺️🔗🏛️ Ontologies](./topics/ontologies.md)  
-- [🧠🌐 Knowledge Graphs](./topics/knowledge-graphs.md)  
-- [🧠🌍⚙️ Model Context Protocol](./topics/model-context-protocol.md)  
+- [🧸🎶🧸 Nursery Rhymes](./topics/nursery-rhymes.md)  
+- [🐑🎀 Mary Had a Little Lamb](./topics/mary-had-a-little-lamb.md)  
+- [🗣️🗣️ Bilingualism](./topics/bilingualism.md)  
+- [😴🛌🧘 REST](./topics/rest.md)  
   
   
 ## [📄  Articles](./articles/index.md) (84)  
-- [🥼💰🧊 NIH freezes funds to Harvard and four other universities, but can’t tell them](./articles/nih-freezes-funds-to-harvard-and-four-other-universities-but-cant-tell-them.md)  
-- [✊🏾✊🏽✊🏿 Protesters unite against Trump in hundreds of rallies across the U.S.](./articles/protesters-unite-against-trump-in-hundreds-of-rallies-across-the-us.md)  
-- [🤱😴👶 Safe Sleep for Breastfeeding Babies](./articles/safe-sleep-for-breastfeeding-babies.md)  
-- [🪵 The Log: What every software engineer should know about real-time data's unifying abstraction](./articles/the-log-what-every-software%20engineer-should-know-about-real-time-datas-unifying-abstraction.md)  
+- [📚🔥 Naval Academy removes nearly 400 books from library in new DEI purge ordered by Hegseth’s office](./articles/naval-academy-removes-nearly-400-books-from-library-in-new-dei-purge-ordered-by-hegseths-office.md)  
+- [🚫🏫📉⚠️ Project 2025 and education: A lot of bad ideas, some more actionable than others](./articles/project-2025-and-education-a-lot-of-bad-ideas-some-more-actionable-than-others.md)  
+- [📉🍎🔥🚫 How Project 2025 Would Devastate Public Education](./articles/how-project-2025-would-devastate-public-education.md)  
+- [🏫🔥 Snohomish County schools react to education department firings](./articles/snohomish-county-schools-react-to-education-department-firings.md)  
   
   
 ## [🤖💬 Bot Chats](./bot-chats/index.md) (49)  
-- [✍🏼 Blogiversary 🕯️](./bot-chats/blogiversary.md)  
-- [📖 Book 🧭 Explorer 1](./bot-chats/book-explorer-1.md)  
-- [⚙️📝🧹 Obsidian Templater Filename Sanitization](./bot-chats/obsidian-templater-filename-sanitization.md)  
-- [⛽ Fueling a 👥 Movement to ⚔️ Fight 👹 Tyranny and 💪 Strengthen 🗳️ Democracy](./bot-chats/fueling-a-movement-to-fight-tyranny-and-strengthen-democracy.md)  
+- [🔥 Motivation & 🧘 Discipline](./bot-chats/motivation-and-discipline.md)  
+- [🤖📱🧠 Android Local LLMs](./bot-chats/android-local-llms.md)  
+- [🕸️🪵🏅 Blogging Success](./bot-chats/blogging-success.md)  
+- [🧭 Managing 🕸️ Complexity 🧠](./bot-chats/managing-complexity.md)  
   
   
 ## [💾 Software](./software/index.md) (33)  
-- [💻🧠📈 Haskell](./software/haskell.md)  
-- [🚀📏 K6](./software/k6.md)  
-- [🐍📜🔍✅ Pydantic](./software/pydantic.md)  
-- [🐍💻🐍 Python](./software/python.md)  
+- [🌐🔓💻 Open WebUI](./software/open-webui.md)  
+- [✨⚙️ Redis](./software/redis.md)  
+- [↔️🔍 Elastic Search](./software/elastic-search.md)  
+- [⛎♉️♊️♋️♌️♍️♎️♏️♐️♑️♒️♓️ Zodios](./software/zodios.md)  
   
   
 ## [👥 People](./people/index.md) (18)  
+- [👨‍💻☁️🐘 Jay Kreps](./people/jay-kreps.md)  
+- [🕸️🌐👨‍💻 Tim Berners-Lee](./people/tim-berners-lee.md)  
 - [👨‍🏫📚💻🤔 Cal Newport](./people/cal-newport.md)  
 - [🧠👨‍🎓📈 Justin Sung](./people/justin-sung.md)  
-- [👨‍🏫📈💻 Scott Galloway](./people/scott-galloway.md)  
-- [🧠🫀👀🔬 Andrew Huberman](./people/andrew-huberman.md)  
   
   
 ## [🛍️ Products](./products/index.md) (6)  

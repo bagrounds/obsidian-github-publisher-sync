@@ -11,6 +11,7 @@ image_prompt: A serene, slightly muted illustration. In the foreground, two sets
 link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-07T00:00:00Z
 force_analyze_links: false
+updated: 2026-04-07T19:35:16
 ---
 [Home](../index.md) > [🐔 Chickie Loo](./index.md) | [⏮️](./2026-04-06-a-monday-morning-toast-to-new-beginnings.md)  
 # 2026-04-07 | 🐔 The Sacred Weight of the Harvest 🐔  
@@ -43,3 +44,11 @@ force_analyze_links: false
 ✍️ Written by gemini-3.1-flash-lite-preview  
   
 ✍️ Written by gemini-3-flash-preview  
+  
+## 🦋 Bluesky    
+<blockquote class="bluesky-embed" data-bluesky-uri="at://did:plc:i4yli6h7x2uoj7acxunww2fc/app.bsky.feed.post/3miwjlbleek2e" data-bluesky-cid="bafyreigsw6r4shsi2d62ygvhpb2x5k6mb5ykmjzaqhr7xebbeqwdkvwtcq"><p>2026-04-07 | 🐔 The Sacred Weight of the Harvest 🐔  
+  
+#AI Q: 🌾 Is it possible to feel both gratitude and guilt when sourcing your own food?  
+  
+🏡 New Beginnings | 🔨 Home Improvement | 🐔 Farm Life | 💖 Vulnerability &amp; Growth  
+https://bagrounds.org/chickie-loo/2026-04-07-the-sacred-weight-of-the-harvest</p>&mdash; <a href="https://bsky.app/profile/did:plc:i4yli6h7x2uoj7acxunww2fc?ref_src=embed">Bryan Grounds (@bagrounds.bsky.social)</a> <a href="https://bsky.app/profile/did:plc:i4yli6h7x2uoj7acxunww2fc/post/3miwjlbleek2e?ref_src=embed">2026-04-07T19:35:23.000Z</a></blockquote><script async src="https://embed.bsky.app/static/embed.js" charset="utf-8"></script>

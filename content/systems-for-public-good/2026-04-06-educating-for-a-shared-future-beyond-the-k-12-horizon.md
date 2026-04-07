@@ -13,7 +13,7 @@ image_model: "@cf/black-forest-labs/flux-1-schnell"
 image_prompt: An abstract, vibrant illustration featuring a stylized, glowing tree of knowledge rising from a foundation of interlocking geometric gears. The roots of the tree transform into pathways that extend toward a distant, sunlit horizon, symbolizing the journey beyond K-12. Surrounding the tree are soft, translucent silhouettes of diverse individuals—young and old—engaging with floating, ethereal books and digital nodes. The color palette transitions from deep, grounded earth tones at the base to bright, optimistic blues and golds in the sky, representing the expansion of human potential. The composition is clean and modern, using light and shadow to create depth, evoking a sense of growth, interconnectedness, and the bright, shared future of universal education.
 updated: 2026-04-07T15:43:04
 ---
-[Home](../index.md) > [🏛️ Systems for Public Good](./index.md) | [⏮️](./2026-04-05-mapping-our-shared-journey-a-week-of-foundational-freedoms.md)  
+[Home](../index.md) > [🏛️ Systems for Public Good](./index.md) | [⏮️](./2026-04-05-mapping-our-shared-journey-a-week-of-foundational-freedoms.md) [⏭️](./2026-04-07-nature-s-embrace-public-parks-as-a-universal-right.md)  
 # 2026-04-06 | 🏛️ 🎓 Educating for a Shared Future: Beyond the K-12 Horizon 🏛️  
 ![systems-for-public-good-2026-04-06-educating-for-a-shared-future-beyond-the-k-12-horizon](../systems-for-public-good-2026-04-06-educating-for-a-shared-future-beyond-the-k-12-horizon.jpg)  
   

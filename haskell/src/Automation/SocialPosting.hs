@@ -2,6 +2,7 @@ module Automation.SocialPosting
   ( Platform (..)
   , ContentNote (..)
   , ContentToPost (..)
+  , PostedNote (..)
   , FindContentConfig (..)
   , autoPost
   , discoverContentToPost
@@ -90,9 +91,6 @@ platformDetail :: Platform -> Text
 platformDetail Twitter  = "🐦 posted to Twitter"
 platformDetail Bluesky  = "🦋 posted to BlueSky"
 platformDetail Mastodon = "🐘 posted to Mastodon"
-
-platformDetails :: ContentNote -> [Text]
-platformDetails cn = fmap platformDetail (Set.toList (cnPostedPlatforms cn))
 
 data ContentNote = ContentNote
   { cnFilePath       :: FilePath
@@ -741,7 +739,12 @@ postToMastodonPlatform manager env _note postText =
 -- Posting pipeline
 --------------------------------------------------------------------------------
 
-runPostingPipeline :: Manager -> EnvironmentConfig -> Text -> FilePath -> IO [ContentNote]
+data PostedNote = PostedNote
+  { pnNote      :: ContentNote
+  , pnPlatforms :: [Platform]
+  } deriving (Show, Eq)
+
+runPostingPipeline :: Manager -> EnvironmentConfig -> Text -> FilePath -> IO [PostedNote]
 runPostingPipeline manager env apiKey vaultDir = do
   let platforms = getConfiguredPlatforms env
   putStrLn $ "  🔍 Configured platforms: " <> show platforms
@@ -780,7 +783,7 @@ groupByNote items =
     merge (p1, n, path) (p2, _, _) = (p1 <> p2, n, path)
 
 processNoteGroup :: Manager -> EnvironmentConfig -> Text -> FilePath
-                 -> ([Platform], ContentNote, [Text]) -> IO (Maybe ContentNote)
+                 -> ([Platform], ContentNote, [Text]) -> IO (Maybe PostedNote)
 processNoteGroup manager env apiKey vaultDir (platforms, note, pathFromRoot) = do
   putStrLn $ "  📝 Processing: " <> T.unpack (cnTitle note)
   putStrLn $ "     Platforms: " <> show platforms
@@ -793,6 +796,7 @@ processNoteGroup manager env apiKey vaultDir (platforms, note, pathFromRoot) = d
       embedSections = fmap
         (\pr -> (platformSectionHeader (prPlatform pr), prEmbedHtml pr, prSectionBuilder pr))
         successes
+      postedPlatforms = fmap prPlatform successes
 
   case embedSections of
     [] -> do
@@ -801,7 +805,7 @@ processNoteGroup manager env apiKey vaultDir (platforms, note, pathFromRoot) = d
     _  -> do
       Sync.writeEmbedsToNote (cnFilePath note) embedSections
       putStrLn $ "  ✅ " <> show (length successes) <> " embeds written"
-      pure (Just note)
+      pure (Just (PostedNote note postedPlatforms))
 
 postForPlatform :: Manager -> EnvironmentConfig -> Text -> ContentNote -> Platform
                 -> IO (Either Text PostResult)
@@ -844,8 +848,9 @@ autoPost manager vaultDir = do
 
   let reflectionsDir = vaultDir </> "reflections"
   DateStr todayStr <- todayPacific
-  let updateLinks = fmap (\cn ->
-        UpdateLink (cnRelativePath cn) (cnTitle cn) (platformDetails cn)
+  let updateLinks = fmap (\pn ->
+        let details = fmap platformDetail (pnPlatforms pn)
+        in UpdateLink (cnRelativePath (pnNote pn)) (cnTitle (pnNote pn)) details
         ) postedNotes
   _ <- addUpdateLinksToReflection reflectionsDir todayStr updateLinks
   pure ()

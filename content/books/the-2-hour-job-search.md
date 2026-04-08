@@ -7,6 +7,9 @@ URL: https://bagrounds.org/books/the-2-hour-job-search
 Author: "[[Steve Dalton]]"
 tags:
 affiliate link: https://amzn.to/3Sx4leV
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_time: 2026-04-07T00:00:00Z
+force_analyze_links: false
 ---
 [Home](../index.md) > [Books](./index.md)  
 # ⏳💻💼🎯 The 2-Hour Job Search: Using Technology to Get the Right Job Faster  

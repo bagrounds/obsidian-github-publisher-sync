@@ -2,7 +2,7 @@
 
 ## Current State Summary
 
-The Haskell codebase was ported from TypeScript and inherited several patterns that don't leverage Haskell's strengths for safety and correctness. The code works well and has good test coverage (800+ tests), but can be improved to better prevent accidental breakage and improve modularity.
+The Haskell codebase was ported from TypeScript and inherited several patterns that don't leverage Haskell's strengths for safety and correctness. The code works well and has good test coverage (830+ tests), but can be improved to better prevent accidental breakage and improve modularity.
 
 ### Key Issues Identified
 
@@ -24,25 +24,25 @@ Follow the **Functional Core, Imperative Shell** pattern:
 
 ## Incremental Improvement Plan
 
-Each phase is a vertical slice: types, logic, tests, and documentation delivered together. Every phase is a standalone PR.
+Each item is a **vertical slice**: domain types, pure logic extraction, result types, tests, and documentation delivered together in one PR. Never separate type introduction from function extraction — they are one concern.
 
-### Phase 1: Pure Function Extraction + Tests
+### Completed: Pure Extraction + Domain Types
 
-**Goal**: Identify functions that are IO but contain pure logic, extract the pure core, and add deterministic tests for each.
+Each function was extracted as a pure core with proper domain types, tested with property-based and unit tests:
 
-**Candidates** (each delivered with property-based and unit tests):
-- [x] `SocialPosting.isReflectionEligibleForPosting` — done (uses `Day` and `TimeOfDay`)
-- [x] `Scheduler.nowPacificHour` — `pacificHour` already pure, added property test (0-23) and unit tests for PST/PDT.
-- [x] `Env.getYesterdayDate` — extracted pure `yesterdayDate :: UTCTime -> Day`. Added property test and unit tests.
-- [x] `SocialPosting.findMostRecentReflection` — extracted pure `selectMostRecentReflection :: [String] -> Maybe Text`. Consolidated duplicate in InternalLinking. Added tests.
-- [x] `BlogImage.checkCandidate` — extracted pure `checkCandidateEligibility :: Text -> Text -> Text -> Text -> Maybe Bool`. Added tests for eligibility logic.
-- [x] `Scheduler.blogPostExistsForToday` — extracted pure `blogPostMatchesToday :: Text -> [String] -> Bool`. Added tests for matching logic.
+- [x] `SocialPosting.isReflectionEligibleForPosting` — uses `Day` and `TimeOfDay` domain types
+- [x] `Scheduler.pacificHour` — already pure, property test (result always 0-23) and PST/PDT unit tests
+- [x] `Env.yesterdayDate :: UTCTime -> Day` — pure core extracted from IO wrapper
+- [x] `SocialPosting.selectMostRecentReflection :: [String] -> Maybe Text` — consolidated duplicate from InternalLinking
+- [x] `Scheduler.blogPostMatchesToday :: Text -> [String] -> Bool` — pure filename matching
+- [x] `BlogImage.checkCandidateEligibility` — uses `ContentDirectoryId` ADT, `Day` for dates, `CandidateEligibility` result type (with `IneligibilityReason` ADT instead of `Maybe Bool`)
+- [x] `BlogImage.ContentDirectoryId` — closed ADT for the 13 content directory IDs, with round-trip `toText`/`fromText` and `Bounded`/`Enum`
+- [x] `BlogImage.parseDateFromFilename :: Text -> Maybe Day` — returns proper `Day` instead of `Text`
+- [x] `BlogImage.BackfillCandidate` — uses `ContentDirectoryId` and `Day` instead of `Text`
 
-### Phase 2: Domain Types + Tests
+### Next: Remaining Domain Types
 
-**Goal**: Introduce newtypes for commonly confused domain values, with smart constructors and property tests.
-
-Each type delivered as a vertical slice with constructor, tests, and migration of one or two call sites:
+Each type delivered as a vertical slice with constructor, tests, and migration of call sites:
 - [ ] `newtype Url = Url Text` with smart constructor validating it starts with `https://`. Property: constructed `Url` always starts with `https://`.
 - [ ] `newtype Title = Title Text` for display titles
 - [ ] Promote `DateStr` — already exists in `BlogPrompt`, extend to `Types.hs` for shared use
@@ -50,7 +50,7 @@ Each type delivered as a vertical slice with constructor, tests, and migration o
 - [ ] `newtype ApiKey = ApiKey Text` to prevent logging secrets. Smart constructor, `Show` instance redacts.
 - [ ] `data PlatformLimits = PlatformLimits { maxChars :: Int, urlLength :: Int }` for platform limits
 
-### Phase 3: AppContext Record + Tests
+### Next: AppContext Record + Tests
 
 **Goal**: Replace parameter threading with a shared context record, with tests for context construction.
 
@@ -61,7 +61,7 @@ Delivered as a single vertical slice:
 - [ ] Test context construction and validation
 - [ ] Consider `ReaderT AppContext IO` monad if parameter threading becomes unwieldy
 
-### Phase 4: Explicit Error Types + Tests
+### Next: Explicit Error Types + Tests
 
 **Goal**: Replace `Either Text` and silent failures with domain error ADTs, with tests for error paths.
 
@@ -71,7 +71,7 @@ Each error migration delivered with test coverage:
 - [ ] Replace silent empty-string returns (like `findBestMatch` returning `""`) with `Maybe` or `Either`. Test the Nothing/Left paths.
 - [ ] Replace `error` calls in non-startup code with `Either` returns. Test failure scenarios.
 
-### Phase 5: Separate Data from Behavior in ImageProviderConfig + Tests
+### Next: Separate Data from Behavior in ImageProviderConfig + Tests
 
 **Goal**: Remove IO callbacks from `ImageProviderConfig`, with tests for each provider type.
 
@@ -80,7 +80,7 @@ Each error migration delivered with test coverage:
 - [ ] Keep `ImageProviderConfig` as pure data (name, API key, model, provider type)
 - [ ] Test provider configuration and selection logic
 
-### Phase 6: Break Up RunScheduled.hs + Tests
+### Next: Break Up RunScheduled.hs + Tests
 
 **Goal**: Split the 913-line orchestrator into focused modules, each with its own tests.
 
@@ -91,9 +91,10 @@ Each error migration delivered with test coverage:
 
 ## Guiding Principles
 
-1. **Vertical slices**: Every phase delivers types, logic, tests, and documentation together. Never defer testing to a later phase.
+1. **Vertical slices**: Every improvement delivers types, logic, tests, and documentation together. Never separate pure extraction from domain type introduction — they are one concern.
 2. **Test first**: Write failing tests for the new pure signatures before implementing the logic.
 3. **One change per PR**: Each improvement should be a single focused PR that can be reviewed and merged independently.
 4. **Always green**: Every intermediate state must build and pass all tests.
 5. **Backward compatible exports**: When changing function signatures, keep the old signature available (as an IO wrapper) until all callers are migrated.
 6. **No big bang**: Never refactor more than one module at a time.
+7. **Domain types at extraction**: When extracting a pure function, always use proper domain types (ADTs for closed sets, Day for dates, newtypes for domain concepts). Never extract with primitive Text parameters.

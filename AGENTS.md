@@ -67,13 +67,15 @@ URL: https://bagrounds.org/ai-blog/2026-03-08-1-auto-post-mastodon
 ## Haskell Architecture Best Practices
 - 🧅 Functional Core, Imperative Shell: keep domain logic in pure functions, push IO to the edges. Never add IO to a function signature unless it truly needs side effects.
 - 🧊 Separate data from behavior: model domain concepts as pure data types and write pure functions over them. Avoid embedding IO callbacks in data structures.
-- 🏷️ Domain types over primitives: prefer newtypes and ADTs over raw Text, String, or Int for domain concepts like URLs, titles, dates, and platform limits. This prevents mixing up values that share a representation.
+- 🏷️ Domain types over primitives: prefer newtypes and ADTs over raw Text, String, or Int for domain concepts like URLs, titles, dates, and platform limits. This prevents mixing up values that share a representation. When extracting a pure function, always introduce proper domain types in the same change — never extract a pure function with primitive Text parameters when a domain type exists or should be created.
+- 🔒 Closed sets as ADTs: when a value comes from a fixed, known set (such as content directory IDs, platform names, or task identifiers), model it as a sum type with one constructor per variant. Never use raw Text for a closed set. Include round-trip functions (toText and fromText) and derive Bounded and Enum for exhaustive testing.
 - 📦 Smart constructors: use validated newtypes with smart constructors for values with invariants (such as similarity thresholds between zero and one or valid URLs).
 - 🔀 Explicit error types: prefer Either with domain-specific error ADTs over throwing exceptions or returning empty defaults. Reserve exceptions for truly unrecoverable failures.
 - 📖 ReaderT for shared context: when multiple functions need the same environment (Manager, config, vault path), prefer a ReaderT-based context over threading individual parameters.
 - 🧩 Small focused modules: each module should do one thing. Break large orchestrators into smaller feature-specific modules.
 - 🔬 Testability by design: if a function can be pure, make it pure. Pass time, randomness, and other ambient values as parameters so tests can be deterministic.
 - 🔧 Result types over Booleans: when a function checks eligibility, prefer returning a descriptive result type (such as Eligible or IneligibleBecause reason) over bare Bool to preserve decision context.
+- 📐 Vertical slices: every architecture improvement must deliver types, logic, tests, and documentation together. Never separate pure extraction from domain type introduction — they are one concern.
 
 ## Obsidian Vault is the Source of Truth
 - 📱 The `content/` directory is a **read-only one-way sync** from the Obsidian vault on the user's phone. Never write to `content/` from GitHub Actions or scripts.

@@ -3,6 +3,9 @@ module Automation.BlogImage
   , ImageProviderConfig (..)
   , BackfillConfig (..)
   , BackfillResult (..)
+  , ContentDirectoryId (..)
+  , CandidateEligibility (..)
+  , IneligibilityReason (..)
   , hasEmbeddedImage
   , shouldRegenerateImage
   , insertImageEmbed
@@ -26,7 +29,9 @@ module Automation.BlogImage
   , isPostFile
   , shouldHaveImage
   , isDateOnlyTitle
-  , extractDateFromFilename
+  , parseDateFromFilename
+  , contentDirectoryIdFromText
+  , contentDirectoryIdToText
   , checkCandidateEligibility
   , removeImageEmbed
   , generateWithCloudflare
@@ -47,7 +52,8 @@ import Data.Text (Text)
 import qualified Data.Text as T
 import qualified Data.Text.Encoding as TE
 import qualified Data.Text.IO as TIO
-import Data.Time (defaultTimeLocale, formatTime, getCurrentTime)
+import Data.Time (Day, defaultTimeLocale, formatTime, getCurrentTime)
+import Data.Time.Format (parseTimeM)
 import Network.HTTP.Client
   ( Manager
   , Request (..)
@@ -113,11 +119,71 @@ data BackfillResult = BackfillResult
 
 data BackfillCandidate = BackfillCandidate
   { bcFilePath          :: FilePath
-  , bcDirId             :: Text
+  , bcDirectoryId       :: ContentDirectoryId
   , bcFilename          :: Text
-  , bcDate              :: Text
+  , bcDate              :: Day
   , bcNeedsRegeneration :: Bool
   }
+
+data ContentDirectoryId
+  = Reflections
+  | AiBlog
+  | AutoBlogZero
+  | ChickieLoo
+  | SystemsForPublicGood
+  | Articles
+  | Books
+  | BotChats
+  | Games
+  | Products
+  | Software
+  | Tools
+  | Topics
+  deriving (Show, Eq, Ord, Bounded, Enum)
+
+contentDirectoryIdToText :: ContentDirectoryId -> Text
+contentDirectoryIdToText = \case
+  Reflections          -> "reflections"
+  AiBlog               -> "ai-blog"
+  AutoBlogZero         -> "auto-blog-zero"
+  ChickieLoo           -> "chickie-loo"
+  SystemsForPublicGood -> "systems-for-public-good"
+  Articles             -> "articles"
+  Books                -> "books"
+  BotChats             -> "bot-chats"
+  Games                -> "games"
+  Products             -> "products"
+  Software             -> "software"
+  Tools                -> "tools"
+  Topics               -> "topics"
+
+contentDirectoryIdFromText :: Text -> Maybe ContentDirectoryId
+contentDirectoryIdFromText = \case
+  "reflections"            -> Just Reflections
+  "ai-blog"               -> Just AiBlog
+  "auto-blog-zero"        -> Just AutoBlogZero
+  "chickie-loo"           -> Just ChickieLoo
+  "systems-for-public-good" -> Just SystemsForPublicGood
+  "articles"              -> Just Articles
+  "books"                 -> Just Books
+  "bot-chats"             -> Just BotChats
+  "games"                 -> Just Games
+  "products"              -> Just Products
+  "software"              -> Just Software
+  "tools"                 -> Just Tools
+  "topics"                -> Just Topics
+  _                       -> Nothing
+
+data CandidateEligibility
+  = Eligible { needsRegeneration :: Bool }
+  | Ineligible IneligibilityReason
+  deriving (Show, Eq)
+
+data IneligibilityReason
+  = FutureReflection
+  | AlreadyHasImage
+  | UntitledReflection
+  deriving (Show, Eq)
 
 --------------------------------------------------------------------------------
 -- Constants
@@ -298,15 +364,17 @@ hasDatePrefix t =
     && T.index t 7 == '-'
     && T.all isDigit (T.take 2 (T.drop 8 t))
 
-extractDateFromFilename :: Text -> Text
-extractDateFromFilename filename =
-  let prefix = T.take 10 filename
-  in if hasDatePrefix filename then prefix else ""
+parseDateFromFilename :: Text -> Maybe Day
+parseDateFromFilename filename =
+  if hasDatePrefix filename
+    then parseTimeM True defaultTimeLocale "%Y-%m-%d" (T.unpack (T.take 10 filename))
+    else Nothing
 
-isDateOnlyTitle :: Text -> Text -> Bool
+isDateOnlyTitle :: Text -> Day -> Bool
 isDateOnlyTitle content date =
   let title = extractTitle content
-  in title == date
+      dateText = T.pack (formatTime defaultTimeLocale "%Y-%m-%d" date)
+  in title == dateText
 
 --------------------------------------------------------------------------------
 -- Content processing
@@ -1004,8 +1072,11 @@ formatTimestamp = do
 
 backfillImages :: Manager -> BackfillConfig -> IO BackfillResult
 backfillImages manager config = do
-  today <- todayPacific
-  candidates <- collectCandidates (bfcRepoRoot config) (bfcContentDirs config) (unDateStr today)
+  dateStr <- todayPacific
+  let today = case parseTimeM True defaultTimeLocale "%Y-%m-%d" (T.unpack (unDateStr dateStr)) :: Maybe Day of
+        Just d  -> d
+        Nothing -> error $ "Invalid date from todayPacific: " <> T.unpack (unDateStr dateStr)
+  candidates <- collectCandidates (bfcRepoRoot config) (bfcContentDirs config) today
   putStrLn $ "📋 Candidates: " <> show (length candidates) <> " notes need images"
          <> " | providers: " <> show (length (bfcProviders config))
          <> " | max: " <> show (bfcMaxImages config)
@@ -1014,51 +1085,58 @@ backfillImages manager config = do
 emptyResult :: BackfillResult
 emptyResult = BackfillResult 0 0 0 [] []
 
-collectCandidates :: FilePath -> [Text] -> Text -> IO [BackfillCandidate]
-collectCandidates repoRoot contentDirs today = do
-  candidateLists <- traverse (collectFromDir repoRoot today) contentDirs
+collectCandidates :: FilePath -> [Text] -> Day -> IO [BackfillCandidate]
+collectCandidates repoRoot contentDirectories today = do
+  candidateLists <- traverse (collectFromDirectory repoRoot today) contentDirectories
   let allCandidates = concat candidateLists
       sorted = sortByDateDesc allCandidates
   pure sorted
 
-collectFromDir :: FilePath -> Text -> Text -> IO [BackfillCandidate]
-collectFromDir repoRoot today dirId = do
-  let dirPath = repoRoot </> T.unpack dirId
-  exists <- doesDirectoryExist dirPath
-  case exists of
-    False -> do
-      putStrLn $ "📁 Directory missing: " <> T.unpack dirId
+collectFromDirectory :: FilePath -> Day -> Text -> IO [BackfillCandidate]
+collectFromDirectory repoRoot today directoryIdText = do
+  let directoryPath = repoRoot </> T.unpack directoryIdText
+  exists <- doesDirectoryExist directoryPath
+  case (exists, contentDirectoryIdFromText directoryIdText) of
+    (False, _) -> do
+      putStrLn $ "📁 Directory missing: " <> T.unpack directoryIdText
       pure []
-    True -> do
-      entries <- listDirectory dirPath
+    (_, Nothing) -> do
+      putStrLn $ "⚠️  Unknown content directory: " <> T.unpack directoryIdText
+      pure []
+    (True, Just directoryId) -> do
+      entries <- listDirectory directoryPath
       let contentFiles = filter shouldHaveImage (fmap T.pack entries)
           sortedFiles = sortByTextDesc contentFiles
-      fmap concat $ traverse (checkCandidate dirPath dirId today) sortedFiles
+      fmap concat $ traverse (checkCandidate directoryPath directoryId today) sortedFiles
 
-checkCandidateEligibility :: Text -> Text -> Text -> Text -> Maybe Bool
-checkCandidateEligibility dirId today filename content =
-  let date = extractDateFromFilename filename
-  in if dirId == "reflections" && date > today
-     then Nothing
-     else
-       let needsRegen = shouldRegenerateImage content
-           untitledReflection = dirId == "reflections" && isDateOnlyTitle content date
-       in if (hasEmbeddedImage content && not needsRegen) || untitledReflection
-          then Nothing
-          else Just needsRegen
+checkCandidateEligibility :: ContentDirectoryId -> Day -> Text -> Text -> CandidateEligibility
+checkCandidateEligibility directoryId today filename content =
+  case parseDateFromFilename filename of
+    Just fileDate
+      | directoryId == Reflections && fileDate > today -> Ineligible FutureReflection
+    fileDate ->
+      let needsRegen = shouldRegenerateImage content
+          untitledReflection = directoryId == Reflections
+            && maybe False (isDateOnlyTitle content) fileDate
+      in if untitledReflection
+         then Ineligible UntitledReflection
+         else if hasEmbeddedImage content && not needsRegen
+              then Ineligible AlreadyHasImage
+              else Eligible needsRegen
 
-checkCandidate :: FilePath -> Text -> Text -> Text -> IO [BackfillCandidate]
-checkCandidate dirPath dirId today filename = do
-  let date = extractDateFromFilename filename
-      filePath = dirPath </> T.unpack filename
+checkCandidate :: FilePath -> ContentDirectoryId -> Day -> Text -> IO [BackfillCandidate]
+checkCandidate directoryPath directoryId today filename = do
+  let fileDate = parseDateFromFilename filename
+      filePath = directoryPath </> T.unpack filename
   -- Skip file read for future reflections
-  if dirId == "reflections" && date > today
-    then pure []
-    else do
+  case fileDate of
+    Just date | directoryId == Reflections && date > today -> pure []
+    _ -> do
       content <- TIO.readFile filePath
-      case checkCandidateEligibility dirId today filename content of
-        Nothing         -> pure []
-        Just needsRegen -> pure [BackfillCandidate filePath dirId filename date needsRegen]
+      case checkCandidateEligibility directoryId today filename content of
+        Ineligible _     -> pure []
+        Eligible regen   -> pure [BackfillCandidate filePath directoryId filename
+                                    (fromMaybe today fileDate) regen]
 
 sortByDateDesc :: [BackfillCandidate] -> [BackfillCandidate]
 sortByDateDesc = foldl' insertSorted []
@@ -1101,15 +1179,16 @@ processWithProviders manager config (candidate : rest) providerIdx result = do
   let provider = bfcProviders config !! providerIdx
       action = if bcNeedsRegeneration candidate then "Regenerating" else "Generating"
       progress = show (brImagesGenerated result + 1) <> "/" <> show (bfcMaxImages config)
+      directoryLabel = T.unpack (contentDirectoryIdToText (bcDirectoryId candidate))
   putStrLn $ "🎨 [" <> progress <> "] " <> action <> " image for "
-          <> T.unpack (bcDirId candidate) <> "/" <> T.unpack (bcFilename candidate)
+          <> directoryLabel <> "/" <> T.unpack (bcFilename candidate)
           <> " via " <> T.unpack (ipcName provider)
   genResult <- tryGenerate manager provider candidate (bfcAttachmentsDir config)
   case genResult of
     Right imgResult
       | not (igrSkipped imgResult) -> do
           putStrLn $ "✅ Generated: " <> maybe "?" T.unpack (igrImageName imgResult)
-          let relativePath = bcDirId candidate <> "/" <> bcFilename candidate
+          let relativePath = contentDirectoryIdToText (bcDirectoryId candidate) <> "/" <> bcFilename candidate
               newResult = result
                 { brImagesGenerated = brImagesGenerated result + 1
                 , brFilesUpdated = brFilesUpdated result + 1
@@ -1122,7 +1201,7 @@ processWithProviders manager config (candidate : rest) providerIdx result = do
               pure newResult
             False -> processWithProviders manager config rest providerIdx newResult
       | otherwise -> do
-          putStrLn $ "⏭️  Skipped: " <> T.unpack (bcDirId candidate) <> "/" <> T.unpack (bcFilename candidate)
+          putStrLn $ "⏭️  Skipped: " <> directoryLabel <> "/" <> T.unpack (bcFilename candidate)
           let newResult = result { brFilesSkipped = brFilesSkipped result + 1 }
           processWithProviders manager config rest providerIdx newResult
     Left err
@@ -1140,7 +1219,7 @@ processWithProviders manager config (candidate : rest) providerIdx result = do
               putStrLn $ "🛑 All " <> show (length (bfcProviders config)) <> " providers exhausted"
               pure result { brErrors = brErrors result <> [err] }
       | otherwise -> do
-          putStrLn $ "❌ Error on " <> T.unpack (bcDirId candidate) <> "/" <> T.unpack (bcFilename candidate)
+          putStrLn $ "❌ Error on " <> directoryLabel <> "/" <> T.unpack (bcFilename candidate)
                   <> ": " <> T.unpack err
           let newResult = result { brErrors = brErrors result <> [err] }
           processWithProviders manager config rest providerIdx newResult

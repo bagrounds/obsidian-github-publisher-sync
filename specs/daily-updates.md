@@ -49,7 +49,7 @@
 |---|---|---|
 | Image backfill | `🖼️ added image` | backfill-blog-images |
 | Internal linking | `🔗 added N internal link(s)` (e.g., `🔗 added 1 internal link` or `🔗 added 2 internal links`) | internal-linking (count from FileResult) |
-| Social posting | `🦋 posted to BlueSky`, `🐘 posted to Mastodon`, `🐦 posted to Twitter` | auto-post (per-platform details) |
+| Social posting | `🦋 posted to BlueSky`, `🐘 posted to Mastodon`, `🐦 posted to Twitter` | auto-post (from `PostedNote.pnPlatforms` — only newly-posted platforms, not pre-existing) |
 
 📄 Example reflection with page-based updates:
 
@@ -116,12 +116,13 @@
 ## 🛡️ Idempotency
 
 ✅ All operations are idempotent:
-- 🔗 Detail insertion checks whether the specific detail text already appears under the page's entry in the Updates section
+- 🔗 Detail deduplication is **per-page**: the same detail text (e.g., `🖼️ added image`) can appear under multiple pages without cross-page interference. Only exact duplicates under the **same** page entry are skipped.
 - 📌 Section and page entry creation only happens when the heading or link is absent
 - 🔄 Re-running with the same modified paths and details produces no changes
+- 📢 Social posting updates record only the platforms that were **newly posted** in the current run, not pre-existing platform sections from historical postings
 
 ## 🧪 Testing
 
 🔬 Tests in `haskell/test/Automation/DailyUpdatesTest.hs` covering:
-- 📎 `addUpdateLinks`: new section creation with page entries and details, adding pages to existing sections, inserting details into existing page entries, duplicate skipping, multiple pages, incremental updates from different operations, content preservation, property-based testing
+- 📎 `addUpdateLinks`: new section creation with page entries and details, adding pages to existing sections, inserting details into existing page entries, duplicate skipping, same-detail-different-pages (per-page dedup), multiple pages, incremental updates from different operations, content preservation, property-based testing
 - 🎯 `addUpdateLinksToReflection`: end-to-end orchestration with filesystem, idempotency, incremental detail accumulation, multiple pages

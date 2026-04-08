@@ -10,6 +10,9 @@ Channel: The Pragmatic Engineer
 tags:
   - AIEngineering
 youtube: https://youtu.be/98o_L3jlixw
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_time: 2026-04-06T00:00:00Z
+force_analyze_links: false
 ---
 [Home](../index.md) > [Videos](./index.md) | [🤖🏗️ AI Engineering: Building Applications with Foundation Models](../books/ai-engineering-building-applications-with-foundation-models.md)  
 # 🤖🧠⚙️👩‍💻 AI Engineering with Chip Huyen  

@@ -5,9 +5,16 @@ aliases:
 title: 🤖🧭 Agentic Software Engineering
 tags:
   - AIEngineering
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_time: 2026-04-05T00:00:00Z
+force_analyze_links: false
+image_date: 2026-04-08T19:39:41Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A high-contrast, isometric digital illustration featuring a central, glowing holographic workspace. A human hand is delicately adjusting a complex, interconnected web of golden data nodes and floating code blocks. Surrounding this central figure are several stylized, translucent robotic avatars—representing autonomous agents—each performing distinct tasks like debugging, testing, and architecture planning. The color palette uses deep navy and slate backgrounds to represent the digital environment, punctuated by vibrant cyan, electric yellow, and magenta light trails that signify data flow and logic paths. The overall aesthetic is futuristic, clean, and professional, emphasizing the shift from manual coding to the orchestration of intelligent, agent-driven systems.
 ---
 [Home](../index.md) > [Topics](./index.md) > [Software Development and Coding](./software-development-and-coding.md)  
 # 🤖🧭 Agentic Software Engineering  
+![topics-agentic-software-engineering](../topics-agentic-software-engineering.jpg)  
   
 ## 🤖 AI Summary  
   

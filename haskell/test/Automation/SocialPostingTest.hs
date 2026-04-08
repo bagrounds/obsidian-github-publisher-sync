@@ -16,6 +16,7 @@ import qualified Test.Tasty.QuickCheck as QC
 import qualified Data.Text.IO as TIO
 
 import Automation.SocialPosting
+import Automation.Reflection (selectMostRecentReflection)
 
 tests :: TestTree
 tests = testGroup "SocialPosting"
@@ -33,6 +34,7 @@ tests = testGroup "SocialPosting"
   , bfsTraversalTests
   , bfsTests
   , urlValidationTests
+  , selectMostRecentReflectionTests
   ]
 
 --------------------------------------------------------------------------------
@@ -650,3 +652,33 @@ mkNote relPath title body = ContentNote
   , cnLinkedNotePaths = []
   , cnNoSocial = False
   }
+
+--------------------------------------------------------------------------------
+-- selectMostRecentReflection
+--------------------------------------------------------------------------------
+
+selectMostRecentReflectionTests :: TestTree
+selectMostRecentReflectionTests = testGroup "selectMostRecentReflection"
+  [ testCase "returns Nothing for empty list" $
+      assertEqual "" Nothing (selectMostRecentReflection [])
+
+  , testCase "returns Nothing when no date files" $
+      assertEqual "" Nothing
+        (selectMostRecentReflection ["readme.md", "index.md", "notes.txt"])
+
+  , testCase "selects the most recent date file" $
+      assertEqual "" (Just "reflections/2025-01-15.md")
+        (selectMostRecentReflection ["2025-01-01.md", "2025-01-15.md", "2025-01-10.md"])
+
+  , testCase "ignores non-date filenames" $
+      assertEqual "" (Just "reflections/2025-03-20.md")
+        (selectMostRecentReflection ["index.md", "2025-03-20.md", "notes.txt"])
+
+  , testCase "handles single date file" $
+      assertEqual "" (Just "reflections/2026-04-08.md")
+        (selectMostRecentReflection ["2026-04-08.md"])
+
+  , testCase "ignores date files without .md extension" $
+      assertEqual "" (Just "reflections/2025-06-15.md")
+        (selectMostRecentReflection ["2025-01-01.txt", "2025-06-15.md"])
+  ]

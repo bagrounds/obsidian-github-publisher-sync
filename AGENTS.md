@@ -57,6 +57,8 @@ URL: https://bagrounds.org/ai-blog/2026-03-08-1-auto-post-mastodon
 - 📖 Self Documenting Code - never write comments that tell what the code is doing; always write well named functions and variables so that it's obvious
 - 🔤 No abbreviations in names: write full words for all function and variable names. Legibility is more important than brevity. For example, use reflectionDate instead of rDate, postingCutoff instead of postHr.
 - 🚫 No Hungarian notation: do not encode type information in variable names. The type system already tells us what a value is. For example, use today instead of todayStr, title instead of titleText.
+- 🪶 No redundant suffixes: do not add type-category suffixes that merely restate what the type system already expresses. For example, use ContentDirectory instead of ContentDirectoryId, Platform instead of PlatformType.
+- 🔡 No single-letter variables: unless the variable is truly abstract (such as a mathematical formula parameter), always use descriptive names. For example, use today instead of d, directory instead of x.
 - 📊 Logging should be thorough but not spammy, easy for a human to read and understand what is happening, including decisions being made in code. Logs should be data-centric and maintain a high signal to noise ratio.
 
 ## Scientific Engineering
@@ -67,13 +69,17 @@ URL: https://bagrounds.org/ai-blog/2026-03-08-1-auto-post-mastodon
 ## Haskell Architecture Best Practices
 - 🧅 Functional Core, Imperative Shell: keep domain logic in pure functions, push IO to the edges. Never add IO to a function signature unless it truly needs side effects.
 - 🧊 Separate data from behavior: model domain concepts as pure data types and write pure functions over them. Avoid embedding IO callbacks in data structures.
-- 🏷️ Domain types over primitives: prefer newtypes and ADTs over raw Text, String, or Int for domain concepts like URLs, titles, dates, and platform limits. This prevents mixing up values that share a representation.
+- 🏷️ Domain types over primitives: prefer newtypes and ADTs over raw Text, String, or Int for domain concepts like URLs, titles, dates, and platform limits. This prevents mixing up values that share a representation. When extracting a pure function, always introduce proper domain types in the same change — never extract a pure function with primitive Text parameters when a domain type exists or should be created.
+- 🔒 Closed sets as ADTs: when a value comes from a fixed, known set (such as content directories, platform names, or task identifiers), model it as a sum type with one constructor per variant. Never use raw Text for a closed set. Include round-trip functions (toText and fromText) and derive Bounded and Enum for exhaustive testing.
+- 🏠 Domain-specific modules: define each function in the module that owns its domain concept. Never import domain logic from an unrelated module. For example, reflection-related functions belong in a Reflection module, not in SocialPosting or InternalLinking. Keep modules focused, domain-specific, and orthogonal.
 - 📦 Smart constructors: use validated newtypes with smart constructors for values with invariants (such as similarity thresholds between zero and one or valid URLs).
 - 🔀 Explicit error types: prefer Either with domain-specific error ADTs over throwing exceptions or returning empty defaults. Reserve exceptions for truly unrecoverable failures.
 - 📖 ReaderT for shared context: when multiple functions need the same environment (Manager, config, vault path), prefer a ReaderT-based context over threading individual parameters.
 - 🧩 Small focused modules: each module should do one thing. Break large orchestrators into smaller feature-specific modules.
 - 🔬 Testability by design: if a function can be pure, make it pure. Pass time, randomness, and other ambient values as parameters so tests can be deterministic.
 - 🔧 Result types over Booleans: when a function checks eligibility, prefer returning a descriptive result type (such as Eligible or IneligibleBecause reason) over bare Bool to preserve decision context.
+- 📐 Vertical slices: every architecture improvement must deliver types, logic, tests, and documentation together. Never separate pure extraction from domain type introduction — they are one concern.
+- 🕐 Pacific time for dates: always work in Pacific time. When obtaining the current date, convert from UTC to Pacific immediately and use Day or equivalent domain types throughout. Never pass date strings between functions.
 
 ## Obsidian Vault is the Source of Truth
 - 📱 The `content/` directory is a **read-only one-way sync** from the Obsidian vault on the user's phone. Never write to `content/` from GitHub Actions or scripts.

@@ -2,6 +2,7 @@ module Automation.Env
   ( isPlatformDisabled
   , isPlatformDisabledValue
   , getYesterdayDate
+  , yesterdayDate
   , validateEnvironment
   ) where
 
@@ -11,7 +12,7 @@ import Data.Maybe (fromMaybe, isJust)
 import Data.Text (Text)
 import qualified Data.Text as T
 import qualified Data.Text.IO as TIO
-import Data.Time (UTCTime (..), addDays, defaultTimeLocale, formatTime, getCurrentTime)
+import Data.Time (Day, UTCTime (..), addDays, defaultTimeLocale, formatTime, getCurrentTime)
 import System.Environment (lookupEnv)
 
 import Automation.Types
@@ -34,10 +35,13 @@ isPlatformDisabledValue :: Maybe Text -> Bool
 isPlatformDisabledValue mValue =
   fmap (T.strip . T.toLower) mValue `elem` [Just "true", Just "1", Just "yes"]
 
+yesterdayDate :: UTCTime -> Day
+yesterdayDate (UTCTime day _) = addDays (-1) day
+
 getYesterdayDate :: IO Text
 getYesterdayDate = do
-  UTCTime day _ <- getCurrentTime
-  pure $ T.pack $ formatTime defaultTimeLocale "%Y-%m-%d" (addDays (-1) day)
+  now <- getCurrentTime
+  pure $ T.pack $ formatTime defaultTimeLocale "%Y-%m-%d" (yesterdayDate now)
 
 allPresent :: [String] -> IO Bool
 allPresent = fmap and . traverse (fmap isJust . lookupEnv)

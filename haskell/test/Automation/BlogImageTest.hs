@@ -4,6 +4,7 @@ import Data.Map.Strict (Map)
 import qualified Data.Map.Strict as Map
 import Data.Text (Text)
 import qualified Data.Text as T
+import Data.Time (Day, fromGregorian)
 import Test.Tasty (TestTree, testGroup)
 import Test.Tasty.HUnit (testCase, (@?=), assertBool)
 import Test.Tasty.QuickCheck (testProperty)
@@ -412,19 +413,19 @@ tests = testGroup "BlogImage"
       ]
   , testGroup "isDateOnlyTitle"
       [ testCase "returns True when title matches date" $
-          isDateOnlyTitle "---\ntitle: 2026-04-04\n---\n# 2026-04-04\nbody" "2026-04-04" @?= True
+          isDateOnlyTitle "---\ntitle: 2026-04-04\n---\n# 2026-04-04\nbody" (fromGregorian 2026 4 4) @?= True
       , testCase "returns True for quoted date title" $
-          isDateOnlyTitle "---\ntitle: \"2026-04-04\"\n---\nbody" "2026-04-04" @?= True
+          isDateOnlyTitle "---\ntitle: \"2026-04-04\"\n---\nbody" (fromGregorian 2026 4 4) @?= True
       , testCase "returns False for creative title" $
-          isDateOnlyTitle "---\ntitle: \"2026-04-04 | Creative Title\"\n---\nbody" "2026-04-04" @?= False
+          isDateOnlyTitle "---\ntitle: \"2026-04-04 | Creative Title\"\n---\nbody" (fromGregorian 2026 4 4) @?= False
       , testCase "returns False when title is empty" $
-          isDateOnlyTitle "---\ntags: foo\n---\nbody" "2026-04-04" @?= False
+          isDateOnlyTitle "---\ntags: foo\n---\nbody" (fromGregorian 2026 4 4) @?= False
       , testCase "returns False for non-date title" $
-          isDateOnlyTitle "---\ntitle: My Post\n---\nbody" "2026-04-04" @?= False
+          isDateOnlyTitle "---\ntitle: My Post\n---\nbody" (fromGregorian 2026 4 4) @?= False
       , testCase "returns True when H1 is the date" $
-          isDateOnlyTitle "# 2026-04-04\nbody" "2026-04-04" @?= True
+          isDateOnlyTitle "# 2026-04-04\nbody" (fromGregorian 2026 4 4) @?= True
       , testCase "returns False when date does not match" $
-          isDateOnlyTitle "---\ntitle: 2026-04-03\n---\nbody" "2026-04-04" @?= False
+          isDateOnlyTitle "---\ntitle: 2026-04-03\n---\nbody" (fromGregorian 2026 4 4) @?= False
       ]
   , testGroup "properties"
       [ testProperty "buildImagePrompt never exceeds max length" $
@@ -442,4 +443,77 @@ tests = testGroup "BlogImage"
                     noH1 = not (T.isInfixOf "\n# " t) && not (T.isPrefixOf "# " t)
                 in noH1 ==> insertImageEmbed t "test.jpg" == t
       ]
+  , parseDateFromFilenameTests
+  , contentDirectoryTests
+  , checkCandidateEligibilityTests
+  ]
+
+parseDateFromFilenameTests :: TestTree
+parseDateFromFilenameTests = testGroup "parseDateFromFilename"
+  [ testCase "parses date from standard filename" $
+      parseDateFromFilename "2026-04-08-my-post.md" @?= Just (fromGregorian 2026 4 8)
+
+  , testCase "parses date from date-only filename" $
+      parseDateFromFilename "2025-01-15.md" @?= Just (fromGregorian 2025 1 15)
+
+  , testCase "returns Nothing for non-date filename" $
+      parseDateFromFilename "readme.md" @?= Nothing
+
+  , testCase "returns Nothing for short filename" $
+      parseDateFromFilename "abc" @?= Nothing
+  ]
+
+contentDirectoryTests :: TestTree
+contentDirectoryTests = testGroup "ContentDirectory"
+  [ testCase "round-trips all directories" $
+      assertBool "all round-trip" $
+        all (\directory -> contentDirectoryFromText (contentDirectoryToText directory) == Just directory)
+          [minBound .. maxBound]
+
+  , testCase "rejects unknown directory" $
+      contentDirectoryFromText "unknown-dir" @?= Nothing
+
+  , testCase "reflections maps correctly" $
+      contentDirectoryToText Reflections @?= "reflections"
+
+  , testCase "parses chickie-loo" $
+      contentDirectoryFromText "chickie-loo" @?= Just ChickieLoo
+  ]
+
+checkCandidateEligibilityTests :: TestTree
+checkCandidateEligibilityTests = testGroup "checkCandidateEligibility"
+  [ testCase "eligible file without image returns Eligible False" $
+      checkCandidateEligibility Books (fromGregorian 2026 4 8) "2026-04-01-post.md"
+        "---\ntitle: My Post\n---\nSome content"
+        @?= Eligible False
+
+  , testCase "eligible file needing regeneration returns Eligible True" $
+      checkCandidateEligibility Books (fromGregorian 2026 4 8) "2026-04-01-post.md"
+        "---\ntitle: My Post\nregenerate_image: true\n---\n![[attachments/old.jpg]]\nSome content"
+        @?= Eligible True
+
+  , testCase "file with embedded image returns Ineligible AlreadyHasImage" $
+      checkCandidateEligibility Books (fromGregorian 2026 4 8) "2026-04-01-post.md"
+        "---\ntitle: My Post\n---\n![[attachments/photo.jpg]]\nSome content"
+        @?= Ineligible AlreadyHasImage
+
+  , testCase "future reflection returns Ineligible FutureReflection" $
+      checkCandidateEligibility Reflections (fromGregorian 2026 4 8) "2026-04-09.md"
+        "---\ntitle: Future\n---\nbody"
+        @?= Ineligible FutureReflection
+
+  , testCase "past reflection without image is eligible" $
+      checkCandidateEligibility Reflections (fromGregorian 2026 4 8) "2026-04-07.md"
+        "---\ntitle: Past Day\n---\nbody"
+        @?= Eligible False
+
+  , testCase "untitled reflection returns Ineligible UntitledReflection" $
+      checkCandidateEligibility Reflections (fromGregorian 2026 4 8) "2026-04-07.md"
+        "---\ntitle: \"2026-04-07\"\n---\n# 2026-04-07\nbody"
+        @?= Ineligible UntitledReflection
+
+  , testCase "non-reflection directory ignores date comparison" $
+      checkCandidateEligibility Books (fromGregorian 2026 4 8) "2026-04-09-future.md"
+        "---\ntitle: Future Post\n---\nbody"
+        @?= Eligible False
   ]

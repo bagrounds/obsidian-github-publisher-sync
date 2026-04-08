@@ -31,7 +31,6 @@ module Automation.SocialPosting
 import Control.Concurrent.Async (mapConcurrently)
 import Control.Exception (SomeException, try)
 
-import Data.List (sortBy)
 import Data.Map.Strict (Map)
 import qualified Data.Map.Strict as Map
 import Data.Maybe (fromMaybe, mapMaybe)
@@ -54,7 +53,7 @@ import qualified Network.HTTP.Client as HTTP
 import Network.HTTP.Client (Manager)
 import qualified Network.HTTP.Client.TLS as TLS
 import Network.HTTP.Types.Status (statusIsSuccessful)
-import System.Directory (doesDirectoryExist, doesFileExist, listDirectory)
+import System.Directory (doesFileExist)
 
 import System.FilePath (takeBaseName, takeDirectory, (</>))
 import Text.Regex.TDFA ((=~))
@@ -80,6 +79,7 @@ import Automation.Platforms.Mastodon (postToMastodon, getMastodonEmbedHtml, extr
 import Automation.Platforms.OgMetadata (fetchOgMetadata)
 import Automation.Platforms.Twitter (postTweet, getEmbedHtml)
 import Automation.Prompts (PromptPair (..), assemblePost, buildQuestionPrompt, buildShortenQuestionPrompt, buildTagsPrompt)
+import Automation.Reflection (findMostRecentReflection)
 import Automation.Text (fitPostToLimit)
 import Automation.Types
 
@@ -383,25 +383,6 @@ looksLikeDateTitle :: Text -> Bool
 looksLikeDateTitle title =
   let t = T.strip title
   in (t :: Text) =~ ("^[0-9]{4}-[0-9]{2}-[0-9]{2}$" :: String)
-
---------------------------------------------------------------------------------
--- Finding most recent reflection
---------------------------------------------------------------------------------
-
-findMostRecentReflection :: FilePath -> IO (Maybe Text)
-findMostRecentReflection contentDir = do
-  let reflDir = contentDir </> "reflections"
-  exists <- doesDirectoryExist reflDir
-  case exists of
-    False -> pure Nothing
-    True  -> do
-      files <- listDirectory reflDir
-      let datePattern = "^[0-9]{4}-[0-9]{2}-[0-9]{2}\\.md$" :: String
-          dateFiles   = filter (\f -> (f :: String) =~ datePattern) files
-          sorted      = sortBy (flip compare) dateFiles
-      pure $ case sorted of
-        (f : _) -> Just ("reflections/" <> T.pack f)
-        []      -> Nothing
 
 --------------------------------------------------------------------------------
 -- Reflection eligibility

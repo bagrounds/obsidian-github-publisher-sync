@@ -52,6 +52,7 @@ library
     Automation.BlogImage
     Automation.InternalLinking
     Automation.Pipeline
+    Automation.Reflection
     Automation.GeminiQuota
     Automation.Platforms.Twitter
     Automation.Platforms.Bluesky
@@ -140,6 +141,7 @@ test-suite automation-tests
     Automation.OgMetadataTest
     Automation.ReflectionTitleTest
     Automation.ObsidianSyncTest
+    Automation.TestGenerators
   build-depends:
     base,
     automation,

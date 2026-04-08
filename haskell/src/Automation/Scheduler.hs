@@ -13,6 +13,7 @@ module Automation.Scheduler
   , isValidTaskId
   , extractSeriesId
   , blogPostExistsForToday
+  , blogPostMatchesToday
   , findPostToRegenerate
   ) where
 
@@ -174,11 +175,15 @@ daysUntilSunday = \case
   Friday    -> 2
   Saturday  -> 1
 
+blogPostMatchesToday :: Text -> [String] -> Bool
+blogPostMatchesToday today files =
+  any (T.isPrefixOf today . T.pack) files
+
 blogPostExistsForToday :: FilePath -> Text -> IO Bool
 blogPostExistsForToday seriesDir today = do
   exists <- doesDirectoryExist seriesDir
   if exists
-    then any (T.isPrefixOf today . T.pack) <$> listDirectory seriesDir
+    then blogPostMatchesToday today <$> listDirectory seriesDir
     else pure False
 
 findPostToRegenerate :: FilePath -> Text -> IO (Maybe FilePath)

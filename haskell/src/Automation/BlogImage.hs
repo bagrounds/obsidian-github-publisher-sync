@@ -3,6 +3,9 @@ module Automation.BlogImage
   , ImageProviderConfig (..)
   , BackfillConfig (..)
   , BackfillResult (..)
+  , ContentDirectory (..)
+  , CandidateEligibility (..)
+  , IneligibilityReason (..)
   , hasEmbeddedImage
   , shouldRegenerateImage
   , insertImageEmbed
@@ -26,6 +29,10 @@ module Automation.BlogImage
   , isPostFile
   , shouldHaveImage
   , isDateOnlyTitle
+  , parseDateFromFilename
+  , contentDirectoryFromText
+  , contentDirectoryToText
+  , checkCandidateEligibility
   , removeImageEmbed
   , generateWithCloudflare
   , generateWithHuggingFace
@@ -45,7 +52,8 @@ import Data.Text (Text)
 import qualified Data.Text as T
 import qualified Data.Text.Encoding as TE
 import qualified Data.Text.IO as TIO
-import Data.Time (defaultTimeLocale, formatTime, getCurrentTime)
+import Data.Time (Day, defaultTimeLocale, formatTime, getCurrentTime)
+import Data.Time.Format (parseTimeM)
 import Network.HTTP.Client
   ( Manager
   , Request (..)
@@ -69,7 +77,7 @@ import System.Directory
 import System.FilePath ((</>), takeBaseName, takeDirectory, takeExtension)
 import Text.Regex.TDFA ((=~))
 
-import Automation.BlogPrompt (DateStr(..), stripEmbedSections, todayPacific)
+import Automation.BlogPrompt (stripEmbedSections, todayPacificDay)
 import Automation.Frontmatter (YamlValue (..), parseFrontmatter, renderYamlValue)
 import qualified Automation.Gemini as Gemini
 import qualified Automation.Json as Json
@@ -94,11 +102,11 @@ data ImageProviderConfig = ImageProviderConfig
   }
 
 data BackfillConfig = BackfillConfig
-  { bfcRepoRoot       :: FilePath
-  , bfcContentDirs    :: [Text]
-  , bfcAttachmentsDir :: FilePath
-  , bfcProviders      :: [ImageProviderConfig]
-  , bfcMaxImages      :: Int
+  { backfillRepoRoot       :: FilePath
+  , backfillContentDirs    :: [ContentDirectory]
+  , backfillAttachmentsDir :: FilePath
+  , backfillProviders      :: [ImageProviderConfig]
+  , backfillMaxImages      :: Int
   }
 
 data BackfillResult = BackfillResult
@@ -111,11 +119,71 @@ data BackfillResult = BackfillResult
 
 data BackfillCandidate = BackfillCandidate
   { bcFilePath          :: FilePath
-  , bcDirId             :: Text
+  , bcDirectory         :: ContentDirectory
   , bcFilename          :: Text
-  , bcDate              :: Text
+  , bcDate              :: Day
   , bcNeedsRegeneration :: Bool
   }
+
+data ContentDirectory
+  = Reflections
+  | AiBlog
+  | AutoBlogZero
+  | ChickieLoo
+  | SystemsForPublicGood
+  | Articles
+  | Books
+  | BotChats
+  | Games
+  | Products
+  | Software
+  | Tools
+  | Topics
+  deriving (Show, Eq, Ord, Bounded, Enum)
+
+contentDirectoryToText :: ContentDirectory -> Text
+contentDirectoryToText = \case
+  Reflections          -> "reflections"
+  AiBlog               -> "ai-blog"
+  AutoBlogZero         -> "auto-blog-zero"
+  ChickieLoo           -> "chickie-loo"
+  SystemsForPublicGood -> "systems-for-public-good"
+  Articles             -> "articles"
+  Books                -> "books"
+  BotChats             -> "bot-chats"
+  Games                -> "games"
+  Products             -> "products"
+  Software             -> "software"
+  Tools                -> "tools"
+  Topics               -> "topics"
+
+contentDirectoryFromText :: Text -> Maybe ContentDirectory
+contentDirectoryFromText = \case
+  "reflections"            -> Just Reflections
+  "ai-blog"               -> Just AiBlog
+  "auto-blog-zero"        -> Just AutoBlogZero
+  "chickie-loo"           -> Just ChickieLoo
+  "systems-for-public-good" -> Just SystemsForPublicGood
+  "articles"              -> Just Articles
+  "books"                 -> Just Books
+  "bot-chats"             -> Just BotChats
+  "games"                 -> Just Games
+  "products"              -> Just Products
+  "software"              -> Just Software
+  "tools"                 -> Just Tools
+  "topics"                -> Just Topics
+  _                       -> Nothing
+
+data CandidateEligibility
+  = Eligible { needsRegeneration :: Bool }
+  | Ineligible IneligibilityReason
+  deriving (Show, Eq)
+
+data IneligibilityReason
+  = FutureReflection
+  | AlreadyHasImage
+  | UntitledReflection
+  deriving (Show, Eq)
 
 --------------------------------------------------------------------------------
 -- Constants
@@ -296,15 +364,17 @@ hasDatePrefix t =
     && T.index t 7 == '-'
     && T.all isDigit (T.take 2 (T.drop 8 t))
 
-extractDateFromFilename :: Text -> Text
-extractDateFromFilename filename =
-  let prefix = T.take 10 filename
-  in if hasDatePrefix filename then prefix else ""
+parseDateFromFilename :: Text -> Maybe Day
+parseDateFromFilename filename =
+  if hasDatePrefix filename
+    then parseTimeM True defaultTimeLocale "%Y-%m-%d" (T.unpack (T.take 10 filename))
+    else Nothing
 
-isDateOnlyTitle :: Text -> Text -> Bool
+isDateOnlyTitle :: Text -> Day -> Bool
 isDateOnlyTitle content date =
   let title = extractTitle content
-  in title == date
+      dateText = T.pack (formatTime defaultTimeLocale "%Y-%m-%d" date)
+  in title == dateText
 
 --------------------------------------------------------------------------------
 -- Content processing
@@ -1002,50 +1072,64 @@ formatTimestamp = do
 
 backfillImages :: Manager -> BackfillConfig -> IO BackfillResult
 backfillImages manager config = do
-  today <- todayPacific
-  candidates <- collectCandidates (bfcRepoRoot config) (bfcContentDirs config) (unDateStr today)
+  today <- todayPacificDay
+  candidates <- collectCandidates (backfillRepoRoot config) (backfillContentDirs config) today
   putStrLn $ "📋 Candidates: " <> show (length candidates) <> " notes need images"
-         <> " | providers: " <> show (length (bfcProviders config))
-         <> " | max: " <> show (bfcMaxImages config)
+         <> " | providers: " <> show (length (backfillProviders config))
+         <> " | max: " <> show (backfillMaxImages config)
   processWithProviders manager config candidates 0 emptyResult
 
 emptyResult :: BackfillResult
 emptyResult = BackfillResult 0 0 0 [] []
 
-collectCandidates :: FilePath -> [Text] -> Text -> IO [BackfillCandidate]
-collectCandidates repoRoot contentDirs today = do
-  candidateLists <- traverse (collectFromDir repoRoot today) contentDirs
+collectCandidates :: FilePath -> [ContentDirectory] -> Day -> IO [BackfillCandidate]
+collectCandidates repoRoot contentDirectories today = do
+  candidateLists <- traverse (collectFromDirectory repoRoot today) contentDirectories
   let allCandidates = concat candidateLists
       sorted = sortByDateDesc allCandidates
   pure sorted
 
-collectFromDir :: FilePath -> Text -> Text -> IO [BackfillCandidate]
-collectFromDir repoRoot today dirId = do
-  let dirPath = repoRoot </> T.unpack dirId
-  exists <- doesDirectoryExist dirPath
+collectFromDirectory :: FilePath -> Day -> ContentDirectory -> IO [BackfillCandidate]
+collectFromDirectory repoRoot today directory = do
+  let directoryPath = repoRoot </> T.unpack (contentDirectoryToText directory)
+  exists <- doesDirectoryExist directoryPath
   case exists of
     False -> do
-      putStrLn $ "📁 Directory missing: " <> T.unpack dirId
+      putStrLn $ "📁 Directory missing: " <> T.unpack (contentDirectoryToText directory)
       pure []
     True -> do
-      entries <- listDirectory dirPath
+      entries <- listDirectory directoryPath
       let contentFiles = filter shouldHaveImage (fmap T.pack entries)
           sortedFiles = sortByTextDesc contentFiles
-      fmap concat $ traverse (checkCandidate dirPath dirId today) sortedFiles
+      fmap concat $ traverse (checkCandidate directoryPath directory today) sortedFiles
 
-checkCandidate :: FilePath -> Text -> Text -> Text -> IO [BackfillCandidate]
-checkCandidate dirPath dirId today filename = do
-  let date = extractDateFromFilename filename
-      filePath = dirPath </> T.unpack filename
-  case dirId == "reflections" && date > today of
-    True  -> pure []
-    False -> do
+checkCandidateEligibility :: ContentDirectory -> Day -> Text -> Text -> CandidateEligibility
+checkCandidateEligibility directory today filename content =
+  case parseDateFromFilename filename of
+    Just fileDate
+      | directory == Reflections && fileDate > today -> Ineligible FutureReflection
+    fileDate ->
+      let requiresRegeneration = shouldRegenerateImage content
+          untitledReflection = directory == Reflections
+            && maybe False (isDateOnlyTitle content) fileDate
+      in if untitledReflection
+         then Ineligible UntitledReflection
+         else if hasEmbeddedImage content && not requiresRegeneration
+              then Ineligible AlreadyHasImage
+              else Eligible requiresRegeneration
+
+checkCandidate :: FilePath -> ContentDirectory -> Day -> Text -> IO [BackfillCandidate]
+checkCandidate directoryPath directory today filename = do
+  let fileDate = parseDateFromFilename filename
+      filePath = directoryPath </> T.unpack filename
+  case fileDate of
+    Just date | directory == Reflections && date > today -> pure []
+    _ -> do
       content <- TIO.readFile filePath
-      let needsRegen = shouldRegenerateImage content
-          untitledReflection = dirId == "reflections" && isDateOnlyTitle content date
-      case (hasEmbeddedImage content && not needsRegen) || untitledReflection of
-        True  -> pure []
-        False -> pure [BackfillCandidate filePath dirId filename date needsRegen]
+      case checkCandidateEligibility directory today filename content of
+        Ineligible _              -> pure []
+        Eligible requiresRegeneration -> pure [BackfillCandidate filePath directory filename
+                                    (fromMaybe today fileDate) requiresRegeneration]
 
 sortByDateDesc :: [BackfillCandidate] -> [BackfillCandidate]
 sortByDateDesc = foldl' insertSorted []
@@ -1072,62 +1156,63 @@ processWithProviders _ _ [] _ result = do
           <> " | errors: " <> show (length (brErrors result))
   pure result
 processWithProviders _ config _ _ result
-  | null (bfcProviders config) = do
+  | null (backfillProviders config) = do
       putStrLn "🚫 No providers available"
       pure result { brErrors = brErrors result <> ["No providers available"] }
 processWithProviders _manager config _candidates providerIdx result
-  | providerIdx >= length (bfcProviders config) = do
+  | providerIdx >= length (backfillProviders config) = do
       putStrLn $ "🛑 All providers exhausted | generated: " <> show (brImagesGenerated result)
              <> " | errors: " <> show (length (brErrors result))
       pure result { brErrors = brErrors result <> ["All providers exhausted"] }
-  | brImagesGenerated result >= bfcMaxImages config = do
+  | brImagesGenerated result >= backfillMaxImages config = do
       putStrLn $ "🎯 Max images reached: " <> show (brImagesGenerated result)
-             <> "/" <> show (bfcMaxImages config)
+             <> "/" <> show (backfillMaxImages config)
       pure result
 processWithProviders manager config (candidate : rest) providerIdx result = do
-  let provider = bfcProviders config !! providerIdx
+  let provider = backfillProviders config !! providerIdx
       action = if bcNeedsRegeneration candidate then "Regenerating" else "Generating"
-      progress = show (brImagesGenerated result + 1) <> "/" <> show (bfcMaxImages config)
+      progress = show (brImagesGenerated result + 1) <> "/" <> show (backfillMaxImages config)
+      directoryLabel = T.unpack (contentDirectoryToText (bcDirectory candidate))
   putStrLn $ "🎨 [" <> progress <> "] " <> action <> " image for "
-          <> T.unpack (bcDirId candidate) <> "/" <> T.unpack (bcFilename candidate)
+          <> directoryLabel <> "/" <> T.unpack (bcFilename candidate)
           <> " via " <> T.unpack (ipcName provider)
-  genResult <- tryGenerate manager provider candidate (bfcAttachmentsDir config)
+  genResult <- tryGenerate manager provider candidate (backfillAttachmentsDir config)
   case genResult of
     Right imgResult
       | not (igrSkipped imgResult) -> do
           putStrLn $ "✅ Generated: " <> maybe "?" T.unpack (igrImageName imgResult)
-          let relativePath = bcDirId candidate <> "/" <> bcFilename candidate
+          let relativePath = contentDirectoryToText (bcDirectory candidate) <> "/" <> bcFilename candidate
               newResult = result
                 { brImagesGenerated = brImagesGenerated result + 1
                 , brFilesUpdated = brFilesUpdated result + 1
                 , brModifiedFiles = brModifiedFiles result <> [relativePath]
                 }
-          case brImagesGenerated newResult >= bfcMaxImages config of
+          case brImagesGenerated newResult >= backfillMaxImages config of
             True  -> do
               putStrLn $ "🎯 Max images reached: " <> show (brImagesGenerated newResult)
-                     <> "/" <> show (bfcMaxImages config)
+                     <> "/" <> show (backfillMaxImages config)
               pure newResult
             False -> processWithProviders manager config rest providerIdx newResult
       | otherwise -> do
-          putStrLn $ "⏭️  Skipped: " <> T.unpack (bcDirId candidate) <> "/" <> T.unpack (bcFilename candidate)
+          putStrLn $ "⏭️  Skipped: " <> directoryLabel <> "/" <> T.unpack (bcFilename candidate)
           let newResult = result { brFilesSkipped = brFilesSkipped result + 1 }
           processWithProviders manager config rest providerIdx newResult
     Left err
       | isDailyQuotaError err || isQuotaError err || isProviderUnavailableError err -> do
           putStrLn $ "⚠️  Quota/unavailable on " <> T.unpack (ipcName provider) <> ": " <> T.unpack err
           let nextIdx = providerIdx + 1
-          case nextIdx < length (bfcProviders config) of
+          case nextIdx < length (backfillProviders config) of
             True -> do
-              let nextProvider = bfcProviders config !! nextIdx
+              let nextProvider = backfillProviders config !! nextIdx
               putStrLn $ "🔄 Switching to provider " <> show (nextIdx + 1)
-                     <> "/" <> show (length (bfcProviders config))
+                     <> "/" <> show (length (backfillProviders config))
                      <> ": " <> T.unpack (ipcName nextProvider)
               processWithProviders manager config (candidate : rest) nextIdx result
             False -> do
-              putStrLn $ "🛑 All " <> show (length (bfcProviders config)) <> " providers exhausted"
+              putStrLn $ "🛑 All " <> show (length (backfillProviders config)) <> " providers exhausted"
               pure result { brErrors = brErrors result <> [err] }
       | otherwise -> do
-          putStrLn $ "❌ Error on " <> T.unpack (bcDirId candidate) <> "/" <> T.unpack (bcFilename candidate)
+          putStrLn $ "❌ Error on " <> directoryLabel <> "/" <> T.unpack (bcFilename candidate)
                   <> ": " <> T.unpack err
           let newResult = result { brErrors = brErrors result <> [err] }
           processWithProviders manager config rest providerIdx newResult

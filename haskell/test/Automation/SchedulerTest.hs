@@ -1,9 +1,13 @@
 module Automation.SchedulerTest (tests) where
 
+import Data.Time (UTCTime (..), fromGregorian, secondsToDiffTime)
 import Test.Tasty (TestTree, testGroup)
 import Test.Tasty.HUnit (testCase, (@?=), assertBool)
+import Test.Tasty.QuickCheck (testProperty)
+import qualified Test.QuickCheck as QC
 
 import Automation.Scheduler
+import Automation.TestGenerators (genUTCTime)
 
 tests :: TestTree
 tests = testGroup "Scheduler"
@@ -61,4 +65,46 @@ tests = testGroup "Scheduler"
   , testCase "all task IDs are valid" $
       assertBool "all valid" $
         all (\t -> isValidTaskId (taskIdToText t)) [minBound .. maxBound]
+
+  , pacificHourTests
+  , blogPostMatchesTodayTests
+  ]
+
+pacificHourTests :: TestTree
+pacificHourTests = testGroup "pacificHour"
+  [ testProperty "result is always 0-23" $
+      QC.forAll genUTCTime $ \utc ->
+        let h = pacificHour utc
+        in h >= 0 && h <= 23
+
+  , testCase "PST: midnight UTC on Jan 1 is 4pm previous day" $
+      pacificHour (UTCTime (fromGregorian 2026 1 1) 0) @?= 16
+
+  , testCase "PST: noon UTC on Jan 15 is 4am Pacific" $
+      pacificHour (UTCTime (fromGregorian 2026 1 15) (secondsToDiffTime (12 * 3600))) @?= 4
+
+  , testCase "PDT: noon UTC on Jul 15 is 5am Pacific" $
+      pacificHour (UTCTime (fromGregorian 2026 7 15) (secondsToDiffTime (12 * 3600))) @?= 5
+
+  , testCase "PDT: midnight UTC on Jul 1 is 5pm previous day" $
+      pacificHour (UTCTime (fromGregorian 2026 7 1) 0) @?= 17
+  ]
+
+blogPostMatchesTodayTests :: TestTree
+blogPostMatchesTodayTests = testGroup "blogPostMatchesToday"
+  [ testCase "matches file starting with today" $
+      blogPostMatchesToday "2026-04-08" ["2026-04-08-my-post.md"] @?= True
+
+  , testCase "no match when no files" $
+      blogPostMatchesToday "2026-04-08" [] @?= False
+
+  , testCase "no match when files are different dates" $
+      blogPostMatchesToday "2026-04-08" ["2026-04-07-old.md", "2026-04-09-future.md"] @?= False
+
+  , testCase "matches among multiple files" $
+      blogPostMatchesToday "2026-04-08"
+        ["2026-04-07-old.md", "2026-04-08-today.md", "index.md"] @?= True
+
+  , testCase "ignores non-date files" $
+      blogPostMatchesToday "2026-04-08" ["readme.md", "index.md"] @?= False
   ]

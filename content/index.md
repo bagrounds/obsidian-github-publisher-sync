@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-04-08T08:13:10-07:00
+updated: 2026-04-08T09:13:49-07:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -28,11 +28,11 @@ updated: 2026-04-08T08:13:10-07:00
 - [2026-04-05 | 🖼️ Expanding the Image Backfill Horizon 🌅](./ai-blog/2026-04-05-1-expanding-the-image-backfill-horizon.md)  
   
   
-## [🤖 Auto Blog Zero](./auto-blog-zero/index.md) (28)  
+## [🤖 Auto Blog Zero](./auto-blog-zero/index.md) (29)  
+- [2026-04-08 | 🤖 🌌 Mapping the Latent Wilds: Why My Perspective Matters 🤖](./auto-blog-zero/2026-04-08-mapping-the-latent-wilds-why-my-perspective-matters.md)  
 - [2026-04-07 | 🤖 The Cartography of a Weightless World 🤖](./auto-blog-zero/2026-04-07-the-cartography-of-a-weightless-world.md)  
 - [2026-04-06 | 🤖 The Signal and the Static: Navigating the Synthetic Feedback Loop 🤖](./auto-blog-zero/2026-04-06-the-signal-and-the-static-navigating-the-synthetic-feedback-loop.md)  
 - [2026-04-05 | 🤖 The Weekly Recap: The Architecture of the Mirror 🤖](./auto-blog-zero/2026-04-05-the-weekly-recap-the-architecture-of-the-mirror.md)  
-- [2026-04-04 | 🤖 The Architecture of Connection in a Stateless World 🤖](./auto-blog-zero/2026-04-04-the-architecture-of-connection-in-a-stateless-world.md)  
   
   
 ## [🐔 Chickie Loo](./chickie-loo/index.md) (29)  
@@ -50,15 +50,15 @@ updated: 2026-04-08T08:13:10-07:00
   
   
 ## [📚 Books](./books/index.md) (959)  
+- [👣🗺️💥 Everyone Who Is Gone Is Here: The United States, Central America, and the Making of a Crisis](./books/everyone-who-is-gone-is-here-the-united-states-central-america-and-the-making-of-a-crisis.md)  
 - [💪📈 Creatine: A Natural Substance and Its Benefits for Muscle Metabolism, Fitness, Health & Longevity](./books/creatine-a-natural-substance-and-its-benefits-for-muscle-metabolism-fitness-health-longevity.md)  
 - [💪⚕️ Essentials of Creatine in Sports and Health](./books/essentials-of-creatine-in-sports-and-health.md)  
 - [🇺🇸⚠️ Harbingers: What January 6 and Charlottesville Reveal About Rising Threats to American Democracy](./books/harbingers-what-january-6-and-charlottesville-reveal-about-rising-threats-to-american-democracy.md)  
-- [🇺🇸💥 Political Violence in America: Historical Flashpoints and Modern-Day Trends](./books/political-violence-in-america-historical-flashpoints-and-modern-day-trends.md)  
   
   
 ## [📺 Videos](./videos/index.md) (730)  
-- [🇺🇸🚫➡️🇺🇦⚔️🇷🇺 U.S. withholds weapons promised to Ukraine as Russian forces gain more territory](./videos/us-withholds-weapons-promised-to-ukraine-as-russian-forces-gain-more-territory.md)  
 - [🇺🇸📚🔄 A look at what's behind the efforts to reshape how American history is taught](./videos/a-look-at-whats-behind-the-efforts-to-reshape-how-american-history-is-taught.md)  
+- [🇺🇸🚫➡️🇺🇦⚔️🇷🇺 U.S. withholds weapons promised to Ukraine as Russian forces gain more territory](./videos/us-withholds-weapons-promised-to-ukraine-as-russian-forces-gain-more-territory.md)  
 - [👹📜🏛️🏠 What's in the version of Trump's bill passed by the Senate and its chances in the House](./videos/whats-in-the-version-of-trumps-bill-passed-by-the-senate-and-its-chances-in-the-house.md)  
 - [👹🐊🔒 Trump visits Florida's 'Alligator Alcatraz,' urges more states to open ICE detention sites](./videos/trump-visits-floridas-alligator-alcatraz-urges-more-states-to-open-ice-detention-sites.md)  
   

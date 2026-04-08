@@ -9,6 +9,9 @@ Platform:
 Channel: GOTO Conferences
 tags:
 youtube: https://youtu.be/rbTaEsieWsU
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_time: 2026-04-08T00:00:00Z
+force_analyze_links: false
 ---
 [Home](../index.md) > [Videos](./index.md)  
 # 🤖🧠🚀📈 Using Generative AI to Strengthen & Accelerate Learning • Barbara Oakley • GOTO 2024  
@@ -38,6 +41,6 @@ youtube: https://youtu.be/rbTaEsieWsU
 * [🤖🧑‍🏫 Teaching with AI: A Practical Guide to a New Era of Human Learning](../books/teaching-with-ai-a-practical-guide-to-a-new-era-of-human-learning.md)  
 * 🤖 ChatGPT and the Future of AI by Terry Sejnowski  
 * [🧑‍🤝‍🤖 Co-Intelligence: The Definitive, Bestselling Guide to Living and Working with AI](../books/co-intelligence-the-definitive-bestselling-guide-to-living-and-working-with-ai.md) by Ethan Mollick  
-* ❓ The Alignment Problem  
+* ❓ [⚖️🤖 The Alignment Problem](../books/the-alignment-problem.md)  
 * 👀 The Worlds I See by Fei-Fei Li  
 * 💪 AI Superpowers

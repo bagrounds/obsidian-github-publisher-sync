@@ -7,9 +7,13 @@ URL: https://bagrounds.org/topics/applied-arts
 link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-02T00:00:00Z
 force_analyze_links: false
+image_date: 2026-04-08T20:22:29Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: "A stylized, isometric composition featuring a workspace that blends various creative disciplines. On a clean, minimalist wooden desk, several objects are arranged: a sleek, modern ceramic mug with an intricate geometric pattern, a designer chair miniature, a pair of elegant scissors resting on a swatch of vibrant, textured fabric, and a tablet displaying a crisp, colorful graphic layout. Soft, warm light streams from an unseen window, casting gentle shadows that emphasize the form and texture of the objects. The background is a soft, neutral studio wall with faint, artistic sketches of architectural lines and patterns, suggesting a creative environment where functionality meets aesthetics. The overall color palette is warm and sophisticated, using muted earth tones accented by pops of primary colors to represent the diversity of the applied arts."
 ---
 [Home](../index.md) > [Topics](./index.md) > [Knowledge](./a-hierarchical-view-of-human-knowledge.md) > [Arts](./arts.md)  
 # 🎨🛠️ Applied Arts  
+![topics-applied-arts](../topics-applied-arts.jpg)  
 ## 🤖 AI Summary  
 **🎨 High-Level Summary:**  
   

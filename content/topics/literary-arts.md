@@ -4,6 +4,9 @@ aliases:
   - 📚✍️ Literary Arts
 title: 📚✍️ Literary Arts
 URL: https://bagrounds.org/topics/literary-arts
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_time: 2026-04-02T00:00:00Z
+force_analyze_links: false
 ---
 [Home](../index.md) > [Topics](./index.md) > [Knowledge](./a-hierarchical-view-of-human-knowledge.md) > [Arts](./arts.md)  
 # 📚✍️ Literary Arts  

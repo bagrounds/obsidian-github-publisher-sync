@@ -7,6 +7,9 @@ URL: https://bagrounds.org/books/driven-to-distraction
 Author:
 tags:
 affiliate link: https://amzn.to/3HoR4mj
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_time: 2026-04-02T00:00:00Z
+force_analyze_links: false
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🏎️🦋🐿️✨ Driven to Distraction: Recognizing and Coping with Attention Deficit Disorder from Childhood Through Adulthood  

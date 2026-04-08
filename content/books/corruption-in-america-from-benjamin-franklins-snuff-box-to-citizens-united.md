@@ -6,6 +6,9 @@ URL: https://bagrounds.org/books/corruption-in-america-from-benjamin-franklins-s
 share: true
 CTA: ⚖️ Demand accountability.
 affiliate link: https://amzn.to/3WV4V8w
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_time: 2026-04-08T00:00:00Z
+force_analyze_links: false
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 💰🇺🇸 Corruption in America: From Benjamin Franklin's Snuff Box to Citizens United  

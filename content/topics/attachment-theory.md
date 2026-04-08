@@ -8,9 +8,13 @@ updated: 2026-03-12T10:15:10.815Z
 link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-02T00:00:00Z
 force_analyze_links: false
+image_date: 2026-04-08T21:24:29Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A minimalist, soft-focus illustration featuring two abstract, fluid shapes gently interlocking like puzzle pieces. One larger, warm amber-toned shape cradles a smaller, soft blue-toned shape, symbolizing a secure base and connection. The background is a clean, muted cream with subtle, organic line art representing interconnected neural pathways or growing vines, suggesting both biological development and the lifespan. The lighting is ethereal and warm, casting soft, rounded shadows that emphasize a sense of comfort, safety, and emotional harmony. The overall aesthetic is modern, soothing, and professional, using a gentle color palette of peach, sky blue, and soft white to evoke a sense of psychological well-being.
 ---
 [Home](../index.md) > [Topics](./index.md)  
 # 🫂💖 Attachment Theory  
+![topics-attachment-theory](../topics-attachment-theory.jpg)  
 ## 🤖 AI Summary  
 ### 🔨 Tool Report: Attachment Theory 👶👩‍👧‍👦🧙‍♂️  
   

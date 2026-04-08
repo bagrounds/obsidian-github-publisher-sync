@@ -24,100 +24,76 @@ Follow the **Functional Core, Imperative Shell** pattern:
 
 ## Incremental Improvement Plan
 
-Each phase below is designed to be a standalone PR that improves the codebase without requiring other phases to be complete.
+Each phase is a vertical slice: types, logic, tests, and documentation delivered together. Every phase is a standalone PR.
 
-### Phase 1: Pure Function Extraction (Low Risk, High Value)
+### Phase 1: Pure Function Extraction + Tests
 
-**Goal**: Identify functions that are IO but contain pure logic, and extract the pure core.
+**Goal**: Identify functions that are IO but contain pure logic, extract the pure core, and add deterministic tests for each.
 
-**Candidates**:
-- [x] `SocialPosting.isReflectionEligibleForPosting` — done in initial PR
-- [ ] `Scheduler.nowPacificHour` — already partially pure (`pacificHour` exists), but `getScheduledTasks` could take `UTCTime` directly
-- [ ] `Env.getYesterdayDate` — extract pure `yesterdayDate :: UTCTime -> Text`
-- [ ] `SocialPosting.findMostRecentReflection` — separate directory listing (IO) from "pick most recent" logic (pure sort/filter)
-- [ ] `BlogImage.checkCandidate` — separate file reading from eligibility decision
-- [ ] `Scheduler.blogPostExistsForToday` — separate directory listing from filename matching
+**Candidates** (each delivered with property-based and unit tests):
+- [x] `SocialPosting.isReflectionEligibleForPosting` — done (uses `Day` and `TimeOfDay`)
+- [ ] `Scheduler.nowPacificHour` — already partially pure (`pacificHour` exists), but `getScheduledTasks` could take `UTCTime` directly. Add property: result is always 0-23.
+- [ ] `Env.getYesterdayDate` — extract pure `yesterdayDate :: UTCTime -> Day`. Add property: result is always `pred` of today.
+- [ ] `SocialPosting.findMostRecentReflection` — separate directory listing (IO) from "pick most recent" logic (pure sort/filter). Test the pure selection logic.
+- [ ] `BlogImage.checkCandidate` — separate file reading from eligibility decision. Test eligibility as pure function.
+- [ ] `Scheduler.blogPostExistsForToday` — separate directory listing from filename matching. Test the matching logic.
 
-**Pattern**: For each function, create a pure version that accepts all inputs as parameters, then create a thin IO wrapper that gathers the inputs and calls the pure function.
+### Phase 2: Domain Types + Tests
 
-### Phase 2: Domain Types (Medium Risk, High Value)
+**Goal**: Introduce newtypes for commonly confused domain values, with smart constructors and property tests.
 
-**Goal**: Introduce newtypes for commonly confused domain values.
-
-**Priority types**:
-- [ ] `newtype Url = Url Text` with smart constructor validating it starts with `https://`
+Each type delivered as a vertical slice with constructor, tests, and migration of one or two call sites:
+- [ ] `newtype Url = Url Text` with smart constructor validating it starts with `https://`. Property: constructed `Url` always starts with `https://`.
 - [ ] `newtype Title = Title Text` for display titles
-- [ ] `newtype DateStr = DateStr Text` — already exists in `BlogPrompt`, extend to `Types.hs` for shared use
+- [ ] Promote `DateStr` — already exists in `BlogPrompt`, extend to `Types.hs` for shared use
 - [ ] `newtype RelativePath = RelativePath Text` for vault-relative paths
-- [ ] `newtype ApiKey = ApiKey Text` to prevent logging secrets
-- [ ] `data CharLimit = CharLimit { clMax :: Int, clUrlLength :: Int }` for platform limits
+- [ ] `newtype ApiKey = ApiKey Text` to prevent logging secrets. Smart constructor, `Show` instance redacts.
+- [ ] `data PlatformLimits = PlatformLimits { maxChars :: Int, urlLength :: Int }` for platform limits
 
-**Approach**: Introduce one newtype at a time, starting with the most commonly confused. Each newtype gets its own PR.
+### Phase 3: AppContext Record + Tests
 
-### Phase 3: AppContext Record (Medium Risk, Medium Value)
+**Goal**: Replace parameter threading with a shared context record, with tests for context construction.
 
-**Goal**: Replace parameter threading with a shared context record.
-
-```haskell
-data AppContext = AppContext
-  { acManager   :: Manager
-  , acRepoRoot  :: FilePath
-  , acVaultDir  :: FilePath
-  , acEnvConfig :: EnvironmentConfig
-  , acLogMsg    :: Text -> IO ()
-  }
-```
-
-**Steps**:
+Delivered as a single vertical slice:
 - [ ] Define `AppContext` in a new `Automation.Context` module
 - [ ] Update `taskRunners` to construct with `AppContext`
 - [ ] Migrate one task runner at a time to accept `AppContext` instead of individual params
+- [ ] Test context construction and validation
 - [ ] Consider `ReaderT AppContext IO` monad if parameter threading becomes unwieldy
 
-### Phase 4: Explicit Error Types (Medium Risk, High Value)
+### Phase 4: Explicit Error Types + Tests
 
-**Goal**: Replace `Either Text` and silent failures with domain error ADTs.
+**Goal**: Replace `Either Text` and silent failures with domain error ADTs, with tests for error paths.
 
-**Steps**:
+Each error migration delivered with test coverage:
 - [ ] Define `data AppError = GeminiError Text | FileNotFound FilePath | ParseError Text FilePath | ...`
-- [ ] Replace `Either Text` returns in Gemini module with `Either AppError`
-- [ ] Replace silent empty-string returns (like `findBestMatch` returning `""`) with `Maybe` or `Either`
-- [ ] Replace `error` calls in non-startup code with `Either` returns
+- [ ] Replace `Either Text` returns in Gemini module with `Either AppError`. Test error propagation.
+- [ ] Replace silent empty-string returns (like `findBestMatch` returning `""`) with `Maybe` or `Either`. Test the Nothing/Left paths.
+- [ ] Replace `error` calls in non-startup code with `Either` returns. Test failure scenarios.
 
-### Phase 5: Separate Data from Behavior in ImageProviderConfig (Low Risk, Medium Value)
+### Phase 5: Separate Data from Behavior in ImageProviderConfig + Tests
 
-**Goal**: Remove IO callbacks from `ImageProviderConfig`.
+**Goal**: Remove IO callbacks from `ImageProviderConfig`, with tests for each provider type.
 
-**Steps**:
 - [ ] Define `data ImageProviderType = Cloudflare | HuggingFace | Together | Pollinations`
 - [ ] Move provider-specific logic into a `generateImage :: Manager -> ImageProviderType -> ... -> IO (Either Text ...)` function
 - [ ] Keep `ImageProviderConfig` as pure data (name, API key, model, provider type)
+- [ ] Test provider configuration and selection logic
 
-### Phase 6: Break Up RunScheduled.hs (Medium Risk, Medium Value)
+### Phase 6: Break Up RunScheduled.hs + Tests
 
-**Goal**: Split the 913-line orchestrator into focused modules.
+**Goal**: Split the 913-line orchestrator into focused modules, each with its own tests.
 
-**Steps**:
-- [ ] Extract `Automation.TaskRunner` — task dispatch, inter-task delay, result tracking
-- [ ] Extract `Automation.VaultSync` (from RunScheduled) — file sync helpers already in the file
-- [ ] Extract `Automation.CliArgs` — CLI parsing
+- [ ] Extract `Automation.TaskRunner` — task dispatch, inter-task delay, result tracking. Test dispatch logic.
+- [ ] Extract `Automation.VaultSync` (from RunScheduled) — file sync helpers. Test sync logic.
+- [ ] Extract `Automation.CliArgs` — CLI parsing. Test argument parsing.
 - [ ] Keep `RunScheduled.hs` as a thin main that wires everything together (~100 lines)
-
-### Phase 7: Property-Based Testing (Low Risk, High Value)
-
-**Goal**: Add QuickCheck properties for pure functions, especially after Phase 1 extractions.
-
-**Candidates**:
-- [ ] `isReflectionEligibleForPosting` — property: old dates are always eligible
-- [ ] `pacificHour` — property: result is always 0-23
-- [ ] `detectPostedPlatforms` — property: result is always a subset of all platforms
-- [ ] `normalizeFilePath` — property: idempotent
-- [ ] `wordJaccardSimilarity` — property: result is always 0.0-1.0, symmetric
 
 ## Guiding Principles
 
-1. **One change per PR**: Each improvement should be a single focused PR that can be reviewed and merged independently.
-2. **Always green**: Every intermediate state must build and pass all tests.
-3. **Backward compatible exports**: When changing function signatures, keep the old signature available (as an IO wrapper) until all callers are migrated.
-4. **Tests first**: Write failing tests for the new pure signatures before implementing.
-5. **No big bang**: Never refactor more than one module at a time.
+1. **Vertical slices**: Every phase delivers types, logic, tests, and documentation together. Never defer testing to a later phase.
+2. **Test first**: Write failing tests for the new pure signatures before implementing the logic.
+3. **One change per PR**: Each improvement should be a single focused PR that can be reviewed and merged independently.
+4. **Always green**: Every intermediate state must build and pass all tests.
+5. **Backward compatible exports**: When changing function signatures, keep the old signature available (as an IO wrapper) until all callers are migrated.
+6. **No big bang**: Never refactor more than one module at a time.

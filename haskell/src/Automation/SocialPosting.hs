@@ -41,12 +41,15 @@ import Data.Text (Text)
 import qualified Data.Text as T
 import qualified Data.Text.IO as TIO
 import Data.Time
-  ( UTCTime (..)
+  ( Day
+  , UTCTime (..)
   , defaultTimeLocale
   , formatTime
   , getCurrentTime
+  , parseTimeM
   , utctDayTime
   )
+import Data.Time.LocalTime (TimeOfDay (..), timeToTimeOfDay)
 import qualified Network.HTTP.Client as HTTP
 import Network.HTTP.Client (Manager)
 import qualified Network.HTTP.Client.TLS as TLS
@@ -112,7 +115,7 @@ data ContentToPost = ContentToPost
 data FindContentConfig = FindContentConfig
   { fccContentDir           :: FilePath
   , fccPlatforms            :: [Platform]
-  , fccPostingHourUTC       :: Int
+  , fccPostingCutoff        :: TimeOfDay
   , fccPublicationChecker   :: Maybe (Text -> IO Bool)
   }
 
@@ -120,8 +123,8 @@ data FindContentConfig = FindContentConfig
 -- Constants
 --------------------------------------------------------------------------------
 
-defaultPostingHourUTC :: Int
-defaultPostingHourUTC = 17
+defaultPostingCutoff :: TimeOfDay
+defaultPostingCutoff = TimeOfDay 17 0 0
 
 minPostableBodyLength :: Int
 minPostableBodyLength = 50
@@ -405,18 +408,16 @@ findMostRecentReflection contentDir = do
 --------------------------------------------------------------------------------
 
 -- | Pure eligibility check: given the current time, determine whether
--- a reflection with the given date string is eligible for social posting.
--- A reflection is eligible when it is from yesterday (and the posting hour
--- has passed) or from any day before yesterday.
-isReflectionEligibleForPosting :: UTCTime -> Int -> Text -> Bool
-isReflectionEligibleForPosting now postingHourUTC dateStr =
-  let currentHour = floor (utctDayTime now / 3600) :: Int
-      todayStr = T.pack $ formatTime defaultTimeLocale "%Y-%m-%d" now
-      yesterdayStr = T.pack $ formatTime defaultTimeLocale "%Y-%m-%d" $
-        now { utctDay = pred (utctDay now) }
-  in (dateStr == yesterdayStr && currentHour >= postingHourUTC)
-       || (dateStr < yesterdayStr)
-       || (dateStr == todayStr && False)
+-- a reflection with the given date is eligible for social posting.
+-- A reflection is eligible when it is from yesterday (and the posting
+-- cutoff has passed) or from any day before yesterday.
+isReflectionEligibleForPosting :: UTCTime -> TimeOfDay -> Day -> Bool
+isReflectionEligibleForPosting now postingCutoff reflectionDate =
+  let today = utctDay now
+      yesterday = pred today
+      currentTime = timeToTimeOfDay (utctDayTime now)
+  in (reflectionDate == yesterday && currentTime >= postingCutoff)
+       || reflectionDate < yesterday
 
 --------------------------------------------------------------------------------
 -- BFS content discovery
@@ -459,7 +460,7 @@ bfsLoop config state =
       case mNote of
         Nothing -> bfsLoop config state'
         Just note -> do
-          eligible <- checkBfsEligibility (cnRelativePath note) (fccPostingHourUTC config)
+          eligible <- checkBfsEligibility (cnRelativePath note) (fccPostingCutoff config)
           mValidated <- case (isPostableContent note && eligible, fccPublicationChecker config) of
             (True, Just checker) -> validateNoteUrl checker note
             (True, Nothing)      -> pure (Just note)
@@ -487,12 +488,15 @@ bfsLoop config state =
 
 -- | Check if a note is eligible for BFS posting.
 -- Non-reflections are always eligible. Reflections have timing constraints.
-checkBfsEligibility :: Text -> Int -> IO Bool
-checkBfsEligibility relativePath postingHourUTC
+checkBfsEligibility :: Text -> TimeOfDay -> IO Bool
+checkBfsEligibility relativePath postingCutoff
   | isIndexPath relativePath = pure False
-  | isReflectionPath relativePath = do
-      now <- getCurrentTime
-      pure $ isReflectionEligibleForPosting now postingHourUTC (extractDateFromPath relativePath)
+  | isReflectionPath relativePath =
+      case parseDateFromPath relativePath of
+        Nothing -> pure False
+        Just reflectionDate -> do
+          now <- getCurrentTime
+          pure $ isReflectionEligibleForPosting now postingCutoff reflectionDate
   | otherwise = pure True
 
 --------------------------------------------------------------------------------
@@ -508,8 +512,10 @@ discoverContentToPost config isPastPostingHour = do
         Nothing -> bfsContentDiscovery config
         Just reflPath -> do
           now <- getCurrentTime
-          let eligible = isReflectionEligibleForPosting
-                now (fccPostingHourUTC config) (extractDateFromPath reflPath)
+          let eligible = case parseDateFromPath reflPath of
+                Nothing -> False
+                Just reflectionDate -> isReflectionEligibleForPosting
+                  now (fccPostingCutoff config) reflectionDate
           case eligible of
             True -> do
               mNote <- readContentNote reflPath (fccContentDir config)
@@ -537,6 +543,11 @@ extractDateFromPath :: Text -> Text
 extractDateFromPath path =
   let base = T.pack $ takeBaseName $ T.unpack path
   in base
+
+parseDateFromPath :: Text -> Maybe Day
+parseDateFromPath path =
+  let base = takeBaseName (T.unpack path)
+  in parseTimeM True defaultTimeLocale "%Y-%m-%d" base
 
 --------------------------------------------------------------------------------
 -- Path reconstruction and timestamp updates
@@ -755,14 +766,14 @@ runPostingPipeline manager env apiKey vaultDir = do
 
   now <- getCurrentTime
   tlsManager <- TLS.newTlsManager
-  let currentHour = floor (utctDayTime now / 3600) :: Int
+  let currentTime = timeToTimeOfDay (utctDayTime now)
       config = FindContentConfig
         { fccContentDir = vaultDir
         , fccPlatforms = platforms
-        , fccPostingHourUTC = defaultPostingHourUTC
+        , fccPostingCutoff = defaultPostingCutoff
         , fccPublicationChecker = Just (checkUrlPublished tlsManager)
         }
-      isPastHour = currentHour >= defaultPostingHourUTC
+      isPastHour = currentTime >= defaultPostingCutoff
 
   contentItems <- discoverContentToPost config isPastHour
   case contentItems of

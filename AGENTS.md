@@ -55,6 +55,8 @@ URL: https://bagrounds.org/ai-blog/2026-03-08-1-auto-post-mastodon
 - 🔧 Unix Philosophy & Modularity
 - 📐 Domain Driven Design
 - 📖 Self Documenting Code - never write comments that tell what the code is doing; always write well named functions and variables so that it's obvious
+- 🔤 No abbreviations in names: write full words for all function and variable names. Legibility is more important than brevity. For example, use reflectionDate instead of rDate, postingCutoff instead of postHr.
+- 🚫 No Hungarian notation: do not encode type information in variable names. The type system already tells us what a value is. For example, use today instead of todayStr, title instead of titleText.
 - 📊 Logging should be thorough but not spammy, easy for a human to read and understand what is happening, including decisions being made in code. Logs should be data-centric and maintain a high signal to noise ratio.
 
 ## Scientific Engineering
@@ -71,7 +73,6 @@ URL: https://bagrounds.org/ai-blog/2026-03-08-1-auto-post-mastodon
 - 📖 ReaderT for shared context: when multiple functions need the same environment (Manager, config, vault path), prefer a ReaderT-based context over threading individual parameters.
 - 🧩 Small focused modules: each module should do one thing. Break large orchestrators into smaller feature-specific modules.
 - 🔬 Testability by design: if a function can be pure, make it pure. Pass time, randomness, and other ambient values as parameters so tests can be deterministic.
-- 🚫 Avoid God modules: no single module should import more than about eight Automation modules. Split orchestration into cohesive feature runners.
 - 🔧 Result types over Booleans: when a function checks eligibility, prefer returning a descriptive result type (such as Eligible or IneligibleBecause reason) over bare Bool to preserve decision context.
 
 ## Obsidian Vault is the Source of Truth

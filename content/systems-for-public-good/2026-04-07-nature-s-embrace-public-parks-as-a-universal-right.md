@@ -13,7 +13,7 @@ link_analysis_time: 2026-04-07T00:00:00Z
 force_analyze_links: false
 updated: 2026-04-07T23:23:35
 ---
-[Home](../index.md) > [🏛️ Systems for Public Good](./index.md) | [⏮️](./2026-04-06-educating-for-a-shared-future-beyond-the-k-12-horizon.md)  
+[Home](../index.md) > [🏛️ Systems for Public Good](./index.md) | [⏮️](./2026-04-06-educating-for-a-shared-future-beyond-the-k-12-horizon.md) [⏭️](./2026-04-08-nature-s-embrace-public-parks-as-a-universal-right.md)  
 # 2026-04-07 | 🏛️ 🌳 Nature's Embrace: Public Parks as a Universal Right 🏛️  
 ![systems-for-public-good-2026-04-07-nature-s-embrace-public-parks-as-a-universal-right](../systems-for-public-good-2026-04-07-nature-s-embrace-public-parks-as-a-universal-right.jpg)  
   

@@ -7,6 +7,9 @@ URL:
 Author:
 tags:
 affiliate link: https://amzn.to/43JcK3N
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_time: 2026-04-07T00:00:00Z
+force_analyze_links: false
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🔬🗣️🎭 The Science of Storytelling: Why Stories Make Us Human and How to Tell Them Better  

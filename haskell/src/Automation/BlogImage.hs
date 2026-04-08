@@ -1075,7 +1075,7 @@ backfillImages manager config = do
   dateStr <- todayPacific
   let today = case parseTimeM True defaultTimeLocale "%Y-%m-%d" (T.unpack (unDateStr dateStr)) :: Maybe Day of
         Just d  -> d
-        Nothing -> error $ "Invalid date from todayPacific: " <> T.unpack (unDateStr dateStr)
+        Nothing -> error ("todayPacific returned unparseable date: " ++ T.unpack (unDateStr dateStr))
   candidates <- collectCandidates (bfcRepoRoot config) (bfcContentDirs config) today
   putStrLn $ "📋 Candidates: " <> show (length candidates) <> " notes need images"
          <> " | providers: " <> show (length (bfcProviders config))
@@ -1115,14 +1115,14 @@ checkCandidateEligibility directoryId today filename content =
     Just fileDate
       | directoryId == Reflections && fileDate > today -> Ineligible FutureReflection
     fileDate ->
-      let needsRegen = shouldRegenerateImage content
+      let requiresRegeneration = shouldRegenerateImage content
           untitledReflection = directoryId == Reflections
             && maybe False (isDateOnlyTitle content) fileDate
       in if untitledReflection
          then Ineligible UntitledReflection
-         else if hasEmbeddedImage content && not needsRegen
+         else if hasEmbeddedImage content && not requiresRegeneration
               then Ineligible AlreadyHasImage
-              else Eligible needsRegen
+              else Eligible requiresRegeneration
 
 checkCandidate :: FilePath -> ContentDirectoryId -> Day -> Text -> IO [BackfillCandidate]
 checkCandidate directoryPath directoryId today filename = do
@@ -1134,9 +1134,9 @@ checkCandidate directoryPath directoryId today filename = do
     _ -> do
       content <- TIO.readFile filePath
       case checkCandidateEligibility directoryId today filename content of
-        Ineligible _     -> pure []
-        Eligible regen   -> pure [BackfillCandidate filePath directoryId filename
-                                    (fromMaybe today fileDate) regen]
+        Ineligible _                       -> pure []
+        Eligible requiresRegeneration -> pure [BackfillCandidate filePath directoryId filename
+                                    (fromMaybe today fileDate) requiresRegeneration]
 
 sortByDateDesc :: [BackfillCandidate] -> [BackfillCandidate]
 sortByDateDesc = foldl' insertSorted []

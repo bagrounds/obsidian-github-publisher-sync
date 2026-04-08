@@ -2,7 +2,7 @@
 
 ## Current State Summary
 
-The Haskell codebase was ported from TypeScript and inherited several patterns that don't leverage Haskell's strengths for safety and correctness. The code works well and has good test coverage (830+ tests), but can be improved to better prevent accidental breakage and improve modularity.
+The Haskell codebase was ported from TypeScript and inherited several patterns that don't leverage Haskell's strengths for safety and correctness. The code works well and has good test coverage (837+ tests), but can be improved to better prevent accidental breakage and improve modularity.
 
 ### Key Issues Identified
 

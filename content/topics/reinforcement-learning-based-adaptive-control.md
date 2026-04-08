@@ -4,6 +4,9 @@ aliases:
   - 🤖🔄🧠💪 Reinforcement Learning based Adaptive Control
 title: 🤖🔄🧠💪 Reinforcement Learning based Adaptive Control
 URL: https://bagrounds.org/topics/reinforcement-learning-based-adaptive-control
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_time: 2026-04-04T00:00:00Z
+force_analyze_links: false
 ---
 [Home](../index.md) > [Topics](./index.md) > [Knowledge](./a-hierarchical-view-of-human-knowledge.md) > [Engineering](./engineering.md) > [Electrical Engineering](./electrical-engineering.md) > [Control Systems](./control-systems.md) > [Adaptive Control](./adaptive-control.md)  
 # 🤖🔄🧠💪 Reinforcement Learning based Adaptive Control  

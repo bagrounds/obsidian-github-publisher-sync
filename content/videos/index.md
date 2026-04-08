@@ -5,10 +5,10 @@ aliases:
 title: 📺 Videos
 URL: https://bagrounds.org/videos
 backlinks: false
-updated: 2026-04-07T19:32:21-07:00
+updated: 2026-04-07T19:38:16-07:00
 ---
 [Home](../index.md)  
-# 📺 Videos (729)  
+# 📺 Videos (730)  
 - [💰🤑🤖💡🚀💲 $0.10/Month Runs My Entire AI Life. I'll Show You How.](./0-10-month-runs-my-entire-ai-life-ill-show-you-how.md)  
 - [📊📈📉📃👁️ 10 Charts to Understand the 900 Page Budget Bill](./10-charts-to-understand-the-900-page-budget-bill.md)  
 - [🤖🔗⬆️✅ 12-Factor Agents: Patterns of reliable LLM applications — Dex Horthy, HumanLayer](./12-factor-agents-patterns-of-reliable-llm-applications-dex-horthy-humanlayer.md)  
@@ -501,6 +501,7 @@ updated: 2026-04-07T19:32:21-07:00
 - [📢👨⚖️🗣️ Tamara Keith and Amy Walter on the public response to Trump's handling of the Epstein case](./tamara-keith-and-amy-walter-on-the-public-response-to-trumps-handling-of-the-epstein-case.md)  
 - [🇺🇸🔄👑😬 Tamara Keith and Amy Walter on Trump flirting with the idea of the 3rd term](./tamara-keith-and-amy-walter-on-trump-flirting-with-the-idea-of-the-3rd-term.md)  
 - [👨‍💼🇺🇸📉🗣️ Tamara Keith and Amy Walter on Trump losing support over his immigration crackdown](./tamara-keith-and-amy-walter-on-trump-losing-support-over-his-immigration-crackdown.md)  
+- [🗣️🔄💬🇮🇷⚔️ Tamara Keith and Amy Walter on Trump’s shifting messaging on Iran war](./tamara-keith-and-amy-walter-on-trumps-shifting-messaging-on-iran-war.md)  
 - [👩‍💼🗣️🇺🇸 Tamara Keith and Amy Walter on what to watch in Tuesday's elections](./tamara-keith-and-amy-walter-on-what-to-watch-in-tuesdays-elections.md)  
 - [🎤✨🗣️ TED's secret to great public speaking | Chris Anderson | TED](./teds-secret-to-great-public-speaking-chris-anderson-ted.md)  
 - [💩🍄👶♻️🗑️ Texas startup sells plastic-eating fungi diapers to tackle landfill waste | REUTERS](./texas-startup-sells-plastic-eating-fungi-diapers-to-tackle-landfill-waste-reuters.md)  

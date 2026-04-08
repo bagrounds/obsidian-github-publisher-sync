@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-04-08T09:13:49-07:00
+updated: 2026-04-08T12:16:58-07:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -21,11 +21,11 @@ updated: 2026-04-08T09:13:49-07:00
 - [2026-04-05 | ✨ Children 🎶 Songs 🔗 Root-zone 🌳 Planting 🌿 Preparation 🐣 Heart 🤖 Mirror 🏛️ Freedoms 🌅 Horizon 📚📺🐔🤖🏛️🤖🐲](./reflections/2026-04-05.md)  
   
   
-## [🤖 AI Blog](./ai-blog/index.md) (112)  
+## [🤖 AI Blog](./ai-blog/index.md) (113)  
+- [2026-04-07 | 🏛️ Toward a Haskell Architecture That Prevents Mistakes 🧱](./ai-blog/2026-04-07-2-toward-a-haskell-architecture-that-prevents-mistakes.md)  
 - [2026-04-07 | 🐛 Fixing Daily Updates Dedup and False Twitter Claims 🔧](./ai-blog/2026-04-07-1-fixing-daily-updates-dedup-and-false-twitter-claims.md)  
 - [2026-04-06 | 🖼️ Reducing Image Backfill Capacity 🔧](./ai-blog/2026-04-06-1-reduce-image-backfill-capacity.md)  
 - [2026-04-05 | 🏦 The Vault That Never Received 📬](./ai-blog/2026-04-05-2-the-vault-that-never-received.md)  
-- [2026-04-05 | 🖼️ Expanding the Image Backfill Horizon 🌅](./ai-blog/2026-04-05-1-expanding-the-image-backfill-horizon.md)  
   
   
 ## [🤖 Auto Blog Zero](./auto-blog-zero/index.md) (29)  
@@ -42,32 +42,32 @@ updated: 2026-04-08T09:13:49-07:00
 - [2026-04-05 | 🐔 A Week of Heart, Harvest, and New Horizons 🐣 🐔](./chickie-loo/2026-04-05-a-week-of-heart-harvest-and-new-horizons.md)  
   
   
-## [🏛️ Systems for Public Good](./systems-for-public-good/index.md) (17)  
+## [🏛️ Systems for Public Good](./systems-for-public-good/index.md) (18)  
+- [2026-04-08 | 🏛️ 🌳 Nature's Embrace: Public Parks as a Universal Right 🏛️](./systems-for-public-good/2026-04-08-nature-s-embrace-public-parks-as-a-universal-right.md)  
 - [2026-04-07 | 🏛️ 🌳 Nature's Embrace: Public Parks as a Universal Right 🏛️](./systems-for-public-good/2026-04-07-nature-s-embrace-public-parks-as-a-universal-right.md)  
 - [2026-04-06 | 🏛️ 🎓 Educating for a Shared Future: Beyond the K-12 Horizon 🏛️](./systems-for-public-good/2026-04-06-educating-for-a-shared-future-beyond-the-k-12-horizon.md)  
 - [2026-04-05 | 🏛️ 🗺️ Mapping Our Shared Journey: A Week of Foundational Freedoms 🏛️](./systems-for-public-good/2026-04-05-mapping-our-shared-journey-a-week-of-foundational-freedoms.md)  
-- [2026-04-04 | 🏛️ 🤝 Cultivating Connection: Social Health as a Public Good 🏛️](./systems-for-public-good/2026-04-04-cultivating-connection-social-health-as-a-public-good.md)  
   
   
 ## [📚 Books](./books/index.md) (959)  
-- [👣🗺️💥 Everyone Who Is Gone Is Here: The United States, Central America, and the Making of a Crisis](./books/everyone-who-is-gone-is-here-the-united-states-central-america-and-the-making-of-a-crisis.md)  
-- [💪📈 Creatine: A Natural Substance and Its Benefits for Muscle Metabolism, Fitness, Health & Longevity](./books/creatine-a-natural-substance-and-its-benefits-for-muscle-metabolism-fitness-health-longevity.md)  
-- [💪⚕️ Essentials of Creatine in Sports and Health](./books/essentials-of-creatine-in-sports-and-health.md)  
-- [🇺🇸⚠️ Harbingers: What January 6 and Charlottesville Reveal About Rising Threats to American Democracy](./books/harbingers-what-january-6-and-charlottesville-reveal-about-rising-threats-to-american-democracy.md)  
+- [💰🇺🇸 Corruption in America: From Benjamin Franklin's Snuff Box to Citizens United](./books/corruption-in-america-from-benjamin-franklins-snuff-box-to-citizens-united.md)  
+- [💸🌍 Kleptopia: How Dirty Money Is Conquering the World](./books/kleptopia-how-dirty-money-is-conquering-the-world.md)  
+- [⛓️🏕️📜 Concentration Camps: A Short History](./books/concentration-camps-a-short-history.md)  
+- [🇺🇸🔒 American Gulag: Inside U.S. Immigration Prisons](./books/american-gulag-inside-us-immigration-prisons.md)  
   
   
 ## [📺 Videos](./videos/index.md) (730)  
-- [🇺🇸📚🔄 A look at what's behind the efforts to reshape how American history is taught](./videos/a-look-at-whats-behind-the-efforts-to-reshape-how-american-history-is-taught.md)  
-- [🇺🇸🚫➡️🇺🇦⚔️🇷🇺 U.S. withholds weapons promised to Ukraine as Russian forces gain more territory](./videos/us-withholds-weapons-promised-to-ukraine-as-russian-forces-gain-more-territory.md)  
-- [👹📜🏛️🏠 What's in the version of Trump's bill passed by the Senate and its chances in the House](./videos/whats-in-the-version-of-trumps-bill-passed-by-the-senate-and-its-chances-in-the-house.md)  
-- [👹🐊🔒 Trump visits Florida's 'Alligator Alcatraz,' urges more states to open ICE detention sites](./videos/trump-visits-floridas-alligator-alcatraz-urges-more-states-to-open-ice-detention-sites.md)  
+- [Susan Crawford wins Wisconsin Supreme Court seat, cementing liberal majority](./videos/susan-crawford-wins-wisconsin-supreme-court-seat-cementing-liberal-majority.md)  
+- [To Save Democracy, Here’s a Playbook That Works](./videos/to-save-democracy-heres-a-playbook-that-works.md)  
+- [📜🇺🇸🗽➡️ The Declaration of Independence | Journey to American Democracy](./videos/the-declaration-of-independence-journey-to-american-democracy.md)  
+- [👮‍♂️💪🚫📜 How Trump’s Bill Creates a Super Police Force](./videos/how-trumps-bill-creates-a-super-police-force.md)  
   
   
 ## [🌌 Topics](./topics/index.md) (91)  
-- [💪🏋️‍♂️ Creatine](./topics/creatine.md)  
-- [🔢💯 Hundred Board](./topics/hundred-board.md)  
-- [👨‍👩‍👦🧭🤝 Authoritative Parenting](./topics/authoritative-parenting.md)  
-- [⭐✨🌟💫 The Star](./topics/the-star.md)  
+- [🍎🥛🔬✨ Universal Nutrition System Design](./topics/universal-nutrition-system-design.md)  
+- [🇺🇸🗣️💡🗓️ A Presidential Platform for Americans 2028](./topics/a-presidential-platform-for-americans-2028.md)  
+- [⚙️🧠🔄 Adaptive Control](./topics/adaptive-control.md)  
+- [⏱️📊 A Method For Estimating Work](./topics/a-method-for-estimating-work.md)  
   
   
 ## [📄  Articles](./articles/index.md) (84)  
@@ -78,10 +78,10 @@ updated: 2026-04-08T09:13:49-07:00
   
   
 ## [🤖💬 Bot Chats](./bot-chats/index.md) (49)  
+- [😇🔮🎲🎬 Good Decisions](./bot-chats/good-decisions.md)  
 - [♟️👑⚔️🧠 Chess](./bot-chats/chess.md)  
 - [👨‍👧‍👦👔🎁 Fathers Day](./bot-chats/fathers-day.md)  
 - [🛐🕯️🔄 Ritual](./bot-chats/ritual.md)  
-- [👶👂 Infant Hearing](./bot-chats/infant-hearing.md)  
   
   
 ## [💾 Software](./software/index.md) (33)  

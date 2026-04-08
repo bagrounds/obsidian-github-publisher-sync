@@ -6,9 +6,13 @@ title: ⏱️📊 A Method For Estimating Work
 link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-04T00:00:00Z
 force_analyze_links: false
+image_date: 2026-04-08T17:33:34Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A minimalist, flat-style illustration featuring a sleek hourglass centered on a clean, soft-toned background. The hourglass is stylized with two distinct, glowing bands of color—a vibrant teal representing the tight P5 lower bound and a warm amber representing the broader P95 upper bound. Floating around the hourglass are small, abstract geometric shapes (circles and squares) representing data points, some perfectly aligned within the colored bands and a few scattered slightly outside to symbolize calibration and outliers. The aesthetic is clean, professional, and modern, using a limited color palette of navy, slate, teal, and amber to evoke a sense of precision, analytical thinking, and effective time management. There is subtle lighting that casts a soft shadow, giving the composition depth while maintaining a focus on the concept of probabilistic estimation.
 ---
 [Home](../index.md) > [Topics](./index.md)  
 # ⏱️📊 A Method For Estimating Work  
+![topics-a-method-for-estimating-work](../topics-a-method-for-estimating-work.jpg)  
 ## Method  
 For each task, record a P5 and a P95 estimate for how much time you'd expect to pass before the work is done if it were yours to complete.  
   

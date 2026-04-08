@@ -8,6 +8,7 @@ import Test.Tasty.QuickCheck (testProperty)
 import qualified Test.QuickCheck as QC
 
 import Automation.Env
+import Automation.TestGenerators (genUTCTime)
 
 tests :: TestTree
 tests = testGroup "Env"
@@ -54,11 +55,3 @@ yesterdayDateTests = testGroup "yesterdayDate"
       yesterdayDate (UTCTime (fromGregorian 2026 4 8) (secondsToDiffTime 86399))
         @?= fromGregorian 2026 4 7
   ]
-
-genUTCTime :: QC.Gen UTCTime
-genUTCTime = do
-  year <- QC.choose (2000, 2030)
-  month <- QC.choose (1, 12)
-  day <- QC.choose (1, 28)
-  secs <- QC.choose (0, 86399)
-  pure $ UTCTime (fromGregorian year month day) (secondsToDiffTime secs)

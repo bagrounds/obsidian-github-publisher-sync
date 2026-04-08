@@ -6,6 +6,9 @@ title: "🚫🏫📉⚠️ Project 2025 and education: A lot of bad ideas, some 
 URL: https://bagrounds.org/articles/project-2025-and-education-a-lot-of-bad-ideas-some-more-actionable-than-others
 Author:
 tags:
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_time: 2026-04-07T00:00:00Z
+force_analyze_links: false
 ---
 [Home](../index.md) > [Articles](./index.md)  
 # [🚫🏫📉⚠️ Project 2025 and education: A lot of bad ideas, some more actionable than others](https://www.brookings.edu/articles/project-2025-and-education-a-lot-of-bad-ideas-some-more-actionable-than-others)  

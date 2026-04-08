@@ -6,6 +6,9 @@ URL: https://bagrounds.org/books/finite-and-infinite-games-a-vision-of-life-as-p
 share: true
 CTA: 💎 Embrace possibility.
 updated: 2026-03-12T06:18:43.764Z
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_time: 2026-04-05T00:00:00Z
+force_analyze_links: false
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🎲♾️ Finite and Infinite Games: A Vision of Life as Play and Possibility  

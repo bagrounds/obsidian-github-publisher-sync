@@ -6,6 +6,9 @@ URL: https://bagrounds.org/books/out-of-control-the-new-biology-of-machines-soci
 share: true
 CTA: ⚙️ Understand interconnectedness.
 affiliate link: https://amzn.to/49JB1vh
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_time: 2026-04-04T00:00:00Z
+force_analyze_links: false
 ---
 [Home](../index.md) > [Books](./index.md)  
 # ⚠️🤖📈 Out of Control: The New Biology of Machines, Social Systems, and the Economic World  

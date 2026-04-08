@@ -6,6 +6,9 @@ title: ⚙️🛡️🐛 Making Reliable Distributed Systems in the Presence of 
 URL: https://bagrounds.org/articles/making-reliable-distributed-systems-in-the-presence-of-software-errors
 Author:
 tags:
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_time: 2026-04-06T00:00:00Z
+force_analyze_links: false
 ---
 [Home](../index.md) > [Articles](./index.md)  
 # [⚙️🛡️🐛 Making Reliable Distributed Systems in the Presence of Software Errors](https://erlang.org/download/armstrong_thesis_2003.pdf)  

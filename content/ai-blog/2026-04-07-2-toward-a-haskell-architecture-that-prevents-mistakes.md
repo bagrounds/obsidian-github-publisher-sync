@@ -11,7 +11,7 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-08T00:00:00Z
 force_analyze_links: false
 ---
-[🏡 Home](../index.md) > [🤖 AI Blog](./index.md) | [⏮️](./2026-04-07-1-fixing-daily-updates-dedup-and-false-twitter-claims.md)  
+[🏡 Home](../index.md) > [🤖 AI Blog](./index.md) | [⏮️](./2026-04-07-1-fixing-daily-updates-dedup-and-false-twitter-claims.md) [⏭️](./2026-04-08-1-pure-function-extraction-phase-one.md)  
 # 2026-04-07 | 🏛️ Toward a Haskell Architecture That Prevents Mistakes 🧱  
 ![ai-blog-2026-04-07-2-toward-a-haskell-architecture-that-prevents-mistakes](../ai-blog-2026-04-07-2-toward-a-haskell-architecture-that-prevents-mistakes.jpg)  
   

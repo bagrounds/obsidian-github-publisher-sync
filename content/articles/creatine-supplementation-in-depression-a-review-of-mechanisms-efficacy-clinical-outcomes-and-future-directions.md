@@ -6,6 +6,9 @@ title: "💪🧠📉💊🔎 Creatine Supplementation in Depression: A Review of
 URL: https://bagrounds.org/articles/creatine-supplementation-in-depression-a-review-of-mechanisms-efficacy-clinical-outcomes-and-future-directions
 Author:
 tags:
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_time: 2026-04-08T00:00:00Z
+force_analyze_links: false
 ---
 [Home](../index.md) > [Articles](./index.md)  
 # 💪🧠📉💊🔎 [Creatine Supplementation in Depression: A Review of Mechanisms, Efficacy, Clinical Outcomes, and Future Directions](https://pmc.ncbi.nlm.nih.gov/articles/PMC11567172)  

@@ -6,6 +6,9 @@ URL: https://bagrounds.org/books/manufactured-crisis-the-untold-story-of-the-ira
 share: true
 affiliate link: https://amzn.to/4kb2xUk
 CTA: 🤯 Comprehend the artifice.
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_time: 2026-04-08T00:00:00Z
+force_analyze_links: false
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🏭☢️😱 Manufactured Crisis: The Untold Story of the Iran Nuclear Scare  
@@ -53,7 +56,7 @@ These books share *Manufactured Crisis*'s critical perspective on U.S. foreign p
 * 📖 ***Why Intelligence Fails: Lessons from the Iranian Revolution and the Iraq War*** by Robert Jervis: 🤔 Examines significant U.S. intelligence failures, including the lead-up to the Iraq War, providing insights into the systemic issues and biases that can affect intelligence analysis – highly relevant to Porter's arguments about manipulated intelligence.  
 * 📖 ***America's Middle East*** by Marc Lynch: 🌍 Analyzes the failures of U.S. Middle East policy since the end of the Cold War, highlighting how aspirations for leadership have led to instability and catastrophe, and policymakers' refusal to learn from past mistakes.  
 * 📖 ***The Iran Wars: Spy Games, Bank Battles, and the Secret Deals That Reshaped the Middle East*** by Jay Solomon: 🕵️ While potentially offering a different perspective, this book delves into the complex interactions and underlying dynamics of the U.S.-Iran relationship and nuclear negotiations.  
-* 📖 ***Propaganda*** by Edward Bernays: 📢 A foundational text on the mechanisms of public manipulation, providing a broader context for understanding how narratives, including those around foreign policy threats, can be constructed and disseminated.  
+* 📖 ***[📢 Propaganda](./propaganda.md)*** by Edward Bernays: 📢 A foundational text on the mechanisms of public manipulation, providing a broader context for understanding how narratives, including those around foreign policy threats, can be constructed and disseminated.  
   
 ### ⚖️ Contrasting Reads (Alternative Perspectives on the Iran Nuclear Issue)  
   

@@ -9,6 +9,9 @@ Platform:
 Channel:
 tags:
 youtube: https://youtu.be/vLbn78SFvO8
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_time: 2026-04-07T00:00:00Z
+force_analyze_links: false
 ---
 [Home](../index.md) > [Videos](./index.md)  
 # 👨‍⚕️➡️😬💉💥 Former CDC director reacts to RFK Jr.'s firing of entire vaccine advisory panel  
@@ -34,7 +37,7 @@ youtube: https://youtu.be/vLbn78SFvO8
     * 😥 **The Cutter Incident: How America's First Polio Vaccine Led to the Growing Debate Over Vaccine Safety** by Paul A. Offit: A detailed account ✍️ of a pivotal moment in vaccine history that shaped safety protocols and public perception 👀.  
   
 * 🏥 **On Public Health and Disease Control:**  
-    * 🦠 **The Great Influenza: The Story of the Deadliest Pandemic in History** by John M. Barry: While focused on the 1918 flu pandemic, it offers profound insights into public health responses, the role of science 🧪, and societal reactions 😲 to widespread disease.  
+    * 🦠 **[🦠🌍💀 The Great Influenza](../books/the-great-influenza.md): The Story of the Deadliest Pandemic in History** by John M. Barry: While focused on the 1918 flu pandemic, it offers profound insights into public health responses, the role of science 🧪, and societal reactions 😲 to widespread disease.  
     * **[💀🚫🦠 Deadly Choices: How the Anti-Vaccine Movement Threatens Us All](../books/deadly-choices-how-the-anti-vaccine-movement-threatens-us-all.md)** by Paul A. Offit: Written by a prominent vaccinologist 👨‍⚕️, this book directly addresses the anti-vaccine movement, its origins, and its public health implications.  
   
 * 🔬 **On Scientific Integrity and Misinformation:**  

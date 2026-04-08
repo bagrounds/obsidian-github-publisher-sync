@@ -8,6 +8,9 @@ Author:
 Platform:
 Channel: USAFacts
 tags:
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_time: 2026-04-07T00:00:00Z
+force_analyze_links: false
 ---
 [Home](../index.md) > [Videos](./index.md)  
 # USAFacts - Just the Facts About the US Federal Budget: Steve Ballmer Talks Through the Numbers  
@@ -75,7 +78,7 @@ This video presents the 2023 U.S. federal budget through a straightforward, numb
 - **Best Alternate Resource** 🌟  
   *[CBO Budget and Economic Outlook: 2025 to 2035](https://www.cbo.gov/publication/60870)*: Official government report with similar data, plus more details.  
 - **Best Tangentially Related** 🔗  
-  *The Deficit Myth by Stephanie Kelton*: Discusses government spending and deficits in a broader context.  
+  *[💰📉➡️📈🗳️ The Deficit Myth: Modern Monetary Theory and the Birth of the People's Economy](../books/the-deficit-myth.md) by Stephanie Kelton*: Discusses government spending and deficits in a broader context.  
 - **Best More General/Specific** 📏  
   *[USAFacts Government Spending](https://usafacts.org/government-spending)*: Ballmer’s site with more specific budget breakdowns.  
 - **Best More Rigorous/Accessible** 🎓  

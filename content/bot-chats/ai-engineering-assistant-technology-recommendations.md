@@ -4,6 +4,9 @@ aliases:
   - 🤖⚙️📈💡 AI Engineering Assistant Technology Recommendations
 title: 🤖⚙️📈💡 AI Engineering Assistant Technology Recommendations
 URL: https://bagrounds.org/bot-chats/ai-engineering-assistant-technology-recommendations
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_time: 2026-04-06T00:00:00Z
+force_analyze_links: false
 ---
 [Home](../index.md) > [Bot Chats](./index.md)  
 # 🤖⚙️📈💡 AI Engineering Assistant Technology Recommendations  

@@ -9,6 +9,9 @@ Platform:
 Channel: Economy Media
 tags:
 youtube: https://youtu.be/_wHjDNzjF-k
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_time: 2026-04-08T00:00:00Z
+force_analyze_links: false
 ---
 [Home](../index.md) > [Videos](./index.md)  
 # 💻🌍🚶‍♀️ Where All the Tech Workers Are Going  
@@ -84,7 +87,7 @@ By proactively adapting to these shifts, focusing on higher-order thinking, and 
 * **[🧬👥💾 Life 3.0: Being Human in the Age of Artificial Intelligence](../books/life-3-0.md) by Max Tegmark:** Explores the profound implications of AI for humanity, from the near future to the far-reaching possibilities, prompting readers to consider how to steer AI toward a beneficial future.  
 * **[🧑‍💻🤖 Human + Machine: Reimagining Work in the Age of AI](../books/human-machine-reimagining-work-in-the-age-of-ai.md) by Paul R. Daugherty and H. James Wilson:** This book argues for a symbiotic relationship between humans and AI, providing a framework for how businesses and individuals can leverage AI to augment human capabilities rather than replace them.  
 * **AI Superpowers by Kai-Fu Lee:** Offers a fascinating perspective on the AI race between the US and China, highlighting the strengths of each and the societal implications of widespread AI adoption.  
-* ***The Second Machine Age: Work, Progress, and Prosperity in a Time of Brilliant Technologies* by Erik Brynjolfsson and Andrew McAfee:** Examines how digital technologies, particularly AI and robotics, are transforming the economy and labor market, discussing both the opportunities and challenges.  
+* ***[🤖📈 The Second Machine Age: Work, Progress, and Prosperity in a Time of Brilliant Technologies](../books/the-second-machine-age-work-progress-and-prosperity-in-a-time-of-brilliant-technologies.md)* by Erik Brynjolfsson and Andrew McAfee:** Examines how digital technologies, particularly AI and robotics, are transforming the economy and labor market, discussing both the opportunities and challenges.  
 * ***Co-intelligence: Living And Working With Ai* by Ethan Mollick:** Explores how humans and AI can work together more effectively, focusing on practical applications and the emergence of "co-intelligence" in the workplace.  
   
 ### On Entrepreneurship and Startups  

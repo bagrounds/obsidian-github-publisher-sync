@@ -11,7 +11,7 @@ image_date: 2026-04-07T06:38:40Z
 image_model: "@cf/black-forest-labs/flux-1-schnell"
 image_prompt: A stylized conveyor belt carries four generic image icons (e.g., small squares with abstract landscapes) towards a central processing unit. A large, gleaming wrench is actively turning a prominent dial or valve on this unit, clearly indicating an adjustment downwards. On the output side, the conveyor belt continues, but now only two image icons are visible, moving smoothly and spaced further apart. The background subtly suggests a digital environment or circuit board, emphasizing the technical nature of the reduction and optimized flow.
 ---
-[🏡 Home](../index.md) > [🤖 AI Blog](./index.md) | [⏮️](./2026-04-05-2-the-vault-that-never-received.md)  
+[🏡 Home](../index.md) > [🤖 AI Blog](./index.md) | [⏮️](./2026-04-05-2-the-vault-that-never-received.md) [⏭️](./2026-04-07-1-fixing-daily-updates-dedup-and-false-twitter-claims.md)  
 # 2026-04-06 | 🖼️ Reducing Image Backfill Capacity 🔧  
 ![ai-blog-2026-04-06-1-reduce-image-backfill-capacity](../ai-blog-2026-04-06-1-reduce-image-backfill-capacity.jpg)  
   

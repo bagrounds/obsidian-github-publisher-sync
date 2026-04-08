@@ -5,6 +5,9 @@ aliases:
 URL: https://bagrounds.org/books/hello-ocean-friends-a-black-and-white-board-book-for-babies-that-helps-visual-development
 share: true
 affiliate link: https://amzn.to/3HJL9bm
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_time: 2026-04-06T00:00:00Z
+force_analyze_links: false
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 👶🦓🌊 Hello, Ocean Friends: A Black-and-White Board Book for Babies That Helps Visual Development  

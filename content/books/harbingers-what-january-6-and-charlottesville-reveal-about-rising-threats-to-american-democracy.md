@@ -5,6 +5,9 @@ aliases:
 URL: https://bagrounds.org/books/harbingers-what-january-6-and-charlottesville-reveal-about-rising-threats-to-american-democracy
 share: true
 affiliate link: https://amzn.to/3SRdP4Q
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_time: 2026-04-08T00:00:00Z
+force_analyze_links: false
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🇺🇸⚠️ Harbingers: What January 6 and Charlottesville Reveal About Rising Threats to American Democracy  

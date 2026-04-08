@@ -6,6 +6,9 @@ URL: https://bagrounds.org/books/the-triumph-of-injustice-how-the-rich-dodge-tax
 share: true
 affiliate link: https://amzn.to/4lAXY6F
 CTA: ⚖️ Demand fairness.
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_time: 2026-04-05T00:00:00Z
+force_analyze_links: false
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 💰➡️ The Triumph of Injustice: How the Rich Dodge Taxes and How to Make Them Pay  

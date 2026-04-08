@@ -5,6 +5,9 @@ aliases:
 Author: "[[jay-kreps]]"
 share: true
 title: "🪵 The Log: What every software engineer should know about real-time data's unifying abstraction"
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_time: 2026-04-06T00:00:00Z
+force_analyze_links: false
 ---
 [Home](../index.md) > [Articles](./index.md) | [👨‍💻☁️🐘 Jay Kreps](../people/jay-kreps.md)  
 # 🪵 [The Log: What every software engineer should know about real-time data's unifying abstraction](https://engineering.linkedin.com/distributed-systems/log-what-every-software-engineer-should-know-about-real-time-datas-unifying)  

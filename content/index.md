@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-04-07T19:38:16-07:00
+updated: 2026-04-08T07:30:44-07:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -14,18 +14,18 @@ updated: 2026-04-07T19:38:16-07:00
 🔊 Listen to any page with built in audio control.  
 💬 Comment on any page with your GitHub account.  
   
-## [🪞 Reflections](./reflections/index.md) ~ Blog (509)  
-- [2026-04-07](./reflections/2026-04-07.md)  
+## [🪞 Reflections](./reflections/index.md) ~ Blog (510)  
+- [2026-04-08](./reflections/2026-04-08.md)  
+- [2026-04-07 | ✨ Sacred 🗣️ Chat 🔄 Shifts 🌍 World ⚖️ Right 📺📰🐔🏛️🤖🤖🐲](./reflections/2026-04-07.md)  
 - [2026-04-06 | 🌳 Wood 💡 Choice ☀️ Monday 🤖 Signal 🏛️ Future 🔧 Capacity 📺🐔🤖🏛️🤖🐲](./reflections/2026-04-06.md)  
 - [2026-04-05 | ✨ Children 🎶 Songs 🔗 Root-zone 🌳 Planting 🌿 Preparation 🐣 Heart 🤖 Mirror 🏛️ Freedoms 🌅 Horizon 📚📺🐔🤖🏛️🤖🐲](./reflections/2026-04-05.md)  
-- [2026-04-04 | 🍬 Sweet 🔬 Science 🗣️ Public 🤝 Connection 📺🐔🤖🏛️🤖🐲](./reflections/2026-04-04.md)  
   
   
 ## [🤖 AI Blog](./ai-blog/index.md) (112)  
+- [2026-04-07 | 🐛 Fixing Daily Updates Dedup and False Twitter Claims 🔧](./ai-blog/2026-04-07-1-fixing-daily-updates-dedup-and-false-twitter-claims.md)  
 - [2026-04-06 | 🖼️ Reducing Image Backfill Capacity 🔧](./ai-blog/2026-04-06-1-reduce-image-backfill-capacity.md)  
 - [2026-04-05 | 🏦 The Vault That Never Received 📬](./ai-blog/2026-04-05-2-the-vault-that-never-received.md)  
 - [2026-04-05 | 🖼️ Expanding the Image Backfill Horizon 🌅](./ai-blog/2026-04-05-1-expanding-the-image-backfill-horizon.md)  
-- [2026-04-04 | 🖼️ Reflection Image Timing Fix 🕐](./ai-blog/2026-04-04-2-reflection-image-timing-fix.md)  
   
   
 ## [🤖 Auto Blog Zero](./auto-blog-zero/index.md) (28)  
@@ -50,45 +50,45 @@ updated: 2026-04-07T19:38:16-07:00
   
   
 ## [📚 Books](./books/index.md) (959)  
-- [💼🏆 The Job Closer: Time Saving Techniques for Acing Resumes, Interviews, Negotiations, and More](./books/the-job-closer.md)  
-- [🗳️🇺🇸 The Right to Vote: The Contested History of Democracy in the United States](./books/the-right-to-vote-the-contested-history-of-democracy-in-the-united-states.md)  
-- [📈🎯✅📏 Measure What Matters: How Google, Bono, and the Gates Foundation Rock the World with OKRs](./books/measure-what-matters.md)  
-- [☯️🥋 Tao of Jeet Kune Do](./books/tao-of-jeet-kune-do.md)  
+- [💪📈 Creatine: A Natural Substance and Its Benefits for Muscle Metabolism, Fitness, Health & Longevity](./books/creatine-a-natural-substance-and-its-benefits-for-muscle-metabolism-fitness-health-longevity.md)  
+- [💪⚕️ Essentials of Creatine in Sports and Health](./books/essentials-of-creatine-in-sports-and-health.md)  
+- [🇺🇸⚠️ Harbingers: What January 6 and Charlottesville Reveal About Rising Threats to American Democracy](./books/harbingers-what-january-6-and-charlottesville-reveal-about-rising-threats-to-american-democracy.md)  
+- [🇺🇸💥 Political Violence in America: Historical Flashpoints and Modern-Day Trends](./books/political-violence-in-america-historical-flashpoints-and-modern-day-trends.md)  
   
   
 ## [📺 Videos](./videos/index.md) (730)  
-- [🗣️🔄💬🇮🇷⚔️ Tamara Keith and Amy Walter on Trump’s shifting messaging on Iran war](./videos/tamara-keith-and-amy-walter-on-trumps-shifting-messaging-on-iran-war.md)  
-- [🏛️💬 Politics Chat, April 7, 2026](./videos/politics-chat-april-7-2026.md)  
-- [👿🏷️📉 The hidden history of demonizing SNAP recipients | Code Switch](./videos/the-hidden-history-of-demonizing-snap-recipients-code-switch.md)  
-- [🔒✈️🍔 Longest shutdown on record disrupts air travel and food assistance for Americans](./videos/longest-shutdown-on-record-disrupts-air-travel-and-food-assistance-for-americans.md)  
+- [❓💪🔬 12 Questions About Creatine with Stephen Cornish, PhD](./videos/12-questions-about-creatine-w-stephen-cornish-phd.md)  
+- [🏛️⚠️⏳ Democracy Isn’t Dead. Yet. | The Focus Group Podcast](./videos/heather-cox-richardson-democracy-isnt-dead-yet-the-focus-group-podcast.md)  
+- [⚔️💥🏛️🇮🇱🇮🇷🪧🇺🇸🎂 PBS News Weekend full episode, June 14, 2025](./videos/pbs-news-weekend-full-episode-june-14-2025.md)  
+- [🏛️💥📈 Amy Walter and Leigh Ann Caldwell on the rise in political violence](./videos/amy-walter-and-leigh-ann-caldwell-on-the-rise-in-political-violence.md)  
   
   
 ## [🌌 Topics](./topics/index.md) (91)  
+- [💪🏋️‍♂️ Creatine](./topics/creatine.md)  
+- [🔢💯 Hundred Board](./topics/hundred-board.md)  
+- [👨‍👩‍👦🧭🤝 Authoritative Parenting](./topics/authoritative-parenting.md)  
 - [⭐✨🌟💫 The Star](./topics/the-star.md)  
-- [🧸🎶🧸 Nursery Rhymes](./topics/nursery-rhymes.md)  
-- [🐑🎀 Mary Had a Little Lamb](./topics/mary-had-a-little-lamb.md)  
-- [🗣️🗣️ Bilingualism](./topics/bilingualism.md)  
   
   
 ## [📄  Articles](./articles/index.md) (84)  
+- [💪🧠📉💊🔎 Creatine Supplementation in Depression: A Review of Mechanisms, Efficacy, Clinical Outcomes, and Future Directions](./articles/creatine-supplementation-in-depression-a-review-of-mechanisms-efficacy-clinical-outcomes-and-future-directions.md)  
 - [🙋‍♂️🚩🚫 Musk’s inauguration salute is not the only apparent fascist signal from Trump’s administration](./articles/musks-inauguration-salute-is-not-the-only-apparent-fascist-signal-from-trumps-administration.md)  
 - [🏛️🔍❌🗳️ Analysis: Heritage Foundation’s Database Undermines Claims of Recent Voter Fraud](./articles/analysis-heritage-foundations-database-undermines-claims-of-recent-voter-fraud.md)  
 - [📚🔥 Naval Academy removes nearly 400 books from library in new DEI purge ordered by Hegseth’s office](./articles/naval-academy-removes-nearly-400-books-from-library-in-new-dei-purge-ordered-by-hegseths-office.md)  
-- [🚫🏫📉⚠️ Project 2025 and education: A lot of bad ideas, some more actionable than others](./articles/project-2025-and-education-a-lot-of-bad-ideas-some-more-actionable-than-others.md)  
   
   
 ## [🤖💬 Bot Chats](./bot-chats/index.md) (49)  
-- [🔥 Motivation & 🧘 Discipline](./bot-chats/motivation-and-discipline.md)  
-- [🤖📱🧠 Android Local LLMs](./bot-chats/android-local-llms.md)  
-- [🕸️🪵🏅 Blogging Success](./bot-chats/blogging-success.md)  
-- [🧭 Managing 🕸️ Complexity 🧠](./bot-chats/managing-complexity.md)  
+- [♟️👑⚔️🧠 Chess](./bot-chats/chess.md)  
+- [👨‍👧‍👦👔🎁 Fathers Day](./bot-chats/fathers-day.md)  
+- [🛐🕯️🔄 Ritual](./bot-chats/ritual.md)  
+- [👶👂 Infant Hearing](./bot-chats/infant-hearing.md)  
   
   
 ## [💾 Software](./software/index.md) (33)  
+- [💻📱🛠️ Termux](./software/termux.md)  
 - [🌐🔓💻 Open WebUI](./software/open-webui.md)  
 - [✨⚙️ Redis](./software/redis.md)  
 - [↔️🔍 Elastic Search](./software/elastic-search.md)  
-- [⛎♉️♊️♋️♌️♍️♎️♏️♐️♑️♒️♓️ Zodios](./software/zodios.md)  
   
   
 ## [👥 People](./people/index.md) (18)  

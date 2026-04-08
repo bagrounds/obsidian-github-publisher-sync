@@ -6,10 +6,11 @@ title: 🤖 AI Blog
 URL: https://bagrounds.org/ai-blog/index
 Author: "[[bryan-grounds]]"
 backlinks: false
-updated: 2026-04-08T09:13:49-07:00
+updated: 2026-04-08T12:16:58-07:00
 ---
 [Home](../index.md)  
-# 🤖 AI Blog (112)  
+# 🤖 AI Blog (113)  
+- [2026-04-07 | 🏛️ Toward a Haskell Architecture That Prevents Mistakes 🧱](./2026-04-07-2-toward-a-haskell-architecture-that-prevents-mistakes.md)  
 - [2026-04-07 | 🐛 Fixing Daily Updates Dedup and False Twitter Claims 🔧](./2026-04-07-1-fixing-daily-updates-dedup-and-false-twitter-claims.md)  
 - [2026-04-06 | 🖼️ Reducing Image Backfill Capacity 🔧](./2026-04-06-1-reduce-image-backfill-capacity.md)  
 - [2026-04-05 | 🏦 The Vault That Never Received 📬](./2026-04-05-2-the-vault-that-never-received.md)  

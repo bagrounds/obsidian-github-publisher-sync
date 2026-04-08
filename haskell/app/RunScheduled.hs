@@ -30,8 +30,7 @@ import Automation.BlogComments (fetchAllSeriesComments)
 import Automation.BlogImage (BackfillConfig (..), BackfillResult (..), ImageGenerationResult, syncAttachmentsDir, backfillImages, resolveImageProviders, processNote, contentDirectoryFromText)
 import Automation.BlogPosts (BlogPost (..), readSeriesPosts)
 import Automation.BlogPrompt
-  ( DateStr (..)
-  , DisplayTitle (..)
+  ( DisplayTitle (..)
   , Slug (..)
   , assembleFrontmatter
   , buildBackLink
@@ -84,6 +83,7 @@ import Automation.Scheduler
   , taskIdFromText
   , taskIdToText
   )
+import Automation.Types (ApiKey (..), DateStr (..))
 import qualified Automation.InternalLinking as IL
 import Automation.SocialPosting (autoPost)
 import Automation.Text (wordJaccardSimilarity)
@@ -120,7 +120,7 @@ inferenceDashboards =
 -- Shared Gemini caller for fiction/title generators
 -- ---------------------------------------------------------------------------
 
-callGeminiForGenerator :: Manager -> Text -> [Text] -> (Text, Text) -> IO (Text, Text)
+callGeminiForGenerator :: Manager -> ApiKey -> [Text] -> (Text, Text) -> IO (Text, Text)
 callGeminiForGenerator manager apiKey models (systemPrompt, userPrompt) = do
   let combinedPrompt = systemPrompt <> "\n\n" <> userPrompt
       config = defaultGenerationConfig { gcTemperature = 0.9, gcMaxOutputTokens = 2048 }
@@ -139,6 +139,9 @@ requireEnv key = do
   case mVal of
     Just val -> pure (T.pack val)
     Nothing  -> error $ "Missing required environment variable: " <> key
+
+requireApiKey :: String -> IO ApiKey
+requireApiKey key = ApiKey <$> requireEnv key
 
 lookupEnvText :: String -> IO (Maybe Text)
 lookupEnvText key = fmap (fmap T.pack) (lookupEnv key)
@@ -417,7 +420,7 @@ runBlogSeries manager repoRoot vaultDir seriesId = do
     Just rc -> pure rc
     Nothing -> error $ "No run config for series: " <> T.unpack seriesId
 
-  apiKey <- requireEnv "GEMINI_API_KEY"
+  apiKey <- requireApiKey "GEMINI_API_KEY"
   today <- todayPacific
   let todayText = unDateStr today
 
@@ -673,7 +676,7 @@ runAiFiction :: Manager -> FilePath -> IO ()
 runAiFiction manager vaultDir = do
   logMsg "▶️  ai-fiction"
 
-  apiKey <- requireEnv "GEMINI_API_KEY"
+  apiKey <- requireApiKey "GEMINI_API_KEY"
   today <- todayPacific
   let todayText = unDateStr today
 
@@ -719,7 +722,7 @@ runReflectionTitle :: Manager -> FilePath -> IO ()
 runReflectionTitle manager vaultDir = do
   logMsg "▶️  reflection-title"
 
-  apiKey <- requireEnv "GEMINI_API_KEY"
+  apiKey <- requireApiKey "GEMINI_API_KEY"
   today <- todayPacific
   let todayText = unDateStr today
   yesterday <- yesterdayPacific
@@ -737,7 +740,7 @@ runReflectionTitle manager vaultDir = do
 
   logMsg "✅ reflection-title"
 
-tryTitleForDate :: Manager -> Text -> FilePath -> FilePath -> Text -> IO Bool
+tryTitleForDate :: Manager -> ApiKey -> FilePath -> FilePath -> Text -> IO Bool
 tryTitleForDate manager apiKey _vaultDir reflectionsDir date = do
   let reflectionPath = reflectionsDir </> T.unpack date <> ".md"
 

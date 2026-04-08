@@ -16,7 +16,8 @@ import Data.Time (Day, UTCTime (..), addDays, defaultTimeLocale, formatTime, get
 import System.Environment (lookupEnv)
 
 import Automation.Types
-  ( BlueskyCredentials (..)
+  ( ApiKey (..)
+  , BlueskyCredentials (..)
   , EnvironmentConfig (..)
   , GeminiConfig (..)
   , MastodonCredentials (..)
@@ -82,7 +83,7 @@ validateEnvironment = do
   twitter <- whenPlatformEnabled "Twitter" "DISABLE_TWITTER"
     ["TWITTER_API_KEY", "TWITTER_API_SECRET", "TWITTER_ACCESS_TOKEN", "TWITTER_ACCESS_SECRET"]
     (TwitterCredentials
-      <$> requireEnv "TWITTER_API_KEY"
+      <$> fmap ApiKey (requireEnv "TWITTER_API_KEY")
       <*> requireEnv "TWITTER_API_SECRET"
       <*> requireEnv "TWITTER_ACCESS_TOKEN"
       <*> requireEnv "TWITTER_ACCESS_SECRET")
@@ -100,7 +101,7 @@ validateEnvironment = do
       <*> requireEnv "MASTODON_ACCESS_TOKEN")
 
   gemini <- GeminiConfig
-    <$> requireEnv "GEMINI_API_KEY"
+    <$> fmap ApiKey (requireEnv "GEMINI_API_KEY")
     <*> fmap (fromMaybe defaultGeminiModel) (lookupEnvText "GEMINI_MODEL")
     <*> fmap (fromMaybe defaultQuestionModel) (lookupEnvText "GEMINI_QUESTION_MODEL")
 

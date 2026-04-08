@@ -38,7 +38,7 @@ import Automation.Html (formatDisplayDate, textToHtml)
 import Automation.Json ((.=), (.:), (.:?), eitherDecode, encode, object, withObject)
 import qualified Automation.Json as Json
 import Automation.Retry (HttpCodeException (..), defaultRetryOptions, withRetry)
-import Automation.Types (TwitterCredentials (..), twitterDisplayName)
+import Automation.Types (ApiKey (..), TwitterCredentials (..), twitterDisplayName)
 
 -- ── Constants ──────────────────────────────────────────────────────────
 
@@ -109,7 +109,7 @@ buildOAuthHeader TwitterCredentials {..} httpMethod baseUrl = do
   timestamp <- T.pack . show . (floor @Double @Integer) . realToFrac <$> getPOSIXTime
   nonce <- generateNonce
   let oauthParams =
-        [ ("oauth_consumer_key", tcApiKey)
+        [ ("oauth_consumer_key", unApiKey tcApiKey)
         , ("oauth_nonce", nonce)
         , ("oauth_signature_method", "HMAC-SHA1")
         , ("oauth_timestamp", timestamp)

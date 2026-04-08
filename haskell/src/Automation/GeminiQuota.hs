@@ -10,6 +10,8 @@ import qualified Data.Text as T
 import qualified Network.HTTP.Client as HTTP
 import qualified Network.HTTP.Client.TLS as TLS
 
+import Automation.Types (ApiKey (..))
+
 data QuotaInfo = QuotaInfo
   { qiRequestsPerMinute :: Maybe Int
   , qiTokensPerMinute   :: Maybe Int
@@ -22,12 +24,12 @@ data ModelInfo = ModelInfo
   , miQuota       :: QuotaInfo
   } deriving (Show, Eq)
 
-fetchModelCatalog :: Text -> IO [ModelInfo]
+fetchModelCatalog :: ApiKey -> IO [ModelInfo]
 fetchModelCatalog apiKey = do
   manager <- TLS.newTlsManager
-  request <- HTTP.parseRequest (T.unpack ("https://generativelanguage.googleapis.com/v1beta/models?key=" <> apiKey))
+  request <- HTTP.parseRequest (T.unpack ("https://generativelanguage.googleapis.com/v1beta/models?key=" <> unApiKey apiKey))
   _response <- HTTP.httpLbs request manager
   pure []
 
-checkQuota :: Text -> Text -> IO (Maybe QuotaInfo)
+checkQuota :: ApiKey -> Text -> IO (Maybe QuotaInfo)
 checkQuota _apiKey _modelName = pure Nothing

@@ -45,16 +45,15 @@ import Automation.BlogPosts (BlogPost (..))
 import Automation.BlogSeriesConfig (BlogSeriesConfig (..))
 import Automation.Frontmatter (quoteYamlValue)
 import Automation.Types
-  ( blueskySectionHeader
+  ( DateStr (..)
+  , blueskySectionHeader
   , mastodonSectionHeader
+  , mkDateStr
   , tweetSectionHeader
   )
 
 -- | A validated URL slug: lowercase, alphanumeric + hyphens, no leading/trailing hyphens.
 newtype Slug = Slug { unSlug :: Text } deriving (Show, Eq)
-
--- | A validated date string in YYYY-MM-DD format.
-newtype DateStr = DateStr { unDateStr :: Text } deriving (Show, Eq)
 
 -- | A fully constructed display title: "YYYY-MM-DD | icon Title icon".
 newtype DisplayTitle = DisplayTitle { unDisplayTitle :: Text } deriving (Show, Eq)
@@ -65,12 +64,6 @@ mkSlug t
   | T.any (\c -> c == ' ' || c == '\n') t = Left ("Slug contains whitespace: " <> t)
   | T.head t == '-' || T.last t == '-' = Left ("Slug has leading/trailing hyphens: " <> t)
   | otherwise = Right (Slug t)
-
-mkDateStr :: Text -> Either Text DateStr
-mkDateStr t
-  | T.length t /= 10 = Left ("Invalid date length: " <> t)
-  | T.index t 4 /= '-' || T.index t 7 /= '-' = Left ("Invalid date separators: " <> t)
-  | otherwise = Right (DateStr t)
 
 data BlogContext = BlogContext
   { bcxSeries        :: BlogSeriesConfig

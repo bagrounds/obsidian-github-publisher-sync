@@ -66,7 +66,7 @@ import Automation.EmbedSection
   )
 import Automation.Env (validateEnvironment)
 import Automation.Frontmatter (parseFrontmatter, quoteYamlValue)
-import Automation.BlogPrompt (DateStr (..), todayPacific)
+import Automation.BlogPrompt (todayPacific)
 import Automation.Gemini
   ( GenerationConfig (..)
   , GeminiResponse (..)
@@ -150,10 +150,10 @@ platformSectionHeader Twitter  = tweetSectionHeader
 platformSectionHeader Bluesky  = blueskySectionHeader
 platformSectionHeader Mastodon = mastodonSectionHeader
 
-platformMaxLength :: Platform -> Int
-platformMaxLength Twitter  = twitterMaxLength
-platformMaxLength Bluesky  = blueskyMaxLength
-platformMaxLength Mastodon = mastodonMaxLength
+platformLimits :: Platform -> PlatformLimits
+platformLimits Twitter  = twitterLimits
+platformLimits Bluesky  = blueskyLimits
+platformLimits Mastodon = mastodonLimits
 
 --------------------------------------------------------------------------------
 -- Link extraction
@@ -591,7 +591,7 @@ getConfiguredPlatforms ec = mapMaybe id
 -- Social post generation via Gemini
 --------------------------------------------------------------------------------
 
-generateSocialPostText :: Manager -> Text -> ContentNote -> Platform -> IO (Either Text Text)
+generateSocialPostText :: Manager -> ApiKey -> ContentNote -> Platform -> IO (Either Text Text)
 generateSocialPostText manager apiKey note platform = do
   let rd = ReflectionData
         { rdDate = extractDateFromPath (cnRelativePath note)
@@ -607,7 +607,7 @@ generateSocialPostText manager apiKey note platform = do
       questionPrompt = buildQuestionPrompt rd
       tagsCombined = ppSystem tagsPrompt <> "\n\n" <> ppUser tagsPrompt
       questionCombined = ppSystem questionPrompt <> "\n\n" <> ppUser questionPrompt
-      maxLen = platformMaxLength platform
+      maxLen = platformMaxCharacters (platformLimits platform)
       genConfig = defaultGenerationConfig { gcTemperature = 0.8, gcMaxOutputTokens = 512 }
       tagsModels = [defaultGeminiModel, gemini3Flash, geminiFlashFallback]
       questionModels = [defaultQuestionModel, geminiFlashFallback]
@@ -669,7 +669,7 @@ postToTwitterPlatform manager env _note postText =
         Left err -> pure (Left $ "Twitter post failed: " <> err)
         Right (tweetId, _tweetText) -> do
           embedHtml <- getEmbedHtml manager tweetId (tcAccessToken creds)
-                         (tcApiKey creds) (tcApiSecret creds)
+                         (unApiKey (tcApiKey creds)) (tcApiSecret creds)
           pure $ Right PostResult
             { prPlatform = Twitter
             , prEmbedHtml = embedHtml
@@ -740,7 +740,7 @@ data PostedNote = PostedNote
   , pnPlatforms :: [Platform]
   } deriving (Show, Eq)
 
-runPostingPipeline :: Manager -> EnvironmentConfig -> Text -> FilePath -> IO [PostedNote]
+runPostingPipeline :: Manager -> EnvironmentConfig -> ApiKey -> FilePath -> IO [PostedNote]
 runPostingPipeline manager env apiKey vaultDir = do
   let platforms = getConfiguredPlatforms env
   putStrLn $ "  🔍 Configured platforms: " <> show platforms
@@ -778,7 +778,7 @@ groupByNote items =
            ([ctpPlatform ctp], ctpNote ctp, ctpPathFromRoot ctp) acc
     merge (p1, n, path) (p2, _, _) = (p1 <> p2, n, path)
 
-processNoteGroup :: Manager -> EnvironmentConfig -> Text -> FilePath
+processNoteGroup :: Manager -> EnvironmentConfig -> ApiKey -> FilePath
                  -> ([Platform], ContentNote, [Text]) -> IO (Maybe PostedNote)
 processNoteGroup manager env apiKey vaultDir (platforms, note, pathFromRoot) = do
   putStrLn $ "  📝 Processing: " <> T.unpack (cnTitle note)
@@ -803,7 +803,7 @@ processNoteGroup manager env apiKey vaultDir (platforms, note, pathFromRoot) = d
       putStrLn $ "  ✅ " <> show (length successes) <> " embeds written"
       pure (Just (PostedNote note postedPlatforms))
 
-postForPlatform :: Manager -> EnvironmentConfig -> Text -> ContentNote -> Platform
+postForPlatform :: Manager -> EnvironmentConfig -> ApiKey -> ContentNote -> Platform
                 -> IO (Either Text PostResult)
 postForPlatform manager env apiKey note platform = do
   postTextResult <- generateSocialPostText manager apiKey note platform

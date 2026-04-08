@@ -18,7 +18,7 @@ import Data.List (nub)
 import Data.Text (Text)
 import qualified Data.Text as T
 
-import Automation.Types (updatesSectionHeader)
+import Automation.Types (ApiKey, updatesSectionHeader)
 import Automation.Frontmatter (parseFrontmatter)
 
 defaultTitleModel :: Text
@@ -243,7 +243,7 @@ updateH1Heading content date fullTitle =
   in T.unlines updatedLines
 
 data ReflectionTitleConfig = ReflectionTitleConfig
-  { rtcApiKey       :: Text
+  { rtcApiKey       :: ApiKey
   , rtcModels       :: [Text]
   , rtcNoteContent  :: Text
   , rtcDate         :: Text
@@ -257,7 +257,7 @@ data ReflectionTitleResult = ReflectionTitleResult
   , rtrUpdatedContent :: Text
   } deriving (Show, Eq)
 
-generateReflectionTitle :: ReflectionTitleConfig -> (Text -> [Text] -> (Text, Text) -> IO (Text, Text)) -> IO ReflectionTitleResult
+generateReflectionTitle :: ReflectionTitleConfig -> (ApiKey -> [Text] -> (Text, Text) -> IO (Text, Text)) -> IO ReflectionTitleResult
 generateReflectionTitle config callModel = do
   let linkedTitles = extractLinkedTitles (rtcNoteContent config)
       trailingEmojis = extractTrailingEmojis (rtcNoteContent config)

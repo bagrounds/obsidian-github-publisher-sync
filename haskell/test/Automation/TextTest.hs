@@ -5,6 +5,7 @@ import Test.Tasty.HUnit (testCase, (@?=), assertBool)
 import qualified Data.Text as T
 
 import Automation.Text
+import Automation.Types (PlatformLimits (..), twitterLimits, blueskyLimits, mastodonLimits)
 
 tests :: TestTree
 tests = testGroup "Text"
@@ -90,4 +91,33 @@ tests = testGroup "Text"
           post2 = "---\ntitle: Porting to Haskell\n---\n# Porting to Haskell\n\nWe migrated the automation pipeline from TypeScript to a strongly-typed functional language."
           sim = wordJaccardSimilarity post1 post2
       in assertBool ("different posts should score < 0.25, got " <> show sim) (sim < 0.25)
+
+  -- calculatePostLength / validatePostLength tests
+  , testCase "calculatePostLength with twitterLimits adjusts URLs" $
+      calculatePostLength twitterLimits "check https://example.com/very/long/path out" @?=
+        T.length "check https://example.com/very/long/path out"
+          + (23 - T.length "https://example.com/very/long/path")
+
+  , testCase "calculatePostLength with blueskyLimits does not adjust URLs" $
+      calculatePostLength blueskyLimits "check https://example.com/very/long/path out" @?=
+        T.length "check https://example.com/very/long/path out"
+
+  , testCase "calculatePostLength with mastodonLimits does not adjust URLs" $
+      calculatePostLength mastodonLimits "hello world" @?= 11
+
+  , testCase "validatePostLength with blueskyLimits accepts short text" $
+      fst (validatePostLength blueskyLimits "hello") @?= True
+
+  , testCase "validatePostLength with blueskyLimits rejects text over 300" $
+      fst (validatePostLength blueskyLimits (T.replicate 301 "x")) @?= False
+
+  , testCase "validatePostLength with mastodonLimits accepts 500 chars" $
+      fst (validatePostLength mastodonLimits (T.replicate 500 "x")) @?= True
+
+  , testCase "calculatePostLength with no URL count returns text length" $
+      calculatePostLength (PlatformLimits 100 Nothing) "hello" @?= 5
+
+  , testCase "calculatePostLength with custom URL count adjusts" $
+      calculatePostLength (PlatformLimits 100 (Just 10)) "see https://example.com" @?=
+        T.length "see https://example.com" + (10 - T.length "https://example.com")
   ]

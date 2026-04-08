@@ -5,7 +5,7 @@ import Test.Tasty.HUnit (testCase, (@?=), assertBool)
 import qualified Data.Text as T
 
 import Automation.Text
-import Automation.Types (PlatformLimits (..), twitterLimits, blueskyLimits, mastodonLimits)
+import Automation.Types (PlatformLimits (..), twitterLimits, twitterUrlLength, blueskyLimits, mastodonLimits)
 
 tests :: TestTree
 tests = testGroup "Text"
@@ -96,7 +96,7 @@ tests = testGroup "Text"
   , testCase "calculatePostLength with twitterLimits adjusts URLs" $
       calculatePostLength twitterLimits "check https://example.com/very/long/path out" @?=
         T.length "check https://example.com/very/long/path out"
-          + (23 - T.length "https://example.com/very/long/path")
+          + (twitterUrlLength - T.length "https://example.com/very/long/path")
 
   , testCase "calculatePostLength with blueskyLimits does not adjust URLs" $
       calculatePostLength blueskyLimits "check https://example.com/very/long/path out" @?=
@@ -118,6 +118,8 @@ tests = testGroup "Text"
       calculatePostLength (PlatformLimits 100 Nothing) "hello" @?= 5
 
   , testCase "calculatePostLength with custom URL count adjusts" $
-      calculatePostLength (PlatformLimits 100 (Just 10)) "see https://example.com" @?=
-        T.length "see https://example.com" + (10 - T.length "https://example.com")
+      let customUrlCount = 10
+          customLimits = PlatformLimits 100 (Just customUrlCount)
+      in calculatePostLength customLimits "see https://example.com" @?=
+        T.length "see https://example.com" + (customUrlCount - T.length "https://example.com")
   ]

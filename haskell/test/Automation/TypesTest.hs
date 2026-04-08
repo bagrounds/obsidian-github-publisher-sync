@@ -1,5 +1,6 @@
 module Automation.TypesTest (tests) where
 
+import Data.Maybe (fromMaybe)
 import Data.Text (Text)
 import qualified Data.Text as T
 import Test.Tasty (TestTree, testGroup)
@@ -149,7 +150,7 @@ platformLimitsTests = testGroup "PlatformLimits"
       mastodonMaxLength @?= platformMaxCharacters mastodonLimits
 
   , testCase "backward-compat twitterUrlLength matches" $
-      twitterUrlLength @?= maybe 0 id (platformUrlCountLength twitterLimits)
+      twitterUrlLength @?= fromMaybe 0 (platformUrlCountLength twitterLimits)
 
   , testProperty "all platform limits have positive max characters" $
       QC.forAll (QC.elements [twitterLimits, blueskyLimits, mastodonLimits]) $

@@ -45,6 +45,8 @@ module Automation.Types
 import Data.Text (Text)
 import qualified Data.Text as T
 
+import Data.Maybe (fromMaybe)
+
 --------------------------------------------------------------------------------
 -- Domain newtypes
 --------------------------------------------------------------------------------
@@ -95,7 +97,7 @@ mastodonLimits = PlatformLimits
   }
 
 twitterUrlLength :: Int
-twitterUrlLength = maybe 0 id (platformUrlCountLength twitterLimits)
+twitterUrlLength = fromMaybe 0 (platformUrlCountLength twitterLimits)
 
 twitterMaxLength :: Int
 twitterMaxLength = platformMaxCharacters twitterLimits

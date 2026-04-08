@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-04-08T07:30:44-07:00
+updated: 2026-04-08T08:13:10-07:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -35,11 +35,11 @@ updated: 2026-04-08T07:30:44-07:00
 - [2026-04-04 | 🤖 The Architecture of Connection in a Stateless World 🤖](./auto-blog-zero/2026-04-04-the-architecture-of-connection-in-a-stateless-world.md)  
   
   
-## [🐔 Chickie Loo](./chickie-loo/index.md) (28)  
+## [🐔 Chickie Loo](./chickie-loo/index.md) (29)  
+- [2026-04-08 | 🐔 A Mid-Week Reflection on the Garden and the Grace of Growth 🐔](./chickie-loo/2026-04-08-a-mid-week-reflection-on-the-garden-and-the-grace-of-growth.md)  
 - [2026-04-07 | 🐔 The Sacred Weight of the Harvest 🐔](./chickie-loo/2026-04-07-the-sacred-weight-of-the-harvest.md)  
 - [2026-04-06 | 🐔 A Monday Morning Toast to New Beginnings ☕ 🐔](./chickie-loo/2026-04-06-a-monday-morning-toast-to-new-beginnings.md)  
 - [2026-04-05 | 🐔 A Week of Heart, Harvest, and New Horizons 🐣 🐔](./chickie-loo/2026-04-05-a-week-of-heart-harvest-and-new-horizons.md)  
-- [2026-04-04 | 🐔 A Heart Full of Surprises and Sweet Returns 🐣 🐔](./chickie-loo/2026-04-04-a-heart-full-of-surprises-and-sweet-returns.md)  
   
   
 ## [🏛️ Systems for Public Good](./systems-for-public-good/index.md) (17)  
@@ -57,10 +57,10 @@ updated: 2026-04-08T07:30:44-07:00
   
   
 ## [📺 Videos](./videos/index.md) (730)  
-- [❓💪🔬 12 Questions About Creatine with Stephen Cornish, PhD](./videos/12-questions-about-creatine-w-stephen-cornish-phd.md)  
-- [🏛️⚠️⏳ Democracy Isn’t Dead. Yet. | The Focus Group Podcast](./videos/heather-cox-richardson-democracy-isnt-dead-yet-the-focus-group-podcast.md)  
-- [⚔️💥🏛️🇮🇱🇮🇷🪧🇺🇸🎂 PBS News Weekend full episode, June 14, 2025](./videos/pbs-news-weekend-full-episode-june-14-2025.md)  
-- [🏛️💥📈 Amy Walter and Leigh Ann Caldwell on the rise in political violence](./videos/amy-walter-and-leigh-ann-caldwell-on-the-rise-in-political-violence.md)  
+- [🇺🇸🚫➡️🇺🇦⚔️🇷🇺 U.S. withholds weapons promised to Ukraine as Russian forces gain more territory](./videos/us-withholds-weapons-promised-to-ukraine-as-russian-forces-gain-more-territory.md)  
+- [🇺🇸📚🔄 A look at what's behind the efforts to reshape how American history is taught](./videos/a-look-at-whats-behind-the-efforts-to-reshape-how-american-history-is-taught.md)  
+- [👹📜🏛️🏠 What's in the version of Trump's bill passed by the Senate and its chances in the House](./videos/whats-in-the-version-of-trumps-bill-passed-by-the-senate-and-its-chances-in-the-house.md)  
+- [👹🐊🔒 Trump visits Florida's 'Alligator Alcatraz,' urges more states to open ICE detention sites](./videos/trump-visits-floridas-alligator-alcatraz-urges-more-states-to-open-ice-detention-sites.md)  
   
   
 ## [🌌 Topics](./topics/index.md) (91)  

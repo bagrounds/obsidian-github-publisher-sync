@@ -52,6 +52,17 @@ pagePresent updatesText path = T.isInfixOf ("[[" <> stripMd path <> "|") updates
 detailPresent :: Text -> Text -> Bool
 detailPresent updatesText detail = T.isInfixOf ("  - " <> detail) updatesText
 
+extractPageBullets :: Text -> Text -> Text
+extractPageBullets updatesText path =
+  let pageNeedle = "[[" <> stripMd path <> "|"
+      allLines = T.splitOn "\n" updatesText
+      pageIdx = findLineContaining pageNeedle allLines 0
+  in case pageIdx < length allLines of
+    False -> ""
+    True  ->
+      let subLines = takeWhile (\l -> T.isPrefixOf "  - " l) (drop (pageIdx + 1) allLines)
+      in T.intercalate "\n" subLines
+
 addUpdateLinks :: Text -> [UpdateLink] -> Text
 addUpdateLinks content [] = content
 addUpdateLinks content links = foldl addSingleUpdate content links
@@ -59,7 +70,8 @@ addUpdateLinks content links = foldl addSingleUpdate content links
 addSingleUpdate :: Text -> UpdateLink -> Text
 addSingleUpdate content (UpdateLink path title details) =
   let updatesText = extractUpdatesText content
-      newDetails = filter (not . detailPresent updatesText) details
+      pageBullets = extractPageBullets updatesText path
+      newDetails = filter (not . detailPresent pageBullets) details
   in case newDetails of
     [] -> content
     _  | not (T.isInfixOf updatesSectionHeader content) ->

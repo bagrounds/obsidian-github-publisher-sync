@@ -170,6 +170,30 @@ addUpdateLinksTests = testGroup "addUpdateLinks"
           assertEqual "second detail" (Just "  - 🦋 posted to BlueSky") detailLine2
         [] -> assertBool "page link should be present" False
 
+  , testCase "same detail under different pages is not deduplicated across pages" $
+      let content = "# Reflection"
+          result = addUpdateLinks content
+                     [ UpdateLink "page-a.md" "Page A" ["🖼️ added image"]
+                     , UpdateLink "page-b.md" "Page B" ["🖼️ added image"]
+                     ]
+      in do
+        assertBool "has page A" (T.isInfixOf "[[page-a|Page A]]" result)
+        assertBool "has page B" (T.isInfixOf "[[page-b|Page B]]" result)
+        let linesWithDetail = filter (== "  - 🖼️ added image") (T.splitOn "\n" result)
+        assertEqual "should have two image details (one per page)" 2 (length linesWithDetail)
+
+  , testCase "same detail under different pages works incrementally" $
+      let content0 = "# Reflection"
+          content1 = addUpdateLinks content0
+                       [UpdateLink "page-a.md" "Page A" ["🖼️ added image"]]
+          content2 = addUpdateLinks content1
+                       [UpdateLink "page-b.md" "Page B" ["🖼️ added image"]]
+      in do
+        assertBool "has page A" (T.isInfixOf "[[page-a|Page A]]" content2)
+        assertBool "has page B" (T.isInfixOf "[[page-b|Page B]]" content2)
+        let linesWithDetail = filter (== "  - 🖼️ added image") (T.splitOn "\n" content2)
+        assertEqual "should have two image details (one per page)" 2 (length linesWithDetail)
+
   , testProperty "addUpdateLinks never removes existing lines" $
       \(QC.ASCIIString bodyStr) ->
         let body = T.pack bodyStr

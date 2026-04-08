@@ -3,7 +3,7 @@ share: true
 aliases:
   - 🇺🇸📚🔄 A look at what's behind the efforts to reshape how American history is taught
 title: 🇺🇸📚🔄 A look at what's behind the efforts to reshape how American history is taught
-URL: https://bagrounds.org/videos/
+URL: https://bagrounds.org/videos/a-look-at-whats-behind-the-efforts-to-reshape-how-american-history-is-taught
 Author:
 Platform:
 Channel: PBS NewsHour

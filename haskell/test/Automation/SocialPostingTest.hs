@@ -4,6 +4,8 @@ import qualified Data.Map.Strict as Map
 import qualified Data.Set as Set
 import Data.Text (Text)
 import qualified Data.Text as T
+import Data.Time (UTCTime (..), fromGregorian, secondsToDiffTime)
+import Data.Time.LocalTime (TimeOfDay (..))
 import System.Directory (createDirectoryIfMissing)
 import System.FilePath ((</>))
 import System.IO.Temp (withSystemTempDirectory)
@@ -263,11 +265,11 @@ indexPathTests = testGroup "isIndexPath and index eligibility"
         not (isIndexPath "books/great-book.md")
 
   , testCase "checkBfsEligibility rejects index pages" $ do
-      result <- checkBfsEligibility "books/index.md" 17
+      result <- checkBfsEligibility "books/index.md" (TimeOfDay 17 0 0)
       assertBool "index should not be eligible" (not result)
 
   , testCase "checkBfsEligibility rejects root index page" $ do
-      result <- checkBfsEligibility "index.md" 17
+      result <- checkBfsEligibility "index.md" (TimeOfDay 17 0 0)
       assertBool "root index should not be eligible" (not result)
   ]
 
@@ -295,10 +297,42 @@ pathReconstructionTests = testGroup "reconstructPath"
 
 reflectionEligibilityTests :: TestTree
 reflectionEligibilityTests = testGroup "isReflectionEligibleForPosting"
-  [ testCase "very old reflection is eligible" $ do
-      result <- isReflectionEligibleForPosting "2020-01-01" 17
-      assertBool "old reflection should be eligible" result
+  [ testCase "very old reflection is eligible" $
+      let now = mkUTC 2026 3 15 12
+      in assertBool "old reflection should be eligible"
+           (isReflectionEligibleForPosting now (TimeOfDay 17 0 0) (fromGregorian 2020 1 1))
+
+  , testCase "yesterday's reflection is eligible after posting cutoff" $
+      let now = mkUTC 2026 3 15 18
+      in assertBool "yesterday at hour 18 with posting cutoff 17:00"
+           (isReflectionEligibleForPosting now (TimeOfDay 17 0 0) (fromGregorian 2026 3 14))
+
+  , testCase "yesterday's reflection is ineligible before posting cutoff" $
+      let now = mkUTC 2026 3 15 10
+      in assertBool "yesterday at hour 10 with posting cutoff 17:00"
+           (not (isReflectionEligibleForPosting now (TimeOfDay 17 0 0) (fromGregorian 2026 3 14)))
+
+  , testCase "today's reflection is never eligible" $
+      let now = mkUTC 2026 3 15 23
+      in assertBool "today's reflection should not be eligible"
+           (not (isReflectionEligibleForPosting now (TimeOfDay 17 0 0) (fromGregorian 2026 3 15)))
+
+  , testCase "two days ago is always eligible regardless of hour" $
+      let now = mkUTC 2026 3 15 0
+      in assertBool "two days ago should be eligible even at hour 0"
+           (isReflectionEligibleForPosting now (TimeOfDay 17 0 0) (fromGregorian 2026 3 13))
+
+  , testCase "yesterday at exactly the posting cutoff is eligible" $
+      let now = mkUTC 2026 3 15 17
+      in assertBool "yesterday at exactly posting cutoff"
+           (isReflectionEligibleForPosting now (TimeOfDay 17 0 0) (fromGregorian 2026 3 14))
   ]
+
+-- | Build a deterministic UTCTime for testing.
+mkUTC :: Integer -> Int -> Int -> Int -> UTCTime
+mkUTC year month day hour =
+  UTCTime (fromGregorian year month day)
+          (secondsToDiffTime (fromIntegral hour * 3600))
 
 --------------------------------------------------------------------------------
 -- BFS eligibility (reflection timing in BFS traversal)
@@ -307,15 +341,15 @@ reflectionEligibilityTests = testGroup "isReflectionEligibleForPosting"
 bfsEligibilityTests :: TestTree
 bfsEligibilityTests = testGroup "checkBfsEligibility"
   [ testCase "non-reflection paths are always eligible" $ do
-      result <- checkBfsEligibility "books/great-book.md" 17
+      result <- checkBfsEligibility "books/great-book.md" (TimeOfDay 17 0 0)
       assertBool "book should be eligible" result
 
   , testCase "non-reflection in topics dir is eligible" $ do
-      result <- checkBfsEligibility "topics/machine-learning.md" 17
+      result <- checkBfsEligibility "topics/machine-learning.md" (TimeOfDay 17 0 0)
       assertBool "topic should be eligible" result
 
   , testCase "old reflection is eligible" $ do
-      result <- checkBfsEligibility "reflections/2020-01-01.md" 17
+      result <- checkBfsEligibility "reflections/2020-01-01.md" (TimeOfDay 17 0 0)
       assertBool "old reflection should be eligible" result
 
   , testCase "bfsContentDiscovery skips ineligible reflections and finds linked content" $ do
@@ -331,7 +365,7 @@ bfsEligibilityTests = testGroup "checkBfsEligibility"
         TIO.writeFile (booksDir </> "linked-book.md")
           ("---\ntitle: A Linked Book\nURL: https://example.com/books/linked-book\n---\n" <>
            T.replicate 60 "x")
-        let config = FindContentConfig dir [Twitter, Bluesky] 17 Nothing
+        let config = FindContentConfig dir [Twitter, Bluesky] (TimeOfDay 17 0 0) Nothing
         result <- bfsContentDiscovery config
         let resultPaths = fmap (cnRelativePath . ctpNote) result
         assertBool "should find linked book, not the ineligible reflection"
@@ -363,7 +397,7 @@ bfsTraversalTests = testGroup "BFS traversal"
         TIO.writeFile (booksDir </> "hidden-gem.md")
           ("---\ntitle: A Hidden Gem\nURL: https://example.com/books/hidden-gem\n---\n" <>
            T.replicate 60 "x")
-        let config = FindContentConfig dir [Twitter] 0 Nothing
+        let config = FindContentConfig dir [Twitter] (TimeOfDay 0 0 0) Nothing
         result <- bfsContentDiscovery config
         let resultPaths = fmap (cnRelativePath . ctpNote) result
         assertBool "should not post index page"
@@ -391,7 +425,7 @@ bfsTraversalTests = testGroup "BFS traversal"
         TIO.writeFile (booksDir </> "public-book.md")
           ("---\ntitle: Public Book\nURL: https://example.com/books/public-book\n---\n" <>
            T.replicate 60 "x")
-        let config = FindContentConfig dir [Twitter] 0 Nothing
+        let config = FindContentConfig dir [Twitter] (TimeOfDay 0 0 0) Nothing
         result <- bfsContentDiscovery config
         let resultPaths = fmap (cnRelativePath . ctpNote) result
         assertBool "should not post private topic"
@@ -416,7 +450,7 @@ bfsTraversalTests = testGroup "BFS traversal"
         TIO.writeFile (booksDir </> "real-book.md")
           ("---\ntitle: Real Book\nURL: https://example.com/books/real-book\n---\n" <>
            T.replicate 60 "x")
-        let config = FindContentConfig dir [Twitter] 0 Nothing
+        let config = FindContentConfig dir [Twitter] (TimeOfDay 0 0 0) Nothing
         result <- bfsContentDiscovery config
         let resultPaths = fmap (cnRelativePath . ctpNote) result
         assertBool "should not post stub"
@@ -461,7 +495,7 @@ bfsTests = testGroup "BFS discovery"
 
   , testCase "bfsContentDiscovery with empty dir returns empty" $ do
       withSystemTempDirectory "social-test" $ \dir -> do
-        let config = FindContentConfig dir [Twitter, Bluesky] 17 Nothing
+        let config = FindContentConfig dir [Twitter, Bluesky] (TimeOfDay 17 0 0) Nothing
         result <- bfsContentDiscovery config
         assertEqual "" [] result
 
@@ -478,7 +512,7 @@ bfsTests = testGroup "BFS discovery"
         TIO.writeFile (booksDir </> "great-book.md")
           ("---\ntitle: A Great Book\nURL: https://example.com/books/great-book\n---\n" <>
            T.replicate 60 "x")
-        let config = FindContentConfig dir [Twitter, Bluesky, Mastodon] 0 Nothing
+        let config = FindContentConfig dir [Twitter, Bluesky, Mastodon] (TimeOfDay 0 0 0) Nothing
         result <- bfsContentDiscovery config
         assertBool "should find content to post" (not (null result))
   ]
@@ -570,7 +604,7 @@ urlValidationTests = testGroup "URL validation"
           ("---\ntitle: Live Book\nURL: \"https://bagrounds.org/books/live-book\"\n---\n" <>
            T.replicate 60 "x")
         let checker url = pure (url == "https://bagrounds.org/books/live-book")
-            config = FindContentConfig dir [Twitter] 0 (Just checker)
+            config = FindContentConfig dir [Twitter] (TimeOfDay 0 0 0) (Just checker)
         result <- bfsContentDiscovery config
         let resultPaths = fmap (cnRelativePath . ctpNote) result
         assertBool "should not include dead-link book"

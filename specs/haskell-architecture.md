@@ -32,11 +32,11 @@ Each phase is a vertical slice: types, logic, tests, and documentation delivered
 
 **Candidates** (each delivered with property-based and unit tests):
 - [x] `SocialPosting.isReflectionEligibleForPosting` — done (uses `Day` and `TimeOfDay`)
-- [ ] `Scheduler.nowPacificHour` — already partially pure (`pacificHour` exists), but `getScheduledTasks` could take `UTCTime` directly. Add property: result is always 0-23.
-- [ ] `Env.getYesterdayDate` — extract pure `yesterdayDate :: UTCTime -> Day`. Add property: result is always `pred` of today.
-- [ ] `SocialPosting.findMostRecentReflection` — separate directory listing (IO) from "pick most recent" logic (pure sort/filter). Test the pure selection logic.
-- [ ] `BlogImage.checkCandidate` — separate file reading from eligibility decision. Test eligibility as pure function.
-- [ ] `Scheduler.blogPostExistsForToday` — separate directory listing from filename matching. Test the matching logic.
+- [x] `Scheduler.nowPacificHour` — `pacificHour` already pure, added property test (0-23) and unit tests for PST/PDT.
+- [x] `Env.getYesterdayDate` — extracted pure `yesterdayDate :: UTCTime -> Day`. Added property test and unit tests.
+- [x] `SocialPosting.findMostRecentReflection` — extracted pure `selectMostRecentReflection :: [String] -> Maybe Text`. Consolidated duplicate in InternalLinking. Added tests.
+- [x] `BlogImage.checkCandidate` — extracted pure `checkCandidateEligibility :: Text -> Text -> Text -> Text -> Maybe Bool`. Added tests for eligibility logic.
+- [x] `Scheduler.blogPostExistsForToday` — extracted pure `blogPostMatchesToday :: Text -> [String] -> Bool`. Added tests for matching logic.
 
 ### Phase 2: Domain Types + Tests
 

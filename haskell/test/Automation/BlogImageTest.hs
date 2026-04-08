@@ -442,4 +442,59 @@ tests = testGroup "BlogImage"
                     noH1 = not (T.isInfixOf "\n# " t) && not (T.isPrefixOf "# " t)
                 in noH1 ==> insertImageEmbed t "test.jpg" == t
       ]
+  , extractDateFromFilenameTests
+  , checkCandidateEligibilityTests
+  ]
+
+extractDateFromFilenameTests :: TestTree
+extractDateFromFilenameTests = testGroup "extractDateFromFilename"
+  [ testCase "extracts date from standard filename" $
+      extractDateFromFilename "2026-04-08-my-post.md" @?= "2026-04-08"
+
+  , testCase "extracts date from date-only filename" $
+      extractDateFromFilename "2025-01-15.md" @?= "2025-01-15"
+
+  , testCase "returns empty for non-date filename" $
+      extractDateFromFilename "readme.md" @?= ""
+
+  , testCase "returns empty for short filename" $
+      extractDateFromFilename "abc" @?= ""
+  ]
+
+checkCandidateEligibilityTests :: TestTree
+checkCandidateEligibilityTests = testGroup "checkCandidateEligibility"
+  [ testCase "eligible file without image returns Just False" $
+      checkCandidateEligibility "blog" "2026-04-08" "2026-04-01-post.md"
+        "---\ntitle: My Post\n---\nSome content"
+        @?= Just False
+
+  , testCase "eligible file needing regeneration returns Just True" $
+      checkCandidateEligibility "blog" "2026-04-08" "2026-04-01-post.md"
+        "---\ntitle: My Post\nregenerate_image: true\n---\n![[attachments/old.jpg]]\nSome content"
+        @?= Just True
+
+  , testCase "file with embedded image returns Nothing" $
+      checkCandidateEligibility "blog" "2026-04-08" "2026-04-01-post.md"
+        "---\ntitle: My Post\n---\n![[attachments/photo.jpg]]\nSome content"
+        @?= Nothing
+
+  , testCase "future reflection returns Nothing" $
+      checkCandidateEligibility "reflections" "2026-04-08" "2026-04-09.md"
+        "---\ntitle: Future\n---\nbody"
+        @?= Nothing
+
+  , testCase "past reflection without image is eligible" $
+      checkCandidateEligibility "reflections" "2026-04-08" "2026-04-07.md"
+        "---\ntitle: Past Day\n---\nbody"
+        @?= Just False
+
+  , testCase "untitled reflection returns Nothing" $
+      checkCandidateEligibility "reflections" "2026-04-08" "2026-04-07.md"
+        "---\ntitle: \"2026-04-07\"\n---\n# 2026-04-07\nbody"
+        @?= Nothing
+
+  , testCase "non-reflection directory ignores date comparison" $
+      checkCandidateEligibility "blog" "2026-04-08" "2026-04-09-future.md"
+        "---\ntitle: Future Post\n---\nbody"
+        @?= Just False
   ]

@@ -26,6 +26,8 @@ module Automation.BlogImage
   , isPostFile
   , shouldHaveImage
   , isDateOnlyTitle
+  , extractDateFromFilename
+  , checkCandidateEligibility
   , removeImageEmbed
   , generateWithCloudflare
   , generateWithHuggingFace
@@ -1033,19 +1035,30 @@ collectFromDir repoRoot today dirId = do
           sortedFiles = sortByTextDesc contentFiles
       fmap concat $ traverse (checkCandidate dirPath dirId today) sortedFiles
 
+checkCandidateEligibility :: Text -> Text -> Text -> Text -> Maybe Bool
+checkCandidateEligibility dirId today filename content =
+  let date = extractDateFromFilename filename
+  in if dirId == "reflections" && date > today
+     then Nothing
+     else
+       let needsRegen = shouldRegenerateImage content
+           untitledReflection = dirId == "reflections" && isDateOnlyTitle content date
+       in if (hasEmbeddedImage content && not needsRegen) || untitledReflection
+          then Nothing
+          else Just needsRegen
+
 checkCandidate :: FilePath -> Text -> Text -> Text -> IO [BackfillCandidate]
 checkCandidate dirPath dirId today filename = do
   let date = extractDateFromFilename filename
       filePath = dirPath </> T.unpack filename
-  case dirId == "reflections" && date > today of
-    True  -> pure []
-    False -> do
+  -- Skip file read for future reflections
+  if dirId == "reflections" && date > today
+    then pure []
+    else do
       content <- TIO.readFile filePath
-      let needsRegen = shouldRegenerateImage content
-          untitledReflection = dirId == "reflections" && isDateOnlyTitle content date
-      case (hasEmbeddedImage content && not needsRegen) || untitledReflection of
-        True  -> pure []
-        False -> pure [BackfillCandidate filePath dirId filename date needsRegen]
+      case checkCandidateEligibility dirId today filename content of
+        Nothing         -> pure []
+        Just needsRegen -> pure [BackfillCandidate filePath dirId filename date needsRegen]
 
 sortByDateDesc :: [BackfillCandidate] -> [BackfillCandidate]
 sortByDateDesc = foldl' insertSorted []

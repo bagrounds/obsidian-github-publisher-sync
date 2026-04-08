@@ -38,6 +38,7 @@ import Automation.Gemini
   , generateContent
   )
 import Automation.Json (decode)
+import Automation.SocialPosting (selectMostRecentReflection)
 import Control.Concurrent (threadDelay)
 import Data.Char (ord)
 import Data.IORef (IORef, modifyIORef', newIORef, readIORef)
@@ -530,14 +531,7 @@ findMostRecentReflection contentDir = do
   exists <- doesDirectoryExist reflDir
   case exists of
     False -> pure Nothing
-    True  -> do
-      files <- listDirectory reflDir
-      let datePattern = "^[0-9]{4}-[0-9]{2}-[0-9]{2}\\.md$" :: String
-          dateFiles   = filter (\f -> (f :: String) =~ datePattern) files
-          sorted      = sortBy (flip compare) dateFiles
-      pure $ case sorted of
-        (f : _) -> Just ("reflections/" <> T.pack f)
-        []      -> Nothing
+    True  -> selectMostRecentReflection <$> listDirectory reflDir
 
 bfsTraversal :: FilePath -> IO [Text]
 bfsTraversal contentDir = do

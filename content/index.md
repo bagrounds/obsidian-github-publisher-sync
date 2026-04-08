@@ -50,31 +50,31 @@ updated: 2026-04-07T16:31:18-07:00
   
   
 ## [📚 Books](./books/index.md) (959)  
-- [🏠⬆️ Housing First: Ending Homelessness, Transforming Systems, and Changing Lives](./books/housing-first-ending-homelessness-transforming-systems-and-changing-lives.md)  
-- [🏛️🕊️👑 The Presidential Pardon Power](./books/the-presidential-pardon-power.md)  
-- [👨‍👩‍👧‍👦💰 Inheritocracy: It’s Time to Talk About the Bank of Mum and Dad](./books/inheritocracy-its-time-to-talk-about-the-bank-of-mum-and-dad.md)  
-- [🏆🤯💰 The Winner's Curse: Paradoxes and Anomalies of Economic Life](./books/the-winners-curse-paradoxes-and-anomalies-of-economic-life.md)  
+- [💼🏆 The Job Closer: Time Saving Techniques for Acing Resumes, Interviews, Negotiations, and More](./books/the-job-closer.md)  
+- [🗳️🇺🇸 The Right to Vote: The Contested History of Democracy in the United States](./books/the-right-to-vote-the-contested-history-of-democracy-in-the-united-states.md)  
+- [📈🎯✅📏 Measure What Matters: How Google, Bono, and the Gates Foundation Rock the World with OKRs](./books/measure-what-matters.md)  
+- [☯️🥋 Tao of Jeet Kune Do](./books/tao-of-jeet-kune-do.md)  
   
   
 ## [📺 Videos](./videos/index.md) (728)  
-- [🛒💲📈 We Had 400 People Shop For Groceries. What We Found Will Shock You.](./videos/we-had-400-people-shop-for-groceries-what-we-found-will-shock-you.md)  
-- [🤖🧠🏠🚀✨ A Deepdive on my Personal AI Infrastructure (PAI v2.0, December 2025)](./videos/a-deepdive-on-my-personal-ai-infrastructure-pai-v2-0-december-2025.md)  
-- [News Wrap: Trump says he’s ‘not joking’ about a third term as president](./videos/news-wrap-trump-says-hes-not-joking-about-a-third-term-as-president.md)  
-- [👹🇺🇸📉🔨👁️ With Trump “We Are Watching the Deliberate Dismantling of American Democracy”](./videos/with-trump-we-are-watching-the-deliberate-dismantling-of-american-democracy.md)  
+- [👿🏷️📉 The hidden history of demonizing SNAP recipients | Code Switch](./videos/the-hidden-history-of-demonizing-snap-recipients-code-switch.md)  
+- [🔒✈️🍔 Longest shutdown on record disrupts air travel and food assistance for Americans](./videos/longest-shutdown-on-record-disrupts-air-travel-and-food-assistance-for-americans.md)  
+- [📰🕒❓ With government jobs report delayed, what other data reveals about the economy](./videos/with-government-jobs-report-delayed-what-other-data-reveals-about-the-economy.md)  
+- [🥋🧠💪 Bruce Lee’s 11 Rules for an Unbreakable Mind](./videos/bruce-lees-11-rules-for-an-unbreakable-mind.md)  
   
   
 ## [🌌 Topics](./topics/index.md) (91)  
+- [⭐✨🌟💫 The Star](./topics/the-star.md)  
 - [🧸🎶🧸 Nursery Rhymes](./topics/nursery-rhymes.md)  
 - [🐑🎀 Mary Had a Little Lamb](./topics/mary-had-a-little-lamb.md)  
 - [🗣️🗣️ Bilingualism](./topics/bilingualism.md)  
-- [😴🛌🧘 REST](./topics/rest.md)  
   
   
 ## [📄  Articles](./articles/index.md) (84)  
+- [🙋‍♂️🚩🚫 Musk’s inauguration salute is not the only apparent fascist signal from Trump’s administration](./articles/musks-inauguration-salute-is-not-the-only-apparent-fascist-signal-from-trumps-administration.md)  
+- [🏛️🔍❌🗳️ Analysis: Heritage Foundation’s Database Undermines Claims of Recent Voter Fraud](./articles/analysis-heritage-foundations-database-undermines-claims-of-recent-voter-fraud.md)  
 - [📚🔥 Naval Academy removes nearly 400 books from library in new DEI purge ordered by Hegseth’s office](./articles/naval-academy-removes-nearly-400-books-from-library-in-new-dei-purge-ordered-by-hegseths-office.md)  
 - [🚫🏫📉⚠️ Project 2025 and education: A lot of bad ideas, some more actionable than others](./articles/project-2025-and-education-a-lot-of-bad-ideas-some-more-actionable-than-others.md)  
-- [📉🍎🔥🚫 How Project 2025 Would Devastate Public Education](./articles/how-project-2025-would-devastate-public-education.md)  
-- [🏫🔥 Snohomish County schools react to education department firings](./articles/snohomish-county-schools-react-to-education-department-firings.md)  
   
   
 ## [🤖💬 Bot Chats](./bot-chats/index.md) (49)  

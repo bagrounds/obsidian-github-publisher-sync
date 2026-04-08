@@ -4,6 +4,9 @@ aliases:
   - 📢🎓 Informative Speaking
 title: 📢🎓 Informative Speaking
 URL: https://bagrounds.org/topics/informative-speaking
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_time: 2026-04-03T00:00:00Z
+force_analyze_links: false
 ---
 [Home](../index.md) > [Topics](./index.md) > [Knowledge](./a-hierarchical-view-of-human-knowledge.md) > [Social Sciences](./social-sciences.md) > [Communication Studies](./communication-studies.md) > [Public Speaking and Rhetoric](./public-speaking-and-rhetoric.md)  
 # 📢🎓 Informative Speaking  

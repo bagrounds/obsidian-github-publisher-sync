@@ -38,7 +38,7 @@ import Automation.Gemini
   , generateContent
   )
 import Automation.Json (decode)
-import Automation.SocialPosting (selectMostRecentReflection)
+import Automation.Reflection (selectMostRecentReflection)
 import Control.Concurrent (threadDelay)
 import Data.Char (ord)
 import Data.IORef (IORef, modifyIORef', newIORef, readIORef)

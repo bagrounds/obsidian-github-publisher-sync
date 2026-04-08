@@ -444,7 +444,7 @@ tests = testGroup "BlogImage"
                 in noH1 ==> insertImageEmbed t "test.jpg" == t
       ]
   , parseDateFromFilenameTests
-  , contentDirectoryIdTests
+  , contentDirectoryTests
   , checkCandidateEligibilityTests
   ]
 
@@ -463,21 +463,21 @@ parseDateFromFilenameTests = testGroup "parseDateFromFilename"
       parseDateFromFilename "abc" @?= Nothing
   ]
 
-contentDirectoryIdTests :: TestTree
-contentDirectoryIdTests = testGroup "ContentDirectoryId"
-  [ testCase "round-trips all directory IDs" $
+contentDirectoryTests :: TestTree
+contentDirectoryTests = testGroup "ContentDirectory"
+  [ testCase "round-trips all directories" $
       assertBool "all round-trip" $
-        all (\d -> contentDirectoryIdFromText (contentDirectoryIdToText d) == Just d)
+        all (\directory -> contentDirectoryFromText (contentDirectoryToText directory) == Just directory)
           [minBound .. maxBound]
 
   , testCase "rejects unknown directory" $
-      contentDirectoryIdFromText "unknown-dir" @?= Nothing
+      contentDirectoryFromText "unknown-dir" @?= Nothing
 
   , testCase "reflections maps correctly" $
-      contentDirectoryIdToText Reflections @?= "reflections"
+      contentDirectoryToText Reflections @?= "reflections"
 
   , testCase "parses chickie-loo" $
-      contentDirectoryIdFromText "chickie-loo" @?= Just ChickieLoo
+      contentDirectoryFromText "chickie-loo" @?= Just ChickieLoo
   ]
 
 checkCandidateEligibilityTests :: TestTree

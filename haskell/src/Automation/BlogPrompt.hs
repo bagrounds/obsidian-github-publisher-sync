@@ -14,6 +14,7 @@ module Automation.BlogPrompt
   , buildDisplayTitle
   , sanitizeTitle
   , todayPacific
+  , todayPacificDay
   , recapInstructions
   ) where
 
@@ -165,6 +166,13 @@ todayPacific = do
       localTime = utcToLocalTime tz utcNow
       day = localDay localTime
   pure $ DateStr $ T.pack $ formatTime defaultTimeLocale "%Y-%m-%d" day
+
+todayPacificDay :: IO Day
+todayPacificDay = do
+  utcNow <- getCurrentTime
+  let tz = pacificTimeZone utcNow
+      localTime = utcToLocalTime tz utcNow
+  pure $ localDay localTime
 
 recapInstructions :: DateStr -> Text
 recapInstructions (DateStr dateStr) =

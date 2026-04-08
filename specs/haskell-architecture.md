@@ -33,12 +33,13 @@ Each function was extracted as a pure core with proper domain types, tested with
 - [x] `SocialPosting.isReflectionEligibleForPosting` — uses `Day` and `TimeOfDay` domain types
 - [x] `Scheduler.pacificHour` — already pure, property test (result always 0-23) and PST/PDT unit tests
 - [x] `Env.yesterdayDate :: UTCTime -> Day` — pure core extracted from IO wrapper
-- [x] `SocialPosting.selectMostRecentReflection :: [String] -> Maybe Text` — consolidated duplicate from InternalLinking
+- [x] `Reflection.selectMostRecentReflection :: [String] -> Maybe Text` — moved to own domain module from SocialPosting, consolidated duplicate from InternalLinking
 - [x] `Scheduler.blogPostMatchesToday :: Text -> [String] -> Bool` — pure filename matching
-- [x] `BlogImage.checkCandidateEligibility` — uses `ContentDirectoryId` ADT, `Day` for dates, `CandidateEligibility` result type (with `IneligibilityReason` ADT instead of `Maybe Bool`)
-- [x] `BlogImage.ContentDirectoryId` — closed ADT for the 13 content directory IDs, with round-trip `toText`/`fromText` and `Bounded`/`Enum`
+- [x] `BlogImage.checkCandidateEligibility` — uses `ContentDirectory` ADT, `Day` for dates, `CandidateEligibility` result type (with `IneligibilityReason` ADT instead of `Maybe Bool`)
+- [x] `BlogImage.ContentDirectory` — closed ADT for the 13 content directories, with round-trip `toText`/`fromText` and `Bounded`/`Enum`
 - [x] `BlogImage.parseDateFromFilename :: Text -> Maybe Day` — returns proper `Day` instead of `Text`
-- [x] `BlogImage.BackfillCandidate` — uses `ContentDirectoryId` and `Day` instead of `Text`
+- [x] `BlogImage.BackfillCandidate` — uses `ContentDirectory` and `Day` instead of `Text`
+- [x] `BlogPrompt.todayPacificDay :: IO Day` — returns Pacific `Day` directly, no string round-trip
 
 ### Next: Remaining Domain Types
 

@@ -5,7 +5,7 @@ import Control.Exception (SomeException, try)
 import Data.Char (isDigit)
 import Data.Map.Strict (Map)
 import qualified Data.Map.Strict as Map
-import Data.Maybe (fromMaybe)
+import Data.Maybe (fromMaybe, mapMaybe)
 import Data.Text (Text)
 import qualified Data.Text as T
 import qualified Data.Text.IO as TIO
@@ -27,7 +27,7 @@ import Automation.AiFiction
   , reflectionNeedsFiction
   )
 import Automation.BlogComments (fetchAllSeriesComments)
-import Automation.BlogImage (BackfillConfig (..), BackfillResult (..), ImageGenerationResult, syncAttachmentsDir, backfillImages, resolveImageProviders, processNote)
+import Automation.BlogImage (BackfillConfig (..), BackfillResult (..), ImageGenerationResult, syncAttachmentsDir, backfillImages, resolveImageProviders, processNote, contentDirectoryFromText)
 import Automation.BlogPosts (BlogPost (..), readSeriesPosts)
 import Automation.BlogPrompt
   ( DateStr (..)
@@ -581,16 +581,17 @@ runBackfillImages manager repoRoot vaultDir = do
       pure []
     _  -> do
       logMsg $ "  🎨 Image providers: " <> T.pack (show (length providers))
-      let bfConfig = BackfillConfig
-            { bfcRepoRoot = vaultDir
-            , bfcContentDirs = imageBackfillContentIds
-            , bfcAttachmentsDir = vaultDir </> "attachments"
-            , bfcProviders = providers
-            , bfcMaxImages = 2
+      let contentDirectories = mapMaybe contentDirectoryFromText imageBackfillContentIds
+          backfillConfig = BackfillConfig
+            { backfillRepoRoot = vaultDir
+            , backfillContentDirs = contentDirectories
+            , backfillAttachmentsDir = vaultDir </> "attachments"
+            , backfillProviders = providers
+            , backfillMaxImages = 2
             }
-      result <- backfillImages manager bfConfig
+      result <- backfillImages manager backfillConfig
       logMsg $ "  🖼️  Images: " <> T.pack (show (brImagesGenerated result))
-            <> "/" <> T.pack (show (bfcMaxImages bfConfig))
+            <> "/" <> T.pack (show (backfillMaxImages backfillConfig))
             <> " generated, " <> T.pack (show (brFilesUpdated result))
             <> " files updated, " <> T.pack (show (brFilesSkipped result)) <> " skipped"
       case brErrors result of

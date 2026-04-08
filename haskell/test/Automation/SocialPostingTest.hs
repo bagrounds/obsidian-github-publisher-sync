@@ -16,6 +16,7 @@ import qualified Test.Tasty.QuickCheck as QC
 import qualified Data.Text.IO as TIO
 
 import Automation.SocialPosting
+import Automation.Reflection (selectMostRecentReflection)
 
 tests :: TestTree
 tests = testGroup "SocialPosting"

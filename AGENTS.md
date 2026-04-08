@@ -62,6 +62,18 @@ URL: https://bagrounds.org/ai-blog/2026-03-08-1-auto-post-mastodon
 - 🐛 When fixing a bug, always write a failing test that reproduces the bug BEFORE writing the fix. Confirm the test fails, then apply the fix, then confirm the test passes. This is test-driven development (TDD).
 - 🔴🟢 Follow the red-green cycle: red (failing test) → green (minimal fix) → refactor. Never skip the red step.
 
+## Haskell Architecture Best Practices
+- 🧅 Functional Core, Imperative Shell: keep domain logic in pure functions, push IO to the edges. Never add IO to a function signature unless it truly needs side effects.
+- 🧊 Separate data from behavior: model domain concepts as pure data types and write pure functions over them. Avoid embedding IO callbacks in data structures.
+- 🏷️ Domain types over primitives: prefer newtypes and ADTs over raw Text, String, or Int for domain concepts like URLs, titles, dates, and platform limits. This prevents mixing up values that share a representation.
+- 📦 Smart constructors: use validated newtypes with smart constructors for values with invariants (such as similarity thresholds between zero and one or valid URLs).
+- 🔀 Explicit error types: prefer Either with domain-specific error ADTs over throwing exceptions or returning empty defaults. Reserve exceptions for truly unrecoverable failures.
+- 📖 ReaderT for shared context: when multiple functions need the same environment (Manager, config, vault path), prefer a ReaderT-based context over threading individual parameters.
+- 🧩 Small focused modules: each module should do one thing. Break large orchestrators into smaller feature-specific modules.
+- 🔬 Testability by design: if a function can be pure, make it pure. Pass time, randomness, and other ambient values as parameters so tests can be deterministic.
+- 🚫 Avoid God modules: no single module should import more than about eight Automation modules. Split orchestration into cohesive feature runners.
+- 🔧 Result types over Booleans: when a function checks eligibility, prefer returning a descriptive result type (such as Eligible or IneligibleBecause reason) over bare Bool to preserve decision context.
+
 ## Obsidian Vault is the Source of Truth
 - 📱 The `content/` directory is a **read-only one-way sync** from the Obsidian vault on the user's phone. Never write to `content/` from GitHub Actions or scripts.
 - 🚫 Never commit to the git repo from a GHA workflow. There is no reason to do this today.

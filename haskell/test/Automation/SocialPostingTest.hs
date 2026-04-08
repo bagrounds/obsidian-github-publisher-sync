@@ -4,6 +4,7 @@ import qualified Data.Map.Strict as Map
 import qualified Data.Set as Set
 import Data.Text (Text)
 import qualified Data.Text as T
+import Data.Time (UTCTime (..), fromGregorian, secondsToDiffTime)
 import System.Directory (createDirectoryIfMissing)
 import System.FilePath ((</>))
 import System.IO.Temp (withSystemTempDirectory)
@@ -295,10 +296,42 @@ pathReconstructionTests = testGroup "reconstructPath"
 
 reflectionEligibilityTests :: TestTree
 reflectionEligibilityTests = testGroup "isReflectionEligibleForPosting"
-  [ testCase "very old reflection is eligible" $ do
-      result <- isReflectionEligibleForPosting "2020-01-01" 17
-      assertBool "old reflection should be eligible" result
+  [ testCase "very old reflection is eligible" $
+      let now = mkUTC 2026 3 15 12
+      in assertBool "old reflection should be eligible"
+           (isReflectionEligibleForPosting now 17 "2020-01-01")
+
+  , testCase "yesterday's reflection is eligible after posting hour" $
+      let now = mkUTC 2026 3 15 18
+      in assertBool "yesterday at hour 18 with posting hour 17"
+           (isReflectionEligibleForPosting now 17 "2026-03-14")
+
+  , testCase "yesterday's reflection is ineligible before posting hour" $
+      let now = mkUTC 2026 3 15 10
+      in assertBool "yesterday at hour 10 with posting hour 17"
+           (not (isReflectionEligibleForPosting now 17 "2026-03-14"))
+
+  , testCase "today's reflection is never eligible" $
+      let now = mkUTC 2026 3 15 23
+      in assertBool "today's reflection should not be eligible"
+           (not (isReflectionEligibleForPosting now 17 "2026-03-15"))
+
+  , testCase "two days ago is always eligible regardless of hour" $
+      let now = mkUTC 2026 3 15 0
+      in assertBool "two days ago should be eligible even at hour 0"
+           (isReflectionEligibleForPosting now 17 "2026-03-13")
+
+  , testCase "yesterday at exactly the posting hour is eligible" $
+      let now = mkUTC 2026 3 15 17
+      in assertBool "yesterday at exactly posting hour"
+           (isReflectionEligibleForPosting now 17 "2026-03-14")
   ]
+
+-- | Build a deterministic UTCTime for testing.
+mkUTC :: Integer -> Int -> Int -> Int -> UTCTime
+mkUTC year month day hour =
+  UTCTime (fromGregorian year month day)
+          (secondsToDiffTime (fromIntegral hour * 3600))
 
 --------------------------------------------------------------------------------
 -- BFS eligibility (reflection timing in BFS traversal)

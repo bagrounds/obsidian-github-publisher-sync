@@ -404,17 +404,19 @@ findMostRecentReflection contentDir = do
 -- Reflection eligibility
 --------------------------------------------------------------------------------
 
-isReflectionEligibleForPosting :: Text -> Int -> IO Bool
-isReflectionEligibleForPosting dateStr postingHourUTC = do
-  now <- getCurrentTime
+-- | Pure eligibility check: given the current time, determine whether
+-- a reflection with the given date string is eligible for social posting.
+-- A reflection is eligible when it is from yesterday (and the posting hour
+-- has passed) or from any day before yesterday.
+isReflectionEligibleForPosting :: UTCTime -> Int -> Text -> Bool
+isReflectionEligibleForPosting now postingHourUTC dateStr =
   let currentHour = floor (utctDayTime now / 3600) :: Int
       todayStr = T.pack $ formatTime defaultTimeLocale "%Y-%m-%d" now
       yesterdayStr = T.pack $ formatTime defaultTimeLocale "%Y-%m-%d" $
         now { utctDay = pred (utctDay now) }
-  pure $
-    (dateStr == yesterdayStr && currentHour >= postingHourUTC)
-      || (dateStr < yesterdayStr)
-      || (dateStr == todayStr && False)
+  in (dateStr == yesterdayStr && currentHour >= postingHourUTC)
+       || (dateStr < yesterdayStr)
+       || (dateStr == todayStr && False)
 
 --------------------------------------------------------------------------------
 -- BFS content discovery
@@ -488,8 +490,9 @@ bfsLoop config state =
 checkBfsEligibility :: Text -> Int -> IO Bool
 checkBfsEligibility relativePath postingHourUTC
   | isIndexPath relativePath = pure False
-  | isReflectionPath relativePath =
-      isReflectionEligibleForPosting (extractDateFromPath relativePath) postingHourUTC
+  | isReflectionPath relativePath = do
+      now <- getCurrentTime
+      pure $ isReflectionEligibleForPosting now postingHourUTC (extractDateFromPath relativePath)
   | otherwise = pure True
 
 --------------------------------------------------------------------------------
@@ -504,8 +507,9 @@ discoverContentToPost config isPastPostingHour = do
       case mRefl of
         Nothing -> bfsContentDiscovery config
         Just reflPath -> do
-          eligible <- isReflectionEligibleForPosting
-            (extractDateFromPath reflPath) (fccPostingHourUTC config)
+          now <- getCurrentTime
+          let eligible = isReflectionEligibleForPosting
+                now (fccPostingHourUTC config) (extractDateFromPath reflPath)
           case eligible of
             True -> do
               mNote <- readContentNote reflPath (fccContentDir config)

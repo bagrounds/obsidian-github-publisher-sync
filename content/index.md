@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-04-07T16:31:18-07:00
+updated: 2026-04-07T19:32:21-07:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -56,11 +56,11 @@ updated: 2026-04-07T16:31:18-07:00
 - [☯️🥋 Tao of Jeet Kune Do](./books/tao-of-jeet-kune-do.md)  
   
   
-## [📺 Videos](./videos/index.md) (728)  
+## [📺 Videos](./videos/index.md) (729)  
+- [🏛️💬 Politics Chat, April 7, 2026](./videos/politics-chat-april-7-2026.md)  
 - [👿🏷️📉 The hidden history of demonizing SNAP recipients | Code Switch](./videos/the-hidden-history-of-demonizing-snap-recipients-code-switch.md)  
 - [🔒✈️🍔 Longest shutdown on record disrupts air travel and food assistance for Americans](./videos/longest-shutdown-on-record-disrupts-air-travel-and-food-assistance-for-americans.md)  
 - [📰🕒❓ With government jobs report delayed, what other data reveals about the economy](./videos/with-government-jobs-report-delayed-what-other-data-reveals-about-the-economy.md)  
-- [🥋🧠💪 Bruce Lee’s 11 Rules for an Unbreakable Mind](./videos/bruce-lees-11-rules-for-an-unbreakable-mind.md)  
   
   
 ## [🌌 Topics](./topics/index.md) (91)  

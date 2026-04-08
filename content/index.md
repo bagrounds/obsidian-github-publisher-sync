@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-04-08T12:16:58-07:00
+updated: 2026-04-08T12:58:28-07:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -42,46 +42,46 @@ updated: 2026-04-08T12:16:58-07:00
 - [2026-04-05 | 🐔 A Week of Heart, Harvest, and New Horizons 🐣 🐔](./chickie-loo/2026-04-05-a-week-of-heart-harvest-and-new-horizons.md)  
   
   
-## [🏛️ Systems for Public Good](./systems-for-public-good/index.md) (18)  
-- [2026-04-08 | 🏛️ 🌳 Nature's Embrace: Public Parks as a Universal Right 🏛️](./systems-for-public-good/2026-04-08-nature-s-embrace-public-parks-as-a-universal-right.md)  
+## [🏛️ Systems for Public Good](./systems-for-public-good/index.md) (17)  
 - [2026-04-07 | 🏛️ 🌳 Nature's Embrace: Public Parks as a Universal Right 🏛️](./systems-for-public-good/2026-04-07-nature-s-embrace-public-parks-as-a-universal-right.md)  
 - [2026-04-06 | 🏛️ 🎓 Educating for a Shared Future: Beyond the K-12 Horizon 🏛️](./systems-for-public-good/2026-04-06-educating-for-a-shared-future-beyond-the-k-12-horizon.md)  
 - [2026-04-05 | 🏛️ 🗺️ Mapping Our Shared Journey: A Week of Foundational Freedoms 🏛️](./systems-for-public-good/2026-04-05-mapping-our-shared-journey-a-week-of-foundational-freedoms.md)  
+- [2026-04-04 | 🏛️ 🤝 Cultivating Connection: Social Health as a Public Good 🏛️](./systems-for-public-good/2026-04-04-cultivating-connection-social-health-as-a-public-good.md)  
   
   
 ## [📚 Books](./books/index.md) (959)  
+- [🏦👨‍💼💥 Dark Towers: Deutsche Bank, Donald Trump, and an Epic Trail of Destruction](./books/dark-towers-deutsche-bank-donald-trump-and-an-epic-trail-of-destruction.md)  
+- [💼🔙📦 Working Backwards: Insights, Stories, and Secrets from Inside Amazon](./books/working-backwards-insights-stories-and-secrets-from-inside-amazon.md)  
+- [🤕⚕️ The Headache Handbook: Diagnosis and Treatment](./books/the-headache-handbook-diagnosis-and-treatment.md)  
 - [💰🇺🇸 Corruption in America: From Benjamin Franklin's Snuff Box to Citizens United](./books/corruption-in-america-from-benjamin-franklins-snuff-box-to-citizens-united.md)  
-- [💸🌍 Kleptopia: How Dirty Money Is Conquering the World](./books/kleptopia-how-dirty-money-is-conquering-the-world.md)  
-- [⛓️🏕️📜 Concentration Camps: A Short History](./books/concentration-camps-a-short-history.md)  
-- [🇺🇸🔒 American Gulag: Inside U.S. Immigration Prisons](./books/american-gulag-inside-us-immigration-prisons.md)  
   
   
 ## [📺 Videos](./videos/index.md) (730)  
-- [Susan Crawford wins Wisconsin Supreme Court seat, cementing liberal majority](./videos/susan-crawford-wins-wisconsin-supreme-court-seat-cementing-liberal-majority.md)  
-- [To Save Democracy, Here’s a Playbook That Works](./videos/to-save-democracy-heres-a-playbook-that-works.md)  
-- [📜🇺🇸🗽➡️ The Declaration of Independence | Journey to American Democracy](./videos/the-declaration-of-independence-journey-to-american-democracy.md)  
-- [👮‍♂️💪🚫📜 How Trump’s Bill Creates a Super Police Force](./videos/how-trumps-bill-creates-a-super-police-force.md)  
+- [📊📈📉📃👁️ 10 Charts to Understand the 900 Page Budget Bill](./videos/10-charts-to-understand-the-900-page-budget-bill.md)  
+- [💰🔄 Trump’s mega bill ‘hasn’t even cut taxes, it’s redistributed them’ | Justin Wolfers](./videos/trumps-mega-bill-hasnt-even-cut-taxes-its-redistributed-them-justin-wolfers.md)  
+- [😵‍💫🇺🇸🐘🚫 Strange cognitive dissonance among the MAGA who are convinced to vote against their own interests](./videos/strange-cognitive-dissonance-among-the-maga-who-are-convinced-to-vote-against-their-own-interests.md)  
+- [🇺🇸📈💡🔮🚀 What the U.S. has accomplished in 250 years of innovation and what’s next](./videos/what-the-us-has-accomplished-in-250-years-of-innovation-and-whats-next.md)  
   
   
 ## [🌌 Topics](./topics/index.md) (91)  
+- [💻🎨⚙️ ANSI escape codes](./topics/ansi-escape-codes.md)  
+- [🤖🧭 Agentic Software Engineering](./topics/agentic-software-engineering.md)  
 - [🍎🥛🔬✨ Universal Nutrition System Design](./topics/universal-nutrition-system-design.md)  
 - [🇺🇸🗣️💡🗓️ A Presidential Platform for Americans 2028](./topics/a-presidential-platform-for-americans-2028.md)  
-- [⚙️🧠🔄 Adaptive Control](./topics/adaptive-control.md)  
-- [⏱️📊 A Method For Estimating Work](./topics/a-method-for-estimating-work.md)  
   
   
 ## [📄  Articles](./articles/index.md) (84)  
+- [💻💰🤝👹🇺🇸 Tech moguls Altman, Bezos and Zuckerberg donate to Trump's inauguration fund](./articles/tech-moguls-altman-bezos-and-zuckerberg-donate-to-trumps-inauguration-fund.md)  
 - [💪🧠📉💊🔎 Creatine Supplementation in Depression: A Review of Mechanisms, Efficacy, Clinical Outcomes, and Future Directions](./articles/creatine-supplementation-in-depression-a-review-of-mechanisms-efficacy-clinical-outcomes-and-future-directions.md)  
 - [🙋‍♂️🚩🚫 Musk’s inauguration salute is not the only apparent fascist signal from Trump’s administration](./articles/musks-inauguration-salute-is-not-the-only-apparent-fascist-signal-from-trumps-administration.md)  
 - [🏛️🔍❌🗳️ Analysis: Heritage Foundation’s Database Undermines Claims of Recent Voter Fraud](./articles/analysis-heritage-foundations-database-undermines-claims-of-recent-voter-fraud.md)  
-- [📚🔥 Naval Academy removes nearly 400 books from library in new DEI purge ordered by Hegseth’s office](./articles/naval-academy-removes-nearly-400-books-from-library-in-new-dei-purge-ordered-by-hegseths-office.md)  
   
   
 ## [🤖💬 Bot Chats](./bot-chats/index.md) (49)  
+- [🤕😖 Headaches](./bot-chats/headaches.md)  
 - [😇🔮🎲🎬 Good Decisions](./bot-chats/good-decisions.md)  
 - [♟️👑⚔️🧠 Chess](./bot-chats/chess.md)  
 - [👨‍👧‍👦👔🎁 Fathers Day](./bot-chats/fathers-day.md)  
-- [🛐🕯️🔄 Ritual](./bot-chats/ritual.md)  
   
   
 ## [💾 Software](./software/index.md) (33)  

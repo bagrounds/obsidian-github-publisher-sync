@@ -71,12 +71,12 @@ URL: https://bagrounds.org/ai-blog/2026-04-07-2-toward-a-haskell-architecture-th
 ## 📚 Book Recommendations
 
 ### 📖 Similar
-* Algebra of Programming by Richard Bird and Oege de Moor is relevant because it formalizes the idea of expressing computation as algebraic structures, which is the theoretical foundation for the functional core pattern we are moving toward
-* Domain Modeling Made Functional by Scott Wlaschin is relevant because it demonstrates how to use strong type systems to encode business rules and prevent invalid states, which directly parallels our goal of using newtypes and ADTs to prevent domain value misuse
+* Algebra of Programming by Richard Bird and Oege de Moor formalizes computation as algebraic structures. 🔗 This is the theoretical foundation for the functional core pattern we are moving toward.
+* Domain Modeling Made Functional by Scott Wlaschin demonstrates how strong type systems encode business rules and prevent invalid states. 🏷️ This directly parallels our goal of using newtypes and ADTs to prevent domain value misuse.
 
 ### ↔️ Contrasting
-* Clean Architecture by Robert C. Martin is relevant as a contrasting perspective because it approaches modularity and dependency management from an object-oriented angle, and comparing its principles with functional architecture reveals how different paradigms solve the same problems
+* Clean Architecture by Robert C. Martin approaches modularity and dependency management from an object-oriented angle. 🔄 Comparing its principles with functional architecture reveals how different paradigms solve the same problems.
 
 ### 🔗 Related
-* Functional Design and Architecture by Alexander Granin is relevant because it is the definitive guide to structuring real-world Haskell applications using the ReaderT pattern, effect systems, and service handles that our roadmap targets
-* Real World Haskell by Bryan O'Sullivan, Don Stewart, and John Goerzen is relevant because it covers practical patterns for IO management, error handling, and testing that inform our incremental improvement strategy
+* Functional Design and Architecture by Alexander Granin is the definitive guide to structuring real-world Haskell applications. 🎯 It covers the ReaderT pattern, effect systems, and service handles that our roadmap targets.
+* Real World Haskell by Bryan O'Sullivan, Don Stewart, and John Goerzen covers practical patterns for IO management and testing. 🧪 These patterns directly inform our incremental improvement strategy.

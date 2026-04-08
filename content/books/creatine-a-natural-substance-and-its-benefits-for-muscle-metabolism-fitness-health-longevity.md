@@ -6,6 +6,9 @@ URL: https://bagrounds.org/books/creatine-a-natural-substance-and-its-benefits-f
 share: true
 CTA: 💪 Elevate performance.
 affiliate link: https://amzn.to/3G32qw5
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_time: 2026-04-08T00:00:00Z
+force_analyze_links: false
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 💪📈 Creatine: A Natural Substance and Its Benefits for Muscle Metabolism, Fitness, Health & Longevity  

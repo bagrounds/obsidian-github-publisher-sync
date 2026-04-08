@@ -9,6 +9,9 @@ Platform:
 Channel: PBS NewsHour
 tags:
 youtube: https://youtu.be/QZgM_o0hYfY
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_time: 2026-04-08T00:00:00Z
+force_analyze_links: false
 ---
 [Home](../index.md) > [Videos](./index.md)  
 # 🇺🇸📚🔄 A look at what's behind the efforts to reshape how American history is taught  
@@ -32,7 +35,7 @@ youtube: https://youtu.be/QZgM_o0hYfY
 * 🧑‍🏫 *Easy Debates for the American History Classroom* by Caleb Sanders: Offers practical approaches for educators to facilitate debates on historical topics, promoting student engagement with different perspectives.  
 * 👧🏽 *Stamped: Racism, Antiracism, and You* by Jason Reynolds and Ibram X. Kendi: A young adult adaptation that uses history to understand the construction of race and racist/antiracist ideas in America.  
 * 👧🏻 *A Different Mirror for Young People: A History of Multicultural America* by Ronald Takaki (adapted by Rebecca Stefoff): Presents an inclusive, multicultural depiction of American history using personal narratives.  
-* 👧🏽 An Indigenous Peoples' History of the United States for Young People by Roxanne Dunbar-Ortiz (adapted by Jean Mendoza and Debbie Reese): Challenges traditional narratives by centering Indigenous nations and peoples in American history.  
+* 👧🏽 [🇺🇸🏹 An Indigenous Peoples' History of the United States](../books/an-indigenous-peoples-history-of-the-united-states.md) for Young People by Roxanne Dunbar-Ortiz (adapted by Jean Mendoza and Debbie Reese): Challenges traditional narratives by centering Indigenous nations and peoples in American history.  
   
 **On Museum Practices, Censorship, and Cultural Institutions:**  
 * 🖼️ *Censored Art Today* by Gareth Harris: Analyzes the contemporary debates around art censorship and "cancel culture," examining who the censors are and why they are restricting artistic expression.  

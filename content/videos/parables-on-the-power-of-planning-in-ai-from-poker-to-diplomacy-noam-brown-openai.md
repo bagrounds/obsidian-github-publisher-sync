@@ -8,6 +8,9 @@ Author:
 Platform: "#YouTube"
 Channel: "[[Paul G. Allen School]]"
 tags:
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_time: 2026-04-04T00:00:00Z
+force_analyze_links: false
 ---
 [Home](../index.md) > [Videos](./index.md)  
 # 🗺️♟️🤖🤝 Parables on the Power of Planning in AI: From Poker to Diplomacy: Noam Brown (OpenAI)  
@@ -23,7 +26,7 @@ tags:
 **Scaling AI Through Search and Planning: Lessons from Game AI Research**  
   
 ### ✨ **Introduction**  
-🧑‍💻 Noam Brown, a leading AI researcher at OpenAI, presents insights from his work on game-playing AI, particularly in 🃏 **poker and strategy games like Diplomacy**. 🗣️ His talk explores the 🧠 **power of search and planning** in AI, demonstrating that 📈 **increasing inference compute**—rather than just scaling model size—can lead to 🚀 **dramatic improvements in performance**.  
+🧑‍💻 Noam Brown, a leading AI researcher at OpenAI, presents insights from his work on game-playing AI, particularly in 🃏 **poker and strategy games like [🤝🌍 Diplomacy](../books/diplomacy.md)**. 🗣️ His talk explores the 🧠 **power of search and planning** in AI, demonstrating that 📈 **increasing inference compute**—rather than just scaling model size—can lead to 🚀 **dramatic improvements in performance**.  
   
 📰 This blog post distills Brown’s key findings and discusses 🌍 **how they apply beyond games**, particularly in 🤖 **large language models (LLMs) and real-world AI systems**.  
   

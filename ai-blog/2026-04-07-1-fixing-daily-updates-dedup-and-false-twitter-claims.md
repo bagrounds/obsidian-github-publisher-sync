@@ -76,7 +76,7 @@ URL: https://bagrounds.org/ai-blog/2026-04-07-1-fixing-daily-updates-dedup-and-f
 
 ### 📖 Similar
 * Types and Programming Languages by Benjamin C. Pierce is relevant because the PostedNote fix demonstrates how enriching types with more precise information prevents an entire class of bugs, a theme explored deeply in this text.
-* Designing Data-Intensive Applications by Martin Klemperer is relevant because the scoping bugs are fundamentally about data provenance and understanding where information comes from, a core concern when building reliable data systems.
+* Designing Data-Intensive Applications by Martin Kleppmann is relevant because the scoping bugs are fundamentally about data provenance and understanding where information comes from, a core concern when building reliable data systems.
 
 ### ↔️ Contrasting
 * Move Fast and Break Things by Jonathan Taplin offers a perspective where speed is prioritized over correctness, contrasting with the methodical test-driven approach used here to ensure each fix was verified before and after.

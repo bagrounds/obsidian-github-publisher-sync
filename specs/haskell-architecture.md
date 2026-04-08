@@ -2,7 +2,7 @@
 
 ## Current State Summary
 
-The Haskell codebase was ported from TypeScript and inherited several patterns that don't leverage Haskell's strengths for safety and correctness. The code works well and has good test coverage (837+ tests), but can be improved to better prevent accidental breakage and improve modularity.
+The Haskell codebase was ported from TypeScript and inherited several patterns that don't leverage Haskell's strengths for safety and correctness. The code works well and has good test coverage (870+ tests), but can be improved to better prevent accidental breakage and improve modularity.
 
 ### Key Issues Identified
 
@@ -46,10 +46,10 @@ Each function was extracted as a pure core with proper domain types, tested with
 Each type delivered as a vertical slice with constructor, tests, and migration of call sites:
 - [ ] `newtype Url = Url Text` with smart constructor validating it starts with `https://`. Property: constructed `Url` always starts with `https://`.
 - [ ] `newtype Title = Title Text` for display titles
-- [ ] Promote `DateStr` — already exists in `BlogPrompt`, extend to `Types.hs` for shared use
+- [x] Promote `DateStr` — already exists in `BlogPrompt`, extend to `Types.hs` for shared use
 - [ ] `newtype RelativePath = RelativePath Text` for vault-relative paths
-- [ ] `newtype ApiKey = ApiKey Text` to prevent logging secrets. Smart constructor, `Show` instance redacts.
-- [ ] `data PlatformLimits = PlatformLimits { maxChars :: Int, urlLength :: Int }` for platform limits
+- [x] `newtype ApiKey = ApiKey Text` to prevent logging secrets. Smart constructor, `Show` instance redacts. All credential `Show` instances now redact secrets.
+- [x] `data PlatformLimits = PlatformLimits { platformMaxCharacters :: Int, platformUrlCountLength :: Maybe Int }` for platform limits. Per-platform constants (`twitterLimits`, `blueskyLimits`, `mastodonLimits`), generalized `calculatePostLength` and `validatePostLength`.
 
 ### Next: AppContext Record + Tests
 

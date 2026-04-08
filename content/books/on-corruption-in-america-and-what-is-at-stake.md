@@ -8,6 +8,9 @@ Author:
 tags:
 affiliate link: https://amzn.to/3SDyzNj
 CTA: ⚖️ Uphold integrity.
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_time: 2026-04-08T00:00:00Z
+force_analyze_links: false
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 💰🏛️💔🇺🇸 On Corruption in America: And What Is at Stake  
@@ -15,7 +18,7 @@ CTA: ⚖️ Uphold integrity.
   
 ## 🤖 AI Summary  
 ### On Corruption in America: And What Is at Stake 🇺🇸  
-**TL;DR:** Corruption in America is not merely about illegal acts but a systemic erosion of public trust and institutions, fueled by unchecked power and the prioritization of private interests over the common good, necessitating a reimagining of civic responsibility and democratic participation.  
+**TL;DR:** [💰🇺🇸 Corruption in America: From Benjamin Franklin's Snuff Box to Citizens United](./corruption-in-america-from-benjamin-franklins-snuff-box-to-citizens-united.md) is not merely about illegal acts but a systemic erosion of public trust and institutions, fueled by unchecked power and the prioritization of private interests over the common good, necessitating a reimagining of civic responsibility and democratic participation.  
   
 **A New or Surprising Perspective 🤔**  
 This book provides a surprising perspective by moving beyond the traditional focus on individual acts of bribery or fraud. It argues that corruption is a pervasive, insidious force that operates through legal and often normalized channels. It unveils how systemic corruption subtly reshapes laws, regulations, and norms, ultimately undermining the very foundations of democratic governance. This perspective challenges the common assumption that corruption is solely a problem of "bad apples," revealing it as a structural issue that requires systemic solutions.  

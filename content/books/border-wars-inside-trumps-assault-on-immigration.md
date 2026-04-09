@@ -7,6 +7,9 @@ share: true
 CTA: 💔 Witness human cost.
 affiliate link: https://a.co/d/08jTdrY6
 updated: 2026-03-15T08:10:57.403Z
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_time: 2026-04-04T00:00:00Z
+force_analyze_links: false
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🧱⚔️🚶‍♀️ Border Wars: Inside Trump's Assault on Immigration  

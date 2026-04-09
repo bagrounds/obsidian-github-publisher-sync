@@ -6,6 +6,9 @@ URL: https://bagrounds.org/books/the-presidential-pardon-power
 share: true
 CTA: 🧠 Grasp this unique prerogative.
 affiliate link: https://amzn.to/48Z7tZV
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_time: 2026-04-07T00:00:00Z
+force_analyze_links: false
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🏛️🕊️👑 The Presidential Pardon Power  
@@ -82,7 +85,7 @@ The Presidential Pardon Power book illuminates the historical evolution, constit
 * 📖 The Imperial Presidency by Arthur M. Schlesinger Jr.  
   
 ### 🔗 Related  
-* 📖 The Federalist Papers by Alexander Hamilton, James Madison, and John Jay  
+* 📖 [🇺🇸📜 The Federalist Papers](./the-federalist-papers.md) by Alexander Hamilton, James Madison, and John Jay  
 * 📖 A User's Guide to the U.S. Constitution by Jethro K. Lieberman  
 * 📖 American Constitutional Law: Essays, Cases, and Comparative Notes by M. Tushnet  
   

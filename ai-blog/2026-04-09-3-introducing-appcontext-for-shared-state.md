@@ -46,7 +46,7 @@ URL: https://bagrounds.org/ai-blog/2026-04-09-3-introducing-appcontext-for-share
 
 🧹 The requireSecret call was removed from three runners because the Gemini API key is now read once in main and stored in the context.
 
-🔌 The callGeminiForGenerator helper uses the API key from the context directly. The library callback interface still passes a Secret parameter for compatibility with the generateFiction and generateReflectionTitle functions, but the adapter ignores it in favor of the context's key.
+🔌 The callGeminiForGenerator helper uses the API key from the context directly. The library callback interface was updated to remove the now-unnecessary Secret parameter from generateFiction and generateReflectionTitle, since the key lives in the context. The fcApiKey and rtcApiKey fields were removed from FictionConfig and ReflectionTitleConfig respectively, eliminating dead code that would otherwise accumulate as tech debt.
 
 📐 The main function reads all environment variables once at startup and constructs AppContext using the validated smart constructor, so any configuration errors surface immediately before any tasks run.
 

@@ -20,8 +20,8 @@ import System.IO (hSetBuffering, stdout, stderr, BufferMode(..))
 
 import Automation.AiBlogLinks (NavLinkResult (..), aiBlogConfig, ensureAllNavLinks, buildReflectionLinks)
 import Automation.AiFiction
-  ( FictionConfig (..)
-  , FictionResult (..)
+  ( FictionConfig (FictionConfig, fcModels, fcNoteContent)
+  , FictionResult (frFiction, frModel, frUpdatedContent)
   , defaultFictionModel
   , generateFiction
   , reflectionNeedsFiction
@@ -61,8 +61,8 @@ import Automation.ObsidianSync
   , pushObsidianVault
   )
 import Automation.ReflectionTitle
-  ( ReflectionTitleConfig (..)
-  , ReflectionTitleResult (..)
+  ( ReflectionTitleConfig (ReflectionTitleConfig, rtcModels, rtcNoteContent, rtcDate, rtcRecentTitles)
+  , ReflectionTitleResult (rtrFullTitle, rtrModel, rtrUpdatedContent)
   , defaultTitleModel
   , generateReflectionTitle
   , reflectionNeedsTitle
@@ -117,8 +117,8 @@ inferenceDashboards =
 -- Shared Gemini caller for fiction/title generators
 -- ---------------------------------------------------------------------------
 
-callGeminiForGenerator :: Context.AppContext -> Secret -> [Text] -> (Text, Text) -> IO (Text, Text)
-callGeminiForGenerator context _apiKey models (systemPrompt, userPrompt) = do
+callGeminiForGenerator :: Context.AppContext -> [Text] -> (Text, Text) -> IO (Text, Text)
+callGeminiForGenerator context models (systemPrompt, userPrompt) = do
   let combinedPrompt = systemPrompt <> "\n\n" <> userPrompt
       config = Gemini.defaultGenerationConfig { Gemini.gcTemperature = 0.9, Gemini.gcMaxOutputTokens = 2048 }
   result <- Gemini.generateContentWithFallback (Context.httpManager context) models combinedPrompt (Context.geminiApiKey context) config
@@ -661,7 +661,6 @@ runSocialPosting context = do
 runAiFiction :: Context.AppContext -> IO ()
 runAiFiction context = do
   let vaultDir = Context.vaultDir context
-      apiKey = Context.geminiApiKey context
   logMsg "▶️  ai-fiction"
 
   today <- todayPacificDay
@@ -690,8 +689,7 @@ runAiFiction context = do
                 _ -> defaultChain
 
           let config = FictionConfig
-                { fcApiKey = apiKey
-                , fcModels = models
+                { fcModels = models
                 , fcNoteContent = noteContent
                 }
 
@@ -726,8 +724,7 @@ runReflectionTitle context = do
 
 tryTitleForDate :: Context.AppContext -> Text -> IO Bool
 tryTitleForDate context date = do
-  let apiKey = Context.geminiApiKey context
-      reflectionsDir = Context.vaultDir context </> "reflections"
+  let reflectionsDir = Context.vaultDir context </> "reflections"
       reflectionPath = reflectionsDir </> T.unpack date <> ".md"
 
   exists <- doesFileExist reflectionPath
@@ -754,8 +751,7 @@ tryTitleForDate context date = do
                 _ -> defaultChain
 
           let config = ReflectionTitleConfig
-                { rtcApiKey = apiKey
-                , rtcModels = models
+                { rtcModels = models
                 , rtcNoteContent = content
                 , rtcDate = date
                 , rtcRecentTitles = recentTitles

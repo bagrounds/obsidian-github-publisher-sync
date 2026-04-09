@@ -8,16 +8,15 @@ module Automation.AiFiction
   , buildFictionSignature
   , applyFiction
   , generateFiction
-  , FictionConfig (..)
-  , FictionResult (..)
+  , FictionConfig (FictionConfig, fcModels, fcNoteContent)
+  , FictionResult (FictionResult, frFiction, frModel, frUpdatedContent)
   ) where
 
 import Data.Text (Text)
 import qualified Data.Text as T
 
 import Automation.Types
-  ( Secret
-  , updatesSectionHeader
+  ( updatesSectionHeader
   )
 
 import qualified Automation.Platforms.Bluesky as Bluesky
@@ -142,8 +141,7 @@ applyFiction content fiction mModel =
       T.stripEnd content <> "\n\n" <> sectionBlock <> "\n"
 
 data FictionConfig = FictionConfig
-  { fcApiKey      :: Secret
-  , fcModels      :: [Text]
+  { fcModels      :: [Text]
   , fcNoteContent :: Text
   } deriving (Show, Eq)
 
@@ -153,11 +151,11 @@ data FictionResult = FictionResult
   , frUpdatedContent :: Text
   } deriving (Show, Eq)
 
-generateFiction :: FictionConfig -> (Secret -> [Text] -> (Text, Text) -> IO (Text, Text)) -> IO FictionResult
+generateFiction :: FictionConfig -> ([Text] -> (Text, Text) -> IO (Text, Text)) -> IO FictionResult
 generateFiction config callModel = do
   let stripped = stripForPrompt (fcNoteContent config)
       prompt = buildFictionPrompt stripped
-  (text, model) <- callModel (fcApiKey config) (fcModels config) prompt
+  (text, model) <- callModel (fcModels config) prompt
   let fiction = parseFictionResponse text
       updatedContent = applyFiction (fcNoteContent config) fiction (Just model)
   pure FictionResult

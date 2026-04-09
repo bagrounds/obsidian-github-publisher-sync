@@ -60,6 +60,7 @@ URL: https://bagrounds.org/ai-blog/2026-03-08-1-auto-post-mastodon
 - 🪶 No redundant suffixes: do not add type-category suffixes that merely restate what the type system already expresses. For example, use ContentDirectory instead of ContentDirectoryId, Platform instead of PlatformType.
 - 🔡 No single-letter variables: unless the variable is truly abstract (such as a mathematical formula parameter), always use descriptive names. For example, use today instead of d, directory instead of x.
 - 📊 Logging should be thorough but not spammy, easy for a human to read and understand what is happening, including decisions being made in code. Logs should be data-centric and maintain a high signal to noise ratio.
+- 🧹 No dead code or tech debt: never leave unused parameters, ignored arguments, or dead code paths in the codebase. When a refactor makes code unnecessary, remove it immediately rather than leaving it behind with a workaround. Clean up interfaces, remove unused fields from records, and eliminate adapter shims that exist only to satisfy obsolete signatures. If it can be cleaned up now, clean it up now.
 
 ## Scientific Engineering
 - 🔬 Always test your work and iterate until your tests succeed and verify that the goal has been achieved.

@@ -25,6 +25,7 @@ library
   hs-source-dirs:      src
   exposed-modules:
     Automation.Json
+    Automation.Secret
     Automation.Types
     Automation.Env
     Automation.Scheduler

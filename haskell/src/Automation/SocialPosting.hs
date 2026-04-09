@@ -591,7 +591,7 @@ getConfiguredPlatforms ec = mapMaybe id
 -- Social post generation via Gemini
 --------------------------------------------------------------------------------
 
-generateSocialPostText :: Manager -> ApiKey -> ContentNote -> Platform -> IO (Either Text Text)
+generateSocialPostText :: Manager -> Secret -> ContentNote -> Platform -> IO (Either Text Text)
 generateSocialPostText manager apiKey note platform = do
   let rd = ReflectionData
         { rdDate = extractDateFromPath (cnRelativePath note)
@@ -623,7 +623,7 @@ generateSocialPostText manager apiKey note platform = do
           question = T.strip (grText questionResp)
           modelOutput = question <> "\n" <> tags
           rawPost = assemblePost modelOutput rd
-          overage = T.length rawPost - blueskyMaxLength
+          overage = T.length rawPost - platformMaxCharacters blueskyLimits
       finalPost <- case overage > 0 of
         True -> do
           let shortenSafetyBuffer = 10
@@ -668,8 +668,8 @@ postToTwitterPlatform manager env _note postText =
       case result of
         Left err -> pure (Left $ "Twitter post failed: " <> err)
         Right (tweetId, _tweetText) -> do
-          embedHtml <- getEmbedHtml manager tweetId (tcAccessToken creds)
-                         (unApiKey (tcApiKey creds)) (tcApiSecret creds)
+          embedHtml <- getEmbedHtml manager tweetId (unSecret (tcAccessToken creds))
+                         (unSecret (tcApiKey creds)) (unSecret (tcApiSecret creds))
           pure $ Right PostResult
             { prPlatform = Twitter
             , prEmbedHtml = embedHtml
@@ -740,7 +740,7 @@ data PostedNote = PostedNote
   , pnPlatforms :: [Platform]
   } deriving (Show, Eq)
 
-runPostingPipeline :: Manager -> EnvironmentConfig -> ApiKey -> FilePath -> IO [PostedNote]
+runPostingPipeline :: Manager -> EnvironmentConfig -> Secret -> FilePath -> IO [PostedNote]
 runPostingPipeline manager env apiKey vaultDir = do
   let platforms = getConfiguredPlatforms env
   putStrLn $ "  🔍 Configured platforms: " <> show platforms
@@ -778,7 +778,7 @@ groupByNote items =
            ([ctpPlatform ctp], ctpNote ctp, ctpPathFromRoot ctp) acc
     merge (p1, n, path) (p2, _, _) = (p1 <> p2, n, path)
 
-processNoteGroup :: Manager -> EnvironmentConfig -> ApiKey -> FilePath
+processNoteGroup :: Manager -> EnvironmentConfig -> Secret -> FilePath
                  -> ([Platform], ContentNote, [Text]) -> IO (Maybe PostedNote)
 processNoteGroup manager env apiKey vaultDir (platforms, note, pathFromRoot) = do
   putStrLn $ "  📝 Processing: " <> T.unpack (cnTitle note)
@@ -803,7 +803,7 @@ processNoteGroup manager env apiKey vaultDir (platforms, note, pathFromRoot) = d
       putStrLn $ "  ✅ " <> show (length successes) <> " embeds written"
       pure (Just (PostedNote note postedPlatforms))
 
-postForPlatform :: Manager -> EnvironmentConfig -> ApiKey -> ContentNote -> Platform
+postForPlatform :: Manager -> EnvironmentConfig -> Secret -> ContentNote -> Platform
                 -> IO (Either Text PostResult)
 postForPlatform manager env apiKey note platform = do
   postTextResult <- generateSocialPostText manager apiKey note platform

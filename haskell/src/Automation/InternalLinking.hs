@@ -39,7 +39,7 @@ import Automation.Gemini
   )
 import Automation.Json (decode)
 import Automation.Reflection (selectMostRecentReflection)
-import Automation.Types (ApiKey (..), DateStr (..))
+import Automation.Types (Secret (..), DateStr (..))
 import Control.Concurrent (threadDelay)
 import Data.Char (ord)
 import Data.IORef (IORef, modifyIORef', newIORef, readIORef)
@@ -658,13 +658,13 @@ buildIdentificationPrompt fileBody bookEntries =
         ]
   in systemPrompt <> "\n\nAvailable books:\n" <> bookList <> "\n\nDocument body:\n" <> fileBody
 
-identifyBooksWithGemini :: Manager -> ApiKey -> Text -> Text -> [ContentEntry] -> IO (Either Text [Text])
+identifyBooksWithGemini :: Manager -> Secret -> Text -> Text -> [ContentEntry] -> IO (Either Text [Text])
 identifyBooksWithGemini _ _ _ _ [] = pure (Right [])
 identifyBooksWithGemini manager apiKey model fileBody bookEntries = do
   let prompt = buildIdentificationPrompt fileBody bookEntries
   retryLoop manager apiKey model prompt 0 initialBackoffUs
 
-retryLoop :: Manager -> ApiKey -> Text -> Text -> Int -> Int -> IO (Either Text [Text])
+retryLoop :: Manager -> Secret -> Text -> Text -> Int -> Int -> IO (Either Text [Text])
 retryLoop manager apiKey model prompt attempt backoff = do
   result <- generateContent manager GeminiRequest
     { grPrompt           = prompt
@@ -816,7 +816,7 @@ recordLinkAnalysis filePath model timestamp =
 -- File processing
 -- --------------------------------------------------------------------------
 
-processFile :: Manager -> ApiKey -> Text -> FilePath -> [ContentEntry] -> IO FileResult
+processFile :: Manager -> Secret -> Text -> FilePath -> [ContentEntry] -> IO FileResult
 processFile manager apiKey model filePath index = do
   let contentDir   = takeDirectory (takeDirectory filePath)
       relativePath = makeRelPathFromContentDir contentDir filePath
@@ -932,7 +932,7 @@ run manager model contentDir = do
 
   pure result
 
-processFiles :: Manager -> ApiKey -> Text -> FilePath -> [ContentEntry] -> [Text] -> IO [FileResult]
+processFiles :: Manager -> Secret -> Text -> FilePath -> [ContentEntry] -> [Text] -> IO [FileResult]
 processFiles manager apiKey model contentDir index filesToVisit = do
   inferenceRef <- newIORef (0 :: Int)
   resultRef    <- newIORef ([] :: [FileResult])
@@ -960,9 +960,9 @@ processFiles manager apiKey model contentDir index filesToVisit = do
             False -> go infRef resRef rest
         False -> go infRef resRef rest
 
-lookupApiKey :: IO ApiKey
+lookupApiKey :: IO Secret
 lookupApiKey = do
   mKey <- lookupEnv "GEMINI_API_KEY"
-  pure $ ApiKey (maybe "" T.pack mKey)
+  pure $ Secret (maybe "" T.pack mKey)
 
 

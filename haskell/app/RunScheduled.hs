@@ -83,7 +83,7 @@ import Automation.Scheduler
   , taskIdFromText
   , taskIdToText
   )
-import Automation.Types (ApiKey (..), DateStr (..))
+import Automation.Types (Secret (..), DateStr (..))
 import qualified Automation.InternalLinking as IL
 import Automation.SocialPosting (autoPost)
 import Automation.Text (wordJaccardSimilarity)
@@ -120,7 +120,7 @@ inferenceDashboards =
 -- Shared Gemini caller for fiction/title generators
 -- ---------------------------------------------------------------------------
 
-callGeminiForGenerator :: Manager -> ApiKey -> [Text] -> (Text, Text) -> IO (Text, Text)
+callGeminiForGenerator :: Manager -> Secret -> [Text] -> (Text, Text) -> IO (Text, Text)
 callGeminiForGenerator manager apiKey models (systemPrompt, userPrompt) = do
   let combinedPrompt = systemPrompt <> "\n\n" <> userPrompt
       config = defaultGenerationConfig { gcTemperature = 0.9, gcMaxOutputTokens = 2048 }
@@ -140,8 +140,8 @@ requireEnv key = do
     Just val -> pure (T.pack val)
     Nothing  -> error $ "Missing required environment variable: " <> key
 
-requireApiKey :: String -> IO ApiKey
-requireApiKey key = ApiKey <$> requireEnv key
+requireSecret :: String -> IO Secret
+requireSecret key = Secret <$> requireEnv key
 
 lookupEnvText :: String -> IO (Maybe Text)
 lookupEnvText key = fmap (fmap T.pack) (lookupEnv key)
@@ -152,9 +152,9 @@ getObsidianCreds = do
   vaultName <- requireEnv "OBSIDIAN_VAULT_NAME"
   vaultPassword <- lookupEnvText "OBSIDIAN_VAULT_PASSWORD"
   pure ObsidianCredentials
-    { ocAuthToken = authToken
+    { ocAuthToken = Secret authToken
     , ocVaultName = vaultName
-    , ocVaultPassword = vaultPassword
+    , ocVaultPassword = fmap Secret vaultPassword
     }
 
 buildEnvMap :: [String] -> IO (Map Text Text)
@@ -420,7 +420,7 @@ runBlogSeries manager repoRoot vaultDir seriesId = do
     Just rc -> pure rc
     Nothing -> error $ "No run config for series: " <> T.unpack seriesId
 
-  apiKey <- requireApiKey "GEMINI_API_KEY"
+  apiKey <- requireSecret "GEMINI_API_KEY"
   today <- todayPacific
   let todayText = unDateStr today
 
@@ -676,7 +676,7 @@ runAiFiction :: Manager -> FilePath -> IO ()
 runAiFiction manager vaultDir = do
   logMsg "▶️  ai-fiction"
 
-  apiKey <- requireApiKey "GEMINI_API_KEY"
+  apiKey <- requireSecret "GEMINI_API_KEY"
   today <- todayPacific
   let todayText = unDateStr today
 
@@ -722,7 +722,7 @@ runReflectionTitle :: Manager -> FilePath -> IO ()
 runReflectionTitle manager vaultDir = do
   logMsg "▶️  reflection-title"
 
-  apiKey <- requireApiKey "GEMINI_API_KEY"
+  apiKey <- requireSecret "GEMINI_API_KEY"
   today <- todayPacific
   let todayText = unDateStr today
   yesterday <- yesterdayPacific
@@ -740,7 +740,7 @@ runReflectionTitle manager vaultDir = do
 
   logMsg "✅ reflection-title"
 
-tryTitleForDate :: Manager -> ApiKey -> FilePath -> FilePath -> Text -> IO Bool
+tryTitleForDate :: Manager -> Secret -> FilePath -> FilePath -> Text -> IO Bool
 tryTitleForDate manager apiKey _vaultDir reflectionsDir date = do
   let reflectionPath = reflectionsDir </> T.unpack date <> ".md"
 

@@ -16,7 +16,7 @@ import Data.Text (Text)
 import qualified Data.Text as T
 
 import Automation.Types
-  ( ApiKey
+  ( Secret
   , blueskySectionHeader
   , mastodonSectionHeader
   , tweetSectionHeader
@@ -141,7 +141,7 @@ applyFiction content fiction mModel =
       T.stripEnd content <> "\n\n" <> sectionBlock <> "\n"
 
 data FictionConfig = FictionConfig
-  { fcApiKey      :: ApiKey
+  { fcApiKey      :: Secret
   , fcModels      :: [Text]
   , fcNoteContent :: Text
   } deriving (Show, Eq)
@@ -152,7 +152,7 @@ data FictionResult = FictionResult
   , frUpdatedContent :: Text
   } deriving (Show, Eq)
 
-generateFiction :: FictionConfig -> (ApiKey -> [Text] -> (Text, Text) -> IO (Text, Text)) -> IO FictionResult
+generateFiction :: FictionConfig -> (Secret -> [Text] -> (Text, Text) -> IO (Text, Text)) -> IO FictionResult
 generateFiction config callModel = do
   let stripped = stripForPrompt (fcNoteContent config)
       prompt = buildFictionPrompt stripped

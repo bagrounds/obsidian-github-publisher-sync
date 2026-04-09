@@ -38,7 +38,7 @@ import Automation.Html (formatDisplayDate, textToHtml)
 import Automation.Json ((.=), (.:), (.:?), eitherDecode, encode, object, withObject)
 import qualified Automation.Json as Json
 import Automation.Retry (HttpCodeException (..), defaultRetryOptions, withRetry)
-import Automation.Types (ApiKey (..), TwitterCredentials (..), twitterDisplayName)
+import Automation.Types (Secret (..), TwitterCredentials (..), twitterDisplayName)
 
 -- ── Constants ──────────────────────────────────────────────────────────
 
@@ -109,11 +109,11 @@ buildOAuthHeader TwitterCredentials {..} httpMethod baseUrl = do
   timestamp <- T.pack . show . (floor @Double @Integer) . realToFrac <$> getPOSIXTime
   nonce <- generateNonce
   let oauthParams =
-        [ ("oauth_consumer_key", unApiKey tcApiKey)
+        [ ("oauth_consumer_key", unSecret tcApiKey)
         , ("oauth_nonce", nonce)
         , ("oauth_signature_method", "HMAC-SHA1")
         , ("oauth_timestamp", timestamp)
-        , ("oauth_token", tcAccessToken)
+        , ("oauth_token", unSecret tcAccessToken)
         , ("oauth_version", "1.0")
         ]
       paramString =
@@ -122,7 +122,7 @@ buildOAuthHeader TwitterCredentials {..} httpMethod baseUrl = do
       signatureBase =
         httpMethod <> "&" <> percentEncode baseUrl <> "&" <> percentEncode paramString
       signingKey =
-        TE.encodeUtf8 $ percentEncode tcApiSecret <> "&" <> percentEncode tcAccessSecret
+        TE.encodeUtf8 $ percentEncode (unSecret tcApiSecret) <> "&" <> percentEncode (unSecret tcAccessSecret)
       signature =
         TE.decodeUtf8 $ B64.encode $ hmacSHA1 signingKey (TE.encodeUtf8 signatureBase)
       allParams = sort $ ("oauth_signature", signature) : oauthParams

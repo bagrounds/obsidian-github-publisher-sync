@@ -41,6 +41,7 @@ import Automation.Types
   , BlueskyPostResult (..)
   , EmbedResult (..)
   , LinkCard (..)
+  , Secret (..)
   , blueskyDisplayName
   , blueskyOembedInitialDelayMs
   , blueskyOembedRetryDelayMs
@@ -66,7 +67,7 @@ createSession manager BlueskyCredentials{..} = do
   let url = T.unpack (atpBaseUrl <> "com.atproto.server.createSession")
       bodyJson = encode (object
         [ "identifier" .= bcIdentifier
-        , "password" .= bcPassword
+        , "password" .= unSecret bcPassword
         ])
   result <- try @SomeException $ withRetry defaultRetryOptions $ do
     initialReq <- parseRequest url

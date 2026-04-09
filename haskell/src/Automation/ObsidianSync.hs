@@ -34,6 +34,7 @@ import System.Directory
 import System.Environment (getEnvironment)
 import System.Exit (ExitCode (..))
 import System.FilePath ((</>))
+import Automation.Secret (Secret (..))
 import System.Posix.Process (getProcessID)
 import System.Process
   ( proc
@@ -44,9 +45,9 @@ import System.Process
   )
 
 data ObsidianCredentials = ObsidianCredentials
-  { ocAuthToken     :: Text
+  { ocAuthToken     :: Secret
   , ocVaultName     :: Text
-  , ocVaultPassword :: Maybe Text
+  , ocVaultPassword :: Maybe Secret
   } deriving (Show, Eq)
 
 data SyncResult = SyncResult
@@ -143,14 +144,14 @@ syncObsidianVault :: ObsidianCredentials -> IO FilePath
 syncObsidianVault creds = do
   pid <- show <$> getProcessID
   let vaultDir = "/tmp/obsidian-vault-" <> pid
-      env = [("OBSIDIAN_AUTH_TOKEN", T.unpack $ ocAuthToken creds)]
+      env = [("OBSIDIAN_AUTH_TOKEN", T.unpack $ unSecret $ ocAuthToken creds)]
   coldCacheSync creds vaultDir env
 
 coldCacheSync :: ObsidianCredentials -> FilePath -> [(String, String)] -> IO FilePath
 coldCacheSync creds vaultDir env = do
   createDirectoryIfMissing True vaultDir
   let setupArgs = ["sync-setup", "--vault", T.unpack $ ocVaultName creds, "--path", vaultDir]
-        <> maybe [] (\pw -> ["--password", T.unpack pw]) (ocVaultPassword creds)
+        <> maybe [] (\pw -> ["--password", T.unpack (unSecret pw)]) (ocVaultPassword creds)
   putStrLn $ "🔧 Setting up Obsidian Sync for vault: " <> T.unpack (ocVaultName creds)
   _ <- runObCommand setupArgs Nothing env
   removeSyncLock vaultDir
@@ -161,9 +162,9 @@ coldCacheSync creds vaultDir env = do
   writeFile (vaultFileCountPath vaultDir) (show fileCount)
   pure vaultDir
 
-pushObsidianVault :: FilePath -> Text -> IO ()
+pushObsidianVault :: FilePath -> Secret -> IO ()
 pushObsidianVault vaultDir authToken = do
-  let env = [("OBSIDIAN_AUTH_TOKEN", T.unpack authToken)]
+  let env = [("OBSIDIAN_AUTH_TOKEN", T.unpack (unSecret authToken))]
   prePushFileCount <- countVaultFiles vaultDir
   putStrLn $ "📊 Pre-push file count: " <> show prePushFileCount
   validatePrePushFileCount vaultDir prePushFileCount

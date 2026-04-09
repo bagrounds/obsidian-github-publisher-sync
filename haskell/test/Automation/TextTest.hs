@@ -5,7 +5,7 @@ import Test.Tasty.HUnit (testCase, (@?=), assertBool)
 import qualified Data.Text as T
 
 import Automation.Text
-import Automation.Types (PlatformLimits (..), twitterLimits, twitterUrlLength, blueskyLimits, mastodonLimits)
+import Automation.Types (PlatformLimits (..), twitterLimits, blueskyLimits, mastodonLimits)
 
 tests :: TestTree
 tests = testGroup "Text"
@@ -19,26 +19,23 @@ tests = testGroup "Text"
       assertBool "should be at most limit" $
         T.length (truncateToGraphemeLimit "hello world" 5) <= 5
 
-  , testCase "calculateTweetLength plain text" $
-      calculateTweetLength "hello" @?= 5
-
-  , testCase "validateTweetLength short" $
-      fst (validateTweetLength "hello") @?= True
-
-  , testCase "fitPostToLimit within limit" $
-      fitPostToLimit "hello" 100 @?= "hello"
-
-  , testCase "calculateTweetLength counts URL as 23 chars" $
-      calculateTweetLength "check https://example.com/very/long/path out" @?=
+  , testCase "calculatePostLength with twitterLimits counts URL as 23 chars" $
+      calculatePostLength twitterLimits "check https://example.com/very/long/path out" @?=
         T.length "check https://example.com/very/long/path out"
           + (23 - T.length "https://example.com/very/long/path")
 
-  , testCase "calculateTweetLength counts short URL as 23 chars" $
-      calculateTweetLength "see https://x.co done" @?=
+  , testCase "calculatePostLength with twitterLimits counts short URL as 23 chars" $
+      calculatePostLength twitterLimits "see https://x.co done" @?=
         T.length "see https://x.co done" + (23 - T.length "https://x.co")
 
-  , testCase "calculateTweetLength no URL returns text length" $
-      calculateTweetLength "no urls here at all" @?= 19
+  , testCase "calculatePostLength with twitterLimits no URL returns text length" $
+      calculatePostLength twitterLimits "no urls here at all" @?= 19
+
+  , testCase "validatePostLength with twitterLimits short" $
+      fst (validatePostLength twitterLimits "hello") @?= True
+
+  , testCase "fitPostToLimit within limit" $
+      fitPostToLimit "hello" 100 @?= "hello"
 
   , testCase "truncateToGraphemeLimit adds ellipsis" $
       let result = truncateToGraphemeLimit "hello world" 6
@@ -96,7 +93,7 @@ tests = testGroup "Text"
   , testCase "calculatePostLength with twitterLimits adjusts URLs" $
       calculatePostLength twitterLimits "check https://example.com/very/long/path out" @?=
         T.length "check https://example.com/very/long/path out"
-          + (twitterUrlLength - T.length "https://example.com/very/long/path")
+          + (23 - T.length "https://example.com/very/long/path")
 
   , testCase "calculatePostLength with blueskyLimits does not adjust URLs" $
       calculatePostLength blueskyLimits "check https://example.com/very/long/path out" @?=

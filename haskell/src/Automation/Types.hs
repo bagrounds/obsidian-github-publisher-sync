@@ -14,9 +14,9 @@ module Automation.Types
   , EnvironmentConfig (..)
   , LinkCard (..)
   , PlatformLimits (..)
-  , ApiKey (..)
+  , Secret (..)
   , DateStr (..)
-  , mkApiKey
+  , mkSecret
   , mkDateStr
   , twitterLimits
   , blueskyLimits
@@ -29,10 +29,6 @@ module Automation.Types
   , blueskySectionHeader
   , mastodonSectionHeader
   , updatesSectionHeader
-  , twitterUrlLength
-  , twitterMaxLength
-  , blueskyMaxLength
-  , mastodonMaxLength
   , defaultGeminiModel
   , defaultQuestionModel
   , gemini3Flash
@@ -45,22 +41,11 @@ module Automation.Types
 import Data.Text (Text)
 import qualified Data.Text as T
 
-import Data.Maybe (fromMaybe)
+import Automation.Secret (Secret (..), mkSecret)
 
 --------------------------------------------------------------------------------
 -- Domain newtypes
 --------------------------------------------------------------------------------
-
-newtype ApiKey = ApiKey { unApiKey :: Text }
-  deriving (Eq)
-
-instance Show ApiKey where
-  show _ = "ApiKey <redacted>"
-
-mkApiKey :: Text -> Either Text ApiKey
-mkApiKey value
-  | T.null (T.strip value) = Left "API key must not be empty"
-  | otherwise = Right (ApiKey value)
 
 newtype DateStr = DateStr { unDateStr :: Text } deriving (Eq)
 
@@ -95,18 +80,6 @@ mastodonLimits = PlatformLimits
   { platformMaxCharacters = 500
   , platformUrlCountLength = Nothing
   }
-
-twitterUrlLength :: Int
-twitterUrlLength = fromMaybe 0 (platformUrlCountLength twitterLimits)
-
-twitterMaxLength :: Int
-twitterMaxLength = platformMaxCharacters twitterLimits
-
-blueskyMaxLength :: Int
-blueskyMaxLength = platformMaxCharacters blueskyLimits
-
-mastodonMaxLength :: Int
-mastodonMaxLength = platformMaxCharacters mastodonLimits
 
 --------------------------------------------------------------------------------
 -- Data types
@@ -157,55 +130,33 @@ data OgMetadata = OgMetadata
   } deriving (Show, Eq)
 
 data TwitterCredentials = TwitterCredentials
-  { tcApiKey :: ApiKey
-  , tcApiSecret :: Text
-  , tcAccessToken :: Text
-  , tcAccessSecret :: Text
-  } deriving (Eq)
-
-instance Show TwitterCredentials where
-  show tc = "TwitterCredentials {tcApiKey = " <> show (tcApiKey tc)
-    <> ", tcApiSecret = <redacted>, tcAccessToken = <redacted>, tcAccessSecret = <redacted>}"
+  { tcApiKey :: Secret
+  , tcApiSecret :: Secret
+  , tcAccessToken :: Secret
+  , tcAccessSecret :: Secret
+  } deriving (Show, Eq)
 
 data BlueskyCredentials = BlueskyCredentials
   { bcIdentifier :: Text
-  , bcPassword :: Text
-  } deriving (Eq)
-
-instance Show BlueskyCredentials where
-  show bc = "BlueskyCredentials {bcIdentifier = " <> show (bcIdentifier bc)
-    <> ", bcPassword = <redacted>}"
+  , bcPassword :: Secret
+  } deriving (Show, Eq)
 
 data MastodonCredentials = MastodonCredentials
   { mcInstanceUrl :: Text
-  , mcAccessToken :: Text
-  } deriving (Eq)
-
-instance Show MastodonCredentials where
-  show mc = "MastodonCredentials {mcInstanceUrl = " <> show (mcInstanceUrl mc)
-    <> ", mcAccessToken = <redacted>}"
+  , mcAccessToken :: Secret
+  } deriving (Show, Eq)
 
 data GeminiConfig = GeminiConfig
-  { gcApiKey :: ApiKey
+  { gcApiKey :: Secret
   , gcModel :: Text
   , gcQuestionModel :: Text
-  } deriving (Eq)
-
-instance Show GeminiConfig where
-  show gc = "GeminiConfig {gcApiKey = " <> show (gcApiKey gc)
-    <> ", gcModel = " <> show (gcModel gc)
-    <> ", gcQuestionModel = " <> show (gcQuestionModel gc) <> "}"
+  } deriving (Show, Eq)
 
 data ObsidianCredentials = ObsidianCredentials
-  { ocAuthToken :: Text
+  { ocAuthToken :: Secret
   , ocVaultName :: Text
-  , ocVaultPassword :: Maybe Text
-  } deriving (Eq)
-
-instance Show ObsidianCredentials where
-  show oc = "ObsidianCredentials {ocAuthToken = <redacted>, ocVaultName = "
-    <> show (ocVaultName oc) <> ", ocVaultPassword = "
-    <> (case ocVaultPassword oc of Nothing -> "Nothing"; Just _ -> "Just <redacted>") <> "}"
+  , ocVaultPassword :: Maybe Secret
+  } deriving (Show, Eq)
 
 data EnvironmentConfig = EnvironmentConfig
   { ecTwitter :: Maybe TwitterCredentials

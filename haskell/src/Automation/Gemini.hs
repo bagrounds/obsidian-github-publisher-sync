@@ -12,7 +12,7 @@ module Automation.Gemini
 
 import Automation.Json (Value (..), ToValue (..), (.=), object, encode)
 import qualified Automation.Json as Json
-import Automation.Types (ApiKey (..))
+import Automation.Types (Secret (..))
 import Data.Text (Text)
 import qualified Data.Text as T
 import qualified Data.Text.Encoding as TE
@@ -50,7 +50,7 @@ defaultGenerationConfig = GenerationConfig
 data GeminiRequest = GeminiRequest
   { grPrompt           :: Text
   , grModel            :: Text
-  , grApiKey           :: ApiKey
+  , grApiKey           :: Secret
   , grGenerationConfig :: GenerationConfig
   } deriving (Show, Eq)
 
@@ -95,7 +95,7 @@ extractText _ = Left "Response is not an object"
 
 generateContent :: Manager -> GeminiRequest -> IO (Either Text GeminiResponse)
 generateContent manager req = do
-  let url = T.unpack $ geminiEndpoint (grModel req) <> "?key=" <> unApiKey (grApiKey req)
+  let url = T.unpack $ geminiEndpoint (grModel req) <> "?key=" <> unSecret (grApiKey req)
   initReq <- parseRequest url
   let body = encode $ buildRequestBody (grPrompt req) (grGenerationConfig req)
   let httpReq = initReq
@@ -120,7 +120,7 @@ generateContent manager req = do
       "Gemini API returned status " <> T.pack (show code)
         <> ": " <> TE.decodeUtf8 (LBS.toStrict $ responseBody response)
 
-generateContentWithFallback :: Manager -> [Text] -> Text -> ApiKey -> GenerationConfig -> IO (Either Text GeminiResponse)
+generateContentWithFallback :: Manager -> [Text] -> Text -> Secret -> GenerationConfig -> IO (Either Text GeminiResponse)
 generateContentWithFallback _ [] _ _ _ = pure $ Left "No models provided for fallback"
 generateContentWithFallback manager (model : fallbacks) prompt apiKey config = do
   result <- generateContent manager GeminiRequest

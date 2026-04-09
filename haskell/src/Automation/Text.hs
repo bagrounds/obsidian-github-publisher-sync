@@ -3,9 +3,7 @@
 module Automation.Text
   ( countGraphemes
   , truncateToGraphemeLimit
-  , calculateTweetLength
   , calculatePostLength
-  , validateTweetLength
   , validatePostLength
   , fitPostToLimit
   , wordJaccardSimilarity
@@ -16,7 +14,7 @@ import qualified Data.Set as Set
 import Data.Text (Text)
 import qualified Data.Text as T
 
-import Automation.Types (PlatformLimits (..), twitterLimits)
+import Automation.Types (PlatformLimits (..))
 
 countGraphemes :: Text -> Int
 countGraphemes = T.length
@@ -45,16 +43,10 @@ calculatePostLength limits text =
           urlLengthDelta = sum (fmap (\url -> urlLen - T.length url) urls)
       in T.length text + urlLengthDelta
 
-calculateTweetLength :: Text -> Int
-calculateTweetLength = calculatePostLength twitterLimits
-
 validatePostLength :: PlatformLimits -> Text -> (Bool, Int)
 validatePostLength limits text =
   let len = calculatePostLength limits text
   in (len <= platformMaxCharacters limits, len)
-
-validateTweetLength :: Text -> (Bool, Int)
-validateTweetLength = validatePostLength twitterLimits
 
 findLastIndex :: (a -> Int -> Bool) -> [a] -> Int
 findLastIndex p xs = go (length xs - 1) (reverse xs)

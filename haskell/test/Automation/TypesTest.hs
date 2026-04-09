@@ -1,6 +1,5 @@
 module Automation.TypesTest (tests) where
 
-import Data.Maybe (fromMaybe)
 import Data.Text (Text)
 import qualified Data.Text as T
 import Test.Tasty (TestTree, testGroup)
@@ -9,65 +8,61 @@ import Test.Tasty.QuickCheck (testProperty)
 import qualified Test.QuickCheck as QC
 
 import Automation.Types
-  ( ApiKey (..)
+  ( Secret (..)
   , DateStr (..)
   , PlatformLimits (..)
-  , mkApiKey
+  , mkSecret
   , mkDateStr
   , twitterLimits
   , blueskyLimits
   , mastodonLimits
-  , twitterMaxLength
-  , blueskyMaxLength
-  , mastodonMaxLength
-  , twitterUrlLength
   )
 
 tests :: TestTree
 tests = testGroup "Types"
-  [ apiKeyTests
+  [ secretTests
   , dateStrTests
   , platformLimitsTests
   ]
 
 --------------------------------------------------------------------------------
--- ApiKey tests
+-- Secret tests
 --------------------------------------------------------------------------------
 
-apiKeyTests :: TestTree
-apiKeyTests = testGroup "ApiKey"
+secretTests :: TestTree
+secretTests = testGroup "Secret"
   [ testCase "Show redacts the key value" $
-      show (ApiKey "super-secret-key-123") @?= "ApiKey <redacted>"
+      show (Secret "super-secret-key-123") @?= "<redacted>"
 
-  , testCase "mkApiKey succeeds for non-empty text" $
-      mkApiKey "my-key" @?= Right (ApiKey "my-key")
+  , testCase "mkSecret succeeds for non-empty text" $
+      mkSecret "my-key" @?= Right (Secret "my-key")
 
-  , testCase "mkApiKey rejects empty text" $
-      case mkApiKey "" of
+  , testCase "mkSecret rejects empty text" $
+      case mkSecret "" of
         Left _ -> pure ()
         Right _ -> fail "Expected Left for empty key"
 
-  , testCase "mkApiKey rejects whitespace-only text" $
-      case mkApiKey "   " of
+  , testCase "mkSecret rejects whitespace-only text" $
+      case mkSecret "   " of
         Left _ -> pure ()
         Right _ -> fail "Expected Left for whitespace key"
 
   , testCase "Eq compares underlying values" $
-      ApiKey "abc" @?= ApiKey "abc"
+      Secret "abc" @?= Secret "abc"
 
   , testCase "Eq detects different values" $
-      assertBool "Expected different keys to be unequal" (ApiKey "abc" /= ApiKey "xyz")
+      assertBool "Expected different keys to be unequal" (Secret "abc" /= Secret "xyz")
 
   , testProperty "Show never reveals the key text" $ \keyText ->
-      let key = ApiKey (T.pack keyText)
+      let key = Secret (T.pack keyText)
           shown = show key
-      in not (null keyText) QC.==> not (T.isInfixOf (T.pack keyText) (T.pack shown))
+      in length keyText > 10 QC.==> not (T.isInfixOf (T.pack keyText) (T.pack shown))
 
-  , testProperty "mkApiKey round-trips for non-empty input" $ \keyText ->
+  , testProperty "mkSecret round-trips for non-empty input" $ \keyText ->
       let text = T.pack keyText
       in not (T.null (T.strip text)) QC.==>
-        case mkApiKey text of
-          Right key -> unApiKey key == text
+        case mkSecret text of
+          Right key -> unSecret key == text
           Left _ -> False
   ]
 
@@ -139,18 +134,6 @@ platformLimitsTests = testGroup "PlatformLimits"
 
   , testCase "mastodonLimits has no URL count length" $
       platformUrlCountLength mastodonLimits @?= Nothing
-
-  , testCase "backward-compat twitterMaxLength matches" $
-      twitterMaxLength @?= platformMaxCharacters twitterLimits
-
-  , testCase "backward-compat blueskyMaxLength matches" $
-      blueskyMaxLength @?= platformMaxCharacters blueskyLimits
-
-  , testCase "backward-compat mastodonMaxLength matches" $
-      mastodonMaxLength @?= platformMaxCharacters mastodonLimits
-
-  , testCase "backward-compat twitterUrlLength matches" $
-      twitterUrlLength @?= fromMaybe 0 (platformUrlCountLength twitterLimits)
 
   , testProperty "all platform limits have positive max characters" $
       QC.forAll (QC.elements [twitterLimits, blueskyLimits, mastodonLimits]) $

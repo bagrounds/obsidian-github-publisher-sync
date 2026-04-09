@@ -10,6 +10,9 @@ Channel: The Michael Fanone Show
 tags:
 youtube: https://youtu.be/5ddX7jA8mbw
 updated: 2026-03-15T10:07:30.345Z
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_time: 2026-04-04T00:00:00Z
+force_analyze_links: false
 ---
 [Home](../index.md) > [Videos](./index.md)  
 # 🚨👮‍♂️🤫🇺🇸👥⚔️😠 ICE Agents EVERYWHERE Are Secretly REVOLTING Against TRUMP🚨  

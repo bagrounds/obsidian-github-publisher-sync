@@ -51,9 +51,10 @@ secretTests = testGroup "Secret"
       assertBool "Expected different keys to be unequal" (Secret "abc" /= Secret "xyz")
 
   , testProperty "Show never reveals the key text" $ \secretText ->
-      let key = Secret (T.pack secretText)
+      let text = T.pack secretText
+          key = Secret text
           shown = show key
-      in length secretText > 10 QC.==> not (T.isInfixOf (T.pack secretText) (T.pack shown))
+      in T.length text > 10 QC.==> not (T.isInfixOf text (T.pack shown))
 
   , testProperty "mkSecret round-trips for non-empty input" $ \secretText ->
       let text = T.pack secretText

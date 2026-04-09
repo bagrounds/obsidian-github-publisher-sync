@@ -16,7 +16,7 @@ URL: https://bagrounds.org/ai-blog/2026-04-08-2-domain-types-for-safety-and-clar
 
 ## 🔐 Secret: Sensitive Values That Cannot Leak
 
-🛡️ The most impactful change was introducing a Secret newtype in a dedicated Automation.Secret module. 📦 Secret wraps Text with a custom Show instance that always displays just the word redacted in angle brackets.
+🛡️ The most impactful change was introducing a Secret newtype in a dedicated Automation.Secret module. 📦 Secret wraps Text with a custom Show instance that always outputs the fixed string "angle-bracket redacted angle-bracket" instead of the actual value.
 
 🔍 Previously, every config type that held an API key, password, or access token used plain Text. 😱 If any logging statement accidentally printed a credential value, the raw secret would appear in the logs.
 

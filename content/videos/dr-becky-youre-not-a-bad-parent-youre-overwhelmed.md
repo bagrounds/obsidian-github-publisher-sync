@@ -9,6 +9,9 @@ Platform:
 Channel: Trevor Noah
 tags:
 youtube: https://youtu.be/8IWUaRf4aQY
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_time: 2026-04-07T00:00:00Z
+force_analyze_links: false
 ---
 [Home](../index.md) > [Videos](./index.md)  
 # 😩🤯🍼 Dr. Becky: You’re Not a Bad Parent, You’re Overwhelmed  
@@ -60,5 +63,5 @@ youtube: https://youtu.be/8IWUaRf4aQY
   
 ### 🎨 Creatively Related  
   
-* 📚 Self-Compassion by Kristin Neff teaches the internal tools necessary for parents to heal their own self-talk as they break generational cycles.  
+* 📚 [💗 Self-Compassion](../books/self-compassion.md) by Kristin Neff teaches the internal tools necessary for parents to heal their own self-talk as they break generational cycles.  
 * [🤕🎼🧠 The Body Keeps the Score: Brain, Mind, and Body in the Healing of Trauma](../books/the-body-keeps-the-score-brain-mind-and-body-in-the-healing-of-trauma.md) by Bessel van der Kolk explores how past trauma lives in the nervous system and influences modern reactions.

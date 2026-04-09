@@ -4,6 +4,9 @@ aliases:
   - 🐑🎀 Mary Had a Little Lamb
 title: 🐑🎀 Mary Had a Little Lamb
 URL: https://bagrounds.org/topics/mary-had-a-little-lamb
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_time: 2026-04-07T00:00:00Z
+force_analyze_links: false
 ---
 [Home](../index.md) > [Topics](./index.md) > [🧸🎶🧸 Nursery Rhymes](./nursery-rhymes.md)  
 # 🐑🎀 Mary Had a Little Lamb  

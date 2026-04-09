@@ -9,10 +9,8 @@ import qualified Test.QuickCheck as QC
 
 import Automation.Types
   ( Secret (..)
-  , DateStr (..)
   , PlatformLimits (..)
   , mkSecret
-  , mkDateStr
   , twitterLimits
   , blueskyLimits
   , mastodonLimits
@@ -21,7 +19,6 @@ import Automation.Types
 tests :: TestTree
 tests = testGroup "Types"
   [ secretTests
-  , dateStrTests
   , platformLimitsTests
   ]
 
@@ -65,51 +62,6 @@ secretTests = testGroup "Secret"
           Right key -> unSecret key == text
           Left _ -> False
   ]
-
---------------------------------------------------------------------------------
--- DateStr tests
---------------------------------------------------------------------------------
-
-dateStrTests :: TestTree
-dateStrTests = testGroup "DateStr"
-  [ testCase "mkDateStr succeeds for valid date" $
-      mkDateStr "2026-04-08" @?= Right (DateStr "2026-04-08")
-
-  , testCase "mkDateStr rejects short string" $
-      case mkDateStr "2026-04" of
-        Left _ -> pure ()
-        Right _ -> fail "Expected Left for short date"
-
-  , testCase "mkDateStr rejects wrong separators" $
-      case mkDateStr "2026/04/08" of
-        Left _ -> pure ()
-        Right _ -> fail "Expected Left for wrong separators"
-
-  , testCase "mkDateStr rejects long string" $
-      case mkDateStr "2026-04-08X" of
-        Left _ -> pure ()
-        Right _ -> fail "Expected Left for long date"
-
-  , testCase "Show displays the date value" $
-      show (DateStr "2026-04-08") @?= "DateStr \"2026-04-08\""
-
-  , testCase "unDateStr extracts the value" $
-      unDateStr (DateStr "2026-04-08") @?= "2026-04-08"
-
-  , testProperty "mkDateStr round-trips valid YYYY-MM-DD dates" $ do
-      year <- QC.choose (2000 :: Int, 2099)
-      month <- QC.choose (1 :: Int, 12)
-      day <- QC.choose (1 :: Int, 28)
-      let dateText = T.pack $ show year <> "-" <> padTwo month <> "-" <> padTwo day
-      pure $ case mkDateStr dateText of
-        Right ds -> unDateStr ds == dateText
-        Left _ -> False
-  ]
-
-padTwo :: Int -> String
-padTwo n
-  | n < 10   = "0" <> show n
-  | otherwise = show n
 
 --------------------------------------------------------------------------------
 -- PlatformLimits tests

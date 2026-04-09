@@ -1,10 +1,9 @@
 module Automation.BlogPrompt
   ( BlogContext (..)
   , Slug (..)
-  , DateStr (..)
   , DisplayTitle (..)
   , mkSlug
-  , mkDateStr
+  , formatDay
   , stripEmbedSections
   , buildBlogPrompt
   , filterCommentsAfterLastPost
@@ -13,7 +12,6 @@ module Automation.BlogPrompt
   , assembleFrontmatter
   , buildDisplayTitle
   , sanitizeTitle
-  , todayPacific
   , todayPacificDay
   , recapInstructions
   ) where
@@ -45,10 +43,8 @@ import Automation.BlogPosts (BlogPost (..))
 import Automation.BlogSeriesConfig (BlogSeriesConfig (..))
 import Automation.Frontmatter (quoteYamlValue)
 import Automation.Types
-  ( DateStr (..)
-  , blueskySectionHeader
+  ( blueskySectionHeader
   , mastodonSectionHeader
-  , mkDateStr
   , tweetSectionHeader
   )
 
@@ -70,7 +66,7 @@ data BlogContext = BlogContext
   , bcxAgentsMd      :: Text
   , bcxPreviousPosts :: [BlogPost]
   , bcxComments      :: [BlogComment]
-  , bcxToday         :: DateStr
+  , bcxToday         :: Day
   } deriving (Show, Eq)
 
 stripEmbedSections :: Text -> Text
@@ -109,9 +105,9 @@ buildForwardLink series filename =
   let slug = fromMaybe filename (T.stripSuffix ".md" filename)
   in "[[" <> bscId series <> "/" <> slug <> "|⏭️]]"
 
-buildDisplayTitle :: BlogSeriesConfig -> DateStr -> Text -> DisplayTitle
-buildDisplayTitle series (DateStr today) title =
-  DisplayTitle $ today <> " | " <> bscIcon series <> " " <> title <> " " <> bscIcon series
+buildDisplayTitle :: BlogSeriesConfig -> Day -> Text -> DisplayTitle
+buildDisplayTitle series today title =
+  DisplayTitle $ formatDay today <> " | " <> bscIcon series <> " " <> title <> " " <> bscIcon series
 
 sanitizeTitle :: BlogSeriesConfig -> Text -> Text
 sanitizeTitle series raw =
@@ -137,10 +133,10 @@ sanitizeTitle series raw =
           in fromMaybe (T.stripStart afterDate) tryStrip
         Nothing -> s
 
-assembleFrontmatter :: BlogSeriesConfig -> DateStr -> Text -> Slug -> Text
-assembleFrontmatter series dateStr title slug =
-  let (DisplayTitle displayTitle) = buildDisplayTitle series dateStr title
-      url = bscBaseUrl series <> "/" <> unDateStr dateStr <> "-" <> unSlug slug
+assembleFrontmatter :: BlogSeriesConfig -> Day -> Text -> Slug -> Text
+assembleFrontmatter series day title slug =
+  let (DisplayTitle displayTitle) = buildDisplayTitle series day title
+      url = bscBaseUrl series <> "/" <> formatDay day <> "-" <> unSlug slug
   in T.intercalate "\n"
     [ "---"
     , "share: true"
@@ -152,13 +148,8 @@ assembleFrontmatter series dateStr title slug =
     , "---"
     ]
 
-todayPacific :: IO DateStr
-todayPacific = do
-  utcNow <- getCurrentTime
-  let tz = pacificTimeZone utcNow
-      localTime = utcToLocalTime tz utcNow
-      day = localDay localTime
-  pure $ DateStr $ T.pack $ formatTime defaultTimeLocale "%Y-%m-%d" day
+formatDay :: Day -> Text
+formatDay = T.pack . formatTime defaultTimeLocale "%Y-%m-%d"
 
 todayPacificDay :: IO Day
 todayPacificDay = do
@@ -167,26 +158,23 @@ todayPacificDay = do
       localTime = utcToLocalTime tz utcNow
   pure $ localDay localTime
 
-recapInstructions :: DateStr -> Text
-recapInstructions (DateStr dateStr) =
-  case parseDate dateStr of
-    Nothing  -> ""
-    Just day ->
-      let dow = dayOfWeek day
-          (_, month, dayNum) = toGregorian day
-          nextDay = addDays 1 day
-          (_, nextMonth, _) = toGregorian nextDay
-          isSunday = dow == Sunday
-          isLastDayOfMonth = nextMonth /= month
-          isLastDayOfQuarter = isLastDayOfMonth && month `elem` [3, 6, 9, 12]
-          isLastDayOfYear = month == 12 && dayNum == 31
-          instructions = filter (not . T.null)
-            [ if isSunday then weeklyRecap else ""
-            , if isLastDayOfMonth then monthlyRecap else ""
-            , if isLastDayOfQuarter then quarterlyRecap else ""
-            , if isLastDayOfYear then yearlyRecap else ""
-            ]
-      in T.intercalate "\n\n" instructions
+recapInstructions :: Day -> Text
+recapInstructions day =
+  let dow = dayOfWeek day
+      (_, month, dayNum) = toGregorian day
+      nextDay = addDays 1 day
+      (_, nextMonth, _) = toGregorian nextDay
+      isSunday = dow == Sunday
+      isLastDayOfMonth = nextMonth /= month
+      isLastDayOfQuarter = isLastDayOfMonth && month `elem` [3, 6, 9, 12]
+      isLastDayOfYear = month == 12 && dayNum == 31
+      instructions = filter (not . T.null)
+        [ if isSunday then weeklyRecap else ""
+        , if isLastDayOfMonth then monthlyRecap else ""
+        , if isLastDayOfQuarter then quarterlyRecap else ""
+        , if isLastDayOfYear then yearlyRecap else ""
+        ]
+  in T.intercalate "\n\n" instructions
 
 defaultSystemPrompt :: Text
 defaultSystemPrompt = "You are a creative blog writer. Write engaging, thoughtful blog posts."
@@ -198,7 +186,7 @@ buildUserPrompt ctx =
       comments = bcxComments ctx
       today = bcxToday ctx
       header = "Write the next blog post for the " <> bscName series <> " series."
-        <> "\nToday's date: " <> unDateStr today
+        <> "\nToday's date: " <> formatDay today
         <> "\n\nIMPORTANT: Your heading (# or ##) must contain ONLY the creative title."
         <> " Do not include dates, pipe separators, or the series icon emoji in your heading."
         <> " The system adds date and icon formatting automatically."

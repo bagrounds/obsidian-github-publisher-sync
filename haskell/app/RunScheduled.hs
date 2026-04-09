@@ -9,7 +9,7 @@ import Data.Maybe (fromMaybe, mapMaybe)
 import Data.Text (Text)
 import qualified Data.Text as T
 import qualified Data.Text.IO as TIO
-import Data.Time (addDays, defaultTimeLocale, formatTime, fromGregorian, getCurrentTime)
+import Data.Time (addDays, defaultTimeLocale, formatTime, getCurrentTime)
 import Network.HTTP.Client (Manager, newManager)
 import Network.HTTP.Client.TLS (tlsManagerSettings)
 import System.Directory (createDirectoryIfMissing, doesDirectoryExist, doesFileExist, listDirectory, removeFile)
@@ -36,9 +36,10 @@ import Automation.BlogPrompt
   , buildBackLink
   , buildBlogPrompt
   , buildDisplayTitle
+  , formatDay
   , mkSlug
   , sanitizeTitle
-  , todayPacific
+  , todayPacificDay
   )
 import Automation.BlogSeries
   ( appendModelSignature
@@ -83,7 +84,7 @@ import Automation.Scheduler
   , taskIdFromText
   , taskIdToText
   )
-import Automation.Types (Secret (..), DateStr (..))
+import Automation.Types (Secret (..))
 import qualified Automation.InternalLinking as IL
 import Automation.SocialPosting (autoPost)
 import Automation.Text (wordJaccardSimilarity)
@@ -389,22 +390,8 @@ extractRecentCreativeTitles reflectionsDir today = do
 
 yesterdayPacific :: IO Text
 yesterdayPacific = do
-  today <- todayPacific
-  -- Simple: parse the date, subtract 1 day
-  let (y, m, d) = parseYMD (unDateStr today)
-  pure $ formatYMD (addDaysToYMD (-1) y m d)
-  where
-    parseYMD t =
-      let parts = T.splitOn "-" t
-      in case parts of
-           [y, m, d] -> (read (T.unpack y) :: Integer, read (T.unpack m) :: Int, read (T.unpack d) :: Int)
-           _ -> (2026, 1, 1)
-    addDaysToYMD n y m d =
-      let day = fromGregorian y m d
-          newDay = addDays n day
-      in newDay
-    formatYMD day =
-      T.pack $ formatTime defaultTimeLocale "%Y-%m-%d" day
+  today <- todayPacificDay
+  pure $ formatDay (addDays (-1) today)
 
 -- ---------------------------------------------------------------------------
 -- Task runners
@@ -421,10 +408,8 @@ runBlogSeries manager repoRoot vaultDir seriesId = do
     Nothing -> error $ "No run config for series: " <> T.unpack seriesId
 
   apiKey <- requireSecret "GEMINI_API_KEY"
-  today <- todayPacific
-  let todayText = unDateStr today
-
-  -- 1. Copy vault posts for this series to local repo
+  today <- todayPacificDay
+  let todayText = formatDay today
   _ <- copySeriesPosts vaultDir seriesId repoRoot
 
   -- 2. Check regeneration or already exists
@@ -559,8 +544,8 @@ runBackfillImages :: Manager -> FilePath -> FilePath -> IO ()
 runBackfillImages manager repoRoot vaultDir = do
   logMsg "▶️  backfill-blog-images"
 
-  today <- todayPacific
-  let todayText = unDateStr today
+  today <- todayPacificDay
+  let todayText = formatDay today
 
   -- 1. Sync new AI blog posts from repo to vault (copy-if-missing only)
   let repoAiBlogDir = repoRoot </> "ai-blog"
@@ -652,8 +637,8 @@ runInternalLinking manager vaultDir = do
   case modifiedResults of
     [] -> pure ()
     _  -> do
-      today <- todayPacific
-      let todayText = unDateStr today
+      today <- todayPacificDay
+      let todayText = formatDay today
           reflectionsDir = vaultDir </> "reflections"
       links <- traverse (\fr -> do
         title <- extractTitleFromFile (vaultDir </> T.unpack (IL.frRelativePath fr))
@@ -677,8 +662,8 @@ runAiFiction manager vaultDir = do
   logMsg "▶️  ai-fiction"
 
   apiKey <- requireSecret "GEMINI_API_KEY"
-  today <- todayPacific
-  let todayText = unDateStr today
+  today <- todayPacificDay
+  let todayText = formatDay today
 
   let reflectionsDir = vaultDir </> "reflections"
       reflectionPath = reflectionsDir </> T.unpack todayText <> ".md"
@@ -723,8 +708,8 @@ runReflectionTitle manager vaultDir = do
   logMsg "▶️  reflection-title"
 
   apiKey <- requireSecret "GEMINI_API_KEY"
-  today <- todayPacific
-  let todayText = unDateStr today
+  today <- todayPacificDay
+  let todayText = formatDay today
   yesterday <- yesterdayPacific
 
   let reflectionsDir = vaultDir </> "reflections"

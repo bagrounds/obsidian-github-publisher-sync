@@ -29,7 +29,7 @@ module Automation.InternalLinking
   , run
   ) where
 
-import Automation.BlogPrompt (todayPacific)
+import Automation.BlogPrompt (formatDay, todayPacificDay)
 import Automation.Frontmatter (YamlValue (..), parseFrontmatter, renderYamlValue)
 import Automation.Gemini
   ( GenerationConfig (..)
@@ -39,7 +39,7 @@ import Automation.Gemini
   )
 import Automation.Json (decode)
 import Automation.Reflection (selectMostRecentReflection)
-import Automation.Types (Secret (..), DateStr (..))
+import Automation.Types (Secret (..))
 import Control.Concurrent (threadDelay)
 import Data.Char (ord)
 import Data.IORef (IORef, modifyIORef', newIORef, readIORef)
@@ -894,8 +894,8 @@ makeRelPathFromContentDir contentDir filePath =
 
 nowIso :: IO Text
 nowIso = do
-  today <- todayPacific
-  pure (unDateStr today <> "T00:00:00Z")
+  today <- todayPacificDay
+  pure (formatDay today <> "T00:00:00Z")
 
 -- --------------------------------------------------------------------------
 -- Orchestration

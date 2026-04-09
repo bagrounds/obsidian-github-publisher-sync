@@ -15,9 +15,7 @@ module Automation.Types
   , LinkCard (..)
   , PlatformLimits (..)
   , Secret (..)
-  , DateStr (..)
   , mkSecret
-  , mkDateStr
   , twitterLimits
   , blueskyLimits
   , mastodonLimits
@@ -39,24 +37,12 @@ module Automation.Types
   ) where
 
 import Data.Text (Text)
-import qualified Data.Text as T
 
 import Automation.Secret (Secret (..), mkSecret)
 
 --------------------------------------------------------------------------------
 -- Domain newtypes
 --------------------------------------------------------------------------------
-
-newtype DateStr = DateStr { unDateStr :: Text } deriving (Eq)
-
-instance Show DateStr where
-  show (DateStr value) = "DateStr " <> show value
-
-mkDateStr :: Text -> Either Text DateStr
-mkDateStr value
-  | T.length value /= 10 = Left ("Invalid date length: " <> value)
-  | T.index value 4 /= '-' || T.index value 7 /= '-' = Left ("Invalid date separators: " <> value)
-  | otherwise = Right (DateStr value)
 
 data PlatformLimits = PlatformLimits
   { platformMaxCharacters :: Int

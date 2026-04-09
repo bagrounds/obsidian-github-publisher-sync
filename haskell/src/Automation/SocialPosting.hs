@@ -1,9 +1,16 @@
 module Automation.SocialPosting
   ( Platform (..)
+  , SocialPost (..)
   , ContentNote (..)
   , ContentToPost (..)
   , PostedNote (..)
   , FindContentConfig (..)
+  , socialPostContent
+  , socialPostPlatform
+  , mkTweet
+  , mkBlueskyPost
+  , mkMastodonPost
+  , mkSocialPost
   , autoPost
   , discoverContentToPost
   , bfsContentDiscovery
@@ -66,7 +73,7 @@ import Automation.EmbedSection
   )
 import Automation.Env (validateEnvironment)
 import Automation.Frontmatter (parseFrontmatter, quoteYamlValue)
-import Automation.BlogPrompt (todayPacific)
+import Automation.BlogPrompt (formatDay, todayPacificDay)
 import Automation.Gemini
   ( GenerationConfig (..)
   , GeminiResponse (..)
@@ -80,7 +87,7 @@ import Automation.Platforms.OgMetadata (fetchOgMetadata)
 import Automation.Platforms.Twitter (postTweet, getEmbedHtml)
 import Automation.Prompts (PromptPair (..), assemblePost, buildQuestionPrompt, buildShortenQuestionPrompt, buildTagsPrompt)
 import Automation.Reflection (findMostRecentReflection)
-import Automation.Text (fitPostToLimit)
+import Automation.Text (calculatePostLength, fitPostToLimit)
 import Automation.Types
 
 --------------------------------------------------------------------------------
@@ -89,6 +96,48 @@ import Automation.Types
 
 data Platform = Twitter | Bluesky | Mastodon
   deriving (Show, Eq, Ord)
+
+data SocialPost
+  = Tweet Text
+  | BlueskyPost Text
+  | MastodonPost Text
+  deriving (Show, Eq)
+
+socialPostContent :: SocialPost -> Text
+socialPostContent (Tweet text) = text
+socialPostContent (BlueskyPost text) = text
+socialPostContent (MastodonPost text) = text
+
+socialPostPlatform :: SocialPost -> Platform
+socialPostPlatform (Tweet _) = Twitter
+socialPostPlatform (BlueskyPost _) = Bluesky
+socialPostPlatform (MastodonPost _) = Mastodon
+
+mkTweet :: Text -> Either Text SocialPost
+mkTweet text
+  | calculatePostLength twitterLimits text > platformMaxCharacters twitterLimits =
+      Left $ "Tweet exceeds " <> T.pack (show (platformMaxCharacters twitterLimits))
+        <> " characters (actual: " <> T.pack (show (calculatePostLength twitterLimits text)) <> ")"
+  | otherwise = Right (Tweet text)
+
+mkBlueskyPost :: Text -> Either Text SocialPost
+mkBlueskyPost text
+  | calculatePostLength blueskyLimits text > platformMaxCharacters blueskyLimits =
+      Left $ "Bluesky post exceeds " <> T.pack (show (platformMaxCharacters blueskyLimits))
+        <> " characters (actual: " <> T.pack (show (calculatePostLength blueskyLimits text)) <> ")"
+  | otherwise = Right (BlueskyPost text)
+
+mkMastodonPost :: Text -> Either Text SocialPost
+mkMastodonPost text
+  | calculatePostLength mastodonLimits text > platformMaxCharacters mastodonLimits =
+      Left $ "Mastodon post exceeds " <> T.pack (show (platformMaxCharacters mastodonLimits))
+        <> " characters (actual: " <> T.pack (show (calculatePostLength mastodonLimits text)) <> ")"
+  | otherwise = Right (MastodonPost text)
+
+mkSocialPost :: Platform -> Text -> Either Text SocialPost
+mkSocialPost Twitter = mkTweet
+mkSocialPost Bluesky = mkBlueskyPost
+mkSocialPost Mastodon = mkMastodonPost
 
 platformDetail :: Platform -> Text
 platformDetail Twitter  = "🐦 posted to Twitter"
@@ -843,8 +892,9 @@ autoPost manager vaultDir = do
   postedNotes <- runPostingPipeline manager env apiKey vaultDir
 
   let reflectionsDir = vaultDir </> "reflections"
-  DateStr todayStr <- todayPacific
-  let updateLinks = fmap (\pn ->
+  today <- todayPacificDay
+  let todayStr = formatDay today
+      updateLinks = fmap (\pn ->
         let details = fmap platformDetail (pnPlatforms pn)
         in UpdateLink (cnRelativePath (pnNote pn)) (cnTitle (pnNote pn)) details
         ) postedNotes

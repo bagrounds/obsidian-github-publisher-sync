@@ -35,6 +35,7 @@ tests = testGroup "SocialPosting"
   , bfsTests
   , urlValidationTests
   , selectMostRecentReflectionTests
+  , socialPostTests
   ]
 
 --------------------------------------------------------------------------------
@@ -681,4 +682,79 @@ selectMostRecentReflectionTests = testGroup "selectMostRecentReflection"
   , testCase "ignores date files without .md extension" $
       assertEqual "" (Just "reflections/2025-06-15.md")
         (selectMostRecentReflection ["2025-01-01.txt", "2025-06-15.md"])
+  ]
+
+--------------------------------------------------------------------------------
+-- SocialPost smart constructor tests
+--------------------------------------------------------------------------------
+
+socialPostTests :: TestTree
+socialPostTests = testGroup "SocialPost"
+  [ testCase "mkTweet accepts text under 280 chars" $
+      case mkTweet "Hello, world!" of
+        Right (Tweet content) -> assertEqual "" "Hello, world!" content
+        Left err -> assertBool ("unexpected rejection: " <> T.unpack err) False
+
+  , testCase "mkTweet rejects text over 280 chars" $
+      let longText = T.replicate 281 "a"
+      in case mkTweet longText of
+        Left _ -> pure ()
+        Right _ -> assertBool "expected rejection for 281 chars" False
+
+  , testCase "mkBlueskyPost accepts text under 300 chars" $
+      case mkBlueskyPost "Hello from Bluesky!" of
+        Right (BlueskyPost content) -> assertEqual "" "Hello from Bluesky!" content
+        Left err -> assertBool ("unexpected rejection: " <> T.unpack err) False
+
+  , testCase "mkBlueskyPost rejects text over 300 chars" $
+      let longText = T.replicate 301 "b"
+      in case mkBlueskyPost longText of
+        Left _ -> pure ()
+        Right _ -> assertBool "expected rejection for 301 chars" False
+
+  , testCase "mkMastodonPost accepts text under 500 chars" $
+      case mkMastodonPost "Hello from Mastodon!" of
+        Right (MastodonPost content) -> assertEqual "" "Hello from Mastodon!" content
+        Left err -> assertBool ("unexpected rejection: " <> T.unpack err) False
+
+  , testCase "mkMastodonPost rejects text over 500 chars" $
+      let longText = T.replicate 501 "c"
+      in case mkMastodonPost longText of
+        Left _ -> pure ()
+        Right _ -> assertBool "expected rejection for 501 chars" False
+
+  , testCase "socialPostContent extracts text from Tweet" $
+      assertEqual "" "hello" (socialPostContent (Tweet "hello"))
+
+  , testCase "socialPostContent extracts text from BlueskyPost" $
+      assertEqual "" "sky" (socialPostContent (BlueskyPost "sky"))
+
+  , testCase "socialPostContent extracts text from MastodonPost" $
+      assertEqual "" "toot" (socialPostContent (MastodonPost "toot"))
+
+  , testCase "socialPostPlatform returns correct platform" $ do
+      assertEqual "Tweet" Twitter (socialPostPlatform (Tweet "x"))
+      assertEqual "BlueskyPost" Bluesky (socialPostPlatform (BlueskyPost "x"))
+      assertEqual "MastodonPost" Mastodon (socialPostPlatform (MastodonPost "x"))
+
+  , testCase "mkSocialPost dispatches to correct constructor" $ do
+      assertEqual "Twitter" (Right (Tweet "hi")) (mkSocialPost Twitter "hi")
+      assertEqual "Bluesky" (Right (BlueskyPost "hi")) (mkSocialPost Bluesky "hi")
+      assertEqual "Mastodon" (Right (MastodonPost "hi")) (mkSocialPost Mastodon "hi")
+
+  , testProperty "mkSocialPost always succeeds for text under minimum platform limit" $
+      QC.forAll (QC.elements [Twitter, Bluesky, Mastodon]) $ \platform ->
+        QC.forAll (QC.choose (0, 279)) $ \len ->
+          let text = T.replicate len "x"
+          in case mkSocialPost platform text of
+            Right _ -> True
+            Left _ -> False
+
+  , testProperty "socialPostContent returns original text for valid inputs" $
+      QC.forAll (QC.elements [Twitter, Bluesky, Mastodon]) $ \platform ->
+        QC.forAll (QC.choose (0, 50)) $ \len ->
+          let text = T.replicate len "a"
+          in case mkSocialPost platform text of
+            Right post -> socialPostContent post == text
+            Left _ -> False
   ]

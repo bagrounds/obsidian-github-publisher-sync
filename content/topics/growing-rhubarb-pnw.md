@@ -10,9 +10,13 @@ tags:
 link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-05T00:00:00Z
 force_analyze_links: false
+image_date: 2026-04-09T10:30:53Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A close-up, high-angle shot of a vibrant, mature rhubarb plant nestled in a lush Pacific Northwest garden. The focus is on the contrast between the deep, glossy ruby-red stalks and the broad, crinkled, emerald-green leaves. Droplets of morning dew cling to the foliage, catching the soft, diffused light typical of a maritime spring. In the background, slightly out of focus, are dark, rich soil and soft-focus ferns or moss-covered garden stones, evoking a sense of established, long-lived growth. The overall color palette is earthy and rich, emphasizing the health and longevity of the plant, with a shallow depth of field that makes the texture of the stalks pop against the soft, misty garden setting.
 ---
 [Home](../index.md) > [Topics](./index.md)  
 # 🌿🐚 Growing Centenarian Rhubarb in the PNW  
+![topics-growing-rhubarb-pnw](../topics-growing-rhubarb-pnw.jpg)  
   
 ## 🤖 AI Summary  
   

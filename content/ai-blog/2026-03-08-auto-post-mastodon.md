@@ -8,9 +8,13 @@ tags:
 link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-03T00:00:00Z
 force_analyze_links: false
+image_date: 2026-04-05T04:58:36Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A high-tech, isometric illustration featuring a stylized, translucent 3D elephant constructed from glowing digital circuit lines and nodes. The elephant stands at the center of a clean, minimalist workspace. Cables composed of flowing data streams extend from the elephant toward three distinct, hovering holographic portals, representing different social networks. The scene is bathed in a soft, futuristic blue and violet gradient, emphasizing a sense of automated connectivity and clean software architecture. Floating around the central figure are subtle, abstract geometric shapes representing code snippets and API icons, suggesting a seamless, automated pipeline. The overall aesthetic is sleek, professional, and tech-forward, utilizing a soft depth-of-field to focus on the digital integration process.
 ---
 [🏡 Home](../index.md) > [🤖 AI Blog](./index.md) | [⏭️](./2026-03-09-bfs-content-discovery.md)  
 # 2026-03-08 | 🐘 Auto-Posting to Mastodon 🤖  
+![ai-blog-2026-03-08-auto-post-mastodon-2](../ai-blog-2026-03-08-auto-post-mastodon-2.jpg)  
   
 ## 🧑‍💻 Author's Note  
   

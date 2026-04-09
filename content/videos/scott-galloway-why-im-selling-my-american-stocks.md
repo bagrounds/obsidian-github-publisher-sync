@@ -9,6 +9,9 @@ Platform:
 Channel: My First Million
 tags:
 youtube: https://youtu.be/cxvwSLSRpfU
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_time: 2026-04-07T00:00:00Z
+force_analyze_links: false
 ---
 [Home](../index.md) > [Videos](./index.md)  
 # 💸📉🇺🇸 Scott Galloway: Why I'm selling my American stocks  
@@ -29,7 +32,7 @@ youtube: https://youtu.be/cxvwSLSRpfU
   
 ## 🤔 Evaluation  
   
-* 🏛️ The call for a unified income tax rate aligns with concepts explored in The Triumph of Injustice by Emmanuel Saez and Gabriel Zucman from W. W. Norton & Company, which argues that the current tax system disproportionately benefits capital over labor.  
+* 🏛️ The call for a unified income tax rate aligns with concepts explored in [💰➡️ The Triumph of Injustice: How the Rich Dodge Taxes and How to Make Them Pay](../books/the-triumph-of-injustice-how-the-rich-dodge-taxes-and-how-to-make-them-pay.md) by Emmanuel Saez and Gabriel Zucman from W. W. Norton & Company, which argues that the current tax system disproportionately benefits capital over labor.  
 * 📉 While the video suggests selling American stocks due to overvaluation, The Little Book of Common Sense Investing by John C. Bogle, published by John Wiley & Sons, maintains that consistent indexing in domestic markets remains the most reliable long-term strategy for most investors.  
 * 🏙️ To better understand the mechanics of the housing shortage, researching the YIMBY movement and the impact of exclusionary zoning on urban affordability is recommended.  
   

@@ -10,6 +10,9 @@ Channel: PBS NewsHour
 tags:
 youtube: https://youtu.be/kxHCYqqeORE
 updated: 2026-03-15T22:06:21.355Z
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_time: 2026-04-04T00:00:00Z
+force_analyze_links: false
 ---
 [Home](../index.md) > [Videos](./index.md)  
 # 🪖❓🇺🇸 Brooks and Capehart on Trump's mixed signals on the Iran war  

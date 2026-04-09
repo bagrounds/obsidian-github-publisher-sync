@@ -9,6 +9,9 @@ Platform:
 Channel: MIT OpenCourseWare
 tags:
 youtube: https://youtu.be/SEQpTtfAhFA
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_time: 2026-04-05T00:00:00Z
+force_analyze_links: false
 ---
 [Home](../index.md) > [Videos](./index.md)  
 # 💰➡️🌍📉 Lecture 03: Externalities in Theory & Practice  
@@ -26,7 +29,7 @@ youtube: https://youtu.be/SEQpTtfAhFA
 ## 🤔 Evaluation  
   
 * 🌍 **Global Cooperation**: The lecture highlights the Montreal Protocol as a success, but the Paris Agreement's voluntary nature remains a point of contention. *The Climate Casino* by William Nordhaus (Yale University Press) argues that without a "Climate Club" involving trade penalties for non-participants, voluntary agreements will likely fail due to free-riding.  
-* 🚭 **Rational Addiction**: The speaker utilizes the Becker-Murphy model of rational addiction. However, Behavioral Economics, as detailed in *Predictably Irrational* by Dan Ariely (HarperCollins), suggests that humans suffer from time-inconsistency and "present bias," meaning they do not accurately calculate long-term costs of addiction, potentially justifying paternalistic intervention.  
+* 🚭 **Rational Addiction**: The speaker utilizes the Becker-Murphy model of rational addiction. However, Behavioral Economics, as detailed in *[🔮🤷🏼‍♀️🤪 Predictably Irrational: The Hidden Forces That Shape Our Decisions](../books/predictably-irrational.md)* by Dan Ariely (HarperCollins), suggests that humans suffer from time-inconsistency and "present bias," meaning they do not accurately calculate long-term costs of addiction, potentially justifying paternalistic intervention.  
   
 ## ❓ Frequently Asked Questions (FAQ)  
   

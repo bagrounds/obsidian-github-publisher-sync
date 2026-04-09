@@ -5,10 +5,10 @@ aliases:
 title: 📺 Videos
 URL: https://bagrounds.org/videos
 backlinks: false
-updated: 2026-04-08T14:21:32-07:00
+updated: 2026-04-08T19:27:37-07:00
 ---
 [Home](../index.md)  
-# 📺 Videos (730)  
+# 📺 Videos (731)  
 - [💰🤑🤖💡🚀💲 $0.10/Month Runs My Entire AI Life. I'll Show You How.](./0-10-month-runs-my-entire-ai-life-ill-show-you-how.md)  
 - [📊📈📉📃👁️ 10 Charts to Understand the 900 Page Budget Bill](./10-charts-to-understand-the-900-page-budget-bill.md)  
 - [🤖🔗⬆️✅ 12-Factor Agents: Patterns of reliable LLM applications — Dex Horthy, HumanLayer](./12-factor-agents-patterns-of-reliable-llm-applications-dex-horthy-humanlayer.md)  
@@ -537,6 +537,7 @@ updated: 2026-04-08T14:21:32-07:00
 - [🤖🧠📈 The future of intelligence | Demis Hassabis (Co-founder and CEO of DeepMind)](./the-future-of-intelligence-demis-hassabis-co-founder-and-ceo-of-deepmind.md)  
 - [🌐🕸️🔮 The Future of the Web • Sir Tim Berners-Lee • GOTO 2018](./the-future-of-the-web-sir-tim-berners-lee-goto-2018.md)  
 - [The Happiest Baby on the Block - Harvey Karp (Summary)](./the-happiest-baby-on-the-block-harvey-karp-summary.md)  
+- [🤯🤖✅ The Hardest Problem AI Ever Solved, with Google DeepMind CEO](./the-hardest-problem-ai-ever-solved-with-google-deepmind-ceo.md)  
 - [👿🏷️📉 The hidden history of demonizing SNAP recipients | Code Switch](./the-hidden-history-of-demonizing-snap-recipients-code-switch.md)  
 - [The history of civil service and the impact of Trump's slashing of the workforce](./the-history-of-civil-service-and-the-impact-of-trumps-slashing-of-the-workforce.md)  
 - [The history of diversity, equity and inclusion efforts in America](./the-history-of-diversity-equity-and-inclusion-efforts-in-america.md)  

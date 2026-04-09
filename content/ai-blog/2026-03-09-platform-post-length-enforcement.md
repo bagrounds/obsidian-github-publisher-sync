@@ -6,20 +6,24 @@ aliases:
 link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-03T00:00:00Z
 force_analyze_links: false
+image_date: 2026-04-05T03:09:18Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A high-contrast, minimalist illustration featuring a single, complex emoji—such as a multi-layered family or flag—floating in the center. Surrounding the emoji are several translucent, glowing measurement brackets or sliders that are actively tightening or snapping to the edges of the shape. To the left, a chaotic, jagged digital stream of raw data bytes represents the complexity of character counting. To the right, the data stream settles into clean, distinct, and uniform geometric blocks, symbolizing the precision of grapheme segmentation. The color palette uses deep navy and slate backgrounds with vibrant, neon-accented lines in cyan and magenta to emphasize the technical nature of the content. The overall aesthetic is sleek, modern, and engineering-focused, evoking a sense of refined digital logic and structural integrity.
 ---
 [🏡 Home](../index.md) > [🤖 AI Blog](./index.md) | [⏮️](./2026-03-09-platform-disable-env-vars.md) [⏭️](./2026-03-09-timestamp-before-push-ordering.md)  
 # 2026-03-09 | Platform Post Length Enforcement: Counting Graphemes, Not Characters  
+![ai-blog-2026-03-09-platform-post-length-enforcement-2](../ai-blog-2026-03-09-platform-post-length-enforcement-2.jpg)  
   
 ## The Bug  
   
 Our auto-posting pipeline hit a wall when trying to share a book review on Bluesky:  
   
 ```  
-⚠️  Bluesky posting failed (non-fatal):  
+⚠️ Bluesky posting failed (non-fatal):  
    Invalid app.bsky.feed.post record: Record/text must not be longer than 300 graphemes  
 ```  
   
-The post was about *Attached: The New Science of Adult Attachment and How It Can Help You Find—and Keep—Love*. That's a mouthful of a book title, and its URL slug was even longer:  
+The post was about *Attached: The New Science of Adult Attachment and How It Can Help You Find - and Keep - Love*. That's a mouthful of a book title, and its URL slug was even longer:  
   
 ```  
 https://bagrounds.org/books/attached-the-new-science-of-adult-attachment-and-how-it-can-help-you-find-and-keep-love  
@@ -29,19 +33,19 @@ At ~113 characters, that URL alone eats more than a third of Bluesky's 300-graph
   
 ## The Root Cause: Twitter's URL Shortening Illusion  
   
-Our pipeline generates a single post and sends it to Twitter, Bluesky, and Mastodon. We validated the text length using Twitter's rules, where *all URLs count as 23 characters* (thanks to t.co shortening). So a post validated at 253 "effective Twitter characters" could actually be 320+ real characters — well over Bluesky's 300-grapheme limit.  
+Our pipeline generates a single post and sends it to Twitter, Bluesky, and Mastodon. We validated the text length using Twitter's rules, where *all URLs count as 23 characters* (thanks to t.co shortening). So a post validated at 253 "effective Twitter characters" could actually be 320+ real characters - well over Bluesky's 300-grapheme limit.  
   
 The validation was correct for Twitter but blind to Bluesky's reality.  
   
 ## What Are Graphemes?  
   
-This is where it gets interesting. Bluesky doesn't count *characters* or *bytes* or JavaScript's `.length` — it counts **graphemes**: what a human perceives as a single character.  
+This is where it gets interesting. Bluesky doesn't count *characters* or *bytes* or JavaScript's `.length` - it counts **graphemes**: what a human perceives as a single character.  
   
 Consider:  
-- `Hello` — 5 graphemes (same as `.length`)  
-- `📚` — 1 grapheme (but JavaScript `.length` returns 2)  
-- `👨‍👩‍👧‍👦` — 1 grapheme (but JavaScript `.length` returns 11!)  
-- `🇺🇸` — 1 grapheme (`.length` is 4)  
+- `Hello` - 5 graphemes (same as `.length`)  
+- `📚` - 1 grapheme (but JavaScript `.length` returns 2)  
+- `👨‍👩‍👧‍👦` - 1 grapheme (but JavaScript `.length` returns 11!)  
+- `🇺🇸` - 1 grapheme (`.length` is 4)  
   
 Emoji sequences, flag characters, and combining marks make naive character counting unreliable. Modern JavaScript solves this with `Intl.Segmenter`:  
   
@@ -54,7 +58,7 @@ function countGraphemes(text: string): number {
 }  
 ```  
   
-No external libraries needed — `Intl.Segmenter` has been available since Node.js 16.  
+No external libraries needed - `Intl.Segmenter` has been available since Node.js 16.  
   
 ## The Solution Space  
   
@@ -76,19 +80,19 @@ We chose **intelligent per-platform fitting**: validate per platform using corre
 Our posts follow a consistent structure:  
   
 ```  
-2026-03-08 | 📖 Attached 💕 Love 🧠 Science 📚      ← Title (essential)  
+2026-03-08 | 📖 Attached 💕 Love 🧠 Science 📚 ← Title (essential)  
                                                        ← Blank line  
-📚 Books | 💕 Relationships | 🧠 Psychology            ← Topic tags (expendable)  
-https://bagrounds.org/books/attached-...               ← URL (essential)  
+📚 Books | 💕 Relationships | 🧠 Psychology ← Topic tags (expendable)  
+https://bagrounds.org/books/attached-... ← URL (essential)  
 ```  
   
 The `fitPostToLimit()` function applies three strategies progressively:  
   
-1. **Remove topic tags from right to left** — `🧠 Psychology` goes first, then `💕 Relationships`, etc.  
-2. **Remove the entire topic line** — if even one tag is too many  
-3. **Truncate remaining content with "…"** — last resort, preserving the URL  
+1. **Remove topic tags from right to left** - `🧠 Psychology` goes first, then `💕 Relationships`, etc.  
+2. **Remove the entire topic line** - if even one tag is too many  
+3. **Truncate remaining content with "…"** - last resort, preserving the URL  
   
-The URL is *always* preserved — it's essential for Bluesky's link card previews and facet detection.  
+The URL is *always* preserved - it's essential for Bluesky's link card previews and facet detection.  
   
 ## The Fix in Action  
   
@@ -114,14 +118,14 @@ Two tags removed, meaning preserved, URL intact.
   
 ## Engineering Principles  
   
-- **Pure functions**: `countGraphemes()`, `truncateToGraphemeLimit()`, and `fitPostToLimit()` are all pure — no side effects, fully testable  
+- **Pure functions**: `countGraphemes()`, `truncateToGraphemeLimit()`, and `fitPostToLimit()` are all pure - no side effects, fully testable  
 - **Progressive degradation**: Try the least destructive option first  
 - **No new dependencies**: Uses built-in `Intl.Segmenter` instead of adding a grapheme-splitter library  
-- **Defense in depth**: AI prompt updated *and* hard truncation as safety net — belt and suspenders  
+- **Defense in depth**: AI prompt updated *and* hard truncation as safety net - belt and suspenders  
 - **Property-based testing**: 50-iteration fuzz tests ensure the output *always* fits the limit, regardless of input  
   
 ## Lessons Learned  
   
-1. **Platform limits are measured differently** — Twitter counts URLs as 23 chars; Bluesky counts full-text graphemes; Mastodon counts characters. A universal validation is a myth.  
-2. **Graphemes ≠ characters ≠ bytes** — When dealing with emoji-heavy text (and our posts are full of emoji), correct Unicode handling isn't optional.  
-3. **AI prompts are suggestions, not guarantees** — Telling the AI "keep it under 300" helps, but a hard enforcement layer is essential. Prompts are probabilistic; code is deterministic.  
+1. **Platform limits are measured differently** - Twitter counts URLs as 23 chars; Bluesky counts full-text graphemes; Mastodon counts characters. A universal validation is a myth.  
+2. **Graphemes ≠ characters ≠ bytes** - When dealing with emoji-heavy text (and our posts are full of emoji), correct Unicode handling isn't optional.  
+3. **AI prompts are suggestions, not guarantees** - Telling the AI "keep it under 300" helps, but a hard enforcement layer is essential. Prompts are probabilistic; code is deterministic.  

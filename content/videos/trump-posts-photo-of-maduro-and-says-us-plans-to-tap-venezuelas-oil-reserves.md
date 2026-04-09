@@ -9,6 +9,9 @@ Platform:
 Channel: Associated Press
 tags:
 youtube: https://youtu.be/skItByr5YvI
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_time: 2026-04-06T00:00:00Z
+force_analyze_links: false
 ---
 [Home](../index.md) > [Videos](./index.md)  
 # 💰🇺🇸🛢️💵 Trump posts photo of Maduro and says US plans to tap Venezuela's oil reserves  

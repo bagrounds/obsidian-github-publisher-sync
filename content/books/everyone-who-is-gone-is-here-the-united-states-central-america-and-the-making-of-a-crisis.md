@@ -6,6 +6,9 @@ URL: https://bagrounds.org/books/everyone-who-is-gone-is-here-the-united-states-
 share: true
 CTA: 🌍 Uncover the roots of displacement.
 affiliate link: https://amzn.to/49cljXP
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_time: 2026-04-08T00:00:00Z
+force_analyze_links: false
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 👣🗺️💥 Everyone Who Is Gone Is Here: The United States, Central America, and the Making of a Crisis  

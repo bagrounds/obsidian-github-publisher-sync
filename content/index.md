@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-04-08T14:21:32-07:00
+updated: 2026-04-08T19:27:37-07:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -21,11 +21,11 @@ updated: 2026-04-08T14:21:32-07:00
 - [2026-04-05 | ✨ Children 🎶 Songs 🔗 Root-zone 🌳 Planting 🌿 Preparation 🐣 Heart 🤖 Mirror 🏛️ Freedoms 🌅 Horizon 📚📺🐔🤖🏛️🤖🐲](./reflections/2026-04-05.md)  
   
   
-## [🤖 AI Blog](./ai-blog/index.md) (113)  
+## [🤖 AI Blog](./ai-blog/index.md) (115)  
+- [2026-04-08 | 🔐 Domain Types for Safety and Clarity 🏗️](./ai-blog/2026-04-08-2-domain-types-for-safety-and-clarity.md)  
+- [2026-04-08 | 🏷️ Domain Types and Pure Extraction: Architecture Done Right 🧬](./ai-blog/2026-04-08-1-pure-function-extraction-phase-one.md)  
 - [2026-04-07 | 🏛️ Toward a Haskell Architecture That Prevents Mistakes 🧱](./ai-blog/2026-04-07-2-toward-a-haskell-architecture-that-prevents-mistakes.md)  
 - [2026-04-07 | 🐛 Fixing Daily Updates Dedup and False Twitter Claims 🔧](./ai-blog/2026-04-07-1-fixing-daily-updates-dedup-and-false-twitter-claims.md)  
-- [2026-04-06 | 🖼️ Reducing Image Backfill Capacity 🔧](./ai-blog/2026-04-06-1-reduce-image-backfill-capacity.md)  
-- [2026-04-05 | 🏦 The Vault That Never Received 📬](./ai-blog/2026-04-05-2-the-vault-that-never-received.md)  
   
   
 ## [🤖 Auto Blog Zero](./auto-blog-zero/index.md) (29)  
@@ -50,24 +50,24 @@ updated: 2026-04-08T14:21:32-07:00
   
   
 ## [📚 Books](./books/index.md) (959)  
-- [🤔⚖️ Thinking Like a Lawyer: A New Introduction to Legal Reasoning](./books/thinking-like-a-lawyer-a-new-introduction-to-legal-reasoning.md)  
-- [🤖🧑‍🏫 Teaching with AI: A Practical Guide to a New Era of Human Learning](./books/teaching-with-ai-a-practical-guide-to-a-new-era-of-human-learning.md)  
-- [💰🏛️💔🇺🇸 On Corruption in America: And What Is at Stake](./books/on-corruption-in-america-and-what-is-at-stake.md)  
-- [🏦👨‍💼💥 Dark Towers: Deutsche Bank, Donald Trump, and an Epic Trail of Destruction](./books/dark-towers-deutsche-bank-donald-trump-and-an-epic-trail-of-destruction.md)  
+- [🏭☢️😱 Manufactured Crisis: The Untold Story of the Iran Nuclear Scare](./books/manufactured-crisis-the-untold-story-of-the-iran-nuclear-scare.md)  
+- [⚡🗣️ Think Faster, Talk Smarter: How to Speak Successfully When You're Put on the Spot](./books/think-faster-talk-smarter-how-to-speak-successfully-when-youre-put-on-the-spot.md)  
+- [😊🧠 Satisfaction: The Science of Finding True Fulfillment](./books/satisfaction-the-science-of-finding-true-fulfillment.md)  
+- [🙈⚡🔬🌌 Hidden Potential: The Science of Achieving Greater Things](./books/hidden-potential-the-science-of-achieving-greater-things.md)  
   
   
-## [📺 Videos](./videos/index.md) (730)  
-- [👹💰🚫👩‍🏫 Trump administration withholds billions in school grants for critical programs](./videos/trump-administration-withholds-billions-in-school-grants-for-critical-programs.md)  
-- [🤖🧠🚀📈 Using Generative AI to Strengthen & Accelerate Learning • Barbara Oakley • GOTO 2024](./videos/using-generative-ai-to-strengthen-accelerate-learning-barbara-oakley-goto-2024.md)  
-- [📊📈📉📃👁️ 10 Charts to Understand the 900 Page Budget Bill](./videos/10-charts-to-understand-the-900-page-budget-bill.md)  
-- [💰🔄 Trump’s mega bill ‘hasn’t even cut taxes, it’s redistributed them’ | Justin Wolfers](./videos/trumps-mega-bill-hasnt-even-cut-taxes-its-redistributed-them-justin-wolfers.md)  
+## [📺 Videos](./videos/index.md) (731)  
+- [🤯🤖✅ The Hardest Problem AI Ever Solved, with Google DeepMind CEO](./videos/the-hardest-problem-ai-ever-solved-with-google-deepmind-ceo.md)  
+- [🚪👥🚫⚖️ Trump Said He’d Deport Millions. What’s Happening on the Ground? | WSJ](./videos/trump-said-hed-deport-millions-whats-happening-on-the-ground-wsj.md)  
+- [🗣️✨ How to Speak Clearly & With Confidence | Matt Abrahams](./videos/how-to-speak-clearly-and-with-confidence-matt-abrahams.md)  
+- [💔🏛️💸 Brooks and Capehart on the Democratic division over the stopgap funding bill](./videos/brooks-and-capehart-on-the-democratic-division-over-the-stopgap-funding-bill.md)  
   
   
 ## [🌌 Topics](./topics/index.md) (91)  
-- [🎨🖼️ Arts](./topics/arts.md)  
-- [🎨🛠️ Applied Arts](./topics/applied-arts.md)  
-- [💻🎨⚙️ ANSI escape codes](./topics/ansi-escape-codes.md)  
-- [🤖🧭 Agentic Software Engineering](./topics/agentic-software-engineering.md)  
+- [🗣️📢 Communication Studies](./topics/communication-studies.md)  
+- [♻️🫀🧠💪 Cognitive Behavioral Therapy](./topics/cognitive-behavioral-therapy.md)  
+- [🧪🔬 Code Testing and Validation](./topics/code-testing-and-validation.md)  
+- [🚀 CI-Driven Publishing](./topics/ci-driven-publishing.md)  
   
   
 ## [📄  Articles](./articles/index.md) (84)  

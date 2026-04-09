@@ -9,6 +9,9 @@ Platform:
 Channel: AI Engineer
 tags:
 youtube: https://www.youtube.com/watch?v=v3u8xc0zLec
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_time: 2026-04-07T00:00:00Z
+force_analyze_links: false
 ---
 [Home](../index.md) > [Videos](./index.md)  
 # 🤖💡📈 Proactive Agents – Kath Korevec, Google Labs  
@@ -58,7 +61,7 @@ youtube: https://www.youtube.com/watch?v=v3u8xc0zLec
 ### ↔️ Similar  
   
 - 🤖 Hello World: Being Human in the Age of Algorithms by Hannah Fry explores how autonomous systems impact daily decision making and human roles.  
-- ⚙️ Artificial Intelligence: A Guide for Thinking Humans by Melanie Mitchell provides a foundational look at how AI understands context and the challenges of achieving true autonomy.  
+- ⚙️ [🤖🧠 Artificial Intelligence: A Modern Approach](../books/artificial-intelligence-a-modern-approach.md): A Guide for Thinking Humans by Melanie Mitchell provides a foundational look at how AI understands context and the challenges of achieving true autonomy.  
   
 ### 🆚 Contrasting  
   

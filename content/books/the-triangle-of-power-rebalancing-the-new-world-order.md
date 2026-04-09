@@ -7,6 +7,9 @@ share: true
 CTA: 🌎 Master global influence.
 affiliate link: https://amzn.to/4rJmZz3
 updated: 2026-03-19T00:22:30.281Z
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_time: 2026-04-04T00:00:00Z
+force_analyze_links: false
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🔺⚡🔄🌍 The Triangle of Power: Rebalancing the New World Order  

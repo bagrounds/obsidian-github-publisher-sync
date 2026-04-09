@@ -6,6 +6,9 @@ URL: https://bagrounds.org/books/the-curse-of-bigness-antitrust-in-the-new-gilde
 share: true
 CTA: 🗳️ Defend democracy.
 affiliate link: https://amzn.to/4pUfRiO
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_time: 2026-04-04T00:00:00Z
+force_analyze_links: false
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 👑⚖️ The Curse of Bigness: Antitrust in the New Gilded Age  

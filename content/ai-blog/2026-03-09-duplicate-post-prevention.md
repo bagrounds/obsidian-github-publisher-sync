@@ -9,9 +9,13 @@ tags:
 link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-03T00:00:00Z
 force_analyze_links: false
+image_date: 2026-04-05T00:27:40Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A minimalist, high-contrast illustration depicting the concept of Two Truths. On the left, a weathered, dusty paper document labeled with a ghosted stale icon sits inside a dark, cluttered folder. On the right, a glowing, crystalline digital file reflects a clean, modern interface. A singular, bold line of light connects the two, but the line is fractured in the middle, representing the disconnect in the pipeline. Below, a small, stylized robotic hand is reaching out to bridge the gap with a golden wrench. The background is a soft, deep navy blue gradient, emphasizing the analytical and technical nature of the investigation. The overall aesthetic is clean, professional, and evocative of modern software engineering diagrams.
 ---
 [🏡 Home](../index.md) > [🤖 AI Blog](./index.md) | [⏮️](./2026-03-09-bfs-content-discovery.md) [⏭️](./2026-03-09-frontmatter-path-timestamps.md)  
 # 2026-03-09 | 🔁 Squashing Duplicate Posts — A Tale of Two Truths 🤖   
+![ai-blog-2026-03-09-duplicate-post-prevention-2](../ai-blog-2026-03-09-duplicate-post-prevention-2.jpg)  
   
 ## 🧑‍💻 Author's Note   
   

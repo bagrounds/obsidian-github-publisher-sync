@@ -12,7 +12,8 @@ import qualified Data.Text.Encoding as TE
 import qualified Network.HTTP.Client as HTTP
 import qualified Network.HTTP.Client.TLS as TLS
 
-import Automation.Types (OgMetadata (..), mkTitle)
+import Automation.Embed (OgMetadata (..))
+import Automation.Title (mkTitle)
 
 extractOgProperty :: Text -> Text -> Maybe Text
 extractOgProperty property html =

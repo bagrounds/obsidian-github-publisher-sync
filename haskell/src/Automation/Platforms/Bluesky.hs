@@ -1,5 +1,6 @@
 module Automation.Platforms.Bluesky
-  ( extractBlueskyPostId
+  ( BlueskyPostResult (..)
+  , extractBlueskyPostId
   , extractBlueskyDid
   , buildBlueskyPostUrl
   , postToBluesky
@@ -36,18 +37,20 @@ import qualified Automation.Json as Json
 import Automation.Json ((.=), (.:), encode, eitherDecode, object, withObject)
 import Automation.Platforms.OgMetadata (detectContentType, fetchImageAsBuffer)
 import Automation.Retry (HttpCodeException (..), defaultRetryOptions, withRetry)
-import Automation.Types
-  ( BlueskyCredentials (..)
-  , BlueskyPostResult (..)
-  , EmbedResult (..)
-  , LinkCard (..)
-  , Secret (..)
-  , unTitle
-  , unUrl
-  , blueskyDisplayName
-  , blueskyOembedInitialDelayMs
-  , blueskyOembedRetryDelayMs
-  )
+import Automation.Credentials (BlueskyCredentials (..))
+import Automation.Embed (EmbedResult (..), LinkCard (..))
+import Automation.Platform (blueskyDisplayName, blueskyOembedInitialDelayMs, blueskyOembedRetryDelayMs)
+import Automation.Secret (Secret (..))
+import Automation.Title (unTitle)
+import Automation.Url (unUrl)
+
+-- ── Domain types ───────────────────────────────────────────────────────
+
+data BlueskyPostResult = BlueskyPostResult
+  { bprUri :: Text
+  , bprCid :: Text
+  , bprText :: Text
+  } deriving (Show, Eq)
 
 -- ── Constants ──────────────────────────────────────────────────────────
 

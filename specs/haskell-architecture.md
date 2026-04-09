@@ -52,17 +52,17 @@ Each type delivered as a vertical slice with constructor, tests, and migration o
 - [x] `data PlatformLimits = PlatformLimits { platformMaxCharacters :: Int, platformUrlCountLength :: Maybe Int }` for platform limits. Per-platform constants (`twitterLimits`, `blueskyLimits`, `mastodonLimits`), generalized `calculatePostLength` and `validatePostLength`. Removed backward-compat aliases.
 - [x] `data SocialPost = Tweet Text | BlueskyPost Text | MastodonPost Text` — per-platform ADT with smart constructors (`mkTweet`, `mkBlueskyPost`, `mkMastodonPost`, `mkSocialPost`) that validate character limits at construction time.
 
-### Next: Break Up Types Module
+### Completed: Break Up Types Module
 
-**Goal**: Replace the monolithic `Automation.Types` module with domain-specific modules. Each record type and its constants should live in the module that owns its domain concept. `Types.hs` becomes a thin re-export hub during migration.
+**Goal**: Replaced the monolithic `Automation.Types` module with domain-specific modules. Each record type and its constants lives in the module that owns its domain concept. `Types.hs` is a thin re-export hub for backward compatibility during migration.
 
-Candidates for extraction:
-- [ ] `Automation.Platform` — `PlatformLimits`, per-platform constants, section headers, display names
-- [ ] `Automation.Credentials` — `TwitterCredentials`, `BlueskyCredentials`, `MastodonCredentials`, `GeminiConfig`, `ObsidianCredentials`, `EnvironmentConfig`
-- [ ] `Automation.Embed` — `EmbedResult`, `EmbedSection`, `OgMetadata`, `LinkCard`
-- [ ] Move `ReflectionData` to `Automation.Reflection`
-- [ ] Move platform result types (`TweetResult`, `BlueskyPostResult`, `MastodonPostResult`) to their respective platform modules
-- [ ] Keep `Automation.Types` as a thin re-export hub for backward compatibility during migration
+Extracted modules:
+- [x] `Automation.Platform` — `PlatformLimits`, per-platform constants, section headers, display names
+- [x] `Automation.Credentials` — `TwitterCredentials`, `BlueskyCredentials`, `MastodonCredentials`, `GeminiConfig`, `ObsidianCredentials`, `EnvironmentConfig`
+- [x] `Automation.Embed` — `EmbedResult`, `EmbedSection`, `OgMetadata`, `LinkCard`
+- [x] Move `ReflectionData` to `Automation.Reflection`
+- [x] Move platform result types (`TweetResult`, `BlueskyPostResult`, `MastodonPostResult`) to their respective platform modules
+- [x] Keep `Automation.Types` as a thin re-export hub for backward compatibility during migration
 
 ### Next: AppContext Record + Tests
 

@@ -1,5 +1,6 @@
 module Automation.Reflection
-  ( selectMostRecentReflection
+  ( ReflectionData (..)
+  , selectMostRecentReflection
   , findMostRecentReflection
   ) where
 
@@ -9,6 +10,20 @@ import qualified Data.Text as T
 import System.Directory (doesDirectoryExist, listDirectory)
 import System.FilePath ((</>))
 import Text.Regex.TDFA ((=~))
+
+import Automation.Title (Title)
+import Automation.Url (Url)
+
+data ReflectionData = ReflectionData
+  { rdDate :: Text
+  , rdTitle :: Title
+  , rdUrl :: Url
+  , rdBody :: Text
+  , rdFilePath :: Text
+  , rdHasTweetSection :: Bool
+  , rdHasBlueskySection :: Bool
+  , rdHasMastodonSection :: Bool
+  } deriving (Show, Eq)
 
 selectMostRecentReflection :: [String] -> Maybe Text
 selectMostRecentReflection files =

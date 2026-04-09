@@ -28,6 +28,9 @@ import qualified Automation.OgMetadataTest
 import qualified Automation.ReflectionTitleTest
 import qualified Automation.ObsidianSyncTest
 import qualified Automation.TypesTest
+import qualified Automation.PlatformTest
+import qualified Automation.CredentialsTest
+import qualified Automation.EmbedTest
 
 main :: IO ()
 main = defaultMain $ testGroup "Automation"
@@ -57,4 +60,7 @@ main = defaultMain $ testGroup "Automation"
   , Automation.OgMetadataTest.tests
   , Automation.ObsidianSyncTest.tests
   , Automation.TypesTest.tests
+  , Automation.PlatformTest.tests
+  , Automation.CredentialsTest.tests
+  , Automation.EmbedTest.tests
   ]

@@ -1,5 +1,6 @@
 module Automation.Platforms.Twitter
-  ( postTweet
+  ( TweetResult (..)
+  , postTweet
   , deleteTweet
   , fetchOEmbed
   , generateLocalEmbed
@@ -38,7 +39,14 @@ import Automation.Html (formatDisplayDate, textToHtml)
 import Automation.Json ((.=), (.:), (.:?), eitherDecode, encode, object, withObject)
 import qualified Automation.Json as Json
 import Automation.Retry (HttpCodeException (..), defaultRetryOptions, withRetry)
-import Automation.Types (Secret (..), TwitterCredentials (..), twitterDisplayName)
+import Automation.Credentials (TwitterCredentials (..))
+import Automation.Platform (twitterDisplayName)
+import Automation.Secret (Secret (..))
+
+data TweetResult = TweetResult
+  { trId :: Text
+  , trText :: Text
+  } deriving (Show, Eq)
 
 -- ── Constants ──────────────────────────────────────────────────────────
 

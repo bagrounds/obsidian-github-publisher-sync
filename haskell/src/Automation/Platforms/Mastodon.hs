@@ -1,5 +1,6 @@
 module Automation.Platforms.Mastodon
-  ( extractMastodonInstanceUrl
+  ( MastodonPostResult (..)
+  , extractMastodonInstanceUrl
   , extractMastodonStatusId
   , extractMastodonUsername
   , postToMastodon
@@ -32,7 +33,17 @@ import System.Random (randomRIO)
 import Automation.Json ((.=), (.:), eitherDecode, encode, object, withObject)
 import qualified Automation.Json as Json
 import Automation.Retry (HttpCodeException (..), defaultRetryOptions, withRetry)
-import Automation.Types (MastodonCredentials (..), MastodonPostResult (..), Secret (..), unUrl, mkUrl)
+import Automation.Credentials (MastodonCredentials (..))
+import Automation.Secret (Secret (..))
+import Automation.Url (Url, unUrl, mkUrl)
+
+-- ── Domain types ───────────────────────────────────────────────────────
+
+data MastodonPostResult = MastodonPostResult
+  { mprId :: Text
+  , mprUrl :: Url
+  , mprText :: Text
+  } deriving (Show, Eq)
 
 -- ── URL Parsing ────────────────────────────────────────────────────────
 

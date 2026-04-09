@@ -8,6 +8,7 @@ import Test.Tasty.HUnit (testCase, (@?=), assertBool)
 import Test.Tasty.QuickCheck (testProperty)
 import qualified Test.QuickCheck as QC
 
+import Automation.TestGenerators (testUrl, testTitle, testRelativePath)
 import Automation.Types
   ( Secret (..)
   , PlatformLimits (..)
@@ -251,12 +252,3 @@ relativePathTests = testGroup "RelativePath"
 
 isAsciiAlphaNum :: Char -> Bool
 isAsciiAlphaNum c = isAscii c && isAlphaNum c
-
-testUrl :: Text -> Url
-testUrl = either (error . T.unpack) id . mkUrl
-
-testTitle :: Text -> Title
-testTitle = either (error . T.unpack) id . mkTitle
-
-testRelativePath :: Text -> RelativePath
-testRelativePath = either (error . T.unpack) id . mkRelativePath

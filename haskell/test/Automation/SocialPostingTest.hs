@@ -17,6 +17,7 @@ import qualified Data.Text.IO as TIO
 
 import Automation.SocialPosting
 import Automation.Reflection (selectMostRecentReflection)
+import Automation.TestGenerators (testUrl, testTitle, testRelativePath)
 import Automation.Types (RelativePath, mkRelativePath, Title, mkTitle, Url, mkUrl)
 
 tests :: TestTree
@@ -760,11 +761,3 @@ socialPostTests = testGroup "SocialPost"
             Left _ -> False
   ]
 
-testUrl :: Text -> Url
-testUrl = either (error . T.unpack) id . mkUrl
-
-testTitle :: Text -> Title
-testTitle = either (error . T.unpack) id . mkTitle
-
-testRelativePath :: Text -> RelativePath
-testRelativePath = either (error . T.unpack) id . mkRelativePath

@@ -1,6 +1,7 @@
 module Automation.InternalLinkingTest (tests) where
 
 import Automation.InternalLinking
+import Automation.TestGenerators (testTitle, testRelativePath)
 import Automation.Types (RelativePath, mkRelativePath, Title, mkTitle)
 import Data.Text (Text)
 import qualified Data.Text as T
@@ -508,8 +509,3 @@ propertyTests = testGroup "properties"
       in result == content
   ]
 
-testTitle :: Text -> Title
-testTitle = either (error . T.unpack) id . mkTitle
-
-testRelativePath :: Text -> RelativePath
-testRelativePath = either (error . T.unpack) id . mkRelativePath

@@ -9,6 +9,7 @@ import Test.Tasty.QuickCheck (testProperty)
 import qualified Test.Tasty.QuickCheck as QC
 
 import Automation.Prompts
+import Automation.TestGenerators (testUrl, testTitle)
 import Automation.Types (ReflectionData (..), PlatformLimits (..), Title, unTitle, mkTitle, Url, unUrl, mkUrl, blueskyLimits)
 
 tests :: TestTree
@@ -154,7 +155,7 @@ propertyTests = testGroup "properties"
   [ testProperty "calculateQuestionBudget always at least 30" $
       \(QC.ASCIIString title) (QC.ASCIIString url) ->
         let titleText = let t = T.pack title in if T.null (T.strip t) then "x" else t
-            urlSuffix = filter isUrlSafe url
+            urlSuffix = filter isUnreservedUrlChar url
             urlText = "https://example.com/" <> T.pack urlSuffix
             rd = sampleReflection { rdTitle = testTitle titleText, rdUrl = testUrl urlText }
         in calculateQuestionBudget rd >= 30
@@ -172,11 +173,5 @@ propertyTests = testGroup "properties"
         in T.length (stripSubtitle txt) <= T.length txt
   ]
 
-testUrl :: Text -> Url
-testUrl = either (error . T.unpack) id . mkUrl
-
-testTitle :: Text -> Title
-testTitle = either (error . T.unpack) id . mkTitle
-
-isUrlSafe :: Char -> Bool
-isUrlSafe c = isAscii c && (isAlphaNum c || c `elem` ("-._~" :: String))
+isUnreservedUrlChar :: Char -> Bool
+isUnreservedUrlChar c = isAscii c && (isAlphaNum c || c `elem` ("-._~" :: String))

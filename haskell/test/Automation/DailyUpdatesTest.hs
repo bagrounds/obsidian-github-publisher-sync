@@ -11,6 +11,7 @@ import Test.Tasty.QuickCheck (testProperty)
 import qualified Test.Tasty.QuickCheck as QC
 
 import Automation.DailyUpdates
+import Automation.TestGenerators (testTitle, testRelativePath)
 import Automation.Types (RelativePath, mkRelativePath, Title, mkTitle)
 
 tests :: TestTree
@@ -287,8 +288,3 @@ addUpdateLinksToReflectionTests = testGroup "addUpdateLinksToReflection"
         assertBool "has social detail" (T.isInfixOf "  - 🦋 posted to BlueSky" content)
   ]
 
-testTitle :: T.Text -> Title
-testTitle = either (error . T.unpack) id . mkTitle
-
-testRelativePath :: T.Text -> RelativePath
-testRelativePath = either (error . T.unpack) id . mkRelativePath

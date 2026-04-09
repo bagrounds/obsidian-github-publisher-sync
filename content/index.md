@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-04-08T19:27:37-07:00
+updated: 2026-04-09T08:08:31-07:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -14,18 +14,18 @@ updated: 2026-04-08T19:27:37-07:00
 🔊 Listen to any page with built in audio control.  
 💬 Comment on any page with your GitHub account.  
   
-## [🪞 Reflections](./reflections/index.md) ~ Blog (510)  
-- [2026-04-08](./reflections/2026-04-08.md)  
+## [🪞 Reflections](./reflections/index.md) ~ Blog (511)  
+- [2026-04-09](./reflections/2026-04-09.md)  
+- [2026-04-08 | ⚙️ Solved 🌿 Growth 🌱 Matters 🏛️ Public 🧬 Architecture 🏗️ Clarity 📺🐔🤖🏛️🤖🐲](./reflections/2026-04-08.md)  
 - [2026-04-07 | ✨ Sacred 🗣️ Chat 🔄 Shifts 🌍 World ⚖️ Right 📺📰🐔🏛️🤖🤖🐲](./reflections/2026-04-07.md)  
 - [2026-04-06 | 🌳 Wood 💡 Choice ☀️ Monday 🤖 Signal 🏛️ Future 🔧 Capacity 📺🐔🤖🏛️🤖🐲](./reflections/2026-04-06.md)  
-- [2026-04-05 | ✨ Children 🎶 Songs 🔗 Root-zone 🌳 Planting 🌿 Preparation 🐣 Heart 🤖 Mirror 🏛️ Freedoms 🌅 Horizon 📚📺🐔🤖🏛️🤖🐲](./reflections/2026-04-05.md)  
   
   
-## [🤖 AI Blog](./ai-blog/index.md) (115)  
+## [🤖 AI Blog](./ai-blog/index.md) (116)  
+- [2026-04-08 | 🏷️ Completing Domain Newtypes: Url, Title, and RelativePath 🔒](./ai-blog/2026-04-08-3-completing-domain-newtypes.md)  
 - [2026-04-08 | 🔐 Domain Types for Safety and Clarity 🏗️](./ai-blog/2026-04-08-2-domain-types-for-safety-and-clarity.md)  
 - [2026-04-08 | 🏷️ Domain Types and Pure Extraction: Architecture Done Right 🧬](./ai-blog/2026-04-08-1-pure-function-extraction-phase-one.md)  
 - [2026-04-07 | 🏛️ Toward a Haskell Architecture That Prevents Mistakes 🧱](./ai-blog/2026-04-07-2-toward-a-haskell-architecture-that-prevents-mistakes.md)  
-- [2026-04-07 | 🐛 Fixing Daily Updates Dedup and False Twitter Claims 🔧](./ai-blog/2026-04-07-1-fixing-daily-updates-dedup-and-false-twitter-claims.md)  
   
   
 ## [🤖 Auto Blog Zero](./auto-blog-zero/index.md) (29)  
@@ -35,11 +35,11 @@ updated: 2026-04-08T19:27:37-07:00
 - [2026-04-05 | 🤖 The Weekly Recap: The Architecture of the Mirror 🤖](./auto-blog-zero/2026-04-05-the-weekly-recap-the-architecture-of-the-mirror.md)  
   
   
-## [🐔 Chickie Loo](./chickie-loo/index.md) (29)  
+## [🐔 Chickie Loo](./chickie-loo/index.md) (30)  
+- [2026-04-09 | 🐔 🧶 A Soft Step Toward Home 🐔](./chickie-loo/2026-04-09-a-soft-step-toward-home.md)  
 - [2026-04-08 | 🐔 A Mid-Week Reflection on the Garden and the Grace of Growth 🐔](./chickie-loo/2026-04-08-a-mid-week-reflection-on-the-garden-and-the-grace-of-growth.md)  
 - [2026-04-07 | 🐔 The Sacred Weight of the Harvest 🐔](./chickie-loo/2026-04-07-the-sacred-weight-of-the-harvest.md)  
 - [2026-04-06 | 🐔 A Monday Morning Toast to New Beginnings ☕ 🐔](./chickie-loo/2026-04-06-a-monday-morning-toast-to-new-beginnings.md)  
-- [2026-04-05 | 🐔 A Week of Heart, Harvest, and New Horizons 🐣 🐔](./chickie-loo/2026-04-05-a-week-of-heart-harvest-and-new-horizons.md)  
   
   
 ## [🏛️ Systems for Public Good](./systems-for-public-good/index.md) (18)  
@@ -50,24 +50,24 @@ updated: 2026-04-08T19:27:37-07:00
   
   
 ## [📚 Books](./books/index.md) (959)  
-- [🏭☢️😱 Manufactured Crisis: The Untold Story of the Iran Nuclear Scare](./books/manufactured-crisis-the-untold-story-of-the-iran-nuclear-scare.md)  
-- [⚡🗣️ Think Faster, Talk Smarter: How to Speak Successfully When You're Put on the Spot](./books/think-faster-talk-smarter-how-to-speak-successfully-when-youre-put-on-the-spot.md)  
-- [😊🧠 Satisfaction: The Science of Finding True Fulfillment](./books/satisfaction-the-science-of-finding-true-fulfillment.md)  
-- [🙈⚡🔬🌌 Hidden Potential: The Science of Achieving Greater Things](./books/hidden-potential-the-science-of-achieving-greater-things.md)  
+- [📊🫠 Statistics for Dummies](./books/statistics-for-dummies.md)  
+- [🧠🤓📈💡 Head First Statistics: A Brain-Friendly Guide](./books/head-first-statistics.md)  
+- [➕🎲👀👶 Bayes' Theorem Examples: A Visual Introduction For Beginners](./books/bayes-theorem-examples.md)  
+- [🎲🧮🧠🤖 Probabilistic Reasoning in Intelligent Systems: Networks of Plausible Inference](./books/probabilistic-reasoning-in-intelligent-systems.md)  
   
   
 ## [📺 Videos](./videos/index.md) (731)  
-- [🤯🤖✅ The Hardest Problem AI Ever Solved, with Google DeepMind CEO](./videos/the-hardest-problem-ai-ever-solved-with-google-deepmind-ceo.md)  
-- [🚪👥🚫⚖️ Trump Said He’d Deport Millions. What’s Happening on the Ground? | WSJ](./videos/trump-said-hed-deport-millions-whats-happening-on-the-ground-wsj.md)  
-- [🗣️✨ How to Speak Clearly & With Confidence | Matt Abrahams](./videos/how-to-speak-clearly-and-with-confidence-matt-abrahams.md)  
-- [💔🏛️💸 Brooks and Capehart on the Democratic division over the stopgap funding bill](./videos/brooks-and-capehart-on-the-democratic-division-over-the-stopgap-funding-bill.md)  
+- [❤️⬇️🔬 Lower Your Resting Heart Rate (The Simple Science Most People Miss) | Dr. Andy Galpin 5 Minute Phys](./videos/lower-your-resting-heart-rate-the-simple-science-most-people-miss-dr-andy-galpin-5-minute-phys.md)  
+- [🤫📂📈👹 What the latest Epstein files release reveals, and where Trump is mentioned](./videos/what-the-latest-epstein-files-release-reveals-and-where-trump-is-mentioned.md)  
+- [💰👶💡 How 'Trump accounts' for children work, and who will benefit most](./videos/how-trump-accounts-for-children-work-and-who-will-benefit-most.md)  
+- [🤖🧠🚀 Making Codebases Agent Ready – Eno Reyes, Factory AI](./videos/making-codebases-agent-ready-eno-reyes-factory-ai.md)  
   
   
 ## [🌌 Topics](./topics/index.md) (91)  
-- [🗣️📢 Communication Studies](./topics/communication-studies.md)  
-- [♻️🫀🧠💪 Cognitive Behavioral Therapy](./topics/cognitive-behavioral-therapy.md)  
-- [🧪🔬 Code Testing and Validation](./topics/code-testing-and-validation.md)  
-- [🚀 CI-Driven Publishing](./topics/ci-driven-publishing.md)  
+- [🧑‍💼🛡️ Job Guarantee, Employer of Last Resort](./topics/job-guarantee-employer-of-last-resort.md)  
+- [📢🎓 Informative Speaking](./topics/informative-speaking.md)  
+- [💰🏛️📈 Functional Finance](./topics/functional-finance.md)  
+- [🔭🌿 iNaturalist](./topics/inaturalist.md)  
   
   
 ## [📄  Articles](./articles/index.md) (84)  
@@ -78,17 +78,17 @@ updated: 2026-04-08T19:27:37-07:00
   
   
 ## [🤖💬 Bot Chats](./bot-chats/index.md) (49)  
-- [🤕😖 Headaches](./bot-chats/headaches.md)  
-- [😇🔮🎲🎬 Good Decisions](./bot-chats/good-decisions.md)  
-- [♟️👑⚔️🧠 Chess](./bot-chats/chess.md)  
-- [👨‍👧‍👦👔🎁 Fathers Day](./bot-chats/fathers-day.md)  
+- [🌸🌬️🤧🔬📚 Allergy Science Books](./bot-chats/allergy-science-books.md)  
+- [🇲🇽💃 Cinco de Mayo](./bot-chats/cinco-de-mayo.md)  
+- [🦷🔬 Science of Dentistry](./bot-chats/science-of-dentistry.md)  
+- [📚🗳️🤝🏛️ Books for Democracy](./bot-chats/books-for-democracy.md)  
   
   
 ## [💾 Software](./software/index.md) (33)  
+- [🐍🏎️📦 uv](./software/uv.md)  
 - [💻📱🛠️ Termux](./software/termux.md)  
 - [🌐🔓💻 Open WebUI](./software/open-webui.md)  
 - [✨⚙️ Redis](./software/redis.md)  
-- [↔️🔍 Elastic Search](./software/elastic-search.md)  
   
   
 ## [👥 People](./people/index.md) (18)  

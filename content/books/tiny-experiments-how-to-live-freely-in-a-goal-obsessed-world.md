@@ -6,6 +6,9 @@ URL: https://bagrounds.org/books/tiny-experiments-how-to-live-freely-in-a-goal-o
 share: true
 CTA: 🚀 Explore freedom.
 affiliate link: https://amzn.to/49eUpjq
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_time: 2026-04-07T00:00:00Z
+force_analyze_links: false
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🧪🎯🦋 Tiny Experiments: How to Live Freely in a Goal-Obsessed World  

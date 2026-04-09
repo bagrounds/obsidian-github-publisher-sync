@@ -19,15 +19,15 @@ import Data.Time (defaultTimeLocale, formatTime, getCurrentTime)
 import System.Directory (doesFileExist)
 import System.FilePath ((</>), takeBaseName)
 
+import qualified Automation.Platforms.Bluesky as Bluesky
+import qualified Automation.Platforms.Mastodon as Mastodon
+import qualified Automation.Platforms.Twitter as Twitter
 import Automation.Types
   ( ReflectionData (..)
   , Title
   , mkTitle
   , Url
   , mkUrl
-  , blueskySectionHeader
-  , mastodonSectionHeader
-  , tweetSectionHeader
   )
 
 parseFrontmatter :: Text -> (Map Text Text, Text)
@@ -96,9 +96,9 @@ hasSectionHeader content header = T.isInfixOf header content
 
 detectSections :: Text -> (Bool, Bool, Bool)
 detectSections content =
-  ( hasSectionHeader content tweetSectionHeader
-  , hasSectionHeader content blueskySectionHeader
-  , hasSectionHeader content mastodonSectionHeader
+  ( hasSectionHeader content Twitter.sectionHeader
+  , hasSectionHeader content Bluesky.sectionHeader
+  , hasSectionHeader content Mastodon.sectionHeader
   )
 
 getReflectionPath :: Text -> FilePath -> FilePath

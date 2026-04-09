@@ -54,12 +54,7 @@ import Automation.BlogSeriesConfig
   )
 import Automation.DailyReflection (UpdateReflectionResult (..), updateDailyReflection)
 import Automation.DailyUpdates (UpdateLink (..), addUpdateLinksToReflection, extractTitleFromFile)
-import Automation.Gemini
-  ( GenerationConfig (..)
-  , GeminiResponse (..)
-  , generateContentWithFallback
-  , defaultGenerationConfig
-  )
+import qualified Automation.Gemini as Gemini
 import Automation.ObsidianSync
   ( ObsidianCredentials (..)
   , syncObsidianVault
@@ -124,11 +119,11 @@ inferenceDashboards =
 callGeminiForGenerator :: Manager -> Secret -> [Text] -> (Text, Text) -> IO (Text, Text)
 callGeminiForGenerator manager apiKey models (systemPrompt, userPrompt) = do
   let combinedPrompt = systemPrompt <> "\n\n" <> userPrompt
-      config = defaultGenerationConfig { gcTemperature = 0.9, gcMaxOutputTokens = 2048 }
-  result <- generateContentWithFallback manager models combinedPrompt apiKey config
+      config = Gemini.defaultGenerationConfig { Gemini.gcTemperature = 0.9, Gemini.gcMaxOutputTokens = 2048 }
+  result <- Gemini.generateContentWithFallback manager models combinedPrompt apiKey config
   case result of
     Left err -> error $ "Gemini API error: " <> T.unpack err
-    Right resp -> pure (grText resp, grModel' resp)
+    Right resp -> pure (Gemini.grText resp, Gemini.grModel' resp)
 
 -- ---------------------------------------------------------------------------
 -- Environment helpers
@@ -450,15 +445,15 @@ runBlogSeries manager repoRoot vaultDir seriesId = do
       context <- buildBlogContext seriesId seriesDir comments today
       let (systemPrompt, userPrompt) = buildBlogPrompt context
           combinedPrompt = systemPrompt <> "\n\n" <> userPrompt
-          genConfig = defaultGenerationConfig { gcTemperature = 0.9, gcMaxOutputTokens = 8192 }
+          genConfig = Gemini.defaultGenerationConfig { Gemini.gcTemperature = 0.9, Gemini.gcMaxOutputTokens = 8192 }
 
       -- 6. Call Gemini
-      result <- generateContentWithFallback manager models combinedPrompt apiKey genConfig
+      result <- Gemini.generateContentWithFallback manager models combinedPrompt apiKey genConfig
       case result of
         Left err -> error $ "Blog generation failed: " <> T.unpack err
         Right resp -> do
-          let rawText = stripCodeFences (grText resp)
-              usedModel = grModel' resp
+          let rawText = stripCodeFences (Gemini.grText resp)
+              usedModel = Gemini.grModel' resp
           case parseGeneratedPost rawText of
             Nothing -> error "Failed to parse generated blog post"
             Just (body, rawTitle) -> do

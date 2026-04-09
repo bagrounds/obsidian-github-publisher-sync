@@ -42,11 +42,9 @@ import Automation.BlogComments (BlogComment (..))
 import Automation.BlogPosts (BlogPost (..))
 import Automation.BlogSeriesConfig (BlogSeriesConfig (..))
 import Automation.Frontmatter (quoteYamlValue)
-import Automation.Types
-  ( blueskySectionHeader
-  , mastodonSectionHeader
-  , tweetSectionHeader
-  )
+import qualified Automation.Platforms.Bluesky as Bluesky
+import qualified Automation.Platforms.Mastodon as Mastodon
+import qualified Automation.Platforms.Twitter as Twitter
 
 -- | A validated URL slug: lowercase, alphanumeric + hyphens, no leading/trailing hyphens.
 newtype Slug = Slug { unSlug :: Text } deriving (Show, Eq)
@@ -71,7 +69,7 @@ data BlogContext = BlogContext
 
 stripEmbedSections :: Text -> Text
 stripEmbedSections content =
-  let embedHeaders = [tweetSectionHeader, blueskySectionHeader, mastodonSectionHeader]
+  let embedHeaders = [Twitter.sectionHeader, Bluesky.sectionHeader, Mastodon.sectionHeader]
       findPosition header =
         let (before, match) = T.breakOn header content
         in if T.null match then Nothing else Just (T.length before)

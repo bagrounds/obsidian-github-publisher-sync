@@ -74,17 +74,12 @@ import Automation.EmbedSection
 import Automation.Env (validateEnvironment)
 import Automation.Frontmatter (parseFrontmatter, quoteYamlValue)
 import Automation.BlogPrompt (formatDay, todayPacificDay)
-import Automation.Gemini
-  ( GenerationConfig (..)
-  , GeminiResponse (..)
-  , defaultGenerationConfig
-  , generateContentWithFallback
-  )
+import qualified Automation.Gemini as Gemini
 import qualified Automation.ObsidianSync as Sync
-import Automation.Platforms.Bluesky (postToBluesky, getBlueskyEmbedHtml, extractBlueskyDid, extractBlueskyPostId, buildBlueskyPostUrl)
-import Automation.Platforms.Mastodon (postToMastodon, getMastodonEmbedHtml, extractMastodonInstanceUrl, extractMastodonStatusId, extractMastodonUsername)
+import qualified Automation.Platforms.Bluesky as Bluesky
+import qualified Automation.Platforms.Mastodon as Mastodon
 import Automation.Platforms.OgMetadata (fetchOgMetadata)
-import Automation.Platforms.Twitter (postTweet, getEmbedHtml)
+import qualified Automation.Platforms.Twitter as Twitter
 import Automation.Prompts (PromptPair (..), assemblePost, buildQuestionPrompt, buildShortenQuestionPrompt, buildTagsPrompt)
 import Automation.Reflection (findMostRecentReflection)
 import Automation.Text (calculatePostLength, fitPostToLimit)
@@ -115,23 +110,23 @@ socialPostPlatform (MastodonPost _) = Mastodon
 
 mkTweet :: Text -> Either Text SocialPost
 mkTweet text
-  | calculatePostLength twitterLimits text > platformMaxCharacters twitterLimits =
-      Left $ "Tweet exceeds " <> T.pack (show (platformMaxCharacters twitterLimits))
-        <> " characters (actual: " <> T.pack (show (calculatePostLength twitterLimits text)) <> ")"
+  | calculatePostLength Twitter.limits text > platformMaxCharacters Twitter.limits =
+      Left $ "Tweet exceeds " <> T.pack (show (platformMaxCharacters Twitter.limits))
+        <> " characters (actual: " <> T.pack (show (calculatePostLength Twitter.limits text)) <> ")"
   | otherwise = Right (Tweet text)
 
 mkBlueskyPost :: Text -> Either Text SocialPost
 mkBlueskyPost text
-  | calculatePostLength blueskyLimits text > platformMaxCharacters blueskyLimits =
-      Left $ "Bluesky post exceeds " <> T.pack (show (platformMaxCharacters blueskyLimits))
-        <> " characters (actual: " <> T.pack (show (calculatePostLength blueskyLimits text)) <> ")"
+  | calculatePostLength Bluesky.limits text > platformMaxCharacters Bluesky.limits =
+      Left $ "Bluesky post exceeds " <> T.pack (show (platformMaxCharacters Bluesky.limits))
+        <> " characters (actual: " <> T.pack (show (calculatePostLength Bluesky.limits text)) <> ")"
   | otherwise = Right (BlueskyPost text)
 
 mkMastodonPost :: Text -> Either Text SocialPost
 mkMastodonPost text
-  | calculatePostLength mastodonLimits text > platformMaxCharacters mastodonLimits =
-      Left $ "Mastodon post exceeds " <> T.pack (show (platformMaxCharacters mastodonLimits))
-        <> " characters (actual: " <> T.pack (show (calculatePostLength mastodonLimits text)) <> ")"
+  | calculatePostLength Mastodon.limits text > platformMaxCharacters Mastodon.limits =
+      Left $ "Mastodon post exceeds " <> T.pack (show (platformMaxCharacters Mastodon.limits))
+        <> " characters (actual: " <> T.pack (show (calculatePostLength Mastodon.limits text)) <> ")"
   | otherwise = Right (MastodonPost text)
 
 mkSocialPost :: Platform -> Text -> Either Text SocialPost
@@ -185,9 +180,9 @@ minPostableBodyLength = 50
 detectPostedPlatforms :: Text -> Set Platform
 detectPostedPlatforms content =
   Set.fromList $ mapMaybe checkHeader
-    [ (tweetSectionHeader, Twitter)
-    , (blueskySectionHeader, Bluesky)
-    , (mastodonSectionHeader, Mastodon)
+    [ (Twitter.sectionHeader, Twitter)
+    , (Bluesky.sectionHeader, Bluesky)
+    , (Mastodon.sectionHeader, Mastodon)
     ]
   where
     checkHeader (header, platform)
@@ -195,14 +190,14 @@ detectPostedPlatforms content =
       | otherwise = Nothing
 
 platformSectionHeader :: Platform -> Text
-platformSectionHeader Twitter  = tweetSectionHeader
-platformSectionHeader Bluesky  = blueskySectionHeader
-platformSectionHeader Mastodon = mastodonSectionHeader
+platformSectionHeader Twitter  = Twitter.sectionHeader
+platformSectionHeader Bluesky  = Bluesky.sectionHeader
+platformSectionHeader Mastodon = Mastodon.sectionHeader
 
 platformLimits :: Platform -> PlatformLimits
-platformLimits Twitter  = twitterLimits
-platformLimits Bluesky  = blueskyLimits
-platformLimits Mastodon = mastodonLimits
+platformLimits Twitter  = Twitter.limits
+platformLimits Bluesky  = Bluesky.limits
+platformLimits Mastodon = Mastodon.limits
 
 --------------------------------------------------------------------------------
 -- Link extraction
@@ -666,32 +661,32 @@ generateSocialPostText manager apiKey note platform = do
       tagsCombined = ppSystem tagsPrompt <> "\n\n" <> ppUser tagsPrompt
       questionCombined = ppSystem questionPrompt <> "\n\n" <> ppUser questionPrompt
       maxLen = platformMaxCharacters (platformLimits platform)
-      genConfig = defaultGenerationConfig { gcTemperature = 0.8, gcMaxOutputTokens = 512 }
-      tagsModels = [defaultGeminiModel, gemini3Flash, geminiFlashFallback]
-      questionModels = [defaultQuestionModel, geminiFlashFallback]
+      genConfig = Gemini.defaultGenerationConfig { Gemini.gcTemperature = 0.8, Gemini.gcMaxOutputTokens = 512 }
+      tagsModels = [Gemini.defaultModel, Gemini.gemini3Flash, Gemini.flashFallback]
+      questionModels = [Gemini.defaultQuestionModel, Gemini.flashFallback]
 
-  tagsResult <- generateContentWithFallback manager tagsModels tagsCombined apiKey genConfig
-  questionResult <- generateContentWithFallback manager questionModels questionCombined apiKey genConfig
+  tagsResult <- Gemini.generateContentWithFallback manager tagsModels tagsCombined apiKey genConfig
+  questionResult <- Gemini.generateContentWithFallback manager questionModels questionCombined apiKey genConfig
 
   case (tagsResult, questionResult) of
     (Left err, _) -> pure (Left $ "Tags generation failed: " <> err)
     (_, Left err) -> pure (Left $ "Question generation failed: " <> err)
     (Right tagsResp, Right questionResp) -> do
-      let tags = T.strip (grText tagsResp)
-          question = T.strip (grText questionResp)
+      let tags = T.strip (Gemini.grText tagsResp)
+          question = T.strip (Gemini.grText questionResp)
           modelOutput = question <> "\n" <> tags
           rawPost = assemblePost modelOutput rd
-          overage = T.length rawPost - platformMaxCharacters blueskyLimits
+          overage = T.length rawPost - platformMaxCharacters Bluesky.limits
       finalPost <- case overage > 0 of
         True -> do
           let shortenSafetyBuffer = 10
               shortenPrompt = buildShortenQuestionPrompt question (overage + shortenSafetyBuffer)
               shortenCombined = ppSystem shortenPrompt <> "\n\n" <> ppUser shortenPrompt
           putStrLn $ "  ✂️ Post exceeds Bluesky limit by " <> show overage <> " chars — asking LLM to shorten question..."
-          shortenResult <- generateContentWithFallback manager questionModels shortenCombined apiKey genConfig
+          shortenResult <- Gemini.generateContentWithFallback manager questionModels shortenCombined apiKey genConfig
           case shortenResult of
             Right shortenResp -> do
-              let shortenedQ = T.strip (grText shortenResp)
+              let shortenedQ = T.strip (Gemini.grText shortenResp)
                   shortenedOutput = shortenedQ <> "\n" <> tags
               pure $ assemblePost shortenedOutput rd
             Left _ -> pure rawPost
@@ -722,12 +717,12 @@ postToTwitterPlatform manager env _note postText =
   case ecTwitter env of
     Nothing -> pure (Left "Twitter not configured")
     Just creds -> do
-      result <- postTweet manager creds postText
+      result <- Twitter.post manager creds postText
       case result of
         Left err -> pure (Left $ "Twitter post failed: " <> err)
         Right (tweetId, _tweetText) -> do
-          embedHtml <- getEmbedHtml manager tweetId (unSecret (tcAccessToken creds))
-                         (unSecret (tcApiKey creds)) (unSecret (tcApiSecret creds))
+          embedHtml <- Twitter.getEmbedHtml manager tweetId (unSecret (Twitter.tcAccessToken creds))
+                         (unSecret (Twitter.tcApiKey creds)) (unSecret (Twitter.tcApiSecret creds))
           pure $ Right PostResult
             { prPlatform = Twitter
             , prEmbedHtml = embedHtml
@@ -741,23 +736,23 @@ postToBlueskyPlatform manager env note postText =
     Nothing -> pure (Left "Bluesky not configured")
     Just creds -> do
       ogMeta <- fetchOgMetadata (unUrl (cnUrl note))
-      let linkCard = LinkCard
+      let linkCard = Bluesky.LinkCard
             { lcUri = cnUrl note
             , lcTitle = fromMaybe (cnTitle note) (ogTitle ogMeta)
             , lcDescription = fromMaybe "" (ogDescription ogMeta)
             , lcThumbUrl = ogImageUrl ogMeta
             }
-      result <- postToBluesky manager creds postText (Just linkCard)
+      result <- Bluesky.post manager creds postText (Just linkCard)
       case result of
         Left err -> pure (Left $ "Bluesky post failed: " <> err)
         Right bpr -> do
-          let mDid = extractBlueskyDid (bprUri bpr)
-              mPostId = extractBlueskyPostId (bprUri bpr)
+          let mDid = Bluesky.extractDid (Bluesky.bprUri bpr)
+              mPostId = Bluesky.extractPostId (Bluesky.bprUri bpr)
           case (mDid, mPostId) of
             (Just did, Just postId) -> do
-              let postUrl = buildBlueskyPostUrl (bcIdentifier creds) postId
-              embedHtml <- getBlueskyEmbedHtml manager postUrl did
-                             (bcIdentifier creds) postId Nothing
+              let postUrl = Bluesky.buildPostUrl (Bluesky.bcIdentifier creds) postId
+              embedHtml <- Bluesky.getEmbedHtml manager postUrl did
+                             (Bluesky.bcIdentifier creds) postId Nothing
               pure $ Right PostResult
                 { prPlatform = Bluesky
                 , prEmbedHtml = embedHtml
@@ -771,17 +766,17 @@ postToMastodonPlatform manager env _note postText =
   case ecMastodon env of
     Nothing -> pure (Left "Mastodon not configured")
     Just creds -> do
-      result <- postToMastodon manager creds postText
+      result <- Mastodon.post manager creds postText
       case result of
         Left err -> pure (Left $ "Mastodon post failed: " <> err)
         Right mpr -> do
-          let postUrl = unUrl (mprUrl mpr)
-              mInstance = extractMastodonInstanceUrl postUrl
-              mStatusId = extractMastodonStatusId postUrl
-              mUsername = extractMastodonUsername postUrl
+          let postUrl = unUrl (Mastodon.mprUrl mpr)
+              mInstance = Mastodon.extractInstanceUrl postUrl
+              mStatusId = Mastodon.extractStatusId postUrl
+              mUsername = Mastodon.extractUsername postUrl
           case (mInstance, mStatusId, mUsername) of
             (Just instanceUrl, Just statusId, Just _username) -> do
-              embedHtml <- getMastodonEmbedHtml manager postUrl instanceUrl statusId
+              embedHtml <- Mastodon.getEmbedHtml manager postUrl instanceUrl statusId
               pure $ Right PostResult
                 { prPlatform = Mastodon
                 , prEmbedHtml = embedHtml
@@ -896,7 +891,7 @@ eitherToMaybe (Left _)  = Nothing
 autoPost :: Manager -> FilePath -> IO ()
 autoPost manager vaultDir = do
   env <- validateEnvironment
-  let apiKey = gcApiKey (ecGemini env)
+  let apiKey = Gemini.gcApiKey (ecGemini env)
 
   postedNotes <- runPostingPipeline manager env apiKey vaultDir
 

@@ -10,7 +10,8 @@ import qualified Test.Tasty.QuickCheck as QC
 
 import Automation.Prompts
 import Automation.TestGenerators (testUrl, testTitle)
-import Automation.Types (ReflectionData (..), PlatformLimits (..), Title, unTitle, mkTitle, Url, unUrl, mkUrl, blueskyLimits)
+import qualified Automation.Platforms.Bluesky as Bluesky
+import Automation.Types (ReflectionData (..), PlatformLimits (..), Title, unTitle, mkTitle, Url, unUrl, mkUrl)
 
 tests :: TestTree
 tests = testGroup "Prompts"
@@ -71,7 +72,7 @@ calculateQuestionBudgetTests = testGroup "calculateQuestionBudget"
       in calculateQuestionBudget extreme @?= 30
   , testCase "budget is at most blueskyMaxLength" $
       let budget = calculateQuestionBudget sampleReflection
-      in assertBool "budget within max" (budget <= platformMaxCharacters blueskyLimits)
+      in assertBool "budget within max" (budget <= platformMaxCharacters Bluesky.limits)
   ]
 
 --------------------------------------------------------------------------------

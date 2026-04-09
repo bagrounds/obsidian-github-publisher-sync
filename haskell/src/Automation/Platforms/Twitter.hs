@@ -1,12 +1,12 @@
 module Automation.Platforms.Twitter
-  ( TwitterCredentials (..)
-  , TweetResult (..)
-  , twitterLimits
+  ( Credentials (..)
+  , PostResult (..)
+  , limits
   , twitterHandle
-  , twitterDisplayName
-  , tweetSectionHeader
-  , postTweet
-  , deleteTweet
+  , displayName
+  , sectionHeader
+  , post
+  , deletePost
   , fetchOEmbed
   , generateLocalEmbed
   , getEmbedHtml
@@ -47,22 +47,22 @@ import Automation.Platform (PlatformLimits (..))
 import Automation.Retry (HttpCodeException (..), defaultRetryOptions, withRetry)
 import Automation.Secret (Secret (..))
 
-data TwitterCredentials = TwitterCredentials
+data Credentials = Credentials
   { tcApiKey :: Secret
   , tcApiSecret :: Secret
   , tcAccessToken :: Secret
   , tcAccessSecret :: Secret
   } deriving (Show, Eq)
 
-data TweetResult = TweetResult
+data PostResult = PostResult
   { trId :: Text
   , trText :: Text
   } deriving (Show, Eq)
 
 -- ── Platform constants ─────────────────────────────────────────────────
 
-twitterLimits :: PlatformLimits
-twitterLimits = PlatformLimits
+limits :: PlatformLimits
+limits = PlatformLimits
   { platformMaxCharacters = 280
   , platformUrlCountLength = Just 23
   }
@@ -70,11 +70,11 @@ twitterLimits = PlatformLimits
 twitterHandle :: Text
 twitterHandle = "bagrounds"
 
-twitterDisplayName :: Text
-twitterDisplayName = "Bryan Grounds"
+displayName :: Text
+displayName = "Bryan Grounds"
 
-tweetSectionHeader :: Text
-tweetSectionHeader = "## 🐦 Tweet"
+sectionHeader :: Text
+sectionHeader = "## 🐦 Tweet"
 
 -- ── Constants ──────────────────────────────────────────────────────────
 
@@ -140,8 +140,8 @@ generateUUID = do
     toHex :: Int -> String
     toHex b = [intToDigit (b `div` 16), intToDigit (b `mod` 16)]
 
-buildOAuthHeader :: TwitterCredentials -> Text -> Text -> IO Text
-buildOAuthHeader TwitterCredentials {..} httpMethod baseUrl = do
+buildOAuthHeader :: Credentials -> Text -> Text -> IO Text
+buildOAuthHeader Credentials {..} httpMethod baseUrl = do
   timestamp <- T.pack . show . (floor @Double @Integer) . realToFrac <$> getPOSIXTime
   nonce <- generateNonce
   let oauthParams =
@@ -168,8 +168,8 @@ buildOAuthHeader TwitterCredentials {..} httpMethod baseUrl = do
 
 -- ── Posting ────────────────────────────────────────────────────────────
 
-postTweet :: Manager -> TwitterCredentials -> Text -> IO (Either Text (Text, Text))
-postTweet manager creds tweetText = do
+post :: Manager -> Credentials -> Text -> IO (Either Text (Text, Text))
+post manager creds tweetText = do
   idempotencyKey <- generateUUID
   let bodyJson = encode (object ["text" .= tweetText])
   result <- try @SomeException $ withRetry defaultRetryOptions $ do
@@ -216,8 +216,8 @@ extractTweetData fallbackText = withObject "tweet response" $ \obj -> do
 
 -- ── Deleting ───────────────────────────────────────────────────────────
 
-deleteTweet :: Manager -> TwitterCredentials -> Text -> IO (Either Text ())
-deleteTweet manager creds tweetId = do
+deletePost :: Manager -> Credentials -> Text -> IO (Either Text ())
+deletePost manager creds tweetId = do
   let url = tweetsApiUrl <> "/" <> tweetId
   result <- try @SomeException $ do
     authHeader <- buildOAuthHeader creds "DELETE" url
@@ -275,7 +275,7 @@ generateLocalEmbed tweetId tweetText date handle =
        <> htmlText
        <> "</p>"
        <> "&mdash; "
-       <> twitterDisplayName
+       <> displayName
        <> " (@"
        <> handle
        <> ") "

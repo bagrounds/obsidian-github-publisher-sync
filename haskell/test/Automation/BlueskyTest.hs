@@ -6,12 +6,7 @@ import Test.Tasty (TestTree, testGroup)
 import Test.Tasty.HUnit (testCase, (@?=), assertBool)
 import Test.Tasty.QuickCheck (testProperty)
 
-import Automation.Platforms.Bluesky
-  ( extractBlueskyPostId
-  , extractBlueskyDid
-  , buildBlueskyPostUrl
-  , generateLocalBlueskyEmbed
-  )
+import qualified Automation.Platforms.Bluesky as Bluesky
 
 tests :: TestTree
 tests = testGroup "Bluesky"
@@ -22,55 +17,55 @@ tests = testGroup "Bluesky"
   , propertyTests
   ]
 
--- ── extractBlueskyPostId ───────────────────────────────────────────────
+-- ── Bluesky.extractPostId ─────────────────────────────────────────────
 
 extractPostIdTests :: TestTree
-extractPostIdTests = testGroup "extractBlueskyPostId"
+extractPostIdTests = testGroup "Bluesky.extractPostId"
   [ testCase "extracts post id from at:// URI" $
-      extractBlueskyPostId "at://did:plc:abc123/app.bsky.feed.post/3abc"
+      Bluesky.extractPostId "at://did:plc:abc123/app.bsky.feed.post/3abc"
         @?= Just "3abc"
 
   , testCase "extracts post id from bsky.app URL" $
-      extractBlueskyPostId "https://bsky.app/profile/did:plc:abc123/post/xyz789"
+      Bluesky.extractPostId "https://bsky.app/profile/did:plc:abc123/post/xyz789"
         @?= Just "xyz789"
 
   , testCase "handles single segment" $
       assertBool "should return Just for single segment" $
-        isJust (extractBlueskyPostId "singlevalue")
+        isJust (Bluesky.extractPostId "singlevalue")
   ]
 
--- ── extractBlueskyDid ──────────────────────────────────────────────────
+-- ── Bluesky.extractDid ────────────────────────────────────────────────
 
 extractDidTests :: TestTree
-extractDidTests = testGroup "extractBlueskyDid"
+extractDidTests = testGroup "Bluesky.extractDid"
   [ testCase "extracts DID from at:// URI" $
-      extractBlueskyDid "at://did:plc:abc123/app.bsky.feed.post/xyz"
+      Bluesky.extractDid "at://did:plc:abc123/app.bsky.feed.post/xyz"
         @?= Just "did:plc:abc123"
 
   , testCase "extracts DID from bsky.app URL with /profile/" $
-      extractBlueskyDid "https://bsky.app/profile/did:plc:abc123/post/xyz"
+      Bluesky.extractDid "https://bsky.app/profile/did:plc:abc123/post/xyz"
         @?= Just "did:plc:abc123"
 
   , testCase "returns Nothing for URL without DID" $
       assertBool "should be Nothing" $
-        isNothing (extractBlueskyDid "https://example.com/nothing")
+        isNothing (Bluesky.extractDid "https://example.com/nothing")
   ]
 
--- ── buildBlueskyPostUrl ────────────────────────────────────────────────
+-- ── Bluesky.buildPostUrl ──────────────────────────────────────────────
 
 buildPostUrlTests :: TestTree
-buildPostUrlTests = testGroup "buildBlueskyPostUrl"
+buildPostUrlTests = testGroup "Bluesky.buildPostUrl"
   [ testCase "builds correct URL" $
-      buildBlueskyPostUrl "did:plc:abc123" "xyz789"
+      Bluesky.buildPostUrl "did:plc:abc123" "xyz789"
         @?= "https://bsky.app/profile/did:plc:abc123/post/xyz789"
   ]
 
--- ── generateLocalBlueskyEmbed ──────────────────────────────────────────
+-- ── Bluesky.generateLocalEmbed ────────────────────────────────────────
 
 generateLocalEmbedTests :: TestTree
-generateLocalEmbedTests = testGroup "generateLocalBlueskyEmbed"
+generateLocalEmbedTests = testGroup "Bluesky.generateLocalEmbed"
   [ testCase "contains blockquote with data attributes" $ do
-      let html = generateLocalBlueskyEmbed
+      let html = Bluesky.generateLocalEmbed
                    "at://did:plc:abc/app.bsky.feed.post/xyz"
                    "Hello world"
                    "2024-03-15"
@@ -86,7 +81,7 @@ generateLocalEmbedTests = testGroup "generateLocalBlueskyEmbed"
         "data-bluesky-embed-color-mode=\"system\"" `T.isInfixOf` html
 
   , testCase "includes CID attribute when provided" $ do
-      let html = generateLocalBlueskyEmbed
+      let html = Bluesky.generateLocalEmbed
                    "at://did:plc:abc/app.bsky.feed.post/xyz"
                    "Hello"
                    "2024-03-15"
@@ -96,7 +91,7 @@ generateLocalEmbedTests = testGroup "generateLocalBlueskyEmbed"
         "data-bluesky-cid=\"bafyreiabc\"" `T.isInfixOf` html
 
   , testCase "omits CID attribute when Nothing" $ do
-      let html = generateLocalBlueskyEmbed
+      let html = Bluesky.generateLocalEmbed
                    "at://did:plc:abc/app.bsky.feed.post/xyz"
                    "Hello"
                    "2024-03-15"
@@ -106,7 +101,7 @@ generateLocalEmbedTests = testGroup "generateLocalBlueskyEmbed"
         not ("data-bluesky-cid" `T.isInfixOf` html)
 
   , testCase "formats date correctly" $ do
-      let html = generateLocalBlueskyEmbed
+      let html = Bluesky.generateLocalEmbed
                    "at://did:plc:abc/app.bsky.feed.post/xyz"
                    "Hello"
                    "2024-03-15"
@@ -116,7 +111,7 @@ generateLocalEmbedTests = testGroup "generateLocalBlueskyEmbed"
         "March 15, 2024" `T.isInfixOf` html
 
   , testCase "escapes HTML in post text" $ do
-      let html = generateLocalBlueskyEmbed
+      let html = Bluesky.generateLocalEmbed
                    "at://did:plc:abc/app.bsky.feed.post/xyz"
                    "Hello <world> & \"friends\""
                    "2024-01-01"
@@ -128,7 +123,7 @@ generateLocalEmbedTests = testGroup "generateLocalBlueskyEmbed"
         "&amp;" `T.isInfixOf` html
 
   , testCase "includes handle link" $ do
-      let html = generateLocalBlueskyEmbed
+      let html = Bluesky.generateLocalEmbed
                    "at://did:plc:abc/app.bsky.feed.post/xyz"
                    "Hi"
                    "2024-01-01"
@@ -140,7 +135,7 @@ generateLocalEmbedTests = testGroup "generateLocalBlueskyEmbed"
         "bsky.app/profile/did:plc:abc?ref_src=embed" `T.isInfixOf` html
 
   , testCase "includes display name" $ do
-      let html = generateLocalBlueskyEmbed
+      let html = Bluesky.generateLocalEmbed
                    "at://did:plc:abc/app.bsky.feed.post/xyz"
                    "Hi"
                    "2024-01-01"
@@ -154,24 +149,24 @@ generateLocalEmbedTests = testGroup "generateLocalBlueskyEmbed"
 
 propertyTests :: TestTree
 propertyTests = testGroup "properties"
-  [ testProperty "buildBlueskyPostUrl contains DID and postId" $
+  [ testProperty "Bluesky.buildPostUrl contains DID and postId" $
       \didSuffix postIdSuffix ->
         let did = "did:plc:" <> T.pack didSuffix
             postId = T.pack postIdSuffix
-            url = buildBlueskyPostUrl did postId
+            url = Bluesky.buildPostUrl did postId
         in did `T.isInfixOf` url && postId `T.isInfixOf` url
 
-  , testProperty "extractBlueskyPostId returns last path segment for at:// URIs" $
+  , testProperty "Bluesky.extractPostId returns last path segment for at:// URIs" $
       \rkey ->
         let rk = T.pack (filter (`notElem` ['/', ' ', '\n', '\r', '\t', '\0']) rkey)
             uri = "at://did:plc:test/app.bsky.feed.post/" <> rk
-        in case extractBlueskyPostId uri of
+        in case Bluesky.extractPostId uri of
              Just pid -> pid == rk
              Nothing  -> T.null rk
 
-  , testProperty "generateLocalBlueskyEmbed output is non-empty" $
+  , testProperty "Bluesky.generateLocalEmbed output is non-empty" $
       \postText ->
-        let html = generateLocalBlueskyEmbed
+        let html = Bluesky.generateLocalEmbed
                      "at://did:plc:test/app.bsky.feed.post/abc"
                      (T.pack postText)
                      "2024-01-01"

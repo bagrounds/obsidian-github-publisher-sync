@@ -16,19 +16,19 @@ import qualified Data.Text.IO as TIO
 import Data.Time (Day, UTCTime (..), addDays, defaultTimeLocale, formatTime, getCurrentTime)
 import System.Environment (lookupEnv)
 
-import Automation.Gemini (GeminiConfig (..), defaultGeminiModel, defaultQuestionModel)
+import qualified Automation.Gemini as Gemini
 import Automation.ObsidianSync (ObsidianCredentials (..))
-import Automation.Platforms.Bluesky (BlueskyCredentials (..))
-import Automation.Platforms.Mastodon (MastodonCredentials (..))
-import Automation.Platforms.Twitter (TwitterCredentials (..))
+import qualified Automation.Platforms.Bluesky as Bluesky
+import qualified Automation.Platforms.Mastodon as Mastodon
+import qualified Automation.Platforms.Twitter as Twitter
 import Automation.Secret (Secret (..))
 import Automation.Url (mkUrl)
 
 data EnvironmentConfig = EnvironmentConfig
-  { ecTwitter :: Maybe TwitterCredentials
-  , ecBluesky :: Maybe BlueskyCredentials
-  , ecMastodon :: Maybe MastodonCredentials
-  , ecGemini :: GeminiConfig
+  { ecTwitter :: Maybe Twitter.Credentials
+  , ecBluesky :: Maybe Bluesky.Credentials
+  , ecMastodon :: Maybe Mastodon.Credentials
+  , ecGemini :: Gemini.Config
   , ecObsidian :: ObsidianCredentials
   } deriving (Show, Eq)
 
@@ -87,7 +87,7 @@ validateEnvironment = do
 
   twitter <- whenPlatformEnabled "Twitter" "DISABLE_TWITTER"
     ["TWITTER_API_KEY", "TWITTER_API_SECRET", "TWITTER_ACCESS_TOKEN", "TWITTER_ACCESS_SECRET"]
-    (TwitterCredentials
+    (Twitter.Credentials
       <$> fmap Secret (requireEnv "TWITTER_API_KEY")
       <*> fmap Secret (requireEnv "TWITTER_API_SECRET")
       <*> fmap Secret (requireEnv "TWITTER_ACCESS_TOKEN")
@@ -95,20 +95,20 @@ validateEnvironment = do
 
   bluesky <- whenPlatformEnabled "Bluesky" "DISABLE_BLUESKY"
     ["BLUESKY_IDENTIFIER", "BLUESKY_APP_PASSWORD"]
-    (BlueskyCredentials
+    (Bluesky.Credentials
       <$> requireEnv "BLUESKY_IDENTIFIER"
       <*> fmap Secret (requireEnv "BLUESKY_APP_PASSWORD"))
 
   mastodon <- whenPlatformEnabled "Mastodon" "DISABLE_MASTODON"
     ["MASTODON_INSTANCE_URL", "MASTODON_ACCESS_TOKEN"]
-    (MastodonCredentials
+    (Mastodon.Credentials
       <$> (requireEnv "MASTODON_INSTANCE_URL" >>= either (fail . T.unpack) pure . mkUrl)
       <*> fmap Secret (requireEnv "MASTODON_ACCESS_TOKEN"))
 
-  gemini <- GeminiConfig
+  gemini <- Gemini.Config
     <$> fmap Secret (requireEnv "GEMINI_API_KEY")
-    <*> fmap (fromMaybe defaultGeminiModel) (lookupEnvText "GEMINI_MODEL")
-    <*> fmap (fromMaybe defaultQuestionModel) (lookupEnvText "GEMINI_QUESTION_MODEL")
+    <*> fmap (fromMaybe Gemini.defaultModel) (lookupEnvText "GEMINI_MODEL")
+    <*> fmap (fromMaybe Gemini.defaultQuestionModel) (lookupEnvText "GEMINI_QUESTION_MODEL")
 
   obsidian <- ObsidianCredentials
     <$> fmap Secret (requireEnv "OBSIDIAN_AUTH_TOKEN")

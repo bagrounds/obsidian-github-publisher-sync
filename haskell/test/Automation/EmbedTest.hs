@@ -3,7 +3,7 @@ module Automation.EmbedTest (tests) where
 import Test.Tasty (TestTree, testGroup)
 import Test.Tasty.HUnit (testCase, (@?=))
 
-import Automation.Platforms.Bluesky (EmbedResult (..))
+import qualified Automation.Platforms.Bluesky as Bluesky
 
 tests :: TestTree
 tests = testGroup "Embed"
@@ -13,8 +13,8 @@ tests = testGroup "Embed"
 embedResultTests :: TestTree
 embedResultTests = testGroup "EmbedResult"
   [ testCase "EmbedResult preserves HTML content" $
-      erHtml (EmbedResult "<div>hello</div>") @?= "<div>hello</div>"
+      Bluesky.erHtml (Bluesky.EmbedResult "<div>hello</div>") @?= "<div>hello</div>"
 
   , testCase "EmbedResult equality works" $
-      EmbedResult "<p>a</p>" @?= EmbedResult "<p>a</p>"
+      Bluesky.EmbedResult "<p>a</p>" @?= Bluesky.EmbedResult "<p>a</p>"
   ]

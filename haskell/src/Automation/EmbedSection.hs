@@ -14,9 +14,9 @@ import Data.Text (Text)
 import qualified Data.Text as T
 import qualified Data.Text.IO as TIO
 
-import Automation.Platforms.Bluesky (blueskySectionHeader)
-import Automation.Platforms.Mastodon (mastodonSectionHeader)
-import Automation.Platforms.Twitter (tweetSectionHeader)
+import qualified Automation.Platforms.Bluesky as Bluesky
+import qualified Automation.Platforms.Mastodon as Mastodon
+import qualified Automation.Platforms.Twitter as Twitter
 
 data EmbedSection = EmbedSection
   { esHeader :: Text
@@ -37,19 +37,19 @@ createSectionAppender header filePath embedHtml = do
     False -> TIO.writeFile filePath (content <> createSectionBuilder header content embedHtml)
 
 buildTweetSection :: Text -> Text -> Text
-buildTweetSection = createSectionBuilder tweetSectionHeader
+buildTweetSection = createSectionBuilder Twitter.sectionHeader
 
 buildBlueskySection :: Text -> Text -> Text
-buildBlueskySection = createSectionBuilder blueskySectionHeader
+buildBlueskySection = createSectionBuilder Bluesky.sectionHeader
 
 buildMastodonSection :: Text -> Text -> Text
-buildMastodonSection = createSectionBuilder mastodonSectionHeader
+buildMastodonSection = createSectionBuilder Mastodon.sectionHeader
 
 appendTweetSection :: FilePath -> Text -> IO ()
-appendTweetSection = createSectionAppender tweetSectionHeader
+appendTweetSection = createSectionAppender Twitter.sectionHeader
 
 appendBlueskySection :: FilePath -> Text -> IO ()
-appendBlueskySection = createSectionAppender blueskySectionHeader
+appendBlueskySection = createSectionAppender Bluesky.sectionHeader
 
 appendMastodonSection :: FilePath -> Text -> IO ()
-appendMastodonSection = createSectionAppender mastodonSectionHeader
+appendMastodonSection = createSectionAppender Mastodon.sectionHeader

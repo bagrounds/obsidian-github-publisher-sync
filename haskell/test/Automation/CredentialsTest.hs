@@ -4,13 +4,7 @@ import qualified Data.Text as T
 import Test.Tasty (TestTree, testGroup)
 import Test.Tasty.HUnit (testCase, (@?=), assertBool)
 
-import Automation.Gemini
-  ( defaultGeminiModel
-  , defaultQuestionModel
-  , gemini3Flash
-  , geminiFlashFallback
-  , geminiModelFallback
-  )
+import qualified Automation.Gemini as Gemini
 
 tests :: TestTree
 tests = testGroup "Gemini"
@@ -19,26 +13,26 @@ tests = testGroup "Gemini"
 
 geminiModelTests :: TestTree
 geminiModelTests = testGroup "Gemini model constants"
-  [ testCase "defaultGeminiModel is non-empty" $
-      assertBool "defaultGeminiModel should be non-empty" (not (T.null defaultGeminiModel))
+  [ testCase "Gemini.defaultModel is non-empty" $
+      assertBool "Gemini.defaultModel should be non-empty" (not (T.null Gemini.defaultModel))
 
-  , testCase "defaultQuestionModel is non-empty" $
-      assertBool "defaultQuestionModel should be non-empty" (not (T.null defaultQuestionModel))
+  , testCase "Gemini.defaultQuestionModel is non-empty" $
+      assertBool "Gemini.defaultQuestionModel should be non-empty" (not (T.null Gemini.defaultQuestionModel))
 
-  , testCase "gemini3Flash is non-empty" $
-      assertBool "gemini3Flash should be non-empty" (not (T.null gemini3Flash))
+  , testCase "Gemini.gemini3Flash is non-empty" $
+      assertBool "Gemini.gemini3Flash should be non-empty" (not (T.null Gemini.gemini3Flash))
 
-  , testCase "geminiFlashFallback is non-empty" $
-      assertBool "geminiFlashFallback should be non-empty" (not (T.null geminiFlashFallback))
+  , testCase "Gemini.flashFallback is non-empty" $
+      assertBool "Gemini.flashFallback should be non-empty" (not (T.null Gemini.flashFallback))
 
-  , testCase "geminiModelFallback returns Just for question model" $
-      geminiModelFallback defaultQuestionModel @?= Just geminiFlashFallback
+  , testCase "Gemini.modelFallback returns Just for question model" $
+      Gemini.modelFallback Gemini.defaultQuestionModel @?= Just Gemini.flashFallback
 
-  , testCase "geminiModelFallback returns Nothing for unknown model" $
-      geminiModelFallback "unknown-model" @?= Nothing
+  , testCase "Gemini.modelFallback returns Nothing for unknown model" $
+      Gemini.modelFallback "unknown-model" @?= Nothing
 
   , testCase "all model names are distinct" $
-      let models = [defaultGeminiModel, defaultQuestionModel, gemini3Flash, geminiFlashFallback]
+      let models = [Gemini.defaultModel, Gemini.defaultQuestionModel, Gemini.gemini3Flash, Gemini.flashFallback]
       in assertBool "all models should be unique" (length models == length (nub models))
   ]
   where

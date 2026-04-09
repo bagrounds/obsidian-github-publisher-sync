@@ -5,7 +5,10 @@ import Test.Tasty.HUnit (testCase, (@?=), assertBool)
 import qualified Data.Text as T
 
 import Automation.Text
-import Automation.Types (PlatformLimits (..), twitterLimits, blueskyLimits, mastodonLimits)
+import Automation.Platform (PlatformLimits (..))
+import qualified Automation.Platforms.Bluesky as Bluesky
+import qualified Automation.Platforms.Mastodon as Mastodon
+import qualified Automation.Platforms.Twitter as Twitter
 
 tests :: TestTree
 tests = testGroup "Text"
@@ -19,20 +22,20 @@ tests = testGroup "Text"
       assertBool "should be at most limit" $
         T.length (truncateToGraphemeLimit "hello world" 5) <= 5
 
-  , testCase "calculatePostLength with twitterLimits counts URL as 23 chars" $
-      calculatePostLength twitterLimits "check https://example.com/very/long/path out" @?=
+  , testCase "calculatePostLength with Twitter.limits counts URL as 23 chars" $
+      calculatePostLength Twitter.limits "check https://example.com/very/long/path out" @?=
         T.length "check https://example.com/very/long/path out"
           + (23 - T.length "https://example.com/very/long/path")
 
-  , testCase "calculatePostLength with twitterLimits counts short URL as 23 chars" $
-      calculatePostLength twitterLimits "see https://x.co done" @?=
+  , testCase "calculatePostLength with Twitter.limits counts short URL as 23 chars" $
+      calculatePostLength Twitter.limits "see https://x.co done" @?=
         T.length "see https://x.co done" + (23 - T.length "https://x.co")
 
-  , testCase "calculatePostLength with twitterLimits no URL returns text length" $
-      calculatePostLength twitterLimits "no urls here at all" @?= 19
+  , testCase "calculatePostLength with Twitter.limits no URL returns text length" $
+      calculatePostLength Twitter.limits "no urls here at all" @?= 19
 
-  , testCase "validatePostLength with twitterLimits short" $
-      fst (validatePostLength twitterLimits "hello") @?= True
+  , testCase "validatePostLength with Twitter.limits short" $
+      fst (validatePostLength Twitter.limits "hello") @?= True
 
   , testCase "fitPostToLimit within limit" $
       fitPostToLimit "hello" 100 @?= "hello"
@@ -90,26 +93,26 @@ tests = testGroup "Text"
       in assertBool ("different posts should score < 0.25, got " <> show sim) (sim < 0.25)
 
   -- calculatePostLength / validatePostLength tests
-  , testCase "calculatePostLength with twitterLimits adjusts URLs" $
-      calculatePostLength twitterLimits "check https://example.com/very/long/path out" @?=
+  , testCase "calculatePostLength with Twitter.limits adjusts URLs" $
+      calculatePostLength Twitter.limits "check https://example.com/very/long/path out" @?=
         T.length "check https://example.com/very/long/path out"
           + (23 - T.length "https://example.com/very/long/path")
 
-  , testCase "calculatePostLength with blueskyLimits does not adjust URLs" $
-      calculatePostLength blueskyLimits "check https://example.com/very/long/path out" @?=
+  , testCase "calculatePostLength with Bluesky.limits does not adjust URLs" $
+      calculatePostLength Bluesky.limits "check https://example.com/very/long/path out" @?=
         T.length "check https://example.com/very/long/path out"
 
-  , testCase "calculatePostLength with mastodonLimits does not adjust URLs" $
-      calculatePostLength mastodonLimits "hello world" @?= 11
+  , testCase "calculatePostLength with Mastodon.limits does not adjust URLs" $
+      calculatePostLength Mastodon.limits "hello world" @?= 11
 
-  , testCase "validatePostLength with blueskyLimits accepts short text" $
-      fst (validatePostLength blueskyLimits "hello") @?= True
+  , testCase "validatePostLength with Bluesky.limits accepts short text" $
+      fst (validatePostLength Bluesky.limits "hello") @?= True
 
-  , testCase "validatePostLength with blueskyLimits rejects text over 300" $
-      fst (validatePostLength blueskyLimits (T.replicate 301 "x")) @?= False
+  , testCase "validatePostLength with Bluesky.limits rejects text over 300" $
+      fst (validatePostLength Bluesky.limits (T.replicate 301 "x")) @?= False
 
-  , testCase "validatePostLength with mastodonLimits accepts 500 chars" $
-      fst (validatePostLength mastodonLimits (T.replicate 500 "x")) @?= True
+  , testCase "validatePostLength with Mastodon.limits accepts 500 chars" $
+      fst (validatePostLength Mastodon.limits (T.replicate 500 "x")) @?= True
 
   , testCase "calculatePostLength with no URL count returns text length" $
       calculatePostLength (PlatformLimits 100 Nothing) "hello" @?= 5

@@ -1,21 +1,21 @@
 module Automation.Platforms.Bluesky
-  ( BlueskyCredentials (..)
-  , BlueskyPostResult (..)
+  ( Credentials (..)
+  , PostResult (..)
   , EmbedResult (..)
   , LinkCard (..)
-  , blueskyLimits
-  , blueskyDisplayName
-  , blueskySectionHeader
-  , blueskyOembedInitialDelayMs
-  , blueskyOembedRetryDelayMs
-  , extractBlueskyPostId
-  , extractBlueskyDid
-  , buildBlueskyPostUrl
-  , postToBluesky
-  , deleteBlueskyPost
-  , fetchBlueskyOEmbed
-  , generateLocalBlueskyEmbed
-  , getBlueskyEmbedHtml
+  , limits
+  , displayName
+  , sectionHeader
+  , oembedInitialDelayMs
+  , oembedRetryDelayMs
+  , extractPostId
+  , extractDid
+  , buildPostUrl
+  , post
+  , deletePost
+  , fetchOEmbed
+  , generateLocalEmbed
+  , getEmbedHtml
   ) where
 
 import Control.Concurrent (threadDelay)
@@ -52,12 +52,12 @@ import Automation.Url (Url, unUrl)
 
 -- ── Domain types ───────────────────────────────────────────────────────
 
-data BlueskyCredentials = BlueskyCredentials
+data Credentials = Credentials
   { bcIdentifier :: Text
   , bcPassword :: Secret
   } deriving (Show, Eq)
 
-data BlueskyPostResult = BlueskyPostResult
+data PostResult = PostResult
   { bprUri :: Text
   , bprCid :: Text
   , bprText :: Text
@@ -76,23 +76,23 @@ data LinkCard = LinkCard
 
 -- ── Platform constants ─────────────────────────────────────────────────
 
-blueskyLimits :: PlatformLimits
-blueskyLimits = PlatformLimits
+limits :: PlatformLimits
+limits = PlatformLimits
   { platformMaxCharacters = 300
   , platformUrlCountLength = Nothing
   }
 
-blueskyDisplayName :: Text
-blueskyDisplayName = "Bryan Grounds"
+displayName :: Text
+displayName = "Bryan Grounds"
 
-blueskySectionHeader :: Text
-blueskySectionHeader = "## 🦋 Bluesky"
+sectionHeader :: Text
+sectionHeader = "## 🦋 Bluesky"
 
-blueskyOembedInitialDelayMs :: Int
-blueskyOembedInitialDelayMs = 0
+oembedInitialDelayMs :: Int
+oembedInitialDelayMs = 0
 
-blueskyOembedRetryDelayMs :: Int
-blueskyOembedRetryDelayMs = 2000
+oembedRetryDelayMs :: Int
+oembedRetryDelayMs = 2000
 
 -- ── Constants ──────────────────────────────────────────────────────────
 
@@ -109,8 +109,8 @@ data AtpSession = AtpSession
   , asAccessToken :: Text
   }
 
-createSession :: Manager -> BlueskyCredentials -> IO (Either Text AtpSession)
-createSession manager BlueskyCredentials{..} = do
+createSession :: Manager -> Credentials -> IO (Either Text AtpSession)
+createSession manager Credentials{..} = do
   let url = T.unpack (atpBaseUrl <> "com.atproto.server.createSession")
       bodyJson = encode (object
         [ "identifier" .= bcIdentifier
@@ -148,14 +148,14 @@ extractSession = withObject "session response" $ \obj -> do
 
 -- ── URL Extraction (Pure) ──────────────────────────────────────────────
 
-extractBlueskyPostId :: Text -> Maybe Text
-extractBlueskyPostId uri =
+extractPostId :: Text -> Maybe Text
+extractPostId uri =
   case T.splitOn "/" uri of
     parts | not (null parts) -> Just (last parts)
     _                        -> Nothing
 
-extractBlueskyDid :: Text -> Maybe Text
-extractBlueskyDid uri =
+extractDid :: Text -> Maybe Text
+extractDid uri =
   case T.breakOn "did:" uri of
     (_, rest) | not (T.null rest) ->
       Just (T.takeWhile (\c -> c /= '/' && c /= '"' && c /= ' ') rest)
@@ -165,8 +165,8 @@ extractBlueskyDid uri =
         _         -> Nothing
       _ -> Nothing
 
-buildBlueskyPostUrl :: Text -> Text -> Text
-buildBlueskyPostUrl did postId =
+buildPostUrl :: Text -> Text -> Text
+buildPostUrl did postId =
   "https://bsky.app/profile/" <> did <> "/post/" <> postId
 
 -- ── Facet Detection ────────────────────────────────────────────────────
@@ -258,13 +258,13 @@ uploadBlob manager AtpSession{..} contentType imageData = do
 
 -- ── Posting ────────────────────────────────────────────────────────────
 
-postToBluesky
+post
   :: Manager
-  -> BlueskyCredentials
+  -> Credentials
   -> Text
   -> Maybe LinkCard
-  -> IO (Either Text BlueskyPostResult)
-postToBluesky manager creds postText maybeLinkCard = do
+  -> IO (Either Text PostResult)
+post manager creds postText maybeLinkCard = do
   sessionResult <- createSession manager creds
   case sessionResult of
     Left err -> pure (Left err)
@@ -275,7 +275,7 @@ createPost
   -> AtpSession
   -> Text
   -> Maybe LinkCard
-  -> IO (Either Text BlueskyPostResult)
+  -> IO (Either Text PostResult)
 createPost manager session@AtpSession{..} postText maybeLinkCard = do
   now <- getCurrentTime
   let createdAt = T.pack (formatTime defaultTimeLocale "%Y-%m-%dT%H:%M:%S.000Z" now)
@@ -346,7 +346,7 @@ buildEmbed manager session (Just LinkCard{..}) = do
             , "external" .= object externalFields
             ]
 
-parsePostResponse :: Text -> LBS.ByteString -> Either Text BlueskyPostResult
+parsePostResponse :: Text -> LBS.ByteString -> Either Text PostResult
 parsePostResponse postText body =
   case eitherDecode @Json.Value body of
     Left err  -> Left (T.pack err)
@@ -354,11 +354,11 @@ parsePostResponse postText body =
       Left err  -> Left (T.pack err)
       Right r   -> Right r
 
-extractPostData :: Text -> Json.Value -> Either String BlueskyPostResult
+extractPostData :: Text -> Json.Value -> Either String PostResult
 extractPostData postText = withObject "create record response" $ \obj -> do
   uri <- obj .: "uri"
   cid <- obj .: "cid"
-  pure BlueskyPostResult
+  pure PostResult
     { bprUri = uri
     , bprCid = cid
     , bprText = postText
@@ -366,12 +366,12 @@ extractPostData postText = withObject "create record response" $ \obj -> do
 
 -- ── Deleting ───────────────────────────────────────────────────────────
 
-deleteBlueskyPost
+deletePost
   :: Manager
-  -> BlueskyCredentials
+  -> Credentials
   -> Text
   -> IO (Either Text ())
-deleteBlueskyPost manager creds uri = do
+deletePost manager creds uri = do
   sessionResult <- createSession manager creds
   case sessionResult of
     Left err -> pure (Left err)
@@ -416,8 +416,8 @@ parseAtUri uri =
 
 -- ── Embed HTML ─────────────────────────────────────────────────────────
 
-fetchBlueskyOEmbed :: Manager -> Text -> IO (Either Text EmbedResult)
-fetchBlueskyOEmbed manager postUrl = do
+fetchOEmbed :: Manager -> Text -> IO (Either Text EmbedResult)
+fetchOEmbed manager postUrl = do
   let url = T.unpack oembedBaseUrl
               <> "?url=" <> T.unpack postUrl
               <> "&format=json"
@@ -440,11 +440,11 @@ parseOEmbedHtml body =
       Left err   -> Left (T.pack err)
       Right html -> Right (EmbedResult html)
 
-generateLocalBlueskyEmbed :: Text -> Text -> Text -> Text -> Maybe Text -> Text
-generateLocalBlueskyEmbed uri postText date handle maybeCid =
-  let did = fromMaybe "" (extractBlueskyDid uri)
-      postId = fromMaybe "" (extractBlueskyPostId uri)
-      postUrl = buildBlueskyPostUrl did postId
+generateLocalEmbed :: Text -> Text -> Text -> Text -> Maybe Text -> Text
+generateLocalEmbed uri postText date handle maybeCid =
+  let did = fromMaybe "" (extractDid uri)
+      postId = fromMaybe "" (extractPostId uri)
+      postUrl = buildPostUrl did postId
       htmlText = textToHtml postText
       displayDate = formatDisplayDate date
       cidAttr = maybe "" (\cid -> " data-bluesky-cid=\"" <> cid <> "\"") maybeCid
@@ -452,13 +452,13 @@ generateLocalBlueskyEmbed uri postText date handle maybeCid =
        <> uri <> "\"" <> cidAttr
        <> " data-bluesky-embed-color-mode=\"system\">"
        <> "<p lang=\"en\">" <> htmlText <> "</p>"
-       <> "\n&mdash; " <> blueskyDisplayName <> " "
+       <> "\n&mdash; " <> displayName <> " "
        <> "(<a href=\"https://bsky.app/profile/" <> did <> "?ref_src=embed\">@" <> handle <> "</a>) "
        <> "<a href=\"" <> postUrl <> "?ref_src=embed\">" <> displayDate <> "</a>"
        <> "</blockquote>"
        <> "<script async src=\"https://embed.bsky.app/static/embed.js\" charset=\"utf-8\"></script>"
 
-getBlueskyEmbedHtml
+getEmbedHtml
   :: Manager
   -> Text
   -> Text
@@ -466,21 +466,21 @@ getBlueskyEmbedHtml
   -> Text
   -> Maybe Text
   -> IO Text
-getBlueskyEmbedHtml manager uri postText date handle maybeCid =
-  let did = fromMaybe "" (extractBlueskyDid uri)
-      postId = fromMaybe "" (extractBlueskyPostId uri)
-      postUrl = buildBlueskyPostUrl did postId
-      fallback = generateLocalBlueskyEmbed uri postText date handle maybeCid
+getEmbedHtml manager uri postText date handle maybeCid =
+  let did = fromMaybe "" (extractDid uri)
+      postId = fromMaybe "" (extractPostId uri)
+      postUrl = buildPostUrl did postId
+      fallback = generateLocalEmbed uri postText date handle maybeCid
   in tryOEmbedWithRetry manager postUrl fallback 0 2
 
 tryOEmbedWithRetry :: Manager -> Text -> Text -> Int -> Int -> IO Text
 tryOEmbedWithRetry manager postUrl fallback attempt maxAttempts = do
   let delayMs = if attempt == 0
-        then blueskyOembedInitialDelayMs
-        else blueskyOembedRetryDelayMs
+        then oembedInitialDelayMs
+        else oembedRetryDelayMs
   when (delayMs > 0) $
     threadDelay (delayMs * 1000)
-  result <- fetchBlueskyOEmbed manager postUrl
+  result <- fetchOEmbed manager postUrl
   case result of
     Right (EmbedResult html) -> pure html
     Left err

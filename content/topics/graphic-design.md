@@ -7,9 +7,13 @@ URL: https://bagrounds.org/topics/graphic-design
 link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-03T00:00:00Z
 force_analyze_links: false
+image_date: 2026-04-09T09:37:48Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: "A vibrant, abstract composition featuring a floating, isometric workspace. At the center, a digital tablet displays a glowing, colorful geometric pattern, with stylized pens, brushes, and swatches hovering nearby. Surrounding the workspace are floating icons representing different design disciplines: a minimalist logo, a wireframe UI grid, a sleek product package, and a typographic character. The background is a soft, deep charcoal gradient that makes the saturated primary and secondary colors of the design elements pop. Light rays and translucent geometric shapes—circles, squares, and lines—intertwine throughout the scene, suggesting movement, structure, and creative energy. The overall aesthetic is modern, clean, and professional, blending the tactile nature of traditional art with the precision of digital design."
 ---
 [Home](../index.md) > [Topics](./index.md) > [Knowledge](./a-hierarchical-view-of-human-knowledge.md) > [Arts](./arts.md) > [Applied Arts](./applied-arts.md)  
 # 🎨✏️ Graphic Design  
+![topics-graphic-design](../topics-graphic-design.jpg)  
 ## 🤖 AI Summary  
 **🎨 High-Level Summary:**  
   

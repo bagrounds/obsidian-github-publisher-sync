@@ -7,9 +7,13 @@ URL: https://bagrounds.org/topics/electrical-engineering
 link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-02T00:00:00Z
 force_analyze_links: false
+image_date: 2026-04-09T06:39:22Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: "A stylized, high-contrast isometric illustration featuring a glowing, interconnected circuit board landscape. The board is composed of translucent blue pathways that pulse with vibrant golden light, representing the flow of electricity. Rising from the surface are minimalist, geometric representations of key engineering concepts: a sleek wind turbine for power systems, a microchip with intricate copper tracings for electronics, a satellite dish for telecommunications, and a robotic arm for control systems. The background is a deep, dark navy gradient, allowing the neon gold and electric blue elements to pop. The lighting is soft and cinematic, with small floating particles of light suggesting energy and data transmission, creating a clean, futuristic, and highly technical aesthetic."
 ---
 [Home](../index.md) > [Topics](./index.md) > [Knowledge](./a-hierarchical-view-of-human-knowledge.md) > [Engineering](./engineering.md)  
 # ⚡🔌 Electrical Engineering  
+![topics-electrical-engineering](../topics-electrical-engineering.jpg)  
 ## 🤖 AI Summary  
 **High-Level Summary:**  
 Electrical Engineering is the branch of engineering concerned with the study, design, and application of electrical systems, devices, and equipment. It encompasses a vast range of technologies, from power generation and distribution to electronics, telecommunications, and control systems. The core principles revolve around understanding and manipulating electrical phenomena to create innovative solutions that improve our lives. The goal is to design, develop, and maintain electrical systems that are efficient, reliable, safe, and sustainable. Essentially, Electrical Engineers power our modern world! 💡🔌  

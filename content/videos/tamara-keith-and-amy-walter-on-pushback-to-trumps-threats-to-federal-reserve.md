@@ -9,6 +9,9 @@ Platform:
 Channel: PBS NewsHour
 tags:
 youtube: https://youtu.be/3wkBjfQ8OJc
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_time: 2026-04-09T00:00:00Z
+force_analyze_links: false
 ---
 [Home](../index.md) > [Videos](./index.md)  
 # 🏦 🇺🇸 📉 🗣️ Tamara Keith and Amy Walter on pushback to Trump's threats to Federal Reserve  
@@ -60,5 +63,5 @@ youtube: https://youtu.be/3wkBjfQ8OJc
   
 ### 🎨 Creatively Related  
   
-* 🏗️ The Power Broker by Robert Caro examines how individual figures use public works and institutions to consolidate political power.  
+* 🏗️ [👑🏙️ The Power Broker](../books/the-power-broker.md) by Robert Caro examines how individual figures use public works and institutions to consolidate political power.  
 * 🗳️ The Death of Politics by Peter Wehner analyzes the erosion of norms and civil discourse within American democratic institutions.

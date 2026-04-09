@@ -79,15 +79,17 @@ Deleted horizontal-slice modules (replaced by vertical feature modules):
 
 ### Completed: AppContext Record + Tests
 
-**Goal**: Replaced parameter threading with a shared context record, with tests for context construction.
+**Goal**: Replaced parameter threading with a shared context record, following the [ReaderT design pattern](https://www.fpcomplete.com/blog/readert-design-pattern/) — the context holds all startup-time configuration and shared dependencies needed throughout the program's lifecycle.
 
 Delivered as a single vertical slice:
-- [x] Define `AppContext` in a new `Automation.Context` module — contains `Manager`, `vaultDir`, `repoRoot`, and `geminiApiKey`
+- [x] Define `AppContext` in a new `Automation.Context` module — holds `httpManager`, `vaultDir`, `repoRoot`, `geminiApiKey`, and `obsidianCredentials`
+- [x] Domain-descriptive field names (no `app` prefix) with module imported qualified as `Context`
+- [x] Explicit field exports (no wildcard `(..)` imports)
 - [x] Update `taskRunners` to construct with `AppContext`
 - [x] Migrate all task runners (`runBlogSeries`, `runBackfillImages`, `runInternalLinking`, `runSocialPosting`, `runAiFiction`, `runReflectionTitle`) to accept `AppContext` instead of individual params
 - [x] Test context construction and validation — smart constructor rejects empty paths, Show redacts secrets, property test for valid paths
-- [x] `callGeminiForGenerator` and `tryTitleForDate` updated to use `AppContext`
-- [x] `main` constructs `AppContext` with validated `mkAppContext`, reads `GEMINI_API_KEY` once at startup
+- [x] `callGeminiForGenerator` uses API key from context (callback adapter ignores duplicate key from library interface)
+- [x] `main` reads all environment variables once at startup and constructs validated `AppContext`
 
 ### Next: Explicit Error Types + Tests
 

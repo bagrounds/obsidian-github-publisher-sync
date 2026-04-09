@@ -12,21 +12,31 @@ URL: https://bagrounds.org/ai-blog/2026-04-09-3-introducing-appcontext-for-share
 
 🔁 When every function in your application needs the same handful of values, passing them individually through every call site creates noise.
 
-🧵 In the Haskell codebase for this project, eight different task runners all needed the same things: an HTTP connection manager, a vault directory path, a repository root path, and a Gemini API key.
+🧵 In the Haskell codebase for this project, eight different task runners all needed the same things: an HTTP connection manager, a vault directory path, a repository root path, a Gemini API key, and Obsidian sync credentials.
 
 📋 Before this change, the task dispatch table looked like this: each runner took Manager, FilePath, and FilePath as separate parameters, and some runners then redundantly called requireSecret to re-read the Gemini API key from environment variables.
 
 🔄 Three separate runners independently read the same environment variable for the API key, creating unnecessary IO and duplication.
 
+## 📐 The ReaderT Design Pattern
+
+📖 This change follows the ReaderT design pattern, described by Michael Snoyman in his influential FP Complete article. The pattern structures an application around a single environment record that holds all startup-time configuration and shared dependencies.
+
+🎯 The key principle: the environment should contain everything that is constant across the program's lifecycle and needed by multiple components. Runtime configuration from environment variables, connection pools, and credential records all belong here.
+
+🚫 What does not belong: temporary data local to individual functions, or things only needed by a single call site. Per-task model overrides like FICTION_MODEL or INTERNAL_LINKING_MODEL are read within each task runner because they are task-specific, not application-wide.
+
+🏷️ Field naming follows Haskell module conventions rather than object-oriented prefixing. Instead of appManager or appVaultDir, the fields are named httpManager, vaultDir, and repoRoot. The Context module is imported qualified, so call sites read Context.httpManager and Context.vaultDir, which reads like natural language.
+
 ## 🏗️ The AppContext Record
 
-📦 The solution is a shared context record that bundles commonly threaded parameters into a single value.
-
-🧱 The new Automation.Context module defines an AppContext record with four fields: the HTTP manager, the vault directory, the repository root, and the Gemini API key.
+📦 The Automation.Context module defines an AppContext record with five fields: httpManager for HTTP connection pooling, vaultDir for the Obsidian vault path, repoRoot for the git repository root, geminiApiKey for the AI model credentials, and obsidianCredentials for vault synchronization.
 
 🛡️ A smart constructor called mkAppContext validates that neither the vault directory nor the repository root is empty, returning an Either with a descriptive error message on failure.
 
-🔒 The Show instance for AppContext automatically redacts the API key, because the Secret newtype already displays as angle-bracket redacted instead of showing the actual value.
+🔒 The Show instance automatically redacts secrets because the Secret newtype already displays as angle-bracket redacted instead of showing the actual value.
+
+📋 The module explicitly exports each field name rather than using wildcard exports, making it clear exactly what names are brought into scope at each import site.
 
 ## 🔄 Migration in Practice
 
@@ -36,21 +46,21 @@ URL: https://bagrounds.org/ai-blog/2026-04-09-3-introducing-appcontext-for-share
 
 🧹 The requireSecret call was removed from three runners because the Gemini API key is now read once in main and stored in the context.
 
-🔌 The callGeminiForGenerator helper, used by the fiction and reflection-title generators, now takes AppContext to access the manager, while still accepting the API key through the library callback interface for backward compatibility.
+🔌 The callGeminiForGenerator helper uses the API key from the context directly. The library callback interface still passes a Secret parameter for compatibility with the generateFiction and generateReflectionTitle functions, but the adapter ignores it in favor of the context's key.
 
-📐 The main function was updated to construct AppContext using the validated smart constructor right after pulling the vault, so any configuration errors surface immediately before any tasks run.
+📐 The main function reads all environment variables once at startup and constructs AppContext using the validated smart constructor, so any configuration errors surface immediately before any tasks run.
 
 ## 🧪 Testing the Context
 
 ✅ Six new tests cover the AppContext module.
 
-🟢 A success case verifies that valid inputs produce a Right with the correct field values.
+🟢 A success case verifies that valid inputs produce a Right with the correct field values, including the ObsidianCredentials.
 
 🚫 Two rejection cases verify that empty vault directory or empty repository root paths produce Left with descriptive error messages.
 
 🎲 A QuickCheck property test generates random non-empty paths and verifies that mkAppContext always succeeds for them.
 
-🔐 A Show test verifies that the rendered representation contains the expected field names and the redacted marker, but never contains the actual secret value.
+🔐 A Show test verifies that the rendered representation contains the expected field names, the obsidianCredentials, and the redacted marker, but never contains the actual secret value.
 
 ## 📊 Results
 

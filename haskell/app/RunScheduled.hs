@@ -80,7 +80,7 @@ import Automation.Scheduler
   , taskIdToText
   )
 import Automation.Types (Secret (..), RelativePath, unRelativePath, mkRelativePath, Title, mkTitle)
-import Automation.Context (AppContext (..), mkAppContext)
+import qualified Automation.Context as Context
 import qualified Automation.InternalLinking as IL
 import Automation.SocialPosting (autoPost)
 import Automation.Text (wordJaccardSimilarity)
@@ -117,11 +117,11 @@ inferenceDashboards =
 -- Shared Gemini caller for fiction/title generators
 -- ---------------------------------------------------------------------------
 
-callGeminiForGenerator :: AppContext -> Secret -> [Text] -> (Text, Text) -> IO (Text, Text)
-callGeminiForGenerator context apiKey models (systemPrompt, userPrompt) = do
+callGeminiForGenerator :: Context.AppContext -> Secret -> [Text] -> (Text, Text) -> IO (Text, Text)
+callGeminiForGenerator context _apiKey models (systemPrompt, userPrompt) = do
   let combinedPrompt = systemPrompt <> "\n\n" <> userPrompt
       config = Gemini.defaultGenerationConfig { Gemini.gcTemperature = 0.9, Gemini.gcMaxOutputTokens = 2048 }
-  result <- Gemini.generateContentWithFallback (appManager context) models combinedPrompt apiKey config
+  result <- Gemini.generateContentWithFallback (Context.httpManager context) models combinedPrompt (Context.geminiApiKey context) config
   case result of
     Left err -> error $ "Gemini API error: " <> T.unpack err
     Right resp -> pure (Gemini.grText resp, Gemini.grModel' resp)
@@ -390,13 +390,13 @@ yesterdayPacific = do
 -- Task runners
 -- ---------------------------------------------------------------------------
 
-runBlogSeries :: AppContext -> Text -> IO ()
+runBlogSeries :: Context.AppContext -> Text -> IO ()
 runBlogSeries context seriesId = do
   let taskName = "blog-series:" <> seriesId
-      manager = appManager context
-      repoRoot = appRepoRoot context
-      vaultDir = appVaultDir context
-      apiKey = appGeminiApiKey context
+      manager = Context.httpManager context
+      currentRepoRoot = Context.repoRoot context
+      currentVaultDir = Context.vaultDir context
+      apiKey = Context.geminiApiKey context
   logMsg $ "▶️  " <> taskName
 
   let mRunConfig = Map.lookup seriesId blogSeriesRunConfigs
@@ -406,10 +406,10 @@ runBlogSeries context seriesId = do
 
   today <- todayPacificDay
   let todayText = formatDay today
-  _ <- copySeriesPosts vaultDir seriesId repoRoot
+  _ <- copySeriesPosts currentVaultDir seriesId currentRepoRoot
 
   -- 2. Check regeneration or already exists
-  let seriesDir = repoRoot </> T.unpack seriesId
+  let seriesDir = currentRepoRoot </> T.unpack seriesId
   mRegen <- findPostToRegenerate seriesDir todayText
   case mRegen of
     Just postToRegen -> do
@@ -486,7 +486,7 @@ runBlogSeries context seriesId = do
               logMsg $ "  ✅ Written: " <> filename <> " [" <> usedModel <> "]"
 
               -- Generate blog image (continue on error, matching TypeScript behavior)
-              let attachmentsDir = repoRoot </> "attachments"
+              let attachmentsDir = currentRepoRoot </> "attachments"
               imageEnvMap <- buildEnvMap
                 [ "GEMINI_API_KEY", "CLOUDFLARE_API_TOKEN", "CLOUDFLARE_ACCOUNT_ID"
                 , "CLOUDFLARE_IMAGE_MODEL", "HUGGINGFACE_API_TOKEN", "HUGGINGFACE_IMAGE_MODEL"
@@ -504,7 +504,7 @@ runBlogSeries context seriesId = do
 
               -- Update previous post with forward link — edit directly in vault
               case previousPost of
-                Just pp -> updatePreviousPost (vaultDir </> T.unpack seriesId) pp series filename
+                Just pp -> updatePreviousPost (currentVaultDir </> T.unpack seriesId) pp series filename
                 Nothing -> pure ()
 
               -- Write metadata
@@ -519,36 +519,36 @@ runBlogSeries context seriesId = do
                   regenFilenameNoExt = case mRegen of
                     Just r  -> Just (T.pack (dropExtension r))
                     Nothing -> Nothing
-              _ <- updateDailyReflection vaultDir todayText series filenameNoExt title regenFilenameNoExt
+              _ <- updateDailyReflection currentVaultDir todayText series filenameNoExt title regenFilenameNoExt
 
               -- Sync new post to vault (this is a genuinely new file)
               let postRelPath = T.unpack seriesId </> T.unpack filename
-                  postLocalPath = repoRoot </> postRelPath
-              _ <- syncFileToVault postLocalPath postRelPath vaultDir
+                  postLocalPath = currentRepoRoot </> postRelPath
+              _ <- syncFileToVault postLocalPath postRelPath currentVaultDir
 
               -- Sync AGENTS.md (lives in git, needs to go to vault)
               let agentsRelPath = T.unpack seriesId </> "AGENTS.md"
-              _ <- syncFileToVault (repoRoot </> agentsRelPath) agentsRelPath vaultDir
+              _ <- syncFileToVault (currentRepoRoot </> agentsRelPath) agentsRelPath currentVaultDir
 
               -- Sync attachments (new image files) to vault
-              syncAttachmentsDir (repoRoot </> "attachments") (vaultDir </> "attachments")
+              syncAttachmentsDir (currentRepoRoot </> "attachments") (currentVaultDir </> "attachments")
               pure ()
 
   logMsg $ "✅ " <> taskName
 
-runBackfillImages :: AppContext -> IO ()
+runBackfillImages :: Context.AppContext -> IO ()
 runBackfillImages context = do
-  let manager = appManager context
-      repoRoot = appRepoRoot context
-      vaultDir = appVaultDir context
+  let manager = Context.httpManager context
+      currentRepoRoot = Context.repoRoot context
+      currentVaultDir = Context.vaultDir context
   logMsg "▶️  backfill-blog-images"
 
   today <- todayPacificDay
   let todayText = formatDay today
 
   -- 1. Sync new AI blog posts from repo to vault (copy-if-missing only)
-  let repoAiBlogDir = repoRoot </> "ai-blog"
-      vaultAiBlogDir = vaultDir </> "ai-blog"
+  let repoAiBlogDir = currentRepoRoot </> "ai-blog"
+      vaultAiBlogDir = currentVaultDir </> "ai-blog"
   newPostCount <- syncNewAiBlogPosts repoAiBlogDir vaultAiBlogDir
   case newPostCount of
     0 -> pure ()
@@ -570,9 +570,9 @@ runBackfillImages context = do
       logMsg $ "  🎨 Image providers: " <> T.pack (show (length providers))
       let contentDirectories = mapMaybe contentDirectoryFromText imageBackfillContentIds
           backfillConfig = BackfillConfig
-            { backfillRepoRoot = vaultDir
+            { backfillRepoRoot = currentVaultDir
             , backfillContentDirs = contentDirectories
-            , backfillAttachmentsDir = vaultDir </> "attachments"
+            , backfillAttachmentsDir = currentVaultDir </> "attachments"
             , backfillProviders = providers
             , backfillMaxImages = 2
             }
@@ -587,15 +587,15 @@ runBackfillImages context = do
       pure (brModifiedFiles result)
 
   -- 3. Update AI blog nav links — operates directly on vault files
-  let aiBlogDir = vaultDir </> "ai-blog"
+  let aiBlogDir = currentVaultDir </> "ai-blog"
   navResults <- ensureAllNavLinks aiBlogDir
   let modifiedCount = length (filter (\r -> nlrModified r) navResults)
   logMsg $ "  🔗 Nav links: " <> T.pack (show modifiedCount) <> " files updated"
 
   -- 4. Add update links from image backfill results
-  let reflectionsDir = vaultDir </> "reflections"
+  let reflectionsDir = currentVaultDir </> "reflections"
   imageUpdateLinks <- traverse (\f -> do
-        title <- extractTitleFromFile (vaultDir </> T.unpack f)
+        title <- extractTitleFromFile (currentVaultDir </> T.unpack f)
         pure (UpdateLink (validatedRelativePath f) (validatedTitle title) ["🖼️ added image"])
         ) imageModifiedFiles
   case imageUpdateLinks of
@@ -610,7 +610,7 @@ runBackfillImages context = do
   let todayLinks = filter (\(_, _, date) -> date <= todayText) aiBlogLinks
   mapM_ (\(relPath, title, date) -> do
     let filename = T.drop (T.length "ai-blog/") relPath
-    result <- updateDailyReflection vaultDir date aiBlogConfig filename title Nothing
+    result <- updateDailyReflection currentVaultDir date aiBlogConfig filename title Nothing
     case result of
       _ | urrLinkInserted result ->
             logMsg $ "  🤖 Added AI blog link to " <> date <> " reflection: " <> relPath
@@ -619,15 +619,15 @@ runBackfillImages context = do
 
   logMsg "✅ backfill-blog-images"
 
-runInternalLinking :: AppContext -> IO ()
+runInternalLinking :: Context.AppContext -> IO ()
 runInternalLinking context = do
-  let manager = appManager context
-      vaultDir = appVaultDir context
+  let manager = Context.httpManager context
+      currentVaultDir = Context.vaultDir context
   logMsg "▶️  internal-linking"
 
   envModel <- lookupEnvText "INTERNAL_LINKING_MODEL"
   let model = fromMaybe IL.defaultLinkingModel envModel
-  result <- IL.run manager model vaultDir
+  result <- IL.run manager model currentVaultDir
   logMsg $ "  🔗 Internal linking: "
         <> T.pack (show (IL.lrFilesVisited result)) <> " visited, "
         <> T.pack (show (IL.lrFilesModified result)) <> " modified, "
@@ -640,9 +640,9 @@ runInternalLinking context = do
     _  -> do
       today <- todayPacificDay
       let todayText = formatDay today
-          reflectionsDir = vaultDir </> "reflections"
+          reflectionsDir = currentVaultDir </> "reflections"
       links <- traverse (\fr -> do
-        title <- extractTitleFromFile (vaultDir </> T.unpack (unRelativePath (IL.frRelativePath fr)))
+        title <- extractTitleFromFile (currentVaultDir </> T.unpack (unRelativePath (IL.frRelativePath fr)))
         let n = IL.frLinksAdded fr
             detail = "🔗 added " <> T.pack (show n) <> " internal link" <> (if n == 1 then "" else "s")
         pure (UpdateLink (IL.frRelativePath fr) (validatedTitle title) [detail])
@@ -652,22 +652,22 @@ runInternalLinking context = do
 
   logMsg "✅ internal-linking"
 
-runSocialPosting :: AppContext -> IO ()
+runSocialPosting :: Context.AppContext -> IO ()
 runSocialPosting context = do
   logMsg "▶️  social-posting"
-  autoPost (appManager context) (appVaultDir context)
+  autoPost (Context.httpManager context) (Context.vaultDir context)
   logMsg "✅ social-posting"
 
-runAiFiction :: AppContext -> IO ()
+runAiFiction :: Context.AppContext -> IO ()
 runAiFiction context = do
-  let vaultDir = appVaultDir context
-      apiKey = appGeminiApiKey context
+  let currentVaultDir = Context.vaultDir context
+      apiKey = Context.geminiApiKey context
   logMsg "▶️  ai-fiction"
 
   today <- todayPacificDay
   let todayText = formatDay today
 
-  let reflectionsDir = vaultDir </> "reflections"
+  let reflectionsDir = currentVaultDir </> "reflections"
       reflectionPath = reflectionsDir </> T.unpack todayText <> ".md"
 
   exists <- doesFileExist reflectionPath
@@ -705,7 +705,7 @@ runAiFiction context = do
 
           logMsg "✅ ai-fiction"
 
-runReflectionTitle :: AppContext -> IO ()
+runReflectionTitle :: Context.AppContext -> IO ()
 runReflectionTitle context = do
   logMsg "▶️  reflection-title"
 
@@ -724,10 +724,10 @@ runReflectionTitle context = do
 
   logMsg "✅ reflection-title"
 
-tryTitleForDate :: AppContext -> Text -> IO Bool
+tryTitleForDate :: Context.AppContext -> Text -> IO Bool
 tryTitleForDate context date = do
-  let apiKey = appGeminiApiKey context
-      reflectionsDir = appVaultDir context </> "reflections"
+  let apiKey = Context.geminiApiKey context
+      reflectionsDir = Context.vaultDir context </> "reflections"
       reflectionPath = reflectionsDir </> T.unpack date <> ".md"
 
   exists <- doesFileExist reflectionPath
@@ -773,7 +773,7 @@ tryTitleForDate context date = do
 -- Task dispatch
 -- ---------------------------------------------------------------------------
 
-taskRunners :: AppContext -> Map TaskId (IO ())
+taskRunners :: Context.AppContext -> Map TaskId (IO ())
 taskRunners context = Map.fromList
   [ (BlogSeriesChickieLoo, runBlogSeries context "chickie-loo")
   , (BlogSeriesAutoBlogZero, runBlogSeries context "auto-blog-zero")
@@ -852,11 +852,11 @@ main = do
       -- Pull vault ONCE at the start
       creds <- getObsidianCreds
       logMsg "📥 Pulling Obsidian vault..."
-      vaultDir <- syncObsidianVault creds
-      logMsg $ "📂 Vault ready at " <> T.pack vaultDir
+      currentVaultDir <- syncObsidianVault creds
+      logMsg $ "📂 Vault ready at " <> T.pack currentVaultDir
 
-      geminiApiKey <- Secret <$> requireEnv "GEMINI_API_KEY"
-      context <- case mkAppContext manager vaultDir repoRoot geminiApiKey of
+      currentGeminiApiKey <- Secret <$> requireEnv "GEMINI_API_KEY"
+      context <- case Context.mkAppContext manager currentVaultDir repoRoot currentGeminiApiKey creds of
         Right ctx -> pure ctx
         Left err -> do
           TIO.hPutStrLn stderr $ "❌ Invalid context: " <> T.pack err
@@ -866,7 +866,7 @@ main = do
 
       -- Push vault ONCE at the end
       logMsg "📤 Pushing Obsidian vault..."
-      pushObsidianVault vaultDir (ocAuthToken creds)
+      pushObsidianVault currentVaultDir (ocAuthToken creds)
       logMsg "📤 Vault pushed"
 
       let succeeded = length (filter (\(_, s, _) -> s) results)

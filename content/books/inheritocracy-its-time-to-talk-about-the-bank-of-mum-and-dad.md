@@ -6,6 +6,9 @@ URL: https://bagrounds.org/books/inheritocracy-it-s-time-to-talk-about-the-bank-
 share: true
 CTA: 🧐 Unpack advantage.
 affiliate link: https://amzn.to/4b9c7Wz
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_time: 2026-04-07T00:00:00Z
+force_analyze_links: false
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 👨‍👩‍👧‍👦💰 Inheritocracy: It’s Time to Talk About the Bank of Mum and Dad  

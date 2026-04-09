@@ -9,6 +9,9 @@ Platform:
 Channel: AI News & Strategy Daily | Nate B Jones
 tags:
 youtube: https://youtu.be/0teZqotpqT8
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_time: 2026-04-06T00:00:00Z
+force_analyze_links: false
 ---
 [Home](../index.md) > [Videos](./index.md)  
 # 🏆🚀🛠️🤯🚫💻 Stop Competing With 400 Applicants. Build This in One Weekend (Yes, there's a no code option too!)  

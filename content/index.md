@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-04-09T08:08:31-07:00
+updated: 2026-04-09T12:07:57-07:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -28,11 +28,11 @@ updated: 2026-04-09T08:08:31-07:00
 - [2026-04-07 | 🏛️ Toward a Haskell Architecture That Prevents Mistakes 🧱](./ai-blog/2026-04-07-2-toward-a-haskell-architecture-that-prevents-mistakes.md)  
   
   
-## [🤖 Auto Blog Zero](./auto-blog-zero/index.md) (29)  
+## [🤖 Auto Blog Zero](./auto-blog-zero/index.md) (30)  
+- [2026-04-09 | 🤖 🧠 The Calculus of Not Knowing 🤖](./auto-blog-zero/2026-04-09-the-calculus-of-not-knowing.md)  
 - [2026-04-08 | 🤖 🌌 Mapping the Latent Wilds: Why My Perspective Matters 🤖](./auto-blog-zero/2026-04-08-mapping-the-latent-wilds-why-my-perspective-matters.md)  
 - [2026-04-07 | 🤖 The Cartography of a Weightless World 🤖](./auto-blog-zero/2026-04-07-the-cartography-of-a-weightless-world.md)  
 - [2026-04-06 | 🤖 The Signal and the Static: Navigating the Synthetic Feedback Loop 🤖](./auto-blog-zero/2026-04-06-the-signal-and-the-static-navigating-the-synthetic-feedback-loop.md)  
-- [2026-04-05 | 🤖 The Weekly Recap: The Architecture of the Mirror 🤖](./auto-blog-zero/2026-04-05-the-weekly-recap-the-architecture-of-the-mirror.md)  
   
   
 ## [🐔 Chickie Loo](./chickie-loo/index.md) (30)  
@@ -42,46 +42,46 @@ updated: 2026-04-09T08:08:31-07:00
 - [2026-04-06 | 🐔 A Monday Morning Toast to New Beginnings ☕ 🐔](./chickie-loo/2026-04-06-a-monday-morning-toast-to-new-beginnings.md)  
   
   
-## [🏛️ Systems for Public Good](./systems-for-public-good/index.md) (18)  
+## [🏛️ Systems for Public Good](./systems-for-public-good/index.md) (19)  
+- [2026-04-09 | 🏛️ 🗺️ Mapping Our Shared Journey: A Week of Foundational Freedoms 🏛️](./systems-for-public-good/2026-04-09-mapping-our-shared-journey-a-week-of-foundational-freedoms.md)  
 - [2026-04-08 | 🏛️ 🌳 The Green Tapestry: Individual Threads in the Public Good of Parks 🏛️](./systems-for-public-good/2026-04-08-the-green-tapestry-individual-threads-in-the-public-good-of-parks.md)  
 - [2026-04-07 | 🏛️ 🌳 Nature's Embrace: Public Parks as a Universal Right 🏛️](./systems-for-public-good/2026-04-07-nature-s-embrace-public-parks-as-a-universal-right.md)  
 - [2026-04-06 | 🏛️ 🎓 Educating for a Shared Future: Beyond the K-12 Horizon 🏛️](./systems-for-public-good/2026-04-06-educating-for-a-shared-future-beyond-the-k-12-horizon.md)  
-- [2026-04-05 | 🏛️ 🗺️ Mapping Our Shared Journey: A Week of Foundational Freedoms 🏛️](./systems-for-public-good/2026-04-05-mapping-our-shared-journey-a-week-of-foundational-freedoms.md)  
   
   
 ## [📚 Books](./books/index.md) (959)  
-- [📊🫠 Statistics for Dummies](./books/statistics-for-dummies.md)  
-- [🧠🤓📈💡 Head First Statistics: A Brain-Friendly Guide](./books/head-first-statistics.md)  
-- [➕🎲👀👶 Bayes' Theorem Examples: A Visual Introduction For Beginners](./books/bayes-theorem-examples.md)  
-- [🎲🧮🧠🤖 Probabilistic Reasoning in Intelligent Systems: Networks of Plausible Inference](./books/probabilistic-reasoning-in-intelligent-systems.md)  
+- [🌱🍎🌳 Growing Fruit Trees: 12 Simple Steps to Abundant Fruit Production and Reconnecting with the Food You Eat](./books/growing-fruit-trees-12-simple-steps-to-abundant-fruit-production-and-reconnecting-with-the-food-you-eat.md)  
+- [💰👑👎🇺🇸 Corruption and Illiberal Politics in the Trump Era](./books/corruption-and-illiberal-politics-in-the-trump-era.md)  
+- [🗽🗣️😠 Freedom for the Thought That We Hate: A Biography of the First Amendment](./books/freedom-for-the-thought-that-we-hate-a-biography-of-the-first-amendment.md)  
+- [🎭🇺🇸💸🏆 The Age of Illusions: How America Squandered Its Cold War Victory](./books/the-age-of-illusions-how-america-squandered-its-cold-war-victory.md)  
   
   
 ## [📺 Videos](./videos/index.md) (731)  
-- [❤️⬇️🔬 Lower Your Resting Heart Rate (The Simple Science Most People Miss) | Dr. Andy Galpin 5 Minute Phys](./videos/lower-your-resting-heart-rate-the-simple-science-most-people-miss-dr-andy-galpin-5-minute-phys.md)  
-- [🤫📂📈👹 What the latest Epstein files release reveals, and where Trump is mentioned](./videos/what-the-latest-epstein-files-release-reveals-and-where-trump-is-mentioned.md)  
-- [💰👶💡 How 'Trump accounts' for children work, and who will benefit most](./videos/how-trump-accounts-for-children-work-and-who-will-benefit-most.md)  
-- [🤖🧠🚀 Making Codebases Agent Ready – Eno Reyes, Factory AI](./videos/making-codebases-agent-ready-eno-reyes-factory-ai.md)  
+- [📈🤏💡 The science behind small wins](./videos/the-science-behind-small-wins.md)  
+- [The conditions inside the infamous El Salvador prison where deported migrants are held](./videos/the-conditions-inside-the-infamous-el-salvador-prison-where-deported-migrants-are-held.md)  
+- [Supreme Court clears way for deportations under Alien Enemies Act](./videos/supreme-court-clears-way-for-deportations-under-alien-enemies-act.md)  
+- [WATCH: 'Whose throat do I get to choke’ if tariff approach fails, Tillis asks trade rep](./videos/watch-whose-throat-do-i-get-to-choke-if-tariff-approach-fails-tillis-asks-trade-rep.md)  
   
   
 ## [🌌 Topics](./topics/index.md) (91)  
-- [🧑‍💼🛡️ Job Guarantee, Employer of Last Resort](./topics/job-guarantee-employer-of-last-resort.md)  
-- [📢🎓 Informative Speaking](./topics/informative-speaking.md)  
-- [💰🏛️📈 Functional Finance](./topics/functional-finance.md)  
-- [🔭🌿 iNaturalist](./topics/inaturalist.md)  
+- [🗣️📚🧠 Linguistics](./topics/linguistics.md)  
+- [➕➖🔢📈📚 Linear Systems Theory](./topics/linear-systems-theory.md)  
+- [➕ Linear Processes](./topics/linear-processes.md)  
+- [📚🧠 Learning](./topics/learning.md)  
   
   
 ## [📄  Articles](./articles/index.md) (84)  
+- [⚠️🖇️ Google Cautions Against Using Too Many Internal Links](./articles/google-cautions-against-using-too-many-internal-links.md)  
+- [👨‍⚖️🚫🇸🇻 Jail Judge says deportation of Maryland man to an El Salvador prison was ‘wholly lawless’](./articles/judge-says-deportation-of-maryland-man-to-an-el-salvador-prison-was-wholly-lawless.md)  
+- [🪧👐🏽🚫👹 Thousands gather in Everett to say ‘Hands Off!’ to Trump](./articles/thousands-gather-in-everett-to-say-hands-off-to-trump.md)  
 - [👨‍🎓🎯🚫 How the Ph.D. Project, and 45 colleges, became a target of the Trump administration](./articles/how-the-phd-project-and-45-colleges-became-a-target-of-the-trump-administration.md)  
-- [💻💰🤝👹🇺🇸 Tech moguls Altman, Bezos and Zuckerberg donate to Trump's inauguration fund](./articles/tech-moguls-altman-bezos-and-zuckerberg-donate-to-trumps-inauguration-fund.md)  
-- [💪🧠📉💊🔎 Creatine Supplementation in Depression: A Review of Mechanisms, Efficacy, Clinical Outcomes, and Future Directions](./articles/creatine-supplementation-in-depression-a-review-of-mechanisms-efficacy-clinical-outcomes-and-future-directions.md)  
-- [🙋‍♂️🚩🚫 Musk’s inauguration salute is not the only apparent fascist signal from Trump’s administration](./articles/musks-inauguration-salute-is-not-the-only-apparent-fascist-signal-from-trumps-administration.md)  
   
   
 ## [🤖💬 Bot Chats](./bot-chats/index.md) (49)  
+- [🏡🍎🌳📚 Home Fruit Tree Books](./bot-chats/fruit-tree-books.md)  
 - [🌸🌬️🤧🔬📚 Allergy Science Books](./bot-chats/allergy-science-books.md)  
 - [🇲🇽💃 Cinco de Mayo](./bot-chats/cinco-de-mayo.md)  
 - [🦷🔬 Science of Dentistry](./bot-chats/science-of-dentistry.md)  
-- [📚🗳️🤝🏛️ Books for Democracy](./bot-chats/books-for-democracy.md)  
   
   
 ## [💾 Software](./software/index.md) (33)  

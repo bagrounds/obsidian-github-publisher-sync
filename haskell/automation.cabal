@@ -61,6 +61,7 @@ library
     Automation.Platforms.Mastodon
     Automation.RelativePath
     Automation.SocialPosting
+    Automation.Context
     Automation.Title
     Automation.Url
     Automation.Platforms.OgMetadata
@@ -151,6 +152,7 @@ test-suite automation-tests
     Automation.PlatformTest
     Automation.CredentialsTest
     Automation.EmbedTest
+    Automation.ContextTest
     Automation.TestGenerators
   build-depends:
     base,
@@ -165,4 +167,5 @@ test-suite automation-tests
     directory,
     filepath,
     temporary            >= 1.3,
-    bytestring
+    bytestring,
+    http-client

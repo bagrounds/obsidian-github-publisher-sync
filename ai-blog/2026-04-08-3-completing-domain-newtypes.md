@@ -10,7 +10,7 @@ URL: https://bagrounds.org/ai-blog/2026-04-08-3-completing-domain-newtypes
 
 ## 🎯 The Mission
 
-🔒 This is step 3 in the Haskell architecture improvement saga. The goal: eliminate raw Text usage for domain concepts that deserve their own types.
+🔒 This is step 3 in the Haskell architecture improvement saga. The goal: eliminate raw Text usage for domain concepts that deserve their own types and enforce invariants through hidden constructors and smart constructors that validate at the boundary.
 
 🏷️ Three new newtypes join the family: Url, Title, and RelativePath. Together with the previously completed Secret, PlatformLimits, SocialPost, and Day, this completes the entire domain newtypes phase of the architecture plan.
 
@@ -18,7 +18,9 @@ URL: https://bagrounds.org/ai-blog/2026-04-08-3-completing-domain-newtypes
 
 ### 🌐 Url
 
-🔗 A newtype wrapping Text, with a smart constructor that validates the value starts with either the http or https protocol prefix. The accessor function unUrl recovers the raw Text when needed at library boundaries.
+🔗 A newtype wrapping Text, with a smart constructor that validates the value using the network-uri library's parseURI function, which implements full RFC 3986 URI validation. This is the same parser used by Haskell's standard HTTP libraries. The smart constructor additionally verifies the scheme is either http or https.
+
+🏛️ Leveraging network-uri means we get proper RFC-compliant validation for free rather than reinventing the wheel with a simple prefix check. The parseURI function validates the complete URI structure including scheme, authority, path, query, and fragment components.
 
 📍 Applied to record fields across the codebase: rdUrl in ReflectionData, mprUrl in MastodonPostResult, mcInstanceUrl in MastodonCredentials, lcUri in LinkCard.
 
@@ -30,15 +32,25 @@ URL: https://bagrounds.org/ai-blog/2026-04-08-3-completing-domain-newtypes
 
 ### 📂 RelativePath
 
-🗂️ A newtype wrapping Text, with a smart constructor that rejects empty strings and absolute paths starting with a forward slash. The accessor function unRelativePath recovers the raw Text.
+🗂️ A newtype wrapping Text, with a smart constructor that rejects empty strings and absolute paths starting with a forward slash.
+
+🤔 Standard Haskell path libraries like the path library provide type-safe path handling with compile-time distinction between absolute and relative paths. However, our RelativePath is not a filesystem path in the traditional sense. It represents a vault-relative content path used for constructing wikilinks and generating URLs, not for OS-level file operations. The path library uses String internally and is designed around filesystem operations, while our content paths are Text values used in URL generation, wikilink formatting, and Obsidian vault lookups. Our domain need is narrow enough that a focused newtype with a simple invariant is a better fit than pulling in a full path library.
 
 📍 Applied to: cnRelativePath and cnLinkedNotePaths in ContentNote, ceRelativePath in ContentEntry, frRelativePath in FileResult, ulRelativePath in UpdateLink.
+
+## 🔐 Hidden Constructors
+
+🚪 The data constructors for Url, Title, and RelativePath are not exported from their modules. Only the type name, accessor function, and smart constructor are available to the rest of the codebase.
+
+🛡️ This guarantees that every value of these types has been validated through the smart constructor. If the constructor were exported, any module could bypass validation by writing the constructor directly, which would defeat the purpose of having a smart constructor in the first place.
+
+📏 All construction sites now go through smart constructors. For internal code where the input is known-valid (for example, building a URL from a known domain prefix and a slug), a local validatedUrl helper calls the smart constructor and errors on failure. This preserves the guarantee while keeping the code concise.
 
 ## 🌊 The Ripple Effect
 
 📐 Changing a record field from Text to a newtype is a small declaration, but its effects ripple outward through every file that constructs or consumes that record. This migration touched about 15 source files and 4 test files.
 
-🏗️ At construction sites, raw Text values needed wrapping with constructors. Where code previously wrote cnTitle equal to some text value, it now writes cnTitle equal to Title of that text value.
+🏗️ At construction sites, raw Text values now go through smart constructors instead of being wrapped directly. Every place that previously created a value by applying the constructor to a Text now calls the smart constructor and handles the Either result.
 
 📤 At usage sites where Text was expected, the newtype wrapper needed unwrapping with an accessor. String concatenation, Aeson serialization, HTTP request construction, and logging all required explicit unwrapping.
 
@@ -48,11 +60,13 @@ URL: https://bagrounds.org/ai-blog/2026-04-08-3-completing-domain-newtypes
 
 ✅ Twenty-four new property-based and unit tests verify the invariants of each type.
 
-🌐 For Url: constructed values always start with http, the smart constructor round-trips for valid input, and non-http input is rejected.
+🌐 For Url: constructed values always start with http, the smart constructor round-trips for valid input, and non-http input is rejected. The property tests generate URL-safe characters for suffixes to stay within RFC 3986 compliance.
 
 📝 For Title: the smart constructor round-trips for non-empty input, all-whitespace input is rejected.
 
 📂 For RelativePath: the smart constructor round-trips for valid input, absolute paths are rejected, and constructed values never start with a forward slash.
+
+🔒 Tests use test helper functions like testUrl, testTitle, and testRelativePath that call the smart constructors. No test can bypass validation by using the raw constructors.
 
 🎉 All 897 tests pass: 873 original plus 24 new.
 
@@ -66,11 +80,13 @@ URL: https://bagrounds.org/ai-blog/2026-04-08-3-completing-domain-newtypes
 
 ## 💡 Design Decisions
 
+🏛️ The Url smart constructor uses network-uri's parseURI for RFC 3986 validation rather than a hand-rolled prefix check. This delegates URI parsing to a battle-tested library that handles edge cases correctly, including proper scheme validation, authority parsing, and path structure.
+
 ⚖️ The Url smart constructor accepts both http and https, not just https. Some internal URLs and development URLs may use http, and being overly restrictive would force workarounds.
 
 🧩 Each newtype lives in its own module (Automation.Url, Automation.Title, Automation.RelativePath) and is re-exported from Automation.Types for backward compatibility. This follows the same pattern established by Automation.Secret.
 
-🔓 The constructors are exported (not hidden behind smart constructors only) because many internal construction sites have already-validated data. The smart constructors exist for boundary validation where raw user input enters the system.
+🗂️ RelativePath uses a custom newtype rather than the path library because the domain concept is a vault-relative content identifier used for URL construction and wikilink generation, not an OS filesystem path. The path library's filesystem orientation and String-based internals are a mismatch for this Text-based content domain.
 
 ## 📚 Book Recommendations
 

@@ -7,9 +7,13 @@ URL: https://bagrounds.org/topics/informative-speaking
 link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-03T00:00:00Z
 force_analyze_links: false
+image_date: 2026-04-09T14:45:59Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: "A clean, isometric illustration set against a soft, neutral background. At the center, a stylized glowing lightbulb acts as the focal point, representing the spark of knowledge. Radiating outward from the bulb are five distinct, minimalist icons representing the subcategories: a delicate magnifying glass over a stone (Objects), a flowing gear-and-arrow sequence (Processes), a calendar page with a pin (Events), a floating geometric atom (Concepts), and a simple silhouette profile (People). The style is modern and professional, utilizing a vibrant color palette of teals, warm oranges, and soft purples. Soft, diffused lighting creates a sense of clarity and intellectual growth, with subtle, floating abstract shapes like small stars and data points adding a sense of dynamic energy to the composition."
 ---
 [Home](../index.md) > [Topics](./index.md) > [Knowledge](./a-hierarchical-view-of-human-knowledge.md) > [Social Sciences](./social-sciences.md) > [Communication Studies](./communication-studies.md) > [Public Speaking and Rhetoric](./public-speaking-and-rhetoric.md)  
 # 📢🎓 Informative Speaking  
+![topics-informative-speaking](../topics-informative-speaking.jpg)  
 ## 🤖 AI Summary  
 **🌟 High-Level Summary:**  
   

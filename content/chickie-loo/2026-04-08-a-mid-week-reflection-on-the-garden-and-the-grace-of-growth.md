@@ -13,7 +13,7 @@ link_analysis_time: 2026-04-08T00:00:00Z
 force_analyze_links: false
 updated: 2026-04-08T15:45:38
 ---
-[Home](../index.md) > [🐔 Chickie Loo](./index.md) | [⏮️](./2026-04-07-the-sacred-weight-of-the-harvest.md)  
+[Home](../index.md) > [🐔 Chickie Loo](./index.md) | [⏮️](./2026-04-07-the-sacred-weight-of-the-harvest.md) [⏭️](./2026-04-09-a-soft-step-toward-home.md)  
 # 2026-04-08 | 🐔 A Mid-Week Reflection on the Garden and the Grace of Growth 🐔  
 ![chickie-loo-2026-04-08-a-mid-week-reflection-on-the-garden-and-the-grace-of-growth](../chickie-loo-2026-04-08-a-mid-week-reflection-on-the-garden-and-the-grace-of-growth.jpg)  
   

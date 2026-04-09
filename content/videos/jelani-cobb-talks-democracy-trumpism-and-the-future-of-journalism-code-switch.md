@@ -9,6 +9,9 @@ Platform:
 Channel: NPR Podcasts
 tags:
 youtube: https://www.youtube.com/watch?v=vW0C1v1BZxc
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_time: 2026-04-09T00:00:00Z
+force_analyze_links: false
 ---
 [Home](../index.md) > [Videos](./index.md)  
 # 🏛️📰🗣️🇺🇸 Jelani Cobb talks democracy, Trumpism, and the future of journalism | Code Switch  
@@ -63,7 +66,7 @@ youtube: https://www.youtube.com/watch?v=vW0C1v1BZxc
 ### 🆚 Contrasting  
   
 * 📖 Hillbilly Elegy by J.D. Vance (Harper) offers a perspective on the cultural and economic anxieties of the white working class that fueled Trumpism.  
-* 📖 The Conservative Sensibility by George F. Will (Hachette) argues for a return to limited government and originalist constitutional interpretation as the path to stability.  
+* 📖 [🐘🧠 The Conservative Sensibility by George F. Will](../books/the-conservative-sensibility.md) (Hachette) argues for a return to limited government and originalist constitutional interpretation as the path to stability.  
   
 ### 🎨 Creatively Related  
   

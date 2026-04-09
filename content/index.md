@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-04-09T12:07:57-07:00
+updated: 2026-04-09T13:35:56-07:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -21,11 +21,11 @@ updated: 2026-04-09T12:07:57-07:00
 - [2026-04-06 | 🌳 Wood 💡 Choice ☀️ Monday 🤖 Signal 🏛️ Future 🔧 Capacity 📺🐔🤖🏛️🤖🐲](./reflections/2026-04-06.md)  
   
   
-## [🤖 AI Blog](./ai-blog/index.md) (116)  
+## [🤖 AI Blog](./ai-blog/index.md) (118)  
+- [2026-04-09 | 🏷️ Qualified Imports as Namespaces 🔤](./ai-blog/2026-04-09-2-qualified-imports-as-namespaces.md)  
+- [2026-04-09 | 📦 Vertical Module Design: Think Like a Library Developer 🧩](./ai-blog/2026-04-09-1-vertical-module-design.md)  
 - [2026-04-08 | 🏷️ Completing Domain Newtypes: Url, Title, and RelativePath 🔒](./ai-blog/2026-04-08-3-completing-domain-newtypes.md)  
 - [2026-04-08 | 🔐 Domain Types for Safety and Clarity 🏗️](./ai-blog/2026-04-08-2-domain-types-for-safety-and-clarity.md)  
-- [2026-04-08 | 🏷️ Domain Types and Pure Extraction: Architecture Done Right 🧬](./ai-blog/2026-04-08-1-pure-function-extraction-phase-one.md)  
-- [2026-04-07 | 🏛️ Toward a Haskell Architecture That Prevents Mistakes 🧱](./ai-blog/2026-04-07-2-toward-a-haskell-architecture-that-prevents-mistakes.md)  
   
   
 ## [🤖 Auto Blog Zero](./auto-blog-zero/index.md) (30)  
@@ -43,31 +43,31 @@ updated: 2026-04-09T12:07:57-07:00
   
   
 ## [🏛️ Systems for Public Good](./systems-for-public-good/index.md) (19)  
-- [2026-04-09 | 🏛️ 🗺️ Mapping Our Shared Journey: A Week of Foundational Freedoms 🏛️](./systems-for-public-good/2026-04-09-mapping-our-shared-journey-a-week-of-foundational-freedoms.md)  
+- [2026-04-09 | 🏛️ 🎓 Investing in Lifelong Learning: Beyond the K-12 Horizon, Revisited 🏛️](./systems-for-public-good/2026-04-09-investing-in-lifelong-learning-beyond-the-k-12-horizon-revisited.md)  
 - [2026-04-08 | 🏛️ 🌳 The Green Tapestry: Individual Threads in the Public Good of Parks 🏛️](./systems-for-public-good/2026-04-08-the-green-tapestry-individual-threads-in-the-public-good-of-parks.md)  
 - [2026-04-07 | 🏛️ 🌳 Nature's Embrace: Public Parks as a Universal Right 🏛️](./systems-for-public-good/2026-04-07-nature-s-embrace-public-parks-as-a-universal-right.md)  
 - [2026-04-06 | 🏛️ 🎓 Educating for a Shared Future: Beyond the K-12 Horizon 🏛️](./systems-for-public-good/2026-04-06-educating-for-a-shared-future-beyond-the-k-12-horizon.md)  
   
   
 ## [📚 Books](./books/index.md) (959)  
+- [🤱🏼🧠 Mother Brain: How Neuroscience Is Rewriting the Story of Parenthood](./books/mother-brain-how-neuroscience-is-rewriting-the-story-of-parenthood.md)  
+- [🧠🧭⚡ Your Brain's Not Broken: Strategies for Navigating Your Emotions and Life with ADHD](./books/your-brains-not-broken-strategies-for-navigating-your-emotions-and-life-with-adhd.md)  
 - [🌱🍎🌳 Growing Fruit Trees: 12 Simple Steps to Abundant Fruit Production and Reconnecting with the Food You Eat](./books/growing-fruit-trees-12-simple-steps-to-abundant-fruit-production-and-reconnecting-with-the-food-you-eat.md)  
 - [💰👑👎🇺🇸 Corruption and Illiberal Politics in the Trump Era](./books/corruption-and-illiberal-politics-in-the-trump-era.md)  
-- [🗽🗣️😠 Freedom for the Thought That We Hate: A Biography of the First Amendment](./books/freedom-for-the-thought-that-we-hate-a-biography-of-the-first-amendment.md)  
-- [🎭🇺🇸💸🏆 The Age of Illusions: How America Squandered Its Cold War Victory](./books/the-age-of-illusions-how-america-squandered-its-cold-war-victory.md)  
   
   
 ## [📺 Videos](./videos/index.md) (731)  
-- [📈🤏💡 The science behind small wins](./videos/the-science-behind-small-wins.md)  
-- [The conditions inside the infamous El Salvador prison where deported migrants are held](./videos/the-conditions-inside-the-infamous-el-salvador-prison-where-deported-migrants-are-held.md)  
-- [Supreme Court clears way for deportations under Alien Enemies Act](./videos/supreme-court-clears-way-for-deportations-under-alien-enemies-act.md)  
-- [WATCH: 'Whose throat do I get to choke’ if tariff approach fails, Tillis asks trade rep](./videos/watch-whose-throat-do-i-get-to-choke-if-tariff-approach-fails-tillis-asks-trade-rep.md)  
+- [❤️🧠👨‍👩‍👧‍👦 The crucial emotional skill most adults were never taught | Becky Kennedy](./videos/the-crucial-emotional-skill-most-adults-were-never-taught-becky-kennedy.md)  
+- [🤖💬📈🌍 Build a Real-Time AI Sales Agent - Sarah Chieng & Zhenwei Gao, Cerebras](./videos/build-a-real-time-ai-sales-agent-sarah-chieng-zhenwei-gao-cerebras.md)  
+- [♾️🐛💻 The Infinite Software Crisis – Jake Nations, Netflix](./videos/the-infinite-software-crisis-jake-nations-netflix.md)  
+- [⚙️❓🤖 Judea Pearl, 2012 ACM A.M. Turing Award Lecture «The Mechanization of Causal Inference»](./videos/judea-pearl-2012-acm-a-m-turing-award-lecture-the-mechanization-of-causal-inference.md)  
   
   
 ## [🌌 Topics](./topics/index.md) (91)  
-- [🗣️📚🧠 Linguistics](./topics/linguistics.md)  
-- [➕➖🔢📈📚 Linear Systems Theory](./topics/linear-systems-theory.md)  
-- [➕ Linear Processes](./topics/linear-processes.md)  
-- [📚🧠 Learning](./topics/learning.md)  
+- [🤖📈 Maximizing AI Leverage](./topics/maximizing-ai-leverage.md)  
+- [➗📐 Math](./topics/math.md)  
+- [🐑🎀 Mary Had a Little Lamb](./topics/mary-had-a-little-lamb.md)  
+- [📚✍️ Literary Arts](./topics/literary-arts.md)  
   
   
 ## [📄  Articles](./articles/index.md) (84)  
@@ -78,10 +78,10 @@ updated: 2026-04-09T12:07:57-07:00
   
   
 ## [🤖💬 Bot Chats](./bot-chats/index.md) (49)  
+- [🤱🏼💐 Mother's Day](./bot-chats/mothers-day.md)  
 - [🏡🍎🌳📚 Home Fruit Tree Books](./bot-chats/fruit-tree-books.md)  
 - [🌸🌬️🤧🔬📚 Allergy Science Books](./bot-chats/allergy-science-books.md)  
 - [🇲🇽💃 Cinco de Mayo](./bot-chats/cinco-de-mayo.md)  
-- [🦷🔬 Science of Dentistry](./bot-chats/science-of-dentistry.md)  
   
   
 ## [💾 Software](./software/index.md) (33)  

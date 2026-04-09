@@ -6,6 +6,9 @@ URL: https://bagrounds.org/books/prosecuting-the-president-how-special-prosecuto
 share: true
 CTA: ⚖️ Uncover presidential accountability.
 affiliate link: https://amzn.to/4soTtjN
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_time: 2026-04-06T00:00:00Z
+force_analyze_links: false
 ---
 [Home](../index.md) > [Books](./index.md)  
 # ⚖️🏛️ Prosecuting the President: How Special Prosecutors Hold Presidents Accountable and Protect the Rule of Law  

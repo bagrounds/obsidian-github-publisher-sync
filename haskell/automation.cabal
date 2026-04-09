@@ -26,6 +26,7 @@ library
   exposed-modules:
     Automation.Json
     Automation.Secret
+    Automation.Platform
     Automation.Types
     Automation.Env
     Automation.Scheduler
@@ -147,6 +148,9 @@ test-suite automation-tests
     Automation.ReflectionTitleTest
     Automation.ObsidianSyncTest
     Automation.TypesTest
+    Automation.PlatformTest
+    Automation.CredentialsTest
+    Automation.EmbedTest
     Automation.TestGenerators
   build-depends:
     base,

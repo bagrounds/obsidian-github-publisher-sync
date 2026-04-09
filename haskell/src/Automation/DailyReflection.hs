@@ -23,15 +23,13 @@ import System.FilePath ((</>), dropExtension)
 import Automation.Frontmatter (quoteYamlValue)
 
 import Automation.BlogSeriesConfig (BlogSeriesConfig (..))
-import Automation.Types
-  ( blueskySectionHeader
-  , mastodonSectionHeader
-  , tweetSectionHeader
-  , updatesSectionHeader
-  )
+import qualified Automation.Platforms.Bluesky as Bluesky
+import qualified Automation.Platforms.Mastodon as Mastodon
+import qualified Automation.Platforms.Twitter as Twitter
+import Automation.Types (updatesSectionHeader)
 
 embedSectionHeaders :: [Text]
-embedSectionHeaders = [tweetSectionHeader, blueskySectionHeader, mastodonSectionHeader]
+embedSectionHeaders = [Twitter.sectionHeader, Bluesky.sectionHeader, Mastodon.sectionHeader]
 
 trailingSectionHeaders :: [Text]
 trailingSectionHeaders = updatesSectionHeader : embedSectionHeaders

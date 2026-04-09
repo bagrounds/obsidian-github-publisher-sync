@@ -1,12 +1,17 @@
 module Automation.Platforms.Mastodon
-  ( extractMastodonInstanceUrl
-  , extractMastodonStatusId
-  , extractMastodonUsername
-  , postToMastodon
-  , deleteMastodonPost
-  , fetchMastodonOEmbed
-  , generateLocalMastodonEmbed
-  , getMastodonEmbedHtml
+  ( Credentials (..)
+  , PostResult (..)
+  , limits
+  , displayName
+  , sectionHeader
+  , extractInstanceUrl
+  , extractStatusId
+  , extractUsername
+  , post
+  , deletePost
+  , fetchOEmbed
+  , generateLocalEmbed
+  , getEmbedHtml
   ) where
 
 import Control.Exception (SomeException, throwIO, try)
@@ -31,26 +36,55 @@ import System.Random (randomRIO)
 
 import Automation.Json ((.=), (.:), eitherDecode, encode, object, withObject)
 import qualified Automation.Json as Json
+import Automation.Platform (PlatformLimits (..))
 import Automation.Retry (HttpCodeException (..), defaultRetryOptions, withRetry)
-import Automation.Types (MastodonCredentials (..), MastodonPostResult (..), Secret (..), unUrl, mkUrl)
+import Automation.Secret (Secret (..))
+import Automation.Url (Url, unUrl, mkUrl)
+
+-- ── Domain types ───────────────────────────────────────────────────────
+
+data Credentials = Credentials
+  { mcInstanceUrl :: Url
+  , mcAccessToken :: Secret
+  } deriving (Show, Eq)
+
+data PostResult = PostResult
+  { mprId :: Text
+  , mprUrl :: Url
+  , mprText :: Text
+  } deriving (Show, Eq)
+
+-- ── Platform constants ─────────────────────────────────────────────────
+
+limits :: PlatformLimits
+limits = PlatformLimits
+  { platformMaxCharacters = 500
+  , platformUrlCountLength = Nothing
+  }
+
+displayName :: Text
+displayName = "Bryan Grounds"
+
+sectionHeader :: Text
+sectionHeader = "## 🐘 Mastodon"
 
 -- ── URL Parsing ────────────────────────────────────────────────────────
 
-extractMastodonInstanceUrl :: Text -> Maybe Text
-extractMastodonInstanceUrl url =
+extractInstanceUrl :: Text -> Maybe Text
+extractInstanceUrl url =
   case T.splitOn "/@" url of
     (instanceUrl : _) -> Just instanceUrl
     _                 -> Nothing
 
-extractMastodonStatusId :: Text -> Maybe Text
-extractMastodonStatusId url =
+extractStatusId :: Text -> Maybe Text
+extractStatusId url =
   let parts = T.splitOn "/" url
   in case reverse parts of
     (statusId : _) -> Just statusId
     _              -> Nothing
 
-extractMastodonUsername :: Text -> Maybe Text
-extractMastodonUsername url =
+extractUsername :: Text -> Maybe Text
+extractUsername url =
   case T.splitOn "/@" url of
     (_ : rest) -> case T.splitOn "/" (T.intercalate "/@" rest) of
       (username : _) -> Just username
@@ -85,8 +119,8 @@ generateUUID = do
 
 -- ── Posting ────────────────────────────────────────────────────────────
 
-postToMastodon :: Manager -> MastodonCredentials -> Text -> IO (Either Text MastodonPostResult)
-postToMastodon manager MastodonCredentials{..} statusText = do
+post :: Manager -> Credentials -> Text -> IO (Either Text PostResult)
+post manager Credentials{..} statusText = do
   idempotencyKey <- generateUUID
   let apiUrl = unUrl mcInstanceUrl <> "/api/v1/statuses"
       bodyJson = encode (object
@@ -116,7 +150,7 @@ postToMastodon manager MastodonCredentials{..} statusText = do
     Left err -> Left (T.pack (show err))
     Right body -> parseMastodonResponse statusText body
 
-parseMastodonResponse :: Text -> LBS.ByteString -> Either Text MastodonPostResult
+parseMastodonResponse :: Text -> LBS.ByteString -> Either Text PostResult
 parseMastodonResponse fallbackText body =
   case eitherDecode @Json.Value body of
     Left err -> Left (T.pack err)
@@ -124,12 +158,12 @@ parseMastodonResponse fallbackText body =
       Left err -> Left (T.pack err)
       Right r -> Right r
 
-extractMastodonData :: Text -> Json.Value -> Either String MastodonPostResult
+extractMastodonData :: Text -> Json.Value -> Either String PostResult
 extractMastodonData fallbackText = withObject "mastodon response" $ \obj -> do
   statusId <- obj .: "id"
   statusUrl <- obj .: "url"
   case mkUrl statusUrl of
-    Right url -> pure MastodonPostResult
+    Right url -> pure PostResult
       { mprId = statusId
       , mprUrl = url
       , mprText = fallbackText
@@ -138,8 +172,8 @@ extractMastodonData fallbackText = withObject "mastodon response" $ \obj -> do
 
 -- ── Deleting ───────────────────────────────────────────────────────────
 
-deleteMastodonPost :: Manager -> MastodonCredentials -> Text -> IO (Either Text ())
-deleteMastodonPost manager MastodonCredentials{..} statusId = do
+deletePost :: Manager -> Credentials -> Text -> IO (Either Text ())
+deletePost manager Credentials{..} statusId = do
   let apiUrl = unUrl mcInstanceUrl <> "/api/v1/statuses/" <> statusId
   result <- try @SomeException $ do
     initialReq <- parseRequest (T.unpack apiUrl)
@@ -160,8 +194,8 @@ deleteMastodonPost manager MastodonCredentials{..} statusId = do
 
 -- ── Embed HTML ─────────────────────────────────────────────────────────
 
-fetchMastodonOEmbed :: Manager -> Text -> Text -> IO (Either Text Text)
-fetchMastodonOEmbed manager instanceUrl statusUrl = do
+fetchOEmbed :: Manager -> Text -> Text -> IO (Either Text Text)
+fetchOEmbed manager instanceUrl statusUrl = do
   let url = T.unpack instanceUrl <> "/api/oembed?url=" <> T.unpack statusUrl
   result <- try @SomeException $ do
     request <- parseRequest url
@@ -183,9 +217,9 @@ parseOEmbedHtml body =
       Left err -> Left (T.pack err)
       Right html -> Right html
 
-generateLocalMastodonEmbed :: Text -> Text
-generateLocalMastodonEmbed postUrl =
-  let instanceUrl = fromMaybe "" (extractMastodonInstanceUrl postUrl)
+generateLocalEmbed :: Text -> Text
+generateLocalEmbed postUrl =
+  let instanceUrl = fromMaybe "" (extractInstanceUrl postUrl)
   in "<iframe src=\""
        <> postUrl
        <> "/embed\" class=\"mastodon-embed\" "
@@ -195,10 +229,10 @@ generateLocalMastodonEmbed postUrl =
        <> instanceUrl
        <> "/embed.js\" async=\"async\"></script>"
 
-getMastodonEmbedHtml :: Manager -> Text -> Text -> Text -> IO Text
-getMastodonEmbedHtml manager postUrl _postText _date = do
-  let instanceUrl = fromMaybe "" (extractMastodonInstanceUrl postUrl)
-  result <- fetchMastodonOEmbed manager instanceUrl postUrl
+getEmbedHtml :: Manager -> Text -> Text -> Text -> IO Text
+getEmbedHtml manager postUrl _postText _date = do
+  let instanceUrl = fromMaybe "" (extractInstanceUrl postUrl)
+  result <- fetchOEmbed manager instanceUrl postUrl
   pure $ case result of
     Right html -> html
-    Left _     -> generateLocalMastodonEmbed postUrl
+    Left _     -> generateLocalEmbed postUrl

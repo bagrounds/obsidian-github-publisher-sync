@@ -52,17 +52,30 @@ Each type delivered as a vertical slice with constructor, tests, and migration o
 - [x] `data PlatformLimits = PlatformLimits { platformMaxCharacters :: Int, platformUrlCountLength :: Maybe Int }` for platform limits. Per-platform constants (`twitterLimits`, `blueskyLimits`, `mastodonLimits`), generalized `calculatePostLength` and `validatePostLength`. Removed backward-compat aliases.
 - [x] `data SocialPost = Tweet Text | BlueskyPost Text | MastodonPost Text` — per-platform ADT with smart constructors (`mkTweet`, `mkBlueskyPost`, `mkMastodonPost`, `mkSocialPost`) that validate character limits at construction time.
 
-### Next: Break Up Types Module
+### Completed: Break Up Types Module
 
-**Goal**: Replace the monolithic `Automation.Types` module with domain-specific modules. Each record type and its constants should live in the module that owns its domain concept. `Types.hs` becomes a thin re-export hub during migration.
+**Goal**: Replaced the monolithic `Automation.Types` module with domain-specific modules. Each type and its constants lives in the module that owns its domain concept, following library-developer module design (vertical slicing by feature, not horizontal slicing by artifact kind). `Types.hs` is a thin re-export hub for shared types only.
 
-Candidates for extraction:
-- [ ] `Automation.Platform` — `PlatformLimits`, per-platform constants, section headers, display names
-- [ ] `Automation.Credentials` — `TwitterCredentials`, `BlueskyCredentials`, `MastodonCredentials`, `GeminiConfig`, `ObsidianCredentials`, `EnvironmentConfig`
-- [ ] `Automation.Embed` — `EmbedResult`, `EmbedSection`, `OgMetadata`, `LinkCard`
-- [ ] Move `ReflectionData` to `Automation.Reflection`
-- [ ] Move platform result types (`TweetResult`, `BlueskyPostResult`, `MastodonPostResult`) to their respective platform modules
-- [ ] Keep `Automation.Types` as a thin re-export hub for backward compatibility during migration
+Types moved to their owning feature modules (using qualified import pattern — consumers write `import qualified ... as Twitter` etc.):
+- [x] `Credentials`, `PostResult`, `limits`, `twitterHandle`, `displayName`, `sectionHeader` → `Automation.Platforms.Twitter`
+- [x] `Credentials`, `PostResult`, `EmbedResult`, `LinkCard`, `limits`, `displayName`, `sectionHeader`, `oembedInitialDelayMs`, `oembedRetryDelayMs` → `Automation.Platforms.Bluesky`
+- [x] `Credentials`, `PostResult`, `limits`, `displayName`, `sectionHeader` → `Automation.Platforms.Mastodon`
+- [x] `OgMetadata` → `Automation.Platforms.OgMetadata`
+- [x] `Config`, `Request`, `Response`, `GenerationConfig`, `defaultModel`, `defaultQuestionModel`, `flashFallback`, `modelFallback` → `Automation.Gemini`
+- [x] `EnvironmentConfig` → `Automation.Env`
+- [x] `ObsidianCredentials` → `Automation.ObsidianSync` (was already defined there)
+- [x] `EmbedSection` → `Automation.EmbedSection`
+- [x] `ReflectionData` → `Automation.Reflection`
+- [x] Qualified import pattern adopted: types use short names (e.g. `Credentials` not `TwitterCredentials`), consumers qualify with module alias (e.g. `Twitter.Credentials`)
+
+Shared abstractions (used across multiple unrelated modules):
+- [x] `PlatformLimits` type + `updatesSectionHeader` → `Automation.Platform`
+
+Deleted horizontal-slice modules (replaced by vertical feature modules):
+- [x] `Automation.Credentials` — deleted (was a horizontal slice grouping unrelated credential types)
+- [x] `Automation.Embed` — deleted (was a horizontal slice grouping unrelated embed types)
+
+`Automation.Types` retained as thin re-export hub for truly shared types only (Secret, PlatformLimits, Url, Title, RelativePath, ReflectionData, OgMetadata, EmbedSection, EnvironmentConfig, ObsidianCredentials).
 
 ### Next: AppContext Record + Tests
 

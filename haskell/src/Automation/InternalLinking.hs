@@ -31,12 +31,7 @@ module Automation.InternalLinking
 
 import Automation.BlogPrompt (formatDay, todayPacificDay)
 import Automation.Frontmatter (YamlValue (..), parseFrontmatter, renderYamlValue)
-import Automation.Gemini
-  ( GenerationConfig (..)
-  , GeminiRequest (..)
-  , GeminiResponse (..)
-  , generateContent
-  )
+import qualified Automation.Gemini as Gemini
 import Automation.Json (decode)
 import Automation.Reflection (selectMostRecentReflection)
 import Automation.Types (Secret (..), RelativePath, unRelativePath, mkRelativePath, Title, unTitle, mkTitle)
@@ -666,18 +661,18 @@ identifyBooksWithGemini manager apiKey model fileBody bookEntries = do
 
 retryLoop :: Manager -> Secret -> Text -> Text -> Int -> Int -> IO (Either Text [Text])
 retryLoop manager apiKey model prompt attempt backoff = do
-  result <- generateContent manager GeminiRequest
-    { grPrompt           = prompt
-    , grModel            = model
-    , grApiKey           = apiKey
-    , grGenerationConfig = GenerationConfig
-        { gcTemperature     = 0.0
-        , gcMaxOutputTokens = 1024
+  result <- Gemini.generateContent manager Gemini.Request
+    { Gemini.grPrompt           = prompt
+    , Gemini.grModel            = model
+    , Gemini.grApiKey           = apiKey
+    , Gemini.grGenerationConfig = Gemini.GenerationConfig
+        { Gemini.gcTemperature     = 0.0
+        , Gemini.gcMaxOutputTokens = 1024
         }
     }
   case result of
     Right resp ->
-      pure (parseGeminiBookPaths (grText resp))
+      pure (parseGeminiBookPaths (Gemini.grText resp))
     Left err
       | isRateLimitErr err && attempt < maxGeminiRetries -> do
           putStrLn $ "  ⏳ Rate limit, retry " <> show (attempt + 1) <> "/" <> show maxGeminiRetries

@@ -17,11 +17,12 @@ import qualified Data.Text as T
 
 import Automation.Types
   ( Secret
-  , blueskySectionHeader
-  , mastodonSectionHeader
-  , tweetSectionHeader
   , updatesSectionHeader
   )
+
+import qualified Automation.Platforms.Bluesky as Bluesky
+import qualified Automation.Platforms.Mastodon as Mastodon
+import qualified Automation.Platforms.Twitter as Twitter
 
 fictionSectionHeader :: Text
 fictionSectionHeader = "## 🤖🐲 AI Fiction"
@@ -30,7 +31,7 @@ defaultFictionModel :: Text
 defaultFictionModel = "gemini-2.5-flash"
 
 embedHeaders :: [Text]
-embedHeaders = [tweetSectionHeader, blueskySectionHeader, mastodonSectionHeader]
+embedHeaders = [Twitter.sectionHeader, Bluesky.sectionHeader, Mastodon.sectionHeader]
 
 stripForPrompt :: Text -> Text
 stripForPrompt content =

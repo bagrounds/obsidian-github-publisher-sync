@@ -1,7 +1,6 @@
 module Automation.TypesTest (tests) where
 
 import Data.Char (isAlphaNum, isAscii)
-import Data.Text (Text)
 import qualified Data.Text as T
 import Test.Tasty (TestTree, testGroup)
 import Test.Tasty.HUnit (testCase, (@?=), assertBool)
@@ -9,22 +8,19 @@ import Test.Tasty.QuickCheck (testProperty)
 import qualified Test.QuickCheck as QC
 
 import Automation.TestGenerators (testUrl, testTitle, testRelativePath)
+import qualified Automation.Platforms.Bluesky as Bluesky
+import qualified Automation.Platforms.Mastodon as Mastodon
+import qualified Automation.Platforms.Twitter as Twitter
 import Automation.Types
   ( Secret (..)
   , PlatformLimits (..)
-  , Url
   , unUrl
-  , Title
   , unTitle
-  , RelativePath
   , unRelativePath
   , mkSecret
   , mkUrl
   , mkTitle
   , mkRelativePath
-  , twitterLimits
-  , blueskyLimits
-  , mastodonLimits
   )
 
 tests :: TestTree
@@ -84,31 +80,31 @@ secretTests = testGroup "Secret"
 
 platformLimitsTests :: TestTree
 platformLimitsTests = testGroup "PlatformLimits"
-  [ testCase "twitterLimits has correct max characters" $
-      platformMaxCharacters twitterLimits @?= 280
+  [ testCase "Twitter.limits has correct max characters" $
+      platformMaxCharacters Twitter.limits @?= 280
 
-  , testCase "twitterLimits has URL count length" $
-      platformUrlCountLength twitterLimits @?= Just 23
+  , testCase "Twitter.limits has URL count length" $
+      platformUrlCountLength Twitter.limits @?= Just 23
 
-  , testCase "blueskyLimits has correct max characters" $
-      platformMaxCharacters blueskyLimits @?= 300
+  , testCase "Bluesky.limits has correct max characters" $
+      platformMaxCharacters Bluesky.limits @?= 300
 
-  , testCase "blueskyLimits has no URL count length" $
-      platformUrlCountLength blueskyLimits @?= Nothing
+  , testCase "Bluesky.limits has no URL count length" $
+      platformUrlCountLength Bluesky.limits @?= Nothing
 
-  , testCase "mastodonLimits has correct max characters" $
-      platformMaxCharacters mastodonLimits @?= 500
+  , testCase "Mastodon.limits has correct max characters" $
+      platformMaxCharacters Mastodon.limits @?= 500
 
-  , testCase "mastodonLimits has no URL count length" $
-      platformUrlCountLength mastodonLimits @?= Nothing
+  , testCase "Mastodon.limits has no URL count length" $
+      platformUrlCountLength Mastodon.limits @?= Nothing
 
   , testProperty "all platform limits have positive max characters" $
-      QC.forAll (QC.elements [twitterLimits, blueskyLimits, mastodonLimits]) $
+      QC.forAll (QC.elements [Twitter.limits, Bluesky.limits, Mastodon.limits]) $
         \limits -> platformMaxCharacters limits > 0
 
   , testProperty "twitter URL count length is less than max characters" $
-      case platformUrlCountLength twitterLimits of
-        Just urlLen -> urlLen < platformMaxCharacters twitterLimits
+      case platformUrlCountLength Twitter.limits of
+        Just urlLen -> urlLen < platformMaxCharacters Twitter.limits
         Nothing -> True
   ]
 

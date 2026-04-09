@@ -12,7 +12,6 @@ import qualified Test.Tasty.QuickCheck as QC
 
 import Automation.DailyUpdates
 import Automation.TestGenerators (testTitle, testRelativePath)
-import Automation.Types (RelativePath, mkRelativePath, Title, mkTitle)
 
 tests :: TestTree
 tests = testGroup "DailyUpdates"

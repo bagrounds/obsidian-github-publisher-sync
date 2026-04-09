@@ -2,9 +2,15 @@
 {-# LANGUAGE DeriveGeneric #-}
 
 module Automation.Gemini
-  ( GeminiRequest (..)
-  , GeminiResponse (..)
+  ( Config (..)
+  , Request (..)
+  , Response (..)
   , GenerationConfig (..)
+  , defaultModel
+  , defaultQuestionModel
+  , gemini3Flash
+  , flashFallback
+  , modelFallback
   , generateContent
   , generateContentWithFallback
   , defaultGenerationConfig
@@ -12,13 +18,12 @@ module Automation.Gemini
 
 import Automation.Json (Value (..), ToValue (..), (.=), object, encode)
 import qualified Automation.Json as Json
-import Automation.Types (Secret (..))
+import Automation.Secret (Secret (..))
 import Data.Text (Text)
 import qualified Data.Text as T
 import qualified Data.Text.Encoding as TE
 import Network.HTTP.Client
   ( Manager
-  , Request (..)
   , RequestBody (..)
   , httpLbs
   , parseRequest
@@ -26,9 +31,33 @@ import Network.HTTP.Client
   , responseStatus
   , responseTimeoutMicro
   )
+import qualified Network.HTTP.Client as HTTP
 import Network.HTTP.Types.Status (statusCode)
 
 import qualified Data.ByteString.Lazy as LBS
+
+data Config = Config
+  { gcApiKey :: Secret
+  , gcModel :: Text
+  , gcQuestionModel :: Text
+  } deriving (Show, Eq)
+
+defaultModel :: Text
+defaultModel = "gemma-3-27b-it"
+
+defaultQuestionModel :: Text
+defaultQuestionModel = "gemini-3.1-flash-lite-preview"
+
+gemini3Flash :: Text
+gemini3Flash = "gemini-3-flash-preview"
+
+flashFallback :: Text
+flashFallback = "gemini-2.5-flash"
+
+modelFallback :: Text -> Maybe Text
+modelFallback model
+  | model == "gemini-3.1-flash-lite-preview" = Just flashFallback
+  | otherwise = Nothing
 
 data GenerationConfig = GenerationConfig
   { gcTemperature    :: Double
@@ -47,14 +76,14 @@ defaultGenerationConfig = GenerationConfig
   , gcMaxOutputTokens = 1024
   }
 
-data GeminiRequest = GeminiRequest
+data Request = Request
   { grPrompt           :: Text
   , grModel            :: Text
   , grApiKey           :: Secret
   , grGenerationConfig :: GenerationConfig
   } deriving (Show, Eq)
 
-data GeminiResponse = GeminiResponse
+data Response = Response
   { grText  :: Text
   , grModel' :: Text
   } deriving (Show, Eq)
@@ -93,18 +122,18 @@ extractText (Object obj) =
     _ -> Left "No candidates in response"
 extractText _ = Left "Response is not an object"
 
-generateContent :: Manager -> GeminiRequest -> IO (Either Text GeminiResponse)
+generateContent :: Manager -> Request -> IO (Either Text Response)
 generateContent manager req = do
   let url = T.unpack $ geminiEndpoint (grModel req) <> "?key=" <> unSecret (grApiKey req)
   initReq <- parseRequest url
   let body = encode $ buildRequestBody (grPrompt req) (grGenerationConfig req)
   let httpReq = initReq
-        { method = "POST"
-        , requestBody = RequestBodyLBS body
-        , requestHeaders =
+        { HTTP.method = "POST"
+        , HTTP.requestBody = RequestBodyLBS body
+        , HTTP.requestHeaders =
             [ ("Content-Type", "application/json")
             ]
-        , responseTimeout = responseTimeoutMicro (120 * 1000000)  -- 120 seconds for Gemini API
+        , HTTP.responseTimeout = responseTimeoutMicro (120 * 1000000)  -- 120 seconds for Gemini API
         }
   response <- httpLbs httpReq manager
   let status = statusCode $ responseStatus response
@@ -112,7 +141,7 @@ generateContent manager req = do
     200 ->
       case parseResponseText (responseBody response) of
         Left err   -> pure $ Left err
-        Right text -> pure $ Right GeminiResponse
+        Right text -> pure $ Right Response
           { grText  = T.strip text
           , grModel' = grModel req
           }
@@ -120,10 +149,10 @@ generateContent manager req = do
       "Gemini API returned status " <> T.pack (show code)
         <> ": " <> TE.decodeUtf8 (LBS.toStrict $ responseBody response)
 
-generateContentWithFallback :: Manager -> [Text] -> Text -> Secret -> GenerationConfig -> IO (Either Text GeminiResponse)
+generateContentWithFallback :: Manager -> [Text] -> Text -> Secret -> GenerationConfig -> IO (Either Text Response)
 generateContentWithFallback _ [] _ _ _ = pure $ Left "No models provided for fallback"
 generateContentWithFallback manager (model : fallbacks) prompt apiKey config = do
-  result <- generateContent manager GeminiRequest
+  result <- generateContent manager Request
     { grPrompt = prompt
     , grModel = model
     , grApiKey = apiKey

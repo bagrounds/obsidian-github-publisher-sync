@@ -1,5 +1,6 @@
 module Automation.Platforms.OgMetadata
-  ( extractOgProperty
+  ( OgMetadata (..)
+  , extractOgProperty
   , fetchOgMetadata
   , fetchImageAsBuffer
   , detectContentType
@@ -12,7 +13,13 @@ import qualified Data.Text.Encoding as TE
 import qualified Network.HTTP.Client as HTTP
 import qualified Network.HTTP.Client.TLS as TLS
 
-import Automation.Types (OgMetadata (..), mkTitle)
+import Automation.Title (Title, mkTitle)
+
+data OgMetadata = OgMetadata
+  { ogTitle :: Maybe Title
+  , ogDescription :: Maybe Text
+  , ogImageUrl :: Maybe Text
+  } deriving (Show, Eq)
 
 extractOgProperty :: Text -> Text -> Maybe Text
 extractOgProperty property html =

@@ -849,7 +849,7 @@ describeImageWithGemini
   :: Manager -> Text -> Text -> Text -> IO (Either Text Text)
 describeImageWithGemini manager apiKey model content = do
   let fullPrompt = imageDescriptionSystemPrompt <> "\n\n" <> content
-      req = Gemini.GeminiRequest
+      req = Gemini.Request
         { Gemini.grPrompt = fullPrompt
         , Gemini.grModel = model
         , Gemini.grApiKey = Secret apiKey

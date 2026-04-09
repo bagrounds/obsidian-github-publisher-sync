@@ -6,6 +6,9 @@ URL: https://bagrounds.org/books/the-thinking-machine-jensen-huang-nvidia-and-th
 share: true
 CTA: 💡 Master the future of computing.
 affiliate link: https://amzn.to/4p93S03
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_time: 2026-04-06T00:00:00Z
+force_analyze_links: false
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🧠🔌 The Thinking Machine: Jensen Huang, Nvidia, and the World's Most Coveted Microchip  

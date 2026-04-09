@@ -10,6 +10,9 @@ Channel: Santa Fe Institute
 tags:
 youtube: https://youtu.be/rXRcLSYTomw
 updated: 2026-03-17T08:16:05.578Z
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_time: 2026-04-04T00:00:00Z
+force_analyze_links: false
 ---
 [Home](../index.md) > [Videos](./index.md)  
 # 🧠✨💫 The Development of Imagination  

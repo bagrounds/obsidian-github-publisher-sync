@@ -9,6 +9,9 @@ Platform:
 Channel: PBS NewsHour
 tags:
 youtube: https://youtu.be/QVVTfj_JL0M
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_time: 2026-04-07T00:00:00Z
+force_analyze_links: false
 ---
 [Home](../index.md) > [Videos](./index.md)  
 # 👨‍⚖️🚫🇺🇸⚖️ Trump’s attempt to pardon Tina Peters runs into constitutional limits  
@@ -49,7 +52,7 @@ youtube: https://youtu.be/QVVTfj_JL0M
   
 ### ↔️ Similar  
   
-- 📘 The Presidential Pardon Power by Jeffrey Crouch provides a comprehensive analysis of the legal evolution and potential misuses of executive clemency.  
+- 📘 [🏛️🕊️👑 The Presidential Pardon Power](../books/the-presidential-pardon-power.md) by Jeffrey Crouch provides a comprehensive analysis of the legal evolution and potential misuses of executive clemency.  
 - 📙 The Law of the Police by Rachel Harmon examines the complex web of state and federal statutes that regulate the conduct of public officials.  
   
 ### 🆚 Contrasting  

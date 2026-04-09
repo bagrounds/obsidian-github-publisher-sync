@@ -12,7 +12,7 @@ import qualified Data.Text.Encoding as TE
 import qualified Network.HTTP.Client as HTTP
 import qualified Network.HTTP.Client.TLS as TLS
 
-import Automation.Types (OgMetadata (..), Title (..))
+import Automation.Types (OgMetadata (..), mkTitle)
 
 extractOgProperty :: Text -> Text -> Maybe Text
 extractOgProperty property html =
@@ -28,7 +28,7 @@ fetchOgMetadata url = do
   response <- HTTP.httpLbs request manager
   let body = TE.decodeUtf8Lenient (LBS.toStrict (HTTP.responseBody response))
   pure OgMetadata
-    { ogTitle       = fmap Title (extractOgProperty "title" body)
+    { ogTitle       = extractOgProperty "title" body >>= either (const Nothing) Just . mkTitle
     , ogDescription = extractOgProperty "description" body
     , ogImageUrl    = extractOgProperty "image" body
     }

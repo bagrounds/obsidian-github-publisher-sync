@@ -32,7 +32,7 @@ import System.Random (randomRIO)
 import Automation.Json ((.=), (.:), eitherDecode, encode, object, withObject)
 import qualified Automation.Json as Json
 import Automation.Retry (HttpCodeException (..), defaultRetryOptions, withRetry)
-import Automation.Types (MastodonCredentials (..), MastodonPostResult (..), Secret (..), Url (..))
+import Automation.Types (MastodonCredentials (..), MastodonPostResult (..), Secret (..), unUrl, mkUrl)
 
 -- ── URL Parsing ────────────────────────────────────────────────────────
 
@@ -128,11 +128,13 @@ extractMastodonData :: Text -> Json.Value -> Either String MastodonPostResult
 extractMastodonData fallbackText = withObject "mastodon response" $ \obj -> do
   statusId <- obj .: "id"
   statusUrl <- obj .: "url"
-  pure MastodonPostResult
-    { mprId = statusId
-    , mprUrl = Url statusUrl
-    , mprText = fallbackText
-    }
+  case mkUrl statusUrl of
+    Right url -> pure MastodonPostResult
+      { mprId = statusId
+      , mprUrl = url
+      , mprText = fallbackText
+      }
+    Left err -> Left (T.unpack err)
 
 -- ── Deleting ───────────────────────────────────────────────────────────
 

@@ -21,8 +21,10 @@ import System.FilePath ((</>), takeBaseName)
 
 import Automation.Types
   ( ReflectionData (..)
-  , Title (..)
-  , Url (..)
+  , Title
+  , mkTitle
+  , Url
+  , mkUrl
   , blueskySectionHeader
   , mastodonSectionHeader
   , tweetSectionHeader
@@ -136,8 +138,8 @@ readReflection date contentDir = do
           (hasTweet, hasBluesky, hasMastodon) = sections
       pure $ Just ReflectionData
         { rdDate = date
-        , rdTitle = Title (fromMaybe date (Map.lookup "title" fm))
-        , rdUrl = Url (fromMaybe ("https://bagrounds.org/reflections/" <> date) (Map.lookup "URL" fm))
+        , rdTitle = validatedTitle (fromMaybe date (Map.lookup "title" fm))
+        , rdUrl = validatedUrl (fromMaybe ("https://bagrounds.org/reflections/" <> date) (Map.lookup "URL" fm))
         , rdBody = body
         , rdFilePath = T.pack filePath
         , rdHasTweetSection = hasTweet
@@ -158,11 +160,17 @@ readNote relativePath contentDir = do
       date <- extractDateFromFilename relativePath
       pure $ Just ReflectionData
         { rdDate = date
-        , rdTitle = Title (fromMaybe (T.pack $ takeBaseName $ T.unpack relativePath) (Map.lookup "title" fm))
-        , rdUrl = Url (deriveUrl fm relativePath)
+        , rdTitle = validatedTitle (fromMaybe (T.pack $ takeBaseName $ T.unpack relativePath) (Map.lookup "title" fm))
+        , rdUrl = validatedUrl (deriveUrl fm relativePath)
         , rdBody = body
         , rdFilePath = T.pack filePath
         , rdHasTweetSection = hasTweet
         , rdHasBlueskySection = hasBluesky
         , rdHasMastodonSection = hasMastodon
         }
+
+validatedTitle :: Text -> Title
+validatedTitle = either (error . T.unpack) id . mkTitle
+
+validatedUrl :: Text -> Url
+validatedUrl = either (error . T.unpack) id . mkUrl

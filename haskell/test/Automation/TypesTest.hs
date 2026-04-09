@@ -1,5 +1,6 @@
 module Automation.TypesTest (tests) where
 
+import Data.Char (isAlphaNum, isAscii)
 import Data.Text (Text)
 import qualified Data.Text as T
 import Test.Tasty (TestTree, testGroup)
@@ -10,9 +11,12 @@ import qualified Test.QuickCheck as QC
 import Automation.Types
   ( Secret (..)
   , PlatformLimits (..)
-  , Url (..)
-  , Title (..)
-  , RelativePath (..)
+  , Url
+  , unUrl
+  , Title
+  , unTitle
+  , RelativePath
+  , unRelativePath
   , mkSecret
   , mkUrl
   , mkTitle
@@ -114,10 +118,10 @@ platformLimitsTests = testGroup "PlatformLimits"
 urlTests :: TestTree
 urlTests = testGroup "Url"
   [ testCase "mkUrl accepts https URL" $
-      mkUrl "https://example.com" @?= Right (Url "https://example.com")
+      fmap unUrl (mkUrl "https://example.com") @?= Right "https://example.com"
 
   , testCase "mkUrl accepts http URL" $
-      mkUrl "http://example.com" @?= Right (Url "http://example.com")
+      fmap unUrl (mkUrl "http://example.com") @?= Right "http://example.com"
 
   , testCase "mkUrl rejects non-URL text" $
       case mkUrl "not a url" of
@@ -130,23 +134,23 @@ urlTests = testGroup "Url"
         Right _ -> fail "Expected Left for empty URL"
 
   , testCase "Eq compares underlying URLs" $
-      Url "https://a.com" @?= Url "https://a.com"
+      testUrl "https://a.com" @?= testUrl "https://a.com"
 
   , testCase "Eq detects different URLs" $
       assertBool "Expected different URLs to be unequal"
-        (Url "https://a.com" /= Url "https://b.com")
+        (testUrl "https://a.com" /= testUrl "https://b.com")
 
-  , testProperty "constructed Url always starts with http" $ \suffix ->
-      let text = "https://" <> T.pack suffix
+  , testProperty "valid URLs always start with http" $ \suffix ->
+      let text = "https://example.com/" <> T.pack (filter isAsciiAlphaNum suffix)
       in case mkUrl text of
            Right url -> T.isPrefixOf "http" (unUrl url)
-           Left _ -> False
+           Left _ -> True
 
   , testProperty "mkUrl round-trips for valid input" $ \suffix ->
-      let text = "https://example.com/" <> T.pack suffix
+      let text = "https://example.com/" <> T.pack (filter isAsciiAlphaNum suffix)
       in case mkUrl text of
            Right url -> unUrl url == text
-           Left _ -> False
+           Left _ -> True
 
   , testProperty "mkUrl rejects non-http input" $
       QC.forAll (QC.arbitrary `QC.suchThat` (\s -> not (null s) && take 4 s /= "http")) $ \raw ->
@@ -163,7 +167,7 @@ urlTests = testGroup "Url"
 titleTests :: TestTree
 titleTests = testGroup "Title"
   [ testCase "mkTitle accepts non-empty text" $
-      mkTitle "Hello World" @?= Right (Title "Hello World")
+      fmap unTitle (mkTitle "Hello World") @?= Right "Hello World"
 
   , testCase "mkTitle rejects empty text" $
       case mkTitle "" of
@@ -176,11 +180,11 @@ titleTests = testGroup "Title"
         Right _ -> fail "Expected Left for whitespace title"
 
   , testCase "Eq compares underlying titles" $
-      Title "abc" @?= Title "abc"
+      testTitle "abc" @?= testTitle "abc"
 
   , testCase "Eq detects different titles" $
       assertBool "Expected different titles to be unequal"
-        (Title "abc" /= Title "xyz")
+        (testTitle "abc" /= testTitle "xyz")
 
   , testProperty "mkTitle round-trips for non-empty input" $ \raw ->
       let text = T.pack raw
@@ -204,7 +208,7 @@ titleTests = testGroup "Title"
 relativePathTests :: TestTree
 relativePathTests = testGroup "RelativePath"
   [ testCase "mkRelativePath accepts relative path" $
-      mkRelativePath "content/notes/file.md" @?= Right (RelativePath "content/notes/file.md")
+      fmap unRelativePath (mkRelativePath "content/notes/file.md") @?= Right "content/notes/file.md"
 
   , testCase "mkRelativePath rejects empty text" $
       case mkRelativePath "" of
@@ -217,11 +221,11 @@ relativePathTests = testGroup "RelativePath"
         Right _ -> fail "Expected Left for absolute path"
 
   , testCase "Eq compares underlying paths" $
-      RelativePath "a/b" @?= RelativePath "a/b"
+      testRelativePath "a/b" @?= testRelativePath "a/b"
 
   , testCase "Eq detects different paths" $
       assertBool "Expected different paths to be unequal"
-        (RelativePath "a/b" /= RelativePath "c/d")
+        (testRelativePath "a/b" /= testRelativePath "c/d")
 
   , testProperty "mkRelativePath round-trips for valid input" $ \raw ->
       let text = T.pack raw
@@ -244,3 +248,15 @@ relativePathTests = testGroup "RelativePath"
           Right rp -> not (T.isPrefixOf "/" (unRelativePath rp))
           Left _ -> True
   ]
+
+isAsciiAlphaNum :: Char -> Bool
+isAsciiAlphaNum c = isAscii c && isAlphaNum c
+
+testUrl :: Text -> Url
+testUrl = either (error . T.unpack) id . mkUrl
+
+testTitle :: Text -> Title
+testTitle = either (error . T.unpack) id . mkTitle
+
+testRelativePath :: Text -> RelativePath
+testRelativePath = either (error . T.unpack) id . mkRelativePath

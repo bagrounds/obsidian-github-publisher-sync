@@ -39,7 +39,7 @@ import Automation.Gemini
   )
 import Automation.Json (decode)
 import Automation.Reflection (selectMostRecentReflection)
-import Automation.Types (Secret (..), RelativePath (..), Title (..))
+import Automation.Types (Secret (..), RelativePath, unRelativePath, mkRelativePath, Title, unTitle, mkTitle)
 import Control.Concurrent (threadDelay)
 import Data.Char (ord)
 import Data.IORef (IORef, modifyIORef', newIORef, readIORef)
@@ -413,9 +413,9 @@ readEntry contentDir dirName file = do
     if T.length plain < minTitleLength
       then Nothing
       else Just ContentEntry
-        { ceRelativePath = RelativePath relativePath
-        , ceTitle        = Title title
-        , cePlainTitle   = Title plain
+        { ceRelativePath = validatedRelativePath relativePath
+        , ceTitle        = validatedTitle title
+        , cePlainTitle   = validatedTitle plain
         }
 
 hasSuffix :: String -> String -> Bool
@@ -582,7 +582,7 @@ findLinkCandidates index content masked selfPath =
   where
     findForEntry :: ([(Int, Int)], [LinkCandidate]) -> ContentEntry -> ([(Int, Int)], [LinkCandidate])
     findForEntry (ranges, cands) entry
-      | ceRelativePath entry == RelativePath selfPath = (ranges, cands)
+      | ceRelativePath entry == validatedRelativePath selfPath = (ranges, cands)
       | contentAlreadyLinksTo content entry = (ranges, cands)
       | any (\c -> ceRelativePath (lcEntry c) == ceRelativePath entry) cands = (ranges, cands)
       | otherwise =
@@ -820,10 +820,11 @@ processFile :: Manager -> Secret -> Text -> FilePath -> [ContentEntry] -> IO Fil
 processFile manager apiKey model filePath index = do
   let contentDir   = takeDirectory (takeDirectory filePath)
       relativePath = makeRelPathFromContentDir contentDir filePath
+      relPath = validatedRelativePath (T.pack relativePath)
   content <- TIO.readFile filePath
   case alreadyAnalyzed content of
     True -> pure FileResult
-      { frRelativePath  = RelativePath (T.pack relativePath)
+      { frRelativePath  = relPath
       , frModified      = False
       , frLinksAdded    = 0
       , frUsedInference = False
@@ -831,7 +832,7 @@ processFile manager apiKey model filePath index = do
     False -> do
       let body = extractBody content
           eligibleBooks = filter
-            (\e -> ceRelativePath e /= RelativePath (T.pack relativePath)
+            (\e -> ceRelativePath e /= relPath
                 && not (contentAlreadyLinksTo content e))
             index
       case eligibleBooks of
@@ -839,7 +840,7 @@ processFile manager apiKey model filePath index = do
           timestamp <- nowIso
           recordLinkAnalysis filePath model timestamp
           pure FileResult
-            { frRelativePath  = RelativePath (T.pack relativePath)
+            { frRelativePath  = relPath
             , frModified      = False
             , frLinksAdded    = 0
             , frUsedInference = False
@@ -850,14 +851,14 @@ processFile manager apiKey model filePath index = do
           recordLinkAnalysis filePath model timestamp
           case geminiResult of
             Left _err -> pure FileResult
-              { frRelativePath  = RelativePath (T.pack relativePath)
+              { frRelativePath  = relPath
               , frModified      = False
               , frLinksAdded    = 0
               , frUsedInference = True
               }
             Right identifiedPaths
               | null identifiedPaths -> pure FileResult
-                  { frRelativePath  = RelativePath (T.pack relativePath)
+                  { frRelativePath  = relPath
                   , frModified      = False
                   , frLinksAdded    = 0
                   , frUsedInference = True
@@ -870,7 +871,7 @@ processFile manager apiKey model filePath index = do
                       candidates      = findLinkCandidates identifiedIndex contentAfterFm masked (T.pack relativePath)
                   case candidates of
                     [] -> pure FileResult
-                      { frRelativePath  = RelativePath (T.pack relativePath)
+                      { frRelativePath  = relPath
                       , frModified      = False
                       , frLinksAdded    = 0
                       , frUsedInference = True
@@ -882,7 +883,7 @@ processFile manager apiKey model filePath index = do
                       putStrLn $ "  ✏️  " <> relativePath <> ": "
                         <> show (length candidates) <> " link(s) applied"
                       pure FileResult
-                        { frRelativePath  = RelativePath (T.pack relativePath)
+                        { frRelativePath  = relPath
                         , frModified      = True
                         , frLinksAdded    = length candidates
                         , frUsedInference = True
@@ -964,5 +965,11 @@ lookupSecret :: IO Secret
 lookupSecret = do
   mKey <- lookupEnv "GEMINI_API_KEY"
   pure $ Secret (maybe "" T.pack mKey)
+
+validatedTitle :: Text -> Title
+validatedTitle = either (error . T.unpack) id . mkTitle
+
+validatedRelativePath :: Text -> RelativePath
+validatedRelativePath = either (error . T.unpack) id . mkRelativePath
 
 

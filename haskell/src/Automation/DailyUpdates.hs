@@ -16,7 +16,7 @@ import System.FilePath ((</>), takeBaseName)
 
 import Automation.DailyReflection (ensureDailyReflection, EnsureReflectionResult (..), findFirstSectionIndex, embedSectionHeaders)
 import Automation.Frontmatter (parseFrontmatter)
-import Automation.Types (updatesSectionHeader, RelativePath (..), Title (..))
+import Automation.Types (updatesSectionHeader, RelativePath, unRelativePath, Title, unTitle)
 
 data UpdateLink = UpdateLink
   { ulRelativePath :: RelativePath

@@ -1,5 +1,7 @@
 module Automation.PromptsTest (tests) where
 
+import Data.Char (isAlphaNum, isAscii)
+import Data.Text (Text)
 import qualified Data.Text as T
 import Test.Tasty (TestTree, testGroup)
 import Test.Tasty.HUnit (testCase, (@?=), assertBool)
@@ -7,7 +9,7 @@ import Test.Tasty.QuickCheck (testProperty)
 import qualified Test.Tasty.QuickCheck as QC
 
 import Automation.Prompts
-import Automation.Types (ReflectionData (..), PlatformLimits (..), Title (..), Url (..), blueskyLimits)
+import Automation.Types (ReflectionData (..), PlatformLimits (..), Title, unTitle, mkTitle, Url, unUrl, mkUrl, blueskyLimits)
 
 tests :: TestTree
 tests = testGroup "Prompts"
@@ -22,8 +24,8 @@ tests = testGroup "Prompts"
 sampleReflection :: ReflectionData
 sampleReflection = ReflectionData
   { rdDate                = "2026-04-01"
-  , rdTitle               = Title "2026-04-01 | My Reflection"
-  , rdUrl                 = Url "https://bagrounds.org/reflections/2026-04-01"
+  , rdTitle               = testTitle "2026-04-01 | My Reflection"
+  , rdUrl                 = testUrl "https://bagrounds.org/reflections/2026-04-01"
   , rdBody                = "Some reflection body content"
   , rdFilePath            = "reflections/2026-04-01.md"
   , rdHasTweetSection     = False
@@ -51,19 +53,19 @@ calculateQuestionBudgetTests = testGroup "calculateQuestionBudget"
       let budget = calculateQuestionBudget sampleReflection
       in assertBool "budget is positive" (budget > 0)
   , testCase "budget decreases with longer title" $
-      let shortTitle = sampleReflection { rdTitle = Title "Short" }
-          longTitle = sampleReflection { rdTitle = Title (T.replicate 100 "x") }
+      let shortTitle = sampleReflection { rdTitle = testTitle "Short" }
+          longTitle = sampleReflection { rdTitle = testTitle (T.replicate 100 "x") }
       in assertBool "short title has more budget" $
         calculateQuestionBudget shortTitle > calculateQuestionBudget longTitle
   , testCase "budget decreases with longer URL" $
-      let shortUrl = sampleReflection { rdUrl = Url "https://x.com/a" }
-          longUrl = sampleReflection { rdUrl = Url ("https://example.com/" <> T.replicate 100 "x") }
+      let shortUrl = sampleReflection { rdUrl = testUrl "https://x.com/a" }
+          longUrl = sampleReflection { rdUrl = testUrl ("https://example.com/" <> T.replicate 100 "x") }
       in assertBool "short URL has more budget" $
         calculateQuestionBudget shortUrl > calculateQuestionBudget longUrl
   , testCase "budget has minimum of 30" $
       let extreme = sampleReflection
-            { rdTitle = Title (T.replicate 200 "x")
-            , rdUrl = Url (T.replicate 200 "y")
+            { rdTitle = testTitle (T.replicate 200 "x")
+            , rdUrl = testUrl ("https://example.com/" <> T.replicate 200 "x")
             }
       in calculateQuestionBudget extreme @?= 30
   , testCase "budget is at most blueskyMaxLength" $
@@ -151,7 +153,10 @@ propertyTests :: TestTree
 propertyTests = testGroup "properties"
   [ testProperty "calculateQuestionBudget always at least 30" $
       \(QC.ASCIIString title) (QC.ASCIIString url) ->
-        let rd = sampleReflection { rdTitle = Title (T.pack title), rdUrl = Url (T.pack url) }
+        let titleText = let t = T.pack title in if T.null (T.strip t) then "x" else t
+            urlSuffix = filter isUrlSafe url
+            urlText = "https://example.com/" <> T.pack urlSuffix
+            rd = sampleReflection { rdTitle = testTitle titleText, rdUrl = testUrl urlText }
         in calculateQuestionBudget rd >= 30
   , testProperty "assemblePost always contains URL" $
       \(QC.ASCIIString modelOutput) ->
@@ -166,3 +171,12 @@ propertyTests = testGroup "properties"
         let txt = T.pack s
         in T.length (stripSubtitle txt) <= T.length txt
   ]
+
+testUrl :: Text -> Url
+testUrl = either (error . T.unpack) id . mkUrl
+
+testTitle :: Text -> Title
+testTitle = either (error . T.unpack) id . mkTitle
+
+isUrlSafe :: Char -> Bool
+isUrlSafe c = isAscii c && (isAlphaNum c || c `elem` ("-._~" :: String))

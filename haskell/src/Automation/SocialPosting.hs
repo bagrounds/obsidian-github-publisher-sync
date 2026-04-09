@@ -324,17 +324,17 @@ readContentNote relativePath contentDir = do
           postedPlatforms = detectPostedPlatforms content
           linkedPaths = extractMarkdownLinks body relativePath contentDir
           noSocial = Map.lookup "no_social" fm == Just "true"
-          title = Title (fromMaybe (T.pack $ takeBaseName $ T.unpack relativePath) (Map.lookup "title" fm))
+          title = validatedTitle (fromMaybe (T.pack $ takeBaseName $ T.unpack relativePath) (Map.lookup "title" fm))
           slug = fromMaybe relativePath (T.stripSuffix ".md" relativePath)
-          url = Url (fromMaybe ("https://bagrounds.org/" <> slug) (Map.lookup "URL" fm))
+          url = validatedUrl (fromMaybe ("https://bagrounds.org/" <> slug) (Map.lookup "URL" fm))
       pure $ Just ContentNote
         { cnFilePath = filePath
-        , cnRelativePath = RelativePath relativePath
+        , cnRelativePath = validatedRelativePath relativePath
         , cnTitle = title
         , cnUrl = url
         , cnBody = body
         , cnPostedPlatforms = postedPlatforms
-        , cnLinkedNotePaths = fmap RelativePath linkedPaths
+        , cnLinkedNotePaths = fmap validatedRelativePath linkedPaths
         , cnNoSocial = noSocial
         }
 
@@ -359,6 +359,15 @@ urlFromFilePath relativePath =
   let slug = fromMaybe relativePath (T.stripSuffix ".md" relativePath)
   in "https://bagrounds.org/" <> slug
 
+validatedTitle :: Text -> Title
+validatedTitle = either (error . T.unpack) id . mkTitle
+
+validatedUrl :: Text -> Url
+validatedUrl = either (error . T.unpack) id . mkUrl
+
+validatedRelativePath :: Text -> RelativePath
+validatedRelativePath = either (error . T.unpack) id . mkRelativePath
+
 validateNoteUrl :: (Text -> IO Bool) -> ContentNote -> IO (Maybe ContentNote)
 validateNoteUrl checker note = do
   isLive <- checker (unUrl (cnUrl note))
@@ -379,7 +388,7 @@ validateNoteUrl checker note = do
             True -> do
               putStrLn $ "  ✅ File-path URL is live, updating frontmatter"
               updateFrontmatterUrl (cnFilePath note) pathUrl
-              pure (Just note { cnUrl = Url pathUrl })
+              pure (Just note { cnUrl = validatedUrl pathUrl })
             False -> do
               putStrLn $ "  🚫 Both URLs not published: "
                 <> T.unpack (unUrl (cnUrl note)) <> " and " <> T.unpack pathUrl

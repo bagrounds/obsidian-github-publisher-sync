@@ -1,5 +1,6 @@
 module Automation.Title
-  ( Title (..)
+  ( Title
+  , unTitle
   , mkTitle
   ) where
 

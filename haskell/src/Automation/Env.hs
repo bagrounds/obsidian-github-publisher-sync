@@ -17,7 +17,7 @@ import System.Environment (lookupEnv)
 
 import Automation.Types
   ( Secret (..)
-  , Url (..)
+  , mkUrl
   , BlueskyCredentials (..)
   , EnvironmentConfig (..)
   , GeminiConfig (..)
@@ -98,7 +98,7 @@ validateEnvironment = do
   mastodon <- whenPlatformEnabled "Mastodon" "DISABLE_MASTODON"
     ["MASTODON_INSTANCE_URL", "MASTODON_ACCESS_TOKEN"]
     (MastodonCredentials
-      <$> fmap Url (requireEnv "MASTODON_INSTANCE_URL")
+      <$> (requireEnv "MASTODON_INSTANCE_URL" >>= either (fail . T.unpack) pure . mkUrl)
       <*> fmap Secret (requireEnv "MASTODON_ACCESS_TOKEN"))
 
   gemini <- GeminiConfig

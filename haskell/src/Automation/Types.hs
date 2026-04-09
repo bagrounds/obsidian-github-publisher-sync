@@ -16,11 +16,14 @@ module Automation.Types
   , PlatformLimits (..)
   , Secret (..)
   , mkSecret
-  , Url (..)
+  , Url
+  , unUrl
   , mkUrl
-  , Title (..)
+  , Title
+  , unTitle
   , mkTitle
-  , RelativePath (..)
+  , RelativePath
+  , unRelativePath
   , mkRelativePath
   , twitterLimits
   , blueskyLimits
@@ -44,10 +47,10 @@ module Automation.Types
 
 import Data.Text (Text)
 
-import Automation.RelativePath (RelativePath (..), mkRelativePath)
+import Automation.RelativePath (RelativePath, unRelativePath, mkRelativePath)
 import Automation.Secret (Secret (..), mkSecret)
-import Automation.Title (Title (..), mkTitle)
-import Automation.Url (Url (..), mkUrl)
+import Automation.Title (Title, unTitle, mkTitle)
+import Automation.Url (Url, unUrl, mkUrl)
 
 --------------------------------------------------------------------------------
 -- Domain newtypes

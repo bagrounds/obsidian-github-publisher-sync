@@ -1,5 +1,6 @@
 module Automation.RelativePath
-  ( RelativePath (..)
+  ( RelativePath
+  , unRelativePath
   , mkRelativePath
   ) where
 

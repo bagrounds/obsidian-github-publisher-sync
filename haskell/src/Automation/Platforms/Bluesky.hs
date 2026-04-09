@@ -42,8 +42,8 @@ import Automation.Types
   , EmbedResult (..)
   , LinkCard (..)
   , Secret (..)
-  , Title (..)
-  , Url (..)
+  , unTitle
+  , unUrl
   , blueskyDisplayName
   , blueskyOembedInitialDelayMs
   , blueskyOembedRetryDelayMs

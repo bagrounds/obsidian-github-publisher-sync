@@ -13,7 +13,7 @@ module Automation.Prompts
 import Data.Text (Text)
 import qualified Data.Text as T
 
-import Automation.Types (ReflectionData (..), PlatformLimits (..), Title (..), Url (..), blueskyLimits)
+import Automation.Types (ReflectionData (..), PlatformLimits (..), unTitle, unUrl, blueskyLimits)
 
 data PromptPair = PromptPair
   { ppSystem :: Text

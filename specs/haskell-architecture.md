@@ -77,16 +77,17 @@ Deleted horizontal-slice modules (replaced by vertical feature modules):
 
 `Automation.Types` retained as thin re-export hub for truly shared types only (Secret, PlatformLimits, Url, Title, RelativePath, ReflectionData, OgMetadata, EmbedSection, EnvironmentConfig, ObsidianCredentials).
 
-### Next: AppContext Record + Tests
+### Completed: AppContext Record + Tests
 
-**Goal**: Replace parameter threading with a shared context record, with tests for context construction.
+**Goal**: Replaced parameter threading with a shared context record, with tests for context construction.
 
 Delivered as a single vertical slice:
-- [ ] Define `AppContext` in a new `Automation.Context` module
-- [ ] Update `taskRunners` to construct with `AppContext`
-- [ ] Migrate one task runner at a time to accept `AppContext` instead of individual params
-- [ ] Test context construction and validation
-- [ ] Consider `ReaderT AppContext IO` monad if parameter threading becomes unwieldy
+- [x] Define `AppContext` in a new `Automation.Context` module — contains `Manager`, `vaultDir`, `repoRoot`, and `geminiApiKey`
+- [x] Update `taskRunners` to construct with `AppContext`
+- [x] Migrate all task runners (`runBlogSeries`, `runBackfillImages`, `runInternalLinking`, `runSocialPosting`, `runAiFiction`, `runReflectionTitle`) to accept `AppContext` instead of individual params
+- [x] Test context construction and validation — smart constructor rejects empty paths, Show redacts secrets, property test for valid paths
+- [x] `callGeminiForGenerator` and `tryTitleForDate` updated to use `AppContext`
+- [x] `main` constructs `AppContext` with validated `mkAppContext`, reads `GEMINI_API_KEY` once at startup
 
 ### Next: Explicit Error Types + Tests
 

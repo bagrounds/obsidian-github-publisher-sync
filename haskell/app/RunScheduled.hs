@@ -707,29 +707,27 @@ runAiFiction context = do
 
 runReflectionTitle :: AppContext -> IO ()
 runReflectionTitle context = do
-  let vaultDir = appVaultDir context
   logMsg "▶️  reflection-title"
 
   today <- todayPacificDay
   let todayText = formatDay today
   yesterday <- yesterdayPacific
 
-  let reflectionsDir = vaultDir </> "reflections"
-
   -- Try today first, then yesterday
-  todayDone <- tryTitleForDate context reflectionsDir todayText
+  todayDone <- tryTitleForDate context todayText
   case todayDone of
     True -> pure ()
     False -> do
       logMsg $ "  📅 Checking yesterday (" <> yesterday <> ")..."
-      _ <- tryTitleForDate context reflectionsDir yesterday
+      _ <- tryTitleForDate context yesterday
       pure ()
 
   logMsg "✅ reflection-title"
 
-tryTitleForDate :: AppContext -> FilePath -> Text -> IO Bool
-tryTitleForDate context reflectionsDir date = do
+tryTitleForDate :: AppContext -> Text -> IO Bool
+tryTitleForDate context date = do
   let apiKey = appGeminiApiKey context
+      reflectionsDir = appVaultDir context </> "reflections"
       reflectionPath = reflectionsDir </> T.unpack date <> ".md"
 
   exists <- doesFileExist reflectionPath

@@ -10,7 +10,13 @@ import qualified Test.QuickCheck as QC
 import Automation.Types
   ( Secret (..)
   , PlatformLimits (..)
+  , Url (..)
+  , Title (..)
+  , RelativePath (..)
   , mkSecret
+  , mkUrl
+  , mkTitle
+  , mkRelativePath
   , twitterLimits
   , blueskyLimits
   , mastodonLimits
@@ -20,6 +26,9 @@ tests :: TestTree
 tests = testGroup "Types"
   [ secretTests
   , platformLimitsTests
+  , urlTests
+  , titleTests
+  , relativePathTests
   ]
 
 --------------------------------------------------------------------------------
@@ -96,4 +105,142 @@ platformLimitsTests = testGroup "PlatformLimits"
       case platformUrlCountLength twitterLimits of
         Just urlLen -> urlLen < platformMaxCharacters twitterLimits
         Nothing -> True
+  ]
+
+--------------------------------------------------------------------------------
+-- Url tests
+--------------------------------------------------------------------------------
+
+urlTests :: TestTree
+urlTests = testGroup "Url"
+  [ testCase "mkUrl accepts https URL" $
+      mkUrl "https://example.com" @?= Right (Url "https://example.com")
+
+  , testCase "mkUrl accepts http URL" $
+      mkUrl "http://example.com" @?= Right (Url "http://example.com")
+
+  , testCase "mkUrl rejects non-URL text" $
+      case mkUrl "not a url" of
+        Left _ -> pure ()
+        Right _ -> fail "Expected Left for invalid URL"
+
+  , testCase "mkUrl rejects empty text" $
+      case mkUrl "" of
+        Left _ -> pure ()
+        Right _ -> fail "Expected Left for empty URL"
+
+  , testCase "Eq compares underlying URLs" $
+      Url "https://a.com" @?= Url "https://a.com"
+
+  , testCase "Eq detects different URLs" $
+      assertBool "Expected different URLs to be unequal"
+        (Url "https://a.com" /= Url "https://b.com")
+
+  , testProperty "constructed Url always starts with http" $ \suffix ->
+      let text = "https://" <> T.pack suffix
+      in case mkUrl text of
+           Right url -> T.isPrefixOf "http" (unUrl url)
+           Left _ -> False
+
+  , testProperty "mkUrl round-trips for valid input" $ \suffix ->
+      let text = "https://example.com/" <> T.pack suffix
+      in case mkUrl text of
+           Right url -> unUrl url == text
+           Left _ -> False
+
+  , testProperty "mkUrl rejects non-http input" $
+      QC.forAll (QC.arbitrary `QC.suchThat` (\s -> not (null s) && take 4 s /= "http")) $ \raw ->
+        let text = T.pack raw
+        in case mkUrl text of
+             Left _ -> True
+             Right _ -> False
+  ]
+
+--------------------------------------------------------------------------------
+-- Title tests
+--------------------------------------------------------------------------------
+
+titleTests :: TestTree
+titleTests = testGroup "Title"
+  [ testCase "mkTitle accepts non-empty text" $
+      mkTitle "Hello World" @?= Right (Title "Hello World")
+
+  , testCase "mkTitle rejects empty text" $
+      case mkTitle "" of
+        Left _ -> pure ()
+        Right _ -> fail "Expected Left for empty title"
+
+  , testCase "mkTitle rejects whitespace-only text" $
+      case mkTitle "   " of
+        Left _ -> pure ()
+        Right _ -> fail "Expected Left for whitespace title"
+
+  , testCase "Eq compares underlying titles" $
+      Title "abc" @?= Title "abc"
+
+  , testCase "Eq detects different titles" $
+      assertBool "Expected different titles to be unequal"
+        (Title "abc" /= Title "xyz")
+
+  , testProperty "mkTitle round-trips for non-empty input" $ \raw ->
+      let text = T.pack raw
+      in not (T.null (T.strip text)) QC.==>
+        case mkTitle text of
+          Right title -> unTitle title == text
+          Left _ -> False
+
+  , testProperty "mkTitle rejects all-whitespace input" $
+      QC.forAll (QC.listOf1 (QC.elements [' ', '\t', '\n'])) $ \ws ->
+        let text = T.pack ws
+        in case mkTitle text of
+             Left _ -> True
+             Right _ -> False
+  ]
+
+--------------------------------------------------------------------------------
+-- RelativePath tests
+--------------------------------------------------------------------------------
+
+relativePathTests :: TestTree
+relativePathTests = testGroup "RelativePath"
+  [ testCase "mkRelativePath accepts relative path" $
+      mkRelativePath "content/notes/file.md" @?= Right (RelativePath "content/notes/file.md")
+
+  , testCase "mkRelativePath rejects empty text" $
+      case mkRelativePath "" of
+        Left _ -> pure ()
+        Right _ -> fail "Expected Left for empty path"
+
+  , testCase "mkRelativePath rejects absolute path" $
+      case mkRelativePath "/absolute/path" of
+        Left _ -> pure ()
+        Right _ -> fail "Expected Left for absolute path"
+
+  , testCase "Eq compares underlying paths" $
+      RelativePath "a/b" @?= RelativePath "a/b"
+
+  , testCase "Eq detects different paths" $
+      assertBool "Expected different paths to be unequal"
+        (RelativePath "a/b" /= RelativePath "c/d")
+
+  , testProperty "mkRelativePath round-trips for valid input" $ \raw ->
+      let text = T.pack raw
+      in not (T.null text) && not (T.isPrefixOf "/" text) QC.==>
+        case mkRelativePath text of
+          Right rp -> unRelativePath rp == text
+          Left _ -> False
+
+  , testProperty "mkRelativePath rejects absolute paths" $
+      QC.forAll (QC.arbitrary `QC.suchThat` (not . null)) $ \suffix ->
+        let text = "/" <> T.pack suffix
+        in case mkRelativePath text of
+             Left _ -> True
+             Right _ -> False
+
+  , testProperty "constructed RelativePath never starts with /" $ \raw ->
+      let text = T.pack raw
+      in not (T.null text) && not (T.isPrefixOf "/" text) QC.==>
+        case mkRelativePath text of
+          Right rp -> not (T.isPrefixOf "/" (unRelativePath rp))
+          Left _ -> True
   ]

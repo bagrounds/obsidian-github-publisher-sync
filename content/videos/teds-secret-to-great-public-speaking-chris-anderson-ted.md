@@ -9,6 +9,9 @@ Platform:
 Channel: TED
 tags:
 youtube: https://youtu.be/-FOCpMAww28
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_time: 2026-04-05T00:00:00Z
+force_analyze_links: false
 ---
 [Home](../index.md) > [Videos](./index.md)  
 # 🎤✨🗣️ TED's secret to great public speaking | Chris Anderson | TED  
@@ -25,7 +28,7 @@ youtube: https://youtu.be/-FOCpMAww28
   
 ## 🤔 Evaluation  
   
-* ⚖️ While Chris Anderson emphasizes a single through line, the book Made to Stick by Chip Heath and Dan Heath (Random House) suggests that unexpectedness and emotional stickiness are equally vital for ideas to endure.  
+* ⚖️ While Chris Anderson emphasizes a single through line, the book [🧠🌱💀 Made to Stick: Why Some Ideas Survive and Others Die](../books/made-to-stick.md) by Chip Heath and Dan Heath (Random House) suggests that unexpectedness and emotional stickiness are equally vital for ideas to endure.  
 * 🏛️ The focus on a gift-based approach aligns with the principles of Servant Leadership by Robert K. Greenleaf (Paulist Press), which argues that true influence comes from a primary desire to serve others.  
 * 🔍 Researching the cognitive load theory could provide a better understanding of why limiting a talk to one idea is more effective for memory retention.  
   

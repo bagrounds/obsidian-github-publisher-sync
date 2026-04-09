@@ -9,6 +9,9 @@ Platform:
 Channel: Heather Cox Richardson
 tags:
 youtube: https://youtu.be/Mon0BMJgHB8
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_time: 2026-04-08T00:00:00Z
+force_analyze_links: false
 ---
 [Home](../index.md) > [Videos](./index.md)  
 # ✨😮🗣️ Something Interesting Happened Today | Explainer  
@@ -61,4 +64,4 @@ youtube: https://youtu.be/Mon0BMJgHB8
 ### 🎨 Creatively Related  
   
 * [👁️ 1984](../books/1984.md) by George Orwell presents a fictionalized look at how language and historical records are manipulated by an authoritarian party.  
-* 🏗️ The Power Broker by Robert Caro demonstrates how individuals use public works and infrastructure to consolidate political power over decades.
+* 🏗️ [👑🏙️ The Power Broker](../books/the-power-broker.md) by Robert Caro demonstrates how individuals use public works and infrastructure to consolidate political power over decades.

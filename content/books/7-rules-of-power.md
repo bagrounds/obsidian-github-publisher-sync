@@ -6,6 +6,9 @@ URL: https://bagrounds.org/books/7-rules-of-power
 share: true
 affiliate link: https://amzn.to/43Np5En
 CTA: 🚀 Master influence.
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_time: 2026-04-08T00:00:00Z
+force_analyze_links: false
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 7️⃣📏👑 7 Rules of Power: Surprising - but True - Advice on How to Get Things Done and Advance Your Career  
@@ -50,7 +53,7 @@ Pfeffer outlines seven rules for building and using power:
   
 ### 🤝 Contrasting Perspectives (Ethics & Collaboration)  
 * 📚 **Power, for All: How It Really Works and Why It's Everyone's Business** by Julie Battilana & Tiziana Casciaro: 🤝 Offers a contrasting view, arguing that humility and warmth can increase a leader's power and focusing on collective empowerment.  
-* 📚 **Give and Take: Why Helping Others Drives Our Success** by Adam Grant: 😇 Argues that "givers" often achieve more long-term success than "takers," contrasting with a purely self-interested approach to power.  
+* 📚 **[🎁➡️🏆 Give and Take: A Revolutionary Approach to Success](./give-and-take.md): Why Helping Others Drives Our Success** by Adam Grant: 😇 Argues that "givers" often achieve more long-term success than "takers," contrasting with a purely self-interested approach to power.  
 * 📚 **Dare to Lead** by Brené Brown: 🛡️ Champions vulnerability, courage, and empathy as key leadership strengths, directly opposing Pfeffer's skepticism about showing vulnerability.  
 * **[❓🎯 Start with Why: How Great Leaders Inspire Everyone to Take Action](./start-with-why-how-great-leaders-inspire-everyone-to-take-action.md)** by Simon Sinek: 🎯 Focuses on purpose-driven leadership and inspiration rather than purely strategic power plays.  
 * **[👤📈🎯🌟🔑🤝🏆 The 7 Habits of Highly Effective People](./the-7-habits-of-highly-effective-people.md)** by Stephen Covey: 🌟 Emphasizes principle-centered leadership, integrity, and collaboration (win-win thinking).  

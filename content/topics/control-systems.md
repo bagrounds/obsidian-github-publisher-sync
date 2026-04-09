@@ -7,9 +7,13 @@ URL: https://bagrounds.org/topics/control-systems
 link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-03T00:00:00Z
 force_analyze_links: false
+image_date: 2026-04-09T03:10:30Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A minimalist, isometric illustration of a sleek, glowing feedback loop. At the center is a translucent, golden gear representing a mechanical system, interconnected with a digital grid of pulsing blue nodes and light trails. One side features a stylized analog dial with a needle pointing to a centered setpoint, while the other side displays a floating, holographic graph showing a wave stabilizing into a flat, steady line. The color palette uses deep navy and slate grey backgrounds to contrast with vibrant cyan and amber data points. The overall composition is clean, technical, and precise, capturing the transition from mechanical motion to digital regulation.
 ---
 [Home](../index.md) > [Topics](./index.md) > [Knowledge](./a-hierarchical-view-of-human-knowledge.md) > [Engineering](./engineering.md) > [Electrical Engineering](./electrical-engineering.md)  
 # ⚙️🎛️ Control Systems  
+![topics-control-systems](../topics-control-systems.jpg)  
 ## 🤖 AI Summary  
 **High-Level Summary:**  
   

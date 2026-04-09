@@ -9,6 +9,9 @@ Platform:
 Channel: SpoonFedStudy
 tags:
 youtube: https://youtu.be/4jzK_w9wKgw
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_time: 2026-04-05T00:00:00Z
+force_analyze_links: false
 ---
 [Home](../index.md) > [Videos](./index.md) | [🥄👶📚 SpoonFedStudy](../topics/spoonfedstudy.md)  
 # 💪🛠️🧠 How I trained myself to crave hard work  
@@ -28,7 +31,7 @@ youtube: https://youtu.be/4jzK_w9wKgw
 ## 🤔 Evaluation  
   
 * 🔬 The speaker’s emphasis on episodic future thinking aligns with neuroscientific research published in the journal Neuron by researchers like Peters and Büchel, who found that imagining future events engages the hippocampus and prefrontal cortex to reduce impulsive choices.  
-* ⚖️ While the video focuses on biological discounting, the book Thinking, Fast and Slow by Daniel Kahneman from Farrar, Straus and Giroux suggests that cognitive biases like the availability heuristic also play a massive role in how we perceive future risks and rewards.  
+* ⚖️ While the video focuses on biological discounting, the book [🤔🐇🐢 Thinking, Fast and Slow](../books/thinking-fast-and-slow.md) by Daniel Kahneman from Farrar, Straus and Giroux suggests that cognitive biases like the availability heuristic also play a massive role in how we perceive future risks and rewards.  
 * 🛡️ The speaker promotes VPN services for privacy; however, independent security audits from organizations like Consumer Reports often highlight that while VPNs hide IP addresses, they do not prevent all forms of digital tracking, such as browser fingerprinting.  
 * 📍 Further exploration into the Default Mode Network (DMN) would provide a deeper understanding of why the brain wanders toward immediate gratification when not actively engaged in a task.  
   

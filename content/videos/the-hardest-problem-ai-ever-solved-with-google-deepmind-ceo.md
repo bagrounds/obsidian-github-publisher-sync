@@ -9,6 +9,9 @@ Platform:
 Channel: Cleo Abram
 tags:
 youtube: https://youtu.be/C0gErQtnNFE
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_time: 2026-04-08T00:00:00Z
+force_analyze_links: false
 ---
 [Home](../index.md) > [Videos](./index.md)  
 # 🤯🤖✅ The Hardest Problem AI Ever Solved, with Google DeepMind CEO  
@@ -53,11 +56,11 @@ youtube: https://youtu.be/C0gErQtnNFE
 ## 📚 Book Recommendations  
   
 ### ↔️ Similar  
-* 🧬 Life 3.0 by Max Tegmark explores how AI will affect the future of life on Earth and beyond.  
+* 🧬 [🧬👥💾 Life 3.0: Being Human in the Age of Artificial Intelligence](../books/life-3-0.md) by Max Tegmark explores how AI will affect the future of life on Earth and beyond.  
 * 🧠 Superintelligence by Nick Bostrom investigates the risks and strategies for managing the arrival of AGI.  
   
 ### 🆚 Contrasting  
-* 🛑 Weapons of Math Destruction by Cathy O'Neil examines how AI and algorithms can reinforce bias and increase inequality.  
+* 🛑 [📊📉🏛️ Weapons of Math Destruction: How Big Data Increases Inequality and Threatens Democracy](../books/weapons-of-math-destruction-how-big-data-increases-inequality-and-threatens-democracy.md) by Cathy O'Neil examines how AI and algorithms can reinforce bias and increase inequality.  
 * 📉 The Myth of Artificial Intelligence by Erik J. Larson argues that we are fundamentally far from achieving true human-like AGI due to the nature of induction.  
   
 ### 🎨 Creatively Related  

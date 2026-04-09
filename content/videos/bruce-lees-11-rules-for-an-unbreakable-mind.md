@@ -9,6 +9,9 @@ Platform:
 Channel: Bruce Lee Reimagined
 tags:
 youtube: https://youtu.be/TaYZOkiJ6OM
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_time: 2026-04-07T00:00:00Z
+force_analyze_links: false
 ---
 [Home](../index.md) > [Videos](./index.md)  
 # 🥋🧠💪 Bruce Lee’s 11 Rules for an Unbreakable Mind  
@@ -31,7 +34,7 @@ youtube: https://youtu.be/TaYZOkiJ6OM
 ## 🤔 Evaluation  
   
 * ⚖️ The concept of being like water aligns with Taoist principles of Wu Wei or effortless action as explored in the Tao Te Ching by Lao Tzu.  
-* 🧘 The emphasis on guarding the mind and observing thoughts mirrors Buddhist mindfulness and Stoic philosophy found in Meditations by Marcus Aurelius.  
+* 🧘 The emphasis on guarding the mind and observing thoughts mirrors Buddhist mindfulness and Stoic philosophy found in [🤔🧘 Meditations](../books/meditations.md) by Marcus Aurelius.  
 * 🧠 While the video promotes absolute self-reliance, modern psychology suggests that social support systems are equally critical for resilience according to The Resilience Factor by the American Psychological Association.  
 * 📈 Research topics for deeper understanding include the neurobiology of habit formation and the psychological impact of self-talk on performance.  
   

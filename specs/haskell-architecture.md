@@ -46,10 +46,11 @@ Each function was extracted as a pure core with proper domain types, tested with
 Each type delivered as a vertical slice with constructor, tests, and migration of call sites:
 - [ ] `newtype Url = Url Text` with smart constructor validating it starts with `https://`. Property: constructed `Url` always starts with `https://`.
 - [ ] `newtype Title = Title Text` for display titles
-- [x] Promote `DateStr` — already exists in `BlogPrompt`, extend to `Types.hs` for shared use
+- [x] `DateStr` replaced with standard `Day` from `Data.Time`. Added `formatDay :: Day -> Text` helper in BlogPrompt. Removed custom `DateStr` newtype entirely.
 - [ ] `newtype RelativePath = RelativePath Text` for vault-relative paths
-- [x] `newtype ApiKey = ApiKey Text` to prevent logging secrets. Smart constructor, `Show` instance redacts. All credential `Show` instances now redact secrets.
-- [x] `data PlatformLimits = PlatformLimits { platformMaxCharacters :: Int, platformUrlCountLength :: Maybe Int }` for platform limits. Per-platform constants (`twitterLimits`, `blueskyLimits`, `mastodonLimits`), generalized `calculatePostLength` and `validatePostLength`.
+- [x] `newtype Secret = Secret Text` — generalized from `ApiKey` to cover API keys, passwords, and auth tokens. Lives in `Automation.Secret` domain module. Custom `Show` instance displays `<redacted>`. Applied to all credential fields across `TwitterCredentials`, `BlueskyCredentials`, `MastodonCredentials`, `GeminiConfig`, `ObsidianCredentials`.
+- [x] `data PlatformLimits = PlatformLimits { platformMaxCharacters :: Int, platformUrlCountLength :: Maybe Int }` for platform limits. Per-platform constants (`twitterLimits`, `blueskyLimits`, `mastodonLimits`), generalized `calculatePostLength` and `validatePostLength`. Removed backward-compat aliases.
+- [x] `data SocialPost = Tweet Text | BlueskyPost Text | MastodonPost Text` — per-platform ADT with smart constructors (`mkTweet`, `mkBlueskyPost`, `mkMastodonPost`, `mkSocialPost`) that validate character limits at construction time.
 
 ### Next: AppContext Record + Tests
 

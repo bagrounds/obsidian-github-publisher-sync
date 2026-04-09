@@ -911,7 +911,7 @@ run manager model contentDir = do
   filesToVisit <- bfsTraversal contentDir
   putStrLn $ "  🔍 BFS: " <> show (length filesToVisit) <> " files reachable"
 
-  apiKey <- lookupApiKey
+  apiKey <- lookupSecret
   fileResults <- processFiles manager apiKey model contentDir index filesToVisit
 
   let filesModified  = length $ filter frModified fileResults
@@ -960,8 +960,8 @@ processFiles manager apiKey model contentDir index filesToVisit = do
             False -> go infRef resRef rest
         False -> go infRef resRef rest
 
-lookupApiKey :: IO Secret
-lookupApiKey = do
+lookupSecret :: IO Secret
+lookupSecret = do
   mKey <- lookupEnv "GEMINI_API_KEY"
   pure $ Secret (maybe "" T.pack mKey)
 

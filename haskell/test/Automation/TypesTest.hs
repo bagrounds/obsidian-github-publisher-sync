@@ -53,13 +53,13 @@ secretTests = testGroup "Secret"
   , testCase "Eq detects different values" $
       assertBool "Expected different keys to be unequal" (Secret "abc" /= Secret "xyz")
 
-  , testProperty "Show never reveals the key text" $ \keyText ->
-      let key = Secret (T.pack keyText)
+  , testProperty "Show never reveals the key text" $ \secretText ->
+      let key = Secret (T.pack secretText)
           shown = show key
-      in length keyText > 10 QC.==> not (T.isInfixOf (T.pack keyText) (T.pack shown))
+      in length secretText > 10 QC.==> not (T.isInfixOf (T.pack secretText) (T.pack shown))
 
-  , testProperty "mkSecret round-trips for non-empty input" $ \keyText ->
-      let text = T.pack keyText
+  , testProperty "mkSecret round-trips for non-empty input" $ \secretText ->
+      let text = T.pack secretText
       in not (T.null (T.strip text)) QC.==>
         case mkSecret text of
           Right key -> unSecret key == text

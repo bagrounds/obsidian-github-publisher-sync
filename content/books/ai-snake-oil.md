@@ -8,6 +8,9 @@ Author:
 tags:
 CTA: 🧐 Discern reality.
 affiliate link: https://www.amazon.com/dp/0691249148?tag=bagrounds-20
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_time: 2026-04-05T00:00:00Z
+force_analyze_links: false
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🤖🐍🔎 AI Snake Oil: What Artificial Intelligence Can Do, What It Can't, and How to Tell the Difference  

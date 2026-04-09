@@ -13,7 +13,7 @@ link_analysis_time: 2026-04-08T00:00:00Z
 force_analyze_links: false
 updated: 2026-04-08T21:27:58
 ---
-[Home](../index.md) > [🏛️ Systems for Public Good](./index.md) | [⏮️](./2026-04-07-nature-s-embrace-public-parks-as-a-universal-right.md) [⏭️](./2026-04-09-mapping-our-shared-journey-a-week-of-foundational-freedoms.md)  
+[Home](../index.md) > [🏛️ Systems for Public Good](./index.md) | [⏮️](./2026-04-07-nature-s-embrace-public-parks-as-a-universal-right.md)  
 # 2026-04-08 | 🏛️ 🌳 The Green Tapestry: Individual Threads in the Public Good of Parks 🏛️  
 ![systems-for-public-good-2026-04-08-the-green-tapestry-individual-threads-in-the-public-good-of-parks](../systems-for-public-good-2026-04-08-the-green-tapestry-individual-threads-in-the-public-good-of-parks.jpg)  
   

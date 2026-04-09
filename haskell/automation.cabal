@@ -27,8 +27,6 @@ library
     Automation.Json
     Automation.Secret
     Automation.Platform
-    Automation.Credentials
-    Automation.Embed
     Automation.Types
     Automation.Env
     Automation.Scheduler

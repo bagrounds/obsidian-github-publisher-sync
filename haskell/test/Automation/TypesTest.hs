@@ -1,7 +1,6 @@
 module Automation.TypesTest (tests) where
 
 import Data.Char (isAlphaNum, isAscii)
-import Data.Text (Text)
 import qualified Data.Text as T
 import Test.Tasty (TestTree, testGroup)
 import Test.Tasty.HUnit (testCase, (@?=), assertBool)
@@ -12,11 +11,8 @@ import Automation.TestGenerators (testUrl, testTitle, testRelativePath)
 import Automation.Types
   ( Secret (..)
   , PlatformLimits (..)
-  , Url
   , unUrl
-  , Title
   , unTitle
-  , RelativePath
   , unRelativePath
   , mkSecret
   , mkUrl

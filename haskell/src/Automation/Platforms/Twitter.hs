@@ -1,5 +1,10 @@
 module Automation.Platforms.Twitter
-  ( TweetResult (..)
+  ( TwitterCredentials (..)
+  , TweetResult (..)
+  , twitterLimits
+  , twitterHandle
+  , twitterDisplayName
+  , tweetSectionHeader
   , postTweet
   , deleteTweet
   , fetchOEmbed
@@ -38,15 +43,38 @@ import System.Random (randomRIO)
 import Automation.Html (formatDisplayDate, textToHtml)
 import Automation.Json ((.=), (.:), (.:?), eitherDecode, encode, object, withObject)
 import qualified Automation.Json as Json
+import Automation.Platform (PlatformLimits (..))
 import Automation.Retry (HttpCodeException (..), defaultRetryOptions, withRetry)
-import Automation.Credentials (TwitterCredentials (..))
-import Automation.Platform (twitterDisplayName)
 import Automation.Secret (Secret (..))
+
+data TwitterCredentials = TwitterCredentials
+  { tcApiKey :: Secret
+  , tcApiSecret :: Secret
+  , tcAccessToken :: Secret
+  , tcAccessSecret :: Secret
+  } deriving (Show, Eq)
 
 data TweetResult = TweetResult
   { trId :: Text
   , trText :: Text
   } deriving (Show, Eq)
+
+-- ── Platform constants ─────────────────────────────────────────────────
+
+twitterLimits :: PlatformLimits
+twitterLimits = PlatformLimits
+  { platformMaxCharacters = 280
+  , platformUrlCountLength = Just 23
+  }
+
+twitterHandle :: Text
+twitterHandle = "bagrounds"
+
+twitterDisplayName :: Text
+twitterDisplayName = "Bryan Grounds"
+
+tweetSectionHeader :: Text
+tweetSectionHeader = "## 🐦 Tweet"
 
 -- ── Constants ──────────────────────────────────────────────────────────
 

@@ -2,9 +2,15 @@
 {-# LANGUAGE DeriveGeneric #-}
 
 module Automation.Gemini
-  ( GeminiRequest (..)
+  ( GeminiConfig (..)
+  , GeminiRequest (..)
   , GeminiResponse (..)
   , GenerationConfig (..)
+  , defaultGeminiModel
+  , defaultQuestionModel
+  , gemini3Flash
+  , geminiFlashFallback
+  , geminiModelFallback
   , generateContent
   , generateContentWithFallback
   , defaultGenerationConfig
@@ -12,7 +18,7 @@ module Automation.Gemini
 
 import Automation.Json (Value (..), ToValue (..), (.=), object, encode)
 import qualified Automation.Json as Json
-import Automation.Types (Secret (..))
+import Automation.Secret (Secret (..))
 import Data.Text (Text)
 import qualified Data.Text as T
 import qualified Data.Text.Encoding as TE
@@ -29,6 +35,29 @@ import Network.HTTP.Client
 import Network.HTTP.Types.Status (statusCode)
 
 import qualified Data.ByteString.Lazy as LBS
+
+data GeminiConfig = GeminiConfig
+  { gcApiKey :: Secret
+  , gcModel :: Text
+  , gcQuestionModel :: Text
+  } deriving (Show, Eq)
+
+defaultGeminiModel :: Text
+defaultGeminiModel = "gemma-3-27b-it"
+
+defaultQuestionModel :: Text
+defaultQuestionModel = "gemini-3.1-flash-lite-preview"
+
+gemini3Flash :: Text
+gemini3Flash = "gemini-3-flash-preview"
+
+geminiFlashFallback :: Text
+geminiFlashFallback = "gemini-2.5-flash"
+
+geminiModelFallback :: Text -> Maybe Text
+geminiModelFallback model
+  | model == "gemini-3.1-flash-lite-preview" = Just geminiFlashFallback
+  | otherwise = Nothing
 
 data GenerationConfig = GenerationConfig
   { gcTemperature    :: Double

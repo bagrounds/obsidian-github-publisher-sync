@@ -5,7 +5,9 @@ import Test.Tasty.HUnit (testCase, assertBool)
 import qualified Data.Text as T
 
 import Automation.EmbedSection
-import Automation.Types (tweetSectionHeader, blueskySectionHeader, mastodonSectionHeader)
+import Automation.Platforms.Bluesky (blueskySectionHeader)
+import Automation.Platforms.Mastodon (mastodonSectionHeader)
+import Automation.Platforms.Twitter (tweetSectionHeader)
 
 tests :: TestTree
 tests = testGroup "EmbedSection"

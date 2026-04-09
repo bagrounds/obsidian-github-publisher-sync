@@ -4,7 +4,7 @@ import qualified Data.Text as T
 import Test.Tasty (TestTree, testGroup)
 import Test.Tasty.HUnit (testCase, (@?=), assertBool)
 
-import Automation.Credentials
+import Automation.Gemini
   ( defaultGeminiModel
   , defaultQuestionModel
   , gemini3Flash
@@ -13,7 +13,7 @@ import Automation.Credentials
   )
 
 tests :: TestTree
-tests = testGroup "Credentials"
+tests = testGroup "Gemini"
   [ geminiModelTests
   ]
 

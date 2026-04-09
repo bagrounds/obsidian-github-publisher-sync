@@ -1,5 +1,6 @@
 module Automation.Env
-  ( isPlatformDisabled
+  ( EnvironmentConfig (..)
+  , isPlatformDisabled
   , isPlatformDisabledValue
   , getYesterdayDate
   , yesterdayDate
@@ -15,18 +16,21 @@ import qualified Data.Text.IO as TIO
 import Data.Time (Day, UTCTime (..), addDays, defaultTimeLocale, formatTime, getCurrentTime)
 import System.Environment (lookupEnv)
 
-import Automation.Types
-  ( Secret (..)
-  , mkUrl
-  , BlueskyCredentials (..)
-  , EnvironmentConfig (..)
-  , GeminiConfig (..)
-  , MastodonCredentials (..)
-  , ObsidianCredentials (..)
-  , TwitterCredentials (..)
-  , defaultGeminiModel
-  , defaultQuestionModel
-  )
+import Automation.Gemini (GeminiConfig (..), defaultGeminiModel, defaultQuestionModel)
+import Automation.ObsidianSync (ObsidianCredentials (..))
+import Automation.Platforms.Bluesky (BlueskyCredentials (..))
+import Automation.Platforms.Mastodon (MastodonCredentials (..))
+import Automation.Platforms.Twitter (TwitterCredentials (..))
+import Automation.Secret (Secret (..))
+import Automation.Url (mkUrl)
+
+data EnvironmentConfig = EnvironmentConfig
+  { ecTwitter :: Maybe TwitterCredentials
+  , ecBluesky :: Maybe BlueskyCredentials
+  , ecMastodon :: Maybe MastodonCredentials
+  , ecGemini :: GeminiConfig
+  , ecObsidian :: ObsidianCredentials
+  } deriving (Show, Eq)
 
 isPlatformDisabled :: String -> IO Bool
 isPlatformDisabled envVar = do

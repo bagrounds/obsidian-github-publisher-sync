@@ -1,5 +1,6 @@
 module Automation.EmbedSection
-  ( createSectionBuilder
+  ( EmbedSection (..)
+  , createSectionBuilder
   , createSectionAppender
   , buildTweetSection
   , buildBlueskySection
@@ -13,11 +14,15 @@ import Data.Text (Text)
 import qualified Data.Text as T
 import qualified Data.Text.IO as TIO
 
-import Automation.Types
-  ( blueskySectionHeader
-  , mastodonSectionHeader
-  , tweetSectionHeader
-  )
+import Automation.Platforms.Bluesky (blueskySectionHeader)
+import Automation.Platforms.Mastodon (mastodonSectionHeader)
+import Automation.Platforms.Twitter (tweetSectionHeader)
+
+data EmbedSection = EmbedSection
+  { esHeader :: Text
+  , esEmbedHtml :: Text
+  , esBuildSection :: Text -> Text -> Text
+  }
 
 createSectionBuilder :: Text -> Text -> Text -> Text
 createSectionBuilder header existingContent embedHtml =

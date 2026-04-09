@@ -2,43 +2,46 @@ module Automation.Types
   ( -- Re-exported from Automation.Reflection
     ReflectionData (..)
     -- Re-exported from Automation.Platforms.Twitter
-  , TweetResult (..)
-    -- Re-exported from Automation.Platforms.Bluesky
-  , BlueskyPostResult (..)
-    -- Re-exported from Automation.Platforms.Mastodon
-  , MastodonPostResult (..)
-    -- Re-exported from Automation.Embed
-  , EmbedResult (..)
-  , EmbedSection (..)
-  , OgMetadata (..)
-  , LinkCard (..)
-    -- Re-exported from Automation.Credentials
   , TwitterCredentials (..)
+  , TweetResult (..)
+  , twitterLimits
+  , twitterHandle
+  , twitterDisplayName
+  , tweetSectionHeader
+    -- Re-exported from Automation.Platforms.Bluesky
   , BlueskyCredentials (..)
+  , BlueskyPostResult (..)
+  , EmbedResult (..)
+  , LinkCard (..)
+  , blueskyLimits
+  , blueskyDisplayName
+  , blueskySectionHeader
+  , blueskyOembedInitialDelayMs
+  , blueskyOembedRetryDelayMs
+    -- Re-exported from Automation.Platforms.Mastodon
   , MastodonCredentials (..)
+  , MastodonPostResult (..)
+  , mastodonLimits
+  , mastodonDisplayName
+  , mastodonSectionHeader
+    -- Re-exported from Automation.Platforms.OgMetadata
+  , OgMetadata (..)
+    -- Re-exported from Automation.EmbedSection
+  , EmbedSection (..)
+    -- Re-exported from Automation.Gemini
   , GeminiConfig (..)
-  , ObsidianCredentials (..)
-  , EnvironmentConfig (..)
   , defaultGeminiModel
   , defaultQuestionModel
   , gemini3Flash
   , geminiFlashFallback
   , geminiModelFallback
+    -- Re-exported from Automation.Env
+  , EnvironmentConfig (..)
+    -- Re-exported from Automation.ObsidianSync
+  , ObsidianCredentials (..)
     -- Re-exported from Automation.Platform
   , PlatformLimits (..)
-  , twitterLimits
-  , blueskyLimits
-  , mastodonLimits
-  , twitterHandle
-  , twitterDisplayName
-  , blueskyDisplayName
-  , mastodonDisplayName
-  , tweetSectionHeader
-  , blueskySectionHeader
-  , mastodonSectionHeader
   , updatesSectionHeader
-  , blueskyOembedInitialDelayMs
-  , blueskyOembedRetryDelayMs
     -- Re-exported from Automation.Secret
   , Secret (..)
   , mkSecret
@@ -56,39 +59,45 @@ module Automation.Types
   , mkRelativePath
   ) where
 
-import Automation.Credentials
-  ( TwitterCredentials (..)
-  , BlueskyCredentials (..)
-  , MastodonCredentials (..)
-  , GeminiConfig (..)
-  , ObsidianCredentials (..)
-  , EnvironmentConfig (..)
+import Automation.EmbedSection (EmbedSection (..))
+import Automation.Env (EnvironmentConfig (..))
+import Automation.Gemini
+  ( GeminiConfig (..)
   , defaultGeminiModel
   , defaultQuestionModel
   , gemini3Flash
   , geminiFlashFallback
   , geminiModelFallback
   )
-import Automation.Embed (EmbedResult (..), EmbedSection (..), OgMetadata (..), LinkCard (..))
-import Automation.Platform
-  ( PlatformLimits (..)
-  , twitterLimits
+import Automation.ObsidianSync (ObsidianCredentials (..))
+import Automation.Platform (PlatformLimits (..), updatesSectionHeader)
+import Automation.Platforms.Bluesky
+  ( BlueskyCredentials (..)
+  , BlueskyPostResult (..)
+  , EmbedResult (..)
+  , LinkCard (..)
   , blueskyLimits
-  , mastodonLimits
-  , twitterHandle
-  , twitterDisplayName
   , blueskyDisplayName
-  , mastodonDisplayName
-  , tweetSectionHeader
   , blueskySectionHeader
-  , mastodonSectionHeader
-  , updatesSectionHeader
   , blueskyOembedInitialDelayMs
   , blueskyOembedRetryDelayMs
   )
-import Automation.Platforms.Bluesky (BlueskyPostResult (..))
-import Automation.Platforms.Mastodon (MastodonPostResult (..))
-import Automation.Platforms.Twitter (TweetResult (..))
+import Automation.Platforms.Mastodon
+  ( MastodonCredentials (..)
+  , MastodonPostResult (..)
+  , mastodonLimits
+  , mastodonDisplayName
+  , mastodonSectionHeader
+  )
+import Automation.Platforms.OgMetadata (OgMetadata (..))
+import Automation.Platforms.Twitter
+  ( TwitterCredentials (..)
+  , TweetResult (..)
+  , twitterLimits
+  , twitterHandle
+  , twitterDisplayName
+  , tweetSectionHeader
+  )
 import Automation.Reflection (ReflectionData (..))
 import Automation.RelativePath (RelativePath, unRelativePath, mkRelativePath)
 import Automation.Secret (Secret (..), mkSecret)

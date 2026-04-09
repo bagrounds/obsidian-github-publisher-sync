@@ -3,7 +3,7 @@ module Automation.EmbedTest (tests) where
 import Test.Tasty (TestTree, testGroup)
 import Test.Tasty.HUnit (testCase, (@?=))
 
-import Automation.Embed (EmbedResult (..))
+import Automation.Platforms.Bluesky (EmbedResult (..))
 
 tests :: TestTree
 tests = testGroup "Embed"

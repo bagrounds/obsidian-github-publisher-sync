@@ -1,5 +1,13 @@
 module Automation.Platforms.Bluesky
-  ( BlueskyPostResult (..)
+  ( BlueskyCredentials (..)
+  , BlueskyPostResult (..)
+  , EmbedResult (..)
+  , LinkCard (..)
+  , blueskyLimits
+  , blueskyDisplayName
+  , blueskySectionHeader
+  , blueskyOembedInitialDelayMs
+  , blueskyOembedRetryDelayMs
   , extractBlueskyPostId
   , extractBlueskyDid
   , buildBlueskyPostUrl
@@ -35,22 +43,56 @@ import Network.HTTP.Types.Status (statusCode)
 import Automation.Html (formatDisplayDate, textToHtml)
 import qualified Automation.Json as Json
 import Automation.Json ((.=), (.:), encode, eitherDecode, object, withObject)
+import Automation.Platform (PlatformLimits (..))
 import Automation.Platforms.OgMetadata (detectContentType, fetchImageAsBuffer)
 import Automation.Retry (HttpCodeException (..), defaultRetryOptions, withRetry)
-import Automation.Credentials (BlueskyCredentials (..))
-import Automation.Embed (EmbedResult (..), LinkCard (..))
-import Automation.Platform (blueskyDisplayName, blueskyOembedInitialDelayMs, blueskyOembedRetryDelayMs)
 import Automation.Secret (Secret (..))
-import Automation.Title (unTitle)
-import Automation.Url (unUrl)
+import Automation.Title (Title, unTitle)
+import Automation.Url (Url, unUrl)
 
 -- ── Domain types ───────────────────────────────────────────────────────
+
+data BlueskyCredentials = BlueskyCredentials
+  { bcIdentifier :: Text
+  , bcPassword :: Secret
+  } deriving (Show, Eq)
 
 data BlueskyPostResult = BlueskyPostResult
   { bprUri :: Text
   , bprCid :: Text
   , bprText :: Text
   } deriving (Show, Eq)
+
+newtype EmbedResult = EmbedResult
+  { erHtml :: Text
+  } deriving (Show, Eq)
+
+data LinkCard = LinkCard
+  { lcUri :: Url
+  , lcTitle :: Title
+  , lcDescription :: Text
+  , lcThumbUrl :: Maybe Text
+  } deriving (Show, Eq)
+
+-- ── Platform constants ─────────────────────────────────────────────────
+
+blueskyLimits :: PlatformLimits
+blueskyLimits = PlatformLimits
+  { platformMaxCharacters = 300
+  , platformUrlCountLength = Nothing
+  }
+
+blueskyDisplayName :: Text
+blueskyDisplayName = "Bryan Grounds"
+
+blueskySectionHeader :: Text
+blueskySectionHeader = "## 🦋 Bluesky"
+
+blueskyOembedInitialDelayMs :: Int
+blueskyOembedInitialDelayMs = 0
+
+blueskyOembedRetryDelayMs :: Int
+blueskyOembedRetryDelayMs = 2000
 
 -- ── Constants ──────────────────────────────────────────────────────────
 

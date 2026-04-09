@@ -6,21 +6,24 @@ import Test.Tasty.HUnit (testCase, (@?=), assertBool)
 import Test.Tasty.QuickCheck (testProperty)
 import qualified Test.QuickCheck as QC
 
-import Automation.Platform
-  ( PlatformLimits (..)
-  , twitterLimits
-  , blueskyLimits
-  , mastodonLimits
-  , twitterHandle
-  , twitterDisplayName
+import Automation.Platform (PlatformLimits (..), updatesSectionHeader)
+import Automation.Platforms.Bluesky
+  ( blueskyLimits
   , blueskyDisplayName
-  , mastodonDisplayName
-  , tweetSectionHeader
   , blueskySectionHeader
-  , mastodonSectionHeader
-  , updatesSectionHeader
   , blueskyOembedInitialDelayMs
   , blueskyOembedRetryDelayMs
+  )
+import Automation.Platforms.Mastodon
+  ( mastodonLimits
+  , mastodonDisplayName
+  , mastodonSectionHeader
+  )
+import Automation.Platforms.Twitter
+  ( twitterLimits
+  , twitterHandle
+  , twitterDisplayName
+  , tweetSectionHeader
   )
 
 tests :: TestTree

@@ -54,15 +54,28 @@ Each type delivered as a vertical slice with constructor, tests, and migration o
 
 ### Completed: Break Up Types Module
 
-**Goal**: Replaced the monolithic `Automation.Types` module with domain-specific modules. Each record type and its constants lives in the module that owns its domain concept. `Types.hs` is a thin re-export hub for backward compatibility during migration.
+**Goal**: Replaced the monolithic `Automation.Types` module with domain-specific modules. Each type and its constants lives in the module that owns its domain concept, following library-developer module design (vertical slicing by feature, not horizontal slicing by artifact kind). `Types.hs` is a thin re-export hub for backward compatibility during migration.
 
-Extracted modules:
-- [x] `Automation.Platform` — `PlatformLimits`, per-platform constants, section headers, display names
-- [x] `Automation.Credentials` — `TwitterCredentials`, `BlueskyCredentials`, `MastodonCredentials`, `GeminiConfig`, `ObsidianCredentials`, `EnvironmentConfig`
-- [x] `Automation.Embed` — `EmbedResult`, `EmbedSection`, `OgMetadata`, `LinkCard`
-- [x] Move `ReflectionData` to `Automation.Reflection`
-- [x] Move platform result types (`TweetResult`, `BlueskyPostResult`, `MastodonPostResult`) to their respective platform modules
-- [x] Keep `Automation.Types` as a thin re-export hub for backward compatibility during migration
+Types moved to their owning feature modules:
+- [x] `TwitterCredentials`, `twitterLimits`, `twitterHandle`, `twitterDisplayName`, `tweetSectionHeader` → `Automation.Platforms.Twitter`
+- [x] `BlueskyCredentials`, `blueskyLimits`, `blueskyDisplayName`, `blueskySectionHeader`, `blueskyOembedInitialDelayMs`, `blueskyOembedRetryDelayMs`, `EmbedResult`, `LinkCard` → `Automation.Platforms.Bluesky`
+- [x] `MastodonCredentials`, `mastodonLimits`, `mastodonDisplayName`, `mastodonSectionHeader` → `Automation.Platforms.Mastodon`
+- [x] `OgMetadata` → `Automation.Platforms.OgMetadata`
+- [x] `GeminiConfig`, model constants, `geminiModelFallback` → `Automation.Gemini`
+- [x] `EnvironmentConfig` → `Automation.Env`
+- [x] `ObsidianCredentials` → `Automation.ObsidianSync` (was already defined there)
+- [x] `EmbedSection` → `Automation.EmbedSection`
+- [x] `ReflectionData` → `Automation.Reflection`
+- [x] `TweetResult`, `BlueskyPostResult`, `MastodonPostResult` → their respective platform modules
+
+Shared abstractions (used across multiple unrelated modules):
+- [x] `PlatformLimits` type + `updatesSectionHeader` → `Automation.Platform`
+
+Deleted horizontal-slice modules (replaced by vertical feature modules):
+- [x] `Automation.Credentials` — deleted (was a horizontal slice grouping unrelated credential types)
+- [x] `Automation.Embed` — deleted (was a horizontal slice grouping unrelated embed types)
+
+`Automation.Types` retained as thin re-export hub for backward compatibility.
 
 ### Next: AppContext Record + Tests
 

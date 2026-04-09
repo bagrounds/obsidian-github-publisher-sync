@@ -1,5 +1,9 @@
 module Automation.Platforms.Mastodon
-  ( MastodonPostResult (..)
+  ( MastodonCredentials (..)
+  , MastodonPostResult (..)
+  , mastodonLimits
+  , mastodonDisplayName
+  , mastodonSectionHeader
   , extractMastodonInstanceUrl
   , extractMastodonStatusId
   , extractMastodonUsername
@@ -32,18 +36,37 @@ import System.Random (randomRIO)
 
 import Automation.Json ((.=), (.:), eitherDecode, encode, object, withObject)
 import qualified Automation.Json as Json
+import Automation.Platform (PlatformLimits (..))
 import Automation.Retry (HttpCodeException (..), defaultRetryOptions, withRetry)
-import Automation.Credentials (MastodonCredentials (..))
 import Automation.Secret (Secret (..))
 import Automation.Url (Url, unUrl, mkUrl)
 
 -- ── Domain types ───────────────────────────────────────────────────────
+
+data MastodonCredentials = MastodonCredentials
+  { mcInstanceUrl :: Url
+  , mcAccessToken :: Secret
+  } deriving (Show, Eq)
 
 data MastodonPostResult = MastodonPostResult
   { mprId :: Text
   , mprUrl :: Url
   , mprText :: Text
   } deriving (Show, Eq)
+
+-- ── Platform constants ─────────────────────────────────────────────────
+
+mastodonLimits :: PlatformLimits
+mastodonLimits = PlatformLimits
+  { platformMaxCharacters = 500
+  , platformUrlCountLength = Nothing
+  }
+
+mastodonDisplayName :: Text
+mastodonDisplayName = "Bryan Grounds"
+
+mastodonSectionHeader :: Text
+mastodonSectionHeader = "## 🐘 Mastodon"
 
 -- ── URL Parsing ────────────────────────────────────────────────────────
 

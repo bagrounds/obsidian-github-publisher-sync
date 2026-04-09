@@ -13,7 +13,7 @@ module Automation.Prompts
 import Data.Text (Text)
 import qualified Data.Text as T
 
-import Automation.Types (ReflectionData (..), PlatformLimits (..), blueskyLimits)
+import Automation.Types (ReflectionData (..), PlatformLimits (..), unTitle, unUrl, blueskyLimits)
 
 data PromptPair = PromptPair
   { ppSystem :: Text
@@ -36,8 +36,8 @@ topicTagsInstructions = T.intercalate "\n"
 
 calculateQuestionBudget :: ReflectionData -> Int
 calculateQuestionBudget rd =
-  let titleLength = T.length (rdTitle rd)
-      urlLength = T.length (rdUrl rd)
+  let titleLength = T.length (unTitle (rdTitle rd))
+      urlLength = T.length (unUrl (rdUrl rd))
       prefixLength = T.length aiQuestionPrefix
       tagLineAllowance = 60 :: Int
       fixedOverhead = titleLength + 2 + prefixLength + 2 + tagLineAllowance + 1 + urlLength
@@ -72,8 +72,8 @@ buildTagsPrompt rd =
       user = T.intercalate "\n"
         [ "Generate emoji topic tags for this page:"
         , ""
-        , "Title: " <> rdTitle rd
-        , "URL: " <> rdUrl rd
+        , "Title: " <> unTitle (rdTitle rd)
+        , "URL: " <> unUrl (rdUrl rd)
         , "Date: " <> rdDate rd
         , ""
         , "Content:"
@@ -102,8 +102,8 @@ buildQuestionPrompt rd =
       user = T.intercalate "\n"
         [ "Generate a discussion question for this page (max " <> maxCharsText <> " characters):"
         , ""
-        , "Title: " <> rdTitle rd
-        , "URL: " <> rdUrl rd
+        , "Title: " <> unTitle (rdTitle rd)
+        , "URL: " <> unUrl (rdUrl rd)
         , "Date: " <> rdDate rd
         , ""
         , "Content:"
@@ -122,14 +122,14 @@ parseQuestionAndTags modelOutput =
 assemblePost :: Text -> ReflectionData -> Text
 assemblePost modelOutput rd =
   let (question, tags) = parseQuestionAndTags modelOutput
-      titlePart = [rdTitle rd, ""]
+      titlePart = [unTitle (rdTitle rd), ""]
       questionPart = case T.null question of
         True  -> []
         False -> [aiQuestionPrefix <> question, ""]
       tagsPart = case T.null tags of
         True  -> []
         False -> [tags]
-      urlPart = [rdUrl rd]
+      urlPart = [unUrl (rdUrl rd)]
   in T.intercalate "\n" (titlePart <> questionPart <> tagsPart <> urlPart)
 
 buildShortenQuestionPrompt :: Text -> Int -> PromptPair

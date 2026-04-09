@@ -146,12 +146,12 @@ platformDetail Mastodon = "🐘 posted to Mastodon"
 
 data ContentNote = ContentNote
   { cnFilePath       :: FilePath
-  , cnRelativePath   :: Text
-  , cnTitle          :: Text
-  , cnUrl            :: Text
+  , cnRelativePath   :: RelativePath
+  , cnTitle          :: Title
+  , cnUrl            :: Url
   , cnBody           :: Text
   , cnPostedPlatforms :: Set Platform
-  , cnLinkedNotePaths :: [Text]
+  , cnLinkedNotePaths :: [RelativePath]
   , cnNoSocial       :: Bool
   } deriving (Show, Eq)
 
@@ -324,17 +324,17 @@ readContentNote relativePath contentDir = do
           postedPlatforms = detectPostedPlatforms content
           linkedPaths = extractMarkdownLinks body relativePath contentDir
           noSocial = Map.lookup "no_social" fm == Just "true"
-          title = fromMaybe (T.pack $ takeBaseName $ T.unpack relativePath) (Map.lookup "title" fm)
+          title = validatedTitle (fromMaybe (T.pack $ takeBaseName $ T.unpack relativePath) (Map.lookup "title" fm))
           slug = fromMaybe relativePath (T.stripSuffix ".md" relativePath)
-          url = fromMaybe ("https://bagrounds.org/" <> slug) (Map.lookup "URL" fm)
+          url = validatedUrl (fromMaybe ("https://bagrounds.org/" <> slug) (Map.lookup "URL" fm))
       pure $ Just ContentNote
         { cnFilePath = filePath
-        , cnRelativePath = relativePath
+        , cnRelativePath = validatedRelativePath relativePath
         , cnTitle = title
         , cnUrl = url
         , cnBody = body
         , cnPostedPlatforms = postedPlatforms
-        , cnLinkedNotePaths = linkedPaths
+        , cnLinkedNotePaths = fmap validatedRelativePath linkedPaths
         , cnNoSocial = noSocial
         }
 
@@ -359,30 +359,39 @@ urlFromFilePath relativePath =
   let slug = fromMaybe relativePath (T.stripSuffix ".md" relativePath)
   in "https://bagrounds.org/" <> slug
 
+validatedTitle :: Text -> Title
+validatedTitle = either (error . T.unpack) id . mkTitle
+
+validatedUrl :: Text -> Url
+validatedUrl = either (error . T.unpack) id . mkUrl
+
+validatedRelativePath :: Text -> RelativePath
+validatedRelativePath = either (error . T.unpack) id . mkRelativePath
+
 validateNoteUrl :: (Text -> IO Bool) -> ContentNote -> IO (Maybe ContentNote)
 validateNoteUrl checker note = do
-  isLive <- checker (cnUrl note)
+  isLive <- checker (unUrl (cnUrl note))
   case isLive of
     True -> pure (Just note)
     False -> do
-      let pathUrl = urlFromFilePath (cnRelativePath note)
-      case pathUrl == cnUrl note of
+      let pathUrl = urlFromFilePath (unRelativePath (cnRelativePath note))
+      case pathUrl == unUrl (cnUrl note) of
         True -> do
           putStrLn $ "  🚫 URL not published (404): "
-            <> T.unpack (cnTitle note) <> " (" <> T.unpack (cnUrl note) <> ")"
+            <> T.unpack (unTitle (cnTitle note)) <> " (" <> T.unpack (unUrl (cnUrl note)) <> ")"
           pure Nothing
         False -> do
-          putStrLn $ "  🔧 Frontmatter URL 404'd (" <> T.unpack (cnUrl note)
+          putStrLn $ "  🔧 Frontmatter URL 404'd (" <> T.unpack (unUrl (cnUrl note))
             <> "), trying file-path URL: " <> T.unpack pathUrl
           isPathLive <- checker pathUrl
           case isPathLive of
             True -> do
               putStrLn $ "  ✅ File-path URL is live, updating frontmatter"
               updateFrontmatterUrl (cnFilePath note) pathUrl
-              pure (Just note { cnUrl = pathUrl })
+              pure (Just note { cnUrl = validatedUrl pathUrl })
             False -> do
               putStrLn $ "  🚫 Both URLs not published: "
-                <> T.unpack (cnUrl note) <> " and " <> T.unpack pathUrl
+                <> T.unpack (unUrl (cnUrl note)) <> " and " <> T.unpack pathUrl
               pure Nothing
 
 updateFrontmatterUrl :: FilePath -> Text -> IO ()
@@ -416,14 +425,14 @@ isPostableContent note =
     && T.length (T.strip (cnBody note)) >= minPostableBodyLength
 
 isIndexPage :: ContentNote -> Bool
-isIndexPage = isIndexPath . cnRelativePath
+isIndexPage = isIndexPath . unRelativePath . cnRelativePath
 
 isIndexPath :: Text -> Bool
 isIndexPath p = takeBaseName (T.unpack p) == "index"
 
 isUntitledReflection :: ContentNote -> Bool
 isUntitledReflection note =
-  isReflectionPath (cnRelativePath note) && looksLikeDateTitle (cnTitle note)
+  isReflectionPath (unRelativePath (cnRelativePath note)) && looksLikeDateTitle (unTitle (cnTitle note))
 
 isReflectionPath :: Text -> Bool
 isReflectionPath p = T.isPrefixOf "reflections/" p
@@ -490,7 +499,7 @@ bfsLoop config state =
       case mNote of
         Nothing -> bfsLoop config state'
         Just note -> do
-          eligible <- checkBfsEligibility (cnRelativePath note) (fccPostingCutoff config)
+          eligible <- checkBfsEligibility (unRelativePath (cnRelativePath note)) (fccPostingCutoff config)
           mValidated <- case (isPostableContent note && eligible, fccPublicationChecker config) of
             (True, Just checker) -> validateNoteUrl checker note
             (True, Nothing)      -> pure (Just note)
@@ -505,7 +514,7 @@ bfsLoop config state =
               newFilled = Set.union (bsFilled state') $
                 Set.fromList (fmap ctpPlatform newResults)
               neighbors = filter (\l -> not (Set.member l (bsVisited state')))
-                            (cnLinkedNotePaths note)
+                            (fmap unRelativePath (cnLinkedNotePaths note))
               newVisited = foldl (flip Set.insert) (bsVisited state') neighbors
               newQueue = rest <> fmap (\n -> (n, pathFromRoot <> [n])) neighbors
               state'' = state'
@@ -643,7 +652,7 @@ getConfiguredPlatforms ec = mapMaybe id
 generateSocialPostText :: Manager -> Secret -> ContentNote -> Platform -> IO (Either Text Text)
 generateSocialPostText manager apiKey note platform = do
   let rd = ReflectionData
-        { rdDate = extractDateFromPath (cnRelativePath note)
+        { rdDate = extractDateFromPath (unRelativePath (cnRelativePath note))
         , rdTitle = cnTitle note
         , rdUrl = cnUrl note
         , rdBody = cnBody note
@@ -731,7 +740,7 @@ postToBlueskyPlatform manager env note postText =
   case ecBluesky env of
     Nothing -> pure (Left "Bluesky not configured")
     Just creds -> do
-      ogMeta <- fetchOgMetadata (cnUrl note)
+      ogMeta <- fetchOgMetadata (unUrl (cnUrl note))
       let linkCard = LinkCard
             { lcUri = cnUrl note
             , lcTitle = fromMaybe (cnTitle note) (ogTitle ogMeta)
@@ -766,7 +775,7 @@ postToMastodonPlatform manager env _note postText =
       case result of
         Left err -> pure (Left $ "Mastodon post failed: " <> err)
         Right mpr -> do
-          let postUrl = mprUrl mpr
+          let postUrl = unUrl (mprUrl mpr)
               mInstance = extractMastodonInstanceUrl postUrl
               mStatusId = extractMastodonStatusId postUrl
               mUsername = extractMastodonUsername postUrl
@@ -830,7 +839,7 @@ groupByNote items =
 processNoteGroup :: Manager -> EnvironmentConfig -> Secret -> FilePath
                  -> ([Platform], ContentNote, [Text]) -> IO (Maybe PostedNote)
 processNoteGroup manager env apiKey vaultDir (platforms, note, pathFromRoot) = do
-  putStrLn $ "  📝 Processing: " <> T.unpack (cnTitle note)
+  putStrLn $ "  📝 Processing: " <> T.unpack (unTitle (cnTitle note))
   putStrLn $ "     Platforms: " <> show platforms
 
   updatePathTimestamps vaultDir pathFromRoot

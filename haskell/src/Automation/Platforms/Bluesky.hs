@@ -42,6 +42,8 @@ import Automation.Types
   , EmbedResult (..)
   , LinkCard (..)
   , Secret (..)
+  , unTitle
+  , unUrl
   , blueskyDisplayName
   , blueskyOembedInitialDelayMs
   , blueskyOembedRetryDelayMs
@@ -290,8 +292,8 @@ buildEmbed manager session (Just LinkCard{..}) = do
     Left err -> Left err
     Right maybeBlob ->
       let externalFields =
-            [ "uri" .= lcUri
-            , "title" .= lcTitle
+            [ "uri" .= unUrl lcUri
+            , "title" .= unTitle lcTitle
             , "description" .= lcDescription
             ] <> maybe [] (\blob -> ["thumb" .= blob]) maybeBlob
       in Right $ Just $ object

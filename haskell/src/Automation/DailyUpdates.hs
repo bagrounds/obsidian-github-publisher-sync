@@ -16,11 +16,11 @@ import System.FilePath ((</>), takeBaseName)
 
 import Automation.DailyReflection (ensureDailyReflection, EnsureReflectionResult (..), findFirstSectionIndex, embedSectionHeaders)
 import Automation.Frontmatter (parseFrontmatter)
-import Automation.Types (updatesSectionHeader)
+import Automation.Types (updatesSectionHeader, RelativePath, unRelativePath, Title, unTitle)
 
 data UpdateLink = UpdateLink
-  { ulRelativePath :: Text
-  , ulTitle        :: Text
+  { ulRelativePath :: RelativePath
+  , ulTitle        :: Title
   , ulDetails      :: [Text]
   } deriving (Show, Eq)
 
@@ -68,8 +68,10 @@ addUpdateLinks content [] = content
 addUpdateLinks content links = foldl addSingleUpdate content links
 
 addSingleUpdate :: Text -> UpdateLink -> Text
-addSingleUpdate content (UpdateLink path title details) =
-  let updatesText = extractUpdatesText content
+addSingleUpdate content (UpdateLink pathNewtype titleNewtype details) =
+  let path = unRelativePath pathNewtype
+      title = unTitle titleNewtype
+      updatesText = extractUpdatesText content
       pageBullets = extractPageBullets updatesText path
       newDetails = filter (not . detailPresent pageBullets) details
   in case newDetails of
@@ -179,6 +181,6 @@ addUpdateLinksToReflection reflectionsDir date links = do
     True  -> pure False
     False -> do
       TIO.writeFile reflectionPath updated
-      let linkPaths = T.intercalate ", " (fmap ulRelativePath links)
+      let linkPaths = T.intercalate ", " (fmap (unRelativePath . ulRelativePath) links)
       TIO.putStrLn ("  🔄 Added update link(s) to " <> date <> " reflection: " <> linkPaths)
       pure True

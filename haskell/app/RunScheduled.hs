@@ -9,7 +9,7 @@ import Data.Maybe (fromMaybe, mapMaybe)
 import Data.Text (Text)
 import qualified Data.Text as T
 import qualified Data.Text.IO as TIO
-import Data.Time (addDays, defaultTimeLocale, formatTime, fromGregorian, getCurrentTime)
+import Data.Time (addDays, defaultTimeLocale, formatTime, getCurrentTime)
 import Network.HTTP.Client (Manager, newManager)
 import Network.HTTP.Client.TLS (tlsManagerSettings)
 import System.Directory (createDirectoryIfMissing, doesDirectoryExist, doesFileExist, listDirectory, removeFile)
@@ -30,16 +30,16 @@ import Automation.BlogComments (fetchAllSeriesComments)
 import Automation.BlogImage (BackfillConfig (..), BackfillResult (..), ImageGenerationResult, syncAttachmentsDir, backfillImages, resolveImageProviders, processNote, contentDirectoryFromText)
 import Automation.BlogPosts (BlogPost (..), readSeriesPosts)
 import Automation.BlogPrompt
-  ( DateStr (..)
-  , DisplayTitle (..)
+  ( DisplayTitle (..)
   , Slug (..)
   , assembleFrontmatter
   , buildBackLink
   , buildBlogPrompt
   , buildDisplayTitle
+  , formatDay
   , mkSlug
   , sanitizeTitle
-  , todayPacific
+  , todayPacificDay
   )
 import Automation.BlogSeries
   ( appendModelSignature
@@ -84,6 +84,7 @@ import Automation.Scheduler
   , taskIdFromText
   , taskIdToText
   )
+import Automation.Types (Secret (..))
 import qualified Automation.InternalLinking as IL
 import Automation.SocialPosting (autoPost)
 import Automation.Text (wordJaccardSimilarity)
@@ -120,7 +121,7 @@ inferenceDashboards =
 -- Shared Gemini caller for fiction/title generators
 -- ---------------------------------------------------------------------------
 
-callGeminiForGenerator :: Manager -> Text -> [Text] -> (Text, Text) -> IO (Text, Text)
+callGeminiForGenerator :: Manager -> Secret -> [Text] -> (Text, Text) -> IO (Text, Text)
 callGeminiForGenerator manager apiKey models (systemPrompt, userPrompt) = do
   let combinedPrompt = systemPrompt <> "\n\n" <> userPrompt
       config = defaultGenerationConfig { gcTemperature = 0.9, gcMaxOutputTokens = 2048 }
@@ -140,6 +141,9 @@ requireEnv key = do
     Just val -> pure (T.pack val)
     Nothing  -> error $ "Missing required environment variable: " <> key
 
+requireSecret :: String -> IO Secret
+requireSecret key = Secret <$> requireEnv key
+
 lookupEnvText :: String -> IO (Maybe Text)
 lookupEnvText key = fmap (fmap T.pack) (lookupEnv key)
 
@@ -149,9 +153,9 @@ getObsidianCreds = do
   vaultName <- requireEnv "OBSIDIAN_VAULT_NAME"
   vaultPassword <- lookupEnvText "OBSIDIAN_VAULT_PASSWORD"
   pure ObsidianCredentials
-    { ocAuthToken = authToken
+    { ocAuthToken = Secret authToken
     , ocVaultName = vaultName
-    , ocVaultPassword = vaultPassword
+    , ocVaultPassword = fmap Secret vaultPassword
     }
 
 buildEnvMap :: [String] -> IO (Map Text Text)
@@ -386,22 +390,8 @@ extractRecentCreativeTitles reflectionsDir today = do
 
 yesterdayPacific :: IO Text
 yesterdayPacific = do
-  today <- todayPacific
-  -- Simple: parse the date, subtract 1 day
-  let (y, m, d) = parseYMD (unDateStr today)
-  pure $ formatYMD (addDaysToYMD (-1) y m d)
-  where
-    parseYMD t =
-      let parts = T.splitOn "-" t
-      in case parts of
-           [y, m, d] -> (read (T.unpack y) :: Integer, read (T.unpack m) :: Int, read (T.unpack d) :: Int)
-           _ -> (2026, 1, 1)
-    addDaysToYMD n y m d =
-      let day = fromGregorian y m d
-          newDay = addDays n day
-      in newDay
-    formatYMD day =
-      T.pack $ formatTime defaultTimeLocale "%Y-%m-%d" day
+  today <- todayPacificDay
+  pure $ formatDay (addDays (-1) today)
 
 -- ---------------------------------------------------------------------------
 -- Task runners
@@ -417,11 +407,9 @@ runBlogSeries manager repoRoot vaultDir seriesId = do
     Just rc -> pure rc
     Nothing -> error $ "No run config for series: " <> T.unpack seriesId
 
-  apiKey <- requireEnv "GEMINI_API_KEY"
-  today <- todayPacific
-  let todayText = unDateStr today
-
-  -- 1. Copy vault posts for this series to local repo
+  apiKey <- requireSecret "GEMINI_API_KEY"
+  today <- todayPacificDay
+  let todayText = formatDay today
   _ <- copySeriesPosts vaultDir seriesId repoRoot
 
   -- 2. Check regeneration or already exists
@@ -556,8 +544,8 @@ runBackfillImages :: Manager -> FilePath -> FilePath -> IO ()
 runBackfillImages manager repoRoot vaultDir = do
   logMsg "▶️  backfill-blog-images"
 
-  today <- todayPacific
-  let todayText = unDateStr today
+  today <- todayPacificDay
+  let todayText = formatDay today
 
   -- 1. Sync new AI blog posts from repo to vault (copy-if-missing only)
   let repoAiBlogDir = repoRoot </> "ai-blog"
@@ -649,8 +637,8 @@ runInternalLinking manager vaultDir = do
   case modifiedResults of
     [] -> pure ()
     _  -> do
-      today <- todayPacific
-      let todayText = unDateStr today
+      today <- todayPacificDay
+      let todayText = formatDay today
           reflectionsDir = vaultDir </> "reflections"
       links <- traverse (\fr -> do
         title <- extractTitleFromFile (vaultDir </> T.unpack (IL.frRelativePath fr))
@@ -673,9 +661,9 @@ runAiFiction :: Manager -> FilePath -> IO ()
 runAiFiction manager vaultDir = do
   logMsg "▶️  ai-fiction"
 
-  apiKey <- requireEnv "GEMINI_API_KEY"
-  today <- todayPacific
-  let todayText = unDateStr today
+  apiKey <- requireSecret "GEMINI_API_KEY"
+  today <- todayPacificDay
+  let todayText = formatDay today
 
   let reflectionsDir = vaultDir </> "reflections"
       reflectionPath = reflectionsDir </> T.unpack todayText <> ".md"
@@ -719,9 +707,9 @@ runReflectionTitle :: Manager -> FilePath -> IO ()
 runReflectionTitle manager vaultDir = do
   logMsg "▶️  reflection-title"
 
-  apiKey <- requireEnv "GEMINI_API_KEY"
-  today <- todayPacific
-  let todayText = unDateStr today
+  apiKey <- requireSecret "GEMINI_API_KEY"
+  today <- todayPacificDay
+  let todayText = formatDay today
   yesterday <- yesterdayPacific
 
   let reflectionsDir = vaultDir </> "reflections"
@@ -737,7 +725,7 @@ runReflectionTitle manager vaultDir = do
 
   logMsg "✅ reflection-title"
 
-tryTitleForDate :: Manager -> Text -> FilePath -> FilePath -> Text -> IO Bool
+tryTitleForDate :: Manager -> Secret -> FilePath -> FilePath -> Text -> IO Bool
 tryTitleForDate manager apiKey _vaultDir reflectionsDir date = do
   let reflectionPath = reflectionsDir </> T.unpack date <> ".md"
 

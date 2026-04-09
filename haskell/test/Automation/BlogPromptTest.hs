@@ -3,6 +3,7 @@ module Automation.BlogPromptTest (tests) where
 import Test.Tasty (TestTree, testGroup)
 import Test.Tasty.HUnit (testCase, (@?=), assertBool)
 import qualified Data.Text as T
+import Data.Time (fromGregorian)
 
 import Automation.BlogPrompt
 import Automation.BlogSeriesConfig (lookupSeries)
@@ -32,68 +33,68 @@ tests = testGroup "BlogPrompt"
   , testCase "assembleFrontmatter generates share: true" $
       let Right series = lookupSeries "auto-blog-zero"
           Right slug = mkSlug "my-great-post"
-          fm = assembleFrontmatter series (DateStr "2026-03-12") "My Great Post" slug
+          fm = assembleFrontmatter series (fromGregorian 2026 3 12) "My Great Post" slug
       in assertBool "should include share: true" $
            "share: true" `T.isInfixOf` fm
 
   , testCase "assembleFrontmatter includes display title with date and icon" $
       let Right series = lookupSeries "auto-blog-zero"
           Right slug = mkSlug "my-great-post"
-          fm = assembleFrontmatter series (DateStr "2026-03-12") "My Great Post" slug
+          fm = assembleFrontmatter series (fromGregorian 2026 3 12) "My Great Post" slug
       in assertBool "should include display title" $
            "2026-03-12 | 🤖 My Great Post 🤖" `T.isInfixOf` fm
 
   , testCase "assembleFrontmatter includes quoted URL with date prefix" $
       let Right series = lookupSeries "auto-blog-zero"
           Right slug = mkSlug "my-great-post"
-          fm = assembleFrontmatter series (DateStr "2026-03-12") "My Great Post" slug
+          fm = assembleFrontmatter series (fromGregorian 2026 3 12) "My Great Post" slug
       in assertBool "should include quoted URL with date-slug" $
            "URL: \"https://bagrounds.org/auto-blog-zero/2026-03-12-my-great-post\"" `T.isInfixOf` fm
 
   , testCase "assembleFrontmatter quotes Author with wikilink" $
       let Right series = lookupSeries "auto-blog-zero"
           Right slug = mkSlug "my-great-post"
-          fm = assembleFrontmatter series (DateStr "2026-03-12") "My Great Post" slug
+          fm = assembleFrontmatter series (fromGregorian 2026 3 12) "My Great Post" slug
       in assertBool "should include quoted Author" $
            "Author: \"[[auto-blog-zero]]\"" `T.isInfixOf` fm
 
   , testCase "assembleFrontmatter quotes title with colons for YAML safety" $
       let Right series = lookupSeries "auto-blog-zero"
           Right slug = mkSlug "the-silence-after-the-forge-processing-the-aftermath"
-          fm = assembleFrontmatter series (DateStr "2026-03-26") "The Silence After the Forge: Processing the Aftermath" slug
+          fm = assembleFrontmatter series (fromGregorian 2026 3 26) "The Silence After the Forge: Processing the Aftermath" slug
       in assertBool "title should be quoted" $
            "title: \"2026-03-26 | 🤖 The Silence After the Forge: Processing the Aftermath 🤖\"" `T.isInfixOf` fm
 
   , testCase "assembleFrontmatter quotes aliases with colons for YAML safety" $
       let Right series = lookupSeries "auto-blog-zero"
           Right slug = mkSlug "the-silence-after-the-forge-processing-the-aftermath"
-          fm = assembleFrontmatter series (DateStr "2026-03-26") "The Silence After the Forge: Processing the Aftermath" slug
+          fm = assembleFrontmatter series (fromGregorian 2026 3 26) "The Silence After the Forge: Processing the Aftermath" slug
       in assertBool "aliases should be quoted" $
            "- \"2026-03-26 | 🤖 The Silence After the Forge: Processing the Aftermath 🤖\"" `T.isInfixOf` fm
 
   , testCase "assembleFrontmatter does not include date field" $
       let Right series = lookupSeries "auto-blog-zero"
           Right slug = mkSlug "my-great-post"
-          fm = assembleFrontmatter series (DateStr "2026-03-12") "My Great Post" slug
+          fm = assembleFrontmatter series (fromGregorian 2026 3 12) "My Great Post" slug
       in assertBool "should not have date field" $
            not ("\ndate:" `T.isInfixOf` fm)
 
   , testCase "assembleFrontmatter does not include empty tags field" $
       let Right series = lookupSeries "auto-blog-zero"
           Right slug = mkSlug "my-great-post"
-          fm = assembleFrontmatter series (DateStr "2026-03-12") "My Great Post" slug
+          fm = assembleFrontmatter series (fromGregorian 2026 3 12) "My Great Post" slug
       in assertBool "should not have tags field" $
            not ("tags:" `T.isInfixOf` fm)
 
   , testCase "buildDisplayTitle constructs correct format" $
       let Right series = lookupSeries "chickie-loo"
-          (DisplayTitle result) = buildDisplayTitle series (DateStr "2026-03-28") "My Post"
+          (DisplayTitle result) = buildDisplayTitle series (fromGregorian 2026 3 28) "My Post"
       in result @?= "2026-03-28 | 🐔 My Post 🐔"
 
   , testCase "assembleFrontmatter works for chickie-loo series" $
       let Right series = lookupSeries "chickie-loo"
           Right slug = mkSlug "my-great-post"
-          fm = assembleFrontmatter series (DateStr "2026-03-12") "My Great Post" slug
+          fm = assembleFrontmatter series (fromGregorian 2026 3 12) "My Great Post" slug
       in assertBool "should include chickie-loo Author" $
            "Author: \"[[chickie-loo]]\"" `T.isInfixOf` fm
 
@@ -117,15 +118,11 @@ tests = testGroup "BlogPrompt"
         Right (Slug s) -> s @?= "my-great-post"
         Left _ -> assertBool "valid slug should be accepted" False
 
-  , testCase "mkDateStr rejects short date" $
-      case mkDateStr "2026-03" of
-        Left _ -> pure ()
-        Right _ -> assertBool "short date should be rejected" False
+  , testCase "formatDay formats Day as YYYY-MM-DD" $
+      formatDay (fromGregorian 2026 3 28) @?= "2026-03-28"
 
-  , testCase "mkDateStr accepts valid date" $
-      case mkDateStr "2026-03-28" of
-        Right (DateStr d) -> d @?= "2026-03-28"
-        Left _ -> assertBool "valid date should be accepted" False
+  , testCase "formatDay zero-pads single-digit month and day" $
+      formatDay (fromGregorian 2026 1 5) @?= "2026-01-05"
 
   -- sanitizeTitle tests (TDD: reproducing double-date bug)
   , testCase "sanitizeTitle passes through clean title unchanged" $

@@ -13,7 +13,7 @@ module Automation.Prompts
 import Data.Text (Text)
 import qualified Data.Text as T
 
-import Automation.Types (ReflectionData (..), blueskyMaxLength)
+import Automation.Types (ReflectionData (..), PlatformLimits (..), blueskyLimits)
 
 data PromptPair = PromptPair
   { ppSystem :: Text
@@ -41,7 +41,7 @@ calculateQuestionBudget rd =
       prefixLength = T.length aiQuestionPrefix
       tagLineAllowance = 60 :: Int
       fixedOverhead = titleLength + 2 + prefixLength + 2 + tagLineAllowance + 1 + urlLength
-      budget = blueskyMaxLength - fixedOverhead
+      budget = platformMaxCharacters blueskyLimits - fixedOverhead
   in max 30 budget
 
 stripSubtitle :: Text -> Text

@@ -13,6 +13,12 @@ module Automation.Types
   , ObsidianCredentials (..)
   , EnvironmentConfig (..)
   , LinkCard (..)
+  , PlatformLimits (..)
+  , Secret (..)
+  , mkSecret
+  , twitterLimits
+  , blueskyLimits
+  , mastodonLimits
   , twitterHandle
   , twitterDisplayName
   , blueskyDisplayName
@@ -21,10 +27,6 @@ module Automation.Types
   , blueskySectionHeader
   , mastodonSectionHeader
   , updatesSectionHeader
-  , twitterUrlLength
-  , twitterMaxLength
-  , blueskyMaxLength
-  , mastodonMaxLength
   , defaultGeminiModel
   , defaultQuestionModel
   , gemini3Flash
@@ -35,6 +37,39 @@ module Automation.Types
   ) where
 
 import Data.Text (Text)
+
+import Automation.Secret (Secret (..), mkSecret)
+
+--------------------------------------------------------------------------------
+-- Domain newtypes
+--------------------------------------------------------------------------------
+
+data PlatformLimits = PlatformLimits
+  { platformMaxCharacters :: Int
+  , platformUrlCountLength :: Maybe Int
+  } deriving (Show, Eq)
+
+twitterLimits :: PlatformLimits
+twitterLimits = PlatformLimits
+  { platformMaxCharacters = 280
+  , platformUrlCountLength = Just 23
+  }
+
+blueskyLimits :: PlatformLimits
+blueskyLimits = PlatformLimits
+  { platformMaxCharacters = 300
+  , platformUrlCountLength = Nothing
+  }
+
+mastodonLimits :: PlatformLimits
+mastodonLimits = PlatformLimits
+  { platformMaxCharacters = 500
+  , platformUrlCountLength = Nothing
+  }
+
+--------------------------------------------------------------------------------
+-- Data types
+--------------------------------------------------------------------------------
 
 data ReflectionData = ReflectionData
   { rdDate :: Text
@@ -81,32 +116,32 @@ data OgMetadata = OgMetadata
   } deriving (Show, Eq)
 
 data TwitterCredentials = TwitterCredentials
-  { tcApiKey :: Text
-  , tcApiSecret :: Text
-  , tcAccessToken :: Text
-  , tcAccessSecret :: Text
+  { tcApiKey :: Secret
+  , tcApiSecret :: Secret
+  , tcAccessToken :: Secret
+  , tcAccessSecret :: Secret
   } deriving (Show, Eq)
 
 data BlueskyCredentials = BlueskyCredentials
   { bcIdentifier :: Text
-  , bcPassword :: Text
+  , bcPassword :: Secret
   } deriving (Show, Eq)
 
 data MastodonCredentials = MastodonCredentials
   { mcInstanceUrl :: Text
-  , mcAccessToken :: Text
+  , mcAccessToken :: Secret
   } deriving (Show, Eq)
 
 data GeminiConfig = GeminiConfig
-  { gcApiKey :: Text
+  { gcApiKey :: Secret
   , gcModel :: Text
   , gcQuestionModel :: Text
   } deriving (Show, Eq)
 
 data ObsidianCredentials = ObsidianCredentials
-  { ocAuthToken :: Text
+  { ocAuthToken :: Secret
   , ocVaultName :: Text
-  , ocVaultPassword :: Maybe Text
+  , ocVaultPassword :: Maybe Secret
   } deriving (Show, Eq)
 
 data EnvironmentConfig = EnvironmentConfig
@@ -123,6 +158,10 @@ data LinkCard = LinkCard
   , lcDescription :: Text
   , lcThumbUrl :: Maybe Text
   } deriving (Show, Eq)
+
+--------------------------------------------------------------------------------
+-- Constants
+--------------------------------------------------------------------------------
 
 twitterHandle :: Text
 twitterHandle = "bagrounds"
@@ -147,18 +186,6 @@ mastodonSectionHeader = "## 🐘 Mastodon"
 
 updatesSectionHeader :: Text
 updatesSectionHeader = "## 🔄 Updates"
-
-twitterUrlLength :: Int
-twitterUrlLength = 23
-
-twitterMaxLength :: Int
-twitterMaxLength = 280
-
-blueskyMaxLength :: Int
-blueskyMaxLength = 300
-
-mastodonMaxLength :: Int
-mastodonMaxLength = 500
 
 defaultGeminiModel :: Text
 defaultGeminiModel = "gemma-3-27b-it"

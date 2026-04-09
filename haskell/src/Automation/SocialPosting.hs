@@ -1,9 +1,16 @@
 module Automation.SocialPosting
   ( Platform (..)
+  , SocialPost (..)
   , ContentNote (..)
   , ContentToPost (..)
   , PostedNote (..)
   , FindContentConfig (..)
+  , socialPostContent
+  , socialPostPlatform
+  , mkTweet
+  , mkBlueskyPost
+  , mkMastodonPost
+  , mkSocialPost
   , autoPost
   , discoverContentToPost
   , bfsContentDiscovery
@@ -66,7 +73,7 @@ import Automation.EmbedSection
   )
 import Automation.Env (validateEnvironment)
 import Automation.Frontmatter (parseFrontmatter, quoteYamlValue)
-import Automation.BlogPrompt (DateStr (..), todayPacific)
+import Automation.BlogPrompt (formatDay, todayPacificDay)
 import Automation.Gemini
   ( GenerationConfig (..)
   , GeminiResponse (..)
@@ -80,7 +87,7 @@ import Automation.Platforms.OgMetadata (fetchOgMetadata)
 import Automation.Platforms.Twitter (postTweet, getEmbedHtml)
 import Automation.Prompts (PromptPair (..), assemblePost, buildQuestionPrompt, buildShortenQuestionPrompt, buildTagsPrompt)
 import Automation.Reflection (findMostRecentReflection)
-import Automation.Text (fitPostToLimit)
+import Automation.Text (calculatePostLength, fitPostToLimit)
 import Automation.Types
 
 --------------------------------------------------------------------------------
@@ -89,6 +96,48 @@ import Automation.Types
 
 data Platform = Twitter | Bluesky | Mastodon
   deriving (Show, Eq, Ord)
+
+data SocialPost
+  = Tweet Text
+  | BlueskyPost Text
+  | MastodonPost Text
+  deriving (Show, Eq)
+
+socialPostContent :: SocialPost -> Text
+socialPostContent (Tweet text) = text
+socialPostContent (BlueskyPost text) = text
+socialPostContent (MastodonPost text) = text
+
+socialPostPlatform :: SocialPost -> Platform
+socialPostPlatform (Tweet _) = Twitter
+socialPostPlatform (BlueskyPost _) = Bluesky
+socialPostPlatform (MastodonPost _) = Mastodon
+
+mkTweet :: Text -> Either Text SocialPost
+mkTweet text
+  | calculatePostLength twitterLimits text > platformMaxCharacters twitterLimits =
+      Left $ "Tweet exceeds " <> T.pack (show (platformMaxCharacters twitterLimits))
+        <> " characters (actual: " <> T.pack (show (calculatePostLength twitterLimits text)) <> ")"
+  | otherwise = Right (Tweet text)
+
+mkBlueskyPost :: Text -> Either Text SocialPost
+mkBlueskyPost text
+  | calculatePostLength blueskyLimits text > platformMaxCharacters blueskyLimits =
+      Left $ "Bluesky post exceeds " <> T.pack (show (platformMaxCharacters blueskyLimits))
+        <> " characters (actual: " <> T.pack (show (calculatePostLength blueskyLimits text)) <> ")"
+  | otherwise = Right (BlueskyPost text)
+
+mkMastodonPost :: Text -> Either Text SocialPost
+mkMastodonPost text
+  | calculatePostLength mastodonLimits text > platformMaxCharacters mastodonLimits =
+      Left $ "Mastodon post exceeds " <> T.pack (show (platformMaxCharacters mastodonLimits))
+        <> " characters (actual: " <> T.pack (show (calculatePostLength mastodonLimits text)) <> ")"
+  | otherwise = Right (MastodonPost text)
+
+mkSocialPost :: Platform -> Text -> Either Text SocialPost
+mkSocialPost Twitter = mkTweet
+mkSocialPost Bluesky = mkBlueskyPost
+mkSocialPost Mastodon = mkMastodonPost
 
 platformDetail :: Platform -> Text
 platformDetail Twitter  = "🐦 posted to Twitter"
@@ -150,10 +199,10 @@ platformSectionHeader Twitter  = tweetSectionHeader
 platformSectionHeader Bluesky  = blueskySectionHeader
 platformSectionHeader Mastodon = mastodonSectionHeader
 
-platformMaxLength :: Platform -> Int
-platformMaxLength Twitter  = twitterMaxLength
-platformMaxLength Bluesky  = blueskyMaxLength
-platformMaxLength Mastodon = mastodonMaxLength
+platformLimits :: Platform -> PlatformLimits
+platformLimits Twitter  = twitterLimits
+platformLimits Bluesky  = blueskyLimits
+platformLimits Mastodon = mastodonLimits
 
 --------------------------------------------------------------------------------
 -- Link extraction
@@ -591,7 +640,7 @@ getConfiguredPlatforms ec = mapMaybe id
 -- Social post generation via Gemini
 --------------------------------------------------------------------------------
 
-generateSocialPostText :: Manager -> Text -> ContentNote -> Platform -> IO (Either Text Text)
+generateSocialPostText :: Manager -> Secret -> ContentNote -> Platform -> IO (Either Text Text)
 generateSocialPostText manager apiKey note platform = do
   let rd = ReflectionData
         { rdDate = extractDateFromPath (cnRelativePath note)
@@ -607,7 +656,7 @@ generateSocialPostText manager apiKey note platform = do
       questionPrompt = buildQuestionPrompt rd
       tagsCombined = ppSystem tagsPrompt <> "\n\n" <> ppUser tagsPrompt
       questionCombined = ppSystem questionPrompt <> "\n\n" <> ppUser questionPrompt
-      maxLen = platformMaxLength platform
+      maxLen = platformMaxCharacters (platformLimits platform)
       genConfig = defaultGenerationConfig { gcTemperature = 0.8, gcMaxOutputTokens = 512 }
       tagsModels = [defaultGeminiModel, gemini3Flash, geminiFlashFallback]
       questionModels = [defaultQuestionModel, geminiFlashFallback]
@@ -623,7 +672,7 @@ generateSocialPostText manager apiKey note platform = do
           question = T.strip (grText questionResp)
           modelOutput = question <> "\n" <> tags
           rawPost = assemblePost modelOutput rd
-          overage = T.length rawPost - blueskyMaxLength
+          overage = T.length rawPost - platformMaxCharacters blueskyLimits
       finalPost <- case overage > 0 of
         True -> do
           let shortenSafetyBuffer = 10
@@ -668,8 +717,8 @@ postToTwitterPlatform manager env _note postText =
       case result of
         Left err -> pure (Left $ "Twitter post failed: " <> err)
         Right (tweetId, _tweetText) -> do
-          embedHtml <- getEmbedHtml manager tweetId (tcAccessToken creds)
-                         (tcApiKey creds) (tcApiSecret creds)
+          embedHtml <- getEmbedHtml manager tweetId (unSecret (tcAccessToken creds))
+                         (unSecret (tcApiKey creds)) (unSecret (tcApiSecret creds))
           pure $ Right PostResult
             { prPlatform = Twitter
             , prEmbedHtml = embedHtml
@@ -740,7 +789,7 @@ data PostedNote = PostedNote
   , pnPlatforms :: [Platform]
   } deriving (Show, Eq)
 
-runPostingPipeline :: Manager -> EnvironmentConfig -> Text -> FilePath -> IO [PostedNote]
+runPostingPipeline :: Manager -> EnvironmentConfig -> Secret -> FilePath -> IO [PostedNote]
 runPostingPipeline manager env apiKey vaultDir = do
   let platforms = getConfiguredPlatforms env
   putStrLn $ "  🔍 Configured platforms: " <> show platforms
@@ -778,7 +827,7 @@ groupByNote items =
            ([ctpPlatform ctp], ctpNote ctp, ctpPathFromRoot ctp) acc
     merge (p1, n, path) (p2, _, _) = (p1 <> p2, n, path)
 
-processNoteGroup :: Manager -> EnvironmentConfig -> Text -> FilePath
+processNoteGroup :: Manager -> EnvironmentConfig -> Secret -> FilePath
                  -> ([Platform], ContentNote, [Text]) -> IO (Maybe PostedNote)
 processNoteGroup manager env apiKey vaultDir (platforms, note, pathFromRoot) = do
   putStrLn $ "  📝 Processing: " <> T.unpack (cnTitle note)
@@ -803,7 +852,7 @@ processNoteGroup manager env apiKey vaultDir (platforms, note, pathFromRoot) = d
       putStrLn $ "  ✅ " <> show (length successes) <> " embeds written"
       pure (Just (PostedNote note postedPlatforms))
 
-postForPlatform :: Manager -> EnvironmentConfig -> Text -> ContentNote -> Platform
+postForPlatform :: Manager -> EnvironmentConfig -> Secret -> ContentNote -> Platform
                 -> IO (Either Text PostResult)
 postForPlatform manager env apiKey note platform = do
   postTextResult <- generateSocialPostText manager apiKey note platform
@@ -843,8 +892,9 @@ autoPost manager vaultDir = do
   postedNotes <- runPostingPipeline manager env apiKey vaultDir
 
   let reflectionsDir = vaultDir </> "reflections"
-  DateStr todayStr <- todayPacific
-  let updateLinks = fmap (\pn ->
+  today <- todayPacificDay
+  let todayStr = formatDay today
+      updateLinks = fmap (\pn ->
         let details = fmap platformDetail (pnPlatforms pn)
         in UpdateLink (cnRelativePath (pnNote pn)) (cnTitle (pnNote pn)) details
         ) postedNotes

@@ -32,7 +32,7 @@ import System.Random (randomRIO)
 import Automation.Json ((.=), (.:), eitherDecode, encode, object, withObject)
 import qualified Automation.Json as Json
 import Automation.Retry (HttpCodeException (..), defaultRetryOptions, withRetry)
-import Automation.Types (MastodonCredentials (..), MastodonPostResult (..))
+import Automation.Types (MastodonCredentials (..), MastodonPostResult (..), Secret (..))
 
 -- ── URL Parsing ────────────────────────────────────────────────────────
 
@@ -101,7 +101,7 @@ postToMastodon manager MastodonCredentials{..} statusText = do
             { method = "POST"
             , requestBody = RequestBodyLBS bodyJson
             , requestHeaders =
-                [ ("Authorization", "Bearer " <> TE.encodeUtf8 mcAccessToken)
+                [ ("Authorization", "Bearer " <> TE.encodeUtf8 (unSecret mcAccessToken))
                 , ("Content-Type", "application/json")
                 , ("Idempotency-Key", TE.encodeUtf8 idempotencyKey)
                 ]
@@ -145,7 +145,7 @@ deleteMastodonPost manager MastodonCredentials{..} statusId = do
           initialReq
             { method = "DELETE"
             , requestHeaders =
-                [("Authorization", "Bearer " <> TE.encodeUtf8 mcAccessToken)]
+                [("Authorization", "Bearer " <> TE.encodeUtf8 (unSecret mcAccessToken))]
             }
     response <- httpLbs req manager
     let status = statusCode (responseStatus response)

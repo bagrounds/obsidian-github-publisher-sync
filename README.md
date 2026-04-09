@@ -122,6 +122,7 @@ All automation logic is implemented in Haskell, compiled to native Linux binarie
 | `EmbedSection` | 📎 Section embedding from other files |
 | `Prompts` | 🧠 Prompt engineering utilities |
 | `Types` | 📐 Shared domain types |
+| `Secret` | 🔐 Secret newtype for redacting sensitive values |
 | `Env` | 🔧 Environment variable validation |
 | `Retry` | 🔄 Exponential backoff retry logic |
 | `Text` | ✂️ Text processing and truncation |
@@ -129,6 +130,12 @@ All automation logic is implemented in Haskell, compiled to native Linux binarie
 | `Timer` | ⏱️ Timing utilities |
 | `Pipeline` | 🔀 Async pipeline orchestration |
 | `Json` | 📋 JSON parsing and encoding |
+
+### 📊 Module Dependency Graph
+
+![Haskell Module Dependency Graph](haskell/docs/module-dependencies.svg)
+
+🟢 Green nodes are core infrastructure modules. 🔵 Blue nodes are platform integrations. 🟡 Yellow nodes are blog-related modules. 🩷 Pink nodes are social posting modules. 🟣 Purple nodes are automation/AI modules. 🟠 The orange node is the main entry point.
 
 ## 🔗 Internal Linking System
 
@@ -218,7 +225,7 @@ Pull Vault → BFS from Most Recent Reflection → For Each File:
 ## 🧪 Testing
 
 ```bash
-# Run Haskell tests (719+ tests)
+# Run Haskell tests (870+ tests)
 cd haskell && cabal update && cabal test --test-show-details=direct
 
 # Run Quartz TypeScript tests
@@ -234,7 +241,7 @@ tsc --noEmit
 npx prettier . --check
 ```
 
-📊 719+ Haskell tests covering all automation modules, plus Quartz TypeScript component tests.
+📊 870+ Haskell tests covering all automation modules, plus Quartz TypeScript component tests.
 
 ## 🏗️ Development
 

@@ -81,6 +81,7 @@ import Automation.BlogPrompt (stripEmbedSections, todayPacificDay)
 import Automation.Frontmatter (YamlValue (..), parseFrontmatter, renderYamlValue)
 import qualified Automation.Gemini as Gemini
 import qualified Automation.Json as Json
+import Automation.Types (Secret (..))
 
 --------------------------------------------------------------------------------
 -- Data types
@@ -95,7 +96,7 @@ data ImageGenerationResult = ImageGenerationResult
 
 data ImageProviderConfig = ImageProviderConfig
   { ipcName           :: Text
-  , ipcApiKey         :: Text
+  , ipcApiKey         :: Secret
   , ipcModel          :: Text
   , ipcGenerator      :: Manager -> Text -> Text -> Text -> IO (Either Text (LBS.ByteString, Text))
   , ipcDescribePrompt :: Maybe (Manager -> Text -> Text -> Text -> IO (Either Text Text))
@@ -851,7 +852,7 @@ describeImageWithGemini manager apiKey model content = do
       req = Gemini.GeminiRequest
         { Gemini.grPrompt = fullPrompt
         , Gemini.grModel = model
-        , Gemini.grApiKey = apiKey
+        , Gemini.grApiKey = Secret apiKey
         , Gemini.grGenerationConfig = Gemini.defaultGenerationConfig
         }
   result <- Gemini.generateContent manager req
@@ -898,7 +899,7 @@ mkCloudflareProvider env describer = do
   let cfModel = fromMaybe "@cf/black-forest-labs/flux-1-schnell" (Map.lookup "CLOUDFLARE_IMAGE_MODEL" env)
   pure ImageProviderConfig
     { ipcName = "cloudflare"
-    , ipcApiKey = cfToken
+    , ipcApiKey = Secret cfToken
     , ipcModel = cfModel
     , ipcGenerator = \mgr apiKey _model prompt ->
         generateWithCloudflare mgr apiKey cfAccountId cfModel prompt
@@ -911,7 +912,7 @@ mkHuggingFaceProvider env describer = do
   let hfModel = fromMaybe "black-forest-labs/FLUX.1-schnell" (Map.lookup "HUGGINGFACE_IMAGE_MODEL" env)
   pure ImageProviderConfig
     { ipcName = "huggingface"
-    , ipcApiKey = hfToken
+    , ipcApiKey = Secret hfToken
     , ipcModel = hfModel
     , ipcGenerator = \mgr apiKey _model prompt ->
         generateWithHuggingFace mgr apiKey hfModel prompt
@@ -924,7 +925,7 @@ mkTogetherProvider env describer = do
   let togetherModel = fromMaybe "black-forest-labs/FLUX.1-schnell-Free" (Map.lookup "TOGETHER_IMAGE_MODEL" env)
   pure ImageProviderConfig
     { ipcName = "together"
-    , ipcApiKey = togetherKey
+    , ipcApiKey = Secret togetherKey
     , ipcModel = togetherModel
     , ipcGenerator = \mgr apiKey _model prompt ->
         generateWithTogether mgr apiKey togetherModel prompt
@@ -938,7 +939,7 @@ mkPollinationsProvider env describer =
       let polModel = fromMaybe "flux" (Map.lookup "POLLINATIONS_IMAGE_MODEL" env)
       in Just ImageProviderConfig
         { ipcName = "pollinations"
-        , ipcApiKey = ""
+        , ipcApiKey = Secret ""
         , ipcModel = polModel
         , ipcGenerator = \mgr _apiKey _model prompt ->
             generateWithPollinations mgr polModel prompt
@@ -952,7 +953,7 @@ mkGeminiProvider env describer = do
   let geminiModel = fromMaybe "gemini-3.1-flash-image-preview" (Map.lookup "IMAGE_GEMINI_MODEL" env)
   pure ImageProviderConfig
     { ipcName = "gemini"
-    , ipcApiKey = geminiKey
+    , ipcApiKey = Secret geminiKey
     , ipcModel = geminiModel
     , ipcGenerator = generateImageWithGemini
     , ipcDescribePrompt = describer
@@ -1030,7 +1031,7 @@ generateAndSaveImage manager provider notePath attachmentsDir content baseName =
       putStrLn $ "⚠️ Failed to resolve prompt: " <> T.unpack err
       pure $ ImageGenerationResult True Nothing Nothing Nothing
     Right prompt -> do
-      imageResult <- ipcGenerator provider manager (ipcApiKey provider) (ipcModel provider) prompt
+      imageResult <- ipcGenerator provider manager (unSecret (ipcApiKey provider)) (ipcModel provider) prompt
       case imageResult of
         Left err -> do
           putStrLn $ "❌ Image generation failed: " <> T.unpack err
@@ -1057,7 +1058,7 @@ resolvePrompt manager provider content =
     Just cached | not (T.null (T.strip cached)) -> pure (Right cached)
     _ -> case ipcDescribePrompt provider of
       Just describer -> do
-        result <- describer manager (ipcApiKey provider) (ipcModel provider) content
+        result <- describer manager (unSecret (ipcApiKey provider)) (ipcModel provider) content
         pure $ fmap sanitizeForYaml result
       Nothing -> pure $ Right (buildImagePrompt content)
 

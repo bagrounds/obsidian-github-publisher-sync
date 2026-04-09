@@ -25,6 +25,7 @@ library
   hs-source-dirs:      src
   exposed-modules:
     Automation.Json
+    Automation.Secret
     Automation.Types
     Automation.Env
     Automation.Scheduler
@@ -141,6 +142,7 @@ test-suite automation-tests
     Automation.OgMetadataTest
     Automation.ReflectionTitleTest
     Automation.ObsidianSyncTest
+    Automation.TypesTest
     Automation.TestGenerators
   build-depends:
     base,

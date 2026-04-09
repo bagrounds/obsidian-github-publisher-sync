@@ -16,7 +16,8 @@ import Data.Time (Day, UTCTime (..), addDays, defaultTimeLocale, formatTime, get
 import System.Environment (lookupEnv)
 
 import Automation.Types
-  ( BlueskyCredentials (..)
+  ( Secret (..)
+  , BlueskyCredentials (..)
   , EnvironmentConfig (..)
   , GeminiConfig (..)
   , MastodonCredentials (..)
@@ -82,32 +83,32 @@ validateEnvironment = do
   twitter <- whenPlatformEnabled "Twitter" "DISABLE_TWITTER"
     ["TWITTER_API_KEY", "TWITTER_API_SECRET", "TWITTER_ACCESS_TOKEN", "TWITTER_ACCESS_SECRET"]
     (TwitterCredentials
-      <$> requireEnv "TWITTER_API_KEY"
-      <*> requireEnv "TWITTER_API_SECRET"
-      <*> requireEnv "TWITTER_ACCESS_TOKEN"
-      <*> requireEnv "TWITTER_ACCESS_SECRET")
+      <$> fmap Secret (requireEnv "TWITTER_API_KEY")
+      <*> fmap Secret (requireEnv "TWITTER_API_SECRET")
+      <*> fmap Secret (requireEnv "TWITTER_ACCESS_TOKEN")
+      <*> fmap Secret (requireEnv "TWITTER_ACCESS_SECRET"))
 
   bluesky <- whenPlatformEnabled "Bluesky" "DISABLE_BLUESKY"
     ["BLUESKY_IDENTIFIER", "BLUESKY_APP_PASSWORD"]
     (BlueskyCredentials
       <$> requireEnv "BLUESKY_IDENTIFIER"
-      <*> requireEnv "BLUESKY_APP_PASSWORD")
+      <*> fmap Secret (requireEnv "BLUESKY_APP_PASSWORD"))
 
   mastodon <- whenPlatformEnabled "Mastodon" "DISABLE_MASTODON"
     ["MASTODON_INSTANCE_URL", "MASTODON_ACCESS_TOKEN"]
     (MastodonCredentials
       <$> requireEnv "MASTODON_INSTANCE_URL"
-      <*> requireEnv "MASTODON_ACCESS_TOKEN")
+      <*> fmap Secret (requireEnv "MASTODON_ACCESS_TOKEN"))
 
   gemini <- GeminiConfig
-    <$> requireEnv "GEMINI_API_KEY"
+    <$> fmap Secret (requireEnv "GEMINI_API_KEY")
     <*> fmap (fromMaybe defaultGeminiModel) (lookupEnvText "GEMINI_MODEL")
     <*> fmap (fromMaybe defaultQuestionModel) (lookupEnvText "GEMINI_QUESTION_MODEL")
 
   obsidian <- ObsidianCredentials
-    <$> requireEnv "OBSIDIAN_AUTH_TOKEN"
+    <$> fmap Secret (requireEnv "OBSIDIAN_AUTH_TOKEN")
     <*> requireEnv "OBSIDIAN_VAULT_NAME"
-    <*> lookupEnvText "OBSIDIAN_VAULT_PASSWORD"
+    <*> fmap (fmap Secret) (lookupEnvText "OBSIDIAN_VAULT_PASSWORD")
 
   pure EnvironmentConfig
     { ecTwitter = twitter

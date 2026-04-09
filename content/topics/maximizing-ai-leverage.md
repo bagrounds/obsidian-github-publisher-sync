@@ -6,9 +6,13 @@ title: 🤖📈 Maximizing AI Leverage
 link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-05T00:00:00Z
 force_analyze_links: false
+image_date: 2026-04-09T20:27:26Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A sleek, isometric illustration of a clean, modern workspace. In the center, a glowing, translucent neural network node sits on a desk, casting a soft blue light onto a minimalist laptop and a stack of open notebooks. Thin, stylized lines extend from the central AI core, connecting to icons representing various digital tools—a terminal window, a file folder, and a microphone. The color palette features deep navy and slate grays contrasted with vibrant, electric cyan highlights to represent data flow and intelligence. The aesthetic is professional, technical, and organized, evoking a sense of powerful, private, and localized computing power focused on engineering productivity. The background is a soft, neutral gradient, keeping the focus entirely on the interconnected, futuristic workspace setup.
 ---
 [Home](../index.md) > [Topics](./index.md)  
 # 🤖📈 Maximizing AI Leverage  
+![topics-maximizing-ai-leverage](../topics-maximizing-ai-leverage.jpg)  
 ## 🖼️ Background  
 - [LLMs](./large-language-models.md) are all the rage now.  
 - I think it's been a year or two since I first used a chatbot to write a release email for me at work.  

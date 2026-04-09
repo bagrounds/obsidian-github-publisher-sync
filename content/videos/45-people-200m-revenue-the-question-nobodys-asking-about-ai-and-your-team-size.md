@@ -9,6 +9,9 @@ Platform:
 Channel: AI News & Strategy Daily | Nate B Jones
 tags:
 youtube: https://youtu.be/hnwM01CpzmA
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_time: 2026-04-05T00:00:00Z
+force_analyze_links: false
 ---
 [Home](../index.md) > [Videos](./index.md)  
 # ❓🤖🧑‍💻🧑‍🤝‍🧑 45 People, $200M Revenue. The Question Nobody's Asking About AI and Your Team Size.  

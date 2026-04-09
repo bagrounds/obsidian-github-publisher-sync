@@ -7,7 +7,7 @@ import Test.Tasty.QuickCheck (testProperty)
 import qualified Test.Tasty.QuickCheck as QC
 
 import Automation.Prompts
-import Automation.Types (ReflectionData (..), PlatformLimits (..), blueskyLimits)
+import Automation.Types (ReflectionData (..), PlatformLimits (..), Title (..), Url (..), blueskyLimits)
 
 tests :: TestTree
 tests = testGroup "Prompts"
@@ -22,8 +22,8 @@ tests = testGroup "Prompts"
 sampleReflection :: ReflectionData
 sampleReflection = ReflectionData
   { rdDate                = "2026-04-01"
-  , rdTitle               = "2026-04-01 | My Reflection"
-  , rdUrl                 = "https://bagrounds.org/reflections/2026-04-01"
+  , rdTitle               = Title "2026-04-01 | My Reflection"
+  , rdUrl                 = Url "https://bagrounds.org/reflections/2026-04-01"
   , rdBody                = "Some reflection body content"
   , rdFilePath            = "reflections/2026-04-01.md"
   , rdHasTweetSection     = False
@@ -51,19 +51,19 @@ calculateQuestionBudgetTests = testGroup "calculateQuestionBudget"
       let budget = calculateQuestionBudget sampleReflection
       in assertBool "budget is positive" (budget > 0)
   , testCase "budget decreases with longer title" $
-      let shortTitle = sampleReflection { rdTitle = "Short" }
-          longTitle = sampleReflection { rdTitle = T.replicate 100 "x" }
+      let shortTitle = sampleReflection { rdTitle = Title "Short" }
+          longTitle = sampleReflection { rdTitle = Title (T.replicate 100 "x") }
       in assertBool "short title has more budget" $
         calculateQuestionBudget shortTitle > calculateQuestionBudget longTitle
   , testCase "budget decreases with longer URL" $
-      let shortUrl = sampleReflection { rdUrl = "https://x.com/a" }
-          longUrl = sampleReflection { rdUrl = "https://example.com/" <> T.replicate 100 "x" }
+      let shortUrl = sampleReflection { rdUrl = Url "https://x.com/a" }
+          longUrl = sampleReflection { rdUrl = Url ("https://example.com/" <> T.replicate 100 "x") }
       in assertBool "short URL has more budget" $
         calculateQuestionBudget shortUrl > calculateQuestionBudget longUrl
   , testCase "budget has minimum of 30" $
       let extreme = sampleReflection
-            { rdTitle = T.replicate 200 "x"
-            , rdUrl = T.replicate 200 "y"
+            { rdTitle = Title (T.replicate 200 "x")
+            , rdUrl = Url (T.replicate 200 "y")
             }
       in calculateQuestionBudget extreme @?= 30
   , testCase "budget is at most blueskyMaxLength" $
@@ -120,16 +120,16 @@ assemblePostTests = testGroup "assemblePost"
   [ testCase "assembles full post with question and tags" $
       let result = assemblePost "My question?\nTag1 | Tag2" sampleReflection
       in do
-        assertBool "contains title" (T.isInfixOf (rdTitle sampleReflection) result)
+        assertBool "contains title" (T.isInfixOf (unTitle (rdTitle sampleReflection)) result)
         assertBool "contains question" (T.isInfixOf "My question?" result)
         assertBool "contains AI prefix" (T.isInfixOf aiQuestionPrefix result)
         assertBool "contains tags" (T.isInfixOf "Tag1 | Tag2" result)
-        assertBool "contains URL" (T.isInfixOf (rdUrl sampleReflection) result)
+        assertBool "contains URL" (T.isInfixOf (unUrl (rdUrl sampleReflection)) result)
   , testCase "assembles post without question" $
       let result = assemblePost "" sampleReflection
       in do
-        assertBool "contains title" (T.isInfixOf (rdTitle sampleReflection) result)
-        assertBool "contains URL" (T.isInfixOf (rdUrl sampleReflection) result)
+        assertBool "contains title" (T.isInfixOf (unTitle (rdTitle sampleReflection)) result)
+        assertBool "contains URL" (T.isInfixOf (unUrl (rdUrl sampleReflection)) result)
         assertBool "no AI prefix" (not (T.isInfixOf aiQuestionPrefix result))
   , testCase "assembles post with question but no tags" $
       let result = assemblePost "Question only?" sampleReflection
@@ -138,8 +138,8 @@ assemblePostTests = testGroup "assemblePost"
         assertBool "contains AI prefix" (T.isInfixOf aiQuestionPrefix result)
   , testCase "title appears first" $
       let result = assemblePost "Q?\nTags" sampleReflection
-          titleIdx = T.length $ fst $ T.breakOn (rdTitle sampleReflection) result
-          urlIdx = T.length $ fst $ T.breakOn (rdUrl sampleReflection) result
+          titleIdx = T.length $ fst $ T.breakOn (unTitle (rdTitle sampleReflection)) result
+          urlIdx = T.length $ fst $ T.breakOn (unUrl (rdUrl sampleReflection)) result
       in assertBool "title before URL" (titleIdx < urlIdx)
   ]
 
@@ -151,16 +151,16 @@ propertyTests :: TestTree
 propertyTests = testGroup "properties"
   [ testProperty "calculateQuestionBudget always at least 30" $
       \(QC.ASCIIString title) (QC.ASCIIString url) ->
-        let rd = sampleReflection { rdTitle = T.pack title, rdUrl = T.pack url }
+        let rd = sampleReflection { rdTitle = Title (T.pack title), rdUrl = Url (T.pack url) }
         in calculateQuestionBudget rd >= 30
   , testProperty "assemblePost always contains URL" $
       \(QC.ASCIIString modelOutput) ->
         let result = assemblePost (T.pack modelOutput) sampleReflection
-        in T.isInfixOf (rdUrl sampleReflection) result
+        in T.isInfixOf (unUrl (rdUrl sampleReflection)) result
   , testProperty "assemblePost always contains title" $
       \(QC.ASCIIString modelOutput) ->
         let result = assemblePost (T.pack modelOutput) sampleReflection
-        in T.isInfixOf (rdTitle sampleReflection) result
+        in T.isInfixOf (unTitle (rdTitle sampleReflection)) result
   , testProperty "stripSubtitle result is never longer than input" $
       \(QC.ASCIIString s) ->
         let txt = T.pack s

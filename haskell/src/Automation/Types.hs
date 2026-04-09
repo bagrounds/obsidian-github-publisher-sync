@@ -16,6 +16,12 @@ module Automation.Types
   , PlatformLimits (..)
   , Secret (..)
   , mkSecret
+  , Url (..)
+  , mkUrl
+  , Title (..)
+  , mkTitle
+  , RelativePath (..)
+  , mkRelativePath
   , twitterLimits
   , blueskyLimits
   , mastodonLimits
@@ -38,7 +44,10 @@ module Automation.Types
 
 import Data.Text (Text)
 
+import Automation.RelativePath (RelativePath (..), mkRelativePath)
 import Automation.Secret (Secret (..), mkSecret)
+import Automation.Title (Title (..), mkTitle)
+import Automation.Url (Url (..), mkUrl)
 
 --------------------------------------------------------------------------------
 -- Domain newtypes
@@ -73,8 +82,8 @@ mastodonLimits = PlatformLimits
 
 data ReflectionData = ReflectionData
   { rdDate :: Text
-  , rdTitle :: Text
-  , rdUrl :: Text
+  , rdTitle :: Title
+  , rdUrl :: Url
   , rdBody :: Text
   , rdFilePath :: Text
   , rdHasTweetSection :: Bool
@@ -95,7 +104,7 @@ data BlueskyPostResult = BlueskyPostResult
 
 data MastodonPostResult = MastodonPostResult
   { mprId :: Text
-  , mprUrl :: Text
+  , mprUrl :: Url
   , mprText :: Text
   } deriving (Show, Eq)
 
@@ -110,7 +119,7 @@ data EmbedSection = EmbedSection
   }
 
 data OgMetadata = OgMetadata
-  { ogTitle :: Maybe Text
+  { ogTitle :: Maybe Title
   , ogDescription :: Maybe Text
   , ogImageUrl :: Maybe Text
   } deriving (Show, Eq)
@@ -128,7 +137,7 @@ data BlueskyCredentials = BlueskyCredentials
   } deriving (Show, Eq)
 
 data MastodonCredentials = MastodonCredentials
-  { mcInstanceUrl :: Text
+  { mcInstanceUrl :: Url
   , mcAccessToken :: Secret
   } deriving (Show, Eq)
 
@@ -153,8 +162,8 @@ data EnvironmentConfig = EnvironmentConfig
   } deriving (Show, Eq)
 
 data LinkCard = LinkCard
-  { lcUri :: Text
-  , lcTitle :: Text
+  { lcUri :: Url
+  , lcTitle :: Title
   , lcDescription :: Text
   , lcThumbUrl :: Maybe Text
   } deriving (Show, Eq)

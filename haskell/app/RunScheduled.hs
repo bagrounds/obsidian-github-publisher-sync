@@ -84,7 +84,7 @@ import Automation.Scheduler
   , taskIdFromText
   , taskIdToText
   )
-import Automation.Types (Secret (..))
+import Automation.Types (Secret (..), RelativePath (..), Title (..))
 import qualified Automation.InternalLinking as IL
 import Automation.SocialPosting (autoPost)
 import Automation.Text (wordJaccardSimilarity)
@@ -597,7 +597,7 @@ runBackfillImages manager repoRoot vaultDir = do
   let reflectionsDir = vaultDir </> "reflections"
   imageUpdateLinks <- traverse (\f -> do
         title <- extractTitleFromFile (vaultDir </> T.unpack f)
-        pure (UpdateLink f title ["🖼️ added image"])
+        pure (UpdateLink (RelativePath f) (Title title) ["🖼️ added image"])
         ) imageModifiedFiles
   case imageUpdateLinks of
     [] -> pure ()
@@ -641,10 +641,10 @@ runInternalLinking manager vaultDir = do
       let todayText = formatDay today
           reflectionsDir = vaultDir </> "reflections"
       links <- traverse (\fr -> do
-        title <- extractTitleFromFile (vaultDir </> T.unpack (IL.frRelativePath fr))
+        title <- extractTitleFromFile (vaultDir </> T.unpack (unRelativePath (IL.frRelativePath fr)))
         let n = IL.frLinksAdded fr
             detail = "🔗 added " <> T.pack (show n) <> " internal link" <> (if n == 1 then "" else "s")
-        pure (UpdateLink (IL.frRelativePath fr) title [detail])
+        pure (UpdateLink (IL.frRelativePath fr) (Title title) [detail])
         ) modifiedResults
       _ <- addUpdateLinksToReflection reflectionsDir todayText links
       pure ()

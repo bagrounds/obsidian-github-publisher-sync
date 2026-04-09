@@ -58,7 +58,10 @@ library
     Automation.Platforms.Twitter
     Automation.Platforms.Bluesky
     Automation.Platforms.Mastodon
+    Automation.RelativePath
     Automation.SocialPosting
+    Automation.Title
+    Automation.Url
     Automation.Platforms.OgMetadata
   build-depends:
     base                 >= 4.18 && < 5,

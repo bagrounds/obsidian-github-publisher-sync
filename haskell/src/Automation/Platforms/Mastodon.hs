@@ -32,7 +32,7 @@ import System.Random (randomRIO)
 import Automation.Json ((.=), (.:), eitherDecode, encode, object, withObject)
 import qualified Automation.Json as Json
 import Automation.Retry (HttpCodeException (..), defaultRetryOptions, withRetry)
-import Automation.Types (MastodonCredentials (..), MastodonPostResult (..), Secret (..))
+import Automation.Types (MastodonCredentials (..), MastodonPostResult (..), Secret (..), Url (..))
 
 -- ── URL Parsing ────────────────────────────────────────────────────────
 
@@ -88,7 +88,7 @@ generateUUID = do
 postToMastodon :: Manager -> MastodonCredentials -> Text -> IO (Either Text MastodonPostResult)
 postToMastodon manager MastodonCredentials{..} statusText = do
   idempotencyKey <- generateUUID
-  let apiUrl = mcInstanceUrl <> "/api/v1/statuses"
+  let apiUrl = unUrl mcInstanceUrl <> "/api/v1/statuses"
       bodyJson = encode (object
         [ "status"     .= statusText
         , "visibility" .= ("public" :: Text)
@@ -130,7 +130,7 @@ extractMastodonData fallbackText = withObject "mastodon response" $ \obj -> do
   statusUrl <- obj .: "url"
   pure MastodonPostResult
     { mprId = statusId
-    , mprUrl = statusUrl
+    , mprUrl = Url statusUrl
     , mprText = fallbackText
     }
 
@@ -138,7 +138,7 @@ extractMastodonData fallbackText = withObject "mastodon response" $ \obj -> do
 
 deleteMastodonPost :: Manager -> MastodonCredentials -> Text -> IO (Either Text ())
 deleteMastodonPost manager MastodonCredentials{..} statusId = do
-  let apiUrl = mcInstanceUrl <> "/api/v1/statuses/" <> statusId
+  let apiUrl = unUrl mcInstanceUrl <> "/api/v1/statuses/" <> statusId
   result <- try @SomeException $ do
     initialReq <- parseRequest (T.unpack apiUrl)
     let req =

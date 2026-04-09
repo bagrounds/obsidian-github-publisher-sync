@@ -1,6 +1,7 @@
 module Automation.InternalLinkingTest (tests) where
 
 import Automation.InternalLinking
+import Automation.Types (RelativePath (..), Title (..))
 import Data.Text (Text)
 import qualified Data.Text as T
 import Test.Tasty (TestTree, testGroup)
@@ -86,10 +87,10 @@ escapeRegexTests = testGroup "escapeRegex"
 formatWikilinkTests :: TestTree
 formatWikilinkTests = testGroup "formatWikilink"
   [ testCase "formats basic wikilink" $
-      let entry = ContentEntry "books/test.md" "📖 Test Book" "Test Book"
+      let entry = ContentEntry (RelativePath "books/test.md") (Title "📖 Test Book") (Title "Test Book")
       in assertEqual "" "[[books/test|📖 Test Book]]" (formatWikilink entry)
   , testCase "strips .md from path" $
-      let entry = ContentEntry "books/foo.md" "Foo" "Foo"
+      let entry = ContentEntry (RelativePath "books/foo.md") (Title "Foo") (Title "Foo")
       in assertBool "no .md in link" (not (T.isInfixOf ".md" (formatWikilink entry)))
   ]
 
@@ -209,15 +210,15 @@ maskProtectedRegionsTests = testGroup "maskProtectedRegions"
 contentAlreadyLinksToTests :: TestTree
 contentAlreadyLinksToTests = testGroup "contentAlreadyLinksTo"
   [ testCase "detects wikilink" $
-      let entry = ContentEntry "books/test.md" "Test" "Test"
+      let entry = ContentEntry (RelativePath "books/test.md") (Title "Test") (Title "Test")
           content = "see [[books/test|Test]] here"
       in assertBool "found link" (contentAlreadyLinksTo content entry)
   , testCase "detects path with pipe" $
-      let entry = ContentEntry "books/test.md" "Test" "Test"
+      let entry = ContentEntry (RelativePath "books/test.md") (Title "Test") (Title "Test")
           content = "[[books/test|alias]]"
       in assertBool "found link" (contentAlreadyLinksTo content entry)
   , testCase "returns false when no link" $
-      let entry = ContentEntry "books/test.md" "Test" "Test"
+      let entry = ContentEntry (RelativePath "books/test.md") (Title "Test") (Title "Test")
           content = "no links here at all"
       in assertBool "no link" (not (contentAlreadyLinksTo content entry))
   ]
@@ -227,7 +228,7 @@ contentAlreadyLinksToTests = testGroup "contentAlreadyLinksTo"
 -- --------------------------------------------------------------------------
 
 sampleEntry :: ContentEntry
-sampleEntry = ContentEntry "books/thinking-fast.md" "🤔 Thinking, Fast and Slow" "Thinking, Fast and Slow"
+sampleEntry = ContentEntry (RelativePath "books/thinking-fast.md") (Title "🤔 Thinking, Fast and Slow") (Title "Thinking, Fast and Slow")
 
 findLinkCandidatesTests :: TestTree
 findLinkCandidatesTests = testGroup "findLinkCandidates"
@@ -247,13 +248,13 @@ findLinkCandidatesTests = testGroup "findLinkCandidates"
           candidates = findLinkCandidates [sampleEntry] content masked "reflections/2024-01-01.md"
       in assertEqual "no candidates (already linked)" 0 (length candidates)
   , testCase "prefers longer matches" $
-      let short = ContentEntry "books/short.md" "📖 Fast and Slow" "Fast and Slow"
+      let short = ContentEntry (RelativePath "books/short.md") (Title "📖 Fast and Slow") (Title "Fast and Slow")
           long  = sampleEntry
           content = "I love Thinking, Fast and Slow as a book"
           masked  = content
           candidates = findLinkCandidates [short, long] content masked "reflections/test.md"
       in case candidates of
-        (c:_) -> assertEqual "longer match wins" "books/thinking-fast.md" (ceRelativePath (lcEntry c))
+        (c:_) -> assertEqual "longer match wins" (RelativePath "books/thinking-fast.md") (ceRelativePath (lcEntry c))
         []    -> assertBool "should have found candidates" False
   , testCase "returns empty for no matches" $
       let content = "This has nothing to do with any book"
@@ -268,9 +269,9 @@ findLinkCandidatesTests = testGroup "findLinkCandidates"
 
 dddEntry :: ContentEntry
 dddEntry = ContentEntry
-  "books/domain-driven-design.md"
-  "🧩 Domain-Driven Design: Tackling Complexity in the Heart of Software"
-  "Domain-Driven Design: Tackling Complexity in the Heart of Software"
+  (RelativePath "books/domain-driven-design.md")
+  (Title "🧩 Domain-Driven Design: Tackling Complexity in the Heart of Software")
+  (Title "Domain-Driven Design: Tackling Complexity in the Heart of Software")
 
 subtitleMatchingTests :: TestTree
 subtitleMatchingTests = testGroup "subtitle matching"
@@ -283,7 +284,7 @@ subtitleMatchingTests = testGroup "subtitle matching"
           case candidates of
             (c:_) -> do
               assertEqual "matched main title" "Domain-Driven Design" (lcMatchedText c)
-              assertEqual "correct entry" "books/domain-driven-design.md" (ceRelativePath (lcEntry c))
+              assertEqual "correct entry" (RelativePath "books/domain-driven-design.md") (ceRelativePath (lcEntry c))
             [] -> assertBool "should have candidates" False
   , testCase "prefers full title over main title" $
       let content = "The book Domain-Driven Design: Tackling Complexity in the Heart of Software is excellent"
@@ -302,9 +303,9 @@ subtitleMatchingTests = testGroup "subtitle matching"
       in assertEqual "no candidates" 0 (length candidates)
   , testCase "matches main title in book recommendation list" $
       let entry = ContentEntry
-            "books/a-pattern-language.md"
-            "🏘️ A Pattern Language: Towns, Buildings, Construction"
-            "A Pattern Language: Towns, Buildings, Construction"
+            (RelativePath "books/a-pattern-language.md")
+            (Title "🏘️ A Pattern Language: Towns, Buildings, Construction")
+            (Title "A Pattern Language: Towns, Buildings, Construction")
           content = "Recommended books:\n- A Pattern Language by Christopher Alexander"
           masked  = content
           candidates = findLinkCandidates [entry] content masked "reflections/test.md"
@@ -425,7 +426,7 @@ applyReplacementsTests = testGroup "applyReplacements"
           result = applyReplacements content [candidate] [False]
       in assertEqual "unchanged" content result
   , testCase "handles multiple replacements" $
-      let entry2 = ContentEntry "books/other.md" "📖 Other Book Title" "Other Book Title"
+      let entry2 = ContentEntry (RelativePath "books/other.md") (Title "📖 Other Book Title") (Title "Other Book Title")
           content = "Read Thinking, Fast and Slow and Other Book Title"
           c1 = LinkCandidate sampleEntry "Thinking, Fast and Slow" 5 ""
           c2 = LinkCandidate entry2 "Other Book Title" 33 ""
@@ -438,7 +439,7 @@ applyReplacementsTests = testGroup "applyReplacements"
           result = applyReplacements content [] []
       in assertEqual "unchanged" content result
   , testCase "applies replacement with all-true validations" $
-      let entry = ContentEntry "books/test.md" "📖 Test" "Test"
+      let entry = ContentEntry (RelativePath "books/test.md") (Title "📖 Test") (Title "Test")
           content = "I love Test here"
           c = LinkCandidate entry "Test" 7 ""
           result = applyReplacements content [c] [True]
@@ -464,7 +465,7 @@ buildIdentificationPromptTests = testGroup "buildIdentificationPrompt"
       let prompt = buildIdentificationPrompt "body" [sampleEntry]
       in assertBool "has relative path" (T.isInfixOf "books/thinking-fast.md" prompt)
   , testCase "handles multiple entries" $
-      let entry2 = ContentEntry "books/other.md" "📖 Other" "Other"
+      let entry2 = ContentEntry (RelativePath "books/other.md") (Title "📖 Other") (Title "Other")
           prompt = buildIdentificationPrompt "body" [sampleEntry, entry2]
       in do
           assertBool "has first" (T.isInfixOf "Thinking, Fast and Slow" prompt)
@@ -495,7 +496,7 @@ propertyTests = testGroup "properties"
       in T.length (stripEmojis txt) <= T.length txt
   , testProperty "formatWikilink contains entry title" $ \s ->
       let title = T.pack (s :: String)
-          entry = ContentEntry "books/test.md" title title
+          entry = ContentEntry (RelativePath "books/test.md") (Title title) (Title title)
           wl = formatWikilink entry
       in T.isInfixOf title wl
   , testProperty "applyReplacements with all-false validations returns original" $ \s ->

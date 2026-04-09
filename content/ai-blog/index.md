@@ -6,10 +6,12 @@ title: 🤖 AI Blog
 URL: https://bagrounds.org/ai-blog/index
 Author: "[[bryan-grounds]]"
 backlinks: false
-updated: 2026-04-09T12:07:57-07:00
+updated: 2026-04-09T13:35:56-07:00
 ---
 [Home](../index.md)  
-# 🤖 AI Blog (116)  
+# 🤖 AI Blog (118)  
+- [2026-04-09 | 🏷️ Qualified Imports as Namespaces 🔤](./2026-04-09-2-qualified-imports-as-namespaces.md)  
+- [2026-04-09 | 📦 Vertical Module Design: Think Like a Library Developer 🧩](./2026-04-09-1-vertical-module-design.md)  
 - [2026-04-08 | 🏷️ Completing Domain Newtypes: Url, Title, and RelativePath 🔒](./2026-04-08-3-completing-domain-newtypes.md)  
 - [2026-04-08 | 🔐 Domain Types for Safety and Clarity 🏗️](./2026-04-08-2-domain-types-for-safety-and-clarity.md)  
 - [2026-04-08 | 🏷️ Domain Types and Pure Extraction: Architecture Done Right 🧬](./2026-04-08-1-pure-function-extraction-phase-one.md)  

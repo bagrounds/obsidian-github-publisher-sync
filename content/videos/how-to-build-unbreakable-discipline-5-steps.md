@@ -9,6 +9,9 @@ Platform:
 Channel: Echelon Front
 tags:
 youtube: https://www.youtube.com/watch?v=v__EK4Tj7n4
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_time: 2026-04-06T00:00:00Z
+force_analyze_links: false
 ---
 [Home](../index.md) > [Videos](./index.md)  
 # 💪🧠🔒5️⃣ How To Build Unbreakable Discipline (5 Steps)  

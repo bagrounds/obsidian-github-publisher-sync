@@ -100,7 +100,7 @@ linkExtractionTests = testGroup "extractMarkdownLinks"
       withSystemTempDirectory "social-test" $ \dir -> do
         let body = "See [this](../books/foo.md) and [that](../topics/bar.md)"
             links = extractMarkdownLinks body "reflections/2025-01-01.md" dir
-        assertBool "should find links" (length links >= 1)
+        assertBool "should find links" (not (null links))
 
   , testCase "extracts wiki links with absolute paths" $ do
       withSystemTempDirectory "social-test" $ \dir -> do
@@ -163,7 +163,7 @@ wikiLinkParserTests = testGroup "parseWikiLinks"
         (parseWikiLinks "[[a]][[b]]")
 
   , testProperty "never crashes on arbitrary input" $
-      \(QC.ASCIIString s) -> length (parseWikiLinks s) >= 0
+      \(QC.ASCIIString s) -> seq (parseWikiLinks s) True
   ]
 
 --------------------------------------------------------------------------------

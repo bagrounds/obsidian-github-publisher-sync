@@ -236,7 +236,7 @@ addUpdateLinksToReflectionTests = testGroup "addUpdateLinksToReflection"
         let reflDir = tmpDir </> "reflections"
         createDirectoryIfMissing True reflDir
 
-        TIO.writeFile (reflDir </> "2026-03-28.md") $
+        TIO.writeFile (reflDir </> "2026-03-28.md")
           "---\ntitle: 2026-03-28\n---\n\n## 🔄 Updates\n- [[ai-blog/post|A Post]]\n  - 🖼️ added image\n"
 
         modified <- addUpdateLinksToReflection reflDir "2026-03-28"

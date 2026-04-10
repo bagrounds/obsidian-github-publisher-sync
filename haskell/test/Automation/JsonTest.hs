@@ -239,7 +239,7 @@ optionalFieldTests = testGroup ".:?"
 withObjectTests :: TestTree
 withObjectTests = testGroup "withObject"
   [ testCase "succeeds for Object value" $
-      let result = withObject "test" (\obj -> obj .: "x") (Object [("x", Number 1)]) :: Either String Int
+      let result = withObject "test" (.: "x") (Object [("x", Number 1)]) :: Either String Int
       in result @?= Right 1
   , testCase "fails for non-Object value" $
       let result = withObject "test" (\_ -> Right (42 :: Int)) (String "oops")
@@ -324,15 +324,15 @@ propertyTests = testGroup "properties"
   , testProperty ".= then .: round-trips for Text" $
       \(QC.ASCIIString s) ->
         let txt = T.pack s
-            pairs = [("k" .= txt)]
+            pairs = ["k" .= txt]
         in (pairs .: "k" :: Either String Text) == Right txt
   , testProperty ".:? returns Right Nothing for missing key" $
       \(QC.ASCIIString k) ->
         let pairs = [("__reserved__", String "val")]
             key = T.pack k
-        in case T.null key || key == "__reserved__" of
-          True  -> True
-          False -> (pairs .:? key :: Either String (Maybe Text)) == Right Nothing
+        in if T.null key || key == "__reserved__"
+          then True
+          else (pairs .:? key :: Either String (Maybe Text)) == Right Nothing
   ]
 
 --------------------------------------------------------------------------------

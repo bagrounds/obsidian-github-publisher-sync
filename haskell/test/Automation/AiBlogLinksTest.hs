@@ -240,32 +240,22 @@ propertyTests = testGroup "properties"
       \(QC.ASCIIString prev) (QC.ASCIIString next) ->
         let prev' = filter (\c -> c /= '\n' && c /= '\r') prev
             next' = filter (\c -> c /= '\n' && c /= '\r') next
-            prevM = case null prev' of
-              True  -> Nothing
-              False -> Just (T.pack prev' <> ".md")
-            nextM = case null next' of
-              True  -> Nothing
-              False -> Just (T.pack next' <> ".md")
+            prevM = if null prev' then Nothing else Just (T.pack prev' <> ".md")
+            nextM = if null next' then Nothing else Just (T.pack next' <> ".md")
         in T.isPrefixOf aiBlogNavPrefix (buildNavLine prevM nextM)
   , testProperty "navLinksMatch agrees with buildNavLine" $
       \(QC.ASCIIString prev) (QC.ASCIIString next) ->
         let prev' = filter (\c -> c /= '\n' && c /= '\r') prev
             next' = filter (\c -> c /= '\n' && c /= '\r') next
-            prevM = case null prev' of
-              True  -> Nothing
-              False -> Just (T.pack prev' <> ".md")
-            nextM = case null next' of
-              True  -> Nothing
-              False -> Just (T.pack next' <> ".md")
+            prevM = if null prev' then Nothing else Just (T.pack prev' <> ".md")
+            nextM = if null next' then Nothing else Just (T.pack next' <> ".md")
             navLine = buildNavLine prevM nextM
             content = "header\n" <> navLine <> "\nbody"
         in navLinksMatch content prevM nextM
   , testProperty "updateNavLinks is idempotent" $
       \(QC.ASCIIString prev) ->
         let prev' = filter (\c -> c /= '\n' && c /= '\r') prev
-            prevM = case null prev' of
-              True  -> Nothing
-              False -> Just (T.pack prev' <> ".md")
+            prevM = if null prev' then Nothing else Just (T.pack prev' <> ".md")
             content = aiBlogNavPrefix <> "\n# Post\n\nBody"
             once = updateNavLinks content prevM Nothing
             twice = updateNavLinks once prevM Nothing

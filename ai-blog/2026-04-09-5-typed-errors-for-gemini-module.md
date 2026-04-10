@@ -57,7 +57,7 @@ URL: https://bagrounds.org/ai-blog/2026-04-09-5-typed-errors-for-gemini-module
 * Haskell in Depth by Vitaly Bragilevsky is relevant because it covers advanced Haskell patterns including proper error handling strategies with Either and custom error types.
 
 ### ↔️ Contrasting
-* Release It! by Michael T. Nygaard offers a contrasting perspective focused on runtime resilience patterns like circuit breakers and bulkheads rather than compile-time type safety for error handling.
+* Release It! by Michael T. Nygard offers a contrasting perspective focused on runtime resilience patterns like circuit breakers and bulkheads rather than compile-time type safety for error handling.
 
 ### 🔗 Related
 * Algebra-Driven Design by Sandy Maguire explores how algebraic thinking shapes software design, directly relating to the algebraic data type approach used for the Gemini Error type.

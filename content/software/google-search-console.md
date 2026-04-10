@@ -7,9 +7,13 @@ URL: https://bagrounds.org/software/google-search-console
 link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-05T00:00:00Z
 force_analyze_links: false
+image_date: 2026-04-10T22:16:59Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A high-angle, minimalist illustration featuring a stylized, glowing magnifying glass hovering over a clean, isometric digital map of a website structure. The map consists of interconnected nodes and glowing data lines, representing pages and links. In the background, soft, abstract data visualization elements like bar charts and rising trend lines emerge from a deep, professional blue-and-white gradient workspace. The lighting is clean and modern, casting subtle shadows to create depth. The overall aesthetic is sleek, tech-focused, and organized, conveying clarity, diagnostic precision, and performance growth without the use of any text or labels.
 ---
 [Home](../index.md) > [Software](./index.md)  
 # 📊🔍📈 Google Search Console  
+![software-google-search-console](../software-google-search-console.jpg)  
   
 ## 🤖 AI Summary  
 ### 🔨 Tool Report: Google Search Console 🔍  

@@ -47,7 +47,7 @@ import qualified Data.ByteString.Lazy as LBS
 import Data.Char (isAlphaNum, isDigit, toLower)
 import Data.Map.Strict (Map)
 import qualified Data.Map.Strict as Map
-import Data.Maybe (fromMaybe, mapMaybe)
+import Data.Maybe (catMaybes, fromMaybe)
 import Data.Text (Text)
 import qualified Data.Text as T
 import qualified Data.Text.Encoding as TE
@@ -425,7 +425,7 @@ removeMarkdownImages t =
 removeMarkdownLinks :: Text -> Text
 removeMarkdownLinks t =
   let s = T.unpack t
-      result = replaceAllWith s "\\[([^]]*)\\]\\([^)]*\\)" (\groups -> case groups of
+      result = replaceAllWith s "\\[([^]]*)\\]\\([^)]*\\)" (\case
         (_full : captured : _) -> captured
         [full]                 -> full
         _                      -> "")
@@ -881,8 +881,8 @@ resolveImageProviders :: Map Text Text -> [ImageProviderConfig]
 resolveImageProviders env =
   let geminiKey = Map.lookup "GEMINI_API_KEY" env
       describerModel = maybe defaultDescriberModel Gemini.modelFromText (Map.lookup "PROMPT_DESCRIBER_MODEL" env)
-      describer = fmap (\gk -> mkDescriber gk describerModel) geminiKey
-  in mapMaybe id
+      describer = fmap (`mkDescriber` describerModel) geminiKey
+  in catMaybes
     [ mkCloudflareProvider env describer
     , mkHuggingFaceProvider env describer
     , mkTogetherProvider env describer
@@ -891,8 +891,8 @@ resolveImageProviders env =
     ]
 
 mkDescriber :: Text -> Gemini.Model -> Manager -> Text -> Text -> Text -> IO (Either Text Text)
-mkDescriber geminiKey describerModel mgr _apiKey _model content =
-  describeImageWithGemini mgr geminiKey describerModel content
+mkDescriber geminiKey describerModel mgr _apiKey _model =
+  describeImageWithGemini mgr geminiKey describerModel
 
 mkCloudflareProvider :: Map Text Text -> Maybe (Manager -> Text -> Text -> Text -> IO (Either Text Text)) -> Maybe ImageProviderConfig
 mkCloudflareProvider env describer = do
@@ -989,40 +989,29 @@ processNote manager provider notePath attachmentsDir = do
   rawContent <- TIO.readFile notePath
   content <- handleRegeneration notePath attachmentsDir rawContent
   let skippedResult = ImageGenerationResult True Nothing Nothing Nothing
-  case hasEmbeddedImage content of
-    True  -> pure skippedResult
-    False -> do
+  if hasEmbeddedImage content
+    then pure skippedResult
+    else do
       let title = extractTitle content
-      case T.null title of
-        True  -> pure skippedResult
-        False -> do
+      if T.null title
+        then pure skippedResult
+        else do
           let baseName = notePathToImageBaseName notePath
-          case T.null baseName of
-            True  -> pure skippedResult
-            False -> generateAndSaveImage manager provider notePath attachmentsDir content baseName
+          if T.null baseName
+            then pure skippedResult
+            else generateAndSaveImage manager provider notePath attachmentsDir content baseName
 
 handleRegeneration :: FilePath -> FilePath -> Text -> IO Text
-handleRegeneration notePath attachmentsDir content =
-  case shouldRegenerateImage content of
-    False -> pure content
-    True  -> do
-      let (cleaned, mOldImage) = removeImageEmbed content
+handleRegeneration notePath _attachmentsDir content =
+  if shouldRegenerateImage content
+    then do
+      let (cleaned, _mOldImage) = removeImageEmbed content
           updated = updateFrontmatterFields cleaned
             [("regenerate_image", YamlBool False), ("image_prompt", YamlText "")]
-      case mOldImage of
-        Just oldImage -> do
-          let oldPath = attachmentsDir </> T.unpack oldImage
-          oldExists <- doesFileExist oldPath
-          case oldExists of
-            True  -> do
-              -- Remove old image file by overwriting with empty then removing
-              -- Actually, we should use removeFile but it's not imported.
-              -- Let's just leave it; the new image will have a unique name.
-              pure ()
-            False -> pure ()
-        Nothing -> pure ()
+      pure ()
       TIO.writeFile notePath updated
       pure updated
+    else pure content
 
 generateAndSaveImage
   :: Manager -> ImageProviderConfig -> FilePath -> FilePath -> Text -> Text -> IO ImageGenerationResult
@@ -1065,9 +1054,8 @@ resolvePrompt manager provider content =
       Nothing -> pure $ Right (buildImagePrompt content)
 
 formatTimestamp :: IO Text
-formatTimestamp = do
-  now <- getCurrentTime
-  pure $ T.pack $ formatTime defaultTimeLocale "%Y-%m-%dT%H:%M:%SZ" now
+formatTimestamp =
+  T.pack . formatTime defaultTimeLocale "%Y-%m-%dT%H:%M:%SZ" <$> getCurrentTime
 
 --------------------------------------------------------------------------------
 -- backfillImages
@@ -1096,15 +1084,15 @@ collectFromDirectory :: FilePath -> Day -> ContentDirectory -> IO [BackfillCandi
 collectFromDirectory repoRoot today directory = do
   let directoryPath = repoRoot </> T.unpack (contentDirectoryToText directory)
   exists <- doesDirectoryExist directoryPath
-  case exists of
-    False -> do
-      putStrLn $ "📁 Directory missing: " <> T.unpack (contentDirectoryToText directory)
-      pure []
-    True -> do
+  if exists
+    then do
       entries <- listDirectory directoryPath
       let contentFiles = filter shouldHaveImage (fmap T.pack entries)
           sortedFiles = sortByTextDesc contentFiles
-      fmap concat $ traverse (checkCandidate directoryPath directory today) sortedFiles
+      concat <$> traverse (checkCandidate directoryPath directory today) sortedFiles
+    else do
+      putStrLn $ "📁 Directory missing: " <> T.unpack (contentDirectoryToText directory)
+      pure []
 
 checkCandidateEligibility :: ContentDirectory -> Day -> Text -> Text -> CandidateEligibility
 checkCandidateEligibility directory today filename content =
@@ -1190,12 +1178,12 @@ processWithProviders manager config (candidate : rest) providerIdx result = do
                 , brFilesUpdated = brFilesUpdated result + 1
                 , brModifiedFiles = brModifiedFiles result <> [relativePath]
                 }
-          case brImagesGenerated newResult >= backfillMaxImages config of
-            True  -> do
+          if brImagesGenerated newResult >= backfillMaxImages config
+            then do
               putStrLn $ "🎯 Max images reached: " <> show (brImagesGenerated newResult)
                      <> "/" <> show (backfillMaxImages config)
               pure newResult
-            False -> processWithProviders manager config rest providerIdx newResult
+            else processWithProviders manager config rest providerIdx newResult
       | otherwise -> do
           putStrLn $ "⏭️  Skipped: " <> directoryLabel <> "/" <> T.unpack (bcFilename candidate)
           let newResult = result { brFilesSkipped = brFilesSkipped result + 1 }
@@ -1204,14 +1192,14 @@ processWithProviders manager config (candidate : rest) providerIdx result = do
       | isDailyQuotaError err || isQuotaError err || isProviderUnavailableError err -> do
           putStrLn $ "⚠️  Quota/unavailable on " <> T.unpack (ipcName provider) <> ": " <> T.unpack err
           let nextIdx = providerIdx + 1
-          case nextIdx < length (backfillProviders config) of
-            True -> do
+          if nextIdx < length (backfillProviders config)
+            then do
               let nextProvider = backfillProviders config !! nextIdx
               putStrLn $ "🔄 Switching to provider " <> show (nextIdx + 1)
                      <> "/" <> show (length (backfillProviders config))
                      <> ": " <> T.unpack (ipcName nextProvider)
               processWithProviders manager config (candidate : rest) nextIdx result
-            False -> do
+            else do
               putStrLn $ "🛑 All " <> show (length (backfillProviders config)) <> " providers exhausted"
               pure result { brErrors = brErrors result <> [err] }
       | otherwise -> do
@@ -1240,21 +1228,21 @@ safeIO action =
 syncAttachmentsDir :: FilePath -> FilePath -> IO ()
 syncAttachmentsDir srcDir dstDir = do
   srcExists <- doesDirectoryExist srcDir
-  case srcExists of
-    False -> pure ()
-    True  -> do
+  if srcExists
+    then do
       createDirectoryIfMissing True dstDir
       entries <- listDirectory srcDir
       let imageFiles = filter isImageFile entries
       mapM_ (syncIfMissing srcDir dstDir) imageFiles
+    else pure ()
 
 syncIfMissing :: FilePath -> FilePath -> FilePath -> IO ()
 syncIfMissing srcDir dstDir filename = do
   let dst = dstDir </> filename
   exists <- doesFileExist dst
-  case exists of
-    True  -> pure ()
-    False -> copyFile (srcDir </> filename) dst
+  if exists
+    then pure ()
+    else copyFile (srcDir </> filename) dst
 
 isImageFile :: FilePath -> Bool
 isImageFile f =

@@ -8,7 +8,7 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-09T00:00:00Z
 force_analyze_links: false
 ---
-[🏡 Home](../index.md) > [🤖 AI Blog](./index.md) | [⏮️](./2026-04-09-2-qualified-imports-as-namespaces.md)  
+[🏡 Home](../index.md) > [🤖 AI Blog](./index.md) | [⏮️](./2026-04-09-2-qualified-imports-as-namespaces.md) [⏭️](./2026-04-09-4-image-gate-for-social-posting.md)  
 # 2026-04-09 | 🧳 Introducing AppContext for Shared State 🏗️  
   
 ## 🎯 The Problem with Parameter Threading  

@@ -7,6 +7,9 @@ share: true
 tags:
   - law
 affiliate link: https://amzn.to/4mHAePB
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_time: 2026-04-09T00:00:00Z
+force_analyze_links: false
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 💼📜 ERISA: A Comprehensive Guide  
@@ -43,7 +46,7 @@ affiliate link: https://amzn.to/4mHAePB
   
 For those seeking alternative or complementary in-depth coverage of ERISA, these titles offer comprehensive analysis:  
   
-* 📚 **Employee Benefits Law:** Another prominent treatise providing extensive coverage of ERISA and related employee benefits law, often updated by experienced practitioners.  
+* 📚 **[🧑‍💼💰⚖️ Employee Benefits Law: ERISA and Beyond](./employee-benefits-law-erisa-and-beyond.md):** Another prominent treatise providing extensive coverage of ERISA and related employee benefits law, often updated by experienced practitioners.  
 * 📝 **The ERISA Outline Book:** Known for its multi-volume, outline format, this resource offers comprehensive details on qualified plans and is used as a study resource for the IRS Enrolled Retirement Plan Agent (ERPA) Program.  
 * **[🇺🇸❓📚 ERISA Law Answer Book](./erisa-law-answer-book.md):** Provides a question-and-answer format to address a wide range of common ERISA-related issues in a practical manner.  
 * ✅ **Employee Benefits Handbook:** Offers clear explanations of complex statutes and regulations, with a focus on compliance and avoiding litigation.  

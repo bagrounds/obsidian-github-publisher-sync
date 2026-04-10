@@ -3,6 +3,9 @@ aliases:
   - 👨‍🏫🤖 Andrew Ng
 share: true
 title: 👨‍🏫🤖 Andrew Ng
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_time: 2026-04-09T00:00:00Z
+force_analyze_links: false
 ---
 [Home](../index.md) > [People](./index.md)  
 # 👨‍🏫🤖 Andrew Ng  
@@ -39,7 +42,7 @@ Here are some of his key contributions and roles:
 * 🐍 **"Deep Learning with Python" by François Chollet:** 🐍 This book is excellent for those who want to learn deep learning with a focus on Keras and a more practical, code-oriented approach.  
   
 **🌎 III. Broader AI and Future of AI Books (recommended by Andrew Ng for general understanding and societal impact):**  
-* 🤝 **"Human Compatible: AI and the Problem of Control" by Stuart Russell:** 🤔 This book explores the challenges of developing AI systems that are aligned with human values and interests, and the potential implications for humanity.  
+* 🤝 **"[🤖🧑‍ Human Compatible: Artificial Intelligence and the Problem of Control](../books/human-compatible-artificial-intelligence-and-the-problem-of-control.md): AI and the Problem of Control" by Stuart Russell:** 🤔 This book explores the challenges of developing AI systems that are aligned with human values and interests, and the potential implications for humanity.  
 * **[🧬👥💾 Life 3.0: Being Human in the Age of Artificial Intelligence](../books/life-3-0.md) by Max Tegmark:** ⏳ This book delves into the potential futures of AI and its profound impact on human existence, examining both risks and rewards.  
 * 🎯 **"The Master Algorithm: How the Quest for the Ultimate Learning Machine Will Remake Our World" by Pedro Domingos:** ✨ This book offers an engaging look at the pursuit of a "master algorithm" that could drive artificial general intelligence.  
 * **[🤖⚠️📈 Superintelligence: Paths, Dangers, Strategies](../books/superintelligence-paths-dangers-strategies.md) by Nick Bostrom:** 📜 This philosophical and cautionary book examines the potential paths and hazards that may arise as AI systems surpass human cognitive abilities.  

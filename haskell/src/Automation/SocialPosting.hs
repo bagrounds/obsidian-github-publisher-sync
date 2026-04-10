@@ -729,7 +729,7 @@ postToTwitterPlatform manager env _note postText =
     Just creds -> do
       result <- Twitter.post manager creds postText
       case result of
-        Left err -> pure (Left $ "Twitter post failed: " <> err)
+        Left err -> pure (Left $ "Twitter post failed: " <> T.pack (show err))
         Right (tweetId, _tweetText) -> do
           embedHtml <- Twitter.getEmbedHtml manager tweetId (unSecret (Twitter.tcAccessToken creds))
                          (unSecret (Twitter.tcApiKey creds)) (unSecret (Twitter.tcApiSecret creds))
@@ -754,7 +754,7 @@ postToBlueskyPlatform manager env note postText =
             }
       result <- Bluesky.post manager creds postText (Just linkCard)
       case result of
-        Left err -> pure (Left $ "Bluesky post failed: " <> err)
+        Left err -> pure (Left $ "Bluesky post failed: " <> T.pack (show err))
         Right bpr -> do
           let mDid = Bluesky.extractDid (Bluesky.bprUri bpr)
               mPostId = Bluesky.extractPostId (Bluesky.bprUri bpr)
@@ -778,7 +778,7 @@ postToMastodonPlatform manager env _note postText =
     Just creds -> do
       result <- Mastodon.post manager creds postText
       case result of
-        Left err -> pure (Left $ "Mastodon post failed: " <> err)
+        Left err -> pure (Left $ "Mastodon post failed: " <> T.pack (show err))
         Right mpr -> do
           let postUrl = unUrl (Mastodon.mprUrl mpr)
               mInstance = Mastodon.extractInstanceUrl postUrl

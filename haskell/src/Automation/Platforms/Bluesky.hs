@@ -3,6 +3,7 @@ module Automation.Platforms.Bluesky
   , PostResult (..)
   , EmbedResult (..)
   , LinkCard (..)
+  , Error (HttpError, JsonParseError, ExtractionError, NetworkError)
   , limits
   , displayName
   , sectionHeader
@@ -19,7 +20,7 @@ module Automation.Platforms.Bluesky
   ) where
 
 import Control.Concurrent (threadDelay)
-import Control.Exception (SomeException, throwIO, try)
+import Control.Exception (SomeException, fromException, throwIO, try)
 import Control.Monad (when)
 import qualified Data.ByteString as BS
 import qualified Data.ByteString.Lazy as LBS
@@ -45,12 +46,28 @@ import qualified Automation.Json as Json
 import Automation.Json ((.=), (.:), encode, eitherDecode, object, withObject)
 import Automation.Platform (PlatformLimits (..))
 import Automation.Platforms.OgMetadata (detectContentType, fetchImageAsBuffer)
-import Automation.Retry (HttpCodeException (..), defaultRetryOptions, withRetry)
+import Automation.Retry (HttpCodeException (HttpCodeException), defaultRetryOptions, withRetry)
 import Automation.Secret (Secret (..))
 import Automation.Title (Title, unTitle)
 import Automation.Url (Url, unUrl)
 
 -- ── Domain types ───────────────────────────────────────────────────────
+
+-- | Typed error for Bluesky API operations.
+-- Structured constructors preserve error context and enable pattern matching
+-- for decisions (e.g., retrying on HTTP 404) without string inspection.
+data Error
+  = HttpError Int Text
+  | JsonParseError Text
+  | ExtractionError Text
+  | NetworkError Text
+  deriving (Show, Eq)
+
+classifyException :: SomeException -> Error
+classifyException exception =
+  case fromException @HttpCodeException exception of
+    Just (HttpCodeException code message) -> HttpError code (T.pack message)
+    Nothing -> NetworkError (T.pack (show exception))
 
 data Credentials = Credentials
   { bcIdentifier :: Text
@@ -109,7 +126,7 @@ data AtpSession = AtpSession
   , asAccessToken :: Text
   }
 
-createSession :: Manager -> Credentials -> IO (Either Text AtpSession)
+createSession :: Manager -> Credentials -> IO (Either Error AtpSession)
 createSession manager Credentials{..} = do
   let url = T.unpack (atpBaseUrl <> "com.atproto.server.createSession")
       bodyJson = encode (object
@@ -129,15 +146,15 @@ createSession manager Credentials{..} = do
       throwIO $ HttpCodeException status ("Bluesky login error: " <> show status)
     pure (responseBody response)
   pure $ case result of
-    Left err   -> Left (T.pack (show err))
+    Left err   -> Left (classifyException err)
     Right body -> parseSession body
 
-parseSession :: LBS.ByteString -> Either Text AtpSession
+parseSession :: LBS.ByteString -> Either Error AtpSession
 parseSession body =
   case eitherDecode @Json.Value body of
-    Left err  -> Left (T.pack err)
+    Left err  -> Left (JsonParseError (T.pack err))
     Right val -> case extractSession val of
-      Left err  -> Left (T.pack err)
+      Left err  -> Left (ExtractionError (T.pack err))
       Right s   -> Right s
 
 extractSession :: Json.Value -> Either String AtpSession
@@ -228,7 +245,7 @@ normalizeUrl t
 
 -- ── Blob Upload ────────────────────────────────────────────────────────
 
-uploadBlob :: Manager -> AtpSession -> BS.ByteString -> LBS.ByteString -> IO (Either Text Json.Value)
+uploadBlob :: Manager -> AtpSession -> BS.ByteString -> LBS.ByteString -> IO (Either Error Json.Value)
 uploadBlob manager AtpSession{..} contentType imageData = do
   let url = T.unpack (atpBaseUrl <> "com.atproto.repo.uploadBlob")
   result <- try @SomeException $ withRetry defaultRetryOptions $ do
@@ -247,11 +264,11 @@ uploadBlob manager AtpSession{..} contentType imageData = do
       throwIO $ HttpCodeException status ("Bluesky blob upload error: " <> show status)
     pure (responseBody response)
   pure $ case result of
-    Left err   -> Left (T.pack (show err))
+    Left err   -> Left (classifyException err)
     Right body -> case eitherDecode @Json.Value body of
-      Left err  -> Left (T.pack err)
+      Left err  -> Left (JsonParseError (T.pack err))
       Right val -> case withObject "blob response" (.: "blob") val of
-        Left err   -> Left (T.pack err)
+        Left err   -> Left (ExtractionError (T.pack err))
         Right blob -> Right blob
 
 -- ── Posting ────────────────────────────────────────────────────────────
@@ -261,7 +278,7 @@ post
   -> Credentials
   -> Text
   -> Maybe LinkCard
-  -> IO (Either Text PostResult)
+  -> IO (Either Error PostResult)
 post manager creds postText maybeLinkCard = do
   sessionResult <- createSession manager creds
   case sessionResult of
@@ -273,7 +290,7 @@ createPost
   -> AtpSession
   -> Text
   -> Maybe LinkCard
-  -> IO (Either Text PostResult)
+  -> IO (Either Error PostResult)
 createPost manager session@AtpSession{..} postText maybeLinkCard = do
   now <- getCurrentTime
   let createdAt = T.pack (formatTime defaultTimeLocale "%Y-%m-%dT%H:%M:%S.000Z" now)
@@ -314,14 +331,14 @@ createPost manager session@AtpSession{..} postText maybeLinkCard = do
           throwIO $ HttpCodeException status ("Bluesky create post error: " <> show status)
         pure (responseBody response)
       pure $ case result of
-        Left err   -> Left (T.pack (show err))
+        Left err   -> Left (classifyException err)
         Right body -> parsePostResponse postText body
 
 buildEmbed
   :: Manager
   -> AtpSession
   -> Maybe LinkCard
-  -> IO (Either Text (Maybe Json.Value))
+  -> IO (Either Error (Maybe Json.Value))
 buildEmbed _ _ Nothing = pure (Right Nothing)
 buildEmbed manager session (Just LinkCard{..}) = do
   thumbResult <- case lcThumbUrl of
@@ -344,12 +361,12 @@ buildEmbed manager session (Just LinkCard{..}) = do
             , "external" .= object externalFields
             ]
 
-parsePostResponse :: Text -> LBS.ByteString -> Either Text PostResult
+parsePostResponse :: Text -> LBS.ByteString -> Either Error PostResult
 parsePostResponse postText body =
   case eitherDecode @Json.Value body of
-    Left err  -> Left (T.pack err)
+    Left err  -> Left (JsonParseError (T.pack err))
     Right val -> case extractPostData postText val of
-      Left err  -> Left (T.pack err)
+      Left err  -> Left (ExtractionError (T.pack err))
       Right r   -> Right r
 
 extractPostData :: Text -> Json.Value -> Either String PostResult
@@ -368,14 +385,14 @@ deletePost
   :: Manager
   -> Credentials
   -> Text
-  -> IO (Either Text ())
+  -> IO (Either Error ())
 deletePost manager creds uri = do
   sessionResult <- createSession manager creds
   case sessionResult of
     Left err -> pure (Left err)
     Right session -> deleteRecord manager session uri
 
-deleteRecord :: Manager -> AtpSession -> Text -> IO (Either Text ())
+deleteRecord :: Manager -> AtpSession -> Text -> IO (Either Error ())
 deleteRecord manager AtpSession{..} uri = do
   let (collection, rkey) = parseAtUri uri
       bodyJson = encode (object
@@ -399,7 +416,7 @@ deleteRecord manager AtpSession{..} uri = do
     when (status < 200 || status >= 300) $
       throwIO $ HttpCodeException status ("Bluesky delete error: " <> show status)
   pure $ case result of
-    Left err -> Left (T.pack (show err))
+    Left err -> Left (classifyException err)
     Right () -> Right ()
 
 parseAtUri :: Text -> (Text, Text)
@@ -414,7 +431,7 @@ parseAtUri uri =
 
 -- ── Embed HTML ─────────────────────────────────────────────────────────
 
-fetchOEmbed :: Manager -> Text -> IO (Either Text EmbedResult)
+fetchOEmbed :: Manager -> Text -> IO (Either Error EmbedResult)
 fetchOEmbed manager postUrl = do
   let url = T.unpack oembedBaseUrl
               <> "?url=" <> T.unpack postUrl
@@ -427,15 +444,15 @@ fetchOEmbed manager postUrl = do
       throwIO $ HttpCodeException status ("Bluesky oEmbed API returned " <> show status)
     pure (responseBody response)
   pure $ case result of
-    Left err   -> Left (T.pack (show err))
+    Left err   -> Left (classifyException err)
     Right body -> parseOEmbedHtml body
 
-parseOEmbedHtml :: LBS.ByteString -> Either Text EmbedResult
+parseOEmbedHtml :: LBS.ByteString -> Either Error EmbedResult
 parseOEmbedHtml body =
   case eitherDecode @Json.Value body of
-    Left err  -> Left (T.pack err)
+    Left err  -> Left (JsonParseError (T.pack err))
     Right val -> case withObject "oembed" (.: "html") val of
-      Left err   -> Left (T.pack err)
+      Left err   -> Left (ExtractionError (T.pack err))
       Right html -> Right (EmbedResult html)
 
 generateLocalEmbed :: Text -> Text -> Text -> Text -> Maybe Text -> Text
@@ -481,7 +498,7 @@ tryOEmbedWithRetry manager postUrl fallback attempt maxAttempts = do
   result <- fetchOEmbed manager postUrl
   case result of
     Right (EmbedResult html) -> pure html
-    Left err
-      | attempt + 1 < maxAttempts && "404" `T.isInfixOf` err ->
+    Left (HttpError 404 _)
+      | attempt + 1 < maxAttempts ->
           tryOEmbedWithRetry manager postUrl fallback (attempt + 1) maxAttempts
-      | otherwise -> pure fallback
+    Left _ -> pure fallback

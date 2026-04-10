@@ -1,6 +1,7 @@
 module Automation.Platforms.Mastodon
   ( Credentials (..)
   , PostResult (..)
+  , Error (HttpError, JsonParseError, ExtractionError, NetworkError)
   , limits
   , displayName
   , sectionHeader
@@ -14,7 +15,7 @@ module Automation.Platforms.Mastodon
   , getEmbedHtml
   ) where
 
-import Control.Exception (SomeException, throwIO, try)
+import Control.Exception (SomeException, fromException, throwIO, try)
 import Control.Monad (when)
 import Data.Char (intToDigit)
 import Data.Maybe (fromMaybe)
@@ -37,11 +38,27 @@ import System.Random (randomRIO)
 import Automation.Json ((.=), (.:), eitherDecode, encode, object, withObject)
 import qualified Automation.Json as Json
 import Automation.Platform (PlatformLimits (..))
-import Automation.Retry (HttpCodeException (..), defaultRetryOptions, withRetry)
+import Automation.Retry (HttpCodeException (HttpCodeException), defaultRetryOptions, withRetry)
 import Automation.Secret (Secret (..))
 import Automation.Url (Url, unUrl, mkUrl)
 
 -- ── Domain types ───────────────────────────────────────────────────────
+
+-- | Typed error for Mastodon API operations.
+-- Structured constructors preserve error context and enable pattern matching
+-- for decisions (e.g., checking HTTP status codes) without string inspection.
+data Error
+  = HttpError Int Text
+  | JsonParseError Text
+  | ExtractionError Text
+  | NetworkError Text
+  deriving (Show, Eq)
+
+classifyException :: SomeException -> Error
+classifyException exception =
+  case fromException @HttpCodeException exception of
+    Just (HttpCodeException code message) -> HttpError code (T.pack message)
+    Nothing -> NetworkError (T.pack (show exception))
 
 data Credentials = Credentials
   { mcInstanceUrl :: Url
@@ -119,7 +136,7 @@ generateUUID = do
 
 -- ── Posting ────────────────────────────────────────────────────────────
 
-post :: Manager -> Credentials -> Text -> IO (Either Text PostResult)
+post :: Manager -> Credentials -> Text -> IO (Either Error PostResult)
 post manager Credentials{..} statusText = do
   idempotencyKey <- generateUUID
   let apiUrl = unUrl mcInstanceUrl <> "/api/v1/statuses"
@@ -147,15 +164,15 @@ post manager Credentials{..} statusText = do
         HttpCodeException status ("Mastodon API error: " <> show status)
     pure (responseBody response)
   pure $ case result of
-    Left err -> Left (T.pack (show err))
+    Left err -> Left (classifyException err)
     Right body -> parseMastodonResponse statusText body
 
-parseMastodonResponse :: Text -> LBS.ByteString -> Either Text PostResult
+parseMastodonResponse :: Text -> LBS.ByteString -> Either Error PostResult
 parseMastodonResponse fallbackText body =
   case eitherDecode @Json.Value body of
-    Left err -> Left (T.pack err)
+    Left err -> Left (JsonParseError (T.pack err))
     Right val -> case extractMastodonData fallbackText val of
-      Left err -> Left (T.pack err)
+      Left err -> Left (ExtractionError (T.pack err))
       Right r -> Right r
 
 extractMastodonData :: Text -> Json.Value -> Either String PostResult
@@ -172,7 +189,7 @@ extractMastodonData fallbackText = withObject "mastodon response" $ \obj -> do
 
 -- ── Deleting ───────────────────────────────────────────────────────────
 
-deletePost :: Manager -> Credentials -> Text -> IO (Either Text ())
+deletePost :: Manager -> Credentials -> Text -> IO (Either Error ())
 deletePost manager Credentials{..} statusId = do
   let apiUrl = unUrl mcInstanceUrl <> "/api/v1/statuses/" <> statusId
   result <- try @SomeException $ do
@@ -189,12 +206,12 @@ deletePost manager Credentials{..} statusId = do
       throwIO $
         HttpCodeException status ("Mastodon delete error: " <> show status)
   pure $ case result of
-    Left err -> Left (T.pack (show err))
+    Left err -> Left (classifyException err)
     Right () -> Right ()
 
 -- ── Embed HTML ─────────────────────────────────────────────────────────
 
-fetchOEmbed :: Manager -> Text -> Text -> IO (Either Text Text)
+fetchOEmbed :: Manager -> Text -> Text -> IO (Either Error Text)
 fetchOEmbed manager instanceUrl statusUrl = do
   let url = T.unpack instanceUrl <> "/api/oembed?url=" <> T.unpack statusUrl
   result <- try @SomeException $ do
@@ -206,15 +223,15 @@ fetchOEmbed manager instanceUrl statusUrl = do
         HttpCodeException status ("Mastodon oEmbed API returned " <> show status)
     pure (responseBody response)
   pure $ case result of
-    Left err -> Left (T.pack (show err))
+    Left err -> Left (classifyException err)
     Right body -> parseOEmbedHtml body
 
-parseOEmbedHtml :: LBS.ByteString -> Either Text Text
+parseOEmbedHtml :: LBS.ByteString -> Either Error Text
 parseOEmbedHtml body =
   case eitherDecode @Json.Value body of
-    Left err -> Left (T.pack err)
+    Left err -> Left (JsonParseError (T.pack err))
     Right val -> case withObject "oembed" (.: "html") val of
-      Left err -> Left (T.pack err)
+      Left err -> Left (ExtractionError (T.pack err))
       Right html -> Right html
 
 generateLocalEmbed :: Text -> Text

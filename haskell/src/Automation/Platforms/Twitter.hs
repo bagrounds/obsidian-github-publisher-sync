@@ -1,6 +1,7 @@
 module Automation.Platforms.Twitter
   ( Credentials (..)
   , PostResult (..)
+  , Error (HttpError, JsonParseError, ExtractionError, NetworkError)
   , limits
   , twitterHandle
   , displayName
@@ -12,7 +13,7 @@ module Automation.Platforms.Twitter
   , getEmbedHtml
   ) where
 
-import Control.Exception (SomeException, throwIO, try)
+import Control.Exception (SomeException, fromException, throwIO, try)
 import Control.Monad (when)
 import Crypto.Hash (SHA1)
 import Crypto.MAC.HMAC (HMAC, hmac)
@@ -44,8 +45,24 @@ import Automation.Html (formatDisplayDate, textToHtml)
 import Automation.Json ((.=), (.:), (.:?), eitherDecode, encode, object, withObject)
 import qualified Automation.Json as Json
 import Automation.Platform (PlatformLimits (..))
-import Automation.Retry (HttpCodeException (..), defaultRetryOptions, withRetry)
+import Automation.Retry (HttpCodeException (HttpCodeException), defaultRetryOptions, withRetry)
 import Automation.Secret (Secret (..))
+
+-- | Typed error for Twitter API operations.
+-- Structured constructors preserve error context and enable pattern matching
+-- for decisions (e.g., checking HTTP status codes) without string inspection.
+data Error
+  = HttpError Int Text
+  | JsonParseError Text
+  | ExtractionError Text
+  | NetworkError Text
+  deriving (Show, Eq)
+
+classifyException :: SomeException -> Error
+classifyException exception =
+  case fromException @HttpCodeException exception of
+    Just (HttpCodeException code message) -> HttpError code (T.pack message)
+    Nothing -> NetworkError (T.pack (show exception))
 
 data Credentials = Credentials
   { tcApiKey :: Secret
@@ -168,7 +185,7 @@ buildOAuthHeader Credentials {..} httpMethod baseUrl = do
 
 -- ── Posting ────────────────────────────────────────────────────────────
 
-post :: Manager -> Credentials -> Text -> IO (Either Text (Text, Text))
+post :: Manager -> Credentials -> Text -> IO (Either Error (Text, Text))
 post manager creds tweetText = do
   idempotencyKey <- generateUUID
   let bodyJson = encode (object ["text" .= tweetText])
@@ -192,15 +209,15 @@ post manager creds tweetText = do
         HttpCodeException status ("Twitter API error: " <> show status)
     pure (responseBody response)
   pure $ case result of
-    Left err -> Left (T.pack (show err))
+    Left err -> Left (classifyException err)
     Right body -> parseTweetResponse tweetText body
 
-parseTweetResponse :: Text -> LBS.ByteString -> Either Text (Text, Text)
+parseTweetResponse :: Text -> LBS.ByteString -> Either Error (Text, Text)
 parseTweetResponse fallbackText body =
   case eitherDecode @Json.Value body of
-    Left err -> Left (T.pack err)
+    Left err -> Left (JsonParseError (T.pack err))
     Right val -> case extractTweetData fallbackText val of
-      Left err -> Left (T.pack err)
+      Left err -> Left (ExtractionError (T.pack err))
       Right r -> Right r
 
 extractTweetData :: Text -> Json.Value -> Either String (Text, Text)
@@ -216,7 +233,7 @@ extractTweetData fallbackText = withObject "tweet response" $ \obj -> do
 
 -- ── Deleting ───────────────────────────────────────────────────────────
 
-deletePost :: Manager -> Credentials -> Text -> IO (Either Text ())
+deletePost :: Manager -> Credentials -> Text -> IO (Either Error ())
 deletePost manager creds tweetId = do
   let url = tweetsApiUrl <> "/" <> tweetId
   result <- try @SomeException $ do
@@ -234,12 +251,12 @@ deletePost manager creds tweetId = do
       throwIO $
         HttpCodeException status ("Twitter delete error: " <> show status)
   pure $ case result of
-    Left err -> Left (T.pack (show err))
+    Left err -> Left (classifyException err)
     Right () -> Right ()
 
 -- ── Embed HTML ─────────────────────────────────────────────────────────
 
-fetchOEmbed :: Manager -> Text -> IO (Either Text Text)
+fetchOEmbed :: Manager -> Text -> IO (Either Error Text)
 fetchOEmbed manager tweetUrl = do
   let url =
         oembedBaseUrl
@@ -255,15 +272,15 @@ fetchOEmbed manager tweetUrl = do
         HttpCodeException status ("oEmbed API returned " <> show status)
     pure (responseBody response)
   pure $ case result of
-    Left err -> Left (T.pack (show err))
+    Left err -> Left (classifyException err)
     Right body -> parseOEmbedHtml body
 
-parseOEmbedHtml :: LBS.ByteString -> Either Text Text
+parseOEmbedHtml :: LBS.ByteString -> Either Error Text
 parseOEmbedHtml body =
   case eitherDecode @Json.Value body of
-    Left err -> Left (T.pack err)
+    Left err -> Left (JsonParseError (T.pack err))
     Right val -> case withObject "oembed" (.: "html") val of
-      Left err -> Left (T.pack err)
+      Left err -> Left (ExtractionError (T.pack err))
       Right html -> Right html
 
 generateLocalEmbed :: Text -> Text -> Text -> Text -> Text

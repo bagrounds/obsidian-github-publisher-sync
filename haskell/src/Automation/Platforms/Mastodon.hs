@@ -2,6 +2,9 @@ module Automation.Platforms.Mastodon
   ( Credentials (..)
   , PostResult (..)
   , Error (HttpError, JsonParseError, ExtractionError, NetworkError)
+  , classifyException
+  , parseMastodonResponse
+  , parseOEmbedHtml
   , limits
   , displayName
   , sectionHeader

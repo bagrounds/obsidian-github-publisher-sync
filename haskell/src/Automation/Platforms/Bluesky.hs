@@ -4,6 +4,10 @@ module Automation.Platforms.Bluesky
   , EmbedResult (..)
   , LinkCard (..)
   , Error (HttpError, JsonParseError, ExtractionError, NetworkError)
+  , classifyException
+  , parseSession
+  , parsePostResponse
+  , parseOEmbedHtml
   , limits
   , displayName
   , sectionHeader

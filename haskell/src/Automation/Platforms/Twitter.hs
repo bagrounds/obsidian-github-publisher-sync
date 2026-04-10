@@ -2,6 +2,9 @@ module Automation.Platforms.Twitter
   ( Credentials (..)
   , PostResult (..)
   , Error (HttpError, JsonParseError, ExtractionError, NetworkError)
+  , classifyException
+  , parseTweetResponse
+  , parseOEmbedHtml
   , limits
   , twitterHandle
   , displayName

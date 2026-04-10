@@ -137,6 +137,7 @@ test-suite automation-tests
     Automation.InternalLinkingTest
     Automation.BlueskyTest
     Automation.MastodonTest
+    Automation.TwitterTest
     Automation.SocialPostingTest
     Automation.DailyUpdatesTest
     Automation.StaticGiscusTest

@@ -6,9 +6,13 @@ title: 📋⚖️ Rules
 link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-04T00:00:00Z
 force_analyze_links: false
+image_date: 2026-04-10T06:44:10Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A minimalist, clean illustration featuring a stylized, glowing compass resting on a complex blueprint of geometric shapes and pathways. The composition uses a sophisticated color palette of deep navy, slate gray, and soft gold accents. Surrounding the compass are several translucent, interconnected crystalline structures that represent decision-making nodes, with thin, glowing lines weaving between them to signify the creation of a structured system. The style is modern, abstract, and professional, utilizing soft, cinematic lighting to create a sense of clarity and purpose. The overall aesthetic is uncluttered and architectural, emphasizing the concept of building a framework for life through thoughtful, intentional design.
 ---
 [Home](../index.md) > [Topics](./index.md)  
 # 📋⚖️ Rules  
+![topics-rules](../topics-rules.jpg)  
 ## Why do we make rules?  
 - Life is complicated and full of decisions to make.  
 - When should I eat, sleep, work, play, speak, act, plan?  

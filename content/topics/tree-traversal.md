@@ -6,9 +6,13 @@ title: 🌳➡️ Tree Traversal
 link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-04T00:00:00Z
 force_analyze_links: false
+image_date: 2026-04-10T13:37:04Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A stylized, minimalist data structure diagram centered against a soft, dark-themed background. A symmetrical binary tree is depicted with thin, glowing geometric nodes connected by delicate, branching lines. One path through the tree is highlighted in a vibrant, contrasting color (such as electric blue or amber), showing a continuous, winding line that snakes through the nodes to represent a traversal trace. The aesthetic is clean and modern, using a mix of matte surfaces and soft neon highlights to suggest a fusion of organic tree imagery and structured computer science. The composition is balanced, with subtle, floating particles or light flares around the nodes to add depth and a sense of technical sophistication.
 ---
 [Home](../index.md) > [Topics](./index.md)  
 # 🌳➡️ Tree Traversal  
+![topics-tree-traversal](../topics-tree-traversal.jpg)  
 From Wikipedia: [Tree traversal](https://wikipedia.org/wiki/Tree_traversal)  
 - In-order, pre-order, and post-order are 3 common forms of depth-first tree traversal.  
 - While traversing a non-linear data structure (such as a tree) we have choices for which node to visit next.  

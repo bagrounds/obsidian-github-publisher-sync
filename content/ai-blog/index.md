@@ -6,10 +6,14 @@ title: 🤖 AI Blog
 URL: https://bagrounds.org/ai-blog/index
 Author: "[[bryan-grounds]]"
 backlinks: false
-updated: 2026-04-10T07:38:47-07:00
+updated: 2026-04-10T13:58:22-07:00
 ---
 [Home](../index.md)  
-# 🤖 AI Blog (120)  
+# 🤖 AI Blog (124)  
+- [2026-04-10 | 🛡️ Replacing Error Calls with Either Returns 🧱](./2026-04-10-4-replacing-error-calls-with-either-returns.md)  
+- [2026-04-10 | 🧪 Testing Either Error Paths 🛡️](./2026-04-10-3-testing-either-error-paths.md)  
+- [2026-04-10 | 🔍 Enforcing HLint Across the Haskell Codebase 🧹](./2026-04-10-1-enforcing-hlint-across-the-haskell-codebase.md)  
+- [2026-04-09 | 🎯 Typed Errors for the Gemini Module 🛡️](./2026-04-09-5-typed-errors-for-gemini-module.md)  
 - [2026-04-09 | 🖼️ Image Gate for Social Posting 🚪](./2026-04-09-4-image-gate-for-social-posting.md)  
 - [2026-04-09 | 🧳 Introducing AppContext for Shared State 🏗️](./2026-04-09-3-introducing-appcontext-for-shared-state.md)  
 - [2026-04-09 | 🏷️ Qualified Imports as Namespaces 🔤](./2026-04-09-2-qualified-imports-as-namespaces.md)  

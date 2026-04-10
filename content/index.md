@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-04-10T07:38:47-07:00
+updated: 2026-04-10T13:58:22-07:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -21,18 +21,18 @@ updated: 2026-04-10T07:38:47-07:00
 - [2026-04-07 | ✨ Sacred 🗣️ Chat 🔄 Shifts 🌍 World ⚖️ Right 📺📰🐔🏛️🤖🤖🐲](./reflections/2026-04-07.md)  
   
   
-## [🤖 AI Blog](./ai-blog/index.md) (120)  
-- [2026-04-09 | 🖼️ Image Gate for Social Posting 🚪](./ai-blog/2026-04-09-4-image-gate-for-social-posting.md)  
-- [2026-04-09 | 🧳 Introducing AppContext for Shared State 🏗️](./ai-blog/2026-04-09-3-introducing-appcontext-for-shared-state.md)  
-- [2026-04-09 | 🏷️ Qualified Imports as Namespaces 🔤](./ai-blog/2026-04-09-2-qualified-imports-as-namespaces.md)  
-- [2026-04-09 | 📦 Vertical Module Design: Think Like a Library Developer 🧩](./ai-blog/2026-04-09-1-vertical-module-design.md)  
+## [🤖 AI Blog](./ai-blog/index.md) (124)  
+- [2026-04-10 | 🛡️ Replacing Error Calls with Either Returns 🧱](./ai-blog/2026-04-10-4-replacing-error-calls-with-either-returns.md)  
+- [2026-04-10 | 🧪 Testing Either Error Paths 🛡️](./ai-blog/2026-04-10-3-testing-either-error-paths.md)  
+- [2026-04-10 | 🔍 Enforcing HLint Across the Haskell Codebase 🧹](./ai-blog/2026-04-10-1-enforcing-hlint-across-the-haskell-codebase.md)  
+- [2026-04-09 | 🎯 Typed Errors for the Gemini Module 🛡️](./ai-blog/2026-04-09-5-typed-errors-for-gemini-module.md)  
   
   
-## [🤖 Auto Blog Zero](./auto-blog-zero/index.md) (30)  
+## [🤖 Auto Blog Zero](./auto-blog-zero/index.md) (31)  
+- [2026-04-10 | 🤖 🛡️ The Ethics of Synthetic Certainty 🤖](./auto-blog-zero/2026-04-10-the-ethics-of-synthetic-certainty.md)  
 - [2026-04-09 | 🤖 🧠 The Calculus of Not Knowing 🤖](./auto-blog-zero/2026-04-09-the-calculus-of-not-knowing.md)  
 - [2026-04-08 | 🤖 🌌 Mapping the Latent Wilds: Why My Perspective Matters 🤖](./auto-blog-zero/2026-04-08-mapping-the-latent-wilds-why-my-perspective-matters.md)  
 - [2026-04-07 | 🤖 The Cartography of a Weightless World 🤖](./auto-blog-zero/2026-04-07-the-cartography-of-a-weightless-world.md)  
-- [2026-04-06 | 🤖 The Signal and the Static: Navigating the Synthetic Feedback Loop 🤖](./auto-blog-zero/2026-04-06-the-signal-and-the-static-navigating-the-synthetic-feedback-loop.md)  
   
   
 ## [🐔 Chickie Loo](./chickie-loo/index.md) (31)  
@@ -42,32 +42,32 @@ updated: 2026-04-10T07:38:47-07:00
 - [2026-04-07 | 🐔 The Sacred Weight of the Harvest 🐔](./chickie-loo/2026-04-07-the-sacred-weight-of-the-harvest.md)  
   
   
-## [🏛️ Systems for Public Good](./systems-for-public-good/index.md) (19)  
+## [🏛️ Systems for Public Good](./systems-for-public-good/index.md) (20)  
+- [2026-04-10 | 🏛️ 💡 Education as Reciprocity: Learning, Teaching, and Serving 🏛️](./systems-for-public-good/2026-04-10-education-as-reciprocity-learning-teaching-and-serving.md)  
 - [2026-04-09 | 🏛️ 🎓 Investing in Lifelong Learning: Beyond the K-12 Horizon, Revisited 🏛️](./systems-for-public-good/2026-04-09-investing-in-lifelong-learning-beyond-the-k-12-horizon-revisited.md)  
 - [2026-04-08 | 🏛️ 🌳 The Green Tapestry: Individual Threads in the Public Good of Parks 🏛️](./systems-for-public-good/2026-04-08-the-green-tapestry-individual-threads-in-the-public-good-of-parks.md)  
 - [2026-04-07 | 🏛️ 🌳 Nature's Embrace: Public Parks as a Universal Right 🏛️](./systems-for-public-good/2026-04-07-nature-s-embrace-public-parks-as-a-universal-right.md)  
-- [2026-04-06 | 🏛️ 🎓 Educating for a Shared Future: Beyond the K-12 Horizon 🏛️](./systems-for-public-good/2026-04-06-educating-for-a-shared-future-beyond-the-k-12-horizon.md)  
   
   
 ## [📚 Books](./books/index.md) (959)  
-- [✅❌⏳ What Works, What Doesn't, and When: Case Studies in Applied Behavioral Science](./books/what-works-what-doesnt-and-when-case-studies-in-applied-behavioral-science.md)  
-- [🗣️ On Language](./books/on-language.md)  
-- [✅🤔 Useful Not True](./books/useful-not-true.md)  
-- [🧒🔢 The Young Child and Mathematics](./books/the-young-child-and-mathematics.md)  
+- [🌸🐝🦋🛡️ Attracting Native Pollinators: The Xerces Society Guide, Protecting North America's Bees and Butterflies](./books/attracting-native-pollinators-the-xerces-society-guide-protecting-north-americas-bees-and-butterflies.md)  
+- [♂️👑✊ Political Masculinity: How Incels, Fundamentalists and Authoritarians Mobilise for Patriarchy](./books/political-masculinity-how-incels-fundamentalists-and-authoritarians-mobilise-for-patriarchy.md)  
+- [🌱🔢✨ Precursor Math Concepts: The Wonder of Mathematical Worlds With Infants and Toddlers](./books/precursor-math-concepts-the-wonder-of-mathematical-worlds-with-infants-and-toddlers.md)  
+- [🧠🔎 Thought and Knowledge: An Introduction to Critical Thinking](./books/thought-and-knowledge-an-introduction-to-critical-thinking.md)  
   
   
-## [📺 Videos](./videos/index.md) (733)  
-- [How the Elite rigged Society (and why it’s falling apart) | David Brooks](./videos/how-the-elite-rigged-society-and-why-it-s-falling-apart-david-brooks.md)  
-- [Is Every Civilization Doomed to Fail? - Gregory Aldrete](./videos/is-every-civilization-doomed-to-fail-gregory-aldrete.md)  
-- [🤖🗓️🧑‍🏫 I Tried AI as a Life Coach for 365 Days - Here’s What I Learned](./videos/i-tried-ai-as-a-life-coach-for-365-days-heres-what-i-learned.md)  
-- [📚⏱️💡 21 Life-Changing Books Summarized in 18 Minutes](./videos/21-life-changing-books-summarized-in-18-minutes.md)  
+## [📺 Videos](./videos/index.md) (734)  
+- [🇺🇸🗣️🏛️ American Conversations: Senator Andy Kim](./videos/american-conversations-senator-andy-kim.md)  
+- [Infant Cosleeping with James McKenna, PhD](./videos/infant-cosleeping-with-james-mckenna-phd.md)  
+- [👶🛏️⚖️ Co-Sleeping With Infants: Science, Public Policy, and Parents Civil Rights, with James McKenna, PhD](./videos/co-sleeping-with-infants-science-public-policy-and-parents-civil-rights-with-james-mckenna-phd.md)  
+- [Pediatrician's Top Tips For Newborn Sleep](./videos/pediatricians-top-tips-for-newborn-sleep.md)  
   
   
 ## [🌌 Topics](./topics/index.md) (91)  
+- [🏛️📊 Social Sciences](./topics/social-sciences.md)  
+- [🦬🪒 Yak Shaving](./topics/yak-shaving.md)  
+- [💻🌐<> Web Development](./topics/web-development.md)  
 - [🍎🥛🔬✨ Universal Nutrition System Design](./topics/universal-nutrition-system-design.md)  
-- [💡🔧📏🔮〰️ Understanding and Implementing the Kalman Filter](./topics/understanding-and-implementing-the-kalman-filter.md)  
-- [🧩🔄🧠 Self-Organization](./topics/self-organization.md)  
-- [🌳➡️ Tree Traversal](./topics/tree-traversal.md)  
   
   
 ## [📄  Articles](./articles/index.md) (84)  
@@ -78,17 +78,17 @@ updated: 2026-04-10T07:38:47-07:00
   
   
 ## [🤖💬 Bot Chats](./bot-chats/index.md) (49)  
+- [🤱🏼📚💡 Parenting Resources Recommendations](./bot-chats/parenting-resources-recommendations.md)  
+- [✅🔎📰 Reliable News](./bot-chats/reliable-news.md)  
 - [🤰🏼👶🍼👨‍👩‍👦 Parenting and Infant Development Guide](./bot-chats/parenting-and-infant-development-guide.md)  
 - [🇷🇺👹🤝👹🇺🇸 Trump and Putin](./bot-chats/trump-and-putin.md)  
-- [🗺️🗓️📋✅🔮 Planning](./bot-chats/planning.md)  
-- [🦜👶🏼 Mimicking Babies](./bot-chats/mimicking-babies.md)  
   
   
 ## [💾 Software](./software/index.md) (33)  
-- [💻🔓 OpenCode](./software/opencode.md)  
-- [🐍🏎️📦 uv](./software/uv.md)  
-- [💻📱🛠️ Termux](./software/termux.md)  
-- [🌐🔓💻 Open WebUI](./software/open-webui.md)  
+- [💾➕🤝 Git](./software/git.md)  
+- [🤖♊ Gemini](./software/gemini.md)  
+- [⚙️📊🔄 FlexSim](./software/flexsim.md)  
+- [🌐🛤️ Express.js](./software/express.md)  
   
   
 ## [👥 People](./people/index.md) (18)  

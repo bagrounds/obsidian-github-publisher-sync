@@ -9,6 +9,9 @@ Platform:
 Channel: FREE – Forum for Real Economic Emancipation
 tags:
 youtube: https://youtu.be/EZFYkUBLD7A
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_time: 2026-04-09T00:00:00Z
+force_analyze_links: false
 ---
 [Home](../index.md) > [Videos](./index.md)  
 # 💰🚫➡️🗺️ Escape from Capitalism | Clara Mattei & Richard Wolff  
@@ -30,7 +33,7 @@ youtube: https://youtu.be/EZFYkUBLD7A
   
 * 🏛️ The claim that liberal democracies use legal equality to mask economic coercion mirrors arguments found in The Origin of the Family, Private Property and the State by Friedrich Engels, published by Charles H. Kerr & Co.  
 * 🌐 Perspectives on global wealth being tied to underdevelopment in the south align with the dependency theory explored in Open Veins of Latin America by Eduardo Galeano, published by Monthly Review Press.  
-* 📉 Critics of the view that austerity is a structural necessity might point to Keynesian economic theories which suggest that state spending can stabilize capitalism, as discussed in The General Theory of Employment, Interest, and Money by John Maynard Keynes, published by Palgrave Macmillan.  
+* 📉 Critics of the view that austerity is a structural necessity might point to Keynesian economic theories which suggest that state spending can stabilize capitalism, as discussed in [🧑‍💼🏦💸 The General Theory of Employment, Interest, and Money](../books/the-general-theory-of-employment-interest-and-money.md) by John Maynard Keynes, published by Palgrave Macmillan.  
 * 🔍 To better understand these topics, one should explore the history of general strikes and the practical challenges of forming worker-led cooperatives.  
   
 ## ❓ Frequently Asked Questions (FAQ)  

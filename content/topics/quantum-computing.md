@@ -7,9 +7,13 @@ URL: https://bagrounds.org/topics/quantum-computing
 link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-01T00:00:00Z
 force_analyze_links: false
+image_date: 2026-04-10T05:08:04Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A sleek, minimalist illustration featuring a glowing, translucent sphere suspended in a dark, vacuum-like space. Inside the sphere, intricate golden geometric lines intersect to form a complex, crystalline lattice, representing a qubit. Wisps of ethereal, iridescent light orbit the core, symbolizing superposition and quantum entanglement. The background is a deep, moody navy gradient, dotted with faint, star-like nodes connected by thin, electric-blue filaments that suggest a vast, interconnected network. The overall aesthetic is futuristic and clean, utilizing high-contrast lighting to emphasize the glowing core, evoking a sense of mystery, advanced technology, and scientific discovery.
 ---
 [Home](../index.md) > [Topics](./index.md)  
 # ⚛️ Quantum Computing  
+![topics-quantum-computing](../topics-quantum-computing.jpg)  
 ## 🤖 AI Summary  
 ### ⚛️ What Is It?  
   

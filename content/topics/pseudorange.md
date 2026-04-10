@@ -7,9 +7,13 @@ URL: https://bagrounds.org/topics/pseudorange
 link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-06T00:00:00Z
 force_analyze_links: false
+image_date: 2026-04-10T03:10:06Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A stylized, isometric illustration of a satellite orbiting Earth. From the satellite, several glowing, translucent pulses of light travel downward toward a smartphone positioned on the surface of a blue, grid-mapped globe. Each beam is slightly refracted or blurred as it nears the device, representing the concept of a pseudo distance. The background is a deep, dark space gradient with subtle geometric constellations. The aesthetic is clean and modern, using a color palette of electric blue, crisp white, and soft violet to emphasize the technical nature of GNSS signaling and the mathematical precision of the measurement. Floating, faint wireframe circles surround the contact point on Earth, symbolizing the intersection of multiple range calculations.
 ---
 [Home](../index.md) > [Topics](./index.md)  
 # 🛰️📐≈ Pseudorange  
+![topics-pseudorange](../topics-pseudorange.jpg)  
 ## 🤖 AI Summary  
 ### 👉 What Is It?  
   

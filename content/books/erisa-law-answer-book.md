@@ -7,6 +7,9 @@ share: true
 tags:
   - law
 affiliate link: https://amzn.to/4kRju6V
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_time: 2026-04-09T00:00:00Z
+force_analyze_links: false
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🇺🇸❓📚 ERISA Law Answer Book  
@@ -61,7 +64,7 @@ The book is generally available in hardbound format and sometimes with online ac
 ### ✨ Creatively Related Books (Broader Themes or Underlying Concepts)  
   
 * 🧠 ***[Thinking, Fast and Slow](./thinking-fast-and-slow.md)*** by Daniel Kahneman: Explores how people make decisions, which can offer insights into participant behavior regarding retirement savings and investment choices within ERISA plans.  
-* 📉 ***The Big Short: Inside the Doomsday Machine*** by Michael Lewis: While focused on the financial crisis, this book illustrates the complexities and potential pitfalls of complex financial instruments and regulations, offering a parallel to the intricate nature of ERISA and the financial structures it governs.  
+* 📉 ***[💰💥📉 The Big Short: Inside the Doomsday Machine](./the-big-short-inside-the-doomsday-machine.md)*** by Michael Lewis: While focused on the financial crisis, this book illustrates the complexities and potential pitfalls of complex financial instruments and regulations, offering a parallel to the intricate nature of ERISA and the financial structures it governs.  
 * 🏢 ***Compliance Handbook (Industry Specific)***: A compliance handbook from a heavily regulated industry (e.g., healthcare, finance) could offer a comparative perspective on navigating complex regulatory landscapes, similar to the challenges presented by ERISA.  
 * 📈 ***Behavioral Economics***: Books in this field explore how psychological factors influence economic decisions, relevant to understanding how plan design and communication can impact participant savings and investment behavior under ERISA.  
   

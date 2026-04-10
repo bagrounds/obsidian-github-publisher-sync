@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-04-09T18:34:38-07:00
+updated: 2026-04-10T07:38:47-07:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -14,18 +14,18 @@ updated: 2026-04-09T18:34:38-07:00
 🔊 Listen to any page with built in audio control.  
 💬 Comment on any page with your GitHub account.  
   
-## [🪞 Reflections](./reflections/index.md) ~ Blog (511)  
-- [2026-04-09](./reflections/2026-04-09.md)  
+## [🪞 Reflections](./reflections/index.md) ~ Blog (512)  
+- [2026-04-10](./reflections/2026-04-10.md)  
+- [2026-04-09 | 💡 Make 🫂 Shared 🎓 Learning 🎯 Qualified 📐 Design 🚪 Gate 🤖 Knowing 💬 Chat 🏡 Home 📺🐔🤖🏛️🤖🐲](./reflections/2026-04-09.md)  
 - [2026-04-08 | ⚙️ Solved 🌿 Growth 🌱 Matters 🏛️ Public 🧬 Architecture 🏗️ Clarity 📺🐔🤖🏛️🤖🐲](./reflections/2026-04-08.md)  
 - [2026-04-07 | ✨ Sacred 🗣️ Chat 🔄 Shifts 🌍 World ⚖️ Right 📺📰🐔🏛️🤖🤖🐲](./reflections/2026-04-07.md)  
-- [2026-04-06 | 🌳 Wood 💡 Choice ☀️ Monday 🤖 Signal 🏛️ Future 🔧 Capacity 📺🐔🤖🏛️🤖🐲](./reflections/2026-04-06.md)  
   
   
-## [🤖 AI Blog](./ai-blog/index.md) (119)  
+## [🤖 AI Blog](./ai-blog/index.md) (120)  
+- [2026-04-09 | 🖼️ Image Gate for Social Posting 🚪](./ai-blog/2026-04-09-4-image-gate-for-social-posting.md)  
 - [2026-04-09 | 🧳 Introducing AppContext for Shared State 🏗️](./ai-blog/2026-04-09-3-introducing-appcontext-for-shared-state.md)  
 - [2026-04-09 | 🏷️ Qualified Imports as Namespaces 🔤](./ai-blog/2026-04-09-2-qualified-imports-as-namespaces.md)  
 - [2026-04-09 | 📦 Vertical Module Design: Think Like a Library Developer 🧩](./ai-blog/2026-04-09-1-vertical-module-design.md)  
-- [2026-04-08 | 🏷️ Completing Domain Newtypes: Url, Title, and RelativePath 🔒](./ai-blog/2026-04-08-3-completing-domain-newtypes.md)  
   
   
 ## [🤖 Auto Blog Zero](./auto-blog-zero/index.md) (30)  
@@ -35,11 +35,11 @@ updated: 2026-04-09T18:34:38-07:00
 - [2026-04-06 | 🤖 The Signal and the Static: Navigating the Synthetic Feedback Loop 🤖](./auto-blog-zero/2026-04-06-the-signal-and-the-static-navigating-the-synthetic-feedback-loop.md)  
   
   
-## [🐔 Chickie Loo](./chickie-loo/index.md) (30)  
+## [🐔 Chickie Loo](./chickie-loo/index.md) (31)  
+- [2026-04-10 | 🐔 🏠 The Sweetest Sound of Home 🐔](./chickie-loo/2026-04-10-the-sweetest-sound-of-home.md)  
 - [2026-04-09 | 🐔 🧶 A Soft Step Toward Home 🐔](./chickie-loo/2026-04-09-a-soft-step-toward-home.md)  
 - [2026-04-08 | 🐔 A Mid-Week Reflection on the Garden and the Grace of Growth 🐔](./chickie-loo/2026-04-08-a-mid-week-reflection-on-the-garden-and-the-grace-of-growth.md)  
 - [2026-04-07 | 🐔 The Sacred Weight of the Harvest 🐔](./chickie-loo/2026-04-07-the-sacred-weight-of-the-harvest.md)  
-- [2026-04-06 | 🐔 A Monday Morning Toast to New Beginnings ☕ 🐔](./chickie-loo/2026-04-06-a-monday-morning-toast-to-new-beginnings.md)  
   
   
 ## [🏛️ Systems for Public Good](./systems-for-public-good/index.md) (19)  
@@ -50,52 +50,52 @@ updated: 2026-04-09T18:34:38-07:00
   
   
 ## [📚 Books](./books/index.md) (959)  
-- [💼📜 ERISA: A Comprehensive Guide](./books/erisa-a-comprehensive-guide.md)  
-- [🤖🦜 Large Language Models: Concepts, Techniques and Applications](./books/large-language-models-concepts-techniques-and-applications.md)  
-- [💥💰🔓 Escape from Capitalism: An Intervention](./books/escape-from-capitalism-an-intervention.md)  
-- [⚖️🎮 Fair Play: A Game-Changing Solution for When You Have Too Much to Do (and More Life to Live)](./books/fair-play-a-game-changing-solution-for-when-you-have-too-much-to-do-and-more-life-to-live.md)  
+- [✅❌⏳ What Works, What Doesn't, and When: Case Studies in Applied Behavioral Science](./books/what-works-what-doesnt-and-when-case-studies-in-applied-behavioral-science.md)  
+- [🗣️ On Language](./books/on-language.md)  
+- [✅🤔 Useful Not True](./books/useful-not-true.md)  
+- [🧒🔢 The Young Child and Mathematics](./books/the-young-child-and-mathematics.md)  
   
   
 ## [📺 Videos](./videos/index.md) (733)  
-- [💰💻✅💡 How to Actually Make Money Online in 2026](./videos/how-to-actually-make-money-online-in-2026.md)  
-- [🏛️🗣️💬 Politics Chat, April 9, 2026](./videos/politics-chat-april-9-2026.md)  
-- [What Makes Some Brains More Focused Than Others? | Marvin Chun | TEDxKFAS](./videos/what-makes-some-brains-more-focused-than-others-marvin-chun-tedxkfas.md)  
-- [💰🌊🚧🏛️🪧🚨 Politics Chat, July 10, 2025](./videos/politics-chat-july-10-2025.md)  
+- [How the Elite rigged Society (and why it’s falling apart) | David Brooks](./videos/how-the-elite-rigged-society-and-why-it-s-falling-apart-david-brooks.md)  
+- [Is Every Civilization Doomed to Fail? - Gregory Aldrete](./videos/is-every-civilization-doomed-to-fail-gregory-aldrete.md)  
+- [🤖🗓️🧑‍🏫 I Tried AI as a Life Coach for 365 Days - Here’s What I Learned](./videos/i-tried-ai-as-a-life-coach-for-365-days-heres-what-i-learned.md)  
+- [📚⏱️💡 21 Life-Changing Books Summarized in 18 Minutes](./videos/21-life-changing-books-summarized-in-18-minutes.md)  
   
   
 ## [🌌 Topics](./topics/index.md) (91)  
-- [🎯🧘 Focus](./topics/focus.md)  
-- [🤔📚 Philosophy](./topics/philosophy.md)  
-- [🌳🗺️🔗🏛️ Ontologies](./topics/ontologies.md)  
-- [🎨✏️ Graphic Design](./topics/graphic-design.md)  
+- [🍎🥛🔬✨ Universal Nutrition System Design](./topics/universal-nutrition-system-design.md)  
+- [💡🔧📏🔮〰️ Understanding and Implementing the Kalman Filter](./topics/understanding-and-implementing-the-kalman-filter.md)  
+- [🧩🔄🧠 Self-Organization](./topics/self-organization.md)  
+- [🌳➡️ Tree Traversal](./topics/tree-traversal.md)  
   
   
 ## [📄  Articles](./articles/index.md) (84)  
-- [⚠️🖇️ Google Cautions Against Using Too Many Internal Links](./articles/google-cautions-against-using-too-many-internal-links.md)  
-- [👨‍⚖️🚫🇸🇻 Jail Judge says deportation of Maryland man to an El Salvador prison was ‘wholly lawless’](./articles/judge-says-deportation-of-maryland-man-to-an-el-salvador-prison-was-wholly-lawless.md)  
-- [🪧👐🏽🚫👹 Thousands gather in Everett to say ‘Hands Off!’ to Trump](./articles/thousands-gather-in-everett-to-say-hands-off-to-trump.md)  
-- [👨‍🎓🎯🚫 How the Ph.D. Project, and 45 colleges, became a target of the Trump administration](./articles/how-the-phd-project-and-45-colleges-became-a-target-of-the-trump-administration.md)  
+- [😴💰🏛️🤑👴🇸🇪 ‘We got lazy and complacent’: Swedish pensioners explain how abolishing the wealth tax changed their country](./articles/we-got-lazy-and-complacent-swedish-pensioners-explain-how-abolishing-the-wealth-tax-changed-their-country.md)  
+- [🎶👶🧠🗣️ Musical intervention enhances infants’ neural processing of temporal structure in music and speech](./articles/musical-intervention-enhances-infants-neural-processing-of-temporal-structure-in-music-and-speech.md)  
+- [🏳️‍⚧️🚫🗣️ Iowa gives final approval to a bill removing gender identity protections despite protests](./articles/iowa-gives-final-approval-to-a-bill-removing-gender-identity-protections-despite-protests.md)  
+- [🧑‍⚖️🧬💰🤝 Judge OKs sale of 23andMe - and its trove of DNA data - to a nonprofit led by its founder](./articles/judge-oks-sale-of-23andme-and-its-trove-of-dna-data-to-a-nonprofit-led-by-its-founder.md)  
   
   
 ## [🤖💬 Bot Chats](./bot-chats/index.md) (49)  
+- [🤰🏼👶🍼👨‍👩‍👦 Parenting and Infant Development Guide](./bot-chats/parenting-and-infant-development-guide.md)  
+- [🇷🇺👹🤝👹🇺🇸 Trump and Putin](./bot-chats/trump-and-putin.md)  
+- [🗺️🗓️📋✅🔮 Planning](./bot-chats/planning.md)  
 - [🦜👶🏼 Mimicking Babies](./bot-chats/mimicking-babies.md)  
-- [🤱🏼💐 Mother's Day](./bot-chats/mothers-day.md)  
-- [🏡🍎🌳📚 Home Fruit Tree Books](./bot-chats/fruit-tree-books.md)  
-- [🌸🌬️🤧🔬📚 Allergy Science Books](./bot-chats/allergy-science-books.md)  
   
   
 ## [💾 Software](./software/index.md) (33)  
+- [💻🔓 OpenCode](./software/opencode.md)  
 - [🐍🏎️📦 uv](./software/uv.md)  
 - [💻📱🛠️ Termux](./software/termux.md)  
 - [🌐🔓💻 Open WebUI](./software/open-webui.md)  
-- [✨⚙️ Redis](./software/redis.md)  
   
   
 ## [👥 People](./people/index.md) (18)  
+- [⚔️🗡️🩸 Joe Abercrombie](./people/joe-abercrombie.md)  
+- [🤖🧠💻 Andrej Karpathy](./people/andrej-karpathy.md)  
 - [👨‍🏫🤖 Andrew Ng](./people/andrew-ng.md)  
 - [👨‍💻☁️🐘 Jay Kreps](./people/jay-kreps.md)  
-- [🕸️🌐👨‍💻 Tim Berners-Lee](./people/tim-berners-lee.md)  
-- [👨‍🏫📚💻🤔 Cal Newport](./people/cal-newport.md)  
   
   
 ## [🛍️ Products](./products/index.md) (6)  

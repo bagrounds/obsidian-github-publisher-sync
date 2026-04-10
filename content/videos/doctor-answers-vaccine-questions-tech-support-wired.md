@@ -9,6 +9,9 @@ Platform:
 Channel: WIRED
 tags:
 youtube: https://youtu.be/2uURMKLAPZw
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_time: 2026-04-10T00:00:00Z
+force_analyze_links: false
 ---
 [Home](../index.md) > [Videos](./index.md)  
 # 💉👩‍⚕️💻 Doctor Answers Vaccine Questions | Tech Support | WIRED  
@@ -84,6 +87,6 @@ Dr. Paul Offit, a 👨‍⚕️ pediatrician and professor, addressed key public
 ### 🎨 Creatively Related  
   
 * 🔬 **The Demon Under the Microscope: From World War to Cold War, the Deadly Race to Develop the Drugs That Changed the World** by Thomas Hager explores the incredible history of early medical breakthroughs, specifically the discovery of sulfa drugs, showing how science rapidly tackled deadly diseases, paralleling the urgency and triumph of vaccine development.  
-* 🛑 **The Great Influenza: The Story of the Deadliest Pandemic in History** by John M. Barry provides a compelling look at the 1918 flu pandemic, illustrating the devastating potential of uncontrolled viruses and underscoring the vital importance of rapid scientific response and 🗣️ honest public health communication.  
+* 🛑 **[🦠🌍💀 The Great Influenza](../books/the-great-influenza.md): The Story of the Deadliest Pandemic in History** by John M. Barry provides a compelling look at the 1918 flu pandemic, illustrating the devastating potential of uncontrolled viruses and underscoring the vital importance of rapid scientific response and 🗣️ honest public health communication.  
 * 🗣️ **The Art of Changing the Mind: The Science of Reasoning with Unreasonable People** by J.M. Fraser offers practical, evidence-based techniques for communicating with people whose beliefs are deeply held or strongly polarized, which is highly relevant to engaging vaccine-hesitant individuals.  
 * 📈 **The Handbook of Health Behavior Change** edited by Angie L. Cradock and Kristina Henderson Lewis presents a multidisciplinary approach using **behavioral science** to address health issues like vaccine uptake, focusing on psychological and sociological theories for creating effective public health interventions.

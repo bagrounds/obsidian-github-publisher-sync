@@ -96,8 +96,8 @@ Delivered as a single vertical slice:
 **Goal**: Replace `Either Text` and silent failures with domain error ADTs, with tests for error paths.
 
 Each error migration delivered with test coverage:
-- [ ] Define `data AppError = GeminiError Text | FileNotFound FilePath | ParseError Text FilePath | ...`
-- [ ] Replace `Either Text` returns in Gemini module with `Either AppError`. Test error propagation.
+- [x] Define `Gemini.Error` ADT with typed constructors: `JsonParseError`, `ExtractionError Text`, `HttpError Int Text`, `NoModelsProvided`, `AllModelsFailed Text Error`. Add `renderError` for text conversion and `isRateLimitError`/`isQuotaExhaustedError` for typed error classification. Replace `Either Text` in `parseResponseText`, `extractText`, `generateContent`, `generateContentWithFallback`. Update all callers. Remove dead text-matching functions from InternalLinking.
+- [ ] Replace `Either Text` returns in platform modules (Twitter, Bluesky, Mastodon) with per-module `Error` ADTs. Test error propagation.
 - [ ] Replace silent empty-string returns (like `findBestMatch` returning `""`) with `Maybe` or `Either`. Test the Nothing/Left paths.
 - [ ] Replace `error` calls in non-startup code with `Either` returns. Test failure scenarios.
 

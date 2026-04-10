@@ -77,16 +77,19 @@ Deleted horizontal-slice modules (replaced by vertical feature modules):
 
 `Automation.Types` retained as thin re-export hub for truly shared types only (Secret, PlatformLimits, Url, Title, RelativePath, ReflectionData, OgMetadata, EmbedSection, EnvironmentConfig, ObsidianCredentials).
 
-### Next: AppContext Record + Tests
+### Completed: AppContext Record + Tests
 
-**Goal**: Replace parameter threading with a shared context record, with tests for context construction.
+**Goal**: Replaced parameter threading with a shared context record, following the [ReaderT design pattern](https://www.fpcomplete.com/blog/readert-design-pattern/) — the context holds all startup-time configuration and shared dependencies needed throughout the program's lifecycle.
 
 Delivered as a single vertical slice:
-- [ ] Define `AppContext` in a new `Automation.Context` module
-- [ ] Update `taskRunners` to construct with `AppContext`
-- [ ] Migrate one task runner at a time to accept `AppContext` instead of individual params
-- [ ] Test context construction and validation
-- [ ] Consider `ReaderT AppContext IO` monad if parameter threading becomes unwieldy
+- [x] Define `AppContext` in a new `Automation.Context` module — holds `httpManager`, `vaultDir`, `repoRoot`, `geminiApiKey`, and `obsidianCredentials`
+- [x] Domain-descriptive field names (no `app` prefix) with module imported qualified as `Context`
+- [x] Explicit field exports (no wildcard `(..)` imports)
+- [x] Update `taskRunners` to construct with `AppContext`
+- [x] Migrate all task runners (`runBlogSeries`, `runBackfillImages`, `runInternalLinking`, `runSocialPosting`, `runAiFiction`, `runReflectionTitle`) to accept `AppContext` instead of individual params
+- [x] Test context construction and validation — smart constructor rejects empty paths, Show redacts secrets, property test for valid paths
+- [x] `callGeminiForGenerator` uses API key from context (callback adapter ignores duplicate key from library interface)
+- [x] `main` reads all environment variables once at startup and constructs validated `AppContext`
 
 ### Next: Explicit Error Types + Tests
 

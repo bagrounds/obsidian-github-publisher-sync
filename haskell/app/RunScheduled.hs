@@ -10,7 +10,7 @@ import Data.Text (Text)
 import qualified Data.Text as T
 import qualified Data.Text.IO as TIO
 import Data.Time (addDays, defaultTimeLocale, formatTime, getCurrentTime)
-import Network.HTTP.Client (Manager, newManager)
+import Network.HTTP.Client (newManager)
 import Network.HTTP.Client.TLS (tlsManagerSettings)
 import System.Directory (createDirectoryIfMissing, doesDirectoryExist, doesFileExist, listDirectory, removeFile)
 import System.Environment (getArgs, lookupEnv)
@@ -20,8 +20,8 @@ import System.IO (hSetBuffering, stdout, stderr, BufferMode(..))
 
 import Automation.AiBlogLinks (NavLinkResult (..), aiBlogConfig, ensureAllNavLinks, buildReflectionLinks)
 import Automation.AiFiction
-  ( FictionConfig (..)
-  , FictionResult (..)
+  ( FictionConfig (FictionConfig, fcModels, fcNoteContent)
+  , FictionResult (frFiction, frModel, frUpdatedContent)
   , defaultFictionModel
   , generateFiction
   , reflectionNeedsFiction
@@ -61,8 +61,8 @@ import Automation.ObsidianSync
   , pushObsidianVault
   )
 import Automation.ReflectionTitle
-  ( ReflectionTitleConfig (..)
-  , ReflectionTitleResult (..)
+  ( ReflectionTitleConfig (ReflectionTitleConfig, rtcModels, rtcNoteContent, rtcDate, rtcRecentTitles)
+  , ReflectionTitleResult (rtrFullTitle, rtrModel, rtrUpdatedContent)
   , defaultTitleModel
   , generateReflectionTitle
   , reflectionNeedsTitle
@@ -80,6 +80,7 @@ import Automation.Scheduler
   , taskIdToText
   )
 import Automation.Types (Secret (..), RelativePath, unRelativePath, mkRelativePath, Title, mkTitle)
+import qualified Automation.Context as Context
 import qualified Automation.InternalLinking as IL
 import Automation.SocialPosting (autoPost)
 import Automation.Text (wordJaccardSimilarity)
@@ -116,11 +117,11 @@ inferenceDashboards =
 -- Shared Gemini caller for fiction/title generators
 -- ---------------------------------------------------------------------------
 
-callGeminiForGenerator :: Manager -> Secret -> [Text] -> (Text, Text) -> IO (Text, Text)
-callGeminiForGenerator manager apiKey models (systemPrompt, userPrompt) = do
+callGeminiForGenerator :: Context.AppContext -> [Text] -> (Text, Text) -> IO (Text, Text)
+callGeminiForGenerator context models (systemPrompt, userPrompt) = do
   let combinedPrompt = systemPrompt <> "\n\n" <> userPrompt
       config = Gemini.defaultGenerationConfig { Gemini.gcTemperature = 0.9, Gemini.gcMaxOutputTokens = 2048 }
-  result <- Gemini.generateContentWithFallback manager models combinedPrompt apiKey config
+  result <- Gemini.generateContentWithFallback (Context.httpManager context) models combinedPrompt (Context.geminiApiKey context) config
   case result of
     Left err -> error $ "Gemini API error: " <> T.unpack err
     Right resp -> pure (Gemini.grText resp, Gemini.grModel' resp)
@@ -135,9 +136,6 @@ requireEnv key = do
   case mVal of
     Just val -> pure (T.pack val)
     Nothing  -> error $ "Missing required environment variable: " <> key
-
-requireSecret :: String -> IO Secret
-requireSecret key = Secret <$> requireEnv key
 
 lookupEnvText :: String -> IO (Maybe Text)
 lookupEnvText key = fmap (fmap T.pack) (lookupEnv key)
@@ -392,9 +390,13 @@ yesterdayPacific = do
 -- Task runners
 -- ---------------------------------------------------------------------------
 
-runBlogSeries :: Manager -> FilePath -> FilePath -> Text -> IO ()
-runBlogSeries manager repoRoot vaultDir seriesId = do
+runBlogSeries :: Context.AppContext -> Text -> IO ()
+runBlogSeries context seriesId = do
   let taskName = "blog-series:" <> seriesId
+      manager = Context.httpManager context
+      repoRoot = Context.repoRoot context
+      vaultDir = Context.vaultDir context
+      apiKey = Context.geminiApiKey context
   logMsg $ "▶️  " <> taskName
 
   let mRunConfig = Map.lookup seriesId blogSeriesRunConfigs
@@ -402,7 +404,6 @@ runBlogSeries manager repoRoot vaultDir seriesId = do
     Just rc -> pure rc
     Nothing -> error $ "No run config for series: " <> T.unpack seriesId
 
-  apiKey <- requireSecret "GEMINI_API_KEY"
   today <- todayPacificDay
   let todayText = formatDay today
   _ <- copySeriesPosts vaultDir seriesId repoRoot
@@ -442,8 +443,8 @@ runBlogSeries manager repoRoot vaultDir seriesId = do
       logMsg $ "  📝 Fetched " <> T.pack (show (length comments)) <> " comments"
 
       -- 5. Build context and prompt
-      context <- buildBlogContext seriesId seriesDir comments today
-      let (systemPrompt, userPrompt) = buildBlogPrompt context
+      blogContext <- buildBlogContext seriesId seriesDir comments today
+      let (systemPrompt, userPrompt) = buildBlogPrompt blogContext
           combinedPrompt = systemPrompt <> "\n\n" <> userPrompt
           genConfig = Gemini.defaultGenerationConfig { Gemini.gcTemperature = 0.9, Gemini.gcMaxOutputTokens = 8192 }
 
@@ -535,8 +536,11 @@ runBlogSeries manager repoRoot vaultDir seriesId = do
 
   logMsg $ "✅ " <> taskName
 
-runBackfillImages :: Manager -> FilePath -> FilePath -> IO ()
-runBackfillImages manager repoRoot vaultDir = do
+runBackfillImages :: Context.AppContext -> IO ()
+runBackfillImages context = do
+  let manager = Context.httpManager context
+      repoRoot = Context.repoRoot context
+      vaultDir = Context.vaultDir context
   logMsg "▶️  backfill-blog-images"
 
   today <- todayPacificDay
@@ -615,8 +619,10 @@ runBackfillImages manager repoRoot vaultDir = do
 
   logMsg "✅ backfill-blog-images"
 
-runInternalLinking :: Manager -> FilePath -> IO ()
-runInternalLinking manager vaultDir = do
+runInternalLinking :: Context.AppContext -> IO ()
+runInternalLinking context = do
+  let manager = Context.httpManager context
+      vaultDir = Context.vaultDir context
   logMsg "▶️  internal-linking"
 
   envModel <- lookupEnvText "INTERNAL_LINKING_MODEL"
@@ -646,17 +652,17 @@ runInternalLinking manager vaultDir = do
 
   logMsg "✅ internal-linking"
 
-runSocialPosting :: Manager -> FilePath -> IO ()
-runSocialPosting manager vaultDir = do
+runSocialPosting :: Context.AppContext -> IO ()
+runSocialPosting context = do
   logMsg "▶️  social-posting"
-  autoPost manager vaultDir
+  autoPost (Context.httpManager context) (Context.vaultDir context)
   logMsg "✅ social-posting"
 
-runAiFiction :: Manager -> FilePath -> IO ()
-runAiFiction manager vaultDir = do
+runAiFiction :: Context.AppContext -> IO ()
+runAiFiction context = do
+  let vaultDir = Context.vaultDir context
   logMsg "▶️  ai-fiction"
 
-  apiKey <- requireSecret "GEMINI_API_KEY"
   today <- todayPacificDay
   let todayText = formatDay today
 
@@ -683,12 +689,11 @@ runAiFiction manager vaultDir = do
                 _ -> defaultChain
 
           let config = FictionConfig
-                { fcApiKey = apiKey
-                , fcModels = models
+                { fcModels = models
                 , fcNoteContent = noteContent
                 }
 
-          result <- generateFiction config (callGeminiForGenerator manager)
+          result <- generateFiction config (callGeminiForGenerator context)
 
           let wordCount = length (T.words (frFiction result))
           logMsg $ "  🤖🐲 Generated fiction (model=" <> frModel result <> ", " <> T.pack (show wordCount) <> " words)"
@@ -698,31 +703,29 @@ runAiFiction manager vaultDir = do
 
           logMsg "✅ ai-fiction"
 
-runReflectionTitle :: Manager -> FilePath -> IO ()
-runReflectionTitle manager vaultDir = do
+runReflectionTitle :: Context.AppContext -> IO ()
+runReflectionTitle context = do
   logMsg "▶️  reflection-title"
 
-  apiKey <- requireSecret "GEMINI_API_KEY"
   today <- todayPacificDay
   let todayText = formatDay today
   yesterday <- yesterdayPacific
 
-  let reflectionsDir = vaultDir </> "reflections"
-
   -- Try today first, then yesterday
-  todayDone <- tryTitleForDate manager apiKey vaultDir reflectionsDir todayText
+  todayDone <- tryTitleForDate context todayText
   case todayDone of
     True -> pure ()
     False -> do
       logMsg $ "  📅 Checking yesterday (" <> yesterday <> ")..."
-      _ <- tryTitleForDate manager apiKey vaultDir reflectionsDir yesterday
+      _ <- tryTitleForDate context yesterday
       pure ()
 
   logMsg "✅ reflection-title"
 
-tryTitleForDate :: Manager -> Secret -> FilePath -> FilePath -> Text -> IO Bool
-tryTitleForDate manager apiKey _vaultDir reflectionsDir date = do
-  let reflectionPath = reflectionsDir </> T.unpack date <> ".md"
+tryTitleForDate :: Context.AppContext -> Text -> IO Bool
+tryTitleForDate context date = do
+  let reflectionsDir = Context.vaultDir context </> "reflections"
+      reflectionPath = reflectionsDir </> T.unpack date <> ".md"
 
   exists <- doesFileExist reflectionPath
   case exists of
@@ -748,14 +751,13 @@ tryTitleForDate manager apiKey _vaultDir reflectionsDir date = do
                 _ -> defaultChain
 
           let config = ReflectionTitleConfig
-                { rtcApiKey = apiKey
-                , rtcModels = models
+                { rtcModels = models
                 , rtcNoteContent = content
                 , rtcDate = date
                 , rtcRecentTitles = recentTitles
                 }
 
-          result <- generateReflectionTitle config (callGeminiForGenerator manager)
+          result <- generateReflectionTitle config (callGeminiForGenerator context)
 
           logMsg $ "  🏷️  Generated title: " <> rtrFullTitle result <> " [" <> rtrModel result <> "]"
 
@@ -767,16 +769,16 @@ tryTitleForDate manager apiKey _vaultDir reflectionsDir date = do
 -- Task dispatch
 -- ---------------------------------------------------------------------------
 
-taskRunners :: Manager -> FilePath -> FilePath -> Map TaskId (IO ())
-taskRunners manager repoRoot vaultDir = Map.fromList
-  [ (BlogSeriesChickieLoo, runBlogSeries manager repoRoot vaultDir "chickie-loo")
-  , (BlogSeriesAutoBlogZero, runBlogSeries manager repoRoot vaultDir "auto-blog-zero")
-  , (BlogSeriesSystemsForPublicGood, runBlogSeries manager repoRoot vaultDir "systems-for-public-good")
-  , (BackfillBlogImages, runBackfillImages manager repoRoot vaultDir)
-  , (InternalLinking, runInternalLinking manager vaultDir)
-  , (SocialPosting, runSocialPosting manager vaultDir)
-  , (AiFiction, runAiFiction manager vaultDir)
-  , (ReflectionTitle, runReflectionTitle manager vaultDir)
+taskRunners :: Context.AppContext -> Map TaskId (IO ())
+taskRunners context = Map.fromList
+  [ (BlogSeriesChickieLoo, runBlogSeries context "chickie-loo")
+  , (BlogSeriesAutoBlogZero, runBlogSeries context "auto-blog-zero")
+  , (BlogSeriesSystemsForPublicGood, runBlogSeries context "systems-for-public-good")
+  , (BackfillBlogImages, runBackfillImages context)
+  , (InternalLinking, runInternalLinking context)
+  , (SocialPosting, runSocialPosting context)
+  , (AiFiction, runAiFiction context)
+  , (ReflectionTitle, runReflectionTitle context)
   ]
 
 -- ---------------------------------------------------------------------------
@@ -849,7 +851,13 @@ main = do
       vaultDir <- syncObsidianVault creds
       logMsg $ "📂 Vault ready at " <> T.pack vaultDir
 
-      let runners = taskRunners manager repoRoot vaultDir
+      geminiApiKey <- Secret <$> requireEnv "GEMINI_API_KEY"
+      context <- case Context.mkAppContext manager vaultDir repoRoot geminiApiKey creds of
+        Right ctx -> pure ctx
+        Left err -> do
+          TIO.hPutStrLn stderr $ "❌ Invalid context: " <> T.pack err
+          exitFailure
+      let runners = taskRunners context
       results <- runTasks runners tasks []
 
       -- Push vault ONCE at the end

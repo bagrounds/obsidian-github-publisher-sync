@@ -63,7 +63,7 @@ import qualified Network.HTTP.Client.TLS as TLS
 import Network.HTTP.Types.Status (statusIsSuccessful)
 import System.Directory (doesFileExist)
 
-import System.FilePath (takeBaseName, takeDirectory, (</>))
+import System.FilePath (takeBaseName, takeDirectory, takeFileName, (</>))
 import Text.Regex.TDFA ((=~))
 
 import Automation.BlogImage (hasEmbeddedImage, shouldHaveImage)
@@ -442,13 +442,8 @@ looksLikeDateTitle title =
 
 isAwaitingImageBackfill :: Text -> Text -> Bool
 isAwaitingImageBackfill relativePath body =
-  let segments = filter (not . T.null) (T.splitOn "/" relativePath)
-      directoryName = case segments of
-        (directory : _ : _) -> directory
-        _                   -> ""
-      filename = case segments of
-        [] -> ""
-        _  -> last segments
+  let directoryName = T.pack (takeFileName (takeDirectory (T.unpack relativePath)))
+      filename = T.pack (takeFileName (T.unpack relativePath))
   in elem directoryName imageBackfillContentIds
        && shouldHaveImage filename
        && not (hasEmbeddedImage body)

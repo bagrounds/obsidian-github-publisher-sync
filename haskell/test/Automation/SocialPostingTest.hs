@@ -297,6 +297,15 @@ imageBackfillFilterTests = testGroup "isAwaitingImageBackfill"
       assertBool "unknown directory should not be awaiting" $
         not (isAwaitingImageBackfill "people/john-doe.md" "A person page")
 
+  , testCase "topics directory note without image is awaiting" $
+      assertBool "topics note without image should be awaiting" $
+        isAwaitingImageBackfill "topics/machine-learning.md" "A topic about ML"
+
+  , testCase "software directory note with image is not awaiting" $
+      assertBool "software note with image should not be awaiting" $
+        not (isAwaitingImageBackfill "software/cool-tool.md"
+          "![[attachments/software-cool-tool.png]]\nA great tool")
+
   , testCase "BFS skips notes awaiting image but follows their links" $ do
       withSystemTempDirectory "social-image-test" $ \dir -> do
         let reflDir = dir </> "reflections"

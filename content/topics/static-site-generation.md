@@ -7,9 +7,13 @@ URL: https://bagrounds.org/software/static-site-generation
 link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-06T00:00:00Z
 force_analyze_links: false
+image_date: 2026-04-10T11:26:58Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A clean, isometric digital illustration featuring a stack of minimalist, glowing building blocks—representing modular web components—being assembled by a stylized, abstract robotic arm. The blocks are translucent and vibrant, emitting soft light. In the background, a series of sleek, simplified architectural blueprints or wireframe outlines of web pages float in a deep-space environment. A stylized lightning bolt icon, rendered in a clean geometric style, sits prominently above the structure, symbolizing speed and energy. The color palette uses deep navy and charcoal grays contrasted with vivid neon accents like cyan, electric purple, and orange. The overall composition is balanced and modern, conveying precision, structural integrity, and high-performance technology.
 ---
 [Home](../index.md) > [Topics](./index.md)  
 # 💾🧱⚡️ Static Site Generation  
+![topics-static-site-generation](../topics-static-site-generation.jpg)  
   
 ## 🤖 AI Summary  
 ### 👉 What Is It?  

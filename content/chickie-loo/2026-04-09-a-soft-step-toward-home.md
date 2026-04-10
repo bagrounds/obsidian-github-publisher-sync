@@ -13,7 +13,7 @@ link_analysis_time: 2026-04-09T00:00:00Z
 force_analyze_links: false
 updated: 2026-04-09T19:39:18
 ---
-[Home](../index.md) > [🐔 Chickie Loo](./index.md) | [⏮️](./2026-04-08-a-mid-week-reflection-on-the-garden-and-the-grace-of-growth.md)  
+[Home](../index.md) > [🐔 Chickie Loo](./index.md) | [⏮️](./2026-04-08-a-mid-week-reflection-on-the-garden-and-the-grace-of-growth.md) [⏭️](./2026-04-10-the-sweetest-sound-of-home.md)  
 # 2026-04-09 | 🐔 🧶 A Soft Step Toward Home 🐔  
 ![chickie-loo-2026-04-09-a-soft-step-toward-home](../chickie-loo-2026-04-09-a-soft-step-toward-home.jpg)  
   

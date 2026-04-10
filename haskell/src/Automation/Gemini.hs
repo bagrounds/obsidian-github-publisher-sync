@@ -8,6 +8,10 @@ module Automation.Gemini
   , GenerationConfig (..)
   , Error (..)
   , ApiStatus (..)
+  , Model (..)
+  , modelToText
+  , modelFromText
+  , knownModels
   , defaultModel
   , defaultQuestionModel
   , gemini3Flash
@@ -72,6 +76,52 @@ parseApiStatus "UNAUTHENTICATED"    = Unauthenticated
 parseApiStatus "FAILED_PRECONDITION" = FailedPrecondition
 parseApiStatus other                = UnknownStatus other
 
+-- | Typed representation of Gemini API models.
+-- Known models have dedicated constructors; environment variable overrides
+-- use @Custom@ to preserve arbitrary model strings from the API.
+data Model
+  = Gemma3
+  | Gemini31FlashLite
+  | Gemini3Flash
+  | Gemini25Flash
+  | Gemini25FlashLite
+  | Gemini20Flash
+  | Gemini31FlashImage
+  | Custom Text
+  deriving (Show, Eq, Ord)
+
+modelToText :: Model -> Text
+modelToText Gemma3              = "gemma-3-27b-it"
+modelToText Gemini31FlashLite   = "gemini-3.1-flash-lite-preview"
+modelToText Gemini3Flash        = "gemini-3-flash-preview"
+modelToText Gemini25Flash       = "gemini-2.5-flash"
+modelToText Gemini25FlashLite   = "gemini-2.5-flash-lite"
+modelToText Gemini20Flash       = "gemini-2.0-flash"
+modelToText Gemini31FlashImage  = "gemini-3.1-flash-image-preview"
+modelToText (Custom t)          = t
+
+modelFromText :: Text -> Model
+modelFromText "gemma-3-27b-it"                 = Gemma3
+modelFromText "gemini-3.1-flash-lite-preview"  = Gemini31FlashLite
+modelFromText "gemini-3-flash-preview"         = Gemini3Flash
+modelFromText "gemini-2.5-flash"               = Gemini25Flash
+modelFromText "gemini-2.5-flash-lite"          = Gemini25FlashLite
+modelFromText "gemini-2.0-flash"               = Gemini20Flash
+modelFromText "gemini-3.1-flash-image-preview" = Gemini31FlashImage
+modelFromText t                                = Custom t
+
+-- | All known model constructors (excludes @Custom@).
+knownModels :: [Model]
+knownModels =
+  [ Gemma3
+  , Gemini31FlashLite
+  , Gemini3Flash
+  , Gemini25Flash
+  , Gemini25FlashLite
+  , Gemini20Flash
+  , Gemini31FlashImage
+  ]
+
 -- | Domain-specific error type for Gemini API operations.
 -- Structured constructors preserve error context and enable typed pattern
 -- matching. The @HttpError@ constructor carries the parsed @ApiStatus@ from
@@ -81,7 +131,7 @@ data Error
   = JsonParseError
   | ExtractionError Text
   | HttpError Int ApiStatus Text
-  | AllModelsFailed Text Error
+  | AllModelsFailed Model Error
   deriving (Show, Eq)
 
 -- | Parse the structured error JSON returned by the Gemini API.
@@ -119,26 +169,25 @@ isQuotaExhaustedError _ = False
 
 data Config = Config
   { gcApiKey :: Secret
-  , gcModel :: Text
-  , gcQuestionModel :: Text
+  , gcModel :: Model
+  , gcQuestionModel :: Model
   } deriving (Show, Eq)
 
-defaultModel :: Text
-defaultModel = "gemma-3-27b-it"
+defaultModel :: Model
+defaultModel = Gemma3
 
-defaultQuestionModel :: Text
-defaultQuestionModel = "gemini-3.1-flash-lite-preview"
+defaultQuestionModel :: Model
+defaultQuestionModel = Gemini31FlashLite
 
-gemini3Flash :: Text
-gemini3Flash = "gemini-3-flash-preview"
+gemini3Flash :: Model
+gemini3Flash = Gemini3Flash
 
-flashFallback :: Text
-flashFallback = "gemini-2.5-flash"
+flashFallback :: Model
+flashFallback = Gemini25Flash
 
-modelFallback :: Text -> Maybe Text
-modelFallback model
-  | model == "gemini-3.1-flash-lite-preview" = Just flashFallback
-  | otherwise = Nothing
+modelFallback :: Model -> Maybe Model
+modelFallback Gemini31FlashLite = Just flashFallback
+modelFallback _                 = Nothing
 
 data GenerationConfig = GenerationConfig
   { gcTemperature    :: Double
@@ -159,20 +208,20 @@ defaultGenerationConfig = GenerationConfig
 
 data Request = Request
   { grPrompt           :: Text
-  , grModel            :: Text
+  , grModel            :: Model
   , grApiKey           :: Secret
   , grGenerationConfig :: GenerationConfig
   } deriving (Show, Eq)
 
 data Response = Response
   { grText  :: Text
-  , grModel' :: Text
+  , grModel' :: Model
   } deriving (Show, Eq)
 
-geminiEndpoint :: Text -> Text
+geminiEndpoint :: Model -> Text
 geminiEndpoint model =
   "https://generativelanguage.googleapis.com/v1beta/models/"
-    <> model
+    <> modelToText model
     <> ":generateContent"
 
 buildRequestBody :: Text -> GenerationConfig -> Value
@@ -230,7 +279,7 @@ generateContent manager req = do
       let (apiStatus, message) = parseErrorBody (responseBody response)
       in pure $ Left $ HttpError code apiStatus message
 
-generateContentWithFallback :: Manager -> Text -> [Text] -> Text -> Secret -> GenerationConfig -> IO (Either Error Response)
+generateContentWithFallback :: Manager -> Model -> [Model] -> Text -> Secret -> GenerationConfig -> IO (Either Error Response)
 generateContentWithFallback manager model fallbacks prompt apiKey config = do
   result <- generateContent manager Request
     { grPrompt = prompt
@@ -243,5 +292,5 @@ generateContentWithFallback manager model fallbacks prompt apiKey config = do
     Left err -> case fallbacks of
       [] -> pure $ Left $ AllModelsFailed model err
       (next : rest) -> do
-        putStrLn $ "⚠️ Model " <> T.unpack model <> " failed, trying next fallback..."
+        putStrLn $ "⚠️ Model " <> T.unpack (modelToText model) <> " failed, trying next fallback..."
         generateContentWithFallback manager next rest prompt apiKey config

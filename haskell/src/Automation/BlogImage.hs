@@ -193,8 +193,8 @@ data IneligibilityReason
 excludedFiles :: [Text]
 excludedFiles = ["index.md", "AGENTS.md", "IDEAS.md"]
 
-defaultDescriberModel :: Text
-defaultDescriberModel = "gemini-3.1-flash-lite-preview"
+defaultDescriberModel :: Gemini.Model
+defaultDescriberModel = Gemini.Gemini31FlashLite
 
 cloudflarePromptMaxLength :: Int
 cloudflarePromptMaxLength = 2048
@@ -846,7 +846,7 @@ findInlineData (_ : rest) = findInlineData rest
 --------------------------------------------------------------------------------
 
 describeImageWithGemini
-  :: Manager -> Text -> Text -> Text -> IO (Either Text Text)
+  :: Manager -> Text -> Gemini.Model -> Text -> IO (Either Text Text)
 describeImageWithGemini manager apiKey model content = do
   let fullPrompt = imageDescriptionSystemPrompt <> "\n\n" <> content
       req = Gemini.Request
@@ -859,7 +859,7 @@ describeImageWithGemini manager apiKey model content = do
   case result of
     Right resp -> pure $ Right (Gemini.grText resp)
     Left _err  -> do
-      putStrLn $ "⚠️ " <> T.unpack model <> " failed for image description, trying fallback..."
+      putStrLn $ "⚠️ " <> T.unpack (Gemini.modelToText model) <> " failed for image description, trying fallback..."
       let fallbackModel = geminiModelFallback model
       let fallbackReq = req { Gemini.grModel = fallbackModel }
       fallbackResult <- Gemini.generateContent manager fallbackReq
@@ -867,11 +867,11 @@ describeImageWithGemini manager apiKey model content = do
         Right resp -> pure $ Right (Gemini.grText resp)
         Left err   -> pure $ Left (T.pack (show err))
 
-geminiModelFallback :: Text -> Text
-geminiModelFallback m
-  | "gemini-3" `T.isPrefixOf` m = "gemini-2.5-flash"
-  | "gemini-2" `T.isPrefixOf` m = "gemini-2.0-flash"
-  | otherwise                    = "gemini-2.0-flash"
+geminiModelFallback :: Gemini.Model -> Gemini.Model
+geminiModelFallback Gemini.Gemini3Flash       = Gemini.Gemini25Flash
+geminiModelFallback Gemini.Gemini31FlashLite  = Gemini.Gemini25Flash
+geminiModelFallback Gemini.Gemini31FlashImage = Gemini.Gemini25Flash
+geminiModelFallback _                         = Gemini.Gemini20Flash
 
 --------------------------------------------------------------------------------
 -- Provider resolution
@@ -880,7 +880,7 @@ geminiModelFallback m
 resolveImageProviders :: Map Text Text -> [ImageProviderConfig]
 resolveImageProviders env =
   let geminiKey = Map.lookup "GEMINI_API_KEY" env
-      describerModel = fromMaybe defaultDescriberModel (Map.lookup "PROMPT_DESCRIBER_MODEL" env)
+      describerModel = maybe defaultDescriberModel Gemini.modelFromText (Map.lookup "PROMPT_DESCRIBER_MODEL" env)
       describer = fmap (\gk -> mkDescriber gk describerModel) geminiKey
   in mapMaybe id
     [ mkCloudflareProvider env describer
@@ -890,7 +890,7 @@ resolveImageProviders env =
     , mkGeminiProvider env describer
     ]
 
-mkDescriber :: Text -> Text -> Manager -> Text -> Text -> Text -> IO (Either Text Text)
+mkDescriber :: Text -> Gemini.Model -> Manager -> Text -> Text -> Text -> IO (Either Text Text)
 mkDescriber geminiKey describerModel mgr _apiKey _model content =
   describeImageWithGemini mgr geminiKey describerModel content
 
@@ -952,11 +952,11 @@ mkPollinationsProvider env describer =
 mkGeminiProvider :: Map Text Text -> Maybe (Manager -> Text -> Text -> Text -> IO (Either Text Text)) -> Maybe ImageProviderConfig
 mkGeminiProvider env describer = do
   geminiKey <- Map.lookup "GEMINI_API_KEY" env
-  let geminiModel = fromMaybe "gemini-3.1-flash-image-preview" (Map.lookup "IMAGE_GEMINI_MODEL" env)
+  let geminiModel = maybe Gemini.Gemini31FlashImage Gemini.modelFromText (Map.lookup "IMAGE_GEMINI_MODEL" env)
   pure ImageProviderConfig
     { ipcName = "gemini"
     , ipcApiKey = Secret geminiKey
-    , ipcModel = geminiModel
+    , ipcModel = Gemini.modelToText geminiModel
     , ipcGenerator = generateImageWithGemini
     , ipcDescribePrompt = describer
     }

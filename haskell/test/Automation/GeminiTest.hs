@@ -12,7 +12,8 @@ import qualified Automation.Gemini as Gemini
 
 tests :: TestTree
 tests = testGroup "Gemini"
-  [ apiStatusTests
+  [ modelTests
+  , apiStatusTests
   , errorConstructorTests
   , showErrorTests
   , isRateLimitErrorTests
@@ -22,6 +23,64 @@ tests = testGroup "Gemini"
   , extractTextTests
   , propertyTests
   ]
+
+modelTests :: TestTree
+modelTests = testGroup "Model"
+  [ testCase "modelToText Gemma3" $
+      Gemini.modelToText Gemini.Gemma3 @?= "gemma-3-27b-it"
+
+  , testCase "modelToText Gemini31FlashLite" $
+      Gemini.modelToText Gemini.Gemini31FlashLite @?= "gemini-3.1-flash-lite-preview"
+
+  , testCase "modelToText Gemini3Flash" $
+      Gemini.modelToText Gemini.Gemini3Flash @?= "gemini-3-flash-preview"
+
+  , testCase "modelToText Gemini25Flash" $
+      Gemini.modelToText Gemini.Gemini25Flash @?= "gemini-2.5-flash"
+
+  , testCase "modelToText Gemini25FlashLite" $
+      Gemini.modelToText Gemini.Gemini25FlashLite @?= "gemini-2.5-flash-lite"
+
+  , testCase "modelToText Gemini20Flash" $
+      Gemini.modelToText Gemini.Gemini20Flash @?= "gemini-2.0-flash"
+
+  , testCase "modelToText Gemini31FlashImage" $
+      Gemini.modelToText Gemini.Gemini31FlashImage @?= "gemini-3.1-flash-image-preview"
+
+  , testCase "modelToText Custom" $
+      Gemini.modelToText (Gemini.Custom "my-custom-model") @?= "my-custom-model"
+
+  , testCase "modelFromText round-trips known models" $
+      mapM_ (\m -> Gemini.modelFromText (Gemini.modelToText m) @?= m) Gemini.knownModels
+
+  , testCase "modelFromText unknown text returns Custom" $
+      Gemini.modelFromText "totally-new-model" @?= Gemini.Custom "totally-new-model"
+
+  , testCase "all known models are distinct" $
+      let texts = fmap Gemini.modelToText Gemini.knownModels
+      in assertBool "all model texts should be unique"
+           (length texts == length (nub texts))
+
+  , testCase "defaultModel is Gemma3" $
+      Gemini.defaultModel @?= Gemini.Gemma3
+
+  , testCase "defaultQuestionModel is Gemini31FlashLite" $
+      Gemini.defaultQuestionModel @?= Gemini.Gemini31FlashLite
+
+  , testCase "gemini3Flash is Gemini3Flash" $
+      Gemini.gemini3Flash @?= Gemini.Gemini3Flash
+
+  , testCase "flashFallback is Gemini25Flash" $
+      Gemini.flashFallback @?= Gemini.Gemini25Flash
+
+  , testCase "modelFallback returns Just for Gemini31FlashLite" $
+      Gemini.modelFallback Gemini.Gemini31FlashLite @?= Just Gemini.Gemini25Flash
+
+  , testCase "modelFallback returns Nothing for Gemma3" $
+      Gemini.modelFallback Gemini.Gemma3 @?= Nothing
+  ]
+  where
+    nub = foldl (\acc x -> if x `elem` acc then acc else acc <> [x]) []
 
 apiStatusTests :: TestTree
 apiStatusTests = testGroup "ApiStatus"
@@ -83,13 +142,13 @@ errorConstructorTests = testGroup "Error constructors"
           /= Gemini.HttpError 429 (Gemini.UnknownStatus "OTHER") "body")
 
   , testCase "AllModelsFailed equality" $
-      Gemini.AllModelsFailed "model" Gemini.JsonParseError
-        @?= Gemini.AllModelsFailed "model" Gemini.JsonParseError
+      Gemini.AllModelsFailed Gemini.Gemma3 Gemini.JsonParseError
+        @?= Gemini.AllModelsFailed Gemini.Gemma3 Gemini.JsonParseError
 
   , testCase "AllModelsFailed nested" $
       let inner = Gemini.HttpError 500 Gemini.InternalError "server error"
-          outer = Gemini.AllModelsFailed "gemini-flash" inner
-      in outer @?= Gemini.AllModelsFailed "gemini-flash"
+          outer = Gemini.AllModelsFailed Gemini.Gemini25Flash inner
+      in outer @?= Gemini.AllModelsFailed Gemini.Gemini25Flash
            (Gemini.HttpError 500 Gemini.InternalError "server error")
   ]
 
@@ -99,10 +158,10 @@ showErrorTests = testGroup "Show"
       assertBool "Show should produce non-empty string"
         (not (null (show Gemini.JsonParseError)))
 
-  , testCase "Show nested AllModelsFailed contains model name" $
-      let err = Gemini.AllModelsFailed "testmodel" (Gemini.ExtractionError "detail")
-      in assertBool "Show should contain model name"
-           ("testmodel" `isInfixOf` show err)
+  , testCase "Show nested AllModelsFailed contains model constructor" $
+      let err = Gemini.AllModelsFailed Gemini.Gemma3 (Gemini.ExtractionError "detail")
+      in assertBool "Show should contain model constructor"
+           ("Gemma3" `isInfixOf` show err)
 
   , testCase "Show HttpError contains ApiStatus constructor" $
       let err = Gemini.HttpError 429 Gemini.ResourceExhausted "message"
@@ -148,11 +207,11 @@ isRateLimitErrorTests = testGroup "isRateLimitError"
 
   , testCase "AllModelsFailed wrapping ResourceExhausted is rate limit" $
       Gemini.isRateLimitError
-        (Gemini.AllModelsFailed "model" (Gemini.HttpError 429 Gemini.ResourceExhausted "limit"))
+        (Gemini.AllModelsFailed Gemini.Gemma3 (Gemini.HttpError 429 Gemini.ResourceExhausted "limit"))
         @?= True
 
   , testCase "AllModelsFailed wrapping non-rate-limit is not rate limit" $
-      Gemini.isRateLimitError (Gemini.AllModelsFailed "model" Gemini.JsonParseError)
+      Gemini.isRateLimitError (Gemini.AllModelsFailed Gemini.Gemma3 Gemini.JsonParseError)
         @?= False
   ]
 
@@ -188,7 +247,7 @@ isQuotaExhaustedErrorTests = testGroup "isQuotaExhaustedError"
 
   , testCase "AllModelsFailed wrapping quota exhausted is quota exhausted" $
       Gemini.isQuotaExhaustedError
-        (Gemini.AllModelsFailed "model"
+        (Gemini.AllModelsFailed Gemini.Gemma3
           (Gemini.HttpError 429 Gemini.ResourceExhausted "daily quota exceeded"))
         @?= True
   ]
@@ -319,6 +378,17 @@ propertyTests = testGroup "properties"
   , testProperty "all known ApiStatus values round-trip through parseApiStatus" $
       QC.forAll genKnownStatus $ \(statusText, expected) ->
         Gemini.parseApiStatus statusText == expected
+
+  , testProperty "all known models round-trip through modelToText/modelFromText" $
+      QC.forAll genKnownModel $ \model ->
+        Gemini.modelFromText (Gemini.modelToText model) == model
+
+  , testProperty "Custom models round-trip through modelToText/modelFromText when not matching known" $
+      QC.forAll (T.pack <$> QC.listOf1 (QC.elements ['a'..'z'])) $ \customName ->
+        let model = Gemini.Custom customName
+        in case Gemini.modelFromText customName of
+             Gemini.Custom _ -> Gemini.modelToText model == customName
+             _known          -> True
   ]
 
 genError :: QC.Gen Gemini.Error
@@ -326,7 +396,7 @@ genError = QC.oneof
   [ pure Gemini.JsonParseError
   , Gemini.ExtractionError . T.pack <$> QC.listOf1 QC.arbitraryASCIIChar
   , Gemini.HttpError <$> QC.elements [400, 401, 403, 429, 500, 503] <*> genApiStatus <*> (T.pack <$> QC.arbitrary)
-  , Gemini.AllModelsFailed . T.pack <$> QC.listOf1 QC.arbitraryASCIIChar <*> genLeafError
+  , Gemini.AllModelsFailed <$> genModel <*> genLeafError
   ]
 
 genLeafError :: QC.Gen Gemini.Error
@@ -362,3 +432,12 @@ genKnownStatus = QC.elements
   , ("UNAUTHENTICATED", Gemini.Unauthenticated)
   , ("FAILED_PRECONDITION", Gemini.FailedPrecondition)
   ]
+
+genModel :: QC.Gen Gemini.Model
+genModel = QC.oneof
+  [ genKnownModel
+  , Gemini.Custom . T.pack <$> QC.listOf1 QC.arbitraryASCIIChar
+  ]
+
+genKnownModel :: QC.Gen Gemini.Model
+genKnownModel = QC.elements Gemini.knownModels

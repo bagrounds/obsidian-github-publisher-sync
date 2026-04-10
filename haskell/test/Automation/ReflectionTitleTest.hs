@@ -6,6 +6,7 @@ import Test.Tasty (TestTree, testGroup)
 import Test.Tasty.HUnit (testCase, (@?=), assertBool)
 
 import Automation.ReflectionTitle
+import qualified Automation.Gemini as Gemini
 
 tests :: TestTree
 tests = testGroup "ReflectionTitle"
@@ -22,8 +23,8 @@ tests = testGroup "ReflectionTitle"
 
 defaultModelTests :: TestTree
 defaultModelTests = testGroup "defaultTitleModel"
-  [ testCase "has a value" $
-      assertBool "should not be empty" $ not (T.null defaultTitleModel)
+  [ testCase "is Gemini25Flash" $
+      defaultTitleModel @?= Gemini.Gemini25Flash
   ]
 
 reflectionNeedsTitleTests :: TestTree

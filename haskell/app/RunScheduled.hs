@@ -5,7 +5,7 @@ import Control.Exception (SomeException, try)
 import Data.Char (isDigit)
 import Data.Map.Strict (Map)
 import qualified Data.Map.Strict as Map
-import Data.Maybe (fromMaybe, mapMaybe)
+import Data.Maybe (mapMaybe)
 import Data.Text (Text)
 import qualified Data.Text as T
 import qualified Data.Text.IO as TIO
@@ -117,7 +117,7 @@ inferenceDashboards =
 -- Shared Gemini caller for fiction/title generators
 -- ---------------------------------------------------------------------------
 
-callGeminiForGenerator :: Context.AppContext -> [Text] -> (Text, Text) -> IO (Text, Text)
+callGeminiForGenerator :: Context.AppContext -> [Gemini.Model] -> (Text, Text) -> IO (Text, Text)
 callGeminiForGenerator context models (systemPrompt, userPrompt) = do
   let combinedPrompt = systemPrompt <> "\n\n" <> userPrompt
       config = Gemini.defaultGenerationConfig { Gemini.gcTemperature = 0.9, Gemini.gcMaxOutputTokens = 2048 }
@@ -126,7 +126,7 @@ callGeminiForGenerator context models (systemPrompt, userPrompt) = do
       result <- Gemini.generateContentWithFallback (Context.httpManager context) primary fallbacks combinedPrompt (Context.geminiApiKey context) config
       case result of
         Left err -> error $ "Gemini API error: " <> show err
-        Right resp -> pure (Gemini.grText resp, Gemini.grModel' resp)
+        Right resp -> pure (Gemini.grText resp, Gemini.modelToText (Gemini.grModel' resp))
     [] -> error "No models provided for Gemini generation"
 
 -- ---------------------------------------------------------------------------
@@ -435,7 +435,8 @@ runBlogSeries context seriesId = do
       envModel <- lookupEnvText "BLOG_GEMINI_MODEL"
       let models = case envModel of
             Just em | not (T.null (T.strip em)) ->
-              T.strip em : filter (/= T.strip em) (bsrcModelChain runConfig)
+              let parsed = Gemini.modelFromText (T.strip em)
+              in parsed : filter (/= parsed) (bsrcModelChain runConfig)
             _ -> bsrcModelChain runConfig
 
       priorityUser <- lookupEnvText (T.unpack (bsrcPriorityUserEnvVar runConfig))
@@ -460,7 +461,7 @@ runBlogSeries context seriesId = do
         Left err -> error $ "Blog generation failed: " <> show err
         Right resp -> do
           let rawText = stripCodeFences (Gemini.grText resp)
-              usedModel = Gemini.grModel' resp
+              usedModel = Gemini.modelToText (Gemini.grModel' resp)
           case parseGeneratedPost rawText of
             Nothing -> error "Failed to parse generated blog post"
             Just (body, rawTitle) -> do
@@ -632,7 +633,7 @@ runInternalLinking context = do
   logMsg "▶️  internal-linking"
 
   envModel <- lookupEnvText "INTERNAL_LINKING_MODEL"
-  let model = fromMaybe IL.defaultLinkingModel envModel
+  let model = maybe IL.defaultLinkingModel Gemini.modelFromText envModel
   result <- IL.run manager model vaultDir
   logMsg $ "  🔗 Internal linking: "
         <> T.pack (show (IL.lrFilesVisited result)) <> " visited, "
@@ -689,9 +690,9 @@ runAiFiction context = do
         True -> do
           -- Build model chain
           envModel <- lookupEnvText "FICTION_MODEL"
-          let defaultChain = [defaultFictionModel, "gemini-2.5-flash-lite", "gemini-3.1-flash-lite-preview"]
+          let defaultChain = [defaultFictionModel, Gemini.Gemini25FlashLite, Gemini.Gemini31FlashLite]
               models = case envModel of
-                Just em | not (T.null (T.strip em)) -> T.strip em : defaultChain
+                Just em | not (T.null (T.strip em)) -> Gemini.modelFromText (T.strip em) : defaultChain
                 _ -> defaultChain
 
           let config = FictionConfig
@@ -750,10 +751,11 @@ tryTitleForDate context date = do
 
           -- Build model chain
           envModel <- lookupEnvText "REFLECTION_TITLE_MODEL"
-          let defaultChain = [defaultTitleModel, "gemini-2.5-flash-lite", "gemini-3.1-flash-lite-preview"]
+          let defaultChain = [defaultTitleModel, Gemini.Gemini25FlashLite, Gemini.Gemini31FlashLite]
               models = case envModel of
                 Just em | not (T.null (T.strip em)) ->
-                  T.strip em : filter (/= T.strip em) defaultChain
+                  let parsed = Gemini.modelFromText (T.strip em)
+                  in parsed : filter (/= parsed) defaultChain
                 _ -> defaultChain
 
           let config = ReflectionTitleConfig

@@ -58,8 +58,8 @@ import qualified Data.Text.Encoding as TE
 -- Constants
 -- --------------------------------------------------------------------------
 
-defaultLinkingModel :: Text
-defaultLinkingModel = "gemini-3.1-flash-lite-preview"
+defaultLinkingModel :: Gemini.Model
+defaultLinkingModel = Gemini.Gemini31FlashLite
 
 minTitleLength :: Int
 minTitleLength = 8
@@ -653,13 +653,13 @@ buildIdentificationPrompt fileBody bookEntries =
         ]
   in systemPrompt <> "\n\nAvailable books:\n" <> bookList <> "\n\nDocument body:\n" <> fileBody
 
-identifyBooksWithGemini :: Manager -> Secret -> Text -> Text -> [ContentEntry] -> IO (Either Text [Text])
+identifyBooksWithGemini :: Manager -> Secret -> Gemini.Model -> Text -> [ContentEntry] -> IO (Either Text [Text])
 identifyBooksWithGemini _ _ _ _ [] = pure (Right [])
 identifyBooksWithGemini manager apiKey model fileBody bookEntries = do
   let prompt = buildIdentificationPrompt fileBody bookEntries
   retryLoop manager apiKey model prompt 0 initialBackoffUs
 
-retryLoop :: Manager -> Secret -> Text -> Text -> Int -> Int -> IO (Either Text [Text])
+retryLoop :: Manager -> Secret -> Gemini.Model -> Text -> Int -> Int -> IO (Either Text [Text])
 retryLoop manager apiKey model prompt attempt backoff = do
   result <- Gemini.generateContent manager Gemini.Request
     { Gemini.grPrompt           = prompt
@@ -788,10 +788,10 @@ dropContinuationLines (l : rest)
 isContinuationLine :: Text -> Bool
 isContinuationLine l = not (T.null l) && T.isPrefixOf " " l
 
-recordLinkAnalysis :: FilePath -> Text -> Text -> IO ()
+recordLinkAnalysis :: FilePath -> Gemini.Model -> Text -> IO ()
 recordLinkAnalysis filePath model timestamp =
   updateFrontmatterFields filePath
-    [ ("link_analysis_model", YamlText model)
+    [ ("link_analysis_model", YamlText (Gemini.modelToText model))
     , ("link_analysis_time", YamlText timestamp)
     , ("force_analyze_links", YamlBool False)
     ]
@@ -800,7 +800,7 @@ recordLinkAnalysis filePath model timestamp =
 -- File processing
 -- --------------------------------------------------------------------------
 
-processFile :: Manager -> Secret -> Text -> FilePath -> [ContentEntry] -> IO FileResult
+processFile :: Manager -> Secret -> Gemini.Model -> FilePath -> [ContentEntry] -> IO FileResult
 processFile manager apiKey model filePath index = do
   let contentDir   = takeDirectory (takeDirectory filePath)
       relativePath = makeRelPathFromContentDir contentDir filePath
@@ -886,9 +886,9 @@ nowIso = do
 -- Orchestration
 -- --------------------------------------------------------------------------
 
-run :: Manager -> Text -> FilePath -> IO LinkingResult
+run :: Manager -> Gemini.Model -> FilePath -> IO LinkingResult
 run manager model contentDir = do
-  putStrLn $ "🔗 Internal linking: model=" <> T.unpack model
+  putStrLn $ "🔗 Internal linking: model=" <> T.unpack (Gemini.modelToText model)
 
   index <- buildContentIndex contentDir
   putStrLn $ "  📚 Index: " <> show (length index) <> " books"
@@ -917,7 +917,7 @@ run manager model contentDir = do
 
   pure result
 
-processFiles :: Manager -> Secret -> Text -> FilePath -> [ContentEntry] -> [Text] -> IO [FileResult]
+processFiles :: Manager -> Secret -> Gemini.Model -> FilePath -> [ContentEntry] -> [Text] -> IO [FileResult]
 processFiles manager apiKey model contentDir index filesToVisit = do
   inferenceRef <- newIORef (0 :: Int)
   resultRef    <- newIORef ([] :: [FileResult])

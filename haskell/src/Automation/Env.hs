@@ -9,7 +9,7 @@ module Automation.Env
 
 import Control.Monad (filterM)
 import Data.List (intercalate)
-import Data.Maybe (fromMaybe, isJust)
+import Data.Maybe (isJust)
 import Data.Text (Text)
 import qualified Data.Text as T
 import qualified Data.Text.IO as TIO
@@ -107,8 +107,8 @@ validateEnvironment = do
 
   gemini <- Gemini.Config
     <$> fmap Secret (requireEnv "GEMINI_API_KEY")
-    <*> fmap (fromMaybe Gemini.defaultModel) (lookupEnvText "GEMINI_MODEL")
-    <*> fmap (fromMaybe Gemini.defaultQuestionModel) (lookupEnvText "GEMINI_QUESTION_MODEL")
+    <*> fmap (maybe Gemini.defaultModel Gemini.modelFromText) (lookupEnvText "GEMINI_MODEL")
+    <*> fmap (maybe Gemini.defaultQuestionModel Gemini.modelFromText) (lookupEnvText "GEMINI_QUESTION_MODEL")
 
   obsidian <- ObsidianCredentials
     <$> fmap Secret (requireEnv "OBSIDIAN_AUTH_TOKEN")

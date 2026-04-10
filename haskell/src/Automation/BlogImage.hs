@@ -1,11 +1,16 @@
 module Automation.BlogImage
   ( ImageGenerationResult (..)
+  , ImageProvider (..)
+  , PromptDescriber (..)
   , ImageProviderConfig (..)
   , BackfillConfig (..)
   , BackfillResult (..)
   , ContentDirectory (..)
   , CandidateEligibility (..)
   , IneligibilityReason (..)
+  , providerName
+  , generateImage
+  , describeContent
   , hasEmbeddedImage
   , shouldRegenerateImage
   , insertImageEmbed
@@ -95,13 +100,36 @@ data ImageGenerationResult = ImageGenerationResult
   , igrImagePrompt :: Maybe Text
   } deriving (Show, Eq)
 
+data ImageProvider
+  = Cloudflare Text  -- account ID
+  | HuggingFace
+  | Together
+  | Pollinations
+  | GeminiImage
+  deriving (Show, Eq)
+
+providerName :: ImageProvider -> Text
+providerName = \case
+  Cloudflare _ -> "cloudflare"
+  HuggingFace  -> "huggingface"
+  Together     -> "together"
+  Pollinations -> "pollinations"
+  GeminiImage  -> "gemini"
+
+data PromptDescriber = PromptDescriber
+  { describerApiKey :: Secret
+  , describerModel  :: Gemini.Model
+  } deriving (Eq)
+
+instance Show PromptDescriber where
+  show (PromptDescriber key mdl) = "PromptDescriber " <> show key <> " " <> show mdl
+
 data ImageProviderConfig = ImageProviderConfig
-  { ipcName           :: Text
-  , ipcApiKey         :: Secret
-  , ipcModel          :: Text
-  , ipcGenerator      :: Manager -> Text -> Text -> Text -> IO (Either Text (LBS.ByteString, Text))
-  , ipcDescribePrompt :: Maybe (Manager -> Text -> Text -> Text -> IO (Either Text Text))
-  }
+  { ipcProvider  :: ImageProvider
+  , ipcApiKey    :: Secret
+  , ipcModel     :: Text
+  , ipcDescriber :: Maybe PromptDescriber
+  } deriving (Show, Eq)
 
 data BackfillConfig = BackfillConfig
   { backfillRepoRoot       :: FilePath
@@ -875,6 +903,25 @@ geminiModelFallback Gemini.Gemini31FlashImage = Gemini.Gemini25Flash
 geminiModelFallback _                         = Gemini.Gemini20Flash
 
 --------------------------------------------------------------------------------
+-- Provider dispatch
+--------------------------------------------------------------------------------
+
+generateImage :: Manager -> ImageProviderConfig -> Text -> IO (Either Text (LBS.ByteString, Text))
+generateImage manager config prompt =
+  let key = unSecret (ipcApiKey config)
+      mdl = ipcModel config
+  in case ipcProvider config of
+    Cloudflare accountId -> generateWithCloudflare manager key accountId mdl prompt
+    HuggingFace          -> generateWithHuggingFace manager key mdl prompt
+    Together             -> generateWithTogether manager key mdl prompt
+    Pollinations         -> generateWithPollinations manager mdl prompt
+    GeminiImage          -> generateImageWithGemini manager key mdl prompt
+
+describeContent :: Manager -> PromptDescriber -> Text -> IO (Either Text Text)
+describeContent manager describer =
+  describeImageWithGemini manager (unSecret (describerApiKey describer)) (describerModel describer)
+
+--------------------------------------------------------------------------------
 -- Provider resolution
 --------------------------------------------------------------------------------
 
@@ -882,7 +929,7 @@ resolveImageProviders :: Map Text Text -> [ImageProviderConfig]
 resolveImageProviders env =
   let geminiKey = Map.lookup "GEMINI_API_KEY" env
       describerModel = maybe defaultDescriberModel Gemini.modelFromText (Map.lookup "PROMPT_DESCRIBER_MODEL" env)
-      describer = fmap (`mkDescriber` describerModel) geminiKey
+      describer = fmap (\key -> PromptDescriber (Secret key) describerModel) geminiKey
   in catMaybes
     [ mkCloudflareProvider env describer
     , mkHuggingFaceProvider env describer
@@ -891,75 +938,62 @@ resolveImageProviders env =
     , mkGeminiProvider env describer
     ]
 
-mkDescriber :: Text -> Gemini.Model -> Manager -> Text -> Text -> Text -> IO (Either Text Text)
-mkDescriber geminiKey describerModel mgr _apiKey _model =
-  describeImageWithGemini mgr geminiKey describerModel
-
-mkCloudflareProvider :: Map Text Text -> Maybe (Manager -> Text -> Text -> Text -> IO (Either Text Text)) -> Maybe ImageProviderConfig
+mkCloudflareProvider :: Map Text Text -> Maybe PromptDescriber -> Maybe ImageProviderConfig
 mkCloudflareProvider env describer = do
   cfToken <- Map.lookup "CLOUDFLARE_API_TOKEN" env
   cfAccountId <- Map.lookup "CLOUDFLARE_ACCOUNT_ID" env
   let cfModel = fromMaybe "@cf/black-forest-labs/flux-1-schnell" (Map.lookup "CLOUDFLARE_IMAGE_MODEL" env)
   pure ImageProviderConfig
-    { ipcName = "cloudflare"
+    { ipcProvider = Cloudflare cfAccountId
     , ipcApiKey = Secret cfToken
     , ipcModel = cfModel
-    , ipcGenerator = \mgr apiKey _model prompt ->
-        generateWithCloudflare mgr apiKey cfAccountId cfModel prompt
-    , ipcDescribePrompt = describer
+    , ipcDescriber = describer
     }
 
-mkHuggingFaceProvider :: Map Text Text -> Maybe (Manager -> Text -> Text -> Text -> IO (Either Text Text)) -> Maybe ImageProviderConfig
+mkHuggingFaceProvider :: Map Text Text -> Maybe PromptDescriber -> Maybe ImageProviderConfig
 mkHuggingFaceProvider env describer = do
   hfToken <- Map.lookup "HUGGINGFACE_API_TOKEN" env
   let hfModel = fromMaybe "black-forest-labs/FLUX.1-schnell" (Map.lookup "HUGGINGFACE_IMAGE_MODEL" env)
   pure ImageProviderConfig
-    { ipcName = "huggingface"
+    { ipcProvider = HuggingFace
     , ipcApiKey = Secret hfToken
     , ipcModel = hfModel
-    , ipcGenerator = \mgr apiKey _model prompt ->
-        generateWithHuggingFace mgr apiKey hfModel prompt
-    , ipcDescribePrompt = describer
+    , ipcDescriber = describer
     }
 
-mkTogetherProvider :: Map Text Text -> Maybe (Manager -> Text -> Text -> Text -> IO (Either Text Text)) -> Maybe ImageProviderConfig
+mkTogetherProvider :: Map Text Text -> Maybe PromptDescriber -> Maybe ImageProviderConfig
 mkTogetherProvider env describer = do
   togetherKey <- Map.lookup "TOGETHER_API_TOKEN" env
   let togetherModel = fromMaybe "black-forest-labs/FLUX.1-schnell-Free" (Map.lookup "TOGETHER_IMAGE_MODEL" env)
   pure ImageProviderConfig
-    { ipcName = "together"
+    { ipcProvider = Together
     , ipcApiKey = Secret togetherKey
     , ipcModel = togetherModel
-    , ipcGenerator = \mgr apiKey _model prompt ->
-        generateWithTogether mgr apiKey togetherModel prompt
-    , ipcDescribePrompt = describer
+    , ipcDescriber = describer
     }
 
-mkPollinationsProvider :: Map Text Text -> Maybe (Manager -> Text -> Text -> Text -> IO (Either Text Text)) -> Maybe ImageProviderConfig
+mkPollinationsProvider :: Map Text Text -> Maybe PromptDescriber -> Maybe ImageProviderConfig
 mkPollinationsProvider env describer =
   case Map.lookup "POLLINATIONS_ENABLED" env of
     Just "true" ->
       let polModel = fromMaybe "flux" (Map.lookup "POLLINATIONS_IMAGE_MODEL" env)
       in Just ImageProviderConfig
-        { ipcName = "pollinations"
+        { ipcProvider = Pollinations
         , ipcApiKey = Secret ""
         , ipcModel = polModel
-        , ipcGenerator = \mgr _apiKey _model prompt ->
-            generateWithPollinations mgr polModel prompt
-        , ipcDescribePrompt = describer
+        , ipcDescriber = describer
         }
     _ -> Nothing
 
-mkGeminiProvider :: Map Text Text -> Maybe (Manager -> Text -> Text -> Text -> IO (Either Text Text)) -> Maybe ImageProviderConfig
+mkGeminiProvider :: Map Text Text -> Maybe PromptDescriber -> Maybe ImageProviderConfig
 mkGeminiProvider env describer = do
   geminiKey <- Map.lookup "GEMINI_API_KEY" env
   let geminiModel = maybe Gemini.Gemini31FlashImage Gemini.modelFromText (Map.lookup "IMAGE_GEMINI_MODEL" env)
   pure ImageProviderConfig
-    { ipcName = "gemini"
+    { ipcProvider = GeminiImage
     , ipcApiKey = Secret geminiKey
     , ipcModel = Gemini.modelToText geminiModel
-    , ipcGenerator = generateImageWithGemini
-    , ipcDescribePrompt = describer
+    , ipcDescriber = describer
     }
 
 --------------------------------------------------------------------------------
@@ -1022,7 +1056,7 @@ generateAndSaveImage manager provider notePath attachmentsDir content baseName =
       putStrLn $ "⚠️ Failed to resolve prompt: " <> T.unpack err
       pure $ ImageGenerationResult True Nothing Nothing Nothing
     Right prompt -> do
-      imageResult <- ipcGenerator provider manager (unSecret (ipcApiKey provider)) (ipcModel provider) prompt
+      imageResult <- generateImage manager provider prompt
       case imageResult of
         Left err -> do
           putStrLn $ "❌ Image generation failed: " <> T.unpack err
@@ -1047,9 +1081,9 @@ resolvePrompt :: Manager -> ImageProviderConfig -> Text -> IO (Either Text Text)
 resolvePrompt manager provider content =
   case extractFrontmatterValue content "image_prompt" of
     Just cached | not (T.null (T.strip cached)) -> pure (Right cached)
-    _ -> case ipcDescribePrompt provider of
+    _ -> case ipcDescriber provider of
       Just describer -> do
-        result <- describer manager (unSecret (ipcApiKey provider)) (ipcModel provider) content
+        result <- describeContent manager describer content
         pure $ fmap sanitizeForYaml result
       Nothing -> pure $ Right (buildImagePrompt content)
 
@@ -1166,7 +1200,7 @@ processWithProviders manager config (candidate : rest) providerIdx result = do
       directoryLabel = T.unpack (contentDirectoryToText (bcDirectory candidate))
   putStrLn $ "🎨 [" <> progress <> "] " <> action <> " image for "
           <> directoryLabel <> "/" <> T.unpack (bcFilename candidate)
-          <> " via " <> T.unpack (ipcName provider)
+          <> " via " <> T.unpack (providerName (ipcProvider provider))
   genResult <- tryGenerate manager provider candidate (backfillAttachmentsDir config)
   case genResult of
     Right imgResult
@@ -1190,14 +1224,14 @@ processWithProviders manager config (candidate : rest) providerIdx result = do
           processWithProviders manager config rest providerIdx newResult
     Left err
       | isDailyQuotaError err || isQuotaError err || isProviderUnavailableError err -> do
-          putStrLn $ "⚠️  Quota/unavailable on " <> T.unpack (ipcName provider) <> ": " <> T.unpack err
+          putStrLn $ "⚠️  Quota/unavailable on " <> T.unpack (providerName (ipcProvider provider)) <> ": " <> T.unpack err
           let nextIdx = providerIdx + 1
           if nextIdx < length (backfillProviders config)
             then do
               let nextProvider = backfillProviders config !! nextIdx
               putStrLn $ "🔄 Switching to provider " <> show (nextIdx + 1)
                      <> "/" <> show (length (backfillProviders config))
-                     <> ": " <> T.unpack (ipcName nextProvider)
+                     <> ": " <> T.unpack (providerName (ipcProvider nextProvider))
               processWithProviders manager config (candidate : rest) nextIdx result
             else do
               putStrLn $ "🛑 All " <> show (length (backfillProviders config)) <> " providers exhausted"

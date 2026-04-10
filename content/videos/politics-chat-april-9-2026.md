@@ -10,7 +10,7 @@ Channel: Heather Cox Richardson
 tags:
 youtube: https://youtu.be/Vg1GIFii-8A
 ---
-[Home](../index.md) > [Videos](./index.md)  
+[Home](../index.md) > [Videos](./index.md) | [🏛️🇺🇸📖 Heather Cox Richardson](../people/heather-cox-richardson.md)  
 # 🏛️🗣️💬 Politics Chat, April 9, 2026  
 ![Politics Chat, April 9, 2026](https://youtu.be/Vg1GIFii-8A)  
   

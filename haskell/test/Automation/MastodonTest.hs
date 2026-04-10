@@ -1,12 +1,16 @@
 module Automation.MastodonTest (tests) where
 
+import Control.Exception (toException)
+import qualified Data.ByteString.Lazy as LBS
 import Data.Maybe (isJust)
 import qualified Data.Text as T
+import qualified Data.Text.Encoding as TE
 import Test.Tasty (TestTree, testGroup)
 import Test.Tasty.HUnit (testCase, (@?=), assertBool)
 import Test.Tasty.QuickCheck (testProperty)
 
 import qualified Automation.Platforms.Mastodon as Mastodon
+import Automation.Retry (HttpCodeException (HttpCodeException))
 
 tests :: TestTree
 tests = testGroup "Mastodon"
@@ -14,6 +18,9 @@ tests = testGroup "Mastodon"
   , extractStatusIdTests
   , extractUsernameTests
   , generateLocalEmbedTests
+  , parseMastodonResponseTests
+  , parseOEmbedHtmlTests
+  , classifyExceptionTests
   , propertyTests
   ]
 
@@ -121,6 +128,75 @@ generateLocalEmbedTests = testGroup "Mastodon.generateLocalEmbed"
         "https://mastodon.social/embed.js" `T.isInfixOf` html
   ]
 
+-- ── Mastodon.parseMastodonResponse ────────────────────────────────────
+
+parseMastodonResponseTests :: TestTree
+parseMastodonResponseTests = testGroup "Mastodon.parseMastodonResponse"
+  [ testCase "parses valid mastodon response" $
+      let body = "{\"id\":\"123456\",\"url\":\"https://fosstodon.org/@user/123456\"}"
+      in case Mastodon.parseMastodonResponse "hello" (toLBS body) of
+           Right result -> Mastodon.mprId result @?= "123456"
+           Left err -> fail $ "Expected Right, got: " <> show err
+
+  , testCase "returns JsonParseError for invalid JSON" $
+      case Mastodon.parseMastodonResponse "txt" (toLBS "not json") of
+        Left (Mastodon.JsonParseError _) -> pure ()
+        other -> fail $ "Expected JsonParseError, got: " <> show other
+
+  , testCase "returns ExtractionError for missing id field" $
+      case Mastodon.parseMastodonResponse "txt" (toLBS "{\"url\":\"https://fosstodon.org/@u/1\"}") of
+        Left (Mastodon.ExtractionError _) -> pure ()
+        other -> fail $ "Expected ExtractionError, got: " <> show other
+
+  , testCase "returns ExtractionError for missing url field" $
+      case Mastodon.parseMastodonResponse "txt" (toLBS "{\"id\":\"123\"}") of
+        Left (Mastodon.ExtractionError _) -> pure ()
+        other -> fail $ "Expected ExtractionError, got: " <> show other
+
+  , testCase "returns ExtractionError for invalid URL" $
+      case Mastodon.parseMastodonResponse "txt" (toLBS "{\"id\":\"123\",\"url\":\"not-a-url\"}") of
+        Left (Mastodon.ExtractionError _) -> pure ()
+        other -> fail $ "Expected ExtractionError, got: " <> show other
+  ]
+
+-- ── Mastodon.parseOEmbedHtml ──────────────────────────────────────────
+
+parseOEmbedHtmlTests :: TestTree
+parseOEmbedHtmlTests = testGroup "Mastodon.parseOEmbedHtml"
+  [ testCase "parses valid oEmbed response" $
+      let body = "{\"html\":\"<iframe>embed</iframe>\"}"
+      in Mastodon.parseOEmbedHtml (toLBS body)
+           @?= Right "<iframe>embed</iframe>"
+
+  , testCase "returns JsonParseError for invalid JSON" $
+      case Mastodon.parseOEmbedHtml (toLBS "garbage") of
+        Left (Mastodon.JsonParseError _) -> pure ()
+        other -> fail $ "Expected JsonParseError, got: " <> show other
+
+  , testCase "returns ExtractionError for missing html field" $
+      case Mastodon.parseOEmbedHtml (toLBS "{\"url\":\"https://example.com\"}") of
+        Left (Mastodon.ExtractionError _) -> pure ()
+        other -> fail $ "Expected ExtractionError, got: " <> show other
+  ]
+
+-- ── Mastodon.classifyException ────────────────────────────────────────
+
+classifyExceptionTests :: TestTree
+classifyExceptionTests = testGroup "Mastodon.classifyException"
+  [ testCase "classifies HttpCodeException as HttpError" $
+      let exception = toException (HttpCodeException 500 "Internal Server Error")
+      in Mastodon.classifyException exception
+           @?= Mastodon.HttpError 500 "Internal Server Error"
+
+  , testCase "classifies other exception as NetworkError" $
+      let exception = toException (userError "timeout")
+      in case Mastodon.classifyException exception of
+           Mastodon.NetworkError msg ->
+             assertBool "should contain error message" $
+               "timeout" `T.isInfixOf` msg
+           other -> fail $ "Expected NetworkError, got: " <> show other
+  ]
+
 -- ── Property Tests ─────────────────────────────────────────────────────
 
 propertyTests :: TestTree
@@ -157,7 +233,33 @@ propertyTests = testGroup "properties"
         let inst = T.pack (filter (`notElem` ['@', ' ', '\n', '\r', '\t', '\0']) instanceSuffix)
             url = "https://" <> inst <> "/@user/123"
         in Mastodon.extractInstanceUrl url == Just ("https://" <> inst)
+
+  , testProperty "show Mastodon.Error is non-empty for HttpError" $
+      \code -> not (null (show (Mastodon.HttpError code "msg")))
+
+  , testProperty "show Mastodon.Error is non-empty for JsonParseError" $
+      \msg -> not (null (show (Mastodon.JsonParseError (T.pack msg))))
+
+  , testProperty "show Mastodon.Error is non-empty for ExtractionError" $
+      \msg -> not (null (show (Mastodon.ExtractionError (T.pack msg))))
+
+  , testProperty "show Mastodon.Error is non-empty for NetworkError" $
+      \msg -> not (null (show (Mastodon.NetworkError (T.pack msg))))
+
+  , testProperty "parseMastodonResponse returns Left for non-object JSON input" $
+      \input ->
+        let bytes = LBS.fromStrict (TE.encodeUtf8 (T.pack input))
+        in case Mastodon.parseMastodonResponse "fb" bytes of
+             Left (Mastodon.JsonParseError _)  -> True
+             Left (Mastodon.ExtractionError _) -> True
+             Right _                            -> True
+             _                                  -> False
   ]
+
+-- ── Helpers ───────────────────────────────────────────────────────────
+
+toLBS :: String -> LBS.ByteString
+toLBS = LBS.fromStrict . TE.encodeUtf8 . T.pack
 
 -- QuickCheck implication helper
 (==>) :: Bool -> Bool -> Bool

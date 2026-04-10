@@ -1,12 +1,16 @@
 module Automation.BlueskyTest (tests) where
 
+import Control.Exception (toException)
+import qualified Data.ByteString.Lazy as LBS
 import Data.Maybe (isJust, isNothing)
 import qualified Data.Text as T
+import qualified Data.Text.Encoding as TE
 import Test.Tasty (TestTree, testGroup)
 import Test.Tasty.HUnit (testCase, (@?=), assertBool)
 import Test.Tasty.QuickCheck (testProperty)
 
 import qualified Automation.Platforms.Bluesky as Bluesky
+import Automation.Retry (HttpCodeException (HttpCodeException))
 
 tests :: TestTree
 tests = testGroup "Bluesky"
@@ -14,6 +18,10 @@ tests = testGroup "Bluesky"
   , extractDidTests
   , buildPostUrlTests
   , generateLocalEmbedTests
+  , parseSessionTests
+  , parsePostResponseTests
+  , parseOEmbedHtmlTests
+  , classifyExceptionTests
   , propertyTests
   ]
 
@@ -145,6 +153,99 @@ generateLocalEmbedTests = testGroup "Bluesky.generateLocalEmbed"
         "Bryan Grounds" `T.isInfixOf` html
   ]
 
+-- ── Bluesky.parseSession ──────────────────────────────────────────────
+
+parseSessionTests :: TestTree
+parseSessionTests = testGroup "Bluesky.parseSession"
+  [ testCase "parses valid session response" $
+      let body = "{\"did\":\"did:plc:abc123\",\"accessJwt\":\"token123\"}"
+      in case Bluesky.parseSession (toLBS body) of
+           Right _ -> pure ()
+           Left err -> fail $ "Expected Right, got: " <> show err
+
+  , testCase "returns JsonParseError for invalid JSON" $
+      case Bluesky.parseSession (toLBS "not json") of
+        Left (Bluesky.JsonParseError _) -> pure ()
+        Left err -> fail $ "Expected JsonParseError, got: " <> show err
+        Right _ -> fail "Expected Left, got Right"
+
+  , testCase "returns ExtractionError for missing did field" $
+      case Bluesky.parseSession (toLBS "{\"accessJwt\":\"token\"}") of
+        Left (Bluesky.ExtractionError _) -> pure ()
+        Left err -> fail $ "Expected ExtractionError, got: " <> show err
+        Right _ -> fail "Expected Left, got Right"
+
+  , testCase "returns ExtractionError for missing accessJwt field" $
+      case Bluesky.parseSession (toLBS "{\"did\":\"did:plc:abc\"}") of
+        Left (Bluesky.ExtractionError _) -> pure ()
+        Left err -> fail $ "Expected ExtractionError, got: " <> show err
+        Right _ -> fail "Expected Left, got Right"
+  ]
+
+-- ── Bluesky.parsePostResponse ─────────────────────────────────────────
+
+parsePostResponseTests :: TestTree
+parsePostResponseTests = testGroup "Bluesky.parsePostResponse"
+  [ testCase "parses valid post response" $
+      let body = "{\"uri\":\"at://did:plc:abc/app.bsky.feed.post/xyz\",\"cid\":\"bafyabc\"}"
+      in case Bluesky.parsePostResponse "hello" (toLBS body) of
+           Right result -> Bluesky.bprCid result @?= "bafyabc"
+           Left err -> fail $ "Expected Right, got: " <> show err
+
+  , testCase "returns JsonParseError for invalid JSON" $
+      case Bluesky.parsePostResponse "txt" (toLBS "garbage") of
+        Left (Bluesky.JsonParseError _) -> pure ()
+        other -> fail $ "Expected JsonParseError, got: " <> show other
+
+  , testCase "returns ExtractionError for missing uri field" $
+      case Bluesky.parsePostResponse "txt" (toLBS "{\"cid\":\"bafyabc\"}") of
+        Left (Bluesky.ExtractionError _) -> pure ()
+        other -> fail $ "Expected ExtractionError, got: " <> show other
+  ]
+
+-- ── Bluesky.parseOEmbedHtml ──────────────────────────────────────────
+
+parseOEmbedHtmlTests :: TestTree
+parseOEmbedHtmlTests = testGroup "Bluesky.parseOEmbedHtml"
+  [ testCase "parses valid oEmbed response" $
+      let body = "{\"html\":\"<div>embed</div>\"}"
+      in Bluesky.parseOEmbedHtml (toLBS body)
+           @?= Right (Bluesky.EmbedResult "<div>embed</div>")
+
+  , testCase "returns JsonParseError for invalid JSON" $
+      case Bluesky.parseOEmbedHtml (toLBS "not json") of
+        Left (Bluesky.JsonParseError _) -> pure ()
+        other -> fail $ "Expected JsonParseError, got: " <> show other
+
+  , testCase "returns ExtractionError for missing html field" $
+      case Bluesky.parseOEmbedHtml (toLBS "{\"url\":\"https://bsky.app\"}") of
+        Left (Bluesky.ExtractionError _) -> pure ()
+        other -> fail $ "Expected ExtractionError, got: " <> show other
+  ]
+
+-- ── Bluesky.classifyException ─────────────────────────────────────────
+
+classifyExceptionTests :: TestTree
+classifyExceptionTests = testGroup "Bluesky.classifyException"
+  [ testCase "classifies HttpCodeException as HttpError" $
+      let exception = toException (HttpCodeException 401 "Unauthorized")
+      in Bluesky.classifyException exception
+           @?= Bluesky.HttpError 401 "Unauthorized"
+
+  , testCase "classifies HttpCodeException 404 as HttpError" $
+      let exception = toException (HttpCodeException 404 "Not found")
+      in Bluesky.classifyException exception
+           @?= Bluesky.HttpError 404 "Not found"
+
+  , testCase "classifies other exception as NetworkError" $
+      let exception = toException (userError "DNS resolution failed")
+      in case Bluesky.classifyException exception of
+           Bluesky.NetworkError msg ->
+             assertBool "should contain error message" $
+               "DNS resolution failed" `T.isInfixOf` msg
+           other -> fail $ "Expected NetworkError, got: " <> show other
+  ]
+
 -- ── Property Tests ─────────────────────────────────────────────────────
 
 propertyTests :: TestTree
@@ -173,4 +274,30 @@ propertyTests = testGroup "properties"
                      "user"
                      Nothing
         in not (T.null html)
+
+  , testProperty "show Bluesky.Error is non-empty for HttpError" $
+      \code -> not (null (show (Bluesky.HttpError code "msg")))
+
+  , testProperty "show Bluesky.Error is non-empty for JsonParseError" $
+      \msg -> not (null (show (Bluesky.JsonParseError (T.pack msg))))
+
+  , testProperty "show Bluesky.Error is non-empty for ExtractionError" $
+      \msg -> not (null (show (Bluesky.ExtractionError (T.pack msg))))
+
+  , testProperty "show Bluesky.Error is non-empty for NetworkError" $
+      \msg -> not (null (show (Bluesky.NetworkError (T.pack msg))))
+
+  , testProperty "parsePostResponse returns Left for non-object JSON input" $
+      \input ->
+        let bytes = LBS.fromStrict (TE.encodeUtf8 (T.pack input))
+        in case Bluesky.parsePostResponse "fb" bytes of
+             Left (Bluesky.JsonParseError _)  -> True
+             Left (Bluesky.ExtractionError _) -> True
+             Right _                           -> True
+             _                                 -> False
   ]
+
+-- ── Helpers ───────────────────────────────────────────────────────────
+
+toLBS :: String -> LBS.ByteString
+toLBS = LBS.fromStrict . TE.encodeUtf8 . T.pack

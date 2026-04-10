@@ -9,6 +9,9 @@ Platform:
 Channel: AI Engineer
 tags:
 youtube: https://youtu.be/YpY83-kA7Bo
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_time: 2026-04-10T00:00:00Z
+force_analyze_links: false
 ---
 [Home](../index.md) > [Videos](./index.md)  
 # 🤖📅🦢🚲 2025 in LLMs so far, illustrated by Pelicans on Bicycles - Simon Willison  
@@ -60,7 +63,7 @@ youtube: https://youtu.be/YpY83-kA7Bo
 * **[💻✍️ The Art of Prompt Engineering with ChatGPT: A Hands-On Guide](../books/the-art-of-prompt-engineering-with-chatgpt-a-hands-on-guide.md)** by Nathan Hunter: 📖 A practical guide specifically focused on prompt engineering with ChatGPT.  
   
 ### ⚖️ AI Ethics, Safety, and Societal Impact  
-* 🤔 ***The Alignment Problem: Machine Learning and Human Values*** by Brian Christian: 🧭 Explores the critical challenge of aligning AI systems with human values, a core issue in AI safety.  
+* 🤔 ***[⚖️🤖 The Alignment Problem](../books/the-alignment-problem.md): Machine Learning and Human Values*** by Brian Christian: 🧭 Explores the critical challenge of aligning AI systems with human values, a core issue in AI safety.  
 * **[🤖🧑‍ Human Compatible: Artificial Intelligence and the Problem of Control](../books/human-compatible-artificial-intelligence-and-the-problem-of-control.md)** by Stuart Russell: ⚠️ A highly influential book by a leading AI researcher, addressing the existential risk posed by advanced AI and how to ensure AI remains beneficial to humanity.  
 * **[🤖⚠️📈 Superintelligence: Paths, Dangers, Strategies](../books/superintelligence-paths-dangers-strategies.md)** by Nick Bostrom: ⚠️ A thought-provoking and foundational text on the potential for superintelligent AI and the risks associated with it.  
 * **[🧬👥💾 Life 3.0: Being Human in the Age of Artificial Intelligence](../books/life-3-0.md)** by Max Tegmark: 🌎 Explores the vast potential and profound implications of AI for life on Earth and beyond, covering its impact on society, work, and even the future of consciousness.  

@@ -7,9 +7,13 @@ URL: https://bagrounds.org/topics/moral-foundations-theory
 link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-01T00:00:00Z
 force_analyze_links: false
+image_date: 2026-04-09T22:21:42Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: "A vibrant, minimalist illustration featuring six distinct, stylized geometric icons arranged in a balanced circular formation. Each icon represents a moral foundation: a glowing heart (Care), a symmetrical balance scale (Fairness), interlocking hands (Loyalty), an ornate crown (Authority), a pristine lotus flower (Sanctity), and a broken chain link (Liberty). The background is a soft, warm gradient of deep indigo transitioning to amber, suggesting the complexity of human intuition. The icons are rendered in a clean, modern aesthetic with metallic gold and matte textures. The overall composition uses negative space to convey harmony and structural integrity, reflecting the theory’s concept of innate psychological systems. The lighting is soft and diffused, highlighting the edges of each icon to create a sense of depth and weight, as if they are resting on a polished stone surface."
 ---
 [Home](../index.md) > [Topics](./index.md)  
 # ❤️‍🩹⚖️🤝👑😇🗽 Moral Foundations Theory  
+![topics-moral-foundations-theory](../topics-moral-foundations-theory.jpg)  
 ## 🤖 AI Summary  
 🧠 Moral Foundations Theory (MFT) is a social psychological theory that explains the origins of and variations in human moral reasoning. 👨‍🏫👩‍🏫 Developed primarily by psychologists [🧠🤝🐘 Jonathan Haidt](../people/jonathan-haidt.md) and Jesse Graham, the theory proposes that our moral judgments are not based on pure reason but are rooted in a set of innate, evolved psychological systems. These systems, or "foundations," act as a kind of intuitive ethics 🤔 we use to evaluate what's right and wrong.  
   

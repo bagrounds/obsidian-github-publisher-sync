@@ -1,13 +1,14 @@
 module Main where
 
 import Control.Concurrent (threadDelay)
+import Control.Monad (when)
 import Control.Exception (SomeException, try)
-import Data.Char (isDigit)
+import Data.Char (isAsciiLower, isDigit)
 import Data.List.NonEmpty (NonEmpty ((:|)))
 import qualified Data.List.NonEmpty as NE
 import Data.Map.Strict (Map)
 import qualified Data.Map.Strict as Map
-import Data.Maybe (mapMaybe)
+import Data.Maybe (fromMaybe, mapMaybe)
 import Data.Text (Text)
 import qualified Data.Text as T
 import qualified Data.Text.IO as TIO
@@ -166,14 +167,14 @@ buildEnvMap keys = Map.fromList <$> mapM lookupOne keys
 
 generateSlug :: Text -> Text
 generateSlug title =
-  let cleaned = T.filter (\c -> not (isEmoji c)) title
+  let cleaned = T.filter (not . isEmoji) title
       lowered = T.toLower (T.strip cleaned)
       alphanum = T.map (\c -> if isAlphaNumOrSpace c then c else ' ') lowered
       dashed = T.intercalate "-" (T.words alphanum)
       trimmed = T.dropWhile (== '-') (T.dropWhileEnd (== '-') dashed)
   in trimmed
   where
-    isAlphaNumOrSpace c = (c >= 'a' && c <= 'z') || (c >= '0' && c <= '9') || c == ' ' || c == '-'
+    isAlphaNumOrSpace c = isAsciiLower c || isDigit c || c == ' ' || c == '-'
     isEmoji c =
       (c >= '\x1f300' && c <= '\x1faff')
         || (c >= '\x2600' && c <= '\x27bf')
@@ -192,12 +193,8 @@ stripCodeFences t =
               Just rest -> rest
               Nothing -> case T.stripPrefix "```md\n" t of
                 Just rest -> rest
-                Nothing -> case T.stripPrefix "```\n" t of
-                  Just rest -> rest
-                  Nothing -> t
-      t2 = case T.stripSuffix "\n```" t1 of
-              Just rest -> rest
-              Nothing -> t1
+                Nothing -> fromMaybe t (T.stripPrefix "```\n" t)
+      t2 = fromMaybe t1 (T.stripSuffix "\n```" t1)
   in t2
 
 -- ---------------------------------------------------------------------------
@@ -208,21 +205,21 @@ syncFileToVault :: FilePath -> FilePath -> FilePath -> IO Bool
 syncFileToVault localPath vaultRelPath vaultDir = do
   let vaultPath = vaultDir </> vaultRelPath
   localExists <- doesFileExist localPath
-  case localExists of
-    False -> pure False
-    True -> do
+  if not localExists
+    then pure False
+    else do
       localContent <- TIO.readFile localPath
       vaultExists <- doesFileExist vaultPath
-      case vaultExists of
-        True -> do
+      if vaultExists
+        then do
           vaultContent <- TIO.readFile vaultPath
-          case localContent == vaultContent of
-            True  -> pure False
-            False -> do
+          if localContent == vaultContent
+            then pure False
+            else do
               createDirectoryIfMissing True (takeDirectory vaultPath)
               TIO.writeFile vaultPath localContent
               pure True
-        False -> do
+        else do
           createDirectoryIfMissing True (takeDirectory vaultPath)
           TIO.writeFile vaultPath localContent
           pure True
@@ -246,9 +243,9 @@ similarityThreshold = 0.25
 syncNewAiBlogPosts :: FilePath -> FilePath -> IO Int
 syncNewAiBlogPosts repoDir vaultDir = do
   repoExists <- doesDirectoryExist repoDir
-  case repoExists of
-    False -> pure 0
-    True -> do
+  if not repoExists
+    then pure 0
+    else do
       createDirectoryIfMissing True vaultDir
       -- Read all vault file contents for similarity comparison
       vaultEntries <- listDirectory vaultDir
@@ -266,17 +263,17 @@ syncNewAiBlogPosts repoDir vaultDir = do
 syncIfNew :: FilePath -> FilePath -> [Text] -> [(FilePath, Text)] -> FilePath -> IO Int
 syncIfNew srcDir dstDir vaultFilenames vaultContents filename = do
   let fnameText = T.pack filename
-  case fnameText `elem` vaultFilenames of
-    True -> pure 0
-    False -> do
+  if fnameText `elem` vaultFilenames
+    then pure 0
+    else do
       repoContent <- TIO.readFile (srcDir </> filename)
       let (bestScore, bestMatch) = findBestMatch repoContent vaultContents
-      case bestScore >= similarityThreshold of
-        True -> do
+      if bestScore >= similarityThreshold
+        then do
           logMsg $ "  ⏭️  Skipping " <> fnameText
             <> " (Jaccard " <> T.pack (showScore bestScore) <> " with " <> T.pack bestMatch <> ")"
           pure 0
-        False -> do
+        else do
           TIO.writeFile (dstDir </> filename) repoContent
           logMsg $ "  📄 New post → vault: " <> fnameText
             <> " (best Jaccard " <> T.pack (showScore bestScore) <> ")"
@@ -287,9 +284,9 @@ findBestMatch repoContent = foldl pickBest (0.0, "(none)")
   where
     pickBest (bestScore, bestFile) (vaultFile, vaultContent) =
       let score = wordJaccardSimilarity repoContent vaultContent
-      in case score > bestScore of
-           True  -> (score, vaultFile)
-           False -> (bestScore, bestFile)
+      in if score > bestScore
+           then (score, vaultFile)
+           else (bestScore, bestFile)
 
 showScore :: Double -> String
 showScore d =
@@ -305,9 +302,9 @@ copySeriesPosts vaultDir seriesId repoRoot = do
   let vaultSeriesDir = vaultDir </> T.unpack seriesId
       localSeriesDir = repoRoot </> T.unpack seriesId
   vaultExists <- doesDirectoryExist vaultSeriesDir
-  case vaultExists of
-    False -> pure 0
-    True -> do
+  if not vaultExists
+    then pure 0
+    else do
       entries <- listDirectory vaultSeriesDir
       let dateFiles = filter isDateFile entries
       createDirectoryIfMissing True localSeriesDir
@@ -330,9 +327,9 @@ copySeriesPosts vaultDir seriesId repoRoot = do
 readPreviousPostFilename :: FilePath -> IO (Maybe Text)
 readPreviousPostFilename metadataPath = do
   exists <- doesFileExist metadataPath
-  case exists of
-    False -> pure Nothing
-    True -> do
+  if not exists
+    then pure Nothing
+    else do
       content <- TIO.readFile metadataPath
       -- Simple parse: find "previousPostFilename":"value"
       case T.breakOn "\"previousPostFilename\"" content of
@@ -352,12 +349,12 @@ readPreviousPostFilename metadataPath = do
 extractRecentCreativeTitles :: FilePath -> Text -> IO [Text]
 extractRecentCreativeTitles reflectionsDir today = do
   exists <- doesDirectoryExist reflectionsDir
-  case exists of
-    False -> pure []
-    True -> do
+  if not exists
+    then pure []
+    else do
       entries <- listDirectory reflectionsDir
       let dateFiles = filter isReflectionFile entries
-          sorted = reverse $ filter (< T.unpack today <> ".md") (map id dateFiles)
+          sorted = reverse $ filter (< T.unpack today <> ".md") dateFiles
           recent = take 20 sorted
       titles <- mapM extractCreativeTitle recent
       pure (filter (not . T.null) titles)
@@ -384,9 +381,7 @@ extractRecentCreativeTitles reflectionsDir today = do
 -- ---------------------------------------------------------------------------
 
 yesterdayPacific :: IO Text
-yesterdayPacific = do
-  today <- todayPacificDay
-  pure $ formatDay (addDays (-1) today)
+yesterdayPacific = formatDay . addDays (-1) <$> todayPacificDay
 
 -- ---------------------------------------------------------------------------
 -- Task runners
@@ -419,11 +414,8 @@ runBlogSeries context seriesId = do
       removeFile (seriesDir </> postToRegen)
     Nothing -> do
       existsForToday <- blogPostExistsForToday seriesDir todayText
-      case existsForToday of
-        True -> do
-          logMsg $ "  ⏭️  Already generated for " <> todayText
-          pure ()
-        False -> pure ()
+      when existsForToday $
+        logMsg $ "  ⏭️  Already generated for " <> todayText
 
   -- Recheck after potential removal
   existsNow <- blogPostExistsForToday seriesDir todayText
@@ -592,7 +584,7 @@ runBackfillImages context = do
   -- 3. Update AI blog nav links — operates directly on vault files
   let aiBlogDir = vaultDir </> "ai-blog"
   navResults <- ensureAllNavLinks aiBlogDir
-  let modifiedCount = length (filter (\r -> nlrModified r) navResults)
+  let modifiedCount = length (filter nlrModified navResults)
   logMsg $ "  🔗 Nav links: " <> T.pack (show modifiedCount) <> " files updated"
 
   -- 4. Add update links from image backfill results
@@ -673,17 +665,17 @@ runAiFiction context = do
       reflectionPath = reflectionsDir </> T.unpack todayText <> ".md"
 
   exists <- doesFileExist reflectionPath
-  case exists of
-    False -> do
+  if not exists
+    then do
       logMsg $ "  📭 No reflection for " <> todayText <> ", skipping AI fiction"
       logMsg "✅ ai-fiction (skipped)"
-    True -> do
+    else do
       noteContent <- TIO.readFile reflectionPath
-      case reflectionNeedsFiction noteContent of
-        False -> do
+      if not (reflectionNeedsFiction noteContent)
+        then do
           logMsg $ "  ✅ Reflection " <> todayText <> " already has AI fiction"
           logMsg "✅ ai-fiction (already done)"
-        True -> do
+        else do
           -- Build model chain
           envModel <- lookupEnvText "FICTION_MODEL"
           let defaultChain = defaultFictionModel :| [Gemini.Gemini25FlashLite, Gemini.Gemini31FlashLite]
@@ -716,9 +708,9 @@ runReflectionTitle context = do
 
   -- Try today first, then yesterday
   todayDone <- tryTitleForDate context todayText
-  case todayDone of
-    True -> pure ()
-    False -> do
+  if todayDone
+    then pure ()
+    else do
       logMsg $ "  📅 Checking yesterday (" <> yesterday <> ")..."
       _ <- tryTitleForDate context yesterday
       pure ()
@@ -731,17 +723,17 @@ tryTitleForDate context date = do
       reflectionPath = reflectionsDir </> T.unpack date <> ".md"
 
   exists <- doesFileExist reflectionPath
-  case exists of
-    False -> do
+  if not exists
+    then do
       logMsg $ "  ⏭️  No reflection note for " <> date
       pure False
-    True -> do
+    else do
       content <- TIO.readFile reflectionPath
-      case reflectionNeedsTitle content date of
-        False -> do
+      if not (reflectionNeedsTitle content date)
+        then do
           logMsg $ "  ⏭️  Reflection title already set for " <> date
           pure False
-        True -> do
+        else do
           recentTitles <- extractRecentCreativeTitles reflectionsDir date
           logMsg $ "  📋 Found " <> T.pack (show (length recentTitles)) <> " recent titles for style reference"
 
@@ -811,29 +803,25 @@ main = do
   hSetBuffering stdout LineBuffering
 
   args <- parseCliArgs <$> getArgs
-  hourPacific <- case cliHourOverride args of
-    Just h  -> pure h
-    Nothing -> nowPacificHour
+  hourPacific <- maybe nowPacificHour pure (cliHourOverride args)
 
   -- Repo root: prefer REPO_ROOT env, then GITHUB_WORKSPACE, then "."
   mRepoRoot <- lookupEnv "REPO_ROOT"
   mWorkspace <- lookupEnv "GITHUB_WORKSPACE"
   let repoRoot = case mRepoRoot of
         Just r  -> r
-        Nothing -> case mWorkspace of
-          Just w  -> w
-          Nothing -> "."
+        Nothing -> fromMaybe "." mWorkspace
   manager <- newManager tlsManagerSettings
 
   tasks <- case cliTaskOverride args of
     Just taskStr ->
-      case isValidTaskId taskStr of
-        True -> case taskIdFromText taskStr of
+      if isValidTaskId taskStr
+        then case taskIdFromText taskStr of
           Just tid -> pure [tid]
           Nothing  -> do
             TIO.hPutStrLn stderr $ "❌ Unknown task: " <> taskStr
             exitFailure
-        False -> do
+        else do
           TIO.hPutStrLn stderr $ "❌ Unknown task: " <> taskStr
           exitFailure
     Nothing -> pure $ getScheduledTasks hourPacific

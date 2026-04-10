@@ -9,6 +9,7 @@ module Automation.Text
   , wordJaccardSimilarity
   ) where
 
+import Data.Maybe (fromMaybe)
 import Data.Set (Set)
 import qualified Data.Set as Set
 import Data.Text (Text)
@@ -87,7 +88,7 @@ tryStrategies :: [Text] -> Int -> Text -> [Text] -> Int -> Text
 tryStrategies contentLines topicIndex urlLine trailingLines maxGraphemes =
   let allLines = contentLines <> [urlLine] <> trailingLines
       originalText = T.intercalate "\n" allLines
-  in maybe (truncateToGraphemeLimit originalText maxGraphemes) id
+  in fromMaybe (truncateToGraphemeLimit originalText maxGraphemes)
        $  strategy1 contentLines topicIndex urlLine trailingLines maxGraphemes
       <|> strategy2 contentLines topicIndex urlLine trailingLines maxGraphemes
       <|> strategy3 contentLines topicIndex urlLine trailingLines maxGraphemes

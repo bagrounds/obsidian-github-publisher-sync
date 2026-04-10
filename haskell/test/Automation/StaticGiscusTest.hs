@@ -1,5 +1,6 @@
 module Automation.StaticGiscusTest (tests) where
 
+import Data.Maybe (isJust)
 import qualified Data.Map.Strict as Map
 import qualified Data.Text as T
 import Data.Text (Text)
@@ -129,7 +130,7 @@ pureTests = testGroup "Pure functions"
     [ testCase "finds giscus div" $
         let html = "<div class=\"giscus\" data-repo=\"test\"></div>"
         in assertBool "should find giscus div" $
-             findGiscusDiv html /= Nothing
+             isJust (findGiscusDiv html)
     , testCase "returns Nothing when no giscus div" $
         findGiscusDiv "<div class=\"other\"></div>" @?= Nothing
     ]

@@ -262,7 +262,7 @@ parseOEmbedHtml :: LBS.ByteString -> Either Text Text
 parseOEmbedHtml body =
   case eitherDecode @Json.Value body of
     Left err -> Left (T.pack err)
-    Right val -> case withObject "oembed" (\obj -> obj .: "html") val of
+    Right val -> case withObject "oembed" (.: "html") val of
       Left err -> Left (T.pack err)
       Right html -> Right html
 

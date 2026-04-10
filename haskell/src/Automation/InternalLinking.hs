@@ -36,11 +36,12 @@ import Automation.Json (decode)
 import Automation.Reflection (selectMostRecentReflection)
 import Automation.Types (Secret (..), RelativePath, unRelativePath, mkRelativePath, Title, unTitle, mkTitle)
 import Control.Concurrent (threadDelay)
+import Control.Monad (when)
 import Data.Char (ord)
 import Data.IORef (IORef, modifyIORef', newIORef, readIORef)
 import Data.List (sortBy)
 import qualified Data.Map.Strict as Map
-import Data.Maybe (mapMaybe)
+import Data.Maybe (catMaybes, fromMaybe, maybeToList)
 import Data.Ord (Down (..))
 import qualified Data.Set as Set
 import Data.Text (Text)
@@ -161,7 +162,7 @@ escapeRegex = T.concatMap escChar
 formatWikilink :: ContentEntry -> Text
 formatWikilink entry =
   let path = unRelativePath (ceRelativePath entry)
-      target = maybe path id (T.stripSuffix ".md" path)
+      target = fromMaybe path (T.stripSuffix ".md" path)
   in "[[" <> target <> "|" <> unTitle (ceTitle entry) <> "]]"
 
 extractContext :: Text -> Int -> Int -> Text
@@ -235,7 +236,7 @@ maskFencedCode :: Text -> Text
 maskFencedCode = maskBetweenFences
 
 maskBetweenFences :: Text -> Text
-maskBetweenFences input = go input
+maskBetweenFences = go
   where
     go txt =
       let (before, rest) = breakOnFence txt
@@ -288,7 +289,7 @@ maskMarkdownLinks :: Text -> Text
 maskMarkdownLinks = maskMdLinks
 
 maskMdLinks :: Text -> Text
-maskMdLinks input = go input
+maskMdLinks = go
   where
     go txt =
       case T.breakOn "[" txt of
@@ -309,7 +310,7 @@ maskWikilinks :: Text -> Text
 maskWikilinks = maskWikiL
 
 maskWikiL :: Text -> Text
-maskWikiL input = go input
+maskWikiL = go
   where
     go txt =
       case T.breakOn "[[" txt of
@@ -342,7 +343,7 @@ maskUrls :: Text -> Text
 maskUrls = replaceAllRegex "https?://[^] \t\n)]+"
 
 maskBold :: Text -> Text
-maskBold input = go input
+maskBold = go
   where
     go txt =
       case T.breakOn "**" txt of
@@ -351,7 +352,7 @@ maskBold input = go input
           before <> "  " <> go (T.drop 2 rest)
 
 replaceAllRegex :: String -> Text -> Text
-replaceAllRegex pat input = go input
+replaceAllRegex pat = go
   where
     go txt
       | T.null txt = txt
@@ -371,7 +372,7 @@ replaceAllRegex pat input = go input
 contentAlreadyLinksTo :: Text -> ContentEntry -> Bool
 contentAlreadyLinksTo content entry =
   let path = unRelativePath (ceRelativePath entry)
-      pathNoMd = maybe path id (T.stripSuffix ".md" path)
+      pathNoMd = fromMaybe path (T.stripSuffix ".md" path)
   in T.isInfixOf (pathNoMd <> "]") content
   || T.isInfixOf (pathNoMd <> "|") content
   || T.isInfixOf (pathNoMd <> "#") content
@@ -383,18 +384,18 @@ contentAlreadyLinksTo content entry =
 
 buildContentIndex :: FilePath -> IO [ContentEntry]
 buildContentIndex contentDir =
-  fmap concat $ traverse (scanDir contentDir) linkableDirs
+  concat <$> traverse (scanDir contentDir) linkableDirs
 
 scanDir :: FilePath -> Text -> IO [ContentEntry]
 scanDir contentDir dirName = do
   let dirPath = contentDir </> T.unpack dirName
   exists <- doesDirectoryExist dirPath
-  case exists of
-    False -> pure []
-    True  -> do
+  if exists
+    then do
       files <- listDirectory dirPath
       let mdFiles = filter (\f -> hasSuffix ".md" f && f /= "index.md") files
-      fmap (mapMaybe id) $ traverse (readEntry contentDir dirName) mdFiles
+      catMaybes <$> traverse (readEntry contentDir dirName) mdFiles
+    else pure []
 
 readEntry :: FilePath -> Text -> FilePath -> IO (Maybe ContentEntry)
 readEntry contentDir dirName file = do
@@ -455,9 +456,9 @@ resolveWikiTarget :: FilePath -> FilePath -> String -> Text
 resolveWikiTarget noteDir contentDir target =
   let trimmed = strip target
       withMd  = if hasSuffix ".md" trimmed then trimmed else trimmed <> ".md"
-  in case '/' `elem` withMd of
-    True  -> T.pack withMd
-    False ->
+  in if '/' `elem` withMd
+    then T.pack withMd
+    else
       let absTarget = normalizeFilePath (noteDir </> withMd)
       in T.pack (makeRelativeTo contentDir absTarget)
 
@@ -525,9 +526,9 @@ findMostRecentReflection :: FilePath -> IO (Maybe Text)
 findMostRecentReflection contentDir = do
   let reflDir = contentDir </> "reflections"
   exists <- doesDirectoryExist reflDir
-  case exists of
-    False -> pure Nothing
-    True  -> selectMostRecentReflection <$> listDirectory reflDir
+  if exists
+    then selectMostRecentReflection <$> listDirectory reflDir
+    else pure Nothing
 
 bfsTraversal :: FilePath -> IO [Text]
 bfsTraversal contentDir = do
@@ -551,9 +552,8 @@ bfsLoop contentDir visitedRef queueRef resultRef = do
       let filePath = contentDir </> T.unpack current
       exists <- doesFileExist filePath
       let isIndex = takeBaseName (T.unpack current) == "index"
-      case exists && not isIndex of
-        False -> bfsLoop contentDir visitedRef queueRef resultRef
-        True  -> do
+      if exists && not isIndex
+        then do
           modifyIORef' resultRef (current :)
           content <- TIO.readFile filePath
           let (_, body) = parseFrontmatter content
@@ -563,6 +563,7 @@ bfsLoop contentDir visitedRef queueRef resultRef = do
           modifyIORef' visitedRef (\s -> foldl' (flip Set.insert) s newLinks)
           modifyIORef' queueRef (<> newLinks)
           bfsLoop contentDir visitedRef queueRef resultRef
+        else bfsLoop contentDir visitedRef queueRef resultRef
 
 -- --------------------------------------------------------------------------
 -- Link candidate discovery
@@ -581,7 +582,7 @@ findLinkCandidates index content masked selfPath =
       | contentAlreadyLinksTo content entry = (ranges, cands)
       | any (\c -> ceRelativePath (lcEntry c) == ceRelativePath entry) cands = (ranges, cands)
       | otherwise =
-          let titleTexts = unTitle (cePlainTitle entry) : maybe [] (: []) (extractMainTitle (unTitle (cePlainTitle entry)))
+          let titleTexts = unTitle (cePlainTitle entry) : maybeToList (extractMainTitle (unTitle (cePlainTitle entry)))
           in tryPatterns ranges cands entry titleTexts
 
     tryPatterns :: [(Int, Int)] -> [LinkCandidate] -> ContentEntry -> [Text] -> ([(Int, Int)], [LinkCandidate])
@@ -607,7 +608,7 @@ findLinkCandidates index content masked selfPath =
       any (\(rStart, rEnd) -> start < rEnd && end > rStart) ranges
 
 findAllMatches :: String -> String -> [(Int, Int)]
-findAllMatches pat str = go 0 str
+findAllMatches pat = go 0
   where
     go :: Int -> String -> [(Int, Int)]
     go _offset [] = []
@@ -704,9 +705,9 @@ extractJsonArrayText txt =
 
 stripCodeFences :: Text -> Text
 stripCodeFences txt =
-  let noStart = maybe txt id (T.stripPrefix "```json" txt >>= Just . T.strip)
-      noStart' = maybe noStart id (T.stripPrefix "```" noStart >>= Just . T.strip)
-  in maybe noStart' id (T.stripSuffix "```" noStart' >>= Just . T.strip)
+  let noStart = fromMaybe txt (T.stripPrefix "```json" txt >>= Just . T.strip)
+      noStart' = fromMaybe noStart (T.stripPrefix "```" noStart >>= Just . T.strip)
+  in fromMaybe noStart' (T.stripSuffix "```" noStart' >>= Just . T.strip)
 
 findLastIndex :: (Char -> Bool) -> Text -> Maybe Int
 findLastIndex predicate txt = go Nothing 0 (T.unpack txt)
@@ -743,23 +744,21 @@ applyReplacements content candidates validations =
 updateFrontmatterFields :: FilePath -> [(Text, YamlValue)] -> IO ()
 updateFrontmatterFields filePath fields = do
   exists <- doesFileExist filePath
-  case exists of
-    False -> pure ()
-    True  -> do
-      raw <- TIO.readFile filePath
-      let ls = T.splitOn "\n" raw
-      case ls of
-        (first : rest)
-          | T.strip first == "---" ->
-              case break (\l -> T.strip l == "---") rest of
-                (_, []) -> pure ()
-                (fmLines, closingDash : bodyLines) ->
-                  let updatedFm = foldl' upsertField fmLines fields
-                  in TIO.writeFile filePath
-                       (T.intercalate "\n" (first : updatedFm <> [closingDash] <> bodyLines))
-        _ -> do
-          let entries = T.intercalate "\n" $ fmap (\(k, v) -> k <> ": " <> renderYamlValue v) fields
-          TIO.writeFile filePath ("---\n" <> entries <> "\n---\n" <> raw)
+  when exists $ do
+    raw <- TIO.readFile filePath
+    let ls = T.splitOn "\n" raw
+    case ls of
+      (first : rest)
+        | T.strip first == "---" ->
+            case break (\l -> T.strip l == "---") rest of
+              (_, []) -> pure ()
+              (fmLines, closingDash : bodyLines) ->
+                let updatedFm = foldl' upsertField fmLines fields
+                in TIO.writeFile filePath
+                     (T.intercalate "\n" (first : updatedFm <> [closingDash] <> bodyLines))
+      _ -> do
+        let entries = T.intercalate "\n" $ fmap (\(k, v) -> k <> ": " <> renderYamlValue v) fields
+        TIO.writeFile filePath ("---\n" <> entries <> "\n---\n" <> raw)
 
 upsertField :: [Text] -> (Text, YamlValue) -> [Text]
 upsertField ls (key, val) =
@@ -806,14 +805,14 @@ processFile manager apiKey model filePath index = do
       relativePath = makeRelPathFromContentDir contentDir filePath
       relPath = validatedRelativePath (T.pack relativePath)
   content <- TIO.readFile filePath
-  case alreadyAnalyzed content of
-    True -> pure FileResult
+  if alreadyAnalyzed content
+    then pure FileResult
       { frRelativePath  = relPath
       , frModified      = False
       , frLinksAdded    = 0
       , frUsedInference = False
       }
-    False -> do
+    else do
       let body = extractBody content
           eligibleBooks = filter
             (\e -> ceRelativePath e /= relPath
@@ -933,17 +932,16 @@ processFiles manager apiKey model contentDir index filesToVisit = do
       let filePath = contentDir </> T.unpack relPath
       fileResult <- processFile manager apiKey model filePath index
       modifyIORef' resRef (fileResult :)
-      case frUsedInference fileResult of
-        True -> do
+      if frUsedInference fileResult
+        then do
           infCount <- readIORef infRef
           modifyIORef' infRef (+ 1)
           let newCount = infCount + 1
-          case newCount >= maxInferencePerRun of
-            True -> do
+          if newCount >= maxInferencePerRun
+            then
               putStrLn $ "  ⏹️  Inference limit reached: " <> show newCount <> "/" <> show maxInferencePerRun
-              pure ()
-            False -> go infRef resRef rest
-        False -> go infRef resRef rest
+            else go infRef resRef rest
+        else go infRef resRef rest
 
 lookupSecret :: IO Secret
 lookupSecret = do

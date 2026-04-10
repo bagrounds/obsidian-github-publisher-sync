@@ -10,7 +10,7 @@ module Automation.Timer
 
 import Control.Exception (finally)
 import Data.IORef (IORef, modifyIORef', newIORef, readIORef)
-import Data.Maybe (fromMaybe)
+import Data.Maybe (fromMaybe, isNothing)
 import Data.Text (Text)
 import qualified Data.Text as T
 import qualified Data.Text.IO as TIO
@@ -42,7 +42,7 @@ timerEnd timer name = do
   modifyIORef' (ptEntries timer) (fmap (closeEntry now))
   where
     closeEntry now entry
-      | teName entry == name && teEndTime entry == Nothing =
+      | teName entry == name && isNothing (teEndTime entry) =
           entry { teEndTime = Just now }
       | otherwise = entry
 

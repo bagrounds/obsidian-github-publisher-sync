@@ -1,4 +1,5 @@
 {-# LANGUAGE OverloadedStrings #-}
+{-# LANGUAGE LambdaCase #-}
 
 module Automation.ObsidianSync
   ( ObsidianCredentials (..)
@@ -19,7 +20,7 @@ module Automation.ObsidianSync
 
 import Control.Concurrent (threadDelay)
 import Control.Exception (SomeException, catch, throwIO, try)
-import Control.Monad (when)
+import Control.Monad (void, when)
 import Data.List (intercalate)
 import Data.Text (Text)
 import qualified Data.Text as T
@@ -106,7 +107,7 @@ killObProcesses mVaultDir = do
   where
     sendSignal sig pid =
       catch
-        (readProcessWithExitCode "kill" ["-s", sig, pid] "" >> pure ())
+        (void $ readProcessWithExitCode "kill" ["-s", sig, pid] "")
         (\(_ :: SomeException) -> pure ())
 
 ensureSyncClean :: FilePath -> IO ()
@@ -178,16 +179,8 @@ validatePrePushFileCount :: FilePath -> Int -> IO ()
 validatePrePushFileCount vaultDir currentCount = do
   let markerPath = vaultFileCountPath vaultDir
   markerExists <- doesFileExist markerPath
-  case markerExists of
-    False -> do
-      putStrLn "⚠️ No baseline file count marker found — skipping circuit breaker (first sync)"
-      when (currentCount < minSafeFileCount) $ do
-        let msg = "🛑 CIRCUIT BREAKER: Vault has only " <> show currentCount
-              <> " files (minimum safe threshold: " <> show minSafeFileCount
-              <> "). Refusing to push to prevent potential data loss."
-        putStrLn msg
-        throwIO $ userError msg
-    True -> do
+  if markerExists
+    then do
       baselineStr <- readFile markerPath
       let mBaseline = case reads baselineStr of
             [(n, _)] -> Just (n :: Int)
@@ -206,6 +199,14 @@ validatePrePushFileCount vaultDir currentCount = do
                   <> " Refusing to push to prevent catastrophic data loss."
             putStrLn msg
             throwIO $ userError msg
+    else do
+      putStrLn "⚠️ No baseline file count marker found — skipping circuit breaker (first sync)"
+      when (currentCount < minSafeFileCount) $ do
+        let msg = "🛑 CIRCUIT BREAKER: Vault has only " <> show currentCount
+              <> " files (minimum safe threshold: " <> show minSafeFileCount
+              <> "). Refusing to push to prevent potential data loss."
+        putStrLn msg
+        throwIO $ userError msg
 
 minSafeFileCount :: Int
 minSafeFileCount = 50
@@ -213,20 +214,20 @@ minSafeFileCount = 50
 countVaultFiles :: FilePath -> IO Int
 countVaultFiles dir = do
   exists <- doesDirectoryExist dir
-  case exists of
-    False -> pure 0
-    True  -> countFilesRecursive dir
+  if exists
+    then countFilesRecursive dir
+    else pure 0
 
 countFilesRecursive :: FilePath -> IO Int
 countFilesRecursive dir = do
   entries <- listDirectory dir
-  let visible = filter (\e -> case e of { '.':_ -> False; _ -> True }) entries
+  let visible = filter (\case '.':_ -> False; _ -> True) entries
   counts <- mapM (\entry -> do
     let fullPath = dir </> entry
     isDir <- doesDirectoryExist fullPath
-    case isDir of
-      True  -> countFilesRecursive fullPath
-      False -> pure 1
+    if isDir
+      then countFilesRecursive fullPath
+      else pure 1
     ) visible
   pure (sum counts)
 
@@ -236,19 +237,19 @@ vaultFileCountPath vaultDir = vaultDir </> ".vault-sync-file-count"
 writeEmbedsToNote :: FilePath -> [(Text, Text, Text -> Text -> Text)] -> IO ()
 writeEmbedsToNote filePath sections = do
   exists <- doesFileExist filePath
-  case exists of
-    False -> putStrLn $ "⚠️ Note not found, skipping embed write: " <> filePath
-    True -> do
+  if exists
+    then do
       content <- TIO.readFile filePath
       let (modified, newContent) = foldr applySection (False, content) sections
-      case modified of
-        False -> putStrLn "No new sections to add to note"
-        True -> TIO.writeFile filePath newContent
+      if modified
+        then TIO.writeFile filePath newContent
+        else putStrLn "No new sections to add to note"
+    else putStrLn $ "⚠️ Note not found, skipping embed write: " <> filePath
   where
     applySection (header, embedHtml, buildSection) (anyMod, currentContent) =
-      case T.isInfixOf header currentContent of
-        True  -> (anyMod, currentContent)
-        False -> (True, currentContent <> buildSection currentContent embedHtml)
+      if T.isInfixOf header currentContent
+        then (anyMod, currentContent)
+        else (True, currentContent <> buildSection currentContent embedHtml)
 
 appendEmbedsToObsidianNote :: FilePath -> [(Text, Text, Text -> Text -> Text)] -> ObsidianCredentials -> IO ()
 appendEmbedsToObsidianNote notePath sections creds = do

@@ -114,12 +114,12 @@ sanitizeTitle series raw =
     icon = bscIcon series
 
     stripLeadingIcon t =
-      fromMaybe (T.stripStart t)
-        (T.stripStart <$> T.stripPrefix icon (T.stripStart t))
+      maybe (T.stripStart t) T.stripStart
+        (T.stripPrefix icon (T.stripStart t))
 
     stripTrailingIcon t =
-      fromMaybe (T.stripEnd t)
-        (T.stripEnd <$> T.stripSuffix icon (T.stripEnd t))
+      maybe (T.stripEnd t) T.stripEnd
+        (T.stripSuffix icon (T.stripEnd t))
 
     stripDatePipe t =
       let s = T.stripStart t

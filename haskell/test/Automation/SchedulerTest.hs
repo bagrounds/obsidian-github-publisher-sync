@@ -64,7 +64,7 @@ tests = testGroup "Scheduler"
 
   , testCase "all task IDs are valid" $
       assertBool "all valid" $
-        all (\t -> isValidTaskId (taskIdToText t)) [minBound .. maxBound]
+        all (isValidTaskId . taskIdToText) [minBound .. maxBound]
 
   , pacificHourTests
   , blogPostMatchesTodayTests

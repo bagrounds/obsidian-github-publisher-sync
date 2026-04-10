@@ -32,9 +32,9 @@ createSectionBuilder header existingContent embedHtml =
 createSectionAppender :: Text -> FilePath -> Text -> IO ()
 createSectionAppender header filePath embedHtml = do
   content <- TIO.readFile filePath
-  case T.isInfixOf header content of
-    True  -> putStrLn $ T.unpack header <> " already exists, skipping update"
-    False -> TIO.writeFile filePath (content <> createSectionBuilder header content embedHtml)
+  if T.isInfixOf header content
+    then putStrLn $ T.unpack header <> " already exists, skipping update"
+    else TIO.writeFile filePath (content <> createSectionBuilder header content embedHtml)
 
 buildTweetSection :: Text -> Text -> Text
 buildTweetSection = createSectionBuilder Twitter.sectionHeader

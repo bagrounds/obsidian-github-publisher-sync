@@ -179,8 +179,8 @@ daysUntilSunday = \case
   Saturday  -> 1
 
 blogPostMatchesToday :: Text -> [String] -> Bool
-blogPostMatchesToday today files =
-  any (T.isPrefixOf today . T.pack) files
+blogPostMatchesToday today =
+  any (T.isPrefixOf today . T.pack)
 
 blogPostExistsForToday :: FilePath -> Text -> IO Bool
 blogPostExistsForToday seriesDir today = do

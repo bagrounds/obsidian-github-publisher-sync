@@ -37,12 +37,13 @@ module Automation.SocialPosting
   ) where
 
 import Control.Concurrent.Async (mapConcurrently)
+import Control.Monad (when)
 import Control.Exception (SomeException, try)
 
 import Data.List.NonEmpty (NonEmpty ((:|)))
 import Data.Map.Strict (Map)
 import qualified Data.Map.Strict as Map
-import Data.Maybe (fromMaybe, mapMaybe)
+import Data.Maybe (catMaybes, fromMaybe, mapMaybe)
 import Data.Set (Set)
 import qualified Data.Set as Set
 import Data.Text (Text)
@@ -242,9 +243,9 @@ resolveWikiLinkTarget :: FilePath -> FilePath -> String -> Text
 resolveWikiLinkTarget noteDir contentDir target =
   let trimmed = stripS target
       withMd  = if hasSuffix ".md" trimmed then trimmed else trimmed <> ".md"
-  in case '/' `elem` withMd of
-    True  -> T.pack withMd
-    False ->
+  in if '/' `elem` withMd
+    then T.pack withMd
+    else
       let absTarget = normalizeFilePath (noteDir </> withMd)
       in T.pack (makeRelativeTo contentDir absTarget)
 
@@ -315,9 +316,8 @@ readContentNote :: Text -> FilePath -> IO (Maybe ContentNote)
 readContentNote relativePath contentDir = do
   let filePath = contentDir </> T.unpack relativePath
   exists <- doesFileExist filePath
-  case exists of
-    False -> pure Nothing
-    True  -> do
+  if exists
+    then do
       content <- TIO.readFile filePath
       let (fm, body) = parseFrontmatter content
           postedPlatforms = detectPostedPlatforms content
@@ -336,6 +336,7 @@ readContentNote relativePath contentDir = do
         , cnLinkedNotePaths = fmap validatedRelativePath linkedPaths
         , cnNoSocial = noSocial
         }
+    else pure Nothing
 
 --------------------------------------------------------------------------------
 -- URL validation and auto-fix
@@ -370,25 +371,25 @@ validatedRelativePath = either (error . T.unpack) id . mkRelativePath
 validateNoteUrl :: (Text -> IO Bool) -> ContentNote -> IO (Maybe ContentNote)
 validateNoteUrl checker note = do
   isLive <- checker (unUrl (cnUrl note))
-  case isLive of
-    True -> pure (Just note)
-    False -> do
+  if isLive
+    then pure (Just note)
+    else do
       let pathUrl = urlFromFilePath (unRelativePath (cnRelativePath note))
-      case pathUrl == unUrl (cnUrl note) of
-        True -> do
+      if pathUrl == unUrl (cnUrl note)
+        then do
           putStrLn $ "  🚫 URL not published (404): "
             <> T.unpack (unTitle (cnTitle note)) <> " (" <> T.unpack (unUrl (cnUrl note)) <> ")"
           pure Nothing
-        False -> do
+        else do
           putStrLn $ "  🔧 Frontmatter URL 404'd (" <> T.unpack (unUrl (cnUrl note))
             <> "), trying file-path URL: " <> T.unpack pathUrl
           isPathLive <- checker pathUrl
-          case isPathLive of
-            True -> do
-              putStrLn $ "  ✅ File-path URL is live, updating frontmatter"
+          if isPathLive
+            then do
+              putStrLn "  ✅ File-path URL is live, updating frontmatter"
               updateFrontmatterUrl (cnFilePath note) pathUrl
               pure (Just note { cnUrl = validatedUrl pathUrl })
-            False -> do
+            else do
               putStrLn $ "  🚫 Both URLs not published: "
                 <> T.unpack (unUrl (cnUrl note)) <> " and " <> T.unpack pathUrl
               pure Nothing
@@ -396,21 +397,19 @@ validateNoteUrl checker note = do
 updateFrontmatterUrl :: FilePath -> Text -> IO ()
 updateFrontmatterUrl filePath newUrl = do
   exists <- doesFileExist filePath
-  case exists of
-    False -> pure ()
-    True  -> do
-      content <- TIO.readFile filePath
-      let ls = T.splitOn "\n" content
-      case ls of
-        (first : rest)
-          | T.strip first == "---" ->
-              case break (\l -> T.strip l == "---") rest of
-                (_, []) -> pure ()
-                (fmLines, closingDash : bodyLines) ->
-                  let updatedFm = upsertFmField fmLines "URL" (quoteYamlValue newUrl)
-                  in TIO.writeFile filePath
-                       (T.intercalate "\n" (first : updatedFm <> [closingDash] <> bodyLines))
-        _ -> pure ()
+  when exists $ do
+    content <- TIO.readFile filePath
+    let ls = T.splitOn "\n" content
+    case ls of
+      (first : rest)
+        | T.strip first == "---" ->
+            case break (\l -> T.strip l == "---") rest of
+              (_, []) -> pure ()
+              (fmLines, closingDash : bodyLines) ->
+                let updatedFm = upsertFmField fmLines "URL" (quoteYamlValue newUrl)
+                in TIO.writeFile filePath
+                     (T.intercalate "\n" (first : updatedFm <> [closingDash] <> bodyLines))
+      _ -> pure ()
 
 --------------------------------------------------------------------------------
 -- Content filtering
@@ -434,7 +433,7 @@ isUntitledReflection note =
   isReflectionPath (unRelativePath (cnRelativePath note)) && looksLikeDateTitle (unTitle (cnTitle note))
 
 isReflectionPath :: Text -> Bool
-isReflectionPath p = T.isPrefixOf "reflections/" p
+isReflectionPath = T.isPrefixOf "reflections/"
 
 looksLikeDateTitle :: Text -> Bool
 looksLikeDateTitle title =
@@ -553,8 +552,8 @@ checkBfsEligibility relativePath postingCutoff
 
 discoverContentToPost :: FindContentConfig -> Bool -> IO [ContentToPost]
 discoverContentToPost config isPastPostingHour = do
-  case isPastPostingHour of
-    True -> do
+  if isPastPostingHour
+    then do
       mRefl <- findMostRecentReflection (fccContentDir config)
       case mRefl of
         Nothing -> bfsContentDiscovery config
@@ -564,8 +563,8 @@ discoverContentToPost config isPastPostingHour = do
                 Nothing -> False
                 Just reflectionDate -> isReflectionEligibleForPosting
                   now (fccPostingCutoff config) reflectionDate
-          case eligible of
-            True -> do
+          if eligible
+            then do
               mNote <- readContentNote reflPath (fccContentDir config)
               case mNote of
                 Just note | isPostableContent note
@@ -575,7 +574,7 @@ discoverContentToPost config isPastPostingHour = do
                     Nothing      -> pure (Just note)
                   case mValidated of
                     Nothing -> do
-                      putStrLn $ "  🚫 Prior day's reflection not yet published"
+                      putStrLn "  🚫 Prior day's reflection not yet published"
                       bfsContentDiscovery config
                     Just vNote -> do
                       let neededPlatforms = filter
@@ -585,8 +584,8 @@ discoverContentToPost config isPastPostingHour = do
                         [] -> bfsContentDiscovery config
                         _  -> pure $ fmap (\p -> ContentToPost p vNote [reflPath]) neededPlatforms
                 _ -> bfsContentDiscovery config
-            False -> bfsContentDiscovery config
-    False -> bfsContentDiscovery config
+            else bfsContentDiscovery config
+    else bfsContentDiscovery config
 
 extractDateFromPath :: Text -> Text
 extractDateFromPath path =
@@ -614,42 +613,40 @@ reconstructPath parentMap start target = reverse $ go target
 updateFrontmatterTimestamp :: FilePath -> IO ()
 updateFrontmatterTimestamp filePath = do
   exists <- doesFileExist filePath
-  case exists of
-    False -> pure ()
-    True  -> do
-      content <- TIO.readFile filePath
-      now <- getCurrentTime
-      let timestamp = T.pack $ formatTime defaultTimeLocale "%Y-%m-%dT%H:%M:%S" now
-          ls = T.splitOn "\n" content
-      case ls of
-        (first : rest)
-          | T.strip first == "---" ->
-              case break (\l -> T.strip l == "---") rest of
-                (_, []) -> pure ()
-                (fmLines, closingDash : bodyLines) ->
-                  let updatedFm = upsertFmField fmLines "updated" (quoteYamlValue timestamp)
-                  in TIO.writeFile filePath
-                       (T.intercalate "\n" (first : updatedFm <> [closingDash] <> bodyLines))
-        _ -> pure ()
+  when exists $ do
+    content <- TIO.readFile filePath
+    now <- getCurrentTime
+    let timestamp = T.pack $ formatTime defaultTimeLocale "%Y-%m-%dT%H:%M:%S" now
+        ls = T.splitOn "\n" content
+    case ls of
+      (first : rest)
+        | T.strip first == "---" ->
+            case break (\l -> T.strip l == "---") rest of
+              (_, []) -> pure ()
+              (fmLines, closingDash : bodyLines) ->
+                let updatedFm = upsertFmField fmLines "updated" (quoteYamlValue timestamp)
+                in TIO.writeFile filePath
+                     (T.intercalate "\n" (first : updatedFm <> [closingDash] <> bodyLines))
+      _ -> pure ()
 
 upsertFmField :: [Text] -> Text -> Text -> [Text]
 upsertFmField ls key renderedVal =
   let newLine = key <> ": " <> renderedVal
       pat = key <> ":"
-      has = any (\l -> T.isPrefixOf pat (T.stripStart l)) ls
+      has = any (T.isPrefixOf pat . T.stripStart) ls
       replaced = fmap (\l -> if T.isPrefixOf pat (T.stripStart l) then newLine else l) ls
   in if has then replaced else ls <> [newLine]
 
 updatePathTimestamps :: FilePath -> [Text] -> IO ()
-updatePathTimestamps contentDir paths =
-  mapM_ (\p -> updateFrontmatterTimestamp (contentDir </> T.unpack p)) paths
+updatePathTimestamps contentDir =
+  mapM_ (\p -> updateFrontmatterTimestamp (contentDir </> T.unpack p))
 
 --------------------------------------------------------------------------------
 -- Configured platforms from environment
 --------------------------------------------------------------------------------
 
 getConfiguredPlatforms :: EnvironmentConfig -> [Platform]
-getConfiguredPlatforms ec = mapMaybe id
+getConfiguredPlatforms ec = catMaybes
   [ case ecTwitter ec of { Just _ -> Just Twitter; Nothing -> Nothing }
   , case ecBluesky ec of { Just _ -> Just Bluesky; Nothing -> Nothing }
   , case ecMastodon ec of { Just _ -> Just Mastodon; Nothing -> Nothing }
@@ -690,8 +687,8 @@ generateSocialPostText manager apiKey note platform = do
           modelOutput = question <> "\n" <> tags
           rawPost = assemblePost modelOutput rd
           overage = T.length rawPost - platformMaxCharacters Bluesky.limits
-      finalPost <- case overage > 0 of
-        True -> do
+      finalPost <- if overage > 0
+        then do
           let shortenSafetyBuffer = 10
               shortenPrompt = buildShortenQuestionPrompt question (overage + shortenSafetyBuffer)
               shortenCombined = ppSystem shortenPrompt <> "\n\n" <> ppUser shortenPrompt
@@ -703,7 +700,7 @@ generateSocialPostText manager apiKey note platform = do
                   shortenedOutput = shortenedQ <> "\n" <> tags
               pure $ assemblePost shortenedOutput rd
             Left _ -> pure rawPost
-        False -> pure rawPost
+        else pure rawPost
       pure (Right (fitPostToLimit finalPost maxLen))
 
 --------------------------------------------------------------------------------
@@ -831,7 +828,7 @@ runPostingPipeline manager env apiKey vaultDir = do
       putStrLn $ "  📋 Found " <> show (length items) <> " items to post"
       let grouped = groupByNote items
       results <- mapM (processNoteGroup manager env apiKey vaultDir) grouped
-      pure (mapMaybe id results)
+      pure (catMaybes results)
 
 groupByNote :: [ContentToPost] -> [([Platform], ContentNote, [Text])]
 groupByNote items =

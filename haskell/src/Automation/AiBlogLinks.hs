@@ -15,7 +15,7 @@ module Automation.AiBlogLinks
   ) where
 
 import Data.List (sort)
-import Data.Maybe (mapMaybe)
+import Data.Maybe (catMaybes, fromMaybe)
 import qualified Data.Map.Strict as Map
 import Data.Text (Text)
 import qualified Data.Text as T
@@ -50,13 +50,11 @@ buildAiBlogForwardLink nextFilename =
   "[[ai-blog/" <> stripMdExt nextFilename <> "|⏭️]]"
 
 stripMdExt :: Text -> Text
-stripMdExt t = case T.stripSuffix ".md" t of
-  Just stripped -> stripped
-  Nothing       -> t
+stripMdExt t = fromMaybe t (T.stripSuffix ".md" t)
 
 buildNavLine :: Maybe Text -> Maybe Text -> Text
 buildNavLine prevFilename nextFilename =
-  let links = mapMaybe id
+  let links = catMaybes
         [ fmap buildAiBlogBackLink prevFilename
         , fmap buildAiBlogForwardLink nextFilename
         ]
@@ -78,7 +76,7 @@ updateNavLinks content prevFilename nextFilename =
          else T.unlines (take idx ls <> [navLine] <> drop (idx + 1) ls)
 
 findIndex :: (a -> Bool) -> [a] -> Maybe Int
-findIndex p xs = go 0 xs
+findIndex p = go 0
   where
     go _ []     = Nothing
     go i (y:ys) = if p y then Just i else go (i + 1) ys
@@ -86,7 +84,7 @@ findIndex p xs = go 0 xs
 navLinksMatch :: Text -> Maybe Text -> Maybe Text -> Bool
 navLinksMatch content prevFilename nextFilename =
   let expected = buildNavLine prevFilename nextFilename
-  in any (== expected) (T.lines content)
+  in elem expected (T.lines content)
 
 extractPostDate :: Text -> Maybe Text
 extractPostDate filename =
@@ -105,12 +103,12 @@ data NavLinkResult = NavLinkResult
 readAiBlogPostFiles :: FilePath -> IO [Text]
 readAiBlogPostFiles aiBlogDir = do
   exists <- doesDirectoryExist aiBlogDir
-  case exists of
-    False -> pure []
-    True  -> do
+  if exists
+    then do
       entries <- listDirectory aiBlogDir
       let mdFiles = sort $ filter isPostFile $ fmap T.pack entries
       pure mdFiles
+    else pure []
 
 isPostFile :: Text -> Bool
 isPostFile f =
@@ -129,9 +127,9 @@ processFile aiBlogDir files fileCount (idx, filename) = do
       nextFilename = if idx < fileCount - 1 then Just (files !! (idx + 1)) else Nothing
       filePath = aiBlogDir </> T.unpack filename
   content <- TIO.readFile filePath
-  case navLinksMatch content prevFilename nextFilename of
-    True -> pure NavLinkResult { nlrFilename = filename, nlrModified = False }
-    False ->
+  if navLinksMatch content prevFilename nextFilename
+    then pure NavLinkResult { nlrFilename = filename, nlrModified = False }
+    else
       let updated = updateNavLinks content prevFilename nextFilename
       in if updated == content
          then pure NavLinkResult { nlrFilename = filename, nlrModified = False }
@@ -143,14 +141,14 @@ extractAiBlogTitle :: FilePath -> Text -> IO Text
 extractAiBlogTitle aiBlogDir filename = do
   let filePath = aiBlogDir </> T.unpack filename
   exists <- doesFileExist filePath
-  case exists of
-    False -> pure (stripMdExt filename)
-    True  -> do
+  if exists
+    then do
       content <- TIO.readFile filePath
       let (fm, _) = parseFrontmatter content
       pure $ case Map.lookup "title" fm of
         Just title -> title
         Nothing    -> stripMdExt filename
+    else pure (stripMdExt filename)
 
 buildReflectionLinks :: FilePath -> [NavLinkResult] -> IO [(Text, Text, Text)]
 buildReflectionLinks aiBlogDir results = do
@@ -161,7 +159,5 @@ buildEntry :: FilePath -> NavLinkResult -> IO (Text, Text, Text)
 buildEntry aiBlogDir result = do
   title <- extractAiBlogTitle aiBlogDir (nlrFilename result)
   let relPath = "ai-blog/" <> nlrFilename result
-      date = case extractPostDate (nlrFilename result) of
-        Just d  -> d
-        Nothing -> ""
+      date = fromMaybe "" (extractPostDate (nlrFilename result))
   pure (relPath, title, date)

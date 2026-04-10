@@ -139,14 +139,21 @@ Each error migration delivered with test coverage:
 14. **Extract cross-cutting concerns as separate data**: When every variant of a config carries the same optional callback (like `ipcDescribePrompt`), it's a cross-cutting concern, not a per-variant behavior. Extract it as its own pure data record (`PromptDescriber`) with its own dispatch function (`describeContent`). This makes the relationship explicit: the describer is independent of the image provider.
 15. **Derive instances to prove purity**: After removing IO from a data structure, immediately derive `Show` and `Eq`. If the compiler refuses, there's still hidden behavior embedded in the data. Successfully deriving both instances is proof that the structure is pure data.
 
-### Next: Break Up RunScheduled.hs + Tests
+### Completed: Break Up RunScheduled.hs + Tests
 
-**Goal**: Split the 913-line orchestrator into focused modules, each with its own tests.
+**Goal**: Split the 906-line orchestrator into focused modules, each with its own tests.
 
-- [ ] Extract `Automation.TaskRunner` — task dispatch, inter-task delay, result tracking. Test dispatch logic.
-- [ ] Extract `Automation.VaultSync` (from RunScheduled) — file sync helpers. Test sync logic.
-- [ ] Extract `Automation.CliArgs` — CLI parsing. Test argument parsing.
-- [ ] Keep `RunScheduled.hs` as a thin main that wires everything together (~100 lines)
+- [x] Extract `Automation.TaskRunner` — `runTasks`, `runTasksWithDelay` (configurable inter-task delay for testability), `logMsg`, `formatTimestamp`, `interTaskDelayMicroseconds`, `inferenceDashboards`, `TaskResult` type alias. 14 tests covering dispatch, error handling, execution order, and properties.
+- [x] Extract `Automation.VaultSync` — `syncFileToVault`, `syncNewAiBlogPosts` (accepts logger callback to decouple from logging implementation), `copySeriesPosts`, `findBestMatch`, `showScore`, `similarityThreshold`. 14 tests covering pure functions and properties.
+- [x] Extract `Automation.CliArgs` — `CliArgs` type (with `Show` and `Eq` instances) and `parseCliArgs`. 12 tests covering all flag combinations and properties.
+- [x] Slim `RunScheduled.hs` from 906 to 722 lines. Task runner implementations remain in the executable (they are app-specific orchestration, not reusable library code).
+- [x] Replace remaining `validatedTitle`/`validatedRelativePath` error wrappers with proper `Either` handling via `mkTitle`/`mkRelativePath`, logging warnings and filtering with `mapMaybe` instead of crashing.
+
+**Learnings from breaking up RunScheduled.hs:**
+16. **Configurable delays for testability**: When a module includes timing behavior (like inter-task delays), expose a configurable variant (`runTasksWithDelay`) alongside the production default (`runTasks`). Tests use zero delay to avoid hanging. The production function is a thin wrapper: `runTasks = runTasksWithDelay interTaskDelayMicroseconds`.
+17. **Logger callbacks decouple IO modules**: When an extracted module needs to log but should not depend on the logging module, accept a `Text -> IO ()` callback parameter. The caller passes its own logger, keeping the extracted module focused on its domain.
+18. **Use throwIO not error in tests**: Pure `error` calls produce bottom values that may not be caught by `try @SomeException` in all GHC versions. Use `throwIO` from `Control.Exception` to create proper IO-level exceptions that `try` reliably catches.
+19. **Banker's rounding in Haskell**: `round` uses round-half-to-even (banker's rounding). `round 250.5 == 250` because 250 is even. When writing tests for rounding behavior, account for this or use an explicit rounding function.
 
 ## Guiding Principles
 

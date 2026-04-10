@@ -7,9 +7,13 @@ URL: https://bagrounds.org/software/graphiti
 link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-06T00:00:00Z
 force_analyze_links: false
+image_date: 2026-04-10T22:17:02Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A minimalist, isometric illustration featuring a glowing, interconnected network of nodes and lines floating against a deep navy background. The nodes are represented by translucent, geometric spheres in vibrant shades of cyan, magenta, and amber, connected by thin, electric-white lines that suggest a complex data web. A stylized, semi-transparent Python logo is subtly integrated into the center of the structure, appearing as if it were a physical component of the graph. The lighting is soft and ethereal, with faint, crystalline dust motes drifting between the connections to emphasize depth. The overall aesthetic is clean, modern, and tech-forward, focusing on the concepts of structure, intelligence, and fluid connectivity.
 ---
 [Home](../index.md) > [Software](./index.md)  
 # 🎨🧱 Graphiti  
+![software-graphiti](../software-graphiti.jpg)  
   
 ## 🤖 AI Summary  
 ### 👉 What Is It?  

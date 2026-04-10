@@ -6,6 +6,9 @@ URL: https://bagrounds.org/books/booster-shots-the-urgent-lessons-of-measles-and
 share: true
 CTA: 💉 Protect futures.
 affiliate link: https://amzn.to/3YIYAxH
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_time: 2026-04-09T00:00:00Z
+force_analyze_links: false
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 💉🦠👶 Booster Shots: The Urgent Lessons of Measles and the Uncertain Future of Children's Health  
@@ -68,7 +71,7 @@ affiliate link: https://amzn.to/3YIYAxH
 ### ↔️ Related  
 * 👨‍⚕️ Polio: An American Story by David Oshinsky.  
 * 😷 Tell Me When It's Over: An Insider's Guide to Deciphering Covid Myths and Navigating Our Post-Pandemic World by Paul A. Offit.  
-* 🦠 The Great Influenza: The Story of the Deadliest Pandemic in History by John M. Barry.  
+* 🦠 [🦠🌍💀 The Great Influenza](./the-great-influenza.md): The Story of the Deadliest Pandemic in History by John M. Barry.  
   
 ## 🫵 What Do You Think?  
 🗣️ What aspects of Dr. Ratner's arguments resonate most with your own observations of public health discourse, and how do you believe communities can best rebuild trust in scientific institutions?

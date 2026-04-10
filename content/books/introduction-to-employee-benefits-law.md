@@ -7,6 +7,9 @@ share: true
 tags:
   - law
 affiliate link: https://amzn.to/43C3pe9
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_time: 2026-04-09T00:00:00Z
+force_analyze_links: false
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 👨‍💼➕ Introduction to Employee Benefits Law  
@@ -56,7 +59,7 @@ The content of "Introduction to Employee Benefits Law" generally includes, but i
 * 📚 **The Excuse Factory: How Employment Law Is Paralyzing the American Workplace by Walter Olson:** 🤔 Offers a critical perspective on the impact of employment law on the workplace.  
 * 📚 **Nickel and Dimed: On (Not) Getting By in America by Barbara Ehrenreich:** 💸 While not a legal text, this investigative journalism piece provides a ground-level view of the financial realities faced by low-wage workers, offering a stark contrast to discussions of comprehensive benefits and highlighting the importance of basic compensation and access to benefits.  
 * 📚 **The Labor Market as a Social Institution by Robert M. Solow:** 📊 Explores economic theories related to the labor market, including concepts of fairness and wage determination, providing a theoretical backdrop to the legal structures governing benefits.  
-* 📚 **Motivational Books for Employees (e.g., Atomic Habits by James Clear, The Checklist Manifesto by Atul Gawande):** 🚀 While not legal books, these types of books focus on employee well-being, productivity, and workplace culture, which are indirectly related to the goals of some employee benefits (e.g., wellness programs, employee satisfaction). 😊 They offer a contrasting perspective on how to improve the workplace beyond legal compliance.  
+* 📚 **Motivational Books for Employees (e.g., [⚛️🔄 Atomic Habits: An Easy & Proven Way to Build Good Habits & Break Bad Ones](./atomic-habits.md) by James Clear, The Checklist Manifesto by Atul Gawande):** 🚀 While not legal books, these types of books focus on employee well-being, productivity, and workplace culture, which are indirectly related to the goals of some employee benefits (e.g., wellness programs, employee satisfaction). 😊 They offer a contrasting perspective on how to improve the workplace beyond legal compliance.  
 * 📚 **Books on the History of Labor Movements:** ✊ Understanding the historical context of labor rights and negotiations provides valuable insight into the origins and evolution of employee benefits law.  
   
 ## 💬 [Gemini](../software/gemini.md) Prompt (gemini-2.5-flash-preview-04-17)  

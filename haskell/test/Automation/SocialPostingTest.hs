@@ -10,7 +10,7 @@ import System.Directory (createDirectoryIfMissing)
 import System.FilePath ((</>))
 import System.IO.Temp (withSystemTempDirectory)
 import Test.Tasty (TestTree, testGroup)
-import Test.Tasty.HUnit (assertEqual, assertBool, testCase)
+import Test.Tasty.HUnit (assertEqual, assertBool, testCase, (@?=))
 import Test.Tasty.QuickCheck (testProperty)
 import qualified Test.Tasty.QuickCheck as QC
 import qualified Data.Text.IO as TIO
@@ -39,6 +39,7 @@ tests = testGroup "SocialPosting"
   , urlValidationTests
   , selectMostRecentReflectionTests
   , socialPostTests
+  , readContentNoteTests
   ]
 
 --------------------------------------------------------------------------------
@@ -848,5 +849,54 @@ socialPostTests = testGroup "SocialPost"
           in case mkSocialPost platform text of
             Right post -> socialPostContent post == text
             Left _ -> False
+  ]
+
+-- --------------------------------------------------------------------------
+-- readContentNote
+-- --------------------------------------------------------------------------
+
+readContentNoteTests :: TestTree
+readContentNoteTests = testGroup "readContentNote"
+  [ testCase "returns Nothing for empty relative path" $
+      withSystemTempDirectory "social-posting-test" $ \tmpDir -> do
+        result <- readContentNote "" tmpDir
+        result @?= Nothing
+
+  , testCase "returns Nothing for nonexistent file" $
+      withSystemTempDirectory "social-posting-test" $ \tmpDir -> do
+        result <- readContentNote "nonexistent/file.md" tmpDir
+        result @?= Nothing
+
+  , testCase "returns Nothing for whitespace-only title" $
+      withSystemTempDirectory "social-posting-test" $ \tmpDir -> do
+        let relativePath = "books/test-book.md"
+            filePath = tmpDir </> "books" </> "test-book.md"
+            content = T.unlines
+              [ "---"
+              , "title: \"  \""
+              , "URL: https://bagrounds.org/books/test-book"
+              , "---"
+              , "This is a sufficiently long body of text for content note testing purposes."
+              ]
+        createDirectoryIfMissing True (tmpDir </> "books")
+        TIO.writeFile filePath content
+        result <- readContentNote relativePath tmpDir
+        result @?= Nothing
+
+  , testCase "succeeds with valid content note" $
+      withSystemTempDirectory "social-posting-test" $ \tmpDir -> do
+        let relativePath = "books/valid-book.md"
+            filePath = tmpDir </> "books" </> "valid-book.md"
+            content = T.unlines
+              [ "---"
+              , "title: \"A Valid Book Title\""
+              , "URL: https://bagrounds.org/books/valid-book"
+              , "---"
+              , "This book has enough content to be a valid note for social posting."
+              ]
+        createDirectoryIfMissing True (tmpDir </> "books")
+        TIO.writeFile filePath content
+        result <- readContentNote relativePath tmpDir
+        assertBool "should return Just for valid content note" $ result /= Nothing
   ]
 

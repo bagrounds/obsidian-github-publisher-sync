@@ -6,6 +6,10 @@ import Test.Tasty.QuickCheck (testProperty)
 import qualified Test.QuickCheck as QC
 import qualified Data.Map.Strict as Map
 import qualified Data.Text as T
+import qualified Data.Text.IO as TIO
+import System.Directory (createDirectoryIfMissing)
+import System.FilePath ((</>))
+import System.IO.Temp (withSystemTempDirectory)
 
 import Automation.Frontmatter
 
@@ -145,4 +149,107 @@ tests = testGroup "Frontmatter"
             let result = quoteYamlValue (T.pack s)
             in not (T.isInfixOf "\0" result)
       ]
+  , readReflectionTests
+  , readNoteTests
+  ]
+
+-- --------------------------------------------------------------------------
+-- readReflection
+-- --------------------------------------------------------------------------
+
+readReflectionTests :: TestTree
+readReflectionTests = testGroup "readReflection"
+  [ testCase "returns Nothing for whitespace-only title" $
+      withSystemTempDirectory "frontmatter-test" $ \tmpDir -> do
+        let date = "2026-06-01" :: T.Text
+            filePath = tmpDir </> "2026-06-01.md"
+            content = T.unlines
+              [ "---"
+              , "title: \"  \""
+              , "URL: https://bagrounds.org/reflections/2026-06-01"
+              , "---"
+              , "Some body text"
+              ]
+        TIO.writeFile filePath content
+        result <- readReflection date tmpDir
+        result @?= Nothing
+
+  , testCase "returns Nothing for empty title" $
+      withSystemTempDirectory "frontmatter-test" $ \tmpDir -> do
+        let date = "2026-06-02" :: T.Text
+            filePath = tmpDir </> "2026-06-02.md"
+            content = T.unlines
+              [ "---"
+              , "title: \"\""
+              , "URL: https://bagrounds.org/reflections/2026-06-02"
+              , "---"
+              , "Body content"
+              ]
+        TIO.writeFile filePath content
+        result <- readReflection date tmpDir
+        result @?= Nothing
+
+  , testCase "succeeds with valid frontmatter" $
+      withSystemTempDirectory "frontmatter-test" $ \tmpDir -> do
+        let date = "2026-06-03" :: T.Text
+            filePath = tmpDir </> "2026-06-03.md"
+            content = T.unlines
+              [ "---"
+              , "title: \"Valid Reflection Title\""
+              , "URL: https://bagrounds.org/reflections/2026-06-03"
+              , "---"
+              , "Reflection body text"
+              ]
+        TIO.writeFile filePath content
+        result <- readReflection date tmpDir
+        assertBool "should return Just for valid data" $ result /= Nothing
+
+  , testCase "returns Nothing for nonexistent file" $
+      withSystemTempDirectory "frontmatter-test" $ \tmpDir -> do
+        result <- readReflection ("2026-01-01" :: T.Text) tmpDir
+        result @?= Nothing
+  ]
+
+-- --------------------------------------------------------------------------
+-- readNote
+-- --------------------------------------------------------------------------
+
+readNoteTests :: TestTree
+readNoteTests = testGroup "readNote"
+  [ testCase "returns Nothing when URL is invalid" $
+      withSystemTempDirectory "frontmatter-test" $ \tmpDir -> do
+        let relativePath = "notes/test-note.md" :: T.Text
+            filePath = tmpDir </> "notes" </> "test-note.md"
+            content = T.unlines
+              [ "---"
+              , "title: \"A Valid Title\""
+              , "URL: \"not a valid url at all\""
+              , "---"
+              , "Note body"
+              ]
+        createDirectoryIfMissing True (tmpDir </> "notes")
+        TIO.writeFile filePath content
+        result <- readNote relativePath tmpDir
+        result @?= Nothing
+
+  , testCase "succeeds with valid note data" $
+      withSystemTempDirectory "frontmatter-test" $ \tmpDir -> do
+        let relativePath = "reflections/2026-06-04.md" :: T.Text
+            filePath = tmpDir </> "reflections" </> "2026-06-04.md"
+            content = T.unlines
+              [ "---"
+              , "title: \"My Note Title\""
+              , "URL: https://bagrounds.org/reflections/2026-06-04"
+              , "---"
+              , "Note body text"
+              ]
+        createDirectoryIfMissing True (tmpDir </> "reflections")
+        TIO.writeFile filePath content
+        result <- readNote relativePath tmpDir
+        assertBool "should return Just for valid note" $ result /= Nothing
+
+  , testCase "returns Nothing for nonexistent file" $
+      withSystemTempDirectory "frontmatter-test" $ \tmpDir -> do
+        result <- readNote ("nonexistent/file.md" :: T.Text) tmpDir
+        result @?= Nothing
   ]

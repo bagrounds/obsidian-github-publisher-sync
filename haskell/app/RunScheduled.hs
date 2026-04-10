@@ -438,96 +438,99 @@ runBlogSeries context seriesId = do
       logMsg $ "  📝 Fetched " <> T.pack (show (length comments)) <> " comments"
 
       -- 5. Build context and prompt
-      blogContext <- buildBlogContext seriesId seriesDir comments today
-      let (systemPrompt, userPrompt) = buildBlogPrompt blogContext
-          combinedPrompt = systemPrompt <> "\n\n" <> userPrompt
-          genConfig = Gemini.defaultGenerationConfig { Gemini.gcTemperature = 0.9, Gemini.gcMaxOutputTokens = 8192 }
+      blogContextResult <- buildBlogContext seriesId seriesDir comments today
+      case blogContextResult of
+        Left reason -> error $ "Blog context build failed: " <> T.unpack reason
+        Right blogContext -> do
+          let (systemPrompt, userPrompt) = buildBlogPrompt blogContext
+              combinedPrompt = systemPrompt <> "\n\n" <> userPrompt
+              genConfig = Gemini.defaultGenerationConfig { Gemini.gcTemperature = 0.9, Gemini.gcMaxOutputTokens = 8192 }
 
-      -- 6. Call Gemini
-      result <- Gemini.generateContentWithFallback manager models combinedPrompt apiKey genConfig
-      case result of
-        Left err -> error $ "Blog generation failed: " <> show err
-        Right response -> do
-          let rawText = stripCodeFences (Gemini.responseText response)
-              usedModel = Gemini.modelToText (Gemini.responseModel response)
-          case parseGeneratedPost rawText of
-            Nothing -> error "Failed to parse generated blog post"
-            Just (body, rawTitle) -> do
-              let title = sanitizeTitle series rawTitle
-                  slugText = generateSlug title
-                  slug = case mkSlug slugText of
-                    Right s -> s
-                    Left e  -> error $ "Invalid slug: " <> T.unpack e
-                  filename = todayText <> "-" <> unSlug slug <> ".md"
+          -- 6. Call Gemini
+          result <- Gemini.generateContentWithFallback manager models combinedPrompt apiKey genConfig
+          case result of
+            Left err -> error $ "Blog generation failed: " <> show err
+            Right response -> do
+              let rawText = stripCodeFences (Gemini.responseText response)
+                  usedModel = Gemini.modelToText (Gemini.responseModel response)
+              case parseGeneratedPost rawText of
+                Nothing -> error "Failed to parse generated blog post"
+                Just (body, rawTitle) -> do
+                  let title = sanitizeTitle series rawTitle
+                      slugText = generateSlug title
+                      slug = case mkSlug slugText of
+                        Right s -> s
+                        Left e  -> error $ "Invalid slug: " <> T.unpack e
+                      filename = todayText <> "-" <> unSlug slug <> ".md"
 
-              -- Read previous posts for nav link update
-              posts <- readSeriesPosts seriesDir
-              let previousPost = case posts of
-                    (p:_) -> Just p
-                    []    -> Nothing
+                  -- Read previous posts for nav link update
+                  posts <- readSeriesPosts seriesDir
+                  let previousPost = case posts of
+                        (p:_) -> Just p
+                        []    -> Nothing
 
-              -- Write blog post
-              let frontmatter = assembleFrontmatter series today title slug
-                  backLink = case previousPost of
-                    Just pp -> " | " <> buildBackLink series (bpFilename pp)
-                    Nothing -> ""
-                  navLine = bscNavLink series <> backLink
-                  displayTitle = unDisplayTitle $ buildDisplayTitle series today title
-                  header = navLine <> "\n# " <> displayTitle <> "\n\n"
-                  bodyWithSig = appendModelSignature body usedModel
-              createDirectoryIfMissing True seriesDir
-              let postPath = seriesDir </> T.unpack filename
-              TIO.writeFile postPath (frontmatter <> "\n" <> header <> bodyWithSig <> "\n")
-              logMsg $ "  ✅ Written: " <> filename <> " [" <> usedModel <> "]"
+                  -- Write blog post
+                  let frontmatter = assembleFrontmatter series today title slug
+                      backLink = case previousPost of
+                        Just pp -> " | " <> buildBackLink series (bpFilename pp)
+                        Nothing -> ""
+                      navLine = bscNavLink series <> backLink
+                      displayTitle = unDisplayTitle $ buildDisplayTitle series today title
+                      header = navLine <> "\n# " <> displayTitle <> "\n\n"
+                      bodyWithSig = appendModelSignature body usedModel
+                  createDirectoryIfMissing True seriesDir
+                  let postPath = seriesDir </> T.unpack filename
+                  TIO.writeFile postPath (frontmatter <> "\n" <> header <> bodyWithSig <> "\n")
+                  logMsg $ "  ✅ Written: " <> filename <> " [" <> usedModel <> "]"
 
-              -- Generate blog image (continue on error, matching TypeScript behavior)
-              let attachmentsDir = repoRoot </> "attachments"
-              imageEnvMap <- buildEnvMap
-                [ "GEMINI_API_KEY", "CLOUDFLARE_API_TOKEN", "CLOUDFLARE_ACCOUNT_ID"
-                , "CLOUDFLARE_IMAGE_MODEL", "HUGGINGFACE_API_TOKEN", "HUGGINGFACE_IMAGE_MODEL"
-                , "TOGETHER_API_TOKEN", "TOGETHER_IMAGE_MODEL", "POLLINATIONS_ENABLED"
-                , "POLLINATIONS_IMAGE_MODEL", "PROMPT_DESCRIBER_MODEL", "IMAGE_GEMINI_MODEL"
-                ]
-              let imageProviders = resolveImageProviders imageEnvMap
-              case imageProviders of
-                [] -> logMsg "  ⚠️  No image providers configured, skipping image generation"
-                (provider : _) -> do
-                  imageResult <- try (processNote manager provider postPath attachmentsDir) :: IO (Either SomeException ImageGenerationResult)
-                  case imageResult of
-                    Right _ -> logMsg $ "  🖼️  Image generated for " <> filename
-                    Left err -> logMsg $ "  ⚠️  Image generation failed for " <> filename <> ": " <> T.pack (show err)
+                  -- Generate blog image (continue on error, matching TypeScript behavior)
+                  let attachmentsDir = repoRoot </> "attachments"
+                  imageEnvMap <- buildEnvMap
+                    [ "GEMINI_API_KEY", "CLOUDFLARE_API_TOKEN", "CLOUDFLARE_ACCOUNT_ID"
+                    , "CLOUDFLARE_IMAGE_MODEL", "HUGGINGFACE_API_TOKEN", "HUGGINGFACE_IMAGE_MODEL"
+                    , "TOGETHER_API_TOKEN", "TOGETHER_IMAGE_MODEL", "POLLINATIONS_ENABLED"
+                    , "POLLINATIONS_IMAGE_MODEL", "PROMPT_DESCRIBER_MODEL", "IMAGE_GEMINI_MODEL"
+                    ]
+                  let imageProviders = resolveImageProviders imageEnvMap
+                  case imageProviders of
+                    [] -> logMsg "  ⚠️  No image providers configured, skipping image generation"
+                    (provider : _) -> do
+                      imageResult <- try (processNote manager provider postPath attachmentsDir) :: IO (Either SomeException ImageGenerationResult)
+                      case imageResult of
+                        Right _ -> logMsg $ "  🖼️  Image generated for " <> filename
+                        Left err -> logMsg $ "  ⚠️  Image generation failed for " <> filename <> ": " <> T.pack (show err)
 
-              -- Update previous post with forward link — edit directly in vault
-              case previousPost of
-                Just pp -> updatePreviousPost (vaultDir </> T.unpack seriesId) pp series filename
-                Nothing -> pure ()
+                  -- Update previous post with forward link — edit directly in vault
+                  case previousPost of
+                    Just pp -> updatePreviousPost (vaultDir </> T.unpack seriesId) pp series filename
+                    Nothing -> pure ()
 
-              -- Write metadata
-              let metadataPath = seriesDir </> ".last-generate-metadata.json"
-              case previousPost of
-                Just pp -> TIO.writeFile metadataPath $
-                  "{\"previousPostFilename\":\"" <> bpFilename pp <> "\",\"newPostFilename\":\"" <> filename <> "\"}"
-                Nothing -> pure ()
+                  -- Write metadata
+                  let metadataPath = seriesDir </> ".last-generate-metadata.json"
+                  case previousPost of
+                    Just pp -> TIO.writeFile metadataPath $
+                      "{\"previousPostFilename\":\"" <> bpFilename pp <> "\",\"newPostFilename\":\"" <> filename <> "\"}"
+                    Nothing -> pure ()
 
-              -- Update daily reflection
-              let filenameNoExt = T.pack $ dropExtension $ T.unpack filename
-                  regenFilenameNoExt = case mRegen of
-                    Just r  -> Just (T.pack (dropExtension r))
-                    Nothing -> Nothing
-              _ <- updateDailyReflection vaultDir todayText series filenameNoExt title regenFilenameNoExt
+                  -- Update daily reflection
+                  let filenameNoExt = T.pack $ dropExtension $ T.unpack filename
+                      regenFilenameNoExt = case mRegen of
+                        Just r  -> Just (T.pack (dropExtension r))
+                        Nothing -> Nothing
+                  _ <- updateDailyReflection vaultDir todayText series filenameNoExt title regenFilenameNoExt
 
-              -- Sync new post to vault (this is a genuinely new file)
-              let postRelPath = T.unpack seriesId </> T.unpack filename
-                  postLocalPath = repoRoot </> postRelPath
-              _ <- syncFileToVault postLocalPath postRelPath vaultDir
+                  -- Sync new post to vault (this is a genuinely new file)
+                  let postRelPath = T.unpack seriesId </> T.unpack filename
+                      postLocalPath = repoRoot </> postRelPath
+                  _ <- syncFileToVault postLocalPath postRelPath vaultDir
 
-              -- Sync AGENTS.md (lives in git, needs to go to vault)
-              let agentsRelPath = T.unpack seriesId </> "AGENTS.md"
-              _ <- syncFileToVault (repoRoot </> agentsRelPath) agentsRelPath vaultDir
+                  -- Sync AGENTS.md (lives in git, needs to go to vault)
+                  let agentsRelPath = T.unpack seriesId </> "AGENTS.md"
+                  _ <- syncFileToVault (repoRoot </> agentsRelPath) agentsRelPath vaultDir
 
-              -- Sync attachments (new image files) to vault
-              syncAttachmentsDir (repoRoot </> "attachments") (vaultDir </> "attachments")
-              pure ()
+                  -- Sync attachments (new image files) to vault
+                  syncAttachmentsDir (repoRoot </> "attachments") (vaultDir </> "attachments")
+                  pure ()
 
   logMsg $ "✅ " <> taskName
 

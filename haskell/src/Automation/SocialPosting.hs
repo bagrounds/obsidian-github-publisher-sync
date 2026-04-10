@@ -323,19 +323,29 @@ readContentNote relativePath contentDir = do
           postedPlatforms = detectPostedPlatforms content
           linkedPaths = extractMarkdownLinks body relativePath contentDir
           noSocial = Map.lookup "no_social" fm == Just "true"
-          title = validatedTitle (fromMaybe (T.pack $ takeBaseName $ T.unpack relativePath) (Map.lookup "title" fm))
+          titleText = fromMaybe (T.pack $ takeBaseName $ T.unpack relativePath) (Map.lookup "title" fm)
           slug = fromMaybe relativePath (T.stripSuffix ".md" relativePath)
-          url = validatedUrl (fromMaybe ("https://bagrounds.org/" <> slug) (Map.lookup "URL" fm))
-      pure $ Just ContentNote
-        { cnFilePath = filePath
-        , cnRelativePath = validatedRelativePath relativePath
-        , cnTitle = title
-        , cnUrl = url
-        , cnBody = body
-        , cnPostedPlatforms = postedPlatforms
-        , cnLinkedNotePaths = fmap validatedRelativePath linkedPaths
-        , cnNoSocial = noSocial
-        }
+          urlText = fromMaybe ("https://bagrounds.org/" <> slug) (Map.lookup "URL" fm)
+          validated = do
+            title <- mkTitle titleText
+            url <- mkUrl urlText
+            path <- mkRelativePath relativePath
+            paths <- traverse mkRelativePath linkedPaths
+            pure ContentNote
+              { cnFilePath = filePath
+              , cnRelativePath = path
+              , cnTitle = title
+              , cnUrl = url
+              , cnBody = body
+              , cnPostedPlatforms = postedPlatforms
+              , cnLinkedNotePaths = paths
+              , cnNoSocial = noSocial
+              }
+      case validated of
+        Right note -> pure (Just note)
+        Left reason -> do
+          putStrLn $ "  ⚠️  Skipping " <> filePath <> ": " <> T.unpack reason
+          pure Nothing
     else pure Nothing
 
 --------------------------------------------------------------------------------
@@ -359,15 +369,6 @@ urlFromFilePath relativePath =
   let slug = fromMaybe relativePath (T.stripSuffix ".md" relativePath)
   in "https://bagrounds.org/" <> slug
 
-validatedTitle :: Text -> Title
-validatedTitle = either (error . T.unpack) id . mkTitle
-
-validatedUrl :: Text -> Url
-validatedUrl = either (error . T.unpack) id . mkUrl
-
-validatedRelativePath :: Text -> RelativePath
-validatedRelativePath = either (error . T.unpack) id . mkRelativePath
-
 validateNoteUrl :: (Text -> IO Bool) -> ContentNote -> IO (Maybe ContentNote)
 validateNoteUrl checker note = do
   isLive <- checker (unUrl (cnUrl note))
@@ -385,10 +386,14 @@ validateNoteUrl checker note = do
             <> "), trying file-path URL: " <> T.unpack pathUrl
           isPathLive <- checker pathUrl
           if isPathLive
-            then do
-              putStrLn "  ✅ File-path URL is live, updating frontmatter"
-              updateFrontmatterUrl (cnFilePath note) pathUrl
-              pure (Just note { cnUrl = validatedUrl pathUrl })
+            then case mkUrl pathUrl of
+              Right newUrl -> do
+                putStrLn "  ✅ File-path URL is live, updating frontmatter"
+                updateFrontmatterUrl (cnFilePath note) pathUrl
+                pure (Just note { cnUrl = newUrl })
+              Left reason -> do
+                putStrLn $ "  ⚠️  Invalid path URL: " <> T.unpack reason
+                pure Nothing
             else do
               putStrLn $ "  🚫 Both URLs not published: "
                 <> T.unpack (unUrl (cnUrl note)) <> " and " <> T.unpack pathUrl

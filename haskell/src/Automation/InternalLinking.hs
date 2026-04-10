@@ -404,15 +404,19 @@ readEntry contentDir dirName file = do
   content <- TIO.readFile filePath
   let (fm, _) = parseFrontmatter content
   pure $ do
-    title <- Map.lookup "title" fm
-    let plain = stripEmojis title
+    titleText <- Map.lookup "title" fm
+    let plain = stripEmojis titleText
     if T.length plain < minTitleLength
       then Nothing
-      else Just ContentEntry
-        { ceRelativePath = validatedRelativePath relativePath
-        , ceTitle        = validatedTitle title
-        , cePlainTitle   = validatedTitle plain
-        }
+      else do
+        path <- either (const Nothing) Just (mkRelativePath relativePath)
+        title <- either (const Nothing) Just (mkTitle titleText)
+        plainTitle <- either (const Nothing) Just (mkTitle plain)
+        pure ContentEntry
+          { ceRelativePath = path
+          , ceTitle        = title
+          , cePlainTitle   = plainTitle
+          }
 
 hasSuffix :: String -> String -> Bool
 hasSuffix suf str = drop (length str - length suf) str == suf
@@ -569,7 +573,7 @@ bfsLoop contentDir visitedRef queueRef resultRef = do
 -- Link candidate discovery
 -- --------------------------------------------------------------------------
 
-findLinkCandidates :: [ContentEntry] -> Text -> Text -> Text -> [LinkCandidate]
+findLinkCandidates :: [ContentEntry] -> Text -> Text -> RelativePath -> [LinkCandidate]
 findLinkCandidates index content masked selfPath =
   let sortedIndex = sortBy (\a b -> compare (Down (T.length (unTitle (cePlainTitle a))))
                                             (Down (T.length (unTitle (cePlainTitle b))))) index
@@ -578,7 +582,7 @@ findLinkCandidates index content masked selfPath =
   where
     findForEntry :: ([(Int, Int)], [LinkCandidate]) -> ContentEntry -> ([(Int, Int)], [LinkCandidate])
     findForEntry (ranges, cands) entry
-      | ceRelativePath entry == validatedRelativePath selfPath = (ranges, cands)
+      | ceRelativePath entry == selfPath = (ranges, cands)
       | contentAlreadyLinksTo content entry = (ranges, cands)
       | any (\c -> ceRelativePath (lcEntry c) == ceRelativePath entry) cands = (ranges, cands)
       | otherwise =
@@ -799,78 +803,82 @@ recordLinkAnalysis filePath model timestamp =
 -- File processing
 -- --------------------------------------------------------------------------
 
-processFile :: Manager -> Secret -> Gemini.Model -> FilePath -> [ContentEntry] -> IO FileResult
+processFile :: Manager -> Secret -> Gemini.Model -> FilePath -> [ContentEntry] -> IO (Maybe FileResult)
 processFile manager apiKey model filePath index = do
   let contentDir   = takeDirectory (takeDirectory filePath)
       relativePath = makeRelPathFromContentDir contentDir filePath
-      relPath = validatedRelativePath (T.pack relativePath)
-  content <- TIO.readFile filePath
-  if alreadyAnalyzed content
-    then pure FileResult
-      { frRelativePath  = relPath
-      , frModified      = False
-      , frLinksAdded    = 0
-      , frUsedInference = False
-      }
-    else do
-      let body = extractBody content
-          eligibleBooks = filter
-            (\e -> ceRelativePath e /= relPath
-                && not (contentAlreadyLinksTo content e))
-            index
-      case eligibleBooks of
-        [] -> do
-          timestamp <- nowIso
-          recordLinkAnalysis filePath model timestamp
-          pure FileResult
-            { frRelativePath  = relPath
-            , frModified      = False
-            , frLinksAdded    = 0
-            , frUsedInference = False
-            }
-        _ -> do
-          geminiResult <- identifyBooksWithGemini manager apiKey model body eligibleBooks
-          timestamp <- nowIso
-          recordLinkAnalysis filePath model timestamp
-          case geminiResult of
-            Left _err -> pure FileResult
-              { frRelativePath  = relPath
-              , frModified      = False
-              , frLinksAdded    = 0
-              , frUsedInference = True
-              }
-            Right identifiedPaths
-              | null identifiedPaths -> pure FileResult
+  case mkRelativePath (T.pack relativePath) of
+    Left reason -> do
+      putStrLn $ "  ⚠️  Skipping " <> filePath <> ": " <> T.unpack reason
+      pure Nothing
+    Right relPath -> do
+      content <- TIO.readFile filePath
+      if alreadyAnalyzed content
+        then pure $ Just FileResult
+          { frRelativePath  = relPath
+          , frModified      = False
+          , frLinksAdded    = 0
+          , frUsedInference = False
+          }
+        else do
+          let body = extractBody content
+              eligibleBooks = filter
+                (\e -> ceRelativePath e /= relPath
+                    && not (contentAlreadyLinksTo content e))
+                index
+          case eligibleBooks of
+            [] -> do
+              timestamp <- nowIso
+              recordLinkAnalysis filePath model timestamp
+              pure $ Just FileResult
+                { frRelativePath  = relPath
+                , frModified      = False
+                , frLinksAdded    = 0
+                , frUsedInference = False
+                }
+            _ -> do
+              geminiResult <- identifyBooksWithGemini manager apiKey model body eligibleBooks
+              timestamp <- nowIso
+              recordLinkAnalysis filePath model timestamp
+              case geminiResult of
+                Left _err -> pure $ Just FileResult
                   { frRelativePath  = relPath
                   , frModified      = False
                   , frLinksAdded    = 0
                   , frUsedInference = True
                   }
-              | otherwise -> do
-                  let identifiedSet = Set.fromList identifiedPaths
-                  contentAfterFm <- TIO.readFile filePath
-                  let masked          = maskProtectedRegions contentAfterFm
-                      identifiedIndex = filter (\e -> Set.member (unRelativePath (ceRelativePath e)) identifiedSet) index
-                      candidates      = findLinkCandidates identifiedIndex contentAfterFm masked (T.pack relativePath)
-                  case candidates of
-                    [] -> pure FileResult
+                Right identifiedPaths
+                  | null identifiedPaths -> pure $ Just FileResult
                       { frRelativePath  = relPath
                       , frModified      = False
                       , frLinksAdded    = 0
                       , frUsedInference = True
                       }
-                    _  -> do
-                      let validations = replicate (length candidates) True
-                          newContent  = applyReplacements contentAfterFm candidates validations
-                      TIO.writeFile filePath newContent
-                      putStrLn $ "  ✏️  " <> relativePath <> ": "
-                        <> show (length candidates) <> " link(s) applied"
-                      pure FileResult
-                        { frRelativePath  = relPath
-                        , frModified      = True
-                        , frLinksAdded    = length candidates
-                        , frUsedInference = True
-                        }
+                  | otherwise -> do
+                      let identifiedSet = Set.fromList identifiedPaths
+                      contentAfterFm <- TIO.readFile filePath
+                      let masked          = maskProtectedRegions contentAfterFm
+                          identifiedIndex = filter (\e -> Set.member (unRelativePath (ceRelativePath e)) identifiedSet) index
+                          candidates      = findLinkCandidates identifiedIndex contentAfterFm masked relPath
+                      case candidates of
+                        [] -> pure $ Just FileResult
+                          { frRelativePath  = relPath
+                          , frModified      = False
+                          , frLinksAdded    = 0
+                          , frUsedInference = True
+                          }
+                        _  -> do
+                          let validations = replicate (length candidates) True
+                              newContent  = applyReplacements contentAfterFm candidates validations
+                          TIO.writeFile filePath newContent
+                          putStrLn $ "  ✏️  " <> relativePath <> ": "
+                            <> show (length candidates) <> " link(s) applied"
+                          pure $ Just FileResult
+                            { frRelativePath  = relPath
+                            , frModified      = True
+                            , frLinksAdded    = length candidates
+                            , frUsedInference = True
+                            }
 
 makeRelPathFromContentDir :: FilePath -> FilePath -> FilePath
 makeRelPathFromContentDir contentDir filePath =
@@ -930,28 +938,24 @@ processFiles manager apiKey model contentDir index filesToVisit = do
     go _ _ [] = pure ()
     go infRef resRef (relPath : rest) = do
       let filePath = contentDir </> T.unpack relPath
-      fileResult <- processFile manager apiKey model filePath index
-      modifyIORef' resRef (fileResult :)
-      if frUsedInference fileResult
-        then do
-          infCount <- readIORef infRef
-          modifyIORef' infRef (+ 1)
-          let newCount = infCount + 1
-          if newCount >= maxInferencePerRun
-            then
-              putStrLn $ "  ⏹️  Inference limit reached: " <> show newCount <> "/" <> show maxInferencePerRun
+      mFileResult <- processFile manager apiKey model filePath index
+      case mFileResult of
+        Nothing -> go infRef resRef rest
+        Just fileResult -> do
+          modifyIORef' resRef (fileResult :)
+          if frUsedInference fileResult
+            then do
+              infCount <- readIORef infRef
+              modifyIORef' infRef (+ 1)
+              let newCount = infCount + 1
+              if newCount >= maxInferencePerRun
+                then
+                  putStrLn $ "  ⏹️  Inference limit reached: " <> show newCount <> "/" <> show maxInferencePerRun
+                else go infRef resRef rest
             else go infRef resRef rest
-        else go infRef resRef rest
 
 lookupSecret :: IO Secret
 lookupSecret = do
   mKey <- lookupEnv "GEMINI_API_KEY"
   pure $ Secret (maybe "" T.pack mKey)
-
-validatedTitle :: Text -> Title
-validatedTitle = either (error . T.unpack) id . mkTitle
-
-validatedRelativePath :: Text -> RelativePath
-validatedRelativePath = either (error . T.unpack) id . mkRelativePath
-
 

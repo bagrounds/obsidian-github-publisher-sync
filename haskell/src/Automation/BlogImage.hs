@@ -42,6 +42,7 @@ module Automation.BlogImage
   ) where
 
 import Control.Exception (SomeException, catch)
+import qualified Data.Bifunctor
 import qualified Data.ByteString.Base64 as B64
 import qualified Data.ByteString.Lazy as LBS
 import Data.Char (isAlphaNum, isDigit, toLower)
@@ -863,7 +864,7 @@ describeImageWithGemini manager apiKey model content = do
       let fallbackModel = geminiModelFallback model
       let fallbackReq = req { Gemini.grModel = fallbackModel }
       fallbackResult <- Gemini.generateContent manager fallbackReq
-      pure $ fmap Gemini.grText fallbackResult
+      pure $ Data.Bifunctor.first Gemini.renderError $ fmap Gemini.grText fallbackResult
 
 geminiModelFallback :: Text -> Text
 geminiModelFallback m

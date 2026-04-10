@@ -683,8 +683,8 @@ generateSocialPostText manager apiKey note platform = do
   questionResult <- Gemini.generateContentWithFallback manager questionModels questionCombined apiKey genConfig
 
   case (tagsResult, questionResult) of
-    (Left err, _) -> pure (Left $ "Tags generation failed: " <> err)
-    (_, Left err) -> pure (Left $ "Question generation failed: " <> err)
+    (Left err, _) -> pure (Left $ "Tags generation failed: " <> Gemini.renderError err)
+    (_, Left err) -> pure (Left $ "Question generation failed: " <> Gemini.renderError err)
     (Right tagsResp, Right questionResp) -> do
       let tags = T.strip (Gemini.grText tagsResp)
           question = T.strip (Gemini.grText questionResp)

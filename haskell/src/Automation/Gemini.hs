@@ -6,6 +6,7 @@ module Automation.Gemini
   , Request (..)
   , Response (..)
   , GenerationConfig (..)
+  , Error (..)
   , defaultModel
   , defaultQuestionModel
   , gemini3Flash
@@ -14,6 +15,11 @@ module Automation.Gemini
   , generateContent
   , generateContentWithFallback
   , defaultGenerationConfig
+  , renderError
+  , isRateLimitError
+  , isQuotaExhaustedError
+  , parseResponseText
+  , extractText
   ) where
 
 import Automation.Json (Value (..), ToValue (..), (.=), object, encode)
@@ -35,6 +41,43 @@ import qualified Network.HTTP.Client as HTTP
 import Network.HTTP.Types.Status (statusCode)
 
 import qualified Data.ByteString.Lazy as LBS
+
+-- | Domain-specific error type for Gemini API operations.
+-- Replaces raw @Either Text@ with structured constructors that preserve
+-- error context and enable typed pattern matching (e.g. rate-limit detection).
+data Error
+  = JsonParseError
+  | ExtractionError Text
+  | HttpError Int Text
+  | NoModelsProvided
+  | AllModelsFailed Text Error
+  deriving (Show, Eq)
+
+renderError :: Error -> Text
+renderError JsonParseError =
+  "Failed to parse Gemini response JSON"
+renderError (ExtractionError detail) =
+  "Gemini response extraction failed: " <> detail
+renderError (HttpError status body) =
+  "Gemini API returned status " <> T.pack (show status) <> ": " <> body
+renderError NoModelsProvided =
+  "No models provided for fallback"
+renderError (AllModelsFailed model innerError) =
+  "All models failed. Last error (" <> model <> "): " <> renderError innerError
+
+isRateLimitError :: Error -> Bool
+isRateLimitError (HttpError 429 _) = True
+isRateLimitError (HttpError _ body) =
+  T.isInfixOf "RESOURCE_EXHAUSTED" body || T.isInfixOf "quota" body
+isRateLimitError (AllModelsFailed _ inner) = isRateLimitError inner
+isRateLimitError _ = False
+
+isQuotaExhaustedError :: Error -> Bool
+isQuotaExhaustedError (HttpError _ body) =
+  T.isInfixOf "quota" body
+    && (T.isInfixOf "daily" body || T.isInfixOf "per day" body || T.isInfixOf "PerDay" body)
+isQuotaExhaustedError (AllModelsFailed _ inner) = isQuotaExhaustedError inner
+isQuotaExhaustedError _ = False
 
 data Config = Config
   { gcApiKey :: Secret
@@ -100,13 +143,13 @@ buildRequestBody prompt config = object
   , "generationConfig" .= config
   ]
 
-parseResponseText :: LBS.ByteString -> Either Text Text
+parseResponseText :: LBS.ByteString -> Either Error Text
 parseResponseText body =
   case Json.decode body of
-    Nothing  -> Left "Failed to parse Gemini response JSON"
+    Nothing  -> Left JsonParseError
     Just val -> extractText val
 
-extractText :: Value -> Either Text Text
+extractText :: Value -> Either Error Text
 extractText (Object obj) =
   case lookup "candidates" obj of
     Just (Array (Object candidate : _)) ->
@@ -116,13 +159,13 @@ extractText (Object obj) =
             Just (Array (Object partObj : _)) ->
               case lookup "text" partObj of
                 Just (String t) -> Right t
-                _               -> Left "No text in part"
-            _ -> Left "No parts in content"
-        _ -> Left "Content is not an object"
-    _ -> Left "No candidates in response"
-extractText _ = Left "Response is not an object"
+                _               -> Left (ExtractionError "no text in part")
+            _ -> Left (ExtractionError "no parts in content")
+        _ -> Left (ExtractionError "content is not an object")
+    _ -> Left (ExtractionError "no candidates in response")
+extractText _ = Left (ExtractionError "response is not an object")
 
-generateContent :: Manager -> Request -> IO (Either Text Response)
+generateContent :: Manager -> Request -> IO (Either Error Response)
 generateContent manager req = do
   let url = T.unpack $ geminiEndpoint (grModel req) <> "?key=" <> unSecret (grApiKey req)
   initReq <- parseRequest url
@@ -146,11 +189,10 @@ generateContent manager req = do
           , grModel' = grModel req
           }
     code -> pure $ Left $
-      "Gemini API returned status " <> T.pack (show code)
-        <> ": " <> TE.decodeUtf8 (LBS.toStrict $ responseBody response)
+      HttpError code (TE.decodeUtf8 (LBS.toStrict $ responseBody response))
 
-generateContentWithFallback :: Manager -> [Text] -> Text -> Secret -> GenerationConfig -> IO (Either Text Response)
-generateContentWithFallback _ [] _ _ _ = pure $ Left "No models provided for fallback"
+generateContentWithFallback :: Manager -> [Text] -> Text -> Secret -> GenerationConfig -> IO (Either Error Response)
+generateContentWithFallback _ [] _ _ _ = pure $ Left NoModelsProvided
 generateContentWithFallback manager (model : fallbacks) prompt apiKey config = do
   result <- generateContent manager Request
     { grPrompt = prompt
@@ -161,7 +203,7 @@ generateContentWithFallback manager (model : fallbacks) prompt apiKey config = d
   case result of
     Right resp -> pure $ Right resp
     Left err -> case fallbacks of
-      [] -> pure $ Left $ "All models failed. Last error (" <> model <> "): " <> err
+      [] -> pure $ Left $ AllModelsFailed model err
       _  -> do
         putStrLn $ "⚠️ Model " <> T.unpack model <> " failed, trying next fallback..."
         generateContentWithFallback manager fallbacks prompt apiKey config

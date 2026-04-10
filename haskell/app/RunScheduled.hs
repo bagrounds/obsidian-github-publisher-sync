@@ -123,7 +123,7 @@ callGeminiForGenerator context models (systemPrompt, userPrompt) = do
       config = Gemini.defaultGenerationConfig { Gemini.gcTemperature = 0.9, Gemini.gcMaxOutputTokens = 2048 }
   result <- Gemini.generateContentWithFallback (Context.httpManager context) models combinedPrompt (Context.geminiApiKey context) config
   case result of
-    Left err -> error $ "Gemini API error: " <> T.unpack err
+    Left err -> error $ "Gemini API error: " <> T.unpack (Gemini.renderError err)
     Right resp -> pure (Gemini.grText resp, Gemini.grModel' resp)
 
 -- ---------------------------------------------------------------------------
@@ -451,7 +451,7 @@ runBlogSeries context seriesId = do
       -- 6. Call Gemini
       result <- Gemini.generateContentWithFallback manager models combinedPrompt apiKey genConfig
       case result of
-        Left err -> error $ "Blog generation failed: " <> T.unpack err
+        Left err -> error $ "Blog generation failed: " <> T.unpack (Gemini.renderError err)
         Right resp -> do
           let rawText = stripCodeFences (Gemini.grText resp)
               usedModel = Gemini.grModel' resp

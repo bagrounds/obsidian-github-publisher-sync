@@ -674,26 +674,15 @@ retryLoop manager apiKey model prompt attempt backoff = do
     Right resp ->
       pure (parseGeminiBookPaths (Gemini.grText resp))
     Left err
-      | isRateLimitErr err && attempt < maxGeminiRetries -> do
+      | Gemini.isRateLimitError err && attempt < maxGeminiRetries -> do
           putStrLn $ "  ⏳ Rate limit, retry " <> show (attempt + 1) <> "/" <> show maxGeminiRetries
             <> " in " <> show (backoff `div` 1_000_000) <> "s"
           threadDelay backoff
           retryLoop manager apiKey model prompt (attempt + 1) (min (backoff * 2) maxBackoffUs)
-      | isDailyQuotaErr err ->
-          pure (Left ("QuotaExhausted: " <> err))
+      | Gemini.isQuotaExhaustedError err ->
+          pure (Left ("QuotaExhausted: " <> Gemini.renderError err))
       | otherwise ->
-          pure (Left err)
-
-isRateLimitErr :: Text -> Bool
-isRateLimitErr msg =
-  T.isInfixOf "429" msg
-    || T.isInfixOf "RESOURCE_EXHAUSTED" msg
-    || T.isInfixOf "quota" msg
-
-isDailyQuotaErr :: Text -> Bool
-isDailyQuotaErr msg =
-  T.isInfixOf "quota" msg
-    && (T.isInfixOf "daily" msg || T.isInfixOf "per day" msg || T.isInfixOf "PerDay" msg)
+          pure (Left (Gemini.renderError err))
 
 parseGeminiBookPaths :: Text -> Either Text [Text]
 parseGeminiBookPaths raw =

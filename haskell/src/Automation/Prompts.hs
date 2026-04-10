@@ -51,9 +51,9 @@ stripSubtitle title =
     Nothing -> title
     Just idx ->
       let shortened = T.strip (T.take idx title)
-      in case T.null shortened of
-        True  -> title
-        False -> shortened
+      in if T.null shortened
+        then title
+        else shortened
 
 buildTagsPrompt :: ReflectionData -> PromptPair
 buildTagsPrompt rd =
@@ -124,12 +124,12 @@ assemblePost :: Text -> ReflectionData -> Text
 assemblePost modelOutput rd =
   let (question, tags) = parseQuestionAndTags modelOutput
       titlePart = [unTitle (rdTitle rd), ""]
-      questionPart = case T.null question of
-        True  -> []
-        False -> [aiQuestionPrefix <> question, ""]
-      tagsPart = case T.null tags of
-        True  -> []
-        False -> [tags]
+      questionPart = if T.null question
+        then []
+        else [aiQuestionPrefix <> question, ""]
+      tagsPart = if T.null tags
+        then []
+        else [tags]
       urlPart = [unUrl (rdUrl rd)]
   in T.intercalate "\n" (titlePart <> questionPart <> tagsPart <> urlPart)
 

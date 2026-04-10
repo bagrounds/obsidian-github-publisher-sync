@@ -215,9 +215,7 @@ foldTokens fullEncoded pos (token : rest) =
   let tokenBytes = TE.encodeUtf8 token
       tokenLen = BS.length tokenBytes
       spaceLen = if null rest then 0 else 1
-      facets = if isUrl token
-        then [Facet pos (pos + tokenLen) (FacetLink (normalizeUrl token))]
-        else []
+      facets = [Facet pos (pos + tokenLen) (FacetLink (normalizeUrl token)) | isUrl token]
   in facets <> foldTokens fullEncoded (pos + tokenLen + spaceLen) rest
 
 isUrl :: Text -> Bool
@@ -252,7 +250,7 @@ uploadBlob manager AtpSession{..} contentType imageData = do
     Left err   -> Left (T.pack (show err))
     Right body -> case eitherDecode @Json.Value body of
       Left err  -> Left (T.pack err)
-      Right val -> case withObject "blob response" (\obj -> obj .: "blob") val of
+      Right val -> case withObject "blob response" (.: "blob") val of
         Left err   -> Left (T.pack err)
         Right blob -> Right blob
 
@@ -436,7 +434,7 @@ parseOEmbedHtml :: LBS.ByteString -> Either Text EmbedResult
 parseOEmbedHtml body =
   case eitherDecode @Json.Value body of
     Left err  -> Left (T.pack err)
-    Right val -> case withObject "oembed" (\obj -> obj .: "html") val of
+    Right val -> case withObject "oembed" (.: "html") val of
       Left err   -> Left (T.pack err)
       Right html -> Right (EmbedResult html)
 

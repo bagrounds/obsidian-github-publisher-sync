@@ -38,6 +38,6 @@ findMostRecentReflection :: FilePath -> IO (Maybe Text)
 findMostRecentReflection contentDir = do
   let reflDir = contentDir </> "reflections"
   exists <- doesDirectoryExist reflDir
-  case exists of
-    False -> pure Nothing
-    True  -> selectMostRecentReflection <$> listDirectory reflDir
+  if exists
+    then selectMostRecentReflection <$> listDirectory reflDir
+    else pure Nothing

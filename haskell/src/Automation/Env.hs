@@ -9,7 +9,7 @@ module Automation.Env
 
 import Control.Monad (filterM)
 import Data.List (intercalate)
-import Data.Maybe (isJust)
+import Data.Maybe (isJust, isNothing)
 import Data.Text (Text)
 import qualified Data.Text as T
 import qualified Data.Text.IO as TIO
@@ -45,9 +45,8 @@ yesterdayDate :: UTCTime -> Day
 yesterdayDate (UTCTime day _) = addDays (-1) day
 
 getYesterdayDate :: IO Text
-getYesterdayDate = do
-  now <- getCurrentTime
-  pure $ T.pack $ formatTime defaultTimeLocale "%Y-%m-%d" (yesterdayDate now)
+getYesterdayDate =
+  T.pack . formatTime defaultTimeLocale "%Y-%m-%d" . yesterdayDate <$> getCurrentTime
 
 allPresent :: [String] -> IO Bool
 allPresent = fmap and . traverse (fmap isJust . lookupEnv)
@@ -55,9 +54,9 @@ allPresent = fmap and . traverse (fmap isJust . lookupEnv)
 logDisabled :: Text -> String -> IO ()
 logDisabled platform envVar = do
   disabled <- isPlatformDisabled envVar
-  case disabled of
-    True  -> TIO.putStrLn $ "🚫 " <> platform <> " disabled via " <> T.pack envVar <> " env var"
-    False -> pure ()
+  if disabled
+    then TIO.putStrLn $ "🚫 " <> platform <> " disabled via " <> T.pack envVar <> " env var"
+    else pure ()
 
 requireEnv :: String -> IO Text
 requireEnv key =
@@ -80,7 +79,7 @@ whenPlatformEnabled platform disableVar keys action = do
 validateEnvironment :: IO EnvironmentConfig
 validateEnvironment = do
   let required = ["GEMINI_API_KEY", "OBSIDIAN_AUTH_TOKEN", "OBSIDIAN_VAULT_NAME"]
-  missing <- filterM (fmap (not . isJust) . lookupEnv) required
+  missing <- filterM (fmap isNothing . lookupEnv) required
   case missing of
     [] -> pure ()
     _  -> error $ "Missing required environment variables: " <> intercalate ", " missing

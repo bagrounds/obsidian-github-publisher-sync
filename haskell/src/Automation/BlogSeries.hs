@@ -70,12 +70,11 @@ extractSlug filename =
 parseGeneratedPost :: Text -> Maybe (Text, Text)
 parseGeneratedPost raw =
   let trimmed = T.strip raw
-  in case T.length trimmed < 200 of
-    True  -> Nothing
-    False ->
-      case find isHeading (T.lines trimmed) of
-        Nothing -> Nothing
-        Just h  -> Just (trimmed, extractHeadingText h)
+  in if T.length trimmed < 200
+    then Nothing
+    else case find isHeading (T.lines trimmed) of
+      Nothing -> Nothing
+      Just h  -> Just (trimmed, extractHeadingText h)
 
 appendModelSignature :: Text -> Text -> Text
 appendModelSignature body model = body <> "\n\n✍️ Written by " <> model
@@ -84,18 +83,18 @@ updatePreviousPost :: FilePath -> BlogPost -> BlogSeriesConfig -> Text -> IO ()
 updatePreviousPost seriesDir prevPost series newFilename = do
   let filePath = seriesDir </> T.unpack (bpFilename prevPost)
   exists <- doesFileExist filePath
-  case exists of
-    False -> pure ()
-    True  -> do
+  if exists
+    then do
       content <- TIO.readFile filePath
       let fwdLink = buildForwardLink series newFilename
           navPrefix = bscNavLink series
           ls = T.splitOn "\n" content
           updatedLines = fmap (updateNavLine navPrefix fwdLink) ls
           updated = T.intercalate "\n" updatedLines
-      case updated == content of
-        True  -> pure ()
-        False -> TIO.writeFile filePath updated
+      if updated == content
+        then pure ()
+        else TIO.writeFile filePath updated
+    else pure ()
 
 stripDatePrefix :: Text -> Text
 stripDatePrefix t

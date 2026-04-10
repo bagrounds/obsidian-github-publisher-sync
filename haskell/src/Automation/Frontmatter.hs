@@ -116,9 +116,9 @@ isValidDatePrefix t =
 extractDateFromFilename :: Text -> IO Text
 extractDateFromFilename filename =
   let prefix = T.take 10 $ T.pack $ takeBaseName $ T.unpack filename
-  in case isValidDatePrefix prefix of
-    True  -> pure prefix
-    False -> T.pack . formatTime defaultTimeLocale "%Y-%m-%d" <$> getCurrentTime
+  in if isValidDatePrefix prefix
+    then pure prefix
+    else T.pack . formatTime defaultTimeLocale "%Y-%m-%d" <$> getCurrentTime
 
 deriveUrl :: Map Text Text -> Text -> Text
 deriveUrl fm relativePath =
@@ -129,9 +129,8 @@ readReflection :: Text -> FilePath -> IO (Maybe ReflectionData)
 readReflection date contentDir = do
   let filePath = getReflectionPath date contentDir
   exists <- doesFileExist filePath
-  case exists of
-    False -> pure Nothing
-    True  -> do
+  if exists
+    then do
       content <- TIO.readFile filePath
       let (fm, body) = parseFrontmatter content
           sections = detectSections content
@@ -146,14 +145,14 @@ readReflection date contentDir = do
         , rdHasBlueskySection = hasBluesky
         , rdHasMastodonSection = hasMastodon
         }
+    else pure Nothing
 
 readNote :: Text -> FilePath -> IO (Maybe ReflectionData)
 readNote relativePath contentDir = do
   let filePath = contentDir </> T.unpack relativePath
   exists <- doesFileExist filePath
-  case exists of
-    False -> pure Nothing
-    True  -> do
+  if exists
+    then do
       content <- TIO.readFile filePath
       let (fm, body) = parseFrontmatter content
           (hasTweet, hasBluesky, hasMastodon) = detectSections content
@@ -168,6 +167,7 @@ readNote relativePath contentDir = do
         , rdHasBlueskySection = hasBluesky
         , rdHasMastodonSection = hasMastodon
         }
+    else pure Nothing
 
 validatedTitle :: Text -> Title
 validatedTitle = either (error . T.unpack) id . mkTitle

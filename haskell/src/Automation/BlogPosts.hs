@@ -4,10 +4,10 @@ module Automation.BlogPosts
   , readAgentsMd
   ) where
 
-import Data.List (sortBy)
+import Data.List (sortOn)
 import qualified Data.Map.Strict as Map
 import Data.Maybe (fromMaybe)
-import Data.Ord (Down (..), comparing)
+import Data.Ord (Down (..))
 import Data.Text (Text)
 import qualified Data.Text as T
 import qualified Data.Text.IO as TIO
@@ -54,21 +54,21 @@ parsePostFile seriesDir filename = do
 readSeriesPosts :: FilePath -> IO [BlogPost]
 readSeriesPosts seriesDir = do
   exists <- doesDirectoryExist seriesDir
-  case exists of
-    False -> pure []
-    True  -> do
+  if exists
+    then do
       entries <- listDirectory seriesDir
       let mdFiles = filter isPostFile $ fmap T.pack entries
       posts <- traverse (parsePostFile seriesDir) mdFiles
-      pure $ sortBy (comparing (Down . bpFilename)) posts
+      pure $ sortOn (Down . bpFilename) posts
+    else pure []
 
 readAgentsMd :: FilePath -> IO Text
 readAgentsMd seriesDir = do
   let agentsPath = seriesDir </> "AGENTS.md"
   exists <- doesFileExist agentsPath
-  case exists of
-    False -> pure ""
-    True  -> do
+  if exists
+    then do
       raw <- TIO.readFile agentsPath
       let (_, body) = parseFrontmatter raw
       pure $ T.strip body
+    else pure ""

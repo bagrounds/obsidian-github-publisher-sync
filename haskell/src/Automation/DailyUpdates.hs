@@ -57,11 +57,11 @@ extractPageBullets updatesText path =
   let pageNeedle = "[[" <> stripMd path <> "|"
       allLines = T.splitOn "\n" updatesText
       pageIdx = findLineContaining pageNeedle allLines 0
-  in case pageIdx < length allLines of
-    False -> ""
-    True  ->
-      let subLines = takeWhile (\l -> T.isPrefixOf "  - " l) (drop (pageIdx + 1) allLines)
+  in if pageIdx < length allLines
+    then
+      let subLines = takeWhile (T.isPrefixOf "  - ") (drop (pageIdx + 1) allLines)
       in T.intercalate "\n" subLines
+    else ""
 
 addUpdateLinks :: Text -> [UpdateLink] -> Text
 addUpdateLinks content [] = content
@@ -155,31 +155,31 @@ dropTrailingBlanks = reverse . dropWhile (\l -> T.strip l == "") . reverse
 extractTitleFromFile :: FilePath -> IO Text
 extractTitleFromFile filePath = do
   exists <- doesFileExist filePath
-  case exists of
-    False -> pure (T.pack (takeBaseName filePath))
-    True  -> do
+  if exists
+    then do
       fileContent <- TIO.readFile filePath
       let (frontmatter, _) = parseFrontmatter fileContent
           fallback = T.pack (takeBaseName filePath)
       pure (maybe fallback (\t -> if T.null t then fallback else t) (Map.lookup "title" frontmatter))
+    else pure (T.pack (takeBaseName filePath))
 
 addUpdateLinksToReflection :: FilePath -> Text -> [UpdateLink] -> IO Bool
 addUpdateLinksToReflection _ _ [] = pure False
 addUpdateLinksToReflection reflectionsDir date links = do
   let reflectionPath = reflectionsDir </> T.unpack date <> ".md"
   exists <- doesFileExist reflectionPath
-  case exists of
-    False -> do
+  if exists
+    then pure ()
+    else do
       result <- ensureDailyReflection reflectionsDir date
-      case errCreated result of
-        True  -> TIO.putStrLn ("  📝 Created daily reflection for " <> date)
-        False -> pure ()
-    True -> pure ()
+      if errCreated result
+        then TIO.putStrLn ("  📝 Created daily reflection for " <> date)
+        else pure ()
   fileContent <- TIO.readFile reflectionPath
   let updated = addUpdateLinks fileContent links
-  case updated == fileContent of
-    True  -> pure False
-    False -> do
+  if updated == fileContent
+    then pure False
+    else do
       TIO.writeFile reflectionPath updated
       let linkPaths = T.intercalate ", " (fmap (unRelativePath . ulRelativePath) links)
       TIO.putStrLn ("  🔄 Added update link(s) to " <> date <> " reflection: " <> linkPaths)

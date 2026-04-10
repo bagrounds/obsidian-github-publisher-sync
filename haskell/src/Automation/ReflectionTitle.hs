@@ -16,6 +16,7 @@ module Automation.ReflectionTitle
 import Data.Char (isDigit)
 import Data.List (nub)
 import Data.List.NonEmpty (NonEmpty)
+import Data.Maybe (fromMaybe)
 import Data.Text (Text)
 import qualified Data.Text as T
 
@@ -83,7 +84,7 @@ extractLinkedTitles noteContent =
   let (_, body) = parseFrontmatter noteContent
       ls = T.lines body
       lsBeforeUpdates = takeWhile (not . isUpdatesSectionHeading) ls
-      listItems = filter (\l -> T.isPrefixOf "- " (T.stripStart l)) lsBeforeUpdates
+      listItems = filter (T.isPrefixOf "- " . T.stripStart) lsBeforeUpdates
       titles = concatMap extractTitlesFromLine listItems
   in filter (not . T.null) $ fmap stripTitlePrefixes titles
 
@@ -127,7 +128,7 @@ findTitleLine = foldr (\l acc -> if T.isPrefixOf "title:" l then Just l else acc
 
 buildReflectionTitlePrompt :: [Text] -> [Text] -> (Text, Text)
 buildReflectionTitlePrompt linkedTitles recentTitles =
-  let examplesBlock = T.intercalate "\n" $ fmap (\t -> "- " <> t) recentTitles
+  let examplesBlock = T.intercalate "\n" $ fmap ("- " <>) recentTitles
       system = "You create short, creative titles from a list of content titles.\n\
                \\n\
                \YOUR GOAL: produce a grammatically coherent sentence or phrase — NOT a list of keywords.\n\
@@ -179,12 +180,8 @@ stripCodeFences t =
               Just rest -> rest
               Nothing -> case T.stripPrefix "```md\n" t of
                 Just rest -> rest
-                Nothing -> case T.stripPrefix "```\n" t of
-                  Just rest -> rest
-                  Nothing -> t
-      t2 = case T.stripSuffix "\n```" t1 of
-              Just rest -> rest
-              Nothing -> t1
+                Nothing -> fromMaybe t (T.stripPrefix "```\n" t)
+      t2 = fromMaybe t1 (T.stripSuffix "\n```" t1)
   in t2
 
 stripDatePrefix :: Text -> Text
@@ -223,17 +220,17 @@ updateFmFields fmLines fullTitle =
       updateLine l
         | T.isPrefixOf "title:" l = "title: " <> quoted
         | otherwise = l
-      withTitle = case hasTitle of
-        True  -> fmap updateLine fmLines
-        False -> fmLines <> ["title: " <> quoted]
+      withTitle = if hasTitle
+        then fmap updateLine fmLines
+        else fmLines <> ["title: " <> quoted]
       updateAliases [] = []
       updateAliases (l:rest)
         | T.isPrefixOf "aliases:" l =
           l : ("  - " <> quoted) : dropWhile (\r -> T.isPrefixOf "  -" r || T.isPrefixOf "  - " r) rest
         | otherwise = l : updateAliases rest
-  in case hasAliases of
-    True  -> updateAliases withTitle
-    False -> withTitle <> ["aliases:", "  - " <> quoted]
+  in if hasAliases
+    then updateAliases withTitle
+    else withTitle <> ["aliases:", "  - " <> quoted]
 
 updateH1Heading :: Text -> Text -> Text -> Text
 updateH1Heading content date fullTitle =

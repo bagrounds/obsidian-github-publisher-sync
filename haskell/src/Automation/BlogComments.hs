@@ -1,5 +1,4 @@
 {-# LANGUAGE OverloadedStrings #-}
-{-# LANGUAGE DeriveGeneric #-}
 
 module Automation.BlogComments
   ( BlogComment (..)
@@ -17,8 +16,8 @@ import Automation.Json
   , object
   , withObject
   )
-import Data.List (sortBy)
-import Data.Ord (Down (..), comparing)
+import Data.List (sortOn)
+import Data.Ord (Down (..))
 import Data.Text (Text)
 import qualified Data.Text as T
 import qualified Data.Text.Encoding as TE
@@ -47,7 +46,7 @@ data BlogComment = BlogComment
   , bcIsPriority :: Bool
   } deriving (Show, Eq)
 
-data GqlAuthor = GqlAuthor
+newtype GqlAuthor = GqlAuthor
   { gaLogin :: Text
   } deriving (Show, Eq)
 
@@ -68,7 +67,7 @@ instance FromValue GqlComment where
       <*> v .:? "author"
       <*> v .: "createdAt"
 
-data GqlCommentsNode = GqlCommentsNode
+newtype GqlCommentsNode = GqlCommentsNode
   { gcnNodes :: [GqlComment]
   } deriving (Show, Eq)
 
@@ -87,7 +86,7 @@ instance FromValue GqlDiscussion where
       <$> v .: "title"
       <*> v .: "comments"
 
-data GqlSearchNodes = GqlSearchNodes
+newtype GqlSearchNodes = GqlSearchNodes
   { gsnNodes :: [GqlDiscussion]
   } deriving (Show, Eq)
 
@@ -95,7 +94,7 @@ instance FromValue GqlSearchNodes where
   fromValue = withObject "GqlSearchNodes" $ \v ->
     GqlSearchNodes <$> v .: "nodes"
 
-data GqlSearchData = GqlSearchData
+newtype GqlSearchData = GqlSearchData
   { gsdSearch :: GqlSearchNodes
   } deriving (Show, Eq)
 
@@ -103,7 +102,7 @@ instance FromValue GqlSearchData where
   fromValue = withObject "GqlSearchData" $ \v ->
     GqlSearchData <$> v .: "search"
 
-data GqlError = GqlError
+newtype GqlError = GqlError
   { geMessage :: Text
   } deriving (Show, Eq)
 
@@ -200,4 +199,4 @@ fetchAllSeriesComments manager seriesId priorityUser = do
       let searchQuery = "repo:" <> giscusRepo <> " in:title \"" <> seriesId <> "/\""
       discussions <- searchDiscussions manager (T.pack token) searchQuery 50 50
       let allComments = concatMap (fmap (toComment priorityUser) . gcnNodes . gdComments) discussions
-      pure $ sortBy (comparing (Down . bcCreatedAt)) allComments
+      pure $ sortOn (Down . bcCreatedAt) allComments

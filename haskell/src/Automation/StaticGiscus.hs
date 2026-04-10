@@ -32,7 +32,7 @@ import Automation.Json
 import Control.Monad (filterM)
 import Data.Map.Strict (Map)
 import qualified Data.Map.Strict as Map
-import Data.Maybe (mapMaybe)
+import Data.Maybe (catMaybes, mapMaybe)
 import Data.Text (Text)
 import qualified Data.Text as T
 import qualified Data.Text.Encoding as TE
@@ -74,7 +74,7 @@ instance FromValue GqlComment where
       <*> v .:? "author"
       <*> v .: "createdAt"
 
-data GqlCommentsNode = GqlCommentsNode
+newtype GqlCommentsNode = GqlCommentsNode
   { sgcnNodes :: [GqlComment]
   } deriving (Show, Eq)
 
@@ -111,7 +111,7 @@ instance FromValue GqlDiscussionsPage where
   fromValue = withObject "GqlDiscussionsPage" $ \v ->
     GqlDiscussionsPage <$> v .: "nodes" <*> v .: "pageInfo"
 
-data GqlRepository = GqlRepository
+newtype GqlRepository = GqlRepository
   { sgrDiscussions :: Maybe GqlDiscussionsPage
   } deriving (Show, Eq)
 
@@ -119,7 +119,7 @@ instance FromValue GqlRepository where
   fromValue = withObject "GqlRepository" $ \v ->
     GqlRepository <$> v .:? "discussions"
 
-data GqlData = GqlData
+newtype GqlData = GqlData
   { sgdRepository :: Maybe GqlRepository
   } deriving (Show, Eq)
 
@@ -127,7 +127,7 @@ instance FromValue GqlData where
   fromValue = withObject "GqlData" $ \v ->
     GqlData <$> v .:? "repository"
 
-data GqlError = GqlError
+newtype GqlError = GqlError
   { sgeMessage :: Text
   } deriving (Show, Eq)
 
@@ -349,9 +349,8 @@ fetchAllDiscussions manager token owner repo categoryId =
 walkHtmlFiles :: FilePath -> IO [FilePath]
 walkHtmlFiles dir = do
   exists <- doesDirectoryExist dir
-  case exists of
-    False -> pure []
-    True  -> do
+  if exists
+    then do
       entries <- listDirectory dir
       let paths = fmap (dir </>) entries
       files <- filterM doesFileExist paths
@@ -359,11 +358,12 @@ walkHtmlFiles dir = do
       let htmlFiles = filter (\f -> takeExtension f == ".html") files
       nested <- traverse walkHtmlFiles dirs
       pure (htmlFiles <> concat nested)
+    else pure []
 
 processHtmlFiles :: FilePath -> CommentsMap -> IO [FilePath]
 processHtmlFiles dir commentsMap = do
   htmlFiles <- walkHtmlFiles dir
-  fmap (mapMaybe id) $ traverse (processOneFile commentsMap) htmlFiles
+  catMaybes <$> traverse (processOneFile commentsMap) htmlFiles
 
 processOneFile :: CommentsMap -> FilePath -> IO (Maybe FilePath)
 processOneFile commentsMap filePath = do

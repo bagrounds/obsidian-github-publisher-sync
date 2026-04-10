@@ -13,6 +13,7 @@ module Automation.AiFiction
   ) where
 
 import Data.List.NonEmpty (NonEmpty)
+import Data.Maybe (fromMaybe)
 import Data.Text (Text)
 import qualified Data.Text as T
 
@@ -60,7 +61,7 @@ findClosingDash (l:rest) idx =
 
 findFirstIndex :: [Text] -> Text -> Int
 findFirstIndex headers body =
-  let indices = fmap (\h -> indexOfHeader h body) headers
+  let indices = fmap (`indexOfHeader` body) headers
       valid = filter (>= 0) indices
   in case valid of
     [] -> T.length body
@@ -107,12 +108,8 @@ stripCodeFences t =
               Just rest -> rest
               Nothing -> case T.stripPrefix "```md\n" t of
                 Just rest -> rest
-                Nothing -> case T.stripPrefix "```\n" t of
-                  Just rest -> rest
-                  Nothing -> t
-      t2 = case T.stripSuffix "\n```" t1 of
-              Just rest -> rest
-              Nothing -> t1
+                Nothing -> fromMaybe t (T.stripPrefix "```\n" t)
+      t2 = fromMaybe t1 (T.stripSuffix "\n```" t1)
   in t2
 
 removeQuotationMarks :: Text -> Text
@@ -128,18 +125,18 @@ applyFiction :: Text -> Text -> Maybe Text -> Text
 applyFiction content fiction mModel =
   let signature = maybe "" buildFictionSignature mModel
       sectionBlock = fictionSectionHeader <> "\n\n" <> fiction <> signature
-      embedIndices = filter (>= 0) $ fmap (\h -> indexOfHeader h content) embedHeaders
+      embedIndices = filter (>= 0) $ fmap (`indexOfHeader` content) embedHeaders
       updatesIdx = indexOfHeader updatesSectionHeader content
       candidates = filter (>= 0) (updatesIdx : embedIndices)
       insertBeforeIdx = case candidates of
         [] -> -1
         _  -> minimum candidates
-  in case insertBeforeIdx >= 0 of
-    True ->
+  in if insertBeforeIdx >= 0
+    then
       let before = T.stripEnd (T.take insertBeforeIdx content)
           after = T.drop insertBeforeIdx content
       in before <> "\n\n" <> sectionBlock <> "\n\n" <> after
-    False ->
+    else
       T.stripEnd content <> "\n\n" <> sectionBlock <> "\n"
 
 data FictionConfig = FictionConfig

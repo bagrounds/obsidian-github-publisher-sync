@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-04-09T13:35:56-07:00
+updated: 2026-04-09T18:08:51-07:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -21,11 +21,11 @@ updated: 2026-04-09T13:35:56-07:00
 - [2026-04-06 | 🌳 Wood 💡 Choice ☀️ Monday 🤖 Signal 🏛️ Future 🔧 Capacity 📺🐔🤖🏛️🤖🐲](./reflections/2026-04-06.md)  
   
   
-## [🤖 AI Blog](./ai-blog/index.md) (118)  
+## [🤖 AI Blog](./ai-blog/index.md) (119)  
+- [2026-04-09 | 🧳 Introducing AppContext for Shared State 🏗️](./ai-blog/2026-04-09-3-introducing-appcontext-for-shared-state.md)  
 - [2026-04-09 | 🏷️ Qualified Imports as Namespaces 🔤](./ai-blog/2026-04-09-2-qualified-imports-as-namespaces.md)  
 - [2026-04-09 | 📦 Vertical Module Design: Think Like a Library Developer 🧩](./ai-blog/2026-04-09-1-vertical-module-design.md)  
 - [2026-04-08 | 🏷️ Completing Domain Newtypes: Url, Title, and RelativePath 🔒](./ai-blog/2026-04-08-3-completing-domain-newtypes.md)  
-- [2026-04-08 | 🔐 Domain Types for Safety and Clarity 🏗️](./ai-blog/2026-04-08-2-domain-types-for-safety-and-clarity.md)  
   
   
 ## [🤖 Auto Blog Zero](./auto-blog-zero/index.md) (30)  
@@ -50,24 +50,24 @@ updated: 2026-04-09T13:35:56-07:00
   
   
 ## [📚 Books](./books/index.md) (959)  
-- [🤱🏼🧠 Mother Brain: How Neuroscience Is Rewriting the Story of Parenthood](./books/mother-brain-how-neuroscience-is-rewriting-the-story-of-parenthood.md)  
-- [🧠🧭⚡ Your Brain's Not Broken: Strategies for Navigating Your Emotions and Life with ADHD](./books/your-brains-not-broken-strategies-for-navigating-your-emotions-and-life-with-adhd.md)  
-- [🌱🍎🌳 Growing Fruit Trees: 12 Simple Steps to Abundant Fruit Production and Reconnecting with the Food You Eat](./books/growing-fruit-trees-12-simple-steps-to-abundant-fruit-production-and-reconnecting-with-the-food-you-eat.md)  
-- [💰👑👎🇺🇸 Corruption and Illiberal Politics in the Trump Era](./books/corruption-and-illiberal-politics-in-the-trump-era.md)  
+- [💼📜 ERISA: A Comprehensive Guide](./books/erisa-a-comprehensive-guide.md)  
+- [🤖🦜 Large Language Models: Concepts, Techniques and Applications](./books/large-language-models-concepts-techniques-and-applications.md)  
+- [💥💰🔓 Escape from Capitalism: An Intervention](./books/escape-from-capitalism-an-intervention.md)  
+- [⚖️🎮 Fair Play: A Game-Changing Solution for When You Have Too Much to Do (and More Life to Live)](./books/fair-play-a-game-changing-solution-for-when-you-have-too-much-to-do-and-more-life-to-live.md)  
   
   
-## [📺 Videos](./videos/index.md) (731)  
-- [❤️🧠👨‍👩‍👧‍👦 The crucial emotional skill most adults were never taught | Becky Kennedy](./videos/the-crucial-emotional-skill-most-adults-were-never-taught-becky-kennedy.md)  
-- [🤖💬📈🌍 Build a Real-Time AI Sales Agent - Sarah Chieng & Zhenwei Gao, Cerebras](./videos/build-a-real-time-ai-sales-agent-sarah-chieng-zhenwei-gao-cerebras.md)  
-- [♾️🐛💻 The Infinite Software Crisis – Jake Nations, Netflix](./videos/the-infinite-software-crisis-jake-nations-netflix.md)  
-- [⚙️❓🤖 Judea Pearl, 2012 ACM A.M. Turing Award Lecture «The Mechanization of Causal Inference»](./videos/judea-pearl-2012-acm-a-m-turing-award-lecture-the-mechanization-of-causal-inference.md)  
+## [📺 Videos](./videos/index.md) (732)  
+- [🏛️🗣️💬 Politics Chat, April 9, 2026](./videos/politics-chat-april-9-2026.md)  
+- [💰🌊🚧🏛️🪧🚨 Politics Chat, July 10, 2025](./videos/politics-chat-july-10-2025.md)  
+- [🤖🚀📈 Andrew Ng: Building Faster with AI](./videos/andrew-ng-building-faster-with-ai.md)  
+- [🏛️📉🇺🇸🔟 Schiff Takes To Senate Floor to Lay Out the Top 10 Ways Trump is Wrecking America](./videos/schiff-takes-to-senate-floor-to-lay-out-the-top-10-ways-trump-is-wrecking-america.md)  
   
   
 ## [🌌 Topics](./topics/index.md) (91)  
-- [🤖📈 Maximizing AI Leverage](./topics/maximizing-ai-leverage.md)  
-- [➗📐 Math](./topics/math.md)  
-- [🐑🎀 Mary Had a Little Lamb](./topics/mary-had-a-little-lamb.md)  
-- [📚✍️ Literary Arts](./topics/literary-arts.md)  
+- [🤔📚 Philosophy](./topics/philosophy.md)  
+- [🌳🗺️🔗🏛️ Ontologies](./topics/ontologies.md)  
+- [🎨✏️ Graphic Design](./topics/graphic-design.md)  
+- [🧸🎶🧸 Nursery Rhymes](./topics/nursery-rhymes.md)  
   
   
 ## [📄  Articles](./articles/index.md) (84)  
@@ -78,10 +78,10 @@ updated: 2026-04-09T13:35:56-07:00
   
   
 ## [🤖💬 Bot Chats](./bot-chats/index.md) (49)  
+- [🦜👶🏼 Mimicking Babies](./bot-chats/mimicking-babies.md)  
 - [🤱🏼💐 Mother's Day](./bot-chats/mothers-day.md)  
 - [🏡🍎🌳📚 Home Fruit Tree Books](./bot-chats/fruit-tree-books.md)  
 - [🌸🌬️🤧🔬📚 Allergy Science Books](./bot-chats/allergy-science-books.md)  
-- [🇲🇽💃 Cinco de Mayo](./bot-chats/cinco-de-mayo.md)  
   
   
 ## [💾 Software](./software/index.md) (33)  
@@ -92,10 +92,10 @@ updated: 2026-04-09T13:35:56-07:00
   
   
 ## [👥 People](./people/index.md) (18)  
+- [👨‍🏫🤖 Andrew Ng](./people/andrew-ng.md)  
 - [👨‍💻☁️🐘 Jay Kreps](./people/jay-kreps.md)  
 - [🕸️🌐👨‍💻 Tim Berners-Lee](./people/tim-berners-lee.md)  
 - [👨‍🏫📚💻🤔 Cal Newport](./people/cal-newport.md)  
-- [🧠👨‍🎓📈 Justin Sung](./people/justin-sung.md)  
   
   
 ## [🛍️ Products](./products/index.md) (6)  

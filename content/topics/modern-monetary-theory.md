@@ -10,9 +10,13 @@ updated: 2026-03-24T14:28:01.710Z
 force_analyze_links: false
 link_analysis_time: 2026-03-25T06:23:39.009Z
 link_analysis_model: gemini-3.1-flash-lite-preview
+image_date: 2026-04-09T22:21:39Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A stylized, isometric illustration featuring a golden, infinite-loop symbol (∞) integrated into a modern cityscape. The loop is constructed from glowing, translucent geometric lines that weave through minimalist glass-and-steel government buildings and lush, green public parks. Streams of luminous gold particles flow along the loop, representing the circulation of currency. In the foreground, a balanced scale sits atop a sleek, abstract architectural pedestal, with a stylized factory gear on one side and a blooming tree on the other, symbolizing the tension between industrial production and real-world resource constraints. The color palette uses deep navy and slate tones contrasted with vibrant gold, soft teal, and emerald green, creating a sophisticated, futuristic aesthetic that suggests stability, growth, and systemic flow.
 ---
 [Home](../index.md) > [Topics](./index.md) > [Knowledge](./a-hierarchical-view-of-human-knowledge.md) > [Social Sciences](./social-sciences.md) > [Economics](./economics.md) > [Heterodox Economics](./heterodox-economics.md)  
 # 🏦♾️📈💸 Modern Monetary Theory  
+![topics-modern-monetary-theory](../topics-modern-monetary-theory.jpg)  
 ## 🤖 AI Summary  
 **High-Level Summary:**  
 Modern Monetary Theory (MMT) is a macroeconomic theory that challenges conventional views about how a government with sovereign currency (meaning it prints its own money) should manage its finances. 💰 MMT argues that such a government is not constrained by revenue in the same way as a household or a business. Instead, its primary constraint is real resources (like labor and materials) and inflation. 📈 The central idea is that a sovereign government can always create money to pay for its spending, and the real question is how to manage that spending to achieve full employment and price stability. ⚖️ MMT emphasizes the role of fiscal policy (government spending and taxation) over monetary policy (interest rates) in managing the economy. 🌐  

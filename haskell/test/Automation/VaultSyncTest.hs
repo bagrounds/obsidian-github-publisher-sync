@@ -1,5 +1,6 @@
 module Automation.VaultSyncTest (tests) where
 
+import qualified Data.Bifunctor
 import qualified Data.Text as T
 import Test.Tasty (TestTree, testGroup)
 import Test.Tasty.HUnit (testCase, (@?=), assertBool)
@@ -82,7 +83,7 @@ properties = testGroup "properties"
   [ testProperty "findBestMatch score is non-negative" $
       QC.forAll genNonEmptyText $ \content ->
         QC.forAll (QC.listOf genVaultEntry) $ \vault ->
-          fst (findBestMatch (T.pack content) (fmap (\(filename, body) -> (filename, T.pack body)) vault)) >= 0.0
+          fst (findBestMatch (T.pack content) (fmap (Data.Bifunctor.second T.pack) vault)) >= 0.0
 
   , testProperty "findBestMatch with identical content in vault scores 1.0" $
       QC.forAll genNonEmptyText $ \content ->

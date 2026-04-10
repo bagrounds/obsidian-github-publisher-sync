@@ -103,13 +103,13 @@ properties :: TestTree
 properties = testGroup "properties"
   [ testProperty "result count always equals task count" $
       QC.forAll genTaskList $ \taskIdentifiers -> QC.ioProperty $ do
-        let runners = Map.fromList (fmap (\taskIdentifier -> (taskIdentifier, pure ())) taskIdentifiers)
+        let runners = Map.fromList (fmap (, pure ()) taskIdentifiers)
         results <- runTasksWithDelay 0 runners taskIdentifiers
         pure (length results == length taskIdentifiers)
 
   , testProperty "all tasks in results match input tasks" $
       QC.forAll genTaskList $ \taskIdentifiers -> QC.ioProperty $ do
-        let runners = Map.fromList (fmap (\taskIdentifier -> (taskIdentifier, pure ())) taskIdentifiers)
+        let runners = Map.fromList (fmap (, pure ()) taskIdentifiers)
         results <- runTasksWithDelay 0 runners taskIdentifiers
         let resultIds = fmap (\(taskIdentifier, _, _) -> taskIdentifier) results
         pure (resultIds == taskIdentifiers)

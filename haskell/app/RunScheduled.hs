@@ -7,7 +7,7 @@ import Data.List.NonEmpty (NonEmpty ((:|)))
 import qualified Data.List.NonEmpty as NE
 import Data.Map.Strict (Map)
 import qualified Data.Map.Strict as Map
-import Data.Maybe (fromMaybe, mapMaybe)
+import Data.Maybe (catMaybes, fromMaybe, mapMaybe)
 import Data.Text (Text)
 import qualified Data.Text as T
 import qualified Data.Text.IO as TIO
@@ -446,7 +446,7 @@ runBackfillImages context = do
 
   -- 4. Add update links from image backfill results
   let reflectionsDir = vaultDir </> "reflections"
-  imageUpdateLinks <- fmap (mapMaybe id) $ traverse (\filePath -> do
+  imageUpdateLinks <- fmap catMaybes $ traverse (\filePath -> do
         title <- extractTitleFromFile (vaultDir </> T.unpack filePath)
         case (mkRelativePath filePath, mkTitle title) of
           (Right relativePath, Right validTitle) ->
@@ -501,7 +501,7 @@ runInternalLinking context = do
       today <- todayPacificDay
       let todayText = formatDay today
           reflectionsDir = vaultDir </> "reflections"
-      links <- fmap (mapMaybe id) $ traverse (\fr -> do
+      links <- fmap catMaybes $ traverse (\fr -> do
         title <- extractTitleFromFile (vaultDir </> T.unpack (unRelativePath (IL.frRelativePath fr)))
         let linksAdded = IL.frLinksAdded fr
             detail = "🔗 added " <> T.pack (show linksAdded) <> " internal link" <> (if linksAdded == 1 then "" else "s")

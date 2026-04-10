@@ -67,6 +67,11 @@ URL: https://bagrounds.org/ai-blog/2026-03-08-1-auto-post-mastodon
 - 🐛 When fixing a bug, always write a failing test that reproduces the bug BEFORE writing the fix. Confirm the test fails, then apply the fix, then confirm the test passes. This is test-driven development (TDD).
 - 🔴🟢 Follow the red-green cycle: red (failing test) → green (minimal fix) → refactor. Never skip the red step.
 
+## Haskell Linting
+- 🧹 Always run `hlint src/ app/ test/` from the `haskell/` directory before finishing work. CI enforces zero hlint hints (warnings and suggestions) — any hint fails the build.
+- 🔧 Fix all hlint hints before pushing. Common hints include using `catMaybes` instead of `mapMaybe id`, using `isJust`/`isNothing` instead of comparison with `Nothing`, and using `Data.Bifunctor.second` instead of manual tuple mapping.
+- 📦 If hlint is not installed locally, install it with `apt-get install -y hlint` or `cabal install hlint`.
+
 ## Haskell Architecture Best Practices
 - 🧅 Functional Core, Imperative Shell: keep domain logic in pure functions, push IO to the edges. Never add IO to a function signature unless it truly needs side effects.
 - 🧊 Separate data from behavior: model domain concepts as pure data types and write pure functions over them. Avoid embedding IO callbacks in data structures.

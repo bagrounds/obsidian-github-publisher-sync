@@ -1,5 +1,6 @@
 module Automation.FrontmatterTest (tests) where
 
+import Data.Maybe (isJust)
 import Test.Tasty (TestTree, testGroup)
 import Test.Tasty.HUnit (testCase, (@?=), assertBool)
 import Test.Tasty.QuickCheck (testProperty)
@@ -202,7 +203,7 @@ readReflectionTests = testGroup "readReflection"
               ]
         TIO.writeFile filePath content
         result <- readReflection date tmpDir
-        assertBool "should return Just for valid data" $ result /= Nothing
+        assertBool "should return Just for valid data" $ isJust result
 
   , testCase "returns Nothing for nonexistent file" $
       withSystemTempDirectory "frontmatter-test" $ \tmpDir -> do
@@ -246,7 +247,7 @@ readNoteTests = testGroup "readNote"
         createDirectoryIfMissing True (tmpDir </> "reflections")
         TIO.writeFile filePath content
         result <- readNote relativePath tmpDir
-        assertBool "should return Just for valid note" $ result /= Nothing
+        assertBool "should return Just for valid note" $ isJust result
 
   , testCase "returns Nothing for nonexistent file" $
       withSystemTempDirectory "frontmatter-test" $ \tmpDir -> do

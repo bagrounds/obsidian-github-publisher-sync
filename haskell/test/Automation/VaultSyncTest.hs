@@ -64,7 +64,7 @@ showScoreTests = testGroup "showScore"
   , testCase "rounds up correctly" $
       showScore 0.2506 @?= "0.251"
 
-  , testCase "rounds down at boundary" $
+  , testCase "truncates beyond three decimal places" $
       showScore 0.2504 @?= "0.25"
   ]
 

@@ -45,6 +45,9 @@ parseCliArgsTests = testGroup "parseCliArgs"
 
   , testCase "ignores trailing --task without value" $
       parseCliArgs ["--hour", "12", "--task"] @?= CliArgs (Just 12) Nothing
+
+  , testCase "ignores non-numeric --hour value" $
+      parseCliArgs ["--hour", "abc"] @?= CliArgs Nothing Nothing
   ]
 
 properties :: TestTree

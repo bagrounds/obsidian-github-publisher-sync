@@ -4,7 +4,6 @@ import Control.Exception (throwIO, ErrorCall (..))
 import Data.IORef (newIORef, readIORef, modifyIORef')
 import Data.Map.Strict (Map)
 import qualified Data.Map.Strict as Map
-import Data.Text (Text)
 import qualified Data.Text as T
 import Test.Tasty (TestTree, testGroup)
 import Test.Tasty.HUnit (testCase, (@?=), assertBool)
@@ -12,7 +11,7 @@ import Test.Tasty.QuickCheck (testProperty)
 import qualified Test.QuickCheck as QC
 
 import Automation.Scheduler (TaskId (..))
-import Automation.TaskRunner (TaskResult, interTaskDelayMicroseconds, inferenceDashboards, runTasksWithDelay)
+import Automation.TaskRunner (interTaskDelayMicroseconds, inferenceDashboards, runTasksWithDelay)
 
 tests :: TestTree
 tests = testGroup "TaskRunner"
@@ -97,7 +96,7 @@ constantsTests = testGroup "constants"
 
   , testCase "all dashboard URLs start with https" $
       assertBool "all URLs start with https" $
-        all (\(_, url) -> "https://" `isPrefixOfText` url) inferenceDashboards
+        all (\(_, url) -> T.isPrefixOf "https://" url) inferenceDashboards
   ]
 
 properties :: TestTree
@@ -115,9 +114,6 @@ properties = testGroup "properties"
         let resultIds = fmap (\(taskIdentifier, _, _) -> taskIdentifier) results
         pure (resultIds == taskIdentifiers)
   ]
-
-isPrefixOfText :: Text -> Text -> Bool
-isPrefixOfText prefix text = prefix == T.take (T.length prefix) text
 
 genTaskList :: QC.Gen [TaskId]
 genTaskList = QC.sublistOf allTaskIds

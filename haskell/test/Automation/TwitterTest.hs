@@ -1,6 +1,7 @@
 module Automation.TwitterTest (tests) where
 
 import Control.Exception (toException)
+import Data.List (isInfixOf)
 import qualified Data.ByteString.Lazy as LBS
 import qualified Data.Text as T
 import qualified Data.Text.Encoding as TE
@@ -157,15 +158,3 @@ toLBS = LBS.fromStrict . TE.encodeUtf8 . T.pack
 
 isInfixOfShow :: String -> Twitter.Error -> Bool
 isInfixOfShow needle err = needle `isInfixOf` show err
-
-isInfixOf :: Eq a => [a] -> [a] -> Bool
-isInfixOf needle haystack = any (isPrefixOf needle) (tails haystack)
-
-isPrefixOf :: Eq a => [a] -> [a] -> Bool
-isPrefixOf [] _ = True
-isPrefixOf _ [] = False
-isPrefixOf (x:xs) (y:ys) = x == y && isPrefixOf xs ys
-
-tails :: [a] -> [[a]]
-tails [] = [[]]
-tails xs@(_:rest) = xs : tails rest

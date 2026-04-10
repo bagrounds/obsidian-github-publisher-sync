@@ -7,9 +7,13 @@ URL: https://bagrounds.org/software/github-copilot-for-vs-code
 link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-04T00:00:00Z
 force_analyze_links: false
+image_date: 2026-04-10T21:18:49Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A sleek, stylized robot arm, subtly hinting at the GitHub Octocats form, extends from the left side of the frame. Its metallic fingers gently hover over a glowing, minimalist representation of a VS Code editor window. From the robots fingertips, ethereal, translucent lines of code or shimmering symbols flow directly into the editor, appearing to autocomplete or suggest themselves onto the screen. The editor itself is filled with abstract, colorful code snippets, illuminated by a soft, internal glow. The background is a dynamic gradient of electric blues and purples, emphasizing the futuristic and intelligent nature of the interaction.
 ---
 [Home](../index.md) > [Software](./index.md)  
 # 🤖💻🪄 GitHub Copilot for VS Code  
+![software-github-copilot-for-vs-code](../software-github-copilot-for-vs-code.jpg)  
   
 ## 🤖 AI Summary  
 ### GitHub Copilot for VS Code 🤖💻✨  

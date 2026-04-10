@@ -7,9 +7,13 @@ URL: https://bagrounds.org/software/google-analytics
 link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-05T00:00:00Z
 force_analyze_links: false
+image_date: 2026-04-10T21:18:53Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: "A clean, isometric-style illustration featuring a glowing, translucent web page floating in a dark, tech-inspired space. From the web page, multiple slender, luminous data streams—represented by elegant lines of light and small floating geometric icons (like magnifying glasses, charts, and cursors)—flow outward toward a central, glowing holographic hub. The color palette uses deep navy and charcoal backgrounds contrasted with vibrant, modern shades of Google-inspired colors: bright cyan, lime green, warm yellow, and soft red. The overall aesthetic is professional, minimalist, and sleek, emphasizing the concept of data flow, connectivity, and digital intelligence without the use of any text or labels. The scene is illuminated by a soft, ambient glow that suggests high-tech data processing."
 ---
 [Home](../index.md) > [Software](./index.md)  
 # 🕸️📊 Google Analytics  
+![software-google-analytics](../software-google-analytics.jpg)  
   
 ## 🤖 AI Summary  
 ### 👉 What Is It?  

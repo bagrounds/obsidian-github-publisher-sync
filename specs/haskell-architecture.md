@@ -121,14 +121,23 @@ Each error migration delivered with test coverage:
 11. **Push validation to function boundaries via domain types**: When a function takes `Text` only to immediately validate it into a domain type (like `RelativePath`), change the parameter to accept the domain type directly. This moves validation to the caller (the boundary) where error handling is more natural, and makes the function's contract explicit in its type signature.
 12. **Prefer `Maybe` over `Either` when callers don't distinguish errors**: For file-parsing functions that return `IO (Maybe Record)`, validation failures can use the same `Nothing` path as "file not found" — the caller already handles absence. Reserve `Either` for cases where the caller needs to distinguish different failure reasons.
 
-### Next: Separate Data from Behavior in ImageProviderConfig + Tests
+### Completed: Separate Data from Behavior in ImageProviderConfig + Tests
 
 **Goal**: Remove IO callbacks from `ImageProviderConfig`, with tests for each provider type.
 
-- [ ] Define `data ImageProviderType = Cloudflare | HuggingFace | Together | Pollinations`
-- [ ] Move provider-specific logic into a `generateImage :: Manager -> ImageProviderType -> ... -> IO (Either Text ...)` function
-- [ ] Keep `ImageProviderConfig` as pure data (name, API key, model, provider type)
-- [ ] Test provider configuration and selection logic
+- [x] Define `data ImageProvider = Cloudflare Text | HuggingFace | Together | Pollinations | GeminiImage` — closed ADT for image providers, with `Cloudflare` carrying its account ID. `providerName :: ImageProvider -> Text` replaces the old `ipcName` field.
+- [x] Define `data PromptDescriber = PromptDescriber { describerApiKey :: Secret, describerModel :: Gemini.Model }` — pure data replacing the `ipcDescribePrompt` IO callback. `Show` instance redacts the API key via `Secret`'s custom `Show`.
+- [x] Rewrite `ImageProviderConfig` as pure data: replaced `ipcName :: Text` with `ipcProvider :: ImageProvider`, replaced `ipcGenerator :: Manager -> ... -> IO (...)` with dispatch function, replaced `ipcDescribePrompt :: Maybe (Manager -> ...)` with `ipcDescriber :: Maybe PromptDescriber`. Config now derives `Show` and `Eq`.
+- [x] Add `generateImage :: Manager -> ImageProviderConfig -> Text -> IO (Either Text (LBS.ByteString, Text))` — pattern matches on `ImageProvider` to dispatch to the correct HTTP generator function.
+- [x] Add `describeContent :: Manager -> PromptDescriber -> Text -> IO (Either Text Text)` — dispatches to `describeImageWithGemini` using the describer's API key and model.
+- [x] Update all provider resolvers (`mkCloudflareProvider`, `mkHuggingFaceProvider`, `mkTogetherProvider`, `mkPollinationsProvider`, `mkGeminiProvider`) to construct pure data configs.
+- [x] Update all callers (`generateAndSaveImage`, `resolvePrompt`, `processWithProviders`) to use `generateImage`, `describeContent`, and `providerName . ipcProvider`.
+- [x] 22 new tests: `ImageProvider` (providerName, Eq, Show, Cloudflare account ID), `PromptDescriber` (Show redaction, Eq, model comparison), `ImageProviderConfig` (Show, Eq, describer population, provider type resolution).
+
+**Learnings from separating data from behavior:**
+13. **Replace IO callbacks with ADT dispatch**: When a data structure embeds IO callbacks (like `ipcGenerator :: Manager -> ... -> IO (...)`), the type cannot derive `Show` or `Eq`, making it untestable as data. Replace the callback with a closed ADT (`ImageProvider`) and a dispatch function (`generateImage`) that pattern-matches on the constructor. The data structure becomes pure, testable, and the dispatch function is the single point where IO is introduced.
+14. **Extract cross-cutting concerns as separate data**: When every variant of a config carries the same optional callback (like `ipcDescribePrompt`), it's a cross-cutting concern, not a per-variant behavior. Extract it as its own pure data record (`PromptDescriber`) with its own dispatch function (`describeContent`). This makes the relationship explicit: the describer is independent of the image provider.
+15. **Derive instances to prove purity**: After removing IO from a data structure, immediately derive `Show` and `Eq`. If the compiler refuses, there's still hidden behavior embedded in the data. Successfully deriving both instances is proof that the structure is pure data.
 
 ### Next: Break Up RunScheduled.hs + Tests
 

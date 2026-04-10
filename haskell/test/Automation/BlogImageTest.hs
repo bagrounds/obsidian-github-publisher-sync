@@ -1,5 +1,7 @@
 module Automation.BlogImageTest (tests) where
 
+import Data.Maybe (isJust)
+import Data.List (isInfixOf)
 import Data.Map.Strict (Map)
 import qualified Data.Map.Strict as Map
 import Data.Text (Text)
@@ -12,6 +14,8 @@ import Test.QuickCheck (Property, (==>), forAll, listOf1, elements)
 
 import Automation.BlogImage
 import Automation.Frontmatter (YamlValue (..))
+import qualified Automation.Gemini as Gemini
+import Automation.Types (Secret (..))
 
 tests :: TestTree
 tests = testGroup "BlogImage"
@@ -224,7 +228,7 @@ tests = testGroup "BlogImage"
               providers = resolveImageProviders env
           in do
             assertBool "should have at least one provider" $ not (null providers)
-            ipcName (Prelude.head providers) @?= "gemini"
+            providerName (ipcProvider (Prelude.head providers)) @?= "gemini"
       , testCase "creates Cloudflare provider when token and account present" $
           let env = Map.fromList
                 [ ("CLOUDFLARE_API_TOKEN", "cf-token")
@@ -233,7 +237,7 @@ tests = testGroup "BlogImage"
               providers = resolveImageProviders env
           in do
             assertBool "should have provider" $ not (null providers)
-            ipcName (Prelude.head providers) @?= "cloudflare"
+            providerName (ipcProvider (Prelude.head providers)) @?= "cloudflare"
       , testCase "creates providers in correct order" $
           let env = Map.fromList
                 [ ("CLOUDFLARE_API_TOKEN", "cf-token")
@@ -244,7 +248,7 @@ tests = testGroup "BlogImage"
                 , ("GEMINI_API_KEY", "gemini-key")
                 ]
               providers = resolveImageProviders env
-              names = fmap ipcName providers
+              names = fmap (providerName . ipcProvider) providers
           in names @?= ["cloudflare", "huggingface", "together", "pollinations", "gemini"]
       , testCase "skips Pollinations when not enabled" $
           let env = Map.fromList [("POLLINATIONS_ENABLED", "false")]
@@ -426,6 +430,109 @@ tests = testGroup "BlogImage"
           isDateOnlyTitle "# 2026-04-04\nbody" (fromGregorian 2026 4 4) @?= True
       , testCase "returns False when date does not match" $
           isDateOnlyTitle "---\ntitle: 2026-04-03\n---\nbody" (fromGregorian 2026 4 4) @?= False
+      ]
+  , testGroup "ImageProvider"
+      [ testCase "providerName returns cloudflare" $
+          providerName (Cloudflare "acct") @?= "cloudflare"
+      , testCase "providerName returns huggingface" $
+          providerName HuggingFace @?= "huggingface"
+      , testCase "providerName returns together" $
+          providerName Together @?= "together"
+      , testCase "providerName returns pollinations" $
+          providerName Pollinations @?= "pollinations"
+      , testCase "providerName returns gemini" $
+          providerName GeminiImage @?= "gemini"
+      , testCase "Cloudflare carries account ID" $
+          case Cloudflare "my-account-123" of
+            Cloudflare accountId -> accountId @?= "my-account-123"
+            _                    -> assertBool "expected Cloudflare" False
+      , testCase "ImageProvider Eq distinguishes constructors" $
+          assertBool "different providers are not equal" $ HuggingFace /= Together
+      , testCase "ImageProvider Eq treats same constructors as equal" $
+          HuggingFace @?= HuggingFace
+      , testCase "Cloudflare Eq compares account IDs" $
+          assertBool "different account IDs are not equal" $ Cloudflare "a" /= Cloudflare "b"
+      , testCase "ImageProvider Show includes constructor name" $
+          assertBool "show contains HuggingFace" $ "HuggingFace" `isInfixOf` show HuggingFace
+      , testCase "Cloudflare Show includes account ID" $
+          assertBool "show contains account ID" $ "my-acct" `isInfixOf` show (Cloudflare "my-acct")
+      ]
+  , testGroup "PromptDescriber"
+      [ testCase "Show redacts API key" $
+          let describer = PromptDescriber (Secret "super-secret-key") Gemini.Gemini25Flash
+          in assertBool "show should not contain secret" $
+               not ("super-secret-key" `isInfixOf` show describer)
+      , testCase "Show contains model info" $
+          let describer = PromptDescriber (Secret "key") Gemini.Gemini25Flash
+          in assertBool "show should contain model" $
+               "Gemini25Flash" `isInfixOf` show describer
+      , testCase "Eq compares by value" $
+          let describer1 = PromptDescriber (Secret "key1") Gemini.Gemini25Flash
+              describer2 = PromptDescriber (Secret "key1") Gemini.Gemini25Flash
+          in describer1 @?= describer2
+      , testCase "Eq distinguishes different models" $
+          let describer1 = PromptDescriber (Secret "key") Gemini.Gemini25Flash
+              describer2 = PromptDescriber (Secret "key") Gemini.Gemini20Flash
+          in assertBool "different models should not be equal" $ describer1 /= describer2
+      ]
+  , testGroup "ImageProviderConfig"
+      [ testCase "Show is derivable and works" $
+          let config = ImageProviderConfig
+                { ipcProvider = HuggingFace
+                , ipcApiKey = Secret "my-key"
+                , ipcModel = "test-model"
+                , ipcDescriber = Nothing
+                }
+          in assertBool "show should contain HuggingFace" $
+               "HuggingFace" `isInfixOf` show config
+      , testCase "Show redacts API key" $
+          let config = ImageProviderConfig
+                { ipcProvider = Together
+                , ipcApiKey = Secret "secret-api-key"
+                , ipcModel = "model"
+                , ipcDescriber = Nothing
+                }
+          in assertBool "show should not contain secret" $
+               not ("secret-api-key" `isInfixOf` show config)
+      , testCase "Eq compares by value" $
+          let config = ImageProviderConfig
+                { ipcProvider = Pollinations
+                , ipcApiKey = Secret ""
+                , ipcModel = "flux"
+                , ipcDescriber = Nothing
+                }
+          in config @?= config
+      , testCase "configs with describer populate correctly" $
+          let env = Map.fromList
+                [ ("GEMINI_API_KEY", "gemini-key")
+                , ("HUGGINGFACE_API_TOKEN", "hf-key")
+                ]
+              providers = resolveImageProviders env
+              huggingFaceProviders = filter (\p -> ipcProvider p == HuggingFace) providers
+          in case huggingFaceProviders of
+            [p] -> assertBool "should have describer" $ isJust (ipcDescriber p)
+            _   -> assertBool "expected one HuggingFace provider" False
+      , testCase "configs without Gemini key have no describer" $
+          let env = Map.fromList [("HUGGINGFACE_API_TOKEN", "hf-key")]
+              providers = resolveImageProviders env
+          in case providers of
+            [p] -> ipcDescriber p @?= Nothing
+            _   -> assertBool "expected one provider" False
+      , testCase "resolved Cloudflare provider carries account ID" $
+          let env = Map.fromList
+                [ ("CLOUDFLARE_API_TOKEN", "token")
+                , ("CLOUDFLARE_ACCOUNT_ID", "my-account")
+                ]
+              providers = resolveImageProviders env
+          in case providers of
+            [p] -> ipcProvider p @?= Cloudflare "my-account"
+            _   -> assertBool "expected one provider" False
+      , testCase "resolved Gemini provider has GeminiImage type" $
+          let env = Map.fromList [("GEMINI_API_KEY", "key")]
+              providers = resolveImageProviders env
+          in case providers of
+            [p] -> ipcProvider p @?= GeminiImage
+            _   -> assertBool "expected one provider" False
       ]
   , testGroup "properties"
       [ testProperty "buildImagePrompt never exceeds max length" $

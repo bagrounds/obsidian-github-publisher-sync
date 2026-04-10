@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-04-10T13:58:22-07:00
+updated: 2026-04-10T14:02:08-07:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -56,11 +56,11 @@ updated: 2026-04-10T13:58:22-07:00
 - [🧠🔎 Thought and Knowledge: An Introduction to Critical Thinking](./books/thought-and-knowledge-an-introduction-to-critical-thinking.md)  
   
   
-## [📺 Videos](./videos/index.md) (734)  
+## [📺 Videos](./videos/index.md) (735)  
+- [🧠❓🤯 The More You Study Consciousness, the Weirder It Gets | The Ezra Klein Show](./videos/the-more-you-study-consciousness-the-weirder-it-gets-the-ezra-klein-show.md)  
 - [🇺🇸🗣️🏛️ American Conversations: Senator Andy Kim](./videos/american-conversations-senator-andy-kim.md)  
 - [Infant Cosleeping with James McKenna, PhD](./videos/infant-cosleeping-with-james-mckenna-phd.md)  
 - [👶🛏️⚖️ Co-Sleeping With Infants: Science, Public Policy, and Parents Civil Rights, with James McKenna, PhD](./videos/co-sleeping-with-infants-science-public-policy-and-parents-civil-rights-with-james-mckenna-phd.md)  
-- [Pediatrician's Top Tips For Newborn Sleep](./videos/pediatricians-top-tips-for-newborn-sleep.md)  
   
   
 ## [🌌 Topics](./topics/index.md) (91)  

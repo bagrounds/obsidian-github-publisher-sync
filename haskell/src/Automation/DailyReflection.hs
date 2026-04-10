@@ -78,17 +78,17 @@ addForwardLink :: Text -> Text -> Text
 addForwardLink content targetDate =
   let forwardLink = "[[reflections/" <> targetDate <> "|⏭️]]"
       navMarker = "[[reflections/index|Reflections]]"
-  in case T.isInfixOf "⏭️" content of
-    True  -> content
-    False -> case T.isInfixOf "⏮️]]" content of
-      True  -> T.replace "⏮️]]" ("⏮️]] " <> forwardLink) content
-      False -> case T.isInfixOf navMarker content of
-        True  -> T.replace navMarker (navMarker <> " | " <> forwardLink) content
-        False -> content
+  in if T.isInfixOf "⏭️" content
+    then content
+    else if T.isInfixOf "⏮️]]" content
+      then T.replace "⏮️]]" ("⏮️]] " <> forwardLink) content
+      else if T.isInfixOf navMarker content
+        then T.replace navMarker (navMarker <> " | " <> forwardLink) content
+        else content
 
 findFirstSectionIndex :: [Text] -> Text -> Maybe Int
 findFirstSectionIndex headers content =
-  case filter (\h -> T.isInfixOf h content) headers of
+  case filter (`T.isInfixOf` content) headers of
     [] -> Nothing
     found ->
       let positions = fmap (\h -> T.length $ fst $ T.breakOn h content) found
@@ -115,23 +115,23 @@ insertNewSection content sectionHeading postLink =
 insertPostLink :: Text -> BlogSeriesConfig -> Text -> Text -> Maybe Text -> Text
 insertPostLink content series filenameNoExt displayTitle replacingFilenameNoExt =
   let linkTarget = "[[" <> bscId series <> "/" <> filenameNoExt <> "|"
-  in case T.isInfixOf linkTarget content of
-    True -> content
-    False ->
+  in if T.isInfixOf linkTarget content
+    then content
+    else
       let postLink = buildPostLink (bscId series) filenameNoExt displayTitle
           replacedContent = case replacingFilenameNoExt of
             Just oldName ->
               let oldLinkTarget = "- [[" <> bscId series <> "/" <> oldName <> "|"
-              in case T.isInfixOf oldLinkTarget content of
-                True ->
+              in if T.isInfixOf oldLinkTarget content
+                then
                   let ls = T.splitOn "\n" content
                   in T.intercalate "\n" $ fmap (\l -> if T.isPrefixOf oldLinkTarget l then postLink else l) ls
-                False -> content
+                else content
             Nothing -> content
           sectionHeading = buildSeriesSectionHeading series
-      in case T.isInfixOf sectionHeading replacedContent of
-        True  -> appendLinkToExistingSection replacedContent sectionHeading postLink
-        False -> insertNewSection replacedContent sectionHeading postLink
+      in if T.isInfixOf sectionHeading replacedContent
+        then appendLinkToExistingSection replacedContent sectionHeading postLink
+        else insertNewSection replacedContent sectionHeading postLink
 
 isDateFile :: Text -> Text -> Bool
 isDateFile today f =
@@ -144,23 +144,23 @@ isDateFile today f =
 findPreviousReflectionDate :: FilePath -> Text -> IO (Maybe Text)
 findPreviousReflectionDate reflectionsDir today = do
   exists <- doesDirectoryExist reflectionsDir
-  case exists of
-    False -> pure Nothing
-    True  -> do
+  if exists
+    then do
       entries <- listDirectory reflectionsDir
       let candidates = sort $ filter (isDateFile today) $ fmap T.pack entries
       pure $ case candidates of
         [] -> Nothing
         _  -> Just $ T.pack $ dropExtension $ T.unpack $ last candidates
+    else pure Nothing
 
 ensureDailyReflection :: FilePath -> Text -> IO EnsureReflectionResult
 ensureDailyReflection reflectionsDir today = do
   let reflectionPath = reflectionsDir </> T.unpack today <> ".md"
   exists <- doesFileExist reflectionPath
-  case exists of
-    True -> pure EnsureReflectionResult
+  if exists
+    then pure EnsureReflectionResult
       { errCreated = False, errPreviousDate = Nothing, errForwardLinkAdded = False }
-    False -> do
+    else do
       previousDate <- findPreviousReflectionDate reflectionsDir today
       let content = buildReflectionContent today previousDate
       createDirectoryIfMissing True reflectionsDir
@@ -170,14 +170,14 @@ ensureDailyReflection reflectionsDir today = do
         Just pd -> do
           let prevPath = reflectionsDir </> T.unpack pd <> ".md"
           prevExists <- doesFileExist prevPath
-          case prevExists of
-            False -> pure False
-            True  -> do
+          if prevExists
+            then do
               prevContent <- TIO.readFile prevPath
               let updated = addForwardLink prevContent today
-              case updated == prevContent of
-                True  -> pure False
-                False -> TIO.writeFile prevPath updated >> pure True
+              if updated == prevContent
+                then pure False
+                else TIO.writeFile prevPath updated >> pure True
+            else pure False
       pure EnsureReflectionResult
         { errCreated = True, errPreviousDate = previousDate, errForwardLinkAdded = forwardLinkAdded }
 
@@ -192,9 +192,9 @@ updateDailyReflection vaultDir today series postFilename postTitle replacingFile
       hadSection = T.isInfixOf (buildSeriesSectionHeading series) content
       updated = insertPostLink content series filenameNoExt postTitle replacingFilenameNoExt
       linkInserted = updated /= content
-  case linkInserted of
-    True  -> TIO.writeFile reflectionPath updated
-    False -> pure ()
+  if linkInserted
+    then TIO.writeFile reflectionPath updated
+    else pure ()
   pure UpdateReflectionResult
     { urrReflectionCreated = errCreated
     , urrSectionCreated    = not hadSection && linkInserted

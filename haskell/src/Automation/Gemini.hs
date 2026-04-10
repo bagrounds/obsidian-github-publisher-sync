@@ -32,7 +32,6 @@ import Automation.Json (Value (..), ToValue (..), (.=), object, encode)
 import qualified Automation.Json as Json
 import Automation.Secret (Secret (..))
 import Data.List.NonEmpty (NonEmpty ((:|)))
-import qualified Data.List.NonEmpty as NE
 import Data.Text (Text)
 import qualified Data.Text as T
 import qualified Data.Text.Encoding as TE

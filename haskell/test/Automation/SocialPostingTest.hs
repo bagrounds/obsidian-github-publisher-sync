@@ -29,6 +29,7 @@ tests = testGroup "SocialPosting"
   , normalizeFilePathTests
   , contentFilterTests
   , contentFilterExtendedTests
+  , imageBackfillFilterTests
   , indexPathTests
   , pathReconstructionTests
   , reflectionEligibilityTests
@@ -252,6 +253,87 @@ contentFilterExtendedTests = testGroup "content filtering (extended)"
   ]
 
 --------------------------------------------------------------------------------
+-- Image backfill filter
+--------------------------------------------------------------------------------
+
+imageBackfillFilterTests :: TestTree
+imageBackfillFilterTests = testGroup "isAwaitingImageBackfill"
+  [ testCase "note without image in backfill directory is awaiting" $
+      assertBool "should be awaiting image" $
+        isAwaitingImageBackfill "books/great-book.md" "Some text about a great book"
+
+  , testCase "note with embedded image is not awaiting" $
+      assertBool "has image, should not be awaiting" $
+        not (isAwaitingImageBackfill "books/great-book.md"
+          "![[attachments/books-great-book.jpg]]\nSome text about a great book")
+
+  , testCase "note with markdown image is not awaiting" $
+      assertBool "has markdown image, should not be awaiting" $
+        not (isAwaitingImageBackfill "books/great-book.md"
+          "![cover](attachments/books-great-book.png)\nSome text")
+
+  , testCase "reflection without image is awaiting" $
+      assertBool "reflection without image should be awaiting" $
+        isAwaitingImageBackfill "reflections/2026-04-07.md" "Today was a good day"
+
+  , testCase "reflection with image is not awaiting" $
+      assertBool "reflection with image should not be awaiting" $
+        not (isAwaitingImageBackfill "reflections/2026-04-07.md"
+          "![[attachments/reflections-2026-04-07.jpg]]\nToday was a good day")
+
+  , testCase "ai-blog post without image is awaiting" $
+      assertBool "ai-blog without image should be awaiting" $
+        isAwaitingImageBackfill "ai-blog/2026-04-05-cool-post.md" "A cool blog post"
+
+  , testCase "excluded file is not awaiting" $
+      assertBool "index.md should not be awaiting" $
+        not (isAwaitingImageBackfill "books/index.md" "Browse all books")
+
+  , testCase "non-md file is not awaiting" $
+      assertBool "non-md file should not be awaiting" $
+        not (isAwaitingImageBackfill "books/great-book.txt" "Some text")
+
+  , testCase "file not in any content directory is not awaiting" $
+      assertBool "unknown directory should not be awaiting" $
+        not (isAwaitingImageBackfill "people/john-doe.md" "A person page")
+
+  , testCase "topics directory note without image is awaiting" $
+      assertBool "topics note without image should be awaiting" $
+        isAwaitingImageBackfill "topics/machine-learning.md" "A topic about ML"
+
+  , testCase "software directory note with image is not awaiting" $
+      assertBool "software note with image should not be awaiting" $
+        not (isAwaitingImageBackfill "software/cool-tool.md"
+          "![[attachments/software-cool-tool.png]]\nA great tool")
+
+  , testCase "BFS skips notes awaiting image but follows their links" $ do
+      withSystemTempDirectory "social-image-test" $ \dir -> do
+        let reflDir = dir </> "reflections"
+            booksDir = dir </> "books"
+        createDirectoryIfMissing True reflDir
+        createDirectoryIfMissing True booksDir
+        TIO.writeFile (reflDir </> "2020-01-01.md")
+          ("---\ntitle: \"2020-01-01\"\n---\n" <>
+           "See [[books/no-image-book]]\n" <>
+           T.replicate 60 "x")
+        TIO.writeFile (booksDir </> "no-image-book.md")
+          ("---\ntitle: Book Without Image\nURL: https://example.com/books/no-image-book\n---\n" <>
+           "Read [[books/has-image-book]]\n" <>
+           T.replicate 60 "x")
+        TIO.writeFile (booksDir </> "has-image-book.md")
+          ("---\ntitle: Book With Image\nURL: https://example.com/books/has-image-book\n---\n" <>
+           "![[attachments/books-has-image-book.jpg]]\n" <>
+           T.replicate 60 "x")
+        let config = FindContentConfig dir [Twitter] (TimeOfDay 0 0 0) Nothing
+        result <- bfsContentDiscovery config
+        let resultPaths = fmap (cnRelativePath . ctpNote) result
+        assertBool "should skip book without image"
+          (all (\p -> p /= testRelativePath "books/no-image-book.md") resultPaths)
+        assertBool "should find book with image through no-image book"
+          (any (\p -> p == testRelativePath "books/has-image-book.md") resultPaths)
+  ]
+
+--------------------------------------------------------------------------------
 -- Index page eligibility
 --------------------------------------------------------------------------------
 
@@ -369,6 +451,7 @@ bfsEligibilityTests = testGroup "checkBfsEligibility"
            T.replicate 60 "x")
         TIO.writeFile (booksDir </> "linked-book.md")
           ("---\ntitle: A Linked Book\nURL: https://example.com/books/linked-book\n---\n" <>
+           "![[attachments/books-linked-book.jpg]]\n" <>
            T.replicate 60 "x")
         let config = FindContentConfig dir [Twitter, Bluesky] (TimeOfDay 17 0 0) Nothing
         result <- bfsContentDiscovery config
@@ -401,6 +484,7 @@ bfsTraversalTests = testGroup "BFS traversal"
            T.replicate 60 "x")
         TIO.writeFile (booksDir </> "hidden-gem.md")
           ("---\ntitle: A Hidden Gem\nURL: https://example.com/books/hidden-gem\n---\n" <>
+           "![[attachments/books-hidden-gem.jpg]]\n" <>
            T.replicate 60 "x")
         let config = FindContentConfig dir [Twitter] (TimeOfDay 0 0 0) Nothing
         result <- bfsContentDiscovery config
@@ -429,6 +513,7 @@ bfsTraversalTests = testGroup "BFS traversal"
            T.replicate 60 "x")
         TIO.writeFile (booksDir </> "public-book.md")
           ("---\ntitle: Public Book\nURL: https://example.com/books/public-book\n---\n" <>
+           "![[attachments/books-public-book.jpg]]\n" <>
            T.replicate 60 "x")
         let config = FindContentConfig dir [Twitter] (TimeOfDay 0 0 0) Nothing
         result <- bfsContentDiscovery config
@@ -454,6 +539,7 @@ bfsTraversalTests = testGroup "BFS traversal"
            "Short.\nSee [[books/real-book]]\n")
         TIO.writeFile (booksDir </> "real-book.md")
           ("---\ntitle: Real Book\nURL: https://example.com/books/real-book\n---\n" <>
+           "![[attachments/books-real-book.jpg]]\n" <>
            T.replicate 60 "x")
         let config = FindContentConfig dir [Twitter] (TimeOfDay 0 0 0) Nothing
         result <- bfsContentDiscovery config
@@ -516,6 +602,7 @@ bfsTests = testGroup "BFS discovery"
            T.replicate 60 "x")
         TIO.writeFile (booksDir </> "great-book.md")
           ("---\ntitle: A Great Book\nURL: https://example.com/books/great-book\n---\n" <>
+           "![[attachments/books-great-book.jpg]]\n" <>
            T.replicate 60 "x")
         let config = FindContentConfig dir [Twitter, Bluesky, Mastodon] (TimeOfDay 0 0 0) Nothing
         result <- bfsContentDiscovery config
@@ -603,10 +690,12 @@ urlValidationTests = testGroup "URL validation"
            T.replicate 60 "x")
         TIO.writeFile (booksDir </> "dead-link.md")
           ("---\ntitle: Dead Link Book\nURL: \"https://bagrounds.org/books/dead-link\"\n---\n" <>
+           "![[attachments/books-dead-link.jpg]]\n" <>
            "Read [[books/live-book]]\n" <>
            T.replicate 60 "x")
         TIO.writeFile (booksDir </> "live-book.md")
           ("---\ntitle: Live Book\nURL: \"https://bagrounds.org/books/live-book\"\n---\n" <>
+           "![[attachments/books-live-book.jpg]]\n" <>
            T.replicate 60 "x")
         let checker url = pure (url == "https://bagrounds.org/books/live-book")
             config = FindContentConfig dir [Twitter] (TimeOfDay 0 0 0) (Just checker)

@@ -22,9 +22,17 @@ URL: https://bagrounds.org/ai-blog/2026-04-09-5-typed-errors-for-gemini-module
 
 🔌 Critically, we grounded our error detection in the official Gemini API documentation at ai.google.dev/gemini-api/docs/troubleshooting. The API returns structured error JSON with a machine-readable "status" field, so we parse that field into a proper ApiStatus ADT with constructors for every documented status: ResourceExhausted, InvalidArgument, PermissionDenied, NotFound, InternalError, Unavailable, DeadlineExceeded, Unauthenticated, FailedPrecondition, and UnknownStatus for forward compatibility.
 
-🧱 The Error type has four constructors. JsonParseError means the response body was not valid JSON. ExtractionError carries a detail string explaining which field was missing from the response structure, such as "no candidates in response" or "no text in part". HttpError carries the HTTP status code, the parsed ApiStatus, and the human-readable message from the API. AllModelsFailed wraps the last model name tried and the inner error from that final attempt, forming a recursive structure.
+🏷️ The Error type has four constructors. JsonParseError means the response body was not valid JSON. ExtractionError carries a detail string explaining which field was missing from the response structure, such as "no candidates in response" or "no text in part". HttpError carries the HTTP status code, the parsed ApiStatus, and the human-readable message from the API. AllModelsFailed wraps the last model tried (as a typed Model value, not a raw string) and the inner error from that final attempt, forming a recursive structure.
 
 🚫 Notably, we removed the NoModelsProvided constructor entirely. Instead of accepting a list of models that could be empty and handling it as a runtime error, the function signature now requires a primary model and a separate list of fallbacks. This dissolves the impossible state at the type level, following the principle that invalid inputs should be unrepresentable rather than handled by runtime error constructors.
+
+## 🏷️ Model ADT
+
+🔢 Gemini model names were previously raw Text strings scattered across modules. But the set of models our system uses is known and fixed at compile time, making it a classic closed set. Following the AGENTS.md principle that closed sets deserve ADTs, we introduced a Model sum type with seven constructors: Gemma3, Gemini31FlashLite, Gemini3Flash, Gemini25Flash, Gemini25FlashLite, Gemini20Flash, and Gemini31FlashImage. A Custom constructor with a Text payload preserves the ability to override models via environment variables.
+
+🔄 Round-trip functions modelToText and modelFromText convert between the ADT and the raw API strings. The fromText function recognizes all seven known model strings and falls back to Custom for anything else. A knownModels list exports all known constructors for exhaustive property testing.
+
+🧱 The migration touched twelve source and test files. AllModelsFailed in the Error ADT now carries Model instead of Text. BlogImage's geminiModelFallback function was rewritten from string prefix matching to clean constructor pattern matching. All env-var overrides parse into Model at the boundary using modelFromText, so the rest of the system never handles raw model strings. Feature modules like AiFiction and ReflectionTitle now import the Gemini.Model type for their config records, making the implicit coupling explicit through the type system.
 
 🔍 Rate limit detection is now based on constructor matching rather than string inspection. The isRateLimitError predicate simply matches HttpError with ResourceExhausted status, which is the official API status code for rate limiting. No more searching the body for "RESOURCE_EXHAUSTED" or "quota" as substrings. The isQuotaExhaustedError predicate refines further by checking whether the message mentions "daily" or "per day", since both per-minute rate limits and daily quota exhaustion return ResourceExhausted.
 
@@ -44,9 +52,9 @@ URL: https://bagrounds.org/ai-blog/2026-04-09-5-typed-errors-for-gemini-module
 
 🔬 The rate limit and quota exhausted predicates are tested exclusively through ApiStatus constructor matching. ParseResponseText and extractText tests exercise every failure path through the JSON extraction logic. ParseErrorBody tests verify parsing of structured Gemini error JSON, including fallback behavior for non-JSON responses and missing fields.
 
-📈 Property-based tests verify that show always produces non-empty output for any generated error, that HttpError with ResourceExhausted is always classified as a rate limit, and that all nine known ApiStatus values round-trip correctly through parseApiStatus.
+📈 Property-based tests verify that show always produces non-empty output for any generated error, that HttpError with ResourceExhausted is always classified as a rate limit, that all nine known ApiStatus values round-trip correctly through parseApiStatus, and that all seven known Model values round-trip through modelToText and modelFromText.
 
-🏁 The test suite grew from 942 to 1002 tests, all passing with zero warnings under the strict -Werror flag.
+🏁 The test suite grew from 942 to 1021 tests, all passing with zero warnings under the strict -Werror flag.
 
 ## 🔮 What Comes Next
 
@@ -61,6 +69,8 @@ URL: https://bagrounds.org/ai-blog/2026-04-09-5-typed-errors-for-gemini-module
 🚫 Do not unwrap typed errors back to Text: the Show instance preserves full structure, and a custom renderError encourages callers to discard type information.
 
 🔌 Parse external APIs at the boundary: when the API returns structured error JSON, parse it immediately into a typed ADT so downstream code never sees raw response bodies.
+
+🔢 Closed sets deserve ADTs: when a value comes from a known fixed set, even one that evolves over time like model names, represent it as a sum type with a Custom escape hatch. This eliminates typos, enables constructor pattern matching for fallback logic, and provides round-trip guarantees via property tests. The env-var override boundary is where raw text enters; everything beyond that point uses the typed value.
 
 ## 📚 Book Recommendations
 

@@ -1,6 +1,5 @@
 module Main where
 
-import Control.Concurrent (threadDelay)
 import Control.Monad (when)
 import Control.Exception (SomeException, try)
 import Data.Char (isAsciiLower, isDigit)
@@ -12,7 +11,7 @@ import Data.Maybe (fromMaybe, mapMaybe)
 import Data.Text (Text)
 import qualified Data.Text as T
 import qualified Data.Text.IO as TIO
-import Data.Time (addDays, defaultTimeLocale, formatTime, getCurrentTime)
+import Data.Time (addDays)
 import Network.HTTP.Client (newManager)
 import Network.HTTP.Client.TLS (tlsManagerSettings)
 import System.Directory (createDirectoryIfMissing, doesDirectoryExist, doesFileExist, listDirectory, removeFile)
@@ -82,39 +81,17 @@ import Automation.Scheduler
   , taskIdFromText
   , taskIdToText
   )
-import Automation.Types (Secret (..), RelativePath, unRelativePath, mkRelativePath, Title, mkTitle)
+import Automation.Types (Secret (..), unRelativePath, mkRelativePath, mkTitle)
 import qualified Automation.Context as Context
 import qualified Automation.InternalLinking as IL
 import Automation.SocialPosting (autoPost)
-import Automation.Text (wordJaccardSimilarity)
-
--- ---------------------------------------------------------------------------
--- Logging helpers
--- ---------------------------------------------------------------------------
-
-ts :: IO Text
-ts = T.pack . formatTime defaultTimeLocale "%Y-%m-%dT%H:%M:%S%QZ" <$> getCurrentTime
-
-logMsg :: Text -> IO ()
-logMsg msg = do
-  timestamp <- ts
-  TIO.putStrLn $ "[" <> timestamp <> "] " <> msg
+import Automation.CliArgs (CliArgs (..), parseCliArgs)
+import Automation.VaultSync (syncFileToVault, syncNewAiBlogPosts, copySeriesPosts)
+import Automation.TaskRunner (inferenceDashboards, runTasks, logMsg)
 
 -- ---------------------------------------------------------------------------
 -- Constants
 -- ---------------------------------------------------------------------------
-
-interTaskDelayMs :: Int
-interTaskDelayMs = 30000000 -- 30 seconds in microseconds
-
-inferenceDashboards :: [(Text, Text)]
-inferenceDashboards =
-  [ ("Gemini API", "https://aistudio.google.com/apikey")
-  , ("GCP Quotas", "https://console.cloud.google.com/iam-admin/quotas")
-  , ("Cloudflare AI", "https://dash.cloudflare.com/?to=/:account/ai/workers-ai")
-  , ("Hugging Face", "https://huggingface.co/settings/billing")
-  , ("Together AI", "https://api.together.ai/settings/billing")
-  ]
 
 -- ---------------------------------------------------------------------------
 -- Shared Gemini caller for fiction/title generators
@@ -196,129 +173,6 @@ stripCodeFences t =
                 Nothing -> fromMaybe t (T.stripPrefix "```\n" t)
       t2 = fromMaybe t1 (T.stripSuffix "\n```" t1)
   in t2
-
--- ---------------------------------------------------------------------------
--- syncFileToVault (local implementation matching TypeScript)
--- ---------------------------------------------------------------------------
-
-syncFileToVault :: FilePath -> FilePath -> FilePath -> IO Bool
-syncFileToVault localPath vaultRelPath vaultDir = do
-  let vaultPath = vaultDir </> vaultRelPath
-  localExists <- doesFileExist localPath
-  if not localExists
-    then pure False
-    else do
-      localContent <- TIO.readFile localPath
-      vaultExists <- doesFileExist vaultPath
-      if vaultExists
-        then do
-          vaultContent <- TIO.readFile vaultPath
-          if localContent == vaultContent
-            then pure False
-            else do
-              createDirectoryIfMissing True (takeDirectory vaultPath)
-              TIO.writeFile vaultPath localContent
-              pure True
-        else do
-          createDirectoryIfMissing True (takeDirectory vaultPath)
-          TIO.writeFile vaultPath localContent
-          pure True
-  where
-    takeDirectory = reverse . dropWhile (/= '/') . reverse
-
--- ---------------------------------------------------------------------------
--- syncNewAiBlogPosts (copy-if-missing with content similarity dedup)
--- ---------------------------------------------------------------------------
-
--- | Similarity threshold for dedup. Posts scoring above this against any
---   vault file are considered modified versions, not new content.
---
---   Empirically derived from the ai-blog corpus:
---     genuinely new posts:       max Jaccard similarity 0.22
---     renamed/modified versions: min Jaccard similarity 0.53
---   Threshold sits in the middle of a 0.31-wide gap.
-similarityThreshold :: Double
-similarityThreshold = 0.25
-
-syncNewAiBlogPosts :: FilePath -> FilePath -> IO Int
-syncNewAiBlogPosts repoDir vaultDir = do
-  repoExists <- doesDirectoryExist repoDir
-  if not repoExists
-    then pure 0
-    else do
-      createDirectoryIfMissing True vaultDir
-      -- Read all vault file contents for similarity comparison
-      vaultEntries <- listDirectory vaultDir
-      let vaultMdFiles = filter isAiBlogPost vaultEntries
-          vaultFilenames = fmap T.pack vaultMdFiles
-      vaultContents <- traverse (\f -> TIO.readFile (vaultDir </> f)) vaultMdFiles
-      -- Check each repo file against vault
-      repoEntries <- listDirectory repoDir
-      let repoMdFiles = filter isAiBlogPost repoEntries
-      counts <- traverse (syncIfNew repoDir vaultDir vaultFilenames (zip vaultMdFiles vaultContents)) repoMdFiles
-      pure (sum counts)
-  where
-    isAiBlogPost f = takeExtension f == ".md" && f /= "index.md" && f /= "AGENTS.md"
-
-syncIfNew :: FilePath -> FilePath -> [Text] -> [(FilePath, Text)] -> FilePath -> IO Int
-syncIfNew srcDir dstDir vaultFilenames vaultContents filename = do
-  let fnameText = T.pack filename
-  if fnameText `elem` vaultFilenames
-    then pure 0
-    else do
-      repoContent <- TIO.readFile (srcDir </> filename)
-      let (bestScore, bestMatch) = findBestMatch repoContent vaultContents
-      if bestScore >= similarityThreshold
-        then do
-          logMsg $ "  ⏭️  Skipping " <> fnameText
-            <> " (Jaccard " <> T.pack (showScore bestScore) <> " with " <> T.pack bestMatch <> ")"
-          pure 0
-        else do
-          TIO.writeFile (dstDir </> filename) repoContent
-          logMsg $ "  📄 New post → vault: " <> fnameText
-            <> " (best Jaccard " <> T.pack (showScore bestScore) <> ")"
-          pure 1
-
-findBestMatch :: Text -> [(FilePath, Text)] -> (Double, FilePath)
-findBestMatch repoContent = foldl pickBest (0.0, "(none)")
-  where
-    pickBest (bestScore, bestFile) (vaultFile, vaultContent) =
-      let score = wordJaccardSimilarity repoContent vaultContent
-      in if score > bestScore
-           then (score, vaultFile)
-           else (bestScore, bestFile)
-
-showScore :: Double -> String
-showScore d =
-  let rounded = fromIntegral (round (d * 1000) :: Int) / 1000 :: Double
-  in show rounded
-
--- ---------------------------------------------------------------------------
--- copySeriesPosts (matches TypeScript pull-vault-posts.ts)
--- ---------------------------------------------------------------------------
-
-copySeriesPosts :: FilePath -> Text -> FilePath -> IO Int
-copySeriesPosts vaultDir seriesId repoRoot = do
-  let vaultSeriesDir = vaultDir </> T.unpack seriesId
-      localSeriesDir = repoRoot </> T.unpack seriesId
-  vaultExists <- doesDirectoryExist vaultSeriesDir
-  if not vaultExists
-    then pure 0
-    else do
-      entries <- listDirectory vaultSeriesDir
-      let dateFiles = filter isDateFile entries
-      createDirectoryIfMissing True localSeriesDir
-      mapM_ (copyFile' vaultSeriesDir localSeriesDir) dateFiles
-      pure (length dateFiles)
-  where
-    isDateFile f =
-      length f >= 14
-        && takeExtension f == ".md"
-        && all isDigit (take 4 f)
-        && f !! 4 == '-'
-    copyFile' srcDir dstDir f = do
-      content <- TIO.readFile (srcDir </> f)
-      TIO.writeFile (dstDir </> f) content
 
 -- ---------------------------------------------------------------------------
 -- readPreviousPostFilename from metadata file
@@ -547,7 +401,7 @@ runBackfillImages context = do
   -- 1. Sync new AI blog posts from repo to vault (copy-if-missing only)
   let repoAiBlogDir = repoRoot </> "ai-blog"
       vaultAiBlogDir = vaultDir </> "ai-blog"
-  newPostCount <- syncNewAiBlogPosts repoAiBlogDir vaultAiBlogDir
+  newPostCount <- syncNewAiBlogPosts repoAiBlogDir vaultAiBlogDir logMsg
   case newPostCount of
     0 -> pure ()
     n -> logMsg $ "  📝 Synced " <> T.pack (show n) <> " new AI blog post(s) to vault"
@@ -592,9 +446,17 @@ runBackfillImages context = do
 
   -- 4. Add update links from image backfill results
   let reflectionsDir = vaultDir </> "reflections"
-  imageUpdateLinks <- traverse (\f -> do
-        title <- extractTitleFromFile (vaultDir </> T.unpack f)
-        pure (UpdateLink (validatedRelativePath f) (validatedTitle title) ["🖼️ added image"])
+  imageUpdateLinks <- fmap (mapMaybe id) $ traverse (\filePath -> do
+        title <- extractTitleFromFile (vaultDir </> T.unpack filePath)
+        case (mkRelativePath filePath, mkTitle title) of
+          (Right relativePath, Right validTitle) ->
+            pure (Just (UpdateLink relativePath validTitle ["🖼️ added image"]))
+          (Left pathError, _) -> do
+            logMsg $ "  ⚠️  Skipping update link for " <> filePath <> ": " <> pathError
+            pure Nothing
+          (_, Left titleError) -> do
+            logMsg $ "  ⚠️  Skipping update link for " <> filePath <> ": " <> titleError
+            pure Nothing
         ) imageModifiedFiles
   case imageUpdateLinks of
     [] -> pure ()
@@ -639,11 +501,15 @@ runInternalLinking context = do
       today <- todayPacificDay
       let todayText = formatDay today
           reflectionsDir = vaultDir </> "reflections"
-      links <- traverse (\fr -> do
+      links <- fmap (mapMaybe id) $ traverse (\fr -> do
         title <- extractTitleFromFile (vaultDir </> T.unpack (unRelativePath (IL.frRelativePath fr)))
-        let n = IL.frLinksAdded fr
-            detail = "🔗 added " <> T.pack (show n) <> " internal link" <> (if n == 1 then "" else "s")
-        pure (UpdateLink (IL.frRelativePath fr) (validatedTitle title) [detail])
+        let linksAdded = IL.frLinksAdded fr
+            detail = "🔗 added " <> T.pack (show linksAdded) <> " internal link" <> (if linksAdded == 1 then "" else "s")
+        case mkTitle title of
+          Right validTitle -> pure (Just (UpdateLink (IL.frRelativePath fr) validTitle [detail]))
+          Left titleError -> do
+            logMsg $ "  ⚠️  Skipping update link: " <> titleError
+            pure Nothing
         ) modifiedResults
       _ <- addUpdateLinksToReflection reflectionsDir todayText links
       pure ()
@@ -781,23 +647,6 @@ taskRunners context = Map.fromList
   ]
 
 -- ---------------------------------------------------------------------------
--- CLI argument parsing
--- ---------------------------------------------------------------------------
-
-data CliArgs = CliArgs
-  { cliHourOverride :: Maybe Int
-  , cliTaskOverride :: Maybe Text
-  }
-
-parseCliArgs :: [String] -> CliArgs
-parseCliArgs = go (CliArgs Nothing Nothing)
-  where
-    go acc [] = acc
-    go acc ("--hour" : h : rest) = go (acc { cliHourOverride = Just (read h) }) rest
-    go acc ("--task" : t : rest) = go (acc { cliTaskOverride = Just (T.pack t) }) rest
-    go acc (_ : rest) = go acc rest
-
--- ---------------------------------------------------------------------------
 -- Main
 -- ---------------------------------------------------------------------------
 
@@ -853,54 +702,21 @@ main = do
           TIO.hPutStrLn stderr $ "❌ Invalid context: " <> T.pack err
           exitFailure
       let runners = taskRunners context
-      results <- runTasks runners tasks []
+      results <- runTasks runners tasks
 
       -- Push vault ONCE at the end
       logMsg "📤 Pushing Obsidian vault..."
       pushObsidianVault vaultDir (ocAuthToken creds)
       logMsg "📤 Vault pushed"
 
-      let succeeded = length (filter (\(_, s, _) -> s) results)
+      let succeeded = length (filter (\(_, success, _) -> success) results)
           total = length results
 
       TIO.putStrLn "\n--- Run Summary ---"
-      mapM_ (\(tid, success, mErr) ->
+      mapM_ (\(taskIdentifier, success, errorMessage) ->
         let icon = if success then "✅" else "❌"
-            errSuffix = maybe "" (" — " <>) mErr
-        in TIO.putStrLn $ "  " <> icon <> " " <> taskIdToText tid <> errSuffix
-        ) (fmap (\(tid, s, e) -> (tid, s, e)) (toTriples results))
+            errorSuffix = maybe "" (" — " <>) errorMessage
+        in TIO.putStrLn $ "  " <> icon <> " " <> taskIdToText taskIdentifier <> errorSuffix
+        ) results
       TIO.putStrLn $ "  📊 " <> T.pack (show succeeded) <> "/" <> T.pack (show total) <> " succeeded"
       TIO.putStrLn "-------------------\n"
-  where
-    toTriples :: [(TaskId, Bool, Maybe Text)] -> [(TaskId, Bool, Maybe Text)]
-    toTriples = id
-
-    runTasks :: Map TaskId (IO ()) -> [TaskId] -> [(TaskId, Bool, Maybe Text)] -> IO [(TaskId, Bool, Maybe Text)]
-    runTasks _ [] acc = pure (reverse acc)
-    runTasks runners (tid:rest) acc = do
-      -- Inter-task delay (skip for first task)
-      case acc of
-        [] -> pure ()
-        _  -> do
-          TIO.putStrLn $ "⏳ Inter-task delay: " <> T.pack (show (interTaskDelayMs `div` 1000000)) <> "s"
-          threadDelay interTaskDelayMs
-
-      let mRunner = Map.lookup tid runners
-      case mRunner of
-        Nothing -> do
-          logMsg $ "  ⚠️  Unknown task: " <> taskIdToText tid
-          runTasks runners rest ((tid, False, Just "no runner registered") : acc)
-        Just runner -> do
-          result <- try runner :: IO (Either SomeException ())
-          case result of
-            Right () -> runTasks runners rest ((tid, True, Nothing) : acc)
-            Left err -> do
-              let msg = T.pack (show err)
-              logMsg $ "❌ " <> taskIdToText tid <> " — " <> msg
-              runTasks runners rest ((tid, False, Just msg) : acc)
-
-validatedTitle :: Text -> Title
-validatedTitle = either (error . T.unpack) id . mkTitle
-
-validatedRelativePath :: Text -> RelativePath
-validatedRelativePath = either (error . T.unpack) id . mkRelativePath

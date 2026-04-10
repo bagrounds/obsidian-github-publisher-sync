@@ -12,6 +12,7 @@ module Automation.AiFiction
   , FictionResult (FictionResult, frFiction, frModel, frUpdatedContent)
   ) where
 
+import Data.List.NonEmpty (NonEmpty)
 import Data.Text (Text)
 import qualified Data.Text as T
 
@@ -19,6 +20,7 @@ import Automation.Types
   ( updatesSectionHeader
   )
 
+import qualified Automation.Gemini as Gemini
 import qualified Automation.Platforms.Bluesky as Bluesky
 import qualified Automation.Platforms.Mastodon as Mastodon
 import qualified Automation.Platforms.Twitter as Twitter
@@ -26,8 +28,8 @@ import qualified Automation.Platforms.Twitter as Twitter
 fictionSectionHeader :: Text
 fictionSectionHeader = "## 🤖🐲 AI Fiction"
 
-defaultFictionModel :: Text
-defaultFictionModel = "gemini-2.5-flash"
+defaultFictionModel :: Gemini.Model
+defaultFictionModel = Gemini.Gemini25Flash
 
 embedHeaders :: [Text]
 embedHeaders = [Twitter.sectionHeader, Bluesky.sectionHeader, Mastodon.sectionHeader]
@@ -141,7 +143,7 @@ applyFiction content fiction mModel =
       T.stripEnd content <> "\n\n" <> sectionBlock <> "\n"
 
 data FictionConfig = FictionConfig
-  { fcModels      :: [Text]
+  { fcModels      :: NonEmpty Gemini.Model
   , fcNoteContent :: Text
   } deriving (Show, Eq)
 
@@ -151,7 +153,7 @@ data FictionResult = FictionResult
   , frUpdatedContent :: Text
   } deriving (Show, Eq)
 
-generateFiction :: FictionConfig -> ([Text] -> (Text, Text) -> IO (Text, Text)) -> IO FictionResult
+generateFiction :: FictionConfig -> (NonEmpty Gemini.Model -> (Text, Text) -> IO (Text, Text)) -> IO FictionResult
 generateFiction config callModel = do
   let stripped = stripForPrompt (fcNoteContent config)
       prompt = buildFictionPrompt stripped

@@ -7,6 +7,7 @@ import Test.Tasty.QuickCheck (testProperty)
 import qualified Test.Tasty.QuickCheck as QC
 
 import Automation.AiFiction
+import qualified Automation.Gemini as Gemini
 
 tests :: TestTree
 tests = testGroup "AiFiction"
@@ -28,7 +29,7 @@ constantTests = testGroup "constants"
   [ testCase "fictionSectionHeader" $
       fictionSectionHeader @?= "## 🤖🐲 AI Fiction"
   , testCase "defaultFictionModel" $
-      defaultFictionModel @?= "gemini-2.5-flash"
+      defaultFictionModel @?= Gemini.Gemini25Flash
   ]
 
 --------------------------------------------------------------------------------

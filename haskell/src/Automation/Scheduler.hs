@@ -17,6 +17,7 @@ module Automation.Scheduler
   , findPostToRegenerate
   ) where
 
+import Data.List.NonEmpty (NonEmpty ((:|)))
 import Data.Map.Strict (Map)
 import qualified Data.Map.Strict as Map
 import Data.Set (Set)
@@ -43,6 +44,8 @@ import GHC.Generics (Generic)
 import System.Directory (doesDirectoryExist, listDirectory)
 import System.FilePath (takeExtension, (</>))
 
+import qualified Automation.Gemini as Gemini
+
 data TaskId
   = BlogSeriesChickieLoo
   | BlogSeriesAutoBlogZero
@@ -62,7 +65,7 @@ data ScheduleEntry = ScheduleEntry
 
 data BlogSeriesRunConfig = BlogSeriesRunConfig
   { bsrcSeriesId :: Text
-  , bsrcModelChain :: [Text]
+  , bsrcModelChain :: NonEmpty Gemini.Model
   , bsrcPriorityUserEnvVar :: Text
   } deriving (Generic, Show, Eq)
 
@@ -103,15 +106,15 @@ blogSeriesRunConfigs :: Map Text BlogSeriesRunConfig
 blogSeriesRunConfigs = Map.fromList
   [ ("chickie-loo", BlogSeriesRunConfig
       "chickie-loo"
-      ["gemini-3.1-flash-lite-preview", "gemini-3-flash-preview"]
+      (Gemini.Gemini31FlashLite :| [Gemini.Gemini3Flash])
       "CHICKIE_LOO_PRIORITY_USER")
   , ("auto-blog-zero", BlogSeriesRunConfig
       "auto-blog-zero"
-      ["gemini-3.1-flash-lite-preview", "gemini-3-flash-preview"]
+      (Gemini.Gemini31FlashLite :| [Gemini.Gemini3Flash])
       "AUTO_BLOG_ZERO_PRIORITY_USER")
   , ("systems-for-public-good", BlogSeriesRunConfig
       "systems-for-public-good"
-      ["gemini-2.5-flash", "gemini-2.5-flash-lite", "gemini-3.1-flash-lite-preview"]
+      (Gemini.Gemini25Flash :| [Gemini.Gemini25FlashLite, Gemini.Gemini31FlashLite])
       "SYSTEMS_FOR_PUBLIC_GOOD_PRIORITY_USER")
   ]
 

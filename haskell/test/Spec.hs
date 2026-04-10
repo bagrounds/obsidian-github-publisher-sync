@@ -32,6 +32,7 @@ import qualified Automation.PlatformTest
 import qualified Automation.CredentialsTest
 import qualified Automation.EmbedTest
 import qualified Automation.ContextTest
+import qualified Automation.GeminiTest
 
 main :: IO ()
 main = defaultMain $ testGroup "Automation"
@@ -65,4 +66,5 @@ main = defaultMain $ testGroup "Automation"
   , Automation.CredentialsTest.tests
   , Automation.EmbedTest.tests
   , Automation.ContextTest.tests
+  , Automation.GeminiTest.tests
   ]

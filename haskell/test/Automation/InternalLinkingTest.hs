@@ -5,6 +5,7 @@ import Automation.TestGenerators (testTitle, testRelativePath)
 import Automation.Types (RelativePath, mkRelativePath, Title, mkTitle)
 import Data.Text (Text)
 import qualified Data.Text as T
+import qualified Automation.Gemini as Gemini
 import Test.Tasty (TestTree, testGroup)
 import Test.Tasty.HUnit (assertEqual, assertBool, testCase)
 import Test.Tasty.QuickCheck (testProperty)
@@ -38,7 +39,7 @@ tests = testGroup "InternalLinking"
 constantsTests :: TestTree
 constantsTests = testGroup "constants"
   [ testCase "defaultLinkingModel" $
-      assertEqual "" "gemini-3.1-flash-lite-preview" defaultLinkingModel
+      assertEqual "" Gemini.Gemini31FlashLite defaultLinkingModel
   , testCase "linkableDirs contains books" $
       assertBool "books in linkableDirs" ("books" `elem` linkableDirs)
   , testCase "indexableDirs has 10 entries" $

@@ -15,14 +15,16 @@ module Automation.ReflectionTitle
 
 import Data.Char (isDigit)
 import Data.List (nub)
+import Data.List.NonEmpty (NonEmpty)
 import Data.Text (Text)
 import qualified Data.Text as T
 
 import Automation.Types (updatesSectionHeader)
 import Automation.Frontmatter (parseFrontmatter)
+import qualified Automation.Gemini as Gemini
 
-defaultTitleModel :: Text
-defaultTitleModel = "gemini-2.5-flash"
+defaultTitleModel :: Gemini.Model
+defaultTitleModel = Gemini.Gemini25Flash
 
 extractHeadingEmojis :: Text -> Text
 extractHeadingEmojis heading =
@@ -243,7 +245,7 @@ updateH1Heading content date fullTitle =
   in T.unlines updatedLines
 
 data ReflectionTitleConfig = ReflectionTitleConfig
-  { rtcModels       :: [Text]
+  { rtcModels       :: NonEmpty Gemini.Model
   , rtcNoteContent  :: Text
   , rtcDate         :: Text
   , rtcRecentTitles :: [Text]
@@ -256,7 +258,7 @@ data ReflectionTitleResult = ReflectionTitleResult
   , rtrUpdatedContent :: Text
   } deriving (Show, Eq)
 
-generateReflectionTitle :: ReflectionTitleConfig -> ([Text] -> (Text, Text) -> IO (Text, Text)) -> IO ReflectionTitleResult
+generateReflectionTitle :: ReflectionTitleConfig -> (NonEmpty Gemini.Model -> (Text, Text) -> IO (Text, Text)) -> IO ReflectionTitleResult
 generateReflectionTitle config callModel = do
   let linkedTitles = extractLinkedTitles (rtcNoteContent config)
       trailingEmojis = extractTrailingEmojis (rtcNoteContent config)

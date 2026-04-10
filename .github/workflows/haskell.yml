@@ -37,6 +37,12 @@ jobs:
         working-directory: haskell
         run: cabal update && cabal build all -j --ghc-options="-Werror"
 
+      - name: Lint
+        working-directory: haskell
+        run: |
+          apt-get update -qq && apt-get install -y -qq hlint > /dev/null 2>&1
+          hlint src/ app/ test/
+
       - name: Test
         working-directory: haskell
         run: cabal test --test-show-details=direct

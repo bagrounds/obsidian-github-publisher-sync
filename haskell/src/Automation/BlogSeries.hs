@@ -7,6 +7,7 @@ module Automation.BlogSeries
   , updatePreviousPost
   ) where
 
+import Control.Monad (when)
 import Data.Char (isDigit)
 import Data.List (find)
 import Data.Maybe (fromMaybe)
@@ -83,18 +84,15 @@ updatePreviousPost :: FilePath -> BlogPost -> BlogSeriesConfig -> Text -> IO ()
 updatePreviousPost seriesDir prevPost series newFilename = do
   let filePath = seriesDir </> T.unpack (bpFilename prevPost)
   exists <- doesFileExist filePath
-  if exists
-    then do
-      content <- TIO.readFile filePath
-      let fwdLink = buildForwardLink series newFilename
-          navPrefix = bscNavLink series
-          ls = T.splitOn "\n" content
-          updatedLines = fmap (updateNavLine navPrefix fwdLink) ls
-          updated = T.intercalate "\n" updatedLines
-      if updated == content
-        then pure ()
-        else TIO.writeFile filePath updated
-    else pure ()
+  when exists $ do
+    content <- TIO.readFile filePath
+    let fwdLink = buildForwardLink series newFilename
+        navPrefix = bscNavLink series
+        ls = T.splitOn "\n" content
+        updatedLines = fmap (updateNavLine navPrefix fwdLink) ls
+        updated = T.intercalate "\n" updatedLines
+    when (updated /= content) $
+      TIO.writeFile filePath updated
 
 stripDatePrefix :: Text -> Text
 stripDatePrefix t

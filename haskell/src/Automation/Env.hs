@@ -7,7 +7,7 @@ module Automation.Env
   , validateEnvironment
   ) where
 
-import Control.Monad (filterM)
+import Control.Monad (filterM, when)
 import Data.List (intercalate)
 import Data.Maybe (isJust, isNothing)
 import Data.Text (Text)
@@ -54,9 +54,8 @@ allPresent = fmap and . traverse (fmap isJust . lookupEnv)
 logDisabled :: Text -> String -> IO ()
 logDisabled platform envVar = do
   disabled <- isPlatformDisabled envVar
-  if disabled
-    then TIO.putStrLn $ "🚫 " <> platform <> " disabled via " <> T.pack envVar <> " env var"
-    else pure ()
+  when disabled $
+    TIO.putStrLn $ "🚫 " <> platform <> " disabled via " <> T.pack envVar <> " env var"
 
 requireEnv :: String -> IO Text
 requireEnv key =

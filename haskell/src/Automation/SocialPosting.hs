@@ -37,6 +37,7 @@ module Automation.SocialPosting
   ) where
 
 import Control.Concurrent.Async (mapConcurrently)
+import Control.Monad (when)
 import Control.Exception (SomeException, try)
 
 import Data.List.NonEmpty (NonEmpty ((:|)))
@@ -396,21 +397,19 @@ validateNoteUrl checker note = do
 updateFrontmatterUrl :: FilePath -> Text -> IO ()
 updateFrontmatterUrl filePath newUrl = do
   exists <- doesFileExist filePath
-  if exists
-    then do
-      content <- TIO.readFile filePath
-      let ls = T.splitOn "\n" content
-      case ls of
-        (first : rest)
-          | T.strip first == "---" ->
-              case break (\l -> T.strip l == "---") rest of
-                (_, []) -> pure ()
-                (fmLines, closingDash : bodyLines) ->
-                  let updatedFm = upsertFmField fmLines "URL" (quoteYamlValue newUrl)
-                  in TIO.writeFile filePath
-                       (T.intercalate "\n" (first : updatedFm <> [closingDash] <> bodyLines))
-        _ -> pure ()
-    else pure ()
+  when exists $ do
+    content <- TIO.readFile filePath
+    let ls = T.splitOn "\n" content
+    case ls of
+      (first : rest)
+        | T.strip first == "---" ->
+            case break (\l -> T.strip l == "---") rest of
+              (_, []) -> pure ()
+              (fmLines, closingDash : bodyLines) ->
+                let updatedFm = upsertFmField fmLines "URL" (quoteYamlValue newUrl)
+                in TIO.writeFile filePath
+                     (T.intercalate "\n" (first : updatedFm <> [closingDash] <> bodyLines))
+      _ -> pure ()
 
 --------------------------------------------------------------------------------
 -- Content filtering
@@ -614,23 +613,21 @@ reconstructPath parentMap start target = reverse $ go target
 updateFrontmatterTimestamp :: FilePath -> IO ()
 updateFrontmatterTimestamp filePath = do
   exists <- doesFileExist filePath
-  if exists
-    then do
-      content <- TIO.readFile filePath
-      now <- getCurrentTime
-      let timestamp = T.pack $ formatTime defaultTimeLocale "%Y-%m-%dT%H:%M:%S" now
-          ls = T.splitOn "\n" content
-      case ls of
-        (first : rest)
-          | T.strip first == "---" ->
-              case break (\l -> T.strip l == "---") rest of
-                (_, []) -> pure ()
-                (fmLines, closingDash : bodyLines) ->
-                  let updatedFm = upsertFmField fmLines "updated" (quoteYamlValue timestamp)
-                  in TIO.writeFile filePath
-                       (T.intercalate "\n" (first : updatedFm <> [closingDash] <> bodyLines))
-        _ -> pure ()
-    else pure ()
+  when exists $ do
+    content <- TIO.readFile filePath
+    now <- getCurrentTime
+    let timestamp = T.pack $ formatTime defaultTimeLocale "%Y-%m-%dT%H:%M:%S" now
+        ls = T.splitOn "\n" content
+    case ls of
+      (first : rest)
+        | T.strip first == "---" ->
+            case break (\l -> T.strip l == "---") rest of
+              (_, []) -> pure ()
+              (fmLines, closingDash : bodyLines) ->
+                let updatedFm = upsertFmField fmLines "updated" (quoteYamlValue timestamp)
+                in TIO.writeFile filePath
+                     (T.intercalate "\n" (first : updatedFm <> [closingDash] <> bodyLines))
+      _ -> pure ()
 
 upsertFmField :: [Text] -> Text -> Text -> [Text]
 upsertFmField ls key renderedVal =

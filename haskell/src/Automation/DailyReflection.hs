@@ -13,6 +13,7 @@ module Automation.DailyReflection
   , embedSectionHeaders
   ) where
 
+import Control.Monad (when)
 import Data.List (sort)
 import Data.Text (Text)
 import qualified Data.Text as T
@@ -192,9 +193,8 @@ updateDailyReflection vaultDir today series postFilename postTitle replacingFile
       hadSection = T.isInfixOf (buildSeriesSectionHeading series) content
       updated = insertPostLink content series filenameNoExt postTitle replacingFilenameNoExt
       linkInserted = updated /= content
-  if linkInserted
-    then TIO.writeFile reflectionPath updated
-    else pure ()
+  when linkInserted $
+    TIO.writeFile reflectionPath updated
   pure UpdateReflectionResult
     { urrReflectionCreated = errCreated
     , urrSectionCreated    = not hadSection && linkInserted

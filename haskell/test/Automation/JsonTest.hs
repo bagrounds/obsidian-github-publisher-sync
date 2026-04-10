@@ -330,9 +330,8 @@ propertyTests = testGroup "properties"
       \(QC.ASCIIString k) ->
         let pairs = [("__reserved__", String "val")]
             key = T.pack k
-        in if T.null key || key == "__reserved__"
-          then True
-          else (pairs .:? key :: Either String (Maybe Text)) == Right Nothing
+        in (T.null key || key == "__reserved__")
+          || ((pairs .:? key :: Either String (Maybe Text)) == Right Nothing)
   ]
 
 --------------------------------------------------------------------------------

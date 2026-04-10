@@ -42,6 +42,7 @@ module Automation.BlogImage
   ) where
 
 import Control.Exception (SomeException, catch)
+import Control.Monad (when)
 import qualified Data.ByteString.Base64 as B64
 import qualified Data.ByteString.Lazy as LBS
 import Data.Char (isAlphaNum, isDigit, toLower)
@@ -1227,13 +1228,11 @@ safeIO action =
 syncAttachmentsDir :: FilePath -> FilePath -> IO ()
 syncAttachmentsDir srcDir dstDir = do
   srcExists <- doesDirectoryExist srcDir
-  if srcExists
-    then do
-      createDirectoryIfMissing True dstDir
-      entries <- listDirectory srcDir
-      let imageFiles = filter isImageFile entries
-      mapM_ (syncIfMissing srcDir dstDir) imageFiles
-    else pure ()
+  when srcExists $ do
+    createDirectoryIfMissing True dstDir
+    entries <- listDirectory srcDir
+    let imageFiles = filter isImageFile entries
+    mapM_ (syncIfMissing srcDir dstDir) imageFiles
 
 syncIfMissing :: FilePath -> FilePath -> FilePath -> IO ()
 syncIfMissing srcDir dstDir filename = do

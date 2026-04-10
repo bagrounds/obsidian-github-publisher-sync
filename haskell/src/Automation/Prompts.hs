@@ -127,9 +127,7 @@ assemblePost modelOutput rd =
       questionPart = if T.null question
         then []
         else [aiQuestionPrefix <> question, ""]
-      tagsPart = if T.null tags
-        then []
-        else [tags]
+      tagsPart = [tags | not (T.null tags)]
       urlPart = [unUrl (rdUrl rd)]
   in T.intercalate "\n" (titlePart <> questionPart <> tagsPart <> urlPart)
 

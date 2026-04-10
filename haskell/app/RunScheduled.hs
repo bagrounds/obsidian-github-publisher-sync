@@ -1,6 +1,7 @@
 module Main where
 
 import Control.Concurrent (threadDelay)
+import Control.Monad (when)
 import Control.Exception (SomeException, try)
 import Data.Char (isAsciiLower, isDigit)
 import Data.List.NonEmpty (NonEmpty ((:|)))
@@ -413,11 +414,8 @@ runBlogSeries context seriesId = do
       removeFile (seriesDir </> postToRegen)
     Nothing -> do
       existsForToday <- blogPostExistsForToday seriesDir todayText
-      if existsForToday
-        then do
-          logMsg $ "  ⏭️  Already generated for " <> todayText
-          pure ()
-        else pure ()
+      when existsForToday $
+        logMsg $ "  ⏭️  Already generated for " <> todayText
 
   -- Recheck after potential removal
   existsNow <- blogPostExistsForToday seriesDir todayText

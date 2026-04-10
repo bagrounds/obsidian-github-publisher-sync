@@ -33,6 +33,12 @@ Cache key structure (three-tier fallback):
 - `cabal update` — refreshes the Hackage package index
 - `cabal build all -j --ghc-options="-Werror"` — builds library, executables, and test suite in parallel with warnings treated as errors
 
+## Lint Step
+
+- `hlint src/ app/ test/` — runs HLint, the standard Haskell linter, against all source, executable, and test files
+- Any HLint hint (warning or suggestion) fails the build
+- HLint is installed via `apt-get` inside the container at CI time
+
 ## Test Step
 
 - `cabal test --test-show-details=direct` — runs the Tasty test suite with direct output

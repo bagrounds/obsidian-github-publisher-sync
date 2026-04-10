@@ -36,6 +36,7 @@ import Automation.Json (decode)
 import Automation.Reflection (selectMostRecentReflection)
 import Automation.Types (Secret (..), RelativePath, unRelativePath, mkRelativePath, Title, unTitle, mkTitle)
 import Control.Concurrent (threadDelay)
+import Control.Monad (when)
 import Data.Char (ord)
 import Data.IORef (IORef, modifyIORef', newIORef, readIORef)
 import Data.List (sortBy)
@@ -743,23 +744,21 @@ applyReplacements content candidates validations =
 updateFrontmatterFields :: FilePath -> [(Text, YamlValue)] -> IO ()
 updateFrontmatterFields filePath fields = do
   exists <- doesFileExist filePath
-  if exists
-    then do
-      raw <- TIO.readFile filePath
-      let ls = T.splitOn "\n" raw
-      case ls of
-        (first : rest)
-          | T.strip first == "---" ->
-              case break (\l -> T.strip l == "---") rest of
-                (_, []) -> pure ()
-                (fmLines, closingDash : bodyLines) ->
-                  let updatedFm = foldl' upsertField fmLines fields
-                  in TIO.writeFile filePath
-                       (T.intercalate "\n" (first : updatedFm <> [closingDash] <> bodyLines))
-        _ -> do
-          let entries = T.intercalate "\n" $ fmap (\(k, v) -> k <> ": " <> renderYamlValue v) fields
-          TIO.writeFile filePath ("---\n" <> entries <> "\n---\n" <> raw)
-    else pure ()
+  when exists $ do
+    raw <- TIO.readFile filePath
+    let ls = T.splitOn "\n" raw
+    case ls of
+      (first : rest)
+        | T.strip first == "---" ->
+            case break (\l -> T.strip l == "---") rest of
+              (_, []) -> pure ()
+              (fmLines, closingDash : bodyLines) ->
+                let updatedFm = foldl' upsertField fmLines fields
+                in TIO.writeFile filePath
+                     (T.intercalate "\n" (first : updatedFm <> [closingDash] <> bodyLines))
+      _ -> do
+        let entries = T.intercalate "\n" $ fmap (\(k, v) -> k <> ": " <> renderYamlValue v) fields
+        TIO.writeFile filePath ("---\n" <> entries <> "\n---\n" <> raw)
 
 upsertField :: [Text] -> (Text, YamlValue) -> [Text]
 upsertField ls (key, val) =

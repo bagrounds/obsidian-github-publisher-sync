@@ -7,6 +7,7 @@ module Automation.DailyUpdates
   , addUpdateLinksToReflection
   ) where
 
+import Control.Monad (when)
 import qualified Data.Map.Strict as Map
 import Data.Text (Text)
 import qualified Data.Text as T
@@ -172,9 +173,8 @@ addUpdateLinksToReflection reflectionsDir date links = do
     then pure ()
     else do
       result <- ensureDailyReflection reflectionsDir date
-      if errCreated result
-        then TIO.putStrLn ("  📝 Created daily reflection for " <> date)
-        else pure ()
+      when (errCreated result) $
+        TIO.putStrLn ("  📝 Created daily reflection for " <> date)
   fileContent <- TIO.readFile reflectionPath
   let updated = addUpdateLinks fileContent links
   if updated == fileContent

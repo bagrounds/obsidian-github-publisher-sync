@@ -33,6 +33,20 @@
 - 🏷️ Not flagged with `no_social: true` in frontmatter
 - 📝 Not an untitled reflection (reflection whose title matches the date)
 - 📐 Body content is at least 50 characters after stripping markup
+- 🖼️ Not awaiting an image backfill (see below)
+
+### 🖼️ Image Backfill Gate
+
+🔍 Before posting, each candidate note is checked for image readiness using the same logic as the image backfill pipeline.
+📂 A note is considered "awaiting image backfill" when all three conditions hold:
+- 📁 Its parent directory is one of the configured image backfill content directories (from `imageBackfillContentIds`)
+- 📄 Its filename passes `shouldHaveImage` (a markdown file not in the exclusion list)
+- 🚫 Its body does not contain an embedded image (checked via `hasEmbeddedImage`)
+
+✅ Notes that already have an image are posted normally.
+✅ Notes that would never receive an image (files in directories outside the backfill set, excluded files, or non-markdown files) are posted normally.
+⏭️ Notes awaiting an image are skipped, but BFS still follows their links to discover other postable content.
+📊 Since image backfill runs at twice the rate of social posting (2 images per hour vs 1 post per 2 hours), the queue of image-ready content grows faster than the posting queue.
 
 ### 🔗 URL Validation and Auto-Fix
 

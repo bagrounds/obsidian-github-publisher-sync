@@ -33,6 +33,7 @@ module Automation.SocialPosting
   , urlFromFilePath
   , validateNoteUrl
   , updateFrontmatterUrl
+  , isAwaitingImageBackfill
   ) where
 
 import Control.Concurrent.Async (mapConcurrently)
@@ -65,6 +66,8 @@ import System.Directory (doesFileExist)
 import System.FilePath (takeBaseName, takeDirectory, (</>))
 import Text.Regex.TDFA ((=~))
 
+import Automation.BlogImage (hasEmbeddedImage, shouldHaveImage)
+import Automation.BlogSeriesConfig (imageBackfillContentIds)
 import Automation.DailyUpdates (UpdateLink (..), addUpdateLinksToReflection)
 import Automation.EmbedSection
   ( buildBlueskySection
@@ -437,6 +440,19 @@ looksLikeDateTitle title =
   let t = T.strip title
   in (t :: Text) =~ ("^[0-9]{4}-[0-9]{2}-[0-9]{2}$" :: String)
 
+isAwaitingImageBackfill :: Text -> Text -> Bool
+isAwaitingImageBackfill relativePath body =
+  let segments = filter (not . T.null) (T.splitOn "/" relativePath)
+      directoryName = case segments of
+        (directory : _ : _) -> directory
+        _                   -> ""
+      filename = case segments of
+        [] -> ""
+        _  -> last segments
+  in elem directoryName imageBackfillContentIds
+       && shouldHaveImage filename
+       && not (hasEmbeddedImage body)
+
 --------------------------------------------------------------------------------
 -- Reflection eligibility
 --------------------------------------------------------------------------------
@@ -495,7 +511,9 @@ bfsLoop config state =
         Nothing -> bfsLoop config state'
         Just note -> do
           eligible <- checkBfsEligibility (unRelativePath (cnRelativePath note)) (fccPostingCutoff config)
-          mValidated <- case (isPostableContent note && eligible, fccPublicationChecker config) of
+          let awaitingImage = isAwaitingImageBackfill
+                (unRelativePath (cnRelativePath note)) (cnBody note)
+          mValidated <- case (isPostableContent note && eligible && not awaitingImage, fccPublicationChecker config) of
             (True, Just checker) -> validateNoteUrl checker note
             (True, Nothing)      -> pure (Just note)
             (False, _)           -> pure Nothing
@@ -554,7 +572,8 @@ discoverContentToPost config isPastPostingHour = do
             True -> do
               mNote <- readContentNote reflPath (fccContentDir config)
               case mNote of
-                Just note | isPostableContent note -> do
+                Just note | isPostableContent note
+                          , not (isAwaitingImageBackfill (unRelativePath (cnRelativePath note)) (cnBody note)) -> do
                   mValidated <- case fccPublicationChecker config of
                     Just checker -> validateNoteUrl checker note
                     Nothing      -> pure (Just note)

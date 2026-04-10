@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-04-09T18:08:51-07:00
+updated: 2026-04-09T18:34:38-07:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -56,18 +56,18 @@ updated: 2026-04-09T18:08:51-07:00
 - [⚖️🎮 Fair Play: A Game-Changing Solution for When You Have Too Much to Do (and More Life to Live)](./books/fair-play-a-game-changing-solution-for-when-you-have-too-much-to-do-and-more-life-to-live.md)  
   
   
-## [📺 Videos](./videos/index.md) (732)  
+## [📺 Videos](./videos/index.md) (733)  
+- [💰💻✅💡 How to Actually Make Money Online in 2026](./videos/how-to-actually-make-money-online-in-2026.md)  
 - [🏛️🗣️💬 Politics Chat, April 9, 2026](./videos/politics-chat-april-9-2026.md)  
+- [What Makes Some Brains More Focused Than Others? | Marvin Chun | TEDxKFAS](./videos/what-makes-some-brains-more-focused-than-others-marvin-chun-tedxkfas.md)  
 - [💰🌊🚧🏛️🪧🚨 Politics Chat, July 10, 2025](./videos/politics-chat-july-10-2025.md)  
-- [🤖🚀📈 Andrew Ng: Building Faster with AI](./videos/andrew-ng-building-faster-with-ai.md)  
-- [🏛️📉🇺🇸🔟 Schiff Takes To Senate Floor to Lay Out the Top 10 Ways Trump is Wrecking America](./videos/schiff-takes-to-senate-floor-to-lay-out-the-top-10-ways-trump-is-wrecking-america.md)  
   
   
 ## [🌌 Topics](./topics/index.md) (91)  
+- [🎯🧘 Focus](./topics/focus.md)  
 - [🤔📚 Philosophy](./topics/philosophy.md)  
 - [🌳🗺️🔗🏛️ Ontologies](./topics/ontologies.md)  
 - [🎨✏️ Graphic Design](./topics/graphic-design.md)  
-- [🧸🎶🧸 Nursery Rhymes](./topics/nursery-rhymes.md)  
   
   
 ## [📄  Articles](./articles/index.md) (84)  

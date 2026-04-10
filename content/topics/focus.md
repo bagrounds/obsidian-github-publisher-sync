@@ -16,7 +16,7 @@ updated: 2026-04-09T11:32:17
 ![topics-focus](../topics-focus.jpg)  
 ## Videos  
 - [What Makes Some Brains More Focused Than Others? | Marvin Chun | TEDxKFAS](../videos/what-makes-some-brains-more-focused-than-others-marvin-chun-tedxkfas.md)  
-- [A Simple Way to Learn Complex Skills](../videos/a-simple-way-to-learn-complex-skills.md)  
+- [👶🧩🧠➡️ A Simple Way to Learn Complex Skills](../videos/a-simple-way-to-learn-complex-skills.md)  
   
 ## 🦋 Bluesky    
 <blockquote class="bluesky-embed" data-bluesky-uri="https://bsky.app/profile/bagrounds.bsky.social/post/3mj2pjhfhrs2u" data-bluesky-embed-color-mode="system"><p lang="en">did:plc:i4yli6h7x2uoj7acxunww2fc</p>  

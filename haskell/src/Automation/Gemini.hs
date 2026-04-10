@@ -7,6 +7,7 @@ module Automation.Gemini
   , Response (..)
   , GenerationConfig (..)
   , Error (..)
+  , ApiStatus (..)
   , defaultModel
   , defaultQuestionModel
   , gemini3Flash
@@ -15,11 +16,12 @@ module Automation.Gemini
   , generateContent
   , generateContentWithFallback
   , defaultGenerationConfig
-  , renderError
   , isRateLimitError
   , isQuotaExhaustedError
   , parseResponseText
   , extractText
+  , parseApiStatus
+  , parseErrorBody
   ) where
 
 import Automation.Json (Value (..), ToValue (..), (.=), object, encode)
@@ -42,40 +44,76 @@ import Network.HTTP.Types.Status (statusCode)
 
 import qualified Data.ByteString.Lazy as LBS
 
+-- | Machine-readable API status from the Gemini error response.
+-- Parsed from the @error.status@ field documented at
+-- https://ai.google.dev/gemini-api/docs/troubleshooting
+data ApiStatus
+  = ResourceExhausted
+  | InvalidArgument
+  | PermissionDenied
+  | NotFound
+  | InternalError
+  | Unavailable
+  | DeadlineExceeded
+  | Unauthenticated
+  | FailedPrecondition
+  | UnknownStatus Text
+  deriving (Show, Eq)
+
+parseApiStatus :: Text -> ApiStatus
+parseApiStatus "RESOURCE_EXHAUSTED" = ResourceExhausted
+parseApiStatus "INVALID_ARGUMENT"   = InvalidArgument
+parseApiStatus "PERMISSION_DENIED"  = PermissionDenied
+parseApiStatus "NOT_FOUND"          = NotFound
+parseApiStatus "INTERNAL"           = InternalError
+parseApiStatus "UNAVAILABLE"        = Unavailable
+parseApiStatus "DEADLINE_EXCEEDED"  = DeadlineExceeded
+parseApiStatus "UNAUTHENTICATED"    = Unauthenticated
+parseApiStatus "FAILED_PRECONDITION" = FailedPrecondition
+parseApiStatus other                = UnknownStatus other
+
 -- | Domain-specific error type for Gemini API operations.
--- Replaces raw @Either Text@ with structured constructors that preserve
--- error context and enable typed pattern matching (e.g. rate-limit detection).
+-- Structured constructors preserve error context and enable typed pattern
+-- matching. The @HttpError@ constructor carries the parsed @ApiStatus@ from
+-- the official error response JSON, so rate-limit and quota detection use
+-- constructor matching rather than string inspection.
 data Error
   = JsonParseError
   | ExtractionError Text
-  | HttpError Int Text
-  | NoModelsProvided
+  | HttpError Int ApiStatus Text
   | AllModelsFailed Text Error
   deriving (Show, Eq)
 
-renderError :: Error -> Text
-renderError JsonParseError =
-  "Failed to parse Gemini response JSON"
-renderError (ExtractionError detail) =
-  "Gemini response extraction failed: " <> detail
-renderError (HttpError status body) =
-  "Gemini API returned status " <> T.pack (show status) <> ": " <> body
-renderError NoModelsProvided =
-  "No models provided for fallback"
-renderError (AllModelsFailed model innerError) =
-  "All models failed. Last error (" <> model <> "): " <> renderError innerError
+-- | Parse the structured error JSON returned by the Gemini API.
+-- The documented format is:
+-- @{ "error": { "code": 429, "status": "RESOURCE_EXHAUSTED", "message": "..." } }@
+-- Returns the parsed @ApiStatus@ and human-readable message, or a fallback
+-- @UnknownStatus@ with the raw body when parsing fails.
+parseErrorBody :: LBS.ByteString -> (ApiStatus, Text)
+parseErrorBody body =
+  let rawText = TE.decodeUtf8 (LBS.toStrict body)
+  in case Json.decode body of
+    Just (Object topLevel) ->
+      case lookup "error" topLevel of
+        Just (Object errObj) ->
+          let status = case lookup "status" errObj of
+                Just (String s) -> parseApiStatus s
+                _               -> UnknownStatus rawText
+              message = case lookup "message" errObj of
+                Just (String m) -> m
+                _               -> rawText
+          in (status, message)
+        _ -> (UnknownStatus rawText, rawText)
+    _ -> (UnknownStatus rawText, rawText)
 
 isRateLimitError :: Error -> Bool
-isRateLimitError (HttpError 429 _) = True
-isRateLimitError (HttpError _ body) =
-  T.isInfixOf "RESOURCE_EXHAUSTED" body || T.isInfixOf "quota" body
+isRateLimitError (HttpError _ ResourceExhausted _) = True
 isRateLimitError (AllModelsFailed _ inner) = isRateLimitError inner
 isRateLimitError _ = False
 
 isQuotaExhaustedError :: Error -> Bool
-isQuotaExhaustedError (HttpError _ body) =
-  T.isInfixOf "quota" body
-    && (T.isInfixOf "daily" body || T.isInfixOf "per day" body || T.isInfixOf "PerDay" body)
+isQuotaExhaustedError (HttpError _ ResourceExhausted message) =
+  T.isInfixOf "daily" message || T.isInfixOf "per day" message || T.isInfixOf "PerDay" message
 isQuotaExhaustedError (AllModelsFailed _ inner) = isQuotaExhaustedError inner
 isQuotaExhaustedError _ = False
 
@@ -188,12 +226,12 @@ generateContent manager req = do
           { grText  = T.strip text
           , grModel' = grModel req
           }
-    code -> pure $ Left $
-      HttpError code (TE.decodeUtf8 (LBS.toStrict $ responseBody response))
+    code ->
+      let (apiStatus, message) = parseErrorBody (responseBody response)
+      in pure $ Left $ HttpError code apiStatus message
 
-generateContentWithFallback :: Manager -> [Text] -> Text -> Secret -> GenerationConfig -> IO (Either Error Response)
-generateContentWithFallback _ [] _ _ _ = pure $ Left NoModelsProvided
-generateContentWithFallback manager (model : fallbacks) prompt apiKey config = do
+generateContentWithFallback :: Manager -> Text -> [Text] -> Text -> Secret -> GenerationConfig -> IO (Either Error Response)
+generateContentWithFallback manager model fallbacks prompt apiKey config = do
   result <- generateContent manager Request
     { grPrompt = prompt
     , grModel = model
@@ -204,6 +242,6 @@ generateContentWithFallback manager (model : fallbacks) prompt apiKey config = d
     Right resp -> pure $ Right resp
     Left err -> case fallbacks of
       [] -> pure $ Left $ AllModelsFailed model err
-      _  -> do
+      (next : rest) -> do
         putStrLn $ "⚠️ Model " <> T.unpack model <> " failed, trying next fallback..."
-        generateContentWithFallback manager fallbacks prompt apiKey config
+        generateContentWithFallback manager next rest prompt apiKey config

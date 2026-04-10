@@ -96,10 +96,16 @@ Delivered as a single vertical slice:
 **Goal**: Replace `Either Text` and silent failures with domain error ADTs, with tests for error paths.
 
 Each error migration delivered with test coverage:
-- [x] Define `Gemini.Error` ADT with typed constructors: `JsonParseError`, `ExtractionError Text`, `HttpError Int Text`, `NoModelsProvided`, `AllModelsFailed Text Error`. Add `renderError` for text conversion and `isRateLimitError`/`isQuotaExhaustedError` for typed error classification. Replace `Either Text` in `parseResponseText`, `extractText`, `generateContent`, `generateContentWithFallback`. Update all callers. Remove dead text-matching functions from InternalLinking.
+- [x] Define `Gemini.Error` ADT: `JsonParseError`, `ExtractionError Text`, `HttpError Int ApiStatus Text`, `AllModelsFailed Text Error`. Parse structured API error JSON (the `error.status` field from the official Gemini troubleshooting docs at https://ai.google.dev/gemini-api/docs/troubleshooting) into an `ApiStatus` ADT (`ResourceExhausted`, `InvalidArgument`, `PermissionDenied`, etc.) so rate-limit and quota detection use constructor matching, not string inspection. Changed `generateContentWithFallback` to take primary model + fallback list (eliminating `NoModelsProvided`). Callers use `show` for string representation — no `renderError` unwrapper.
 - [ ] Replace `Either Text` returns in platform modules (Twitter, Bluesky, Mastodon) with per-module `Error` ADTs. Test error propagation.
 - [ ] Replace silent empty-string returns (like `findBestMatch` returning `""`) with `Maybe` or `Either`. Test the Nothing/Left paths.
 - [ ] Replace `error` calls in non-startup code with `Either` returns. Test failure scenarios.
+
+**Learnings from the Gemini error migration:**
+1. **Ground detection in official docs**: Match error conditions on machine-readable fields from the API (like `error.status`), not on ad-hoc string patterns in the body. The Gemini API returns structured JSON with a `status` field — parse it into an ADT for reliable matching.
+2. **Dissolve impossible states at the type level**: Instead of adding an error constructor for "no models provided" and handling it at runtime, change the function signature to require a primary model (eliminating the empty-list case entirely).
+3. **Don't unwrap typed errors back to Text**: The `Show` instance preserves full structure. A custom `renderError :: Error -> Text` encourages callers to discard type information. Pattern-match on constructors for decisions; use `show` for display.
+4. **Parse external APIs at the boundary**: When the API returns structured error JSON, parse it immediately in `generateContent` into the typed `ApiStatus` ADT. Downstream code never sees raw response bodies.
 
 ### Next: Separate Data from Behavior in ImageProviderConfig + Tests
 

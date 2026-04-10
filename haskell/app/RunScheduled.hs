@@ -121,10 +121,13 @@ callGeminiForGenerator :: Context.AppContext -> [Text] -> (Text, Text) -> IO (Te
 callGeminiForGenerator context models (systemPrompt, userPrompt) = do
   let combinedPrompt = systemPrompt <> "\n\n" <> userPrompt
       config = Gemini.defaultGenerationConfig { Gemini.gcTemperature = 0.9, Gemini.gcMaxOutputTokens = 2048 }
-  result <- Gemini.generateContentWithFallback (Context.httpManager context) models combinedPrompt (Context.geminiApiKey context) config
-  case result of
-    Left err -> error $ "Gemini API error: " <> T.unpack (Gemini.renderError err)
-    Right resp -> pure (Gemini.grText resp, Gemini.grModel' resp)
+  case models of
+    (primary : fallbacks) -> do
+      result <- Gemini.generateContentWithFallback (Context.httpManager context) primary fallbacks combinedPrompt (Context.geminiApiKey context) config
+      case result of
+        Left err -> error $ "Gemini API error: " <> show err
+        Right resp -> pure (Gemini.grText resp, Gemini.grModel' resp)
+    [] -> error "No models provided for Gemini generation"
 
 -- ---------------------------------------------------------------------------
 -- Environment helpers
@@ -449,9 +452,12 @@ runBlogSeries context seriesId = do
           genConfig = Gemini.defaultGenerationConfig { Gemini.gcTemperature = 0.9, Gemini.gcMaxOutputTokens = 8192 }
 
       -- 6. Call Gemini
-      result <- Gemini.generateContentWithFallback manager models combinedPrompt apiKey genConfig
+      let (primary, fallbacks) = case models of
+            (p : fs) -> (p, fs)
+            []       -> error "Blog series model chain is empty"
+      result <- Gemini.generateContentWithFallback manager primary fallbacks combinedPrompt apiKey genConfig
       case result of
-        Left err -> error $ "Blog generation failed: " <> T.unpack (Gemini.renderError err)
+        Left err -> error $ "Blog generation failed: " <> show err
         Right resp -> do
           let rawText = stripCodeFences (Gemini.grText resp)
               usedModel = Gemini.grModel' resp

@@ -680,9 +680,9 @@ retryLoop manager apiKey model prompt attempt backoff = do
           threadDelay backoff
           retryLoop manager apiKey model prompt (attempt + 1) (min (backoff * 2) maxBackoffUs)
       | Gemini.isQuotaExhaustedError err ->
-          pure (Left ("QuotaExhausted: " <> Gemini.renderError err))
+          pure (Left ("QuotaExhausted: " <> T.pack (show err)))
       | otherwise ->
-          pure (Left (Gemini.renderError err))
+          pure (Left (T.pack (show err)))
 
 parseGeminiBookPaths :: Text -> Either Text [Text]
 parseGeminiBookPaths raw =

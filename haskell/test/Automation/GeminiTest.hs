@@ -12,13 +12,48 @@ import qualified Automation.Gemini as Gemini
 
 tests :: TestTree
 tests = testGroup "Gemini"
-  [ errorConstructorTests
-  , renderErrorTests
+  [ apiStatusTests
+  , errorConstructorTests
+  , showErrorTests
   , isRateLimitErrorTests
   , isQuotaExhaustedErrorTests
+  , parseErrorBodyTests
   , parseResponseTextTests
   , extractTextTests
-  , renderErrorPropertyTests
+  , propertyTests
+  ]
+
+apiStatusTests :: TestTree
+apiStatusTests = testGroup "ApiStatus"
+  [ testCase "RESOURCE_EXHAUSTED parses to ResourceExhausted" $
+      Gemini.parseApiStatus "RESOURCE_EXHAUSTED" @?= Gemini.ResourceExhausted
+
+  , testCase "INVALID_ARGUMENT parses to InvalidArgument" $
+      Gemini.parseApiStatus "INVALID_ARGUMENT" @?= Gemini.InvalidArgument
+
+  , testCase "PERMISSION_DENIED parses to PermissionDenied" $
+      Gemini.parseApiStatus "PERMISSION_DENIED" @?= Gemini.PermissionDenied
+
+  , testCase "NOT_FOUND parses to NotFound" $
+      Gemini.parseApiStatus "NOT_FOUND" @?= Gemini.NotFound
+
+  , testCase "INTERNAL parses to InternalError" $
+      Gemini.parseApiStatus "INTERNAL" @?= Gemini.InternalError
+
+  , testCase "UNAVAILABLE parses to Unavailable" $
+      Gemini.parseApiStatus "UNAVAILABLE" @?= Gemini.Unavailable
+
+  , testCase "DEADLINE_EXCEEDED parses to DeadlineExceeded" $
+      Gemini.parseApiStatus "DEADLINE_EXCEEDED" @?= Gemini.DeadlineExceeded
+
+  , testCase "UNAUTHENTICATED parses to Unauthenticated" $
+      Gemini.parseApiStatus "UNAUTHENTICATED" @?= Gemini.Unauthenticated
+
+  , testCase "FAILED_PRECONDITION parses to FailedPrecondition" $
+      Gemini.parseApiStatus "FAILED_PRECONDITION" @?= Gemini.FailedPrecondition
+
+  , testCase "unknown status preserves original text" $
+      Gemini.parseApiStatus "SOMETHING_NEW" @?= Gemini.UnknownStatus "SOMETHING_NEW"
   ]
 
 errorConstructorTests :: TestTree
@@ -33,86 +68,74 @@ errorConstructorTests = testGroup "Error constructors"
       assertBool "different details should differ"
         (Gemini.ExtractionError "no text" /= Gemini.ExtractionError "no parts")
 
-  , testCase "HttpError equality" $
-      Gemini.HttpError 429 "rate limited" @?= Gemini.HttpError 429 "rate limited"
+  , testCase "HttpError with ApiStatus equality" $
+      Gemini.HttpError 429 Gemini.ResourceExhausted "rate limited"
+        @?= Gemini.HttpError 429 Gemini.ResourceExhausted "rate limited"
 
   , testCase "HttpError inequality on status" $
       assertBool "different statuses should differ"
-        (Gemini.HttpError 429 "body" /= Gemini.HttpError 500 "body")
+        (Gemini.HttpError 429 Gemini.ResourceExhausted "body"
+          /= Gemini.HttpError 500 Gemini.InternalError "body")
 
-  , testCase "NoModelsProvided equality" $
-      Gemini.NoModelsProvided @?= Gemini.NoModelsProvided
+  , testCase "HttpError inequality on ApiStatus" $
+      assertBool "different API statuses should differ"
+        (Gemini.HttpError 429 Gemini.ResourceExhausted "body"
+          /= Gemini.HttpError 429 (Gemini.UnknownStatus "OTHER") "body")
 
   , testCase "AllModelsFailed equality" $
       Gemini.AllModelsFailed "model" Gemini.JsonParseError
         @?= Gemini.AllModelsFailed "model" Gemini.JsonParseError
 
   , testCase "AllModelsFailed nested" $
-      let inner = Gemini.HttpError 500 "server error"
+      let inner = Gemini.HttpError 500 Gemini.InternalError "server error"
           outer = Gemini.AllModelsFailed "gemini-flash" inner
-      in outer @?= Gemini.AllModelsFailed "gemini-flash" (Gemini.HttpError 500 "server error")
+      in outer @?= Gemini.AllModelsFailed "gemini-flash"
+           (Gemini.HttpError 500 Gemini.InternalError "server error")
+  ]
 
-  , testCase "Show instance for JsonParseError" $
+showErrorTests :: TestTree
+showErrorTests = testGroup "Show"
+  [ testCase "Show JsonParseError is non-empty" $
       assertBool "Show should produce non-empty string"
         (not (null (show Gemini.JsonParseError)))
 
-  , testCase "Show instance for nested AllModelsFailed" $
+  , testCase "Show nested AllModelsFailed contains model name" $
       let err = Gemini.AllModelsFailed "testmodel" (Gemini.ExtractionError "detail")
       in assertBool "Show should contain model name"
            ("testmodel" `isInfixOf` show err)
-  ]
 
-renderErrorTests :: TestTree
-renderErrorTests = testGroup "renderError"
-  [ testCase "JsonParseError renders descriptive message" $
-      Gemini.renderError Gemini.JsonParseError
-        @?= "Failed to parse Gemini response JSON"
+  , testCase "Show HttpError contains ApiStatus constructor" $
+      let err = Gemini.HttpError 429 Gemini.ResourceExhausted "message"
+      in assertBool "Show should contain ResourceExhausted"
+           ("ResourceExhausted" `isInfixOf` show err)
 
-  , testCase "ExtractionError includes detail" $
-      Gemini.renderError (Gemini.ExtractionError "no text in part")
-        @?= "Gemini response extraction failed: no text in part"
+  , testCase "Show HttpError contains status code" $
+      let err = Gemini.HttpError 429 Gemini.ResourceExhausted "message"
+      in assertBool "Show should contain status code"
+           ("429" `isInfixOf` show err)
 
-  , testCase "HttpError includes status and body" $ do
-      let rendered = Gemini.renderError (Gemini.HttpError 429 "quota exceeded")
-      assertBool "should contain status code" (T.isInfixOf "429" rendered)
-      assertBool "should contain body" (T.isInfixOf "quota exceeded" rendered)
-
-  , testCase "NoModelsProvided renders descriptive message" $
-      Gemini.renderError Gemini.NoModelsProvided
-        @?= "No models provided for fallback"
-
-  , testCase "AllModelsFailed includes model and inner error" $ do
-      let inner = Gemini.HttpError 500 "internal"
-          rendered = Gemini.renderError (Gemini.AllModelsFailed "gemini-flash" inner)
-      assertBool "should contain model name" (T.isInfixOf "gemini-flash" rendered)
-      assertBool "should contain inner error" (T.isInfixOf "500" rendered)
-      assertBool "should contain inner body" (T.isInfixOf "internal" rendered)
-
-  , testCase "AllModelsFailed with nested AllModelsFailed" $ do
-      let deepInner = Gemini.JsonParseError
-          inner = Gemini.AllModelsFailed "model-b" deepInner
-          outer = Gemini.AllModelsFailed "model-a" inner
-          rendered = Gemini.renderError outer
-      assertBool "should contain outer model" (T.isInfixOf "model-a" rendered)
-      assertBool "should contain inner model" (T.isInfixOf "model-b" rendered)
+  , testCase "Show HttpError contains message" $
+      let err = Gemini.HttpError 429 Gemini.ResourceExhausted "rate limit exceeded"
+      in assertBool "Show should contain message"
+           ("rate limit exceeded" `isInfixOf` show err)
   ]
 
 isRateLimitErrorTests :: TestTree
 isRateLimitErrorTests = testGroup "isRateLimitError"
-  [ testCase "HttpError 429 is rate limit" $
-      Gemini.isRateLimitError (Gemini.HttpError 429 "Too Many Requests")
+  [ testCase "HttpError with ResourceExhausted is rate limit" $
+      Gemini.isRateLimitError (Gemini.HttpError 429 Gemini.ResourceExhausted "Too Many Requests")
         @?= True
 
-  , testCase "HttpError with RESOURCE_EXHAUSTED is rate limit" $
-      Gemini.isRateLimitError (Gemini.HttpError 403 "RESOURCE_EXHAUSTED")
+  , testCase "HttpError 403 with ResourceExhausted is rate limit" $
+      Gemini.isRateLimitError (Gemini.HttpError 403 Gemini.ResourceExhausted "quota exceeded")
         @?= True
 
-  , testCase "HttpError with quota in body is rate limit" $
-      Gemini.isRateLimitError (Gemini.HttpError 403 "quota limit reached")
-        @?= True
+  , testCase "HttpError 500 with InternalError is not rate limit" $
+      Gemini.isRateLimitError (Gemini.HttpError 500 Gemini.InternalError "Internal Server Error")
+        @?= False
 
-  , testCase "HttpError 500 without rate limit text is not rate limit" $
-      Gemini.isRateLimitError (Gemini.HttpError 500 "Internal Server Error")
+  , testCase "HttpError 429 with UnknownStatus is not rate limit" $
+      Gemini.isRateLimitError (Gemini.HttpError 429 (Gemini.UnknownStatus "WEIRD") "body")
         @?= False
 
   , testCase "JsonParseError is not rate limit" $
@@ -123,12 +146,9 @@ isRateLimitErrorTests = testGroup "isRateLimitError"
       Gemini.isRateLimitError (Gemini.ExtractionError "no text")
         @?= False
 
-  , testCase "NoModelsProvided is not rate limit" $
-      Gemini.isRateLimitError Gemini.NoModelsProvided
-        @?= False
-
-  , testCase "AllModelsFailed wrapping rate limit is rate limit" $
-      Gemini.isRateLimitError (Gemini.AllModelsFailed "model" (Gemini.HttpError 429 "limit"))
+  , testCase "AllModelsFailed wrapping ResourceExhausted is rate limit" $
+      Gemini.isRateLimitError
+        (Gemini.AllModelsFailed "model" (Gemini.HttpError 429 Gemini.ResourceExhausted "limit"))
         @?= True
 
   , testCase "AllModelsFailed wrapping non-rate-limit is not rate limit" $
@@ -138,24 +158,28 @@ isRateLimitErrorTests = testGroup "isRateLimitError"
 
 isQuotaExhaustedErrorTests :: TestTree
 isQuotaExhaustedErrorTests = testGroup "isQuotaExhaustedError"
-  [ testCase "HttpError with daily quota text is quota exhausted" $
-      Gemini.isQuotaExhaustedError (Gemini.HttpError 429 "quota daily limit exceeded")
+  [ testCase "ResourceExhausted with daily message is quota exhausted" $
+      Gemini.isQuotaExhaustedError
+        (Gemini.HttpError 429 Gemini.ResourceExhausted "Quota exceeded: daily limit reached")
         @?= True
 
-  , testCase "HttpError with per day quota text is quota exhausted" $
-      Gemini.isQuotaExhaustedError (Gemini.HttpError 429 "quota per day exceeded")
+  , testCase "ResourceExhausted with per day message is quota exhausted" $
+      Gemini.isQuotaExhaustedError
+        (Gemini.HttpError 429 Gemini.ResourceExhausted "per day quota exceeded")
         @?= True
 
-  , testCase "HttpError with PerDay quota text is quota exhausted" $
-      Gemini.isQuotaExhaustedError (Gemini.HttpError 429 "quota PerDay exceeded")
+  , testCase "ResourceExhausted with PerDay message is quota exhausted" $
+      Gemini.isQuotaExhaustedError
+        (Gemini.HttpError 429 Gemini.ResourceExhausted "GenerateContent PerDay limit exceeded")
         @?= True
 
-  , testCase "HttpError with only quota (no daily) is not quota exhausted" $
-      Gemini.isQuotaExhaustedError (Gemini.HttpError 429 "quota rate limit")
+  , testCase "ResourceExhausted without daily indicator is not quota exhausted" $
+      Gemini.isQuotaExhaustedError
+        (Gemini.HttpError 429 Gemini.ResourceExhausted "rate limit exceeded")
         @?= False
 
-  , testCase "HttpError without quota text is not quota exhausted" $
-      Gemini.isQuotaExhaustedError (Gemini.HttpError 429 "Too Many Requests")
+  , testCase "InternalError is not quota exhausted" $
+      Gemini.isQuotaExhaustedError (Gemini.HttpError 500 Gemini.InternalError "server error")
         @?= False
 
   , testCase "JsonParseError is not quota exhausted" $
@@ -164,8 +188,48 @@ isQuotaExhaustedErrorTests = testGroup "isQuotaExhaustedError"
 
   , testCase "AllModelsFailed wrapping quota exhausted is quota exhausted" $
       Gemini.isQuotaExhaustedError
-        (Gemini.AllModelsFailed "model" (Gemini.HttpError 429 "quota daily exceeded"))
+        (Gemini.AllModelsFailed "model"
+          (Gemini.HttpError 429 Gemini.ResourceExhausted "daily quota exceeded"))
         @?= True
+  ]
+
+parseErrorBodyTests :: TestTree
+parseErrorBodyTests = testGroup "parseErrorBody"
+  [ testCase "parses structured Gemini error JSON" $
+      let body = "{\"error\":{\"code\":429,\"status\":\"RESOURCE_EXHAUSTED\",\"message\":\"Rate limit exceeded\"}}"
+          (status, message) = Gemini.parseErrorBody body
+      in do
+        status @?= Gemini.ResourceExhausted
+        message @?= "Rate limit exceeded"
+
+  , testCase "parses INVALID_ARGUMENT error" $
+      let body = "{\"error\":{\"code\":400,\"status\":\"INVALID_ARGUMENT\",\"message\":\"Bad request\"}}"
+          (status, message) = Gemini.parseErrorBody body
+      in do
+        status @?= Gemini.InvalidArgument
+        message @?= "Bad request"
+
+  , testCase "falls back to UnknownStatus for non-JSON" $
+      let (status, _) = Gemini.parseErrorBody "not json"
+      in case status of
+        Gemini.UnknownStatus _ -> pure ()
+        other -> assertBool ("expected UnknownStatus, got " <> show other) False
+
+  , testCase "falls back to UnknownStatus for missing error field" $
+      let (status, _) = Gemini.parseErrorBody "{\"other\":\"value\"}"
+      in case status of
+        Gemini.UnknownStatus _ -> pure ()
+        other -> assertBool ("expected UnknownStatus, got " <> show other) False
+
+  , testCase "falls back to UnknownStatus for missing status field" $
+      let (status, _) = Gemini.parseErrorBody "{\"error\":{\"code\":500,\"message\":\"oops\"}}"
+      in case status of
+        Gemini.UnknownStatus _ -> pure ()
+        other -> assertBool ("expected UnknownStatus, got " <> show other) False
+
+  , testCase "extracts message when status is missing" $
+      let (_, message) = Gemini.parseErrorBody "{\"error\":{\"code\":500,\"message\":\"server broke\"}}"
+      in message @?= "server broke"
   ]
 
 parseResponseTextTests :: TestTree
@@ -239,29 +303,29 @@ extractTextTests = testGroup "extractText"
         @?= Right "extracted"
   ]
 
-renderErrorPropertyTests :: TestTree
-renderErrorPropertyTests = testGroup "properties"
-  [ testProperty "renderError always produces non-empty text" $
+propertyTests :: TestTree
+propertyTests = testGroup "properties"
+  [ testProperty "show always produces non-empty string" $
       QC.forAll genError $ \err ->
-        not (T.null (Gemini.renderError err))
+        not (null (show err))
 
-  , testProperty "HttpError 429 is always a rate limit error" $
-      QC.forAll (QC.arbitrary :: QC.Gen String) $ \body ->
-        Gemini.isRateLimitError (Gemini.HttpError 429 (T.pack body))
+  , testProperty "HttpError with ResourceExhausted is always rate limited" $
+      QC.forAll (T.pack <$> (QC.arbitrary :: QC.Gen String)) $ \message ->
+        Gemini.isRateLimitError (Gemini.HttpError 429 Gemini.ResourceExhausted message)
 
   , testProperty "JsonParseError is never a rate limit error" $
       not (Gemini.isRateLimitError Gemini.JsonParseError)
 
-  , testProperty "NoModelsProvided is never a rate limit error" $
-      not (Gemini.isRateLimitError Gemini.NoModelsProvided)
+  , testProperty "all known ApiStatus values round-trip through parseApiStatus" $
+      QC.forAll genKnownStatus $ \(statusText, expected) ->
+        Gemini.parseApiStatus statusText == expected
   ]
 
 genError :: QC.Gen Gemini.Error
 genError = QC.oneof
   [ pure Gemini.JsonParseError
   , Gemini.ExtractionError . T.pack <$> QC.listOf1 QC.arbitraryASCIIChar
-  , Gemini.HttpError <$> QC.elements [400, 401, 403, 429, 500, 503] <*> (T.pack <$> QC.arbitrary)
-  , pure Gemini.NoModelsProvided
+  , Gemini.HttpError <$> QC.elements [400, 401, 403, 429, 500, 503] <*> genApiStatus <*> (T.pack <$> QC.arbitrary)
   , Gemini.AllModelsFailed . T.pack <$> QC.listOf1 QC.arbitraryASCIIChar <*> genLeafError
   ]
 
@@ -269,6 +333,32 @@ genLeafError :: QC.Gen Gemini.Error
 genLeafError = QC.oneof
   [ pure Gemini.JsonParseError
   , Gemini.ExtractionError . T.pack <$> QC.listOf1 QC.arbitraryASCIIChar
-  , Gemini.HttpError <$> QC.elements [400, 401, 403, 429, 500, 503] <*> (T.pack <$> QC.arbitrary)
-  , pure Gemini.NoModelsProvided
+  , Gemini.HttpError <$> QC.elements [400, 401, 403, 429, 500, 503] <*> genApiStatus <*> (T.pack <$> QC.arbitrary)
+  ]
+
+genApiStatus :: QC.Gen Gemini.ApiStatus
+genApiStatus = QC.oneof
+  [ pure Gemini.ResourceExhausted
+  , pure Gemini.InvalidArgument
+  , pure Gemini.PermissionDenied
+  , pure Gemini.NotFound
+  , pure Gemini.InternalError
+  , pure Gemini.Unavailable
+  , pure Gemini.DeadlineExceeded
+  , pure Gemini.Unauthenticated
+  , pure Gemini.FailedPrecondition
+  , Gemini.UnknownStatus . T.pack <$> QC.listOf1 QC.arbitraryASCIIChar
+  ]
+
+genKnownStatus :: QC.Gen (T.Text, Gemini.ApiStatus)
+genKnownStatus = QC.elements
+  [ ("RESOURCE_EXHAUSTED", Gemini.ResourceExhausted)
+  , ("INVALID_ARGUMENT", Gemini.InvalidArgument)
+  , ("PERMISSION_DENIED", Gemini.PermissionDenied)
+  , ("NOT_FOUND", Gemini.NotFound)
+  , ("INTERNAL", Gemini.InternalError)
+  , ("UNAVAILABLE", Gemini.Unavailable)
+  , ("DEADLINE_EXCEEDED", Gemini.DeadlineExceeded)
+  , ("UNAUTHENTICATED", Gemini.Unauthenticated)
+  , ("FAILED_PRECONDITION", Gemini.FailedPrecondition)
   ]

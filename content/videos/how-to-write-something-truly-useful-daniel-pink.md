@@ -9,6 +9,9 @@ Platform:
 Channel: David Perell
 tags:
 youtube: https://youtu.be/gCNNwjyQQIA
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_time: 2026-04-10T00:00:00Z
+force_analyze_links: false
 ---
 [Home](../index.md) > [Videos](./index.md)  
 # ✍️💡🚀 How to Write Something Truly Useful - Daniel Pink  
@@ -66,7 +69,7 @@ youtube: https://youtu.be/gCNNwjyQQIA
   
 ## 🤔 Evaluation  
   
-⚖️ Daniel Pink emphasizes a highly structured, word-count-driven approach to non-fiction. This aligns with advice from other prolific authors like Stephen King in his book On Writing, published by Scribner, who advocates for a disciplined daily routine. However, writers like Anne Lamott in [🐦🕊️ Bird by Bird: Some Instructions on Writing and Life](../books/bird-by-bird.md), published by Anchor, place more emphasis on the emotional and messy psychological state of the writer, suggesting that rigid engineering mindsets might stifle some creative temperaments.  
+⚖️ Daniel Pink emphasizes a highly structured, word-count-driven approach to non-fiction. This aligns with advice from other prolific authors like Stephen King in his book [📜 On Writing: A Memoir of the Craft](../books/on-writing.md), published by Scribner, who advocates for a disciplined daily routine. However, writers like Anne Lamott in [🐦🕊️ Bird by Bird: Some Instructions on Writing and Life](../books/bird-by-bird.md), published by Anchor, place more emphasis on the emotional and messy psychological state of the writer, suggesting that rigid engineering mindsets might stifle some creative temperaments.  
   
 🔍 To better understand these concepts, one might explore:  
   

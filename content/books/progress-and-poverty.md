@@ -6,6 +6,9 @@ URL: https://bagrounds.org/books/progress-and-poverty
 share: true
 CTA: 💡 Advance toward prosperity.
 affiliate link: https://amzn.to/3KXhOw8
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_time: 2026-04-09T00:00:00Z
+force_analyze_links: false
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 📈📉 Progress and Poverty  
@@ -75,7 +78,7 @@ affiliate link: https://amzn.to/3KXhOw8
 ### 🔄 Contrasting  
 * 📖 Das Kapital by Karl Marx  
 * 📖 The Wealth of Nations by Adam Smith  
-* 📖 The Natural Economic Order through Free Land and Free Money by Silvio Gesell  
+* 📖 [🌿⚙️ The Natural Economic Order](./the-natural-economic-order.md) through Free Land and Free Money by Silvio Gesell  
   
 ### 🔗 Related  
 * [🏛️💰 Debt: The First 5,000 Years](./debt-the-first-5000-years.md) by David Graeber  

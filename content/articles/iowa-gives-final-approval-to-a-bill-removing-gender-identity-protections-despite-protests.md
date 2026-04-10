@@ -6,6 +6,9 @@ title: 🏳️‍⚧️🚫🗣️ Iowa gives final approval to a bill removing 
 URL: https://bagrounds.org/articles/iowa-gives-final-approval-to-a-bill-removing-gender-identity-protections-despite-protests
 Author:
 tags:
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_time: 2026-04-10T00:00:00Z
+force_analyze_links: false
 ---
 [Home](../index.md) > [Articles](./index.md)  
 # 🏳️‍⚧️🚫🗣️ Iowa gives final approval to a bill removing gender identity protections despite protests  
@@ -170,7 +173,7 @@ Below is a list of high-quality books, resources, and thought leaders for furthe
 ---  
   
 #### Recommended Books  
-- **Transgender History** by Susan Stryker    
+- **[🏳️‍⚧️📜🌱✊ Transgender History: The Roots of Today's Revolution](../books/transgender-history.md)** by Susan Stryker    
   An accessible yet comprehensive account of transgender movements in the United States, widely cited in academic and activist circles.  
   
 - **Whipping Girl: A Transsexual Woman on Sexism and the Scapegoating of Femininity** by Julia Serano  

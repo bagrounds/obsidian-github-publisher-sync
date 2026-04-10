@@ -7,9 +7,13 @@ URL: https://bagrounds.org/topics/the-star
 link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-07T00:00:00Z
 force_analyze_links: false
+image_date: 2026-04-10T12:22:35Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A whimsical, night-time scene featuring a young child sitting on a plush, dark blue velvet rug near a large, arched window. The child is wrapped in a cozy, cream-colored blanket, gazing upward with wide-eyed wonder. Outside the window, the vast, deep indigo night sky is filled with glowing, soft-focus stars. One prominent, brilliant star shines brighter than the rest, shimmering with ethereal, diamond-like facets that cast a gentle, warm glow onto the child’s face. Wisps of soft, silvery moonlight drift through the glass, and a pair of sheer, flowing curtains are pulled slightly to the side. The overall aesthetic is magical and serene, rendered in a soft, painterly digital art style with deep blues, purples, and radiant golden highlights.
 ---
 [Home](../index.md) > [Topics](./index.md) > [🧸🎶🧸 Nursery Rhymes](./nursery-rhymes.md)  
 # [⭐✨🌟💫 The Star](https://www.poetryfoundation.org/poems/45316/the-star-56d224c697fbe)  
+![topics-the-star](../topics-the-star.jpg)  
 - By Jane Taylor (1783–1824)  
 - First published in 1806 in the collection Rhymes for the Nursery, co-authored with her sister, Ann Taylor.  
 ## 🎶 Lyrics  

@@ -7,9 +7,13 @@ URL: https://www.codingame.com
 link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-03T00:00:00Z
 force_analyze_links: false
+image_date: 2026-04-10T18:22:32Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A vibrant, isometric digital landscape where a sleek, glowing keyboard floats in the center, integrated into a sprawling neon-lit grid. From the keys, streams of luminous binary code flow upward, transforming into 3D geometric shapes—cubes, pyramids, and spheres—that assemble themselves into a complex, glowing puzzle structure. In the background, soft-focus silhouettes of stylized avatars and floating game controllers suggest a multiplayer battle arena. The color palette features deep space blues and purples contrasted with electric cyan and magenta highlights, evoking a high-tech, futuristic cyber-gym atmosphere. The lighting is crisp and volumetric, emphasizing the sleek, modern aesthetic of an advanced coding environment.
 ---
 [Home](../index.md) > [Software](./index.md)  
 # 💻🎮🕹️🧠 CodinGame  
+![software-codingame](../software-codingame.jpg)  
 ### 🎮 CodinGame Report 🚀  
   
 #### 👉 What Is It? (What Kind Of Thing Is It? Does It Belong To A Broader Class Of Things? If It's An Acronym, What Does It Stand For?)  

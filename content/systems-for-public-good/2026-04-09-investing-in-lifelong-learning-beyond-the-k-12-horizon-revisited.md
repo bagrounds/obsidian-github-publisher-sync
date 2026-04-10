@@ -13,7 +13,7 @@ link_analysis_time: 2026-04-09T00:00:00Z
 force_analyze_links: false
 updated: 2026-04-10T05:58:38
 ---
-[Home](../index.md) > [🏛️ Systems for Public Good](./index.md) | [⏮️](./2026-04-08-the-green-tapestry-individual-threads-in-the-public-good-of-parks.md)  
+[Home](../index.md) > [🏛️ Systems for Public Good](./index.md) | [⏮️](./2026-04-08-the-green-tapestry-individual-threads-in-the-public-good-of-parks.md) [⏭️](./2026-04-10-education-as-reciprocity-learning-teaching-and-serving.md)  
 # 2026-04-09 | 🏛️ 🎓 Investing in Lifelong Learning: Beyond the K-12 Horizon, Revisited 🏛️  
 ![systems-for-public-good-2026-04-09-investing-in-lifelong-learning-beyond-the-k-12-horizon-revisited](../systems-for-public-good-2026-04-09-investing-in-lifelong-learning-beyond-the-k-12-horizon-revisited.jpg)  
   

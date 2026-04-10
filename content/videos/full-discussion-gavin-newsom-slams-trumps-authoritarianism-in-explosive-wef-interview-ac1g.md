@@ -9,6 +9,9 @@ Platform:
 Channel: DRM News
 tags:
 youtube: https://youtu.be/MfDK84LKHjA
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_time: 2026-04-10T00:00:00Z
+force_analyze_links: false
 ---
 [Home](../index.md) > [Videos](./index.md)  
 # 🗣️⚔️🏛️ FULL DISCUSSION: Gavin Newsom Slams Trump’s Authoritarianism in Explosive WEF Interview | AC1G  
@@ -55,7 +58,7 @@ youtube: https://youtu.be/MfDK84LKHjA
 ### 🆚 Contrasting  
   
 * 🐘 The Case for Trump by Victor Davis Hanson from the Hoover Institution argues that Trump’s disruption of the political establishment was a necessary correction for the American working class.  
-* 💼 The Conservative Sensibility by George F. Will through Hachette Book Group details a vision of limited government and judicial restraint that opposes the progressive interventionism championed by Newsom.  
+* 💼 [🐘🧠 The Conservative Sensibility by George F. Will](../books/the-conservative-sensibility.md) through Hachette Book Group details a vision of limited government and judicial restraint that opposes the progressive interventionism championed by Newsom.  
   
 ### 🎨 Creatively Related  
   

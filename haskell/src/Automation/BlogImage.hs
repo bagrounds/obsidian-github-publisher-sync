@@ -1005,10 +1005,9 @@ handleRegeneration :: FilePath -> FilePath -> Text -> IO Text
 handleRegeneration notePath _attachmentsDir content =
   if shouldRegenerateImage content
     then do
-      let (cleaned, _mOldImage) = removeImageEmbed content
+      let (cleaned, _) = removeImageEmbed content
           updated = updateFrontmatterFields cleaned
             [("regenerate_image", YamlBool False), ("image_prompt", YamlText "")]
-      pure ()
       TIO.writeFile notePath updated
       pure updated
     else pure content

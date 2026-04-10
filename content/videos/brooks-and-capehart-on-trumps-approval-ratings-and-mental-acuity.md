@@ -9,6 +9,9 @@ Platform:
 Channel: PBS NewsHour
 tags:
 youtube: https://youtu.be/6jyoTr-M8Ak
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_time: 2026-04-09T00:00:00Z
+force_analyze_links: false
 ---
 [Home](../index.md) > [Videos](./index.md)  
 # 📣📊🧠 Brooks and Capehart on Trump's approval ratings and mental acuity  
@@ -63,5 +66,5 @@ youtube: https://youtu.be/6jyoTr-M8Ak
   
 ### 🎨 Creatively Related  
   
-* 🏛️ The Power Broker by Robert Caro. 📖 A study of how 🏗️ building projects and 🏷️ naming rights are used to 🔨 wield political power.  
+* 🏛️ [👑🏙️ The Power Broker](../books/the-power-broker.md) by Robert Caro. 📖 A study of how 🏗️ building projects and 🏷️ naming rights are used to 🔨 wield political power.  
 * 🎭 The Presentation of Self in Everyday Life by Erving Goffman. 📖 Analyzes how 👤 leaders 🎭 perform for their 👥 audience to 🧲 maintain 🏛️ authority.

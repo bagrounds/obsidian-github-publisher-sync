@@ -22,13 +22,7 @@ import System.FilePath ((</>), takeBaseName)
 import qualified Automation.Platforms.Bluesky as Bluesky
 import qualified Automation.Platforms.Mastodon as Mastodon
 import qualified Automation.Platforms.Twitter as Twitter
-import Automation.Types
-  ( ReflectionData (..)
-  , Title
-  , mkTitle
-  , Url
-  , mkUrl
-  )
+import Automation.Types (ReflectionData (..), mkTitle, mkUrl)
 
 parseFrontmatter :: Text -> (Map Text Text, Text)
 parseFrontmatter content =
@@ -133,18 +127,27 @@ readReflection date contentDir = do
     then do
       content <- TIO.readFile filePath
       let (fm, body) = parseFrontmatter content
-          sections = detectSections content
-          (hasTweet, hasBluesky, hasMastodon) = sections
-      pure $ Just ReflectionData
-        { rdDate = date
-        , rdTitle = validatedTitle (fromMaybe date (Map.lookup "title" fm))
-        , rdUrl = validatedUrl (fromMaybe ("https://bagrounds.org/reflections/" <> date) (Map.lookup "URL" fm))
-        , rdBody = body
-        , rdFilePath = T.pack filePath
-        , rdHasTweetSection = hasTweet
-        , rdHasBlueskySection = hasBluesky
-        , rdHasMastodonSection = hasMastodon
-        }
+          (hasTweet, hasBluesky, hasMastodon) = detectSections content
+          titleText = fromMaybe date (Map.lookup "title" fm)
+          urlText = fromMaybe ("https://bagrounds.org/reflections/" <> date) (Map.lookup "URL" fm)
+          validated = do
+            title <- mkTitle titleText
+            url <- mkUrl urlText
+            pure ReflectionData
+              { rdDate = date
+              , rdTitle = title
+              , rdUrl = url
+              , rdBody = body
+              , rdFilePath = T.pack filePath
+              , rdHasTweetSection = hasTweet
+              , rdHasBlueskySection = hasBluesky
+              , rdHasMastodonSection = hasMastodon
+              }
+      case validated of
+        Right reflection -> pure (Just reflection)
+        Left reason -> do
+          putStrLn $ "  ⚠️  Skipping " <> filePath <> ": " <> T.unpack reason
+          pure Nothing
     else pure Nothing
 
 readNote :: Text -> FilePath -> IO (Maybe ReflectionData)
@@ -157,20 +160,25 @@ readNote relativePath contentDir = do
       let (fm, body) = parseFrontmatter content
           (hasTweet, hasBluesky, hasMastodon) = detectSections content
       date <- extractDateFromFilename relativePath
-      pure $ Just ReflectionData
-        { rdDate = date
-        , rdTitle = validatedTitle (fromMaybe (T.pack $ takeBaseName $ T.unpack relativePath) (Map.lookup "title" fm))
-        , rdUrl = validatedUrl (deriveUrl fm relativePath)
-        , rdBody = body
-        , rdFilePath = T.pack filePath
-        , rdHasTweetSection = hasTweet
-        , rdHasBlueskySection = hasBluesky
-        , rdHasMastodonSection = hasMastodon
-        }
+      let titleText = fromMaybe (T.pack $ takeBaseName $ T.unpack relativePath) (Map.lookup "title" fm)
+          urlText = deriveUrl fm relativePath
+          validated = do
+            title <- mkTitle titleText
+            url <- mkUrl urlText
+            pure ReflectionData
+              { rdDate = date
+              , rdTitle = title
+              , rdUrl = url
+              , rdBody = body
+              , rdFilePath = T.pack filePath
+              , rdHasTweetSection = hasTweet
+              , rdHasBlueskySection = hasBluesky
+              , rdHasMastodonSection = hasMastodon
+              }
+      case validated of
+        Right note -> pure (Just note)
+        Left reason -> do
+          putStrLn $ "  ⚠️  Skipping " <> filePath <> ": " <> T.unpack reason
+          pure Nothing
     else pure Nothing
 
-validatedTitle :: Text -> Title
-validatedTitle = either (error . T.unpack) id . mkTitle
-
-validatedUrl :: Text -> Url
-validatedUrl = either (error . T.unpack) id . mkUrl

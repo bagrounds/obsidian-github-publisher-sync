@@ -3,6 +3,7 @@ module Automation.BlogSeriesTest (tests) where
 import Test.Tasty (TestTree, testGroup)
 import Test.Tasty.HUnit (testCase, (@?=), assertBool)
 import qualified Data.Text as T
+import Data.Time (fromGregorian)
 
 import Automation.BlogSeries
 
@@ -31,4 +32,28 @@ tests = testGroup "BlogSeries"
       let result = appendModelSignature "Post body" "gemini-2.5-flash"
       in assertBool "should contain model name" $
            "gemini-2.5-flash" `T.isInfixOf` result
+  , buildBlogContextTests
+  ]
+
+-- --------------------------------------------------------------------------
+-- buildBlogContext
+-- --------------------------------------------------------------------------
+
+buildBlogContextTests :: TestTree
+buildBlogContextTests = testGroup "buildBlogContext"
+  [ testCase "returns Left for nonexistent series ID" $ do
+      let today = fromGregorian 2026 6 1
+      result <- buildBlogContext "nonexistent-series-id" "." [] today
+      case result of
+        Left reason -> assertBool "error mentions unknown series" $
+          T.isInfixOf "Unknown blog series" reason
+        Right _ -> assertBool "should return Left for invalid series ID" False
+
+  , testCase "returns Left for empty series ID" $ do
+      let today = fromGregorian 2026 6 1
+      result <- buildBlogContext "" "." [] today
+      case result of
+        Left reason -> assertBool "error mentions unknown series" $
+          T.isInfixOf "Unknown blog series" reason
+        Right _ -> assertBool "should return Left for empty series ID" False
   ]

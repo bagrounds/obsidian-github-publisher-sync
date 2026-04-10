@@ -2,8 +2,6 @@ module Automation.InternalLinkingTest (tests) where
 
 import Automation.InternalLinking
 import Automation.TestGenerators (testTitle, testRelativePath)
-import Automation.Types (RelativePath, mkRelativePath, Title, mkTitle)
-import Data.Text (Text)
 import qualified Data.Text as T
 import qualified Automation.Gemini as Gemini
 import Test.Tasty (TestTree, testGroup)
@@ -238,32 +236,54 @@ findLinkCandidatesTests = testGroup "findLinkCandidates"
   [ testCase "finds title in content" $
       let content = "I recommend reading Thinking, Fast and Slow for insights"
           masked  = content
-          candidates = findLinkCandidates [sampleEntry] content masked "reflections/2024-01-01.md"
+          candidates = findLinkCandidates [sampleEntry] content masked (testRelativePath "reflections/2024-01-01.md")
       in assertEqual "one candidate" 1 (length candidates)
   , testCase "skips self-references" $
       let content = "I recommend Thinking, Fast and Slow for insights"
           masked  = content
-          candidates = findLinkCandidates [sampleEntry] content masked "books/thinking-fast.md"
+          candidates = findLinkCandidates [sampleEntry] content masked (testRelativePath "books/thinking-fast.md")
       in assertEqual "no candidates for self" 0 (length candidates)
   , testCase "skips already-linked content" $
       let content = "see [[books/thinking-fast|TFS]] and Thinking, Fast and Slow"
           masked  = maskProtectedRegions content
-          candidates = findLinkCandidates [sampleEntry] content masked "reflections/2024-01-01.md"
+          candidates = findLinkCandidates [sampleEntry] content masked (testRelativePath "reflections/2024-01-01.md")
       in assertEqual "no candidates (already linked)" 0 (length candidates)
   , testCase "prefers longer matches" $
       let short = ContentEntry (testRelativePath "books/short.md") (testTitle "📖 Fast and Slow") (testTitle "Fast and Slow")
           long  = sampleEntry
           content = "I love Thinking, Fast and Slow as a book"
           masked  = content
-          candidates = findLinkCandidates [short, long] content masked "reflections/test.md"
+          candidates = findLinkCandidates [short, long] content masked (testRelativePath "reflections/test.md")
       in case candidates of
         (c:_) -> assertEqual "longer match wins" (testRelativePath "books/thinking-fast.md") (ceRelativePath (lcEntry c))
         []    -> assertBool "should have found candidates" False
   , testCase "returns empty for no matches" $
       let content = "This has nothing to do with any book"
           masked  = content
-          candidates = findLinkCandidates [sampleEntry] content masked "reflections/test.md"
+          candidates = findLinkCandidates [sampleEntry] content masked (testRelativePath "reflections/test.md")
       in assertEqual "no candidates" 0 (length candidates)
+  , testCase "self-exclusion works with different RelativePath values" $
+      let entry = ContentEntry (testRelativePath "articles/my-article.md") (testTitle "My Great Article") (testTitle "My Great Article")
+          content = "I wrote My Great Article about testing"
+          masked  = content
+          selfPath = testRelativePath "articles/my-article.md"
+          otherPath = testRelativePath "reflections/2026-06-01.md"
+          candidatesSelf = findLinkCandidates [entry] content masked selfPath
+          candidatesOther = findLinkCandidates [entry] content masked otherPath
+      in do
+        assertEqual "self path yields no candidates" 0 (length candidatesSelf)
+        assertEqual "other path yields candidates" 1 (length candidatesOther)
+  , testCase "multiple entries with self-exclusion only removes matching entry" $
+      let entryA = ContentEntry (testRelativePath "books/book-a.md") (testTitle "Functional Programming") (testTitle "Functional Programming")
+          entryB = ContentEntry (testRelativePath "books/book-b.md") (testTitle "Category Theory") (testTitle "Category Theory")
+          content = "I love Functional Programming and Category Theory"
+          masked  = content
+          candidates = findLinkCandidates [entryA, entryB] content masked (testRelativePath "books/book-a.md")
+      in do
+        assertEqual "only non-self entry matches" 1 (length candidates)
+        case candidates of
+          (c:_) -> assertEqual "matched entry is book-b" (testRelativePath "books/book-b.md") (ceRelativePath (lcEntry c))
+          [] -> assertBool "should have found one candidate" False
   ]
 
 -- --------------------------------------------------------------------------
@@ -281,7 +301,7 @@ subtitleMatchingTests = testGroup "subtitle matching"
   [ testCase "matches main title when full title not in content" $
       let content = "I loved reading Domain-Driven Design and it changed my perspective"
           masked  = content
-          candidates = findLinkCandidates [dddEntry] content masked "reflections/test.md"
+          candidates = findLinkCandidates [dddEntry] content masked (testRelativePath "reflections/test.md")
       in do
           assertEqual "one candidate" 1 (length candidates)
           case candidates of
@@ -292,7 +312,7 @@ subtitleMatchingTests = testGroup "subtitle matching"
   , testCase "prefers full title over main title" $
       let content = "The book Domain-Driven Design: Tackling Complexity in the Heart of Software is excellent"
           masked  = content
-          candidates = findLinkCandidates [dddEntry] content masked "reflections/test.md"
+          candidates = findLinkCandidates [dddEntry] content masked (testRelativePath "reflections/test.md")
       in do
           assertEqual "one candidate" 1 (length candidates)
           case candidates of
@@ -302,7 +322,7 @@ subtitleMatchingTests = testGroup "subtitle matching"
   , testCase "does not match subtitle prefix for entries without subtitles" $
       let content = "I read Thinking yesterday"
           masked  = content
-          candidates = findLinkCandidates [sampleEntry] content masked "reflections/test.md"
+          candidates = findLinkCandidates [sampleEntry] content masked (testRelativePath "reflections/test.md")
       in assertEqual "no candidates" 0 (length candidates)
   , testCase "matches main title in book recommendation list" $
       let entry = ContentEntry
@@ -311,7 +331,7 @@ subtitleMatchingTests = testGroup "subtitle matching"
             (testTitle "A Pattern Language: Towns, Buildings, Construction")
           content = "Recommended books:\n- A Pattern Language by Christopher Alexander"
           masked  = content
-          candidates = findLinkCandidates [entry] content masked "reflections/test.md"
+          candidates = findLinkCandidates [entry] content masked (testRelativePath "reflections/test.md")
       in do
           assertEqual "one candidate" 1 (length candidates)
           case candidates of
@@ -320,12 +340,12 @@ subtitleMatchingTests = testGroup "subtitle matching"
   , testCase "respects protected regions for main title matches" $
       let content = "## Domain-Driven Design\nBody text without any book references"
           masked  = maskProtectedRegions content
-          candidates = findLinkCandidates [dddEntry] content masked "reflections/test.md"
+          candidates = findLinkCandidates [dddEntry] content masked (testRelativePath "reflections/test.md")
       in assertEqual "no candidates" 0 (length candidates)
   , testCase "uses full title in wikilink even when matched via partial" $
       let content = "I loved reading Domain-Driven Design and it changed my perspective"
           masked  = content
-          candidates = findLinkCandidates [dddEntry] content masked "reflections/test.md"
+          candidates = findLinkCandidates [dddEntry] content masked (testRelativePath "reflections/test.md")
           result = applyReplacements content candidates (replicate (length candidates) True)
       in assertBool "wikilink uses full title"
            (T.isInfixOf "Domain-Driven Design: Tackling Complexity" result)

@@ -28,19 +28,21 @@ import Automation.BlogSeriesConfig (BlogSeriesConfig (..), lookupSeries)
 import Automation.Frontmatter (quoteYamlValue)
 import Data.Time (Day)
 
-buildBlogContext :: Text -> FilePath -> [BlogComment] -> Day -> IO BlogContext
-buildBlogContext seriesId seriesDir comments today = do
-  let series = either (error . T.unpack) id (lookupSeries seriesId)
-  posts <- readSeriesPosts seriesDir
-  agentsMd <- readAgentsMd seriesDir
-  let filteredComments = filterCommentsAfterLastPost series posts comments
-  pure BlogContext
-    { bcxSeries        = series
-    , bcxAgentsMd      = agentsMd
-    , bcxPreviousPosts = posts
-    , bcxComments      = filteredComments
-    , bcxToday         = today
-    }
+buildBlogContext :: Text -> FilePath -> [BlogComment] -> Day -> IO (Either Text BlogContext)
+buildBlogContext seriesId seriesDir comments today =
+  case lookupSeries seriesId of
+    Left reason -> pure (Left reason)
+    Right series -> do
+      posts <- readSeriesPosts seriesDir
+      agentsMd <- readAgentsMd seriesDir
+      let filteredComments = filterCommentsAfterLastPost series posts comments
+      pure $ Right BlogContext
+        { bcxSeries        = series
+        , bcxAgentsMd      = agentsMd
+        , bcxPreviousPosts = posts
+        , bcxComments      = filteredComments
+        , bcxToday         = today
+        }
 
 generateSeriesIndex :: BlogSeriesConfig -> [BlogPost] -> Text
 generateSeriesIndex series _posts =

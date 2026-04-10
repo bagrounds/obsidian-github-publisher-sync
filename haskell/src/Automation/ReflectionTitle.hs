@@ -15,6 +15,7 @@ module Automation.ReflectionTitle
 
 import Data.Char (isDigit)
 import Data.List (nub)
+import Data.List.NonEmpty (NonEmpty)
 import Data.Text (Text)
 import qualified Data.Text as T
 
@@ -244,7 +245,7 @@ updateH1Heading content date fullTitle =
   in T.unlines updatedLines
 
 data ReflectionTitleConfig = ReflectionTitleConfig
-  { rtcModels       :: [Gemini.Model]
+  { rtcModels       :: NonEmpty Gemini.Model
   , rtcNoteContent  :: Text
   , rtcDate         :: Text
   , rtcRecentTitles :: [Text]
@@ -257,7 +258,7 @@ data ReflectionTitleResult = ReflectionTitleResult
   , rtrUpdatedContent :: Text
   } deriving (Show, Eq)
 
-generateReflectionTitle :: ReflectionTitleConfig -> ([Gemini.Model] -> (Text, Text) -> IO (Text, Text)) -> IO ReflectionTitleResult
+generateReflectionTitle :: ReflectionTitleConfig -> (NonEmpty Gemini.Model -> (Text, Text) -> IO (Text, Text)) -> IO ReflectionTitleResult
 generateReflectionTitle config callModel = do
   let linkedTitles = extractLinkedTitles (rtcNoteContent config)
       trailingEmojis = extractTrailingEmojis (rtcNoteContent config)

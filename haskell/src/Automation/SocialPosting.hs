@@ -39,6 +39,7 @@ module Automation.SocialPosting
 import Control.Concurrent.Async (mapConcurrently)
 import Control.Exception (SomeException, try)
 
+import Data.List.NonEmpty (NonEmpty ((:|)))
 import Data.Map.Strict (Map)
 import qualified Data.Map.Strict as Map
 import Data.Maybe (fromMaybe, mapMaybe)
@@ -677,15 +678,15 @@ generateSocialPostText manager apiKey note platform = do
       maxLen = platformMaxCharacters (platformLimits platform)
       genConfig = Gemini.defaultGenerationConfig { Gemini.gcTemperature = 0.8, Gemini.gcMaxOutputTokens = 512 }
 
-  tagsResult <- Gemini.generateContentWithFallback manager Gemini.defaultModel [Gemini.gemini3Flash, Gemini.flashFallback] tagsCombined apiKey genConfig
-  questionResult <- Gemini.generateContentWithFallback manager Gemini.defaultQuestionModel [Gemini.flashFallback] questionCombined apiKey genConfig
+  tagsResult <- Gemini.generateContentWithFallback manager (Gemini.defaultModel :| [Gemini.gemini3Flash, Gemini.flashFallback]) tagsCombined apiKey genConfig
+  questionResult <- Gemini.generateContentWithFallback manager (Gemini.defaultQuestionModel :| [Gemini.flashFallback]) questionCombined apiKey genConfig
 
   case (tagsResult, questionResult) of
     (Left err, _) -> pure (Left $ "Tags generation failed: " <> T.pack (show err))
     (_, Left err) -> pure (Left $ "Question generation failed: " <> T.pack (show err))
-    (Right tagsResp, Right questionResp) -> do
-      let tags = T.strip (Gemini.grText tagsResp)
-          question = T.strip (Gemini.grText questionResp)
+    (Right tagsResponse, Right questionResponse) -> do
+      let tags = T.strip (Gemini.responseText tagsResponse)
+          question = T.strip (Gemini.responseText questionResponse)
           modelOutput = question <> "\n" <> tags
           rawPost = assemblePost modelOutput rd
           overage = T.length rawPost - platformMaxCharacters Bluesky.limits
@@ -695,10 +696,10 @@ generateSocialPostText manager apiKey note platform = do
               shortenPrompt = buildShortenQuestionPrompt question (overage + shortenSafetyBuffer)
               shortenCombined = ppSystem shortenPrompt <> "\n\n" <> ppUser shortenPrompt
           putStrLn $ "  ✂️ Post exceeds Bluesky limit by " <> show overage <> " chars — asking LLM to shorten question..."
-          shortenResult <- Gemini.generateContentWithFallback manager Gemini.defaultQuestionModel [Gemini.flashFallback] shortenCombined apiKey genConfig
+          shortenResult <- Gemini.generateContentWithFallback manager (Gemini.defaultQuestionModel :| [Gemini.flashFallback]) shortenCombined apiKey genConfig
           case shortenResult of
-            Right shortenResp -> do
-              let shortenedQ = T.strip (Gemini.grText shortenResp)
+            Right shortenResponse -> do
+              let shortenedQ = T.strip (Gemini.responseText shortenResponse)
                   shortenedOutput = shortenedQ <> "\n" <> tags
               pure $ assemblePost shortenedOutput rd
             Left _ -> pure rawPost

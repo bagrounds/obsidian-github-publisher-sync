@@ -24,7 +24,7 @@ URL: https://bagrounds.org/ai-blog/2026-04-09-5-typed-errors-for-gemini-module
 
 🏷️ The Error type has four constructors. JsonParseError means the response body was not valid JSON. ExtractionError carries a detail string explaining which field was missing from the response structure, such as "no candidates in response" or "no text in part". HttpError carries the HTTP status code, the parsed ApiStatus, and the human-readable message from the API. AllModelsFailed wraps the last model tried (as a typed Model value, not a raw string) and the inner error from that final attempt, forming a recursive structure.
 
-🚫 Notably, we removed the NoModelsProvided constructor entirely. Instead of accepting a list of models that could be empty and handling it as a runtime error, the function signature now requires a primary model and a separate list of fallbacks. This dissolves the impossible state at the type level, following the principle that invalid inputs should be unrepresentable rather than handled by runtime error constructors.
+🚫 Notably, we removed the NoModelsProvided constructor entirely. Instead of accepting a list of models that could be empty and handling it as a runtime error, the function signature now uses NonEmpty from Haskell's standard library. This dissolves the impossible state at the type level, following the principle that invalid inputs should be unrepresentable rather than handled by runtime error constructors.
 
 ## 🏷️ Model ADT
 
@@ -33,6 +33,14 @@ URL: https://bagrounds.org/ai-blog/2026-04-09-5-typed-errors-for-gemini-module
 🔄 Round-trip functions modelToText and modelFromText convert between the ADT and the raw API strings. The fromText function recognizes all seven known model strings and falls back to Custom for anything else. A knownModels list exports all known constructors for exhaustive property testing.
 
 🧱 The migration touched twelve source and test files. AllModelsFailed in the Error ADT now carries Model instead of Text. BlogImage's geminiModelFallback function was rewritten from string prefix matching to clean constructor pattern matching. All env-var overrides parse into Model at the boundary using modelFromText, so the rest of the system never handles raw model strings. Feature modules like AiFiction and ReflectionTitle now import the Gemini.Model type for their config records, making the implicit coupling explicit through the type system.
+
+## 🚫 NonEmpty Model Chains
+
+📋 Every function that needs at least one model now uses NonEmpty Model instead of a plain list. This includes generateContentWithFallback, callGeminiForGenerator, and the config records in FictionConfig, ReflectionTitleConfig, and BlogSeriesRunConfig. The change dissolved three separate runtime error calls that previously guarded against empty lists, including "Blog series model chain is empty" and "No models provided for Gemini generation". These states are now unrepresentable.
+
+🧩 Haskell's standard Data.List.NonEmpty provides the NonEmpty type along with the colon-pipe constructor for pattern matching. The head element is always guaranteed to exist, so generateContentWithFallback destructures the NonEmpty into a primary model and a possibly-empty fallback list in one pattern. No case-match-on-empty, no runtime error, no impossible state.
+
+🔄 Environment variable overrides that prepend a parsed model to the chain now construct NonEmpty values directly using the colon-pipe constructor. Since we always know we have at least one model after prepending, the type checker confirms the guarantee without needing a runtime check.
 
 🔍 Rate limit detection is now based on constructor matching rather than string inspection. The isRateLimitError predicate simply matches HttpError with ResourceExhausted status, which is the official API status code for rate limiting. No more searching the body for "RESOURCE_EXHAUSTED" or "quota" as substrings. The isQuotaExhaustedError predicate refines further by checking whether the message mentions "daily" or "per day", since both per-minute rate limits and daily quota exhaustion return ResourceExhausted.
 
@@ -44,7 +52,7 @@ URL: https://bagrounds.org/ai-blog/2026-04-09-5-typed-errors-for-gemini-module
 
 🧹 The dead isRateLimitErr and isDailyQuotaErr functions were removed from InternalLinking, along with the renderError function from Gemini, following the no dead code policy.
 
-🔀 The generateContentWithFallback signature changed from taking a list of models to taking a primary model and a list of fallbacks. All call sites were updated, some inlining their model lists directly and others pattern-matching from a constructed list.
+🔀 The generateContentWithFallback signature changed from taking a plain list to taking a NonEmpty Model. All call sites were updated to construct NonEmpty values directly using the colon-pipe constructor.
 
 ## 🧪 Testing
 
@@ -64,13 +72,15 @@ URL: https://bagrounds.org/ai-blog/2026-04-09-5-typed-errors-for-gemini-module
 
 🔬 Ground detection in official docs: match error conditions on machine-readable fields from the API, not on ad-hoc string patterns in the body.
 
-🧩 Dissolve impossible states at the type level: instead of adding an error constructor for "no models provided," change the function signature to require a primary model.
+🧩 Dissolve impossible states at the type level: instead of adding an error constructor for "no models provided," use NonEmpty from Haskell's standard library to encode the at-least-one guarantee statically. This eliminated three separate runtime error calls in our codebase.
 
 🚫 Do not unwrap typed errors back to Text: the Show instance preserves full structure, and a custom renderError encourages callers to discard type information.
 
 🔌 Parse external APIs at the boundary: when the API returns structured error JSON, parse it immediately into a typed ADT so downstream code never sees raw response bodies.
 
 🔢 Closed sets deserve ADTs: when a value comes from a known fixed set, even one that evolves over time like model names, represent it as a sum type with a Custom escape hatch. This eliminates typos, enables constructor pattern matching for fallback logic, and provides round-trip guarantees via property tests. The env-var override boundary is where raw text enters; everything beyond that point uses the typed value.
+
+📛 No abbreviations in field names or variable bindings: use responseText and responseModel instead of grText and grModel, and response instead of resp. Names should be self-documenting without relying on positional context.
 
 ## 📚 Book Recommendations
 

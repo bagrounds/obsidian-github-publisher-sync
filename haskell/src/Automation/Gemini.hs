@@ -31,6 +31,8 @@ module Automation.Gemini
 import Automation.Json (Value (..), ToValue (..), (.=), object, encode)
 import qualified Automation.Json as Json
 import Automation.Secret (Secret (..))
+import Data.List.NonEmpty (NonEmpty ((:|)))
+import qualified Data.List.NonEmpty as NE
 import Data.Text (Text)
 import qualified Data.Text as T
 import qualified Data.Text.Encoding as TE
@@ -137,6 +139,7 @@ data Error
 -- | Parse the structured error JSON returned by the Gemini API.
 -- The documented format is:
 -- @{ "error": { "code": 429, "status": "RESOURCE_EXHAUSTED", "message": "..." } }@
+-- See https://ai.google.dev/gemini-api/docs/troubleshooting for the official error format.
 -- Returns the parsed @ApiStatus@ and human-readable message, or a fallback
 -- @UnknownStatus@ with the raw body when parsing fails.
 parseErrorBody :: LBS.ByteString -> (ApiStatus, Text)
@@ -214,8 +217,8 @@ data Request = Request
   } deriving (Show, Eq)
 
 data Response = Response
-  { grText  :: Text
-  , grModel' :: Model
+  { responseText  :: Text
+  , responseModel :: Model
   } deriving (Show, Eq)
 
 geminiEndpoint :: Model -> Text
@@ -272,15 +275,15 @@ generateContent manager req = do
       case parseResponseText (responseBody response) of
         Left err   -> pure $ Left err
         Right text -> pure $ Right Response
-          { grText  = T.strip text
-          , grModel' = grModel req
+          { responseText  = T.strip text
+          , responseModel = grModel req
           }
     code ->
       let (apiStatus, message) = parseErrorBody (responseBody response)
       in pure $ Left $ HttpError code apiStatus message
 
-generateContentWithFallback :: Manager -> Model -> [Model] -> Text -> Secret -> GenerationConfig -> IO (Either Error Response)
-generateContentWithFallback manager model fallbacks prompt apiKey config = do
+generateContentWithFallback :: Manager -> NonEmpty Model -> Text -> Secret -> GenerationConfig -> IO (Either Error Response)
+generateContentWithFallback manager (model :| fallbacks) prompt apiKey config = do
   result <- generateContent manager Request
     { grPrompt = prompt
     , grModel = model
@@ -288,9 +291,9 @@ generateContentWithFallback manager model fallbacks prompt apiKey config = do
     , grGenerationConfig = config
     }
   case result of
-    Right resp -> pure $ Right resp
+    Right response -> pure $ Right response
     Left err -> case fallbacks of
       [] -> pure $ Left $ AllModelsFailed model err
       (next : rest) -> do
         putStrLn $ "⚠️ Model " <> T.unpack (modelToText model) <> " failed, trying next fallback..."
-        generateContentWithFallback manager next rest prompt apiKey config
+        generateContentWithFallback manager (next :| rest) prompt apiKey config

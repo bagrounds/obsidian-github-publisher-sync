@@ -857,14 +857,14 @@ describeImageWithGemini manager apiKey model content = do
         }
   result <- Gemini.generateContent manager req
   case result of
-    Right resp -> pure $ Right (Gemini.grText resp)
+    Right response -> pure $ Right (Gemini.responseText response)
     Left _err  -> do
       putStrLn $ "⚠️ " <> T.unpack (Gemini.modelToText model) <> " failed for image description, trying fallback..."
       let fallbackModel = geminiModelFallback model
       let fallbackReq = req { Gemini.grModel = fallbackModel }
       fallbackResult <- Gemini.generateContent manager fallbackReq
       case fallbackResult of
-        Right resp -> pure $ Right (Gemini.grText resp)
+        Right response -> pure $ Right (Gemini.responseText response)
         Left err   -> pure $ Left (T.pack (show err))
 
 geminiModelFallback :: Gemini.Model -> Gemini.Model

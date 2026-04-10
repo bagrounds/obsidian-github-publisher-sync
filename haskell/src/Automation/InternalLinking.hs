@@ -671,8 +671,8 @@ retryLoop manager apiKey model prompt attempt backoff = do
         }
     }
   case result of
-    Right resp ->
-      pure (parseGeminiBookPaths (Gemini.grText resp))
+    Right response ->
+      pure (parseGeminiBookPaths (Gemini.responseText response))
     Left err
       | Gemini.isRateLimitError err && attempt < maxGeminiRetries -> do
           putStrLn $ "  ⏳ Rate limit, retry " <> show (attempt + 1) <> "/" <> show maxGeminiRetries

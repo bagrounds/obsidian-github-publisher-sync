@@ -12,6 +12,7 @@ module Automation.AiFiction
   , FictionResult (FictionResult, frFiction, frModel, frUpdatedContent)
   ) where
 
+import Data.List.NonEmpty (NonEmpty)
 import Data.Text (Text)
 import qualified Data.Text as T
 
@@ -142,7 +143,7 @@ applyFiction content fiction mModel =
       T.stripEnd content <> "\n\n" <> sectionBlock <> "\n"
 
 data FictionConfig = FictionConfig
-  { fcModels      :: [Gemini.Model]
+  { fcModels      :: NonEmpty Gemini.Model
   , fcNoteContent :: Text
   } deriving (Show, Eq)
 
@@ -152,7 +153,7 @@ data FictionResult = FictionResult
   , frUpdatedContent :: Text
   } deriving (Show, Eq)
 
-generateFiction :: FictionConfig -> ([Gemini.Model] -> (Text, Text) -> IO (Text, Text)) -> IO FictionResult
+generateFiction :: FictionConfig -> (NonEmpty Gemini.Model -> (Text, Text) -> IO (Text, Text)) -> IO FictionResult
 generateFiction config callModel = do
   let stripped = stripForPrompt (fcNoteContent config)
       prompt = buildFictionPrompt stripped

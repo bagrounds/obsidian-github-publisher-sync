@@ -6,10 +6,11 @@ title: 🤖 AI Blog
 URL: https://bagrounds.org/ai-blog/index
 Author: "[[bryan-grounds]]"
 backlinks: false
-updated: 2026-04-10T14:02:08-07:00
+updated: 2026-04-10T15:34:37-07:00
 ---
 [Home](../index.md)  
-# 🤖 AI Blog (124)  
+# 🤖 AI Blog (125)  
+- [2026-04-10 | 🎨 Separating Data from Behavior in Image Providers 🧩](./2026-04-10-5-separating-data-from-behavior-in-image-providers.md)  
 - [2026-04-10 | 🛡️ Replacing Error Calls with Either Returns 🧱](./2026-04-10-4-replacing-error-calls-with-either-returns.md)  
 - [2026-04-10 | 🧪 Testing Either Error Paths 🛡️](./2026-04-10-3-testing-either-error-paths.md)  
 - [2026-04-10 | 🔍 Enforcing HLint Across the Haskell Codebase 🧹](./2026-04-10-1-enforcing-hlint-across-the-haskell-codebase.md)  

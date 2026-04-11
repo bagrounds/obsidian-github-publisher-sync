@@ -206,10 +206,12 @@ buildReflectionLinksTests = testGroup "buildReflectionLinks"
               ]
         links <- buildReflectionLinks tmpDir results
         assertBool "should include unmodified post" (length links == 1)
-        let (relPath, title, date) = head links
-        relPath @?= "ai-blog/2026-04-03-1-my-post.md"
-        title @?= "My Post Title"
-        date @?= "2026-04-03"
+        case links of
+          ((relPath, title, date):_) -> do
+            relPath @?= "ai-blog/2026-04-03-1-my-post.md"
+            title @?= "My Post Title"
+            date @?= "2026-04-03"
+          [] -> assertBool "should have at least one link" False
   , testCase "includes both modified and unmodified posts" $
       withSystemTempDirectory "ai-blog-test" $ \tmpDir -> do
         TIO.writeFile (tmpDir </> "2026-04-01-1-old.md") "---\ntitle: \"Old Post\"\n---\nContent"

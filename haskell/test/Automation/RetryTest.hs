@@ -1,6 +1,6 @@
 module Automation.RetryTest (tests) where
 
-import Control.Exception (SomeException, toException)
+import Control.Exception (toException)
 import Test.Tasty (TestTree, testGroup)
 import Test.Tasty.HUnit (testCase, (@?=), assertBool)
 

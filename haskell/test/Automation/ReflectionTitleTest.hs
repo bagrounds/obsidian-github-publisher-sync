@@ -1,6 +1,5 @@
 module Automation.ReflectionTitleTest (tests) where
 
-import Data.Text (Text)
 import qualified Data.Text as T
 import Test.Tasty (TestTree, testGroup)
 import Test.Tasty.HUnit (testCase, (@?=), assertBool)

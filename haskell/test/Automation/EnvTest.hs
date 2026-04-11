@@ -1,7 +1,7 @@
 module Automation.EnvTest (tests) where
 
 import Data.Text (Text)
-import Data.Time (Day, UTCTime (..), addDays, fromGregorian, secondsToDiffTime)
+import Data.Time (UTCTime (..), addDays, fromGregorian, secondsToDiffTime)
 import Test.Tasty (TestTree, testGroup)
 import Test.Tasty.HUnit (testCase, (@?=))
 import Test.Tasty.QuickCheck (testProperty)

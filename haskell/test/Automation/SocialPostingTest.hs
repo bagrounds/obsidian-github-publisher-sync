@@ -19,7 +19,7 @@ import qualified Data.Text.IO as TIO
 import Automation.SocialPosting
 import Automation.Reflection (selectMostRecentReflection)
 import Automation.TestGenerators (testUrl, testTitle, testRelativePath)
-import Automation.Types (RelativePath, mkRelativePath, Title, mkTitle, Url, mkUrl)
+
 
 tests :: TestTree
 tests = testGroup "SocialPosting"
@@ -786,6 +786,7 @@ socialPostTests = testGroup "SocialPost"
   [ testCase "mkTweet accepts text under 280 chars" $
       case mkTweet "Hello, world!" of
         Right (Tweet content) -> assertEqual "" "Hello, world!" content
+        Right other -> assertBool ("expected Tweet, got: " <> show other) False
         Left err -> assertBool ("unexpected rejection: " <> T.unpack err) False
 
   , testCase "mkTweet rejects text over 280 chars" $
@@ -797,6 +798,7 @@ socialPostTests = testGroup "SocialPost"
   , testCase "mkBlueskyPost accepts text under 300 chars" $
       case mkBlueskyPost "Hello from Bluesky!" of
         Right (BlueskyPost content) -> assertEqual "" "Hello from Bluesky!" content
+        Right other -> assertBool ("expected BlueskyPost, got: " <> show other) False
         Left err -> assertBool ("unexpected rejection: " <> T.unpack err) False
 
   , testCase "mkBlueskyPost rejects text over 300 chars" $
@@ -808,6 +810,7 @@ socialPostTests = testGroup "SocialPost"
   , testCase "mkMastodonPost accepts text under 500 chars" $
       case mkMastodonPost "Hello from Mastodon!" of
         Right (MastodonPost content) -> assertEqual "" "Hello from Mastodon!" content
+        Right other -> assertBool ("expected MastodonPost, got: " <> show other) False
         Left err -> assertBool ("unexpected rejection: " <> T.unpack err) False
 
   , testCase "mkMastodonPost rejects text over 500 chars" $

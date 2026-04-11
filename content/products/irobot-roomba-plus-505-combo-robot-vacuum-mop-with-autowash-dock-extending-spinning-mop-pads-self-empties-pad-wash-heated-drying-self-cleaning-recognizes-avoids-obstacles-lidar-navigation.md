@@ -6,9 +6,16 @@ URL: https://bagrounds.org/products/irobot-roomba-plus-505-combo-robot-vacuum-mo
 share: true
 affiliate link: https://amzn.to/3Km3ywO
 CTA: 🤖 Automate your chores.
+image_date: 2026-04-11T11:17:20Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A sleek, high-angle shot of a modern, minimalist living room featuring polished hardwood floors. The iRobot Roomba sits in the foreground, glowing with a soft, ambient light, docked at its compact AutoWash station. A subtle, luminous holographic laser grid—representing the LiDAR mapping—projects gently across the floor, highlighting the path the robot has just cleaned. The scene is bathed in warm, natural morning sunlight streaming through a nearby window, emphasizing the contrast between the clean, pristine floor and the high-tech, sophisticated design of the device. The composition is clean and uncluttered, focusing on the seamless integration of technology into a tranquil, contemporary home environment.
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_time: 2026-04-11T00:00:00Z
+force_analyze_links: false
 ---
 [Home](../index.md) > [Products](./index.md)  
 # 🤖🧹🧼🗺️ iRobot Roomba Plus 505 Combo Robot Vacuum & Mop with AutoWash Dock - Extending Spinning Mop Pads, Self-Empties, Pad Wash & Heated Drying, Self-cleaning, Recognizes & Avoids Obstacles, LiDAR Navigation  
+![products-irobot-roomba-plus-505-combo-robot-vacuum-mop-with-autowash-dock-extending-spinning-mop-pads-self-empties-pad-wash-heated-drying-self-cleaning-recognizes-avoids-obstacles-lidar-navigation](../products-irobot-roomba-plus-505-combo-robot-vacuum-mop-with-autowash-dock-extending-spinning-mop-pads-self-empties-pad-wash-heated-drying-self-cleaning-recognizes-avoids-obstacles-lidar-navigation.jpg)  
 [🛒 iRobot Roomba Plus 505 Combo Robot Vacuum & Mop with AutoWash Dock - Extending Spinning Mop Pads, Self-Empties, Pad Wash & Heated Drying, Self-cleaning, Recognizes & Avoids Obstacles, LiDAR Navigation. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3Km3ywO)  
   
 ## 🤖 Product Report: iRobot Roomba Plus 505 Combo  

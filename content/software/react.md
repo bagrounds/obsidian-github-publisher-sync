@@ -7,9 +7,13 @@ URL: https://bagrounds.org/software/react
 link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-06T00:00:00Z
 force_analyze_links: false
+image_date: 2026-04-11T06:30:00Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A clean, isometric composition featuring a central, glowing atomic structure composed of modular, interlocking geometric building blocks. The blocks are translucent, with soft neon edges in shades of cyan, deep blue, and white, representing the component-based nature of the framework. Surrounding the core are faint, ethereal light trails forming a circular orbital path, symbolizing the virtual DOM and data flow. The background is a deep, dark navy gradient, providing high contrast to the vibrant, luminous elements. The overall aesthetic is modern, sleek, and minimalist, evoking a sense of high-performance software architecture and digital precision.
 ---
 [Home](../index.md) > [Software](./index.md)  
 # ⚛️🔄 React  
+![software-react](../software-react.jpg)  
   
 ## 🤖 AI Summary  
 ### 👉 What Is It?  

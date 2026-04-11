@@ -7,9 +7,13 @@ URL: https://bagrounds.org/bot-chats/ai-engineering-assistant-technology-recomme
 link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-06T00:00:00Z
 force_analyze_links: false
+image_date: 2026-04-11T13:29:27Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A clean, isometric-style illustration featuring a glowing, translucent robotic hand gently interacting with a floating digital interface. The interface consists of interconnected nodes, data streams, and modular blocks representing code, databases, and neural network layers. Soft, bioluminescent blue and teal light emanates from the center, casting a gentle glow on a minimalist, dark workspace. In the background, subtle geometric abstractions of gears and circuit board patterns suggest the intersection of mechanical engineering and artificial intelligence. The composition is balanced and modern, utilizing a sophisticated color palette of deep navy, electric cyan, and crisp white to convey a sense of precision, innovation, and technological growth.
 ---
 [Home](../index.md) > [Bot Chats](./index.md)  
 # 🤖⚙️📈💡 AI Engineering Assistant Technology Recommendations  
+![bot-chats-ai-engineering-assistant-technology-recommendations](../bot-chats-ai-engineering-assistant-technology-recommendations.jpg)  
 ## Gemini  
 ### Prompt  
 > Based on the following notes, can you recommend some technologies I should consider starting with?  

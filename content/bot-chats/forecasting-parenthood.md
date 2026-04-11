@@ -4,6 +4,9 @@ aliases:
   - 🤰⏰👶🔮 Forecasting Parenthood
 title: 🤰⏰👶🔮 Forecasting Parenthood
 URL: https://bagrounds.org/bot-chats/forecasting-parenthood
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_time: 2026-04-11T00:00:00Z
+force_analyze_links: false
 ---
 [Home](../index.md) > [Bot Chats](./index.md)  
 # 🤰🏼⏰👶🏼🔮 Forecasting Parenthood  
@@ -41,7 +44,7 @@ The book emphasizes that its recommendations are grounded in studies and finding
 ## 💬 Prompt 2  
 > 💡 Generate a long list of succinct, novel insights that build upon ideas from both of these books.  
   
-Here's a list of succinct, novel insights building upon the ideas from "Superforecasting" and "Scientific Secrets for Raising Kids Who Thrive":  
+Here's a list of succinct, novel insights building upon the ideas from "Superforecasting" and "[🧪👶📈 Scientific Secrets for Raising Kids Who Thrive](../books/scientific-secrets-for-raising-kids-who-thrive.md)":  
   
 * 👶🔮 **Forecasting Parenthood:** The most effective parenting isn't about rigid rules, but about continually forecasting your child's developmental needs and adapting your approach.  
 * 📊👶 **Probabilistic Nurturing:** Assign probabilities to the success of different parenting interventions, and adjust your strategies based on observed outcomes, much like a superforecaster updates their predictions.  

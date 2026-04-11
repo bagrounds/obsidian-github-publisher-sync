@@ -6,9 +6,16 @@ URL: https://bagrounds.org/products/shark-hv322-rocket-pet-plus-corded-stick-vac
 share: true
 affiliate link: https://amzn.to/3XX4YAV
 CTA: ✨ Banish pet hair.
+image_date: 2026-04-11T12:14:06Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A bright, high-angle studio shot of a Bordeaux and silver Shark Rocket vacuum standing on a clean, light-colored hardwood floor. The vacuums LED headlights are illuminated, casting a soft, warm glow on the floor surface. Beside the vacuum, a few specialized attachments are neatly arranged. A small amount of stylized, soft-focus pet fur is scattered near the nozzle to demonstrate the vacuums purpose, but the overall scene is clean, airy, and modern. The background is a soft-focus, neutral-toned living room, creating a sense of a tidy, pet-friendly home. Natural sunlight streams in from the side, highlighting the metallic finish of the vacuum and creating a crisp, inviting atmosphere.
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_time: 2026-04-11T00:00:00Z
+force_analyze_links: false
 ---
 [Home](../index.md) > [Products](./index.md)  
 # 🦈🔦🐈✨🧹 Shark HV322 Rocket Pet Plus Corded Stick Vacuum with LED Headlights, XL Dust Cup, Lightweight, Perfect for Pet Hair Pickup, Converts to a Hand Vacuum, with (2) Pet Attachments, Bordeaux, Silver  
+![products-shark-hv322-rocket-pet-plus-corded-stick-vacuum-with-led-headlights-xl-dust-cup-lightweight](../products-shark-hv322-rocket-pet-plus-corded-stick-vacuum-with-led-headlights-xl-dust-cup-lightweight.jpg)  
 [🛒 Shark HV322 Rocket Pet Plus Corded Stick Vacuum with LED Headlights, XL Dust Cup, Lightweight, Perfect for Pet Hair Pickup, Converts to a Hand Vacuum, with (2) Pet Attachments, Bordeaux, Silver. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3XX4YAV)  
   
 ## 🤖 AI Summary  

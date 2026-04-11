@@ -7,9 +7,13 @@ URL: https://bagrounds.org/software/quartz
 link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-04T00:00:00Z
 force_analyze_links: false
+image_date: 2026-04-11T05:39:38Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A high-contrast, artistic composition featuring a glowing, translucent quartz crystal at the center, resting on a minimalist desk. From the crystal, thin, luminous threads of light extend outward, connecting to various floating, holographic document icons and geometric nodes, representing a networked knowledge graph. The color palette uses deep navy and charcoal backgrounds to signify the digital nature, while the nodes and threads glow in vibrant shades of cyan, magenta, and white. The lighting is soft and ethereal, emphasizing the intersection of raw nature and precise, modern technology. The overall aesthetic is clean, sophisticated, and tech-forward, evoking the feeling of a digital garden blooming from structured, interconnected data.
 ---
 [Home](../index.md) > [Software](./index.md)  
 # 💎🔬🔍📈 Quartz  
+![software-quartz](../software-quartz.jpg)  
   
 ## 🤖 AI Summary  
 ### 👉 What Is It?  

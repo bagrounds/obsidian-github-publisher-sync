@@ -132,12 +132,35 @@
 📦 The config files use valid Dhall syntax, but the parser is currently a temporary Parsec-based implementation.
 🚫 The official `dhall` Haskell library (1.42.3, latest on Hackage) cannot build with GHC 9.14.1 due to an upper bound on `template-haskell` (requires `< 2.24`, but GHC 9.14.1 ships 2.24.0.0).
 🔧 PR [dhall-haskell#2704](https://github.com/dhall-lang/dhall-haskell/pull/2704) (merged Feb 2026) adds GHC 9.14 support but has not been released to Hackage.
-📋 Migration plan:
+
+### ✅ Validation Against Official Parser
+
+🔬 All three config files have been validated against the official Dhall parser (python-dhall 0.1.16, which wraps the Rust dhall-rust implementation of the Dhall standard).
+📊 All 18 fields across all 3 config files produce identical parsed values between the official parser and our Parsec bridge.
+🧪 Validated variants: `Some` values, record syntax with leading commas, emoji in string literals, multi-word names, and multi-element model lists.
+
+### ⚠️ Known Risks and Mitigations
+
+🔍 Risk 1: the Parsec parser does not handle Dhall escape sequences (backslash-n, backslash-t, and so on) in double-quoted strings.
+🛡️ Mitigation: none of our config values require escape sequences. Names, icons, model identifiers, and time strings are all plain ASCII or emoji. The parser actively rejects backslashes, so any attempt to use them would be a loud parse error rather than a silent mismatch.
+
+🔍 Risk 2: the Parsec parser rejects unknown field names instead of ignoring them. The official Dhall library with a `FromDhall` instance would silently ignore extra fields.
+🛡️ Mitigation: this is actually stricter than necessary and catches typos. When migrating, we should decide whether to keep this strictness (via a custom `Dhall.Decoder`) or adopt Dhall's default lenient behavior.
+
+🔍 Risk 3: the Parsec parser does not support Dhall language features beyond simple records: no `let` bindings, no imports, no type annotations, no string interpolation, no multiline strings (Dhall single-quoted syntax).
+🛡️ Mitigation: our configs intentionally use the simplest possible Dhall subset. If a future config needs advanced features, it would fail loudly at parse time, signaling it is time to complete the migration.
+
+🔍 Risk 4: the official Dhall library will add significant transitive dependencies (megaparsec, cborg, serialise, aeson, and others), increasing build time and binary size.
+🛡️ Mitigation: evaluate the build time impact before merging and consider whether the benefits justify the cost for our simple record configs.
+
+### 📋 Migration Plan
+
 1. 🔍 Monitor Hackage for a dhall release with GHC 9.14 support (dhall 1.43+ or a revised 1.42.x)
 2. 📦 Add `dhall` as a build dependency in `automation.cabal`
-3. 🔄 Replace `parseDhallConfig` with `Dhall.input Dhall.auto` using a Dhall `FromDhall` instance for `RawConfig`
+3. 🔄 Replace `parseDhallConfig` with `Dhall.input Dhall.auto` using a Dhall `FromDhall` instance for `DiscoveredSeries`
 4. 🧹 Remove the Parsec parser code from `BlogSeriesDiscovery.hs`
 5. ✅ No config file changes needed — the files are already valid Dhall
+6. 🧪 Keep the existing 42 tests as regression tests — they validate the parsed output, not the parser itself
 
 ## 🔮 Future Considerations
 

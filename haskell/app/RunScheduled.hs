@@ -446,7 +446,7 @@ runBackfillImages context = do
 
   -- 4. Add update links from image backfill results
   let reflectionsDir = vaultDir </> "reflections"
-  imageUpdateLinks <- fmap catMaybes $ traverse (\filePath -> do
+  imageUpdateLinks <- catMaybes <$> traverse (\filePath -> do
         title <- extractTitleFromFile (vaultDir </> T.unpack filePath)
         case (mkRelativePath filePath, mkTitle title) of
           (Right relativePath, Right validTitle) ->
@@ -501,7 +501,7 @@ runInternalLinking context = do
       today <- todayPacificDay
       let todayText = formatDay today
           reflectionsDir = vaultDir </> "reflections"
-      links <- fmap catMaybes $ traverse (\fr -> do
+      links <- catMaybes <$> traverse (\fr -> do
         title <- extractTitleFromFile (vaultDir </> T.unpack (unRelativePath (IL.frRelativePath fr)))
         let linksAdded = IL.frLinksAdded fr
             detail = "🔗 added " <> T.pack (show linksAdded) <> " internal link" <> (if linksAdded == 1 then "" else "s")

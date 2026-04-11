@@ -10,10 +10,33 @@ import Data.Time (fromGregorian)
 
 import Automation.BlogPrompt
 import Automation.PacificTime (formatDay)
-import Automation.BlogSeriesConfig (BlogSeriesConfig, lookupSeries)
+import Automation.BlogSeriesConfig (BlogSeriesConfig (..), lookupSeriesIn)
+import Automation.BlogSeriesDiscovery (deriveBlogSeriesConfig, DiscoveredSeries (..))
+import qualified Automation.Gemini as Gemini
+import Data.List.NonEmpty (NonEmpty ((:|)))
+import qualified Data.Map.Strict as Map
+
+testSeriesMap :: Map.Map T.Text BlogSeriesConfig
+testSeriesMap = Map.fromList
+  [ ("chickie-loo", deriveBlogSeriesConfig DiscoveredSeries
+      { dsId = "chickie-loo", dsName = "Chickie Loo", dsIcon = "🐔"
+      , dsPriorityUser = Just "ChickieLoo", dsScheduleHourPacific = 7
+      , dsModels = Gemini.Gemini31FlashLite :| [Gemini.Gemini3Flash]
+      , dsPostTimeUtc = "15:00" })
+  , ("auto-blog-zero", deriveBlogSeriesConfig DiscoveredSeries
+      { dsId = "auto-blog-zero", dsName = "Auto Blog Zero", dsIcon = "🤖"
+      , dsPriorityUser = Just "bagrounds", dsScheduleHourPacific = 8
+      , dsModels = Gemini.Gemini31FlashLite :| [Gemini.Gemini3Flash]
+      , dsPostTimeUtc = "16:00" })
+  , ("systems-for-public-good", deriveBlogSeriesConfig DiscoveredSeries
+      { dsId = "systems-for-public-good", dsName = "Systems for Public Good", dsIcon = "🏛️"
+      , dsPriorityUser = Just "bagrounds", dsScheduleHourPacific = 9
+      , dsModels = Gemini.Gemini25Flash :| [Gemini.Gemini25FlashLite, Gemini.Gemini31FlashLite]
+      , dsPostTimeUtc = "17:00" })
+  ]
 
 unsafeLookupSeries :: T.Text -> BlogSeriesConfig
-unsafeLookupSeries name = case lookupSeries name of
+unsafeLookupSeries name = case lookupSeriesIn testSeriesMap name of
   Right config -> config
   Left err -> error $ "Test setup failed: " <> T.unpack err
 

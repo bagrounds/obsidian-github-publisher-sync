@@ -73,6 +73,7 @@ library
     Automation.VaultSync
     Automation.TaskRunner
     Automation.PacificTime
+    Automation.BlogSeriesDiscovery
   build-depends:
     base                 >= 4.18 && < 5,
     text                 >= 2.0,

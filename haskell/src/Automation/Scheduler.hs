@@ -2,21 +2,23 @@ module Automation.Scheduler
   ( TaskId (..)
   , ScheduleEntry (..)
   , BlogSeriesRunConfig (..)
-  , schedule
-  , blogSeriesRunConfigs
+  , staticSchedule
+  , buildSchedule
+  , buildBlogSeriesRunConfigs
   , validTaskIds
   , taskIdToText
   , taskIdFromText
   , nowPacificHour
   , getScheduledTasks
   , isValidTaskId
+  , isBlogSeries
   , extractSeriesId
   , blogPostExistsForToday
   , blogPostMatchesToday
   , findPostToRegenerate
   ) where
 
-import Data.List.NonEmpty (NonEmpty ((:|)))
+import Data.List.NonEmpty (NonEmpty)
 import Data.Map.Strict (Map)
 import qualified Data.Map.Strict as Map
 import Data.Set (Set)
@@ -33,15 +35,13 @@ import qualified Automation.Gemini as Gemini
 import Automation.PacificTime (pacificHour)
 
 data TaskId
-  = BlogSeriesChickieLoo
-  | BlogSeriesAutoBlogZero
-  | BlogSeriesSystemsForPublicGood
+  = BlogSeries Text
   | BackfillBlogImages
   | InternalLinking
   | SocialPosting
   | AiFiction
   | ReflectionTitle
-  deriving (Show, Eq, Ord, Bounded, Enum)
+  deriving (Show, Eq, Ord)
 
 data ScheduleEntry = ScheduleEntry
   { seTaskId :: TaskId
@@ -57,74 +57,69 @@ data BlogSeriesRunConfig = BlogSeriesRunConfig
 
 taskIdToText :: TaskId -> Text
 taskIdToText = \case
-  BlogSeriesChickieLoo           -> "blog-series:chickie-loo"
-  BlogSeriesAutoBlogZero         -> "blog-series:auto-blog-zero"
-  BlogSeriesSystemsForPublicGood -> "blog-series:systems-for-public-good"
-  BackfillBlogImages             -> "backfill-blog-images"
-  InternalLinking                -> "internal-linking"
-  SocialPosting                  -> "social-posting"
-  AiFiction                      -> "ai-fiction"
-  ReflectionTitle                -> "reflection-title"
+  BlogSeries seriesId -> "blog-series:" <> seriesId
+  BackfillBlogImages  -> "backfill-blog-images"
+  InternalLinking     -> "internal-linking"
+  SocialPosting       -> "social-posting"
+  AiFiction           -> "ai-fiction"
+  ReflectionTitle     -> "reflection-title"
 
-taskIdFromText :: Text -> Maybe TaskId
-taskIdFromText = flip Map.lookup textToTaskIdMap
+staticTaskIds :: [TaskId]
+staticTaskIds =
+  [ BackfillBlogImages
+  , InternalLinking
+  , SocialPosting
+  , AiFiction
+  , ReflectionTitle
+  ]
 
-textToTaskIdMap :: Map Text TaskId
-textToTaskIdMap =
-  Map.fromList [(taskIdToText tid, tid) | tid <- [minBound .. maxBound]]
+taskIdFromText :: [TaskId] -> Text -> Maybe TaskId
+taskIdFromText dynamicIds = flip Map.lookup (textToTaskIdMap dynamicIds)
+
+textToTaskIdMap :: [TaskId] -> Map Text TaskId
+textToTaskIdMap dynamicIds =
+  Map.fromList (fmap (\tid -> (taskIdToText tid, tid)) (staticTaskIds <> dynamicIds))
 
 everyHour :: [Int]
 everyHour = [0 .. 23]
 
-schedule :: [ScheduleEntry]
-schedule =
-  [ ScheduleEntry BlogSeriesChickieLoo [7] False
-  , ScheduleEntry BlogSeriesAutoBlogZero [8] False
-  , ScheduleEntry BlogSeriesSystemsForPublicGood [9] False
-  , ScheduleEntry AiFiction [22] True
+staticSchedule :: [ScheduleEntry]
+staticSchedule =
+  [ ScheduleEntry AiFiction [22] True
   , ScheduleEntry ReflectionTitle [22] True
   , ScheduleEntry BackfillBlogImages everyHour False
   , ScheduleEntry InternalLinking everyHour False
   , ScheduleEntry SocialPosting [0, 2, 4, 6, 8, 10, 12, 14, 16, 18, 20, 22] False
   ]
 
-blogSeriesRunConfigs :: Map Text BlogSeriesRunConfig
-blogSeriesRunConfigs = Map.fromList
-  [ ("chickie-loo", BlogSeriesRunConfig
-      "chickie-loo"
-      (Gemini.Gemini31FlashLite :| [Gemini.Gemini3Flash])
-      "CHICKIE_LOO_PRIORITY_USER")
-  , ("auto-blog-zero", BlogSeriesRunConfig
-      "auto-blog-zero"
-      (Gemini.Gemini31FlashLite :| [Gemini.Gemini3Flash])
-      "AUTO_BLOG_ZERO_PRIORITY_USER")
-  , ("systems-for-public-good", BlogSeriesRunConfig
-      "systems-for-public-good"
-      (Gemini.Gemini25Flash :| [Gemini.Gemini25FlashLite, Gemini.Gemini31FlashLite])
-      "SYSTEMS_FOR_PUBLIC_GOOD_PRIORITY_USER")
-  ]
+buildSchedule :: [ScheduleEntry] -> [ScheduleEntry]
+buildSchedule dynamicEntries = dynamicEntries <> staticSchedule
 
-validTaskIds :: Set TaskId
-validTaskIds = Set.fromList (fmap seTaskId schedule)
+buildBlogSeriesRunConfigs :: [BlogSeriesRunConfig] -> Map Text BlogSeriesRunConfig
+buildBlogSeriesRunConfigs = Map.fromList . fmap (\config -> (bsrcSeriesId config, config))
+
+validTaskIds :: [ScheduleEntry] -> Set TaskId
+validTaskIds = Set.fromList . fmap seTaskId
 
 isBlogSeries :: TaskId -> Bool
-isBlogSeries = \case
-  BlogSeriesChickieLoo           -> True
-  BlogSeriesAutoBlogZero         -> True
-  BlogSeriesSystemsForPublicGood -> True
-  _                              -> False
+isBlogSeries (BlogSeries _) = True
+isBlogSeries _              = False
 
-getScheduledTasks :: Int -> [TaskId]
-getScheduledTasks hourPacific =
-  fmap seTaskId (filter (isScheduled hourPacific) schedule)
+getScheduledTasks :: [ScheduleEntry] -> Int -> [TaskId]
+getScheduledTasks fullSchedule hourPacific =
+  fmap seTaskId (filter (isScheduled hourPacific) fullSchedule)
 
 isScheduled :: Int -> ScheduleEntry -> Bool
 isScheduled hourPacific ScheduleEntry{..}
   | seAtOrAfter || isBlogSeries seTaskId = any (hourPacific >=) seHoursPacific
   | otherwise                            = hourPacific `elem` seHoursPacific
 
-isValidTaskId :: Text -> Bool
-isValidTaskId t = maybe False (`Set.member` validTaskIds) (taskIdFromText t)
+isValidTaskId :: [ScheduleEntry] -> Text -> Bool
+isValidTaskId fullSchedule t =
+  maybe False (`Set.member` validTaskIds fullSchedule) (taskIdFromText (blogSeriesTaskIds fullSchedule) t)
+
+blogSeriesTaskIds :: [ScheduleEntry] -> [TaskId]
+blogSeriesTaskIds = filter isBlogSeries . fmap seTaskId
 
 extractSeriesId :: TaskId -> Maybe Text
 extractSeriesId = T.stripPrefix "blog-series:" . taskIdToText

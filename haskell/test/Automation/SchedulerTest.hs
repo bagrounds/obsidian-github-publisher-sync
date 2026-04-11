@@ -10,62 +10,85 @@ import Automation.Scheduler
 import Automation.PacificTime (pacificHour)
 import Automation.TestGenerators (genUTCTime)
 
+testDynamicEntries :: [ScheduleEntry]
+testDynamicEntries =
+  [ ScheduleEntry (BlogSeries "chickie-loo") [7] False
+  , ScheduleEntry (BlogSeries "auto-blog-zero") [8] False
+  , ScheduleEntry (BlogSeries "systems-for-public-good") [9] False
+  ]
+
+testSchedule :: [ScheduleEntry]
+testSchedule = buildSchedule testDynamicEntries
+
+testBlogSeriesTaskIds :: [TaskId]
+testBlogSeriesTaskIds = fmap seTaskId testDynamicEntries
+
 tests :: TestTree
 tests = testGroup "Scheduler"
   [ testCase "getScheduledTasks at hour 7 includes chickie-loo" $
       assertBool "chickie-loo should be scheduled" $
-        BlogSeriesChickieLoo `elem` getScheduledTasks 7
+        BlogSeries "chickie-loo" `elem` getScheduledTasks testSchedule 7
 
   , testCase "getScheduledTasks at hour 6 excludes chickie-loo" $
       assertBool "chickie-loo should not be scheduled before 7" $
-        BlogSeriesChickieLoo `notElem` getScheduledTasks 6
+        BlogSeries "chickie-loo" `notElem` getScheduledTasks testSchedule 6
 
   , testCase "blog series uses at-or-after semantics" $
       assertBool "chickie-loo at hour 10 (after 7)" $
-        BlogSeriesChickieLoo `elem` getScheduledTasks 10
+        BlogSeries "chickie-loo" `elem` getScheduledTasks testSchedule 10
 
   , testCase "backfill runs every hour" $
       assertBool "backfill at hour 3" $
-        BackfillBlogImages `elem` getScheduledTasks 3
+        BackfillBlogImages `elem` getScheduledTasks testSchedule 3
 
   , testCase "social-posting runs at even hours" $
       assertBool "social-posting at hour 4" $
-        SocialPosting `elem` getScheduledTasks 4
+        SocialPosting `elem` getScheduledTasks testSchedule 4
 
   , testCase "social-posting skipped at odd hours" $
       assertBool "social-posting not at hour 5" $
-        SocialPosting `notElem` getScheduledTasks 5
+        SocialPosting `notElem` getScheduledTasks testSchedule 5
 
   , testCase "ai-fiction eligible at hour 22" $
       assertBool "ai-fiction at 22" $
-        AiFiction `elem` getScheduledTasks 22
+        AiFiction `elem` getScheduledTasks testSchedule 22
 
   , testCase "ai-fiction not eligible before 22" $
       assertBool "ai-fiction not at 21" $
-        AiFiction `notElem` getScheduledTasks 21
+        AiFiction `notElem` getScheduledTasks testSchedule 21
 
   , testCase "reflection-title eligible at hour 23" $
       assertBool "reflection-title at 23 (at-or-after 22)" $
-        ReflectionTitle `elem` getScheduledTasks 23
+        ReflectionTitle `elem` getScheduledTasks testSchedule 23
 
   , testCase "isValidTaskId accepts known IDs" $
-      isValidTaskId "backfill-blog-images" @?= True
+      isValidTaskId testSchedule "backfill-blog-images" @?= True
 
   , testCase "isValidTaskId rejects unknown IDs" $
-      isValidTaskId "unknown-task" @?= False
+      isValidTaskId testSchedule "unknown-task" @?= False
 
   , testCase "extractSeriesId from blog-series task" $
-      extractSeriesId BlogSeriesChickieLoo @?= Just "chickie-loo"
+      extractSeriesId (BlogSeries "chickie-loo") @?= Just "chickie-loo"
 
   , testCase "extractSeriesId from non-series task" $
       extractSeriesId BackfillBlogImages @?= Nothing
 
-  , testCase "taskIdToText round-trips" $
-      taskIdFromText (taskIdToText SocialPosting) @?= Just SocialPosting
+  , testCase "taskIdToText round-trips for static tasks" $
+      taskIdFromText [] (taskIdToText SocialPosting) @?= Just SocialPosting
 
-  , testCase "all task IDs are valid" $
+  , testCase "taskIdToText round-trips for blog series" $
+      taskIdFromText testBlogSeriesTaskIds (taskIdToText (BlogSeries "chickie-loo"))
+        @?= Just (BlogSeries "chickie-loo")
+
+  , testCase "all static task IDs are valid" $
       assertBool "all valid" $
-        all (isValidTaskId . taskIdToText) [minBound .. maxBound]
+        all (isValidTaskId testSchedule . taskIdToText)
+          [BackfillBlogImages, InternalLinking, SocialPosting, AiFiction, ReflectionTitle]
+
+  , testCase "all blog series task IDs are valid" $
+      assertBool "all valid" $
+        all (isValidTaskId testSchedule . taskIdToText)
+          [BlogSeries "chickie-loo", BlogSeries "auto-blog-zero", BlogSeries "systems-for-public-good"]
 
   , pacificHourTests
   , blogPostMatchesTodayTests

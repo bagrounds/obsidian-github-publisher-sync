@@ -1,6 +1,7 @@
 module Automation.SocialPosting.ContentDiscoveryTest (tests) where
 
 import qualified Data.Set as Set
+import Data.Text (Text)
 import qualified Data.Text as T
 import Data.Time (UTCTime (..), fromGregorian, secondsToDiffTime)
 import Data.Time.LocalTime (TimeOfDay (..))
@@ -9,8 +10,12 @@ import Test.Tasty.HUnit (assertEqual, assertBool, testCase)
 import Test.Tasty.QuickCheck (testProperty)
 import qualified Test.Tasty.QuickCheck as QC
 
+import Automation.BlogSeriesConfig (imageBackfillContentIdsFrom)
 import Automation.Platform (Platform (..))
 import Automation.SocialPosting.ContentDiscovery
+
+defaultContentIds :: [Text]
+defaultContentIds = imageBackfillContentIdsFrom []
 
 tests :: TestTree
 tests = testGroup "SocialPosting.ContentDiscovery"
@@ -66,11 +71,11 @@ contentFilterTests = testGroup "content filtering"
 
   , testCase "isAwaitingImageBackfill detects note without image in backfill directory" $
       assertBool "should be awaiting image" $
-        isAwaitingImageBackfill "books/great-book.md" "Some text about a great book"
+        isAwaitingImageBackfill defaultContentIds "books/great-book.md" "Some text about a great book"
 
   , testCase "isAwaitingImageBackfill rejects note with embedded image" $
       assertBool "has image, should not be awaiting" $
-        not (isAwaitingImageBackfill "books/great-book.md"
+        not (isAwaitingImageBackfill defaultContentIds "books/great-book.md"
           "![[attachments/books-great-book.jpg]]\nSome text about a great book")
   ]
 
@@ -154,18 +159,18 @@ imageBackfillTests :: TestTree
 imageBackfillTests = testGroup "isAwaitingImageBackfill"
   [ testCase "note without image in backfill directory is awaiting" $
       assertBool "should be awaiting image" $
-        isAwaitingImageBackfill "books/great-book.md" "Some text about a great book"
+        isAwaitingImageBackfill defaultContentIds "books/great-book.md" "Some text about a great book"
 
   , testCase "note with embedded image is not awaiting" $
       assertBool "has image, should not be awaiting" $
-        not (isAwaitingImageBackfill "books/great-book.md"
+        not (isAwaitingImageBackfill defaultContentIds "books/great-book.md"
           "![[attachments/books-great-book.jpg]]\nSome text about a great book")
 
   , testCase "excluded file is not awaiting" $
       assertBool "index.md should not be awaiting" $
-        not (isAwaitingImageBackfill "books/index.md" "Browse all books")
+        not (isAwaitingImageBackfill defaultContentIds "books/index.md" "Browse all books")
 
   , testCase "file not in any content directory is not awaiting" $
       assertBool "unknown directory should not be awaiting" $
-        not (isAwaitingImageBackfill "people/john-doe.md" "A person page")
+        not (isAwaitingImageBackfill defaultContentIds "people/john-doe.md" "A person page")
   ]

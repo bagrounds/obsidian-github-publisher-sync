@@ -48,8 +48,16 @@ import Automation.BlogSeries
   )
 import Automation.BlogSeriesConfig
   ( BlogSeriesConfig (..)
-  , imageBackfillContentIds
-  , lookupSeries
+  , imageBackfillContentIdsFrom
+  , lookupSeriesIn
+  )
+import Automation.BlogSeriesDiscovery
+  ( DiscoveredSeries (..)
+  , DiscoveryError (..)
+  , deriveBlogSeriesConfig
+  , deriveBlogSeriesRunConfig
+  , deriveScheduleEntry
+  , discoverSeries
   )
 import Automation.DailyReflection (UpdateReflectionResult (..), updateDailyReflection)
 import Automation.DailyUpdates (UpdateLink (..), addUpdateLinksToReflection, extractTitleFromFile)
@@ -70,8 +78,10 @@ import Automation.ReflectionTitle
   )
 import Automation.Scheduler
   ( TaskId (..)
+  , ScheduleEntry (..)
   , BlogSeriesRunConfig (..)
-  , blogSeriesRunConfigs
+  , buildBlogSeriesRunConfigs
+  , buildSchedule
   , blogPostExistsForToday
   , findPostToRegenerate
   , getScheduledTasks
@@ -193,8 +203,8 @@ yesterdayPacific = formatDay . addDays (-1) <$> todayPacificDay
 -- Task runners
 -- ---------------------------------------------------------------------------
 
-runBlogSeries :: Context.AppContext -> Text -> IO ()
-runBlogSeries context seriesId = do
+runBlogSeries :: Context.AppContext -> Map Text BlogSeriesConfig -> Map Text BlogSeriesRunConfig -> Text -> IO ()
+runBlogSeries context seriesMap runConfigs seriesId = do
   let taskName = "blog-series:" <> seriesId
       manager = Context.httpManager context
       repoRoot = Context.repoRoot context
@@ -202,7 +212,7 @@ runBlogSeries context seriesId = do
       apiKey = Context.geminiApiKey context
   logMsg $ "▶️  " <> taskName
 
-  let mRunConfig = Map.lookup seriesId blogSeriesRunConfigs
+  let mRunConfig = Map.lookup seriesId runConfigs
   runConfig <- case mRunConfig of
     Just rc -> pure rc
     Nothing -> failTask $ "No run config for series: " <> seriesId
@@ -235,12 +245,12 @@ runBlogSeries context seriesId = do
       priorityUser <- lookupEnvText (T.unpack (bsrcPriorityUserEnvVar runConfig))
 
       -- 4. Fetch comments
-      series <- either failTask pure (lookupSeries seriesId)
+      series <- either failTask pure (lookupSeriesIn seriesMap seriesId)
       comments <- fetchAllSeriesComments manager seriesId (priorityUser >>= (\u -> if T.null u then Nothing else Just u))
       logMsg $ "  📝 Fetched " <> T.pack (show (length comments)) <> " comments"
 
       -- 5. Build context and prompt
-      blogContextResult <- buildBlogContext seriesId seriesDir comments today
+      blogContextResult <- buildBlogContext seriesMap seriesId seriesDir comments today
       case blogContextResult of
         Left reason -> failTask $ "Blog context build failed: " <> reason
         Right blogContext -> do
@@ -334,8 +344,8 @@ runBlogSeries context seriesId = do
 
   logMsg $ "✅ " <> taskName
 
-runBackfillImages :: Context.AppContext -> IO ()
-runBackfillImages context = do
+runBackfillImages :: Context.AppContext -> [Text] -> IO ()
+runBackfillImages context contentIds = do
   let manager = Context.httpManager context
       repoRoot = Context.repoRoot context
       vaultDir = Context.vaultDir context
@@ -366,7 +376,7 @@ runBackfillImages context = do
       pure []
     _  -> do
       logMsg $ "  🎨 Image providers: " <> T.pack (show (length providers))
-      let contentDirectories = mapMaybe contentDirectoryFromText imageBackfillContentIds
+      let contentDirectories = mapMaybe contentDirectoryFromText contentIds
           backfillConfig = BackfillConfig
             { backfillRepoRoot = vaultDir
             , backfillContentDirs = contentDirectories
@@ -574,17 +584,18 @@ tryTitleForDate context date = do
 -- Task dispatch
 -- ---------------------------------------------------------------------------
 
-taskRunners :: Context.AppContext -> Map TaskId (IO ())
-taskRunners context = Map.fromList
-  [ (BlogSeriesChickieLoo, runBlogSeries context "chickie-loo")
-  , (BlogSeriesAutoBlogZero, runBlogSeries context "auto-blog-zero")
-  , (BlogSeriesSystemsForPublicGood, runBlogSeries context "systems-for-public-good")
-  , (BackfillBlogImages, runBackfillImages context)
-  , (InternalLinking, runInternalLinking context)
-  , (SocialPosting, runSocialPosting context)
-  , (AiFiction, runAiFiction context)
-  , (ReflectionTitle, runReflectionTitle context)
-  ]
+taskRunners :: Context.AppContext -> Map Text BlogSeriesConfig -> Map Text BlogSeriesRunConfig -> [Text] -> [DiscoveredSeries] -> Map TaskId (IO ())
+taskRunners context seriesMap runConfigs contentIds discovered =
+  let blogSeriesRunners = Map.fromList
+        (fmap (\series -> (BlogSeries (dsId series), runBlogSeries context seriesMap runConfigs (dsId series))) discovered)
+      staticRunners = Map.fromList
+        [ (BackfillBlogImages, runBackfillImages context contentIds)
+        , (InternalLinking, runInternalLinking context)
+        , (SocialPosting, runSocialPosting context)
+        , (AiFiction, runAiFiction context)
+        , (ReflectionTitle, runReflectionTitle context)
+        ]
+  in Map.union blogSeriesRunners staticRunners
 
 -- ---------------------------------------------------------------------------
 -- Main
@@ -605,10 +616,33 @@ main = do
         Nothing -> fromMaybe "." mWorkspace
   manager <- newManager tlsManagerSettings
 
+  -- Discover blog series from Dhall config files
+  let haskellDir = repoRoot </> "haskell"
+  discoveryResult <- discoverSeries haskellDir
+  discovered <- case discoveryResult of
+    Right series -> do
+      logMsg $ "📋 Discovered " <> T.pack (show (length series)) <> " blog series: "
+        <> T.intercalate ", " (fmap dsId series)
+      pure series
+    Left errors -> do
+      TIO.hPutStrLn stderr "❌ Blog series discovery errors:"
+      mapM_ (\case
+        ParseError path err -> TIO.hPutStrLn stderr $ "  📄 " <> T.pack path <> ": " <> T.pack (show err)
+        ValidationError path msg -> TIO.hPutStrLn stderr $ "  ⚠️  " <> T.pack path <> ": " <> msg
+        ) errors
+      exitFailure
+
+  let seriesConfigs = fmap deriveBlogSeriesConfig discovered
+      seriesMap = Map.fromList (fmap (\config -> (bscId config, config)) seriesConfigs)
+      runConfigs = buildBlogSeriesRunConfigs (fmap deriveBlogSeriesRunConfig discovered)
+      dynamicScheduleEntries = fmap deriveScheduleEntry discovered
+      fullSchedule = buildSchedule dynamicScheduleEntries
+      contentIds = imageBackfillContentIdsFrom seriesConfigs
+
   tasks <- case cliTaskOverride args of
     Just taskStr ->
-      if isValidTaskId taskStr
-        then case taskIdFromText taskStr of
+      if isValidTaskId fullSchedule taskStr
+        then case taskIdFromText (fmap seTaskId dynamicScheduleEntries) taskStr of
           Just tid -> pure [tid]
           Nothing  -> do
             TIO.hPutStrLn stderr $ "❌ Unknown task: " <> taskStr
@@ -616,7 +650,7 @@ main = do
         else do
           TIO.hPutStrLn stderr $ "❌ Unknown task: " <> taskStr
           exitFailure
-    Nothing -> pure $ getScheduledTasks hourPacific
+    Nothing -> pure $ getScheduledTasks fullSchedule hourPacific
 
   let taskNames = T.intercalate ", " (fmap taskIdToText tasks)
   logMsg $ "Scheduler start — hour " <> T.pack (show hourPacific) <> " Pacific, "
@@ -641,7 +675,7 @@ main = do
         Left err -> do
           TIO.hPutStrLn stderr $ "❌ Invalid context: " <> T.pack err
           exitFailure
-      let runners = taskRunners context
+      let runners = taskRunners context seriesMap runConfigs contentIds discovered
       results <- runTasks runners tasks
 
       -- Push vault ONCE at the end

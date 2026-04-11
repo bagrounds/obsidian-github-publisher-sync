@@ -1,0 +1,7 @@
+{ name = "Systems for Public Good"
+, icon = "🏛️"
+, priorityUser = Some "bagrounds"
+, scheduleHourPacific = 9
+, models = [ "gemini-2.5-flash", "gemini-2.5-flash-lite", "gemini-3.1-flash-lite-preview" ]
+, postTimeUtc = "17:00"
+}

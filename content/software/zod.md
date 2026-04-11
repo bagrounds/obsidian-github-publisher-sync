@@ -7,9 +7,13 @@ URL: https://bagrounds.org/software/zod
 link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-07T00:00:00Z
 force_analyze_links: false
+image_date: 2026-04-11T09:22:19Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A futuristic, minimalist illustration of a glowing, translucent geometric puzzle box floating in a dark, high-tech void. The box is composed of interconnected crystalline shapes that fit together with mechanical precision. A single piece of data—represented as a luminous, liquid-gold sphere—is being guided into a perfectly shaped opening in the box. Surrounding the scene are subtle, floating holographic code snippets and faint neon grid lines that suggest a digital architectural environment. The lighting is cool and sharp, emphasizing the theme of structural integrity and type-safe validation, with a high-contrast aesthetic that feels clean, precise, and sophisticated.
 ---
 [Home](../index.md) > [Software](./index.md)  
 # 👽🦺 Zod  
+![software-zod](../software-zod.jpg)  
   
 ## 🤖 AI Summary  
 ### 💾 Software Report: Zod 🛡️  

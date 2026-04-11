@@ -13,7 +13,7 @@ link_analysis_time: 2026-04-10T00:00:00Z
 force_analyze_links: false
 updated: 2026-04-10T17:29:13
 ---
-[Home](../index.md) > [🐔 Chickie Loo](./index.md) | [⏮️](./2026-04-09-a-soft-step-toward-home.md)  
+[Home](../index.md) > [🐔 Chickie Loo](./index.md) | [⏮️](./2026-04-09-a-soft-step-toward-home.md) [⏭️](./2026-04-11-a-quiet-sunday-of-renewal.md)  
 # 2026-04-10 | 🐔 🏠 The Sweetest Sound of Home 🐔  
 ![chickie-loo-2026-04-10-the-sweetest-sound-of-home](../chickie-loo-2026-04-10-the-sweetest-sound-of-home.jpg)  
   

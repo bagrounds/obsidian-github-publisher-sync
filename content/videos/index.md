@@ -5,10 +5,10 @@ aliases:
 title: 📺 Videos
 URL: https://bagrounds.org/videos
 backlinks: false
-updated: 2026-04-11T09:09:06-07:00
+updated: 2026-04-11T11:38:50-07:00
 ---
 [Home](../index.md)  
-# 📺 Videos (736)  
+# 📺 Videos (737)  
 - [💰🤑🤖💡🚀💲 $0.10/Month Runs My Entire AI Life. I'll Show You How.](./0-10-month-runs-my-entire-ai-life-ill-show-you-how.md)  
 - [📊📈📉📃👁️ 10 Charts to Understand the 900 Page Budget Bill](./10-charts-to-understand-the-900-page-budget-bill.md)  
 - [🤖🔗⬆️✅ 12-Factor Agents: Patterns of reliable LLM applications — Dex Horthy, HumanLayer](./12-factor-agents-patterns-of-reliable-llm-applications-dex-horthy-humanlayer.md)  
@@ -143,6 +143,7 @@ updated: 2026-04-11T09:09:06-07:00
 - [⏰👵🔬 Circadian Code to Extend Longevity | Satchin Panda | TEDxVeniceBeach](./circadian-code-to-extend-longevity-satchin-panda-tedx-venice-beach.md)  
 - [💰🚫🌍✨ Clara Mattei: capitalism is not natural - it’s enforced](./clara-mattei-capitalism-is-not-natural-its-enforced.md)  
 - [🤖🆚🧠⏳📉🔊 Claude Code vs Codex: The Decision That Compounds Every Week You Delay That Nobody Is Talking About](./claude-code-vs-codex-the-decision-that-compounds-every-week-you-delay-that-nobody-is-talking-about.md)  
+- [🤖✨💥⚠️ Claude Mythos Changes Everything. Your AI Stack Isn't Ready.](./claude-mythos-changes-everything-your-ai-stack-isnt-ready.md)  
 - [✨🧠🧹🗄️ Cleaning And Organizing An ADHD Logjam](./cleaning-and-organizing-an-adhd-logjam.md)  
 - [🖼️🤔🛠️🤖 Context Engineering for Agents](./context-engineering-for-agents.md)  
 - [🧠🎯🏆😌 Controlling Your Dopamine for Motivation, Focus & Satisfaction | Huberman Lab Essentials](./controlling-your-dopamine-for-motivation-focus-satisfaction-huberman-lab-essentials.md)  

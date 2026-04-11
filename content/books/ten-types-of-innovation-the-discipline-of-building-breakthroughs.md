@@ -6,6 +6,9 @@ URL: https://bagrounds.org/books/ten-types-of-innovation-the-discipline-of-build
 share: true
 CTA: 💡 Invent tomorrow.
 affiliate link: https://amzn.to/45mhkHi
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_time: 2026-04-11T00:00:00Z
+force_analyze_links: false
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🔟💡 Ten Types of Innovation: The Discipline of Building Breakthroughs  
@@ -56,7 +59,7 @@ affiliate link: https://amzn.to/45mhkHi
   
 ### ⚖️ Contrasting Perspectives  
   
-* 🌟 **"Originals: How Non-Conformists Move the World" by Adam Grant:** This book challenges the idea that innovation is solely the domain of disciplined, systematic processes. 🦸 Grant explores the habits and characteristics of "originals"—individuals who champion new ideas and fight against groupthink. 👤 It offers a more individual-focused and psychological perspective on creativity.  
+* 🌟 **"[💡🎨 Originals: How Non-Conformists Move the World](./originals.md)" by Adam Grant:** This book challenges the idea that innovation is solely the domain of disciplined, systematic processes. 🦸 Grant explores the habits and characteristics of "originals"—individuals who champion new ideas and fight against groupthink. 👤 It offers a more individual-focused and psychological perspective on creativity.  
 * **[💡📜 Where Good Ideas Come From: The Natural History of Innovation](./where-good-ideas-come-from-the-natural-history-of-innovation.md) by Steven Johnson:** Johnson argues that innovation is not typically the result of a single "eureka" moment but rather a slow, collaborative process of connecting existing ideas in new ways. 🧑‍🤝‍🧑 This contrasts with the more structured, firm-centric approach of "Ten Types" and emphasizes the role of environment and networks in fostering creativity.  
 * **[📉🧪🚀 The Lean Startup: How Today's Entrepreneurs Use Continuous Innovation to Create Radically Successful Businesses](./the-lean-startup.md) by Eric Ries:** While also focused on a disciplined approach, "The Lean Startup" emphasizes rapid prototyping, validated learning, and iterative development. ⬇️ Its bottom-up, experimental approach can be seen as a contrast to the more top-down, analytical framework of "Ten Types."  
   

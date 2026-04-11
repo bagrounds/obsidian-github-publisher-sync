@@ -9,6 +9,9 @@ Platform:
 Channel: Heather Cox Richardson
 tags:
 youtube: https://www.youtube.com/embed/r6AJHeeVhQk
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_time: 2026-04-11T00:00:00Z
+force_analyze_links: false
 ---
 [Home](../index.md) > [Videos](./index.md) | [🏛️🇺🇸📖 Heather Cox Richardson](../people/heather-cox-richardson.md)  
 # 🗣️🏛️🗓️ Politics Chat, December 4, 2025  
@@ -65,5 +68,5 @@ youtube: https://www.youtube.com/embed/r6AJHeeVhQk
   
 * [💩💼 Bullshit Jobs: A Theory](../books/bullshit-jobs-a-theory.md) by David Graeber  
     * 💼 Description: Tangentially relates by exploring how modern bureaucratic and corporate systems generate pointless employment, which ties into the video's discussion of a political-economic system that prioritizes extraction and wealth concentration over productive or socially beneficial work.  
-* 📚 The Power Broker Robert Moses and the Fall of New York by Robert A Caro  
+* 📚 [👑🏙️ The Power Broker](../books/the-power-broker.md) Robert Moses and the Fall of New York by Robert A Caro  
     * 🏗️ Description: This book illustrates the detailed mechanics of concentrating political power, focusing on Robert Moses's ability to manipulate government structures for decades, providing a granular look at the institutional tactics of power concentration described in the video.

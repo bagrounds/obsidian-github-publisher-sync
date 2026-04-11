@@ -4,13 +4,16 @@ aliases:
   - 🧠🤝 System 2 Rapport Building
 title: 🧠🤝 System 2 Rapport Building
 URL: https://bagrounds.org/bot-chats/system-2-rapport-building
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_time: 2026-04-11T00:00:00Z
+force_analyze_links: false
 ---
 [Home](../index.md) > [Bot Chats](./index.md)  
 # 🧠🤝 System 2 Rapport Building  
 ## 💬 [Gemini](../software/gemini.md) Prompt 1  
 > 🤔 Identify novel insights that emerge from the synthesis of ideas from the following books.  
 💡 Pick the most valuable insight and write a guide for exercising this idea to great practical benefit.  
-✍️ Condense this guide into the most concise expression of this idea. 💎 Channel Strunk and White’s The Elements of Style to compress the core, most valuable essence of this idea into the fewest, densest, most valuable words possible.  
+✍️ Condense this guide into the most concise expression of this idea. 💎 Channel Strunk and White’s [🦢 The Elements of Style](../books/the-elements-of-style.md) to compress the core, most valuable essence of this idea into the fewest, densest, most valuable words possible.  
 📚 Recommend unmentioned books closely related to these ideas.  
 >- [🤝🐾 Rapport: The Four Ways to Read People](../books/rapport.md)  
 >- [🤔🐇🐢 Thinking, Fast and Slow](../books/thinking-fast-and-slow.md)  

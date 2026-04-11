@@ -4,11 +4,14 @@ aliases:
   - 📚🤖💬 RAG and Agents
 title: 📚🤖💬 RAG and Agents
 URL: https://bagrounds.org/bot-chats/rag-and-agents
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_time: 2026-04-11T00:00:00Z
+force_analyze_links: false
 ---
 [Home](../index.md) > [Bot Chats](./index.md)  
 # 📚🤖💬 RAG and Agents  
 ## 💬 [Gemini](../software/gemini.md) Prompt 1  
-> 📚 I'm interested in chapter 6 (RAG and Agents) of the book AI Engineering: Building Applications with Foundation Models. 💡 Can you recommend books that go broader and deeper on the design and implementation of 🔍 RAG and 🤖 agentic AI systems?  
+> 📚 I'm interested in chapter 6 (RAG and Agents) of the book [🤖🏗️ AI Engineering: Building Applications with Foundation Models](../books/ai-engineering-building-applications-with-foundation-models.md). 💡 Can you recommend books that go broader and deeper on the design and implementation of 🔍 RAG and 🤖 agentic AI systems?  
   
 🏗️ Building on your interest in Chapter 6 of *AI Engineering: Building Applications with Foundation Models*, 📚 here are some books that can help you go broader and deeper into the design and implementation of RAG and agentic AI systems. 🚀 The field is moving quickly, 📰 so many of the most in-depth and practical resources are recent or upcoming publications.  
   

@@ -7,6 +7,9 @@ URL: https://bagrounds.org/books/democracy-if-we-can-keep-it
 Author:
 tags:
 affiliate link: https://amzn.to/3HBPu0g
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_time: 2026-04-08T00:00:00Z
+force_analyze_links: false
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🗳️✊🤺🇺🇸 Democracy, If We Can Keep It: The ACLU's 100-Year Fight for Rights in America  

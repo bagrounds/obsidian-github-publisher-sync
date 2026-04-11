@@ -7,9 +7,13 @@ URL: https://bagrounds.org/bot-chats/book-explorer-2
 link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-06T00:00:00Z
 force_analyze_links: false
+image_date: 2026-04-11T16:18:50Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A wide-angle, cinematic illustration of a vast, mystical library that spans across dimensions. In the center, a luminous, floating compass made of golden light serves as the focal point, its needle pointing toward a swirling nebula of books and constellations. The library shelves curve upward into an infinite sky, merging seamlessly with the cosmos. To one side, a small, cozy reading nook with a single glowing lantern represents the intimate act of reading. To the other, cosmic pathways—resembling glowing star charts—stretch out into the darkness, symbolizing the exploration of diverse topics like astrophysics, gut biology, and philosophy. The color palette is a rich blend of deep midnight blues, vibrant stardust purples, and warm, inviting ambers, creating a sense of wonder and intellectual adventure. The atmosphere is quiet, magical, and expansive.
 ---
 [Home](../index.md) > [Bot Chats](./index.md) | [⏮️ 📖 Book 🧭 Explorer 1](./book-explorer-1.md) [⏭️ 📖 Book 🧭 Explorer 3](./book-explorer-3.md)  
 # 📖 Book 🧭 Explorer 2  
+![bot-chats-book-explorer-2](../bot-chats-book-explorer-2.jpg)  
 ## 💬 [Gemini](../software/gemini.md) Prompt 1  
 > [🌪️🧘🏼‍♀️ Full Catastrophe Living: Using the Wisdom of Your Body and Mind to Face Stress, Pain, and Illness](../books/full-catastrophe-living.md)  
   

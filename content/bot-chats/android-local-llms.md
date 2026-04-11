@@ -7,9 +7,13 @@ URL: https://bagrounds.org/bot-chats/android-local-llms
 link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-07T00:00:00Z
 force_analyze_links: false
+image_date: 2026-04-11T14:21:51Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A sleek, isometric illustration featuring a modern smartphone resting on a minimalist desk. The phone’s screen glows with a vibrant, abstract neural network pattern, with glowing nodes and interconnected lines spilling out of the display to hover in the air, symbolizing local processing. In the background, a subtle, stylized terminal window interface is partially visible, hinting at the command-line setup. The color palette uses deep navy and charcoal tones contrasted by bright, neon cyan and electric purple accents to represent artificial intelligence. Soft, cinematic lighting highlights the edges of the device, creating a futuristic, technical aesthetic that emphasizes the power of on-device intelligence.
 ---
 [Home](../index.md) > [Bot Chats](./index.md)  
 # 🤖📱🧠 Android Local LLMs  
+![bot-chats-android-local-llms](../bot-chats-android-local-llms.jpg)  
 ## [Meta.ai](https://www.meta.ai) Prompt  
 > I want to run a local 🏡 [llm](../topics/large-language-models.md) on my android 🤖 in order to power AI 🧠 apps on my android 🤖. For example, I want to use an [obsidian](../software/obsidian.md) 📝 plugin that calls to an LLM server to power text generation ✍️. What's the easiest way to do this? Unless there's an app that sets this up already, I'm thinking it might be easiest to run the [Ollama](../software/ollama.md) 🦙 server in [termux](../software/termux.md), expose the server to the android 🤖 os somehow (port forward or something may be necessary, not sure) and then use the local network interface as the web addresses when configuring my obsidian 📝 plugin. I'm not 100% sure if that's possible, but if it is, it's likely a bit of a pain 😫 to set up. Ideally, there's some android 🤖 app that will already handle this for me (with the constraint being that it runs local llms - I don't want to make calls to a cloud ☁️ service). What do you think?  
   

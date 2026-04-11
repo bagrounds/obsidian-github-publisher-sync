@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-04-10T14:02:08-07:00
+updated: 2026-04-10T15:34:37-07:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -21,11 +21,11 @@ updated: 2026-04-10T14:02:08-07:00
 - [2026-04-07 | ✨ Sacred 🗣️ Chat 🔄 Shifts 🌍 World ⚖️ Right 📺📰🐔🏛️🤖🤖🐲](./reflections/2026-04-07.md)  
   
   
-## [🤖 AI Blog](./ai-blog/index.md) (124)  
+## [🤖 AI Blog](./ai-blog/index.md) (125)  
+- [2026-04-10 | 🎨 Separating Data from Behavior in Image Providers 🧩](./ai-blog/2026-04-10-5-separating-data-from-behavior-in-image-providers.md)  
 - [2026-04-10 | 🛡️ Replacing Error Calls with Either Returns 🧱](./ai-blog/2026-04-10-4-replacing-error-calls-with-either-returns.md)  
 - [2026-04-10 | 🧪 Testing Either Error Paths 🛡️](./ai-blog/2026-04-10-3-testing-either-error-paths.md)  
 - [2026-04-10 | 🔍 Enforcing HLint Across the Haskell Codebase 🧹](./ai-blog/2026-04-10-1-enforcing-hlint-across-the-haskell-codebase.md)  
-- [2026-04-09 | 🎯 Typed Errors for the Gemini Module 🛡️](./ai-blog/2026-04-09-5-typed-errors-for-gemini-module.md)  
   
   
 ## [🤖 Auto Blog Zero](./auto-blog-zero/index.md) (31)  
@@ -57,10 +57,10 @@ updated: 2026-04-10T14:02:08-07:00
   
   
 ## [📺 Videos](./videos/index.md) (735)  
-- [🧠❓🤯 The More You Study Consciousness, the Weirder It Gets | The Ezra Klein Show](./videos/the-more-you-study-consciousness-the-weirder-it-gets-the-ezra-klein-show.md)  
-- [🇺🇸🗣️🏛️ American Conversations: Senator Andy Kim](./videos/american-conversations-senator-andy-kim.md)  
-- [Infant Cosleeping with James McKenna, PhD](./videos/infant-cosleeping-with-james-mckenna-phd.md)  
-- [👶🛏️⚖️ Co-Sleeping With Infants: Science, Public Policy, and Parents Civil Rights, with James McKenna, PhD](./videos/co-sleeping-with-infants-science-public-policy-and-parents-civil-rights-with-james-mckenna-phd.md)  
+- [🗳️🔓🤔 Is it easy to steal an election?](./videos/is-it-easy-to-steal-an-election.md)  
+- [🇺🇸🤯😵‍💫❓ How half the US lost part of their minds](./videos/how-half-the-us-lost-part-of-their-minds.md)  
+- [🤔🧐📚💯🏆 Critical Thinking Book Recommendations – My Top 5 Must Reads](./videos/critical-thinking-book-recommendations-my-top-5-must-reads.md)  
+- [🎯🪜🏗️✅ How to Build Systems to Actually Achieve Your Goals](./videos/how-to-build-systems-to-actually-achieve-your-goals.md)  
   
   
 ## [🌌 Topics](./topics/index.md) (91)  
@@ -85,10 +85,10 @@ updated: 2026-04-10T14:02:08-07:00
   
   
 ## [💾 Software](./software/index.md) (33)  
-- [💾➕🤝 Git](./software/git.md)  
-- [🤖♊ Gemini](./software/gemini.md)  
-- [⚙️📊🔄 FlexSim](./software/flexsim.md)  
-- [🌐🛤️ Express.js](./software/express.md)  
+- [🎨🧱 Graphiti](./software/graphiti.md)  
+- [📊🔍📈 Google Search Console](./software/google-search-console.md)  
+- [🕸️📊 Google Analytics](./software/google-analytics.md)  
+- [🤖💻🪄 GitHub Copilot for VS Code](./software/github-copilot-for-vs-code.md)  
   
   
 ## [👥 People](./people/index.md) (18)  

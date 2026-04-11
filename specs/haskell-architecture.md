@@ -171,15 +171,29 @@ Each error migration delivered with test coverage:
 21. **Place functions in their owning domain module**: `generateSlug` belongs with `Slug` and `mkSlug` in `BlogPrompt`, not in a generic `Utilities` module. `stripCodeFences` belongs in `Text` alongside other text transformations. `isReflectionFile` and `extractCreativeTitle` belong in `ReflectionTitle` since they're part of the reflection title domain. Following vertical slicing means the function lives where its domain concept is defined.
 22. **Separate IO from pure logic in IO functions**: When an IO function like `extractRecentCreativeTitles` contains both file I/O and pure parsing, extract the pure parsing as a separate function. The IO function becomes a thin wrapper that reads the file and delegates to the pure function.
 
+### Completed: Replace Error Calls in RunScheduled.hs Task Runners + Tests
+
+**Goal**: Replace non-startup `error` calls in RunScheduled.hs with typed `TaskError` exceptions. The `error` function throws untyped `ErrorCall` exceptions, while `TaskError` provides a typed exception with a clean `Show` instance that outputs the message text directly (no constructor prefix), making error messages in the TaskRunner's run summary more readable.
+
+- [x] Define `TaskError` typed exception in `Automation.TaskRunner` — `newtype TaskError = TaskError Text` with `Exception` instance and custom `Show` that outputs the message text directly (no constructor wrapper). This replaces the blunt `ErrorCall` thrown by `error`.
+- [x] Add `failTask :: Text -> IO a` helper — throws `TaskError`, providing a consistent error handling pattern for all task runners. Accepts `Text` directly (no `T.unpack` needed at call sites).
+- [x] Replace 7 non-startup `error` calls in `RunScheduled.hs` with `failTask`: `callGeminiForGenerator` (Gemini API error), `runBlogSeries` (no run config, lookupSeries failure, blog context build failure, blog generation failure, failed to parse generated post, invalid slug).
+- [x] Restructure slug construction from pure `let` binding with `error` fallback to monadic `either failTask pure` pattern (since `failTask` returns `IO a`, it cannot be used in a pure binding).
+- [x] 7 new tests (1202 → 1209): Show instance outputs message without constructor, unicode preservation, SomeException catch, fromException type match, runTasks integration marks task as failed, error message fidelity in run summary, property test for message round-trip through catch.
+
+**Learnings from replacing error calls:**
+23. **Typed exceptions over error**: Use `throwIO` with a domain-specific exception type instead of `error`. The `error` function throws `ErrorCall` which carries no type information. A `TaskError` exception can be caught specifically with `fromException`, and its custom `Show` instance provides clean messages without the `ErrorCall` prefix.
+24. **Accept Text at the boundary**: `failTask :: Text -> IO a` accepts `Text` directly, eliminating `T.unpack` calls at error sites. Since most error messages are already `Text` values (from domain functions like `lookupSeries` returning `Either Text`), this reduces boilerplate.
+25. **Pure bindings cannot use IO failures**: When replacing `error` (which is `forall a. String -> a` and fits in any expression) with `failTask` (which returns `IO a`), pure `let` bindings must be restructured into monadic `do` bindings. The `either failTask pure` pattern cleanly bridges `Either Text a` values into `IO a`.
+
 ### Next: Remaining Improvements
 
 Prioritized list of remaining architecture improvements:
 
-1. **Replace `error` calls in RunScheduled.hs task runners** — 7 non-startup `error` calls that can crash the scheduler at runtime. Replace with proper `Either` returns, logging + task failure, or early returns. The task runner framework already catches exceptions via `try`, but explicit error handling is more principled.
-2. **Break up SocialPosting.hs** — 921 lines, 38 imports. Extract platform-specific posting orchestration, reflection eligibility checks, and post formatting into focused modules.
-3. **Break up BlogImage.hs** — 1,291 lines, 26 imports. Extract image provider resolution, backfill orchestration, and eligibility checking into focused modules.
-4. **Break up InternalLinking.hs** — 961 lines, 25 imports. Extract link candidate discovery, similarity matching, and file processing into focused modules.
-5. **Extract remaining pure cores** — Several IO functions in library modules mix I/O with pure logic that could be extracted and tested independently.
+1. **Break up SocialPosting.hs** — 921 lines, 38 imports. Extract platform-specific posting orchestration, reflection eligibility checks, and post formatting into focused modules.
+2. **Break up BlogImage.hs** — 1,291 lines, 26 imports. Extract image provider resolution, backfill orchestration, and eligibility checking into focused modules.
+3. **Break up InternalLinking.hs** — 961 lines, 25 imports. Extract link candidate discovery, similarity matching, and file processing into focused modules.
+4. **Extract remaining pure cores** — Several IO functions in library modules mix I/O with pure logic that could be extracted and tested independently.
 
 ## Guiding Principles
 

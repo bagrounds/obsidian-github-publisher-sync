@@ -1,5 +1,7 @@
 module Automation.TaskRunner
   ( TaskResult
+  , TaskError (..)
+  , failTask
   , interTaskDelayMicroseconds
   , inferenceDashboards
   , runTasks
@@ -9,7 +11,7 @@ module Automation.TaskRunner
   ) where
 
 import Control.Concurrent (threadDelay)
-import Control.Exception (SomeException, try)
+import Control.Exception (Exception, SomeException, throwIO, try)
 import Data.Map.Strict (Map)
 import qualified Data.Map.Strict as Map
 import Data.Text (Text)
@@ -18,6 +20,16 @@ import qualified Data.Text.IO as TIO
 import Data.Time (defaultTimeLocale, formatTime, getCurrentTime)
 
 import Automation.Scheduler (TaskId, taskIdToText)
+
+newtype TaskError = TaskError Text
+
+instance Show TaskError where
+  show (TaskError message) = T.unpack message
+
+instance Exception TaskError
+
+failTask :: Text -> IO a
+failTask = throwIO . TaskError
 
 type TaskResult = (TaskId, Bool, Maybe Text)
 

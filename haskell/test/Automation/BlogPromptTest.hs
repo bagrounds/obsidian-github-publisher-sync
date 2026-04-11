@@ -9,6 +9,7 @@ import qualified Data.Text as T
 import Data.Time (fromGregorian)
 
 import Automation.BlogPrompt
+import Automation.PacificTime (formatDay)
 import Automation.BlogSeriesConfig (BlogSeriesConfig, lookupSeries)
 
 unsafeLookupSeries :: T.Text -> BlogSeriesConfig

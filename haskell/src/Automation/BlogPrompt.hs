@@ -4,7 +4,6 @@ module Automation.BlogPrompt
   , DisplayTitle (..)
   , mkSlug
   , generateSlug
-  , formatDay
   , stripEmbedSections
   , buildBlogPrompt
   , filterCommentsAfterLastPost
@@ -13,7 +12,6 @@ module Automation.BlogPrompt
   , assembleFrontmatter
   , buildDisplayTitle
   , sanitizeTitle
-  , todayPacificDay
   , recapInstructions
   ) where
 
@@ -25,18 +23,10 @@ import qualified Data.Text as T
 import Data.Time
   ( Day
   , DayOfWeek (..)
-  , TimeZone (..)
-  , UTCTime (..)
   , addDays
   , dayOfWeek
-  , defaultTimeLocale
-  , formatTime
   , fromGregorian
-  , getCurrentTime
-  , localDay
-  , secondsToDiffTime
   , toGregorian
-  , utcToLocalTime
   )
 import Text.Read (readMaybe)
 
@@ -44,6 +34,7 @@ import Automation.BlogComments (BlogComment (..))
 import Automation.BlogPosts (BlogPost (..))
 import Automation.BlogSeriesConfig (BlogSeriesConfig (..))
 import Automation.Frontmatter (quoteYamlValue)
+import Automation.PacificTime (formatDay, formatDayHuman)
 import qualified Automation.Platforms.Bluesky as Bluesky
 import qualified Automation.Platforms.Mastodon as Mastodon
 import qualified Automation.Platforms.Twitter as Twitter
@@ -148,16 +139,6 @@ assembleFrontmatter series day title slug =
     , "---"
     ]
 
-formatDay :: Day -> Text
-formatDay = T.pack . formatTime defaultTimeLocale "%Y-%m-%d"
-
-todayPacificDay :: IO Day
-todayPacificDay = do
-  utcNow <- getCurrentTime
-  let tz = pacificTimeZone utcNow
-      localTime = utcToLocalTime tz utcNow
-  pure $ localDay localTime
-
 recapInstructions :: Day -> Text
 recapInstructions day =
   let dow = dayOfWeek day
@@ -185,7 +166,8 @@ buildUserPrompt ctx =
       posts = bcxPreviousPosts ctx
       comments = bcxComments ctx
       today = bcxToday ctx
-      header = "Write the next blog post for the " <> bscName series <> " series."
+      header = "Today is " <> formatDayHuman today <> "."
+        <> "\nWrite the next blog post for the " <> bscName series <> " series."
         <> "\nToday's date: " <> formatDay today
         <> "\n\nIMPORTANT: Your heading (# or ##) must contain ONLY the creative title."
         <> " Do not include dates, pipe separators, or the series icon emoji in your heading."
@@ -265,34 +247,6 @@ yearlyRecap :: Text
 yearlyRecap =
   "🎆 Today is the last day of the year. Please include a yearly recap "
     <> "section reflecting on the major themes and developments from the entire year."
-
-pacificTimeZone :: UTCTime -> TimeZone
-pacificTimeZone utcNow
-  | isPacificDST utcNow = TimeZone (-420) True "PDT"
-  | otherwise            = TimeZone (-480) False "PST"
-
-isPacificDST :: UTCTime -> Bool
-isPacificDST utcNow =
-  let (year, _, _) = toGregorian (utctDay utcNow)
-      dstStart = UTCTime (nthSundayOf 2 year 3) (secondsToDiffTime (10 * 3600))
-      dstEnd   = UTCTime (nthSundayOf 1 year 11) (secondsToDiffTime (9 * 3600))
-  in utcNow >= dstStart && utcNow < dstEnd
-
-nthSundayOf :: Int -> Integer -> Int -> Day
-nthSundayOf n year month =
-  let first = fromGregorian year month 1
-      offset = daysUntilSunday (dayOfWeek first)
-  in addDays (fromIntegral (offset + 7 * (n - 1))) first
-
-daysUntilSunday :: DayOfWeek -> Int
-daysUntilSunday = \case
-  Sunday    -> 0
-  Monday    -> 6
-  Tuesday   -> 5
-  Wednesday -> 4
-  Thursday  -> 3
-  Friday    -> 2
-  Saturday  -> 1
 
 generateSlug :: Text -> Text
 generateSlug title =

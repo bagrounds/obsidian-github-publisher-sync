@@ -8,7 +8,6 @@ module Automation.Scheduler
   , taskIdToText
   , taskIdFromText
   , nowPacificHour
-  , pacificHour
   , getScheduledTasks
   , isValidTaskId
   , extractSeriesId
@@ -25,26 +24,13 @@ import qualified Data.Set as Set
 import Data.Text (Text)
 import qualified Data.Text as T
 import qualified Data.Text.IO as TIO
-import Data.Time
-  ( Day
-  , DayOfWeek (..)
-  , TimeZone (..)
-  , UTCTime (..)
-  , addDays
-  , dayOfWeek
-  , fromGregorian
-  , getCurrentTime
-  , localTimeOfDay
-  , secondsToDiffTime
-  , todHour
-  , toGregorian
-  , utcToLocalTime
-  )
+import Data.Time (getCurrentTime)
 import GHC.Generics (Generic)
 import System.Directory (doesDirectoryExist, listDirectory)
 import System.FilePath (takeExtension, (</>))
 
 import qualified Automation.Gemini as Gemini
+import Automation.PacificTime (pacificHour)
 
 data TaskId
   = BlogSeriesChickieLoo
@@ -145,38 +131,6 @@ extractSeriesId = T.stripPrefix "blog-series:" . taskIdToText
 
 nowPacificHour :: IO Int
 nowPacificHour = pacificHour <$> getCurrentTime
-
-pacificHour :: UTCTime -> Int
-pacificHour utcNow =
-  todHour (localTimeOfDay (utcToLocalTime (pacificTimeZone utcNow) utcNow))
-
-pacificTimeZone :: UTCTime -> TimeZone
-pacificTimeZone utcNow
-  | isPacificDST utcNow = TimeZone (-420) True "PDT"
-  | otherwise            = TimeZone (-480) False "PST"
-
-isPacificDST :: UTCTime -> Bool
-isPacificDST utcNow =
-  let (year, _, _) = toGregorian (utctDay utcNow)
-      dstStart = UTCTime (nthSundayOf 2 year 3) (secondsToDiffTime (10 * 3600))
-      dstEnd   = UTCTime (nthSundayOf 1 year 11) (secondsToDiffTime (9 * 3600))
-  in utcNow >= dstStart && utcNow < dstEnd
-
-nthSundayOf :: Int -> Integer -> Int -> Day
-nthSundayOf n year month =
-  let first = fromGregorian year month 1
-      offset = daysUntilSunday (dayOfWeek first)
-  in addDays (fromIntegral (offset + 7 * (n - 1))) first
-
-daysUntilSunday :: DayOfWeek -> Int
-daysUntilSunday = \case
-  Sunday    -> 0
-  Monday    -> 6
-  Tuesday   -> 5
-  Wednesday -> 4
-  Thursday  -> 3
-  Friday    -> 2
-  Saturday  -> 1
 
 blogPostMatchesToday :: Text -> [String] -> Bool
 blogPostMatchesToday today =

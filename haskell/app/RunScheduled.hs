@@ -36,11 +36,9 @@ import Automation.BlogPrompt
   , buildBackLink
   , buildBlogPrompt
   , buildDisplayTitle
-  , formatDay
   , generateSlug
   , mkSlug
   , sanitizeTitle
-  , todayPacificDay
   )
 import Automation.BlogSeries
   ( appendModelSignature
@@ -87,6 +85,7 @@ import qualified Automation.Context as Context
 import qualified Automation.InternalLinking as IL
 import Automation.SocialPosting (autoPost)
 import Automation.CliArgs (CliArgs (..), parseCliArgs)
+import Automation.PacificTime (formatDay, todayPacificDay)
 import Automation.VaultSync (syncFileToVault, syncNewAiBlogPosts, copySeriesPosts)
 import Automation.TaskRunner (inferenceDashboards, runTasks, logMsg, failTask)
 import Automation.Text (stripCodeFences)

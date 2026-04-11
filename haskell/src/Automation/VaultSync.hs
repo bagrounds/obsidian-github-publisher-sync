@@ -13,7 +13,7 @@ import Data.Text (Text)
 import qualified Data.Text as T
 import qualified Data.Text.IO as TIO
 import System.Directory (createDirectoryIfMissing, doesDirectoryExist, doesFileExist, listDirectory)
-import System.FilePath (takeExtension, (</>))
+import System.FilePath (takeDirectory, takeExtension, (</>))
 
 import Automation.Text (wordJaccardSimilarity)
 
@@ -43,8 +43,6 @@ syncFileToVault localPath vaultRelativePath vaultDirectory = do
           createDirectoryIfMissing True (takeDirectory vaultPath)
           TIO.writeFile vaultPath localContent
           pure True
-  where
-    takeDirectory = reverse . dropWhile (/= '/') . reverse
 
 -- ---------------------------------------------------------------------------
 -- syncNewAiBlogPosts (copy-if-missing with content similarity dedup)
@@ -151,5 +149,3 @@ ensureFileInVault vaultPath content = do
       createDirectoryIfMissing True (takeDirectory vaultPath)
       TIO.writeFile vaultPath content
       pure True
-  where
-    takeDirectory = reverse . dropWhile (/= '/') . reverse

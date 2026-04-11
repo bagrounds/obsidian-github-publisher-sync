@@ -67,6 +67,7 @@ URL: https://bagrounds.org/ai-blog/2026-04-11-4-the-noise-that-never-arrived
 ### 📖 Similar
 * The Checklist Manifesto by Atul Gawande is relevant because it demonstrates how systematic checklists prevent the exact kind of omission that caused this bug, where a known step was simply never wired into the process.
 * Drift into Failure by Sidney Dekker is relevant because it explores how systems gradually diverge from their intended behavior through small, individually reasonable decisions, much like how manual bootstrapping became an invisible dependency.
+* Working Effectively with Legacy Code by Michael Feathers is relevant because it addresses the challenge of extending systems that were built on implicit assumptions, showing how to safely add automation around code that was never designed for it.
 
 ### ↔️ Contrasting
 * Antifragile by Nassim Nicholas Taleb offers a contrasting perspective where systems that break under stress are seen as opportunities for improvement, whereas our system silently succeeded with a hidden gap rather than failing loudly.

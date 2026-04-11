@@ -2,15 +2,13 @@ module Automation.BlogImageTest (tests) where
 
 import Data.Maybe (isJust)
 import Data.List (isInfixOf)
-import Data.Map.Strict (Map)
 import qualified Data.Map.Strict as Map
-import Data.Text (Text)
 import qualified Data.Text as T
-import Data.Time (Day, fromGregorian)
+import Data.Time (fromGregorian)
 import Test.Tasty (TestTree, testGroup)
 import Test.Tasty.HUnit (testCase, (@?=), assertBool)
 import Test.Tasty.QuickCheck (testProperty)
-import Test.QuickCheck (Property, (==>), forAll, listOf1, elements)
+import Test.QuickCheck ((==>), forAll, listOf1, elements)
 
 import Automation.BlogImage
 import Automation.Frontmatter (YamlValue (..))
@@ -228,7 +226,9 @@ tests = testGroup "BlogImage"
               providers = resolveImageProviders env
           in do
             assertBool "should have at least one provider" $ not (null providers)
-            providerName (ipcProvider (Prelude.head providers)) @?= "gemini"
+            case providers of
+              (first:_) -> providerName (ipcProvider first) @?= "gemini"
+              []        -> assertBool "should have at least one provider" False
       , testCase "creates Cloudflare provider when token and account present" $
           let env = Map.fromList
                 [ ("CLOUDFLARE_API_TOKEN", "cf-token")
@@ -237,7 +237,9 @@ tests = testGroup "BlogImage"
               providers = resolveImageProviders env
           in do
             assertBool "should have provider" $ not (null providers)
-            providerName (ipcProvider (Prelude.head providers)) @?= "cloudflare"
+            case providers of
+              (first:_) -> providerName (ipcProvider first) @?= "cloudflare"
+              []        -> assertBool "should have at least one provider" False
       , testCase "creates providers in correct order" $
           let env = Map.fromList
                 [ ("CLOUDFLARE_API_TOKEN", "cf-token")
@@ -445,7 +447,6 @@ tests = testGroup "BlogImage"
       , testCase "Cloudflare carries account ID" $
           case Cloudflare "my-account-123" of
             Cloudflare accountId -> accountId @?= "my-account-123"
-            _                    -> assertBool "expected Cloudflare" False
       , testCase "ImageProvider Eq distinguishes constructors" $
           assertBool "different providers are not equal" $ HuggingFace /= Together
       , testCase "ImageProvider Eq treats same constructors as equal" $

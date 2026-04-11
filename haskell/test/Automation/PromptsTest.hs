@@ -1,7 +1,6 @@
 module Automation.PromptsTest (tests) where
 
 import Data.Char (isAlphaNum, isAscii)
-import Data.Text (Text)
 import qualified Data.Text as T
 import Test.Tasty (TestTree, testGroup)
 import Test.Tasty.HUnit (testCase, (@?=), assertBool)
@@ -11,7 +10,7 @@ import qualified Test.Tasty.QuickCheck as QC
 import Automation.Prompts
 import Automation.TestGenerators (testUrl, testTitle)
 import qualified Automation.Platforms.Bluesky as Bluesky
-import Automation.Types (ReflectionData (..), PlatformLimits (..), Title, unTitle, mkTitle, Url, unUrl, mkUrl)
+import Automation.Types (ReflectionData (..), PlatformLimits (..), unTitle, unUrl)
 
 tests :: TestTree
 tests = testGroup "Prompts"

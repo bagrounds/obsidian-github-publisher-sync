@@ -19,6 +19,7 @@ common shared
     -Wincomplete-record-updates
     -Wincomplete-uni-patterns
     -Wredundant-constraints
+    -Werror
 
 library
   import:              shared

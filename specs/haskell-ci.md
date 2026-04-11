@@ -6,8 +6,9 @@ The Haskell CI workflow builds, tests, and packages the Haskell automation codeb
 
 ## Trigger
 
-- Push to any branch
+- Push to any branch, or pull request, when files match the path filter
 - Path filter: `haskell/**` and `.github/workflows/haskell.yml`
+- The `pull_request` trigger ensures Haskell CI appears as a check on PRs that touch Haskell files, even when the latest commit in the PR only changes non-Haskell files
 - Concurrency: one run per branch, cancels in-progress runs on new pushes
 
 ## Build Environment
@@ -15,26 +16,41 @@ The Haskell CI workflow builds, tests, and packages the Haskell automation codeb
 - Runs on `ubuntu-latest` inside the `haskell:9.14.1` container (GHC 9.14.1 + Cabal)
 - Permissions: `contents: read` only
 
+## Jobs
+
+The workflow runs two parallel jobs for maximum throughput:
+
+### build-and-test
+
+Builds the project, runs tests, and produces artifacts.
+
+### lint
+
+Runs HLint independently and in parallel with the build.
+
 ## Caching Strategy
 
-Two directories are cached for fast incremental builds:
+Three directories are cached for fast incremental builds:
 
 1. `~/.cabal/store` — pre-built dependency packages
-2. `haskell/dist-newstyle` — project compilation artifacts (object files, interface files, executables)
+2. `~/.cabal/packages` — downloaded Hackage package tarballs and index
+3. `haskell/dist-newstyle` — project compilation artifacts (object files, interface files, executables)
 
 Cache key structure (three-tier fallback):
 
-- **Exact key:** hash of `automation.cabal` + hash of all source files (`src/**`, `app/**`, `test/**`)
-- **First fallback:** hash of `automation.cabal` only (dependencies match, project incrementally recompiled)
+- **Exact key:** hash of `automation.cabal` + `cabal.project` + hash of all source files (`src/**`, `app/**`, `test/**`)
+- **First fallback:** hash of `automation.cabal` + `cabal.project` only (dependencies match, project incrementally recompiled)
 - **Second fallback:** any previous `cabal-ghc914-` key (best-effort partial cache)
 
 ## Build Step
 
 - `cabal update` — refreshes the Hackage package index
-- `cabal build all -j --ghc-options="-Werror"` — builds library, executables, and test suite in parallel with warnings treated as errors
+- `cabal build all -j` — builds library, executables, and test suite in parallel
+- The `cabal.project` file sets `tests: True` so `cabal build all` includes the test suite and its dependencies, ensuring the test step has nothing to rebuild
 
 ## Lint Step
 
+- Runs in a separate parallel job to avoid blocking the build-and-test critical path
 - `hlint src/ app/ test/` — runs HLint, the standard Haskell linter, against all source, executable, and test files
 - Any HLint hint (warning or suggestion) fails the build
 - HLint is installed via `apt-get` inside the container at CI time
@@ -42,6 +58,7 @@ Cache key structure (three-tier fallback):
 ## Test Step
 
 - `cabal test --test-show-details=direct` — runs the Tasty test suite with direct output
+- Because the build step already compiled the test suite with the same configuration, this step only executes the tests without recompilation
 
 ## Artifacts
 
@@ -54,6 +71,5 @@ Artifact retention: 90 days.
 
 ## Compiler Warnings Policy
 
-- The cabal file enables `-Wall`, `-Wcompat`, `-Widentities`, `-Wincomplete-record-updates`, `-Wincomplete-uni-patterns`, and `-Wredundant-constraints`
-- CI enforces `-Werror` so any warning is a build failure
-- All source files must compile warning-free
+- The cabal file enables `-Wall`, `-Wcompat`, `-Widentities`, `-Wincomplete-record-updates`, `-Wincomplete-uni-patterns`, `-Wredundant-constraints`, and `-Werror` for all components via the `shared` common stanza
+- All source files — library, executables, and tests — must compile warning-free

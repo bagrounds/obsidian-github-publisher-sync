@@ -13,7 +13,7 @@ link_analysis_time: 2026-04-10T00:00:00Z
 force_analyze_links: false
 updated: 2026-04-10T23:21:28
 ---
-[Home](../index.md) > [🏛️ Systems for Public Good](./index.md) | [⏮️](./2026-04-09-investing-in-lifelong-learning-beyond-the-k-12-horizon-revisited.md)  
+[Home](../index.md) > [🏛️ Systems for Public Good](./index.md) | [⏮️](./2026-04-09-investing-in-lifelong-learning-beyond-the-k-12-horizon-revisited.md) [⏭️](./2026-04-11-the-human-foundation-public-health-as-real-wealth.md)  
 # 2026-04-10 | 🏛️ 💡 Education as Reciprocity: Learning, Teaching, and Serving 🏛️  
 ![systems-for-public-good-2026-04-10-education-as-reciprocity-learning-teaching-and-serving](../systems-for-public-good-2026-04-10-education-as-reciprocity-learning-teaching-and-serving.jpg)  
   

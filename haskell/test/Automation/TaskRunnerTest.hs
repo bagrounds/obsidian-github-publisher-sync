@@ -162,8 +162,8 @@ properties = testGroup "properties"
         pure (resultIds == taskIdentifiers)
 
   , testProperty "failTask message round-trips through catch" $
-      QC.forAll (QC.arbitrary :: QC.Gen String) $ \message -> QC.ioProperty $ do
-        let textMessage = T.pack message
+      QC.forAll (QC.arbitrary :: QC.Gen String) $ \arbitraryMessage -> QC.ioProperty $ do
+        let textMessage = T.pack arbitraryMessage
         result <- try (failTask textMessage) :: IO (Either SomeException ())
         pure $ case result of
           Left exception -> T.pack (show exception) == textMessage

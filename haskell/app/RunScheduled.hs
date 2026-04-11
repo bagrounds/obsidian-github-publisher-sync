@@ -261,7 +261,7 @@ runBlogSeries context seriesId = do
                 Just (body, rawTitle) -> do
                   let title = sanitizeTitle series rawTitle
                       slugText = generateSlug title
-                  slug <- either (\e -> failTask $ "Invalid slug: " <> e) pure (mkSlug slugText)
+                  slug <- either (\slugError -> failTask $ "Invalid slug: " <> slugError) pure (mkSlug slugText)
                   let filename = todayText <> "-" <> unSlug slug <> ".md"
 
                   -- Read previous posts for nav link update

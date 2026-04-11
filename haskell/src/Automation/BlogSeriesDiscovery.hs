@@ -2,6 +2,7 @@ module Automation.BlogSeriesDiscovery
   ( DiscoveredSeries (..)
   , DiscoveryError (..)
   , parseDhallConfig
+  , parseSeriesConfig
   , discoverSeries
   , deriveBlogSeriesConfig
   , deriveBlogSeriesRunConfig
@@ -110,6 +111,12 @@ parseSeriesFile seriesDir filename = do
 parseDhallConfig :: Text -> Either ParseError RawConfig
 parseDhallConfig = parse dhallRecord "series config"
 
+parseSeriesConfig :: Text -> Text -> Either [DiscoveryError] DiscoveredSeries
+parseSeriesConfig seriesId content =
+  case parseDhallConfig content of
+    Left parseError -> Left [ParseError "<input>" parseError]
+    Right rawConfig -> validateRawConfig "<input>" seriesId rawConfig
+
 validateRawConfig :: FilePath -> Text -> RawConfig -> Either [DiscoveryError] DiscoveredSeries
 validateRawConfig filePath seriesId RawConfig{..} =
   let errors = concat
@@ -196,7 +203,7 @@ dhallRecord = do
   spaces
   _ <- lineComments
   _ <- char '{'
-  fields <- dhallField `sepBy` fieldSeparator
+  fields <- dhallField `sepBy` try fieldSeparator
   spaces
   _ <- lineComments
   _ <- char '}'
@@ -292,7 +299,7 @@ dhallNone = do
 dhallStringList :: Parser [Text]
 dhallStringList = between (char '[' >> spaces) (spaces >> char ']') items
   where
-    items = dhallString `sepBy` listSeparator
+    items = dhallString `sepBy` try listSeparator
     listSeparator = do
       spaces
       _ <- char ','

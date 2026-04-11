@@ -171,6 +171,7 @@ test-suite automation-tests
     Automation.VaultSyncTest
     Automation.TaskRunnerTest
     Automation.PacificTimeTest
+    Automation.BlogSeriesDiscoveryTest
     Automation.TestGenerators
   build-depends:
     base,

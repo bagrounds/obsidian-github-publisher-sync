@@ -41,6 +41,7 @@ import qualified Automation.CliArgsTest
 import qualified Automation.VaultSyncTest
 import qualified Automation.TaskRunnerTest
 import qualified Automation.PacificTimeTest
+import qualified Automation.BlogSeriesDiscoveryTest
 
 main :: IO ()
 main = defaultMain $ testGroup "Automation"
@@ -83,4 +84,5 @@ main = defaultMain $ testGroup "Automation"
   , Automation.VaultSyncTest.tests
   , Automation.TaskRunnerTest.tests
   , Automation.PacificTimeTest.tests
+  , Automation.BlogSeriesDiscoveryTest.tests
   ]

@@ -5,10 +5,10 @@ aliases:
 title: 📺 Videos
 URL: https://bagrounds.org/videos
 backlinks: false
-updated: 2026-04-10T15:34:37-07:00
+updated: 2026-04-10T18:14:31-07:00
 ---
 [Home](../index.md)  
-# 📺 Videos (735)  
+# 📺 Videos (736)  
 - [💰🤑🤖💡🚀💲 $0.10/Month Runs My Entire AI Life. I'll Show You How.](./0-10-month-runs-my-entire-ai-life-ill-show-you-how.md)  
 - [📊📈📉📃👁️ 10 Charts to Understand the 900 Page Budget Bill](./10-charts-to-understand-the-900-page-budget-bill.md)  
 - [🤖🔗⬆️✅ 12-Factor Agents: Patterns of reliable LLM applications — Dex Horthy, HumanLayer](./12-factor-agents-patterns-of-reliable-llm-applications-dex-horthy-humanlayer.md)  
@@ -123,6 +123,7 @@ updated: 2026-04-10T15:34:37-07:00
 - [🇺🇸🤝🤔 Brooks and Capehart on Trump forcing allies to reevaluate ties with U.S.](./brooks-and-capehart-on-trump-forcing-allies-to-reevaluate-ties-with-us.md)  
 - [📣📊🧠 Brooks and Capehart on Trump's approval ratings and mental acuity](./brooks-and-capehart-on-trumps-approval-ratings-and-mental-acuity.md)  
 - [💥💣🇺🇸🇮🇷 Brooks and Capehart on Trump's decision to launch strikes on Iran](./brooks-and-capehart-on-trumps-decision-to-launch-strikes-on-iran.md)  
+- [🐘🧠❓ Brooks and Capehart on Trump’s mental acuity and unpredictability](./brooks-and-capehart-on-trumps-mental-acuity-and-unpredictability.md)  
 - [🪖❓🇺🇸 Brooks and Capehart on Trump's mixed signals on the Iran war](./brooks-and-capehart-on-trumps-mixed-signals-on-the-iran-war.md)  
 - [👑🚧📉 Brooks and Capehart on Trump’s tariffs and reaction from the markets](./brooks-and-capehart-on-trumps-tariffs-and-reaction-from-the-markets.md)  
 - [💰💥🇮🇷🇺🇸 Brooks and Capehart on Trump struggling to contain economic fallout of Iran war](./brooks-and-capehart-on-trump-struggling-to-contain-economic-fallout-of-iran-war.md)  

@@ -121,7 +121,7 @@
 
 ## 🧪 Testing
 
-🔬 `BlogSeriesDiscoveryTest.hs` contains tests across 4 suites:
+🔬 `BlogSeriesDiscoveryTest.hs` contains tests across four suites:
 - 📄 Parsing: valid JSON configs, null and missing priority users, error cases
 - 📐 Derivation: author, base URL, nav link, env var, task ID, schedule entry
 - ✅ Validation: missing fields, empty models, optional fields

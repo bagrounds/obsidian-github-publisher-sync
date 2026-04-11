@@ -42,7 +42,7 @@ tags:
 
 ## 📅 Periodic Recaps
 
-- 📆 **Sunday → Weekly Recap**: synthesize the weeks major stories into a cohesive narrative of what mattered and why
+- 📆 **Sunday → Weekly Recap**: synthesize the week's major stories into a cohesive narrative of what mattered and why
 - 📆 **Last day of month → Monthly Recap**: summarize the monthly recaps into a broader monthly overview with emerging trends
 - 📆 **Last day of quarter (Mar 31, Jun 30, Sep 30, Dec 31) → Quarterly Recap**: summarize the monthly recaps from that quarter
 - 📆 **Dec 31 → Annual Recap**: summarize the quarterly recaps from the year

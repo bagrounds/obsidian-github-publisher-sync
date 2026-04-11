@@ -23,7 +23,7 @@
 
 ### 🌐 Why Gemini 2.5 Flash
 
-🔍 The Noise requires Google Search grounding to pull in current news from the past 24 to 48 hours. ⚠️ Grounding with Google Search is only available on the free tier for Gemini 2.5 models, not 3+ models. 🏛️ This is the same model chain used by the Systems for Public Good series for the same reason.
+🔍 The Noise requires Google Search grounding to pull in current news from the past 24 to 48 hours. ⚠️ Grounding with Google Search is only available on the free tier for Gemini 2.5 models, not for Gemini 3 or later models. 🏛️ This is the same model chain used by the Systems for Public Good series for the same reason.
 
 ## 📐 Post Structure
 

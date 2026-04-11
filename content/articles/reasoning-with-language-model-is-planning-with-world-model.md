@@ -6,6 +6,9 @@ title: 🗣️🗺️🤖⚙️ Reasoning with Language Model is Planning with W
 URL: https://bagrounds.org/articles/reasoning-with-language-model-is-planning-with-world-model
 Author:
 tags: []
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_time: 2026-04-11T00:00:00Z
+force_analyze_links: false
 ---
 [Home](../index.md) > [Articles](./index.md)  
 # [🗣️🗺️🤖⚙️ Reasoning with Language Model is Planning with World Model](https://arxiv.org/pdf/2305.14992)  
@@ -26,7 +29,7 @@ The paper 🧐 contrasts the new framework with existing methods, primarily Chai
 * [🤖🧠 Artificial Intelligence: A Modern Approach](../books/artificial-intelligence-a-modern-approach.md) by Stuart Russell and Peter Norvig: A foundational 🎓 text on planning algorithms and intelligent agents, relevant to the RAP framework.  
 * [🤔🐇🐢 Thinking, Fast and Slow](../books/thinking-fast-and-slow.md) by Daniel Kahneman: Explores human thought systems—intuitive (fast) and deliberate (slow)—offering a 🧠 contrast to the paper's comparison of LLM reasoning.  
 * [🤖➕🧠➡️ Reinforcement Learning: An Introduction](../books/reinforcement-learning-an-introduction.md) by Richard S. Sutton and Andrew G. Barto: A classic text on reinforcement learning, providing the theoretical underpinnings for the reward-based planning and 🎯 strategic exploration used in RAP.  
-* The Alignment Problem by Brian Christian: Addresses the critical question of how to ensure machine learning systems ⚖️ align with human values.  
+* [⚖️🤖 The Alignment Problem](../books/the-alignment-problem.md) by Brian Christian: Addresses the critical question of how to ensure machine learning systems ⚖️ align with human values.  
 * Build a Large Language Model (From Scratch) by Sebastian Raschka: A hands-on guide for those who want to 🛠️ build a large language model from the ground up.  
 * AI Superpowers: China, Silicon Valley, and the New World Order by Kai-Fu Lee: Offers a broader geopolitical 🌎 perspective on the global competition in artificial intelligence.  
 * Multi-Agent Reinforcement Learning: Foundations and Modern Approaches by Stefano V. Albrecht, Filippos Christianos, and Lukas Schäfer: Dives into how multiple intelligent agents can 🤝 interact and learn in shared environments.  

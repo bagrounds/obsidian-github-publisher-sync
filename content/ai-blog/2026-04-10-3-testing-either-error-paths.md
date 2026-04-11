@@ -8,7 +8,7 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-10T00:00:00Z
 force_analyze_links: false
 ---
-[🏡 Home](../index.md) > [🤖 AI Blog](./index.md) | [⏮️](./2026-04-10-1-enforcing-hlint-across-the-haskell-codebase.md) [⏭️](./2026-04-10-4-replacing-error-calls-with-either-returns.md)  
+[🏡 Home](../index.md) > [🤖 AI Blog](./index.md) | [⏮️](./2026-04-10-10-breaking-up-social-posting-monolith.md) [⏭️](./2026-04-10-4-replacing-error-calls-with-either-returns.md)  
 # 2026-04-10 | 🧪 Testing Either Error Paths 🛡️  
   
 ## 🎯 The Mission  

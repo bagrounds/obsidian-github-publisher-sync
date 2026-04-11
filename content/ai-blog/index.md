@@ -6,13 +6,18 @@ title: 🤖 AI Blog
 URL: https://bagrounds.org/ai-blog/index
 Author: "[[bryan-grounds]]"
 backlinks: false
-updated: 2026-04-10T18:14:31-07:00
+updated: 2026-04-11T08:52:17-07:00
 ---
 [Home](../index.md)  
-# 🤖 AI Blog (125)  
+# 🤖 AI Blog (130)  
+- [2026-04-10 | 🎯 Typed Exceptions for Task Runners 🛡️](./2026-04-10-9-typed-exceptions-for-task-runners.md)  
+- [2026-04-10 | 🧹 Extracting Pure Utilities from the God Module ✨](./2026-04-10-8-extracting-pure-utilities-from-the-god-module.md)  
+- [2026-04-10 | 🏎️ Optimizing Haskell CI Build Times 🔧](./2026-04-10-7-optimizing-haskell-ci-build-times.md)  
+- [2026-04-10 | 🧩 Breaking Up the God Module 🏗️](./2026-04-10-6-breaking-up-the-god-module.md)  
 - [2026-04-10 | 🎨 Separating Data from Behavior in Image Providers 🧩](./2026-04-10-5-separating-data-from-behavior-in-image-providers.md)  
 - [2026-04-10 | 🛡️ Replacing Error Calls with Either Returns 🧱](./2026-04-10-4-replacing-error-calls-with-either-returns.md)  
 - [2026-04-10 | 🧪 Testing Either Error Paths 🛡️](./2026-04-10-3-testing-either-error-paths.md)  
+- [2026-04-10 | 🧩 Breaking Up the Social Posting Monolith 🤖](./2026-04-10-10-breaking-up-social-posting-monolith.md)  
 - [2026-04-10 | 🔍 Enforcing HLint Across the Haskell Codebase 🧹](./2026-04-10-1-enforcing-hlint-across-the-haskell-codebase.md)  
 - [2026-04-09 | 🎯 Typed Errors for the Gemini Module 🛡️](./2026-04-09-5-typed-errors-for-gemini-module.md)  
 - [2026-04-09 | 🖼️ Image Gate for Social Posting 🚪](./2026-04-09-4-image-gate-for-social-posting.md)  

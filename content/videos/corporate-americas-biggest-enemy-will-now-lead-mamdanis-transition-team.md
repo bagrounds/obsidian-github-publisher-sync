@@ -9,6 +9,9 @@ Platform:
 Channel: More Perfect Union
 tags:
 youtube: https://youtube.com/shorts/PU_ItsNyhGA
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_time: 2026-04-10T00:00:00Z
+force_analyze_links: false
 ---
 [Home](../index.md) > [Videos](./index.md)  
 # 🚫🏢👑🔄👥 Corporate America’s Biggest Enemy Will Now Lead Mamdani’s Transition Team  
@@ -52,5 +55,5 @@ youtube: https://youtube.com/shorts/PU_ItsNyhGA
 * 📙 Saving Capitalism from the Capitalists: Unleashing the Power of Financial Markets to Create Wealth and Spread Opportunity by Raghuram G Rajan and Luigi Zingales argues that competitive markets are often undermined by incumbents who lobby for anti-competitive regulation, suggesting that government intervention can stifle, rather than promote, true market dynamism, a view often held by critics of Khan's broad regulatory approach.  
   
 ### 🎨 Creatively Related  
-* 📖 The Power Broker: Robert Moses and the Fall of New York by Robert A Caro details how a single unelected official amassed and wielded immense, unchecked power over the public sphere through control of infrastructure, tangentially relating to the video's theme of **private economic power overwhelming public governance**.  
+* 📖 [👑🏙️ The Power Broker](../books/the-power-broker.md): Robert Moses and the Fall of New York by Robert A Caro details how a single unelected official amassed and wielded immense, unchecked power over the public sphere through control of infrastructure, tangentially relating to the video's theme of **private economic power overwhelming public governance**.  
 * [🏛️💰 Debt: The First 5,000 Years](../books/debt-the-first-5000-years.md) by David Graeber explores the relationship between debt, money, and power across societies, offering a creative context for understanding how **economic relationships affect liberty and democracy**, Khan's stated concern.

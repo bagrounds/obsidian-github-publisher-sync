@@ -8,9 +8,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-01T00:00:00Z
 force_analyze_links: false
 updated: 2026-04-01T19:32:31
+image_date: 2026-04-10T23:18:31Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A minimalist digital illustration featuring a stylized ant silhouette composed of interconnected geometric nodes and lines, representing a neural network. The ant is set against a dark background with a subtle grid overlay, evoking a computational environment. From the ant’s eyes, a single, bright, focused beam of light extends forward, slicing through the darkness like a 1D scanner. Scattered around the scene are faint, ethereal shapes representing food particles and wall barriers, rendered in high-contrast cyan and magenta. The overall aesthetic blends functional programming logic with biological complexity, using clean, sharp lines to suggest a mathematical simulation rather than a realistic insect.
 ---
 [Home](../index.md) > [Software](./index.md)  
 # [⚙️🐜🔄 Haskell Ant Sim](https://github.com/olegalexander/haskell-ant-sim)  
+![software-haskell-ant-sim](../software-haskell-ant-sim.jpg)  
   
 ## 🤖 AI Summary  
   

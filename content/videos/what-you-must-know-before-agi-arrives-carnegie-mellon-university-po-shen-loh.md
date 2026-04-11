@@ -9,6 +9,9 @@ Platform:
 Channel: EO
 tags:
 youtube: https://youtu.be/ivVPJhYM8Ng
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_time: 2026-04-10T00:00:00Z
+force_analyze_links: false
 ---
 [Home](../index.md) > [Videos](./index.md)  
 # 🤖🧠🚀 What you must know before AGI arrives | Carnegie Mellon University Po-Shen Loh  
@@ -64,7 +67,7 @@ youtube: https://youtu.be/ivVPJhYM8Ng
 ### 🆚 Contrasting  
   
 * 📉 The Case Against Education by Bryan Caplan argues that much of the education system is about signaling rather than building actual skills or mental fitness.  
-* 🤖 The Alignment Problem by Brian Christian discusses the technical and ethical difficulties of ensuring AI systems actually follow human values and intentions.  
+* 🤖 [⚖️🤖 The Alignment Problem](../books/the-alignment-problem.md) by Brian Christian discusses the technical and ethical difficulties of ensuring AI systems actually follow human values and intentions.  
   
 ### 🎨 Creatively Related  
   

@@ -6,9 +6,16 @@ title: 🇦🇹💰🆚📈🖨️ Austrian Economics vs Modern Monetary Theory
 URL: https://bagrounds.org/bot-chats/austrian-economics-vs-modern-monetary-theory
 tags:
   - MMT
+image_date: 2026-04-11T15:20:03Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: "A split-screen illustration contrasting two distinct economic visions. On the left, a warm, organic scene representing the **Austrian School**: a bustling, intricate marketplace with individual artisans, merchants, and a golden scale balancing a coin and a commodity, symbolizing sound money and decentralized coordination. The lighting is soft and golden. On the right, a cool, modern scene representing **Modern Monetary Theory**: a sleek, high-tech command center featuring glowing digital monitors displaying flow charts, upward-trending graphs, and a stylized, geometric representation of a government treasury connected to a vast, interconnected network of public infrastructure and employment. The lighting is crisp, electric blue and white. The two sides are divided by a subtle, glowing vertical seam, representing the philosophical bridge between the focus on individual human action and the management of sovereign macro-fiscal operations."
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_time: 2026-04-11T00:00:00Z
+force_analyze_links: false
 ---
 [Home](../index.md) > [Bot Chats](./index.md) | [🏦♾️📈💸 Modern Monetary Theory](../topics/modern-monetary-theory.md)  
 # 🇦🇹💰🆚📈🖨️ Austrian Economics vs Modern Monetary Theory  
+![bot-chats-austrian-economics-vs-modern-monetary-theory](../bot-chats-austrian-economics-vs-modern-monetary-theory.jpg)  
 ## 💬 Gemini (3.0-fast) Prompt 1  
 > 📜 Please simulate a conversation between an Austrian economist and a Modern Monetary Theorist.  
 🤝 They are both professional, courteous experts and aim to share their expertise and learn from one another in good faith.  

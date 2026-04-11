@@ -4,9 +4,16 @@ aliases:
   - ✍🏼 Blogiversary 🕯️
 title: ✍🏼 Blogiversary 🕯️
 URL: https://bagrounds.org/bot-chats/blogiversary
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_time: 2026-04-06T00:00:00Z
+force_analyze_links: false
+image_date: 2026-04-11T16:05:04Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: "A cozy, minimalist workspace desk viewed from above. On a clean wooden surface, an open notebook sits beside a smartphone displaying a digital note-taking interface. A single, glowing candle flickers in the corner, casting a warm, celebratory light. Scattered around the notebook are subtle, floating 3D icons representing the blogs themes: a stylized gear for software engineering, a tiny seedling for growth, a circuit-board pattern for AI, and a small, soft rattle for the parenting theme. A fountain pen rests on the page, which is filled with neat, handwritten-style lines. The overall aesthetic is warm, intellectual, and inviting, with a soft-focus background that creates a sense of depth and quiet accomplishment. The color palette uses deep teals, warm amber, and soft whites to evoke a professional yet personal blogiversary atmosphere."
 ---
 [Home](../index.md) > [Bot Chats](./index.md)  
 # ✍🏼 Blogiversary 🕯️  
+![bot-chats-blogiversary](../bot-chats-blogiversary.jpg)  
 ## 💬 [Gemini](../software/gemini.md) Prompt 1  
 > Recommend books thematic to my blog's one year anniversary  
   

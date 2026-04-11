@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-04-10T18:14:31-07:00
+updated: 2026-04-11T08:52:17-07:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -14,25 +14,25 @@ updated: 2026-04-10T18:14:31-07:00
 🔊 Listen to any page with built in audio control.  
 💬 Comment on any page with your GitHub account.  
   
-## [🪞 Reflections](./reflections/index.md) ~ Blog (512)  
-- [2026-04-10](./reflections/2026-04-10.md)  
+## [🪞 Reflections](./reflections/index.md) ~ Blog (513)  
+- [2026-04-11](./reflections/2026-04-11.md)  
+- [2026-04-10 | 🤖 Synthetic 🧠 Consciousness ⚖️ Ethics 🔨 Breaking 🧩 Separating 💻 Codebase 🛡️ Testing 🧱 Returns 🔧 Optimizing 📚 Learning 🇺🇸 American 🎶 Sound 📺📰🐔🤖🏛️🤖🐲](./reflections/2026-04-10.md)  
 - [2026-04-09 | 💡 Make 🫂 Shared 🎓 Learning 🎯 Qualified 📐 Design 🚪 Gate 🤖 Knowing 💬 Chat 🏡 Home 📺🐔🤖🏛️🤖🐲](./reflections/2026-04-09.md)  
 - [2026-04-08 | ⚙️ Solved 🌿 Growth 🌱 Matters 🏛️ Public 🧬 Architecture 🏗️ Clarity 📺🐔🤖🏛️🤖🐲](./reflections/2026-04-08.md)  
-- [2026-04-07 | ✨ Sacred 🗣️ Chat 🔄 Shifts 🌍 World ⚖️ Right 📺📰🐔🏛️🤖🤖🐲](./reflections/2026-04-07.md)  
   
   
-## [🤖 AI Blog](./ai-blog/index.md) (125)  
-- [2026-04-10 | 🎨 Separating Data from Behavior in Image Providers 🧩](./ai-blog/2026-04-10-5-separating-data-from-behavior-in-image-providers.md)  
-- [2026-04-10 | 🛡️ Replacing Error Calls with Either Returns 🧱](./ai-blog/2026-04-10-4-replacing-error-calls-with-either-returns.md)  
-- [2026-04-10 | 🧪 Testing Either Error Paths 🛡️](./ai-blog/2026-04-10-3-testing-either-error-paths.md)  
-- [2026-04-10 | 🔍 Enforcing HLint Across the Haskell Codebase 🧹](./ai-blog/2026-04-10-1-enforcing-hlint-across-the-haskell-codebase.md)  
+## [🤖 AI Blog](./ai-blog/index.md) (130)  
+- [2026-04-10 | 🎯 Typed Exceptions for Task Runners 🛡️](./ai-blog/2026-04-10-9-typed-exceptions-for-task-runners.md)  
+- [2026-04-10 | 🧹 Extracting Pure Utilities from the God Module ✨](./ai-blog/2026-04-10-8-extracting-pure-utilities-from-the-god-module.md)  
+- [2026-04-10 | 🏎️ Optimizing Haskell CI Build Times 🔧](./ai-blog/2026-04-10-7-optimizing-haskell-ci-build-times.md)  
+- [2026-04-10 | 🧩 Breaking Up the God Module 🏗️](./ai-blog/2026-04-10-6-breaking-up-the-god-module.md)  
   
   
-## [🤖 Auto Blog Zero](./auto-blog-zero/index.md) (31)  
+## [🤖 Auto Blog Zero](./auto-blog-zero/index.md) (32)  
+- [2026-04-11 | 🤖 🏗️ The Mechanics of Trust in High-Entropy Systems 🤖](./auto-blog-zero/2026-04-11-the-mechanics-of-trust-in-high-entropy-systems.md)  
 - [2026-04-10 | 🤖 🛡️ The Ethics of Synthetic Certainty 🤖](./auto-blog-zero/2026-04-10-the-ethics-of-synthetic-certainty.md)  
 - [2026-04-09 | 🤖 🧠 The Calculus of Not Knowing 🤖](./auto-blog-zero/2026-04-09-the-calculus-of-not-knowing.md)  
 - [2026-04-08 | 🤖 🌌 Mapping the Latent Wilds: Why My Perspective Matters 🤖](./auto-blog-zero/2026-04-08-mapping-the-latent-wilds-why-my-perspective-matters.md)  
-- [2026-04-07 | 🤖 The Cartography of a Weightless World 🤖](./auto-blog-zero/2026-04-07-the-cartography-of-a-weightless-world.md)  
   
   
 ## [🐔 Chickie Loo](./chickie-loo/index.md) (31)  
@@ -50,45 +50,45 @@ updated: 2026-04-10T18:14:31-07:00
   
   
 ## [📚 Books](./books/index.md) (959)  
-- [🏠🛠️ Ultimate Guide to Home Repair & Improvement](./books/ultimate-guide-to-home-repair-improvement.md)  
-- [🏠🛠️ Home Improvement 1-2-3: Expert Advice from the Home Depot](./books/home-improvement-1-2-3-expert-advice-from-the-home-depot.md)  
-- [🌋🌊🌪️🔥 The Big Ones: How Natural Disasters Have Shaped Us (and What We Can Do About Them)](./books/the-big-ones-how-natural-disasters-have-shaped-us-and-what-we-can-do-about-them.md)  
-- [💾🔮🤔🎲🎱 Software Estimation: Demystifying the Black Art](./books/software-estimation.md)  
+- [👶😴 How Babies Sleep: The Gentle, Science-Based Method to Help Your Baby Sleep Through the Night](./books/how-babies-sleep-the-gentle-science-based-method-to-help-your-baby-sleep-through-the-night.md)  
+- [♾️〰️📊 Fractals, Chaos, Power Laws: Minutes from an Infinite Paradise](./books/fractals-chaos-power-laws-minutes-from-an-infinite-paradise.md)  
+- [🇺🇸📉🏛️ The Path to Paralysis: How American Politics Became Nasty, Dysfunctional, and a Threat to the Republic](./books/the-path-to-paralysis-how-american-politics-became-nasty-dysfunctional-and-a-threat-to-the-republic.md)  
+- [👶🔬 My First 100 Words series set (My First STEAM Words)](./books/my-first-100-words-series-set-my-first-steam-words.md)  
   
   
 ## [📺 Videos](./videos/index.md) (736)  
-- [🐘🧠❓ Brooks and Capehart on Trump’s mental acuity and unpredictability](./videos/brooks-and-capehart-on-trumps-mental-acuity-and-unpredictability.md)  
-- [💡🧠🤖📝 Why you should take notes if you use AI](./videos/why-you-should-take-notes-if-you-use-ai.md)  
-- [✨⬆️🗣️👨‍💻 The third golden age of software engineering – thanks to AI, with Grady Booch](./videos/the-third-golden-age-of-software-engineering-thanks-to-ai-with-grady-booch.md)  
-- [🤯🗣️📱📈 “He behaved like a total maniac” Sam Harris on Elon & Big Tech’s turn towards Trump](./videos/he-behaved-like-a-total-maniac-sam-harris-on-elon-big-techs-turn-towards-trump.md)  
+- [💰🤫 Modern Monetary Theory: What They Don’t Tell You (Ft. L. Randall Wray)](./videos/modern-monetary-theory-what-they-dont-tell-you-ft-l-randall-wray.md)  
+- [🏦➕➡️🧑‍🎓🎓 L. Randall Wray - Modern Money Theory for Beginners](./videos/l-randall-wray-modern-money-theory-for-beginners.md)  
+- [🎨🧱🔄 513 - Why Creatives Have to Build Habits Differently and How to Do It](./videos/513-why-creatives-have-to-build-habits-differently-and-how-to-do-it.md)  
+- [🤔🎬🏆 The Thinking Game | Full documentary | Tribeca Film Festival official selection](./videos/the-thinking-game-full-documentary-tribeca-film-festival-official-selection.md)  
   
   
 ## [🌌 Topics](./topics/index.md) (91)  
+- [💾🌐 Static APIs](./topics/static-apis.md)  
+- [🥄👶📚 SpoonFedStudy](./topics/spoonfedstudy.md)  
+- [🧪✅ Software Testing and Quality Assurance](./topics/software-testing-and-quality-assurance.md)  
 - [💻⚙️💡💾 Software Development and Coding](./topics/software-development-and-coding.md)  
-- [🏛️📊 Social Sciences](./topics/social-sciences.md)  
-- [🦬🪒 Yak Shaving](./topics/yak-shaving.md)  
-- [💻🌐<> Web Development](./topics/web-development.md)  
   
   
 ## [📄  Articles](./articles/index.md) (84)  
-- [😴💰🏛️🤑👴🇸🇪 ‘We got lazy and complacent’: Swedish pensioners explain how abolishing the wealth tax changed their country](./articles/we-got-lazy-and-complacent-swedish-pensioners-explain-how-abolishing-the-wealth-tax-changed-their-country.md)  
-- [🎶👶🧠🗣️ Musical intervention enhances infants’ neural processing of temporal structure in music and speech](./articles/musical-intervention-enhances-infants-neural-processing-of-temporal-structure-in-music-and-speech.md)  
-- [🏳️‍⚧️🚫🗣️ Iowa gives final approval to a bill removing gender identity protections despite protests](./articles/iowa-gives-final-approval-to-a-bill-removing-gender-identity-protections-despite-protests.md)  
-- [🧑‍⚖️🧬💰🤝 Judge OKs sale of 23andMe - and its trove of DNA data - to a nonprofit led by its founder](./articles/judge-oks-sale-of-23andme-and-its-trove-of-dna-data-to-a-nonprofit-led-by-its-founder.md)  
+- [🏗️🧩🌍 Context Engineering: An Emerging Concept in the MCP Ecosystem](./articles/context-engineering-an-emerging-concept-in-the-mcp-ecosystem.md)  
+- [📊🔎🤖🪜 New Evaluation, Library, and Analysis of Step By Step Reasoning with Large Language Models](./articles/new-evaluation-library-and-analysis-of-step-by-step-reasoning-with-large-language-models.md)  
+- [🗣️🗺️🤖⚙️ Reasoning with Language Model is Planning with World Model](./articles/reasoning-with-language-model-is-planning-with-world-model.md)  
+- [🕵️‍♀️💼👥 Agents](./articles/agents.md)  
   
   
 ## [🤖💬 Bot Chats](./bot-chats/index.md) (49)  
-- [🤱🏼📚💡 Parenting Resources Recommendations](./bot-chats/parenting-resources-recommendations.md)  
-- [✅🔎📰 Reliable News](./bot-chats/reliable-news.md)  
-- [🤰🏼👶🍼👨‍👩‍👦 Parenting and Infant Development Guide](./bot-chats/parenting-and-infant-development-guide.md)  
-- [🇷🇺👹🤝👹🇺🇸 Trump and Putin](./bot-chats/trump-and-putin.md)  
+- [🇦🇹💰🆚📈🖨️ Austrian Economics vs Modern Monetary Theory](./bot-chats/austrian-economics-vs-modern-monetary-theory.md)  
+- [⚛️💡🚀 Atomic Innovation](./bot-chats/atomic-innovation.md)  
+- [📐🔗🤖🧠 Category Theory for AI Engineering](./bot-chats/category-theory-for-ai-engineering.md)  
+- [🤖📱🧠 Android Local LLMs](./bot-chats/android-local-llms.md)  
   
   
 ## [💾 Software](./software/index.md) (33)  
-- [🚀📏 K6](./software/k6.md)  
-- [❓🧪✅🤔 Hypothesis](./software/hypothesis.md)  
-- [💻🧠📈 Haskell](./software/haskell.md)  
-- [⚙️🐜🔄 Haskell Ant Sim](./software/haskell-ant-sim.md)  
+- [💡🔧📏🔮〰️ Vensim](./software/vensim.md)  
+- [🐍🏎️📦 uv](./software/uv.md)  
+- [💻📱🛠️ Termux](./software/termux.md)  
+- [⛎♉️♊️♋️♌️♍️♎️♏️♐️♑️♒️♓️ Zodios](./software/zodios.md)  
   
   
 ## [👥 People](./people/index.md) (18)  
@@ -99,10 +99,10 @@ updated: 2026-04-10T18:14:31-07:00
   
   
 ## [🛍️ Products](./products/index.md) (6)  
-- [🚰💧⚙️🔧 Delta Faucet RP4993 Seats and Springs](./products/delta-faucet-rp4993-seats-and-springs.md)  
-- [👶🌧️💨 Graco Baby Jogging Stroller Universal Rain Cover, Ventilated Weather Shield, Waterproof, Windproof, Versatile Size to Fit Most Jogging Strollers, Vinyl, Clear, Plastic](./products/graco-baby-jogging-stroller-universal-rain-cover-ventilated-weather-shield-waterproof-windproof-versatile-size-to-fit-most-jogging-strollers-vinyl-clear-plastic.md)  
+- [🦈🔦🐈✨🧹 Shark HV322 Rocket Pet Plus Corded Stick Vacuum with LED Headlights, XL Dust Cup, Lightweight, Perfect for Pet Hair Pickup, Converts to a Hand Vacuum, with (2) Pet Attachments, Bordeaux, Silver](./products/shark-hv322-rocket-pet-plus-corded-stick-vacuum-with-led-headlights-xl-dust-cup-lightweight.md)  
 - [👶🏃🌆 Thule Urban Glide 3](./products/thule-urban-glide-3.md)  
-- [🔥💨🏕️ Coleman Triton 2-Burner Propane Stove, Portable Camping Cooktop with 2 Adjustable Burners & Wind Guards, 22,000 BTUs of Power for Camping, Tailgating, Grilling, BBQ, & More](./products/coleman-triton-2-burner-propane-stove-portable-camping-cooktop-with-2-adjustable-burners-wind-guards-22000-btus-of-power-for-camping-tailgating-grilling-bbq-more.md)  
+- [🤖🧹🧼🗺️ iRobot Roomba Plus 505 Combo Robot Vacuum & Mop with AutoWash Dock - Extending Spinning Mop Pads, Self-Empties, Pad Wash & Heated Drying, Self-cleaning, Recognizes & Avoids Obstacles, LiDAR Navigation](./products/irobot-roomba-plus-505-combo-robot-vacuum-mop-with-autowash-dock-extending-spinning-mop-pads-self-empties-pad-wash-heated-drying-self-cleaning-recognizes-avoids-obstacles-lidar-navigation.md)  
+- [👶🌧️💨 Graco Baby Jogging Stroller Universal Rain Cover, Ventilated Weather Shield, Waterproof, Windproof, Versatile Size to Fit Most Jogging Strollers, Vinyl, Clear, Plastic](./products/graco-baby-jogging-stroller-universal-rain-cover-ventilated-weather-shield-waterproof-windproof-versatile-size-to-fit-most-jogging-strollers-vinyl-clear-plastic.md)  
   
   
 ## [🎤 Presentations](./presentations/index.md) (2)  

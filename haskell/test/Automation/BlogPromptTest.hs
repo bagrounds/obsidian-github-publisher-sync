@@ -178,6 +178,32 @@ tests = testGroup "BlogPrompt"
       let series = unsafeLookupSeries "auto-blog-zero"
       in sanitizeTitle series "2026-03-30 The Architecture of Doubt" @?= "The Architecture of Doubt"
 
+  , testCase "buildBlogPrompt user prompt includes human-readable date" $
+      let series = unsafeLookupSeries "chickie-loo"
+          ctx = BlogContext
+            { bcxSeries = series
+            , bcxAgentsMd = ""
+            , bcxPreviousPosts = []
+            , bcxComments = []
+            , bcxToday = fromGregorian 2026 4 11
+            }
+          (_, userPrompt) = buildBlogPrompt ctx
+      in assertBool "should include human-readable date" $
+           "Today is Saturday, April 11, 2026." `T.isInfixOf` userPrompt
+
+  , testCase "buildBlogPrompt user prompt includes YYYY-MM-DD date" $
+      let series = unsafeLookupSeries "chickie-loo"
+          ctx = BlogContext
+            { bcxSeries = series
+            , bcxAgentsMd = ""
+            , bcxPreviousPosts = []
+            , bcxComments = []
+            , bcxToday = fromGregorian 2026 4 11
+            }
+          (_, userPrompt) = buildBlogPrompt ctx
+      in assertBool "should include YYYY-MM-DD date" $
+           "2026-04-11" `T.isInfixOf` userPrompt
+
   , generateSlugTests
   ]
 

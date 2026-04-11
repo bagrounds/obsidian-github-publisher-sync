@@ -82,7 +82,7 @@ The file contains a Dhall record with six fields: a name like Garden Thoughts, a
 
 📉 Adding a new blog series went from editing four Haskell files to creating a single six-line config file.
 
-🧹 The existing three blog series were migrated to config files, and all 18 fields across all 3 configs were validated against the official Dhall parser to confirm exact field-value match.
+🧹 The existing three blog series were migrated to config files. All 18 fields across all 3 configs were validated against the official Dhall parser to confirm exact field-value match.
 
 🔮 The architecture is now ready for future enhancements like per-series prompt strategies, recap frequencies, or image generation preferences, since these can be added as optional config fields with sensible defaults.
 
@@ -92,7 +92,7 @@ The file contains a Dhall record with six fields: a name like Garden Thoughts, a
 
 🧪 All three config files were validated against the official Dhall parser (python-dhall 0.1.16, which wraps the Rust dhall-rust implementation of the Dhall standard). Every field in every file produces the same parsed value as our Parsec bridge. The Some and None optional syntax, emoji strings, leading-comma record style, and multi-element lists all pass.
 
-⚠️ The Parsec bridge has known limitations that create boundaries for what configs can express today. It does not handle Dhall escape sequences in strings, so backslash-n or backslash-t would fail. It does not support let bindings, imports, type annotations, string interpolation, or multiline strings. It rejects unknown field names, which is stricter than the official library. All of these limitations produce loud parse failures rather than silent mismatches, which means we would catch any problem at startup.
+⚠️ The Parsec bridge has known limitations that create boundaries for what configs can express today. It does not handle Dhall escape sequences in strings, so backslash-n or backslash-t would fail. It does not support let bindings, imports, type annotations, string interpolation, or multiline strings. It rejects unknown field names, which is stricter than the official library. All of these limitations produce loud parse failures rather than silent mismatches. This means we would catch any problem at startup.
 
 🛡️ The main migration risk is that the official Dhall library brings significant transitive dependencies like megaparsec, cborg, serialise, and aeson. This will increase build time and binary size. We should benchmark the build impact before committing to the swap.
 

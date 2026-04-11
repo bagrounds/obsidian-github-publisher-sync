@@ -157,7 +157,7 @@
 
 1. 🔍 Monitor Hackage for a dhall release with GHC 9.14 support (dhall 1.43+ or a revised 1.42.x)
 2. 📦 Add `dhall` as a build dependency in `automation.cabal`
-3. 🔄 Replace `parseDhallConfig` with `Dhall.input Dhall.auto` using a Dhall `FromDhall` instance for `DiscoveredSeries`
+3. 🔄 Replace `parseDhallConfig` with `Dhall.input Dhall.auto` using a Dhall `FromDhall` instance for `RawConfig`, keeping the existing validation layer
 4. 🧹 Remove the Parsec parser code from `BlogSeriesDiscovery.hs`
 5. ✅ No config file changes needed — the files are already valid Dhall
 6. 🧪 Keep the existing 42 tests as regression tests — they validate the parsed output, not the parser itself

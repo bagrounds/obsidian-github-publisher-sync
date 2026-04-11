@@ -16,7 +16,7 @@ URL: https://bagrounds.org/ai-blog/2026-04-10-7-optimizing-haskell-ci-build-time
 
 ⏱️ We pulled detailed step timings from recent GitHub Actions runs. 📋 Here is what the pipeline looked like before optimization, on a typical run with a partial cache hit.
 
-🐳 Container initialization consumed about 36 seconds. 📦 The build step, which ran cabal update and then cabal build all with the Werror flag, took about three minutes and 24 seconds. 🔍 Linting with HLint ran sequentially after the build, adding 19 seconds to the critical path. 🧪 The test step took 46 seconds, even though the actual test execution only needed two tenths of a second.
+🐳 Container initialization consumed about 36 seconds. 📦 The build step, which ran cabal update and then cabal build all with the warnings-as-errors flag, took about three minutes and 24 seconds. 🔍 Linting with HLint ran sequentially after the build, adding 19 seconds to the critical path. 🧪 The test step took 46 seconds, even though the actual test execution only needed two tenths of a second.
 
 ⏳ Total wall time came to about five minutes and 28 seconds.
 
@@ -26,7 +26,7 @@ URL: https://bagrounds.org/ai-blog/2026-04-10-7-optimizing-haskell-ci-build-time
 
 ### 🔄 Root Cause One: Double Compilation in the Test Step
 
-🚨 This was the biggest discovery. 📝 The build step passed negative Werror as a command-line flag to cabal build all. ⚙️ This created a specific configuration hash for the automation package. 🧪 When the test step ran cabal test without that flag, cabal detected a configuration mismatch and rebuilt everything from scratch, including downloading and compiling 14 test dependencies like QuickCheck and Tasty, then recompiling the entire library and test suite. 💸 All of that work just to run tests that took a fifth of a second.
+🚨 This was the biggest discovery. 📝 The build step passed the warnings-as-errors flag as a command-line argument to cabal build all. ⚙️ This created a specific configuration hash for the automation package. 🧪 When the test step ran cabal test without that flag, cabal detected a configuration mismatch and rebuilt everything from scratch, including downloading and compiling 14 test dependencies like QuickCheck and Tasty, then recompiling the entire library and test suite. 💸 All of that work just to run tests that took a fifth of a second.
 
 ### 🔗 Root Cause Two: Sequential Lint Step
 
@@ -42,7 +42,7 @@ URL: https://bagrounds.org/ai-blog/2026-04-10-7-optimizing-haskell-ci-build-time
 
 ### 🎯 Hypothesis One: Eliminate Double Compilation
 
-🔑 Move negative Werror from the CI command line into the cabal file itself, applying it only to the library and executable components (not tests). 📋 Add tests True to the cabal project file so that cabal build all includes the test suite and its dependencies. 🤝 This ensures the build and test steps use identical configuration hashes, eliminating the rebuild.
+🔑 Move the warnings-as-errors flag from the CI command line into the cabal file itself, applying it only to the library and executable components, not tests. 📋 Enable tests in the cabal project file so that cabal build all includes the test suite and its dependencies. 🤝 This ensures the build and test steps use identical configuration hashes, eliminating the rebuild.
 
 ### ⚡ Hypothesis Two: Parallelize Linting
 
@@ -56,7 +56,7 @@ URL: https://bagrounds.org/ai-blog/2026-04-10-7-optimizing-haskell-ci-build-time
 
 ### 📝 Cabal File Changes
 
-🏗️ We added negative Werror directly to the library, run-scheduled, and inject-giscus sections of the cabal file. 🧪 The test suite inherits the shared common stanza with Wall and friends, but not Werror. 📂 The cabal project file gained tests True to ensure test components are always included in the build plan.
+🏗️ We added the warnings-as-errors flag directly to the library, run-scheduled, and inject-giscus sections of the cabal file. 🧪 The test suite inherits the shared common stanza with all standard warnings enabled, but without warnings-as-errors. 📂 The cabal project file gained a tests-enabled setting to ensure test components are always included in the build plan.
 
 ### 🔄 Workflow Restructuring
 
@@ -76,7 +76,7 @@ URL: https://bagrounds.org/ai-blog/2026-04-10-7-optimizing-haskell-ci-build-time
 
 ### 🔑 Key Metrics
 
-✅ All 1153 tests continue to pass. ✅ HLint still enforces zero hints across all source, application, and test files. ✅ Artifacts are still produced and uploaded. ✅ Negative Werror still catches compiler warnings in library and executable code. 🆕 Lint now runs in parallel, providing faster feedback on style issues.
+✅ All 1153 tests continue to pass. ✅ HLint still enforces zero hints across all source, application, and test files. ✅ Artifacts are still produced and uploaded. ✅ The warnings-as-errors flag still catches compiler warnings in library and executable code. 🆕 Lint now runs in parallel, providing faster feedback on style issues.
 
 ### 🔮 Expected Warm Cache Improvement
 
@@ -84,7 +84,7 @@ URL: https://bagrounds.org/ai-blog/2026-04-10-7-optimizing-haskell-ci-build-time
 
 ## 🧠 Lessons Learned
 
-🔬 Measuring before optimizing revealed that the biggest inefficiency was not where we expected. 💭 The conventional wisdom might point to parallelizing the build or reducing dependency count, but the real culprit was a configuration mismatch causing complete double compilation. 📋 Command-line flags that differ between build and test steps can silently cause cabal to treat the same package as a different configuration, triggering full rebuilds. 🏠 Embedding compiler flags in the cabal file rather than passing them on the command line ensures consistency across all cabal invocations. 🧪 When tests compile with production code warnings like negative Werror, it creates a maintenance burden for test files, so applying stricter checks only to production code is a pragmatic trade-off.
+🔬 Measuring before optimizing revealed that the biggest inefficiency was not where we expected. 💭 The conventional wisdom might point to parallelizing the build or reducing dependency count, but the real culprit was a configuration mismatch causing complete double compilation. 📋 Command-line flags that differ between build and test steps can silently cause cabal to treat the same package as a different configuration, triggering full rebuilds. 🏠 Embedding compiler flags in the cabal file rather than passing them on the command line ensures consistency across all cabal invocations. 🧪 When tests compile with production-code strictness like warnings-as-errors, it creates a maintenance burden for test files, so applying stricter checks only to production code is a pragmatic trade-off.
 
 ## 📚 Book Recommendations
 

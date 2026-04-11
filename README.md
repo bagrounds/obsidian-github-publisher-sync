@@ -70,10 +70,10 @@
 
 | ⏰ Pacific Hour | 🏷️ Task | 📝 Description |
 |---|---|---|
-| 7 | 📰 The Noise | 📡 AI news digest with Google Search grounding for current events |
-| 8 | 🐔 Chickie Loo | 🐣 AI blog post with chicken-keeping personality |
-| 9 | 🤖 Auto Blog Zero | 📝 AI blog post based on reflections and discussions |
-| 10 | 🏛️ Systems for Public Good | 🏛️ AI blog with Google Search grounding for current events |
+| 6 | 📰 The Noise | 📡 AI news digest with Google Search grounding for current events |
+| 7 | 🐔 Chickie Loo | 🐣 AI blog post with chicken-keeping personality |
+| 8 | 🤖 Auto Blog Zero | 📝 AI blog post based on reflections and discussions |
+| 9 | 🏛️ Systems for Public Good | 🏛️ AI blog with Google Search grounding for current events |
 | 23 | 🖼️ Backfill Blog Images | 🔍 Generate missing cover images for all blog posts |
 | 1 | 🔗 Internal Linking | 📥 BFS-driven wikilink insertion in Obsidian vault |
 | Even hours | 📢 Social Posting | 📱 Discover and post unposted content to X/Bluesky/Mastodon |

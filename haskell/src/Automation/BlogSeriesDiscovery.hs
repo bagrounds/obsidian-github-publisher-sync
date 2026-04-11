@@ -194,10 +194,6 @@ derivePriorityUserEnvVar seriesId =
     toEnvChar '-' = '_'
     toEnvChar c   = c
 
--- ---------------------------------------------------------------------------
--- Dhall record parser (Parsec-based, subset of Dhall syntax)
--- ---------------------------------------------------------------------------
-
 dhallRecord :: Parser RawConfig
 dhallRecord = do
   spaces

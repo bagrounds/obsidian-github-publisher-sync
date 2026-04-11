@@ -5,6 +5,9 @@ aliases:
 URL: https://bagrounds.org/books/the-one-hour-content-plan-the-solopreneurs-guide-to-a-years-worth-of-blog-post-ideas-in-60-minutes-and-creating-content-that-hooks-and-sells
 share: true
 affiliate link: https://amzn.to/3St0UWy
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_time: 2026-04-07T00:00:00Z
+force_analyze_links: false
 ---
 [Home](../index.md) > [Books](./index.md)  
 # ⏱️💡📈 The One Hour Content Plan: The Solopreneur's Guide to a Year's Worth of Blog Post Ideas in 60 Minutes and Creating Content That Hooks and Sells  

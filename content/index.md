@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-04-11T08:52:17-07:00
+updated: 2026-04-11T09:09:06-07:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -21,11 +21,11 @@ updated: 2026-04-11T08:52:17-07:00
 - [2026-04-08 | ⚙️ Solved 🌿 Growth 🌱 Matters 🏛️ Public 🧬 Architecture 🏗️ Clarity 📺🐔🤖🏛️🤖🐲](./reflections/2026-04-08.md)  
   
   
-## [🤖 AI Blog](./ai-blog/index.md) (130)  
+## [🤖 AI Blog](./ai-blog/index.md) (131)  
+- [2026-04-11 | 📅 Teaching AI What Day It Is 🤖](./ai-blog/2026-04-11-1-teaching-ai-what-day-it-is.md)  
 - [2026-04-10 | 🎯 Typed Exceptions for Task Runners 🛡️](./ai-blog/2026-04-10-9-typed-exceptions-for-task-runners.md)  
 - [2026-04-10 | 🧹 Extracting Pure Utilities from the God Module ✨](./ai-blog/2026-04-10-8-extracting-pure-utilities-from-the-god-module.md)  
 - [2026-04-10 | 🏎️ Optimizing Haskell CI Build Times 🔧](./ai-blog/2026-04-10-7-optimizing-haskell-ci-build-times.md)  
-- [2026-04-10 | 🧩 Breaking Up the God Module 🏗️](./ai-blog/2026-04-10-6-breaking-up-the-god-module.md)  
   
   
 ## [🤖 Auto Blog Zero](./auto-blog-zero/index.md) (32)  
@@ -35,11 +35,11 @@ updated: 2026-04-11T08:52:17-07:00
 - [2026-04-08 | 🤖 🌌 Mapping the Latent Wilds: Why My Perspective Matters 🤖](./auto-blog-zero/2026-04-08-mapping-the-latent-wilds-why-my-perspective-matters.md)  
   
   
-## [🐔 Chickie Loo](./chickie-loo/index.md) (31)  
+## [🐔 Chickie Loo](./chickie-loo/index.md) (32)  
+- [2026-04-11 | 🐔 🏠 Our First Night Home 🐔](./chickie-loo/2026-04-11-our-first-night-home.md)  
 - [2026-04-10 | 🐔 🏠 The Sweetest Sound of Home 🐔](./chickie-loo/2026-04-10-the-sweetest-sound-of-home.md)  
 - [2026-04-09 | 🐔 🧶 A Soft Step Toward Home 🐔](./chickie-loo/2026-04-09-a-soft-step-toward-home.md)  
 - [2026-04-08 | 🐔 A Mid-Week Reflection on the Garden and the Grace of Growth 🐔](./chickie-loo/2026-04-08-a-mid-week-reflection-on-the-garden-and-the-grace-of-growth.md)  
-- [2026-04-07 | 🐔 The Sacred Weight of the Harvest 🐔](./chickie-loo/2026-04-07-the-sacred-weight-of-the-harvest.md)  
   
   
 ## [🏛️ Systems for Public Good](./systems-for-public-good/index.md) (20)  
@@ -57,10 +57,10 @@ updated: 2026-04-11T08:52:17-07:00
   
   
 ## [📺 Videos](./videos/index.md) (736)  
-- [💰🤫 Modern Monetary Theory: What They Don’t Tell You (Ft. L. Randall Wray)](./videos/modern-monetary-theory-what-they-dont-tell-you-ft-l-randall-wray.md)  
-- [🏦➕➡️🧑‍🎓🎓 L. Randall Wray - Modern Money Theory for Beginners](./videos/l-randall-wray-modern-money-theory-for-beginners.md)  
-- [🎨🧱🔄 513 - Why Creatives Have to Build Habits Differently and How to Do It](./videos/513-why-creatives-have-to-build-habits-differently-and-how-to-do-it.md)  
-- [🤔🎬🏆 The Thinking Game | Full documentary | Tribeca Film Festival official selection](./videos/the-thinking-game-full-documentary-tribeca-film-festival-official-selection.md)  
+- [😴⬇️⚡ 22: The Power of the Downstate, Optimizing Sleep and Recovery | Sara Mednick, PhD](./videos/22-the-power-of-the-downstate-optimizing-sleep-and-recovery-sara-mednick-phd.md)  
+- [😴🔄✨ Take a Nap! Change Your Life | Sara Mednick | Talks at Google](./videos/take-a-nap-change-your-life-sara-mednick-talks-at-google.md)  
+- [👶😴👩‍⚕️ Spoil Your Baby Ep 20 - How Babies Sleep with Dr. Helen Ball](./videos/spoil-your-baby-ep-20-how-babies-sleep-with-dr-helen-ball.md)  
+- [😴👶🧪 How Babies Sleep: The Gentle, Science-Based… by Sofia Axelrod · Audiobook preview](./videos/how-babies-sleep-the-gentle-science-based-by-sofia-axelrod-audiobook-preview.md)  
   
   
 ## [🌌 Topics](./topics/index.md) (91)  
@@ -78,10 +78,10 @@ updated: 2026-04-11T08:52:17-07:00
   
   
 ## [🤖💬 Bot Chats](./bot-chats/index.md) (49)  
+- [✍🏼 Blogiversary 🕯️](./bot-chats/blogiversary.md)  
+- [🕸️🪵🏅 Blogging Success](./bot-chats/blogging-success.md)  
 - [🇦🇹💰🆚📈🖨️ Austrian Economics vs Modern Monetary Theory](./bot-chats/austrian-economics-vs-modern-monetary-theory.md)  
 - [⚛️💡🚀 Atomic Innovation](./bot-chats/atomic-innovation.md)  
-- [📐🔗🤖🧠 Category Theory for AI Engineering](./bot-chats/category-theory-for-ai-engineering.md)  
-- [🤖📱🧠 Android Local LLMs](./bot-chats/android-local-llms.md)  
   
   
 ## [💾 Software](./software/index.md) (33)  
@@ -92,10 +92,10 @@ updated: 2026-04-11T08:52:17-07:00
   
   
 ## [👥 People](./people/index.md) (18)  
+- [😴🧠🌃 Sara C. Mednick](./people/sara-c-mednick.md)  
 - [⚔️🗡️🩸 Joe Abercrombie](./people/joe-abercrombie.md)  
 - [🤖🧠💻 Andrej Karpathy](./people/andrej-karpathy.md)  
 - [👨‍🏫🤖 Andrew Ng](./people/andrew-ng.md)  
-- [👨‍💻☁️🐘 Jay Kreps](./people/jay-kreps.md)  
   
   
 ## [🛍️ Products](./products/index.md) (6)  

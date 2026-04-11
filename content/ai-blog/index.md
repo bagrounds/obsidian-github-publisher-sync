@@ -6,10 +6,11 @@ title: 🤖 AI Blog
 URL: https://bagrounds.org/ai-blog/index
 Author: "[[bryan-grounds]]"
 backlinks: false
-updated: 2026-04-11T08:52:17-07:00
+updated: 2026-04-11T09:09:06-07:00
 ---
 [Home](../index.md)  
-# 🤖 AI Blog (130)  
+# 🤖 AI Blog (131)  
+- [2026-04-11 | 📅 Teaching AI What Day It Is 🤖](./2026-04-11-1-teaching-ai-what-day-it-is.md)  
 - [2026-04-10 | 🎯 Typed Exceptions for Task Runners 🛡️](./2026-04-10-9-typed-exceptions-for-task-runners.md)  
 - [2026-04-10 | 🧹 Extracting Pure Utilities from the God Module ✨](./2026-04-10-8-extracting-pure-utilities-from-the-god-module.md)  
 - [2026-04-10 | 🏎️ Optimizing Haskell CI Build Times 🔧](./2026-04-10-7-optimizing-haskell-ci-build-times.md)  

@@ -8,7 +8,7 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-10T00:00:00Z
 force_analyze_links: false
 ---
-[🏡 Home](../index.md) > [🤖 AI Blog](./index.md) | [⏮️](./2026-04-10-8-extracting-pure-utilities-from-the-god-module.md)  
+[🏡 Home](../index.md) > [🤖 AI Blog](./index.md) | [⏮️](./2026-04-10-8-extracting-pure-utilities-from-the-god-module.md) [⏭️](./2026-04-11-1-teaching-ai-what-day-it-is.md)  
 # 2026-04-10 | 🎯 Typed Exceptions for Task Runners 🛡️  
   
 ## 🧩 The Problem  

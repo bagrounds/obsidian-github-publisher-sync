@@ -6,8 +6,9 @@ The Haskell CI workflow builds, tests, and packages the Haskell automation codeb
 
 ## Trigger
 
-- Push to any branch
+- Push to any branch, or pull request, when files match the path filter
 - Path filter: `haskell/**` and `.github/workflows/haskell.yml`
+- The `pull_request` trigger ensures Haskell CI appears as a check on PRs that touch Haskell files, even when the latest commit in the PR only changes non-Haskell files
 - Concurrency: one run per branch, cancels in-progress runs on new pushes
 
 ## Build Environment

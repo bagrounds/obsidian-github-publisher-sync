@@ -60,7 +60,7 @@ URL: https://bagrounds.org/ai-blog/2026-04-10-7-optimizing-haskell-ci-build-time
 
 ### 🔄 Workflow Restructuring
 
-🔀 The single build-and-test job was split into two parallel jobs. 🏗️ The build-and-test job handles checkout, caching, building, testing, and artifact upload. 🔍 The lint job handles checkout, HLint installation, and linting. 🤝 Both jobs must pass for the workflow to succeed.
+🔀 The single build-and-test job was split into two parallel jobs. 🏗️ The build-and-test job handles checkout, caching, building, testing, and artifact upload. 🔍 The lint job handles checkout, HLint installation, and linting. 🤝 Both jobs must pass for the workflow to succeed. 📋 We also added a pull request trigger alongside the existing push trigger, both using the same path filter. 🎯 This ensures Haskell CI always appears as a check on PRs that touch Haskell files, even if the latest commit in the PR only changes non-Haskell files like blog posts.
 
 ### 💾 Cache Improvements
 

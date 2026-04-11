@@ -7,6 +7,10 @@ on:
     paths:
       - 'haskell/**'
       - '.github/workflows/haskell.yml'
+  pull_request:
+    paths:
+      - 'haskell/**'
+      - '.github/workflows/haskell.yml'
 
 concurrency:
   group: "haskell-ci-${{ github.ref }}"

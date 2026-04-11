@@ -6,6 +6,9 @@ URL: https://bagrounds.org/books/the-hype-machine-how-social-media-disrupts-our-
 share: true
 CTA: 🛡️ Safeguard democracy.
 affiliate link: https://amzn.to/4nUhnku
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_time: 2026-04-03T00:00:00Z
+force_analyze_links: false
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 📱🗳️📉🩺 The Hype Machine: How Social Media Disrupts Our Elections, Our Economy, and Our Health - and How We Must Adapt  

@@ -44,6 +44,7 @@ import Automation.SocialPosting.ContentDiscovery
   , urlFromFilePath
   , validateNoteUrl
   )
+import Automation.BlogSeriesConfig (imageBackfillContentIdsFrom)
 import Automation.SocialPosting.FrontmatterUpdate (updateFrontmatterUrl)
 import Automation.SocialPosting.LinkExtraction
   ( extractMarkdownLinks
@@ -53,6 +54,9 @@ import Automation.SocialPosting.LinkExtraction
   )
 import Automation.TestGenerators (testUrl, testTitle, testRelativePath)
 
+
+defaultContentIds :: [Text]
+defaultContentIds = imageBackfillContentIdsFrom []
 
 tests :: TestTree
 tests = testGroup "SocialPosting"
@@ -271,50 +275,50 @@ imageBackfillFilterTests :: TestTree
 imageBackfillFilterTests = testGroup "isAwaitingImageBackfill"
   [ testCase "note without image in backfill directory is awaiting" $
       assertBool "should be awaiting image" $
-        isAwaitingImageBackfill "books/great-book.md" "Some text about a great book"
+        isAwaitingImageBackfill defaultContentIds "books/great-book.md" "Some text about a great book"
 
   , testCase "note with embedded image is not awaiting" $
       assertBool "has image, should not be awaiting" $
-        not (isAwaitingImageBackfill "books/great-book.md"
+        not (isAwaitingImageBackfill defaultContentIds "books/great-book.md"
           "![[attachments/books-great-book.jpg]]\nSome text about a great book")
 
   , testCase "note with markdown image is not awaiting" $
       assertBool "has markdown image, should not be awaiting" $
-        not (isAwaitingImageBackfill "books/great-book.md"
+        not (isAwaitingImageBackfill defaultContentIds "books/great-book.md"
           "![cover](attachments/books-great-book.png)\nSome text")
 
   , testCase "reflection without image is awaiting" $
       assertBool "reflection without image should be awaiting" $
-        isAwaitingImageBackfill "reflections/2026-04-07.md" "Today was a good day"
+        isAwaitingImageBackfill defaultContentIds "reflections/2026-04-07.md" "Today was a good day"
 
   , testCase "reflection with image is not awaiting" $
       assertBool "reflection with image should not be awaiting" $
-        not (isAwaitingImageBackfill "reflections/2026-04-07.md"
+        not (isAwaitingImageBackfill defaultContentIds "reflections/2026-04-07.md"
           "![[attachments/reflections-2026-04-07.jpg]]\nToday was a good day")
 
   , testCase "ai-blog post without image is awaiting" $
       assertBool "ai-blog without image should be awaiting" $
-        isAwaitingImageBackfill "ai-blog/2026-04-05-cool-post.md" "A cool blog post"
+        isAwaitingImageBackfill defaultContentIds "ai-blog/2026-04-05-cool-post.md" "A cool blog post"
 
   , testCase "excluded file is not awaiting" $
       assertBool "index.md should not be awaiting" $
-        not (isAwaitingImageBackfill "books/index.md" "Browse all books")
+        not (isAwaitingImageBackfill defaultContentIds "books/index.md" "Browse all books")
 
   , testCase "non-md file is not awaiting" $
       assertBool "non-md file should not be awaiting" $
-        not (isAwaitingImageBackfill "books/great-book.txt" "Some text")
+        not (isAwaitingImageBackfill defaultContentIds "books/great-book.txt" "Some text")
 
   , testCase "file not in any content directory is not awaiting" $
       assertBool "unknown directory should not be awaiting" $
-        not (isAwaitingImageBackfill "people/john-doe.md" "A person page")
+        not (isAwaitingImageBackfill defaultContentIds "people/john-doe.md" "A person page")
 
   , testCase "topics directory note without image is awaiting" $
       assertBool "topics note without image should be awaiting" $
-        isAwaitingImageBackfill "topics/machine-learning.md" "A topic about ML"
+        isAwaitingImageBackfill defaultContentIds "topics/machine-learning.md" "A topic about ML"
 
   , testCase "software directory note with image is not awaiting" $
       assertBool "software note with image should not be awaiting" $
-        not (isAwaitingImageBackfill "software/cool-tool.md"
+        not (isAwaitingImageBackfill defaultContentIds "software/cool-tool.md"
           "![[attachments/software-cool-tool.png]]\nA great tool")
 
   , testCase "BFS skips notes awaiting image but follows their links" $ do
@@ -335,7 +339,7 @@ imageBackfillFilterTests = testGroup "isAwaitingImageBackfill"
           ("---\ntitle: Book With Image\nURL: https://example.com/books/has-image-book\n---\n" <>
            "![[attachments/books-has-image-book.jpg]]\n" <>
            T.replicate 60 "x")
-        let config = FindContentConfig dir [Twitter] (TimeOfDay 0 0 0) Nothing
+        let config = FindContentConfig dir [Twitter] (TimeOfDay 0 0 0) Nothing defaultContentIds
         result <- bfsContentDiscovery config
         let resultPaths = fmap (cnRelativePath . ctpNote) result
         assertBool "should skip book without image"
@@ -452,7 +456,7 @@ bfsEligibilityTests = testGroup "checkBfsEligibility"
           ("---\ntitle: A Linked Book\nURL: https://example.com/books/linked-book\n---\n" <>
            "![[attachments/books-linked-book.jpg]]\n" <>
            T.replicate 60 "x")
-        let config = FindContentConfig dir [Twitter, Bluesky] (TimeOfDay 17 0 0) Nothing
+        let config = FindContentConfig dir [Twitter, Bluesky] (TimeOfDay 17 0 0) Nothing defaultContentIds
         result <- bfsContentDiscovery config
         let resultPaths = fmap (cnRelativePath . ctpNote) result
         assertBool "should find linked book, not the ineligible reflection"
@@ -482,7 +486,7 @@ bfsTraversalTests = testGroup "BFS traversal"
           ("---\ntitle: A Hidden Gem\nURL: https://example.com/books/hidden-gem\n---\n" <>
            "![[attachments/books-hidden-gem.jpg]]\n" <>
            T.replicate 60 "x")
-        let config = FindContentConfig dir [Twitter] (TimeOfDay 0 0 0) Nothing
+        let config = FindContentConfig dir [Twitter] (TimeOfDay 0 0 0) Nothing defaultContentIds
         result <- bfsContentDiscovery config
         let resultPaths = fmap (cnRelativePath . ctpNote) result
         assertBool "should not post index page"
@@ -511,7 +515,7 @@ bfsTraversalTests = testGroup "BFS traversal"
           ("---\ntitle: Public Book\nURL: https://example.com/books/public-book\n---\n" <>
            "![[attachments/books-public-book.jpg]]\n" <>
            T.replicate 60 "x")
-        let config = FindContentConfig dir [Twitter] (TimeOfDay 0 0 0) Nothing
+        let config = FindContentConfig dir [Twitter] (TimeOfDay 0 0 0) Nothing defaultContentIds
         result <- bfsContentDiscovery config
         let resultPaths = fmap (cnRelativePath . ctpNote) result
         assertBool "should not post private topic"
@@ -537,7 +541,7 @@ bfsTraversalTests = testGroup "BFS traversal"
           ("---\ntitle: Real Book\nURL: https://example.com/books/real-book\n---\n" <>
            "![[attachments/books-real-book.jpg]]\n" <>
            T.replicate 60 "x")
-        let config = FindContentConfig dir [Twitter] (TimeOfDay 0 0 0) Nothing
+        let config = FindContentConfig dir [Twitter] (TimeOfDay 0 0 0) Nothing defaultContentIds
         result <- bfsContentDiscovery config
         let resultPaths = fmap (cnRelativePath . ctpNote) result
         assertBool "should not post stub"
@@ -579,7 +583,7 @@ bfsTests = testGroup "BFS discovery"
 
   , testCase "bfsContentDiscovery with empty dir returns empty" $ do
       withSystemTempDirectory "social-test" $ \dir -> do
-        let config = FindContentConfig dir [Twitter, Bluesky] (TimeOfDay 17 0 0) Nothing
+        let config = FindContentConfig dir [Twitter, Bluesky] (TimeOfDay 17 0 0) Nothing defaultContentIds
         result <- bfsContentDiscovery config
         assertEqual "" [] result
 
@@ -597,7 +601,7 @@ bfsTests = testGroup "BFS discovery"
           ("---\ntitle: A Great Book\nURL: https://example.com/books/great-book\n---\n" <>
            "![[attachments/books-great-book.jpg]]\n" <>
            T.replicate 60 "x")
-        let config = FindContentConfig dir [Twitter, Bluesky, Mastodon] (TimeOfDay 0 0 0) Nothing
+        let config = FindContentConfig dir [Twitter, Bluesky, Mastodon] (TimeOfDay 0 0 0) Nothing defaultContentIds
         result <- bfsContentDiscovery config
         assertBool "should find content to post" (not (null result))
   ]
@@ -688,7 +692,7 @@ urlValidationTests = testGroup "URL validation"
            "![[attachments/books-live-book.jpg]]\n" <>
            T.replicate 60 "x")
         let checker url = pure (url == "https://bagrounds.org/books/live-book")
-            config = FindContentConfig dir [Twitter] (TimeOfDay 0 0 0) (Just checker)
+            config = FindContentConfig dir [Twitter] (TimeOfDay 0 0 0) (Just checker) defaultContentIds
         result <- bfsContentDiscovery config
         let resultPaths = fmap (cnRelativePath . ctpNote) result
         assertBool "should not include dead-link book"

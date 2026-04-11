@@ -26,6 +26,7 @@ import Network.HTTP.Client (Manager)
 import qualified Network.HTTP.Client.TLS as TLS
 
 import Automation.DailyUpdates (UpdateLink (..), addUpdateLinksToReflection)
+import Automation.BlogSeriesConfig (imageBackfillContentIdsFrom)
 import Automation.EmbedSection
   ( buildBlueskySection
   , buildMastodonSection
@@ -280,6 +281,7 @@ runPostingPipeline manager env apiKey vaultDir = do
         , fccPlatforms = platforms
         , fccPostingCutoff = defaultPostingCutoff
         , fccPublicationChecker = Just (checkUrlPublished tlsManager)
+        , fccImageBackfillContentIds = imageBackfillContentIdsFrom []
         }
       isPastHour = currentTime >= defaultPostingCutoff
 

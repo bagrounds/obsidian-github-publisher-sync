@@ -174,9 +174,9 @@ genTaskList :: QC.Gen [TaskId]
 genTaskList = QC.sublistOf allTaskIds
   where
     allTaskIds =
-      [ BlogSeriesChickieLoo
-      , BlogSeriesAutoBlogZero
-      , BlogSeriesSystemsForPublicGood
+      [ BlogSeries "chickie-loo"
+      , BlogSeries "auto-blog-zero"
+      , BlogSeries "systems-for-public-good"
       , BackfillBlogImages
       , InternalLinking
       , SocialPosting

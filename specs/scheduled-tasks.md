@@ -24,7 +24,7 @@
 🔍 The `haskell.yml` workflow only triggers on pushes that change files under `haskell/` or the workflow file itself, avoiding unnecessary builds.
 🔄 The `haskell.yml` workflow uses `concurrency` with `cancel-in-progress: true` to automatically cancel superseded CI runs on the same branch.
 ⬇️ The scheduled workflow downloads the pre-built binary from the latest successful Haskell CI run — no compilation at runtime.
-✅ Fully implemented task runners: blog-series (all 3), ai-fiction, reflection-title.
+✅ Fully implemented task runners: blog-series (dynamically discovered), ai-fiction, reflection-title.
 ⚠️ Stubbed task runners (log and skip): backfill-blog-images, internal-linking, social-posting.
 
 ### 🔄 Data Flow
@@ -85,7 +85,7 @@ Pacific before making decisions via `nowPacificHour()`.
 
 ## 🔧 Blog Series Model Fallback Chain
 
-📐 Each blog series has an ordered chain of Gemini models to try. On failure, the orchestrator tries the next model with 5XX retry and grounding fallback:
+📐 Each blog series has an ordered chain of Gemini models to try, defined in its `haskell/series/{id}.dhall` config file. On failure, the orchestrator tries the next model with 5XX retry and grounding fallback.
 
 | 🏷️ Series | 🤖 Model Chain (in order) | 👤 Priority User Env Var |
 |---|---|---|

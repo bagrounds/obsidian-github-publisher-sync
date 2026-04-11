@@ -18,7 +18,8 @@
 | 🧠 Prompt Builder | `haskell/src/Automation/BlogPrompt.hs` | 🔧 Constructs system and user prompts from blog context with recap awareness |
 | 📚 Series Logic | `haskell/src/Automation/BlogSeries.hs` | 🔄 Context assembly, post parsing, index generation, navigation linking |
 | 📄 Post Reader | `haskell/src/Automation/BlogPosts.hs` | 📖 Reads and parses markdown posts from series directories |
-| ⚙️ Series Config | `haskell/src/Automation/BlogSeriesConfig.hs` | 🗺️ Defines the three blog series with metadata and posting schedules |
+| ⚙️ Series Config | `haskell/src/Automation/BlogSeriesConfig.hs` | 🗺️ Runtime-parameterized series metadata lookup |
+| 🔍 Discovery | `haskell/src/Automation/BlogSeriesDiscovery.hs` | 🔍 Dhall config parser, validation, convention-based derivation |
 
 ### 🔄 Data Flow
 
@@ -48,7 +49,7 @@
 
 ## 📚 Blog Series Configuration
 
-📋 Three series are defined in the `BLOG_SERIES` ReadonlyMap, each with unique metadata.
+📋 Three series are currently defined in `haskell/series/*.dhall`, each auto-discovered at runtime.
 
 | 🏷️ Series ID | 🎨 Icon | ⏰ Post Time (UTC) | ⭐ Priority User | 🌐 Base URL |
 |---|---|---|---|---|
@@ -145,7 +146,7 @@
 | `extractSlug(filename)` | BlogSeries | 🔗 Extract URL slug from dated filename |
 | `generateSeriesIndex(series, posts)` | BlogSeries | 📇 Generate dataview-based series index page |
 | `appendModelSignature(body, model)` | BlogSeries | ✍️ Append model attribution signature |
-| `lookupSeries(seriesId)` | BlogSeriesConfig | ⚙️ Retrieve series config by ID |
+| `lookupSeriesIn(seriesMap, seriesId)` | BlogSeriesConfig | ⚙️ Retrieve series config by ID from runtime-discovered map |
 
 ### 💾 I/O Functions
 
@@ -154,7 +155,7 @@
 | `todayPacificDay` | PacificTime | 📅 Return today's date as a Day in Pacific time |
 | `readSeriesPosts(seriesDir)` | BlogPosts | 📄 Read and parse all markdown posts from series directory |
 | `readAgentsMd(seriesDir)` | BlogPosts | 📖 Read AGENTS.md system prompt override |
-| `buildBlogContext(seriesId, repoRoot, comments, today)` | BlogSeries | 📚 Assemble complete blog context from config and disk |
+| `buildBlogContext(seriesMap, seriesId, repoRoot, comments, today)` | BlogSeries | 📚 Assemble complete blog context from discovered config and disk |
 | `updatePreviousPost(seriesDir, previousPost, series, nextFilename)` | BlogSeries | 🔗 Update previous post file with forward navigation link |
 
 ## 🧪 Testing
@@ -178,34 +179,18 @@
 
 ## 🆕 How to Create a New Fully Automated Blog Series
 
-📋 Adding a new fully automated blog series requires changes in four files plus creating a content directory.
-🧩 The shared modules handle all prompt construction, date awareness, frontmatter assembly, and navigation linking automatically.
+📋 Adding a new fully automated blog series requires only a single config file.
+🔍 See the [Blog Series Auto-Discovery spec](blog-series-discovery.md) for full details.
 
-### 1️⃣ Add series configuration in `BlogSeriesConfig.hs`
+### 1️⃣ Create `haskell/series/{series-id}.dhall`
 
-📝 Define a new `BlogSeriesConfig` record with the series ID, display name, icon emoji, author wikilink, base URL, optional priority user, navigation link, and UTC post time.
-📦 Add the new config to the `blogSeries` list so it appears in `blogSeriesMap` and `backfillContentIds`.
+📄 Define a Dhall record with the series name, icon, schedule hour, model chain, and post time.
+📐 The series ID is derived from the filename; the base URL, author link, nav link, and env var are derived automatically.
 
-### 2️⃣ Add a task ID in `Scheduler.hs`
+### 2️⃣ Create the content directory
 
-🏷️ Add a new constructor to the `TaskId` sum type, such as `BlogSeriesMyNewSeries`.
-🔄 Add a corresponding case to `taskIdToText` mapping to `"blog-series:my-new-series"`.
-✅ The `taskIdFromText` map derives automatically from `taskIdToText` via `Bounded` and `Enum`.
-📋 Add the new task ID to `isBlogSeries` so it inherits the at-or-after scheduling behavior.
-
-### 3️⃣ Add a schedule entry and run config in `Scheduler.hs`
-
-⏰ Add a `ScheduleEntry` to the `schedule` list, specifying the Pacific hour to generate (such as `[10]` for 10 AM Pacific).
-🤖 Add a `BlogSeriesRunConfig` entry to `blogSeriesRunConfigs` with the series ID, Gemini model chain, and environment variable name for the priority user.
-
-### 4️⃣ Add a dispatch case in `RunScheduled.hs`
-
-🔀 Add a case for the new `TaskId` constructor in the task dispatch section of `runScheduledTasks`, calling `runBlogSeries context "my-new-series"`.
-
-### 5️⃣ Create the content directory
-
-📂 Create the series directory in the Obsidian vault at `content/my-new-series/`.
-📖 Optionally add an `AGENTS.md` file in the series directory with a custom system prompt for the AI. If absent, the default system prompt is used.
+📂 Create the series directory in the Obsidian vault at `content/{series-id}/`.
+📖 Optionally add an `AGENTS.md` file with a custom system prompt.
 📇 The series index page is generated automatically on the first run.
 
 ### 🔧 What you do NOT need to change
@@ -215,3 +200,4 @@
 🕐 `PacificTime.hs` — timezone handling and date formatting are shared.
 📝 `BlogPosts.hs` — post reading and parsing are shared.
 🖼️ `BlogImage.hs` — image generation is shared.
+🚫 `BlogSeriesConfig.hs`, `Scheduler.hs`, `RunScheduled.hs` — no changes needed; discovery is automatic.

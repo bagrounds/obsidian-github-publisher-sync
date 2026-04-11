@@ -24,13 +24,14 @@ import Automation.BlogPrompt
   , buildForwardLink
   , filterCommentsAfterLastPost
   )
-import Automation.BlogSeriesConfig (BlogSeriesConfig (..), lookupSeries)
+import Automation.BlogSeriesConfig (BlogSeriesConfig (..), lookupSeriesIn)
 import Automation.Frontmatter (quoteYamlValue)
+import Data.Map.Strict (Map)
 import Data.Time (Day)
 
-buildBlogContext :: Text -> FilePath -> [BlogComment] -> Day -> IO (Either Text BlogContext)
-buildBlogContext seriesId seriesDir comments today =
-  case lookupSeries seriesId of
+buildBlogContext :: Map Text BlogSeriesConfig -> Text -> FilePath -> [BlogComment] -> Day -> IO (Either Text BlogContext)
+buildBlogContext seriesMap seriesId seriesDir comments today =
+  case lookupSeriesIn seriesMap seriesId of
     Left reason -> pure (Left reason)
     Right series -> do
       posts <- readSeriesPosts seriesDir

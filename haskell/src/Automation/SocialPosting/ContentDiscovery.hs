@@ -44,7 +44,6 @@ import System.FilePath (takeBaseName, takeDirectory, takeFileName, (</>))
 import Text.Regex.TDFA ((=~))
 
 import Automation.BlogImage (hasEmbeddedImage, shouldHaveImage)
-import Automation.BlogSeriesConfig (imageBackfillContentIds)
 import Automation.Frontmatter (parseFrontmatter)
 import Automation.Platform (Platform (..))
 import qualified Automation.Platforms.Bluesky as Bluesky
@@ -75,10 +74,11 @@ data ContentToPost = ContentToPost
   } deriving (Show, Eq)
 
 data FindContentConfig = FindContentConfig
-  { fccContentDir           :: FilePath
-  , fccPlatforms            :: [Platform]
-  , fccPostingCutoff        :: TimeOfDay
-  , fccPublicationChecker   :: Maybe (Text -> IO Bool)
+  { fccContentDir             :: FilePath
+  , fccPlatforms              :: [Platform]
+  , fccPostingCutoff          :: TimeOfDay
+  , fccPublicationChecker     :: Maybe (Text -> IO Bool)
+  , fccImageBackfillContentIds :: [Text]
   }
 
 defaultPostingCutoff :: TimeOfDay
@@ -207,11 +207,11 @@ looksLikeDateTitle title =
   let t = T.strip title
   in (t :: Text) =~ ("^[0-9]{4}-[0-9]{2}-[0-9]{2}$" :: String)
 
-isAwaitingImageBackfill :: Text -> Text -> Bool
-isAwaitingImageBackfill relativePath body =
+isAwaitingImageBackfill :: [Text] -> Text -> Text -> Bool
+isAwaitingImageBackfill contentIds relativePath body =
   let directoryName = T.pack (takeFileName (takeDirectory (T.unpack relativePath)))
       filename = T.pack (takeFileName (T.unpack relativePath))
-  in elem directoryName imageBackfillContentIds
+  in elem directoryName contentIds
        && shouldHaveImage filename
        && not (hasEmbeddedImage body)
 
@@ -262,6 +262,7 @@ bfsLoop config state =
         Just note -> do
           eligible <- checkBfsEligibility (unRelativePath (cnRelativePath note)) (fccPostingCutoff config)
           let awaitingImage = isAwaitingImageBackfill
+                (fccImageBackfillContentIds config)
                 (unRelativePath (cnRelativePath note)) (cnBody note)
           mValidated <- case (isPostableContent note && eligible && not awaitingImage, fccPublicationChecker config) of
             (True, Just checker) -> validateNoteUrl checker note
@@ -317,7 +318,7 @@ discoverContentToPost config isPastPostingHour =
               mNote <- readContentNote reflPath (fccContentDir config)
               case mNote of
                 Just note | isPostableContent note
-                          , not (isAwaitingImageBackfill (unRelativePath (cnRelativePath note)) (cnBody note)) -> do
+                          , not (isAwaitingImageBackfill (fccImageBackfillContentIds config) (unRelativePath (cnRelativePath note)) (cnBody note)) -> do
                   mValidated <- case fccPublicationChecker config of
                     Just checker -> validateNoteUrl checker note
                     Nothing      -> pure (Just note)

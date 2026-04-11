@@ -276,6 +276,7 @@ cd haskell && cabal test --test-show-details=direct
 | 📄 Spec | 📝 Description |
 |---|---|
 | [`scheduled-tasks.md`](specs/scheduled-tasks.md) | ⏰ Consolidated task scheduler — hourly cron, Haskell scheduling logic, task pipelines |
+| [`blog-series-discovery.md`](specs/blog-series-discovery.md) | 🔍 Blog series auto-discovery — declarative Dhall configs, convention-based derivation |
 | [`image-generation.md`](specs/image-generation.md) | 🖼️ Image generation pipeline — architecture, provider resolution, frontmatter schema, rate limiting, backfill prioritization |
 | [`daily-reflection.md`](specs/daily-reflection.md) | 📝 Daily reflection auto-update — template-based creation, series section insertion, post linking, workflow integration |
 | [`systems-for-public-good.md`](specs/systems-for-public-good.md) | 🏛️ Systems for Public Good blog series — democracy, public goods, grounding with Google Search, editorial guidelines |

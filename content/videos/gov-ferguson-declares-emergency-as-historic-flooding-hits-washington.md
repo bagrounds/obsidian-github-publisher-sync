@@ -9,6 +9,9 @@ Platform:
 Channel: KING 5 Seattle
 tags:
 youtube: https://youtu.be/lDKhq2ykiZA
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_time: 2026-04-10T00:00:00Z
+force_analyze_links: false
 ---
 [Home](../index.md) > [Videos](./index.md)  
 # 🌊🚨🇺🇸 Gov. Ferguson Declares Emergency as ‘Historic Flooding’ Hits Washington  
@@ -57,7 +60,7 @@ youtube: https://youtu.be/lDKhq2ykiZA
   
 ### 🆚 Contrasting  
 * 🏗️ Cadillac Desert: The American West and Its Disappearing Water by Marc Reisner contrasts the natural process of water with the politics and massive, often flawed, human infrastructure projects meant to control it throughout the West.  
-* 🏛️ The Power Broker: Robert Moses and the Fall of New York by Robert A. Caro provides a political contrast, showing how non-environmental decisions by powerful figures shape public works and create long-term structural vulnerabilities in urban areas.  
+* 🏛️ [👑🏙️ The Power Broker](../books/the-power-broker.md): Robert Moses and the Fall of New York by Robert A. Caro provides a political contrast, showing how non-environmental decisions by powerful figures shape public works and create long-term structural vulnerabilities in urban areas.  
   
 ### 🎨 Creatively Related  
 * 🚣 The Emerald Mile: The Epic Story of the Fastest Ride in History Through the Heart of the Grand Canyon by Kevin Fedarko tangentially relates by describing the raw, awe-inspiring, and deadly power of a major river system during a historic and unprecedented flood.  

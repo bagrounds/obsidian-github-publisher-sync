@@ -9,6 +9,9 @@ Platform:
 Channel: On with Kara Swisher
 tags:
 youtube: https://youtu.be/gDrw_E_IMTA
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_time: 2026-04-10T00:00:00Z
+force_analyze_links: false
 ---
 [Home](../index.md) > [Videos](./index.md)  
 # 🤯🗣️📱📈 “He behaved like a total maniac” Sam Harris on Elon & Big Tech’s turn towards Trump  
@@ -65,4 +68,4 @@ youtube: https://youtu.be/gDrw_E_IMTA
 * [👹 The Origins of Totalitarianism](../books/the-origins-of-totalitarianism.md) by Hannah Arendt (Schocken Books) provides the historical framework for understanding how truth is subverted in authoritarian regimes.  
   
 ## 🐦 Tweet  
-<blockquote class="twitter-tweet" data-theme="dark"><p lang="en" dir="ltr">2026-02-02 | 👥 Many 👁️ Reality 🎲 Games 🎯 Need 🗽 Liberty 📚📺<br><br>📜 Magna Carta | 👑 Dystopian Fiction | 🎲 Game Theory | ♾️ Infinite Games | 🤖 AI | 💡 Future Skills | 〰️ Systems Thinking | 📈 Emergent Behavior | 🗽 Freedom | 🌀 Cycles<a href="https://twitter.com/grok?ref_src=twsrc%5Etfw">@grok</a> questions?<a href="https://t.co/FKpHfHv7kP">https://t.co/FKpHfHv7kP</a></p>&mdash; Bryan Grounds (@bagrounds) <a href="https://twitter.com/bagrounds/status/2019129483840876643?ref_src=twsrc%5Etfw">February 4, 2026</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+<blockquote class="twitter-tweet" data-theme="dark"><p lang="en" dir="ltr">2026-02-02 | 👥 Many 👁️ Reality 🎲 Games 🎯 Need 🗽 Liberty 📚📺<br><br>📜 [📜👶🗽 Magna Carta: The Birth of Liberty](books/magna-carta-the-birth-of-liberty.md) | 👑 Dystopian Fiction | 🎲 Game Theory | ♾️ Infinite Games | 🤖 AI | 💡 Future Skills | 〰️ Systems Thinking | 📈 Emergent Behavior | 🗽 Freedom | 🌀 Cycles<a href="https://twitter.com/grok?ref_src=twsrc%5Etfw">@grok</a> questions?<a href="https://t.co/FKpHfHv7kP">https://t.co/FKpHfHv7kP</a></p>&mdash; Bryan Grounds (@bagrounds) <a href="https://twitter.com/bagrounds/status/2019129483840876643?ref_src=twsrc%5Etfw">February 4, 2026</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>

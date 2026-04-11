@@ -6,6 +6,9 @@ URL: https://bagrounds.org/books/the-big-ones-how-natural-disasters-have-shaped-
 share: true
 CTA: 🌎 Prepare for impact.
 affiliate link: https://amzn.to/3KthxRE
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_time: 2026-04-10T00:00:00Z
+force_analyze_links: false
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🌋🌊🌪️🔥 The Big Ones: How Natural Disasters Have Shaped Us (and What We Can Do About Them)  

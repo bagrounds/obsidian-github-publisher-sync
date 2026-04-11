@@ -9,6 +9,9 @@ Platform:
 Channel: Heather Cox Richardson
 tags:
 youtube: https://youtu.be/0vohywJZ-Vk
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_time: 2026-04-11T00:00:00Z
+force_analyze_links: false
 ---
 [Home](../index.md) > [Videos](./index.md) | [🏛️🇺🇸📖 Heather Cox Richardson](../people/heather-cox-richardson.md)  
 # 🚪🏃‍♂️❓ Why Are They Leaving Office? | Explainer  
@@ -65,5 +68,5 @@ youtube: https://youtu.be/0vohywJZ-Vk
   
 ### 🎨 Creatively Related  
   
-* 📙 **The Power Broker: Robert Moses and the Fall of New York** by Robert A. Caro: A massive biography detailing how a single unelected official used networks of wealth and power to reshape New York City for decades, which tangentially relates to the speaker's warning about the dangers of a wealthy **broligarchy** or an entrenched **aristocracy** using power outside of democratic control.  
+* 📙 **[👑🏙️ The Power Broker](../books/the-power-broker.md): Robert Moses and the Fall of New York** by Robert A. Caro: A massive biography detailing how a single unelected official used networks of wealth and power to reshape New York City for decades, which tangentially relates to the speaker's warning about the dangers of a wealthy **broligarchy** or an entrenched **aristocracy** using power outside of democratic control.  
 * **[🔫🦠🔩 Guns, Germs, and Steel: The Fates of Human Societies](../books/guns-germs-and-steel-the-fates-of-human-societies.md)** by Jared Diamond: A deep history examining the ultimate factors driving historical inequalities, providing a sweeping, non-political framework for understanding long-term economic shifts and power accumulation that makes the current political moment feel less exceptional and more like a recurring pattern.

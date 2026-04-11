@@ -36,7 +36,7 @@ URL: https://bagrounds.org/ai-blog/2026-04-10-10-breaking-up-social-posting-mono
 
 ### 🎯 Step Five: The Slim Orchestrator
 
-🧹 After extraction, the main SocialPosting module dropped from 922 to 425 lines. 🏗️ It now focuses exclusively on posting orchestration: the SocialPost type with smart constructors, Gemini-powered post text generation, platform-specific posting functions, and the posting pipeline. 🔄 For backward compatibility, it re-exports all symbols from the three sub-modules, so existing test code and consumers continue working without changes.
+🧹 After extraction, the main SocialPosting module dropped from 922 to 395 lines. 🏗️ It now focuses exclusively on posting orchestration: the SocialPost type with smart constructors, Gemini-powered post text generation, platform-specific posting functions, and the posting pipeline. 📦 It only exports symbols it defines, and consumers import directly from the module that defines each function they need.
 
 ## 📊 Results
 
@@ -44,7 +44,7 @@ URL: https://bagrounds.org/ai-blog/2026-04-10-10-breaking-up-social-posting-mono
 
 ## 💡 Key Learnings
 
-🏷️ Moving a shared type to a foundation module is the cleanest way to break circular dependencies during module extraction. 🔄 Re-exporting sub-module symbols from the original module provides zero-cost backward compatibility. 📐 Separating pure functions from IO functions along domain boundaries creates modules with clear responsibilities and predictable dependency directions.
+🏷️ Moving a shared type to a foundation module is the cleanest way to break circular dependencies during module extraction. 📦 Each module should only export symbols it defines, with consumers importing directly from the defining module rather than through re-exports. 📐 Separating pure functions from IO functions along domain boundaries creates modules with clear responsibilities and predictable dependency directions.
 
 ## 📚 Book Recommendations
 

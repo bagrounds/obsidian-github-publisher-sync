@@ -9,6 +9,9 @@ Platform:
 Channel: PBS NewsHour
 tags:
 youtube: https://youtu.be/z5x2XwjaLzU
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_time: 2026-04-10T00:00:00Z
+force_analyze_links: false
 ---
 [Home](../index.md) > [Videos](./index.md)  
 # 🐘🧠❓ Brooks and Capehart on Trump’s mental acuity and unpredictability  
@@ -48,12 +51,12 @@ youtube: https://youtu.be/z5x2XwjaLzU
   
 ### ↔️ Similar  
 * 🏛️ The Soul of America by Jon Meacham explores how the country has navigated previous periods of fear and division.  
-* 🛡️ How Democracies Die by Steven Levitsky and Daniel Ziblatt examines the gradual erosion of political norms by elected leaders.  
+* 🛡️ [🗳️🏛️☠️ How Democracies Die](../books/how-democracies-die.md) by Steven Levitsky and Daniel Ziblatt examines the gradual erosion of political norms by elected leaders.  
   
 ### 🆚 Contrasting  
 * 🦅 The Case for Trump by Victor Davis Hanson argues that the president's unconventional style is a necessary response to a failing political establishment.  
 * 🗳️ The Unitary Executive Theory by Christopher S. Yoo defends the expansion of presidential authority as consistent with the original intent of the Constitution.  
   
 ### 🎨 Creatively Related  
-* 🏛️ Meditations by Marcus Aurelius provides a framework for leadership rooted in stoicism and personal restraint rather than ego.  
+* 🏛️ [🤔🧘 Meditations](../books/meditations.md) by Marcus Aurelius provides a framework for leadership rooted in stoicism and personal restraint rather than ego.  
 * 🌊 The Histories by Tacitus offers the classical perspective on the corruption and mental decline of Roman emperors referenced in the discussion.

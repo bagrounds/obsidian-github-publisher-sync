@@ -52,6 +52,7 @@
 | 🎤 `presentations/` | 2 | 🎙️ Talk slides and notes |
 | 🧰 `tools/` | 1 | 🧮 Interactive tools (calculator) |
 | 🎮 `games/` | 1 | 🧬 Interactive games (Valence) |
+| 📰 `the-noise/` | ~1 | 📰 AI-generated daily news digest |
 | 🤖 `auto-blog-zero/` | ~12 | 📝 AI-generated daily blog posts |
 | 🐔 `chickie-loo/` | ~12 | 🐣 AI-generated chicken-themed blog posts |
 | 🏛️ `systems-for-public-good/` | ~1 | 🏛️ AI-generated democracy and public good blog posts |
@@ -69,9 +70,10 @@
 
 | ⏰ Pacific Hour | 🏷️ Task | 📝 Description |
 |---|---|---|
-| 8 | 🐔 Chickie Loo | 🐣 AI blog post with chicken-keeping personality |
-| 9 | 🤖 Auto Blog Zero | 📝 AI blog post based on reflections and discussions |
-| 10 | 🏛️ Systems for Public Good | 🏛️ AI blog with Google Search grounding for current events |
+| 6 | 📰 The Noise | 📡 AI news digest with Google Search grounding for current events |
+| 7 | 🐔 Chickie Loo | 🐣 AI blog post with chicken-keeping personality |
+| 8 | 🤖 Auto Blog Zero | 📝 AI blog post based on reflections and discussions |
+| 9 | 🏛️ Systems for Public Good | 🏛️ AI blog with Google Search grounding for current events |
 | 23 | 🖼️ Backfill Blog Images | 🔍 Generate missing cover images for all blog posts |
 | 1 | 🔗 Internal Linking | 📥 BFS-driven wikilink insertion in Obsidian vault |
 | Even hours | 📢 Social Posting | 📱 Discover and post unposted content to X/Bluesky/Mastodon |
@@ -218,6 +220,7 @@ Pull Vault → BFS from Most Recent Reflection → For Each File:
 | `AUTO_BLOG_ZERO_PRIORITY_USER` | `bagrounds` | 👤 GitHub user for blog discussion priority |
 | `CHICKIE_LOO_PRIORITY_USER` | `ChickieLoo` | 🐔 GitHub user for Chickie Loo priority |
 | `SYSTEMS_FOR_PUBLIC_GOOD_PRIORITY_USER` | `bagrounds` | 🏛️ GitHub user for Systems for Public Good priority |
+| `THE_NOISE_PRIORITY_USER` | `bagrounds` | 📰 GitHub user for The Noise priority |
 | `DISABLE_TWITTER` | _(empty)_ | 🚫 Set to disable Twitter posting |
 | `DISABLE_BLUESKY` | _(empty)_ | 🚫 Set to disable Bluesky posting |
 | `DISABLE_MASTODON` | _(empty)_ | 🚫 Set to disable Mastodon posting |
@@ -280,5 +283,6 @@ cd haskell && cabal test --test-show-details=direct
 | [`image-generation.md`](specs/image-generation.md) | 🖼️ Image generation pipeline — architecture, provider resolution, frontmatter schema, rate limiting, backfill prioritization |
 | [`daily-reflection.md`](specs/daily-reflection.md) | 📝 Daily reflection auto-update — template-based creation, series section insertion, post linking, workflow integration |
 | [`systems-for-public-good.md`](specs/systems-for-public-good.md) | 🏛️ Systems for Public Good blog series — democracy, public goods, grounding with Google Search, editorial guidelines |
+| [`the-noise.md`](specs/the-noise.md) | 📰 The Noise blog series — daily news digest, Google Search grounding, high-quality source curation, original synthesis |
 | [`ai-blog-sync.md`](specs/ai-blog-sync.md) | 🤖 AI blog vault sync — automated navigation links, daily reflection linking, TTS-friendly writing |
 | [`tts.md`](specs/tts.md) | 🎧 Text-to-Speech player — Web Speech API, content extraction, sentence highlighting, auto-play, comment reading |

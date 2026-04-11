@@ -22,9 +22,6 @@ tests = testGroup "SocialPosting.ContentDiscovery"
   , imageBackfillTests
   ]
 
---------------------------------------------------------------------------------
--- Platform detection
---------------------------------------------------------------------------------
 
 platformDetectionTests :: TestTree
 platformDetectionTests = testGroup "detectPostedPlatforms"
@@ -52,9 +49,6 @@ platformDetectionTests = testGroup "detectPostedPlatforms"
       \() -> Set.null (detectPostedPlatforms "")
   ]
 
---------------------------------------------------------------------------------
--- Content filtering
---------------------------------------------------------------------------------
 
 contentFilterTests :: TestTree
 contentFilterTests = testGroup "content filtering"
@@ -80,9 +74,6 @@ contentFilterTests = testGroup "content filtering"
           "![[attachments/books-great-book.jpg]]\nSome text about a great book")
   ]
 
---------------------------------------------------------------------------------
--- Reflection eligibility
---------------------------------------------------------------------------------
 
 reflectionEligibilityTests :: TestTree
 reflectionEligibilityTests = testGroup "isReflectionEligibleForPosting"
@@ -118,9 +109,6 @@ mkUTC year month day hour =
   UTCTime (fromGregorian year month day)
           (secondsToDiffTime (fromIntegral hour * 3600))
 
---------------------------------------------------------------------------------
--- BFS eligibility
---------------------------------------------------------------------------------
 
 bfsEligibilityTests :: TestTree
 bfsEligibilityTests = testGroup "checkBfsEligibility"
@@ -141,9 +129,6 @@ bfsEligibilityTests = testGroup "checkBfsEligibility"
       assertBool "old reflection should be eligible" result
   ]
 
---------------------------------------------------------------------------------
--- URL from file path
---------------------------------------------------------------------------------
 
 urlFromFilePathTests :: TestTree
 urlFromFilePathTests = testGroup "urlFromFilePath"
@@ -164,9 +149,6 @@ urlFromFilePathTests = testGroup "urlFromFilePath"
         T.isPrefixOf "https://bagrounds.org/" (urlFromFilePath (T.pack s))
   ]
 
---------------------------------------------------------------------------------
--- Image backfill filtering
---------------------------------------------------------------------------------
 
 imageBackfillTests :: TestTree
 imageBackfillTests = testGroup "isAwaitingImageBackfill"

@@ -15,10 +15,6 @@ import System.FilePath ((</>))
 
 import Automation.Frontmatter (quoteYamlValue)
 
---------------------------------------------------------------------------------
--- Frontmatter timestamp updates
---------------------------------------------------------------------------------
-
 updateFrontmatterTimestamp :: FilePath -> IO ()
 updateFrontmatterTimestamp filePath = do
   exists <- doesFileExist filePath
@@ -42,10 +38,6 @@ updatePathTimestamps :: FilePath -> [Text] -> IO ()
 updatePathTimestamps contentDir =
   mapM_ (\p -> updateFrontmatterTimestamp (contentDir </> T.unpack p))
 
---------------------------------------------------------------------------------
--- Frontmatter URL updates
---------------------------------------------------------------------------------
-
 updateFrontmatterUrl :: FilePath -> Text -> IO ()
 updateFrontmatterUrl filePath newUrl = do
   exists <- doesFileExist filePath
@@ -62,10 +54,6 @@ updateFrontmatterUrl filePath newUrl = do
                 in TIO.writeFile filePath
                      (T.intercalate "\n" (first : updatedFm <> [closingDash] <> bodyLines))
       _ -> pure ()
-
---------------------------------------------------------------------------------
--- Frontmatter field upsert helper
---------------------------------------------------------------------------------
 
 upsertFmField :: [Text] -> Text -> Text -> [Text]
 upsertFmField ls key renderedVal =

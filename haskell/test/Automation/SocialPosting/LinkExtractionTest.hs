@@ -18,9 +18,7 @@ tests = testGroup "SocialPosting.LinkExtraction"
   , extractMarkdownLinksTests
   ]
 
---------------------------------------------------------------------------------
 -- parseWikiLinks
---------------------------------------------------------------------------------
 
 parseWikiLinksTests :: TestTree
 parseWikiLinksTests = testGroup "parseWikiLinks"
@@ -63,9 +61,7 @@ parseWikiLinksTests = testGroup "parseWikiLinks"
       \(QC.ASCIIString s) -> seq (parseWikiLinks s) True
   ]
 
---------------------------------------------------------------------------------
 -- normalizeFilePath
---------------------------------------------------------------------------------
 
 normalizeFilePathTests :: TestTree
 normalizeFilePathTests = testGroup "normalizeFilePath"
@@ -96,9 +92,7 @@ normalizeFilePathTests = testGroup "normalizeFilePath"
         in normalizeFilePath normalized == normalized
   ]
 
---------------------------------------------------------------------------------
 -- reconstructPath
---------------------------------------------------------------------------------
 
 reconstructPathTests :: TestTree
 reconstructPathTests = testGroup "reconstructPath"
@@ -122,9 +116,7 @@ reconstructPathTests = testGroup "reconstructPath"
         (reconstructPath Map.empty "a" "z")
   ]
 
---------------------------------------------------------------------------------
 -- extractMarkdownLinks
---------------------------------------------------------------------------------
 
 extractMarkdownLinksTests :: TestTree
 extractMarkdownLinksTests = testGroup "extractMarkdownLinks"

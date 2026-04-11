@@ -1,36 +1,5 @@
 module Automation.SocialPosting
-  ( -- Re-exported from Automation.Platform
-    Platform (..)
-    -- Re-exported from Automation.SocialPosting.ContentDiscovery
-  , ContentNote (..)
-  , ContentToPost (..)
-  , FindContentConfig (..)
-  , readContentNote
-  , discoverContentToPost
-  , bfsContentDiscovery
-  , isPostableContent
-  , isUntitledReflection
-  , isIndexPath
-  , isReflectionEligibleForPosting
-  , checkBfsEligibility
-  , isAwaitingImageBackfill
-  , detectPostedPlatforms
-  , checkUrlPublished
-  , urlFromFilePath
-  , validateNoteUrl
-  , defaultPostingCutoff
-  , findMostRecentReflection
-    -- Re-exported from Automation.SocialPosting.LinkExtraction
-  , extractMarkdownLinks
-  , parseWikiLinks
-  , normalizeFilePath
-  , reconstructPath
-    -- Re-exported from Automation.SocialPosting.FrontmatterUpdate
-  , updateFrontmatterTimestamp
-  , updatePathTimestamps
-  , updateFrontmatterUrl
-    -- Defined in this module
-  , SocialPost (..)
+  ( SocialPost (..)
   , PostedNote (..)
   , socialPostContent
   , socialPostPlatform
@@ -75,18 +44,20 @@ import Automation.Prompts (PromptPair (..), assemblePost, buildQuestionPrompt, b
 import Automation.Reflection (ReflectionData (..))
 import Automation.Secret (Secret, unSecret)
 import Automation.SocialPosting.ContentDiscovery
-import Automation.SocialPosting.FrontmatterUpdate
-import Automation.SocialPosting.LinkExtraction
+  ( ContentNote (..)
+  , ContentToPost (..)
+  , FindContentConfig (..)
+  , checkUrlPublished
+  , defaultPostingCutoff
+  , discoverContentToPost
+  )
+import Automation.SocialPosting.FrontmatterUpdate (updatePathTimestamps)
 import Automation.Text (calculatePostLength, fitPostToLimit)
 import Automation.Title (unTitle)
 import Automation.Types (EnvironmentConfig (..), OgMetadata (..))
 import Automation.Url (unUrl)
 import Automation.RelativePath (RelativePath, unRelativePath)
 import System.FilePath (takeBaseName, (</>))
-
---------------------------------------------------------------------------------
--- SocialPost types
---------------------------------------------------------------------------------
 
 data SocialPost
   = Tweet Text
@@ -130,10 +101,6 @@ mkSocialPost Twitter = mkTweet
 mkSocialPost Bluesky = mkBlueskyPost
 mkSocialPost Mastodon = mkMastodonPost
 
---------------------------------------------------------------------------------
--- Platform helpers
---------------------------------------------------------------------------------
-
 platformDetail :: Platform -> Text
 platformDetail Twitter  = "🐦 posted to Twitter"
 platformDetail Bluesky  = "🦋 posted to BlueSky"
@@ -155,10 +122,6 @@ getConfiguredPlatforms ec = catMaybes
   , case ecBluesky ec of { Just _ -> Just Bluesky; Nothing -> Nothing }
   , case ecMastodon ec of { Just _ -> Just Mastodon; Nothing -> Nothing }
   ]
-
---------------------------------------------------------------------------------
--- Social post generation via Gemini
---------------------------------------------------------------------------------
 
 generateSocialPostText :: Manager -> Secret -> ContentNote -> Platform -> IO (Either Text Text)
 generateSocialPostText manager apiKey note platform = do
@@ -211,10 +174,6 @@ generateSocialPostText manager apiKey note platform = do
 extractDateFromPath :: RelativePath -> Text
 extractDateFromPath path =
   T.pack $ takeBaseName $ T.unpack $ unRelativePath path
-
---------------------------------------------------------------------------------
--- Platform posting tasks
---------------------------------------------------------------------------------
 
 data PostResult = PostResult
   { prPlatform :: Platform
@@ -302,10 +261,6 @@ postToMastodonPlatform manager env _note postText =
                 , prSectionBuilder = buildMastodonSection
                 }
             _ -> pure $ Left "Could not extract Mastodon post details from URL"
-
---------------------------------------------------------------------------------
--- Posting pipeline
---------------------------------------------------------------------------------
 
 data PostedNote = PostedNote
   { pnNote      :: ContentNote
@@ -402,10 +357,6 @@ postForPlatform manager env apiKey note platform = do
 eitherToMaybe :: Either a b -> Maybe b
 eitherToMaybe (Right b) = Just b
 eitherToMaybe (Left _)  = Nothing
-
---------------------------------------------------------------------------------
--- Main orchestrator
---------------------------------------------------------------------------------
 
 autoPost :: Manager -> FilePath -> IO ()
 autoPost manager vaultDir = do

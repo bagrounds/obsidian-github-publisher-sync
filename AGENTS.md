@@ -61,6 +61,8 @@ URL: https://bagrounds.org/ai-blog/2026-03-08-1-auto-post-mastodon
 - 🔡 No single-letter variables: unless the variable is truly abstract (such as a mathematical formula parameter), always use descriptive names. For example, use today instead of d, directory instead of x.
 - 📊 Logging should be thorough but not spammy, easy for a human to read and understand what is happening, including decisions being made in code. Logs should be data-centric and maintain a high signal to noise ratio.
 - 🧹 No dead code or tech debt: never leave unused parameters, ignored arguments, or dead code paths in the codebase. When a refactor makes code unnecessary, remove it immediately rather than leaving it behind with a workaround. Clean up interfaces, remove unused fields from records, and eliminate adapter shims that exist only to satisfy obsolete signatures. If it can be cleaned up now, clean it up now.
+- 🚫 No section-demarcating comments: do not use banner-style comment blocks (such as lines of dashes with a section title) to separate code within a module. Well-named functions and good module scoping make these unnecessary. If a section feels like it needs a heading, it probably belongs in its own module.
+- 🚫 No re-exports: each module should only export symbols it defines. Consumers should import directly from the module that defines the functionality they need. Do not re-export symbols from sub-modules to create a facade — this adds unnecessary complexity and obscures where functionality is defined.
 
 ## Scientific Engineering
 - 🔬 Always test your work and iterate until your tests succeed and verify that the goal has been achieved.

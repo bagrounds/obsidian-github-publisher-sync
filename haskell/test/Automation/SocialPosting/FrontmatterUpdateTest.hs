@@ -18,9 +18,7 @@ tests = testGroup "SocialPosting.FrontmatterUpdate"
   , updatePathTimestampsTests
   ]
 
---------------------------------------------------------------------------------
 -- upsertFmField
---------------------------------------------------------------------------------
 
 upsertFmFieldTests :: TestTree
 upsertFmFieldTests = testGroup "upsertFmField"
@@ -41,9 +39,7 @@ upsertFmFieldTests = testGroup "upsertFmField"
         (upsertFmField [] "updated" "\"2026-01-01\"")
   ]
 
---------------------------------------------------------------------------------
 -- updateFrontmatterUrl
---------------------------------------------------------------------------------
 
 updateFrontmatterUrlTests :: TestTree
 updateFrontmatterUrlTests = testGroup "updateFrontmatterUrl"
@@ -73,9 +69,7 @@ updateFrontmatterUrlTests = testGroup "updateFrontmatterUrl"
       updateFrontmatterUrl "/nonexistent/path/note.md" "https://example.com"
   ]
 
---------------------------------------------------------------------------------
 -- updateFrontmatterTimestamp
---------------------------------------------------------------------------------
 
 updateFrontmatterTimestampTests :: TestTree
 updateFrontmatterTimestampTests = testGroup "updateFrontmatterTimestamp"
@@ -105,9 +99,7 @@ updateFrontmatterTimestampTests = testGroup "updateFrontmatterTimestamp"
       updateFrontmatterTimestamp "/nonexistent/path/note.md"
   ]
 
---------------------------------------------------------------------------------
 -- updatePathTimestamps
---------------------------------------------------------------------------------
 
 updatePathTimestampsTests :: TestTree
 updatePathTimestampsTests = testGroup "updatePathTimestamps"

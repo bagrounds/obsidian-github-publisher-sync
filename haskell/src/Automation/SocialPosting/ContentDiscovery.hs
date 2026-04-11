@@ -57,10 +57,6 @@ import Automation.SocialPosting.LinkExtraction (extractMarkdownLinks)
 import Automation.Title (Title, mkTitle, unTitle)
 import Automation.Url (Url, mkUrl, unUrl)
 
---------------------------------------------------------------------------------
--- Types
---------------------------------------------------------------------------------
-
 data ContentNote = ContentNote
   { cnFilePath       :: FilePath
   , cnRelativePath   :: RelativePath
@@ -85,19 +81,11 @@ data FindContentConfig = FindContentConfig
   , fccPublicationChecker   :: Maybe (Text -> IO Bool)
   }
 
---------------------------------------------------------------------------------
--- Constants
---------------------------------------------------------------------------------
-
 defaultPostingCutoff :: TimeOfDay
 defaultPostingCutoff = TimeOfDay 17 0 0
 
 minPostableBodyLength :: Int
 minPostableBodyLength = 50
-
---------------------------------------------------------------------------------
--- Platform detection
---------------------------------------------------------------------------------
 
 detectPostedPlatforms :: Text -> Set Platform
 detectPostedPlatforms content =
@@ -110,10 +98,6 @@ detectPostedPlatforms content =
     checkHeader (header, platform)
       | T.isInfixOf header content = Just platform
       | otherwise = Nothing
-
---------------------------------------------------------------------------------
--- Reading content notes
---------------------------------------------------------------------------------
 
 readContentNote :: Text -> FilePath -> IO (Maybe ContentNote)
 readContentNote relativePath contentDir = do
@@ -150,10 +134,6 @@ readContentNote relativePath contentDir = do
           putStrLn $ "  ⚠️  Skipping " <> filePath <> ": " <> T.unpack reason
           pure Nothing
     else pure Nothing
-
---------------------------------------------------------------------------------
--- URL validation
---------------------------------------------------------------------------------
 
 checkUrlPublished :: Manager -> Text -> IO Bool
 checkUrlPublished manager url = do
@@ -202,10 +182,6 @@ validateNoteUrl checker note = do
                 <> T.unpack (unUrl (cnUrl note)) <> " and " <> T.unpack pathUrl
               pure Nothing
 
---------------------------------------------------------------------------------
--- Content filtering
---------------------------------------------------------------------------------
-
 isPostableContent :: ContentNote -> Bool
 isPostableContent note =
   not (isIndexPage note)
@@ -239,10 +215,6 @@ isAwaitingImageBackfill relativePath body =
        && shouldHaveImage filename
        && not (hasEmbeddedImage body)
 
---------------------------------------------------------------------------------
--- Reflection eligibility
---------------------------------------------------------------------------------
-
 isReflectionEligibleForPosting :: UTCTime -> TimeOfDay -> Day -> Bool
 isReflectionEligibleForPosting now postingCutoff reflectionDate =
   let today = utctDay now
@@ -250,10 +222,6 @@ isReflectionEligibleForPosting now postingCutoff reflectionDate =
       currentTime = timeToTimeOfDay (utctDayTime now)
   in (reflectionDate == yesterday && currentTime >= postingCutoff)
        || reflectionDate < yesterday
-
---------------------------------------------------------------------------------
--- BFS content discovery
---------------------------------------------------------------------------------
 
 data BfsState = BfsState
   { bsVisited   :: Set Text
@@ -331,10 +299,6 @@ checkBfsEligibility relativePath postingCutoff
           pure $ isReflectionEligibleForPosting now postingCutoff reflectionDate
   | otherwise = pure True
 
---------------------------------------------------------------------------------
--- Discover content to post (main entry point for discovery)
---------------------------------------------------------------------------------
-
 discoverContentToPost :: FindContentConfig -> Bool -> IO [ContentToPost]
 discoverContentToPost config isPastPostingHour =
   if isPastPostingHour
@@ -371,10 +335,6 @@ discoverContentToPost config isPastPostingHour =
                 _ -> bfsContentDiscovery config
             else bfsContentDiscovery config
     else bfsContentDiscovery config
-
---------------------------------------------------------------------------------
--- Date parsing helpers
---------------------------------------------------------------------------------
 
 parseDateFromPath :: Text -> Maybe Day
 parseDateFromPath path =

@@ -122,4 +122,36 @@ tests = testGroup "Text"
           customLimits = PlatformLimits 100 (Just customUrlCount)
       in calculatePostLength customLimits "see https://example.com" @?=
         T.length "see https://example.com" + (customUrlCount - T.length "https://example.com")
+
+  , stripCodeFencesTests
+  ]
+
+stripCodeFencesTests :: TestTree
+stripCodeFencesTests = testGroup "stripCodeFences"
+  [ testCase "strips markdown code fence" $
+      stripCodeFences "```markdown\nHello World\n```" @?= "Hello World"
+
+  , testCase "strips md code fence" $
+      stripCodeFences "```md\nHello World\n```" @?= "Hello World"
+
+  , testCase "strips plain code fence" $
+      stripCodeFences "```\nHello World\n```" @?= "Hello World"
+
+  , testCase "preserves text without code fences" $
+      stripCodeFences "Just normal text" @?= "Just normal text"
+
+  , testCase "strips only opening fence when no closing fence" $
+      stripCodeFences "```markdown\nHello World" @?= "Hello World"
+
+  , testCase "strips only closing fence when no opening fence" $
+      stripCodeFences "Hello World\n```" @?= "Hello World"
+
+  , testCase "handles empty content between fences" $
+      stripCodeFences "```markdown\n\n```" @?= ""
+
+  , testCase "preserves internal code fences" $
+      stripCodeFences "```markdown\nSome ```code``` here\n```" @?= "Some ```code``` here"
+
+  , testCase "handles multiline content" $
+      stripCodeFences "```markdown\nLine 1\nLine 2\nLine 3\n```" @?= "Line 1\nLine 2\nLine 3"
   ]

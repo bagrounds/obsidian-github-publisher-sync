@@ -155,6 +155,32 @@ Each error migration delivered with test coverage:
 18. **Use throwIO not error in tests**: Pure `error` calls produce bottom values that may not be caught by `try @SomeException` in all GHC versions. Use `throwIO` from `Control.Exception` to create proper IO-level exceptions that `try` reliably catches.
 19. **Banker's rounding in Haskell**: `round` uses round-half-to-even (banker's rounding). `round 250.5 == 250` because 250 is even. When writing tests for rounding behavior, account for this or use an explicit rounding function.
 
+### Completed: Extract Pure Utilities from RunScheduled.hs + Tests
+
+**Goal**: Continue shrinking RunScheduled.hs by extracting pure functions to their owning domain modules, eliminating code duplication, and making previously untested logic testable.
+
+- [x] Extract `generateSlug :: Text -> Text` to `Automation.BlogPrompt` — where the `Slug` type and `mkSlug` already live. Converts a title to a URL-safe kebab-case slug by stripping emojis, lowercasing, replacing non-alphanumeric characters with spaces, and collapsing into hyphens. 13 tests: 10 unit tests (emoji stripping, special characters, digit preservation, whitespace handling, empty input) and 3 property tests (no uppercase, no leading/trailing hyphens, output character set).
+- [x] Extract `stripCodeFences :: Text -> Text` to `Automation.Text` — general text utility that strips markdown code fences from LLM output. Handles `` ```markdown ``, `` ```md ``, and plain `` ``` `` prefixes/suffixes. 9 unit tests covering all fence variants, partial fences, empty content, and multiline content.
+- [x] Extract `overrideModelChain :: Maybe Text -> NonEmpty Model -> NonEmpty Model` to `Automation.Gemini` — DRY extraction of model chain override logic that was duplicated three times in RunScheduled.hs (`runBlogSeries`, `runAiFiction`, `tryTitleForDate`). Parses an optional environment variable override, prepends it to the default chain, and removes duplicates. 8 unit tests covering Nothing, empty string, whitespace, known models, custom models, trimming, deduplication.
+- [x] Extract `isReflectionFile :: String -> Bool` to `Automation.ReflectionTitle` — pure predicate validating the `YYYY-MM-DD.md` filename pattern for reflection files. 8 unit tests covering valid files, wrong extensions, wrong lengths, non-numeric characters.
+- [x] Extract `extractCreativeTitle :: Text -> Text` to `Automation.ReflectionTitle` — pure function that parses the creative part of a reflection title (the text after the date and pipe separator in the frontmatter `title:` field). 8 unit tests covering pipe extraction, missing pipes, missing title lines, quoted/unquoted values, multiple pipe separators.
+- [x] Slim `RunScheduled.hs` from 722 to 665 lines (removed 57 lines of duplicated logic).
+
+**Learnings from extracting pure utilities:**
+20. **DRY via pure extraction**: When the same pattern appears three or more times in an app module (like model chain override logic), extract it as a pure function in the appropriate library module. This eliminates duplication, makes the logic testable, and reduces the app module's surface area.
+21. **Place functions in their owning domain module**: `generateSlug` belongs with `Slug` and `mkSlug` in `BlogPrompt`, not in a generic `Utilities` module. `stripCodeFences` belongs in `Text` alongside other text transformations. `isReflectionFile` and `extractCreativeTitle` belong in `ReflectionTitle` since they're part of the reflection title domain. Following vertical slicing means the function lives where its domain concept is defined.
+22. **Separate IO from pure logic in IO functions**: When an IO function like `extractRecentCreativeTitles` contains both file I/O and pure parsing, extract the pure parsing as a separate function. The IO function becomes a thin wrapper that reads the file and delegates to the pure function.
+
+### Next: Remaining Improvements
+
+Prioritized list of remaining architecture improvements:
+
+1. **Replace `error` calls in RunScheduled.hs task runners** — 7 non-startup `error` calls that can crash the scheduler at runtime. Replace with proper `Either` returns, logging + task failure, or early returns. The task runner framework already catches exceptions via `try`, but explicit error handling is more principled.
+2. **Break up SocialPosting.hs** — 921 lines, 38 imports. Extract platform-specific posting orchestration, reflection eligibility checks, and post formatting into focused modules.
+3. **Break up BlogImage.hs** — 1,291 lines, 26 imports. Extract image provider resolution, backfill orchestration, and eligibility checking into focused modules.
+4. **Break up InternalLinking.hs** — 961 lines, 25 imports. Extract link candidate discovery, similarity matching, and file processing into focused modules.
+5. **Extract remaining pure cores** — Several IO functions in library modules mix I/O with pure logic that could be extracted and tested independently.
+
 ## Guiding Principles
 
 1. **Vertical slices**: Every improvement delivers types, logic, tests, and documentation together. Never separate pure extraction from domain type introduction — they are one concern.

@@ -2,9 +2,7 @@ module Main where
 
 import Control.Monad (when)
 import Control.Exception (SomeException, try)
-import Data.Char (isAsciiLower, isDigit)
 import Data.List.NonEmpty (NonEmpty ((:|)))
-import qualified Data.List.NonEmpty as NE
 import Data.Map.Strict (Map)
 import qualified Data.Map.Strict as Map
 import Data.Maybe (catMaybes, fromMaybe, mapMaybe)
@@ -17,7 +15,7 @@ import Network.HTTP.Client.TLS (tlsManagerSettings)
 import System.Directory (createDirectoryIfMissing, doesDirectoryExist, doesFileExist, listDirectory, removeFile)
 import System.Environment (getArgs, lookupEnv)
 import System.Exit (exitFailure)
-import System.FilePath ((</>), dropExtension, takeExtension)
+import System.FilePath ((</>), dropExtension)
 import System.IO (hSetBuffering, stdout, stderr, BufferMode(..))
 
 import Automation.AiBlogLinks (NavLinkResult (..), aiBlogConfig, ensureAllNavLinks, buildReflectionLinks)
@@ -39,6 +37,7 @@ import Automation.BlogPrompt
   , buildBlogPrompt
   , buildDisplayTitle
   , formatDay
+  , generateSlug
   , mkSlug
   , sanitizeTitle
   , todayPacificDay
@@ -66,7 +65,9 @@ import Automation.ReflectionTitle
   ( ReflectionTitleConfig (ReflectionTitleConfig, rtcModels, rtcNoteContent, rtcDate, rtcRecentTitles)
   , ReflectionTitleResult (rtrFullTitle, rtrModel, rtrUpdatedContent)
   , defaultTitleModel
+  , extractCreativeTitle
   , generateReflectionTitle
+  , isReflectionFile
   , reflectionNeedsTitle
   )
 import Automation.Scheduler
@@ -88,6 +89,7 @@ import Automation.SocialPosting (autoPost)
 import Automation.CliArgs (CliArgs (..), parseCliArgs)
 import Automation.VaultSync (syncFileToVault, syncNewAiBlogPosts, copySeriesPosts)
 import Automation.TaskRunner (inferenceDashboards, runTasks, logMsg)
+import Automation.Text (stripCodeFences)
 
 -- ---------------------------------------------------------------------------
 -- Constants
@@ -139,42 +141,6 @@ buildEnvMap keys = Map.fromList <$> mapM lookupOne keys
       pure (T.pack k, maybe "" T.pack mVal)
 
 -- ---------------------------------------------------------------------------
--- Slug generation (matches TypeScript generateSlug)
--- ---------------------------------------------------------------------------
-
-generateSlug :: Text -> Text
-generateSlug title =
-  let cleaned = T.filter (not . isEmoji) title
-      lowered = T.toLower (T.strip cleaned)
-      alphanum = T.map (\c -> if isAlphaNumOrSpace c then c else ' ') lowered
-      dashed = T.intercalate "-" (T.words alphanum)
-      trimmed = T.dropWhile (== '-') (T.dropWhileEnd (== '-') dashed)
-  in trimmed
-  where
-    isAlphaNumOrSpace c = isAsciiLower c || isDigit c || c == ' ' || c == '-'
-    isEmoji c =
-      (c >= '\x1f300' && c <= '\x1faff')
-        || (c >= '\x2600' && c <= '\x27bf')
-        || (c >= '\x200d' && c <= '\x200d')
-        || c == '\xfe0f'
-        || (c >= '\x2300' && c <= '\x23ff')
-        || (c >= '\x2702' && c <= '\x27b0')
-
--- ---------------------------------------------------------------------------
--- Strip code fences from LLM output
--- ---------------------------------------------------------------------------
-
-stripCodeFences :: Text -> Text
-stripCodeFences t =
-  let t1 = case T.stripPrefix "```markdown\n" t of
-              Just rest -> rest
-              Nothing -> case T.stripPrefix "```md\n" t of
-                Just rest -> rest
-                Nothing -> fromMaybe t (T.stripPrefix "```\n" t)
-      t2 = fromMaybe t1 (T.stripSuffix "\n```" t1)
-  in t2
-
--- ---------------------------------------------------------------------------
 -- readPreviousPostFilename from metadata file
 -- ---------------------------------------------------------------------------
 
@@ -210,25 +176,12 @@ extractRecentCreativeTitles reflectionsDir today = do
       let dateFiles = filter isReflectionFile entries
           sorted = reverse $ filter (< T.unpack today <> ".md") dateFiles
           recent = take 20 sorted
-      titles <- mapM extractCreativeTitle recent
+      titles <- mapM readCreativeTitle recent
       pure (filter (not . T.null) titles)
   where
-    isReflectionFile f =
-      length f == 13  -- "YYYY-MM-DD.md"
-        && takeExtension f == ".md"
-        && all isDigit (take 4 f)
-        && f !! 4 == '-'
-    extractCreativeTitle f = do
-      content <- TIO.readFile (reflectionsDir </> f)
-      let titleLine = foldr (\l acc -> if T.isPrefixOf "title:" l then Just l else acc) Nothing (T.lines content)
-      pure $ case titleLine of
-        Just tl ->
-          let val = T.strip (T.drop 6 tl)
-              unquoted = T.dropAround (\c -> c == '"' || c == '\'') val
-          in case T.breakOn " | " unquoted of
-               (_, rest) | not (T.null rest) -> T.drop 3 rest
-               _ -> ""
-        Nothing -> ""
+    readCreativeTitle filename = do
+      content <- TIO.readFile (reflectionsDir </> filename)
+      pure (extractCreativeTitle content)
 
 -- ---------------------------------------------------------------------------
 -- yesterdayPacific
@@ -278,11 +231,7 @@ runBlogSeries context seriesId = do
     _ -> do
       -- 3. Determine model chain
       envModel <- lookupEnvText "BLOG_GEMINI_MODEL"
-      let models = case envModel of
-            Just em | not (T.null (T.strip em)) ->
-              let parsed = Gemini.modelFromText (T.strip em)
-              in parsed :| filter (/= parsed) (NE.toList (bsrcModelChain runConfig))
-            _ -> bsrcModelChain runConfig
+      let models = Gemini.overrideModelChain envModel (bsrcModelChain runConfig)
 
       priorityUser <- lookupEnvText (T.unpack (bsrcPriorityUserEnvVar runConfig))
 
@@ -548,9 +497,7 @@ runAiFiction context = do
           -- Build model chain
           envModel <- lookupEnvText "FICTION_MODEL"
           let defaultChain = defaultFictionModel :| [Gemini.Gemini25FlashLite, Gemini.Gemini31FlashLite]
-              models = case envModel of
-                Just em | not (T.null (T.strip em)) -> NE.cons (Gemini.modelFromText (T.strip em)) defaultChain
-                _ -> defaultChain
+              models = Gemini.overrideModelChain envModel defaultChain
 
           let config = FictionConfig
                 { fcModels = models
@@ -609,11 +556,7 @@ tryTitleForDate context date = do
           -- Build model chain
           envModel <- lookupEnvText "REFLECTION_TITLE_MODEL"
           let defaultChain = defaultTitleModel :| [Gemini.Gemini25FlashLite, Gemini.Gemini31FlashLite]
-              models = case envModel of
-                Just em | not (T.null (T.strip em)) ->
-                  let parsed = Gemini.modelFromText (T.strip em)
-                  in parsed :| filter (/= parsed) (NE.toList defaultChain)
-                _ -> defaultChain
+              models = Gemini.overrideModelChain envModel defaultChain
 
           let config = ReflectionTitleConfig
                 { rtcModels = models

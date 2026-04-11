@@ -2,6 +2,9 @@ module Automation.BlogPromptTest (tests) where
 
 import Test.Tasty (TestTree, testGroup)
 import Test.Tasty.HUnit (testCase, (@?=), assertBool)
+import Test.Tasty.QuickCheck (testProperty)
+import qualified Test.QuickCheck as QC
+import Data.Char (isAsciiLower, isAsciiUpper, isDigit)
 import qualified Data.Text as T
 import Data.Time (fromGregorian)
 
@@ -173,4 +176,54 @@ tests = testGroup "BlogPrompt"
   , testCase "sanitizeTitle handles date without pipe separator" $
       let series = unsafeLookupSeries "auto-blog-zero"
       in sanitizeTitle series "2026-03-30 The Architecture of Doubt" @?= "The Architecture of Doubt"
+
+  , generateSlugTests
+  ]
+
+generateSlugTests :: TestTree
+generateSlugTests = testGroup "generateSlug"
+  [ testCase "lowercases and converts spaces to hyphens" $
+      generateSlug "Hello World" @?= "hello-world"
+
+  , testCase "strips emojis" $
+      generateSlug "🎉 Party Time 🎈" @?= "party-time"
+
+  , testCase "removes special characters" $
+      generateSlug "What's the Plan?" @?= "what-s-the-plan"
+
+  , testCase "trims leading and trailing hyphens" $
+      generateSlug "-Hello-" @?= "hello"
+
+  , testCase "collapses multiple spaces into single hyphen" $
+      generateSlug "Too   Many   Spaces" @?= "too-many-spaces"
+
+  , testCase "handles empty string" $
+      generateSlug "" @?= ""
+
+  , testCase "handles string with only emojis" $
+      generateSlug "🎉🎈🎊" @?= ""
+
+  , testCase "preserves digits" $
+      generateSlug "Chapter 42 Notes" @?= "chapter-42-notes"
+
+  , testCase "handles mixed case with hyphens" $
+      generateSlug "My-Cool-Title" @?= "my-cool-title"
+
+  , testCase "strips leading whitespace before processing" $
+      generateSlug "  Spaced Out  " @?= "spaced-out"
+
+  , testProperty "result never contains uppercase letters" $
+      QC.forAll (QC.listOf1 QC.arbitraryASCIIChar) $ \chars ->
+        let slug = generateSlug (T.pack chars)
+        in T.all (not . isAsciiUpper) slug
+
+  , testProperty "result never starts or ends with hyphen" $
+      QC.forAll (QC.listOf1 QC.arbitraryASCIIChar) $ \chars ->
+        let slug = generateSlug (T.pack chars)
+        in T.null slug || (T.head slug /= '-' && T.last slug /= '-')
+
+  , testProperty "result contains only lowercase alphanumeric and hyphens" $
+      QC.forAll (QC.listOf1 QC.arbitraryASCIIChar) $ \chars ->
+        let slug = generateSlug (T.pack chars)
+        in T.all (\c -> isAsciiLower c || isDigit c || c == '-') slug
   ]

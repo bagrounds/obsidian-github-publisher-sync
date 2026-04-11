@@ -16,6 +16,7 @@ module Automation.Gemini
   , gemini3Flash
   , flashFallback
   , modelFallback
+  , overrideModelChain
   , generateContent
   , generateContentWithFallback
   , defaultGenerationConfig
@@ -31,6 +32,7 @@ import Automation.Json (Value (..), ToValue (..), (.=), object, encode)
 import qualified Automation.Json as Json
 import Automation.Secret (Secret (..))
 import Data.List.NonEmpty (NonEmpty ((:|)))
+import qualified Data.List.NonEmpty as NE
 import Data.Text (Text)
 import qualified Data.Text as T
 import qualified Data.Text.Encoding as TE
@@ -121,6 +123,13 @@ knownModels =
   , Gemini20Flash
   , Gemini31FlashImage
   ]
+
+overrideModelChain :: Maybe Text -> NonEmpty Model -> NonEmpty Model
+overrideModelChain envValue defaultChain = case envValue of
+  Just raw | not (T.null (T.strip raw)) ->
+    let parsed = modelFromText (T.strip raw)
+    in parsed :| filter (/= parsed) (NE.toList defaultChain)
+  _ -> defaultChain
 
 -- | Domain-specific error type for Gemini API operations.
 -- Structured constructors preserve error context and enable typed pattern

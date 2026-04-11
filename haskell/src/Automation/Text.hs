@@ -7,6 +7,7 @@ module Automation.Text
   , validatePostLength
   , fitPostToLimit
   , wordJaccardSimilarity
+  , stripCodeFences
   ) where
 
 import Data.Maybe (fromMaybe)
@@ -208,3 +209,12 @@ wordJaccardSimilarity a b =
 
 wordSet :: Text -> Set Text
 wordSet = Set.fromList . T.words . T.toCaseFold
+
+stripCodeFences :: Text -> Text
+stripCodeFences text =
+  let withoutPrefix = case T.stripPrefix "```markdown\n" text of
+        Just rest -> rest
+        Nothing -> case T.stripPrefix "```md\n" text of
+          Just rest -> rest
+          Nothing -> fromMaybe text (T.stripPrefix "```\n" text)
+  in fromMaybe withoutPrefix (T.stripSuffix "\n```" withoutPrefix)

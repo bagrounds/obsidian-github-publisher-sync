@@ -3,6 +3,7 @@ module Automation.BlogPrompt
   , Slug (..)
   , DisplayTitle (..)
   , mkSlug
+  , generateSlug
   , formatDay
   , stripEmbedSections
   , buildBlogPrompt
@@ -16,6 +17,7 @@ module Automation.BlogPrompt
   , recapInstructions
   ) where
 
+import Data.Char (isAsciiLower, isDigit)
 import Data.List (findIndex)
 import Data.Maybe (fromMaybe, mapMaybe)
 import Data.Text (Text)
@@ -291,3 +293,21 @@ daysUntilSunday = \case
   Thursday  -> 3
   Friday    -> 2
   Saturday  -> 1
+
+generateSlug :: Text -> Text
+generateSlug title =
+  let cleaned = T.filter (not . isEmoji) title
+      lowered = T.toLower (T.strip cleaned)
+      alphanum = T.map (\c -> if isAlphaNumOrSpace c then c else ' ') lowered
+      dashed = T.intercalate "-" (T.words alphanum)
+      trimmed = T.dropWhile (== '-') (T.dropWhileEnd (== '-') dashed)
+  in trimmed
+  where
+    isAlphaNumOrSpace c = isAsciiLower c || isDigit c || c == ' ' || c == '-'
+    isEmoji c =
+      (c >= '\x1f300' && c <= '\x1faff')
+        || (c >= '\x2600' && c <= '\x27bf')
+        || (c >= '\x200d' && c <= '\x200d')
+        || c == '\xfe0f'
+        || (c >= '\x2300' && c <= '\x23ff')
+        || (c >= '\x2702' && c <= '\x27b0')

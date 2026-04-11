@@ -18,6 +18,8 @@ tests = testGroup "ReflectionTitle"
   , parseReflectionTitleTests
   , applyReflectionTitleTests
   , buildReflectionTitlePromptTests
+  , isReflectionFileTests
+  , extractCreativeTitleTests
   ]
 
 defaultModelTests :: TestTree
@@ -140,4 +142,67 @@ buildReflectionTitlePromptTests = testGroup "buildReflectionTitlePrompt"
   , testCase "system prompt contains recent examples" $
       let (system, _) = buildReflectionTitlePrompt [] ["Example Title"]
       in assertBool "has example" $ T.isInfixOf "Example Title" system
+  ]
+
+isReflectionFileTests :: TestTree
+isReflectionFileTests = testGroup "isReflectionFile"
+  [ testCase "valid reflection file" $
+      isReflectionFile "2026-04-10.md" @?= True
+
+  , testCase "rejects wrong extension" $
+      isReflectionFile "2026-04-10.txt" @?= False
+
+  , testCase "rejects wrong length" $
+      isReflectionFile "2026-4-10.md" @?= False
+
+  , testCase "rejects non-numeric year" $
+      isReflectionFile "abcd-04-10.md" @?= False
+
+  , testCase "rejects missing first separator" $
+      isReflectionFile "20260410xxmd" @?= False
+
+  , testCase "rejects no extension" $
+      isReflectionFile "2026-04-10md" @?= False
+
+  , testCase "rejects longer filename" $
+      isReflectionFile "2026-04-10-extra.md" @?= False
+
+  , testCase "rejects shorter filename" $
+      isReflectionFile "2026-04.md" @?= False
+
+  , testCase "rejects non-numeric month" $
+      isReflectionFile "2026-ab-10.md" @?= False
+
+  , testCase "rejects non-numeric day" $
+      isReflectionFile "2026-04-ab.md" @?= False
+
+  , testCase "accepts boundary date" $
+      isReflectionFile "9999-12-31.md" @?= True
+  ]
+
+extractCreativeTitleTests :: TestTree
+extractCreativeTitleTests = testGroup "extractCreativeTitle"
+  [ testCase "extracts creative part after pipe separator" $
+      extractCreativeTitle "---\ntitle: \"2026-04-10 | 🧠 Deep Thoughts 💡\"\n---\nContent" @?= "🧠 Deep Thoughts 💡"
+
+  , testCase "returns empty when no pipe separator" $
+      extractCreativeTitle "---\ntitle: Simple Title\n---\nContent" @?= ""
+
+  , testCase "returns empty when no title line" $
+      extractCreativeTitle "---\ndate: 2026-04-10\n---\nContent" @?= ""
+
+  , testCase "handles single-quoted title" $
+      extractCreativeTitle "---\ntitle: '2026-04-10 | Creative Part'\n---" @?= "Creative Part"
+
+  , testCase "handles double-quoted title" $
+      extractCreativeTitle "---\ntitle: \"2026-04-10 | Creative Part\"\n---" @?= "Creative Part"
+
+  , testCase "handles unquoted title" $
+      extractCreativeTitle "title: 2026-04-10 | Unquoted Title\nother: value" @?= "Unquoted Title"
+
+  , testCase "returns empty for empty content" $
+      extractCreativeTitle "" @?= ""
+
+  , testCase "uses first pipe separator only" $
+      extractCreativeTitle "title: \"A | B | C\"\n" @?= "B | C"
   ]

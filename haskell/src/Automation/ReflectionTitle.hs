@@ -9,16 +9,19 @@ module Automation.ReflectionTitle
   , parseReflectionTitle
   , applyReflectionTitle
   , generateReflectionTitle
+  , isReflectionFile
+  , extractCreativeTitle
   , ReflectionTitleConfig (ReflectionTitleConfig, rtcModels, rtcNoteContent, rtcDate, rtcRecentTitles)
   , ReflectionTitleResult (ReflectionTitleResult, rtrTitle, rtrFullTitle, rtrModel, rtrUpdatedContent)
   ) where
 
 import Data.Char (isDigit)
-import Data.List (nub)
+import Data.List (find, nub)
 import Data.List.NonEmpty (NonEmpty)
 import Data.Maybe (fromMaybe)
 import Data.Text (Text)
 import qualified Data.Text as T
+import System.FilePath (takeExtension)
 
 import Automation.Types (updatesSectionHeader)
 import Automation.Frontmatter (parseFrontmatter)
@@ -271,3 +274,24 @@ generateReflectionTitle config callModel = do
     , rtrModel = model
     , rtrUpdatedContent = updatedContent
     }
+
+isReflectionFile :: FilePath -> Bool
+isReflectionFile filename =
+  length filename == 13
+    && takeExtension filename == ".md"
+    && all isDigit (take 4 filename)
+    && filename !! 4 == '-'
+    && all isDigit (take 2 (drop 5 filename))
+    && filename !! 7 == '-'
+    && all isDigit (take 2 (drop 8 filename))
+
+extractCreativeTitle :: Text -> Text
+extractCreativeTitle content =
+  case find (T.isPrefixOf "title:") (T.lines content) of
+    Just matched ->
+      let value = T.strip (T.drop 6 matched)
+          unquoted = T.dropAround (\c -> c == '"' || c == '\'') value
+      in case T.breakOn " | " unquoted of
+           (_, rest) | not (T.null rest) -> T.drop 3 rest
+           _ -> ""
+    Nothing -> ""

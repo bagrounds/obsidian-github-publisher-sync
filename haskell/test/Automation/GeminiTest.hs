@@ -1,6 +1,8 @@
 module Automation.GeminiTest (tests) where
 
 import Data.List (isInfixOf)
+import Data.List.NonEmpty (NonEmpty ((:|)))
+import qualified Data.List.NonEmpty as NE
 import qualified Data.Text as T
 import Test.Tasty (TestTree, testGroup)
 import Test.Tasty.HUnit (testCase, (@?=), assertBool)
@@ -21,6 +23,7 @@ tests = testGroup "Gemini"
   , parseErrorBodyTests
   , parseResponseTextTests
   , extractTextTests
+  , overrideModelChainTests
   , propertyTests
   ]
 
@@ -360,6 +363,50 @@ extractTextTests = testGroup "extractText"
             ]
       in Gemini.extractText val
         @?= Right "extracted"
+  ]
+
+overrideModelChainTests :: TestTree
+overrideModelChainTests = testGroup "overrideModelChain"
+  [ testCase "Nothing returns default chain unchanged" $
+      let defaultChain = Gemini.Gemini25Flash :| [Gemini.Gemini25FlashLite]
+      in Gemini.overrideModelChain Nothing defaultChain @?= defaultChain
+
+  , testCase "empty string returns default chain" $
+      let defaultChain = Gemini.Gemini25Flash :| [Gemini.Gemini25FlashLite]
+      in Gemini.overrideModelChain (Just "") defaultChain @?= defaultChain
+
+  , testCase "whitespace-only string returns default chain" $
+      let defaultChain = Gemini.Gemini25Flash :| [Gemini.Gemini25FlashLite]
+      in Gemini.overrideModelChain (Just "   ") defaultChain @?= defaultChain
+
+  , testCase "known model override prepends and deduplicates" $
+      let defaultChain = Gemini.Gemini25Flash :| [Gemini.Gemini25FlashLite, Gemini.Gemini20Flash]
+          result = Gemini.overrideModelChain (Just "gemini-2.5-flash-lite") defaultChain
+      in do
+        NE.head result @?= Gemini.Gemini25FlashLite
+        NE.toList result @?= [Gemini.Gemini25FlashLite, Gemini.Gemini25Flash, Gemini.Gemini20Flash]
+
+  , testCase "custom model override prepends to chain" $
+      let defaultChain = Gemini.Gemini25Flash :| [Gemini.Gemini25FlashLite]
+          result = Gemini.overrideModelChain (Just "custom-model-v1") defaultChain
+      in do
+        NE.head result @?= Gemini.Custom "custom-model-v1"
+        NE.length result @?= 3
+
+  , testCase "override with leading/trailing whitespace is trimmed" $
+      let defaultChain = Gemini.Gemini25Flash :| [Gemini.Gemini25FlashLite]
+          result = Gemini.overrideModelChain (Just "  gemini-2.0-flash  ") defaultChain
+      in NE.head result @?= Gemini.Gemini20Flash
+
+  , testCase "override matching first element keeps chain length" $
+      let defaultChain = Gemini.Gemini25Flash :| [Gemini.Gemini25FlashLite, Gemini.Gemini20Flash]
+          result = Gemini.overrideModelChain (Just "gemini-2.5-flash") defaultChain
+      in NE.toList result @?= [Gemini.Gemini25Flash, Gemini.Gemini25FlashLite, Gemini.Gemini20Flash]
+
+  , testCase "override removes all duplicates" $
+      let defaultChain = Gemini.Gemini25Flash :| [Gemini.Gemini20Flash, Gemini.Gemini25Flash]
+          result = Gemini.overrideModelChain (Just "gemini-2.5-flash") defaultChain
+      in NE.toList result @?= [Gemini.Gemini25Flash, Gemini.Gemini20Flash]
   ]
 
 propertyTests :: TestTree

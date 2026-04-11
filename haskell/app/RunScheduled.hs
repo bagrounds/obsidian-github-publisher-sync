@@ -88,7 +88,7 @@ import qualified Automation.InternalLinking as IL
 import Automation.SocialPosting (autoPost)
 import Automation.CliArgs (CliArgs (..), parseCliArgs)
 import Automation.VaultSync (syncFileToVault, syncNewAiBlogPosts, copySeriesPosts)
-import Automation.TaskRunner (inferenceDashboards, runTasks, logMsg)
+import Automation.TaskRunner (inferenceDashboards, runTasks, logMsg, failTask)
 import Automation.Text (stripCodeFences)
 
 -- ---------------------------------------------------------------------------
@@ -105,7 +105,7 @@ callGeminiForGenerator context models (systemPrompt, userPrompt) = do
       config = Gemini.defaultGenerationConfig { Gemini.gcTemperature = 0.9, Gemini.gcMaxOutputTokens = 2048 }
   result <- Gemini.generateContentWithFallback (Context.httpManager context) models combinedPrompt (Context.geminiApiKey context) config
   case result of
-    Left err -> error $ "Gemini API error: " <> show err
+    Left err -> failTask $ "Gemini API error: " <> T.pack (show err)
     Right response -> pure (Gemini.responseText response, Gemini.modelToText (Gemini.responseModel response))
 
 -- ---------------------------------------------------------------------------
@@ -206,7 +206,7 @@ runBlogSeries context seriesId = do
   let mRunConfig = Map.lookup seriesId blogSeriesRunConfigs
   runConfig <- case mRunConfig of
     Just rc -> pure rc
-    Nothing -> error $ "No run config for series: " <> T.unpack seriesId
+    Nothing -> failTask $ "No run config for series: " <> seriesId
 
   today <- todayPacificDay
   let todayText = formatDay today
@@ -236,14 +236,14 @@ runBlogSeries context seriesId = do
       priorityUser <- lookupEnvText (T.unpack (bsrcPriorityUserEnvVar runConfig))
 
       -- 4. Fetch comments
-      let series = either (error . T.unpack) id (lookupSeries seriesId)
+      series <- either failTask pure (lookupSeries seriesId)
       comments <- fetchAllSeriesComments manager seriesId (priorityUser >>= (\u -> if T.null u then Nothing else Just u))
       logMsg $ "  📝 Fetched " <> T.pack (show (length comments)) <> " comments"
 
       -- 5. Build context and prompt
       blogContextResult <- buildBlogContext seriesId seriesDir comments today
       case blogContextResult of
-        Left reason -> error $ "Blog context build failed: " <> T.unpack reason
+        Left reason -> failTask $ "Blog context build failed: " <> reason
         Right blogContext -> do
           let (systemPrompt, userPrompt) = buildBlogPrompt blogContext
               combinedPrompt = systemPrompt <> "\n\n" <> userPrompt
@@ -252,19 +252,17 @@ runBlogSeries context seriesId = do
           -- 6. Call Gemini
           result <- Gemini.generateContentWithFallback manager models combinedPrompt apiKey genConfig
           case result of
-            Left err -> error $ "Blog generation failed: " <> show err
+            Left err -> failTask $ "Blog generation failed: " <> T.pack (show err)
             Right response -> do
               let rawText = stripCodeFences (Gemini.responseText response)
                   usedModel = Gemini.modelToText (Gemini.responseModel response)
               case parseGeneratedPost rawText of
-                Nothing -> error "Failed to parse generated blog post"
+                Nothing -> failTask "Failed to parse generated blog post"
                 Just (body, rawTitle) -> do
                   let title = sanitizeTitle series rawTitle
                       slugText = generateSlug title
-                      slug = case mkSlug slugText of
-                        Right s -> s
-                        Left e  -> error $ "Invalid slug: " <> T.unpack e
-                      filename = todayText <> "-" <> unSlug slug <> ".md"
+                  slug <- either (\e -> failTask $ "Invalid slug: " <> e) pure (mkSlug slugText)
+                  let filename = todayText <> "-" <> unSlug slug <> ".md"
 
                   -- Read previous posts for nav link update
                   posts <- readSeriesPosts seriesDir

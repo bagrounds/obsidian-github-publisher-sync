@@ -22,6 +22,7 @@ common shared
 
 library
   import:              shared
+  ghc-options:         -Werror
   hs-source-dirs:      src
   exposed-modules:
     Automation.Json
@@ -96,6 +97,7 @@ library
 
 executable run-scheduled
   import:              shared
+  ghc-options:         -Werror
   hs-source-dirs:      app
   main-is:             RunScheduled.hs
   build-depends:
@@ -111,6 +113,7 @@ executable run-scheduled
 
 executable inject-giscus
   import:              shared
+  ghc-options:         -Werror
   hs-source-dirs:      app
   main-is:             InjectGiscus.hs
   build-depends:

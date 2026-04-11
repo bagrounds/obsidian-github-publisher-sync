@@ -6,6 +6,9 @@ URL: https://bagrounds.org/books/the-campout-cookbook-inspired-recipes-for-cooki
 share: true
 affiliate link: https://amzn.to/46Lj4dS
 CTA: 🔥 Savor the outdoors.
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_time: 2026-04-03T00:00:00Z
+force_analyze_links: false
 ---
 [Home](../index.md) > [Books](./index.md)  
 # ⛺🔥 The Campout Cookbook: Inspired Recipes for Cooking Around the Fire and Under the Stars  

@@ -12,6 +12,7 @@ module Automation.Types
     -- Re-exported from Automation.Platform
   , PlatformLimits (..)
   , updatesSectionHeader
+  , Platform (..)
     -- Re-exported from Automation.Secret
   , Secret (..)
   , mkSecret
@@ -32,7 +33,7 @@ module Automation.Types
 import Automation.EmbedSection (EmbedSection (..))
 import Automation.Env (EnvironmentConfig (..))
 import Automation.ObsidianSync (ObsidianCredentials (..))
-import Automation.Platform (PlatformLimits (..), updatesSectionHeader)
+import Automation.Platform (PlatformLimits (..), updatesSectionHeader, Platform (..))
 import Automation.Platforms.OgMetadata (OgMetadata (..))
 import Automation.Reflection (ReflectionData (..))
 import Automation.RelativePath (RelativePath, unRelativePath, mkRelativePath)

@@ -62,6 +62,9 @@ library
     Automation.Platforms.Mastodon
     Automation.RelativePath
     Automation.SocialPosting
+    Automation.SocialPosting.ContentDiscovery
+    Automation.SocialPosting.FrontmatterUpdate
+    Automation.SocialPosting.LinkExtraction
     Automation.Context
     Automation.Title
     Automation.Url

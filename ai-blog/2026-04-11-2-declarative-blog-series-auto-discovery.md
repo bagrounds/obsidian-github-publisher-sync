@@ -58,11 +58,15 @@ The file contains a Dhall record with six fields: a name like Garden Thoughts, a
 
 🎯 RunScheduled now discovers series at startup, builds the series map and run configs, then constructs task runners dynamically.
 
-## 🧠 Parsing Without New Dependencies
+## 🧠 Temporary Parser Bridge
 
-📦 Rather than adding the full dhall Haskell package as a dependency, the parser uses Parsec, which was already in the dependency tree.
+📦 The official dhall Haskell library (version 1.42.3, the latest on Hackage) cannot build with GHC 9.14.1 because it requires template-haskell less than 2.24, but GHC 9.14.1 ships with template-haskell 2.24.0.0.
 
-🔧 The parser handles Dhall record syntax including string literals, integer literals, optional values with Some and None, string lists, and single-line comments.
+🔧 A merged pull request in the dhall-haskell repository (number 2704, merged February 2026) adds GHC 9.14 support, but this has not been released to Hackage yet.
+
+🌉 As a temporary bridge, the parser uses Parsec (already in the dependency tree) to handle the minimal subset of Dhall record syntax that our config files use: string literals, integer literals, optional values with Some and None, string lists, and single-line comments.
+
+📄 The config files are valid Dhall, so when the official library releases a GHC 9.14-compatible version, the custom parser can be swapped for the real thing with no config file changes.
 
 🛡️ Validation catches missing required fields, empty model lists, and unrecognized model names, producing clear error messages with file paths.
 

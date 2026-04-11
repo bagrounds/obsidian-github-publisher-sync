@@ -127,6 +127,18 @@
 - ⚠️ Validation errors include the file path and description of the missing or invalid field
 - ❌ If any config file fails to parse or validate, the application exits with a nonzero status
 
+## 🔄 Migration to Official Dhall Library
+
+📦 The config files use valid Dhall syntax, but the parser is currently a temporary Parsec-based implementation.
+🚫 The official `dhall` Haskell library (1.42.3, latest on Hackage) cannot build with GHC 9.14.1 due to an upper bound on `template-haskell` (requires `< 2.24`, but GHC 9.14.1 ships 2.24.0.0).
+🔧 PR [dhall-haskell#2704](https://github.com/dhall-lang/dhall-haskell/pull/2704) (merged Feb 2026) adds GHC 9.14 support but has not been released to Hackage.
+📋 Migration plan:
+1. 🔍 Monitor Hackage for a dhall release with GHC 9.14 support (dhall 1.43+ or a revised 1.42.x)
+2. 📦 Add `dhall` as a build dependency in `automation.cabal`
+3. 🔄 Replace `parseDhallConfig` with `Dhall.input Dhall.auto` using a Dhall `FromDhall` instance for `RawConfig`
+4. 🧹 Remove the Parsec parser code from `BlogSeriesDiscovery.hs`
+5. ✅ No config file changes needed — the files are already valid Dhall
+
 ## 🔮 Future Considerations
 
 📋 Hardcoded assumptions that could be elevated to per-series configuration:

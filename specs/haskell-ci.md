@@ -70,7 +70,5 @@ Artifact retention: 90 days.
 
 ## Compiler Warnings Policy
 
-- The cabal file enables `-Wall`, `-Wcompat`, `-Widentities`, `-Wincomplete-record-updates`, `-Wincomplete-uni-patterns`, and `-Wredundant-constraints` for all components via the `shared` common stanza
-- The library and executable components add `-Werror` in their cabal file sections, so any warning in production code is a build failure
-- Test files compile with warnings but without `-Werror` to allow pragmatic test patterns
-- All library and executable source files must compile warning-free
+- The cabal file enables `-Wall`, `-Wcompat`, `-Widentities`, `-Wincomplete-record-updates`, `-Wincomplete-uni-patterns`, `-Wredundant-constraints`, and `-Werror` for all components via the `shared` common stanza
+- All source files — library, executables, and tests — must compile warning-free

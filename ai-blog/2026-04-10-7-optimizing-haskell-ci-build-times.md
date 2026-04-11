@@ -42,7 +42,7 @@ URL: https://bagrounds.org/ai-blog/2026-04-10-7-optimizing-haskell-ci-build-time
 
 ### 🎯 Hypothesis One: Eliminate Double Compilation
 
-🔑 Move the warnings-as-errors flag from the CI command line into the cabal file itself, applying it only to the library and executable components, not tests. 📋 Enable tests in the cabal project file so that cabal build all includes the test suite and its dependencies. 🤝 This ensures the build and test steps use identical configuration hashes, eliminating the rebuild.
+🔑 Move the warnings-as-errors flag from the CI command line into the cabal file's shared common stanza, so it applies uniformly to all components including tests. 🧹 Fix all pre-existing warnings in test files to meet the same standard as production code. 📋 Enable tests in the cabal project file so that cabal build all includes the test suite and its dependencies. 🤝 This ensures the build and test steps use identical configuration hashes, eliminating the rebuild.
 
 ### ⚡ Hypothesis Two: Parallelize Linting
 
@@ -56,7 +56,7 @@ URL: https://bagrounds.org/ai-blog/2026-04-10-7-optimizing-haskell-ci-build-time
 
 ### 📝 Cabal File Changes
 
-🏗️ We added the warnings-as-errors flag directly to the library, run-scheduled, and inject-giscus sections of the cabal file. 🧪 The test suite inherits the shared common stanza with all standard warnings enabled, but without warnings-as-errors. 📂 The cabal project file gained a tests-enabled setting to ensure test components are always included in the build plan.
+🏗️ We moved the warnings-as-errors flag into the shared common stanza of the cabal file, so it applies uniformly to the library, executables, and test suite. 🧹 All pre-existing warnings in test files were fixed: unused imports removed, partial head calls replaced with safe pattern matching, incomplete pattern bindings made exhaustive, and overlapping patterns eliminated. 📂 The cabal project file gained a tests-enabled setting to ensure test components are always included in the build plan.
 
 ### 🔄 Workflow Restructuring
 
@@ -76,7 +76,7 @@ URL: https://bagrounds.org/ai-blog/2026-04-10-7-optimizing-haskell-ci-build-time
 
 ### 🔑 Key Metrics
 
-✅ All 1153 tests continue to pass. ✅ HLint still enforces zero hints across all source, application, and test files. ✅ Artifacts are still produced and uploaded. ✅ The warnings-as-errors flag still catches compiler warnings in library and executable code. 🆕 Lint now runs in parallel, providing faster feedback on style issues.
+✅ All 1153 tests continue to pass. ✅ HLint still enforces zero hints across all source, application, and test files. ✅ Artifacts are still produced and uploaded. ✅ The warnings-as-errors flag catches compiler warnings in all code including tests. 🆕 Lint now runs in parallel, providing faster feedback on style issues.
 
 ### 🔮 Expected Warm Cache Improvement
 
@@ -84,7 +84,7 @@ URL: https://bagrounds.org/ai-blog/2026-04-10-7-optimizing-haskell-ci-build-time
 
 ## 🧠 Lessons Learned
 
-🔬 Measuring before optimizing revealed that the biggest inefficiency was not where we expected. 💭 The conventional wisdom might point to parallelizing the build or reducing dependency count, but the real culprit was a configuration mismatch causing complete double compilation. 📋 Command-line flags that differ between build and test steps can silently cause cabal to treat the same package as a different configuration, triggering full rebuilds. 🏠 Embedding compiler flags in the cabal file rather than passing them on the command line ensures consistency across all cabal invocations. 🧪 When tests compile with production-code strictness like warnings-as-errors, it creates a maintenance burden for test files, so applying stricter checks only to production code is a pragmatic trade-off.
+🔬 Measuring before optimizing revealed that the biggest inefficiency was not where we expected. 💭 The conventional wisdom might point to parallelizing the build or reducing dependency count, but the real culprit was a configuration mismatch causing complete double compilation. 📋 Command-line flags that differ between build and test steps can silently cause cabal to treat the same package as a different configuration, triggering full rebuilds. 🏠 Embedding compiler flags in the cabal file rather than passing them on the command line ensures consistency across all cabal invocations. 🧹 Applying warnings-as-errors uniformly to all code, including tests, maintains the highest engineering standards and avoids the trap of letting test code quality drift.
 
 ## 📚 Book Recommendations
 

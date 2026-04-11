@@ -4,9 +4,16 @@ aliases:
   - 🌸🌬️🤧🔬📚 Allergy Science Books
 title: 🌸🌬️🤧🔬📚 Allergy Science Books
 URL: https://bagrounds.org/bot-chats/allergy-science-books
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_time: 2026-04-09T00:00:00Z
+force_analyze_links: false
+image_date: 2026-04-11T14:21:25Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A high-angle, close-up composition featuring an open, thick medical textbook resting on a rustic wooden desk. Floating delicately above the pages are stylized, translucent 3D illustrations of pollen grains and microscopic allergens, glowing softly in shades of soft gold and teal. To the side, a glass beaker containing a small, vibrant wildflower sits next to a vintage brass microscope. The lighting is bright and airy, reminiscent of a crisp spring morning, with soft bokeh light particles dancing in the air to represent wind-blown allergens. The color palette is clean and academic, utilizing soft pastels, clinical whites, and natural wood tones to bridge the gap between scientific study and seasonal nature.
 ---
 [Home](../index.md) > [Bot Chats](./index.md)  
 # 🌸🌬️🤧🔬📚 Allergy Science Books  
+![bot-chats-allergy-science-books](../bot-chats-allergy-science-books.jpg)  
 ## 💬 [Gemini](../software/gemini.md) Prompt 1  
 > Books on the science of allergies; especially airborne, seasonal allergies.  
   

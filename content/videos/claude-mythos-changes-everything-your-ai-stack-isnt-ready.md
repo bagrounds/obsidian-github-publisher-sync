@@ -9,6 +9,9 @@ Platform:
 Channel: AI News & Strategy Daily | Nate B Jones
 tags:
 youtube: https://youtu.be/hV5_XSEBZNg
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_time: 2026-04-11T00:00:00Z
+force_analyze_links: false
 ---
 [Home](../index.md) > [Videos](./index.md)  
 # 🤖✨💥⚠️ Claude Mythos Changes Everything. Your AI Stack Isn't Ready.  
@@ -49,11 +52,11 @@ youtube: https://youtu.be/hV5_XSEBZNg
   
 ### ↔️ Similar  
 * 📘 Superintelligence by Nick Bostrom explores the trajectories and risks of rapidly advancing artificial minds.  
-* 📘 Life 3.0 by Max Tegmark examines how AI will reshape the fabric of human society and technology.  
+* 📘 [🧬👥💾 Life 3.0: Being Human in the Age of Artificial Intelligence](../books/life-3-0.md) by Max Tegmark examines how AI will reshape the fabric of human society and technology.  
   
 ### 🆚 Contrasting  
 * 📘 The Myth of Artificial Intelligence by Erik J. Larson argues that current AI paths lack true human-like intuition and reasoning.  
-* 📘 Weapons of Math Destruction by Cathy O'Neil highlights the societal dangers and biases inherent in automated algorithmic systems.  
+* 📘 [📊📉🏛️ Weapons of Math Destruction: How Big Data Increases Inequality and Threatens Democracy](../books/weapons-of-math-destruction-how-big-data-increases-inequality-and-threatens-democracy.md) by Cathy O'Neil highlights the societal dangers and biases inherent in automated algorithmic systems.  
   
 ### 🎨 Creatively Related  
 * 📘 The Inevitable by Kevin Kelly describes the twelve technological forces that will shape the next thirty years.  

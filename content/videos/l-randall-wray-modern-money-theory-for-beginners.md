@@ -10,6 +10,9 @@ Channel: St. Francis College
 tags:
   - MMT
 youtube: https://youtu.be/E5JTn7GS4oA
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_time: 2026-04-11T00:00:00Z
+force_analyze_links: false
 ---
 [Home](../index.md) > [Videos](./index.md)  
 # 🏦➕➡️🧑‍🎓🎓 L. Randall Wray - Modern Money Theory for Beginners  
@@ -38,7 +41,7 @@ youtube: https://youtu.be/E5JTn7GS4oA
 ## ❓ Frequently Asked Questions (FAQ)  
   
 ### 🧐 Q: What is the main argument of Modern Money Theory MMT regarding government spending?  
-💡 A: Modern Money Theory argues that a monetarily 💰 sovereign government that issues its own currency 💵 and does not promise to convert it to a commodity (like gold) is not financially constrained 🛑 and can always afford to buy anything for sale in its currency. The actual limit on spending is not the budget 🧾 but the availability of real resources (labor, materials) in the economy, and inflation 📈 is the risk if spending exceeds productive capacity.  
+💡 A: [💰🏛️ Modern Money Theory: A Primer on Macroeconomics for Sovereign Monetary Systems](../books/modern-money-theory-a-primer-on-macroeconomics-for-sovereign-monetary-systems.md) argues that a monetarily 💰 sovereign government that issues its own currency 💵 and does not promise to convert it to a commodity (like gold) is not financially constrained 🛑 and can always afford to buy anything for sale in its currency. The actual limit on spending is not the budget 🧾 but the availability of real resources (labor, materials) in the economy, and inflation 📈 is the risk if spending exceeds productive capacity.  
   
 ### 💸 Q: If the government can print its own money, why does it collect taxes?  
 🛡️ A: Taxes are collected not to fund 🏦 spending, but to create demand 💪 for the government's currency and to manage inflation 📈. By requiring citizens to pay taxes in the state's currency, the government ensures the currency has value and is accepted. Increasing taxes serves to remove money from the private sector, reducing 📉 overall demand and controlling price increases.  

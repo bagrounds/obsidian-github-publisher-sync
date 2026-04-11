@@ -9,6 +9,9 @@ Platform:
 Channel: Interesting Times with Ross Douthat
 tags:
 youtube: https://youtu.be/ZNK3vNg13XA
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_time: 2026-04-11T00:00:00Z
+force_analyze_links: false
 ---
 [Home](../index.md) > [Videos](./index.md)  
 # 🇨🇳🔮❓ Does the Future Belong to China? | Interesting Times with Ross Douthat  
@@ -61,4 +64,4 @@ youtube: https://youtu.be/ZNK3vNg13XA
   
 ### 🎨 Creatively Related  
 * 💻 The Dream Machine by M. Mitchell Waldrop: Explores the history of J.C.R. Licklider and the invention of 💡 computing, highlighting the role of American curiosity-driven discovery (the US strength mentioned in the video) that often failed to build commercial industries.  
-* 🏗️ The Power Broker by Robert Caro: Details the life of Robert Moses, illustrating the massive 🚧 and sometimes brutal power of an American engineer (or builder) who bypassed the lawyerly, pluralistic political system to achieve vast infrastructure goals.
+* 🏗️ [👑🏙️ The Power Broker](../books/the-power-broker.md) by Robert Caro: Details the life of Robert Moses, illustrating the massive 🚧 and sometimes brutal power of an American engineer (or builder) who bypassed the lawyerly, pluralistic political system to achieve vast infrastructure goals.

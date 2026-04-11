@@ -4,9 +4,16 @@ aliases:
   - 🇲🇽💃 Cinco de Mayo
 title: 🇲🇽💃 Cinco de Mayo
 URL: https://bagrounds.org/bot-chats/cinco-de-mayo
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_time: 2026-04-09T00:00:00Z
+force_analyze_links: false
+image_date: 2026-04-11T19:23:17Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: "A vibrant, overhead flat-lay composition featuring a stack of vintage hardcover books resting on a rustic wooden table. Beside the books, a colorful, intricately woven Mexican serape serves as a runner. Scattered around are festive elements: a small clay bowl filled with bright marigolds, a few decorative papel picado banners in shades of pink, yellow, and turquoise, and a single ceramic plate holding a small pile of colorful confetti. The lighting is warm and golden, casting soft shadows that emphasize the textures of the paper and fabric. The overall palette is rich and saturated, evoking a celebratory, scholarly, and cultural atmosphere."
 ---
 [Home](../index.md) > [Bot Chats](./index.md)  
 # 🇲🇽💃 Cinco de Mayo  
+![bot-chats-cinco-de-mayo](../bot-chats-cinco-de-mayo.jpg)  
 ## 💬 [Gemini](../software/gemini.md) Prompt  
 > 🎉 Recommend some books on Cinco de Mayo  
   

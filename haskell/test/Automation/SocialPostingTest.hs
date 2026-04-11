@@ -1,6 +1,7 @@
 module Automation.SocialPostingTest (tests) where
 
 import qualified Data.Map.Strict as Map
+import Data.Maybe (isJust)
 import qualified Data.Set as Set
 import Data.Text (Text)
 import qualified Data.Text as T
@@ -897,6 +898,6 @@ readContentNoteTests = testGroup "readContentNote"
         createDirectoryIfMissing True (tmpDir </> "books")
         TIO.writeFile filePath content
         result <- readContentNote relativePath tmpDir
-        assertBool "should return Just for valid content note" $ result /= Nothing
+        assertBool "should return Just for valid content note" $ isJust result
   ]
 

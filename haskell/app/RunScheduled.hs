@@ -43,6 +43,7 @@ import Automation.BlogPrompt
 import Automation.BlogSeries
   ( appendModelSignature
   , buildBlogContext
+  , generateSeriesIndex
   , parseGeneratedPost
   , updatePreviousPost
   )
@@ -96,7 +97,7 @@ import qualified Automation.InternalLinking as IL
 import Automation.SocialPosting (autoPost)
 import Automation.CliArgs (CliArgs (..), parseCliArgs)
 import Automation.PacificTime (formatDay, todayPacificDay)
-import Automation.VaultSync (syncFileToVault, syncNewAiBlogPosts, copySeriesPosts)
+import Automation.VaultSync (syncFileToVault, syncNewAiBlogPosts, copySeriesPosts, ensureFileInVault)
 import Automation.TaskRunner (inferenceDashboards, runTasks, logMsg, failTask)
 import Automation.Text (stripCodeFences)
 
@@ -221,6 +222,14 @@ runBlogSeries context seriesMap runConfigs seriesId = do
   let todayText = formatDay today
   _ <- copySeriesPosts vaultDir seriesId repoRoot
 
+  -- Ensure series infrastructure files exist in vault (AGENTS.md and index.md)
+  series <- either failTask pure (lookupSeriesIn seriesMap seriesId)
+  let agentsRelPath = T.unpack seriesId </> "AGENTS.md"
+  _ <- syncFileToVault (repoRoot </> agentsRelPath) agentsRelPath vaultDir
+  let vaultIndexPath = vaultDir </> T.unpack seriesId </> "index.md"
+  indexCreated <- ensureFileInVault vaultIndexPath (generateSeriesIndex series)
+  when indexCreated $ logMsg $ "  📋 Created index.md for " <> seriesId
+
   -- 2. Check regeneration or already exists
   let seriesDir = repoRoot </> T.unpack seriesId
   mRegen <- findPostToRegenerate seriesDir todayText
@@ -245,7 +254,6 @@ runBlogSeries context seriesMap runConfigs seriesId = do
       priorityUser <- lookupEnvText (T.unpack (bsrcPriorityUserEnvVar runConfig))
 
       -- 4. Fetch comments
-      series <- either failTask pure (lookupSeriesIn seriesMap seriesId)
       comments <- fetchAllSeriesComments manager seriesId (priorityUser >>= (\u -> if T.null u then Nothing else Just u))
       logMsg $ "  📝 Fetched " <> T.pack (show (length comments)) <> " comments"
 
@@ -333,10 +341,6 @@ runBlogSeries context seriesMap runConfigs seriesId = do
                   let postRelPath = T.unpack seriesId </> T.unpack filename
                       postLocalPath = repoRoot </> postRelPath
                   _ <- syncFileToVault postLocalPath postRelPath vaultDir
-
-                  -- Sync AGENTS.md (lives in git, needs to go to vault)
-                  let agentsRelPath = T.unpack seriesId </> "AGENTS.md"
-                  _ <- syncFileToVault (repoRoot </> agentsRelPath) agentsRelPath vaultDir
 
                   -- Sync attachments (new image files) to vault
                   syncAttachmentsDir (repoRoot </> "attachments") (vaultDir </> "attachments")

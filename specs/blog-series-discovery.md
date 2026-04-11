@@ -108,7 +108,8 @@
 📐 Derives the base URL, author link, nav link, and environment variable name.
 🗓️ Registers a schedule entry for the configured hour.
 🤖 Registers a task runner with the configured model chain.
-📇 Generates an index page on the first run.
+📋 Syncs the AGENTS.md file from the repo to the vault on every run.
+📇 Generates and writes an index.md file to the vault if one does not already exist.
 🧠 Shared prompt construction, date awareness, recap detection, and navigation linking work automatically.
 🖼️ Image generation and backfill work automatically.
 

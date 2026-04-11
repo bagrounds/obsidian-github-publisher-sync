@@ -45,24 +45,25 @@ buildBlogContext seriesMap seriesId seriesDir comments today =
         , bcxToday         = today
         }
 
-generateSeriesIndex :: BlogSeriesConfig -> [BlogPost] -> Text
-generateSeriesIndex series _posts =
-  T.intercalate "\n"
+generateSeriesIndex :: BlogSeriesConfig -> Text
+generateSeriesIndex series =
+  let displayName = bscIcon series <> " " <> bscName series
+  in T.intercalate "\n"
     [ "---"
     , "share: true"
-    , "title: " <> quoteYamlValue (bscIcon series <> " " <> bscName series)
+    , "aliases:"
+    , "  - " <> quoteYamlValue displayName
+    , "title: " <> quoteYamlValue displayName
+    , "URL: " <> quoteYamlValue (bscBaseUrl series)
+    , "backlinks: false"
     , "---"
-    , ""
-    , bscNavLink series
-    , ""
+    , "[[index|🏡 Home]]"
+    , "# " <> displayName <> " (`$= dv.pages('\"' + dv.current().file.folder + '\"').length - 1`)"
     , "```dataview"
-    , "TABLE WITHOUT ID"
-    , "  file.link AS \"Post\","
-    , "  title AS \"Title\","
-    , "  date AS \"Date\""
+    , "LIST WITHOUT ID link(file.path, file.frontmatter.title)"
     , "FROM \"" <> bscId series <> "\""
-    , "WHERE file.name != \"index\""
-    , "SORT date DESC"
+    , "WHERE file.name != this.file.name"
+    , "SORT file.name DESC"
     , "```"
     ]
 

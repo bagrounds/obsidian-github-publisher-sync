@@ -2,6 +2,7 @@ module Automation.VaultSync
   ( syncFileToVault
   , syncNewAiBlogPosts
   , copySeriesPosts
+  , ensureFileInVault
   , findBestMatch
   , showScore
   , similarityThreshold
@@ -136,3 +137,19 @@ copySeriesPosts vaultDirectory seriesIdentifier repoRoot = do
     copyFile' sourceDirectory destinationDirectory filename = do
       content <- TIO.readFile (sourceDirectory </> filename)
       TIO.writeFile (destinationDirectory </> filename) content
+
+-- ---------------------------------------------------------------------------
+-- ensureFileInVault (create-if-not-exists for bootstrap files)
+-- ---------------------------------------------------------------------------
+
+ensureFileInVault :: FilePath -> Text -> IO Bool
+ensureFileInVault vaultPath content = do
+  exists <- doesFileExist vaultPath
+  if exists
+    then pure False
+    else do
+      createDirectoryIfMissing True (takeDirectory vaultPath)
+      TIO.writeFile vaultPath content
+      pure True
+  where
+    takeDirectory = reverse . dropWhile (/= '/') . reverse

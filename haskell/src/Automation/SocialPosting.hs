@@ -32,7 +32,7 @@ import Automation.EmbedSection
   , buildTweetSection
   )
 import Automation.Env (validateEnvironment)
-import Automation.BlogPrompt (formatDay, todayPacificDay)
+import Automation.PacificTime (formatDay, todayPacificDay)
 import qualified Automation.Gemini as Gemini
 import qualified Automation.ObsidianSync as Sync
 import Automation.Platform (Platform (..), PlatformLimits (..))

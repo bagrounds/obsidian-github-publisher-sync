@@ -72,6 +72,7 @@ library
     Automation.CliArgs
     Automation.VaultSync
     Automation.TaskRunner
+    Automation.PacificTime
   build-depends:
     base                 >= 4.18 && < 5,
     text                 >= 2.0,
@@ -168,6 +169,7 @@ test-suite automation-tests
     Automation.CliArgsTest
     Automation.VaultSyncTest
     Automation.TaskRunnerTest
+    Automation.PacificTimeTest
     Automation.TestGenerators
   build-depends:
     base,

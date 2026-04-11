@@ -4,6 +4,7 @@
 
 📋 Generates daily AI-written blog posts for three distinct blog series.
 🧠 Constructs rich prompts from post history, reader comments, and calendar-aware recap detection.
+📅 Includes deterministic human-readable date (day of week, month, day, year) in every prompt for date awareness.
 🔧 Assembles YAML frontmatter with navigation links, slugs, and model signatures.
 🗂️ Manages series configuration, post parsing, and index generation for each series.
 
@@ -13,6 +14,7 @@
 
 | 🧩 Component | 📂 Path | 📝 Purpose |
 |---|---|---|
+| 🕐 Pacific Time | `haskell/src/Automation/PacificTime.hs` | 📅 Shared Pacific timezone logic: formatDay, formatDayHuman, todayPacificDay, pacificHour |
 | 🧠 Prompt Builder | `haskell/src/Automation/BlogPrompt.hs` | 🔧 Constructs system and user prompts from blog context with recap awareness |
 | 📚 Series Logic | `haskell/src/Automation/BlogSeries.hs` | 🔄 Context assembly, post parsing, index generation, navigation linking |
 | 📄 Post Reader | `haskell/src/Automation/BlogPosts.hs` | 📖 Reads and parses markdown posts from series directories |
@@ -58,6 +60,13 @@
 📦 `BACKFILL_CONTENT_IDS` combines all series IDs with `reflections` and `ai-blog` for indexing operations.
 
 ## 🧠 Prompt Construction
+
+### 📅 Date Awareness
+
+📆 Every user prompt begins with a deterministic human-readable date: "Today is Saturday, April 11, 2026."
+🕐 The `formatDayHuman` function in `Automation.PacificTime` produces the full day-of-week and date from a pure `Day` value.
+📋 The YYYY-MM-DD machine-readable date is also included on the next line for filename/URL context.
+🛡️ This prevents the AI from confusing the day of the week, since the date is computed deterministically in Pacific time rather than inferred by the model.
 
 ### 📜 Post History
 
@@ -121,29 +130,32 @@
 
 ### 🧊 Pure Functions (No I/O)
 
-| 🔧 Function | 📝 Purpose |
-|---|---|
-| `buildBlogPrompt(context)` | 🧠 Construct system and user prompts from blog context |
-| `filterCommentsAfterLastPost(comments, posts, postTime)` | 📅 Filter comments to those after most recent post |
-| `buildBackLink(series, previousPost)` | ⏮️ Create wikilink navigation to previous post |
-| `buildForwardLink(series, nextFilename)` | ⏭️ Create wikilink navigation to next post |
-| `assembleFrontmatter(series, today, title, slug)` | 📝 Generate YAML frontmatter with display title, quoted Author, and date-prefixed URL |
-| `buildDisplayTitle(series, today, title)` | 🏷️ Construct display title as `today \| icon title icon` |
-| `todayPacific()` | 📅 Return today's date in YYYY-MM-DD Pacific time |
-| `parseGeneratedPost(raw)` | 📋 Parse and validate AI-generated post content |
-| `extractSlug(filename)` | 🔗 Extract URL slug from dated filename |
-| `generateSeriesIndex(series, posts)` | 📇 Generate dataview-based series index page |
-| `appendModelSignature(body, model)` | ✍️ Append model attribution signature |
-| `lookupSeries(seriesId)` | ⚙️ Retrieve series config by ID |
+| 🔧 Function | 📂 Module | 📝 Purpose |
+|---|---|---|
+| `formatDay(day)` | PacificTime | 📅 Format Day as YYYY-MM-DD text |
+| `formatDayHuman(day)` | PacificTime | 📅 Format Day as "Saturday, April 11, 2026" for AI prompts |
+| `pacificHour(utcTime)` | PacificTime | 🕐 Convert UTC time to Pacific hour (0-23) |
+| `buildBlogPrompt(context)` | BlogPrompt | 🧠 Construct system and user prompts from blog context |
+| `filterCommentsAfterLastPost(series, posts, comments)` | BlogPrompt | 📅 Filter comments to those after most recent post |
+| `buildBackLink(series, filename)` | BlogPrompt | ⏮️ Create wikilink navigation to previous post |
+| `buildForwardLink(series, filename)` | BlogPrompt | ⏭️ Create wikilink navigation to next post |
+| `assembleFrontmatter(series, today, title, slug)` | BlogPrompt | 📝 Generate YAML frontmatter with display title, quoted Author, and date-prefixed URL |
+| `buildDisplayTitle(series, today, title)` | BlogPrompt | 🏷️ Construct display title as `today \| icon title icon` |
+| `parseGeneratedPost(raw)` | BlogSeries | 📋 Parse and validate AI-generated post content |
+| `extractSlug(filename)` | BlogSeries | 🔗 Extract URL slug from dated filename |
+| `generateSeriesIndex(series, posts)` | BlogSeries | 📇 Generate dataview-based series index page |
+| `appendModelSignature(body, model)` | BlogSeries | ✍️ Append model attribution signature |
+| `lookupSeries(seriesId)` | BlogSeriesConfig | ⚙️ Retrieve series config by ID |
 
 ### 💾 I/O Functions
 
-| 🔧 Function | 📝 Purpose |
-|---|---|
-| `readSeriesPosts(seriesDir)` | 📄 Read and parse all markdown posts from series directory |
-| `readAgentsMd(seriesDir)` | 📖 Read AGENTS.md system prompt override |
-| `buildBlogContext(seriesId, repoRoot, comments, today)` | 📚 Assemble complete blog context from config and disk |
-| `updatePreviousPost(seriesDir, previousPost, series, nextFilename)` | 🔗 Update previous post file with forward navigation link |
+| 🔧 Function | 📂 Module | 📝 Purpose |
+|---|---|---|
+| `todayPacificDay` | PacificTime | 📅 Return today's date as a Day in Pacific time |
+| `readSeriesPosts(seriesDir)` | BlogPosts | 📄 Read and parse all markdown posts from series directory |
+| `readAgentsMd(seriesDir)` | BlogPosts | 📖 Read AGENTS.md system prompt override |
+| `buildBlogContext(seriesId, repoRoot, comments, today)` | BlogSeries | 📚 Assemble complete blog context from config and disk |
+| `updatePreviousPost(seriesDir, previousPost, series, nextFilename)` | BlogSeries | 🔗 Update previous post file with forward navigation link |
 
 ## 🧪 Testing
 
@@ -151,10 +163,55 @@
 - 📄 `readSeriesPosts`: empty directory, newest-first sorting, index/AGENTS exclusion, date extraction
 - 📖 `readAgentsMd`: present and missing AGENTS.md handling
 - 📚 `buildBlogContext`: unknown series error, complete context assembly
-- 🧠 `buildBlogPrompt`: system prompt sources, post and comment inclusion, recap instructions
+- 🧠 `buildBlogPrompt`: system prompt sources, post and comment inclusion, recap instructions, human-readable date inclusion
 - ⏮️ `buildBackLink`: wikilink format, extension stripping, series prefix
 - 📝 `assembleFrontmatter`: deterministic output, nav links, YAML quoting
 - 📇 `generateSeriesIndex`: dataview query generation
 - 🔗 `extractSlug`: date prefix stripping
 - 📋 `parseGeneratedPost`: validation and title extraction
 - ✍️ `appendModelSignature`: attribution formatting
+
+🔬 Tests in `haskell/test/Automation/PacificTimeTest.hs` covering:
+- 📅 `formatDay`: YYYY-MM-DD formatting with zero-padding
+- 📅 `formatDayHuman`: full human-readable date with day of week, month name, day, and year
+- 🕐 `pacificHour`: PST/PDT conversion with property-based range validation
+
+## 🆕 How to Create a New Fully Automated Blog Series
+
+📋 Adding a new fully automated blog series requires changes in four files plus creating a content directory.
+🧩 The shared modules handle all prompt construction, date awareness, frontmatter assembly, and navigation linking automatically.
+
+### 1️⃣ Add series configuration in `BlogSeriesConfig.hs`
+
+📝 Define a new `BlogSeriesConfig` record with the series ID, display name, icon emoji, author wikilink, base URL, optional priority user, navigation link, and UTC post time.
+📦 Add the new config to the `blogSeries` list so it appears in `blogSeriesMap` and `backfillContentIds`.
+
+### 2️⃣ Add a task ID in `Scheduler.hs`
+
+🏷️ Add a new constructor to the `TaskId` sum type, such as `BlogSeriesMyNewSeries`.
+🔄 Add a corresponding case to `taskIdToText` mapping to `"blog-series:my-new-series"`.
+✅ The `taskIdFromText` map derives automatically from `taskIdToText` via `Bounded` and `Enum`.
+📋 Add the new task ID to `isBlogSeries` so it inherits the at-or-after scheduling behavior.
+
+### 3️⃣ Add a schedule entry and run config in `Scheduler.hs`
+
+⏰ Add a `ScheduleEntry` to the `schedule` list, specifying the Pacific hour to generate (such as `[10]` for 10 AM Pacific).
+🤖 Add a `BlogSeriesRunConfig` entry to `blogSeriesRunConfigs` with the series ID, Gemini model chain, and environment variable name for the priority user.
+
+### 4️⃣ Add a dispatch case in `RunScheduled.hs`
+
+🔀 Add a case for the new `TaskId` constructor in the task dispatch section of `runScheduledTasks`, calling `runBlogSeries context "my-new-series"`.
+
+### 5️⃣ Create the content directory
+
+📂 Create the series directory in the Obsidian vault at `content/my-new-series/`.
+📖 Optionally add an `AGENTS.md` file in the series directory with a custom system prompt for the AI. If absent, the default system prompt is used.
+📇 The series index page is generated automatically on the first run.
+
+### 🔧 What you do NOT need to change
+
+🧠 `BlogPrompt.hs` — all prompt construction, date awareness, recap detection, and title sanitization are shared automatically.
+📚 `BlogSeries.hs` — context assembly, post parsing, navigation linking are all shared.
+🕐 `PacificTime.hs` — timezone handling and date formatting are shared.
+📝 `BlogPosts.hs` — post reading and parsing are shared.
+🖼️ `BlogImage.hs` — image generation is shared.

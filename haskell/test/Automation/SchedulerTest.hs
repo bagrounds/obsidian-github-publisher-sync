@@ -7,6 +7,7 @@ import Test.Tasty.QuickCheck (testProperty)
 import qualified Test.QuickCheck as QC
 
 import Automation.Scheduler
+import Automation.PacificTime (pacificHour)
 import Automation.TestGenerators (genUTCTime)
 
 tests :: TestTree

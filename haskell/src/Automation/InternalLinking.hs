@@ -29,7 +29,7 @@ module Automation.InternalLinking
   , run
   ) where
 
-import Automation.BlogPrompt (formatDay, todayPacificDay)
+import Automation.PacificTime (formatDay, todayPacificDay)
 import Automation.Frontmatter (YamlValue (..), parseFrontmatter, renderYamlValue)
 import qualified Automation.Gemini as Gemini
 import Automation.Json (decode)

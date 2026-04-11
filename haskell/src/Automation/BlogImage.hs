@@ -83,7 +83,8 @@ import System.Directory
 import System.FilePath ((</>), takeBaseName, takeDirectory, takeExtension)
 import Text.Regex.TDFA ((=~))
 
-import Automation.BlogPrompt (stripEmbedSections, todayPacificDay)
+import Automation.BlogPrompt (stripEmbedSections)
+import Automation.PacificTime (todayPacificDay)
 import Automation.Frontmatter (YamlValue (..), parseFrontmatter, renderYamlValue)
 import qualified Automation.Gemini as Gemini
 import qualified Automation.Json as Json

@@ -2,7 +2,7 @@
 
 ## 🎯 Overview
 
-📋 Generates daily AI-written blog posts for three distinct blog series.
+📋 Generates daily AI-written blog posts for four distinct blog series.
 🧠 Constructs rich prompts from post history, reader comments, and calendar-aware recap detection.
 📅 Includes deterministic human-readable date (day of week, month, day, year) in every prompt for date awareness.
 🔧 Assembles YAML frontmatter with navigation links, slugs, and model signatures.
@@ -53,6 +53,7 @@
 
 | 🏷️ Series ID | 🎨 Icon | ⏰ Post Time (UTC) | ⭐ Priority User | 🌐 Base URL |
 |---|---|---|---|---|
+| 📰 the-noise | 📰 | 14:00 | bagrounds | bagrounds.org/the-noise |
 | 🤖 auto-blog-zero | 🤖 | 16:00 | bagrounds | bagrounds.org/auto-blog-zero |
 | 🐔 chickie-loo | 🐔 | 15:00 | ChickieLoo | bagrounds.org/chickie-loo |
 | 🏛️ systems-for-public-good | 🏛️ | 17:00 | bagrounds | bagrounds.org/systems-for-public-good |

@@ -37,6 +37,7 @@
 🧠 getScheduledTasks(nowPacificHour())
          ↓
 📋 For each task (direct library calls, no subprocesses):
+   ├── 📰 blog-series:the-noise         → check exists → pull → generate → image → sync
    ├── 🐔 blog-series:chickie-loo      → check exists → pull → generate → image → sync
    ├── 🤖 blog-series:auto-blog-zero   → check exists → pull → generate → image → sync
    ├── 🏛️ blog-series:systems-for-public-good → check exists → pull → generate → image → sync
@@ -58,6 +59,7 @@ Pacific before making decisions via `nowPacificHour()`.
 
 | 🕐 Earliest Pacific Hour | 🏷️ Task ID | 📝 Description |
 |---|---|---|
+| 6 AM | `blog-series:the-noise` | 📰 The Noise daily news digest |
 | 7 AM | `blog-series:chickie-loo` | 🐔 Chickie Loo daily post |
 | 8 AM | `blog-series:auto-blog-zero` | 🤖 Auto Blog Zero daily post |
 | 9 AM | `blog-series:systems-for-public-good` | 🏛️ Systems for Public Good daily post |
@@ -89,12 +91,13 @@ Pacific before making decisions via `nowPacificHour()`.
 
 | 🏷️ Series | 🤖 Model Chain (in order) | 👤 Priority User Env Var |
 |---|---|---|
+| `the-noise` | gemini-2.5-flash → gemini-2.5-flash-lite → gemini-3.1-flash-lite-preview | `THE_NOISE_PRIORITY_USER` |
 | `chickie-loo` | gemini-3.1-flash-lite-preview → gemini-3-flash-preview | `CHICKIE_LOO_PRIORITY_USER` |
 | `auto-blog-zero` | gemini-3.1-flash-lite-preview → gemini-3-flash-preview | `AUTO_BLOG_ZERO_PRIORITY_USER` |
 | `systems-for-public-good` | gemini-2.5-flash → gemini-2.5-flash-lite → gemini-3.1-flash-lite-preview | `SYSTEMS_FOR_PUBLIC_GOOD_PRIORITY_USER` |
 
 🔒 chickie-loo and auto-blog-zero are restricted to Gemini 3+ models for highest quality blog posts.
-🌐 systems-for-public-good leads with gemini-2.5-flash because it needs Google Search grounding (free tier, 500 RPD) to reference current events. Grounding is not available on the free tier for Gemini 3+ models.
+🌐 the-noise and systems-for-public-good lead with gemini-2.5-flash because they need Google Search grounding (free tier, 500 RPD) to reference current events. Grounding is not available on the free tier for Gemini 3+ models.
 ⚠️ Grounding with Google Search is not available on the free tier for 3+ models.
 
 🔄 The `BLOG_GEMINI_MODEL` GitHub variable prepends to the chain when set.

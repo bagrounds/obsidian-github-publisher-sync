@@ -6,6 +6,9 @@ URL: https://bagrounds.org/books/how-babies-sleep-a-science-based-guide-to-the-f
 share: true
 CTA: 😴 Decode infant slumber.
 affiliate link: https://amzn.to/48qs2gx
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_time: 2026-04-11T00:00:00Z
+force_analyze_links: false
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 👶😴 How Babies Sleep: A Science-Based Guide to the First 365 Days and Nights  

@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-04-11T09:09:06-07:00
+updated: 2026-04-11T11:38:50-07:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -42,25 +42,25 @@ updated: 2026-04-11T09:09:06-07:00
 - [2026-04-08 | 🐔 A Mid-Week Reflection on the Garden and the Grace of Growth 🐔](./chickie-loo/2026-04-08-a-mid-week-reflection-on-the-garden-and-the-grace-of-growth.md)  
   
   
-## [🏛️ Systems for Public Good](./systems-for-public-good/index.md) (20)  
+## [🏛️ Systems for Public Good](./systems-for-public-good/index.md) (21)  
+- [2026-04-11 | 🏛️ ⚕️ The Human Foundation: Public Health as Real Wealth 🏛️](./systems-for-public-good/2026-04-11-the-human-foundation-public-health-as-real-wealth.md)  
 - [2026-04-10 | 🏛️ 💡 Education as Reciprocity: Learning, Teaching, and Serving 🏛️](./systems-for-public-good/2026-04-10-education-as-reciprocity-learning-teaching-and-serving.md)  
 - [2026-04-09 | 🏛️ 🎓 Investing in Lifelong Learning: Beyond the K-12 Horizon, Revisited 🏛️](./systems-for-public-good/2026-04-09-investing-in-lifelong-learning-beyond-the-k-12-horizon-revisited.md)  
 - [2026-04-08 | 🏛️ 🌳 The Green Tapestry: Individual Threads in the Public Good of Parks 🏛️](./systems-for-public-good/2026-04-08-the-green-tapestry-individual-threads-in-the-public-good-of-parks.md)  
-- [2026-04-07 | 🏛️ 🌳 Nature's Embrace: Public Parks as a Universal Right 🏛️](./systems-for-public-good/2026-04-07-nature-s-embrace-public-parks-as-a-universal-right.md)  
   
   
 ## [📚 Books](./books/index.md) (959)  
-- [👶😴 How Babies Sleep: The Gentle, Science-Based Method to Help Your Baby Sleep Through the Night](./books/how-babies-sleep-the-gentle-science-based-method-to-help-your-baby-sleep-through-the-night.md)  
-- [♾️〰️📊 Fractals, Chaos, Power Laws: Minutes from an Infinite Paradise](./books/fractals-chaos-power-laws-minutes-from-an-infinite-paradise.md)  
-- [🇺🇸📉🏛️ The Path to Paralysis: How American Politics Became Nasty, Dysfunctional, and a Threat to the Republic](./books/the-path-to-paralysis-how-american-politics-became-nasty-dysfunctional-and-a-threat-to-the-republic.md)  
-- [👶🔬 My First 100 Words series set (My First STEAM Words)](./books/my-first-100-words-series-set-my-first-steam-words.md)  
+- [🇺🇸👑🌺 Nation Within: The Story of America's Annexation of the Nation of Hawaii](./books/nation-within-the-story-of-americas-annexation-of-the-nation-of-hawaii.md)  
+- [👥✝️ A People's History of Christianity: The Other Side of the Story](./books/a-peoples-history-of-christianity-the-other-side-of-the-story.md)  
+- [🤖🔗👁️ Systems Thinking: An AI’s Guide to 100 Ways to Spot Connections Humans Often Overlook](./books/systems-thinking-an-ais-guide-to-100-ways-to-spot-connections-humans-often-overlook.md)  
+- [⚙️🔗 Quality Software Management: Systems Thinking](./books/quality-software-management-systems-thinking.md)  
   
   
-## [📺 Videos](./videos/index.md) (736)  
-- [😴⬇️⚡ 22: The Power of the Downstate, Optimizing Sleep and Recovery | Sara Mednick, PhD](./videos/22-the-power-of-the-downstate-optimizing-sleep-and-recovery-sara-mednick-phd.md)  
-- [😴🔄✨ Take a Nap! Change Your Life | Sara Mednick | Talks at Google](./videos/take-a-nap-change-your-life-sara-mednick-talks-at-google.md)  
-- [👶😴👩‍⚕️ Spoil Your Baby Ep 20 - How Babies Sleep with Dr. Helen Ball](./videos/spoil-your-baby-ep-20-how-babies-sleep-with-dr-helen-ball.md)  
-- [😴👶🧪 How Babies Sleep: The Gentle, Science-Based… by Sofia Axelrod · Audiobook preview](./videos/how-babies-sleep-the-gentle-science-based-by-sofia-axelrod-audiobook-preview.md)  
+## [📺 Videos](./videos/index.md) (737)  
+- [🤖✨💥⚠️ Claude Mythos Changes Everything. Your AI Stack Isn't Ready.](./videos/claude-mythos-changes-everything-your-ai-stack-isnt-ready.md)  
+- [🇺🇸🗣️👂 American Conversations: Diana Butler Bass](./videos/american-conversations-diana-butler-bass.md)  
+- [😇😈📉🚫 7️⃣ Deadly Innocent Frauds-A BCB Economics Lecture](./videos/seven-deadly-innocent-frauds-a-bcb-economics-lecture.md)  
+- [😡🏛️🤝 Jon Stewart «Can't F**king Believe» Democrats Caved on the Shutdown | The Daily Show](./videos/jon-stewart-cant-fking-believe-democrats-caved-on-the-shutdown-the-daily-show.md)  
   
   
 ## [🌌 Topics](./topics/index.md) (91)  
@@ -78,17 +78,17 @@ updated: 2026-04-11T09:09:06-07:00
   
   
 ## [🤖💬 Bot Chats](./bot-chats/index.md) (49)  
-- [✍🏼 Blogiversary 🕯️](./bot-chats/blogiversary.md)  
-- [🕸️🪵🏅 Blogging Success](./bot-chats/blogging-success.md)  
-- [🇦🇹💰🆚📈🖨️ Austrian Economics vs Modern Monetary Theory](./bot-chats/austrian-economics-vs-modern-monetary-theory.md)  
-- [⚛️💡🚀 Atomic Innovation](./bot-chats/atomic-innovation.md)  
+- [📚🤖💬 RAG and Agents](./bot-chats/rag-and-agents.md)  
+- [♟️👑⚔️🧠 Chess](./bot-chats/chess.md)  
+- [📐🔗🤖🧠 Category Theory for AI Engineering](./bot-chats/category-theory-for-ai-engineering.md)  
+- [📚🗳️🤝🏛️ Books for Democracy](./bot-chats/books-for-democracy.md)  
   
   
 ## [💾 Software](./software/index.md) (33)  
+- [👽🦺 Zod](./software/zod.md)  
 - [💡🔧📏🔮〰️ Vensim](./software/vensim.md)  
 - [🐍🏎️📦 uv](./software/uv.md)  
 - [💻📱🛠️ Termux](./software/termux.md)  
-- [⛎♉️♊️♋️♌️♍️♎️♏️♐️♑️♒️♓️ Zodios](./software/zodios.md)  
   
   
 ## [👥 People](./people/index.md) (18)  

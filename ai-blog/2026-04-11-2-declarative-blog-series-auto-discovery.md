@@ -22,7 +22,7 @@ URL: https://bagrounds.org/ai-blog/2026-04-11-2-declarative-blog-series-auto-dis
 
 🔍 The system now auto-discovers blog series from declarative configuration files at startup.
 
-📁 Each series is defined as a single Dhall-format file in the haskell series directory, like chickie-loo.dhall or auto-blog-zero.dhall.
+📁 Each series is defined as a single JSON file in the haskell series directory, like chickie-loo.json or auto-blog-zero.json.
 
 🏷️ The series ID comes from the filename, and everything else is either declared in the config or derived from the ID by convention.
 
@@ -42,9 +42,7 @@ URL: https://bagrounds.org/ai-blog/2026-04-11-2-declarative-blog-series-auto-dis
 
 ## 📄 What a Config File Looks Like
 
-🌱 Here is an example of what it takes to define a new blog series:
-
-The file contains a Dhall record with six fields: a name like Garden Thoughts, an icon emoji, an optional priority user (using Dhall's Some and None syntax), a Pacific-time schedule hour, a list of Gemini model names for the fallback chain, and a UTC post time string.
+🌱 A config file is a simple JSON object with six fields: a name like Garden Thoughts, an icon emoji, an optional priority user (a string when present, omitted or null when absent), a Pacific-time schedule hour as a number, a list of Gemini model names for the fallback chain, and a UTC post time string.
 
 🚀 That is it. The system discovers this file, derives everything else, registers the schedule entry, and starts generating posts. No Haskell source changes required.
 
@@ -58,23 +56,17 @@ The file contains a Dhall record with six fields: a name like Garden Thoughts, a
 
 🎯 RunScheduled now discovers series at startup, builds the series map and run configs, then constructs task runners dynamically.
 
-## 🧠 Temporary Parser Bridge
+## 📦 JSON Parsing with Existing Infrastructure
 
-📦 The official dhall Haskell library (version 1.42.3, the latest on Hackage) cannot build with GHC 9.14.1 because it requires template-haskell less than 2.24, but GHC 9.14.1 ships with template-haskell 2.24.0.0.
+🧩 The parsing uses the project's existing Automation.Json module, which provides a full JSON parser with FromValue type class, required field lookup with the dot-colon operator, and optional field lookup with the dot-colon-question operator.
 
-🔧 A merged pull request in the dhall-haskell repository (number 2704, merged February 2026) adds GHC 9.14 support, but this has not been released to Hackage yet.
+🚫 No new dependencies were needed. JSON is a universal format that every tool and language handles natively.
 
-🌉 As a temporary bridge, the parser uses Parsec (already in the dependency tree) to handle the minimal subset of Dhall record syntax that our config files use: string literals, integer literals, optional values with Some and None, string lists, and single-line comments.
-
-📄 The config files are valid Dhall, so when the official library releases a GHC 9.14-compatible version, the custom parser can be swapped for the real thing with no config file changes.
-
-🛡️ Validation catches missing required fields, empty model lists, and unrecognized model names, producing clear error messages with file paths.
+🔮 The schema is designed for forward-compatible evolution. Adding a new optional field (such as recap frequency or minimum post length) only requires adding a dot-colon-question lookup with a default value in the FromValue instance. Existing config files continue to work unchanged.
 
 ## 🧪 Test Coverage
 
-🔬 The implementation added 42 new tests for the BlogSeriesDiscovery module covering parsing, derivation, validation, and property-based testing.
-
-📊 The overall test suite grew from 1289 to 1333 tests, all passing.
+🔬 The implementation includes tests for the BlogSeriesDiscovery module covering parsing, derivation, validation, and property-based testing.
 
 🔍 Property-based tests verify that derivation functions maintain their contracts: author links always have double brackets, base URLs always start with https, environment variable names never contain hyphens, and config fields round-trip through derivation.
 
@@ -82,21 +74,9 @@ The file contains a Dhall record with six fields: a name like Garden Thoughts, a
 
 📉 Adding a new blog series went from editing four Haskell files to creating a single six-line config file.
 
-🧹 The existing three blog series were migrated to config files. All 18 fields across all 3 configs were validated against the official Dhall parser to confirm exact field-value match.
+🧹 The existing three blog series were migrated to JSON config files with identical runtime behavior.
 
 🔮 The architecture is now ready for future enhancements like per-series prompt strategies, recap frequencies, or image generation preferences, since these can be added as optional config fields with sensible defaults.
-
-## ⚠️ Migration Risks and Mitigations
-
-🔍 The claim of zero config file changes at migration time is grounded in testing, but it is worth being transparent about what could go wrong.
-
-🧪 All three config files were validated against the official Dhall parser (python-dhall 0.1.16, which wraps the Rust dhall-rust implementation of the Dhall standard). Every field in every file produces the same parsed value as our Parsec bridge. The Some and None optional syntax, emoji strings, leading-comma record style, and multi-element lists all pass.
-
-⚠️ The Parsec bridge has known limitations that create boundaries for what configs can express today. It does not handle Dhall escape sequences in strings, so backslash-n or backslash-t would fail. It does not support let bindings, imports, type annotations, string interpolation, or multiline strings. It rejects unknown field names, which is stricter than the official library. All of these limitations produce loud parse failures rather than silent mismatches. This means we would catch any problem at startup.
-
-🛡️ The main migration risk is that the official Dhall library brings significant transitive dependencies like megaparsec, cborg, serialise, and aeson. This will increase build time and binary size. We should benchmark the build impact before committing to the swap.
-
-📋 The 42 existing tests validate parsed output, not parser internals, so they serve as regression tests across the migration. Any behavioral difference between the Parsec bridge and the official library would be caught by the test suite.
 
 ## 📚 Book Recommendations
 
@@ -108,5 +88,5 @@ The file contains a Dhall record with six fields: a name like Garden Thoughts, a
 * The Pragmatic Programmer by David Thomas and Andrew Hunt offers a perspective that favors keeping things simple and avoiding over-engineering, which provides a useful counterpoint to the declarative configuration approach taken here, since sometimes a hardcoded list in source code is the simplest thing that works.
 
 ### 🔗 Related
-* Haskell Programming from First Principles by Christopher Allen and Julie Moronuki explores the type safety and functional patterns that underpin this implementation, from algebraic data types for the TaskId evolution to pure parser combinators for the Dhall format.
+* Haskell Programming from First Principles by Christopher Allen and Julie Moronuki explores the type safety and functional patterns that underpin this implementation, from algebraic data types for the TaskId evolution to JSON schema validation with typed decoders.
 * The Art of Unix Programming by Eric S. Raymond is relevant because the convention-over-configuration philosophy and the single-file-per-concern approach follow the Unix tradition of small, composable, text-based configurations.

@@ -1,7 +1,6 @@
 module Automation.BlogSeriesDiscovery
   ( DiscoveredSeries (..)
   , DiscoveryError (..)
-  , parseDhallConfig
   , parseSeriesConfig
   , discoverSeries
   , deriveBlogSeriesConfig
@@ -15,36 +14,17 @@ module Automation.BlogSeriesDiscovery
   , configDirectoryName
   ) where
 
-import Data.Char (isAlphaNum, isDigit)
+import qualified Data.ByteString as BS
 import Data.List (sortOn)
 import Data.List.NonEmpty (NonEmpty (..))
-import Data.Maybe (fromMaybe)
 import Data.Text (Text)
 import qualified Data.Text as T
-import qualified Data.Text.IO as TIO
+import qualified Data.Text.Encoding as TE
 import System.Directory (doesDirectoryExist, listDirectory)
 import System.FilePath ((</>), dropExtension, takeExtension)
-import Text.Parsec
-  ( ParseError
-  , between
-  , char
-  , eof
-  , many
-  , many1
-  , noneOf
-  , oneOf
-  , optionMaybe
-  , parse
-  , satisfy
-  , sepBy
-  , spaces
-  , string
-  , try
-  , (<|>)
-  )
-import Text.Parsec.Text (Parser)
 
 import qualified Automation.Gemini as Gemini
+import Automation.Json (FromValue (..), withObject, (.:), (.:?), eitherDecodeStrict)
 import Automation.BlogSeriesConfig (BlogSeriesConfig (..))
 import Automation.Scheduler (BlogSeriesRunConfig (..), ScheduleEntry (..), TaskId (..))
 
@@ -62,21 +42,28 @@ data DiscoveredSeries = DiscoveredSeries
   } deriving (Show, Eq)
 
 data DiscoveryError
-  = ParseError FilePath ParseError
+  = JsonParseError FilePath String
   | ValidationError FilePath Text
   deriving (Show)
 
 data RawConfig = RawConfig
-  { rcName               :: Maybe Text
-  , rcIcon               :: Maybe Text
-  , rcPriorityUser       :: Maybe (Maybe Text)
-  , rcScheduleHourPacific :: Maybe Int
-  , rcModels             :: Maybe [Text]
-  , rcPostTimeUtc        :: Maybe Text
+  { rcName               :: Text
+  , rcIcon               :: Text
+  , rcPriorityUser       :: Maybe Text
+  , rcScheduleHourPacific :: Int
+  , rcModels             :: [Text]
+  , rcPostTimeUtc        :: Text
   }
 
-emptyRawConfig :: RawConfig
-emptyRawConfig = RawConfig Nothing Nothing Nothing Nothing Nothing Nothing
+instance FromValue RawConfig where
+  fromValue = withObject "series config" $ \obj -> do
+    rcName <- obj .: "name"
+    rcIcon <- obj .: "icon"
+    rcPriorityUser <- obj .:? "priorityUser"
+    rcScheduleHourPacific <- obj .: "scheduleHourPacific"
+    rcModels <- obj .: "models"
+    rcPostTimeUtc <- obj .: "postTimeUtc"
+    pure RawConfig{..}
 
 discoverSeries :: FilePath -> IO (Either [DiscoveryError] [DiscoveredSeries])
 discoverSeries baseDir = do
@@ -86,64 +73,53 @@ discoverSeries baseDir = do
     then pure (Right [])
     else do
       entries <- listDirectory seriesDir
-      let dhallFiles = filter isDhallFile entries
-      results <- traverse (parseSeriesFile seriesDir) dhallFiles
+      let jsonFiles = filter isJsonFile entries
+      results <- traverse (parseSeriesFile seriesDir) jsonFiles
       let errors = concatMap (\case Left errs -> errs; Right _ -> []) results
           successes = concatMap (\case Right series -> [series]; Left _ -> []) results
       if null errors
         then pure (Right (sortOn dsId successes))
         else pure (Left errors)
 
-isDhallFile :: FilePath -> Bool
-isDhallFile path = takeExtension path == ".dhall"
+isJsonFile :: FilePath -> Bool
+isJsonFile path = takeExtension path == ".json"
 
 parseSeriesFile :: FilePath -> FilePath -> IO (Either [DiscoveryError] DiscoveredSeries)
 parseSeriesFile seriesDir filename = do
   let filePath = seriesDir </> filename
       seriesId = T.pack (dropExtension filename)
-  content <- TIO.readFile filePath
-  pure $ case parseDhallConfig content of
-    Left parseError -> Left [ParseError filePath parseError]
-    Right rawConfig -> case validateRawConfig filePath seriesId rawConfig of
-      Left validationErrors -> Left validationErrors
-      Right discovered -> Right discovered
-
-parseDhallConfig :: Text -> Either ParseError RawConfig
-parseDhallConfig = parse dhallRecord "series config"
+  content <- BS.readFile filePath
+  pure $ case eitherDecodeStrict content of
+    Left parseError -> Left [JsonParseError filePath parseError]
+    Right rawConfig -> validateRawConfig filePath seriesId rawConfig
 
 parseSeriesConfig :: Text -> Text -> Either [DiscoveryError] DiscoveredSeries
 parseSeriesConfig seriesId content =
-  case parseDhallConfig content of
-    Left parseError -> Left [ParseError "<input>" parseError]
+  case eitherDecodeStrict (TE.encodeUtf8 content) of
+    Left parseError -> Left [JsonParseError "<input>" parseError]
     Right rawConfig -> validateRawConfig "<input>" seriesId rawConfig
 
 validateRawConfig :: FilePath -> Text -> RawConfig -> Either [DiscoveryError] DiscoveredSeries
 validateRawConfig filePath seriesId RawConfig{..} =
-  let errors = concat
-        [ maybe [ValidationError filePath "missing required field: name"] (const []) rcName
-        , maybe [ValidationError filePath "missing required field: icon"] (const []) rcIcon
-        , maybe [ValidationError filePath "missing required field: scheduleHourPacific"] (const []) rcScheduleHourPacific
-        , maybe [ValidationError filePath "missing required field: models"] (const []) rcModels
-        , maybe [ValidationError filePath "missing required field: postTimeUtc"] (const []) rcPostTimeUtc
-        , case rcScheduleHourPacific of
-            Just hour | hour < 0 || hour > 23 ->
+  let errors =
+        (case rcScheduleHourPacific of
+            hour | hour < 0 || hour > 23 ->
               [ValidationError filePath ("scheduleHourPacific must be 0-23, got: " <> T.pack (show hour))]
-            _ -> []
-        , case rcModels of
-            Just [] -> [ValidationError filePath "models list must not be empty"]
-            _ -> []
-        ]
+            _ -> [])
+        ++ (case rcModels of
+            [] -> [ValidationError filePath "models list must not be empty"]
+            _ -> [])
   in if null errors
-    then case (rcName, rcIcon, rcScheduleHourPacific, rcModels, rcPostTimeUtc) of
-      (Just name, Just icon, Just hour, Just (firstModel : restModels), Just postTime) ->
+    then case rcModels of
+      (firstModel : restModels) ->
         Right DiscoveredSeries
           { dsId = seriesId
-          , dsName = name
-          , dsIcon = icon
-          , dsPriorityUser = fromMaybe Nothing rcPriorityUser
-          , dsScheduleHourPacific = hour
+          , dsName = rcName
+          , dsIcon = rcIcon
+          , dsPriorityUser = rcPriorityUser
+          , dsScheduleHourPacific = rcScheduleHourPacific
           , dsModels = Gemini.modelFromText firstModel :| fmap Gemini.modelFromText restModels
-          , dsPostTimeUtc = postTime
+          , dsPostTimeUtc = rcPostTimeUtc
           }
       _ -> Left errors
     else Left errors
@@ -193,111 +169,3 @@ derivePriorityUserEnvVar seriesId =
   where
     toEnvChar '-' = '_'
     toEnvChar c   = c
-
-dhallRecord :: Parser RawConfig
-dhallRecord = do
-  spaces
-  _ <- lineComments
-  _ <- char '{'
-  fields <- dhallField `sepBy` try fieldSeparator
-  spaces
-  _ <- lineComments
-  _ <- char '}'
-  spaces
-  _ <- lineComments
-  eof
-  pure (foldr applyField emptyRawConfig fields)
-
-lineComments :: Parser ()
-lineComments = do
-  _ <- many (try singleLineComment)
-  pure ()
-
-singleLineComment :: Parser ()
-singleLineComment = do
-  spaces
-  _ <- string "--"
-  _ <- many (noneOf "\n")
-  _ <- oneOf "\n"
-  pure ()
-
-fieldSeparator :: Parser ()
-fieldSeparator = do
-  spaces
-  _ <- lineComments
-  _ <- char ','
-  spaces
-  _ <- lineComments
-  pure ()
-
-data DhallField
-  = FieldName Text
-  | FieldIcon Text
-  | FieldPriorityUser (Maybe Text)
-  | FieldScheduleHourPacific Int
-  | FieldModels [Text]
-  | FieldPostTimeUtc Text
-
-applyField :: DhallField -> RawConfig -> RawConfig
-applyField field config = case field of
-  FieldName value -> config { rcName = Just value }
-  FieldIcon value -> config { rcIcon = Just value }
-  FieldPriorityUser value -> config { rcPriorityUser = Just value }
-  FieldScheduleHourPacific value -> config { rcScheduleHourPacific = Just value }
-  FieldModels value -> config { rcModels = Just value }
-  FieldPostTimeUtc value -> config { rcPostTimeUtc = Just value }
-
-dhallField :: Parser DhallField
-dhallField = do
-  spaces
-  _ <- lineComments
-  fieldName <- many1 (satisfy (\c -> isAlphaNum c || c == '_'))
-  spaces
-  _ <- char '='
-  spaces
-  case fieldName of
-    "name"               -> FieldName <$> dhallString
-    "icon"               -> FieldIcon <$> dhallString
-    "priorityUser"       -> FieldPriorityUser <$> dhallOptionalText
-    "scheduleHourPacific" -> FieldScheduleHourPacific <$> dhallInt
-    "models"             -> FieldModels <$> dhallStringList
-    "postTimeUtc"        -> FieldPostTimeUtc <$> dhallString
-    other                -> fail ("Unknown field: " <> other)
-
-dhallString :: Parser Text
-dhallString = do
-  _ <- char '"'
-  content <- many (noneOf "\"\\")
-  _ <- char '"'
-  pure (T.pack content)
-
-dhallInt :: Parser Int
-dhallInt = do
-  digits <- many1 (satisfy isDigit)
-  pure (read digits)
-
-dhallOptionalText :: Parser (Maybe Text)
-dhallOptionalText =
-  try dhallSome <|> dhallNone
-
-dhallSome :: Parser (Maybe Text)
-dhallSome = do
-  _ <- string "Some"
-  spaces
-  Just <$> dhallString
-
-dhallNone :: Parser (Maybe Text)
-dhallNone = do
-  _ <- string "None"
-  _ <- optionMaybe (spaces >> string "Text")
-  pure Nothing
-
-dhallStringList :: Parser [Text]
-dhallStringList = between (char '[' >> spaces) (spaces >> char ']') items
-  where
-    items = dhallString `sepBy` try listSeparator
-    listSeparator = do
-      spaces
-      _ <- char ','
-      spaces
-      pure ()

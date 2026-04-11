@@ -616,7 +616,7 @@ main = do
         Nothing -> fromMaybe "." mWorkspace
   manager <- newManager tlsManagerSettings
 
-  -- Discover blog series from Dhall config files
+  -- Discover blog series from JSON config files
   let haskellDir = repoRoot </> "haskell"
   discoveryResult <- discoverSeries haskellDir
   discovered <- case discoveryResult of
@@ -627,7 +627,7 @@ main = do
     Left errors -> do
       TIO.hPutStrLn stderr "❌ Blog series discovery errors:"
       mapM_ (\case
-        ParseError path err -> TIO.hPutStrLn stderr $ "  📄 " <> T.pack path <> ": " <> T.pack (show err)
+        JsonParseError path err -> TIO.hPutStrLn stderr $ "  📄 " <> T.pack path <> ": " <> T.pack err
         ValidationError path msg -> TIO.hPutStrLn stderr $ "  ⚠️  " <> T.pack path <> ": " <> msg
         ) errors
       exitFailure

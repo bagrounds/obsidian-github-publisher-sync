@@ -32,21 +32,21 @@ parseSeriesConfigTests = testGroup "parseSeriesConfig"
       assertBool "should parse successfully" $
         isRight (parseSeriesConfig "garden-thoughts" minimalConfig)
 
-  , testCase "parses config with None priority user" $
+  , testCase "parses config without priority user" $
       assertBool "should parse successfully" $
-        isRight (parseSeriesConfig "solo-bot" configWithNone)
+        isRight (parseSeriesConfig "solo-bot" configWithoutPriorityUser)
 
-  , testCase "parses config with comments" $
-      assertBool "should parse config with comments" $
-        isRight (parseSeriesConfig "test-series" configWithComments)
+  , testCase "parses config with null priority user" $
+      assertBool "should parse config with null priority" $
+        isRight (parseSeriesConfig "solo-bot" configWithNullPriorityUser)
 
   , testCase "rejects empty input" $
       assertBool "should fail on empty" $
         isLeft (parseSeriesConfig "test" "")
 
-  , testCase "rejects malformed record" $
+  , testCase "rejects malformed JSON" $
       assertBool "should fail on malformed" $
-        isLeft (parseSeriesConfig "test" "not a record")
+        isLeft (parseSeriesConfig "test" "not json")
 
   , testCase "extracts correct name" $
       dsName (unsafeParse "garden-thoughts" minimalConfig) @?= "Garden Thoughts"
@@ -64,23 +64,27 @@ parseSeriesConfigTests = testGroup "parseSeriesConfig"
   , testCase "extracts correct post time" $
       dsPostTimeUtc (unsafeParse "garden-thoughts" minimalConfig) @?= "19:00"
 
-  , testCase "extracts Some priority user" $
+  , testCase "extracts priority user" $
       dsPriorityUser (unsafeParse "garden-thoughts" minimalConfig) @?= Just "bagrounds"
 
-  , testCase "extracts None priority user" $
-      dsPriorityUser (unsafeParse "solo-bot" configWithNone) @?= Nothing
+  , testCase "missing priority user defaults to Nothing" $
+      dsPriorityUser (unsafeParse "solo-bot" configWithoutPriorityUser) @?= Nothing
+
+  , testCase "null priority user gives Nothing" $
+      dsPriorityUser (unsafeParse "solo-bot" configWithNullPriorityUser) @?= Nothing
 
   , testCase "sets series ID from argument" $
       dsId (unsafeParse "garden-thoughts" minimalConfig) @?= "garden-thoughts"
 
   , testCase "parses existing auto-blog-zero config" $ do
       let config = T.unlines
-            [ "{ name = \"Auto Blog Zero\""
-            , ", icon = \"\129302\""
-            , ", priorityUser = Some \"bagrounds\""
-            , ", scheduleHourPacific = 8"
-            , ", models = [ \"gemini-3.1-flash-lite-preview\", \"gemini-3-flash-preview\" ]"
-            , ", postTimeUtc = \"16:00\""
+            [ "{"
+            , "  \"name\": \"Auto Blog Zero\","
+            , "  \"icon\": \"\129302\","
+            , "  \"priorityUser\": \"bagrounds\","
+            , "  \"scheduleHourPacific\": 8,"
+            , "  \"models\": [\"gemini-3.1-flash-lite-preview\", \"gemini-3-flash-preview\"],"
+            , "  \"postTimeUtc\": \"16:00\""
             , "}"
             ]
           discovered = unsafeParse "auto-blog-zero" config
@@ -216,65 +220,68 @@ isLeft (Right _) = False
 
 minimalConfig :: T.Text
 minimalConfig = T.unlines
-  [ "{ name = \"Garden Thoughts\""
-  , ", icon = \"\129793\""
-  , ", priorityUser = Some \"bagrounds\""
-  , ", scheduleHourPacific = 11"
-  , ", models = [ \"gemini-2.5-flash\", \"gemini-2.5-flash-lite\" ]"
-  , ", postTimeUtc = \"19:00\""
+  [ "{"
+  , "  \"name\": \"Garden Thoughts\","
+  , "  \"icon\": \"\129793\","
+  , "  \"priorityUser\": \"bagrounds\","
+  , "  \"scheduleHourPacific\": 11,"
+  , "  \"models\": [\"gemini-2.5-flash\", \"gemini-2.5-flash-lite\"],"
+  , "  \"postTimeUtc\": \"19:00\""
   , "}"
   ]
 
-configWithNone :: T.Text
-configWithNone = T.unlines
-  [ "{ name = \"Solo Bot\""
-  , ", icon = \"\129302\""
-  , ", priorityUser = None Text"
-  , ", scheduleHourPacific = 6"
-  , ", models = [ \"gemini-2.5-flash\" ]"
-  , ", postTimeUtc = \"14:00\""
+configWithoutPriorityUser :: T.Text
+configWithoutPriorityUser = T.unlines
+  [ "{"
+  , "  \"name\": \"Solo Bot\","
+  , "  \"icon\": \"\129302\","
+  , "  \"scheduleHourPacific\": 6,"
+  , "  \"models\": [\"gemini-2.5-flash\"],"
+  , "  \"postTimeUtc\": \"14:00\""
   , "}"
   ]
 
-configWithComments :: T.Text
-configWithComments = T.unlines
-  [ "-- This is a blog series config"
-  , "{ name = \"Test Series\""
-  , ", icon = \"\129514\""
-  , "-- priority user is the GitHub handle"
-  , ", priorityUser = Some \"tester\""
-  , ", scheduleHourPacific = 10"
-  , ", models = [ \"gemini-2.5-flash\" ]"
-  , ", postTimeUtc = \"18:00\""
+configWithNullPriorityUser :: T.Text
+configWithNullPriorityUser = T.unlines
+  [ "{"
+  , "  \"name\": \"Solo Bot\","
+  , "  \"icon\": \"\129302\","
+  , "  \"priorityUser\": null,"
+  , "  \"scheduleHourPacific\": 6,"
+  , "  \"models\": [\"gemini-2.5-flash\"],"
+  , "  \"postTimeUtc\": \"14:00\""
   , "}"
   ]
 
 configMissingName :: T.Text
 configMissingName = T.unlines
-  [ "{ icon = \"\129793\""
-  , ", scheduleHourPacific = 11"
-  , ", models = [ \"gemini-2.5-flash\" ]"
-  , ", postTimeUtc = \"19:00\""
+  [ "{"
+  , "  \"icon\": \"\129793\","
+  , "  \"scheduleHourPacific\": 11,"
+  , "  \"models\": [\"gemini-2.5-flash\"],"
+  , "  \"postTimeUtc\": \"19:00\""
   , "}"
   ]
 
 configEmptyModels :: T.Text
 configEmptyModels = T.unlines
-  [ "{ name = \"Empty Models\""
-  , ", icon = \"\10060\""
-  , ", scheduleHourPacific = 11"
-  , ", models = []"
-  , ", postTimeUtc = \"19:00\""
+  [ "{"
+  , "  \"name\": \"Empty Models\","
+  , "  \"icon\": \"\10060\","
+  , "  \"scheduleHourPacific\": 11,"
+  , "  \"models\": [],"
+  , "  \"postTimeUtc\": \"19:00\""
   , "}"
   ]
 
 configNoPriorityUser :: T.Text
 configNoPriorityUser = T.unlines
-  [ "{ name = \"No Priority\""
-  , ", icon = \"\128736\""
-  , ", scheduleHourPacific = 11"
-  , ", models = [ \"gemini-2.5-flash\" ]"
-  , ", postTimeUtc = \"19:00\""
+  [ "{"
+  , "  \"name\": \"No Priority\","
+  , "  \"icon\": \"\128736\","
+  , "  \"scheduleHourPacific\": 11,"
+  , "  \"models\": [\"gemini-2.5-flash\"],"
+  , "  \"postTimeUtc\": \"19:00\""
   , "}"
   ]
 

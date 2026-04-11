@@ -2,8 +2,8 @@
 
 ## 🎯 Overview
 
-📋 Blog series are defined as individual Dhall configuration files in the `haskell/series/` directory.
-🔍 The system auto-discovers all `.dhall` files at startup and derives everything needed to run each series.
+📋 Blog series are defined as individual JSON configuration files in the `haskell/series/` directory.
+🔍 The system auto-discovers all `.json` files at startup and derives everything needed to run each series.
 🚀 Adding a new blog series requires only creating a single config file — no Haskell source changes.
 
 ## 🏗️ Architecture
@@ -12,7 +12,7 @@
 
 | 🧩 Component | 📂 Path | 📝 Purpose |
 |---|---|---|
-| 🔍 Discovery | `haskell/src/Automation/BlogSeriesDiscovery.hs` | Dhall config parser, validation, convention-based derivation |
+| 🔍 Discovery | `haskell/src/Automation/BlogSeriesDiscovery.hs` | JSON config parser, validation, convention-based derivation |
 | ⚙️ Series Config | `haskell/src/Automation/BlogSeriesConfig.hs` | Runtime-parameterized series metadata and lookup |
 | 🗓️ Scheduler | `haskell/src/Automation/Scheduler.hs` | Dynamic schedule built from discovered series |
 | 🚀 Runner | `haskell/app/RunScheduled.hs` | Discovers series at startup, builds dynamic task runners |
@@ -20,7 +20,7 @@
 ### 🔄 Data Flow
 
 ```
-📂 haskell/series/*.dhall (config files on disk)
+📂 haskell/series/*.json (config files on disk)
          ↓
 🔍 discoverSeries(haskellDir) → [DiscoveredSeries]
          ↓
@@ -33,38 +33,47 @@
 🚀 taskRunners(context, seriesMap, runConfigs) → Map TaskId (IO ())
 ```
 
-## 📄 Configuration Format
+## 📄 Configuration Schema
 
-📋 Each series is a Dhall record in `haskell/series/{series-id}.dhall`.
-🏷️ The series ID is derived from the filename (e.g., `garden-thoughts.dhall` becomes series ID `garden-thoughts`).
+📋 Each series is a JSON object in `haskell/series/{series-id}.json`.
+🏷️ The series ID is derived from the filename (e.g., `garden-thoughts.json` becomes series ID `garden-thoughts`).
+📦 Parsing uses the existing `Automation.Json` module with `FromValue` and the `(.:)` and `(.:?)` operators.
 
 ### 📝 Required Fields
 
 | 🏷️ Field | 📊 Type | 📝 Description |
 |---|---|---|
-| `name` | Text | Display name for the series |
-| `icon` | Text | Emoji icon for the series |
-| `scheduleHourPacific` | Natural | Hour in Pacific time to generate posts (0-23) |
-| `models` | List Text | Gemini model chain (primary model first, fallbacks after) |
-| `postTimeUtc` | Text | UTC time for post metadata (e.g., "16:00") |
+| `name` | string | Display name for the series |
+| `icon` | string | Emoji icon for the series |
+| `scheduleHourPacific` | number | Hour in Pacific time to generate posts (0-23) |
+| `models` | array of strings | Gemini model chain (primary model first, fallbacks after) |
+| `postTimeUtc` | string | UTC time for post metadata (e.g., "16:00") |
 
 ### 📝 Optional Fields
 
 | 🏷️ Field | 📊 Type | 📝 Default | 📝 Description |
 |---|---|---|---|
-| `priorityUser` | Optional Text | None | GitHub handle whose comments get priority flagging |
+| `priorityUser` | string or null | null | GitHub handle whose comments get priority flagging |
 
 ### 📄 Example Configuration
 
-```dhall
-{ name = "Garden Thoughts"
-, icon = "🌱"
-, priorityUser = Some "bagrounds"
-, scheduleHourPacific = 11
-, models = [ "gemini-2.5-flash", "gemini-2.5-flash-lite" ]
-, postTimeUtc = "19:00"
+```json
+{
+  "name": "Garden Thoughts",
+  "icon": "🌱",
+  "priorityUser": "bagrounds",
+  "scheduleHourPacific": 11,
+  "models": ["gemini-2.5-flash", "gemini-2.5-flash-lite"],
+  "postTimeUtc": "19:00"
 }
 ```
+
+### 🔮 Extensibility Design
+
+📐 The schema is designed for forward-compatible evolution through optional fields with sensible defaults.
+🆕 To add a new customization option (e.g., recap frequency, minimum post length, or image generation style), add an optional field to the JSON schema and use `(.:?)` in the `FromValue` instance with a default value.
+🔇 Existing config files continue to work unchanged when new optional fields are added because missing keys resolve to `Nothing` via `(.:?)`.
+📋 Planned future fields are documented in the Future Considerations section.
 
 ## 🔧 Convention-Based Derivation
 
@@ -85,7 +94,7 @@
 
 ### 1️⃣ Create the config file
 
-📄 Create `haskell/series/{series-id}.dhall` with the required fields.
+📄 Create `haskell/series/{series-id}.json` with the required fields.
 📝 The filename determines the series ID.
 
 ### 2️⃣ Create the content directory
@@ -112,8 +121,8 @@
 
 ## 🧪 Testing
 
-🔬 `BlogSeriesDiscoveryTest.hs` contains 42 tests across 4 suites:
-- 📄 Parsing: valid configs, None/Some priority users, comments, error cases
+🔬 `BlogSeriesDiscoveryTest.hs` contains tests across 4 suites:
+- 📄 Parsing: valid JSON configs, null and missing priority users, error cases
 - 📐 Derivation: author, base URL, nav link, env var, task ID, schedule entry
 - ✅ Validation: missing fields, empty models, optional fields
 - 🔬 Properties: wikilink wrapping, URL prefixing, env var format, ID preservation
@@ -123,44 +132,9 @@
 ## ⚠️ Error Handling
 
 📋 Discovery errors are reported with clear context:
-- 📄 Parse errors include the file path and Parsec error message
+- 📄 JSON parse errors include the file path and parse error message
 - ⚠️ Validation errors include the file path and description of the missing or invalid field
 - ❌ If any config file fails to parse or validate, the application exits with a nonzero status
-
-## 🔄 Migration to Official Dhall Library
-
-📦 The config files use valid Dhall syntax, but the parser is currently a temporary Parsec-based implementation.
-🚫 The official `dhall` Haskell library (1.42.3, latest on Hackage) cannot build with GHC 9.14.1 due to an upper bound on `template-haskell` (requires `< 2.24`, but GHC 9.14.1 ships 2.24.0.0).
-🔧 PR [dhall-haskell#2704](https://github.com/dhall-lang/dhall-haskell/pull/2704) (merged Feb 2026) adds GHC 9.14 support but has not been released to Hackage.
-
-### ✅ Validation Against Official Parser
-
-🔬 All three config files have been validated against the official Dhall parser (python-dhall 0.1.16, which wraps the Rust dhall-rust implementation of the Dhall standard).
-📊 All 18 fields across all 3 config files produce identical parsed values between the official parser and our Parsec bridge.
-🧪 Validated variants: `Some` values, record syntax with leading commas, emoji in string literals, multi-word names, and multi-element model lists.
-
-### ⚠️ Known Risks and Mitigations
-
-🔍 Risk 1: the Parsec parser does not handle Dhall escape sequences (backslash-n, backslash-t, and so on) in double-quoted strings.
-🛡️ Mitigation: none of our config values require escape sequences. Names, icons, model identifiers, and time strings are all plain ASCII or emoji. The parser actively rejects backslashes, so any attempt to use them would be a loud parse error rather than a silent mismatch.
-
-🔍 Risk 2: the Parsec parser rejects unknown field names instead of ignoring them. The official Dhall library with a `FromDhall` instance would silently ignore extra fields.
-🛡️ Mitigation: this is actually stricter than necessary and catches typos. When migrating, we should decide whether to keep this strictness (via a custom `Dhall.Decoder`) or adopt Dhall's default lenient behavior.
-
-🔍 Risk 3: the Parsec parser does not support Dhall language features beyond simple records: no `let` bindings, no imports, no type annotations, no string interpolation, no multiline strings (Dhall single-quoted syntax).
-🛡️ Mitigation: our configs intentionally use the simplest possible Dhall subset. If a future config needs advanced features, it would fail loudly at parse time, signaling it is time to complete the migration.
-
-🔍 Risk 4: the official Dhall library will add significant transitive dependencies (megaparsec, cborg, serialise, aeson, and others), increasing build time and binary size.
-🛡️ Mitigation: evaluate the build time impact before merging and consider whether the benefits justify the cost for our simple record configs.
-
-### 📋 Migration Plan
-
-1. 🔍 Monitor Hackage for a dhall release with GHC 9.14 support (dhall 1.43+ or a revised 1.42.x)
-2. 📦 Add `dhall` as a build dependency in `automation.cabal`
-3. 🔄 Replace `parseDhallConfig` with `Dhall.input Dhall.auto` using a Dhall `FromDhall` instance for `RawConfig`, keeping the existing validation layer
-4. 🧹 Remove the Parsec parser code from `BlogSeriesDiscovery.hs`
-5. ✅ No config file changes needed — the files are already valid Dhall
-6. 🧪 Keep the existing 42 tests as regression tests — they validate the parsed output, not the parser itself
 
 ## 🔮 Future Considerations
 

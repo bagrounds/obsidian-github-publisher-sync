@@ -16,7 +16,7 @@ module Automation.ReflectionTitle
   ) where
 
 import Data.Char (isDigit)
-import Data.List (nub)
+import Data.List (find, nub)
 import Data.List.NonEmpty (NonEmpty)
 import Data.Maybe (fromMaybe)
 import Data.Text (Text)
@@ -275,17 +275,19 @@ generateReflectionTitle config callModel = do
     , rtrUpdatedContent = updatedContent
     }
 
-isReflectionFile :: String -> Bool
+isReflectionFile :: FilePath -> Bool
 isReflectionFile filename =
   length filename == 13
     && takeExtension filename == ".md"
     && all isDigit (take 4 filename)
     && filename !! 4 == '-'
+    && all isDigit (take 2 (drop 5 filename))
+    && filename !! 7 == '-'
+    && all isDigit (take 2 (drop 8 filename))
 
 extractCreativeTitle :: Text -> Text
 extractCreativeTitle content =
-  let titleLine = foldr (\line accumulator -> if T.isPrefixOf "title:" line then Just line else accumulator) Nothing (T.lines content)
-  in case titleLine of
+  case find (T.isPrefixOf "title:") (T.lines content) of
     Just matched ->
       let value = T.strip (T.drop 6 matched)
           unquoted = T.dropAround (\c -> c == '"' || c == '\'') value

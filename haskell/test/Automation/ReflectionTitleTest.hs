@@ -170,6 +170,12 @@ isReflectionFileTests = testGroup "isReflectionFile"
   , testCase "rejects shorter filename" $
       isReflectionFile "2026-04.md" @?= False
 
+  , testCase "rejects non-numeric month" $
+      isReflectionFile "2026-ab-10.md" @?= False
+
+  , testCase "rejects non-numeric day" $
+      isReflectionFile "2026-04-ab.md" @?= False
+
   , testCase "accepts boundary date" $
       isReflectionFile "9999-12-31.md" @?= True
   ]

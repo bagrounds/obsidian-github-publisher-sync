@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-04-10T15:34:37-07:00
+updated: 2026-04-10T18:14:31-07:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -50,24 +50,24 @@ updated: 2026-04-10T15:34:37-07:00
   
   
 ## [📚 Books](./books/index.md) (959)  
-- [🌸🐝🦋🛡️ Attracting Native Pollinators: The Xerces Society Guide, Protecting North America's Bees and Butterflies](./books/attracting-native-pollinators-the-xerces-society-guide-protecting-north-americas-bees-and-butterflies.md)  
-- [♂️👑✊ Political Masculinity: How Incels, Fundamentalists and Authoritarians Mobilise for Patriarchy](./books/political-masculinity-how-incels-fundamentalists-and-authoritarians-mobilise-for-patriarchy.md)  
-- [🌱🔢✨ Precursor Math Concepts: The Wonder of Mathematical Worlds With Infants and Toddlers](./books/precursor-math-concepts-the-wonder-of-mathematical-worlds-with-infants-and-toddlers.md)  
-- [🧠🔎 Thought and Knowledge: An Introduction to Critical Thinking](./books/thought-and-knowledge-an-introduction-to-critical-thinking.md)  
+- [🏠🛠️ Ultimate Guide to Home Repair & Improvement](./books/ultimate-guide-to-home-repair-improvement.md)  
+- [🏠🛠️ Home Improvement 1-2-3: Expert Advice from the Home Depot](./books/home-improvement-1-2-3-expert-advice-from-the-home-depot.md)  
+- [🌋🌊🌪️🔥 The Big Ones: How Natural Disasters Have Shaped Us (and What We Can Do About Them)](./books/the-big-ones-how-natural-disasters-have-shaped-us-and-what-we-can-do-about-them.md)  
+- [💾🔮🤔🎲🎱 Software Estimation: Demystifying the Black Art](./books/software-estimation.md)  
   
   
-## [📺 Videos](./videos/index.md) (735)  
-- [🗳️🔓🤔 Is it easy to steal an election?](./videos/is-it-easy-to-steal-an-election.md)  
-- [🇺🇸🤯😵‍💫❓ How half the US lost part of their minds](./videos/how-half-the-us-lost-part-of-their-minds.md)  
-- [🤔🧐📚💯🏆 Critical Thinking Book Recommendations – My Top 5 Must Reads](./videos/critical-thinking-book-recommendations-my-top-5-must-reads.md)  
-- [🎯🪜🏗️✅ How to Build Systems to Actually Achieve Your Goals](./videos/how-to-build-systems-to-actually-achieve-your-goals.md)  
+## [📺 Videos](./videos/index.md) (736)  
+- [🐘🧠❓ Brooks and Capehart on Trump’s mental acuity and unpredictability](./videos/brooks-and-capehart-on-trumps-mental-acuity-and-unpredictability.md)  
+- [💡🧠🤖📝 Why you should take notes if you use AI](./videos/why-you-should-take-notes-if-you-use-ai.md)  
+- [✨⬆️🗣️👨‍💻 The third golden age of software engineering – thanks to AI, with Grady Booch](./videos/the-third-golden-age-of-software-engineering-thanks-to-ai-with-grady-booch.md)  
+- [🤯🗣️📱📈 “He behaved like a total maniac” Sam Harris on Elon & Big Tech’s turn towards Trump](./videos/he-behaved-like-a-total-maniac-sam-harris-on-elon-big-techs-turn-towards-trump.md)  
   
   
 ## [🌌 Topics](./topics/index.md) (91)  
+- [💻⚙️💡💾 Software Development and Coding](./topics/software-development-and-coding.md)  
 - [🏛️📊 Social Sciences](./topics/social-sciences.md)  
 - [🦬🪒 Yak Shaving](./topics/yak-shaving.md)  
 - [💻🌐<> Web Development](./topics/web-development.md)  
-- [🍎🥛🔬✨ Universal Nutrition System Design](./topics/universal-nutrition-system-design.md)  
   
   
 ## [📄  Articles](./articles/index.md) (84)  
@@ -85,10 +85,10 @@ updated: 2026-04-10T15:34:37-07:00
   
   
 ## [💾 Software](./software/index.md) (33)  
-- [🎨🧱 Graphiti](./software/graphiti.md)  
-- [📊🔍📈 Google Search Console](./software/google-search-console.md)  
-- [🕸️📊 Google Analytics](./software/google-analytics.md)  
-- [🤖💻🪄 GitHub Copilot for VS Code](./software/github-copilot-for-vs-code.md)  
+- [🚀📏 K6](./software/k6.md)  
+- [❓🧪✅🤔 Hypothesis](./software/hypothesis.md)  
+- [💻🧠📈 Haskell](./software/haskell.md)  
+- [⚙️🐜🔄 Haskell Ant Sim](./software/haskell-ant-sim.md)  
   
   
 ## [👥 People](./people/index.md) (18)  
@@ -99,10 +99,10 @@ updated: 2026-04-10T15:34:37-07:00
   
   
 ## [🛍️ Products](./products/index.md) (6)  
+- [🚰💧⚙️🔧 Delta Faucet RP4993 Seats and Springs](./products/delta-faucet-rp4993-seats-and-springs.md)  
 - [👶🌧️💨 Graco Baby Jogging Stroller Universal Rain Cover, Ventilated Weather Shield, Waterproof, Windproof, Versatile Size to Fit Most Jogging Strollers, Vinyl, Clear, Plastic](./products/graco-baby-jogging-stroller-universal-rain-cover-ventilated-weather-shield-waterproof-windproof-versatile-size-to-fit-most-jogging-strollers-vinyl-clear-plastic.md)  
 - [👶🏃🌆 Thule Urban Glide 3](./products/thule-urban-glide-3.md)  
 - [🔥💨🏕️ Coleman Triton 2-Burner Propane Stove, Portable Camping Cooktop with 2 Adjustable Burners & Wind Guards, 22,000 BTUs of Power for Camping, Tailgating, Grilling, BBQ, & More](./products/coleman-triton-2-burner-propane-stove-portable-camping-cooktop-with-2-adjustable-burners-wind-guards-22000-btus-of-power-for-camping-tailgating-grilling-bbq-more.md)  
-- [🤖🧹🧼🗺️ iRobot Roomba Plus 505 Combo Robot Vacuum & Mop with AutoWash Dock - Extending Spinning Mop Pads, Self-Empties, Pad Wash & Heated Drying, Self-cleaning, Recognizes & Avoids Obstacles, LiDAR Navigation](./products/irobot-roomba-plus-505-combo-robot-vacuum-mop-with-autowash-dock-extending-spinning-mop-pads-self-empties-pad-wash-heated-drying-self-cleaning-recognizes-avoids-obstacles-lidar-navigation.md)  
   
   
 ## [🎤 Presentations](./presentations/index.md) (2)  

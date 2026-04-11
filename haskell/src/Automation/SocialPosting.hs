@@ -1,10 +1,6 @@
 module Automation.SocialPosting
-  ( Platform (..)
-  , SocialPost (..)
-  , ContentNote (..)
-  , ContentToPost (..)
+  ( SocialPost (..)
   , PostedNote (..)
-  , FindContentConfig (..)
   , socialPostContent
   , socialPostPlatform
   , mkTweet
@@ -12,64 +8,23 @@ module Automation.SocialPosting
   , mkMastodonPost
   , mkSocialPost
   , autoPost
-  , discoverContentToPost
-  , bfsContentDiscovery
-  , readContentNote
-  , extractMarkdownLinks
-  , detectPostedPlatforms
-  , isPostableContent
-  , isUntitledReflection
-  , isIndexPath
-  , findMostRecentReflection
-  , isReflectionEligibleForPosting
-  , checkBfsEligibility
-  , parseWikiLinks
-  , normalizeFilePath
-  , updateFrontmatterTimestamp
-  , updatePathTimestamps
-  , reconstructPath
   , runPostingPipeline
-  , checkUrlPublished
-  , urlFromFilePath
-  , validateNoteUrl
-  , updateFrontmatterUrl
-  , isAwaitingImageBackfill
   ) where
 
 import Control.Concurrent.Async (mapConcurrently)
-import Control.Monad (when)
 import Control.Exception (SomeException, try)
 
 import Data.List.NonEmpty (NonEmpty ((:|)))
-import Data.Map.Strict (Map)
-import qualified Data.Map.Strict as Map
 import Data.Maybe (catMaybes, fromMaybe, mapMaybe)
-import Data.Set (Set)
 import qualified Data.Set as Set
 import Data.Text (Text)
 import qualified Data.Text as T
-import qualified Data.Text.IO as TIO
-import Data.Time
-  ( Day
-  , UTCTime (..)
-  , defaultTimeLocale
-  , formatTime
-  , getCurrentTime
-  , parseTimeM
-  , utctDayTime
-  )
-import Data.Time.LocalTime (TimeOfDay (..), timeToTimeOfDay)
-import qualified Network.HTTP.Client as HTTP
+import Data.Time (getCurrentTime, utctDayTime)
+import Data.Time.LocalTime (timeToTimeOfDay)
+import qualified Data.Map.Strict as Map
 import Network.HTTP.Client (Manager)
 import qualified Network.HTTP.Client.TLS as TLS
-import Network.HTTP.Types.Status (statusIsSuccessful)
-import System.Directory (doesFileExist)
 
-import System.FilePath (takeBaseName, takeDirectory, takeFileName, (</>))
-import Text.Regex.TDFA ((=~))
-
-import Automation.BlogImage (hasEmbeddedImage, shouldHaveImage)
-import Automation.BlogSeriesConfig (imageBackfillContentIds)
 import Automation.DailyUpdates (UpdateLink (..), addUpdateLinksToReflection)
 import Automation.EmbedSection
   ( buildBlueskySection
@@ -77,25 +32,32 @@ import Automation.EmbedSection
   , buildTweetSection
   )
 import Automation.Env (validateEnvironment)
-import Automation.Frontmatter (parseFrontmatter, quoteYamlValue)
 import Automation.BlogPrompt (formatDay, todayPacificDay)
 import qualified Automation.Gemini as Gemini
 import qualified Automation.ObsidianSync as Sync
+import Automation.Platform (Platform (..), PlatformLimits (..))
 import qualified Automation.Platforms.Bluesky as Bluesky
 import qualified Automation.Platforms.Mastodon as Mastodon
 import Automation.Platforms.OgMetadata (fetchOgMetadata)
 import qualified Automation.Platforms.Twitter as Twitter
 import Automation.Prompts (PromptPair (..), assemblePost, buildQuestionPrompt, buildShortenQuestionPrompt, buildTagsPrompt)
-import Automation.Reflection (findMostRecentReflection)
+import Automation.Reflection (ReflectionData (..))
+import Automation.Secret (Secret, unSecret)
+import Automation.SocialPosting.ContentDiscovery
+  ( ContentNote (..)
+  , ContentToPost (..)
+  , FindContentConfig (..)
+  , checkUrlPublished
+  , defaultPostingCutoff
+  , discoverContentToPost
+  )
+import Automation.SocialPosting.FrontmatterUpdate (updatePathTimestamps)
 import Automation.Text (calculatePostLength, fitPostToLimit)
-import Automation.Types
-
---------------------------------------------------------------------------------
--- Types
---------------------------------------------------------------------------------
-
-data Platform = Twitter | Bluesky | Mastodon
-  deriving (Show, Eq, Ord)
+import Automation.Title (unTitle)
+import Automation.Types (EnvironmentConfig (..), OgMetadata (..))
+import Automation.Url (unUrl)
+import Automation.RelativePath (RelativePath, unRelativePath)
+import System.FilePath (takeBaseName, (</>))
 
 data SocialPost
   = Tweet Text
@@ -144,56 +106,6 @@ platformDetail Twitter  = "🐦 posted to Twitter"
 platformDetail Bluesky  = "🦋 posted to BlueSky"
 platformDetail Mastodon = "🐘 posted to Mastodon"
 
-data ContentNote = ContentNote
-  { cnFilePath       :: FilePath
-  , cnRelativePath   :: RelativePath
-  , cnTitle          :: Title
-  , cnUrl            :: Url
-  , cnBody           :: Text
-  , cnPostedPlatforms :: Set Platform
-  , cnLinkedNotePaths :: [RelativePath]
-  , cnNoSocial       :: Bool
-  } deriving (Show, Eq)
-
-data ContentToPost = ContentToPost
-  { ctpPlatform     :: Platform
-  , ctpNote         :: ContentNote
-  , ctpPathFromRoot :: [Text]
-  } deriving (Show, Eq)
-
-data FindContentConfig = FindContentConfig
-  { fccContentDir           :: FilePath
-  , fccPlatforms            :: [Platform]
-  , fccPostingCutoff        :: TimeOfDay
-  , fccPublicationChecker   :: Maybe (Text -> IO Bool)
-  }
-
---------------------------------------------------------------------------------
--- Constants
---------------------------------------------------------------------------------
-
-defaultPostingCutoff :: TimeOfDay
-defaultPostingCutoff = TimeOfDay 17 0 0
-
-minPostableBodyLength :: Int
-minPostableBodyLength = 50
-
---------------------------------------------------------------------------------
--- Platform detection
---------------------------------------------------------------------------------
-
-detectPostedPlatforms :: Text -> Set Platform
-detectPostedPlatforms content =
-  Set.fromList $ mapMaybe checkHeader
-    [ (Twitter.sectionHeader, Twitter)
-    , (Bluesky.sectionHeader, Bluesky)
-    , (Mastodon.sectionHeader, Mastodon)
-    ]
-  where
-    checkHeader (header, platform)
-      | T.isInfixOf header content = Just platform
-      | otherwise = Nothing
-
 platformSectionHeader :: Platform -> Text
 platformSectionHeader Twitter  = Twitter.sectionHeader
 platformSectionHeader Bluesky  = Bluesky.sectionHeader
@@ -204,452 +116,6 @@ platformLimits Twitter  = Twitter.limits
 platformLimits Bluesky  = Bluesky.limits
 platformLimits Mastodon = Mastodon.limits
 
---------------------------------------------------------------------------------
--- Link extraction
---------------------------------------------------------------------------------
-
-extractMarkdownLinks :: Text -> Text -> FilePath -> [Text]
-extractMarkdownLinks body noteRelativePath contentDir =
-  let noteDir = takeDirectory (contentDir </> T.unpack noteRelativePath)
-      seen    = Set.empty :: Set Text
-  in snd $ foldl collectLink (seen, [])
-       (mdLinks body noteDir contentDir <> wikiLinksFromBody body noteDir contentDir)
-
-collectLink :: (Set Text, [Text]) -> Text -> (Set Text, [Text])
-collectLink (seen, acc) rel
-  | T.isPrefixOf ".." rel = (seen, acc)
-  | Set.member rel seen   = (seen, acc)
-  | otherwise             = (Set.insert rel seen, acc <> [rel])
-
-mdLinks :: Text -> FilePath -> FilePath -> [Text]
-mdLinks body noteDir contentDir = go (T.unpack body)
-  where
-    go :: String -> [Text]
-    go s = case (s =~ ("\\]\\(([^)]+\\.md)\\)" :: String) :: (String, String, String, [String])) of
-      (_, _, after, [target])
-        | not (isPrefixOfS "http://" target) && not (isPrefixOfS "https://" target) ->
-            let absTarget  = normalizeFilePath (noteDir </> target)
-                relPath    = makeRelativeTo contentDir absTarget
-            in T.pack relPath : go after
-        | otherwise -> go after
-      _ -> []
-
-wikiLinksFromBody :: Text -> FilePath -> FilePath -> [Text]
-wikiLinksFromBody body noteDir contentDir =
-  let targets = parseWikiLinks (T.unpack body)
-  in fmap (resolveWikiLinkTarget noteDir contentDir) targets
-
-resolveWikiLinkTarget :: FilePath -> FilePath -> String -> Text
-resolveWikiLinkTarget noteDir contentDir target =
-  let trimmed = stripS target
-      withMd  = if hasSuffix ".md" trimmed then trimmed else trimmed <> ".md"
-  in if '/' `elem` withMd
-    then T.pack withMd
-    else
-      let absTarget = normalizeFilePath (noteDir </> withMd)
-      in T.pack (makeRelativeTo contentDir absTarget)
-
-parseWikiLinks :: String -> [String]
-parseWikiLinks [] = []
-parseWikiLinks ('[':'[':rest) =
-  case extractWikiLinkTarget rest of
-    Just (target, remaining) -> target : parseWikiLinks remaining
-    Nothing -> parseWikiLinks rest
-parseWikiLinks (_:rest) = parseWikiLinks rest
-
-extractWikiLinkTarget :: String -> Maybe (String, String)
-extractWikiLinkTarget input =
-  let (target, after) = span (\c -> c /= ']' && c /= '#' && c /= '|') input
-  in case after of
-    (']':']':rest) | not (null target) -> Just (target, rest)
-    ('#':rest) -> skipToClose target rest
-    ('|':rest) -> skipToClose target rest
-    _ -> Nothing
-  where
-    skipToClose _ [] = Nothing
-    skipToClose t (']':']':rest) | not (null t) = Just (t, rest)
-    skipToClose t (_:rest) = skipToClose t rest
-
-isPrefixOfS :: String -> String -> Bool
-isPrefixOfS [] _          = True
-isPrefixOfS _ []          = False
-isPrefixOfS (x:xs) (y:ys) = x == y && isPrefixOfS xs ys
-
-hasSuffix :: String -> String -> Bool
-hasSuffix sfx s = reverse sfx `isPrefixOfS` reverse s
-
-stripS :: String -> String
-stripS = reverse . dropWhile (== ' ') . reverse . dropWhile (== ' ')
-
-normalizeFilePath :: FilePath -> FilePath
-normalizeFilePath = joinSlash . reverse . resolve . splitSlash
-  where
-    resolve :: [String] -> [String]
-    resolve = foldl step []
-
-    step :: [String] -> String -> [String]
-    step acc "."      = acc
-    step (_:rest) ".." = rest
-    step acc seg       = seg : acc
-
-makeRelativeTo :: FilePath -> FilePath -> FilePath
-makeRelativeTo base target =
-  let baseParts   = splitSlash base
-      targetParts = splitSlash target
-      common      = length $ takeWhile id $ zipWith (==) baseParts targetParts
-      remaining   = drop common targetParts
-  in joinSlash remaining
-
-splitSlash :: FilePath -> [String]
-splitSlash = fmap T.unpack . filter (not . T.null) . T.splitOn "/" . T.pack
-
-joinSlash :: [String] -> FilePath
-joinSlash []     = ""
-joinSlash [x]    = x
-joinSlash (x:xs) = x </> joinSlash xs
-
---------------------------------------------------------------------------------
--- Reading content notes
---------------------------------------------------------------------------------
-
-readContentNote :: Text -> FilePath -> IO (Maybe ContentNote)
-readContentNote relativePath contentDir = do
-  let filePath = contentDir </> T.unpack relativePath
-  exists <- doesFileExist filePath
-  if exists
-    then do
-      content <- TIO.readFile filePath
-      let (fm, body) = parseFrontmatter content
-          postedPlatforms = detectPostedPlatforms content
-          linkedPaths = extractMarkdownLinks body relativePath contentDir
-          noSocial = Map.lookup "no_social" fm == Just "true"
-          titleText = fromMaybe (T.pack $ takeBaseName $ T.unpack relativePath) (Map.lookup "title" fm)
-          slug = fromMaybe relativePath (T.stripSuffix ".md" relativePath)
-          urlText = fromMaybe ("https://bagrounds.org/" <> slug) (Map.lookup "URL" fm)
-          validated = do
-            title <- mkTitle titleText
-            url <- mkUrl urlText
-            path <- mkRelativePath relativePath
-            paths <- traverse mkRelativePath linkedPaths
-            pure ContentNote
-              { cnFilePath = filePath
-              , cnRelativePath = path
-              , cnTitle = title
-              , cnUrl = url
-              , cnBody = body
-              , cnPostedPlatforms = postedPlatforms
-              , cnLinkedNotePaths = paths
-              , cnNoSocial = noSocial
-              }
-      case validated of
-        Right note -> pure (Just note)
-        Left reason -> do
-          putStrLn $ "  ⚠️  Skipping " <> filePath <> ": " <> T.unpack reason
-          pure Nothing
-    else pure Nothing
-
---------------------------------------------------------------------------------
--- URL validation and auto-fix
---------------------------------------------------------------------------------
-
-checkUrlPublished :: Manager -> Text -> IO Bool
-checkUrlPublished manager url = do
-  result <- try (do
-    req <- HTTP.parseRequest (T.unpack url)
-    let headReq = req { HTTP.method = "HEAD", HTTP.redirectCount = 10 }
-    resp <- HTTP.httpLbs headReq manager
-    pure (statusIsSuccessful (HTTP.responseStatus resp))
-    ) :: IO (Either SomeException Bool)
-  case result of
-    Left _  -> pure False
-    Right b -> b `seq` pure b
-
-urlFromFilePath :: Text -> Text
-urlFromFilePath relativePath =
-  let slug = fromMaybe relativePath (T.stripSuffix ".md" relativePath)
-  in "https://bagrounds.org/" <> slug
-
-validateNoteUrl :: (Text -> IO Bool) -> ContentNote -> IO (Maybe ContentNote)
-validateNoteUrl checker note = do
-  isLive <- checker (unUrl (cnUrl note))
-  if isLive
-    then pure (Just note)
-    else do
-      let pathUrl = urlFromFilePath (unRelativePath (cnRelativePath note))
-      if pathUrl == unUrl (cnUrl note)
-        then do
-          putStrLn $ "  🚫 URL not published (404): "
-            <> T.unpack (unTitle (cnTitle note)) <> " (" <> T.unpack (unUrl (cnUrl note)) <> ")"
-          pure Nothing
-        else do
-          putStrLn $ "  🔧 Frontmatter URL 404'd (" <> T.unpack (unUrl (cnUrl note))
-            <> "), trying file-path URL: " <> T.unpack pathUrl
-          isPathLive <- checker pathUrl
-          if isPathLive
-            then case mkUrl pathUrl of
-              Right newUrl -> do
-                putStrLn "  ✅ File-path URL is live, updating frontmatter"
-                updateFrontmatterUrl (cnFilePath note) pathUrl
-                pure (Just note { cnUrl = newUrl })
-              Left reason -> do
-                putStrLn $ "  ⚠️  Invalid path URL: " <> T.unpack reason
-                pure Nothing
-            else do
-              putStrLn $ "  🚫 Both URLs not published: "
-                <> T.unpack (unUrl (cnUrl note)) <> " and " <> T.unpack pathUrl
-              pure Nothing
-
-updateFrontmatterUrl :: FilePath -> Text -> IO ()
-updateFrontmatterUrl filePath newUrl = do
-  exists <- doesFileExist filePath
-  when exists $ do
-    content <- TIO.readFile filePath
-    let ls = T.splitOn "\n" content
-    case ls of
-      (first : rest)
-        | T.strip first == "---" ->
-            case break (\l -> T.strip l == "---") rest of
-              (_, []) -> pure ()
-              (fmLines, closingDash : bodyLines) ->
-                let updatedFm = upsertFmField fmLines "URL" (quoteYamlValue newUrl)
-                in TIO.writeFile filePath
-                     (T.intercalate "\n" (first : updatedFm <> [closingDash] <> bodyLines))
-      _ -> pure ()
-
---------------------------------------------------------------------------------
--- Content filtering
---------------------------------------------------------------------------------
-
-isPostableContent :: ContentNote -> Bool
-isPostableContent note =
-  not (isIndexPage note)
-    && not (isUntitledReflection note)
-    && not (cnNoSocial note)
-    && T.length (T.strip (cnBody note)) >= minPostableBodyLength
-
-isIndexPage :: ContentNote -> Bool
-isIndexPage = isIndexPath . unRelativePath . cnRelativePath
-
-isIndexPath :: Text -> Bool
-isIndexPath p = takeBaseName (T.unpack p) == "index"
-
-isUntitledReflection :: ContentNote -> Bool
-isUntitledReflection note =
-  isReflectionPath (unRelativePath (cnRelativePath note)) && looksLikeDateTitle (unTitle (cnTitle note))
-
-isReflectionPath :: Text -> Bool
-isReflectionPath = T.isPrefixOf "reflections/"
-
-looksLikeDateTitle :: Text -> Bool
-looksLikeDateTitle title =
-  let t = T.strip title
-  in (t :: Text) =~ ("^[0-9]{4}-[0-9]{2}-[0-9]{2}$" :: String)
-
-isAwaitingImageBackfill :: Text -> Text -> Bool
-isAwaitingImageBackfill relativePath body =
-  let directoryName = T.pack (takeFileName (takeDirectory (T.unpack relativePath)))
-      filename = T.pack (takeFileName (T.unpack relativePath))
-  in elem directoryName imageBackfillContentIds
-       && shouldHaveImage filename
-       && not (hasEmbeddedImage body)
-
---------------------------------------------------------------------------------
--- Reflection eligibility
---------------------------------------------------------------------------------
-
--- | Pure eligibility check: given the current time, determine whether
--- a reflection with the given date is eligible for social posting.
--- A reflection is eligible when it is from yesterday (and the posting
--- cutoff has passed) or from any day before yesterday.
-isReflectionEligibleForPosting :: UTCTime -> TimeOfDay -> Day -> Bool
-isReflectionEligibleForPosting now postingCutoff reflectionDate =
-  let today = utctDay now
-      yesterday = pred today
-      currentTime = timeToTimeOfDay (utctDayTime now)
-  in (reflectionDate == yesterday && currentTime >= postingCutoff)
-       || reflectionDate < yesterday
-
---------------------------------------------------------------------------------
--- BFS content discovery
---------------------------------------------------------------------------------
-
-data BfsState = BfsState
-  { bsVisited   :: Set Text
-  , bsQueue     :: [(Text, [Text])]
-  , bsResults   :: [ContentToPost]
-  , bsFilled    :: Set Platform
-  , bsParentMap :: Map Text Text
-  }
-
-bfsContentDiscovery :: FindContentConfig -> IO [ContentToPost]
-bfsContentDiscovery config = do
-  mStart <- findMostRecentReflection (fccContentDir config)
-  case mStart of
-    Nothing -> do
-      putStrLn "  📭 No reflections found"
-      pure []
-    Just startPath -> do
-      let initialState = BfsState
-            { bsVisited   = Set.singleton startPath
-            , bsQueue     = [(startPath, [startPath])]
-            , bsResults   = []
-            , bsFilled    = Set.empty
-            , bsParentMap = Map.empty
-            }
-      bfsLoop config initialState
-
-bfsLoop :: FindContentConfig -> BfsState -> IO [ContentToPost]
-bfsLoop config state =
-  case bsQueue state of
-    [] -> pure (bsResults state)
-    _ | Set.fromList (fccPlatforms config) == bsFilled state ->
-        pure (bsResults state)
-    ((currentPath, pathFromRoot) : rest) -> do
-      let state' = state { bsQueue = rest }
-      mNote <- readContentNote currentPath (fccContentDir config)
-      case mNote of
-        Nothing -> bfsLoop config state'
-        Just note -> do
-          eligible <- checkBfsEligibility (unRelativePath (cnRelativePath note)) (fccPostingCutoff config)
-          let awaitingImage = isAwaitingImageBackfill
-                (unRelativePath (cnRelativePath note)) (cnBody note)
-          mValidated <- case (isPostableContent note && eligible && not awaitingImage, fccPublicationChecker config) of
-            (True, Just checker) -> validateNoteUrl checker note
-            (True, Nothing)      -> pure (Just note)
-            (False, _)           -> pure Nothing
-          let neededPlatforms = filter
-                (\p -> not (Set.member p (bsFilled state'))
-                       && not (Set.member p (cnPostedPlatforms note)))
-                (fccPlatforms config)
-              newResults = case mValidated of
-                Just vNote -> fmap (\p -> ContentToPost p vNote pathFromRoot) neededPlatforms
-                Nothing    -> []
-              newFilled = Set.union (bsFilled state') $
-                Set.fromList (fmap ctpPlatform newResults)
-              neighbors = filter (\l -> not (Set.member l (bsVisited state')))
-                            (fmap unRelativePath (cnLinkedNotePaths note))
-              newVisited = foldl (flip Set.insert) (bsVisited state') neighbors
-              newQueue = rest <> fmap (\n -> (n, pathFromRoot <> [n])) neighbors
-              state'' = state'
-                { bsVisited = newVisited
-                , bsQueue   = newQueue
-                , bsResults = bsResults state' <> newResults
-                , bsFilled  = newFilled
-                }
-          bfsLoop config state''
-
--- | Check if a note is eligible for BFS posting.
--- Non-reflections are always eligible. Reflections have timing constraints.
-checkBfsEligibility :: Text -> TimeOfDay -> IO Bool
-checkBfsEligibility relativePath postingCutoff
-  | isIndexPath relativePath = pure False
-  | isReflectionPath relativePath =
-      case parseDateFromPath relativePath of
-        Nothing -> pure False
-        Just reflectionDate -> do
-          now <- getCurrentTime
-          pure $ isReflectionEligibleForPosting now postingCutoff reflectionDate
-  | otherwise = pure True
-
---------------------------------------------------------------------------------
--- Discover content to post (main entry point for discovery)
---------------------------------------------------------------------------------
-
-discoverContentToPost :: FindContentConfig -> Bool -> IO [ContentToPost]
-discoverContentToPost config isPastPostingHour = do
-  if isPastPostingHour
-    then do
-      mRefl <- findMostRecentReflection (fccContentDir config)
-      case mRefl of
-        Nothing -> bfsContentDiscovery config
-        Just reflPath -> do
-          now <- getCurrentTime
-          let eligible = case parseDateFromPath reflPath of
-                Nothing -> False
-                Just reflectionDate -> isReflectionEligibleForPosting
-                  now (fccPostingCutoff config) reflectionDate
-          if eligible
-            then do
-              mNote <- readContentNote reflPath (fccContentDir config)
-              case mNote of
-                Just note | isPostableContent note
-                          , not (isAwaitingImageBackfill (unRelativePath (cnRelativePath note)) (cnBody note)) -> do
-                  mValidated <- case fccPublicationChecker config of
-                    Just checker -> validateNoteUrl checker note
-                    Nothing      -> pure (Just note)
-                  case mValidated of
-                    Nothing -> do
-                      putStrLn "  🚫 Prior day's reflection not yet published"
-                      bfsContentDiscovery config
-                    Just vNote -> do
-                      let neededPlatforms = filter
-                            (\p -> not (Set.member p (cnPostedPlatforms vNote)))
-                            (fccPlatforms config)
-                      case neededPlatforms of
-                        [] -> bfsContentDiscovery config
-                        _  -> pure $ fmap (\p -> ContentToPost p vNote [reflPath]) neededPlatforms
-                _ -> bfsContentDiscovery config
-            else bfsContentDiscovery config
-    else bfsContentDiscovery config
-
-extractDateFromPath :: Text -> Text
-extractDateFromPath path =
-  let base = T.pack $ takeBaseName $ T.unpack path
-  in base
-
-parseDateFromPath :: Text -> Maybe Day
-parseDateFromPath path =
-  let base = takeBaseName (T.unpack path)
-  in parseTimeM True defaultTimeLocale "%Y-%m-%d" base
-
---------------------------------------------------------------------------------
--- Path reconstruction and timestamp updates
---------------------------------------------------------------------------------
-
-reconstructPath :: Map Text Text -> Text -> Text -> [Text]
-reconstructPath parentMap start target = reverse $ go target
-  where
-    go current
-      | current == start = [current]
-      | otherwise = case Map.lookup current parentMap of
-          Just parent -> current : go parent
-          Nothing     -> [current]
-
-updateFrontmatterTimestamp :: FilePath -> IO ()
-updateFrontmatterTimestamp filePath = do
-  exists <- doesFileExist filePath
-  when exists $ do
-    content <- TIO.readFile filePath
-    now <- getCurrentTime
-    let timestamp = T.pack $ formatTime defaultTimeLocale "%Y-%m-%dT%H:%M:%S" now
-        ls = T.splitOn "\n" content
-    case ls of
-      (first : rest)
-        | T.strip first == "---" ->
-            case break (\l -> T.strip l == "---") rest of
-              (_, []) -> pure ()
-              (fmLines, closingDash : bodyLines) ->
-                let updatedFm = upsertFmField fmLines "updated" (quoteYamlValue timestamp)
-                in TIO.writeFile filePath
-                     (T.intercalate "\n" (first : updatedFm <> [closingDash] <> bodyLines))
-      _ -> pure ()
-
-upsertFmField :: [Text] -> Text -> Text -> [Text]
-upsertFmField ls key renderedVal =
-  let newLine = key <> ": " <> renderedVal
-      pat = key <> ":"
-      has = any (T.isPrefixOf pat . T.stripStart) ls
-      replaced = fmap (\l -> if T.isPrefixOf pat (T.stripStart l) then newLine else l) ls
-  in if has then replaced else ls <> [newLine]
-
-updatePathTimestamps :: FilePath -> [Text] -> IO ()
-updatePathTimestamps contentDir =
-  mapM_ (\p -> updateFrontmatterTimestamp (contentDir </> T.unpack p))
-
---------------------------------------------------------------------------------
--- Configured platforms from environment
---------------------------------------------------------------------------------
-
 getConfiguredPlatforms :: EnvironmentConfig -> [Platform]
 getConfiguredPlatforms ec = catMaybes
   [ case ecTwitter ec of { Just _ -> Just Twitter; Nothing -> Nothing }
@@ -657,14 +123,10 @@ getConfiguredPlatforms ec = catMaybes
   , case ecMastodon ec of { Just _ -> Just Mastodon; Nothing -> Nothing }
   ]
 
---------------------------------------------------------------------------------
--- Social post generation via Gemini
---------------------------------------------------------------------------------
-
 generateSocialPostText :: Manager -> Secret -> ContentNote -> Platform -> IO (Either Text Text)
 generateSocialPostText manager apiKey note platform = do
   let rd = ReflectionData
-        { rdDate = extractDateFromPath (unRelativePath (cnRelativePath note))
+        { rdDate = extractDateFromPath (cnRelativePath note)
         , rdTitle = cnTitle note
         , rdUrl = cnUrl note
         , rdBody = cnBody note
@@ -708,9 +170,10 @@ generateSocialPostText manager apiKey note platform = do
         else pure rawPost
       pure (Right (fitPostToLimit finalPost maxLen))
 
---------------------------------------------------------------------------------
--- Platform posting tasks
---------------------------------------------------------------------------------
+-- | Extract a date string from a relative path (the filename without extension)
+extractDateFromPath :: RelativePath -> Text
+extractDateFromPath path =
+  T.pack $ takeBaseName $ T.unpack $ unRelativePath path
 
 data PostResult = PostResult
   { prPlatform :: Platform
@@ -798,10 +261,6 @@ postToMastodonPlatform manager env _note postText =
                 , prSectionBuilder = buildMastodonSection
                 }
             _ -> pure $ Left "Could not extract Mastodon post details from URL"
-
---------------------------------------------------------------------------------
--- Posting pipeline
---------------------------------------------------------------------------------
 
 data PostedNote = PostedNote
   { pnNote      :: ContentNote
@@ -898,10 +357,6 @@ postForPlatform manager env apiKey note platform = do
 eitherToMaybe :: Either a b -> Maybe b
 eitherToMaybe (Right b) = Just b
 eitherToMaybe (Left _)  = Nothing
-
---------------------------------------------------------------------------------
--- Main orchestrator
---------------------------------------------------------------------------------
 
 autoPost :: Manager -> FilePath -> IO ()
 autoPost manager vaultDir = do

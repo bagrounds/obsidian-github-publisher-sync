@@ -16,8 +16,41 @@ import Test.Tasty.QuickCheck (testProperty)
 import qualified Test.Tasty.QuickCheck as QC
 import qualified Data.Text.IO as TIO
 
-import Automation.SocialPosting
+import Automation.Platform (Platform (..))
 import Automation.Reflection (selectMostRecentReflection)
+import Automation.SocialPosting
+  ( SocialPost (..)
+  , mkBlueskyPost
+  , mkMastodonPost
+  , mkSocialPost
+  , mkTweet
+  , socialPostContent
+  , socialPostPlatform
+  )
+import Automation.SocialPosting.ContentDiscovery
+  ( ContentNote (..)
+  , ContentToPost (..)
+  , FindContentConfig (..)
+  , bfsContentDiscovery
+  , checkBfsEligibility
+  , detectPostedPlatforms
+  , findMostRecentReflection
+  , isAwaitingImageBackfill
+  , isIndexPath
+  , isPostableContent
+  , isReflectionEligibleForPosting
+  , isUntitledReflection
+  , readContentNote
+  , urlFromFilePath
+  , validateNoteUrl
+  )
+import Automation.SocialPosting.FrontmatterUpdate (updateFrontmatterUrl)
+import Automation.SocialPosting.LinkExtraction
+  ( extractMarkdownLinks
+  , normalizeFilePath
+  , parseWikiLinks
+  , reconstructPath
+  )
 import Automation.TestGenerators (testUrl, testTitle, testRelativePath)
 
 
@@ -43,9 +76,6 @@ tests = testGroup "SocialPosting"
   , readContentNoteTests
   ]
 
---------------------------------------------------------------------------------
--- Platform detection
---------------------------------------------------------------------------------
 
 detectPlatformTests :: TestTree
 detectPlatformTests = testGroup "detectPostedPlatforms"
@@ -73,9 +103,6 @@ detectPlatformTests = testGroup "detectPostedPlatforms"
       \() -> Set.null (detectPostedPlatforms "")
   ]
 
---------------------------------------------------------------------------------
--- Extended platform detection
---------------------------------------------------------------------------------
 
 detectPlatformExtendedTests :: TestTree
 detectPlatformExtendedTests = testGroup "detectPostedPlatforms (extended)"
@@ -92,9 +119,6 @@ detectPlatformExtendedTests = testGroup "detectPostedPlatforms (extended)"
         (detectPostedPlatforms "just some text about birds and butterflies")
   ]
 
---------------------------------------------------------------------------------
--- Link extraction
---------------------------------------------------------------------------------
 
 linkExtractionTests :: TestTree
 linkExtractionTests = testGroup "extractMarkdownLinks"
@@ -123,9 +147,6 @@ linkExtractionTests = testGroup "extractMarkdownLinks"
         assertEqual "one unique link" 1 (length links)
   ]
 
---------------------------------------------------------------------------------
--- Wiki link parser (replacing regex with recursive descent)
---------------------------------------------------------------------------------
 
 wikiLinkParserTests :: TestTree
 wikiLinkParserTests = testGroup "parseWikiLinks"
@@ -168,9 +189,6 @@ wikiLinkParserTests = testGroup "parseWikiLinks"
       \(QC.ASCIIString s) -> seq (parseWikiLinks s) True
   ]
 
---------------------------------------------------------------------------------
--- Path normalization
---------------------------------------------------------------------------------
 
 normalizeFilePathTests :: TestTree
 normalizeFilePathTests = testGroup "normalizeFilePath"
@@ -195,9 +213,6 @@ normalizeFilePathTests = testGroup "normalizeFilePath"
         (normalizeFilePath "reflections/2025/../topics/./bar.md")
   ]
 
---------------------------------------------------------------------------------
--- Content filtering
---------------------------------------------------------------------------------
 
 contentFilterTests :: TestTree
 contentFilterTests = testGroup "content filtering"
@@ -231,9 +246,6 @@ contentFilterTests = testGroup "content filtering"
         not (isUntitledReflection (mkNote "books/2025-01-15.md" "2025-01-15" "body"))
   ]
 
---------------------------------------------------------------------------------
--- Extended content filtering
---------------------------------------------------------------------------------
 
 contentFilterExtendedTests :: TestTree
 contentFilterExtendedTests = testGroup "content filtering (extended)"
@@ -254,9 +266,6 @@ contentFilterExtendedTests = testGroup "content filtering (extended)"
         not (isPostableContent (mkNote "books/foo.md" "Foo" "   \n  \n  "))
   ]
 
---------------------------------------------------------------------------------
--- Image backfill filter
---------------------------------------------------------------------------------
 
 imageBackfillFilterTests :: TestTree
 imageBackfillFilterTests = testGroup "isAwaitingImageBackfill"
@@ -335,9 +344,6 @@ imageBackfillFilterTests = testGroup "isAwaitingImageBackfill"
           (any (\p -> p == testRelativePath "books/has-image-book.md") resultPaths)
   ]
 
---------------------------------------------------------------------------------
--- Index page eligibility
---------------------------------------------------------------------------------
 
 indexPathTests :: TestTree
 indexPathTests = testGroup "isIndexPath and index eligibility"
@@ -362,9 +368,6 @@ indexPathTests = testGroup "isIndexPath and index eligibility"
       assertBool "root index should not be eligible" (not result)
   ]
 
---------------------------------------------------------------------------------
--- Path reconstruction
---------------------------------------------------------------------------------
 
 pathReconstructionTests :: TestTree
 pathReconstructionTests = testGroup "reconstructPath"
@@ -380,9 +383,6 @@ pathReconstructionTests = testGroup "reconstructPath"
         (reconstructPath (Map.fromList [("b", "a"), ("c", "b")]) "a" "c")
   ]
 
---------------------------------------------------------------------------------
--- Reflection eligibility
---------------------------------------------------------------------------------
 
 reflectionEligibilityTests :: TestTree
 reflectionEligibilityTests = testGroup "isReflectionEligibleForPosting"
@@ -423,9 +423,6 @@ mkUTC year month day hour =
   UTCTime (fromGregorian year month day)
           (secondsToDiffTime (fromIntegral hour * 3600))
 
---------------------------------------------------------------------------------
--- BFS eligibility (reflection timing in BFS traversal)
---------------------------------------------------------------------------------
 
 bfsEligibilityTests :: TestTree
 bfsEligibilityTests = testGroup "checkBfsEligibility"
@@ -463,9 +460,6 @@ bfsEligibilityTests = testGroup "checkBfsEligibility"
         assertBool "should find the linked book" (not (null result))
   ]
 
---------------------------------------------------------------------------------
--- BFS traversal through non-postable content
---------------------------------------------------------------------------------
 
 bfsTraversalTests :: TestTree
 bfsTraversalTests = testGroup "BFS traversal"
@@ -552,9 +546,6 @@ bfsTraversalTests = testGroup "BFS traversal"
           (any (\p -> p == testRelativePath "books/real-book.md") resultPaths)
   ]
 
---------------------------------------------------------------------------------
--- BFS discovery
---------------------------------------------------------------------------------
 
 bfsTests :: TestTree
 bfsTests = testGroup "BFS discovery"
@@ -611,9 +602,6 @@ bfsTests = testGroup "BFS discovery"
         assertBool "should find content to post" (not (null result))
   ]
 
---------------------------------------------------------------------------------
--- URL validation
---------------------------------------------------------------------------------
 
 urlValidationTests :: TestTree
 urlValidationTests = testGroup "URL validation"
@@ -731,9 +719,6 @@ urlValidationTests = testGroup "URL validation"
           (T.isInfixOf "https://bagrounds.org/new-url" content)
   ]
 
---------------------------------------------------------------------------------
--- Helpers
---------------------------------------------------------------------------------
 
 mkNote :: Text -> Text -> Text -> ContentNote
 mkNote relPath title body = ContentNote
@@ -746,10 +731,6 @@ mkNote relPath title body = ContentNote
   , cnLinkedNotePaths = []
   , cnNoSocial = False
   }
-
---------------------------------------------------------------------------------
--- selectMostRecentReflection
---------------------------------------------------------------------------------
 
 selectMostRecentReflectionTests :: TestTree
 selectMostRecentReflectionTests = testGroup "selectMostRecentReflection"
@@ -777,9 +758,6 @@ selectMostRecentReflectionTests = testGroup "selectMostRecentReflection"
         (selectMostRecentReflection ["2025-01-01.txt", "2025-06-15.md"])
   ]
 
---------------------------------------------------------------------------------
--- SocialPost smart constructor tests
---------------------------------------------------------------------------------
 
 socialPostTests :: TestTree
 socialPostTests = testGroup "SocialPost"
@@ -854,10 +832,6 @@ socialPostTests = testGroup "SocialPost"
             Right post -> socialPostContent post == text
             Left _ -> False
   ]
-
--- --------------------------------------------------------------------------
--- readContentNote
--- --------------------------------------------------------------------------
 
 readContentNoteTests :: TestTree
 readContentNoteTests = testGroup "readContentNote"

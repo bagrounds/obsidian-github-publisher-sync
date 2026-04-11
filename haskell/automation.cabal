@@ -62,6 +62,9 @@ library
     Automation.Platforms.Mastodon
     Automation.RelativePath
     Automation.SocialPosting
+    Automation.SocialPosting.ContentDiscovery
+    Automation.SocialPosting.FrontmatterUpdate
+    Automation.SocialPosting.LinkExtraction
     Automation.Context
     Automation.Title
     Automation.Url
@@ -143,6 +146,9 @@ test-suite automation-tests
     Automation.MastodonTest
     Automation.TwitterTest
     Automation.SocialPostingTest
+    Automation.SocialPosting.LinkExtractionTest
+    Automation.SocialPosting.ContentDiscoveryTest
+    Automation.SocialPosting.FrontmatterUpdateTest
     Automation.DailyUpdatesTest
     Automation.StaticGiscusTest
     Automation.AiBlogLinksTest

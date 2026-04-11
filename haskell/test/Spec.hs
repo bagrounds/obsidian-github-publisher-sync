@@ -18,6 +18,9 @@ import qualified Automation.BlueskyTest
 import qualified Automation.MastodonTest
 import qualified Automation.TwitterTest
 import qualified Automation.SocialPostingTest
+import qualified Automation.SocialPosting.LinkExtractionTest
+import qualified Automation.SocialPosting.ContentDiscoveryTest
+import qualified Automation.SocialPosting.FrontmatterUpdateTest
 import qualified Automation.DailyUpdatesTest
 import qualified Automation.StaticGiscusTest
 import qualified Automation.AiBlogLinksTest
@@ -56,6 +59,9 @@ main = defaultMain $ testGroup "Automation"
   , Automation.MastodonTest.tests
   , Automation.TwitterTest.tests
   , Automation.SocialPostingTest.tests
+  , Automation.SocialPosting.LinkExtractionTest.tests
+  , Automation.SocialPosting.ContentDiscoveryTest.tests
+  , Automation.SocialPosting.FrontmatterUpdateTest.tests
   , Automation.DailyUpdatesTest.tests
   , Automation.StaticGiscusTest.tests
   , Automation.AiBlogLinksTest.tests

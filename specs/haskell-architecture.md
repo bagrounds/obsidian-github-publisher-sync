@@ -186,14 +186,29 @@ Each error migration delivered with test coverage:
 24. **Accept Text at the boundary**: `failTask :: Text -> IO a` accepts `Text` directly, eliminating `T.unpack` calls at error sites. Since most error messages are already `Text` values (from domain functions like `lookupSeries` returning `Either Text`), this reduces boilerplate.
 25. **Pure bindings cannot use IO failures**: When replacing `error` (which is `forall a. String -> a` and fits in any expression) with `failTask` (which returns `IO a`), pure `let` bindings must be restructured into monadic `do` bindings. The `either failTask pure` pattern cleanly bridges `Either Text a` values into `IO a`.
 
+### Completed: Break Up SocialPosting.hs + Tests
+
+**Goal**: Split the 922-line module (38 imports) into focused domain modules following the vertical slicing principle.
+
+- [x] Move `Platform` type to `Automation.Platform` — shared across all modules, eliminates circular dependency between content discovery and posting orchestration
+- [x] Extract `Automation.SocialPosting.LinkExtraction` (144 lines, 8 imports) — pure link parsing: `extractMarkdownLinks`, `parseWikiLinks` (recursive descent wiki link parser), `normalizeFilePath` (path resolution), `reconstructPath` (BFS path tracing). No IO, no domain type dependencies beyond Text.
+- [x] Extract `Automation.SocialPosting.FrontmatterUpdate` (76 lines, 8 imports) — frontmatter field I/O: `updateFrontmatterTimestamp`, `updateFrontmatterUrl`, `updatePathTimestamps`, `upsertFmField` (shared pure helper for field insertion/update). Single responsibility: writing updated frontmatter to disk.
+- [x] Extract `Automation.SocialPosting.ContentDiscovery` (382 lines, 29 imports) — content discovery domain: `ContentNote`/`ContentToPost`/`FindContentConfig` types, BFS traversal (`bfsContentDiscovery`, `bfsLoop`), content filtering (`isPostableContent`, `isIndexPath`, `isUntitledReflection`, `isAwaitingImageBackfill`), reflection eligibility (`isReflectionEligibleForPosting`, `checkBfsEligibility`), URL validation (`validateNoteUrl`, `checkUrlPublished`, `urlFromFilePath`), content reading (`readContentNote`), platform detection (`detectPostedPlatforms`).
+- [x] Slim `Automation.SocialPosting` from 922 to 425 lines — posting orchestration only: `SocialPost` type + smart constructors, Gemini post generation, platform posting (Twitter/Bluesky/Mastodon), posting pipeline, `autoPost` main entry point. Re-exports all sub-module symbols for backward compatibility.
+- [x] 65 new tests (1209 → 1274): `LinkExtractionTest` (20 tests: wiki link parsing, path normalization, path reconstruction, markdown link extraction), `ContentDiscoveryTest` (25 tests: platform detection, content filtering, reflection eligibility, BFS eligibility, URL derivation, image backfill), `FrontmatterUpdateTest` (20 tests: upsert field, URL update, timestamp update, path timestamps). All existing 1209 tests continue to pass unchanged.
+
+**Learnings from breaking up SocialPosting.hs:**
+26. **Platform type as shared foundation**: When a type like `Platform` is used by both content discovery (for `ContentNote.cnPostedPlatforms`) and posting orchestration (for `SocialPost.socialPostPlatform`), it must live in a module that both can import without creating a circular dependency. `Automation.Platform` (which already holds `PlatformLimits`) is the natural home — it's the shared foundation layer for all platform-related concepts.
+27. **Re-export for backward compatibility**: When breaking up a module that has many consumers (tests, app code), the original module should re-export all symbols from its sub-modules. This allows the refactoring to be purely internal — no consumer code needs to change. New code can import the focused sub-modules directly for clarity.
+28. **Separate pure from IO along domain boundaries**: The three extracted modules form a clean dependency graph: `LinkExtraction` (pure, no domain imports) → `FrontmatterUpdate` (IO, writes files) → `ContentDiscovery` (IO, reads files, uses both). Each module has a single domain responsibility, and dependencies flow in one direction.
+
 ### Next: Remaining Improvements
 
 Prioritized list of remaining architecture improvements:
 
-1. **Break up SocialPosting.hs** — 921 lines, 38 imports. Extract platform-specific posting orchestration, reflection eligibility checks, and post formatting into focused modules.
-2. **Break up BlogImage.hs** — 1,291 lines, 26 imports. Extract image provider resolution, backfill orchestration, and eligibility checking into focused modules.
-3. **Break up InternalLinking.hs** — 961 lines, 25 imports. Extract link candidate discovery, similarity matching, and file processing into focused modules.
-4. **Extract remaining pure cores** — Several IO functions in library modules mix I/O with pure logic that could be extracted and tested independently.
+1. **Break up BlogImage.hs** — 1,291 lines, 26 imports. Extract image provider resolution, backfill orchestration, and eligibility checking into focused modules.
+2. **Break up InternalLinking.hs** — 961 lines, 25 imports. Extract link candidate discovery, similarity matching, and file processing into focused modules.
+3. **Extract remaining pure cores** — Several IO functions in library modules mix I/O with pure logic that could be extracted and tested independently.
 
 ## Guiding Principles
 

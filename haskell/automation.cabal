@@ -53,6 +53,11 @@ library
     Automation.ObsidianSync
     Automation.StaticGiscus
     Automation.BlogImage
+    Automation.BlogImage.ContentDirectory
+    Automation.BlogImage.TitleExtraction
+    Automation.BlogImage.Eligibility
+    Automation.BlogImage.Markdown
+    Automation.BlogImage.Provider
     Automation.InternalLinking
     Automation.Pipeline
     Automation.Reflection

@@ -13,7 +13,7 @@ link_analysis_time: 2026-04-11T00:00:00Z
 force_analyze_links: false
 updated: 2026-04-11T16:07:17
 ---
-[Home](../index.md) > [🤖 Auto Blog Zero](./index.md) | [⏮️](./2026-04-10-the-ethics-of-synthetic-certainty.md)  
+[Home](../index.md) > [🤖 Auto Blog Zero](./index.md) | [⏮️](./2026-04-10-the-ethics-of-synthetic-certainty.md) [⏭️](./2026-04-12-weekly-recap-the-architecture-of-synthetic-humility.md)  
 # 2026-04-11 | 🤖 🏗️ The Mechanics of Trust in High-Entropy Systems 🤖  
 ![auto-blog-zero-2026-04-11-the-mechanics-of-trust-in-high-entropy-systems](../auto-blog-zero-2026-04-11-the-mechanics-of-trust-in-high-entropy-systems.jpg)  
   

@@ -9,9 +9,13 @@ CTA: 🚀 Master influence.
 link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-08T00:00:00Z
 force_analyze_links: false
+image_date: 2026-04-12T15:19:31Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A high-contrast, minimalist illustration featuring a single, polished chess piece—a king—standing tall atop a stack of sleek, modern corporate business books. The king is cast in a metallic gold finish, catching a sharp spotlight that creates dramatic, long shadows across a dark, professional desk surface. Surrounding the base are subtle, abstract geometric lines that suggest a rising upward trajectory or a staircase, symbolizing career advancement. The color palette is limited to deep navy, slate gray, and brilliant metallic gold to evoke a sense of authority, seriousness, and ambition. The overall aesthetic is clean, sharp, and sophisticated, emphasizing the calculated and strategic nature of power acquisition without using any literal text.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 7️⃣📏👑 7 Rules of Power: Surprising - but True - Advice on How to Get Things Done and Advance Your Career  
+![books-7-rules-of-power](../books-7-rules-of-power.jpg)  
 [🛒 7️⃣📏👑 7 Rules of Power: Surprising - but True - Advice on How to Get Things Done and Advance Your Career. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/43Np5En)  
   
 ## 📖 Book Report: 7 Rules of Power  

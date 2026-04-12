@@ -4,9 +4,16 @@ aliases:
   - 🦷🔬 Science of Dentistry
 title: 🦷🔬 Science of Dentistry
 URL: https://bagrounds.org/bot-chats/science-of-dentistry
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_time: 2026-04-09T00:00:00Z
+force_analyze_links: false
+image_date: 2026-04-12T10:18:39Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: "A high-magnification, artistic macro shot focusing on the intricate, crystalline structure of a human tooth cross-section. The image features a blend of biological and technological elements: the translucent, layered textures of enamel and dentin are illuminated by a soft, clinical blue and white light. Interwoven with the organic dental structure are subtle, glowing schematic overlays of molecular chains and geometric dental grids, suggesting scientific research. The background is a clean, dark, out-of-focus laboratory setting with faint bokeh highlights resembling microscope lenses. The overall aesthetic is sleek, modern, and clinical, emphasizing the intersection of microscopic biology and advanced engineering."
 ---
 [Home](../index.md) > [Bot Chats](./index.md)  
 # 🦷🔬 Science of Dentistry  
+![bot-chats-science-of-dentistry](../bot-chats-science-of-dentistry.jpg)  
 ## 💬 [Gemini](../software/gemini.md) Prompt 1  
 > 🙋 Can you recommend a book about the 🧪 science of dentistry?  
   

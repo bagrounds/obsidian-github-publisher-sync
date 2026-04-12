@@ -4,9 +4,16 @@ aliases:
   - 🤱🏼💐 Mother's Day
 title: 🤱🏼💐 Mother's Day
 URL: https://bagrounds.org/bot-chats/mothers-day
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_time: 2026-04-09T00:00:00Z
+force_analyze_links: false
+image_date: 2026-04-12T05:51:00Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A warm, high-angle composition featuring a wooden table scattered with an open, vintage-style book and a steaming cup of tea. Soft, natural sunlight streams across the surface, highlighting the texture of the paper and a small, delicate bouquet of wild carnations and daisies resting beside the book. In the background, a pair of reading glasses lies on an unread stack of diverse hardcovers, suggesting a quiet afternoon of reflection and learning. The color palette is soft, using earthy tones, creams, and gentle floral accents to evoke a sense of comfort, wisdom, and the multifaceted nature of the motherhood experience. The lighting is ethereal and inviting, creating a peaceful, intellectual atmosphere.
 ---
 [Home](../index.md) > [Bot Chats](./index.md)  
 # 🤱🏼💐 Mother's Day  
+![bot-chats-mothers-day](../bot-chats-mothers-day.jpg)  
 ## 💬 [Gemini](../software/gemini.md) Prompt 1  
 > 🎉 Today is Mother's Day! Please recommend some books on this holiday, motherhood, the impact of a great mother, and the struggles mothers face in America today. All perspectives are welcome: historical, scientific, biographical, fictional, etc.  
   

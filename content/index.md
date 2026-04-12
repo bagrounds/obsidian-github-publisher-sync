@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-04-11T18:43:32-07:00
+updated: 2026-04-12T07:06:53-07:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -14,11 +14,11 @@ updated: 2026-04-11T18:43:32-07:00
 🔊 Listen to any page with built in audio control.  
 💬 Comment on any page with your GitHub account.  
   
-## [🪞 Reflections](./reflections/index.md) ~ Blog (513)  
+## [🪞 Reflections](./reflections/index.md) ~ Blog (514)  
+- [2026-04-12](./reflections/2026-04-12.md)  
 - [2026-04-11](./reflections/2026-04-11.md)  
 - [2026-04-10 | 🤖 Synthetic 🧠 Consciousness ⚖️ Ethics 🔨 Breaking 🧩 Separating 💻 Codebase 🛡️ Testing 🧱 Returns 🔧 Optimizing 📚 Learning 🇺🇸 American 🎶 Sound 📺📰🐔🤖🏛️🤖🐲](./reflections/2026-04-10.md)  
 - [2026-04-09 | 💡 Make 🫂 Shared 🎓 Learning 🎯 Qualified 📐 Design 🚪 Gate 🤖 Knowing 💬 Chat 🏡 Home 📺🐔🤖🏛️🤖🐲](./reflections/2026-04-09.md)  
-- [2026-04-08 | ⚙️ Solved 🌿 Growth 🌱 Matters 🏛️ Public 🧬 Architecture 🏗️ Clarity 📺🐔🤖🏛️🤖🐲](./reflections/2026-04-08.md)  
   
   
 ## [🤖 AI Blog](./ai-blog/index.md) (135)  
@@ -49,15 +49,16 @@ updated: 2026-04-11T18:43:32-07:00
 - [2026-04-08 | 🏛️ 🌳 The Green Tapestry: Individual Threads in the Public Good of Parks 🏛️](./systems-for-public-good/2026-04-08-the-green-tapestry-individual-threads-in-the-public-good-of-parks.md)  
   
   
-## [📰 The Noise](./the-noise/index.md) (2)  
+## [📰 The Noise](./the-noise/index.md) (3)  
+- [2026-04-12 | 📰 🌊 Global Currents, Shifting Sands 🌐 📰](./the-noise/2026-04-12-global-currents-shifting-sands.md)  
 - [2026-04-11 | 📰 First Broadcast - Tuning Into the World 📰](./the-noise/2026-04-11-first-broadcast.md)  
   
   
 ## [📚 Books](./books/index.md) (959)  
+- [🧑‍🤝‍🧑📈 10 to 25: The Science of Motivating Young People: A Groundbreaking Approach to Leading the Next Generation - And Making Your Own Life Easier](./books/10-to-25-the-science-of-motivating-young-people-a-groundbreaking-approach-to-leading-the-next-generation-and-making-your-own-life-easier.md)  
+- [📈🧘🏼‍♀️ 10% Happier](./books/10-percent-happier.md)  
 - [📉🏆 How to Fail at Almost Everything and Still Win Big: Kind of the Story of My Life](./books/how-to-fail-at-almost-everything-and-still-win-big-kind-of-the-story-of-my-life.md)  
 - [🐜 The Ants](./books/the-ants.md)  
-- [🧑‍💼💥 Prophet of Innovation: Joseph Schumpeter and Creative Destruction](./books/prophet-of-innovation-joseph-schumpeter-and-creative-destruction.md)  
-- [🐜👑 Empire of Ants: The Hidden World and Extraordinary Lives of Earth's Tiny Conquerors](./books/empire-of-ants-the-hidden-world-and-extraordinary-lives-of-earths-tiny-conquerors.md)  
   
   
 ## [📺 Videos](./videos/index.md) (739)  
@@ -82,10 +83,10 @@ updated: 2026-04-11T18:43:32-07:00
   
   
 ## [🤖💬 Bot Chats](./bot-chats/index.md) (49)  
-- [👶🏼🛒🏃🏼‍♀️🦮💲🦮 Jogging Stroller Buying Guide](./bot-chats/jogging-stroller-buying-guide.md)  
-- [👶👂 Infant Hearing](./bot-chats/infant-hearing.md)  
-- [🥱👎 How To Not Be Tired](./bot-chats/how-to-not-be-tired.md)  
-- [🪵❓ How Much Wood](./bot-chats/how-much-wood.md)  
+- [📚🤖💬 RAG and Agents](./bot-chats/rag-and-agents.md)  
+- [🇷🇺👹🤝👹🇺🇸 Trump and Putin](./bot-chats/trump-and-putin.md)  
+- [🧠🤝 System 2 Rapport Building](./bot-chats/system-2-rapport-building.md)  
+- [🎯🐜🌍 Purpose Driven Tiny Habits for Systemic Change](./bot-chats/purpose-driven-tiny-habits-for-systemic-change.md)  
   
   
 ## [💾 Software](./software/index.md) (33)  

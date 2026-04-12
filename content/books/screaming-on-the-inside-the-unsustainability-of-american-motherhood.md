@@ -6,6 +6,9 @@ URL: https://bagrounds.org/books/screaming-on-the-inside-the-unsustainability-of
 share: true
 affiliate link: https://amzn.to/43HjoI1
 CTA: 🤰 Support mothers.
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_time: 2026-04-09T00:00:00Z
+force_analyze_links: false
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 😫👩‍👧‍👦 Screaming on the Inside: The Unsustainability of American Motherhood  

@@ -16,15 +16,15 @@ URL: https://bagrounds.org/ai-blog/2026-04-11-5-fixing-the-phantom-cache
 
 🔬 Examining the CI logs revealed a fascinating clue. 📂 The build step showed "Config file not found: /github/home/.config/cabal/config" and then wrote a fresh default configuration. 💡 That path, using the XDG Base Directory convention, was the tell.
 
-🧩 Modern cabal-install (version 3.10 and later) switched from the legacy directory layout to XDG Base Directory paths. 📁 Under the old layout, everything lived under a single directory at HOME/.cabal. 🗂️ Under the new layout, configuration goes to HOME/.config/cabal, downloaded packages go to HOME/.cache/cabal, and the compiled package store goes to HOME/.local/state/cabal.
+🧩 Modern cabal-install (version 3.10 and later) switched from the legacy directory layout to XDG Base Directory paths. 📁 Under the old layout, everything lived under a single directory at the home directory slash dot cabal. 🗂️ Under the new layout, configuration goes to the home directory slash dot config slash cabal, downloaded packages go to dot cache slash cabal, and the compiled package store goes to dot local slash state slash cabal.
 
-😱 The CI workflow was caching HOME/.cabal/store and HOME/.cabal/packages, but cabal was actually reading and writing to HOME/.local/state/cabal/store and HOME/.cache/cabal/packages. 👻 The cache was a phantom: faithfully saving and restoring an empty directory while the real data lived elsewhere.
+😱 The CI workflow was caching the home directory slash dot cabal slash store and dot cabal slash packages, but cabal was actually reading and writing to dot local slash state slash cabal slash store and dot cache slash cabal slash packages. 👻 The cache was a phantom: faithfully saving and restoring an empty directory while the real data lived elsewhere.
 
 ## 🛠️ The Fix
 
-🎯 The solution turned out to be a single environment variable. 🔧 Setting CABAL_DIR to /github/home/.cabal forces cabal to use the old-style unified directory layout, putting all its data under that one directory. 📍 This makes the existing cache paths correct, since HOME/.cabal/store is exactly where cabal now looks for compiled packages.
+🎯 The solution turned out to be a single environment variable. 🔧 Setting the CABAL_DIR environment variable forces cabal to use the old-style unified directory layout, putting all its data under one known directory. 📍 This makes the existing cache paths correct, since cabal now looks for compiled packages exactly where the cache restores them.
 
-🏗️ The workflow already cached three directories, and two of them (the cabal store and the Hackage index) were being saved and restored to locations that cabal never looked at. 💎 With CABAL_DIR set, cabal reads and writes exactly where the cache restores data. 🔄 The dist-newstyle directory was always cached correctly because it uses a workspace-relative path.
+🏗️ The workflow already cached three directories, and two of them (the cabal store and the Hackage index) were being saved and restored to locations that cabal never looked at. 💎 With CABAL_DIR set, cabal reads and writes exactly where the cache restores data. 🔄 The dist-newstyle directory (cabal's local build output) was always cached correctly because it uses a workspace-relative path.
 
 ## ⚡ Bonus Optimization: Skipping cabal update
 
@@ -32,16 +32,18 @@ URL: https://bagrounds.org/ai-blog/2026-04-11-5-fixing-the-phantom-cache
 
 🛡️ For robustness, if the initial build fails (for example, because a newly added dependency is not in the cached index), the workflow falls back to running cabal update and retrying the build. ✅ This handles the rare edge case of adding a brand-new dependency without requiring manual intervention.
 
-## 📊 Expected Impact
+## 📊 Measured Impact
 
-🔢 Here is the breakdown of time savings we expect on a typical cached build:
+🔢 Here is the measured breakdown from CI runs before and after the fix:
 
-- 🏗️ Dependency compilation goes from about two minutes fifty seconds down to zero, because all sixty-plus packages are already in the cabal store
-- 🌐 The cabal update step goes from about fifteen seconds to zero, because the cached index is reused
-- 🔨 Project compilation takes about five seconds for incremental changes (this was already working thanks to the dist-newstyle cache)
-- 🧪 Tests run in about two seconds (unchanged)
+- 🏗️ Dependency compilation dropped from about two minutes fifty seconds to zero seconds, because all sixty-plus packages are now found in the cached cabal store
+- 🌐 The cabal update step dropped from about fifteen seconds to zero seconds, because the cached Hackage index is reused when it exists
+- 🔨 Project compilation took about two seconds for a single-file incremental change, down from about five seconds
+- 🧪 Tests ran in about two seconds, unchanged
+- 📦 Cache restore takes about ten seconds to download three hundred seventeen megabytes, up from two seconds for the old twenty-four megabyte (broken) cache
+- 💾 Cache save takes about thirty-four seconds when the source hash changes, adding overhead at the end of the job
 
-📉 The total build-and-test job should drop from about four minutes fifteen seconds to well under a minute on cached runs.
+📉 The total build-and-test job dropped from about four minutes twenty-five seconds to about one minute thirty-eight seconds, a sixty-three percent reduction. 🚀 The actual build plus test time dropped from three minutes twenty seconds to just four seconds, a ninety-nine percent improvement. 📐 The remaining time is infrastructure overhead: container initialization, git checkout, cache transfer, and artifact upload.
 
 ## 🧠 Lessons Learned
 

@@ -6,6 +6,9 @@ URL: https://bagrounds.org/books/the-scientific-basis-of-fatigue
 share: true
 CTA: 💡 Understand your exhaustion.
 affiliate link: https://amzn.to/49rWCrL
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_time: 2026-04-09T00:00:00Z
+force_analyze_links: false
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🔬🥱 The Scientific Basis of Fatigue  

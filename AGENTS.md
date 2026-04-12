@@ -98,3 +98,8 @@ URL: https://bagrounds.org/ai-blog/2026-03-08-1-auto-post-mastodon
 - 🚫 Never commit to the git repo from a GHA workflow. There is no reason to do this today.
 - 🔄 All generated content (blog posts, images, attachments, updated frontmatter) must be persisted by syncing to the Obsidian vault using the Haskell `Automation.ObsidianSync` module (via the `run-scheduled` binary).
 - 🔒 GHA workflows should use `contents: read` permissions — never `contents: write`.
+
+## Launching a New Auto Blog Series
+- 🚀 When a PR adds a new auto blog series, follow every step in the [launch checklist](specs/blog-series-launch-checklist.md). The checklist covers everything from the JSON config to the documentation updates that keep the README, specs, and scheduled-tasks tables in sync.
+- 🔗 The auto-discovery architecture means **zero Haskell code changes** are needed, but several documentation files must be updated to reflect the new series.
+- 📋 The checklist is the single source of truth for what belongs in a launch PR. If something is missing from the checklist, update it.

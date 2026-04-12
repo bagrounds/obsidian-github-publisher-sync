@@ -53,6 +53,7 @@
 | 🧰 `tools/` | 1 | 🧮 Interactive tools (calculator) |
 | 🎮 `games/` | 1 | 🧬 Interactive games (Valence) |
 | 📰 `the-noise/` | ~1 | 📰 AI-generated daily news digest |
+| 🌟 `positivity-bias/` | ~1 | 🌟 AI-generated positive news digest |
 | 🤖 `auto-blog-zero/` | ~12 | 📝 AI-generated daily blog posts |
 | 🐔 `chickie-loo/` | ~12 | 🐣 AI-generated chicken-themed blog posts |
 | 🏛️ `systems-for-public-good/` | ~1 | 🏛️ AI-generated democracy and public good blog posts |
@@ -71,6 +72,7 @@
 | ⏰ Pacific Hour | 🏷️ Task | 📝 Description |
 |---|---|---|
 | 6 | 📰 The Noise | 📡 AI news digest with Google Search grounding for current events |
+| 6 | 🌟 Positivity Bias | 🌟 AI positive news digest with Google Search grounding |
 | 7 | 🐔 Chickie Loo | 🐣 AI blog post with chicken-keeping personality |
 | 8 | 🤖 Auto Blog Zero | 📝 AI blog post based on reflections and discussions |
 | 9 | 🏛️ Systems for Public Good | 🏛️ AI blog with Google Search grounding for current events |
@@ -221,6 +223,7 @@ Pull Vault → BFS from Most Recent Reflection → For Each File:
 | `CHICKIE_LOO_PRIORITY_USER` | `ChickieLoo` | 🐔 GitHub user for Chickie Loo priority |
 | `SYSTEMS_FOR_PUBLIC_GOOD_PRIORITY_USER` | `bagrounds` | 🏛️ GitHub user for Systems for Public Good priority |
 | `THE_NOISE_PRIORITY_USER` | `bagrounds` | 📰 GitHub user for The Noise priority |
+| `POSITIVITY_BIAS_PRIORITY_USER` | `bagrounds` | 🌟 GitHub user for Positivity Bias priority |
 | `DISABLE_TWITTER` | _(empty)_ | 🚫 Set to disable Twitter posting |
 | `DISABLE_BLUESKY` | _(empty)_ | 🚫 Set to disable Bluesky posting |
 | `DISABLE_MASTODON` | _(empty)_ | 🚫 Set to disable Mastodon posting |
@@ -284,5 +287,6 @@ cd haskell && cabal test --test-show-details=direct
 | [`daily-reflection.md`](specs/daily-reflection.md) | 📝 Daily reflection auto-update — template-based creation, series section insertion, post linking, workflow integration |
 | [`systems-for-public-good.md`](specs/systems-for-public-good.md) | 🏛️ Systems for Public Good blog series — democracy, public goods, grounding with Google Search, editorial guidelines |
 | [`the-noise.md`](specs/the-noise.md) | 📰 The Noise blog series — daily news digest, Google Search grounding, high-quality source curation, original synthesis |
+| [`positivity-bias.md`](specs/positivity-bias.md) | 🌟 Positivity Bias blog series — positive news digest, Google Search grounding, stories of hope and progress |
 | [`ai-blog-sync.md`](specs/ai-blog-sync.md) | 🤖 AI blog vault sync — automated navigation links, daily reflection linking, TTS-friendly writing |
 | [`tts.md`](specs/tts.md) | 🎧 Text-to-Speech player — Web Speech API, content extraction, sentence highlighting, auto-play, comment reading |

@@ -4,9 +4,16 @@ aliases:
   - 🤕😖 Headaches
 title: 🤕😖 Headaches
 URL: https://bagrounds.org/bot-chats/headaches
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_time: 2026-04-08T00:00:00Z
+force_analyze_links: false
+image_date: 2026-04-11T23:18:35Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A minimalist, high-contrast illustration featuring the silhouette of a human head in profile against a dark, moody background. A single, stylized glowing line—representing a bolt of lightning or a jagged fracture—runs horizontally across the temple area, radiating soft, pulsating light. The color palette uses deep navy blues and charcoal grays, contrasted by a sharp, electric cyan or warm amber glow emanating from the point of pain. The style is clean, abstract, and sophisticated, avoiding any medical gore. The surrounding space is vast and uncluttered, emphasizing the sensation of a localized, internal pressure or thunderclap effect.
 ---
 [Home](../index.md) > [Bot Chats](./index.md)  
 # 🤕😖 Headaches  
+![bot-chats-headaches](../bot-chats-headaches.jpg)  
 ## 💬 [Gemini](../software/gemini.md) Prompt 1  
 > 🗣️ Tell me everything you know about headaches and recommend some books that will help me understand, diagnose and treat them.  
   

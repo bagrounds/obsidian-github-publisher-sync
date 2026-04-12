@@ -77,7 +77,7 @@
    - ✅ Accept any `.md` file not in the exclusion list (index.md, AGENTS.md, IDEAS.md)
    - 🚫 Skip future-dated reflections (date > today)
    - 🚫 Skip reflections whose title is still just the bare date (awaiting creative title from reflection-title task at 10 PM Pacific)
-2. 🗓️ Sort ALL candidates by date descending (cross-directory). Files without a date prefix in their filename use their filesystem modification time as the sort date, matching the approach used by the RSS feed (frontmatter → git → filesystem).
+2. 🗓️ Sort ALL candidates by date descending (cross-directory). For files without a date prefix in their filename, the sort date is resolved from frontmatter fields (`updated`, `modified`, `date`, `created`), matching the RSS feed's priority chain. Files with no date anywhere fall back to 1970-01-01, sorting behind all dated content.
 3. 🔗 Build provider chain from all configured providers
 4. 🔄 For each candidate (newest first globally):
    a. ⏱️ Attempt generation with retry logic for per-minute rate limits
@@ -427,7 +427,7 @@ Image name: chickie-loo-2026-03-22-weekly-recap.jpg
 4. **Why** were there so many library candidates ahead? Eight library directories (articles, books, bot-chats, games, products, software, tools, topics) contain hundreds of undated files that all received `today` as their default date.
 5. **Why** didn't the system recover over time? With max 2 images per hourly run and the reflection being pushed behind 1000+ undated library files that refresh to `today` each day, reflections were perpetually unreachable.
 
-✅ Fix: Changed the backfill date for files without a date prefix from `today` to the file's filesystem modification time (via `getModificationTime`). This mirrors the date resolution strategy used by the RSS feed (frontmatter → git → filesystem). Recently modified undated content sorts near the top, while old library files naturally sort behind recently-titled reflections. After a reflection receives its creative title, the filesystem write updates its modification time, making it a high-priority candidate in the next backfill run.
+✅ Fix: Changed the backfill date for files without a date prefix from `today` to the date parsed from frontmatter fields (`updated`, `modified`, `date`, `created`), matching the RSS feed's frontmatter-first priority chain. Files with no date in either filename or frontmatter receive a `1970-01-01` sentinel, sorting behind all dated content. This ensures recently-edited library files (which have an `updated` frontmatter field) sort by their actual modification date, while truly undated files sort low and get processed last.
 
 ---
 

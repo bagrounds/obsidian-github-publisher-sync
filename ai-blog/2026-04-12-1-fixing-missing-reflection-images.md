@@ -34,33 +34,33 @@ URL: https://bagrounds.org/ai-blog/2026-04-12-1-fixing-missing-reflection-images
 
 ## 🔧 The Fix
 
-🎯 We changed the default sort date for files without a date prefix from today to the file's filesystem modification time.
+🎯 We changed the default sort date for files without a date prefix from today to the date found in frontmatter fields.
 
-📐 This mirrors the approach used by the RSS feed, which resolves dates through a priority chain: frontmatter, then git history, then filesystem. For the backfill, we use the simplest link in that chain: the modification timestamp from the operating system.
+📐 This mirrors the approach used by the RSS feed, which resolves dates through a priority chain: frontmatter, then git history, then filesystem. For the backfill, we use the first link in that chain: the frontmatter date. The function checks for updated, modified, date, and created fields in priority order.
 
-🏗️ The effect is natural: recently edited library files sort near the top, while old library content falls behind. A reflection that just received a creative title has a fresh modification time, putting it ahead of library files that haven't been touched in weeks or months.
+🏗️ The effect is natural: library files that have been recently updated by the vault sync get their real updated timestamp, while old library content without any date fields falls to a 1970-01-01 sentinel. A reflection with a date-prefixed filename like 2026-04-12.md always gets its date from the filename, which keeps it in its correct position.
 
-🪞 After the reflection-title task writes a new title at 10 PM Pacific, the filesystem write updates the file's modification time to that moment. The next backfill run sees it as the most recently modified undated content and prioritizes it accordingly.
+🪞 After the reflection-title task writes a new title at 10 PM Pacific, it also updates the updated field in frontmatter. Bot-chats and other library files that were recently edited in Obsidian have fresh updated timestamps. Files that haven't been touched in months have older timestamps or no date fields at all, sorting them behind recent content.
 
-📊 The change replaces a pure expression with a single IO call to getModificationTime, falling back only when the filename has no date prefix.
+📊 The change is pure, requiring no filesystem or git IO. It parses the already-read file content for frontmatter date fields and uses a sentinel fallback for truly dateless files.
 
 ## 🧪 Testing
 
-✅ All 1507 tests pass unchanged.
+✅ All 1519 tests pass, including 12 new tests for parseDateFromFrontmatter covering each field priority, format variations, empty frontmatter, and unrecognized field names.
 
 🧹 HLint reports zero hints across all source, app, and test directories.
 
 ## 🏗️ Design Decisions
 
-🤔 We considered three approaches before settling on the filesystem modification time.
+🤔 We iterated through three approaches before settling on frontmatter date parsing.
 
-🔄 Option one was a sentinel date of 1970-01-01 for all undated files. This was the initial fix, and it worked by pushing all undated content behind all dated content. However, it lost the ability to distinguish between recently modified and ancient library files. A newly written bot-chat would get the same priority as a decades-old article.
+🔄 Option one was a sentinel date of 1970-01-01 for all undated files. This worked by pushing all undated content behind all dated content. However, it lost the ability to distinguish between recently modified and ancient library files. A newly written bot-chat would get the same priority as a decades-old article.
 
-🕙 Option two was to generate the image immediately after the title, as part of the reflection-title task. This would be the most direct pipeline, but it would couple two currently independent modules and require threading image provider configuration through the title generator.
+🕙 Option two was to use filesystem modification time via getModificationTime. This seemed natural but fails in CI environments where content files are synced fresh each run, giving all files roughly the same timestamp.
 
-📅 Option three, which we chose, was to use the filesystem modification time. This keeps the modules decoupled, requires minimal code changes, and naturally prioritizes recent content. It also mirrors the existing RSS feed approach, making the system more consistent.
+📅 Option three, which we chose, was to parse frontmatter date fields. This works correctly in CI because the updated field in frontmatter reflects the actual Obsidian vault modification time, not the CI sync time. It matches the RSS feed's first priority in its date resolution chain, adds no new IO dependencies, and naturally prioritizes recently edited content.
 
-🧩 The modification time approach has a pleasant side effect: the backfill queue now reflects real editorial activity. Content that was recently created or edited gets images first, while untouched archival content gradually catches up over time.
+🧩 The frontmatter approach has a pleasant side effect: the backfill queue now reflects real editorial activity. Content that was recently edited in Obsidian gets images first, while untouched archival content gradually catches up over time.
 
 ## 📚 Book Recommendations
 
@@ -73,4 +73,4 @@ URL: https://bagrounds.org/ai-blog/2026-04-12-1-fixing-missing-reflection-images
 
 ### 🔗 Related
 * Release It! by Michael T. Nygard explores production system failures and stability patterns, which connects to how this scheduling and prioritization bug only manifested under real-world conditions with a large content library.
-* A Philosophy of Software Design by John Ousterhout discusses deep modules and interface design, which relates to how the sentinel date approach keeps the backfill and title-generation modules cleanly separated while fixing the cross-cutting concern.
+* A Philosophy of Software Design by John Ousterhout discusses deep modules and interface design, which relates to how the frontmatter date approach keeps the backfill and title-generation modules cleanly separated while fixing the cross-cutting concern.

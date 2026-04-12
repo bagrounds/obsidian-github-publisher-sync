@@ -51,24 +51,29 @@ module Automation.BlogImage
   , resolveUniqueImageName
   , sanitizeForYaml
   , shouldRegenerateImage
+  , parseDateFromFrontmatter
+  , undatedFileFallback
   ) where
 
+import Control.Applicative ((<|>))
 import Control.Exception (SomeException, catch)
 import Control.Monad (when)
 import qualified Data.ByteString.Lazy as LBS
 import Data.Char (isAlphaNum, toLower)
+import Data.Foldable (asum)
 import qualified Data.Map.Strict as Map
+import Data.Maybe (fromMaybe)
 import Data.Text (Text)
 import qualified Data.Text as T
 import qualified Data.Text.IO as TIO
-import Data.Time (Day, defaultTimeLocale, formatTime, getCurrentTime, utctDay)
+import Data.Time (Day, defaultTimeLocale, formatTime, fromGregorian, getCurrentTime)
+import Data.Time.Format (parseTimeM)
 import Network.HTTP.Client (Manager)
 import System.Directory
   ( copyFile
   , createDirectoryIfMissing
   , doesDirectoryExist
   , doesFileExist
-  , getModificationTime
   , listDirectory
   )
 import System.FilePath ((</>), takeBaseName, takeDirectory, takeExtension)
@@ -337,10 +342,22 @@ checkCandidate directoryPath directory today filename = do
       content <- TIO.readFile filePath
       case checkCandidateEligibility directory today filename content of
         Ineligible _              -> pure []
-        Eligible requiresRegeneration -> do
-          candidateDate <- maybe (utctDay <$> getModificationTime filePath) pure fileDate
-          pure [BackfillCandidate filePath directory filename
+        Eligible requiresRegeneration ->
+          let (frontmatter, _) = parseFrontmatter content
+              candidateDate = fromMaybe undatedFileFallback
+                (fileDate <|> parseDateFromFrontmatter frontmatter)
+          in pure [BackfillCandidate filePath directory filename
                                     candidateDate requiresRegeneration]
+
+parseDateFromFrontmatter :: Map.Map Text Text -> Maybe Day
+parseDateFromFrontmatter frontmatter =
+  asum (fmap tryField ["updated", "modified", "date", "created"])
+  where
+    tryField field = Map.lookup field frontmatter >>= parseDateValue
+    parseDateValue value = parseTimeM True defaultTimeLocale "%Y-%m-%d" (T.unpack (T.take 10 value))
+
+undatedFileFallback :: Day
+undatedFileFallback = fromGregorian 1970 1 1
 
 sortByDateDesc :: [BackfillCandidate] -> [BackfillCandidate]
 sortByDateDesc = foldl' insertSorted []

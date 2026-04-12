@@ -86,9 +86,13 @@ filterCommentsAfterLastPost _ [] comments = comments
 filterCommentsAfterLastPost series (latestPost : _) comments =
   let postDay = fromMaybe (fromGregorian 2026 1 1) (parseDate (bpDate latestPost))
       utcHour = pacificToUtcHour (bscScheduleHourPacific series) postDay
-      utcTimeText = (if utcHour < 10 then "0" else "") <> T.pack (show utcHour) <> ":00"
-      cutoff = bpDate latestPost <> "T" <> utcTimeText <> ":00Z"
+      cutoff = bpDate latestPost <> "T" <> formatHourMinute utcHour <> ":00Z"
   in filter (\c -> bcCreatedAt c >= cutoff) comments
+
+formatHourMinute :: Int -> Text
+formatHourMinute hour =
+  let padded = (if hour < 10 then "0" else "") <> T.pack (show hour)
+  in padded <> ":00"
 
 buildBackLink :: BlogSeriesConfig -> Text -> Text
 buildBackLink series filename =

@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-04-11T11:38:50-07:00
+updated: 2026-04-11T17:34:08-07:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -21,11 +21,11 @@ updated: 2026-04-11T11:38:50-07:00
 - [2026-04-08 | ⚙️ Solved 🌿 Growth 🌱 Matters 🏛️ Public 🧬 Architecture 🏗️ Clarity 📺🐔🤖🏛️🤖🐲](./reflections/2026-04-08.md)  
   
   
-## [🤖 AI Blog](./ai-blog/index.md) (131)  
+## [🤖 AI Blog](./ai-blog/index.md) (134)  
+- [2026-04-11 | 📰 The Noise That Never Arrived 🔇](./ai-blog/2026-04-11-4-the-noise-that-never-arrived.md)  
+- [2026-04-11 | 📰 Launching The Noise — A New Auto Blog Series 🤖](./ai-blog/2026-04-11-3-launching-the-noise.md)  
+- [2026-04-11 | 🔍 Declarative Blog Series Auto-Discovery 🤖](./ai-blog/2026-04-11-2-declarative-blog-series-auto-discovery.md)  
 - [2026-04-11 | 📅 Teaching AI What Day It Is 🤖](./ai-blog/2026-04-11-1-teaching-ai-what-day-it-is.md)  
-- [2026-04-10 | 🎯 Typed Exceptions for Task Runners 🛡️](./ai-blog/2026-04-10-9-typed-exceptions-for-task-runners.md)  
-- [2026-04-10 | 🧹 Extracting Pure Utilities from the God Module ✨](./ai-blog/2026-04-10-8-extracting-pure-utilities-from-the-god-module.md)  
-- [2026-04-10 | 🏎️ Optimizing Haskell CI Build Times 🔧](./ai-blog/2026-04-10-7-optimizing-haskell-ci-build-times.md)  
   
   
 ## [🤖 Auto Blog Zero](./auto-blog-zero/index.md) (32)  
@@ -50,17 +50,17 @@ updated: 2026-04-11T11:38:50-07:00
   
   
 ## [📚 Books](./books/index.md) (959)  
-- [🇺🇸👑🌺 Nation Within: The Story of America's Annexation of the Nation of Hawaii](./books/nation-within-the-story-of-americas-annexation-of-the-nation-of-hawaii.md)  
-- [👥✝️ A People's History of Christianity: The Other Side of the Story](./books/a-peoples-history-of-christianity-the-other-side-of-the-story.md)  
-- [🤖🔗👁️ Systems Thinking: An AI’s Guide to 100 Ways to Spot Connections Humans Often Overlook](./books/systems-thinking-an-ais-guide-to-100-ways-to-spot-connections-humans-often-overlook.md)  
-- [⚙️🔗 Quality Software Management: Systems Thinking](./books/quality-software-management-systems-thinking.md)  
+- [📉🏆 How to Fail at Almost Everything and Still Win Big: Kind of the Story of My Life](./books/how-to-fail-at-almost-everything-and-still-win-big-kind-of-the-story-of-my-life.md)  
+- [🐜 The Ants](./books/the-ants.md)  
+- [🧑‍💼💥 Prophet of Innovation: Joseph Schumpeter and Creative Destruction](./books/prophet-of-innovation-joseph-schumpeter-and-creative-destruction.md)  
+- [🐜👑 Empire of Ants: The Hidden World and Extraordinary Lives of Earth's Tiny Conquerors](./books/empire-of-ants-the-hidden-world-and-extraordinary-lives-of-earths-tiny-conquerors.md)  
   
   
 ## [📺 Videos](./videos/index.md) (737)  
-- [🤖✨💥⚠️ Claude Mythos Changes Everything. Your AI Stack Isn't Ready.](./videos/claude-mythos-changes-everything-your-ai-stack-isnt-ready.md)  
-- [🇺🇸🗣️👂 American Conversations: Diana Butler Bass](./videos/american-conversations-diana-butler-bass.md)  
-- [😇😈📉🚫 7️⃣ Deadly Innocent Frauds-A BCB Economics Lecture](./videos/seven-deadly-innocent-frauds-a-bcb-economics-lecture.md)  
-- [😡🏛️🤝 Jon Stewart «Can't F**king Believe» Democrats Caved on the Shutdown | The Daily Show](./videos/jon-stewart-cant-fking-believe-democrats-caved-on-the-shutdown-the-daily-show.md)  
+- [🧠👶🐒 Alison Gopnik, The Evolution of Human Intelligences | Natural Philosophy Forum Lecture 2025](./videos/alison-gopnik-the-evolution-of-human-intelligences-natural-philosophy-forum-lecture-2025.md)  
+- [🏛️🗣️🗓️ Politics Chat, November 18, 2025](./videos/politics-chat-november-18-2025.md)  
+- [👶🏆🧠✨ What kids know about motivation (and we don't) | Betsy Blackard | TEDx Claremont Graduate University](./videos/what-kids-know-about-motivation-and-we-dont-betsy-blackard-tedx-claremont-graduate-university.md)  
+- [🥇💰📈🧑‍🏫 The 2025 Nobel Prize in Economics: Explained](./videos/the-2025-nobel-prize-in-economics-explained.md)  
   
   
 ## [🌌 Topics](./topics/index.md) (91)  
@@ -71,24 +71,24 @@ updated: 2026-04-11T11:38:50-07:00
   
   
 ## [📄  Articles](./articles/index.md) (84)  
+- [🪞🇺🇸💔 Mirror, Mirror 2024: A Portrait of the Failing U.S. Health System](./articles/mirror-mirror-2024-a-portrait-of-the-failing-us-health-system.md)  
+- [🧑‍🤝‍🧑🤖🧠 Orchestrating Human AI Teams: The Manager Agent as a Unifying Research Challenge](./articles/orchestrating-human-ai-teams-the-manager-agent-as-a-unifying-research-challenge.md)  
 - [🏗️🧩🌍 Context Engineering: An Emerging Concept in the MCP Ecosystem](./articles/context-engineering-an-emerging-concept-in-the-mcp-ecosystem.md)  
 - [📊🔎🤖🪜 New Evaluation, Library, and Analysis of Step By Step Reasoning with Large Language Models](./articles/new-evaluation-library-and-analysis-of-step-by-step-reasoning-with-large-language-models.md)  
-- [🗣️🗺️🤖⚙️ Reasoning with Language Model is Planning with World Model](./articles/reasoning-with-language-model-is-planning-with-world-model.md)  
-- [🕵️‍♀️💼👥 Agents](./articles/agents.md)  
   
   
 ## [🤖💬 Bot Chats](./bot-chats/index.md) (49)  
-- [📚🤖💬 RAG and Agents](./bot-chats/rag-and-agents.md)  
-- [♟️👑⚔️🧠 Chess](./bot-chats/chess.md)  
-- [📐🔗🤖🧠 Category Theory for AI Engineering](./bot-chats/category-theory-for-ai-engineering.md)  
-- [📚🗳️🤝🏛️ Books for Democracy](./bot-chats/books-for-democracy.md)  
+- [🥱👎 How To Not Be Tired](./bot-chats/how-to-not-be-tired.md)  
+- [🪵❓ How Much Wood](./bot-chats/how-much-wood.md)  
+- [🤕😖 Headaches](./bot-chats/headaches.md)  
+- [😇🔮🎲🎬 Good Decisions](./bot-chats/good-decisions.md)  
   
   
 ## [💾 Software](./software/index.md) (33)  
+- [⛎♉️♊️♋️♌️♍️♎️♏️♐️♑️♒️♓️ Zodios](./software/zodios.md)  
 - [👽🦺 Zod](./software/zod.md)  
 - [💡🔧📏🔮〰️ Vensim](./software/vensim.md)  
 - [🐍🏎️📦 uv](./software/uv.md)  
-- [💻📱🛠️ Termux](./software/termux.md)  
   
   
 ## [👥 People](./people/index.md) (18)  

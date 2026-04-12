@@ -143,6 +143,7 @@
 🔗 When oEmbed fails after all retries, a placeholder link to the Bluesky post URL is stored instead of a broken local embed.
 🐛 The system detects two types of content needing regeneration: placeholder links (bare URLs without blockquotes) and broken embeds (blockquotes whose paragraph content contains a raw DID string instead of post text, caused by a historic argument-order bug).
 🔄 On each social posting run, the system scans the vault for Bluesky sections needing regeneration, extracts the post URL from either the placeholder link or the broken embed's data-bluesky-uri attribute, and attempts to replace it with proper oEmbed HTML.
+🌗 Bluesky embeds use `data-bluesky-embed-color-mode="system"` (the oEmbed API default), which follows the user's OS `prefers-color-scheme` media query. This syncs with the Quartz site's dark mode, which also defaults to the OS preference.
 📝 The `Url` domain type is used for post URLs throughout the embed pipeline to prevent primitive obsession bugs.
 
 ## 🐘 Mastodon Integration
@@ -153,6 +154,8 @@
 🔁 Uses UUID-based Idempotency-Key headers for retry safety against duplicate posts.
 🖼️ Embed generation tries the instance's oEmbed endpoint first, then falls back to an iframe-based embed.
 🔧 Pure URL parsing functions extract instance URL, status ID, and username from post URLs.
+🌑 All new Mastodon oEmbed HTML is automatically post-processed to replace light-mode inline styles with dark-mode equivalents. The `toDarkMode` pure function replaces background colors, border colors, and text colors in the blockquote HTML.
+🔄 On each social posting run, the system scans the vault for Mastodon sections with light-mode inline styles and re-fetches the oEmbed HTML with dark-mode post-processing applied.
 🏗️ The `haskell/src/Automation/Platforms/Mastodon.hs` module follows the same error handling patterns as the Twitter module, using `Either Text` return types and `HttpCodeException` for transient failure retry.
 🔌 All IO functions accept a `Manager` parameter for HTTP connection pooling.
 
@@ -206,10 +209,15 @@
 | `isBrokenEmbed(section)` | 🔍 Detect a garbled local embed by checking for raw DID in paragraph content |
 | `extractRegenerationUrl(section)` | 🔗 Extract a usable post URL from a placeholder link or broken embed |
 | `extractPostUrlFromBrokenEmbed(section)` | 🔗 Extract post URL from data-bluesky-uri attribute in broken embed HTML |
-| `replaceSectionContent(content, embedHtml)` | 🔄 Replace Bluesky section content with new embed HTML |
+| `Bluesky.replaceSectionContent(content, embedHtml)` | 🔄 Replace Bluesky section content with new embed HTML |
 | `extractMastodonInstanceUrl(postUrl)` | 🌐 Extract instance URL from Mastodon post URL |
 | `extractMastodonStatusId(postUrl)` | 🔗 Extract status ID from Mastodon post URL |
 | `extractMastodonUsername(postUrl)` | 👤 Extract username from Mastodon post URL |
+| `Mastodon.toDarkMode(html)` | 🌑 Post-process Mastodon oEmbed HTML to replace light-mode inline styles with dark-mode colors |
+| `Mastodon.needsDarkModeUpdate(section)` | 🔍 Detect a Mastodon embed with light-mode inline styles |
+| `Mastodon.needsEmbedRegeneration(section)` | 🔍 Detect whether a Mastodon section needs dark mode regeneration |
+| `Mastodon.extractRegenerationUrl(section)` | 🔗 Extract post URL from Mastodon embed for regeneration |
+| `Mastodon.replaceSectionContent(content, embedHtml)` | 🔄 Replace Mastodon section content with new embed HTML |
 | `generateLocalEmbed(tweetId, text, date)` | 🖼️ Generate local Twitter blockquote HTML |
 | `generateLocalMastodonEmbed(postUrl, text, date)` | 🖼️ Generate local Mastodon iframe HTML |
 | `createSectionBuilder(header)` | 🔧 Factory for pure embed section builders |
@@ -238,6 +246,7 @@
 | `fetchMastodonOEmbed(postUrl)` | 🖼️ Fetch Mastodon oEmbed HTML |
 | `getMastodonEmbedHtml(postUrl, text, date)` | 🖼️ Get Mastodon embed with oEmbed-to-iframe fallback |
 | `regenerateBlueskyEmbeds(manager, vaultDir)` | 🔄 Scan vault for Bluesky sections needing regeneration (placeholder links and broken embeds) and replace with oEmbed HTML |
+| `regenerateMastodonEmbeds(manager, vaultDir)` | 🔄 Scan vault for Mastodon sections with light-mode inline styles and replace with dark-mode oEmbed HTML |
 | `fetchOgMetadata(url)` | 🔍 Extract OpenGraph metadata from URL via UTF-8 decoded HTTP response |
 | `extractOgProperty(property, html)` | 🔍 Pure extraction of a single OG property from HTML text |
 | `fetchImageAsBuffer(imageUrl)` | 📷 Fetch image as lazy ByteString buffer |

@@ -169,6 +169,11 @@ needsEmbedRegenerationTests = testGroup "needsEmbedRegeneration"
         not $ Bluesky.needsEmbedRegeneration
           "<blockquote class=\"bluesky-embed\" data-bluesky-uri=\"at://did:plc:abc/app.bsky.feed.post/xyz\"><p lang=\"en\">Hello world, this is a real post</p></blockquote>"
 
+  , testCase "does not detect valid system-mode embed as needing regeneration" $
+      assertBool "valid system-mode embed should not need regeneration" $
+        not $ Bluesky.needsEmbedRegeneration
+          "<blockquote class=\"bluesky-embed\" data-bluesky-uri=\"https://bsky.app/profile/bagrounds.bsky.social/post/3abc\" data-bluesky-embed-color-mode=\"system\"><p lang=\"en\">Real post content here</p></blockquote>"
+
   , testCase "does not detect empty text as needing regeneration" $
       assertBool "empty should not need regeneration" $
         not $ Bluesky.needsEmbedRegeneration ""

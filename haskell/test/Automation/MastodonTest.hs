@@ -21,6 +21,11 @@ tests = testGroup "Mastodon"
   , parseMastodonResponseTests
   , parseOEmbedHtmlTests
   , classifyExceptionTests
+  , toDarkModeTests
+  , needsDarkModeUpdateTests
+  , needsEmbedRegenerationTests
+  , extractRegenerationUrlTests
+  , replaceSectionContentTests
   , propertyTests
   ]
 
@@ -197,6 +202,113 @@ classifyExceptionTests = testGroup "Mastodon.classifyException"
            other -> fail $ "Expected NetworkError, got: " <> show other
   ]
 
+toDarkModeTests :: TestTree
+toDarkModeTests = testGroup "Mastodon.toDarkMode"
+  [ testCase "replaces light background with dark" $ do
+      let input = "<blockquote class=\"mastodon-embed\" style=\"background: #FCF8FF; border: 1px solid #C9C4DA;\">content</blockquote>"
+          result = Mastodon.toDarkMode input
+      assertBool "should have dark background" $
+        "background: #282c37" `T.isInfixOf` result
+      assertBool "should have dark border" $
+        "border: 1px solid #393f4f" `T.isInfixOf` result
+
+  , testCase "replaces light text colors with dark" $ do
+      let input = "<a style=\"color: #1C1A25;\"><div style=\"color: #787588;\">text</div></a>"
+          result = Mastodon.toDarkMode input
+      assertBool "should have light text color" $
+        "color: #d9e1e8" `T.isInfixOf` result
+      assertBool "should have muted text color" $
+        "color: #9baec8" `T.isInfixOf` result
+
+  , testCase "does not modify already-dark embed" $ do
+      let input = "<blockquote class=\"mastodon-embed\" style=\"background: #282c37; border: 1px solid #393f4f;\">content</blockquote>"
+      Mastodon.toDarkMode input @?= input
+
+  , testCase "handles full oEmbed HTML" $ do
+      let result = Mastodon.toDarkMode mastodonLightEmbed
+      assertBool "should contain dark background" $
+        "background: #282c37" `T.isInfixOf` result
+      assertBool "should not contain light background" $
+        not ("background: #FCF8FF" `T.isInfixOf` result)
+  ]
+
+needsDarkModeUpdateTests :: TestTree
+needsDarkModeUpdateTests = testGroup "Mastodon.needsDarkModeUpdate"
+  [ testCase "detects light-mode mastodon embed" $
+      assertBool "light embed should need update" $
+        Mastodon.needsDarkModeUpdate mastodonLightEmbed
+
+  , testCase "does not flag dark-mode mastodon embed" $
+      assertBool "dark embed should not need update" $
+        not $ Mastodon.needsDarkModeUpdate
+          "<blockquote class=\"mastodon-embed\" style=\"background: #282c37;\">content</blockquote>"
+
+  , testCase "does not flag non-mastodon content" $
+      assertBool "non-mastodon should not need update" $
+        not $ Mastodon.needsDarkModeUpdate "background: #FCF8FF"
+
+  , testCase "does not flag empty text" $
+      assertBool "empty should not need update" $
+        not $ Mastodon.needsDarkModeUpdate ""
+  ]
+
+needsEmbedRegenerationTests :: TestTree
+needsEmbedRegenerationTests = testGroup "Mastodon.needsEmbedRegeneration"
+  [ testCase "detects light-mode embed as needing regeneration" $
+      assertBool "light embed should need regeneration" $
+        Mastodon.needsEmbedRegeneration mastodonLightEmbed
+
+  , testCase "does not flag dark embed" $
+      assertBool "dark embed should not need regeneration" $
+        not $ Mastodon.needsEmbedRegeneration
+          "<blockquote class=\"mastodon-embed\" style=\"background: #282c37;\">content</blockquote>"
+  ]
+
+extractRegenerationUrlTests :: TestTree
+extractRegenerationUrlTests = testGroup "Mastodon.extractRegenerationUrl"
+  [ testCase "extracts URL from data-embed-url attribute" $
+      let input = "<blockquote class=\"mastodon-embed\" data-embed-url=\"https://mastodon.social/@bagrounds/123/embed\" style=\"background: #FCF8FF; color: #1C1A25;\">content</blockquote>"
+      in Mastodon.extractRegenerationUrl input
+           @?= Just "https://mastodon.social/@bagrounds/123"
+
+  , testCase "extracts URL from href when data-embed-url missing" $
+      let input = "<blockquote class=\"mastodon-embed\" style=\"background: #FCF8FF; color: #1C1A25;\"><a href=\"https://mastodon.social/@bagrounds/456\">link</a></blockquote>"
+      in Mastodon.extractRegenerationUrl input
+           @?= Just "https://mastodon.social/@bagrounds/456"
+
+  , testCase "returns Nothing for dark embed" $
+      let input = "<blockquote class=\"mastodon-embed\" style=\"background: #282c37;\">content</blockquote>"
+      in Mastodon.extractRegenerationUrl input
+           @?= Nothing
+  ]
+
+replaceSectionContentTests :: TestTree
+replaceSectionContentTests = testGroup "Mastodon.replaceSectionContent"
+  [ testCase "replaces mastodon section content" $ do
+      let content = T.unlines
+            [ "# My Note"
+            , ""
+            , "## 🐘 Mastodon"
+            , mastodonLightEmbed
+            , ""
+            , "## 🐦 Tweet"
+            , "<blockquote>tweet</blockquote>"
+            ]
+          newEmbed = "<blockquote class=\"mastodon-embed\" style=\"background: #282c37;\">dark embed</blockquote>"
+          result = Mastodon.replaceSectionContent content newEmbed
+      assertBool "should contain new dark embed" $
+        newEmbed `T.isInfixOf` result
+      assertBool "should not contain old light embed" $
+        not ("background: #FCF8FF" `T.isInfixOf` result)
+      assertBool "should preserve tweet section" $
+        "## 🐦 Tweet" `T.isInfixOf` result
+
+  , testCase "does not modify file without Mastodon section" $ do
+      let content = "# My Note\nSome content\n"
+          result = Mastodon.replaceSectionContent content "<embed/>"
+      result @?= content
+  ]
+
 -- ── Property Tests ─────────────────────────────────────────────────────
 
 propertyTests :: TestTree
@@ -254,9 +366,25 @@ propertyTests = testGroup "properties"
              Left (Mastodon.ExtractionError _) -> True
              Right _                            -> True
              _                                  -> False
+
+  , testProperty "toDarkMode is idempotent" $
+      \suffix ->
+        let base = "<blockquote class=\"mastodon-embed\" style=\"background: #FCF8FF; color: #1C1A25;\">" <> T.pack suffix <> "</blockquote>"
+            once = Mastodon.toDarkMode base
+            twice = Mastodon.toDarkMode once
+        in once == twice
+
+  , testProperty "toDarkMode removes all light background references" $
+      \suffix ->
+        let input = "<blockquote class=\"mastodon-embed\" style=\"background: #FCF8FF;\">" <> T.pack suffix <> "</blockquote>"
+            result = Mastodon.toDarkMode input
+        in not ("background: #FCF8FF" `T.isInfixOf` result)
   ]
 
 -- ── Helpers ───────────────────────────────────────────────────────────
+
+mastodonLightEmbed :: T.Text
+mastodonLightEmbed = "<blockquote class=\"mastodon-embed\" data-embed-url=\"https://mastodon.social/@bagrounds/116285079002713407/embed\" style=\"background: #FCF8FF; border-radius: 8px; border: 1px solid #C9C4DA; margin: 0; max-width: 540px; min-width: 270px; overflow: hidden; padding: 0;\"> <a href=\"https://mastodon.social/@bagrounds/116285079002713407\" target=\"_blank\" style=\"align-items: center; color: #1C1A25; display: flex; flex-direction: column;\">View on Mastodon</a> </blockquote> <script data-allowed-prefixes=\"https://mastodon.social/\" async src=\"https://mastodon.social/embed.js\"></script>"
 
 toLBS :: String -> LBS.ByteString
 toLBS = LBS.fromStrict . TE.encodeUtf8 . T.pack

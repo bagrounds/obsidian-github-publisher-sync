@@ -141,9 +141,9 @@
 🔗 Extracts DID and post ID from AT Protocol URIs using pure parsing functions.
 ⏳ Embed retrieval uses a configurable `OEmbedConfig` record with initial delay, retry delay, and max attempts. The default configuration uses 3 attempts with a 3-second initial and retry delay, since new posts may not be immediately available via oEmbed.
 🔗 When oEmbed fails after all retries, a placeholder link to the Bluesky post URL is stored instead of a broken local embed.
-🐛 The system detects three types of content needing regeneration: placeholder links (bare URLs without blockquotes), broken embeds (blockquotes whose paragraph content contains a raw DID string), and non-dark-mode embeds (blockquotes with `data-bluesky-embed-color-mode` set to a value other than `"dark"`).
-🔄 On each social posting run, the system scans the vault for Bluesky sections needing regeneration, extracts the post URL from either the placeholder link, the broken embed's data-bluesky-uri attribute, or the valid embed's data-bluesky-uri attribute, and attempts to replace it with proper dark-mode oEmbed HTML.
-🌑 All new Bluesky embeds are automatically post-processed to use `data-bluesky-embed-color-mode="dark"` for dark mode rendering. The `toDarkMode` pure function replaces any existing color mode value with `"dark"`.
+🐛 The system detects two types of content needing regeneration: placeholder links (bare URLs without blockquotes) and broken embeds (blockquotes whose paragraph content contains a raw DID string instead of post text, caused by a historic argument-order bug).
+🔄 On each social posting run, the system scans the vault for Bluesky sections needing regeneration, extracts the post URL from either the placeholder link or the broken embed's data-bluesky-uri attribute, and attempts to replace it with proper oEmbed HTML.
+🌗 Bluesky embeds use `data-bluesky-embed-color-mode="system"` (the oEmbed API default), which follows the user's OS `prefers-color-scheme` media query. This syncs with the Quartz site's dark mode, which also defaults to the OS preference.
 📝 The `Url` domain type is used for post URLs throughout the embed pipeline to prevent primitive obsession bugs.
 
 ## 🐘 Mastodon Integration
@@ -205,11 +205,9 @@
 | `extractBlueskyPostId(uri)` | 🔗 Extract post ID from AT Protocol URI |
 | `extractBlueskyDid(uri)` | 🔗 Extract DID from AT Protocol URI |
 | `buildBlueskyPostUrl(did, postId)` | 🔗 Construct Bluesky profile post URL |
-| `needsEmbedRegeneration(section)` | 🔍 Detect whether a Bluesky section needs regeneration (placeholder, broken embed, or non-dark-mode embed) |
+| `needsEmbedRegeneration(section)` | 🔍 Detect whether a Bluesky section needs regeneration (placeholder or broken embed) |
 | `isBrokenEmbed(section)` | 🔍 Detect a garbled local embed by checking for raw DID in paragraph content |
-| `Bluesky.toDarkMode(html)` | 🌑 Post-process Bluesky embed HTML to set `data-bluesky-embed-color-mode="dark"` |
-| `Bluesky.needsDarkModeUpdate(section)` | 🔍 Detect a Bluesky embed with non-dark color mode attribute |
-| `extractRegenerationUrl(section)` | 🔗 Extract a usable post URL from a placeholder link, broken embed, or non-dark embed |
+| `extractRegenerationUrl(section)` | 🔗 Extract a usable post URL from a placeholder link or broken embed |
 | `extractPostUrlFromBrokenEmbed(section)` | 🔗 Extract post URL from data-bluesky-uri attribute in broken embed HTML |
 | `Bluesky.replaceSectionContent(content, embedHtml)` | 🔄 Replace Bluesky section content with new embed HTML |
 | `extractMastodonInstanceUrl(postUrl)` | 🌐 Extract instance URL from Mastodon post URL |
@@ -247,7 +245,7 @@
 | `deleteMastodonPost(statusId, credentials)` | 🗑️ Delete Mastodon status |
 | `fetchMastodonOEmbed(postUrl)` | 🖼️ Fetch Mastodon oEmbed HTML |
 | `getMastodonEmbedHtml(postUrl, text, date)` | 🖼️ Get Mastodon embed with oEmbed-to-iframe fallback |
-| `regenerateBlueskyEmbeds(manager, vaultDir)` | 🔄 Scan vault for Bluesky sections needing regeneration (placeholder links, broken embeds, and non-dark-mode embeds) and replace with dark-mode oEmbed HTML |
+| `regenerateBlueskyEmbeds(manager, vaultDir)` | 🔄 Scan vault for Bluesky sections needing regeneration (placeholder links and broken embeds) and replace with oEmbed HTML |
 | `regenerateMastodonEmbeds(manager, vaultDir)` | 🔄 Scan vault for Mastodon sections with light-mode inline styles and replace with dark-mode oEmbed HTML |
 | `fetchOgMetadata(url)` | 🔍 Extract OpenGraph metadata from URL via UTF-8 decoded HTTP response |
 | `extractOgProperty(property, html)` | 🔍 Pure extraction of a single OG property from HTML text |

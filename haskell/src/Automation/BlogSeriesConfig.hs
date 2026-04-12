@@ -18,7 +18,7 @@ data BlogSeriesConfig = BlogSeriesConfig
   , bscBaseUrl      :: Text
   , bscPriorityUser :: Maybe Text
   , bscNavLink      :: Text
-  , bscPostTimeUtc  :: Text
+  , bscScheduleHourPacific :: Int
   } deriving (Show, Eq)
 
 lookupSeriesIn :: Map Text BlogSeriesConfig -> Text -> Either Text BlogSeriesConfig

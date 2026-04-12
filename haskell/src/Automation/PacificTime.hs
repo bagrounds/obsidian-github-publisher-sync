@@ -4,6 +4,7 @@ module Automation.PacificTime
   , formatDayHuman
   , pacificTimeZone
   , pacificHour
+  , pacificToUtcHour
   ) where
 
 import Data.Text (Text)
@@ -22,6 +23,7 @@ import Data.Time
   , localDay
   , localTimeOfDay
   , secondsToDiffTime
+  , timeZoneMinutes
   , todHour
   , toGregorian
   , utcToLocalTime
@@ -43,6 +45,12 @@ todayPacificDay = do
 pacificHour :: UTCTime -> Int
 pacificHour utcNow =
   todHour (localTimeOfDay (utcToLocalTime (pacificTimeZone utcNow) utcNow))
+
+pacificToUtcHour :: Int -> Day -> Int
+pacificToUtcHour hour day =
+  let referenceUtc = UTCTime day (secondsToDiffTime (12 * 3600))
+      offsetMinutes = timeZoneMinutes (pacificTimeZone referenceUtc)
+  in (hour - (offsetMinutes `div` 60)) `mod` 24
 
 pacificTimeZone :: UTCTime -> TimeZone
 pacificTimeZone utcNow

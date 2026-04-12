@@ -47,7 +47,7 @@ sampleSeries = BlogSeriesConfig
   , bscBaseUrl = "https://bagrounds.org/the-noise"
   , bscPriorityUser = Just "bagrounds"
   , bscNavLink = "[[index|Home]] > [[the-noise/index|\128240 The Noise]]"
-  , bscPostTimeUtc = "14:00"
+  , bscScheduleHourPacific = 6
   }
 
 generateSeriesIndexTests :: TestTree

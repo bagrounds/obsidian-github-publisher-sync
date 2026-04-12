@@ -62,7 +62,7 @@ parseSeriesConfigTests = testGroup "parseSeriesConfig"
         @?= (Gemini.Gemini25Flash :| [Gemini.Gemini25FlashLite])
 
   , testCase "extracts correct post time" $
-      dsPostTimeUtc (unsafeParse "garden-thoughts" minimalConfig) @?= "19:00"
+      dsScheduleHourPacific (unsafeParse "garden-thoughts" minimalConfig) @?= 11
 
   , testCase "extracts priority user" $
       dsPriorityUser (unsafeParse "garden-thoughts" minimalConfig) @?= Just "bagrounds"
@@ -83,8 +83,7 @@ parseSeriesConfigTests = testGroup "parseSeriesConfig"
             , "  \"icon\": \"\129302\","
             , "  \"priorityUser\": \"bagrounds\","
             , "  \"scheduleHourPacific\": 8,"
-            , "  \"models\": [\"gemini-3.1-flash-lite-preview\", \"gemini-3-flash-preview\"],"
-            , "  \"postTimeUtc\": \"16:00\""
+            , "  \"models\": [\"gemini-3.1-flash-lite-preview\", \"gemini-3-flash-preview\"]"
             , "}"
             ]
           discovered = unsafeParse "auto-blog-zero" config
@@ -225,8 +224,7 @@ minimalConfig = T.unlines
   , "  \"icon\": \"\129793\","
   , "  \"priorityUser\": \"bagrounds\","
   , "  \"scheduleHourPacific\": 11,"
-  , "  \"models\": [\"gemini-2.5-flash\", \"gemini-2.5-flash-lite\"],"
-  , "  \"postTimeUtc\": \"19:00\""
+  , "  \"models\": [\"gemini-2.5-flash\", \"gemini-2.5-flash-lite\"]"
   , "}"
   ]
 
@@ -236,8 +234,7 @@ configWithoutPriorityUser = T.unlines
   , "  \"name\": \"Solo Bot\","
   , "  \"icon\": \"\129302\","
   , "  \"scheduleHourPacific\": 6,"
-  , "  \"models\": [\"gemini-2.5-flash\"],"
-  , "  \"postTimeUtc\": \"14:00\""
+  , "  \"models\": [\"gemini-2.5-flash\"]"
   , "}"
   ]
 
@@ -248,8 +245,7 @@ configWithNullPriorityUser = T.unlines
   , "  \"icon\": \"\129302\","
   , "  \"priorityUser\": null,"
   , "  \"scheduleHourPacific\": 6,"
-  , "  \"models\": [\"gemini-2.5-flash\"],"
-  , "  \"postTimeUtc\": \"14:00\""
+  , "  \"models\": [\"gemini-2.5-flash\"]"
   , "}"
   ]
 
@@ -258,8 +254,7 @@ configMissingName = T.unlines
   [ "{"
   , "  \"icon\": \"\129793\","
   , "  \"scheduleHourPacific\": 11,"
-  , "  \"models\": [\"gemini-2.5-flash\"],"
-  , "  \"postTimeUtc\": \"19:00\""
+  , "  \"models\": [\"gemini-2.5-flash\"]"
   , "}"
   ]
 
@@ -269,8 +264,7 @@ configEmptyModels = T.unlines
   , "  \"name\": \"Empty Models\","
   , "  \"icon\": \"\10060\","
   , "  \"scheduleHourPacific\": 11,"
-  , "  \"models\": [],"
-  , "  \"postTimeUtc\": \"19:00\""
+  , "  \"models\": []"
   , "}"
   ]
 
@@ -280,8 +274,7 @@ configNoPriorityUser = T.unlines
   , "  \"name\": \"No Priority\","
   , "  \"icon\": \"\128736\","
   , "  \"scheduleHourPacific\": 11,"
-  , "  \"models\": [\"gemini-2.5-flash\"],"
-  , "  \"postTimeUtc\": \"19:00\""
+  , "  \"models\": [\"gemini-2.5-flash\"]"
   , "}"
   ]
 
@@ -293,7 +286,6 @@ sampleDiscovered = DiscoveredSeries
   , dsPriorityUser = Just "bagrounds"
   , dsScheduleHourPacific = 11
   , dsModels = Gemini.Gemini25Flash :| [Gemini.Gemini25FlashLite]
-  , dsPostTimeUtc = "19:00"
   }
 
 genSeriesId :: QC.Gen T.Text
@@ -317,5 +309,4 @@ genDiscoveredSeries = do
     , dsPriorityUser = priorityUser
     , dsScheduleHourPacific = hour
     , dsModels = Gemini.Gemini25Flash :| []
-    , dsPostTimeUtc = "16:00"
     }

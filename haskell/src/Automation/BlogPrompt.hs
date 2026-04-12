@@ -34,7 +34,7 @@ import Automation.BlogComments (BlogComment (..))
 import Automation.BlogPosts (BlogPost (..))
 import Automation.BlogSeriesConfig (BlogSeriesConfig (..))
 import Automation.Frontmatter (quoteYamlValue)
-import Automation.PacificTime (formatDay, formatDayHuman)
+import Automation.PacificTime (formatDay, formatDayHuman, pacificToUtcHour)
 import Automation.Text (isEmoji)
 import qualified Automation.Platforms.Bluesky as Bluesky
 import qualified Automation.Platforms.Mastodon as Mastodon
@@ -84,7 +84,10 @@ buildBlogPrompt ctx =
 filterCommentsAfterLastPost :: BlogSeriesConfig -> [BlogPost] -> [BlogComment] -> [BlogComment]
 filterCommentsAfterLastPost _ [] comments = comments
 filterCommentsAfterLastPost series (latestPost : _) comments =
-  let cutoff = bpDate latestPost <> "T" <> bscPostTimeUtc series <> ":00Z"
+  let postDay = fromMaybe (fromGregorian 2026 1 1) (parseDate (bpDate latestPost))
+      utcHour = pacificToUtcHour (bscScheduleHourPacific series) postDay
+      utcTimeText = (if utcHour < 10 then "0" else "") <> T.pack (show utcHour) <> ":00"
+      cutoff = bpDate latestPost <> "T" <> utcTimeText <> ":00Z"
   in filter (\c -> bcCreatedAt c >= cutoff) comments
 
 buildBackLink :: BlogSeriesConfig -> Text -> Text

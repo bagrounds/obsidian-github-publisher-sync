@@ -30,7 +30,7 @@ sampleSeries = BlogSeriesConfig
   , bscBaseUrl      = "https://bagrounds.org/auto-blog-zero"
   , bscPriorityUser = Just "bagrounds"
   , bscNavLink      = "[[index|Home]] > [[auto-blog-zero/index|🤖 Auto Blog Zero]]"
-  , bscPostTimeUtc  = "16:00"
+  , bscScheduleHourPacific = 8
   }
 
 --------------------------------------------------------------------------------

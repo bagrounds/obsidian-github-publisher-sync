@@ -35,7 +35,7 @@ aiBlogConfig = BlogSeriesConfig
   , bscBaseUrl      = "https://bagrounds.org/ai-blog"
   , bscPriorityUser = Nothing
   , bscNavLink      = "[[index|🏡 Home]] > [[/ai-blog/index|🤖 AI Blog]]"
-  , bscPostTimeUtc  = ""
+  , bscScheduleHourPacific = 0
   }
 
 aiBlogNavPrefix :: Text

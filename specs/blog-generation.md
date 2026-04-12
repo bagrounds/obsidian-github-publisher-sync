@@ -49,15 +49,15 @@
 
 ## 📚 Blog Series Configuration
 
-📋 Three series are currently defined in `haskell/series/*.dhall`, each auto-discovered at runtime.
+📋 Five series are currently defined in `haskell/series/*.json`, each auto-discovered at runtime.
 
-| 🏷️ Series ID | 🎨 Icon | ⏰ Post Time (UTC) | ⭐ Priority User | 🌐 Base URL |
+| 🏷️ Series ID | 🎨 Icon | ⏰ Schedule Hour (Pacific) | ⭐ Priority User | 🌐 Base URL |
 |---|---|---|---|---|
-| 📰 the-noise | 📰 | 14:00 | bagrounds | bagrounds.org/the-noise |
-| 🤖 auto-blog-zero | 🤖 | 16:00 | bagrounds | bagrounds.org/auto-blog-zero |
-| 🐔 chickie-loo | 🐔 | 15:00 | ChickieLoo | bagrounds.org/chickie-loo |
-| 🏛️ systems-for-public-good | 🏛️ | 17:00 | bagrounds | bagrounds.org/systems-for-public-good |
-| 🌟 positivity-bias | 🌟 | 14:00 | bagrounds | bagrounds.org/positivity-bias |
+| 📰 the-noise | 📰 | 6 AM | bagrounds | bagrounds.org/the-noise |
+| 🤖 auto-blog-zero | 🤖 | 8 AM | bagrounds | bagrounds.org/auto-blog-zero |
+| 🐔 chickie-loo | 🐔 | 7 AM | ChickieLoo | bagrounds.org/chickie-loo |
+| 🏛️ systems-for-public-good | 🏛️ | 9 AM | bagrounds | bagrounds.org/systems-for-public-good |
+| 🌟 positivity-bias | 🌟 | 6 AM | bagrounds | bagrounds.org/positivity-bias |
 
 📌 Each series also defines a `navLink` in wikilink format for breadcrumb navigation.
 📦 `BACKFILL_CONTENT_IDS` combines all series IDs with `reflections` and `ai-blog` for indexing operations.
@@ -138,6 +138,7 @@
 | `formatDay(day)` | PacificTime | 📅 Format Day as YYYY-MM-DD text |
 | `formatDayHuman(day)` | PacificTime | 📅 Format Day as "Saturday, April 11, 2026" for AI prompts |
 | `pacificHour(utcTime)` | PacificTime | 🕐 Convert UTC time to Pacific hour (0-23) |
+| `pacificToUtcHour(hour, day)` | PacificTime | 🕐 Convert Pacific hour to UTC hour accounting for PST/PDT |
 | `buildBlogPrompt(context)` | BlogPrompt | 🧠 Construct system and user prompts from blog context |
 | `filterCommentsAfterLastPost(series, posts, comments)` | BlogPrompt | 📅 Filter comments to those after most recent post |
 | `buildBackLink(series, filename)` | BlogPrompt | ⏮️ Create wikilink navigation to previous post |
@@ -178,6 +179,7 @@
 - 📅 `formatDay`: YYYY-MM-DD formatting with zero-padding
 - 📅 `formatDayHuman`: full human-readable date with day of week, month name, day, and year
 - 🕐 `pacificHour`: PST/PDT conversion with property-based range validation
+- 🕐 `pacificToUtcHour`: reverse conversion from Pacific hour to UTC hour accounting for DST
 
 ## 🆕 How to Create a New Fully Automated Blog Series
 

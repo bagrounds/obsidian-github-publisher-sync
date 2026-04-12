@@ -8,6 +8,8 @@ module Automation.Text
   , fitPostToLimit
   , wordJaccardSimilarity
   , stripCodeFences
+  , isEmoji
+  , isEmojiOrSpace
   ) where
 
 import Data.Maybe (fromMaybe)
@@ -218,3 +220,28 @@ stripCodeFences text =
           Just rest -> rest
           Nothing -> fromMaybe text (T.stripPrefix "```\n" text)
   in fromMaybe withoutPrefix (T.stripSuffix "\n```" withoutPrefix)
+
+-- Unicode TR#51 Extended_Pictographic property.
+-- Consolidated ranges from emoji-data.txt (Unicode 17.0, 2025-07-25).
+-- Source: https://www.unicode.org/Public/UCD/latest/ucd/emoji/emoji-data.txt
+isEmoji :: Char -> Bool
+isEmoji c =
+  c == '\x00A9' || c == '\x00AE'
+    || c == '\x203C' || c == '\x2049'
+    || c == '\x2122' || c == '\x2139'
+    || (c >= '\x2194' && c <= '\x21AA')
+    || (c >= '\x231A' && c <= '\x23FA')
+    || c == '\x24C2'
+    || (c >= '\x25AA' && c <= '\x25FE')
+    || (c >= '\x2600' && c <= '\x27BF')
+    || (c >= '\x2934' && c <= '\x2935')
+    || (c >= '\x2B05' && c <= '\x2B55')
+    || c == '\x3030' || c == '\x303D' || c == '\x3297' || c == '\x3299'
+    || (c >= '\x1F000' && c <= '\x1FFFD')
+
+isEmojiOrSpace :: Char -> Bool
+isEmojiOrSpace c =
+  c == ' '
+    || c == '\x200D'
+    || c == '\xFE0F'
+    || isEmoji c

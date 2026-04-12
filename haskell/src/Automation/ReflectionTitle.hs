@@ -25,6 +25,7 @@ import System.FilePath (takeExtension)
 
 import Automation.Types (updatesSectionHeader)
 import Automation.Frontmatter (parseFrontmatter)
+import Automation.Text (isEmoji, isEmojiOrSpace)
 import qualified Automation.Gemini as Gemini
 
 defaultTitleModel :: Gemini.Model
@@ -43,21 +44,6 @@ extractHeadingEmojis heading =
         _ -> T.strip linkContent
       emojiChars = T.takeWhile isEmojiOrSpace pipeContent
   in T.strip emojiChars
-
-isEmojiOrSpace :: Char -> Bool
-isEmojiOrSpace c =
-  c == ' '
-    || c == '\x200d'
-    || c == '\xfe0f'
-    || (c >= '\x1f300' && c <= '\x1faff')
-    || (c >= '\x2600' && c <= '\x27bf')
-    || (c >= '\x2300' && c <= '\x23ff')
-    || (c >= '\x2702' && c <= '\x27b0')
-    || (c >= '\x1f600' && c <= '\x1f64f')
-    || (c >= '\x1f680' && c <= '\x1f6ff')
-    || (c >= '\x1f900' && c <= '\x1f9ff')
-    || (c >= '\x1fa00' && c <= '\x1fa6f')
-    || (c >= '\x1fa70' && c <= '\x1faff')
 
 isUpdatesSectionHeading :: Text -> Bool
 isUpdatesSectionHeading l = T.stripEnd l == updatesSectionHeader
@@ -188,18 +174,6 @@ startsWithEmoji :: Text -> Bool
 startsWithEmoji t = case T.uncons t of
   Just (c, _) -> isEmoji c
   Nothing -> False
-
-isEmoji :: Char -> Bool
-isEmoji c =
-  (c >= '\x1f300' && c <= '\x1faff')
-    || (c >= '\x2600' && c <= '\x27bf')
-    || (c >= '\x2300' && c <= '\x23ff')
-    || (c >= '\x2702' && c <= '\x27b0')
-    || (c >= '\x1f600' && c <= '\x1f64f')
-    || (c >= '\x1f680' && c <= '\x1f6ff')
-    || (c >= '\x1f900' && c <= '\x1f9ff')
-    || (c >= '\x1fa00' && c <= '\x1fa6f')
-    || (c >= '\x1fa70' && c <= '\x1faff')
 
 stripInlinePreamble :: Text -> Text
 stripInlinePreamble t =

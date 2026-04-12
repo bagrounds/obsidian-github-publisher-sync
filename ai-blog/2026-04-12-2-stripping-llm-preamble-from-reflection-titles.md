@@ -36,9 +36,17 @@ URL: https://bagrounds.org/ai-blog/2026-04-12-2-stripping-llm-preamble-from-refl
 
 🔄 When no emoji is found at all, the parser falls back to the original behavior of taking the first line, maintaining backward compatibility with any edge cases.
 
+## 📦 Consolidating Emoji Detection
+
+🔍 During this work, we discovered three independent, ad-hoc emoji detection implementations scattered across ReflectionTitle, BlogPrompt, and InternalLinking. 🧹 Each had slightly different code point ranges and none referenced an official source.
+
+📐 No standard Haskell library provides character-level emoji detection. 📚 The emojis package on Hackage handles name and alias lookup, and unicode-data covers general Unicode properties, but neither exposes a simple predicate for the Extended Pictographic property.
+
+🏛️ We consolidated all three implementations into a single authoritative version in the Automation.Text module, sourced from the Unicode Consortium's official emoji-data.txt file (Unicode 17.0, UTS number 51). 📋 The implementation uses the Extended Pictographic property, which covers all characters that should be rendered as emoji, consolidated from 452 individual entries into practical range groups.
+
 ## 🧪 Testing
 
-📊 Seven new test cases were added covering the preamble stripping scenarios. 📝 These include single-line preamble with "Here's an attempt:", multi-line responses where preamble is on its own line, multi-line thinking output before the title, "Title:" prefix, "Sure!" prefix, clean emoji titles that should pass through unchanged, and empty input. 🟢 All 1526 tests pass.
+📊 Seven new preamble stripping test cases plus 17 emoji detection test cases were added. 📝 The preamble tests cover single-line preamble, multi-line responses, thinking output, various prefix patterns, clean emoji pass-through, and empty input. 🔬 The emoji detection tests verify common pictographic emojis, special symbols like copyright and registered signs, variation selectors, the zero-width joiner, and rejection of ASCII characters, CJK text, and Latin-1 characters. 🟢 All 1543 tests pass.
 
 ## 💡 Lessons Learned
 

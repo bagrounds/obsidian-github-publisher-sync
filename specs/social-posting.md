@@ -115,7 +115,7 @@
    │    ├─ fetchOgMetadata() → title, description, imageUrl
    │    ├─ fetchImageAsBuffer() → thumbnail for link card
    │    ├─ postToBluesky() → AT Protocol with RichText facets
-   │    └─ getBlueskyEmbedHtml() → oEmbed with propagation retry
+   │    └─ getBlueskyEmbedHtml() → oEmbed with retry, placeholder link fallback
    │
    └─ 🐘 Mastodon path:
         ├─ postToMastodon() → REST API public status
@@ -139,8 +139,10 @@
 📤 Posts via the AT Protocol API with automatic RichText facet detection for clickable links and mentions.
 🖼️ Supports rich link card embeds with title, description, and optional thumbnail image upload.
 🔗 Extracts DID and post ID from AT Protocol URIs using pure parsing functions.
-⏳ Embed retrieval includes a propagation delay retry with up to 2 attempts and a 2-second retry delay, since new posts may not be immediately available via oEmbed.
-📝 Local embed fallback generates blockquote HTML with `data-bluesky-uri` and `data-bluesky-cid` attributes.
+⏳ Embed retrieval includes a propagation delay retry with up to 3 attempts and a 3-second initial and retry delay, since new posts may not be immediately available via oEmbed.
+🔗 When oEmbed fails after all retries, a placeholder link to the Bluesky post is stored instead of a broken local embed.
+🔄 On each social posting run, the system scans the vault for Bluesky sections containing placeholder links and attempts to regenerate them into proper oEmbed HTML.
+📝 Local embed generation function (`generateLocalEmbed`) is retained for testing and potential manual use, but is no longer used as the automatic fallback.
 
 ## 🐘 Mastodon Integration
 
@@ -199,6 +201,9 @@
 | `extractBlueskyPostId(uri)` | 🔗 Extract post ID from AT Protocol URI |
 | `extractBlueskyDid(uri)` | 🔗 Extract DID from AT Protocol URI |
 | `buildBlueskyPostUrl(did, postId)` | 🔗 Construct Bluesky profile post URL |
+| `buildPlaceholderLink(postUrl)` | 🔗 Generate a placeholder link for failed oEmbed |
+| `isPlaceholderLink(section)` | 🔍 Detect whether a Bluesky section contains a placeholder link |
+| `replacePlaceholderWithEmbed(content, embedHtml)` | 🔄 Replace a placeholder link with oEmbed HTML in file content |
 | `extractMastodonInstanceUrl(postUrl)` | 🌐 Extract instance URL from Mastodon post URL |
 | `extractMastodonStatusId(postUrl)` | 🔗 Extract status ID from Mastodon post URL |
 | `extractMastodonUsername(postUrl)` | 👤 Extract username from Mastodon post URL |
@@ -225,11 +230,12 @@
 | `postToBluesky(text, credentials, linkCard?)` | 🦋 Post to Bluesky with optional rich link card |
 | `deleteBlueskyPost(uri, credentials)` | 🗑️ Delete Bluesky post by URI |
 | `fetchBlueskyOEmbed(postUrl)` | 🖼️ Fetch Bluesky oEmbed HTML |
-| `getBlueskyEmbedHtml(uri, text, date, handle, cid?)` | 🖼️ Get Bluesky embed with propagation retry |
+| `getBlueskyEmbedHtml(uri)` | 🖼️ Get Bluesky embed with propagation retry, placeholder link fallback |
 | `postToMastodon(text, credentials)` | 🐘 Post to Mastodon via REST API |
 | `deleteMastodonPost(statusId, credentials)` | 🗑️ Delete Mastodon status |
 | `fetchMastodonOEmbed(postUrl)` | 🖼️ Fetch Mastodon oEmbed HTML |
 | `getMastodonEmbedHtml(postUrl, text, date)` | 🖼️ Get Mastodon embed with oEmbed-to-iframe fallback |
+| `regenerateBlueskyEmbeds(manager, vaultDir)` | 🔄 Scan vault for Bluesky placeholder links and regenerate oEmbed HTML |
 | `fetchOgMetadata(url)` | 🔍 Extract OpenGraph metadata from URL via UTF-8 decoded HTTP response |
 | `extractOgProperty(property, html)` | 🔍 Pure extraction of a single OG property from HTML text |
 | `fetchImageAsBuffer(imageUrl)` | 📷 Fetch image as lazy ByteString buffer |

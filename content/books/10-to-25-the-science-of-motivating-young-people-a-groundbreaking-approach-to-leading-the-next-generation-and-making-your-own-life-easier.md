@@ -6,9 +6,16 @@ URL: https://bagrounds.org/books/10-to-25-the-science-of-motivating-young-people
 share: true
 affiliate link: https://amzn.to/4dSK799
 CTA: 🚀 Guide young adults.
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_time: 2026-04-08T00:00:00Z
+force_analyze_links: false
+image_date: 2026-04-12T13:33:55Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: "A minimalist, modern illustration featuring two distinct silhouettes standing on a gradient-lit platform: an adult and a young person. The adult is slightly crouched, extending a hand in an open, encouraging gesture, while the young person stands tall, looking toward a rising sun on the horizon. Between them, subtle, glowing geometric nodes are connected by faint, luminous lines, representing the wise feedback and mentorship connection. The color palette uses soft, optimistic tones—warm oranges, calm teals, and clean whites—to evoke a sense of growth, clarity, and forward momentum. The background is a clean, uncluttered space, suggesting the transformation from confusion to purpose, emphasizing the bridge between generations without any distracting details."
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🧑‍🤝‍🧑📈 10 to 25: The Science of Motivating Young People: A Groundbreaking Approach to Leading the Next Generation - And Making Your Own Life Easier  
+![books-10-to-25-the-science-of-motivating-young-people-a-groundbreaking-approach-to-leading-the-next-generation-and-making-your-own-life-easier](../books-10-to-25-the-science-of-motivating-young-people-a-groundbreaking-approach-to-leading-the-next-generation-and-making-your-own-life-easier.jpg)  
 [🛒 10 to 25: The Science of Motivating Young People: A Groundbreaking Approach to Leading the Next Generation - And Making Your Own Life Easier. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4dSK799)  
   
 ## 📚 Book Report: 10 to 25: The Science of Motivating Young People  

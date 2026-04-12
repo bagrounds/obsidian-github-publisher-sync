@@ -13,9 +13,13 @@ module Automation.Platforms.Bluesky
   , sectionHeader
   , oembedInitialDelayMs
   , oembedRetryDelayMs
+  , oembedMaxAttempts
   , extractPostId
   , extractDid
   , buildPostUrl
+  , buildPlaceholderLink
+  , isPlaceholderLink
+  , replacePlaceholderWithEmbed
   , post
   , deletePost
   , fetchOEmbed
@@ -110,10 +114,13 @@ sectionHeader :: Text
 sectionHeader = "## 🦋 Bluesky"
 
 oembedInitialDelayMs :: Int
-oembedInitialDelayMs = 0
+oembedInitialDelayMs = 3000
 
 oembedRetryDelayMs :: Int
-oembedRetryDelayMs = 2000
+oembedRetryDelayMs = 3000
+
+oembedMaxAttempts :: Int
+oembedMaxAttempts = 3
 
 -- ── Constants ──────────────────────────────────────────────────────────
 
@@ -477,20 +484,13 @@ generateLocalEmbed uri postText date handle maybeCid =
        <> "</blockquote>"
        <> "<script async src=\"https://embed.bsky.app/static/embed.js\" charset=\"utf-8\"></script>"
 
-getEmbedHtml
-  :: Manager
-  -> Text
-  -> Text
-  -> Text
-  -> Text
-  -> Maybe Text
-  -> IO Text
-getEmbedHtml manager uri postText date handle maybeCid =
+getEmbedHtml :: Manager -> Text -> IO Text
+getEmbedHtml manager uri =
   let did = fromMaybe "" (extractDid uri)
       postId = fromMaybe "" (extractPostId uri)
       postUrl = buildPostUrl did postId
-      fallback = generateLocalEmbed uri postText date handle maybeCid
-  in tryOEmbedWithRetry manager postUrl fallback 0 2
+      fallback = buildPlaceholderLink postUrl
+  in tryOEmbedWithRetry manager postUrl fallback 0 oembedMaxAttempts
 
 tryOEmbedWithRetry :: Manager -> Text -> Text -> Int -> Int -> IO Text
 tryOEmbedWithRetry manager postUrl fallback attempt maxAttempts = do
@@ -505,4 +505,42 @@ tryOEmbedWithRetry manager postUrl fallback attempt maxAttempts = do
     Left (HttpError 404 _)
       | attempt + 1 < maxAttempts ->
           tryOEmbedWithRetry manager postUrl fallback (attempt + 1) maxAttempts
-    Left _ -> pure fallback
+    Left err -> do
+      putStrLn $ "  ⚠️  Bluesky oEmbed failed after " <> show (attempt + 1)
+                   <> " attempts: " <> show err <> " — using placeholder link"
+      pure fallback
+
+buildPlaceholderLink :: Text -> Text
+buildPlaceholderLink postUrl = postUrl
+
+isPlaceholderLink :: Text -> Bool
+isPlaceholderLink section =
+  let trimmed = T.strip section
+      hasUrl = "https://bsky.app/profile/" `T.isInfixOf` trimmed
+      hasBlockquote = "<blockquote" `T.isInfixOf` trimmed
+  in hasUrl && not hasBlockquote
+
+replacePlaceholderWithEmbed :: Text -> Text -> Text
+replacePlaceholderWithEmbed fileContent embedHtml =
+  let sectionStart = sectionHeader
+      lines' = T.lines fileContent
+  in T.unlines (replaceLinesAfterHeader sectionStart embedHtml lines')
+
+replaceLinesAfterHeader :: Text -> Text -> [Text] -> [Text]
+replaceLinesAfterHeader _ _ [] = []
+replaceLinesAfterHeader header embedHtml (line : rest)
+  | header `T.isPrefixOf` T.stripEnd line =
+      let (sectionLines, remaining) = spanSection rest
+          sectionContent = T.unlines sectionLines
+      in if isPlaceholderLink sectionContent
+           then line : T.stripEnd embedHtml : remaining
+           else line : sectionLines <> remaining
+  | otherwise = line : replaceLinesAfterHeader header embedHtml rest
+
+spanSection :: [Text] -> ([Text], [Text])
+spanSection [] = ([], [])
+spanSection (line : rest)
+  | "## " `T.isPrefixOf` T.stripStart line = ([], line : rest)
+  | otherwise =
+      let (sectionRest, remaining) = spanSection rest
+      in (line : sectionRest, remaining)

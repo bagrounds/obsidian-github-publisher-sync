@@ -22,6 +22,9 @@ tests = testGroup "Bluesky"
   , parsePostResponseTests
   , parseOEmbedHtmlTests
   , classifyExceptionTests
+  , placeholderLinkTests
+  , replacePlaceholderTests
+  , buildPlaceholderLinkTests
   , propertyTests
   ]
 
@@ -246,6 +249,81 @@ classifyExceptionTests = testGroup "Bluesky.classifyException"
            other -> fail $ "Expected NetworkError, got: " <> show other
   ]
 
+-- ── Bluesky.isPlaceholderLink ──────────────────────────────────────────
+
+placeholderLinkTests :: TestTree
+placeholderLinkTests = testGroup "Bluesky.isPlaceholderLink"
+  [ testCase "detects plain Bluesky URL as placeholder" $
+      assertBool "plain URL should be placeholder" $
+        Bluesky.isPlaceholderLink "https://bsky.app/profile/did:plc:abc/post/xyz"
+
+  , testCase "detects URL with whitespace as placeholder" $
+      assertBool "URL with surrounding whitespace should be placeholder" $
+        Bluesky.isPlaceholderLink "  \nhttps://bsky.app/profile/did:plc:abc/post/xyz\n  "
+
+  , testCase "does not detect blockquote embed as placeholder" $
+      assertBool "blockquote should not be placeholder" $
+        not $ Bluesky.isPlaceholderLink
+          "<blockquote class=\"bluesky-embed\" data-bluesky-uri=\"at://did:plc:abc/app.bsky.feed.post/xyz\">content</blockquote>"
+
+  , testCase "does not detect empty text as placeholder" $
+      assertBool "empty should not be placeholder" $
+        not $ Bluesky.isPlaceholderLink ""
+
+  , testCase "does not detect non-bluesky URL as placeholder" $
+      assertBool "non-bluesky URL should not be placeholder" $
+        not $ Bluesky.isPlaceholderLink "https://example.com/post/123"
+  ]
+
+-- ── Bluesky.replacePlaceholderWithEmbed ────────────────────────────────
+
+replacePlaceholderTests :: TestTree
+replacePlaceholderTests = testGroup "Bluesky.replacePlaceholderWithEmbed"
+  [ testCase "replaces placeholder URL with embed HTML" $ do
+      let content = T.unlines
+            [ "# My Note"
+            , ""
+            , "## 🦋 Bluesky"
+            , "https://bsky.app/profile/did:plc:abc/post/xyz"
+            , ""
+            , "## 🐘 Mastodon"
+            , "<iframe>mastodon embed</iframe>"
+            ]
+          embedHtml = "<blockquote class=\"bluesky-embed\">real embed</blockquote><script></script>"
+          result = Bluesky.replacePlaceholderWithEmbed content embedHtml
+      assertBool "should contain new embed" $
+        embedHtml `T.isInfixOf` result
+      assertBool "should not contain placeholder URL" $
+        not ("https://bsky.app/profile/did:plc:abc/post/xyz" `T.isInfixOf` result)
+      assertBool "should preserve mastodon section" $
+        "## 🐘 Mastodon" `T.isInfixOf` result
+
+  , testCase "does not modify file without Bluesky section" $ do
+      let content = "# My Note\nSome content\n"
+          result = Bluesky.replacePlaceholderWithEmbed content "<embed/>"
+      result @?= content
+
+  , testCase "does not modify file with existing blockquote embed" $ do
+      let content = T.unlines
+            [ "# My Note"
+            , ""
+            , "## 🦋 Bluesky"
+            , "<blockquote class=\"bluesky-embed\">existing</blockquote>"
+            ]
+          result = Bluesky.replacePlaceholderWithEmbed content "<blockquote>new</blockquote>"
+      assertBool "should still contain existing embed" $
+        "existing" `T.isInfixOf` result
+  ]
+
+-- ── Bluesky.buildPlaceholderLink ──────────────────────────────────────
+
+buildPlaceholderLinkTests :: TestTree
+buildPlaceholderLinkTests = testGroup "Bluesky.buildPlaceholderLink"
+  [ testCase "returns the URL as-is" $
+      Bluesky.buildPlaceholderLink "https://bsky.app/profile/did:plc:abc/post/xyz"
+        @?= "https://bsky.app/profile/did:plc:abc/post/xyz"
+  ]
+
 -- ── Property Tests ─────────────────────────────────────────────────────
 
 propertyTests :: TestTree
@@ -295,6 +373,22 @@ propertyTests = testGroup "properties"
              Left (Bluesky.ExtractionError _) -> True
              Right _                           -> True
              _                                 -> False
+
+  , testProperty "isPlaceholderLink detects bsky.app URLs without blockquotes" $
+      \postId ->
+        let pid = T.pack (filter (`notElem` [' ', '\n', '\r', '\t', '\0']) postId)
+            url = "https://bsky.app/profile/did:plc:test/post/" <> pid
+        in Bluesky.isPlaceholderLink url
+
+  , testProperty "isPlaceholderLink rejects blockquote content" $
+      \postId ->
+        let pid = T.pack (filter (`notElem` [' ', '\n', '\r', '\t', '\0']) postId)
+            content = "<blockquote>https://bsky.app/profile/did:plc:test/post/" <> pid <> "</blockquote>"
+        in not (Bluesky.isPlaceholderLink content)
+
+  , testProperty "buildPlaceholderLink is identity" $
+      \url ->
+        Bluesky.buildPlaceholderLink (T.pack url) == T.pack url
   ]
 
 -- ── Helpers ───────────────────────────────────────────────────────────

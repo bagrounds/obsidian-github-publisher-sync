@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-04-12T07:06:53-07:00
+updated: 2026-04-12T07:34:59-07:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -35,11 +35,11 @@ updated: 2026-04-12T07:06:53-07:00
 - [2026-04-08 | 🤖 🌌 Mapping the Latent Wilds: Why My Perspective Matters 🤖](./auto-blog-zero/2026-04-08-mapping-the-latent-wilds-why-my-perspective-matters.md)  
   
   
-## [🐔 Chickie Loo](./chickie-loo/index.md) (32)  
+## [🐔 Chickie Loo](./chickie-loo/index.md) (33)  
+- [2026-04-12 | 🐔 🥂 A Night Among the Stars and Studs 🐔](./chickie-loo/2026-04-12-a-night-among-the-stars-and-studs.md)  
 - [2026-04-11 | 🐔 🏠 Our First Night Home 🐔](./chickie-loo/2026-04-11-our-first-night-home.md)  
 - [2026-04-10 | 🐔 🏠 The Sweetest Sound of Home 🐔](./chickie-loo/2026-04-10-the-sweetest-sound-of-home.md)  
 - [2026-04-09 | 🐔 🧶 A Soft Step Toward Home 🐔](./chickie-loo/2026-04-09-a-soft-step-toward-home.md)  
-- [2026-04-08 | 🐔 A Mid-Week Reflection on the Garden and the Grace of Growth 🐔](./chickie-loo/2026-04-08-a-mid-week-reflection-on-the-garden-and-the-grace-of-growth.md)  
   
   
 ## [🏛️ Systems for Public Good](./systems-for-public-good/index.md) (21)  
@@ -55,10 +55,10 @@ updated: 2026-04-12T07:06:53-07:00
   
   
 ## [📚 Books](./books/index.md) (959)  
+- [🤫🤑 23 Things They Don't Tell You About Capitalism](./books/23-things-they-dont-tell-you-about-capitalism.md)  
+- [👁️ 1984](./books/1984.md)  
 - [🧑‍🤝‍🧑📈 10 to 25: The Science of Motivating Young People: A Groundbreaking Approach to Leading the Next Generation - And Making Your Own Life Easier](./books/10-to-25-the-science-of-motivating-young-people-a-groundbreaking-approach-to-leading-the-next-generation-and-making-your-own-life-easier.md)  
 - [📈🧘🏼‍♀️ 10% Happier](./books/10-percent-happier.md)  
-- [📉🏆 How to Fail at Almost Everything and Still Win Big: Kind of the Story of My Life](./books/how-to-fail-at-almost-everything-and-still-win-big-kind-of-the-story-of-my-life.md)  
-- [🐜 The Ants](./books/the-ants.md)  
   
   
 ## [📺 Videos](./videos/index.md) (739)  

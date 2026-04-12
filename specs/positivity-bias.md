@@ -17,8 +17,8 @@
 | 🆔 Series ID | `positivity-bias` |
 | 🌟 Display Name | Positivity Bias |
 | 🎨 Icon | 🌟 |
-| ⏰ Schedule Hour (Pacific) | 10 AM |
-| 🕐 Post Time (UTC) | 18:00 |
+| ⏰ Schedule Hour (Pacific) | 6 AM |
+| 🕐 Post Time (UTC) | 14:00 |
 | 👤 Priority User | bagrounds |
 | 🤖 Model Chain | gemini-2.5-flash, gemini-2.5-flash-lite, gemini-3.1-flash-lite-preview |
 | 🌐 Google Search Grounding | Yes (required for current events) |
@@ -36,7 +36,7 @@
 | 🎯 Editorial lens | Everything newsworthy | Positive developments only |
 | 📊 Story count target | 15 to 25+ per post | 10 to 20 per post |
 | 🧠 Synthesis section | The Signal (patterns and contradictions) | The Momentum (patterns of progress) |
-| ⏰ Schedule | 6 AM Pacific | 10 AM Pacific |
+| ⏰ Schedule | 6 AM Pacific | 6 AM Pacific |
 | 🎨 Tone | Neutral overview, insight in synthesis | Warm but grounded, genuinely hopeful |
 
 ## 📐 Post Structure
@@ -60,7 +60,7 @@
 
 ## ⏰ Schedule
 
-📌 Runs at 10 AM Pacific — four hours after The Noise. 🔄 Uses at-or-after scheduling like all blog series: eligible at 10 AM and remains eligible for the rest of the day.
+📌 Runs at 6 AM Pacific — the same hour as The Noise. 🔄 Uses at-or-after scheduling like all blog series: eligible at 6 AM and remains eligible for the rest of the day. 🛡️ The 30-second inter-task delay between sequential tasks, combined with exponential backoff on retries, ensures the two series do not collide on Gemini API rate limits.
 
 ## 💬 Reader Responsiveness
 

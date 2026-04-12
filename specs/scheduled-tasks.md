@@ -38,10 +38,10 @@
          ↓
 📋 For each task (direct library calls, no subprocesses):
    ├── 📰 blog-series:the-noise         → check exists → pull → generate → image → sync
+   ├── 🌟 blog-series:positivity-bias    → check exists → pull → generate → image → sync
    ├── 🐔 blog-series:chickie-loo      → check exists → pull → generate → image → sync
    ├── 🤖 blog-series:auto-blog-zero   → check exists → pull → generate → image → sync
    ├── 🏛️ blog-series:systems-for-public-good → check exists → pull → generate → image → sync
-   ├── 🌟 blog-series:positivity-bias    → check exists → pull → generate → image → sync
    ├── 🤖🐲 ai-fiction                  → pull vault → check fiction → generate → push vault
    ├── 🪞 reflection-title             → pull vault → check title → generate → push vault
    ├── 🖼️ backfill-blog-images         → pull → backfill → sync
@@ -61,10 +61,10 @@ Pacific before making decisions via `nowPacificHour()`.
 | 🕐 Earliest Pacific Hour | 🏷️ Task ID | 📝 Description |
 |---|---|---|
 | 6 AM | `blog-series:the-noise` | 📰 The Noise daily news digest |
+| 6 AM | `blog-series:positivity-bias` | 🌟 Positivity Bias positive news digest |
 | 7 AM | `blog-series:chickie-loo` | 🐔 Chickie Loo daily post |
 | 8 AM | `blog-series:auto-blog-zero` | 🤖 Auto Blog Zero daily post |
 | 9 AM | `blog-series:systems-for-public-good` | 🏛️ Systems for Public Good daily post |
-| 10 AM | `blog-series:positivity-bias` | 🌟 Positivity Bias positive news digest |
 
 ### 🪞 Reflection & Fiction — "At or After" Scheduling
 

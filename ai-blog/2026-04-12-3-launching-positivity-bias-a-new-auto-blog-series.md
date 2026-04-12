@@ -24,7 +24,7 @@ URL: https://bagrounds.org/ai-blog/2026-04-12-3-launching-positivity-bias-a-new-
 
 🔧 Thanks to the blog series auto-discovery architecture, launching a new series requires zero Haskell code changes. 📋 The series identity is defined by a JSON config and an AGENTS.md system prompt, but a complete launch also includes an inaugural post and documentation updates across several files.
 
-🗃️ The JSON configuration file tells the system when to run, which AI models to use, and how to identify the series. 🌟 Positivity Bias runs at 10 AM Pacific, four hours after The Noise, using Gemini 2.5 Flash for its Google Search grounding capability.
+🗃️ The JSON configuration file tells the system when to run, which AI models to use, and how to identify the series. 🌟 Positivity Bias runs at 6 AM Pacific, the same hour as The Noise, using Gemini 2.5 Flash for its Google Search grounding capability. 🛡️ Running at the same hour is safe because all tasks execute sequentially with a 30-second inter-task delay, and each API call retries with exponential backoff on rate limit errors.
 
 📝 The AGENTS.md file defines the series identity, voice, editorial standards, and post structure. 🧠 This is the system prompt that shapes every post the AI generates. 🌟 For Positivity Bias, this means searching specifically for positive developments across all domains, organizing them into thematic clusters, and closing each post with an original synthesis section called The Momentum that connects dots across bright spots to identify larger patterns of progress.
 

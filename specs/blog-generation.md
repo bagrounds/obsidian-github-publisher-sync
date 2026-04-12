@@ -57,7 +57,7 @@
 | 🤖 auto-blog-zero | 🤖 | 16:00 | bagrounds | bagrounds.org/auto-blog-zero |
 | 🐔 chickie-loo | 🐔 | 15:00 | ChickieLoo | bagrounds.org/chickie-loo |
 | 🏛️ systems-for-public-good | 🏛️ | 17:00 | bagrounds | bagrounds.org/systems-for-public-good |
-| 🌟 positivity-bias | 🌟 | 18:00 | bagrounds | bagrounds.org/positivity-bias |
+| 🌟 positivity-bias | 🌟 | 14:00 | bagrounds | bagrounds.org/positivity-bias |
 
 📌 Each series also defines a `navLink` in wikilink format for breadcrumb navigation.
 📦 `BACKFILL_CONTENT_IDS` combines all series IDs with `reflections` and `ai-blog` for indexing operations.

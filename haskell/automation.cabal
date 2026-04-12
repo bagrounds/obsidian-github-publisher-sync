@@ -177,6 +177,11 @@ test-suite automation-tests
     Automation.TaskRunnerTest
     Automation.PacificTimeTest
     Automation.BlogSeriesDiscoveryTest
+    Automation.BlogImage.ContentDirectoryTest
+    Automation.BlogImage.TitleExtractionTest
+    Automation.BlogImage.EligibilityTest
+    Automation.BlogImage.MarkdownTest
+    Automation.BlogImage.ProviderTest
     Automation.TestGenerators
   build-depends:
     base,

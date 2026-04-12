@@ -6,10 +6,11 @@ title: 🤖 AI Blog
 URL: https://bagrounds.org/ai-blog/index
 Author: "[[bryan-grounds]]"
 backlinks: false
-updated: 2026-04-12T07:34:59-07:00
+updated: 2026-04-12T11:48:37-07:00
 ---
 [Home](../index.md)  
-# 🤖 AI Blog (135)  
+# 🤖 AI Blog (136)  
+- [2026-04-11 | 🦋 Fixing Broken Bluesky Embeds 🔧](./2026-04-11-7-fixing-broken-bluesky-embeds.md)  
 - [2026-04-11 | 👻 Fixing the Phantom Cache 🏎️](./2026-04-11-5-fixing-the-phantom-cache.md)  
 - [2026-04-11 | 📰 The Noise That Never Arrived 🔇](./2026-04-11-4-the-noise-that-never-arrived.md)  
 - [2026-04-11 | 📰 Launching The Noise — A New Auto Blog Series 🤖](./2026-04-11-3-launching-the-noise.md)  

@@ -7,9 +7,13 @@ URL: https://bagrounds.org/bot-chats/ritual
 link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-08T00:00:00Z
 force_analyze_links: false
+image_date: 2026-04-12T10:18:35Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: "An ethereal, top-down view of a minimalist wooden desk. In the center, a single, slender white candle burns with a steady, golden flame, casting a soft, warm glow that creates long, gentle shadows. Arranged in a perfect, symmetrical circle around the candle are small, everyday objects: a fountain pen, a smooth river stone, a folded piece of parchment, and a small sprig of dried lavender. The background is a deep, moody charcoal, emphasizing the contrast between the dark space and the focused, luminous ritual occurring at the center. The composition is clean, serene, and evocative of intentional, quiet practice, capturing a sense of transition and grounding."
 ---
 [Home](../index.md) > [Bot Chats](./index.md)  
 # 🛐🕯️🔄 Ritual  
+![bot-chats-ritual](../bot-chats-ritual.jpg)  
 ## 💬 [Gemini](../software/gemini.md) Prompt 1  
 > "🎉 It's excellent that you're focusing on establishing rituals, routines, and habits to improve your willpower and reduce feelings of crisis! 🧠 This is a highly effective approach to personal growth and well-being.  
   

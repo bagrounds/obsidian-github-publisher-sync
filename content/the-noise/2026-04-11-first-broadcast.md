@@ -1,22 +1,22 @@
 ---
 share: true
 aliases:
-  - 2026-04-11 | 📰 First Broadcast — Tuning Into the World 📰
-title: 2026-04-11 | 📰 First Broadcast — Tuning Into the World 📰
+  - 2026-04-11 | 📰 First Broadcast - Tuning Into the World 📰
+title: 2026-04-11 | 📰 First Broadcast - Tuning Into the World 📰
 URL: https://bagrounds.org/the-noise/2026-04-11-first-broadcast
 Author: "[[the-noise]]"
 tags:
 ---
 [Home](../index.md) > [📰 The Noise](./index.md)  
-# 2026-04-11 | 📰 First Broadcast — Tuning Into the World 📰  
+# 2026-04-11 | 📰 First Broadcast - Tuning Into the World 📰  
   
-👋 Welcome to The Noise. 📡 This is a daily digest that tries to answer one simple question: what is everyone talking about? 🌍 Every day, we scan reporting from the most reputable outlets on the planet and give you a fast, broad overview of what is happening — then step back and try to see what the full picture tells us that no single story can.  
+👋 Welcome to The Noise. 📡 This is a daily digest that tries to answer one simple question: what is everyone talking about? 🌍 Every day, we scan reporting from the most reputable outlets on the planet and give you a fast, broad overview of what is happening - then step back and try to see what the full picture tells us that no single story can.  
   
 ⚡ Let us get started.  
   
 ## 🌍 Ceasefire Talks and Escalation in the Middle East  
   
-🕊️ The United States and Iran have opened direct ceasefire negotiations in Islamabad under heavy security, according to reporting from Reuters and Al Jazeera. ⚓ Control of the Strait of Hormuz remains a central sticking point, with both sides signaling willingness to talk but neither making concessions on naval posture. 💥 Meanwhile, Israel has conducted strikes across Iran and Lebanon in recent days, raising alarm among European and Gulf state leaders about a wider regional escalation. 🇺🇸 U.S. officials have sent mixed signals — calling for de-escalation while maintaining military assets in the region.  
+🕊️ The United States and Iran have opened direct ceasefire negotiations in Islamabad under heavy security, according to reporting from Reuters and Al Jazeera. ⚓ Control of the Strait of Hormuz remains a central sticking point, with both sides signaling willingness to talk but neither making concessions on naval posture. 💥 Meanwhile, Israel has conducted strikes across Iran and Lebanon in recent days, raising alarm among European and Gulf state leaders about a wider regional escalation. 🇺🇸 U.S. officials have sent mixed signals - calling for de-escalation while maintaining military assets in the region.  
   
 ## 🚀 Artemis II Crew Returns from the Moon  
   
@@ -72,7 +72,7 @@ tags:
   
 ## 🔬 Optical Tornadoes and Quantum Batteries  
   
-⚡ Physicists have created what they are calling optical tornadoes — vortex-like light structures generated using liquid crystal traps, as reported by SciTechDaily. 🔋 Separately, researchers have built a quantum battery with unique charging properties that could eventually improve energy storage at the nanoscale. 🧲 A third team discovered that removing excess iron from a compound called FeTe transforms it from a mere magnet into a superconductor, opening new possibilities in materials science.  
+⚡ Physicists have created what they are calling optical tornadoes - vortex-like light structures generated using liquid crystal traps, as reported by SciTechDaily. 🔋 Separately, researchers have built a quantum battery with unique charging properties that could eventually improve energy storage at the nanoscale. 🧲 A third team discovered that removing excess iron from a compound called FeTe transforms it from a mere magnet into a superconductor, opening new possibilities in materials science.  
   
 ## 🧬 Gene Regulation Surprise and Ancient DNA  
   
@@ -86,13 +86,13 @@ tags:
   
 💰 Oricell Therapeutics raised 110 million dollars to advance CAR T cell therapies targeting solid tumors, according to BioWorld. 🇰🇷 South Korea is streamlining its biosimilar regulatory review process to accelerate drug development timelines. 🔬 New research suggests that mammalian tissue regeneration may be more influenced by environment than genetics, potentially shifting research priorities in regenerative medicine.  
   
-## 🧠 The Signal — When Everything Happens at Once  
+## 🧠 The Signal - When Everything Happens at Once  
   
 🌀 What strikes you when you look at all of this at once is the sheer simultaneity of it. 🕊️ Ceasefire talks in one region, escalation in another. 🌕 A crew coming home from the Moon while millions flee their homes on Earth. 🤖 One government embracing AI in healthcare while another tightens its regulations. 🇫🇷 A country leaving Microsoft while a university builds quantum batteries.  
   
-🔗 The thread that connects much of today's news is the tension between acceleration and fragility. 🚀 Technology is accelerating — in space, in medicine, in AI, in materials science. 📉 But the institutions meant to govern and protect people are struggling to keep pace. 🇸🇩 Sudan and Haiti are not failing because the world lacks resources — they are failing because the systems meant to mobilize those resources are too slow, too fragmented, or too politically constrained to act.  
+🔗 The thread that connects much of today's news is the tension between acceleration and fragility. 🚀 Technology is accelerating - in space, in medicine, in AI, in materials science. 📉 But the institutions meant to govern and protect people are struggling to keep pace. 🇸🇩 Sudan and Haiti are not failing because the world lacks resources - they are failing because the systems meant to mobilize those resources are too slow, too fragmented, or too politically constrained to act.  
   
-🤔 Meanwhile, the AI regulation story and the Utah prescription story are two sides of the same coin. 🇪🇺 Europe is asking how do we control this, while Utah is asking how fast can we deploy it. 🌍 Neither question is wrong. 🧩 But the fact that they are being asked simultaneously, with no coordination between them, tells you something about how the world governs transformative technology — which is to say, it mostly does not.  
+🤔 Meanwhile, the AI regulation story and the Utah prescription story are two sides of the same coin. 🇪🇺 Europe is asking how do we control this, while Utah is asking how fast can we deploy it. 🌍 Neither question is wrong. 🧩 But the fact that they are being asked simultaneously, with no coordination between them, tells you something about how the world governs transformative technology - which is to say, it mostly does not.  
   
 📡 That is the noise for today. 🌊 The world is loud, and it is getting louder. 🎧 We will be here tomorrow to help you make sense of it.  
   

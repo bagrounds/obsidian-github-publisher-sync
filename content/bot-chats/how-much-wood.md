@@ -7,9 +7,13 @@ URL: https://bagrounds.org/bot-chats/how-much-wood
 link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-07T00:00:00Z
 force_analyze_links: false
+image_date: 2026-04-12T00:29:23Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A stylized, digital illustration featuring a cute, anthropomorphic woodchuck wearing a tiny construction hard hat. The woodchuck is standing next to a large, neatly stacked pile of weathered logs in a lush, sun-dappled forest clearing. Floating faintly in the air around the woodchuck are glowing, translucent digital data nodes and bits of binary code, representing the intersection of nature and mobile AI technology. The color palette features warm earth tones—deep browns, forest greens, and golden sunlight—contrasted with subtle, cool-toned neon blue accents from the digital elements. The composition is clean and whimsical, with a soft-focus background of pine trees, emphasizing the playful, hypothetical nature of the inquiry.
 ---
 [Home](../index.md) > [Bot Chats](./index.md)  
 # 🪵❓ How Much Wood  
+![bot-chats-how-much-wood](../bot-chats-how-much-wood.jpg)  
 ## 🖼️ Background  
 I made this query to test the [Obsidian](../software/obsidian.md) Local GPT plugin pointed at the [Ollama](../software/ollama.md) instance running in the UserLand app on my Android phone. Freeze local LLM on mobile 😎.  
   

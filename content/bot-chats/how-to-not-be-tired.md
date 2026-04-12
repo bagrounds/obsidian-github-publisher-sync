@@ -4,9 +4,16 @@ aliases:
   - 🥱👎 How To Not Be Tired
 title: 🥱👎 How To Not Be Tired
 URL: https://bagrounds.org/bot-chats/how-to-not-be-tired
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_time: 2026-04-08T00:00:00Z
+force_analyze_links: false
+image_date: 2026-04-12T00:29:39Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A clean, minimalist illustration featuring a glowing, stylized cross-section of a human cell. Inside the cell, vibrant, golden mitochondria are depicted as radiant powerhouses, emitting soft pulses of light. Surrounding the cell, subtle, flowing translucent waves represent energy and balanced biological rhythms. The color palette uses deep navy and slate grays for the background to signify rest, contrasted with warm, electric yellows and soft oranges to represent vitality and cellular energy. The overall aesthetic is scientific yet artistic, conveying a sense of biological optimization and clarity, avoiding clutter and any literal human figures.
 ---
 [Home](../index.md) > [Bot Chats](./index.md)  
 # 🥱👎 How To Not Be Tired  
+![bot-chats-how-to-not-be-tired](../bot-chats-how-to-not-be-tired.jpg)  
 ## 💬 [Gemini](../software/gemini.md) Prompt 1  
 > Find me some books on how to not be tired. Science, please.  
   

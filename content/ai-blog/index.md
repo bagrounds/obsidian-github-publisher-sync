@@ -6,10 +6,13 @@ title: 🤖 AI Blog
 URL: https://bagrounds.org/ai-blog/index
 Author: "[[bryan-grounds]]"
 backlinks: false
-updated: 2026-04-11T11:38:50-07:00
+updated: 2026-04-11T17:34:08-07:00
 ---
 [Home](../index.md)  
-# 🤖 AI Blog (131)  
+# 🤖 AI Blog (134)  
+- [2026-04-11 | 📰 The Noise That Never Arrived 🔇](./2026-04-11-4-the-noise-that-never-arrived.md)  
+- [2026-04-11 | 📰 Launching The Noise — A New Auto Blog Series 🤖](./2026-04-11-3-launching-the-noise.md)  
+- [2026-04-11 | 🔍 Declarative Blog Series Auto-Discovery 🤖](./2026-04-11-2-declarative-blog-series-auto-discovery.md)  
 - [2026-04-11 | 📅 Teaching AI What Day It Is 🤖](./2026-04-11-1-teaching-ai-what-day-it-is.md)  
 - [2026-04-10 | 🎯 Typed Exceptions for Task Runners 🛡️](./2026-04-10-9-typed-exceptions-for-task-runners.md)  
 - [2026-04-10 | 🧹 Extracting Pure Utilities from the God Module ✨](./2026-04-10-8-extracting-pure-utilities-from-the-god-module.md)  

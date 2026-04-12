@@ -25,6 +25,7 @@ import System.FilePath (takeExtension)
 
 import Automation.Types (updatesSectionHeader)
 import Automation.Frontmatter (parseFrontmatter)
+import Automation.Text (isEmoji, isEmojiOrSpace)
 import qualified Automation.Gemini as Gemini
 
 defaultTitleModel :: Gemini.Model
@@ -43,21 +44,6 @@ extractHeadingEmojis heading =
         _ -> T.strip linkContent
       emojiChars = T.takeWhile isEmojiOrSpace pipeContent
   in T.strip emojiChars
-
-isEmojiOrSpace :: Char -> Bool
-isEmojiOrSpace c =
-  c == ' '
-    || c == '\x200d'
-    || c == '\xfe0f'
-    || (c >= '\x1f300' && c <= '\x1faff')
-    || (c >= '\x2600' && c <= '\x27bf')
-    || (c >= '\x2300' && c <= '\x23ff')
-    || (c >= '\x2702' && c <= '\x27b0')
-    || (c >= '\x1f600' && c <= '\x1f64f')
-    || (c >= '\x1f680' && c <= '\x1f6ff')
-    || (c >= '\x1f900' && c <= '\x1f9ff')
-    || (c >= '\x1fa00' && c <= '\x1fa6f')
-    || (c >= '\x1fa70' && c <= '\x1faff')
 
 isUpdatesSectionHeading :: Text -> Bool
 isUpdatesSectionHeading l = T.stripEnd l == updatesSectionHeader
@@ -154,7 +140,9 @@ buildReflectionTitlePrompt linkedTitles recentTitles =
                \- Always put a space between emoji(s) and word\n\
                \- Do NOT include any trailing category emojis — those are added separately\n\
                \- Do NOT include any date prefix\n\
-               \- Output ONLY the final title as a single line of text\n\
+               \- Your response must contain ONLY the final title — no preamble, no explanation, no commentary\n\
+               \- Do NOT start with phrases like \"Here's\", \"Here is\", \"Title:\", \"Sure\", or any other text before the title\n\
+               \- The very first character of your response MUST be an emoji\n\
                \\n\
                \GOOD TITLE EXAMPLES (for style reference):\n" <> examplesBlock
       titlesBlock = T.intercalate "\n" $
@@ -169,10 +157,29 @@ parseReflectionTitle raw =
         & T.dropAround (\c -> c == '"' || c == '\'')
         & T.replace "`" ""
         & stripDatePrefix
-      firstLine = case T.lines cleaned of
-        (l:_) -> T.strip l
-        []    -> ""
-  in normalizeEmojiSpacing firstLine
+      selected = selectTitleLine cleaned
+  in normalizeEmojiSpacing selected
+
+selectTitleLine :: Text -> Text
+selectTitleLine t =
+  let nonEmptyLines = filter (not . T.null . T.strip) (T.lines t)
+      emojiLine = find (startsWithEmoji . T.stripStart) nonEmptyLines
+  in case emojiLine of
+    Just l -> T.strip l
+    Nothing -> case nonEmptyLines of
+      (first:_) -> stripInlinePreamble (T.strip first)
+      [] -> ""
+
+startsWithEmoji :: Text -> Bool
+startsWithEmoji t = case T.uncons t of
+  Just (c, _) -> isEmoji c
+  Nothing -> False
+
+stripInlinePreamble :: Text -> Text
+stripInlinePreamble t =
+  case T.findIndex isEmoji t of
+    Just idx | idx > 0 -> T.strip (T.drop idx t)
+    _ -> t
 
 (&) :: a -> (a -> b) -> b
 (&) x f = f x

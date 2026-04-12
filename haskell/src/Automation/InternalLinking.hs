@@ -34,10 +34,10 @@ import Automation.Frontmatter (YamlValue (..), parseFrontmatter, renderYamlValue
 import qualified Automation.Gemini as Gemini
 import Automation.Json (decode)
 import Automation.Reflection (selectMostRecentReflection)
+import Automation.Text (isEmoji)
 import Automation.Types (Secret (..), RelativePath, unRelativePath, mkRelativePath, Title, unTitle, mkTitle)
 import Control.Concurrent (threadDelay)
 import Control.Monad (when)
-import Data.Char (ord)
 import Data.IORef (IORef, modifyIORef', newIORef, readIORef)
 import Data.List (sortBy)
 import qualified Data.Map.Strict as Map
@@ -130,25 +130,6 @@ stripEmojis =
     . filter (not . T.null)
     . T.split (== ' ')
     . T.map (\c -> if isEmoji c then ' ' else c)
-  where
-    isEmoji :: Char -> Bool
-    isEmoji c =
-      let cp = ord c
-      in  cp >= 0x1F600 && cp <= 0x1F64F
-       || cp >= 0x1F300 && cp <= 0x1F5FF
-       || cp >= 0x1F680 && cp <= 0x1F6FF
-       || cp >= 0x1F1E0 && cp <= 0x1F1FF
-       || cp >= 0x2600  && cp <= 0x27BF
-       || cp >= 0x2300  && cp <= 0x23FF
-       || cp >= 0x2702  && cp <= 0x27B0
-       || cp >= 0xFE00  && cp <= 0xFE0F
-       || cp >= 0x1F900 && cp <= 0x1F9FF
-       || cp >= 0x1FA00 && cp <= 0x1FA6F
-       || cp >= 0x1FA70 && cp <= 0x1FAFF
-       || cp == 0x200D
-       || cp == 0x20E3
-       || cp >= 0xE0020 && cp <= 0xE007F
-       || cp == 0xFE0E
 
 escapeRegex :: Text -> Text
 escapeRegex = T.concatMap escChar

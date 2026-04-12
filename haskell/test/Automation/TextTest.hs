@@ -124,6 +124,8 @@ tests = testGroup "Text"
         T.length "see https://example.com" + (customUrlCount - T.length "https://example.com")
 
   , stripCodeFencesTests
+  , isEmojiTests
+  , isEmojiOrSpaceTests
   ]
 
 stripCodeFencesTests :: TestTree
@@ -154,4 +156,61 @@ stripCodeFencesTests = testGroup "stripCodeFences"
 
   , testCase "handles multiline content" $
       stripCodeFences "```markdown\nLine 1\nLine 2\nLine 3\n```" @?= "Line 1\nLine 2\nLine 3"
+  ]
+
+isEmojiTests :: TestTree
+isEmojiTests = testGroup "isEmoji"
+  [ testCase "detects common pictographic emoji (grinning face U+1F600)" $
+      isEmoji '\x1F600' @?= True
+
+  , testCase "detects book emoji (U+1F4DA)" $
+      isEmoji '\x1F4DA' @?= True
+
+  , testCase "detects robot emoji (U+1F916)" $
+      isEmoji '\x1F916' @?= True
+
+  , testCase "detects sun emoji (U+2600)" $
+      isEmoji '\x2600' @?= True
+
+  , testCase "detects high voltage emoji (U+26A1)" $
+      isEmoji '\x26A1' @?= True
+
+  , testCase "detects copyright sign (U+00A9)" $
+      isEmoji '\x00A9' @?= True
+
+  , testCase "detects registered sign (U+00AE)" $
+      isEmoji '\x00AE' @?= True
+
+  , testCase "rejects ASCII letter" $
+      isEmoji 'A' @?= False
+
+  , testCase "rejects ASCII digit" $
+      isEmoji '0' @?= False
+
+  , testCase "rejects space" $
+      isEmoji ' ' @?= False
+
+  , testCase "rejects common CJK character" $
+      isEmoji '\x4E00' @?= False
+
+  , testCase "rejects Latin-1 character" $
+      isEmoji '\x00E9' @?= False
+  ]
+
+isEmojiOrSpaceTests :: TestTree
+isEmojiOrSpaceTests = testGroup "isEmojiOrSpace"
+  [ testCase "accepts space" $
+      isEmojiOrSpace ' ' @?= True
+
+  , testCase "accepts zero-width joiner (U+200D)" $
+      isEmojiOrSpace '\x200D' @?= True
+
+  , testCase "accepts variation selector 16 (U+FE0F)" $
+      isEmojiOrSpace '\xFE0F' @?= True
+
+  , testCase "accepts emoji character" $
+      isEmojiOrSpace '\x1F600' @?= True
+
+  , testCase "rejects ASCII letter" $
+      isEmojiOrSpace 'A' @?= False
   ]

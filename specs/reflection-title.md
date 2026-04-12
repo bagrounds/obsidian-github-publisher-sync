@@ -71,8 +71,13 @@ the Updates section heading (`## 🔄 Updates`). For example:
 6. Collect up to 20 recent creative titles as style examples
 7. Build structured Gemini prompt with multi-step sentence-building instructions
 8. Call Gemini with model chain (retry + fallback)
-9. Parse response (strip code fences, quotes, backticks, normalize emoji spacing),
-   append deterministic trailing emojis
+9. Parse response: strip code fences, quotes, backticks, preamble, normalize
+   emoji spacing, append deterministic trailing emojis
+   - **Preamble stripping**: LLMs occasionally prepend conversational text
+     (e.g., "Here's an attempt:") before the title. The parser handles this
+     by preferring lines that start with an emoji character. For single-line
+     responses with inline preamble, it finds the first emoji and discards
+     everything before it.
 10. Apply title to frontmatter (`title`, `aliases`) and H1 heading
 11. Write updated content and push vault
 
@@ -124,7 +129,7 @@ The task updates three locations in the reflection note:
 
 ## Tests
 
-62 tests across 9 suites covering:
+56 tests across 9 suites covering:
 
 - `extractHeadingEmojis`: Wiki links, markdown links, plain headings, no-emoji headings
 - `extractTrailingEmojis`: Multi-heading extraction, deduplication
@@ -133,6 +138,6 @@ The task updates three locations in the reflection note:
 - `reflectionNeedsTitle`: Date-only detection, titled detection, edge cases
 - `buildReflectionTitlePrompt`: One-word-per-title instructions, examples inclusion, numbering
 - `parseReflectionTitle`: Code fence stripping, quote removal, date prefix handling, backtick
-  stripping, emoji spacing normalization
+  stripping, emoji spacing normalization, preamble stripping (single-line, multi-line, thinking output)
 - `applyReflectionTitle`: Frontmatter updates, H1 replacement, content preservation, idempotency
 - Integration: needsTitle → applyTitle → no longer needsTitle

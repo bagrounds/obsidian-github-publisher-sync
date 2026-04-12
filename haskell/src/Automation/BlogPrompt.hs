@@ -35,6 +35,7 @@ import Automation.BlogPosts (BlogPost (..))
 import Automation.BlogSeriesConfig (BlogSeriesConfig (..))
 import Automation.Frontmatter (quoteYamlValue)
 import Automation.PacificTime (formatDay, formatDayHuman)
+import Automation.Text (isEmoji)
 import qualified Automation.Platforms.Bluesky as Bluesky
 import qualified Automation.Platforms.Mastodon as Mastodon
 import qualified Automation.Platforms.Twitter as Twitter
@@ -258,10 +259,3 @@ generateSlug title =
   in trimmed
   where
     isAlphaNumOrSpace c = isAsciiLower c || isDigit c || c == ' ' || c == '-'
-    isEmoji c =
-      (c >= '\x1f300' && c <= '\x1faff')
-        || (c >= '\x2600' && c <= '\x27bf')
-        || (c >= '\x200d' && c <= '\x200d')
-        || c == '\xfe0f'
-        || (c >= '\x2300' && c <= '\x23ff')
-        || (c >= '\x2702' && c <= '\x27b0')

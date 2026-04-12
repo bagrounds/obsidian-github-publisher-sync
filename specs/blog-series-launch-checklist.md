@@ -68,6 +68,22 @@
 - 🌅 Earlier hours are better for news-oriented series (fresher reporting)
 - 🔄 All blog series use at-or-after scheduling: eligible at the configured hour and all subsequent hours
 
+## 📄 AGENTS.md Frontmatter Format
+
+📋 The AGENTS.md file should follow this frontmatter structure:
+
+```
+---
+share: true
+no_social: true
+title: {icon} {Series Name} — AGENTS.md
+URL: https://bagrounds.org/{series-id}/AGENTS
+Author: "[[{series-id}]]"
+tags:
+---
+# {icon} {Series Name} — AGENTS.md
+```
+
 ## 📄 Inaugural Post Format
 
 📋 The seed post should follow this frontmatter structure:

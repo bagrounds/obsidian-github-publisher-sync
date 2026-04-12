@@ -67,3 +67,4 @@ pacificHourTests = testGroup "pacificHour"
   , testCase "PDT: midnight UTC on Jul 1 is 5pm previous day" $
       pacificHour (UTCTime (fromGregorian 2026 7 1) 0) @?= 17
   ]
+

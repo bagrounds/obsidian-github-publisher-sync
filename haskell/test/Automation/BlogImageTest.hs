@@ -554,6 +554,8 @@ tests = testGroup "BlogImage"
   , parseDateFromFilenameTests
   , contentDirectoryTests
   , checkCandidateEligibilityTests
+  , parseDateFromFrontmatterTests
+  , undatedFileFallbackTests
   ]
 
 parseDateFromFilenameTests :: TestTree
@@ -624,4 +626,58 @@ checkCandidateEligibilityTests = testGroup "checkCandidateEligibility"
       checkCandidateEligibility Books (fromGregorian 2026 4 8) "2026-04-09-future.md"
         "---\ntitle: Future Post\n---\nbody"
         @?= Eligible False
+  ]
+
+parseDateFromFrontmatterTests :: TestTree
+parseDateFromFrontmatterTests = testGroup "parseDateFromFrontmatter"
+  [ testCase "parses updated field with timestamp" $
+      parseDateFromFrontmatter (Map.fromList [("updated", "2026-04-12T05:52:58")])
+        @?= Just (fromGregorian 2026 4 12)
+
+  , testCase "parses updated field with timezone suffix" $
+      parseDateFromFrontmatter (Map.fromList [("updated", "2026-04-06T00:00:00Z")])
+        @?= Just (fromGregorian 2026 4 6)
+
+  , testCase "parses modified field" $
+      parseDateFromFrontmatter (Map.fromList [("modified", "2025-12-25T10:00:00")])
+        @?= Just (fromGregorian 2025 12 25)
+
+  , testCase "parses date field" $
+      parseDateFromFrontmatter (Map.fromList [("date", "2026-01-15")])
+        @?= Just (fromGregorian 2026 1 15)
+
+  , testCase "parses created field" $
+      parseDateFromFrontmatter (Map.fromList [("created", "2024-06-01")])
+        @?= Just (fromGregorian 2024 6 1)
+
+  , testCase "prefers updated over modified" $
+      parseDateFromFrontmatter (Map.fromList
+        [ ("updated", "2026-04-12T00:00:00")
+        , ("modified", "2026-03-01T00:00:00")
+        ]) @?= Just (fromGregorian 2026 4 12)
+
+  , testCase "prefers modified over date" $
+      parseDateFromFrontmatter (Map.fromList
+        [ ("modified", "2026-04-12T00:00:00")
+        , ("date", "2026-01-01")
+        ]) @?= Just (fromGregorian 2026 4 12)
+
+  , testCase "returns Nothing for empty frontmatter" $
+      parseDateFromFrontmatter Map.empty @?= Nothing
+
+  , testCase "returns Nothing for non-date field values" $
+      parseDateFromFrontmatter (Map.fromList [("updated", "not-a-date")]) @?= Nothing
+
+  , testCase "ignores unrecognized date fields" $
+      parseDateFromFrontmatter (Map.fromList [("link_analysis_time", "2026-04-06T00:00:00Z")])
+        @?= Nothing
+  ]
+
+undatedFileFallbackTests :: TestTree
+undatedFileFallbackTests = testGroup "undatedFileFallback"
+  [ testCase "is 1970-01-01" $
+      undatedFileFallback @?= fromGregorian 1970 1 1
+
+  , testCase "sorts before any modern date" $
+      (undatedFileFallback < fromGregorian 2020 1 1) @?= True
   ]

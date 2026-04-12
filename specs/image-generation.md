@@ -77,7 +77,7 @@
    - ✅ Accept any `.md` file not in the exclusion list (index.md, AGENTS.md, IDEAS.md)
    - 🚫 Skip future-dated reflections (date > today)
    - 🚫 Skip reflections whose title is still just the bare date (awaiting creative title from reflection-title task at 10 PM Pacific)
-2. 🗓️ Sort ALL candidates by date descending (cross-directory)
+2. 🗓️ Sort ALL candidates by date descending (cross-directory). For files without a date prefix in their filename, the sort date is resolved from frontmatter fields (`updated`, `modified`, `date`, `created`), matching the RSS feed's priority chain. Files with no date anywhere fall back to 1970-01-01, sorting behind all dated content.
 3. 🔗 Build provider chain from all configured providers
 4. 🔄 For each candidate (newest first globally):
    a. ⏱️ Attempt generation with retry logic for per-minute rate limits
@@ -415,6 +415,19 @@ Image name: chickie-loo-2026-03-22-weekly-recap.jpg
 🔍 Root cause: `processNote` skipped image generation only when the title was empty (`T.null title`). Reflections start with `title: YYYY-MM-DD` in frontmatter, which passes the null check. The backfill candidate collector (`checkCandidate`) had no awareness of whether a reflection's title was a creative title or just the bare date.
 
 ✅ Fix: Added `isDateOnlyTitle` function that checks whether a note's extracted title exactly equals the date string. The `checkCandidate` function now skips reflections with date-only titles, ensuring images are only generated after the reflection-title task assigns a creative title.
+
+### 🔧 Reflections Never Receiving Images After Creative Title (Fixed)
+
+📍 After the reflection-title task assigns a creative title at 10 PM Pacific, the next image backfill run should generate an image for that reflection. However, reflections were perpetually starved of images because undated library files were sorted ahead of them.
+
+🔍 Root cause (5 Whys):
+1. **Why** were reflection images not being generated? The backfill processed library files (bot-chats, articles, etc.) instead of reflections with creative titles.
+2. **Why** did the backfill prioritize library files? Non-dated library files (like `mothers-day.md`) defaulted to `today` as their sort date via `fromMaybe today fileDate`, putting them in the same date tier as the just-titled reflection.
+3. **Why** were library files ahead of reflections with the same date? The `sortByDateDesc` function uses `foldl'` with `>=`, so later-processed candidates (library directories) were inserted before earlier ones (reflections) when dates were equal.
+4. **Why** were there so many library candidates ahead? Eight library directories (articles, books, bot-chats, games, products, software, tools, topics) contain hundreds of undated files that all received `today` as their default date.
+5. **Why** didn't the system recover over time? With max 2 images per hourly run and the reflection being pushed behind 1000+ undated library files that refresh to `today` each day, reflections were perpetually unreachable.
+
+✅ Fix: Changed the backfill date for files without a date prefix from `today` to the date parsed from frontmatter fields (`updated`, `modified`, `date`, `created`), matching the RSS feed's frontmatter-first priority chain. Files with no date in either filename or frontmatter receive a `1970-01-01` sentinel, sorting behind all dated content. This ensures recently-edited library files (which have an `updated` frontmatter field) sort by their actual modification date, while truly undated files sort low and get processed last.
 
 ---
 

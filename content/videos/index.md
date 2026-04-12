@@ -5,10 +5,10 @@ aliases:
 title: 📺 Videos
 URL: https://bagrounds.org/videos
 backlinks: false
-updated: 2026-04-12T15:22:45-07:00
+updated: 2026-04-12T16:13:11-07:00
 ---
 [Home](../index.md)  
-# 📺 Videos (740)  
+# 📺 Videos (741)  
 - [💰🤑🤖💡🚀💲 $0.10/Month Runs My Entire AI Life. I'll Show You How.](./0-10-month-runs-my-entire-ai-life-ill-show-you-how.md)  
 - [📊📈📉📃👁️ 10 Charts to Understand the 900 Page Budget Bill](./10-charts-to-understand-the-900-page-budget-bill.md)  
 - [🤖🔗⬆️✅ 12-Factor Agents: Patterns of reliable LLM applications — Dex Horthy, HumanLayer](./12-factor-agents-patterns-of-reliable-llm-applications-dex-horthy-humanlayer.md)  
@@ -417,6 +417,7 @@ updated: 2026-04-12T15:22:45-07:00
 - [PBS News Weekly: A deeper look at Trump's tariff wars, education cuts and more | March 14, 2025](./pbs-news-weekly-a-deeper-look-at-trumps-tariff-wars-education-cuts-and-more-march-14-2025.md)  
 - [Pediatrician's Top Tips For Newborn Sleep](./pediatricians-top-tips-for-newborn-sleep.md)  
 - [🪖🚫📚😠 Pentagon's attempt to ban books from base schools faces backlash from military families](./pentagons-attempt-to-ban-books-from-base-schools-faces-backlash-from-military-families.md)  
+- [🇭🇺🗳️🏆👋 Peter Magyar wins Hungary election as Orban concedes defeat | DW News](./peter-magyar-wins-hungary-election-as-orban-concedes-defeat-dw-news.md)  
 - [🎙️📰🧠 Podcasting Through It with Heather Cox Richardson | The Weekly Show with Jon Stewart](./podcasting-through-it-with-heather-cox-richardson-the-weekly-show-with-jon-stewart.md)  
 - [🚨🚓📺🎤 Police Chases: Last Week Tonight with John Oliver (HBO)](./police-chases-last-week-tonight-with-john-oliver-hbo.md)  
 - [👮🚔🕵️ Police Stings: Last Week Tonight with John Oliver (HBO)](./police-stings-last-week-tonight-with-john-oliver-hbo.md)  

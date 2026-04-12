@@ -9,6 +9,7 @@ module Automation.SocialPosting
   , mkSocialPost
   , autoPost
   , runPostingPipeline
+  , regenerateBlueskyEmbeds
   ) where
 
 import Control.Concurrent.Async (mapConcurrently)
@@ -19,11 +20,13 @@ import Data.Maybe (catMaybes, fromMaybe, mapMaybe)
 import qualified Data.Set as Set
 import Data.Text (Text)
 import qualified Data.Text as T
+import qualified Data.Text.IO as TIO
 import Data.Time (getCurrentTime, utctDayTime)
 import Data.Time.LocalTime (timeToTimeOfDay)
 import qualified Data.Map.Strict as Map
 import Network.HTTP.Client (Manager)
 import qualified Network.HTTP.Client.TLS as TLS
+import System.Directory (listDirectory, doesFileExist, doesDirectoryExist)
 
 import Automation.DailyUpdates (UpdateLink (..), addUpdateLinksToReflection)
 import Automation.BlogSeriesConfig (imageBackfillContentIdsFrom)
@@ -58,7 +61,7 @@ import Automation.Title (unTitle)
 import Automation.Types (EnvironmentConfig (..), OgMetadata (..))
 import Automation.Url (unUrl)
 import Automation.RelativePath (RelativePath, unRelativePath)
-import System.FilePath (takeBaseName, (</>))
+import System.FilePath (takeBaseName, takeExtension, (</>))
 
 data SocialPost
   = Tweet Text
@@ -224,20 +227,14 @@ postToBlueskyPlatform manager env note postText =
       result <- Bluesky.post manager creds postText (Just linkCard)
       case result of
         Left err -> pure (Left $ "Bluesky post failed: " <> T.pack (show err))
-        Right bpr -> do
-          let mDid = Bluesky.extractDid (Bluesky.bprUri bpr)
-              mPostId = Bluesky.extractPostId (Bluesky.bprUri bpr)
-          case (mDid, mPostId) of
-            (Just did, Just postId) -> do
-              let postUrl = Bluesky.buildPostUrl (Bluesky.bcIdentifier creds) postId
-              embedHtml <- Bluesky.getEmbedHtml manager postUrl did
-                             (Bluesky.bcIdentifier creds) postId Nothing
-              pure $ Right PostResult
-                { prPlatform = Bluesky
-                , prEmbedHtml = embedHtml
-                , prSectionBuilder = buildBlueskySection
-                }
-            _ -> pure $ Left "Could not extract Bluesky post ID from URI"
+        Right blueskyPostResult -> do
+          embedHtml <- Bluesky.getEmbedHtml manager Bluesky.defaultOEmbedConfig
+                         (Bluesky.postUri blueskyPostResult)
+          pure $ Right PostResult
+            { prPlatform = Bluesky
+            , prEmbedHtml = embedHtml
+            , prSectionBuilder = buildBlueskySection
+            }
 
 postToMastodonPlatform :: Manager -> EnvironmentConfig -> ContentNote -> Text
                        -> IO (Either Text PostResult)
@@ -365,6 +362,12 @@ autoPost manager vaultDir = do
   env <- validateEnvironment
   let apiKey = Gemini.gcApiKey (ecGemini env)
 
+  regenerateResult <- try (regenerateBlueskyEmbeds manager vaultDir)
+    :: IO (Either SomeException ())
+  case regenerateResult of
+    Left exception -> putStrLn $ "  ⚠️  Bluesky embed regeneration failed: " <> show exception
+    Right () -> pure ()
+
   postedNotes <- runPostingPipeline manager env apiKey vaultDir
 
   let reflectionsDir = vaultDir </> "reflections"
@@ -376,3 +379,69 @@ autoPost manager vaultDir = do
         ) postedNotes
   _ <- addUpdateLinksToReflection reflectionsDir todayStr updateLinks
   pure ()
+
+regenerateBlueskyEmbeds :: Manager -> FilePath -> IO ()
+regenerateBlueskyEmbeds manager vaultDir = do
+  putStrLn "  🔄 Scanning for Bluesky placeholder embeds to regenerate..."
+  files <- findMarkdownFiles vaultDir
+  regenerated <- mapM (tryRegenerateFile manager) files
+  let count = sum regenerated
+  if count > 0
+    then putStrLn $ "  ✅ Regenerated " <> show count <> " Bluesky embed(s)"
+    else putStrLn "  📭 No Bluesky placeholder embeds found"
+
+findMarkdownFiles :: FilePath -> IO [FilePath]
+findMarkdownFiles dir = do
+  entries <- listDirectory dir
+  let visible = filter (not . isHidden) entries
+  paths <- mapM (processEntry dir) visible
+  pure (concat paths)
+  where
+    isHidden name = case name of
+      ('.' : _) -> True
+      _         -> False
+    processEntry parent name = do
+      let fullPath = parent </> name
+      isFile <- doesFileExist fullPath
+      if isFile && takeExtension name == ".md"
+        then pure [fullPath]
+        else do
+          isDir <- doesDirectoryExist fullPath
+          if isDir
+            then findMarkdownFiles fullPath
+            else pure []
+
+tryRegenerateFile :: Manager -> FilePath -> IO Int
+tryRegenerateFile manager filePath = do
+  content <- TIO.readFile filePath
+  let blueskyHeader = Bluesky.sectionHeader
+  if not (blueskyHeader `T.isInfixOf` content)
+    then pure 0
+    else do
+      let sectionContent = extractSectionContent blueskyHeader content
+      case Bluesky.extractRegenerationUrl sectionContent of
+        Nothing -> pure 0
+        Just postUrl -> do
+          putStrLn $ "  🔄 Regenerating embed for: " <> filePath
+          oembedResult <- Bluesky.fetchOEmbed manager postUrl
+          case oembedResult of
+            Right (Bluesky.EmbedResult newEmbed) -> do
+              let newContent = Bluesky.replaceSectionContent content newEmbed
+              TIO.writeFile filePath newContent
+              putStrLn $ "  ✅ Regenerated: " <> filePath
+              pure 1
+            Left err -> do
+              putStrLn $ "  ⚠️  oEmbed still failing for " <> filePath <> ": " <> show err
+              pure 0
+
+extractSectionContent :: Text -> Text -> Text
+extractSectionContent header content =
+  case T.breakOn header content of
+    (_, "") -> ""
+    (_, rest) ->
+      let afterHeader = T.drop (T.length header) rest
+          lines' = T.lines afterHeader
+          sectionLines = takeWhile (not . isNextSection) (drop 1 lines')
+      in T.unlines sectionLines
+  where
+    isNextSection line = "## " `T.isPrefixOf` T.stripStart line

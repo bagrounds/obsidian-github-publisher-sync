@@ -86,9 +86,9 @@ sectionHeaderTests = testGroup "section headers"
 
 embedDelayTests :: TestTree
 embedDelayTests = testGroup "embed delays"
-  [ testCase "Bluesky.oembedInitialDelayMs is non-negative" $
-      assertBool "should be non-negative" (Bluesky.oembedInitialDelayMs >= 0)
+  [ testCase "Bluesky.defaultOEmbedConfig initialDelayMs is non-negative" $
+      assertBool "should be non-negative" (Bluesky.initialDelayMs Bluesky.defaultOEmbedConfig >= 0)
 
-  , testCase "Bluesky.oembedRetryDelayMs is positive" $
-      assertBool "should be positive" (Bluesky.oembedRetryDelayMs > 0)
+  , testCase "Bluesky.defaultOEmbedConfig retryDelayMs is positive" $
+      assertBool "should be positive" (Bluesky.retryDelayMs Bluesky.defaultOEmbedConfig > 0)
   ]

@@ -3,6 +3,7 @@ module Automation.Platforms.Bluesky
   , PostResult (..)
   , EmbedResult (..)
   , LinkCard (..)
+  , OEmbedConfig (..)
   , Error (HttpError, JsonParseError, ExtractionError, NetworkError)
   , classifyException
   , parseSession
@@ -11,19 +12,18 @@ module Automation.Platforms.Bluesky
   , limits
   , displayName
   , sectionHeader
-  , oembedInitialDelayMs
-  , oembedRetryDelayMs
-  , oembedMaxAttempts
+  , defaultOEmbedConfig
   , extractPostId
   , extractDid
   , buildPostUrl
-  , buildPlaceholderLink
-  , isPlaceholderLink
-  , replacePlaceholderWithEmbed
+  , isBrokenEmbed
+  , extractPostUrlFromBrokenEmbed
+  , needsEmbedRegeneration
+  , extractRegenerationUrl
+  , replaceSectionContent
   , post
   , deletePost
   , fetchOEmbed
-  , generateLocalEmbed
   , getEmbedHtml
   ) where
 
@@ -49,7 +49,6 @@ import Network.HTTP.Client
   )
 import Network.HTTP.Types.Status (statusCode)
 
-import Automation.Html (formatDisplayDate, textToHtml)
 import qualified Automation.Json as Json
 import Automation.Json ((.=), (.:), encode, eitherDecode, object, withObject)
 import Automation.Platform (PlatformLimits (..))
@@ -57,13 +56,8 @@ import Automation.Platforms.OgMetadata (detectContentType, fetchImageAsBuffer)
 import Automation.Retry (HttpCodeException (HttpCodeException), defaultRetryOptions, withRetry)
 import Automation.Secret (Secret (..))
 import Automation.Title (Title, unTitle)
-import Automation.Url (Url, unUrl)
+import Automation.Url (Url, mkUrl, unUrl)
 
--- ── Domain types ───────────────────────────────────────────────────────
-
--- | Typed error for Bluesky API operations.
--- Structured constructors preserve error context and enable pattern matching
--- for decisions (e.g., retrying on HTTP 404) without string inspection.
 data Error
   = HttpError Int Text
   | JsonParseError Text
@@ -83,13 +77,13 @@ data Credentials = Credentials
   } deriving (Show, Eq)
 
 data PostResult = PostResult
-  { bprUri :: Text
-  , bprCid :: Text
-  , bprText :: Text
+  { postUri :: Text
+  , postCid :: Text
+  , postText :: Text
   } deriving (Show, Eq)
 
 newtype EmbedResult = EmbedResult
-  { erHtml :: Text
+  { embedHtml :: Text
   } deriving (Show, Eq)
 
 data LinkCard = LinkCard
@@ -99,7 +93,18 @@ data LinkCard = LinkCard
   , lcThumbUrl :: Maybe Text
   } deriving (Show, Eq)
 
--- ── Platform constants ─────────────────────────────────────────────────
+data OEmbedConfig = OEmbedConfig
+  { initialDelayMs :: Int
+  , retryDelayMs :: Int
+  , maxAttempts :: Int
+  } deriving (Show, Eq)
+
+defaultOEmbedConfig :: OEmbedConfig
+defaultOEmbedConfig = OEmbedConfig
+  { initialDelayMs = 3000
+  , retryDelayMs = 3000
+  , maxAttempts = 3
+  }
 
 limits :: PlatformLimits
 limits = PlatformLimits
@@ -113,24 +118,11 @@ displayName = "Bryan Grounds"
 sectionHeader :: Text
 sectionHeader = "## 🦋 Bluesky"
 
-oembedInitialDelayMs :: Int
-oembedInitialDelayMs = 3000
-
-oembedRetryDelayMs :: Int
-oembedRetryDelayMs = 3000
-
-oembedMaxAttempts :: Int
-oembedMaxAttempts = 3
-
--- ── Constants ──────────────────────────────────────────────────────────
-
 atpBaseUrl :: Text
 atpBaseUrl = "https://bsky.social/xrpc/"
 
 oembedBaseUrl :: Text
 oembedBaseUrl = "https://embed.bsky.app/oembed"
-
--- ── AT Protocol Session ────────────────────────────────────────────────
 
 data AtpSession = AtpSession
   { asDid         :: Text
@@ -174,7 +166,6 @@ extractSession = withObject "session response" $ \obj -> do
   token <- obj .: "accessJwt"
   pure AtpSession { asDid = did, asAccessToken = token }
 
--- ── URL Extraction (Pure) ──────────────────────────────────────────────
 
 extractPostId :: Text -> Maybe Text
 extractPostId uri =
@@ -197,7 +188,6 @@ buildPostUrl :: Text -> Text -> Text
 buildPostUrl did postId =
   "https://bsky.app/profile/" <> did <> "/post/" <> postId
 
--- ── Facet Detection ────────────────────────────────────────────────────
 
 data Facet = Facet
   { facetStart :: Int
@@ -254,7 +244,6 @@ normalizeUrl t
   | T.isPrefixOf "http://" t || T.isPrefixOf "https://" t = t
   | otherwise = "https://" <> t
 
--- ── Blob Upload ────────────────────────────────────────────────────────
 
 uploadBlob :: Manager -> AtpSession -> BS.ByteString -> LBS.ByteString -> IO (Either Error Json.Value)
 uploadBlob manager AtpSession{..} contentType imageData = do
@@ -282,7 +271,6 @@ uploadBlob manager AtpSession{..} contentType imageData = do
         Left err   -> Left (ExtractionError (T.pack err))
         Right blob -> Right blob
 
--- ── Posting ────────────────────────────────────────────────────────────
 
 post
   :: Manager
@@ -381,16 +369,15 @@ parsePostResponse postText body =
       Right r   -> Right r
 
 extractPostData :: Text -> Json.Value -> Either String PostResult
-extractPostData postText = withObject "create record response" $ \obj -> do
+extractPostData originalText = withObject "create record response" $ \obj -> do
   uri <- obj .: "uri"
   cid <- obj .: "cid"
   pure PostResult
-    { bprUri = uri
-    , bprCid = cid
-    , bprText = postText
+    { postUri = uri
+    , postCid = cid
+    , postText = originalText
     }
 
--- ── Deleting ───────────────────────────────────────────────────────────
 
 deletePost
   :: Manager
@@ -440,12 +427,11 @@ parseAtUri uri =
         _                        -> ("app.bsky.feed.post", rest)
     Nothing -> ("app.bsky.feed.post", uri)
 
--- ── Embed HTML ─────────────────────────────────────────────────────────
 
-fetchOEmbed :: Manager -> Text -> IO (Either Error EmbedResult)
+fetchOEmbed :: Manager -> Url -> IO (Either Error EmbedResult)
 fetchOEmbed manager postUrl = do
   let url = T.unpack oembedBaseUrl
-              <> "?url=" <> T.unpack postUrl
+              <> "?url=" <> T.unpack (unUrl postUrl)
               <> "&format=json"
   result <- try @SomeException $ do
     request <- parseRequest url
@@ -466,76 +452,97 @@ parseOEmbedHtml body =
       Left err   -> Left (ExtractionError (T.pack err))
       Right html -> Right (EmbedResult html)
 
-generateLocalEmbed :: Text -> Text -> Text -> Text -> Maybe Text -> Text
-generateLocalEmbed uri postText date handle maybeCid =
-  let did = fromMaybe "" (extractDid uri)
-      postId = fromMaybe "" (extractPostId uri)
-      postUrl = buildPostUrl did postId
-      htmlText = textToHtml postText
-      displayDate = formatDisplayDate date
-      cidAttr = maybe "" (\cid -> " data-bluesky-cid=\"" <> cid <> "\"") maybeCid
-  in "<blockquote class=\"bluesky-embed\" data-bluesky-uri=\""
-       <> uri <> "\"" <> cidAttr
-       <> " data-bluesky-embed-color-mode=\"system\">"
-       <> "<p lang=\"en\">" <> htmlText <> "</p>"
-       <> "\n&mdash; " <> displayName <> " "
-       <> "(<a href=\"https://bsky.app/profile/" <> did <> "?ref_src=embed\">@" <> handle <> "</a>) "
-       <> "<a href=\"" <> postUrl <> "?ref_src=embed\">" <> displayDate <> "</a>"
-       <> "</blockquote>"
-       <> "<script async src=\"https://embed.bsky.app/static/embed.js\" charset=\"utf-8\"></script>"
+getEmbedHtml :: Manager -> OEmbedConfig -> Text -> IO Text
+getEmbedHtml manager config atUri =
+  let did = fromMaybe "" (extractDid atUri)
+      postId = fromMaybe "" (extractPostId atUri)
+  in case mkUrl (buildPostUrl did postId) of
+    Left _ -> do
+      putStrLn $ "  ⚠️  Could not build valid Bluesky post URL from AT URI: " <> T.unpack atUri
+      pure (buildPostUrl did postId)
+    Right postUrl -> tryOEmbedWithRetry manager config postUrl 0
 
-getEmbedHtml :: Manager -> Text -> IO Text
-getEmbedHtml manager uri =
-  let did = fromMaybe "" (extractDid uri)
-      postId = fromMaybe "" (extractPostId uri)
-      postUrl = buildPostUrl did postId
-      fallback = buildPlaceholderLink postUrl
-  in tryOEmbedWithRetry manager postUrl fallback 0 oembedMaxAttempts
-
-tryOEmbedWithRetry :: Manager -> Text -> Text -> Int -> Int -> IO Text
-tryOEmbedWithRetry manager postUrl fallback attempt maxAttempts = do
+tryOEmbedWithRetry :: Manager -> OEmbedConfig -> Url -> Int -> IO Text
+tryOEmbedWithRetry manager config postUrl attempt = do
   let delayMs = if attempt == 0
-        then oembedInitialDelayMs
-        else oembedRetryDelayMs
+        then initialDelayMs config
+        else retryDelayMs config
   when (delayMs > 0) $
     threadDelay (delayMs * 1000)
   result <- fetchOEmbed manager postUrl
   case result of
     Right (EmbedResult html) -> pure html
     Left (HttpError 404 _)
-      | attempt + 1 < maxAttempts ->
-          tryOEmbedWithRetry manager postUrl fallback (attempt + 1) maxAttempts
+      | attempt + 1 < maxAttempts config ->
+          tryOEmbedWithRetry manager config postUrl (attempt + 1)
     Left err -> do
       putStrLn $ "  ⚠️  Bluesky oEmbed failed after " <> show (attempt + 1)
                    <> " attempts: " <> show err <> " — using placeholder link"
-      pure fallback
+      pure (unUrl postUrl)
 
-buildPlaceholderLink :: Text -> Text
-buildPlaceholderLink postUrl = postUrl
+isBrokenEmbed :: Text -> Bool
+isBrokenEmbed section =
+  let trimmed = T.strip section
+  in "<blockquote" `T.isInfixOf` trimmed
+       && "data-bluesky-uri" `T.isInfixOf` trimmed
+       && "did:plc:" `T.isInfixOf` extractParagraphContent trimmed
+
+extractParagraphContent :: Text -> Text
+extractParagraphContent html =
+  case T.breakOn "<p " html of
+    (_, rest) | not (T.null rest) ->
+      let afterOpen = T.drop 1 (T.dropWhile (/= '>') rest)
+      in T.takeWhile (/= '<') afterOpen
+    _ -> ""
+
+extractPostUrlFromBrokenEmbed :: Text -> Maybe Url
+extractPostUrlFromBrokenEmbed section =
+  case T.breakOn "data-bluesky-uri=\"" section of
+    (_, rest) | not (T.null rest) ->
+      let afterAttr = T.drop (T.length "data-bluesky-uri=\"") rest
+          uriValue = T.takeWhile (/= '"') afterAttr
+      in extractUrlFromUri uriValue
+    _ -> Nothing
+
+extractUrlFromUri :: Text -> Maybe Url
+extractUrlFromUri uriValue
+  | "https://bsky.app/" `T.isPrefixOf` uriValue =
+      either (const Nothing) Just (mkUrl uriValue)
+  | "at://" `T.isPrefixOf` uriValue =
+      let did = fromMaybe "" (extractDid uriValue)
+          postId = fromMaybe "" (extractPostId uriValue)
+      in either (const Nothing) Just (mkUrl (buildPostUrl did postId))
+  | otherwise = Nothing
+
+needsEmbedRegeneration :: Text -> Bool
+needsEmbedRegeneration section =
+  isPlaceholderLink section || isBrokenEmbed section
 
 isPlaceholderLink :: Text -> Bool
 isPlaceholderLink section =
   let trimmed = T.strip section
-      hasUrl = "https://bsky.app/profile/" `T.isInfixOf` trimmed
-      hasBlockquote = "<blockquote" `T.isInfixOf` trimmed
-  in hasUrl && not hasBlockquote
+  in "https://bsky.app/profile/" `T.isInfixOf` trimmed
+       && not ("<blockquote" `T.isInfixOf` trimmed)
 
-replacePlaceholderWithEmbed :: Text -> Text -> Text
-replacePlaceholderWithEmbed fileContent embedHtml =
-  let sectionStart = sectionHeader
-      lines' = T.lines fileContent
-  in T.unlines (replaceLinesAfterHeader sectionStart embedHtml lines')
+extractRegenerationUrl :: Text -> Maybe Url
+extractRegenerationUrl section
+  | isPlaceholderLink section =
+      either (const Nothing) Just (mkUrl (T.strip section))
+  | isBrokenEmbed section =
+      extractPostUrlFromBrokenEmbed section
+  | otherwise = Nothing
+
+replaceSectionContent :: Text -> Text -> Text
+replaceSectionContent fileContent newEmbedHtml =
+  T.unlines (replaceLinesAfterHeader sectionHeader newEmbedHtml (T.lines fileContent))
 
 replaceLinesAfterHeader :: Text -> Text -> [Text] -> [Text]
 replaceLinesAfterHeader _ _ [] = []
-replaceLinesAfterHeader header embedHtml (line : rest)
+replaceLinesAfterHeader header newContent (line : rest)
   | header `T.isPrefixOf` T.stripEnd line =
-      let (sectionLines, remaining) = spanSection rest
-          sectionContent = T.unlines sectionLines
-      in if isPlaceholderLink sectionContent
-           then line : T.stripEnd embedHtml : remaining
-           else line : sectionLines <> remaining
-  | otherwise = line : replaceLinesAfterHeader header embedHtml rest
+      let (_, remaining) = spanSection rest
+      in line : T.stripEnd newContent : remaining
+  | otherwise = line : replaceLinesAfterHeader header newContent rest
 
 spanSection :: [Text] -> ([Text], [Text])
 spanSection [] = ([], [])

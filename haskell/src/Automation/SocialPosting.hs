@@ -227,8 +227,9 @@ postToBlueskyPlatform manager env note postText =
       result <- Bluesky.post manager creds postText (Just linkCard)
       case result of
         Left err -> pure (Left $ "Bluesky post failed: " <> T.pack (show err))
-        Right bpr -> do
-          embedHtml <- Bluesky.getEmbedHtml manager (Bluesky.bprUri bpr)
+        Right blueskyPostResult -> do
+          embedHtml <- Bluesky.getEmbedHtml manager Bluesky.defaultOEmbedConfig
+                         (Bluesky.postUri blueskyPostResult)
           pure $ Right PostResult
             { prPlatform = Bluesky
             , prEmbedHtml = embedHtml
@@ -364,7 +365,7 @@ autoPost manager vaultDir = do
   regenerateResult <- try (regenerateBlueskyEmbeds manager vaultDir)
     :: IO (Either SomeException ())
   case regenerateResult of
-    Left exc -> putStrLn $ "  ⚠️  Bluesky embed regeneration failed: " <> show exc
+    Left exception -> putStrLn $ "  ⚠️  Bluesky embed regeneration failed: " <> show exception
     Right () -> pure ()
 
   postedNotes <- runPostingPipeline manager env apiKey vaultDir
@@ -418,21 +419,20 @@ tryRegenerateFile manager filePath = do
     then pure 0
     else do
       let sectionContent = extractSectionContent blueskyHeader content
-      if Bluesky.isPlaceholderLink sectionContent
-        then do
-          let postUrl = T.strip sectionContent
+      case Bluesky.extractRegenerationUrl sectionContent of
+        Nothing -> pure 0
+        Just postUrl -> do
           putStrLn $ "  🔄 Regenerating embed for: " <> filePath
           oembedResult <- Bluesky.fetchOEmbed manager postUrl
           case oembedResult of
-            Right (Bluesky.EmbedResult embedHtml) -> do
-              let newContent = Bluesky.replacePlaceholderWithEmbed content embedHtml
+            Right (Bluesky.EmbedResult newEmbed) -> do
+              let newContent = Bluesky.replaceSectionContent content newEmbed
               TIO.writeFile filePath newContent
               putStrLn $ "  ✅ Regenerated: " <> filePath
               pure 1
             Left err -> do
               putStrLn $ "  ⚠️  oEmbed still failing for " <> filePath <> ": " <> show err
               pure 0
-        else pure 0
 
 extractSectionContent :: Text -> Text -> Text
 extractSectionContent header content =

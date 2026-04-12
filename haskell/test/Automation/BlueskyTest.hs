@@ -17,21 +17,19 @@ tests = testGroup "Bluesky"
   [ extractPostIdTests
   , extractDidTests
   , buildPostUrlTests
-  , generateLocalEmbedTests
   , parseSessionTests
   , parsePostResponseTests
   , parseOEmbedHtmlTests
   , classifyExceptionTests
-  , placeholderLinkTests
-  , replacePlaceholderTests
-  , buildPlaceholderLinkTests
+  , needsEmbedRegenerationTests
+  , extractRegenerationUrlTests
+  , replaceSectionContentTests
+  , isBrokenEmbedTests
   , propertyTests
   ]
 
--- ── Bluesky.extractPostId ─────────────────────────────────────────────
-
 extractPostIdTests :: TestTree
-extractPostIdTests = testGroup "Bluesky.extractPostId"
+extractPostIdTests = testGroup "extractPostId"
   [ testCase "extracts post id from at:// URI" $
       Bluesky.extractPostId "at://did:plc:abc123/app.bsky.feed.post/3abc"
         @?= Just "3abc"
@@ -45,10 +43,8 @@ extractPostIdTests = testGroup "Bluesky.extractPostId"
         isJust (Bluesky.extractPostId "singlevalue")
   ]
 
--- ── Bluesky.extractDid ────────────────────────────────────────────────
-
 extractDidTests :: TestTree
-extractDidTests = testGroup "Bluesky.extractDid"
+extractDidTests = testGroup "extractDid"
   [ testCase "extracts DID from at:// URI" $
       Bluesky.extractDid "at://did:plc:abc123/app.bsky.feed.post/xyz"
         @?= Just "did:plc:abc123"
@@ -62,104 +58,15 @@ extractDidTests = testGroup "Bluesky.extractDid"
         isNothing (Bluesky.extractDid "https://example.com/nothing")
   ]
 
--- ── Bluesky.buildPostUrl ──────────────────────────────────────────────
-
 buildPostUrlTests :: TestTree
-buildPostUrlTests = testGroup "Bluesky.buildPostUrl"
+buildPostUrlTests = testGroup "buildPostUrl"
   [ testCase "builds correct URL" $
       Bluesky.buildPostUrl "did:plc:abc123" "xyz789"
         @?= "https://bsky.app/profile/did:plc:abc123/post/xyz789"
   ]
 
--- ── Bluesky.generateLocalEmbed ────────────────────────────────────────
-
-generateLocalEmbedTests :: TestTree
-generateLocalEmbedTests = testGroup "Bluesky.generateLocalEmbed"
-  [ testCase "contains blockquote with data attributes" $ do
-      let html = Bluesky.generateLocalEmbed
-                   "at://did:plc:abc/app.bsky.feed.post/xyz"
-                   "Hello world"
-                   "2024-03-15"
-                   "testuser"
-                   Nothing
-      assertBool "should contain bluesky-embed class" $
-        "bluesky-embed" `T.isInfixOf` html
-      assertBool "should contain data-bluesky-uri" $
-        "data-bluesky-uri" `T.isInfixOf` html
-      assertBool "should contain embed script" $
-        "embed.bsky.app/static/embed.js" `T.isInfixOf` html
-      assertBool "should contain color mode" $
-        "data-bluesky-embed-color-mode=\"system\"" `T.isInfixOf` html
-
-  , testCase "includes CID attribute when provided" $ do
-      let html = Bluesky.generateLocalEmbed
-                   "at://did:plc:abc/app.bsky.feed.post/xyz"
-                   "Hello"
-                   "2024-03-15"
-                   "testuser"
-                   (Just "bafyreiabc")
-      assertBool "should contain data-bluesky-cid" $
-        "data-bluesky-cid=\"bafyreiabc\"" `T.isInfixOf` html
-
-  , testCase "omits CID attribute when Nothing" $ do
-      let html = Bluesky.generateLocalEmbed
-                   "at://did:plc:abc/app.bsky.feed.post/xyz"
-                   "Hello"
-                   "2024-03-15"
-                   "testuser"
-                   Nothing
-      assertBool "should not contain data-bluesky-cid" $
-        not ("data-bluesky-cid" `T.isInfixOf` html)
-
-  , testCase "formats date correctly" $ do
-      let html = Bluesky.generateLocalEmbed
-                   "at://did:plc:abc/app.bsky.feed.post/xyz"
-                   "Hello"
-                   "2024-03-15"
-                   "user"
-                   Nothing
-      assertBool "should contain formatted date" $
-        "March 15, 2024" `T.isInfixOf` html
-
-  , testCase "escapes HTML in post text" $ do
-      let html = Bluesky.generateLocalEmbed
-                   "at://did:plc:abc/app.bsky.feed.post/xyz"
-                   "Hello <world> & \"friends\""
-                   "2024-01-01"
-                   "user"
-                   Nothing
-      assertBool "should escape angle brackets" $
-        "&lt;world&gt;" `T.isInfixOf` html
-      assertBool "should escape ampersand" $
-        "&amp;" `T.isInfixOf` html
-
-  , testCase "includes handle link" $ do
-      let html = Bluesky.generateLocalEmbed
-                   "at://did:plc:abc/app.bsky.feed.post/xyz"
-                   "Hi"
-                   "2024-01-01"
-                   "testuser"
-                   Nothing
-      assertBool "should contain @handle" $
-        "@testuser" `T.isInfixOf` html
-      assertBool "should contain profile link" $
-        "bsky.app/profile/did:plc:abc?ref_src=embed" `T.isInfixOf` html
-
-  , testCase "includes display name" $ do
-      let html = Bluesky.generateLocalEmbed
-                   "at://did:plc:abc/app.bsky.feed.post/xyz"
-                   "Hi"
-                   "2024-01-01"
-                   "testuser"
-                   Nothing
-      assertBool "should contain Bryan Grounds" $
-        "Bryan Grounds" `T.isInfixOf` html
-  ]
-
--- ── Bluesky.parseSession ──────────────────────────────────────────────
-
 parseSessionTests :: TestTree
-parseSessionTests = testGroup "Bluesky.parseSession"
+parseSessionTests = testGroup "parseSession"
   [ testCase "parses valid session response" $
       let body = "{\"did\":\"did:plc:abc123\",\"accessJwt\":\"token123\"}"
       in case Bluesky.parseSession (toLBS body) of
@@ -185,14 +92,12 @@ parseSessionTests = testGroup "Bluesky.parseSession"
         Right _ -> fail "Expected Left, got Right"
   ]
 
--- ── Bluesky.parsePostResponse ─────────────────────────────────────────
-
 parsePostResponseTests :: TestTree
-parsePostResponseTests = testGroup "Bluesky.parsePostResponse"
+parsePostResponseTests = testGroup "parsePostResponse"
   [ testCase "parses valid post response" $
       let body = "{\"uri\":\"at://did:plc:abc/app.bsky.feed.post/xyz\",\"cid\":\"bafyabc\"}"
       in case Bluesky.parsePostResponse "hello" (toLBS body) of
-           Right result -> Bluesky.bprCid result @?= "bafyabc"
+           Right result -> Bluesky.postCid result @?= "bafyabc"
            Left err -> fail $ "Expected Right, got: " <> show err
 
   , testCase "returns JsonParseError for invalid JSON" $
@@ -206,10 +111,8 @@ parsePostResponseTests = testGroup "Bluesky.parsePostResponse"
         other -> fail $ "Expected ExtractionError, got: " <> show other
   ]
 
--- ── Bluesky.parseOEmbedHtml ──────────────────────────────────────────
-
 parseOEmbedHtmlTests :: TestTree
-parseOEmbedHtmlTests = testGroup "Bluesky.parseOEmbedHtml"
+parseOEmbedHtmlTests = testGroup "parseOEmbedHtml"
   [ testCase "parses valid oEmbed response" $
       let body = "{\"html\":\"<div>embed</div>\"}"
       in Bluesky.parseOEmbedHtml (toLBS body)
@@ -226,10 +129,8 @@ parseOEmbedHtmlTests = testGroup "Bluesky.parseOEmbedHtml"
         other -> fail $ "Expected ExtractionError, got: " <> show other
   ]
 
--- ── Bluesky.classifyException ─────────────────────────────────────────
-
 classifyExceptionTests :: TestTree
-classifyExceptionTests = testGroup "Bluesky.classifyException"
+classifyExceptionTests = testGroup "classifyException"
   [ testCase "classifies HttpCodeException as HttpError" $
       let exception = toException (HttpCodeException 401 "Unauthorized")
       in Bluesky.classifyException exception
@@ -249,36 +150,77 @@ classifyExceptionTests = testGroup "Bluesky.classifyException"
            other -> fail $ "Expected NetworkError, got: " <> show other
   ]
 
--- ── Bluesky.isPlaceholderLink ──────────────────────────────────────────
+needsEmbedRegenerationTests :: TestTree
+needsEmbedRegenerationTests = testGroup "needsEmbedRegeneration"
+  [ testCase "detects plain Bluesky URL as needing regeneration" $
+      assertBool "plain URL should need regeneration" $
+        Bluesky.needsEmbedRegeneration "https://bsky.app/profile/did:plc:abc/post/xyz"
 
-placeholderLinkTests :: TestTree
-placeholderLinkTests = testGroup "Bluesky.isPlaceholderLink"
-  [ testCase "detects plain Bluesky URL as placeholder" $
-      assertBool "plain URL should be placeholder" $
-        Bluesky.isPlaceholderLink "https://bsky.app/profile/did:plc:abc/post/xyz"
+  , testCase "detects URL with whitespace as needing regeneration" $
+      assertBool "URL with surrounding whitespace should need regeneration" $
+        Bluesky.needsEmbedRegeneration "  \nhttps://bsky.app/profile/did:plc:abc/post/xyz\n  "
 
-  , testCase "detects URL with whitespace as placeholder" $
-      assertBool "URL with surrounding whitespace should be placeholder" $
-        Bluesky.isPlaceholderLink "  \nhttps://bsky.app/profile/did:plc:abc/post/xyz\n  "
+  , testCase "detects broken embed as needing regeneration" $
+      assertBool "broken embed should need regeneration" $
+        Bluesky.needsEmbedRegeneration brokenEmbedExample
 
-  , testCase "does not detect blockquote embed as placeholder" $
-      assertBool "blockquote should not be placeholder" $
-        not $ Bluesky.isPlaceholderLink
-          "<blockquote class=\"bluesky-embed\" data-bluesky-uri=\"at://did:plc:abc/app.bsky.feed.post/xyz\">content</blockquote>"
+  , testCase "does not detect valid blockquote embed as needing regeneration" $
+      assertBool "valid blockquote should not need regeneration" $
+        not $ Bluesky.needsEmbedRegeneration
+          "<blockquote class=\"bluesky-embed\" data-bluesky-uri=\"at://did:plc:abc/app.bsky.feed.post/xyz\"><p lang=\"en\">Hello world, this is a real post</p></blockquote>"
 
-  , testCase "does not detect empty text as placeholder" $
-      assertBool "empty should not be placeholder" $
-        not $ Bluesky.isPlaceholderLink ""
+  , testCase "does not detect empty text as needing regeneration" $
+      assertBool "empty should not need regeneration" $
+        not $ Bluesky.needsEmbedRegeneration ""
 
-  , testCase "does not detect non-bluesky URL as placeholder" $
-      assertBool "non-bluesky URL should not be placeholder" $
-        not $ Bluesky.isPlaceholderLink "https://example.com/post/123"
+  , testCase "does not detect non-bluesky URL as needing regeneration" $
+      assertBool "non-bluesky URL should not need regeneration" $
+        not $ Bluesky.needsEmbedRegeneration "https://example.com/post/123"
   ]
 
--- ── Bluesky.replacePlaceholderWithEmbed ────────────────────────────────
+isBrokenEmbedTests :: TestTree
+isBrokenEmbedTests = testGroup "isBrokenEmbed"
+  [ testCase "detects garbled embed with DID in paragraph" $
+      assertBool "should detect broken embed" $
+        Bluesky.isBrokenEmbed brokenEmbedExample
 
-replacePlaceholderTests :: TestTree
-replacePlaceholderTests = testGroup "Bluesky.replacePlaceholderWithEmbed"
+  , testCase "does not detect valid embed as broken" $
+      assertBool "valid embed should not be broken" $
+        not $ Bluesky.isBrokenEmbed
+          "<blockquote class=\"bluesky-embed\" data-bluesky-uri=\"at://did:plc:abc/app.bsky.feed.post/xyz\"><p lang=\"en\">Hello world, this is a real post</p></blockquote>"
+
+  , testCase "does not detect plain URL as broken embed" $
+      assertBool "plain URL should not be broken embed" $
+        not $ Bluesky.isBrokenEmbed "https://bsky.app/profile/did:plc:abc/post/xyz"
+  ]
+
+extractRegenerationUrlTests :: TestTree
+extractRegenerationUrlTests = testGroup "extractRegenerationUrl"
+  [ testCase "extracts URL from plain placeholder link" $
+      let result = Bluesky.extractRegenerationUrl "https://bsky.app/profile/did:plc:abc/post/xyz"
+      in assertBool "should extract URL from placeholder" $ isJust result
+
+  , testCase "extracts URL from broken embed with https URI" $
+      let brokenWithHttps = "<blockquote class=\"bluesky-embed\" data-bluesky-uri=\"https://bsky.app/profile/bagrounds.bsky.social/post/3mjarbzrnt52a\" data-bluesky-embed-color-mode=\"system\"><p lang=\"en\">did:plc:i4yli6h7x2uoj7acxunww2fc</p></blockquote>"
+          result = Bluesky.extractRegenerationUrl brokenWithHttps
+      in assertBool "should extract URL from broken embed" $ isJust result
+
+  , testCase "extracts URL from broken embed example from issue" $
+      let result = Bluesky.extractRegenerationUrl brokenEmbedExample
+      in assertBool "should extract URL from real broken embed" $ isJust result
+
+  , testCase "returns Nothing for valid embed" $
+      let validEmbed = "<blockquote class=\"bluesky-embed\" data-bluesky-uri=\"at://did:plc:abc/app.bsky.feed.post/xyz\"><p lang=\"en\">Hello world, real post content here</p></blockquote>"
+          result = Bluesky.extractRegenerationUrl validEmbed
+      in assertBool "should return Nothing for valid embed" $ isNothing result
+
+  , testCase "returns Nothing for empty content" $
+      assertBool "should return Nothing for empty" $
+        isNothing (Bluesky.extractRegenerationUrl "")
+  ]
+
+replaceSectionContentTests :: TestTree
+replaceSectionContentTests = testGroup "replaceSectionContent"
   [ testCase "replaces placeholder URL with embed HTML" $ do
       let content = T.unlines
             [ "# My Note"
@@ -289,10 +231,10 @@ replacePlaceholderTests = testGroup "Bluesky.replacePlaceholderWithEmbed"
             , "## 🐘 Mastodon"
             , "<iframe>mastodon embed</iframe>"
             ]
-          embedHtml = "<blockquote class=\"bluesky-embed\">real embed</blockquote><script></script>"
-          result = Bluesky.replacePlaceholderWithEmbed content embedHtml
+          newEmbed = "<blockquote class=\"bluesky-embed\">real embed</blockquote><script></script>"
+          result = Bluesky.replaceSectionContent content newEmbed
       assertBool "should contain new embed" $
-        embedHtml `T.isInfixOf` result
+        newEmbed `T.isInfixOf` result
       assertBool "should not contain placeholder URL" $
         not ("https://bsky.app/profile/did:plc:abc/post/xyz" `T.isInfixOf` result)
       assertBool "should preserve mastodon section" $
@@ -300,42 +242,37 @@ replacePlaceholderTests = testGroup "Bluesky.replacePlaceholderWithEmbed"
 
   , testCase "does not modify file without Bluesky section" $ do
       let content = "# My Note\nSome content\n"
-          result = Bluesky.replacePlaceholderWithEmbed content "<embed/>"
+          result = Bluesky.replaceSectionContent content "<embed/>"
       result @?= content
 
-  , testCase "does not modify file with existing blockquote embed" $ do
+  , testCase "replaces broken embed with new embed" $ do
       let content = T.unlines
             [ "# My Note"
             , ""
             , "## 🦋 Bluesky"
-            , "<blockquote class=\"bluesky-embed\">existing</blockquote>"
+            , brokenEmbedExample
+            , ""
+            , "## 🐘 Mastodon"
+            , "<iframe>mastodon embed</iframe>"
             ]
-          result = Bluesky.replacePlaceholderWithEmbed content "<blockquote>new</blockquote>"
-      assertBool "should still contain existing embed" $
-        "existing" `T.isInfixOf` result
+          newEmbed = "<blockquote class=\"bluesky-embed\">proper embed</blockquote><script></script>"
+          result = Bluesky.replaceSectionContent content newEmbed
+      assertBool "should contain new embed" $
+        newEmbed `T.isInfixOf` result
+      assertBool "should not contain broken embed" $
+        not (brokenEmbedExample `T.isInfixOf` result)
   ]
-
--- ── Bluesky.buildPlaceholderLink ──────────────────────────────────────
-
-buildPlaceholderLinkTests :: TestTree
-buildPlaceholderLinkTests = testGroup "Bluesky.buildPlaceholderLink"
-  [ testCase "returns the URL as-is" $
-      Bluesky.buildPlaceholderLink "https://bsky.app/profile/did:plc:abc/post/xyz"
-        @?= "https://bsky.app/profile/did:plc:abc/post/xyz"
-  ]
-
--- ── Property Tests ─────────────────────────────────────────────────────
 
 propertyTests :: TestTree
 propertyTests = testGroup "properties"
-  [ testProperty "Bluesky.buildPostUrl contains DID and postId" $
+  [ testProperty "buildPostUrl contains DID and postId" $
       \didSuffix postIdSuffix ->
         let did = "did:plc:" <> T.pack didSuffix
             postId = T.pack postIdSuffix
             url = Bluesky.buildPostUrl did postId
         in did `T.isInfixOf` url && postId `T.isInfixOf` url
 
-  , testProperty "Bluesky.extractPostId returns last path segment for at:// URIs" $
+  , testProperty "extractPostId returns last path segment for at:// URIs" $
       \rkey ->
         let rk = T.pack (filter (`notElem` ['/', ' ', '\n', '\r', '\t', '\0']) rkey)
             uri = "at://did:plc:test/app.bsky.feed.post/" <> rk
@@ -343,26 +280,16 @@ propertyTests = testGroup "properties"
              Just pid -> pid == rk
              Nothing  -> T.null rk
 
-  , testProperty "Bluesky.generateLocalEmbed output is non-empty" $
-      \postText ->
-        let html = Bluesky.generateLocalEmbed
-                     "at://did:plc:test/app.bsky.feed.post/abc"
-                     (T.pack postText)
-                     "2024-01-01"
-                     "user"
-                     Nothing
-        in not (T.null html)
-
-  , testProperty "show Bluesky.Error is non-empty for HttpError" $
+  , testProperty "show Error is non-empty for HttpError" $
       \code -> not (null (show (Bluesky.HttpError code "msg")))
 
-  , testProperty "show Bluesky.Error is non-empty for JsonParseError" $
+  , testProperty "show Error is non-empty for JsonParseError" $
       \msg -> not (null (show (Bluesky.JsonParseError (T.pack msg))))
 
-  , testProperty "show Bluesky.Error is non-empty for ExtractionError" $
+  , testProperty "show Error is non-empty for ExtractionError" $
       \msg -> not (null (show (Bluesky.ExtractionError (T.pack msg))))
 
-  , testProperty "show Bluesky.Error is non-empty for NetworkError" $
+  , testProperty "show Error is non-empty for NetworkError" $
       \msg -> not (null (show (Bluesky.NetworkError (T.pack msg))))
 
   , testProperty "parsePostResponse returns Left for non-object JSON input" $
@@ -374,24 +301,24 @@ propertyTests = testGroup "properties"
              Right _                           -> True
              _                                 -> False
 
-  , testProperty "isPlaceholderLink detects bsky.app URLs without blockquotes" $
+  , testProperty "needsEmbedRegeneration detects bsky.app URLs without blockquotes" $
       \postId ->
         let pid = T.pack (filter (`notElem` [' ', '\n', '\r', '\t', '\0']) postId)
             url = "https://bsky.app/profile/did:plc:test/post/" <> pid
-        in Bluesky.isPlaceholderLink url
+        in Bluesky.needsEmbedRegeneration url
 
-  , testProperty "isPlaceholderLink rejects blockquote content" $
-      \postId ->
-        let pid = T.pack (filter (`notElem` [' ', '\n', '\r', '\t', '\0']) postId)
-            content = "<blockquote>https://bsky.app/profile/did:plc:test/post/" <> pid <> "</blockquote>"
-        in not (Bluesky.isPlaceholderLink content)
+  , testProperty "needsEmbedRegeneration rejects valid embeds" $
+      \postContent ->
+        let content = T.pack (filter (`notElem` ['\0']) postContent)
+            validEmbed = "<blockquote class=\"bluesky-embed\" data-bluesky-uri=\"at://did:plc:test/app.bsky.feed.post/abc\"><p lang=\"en\">" <> content <> " some real content</p></blockquote>"
+        in not (Bluesky.needsEmbedRegeneration validEmbed)
 
-  , testProperty "buildPlaceholderLink is identity" $
-      \url ->
-        Bluesky.buildPlaceholderLink (T.pack url) == T.pack url
+  , testProperty "defaultOEmbedConfig has positive maxAttempts" $
+      \() -> Bluesky.maxAttempts Bluesky.defaultOEmbedConfig > 0
   ]
 
--- ── Helpers ───────────────────────────────────────────────────────────
+brokenEmbedExample :: T.Text
+brokenEmbedExample = "<blockquote class=\"bluesky-embed\" data-bluesky-uri=\"https://bsky.app/profile/bagrounds.bsky.social/post/3mjarbzrnt52a\" data-bluesky-embed-color-mode=\"system\"><p lang=\"en\">did:plc:i4yli6h7x2uoj7acxunww2fc</p>\n&mdash; Bryan Grounds (<a href=\"https://bsky.app/profile/bagrounds.bsky.social?ref_src=embed\">@3mjarbzrnt52a</a>) <a href=\"https://bsky.app/profile/bagrounds.bsky.social/post/3mjarbzrnt52a?ref_src=embed\">bagrounds.bsky.social</a></blockquote><script async src=\"https://embed.bsky.app/static/embed.js\" charset=\"utf-8\"></script>"
 
 toLBS :: String -> LBS.ByteString
 toLBS = LBS.fromStrict . TE.encodeUtf8 . T.pack

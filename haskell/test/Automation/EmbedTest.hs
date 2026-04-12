@@ -13,7 +13,7 @@ tests = testGroup "Embed"
 embedResultTests :: TestTree
 embedResultTests = testGroup "EmbedResult"
   [ testCase "EmbedResult preserves HTML content" $
-      Bluesky.erHtml (Bluesky.EmbedResult "<div>hello</div>") @?= "<div>hello</div>"
+      Bluesky.embedHtml (Bluesky.EmbedResult "<div>hello</div>") @?= "<div>hello</div>"
 
   , testCase "EmbedResult equality works" $
       Bluesky.EmbedResult "<p>a</p>" @?= Bluesky.EmbedResult "<p>a</p>"

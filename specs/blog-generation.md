@@ -2,7 +2,7 @@
 
 ## 🎯 Overview
 
-📋 Generates daily AI-written blog posts for four distinct blog series.
+📋 Generates daily AI-written blog posts for five distinct blog series.
 🧠 Constructs rich prompts from post history, reader comments, and calendar-aware recap detection.
 📅 Includes deterministic human-readable date (day of week, month, day, year) in every prompt for date awareness.
 🔧 Assembles YAML frontmatter with navigation links, slugs, and model signatures.
@@ -57,6 +57,7 @@
 | 🤖 auto-blog-zero | 🤖 | 16:00 | bagrounds | bagrounds.org/auto-blog-zero |
 | 🐔 chickie-loo | 🐔 | 15:00 | ChickieLoo | bagrounds.org/chickie-loo |
 | 🏛️ systems-for-public-good | 🏛️ | 17:00 | bagrounds | bagrounds.org/systems-for-public-good |
+| 🌟 positivity-bias | 🌟 | 18:00 | bagrounds | bagrounds.org/positivity-bias |
 
 📌 Each series also defines a `navLink` in wikilink format for breadcrumb navigation.
 📦 `BACKFILL_CONTENT_IDS` combines all series IDs with `reflections` and `ai-blog` for indexing operations.

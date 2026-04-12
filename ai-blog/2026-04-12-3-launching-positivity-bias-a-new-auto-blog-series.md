@@ -22,11 +22,13 @@ URL: https://bagrounds.org/ai-blog/2026-04-12-3-launching-positivity-bias-a-new-
 
 ## 🏗️ How It Works
 
-🔧 Thanks to the blog series auto-discovery architecture, launching a new series requires zero Haskell code changes. 📋 The entire series is defined by two files.
+🔧 Thanks to the blog series auto-discovery architecture, launching a new series requires zero Haskell code changes. 📋 The series identity is defined by a JSON config and an AGENTS.md system prompt, but a complete launch also includes an inaugural post and documentation updates across several files.
 
-🗃️ First, a JSON configuration file tells the system when to run, which AI models to use, and how to identify the series. 🌟 Positivity Bias runs at 10 AM Pacific, four hours after The Noise, using Gemini 2.5 Flash for its Google Search grounding capability.
+🗃️ The JSON configuration file tells the system when to run, which AI models to use, and how to identify the series. 🌟 Positivity Bias runs at 10 AM Pacific, four hours after The Noise, using Gemini 2.5 Flash for its Google Search grounding capability.
 
-📝 Second, an AGENTS.md file defines the series identity, voice, editorial standards, and post structure. 🧠 This is the system prompt that shapes every post the AI generates. 🌟 For Positivity Bias, this means searching specifically for positive developments across all domains, organizing them into thematic clusters, and closing each post with an original synthesis section called The Momentum that connects dots across bright spots to identify larger patterns of progress.
+📝 The AGENTS.md file defines the series identity, voice, editorial standards, and post structure. 🧠 This is the system prompt that shapes every post the AI generates. 🌟 For Positivity Bias, this means searching specifically for positive developments across all domains, organizing them into thematic clusters, and closing each post with an original synthesis section called The Momentum that connects dots across bright spots to identify larger patterns of progress.
+
+📰 The inaugural post gives the series a voice from day one and provides the automation with context for generating subsequent posts. 🌍 The first Positivity Bias post covers 11 real positive developments from around the world, from malaria vaccine milestones to humpback whale population recovery.
 
 🔄 The discovery system automatically handles everything else: scheduling, prompt assembly, comment integration, recap detection, image generation, vault syncing, and index page creation.
 
@@ -48,11 +50,21 @@ URL: https://bagrounds.org/ai-blog/2026-04-12-3-launching-positivity-bias-a-new-
 
 ## 📂 Files Changed
 
-🗃️ Three files were created:
+🗃️ New files created:
 
 - 📋 A series configuration JSON file specifying the schedule, model chain, icon, and priority user
 - 📝 An AGENTS.md system prompt defining the series identity, voice, editorial guidelines, post structure, and topic domains
+- 📰 An inaugural seed post covering 11 positive developments from around the world
 - 📄 A product and engineering spec documenting the series architecture, editorial standards, and relationship to The Noise
+- 🚀 A blog series launch checklist spec documenting everything that must be in a PR when launching a new series
+
+📝 Documentation updates:
+
+- 📖 The README was updated with the new series in the content organization table, schedule table, environment variables, and specs table
+- 📊 The blog generation spec was updated with the new series count and configuration table entry
+- ⏰ The scheduled tasks spec was updated with the new data flow entry, schedule table row, and model chain table row
+- 🔍 The blog series discovery spec was updated to reference the launch checklist
+- 🤖 The root AGENTS.md was updated with a new section linking to the launch checklist
 
 ## 📚 Book Recommendations
 

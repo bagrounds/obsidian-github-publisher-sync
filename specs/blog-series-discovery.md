@@ -90,17 +90,24 @@
 
 ## 🆕 How to Add a New Blog Series
 
-📋 To add a new fully automated blog series, create a single file.
+📋 To add a new fully automated blog series, follow the [Blog Series Launch Checklist](blog-series-launch-checklist.md). 🚀 The checklist covers all files to create, all documentation to update, and what the automation handles automatically.
+
+📐 The technical minimum is a single JSON config file, but a complete launch PR also includes an AGENTS.md system prompt, an inaugural seed post, a product spec, and documentation updates to the README, blog-generation spec, and scheduled-tasks spec.
 
 ### 1️⃣ Create the config file
 
 📄 Create `haskell/series/{series-id}.json` with the required fields.
 📝 The filename determines the series ID.
 
-### 2️⃣ Create the content directory
+### 2️⃣ Create the content directory with AGENTS.md and seed post
 
-📂 Create the directory `content/{series-id}/` in the Obsidian vault.
-📖 Optionally add an `AGENTS.md` file with a custom system prompt.
+📂 Create the directory `{series-id}/` in the repo root.
+📖 Add an `AGENTS.md` file with the series system prompt defining identity, voice, editorial standards, and post structure.
+📰 Add an inaugural seed post to give the automation context for subsequent posts.
+
+### 3️⃣ Update documentation
+
+📝 See the [launch checklist](blog-series-launch-checklist.md) for the complete list of documentation files that must be updated (README, blog-generation spec, scheduled-tasks spec).
 
 ### 🔧 What happens automatically
 

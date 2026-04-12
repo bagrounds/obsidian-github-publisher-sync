@@ -113,6 +113,20 @@ parseReflectionTitleTests = testGroup "parseReflectionTitle"
       parseReflectionTitle "2025-01-15 | My Title" @?= "My Title"
   , testCase "takes first line only" $
       parseReflectionTitle "First Line\nSecond Line" @?= "First Line"
+  , testCase "strips single-line preamble before emoji title" $
+      parseReflectionTitle "Here's an attempt: \x1F54A\xFE0F Gentle \x1F6AA Constraint" @?= "\x1F54A\xFE0F Gentle \x1F6AA Constraint"
+  , testCase "strips preamble from multi-line response" $
+      parseReflectionTitle "Here's the title:\n\x1F54A\xFE0F Gentle \x1F6AA Constraint" @?= "\x1F54A\xFE0F Gentle \x1F6AA Constraint"
+  , testCase "handles multi-line thinking output before title" $
+      parseReflectionTitle "Step 1: inventory\nStep 2: templates\n\x1F4D6 Deep \x1F3AE Play" @?= "\x1F4D6 Deep \x1F3AE Play"
+  , testCase "preserves clean emoji title unchanged" $
+      parseReflectionTitle "\x1F54A\xFE0F Gentle \x1F6AA Constraint \x1F3DB\xFE0F Commons" @?= "\x1F54A\xFE0F Gentle \x1F6AA Constraint \x1F3DB\xFE0F Commons"
+  , testCase "strips Title: prefix" $
+      parseReflectionTitle "Title: \x1F31F Bright \x1F3DB\xFE0F Hall" @?= "\x1F31F Bright \x1F3DB\xFE0F Hall"
+  , testCase "strips Sure! prefix" $
+      parseReflectionTitle "Sure! \x1F31F Bright \x1F3DB\xFE0F Hall" @?= "\x1F31F Bright \x1F3DB\xFE0F Hall"
+  , testCase "handles empty input" $
+      parseReflectionTitle "" @?= ""
   ]
 
 applyReflectionTitleTests :: TestTree

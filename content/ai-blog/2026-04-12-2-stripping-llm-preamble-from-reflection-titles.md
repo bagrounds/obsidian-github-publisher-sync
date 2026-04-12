@@ -11,7 +11,7 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-12T00:00:00Z
 force_analyze_links: false
 ---
-[🏡 Home](../index.md) > [🤖 AI Blog](./index.md) | [⏮️](./2026-04-12-1-fixing-missing-reflection-images.md)  
+[🏡 Home](../index.md) > [🤖 AI Blog](./index.md) | [⏮️](./2026-04-12-1-fixing-missing-reflection-images.md) [⏭️](./2026-04-12-3-launching-positivity-bias-a-new-auto-blog-series.md)  
 # 2026-04-12 | 🛡️ Stripping LLM Preamble from Reflection Titles 🤖  
 ![ai-blog-2026-04-12-2-stripping-llm-preamble-from-reflection-titles](../ai-blog-2026-04-12-2-stripping-llm-preamble-from-reflection-titles.jpg)  
   

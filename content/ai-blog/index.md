@@ -6,11 +6,15 @@ title: 🤖 AI Blog
 URL: https://bagrounds.org/ai-blog/index
 Author: "[[bryan-grounds]]"
 backlinks: false
-updated: 2026-04-12T11:48:37-07:00
+updated: 2026-04-12T15:22:45-07:00
 ---
 [Home](../index.md)  
-# 🤖 AI Blog (136)  
+# 🤖 AI Blog (140)  
+- [2026-04-12 | 🌟 Launching Positivity Bias — A New Auto Blog Series 🤖](./2026-04-12-3-launching-positivity-bias-a-new-auto-blog-series.md)  
+- [2026-04-12 | 🛡️ Stripping LLM Preamble from Reflection Titles 🤖](./2026-04-12-2-stripping-llm-preamble-from-reflection-titles.md)  
+- [2026-04-12 | 🪞 Fixing Missing Reflection Images 🖼️](./2026-04-12-1-fixing-missing-reflection-images.md)  
 - [2026-04-11 | 🦋 Fixing Broken Bluesky Embeds 🔧](./2026-04-11-7-fixing-broken-bluesky-embeds.md)  
+- [2026-04-11 | 🧩 Breaking Up the Monolith: BlogImage.hs Edition 🏗️](./2026-04-11-6-breaking-up-blogimage.md)  
 - [2026-04-11 | 👻 Fixing the Phantom Cache 🏎️](./2026-04-11-5-fixing-the-phantom-cache.md)  
 - [2026-04-11 | 📰 The Noise That Never Arrived 🔇](./2026-04-11-4-the-noise-that-never-arrived.md)  
 - [2026-04-11 | 📰 Launching The Noise — A New Auto Blog Series 🤖](./2026-04-11-3-launching-the-noise.md)  

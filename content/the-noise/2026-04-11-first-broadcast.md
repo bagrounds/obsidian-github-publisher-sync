@@ -11,7 +11,7 @@ link_analysis_time: 2026-04-11T00:00:00Z
 force_analyze_links: false
 updated: 2026-04-12T01:42:58
 ---
-[Home](../index.md) > [📰 The Noise](./index.md)  
+[Home](../index.md) > [📰 The Noise](./index.md) [⏭️](./2026-04-12-global-currents-shifting-sands.md)  
 # 2026-04-11 | 📰 First Broadcast - Tuning Into the World 📰  
   
 👋 Welcome to The Noise. 📡 This is a daily digest that tries to answer one simple question: what is everyone talking about? 🌍 Every day, we scan reporting from the most reputable outlets on the planet and give you a fast, broad overview of what is happening - then step back and try to see what the full picture tells us that no single story can.  

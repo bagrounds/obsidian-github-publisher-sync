@@ -16,6 +16,8 @@ module Automation.Platforms.Bluesky
   , extractPostId
   , extractDid
   , buildPostUrl
+  , toDarkMode
+  , needsDarkModeUpdate
   , isBrokenEmbed
   , extractPostUrlFromBrokenEmbed
   , needsEmbedRegeneration
@@ -428,6 +430,29 @@ parseAtUri uri =
     Nothing -> ("app.bsky.feed.post", uri)
 
 
+toDarkMode :: Text -> Text
+toDarkMode html
+  | "data-bluesky-embed-color-mode=\"dark\"" `T.isInfixOf` html = html
+  | "data-bluesky-embed-color-mode=\"" `T.isInfixOf` html =
+      replaceColorMode html
+  | otherwise = html
+
+replaceColorMode :: Text -> Text
+replaceColorMode html =
+  let marker = "data-bluesky-embed-color-mode=\""
+  in case T.breakOn marker html of
+    (before, rest) | not (T.null rest) ->
+      let afterMarker = T.drop (T.length marker) rest
+          afterValue = T.drop 1 (T.dropWhile (/= '"') afterMarker)
+      in before <> marker <> "dark\"" <> afterValue
+    _ -> html
+
+needsDarkModeUpdate :: Text -> Bool
+needsDarkModeUpdate section =
+  let trimmed = T.strip section
+  in "data-bluesky-embed-color-mode=\"" `T.isInfixOf` trimmed
+       && not ("data-bluesky-embed-color-mode=\"dark\"" `T.isInfixOf` trimmed)
+
 fetchOEmbed :: Manager -> Url -> IO (Either Error EmbedResult)
 fetchOEmbed manager postUrl = do
   let url = T.unpack oembedBaseUrl
@@ -442,7 +467,9 @@ fetchOEmbed manager postUrl = do
     pure (responseBody response)
   pure $ case result of
     Left err   -> Left (classifyException err)
-    Right body -> parseOEmbedHtml body
+    Right body -> fmap applyDarkMode (parseOEmbedHtml body)
+  where
+    applyDarkMode (EmbedResult html) = EmbedResult (toDarkMode html)
 
 parseOEmbedHtml :: LBS.ByteString -> Either Error EmbedResult
 parseOEmbedHtml body =
@@ -514,9 +541,12 @@ extractUrlFromUri uriValue
       in either (const Nothing) Just (mkUrl (buildPostUrl did postId))
   | otherwise = Nothing
 
+extractUrlFromBlockquote :: Text -> Maybe Url
+extractUrlFromBlockquote = extractPostUrlFromBrokenEmbed
+
 needsEmbedRegeneration :: Text -> Bool
 needsEmbedRegeneration section =
-  isPlaceholderLink section || isBrokenEmbed section
+  isPlaceholderLink section || isBrokenEmbed section || needsDarkModeUpdate section
 
 isPlaceholderLink :: Text -> Bool
 isPlaceholderLink section =
@@ -530,6 +560,8 @@ extractRegenerationUrl section
       either (const Nothing) Just (mkUrl (T.strip section))
   | isBrokenEmbed section =
       extractPostUrlFromBrokenEmbed section
+  | needsDarkModeUpdate section =
+      extractUrlFromBlockquote section
   | otherwise = Nothing
 
 replaceSectionContent :: Text -> Text -> Text

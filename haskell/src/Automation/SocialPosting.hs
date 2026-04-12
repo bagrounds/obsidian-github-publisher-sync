@@ -10,6 +10,7 @@ module Automation.SocialPosting
   , autoPost
   , runPostingPipeline
   , regenerateBlueskyEmbeds
+  , regenerateMastodonEmbeds
   ) where
 
 import Control.Concurrent.Async (mapConcurrently)
@@ -368,6 +369,12 @@ autoPost manager vaultDir = do
     Left exception -> putStrLn $ "  ⚠️  Bluesky embed regeneration failed: " <> show exception
     Right () -> pure ()
 
+  mastodonRegenerateResult <- try (regenerateMastodonEmbeds manager vaultDir)
+    :: IO (Either SomeException ())
+  case mastodonRegenerateResult of
+    Left exception -> putStrLn $ "  ⚠️  Mastodon embed regeneration failed: " <> show exception
+    Right () -> pure ()
+
   postedNotes <- runPostingPipeline manager env apiKey vaultDir
 
   let reflectionsDir = vaultDir </> "reflections"
@@ -445,3 +452,39 @@ extractSectionContent header content =
       in T.unlines sectionLines
   where
     isNextSection line = "## " `T.isPrefixOf` T.stripStart line
+
+regenerateMastodonEmbeds :: Manager -> FilePath -> IO ()
+regenerateMastodonEmbeds manager vaultDir = do
+  putStrLn "  🔄 Scanning for Mastodon embeds needing dark mode update..."
+  files <- findMarkdownFiles vaultDir
+  regenerated <- mapM (tryRegenerateMastodonFile manager) files
+  let count = sum regenerated
+  if count > 0
+    then putStrLn $ "  ✅ Updated " <> show count <> " Mastodon embed(s) to dark mode"
+    else putStrLn "  📭 No Mastodon embeds need dark mode update"
+
+tryRegenerateMastodonFile :: Manager -> FilePath -> IO Int
+tryRegenerateMastodonFile manager filePath = do
+  content <- TIO.readFile filePath
+  let mastodonHeader = Mastodon.sectionHeader
+  if not (mastodonHeader `T.isInfixOf` content)
+    then pure 0
+    else do
+      let sectionContent = extractSectionContent mastodonHeader content
+      if not (Mastodon.needsEmbedRegeneration sectionContent)
+        then pure 0
+        else case Mastodon.extractRegenerationUrl sectionContent of
+          Nothing -> pure 0
+          Just postUrl -> do
+            let instanceUrl = fromMaybe "" (Mastodon.extractInstanceUrl postUrl)
+            putStrLn $ "  🔄 Updating Mastodon embed to dark mode: " <> filePath
+            oembedResult <- Mastodon.fetchOEmbed manager instanceUrl postUrl
+            case oembedResult of
+              Right newEmbed -> do
+                let newContent = Mastodon.replaceSectionContent content newEmbed
+                TIO.writeFile filePath newContent
+                putStrLn $ "  ✅ Updated: " <> filePath
+                pure 1
+              Left err -> do
+                putStrLn $ "  ⚠️  Mastodon oEmbed failed for " <> filePath <> ": " <> show err
+                pure 0

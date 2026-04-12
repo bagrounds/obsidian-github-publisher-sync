@@ -11,6 +11,11 @@ module Automation.Platforms.Mastodon
   , extractInstanceUrl
   , extractStatusId
   , extractUsername
+  , toDarkMode
+  , needsDarkModeUpdate
+  , needsEmbedRegeneration
+  , extractRegenerationUrl
+  , replaceSectionContent
   , post
   , deletePost
   , fetchOEmbed
@@ -227,7 +232,7 @@ fetchOEmbed manager instanceUrl statusUrl = do
     pure (responseBody response)
   pure $ case result of
     Left err -> Left (classifyException err)
-    Right body -> parseOEmbedHtml body
+    Right body -> fmap toDarkMode (parseOEmbedHtml body)
 
 parseOEmbedHtml :: LBS.ByteString -> Either Error Text
 parseOEmbedHtml body =
@@ -236,6 +241,64 @@ parseOEmbedHtml body =
     Right val -> case withObject "oembed" (.: "html") val of
       Left err -> Left (ExtractionError (T.pack err))
       Right html -> Right html
+
+toDarkMode :: Text -> Text
+toDarkMode = replaceLightColors
+
+replaceLightColors :: Text -> Text
+replaceLightColors =
+    T.replace "background: #FCF8FF" "background: #282c37"
+  . T.replace "border: 1px solid #C9C4DA" "border: 1px solid #393f4f"
+  . T.replace "color: #1C1A25" "color: #d9e1e8"
+  . T.replace "color: #787588" "color: #9baec8"
+
+needsDarkModeUpdate :: Text -> Bool
+needsDarkModeUpdate section =
+  "mastodon-embed" `T.isInfixOf` section
+    && ("background: #FCF8FF" `T.isInfixOf` section
+         || "color: #1C1A25" `T.isInfixOf` section)
+
+needsEmbedRegeneration :: Text -> Bool
+needsEmbedRegeneration = needsDarkModeUpdate
+
+extractRegenerationUrl :: Text -> Maybe Text
+extractRegenerationUrl section
+  | needsDarkModeUpdate section = extractEmbedUrl section
+  | otherwise = Nothing
+
+extractEmbedUrl :: Text -> Maybe Text
+extractEmbedUrl section =
+  case T.breakOn "data-embed-url=\"" section of
+    (_, rest) | not (T.null rest) ->
+      let afterAttr = T.drop (T.length "data-embed-url=\"") rest
+          embedUrl = T.takeWhile (/= '"') afterAttr
+      in Just (T.replace "/embed" "" embedUrl)
+    _ -> case T.breakOn "<a href=\"" section of
+      (_, rest') | not (T.null rest') ->
+        let afterHref = T.drop (T.length "<a href=\"") rest'
+            hrefUrl = T.takeWhile (/= '"') afterHref
+        in Just hrefUrl
+      _ -> Nothing
+
+replaceSectionContent :: Text -> Text -> Text
+replaceSectionContent fileContent newEmbedHtml =
+  T.unlines (replaceLinesAfterHeader sectionHeader newEmbedHtml (T.lines fileContent))
+
+replaceLinesAfterHeader :: Text -> Text -> [Text] -> [Text]
+replaceLinesAfterHeader _ _ [] = []
+replaceLinesAfterHeader header newContent (line : rest)
+  | header `T.isPrefixOf` T.stripEnd line =
+      let (_, remaining) = spanSection rest
+      in line : T.stripEnd newContent : remaining
+  | otherwise = line : replaceLinesAfterHeader header newContent rest
+
+spanSection :: [Text] -> ([Text], [Text])
+spanSection [] = ([], [])
+spanSection (line : rest)
+  | "## " `T.isPrefixOf` T.stripStart line = ([], line : rest)
+  | otherwise =
+      let (sectionRest, remaining) = spanSection rest
+      in (line : sectionRest, remaining)
 
 generateLocalEmbed :: Text -> Text
 generateLocalEmbed postUrl =

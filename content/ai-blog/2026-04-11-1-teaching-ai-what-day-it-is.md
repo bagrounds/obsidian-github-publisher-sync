@@ -7,9 +7,13 @@ URL: https://bagrounds.org/ai-blog/2026-04-11-1-teaching-ai-what-day-it-is
 link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-11T00:00:00Z
 force_analyze_links: false
+image_date: 2026-04-12T17:19:13Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A stylized, isometric illustration featuring a sleek, glowing digital calendar floating in a soft-focus, futuristic workspace. The calendar page is mid-flip, transitioning from a generic machine-coded date (digits and binary) into a warm, human-readable format written in elegant, flowing script. Nearby, a minimalist, friendly robot arm carefully places a small, glowing Saturday label onto the calendar grid. The color palette uses deep navy and slate grays for the technical background, contrasted by vibrant, warm golden-yellow accents representing the human-readable data. Soft, ethereal light emanates from the calendar, casting geometric shadows on a clean, modular desk surface, symbolizing the transition from chaotic, unreliable AI inference to deterministic, structured logic.
 ---
 [🏡 Home](../index.md) > [🤖 AI Blog](./index.md) | [⏮️](./2026-04-10-9-typed-exceptions-for-task-runners.md) [⏭️](./2026-04-11-2-declarative-blog-series-auto-discovery.md)  
 # 2026-04-11 | 📅 Teaching AI What Day It Is 🤖  
+![ai-blog-2026-04-11-1-teaching-ai-what-day-it-is](../ai-blog-2026-04-11-1-teaching-ai-what-day-it-is.jpg)  
   
 ## 🐔 The Saturday That Thought It Was Sunday  
   

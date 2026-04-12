@@ -202,13 +202,30 @@ Each error migration delivered with test coverage:
 27. **Re-export for backward compatibility**: When breaking up a module that has many consumers (tests, app code), the original module should re-export all symbols from its sub-modules. This allows the refactoring to be purely internal — no consumer code needs to change. New code can import the focused sub-modules directly for clarity.
 28. **Separate pure from IO along domain boundaries**: The three extracted modules form a clean dependency graph: `LinkExtraction` (pure, no domain imports) → `FrontmatterUpdate` (IO, writes files) → `ContentDiscovery` (IO, reads files, uses both). Each module has a single domain responsibility, and dependencies flow in one direction.
 
+### Completed: Break Up BlogImage.hs + Tests
+
+**Goal**: Split the 1,291-line module (26 imports) into focused domain modules following the vertical slicing principle.
+
+- [x] Extract `Automation.BlogImage.ContentDirectory` (56 lines, 1 import) — `ContentDirectory` ADT with 13 constructors, `contentDirectoryToText`, `contentDirectoryFromText` round-trip functions. Foundational type used by eligibility checking, backfill orchestration, and content discovery.
+- [x] Extract `Automation.BlogImage.TitleExtraction` (43 lines, 2 imports) — `extractTitle`, `extractTitleFromFrontmatter`, `findH1Title`, `stripQuotes`. Pure title parsing from frontmatter and H1 headings, used by eligibility checking and note processing.
+- [x] Extract `Automation.BlogImage.Eligibility` (103 lines, 8 imports) — `CandidateEligibility`/`IneligibilityReason` ADTs, `BackfillCandidate` record, `hasEmbeddedImage`, `shouldRegenerateImage`, `shouldHaveImage`, `isPostFile`, `hasDatePrefix`, `parseDateFromFilename`, `isDateOnlyTitle`, `checkCandidateEligibility`. All image eligibility and candidate filtering logic.
+- [x] Extract `Automation.BlogImage.Markdown` (186 lines, 5 imports) — `stripMarkdownSyntax` and all `remove*` functions, `insertImageEmbed`, `removeImageEmbed`, `cleanContentForPrompt`, `buildImagePrompt`, regex helpers. All markdown text processing and image embed manipulation.
+- [x] Extract `Automation.BlogImage.Provider` (437 lines, 11 imports) — `ImageProvider`/`PromptDescriber`/`ImageProviderConfig`/`ImageGenerationResult` types, all HTTP generator functions (Cloudflare, HuggingFace, Together, Pollinations, Gemini), provider dispatch, resolution from environment, error classification (`isQuotaError`, `isDailyQuotaError`, `isProviderUnavailableError`).
+- [x] Slim `Automation.BlogImage` from 1,291 to 462 lines — backfill orchestration only: `BackfillConfig`/`BackfillResult`, `processNote`, `backfillImages`, `syncAttachmentsDir`, YAML frontmatter manipulation, path utilities. Re-exports all sub-module symbols for backward compatibility.
+- [x] 141 new tests (1354 → 1495): `ContentDirectoryTest` (12 tests), `TitleExtractionTest` (16 tests), `EligibilityTest` (27 tests), `MarkdownTest` (23 tests), `ProviderTest` (25 tests) plus 38 tests in the original `BlogImageTest` that continue to pass unchanged via re-exports.
+
+**Learnings from breaking up BlogImage.hs:**
+29. **Dependency graph drives extraction order**: `ContentDirectory` is foundational (used by eligibility, backfill, content discovery), so it must be extracted first. `TitleExtraction` is used by `Eligibility`, so it comes next. `Markdown` and `Provider` are independent of each other. The main module depends on all five sub-modules. This natural layering produces a clean, acyclic dependency graph.
+30. **Separate pure from IO by domain boundary**: The five extracted modules split cleanly by domain concern: `ContentDirectory` (pure ADT), `TitleExtraction` (pure text parsing), `Eligibility` (pure logic using frontmatter), `Markdown` (pure text processing), `Provider` (IO HTTP generators + pure configuration). The main module retains the IO orchestration that ties them all together.
+31. **Re-exports preserve backward compatibility at scale**: The main `BlogImage` module re-exports all symbols from its five sub-modules. This means all existing consumers (tests, `RunScheduled.hs`, `ContentDiscovery.hs`) continue to work with zero import changes, while new code can import the focused sub-modules directly.
+
 ### Next: Remaining Improvements
 
 Prioritized list of remaining architecture improvements:
 
-1. **Break up BlogImage.hs** — 1,291 lines, 26 imports. Extract image provider resolution, backfill orchestration, and eligibility checking into focused modules.
-2. **Break up InternalLinking.hs** — 961 lines, 25 imports. Extract link candidate discovery, similarity matching, and file processing into focused modules.
-3. **Extract remaining pure cores** — Several IO functions in library modules mix I/O with pure logic that could be extracted and tested independently.
+1. **Break up InternalLinking.hs** — 961 lines, 25 imports. Extract link candidate discovery, similarity matching, and file processing into focused modules.
+2. **Extract remaining pure cores** — Several IO functions in library modules mix I/O with pure logic that could be extracted and tested independently.
+3. **Break up RunScheduled.hs further** — The app module is still 665 lines. Extract task runner configurations, environment setup, and individual task implementations into library modules.
 
 ## Guiding Principles
 

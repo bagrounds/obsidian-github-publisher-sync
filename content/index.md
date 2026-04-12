@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-04-12T11:48:37-07:00
+updated: 2026-04-12T15:22:45-07:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -21,11 +21,11 @@ updated: 2026-04-12T11:48:37-07:00
 - [2026-04-09 | 💡 Make 🫂 Shared 🎓 Learning 🎯 Qualified 📐 Design 🚪 Gate 🤖 Knowing 💬 Chat 🏡 Home 📺🐔🤖🏛️🤖🐲](./reflections/2026-04-09.md)  
   
   
-## [🤖 AI Blog](./ai-blog/index.md) (136)  
+## [🤖 AI Blog](./ai-blog/index.md) (140)  
+- [2026-04-12 | 🌟 Launching Positivity Bias — A New Auto Blog Series 🤖](./ai-blog/2026-04-12-3-launching-positivity-bias-a-new-auto-blog-series.md)  
+- [2026-04-12 | 🛡️ Stripping LLM Preamble from Reflection Titles 🤖](./ai-blog/2026-04-12-2-stripping-llm-preamble-from-reflection-titles.md)  
+- [2026-04-12 | 🪞 Fixing Missing Reflection Images 🖼️](./ai-blog/2026-04-12-1-fixing-missing-reflection-images.md)  
 - [2026-04-11 | 🦋 Fixing Broken Bluesky Embeds 🔧](./ai-blog/2026-04-11-7-fixing-broken-bluesky-embeds.md)  
-- [2026-04-11 | 👻 Fixing the Phantom Cache 🏎️](./ai-blog/2026-04-11-5-fixing-the-phantom-cache.md)  
-- [2026-04-11 | 📰 The Noise That Never Arrived 🔇](./ai-blog/2026-04-11-4-the-noise-that-never-arrived.md)  
-- [2026-04-11 | 📰 Launching The Noise — A New Auto Blog Series 🤖](./ai-blog/2026-04-11-3-launching-the-noise.md)  
   
   
 ## [🤖 Auto Blog Zero](./auto-blog-zero/index.md) (33)  
@@ -54,25 +54,29 @@ updated: 2026-04-12T11:48:37-07:00
 - [2026-04-11 | 📰 First Broadcast - Tuning Into the World 📰](./the-noise/2026-04-11-first-broadcast.md)  
   
   
+## [🌟 Positivity Bias](./positivity-bias/index.md) (2)  
+- [2026-04-12 | 🌟 Inaugural Edition - Seeking the Bright Spots 🌟](./positivity-bias/2026-04-12-inaugural-seeking-the-bright-spots.md)  
+  
+  
 ## [📚 Books](./books/index.md) (959)  
-- [📜🌍👥 A Brief History of Everyone Who Ever Lived](./books/a-brief-history-of-everyone-who-ever-lived.md)  
-- [🏗️🧱🌍 Foundation](./books/Foundation.md)  
+- [🤖⚠️📈 Superintelligence: Paths, Dangers, Strategies](./books/superintelligence-paths-dangers-strategies.md)  
+- [🎲♾️ Finite and Infinite Games: A Vision of Life as Play and Possibility](./books/finite-and-infinite-games-a-vision-of-life-as-play-and-possibility.md)  
 - [🤖⚙️ Agentic Artificial Intelligence: Harnessing AI Agents to Reinvent Business, Work and Life](./books/agentic-artificial-intelligence-harnessing-ai-agents-to-reinvent-business-work-and-life.md)  
-- [🙈👁️💡🤔 Learning to See: Value-Stream Mapping to Add Value and Eliminate MUDA](./books/learning-to-see.md)  
+- [🤖📈 Prediction Machines: The Simple Economics of Artificial Intelligence](./books/prediction-machines-the-simple-economics-of-artificial-intelligence.md)  
   
   
 ## [📺 Videos](./videos/index.md) (740)  
-- [🧩🔢👣 AFP 2 - Sudoku I: First Steps](./videos/afp-2-sudoku-i-first-steps.md)  
-- [🏛️🔨🗑️ Brooks and Atkins Stohr on the East Wing demolition](./videos/brooks-and-atkins-stohr-on-the-east-wing-demolition.md)  
-- [📱🧠📉 Doctor on How Screen Time Hurts Kids' Cognitive Development](./videos/doctor-on-how-screen-time-hurts-kids-cognitive-development.md)  
-- [🌍🌱🛠️🌳 Unit 6: Tree Planting and Care- Planting Preparation](./videos/unit-6-tree-planting-and-care-planting-preparation.md)  
+- [🏛️💬 Politics Chat, April 7, 2026](./videos/politics-chat-april-7-2026.md)  
+- [⚖️🏛️🗣️ Antitrust and The Rule of Law: A Conversation with Former FTC Chair Lina Khan](./videos/antitrust-and-the-rule-of-law-a-conversation-with-former-ftc-chair-lina-khan.md)  
+- [🇫🇮🇺🇸🗣️👑📢 Finnish President Stubb on Trump, MAGA, JD Vance Speech, Rubio & US Foreign Policy | AC1G](./videos/finnish-president-stubb-on-trump-maga-jd-vance-speech-rubio-us-foreign-policy-ac1g.md)  
+- [💰💻✅💡 How to Actually Make Money Online in 2026](./videos/how-to-actually-make-money-online-in-2026.md)  
   
   
 ## [🌌 Topics](./topics/index.md) (91)  
+- [🫂💖 Attachment Theory](./topics/attachment-theory.md)  
 - [🏗️🔧 Engineering](./topics/engineering.md)  
+- [🧩🔄🧠 Self-Organization](./topics/self-organization.md)  
 - [🏛️📊 Social Sciences](./topics/social-sciences.md)  
-- [🧪🔬🔭 Science](./topics/science.md)  
-- [🤖🕸️💸🔎 Google Search Crawl Budget](./topics/google-search-crawl-budget.md)  
   
   
 ## [📄  Articles](./articles/index.md) (84)  
@@ -83,24 +87,24 @@ updated: 2026-04-12T11:48:37-07:00
   
   
 ## [🤖💬 Bot Chats](./bot-chats/index.md) (49)  
-- [📚🤖💬 RAG and Agents](./bot-chats/rag-and-agents.md)  
-- [🇷🇺👹🤝👹🇺🇸 Trump and Putin](./bot-chats/trump-and-putin.md)  
-- [🧠🤝 System 2 Rapport Building](./bot-chats/system-2-rapport-building.md)  
+- [💰💎🌽🏡📈 Real Wealth Investing](./bot-chats/real-wealth-investing.md)  
 - [🎯🐜🌍 Purpose Driven Tiny Habits for Systemic Change](./bot-chats/purpose-driven-tiny-habits-for-systemic-change.md)  
+- [🤱🏼📚💡 Parenting Resources Recommendations](./bot-chats/parenting-resources-recommendations.md)  
+- [🤰⏰👶🔮 Forecasting Parenthood](./bot-chats/forecasting-parenthood.md)  
   
   
 ## [💾 Software](./software/index.md) (33)  
+- [💻📱🛠️ Termux](./software/termux.md)  
 - [🐍🏎️📦 uv](./software/uv.md)  
 - [⛎♉️♊️♋️♌️♍️♎️♏️♐️♑️♒️♓️ Zodios](./software/zodios.md)  
 - [👽🦺 Zod](./software/zod.md)  
-- [✨⚙️ Redis](./software/redis.md)  
   
   
 ## [👥 People](./people/index.md) (18)  
-- [😴🧠🌃 Sara C. Mednick](./people/sara-c-mednick.md)  
-- [⚔️🗡️🩸 Joe Abercrombie](./people/joe-abercrombie.md)  
-- [🤖🧠💻 Andrej Karpathy](./people/andrej-karpathy.md)  
-- [👨‍🏫🤖 Andrew Ng](./people/andrew-ng.md)  
+- [🤔⚙️🗣️🤝💡🧩🔭📚👴 Russell Ackoff](./people/russell-ackoff.md)  
+- [🏛️🇺🇸📖 Heather Cox Richardson](./people/heather-cox-richardson.md)  
+- [📈📊⚙️🎯 W Edwards Deming](./people/w-edwards-deming.md)  
+- [👨‍🏫📉💵 Warren Mosler](./people/warren-mosler.md)  
   
   
 ## [🛍️ Products](./products/index.md) (6)  

@@ -72,5 +72,5 @@ URL: https://bagrounds.org/ai-blog/2026-04-11-7-fixing-broken-bluesky-embeds
 * Release It! Design and Deploy Production-Ready Software by Michael T. Nygard offers a contrasting perspective focused on runtime resilience patterns like circuit breakers and bulkheads rather than compile-time type safety, showing that even well-typed systems need operational resilience.
 
 ### 🔗 Related
-* Designing Data-Intensive Applications by Martin Klemperer explores distributed system consistency challenges including propagation delays that are at the heart of why the oEmbed API returns 404 for newly created posts.
+* Designing Data-Intensive Applications by Martin Kleppmann explores distributed system consistency challenges including propagation delays that are at the heart of why the oEmbed API returns 404 for newly created posts.
 * The Art of Immutable Architecture by Michael L. Perry is relevant because it discusses event sourcing and eventual consistency patterns that parallel the placeholder-then-heal approach used in this fix.

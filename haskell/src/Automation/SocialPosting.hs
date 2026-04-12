@@ -26,7 +26,7 @@ import Data.Time.LocalTime (timeToTimeOfDay)
 import qualified Data.Map.Strict as Map
 import Network.HTTP.Client (Manager)
 import qualified Network.HTTP.Client.TLS as TLS
-import System.Directory (listDirectory, doesFileExist)
+import System.Directory (listDirectory, doesFileExist, doesDirectoryExist)
 
 import Automation.DailyUpdates (UpdateLink (..), addUpdateLinksToReflection)
 import Automation.BlogSeriesConfig (imageBackfillContentIdsFrom)
@@ -361,7 +361,11 @@ autoPost manager vaultDir = do
   env <- validateEnvironment
   let apiKey = Gemini.gcApiKey (ecGemini env)
 
-  regenerateBlueskyEmbeds manager vaultDir
+  regenerateResult <- try (regenerateBlueskyEmbeds manager vaultDir)
+    :: IO (Either SomeException ())
+  case regenerateResult of
+    Left exc -> putStrLn $ "  ⚠️  Bluesky embed regeneration failed: " <> show exc
+    Right () -> pure ()
 
   postedNotes <- runPostingPipeline manager env apiKey vaultDir
 
@@ -401,13 +405,10 @@ findMarkdownFiles dir = do
       if isFile && takeExtension name == ".md"
         then pure [fullPath]
         else do
-          exists <- doesDirectoryExist fullPath
-          if exists
+          isDir <- doesDirectoryExist fullPath
+          if isDir
             then findMarkdownFiles fullPath
             else pure []
-    doesDirectoryExist path = do
-      result <- try (listDirectory path) :: IO (Either SomeException [String])
-      pure (either (const False) (const True) result)
 
 tryRegenerateFile :: Manager -> FilePath -> IO Int
 tryRegenerateFile manager filePath = do

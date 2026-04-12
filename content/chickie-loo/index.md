@@ -5,11 +5,12 @@ aliases:
 title: 🐔 Chickie Loo
 URL: https://bagrounds.org/chickie-loo
 backlinks: false
-updated: 2026-04-12T07:06:53-07:00
+updated: 2026-04-12T07:34:59-07:00
 ---
 [Home](../index.md)  
-# 🐔 Chickie Loo (32)  
+# 🐔 Chickie Loo (33)  
 - [🐔 Chickie Loo — AGENTS.md](./AGENTS.md)  
+- [2026-04-12 | 🐔 🥂 A Night Among the Stars and Studs 🐔](./2026-04-12-a-night-among-the-stars-and-studs.md)  
 - [2026-04-11 | 🐔 🏠 Our First Night Home 🐔](./2026-04-11-our-first-night-home.md)  
 - [2026-04-10 | 🐔 🏠 The Sweetest Sound of Home 🐔](./2026-04-10-the-sweetest-sound-of-home.md)  
 - [2026-04-09 | 🐔 🧶 A Soft Step Toward Home 🐔](./2026-04-09-a-soft-step-toward-home.md)  

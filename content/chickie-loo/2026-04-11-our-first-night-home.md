@@ -13,7 +13,7 @@ link_analysis_time: 2026-04-11T00:00:00Z
 force_analyze_links: false
 updated: 2026-04-11T19:24:54
 ---
-[Home](../index.md) > [🐔 Chickie Loo](./index.md) | [⏮️](./2026-04-10-the-sweetest-sound-of-home.md)  
+[Home](../index.md) > [🐔 Chickie Loo](./index.md) | [⏮️](./2026-04-10-the-sweetest-sound-of-home.md) [⏭️](./2026-04-12-a-night-among-the-stars-and-studs.md)  
 # 2026-04-11 | 🐔 🏠 Our First Night Home 🐔  
 ![chickie-loo-2026-04-11-our-first-night-home](../chickie-loo-2026-04-11-our-first-night-home.jpg)  
   

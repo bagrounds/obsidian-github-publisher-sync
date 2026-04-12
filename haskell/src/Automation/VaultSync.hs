@@ -95,6 +95,12 @@ showScore value =
   let rounded = fromIntegral (round (value * 1000) :: Int) / 1000 :: Double
   in show rounded
 
+isDatePrefixedMarkdown :: FilePath -> Bool
+isDatePrefixedMarkdown (y1:y2:y3:y4:'-':_rest) =
+  takeExtension (y1:y2:y3:y4:'-':_rest) == ".md"
+    && all isDigit [y1, y2, y3, y4]
+isDatePrefixedMarkdown _ = False
+
 copySeriesPosts :: FilePath -> Text -> FilePath -> IO Int
 copySeriesPosts vaultDirectory seriesIdentifier repoRoot = do
   let vaultSeriesDirectory = vaultDirectory </> T.unpack seriesIdentifier
@@ -104,16 +110,11 @@ copySeriesPosts vaultDirectory seriesIdentifier repoRoot = do
     then pure 0
     else do
       entries <- listDirectory vaultSeriesDirectory
-      let dateFiles = filter isDateFile entries
+      let dateFiles = filter isDatePrefixedMarkdown entries
       createDirectoryIfMissing True localSeriesDirectory
       mapM_ (copyFile' vaultSeriesDirectory localSeriesDirectory) dateFiles
       pure (length dateFiles)
   where
-    isDateFile filename =
-      length filename >= 14
-        && takeExtension filename == ".md"
-        && all isDigit (take 4 filename)
-        && filename !! 4 == '-'
     copyFile' sourceDirectory destinationDirectory filename = do
       content <- TIO.readFile (sourceDirectory </> filename)
       TIO.writeFile (destinationDirectory </> filename) content
@@ -128,15 +129,9 @@ syncRepoPostsToVault repoRoot seriesIdentifier vaultDirectory logger = do
     else do
       createDirectoryIfMissing True vaultSeriesDirectory
       entries <- listDirectory repoSeriesDirectory
-      let dateFiles = filter isDateFile entries
+      let dateFiles = filter isDatePrefixedMarkdown entries
       counts <- traverse (syncPostIfMissing repoSeriesDirectory vaultSeriesDirectory logger) dateFiles
       pure (sum counts)
-  where
-    isDateFile filename =
-      length filename >= 14
-        && takeExtension filename == ".md"
-        && all isDigit (take 4 filename)
-        && filename !! 4 == '-'
 
 syncPostIfMissing :: FilePath -> FilePath -> (Text -> IO ()) -> FilePath -> IO Int
 syncPostIfMissing sourceDirectory destinationDirectory logger filename = do

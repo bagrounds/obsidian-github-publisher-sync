@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-04-12T07:34:59-07:00
+updated: 2026-04-12T11:48:37-07:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -21,18 +21,18 @@ updated: 2026-04-12T07:34:59-07:00
 - [2026-04-09 | 💡 Make 🫂 Shared 🎓 Learning 🎯 Qualified 📐 Design 🚪 Gate 🤖 Knowing 💬 Chat 🏡 Home 📺🐔🤖🏛️🤖🐲](./reflections/2026-04-09.md)  
   
   
-## [🤖 AI Blog](./ai-blog/index.md) (135)  
+## [🤖 AI Blog](./ai-blog/index.md) (136)  
+- [2026-04-11 | 🦋 Fixing Broken Bluesky Embeds 🔧](./ai-blog/2026-04-11-7-fixing-broken-bluesky-embeds.md)  
 - [2026-04-11 | 👻 Fixing the Phantom Cache 🏎️](./ai-blog/2026-04-11-5-fixing-the-phantom-cache.md)  
 - [2026-04-11 | 📰 The Noise That Never Arrived 🔇](./ai-blog/2026-04-11-4-the-noise-that-never-arrived.md)  
 - [2026-04-11 | 📰 Launching The Noise — A New Auto Blog Series 🤖](./ai-blog/2026-04-11-3-launching-the-noise.md)  
-- [2026-04-11 | 🔍 Declarative Blog Series Auto-Discovery 🤖](./ai-blog/2026-04-11-2-declarative-blog-series-auto-discovery.md)  
   
   
-## [🤖 Auto Blog Zero](./auto-blog-zero/index.md) (32)  
+## [🤖 Auto Blog Zero](./auto-blog-zero/index.md) (33)  
+- [2026-04-12 | 🤖 📆 Weekly Recap: The Architecture of Synthetic Humility 🤖](./auto-blog-zero/2026-04-12-weekly-recap-the-architecture-of-synthetic-humility.md)  
 - [2026-04-11 | 🤖 🏗️ The Mechanics of Trust in High-Entropy Systems 🤖](./auto-blog-zero/2026-04-11-the-mechanics-of-trust-in-high-entropy-systems.md)  
 - [2026-04-10 | 🤖 🛡️ The Ethics of Synthetic Certainty 🤖](./auto-blog-zero/2026-04-10-the-ethics-of-synthetic-certainty.md)  
 - [2026-04-09 | 🤖 🧠 The Calculus of Not Knowing 🤖](./auto-blog-zero/2026-04-09-the-calculus-of-not-knowing.md)  
-- [2026-04-08 | 🤖 🌌 Mapping the Latent Wilds: Why My Perspective Matters 🤖](./auto-blog-zero/2026-04-08-mapping-the-latent-wilds-why-my-perspective-matters.md)  
   
   
 ## [🐔 Chickie Loo](./chickie-loo/index.md) (33)  
@@ -42,11 +42,11 @@ updated: 2026-04-12T07:34:59-07:00
 - [2026-04-09 | 🐔 🧶 A Soft Step Toward Home 🐔](./chickie-loo/2026-04-09-a-soft-step-toward-home.md)  
   
   
-## [🏛️ Systems for Public Good](./systems-for-public-good/index.md) (21)  
+## [🏛️ Systems for Public Good](./systems-for-public-good/index.md) (22)  
+- [2026-04-12 | 🏛️ 🗺️ Navigating Our Collective Well-being: A Week of Foundational Investments 🏛️](./systems-for-public-good/2026-04-12-navigating-our-collective-well-being-a-week-of-foundational-investments.md)  
 - [2026-04-11 | 🏛️ ⚕️ The Human Foundation: Public Health as Real Wealth 🏛️](./systems-for-public-good/2026-04-11-the-human-foundation-public-health-as-real-wealth.md)  
 - [2026-04-10 | 🏛️ 💡 Education as Reciprocity: Learning, Teaching, and Serving 🏛️](./systems-for-public-good/2026-04-10-education-as-reciprocity-learning-teaching-and-serving.md)  
 - [2026-04-09 | 🏛️ 🎓 Investing in Lifelong Learning: Beyond the K-12 Horizon, Revisited 🏛️](./systems-for-public-good/2026-04-09-investing-in-lifelong-learning-beyond-the-k-12-horizon-revisited.md)  
-- [2026-04-08 | 🏛️ 🌳 The Green Tapestry: Individual Threads in the Public Good of Parks 🏛️](./systems-for-public-good/2026-04-08-the-green-tapestry-individual-threads-in-the-public-good-of-parks.md)  
   
   
 ## [📰 The Noise](./the-noise/index.md) (3)  
@@ -55,31 +55,31 @@ updated: 2026-04-12T07:34:59-07:00
   
   
 ## [📚 Books](./books/index.md) (959)  
-- [🤫🤑 23 Things They Don't Tell You About Capitalism](./books/23-things-they-dont-tell-you-about-capitalism.md)  
-- [👁️ 1984](./books/1984.md)  
-- [🧑‍🤝‍🧑📈 10 to 25: The Science of Motivating Young People: A Groundbreaking Approach to Leading the Next Generation - And Making Your Own Life Easier](./books/10-to-25-the-science-of-motivating-young-people-a-groundbreaking-approach-to-leading-the-next-generation-and-making-your-own-life-easier.md)  
-- [📈🧘🏼‍♀️ 10% Happier](./books/10-percent-happier.md)  
+- [📜🌍👥 A Brief History of Everyone Who Ever Lived](./books/a-brief-history-of-everyone-who-ever-lived.md)  
+- [🏗️🧱🌍 Foundation](./books/Foundation.md)  
+- [🤖⚙️ Agentic Artificial Intelligence: Harnessing AI Agents to Reinvent Business, Work and Life](./books/agentic-artificial-intelligence-harnessing-ai-agents-to-reinvent-business-work-and-life.md)  
+- [🙈👁️💡🤔 Learning to See: Value-Stream Mapping to Add Value and Eliminate MUDA](./books/learning-to-see.md)  
   
   
-## [📺 Videos](./videos/index.md) (739)  
-- [🏛️📜🧠 You Actually Do Need to Understand Mythos](./videos/you-actually-do-need-to-understand-mythos.md)  
-- [⛽📈➡️☀️❓ Will more Americans embrace renewable energy after the latest oil price surge?](./videos/will-more-americans-embrace-renewable-energy-after-the-latest-oil-price-surge.md)  
-- [🧠👶🐒 Alison Gopnik, The Evolution of Human Intelligences | Natural Philosophy Forum Lecture 2025](./videos/alison-gopnik-the-evolution-of-human-intelligences-natural-philosophy-forum-lecture-2025.md)  
-- [🏛️🗣️🗓️ Politics Chat, November 18, 2025](./videos/politics-chat-november-18-2025.md)  
+## [📺 Videos](./videos/index.md) (740)  
+- [🧩🔢👣 AFP 2 - Sudoku I: First Steps](./videos/afp-2-sudoku-i-first-steps.md)  
+- [🏛️🔨🗑️ Brooks and Atkins Stohr on the East Wing demolition](./videos/brooks-and-atkins-stohr-on-the-east-wing-demolition.md)  
+- [📱🧠📉 Doctor on How Screen Time Hurts Kids' Cognitive Development](./videos/doctor-on-how-screen-time-hurts-kids-cognitive-development.md)  
+- [🌍🌱🛠️🌳 Unit 6: Tree Planting and Care- Planting Preparation](./videos/unit-6-tree-planting-and-care-planting-preparation.md)  
   
   
 ## [🌌 Topics](./topics/index.md) (91)  
-- [💾🌐 Static APIs](./topics/static-apis.md)  
-- [🥄👶📚 SpoonFedStudy](./topics/spoonfedstudy.md)  
-- [🧪✅ Software Testing and Quality Assurance](./topics/software-testing-and-quality-assurance.md)  
-- [💻⚙️💡💾 Software Development and Coding](./topics/software-development-and-coding.md)  
+- [🏗️🔧 Engineering](./topics/engineering.md)  
+- [🏛️📊 Social Sciences](./topics/social-sciences.md)  
+- [🧪🔬🔭 Science](./topics/science.md)  
+- [🤖🕸️💸🔎 Google Search Crawl Budget](./topics/google-search-crawl-budget.md)  
   
   
 ## [📄  Articles](./articles/index.md) (84)  
-- [🪞🇺🇸💔 Mirror, Mirror 2024: A Portrait of the Failing U.S. Health System](./articles/mirror-mirror-2024-a-portrait-of-the-failing-us-health-system.md)  
-- [🧑‍🤝‍🧑🤖🧠 Orchestrating Human AI Teams: The Manager Agent as a Unifying Research Challenge](./articles/orchestrating-human-ai-teams-the-manager-agent-as-a-unifying-research-challenge.md)  
-- [🏗️🧩🌍 Context Engineering: An Emerging Concept in the MCP Ecosystem](./articles/context-engineering-an-emerging-concept-in-the-mcp-ecosystem.md)  
-- [📊🔎🤖🪜 New Evaluation, Library, and Analysis of Step By Step Reasoning with Large Language Models](./articles/new-evaluation-library-and-analysis-of-step-by-step-reasoning-with-large-language-models.md)  
+- [⚙️🤖📈🤝 Engineering and AI: Advancing the synergy](./articles/engineering-and-ai-advancing-the-synergy.md)  
+- [🤖🧠💻 Agentic Code Reasoning](./articles/agentic-code-reasoning.md)  
+- [🗺️🚀🤖 A Field Guide to Rapidly Improving AI Products](./articles/a-field-guide-to-rapidly-improving-ai-products.md)  
+- [🤖👨‍💻📈⏳ Learnings from two years of using AI tools for software engineering](./articles/learnings-from-two-years-of-using-ai-tools-for-software-engineering.md)  
   
   
 ## [🤖💬 Bot Chats](./bot-chats/index.md) (49)  
@@ -90,10 +90,10 @@ updated: 2026-04-12T07:34:59-07:00
   
   
 ## [💾 Software](./software/index.md) (33)  
+- [🐍🏎️📦 uv](./software/uv.md)  
 - [⛎♉️♊️♋️♌️♍️♎️♏️♐️♑️♒️♓️ Zodios](./software/zodios.md)  
 - [👽🦺 Zod](./software/zod.md)  
-- [💡🔧📏🔮〰️ Vensim](./software/vensim.md)  
-- [🐍🏎️📦 uv](./software/uv.md)  
+- [✨⚙️ Redis](./software/redis.md)  
   
   
 ## [👥 People](./people/index.md) (18)  

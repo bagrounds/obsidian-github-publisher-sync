@@ -9,6 +9,9 @@ Platform:
 Channel: LastWeekTonight
 tags:
 youtube: https://youtube.com/embed/SLVL_wg3Hz0
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_time: 2026-04-11T00:00:00Z
+force_analyze_links: false
 ---
 [Home](../index.md) > [Videos](./index.md)  
 # 🍊🤡😈 Trump & Epstein Last Week Tonight  
@@ -65,7 +68,7 @@ youtube: https://youtube.com/embed/SLVL_wg3Hz0
 ### 🎨 Creatively Related  
   
 * 🎭 Trust by Hernan Diaz: 📚 A fictional exploration of massive wealth, public image, and hidden realities, tangentially relating to power and reputation.  
-* ⚖️ The Power Broker: Robert Moses and the Fall of New York by Robert A. Caro: 🗽 Examines how unchecked power and influence can reshape institutions and public life, an historical parallel to elite accountability.  
+* ⚖️ [👑🏙️ The Power Broker](../books/the-power-broker.md): Robert Moses and the Fall of New York by Robert A. Caro: 🗽 Examines how unchecked power and influence can reshape institutions and public life, an historical parallel to elite accountability.  
   
 ## 🐦 Tweet  
 <blockquote class="twitter-tweet" data-theme="dark"><p lang="en" dir="ltr">Beyond that, though, there&#39;s nothing there... except for a jury finding him liable for sexual abuse, but other than that, there&#39;s nothing to see.<a href="https://twitter.com/LastWeekTonight?ref_src=twsrc%5Etfw">@LastWeekTonight</a><a href="https://t.co/OOE94F6JuT">https://t.co/OOE94F6JuT</a></p>&mdash; Bryan Grounds (@bagrounds) <a href="https://twitter.com/bagrounds/status/1990297622796812423?ref_src=twsrc%5Etfw">November 17, 2025</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>

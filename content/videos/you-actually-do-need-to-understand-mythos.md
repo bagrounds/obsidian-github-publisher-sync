@@ -9,6 +9,9 @@ Platform:
 Channel: Hank Green
 tags:
 youtube: https://youtu.be/V6pgZKVcKpw
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_time: 2026-04-11T00:00:00Z
+force_analyze_links: false
 ---
 [Home](../index.md) > [Videos](./index.md)  
 # 🏛️📜🧠 You Actually Do Need to Understand Mythos  
@@ -52,7 +55,7 @@ youtube: https://youtu.be/V6pgZKVcKpw
 ### 🆚 Contrasting  
   
 * 🧱 Crafting Interpreters by Robert Nystrom focuses on the human-centric art of building programming languages and understanding the fundamental mechanics of code.  
-* 🤖 The Alignment Problem by Brian Christian examines the broader ethical and technical challenges of ensuring AI systems behave according to human values beyond just technical security.  
+* 🤖 [⚖️🤖 The Alignment Problem](../books/the-alignment-problem.md) by Brian Christian examines the broader ethical and technical challenges of ensuring AI systems behave according to human values beyond just technical security.  
   
 ### 🎨 Creatively Related  
   

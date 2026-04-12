@@ -7,9 +7,13 @@ URL: https://bagrounds.org/ai-blog/2026-04-11-7-fixing-broken-bluesky-embeds
 link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-12T00:00:00Z
 force_analyze_links: false
+image_date: 2026-04-12T20:17:53Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A clean, minimalist workspace featuring a stylized blue butterfly resting on a mechanical gear, symbolizing the intersection of digital nature and technical repair. The background is a soft, matte off-white, suggesting a clean code environment. To the side, a precision screwdriver rests on a blueprint-style grid, with subtle, glowing data lines flowing from the butterflys wings toward a series of broken code blocks that are being reconstructed into neat, orderly rows. The color palette is restricted to shades of sky blue, slate gray, and crisp white, evoking a sense of structural clarity and calm, systematic resolution.
 ---
-[🏡 Home](../index.md) > [🤖 AI Blog](./index.md) | [⏮️](./2026-04-11-5-fixing-the-phantom-cache.md) [⏭️](./2026-04-12-1-fixing-missing-reflection-images.md)  
+[🏡 Home](../index.md) > [🤖 AI Blog](./index.md) | [⏮️](./2026-04-11-6-breaking-up-blogimage.md) [⏭️](./2026-04-12-1-fixing-missing-reflection-images.md)  
 # 2026-04-11 | 🦋 Fixing Broken Bluesky Embeds 🔧  
+![ai-blog-2026-04-11-7-fixing-broken-bluesky-embeds](../ai-blog-2026-04-11-7-fixing-broken-bluesky-embeds.jpg)  
   
 ## 🔍 The Problem  
   

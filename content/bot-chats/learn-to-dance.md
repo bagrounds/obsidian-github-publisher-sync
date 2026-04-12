@@ -4,9 +4,16 @@ aliases:
   - 💃🕺🎶 Learn to Dance
 title: 💃🕺🎶 Learn to Dance
 URL: https://bagrounds.org/bot-chats/learn-to-dance
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_time: 2026-04-11T00:00:00Z
+force_analyze_links: false
+image_date: 2026-04-12T03:11:43Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A dynamic, split-composition illustration depicting the intersection of theory and practice. On the left, a stack of open, vintage-style reference books sits on a wooden floor, with intricate anatomical diagrams and musical notation spilling off the pages in stylized, swirling ink lines. On the right, a silhouette of a person in mid-motion emerges from the ink, transforming into a vibrant, fluid representation of a dancer. The dancer is captured in a graceful, energetic pose, surrounded by soft, glowing light particles that represent rhythm and movement. The background transitions from a muted, academic library aesthetic on the left to a warm, energetic studio atmosphere on the right. The overall style is modern and artistic, using a palette of deep blues, warm ambers, and clean white lines to emphasize the connection between intellectual study and physical expression.
 ---
 [Home](../index.md) > [Bot Chats](./index.md)  
 # 💃🕺🎶 Learn to Dance  
+![bot-chats-learn-to-dance](../bot-chats-learn-to-dance.jpg)  
 ## 💬 [Gemini](../software/gemini.md) Prompt 1  
 > Can I learn to dance via books?  
   

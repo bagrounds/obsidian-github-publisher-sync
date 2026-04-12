@@ -9,6 +9,9 @@ Platform:
 Channel: Graham Hutton
 tags:
 youtube: https://youtu.be/6jKiCHuUb44
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_time: 2026-04-12T00:00:00Z
+force_analyze_links: false
 ---
 [Home](../index.md) > [Videos](./index.md)  
 # 🧩🔢👣 AFP 2 - Sudoku I: First Steps  
@@ -25,7 +28,7 @@ youtube: https://youtu.be/6jKiCHuUb44
 * 🕵️ The no duplicates function uses recursion and the element library function to ensure each value appears only once within a given list \[[28:05](http://www.youtube.com/watch?v=6jKiCHuUb44&t=1685)].  
   
 ## 🤔 Evaluation  
-🤖 Computer science education often uses Sudoku to teach backtracking and constraint satisfaction. While Graham Hutton focuses on functional purity in Haskell, other sources like Artificial Intelligence: A Modern Approach by Stuart Russell and Peter Norvig (Pearson) treat Sudoku as a classic Constraint Satisfaction Problem (CSP). Exploring CSP algorithms like AC-3 or backtracking search with heuristics would provide a deeper understanding of how to solve more complex puzzles efficiently.  
+🤖 Computer science education often uses Sudoku to teach backtracking and constraint satisfaction. While Graham Hutton focuses on functional purity in Haskell, other sources like [🤖🧠 Artificial Intelligence: A Modern Approach](../books/artificial-intelligence-a-modern-approach.md) by Stuart Russell and Peter Norvig (Pearson) treat Sudoku as a classic Constraint Satisfaction Problem (CSP). Exploring CSP algorithms like AC-3 or backtracking search with heuristics would provide a deeper understanding of how to solve more complex puzzles efficiently.  
   
 ## ❓ Frequently Asked Questions (FAQ)  
   

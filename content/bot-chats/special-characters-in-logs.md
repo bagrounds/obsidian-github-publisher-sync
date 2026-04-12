@@ -6,9 +6,13 @@ title: ⁉️🔣🪵 Special Characters In Logs
 link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-05T00:00:00Z
 force_analyze_links: false
+image_date: 2026-04-12T11:18:31Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A high-contrast digital illustration featuring a dark, metallic terminal screen. On the screen, a chaotic jumble of glowing, neon-colored ANSI escape sequences—such as u001b, [37m, and [91m—is mid-transformation, unraveling into clean, orderly white text. Some of the raw code characters are depicted as floating, glitchy pixels, while the decoded text is rendered in a sharp, readable monospaced font. The background is a deep, moody charcoal, emphasizing the vibrant, electric blues, magentas, and warnings of red light emanating from the code. The composition uses a shallow depth of field, focusing on the transition from the messy, abstract noise of the raw log data to the clarity of the processed information.
 ---
 [Home](../index.md) > [Bot Chats](./index.md)  
 # ⁉️🔣🪵 Special Characters In Logs  
+![bot-chats-special-characters-in-logs](../bot-chats-special-characters-in-logs.jpg)  
 ## ChatGPT Prompt  
 > What's with all the special characters in this log message?  
 | 2024-12-14T08:34:24.861Z | plugin:obsidian-mkdocs-publisher:202:74 | log | \["\u001b\[37m2024-12-14 08:34:24.861\u001b\[39m\u001b\[0m\u001b\[0m\t\u001b\[91m\u001b\[1mFATAL\u001b\[22m\u001b\[39m\u001b\[0m\u001b\[0m\t\u001b\[37m\u001b\[39m\u001b\[0m\u001b\[0m\u001b\[1m\u001b\[37m\tEnveloppe\u001b\[39m\u001b\[22m\u001b\[0m\u001b\[0m\t\n\u001b\[97m\u001b\[101m\u001b\[1m ReferenceError \u001b\[22m\u001b\[49m\u001b\[39m\u001b\[0m\u001b\[0m Buffer is not defined\u001b\[0m\u001b\[0m\nerror stack:\n  • \u001b\[33m\u001b\[39m\u001b\[0m\u001b\[0m\t\u001b\[0m\u001b\[0m\n\t\u001b\[37m\u001b\[39m\u001b\[0m\u001b\[0m\n  • \u001b\[33m\u001b\[39m\u001b\[0m\u001b\[0m\t\u001b\[0m\u001b\[0m\n\t\u001b\[37m\u001b\[39m\u001b\[0m\u001b\[0m\n  • \u001b\[33m\u001b\[39m\u001b\[0m\u001b\[0m\t\u001b\[0m\u001b\[0m\n\t\u001b\[37m\u001b\[39m\u001b\[0m\u001b\[0m\n  • \u001b\[33m\u001b\[39m\u001b\[0m\u001b\[0m\t\u001b\[0m\u001b\[0m\n\t\u001b\[37m\u001b\[39m\u001b\[0m\u001b\[0m\n  • \u001b\[33m\u001b\[39m\u001b\[0m\u001b\[0m\t\u001b\[0m\u001b\[0m\n\t\u001b\[37m\u001b\[39m\u001b\[0m\u001b\[0m\n  • \u001b\[33m\u001b\[39m\u001b\[0m\u001b\[0m\t\u001b\[0m\u001b\[0m\n\t\u001b\[37m\u001b\[39m\u001b\[0m\u001b\[0m\u001b\[0m\u001b\[0m"] |  

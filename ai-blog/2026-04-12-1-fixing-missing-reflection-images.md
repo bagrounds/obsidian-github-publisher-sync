@@ -34,35 +34,33 @@ URL: https://bagrounds.org/ai-blog/2026-04-12-1-fixing-missing-reflection-images
 
 ## 🔧 The Fix
 
-🎯 We changed the default sort date for files without a date prefix from today to January 1, 1970.
+🎯 We changed the default sort date for files without a date prefix from today to the file's filesystem modification time.
 
-📐 This is the undatedFileFallback sentinel, a single constant that replaces the dynamic today value in the backfill candidate constructor.
+📐 This mirrors the approach used by the RSS feed, which resolves dates through a priority chain: frontmatter, then git history, then filesystem. For the backfill, we use the simplest link in that chain: the modification timestamp from the operating system.
 
-🏗️ The effect is immediate: any content with a real date in its filename, including reflections and blog posts, now sorts before all undated library content.
+🏗️ The effect is natural: recently edited library files sort near the top, while old library content falls behind. A reflection that just received a creative title has a fresh modification time, putting it ahead of library files that haven't been touched in weeks or months.
 
-🪞 After a reflection receives its creative title at 10 PM, it becomes the highest-priority candidate in the next backfill run, because its date is today while library files are pinned to 1970.
+🪞 After the reflection-title task writes a new title at 10 PM Pacific, the filesystem write updates the file's modification time to that moment. The next backfill run sees it as the most recently modified undated content and prioritizes it accordingly.
 
-📊 The change is a single-line substitution in the checkCandidate function, replacing fromMaybe today with fromMaybe undatedFileFallback.
+📊 The change replaces a pure expression with a single IO call to getModificationTime, falling back only when the filename has no date prefix.
 
 ## 🧪 Testing
 
-✅ We added three focused tests verifying that the sentinel date is 1970-01-01, that it sorts after any modern date, and that dated content like reflections always takes priority.
-
-🔢 All 1510 tests pass, including the three new ones.
+✅ All 1507 tests pass unchanged.
 
 🧹 HLint reports zero hints across all source, app, and test directories.
 
 ## 🏗️ Design Decisions
 
-🤔 We considered three approaches before settling on the sentinel date.
+🤔 We considered three approaches before settling on the filesystem modification time.
 
-🔄 Option one was to make the sort stable by changing the comparison from greater-than-or-equal to strictly-greater-than. This would preserve insertion order for same-date items, giving reflections priority on the same day. But it would not help after midnight when library files refresh to the new today.
+🔄 Option one was a sentinel date of 1970-01-01 for all undated files. This was the initial fix, and it worked by pushing all undated content behind all dated content. However, it lost the ability to distinguish between recently modified and ancient library files. A newly written bot-chat would get the same priority as a decades-old article.
 
 🕙 Option two was to generate the image immediately after the title, as part of the reflection-title task. This would be the most direct pipeline, but it would couple two currently independent modules and require threading image provider configuration through the title generator.
 
-📅 Option three, which we chose, was to change the default date for undated files. This keeps the modules decoupled, requires minimal code changes, and provides a permanent fix: dated content always sorts before undated content, regardless of the current day.
+📅 Option three, which we chose, was to use the filesystem modification time. This keeps the modules decoupled, requires minimal code changes, and naturally prioritizes recent content. It also mirrors the existing RSS feed approach, making the system more consistent.
 
-🧩 The sentinel date approach also has a pleasant side effect: it reveals the true priority of the backfill queue. Content created with intention, timestamped by the user, gets processed first. Library content accumulates in the background and fills remaining capacity.
+🧩 The modification time approach has a pleasant side effect: the backfill queue now reflects real editorial activity. Content that was recently created or edited gets images first, while untouched archival content gradually catches up over time.
 
 ## 📚 Book Recommendations
 

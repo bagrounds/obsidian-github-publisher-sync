@@ -77,7 +77,7 @@
    - ✅ Accept any `.md` file not in the exclusion list (index.md, AGENTS.md, IDEAS.md)
    - 🚫 Skip future-dated reflections (date > today)
    - 🚫 Skip reflections whose title is still just the bare date (awaiting creative title from reflection-title task at 10 PM Pacific)
-2. 🗓️ Sort ALL candidates by date descending (cross-directory). Files without a date prefix in their filename receive a sentinel fallback date of 1970-01-01, ensuring dated content always sorts first.
+2. 🗓️ Sort ALL candidates by date descending (cross-directory). Files without a date prefix in their filename use their filesystem modification time as the sort date, matching the approach used by the RSS feed (frontmatter → git → filesystem).
 3. 🔗 Build provider chain from all configured providers
 4. 🔄 For each candidate (newest first globally):
    a. ⏱️ Attempt generation with retry logic for per-minute rate limits
@@ -427,7 +427,7 @@ Image name: chickie-loo-2026-03-22-weekly-recap.jpg
 4. **Why** were there so many library candidates ahead? Eight library directories (articles, books, bot-chats, games, products, software, tools, topics) contain hundreds of undated files that all received `today` as their default date.
 5. **Why** didn't the system recover over time? With max 2 images per hourly run and the reflection being pushed behind 1000+ undated library files that refresh to `today` each day, reflections were perpetually unreachable.
 
-✅ Fix: Changed the default backfill date for files without a date prefix in their filename from `today` to `1970-01-01` (the `undatedFileFallback` sentinel). This ensures dated content (reflections, blog posts) always sorts before undated library content in the backfill priority queue. After a reflection receives its creative title, it immediately becomes the highest-priority candidate.
+✅ Fix: Changed the backfill date for files without a date prefix from `today` to the file's filesystem modification time (via `getModificationTime`). This mirrors the date resolution strategy used by the RSS feed (frontmatter → git → filesystem). Recently modified undated content sorts near the top, while old library files naturally sort behind recently-titled reflections. After a reflection receives its creative title, the filesystem write updates its modification time, making it a high-priority candidate in the next backfill run.
 
 ---
 

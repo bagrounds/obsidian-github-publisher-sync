@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-04-11T18:27:22-07:00
+updated: 2026-04-11T18:43:32-07:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -21,11 +21,11 @@ updated: 2026-04-11T18:27:22-07:00
 - [2026-04-08 | ⚙️ Solved 🌿 Growth 🌱 Matters 🏛️ Public 🧬 Architecture 🏗️ Clarity 📺🐔🤖🏛️🤖🐲](./reflections/2026-04-08.md)  
   
   
-## [🤖 AI Blog](./ai-blog/index.md) (134)  
+## [🤖 AI Blog](./ai-blog/index.md) (135)  
+- [2026-04-11 | 👻 Fixing the Phantom Cache 🏎️](./ai-blog/2026-04-11-5-fixing-the-phantom-cache.md)  
 - [2026-04-11 | 📰 The Noise That Never Arrived 🔇](./ai-blog/2026-04-11-4-the-noise-that-never-arrived.md)  
 - [2026-04-11 | 📰 Launching The Noise — A New Auto Blog Series 🤖](./ai-blog/2026-04-11-3-launching-the-noise.md)  
 - [2026-04-11 | 🔍 Declarative Blog Series Auto-Discovery 🤖](./ai-blog/2026-04-11-2-declarative-blog-series-auto-discovery.md)  
-- [2026-04-11 | 📅 Teaching AI What Day It Is 🤖](./ai-blog/2026-04-11-1-teaching-ai-what-day-it-is.md)  
   
   
 ## [🤖 Auto Blog Zero](./auto-blog-zero/index.md) (32)  
@@ -60,11 +60,11 @@ updated: 2026-04-11T18:27:22-07:00
 - [🐜👑 Empire of Ants: The Hidden World and Extraordinary Lives of Earth's Tiny Conquerors](./books/empire-of-ants-the-hidden-world-and-extraordinary-lives-of-earths-tiny-conquerors.md)  
   
   
-## [📺 Videos](./videos/index.md) (738)  
+## [📺 Videos](./videos/index.md) (739)  
+- [🏛️📜🧠 You Actually Do Need to Understand Mythos](./videos/you-actually-do-need-to-understand-mythos.md)  
 - [⛽📈➡️☀️❓ Will more Americans embrace renewable energy after the latest oil price surge?](./videos/will-more-americans-embrace-renewable-energy-after-the-latest-oil-price-surge.md)  
 - [🧠👶🐒 Alison Gopnik, The Evolution of Human Intelligences | Natural Philosophy Forum Lecture 2025](./videos/alison-gopnik-the-evolution-of-human-intelligences-natural-philosophy-forum-lecture-2025.md)  
 - [🏛️🗣️🗓️ Politics Chat, November 18, 2025](./videos/politics-chat-november-18-2025.md)  
-- [👶🏆🧠✨ What kids know about motivation (and we don't) | Betsy Blackard | TEDx Claremont Graduate University](./videos/what-kids-know-about-motivation-and-we-dont-betsy-blackard-tedx-claremont-graduate-university.md)  
   
   
 ## [🌌 Topics](./topics/index.md) (91)  
@@ -82,10 +82,10 @@ updated: 2026-04-11T18:27:22-07:00
   
   
 ## [🤖💬 Bot Chats](./bot-chats/index.md) (49)  
+- [👶🏼🛒🏃🏼‍♀️🦮💲🦮 Jogging Stroller Buying Guide](./bot-chats/jogging-stroller-buying-guide.md)  
+- [👶👂 Infant Hearing](./bot-chats/infant-hearing.md)  
 - [🥱👎 How To Not Be Tired](./bot-chats/how-to-not-be-tired.md)  
 - [🪵❓ How Much Wood](./bot-chats/how-much-wood.md)  
-- [🤕😖 Headaches](./bot-chats/headaches.md)  
-- [😇🔮🎲🎬 Good Decisions](./bot-chats/good-decisions.md)  
   
   
 ## [💾 Software](./software/index.md) (33)  

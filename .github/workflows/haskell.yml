@@ -23,6 +23,8 @@ jobs:
   build-and-test:
     runs-on: ubuntu-latest
     container: haskell:9.14.1
+    env:
+      CABAL_DIR: /github/home/.cabal
     steps:
       - uses: actions/checkout@v4
 
@@ -38,9 +40,16 @@ jobs:
             cabal-ghc914-${{ hashFiles('haskell/automation.cabal', 'haskell/cabal.project') }}-
             cabal-ghc914-
 
+      - name: Update Hackage index
+        working-directory: haskell
+        run: |
+          if [ ! -d "$CABAL_DIR/packages/hackage.haskell.org" ]; then
+            cabal update
+          fi
+
       - name: Build
         working-directory: haskell
-        run: cabal update && cabal build all -j
+        run: cabal build all -j || { echo "Retrying with fresh package index..."; cabal update && cabal build all -j; }
 
       - name: Test
         working-directory: haskell

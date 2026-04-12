@@ -6,6 +6,9 @@ title: "🪞🇺🇸💔 Mirror, Mirror 2024: A Portrait of the Failing U.S. Hea
 URL: https://bagrounds.org/articles/mirror-mirror-2024-a-portrait-of-the-failing-us-health-system
 Author:
 tags:
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_time: 2026-04-11T00:00:00Z
+force_analyze_links: false
 ---
 [Home](../index.md) > [Articles](./index.md)  
 # [🪞🇺🇸💔 Mirror, Mirror 2024: A Portrait of the Failing U.S. Health System](https://www.commonwealthfund.org/publications/fund-reports/2024/sep/mirror-mirror-2024)  
@@ -49,7 +52,7 @@ tags:
 * 🏥 Catastrophic Care Why Everything We Think We Know about Health Care Is Wrong by David Goldhill. ⚖️ **This volume argues that market mechanisms and consumer choice, not universal systems, are the key to reform**, taking a perspective that often opposes the single-payer or highly regulated models favored by the top-ranked countries in the report.  
   
 ### 🎨 Creatively Related  
-* 🏙️ The Power Broker Robert Moses and the Fall of New York by Robert Caro. 🚧 **It explores how centralized, powerful bureaucratic planning** fundamentally shapes public life and resources, relating tangentially to the political challenges and consolidation issues noted in the report's critique of the U.S. system’s fragmented structure.  
+* 🏙️ [👑🏙️ The Power Broker](../books/the-power-broker.md) Robert Moses and the Fall of New York by Robert Caro. 🚧 **It explores how centralized, powerful bureaucratic planning** fundamentally shapes public life and resources, relating tangentially to the political challenges and consolidation issues noted in the report's critique of the U.S. system’s fragmented structure.  
 * [🤔🐇🐢 Thinking, Fast and Slow](../books/thinking-fast-and-slow.md) by Daniel Kahneman. ⚖️ **This book examines cognitive biases and decision-making**, offering a framework for understanding why rational policy choices (like investing in cost-effective primary care) are often overlooked in complex political and economic systems like healthcare.  
   
 ## 🐦 Tweet  

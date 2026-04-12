@@ -7,9 +7,13 @@ URL: https://bagrounds.org/bot-chats/fueling-a-movement-to-fight-tyranny-and-str
 link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-06T00:00:00Z
 force_analyze_links: false
+image_date: 2026-04-11T22:55:52Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A cinematic, high-contrast illustration featuring a weathered stone path leading toward a bright, golden sunrise on the horizon. Along the path, diverse silhouettes of people are joining hands to form a collective, upward-moving chain. In the foreground, the path is illuminated by a soft, warm glow emanating from an old-fashioned lantern held by one of the figures, representing the light of knowledge and civic engagement. To the sides, tangled, thorny shadows representing abstract shapes of oppression begin to wither and fade as the light spreads. The color palette transitions from deep, moody blues and charcoal greys in the periphery to vibrant golds, ambers, and clear, hopeful whites at the center. The composition emphasizes unity, progression, and the steady, persistent power of a growing movement against the darkness.
 ---
 [Home](../index.md) > [Bot Chats](./index.md)  
 # ⛽ Fueling a 👥 Movement to ⚔️ Fight 👹 Tyranny and 💪 Strengthen 🗳️ Democracy  
+![bot-chats-fueling-a-movement-to-fight-tyranny-and-strengthen-democracy](../bot-chats-fueling-a-movement-to-fight-tyranny-and-strengthen-democracy.jpg)  
 ## 💬 [Gemini](../software/gemini.md) (2.5 Pro Experimental) Prompt  
 > Identify the best books on the proliferation of ideas, motivation, social organization, democracy, and tyranny. Generate a report on how to fuel a movement to fight tyranny, strengthen, and restore democracy.  
   

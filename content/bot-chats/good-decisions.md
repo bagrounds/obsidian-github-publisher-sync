@@ -4,9 +4,16 @@ aliases:
   - 😇🔮🎲🎬 Good Decisions
 title: 😇🔮🎲🎬 Good Decisions
 URL: https://bagrounds.org/bot-chats/good-decisions
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_time: 2026-04-08T00:00:00Z
+force_analyze_links: false
+image_date: 2026-04-11T23:18:31Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: "A minimalist, high-contrast illustration featuring a stylized, translucent glass cube suspended in mid-air. Inside the cube, several distinct, symbolic objects are neatly arranged: a small, polished compass, a single die showing a six, a fountain pen, and a miniature hourglass. The background is a soft, deep gradient of charcoal and navy, suggesting a calm, analytical space. Beams of light refract through the glass cube, casting sharp, clear shadows and luminous highlights onto the surface below, representing the clarity and multifaceted nature of sound decision-making. The overall aesthetic is clean, modern, and professional, emphasizing structure, precision, and the balance between logic and intuition."
 ---
 [Home](../index.md) > [Bot Chats](./index.md)  
 # 😇🔮🎲🎬 Good Decisions  
+![bot-chats-good-decisions](../bot-chats-good-decisions.jpg)  
 ## 💬 [Gemini](../software/gemini.md) (2.5 Flash) Prompt 1. ▶️ Beginning  
 > 🤔 What is a good decision and how can we improve our decision making processes?  
   

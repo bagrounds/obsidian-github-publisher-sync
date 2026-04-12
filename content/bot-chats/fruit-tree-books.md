@@ -4,9 +4,16 @@ aliases:
   - 🏡🍎🌳📚 Home Fruit Tree Books
 title: 🏡🍎🌳📚 Home Fruit Tree Books
 URL: https://bagrounds.org/bot-chats/fruit-tree-books
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_time: 2026-04-09T00:00:00Z
+force_analyze_links: false
+image_date: 2026-04-11T22:55:40Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A warm, sun-dappled backyard scene featuring a healthy, young fruit tree as the focal point. The tree is laden with a mix of ripening apples and pears. Beneath the tree, a small, weathered wooden garden bench holds a neat stack of three vintage-style gardening books. A pair of well-used pruning shears rests on top of the stack. The background shows a soft-focus view of a lush, thriving home garden with raised beds and vibrant foliage, suggesting a peaceful, productive ecosystem. The lighting is golden and inviting, evoking a sense of growth, learning, and the satisfaction of home cultivation. The style is clean, semi-realistic, and serene.
 ---
 [Home](../index.md) > [Bot Chats](./index.md)  
 # 🏡🍎🌳📚 Home Fruit Tree Books  
+![bot-chats-fruit-tree-books](../bot-chats-fruit-tree-books.jpg)  
 ## 💬 [Gemini](../software/gemini.md) Prompt 1  
 > I want to 🪴 plant fruit trees 🌳 in my yard 🏡 but don't have any expertise. Can you recommend books 📚 that will teach me everything I need to know?  
   

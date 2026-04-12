@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-04-11T17:49:38-07:00
+updated: 2026-04-11T18:27:22-07:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -60,11 +60,11 @@ updated: 2026-04-11T17:49:38-07:00
 - [🐜👑 Empire of Ants: The Hidden World and Extraordinary Lives of Earth's Tiny Conquerors](./books/empire-of-ants-the-hidden-world-and-extraordinary-lives-of-earths-tiny-conquerors.md)  
   
   
-## [📺 Videos](./videos/index.md) (737)  
+## [📺 Videos](./videos/index.md) (738)  
+- [⛽📈➡️☀️❓ Will more Americans embrace renewable energy after the latest oil price surge?](./videos/will-more-americans-embrace-renewable-energy-after-the-latest-oil-price-surge.md)  
 - [🧠👶🐒 Alison Gopnik, The Evolution of Human Intelligences | Natural Philosophy Forum Lecture 2025](./videos/alison-gopnik-the-evolution-of-human-intelligences-natural-philosophy-forum-lecture-2025.md)  
 - [🏛️🗣️🗓️ Politics Chat, November 18, 2025](./videos/politics-chat-november-18-2025.md)  
 - [👶🏆🧠✨ What kids know about motivation (and we don't) | Betsy Blackard | TEDx Claremont Graduate University](./videos/what-kids-know-about-motivation-and-we-dont-betsy-blackard-tedx-claremont-graduate-university.md)  
-- [🥇💰📈🧑‍🏫 The 2025 Nobel Prize in Economics: Explained](./videos/the-2025-nobel-prize-in-economics-explained.md)  
   
   
 ## [🌌 Topics](./topics/index.md) (91)  

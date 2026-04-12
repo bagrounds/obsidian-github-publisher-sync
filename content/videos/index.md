@@ -5,10 +5,10 @@ aliases:
 title: 📺 Videos
 URL: https://bagrounds.org/videos
 backlinks: false
-updated: 2026-04-11T17:49:38-07:00
+updated: 2026-04-11T18:27:22-07:00
 ---
 [Home](../index.md)  
-# 📺 Videos (737)  
+# 📺 Videos (738)  
 - [💰🤑🤖💡🚀💲 $0.10/Month Runs My Entire AI Life. I'll Show You How.](./0-10-month-runs-my-entire-ai-life-ill-show-you-how.md)  
 - [📊📈📉📃👁️ 10 Charts to Understand the 900 Page Budget Bill](./10-charts-to-understand-the-900-page-budget-bill.md)  
 - [🤖🔗⬆️✅ 12-Factor Agents: Patterns of reliable LLM applications — Dex Horthy, HumanLayer](./12-factor-agents-patterns-of-reliable-llm-applications-dex-horthy-humanlayer.md)  
@@ -730,6 +730,7 @@ updated: 2026-04-11T17:49:38-07:00
 - [😴☕️💡 Why you’re so tired](./why-youre-so-tired.md)  
 - [💡🧠🤖📝 Why you should take notes if you use AI](./why-you-should-take-notes-if-you-use-ai.md)  
 - [🏃🤸🧠💪 Why You Should Train Movement, Not Muscle](./why-you-should-train-movement-not-muscle-with-jay-dicharry.md)  
+- [⛽📈➡️☀️❓ Will more Americans embrace renewable energy after the latest oil price surge?](./will-more-americans-embrace-renewable-energy-after-the-latest-oil-price-surge.md)  
 - [📰🕒❓ With government jobs report delayed, what other data reveals about the economy](./with-government-jobs-report-delayed-what-other-data-reveals-about-the-economy.md)  
 - [👹🇺🇸📉🔨👁️ With Trump “We Are Watching the Deliberate Dismantling of American Democracy”](./with-trump-we-are-watching-the-deliberate-dismantling-of-american-democracy.md)  
 - [👩‍⚖️🔒🗣️ Woman wrongfully detained in immigration raid describes what she endured](./woman-wrongfully-detained-in-immigration-raid-describes-what-she-endured.md)  

@@ -541,8 +541,8 @@ extractUrlFromUri uriValue
       in either (const Nothing) Just (mkUrl (buildPostUrl did postId))
   | otherwise = Nothing
 
-extractUrlFromBlockquote :: Text -> Maybe Url
-extractUrlFromBlockquote = extractPostUrlFromBrokenEmbed
+extractUrlFromEmbed :: Text -> Maybe Url
+extractUrlFromEmbed = extractPostUrlFromBrokenEmbed
 
 needsEmbedRegeneration :: Text -> Bool
 needsEmbedRegeneration section =
@@ -561,7 +561,7 @@ extractRegenerationUrl section
   | isBrokenEmbed section =
       extractPostUrlFromBrokenEmbed section
   | needsDarkModeUpdate section =
-      extractUrlFromBlockquote section
+      extractUrlFromEmbed section
   | otherwise = Nothing
 
 replaceSectionContent :: Text -> Text -> Text

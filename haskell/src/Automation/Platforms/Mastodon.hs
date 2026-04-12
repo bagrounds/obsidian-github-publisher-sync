@@ -23,6 +23,7 @@ module Automation.Platforms.Mastodon
   , getEmbedHtml
   ) where
 
+import Control.Applicative ((<|>))
 import Control.Exception (SomeException, fromException, throwIO, try)
 import Control.Monad (when)
 import Data.Char (intToDigit)
@@ -268,17 +269,25 @@ extractRegenerationUrl section
 
 extractEmbedUrl :: Text -> Maybe Text
 extractEmbedUrl section =
+  extractFromDataAttribute section <|> extractFromHref section
+
+extractFromDataAttribute :: Text -> Maybe Text
+extractFromDataAttribute section =
   case T.breakOn "data-embed-url=\"" section of
     (_, rest) | not (T.null rest) ->
       let afterAttr = T.drop (T.length "data-embed-url=\"") rest
           embedUrl = T.takeWhile (/= '"') afterAttr
       in Just (T.replace "/embed" "" embedUrl)
-    _ -> case T.breakOn "<a href=\"" section of
-      (_, rest') | not (T.null rest') ->
-        let afterHref = T.drop (T.length "<a href=\"") rest'
-            hrefUrl = T.takeWhile (/= '"') afterHref
-        in Just hrefUrl
-      _ -> Nothing
+    _ -> Nothing
+
+extractFromHref :: Text -> Maybe Text
+extractFromHref section =
+  case T.breakOn "<a href=\"" section of
+    (_, rest) | not (T.null rest) ->
+      let afterHref = T.drop (T.length "<a href=\"") rest
+          hrefUrl = T.takeWhile (/= '"') afterHref
+      in Just hrefUrl
+    _ -> Nothing
 
 replaceSectionContent :: Text -> Text -> Text
 replaceSectionContent fileContent newEmbedHtml =

@@ -467,24 +467,21 @@ tryRegenerateMastodonFile :: Manager -> FilePath -> IO Int
 tryRegenerateMastodonFile manager filePath = do
   content <- TIO.readFile filePath
   let mastodonHeader = Mastodon.sectionHeader
-  if not (mastodonHeader `T.isInfixOf` content)
-    then pure 0
-    else do
-      let sectionContent = extractSectionContent mastodonHeader content
-      if not (Mastodon.needsEmbedRegeneration sectionContent)
-        then pure 0
-        else case Mastodon.extractRegenerationUrl sectionContent of
-          Nothing -> pure 0
-          Just postUrl -> do
-            let instanceUrl = fromMaybe "" (Mastodon.extractInstanceUrl postUrl)
-            putStrLn $ "  🔄 Updating Mastodon embed to dark mode: " <> filePath
-            oembedResult <- Mastodon.fetchOEmbed manager instanceUrl postUrl
-            case oembedResult of
-              Right newEmbed -> do
-                let newContent = Mastodon.replaceSectionContent content newEmbed
-                TIO.writeFile filePath newContent
-                putStrLn $ "  ✅ Updated: " <> filePath
-                pure 1
-              Left err -> do
-                putStrLn $ "  ⚠️  Mastodon oEmbed failed for " <> filePath <> ": " <> show err
-                pure 0
+      sectionContent = extractSectionContent mastodonHeader content
+      shouldRegenerate = mastodonHeader `T.isInfixOf` content
+                           && Mastodon.needsEmbedRegeneration sectionContent
+  case (shouldRegenerate, Mastodon.extractRegenerationUrl sectionContent) of
+    (True, Just postUrl) -> do
+      let instanceUrl = fromMaybe "" (Mastodon.extractInstanceUrl postUrl)
+      putStrLn $ "  🔄 Updating Mastodon embed to dark mode: " <> filePath
+      oembedResult <- Mastodon.fetchOEmbed manager instanceUrl postUrl
+      case oembedResult of
+        Right newEmbed -> do
+          let newContent = Mastodon.replaceSectionContent content newEmbed
+          TIO.writeFile filePath newContent
+          putStrLn $ "  ✅ Updated: " <> filePath
+          pure 1
+        Left err -> do
+          putStrLn $ "  ⚠️  Mastodon oEmbed failed for " <> filePath <> ": " <> show err
+          pure 0
+    _ -> pure 0

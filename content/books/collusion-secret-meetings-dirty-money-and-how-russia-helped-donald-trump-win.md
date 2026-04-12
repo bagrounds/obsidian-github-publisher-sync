@@ -6,6 +6,9 @@ URL: https://bagrounds.org/books/collusion-secret-meetings-dirty-money-and-how-r
 share: true
 affiliate link: https://amzn.to/3GJIMFp
 CTA: Expose the conspiracy.
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_time: 2026-04-10T00:00:00Z
+force_analyze_links: false
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🇷🇺🤫🇺🇸 Collusion: Secret Meetings, Dirty Money, and How Russia Helped Donald Trump Win  

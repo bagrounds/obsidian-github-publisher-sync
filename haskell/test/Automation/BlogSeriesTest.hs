@@ -7,6 +7,7 @@ import qualified Data.Text as T
 import Data.Time (fromGregorian)
 
 import Automation.BlogSeries
+import Automation.BlogSeriesConfig (BlogSeriesConfig (..))
 
 tests :: TestTree
 tests = testGroup "BlogSeries"
@@ -33,7 +34,67 @@ tests = testGroup "BlogSeries"
       let result = appendModelSignature "Post body" "gemini-2.5-flash"
       in assertBool "should contain model name" $
            "gemini-2.5-flash" `T.isInfixOf` result
+  , generateSeriesIndexTests
   , buildBlogContextTests
+  ]
+
+sampleSeries :: BlogSeriesConfig
+sampleSeries = BlogSeriesConfig
+  { bscId = "the-noise"
+  , bscName = "The Noise"
+  , bscIcon = "\128240"
+  , bscAuthor = "[[the-noise]]"
+  , bscBaseUrl = "https://bagrounds.org/the-noise"
+  , bscPriorityUser = Just "bagrounds"
+  , bscNavLink = "[[index|Home]] > [[the-noise/index|\128240 The Noise]]"
+  , bscPostTimeUtc = "14:00"
+  }
+
+generateSeriesIndexTests :: TestTree
+generateSeriesIndexTests = testGroup "generateSeriesIndex"
+  [ testCase "includes share true" $
+      assertBool "should contain share: true" $
+        T.isInfixOf "share: true" (generateSeriesIndex sampleSeries)
+
+  , testCase "includes aliases with display name" $
+      assertBool "should contain aliases" $
+        T.isInfixOf "aliases:" (generateSeriesIndex sampleSeries)
+
+  , testCase "includes title with icon and name" $
+      assertBool "should contain title" $
+        T.isInfixOf "The Noise" (generateSeriesIndex sampleSeries)
+
+  , testCase "includes URL" $
+      assertBool "should contain URL" $
+        T.isInfixOf "https://bagrounds.org/the-noise" (generateSeriesIndex sampleSeries)
+
+  , testCase "includes backlinks false" $
+      assertBool "should contain backlinks: false" $
+        T.isInfixOf "backlinks: false" (generateSeriesIndex sampleSeries)
+
+  , testCase "includes home breadcrumb" $
+      assertBool "should contain home link" $
+        T.isInfixOf "[[index|" (generateSeriesIndex sampleSeries)
+
+  , testCase "includes dataview query" $
+      assertBool "should contain dataview" $
+        T.isInfixOf "```dataview" (generateSeriesIndex sampleSeries)
+
+  , testCase "includes FROM clause with series ID" $
+      assertBool "should contain FROM the-noise" $
+        T.isInfixOf "FROM \"the-noise\"" (generateSeriesIndex sampleSeries)
+
+  , testCase "includes inline page count" $
+      assertBool "should contain dv.pages" $
+        T.isInfixOf "dv.pages" (generateSeriesIndex sampleSeries)
+
+  , testCase "uses LIST query format" $
+      assertBool "should contain LIST WITHOUT ID" $
+        T.isInfixOf "LIST WITHOUT ID" (generateSeriesIndex sampleSeries)
+
+  , testCase "filters out this file" $
+      assertBool "should filter this.file.name" $
+        T.isInfixOf "this.file.name" (generateSeriesIndex sampleSeries)
   ]
 
 buildBlogContextTests :: TestTree

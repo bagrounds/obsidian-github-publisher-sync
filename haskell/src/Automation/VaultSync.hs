@@ -2,6 +2,8 @@ module Automation.VaultSync
   ( syncFileToVault
   , syncNewAiBlogPosts
   , copySeriesPosts
+  , syncRepoPostsToVault
+  , ensureFileInVault
   , findBestMatch
   , showScore
   , similarityThreshold
@@ -12,13 +14,9 @@ import Data.Text (Text)
 import qualified Data.Text as T
 import qualified Data.Text.IO as TIO
 import System.Directory (createDirectoryIfMissing, doesDirectoryExist, doesFileExist, listDirectory)
-import System.FilePath (takeExtension, (</>))
+import System.FilePath (takeDirectory, takeExtension, (</>))
 
 import Automation.Text (wordJaccardSimilarity)
-
--- ---------------------------------------------------------------------------
--- syncFileToVault (local implementation matching TypeScript)
--- ---------------------------------------------------------------------------
 
 syncFileToVault :: FilePath -> FilePath -> FilePath -> IO Bool
 syncFileToVault localPath vaultRelativePath vaultDirectory = do
@@ -42,20 +40,7 @@ syncFileToVault localPath vaultRelativePath vaultDirectory = do
           createDirectoryIfMissing True (takeDirectory vaultPath)
           TIO.writeFile vaultPath localContent
           pure True
-  where
-    takeDirectory = reverse . dropWhile (/= '/') . reverse
 
--- ---------------------------------------------------------------------------
--- syncNewAiBlogPosts (copy-if-missing with content similarity dedup)
--- ---------------------------------------------------------------------------
-
--- | Similarity threshold for dedup. Posts scoring above this against any
---   vault file are considered modified versions, not new content.
---
---   Empirically derived from the ai-blog corpus:
---     genuinely new posts:       max Jaccard similarity 0.22
---     renamed/modified versions: min Jaccard similarity 0.53
---   Threshold sits in the middle of a 0.31-wide gap.
 similarityThreshold :: Double
 similarityThreshold = 0.25
 
@@ -110,9 +95,11 @@ showScore value =
   let rounded = fromIntegral (round (value * 1000) :: Int) / 1000 :: Double
   in show rounded
 
--- ---------------------------------------------------------------------------
--- copySeriesPosts (matches TypeScript pull-vault-posts.ts)
--- ---------------------------------------------------------------------------
+isDatePrefixedMarkdown :: FilePath -> Bool
+isDatePrefixedMarkdown (y1:y2:y3:y4:'-':_rest) =
+  takeExtension (y1:y2:y3:y4:'-':_rest) == ".md"
+    && all isDigit [y1, y2, y3, y4]
+isDatePrefixedMarkdown _ = False
 
 copySeriesPosts :: FilePath -> Text -> FilePath -> IO Int
 copySeriesPosts vaultDirectory seriesIdentifier repoRoot = do
@@ -123,16 +110,47 @@ copySeriesPosts vaultDirectory seriesIdentifier repoRoot = do
     then pure 0
     else do
       entries <- listDirectory vaultSeriesDirectory
-      let dateFiles = filter isDateFile entries
+      let dateFiles = filter isDatePrefixedMarkdown entries
       createDirectoryIfMissing True localSeriesDirectory
       mapM_ (copyFile' vaultSeriesDirectory localSeriesDirectory) dateFiles
       pure (length dateFiles)
   where
-    isDateFile filename =
-      length filename >= 14
-        && takeExtension filename == ".md"
-        && all isDigit (take 4 filename)
-        && filename !! 4 == '-'
     copyFile' sourceDirectory destinationDirectory filename = do
       content <- TIO.readFile (sourceDirectory </> filename)
       TIO.writeFile (destinationDirectory </> filename) content
+
+syncRepoPostsToVault :: FilePath -> Text -> FilePath -> (Text -> IO ()) -> IO Int
+syncRepoPostsToVault repoRoot seriesIdentifier vaultDirectory logger = do
+  let repoSeriesDirectory = repoRoot </> T.unpack seriesIdentifier
+      vaultSeriesDirectory = vaultDirectory </> T.unpack seriesIdentifier
+  repoExists <- doesDirectoryExist repoSeriesDirectory
+  if not repoExists
+    then pure 0
+    else do
+      createDirectoryIfMissing True vaultSeriesDirectory
+      entries <- listDirectory repoSeriesDirectory
+      let dateFiles = filter isDatePrefixedMarkdown entries
+      counts <- traverse (syncPostIfMissing repoSeriesDirectory vaultSeriesDirectory logger) dateFiles
+      pure (sum counts)
+
+syncPostIfMissing :: FilePath -> FilePath -> (Text -> IO ()) -> FilePath -> IO Int
+syncPostIfMissing sourceDirectory destinationDirectory logger filename = do
+  let destinationPath = destinationDirectory </> filename
+  exists <- doesFileExist destinationPath
+  if exists
+    then pure 0
+    else do
+      content <- TIO.readFile (sourceDirectory </> filename)
+      TIO.writeFile destinationPath content
+      logger $ "  📄 Synced repo post → vault: " <> T.pack filename
+      pure 1
+
+ensureFileInVault :: FilePath -> Text -> IO Bool
+ensureFileInVault vaultPath content = do
+  exists <- doesFileExist vaultPath
+  if exists
+    then pure False
+    else do
+      createDirectoryIfMissing True (takeDirectory vaultPath)
+      TIO.writeFile vaultPath content
+      pure True

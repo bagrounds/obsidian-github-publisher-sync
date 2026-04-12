@@ -49,6 +49,10 @@ updated: 2026-04-11T17:34:08-07:00
 - [2026-04-08 | 🏛️ 🌳 The Green Tapestry: Individual Threads in the Public Good of Parks 🏛️](./systems-for-public-good/2026-04-08-the-green-tapestry-individual-threads-in-the-public-good-of-parks.md)  
   
   
+## [📰 The Noise](./the-noise/index.md) (2)  
+- [2026-04-11 | 📰 First Broadcast - Tuning Into the World 📰](./the-noise/2026-04-11-first-broadcast.md)  
+  
+  
 ## [📚 Books](./books/index.md) (959)  
 - [📉🏆 How to Fail at Almost Everything and Still Win Big: Kind of the Story of My Life](./books/how-to-fail-at-almost-everything-and-still-win-big-kind-of-the-story-of-my-life.md)  
 - [🐜 The Ants](./books/the-ants.md)  

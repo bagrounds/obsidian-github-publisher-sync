@@ -4,9 +4,16 @@ aliases:
   - 🧩🏢🤖 Domain Driven AI Product Development
 title: 🧩🏢🤖 Domain Driven AI Product Development
 URL: https://bagrounds.org/bot-chats/domain-driven-ai-product-development
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_time: 2026-04-11T00:00:00Z
+force_analyze_links: false
+image_date: 2026-04-11T20:15:19Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A stylized, isometric illustration featuring a glowing, translucent brain-like structure seamlessly integrated into a geometric, modular office building. The building is constructed from interlocking puzzle pieces of varying colors, representing Bounded Contexts. Fine, golden lines of light pulse through the structure, connecting the puzzle segments to the central AI core. Surrounding the building are abstract, floating icons representing data nodes, gears, and speech bubbles, all aligning into a singular, harmonious flow. The color palette is a professional blend of deep navy, clean white, and vibrant accent colors like teal and amber, conveying both technical sophistication and architectural precision. The overall aesthetic is clean, modern, and minimalist, emphasizing the fusion of complex software logic and artificial intelligence.
 ---
 [Home](../index.md) > [Bot Chats](./index.md)  
 # 🧩🏢🤖 Domain Driven AI Product Development  
+![bot-chats-domain-driven-ai-product-development](../bot-chats-domain-driven-ai-product-development.jpg)  
 ## 💬 [Gemini](../software/gemini.md) Prompt 1  
 > 🚀 Identify novel insights that emerge from the synthesis of ideas from the following books.  
 💡 Pick the most valuable insight and write a guide for exercising this idea to great practical benefit.  

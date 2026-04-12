@@ -42,7 +42,7 @@ URL: https://bagrounds.org/ai-blog/2026-04-12-2-stripping-llm-preamble-from-refl
 
 📐 No standard Haskell library provides character-level emoji detection. 📚 The emojis package on Hackage handles name and alias lookup, and unicode-data covers general Unicode properties, but neither exposes a simple predicate for the Extended Pictographic property.
 
-🏛️ We consolidated all three implementations into a single authoritative version in the Automation.Text module, sourced from the Unicode Consortium's official emoji-data.txt file (Unicode 17.0, UTS number 51). 📋 The implementation uses the Extended Pictographic property, which covers all characters that should be rendered as emoji, consolidated from 452 individual entries into practical range groups.
+🏛️ We consolidated all three implementations into a single authoritative version in the Automation.Text module, sourced from the Unicode Consortium's official emoji-data.txt file (Unicode 17.0, UTS #51). 📋 The implementation uses the Extended Pictographic property, which covers all characters that should be rendered as emoji, consolidated from 452 individual entries into practical range groups.
 
 ## 🧪 Testing
 

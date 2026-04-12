@@ -4,9 +4,16 @@ aliases:
   - 🧭 Managing 🕸️ Complexity 🧠
 title: 🧭 Managing 🕸️ Complexity 🧠
 URL: https://bagrounds.org/bot-chats/managing-complexity
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_time: 2026-04-07T00:00:00Z
+force_analyze_links: false
+image_date: 2026-04-12T03:11:46Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A minimalist, high-contrast illustration depicting a complex, tangled web of thin, glowing golden lines that transition into a structured, organized geometric pattern on the right side. At the center, a stylized, glowing human brain is rendered as a clean, architectural wireframe. Subtle, floating compass needles point in various directions, suggesting navigation through uncertainty. The background is a deep, moody charcoal, allowing the luminous, intricate pathways to pop. The overall aesthetic is sophisticated, modern, and intellectual, evoking a sense of clarity emerging from chaos without the use of any text.
 ---
 [Home](../index.md) > [Bot Chats](./index.md)  
 # 🧭 Managing 🕸️ Complexity 🧠  
+![bot-chats-managing-complexity](../bot-chats-managing-complexity.jpg)  
   
 [😴 TL;DR](managing-complexity.md#💬%205.%20😴%20TL;DR)  
   

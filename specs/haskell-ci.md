@@ -41,7 +41,7 @@ Cache key structure (three-tier fallback):
 
 - **Exact key:** hash of `automation.cabal` + `cabal.project` + hash of all source files (`src/**`, `app/**`, `test/**`)
 - **First fallback:** hash of `automation.cabal` + `cabal.project` only (dependencies match, project incrementally recompiled)
-- **Second fallback:** any previous `cabal-ghc914-` key (best-effort partial cache)
+- **Second fallback:** any previous `cabal-ghc914v2-` key (best-effort partial cache)
 
 ## Update Hackage Index Step
 

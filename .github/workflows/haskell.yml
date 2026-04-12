@@ -35,10 +35,10 @@ jobs:
             ~/.cabal/store
             ~/.cabal/packages
             haskell/dist-newstyle
-          key: cabal-ghc914-${{ hashFiles('haskell/automation.cabal', 'haskell/cabal.project') }}-${{ hashFiles('haskell/src/**', 'haskell/app/**', 'haskell/test/**') }}
+          key: cabal-ghc914v2-${{ hashFiles('haskell/automation.cabal', 'haskell/cabal.project') }}-${{ hashFiles('haskell/src/**', 'haskell/app/**', 'haskell/test/**') }}
           restore-keys: |
-            cabal-ghc914-${{ hashFiles('haskell/automation.cabal', 'haskell/cabal.project') }}-
-            cabal-ghc914-
+            cabal-ghc914v2-${{ hashFiles('haskell/automation.cabal', 'haskell/cabal.project') }}-
+            cabal-ghc914v2-
 
       - name: Update Hackage index
         working-directory: haskell

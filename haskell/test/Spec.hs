@@ -42,6 +42,11 @@ import qualified Automation.VaultSyncTest
 import qualified Automation.TaskRunnerTest
 import qualified Automation.PacificTimeTest
 import qualified Automation.BlogSeriesDiscoveryTest
+import qualified Automation.BlogImage.ContentDirectoryTest
+import qualified Automation.BlogImage.TitleExtractionTest
+import qualified Automation.BlogImage.EligibilityTest
+import qualified Automation.BlogImage.MarkdownTest
+import qualified Automation.BlogImage.ProviderTest
 
 main :: IO ()
 main = defaultMain $ testGroup "Automation"
@@ -85,4 +90,9 @@ main = defaultMain $ testGroup "Automation"
   , Automation.TaskRunnerTest.tests
   , Automation.PacificTimeTest.tests
   , Automation.BlogSeriesDiscoveryTest.tests
+  , Automation.BlogImage.ContentDirectoryTest.tests
+  , Automation.BlogImage.TitleExtractionTest.tests
+  , Automation.BlogImage.EligibilityTest.tests
+  , Automation.BlogImage.MarkdownTest.tests
+  , Automation.BlogImage.ProviderTest.tests
   ]

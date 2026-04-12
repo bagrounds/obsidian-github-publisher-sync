@@ -1,78 +1,69 @@
 module Automation.BlogImage
-  ( ImageGenerationResult (..)
+  ( -- * Re-exports from sub-modules for backward compatibility
+    -- ** ContentDirectory
+    ContentDirectory (..)
+  , contentDirectoryToText
+  , contentDirectoryFromText
+    -- ** TitleExtraction
+  , extractTitle
+    -- ** Eligibility
+  , CandidateEligibility (..)
+  , IneligibilityReason (..)
+  , hasEmbeddedImage
+  , shouldHaveImage
+  , isPostFile
+  , parseDateFromFilename
+  , isDateOnlyTitle
+  , checkCandidateEligibility
+    -- ** Markdown
+  , insertImageEmbed
+  , removeImageEmbed
+  , cleanContentForPrompt
+  , buildImagePrompt
+    -- ** Provider
+  , ImageGenerationResult (..)
   , ImageProvider (..)
   , PromptDescriber (..)
   , ImageProviderConfig (..)
-  , BackfillConfig (..)
-  , BackfillResult (..)
-  , ContentDirectory (..)
-  , CandidateEligibility (..)
-  , IneligibilityReason (..)
   , providerName
   , generateImage
   , describeContent
-  , hasEmbeddedImage
-  , shouldRegenerateImage
-  , insertImageEmbed
-  , cleanContentForPrompt
-  , buildImagePrompt
   , describeImageWithGemini
   , resolveImageProviders
-  , processNote
-  , backfillImages
-  , syncAttachmentsDir
-  , updateFrontmatterFields
-  , applyField
-  , mimeTypeToExtension
-  , notePathToImageBaseName
-  , resolveUniqueImageName
-  , extractTitle
-  , sanitizeForYaml
   , isQuotaError
   , isDailyQuotaError
   , isProviderUnavailableError
-  , isPostFile
-  , shouldHaveImage
-  , isDateOnlyTitle
-  , parseDateFromFilename
-  , contentDirectoryFromText
-  , contentDirectoryToText
-  , checkCandidateEligibility
-  , removeImageEmbed
+  , mimeTypeToExtension
   , generateWithCloudflare
   , generateWithHuggingFace
   , generateWithTogether
   , generateWithPollinations
   , generateImageWithGemini
+    -- * Orchestration (defined here)
+  , BackfillConfig (..)
+  , BackfillResult (..)
+  , processNote
+  , backfillImages
+  , syncAttachmentsDir
+  , updateFrontmatterFields
+  , applyField
+  , notePathToImageBaseName
+  , resolveUniqueImageName
+  , sanitizeForYaml
+  , shouldRegenerateImage
   ) where
 
 import Control.Exception (SomeException, catch)
 import Control.Monad (when)
-import qualified Data.ByteString.Base64 as B64
 import qualified Data.ByteString.Lazy as LBS
-import Data.Char (isAlphaNum, isDigit, toLower)
-import Data.Map.Strict (Map)
+import Data.Char (isAlphaNum, toLower)
 import qualified Data.Map.Strict as Map
-import Data.Maybe (catMaybes, fromMaybe)
+import Data.Maybe (fromMaybe)
 import Data.Text (Text)
 import qualified Data.Text as T
-import qualified Data.Text.Encoding as TE
 import qualified Data.Text.IO as TIO
 import Data.Time (Day, defaultTimeLocale, formatTime, getCurrentTime)
-import Data.Time.Format (parseTimeM)
-import Network.HTTP.Client
-  ( Manager
-  , Request (..)
-  , RequestBody (..)
-  , httpLbs
-  , parseRequest
-  , responseBody
-  , responseHeaders
-  , responseStatus
-  )
-import Network.HTTP.Types.Header (hContentType)
-import Network.HTTP.Types.Status (statusCode)
-import Network.HTTP.Types.URI (urlEncode)
+import Network.HTTP.Client (Manager)
 import System.Directory
   ( copyFile
   , createDirectoryIfMissing
@@ -81,56 +72,54 @@ import System.Directory
   , listDirectory
   )
 import System.FilePath ((</>), takeBaseName, takeDirectory, takeExtension)
-import Text.Regex.TDFA ((=~))
 
-import Automation.BlogPrompt (stripEmbedSections)
 import Automation.PacificTime (todayPacificDay)
 import Automation.Frontmatter (YamlValue (..), parseFrontmatter, renderYamlValue)
-import qualified Automation.Gemini as Gemini
-import qualified Automation.Json as Json
-import Automation.Types (Secret (..))
 
---------------------------------------------------------------------------------
--- Data types
---------------------------------------------------------------------------------
-
-data ImageGenerationResult = ImageGenerationResult
-  { igrSkipped     :: Bool
-  , igrImagePath   :: Maybe FilePath
-  , igrImageName   :: Maybe Text
-  , igrImagePrompt :: Maybe Text
-  } deriving (Show, Eq)
-
-data ImageProvider
-  = Cloudflare Text  -- account ID
-  | HuggingFace
-  | Together
-  | Pollinations
-  | GeminiImage
-  deriving (Show, Eq)
-
-providerName :: ImageProvider -> Text
-providerName = \case
-  Cloudflare _ -> "cloudflare"
-  HuggingFace  -> "huggingface"
-  Together     -> "together"
-  Pollinations -> "pollinations"
-  GeminiImage  -> "gemini"
-
-data PromptDescriber = PromptDescriber
-  { describerApiKey :: Secret
-  , describerModel  :: Gemini.Model
-  } deriving (Eq)
-
-instance Show PromptDescriber where
-  show (PromptDescriber key mdl) = "PromptDescriber " <> show key <> " " <> show mdl
-
-data ImageProviderConfig = ImageProviderConfig
-  { ipcProvider  :: ImageProvider
-  , ipcApiKey    :: Secret
-  , ipcModel     :: Text
-  , ipcDescriber :: Maybe PromptDescriber
-  } deriving (Show, Eq)
+import Automation.BlogImage.ContentDirectory
+  ( ContentDirectory (..)
+  , contentDirectoryToText
+  , contentDirectoryFromText
+  )
+import Automation.BlogImage.TitleExtraction (extractTitle)
+import Automation.BlogImage.Eligibility
+  ( BackfillCandidate (..)
+  , CandidateEligibility (..)
+  , IneligibilityReason (..)
+  , checkCandidateEligibility
+  , hasEmbeddedImage
+  , isDateOnlyTitle
+  , isPostFile
+  , parseDateFromFilename
+  , shouldHaveImage
+  , shouldRegenerateImage
+  )
+import Automation.BlogImage.Markdown
+  ( buildImagePrompt
+  , cleanContentForPrompt
+  , insertImageEmbed
+  , removeImageEmbed
+  )
+import Automation.BlogImage.Provider
+  ( ImageGenerationResult (..)
+  , ImageProvider (..)
+  , ImageProviderConfig (..)
+  , PromptDescriber (..)
+  , describeContent
+  , describeImageWithGemini
+  , generateImage
+  , generateImageWithGemini
+  , generateWithCloudflare
+  , generateWithHuggingFace
+  , generateWithPollinations
+  , generateWithTogether
+  , isDailyQuotaError
+  , isProviderUnavailableError
+  , isQuotaError
+  , mimeTypeToExtension
+  , providerName
+  , resolveImageProviders
+  )
 
 data BackfillConfig = BackfillConfig
   { backfillRepoRoot       :: FilePath
@@ -148,180 +137,6 @@ data BackfillResult = BackfillResult
   , brErrors          :: [Text]
   } deriving (Show, Eq)
 
-data BackfillCandidate = BackfillCandidate
-  { bcFilePath          :: FilePath
-  , bcDirectory         :: ContentDirectory
-  , bcFilename          :: Text
-  , bcDate              :: Day
-  , bcNeedsRegeneration :: Bool
-  }
-
-data ContentDirectory
-  = Reflections
-  | AiBlog
-  | AutoBlogZero
-  | ChickieLoo
-  | SystemsForPublicGood
-  | Articles
-  | Books
-  | BotChats
-  | Games
-  | Products
-  | Software
-  | Tools
-  | Topics
-  deriving (Show, Eq, Ord, Bounded, Enum)
-
-contentDirectoryToText :: ContentDirectory -> Text
-contentDirectoryToText = \case
-  Reflections          -> "reflections"
-  AiBlog               -> "ai-blog"
-  AutoBlogZero         -> "auto-blog-zero"
-  ChickieLoo           -> "chickie-loo"
-  SystemsForPublicGood -> "systems-for-public-good"
-  Articles             -> "articles"
-  Books                -> "books"
-  BotChats             -> "bot-chats"
-  Games                -> "games"
-  Products             -> "products"
-  Software             -> "software"
-  Tools                -> "tools"
-  Topics               -> "topics"
-
-contentDirectoryFromText :: Text -> Maybe ContentDirectory
-contentDirectoryFromText = \case
-  "reflections"            -> Just Reflections
-  "ai-blog"               -> Just AiBlog
-  "auto-blog-zero"        -> Just AutoBlogZero
-  "chickie-loo"           -> Just ChickieLoo
-  "systems-for-public-good" -> Just SystemsForPublicGood
-  "articles"              -> Just Articles
-  "books"                 -> Just Books
-  "bot-chats"             -> Just BotChats
-  "games"                 -> Just Games
-  "products"              -> Just Products
-  "software"              -> Just Software
-  "tools"                 -> Just Tools
-  "topics"                -> Just Topics
-  _                       -> Nothing
-
-data CandidateEligibility
-  = Eligible { needsRegeneration :: Bool }
-  | Ineligible IneligibilityReason
-  deriving (Show, Eq)
-
-data IneligibilityReason
-  = FutureReflection
-  | AlreadyHasImage
-  | UntitledReflection
-  deriving (Show, Eq)
-
---------------------------------------------------------------------------------
--- Constants
---------------------------------------------------------------------------------
-
-excludedFiles :: [Text]
-excludedFiles = ["index.md", "AGENTS.md", "IDEAS.md"]
-
-defaultDescriberModel :: Gemini.Model
-defaultDescriberModel = Gemini.Gemini31FlashLite
-
-cloudflarePromptMaxLength :: Int
-cloudflarePromptMaxLength = 2048
-
-imageDescriptionSystemPrompt :: Text
-imageDescriptionSystemPrompt = T.intercalate " "
-  [ "Describe a cover image for the following blog post."
-  , "Focus on visual elements that would make an appealing illustration."
-  , "Be concise — respond in under 150 words."
-  , "Do not include any text or words in the image."
-  , "Respond with only the image description, no preamble."
-  ]
-
---------------------------------------------------------------------------------
--- Pure utility functions
---------------------------------------------------------------------------------
-
-hasEmbeddedImage :: Text -> Bool
-hasEmbeddedImage content =
-  let s = T.unpack content
-      obsidianMatch = s =~ ("!\\[\\[([^]]*/)?" <> "[^]]+\\.(jpg|jpeg|png|gif|webp)\\]\\]" :: String) :: Bool
-      markdownMatch = s =~ ("!\\[[^]]*\\]\\([^)]+\\.(jpg|jpeg|png|gif|webp)\\)" :: String) :: Bool
-  in obsidianMatch || markdownMatch
-
-shouldRegenerateImage :: Text -> Bool
-shouldRegenerateImage content =
-  let (fm, _) = parseFrontmatter content
-  in case Map.lookup "regenerate_image" fm of
-    Just v  -> T.strip (T.toLower v) `elem` ["true", "yes"]
-    Nothing -> False
-
-insertImageEmbed :: Text -> Text -> Text
-insertImageEmbed content imageName =
-  let ls = T.splitOn "\n" content
-      embed = "![[attachments/" <> imageName <> "]]"
-      insertAfterH1 [] = []
-      insertAfterH1 (l : rest)
-        | "# " `T.isPrefixOf` l = l : embed : rest
-        | otherwise              = l : insertAfterH1 rest
-  in T.intercalate "\n" (insertAfterH1 ls)
-
-removeImageEmbed :: Text -> (Text, Maybe Text)
-removeImageEmbed content =
-  let s = T.unpack content
-      pat = "^!\\[\\[(attachments/)?([^]]+\\.(jpg|jpeg|png|gif|webp))\\]\\]" :: String
-      matches = s =~ pat :: [[String]]
-  in case matches of
-    (fullMatch : _) ->
-      let matchText = T.pack (case fullMatch of { (x:_) -> x; [] -> "" })
-          imageName = case fullMatch of
-            [_, _, name, _] -> T.pack name
-            _               -> matchText
-          cleaned = collapseNewlines (T.replace matchText "" content)
-      in (cleaned, Just (stripAttachmentsPrefix imageName))
-    [] -> (content, Nothing)
-
-stripAttachmentsPrefix :: Text -> Text
-stripAttachmentsPrefix t = fromMaybe t (T.stripPrefix "attachments/" t)
-
-collapseNewlines :: Text -> Text
-collapseNewlines = go
-  where
-    go t = let t' = T.replace "\n\n\n" "\n\n" t
-           in if t' == t then t else go t'
-
-extractTitle :: Text -> Text
-extractTitle content =
-  let ls = T.splitOn "\n" content
-      fromFrontmatter = extractTitleFromFrontmatter ls False
-      fromH1 = findH1Title ls
-  in fromMaybe "" (fromFrontmatter `altMaybe` fromH1)
-
-extractTitleFromFrontmatter :: [Text] -> Bool -> Maybe Text
-extractTitleFromFrontmatter [] _ = Nothing
-extractTitleFromFrontmatter (l : rest) inFm
-  | T.strip l == "---" = if inFm then Nothing else extractTitleFromFrontmatter rest True
-  | inFm = case T.stripPrefix "title:" l of
-      Just val -> Just (stripQuotes (T.strip val))
-      Nothing  -> extractTitleFromFrontmatter rest True
-  | otherwise = Nothing
-
-findH1Title :: [Text] -> Maybe Text
-findH1Title = foldr (\l acc -> if "# " `T.isPrefixOf` l then Just (T.strip (T.drop 2 l)) else acc) Nothing
-
-stripQuotes :: Text -> Text
-stripQuotes t =
-  let stripped = case T.uncons t of
-        Just (c, rest) | c == '"' || c == '\'' -> rest
-        _ -> t
-  in case T.unsnoc stripped of
-    Just (init', c) | c == '"' || c == '\'' -> init'
-    _ -> stripped
-
-altMaybe :: Maybe a -> Maybe a -> Maybe a
-altMaybe (Just x) _ = Just x
-altMaybe Nothing  y = y
-
 notePathToImageBaseName :: FilePath -> Text
 notePathToImageBaseName notePath =
   let dir = T.pack (takeBaseName (takeDirectory notePath))
@@ -338,14 +153,6 @@ collapseDashes = T.intercalate "-" . filter (not . T.null) . T.splitOn "-"
 trimDashes :: Text -> Text
 trimDashes = T.dropWhile (== '-') . T.dropWhileEnd (== '-')
 
-mimeTypeToExtension :: Text -> Text
-mimeTypeToExtension mime = case T.takeWhile (/= ';') (T.strip mime) of
-  "image/jpeg" -> ".jpg"
-  "image/png"  -> ".png"
-  "image/gif"  -> ".gif"
-  "image/webp" -> ".webp"
-  _            -> ".jpg"
-
 sanitizeForYaml :: Text -> Text
 sanitizeForYaml =
   T.strip
@@ -355,205 +162,6 @@ sanitizeForYaml =
 
 collapseSpaces :: Text -> Text
 collapseSpaces = T.intercalate " " . filter (not . T.null) . T.splitOn " "
-
-isQuotaError :: Text -> Bool
-isQuotaError msg =
-  T.isInfixOf "429" msg
-    || T.isInfixOf "RESOURCE_EXHAUSTED" msg
-    || T.isInfixOf "quota" msg
-
-isDailyQuotaError :: Text -> Bool
-isDailyQuotaError msg =
-  T.isInfixOf "quota" msg
-    && (T.isInfixOf "daily" msg || T.isInfixOf "per day" msg || T.isInfixOf "PerDay" msg)
-
-isProviderUnavailableError :: Text -> Bool
-isProviderUnavailableError msg =
-  T.isInfixOf "410" msg
-    || T.isInfixOf "401" msg
-    || T.isInfixOf "403" msg
-    || T.isInfixOf "no longer supported" msg
-    || T.isInfixOf "deprecated" msg
-
-isPostFile :: Text -> Bool
-isPostFile filename =
-  T.isSuffixOf ".md" filename
-    && notElem filename excludedFiles
-    && hasDatePrefix filename
-
-shouldHaveImage :: Text -> Bool
-shouldHaveImage filename =
-  T.isSuffixOf ".md" filename
-    && notElem filename excludedFiles
-
-hasDatePrefix :: Text -> Bool
-hasDatePrefix t =
-  T.length t >= 10
-    && T.all isDigit (T.take 4 t)
-    && T.index t 4 == '-'
-    && T.all isDigit (T.take 2 (T.drop 5 t))
-    && T.index t 7 == '-'
-    && T.all isDigit (T.take 2 (T.drop 8 t))
-
-parseDateFromFilename :: Text -> Maybe Day
-parseDateFromFilename filename =
-  if hasDatePrefix filename
-    then parseTimeM True defaultTimeLocale "%Y-%m-%d" (T.unpack (T.take 10 filename))
-    else Nothing
-
-isDateOnlyTitle :: Text -> Day -> Bool
-isDateOnlyTitle content date =
-  let title = extractTitle content
-      dateText = T.pack (formatTime defaultTimeLocale "%Y-%m-%d" date)
-  in title == dateText
-
---------------------------------------------------------------------------------
--- Content processing
---------------------------------------------------------------------------------
-
-stripMarkdownSyntax :: Text -> Text
-stripMarkdownSyntax =
-  T.strip
-    . collapseTripleNewlines
-    . removeTableSeparators
-    . removeTableCells
-    . removeBlockquotes
-    . removeOrderedLists
-    . removeUnorderedLists
-    . removeEmphasis
-    . removeInlineCode
-    . removeCodeBlocks
-    . removeMarkdownLinks
-    . removeMarkdownImages
-    . removeObsidianEmbeds
-    . removeHeadings
-
-removeHeadings :: Text -> Text
-removeHeadings = T.unlines . fmap stripHeading . T.lines
-  where
-    stripHeading l
-      | "######" `T.isPrefixOf` l = T.stripStart (T.drop 6 l)
-      | "#####" `T.isPrefixOf` l  = T.stripStart (T.drop 5 l)
-      | "####" `T.isPrefixOf` l   = T.stripStart (T.drop 4 l)
-      | "###" `T.isPrefixOf` l    = T.stripStart (T.drop 3 l)
-      | "##" `T.isPrefixOf` l     = T.stripStart (T.drop 2 l)
-      | "#" `T.isPrefixOf` l      = T.stripStart (T.drop 1 l)
-      | otherwise                 = l
-
-removeObsidianEmbeds :: Text -> Text
-removeObsidianEmbeds t =
-  let s = T.unpack t
-      result = replaceAll s "!\\[\\[[^]]*\\]\\]" ""
-  in T.pack result
-
-removeMarkdownImages :: Text -> Text
-removeMarkdownImages t =
-  let s = T.unpack t
-      result = replaceAll s "!\\[[^]]*\\]\\([^)]*\\)" ""
-  in T.pack result
-
-removeMarkdownLinks :: Text -> Text
-removeMarkdownLinks t =
-  let s = T.unpack t
-      result = replaceAllWith s "\\[([^]]*)\\]\\([^)]*\\)" (\case
-        (_full : captured : _) -> captured
-        [full]                 -> full
-        _                      -> "")
-  in T.pack result
-
-removeCodeBlocks :: Text -> Text
-removeCodeBlocks content = T.intercalate "\n" (go (T.lines content) False)
-  where
-    go [] _ = []
-    go (l : rest) inBlock
-      | "```" `T.isPrefixOf` l && inBlock = go rest False
-      | "```" `T.isPrefixOf` l            = go rest True
-      | inBlock                            = go rest True
-      | otherwise                          = l : go rest False
-
-removeInlineCode :: Text -> Text
-removeInlineCode t =
-  let s = T.unpack t
-      result = replaceAll s "`[^`]*`" ""
-  in T.pack result
-
-removeEmphasis :: Text -> Text
-removeEmphasis = T.filter (`notElem` ['*', '_', '~'])
-
-removeUnorderedLists :: Text -> Text
-removeUnorderedLists = T.unlines . fmap stripBullet . T.lines
-  where
-    stripBullet l
-      | matchesBullet l = T.stripStart (T.drop 2 (T.stripStart l))
-      | otherwise       = l
-    matchesBullet l =
-      let stripped = T.stripStart l
-      in case T.uncons stripped of
-           Just (c, rest) | c `elem` ['-', '*', '+'] -> case T.uncons rest of
-             Just (' ', _) -> True
-             _             -> False
-           _ -> False
-
-removeOrderedLists :: Text -> Text
-removeOrderedLists = T.unlines . fmap stripOrdered . T.lines
-  where
-    stripOrdered l =
-      let stripped = T.stripStart l
-          (digits, rest) = T.span isDigit stripped
-      in if not (T.null digits)
-         then case T.uncons rest of
-           Just ('.', afterDot) -> case T.uncons afterDot of
-             Just (' ', content') -> T.stripStart content'
-             _                    -> l
-           _ -> l
-         else l
-
-removeBlockquotes :: Text -> Text
-removeBlockquotes = T.unlines . fmap stripQuote . T.lines
-  where
-    stripQuote l =
-      let stripped = T.stripStart l
-      in case T.uncons stripped of
-           Just ('>', rest) -> T.stripStart rest
-           _                -> l
-
-removeTableCells :: Text -> Text
-removeTableCells t =
-  let s = T.unpack t
-      result = replaceAll s "\\|[^|\\n]*\\|" ""
-  in T.pack result
-
-removeTableSeparators :: Text -> Text
-removeTableSeparators = T.unlines . filter (not . isTableSep) . T.lines
-  where
-    isTableSep l = T.all (\c -> c == '-' || c == '|' || c == ':' || c == ' ') (T.strip l)
-                   && T.length (T.strip l) > 2
-                   && T.isInfixOf "-" l
-
-collapseTripleNewlines :: Text -> Text
-collapseTripleNewlines t =
-  let t' = T.replace "\n\n\n" "\n\n" t
-  in if t' == t then t else collapseTripleNewlines t'
-
-cleanContentForPrompt :: Text -> Text
-cleanContentForPrompt rawContent =
-  let (_, body) = parseFrontmatter rawContent
-      withoutEmbeds = stripEmbedSections body
-  in stripMarkdownSyntax withoutEmbeds
-
-buildImagePrompt :: Text -> Text
-buildImagePrompt postContent =
-  let cleaned = cleanContentForPrompt postContent
-      prefix = "generate an image to illustrate the following blog post: "
-      maxContentLength = cloudflarePromptMaxLength - T.length prefix
-      truncated
-        | T.length cleaned > maxContentLength = T.take (maxContentLength - 1) cleaned <> "…"
-        | otherwise                           = cleaned
-  in prefix <> truncated
-
---------------------------------------------------------------------------------
--- Frontmatter manipulation
---------------------------------------------------------------------------------
 
 updateFrontmatterFields :: Text -> [(Text, YamlValue)] -> Text
 updateFrontmatterFields content fields =
@@ -594,412 +202,10 @@ dropContinuationLines (l : rest)
 isContinuationLine :: Text -> Bool
 isContinuationLine l = not (T.null l) && T.isPrefixOf " " l
 
-
 extractFrontmatterValue :: Text -> Text -> Maybe Text
 extractFrontmatterValue content key =
   let (fm, _) = parseFrontmatter content
   in Map.lookup key fm
-
---------------------------------------------------------------------------------
--- Regex helpers
---------------------------------------------------------------------------------
-
-replaceAll :: String -> String -> String -> String
-replaceAll source pat replacement =
-  case source =~ pat :: (String, String, String) of
-    (_, "", _)       -> source
-    (before, _, after) -> before <> replacement <> replaceAll after pat replacement
-
-replaceAllWith :: String -> String -> ([String] -> String) -> String
-replaceAllWith source pat mkReplacement =
-  case source =~ pat :: (String, String, String, [String]) of
-    (_, "", _, _)             -> source
-    (before, match, after, groups) ->
-      before <> mkReplacement (match : groups) <> replaceAllWith after pat mkReplacement
-
---------------------------------------------------------------------------------
--- HTTP image generation providers
---------------------------------------------------------------------------------
-
-generateWithCloudflare
-  :: Manager -> Text -> Text -> Text -> Text -> IO (Either Text (LBS.ByteString, Text))
-generateWithCloudflare manager apiToken accountId model prompt = do
-  let url = "https://api.cloudflare.com/client/v4/accounts/"
-            <> T.unpack accountId <> "/ai/run/" <> T.unpack model
-  initReq <- parseRequest url
-  let body = Json.encode $ Json.object
-        [ "prompt" Json..= prompt
-        , "steps"  Json..= (4 :: Int)
-        ]
-      httpReq = initReq
-        { method = "POST"
-        , requestBody = RequestBodyLBS body
-        , requestHeaders =
-            [ ("Authorization", "Bearer " <> TE.encodeUtf8 apiToken)
-            , ("Content-Type", "application/json")
-            ]
-        }
-  resp <- httpLbs httpReq manager
-  let status = statusCode (responseStatus resp)
-  case status of
-    200 -> pure $ parseCloudflareResponse (responseBody resp)
-    code -> pure $ Left $
-      "Cloudflare API error " <> T.pack (show code) <> ": "
-        <> TE.decodeUtf8 (LBS.toStrict (responseBody resp))
-
-parseCloudflareResponse :: LBS.ByteString -> Either Text (LBS.ByteString, Text)
-parseCloudflareResponse body =
-  case Json.eitherDecode body :: Either String Json.Value of
-    Left err -> Left (T.pack err)
-    Right (Json.Object obj) -> do
-      success <- mapLeft T.pack (obj Json..: "success" :: Either String Bool)
-      if not success
-        then Left "Cloudflare image generation failed: success=false"
-        else case lookup "result" obj of
-          Just (Json.Object resultObj) ->
-            case lookup "image" resultObj of
-              Just (Json.String b64) ->
-                case B64.decode (TE.encodeUtf8 b64) of
-                  Left err -> Left ("Base64 decode error: " <> T.pack err)
-                  Right bs -> Right (LBS.fromStrict bs, "image/jpeg")
-              _ -> Left "No image in Cloudflare response"
-          _ -> Left "No result in Cloudflare response"
-    Right _ -> Left "Cloudflare response is not a JSON object"
-
-generateWithHuggingFace
-  :: Manager -> Text -> Text -> Text -> IO (Either Text (LBS.ByteString, Text))
-generateWithHuggingFace manager apiToken model prompt = do
-  let url = "https://router.huggingface.co/hf-inference/models/" <> T.unpack model
-  initReq <- parseRequest url
-  let body = Json.encode $ Json.object [ "inputs" Json..= prompt ]
-      httpReq = initReq
-        { method = "POST"
-        , requestBody = RequestBodyLBS body
-        , requestHeaders =
-            [ ("Authorization", "Bearer " <> TE.encodeUtf8 apiToken)
-            , ("Content-Type", "application/json")
-            ]
-        }
-  resp <- httpLbs httpReq manager
-  let status = statusCode (responseStatus resp)
-  case status of
-    200 ->
-      let contentType = maybe "image/jpeg" (T.takeWhile (/= ';') . TE.decodeUtf8)
-                          (lookup hContentType (responseHeaders resp))
-      in if "image/" `T.isPrefixOf` contentType
-         then pure $ Right (responseBody resp, contentType)
-         else pure $ Left $ "HuggingFace returned non-image response: "
-                <> TE.decodeUtf8 (LBS.toStrict (responseBody resp))
-    code -> pure $ Left $
-      "HuggingFace API error " <> T.pack (show code) <> ": "
-        <> TE.decodeUtf8 (LBS.toStrict (responseBody resp))
-
-generateWithTogether
-  :: Manager -> Text -> Text -> Text -> IO (Either Text (LBS.ByteString, Text))
-generateWithTogether manager apiKey model prompt = do
-  initReq <- parseRequest "https://api.together.ai/v1/images/generations"
-  let body = Json.encode $ Json.object
-        [ "model"           Json..= model
-        , "prompt"          Json..= prompt
-        , "steps"           Json..= (4 :: Int)
-        , "n"               Json..= (1 :: Int)
-        , "response_format" Json..= ("b64_json" :: Text)
-        ]
-      httpReq = initReq
-        { method = "POST"
-        , requestBody = RequestBodyLBS body
-        , requestHeaders =
-            [ ("Authorization", "Bearer " <> TE.encodeUtf8 apiKey)
-            , ("Content-Type", "application/json")
-            ]
-        }
-  resp <- httpLbs httpReq manager
-  let status = statusCode (responseStatus resp)
-  case status of
-    200 -> pure $ parseTogetherResponse (responseBody resp)
-    code -> pure $ Left $
-      "Together API error " <> T.pack (show code) <> ": "
-        <> TE.decodeUtf8 (LBS.toStrict (responseBody resp))
-
-parseTogetherResponse :: LBS.ByteString -> Either Text (LBS.ByteString, Text)
-parseTogetherResponse body =
-  case Json.eitherDecode body :: Either String Json.Value of
-    Left err -> Left (T.pack err)
-    Right (Json.Object obj) ->
-      case lookup "data" obj of
-        Just (Json.Array (Json.Object item : _)) ->
-          case lookup "b64_json" item of
-            Just (Json.String b64) ->
-              case B64.decode (TE.encodeUtf8 b64) of
-                Left err -> Left ("Base64 decode error: " <> T.pack err)
-                Right bs -> Right (LBS.fromStrict bs, "image/jpeg")
-            _ -> Left "No b64_json in Together response"
-        _ -> Left "No data array in Together response"
-    Right _ -> Left "Together response is not a JSON object"
-
-generateWithPollinations
-  :: Manager -> Text -> Text -> IO (Either Text (LBS.ByteString, Text))
-generateWithPollinations manager model prompt = do
-  let encodedPrompt = TE.decodeUtf8 (urlEncode True (TE.encodeUtf8 prompt))
-      encodedModel = TE.decodeUtf8 (urlEncode True (TE.encodeUtf8 model))
-      url = "https://image.pollinations.ai/prompt/" <> T.unpack encodedPrompt
-            <> "?model=" <> T.unpack encodedModel
-            <> "&width=1024&height=1024&nologo=true"
-  initReq <- parseRequest url
-  resp <- httpLbs initReq manager
-  let status = statusCode (responseStatus resp)
-  case status of
-    200 ->
-      let contentType = maybe "image/jpeg" (T.takeWhile (/= ';') . TE.decodeUtf8)
-                          (lookup hContentType (responseHeaders resp))
-      in if "image/" `T.isPrefixOf` contentType
-         then pure $ Right (responseBody resp, contentType)
-         else pure $ Left $ "Pollinations returned non-image response: "
-                <> TE.decodeUtf8 (LBS.toStrict (responseBody resp))
-    code -> pure $ Left $
-      "Pollinations API error " <> T.pack (show code) <> ": "
-        <> TE.decodeUtf8 (LBS.toStrict (responseBody resp))
-
-isImagenModel :: Text -> Bool
-isImagenModel = T.isPrefixOf "imagen-"
-
-generateImageWithGemini
-  :: Manager -> Text -> Text -> Text -> IO (Either Text (LBS.ByteString, Text))
-generateImageWithGemini manager apiKey model prompt
-  | isImagenModel model = generateWithImagen manager apiKey model prompt
-  | otherwise           = generateWithGeminiContent manager apiKey model prompt
-
-generateWithImagen
-  :: Manager -> Text -> Text -> Text -> IO (Either Text (LBS.ByteString, Text))
-generateWithImagen manager apiKey model prompt = do
-  let url = "https://generativelanguage.googleapis.com/v1beta/models/"
-            <> T.unpack model <> ":predict?key=" <> T.unpack apiKey
-  initReq <- parseRequest url
-  let body = Json.encode $ Json.object
-        [ "instances"  Json..= [ Json.object [ "prompt" Json..= prompt ] ]
-        , "parameters" Json..= Json.object [ "sampleCount" Json..= (1 :: Int) ]
-        ]
-      httpReq = initReq
-        { method = "POST"
-        , requestBody = RequestBodyLBS body
-        , requestHeaders = [("Content-Type", "application/json")]
-        }
-  resp <- httpLbs httpReq manager
-  let status = statusCode (responseStatus resp)
-  case status of
-    200 -> pure $ parseImagenResponse (responseBody resp)
-    code -> pure $ Left $
-      "Imagen API returned status " <> T.pack (show code) <> ": "
-        <> TE.decodeUtf8 (LBS.toStrict (responseBody resp))
-
-parseImagenResponse :: LBS.ByteString -> Either Text (LBS.ByteString, Text)
-parseImagenResponse body =
-  case Json.eitherDecode body :: Either String Json.Value of
-    Left err -> Left (T.pack err)
-    Right (Json.Object obj) ->
-      case lookup "predictions" obj of
-        Just (Json.Array (Json.Object pred' : _)) ->
-          case lookup "bytesBase64Encoded" pred' of
-            Just (Json.String b64) ->
-              case B64.decode (TE.encodeUtf8 b64) of
-                Left err -> Left ("Base64 decode error: " <> T.pack err)
-                Right bs ->
-                  let mime = case lookup "mimeType" pred' of
-                        Just (Json.String m) -> m
-                        _                    -> "image/png"
-                  in Right (LBS.fromStrict bs, mime)
-            _ -> Left "No bytesBase64Encoded in Imagen response"
-        _ -> Left "No predictions in Imagen response"
-    Right _ -> Left "Imagen response is not a JSON object"
-
-generateWithGeminiContent
-  :: Manager -> Text -> Text -> Text -> IO (Either Text (LBS.ByteString, Text))
-generateWithGeminiContent manager apiKey model prompt = do
-  let url = "https://generativelanguage.googleapis.com/v1beta/models/"
-            <> T.unpack model <> ":generateContent?key=" <> T.unpack apiKey
-  initReq <- parseRequest url
-  let body = Json.encode $ Json.object
-        [ "contents" Json..=
-            [ Json.object [ "parts" Json..= [ Json.object [ "text" Json..= prompt ] ] ] ]
-        , "generationConfig" Json..= Json.object
-            [ "responseModalities" Json..= (["IMAGE"] :: [Text]) ]
-        ]
-      httpReq = initReq
-        { method = "POST"
-        , requestBody = RequestBodyLBS body
-        , requestHeaders = [("Content-Type", "application/json")]
-        }
-  resp <- httpLbs httpReq manager
-  let status = statusCode (responseStatus resp)
-  case status of
-    200 -> pure $ parseGeminiImageResponse (responseBody resp)
-    code -> pure $ Left $
-      "Gemini image API returned status " <> T.pack (show code) <> ": "
-        <> TE.decodeUtf8 (LBS.toStrict (responseBody resp))
-
-parseGeminiImageResponse :: LBS.ByteString -> Either Text (LBS.ByteString, Text)
-parseGeminiImageResponse body =
-  case Json.eitherDecode body :: Either String Json.Value of
-    Left err -> Left (T.pack err)
-    Right (Json.Object obj) ->
-      case lookup "candidates" obj of
-        Just (Json.Array (Json.Object cand : _)) ->
-          case lookup "content" cand of
-            Just (Json.Object contentObj) ->
-              case lookup "parts" contentObj of
-                Just (Json.Array parts) -> findInlineData parts
-                _ -> Left "No parts in Gemini image response"
-            _ -> Left "No content in candidate"
-        _ -> Left "No candidates in Gemini image response"
-    Right _ -> Left "Gemini image response is not a JSON object"
-
-findInlineData :: [Json.Value] -> Either Text (LBS.ByteString, Text)
-findInlineData [] = Left "No image generated"
-findInlineData (Json.Object partObj : rest) =
-  case lookup "inlineData" partObj of
-    Just (Json.Object inlineObj) ->
-      case lookup "data" inlineObj of
-        Just (Json.String b64) ->
-          case B64.decode (TE.encodeUtf8 b64) of
-            Left err -> Left ("Base64 decode error: " <> T.pack err)
-            Right bs ->
-              let mime = case lookup "mimeType" inlineObj of
-                    Just (Json.String m) -> m
-                    _                    -> "image/png"
-              in Right (LBS.fromStrict bs, mime)
-        _ -> findInlineData rest
-    _ -> findInlineData rest
-findInlineData (_ : rest) = findInlineData rest
-
---------------------------------------------------------------------------------
--- Gemini content describer
---------------------------------------------------------------------------------
-
-describeImageWithGemini
-  :: Manager -> Text -> Gemini.Model -> Text -> IO (Either Text Text)
-describeImageWithGemini manager apiKey model content = do
-  let fullPrompt = imageDescriptionSystemPrompt <> "\n\n" <> content
-      req = Gemini.Request
-        { Gemini.grPrompt = fullPrompt
-        , Gemini.grModel = model
-        , Gemini.grApiKey = Secret apiKey
-        , Gemini.grGenerationConfig = Gemini.defaultGenerationConfig
-        }
-  result <- Gemini.generateContent manager req
-  case result of
-    Right response -> pure $ Right (Gemini.responseText response)
-    Left _err  -> do
-      putStrLn $ "⚠️ " <> T.unpack (Gemini.modelToText model) <> " failed for image description, trying fallback..."
-      let fallbackModel = geminiModelFallback model
-      let fallbackReq = req { Gemini.grModel = fallbackModel }
-      fallbackResult <- Gemini.generateContent manager fallbackReq
-      case fallbackResult of
-        Right response -> pure $ Right (Gemini.responseText response)
-        Left err   -> pure $ Left (T.pack (show err))
-
-geminiModelFallback :: Gemini.Model -> Gemini.Model
-geminiModelFallback Gemini.Gemini3Flash       = Gemini.Gemini25Flash
-geminiModelFallback Gemini.Gemini31FlashLite  = Gemini.Gemini25Flash
-geminiModelFallback Gemini.Gemini31FlashImage = Gemini.Gemini25Flash
-geminiModelFallback _                         = Gemini.Gemini20Flash
-
---------------------------------------------------------------------------------
--- Provider dispatch
---------------------------------------------------------------------------------
-
-generateImage :: Manager -> ImageProviderConfig -> Text -> IO (Either Text (LBS.ByteString, Text))
-generateImage manager config prompt =
-  let key = unSecret (ipcApiKey config)
-      mdl = ipcModel config
-  in case ipcProvider config of
-    Cloudflare accountId -> generateWithCloudflare manager key accountId mdl prompt
-    HuggingFace          -> generateWithHuggingFace manager key mdl prompt
-    Together             -> generateWithTogether manager key mdl prompt
-    Pollinations         -> generateWithPollinations manager mdl prompt
-    GeminiImage          -> generateImageWithGemini manager key mdl prompt
-
-describeContent :: Manager -> PromptDescriber -> Text -> IO (Either Text Text)
-describeContent manager describer =
-  describeImageWithGemini manager (unSecret (describerApiKey describer)) (describerModel describer)
-
---------------------------------------------------------------------------------
--- Provider resolution
---------------------------------------------------------------------------------
-
-resolveImageProviders :: Map Text Text -> [ImageProviderConfig]
-resolveImageProviders env =
-  let geminiKey = Map.lookup "GEMINI_API_KEY" env
-      describerModel = maybe defaultDescriberModel Gemini.modelFromText (Map.lookup "PROMPT_DESCRIBER_MODEL" env)
-      describer = fmap (\key -> PromptDescriber (Secret key) describerModel) geminiKey
-  in catMaybes
-    [ mkCloudflareProvider env describer
-    , mkHuggingFaceProvider env describer
-    , mkTogetherProvider env describer
-    , mkPollinationsProvider env describer
-    , mkGeminiProvider env describer
-    ]
-
-mkCloudflareProvider :: Map Text Text -> Maybe PromptDescriber -> Maybe ImageProviderConfig
-mkCloudflareProvider env describer = do
-  cfToken <- Map.lookup "CLOUDFLARE_API_TOKEN" env
-  cfAccountId <- Map.lookup "CLOUDFLARE_ACCOUNT_ID" env
-  let cfModel = fromMaybe "@cf/black-forest-labs/flux-1-schnell" (Map.lookup "CLOUDFLARE_IMAGE_MODEL" env)
-  pure ImageProviderConfig
-    { ipcProvider = Cloudflare cfAccountId
-    , ipcApiKey = Secret cfToken
-    , ipcModel = cfModel
-    , ipcDescriber = describer
-    }
-
-mkHuggingFaceProvider :: Map Text Text -> Maybe PromptDescriber -> Maybe ImageProviderConfig
-mkHuggingFaceProvider env describer = do
-  hfToken <- Map.lookup "HUGGINGFACE_API_TOKEN" env
-  let hfModel = fromMaybe "black-forest-labs/FLUX.1-schnell" (Map.lookup "HUGGINGFACE_IMAGE_MODEL" env)
-  pure ImageProviderConfig
-    { ipcProvider = HuggingFace
-    , ipcApiKey = Secret hfToken
-    , ipcModel = hfModel
-    , ipcDescriber = describer
-    }
-
-mkTogetherProvider :: Map Text Text -> Maybe PromptDescriber -> Maybe ImageProviderConfig
-mkTogetherProvider env describer = do
-  togetherKey <- Map.lookup "TOGETHER_API_TOKEN" env
-  let togetherModel = fromMaybe "black-forest-labs/FLUX.1-schnell-Free" (Map.lookup "TOGETHER_IMAGE_MODEL" env)
-  pure ImageProviderConfig
-    { ipcProvider = Together
-    , ipcApiKey = Secret togetherKey
-    , ipcModel = togetherModel
-    , ipcDescriber = describer
-    }
-
-mkPollinationsProvider :: Map Text Text -> Maybe PromptDescriber -> Maybe ImageProviderConfig
-mkPollinationsProvider env describer =
-  case Map.lookup "POLLINATIONS_ENABLED" env of
-    Just "true" ->
-      let polModel = fromMaybe "flux" (Map.lookup "POLLINATIONS_IMAGE_MODEL" env)
-      in Just ImageProviderConfig
-        { ipcProvider = Pollinations
-        , ipcApiKey = Secret ""
-        , ipcModel = polModel
-        , ipcDescriber = describer
-        }
-    _ -> Nothing
-
-mkGeminiProvider :: Map Text Text -> Maybe PromptDescriber -> Maybe ImageProviderConfig
-mkGeminiProvider env describer = do
-  geminiKey <- Map.lookup "GEMINI_API_KEY" env
-  let geminiModel = maybe Gemini.Gemini31FlashImage Gemini.modelFromText (Map.lookup "IMAGE_GEMINI_MODEL" env)
-  pure ImageProviderConfig
-    { ipcProvider = GeminiImage
-    , ipcApiKey = Secret geminiKey
-    , ipcModel = Gemini.modelToText geminiModel
-    , ipcDescriber = describer
-    }
-
---------------------------------------------------------------------------------
--- File I/O: resolveUniqueImageName
---------------------------------------------------------------------------------
 
 resolveUniqueImageName :: Text -> Text -> FilePath -> IO Text
 resolveUniqueImageName baseName extension attachmentsDir = do
@@ -1015,10 +221,6 @@ resolveUniqueImageName baseName extension attachmentsDir = do
       if not exists
         then pure name
         else findUnique (n + 1)
-
---------------------------------------------------------------------------------
--- processNote
---------------------------------------------------------------------------------
 
 processNote :: Manager -> ImageProviderConfig -> FilePath -> FilePath -> IO ImageGenerationResult
 processNote manager provider notePath attachmentsDir = do
@@ -1092,10 +294,6 @@ formatTimestamp :: IO Text
 formatTimestamp =
   T.pack . formatTime defaultTimeLocale "%Y-%m-%dT%H:%M:%SZ" <$> getCurrentTime
 
---------------------------------------------------------------------------------
--- backfillImages
---------------------------------------------------------------------------------
-
 backfillImages :: Manager -> BackfillConfig -> IO BackfillResult
 backfillImages manager config = do
   today <- todayPacificDay
@@ -1128,21 +326,6 @@ collectFromDirectory repoRoot today directory = do
     else do
       putStrLn $ "📁 Directory missing: " <> T.unpack (contentDirectoryToText directory)
       pure []
-
-checkCandidateEligibility :: ContentDirectory -> Day -> Text -> Text -> CandidateEligibility
-checkCandidateEligibility directory today filename content =
-  case parseDateFromFilename filename of
-    Just fileDate
-      | directory == Reflections && fileDate > today -> Ineligible FutureReflection
-    fileDate ->
-      let requiresRegeneration = shouldRegenerateImage content
-          untitledReflection = directory == Reflections
-            && maybe False (isDateOnlyTitle content) fileDate
-      in if untitledReflection
-         then Ineligible UntitledReflection
-         else if hasEmbeddedImage content && not requiresRegeneration
-              then Ineligible AlreadyHasImage
-              else Eligible requiresRegeneration
 
 checkCandidate :: FilePath -> ContentDirectory -> Day -> Text -> IO [BackfillCandidate]
 checkCandidate directoryPath directory today filename = do
@@ -1256,10 +439,6 @@ safeIO action =
     handler :: SomeException -> IO (Either Text a)
     handler e = pure $ Left $ T.pack (show e)
 
---------------------------------------------------------------------------------
--- Sync directories
---------------------------------------------------------------------------------
-
 syncAttachmentsDir :: FilePath -> FilePath -> IO ()
 syncAttachmentsDir srcDir dstDir = do
   srcExists <- doesDirectoryExist srcDir
@@ -1281,11 +460,3 @@ isImageFile :: FilePath -> Bool
 isImageFile f =
   let ext = fmap toLower (takeExtension f)
   in ext `elem` [".jpg", ".jpeg", ".png", ".gif", ".webp"]
-
---------------------------------------------------------------------------------
--- Internal helpers
---------------------------------------------------------------------------------
-
-mapLeft :: (a -> b) -> Either a c -> Either b c
-mapLeft f (Left a)  = Left (f a)
-mapLeft _ (Right c) = Right c

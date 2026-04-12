@@ -7,9 +7,13 @@ URL: https://bagrounds.org/bot-chats/forecasting-parenthood
 link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-11T00:00:00Z
 force_analyze_links: false
+image_date: 2026-04-11T22:16:12Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: An ethereal, double-exposure illustration blending the concepts of analytical prediction and child development. In the foreground, a stylized, translucent silhouette of a pregnant person glows softly, their form filled with a swirling galaxy of constellations and interconnected data points. Emerging from within this silhouette, a vibrant, lush plant grows upward, its leaves unfolding like pages of a book. Surrounding the figure, delicate geometric overlays—faint grid lines, subtle probability bell curves, and glowing nodes—represent the forecasting aspect. The background is a soft, warm gradient shifting from deep twilight blue to a gentle, hopeful sunrise gold. The overall aesthetic is sophisticated, modern, and serene, suggesting a balance between the precision of scientific data and the organic, unpredictable nature of raising a child.
 ---
 [Home](../index.md) > [Bot Chats](./index.md)  
 # 🤰🏼⏰👶🏼🔮 Forecasting Parenthood  
+![bot-chats-forecasting-parenthood](../bot-chats-forecasting-parenthood.jpg)  
 ## 💬 [Gemini](../software/gemini.md) Prompt 1  
 > 📚 Pick two books randomly from [📚 Books](../books/index.md)  
   

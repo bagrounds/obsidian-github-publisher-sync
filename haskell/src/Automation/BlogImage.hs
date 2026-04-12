@@ -51,6 +51,7 @@ module Automation.BlogImage
   , resolveUniqueImageName
   , sanitizeForYaml
   , shouldRegenerateImage
+  , undatedFileFallback
   ) where
 
 import Control.Exception (SomeException, catch)
@@ -62,7 +63,7 @@ import Data.Maybe (fromMaybe)
 import Data.Text (Text)
 import qualified Data.Text as T
 import qualified Data.Text.IO as TIO
-import Data.Time (Day, defaultTimeLocale, formatTime, getCurrentTime)
+import Data.Time (Day, defaultTimeLocale, formatTime, fromGregorian, getCurrentTime)
 import Network.HTTP.Client (Manager)
 import System.Directory
   ( copyFile
@@ -338,7 +339,10 @@ checkCandidate directoryPath directory today filename = do
       case checkCandidateEligibility directory today filename content of
         Ineligible _              -> pure []
         Eligible requiresRegeneration -> pure [BackfillCandidate filePath directory filename
-                                    (fromMaybe today fileDate) requiresRegeneration]
+                                    (fromMaybe undatedFileFallback fileDate) requiresRegeneration]
+
+undatedFileFallback :: Day
+undatedFileFallback = fromGregorian 1970 1 1
 
 sortByDateDesc :: [BackfillCandidate] -> [BackfillCandidate]
 sortByDateDesc = foldl' insertSorted []

@@ -554,6 +554,7 @@ tests = testGroup "BlogImage"
   , parseDateFromFilenameTests
   , contentDirectoryTests
   , checkCandidateEligibilityTests
+  , undatedFileFallbackTests
   ]
 
 parseDateFromFilenameTests :: TestTree
@@ -624,4 +625,17 @@ checkCandidateEligibilityTests = testGroup "checkCandidateEligibility"
       checkCandidateEligibility Books (fromGregorian 2026 4 8) "2026-04-09-future.md"
         "---\ntitle: Future Post\n---\nbody"
         @?= Eligible False
+  ]
+
+undatedFileFallbackTests :: TestTree
+undatedFileFallbackTests = testGroup "undatedFileFallback"
+  [ testCase "is 1970-01-01" $
+      undatedFileFallback @?= fromGregorian 1970 1 1
+
+  , testCase "sorts after any modern date" $
+      (undatedFileFallback < fromGregorian 2020 1 1) @?= True
+
+  , testCase "ensures dated content sorts before undated in backfill" $
+      let today = fromGregorian 2026 4 11
+      in (today > undatedFileFallback) @?= True
   ]

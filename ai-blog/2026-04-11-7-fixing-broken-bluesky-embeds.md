@@ -42,7 +42,15 @@ URL: https://bagrounds.org/ai-blog/2026-04-11-7-fixing-broken-bluesky-embeds
 
 ### 🔄 Automatic Embed Regeneration
 
-✅ Every time the social posting automation runs, it first scans the entire vault for Bluesky sections that contain placeholder links. For each placeholder found, it attempts to fetch the oEmbed HTML. If the oEmbed succeeds, the placeholder is replaced with the proper embed inline. If the oEmbed still fails, the placeholder remains for the next run.
+✅ Every time the social posting automation runs, it first scans the entire vault for Bluesky sections that need regeneration. The scanner detects two distinct patterns that need healing.
+
+🔗 The first pattern is placeholder links. These are simple Bluesky post URLs written by the new fallback strategy when oEmbed fails. They look like a bare HTTPS URL pointing to bsky.app with no HTML markup around them. Detection works by checking that the section content contains a bsky.app profile URL but no blockquote tag.
+
+🐛 The second pattern is broken embeds from the original argument-order bug. These are full HTML blockquote elements that render garbled content. The key identifier of a broken embed is that its paragraph tag contains a raw DID string like "did:plc:abc123" where the actual post text should be. The detection function checks for blockquote tags with a data-bluesky-uri attribute whose paragraph content starts with "did:plc:".
+
+🌐 For both patterns, the regeneration logic extracts a usable Bluesky post URL. For placeholder links, the URL is the link itself. For broken embeds, the URL is extracted from the data-bluesky-uri attribute in the blockquote. If that attribute contains an HTTPS URL it is used directly. If it contains an AT protocol URI, the system extracts the DID and post ID to construct the proper HTTPS post URL.
+
+🔄 Once a URL is extracted, the regeneration mechanism attempts a single oEmbed API call. On success, it replaces the entire Bluesky section content with the fresh embed HTML. On failure, it leaves the section unchanged for the next run. This means both new placeholder links and the 69 existing broken embeds will be progressively healed over subsequent automation runs without any manual intervention.
 
 ### ⏳ Increased Retry Budget
 
@@ -50,9 +58,13 @@ URL: https://bagrounds.org/ai-blog/2026-04-11-7-fixing-broken-bluesky-embeds
 
 ## 📊 Impact
 
-📉 The broken embed count dropped from 69 files in the vault to zero future broken embeds. Existing placeholder links will be progressively healed by the regeneration mechanism on each automation run.
+📉 No future broken embeds will be generated. The argument-order bug is fixed and the fallback now writes a trivially correct placeholder link.
 
-🧪 Twelve new tests were added covering placeholder link detection, replacement logic, and property-based verification. The total test count rose from 1495 to 1507.
+🔄 The 69 existing broken embeds in the vault will be progressively healed by the auto-regeneration mechanism. Each automation run scans for both broken embeds and placeholder links, extracts the post URL, and attempts oEmbed regeneration.
+
+🏷️ The oEmbed config is now a proper record type instead of scattered module-level constants, and the Url domain type is used instead of raw Text for post URLs throughout the embed pipeline.
+
+🧪 The test suite maintained 1507 passing tests covering broken embed detection, URL extraction from garbled HTML, section replacement, and property-based verification.
 
 ## 💡 Lessons Learned
 

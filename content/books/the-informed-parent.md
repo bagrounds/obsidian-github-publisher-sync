@@ -11,9 +11,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-02T00:00:00Z
 force_analyze_links: false
 updated: 2026-04-02T15:33:59
+image_date: 2026-04-13T21:27:35Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A clean, minimalist flat-lay composition on a soft, neutral-toned desk surface. In the center, a pair of modern reading glasses rests atop an open hardcover book with visible diagrams and charts, suggesting data-driven research. Surrounding the book are subtle, stylized icons representing early childhood—a single wooden building block, a small sprout in a ceramic pot, and a clean, modern stethoscope. The color palette is composed of soft teals, warm ochres, and crisp whites. The lighting is bright and even, casting soft shadows to create depth and a sense of calm, intellectual clarity. The overall aesthetic is professional yet inviting, emphasizing the intersection of scientific rigor and the warmth of parenthood.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🤓👩‍👦 The Informed Parent: A Science-Based Resource for Your Child's First Four Years  
+![books-the-informed-parent](../books-the-informed-parent.jpg)  
 [🛒 The Informed Parent: A Science-Based Resource for Your Child's First Four Years. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4jrvRVZ)  
   
 ## 🤖 AI Summary  

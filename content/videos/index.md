@@ -5,10 +5,10 @@ aliases:
 title: 📺 Videos
 URL: https://bagrounds.org/videos
 backlinks: false
-updated: 2026-04-13T14:08:24-07:00
+updated: 2026-04-13T14:32:22-07:00
 ---
 [Home](../index.md)  
-# 📺 Videos (747)  
+# 📺 Videos (749)  
 - [💰🤑🤖💡🚀💲 $0.10/Month Runs My Entire AI Life. I'll Show You How.](./0-10-month-runs-my-entire-ai-life-ill-show-you-how.md)  
 - [📊📈📉📃👁️ 10 Charts to Understand the 900 Page Budget Bill](./10-charts-to-understand-the-900-page-budget-bill.md)  
 - [🤖🔗⬆️✅ 12-Factor Agents: Patterns of reliable LLM applications — Dex Horthy, HumanLayer](./12-factor-agents-patterns-of-reliable-llm-applications-dex-horthy-humanlayer.md)  
@@ -212,6 +212,7 @@ updated: 2026-04-13T14:08:24-07:00
 - [🇫🇮🇪🇺🗣️🌍🇺🇸💥🇮🇷⚔️🇺🇦 FULL DISCUSSION: Finland President Stubb Slams Brexit, Talks Trump, Iran War, Ukraine, EU | AC1G](./full-discussion-finland-president-stubb-slams-brexit-talks-trump-iran-war-ukraine-eu-ac1g.md)  
 - [🗣️⚔️🏛️ FULL DISCUSSION: Gavin Newsom Slams Trump’s Authoritarianism in Explosive WEF Interview | AC1G](./full-discussion-gavin-newsom-slams-trumps-authoritarianism-in-explosive-wef-interview-ac1g.md)  
 - [🤖🗣️🏛️⚔️📰 Full interview: Anthropic CEO responds to Trump order, Pentagon clash](./full-interview-anthropic-ceo-responds-to-trump-order-pentagon-clash.md)  
+- [🎙️🇪🇺🗳️🇮🇷⚔️🌊🚨 FULL PRESSER: EU’s von der Leyen Speaks on Hungary Election, Iran War & Strait of Hormuz Crisis|AC1B](./full-presser-eus-von-der-leyen-speaks-on-hungary-election-iran-war-strait-of-hormuz-crisis-ac1b.md)  
 - [🪴🧟❌🔬 Garden Zombies: Bogus Gardening Practices That Will Not Die w/ Dr. Linda Chalker-Scott, Ph.D – SCHS](./garden-zombies-bogus-gardening-practices-that-will-not-die-w-dr-linda-chalker-scott-ph-d-schs.md)  
 - [💭🧠💥 George Saunders Says Breaking These 3 Delusions Can Save You | The Interview](./george-saunders-says-breaking-these-3-delusions-can-save-you-the-interview.md)  
 - [🌋☀️🚀 Geothermal energy’s massive leap forward](./geothermal-energys-massive-leap-forward.md)  
@@ -407,6 +408,7 @@ updated: 2026-04-13T14:08:24-07:00
 - [🇺🇸🎂🎉🤔 Okay, But Why Do We Celebrate the 4th of July?](./okay-but-why-do-we-celebrate-the-4th-of-july.md)  
 - [💻🤖🏠📚 Ollama Course – Build AI Apps Locally](./ollama-course-build-ai-apps-locally.md)  
 - [❌🤔💡 On being wrong | Kathryn Schulz](./on-being-wrong-kathryn-schulz.md)  
+- [💰⚖️💡➡️ One State Found a Way to Make Billionaires Pay. Your State Could Be Next.](./one-state-found-a-way-to-make-billionaires-pay-your-state-could-be-next.md)  
 - [🤖⏱️🧠👨‍💻 OpenClaw's Creator Uses AI to Run His Life in 40 Minutes | Peter Steinberger](./how-openclaws-creator-uses-ai-to-run-his-life-in-40-minutes-peter-steinberger.md)  
 - [Optimizing Webservers for High Throughput and Low Latency | Dropbox](./optimizing-webservers-for-high-throughput-and-low-latency-dropbox.md)  
 - [👩‍⚖️🛑🇺🇸🏛️ Oregon governor calls Trump's actions 'an abuse of power and threat to our democracy'](./oregon-governor-calls-trumps-actions-an-abuse-of-power-and-threat-to-our-democracy.md)  

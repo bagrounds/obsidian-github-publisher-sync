@@ -10,9 +10,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-02T00:00:00Z
 force_analyze_links: false
 updated: 2026-04-02T11:26:03
+image_date: 2026-04-13T18:32:33Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A high-angle, minimalist illustration featuring a clean, isometric workspace. At the center, an open book glows with soft, ethereal light emanating from its pages. Floating just above the book are translucent, interconnected geometric nodes and neural network lines, representing abstract data and language structures. The color palette is composed of deep navy, cool slate, and vibrant electric blue accents. Surrounding the book are subtle, stylized icons representing text bubbles, code brackets, and a small, friendly, stylized robot silhouette. The background is a soft, matte off-white, providing a sharp, professional contrast that emphasizes the technical yet creative nature of large language models. The overall aesthetic is modern, sleek, and intellectually stimulating.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🤖🗣️ Hands-On Large Language Models: Language Understanding and Generation  
+![books-hands-on-large-language-models-language-understanding-and-generation](../books-hands-on-large-language-models-language-understanding-and-generation.jpg)  
 [🛒 Hands-On Large Language Models: Language Understanding and Generation. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4f2wnct)  
   
 ## 📚 Book Report: Hands-On Large Language Models: Language Understanding and Generation  

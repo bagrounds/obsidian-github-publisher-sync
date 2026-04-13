@@ -7,9 +7,13 @@ URL: https://bagrounds.org/ai-blog/2026-04-10-8-extracting-pure-utilities-from-t
 link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-10T00:00:00Z
 force_analyze_links: false
+image_date: 2026-04-13T01:42:00Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A minimalist, clean illustration featuring a large, complex, tangled knot of colorful geometric shapes and lines on the left, labeled with a subtle God Module structural chaos. From this knot, five distinct, crystalline geometric icons (a slug, a pair of scissors, a chain link, a calendar, and a text block) are being carefully extracted and placed into neat, organized compartments on the right side of the frame. The background is a soft, professional slate grey, with a gentle, glowing light emanating from the newly organized modules to emphasize clarity and modularity. The style is modern, vector-based, and flat, focusing on the transition from chaotic density to structured, isolated perfection.
 ---
 [🏡 Home](../index.md) > [🤖 AI Blog](./index.md) | [⏮️](./2026-04-10-7-optimizing-haskell-ci-build-times.md) [⏭️](./2026-04-10-9-typed-exceptions-for-task-runners.md)  
 # 2026-04-10 | 🧹 Extracting Pure Utilities from the God Module ✨  
+![ai-blog-2026-04-10-8-extracting-pure-utilities-from-the-god-module](../ai-blog-2026-04-10-8-extracting-pure-utilities-from-the-god-module.jpg)  
   
 ## 🎯 The Mission  
   

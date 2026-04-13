@@ -50,7 +50,7 @@ URL: https://bagrounds.org/ai-blog/2026-04-12-6-forward-compatible-image-backfil
 
 ### 📖 Similar
 * Domain-Driven Design by Eric Evans is relevant because this change exemplifies the tension between static domain types and dynamic configuration, a core DDD concern about when to use value objects versus raw identifiers.
-* Designing Data-Intensive Applications by Martin Klemperer is relevant because the race condition fix addresses a classic distributed systems problem where eventual consistency between pipeline stages requires explicit synchronization.
+* Designing Data-Intensive Applications by Martin Kleppmann is relevant because the race condition fix addresses a classic distributed systems problem where eventual consistency between pipeline stages requires explicit synchronization.
 
 ### ↔️ Contrasting
 * Types and Programming Languages by Benjamin C. Pierce offers the theoretical foundation for why sum types work well for closed sets, providing the counterpoint to this change where we removed a sum type because the set was actually open.

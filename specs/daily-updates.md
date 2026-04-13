@@ -6,7 +6,8 @@
 🔁 Replaces the old "breadcrumb trail" strategy that updated `updated` frontmatter timestamps along BFS paths.
 📱 Optimized for Obsidian mobile — a single glance at the reflection reveals every file touched today.
 🧩 Fully idempotent — links and details already present are silently skipped.
-📂 Updates are organized by page, with each page listing its changes as indented sub-bullets.
+📊 A stats line at the top summarizes total counts per update type.
+📐 Updates are rendered as a compact markdown table with one row per page and emoji column headers.
 
 ## 🏗️ Architecture
 
@@ -14,17 +15,17 @@
 
 | 🧩 Component | 📂 Path | 📝 Purpose |
 |---|---|---|
-| 📚 Library | `haskell/src/Automation/DailyUpdates.hs` | 🔧 Pure functions for building and inserting page-based update links with detail sub-bullets |
-| 🧪 Tests | `haskell/test/Automation/DailyUpdatesTest.hs` | ✅ Tests covering page-based update links |
-| 🔌 Consumers | `haskell/src/Automation/SocialPosting.hs` | 📢 Adds platform-specific details after social media posting |
-| 🔌 Consumers | `haskell/app/RunScheduled.hs` | 🖼️🔗 Adds details after backfill-blog-images and internal-linking |
+| 📚 Library | `haskell/src/Automation/DailyUpdates.hs` | 🔧 Typed update details, parse/merge/render pipeline for table-format updates |
+| 🧪 Tests | `haskell/test/Automation/DailyUpdatesTest.hs` | ✅ Tests covering table format, stats, migration, idempotency |
+| 🔌 Consumers | `haskell/src/Automation/SocialPosting.hs` | 📢 Adds `PostedTo` details after social media posting |
+| 🔌 Consumers | `haskell/app/RunScheduled.hs` | 🖼️🔗 Adds `ImageAdded` and `InternalLinksAdded` details |
 
 ### 🔄 Data Flow
 
 ```
 🖼️ backfill-blog-images / 🔗 internal-linking / 📢 auto-post
          ↓
-📂 Collect modified file paths + build detail descriptions
+📂 Collect modified file paths + build typed UpdateDetail values
          ↓
 🔧 addUpdateLinksToReflection(reflectionsDir, date, [UpdateLink])
          ↓
@@ -32,68 +33,62 @@
          ↓
 📄 Read today's reflection note
          ↓
-🧩 addUpdateLinks(content, links)
-   ├── 📌 Create ## 🔄 Updates section if missing
-   ├── 📂 Create page entry if missing
-   ├── ➕ Append new detail sub-bullets under page entry (skip duplicates)
+🧩 addUpdateLinks(content, links) — parse → merge → render pipeline
+   ├── 📖 Parse existing updates section (table or legacy bullet format)
+   ├── 🔀 Merge new entries with existing (per-page, per-column)
+   ├── 📊 Compute stats line from merged entries
+   ├── 📐 Render as markdown table with only active columns
    └── 📍 Place section before social media embeds
          ↓
 💾 Write updated reflection note
 ```
 
-## 📂 Update Details by Source
+## 🏷️ Update Detail Types
 
-🏷️ Each `UpdateLink` carries a list of detail descriptions that appear as indented sub-bullets under the page link:
+📦 Each `UpdateLink` carries a list of typed `UpdateDetail` values (ADT, not free-text strings):
 
-| 🏷️ Source | 📝 Detail Text | 📋 Used By |
-|---|---|---|
-| Image backfill | `🖼️ added image` | backfill-blog-images |
-| Internal linking | `🔗 added N internal link(s)` (e.g., `🔗 added 1 internal link` or `🔗 added 2 internal links`) | internal-linking (count from FileResult) |
-| Social posting | `🦋 posted to BlueSky`, `🐘 posted to Mastodon`, `🐦 posted to Twitter` | auto-post (from `PostedNote.pnPlatforms` — only newly-posted platforms, not pre-existing) |
+| 🏷️ Constructor | 📝 Description | 📋 Source | 🔣 Column Emoji |
+|---|---|---|---|
+| `ImageAdded` | An image was added to the page | backfill-blog-images | 🖼️ |
+| `InternalLinksAdded Int` | N internal links were added | internal-linking | 🔗 |
+| `PostedTo Bluesky` | Page was posted to Bluesky | auto-post | 🦋 |
+| `PostedTo Mastodon` | Page was posted to Mastodon | auto-post | 🐘 |
+| `PostedTo Twitter` | Page was posted to Twitter | auto-post | 🐦 |
 
-📄 Example reflection with page-based updates:
+📄 Example reflection with table-format updates:
 
 ```markdown
 ## 🔄 Updates
-- [[ai-blog/2026-03-28-my-post|2026-03-28 | 📝 My Post 🤖]]
-  - 🖼️ added image
-  - 🦋 posted to BlueSky
-  - 🐘 posted to Mastodon
-  - 🔗 added 2 internal links
-- [[books/some-book|Some Book]]
-  - 🦋 posted to BlueSky
+📊 3 pages · 2 🖼️ · 5 🔗 · 2 🦋 · 1 🐘
+
+| Page | 🖼️ | 🔗 | 🦋 | 🐘 |
+|---|---|---|---|---|
+| [[ai-blog/2026-03-28-my-post|2026-03-28 | 📝 My Post 🤖]] | ✓ | 2 | ✓ | ✓ |
+| [[books/some-book|Some Book]] | ✓ | 3 | ✓ |  |
+| [[ai-fiction/chapter-5|Chapter 5]] |  |  |  | ✓ |
 ```
 
-## 🆚 Old vs New Strategy
+## 📐 Table Format
 
-| 📏 Aspect | ❌ Breadcrumb Trail (Old) | ✅ Updates Section (New) |
-|---|---|---|
-| 📍 Where | `updated` timestamp in each file along BFS path | `## 🔄 Updates` section in daily reflection |
-| 📱 Discoverability | Must search vault for recently-updated timestamps | One section in today's reflection |
-| 🔧 Complexity | BFS traversal to propagate timestamps | Simple append of wiki links |
-| 🧩 Idempotency | Timestamp comparison | Detail-text deduplication |
-| 📊 Scope | Touches many files across the vault | Touches only the reflection note |
+📊 The stats line appears directly below the section header, showing total page count and per-type counts (only non-zero types). Internal link counts are summed across all pages; other types count the number of pages with that detail.
 
-## 🔗 Link Format
+📐 Only columns with at least one entry are shown. Column headers are single emojis for compact width. Cell values are checkmarks for boolean types or counts for internal links.
 
-📝 Each page appears once as a top-level list item with its title as display text, followed by indented detail sub-bullets:
+🔢 Canonical column ordering: 🖼️ → 🔗 → 🦋 → 🐘 → 🐦
 
-```markdown
-- [[path/to/file|File Title]]
-  - 🖼️ added image
-  - 🦋 posted to BlueSky
-```
+## 🔀 Merge Behavior
 
-📄 The title is extracted from the linked-to file's frontmatter `title` field, which matches the note's alias. Falls back to the filename if no title is found.
-📢 Social posting links use the specific page title from the `ContentNote` rather than a generic label.
+🔄 When the same page receives updates from different operations (e.g., image backfill then social posting), details merge into the same table row:
+- `ImageAdded` + `ImageAdded` = `ImageAdded` (idempotent)
+- `InternalLinksAdded a` + `InternalLinksAdded b` = `InternalLinksAdded (a + b)` (additive)
+- `PostedTo p` + `PostedTo p` = `PostedTo p` (idempotent)
+
+📖 Legacy bullet-format sections are automatically migrated to table format on the next update.
 
 ## 📍 Section Placement
 
 📌 The `## 🔄 Updates` section is placed **before** social media embed sections (`## 🐦 Tweet`, `## 🦋 Bluesky`, `## 🐘 Mastodon`) if they exist, otherwise at the **end** of the reflection note.
-📂 Within the updates section, each page gets its own `- [[path|title]]` entry with detail sub-bullets.
-🔄 If the section or page entry already exists, new details are appended as indented sub-bullets.
 🆕 If the section does not exist, it is created before social media sections (or at the end if none exist).
-🆕 If a page is not yet listed, it is appended at the end of the updates section.
 📐 Page ordering from top to bottom: content sections, Updates section, social media sections.
 
 ## 🔧 Key Functions
@@ -102,27 +97,33 @@
 
 | 🔧 Function | 📝 Purpose |
 |---|---|
-| `buildUpdateLink(filePath, title)` | 🔗 Creates a `- [[path\|title]]` wiki link line |
-| `buildPageEntry(path, title, details)` | 📋 Creates a page link line plus indented detail sub-bullets |
-| `addUpdateLinks(content, links)` | 📎 Inserts page-based update links with details into reflection content, skipping duplicates |
+| `addUpdateLinks(content, links)` | 📎 Parse existing section → merge new entries → render table with stats |
 
 ### 💾 I/O Functions
 
 | 🔧 Function | 📝 Purpose |
 |---|---|
-| `extractTitleFromFile(filePath)` | 📄 Reads a file and extracts its title from frontmatter or H1 |
+| `extractTitleFromFile(filePath)` | 📄 Reads a file and extracts its title from frontmatter |
 | `addUpdateLinksToReflection(reflectionsDir, date, links)` | 🎯 Orchestrator: ensure reflection exists → insert links with details → write |
 
 ## 🛡️ Idempotency
 
 ✅ All operations are idempotent:
-- 🔗 Detail deduplication is **per-page**: the same detail text (e.g., `🖼️ added image`) can appear under multiple pages without cross-page interference. Only exact duplicates under the **same** page entry are skipped.
-- 📌 Section and page entry creation only happens when the heading or link is absent
-- 🔄 Re-running with the same modified paths and details produces no changes
-- 📢 Social posting updates record only the platforms that were **newly posted** in the current run, not pre-existing platform sections from historical postings
+- 🔗 Detail deduplication is **per-page, per-column**: the same detail type under the same page is merged, not duplicated. Same detail type across different pages creates separate rows.
+- 📊 Stats are recomputed from the full merged state each time, so they always reflect the current total.
+- 📌 Section creation only happens when the heading is absent.
+- 🔄 Re-running with the same modified paths and details produces no changes.
+- 📢 Social posting updates record only the platforms that were **newly posted** in the current run.
 
 ## 🧪 Testing
 
 🔬 Tests in `haskell/test/Automation/DailyUpdatesTest.hs` covering:
-- 📎 `addUpdateLinks`: new section creation with page entries and details, adding pages to existing sections, inserting details into existing page entries, duplicate skipping, same-detail-different-pages (per-page dedup), multiple pages, incremental updates from different operations, content preservation, property-based testing
-- 🎯 `addUpdateLinksToReflection`: end-to-end orchestration with filesystem, idempotency, incremental detail accumulation, multiple pages
+- 📊 Table creation with stats and emoji column headers
+- 🔀 Merging new pages and details into existing tables
+- 🔗 Internal link count accumulation (additive merging)
+- 📐 Only active columns shown in table header
+- 📖 Legacy bullet format migration to table on next update
+- 🧩 Idempotency (duplicate details produce no changes)
+- 📍 Section placement before social media embeds
+- 🎯 End-to-end orchestration with filesystem
+- 🔬 Property-based testing (content outside updates section preserved)

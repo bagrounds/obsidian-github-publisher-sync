@@ -9,6 +9,9 @@ Platform:
 Channel: PBS NewsHour
 tags:
 youtube: https://youtu.be/CFucbHMHOOE
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_time: 2026-04-10T00:00:00Z
+force_analyze_links: false
 ---
 [Home](../index.md) > [Videos](./index.md)  
 # 🎙️🇺🇸🛥️💥 Brooks and Capehart on the political fallout over Trump's boat strikes  

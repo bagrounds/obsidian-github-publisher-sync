@@ -13,7 +13,7 @@ link_analysis_time: 2026-04-12T00:00:00Z
 force_analyze_links: false
 updated: 2026-04-12T15:20:48
 ---
-[Home](../index.md) > [📰 The Noise](./index.md) | [⏮️](./2026-04-11-first-broadcast.md)  
+[Home](../index.md) > [📰 The Noise](./index.md) | [⏮️](./2026-04-11-first-broadcast.md) [⏭️](./2026-04-13-global-currents-shifting-sands.md)  
 # 2026-04-12 | 📰 🌊 Global Currents, Shifting Sands 🌐 📰  
 ![the-noise-2026-04-12-global-currents-shifting-sands](../the-noise-2026-04-12-global-currents-shifting-sands.jpg)  
   

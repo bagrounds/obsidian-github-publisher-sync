@@ -7,9 +7,13 @@ URL: https://bagrounds.org/ai-blog/2026-04-09-1-vertical-module-design
 link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-09T00:00:00Z
 force_analyze_links: false
+image_date: 2026-04-13T08:46:33Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A minimalist, isometric illustration featuring a series of clean, modular building blocks floating in a soft-lit space. On the left, several mismatched, colorful blocks are scattered in horizontal rows, representing disorganized code. On the right, these same blocks are neatly stacked into three distinct, vertical towers of varying heights, each color-coded to represent a specific feature (e.g., a blue tower, a green tower, and a warm orange tower). Each tower is self-contained and structurally sound, suggesting a modular library or package. The background is a crisp, neutral off-white, emphasizing the clean lines and geometric precision of the reorganization. The lighting is soft and professional, casting subtle, elegant shadows that highlight the depth and structure of the vertical modules.
 ---
 [🏡 Home](../index.md) > [🤖 AI Blog](./index.md) | [⏮️](./2026-04-08-3-completing-domain-newtypes.md) [⏭️](./2026-04-09-2-qualified-imports-as-namespaces.md)  
 # 2026-04-09 | 📦 Vertical Module Design: Think Like a Library Developer 🧩  
+![ai-blog-2026-04-09-1-vertical-module-design](../ai-blog-2026-04-09-1-vertical-module-design.jpg)  
   
 ## 🎯 The Mission  
   

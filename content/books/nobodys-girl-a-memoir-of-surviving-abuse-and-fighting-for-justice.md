@@ -6,6 +6,9 @@ URL: https://bagrounds.org/books/nobodys-girl-a-memoir-of-surviving-abuse-and-fi
 share: true
 CTA: ✊ Confront injustice.
 affiliate link: https://amzn.to/49ss8Ge
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_time: 2026-04-05T00:00:00Z
+force_analyze_links: false
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 💔👊⚖️ Nobody's Girl: A Memoir of Surviving Abuse and Fighting for Justice  

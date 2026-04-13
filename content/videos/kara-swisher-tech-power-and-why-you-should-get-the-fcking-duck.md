@@ -9,6 +9,9 @@ Platform:
 Channel: Trevor Noah
 tags:
 youtube: https://youtu.be/SNDKvd-gorE
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_time: 2026-04-04T00:00:00Z
+force_analyze_links: false
 ---
 [Home](../index.md) > [Videos](./index.md)  
 # 👩‍💻👑🦆 Kara Swisher: Tech, Power, and Why You Should Get the F*cking Duck  
@@ -51,4 +54,4 @@ youtube: https://youtu.be/SNDKvd-gorE
     * **The Innovators: How a Group of Hackers, Geniuses, and Geeks Created the Digital Revolution by Walter Isaacson:** Offers a historically optimistic perspective on the people who built the digital age, contrasting the current critique of CEOs.  
 * 💡 **Creatively Related Books (Focusing on Political Response & Wealth):**  
     * **Antitrust: Taking on Monopoly Power from the Gilded Age to the Digital Age by Amy Klobuchar:** Provides a policy and legal framework 🏛️ for addressing the issue of **unregulated monopolies** in the context of American history.  
-    * **Propaganda by Edward Bernays:** A classic text on the mechanics of public opinion and media manipulation, directly relating to the problem of disinformation and the **new political reality** 📰.
+    * **[📢 Propaganda](../books/propaganda.md) by Edward Bernays:** A classic text on the mechanics of public opinion and media manipulation, directly relating to the problem of disinformation and the **new political reality** 📰.

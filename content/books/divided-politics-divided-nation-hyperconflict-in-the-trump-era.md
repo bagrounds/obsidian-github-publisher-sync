@@ -6,6 +6,9 @@ URL: https://bagrounds.org/books/divided-politics-divided-nation-hyperconflict-i
 share: true
 CTA: 🇺🇸 Rebuild unity.
 affiliate link: https://amzn.to/3JlaV78
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_time: 2026-04-04T00:00:00Z
+force_analyze_links: false
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🇺🇸⚔️ Divided Politics, Divided Nation: Hyperconflict in the Trump Era  

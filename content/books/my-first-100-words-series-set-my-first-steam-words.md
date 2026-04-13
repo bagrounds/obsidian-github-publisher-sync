@@ -6,6 +6,9 @@ URL: https://bagrounds.org/books/my-first-100-words-series-set-my-first-steam-wo
 share: true
 CTA: 🚀 Discover language.
 affiliate link: https://amzn.to/48qewcD
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_time: 2026-04-11T00:00:00Z
+force_analyze_links: false
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 👶🔬 My First 100 Words series set (My First STEAM Words)  

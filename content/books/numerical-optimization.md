@@ -9,9 +9,13 @@ affiliate link: https://amzn.to/49m0s5A
 link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-02T00:00:00Z
 force_analyze_links: false
+image_date: 2026-04-07T03:13:59Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A dynamic 3D landscape of undulating, abstract mathematical surfaces rendered in cool blues and purples. A vibrant, glowing golden path descends gracefully from a higher point, spiraling and curving towards the lowest point in a central valley. Small, luminous nodes dot this path, becoming denser as they approach the minimum, illustrating iterative convergence. Faint, translucent intersecting planes subtly cut through the landscape, hinting at constraints. The overall impression is one of intelligent progression towards a precise solution.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🔢🎯 Numerical Optimization  
+![books-numerical-optimization](../books-numerical-optimization.jpg)  
 [🛒 Numerical Optimization. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/49m0s5A)  
   
 📈💡📚 The definitive graduate-level textbook providing a comprehensive, rigorous, and practical foundation in continuous optimization methods, covering both theoretical underpinnings and effective algorithms for unconstrained and constrained problems.  

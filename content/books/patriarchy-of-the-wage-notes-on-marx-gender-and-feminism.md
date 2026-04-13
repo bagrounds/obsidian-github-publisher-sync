@@ -6,6 +6,9 @@ URL: https://bagrounds.org/books/patriarchy-of-the-wage-notes-on-marx-gender-and
 share: true
 CTA: 💸 Dismantle the wage patriarchy.
 affiliate link: https://amzn.to/4qddQ1t
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_time: 2026-04-09T00:00:00Z
+force_analyze_links: false
 ---
 [Home](../index.md) > [Books](./index.md)  
 # ♂️💰♀️🚩 Patriarchy of the Wage: Notes on Marx, Gender, and Feminism  

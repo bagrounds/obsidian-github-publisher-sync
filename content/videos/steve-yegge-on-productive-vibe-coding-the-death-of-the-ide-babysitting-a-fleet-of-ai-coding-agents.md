@@ -10,6 +10,9 @@ Channel: Changelog
 tags:
   - AIEngineering
 youtube: https://youtu.be/G7kXuVlo6tU
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_time: 2026-04-05T00:00:00Z
+force_analyze_links: false
 ---
 [Home](../index.md) > [Videos](./index.md)  
 # ✨💻💀🤖 Steve Yegge on productive vibe coding, the death of the IDE, babysitting a fleet of AI coding agents  

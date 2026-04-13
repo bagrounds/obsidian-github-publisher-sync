@@ -6,6 +6,9 @@ title: "🧠🗣️💻 From Frege to ChatGPT: Compositionality in Language, Cog
 URL: https://bagrounds.org/articles/from-frege-to-chatgpt-compositionality-in-language-cognition-and-deep-neural-networks
 Author:
 tags:
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_time: 2026-04-11T00:00:00Z
+force_analyze_links: false
 ---
 [Home](../index.md) > [Articles](./index.md)  
 # [🧠🗣️💻 From Frege to ChatGPT: Compositionality in Language, Cognition, and Deep Neural Networks](https://arxiv.org/pdf/2405.15164)  

@@ -6,6 +6,9 @@ URL: https://bagrounds.org/books/systems-thinking-an-ai-s-guide-to-100-ways-to-s
 share: true
 CTA: 💡 Discover interconnectedness.
 affiliate link: https://amzn.to/4oButnl
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_time: 2026-04-11T00:00:00Z
+force_analyze_links: false
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🤖🔗👁️ Systems Thinking: An AI’s Guide to 100 Ways to Spot Connections Humans Often Overlook  

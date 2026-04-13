@@ -13,7 +13,7 @@ link_analysis_time: 2026-04-12T00:00:00Z
 force_analyze_links: false
 updated: 2026-04-12T17:20:21
 ---
-[Home](../index.md) > [🐔 Chickie Loo](./index.md) | [⏮️](./2026-04-11-our-first-night-home.md)  
+[Home](../index.md) > [🐔 Chickie Loo](./index.md) | [⏮️](./2026-04-11-our-first-night-home.md) [⏭️](./2026-04-13-ashes-anniversaries-and-the-rhythm-of-the-ranch.md)  
 # 2026-04-12 | 🐔 🥂 A Night Among the Stars and Studs 🐔  
 ![chickie-loo-2026-04-12-a-night-among-the-stars-and-studs](../chickie-loo-2026-04-12-a-night-among-the-stars-and-studs.jpg)  
   

@@ -6,6 +6,9 @@ title: 🙋‍♂️🚩🚫 Musk’s inauguration salute is not the only appare
 URL: https://bagrounds.org/articles/musks-inauguration-salute-is-not-the-only-apparent-fascist-signal-from-trumps-administration
 Author:
 tags:
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_time: 2026-04-07T00:00:00Z
+force_analyze_links: false
 ---
 [Home](../index.md) > [Articles](./index.md)  
 # 🙋‍♂️🚩🚫 Musk’s inauguration salute is not the only apparent fascist signal from Trump’s administration  
@@ -36,7 +39,7 @@ The controversy surrounding 🚀 **Musk's** salute is contextualized by other si
   
 ### 🆚 Contrasting  
 * [😇🧠 The Righteous Mind: Why Good People Are Divided by Politics and Religion](../books/the-righteous-mind.md) by Jonathan Haidt: ⚖️ Provides a framework for understanding the deep partisan divides in interpreting the gesture's true **intent**.  
-* 🤫 The Power Broker: Robert Moses and the Fall of New York by Robert A. Caro: 🏗️ Illustrates how unelected figures wield massive influence, drawing parallels to concerns about **techno-elite** power in politics.  
+* 🤫 [👑🏙️ The Power Broker](../books/the-power-broker.md): Robert Moses and the Fall of New York by Robert A. Caro: 🏗️ Illustrates how unelected figures wield massive influence, drawing parallels to concerns about **techno-elite** power in politics.  
   
 ### 🎨 Creatively Related  
 * [🤖⚠️📈 Superintelligence: Paths, Dangers, Strategies](../books/superintelligence-paths-dangers-strategies.md) by Nick Bostrom: 🧠 Explores existential risks tied to unchecked power held by technological figures like **Musk**.  

@@ -5,6 +5,9 @@ aliases:
 URL: https://bagrounds.org/books/the-right-to-vote-the-contested-history-of-democracy-in-the-united-states
 share: true
 affiliate link: https://amzn.to/43np2Q9
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_time: 2026-04-07T00:00:00Z
+force_analyze_links: false
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🗳️🇺🇸 The Right to Vote: The Contested History of Democracy in the United States  

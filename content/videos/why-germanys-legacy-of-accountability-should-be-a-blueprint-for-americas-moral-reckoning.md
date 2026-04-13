@@ -9,6 +9,9 @@ Platform:
 Channel: Katie Couric
 tags:
 youtube: https://youtu.be/NntPWHpkPqQ
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_time: 2026-04-04T00:00:00Z
+force_analyze_links: false
 ---
 [Home](../index.md) > [Videos](./index.md)  
 # 🇩🇪⚖️🇺🇸 Blueprint Why Germany's Legacy of Accountability Should Be A Blueprint for America's Moral Reckoning  

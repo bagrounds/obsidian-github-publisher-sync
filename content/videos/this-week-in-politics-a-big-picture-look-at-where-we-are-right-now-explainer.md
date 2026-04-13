@@ -9,6 +9,9 @@ Platform:
 Channel: Heather Cox Richardson
 tags:
 youtube: https://youtu.be/jyHbd88plYM
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_time: 2026-04-05T00:00:00Z
+force_analyze_links: false
 ---
 [Home](../index.md) > [Videos](./index.md) | [🏛️🇺🇸📖 Heather Cox Richardson](../people/heather-cox-richardson.md)  
 # 📰🇺🇸❓🏛️ This Week In Politics, A Big-Picture Look at Where We Are Right Now | Explainer  
@@ -78,7 +81,7 @@ youtube: https://youtu.be/jyHbd88plYM
 ### 🎨 Creatively Related  
   
 * [🤔🐇🐢 Thinking, Fast and Slow](../books/thinking-fast-and-slow.md) by Daniel Kahneman: This classic book explores the two cognitive systems that drive our decision-making, offering insight into how voters and politicians process complex information, political messaging, and disinformation, as discussed in the video.  
-* 🏗️ The Power Broker: Robert Moses and the Fall of New York by Robert Caro: This biography focuses on one man's relentless and unchecked use of bureaucratic and political power to reshape a city, tangentially relating to the video's themes of unchecked executive power, tearing down public works (the East Wing), and the dangerous influence of unelected officials.  
+* 🏗️ [👑🏙️ The Power Broker](../books/the-power-broker.md): Robert Moses and the Fall of New York by Robert Caro: This biography focuses on one man's relentless and unchecked use of bureaucratic and political power to reshape a city, tangentially relating to the video's themes of unchecked executive power, tearing down public works (the East Wing), and the dangerous influence of unelected officials.  
   
 ## 🐦 Tweet  
 <blockquote class="twitter-tweet" data-theme="dark"><p lang="en" dir="ltr">📰🇺🇸❓🏛️ This Week In Politics, A Big-Picture Look at Where We Are Right Now | Explainer<br><br>🍎 SNAP Benefits | 🏛️ Government Shutdown | 📈 ACA Premiums | 🤫 Epstein Investigation | 🚢 Military Operations | 🗳️ Voter Legitimacy<a href="https://twitter.com/HC_Richardson?ref_src=twsrc%5Etfw">@HC_Richardson</a><a href="https://t.co/iEbAAdaXBQ">https://t.co/iEbAAdaXBQ</a></p>&mdash; Bryan Grounds (@bagrounds) <a href="https://twitter.com/bagrounds/status/1983571729650950203?ref_src=twsrc%5Etfw">October 29, 2025</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>

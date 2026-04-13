@@ -13,7 +13,7 @@ link_analysis_time: 2026-04-12T00:00:00Z
 force_analyze_links: false
 updated: 2026-04-12T20:09:09
 ---
-[Home](../index.md) > [🏛️ Systems for Public Good](./index.md) | [⏮️](./2026-04-11-the-human-foundation-public-health-as-real-wealth.md)  
+[Home](../index.md) > [🏛️ Systems for Public Good](./index.md) | [⏮️](./2026-04-11-the-human-foundation-public-health-as-real-wealth.md) [⏭️](./2026-04-13-nature-s-embrace-public-parks-as-a-universal-right.md)  
 # 2026-04-12 | 🏛️ 🗺️ Navigating Our Collective Well-being: A Week of Foundational Investments 🏛️  
 ![systems-for-public-good-2026-04-12-navigating-our-collective-well-being-a-week-of-foundational-investments](../systems-for-public-good-2026-04-12-navigating-our-collective-well-being-a-week-of-foundational-investments.jpg)  
   

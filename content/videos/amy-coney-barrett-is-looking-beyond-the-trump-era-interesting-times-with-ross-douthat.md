@@ -9,6 +9,9 @@ Platform:
 Channel: Interesting Times with Ross Douthat
 tags:
 youtube: https://youtu.be/b94thInW27c
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_time: 2026-04-06T00:00:00Z
+force_analyze_links: false
 ---
 [Home](../index.md) > [Videos](./index.md)  
 # 👩‍⚖️🔭⏩ Amy Coney Barrett Is Looking Beyond the Trump Era | Interesting Times with Ross Douthat  

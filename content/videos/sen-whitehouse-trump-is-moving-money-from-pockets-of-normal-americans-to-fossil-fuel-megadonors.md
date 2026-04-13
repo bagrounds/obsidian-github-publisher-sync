@@ -9,6 +9,9 @@ Platform:
 Channel: Senator Sheldon Whitehouse
 tags:
 youtube: https://youtu.be/AwW_117CODk
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_time: 2026-04-03T00:00:00Z
+force_analyze_links: false
 ---
 [Home](../index.md) > [Videos](./index.md)  
 # 🧑‍🤝‍🧑💰⛽ Sen. Whitehouse: «Trump is Moving Money from Pockets of Normal Americans to Fossil Fuel Megadonors»  

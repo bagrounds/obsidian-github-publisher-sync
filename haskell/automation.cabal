@@ -59,6 +59,10 @@ library
     Automation.BlogImage.Markdown
     Automation.BlogImage.Provider
     Automation.InternalLinking
+    Automation.InternalLinking.CandidateDiscovery
+    Automation.InternalLinking.Gemini
+    Automation.InternalLinking.LinkExtraction
+    Automation.InternalLinking.Masking
     Automation.Pipeline
     Automation.Reflection
     Automation.GeminiQuota
@@ -150,6 +154,10 @@ test-suite automation-tests
     Automation.BlogSeriesTest
     Automation.BlogImageTest
     Automation.InternalLinkingTest
+    Automation.InternalLinking.MaskingTest
+    Automation.InternalLinking.LinkExtractionTest
+    Automation.InternalLinking.CandidateDiscoveryTest
+    Automation.InternalLinking.GeminiTest
     Automation.BlueskyTest
     Automation.MastodonTest
     Automation.TwitterTest

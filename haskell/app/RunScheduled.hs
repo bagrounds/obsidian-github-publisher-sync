@@ -435,12 +435,12 @@ runInternalLinking context = do
   let model = maybe IL.defaultLinkingModel Gemini.modelFromText envModel
   result <- IL.run manager model vaultDir
   logMsg $ "  🔗 Internal linking: "
-        <> T.pack (show (IL.lrFilesVisited result)) <> " visited, "
-        <> T.pack (show (IL.lrFilesModified result)) <> " modified, "
-        <> T.pack (show (IL.lrTotalLinksAdded result)) <> " links added"
+        <> T.pack (show (IL.filesVisited result)) <> " visited, "
+        <> T.pack (show (IL.filesModified result)) <> " modified, "
+        <> T.pack (show (IL.totalLinksAdded result)) <> " links added"
 
   -- Add update links to daily reflection for modified files
-  let modifiedResults = filter IL.frModified (IL.lrFileResults result)
+  let modifiedResults = filter IL.modified (IL.fileResults result)
   case modifiedResults of
     [] -> pure ()
     _  -> do
@@ -448,11 +448,11 @@ runInternalLinking context = do
       let todayText = formatDay today
           reflectionsDir = vaultDir </> "reflections"
       links <- catMaybes <$> traverse (\fr -> do
-        title <- extractTitleFromFile (vaultDir </> T.unpack (unRelativePath (IL.frRelativePath fr)))
-        let linksAdded = IL.frLinksAdded fr
-            detail = "🔗 added " <> T.pack (show linksAdded) <> " internal link" <> (if linksAdded == 1 then "" else "s")
+        title <- extractTitleFromFile (vaultDir </> T.unpack (unRelativePath (IL.relativePath fr)))
+        let addedLinks = IL.linksAdded fr
+            detail = "🔗 added " <> T.pack (show addedLinks) <> " internal link" <> (if addedLinks == 1 then "" else "s")
         case mkTitle title of
-          Right validTitle -> pure (Just (UpdateLink (IL.frRelativePath fr) validTitle [detail]))
+          Right validTitle -> pure (Just (UpdateLink (IL.relativePath fr) validTitle [detail]))
           Left titleError -> do
             logMsg $ "  ⚠️  Skipping update link: " <> titleError
             pure Nothing

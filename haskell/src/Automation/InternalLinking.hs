@@ -1,81 +1,48 @@
+{-# LANGUAGE OverloadedStrings #-}
+
 module Automation.InternalLinking
-  ( ContentEntry (..)
-  , LinkCandidate (..)
-  , FileResult (..)
+  ( FileResult (..)
   , LinkingResult (..)
   , defaultLinkingModel
-  , linkableDirs
   , indexableDirs
   , traversableDirs
-  , stripEmojis
-  , escapeRegex
-  , formatWikilink
-  , extractContext
-  , extractMainTitle
-  , buildContentIndex
-  , extractLinkedPaths
-  , findMostRecentReflection
-  , bfsTraversal
-  , maskProtectedRegions
-  , contentAlreadyLinksTo
-  , findLinkCandidates
-  , buildIdentificationPrompt
-  , identifyBooksWithGemini
-  , applyReplacements
-  , alreadyAnalyzed
   , extractBody
-  , normalizeFilePath
+  , alreadyAnalyzed
+  , applyReplacements
   , processFile
   , run
   ) where
 
+import qualified Automation.InternalLinking.CandidateDiscovery as CD
+import Automation.InternalLinking.Gemini (identifyBooksWithGemini)
+import Automation.InternalLinking.LinkExtraction
+  ( bfsTraversal
+  , splitSlash
+  , joinSlash
+  )
+import Automation.InternalLinking.Masking (maskProtectedRegions)
+
 import Automation.PacificTime (formatDay, todayPacificDay)
 import Automation.Frontmatter (YamlValue (..), parseFrontmatter, renderYamlValue)
 import qualified Automation.Gemini as Gemini
-import Automation.Json (decode)
-import Automation.Reflection (selectMostRecentReflection)
-import Automation.Text (isEmoji)
-import Automation.Types (Secret (..), RelativePath, unRelativePath, mkRelativePath, Title, unTitle, mkTitle)
-import Control.Concurrent (threadDelay)
+import Automation.Types (Secret (..), RelativePath, unRelativePath, mkRelativePath)
 import Control.Monad (when)
 import Data.IORef (IORef, modifyIORef', newIORef, readIORef)
 import Data.List (sortBy)
 import qualified Data.Map.Strict as Map
-import Data.Maybe (catMaybes, fromMaybe, maybeToList)
-import Data.Ord (Down (..))
 import qualified Data.Set as Set
+import Data.Ord (Down (..))
 import Data.Text (Text)
 import qualified Data.Text as T
 import qualified Data.Text.IO as TIO
 import Network.HTTP.Client (Manager)
-import System.Directory (doesDirectoryExist, doesFileExist, listDirectory)
+import System.Directory (doesFileExist)
 import System.Environment (lookupEnv)
-import System.FilePath (takeBaseName, takeDirectory, (</>))
-import Text.Regex.TDFA ((=~))
-import qualified Data.ByteString.Lazy as LBS
-import qualified Data.Text.Encoding as TE
+import System.FilePath (takeDirectory, (</>))
 
--- --------------------------------------------------------------------------
--- Constants
--- --------------------------------------------------------------------------
 
 defaultLinkingModel :: Gemini.Model
 defaultLinkingModel = Gemini.Gemini31FlashLite
-
-minTitleLength :: Int
-minTitleLength = 8
-
-maxGeminiRetries :: Int
-maxGeminiRetries = 3
-
-initialBackoffUs :: Int
-initialBackoffUs = 5_000_000
-
-maxBackoffUs :: Int
-maxBackoffUs = 60_000_000
-
-linkableDirs :: [Text]
-linkableDirs = ["books"]
 
 indexableDirs :: [Text]
 indexableDirs =
@@ -88,73 +55,22 @@ traversableDirs =
   indexableDirs
     <> ["reflections", "chickie-loo", "auto-blog-zero", "systems-for-public-good"]
 
--- --------------------------------------------------------------------------
--- Types
--- --------------------------------------------------------------------------
-
-data ContentEntry = ContentEntry
-  { ceRelativePath :: RelativePath
-  , ceTitle        :: Title
-  , cePlainTitle   :: Title
-  } deriving (Show, Eq)
-
-data LinkCandidate = LinkCandidate
-  { lcEntry       :: ContentEntry
-  , lcMatchedText :: Text
-  , lcPosition    :: Int
-  , lcContext     :: Text
-  } deriving (Show, Eq)
 
 data FileResult = FileResult
-  { frRelativePath  :: RelativePath
-  , frModified      :: Bool
-  , frLinksAdded    :: Int
-  , frUsedInference :: Bool
+  { relativePath   :: RelativePath
+  , modified       :: Bool
+  , linksAdded     :: Int
+  , usedInference  :: Bool
   } deriving (Show, Eq)
 
 data LinkingResult = LinkingResult
-  { lrFilesVisited    :: Int
-  , lrFilesModified   :: Int
-  , lrTotalLinksAdded :: Int
-  , lrFilesSkipped    :: Int
-  , lrFileResults     :: [FileResult]
+  { filesVisited    :: Int
+  , filesModified   :: Int
+  , totalLinksAdded :: Int
+  , filesSkipped    :: Int
+  , fileResults     :: [FileResult]
   } deriving (Show, Eq)
 
--- --------------------------------------------------------------------------
--- Pure utility functions
--- --------------------------------------------------------------------------
-
-stripEmojis :: Text -> Text
-stripEmojis =
-  T.intercalate " "
-    . filter (not . T.null)
-    . T.split (== ' ')
-    . T.map (\c -> if isEmoji c then ' ' else c)
-
-escapeRegex :: Text -> Text
-escapeRegex = T.concatMap escChar
-  where
-    specials :: Set.Set Char
-    specials = Set.fromList ".*+?^${}()|[]\\"
-    escChar c
-      | Set.member c specials = "\\" <> T.singleton c
-      | otherwise             = T.singleton c
-
-formatWikilink :: ContentEntry -> Text
-formatWikilink entry =
-  let path = unRelativePath (ceRelativePath entry)
-      target = fromMaybe path (T.stripSuffix ".md" path)
-  in "[[" <> target <> "|" <> unTitle (ceTitle entry) <> "]]"
-
-extractContext :: Text -> Int -> Int -> Text
-extractContext content pos matchLen =
-  let radius = 100
-      start  = max 0 (pos - radius)
-      end    = min (T.length content) (pos + matchLen + radius)
-      prefix = if start > 0 then "..." else ""
-      suffix = if end < T.length content then "..." else ""
-      slice  = T.take (end - start) (T.drop start content)
-  in prefix <> slice <> suffix
 
 extractBody :: Text -> Text
 extractBody content =
@@ -174,557 +90,23 @@ alreadyAnalyzed content =
     Just "true" -> False
     _           -> Map.member "link_analysis_model" fm
 
-extractMainTitle :: Text -> Maybe Text
-extractMainTitle plainTitle =
-  case T.breakOn ": " plainTitle of
-    (main, rest)
-      | T.null rest        -> Nothing
-      | T.length main < minTitleLength -> Nothing
-      | countWordsT main < 2 -> Nothing
-      | otherwise           -> Just main
-  where
-    countWordsT :: Text -> Int
-    countWordsT t = length $ filter (not . T.null) $ T.split (\c -> c == ' ' || c == '-') t
 
--- --------------------------------------------------------------------------
--- Masking protected regions
--- --------------------------------------------------------------------------
-
-maskProtectedRegions :: Text -> Text
-maskProtectedRegions =
-  maskBold
-    . maskUrls
-    . maskHeadings
-    . maskWikilinks
-    . maskMarkdownLinks
-    . maskInlineCode
-    . maskFencedCode
-    . maskFrontmatter
-
-maskFrontmatter :: Text -> Text
-maskFrontmatter content =
-  case T.stripPrefix "---\n" content of
-    Nothing -> content
-    Just afterOpen ->
-      case T.breakOn "\n---\n" afterOpen of
-        (_, "") -> content
-        (fm, rest) ->
-          let fmBlock = "---\n" <> fm <> "\n---\n"
-              afterBlock = T.drop (T.length "\n---\n") rest
-          in T.replicate (T.length fmBlock) " " <> afterBlock
-
-maskFencedCode :: Text -> Text
-maskFencedCode = maskBetweenFences
-
-maskBetweenFences :: Text -> Text
-maskBetweenFences = go
-  where
-    go txt =
-      let (before, rest) = breakOnFence txt
-      in case rest of
-        Nothing -> txt
-        Just (fence, afterOpen) ->
-          case T.breakOn ("\n" <> fence) afterOpen of
-            (_, "") -> before <> T.replicate (T.length fence) " "
-                          <> T.replicate (T.length afterOpen) " "
-            (block, closing) ->
-              let closingFence = T.take (T.length fence + 1) closing
-                  afterClose   = T.drop (T.length fence + 1) closing
-              in before
-                   <> T.replicate (T.length fence) " "
-                   <> T.replicate (T.length block) " "
-                   <> T.replicate (T.length closingFence) " "
-                   <> go afterClose
-
-    breakOnFence :: Text -> (Text, Maybe (Text, Text))
-    breakOnFence txt =
-      case T.breakOn "```" txt of
-        (pre, rest)
-          | T.null rest ->
-              case T.breakOn "~~~" txt of
-                (pre2, rest2)
-                  | T.null rest2 -> (txt, Nothing)
-                  | otherwise    ->
-                      let (fence, afterFence) = T.span (== '~') rest2
-                          afterLine = T.takeWhile (/= '\n') afterFence
-                          restAfterLine = T.drop (T.length afterLine) afterFence
-                      in (pre2, Just (fence <> afterLine, restAfterLine))
-          | otherwise ->
-              let (fence, afterFence) = T.span (== '`') rest
-                  afterLine = T.takeWhile (/= '\n') afterFence
-                  restAfterLine = T.drop (T.length afterLine) afterFence
-              in case T.breakOn "~~~" txt of
-                (pre2, rest2)
-                  | T.null rest2 -> (pre, Just (fence <> afterLine, restAfterLine))
-                  | T.length pre2 < T.length pre ->
-                      let (fence2, afterFence2) = T.span (== '~') rest2
-                          afterLine2 = T.takeWhile (/= '\n') afterFence2
-                          restAfterLine2 = T.drop (T.length afterLine2) afterFence2
-                      in (pre2, Just (fence2 <> afterLine2, restAfterLine2))
-                  | otherwise -> (pre, Just (fence <> afterLine, restAfterLine))
-
-maskInlineCode :: Text -> Text
-maskInlineCode = replaceAllRegex "`[^`\n]+`"
-
-maskMarkdownLinks :: Text -> Text
-maskMarkdownLinks = maskMdLinks
-
-maskMdLinks :: Text -> Text
-maskMdLinks = go
-  where
-    go txt =
-      case T.breakOn "[" txt of
-        (_, "") -> txt
-        (before, rest) ->
-          case T.breakOn "](" (T.drop 1 rest) of
-            (_, "") -> before <> "[" <> go (T.drop 1 rest)
-            (linkText, afterBracket) ->
-              case T.breakOn ")" (T.drop 2 afterBracket) of
-                (_, "") -> before <> "[" <> go (T.drop 1 rest)
-                (url, afterParen) ->
-                  let fullMatch = "[" <> linkText <> "](" <> url <> ")"
-                  in before
-                       <> T.replicate (T.length fullMatch) " "
-                       <> go (T.drop 1 afterParen)
-
-maskWikilinks :: Text -> Text
-maskWikilinks = maskWikiL
-
-maskWikiL :: Text -> Text
-maskWikiL = go
-  where
-    go txt =
-      case T.breakOn "[[" txt of
-        (_, "") -> txt
-        (before, rest) ->
-          case T.breakOn "]]" (T.drop 2 rest) of
-            (_, "") -> txt
-            (inner, afterClose) ->
-              let fullMatch = "[[" <> inner <> "]]"
-              in before
-                   <> T.replicate (T.length fullMatch) " "
-                   <> go (T.drop 2 afterClose)
-
-maskHeadings :: Text -> Text
-maskHeadings input =
-  T.intercalate "\n" (fmap maskHeadingLine (T.splitOn "\n" input))
-  where
-    maskHeadingLine :: Text -> Text
-    maskHeadingLine line
-      | isHeading line = T.replicate (T.length line) " "
-      | otherwise      = line
-
-    isHeading :: Text -> Bool
-    isHeading line =
-      let (hashes, rest) = T.span (== '#') line
-          hashCount = T.length hashes
-      in hashCount >= 1 && hashCount <= 6 && T.isPrefixOf " " rest
-
-maskUrls :: Text -> Text
-maskUrls = replaceAllRegex "https?://[^] \t\n)]+"
-
-maskBold :: Text -> Text
-maskBold = go
-  where
-    go txt =
-      case T.breakOn "**" txt of
-        (_, "") -> txt
-        (before, rest) ->
-          before <> "  " <> go (T.drop 2 rest)
-
-replaceAllRegex :: String -> Text -> Text
-replaceAllRegex pat = go
-  where
-    go txt
-      | T.null txt = txt
-      | otherwise  =
-          let s = T.unpack txt
-          in case (s =~ pat :: (String, String, String)) of
-            (_, "", _)      -> txt
-            (before, match, after) ->
-              T.pack before
-                <> T.replicate (length match) " "
-                <> go (T.pack after)
-
--- --------------------------------------------------------------------------
--- Content already links check
--- --------------------------------------------------------------------------
-
-contentAlreadyLinksTo :: Text -> ContentEntry -> Bool
-contentAlreadyLinksTo content entry =
-  let path = unRelativePath (ceRelativePath entry)
-      pathNoMd = fromMaybe path (T.stripSuffix ".md" path)
-  in T.isInfixOf (pathNoMd <> "]") content
-  || T.isInfixOf (pathNoMd <> "|") content
-  || T.isInfixOf (pathNoMd <> "#") content
-  || T.isInfixOf (pathNoMd <> ".") content
-
--- --------------------------------------------------------------------------
--- Build content index
--- --------------------------------------------------------------------------
-
-buildContentIndex :: FilePath -> IO [ContentEntry]
-buildContentIndex contentDir =
-  concat <$> traverse (scanDir contentDir) linkableDirs
-
-scanDir :: FilePath -> Text -> IO [ContentEntry]
-scanDir contentDir dirName = do
-  let dirPath = contentDir </> T.unpack dirName
-  exists <- doesDirectoryExist dirPath
-  if exists
-    then do
-      files <- listDirectory dirPath
-      let mdFiles = filter (\f -> hasSuffix ".md" f && f /= "index.md") files
-      catMaybes <$> traverse (readEntry contentDir dirName) mdFiles
-    else pure []
-
-readEntry :: FilePath -> Text -> FilePath -> IO (Maybe ContentEntry)
-readEntry contentDir dirName file = do
-  let relativePath = dirName <> "/" <> T.pack file
-      filePath     = contentDir </> T.unpack relativePath
-  content <- TIO.readFile filePath
-  let (fm, _) = parseFrontmatter content
-  pure $ do
-    titleText <- Map.lookup "title" fm
-    let plain = stripEmojis titleText
-    if T.length plain < minTitleLength
-      then Nothing
-      else do
-        path <- either (const Nothing) Just (mkRelativePath relativePath)
-        title <- either (const Nothing) Just (mkTitle titleText)
-        plainTitle <- either (const Nothing) Just (mkTitle plain)
-        pure ContentEntry
-          { ceRelativePath = path
-          , ceTitle        = title
-          , cePlainTitle   = plainTitle
-          }
-
-hasSuffix :: String -> String -> Bool
-hasSuffix suf str = drop (length str - length suf) str == suf
-
--- --------------------------------------------------------------------------
--- Link extraction (for BFS)
--- --------------------------------------------------------------------------
-
-extractLinkedPaths :: Text -> Text -> FilePath -> [Text]
-extractLinkedPaths body noteRelativePath contentDir =
-  let noteDir = takeDirectory (contentDir </> T.unpack noteRelativePath)
-      seen    = Set.empty :: Set.Set Text
-  in snd $ foldl' collectLink (seen, [])
-       (markdownLinks body noteDir contentDir <> wikiLinks body noteDir contentDir)
-
-collectLink :: (Set.Set Text, [Text]) -> Text -> (Set.Set Text, [Text])
-collectLink (seen, acc) rel
-  | T.isPrefixOf ".." rel = (seen, acc)
-  | Set.member rel seen   = (seen, acc)
-  | otherwise             = (Set.insert rel seen, acc <> [rel])
-
-markdownLinks :: Text -> FilePath -> FilePath -> [Text]
-markdownLinks body noteDir contentDir = go (T.unpack body)
-  where
-    go :: String -> [Text]
-    go s = case (s =~ ("\\]\\(([^)]+\\.md)\\)" :: String) :: (String, String, String, [String])) of
-      (_, _, after, [target])
-        | not ("http://" `isPrefixOfS` target) && not ("https://" `isPrefixOfS` target) ->
-            let absTarget  = normalizeFilePath (noteDir </> target)
-                relPath    = makeRelativeTo contentDir absTarget
-            in T.pack relPath : go after
-        | otherwise -> go after
-      _ -> []
-
-wikiLinks :: Text -> FilePath -> FilePath -> [Text]
-wikiLinks body noteDir contentDir =
-  let targets = parseWikiLinks (T.unpack body)
-  in fmap (resolveWikiTarget noteDir contentDir) targets
-
-resolveWikiTarget :: FilePath -> FilePath -> String -> Text
-resolveWikiTarget noteDir contentDir target =
-  let trimmed = strip target
-      withMd  = if hasSuffix ".md" trimmed then trimmed else trimmed <> ".md"
-  in if '/' `elem` withMd
-    then T.pack withMd
-    else
-      let absTarget = normalizeFilePath (noteDir </> withMd)
-      in T.pack (makeRelativeTo contentDir absTarget)
-
-parseWikiLinks :: String -> [String]
-parseWikiLinks [] = []
-parseWikiLinks ('[':'[':rest) =
-  case extractWikiLinkTarget rest of
-    Just (target, remaining) -> target : parseWikiLinks remaining
-    Nothing -> parseWikiLinks rest
-parseWikiLinks (_:rest) = parseWikiLinks rest
-
-extractWikiLinkTarget :: String -> Maybe (String, String)
-extractWikiLinkTarget input =
-  let (target, after) = span (\c -> c /= ']' && c /= '#' && c /= '|') input
-  in case after of
-    (']':']':rest) | not (null target) -> Just (target, rest)
-    ('#':rest) -> skipToClose target rest
-    ('|':rest) -> skipToClose target rest
-    _ -> Nothing
-  where
-    skipToClose _ [] = Nothing
-    skipToClose t (']':']':rest) | not (null t) = Just (t, rest)
-    skipToClose t (_:rest) = skipToClose t rest
-
-isPrefixOfS :: String -> String -> Bool
-isPrefixOfS [] _          = True
-isPrefixOfS _ []          = False
-isPrefixOfS (x:xs) (y:ys) = x == y && isPrefixOfS xs ys
-
-strip :: String -> String
-strip = reverse . dropWhile (== ' ') . reverse . dropWhile (== ' ')
-
-normalizeFilePath :: FilePath -> FilePath
-normalizeFilePath = joinSlash . reverse . resolve . splitSlash
-  where
-    resolve :: [String] -> [String]
-    resolve = foldl' step []
-
-    step :: [String] -> String -> [String]
-    step acc "."      = acc
-    step (_:rest) ".." = rest
-    step acc seg       = seg : acc
-
-makeRelativeTo :: FilePath -> FilePath -> FilePath
-makeRelativeTo base target =
-  let baseParts   = splitSlash base
-      targetParts = splitSlash target
-      common      = length $ takeWhile id $ zipWith (==) baseParts targetParts
-      remaining   = drop common targetParts
-  in joinSlash remaining
-
-splitSlash :: FilePath -> [String]
-splitSlash = fmap T.unpack . filter (not . T.null) . T.splitOn "/" . T.pack
-
-joinSlash :: [String] -> FilePath
-joinSlash []     = ""
-joinSlash [x]    = x
-joinSlash (x:xs) = x </> joinSlash xs
-
--- --------------------------------------------------------------------------
--- BFS traversal
--- --------------------------------------------------------------------------
-
-findMostRecentReflection :: FilePath -> IO (Maybe Text)
-findMostRecentReflection contentDir = do
-  let reflDir = contentDir </> "reflections"
-  exists <- doesDirectoryExist reflDir
-  if exists
-    then selectMostRecentReflection <$> listDirectory reflDir
-    else pure Nothing
-
-bfsTraversal :: FilePath -> IO [Text]
-bfsTraversal contentDir = do
-  mStart <- findMostRecentReflection contentDir
-  case mStart of
-    Nothing    -> pure []
-    Just start -> do
-      visitedRef <- newIORef (Set.singleton start)
-      queueRef   <- newIORef [start]
-      resultRef  <- newIORef ([] :: [Text])
-      bfsLoop contentDir visitedRef queueRef resultRef
-      reverse <$> readIORef resultRef
-
-bfsLoop :: FilePath -> IORef (Set.Set Text) -> IORef [Text] -> IORef [Text] -> IO ()
-bfsLoop contentDir visitedRef queueRef resultRef = do
-  queue <- readIORef queueRef
-  case queue of
-    [] -> pure ()
-    (current : rest) -> do
-      modifyIORef' queueRef (const rest)
-      let filePath = contentDir </> T.unpack current
-      exists <- doesFileExist filePath
-      let isIndex = takeBaseName (T.unpack current) == "index"
-      if exists && not isIndex
-        then do
-          modifyIORef' resultRef (current :)
-          content <- TIO.readFile filePath
-          let (_, body) = parseFrontmatter content
-              linked    = extractLinkedPaths body current contentDir
-          visited <- readIORef visitedRef
-          let newLinks = filter (\l -> not (Set.member l visited)) linked
-          modifyIORef' visitedRef (\s -> foldl' (flip Set.insert) s newLinks)
-          modifyIORef' queueRef (<> newLinks)
-          bfsLoop contentDir visitedRef queueRef resultRef
-        else bfsLoop contentDir visitedRef queueRef resultRef
-
--- --------------------------------------------------------------------------
--- Link candidate discovery
--- --------------------------------------------------------------------------
-
-findLinkCandidates :: [ContentEntry] -> Text -> Text -> RelativePath -> [LinkCandidate]
-findLinkCandidates index content masked selfPath =
-  let sortedIndex = sortBy (\a b -> compare (Down (T.length (unTitle (cePlainTitle a))))
-                                            (Down (T.length (unTitle (cePlainTitle b))))) index
-      (_, candidates) = foldl' findForEntry ([], []) sortedIndex
-  in sortBy (\a b -> compare (lcPosition a) (lcPosition b)) candidates
-  where
-    findForEntry :: ([(Int, Int)], [LinkCandidate]) -> ContentEntry -> ([(Int, Int)], [LinkCandidate])
-    findForEntry (ranges, cands) entry
-      | ceRelativePath entry == selfPath = (ranges, cands)
-      | contentAlreadyLinksTo content entry = (ranges, cands)
-      | any (\c -> ceRelativePath (lcEntry c) == ceRelativePath entry) cands = (ranges, cands)
-      | otherwise =
-          let titleTexts = unTitle (cePlainTitle entry) : maybeToList (extractMainTitle (unTitle (cePlainTitle entry)))
-          in tryPatterns ranges cands entry titleTexts
-
-    tryPatterns :: [(Int, Int)] -> [LinkCandidate] -> ContentEntry -> [Text] -> ([(Int, Int)], [LinkCandidate])
-    tryPatterns ranges cands _ [] = (ranges, cands)
-    tryPatterns ranges cands entry (titleText : rest) =
-      let pat     = "\\b" <> T.unpack (escapeRegex titleText) <> "\\b"
-          matches = findAllMatches pat (T.unpack masked)
-      in case filter (\(p, len) -> not (overlaps ranges p (p + len))) matches of
-        []             -> tryPatterns ranges cands entry rest
-        ((pos, len):_) ->
-          let matchedText = T.take len (T.drop pos content)
-              ctx         = extractContext content pos len
-              candidate   = LinkCandidate
-                { lcEntry       = entry
-                , lcMatchedText = matchedText
-                , lcPosition    = pos
-                , lcContext     = ctx
-                }
-          in ((pos, pos + len) : ranges, cands <> [candidate])
-
-    overlaps :: [(Int, Int)] -> Int -> Int -> Bool
-    overlaps ranges start end =
-      any (\(rStart, rEnd) -> start < rEnd && end > rStart) ranges
-
-findAllMatches :: String -> String -> [(Int, Int)]
-findAllMatches pat = go 0
-  where
-    go :: Int -> String -> [(Int, Int)]
-    go _offset [] = []
-    go offset s =
-      case (s =~ pat :: (String, String, String)) of
-        (_, "", _)      -> []
-        (before, match, after) ->
-          let pos = offset + length before
-              len = length match
-          in (pos, len) : go (pos + len) after
-
--- --------------------------------------------------------------------------
--- Gemini integration
--- --------------------------------------------------------------------------
-
-buildIdentificationPrompt :: Text -> [ContentEntry] -> Text
-buildIdentificationPrompt fileBody bookEntries =
-  let formatBookLine e =
-        let mainNote = case extractMainTitle (unTitle (cePlainTitle e)) of
-              Just mt -> " (also known as \"" <> mt <> "\")"
-              Nothing -> ""
-        in "- \"" <> unTitle (cePlainTitle e) <> "\"" <> mainNote <> " (" <> unRelativePath (ceRelativePath e) <> ")"
-      bookList = T.intercalate "\n" $ fmap formatBookLine bookEntries
-      systemPrompt = T.intercalate "\n"
-        [ "You are a precise editorial assistant for a knowledge base of book reports. Your job is to identify genuine book references in a document."
-        , ""
-        , "You will receive:"
-        , "1. The body text of a document."
-        , "2. A list of book titles and their file paths."
-        , ""
-        , "Your task: Determine which books from the list are genuinely referenced in the document AS BOOKS (literary works). This means the text is discussing, recommending, citing, or listing the book itself — not merely using a word that happens to match a book title."
-        , ""
-        , "Rules:"
-        , "- Return the relativePath of each book that is genuinely referenced as a book."
-        , "- A book reference may use the main title without the subtitle."
-        , "- DO NOT include a book if the matching word or phrase is used in a generic context."
-        , "- DO include a book when the text explicitly discusses, recommends, or cites it as a literary work."
-        , "- Be conservative: when in doubt, do NOT include the book."
-        , ""
-        , "Return ONLY a valid JSON array of relativePath strings for books genuinely referenced. Example: [\"books/thinking-fast-and-slow.md\", \"books/deep-learning.md\"]"
-        , "If no books are genuinely referenced, return an empty array: []"
-        , "No other text, no explanation, no markdown formatting."
-        ]
-  in systemPrompt <> "\n\nAvailable books:\n" <> bookList <> "\n\nDocument body:\n" <> fileBody
-
-identifyBooksWithGemini :: Manager -> Secret -> Gemini.Model -> Text -> [ContentEntry] -> IO (Either Text [Text])
-identifyBooksWithGemini _ _ _ _ [] = pure (Right [])
-identifyBooksWithGemini manager apiKey model fileBody bookEntries = do
-  let prompt = buildIdentificationPrompt fileBody bookEntries
-  retryLoop manager apiKey model prompt 0 initialBackoffUs
-
-retryLoop :: Manager -> Secret -> Gemini.Model -> Text -> Int -> Int -> IO (Either Text [Text])
-retryLoop manager apiKey model prompt attempt backoff = do
-  result <- Gemini.generateContent manager Gemini.Request
-    { Gemini.grPrompt           = prompt
-    , Gemini.grModel            = model
-    , Gemini.grApiKey           = apiKey
-    , Gemini.grGenerationConfig = Gemini.GenerationConfig
-        { Gemini.gcTemperature     = 0.0
-        , Gemini.gcMaxOutputTokens = 1024
-        }
-    }
-  case result of
-    Right response ->
-      pure (parseGeminiBookPaths (Gemini.responseText response))
-    Left err
-      | Gemini.isRateLimitError err && attempt < maxGeminiRetries -> do
-          putStrLn $ "  ⏳ Rate limit, retry " <> show (attempt + 1) <> "/" <> show maxGeminiRetries
-            <> " in " <> show (backoff `div` 1_000_000) <> "s"
-          threadDelay backoff
-          retryLoop manager apiKey model prompt (attempt + 1) (min (backoff * 2) maxBackoffUs)
-      | Gemini.isQuotaExhaustedError err ->
-          pure (Left ("QuotaExhausted: " <> T.pack (show err)))
-      | otherwise ->
-          pure (Left (T.pack (show err)))
-
-parseGeminiBookPaths :: Text -> Either Text [Text]
-parseGeminiBookPaths raw =
-  let cleaned = extractJsonArrayText raw
-  in case decode (encodeToLbs cleaned) :: Maybe [Text] of
-    Just paths -> Right paths
-    Nothing    -> Left ("Failed to parse Gemini response as JSON array: " <> raw)
-  where
-    encodeToLbs :: Text -> LBS.ByteString
-    encodeToLbs t = LBS.fromStrict (TE.encodeUtf8 t)
-
-extractJsonArrayText :: Text -> Text
-extractJsonArrayText txt =
-  let stripped = T.strip txt
-      noFences = stripCodeFences stripped
-  in case (T.findIndex (== '[') noFences, findLastIndex (== ']') noFences) of
-    (Just start, Just end) -> T.take (end - start + 1) (T.drop start noFences)
-    _                      -> noFences
-
-stripCodeFences :: Text -> Text
-stripCodeFences txt =
-  let noStart = fromMaybe txt (T.stripPrefix "```json" txt >>= Just . T.strip)
-      noStart' = fromMaybe noStart (T.stripPrefix "```" noStart >>= Just . T.strip)
-  in fromMaybe noStart' (T.stripSuffix "```" noStart' >>= Just . T.strip)
-
-findLastIndex :: (Char -> Bool) -> Text -> Maybe Int
-findLastIndex predicate txt = go Nothing 0 (T.unpack txt)
-  where
-    go acc _ [] = acc
-    go acc i (c : cs)
-      | predicate c = go (Just i) (i + 1) cs
-      | otherwise   = go acc (i + 1) cs
-
--- --------------------------------------------------------------------------
--- Replacement application
--- --------------------------------------------------------------------------
-
-applyReplacements :: Text -> [LinkCandidate] -> [Bool] -> Text
+applyReplacements :: Text -> [CD.LinkCandidate] -> [Bool] -> Text
 applyReplacements content candidates validations =
   let validPairs = filter snd (zip candidates validations)
-      sorted     = sortBy (\(a, _) (b, _) -> compare (Down (lcPosition a)) (Down (lcPosition b)))
+      sorted     = sortBy (\(a, _) (b, _) -> compare (Down (CD.position a)) (Down (CD.position b)))
                      validPairs
   in foldl' applyOne content (fmap fst sorted)
   where
-    applyOne :: Text -> LinkCandidate -> Text
+    applyOne :: Text -> CD.LinkCandidate -> Text
     applyOne acc candidate =
-      let pos    = lcPosition candidate
-          len    = T.length (lcMatchedText candidate)
+      let pos    = CD.position candidate
+          len    = T.length (CD.matchedText candidate)
           before = T.take pos acc
           after  = T.drop (pos + len) acc
-          wl     = formatWikilink (lcEntry candidate)
+          wl     = CD.formatWikilink (CD.entry candidate)
       in before <> wl <> after
 
--- --------------------------------------------------------------------------
--- Frontmatter updates
--- --------------------------------------------------------------------------
 
 updateFrontmatterFields :: FilePath -> [(Text, YamlValue)] -> IO ()
 updateFrontmatterFields filePath fields = do
@@ -780,15 +162,12 @@ recordLinkAnalysis filePath model timestamp =
     , ("force_analyze_links", YamlBool False)
     ]
 
--- --------------------------------------------------------------------------
--- File processing
--- --------------------------------------------------------------------------
 
-processFile :: Manager -> Secret -> Gemini.Model -> FilePath -> [ContentEntry] -> IO (Maybe FileResult)
+processFile :: Manager -> Secret -> Gemini.Model -> FilePath -> [CD.ContentEntry] -> IO (Maybe FileResult)
 processFile manager apiKey model filePath index = do
-  let contentDir   = takeDirectory (takeDirectory filePath)
-      relativePath = makeRelPathFromContentDir contentDir filePath
-  case mkRelativePath (T.pack relativePath) of
+  let contentDir      = takeDirectory (takeDirectory filePath)
+      fileRelativePath = makeRelPathFromContentDir contentDir filePath
+  case mkRelativePath (T.pack fileRelativePath) of
     Left reason -> do
       putStrLn $ "  ⚠️  Skipping " <> filePath <> ": " <> T.unpack reason
       pure Nothing
@@ -796,26 +175,26 @@ processFile manager apiKey model filePath index = do
       content <- TIO.readFile filePath
       if alreadyAnalyzed content
         then pure $ Just FileResult
-          { frRelativePath  = relPath
-          , frModified      = False
-          , frLinksAdded    = 0
-          , frUsedInference = False
+          { relativePath = relPath
+          , modified     = False
+          , linksAdded   = 0
+          , usedInference = False
           }
         else do
           let body = extractBody content
               eligibleBooks = filter
-                (\e -> ceRelativePath e /= relPath
-                    && not (contentAlreadyLinksTo content e))
+                (\e -> CD.relativePath e /= relPath
+                    && not (CD.contentAlreadyLinksTo content e))
                 index
           case eligibleBooks of
             [] -> do
               timestamp <- nowIso
               recordLinkAnalysis filePath model timestamp
               pure $ Just FileResult
-                { frRelativePath  = relPath
-                , frModified      = False
-                , frLinksAdded    = 0
-                , frUsedInference = False
+                { relativePath = relPath
+                , modified     = False
+                , linksAdded   = 0
+                , usedInference = False
                 }
             _ -> do
               geminiResult <- identifyBooksWithGemini manager apiKey model body eligibleBooks
@@ -823,42 +202,42 @@ processFile manager apiKey model filePath index = do
               recordLinkAnalysis filePath model timestamp
               case geminiResult of
                 Left _err -> pure $ Just FileResult
-                  { frRelativePath  = relPath
-                  , frModified      = False
-                  , frLinksAdded    = 0
-                  , frUsedInference = True
+                  { relativePath = relPath
+                  , modified     = False
+                  , linksAdded   = 0
+                  , usedInference = True
                   }
                 Right identifiedPaths
                   | null identifiedPaths -> pure $ Just FileResult
-                      { frRelativePath  = relPath
-                      , frModified      = False
-                      , frLinksAdded    = 0
-                      , frUsedInference = True
+                      { relativePath = relPath
+                      , modified     = False
+                      , linksAdded   = 0
+                      , usedInference = True
                       }
                   | otherwise -> do
                       let identifiedSet = Set.fromList identifiedPaths
                       contentAfterFm <- TIO.readFile filePath
                       let masked          = maskProtectedRegions contentAfterFm
-                          identifiedIndex = filter (\e -> Set.member (unRelativePath (ceRelativePath e)) identifiedSet) index
-                          candidates      = findLinkCandidates identifiedIndex contentAfterFm masked relPath
+                          identifiedIndex = filter (\e -> Set.member (unRelativePath (CD.relativePath e)) identifiedSet) index
+                          candidates      = CD.findLinkCandidates identifiedIndex contentAfterFm masked relPath
                       case candidates of
                         [] -> pure $ Just FileResult
-                          { frRelativePath  = relPath
-                          , frModified      = False
-                          , frLinksAdded    = 0
-                          , frUsedInference = True
+                          { relativePath = relPath
+                          , modified     = False
+                          , linksAdded   = 0
+                          , usedInference = True
                           }
                         _  -> do
                           let validations = replicate (length candidates) True
                               newContent  = applyReplacements contentAfterFm candidates validations
                           TIO.writeFile filePath newContent
-                          putStrLn $ "  ✏️  " <> relativePath <> ": "
+                          putStrLn $ "  ✏️  " <> fileRelativePath <> ": "
                             <> show (length candidates) <> " link(s) applied"
                           pure $ Just FileResult
-                            { frRelativePath  = relPath
-                            , frModified      = True
-                            , frLinksAdded    = length candidates
-                            , frUsedInference = True
+                            { relativePath = relPath
+                            , modified     = True
+                            , linksAdded   = length candidates
+                            , usedInference = True
                             }
 
 makeRelPathFromContentDir :: FilePath -> FilePath -> FilePath
@@ -870,42 +249,39 @@ nowIso = do
   today <- todayPacificDay
   pure (formatDay today <> "T00:00:00Z")
 
--- --------------------------------------------------------------------------
--- Orchestration
--- --------------------------------------------------------------------------
 
 run :: Manager -> Gemini.Model -> FilePath -> IO LinkingResult
 run manager model contentDir = do
   putStrLn $ "🔗 Internal linking: model=" <> T.unpack (Gemini.modelToText model)
 
-  index <- buildContentIndex contentDir
+  index <- CD.buildContentIndex contentDir
   putStrLn $ "  📚 Index: " <> show (length index) <> " books"
 
   filesToVisit <- bfsTraversal contentDir
   putStrLn $ "  🔍 BFS: " <> show (length filesToVisit) <> " files reachable"
 
   apiKey <- lookupSecret
-  fileResults <- processFiles manager apiKey model contentDir index filesToVisit
+  results <- processFiles manager apiKey model contentDir index filesToVisit
 
-  let filesModified  = length $ filter frModified fileResults
-      totalLinks     = sum $ fmap frLinksAdded fileResults
-      filesSkipped   = length $ filter (\r -> not (frModified r) && frLinksAdded r == 0) fileResults
+  let modifiedCount  = length $ filter modified results
+      totalLinks     = sum $ fmap linksAdded results
+      skippedCount   = length $ filter (\r -> not (modified r) && linksAdded r == 0) results
 
   let result = LinkingResult
-        { lrFilesVisited    = length filesToVisit
-        , lrFilesModified   = filesModified
-        , lrTotalLinksAdded = totalLinks
-        , lrFilesSkipped    = filesSkipped
-        , lrFileResults     = fileResults
+        { filesVisited    = length filesToVisit
+        , filesModified   = modifiedCount
+        , totalLinksAdded = totalLinks
+        , filesSkipped    = skippedCount
+        , fileResults     = results
         }
 
-  putStrLn $ "  🏁 Complete: " <> show (lrFilesVisited result) <> " visited, "
-    <> show filesModified <> " modified, " <> show totalLinks <> " links added, "
-    <> show filesSkipped <> " skipped"
+  putStrLn $ "  🏁 Complete: " <> show (filesVisited result) <> " visited, "
+    <> show modifiedCount <> " modified, " <> show totalLinks <> " links added, "
+    <> show skippedCount <> " skipped"
 
   pure result
 
-processFiles :: Manager -> Secret -> Gemini.Model -> FilePath -> [ContentEntry] -> [Text] -> IO [FileResult]
+processFiles :: Manager -> Secret -> Gemini.Model -> FilePath -> [CD.ContentEntry] -> [Text] -> IO [FileResult]
 processFiles manager apiKey model contentDir index filesToVisit = do
   inferenceRef <- newIORef (0 :: Int)
   resultRef    <- newIORef ([] :: [FileResult])
@@ -924,7 +300,7 @@ processFiles manager apiKey model contentDir index filesToVisit = do
         Nothing -> go infRef resRef rest
         Just fileResult -> do
           modifyIORef' resRef (fileResult :)
-          if frUsedInference fileResult
+          if usedInference fileResult
             then do
               infCount <- readIORef infRef
               modifyIORef' infRef (+ 1)
@@ -939,4 +315,3 @@ lookupSecret :: IO Secret
 lookupSecret = do
   mKey <- lookupEnv "GEMINI_API_KEY"
   pure $ Secret (maybe "" T.pack mKey)
-

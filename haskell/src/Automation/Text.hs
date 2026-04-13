@@ -8,6 +8,7 @@ module Automation.Text
   , fitPostToLimit
   , wordJaccardSimilarity
   , stripCodeFences
+  , stripEmojis
   , isEmoji
   , isEmojiOrSpace
   ) where
@@ -245,3 +246,10 @@ isEmojiOrSpace c =
     || c == '\x200D'
     || c == '\xFE0F'
     || isEmoji c
+
+stripEmojis :: Text -> Text
+stripEmojis =
+  T.intercalate " "
+    . filter (not . T.null)
+    . T.split (== ' ')
+    . T.filter (not . isEmoji)

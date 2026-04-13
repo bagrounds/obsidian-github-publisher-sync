@@ -1,6 +1,28 @@
 module Automation.InternalLinkingTest (tests) where
 
 import Automation.InternalLinking
+  ( defaultLinkingModel
+  , indexableDirs
+  , traversableDirs
+  , extractBody
+  , alreadyAnalyzed
+  , applyReplacements
+  )
+import Automation.InternalLinking.CandidateDiscovery
+  ( ContentEntry (..)
+  , LinkCandidate (..)
+  , linkableDirs
+  , escapeRegex
+  , formatWikilink
+  , extractContext
+  , extractMainTitle
+  , contentAlreadyLinksTo
+  , findLinkCandidates
+  )
+import Automation.InternalLinking.Gemini (buildIdentificationPrompt)
+import Automation.InternalLinking.LinkExtraction (extractLinkedPaths, normalizeFilePath)
+import Automation.InternalLinking.Masking (maskProtectedRegions)
+import Automation.Text (stripEmojis)
 import Automation.TestGenerators (testTitle, testRelativePath)
 import qualified Data.Text as T
 import qualified Automation.Gemini as Gemini
@@ -30,10 +52,6 @@ tests = testGroup "InternalLinking"
   , propertyTests
   ]
 
--- --------------------------------------------------------------------------
--- Constants
--- --------------------------------------------------------------------------
-
 constantsTests :: TestTree
 constantsTests = testGroup "constants"
   [ testCase "defaultLinkingModel" $
@@ -49,10 +67,6 @@ constantsTests = testGroup "constants"
         ("systems-for-public-good" `elem` traversableDirs)
   ]
 
--- --------------------------------------------------------------------------
--- stripEmojis
--- --------------------------------------------------------------------------
-
 stripEmojisTests :: TestTree
 stripEmojisTests = testGroup "stripEmojis"
   [ testCase "strips emoji from title" $
@@ -67,10 +81,6 @@ stripEmojisTests = testGroup "stripEmojis"
       assertEqual "" "A B" (stripEmojis "A   B")
   ]
 
--- --------------------------------------------------------------------------
--- escapeRegex
--- --------------------------------------------------------------------------
-
 escapeRegexTests :: TestTree
 escapeRegexTests = testGroup "escapeRegex"
   [ testCase "escapes special chars" $
@@ -81,10 +91,6 @@ escapeRegexTests = testGroup "escapeRegex"
       assertEqual "" "hello" (escapeRegex "hello")
   ]
 
--- --------------------------------------------------------------------------
--- formatWikilink
--- --------------------------------------------------------------------------
-
 formatWikilinkTests :: TestTree
 formatWikilinkTests = testGroup "formatWikilink"
   [ testCase "formats basic wikilink" $
@@ -94,10 +100,6 @@ formatWikilinkTests = testGroup "formatWikilink"
       let entry = ContentEntry (testRelativePath "books/foo.md") (testTitle "Foo") (testTitle "Foo")
       in assertBool "no .md in link" (not (T.isInfixOf ".md" (formatWikilink entry)))
   ]
-
--- --------------------------------------------------------------------------
--- extractContext
--- --------------------------------------------------------------------------
 
 extractContextTests :: TestTree
 extractContextTests = testGroup "extractContext"
@@ -112,10 +114,6 @@ extractContextTests = testGroup "extractContext"
           ctx = extractContext content 150 5
       in assertBool "has leading ellipsis" (T.isPrefixOf "..." ctx)
   ]
-
--- --------------------------------------------------------------------------
--- extractMainTitle
--- --------------------------------------------------------------------------
 
 extractMainTitleTests :: TestTree
 extractMainTitleTests = testGroup "extractMainTitle"
@@ -138,10 +136,6 @@ extractMainTitleTests = testGroup "extractMainTitle"
         (extractMainTitle "Against the Grain: A Deep History of the Earliest States")
   ]
 
--- --------------------------------------------------------------------------
--- normalizeFilePath
--- --------------------------------------------------------------------------
-
 normalizeFilePathTests :: TestTree
 normalizeFilePathTests = testGroup "normalizeFilePath"
   [ testCase "resolves parent directory references" $
@@ -163,10 +157,6 @@ normalizeFilePathTests = testGroup "normalizeFilePath"
       assertEqual "" "content/reflections/some-book.md"
         (normalizeFilePath "content/reflections/some-book.md")
   ]
-
--- --------------------------------------------------------------------------
--- maskProtectedRegions
--- --------------------------------------------------------------------------
 
 maskProtectedRegionsTests :: TestTree
 maskProtectedRegionsTests = testGroup "maskProtectedRegions"
@@ -204,10 +194,6 @@ maskProtectedRegionsTests = testGroup "maskProtectedRegions"
       in assertBool "bold markers masked" (not (T.isInfixOf "**" masked))
   ]
 
--- --------------------------------------------------------------------------
--- contentAlreadyLinksTo
--- --------------------------------------------------------------------------
-
 contentAlreadyLinksToTests :: TestTree
 contentAlreadyLinksToTests = testGroup "contentAlreadyLinksTo"
   [ testCase "detects wikilink" $
@@ -223,10 +209,6 @@ contentAlreadyLinksToTests = testGroup "contentAlreadyLinksTo"
           content = "no links here at all"
       in assertBool "no link" (not (contentAlreadyLinksTo content entry))
   ]
-
--- --------------------------------------------------------------------------
--- findLinkCandidates
--- --------------------------------------------------------------------------
 
 sampleEntry :: ContentEntry
 sampleEntry = ContentEntry (testRelativePath "books/thinking-fast.md") (testTitle "🤔 Thinking, Fast and Slow") (testTitle "Thinking, Fast and Slow")
@@ -255,7 +237,7 @@ findLinkCandidatesTests = testGroup "findLinkCandidates"
           masked  = content
           candidates = findLinkCandidates [short, long] content masked (testRelativePath "reflections/test.md")
       in case candidates of
-        (c:_) -> assertEqual "longer match wins" (testRelativePath "books/thinking-fast.md") (ceRelativePath (lcEntry c))
+        (c:_) -> assertEqual "longer match wins" (testRelativePath "books/thinking-fast.md") (relativePath (entry c))
         []    -> assertBool "should have found candidates" False
   , testCase "returns empty for no matches" $
       let content = "This has nothing to do with any book"
@@ -282,13 +264,9 @@ findLinkCandidatesTests = testGroup "findLinkCandidates"
       in do
         assertEqual "only non-self entry matches" 1 (length candidates)
         case candidates of
-          (c:_) -> assertEqual "matched entry is book-b" (testRelativePath "books/book-b.md") (ceRelativePath (lcEntry c))
+          (c:_) -> assertEqual "matched entry is book-b" (testRelativePath "books/book-b.md") (relativePath (entry c))
           [] -> assertBool "should have found one candidate" False
   ]
-
--- --------------------------------------------------------------------------
--- Subtitle matching
--- --------------------------------------------------------------------------
 
 dddEntry :: ContentEntry
 dddEntry = ContentEntry
@@ -306,8 +284,8 @@ subtitleMatchingTests = testGroup "subtitle matching"
           assertEqual "one candidate" 1 (length candidates)
           case candidates of
             (c:_) -> do
-              assertEqual "matched main title" "Domain-Driven Design" (lcMatchedText c)
-              assertEqual "correct entry" (testRelativePath "books/domain-driven-design.md") (ceRelativePath (lcEntry c))
+              assertEqual "matched main title" "Domain-Driven Design" (matchedText c)
+              assertEqual "correct entry" (testRelativePath "books/domain-driven-design.md") (relativePath (entry c))
             [] -> assertBool "should have candidates" False
   , testCase "prefers full title over main title" $
       let content = "The book Domain-Driven Design: Tackling Complexity in the Heart of Software is excellent"
@@ -317,7 +295,7 @@ subtitleMatchingTests = testGroup "subtitle matching"
           assertEqual "one candidate" 1 (length candidates)
           case candidates of
             (c:_) -> assertBool "matched full title"
-              (T.isInfixOf "Tackling Complexity" (lcMatchedText c))
+              (T.isInfixOf "Tackling Complexity" (matchedText c))
             [] -> assertBool "should have candidates" False
   , testCase "does not match subtitle prefix for entries without subtitles" $
       let content = "I read Thinking yesterday"
@@ -335,7 +313,7 @@ subtitleMatchingTests = testGroup "subtitle matching"
       in do
           assertEqual "one candidate" 1 (length candidates)
           case candidates of
-            (c:_) -> assertEqual "matched" "A Pattern Language" (lcMatchedText c)
+            (c:_) -> assertEqual "matched" "A Pattern Language" (matchedText c)
             [] -> assertBool "should have candidates" False
   , testCase "respects protected regions for main title matches" $
       let content = "## Domain-Driven Design\nBody text without any book references"
@@ -351,10 +329,6 @@ subtitleMatchingTests = testGroup "subtitle matching"
            (T.isInfixOf "Domain-Driven Design: Tackling Complexity" result)
   ]
 
--- --------------------------------------------------------------------------
--- extractBody
--- --------------------------------------------------------------------------
-
 extractBodyTests :: TestTree
 extractBodyTests = testGroup "extractBody"
   [ testCase "extracts body after frontmatter" $
@@ -364,10 +338,6 @@ extractBodyTests = testGroup "extractBody"
       let content = "No frontmatter here"
       in assertEqual "" "No frontmatter here" (extractBody content)
   ]
-
--- --------------------------------------------------------------------------
--- alreadyAnalyzed
--- --------------------------------------------------------------------------
 
 alreadyAnalyzedTests :: TestTree
 alreadyAnalyzedTests = testGroup "alreadyAnalyzed"
@@ -387,10 +357,6 @@ alreadyAnalyzedTests = testGroup "alreadyAnalyzed"
       assertBool "analyzed with different model"
         (alreadyAnalyzed "---\nlink_analysis_model: gemini-3-flash-preview\n---\nBody")
   ]
-
--- --------------------------------------------------------------------------
--- extractLinkedPaths
--- --------------------------------------------------------------------------
 
 extractLinkedPathsTests :: TestTree
 extractLinkedPathsTests = testGroup "extractLinkedPaths"
@@ -422,29 +388,25 @@ extractLinkedPathsTests = testGroup "extractLinkedPaths"
            ["books/foo.md"] paths
   ]
 
--- --------------------------------------------------------------------------
--- applyReplacements
--- --------------------------------------------------------------------------
-
 applyReplacementsTests :: TestTree
 applyReplacementsTests = testGroup "applyReplacements"
   [ testCase "applies single replacement" $
       let content = "I read Thinking, Fast and Slow yesterday"
           candidate = LinkCandidate
-            { lcEntry       = sampleEntry
-            , lcMatchedText = "Thinking, Fast and Slow"
-            , lcPosition    = 7
-            , lcContext     = ""
+            { entry       = sampleEntry
+            , matchedText = "Thinking, Fast and Slow"
+            , position    = 7
+            , context     = ""
             }
           result = applyReplacements content [candidate] [True]
       in assertBool "contains wikilink" (T.isInfixOf "[[books/thinking-fast|" result)
   , testCase "skips invalid candidates" $
       let content = "I read Thinking, Fast and Slow yesterday"
           candidate = LinkCandidate
-            { lcEntry       = sampleEntry
-            , lcMatchedText = "Thinking, Fast and Slow"
-            , lcPosition    = 7
-            , lcContext     = ""
+            { entry       = sampleEntry
+            , matchedText = "Thinking, Fast and Slow"
+            , position    = 7
+            , context     = ""
             }
           result = applyReplacements content [candidate] [False]
       in assertEqual "unchanged" content result
@@ -468,10 +430,6 @@ applyReplacementsTests = testGroup "applyReplacements"
           result = applyReplacements content [c] [True]
       in assertBool "should have wikilink" (T.isInfixOf "[[books/test|" result)
   ]
-
--- --------------------------------------------------------------------------
--- buildIdentificationPrompt
--- --------------------------------------------------------------------------
 
 buildIdentificationPromptTests :: TestTree
 buildIdentificationPromptTests = testGroup "buildIdentificationPrompt"
@@ -503,10 +461,6 @@ buildIdentificationPromptTests = testGroup "buildIdentificationPrompt"
       let prompt = buildIdentificationPrompt "body text" [sampleEntry]
       in assertBool "no also known as" (not (T.isInfixOf "also known as" prompt))
   ]
-
--- --------------------------------------------------------------------------
--- Property tests
--- --------------------------------------------------------------------------
 
 propertyTests :: TestTree
 propertyTests = testGroup "properties"

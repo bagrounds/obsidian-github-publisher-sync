@@ -9,6 +9,9 @@ Platform:
 Channel: LastWeekTonight
 tags:
 youtube: https://youtu.be/SkRw83GV-wA
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_time: 2026-04-12T00:00:00Z
+force_analyze_links: false
 ---
 [Home](../index.md) > [Videos](./index.md)  
 # 🎤💥👑 Viktor Orbán: Last Week Tonight with John Oliver (HBO)  
@@ -48,7 +51,7 @@ youtube: https://youtu.be/SkRw83GV-wA
 ## 📚 Book Recommendations  
   
 ### ↔️ Similar  
-* 📘 Twilight of Democracy by Anne Applebaum examines how right wing populists in nations like Hungary and Poland use conspiracy theories and social media to subvert democratic norms.  
+* 📘 [🥀 Twilight of Democracy: 🐍 The Seductive Lure of Authoritarianism](../books/twilight-of-democracy.md) by Anne Applebaum examines how right wing populists in nations like Hungary and Poland use conspiracy theories and social media to subvert democratic norms.  
 * 📕 How Democracies Die by Steven Levitsky and Daniel Ziblatt describes the process of democratic backsliding where elected leaders gradually weaken institutions to maintain power.  
   
 ### 🆚 Contrasting  

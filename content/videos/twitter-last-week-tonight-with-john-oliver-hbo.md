@@ -57,4 +57,7 @@ youtube: https://youtu.be/p7ZG_xWYLzI
   
 ### 🎨 Creatively Related  
 * 🕹️ Ten Arguments for Deleting Your Social Media Accounts Right Now by Jaron Lanier examines the psychological and societal costs of algorithmic manipulation.  
-* 🧠 The Chaos Machine by Max Fisher details how social media platforms are designed to trigger outrage and fuel real-world violence.
+* 🧠 The Chaos Machine by Max Fisher details how social media platforms are designed to trigger outrage and fuel real-world violence.  
+  
+## 🐦 Tweet  
+<blockquote class="twitter-tweet" data-theme="dark"><p lang="en" dir="ltr">🐦📰🤣 Twitter: Last Week Tonight with John Oliver (HBO)<br><br>🐦 Social Media Platform Changes | 💸 Monetization Systems | 🛡️ Content Moderation | 🔓 Reinstatements | 🗞️ Misinformation Spread | 🌍 Geopolitical Influence | 📈 Algorithmic Bias<a href="https://twitter.com/iamjohnoliver?ref_src=twsrc%5Etfw">@iamjohnoliver</a><a href="https://t.co/I70EmtkXZr">https://t.co/I70EmtkXZr</a></p>&mdash; Bryan Grounds (@bagrounds) <a href="https://twitter.com/bagrounds/status/2043500738203255262?ref_src=twsrc%5Etfw">April 13, 2026</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>

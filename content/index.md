@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-04-12T19:17:53-07:00
+updated: 2026-04-12T19:51:21-07:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -65,11 +65,11 @@ updated: 2026-04-12T19:17:53-07:00
 - [🤖📈 Prediction Machines: The Simple Economics of Artificial Intelligence](./books/prediction-machines-the-simple-economics-of-artificial-intelligence.md)  
   
   
-## [📺 Videos](./videos/index.md) (744)  
+## [📺 Videos](./videos/index.md) (745)  
+- [👮📹🧐🎤 Police Body Cameras: Last Week Tonight with John Oliver (HBO)](./videos/police-body-cameras-last-week-tonight-with-john-oliver-hbo.md)  
+- [🎤💥👑 Viktor Orbán: Last Week Tonight with John Oliver (HBO)](./videos/viktor-orban-last-week-tonight-with-john-oliver-hbo.md)  
 - [⭐🗽🏛️💯 Mamdani brings a unique star power to NYC governance in his first 100 days](./videos/mamdani-brings-a-unique-star-power-to-nyc-governance-in-his-first-100-days.md)  
 - [🐦📰🤣 Twitter: Last Week Tonight with John Oliver (HBO)](./videos/twitter-last-week-tonight-with-john-oliver-hbo.md)  
-- [🎤💥👑 Viktor Orbán: Last Week Tonight with John Oliver (HBO)](./videos/viktor-orban-last-week-tonight-with-john-oliver-hbo.md)  
-- [🇭🇺🗳️🏆👋 Peter Magyar wins Hungary election as Orban concedes defeat | DW News](./videos/peter-magyar-wins-hungary-election-as-orban-concedes-defeat-dw-news.md)  
   
   
 ## [🌌 Topics](./topics/index.md) (91)  

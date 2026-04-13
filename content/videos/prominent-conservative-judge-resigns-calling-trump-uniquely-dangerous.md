@@ -9,6 +9,9 @@ Platform:
 Channel: PBS NewsHour
 tags:
 youtube: https://youtu.be/kMJM9ozAsPg
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_time: 2026-04-11T00:00:00Z
+force_analyze_links: false
 ---
 [Home](../index.md) > [Videos](./index.md)  
 # 🏛️➡️🚪⚠️ Prominent conservative judge resigns, calling Trump 'uniquely dangerous'  

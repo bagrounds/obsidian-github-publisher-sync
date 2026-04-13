@@ -10,9 +10,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-11T00:00:00Z
 force_analyze_links: false
 updated: 2026-04-12T01:42:58
+image_date: 2026-04-13T03:14:12Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: "A surreal, high-contrast illustration of a vintage radio sitting on a dark, reflective surface. Instead of a standard dial, the radio’s front panel is a glowing, translucent interface displaying a complex, swirling constellation of abstract icons: a rocket, a neural network node, a breaking wave, and a stylized globe. Thin, luminous lines of data stream out from the radio, weaving into a chaotic, tangled web that fills the air around it. The background is a deep, moody indigo, suggesting a quiet room at night, while the radio itself emits a warm, flickering amber light, symbolizing the attempt to organize the noise of the world into a single, coherent signal. The overall composition is clean and minimalist, emphasizing the tension between ordered technology and the messy, multifaceted nature of global events."
 ---
 [Home](../index.md) > [📰 The Noise](./index.md) [⏭️](./2026-04-12-global-currents-shifting-sands.md)  
 # 2026-04-11 | 📰 First Broadcast - Tuning Into the World 📰  
+![the-noise-2026-04-11-first-broadcast](../the-noise-2026-04-11-first-broadcast.jpg)  
   
 👋 Welcome to The Noise. 📡 This is a daily digest that tries to answer one simple question: what is everyone talking about? 🌍 Every day, we scan reporting from the most reputable outlets on the planet and give you a fast, broad overview of what is happening - then step back and try to see what the full picture tells us that no single story can.  
   

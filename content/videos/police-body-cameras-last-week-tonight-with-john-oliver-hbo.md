@@ -9,6 +9,9 @@ Platform:
 Channel: LastWeekTonight
 tags:
 youtube: https://youtu.be/jP4_2soVZe0
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_time: 2026-04-12T00:00:00Z
+force_analyze_links: false
 ---
 [Home](../index.md) > [Videos](./index.md)  
 # 👮📹🧐🎤 Police Body Cameras: Last Week Tonight with John Oliver (HBO)  
@@ -44,7 +47,7 @@ youtube: https://youtu.be/jP4_2soVZe0
 ## 📚 Book Recommendations  
   
 ### ↔️ Similar  
-* 📘 The End of Policing by Alex S. Vitale (Verso Books) explores the history and systemic issues of modern law enforcement tools and tactics.  
+* 📘 [🛑👮 The End of Policing](../books/the-end-of-policing.md) by Alex S. Vitale (Verso Books) explores the history and systemic issues of modern law enforcement tools and tactics.  
 * 📘 Shielded: How the Police Became Untouchable by Joanna Schwartz (Viking) examines the legal structures that protect officers from accountability even when video evidence exists.  
   
 ### 🆚 Contrasting  

@@ -9,9 +9,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-01T00:00:00Z
 force_analyze_links: false
 updated: 2026-04-02T03:11:20
+image_date: 2026-04-13T20:30:39Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A high-contrast, minimalist illustration depicting a lone, sharply dressed silhouette of a man standing in a vast, sterile office corridor. The floor is polished and reflective, mirroring his figure, but the reflection is slightly distorted and fragmented. The walls are lined with rows of identical, featureless closed doors stretching into a vanishing point, emphasizing a sense of entrapment and infinite repetition. The color palette is restricted to cool grays, deep blacks, and a single, jarring accent of muted, sickly yellow light emanating from a crack under one of the doors. The overall composition should feel claustrophobic and detached, capturing the essence of corporate alienation and existential dread.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # ⚠️👤 Something Happened  
+![books-something-happened](../books-something-happened.jpg)  
 [🛒 Something Happened. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/43Hjnnr)  
   
 ## 📚 Book Report: Something Happened by Joseph Heller  

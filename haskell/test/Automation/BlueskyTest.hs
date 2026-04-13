@@ -21,6 +21,8 @@ tests = testGroup "Bluesky"
   , parsePostResponseTests
   , parseOEmbedHtmlTests
   , classifyExceptionTests
+  , toDarkModeTests
+  , needsDarkModeUpdateTests
   , needsEmbedRegenerationTests
   , extractRegenerationUrlTests
   , replaceSectionContentTests
@@ -150,6 +152,69 @@ classifyExceptionTests = testGroup "classifyException"
            other -> fail $ "Expected NetworkError, got: " <> show other
   ]
 
+toDarkModeTests :: TestTree
+toDarkModeTests = testGroup "toDarkMode"
+  [ testCase "replaces system color mode with dark" $ do
+      let input = "<blockquote class=\"bluesky-embed\" data-bluesky-embed-color-mode=\"system\"><p>content</p></blockquote>"
+          result = Bluesky.toDarkMode input
+      assertBool "should have dark color mode" $
+        "data-bluesky-embed-color-mode=\"dark\"" `T.isInfixOf` result
+      assertBool "should not have system color mode" $
+        not ("data-bluesky-embed-color-mode=\"system\"" `T.isInfixOf` result)
+
+  , testCase "replaces light color mode with dark" $ do
+      let input = "<blockquote class=\"bluesky-embed\" data-bluesky-embed-color-mode=\"light\"><p>content</p></blockquote>"
+          result = Bluesky.toDarkMode input
+      assertBool "should have dark color mode" $
+        "data-bluesky-embed-color-mode=\"dark\"" `T.isInfixOf` result
+      assertBool "should not have light color mode" $
+        not ("data-bluesky-embed-color-mode=\"light\"" `T.isInfixOf` result)
+
+  , testCase "does not modify already-dark embed" $ do
+      let input = "<blockquote class=\"bluesky-embed\" data-bluesky-embed-color-mode=\"dark\"><p>content</p></blockquote>"
+      Bluesky.toDarkMode input @?= input
+
+  , testCase "does not modify text without color mode attribute" $ do
+      let input = "<blockquote class=\"bluesky-embed\"><p>content</p></blockquote>"
+      Bluesky.toDarkMode input @?= input
+  ]
+
+needsDarkModeUpdateTests :: TestTree
+needsDarkModeUpdateTests = testGroup "needsDarkModeUpdate"
+  [ testCase "detects system-mode bluesky embed" $
+      assertBool "system-mode embed should need update" $
+        Bluesky.needsDarkModeUpdate
+          "<blockquote class=\"bluesky-embed\" data-bluesky-uri=\"at://did\" data-bluesky-embed-color-mode=\"system\"><p lang=\"en\">Real content</p></blockquote>"
+
+  , testCase "detects light-mode bluesky embed" $
+      assertBool "light-mode embed should need update" $
+        Bluesky.needsDarkModeUpdate
+          "<blockquote class=\"bluesky-embed\" data-bluesky-uri=\"at://did\" data-bluesky-embed-color-mode=\"light\"><p lang=\"en\">Real content</p></blockquote>"
+
+  , testCase "does not flag dark-mode bluesky embed" $
+      assertBool "dark-mode embed should not need update" $
+        not $ Bluesky.needsDarkModeUpdate
+          "<blockquote class=\"bluesky-embed\" data-bluesky-uri=\"at://did\" data-bluesky-embed-color-mode=\"dark\"><p lang=\"en\">Real content</p></blockquote>"
+
+  , testCase "does not flag embed without color mode attribute" $
+      assertBool "embed without color mode should not need update" $
+        not $ Bluesky.needsDarkModeUpdate
+          "<blockquote class=\"bluesky-embed\" data-bluesky-uri=\"at://did\"><p lang=\"en\">Real content</p></blockquote>"
+
+  , testCase "does not flag non-bluesky content" $
+      assertBool "non-bluesky content should not need update" $
+        not $ Bluesky.needsDarkModeUpdate
+          "data-bluesky-embed-color-mode=\"system\""
+
+  , testCase "does not flag empty text" $
+      assertBool "empty text should not need update" $
+        not $ Bluesky.needsDarkModeUpdate ""
+
+  , testCase "does not flag broken embeds" $
+      assertBool "broken embed should not need dark mode update" $
+        not $ Bluesky.needsDarkModeUpdate brokenEmbedExample
+  ]
+
 needsEmbedRegenerationTests :: TestTree
 needsEmbedRegenerationTests = testGroup "needsEmbedRegeneration"
   [ testCase "detects plain Bluesky URL as needing regeneration" $
@@ -169,10 +234,15 @@ needsEmbedRegenerationTests = testGroup "needsEmbedRegeneration"
         not $ Bluesky.needsEmbedRegeneration
           "<blockquote class=\"bluesky-embed\" data-bluesky-uri=\"at://did:plc:abc/app.bsky.feed.post/xyz\"><p lang=\"en\">Hello world, this is a real post</p></blockquote>"
 
-  , testCase "does not detect valid system-mode embed as needing regeneration" $
-      assertBool "valid system-mode embed should not need regeneration" $
-        not $ Bluesky.needsEmbedRegeneration
+  , testCase "detects valid system-mode embed as needing regeneration for dark mode" $
+      assertBool "system-mode embed should need regeneration" $
+        Bluesky.needsEmbedRegeneration
           "<blockquote class=\"bluesky-embed\" data-bluesky-uri=\"https://bsky.app/profile/bagrounds.bsky.social/post/3abc\" data-bluesky-embed-color-mode=\"system\"><p lang=\"en\">Real post content here</p></blockquote>"
+
+  , testCase "does not detect valid dark-mode embed as needing regeneration" $
+      assertBool "dark-mode embed should not need regeneration" $
+        not $ Bluesky.needsEmbedRegeneration
+          "<blockquote class=\"bluesky-embed\" data-bluesky-uri=\"https://bsky.app/profile/bagrounds.bsky.social/post/3abc\" data-bluesky-embed-color-mode=\"dark\"><p lang=\"en\">Real post content here</p></blockquote>"
 
   , testCase "does not detect empty text as needing regeneration" $
       assertBool "empty should not need regeneration" $
@@ -320,6 +390,37 @@ propertyTests = testGroup "properties"
 
   , testProperty "defaultOEmbedConfig has positive maxAttempts" $
       \() -> Bluesky.maxAttempts Bluesky.defaultOEmbedConfig > 0
+
+  , testProperty "toDarkMode is idempotent" $
+      \suffix ->
+        let base = "<blockquote class=\"bluesky-embed\" data-bluesky-embed-color-mode=\"system\">" <> T.pack suffix <> "</blockquote>"
+            once = Bluesky.toDarkMode base
+            twice = Bluesky.toDarkMode once
+        in once == twice
+
+  , testProperty "toDarkMode removes all system color mode references" $
+      \suffix ->
+        let input = "<blockquote class=\"bluesky-embed\" data-bluesky-embed-color-mode=\"system\">" <> T.pack suffix <> "</blockquote>"
+            result = Bluesky.toDarkMode input
+        in not ("data-bluesky-embed-color-mode=\"system\"" `T.isInfixOf` result)
+
+  , testProperty "toDarkMode removes all light color mode references" $
+      \suffix ->
+        let input = "<blockquote class=\"bluesky-embed\" data-bluesky-embed-color-mode=\"light\">" <> T.pack suffix <> "</blockquote>"
+            result = Bluesky.toDarkMode input
+        in not ("data-bluesky-embed-color-mode=\"light\"" `T.isInfixOf` result)
+
+  , testProperty "needsDarkModeUpdate detects system-mode embeds" $
+      \postContent ->
+        let content = T.pack (filter (`notElem` ['\0']) postContent)
+            systemEmbed = "<blockquote class=\"bluesky-embed\" data-bluesky-uri=\"at://did:plc:test/app.bsky.feed.post/abc\" data-bluesky-embed-color-mode=\"system\"><p lang=\"en\">" <> content <> " real content</p></blockquote>"
+        in Bluesky.needsDarkModeUpdate systemEmbed
+
+  , testProperty "needsDarkModeUpdate rejects dark-mode embeds" $
+      \postContent ->
+        let content = T.pack (filter (`notElem` ['\0']) postContent)
+            darkEmbed = "<blockquote class=\"bluesky-embed\" data-bluesky-uri=\"at://did:plc:test/app.bsky.feed.post/abc\" data-bluesky-embed-color-mode=\"dark\"><p lang=\"en\">" <> content <> " real content</p></blockquote>"
+        in not (Bluesky.needsDarkModeUpdate darkEmbed)
   ]
 
 brokenEmbedExample :: T.Text

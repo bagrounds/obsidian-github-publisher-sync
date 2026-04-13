@@ -154,6 +154,10 @@ test-suite automation-tests
     Automation.BlogSeriesTest
     Automation.BlogImageTest
     Automation.InternalLinkingTest
+    Automation.InternalLinking.MaskingTest
+    Automation.InternalLinking.LinkExtractionTest
+    Automation.InternalLinking.CandidateDiscoveryTest
+    Automation.InternalLinking.GeminiIntegrationTest
     Automation.BlueskyTest
     Automation.MastodonTest
     Automation.TwitterTest

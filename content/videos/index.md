@@ -5,10 +5,10 @@ aliases:
 title: 📺 Videos
 URL: https://bagrounds.org/videos
 backlinks: false
-updated: 2026-04-13T14:32:22-07:00
+updated: 2026-04-13T16:00:06-07:00
 ---
 [Home](../index.md)  
-# 📺 Videos (749)  
+# 📺 Videos (750)  
 - [💰🤑🤖💡🚀💲 $0.10/Month Runs My Entire AI Life. I'll Show You How.](./0-10-month-runs-my-entire-ai-life-ill-show-you-how.md)  
 - [📊📈📉📃👁️ 10 Charts to Understand the 900 Page Budget Bill](./10-charts-to-understand-the-900-page-budget-bill.md)  
 - [🤖🔗⬆️✅ 12-Factor Agents: Patterns of reliable LLM applications — Dex Horthy, HumanLayer](./12-factor-agents-patterns-of-reliable-llm-applications-dex-horthy-humanlayer.md)  
@@ -326,6 +326,7 @@ updated: 2026-04-13T14:32:22-07:00
 - [👑⛓️🤔 Is This What Authoritarianism Looks Like? A Debate.](./is-this-what-authoritarianism-looks-like-a-debate.md)  
 - [🇮🇹💰⬇️🆙 Italy's Radical Solution to Extreme Inequality](./italys-radical-solution-to-extreme-inequality.md)  
 - [🤖🗓️🧑‍🏫 I Tried AI as a Life Coach for 365 Days - Here’s What I Learned](./i-tried-ai-as-a-life-coach-for-365-days-heres-what-i-learned.md)  
+- [💡🤏✅ I Tried the World's Simplest Productivity Trick (it worked)](./i-tried-the-worlds-simplest-productivity-trick-it-worked.md)  
 - [📈🚀🏁🏆  It’s actually pretty easy to get ahead of 99% of people](./it-is-actually-pretty-easy-to-get-ahead-of-99-percent-of%20people.md)  
 - [📢👁️🗣️💡 It's Our Job to Make Sure People Know the Truth](./its-our-job-to-make-sure-people-know-the-truth.md)  
 - [😠✊🇩🇪🇮🇹🇷🇺🇺🇸 It’s Time to Talk About Fascism | Explainer](./its-time-to-talk-about-fascism-explainer.md)  

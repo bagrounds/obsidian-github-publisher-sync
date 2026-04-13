@@ -6,6 +6,9 @@ URL: https://bagrounds.org/books/empire-of-ants-the-hidden-world-and-extraordina
 share: true
 CTA: 🐜 Unearth ant civilization.
 affiliate link: https://amzn.to/3JGkqy9
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_time: 2026-04-11T00:00:00Z
+force_analyze_links: false
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🐜👑 Empire of Ants: The Hidden World and Extraordinary Lives of Earth's Tiny Conquerors  

@@ -10,9 +10,6 @@ import Data.Text (Text)
 data ContentDirectory
   = Reflections
   | AiBlog
-  | AutoBlogZero
-  | ChickieLoo
-  | SystemsForPublicGood
   | Articles
   | Books
   | BotChats
@@ -26,7 +23,7 @@ data ContentDirectory
 
 knownDirectories :: [ContentDirectory]
 knownDirectories =
-  [ Reflections, AiBlog, AutoBlogZero, ChickieLoo, SystemsForPublicGood
+  [ Reflections, AiBlog
   , Articles, Books, BotChats, Games, Products, Software, Tools, Topics
   ]
 
@@ -34,9 +31,6 @@ contentDirectoryToText :: ContentDirectory -> Text
 contentDirectoryToText = \case
   Reflections          -> "reflections"
   AiBlog               -> "ai-blog"
-  AutoBlogZero         -> "auto-blog-zero"
-  ChickieLoo           -> "chickie-loo"
-  SystemsForPublicGood -> "systems-for-public-good"
   Articles             -> "articles"
   Books                -> "books"
   BotChats             -> "bot-chats"
@@ -51,9 +45,6 @@ contentDirectoryFromText :: Text -> ContentDirectory
 contentDirectoryFromText = \case
   "reflections"            -> Reflections
   "ai-blog"               -> AiBlog
-  "auto-blog-zero"        -> AutoBlogZero
-  "chickie-loo"           -> ChickieLoo
-  "systems-for-public-good" -> SystemsForPublicGood
   "articles"              -> Articles
   "books"                 -> Books
   "bot-chats"             -> BotChats

@@ -20,7 +20,7 @@ URL: https://bagrounds.org/ai-blog/2026-04-12-6-forward-compatible-image-backfil
 
 ### 🏷️ Extending ContentDirectory with AutoBlogSeries
 
-🧠 The key insight was that the thirteen known content directories like Reflections, Books, and AiBlog are truly a closed set of well-known directories, but auto blog series are an open set discovered at runtime from JSON configs. 💡 Rather than abandon the strongly typed ContentDirectory ADT entirely, we added a single parameterized constructor: AutoBlogSeries Text. 🔒 This preserves type safety for the known directories while allowing new series to be represented without code changes.
+🧠 The key insight was that the ten core content directories like Reflections, Books, and AiBlog are truly a closed set of well-known directories, but auto blog series are an open set discovered at runtime from JSON configs. 💡 Rather than abandon the strongly typed ContentDirectory ADT entirely, we added a single parameterized constructor: AutoBlogSeries Text. 🔒 This preserves type safety for the known directories while allowing new series to be represented without code changes. 🚫 Auto blog series like chickie-loo, auto-blog-zero, and systems-for-public-good are intentionally excluded from the closed set to avoid duplicating what the JSON configs already declare.
 
 🔀 The imageBackfillContentDirsFrom function now derives the full list of content directories by combining the known constructors with AutoBlogSeries wrappers around each discovered series identifier. 📦 The round-trip functions contentDirectoryToText and contentDirectoryFromText handle the mapping between the ADT and the filesystem directory names, falling back to AutoBlogSeries for any unrecognized name.
 

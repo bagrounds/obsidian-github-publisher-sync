@@ -2,7 +2,6 @@ module Automation.PacificTime
   ( todayPacificDay
   , formatDay
   , formatDayHuman
-  , pacificTimeZone
   , pacificHour
   , pacificToUtcHour
   ) where
@@ -11,23 +10,21 @@ import Data.Text (Text)
 import qualified Data.Text as T
 import Data.Time
   ( Day
-  , DayOfWeek (..)
-  , TimeZone (..)
+  , LocalTime (..)
+  , TimeOfDay (..)
   , UTCTime (..)
-  , addDays
-  , dayOfWeek
   , defaultTimeLocale
   , formatTime
-  , fromGregorian
   , getCurrentTime
   , localDay
   , localTimeOfDay
-  , secondsToDiffTime
-  , timeZoneMinutes
   , todHour
-  , toGregorian
-  , utcToLocalTime
   )
+import Data.Time.Zones (TZ, localTimeToUTCTZ, utcToLocalTimeTZ)
+import Data.Time.Zones.All (TZLabel (..), tzByLabel)
+
+pacificTZ :: TZ
+pacificTZ = tzByLabel America__Los_Angeles
 
 formatDay :: Day -> Text
 formatDay = T.pack . formatTime defaultTimeLocale "%Y-%m-%d"
@@ -36,46 +33,15 @@ formatDayHuman :: Day -> Text
 formatDayHuman day = T.pack $ formatTime defaultTimeLocale "%A, %B %-d, %Y" day
 
 todayPacificDay :: IO Day
-todayPacificDay = do
-  utcNow <- getCurrentTime
-  let tz = pacificTimeZone utcNow
-      localTime = utcToLocalTime tz utcNow
-  pure $ localDay localTime
+todayPacificDay =
+  localDay . utcToLocalTimeTZ pacificTZ <$> getCurrentTime
 
 pacificHour :: UTCTime -> Int
 pacificHour utcNow =
-  todHour (localTimeOfDay (utcToLocalTime (pacificTimeZone utcNow) utcNow))
+  todHour (localTimeOfDay (utcToLocalTimeTZ pacificTZ utcNow))
 
 pacificToUtcHour :: Int -> Day -> Int
 pacificToUtcHour hour day =
-  let referenceUtc = UTCTime day (secondsToDiffTime (12 * 3600))
-      offsetMinutes = timeZoneMinutes (pacificTimeZone referenceUtc)
-  in (hour - (offsetMinutes `div` 60)) `mod` 24
-
-pacificTimeZone :: UTCTime -> TimeZone
-pacificTimeZone utcNow
-  | isPacificDST utcNow = TimeZone (-420) True "PDT"
-  | otherwise            = TimeZone (-480) False "PST"
-
-isPacificDST :: UTCTime -> Bool
-isPacificDST utcNow =
-  let (year, _, _) = toGregorian (utctDay utcNow)
-      dstStart = UTCTime (nthSundayOf 2 year 3) (secondsToDiffTime (10 * 3600))
-      dstEnd   = UTCTime (nthSundayOf 1 year 11) (secondsToDiffTime (9 * 3600))
-  in utcNow >= dstStart && utcNow < dstEnd
-
-nthSundayOf :: Int -> Integer -> Int -> Day
-nthSundayOf n year month =
-  let first = fromGregorian year month 1
-      offset = daysUntilSunday (dayOfWeek first)
-  in addDays (fromIntegral (offset + 7 * (n - 1))) first
-
-daysUntilSunday :: DayOfWeek -> Int
-daysUntilSunday = \case
-  Sunday    -> 0
-  Monday    -> 6
-  Tuesday   -> 5
-  Wednesday -> 4
-  Thursday  -> 3
-  Friday    -> 2
-  Saturday  -> 1
+  let localTime = LocalTime day (TimeOfDay hour 0 0)
+      utcTime = localTimeToUTCTZ pacificTZ localTime
+  in floor (utctDayTime utcTime / 3600) `mod` 24

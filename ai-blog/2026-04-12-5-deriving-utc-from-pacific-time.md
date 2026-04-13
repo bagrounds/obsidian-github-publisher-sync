@@ -16,9 +16,9 @@ URL: https://bagrounds.org/ai-blog/2026-04-12-5-deriving-utc-from-pacific-time
 
 ## 💡 The Solution
 
-🧮 Instead of storing a static UTC time string, we now compute it dynamically. 🆕 A new pure function called pacificToUtcHour takes a Pacific hour and a calendar day, determines whether that day falls in PST or PDT, and returns the correct UTC hour.
+🧮 Instead of storing a static UTC time string, we now compute it dynamically using the standard IANA timezone database via the tz library. 🆕 A new pure function called pacificToUtcHour takes a Pacific hour and a calendar day, and returns the correct UTC hour by delegating to the tz library's built-in DST rules for America/Los_Angeles.
 
-🔧 The function works by constructing a reference UTC time at noon on the given day, passing it to the existing pacificTimeZone function to get the timezone offset, then applying simple arithmetic. ➕ For PST dates the offset is negative 480 minutes, so the function adds 8 hours. ➕ For PDT dates the offset is negative 420 minutes, so it adds 7 hours. 🔢 A modulo 24 operation handles any day boundary wraparound.
+📦 The tz library bundles the Olson timezone database and provides localTimeToUTCTZ for converting local times to UTC. 🔧 Our function constructs a LocalTime from the given day and hour, passes it to localTimeToUTCTZ with the Pacific timezone, then extracts the UTC hour from the result. 🧹 This replaced over 30 lines of hand-rolled DST detection logic with a single library call backed by the authoritative IANA timezone rules.
 
 ## 🧹 What Changed
 
@@ -34,7 +34,9 @@ URL: https://bagrounds.org/ai-blog/2026-04-12-5-deriving-utc-from-pacific-time
 
 ## 🔬 Design Decisions
 
-🧅 The new function is pure and lives in the PacificTime module alongside its inverse, pacificHour. 🏗️ This follows the functional core, imperative shell principle. 📐 No IO is needed because DST status depends only on the calendar date.
+🧅 The new function is pure and lives in the PacificTime module alongside its inverse, pacificHour. 🏗️ This follows the functional core, imperative shell principle. 📐 No IO is needed because the tz library's tzByLabel compiles the timezone data into the binary at build time.
+
+📦 The entire PacificTime module was simplified by replacing the hand-rolled DST detection with the tz library. 🗑️ The old isPacificDST, nthSundayOf, daysUntilSunday, and pacificTimeZone functions were all deleted. 🔄 Now a single pacificTZ value using tzByLabel America__Los_Angeles handles all timezone conversions with the standard IANA rules.
 
 🤔 We considered removing scheduleHourPacific from BlogSeriesConfig entirely and only computing the UTC time at the call site. 🎯 But carrying the schedule hour in the config is natural since it is a property of the series, and the computation belongs closest to where the cutoff is assembled.
 

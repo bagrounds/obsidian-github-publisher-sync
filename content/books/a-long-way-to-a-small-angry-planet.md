@@ -12,9 +12,13 @@ updated: 2026-03-25T06:24:16.189Z
 force_analyze_links: false
 link_analysis_time: 2026-03-25T11:17:43.615Z
 link_analysis_model: gemini-3.1-flash-lite-preview
+image_date: 2026-04-13T22:26:27Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A cozy, stylized interior of a spaceship cabin bathed in warm, ambient lighting. Through a large circular viewport, a soft-focus nebula glows in shades of deep indigo, violet, and gold. In the foreground, a cluttered but inviting common area features plush, mismatched cushions, floating mugs of tea, and a small, thriving hydroponic garden with glowing bioluminescent plants. The aesthetic is lived-in and peaceful, emphasizing a sense of home within the vastness of space. A diverse, blurred silhouette of a crew member is visible in the corner, leaning against a console, contributing to a calm, character-focused atmosphere. The overall color palette uses deep space blues contrasted with warm, inviting oranges and soft greens.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # ➡️🌌🚀😡 A Long Way to a Small, Angry Planet  
+![books-a-long-way-to-a-small-angry-planet](../books-a-long-way-to-a-small-angry-planet.jpg)  
 [🛒 A Long Way to a Small, Angry Planet. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4plv8K6)  
   
 ## 🤖 AI Summary  

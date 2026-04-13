@@ -9,6 +9,9 @@ Platform:
 Channel: Heather Cox Richardson
 tags:
 youtube: https://www.youtube.com/embed/mE5NDVpuu0M
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_time: 2026-04-04T00:00:00Z
+force_analyze_links: false
 ---
 [Home](../index.md) > [Videos](./index.md)  
 # 🏛️🗣️📅 Politics Chat, October 21, 2025  
@@ -60,7 +63,7 @@ A: 📈 The *No Kings* rallies were significant because they demonstrated that t
   
 **Contrasting (Focus on conservative or authoritarian perspectives and ideology):**  
   
-* The Conservative Sensibility by George F. Will: 🧠 Offers a comprehensive defense of **American conservatism**, emphasizing the intellectual and historical foundations of a philosophy that seeks to limit government power.  
+* [🐘🧠 The Conservative Sensibility by George F. Will](../books/the-conservative-sensibility.md): 🧠 Offers a comprehensive defense of **American conservatism**, emphasizing the intellectual and historical foundations of a philosophy that seeks to limit government power.  
 * Project 2025: A Mandate for Leadership edited by Paul Dans and Steven Groves (The Heritage Foundation): 🛠️ This is the definitive blueprint for a radical restructuring of the executive branch and federal policy, providing a contrasting perspective to the video's concerns about authoritarian overreach. (Source 1.5)  
 * Alienated America by Timothy P. Carney: 💔 Explores the dissolution of American institutions like community and family, arguing that this erosion contributed to the rise of populism and the political anger of the working class.  
   

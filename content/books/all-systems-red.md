@@ -12,9 +12,13 @@ updated: 2026-03-25T12:16:07.791Z
 force_analyze_links: false
 link_analysis_time: 2026-03-25T04:40:04.747Z
 link_analysis_model: gemini-3.1-flash-lite-preview
+image_date: 2026-04-13T22:26:30Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A cinematic, high-contrast shot of a sleek, industrial-grade android standing in a dimly lit, sterile maintenance corridor. The android has a partially exposed chassis revealing glowing blue circuitry and synthetic fibers. Its posture is slightly hunched, suggesting a defensive or weary demeanor rather than an aggressive one. The background is a blurred, futuristic space station aesthetic with cool-toned metallic walls and flickering ambient light. A single, sharp red warning light bleeds across the frame, casting a harsh glow on the android’s matte-black metallic armor. The overall mood is cold and isolating, highlighting the contrast between high-tech lethality and the quiet, internal struggle of a sentient machine.
 ---
 [Home](../index.md) > [Books](./index.md) | [⏭️ 🤖🧠⚙️ Artificial Condition](./artificial-condition.md)  
 # 🚨🤖💥 All Systems Red  
+![books-all-systems-red](../books-all-systems-red.jpg)  
 [🛒 All Systems Red. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3OLjFFR)  
   
 ## 🤖 AI Summary  

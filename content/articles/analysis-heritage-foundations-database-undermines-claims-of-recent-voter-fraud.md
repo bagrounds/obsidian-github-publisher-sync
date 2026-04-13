@@ -6,6 +6,9 @@ title: "🏛️🔍❌🗳️ Analysis: Heritage Foundation’s Database Undermi
 URL: https://bagrounds.org/articles/analysis-heritage-foundations-database-undermines-claims-of-recent-voter-fraud
 Author:
 tags:
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_time: 2026-04-07T00:00:00Z
+force_analyze_links: false
 ---
 [Home](../index.md) > [Articles](./index.md)  
 # [🏛️🔍❌🗳️ Analysis: Heritage Foundation’s Database Undermines Claims of Recent Voter Fraud](https://www.brennancenter.org/our-work/analysis-opinion/analysis-heritage-foundations-database-undermines-claims-recent-voter)  
@@ -36,7 +39,7 @@ tags:
   
 ## 📚 Book Recommendations  
 ### ↔️ Similar  
-* 📜 The Right to Vote: The Contested History of Democracy in the United States by Alexander Keyssar: This book provides historical context for the ongoing struggle over voting access and restrictions in American history.  
+* 📜 [🗳️🇺🇸 The Right to Vote: The Contested History of Democracy in the United States](../books/the-right-to-vote-the-contested-history-of-democracy-in-the-united-states.md) by Alexander Keyssar: This book provides historical context for the ongoing struggle over voting access and restrictions in American history.  
 * 📢 Give Us the Ballot: The Modern Struggle for Voting Rights in America by Ari Berman: It chronicles the post-Civil Rights era efforts to restrict and expand the franchise, focusing on the legacy of the Voting Rights Act.  
 ### 🆚 Contrasting  
 * 🚨 Who's Counting? How Fraudsters and Bureaucrats Put Your Vote at Risk by John Fund and Hans von Spakovsky: This book presents an argument supporting the need for strict election security measures and highlights vulnerabilities in the system, reflecting a contrasting perspective.  

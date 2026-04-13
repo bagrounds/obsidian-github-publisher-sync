@@ -5,10 +5,10 @@ aliases:
 title: 📺 Videos
 URL: https://bagrounds.org/videos
 backlinks: false
-updated: 2026-04-12T19:51:21-07:00
+updated: 2026-04-12T20:14:03-07:00
 ---
 [Home](../index.md)  
-# 📺 Videos (745)  
+# 📺 Videos (746)  
 - [💰🤑🤖💡🚀💲 $0.10/Month Runs My Entire AI Life. I'll Show You How.](./0-10-month-runs-my-entire-ai-life-ill-show-you-how.md)  
 - [📊📈📉📃👁️ 10 Charts to Understand the 900 Page Budget Bill](./10-charts-to-understand-the-900-page-budget-bill.md)  
 - [🤖🔗⬆️✅ 12-Factor Agents: Patterns of reliable LLM applications — Dex Horthy, HumanLayer](./12-factor-agents-patterns-of-reliable-llm-applications-dex-horthy-humanlayer.md)  
@@ -411,6 +411,7 @@ updated: 2026-04-12T19:51:21-07:00
 - [Optimizing Webservers for High Throughput and Low Latency | Dropbox](./optimizing-webservers-for-high-throughput-and-low-latency-dropbox.md)  
 - [👩‍⚖️🛑🇺🇸🏛️ Oregon governor calls Trump's actions 'an abuse of power and threat to our democracy'](./oregon-governor-calls-trumps-actions-an-abuse-of-power-and-threat-to-our-democracy.md)  
 - [➡️⚖️💪 Our work continues, without fear or favor](./our-work-continues-without-fear-or-favor.md)  
+- [👩‍⚖️🌪️🐘 Pam Bondi’s Tumultuous Tenure as Trump's Attorney General | The Daily Show](./pam-bondis-tumultuous-tenure-as-trumps-attorney-general-the-daily-show.md)  
 - [🗺️♟️🤖🤝 Parables on the Power of Planning in AI: From Poker to Diplomacy: Noam Brown (OpenAI)](./parables-on-the-power-of-planning-in-ai-from-poker-to-diplomacy-noam-brown-openai.md)  
 - [📺📰🗓️ PBS News Hour full episode, Jan. 22, 2026](./pbs-news-hour-full-episode-jan-22-2026.md)  
 - [⚔️💥🏛️🇮🇱🇮🇷🪧🇺🇸🎂 PBS News Weekend full episode, June 14, 2025](./pbs-news-weekend-full-episode-june-14-2025.md)  

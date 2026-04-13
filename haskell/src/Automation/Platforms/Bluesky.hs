@@ -16,6 +16,8 @@ module Automation.Platforms.Bluesky
   , extractPostId
   , extractDid
   , buildPostUrl
+  , toDarkMode
+  , needsDarkModeUpdate
   , isBrokenEmbed
   , extractPostUrlFromBrokenEmbed
   , needsEmbedRegeneration
@@ -433,6 +435,7 @@ fetchOEmbed manager postUrl = do
   let url = T.unpack oembedBaseUrl
               <> "?url=" <> T.unpack (unUrl postUrl)
               <> "&format=json"
+              <> "&theme=dark"
   result <- try @SomeException $ do
     request <- parseRequest url
     response <- httpLbs request manager
@@ -480,6 +483,19 @@ tryOEmbedWithRetry manager config postUrl attempt = do
                    <> " attempts: " <> show err <> " — using placeholder link"
       pure (unUrl postUrl)
 
+toDarkMode :: Text -> Text
+toDarkMode =
+    T.replace "data-bluesky-embed-color-mode=\"system\"" "data-bluesky-embed-color-mode=\"dark\""
+  . T.replace "data-bluesky-embed-color-mode=\"light\"" "data-bluesky-embed-color-mode=\"dark\""
+
+needsDarkModeUpdate :: Text -> Bool
+needsDarkModeUpdate section =
+  "<blockquote" `T.isInfixOf` section
+    && "bluesky-embed" `T.isInfixOf` section
+    && not (isBrokenEmbed section)
+    && ("data-bluesky-embed-color-mode=\"system\"" `T.isInfixOf` section
+         || "data-bluesky-embed-color-mode=\"light\"" `T.isInfixOf` section)
+
 isBrokenEmbed :: Text -> Bool
 isBrokenEmbed section =
   let trimmed = T.strip section
@@ -516,7 +532,7 @@ extractUrlFromUri uriValue
 
 needsEmbedRegeneration :: Text -> Bool
 needsEmbedRegeneration section =
-  isPlaceholderLink section || isBrokenEmbed section
+  isPlaceholderLink section || isBrokenEmbed section || needsDarkModeUpdate section
 
 isPlaceholderLink :: Text -> Bool
 isPlaceholderLink section =

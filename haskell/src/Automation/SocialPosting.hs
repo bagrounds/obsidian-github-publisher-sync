@@ -369,7 +369,7 @@ autoPost manager vaultDir imageBackfillContentDirs = do
     Left exception -> putStrLn $ "  ⚠️  Bluesky embed regeneration failed: " <> show exception
     Right () -> pure ()
 
-  mastodonRegenerateResult <- try (regenerateMastodonEmbeds manager vaultDir)
+  mastodonRegenerateResult <- try (regenerateMastodonEmbeds vaultDir)
     :: IO (Either SomeException ())
   case mastodonRegenerateResult of
     Left exception -> putStrLn $ "  ⚠️  Mastodon embed regeneration failed: " <> show exception
@@ -427,7 +427,6 @@ tryRegenerateFile manager filePath = do
     else do
       let sectionContent = extractSectionContent blueskyHeader content
       case Bluesky.extractRegenerationUrl sectionContent of
-        Nothing -> pure 0
         Just postUrl -> do
           putStrLn $ "  🔄 Regenerating embed for: " <> filePath
           oembedResult <- Bluesky.fetchOEmbed manager postUrl
@@ -440,6 +439,15 @@ tryRegenerateFile manager filePath = do
             Left err -> do
               putStrLn $ "  ⚠️  oEmbed still failing for " <> filePath <> ": " <> show err
               pure 0
+        Nothing
+          | Bluesky.needsDarkModeUpdate sectionContent -> do
+              putStrLn $ "  🌑 Updating Bluesky embed to dark mode: " <> filePath
+              let darkContent = Bluesky.toDarkMode sectionContent
+                  newContent = Bluesky.replaceSectionContent content darkContent
+              TIO.writeFile filePath newContent
+              putStrLn $ "  ✅ Updated: " <> filePath
+              pure 1
+          | otherwise -> pure 0
 
 extractSectionContent :: Text -> Text -> Text
 extractSectionContent header content =
@@ -453,35 +461,27 @@ extractSectionContent header content =
   where
     isNextSection line = "## " `T.isPrefixOf` T.stripStart line
 
-regenerateMastodonEmbeds :: Manager -> FilePath -> IO ()
-regenerateMastodonEmbeds manager vaultDir = do
+regenerateMastodonEmbeds :: FilePath -> IO ()
+regenerateMastodonEmbeds vaultDir = do
   putStrLn "  🔄 Scanning for Mastodon embeds needing dark mode update..."
   files <- findMarkdownFiles vaultDir
-  regenerated <- mapM (tryRegenerateMastodonFile manager) files
+  regenerated <- mapM tryDarkenMastodonFile files
   let count = sum regenerated
   if count > 0
     then putStrLn $ "  ✅ Updated " <> show count <> " Mastodon embed(s) to dark mode"
     else putStrLn "  📭 No Mastodon embeds need dark mode update"
 
-tryRegenerateMastodonFile :: Manager -> FilePath -> IO Int
-tryRegenerateMastodonFile manager filePath = do
+tryDarkenMastodonFile :: FilePath -> IO Int
+tryDarkenMastodonFile filePath = do
   content <- TIO.readFile filePath
   let mastodonHeader = Mastodon.sectionHeader
       sectionContent = extractSectionContent mastodonHeader content
-      shouldRegenerate = mastodonHeader `T.isInfixOf` content
-                           && Mastodon.needsEmbedRegeneration sectionContent
-  case (shouldRegenerate, Mastodon.extractRegenerationUrl sectionContent) of
-    (True, Just postUrl) -> do
-      let instanceUrl = fromMaybe "" (Mastodon.extractInstanceUrl postUrl)
-      putStrLn $ "  🔄 Updating Mastodon embed to dark mode: " <> filePath
-      oembedResult <- Mastodon.fetchOEmbed manager instanceUrl postUrl
-      case oembedResult of
-        Right newEmbed -> do
-          let newContent = Mastodon.replaceSectionContent content newEmbed
-          TIO.writeFile filePath newContent
-          putStrLn $ "  ✅ Updated: " <> filePath
-          pure 1
-        Left err -> do
-          putStrLn $ "  ⚠️  Mastodon oEmbed failed for " <> filePath <> ": " <> show err
-          pure 0
-    _ -> pure 0
+  if mastodonHeader `T.isInfixOf` content && Mastodon.needsDarkModeUpdate sectionContent
+    then do
+      putStrLn $ "  🌑 Updating Mastodon embed to dark mode: " <> filePath
+      let darkContent = Mastodon.toDarkMode sectionContent
+          newContent = Mastodon.replaceSectionContent content darkContent
+      TIO.writeFile filePath newContent
+      putStrLn $ "  ✅ Updated: " <> filePath
+      pure 1
+    else pure 0

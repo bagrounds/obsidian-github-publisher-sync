@@ -369,7 +369,7 @@ autoPost manager vaultDir imageBackfillContentDirs = do
     Left exception -> putStrLn $ "  ⚠️  Bluesky embed regeneration failed: " <> show exception
     Right () -> pure ()
 
-  mastodonRegenerateResult <- try (regenerateMastodonEmbeds manager vaultDir)
+  mastodonRegenerateResult <- try (regenerateMastodonEmbeds vaultDir)
     :: IO (Either SomeException ())
   case mastodonRegenerateResult of
     Left exception -> putStrLn $ "  ⚠️  Mastodon embed regeneration failed: " <> show exception
@@ -461,8 +461,8 @@ extractSectionContent header content =
   where
     isNextSection line = "## " `T.isPrefixOf` T.stripStart line
 
-regenerateMastodonEmbeds :: Manager -> FilePath -> IO ()
-regenerateMastodonEmbeds _manager vaultDir = do
+regenerateMastodonEmbeds :: FilePath -> IO ()
+regenerateMastodonEmbeds vaultDir = do
   putStrLn "  🔄 Scanning for Mastodon embeds needing dark mode update..."
   files <- findMarkdownFiles vaultDir
   regenerated <- mapM tryDarkenMastodonFile files

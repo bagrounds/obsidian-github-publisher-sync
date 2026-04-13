@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-04-12T16:13:11-07:00
+updated: 2026-04-12T17:42:24-07:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -21,11 +21,11 @@ updated: 2026-04-12T16:13:11-07:00
 - [2026-04-09 | 💡 Make 🫂 Shared 🎓 Learning 🎯 Qualified 📐 Design 🚪 Gate 🤖 Knowing 💬 Chat 🏡 Home 📺🐔🤖🏛️🤖🐲](./reflections/2026-04-09.md)  
   
   
-## [🤖 AI Blog](./ai-blog/index.md) (140)  
+## [🤖 AI Blog](./ai-blog/index.md) (141)  
+- [2026-04-12 | 🌑 Dark Mode Social Media Embeds 🤖](./ai-blog/2026-04-12-4-dark-mode-social-media-embeds.md)  
 - [2026-04-12 | 🌟 Launching Positivity Bias — A New Auto Blog Series 🤖](./ai-blog/2026-04-12-3-launching-positivity-bias-a-new-auto-blog-series.md)  
 - [2026-04-12 | 🛡️ Stripping LLM Preamble from Reflection Titles 🤖](./ai-blog/2026-04-12-2-stripping-llm-preamble-from-reflection-titles.md)  
 - [2026-04-12 | 🪞 Fixing Missing Reflection Images 🖼️](./ai-blog/2026-04-12-1-fixing-missing-reflection-images.md)  
-- [2026-04-11 | 🦋 Fixing Broken Bluesky Embeds 🔧](./ai-blog/2026-04-11-7-fixing-broken-bluesky-embeds.md)  
   
   
 ## [🤖 Auto Blog Zero](./auto-blog-zero/index.md) (33)  
@@ -65,11 +65,11 @@ updated: 2026-04-12T16:13:11-07:00
 - [🤖📈 Prediction Machines: The Simple Economics of Artificial Intelligence](./books/prediction-machines-the-simple-economics-of-artificial-intelligence.md)  
   
   
-## [📺 Videos](./videos/index.md) (741)  
+## [📺 Videos](./videos/index.md) (742)  
+- [🎤💥👑 Viktor Orbán: Last Week Tonight with John Oliver (HBO)](./videos/viktor-orban-last-week-tonight-with-john-oliver-hbo.md)  
 - [🇭🇺🗳️🏆👋 Peter Magyar wins Hungary election as Orban concedes defeat | DW News](./videos/peter-magyar-wins-hungary-election-as-orban-concedes-defeat-dw-news.md)  
 - [🏛️💬 Politics Chat, April 7, 2026](./videos/politics-chat-april-7-2026.md)  
 - [⚖️🏛️🗣️ Antitrust and The Rule of Law: A Conversation with Former FTC Chair Lina Khan](./videos/antitrust-and-the-rule-of-law-a-conversation-with-former-ftc-chair-lina-khan.md)  
-- [🇫🇮🇺🇸🗣️👑📢 Finnish President Stubb on Trump, MAGA, JD Vance Speech, Rubio & US Foreign Policy | AC1G](./videos/finnish-president-stubb-on-trump-maga-jd-vance-speech-rubio-us-foreign-policy-ac1g.md)  
   
   
 ## [🌌 Topics](./topics/index.md) (91)  

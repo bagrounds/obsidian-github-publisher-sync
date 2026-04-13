@@ -552,7 +552,6 @@ tests = testGroup "BlogImage"
                 in noH1 ==> insertImageEmbed t "test.jpg" == t
       ]
   , parseDateFromFilenameTests
-  , contentDirectoryTests
   , checkCandidateEligibilityTests
   , parseDateFromFrontmatterTests
   , undatedFileFallbackTests
@@ -573,57 +572,40 @@ parseDateFromFilenameTests = testGroup "parseDateFromFilename"
       parseDateFromFilename "abc" @?= Nothing
   ]
 
-contentDirectoryTests :: TestTree
-contentDirectoryTests = testGroup "ContentDirectory"
-  [ testCase "round-trips all directories" $
-      assertBool "all round-trip" $
-        all (\directory -> contentDirectoryFromText (contentDirectoryToText directory) == Just directory)
-          [minBound .. maxBound]
-
-  , testCase "rejects unknown directory" $
-      contentDirectoryFromText "unknown-dir" @?= Nothing
-
-  , testCase "reflections maps correctly" $
-      contentDirectoryToText Reflections @?= "reflections"
-
-  , testCase "parses chickie-loo" $
-      contentDirectoryFromText "chickie-loo" @?= Just ChickieLoo
-  ]
-
 checkCandidateEligibilityTests :: TestTree
 checkCandidateEligibilityTests = testGroup "checkCandidateEligibility"
   [ testCase "eligible file without image returns Eligible False" $
-      checkCandidateEligibility Books (fromGregorian 2026 4 8) "2026-04-01-post.md"
+      checkCandidateEligibility "books" (fromGregorian 2026 4 8) "2026-04-01-post.md"
         "---\ntitle: My Post\n---\nSome content"
         @?= Eligible False
 
   , testCase "eligible file needing regeneration returns Eligible True" $
-      checkCandidateEligibility Books (fromGregorian 2026 4 8) "2026-04-01-post.md"
+      checkCandidateEligibility "books" (fromGregorian 2026 4 8) "2026-04-01-post.md"
         "---\ntitle: My Post\nregenerate_image: true\n---\n![[attachments/old.jpg]]\nSome content"
         @?= Eligible True
 
   , testCase "file with embedded image returns Ineligible AlreadyHasImage" $
-      checkCandidateEligibility Books (fromGregorian 2026 4 8) "2026-04-01-post.md"
+      checkCandidateEligibility "books" (fromGregorian 2026 4 8) "2026-04-01-post.md"
         "---\ntitle: My Post\n---\n![[attachments/photo.jpg]]\nSome content"
         @?= Ineligible AlreadyHasImage
 
   , testCase "future reflection returns Ineligible FutureReflection" $
-      checkCandidateEligibility Reflections (fromGregorian 2026 4 8) "2026-04-09.md"
+      checkCandidateEligibility "reflections" (fromGregorian 2026 4 8) "2026-04-09.md"
         "---\ntitle: Future\n---\nbody"
         @?= Ineligible FutureReflection
 
   , testCase "past reflection without image is eligible" $
-      checkCandidateEligibility Reflections (fromGregorian 2026 4 8) "2026-04-07.md"
+      checkCandidateEligibility "reflections" (fromGregorian 2026 4 8) "2026-04-07.md"
         "---\ntitle: Past Day\n---\nbody"
         @?= Eligible False
 
   , testCase "untitled reflection returns Ineligible UntitledReflection" $
-      checkCandidateEligibility Reflections (fromGregorian 2026 4 8) "2026-04-07.md"
+      checkCandidateEligibility "reflections" (fromGregorian 2026 4 8) "2026-04-07.md"
         "---\ntitle: \"2026-04-07\"\n---\n# 2026-04-07\nbody"
         @?= Ineligible UntitledReflection
 
   , testCase "non-reflection directory ignores date comparison" $
-      checkCandidateEligibility Books (fromGregorian 2026 4 8) "2026-04-09-future.md"
+      checkCandidateEligibility "books" (fromGregorian 2026 4 8) "2026-04-09-future.md"
         "---\ntitle: Future Post\n---\nbody"
         @?= Eligible False
   ]

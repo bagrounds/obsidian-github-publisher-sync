@@ -3,10 +3,10 @@ module Automation.SocialPosting.ContentDiscoveryTest (tests) where
 import qualified Data.Set as Set
 import Data.Text (Text)
 import qualified Data.Text as T
-import Data.Time (UTCTime (..), fromGregorian, secondsToDiffTime)
+import Data.Time (Day, UTCTime (..), fromGregorian, secondsToDiffTime)
 import Data.Time.LocalTime (TimeOfDay (..))
 import Test.Tasty (TestTree, testGroup)
-import Test.Tasty.HUnit (assertEqual, assertBool, testCase)
+import Test.Tasty.HUnit (assertEqual, assertBool, testCase, (@?=))
 import Test.Tasty.QuickCheck (testProperty)
 import qualified Test.Tasty.QuickCheck as QC
 
@@ -17,6 +17,9 @@ import Automation.SocialPosting.ContentDiscovery
 defaultContentIds :: [Text]
 defaultContentIds = imageBackfillContentIdsFrom []
 
+today :: Day
+today = fromGregorian 2026 4 10
+
 tests :: TestTree
 tests = testGroup "SocialPosting.ContentDiscovery"
   [ platformDetectionTests
@@ -25,6 +28,7 @@ tests = testGroup "SocialPosting.ContentDiscovery"
   , bfsEligibilityTests
   , urlFromFilePathTests
   , imageBackfillTests
+  , imageDateTests
   ]
 
 
@@ -71,12 +75,13 @@ contentFilterTests = testGroup "content filtering"
 
   , testCase "isAwaitingImageBackfill detects note without image in backfill directory" $
       assertBool "should be awaiting image" $
-        isAwaitingImageBackfill defaultContentIds "books/great-book.md" "Some text about a great book"
+        isAwaitingImageBackfill defaultContentIds today "books/great-book.md" "Some text about a great book" Nothing
 
-  , testCase "isAwaitingImageBackfill rejects note with embedded image" $
-      assertBool "has image, should not be awaiting" $
-        not (isAwaitingImageBackfill defaultContentIds "books/great-book.md"
-          "![[attachments/books-great-book.jpg]]\nSome text about a great book")
+  , testCase "isAwaitingImageBackfill rejects note with old image" $
+      assertBool "has image from long ago, should not be awaiting" $
+        not (isAwaitingImageBackfill defaultContentIds today "books/great-book.md"
+          "![[attachments/books-great-book.jpg]]\nSome text about a great book"
+          (Just (fromGregorian 2026 4 1)))
   ]
 
 
@@ -159,18 +164,56 @@ imageBackfillTests :: TestTree
 imageBackfillTests = testGroup "isAwaitingImageBackfill"
   [ testCase "note without image in backfill directory is awaiting" $
       assertBool "should be awaiting image" $
-        isAwaitingImageBackfill defaultContentIds "books/great-book.md" "Some text about a great book"
+        isAwaitingImageBackfill defaultContentIds today "books/great-book.md" "Some text about a great book" Nothing
 
-  , testCase "note with embedded image is not awaiting" $
+  , testCase "note with embedded image and old date is not awaiting" $
       assertBool "has image, should not be awaiting" $
-        not (isAwaitingImageBackfill defaultContentIds "books/great-book.md"
-          "![[attachments/books-great-book.jpg]]\nSome text about a great book")
+        not (isAwaitingImageBackfill defaultContentIds today "books/great-book.md"
+          "![[attachments/books-great-book.jpg]]\nSome text about a great book"
+          (Just (fromGregorian 2026 4 1)))
 
   , testCase "excluded file is not awaiting" $
       assertBool "index.md should not be awaiting" $
-        not (isAwaitingImageBackfill defaultContentIds "books/index.md" "Browse all books")
+        not (isAwaitingImageBackfill defaultContentIds today "books/index.md" "Browse all books" Nothing)
 
   , testCase "file not in any content directory is not awaiting" $
       assertBool "unknown directory should not be awaiting" $
-        not (isAwaitingImageBackfill defaultContentIds "people/john-doe.md" "A person page")
+        not (isAwaitingImageBackfill defaultContentIds today "people/john-doe.md" "A person page" Nothing)
+  ]
+
+
+imageDateTests :: TestTree
+imageDateTests = testGroup "image date propagation delay"
+  [ testCase "parseImageDate parses ISO 8601 timestamp" $
+      parseImageDate "2026-04-10T12:00:00Z" @?= Just (fromGregorian 2026 4 10)
+
+  , testCase "parseImageDate parses date-only format" $
+      parseImageDate "2026-04-10" @?= Just (fromGregorian 2026 4 10)
+
+  , testCase "parseImageDate returns Nothing for invalid input" $
+      parseImageDate "not-a-date" @?= Nothing
+
+  , testCase "isRecentlyBackfilled returns True for same-day image" $
+      assertBool "image generated today is recent" $
+        isRecentlyBackfilled today (Just today)
+
+  , testCase "isRecentlyBackfilled returns False for old image" $
+      assertBool "image from a week ago is not recent" $
+        not (isRecentlyBackfilled today (Just (fromGregorian 2026 4 3)))
+
+  , testCase "isRecentlyBackfilled returns False for no image date" $
+      assertBool "no image date means not recently backfilled" $
+        not (isRecentlyBackfilled today Nothing)
+
+  , testCase "note with image generated today is still awaiting" $
+      assertBool "recently generated image should defer posting" $
+        isAwaitingImageBackfill defaultContentIds today "books/great-book.md"
+          "![[attachments/books-great-book.jpg]]\nSome text about a great book"
+          (Just today)
+
+  , testCase "note with image generated yesterday is not awaiting" $
+      assertBool "image from yesterday should be propagated" $
+        not (isAwaitingImageBackfill defaultContentIds today "books/great-book.md"
+          "![[attachments/books-great-book.jpg]]\nSome text about a great book"
+          (Just (fromGregorian 2026 4 9)))
   ]

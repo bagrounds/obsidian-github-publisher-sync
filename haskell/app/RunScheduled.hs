@@ -5,7 +5,7 @@ import Control.Exception (SomeException, try)
 import Data.List.NonEmpty (NonEmpty ((:|)))
 import Data.Map.Strict (Map)
 import qualified Data.Map.Strict as Map
-import Data.Maybe (catMaybes, fromMaybe, mapMaybe)
+import Data.Maybe (catMaybes, fromMaybe)
 import Data.Text (Text)
 import qualified Data.Text as T
 import qualified Data.Text.IO as TIO
@@ -27,7 +27,7 @@ import Automation.AiFiction
   , reflectionNeedsFiction
   )
 import Automation.BlogComments (fetchAllSeriesComments)
-import Automation.BlogImage (BackfillConfig (..), BackfillResult (..), ImageGenerationResult, syncAttachmentsDir, backfillImages, resolveImageProviders, processNote, contentDirectoryFromText)
+import Automation.BlogImage (BackfillConfig (..), BackfillResult (..), ImageGenerationResult, syncAttachmentsDir, backfillImages, resolveImageProviders, processNote)
 import Automation.BlogPosts (BlogPost (..), readSeriesPosts)
 import Automation.BlogPrompt
   ( DisplayTitle (..)
@@ -366,10 +366,9 @@ runBackfillImages context contentIds = do
       pure []
     _  -> do
       logMsg $ "  🎨 Image providers: " <> T.pack (show (length providers))
-      let contentDirectories = mapMaybe contentDirectoryFromText contentIds
-          backfillConfig = BackfillConfig
+      let backfillConfig = BackfillConfig
             { backfillRepoRoot = vaultDir
-            , backfillContentDirs = contentDirectories
+            , backfillContentDirs = contentIds
             , backfillAttachmentsDir = vaultDir </> "attachments"
             , backfillProviders = providers
             , backfillMaxImages = 2
@@ -462,10 +461,10 @@ runInternalLinking context = do
 
   logMsg "✅ internal-linking"
 
-runSocialPosting :: Context.AppContext -> IO ()
-runSocialPosting context = do
+runSocialPosting :: Context.AppContext -> [Text] -> IO ()
+runSocialPosting context contentIds = do
   logMsg "▶️  social-posting"
-  autoPost (Context.httpManager context) (Context.vaultDir context)
+  autoPost (Context.httpManager context) (Context.vaultDir context) contentIds
   logMsg "✅ social-posting"
 
 runAiFiction :: Context.AppContext -> IO ()
@@ -581,7 +580,7 @@ taskRunners context seriesMap runConfigs contentIds discovered =
       staticRunners = Map.fromList
         [ (BackfillBlogImages, runBackfillImages context contentIds)
         , (InternalLinking, runInternalLinking context)
-        , (SocialPosting, runSocialPosting context)
+        , (SocialPosting, runSocialPosting context contentIds)
         , (AiFiction, runAiFiction context)
         , (ReflectionTitle, runReflectionTitle context)
         ]

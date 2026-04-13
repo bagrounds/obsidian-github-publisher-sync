@@ -1,11 +1,7 @@
 module Automation.BlogImage
   ( -- * Re-exports from sub-modules for backward compatibility
-    -- ** ContentDirectory
-    ContentDirectory (..)
-  , contentDirectoryToText
-  , contentDirectoryFromText
     -- ** TitleExtraction
-  , extractTitle
+    extractTitle
     -- ** Eligibility
   , CandidateEligibility (..)
   , IneligibilityReason (..)
@@ -15,6 +11,7 @@ module Automation.BlogImage
   , parseDateFromFilename
   , isDateOnlyTitle
   , checkCandidateEligibility
+  , reflectionsDirectory
     -- ** Markdown
   , insertImageEmbed
   , removeImageEmbed
@@ -81,11 +78,6 @@ import System.FilePath ((</>), takeBaseName, takeDirectory, takeExtension)
 import Automation.PacificTime (todayPacificDay)
 import Automation.Frontmatter (YamlValue (..), parseFrontmatter, renderYamlValue)
 
-import Automation.BlogImage.ContentDirectory
-  ( ContentDirectory (..)
-  , contentDirectoryToText
-  , contentDirectoryFromText
-  )
 import Automation.BlogImage.TitleExtraction (extractTitle)
 import Automation.BlogImage.Eligibility
   ( BackfillCandidate (..)
@@ -96,6 +88,7 @@ import Automation.BlogImage.Eligibility
   , isDateOnlyTitle
   , isPostFile
   , parseDateFromFilename
+  , reflectionsDirectory
   , shouldHaveImage
   , shouldRegenerateImage
   )
@@ -128,7 +121,7 @@ import Automation.BlogImage.Provider
 
 data BackfillConfig = BackfillConfig
   { backfillRepoRoot       :: FilePath
-  , backfillContentDirs    :: [ContentDirectory]
+  , backfillContentDirs    :: [Text]
   , backfillAttachmentsDir :: FilePath
   , backfillProviders      :: [ImageProviderConfig]
   , backfillMaxImages      :: Int
@@ -311,16 +304,16 @@ backfillImages manager config = do
 emptyResult :: BackfillResult
 emptyResult = BackfillResult 0 0 0 [] []
 
-collectCandidates :: FilePath -> [ContentDirectory] -> Day -> IO [BackfillCandidate]
+collectCandidates :: FilePath -> [Text] -> Day -> IO [BackfillCandidate]
 collectCandidates repoRoot contentDirectories today = do
   candidateLists <- traverse (collectFromDirectory repoRoot today) contentDirectories
   let allCandidates = concat candidateLists
       sorted = sortByDateDesc allCandidates
   pure sorted
 
-collectFromDirectory :: FilePath -> Day -> ContentDirectory -> IO [BackfillCandidate]
+collectFromDirectory :: FilePath -> Day -> Text -> IO [BackfillCandidate]
 collectFromDirectory repoRoot today directory = do
-  let directoryPath = repoRoot </> T.unpack (contentDirectoryToText directory)
+  let directoryPath = repoRoot </> T.unpack directory
   exists <- doesDirectoryExist directoryPath
   if exists
     then do
@@ -329,15 +322,15 @@ collectFromDirectory repoRoot today directory = do
           sortedFiles = sortByTextDesc contentFiles
       concat <$> traverse (checkCandidate directoryPath directory today) sortedFiles
     else do
-      putStrLn $ "📁 Directory missing: " <> T.unpack (contentDirectoryToText directory)
+      putStrLn $ "📁 Directory missing: " <> T.unpack directory
       pure []
 
-checkCandidate :: FilePath -> ContentDirectory -> Day -> Text -> IO [BackfillCandidate]
+checkCandidate :: FilePath -> Text -> Day -> Text -> IO [BackfillCandidate]
 checkCandidate directoryPath directory today filename = do
   let fileDate = parseDateFromFilename filename
       filePath = directoryPath </> T.unpack filename
   case fileDate of
-    Just date | directory == Reflections && date > today -> pure []
+    Just date | directory == reflectionsDirectory && date > today -> pure []
     _ -> do
       content <- TIO.readFile filePath
       case checkCandidateEligibility directory today filename content of
@@ -400,7 +393,7 @@ processWithProviders manager config (candidate : rest) providerIdx result = do
   let provider = backfillProviders config !! providerIdx
       action = if bcNeedsRegeneration candidate then "Regenerating" else "Generating"
       progress = show (brImagesGenerated result + 1) <> "/" <> show (backfillMaxImages config)
-      directoryLabel = T.unpack (contentDirectoryToText (bcDirectory candidate))
+      directoryLabel = T.unpack (bcDirectory candidate)
   putStrLn $ "🎨 [" <> progress <> "] " <> action <> " image for "
           <> directoryLabel <> "/" <> T.unpack (bcFilename candidate)
           <> " via " <> T.unpack (providerName (ipcProvider provider))
@@ -409,7 +402,7 @@ processWithProviders manager config (candidate : rest) providerIdx result = do
     Right imgResult
       | not (igrSkipped imgResult) -> do
           putStrLn $ "✅ Generated: " <> maybe "?" T.unpack (igrImageName imgResult)
-          let relativePath = contentDirectoryToText (bcDirectory candidate) <> "/" <> bcFilename candidate
+          let relativePath = bcDirectory candidate <> "/" <> bcFilename candidate
               newResult = result
                 { brImagesGenerated = brImagesGenerated result + 1
                 , brFilesUpdated = brFilesUpdated result + 1

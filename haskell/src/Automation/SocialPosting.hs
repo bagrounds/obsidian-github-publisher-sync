@@ -30,7 +30,6 @@ import qualified Network.HTTP.Client.TLS as TLS
 import System.Directory (listDirectory, doesFileExist, doesDirectoryExist)
 
 import Automation.DailyUpdates (UpdateLink (..), addUpdateLinksToReflection)
-import Automation.BlogSeriesConfig (imageBackfillContentIdsFrom)
 import Automation.EmbedSection
   ( buildBlueskySection
   , buildMastodonSection
@@ -266,8 +265,8 @@ data PostedNote = PostedNote
   , pnPlatforms :: [Platform]
   } deriving (Show, Eq)
 
-runPostingPipeline :: Manager -> EnvironmentConfig -> Secret -> FilePath -> IO [PostedNote]
-runPostingPipeline manager env apiKey vaultDir = do
+runPostingPipeline :: Manager -> EnvironmentConfig -> Secret -> FilePath -> [Text] -> IO [PostedNote]
+runPostingPipeline manager env apiKey vaultDir imageBackfillContentIds = do
   let platforms = getConfiguredPlatforms env
   putStrLn $ "  🔍 Configured platforms: " <> show platforms
 
@@ -279,7 +278,7 @@ runPostingPipeline manager env apiKey vaultDir = do
         , fccPlatforms = platforms
         , fccPostingCutoff = defaultPostingCutoff
         , fccPublicationChecker = Just (checkUrlPublished tlsManager)
-        , fccImageBackfillContentIds = imageBackfillContentIdsFrom []
+        , fccImageBackfillContentIds = imageBackfillContentIds
         }
       isPastHour = currentTime >= defaultPostingCutoff
 
@@ -358,8 +357,8 @@ eitherToMaybe :: Either a b -> Maybe b
 eitherToMaybe (Right b) = Just b
 eitherToMaybe (Left _)  = Nothing
 
-autoPost :: Manager -> FilePath -> IO ()
-autoPost manager vaultDir = do
+autoPost :: Manager -> FilePath -> [Text] -> IO ()
+autoPost manager vaultDir imageBackfillContentIds = do
   env <- validateEnvironment
   let apiKey = Gemini.gcApiKey (ecGemini env)
 
@@ -375,7 +374,7 @@ autoPost manager vaultDir = do
     Left exception -> putStrLn $ "  ⚠️  Mastodon embed regeneration failed: " <> show exception
     Right () -> pure ()
 
-  postedNotes <- runPostingPipeline manager env apiKey vaultDir
+  postedNotes <- runPostingPipeline manager env apiKey vaultDir imageBackfillContentIds
 
   let reflectionsDir = vaultDir </> "reflections"
   today <- todayPacificDay

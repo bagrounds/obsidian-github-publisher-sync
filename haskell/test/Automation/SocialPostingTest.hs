@@ -5,7 +5,7 @@ import Data.Maybe (isJust)
 import qualified Data.Set as Set
 import Data.Text (Text)
 import qualified Data.Text as T
-import Data.Time (UTCTime (..), fromGregorian, secondsToDiffTime)
+import Data.Time (UTCTime (..), Day, fromGregorian, secondsToDiffTime)
 import Data.Time.LocalTime (TimeOfDay (..))
 import System.Directory (createDirectoryIfMissing)
 import System.FilePath ((</>))
@@ -57,6 +57,9 @@ import Automation.TestGenerators (testUrl, testTitle, testRelativePath)
 
 defaultContentIds :: [Text]
 defaultContentIds = imageBackfillContentIdsFrom []
+
+testToday :: Day
+testToday = fromGregorian 2026 4 10
 
 tests :: TestTree
 tests = testGroup "SocialPosting"
@@ -275,51 +278,61 @@ imageBackfillFilterTests :: TestTree
 imageBackfillFilterTests = testGroup "isAwaitingImageBackfill"
   [ testCase "note without image in backfill directory is awaiting" $
       assertBool "should be awaiting image" $
-        isAwaitingImageBackfill defaultContentIds "books/great-book.md" "Some text about a great book"
+        isAwaitingImageBackfill defaultContentIds testToday "books/great-book.md" "Some text about a great book" Nothing
 
-  , testCase "note with embedded image is not awaiting" $
+  , testCase "note with embedded image and old date is not awaiting" $
       assertBool "has image, should not be awaiting" $
-        not (isAwaitingImageBackfill defaultContentIds "books/great-book.md"
-          "![[attachments/books-great-book.jpg]]\nSome text about a great book")
+        not (isAwaitingImageBackfill defaultContentIds testToday "books/great-book.md"
+          "![[attachments/books-great-book.jpg]]\nSome text about a great book"
+          (Just (fromGregorian 2026 4 1)))
 
-  , testCase "note with markdown image is not awaiting" $
+  , testCase "note with markdown image and old date is not awaiting" $
       assertBool "has markdown image, should not be awaiting" $
-        not (isAwaitingImageBackfill defaultContentIds "books/great-book.md"
-          "![cover](attachments/books-great-book.png)\nSome text")
+        not (isAwaitingImageBackfill defaultContentIds testToday "books/great-book.md"
+          "![cover](attachments/books-great-book.png)\nSome text"
+          (Just (fromGregorian 2026 4 1)))
 
   , testCase "reflection without image is awaiting" $
       assertBool "reflection without image should be awaiting" $
-        isAwaitingImageBackfill defaultContentIds "reflections/2026-04-07.md" "Today was a good day"
+        isAwaitingImageBackfill defaultContentIds testToday "reflections/2026-04-07.md" "Today was a good day" Nothing
 
-  , testCase "reflection with image is not awaiting" $
+  , testCase "reflection with image and old date is not awaiting" $
       assertBool "reflection with image should not be awaiting" $
-        not (isAwaitingImageBackfill defaultContentIds "reflections/2026-04-07.md"
-          "![[attachments/reflections-2026-04-07.jpg]]\nToday was a good day")
+        not (isAwaitingImageBackfill defaultContentIds testToday "reflections/2026-04-07.md"
+          "![[attachments/reflections-2026-04-07.jpg]]\nToday was a good day"
+          (Just (fromGregorian 2026 4 1)))
 
   , testCase "ai-blog post without image is awaiting" $
       assertBool "ai-blog without image should be awaiting" $
-        isAwaitingImageBackfill defaultContentIds "ai-blog/2026-04-05-cool-post.md" "A cool blog post"
+        isAwaitingImageBackfill defaultContentIds testToday "ai-blog/2026-04-05-cool-post.md" "A cool blog post" Nothing
 
   , testCase "excluded file is not awaiting" $
       assertBool "index.md should not be awaiting" $
-        not (isAwaitingImageBackfill defaultContentIds "books/index.md" "Browse all books")
+        not (isAwaitingImageBackfill defaultContentIds testToday "books/index.md" "Browse all books" Nothing)
 
   , testCase "non-md file is not awaiting" $
       assertBool "non-md file should not be awaiting" $
-        not (isAwaitingImageBackfill defaultContentIds "books/great-book.txt" "Some text")
+        not (isAwaitingImageBackfill defaultContentIds testToday "books/great-book.txt" "Some text" Nothing)
 
   , testCase "file not in any content directory is not awaiting" $
       assertBool "unknown directory should not be awaiting" $
-        not (isAwaitingImageBackfill defaultContentIds "people/john-doe.md" "A person page")
+        not (isAwaitingImageBackfill defaultContentIds testToday "people/john-doe.md" "A person page" Nothing)
 
   , testCase "topics directory note without image is awaiting" $
       assertBool "topics note without image should be awaiting" $
-        isAwaitingImageBackfill defaultContentIds "topics/machine-learning.md" "A topic about ML"
+        isAwaitingImageBackfill defaultContentIds testToday "topics/machine-learning.md" "A topic about ML" Nothing
 
-  , testCase "software directory note with image is not awaiting" $
+  , testCase "software directory note with image and old date is not awaiting" $
       assertBool "software note with image should not be awaiting" $
-        not (isAwaitingImageBackfill defaultContentIds "software/cool-tool.md"
-          "![[attachments/software-cool-tool.png]]\nA great tool")
+        not (isAwaitingImageBackfill defaultContentIds testToday "software/cool-tool.md"
+          "![[attachments/software-cool-tool.png]]\nA great tool"
+          (Just (fromGregorian 2026 4 1)))
+
+  , testCase "note with image generated today is still awaiting" $
+      assertBool "recently generated image should defer posting" $
+        isAwaitingImageBackfill defaultContentIds testToday "books/great-book.md"
+          "![[attachments/books-great-book.jpg]]\nSome text about a great book"
+          (Just testToday)
 
   , testCase "BFS skips notes awaiting image but follows their links" $ do
       withSystemTempDirectory "social-image-test" $ \dir -> do
@@ -652,6 +665,7 @@ urlValidationTests = testGroup "URL validation"
               , cnPostedPlatforms = Set.empty
               , cnLinkedNotePaths = []
               , cnNoSocial = False
+              , cnImageDate = Nothing
               }
         result <- validateNoteUrl checker note
         case result of
@@ -734,6 +748,7 @@ mkNote relPath title body = ContentNote
   , cnPostedPlatforms = Set.empty
   , cnLinkedNotePaths = []
   , cnNoSocial = False
+  , cnImageDate = Nothing
   }
 
 selectMostRecentReflectionTests :: TestTree

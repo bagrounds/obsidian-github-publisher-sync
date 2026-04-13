@@ -9,6 +9,9 @@ Platform:
 Channel: Trevor Noah
 tags:
 youtube: https://youtu.be/ou2Kuh4_puA
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_time: 2026-04-05T00:00:00Z
+force_analyze_links: false
 ---
 [Home](../index.md) > [Videos](./index.md)  
 # 💔🏛️📉❓ The Broken Promise: Democracy, the Economy & What Comes Next with Pete Buttigieg  
@@ -66,4 +69,4 @@ youtube: https://youtu.be/ou2Kuh4_puA
   
 ### 🎨 Creatively Related  
 * [🤔🐇🐢 Thinking, Fast and Slow](../books/thinking-fast-and-slow.md) by Daniel Kahneman. 🧠 Delves into the two systems that drive our decision-making, providing a psychological lens on the cognitive biases and irrationality that affect public discourse and political polarization.  
-* 📗 The Power Broker: Robert Moses and the Fall of New York by Robert A. Caro. 🏗️ A biography illustrating how one unelected official accumulated massive power to reshape a city, tangentially relating to the video's theme of consolidated power and the failure of institutions to check it.
+* 📗 [👑🏙️ The Power Broker](../books/the-power-broker.md): Robert Moses and the Fall of New York by Robert A. Caro. 🏗️ A biography illustrating how one unelected official accumulated massive power to reshape a city, tangentially relating to the video's theme of consolidated power and the failure of institutions to check it.

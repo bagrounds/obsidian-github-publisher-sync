@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-04-12T19:51:21-07:00
+updated: 2026-04-12T20:14:03-07:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -65,11 +65,11 @@ updated: 2026-04-12T19:51:21-07:00
 - [🤖📈 Prediction Machines: The Simple Economics of Artificial Intelligence](./books/prediction-machines-the-simple-economics-of-artificial-intelligence.md)  
   
   
-## [📺 Videos](./videos/index.md) (745)  
-- [👮📹🧐🎤 Police Body Cameras: Last Week Tonight with John Oliver (HBO)](./videos/police-body-cameras-last-week-tonight-with-john-oliver-hbo.md)  
-- [🎤💥👑 Viktor Orbán: Last Week Tonight with John Oliver (HBO)](./videos/viktor-orban-last-week-tonight-with-john-oliver-hbo.md)  
+## [📺 Videos](./videos/index.md) (746)  
 - [⭐🗽🏛️💯 Mamdani brings a unique star power to NYC governance in his first 100 days](./videos/mamdani-brings-a-unique-star-power-to-nyc-governance-in-his-first-100-days.md)  
-- [🐦📰🤣 Twitter: Last Week Tonight with John Oliver (HBO)](./videos/twitter-last-week-tonight-with-john-oliver-hbo.md)  
+- [👮📹🧐🎤 Police Body Cameras: Last Week Tonight with John Oliver (HBO)](./videos/police-body-cameras-last-week-tonight-with-john-oliver-hbo.md)  
+- [👩‍⚖️🌪️🐘 Pam Bondi’s Tumultuous Tenure as Trump's Attorney General | The Daily Show](./videos/pam-bondis-tumultuous-tenure-as-trumps-attorney-general-the-daily-show.md)  
+- [🎤💥👑 Viktor Orbán: Last Week Tonight with John Oliver (HBO)](./videos/viktor-orban-last-week-tonight-with-john-oliver-hbo.md)  
   
   
 ## [🌌 Topics](./topics/index.md) (91)  
@@ -87,10 +87,10 @@ updated: 2026-04-12T19:51:21-07:00
   
   
 ## [🤖💬 Bot Chats](./bot-chats/index.md) (49)  
+- [🛐🕯️🔄 Ritual](./bot-chats/ritual.md)  
 - [✅🔎📰 Reliable News](./bot-chats/reliable-news.md)  
 - [💰💎🌽🏡📈 Real Wealth Investing](./bot-chats/real-wealth-investing.md)  
 - [🎯🐜🌍 Purpose Driven Tiny Habits for Systemic Change](./bot-chats/purpose-driven-tiny-habits-for-systemic-change.md)  
-- [🤱🏼📚💡 Parenting Resources Recommendations](./bot-chats/parenting-resources-recommendations.md)  
   
   
 ## [💾 Software](./software/index.md) (33)  

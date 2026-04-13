@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-04-12T20:14:03-07:00
+updated: 2026-04-12T21:08:44-07:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -65,11 +65,11 @@ updated: 2026-04-12T20:14:03-07:00
 - [🤖📈 Prediction Machines: The Simple Economics of Artificial Intelligence](./books/prediction-machines-the-simple-economics-of-artificial-intelligence.md)  
   
   
-## [📺 Videos](./videos/index.md) (746)  
+## [📺 Videos](./videos/index.md) (747)  
+- [⬆️💸💥💡⬇️ We Found The Radical Solution To Skyrocketing Grocery Prices](./videos/we-found-the-radical-solution-to-skyrocketing-grocery-prices.md)  
 - [⭐🗽🏛️💯 Mamdani brings a unique star power to NYC governance in his first 100 days](./videos/mamdani-brings-a-unique-star-power-to-nyc-governance-in-his-first-100-days.md)  
 - [👮📹🧐🎤 Police Body Cameras: Last Week Tonight with John Oliver (HBO)](./videos/police-body-cameras-last-week-tonight-with-john-oliver-hbo.md)  
 - [👩‍⚖️🌪️🐘 Pam Bondi’s Tumultuous Tenure as Trump's Attorney General | The Daily Show](./videos/pam-bondis-tumultuous-tenure-as-trumps-attorney-general-the-daily-show.md)  
-- [🎤💥👑 Viktor Orbán: Last Week Tonight with John Oliver (HBO)](./videos/viktor-orban-last-week-tonight-with-john-oliver-hbo.md)  
   
   
 ## [🌌 Topics](./topics/index.md) (91)  

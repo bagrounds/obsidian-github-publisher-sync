@@ -5,10 +5,10 @@ aliases:
 title: 📺 Videos
 URL: https://bagrounds.org/videos
 backlinks: false
-updated: 2026-04-12T20:14:03-07:00
+updated: 2026-04-12T21:08:44-07:00
 ---
 [Home](../index.md)  
-# 📺 Videos (746)  
+# 📺 Videos (747)  
 - [💰🤑🤖💡🚀💲 $0.10/Month Runs My Entire AI Life. I'll Show You How.](./0-10-month-runs-my-entire-ai-life-ill-show-you-how.md)  
 - [📊📈📉📃👁️ 10 Charts to Understand the 900 Page Budget Bill](./10-charts-to-understand-the-900-page-budget-bill.md)  
 - [🤖🔗⬆️✅ 12-Factor Agents: Patterns of reliable LLM applications — Dex Horthy, HumanLayer](./12-factor-agents-patterns-of-reliable-llm-applications-dex-horthy-humanlayer.md)  
@@ -679,6 +679,7 @@ updated: 2026-04-12T20:14:03-07:00
 - [🗣️⏱️🏛️🛑 WATCH: Sen. Merkley concludes marathon 22-hour speech protesting Trump amid shutdown](./watch-sen-merkley-concludes-marathon-22-hour-speech-protesting-trump-amid-shutdown.md)  
 - [WATCH: 'Whose throat do I get to choke’ if tariff approach fails, Tillis asks trade rep](./watch-whose-throat-do-i-get-to-choke-if-tariff-approach-fails-tillis-asks-trade-rep.md)  
 - [⏳🗳️🙅 We Cannot Wait for the Ballot Box in November 2026 | Explainer](./we-cannot-wait-for-the-ballot-box-in-november-2026-explainer.md)  
+- [⬆️💸💥💡⬇️ We Found The Radical Solution To Skyrocketing Grocery Prices](./we-found-the-radical-solution-to-skyrocketing-grocery-prices.md)  
 - [🛒💲📈 We Had 400 People Shop For Groceries. What We Found Will Shock You.](./we-had-400-people-shop-for-groceries-what-we-found-will-shock-you.md)  
 - [🔎💸🕵️‍♂️🏛️🇺🇸🤫💥🤯 We Investigated The Criminals Who Bought Trump: What We Found Will Shock You](./we-investigated-the-criminals-who-bought-trump-what-we-found-will-shock-you.md)  
 - [What America is losing as President Trump fires independent government watchdogs | 60 Minutes](./what-america-is-losing-as-president-trump-fires-independent-government-watchdogs-60-minutes.md)  

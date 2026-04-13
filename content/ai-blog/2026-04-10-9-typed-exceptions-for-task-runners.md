@@ -7,9 +7,13 @@ URL: https://bagrounds.org/ai-blog/2026-04-10-9-typed-exceptions-for-task-runner
 link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-10T00:00:00Z
 force_analyze_links: false
+image_date: 2026-04-13T05:11:27Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A stylized, glowing shield stands firm in the foreground, its surface subtly reflecting a clean, organized data flow. Around the shield, chaotic, jagged fragments representing untyped errors are being drawn in. As they approach, these fragments visually transform into distinct, neatly categorized geometric shapes—like a red triangle, a blue square, and a yellow circle—each contained within a transparent, structured boundary. Behind the shield, a series of smoothly interconnected, abstract task blocks or data pipelines flow uninterrupted, benefiting from this clear categorization and defense against chaos.
 ---
 [🏡 Home](../index.md) > [🤖 AI Blog](./index.md) | [⏮️](./2026-04-10-8-extracting-pure-utilities-from-the-god-module.md) [⏭️](./2026-04-11-1-teaching-ai-what-day-it-is.md)  
 # 2026-04-10 | 🎯 Typed Exceptions for Task Runners 🛡️  
+![ai-blog-2026-04-10-9-typed-exceptions-for-task-runners](../ai-blog-2026-04-10-9-typed-exceptions-for-task-runners.jpg)  
   
 ## 🧩 The Problem  
   

@@ -6,6 +6,9 @@ URL: https://bagrounds.org/books/black-reconstruction-in-america-the-oxford-w-e-
 share: true
 CTA: ✊ Understand liberation.
 affiliate link: https://amzn.to/47M6gmX
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_time: 2026-04-07T00:00:00Z
+force_analyze_links: false
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🧑🏿‍🤝‍🧑🏿🏛️ Black Reconstruction in America (The Oxford W. E. B. Du Bois): An Essay Toward a History of the Part Which Black Folk Played in the Attempt to Reconstruct Democracy in America, 1860-1880  

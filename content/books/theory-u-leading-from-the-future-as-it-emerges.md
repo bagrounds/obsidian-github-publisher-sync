@@ -6,6 +6,9 @@ URL: https://bagrounds.org/books/theory-u-leading-from-the-future-as-it-emerges
 share: true
 CTA: 🤔 Discern purpose.
 affiliate link: https://amzn.to/3MNYUs7
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_time: 2026-04-10T00:00:00Z
+force_analyze_links: false
 ---
 [Home](../index.md) > [Books](./index.md)  
 # ⬇️⬆️🧭🌟 Theory U: Leading from the Future as It Emerges  

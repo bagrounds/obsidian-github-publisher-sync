@@ -9,6 +9,9 @@ Platform:
 Channel: The Daily Show
 tags:
 youtube: https://youtu.be/nUn1A0sEDrc
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_time: 2026-04-04T00:00:00Z
+force_analyze_links: false
 ---
 [Home](../index.md) > [Videos](./index.md)  
 # 🚫👑⚡✊ Sen. Bernie Sanders - Harnessing Energy From «No Kings» Rally to «Fight Oligarchy» | The Daily Show  
@@ -68,7 +71,7 @@ A: 🤖 The rapid growth of AI and robotics is expected to transform the world a
 ### Creatively Related  
 * **The New Jim Code: Technology, Race, and Social Justice** by Ruha Benjamin: 💻 Explores how new technologies, including AI, can reinforce social hierarchies and deepen inequality, providing context for the video's concerns about AI's effect on the working class.  
 * **[🗳️🕊️🇺🇸 Democracy in America](../books/democracy-in-america.md)** by Alexis de Tocqueville: 🏛️ **A** timeless 19th-century analysis of American democracy, offering foundational insights into the struggle between individualism, community, and the potential tyranny of the majority, relevant to the rise of concentrated power.  
-* **The Power Broker** by Robert Caro: 🏙️ **A** monumental biography of Robert Moses, illustrating how political power is consolidated and wielded in the modern age, a vivid real-world example of institutional power trumping democratic processes.  
+* **[👑🏙️ The Power Broker](../books/the-power-broker.md)** by Robert Caro: 🏙️ **A** monumental biography of Robert Moses, illustrating how political power is consolidated and wielded in the modern age, a vivid real-world example of institutional power trumping democratic processes.  
   
 ## 🐦 Tweet  
 <blockquote class="twitter-tweet" data-theme="dark"><p lang="en" dir="ltr">🚫👑⚡✊ Sen. <a href="https://twitter.com/BernieSanders?ref_src=twsrc%5Etfw">@BernieSanders</a> - Harnessing Energy From No Kings Rally to Fight Oligarchy | <a href="https://twitter.com/TheDailyShow?ref_src=twsrc%5Etfw">@TheDailyShow</a> <br><br>🇺🇸 Wealth Inequality | 🏛️ Campaign Finance Reform | 🤖 Artificial Intelligence | 🏥 Universal Healthcare | 🤝 Grassroots Movement<a href="https://twitter.com/jonstewart?ref_src=twsrc%5Etfw">@jonstewart</a><a href="https://t.co/oo25jsMVql">https://t.co/oo25jsMVql</a></p>&mdash; Bryan Grounds (@bagrounds) <a href="https://twitter.com/bagrounds/status/1980833245739766088?ref_src=twsrc%5Etfw">October 22, 2025</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>

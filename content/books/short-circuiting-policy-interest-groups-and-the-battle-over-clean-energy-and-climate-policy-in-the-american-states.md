@@ -6,6 +6,9 @@ URL: https://bagrounds.org/books/short-circuiting-policy-interest-groups-and-the
 share: true
 CTA: ♟️ Master the political game.
 affiliate link: https://amzn.to/449rDxv
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_time: 2026-04-11T00:00:00Z
+force_analyze_links: false
 ---
 [Home](../index.md) > [Books](./index.md)  
 # ⚡🏛️ Short Circuiting Policy: Interest Groups and the Battle Over Clean Energy and Climate Policy in the American States  

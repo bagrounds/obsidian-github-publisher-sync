@@ -9,6 +9,9 @@ Platform:
 Channel: Interintellect
 tags:
 youtube: https://youtu.be/2I_OyWle2Lw
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_time: 2026-04-09T00:00:00Z
+force_analyze_links: false
 ---
 [Home](../index.md) > [Videos](./index.md)  
 # 👑⚔️🏛️🤔 Anna Gát and Anne Applebaum: The Autocratic Moment: Myth or Reality?  

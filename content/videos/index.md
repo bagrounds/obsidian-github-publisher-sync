@@ -5,10 +5,10 @@ aliases:
 title: 📺 Videos
 URL: https://bagrounds.org/videos
 backlinks: false
-updated: 2026-04-12T18:06:14-07:00
+updated: 2026-04-12T19:17:53-07:00
 ---
 [Home](../index.md)  
-# 📺 Videos (743)  
+# 📺 Videos (744)  
 - [💰🤑🤖💡🚀💲 $0.10/Month Runs My Entire AI Life. I'll Show You How.](./0-10-month-runs-my-entire-ai-life-ill-show-you-how.md)  
 - [📊📈📉📃👁️ 10 Charts to Understand the 900 Page Budget Bill](./10-charts-to-understand-the-900-page-budget-bill.md)  
 - [🤖🔗⬆️✅ 12-Factor Agents: Patterns of reliable LLM applications — Dex Horthy, HumanLayer](./12-factor-agents-patterns-of-reliable-llm-applications-dex-horthy-humanlayer.md)  
@@ -365,6 +365,7 @@ updated: 2026-04-12T18:06:14-07:00
 - [🇺🇸💪🏥😂 Make America Healthy Again: Last Week Tonight with John Oliver (HBO)](./make-america-healthy-again-last-week-tonight-with-john-oliver-hbo.md)  
 - [🤖🧠🚀 Making Codebases Agent Ready – Eno Reyes, Factory AI](./making-codebases-agent-ready-eno-reyes-factory-ai.md)  
 - [🌍❓🤔 Making Sense of a World in Crisis | Yuval Noah Harari](./making-sense-of-a-world-in-crisis-yuval-noah-harari.md)  
+- [⭐🗽🏛️💯 Mamdani brings a unique star power to NYC governance in his first 100 days](./mamdani-brings-a-unique-star-power-to-nyc-governance-in-his-first-100-days.md)  
 - [🐛🐌🐞🌿🏡🦠 Managing Pests & Diseases in Your Backyard: Aphids, Blight, and Slugs - Oh My! Workshop](./managing-pests-diseases-in-your-backyard-aphids-blight-and-slugs-oh-my-workshop.md)  
 - [Mass firings begin at government health agencies, including FDA, CDC and NIH](./mass-firings-begin-at-government-health-agencies-including-fda-cdc-and-nih.md)  
 - [💡🎨💃 Master the Creative Process | Twyla Tharp](./master-the-creative-process-twyla-tharp.md)  

@@ -2,7 +2,7 @@
 
 ## Current State Summary
 
-The Haskell codebase was ported from TypeScript and inherited several patterns that don't leverage Haskell's strengths for safety and correctness. The code works well and has good test coverage (870+ tests), but can be improved to better prevent accidental breakage and improve modularity.
+The Haskell codebase was ported from TypeScript and inherited several patterns that don't leverage Haskell's strengths for safety and correctness. The code works well and has good test coverage (1700+ tests), but can be improved to better prevent accidental breakage and improve modularity.
 
 ### Key Issues Identified
 
@@ -219,13 +219,29 @@ Each error migration delivered with test coverage:
 30. **Separate pure from IO by domain boundary**: The five extracted modules split cleanly by domain concern: `ContentDirectory` (pure ADT), `TitleExtraction` (pure text parsing), `Eligibility` (pure logic using frontmatter), `Markdown` (pure text processing), `Provider` (IO HTTP generators + pure configuration). The main module retains the IO orchestration that ties them all together.
 31. **Re-exports preserve backward compatibility at scale**: The main `BlogImage` module re-exports all symbols from its five sub-modules. This means all existing consumers (tests, `RunScheduled.hs`, `ContentDiscovery.hs`) continue to work with zero import changes, while new code can import the focused sub-modules directly.
 
+### Completed: Break Up InternalLinking.hs + Tests
+
+**Goal**: Split the 942-line module (25 imports) into focused domain modules following the vertical slicing principle.
+
+- [x] Extract `Automation.InternalLinking.Masking` (165 lines, 3 imports) — pure text masking for protected regions: `maskProtectedRegions` and all component mask functions (`maskFrontmatter`, `maskFencedCode`, `maskInlineCode`, `maskMarkdownLinks`, `maskWikilinks`, `maskHeadings`, `maskUrls`, `maskBold`), plus `replaceAllRegex` helper. Zero external domain dependencies — only Text and regex.
+- [x] Extract `Automation.InternalLinking.LinkExtraction` (172 lines, 10 imports) — link path extraction and BFS traversal: `extractLinkedPaths`, `normalizeFilePath`, `makeRelativeTo`, `splitSlash`, `joinSlash`, `hasSuffix`, wiki link parsing (`parseWikiLinks`, `extractWikiLinkTarget`, `resolveWikiTarget`), markdown link extraction, and BFS traversal (`findMostRecentReflection`, `bfsTraversal`, `bfsLoop`). Mixed pure and IO.
+- [x] Extract `Automation.InternalLinking.CandidateDiscovery` (190 lines, 12 imports) — content indexing and link candidate matching: `ContentEntry`/`LinkCandidate` types, `buildContentIndex`, `scanDir`, `readEntry`, text utilities (`stripEmojis`, `escapeRegex`, `formatWikilink`, `extractContext`, `extractMainTitle`), content link checking (`contentAlreadyLinksTo`), and candidate finding (`findLinkCandidates`, `findAllMatches`). Depends on LinkExtraction for `hasSuffix`.
+- [x] Extract `Automation.InternalLinking.GeminiIntegration` (120 lines, 9 imports) — Gemini API book identification: `buildIdentificationPrompt`, `identifyBooksWithGemini`, retry logic with exponential backoff, response parsing (`parseGeminiBookPaths`, `extractJsonArrayText`, `stripCodeFences`, `findLastIndex`). Depends on CandidateDiscovery for `ContentEntry`.
+- [x] Slim `Automation.InternalLinking` from 942 to 380 lines (60% reduction) — orchestration only: `FileResult`/`LinkingResult` types, constants (`defaultLinkingModel`, `indexableDirs`, `traversableDirs`), `extractBody`, `alreadyAnalyzed`, `applyReplacements`, frontmatter updates, file processing (`processFile`), and top-level orchestration (`run`, `processFiles`). Re-exports all sub-module symbols for backward compatibility.
+- [x] 112 new tests (1597 → 1709): `MaskingTest` (30 tests: frontmatter, fenced code, inline code, markdown links, wikilinks, headings, URLs, bold, composition, properties), `LinkExtractionTest` (24 tests: path normalization, relative paths, split/join, suffix checking, link extraction, deduplication, properties), `CandidateDiscoveryTest` (48 tests: constants, emoji stripping, regex escaping, wikilinks, context, title extraction, candidate finding, properties), `GeminiIntegrationTest` (10 tests: prompt building, entry handling, instruction verification).
+
+**Learnings from breaking up InternalLinking.hs:**
+32. **Masking as an independent pure layer**: Text masking (replacing protected regions like frontmatter, code blocks, headings with equal-length spaces) is a self-contained pure transformation with no domain dependencies. It forms its own module because it has no coupling to link discovery, Gemini, or file processing — only to Text and regex. Other modules consume it as a black box.
+33. **BFS traversal and link extraction are one concern**: The BFS traversal uses `extractLinkedPaths` to discover which notes a file links to, and the path resolution utilities (`normalizeFilePath`, `makeRelativeTo`, `splitSlash`, `joinSlash`) are shared between link extraction and file processing. Grouping these together in `LinkExtraction` creates a coherent module that answers "what does this note link to and how do we get there?"
+34. **Candidate discovery owns both types and matching**: `ContentEntry` and `LinkCandidate` are defined in the same module as `findLinkCandidates` and `buildContentIndex` because these types exist solely to support the candidate discovery workflow. The text utilities (`stripEmojis`, `escapeRegex`, `formatWikilink`) are used exclusively by this workflow, so they belong here rather than in a generic utilities module.
+35. **Frontmatter masking replaces newlines with spaces**: When `maskFrontmatter` replaces a frontmatter block (including its embedded newlines) with equal-length spaces, subsequent heading detection cannot see lines that were part of the masked block. This is correct behavior — frontmatter content should not be treated as headings. Tests should account for this by placing headings on separate lines after the frontmatter block, not immediately following it.
+
 ### Next: Remaining Improvements
 
 Prioritized list of remaining architecture improvements:
 
-1. **Break up InternalLinking.hs** — 961 lines, 25 imports. Extract link candidate discovery, similarity matching, and file processing into focused modules.
-2. **Extract remaining pure cores** — Several IO functions in library modules mix I/O with pure logic that could be extracted and tested independently.
-3. **Break up RunScheduled.hs further** — The app module is still 665 lines. Extract task runner configurations, environment setup, and individual task implementations into library modules.
+1. **Extract remaining pure cores** — Several IO functions in library modules mix I/O with pure logic that could be extracted and tested independently.
+2. **Break up RunScheduled.hs further** — The app module is still 665 lines. Extract task runner configurations, environment setup, and individual task implementations into library modules.
 
 ## Guiding Principles
 

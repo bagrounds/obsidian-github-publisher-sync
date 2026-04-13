@@ -82,9 +82,6 @@ import System.Directory (doesFileExist)
 import System.Environment (lookupEnv)
 import System.FilePath (takeDirectory, (</>))
 
--- --------------------------------------------------------------------------
--- Constants
--- --------------------------------------------------------------------------
 
 defaultLinkingModel :: Gemini.Model
 defaultLinkingModel = Gemini.Gemini31FlashLite
@@ -100,9 +97,6 @@ traversableDirs =
   indexableDirs
     <> ["reflections", "chickie-loo", "auto-blog-zero", "systems-for-public-good"]
 
--- --------------------------------------------------------------------------
--- Types
--- --------------------------------------------------------------------------
 
 data FileResult = FileResult
   { frRelativePath  :: RelativePath
@@ -119,9 +113,6 @@ data LinkingResult = LinkingResult
   , lrFileResults     :: [FileResult]
   } deriving (Show, Eq)
 
--- --------------------------------------------------------------------------
--- Pure utility functions
--- --------------------------------------------------------------------------
 
 extractBody :: Text -> Text
 extractBody content =
@@ -141,9 +132,6 @@ alreadyAnalyzed content =
     Just "true" -> False
     _           -> Map.member "link_analysis_model" fm
 
--- --------------------------------------------------------------------------
--- Replacement application
--- --------------------------------------------------------------------------
 
 applyReplacements :: Text -> [LinkCandidate] -> [Bool] -> Text
 applyReplacements content candidates validations =
@@ -161,9 +149,6 @@ applyReplacements content candidates validations =
           wl     = formatWikilink (lcEntry candidate)
       in before <> wl <> after
 
--- --------------------------------------------------------------------------
--- Frontmatter updates
--- --------------------------------------------------------------------------
 
 updateFrontmatterFields :: FilePath -> [(Text, YamlValue)] -> IO ()
 updateFrontmatterFields filePath fields = do
@@ -219,9 +204,6 @@ recordLinkAnalysis filePath model timestamp =
     , ("force_analyze_links", YamlBool False)
     ]
 
--- --------------------------------------------------------------------------
--- File processing
--- --------------------------------------------------------------------------
 
 processFile :: Manager -> Secret -> Gemini.Model -> FilePath -> [ContentEntry] -> IO (Maybe FileResult)
 processFile manager apiKey model filePath index = do
@@ -309,9 +291,6 @@ nowIso = do
   today <- todayPacificDay
   pure (formatDay today <> "T00:00:00Z")
 
--- --------------------------------------------------------------------------
--- Orchestration
--- --------------------------------------------------------------------------
 
 run :: Manager -> Gemini.Model -> FilePath -> IO LinkingResult
 run manager model contentDir = do

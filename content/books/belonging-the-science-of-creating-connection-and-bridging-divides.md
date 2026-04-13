@@ -6,6 +6,9 @@ URL: https://bagrounds.org/books/belonging-the-science-of-creating-connection-an
 share: true
 CTA: 🤝 Cultivate inclusivity.
 affiliate link: https://amzn.to/4onq5YS
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_time: 2026-04-05T00:00:00Z
+force_analyze_links: false
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🧑‍🤝‍🧑 Belonging: The Science of Creating Connection and Bridging Divides  

@@ -38,9 +38,9 @@
 ### 🖼️ Image Backfill Gate
 
 🔍 Before posting, each candidate note is checked for image readiness using the same logic as the image backfill pipeline.
-📂 A note is considered "awaiting image backfill" when its parent directory is one of the configured image backfill content directories (from `imageBackfillContentIds`), its filename passes `shouldHaveImage`, and either of these conditions holds:
+📂 A note is considered "awaiting image backfill" when its parent directory is one of the configured image backfill content directories (from `imageBackfillContentDirs`, a list of `ContentDirectory` values), its filename passes `shouldHaveImage`, and either of these conditions holds:
 - 🚫 Its body does not contain an embedded image (checked via `hasEmbeddedImage`)
-- ⏰ Its body has an image but `image_date` in frontmatter is less than 1 day old (recently backfilled image may not be deployed yet)
+- ⏰ Its body has an image but `image_date` in frontmatter is less than 86400 seconds old (recently backfilled image may not be deployed yet)
 
 🔄 The image backfill content directory list is dynamically derived from the auto blog series JSON configs via `imageBackfillContentIdsFrom`, combined with the static extra and library content directories. This makes the system forward-compatible: adding a new series JSON config automatically includes that directory in both image backfilling and the social posting image gate, with zero code changes.
 ⏳ The propagation delay prevents a race condition where a note receives an image but is posted to social media before the image is deployed to the live website. Notes with an `image_date` from the same day are deferred until the next day.

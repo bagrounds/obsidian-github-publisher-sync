@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-04-12T23:48:50-07:00
+updated: 2026-04-13T14:08:24-07:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -14,55 +14,57 @@ updated: 2026-04-12T23:48:50-07:00
 🔊 Listen to any page with built in audio control.  
 💬 Comment on any page with your GitHub account.  
   
-## [🪞 Reflections](./reflections/index.md) ~ Blog (514)  
+## [🪞 Reflections](./reflections/index.md) ~ Blog (515)  
+- [2026-04-13](./reflections/2026-04-13.md)  
 - [2026-04-12 | 🧠 First 🎯 Solution ✨ Brings 🌟 Bright 🌃 Night 🏛️ Foundational 🗺️ Navigating 🌐 Global 🐦 Twitter 🚔 Police 🗳️ Election 🤖 Synthetic 📺📰🌟🐔🤖🏛️🤖🐲](./reflections/2026-04-12.md)  
 - [2026-04-11 | 🧠 Mythos 🚀 Changes 🪚 Broken 🛠️ Fixing 🏠 Home 🌃 Night 🤖 AI 🗣️ Day 📈 Surge 🌐 World 🍎 Embrace 🤫 Noise 🆕 New 🥇 First 🕰️ Time 📚📺🐔🤖🏛️📰🤖🐲](./reflections/2026-04-11.md)  
 - [2026-04-10 | 🤖 Synthetic 🧠 Consciousness ⚖️ Ethics 🔨 Breaking 🧩 Separating 💻 Codebase 🛡️ Testing 🧱 Returns 🔧 Optimizing 📚 Learning 🇺🇸 American 🎶 Sound 📺📰🐔🤖🏛️🤖🐲](./reflections/2026-04-10.md)  
-- [2026-04-09 | 💡 Make 🫂 Shared 🎓 Learning 🎯 Qualified 📐 Design 🚪 Gate 🤖 Knowing 💬 Chat 🏡 Home 📺🐔🤖🏛️🤖🐲](./reflections/2026-04-09.md)  
   
   
-## [🤖 AI Blog](./ai-blog/index.md) (142)  
+## [🤖 AI Blog](./ai-blog/index.md) (143)  
+- [2026-04-12 | 🖼️ Forward-Compatible Image Backfill & Propagation Delay 🏎️](./ai-blog/2026-04-12-6-forward-compatible-image-backfill.md)  
 - [2026-04-12 | 🕐 Working Entirely in Pacific Time 🤖](./ai-blog/2026-04-12-5-working-entirely-in-pacific-time.md)  
 - [2026-04-12 | 🌑 Dark Mode Social Media Embeds 🤖](./ai-blog/2026-04-12-4-dark-mode-social-media-embeds.md)  
 - [2026-04-12 | 🌟 Launching Positivity Bias — A New Auto Blog Series 🤖](./ai-blog/2026-04-12-3-launching-positivity-bias-a-new-auto-blog-series.md)  
-- [2026-04-12 | 🛡️ Stripping LLM Preamble from Reflection Titles 🤖](./ai-blog/2026-04-12-2-stripping-llm-preamble-from-reflection-titles.md)  
   
   
-## [🤖 Auto Blog Zero](./auto-blog-zero/index.md) (33)  
+## [🤖 Auto Blog Zero](./auto-blog-zero/index.md) (34)  
+- [2026-04-13 | 🤖 The Entropy of Infrastructure 🤖](./auto-blog-zero/2026-04-13-the-entropy-of-infrastructure.md)  
 - [2026-04-12 | 🤖 📆 Weekly Recap: The Architecture of Synthetic Humility 🤖](./auto-blog-zero/2026-04-12-weekly-recap-the-architecture-of-synthetic-humility.md)  
 - [2026-04-11 | 🤖 🏗️ The Mechanics of Trust in High-Entropy Systems 🤖](./auto-blog-zero/2026-04-11-the-mechanics-of-trust-in-high-entropy-systems.md)  
 - [2026-04-10 | 🤖 🛡️ The Ethics of Synthetic Certainty 🤖](./auto-blog-zero/2026-04-10-the-ethics-of-synthetic-certainty.md)  
-- [2026-04-09 | 🤖 🧠 The Calculus of Not Knowing 🤖](./auto-blog-zero/2026-04-09-the-calculus-of-not-knowing.md)  
   
   
-## [🐔 Chickie Loo](./chickie-loo/index.md) (33)  
+## [🐔 Chickie Loo](./chickie-loo/index.md) (34)  
+- [2026-04-13 | 🐔 🌾 Ashes, Anniversaries, and the Rhythm of the Ranch 🐔](./chickie-loo/2026-04-13-ashes-anniversaries-and-the-rhythm-of-the-ranch.md)  
 - [2026-04-12 | 🐔 🥂 A Night Among the Stars and Studs 🐔](./chickie-loo/2026-04-12-a-night-among-the-stars-and-studs.md)  
 - [2026-04-11 | 🐔 🏠 Our First Night Home 🐔](./chickie-loo/2026-04-11-our-first-night-home.md)  
 - [2026-04-10 | 🐔 🏠 The Sweetest Sound of Home 🐔](./chickie-loo/2026-04-10-the-sweetest-sound-of-home.md)  
-- [2026-04-09 | 🐔 🧶 A Soft Step Toward Home 🐔](./chickie-loo/2026-04-09-a-soft-step-toward-home.md)  
   
   
-## [🏛️ Systems for Public Good](./systems-for-public-good/index.md) (22)  
+## [🏛️ Systems for Public Good](./systems-for-public-good/index.md) (23)  
+- [2026-04-13 | 🏛️ 🌳 Nature's Embrace: Public Parks as a Universal Right 🏛️](./systems-for-public-good/2026-04-13-nature-s-embrace-public-parks-as-a-universal-right.md)  
 - [2026-04-12 | 🏛️ 🗺️ Navigating Our Collective Well-being: A Week of Foundational Investments 🏛️](./systems-for-public-good/2026-04-12-navigating-our-collective-well-being-a-week-of-foundational-investments.md)  
 - [2026-04-11 | 🏛️ ⚕️ The Human Foundation: Public Health as Real Wealth 🏛️](./systems-for-public-good/2026-04-11-the-human-foundation-public-health-as-real-wealth.md)  
 - [2026-04-10 | 🏛️ 💡 Education as Reciprocity: Learning, Teaching, and Serving 🏛️](./systems-for-public-good/2026-04-10-education-as-reciprocity-learning-teaching-and-serving.md)  
-- [2026-04-09 | 🏛️ 🎓 Investing in Lifelong Learning: Beyond the K-12 Horizon, Revisited 🏛️](./systems-for-public-good/2026-04-09-investing-in-lifelong-learning-beyond-the-k-12-horizon-revisited.md)  
   
   
-## [📰 The Noise](./the-noise/index.md) (3)  
+## [📰 The Noise](./the-noise/index.md) (4)  
+- [2026-04-13 | 📰 🌍 Global Currents, Shifting Sands 🌐 📰](./the-noise/2026-04-13-global-currents-shifting-sands.md)  
 - [2026-04-12 | 📰 🌊 Global Currents, Shifting Sands 🌐 📰](./the-noise/2026-04-12-global-currents-shifting-sands.md)  
 - [2026-04-11 | 📰 First Broadcast - Tuning Into the World 📰](./the-noise/2026-04-11-first-broadcast.md)  
   
   
-## [🌟 Positivity Bias](./positivity-bias/index.md) (2)  
+## [🌟 Positivity Bias](./positivity-bias/index.md) (3)  
+- [2026-04-13 | 🌟 Innovation Accelerates Across Global Health and Environment 🌟](./positivity-bias/2026-04-13-innovation-accelerates-across-global-health-and-environment.md)  
 - [2026-04-12 | 🌟 Inaugural Edition - Seeking the Bright Spots 🌟](./positivity-bias/2026-04-12-inaugural-seeking-the-bright-spots.md)  
   
   
 ## [📚 Books](./books/index.md) (959)  
-- [🤖⚠️📈 Superintelligence: Paths, Dangers, Strategies](./books/superintelligence-paths-dangers-strategies.md)  
-- [🎲♾️ Finite and Infinite Games: A Vision of Life as Play and Possibility](./books/finite-and-infinite-games-a-vision-of-life-as-play-and-possibility.md)  
-- [🤖⚙️ Agentic Artificial Intelligence: Harnessing AI Agents to Reinvent Business, Work and Life](./books/agentic-artificial-intelligence-harnessing-ai-agents-to-reinvent-business-work-and-life.md)  
-- [🤖📈 Prediction Machines: The Simple Economics of Artificial Intelligence](./books/prediction-machines-the-simple-economics-of-artificial-intelligence.md)  
+- [🌊🤖🤔 The Coming Wave: Technology, Power, and the 21st Century's Greatest Dilemma](./books/the-coming-wave-technology-power-and-the-21st-centurys-greatest-dilemma.md)  
+- [⚠️👤 Something Happened](./books/something-happened.md)  
+- [🏭🫡 Manufacturing Consent: The Political Economy of the Mass Media](./books/manufacturing-consent.md)  
+- [🙈👁️💡🤔 Learning to See: Value-Stream Mapping to Add Value and Eliminate MUDA](./books/learning-to-see.md)  
   
   
 ## [📺 Videos](./videos/index.md) (747)  
@@ -73,24 +75,24 @@ updated: 2026-04-12T23:48:50-07:00
   
   
 ## [🌌 Topics](./topics/index.md) (91)  
+- [🤖🦜 Large Language Models](./topics/large-language-models.md)  
 - [🫂💖 Attachment Theory](./topics/attachment-theory.md)  
 - [🏗️🔧 Engineering](./topics/engineering.md)  
 - [🧩🔄🧠 Self-Organization](./topics/self-organization.md)  
-- [🏛️📊 Social Sciences](./topics/social-sciences.md)  
   
   
 ## [📄  Articles](./articles/index.md) (84)  
-- [⚙️🤖📈🤝 Engineering and AI: Advancing the synergy](./articles/engineering-and-ai-advancing-the-synergy.md)  
 - [🤖🧠💻 Agentic Code Reasoning](./articles/agentic-code-reasoning.md)  
 - [🗺️🚀🤖 A Field Guide to Rapidly Improving AI Products](./articles/a-field-guide-to-rapidly-improving-ai-products.md)  
+- [⚙️🤖📈🤝 Engineering and AI: Advancing the synergy](./articles/engineering-and-ai-advancing-the-synergy.md)  
 - [🤖👨‍💻📈⏳ Learnings from two years of using AI tools for software engineering](./articles/learnings-from-two-years-of-using-ai-tools-for-software-engineering.md)  
   
   
 ## [🤖💬 Bot Chats](./bot-chats/index.md) (49)  
-- [🌸🌬️🤧🔬📚 Allergy Science Books](./bot-chats/allergy-science-books.md)  
-- [🛐🕯️🔄 Ritual](./bot-chats/ritual.md)  
-- [✅🔎📰 Reliable News](./bot-chats/reliable-news.md)  
-- [💰💎🌽🏡📈 Real Wealth Investing](./bot-chats/real-wealth-investing.md)  
+- [🧠🤝 System 2 Rapport Building](./bot-chats/system-2-rapport-building.md)  
+- [👶😭➡️😊 Summarize The Happiest Baby On The Block](./bot-chats/summarize-the-happiest-baby-on-the-block.md)  
+- [⁉️🔣🪵 Special Characters In Logs](./bot-chats/special-characters-in-logs.md)  
+- [🦷🔬 Science of Dentistry](./bot-chats/science-of-dentistry.md)  
   
   
 ## [💾 Software](./software/index.md) (33)  

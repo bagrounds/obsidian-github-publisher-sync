@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-04-13T14:32:22-07:00
+updated: 2026-04-13T16:00:06-07:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -61,17 +61,17 @@ updated: 2026-04-13T14:32:22-07:00
   
   
 ## [📚 Books](./books/index.md) (959)  
+- [🚨🤖💥 All Systems Red](./books/all-systems-red.md)  
+- [➡️🌌🚀😡 A Long Way to a Small, Angry Planet](./books/a-long-way-to-a-small-angry-planet.md)  
 - [🔄📜🏛️ Against the Grain: A Deep History of the Earliest States](./books/against-the-grain-a-deep-history-of-the-earliest-states.md)  
 - [🤓👩‍👦 The Informed Parent: A Science-Based Resource for Your Child's First Four Years](./books/the-informed-parent.md)  
-- [🌊🤖🤔 The Coming Wave: Technology, Power, and the 21st Century's Greatest Dilemma](./books/the-coming-wave-technology-power-and-the-21st-centurys-greatest-dilemma.md)  
-- [⚠️👤 Something Happened](./books/something-happened.md)  
   
   
-## [📺 Videos](./videos/index.md) (749)  
+## [📺 Videos](./videos/index.md) (750)  
+- [💡🤏✅ I Tried the World's Simplest Productivity Trick (it worked)](./videos/i-tried-the-worlds-simplest-productivity-trick-it-worked.md)  
 - [💰⚖️💡➡️ One State Found a Way to Make Billionaires Pay. Your State Could Be Next.](./videos/one-state-found-a-way-to-make-billionaires-pay-your-state-could-be-next.md)  
 - [🎙️🇪🇺🗳️🇮🇷⚔️🌊🚨 FULL PRESSER: EU’s von der Leyen Speaks on Hungary Election, Iran War & Strait of Hormuz Crisis|AC1B](./videos/full-presser-eus-von-der-leyen-speaks-on-hungary-election-iran-war-strait-of-hormuz-crisis-ac1b.md)  
 - [⬆️💸💥💡⬇️ We Found The Radical Solution To Skyrocketing Grocery Prices](./videos/we-found-the-radical-solution-to-skyrocketing-grocery-prices.md)  
-- [👩‍⚖️🌪️🐘 Pam Bondi’s Tumultuous Tenure as Trump's Attorney General | The Daily Show](./videos/pam-bondis-tumultuous-tenure-as-trumps-attorney-general-the-daily-show.md)  
   
   
 ## [🌌 Topics](./topics/index.md) (91)  

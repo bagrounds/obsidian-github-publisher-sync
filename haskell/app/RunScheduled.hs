@@ -448,11 +448,11 @@ runInternalLinking context = do
       let todayText = formatDay today
           reflectionsDir = vaultDir </> "reflections"
       links <- catMaybes <$> traverse (\fr -> do
-        title <- extractTitleFromFile (vaultDir </> T.unpack (unRelativePath (IL.fileResultRelativePath fr)))
+        title <- extractTitleFromFile (vaultDir </> T.unpack (unRelativePath (IL.relativePath fr)))
         let addedLinks = IL.linksAdded fr
             detail = "🔗 added " <> T.pack (show addedLinks) <> " internal link" <> (if addedLinks == 1 then "" else "s")
         case mkTitle title of
-          Right validTitle -> pure (Just (UpdateLink (IL.fileResultRelativePath fr) validTitle [detail]))
+          Right validTitle -> pure (Just (UpdateLink (IL.relativePath fr) validTitle [detail]))
           Left titleError -> do
             logMsg $ "  ⚠️  Skipping update link: " <> titleError
             pure Nothing

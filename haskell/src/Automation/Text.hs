@@ -249,4 +249,7 @@ isEmojiOrSpace c =
 
 stripEmojis :: Text -> Text
 stripEmojis =
-  T.unwords . T.words . T.filter (not . isEmoji)
+  T.intercalate " "
+    . filter (not . T.null)
+    . T.split (== ' ')
+    . T.filter (not . isEmoji)

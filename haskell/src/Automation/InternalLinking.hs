@@ -13,14 +13,7 @@ module Automation.InternalLinking
   , run
   ) where
 
-import Automation.InternalLinking.CandidateDiscovery
-  ( ContentEntry (..)
-  , LinkCandidate (..)
-  , contentAlreadyLinksTo
-  , buildContentIndex
-  , findLinkCandidates
-  , formatWikilink
-  )
+import qualified Automation.InternalLinking.CandidateDiscovery as CD
 import Automation.InternalLinking.Gemini (identifyBooksWithGemini)
 import Automation.InternalLinking.LinkExtraction
   ( bfsTraversal
@@ -64,10 +57,10 @@ traversableDirs =
 
 
 data FileResult = FileResult
-  { fileResultRelativePath  :: RelativePath
-  , modified                :: Bool
-  , linksAdded              :: Int
-  , usedInference           :: Bool
+  { relativePath   :: RelativePath
+  , modified       :: Bool
+  , linksAdded     :: Int
+  , usedInference  :: Bool
   } deriving (Show, Eq)
 
 data LinkingResult = LinkingResult
@@ -98,20 +91,20 @@ alreadyAnalyzed content =
     _           -> Map.member "link_analysis_model" fm
 
 
-applyReplacements :: Text -> [LinkCandidate] -> [Bool] -> Text
+applyReplacements :: Text -> [CD.LinkCandidate] -> [Bool] -> Text
 applyReplacements content candidates validations =
   let validPairs = filter snd (zip candidates validations)
-      sorted     = sortBy (\(a, _) (b, _) -> compare (Down (position a)) (Down (position b)))
+      sorted     = sortBy (\(a, _) (b, _) -> compare (Down (CD.position a)) (Down (CD.position b)))
                      validPairs
   in foldl' applyOne content (fmap fst sorted)
   where
-    applyOne :: Text -> LinkCandidate -> Text
+    applyOne :: Text -> CD.LinkCandidate -> Text
     applyOne acc candidate =
-      let pos    = position candidate
-          len    = T.length (matchedText candidate)
+      let pos    = CD.position candidate
+          len    = T.length (CD.matchedText candidate)
           before = T.take pos acc
           after  = T.drop (pos + len) acc
-          wl     = formatWikilink (entry candidate)
+          wl     = CD.formatWikilink (CD.entry candidate)
       in before <> wl <> after
 
 
@@ -170,7 +163,7 @@ recordLinkAnalysis filePath model timestamp =
     ]
 
 
-processFile :: Manager -> Secret -> Gemini.Model -> FilePath -> [ContentEntry] -> IO (Maybe FileResult)
+processFile :: Manager -> Secret -> Gemini.Model -> FilePath -> [CD.ContentEntry] -> IO (Maybe FileResult)
 processFile manager apiKey model filePath index = do
   let contentDir      = takeDirectory (takeDirectory filePath)
       fileRelativePath = makeRelPathFromContentDir contentDir filePath
@@ -182,26 +175,26 @@ processFile manager apiKey model filePath index = do
       content <- TIO.readFile filePath
       if alreadyAnalyzed content
         then pure $ Just FileResult
-          { fileResultRelativePath  = relPath
-          , modified                = False
-          , linksAdded              = 0
-          , usedInference           = False
+          { relativePath = relPath
+          , modified     = False
+          , linksAdded   = 0
+          , usedInference = False
           }
         else do
           let body = extractBody content
               eligibleBooks = filter
-                (\e -> relativePath e /= relPath
-                    && not (contentAlreadyLinksTo content e))
+                (\e -> CD.relativePath e /= relPath
+                    && not (CD.contentAlreadyLinksTo content e))
                 index
           case eligibleBooks of
             [] -> do
               timestamp <- nowIso
               recordLinkAnalysis filePath model timestamp
               pure $ Just FileResult
-                { fileResultRelativePath  = relPath
-                , modified                = False
-                , linksAdded              = 0
-                , usedInference           = False
+                { relativePath = relPath
+                , modified     = False
+                , linksAdded   = 0
+                , usedInference = False
                 }
             _ -> do
               geminiResult <- identifyBooksWithGemini manager apiKey model body eligibleBooks
@@ -209,30 +202,30 @@ processFile manager apiKey model filePath index = do
               recordLinkAnalysis filePath model timestamp
               case geminiResult of
                 Left _err -> pure $ Just FileResult
-                  { fileResultRelativePath  = relPath
-                  , modified                = False
-                  , linksAdded              = 0
-                  , usedInference           = True
+                  { relativePath = relPath
+                  , modified     = False
+                  , linksAdded   = 0
+                  , usedInference = True
                   }
                 Right identifiedPaths
                   | null identifiedPaths -> pure $ Just FileResult
-                      { fileResultRelativePath  = relPath
-                      , modified                = False
-                      , linksAdded              = 0
-                      , usedInference           = True
+                      { relativePath = relPath
+                      , modified     = False
+                      , linksAdded   = 0
+                      , usedInference = True
                       }
                   | otherwise -> do
                       let identifiedSet = Set.fromList identifiedPaths
                       contentAfterFm <- TIO.readFile filePath
                       let masked          = maskProtectedRegions contentAfterFm
-                          identifiedIndex = filter (\e -> Set.member (unRelativePath (relativePath e)) identifiedSet) index
-                          candidates      = findLinkCandidates identifiedIndex contentAfterFm masked relPath
+                          identifiedIndex = filter (\e -> Set.member (unRelativePath (CD.relativePath e)) identifiedSet) index
+                          candidates      = CD.findLinkCandidates identifiedIndex contentAfterFm masked relPath
                       case candidates of
                         [] -> pure $ Just FileResult
-                          { fileResultRelativePath  = relPath
-                          , modified                = False
-                          , linksAdded              = 0
-                          , usedInference           = True
+                          { relativePath = relPath
+                          , modified     = False
+                          , linksAdded   = 0
+                          , usedInference = True
                           }
                         _  -> do
                           let validations = replicate (length candidates) True
@@ -241,10 +234,10 @@ processFile manager apiKey model filePath index = do
                           putStrLn $ "  ✏️  " <> fileRelativePath <> ": "
                             <> show (length candidates) <> " link(s) applied"
                           pure $ Just FileResult
-                            { fileResultRelativePath  = relPath
-                            , modified                = True
-                            , linksAdded              = length candidates
-                            , usedInference           = True
+                            { relativePath = relPath
+                            , modified     = True
+                            , linksAdded   = length candidates
+                            , usedInference = True
                             }
 
 makeRelPathFromContentDir :: FilePath -> FilePath -> FilePath
@@ -261,7 +254,7 @@ run :: Manager -> Gemini.Model -> FilePath -> IO LinkingResult
 run manager model contentDir = do
   putStrLn $ "🔗 Internal linking: model=" <> T.unpack (Gemini.modelToText model)
 
-  index <- buildContentIndex contentDir
+  index <- CD.buildContentIndex contentDir
   putStrLn $ "  📚 Index: " <> show (length index) <> " books"
 
   filesToVisit <- bfsTraversal contentDir
@@ -288,7 +281,7 @@ run manager model contentDir = do
 
   pure result
 
-processFiles :: Manager -> Secret -> Gemini.Model -> FilePath -> [ContentEntry] -> [Text] -> IO [FileResult]
+processFiles :: Manager -> Secret -> Gemini.Model -> FilePath -> [CD.ContentEntry] -> [Text] -> IO [FileResult]
 processFiles manager apiKey model contentDir index filesToVisit = do
   inferenceRef <- newIORef (0 :: Int)
   resultRef    <- newIORef ([] :: [FileResult])

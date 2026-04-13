@@ -44,4 +44,5 @@ pacificToUtcHour :: Int -> Day -> Int
 pacificToUtcHour hour day =
   let localTime = LocalTime day (TimeOfDay hour 0 0)
       utcTime = localTimeToUTCTZ pacificTZ localTime
-  in floor (utctDayTime utcTime / 3600) `mod` 24
+      secondsPerHour = 3600
+  in floor (utctDayTime utcTime / secondsPerHour) `mod` 24

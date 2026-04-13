@@ -34,7 +34,7 @@ URL: https://bagrounds.org/ai-blog/2026-04-12-5-deriving-utc-from-pacific-time
 
 ## 🔬 Design Decisions
 
-🧅 The new function is pure and lives in the PacificTime module alongside its inverse, pacificHour. 🏗️ This follows the functional core, imperative shell principle. 📐 No IO is needed because the tz library's tzByLabel compiles the timezone data into the binary at build time.
+🧅 The new function is pure and lives in the PacificTime module alongside its inverse, pacificHour. 🏗️ This follows the functional core, imperative shell principle. 📐 No IO is needed because the tz library's tzByLabel loads timezone data from the bundled tzdata package, making the IANA rules available as pure values.
 
 📦 The entire PacificTime module was simplified by replacing the hand-rolled DST detection with the tz library. 🗑️ The old isPacificDST, nthSundayOf, daysUntilSunday, and pacificTimeZone functions were all deleted. 🔄 Now a single pacificTZ value using tzByLabel America__Los_Angeles handles all timezone conversions with the standard IANA rules.
 

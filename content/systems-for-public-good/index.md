@@ -5,11 +5,12 @@ aliases:
 title: 🏛️ Systems for Public Good
 URL: https://bagrounds.org/systems-for-public-good
 backlinks: false
-updated: 2026-04-12T23:48:50-07:00
+updated: 2026-04-13T14:08:24-07:00
 ---
 [🏡 Home](../index.md)  
-# 🏛️ Systems for Public Good (22)  
+# 🏛️ Systems for Public Good (23)  
 - [🏛️ Systems for Public Good — AGENTS.md](./AGENTS.md)  
+- [2026-04-13 | 🏛️ 🌳 Nature's Embrace: Public Parks as a Universal Right 🏛️](./2026-04-13-nature-s-embrace-public-parks-as-a-universal-right.md)  
 - [2026-04-12 | 🏛️ 🗺️ Navigating Our Collective Well-being: A Week of Foundational Investments 🏛️](./2026-04-12-navigating-our-collective-well-being-a-week-of-foundational-investments.md)  
 - [2026-04-11 | 🏛️ ⚕️ The Human Foundation: Public Health as Real Wealth 🏛️](./2026-04-11-the-human-foundation-public-health-as-real-wealth.md)  
 - [2026-04-10 | 🏛️ 💡 Education as Reciprocity: Learning, Teaching, and Serving 🏛️](./2026-04-10-education-as-reciprocity-learning-teaching-and-serving.md)  

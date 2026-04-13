@@ -8,7 +8,7 @@
 
 ### 📦 Required New Files
 
-- [ ] **`haskell/series/{series-id}.json`** — Series configuration with name, icon, priorityUser, scheduleHourPacific, models, and postTimeUtc
+- [ ] **`haskell/series/{series-id}.json`** — Series configuration with name, icon, priorityUser, scheduleHourPacific, and models
 - [ ] **`{series-id}/AGENTS.md`** — System prompt defining the series identity, voice, editorial standards, post structure, topics, and recap guidelines. Must include YAML frontmatter with share, no_social, title, URL, Author, and tags fields
 - [ ] **`{series-id}/YYYY-MM-DD-slug.md`** — Inaugural seed post written by the PR author (not auto-generated). This gives the series a first post so the automation has context for subsequent posts. Must follow the standard frontmatter format with title, URL, Author, aliases, and navigation breadcrumb
 - [ ] **`specs/{series-id}.md`** — Product and engineering spec documenting the series overview, architecture, configuration, post structure, schedule, editorial standards, recaps, topics, testing, and files
@@ -22,7 +22,7 @@
   - Specs table: add row linking to `specs/{series-id}.md`
 - [ ] **`specs/blog-generation.md`** — Two updates needed:
   - Overview paragraph: increment the series count (e.g., four to five)
-  - Blog Series Configuration table: add row with series ID, icon, post time UTC, priority user, and base URL
+  - Blog Series Configuration table: add row with series ID, icon, schedule hour, priority user, and base URL
 - [ ] **`specs/scheduled-tasks.md`** — Three updates needed:
   - Data Flow diagram: add `blog-series:{series-id}` line in the task list
   - Blog Series schedule table: add row with earliest Pacific hour, task ID, and description
@@ -54,7 +54,6 @@
 | `priorityUser` | string or null | GitHub handle whose comments get priority flagging |
 | `scheduleHourPacific` | number (0-23) | Hour in Pacific time to generate posts |
 | `models` | array of strings | Gemini model chain (primary first, fallbacks after) |
-| `postTimeUtc` | string | UTC time for post metadata (e.g., "18:00") |
 
 ### 🌐 Model Selection Guide
 

@@ -20,6 +20,7 @@ import qualified Data.Map.Strict as Map
 import Data.Text (Text)
 import qualified Data.Text as T
 import qualified Data.Text.IO as TIO
+import Data.Time.LocalTime (midnight)
 import System.Directory (doesDirectoryExist, doesFileExist, listDirectory)
 import System.FilePath ((</>))
 
@@ -35,7 +36,7 @@ aiBlogConfig = BlogSeriesConfig
   , bscBaseUrl      = "https://bagrounds.org/ai-blog"
   , bscPriorityUser = Nothing
   , bscNavLink      = "[[index|🏡 Home]] > [[/ai-blog/index|🤖 AI Blog]]"
-  , bscPostTimeUtc  = ""
+  , bscScheduleTime = midnight
   }
 
 aiBlogNavPrefix :: Text

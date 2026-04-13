@@ -5,6 +5,7 @@ import Test.Tasty.HUnit (testCase, (@?=), assertBool)
 import qualified Data.Map.Strict as Map
 import qualified Data.Text as T
 import Data.Time (fromGregorian)
+import Data.Time.LocalTime (TimeOfDay (..))
 
 import Automation.BlogSeries
 import Automation.BlogSeriesConfig (BlogSeriesConfig (..))
@@ -47,7 +48,7 @@ sampleSeries = BlogSeriesConfig
   , bscBaseUrl = "https://bagrounds.org/the-noise"
   , bscPriorityUser = Just "bagrounds"
   , bscNavLink = "[[index|Home]] > [[the-noise/index|\128240 The Noise]]"
-  , bscPostTimeUtc = "14:00"
+  , bscScheduleTime = TimeOfDay 6 0 0
   }
 
 generateSeriesIndexTests :: TestTree

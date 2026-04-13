@@ -23,18 +23,21 @@ import qualified Data.Text as T
 import Data.Time
   ( Day
   , DayOfWeek (..)
+  , LocalTime (..)
+  , UTCTime
   , addDays
   , dayOfWeek
   , fromGregorian
   , toGregorian
   )
+import Data.Time.Format.ISO8601 (iso8601ParseM)
 import Text.Read (readMaybe)
 
 import Automation.BlogComments (BlogComment (..))
 import Automation.BlogPosts (BlogPost (..))
 import Automation.BlogSeriesConfig (BlogSeriesConfig (..))
 import Automation.Frontmatter (quoteYamlValue)
-import Automation.PacificTime (formatDay, formatDayHuman)
+import Automation.PacificTime (formatDay, formatDayHuman, toPacificLocalTime)
 import Automation.Text (isEmoji)
 import qualified Automation.Platforms.Bluesky as Bluesky
 import qualified Automation.Platforms.Mastodon as Mastodon
@@ -84,8 +87,18 @@ buildBlogPrompt ctx =
 filterCommentsAfterLastPost :: BlogSeriesConfig -> [BlogPost] -> [BlogComment] -> [BlogComment]
 filterCommentsAfterLastPost _ [] comments = comments
 filterCommentsAfterLastPost series (latestPost : _) comments =
-  let cutoff = bpDate latestPost <> "T" <> bscPostTimeUtc series <> ":00Z"
-  in filter (\c -> bcCreatedAt c >= cutoff) comments
+  let postDay = fromMaybe (fromGregorian 2026 1 1) (parseDate (bpDate latestPost))
+      cutoff = LocalTime postDay (bscScheduleTime series)
+  in filter (commentAfterCutoff cutoff) comments
+
+commentAfterCutoff :: LocalTime -> BlogComment -> Bool
+commentAfterCutoff cutoff comment =
+  case parseUtcTimestamp (bcCreatedAt comment) of
+    Nothing      -> True
+    Just utcTime -> toPacificLocalTime utcTime >= cutoff
+
+parseUtcTimestamp :: Text -> Maybe UTCTime
+parseUtcTimestamp = iso8601ParseM . T.unpack
 
 buildBackLink :: BlogSeriesConfig -> Text -> Text
 buildBackLink series filename =

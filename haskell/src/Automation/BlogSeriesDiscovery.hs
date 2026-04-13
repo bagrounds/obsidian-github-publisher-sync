@@ -20,6 +20,7 @@ import Data.List.NonEmpty (NonEmpty (..))
 import Data.Text (Text)
 import qualified Data.Text as T
 import qualified Data.Text.Encoding as TE
+import Data.Time.LocalTime (TimeOfDay (..), todHour)
 import System.Directory (doesDirectoryExist, listDirectory)
 import System.FilePath ((</>), dropExtension, takeExtension)
 
@@ -36,9 +37,8 @@ data DiscoveredSeries = DiscoveredSeries
   , dsName               :: Text
   , dsIcon               :: Text
   , dsPriorityUser       :: Maybe Text
-  , dsScheduleHourPacific :: Int
+  , dsScheduleTime       :: TimeOfDay
   , dsModels             :: NonEmpty Gemini.Model
-  , dsPostTimeUtc        :: Text
   } deriving (Show, Eq)
 
 data DiscoveryError
@@ -52,7 +52,6 @@ data RawConfig = RawConfig
   , rcPriorityUser       :: Maybe Text
   , rcScheduleHourPacific :: Int
   , rcModels             :: [Text]
-  , rcPostTimeUtc        :: Text
   }
 
 instance FromValue RawConfig where
@@ -62,7 +61,6 @@ instance FromValue RawConfig where
     rcPriorityUser <- obj .:? "priorityUser"
     rcScheduleHourPacific <- obj .: "scheduleHourPacific"
     rcModels <- obj .: "models"
-    rcPostTimeUtc <- obj .: "postTimeUtc"
     pure RawConfig{..}
 
 discoverSeries :: FilePath -> IO (Either [DiscoveryError] [DiscoveredSeries])
@@ -117,9 +115,8 @@ validateRawConfig filePath seriesId RawConfig{..} =
           , dsName = rcName
           , dsIcon = rcIcon
           , dsPriorityUser = rcPriorityUser
-          , dsScheduleHourPacific = rcScheduleHourPacific
+          , dsScheduleTime = TimeOfDay rcScheduleHourPacific 0 0
           , dsModels = Gemini.modelFromText firstModel :| fmap Gemini.modelFromText restModels
-          , dsPostTimeUtc = rcPostTimeUtc
           }
       _ -> Left errors
     else Left errors
@@ -133,7 +130,7 @@ deriveBlogSeriesConfig DiscoveredSeries{..} = BlogSeriesConfig
   , bscBaseUrl = deriveBaseUrl dsId
   , bscPriorityUser = dsPriorityUser
   , bscNavLink = deriveNavLink dsId dsIcon dsName
-  , bscPostTimeUtc = dsPostTimeUtc
+  , bscScheduleTime = dsScheduleTime
   }
 
 deriveBlogSeriesRunConfig :: DiscoveredSeries -> BlogSeriesRunConfig
@@ -146,7 +143,7 @@ deriveBlogSeriesRunConfig DiscoveredSeries{..} = BlogSeriesRunConfig
 deriveScheduleEntry :: DiscoveredSeries -> ScheduleEntry
 deriveScheduleEntry DiscoveredSeries{..} = ScheduleEntry
   { seTaskId = deriveTaskId dsId
-  , seHoursPacific = [dsScheduleHourPacific]
+  , seHoursPacific = [todHour dsScheduleTime]
   , seAtOrAfter = False
   }
 

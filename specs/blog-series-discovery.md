@@ -47,7 +47,6 @@
 | `icon` | string | Emoji icon for the series |
 | `scheduleHourPacific` | number | Hour in Pacific time to generate posts (0-23) |
 | `models` | array of strings | Gemini model chain (primary model first, fallbacks after) |
-| `postTimeUtc` | string | UTC time for post metadata (e.g., "16:00") |
 
 ### 📝 Optional Fields
 
@@ -63,8 +62,7 @@
   "icon": "🌱",
   "priorityUser": "bagrounds",
   "scheduleHourPacific": 11,
-  "models": ["gemini-2.5-flash", "gemini-2.5-flash-lite"],
-  "postTimeUtc": "19:00"
+  "models": ["gemini-2.5-flash", "gemini-2.5-flash-lite"]
 }
 ```
 

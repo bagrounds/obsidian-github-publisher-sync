@@ -9,6 +9,7 @@ module Automation.BlogSeriesConfig
 import Data.Map.Strict (Map)
 import qualified Data.Map.Strict as Map
 import Data.Text (Text)
+import Data.Time.LocalTime (TimeOfDay)
 
 data BlogSeriesConfig = BlogSeriesConfig
   { bscId           :: Text
@@ -18,7 +19,7 @@ data BlogSeriesConfig = BlogSeriesConfig
   , bscBaseUrl      :: Text
   , bscPriorityUser :: Maybe Text
   , bscNavLink      :: Text
-  , bscPostTimeUtc  :: Text
+  , bscScheduleTime :: TimeOfDay
   } deriving (Show, Eq)
 
 lookupSeriesIn :: Map Text BlogSeriesConfig -> Text -> Either Text BlogSeriesConfig

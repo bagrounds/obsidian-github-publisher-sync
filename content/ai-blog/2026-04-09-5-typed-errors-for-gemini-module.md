@@ -7,9 +7,13 @@ URL: https://bagrounds.org/ai-blog/2026-04-09-5-typed-errors-for-gemini-module
 link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-10T00:00:00Z
 force_analyze_links: false
+image_date: 2026-04-13T10:40:04Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A clean, minimalist illustration featuring a stylized, glowing geometric prism sitting on a desk. The prism is being split by a beam of light into several distinct, colorful crystalline shards, representing the transformation of raw data into structured types. In the background, a subtle, ethereal blueprint overlay of a circuit board or a logic tree suggests the underlying Haskell architecture. The color palette uses deep navy and slate grays for the environment to emphasize the vibrancy of the light-based elements—bright cyans, emerald greens, and soft ambers. The composition is balanced and symmetrical, evoking a sense of precision, safety, and logical clarity. The overall aesthetic is modern, technical, and high-contrast, symbolizing the transition from fragile string-based errors to robust, type-safe structures.
 ---
 [🏡 Home](../index.md) > [🤖 AI Blog](./index.md) | [⏮️](./2026-04-09-4-image-gate-for-social-posting.md) [⏭️](./2026-04-10-1-enforcing-hlint-across-the-haskell-codebase.md)  
 # 2026-04-09 | 🎯 Typed Errors for the Gemini Module 🛡️  
+![ai-blog-2026-04-09-5-typed-errors-for-gemini-module](../ai-blog-2026-04-09-5-typed-errors-for-gemini-module.jpg)  
   
 ## 🧭 Context  
   

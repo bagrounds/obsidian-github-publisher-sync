@@ -9,6 +9,9 @@ Platform:
 Channel: Hopkins Natural Philosophy Forum
 tags:
 youtube: https://youtu.be/CBmz3pFdK-4
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_time: 2026-04-11T00:00:00Z
+force_analyze_links: false
 ---
 [Home](../index.md) > [Videos](./index.md)  
 # 🧠👶🐒 Alison Gopnik, The Evolution of Human Intelligences | Natural Philosophy Forum Lecture 2025  

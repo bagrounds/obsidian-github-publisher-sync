@@ -6,6 +6,9 @@ URL: https://bagrounds.org/books/the-great-mental-models-volume-4-economics-and-
 share: true
 affiliate link: https://amzn.to/44qOgxv
 CTA: 🎨 Grasp value.
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_time: 2026-04-02T00:00:00Z
+force_analyze_links: false
 ---
 [Home](../index.md) > [Books](./index.md) | [⏮️ ⚙️🔢 The Great Mental Models, Volume 3: Systems and Mathematics](./the-great-mental-models-volume-3-systems-and-mathematics.md)  
 # 💸🎨 The Great Mental Models, Volume 4: Economics and Art  

@@ -2,6 +2,7 @@ module Automation.BlogSeriesDiscoveryTest (tests) where
 
 import Data.List.NonEmpty (NonEmpty ((:|)))
 import qualified Data.Text as T
+import Data.Time.LocalTime (TimeOfDay (..), todHour)
 import Test.Tasty (TestTree, testGroup)
 import Test.Tasty.HUnit (testCase, (@?=), assertBool)
 import Test.Tasty.QuickCheck (testProperty)
@@ -55,14 +56,14 @@ parseSeriesConfigTests = testGroup "parseSeriesConfig"
       dsIcon (unsafeParse "garden-thoughts" minimalConfig) @?= "\129793"
 
   , testCase "extracts correct schedule hour" $
-      dsScheduleHourPacific (unsafeParse "garden-thoughts" minimalConfig) @?= 11
+      todHour (dsScheduleTime (unsafeParse "garden-thoughts" minimalConfig)) @?= 11
 
   , testCase "extracts correct models" $
       dsModels (unsafeParse "garden-thoughts" minimalConfig)
         @?= (Gemini.Gemini25Flash :| [Gemini.Gemini25FlashLite])
 
   , testCase "extracts correct post time" $
-      dsScheduleHourPacific (unsafeParse "garden-thoughts" minimalConfig) @?= 11
+      dsScheduleTime (unsafeParse "garden-thoughts" minimalConfig) @?= TimeOfDay 11 0 0
 
   , testCase "extracts priority user" $
       dsPriorityUser (unsafeParse "garden-thoughts" minimalConfig) @?= Just "bagrounds"
@@ -88,7 +89,7 @@ parseSeriesConfigTests = testGroup "parseSeriesConfig"
             ]
           discovered = unsafeParse "auto-blog-zero" config
       dsName discovered @?= "Auto Blog Zero"
-      dsScheduleHourPacific discovered @?= 8
+      dsScheduleTime discovered @?= TimeOfDay 8 0 0
   ]
 
 derivationTests :: TestTree
@@ -284,7 +285,7 @@ sampleDiscovered = DiscoveredSeries
   , dsName = "Garden Thoughts"
   , dsIcon = "\129793"
   , dsPriorityUser = Just "bagrounds"
-  , dsScheduleHourPacific = 11
+  , dsScheduleTime = TimeOfDay 11 0 0
   , dsModels = Gemini.Gemini25Flash :| [Gemini.Gemini25FlashLite]
   }
 
@@ -307,6 +308,6 @@ genDiscoveredSeries = do
     , dsName = name
     , dsIcon = icon
     , dsPriorityUser = priorityUser
-    , dsScheduleHourPacific = hour
+    , dsScheduleTime = TimeOfDay hour 0 0
     , dsModels = Gemini.Gemini25Flash :| []
     }

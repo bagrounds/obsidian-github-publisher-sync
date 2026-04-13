@@ -18,7 +18,7 @@
 - 🔍 Given a series config and repo info, search GitHub Discussions by pathname
 - 📡 GraphQL query fetches up to 50 discussions with their comment threads
 - ⭐ Comments from the priority user are flagged as isPriority
-- 📅 filterCommentsAfterLastPost in BlogPrompt.hs filters by date cutoff computed dynamically from scheduleHourPacific and the last post date
+- 📅 filterCommentsAfterLastPost in BlogPrompt.hs filters by date cutoff, comparing in Pacific time using toPacificLocalTime to convert external UTC timestamps
 
 ## 🔧 Key Functions
 

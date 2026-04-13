@@ -20,6 +20,7 @@ import Data.List.NonEmpty (NonEmpty (..))
 import Data.Text (Text)
 import qualified Data.Text as T
 import qualified Data.Text.Encoding as TE
+import Data.Time.LocalTime (TimeOfDay (..), todHour)
 import System.Directory (doesDirectoryExist, listDirectory)
 import System.FilePath ((</>), dropExtension, takeExtension)
 
@@ -36,7 +37,7 @@ data DiscoveredSeries = DiscoveredSeries
   , dsName               :: Text
   , dsIcon               :: Text
   , dsPriorityUser       :: Maybe Text
-  , dsScheduleHourPacific :: Int
+  , dsScheduleTime       :: TimeOfDay
   , dsModels             :: NonEmpty Gemini.Model
   } deriving (Show, Eq)
 
@@ -114,7 +115,7 @@ validateRawConfig filePath seriesId RawConfig{..} =
           , dsName = rcName
           , dsIcon = rcIcon
           , dsPriorityUser = rcPriorityUser
-          , dsScheduleHourPacific = rcScheduleHourPacific
+          , dsScheduleTime = TimeOfDay rcScheduleHourPacific 0 0
           , dsModels = Gemini.modelFromText firstModel :| fmap Gemini.modelFromText restModels
           }
       _ -> Left errors
@@ -129,7 +130,7 @@ deriveBlogSeriesConfig DiscoveredSeries{..} = BlogSeriesConfig
   , bscBaseUrl = deriveBaseUrl dsId
   , bscPriorityUser = dsPriorityUser
   , bscNavLink = deriveNavLink dsId dsIcon dsName
-  , bscScheduleHourPacific = dsScheduleHourPacific
+  , bscScheduleTime = dsScheduleTime
   }
 
 deriveBlogSeriesRunConfig :: DiscoveredSeries -> BlogSeriesRunConfig
@@ -142,7 +143,7 @@ deriveBlogSeriesRunConfig DiscoveredSeries{..} = BlogSeriesRunConfig
 deriveScheduleEntry :: DiscoveredSeries -> ScheduleEntry
 deriveScheduleEntry DiscoveredSeries{..} = ScheduleEntry
   { seTaskId = deriveTaskId dsId
-  , seHoursPacific = [dsScheduleHourPacific]
+  , seHoursPacific = [todHour dsScheduleTime]
   , seAtOrAfter = False
   }
 

@@ -1,6 +1,6 @@
 module Automation.PacificTimeTest (tests) where
 
-import Data.Time (Day, UTCTime (..), fromGregorian, secondsToDiffTime)
+import Data.Time (UTCTime (..), fromGregorian, secondsToDiffTime, LocalTime (..), TimeOfDay (..), diffDays, todHour)
 import qualified Data.Text as T
 import Test.Tasty (TestTree, testGroup)
 import Test.Tasty.HUnit (testCase, (@?=), assertBool)
@@ -15,7 +15,7 @@ tests = testGroup "PacificTime"
   [ formatDayTests
   , formatDayHumanTests
   , pacificHourTests
-  , pacificToUtcHourTests
+  , toPacificLocalTimeTests
   ]
 
 formatDayTests :: TestTree
@@ -69,43 +69,47 @@ pacificHourTests = testGroup "pacificHour"
       pacificHour (UTCTime (fromGregorian 2026 7 1) 0) @?= 17
   ]
 
-pacificToUtcHourTests :: TestTree
-pacificToUtcHourTests = testGroup "pacificToUtcHour"
-  [ testProperty "result is always 0-23" $
-      QC.forAll ((,) <$> QC.choose (0, 23) <*> genDay) $ \(hour, day) ->
-        let result = pacificToUtcHour hour day
-        in result >= 0 && result <= 23
+toPacificLocalTimeTests :: TestTree
+toPacificLocalTimeTests = testGroup "toPacificLocalTime"
+  [ testCase "PST: noon UTC on Jan 15 is 4:00 AM Pacific" $
+      toPacificLocalTime (UTCTime (fromGregorian 2026 1 15) (secondsToDiffTime (12 * 3600)))
+        @?= LocalTime (fromGregorian 2026 1 15) (TimeOfDay 4 0 0)
 
-  , testCase "PST: 6 AM Pacific on Jan 15 is 14 UTC" $
-      pacificToUtcHour 6 (fromGregorian 2026 1 15) @?= 14
+  , testCase "PDT: noon UTC on Jul 15 is 5:00 AM Pacific" $
+      toPacificLocalTime (UTCTime (fromGregorian 2026 7 15) (secondsToDiffTime (12 * 3600)))
+        @?= LocalTime (fromGregorian 2026 7 15) (TimeOfDay 5 0 0)
 
-  , testCase "PDT: 6 AM Pacific on Jul 15 is 13 UTC" $
-      pacificToUtcHour 6 (fromGregorian 2026 7 15) @?= 13
+  , testCase "PST: midnight UTC on Jan 1 is 4:00 PM Dec 31 Pacific" $
+      toPacificLocalTime (UTCTime (fromGregorian 2026 1 1) 0)
+        @?= LocalTime (fromGregorian 2025 12 31) (TimeOfDay 16 0 0)
 
-  , testCase "PST: 8 AM Pacific on Jan 15 is 16 UTC" $
-      pacificToUtcHour 8 (fromGregorian 2026 1 15) @?= 16
+  , testCase "PDT: midnight UTC on Jul 1 is 5:00 PM Jun 30 Pacific" $
+      toPacificLocalTime (UTCTime (fromGregorian 2026 7 1) 0)
+        @?= LocalTime (fromGregorian 2026 6 30) (TimeOfDay 17 0 0)
 
-  , testCase "PDT: 8 AM Pacific on Jul 15 is 15 UTC" $
-      pacificToUtcHour 8 (fromGregorian 2026 7 15) @?= 15
+  , testCase "PST: 2:00 PM UTC on Jan 15 is 6:00 AM Pacific" $
+      toPacificLocalTime (UTCTime (fromGregorian 2026 1 15) (secondsToDiffTime (14 * 3600)))
+        @?= LocalTime (fromGregorian 2026 1 15) (TimeOfDay 6 0 0)
 
-  , testCase "PST: midnight Pacific on Jan 15 is 8 UTC" $
-      pacificToUtcHour 0 (fromGregorian 2026 1 15) @?= 8
+  , testCase "PDT: 1:00 PM UTC on Jul 15 is 6:00 AM Pacific" $
+      toPacificLocalTime (UTCTime (fromGregorian 2026 7 15) (secondsToDiffTime (13 * 3600)))
+        @?= LocalTime (fromGregorian 2026 7 15) (TimeOfDay 6 0 0)
 
-  , testCase "PDT: midnight Pacific on Jul 15 is 7 UTC" $
-      pacificToUtcHour 0 (fromGregorian 2026 7 15) @?= 7
+  , testProperty "result day is within 1 day of UTC day" $
+      QC.forAll genUTCTime $ \utcTime ->
+        let LocalTime pacDay _ = toPacificLocalTime utcTime
+            utcDay = utctDay utcTime
+        in abs (diffDays pacDay utcDay) <= 1
 
-  , testProperty "PST dates add 8 hours" $
-      QC.forAll (QC.choose (0, 15)) $ \hour ->
-        pacificToUtcHour hour (fromGregorian 2026 1 15) == hour + 8
+  , testProperty "PST offset is -8 hours" $
+      QC.forAll (QC.choose (8, 23)) $ \hourUtc ->
+        let utcTime = UTCTime (fromGregorian 2026 1 15) (secondsToDiffTime (fromIntegral hourUtc * 3600))
+            LocalTime _ pacificTimeOfDay = toPacificLocalTime utcTime
+        in todHour pacificTimeOfDay == hourUtc - 8
 
-  , testProperty "PDT dates add 7 hours" $
-      QC.forAll (QC.choose (0, 16)) $ \hour ->
-        pacificToUtcHour hour (fromGregorian 2026 7 15) == hour + 7
+  , testProperty "PDT offset is -7 hours" $
+      QC.forAll (QC.choose (7, 23)) $ \hourUtc ->
+        let utcTime = UTCTime (fromGregorian 2026 7 15) (secondsToDiffTime (fromIntegral hourUtc * 3600))
+            LocalTime _ pacificTimeOfDay = toPacificLocalTime utcTime
+        in todHour pacificTimeOfDay == hourUtc - 7
   ]
-
-genDay :: QC.Gen Day
-genDay = do
-  year <- QC.choose (2020, 2030)
-  month <- QC.choose (1, 12)
-  day <- QC.choose (1, 28)
-  pure (fromGregorian year month day)

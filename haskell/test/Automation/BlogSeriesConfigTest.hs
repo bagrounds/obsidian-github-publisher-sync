@@ -3,6 +3,7 @@ module Automation.BlogSeriesConfigTest (tests) where
 import qualified Data.Map.Strict as Map
 import Data.List.NonEmpty (NonEmpty ((:|)))
 import Data.Text (Text)
+import Data.Time.LocalTime (TimeOfDay (..))
 import Test.Tasty (TestTree, testGroup)
 import Test.Tasty.HUnit (testCase, (@?=), assertBool)
 
@@ -14,17 +15,17 @@ testSeries :: [DiscoveredSeries]
 testSeries =
   [ DiscoveredSeries
       { dsId = "chickie-loo", dsName = "Chickie Loo", dsIcon = "🐔"
-      , dsPriorityUser = Just "ChickieLoo", dsScheduleHourPacific = 7
+      , dsPriorityUser = Just "ChickieLoo", dsScheduleTime = TimeOfDay 7 0 0
       , dsModels = Gemini.Gemini31FlashLite :| [Gemini.Gemini3Flash]
       }
   , DiscoveredSeries
       { dsId = "auto-blog-zero", dsName = "Auto Blog Zero", dsIcon = "🤖"
-      , dsPriorityUser = Just "bagrounds", dsScheduleHourPacific = 8
+      , dsPriorityUser = Just "bagrounds", dsScheduleTime = TimeOfDay 8 0 0
       , dsModels = Gemini.Gemini31FlashLite :| [Gemini.Gemini3Flash]
       }
   , DiscoveredSeries
       { dsId = "systems-for-public-good", dsName = "Systems for Public Good", dsIcon = "🏛️"
-      , dsPriorityUser = Just "bagrounds", dsScheduleHourPacific = 9
+      , dsPriorityUser = Just "bagrounds", dsScheduleTime = TimeOfDay 9 0 0
       , dsModels = Gemini.Gemini25Flash :| [Gemini.Gemini25FlashLite, Gemini.Gemini31FlashLite]
       }
   ]

@@ -5,6 +5,7 @@ import Test.Tasty (TestTree, testGroup)
 import Test.Tasty.HUnit (testCase, (@?=), assertBool)
 import Test.Tasty.QuickCheck (testProperty)
 import qualified Test.Tasty.QuickCheck as QC
+import Data.Time.LocalTime (TimeOfDay (..))
 
 import Automation.AiBlogLinks (aiBlogConfig)
 import Automation.BlogSeriesConfig (BlogSeriesConfig (..))
@@ -30,7 +31,7 @@ sampleSeries = BlogSeriesConfig
   , bscBaseUrl      = "https://bagrounds.org/auto-blog-zero"
   , bscPriorityUser = Just "bagrounds"
   , bscNavLink      = "[[index|Home]] > [[auto-blog-zero/index|🤖 Auto Blog Zero]]"
-  , bscScheduleHourPacific = 8
+  , bscScheduleTime = TimeOfDay 8 0 0
   }
 
 --------------------------------------------------------------------------------

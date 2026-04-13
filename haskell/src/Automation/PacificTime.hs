@@ -3,16 +3,15 @@ module Automation.PacificTime
   , formatDay
   , formatDayHuman
   , pacificHour
-  , pacificToUtcHour
+  , toPacificLocalTime
   ) where
 
 import Data.Text (Text)
 import qualified Data.Text as T
 import Data.Time
   ( Day
-  , LocalTime (..)
-  , TimeOfDay (..)
-  , UTCTime (..)
+  , LocalTime
+  , UTCTime
   , defaultTimeLocale
   , formatTime
   , getCurrentTime
@@ -20,7 +19,7 @@ import Data.Time
   , localTimeOfDay
   , todHour
   )
-import Data.Time.Zones (TZ, localTimeToUTCTZ, utcToLocalTimeTZ)
+import Data.Time.Zones (TZ, utcToLocalTimeTZ)
 import Data.Time.Zones.All (TZLabel (..), tzByLabel)
 
 pacificTZ :: TZ
@@ -40,9 +39,5 @@ pacificHour :: UTCTime -> Int
 pacificHour utcNow =
   todHour (localTimeOfDay (utcToLocalTimeTZ pacificTZ utcNow))
 
-pacificToUtcHour :: Int -> Day -> Int
-pacificToUtcHour hour day =
-  let localTime = LocalTime day (TimeOfDay hour 0 0)
-      utcTime = localTimeToUTCTZ pacificTZ localTime
-      secondsPerHour = 3600
-  in floor (utctDayTime utcTime / secondsPerHour) `mod` 24
+toPacificLocalTime :: UTCTime -> LocalTime
+toPacificLocalTime = utcToLocalTimeTZ pacificTZ

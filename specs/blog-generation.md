@@ -138,7 +138,7 @@
 | `formatDay(day)` | PacificTime | 📅 Format Day as YYYY-MM-DD text |
 | `formatDayHuman(day)` | PacificTime | 📅 Format Day as "Saturday, April 11, 2026" for AI prompts |
 | `pacificHour(utcTime)` | PacificTime | 🕐 Convert UTC time to Pacific hour (0-23) |
-| `pacificToUtcHour(hour, day)` | PacificTime | 🕐 Convert Pacific hour to UTC hour accounting for PST/PDT |
+| `toPacificLocalTime(utcTime)` | PacificTime | 🕐 Convert UTC time to Pacific LocalTime using IANA timezone rules |
 | `buildBlogPrompt(context)` | BlogPrompt | 🧠 Construct system and user prompts from blog context |
 | `filterCommentsAfterLastPost(series, posts, comments)` | BlogPrompt | 📅 Filter comments to those after most recent post |
 | `buildBackLink(series, filename)` | BlogPrompt | ⏮️ Create wikilink navigation to previous post |
@@ -179,7 +179,7 @@
 - 📅 `formatDay`: YYYY-MM-DD formatting with zero-padding
 - 📅 `formatDayHuman`: full human-readable date with day of week, month name, day, and year
 - 🕐 `pacificHour`: PST/PDT conversion with property-based range validation
-- 🕐 `pacificToUtcHour`: reverse conversion from Pacific hour to UTC hour accounting for DST
+- 🕐 `toPacificLocalTime`: converts UTC time to Pacific LocalTime using the tz library's IANA timezone rules
 
 ## 🆕 How to Create a New Fully Automated Blog Series
 

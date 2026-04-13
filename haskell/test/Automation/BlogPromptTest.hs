@@ -7,6 +7,7 @@ import qualified Test.QuickCheck as QC
 import Data.Char (isAsciiLower, isAsciiUpper, isDigit)
 import qualified Data.Text as T
 import Data.Time (fromGregorian)
+import Data.Time.LocalTime (TimeOfDay (..))
 
 import Automation.BlogPrompt
 import Automation.PacificTime (formatDay)
@@ -20,17 +21,17 @@ testSeriesMap :: Map.Map T.Text BlogSeriesConfig
 testSeriesMap = Map.fromList
   [ ("chickie-loo", deriveBlogSeriesConfig DiscoveredSeries
       { dsId = "chickie-loo", dsName = "Chickie Loo", dsIcon = "🐔"
-      , dsPriorityUser = Just "ChickieLoo", dsScheduleHourPacific = 7
+      , dsPriorityUser = Just "ChickieLoo", dsScheduleTime = TimeOfDay 7 0 0
       , dsModels = Gemini.Gemini31FlashLite :| [Gemini.Gemini3Flash]
       })
   , ("auto-blog-zero", deriveBlogSeriesConfig DiscoveredSeries
       { dsId = "auto-blog-zero", dsName = "Auto Blog Zero", dsIcon = "🤖"
-      , dsPriorityUser = Just "bagrounds", dsScheduleHourPacific = 8
+      , dsPriorityUser = Just "bagrounds", dsScheduleTime = TimeOfDay 8 0 0
       , dsModels = Gemini.Gemini31FlashLite :| [Gemini.Gemini3Flash]
       })
   , ("systems-for-public-good", deriveBlogSeriesConfig DiscoveredSeries
       { dsId = "systems-for-public-good", dsName = "Systems for Public Good", dsIcon = "🏛️"
-      , dsPriorityUser = Just "bagrounds", dsScheduleHourPacific = 9
+      , dsPriorityUser = Just "bagrounds", dsScheduleTime = TimeOfDay 9 0 0
       , dsModels = Gemini.Gemini25Flash :| [Gemini.Gemini25FlashLite, Gemini.Gemini31FlashLite]
       })
   ]

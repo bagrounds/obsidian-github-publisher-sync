@@ -53,6 +53,7 @@ library
     Automation.ObsidianSync
     Automation.StaticGiscus
     Automation.BlogImage
+    Automation.BlogImage.ContentDirectory
     Automation.BlogImage.TitleExtraction
     Automation.BlogImage.Eligibility
     Automation.BlogImage.Markdown
@@ -177,6 +178,7 @@ test-suite automation-tests
     Automation.TaskRunnerTest
     Automation.PacificTimeTest
     Automation.BlogSeriesDiscoveryTest
+    Automation.BlogImage.ContentDirectoryTest
     Automation.BlogImage.TitleExtractionTest
     Automation.BlogImage.EligibilityTest
     Automation.BlogImage.MarkdownTest

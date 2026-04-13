@@ -575,37 +575,37 @@ parseDateFromFilenameTests = testGroup "parseDateFromFilename"
 checkCandidateEligibilityTests :: TestTree
 checkCandidateEligibilityTests = testGroup "checkCandidateEligibility"
   [ testCase "eligible file without image returns Eligible False" $
-      checkCandidateEligibility "books" (fromGregorian 2026 4 8) "2026-04-01-post.md"
+      checkCandidateEligibility Books (fromGregorian 2026 4 8) "2026-04-01-post.md"
         "---\ntitle: My Post\n---\nSome content"
         @?= Eligible False
 
   , testCase "eligible file needing regeneration returns Eligible True" $
-      checkCandidateEligibility "books" (fromGregorian 2026 4 8) "2026-04-01-post.md"
+      checkCandidateEligibility Books (fromGregorian 2026 4 8) "2026-04-01-post.md"
         "---\ntitle: My Post\nregenerate_image: true\n---\n![[attachments/old.jpg]]\nSome content"
         @?= Eligible True
 
   , testCase "file with embedded image returns Ineligible AlreadyHasImage" $
-      checkCandidateEligibility "books" (fromGregorian 2026 4 8) "2026-04-01-post.md"
+      checkCandidateEligibility Books (fromGregorian 2026 4 8) "2026-04-01-post.md"
         "---\ntitle: My Post\n---\n![[attachments/photo.jpg]]\nSome content"
         @?= Ineligible AlreadyHasImage
 
   , testCase "future reflection returns Ineligible FutureReflection" $
-      checkCandidateEligibility "reflections" (fromGregorian 2026 4 8) "2026-04-09.md"
+      checkCandidateEligibility Reflections (fromGregorian 2026 4 8) "2026-04-09.md"
         "---\ntitle: Future\n---\nbody"
         @?= Ineligible FutureReflection
 
   , testCase "past reflection without image is eligible" $
-      checkCandidateEligibility "reflections" (fromGregorian 2026 4 8) "2026-04-07.md"
+      checkCandidateEligibility Reflections (fromGregorian 2026 4 8) "2026-04-07.md"
         "---\ntitle: Past Day\n---\nbody"
         @?= Eligible False
 
   , testCase "untitled reflection returns Ineligible UntitledReflection" $
-      checkCandidateEligibility "reflections" (fromGregorian 2026 4 8) "2026-04-07.md"
+      checkCandidateEligibility Reflections (fromGregorian 2026 4 8) "2026-04-07.md"
         "---\ntitle: \"2026-04-07\"\n---\n# 2026-04-07\nbody"
         @?= Ineligible UntitledReflection
 
   , testCase "non-reflection directory ignores date comparison" $
-      checkCandidateEligibility "books" (fromGregorian 2026 4 8) "2026-04-09-future.md"
+      checkCandidateEligibility Books (fromGregorian 2026 4 8) "2026-04-09-future.md"
         "---\ntitle: Future Post\n---\nbody"
         @?= Eligible False
   ]

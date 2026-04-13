@@ -28,6 +28,7 @@ import Automation.AiFiction
   )
 import Automation.BlogComments (fetchAllSeriesComments)
 import Automation.BlogImage (BackfillConfig (..), BackfillResult (..), ImageGenerationResult, syncAttachmentsDir, backfillImages, resolveImageProviders, processNote)
+import Automation.BlogImage.ContentDirectory (ContentDirectory)
 import Automation.BlogPosts (BlogPost (..), readSeriesPosts)
 import Automation.BlogPrompt
   ( DisplayTitle (..)
@@ -49,7 +50,7 @@ import Automation.BlogSeries
   )
 import Automation.BlogSeriesConfig
   ( BlogSeriesConfig (..)
-  , imageBackfillContentIdsFrom
+  , imageBackfillContentDirsFrom
   , lookupSeriesIn
   )
 import Automation.BlogSeriesDiscovery
@@ -334,8 +335,8 @@ runBlogSeries context seriesMap runConfigs seriesId = do
 
   logMsg $ "✅ " <> taskName
 
-runBackfillImages :: Context.AppContext -> [Text] -> IO ()
-runBackfillImages context contentIds = do
+runBackfillImages :: Context.AppContext -> [ContentDirectory] -> IO ()
+runBackfillImages context contentDirs = do
   let manager = Context.httpManager context
       repoRoot = Context.repoRoot context
       vaultDir = Context.vaultDir context
@@ -368,7 +369,7 @@ runBackfillImages context contentIds = do
       logMsg $ "  🎨 Image providers: " <> T.pack (show (length providers))
       let backfillConfig = BackfillConfig
             { backfillRepoRoot = vaultDir
-            , backfillContentDirs = contentIds
+            , backfillContentDirs = contentDirs
             , backfillAttachmentsDir = vaultDir </> "attachments"
             , backfillProviders = providers
             , backfillMaxImages = 2
@@ -461,10 +462,10 @@ runInternalLinking context = do
 
   logMsg "✅ internal-linking"
 
-runSocialPosting :: Context.AppContext -> [Text] -> IO ()
-runSocialPosting context contentIds = do
+runSocialPosting :: Context.AppContext -> [ContentDirectory] -> IO ()
+runSocialPosting context contentDirs = do
   logMsg "▶️  social-posting"
-  autoPost (Context.httpManager context) (Context.vaultDir context) contentIds
+  autoPost (Context.httpManager context) (Context.vaultDir context) contentDirs
   logMsg "✅ social-posting"
 
 runAiFiction :: Context.AppContext -> IO ()
@@ -573,14 +574,14 @@ tryTitleForDate context date = do
 -- Task dispatch
 -- ---------------------------------------------------------------------------
 
-taskRunners :: Context.AppContext -> Map Text BlogSeriesConfig -> Map Text BlogSeriesRunConfig -> [Text] -> [DiscoveredSeries] -> Map TaskId (IO ())
-taskRunners context seriesMap runConfigs contentIds discovered =
+taskRunners :: Context.AppContext -> Map Text BlogSeriesConfig -> Map Text BlogSeriesRunConfig -> [ContentDirectory] -> [DiscoveredSeries] -> Map TaskId (IO ())
+taskRunners context seriesMap runConfigs contentDirs discovered =
   let blogSeriesRunners = Map.fromList
         (fmap (\series -> (BlogSeries (dsId series), runBlogSeries context seriesMap runConfigs (dsId series))) discovered)
       staticRunners = Map.fromList
-        [ (BackfillBlogImages, runBackfillImages context contentIds)
+        [ (BackfillBlogImages, runBackfillImages context contentDirs)
         , (InternalLinking, runInternalLinking context)
-        , (SocialPosting, runSocialPosting context contentIds)
+        , (SocialPosting, runSocialPosting context contentDirs)
         , (AiFiction, runAiFiction context)
         , (ReflectionTitle, runReflectionTitle context)
         ]
@@ -626,7 +627,7 @@ main = do
       runConfigs = buildBlogSeriesRunConfigs (fmap deriveBlogSeriesRunConfig discovered)
       dynamicScheduleEntries = fmap deriveScheduleEntry discovered
       fullSchedule = buildSchedule dynamicScheduleEntries
-      contentIds = imageBackfillContentIdsFrom seriesConfigs
+      contentDirs = imageBackfillContentDirsFrom seriesConfigs
 
   tasks <- case cliTaskOverride args of
     Just taskStr ->
@@ -664,7 +665,7 @@ main = do
         Left err -> do
           TIO.hPutStrLn stderr $ "❌ Invalid context: " <> T.pack err
           exitFailure
-      let runners = taskRunners context seriesMap runConfigs contentIds discovered
+      let runners = taskRunners context seriesMap runConfigs contentDirs discovered
       results <- runTasks runners tasks
 
       -- Push vault ONCE at the end

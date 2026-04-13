@@ -32,9 +32,10 @@ import qualified Data.Text as T
 import qualified Data.Text.IO as TIO
 import Data.Time
   ( Day
+  , NominalDiffTime
   , UTCTime (..)
   , defaultTimeLocale
-  , diffDays
+  , diffUTCTime
   , getCurrentTime
   , parseTimeM
   , utctDayTime
@@ -48,6 +49,7 @@ import System.FilePath (takeBaseName, takeDirectory, takeFileName, (</>))
 import Text.Regex.TDFA ((=~))
 
 import Automation.BlogImage (hasEmbeddedImage, shouldHaveImage)
+import Automation.BlogImage.ContentDirectory (ContentDirectory (..), contentDirectoryFromText)
 import Automation.Frontmatter (parseFrontmatter)
 import Automation.Platform (Platform (..))
 import qualified Automation.Platforms.Bluesky as Bluesky
@@ -61,15 +63,15 @@ import Automation.Title (Title, mkTitle, unTitle)
 import Automation.Url (Url, mkUrl, unUrl)
 
 data ContentNote = ContentNote
-  { cnFilePath       :: FilePath
-  , cnRelativePath   :: RelativePath
-  , cnTitle          :: Title
-  , cnUrl            :: Url
-  , cnBody           :: Text
-  , cnPostedPlatforms :: Set Platform
-  , cnLinkedNotePaths :: [RelativePath]
-  , cnNoSocial       :: Bool
-  , cnImageDate      :: Maybe Day
+  { noteFilePath       :: FilePath
+  , noteRelativePath   :: RelativePath
+  , noteTitle          :: Title
+  , noteUrl            :: Url
+  , noteBody           :: Text
+  , notePostedPlatforms :: Set Platform
+  , noteLinkedNotePaths :: [RelativePath]
+  , noteNoSocial       :: Bool
+  , noteImageDate      :: Maybe UTCTime
   } deriving (Show, Eq)
 
 data ContentToPost = ContentToPost
@@ -83,7 +85,7 @@ data FindContentConfig = FindContentConfig
   , fccPlatforms              :: [Platform]
   , fccPostingCutoff          :: TimeOfDay
   , fccPublicationChecker     :: Maybe (Text -> IO Bool)
-  , fccImageBackfillContentIds :: [Text]
+  , fccImageBackfillContentDirs :: [ContentDirectory]
   }
 
 defaultPostingCutoff :: TimeOfDay
@@ -125,15 +127,15 @@ readContentNote relativePath contentDir = do
             path <- mkRelativePath relativePath
             paths <- traverse mkRelativePath linkedPaths
             pure ContentNote
-              { cnFilePath = filePath
-              , cnRelativePath = path
-              , cnTitle = title
-              , cnUrl = url
-              , cnBody = body
-              , cnPostedPlatforms = postedPlatforms
-              , cnLinkedNotePaths = paths
-              , cnNoSocial = noSocial
-              , cnImageDate = imageDate
+              { noteFilePath = filePath
+              , noteRelativePath = path
+              , noteTitle = title
+              , noteUrl = url
+              , noteBody = body
+              , notePostedPlatforms = postedPlatforms
+              , noteLinkedNotePaths = paths
+              , noteNoSocial = noSocial
+              , noteImageDate = imageDate
               }
       case validated of
         Right note -> pure (Just note)
@@ -142,10 +144,10 @@ readContentNote relativePath contentDir = do
           pure Nothing
     else pure Nothing
 
-parseImageDate :: Text -> Maybe Day
+parseImageDate :: Text -> Maybe UTCTime
 parseImageDate value =
   parseTimeM True defaultTimeLocale "%Y-%m-%dT%H:%M:%SZ" (T.unpack value)
-    <|> parseTimeM True defaultTimeLocale "%Y-%m-%d" (T.unpack (T.take 10 value))
+    <|> parseTimeM True defaultTimeLocale "%Y-%m-%dT%H:%M:%S%z" (T.unpack value)
 
 checkUrlPublished :: Manager -> Text -> IO Bool
 checkUrlPublished manager url = do
@@ -166,50 +168,50 @@ urlFromFilePath relativePath =
 
 validateNoteUrl :: (Text -> IO Bool) -> ContentNote -> IO (Maybe ContentNote)
 validateNoteUrl checker note = do
-  isLive <- checker (unUrl (cnUrl note))
+  isLive <- checker (unUrl (noteUrl note))
   if isLive
     then pure (Just note)
     else do
-      let pathUrl = urlFromFilePath (unRelativePath (cnRelativePath note))
-      if pathUrl == unUrl (cnUrl note)
+      let pathUrl = urlFromFilePath (unRelativePath (noteRelativePath note))
+      if pathUrl == unUrl (noteUrl note)
         then do
           putStrLn $ "  🚫 URL not published (404): "
-            <> T.unpack (unTitle (cnTitle note)) <> " (" <> T.unpack (unUrl (cnUrl note)) <> ")"
+            <> T.unpack (unTitle (noteTitle note)) <> " (" <> T.unpack (unUrl (noteUrl note)) <> ")"
           pure Nothing
         else do
-          putStrLn $ "  🔧 Frontmatter URL 404'd (" <> T.unpack (unUrl (cnUrl note))
+          putStrLn $ "  🔧 Frontmatter URL 404'd (" <> T.unpack (unUrl (noteUrl note))
             <> "), trying file-path URL: " <> T.unpack pathUrl
           isPathLive <- checker pathUrl
           if isPathLive
             then case mkUrl pathUrl of
               Right newUrl -> do
                 putStrLn "  ✅ File-path URL is live, updating frontmatter"
-                updateFrontmatterUrl (cnFilePath note) pathUrl
-                pure (Just note { cnUrl = newUrl })
+                updateFrontmatterUrl (noteFilePath note) pathUrl
+                pure (Just note { noteUrl = newUrl })
               Left reason -> do
                 putStrLn $ "  ⚠️  Invalid path URL: " <> T.unpack reason
                 pure Nothing
             else do
               putStrLn $ "  🚫 Both URLs not published: "
-                <> T.unpack (unUrl (cnUrl note)) <> " and " <> T.unpack pathUrl
+                <> T.unpack (unUrl (noteUrl note)) <> " and " <> T.unpack pathUrl
               pure Nothing
 
 isPostableContent :: ContentNote -> Bool
 isPostableContent note =
   not (isIndexPage note)
     && not (isUntitledReflection note)
-    && not (cnNoSocial note)
-    && T.length (T.strip (cnBody note)) >= minPostableBodyLength
+    && not (noteNoSocial note)
+    && T.length (T.strip (noteBody note)) >= minPostableBodyLength
 
 isIndexPage :: ContentNote -> Bool
-isIndexPage = isIndexPath . unRelativePath . cnRelativePath
+isIndexPage = isIndexPath . unRelativePath . noteRelativePath
 
 isIndexPath :: Text -> Bool
 isIndexPath p = takeBaseName (T.unpack p) == "index"
 
 isUntitledReflection :: ContentNote -> Bool
 isUntitledReflection note =
-  isReflectionPath (unRelativePath (cnRelativePath note)) && looksLikeDateTitle (unTitle (cnTitle note))
+  isReflectionPath (unRelativePath (noteRelativePath note)) && looksLikeDateTitle (unTitle (noteTitle note))
 
 isReflectionPath :: Text -> Bool
 isReflectionPath = T.isPrefixOf "reflections/"
@@ -219,17 +221,21 @@ looksLikeDateTitle title =
   let t = T.strip title
   in (t :: Text) =~ ("^[0-9]{4}-[0-9]{2}-[0-9]{2}$" :: String)
 
-isAwaitingImageBackfill :: [Text] -> Day -> Text -> Text -> Maybe Day -> Bool
-isAwaitingImageBackfill contentIds today relativePath body imageDate =
+propagationDelay :: NominalDiffTime
+propagationDelay = 86400
+
+isAwaitingImageBackfill :: [ContentDirectory] -> UTCTime -> Text -> Text -> Maybe UTCTime -> Bool
+isAwaitingImageBackfill contentDirs now relativePath body imageDate =
   let directoryName = T.pack (takeFileName (takeDirectory (T.unpack relativePath)))
       filename = T.pack (takeFileName (T.unpack relativePath))
-      inBackfillDirectory = elem directoryName contentIds && shouldHaveImage filename
+      directory = contentDirectoryFromText directoryName
+      inBackfillDirectory = elem directory contentDirs && shouldHaveImage filename
   in inBackfillDirectory
-       && (not (hasEmbeddedImage body) || isRecentlyBackfilled today imageDate)
+       && (not (hasEmbeddedImage body) || isRecentlyBackfilled now imageDate)
 
-isRecentlyBackfilled :: Day -> Maybe Day -> Bool
+isRecentlyBackfilled :: UTCTime -> Maybe UTCTime -> Bool
 isRecentlyBackfilled _ Nothing = False
-isRecentlyBackfilled today (Just generatedDate) = diffDays today generatedDate < 1
+isRecentlyBackfilled now (Just generatedTime) = diffUTCTime now generatedTime < propagationDelay
 
 isReflectionEligibleForPosting :: UTCTime -> TimeOfDay -> Day -> Bool
 isReflectionEligibleForPosting now postingCutoff reflectionDate =
@@ -276,19 +282,19 @@ bfsLoop config state =
       case mNote of
         Nothing -> bfsLoop config state'
         Just note -> do
-          eligible <- checkBfsEligibility (unRelativePath (cnRelativePath note)) (fccPostingCutoff config)
-          today <- utctDay <$> getCurrentTime
+          eligible <- checkBfsEligibility (unRelativePath (noteRelativePath note)) (fccPostingCutoff config)
+          now <- getCurrentTime
           let awaitingImage = isAwaitingImageBackfill
-                (fccImageBackfillContentIds config) today
-                (unRelativePath (cnRelativePath note)) (cnBody note)
-                (cnImageDate note)
+                (fccImageBackfillContentDirs config) now
+                (unRelativePath (noteRelativePath note)) (noteBody note)
+                (noteImageDate note)
           mValidated <- case (isPostableContent note && eligible && not awaitingImage, fccPublicationChecker config) of
             (True, Just checker) -> validateNoteUrl checker note
             (True, Nothing)      -> pure (Just note)
             (False, _)           -> pure Nothing
           let neededPlatforms = filter
                 (\p -> not (Set.member p (bsFilled state'))
-                       && not (Set.member p (cnPostedPlatforms note)))
+                       && not (Set.member p (notePostedPlatforms note)))
                 (fccPlatforms config)
               newResults = case mValidated of
                 Just vNote -> fmap (\p -> ContentToPost p vNote pathFromRoot) neededPlatforms
@@ -296,7 +302,7 @@ bfsLoop config state =
               newFilled = Set.union (bsFilled state') $
                 Set.fromList (fmap ctpPlatform newResults)
               neighbors = filter (\l -> not (Set.member l (bsVisited state')))
-                            (fmap unRelativePath (cnLinkedNotePaths note))
+                            (fmap unRelativePath (noteLinkedNotePaths note))
               newVisited = foldl (flip Set.insert) (bsVisited state') neighbors
               newQueue = rest <> fmap (\n -> (n, pathFromRoot <> [n])) neighbors
               state'' = state'
@@ -334,10 +340,9 @@ discoverContentToPost config isPastPostingHour =
           if eligible
             then do
               mNote <- readContentNote reflPath (fccContentDir config)
-              let today = utctDay now
               case mNote of
                 Just note | isPostableContent note
-                          , not (isAwaitingImageBackfill (fccImageBackfillContentIds config) today (unRelativePath (cnRelativePath note)) (cnBody note) (cnImageDate note)) -> do
+                          , not (isAwaitingImageBackfill (fccImageBackfillContentDirs config) now (unRelativePath (noteRelativePath note)) (noteBody note) (noteImageDate note)) -> do
                   mValidated <- case fccPublicationChecker config of
                     Just checker -> validateNoteUrl checker note
                     Nothing      -> pure (Just note)
@@ -347,7 +352,7 @@ discoverContentToPost config isPastPostingHour =
                       bfsContentDiscovery config
                     Just vNote -> do
                       let neededPlatforms = filter
-                            (\p -> not (Set.member p (cnPostedPlatforms vNote)))
+                            (\p -> not (Set.member p (notePostedPlatforms vNote)))
                             (fccPlatforms config)
                       case neededPlatforms of
                         [] -> bfsContentDiscovery config

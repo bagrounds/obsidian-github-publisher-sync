@@ -3,13 +3,15 @@ module Automation.BlogSeriesConfig
   , lookupSeriesIn
   , extraContentDirs
   , backfillContentIdsFrom
-  , imageBackfillContentIdsFrom
+  , imageBackfillContentDirsFrom
   ) where
 
 import Data.Map.Strict (Map)
 import qualified Data.Map.Strict as Map
 import Data.Text (Text)
 import Data.Time.LocalTime (TimeOfDay)
+
+import Automation.BlogImage.ContentDirectory (ContentDirectory (..), contentDirectoryFromText, contentDirectoryToText)
 
 data BlogSeriesConfig = BlogSeriesConfig
   { bscId           :: Text
@@ -29,17 +31,21 @@ lookupSeriesIn seriesMap seriesId =
     errMsg = "Unknown blog series: " <> seriesId
       <> ". Available: " <> mconcat (fmap (<> " ") (Map.keys seriesMap))
 
-extraContentDirs :: [Text]
-extraContentDirs = ["reflections", "ai-blog"]
+extraContentDirs :: [ContentDirectory]
+extraContentDirs = [Reflections, AiBlog]
 
 backfillContentIdsFrom :: [BlogSeriesConfig] -> [Text]
-backfillContentIdsFrom allSeries = extraContentDirs <> fmap bscId allSeries
+backfillContentIdsFrom allSeries =
+  fmap contentDirectoryToText extraContentDirs <> fmap bscId allSeries
 
-libraryContentDirs :: [Text]
+libraryContentDirs :: [ContentDirectory]
 libraryContentDirs =
-  [ "articles", "books", "bot-chats", "games"
-  , "products", "software", "tools", "topics"
+  [ Articles, Books, BotChats, Games
+  , Products, Software, Tools, Topics
   ]
 
-imageBackfillContentIdsFrom :: [BlogSeriesConfig] -> [Text]
-imageBackfillContentIdsFrom allSeries = backfillContentIdsFrom allSeries <> libraryContentDirs
+imageBackfillContentDirsFrom :: [BlogSeriesConfig] -> [ContentDirectory]
+imageBackfillContentDirsFrom allSeries =
+  extraContentDirs
+    <> fmap (contentDirectoryFromText . bscId) allSeries
+    <> libraryContentDirs

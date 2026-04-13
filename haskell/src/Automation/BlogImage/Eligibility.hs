@@ -10,7 +10,6 @@ module Automation.BlogImage.Eligibility
   , parseDateFromFilename
   , isDateOnlyTitle
   , checkCandidateEligibility
-  , reflectionsDirectory
   ) where
 
 import Data.Char (isDigit)
@@ -21,6 +20,7 @@ import Data.Time (Day, defaultTimeLocale, formatTime)
 import Data.Time.Format (parseTimeM)
 import Text.Regex.TDFA ((=~))
 
+import Automation.BlogImage.ContentDirectory (ContentDirectory (..))
 import Automation.BlogImage.TitleExtraction (extractTitle)
 import Automation.Frontmatter (parseFrontmatter)
 
@@ -37,7 +37,7 @@ data IneligibilityReason
 
 data BackfillCandidate = BackfillCandidate
   { bcFilePath          :: FilePath
-  , bcDirectory         :: Text
+  , bcDirectory         :: ContentDirectory
   , bcFilename          :: Text
   , bcDate              :: Day
   , bcNeedsRegeneration :: Bool
@@ -92,17 +92,14 @@ isDateOnlyTitle content date =
       dateText = T.pack (formatTime defaultTimeLocale "%Y-%m-%d" date)
   in title == dateText
 
-reflectionsDirectory :: Text
-reflectionsDirectory = "reflections"
-
-checkCandidateEligibility :: Text -> Day -> Text -> Text -> CandidateEligibility
+checkCandidateEligibility :: ContentDirectory -> Day -> Text -> Text -> CandidateEligibility
 checkCandidateEligibility directory today filename content =
   case parseDateFromFilename filename of
     Just fileDate
-      | directory == reflectionsDirectory && fileDate > today -> Ineligible FutureReflection
+      | directory == Reflections && fileDate > today -> Ineligible FutureReflection
     fileDate ->
       let requiresRegeneration = shouldRegenerateImage content
-          untitledReflection = directory == reflectionsDirectory
+          untitledReflection = directory == Reflections
             && maybe False (isDateOnlyTitle content) fileDate
       in if untitledReflection
          then Ineligible UntitledReflection

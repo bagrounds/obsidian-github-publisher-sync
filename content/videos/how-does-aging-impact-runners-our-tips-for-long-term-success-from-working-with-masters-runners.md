@@ -9,6 +9,9 @@ Platform:
 Channel: Doctors of Running
 tags:
 youtube: https://youtu.be/RYiOKxXOVWM
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_time: 2026-04-02T00:00:00Z
+force_analyze_links: false
 ---
 [Home](../index.md) > [Videos](./index.md)  
 # 👴🏃‍♀️📈 How Does Aging Impact Runners? Our Tips for Long-Term Success (from Working with Masters Runners)  

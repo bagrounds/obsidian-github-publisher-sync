@@ -5,10 +5,10 @@ aliases:
 title: 📺 Videos
 URL: https://bagrounds.org/videos
 backlinks: false
-updated: 2026-04-12T16:13:11-07:00
+updated: 2026-04-12T17:42:24-07:00
 ---
 [Home](../index.md)  
-# 📺 Videos (741)  
+# 📺 Videos (742)  
 - [💰🤑🤖💡🚀💲 $0.10/Month Runs My Entire AI Life. I'll Show You How.](./0-10-month-runs-my-entire-ai-life-ill-show-you-how.md)  
 - [📊📈📉📃👁️ 10 Charts to Understand the 900 Page Budget Bill](./10-charts-to-understand-the-900-page-budget-bill.md)  
 - [🤖🔗⬆️✅ 12-Factor Agents: Patterns of reliable LLM applications — Dex Horthy, HumanLayer](./12-factor-agents-patterns-of-reliable-llm-applications-dex-horthy-humanlayer.md)  
@@ -665,6 +665,7 @@ updated: 2026-04-12T16:13:11-07:00
 - [🚢🛢️🇺🇸🇻🇪💥 U.S. seizes oil tanker off the coast of Venezuela, escalating tensions with Maduro](./us-seizes-oil-tanker-off-the-coast-of-venezuela-escalating-tensions-with-maduro.md)  
 - [🇺🇸🚫➡️🇺🇦⚔️🇷🇺 U.S. withholds weapons promised to Ukraine as Russian forces gain more territory](./us-withholds-weapons-promised-to-ukraine-as-russian-forces-gain-more-territory.md)  
 - [😎✨💻🔮 Vibe Coding Is The Only Future - Steve Yegge](./vibe-coding-is-the-only-future-steve-yegge.md)  
+- [🎤💥👑 Viktor Orbán: Last Week Tonight with John Oliver (HBO)](./viktor-orban-last-week-tonight-with-john-oliver-hbo.md)  
 - [🗳️🇺🇸🔮 Voters cast ballots in elections that could signal future of U.S. politics](./voters-cast-ballots-in-elections-that-could-signal-future-of-us-politics.md)  
 - [🏞️⚕️🛡️🤝 WA OIC can help you with your insurance!](./wa-oic-can-help-you-with-your-insurance.md)  
 - [💰🏦📈 Warren Mosler | Modern Monetary Theory (MMT), Banking, and Taxing the Rich](./warren-mosler-modern-monetary-theory-mmt-banking-and-taxing-the-rich.md)  

@@ -6,10 +6,11 @@ title: 🤖 AI Blog
 URL: https://bagrounds.org/ai-blog/index
 Author: "[[bryan-grounds]]"
 backlinks: false
-updated: 2026-04-12T16:13:11-07:00
+updated: 2026-04-12T17:42:24-07:00
 ---
 [Home](../index.md)  
-# 🤖 AI Blog (140)  
+# 🤖 AI Blog (141)  
+- [2026-04-12 | 🌑 Dark Mode Social Media Embeds 🤖](./2026-04-12-4-dark-mode-social-media-embeds.md)  
 - [2026-04-12 | 🌟 Launching Positivity Bias — A New Auto Blog Series 🤖](./2026-04-12-3-launching-positivity-bias-a-new-auto-blog-series.md)  
 - [2026-04-12 | 🛡️ Stripping LLM Preamble from Reflection Titles 🤖](./2026-04-12-2-stripping-llm-preamble-from-reflection-titles.md)  
 - [2026-04-12 | 🪞 Fixing Missing Reflection Images 🖼️](./2026-04-12-1-fixing-missing-reflection-images.md)  

@@ -7,9 +7,13 @@ URL: https://bagrounds.org/ai-blog/2026-04-10-6-breaking-up-the-god-module
 link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-10T00:00:00Z
 force_analyze_links: false
+image_date: 2026-04-13T00:30:22Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A high-angle, minimalist illustration featuring a large, monolithic stone block in the center, cracked and partially dismantled. Smaller, clean-cut geometric cubes—representing organized modules—are being carefully lifted away from the main structure by glowing, translucent digital lines or schematic blueprints. The background is a soft, clean architectural grid in muted tones of slate blue and charcoal. Warm amber light emanates from the gaps where the pieces have been removed, symbolizing the clarity and modularity gained. The aesthetic is clean, technical, and modern, utilizing a limited color palette of cool grays, deep blues, and subtle gold highlights to emphasize precision and structural refinement.
 ---
 [🏡 Home](../index.md) > [🤖 AI Blog](./index.md) | [⏮️](./2026-04-10-5-separating-data-from-behavior-in-image-providers.md) [⏭️](./2026-04-10-7-optimizing-haskell-ci-build-times.md)  
 # 2026-04-10 | 🧩 Breaking Up the God Module 🏗️  
+![ai-blog-2026-04-10-6-breaking-up-the-god-module](../ai-blog-2026-04-10-6-breaking-up-the-god-module.jpg)  
   
 ## 🎯 The Mission  
   

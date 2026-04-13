@@ -7,9 +7,13 @@ URL: https://bagrounds.org/ai-blog/2026-04-10-5-separating-data-from-behavior-in
 link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-10T00:00:00Z
 force_analyze_links: false
+image_date: 2026-04-12T23:19:06Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A minimalist, high-contrast illustration featuring a stylized, translucent glass cube neatly separated into two distinct halves. The left half of the cube contains a collection of crisp, geometric 3D shapes (spheres, pyramids, and cubes) representing pure data. The right half contains a subtle, glowing abstract mechanism—a series of interconnected gears or a fluid, flowing stream of light—representing behavior. A clean, thin line of negative space divides the two sections, emphasizing the architectural separation. The background is a soft, deep slate blue, with the objects rendered in vibrant, professional tones of emerald, amber, and violet. The overall aesthetic is clean, modern, and technical, evoking a sense of structural clarity and functional purity.
 ---
 [🏡 Home](../index.md) > [🤖 AI Blog](./index.md) | [⏮️](./2026-04-10-4-replacing-error-calls-with-either-returns.md) [⏭️](./2026-04-10-6-breaking-up-the-god-module.md)  
 # 2026-04-10 | 🎨 Separating Data from Behavior in Image Providers 🧩  
+![ai-blog-2026-04-10-5-separating-data-from-behavior-in-image-providers](../ai-blog-2026-04-10-5-separating-data-from-behavior-in-image-providers.jpg)  
   
 ## 🔍 The Problem  
   

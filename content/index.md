@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-04-12T18:06:14-07:00
+updated: 2026-04-12T19:17:53-07:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -21,11 +21,11 @@ updated: 2026-04-12T18:06:14-07:00
 - [2026-04-09 | 💡 Make 🫂 Shared 🎓 Learning 🎯 Qualified 📐 Design 🚪 Gate 🤖 Knowing 💬 Chat 🏡 Home 📺🐔🤖🏛️🤖🐲](./reflections/2026-04-09.md)  
   
   
-## [🤖 AI Blog](./ai-blog/index.md) (141)  
+## [🤖 AI Blog](./ai-blog/index.md) (142)  
+- [2026-04-12 | 🕐 Working Entirely in Pacific Time 🤖](./ai-blog/2026-04-12-5-working-entirely-in-pacific-time.md)  
 - [2026-04-12 | 🌑 Dark Mode Social Media Embeds 🤖](./ai-blog/2026-04-12-4-dark-mode-social-media-embeds.md)  
 - [2026-04-12 | 🌟 Launching Positivity Bias — A New Auto Blog Series 🤖](./ai-blog/2026-04-12-3-launching-positivity-bias-a-new-auto-blog-series.md)  
 - [2026-04-12 | 🛡️ Stripping LLM Preamble from Reflection Titles 🤖](./ai-blog/2026-04-12-2-stripping-llm-preamble-from-reflection-titles.md)  
-- [2026-04-12 | 🪞 Fixing Missing Reflection Images 🖼️](./ai-blog/2026-04-12-1-fixing-missing-reflection-images.md)  
   
   
 ## [🤖 Auto Blog Zero](./auto-blog-zero/index.md) (33)  
@@ -65,11 +65,11 @@ updated: 2026-04-12T18:06:14-07:00
 - [🤖📈 Prediction Machines: The Simple Economics of Artificial Intelligence](./books/prediction-machines-the-simple-economics-of-artificial-intelligence.md)  
   
   
-## [📺 Videos](./videos/index.md) (743)  
+## [📺 Videos](./videos/index.md) (744)  
+- [⭐🗽🏛️💯 Mamdani brings a unique star power to NYC governance in his first 100 days](./videos/mamdani-brings-a-unique-star-power-to-nyc-governance-in-his-first-100-days.md)  
 - [🐦📰🤣 Twitter: Last Week Tonight with John Oliver (HBO)](./videos/twitter-last-week-tonight-with-john-oliver-hbo.md)  
 - [🎤💥👑 Viktor Orbán: Last Week Tonight with John Oliver (HBO)](./videos/viktor-orban-last-week-tonight-with-john-oliver-hbo.md)  
 - [🇭🇺🗳️🏆👋 Peter Magyar wins Hungary election as Orban concedes defeat | DW News](./videos/peter-magyar-wins-hungary-election-as-orban-concedes-defeat-dw-news.md)  
-- [🏛️💬 Politics Chat, April 7, 2026](./videos/politics-chat-april-7-2026.md)  
   
   
 ## [🌌 Topics](./topics/index.md) (91)  
@@ -87,10 +87,10 @@ updated: 2026-04-12T18:06:14-07:00
   
   
 ## [🤖💬 Bot Chats](./bot-chats/index.md) (49)  
+- [✅🔎📰 Reliable News](./bot-chats/reliable-news.md)  
 - [💰💎🌽🏡📈 Real Wealth Investing](./bot-chats/real-wealth-investing.md)  
 - [🎯🐜🌍 Purpose Driven Tiny Habits for Systemic Change](./bot-chats/purpose-driven-tiny-habits-for-systemic-change.md)  
 - [🤱🏼📚💡 Parenting Resources Recommendations](./bot-chats/parenting-resources-recommendations.md)  
-- [🤰⏰👶🔮 Forecasting Parenthood](./bot-chats/forecasting-parenthood.md)  
   
   
 ## [💾 Software](./software/index.md) (33)  

@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-04-12T21:08:44-07:00
+updated: 2026-04-12T23:48:50-07:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -15,7 +15,7 @@ updated: 2026-04-12T21:08:44-07:00
 💬 Comment on any page with your GitHub account.  
   
 ## [🪞 Reflections](./reflections/index.md) ~ Blog (514)  
-- [2026-04-12](./reflections/2026-04-12.md)  
+- [2026-04-12 | 🧠 First 🎯 Solution ✨ Brings 🌟 Bright 🌃 Night 🏛️ Foundational 🗺️ Navigating 🌐 Global 🐦 Twitter 🚔 Police 🗳️ Election 🤖 Synthetic 📺📰🌟🐔🤖🏛️🤖🐲](./reflections/2026-04-12.md)  
 - [2026-04-11](./reflections/2026-04-11.md)  
 - [2026-04-10 | 🤖 Synthetic 🧠 Consciousness ⚖️ Ethics 🔨 Breaking 🧩 Separating 💻 Codebase 🛡️ Testing 🧱 Returns 🔧 Optimizing 📚 Learning 🇺🇸 American 🎶 Sound 📺📰🐔🤖🏛️🤖🐲](./reflections/2026-04-10.md)  
 - [2026-04-09 | 💡 Make 🫂 Shared 🎓 Learning 🎯 Qualified 📐 Design 🚪 Gate 🤖 Knowing 💬 Chat 🏡 Home 📺🐔🤖🏛️🤖🐲](./reflections/2026-04-09.md)  
@@ -67,9 +67,9 @@ updated: 2026-04-12T21:08:44-07:00
   
 ## [📺 Videos](./videos/index.md) (747)  
 - [⬆️💸💥💡⬇️ We Found The Radical Solution To Skyrocketing Grocery Prices](./videos/we-found-the-radical-solution-to-skyrocketing-grocery-prices.md)  
+- [👩‍⚖️🌪️🐘 Pam Bondi’s Tumultuous Tenure as Trump's Attorney General | The Daily Show](./videos/pam-bondis-tumultuous-tenure-as-trumps-attorney-general-the-daily-show.md)  
 - [⭐🗽🏛️💯 Mamdani brings a unique star power to NYC governance in his first 100 days](./videos/mamdani-brings-a-unique-star-power-to-nyc-governance-in-his-first-100-days.md)  
 - [👮📹🧐🎤 Police Body Cameras: Last Week Tonight with John Oliver (HBO)](./videos/police-body-cameras-last-week-tonight-with-john-oliver-hbo.md)  
-- [👩‍⚖️🌪️🐘 Pam Bondi’s Tumultuous Tenure as Trump's Attorney General | The Daily Show](./videos/pam-bondis-tumultuous-tenure-as-trumps-attorney-general-the-daily-show.md)  
   
   
 ## [🌌 Topics](./topics/index.md) (91)  
@@ -87,10 +87,10 @@ updated: 2026-04-12T21:08:44-07:00
   
   
 ## [🤖💬 Bot Chats](./bot-chats/index.md) (49)  
+- [🌸🌬️🤧🔬📚 Allergy Science Books](./bot-chats/allergy-science-books.md)  
 - [🛐🕯️🔄 Ritual](./bot-chats/ritual.md)  
 - [✅🔎📰 Reliable News](./bot-chats/reliable-news.md)  
 - [💰💎🌽🏡📈 Real Wealth Investing](./bot-chats/real-wealth-investing.md)  
-- [🎯🐜🌍 Purpose Driven Tiny Habits for Systemic Change](./bot-chats/purpose-driven-tiny-habits-for-systemic-change.md)  
   
   
 ## [💾 Software](./software/index.md) (33)  

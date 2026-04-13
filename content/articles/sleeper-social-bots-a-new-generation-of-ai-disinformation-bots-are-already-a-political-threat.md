@@ -6,6 +6,9 @@ title: "🤖😴📢🗳️ Sleeper Social Bots: A New Generation of AI Disinfor
 URL: https://bagrounds.org/articles/sleeper-social-bots-a-new-generation-of-ai-disinformation-bots-are-already-a-political-threat
 Author:
 tags:
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_time: 2026-04-04T00:00:00Z
+force_analyze_links: false
 ---
 [Home](../index.md) > [Articles](./index.md)  
 # [🤖😴📢🗳️ Sleeper Social Bots: A New Generation of AI Disinformation Bots are Already a Political Threat](https://arxiv.org/pdf/2408.12603)  

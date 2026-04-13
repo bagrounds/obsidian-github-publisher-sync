@@ -2,7 +2,7 @@
 
 ## 📋 Overview
 
-🎯 The image generation system automatically creates cover images for published content across **13 content directories**: **reflections**, **ai-blog**, **auto-blog-zero**, **chickie-loo**, **systems-for-public-good**, **articles**, **books**, **bot-chats**, **games**, **products**, **software**, **tools**, and **topics**. Videos, people, and presentations are excluded (videos already use the video embed as a cover image; people are excluded to avoid AI-hallucinated likenesses; presentations are slide collections that benefit from manually chosen images).
+🎯 The image generation system automatically creates cover images for published content across all configured content directories. The list of directories is dynamically derived from auto blog series JSON configs (via `imageBackfillContentDirsFrom`) combined with static extra directories (Reflections, AiBlog) and library directories (Articles, Books, BotChats, Games, Products, Software, Tools, Topics). Each directory is represented as a `ContentDirectory` ADT value — known directories have dedicated constructors while auto blog series use the `AutoBlogSeries Text` constructor. Videos, people, and presentations are excluded (videos already use the video embed as a cover image; people are excluded to avoid AI-hallucinated likenesses; presentations are slide collections that benefit from manually chosen images). Adding a new auto blog series JSON config automatically includes its content directory in image backfilling with zero code changes.
 
 🏗️ It operates in two modes:
 1. **Single-post generation** — triggered by individual blog workflows (auto-blog-zero, chickie-loo) immediately after a post is created
@@ -488,7 +488,7 @@ Image name: chickie-loo-2026-03-22-weekly-recap.jpg
 
 - `ImageGenerationResult` — Result of processing a single note
 - `ImageProviderConfig` — Provider name, credentials, model, generator function, optional describer
-- `BackfillConfig` — Repo root, content dirs, attachments dir, provider chain, max images
+- `BackfillConfig` — Repo root, content dirs (as `[Text]` for forward compatibility with dynamically discovered series), attachments dir, provider chain, max images
 - `BackfillResult` — Counts of generated/updated/skipped files, modified file paths, errors
 
 ### 🔬 Test Coverage

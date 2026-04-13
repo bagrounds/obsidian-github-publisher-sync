@@ -4,6 +4,7 @@ module Automation.BlogImage
     ContentDirectory (..)
   , contentDirectoryToText
   , contentDirectoryFromText
+  , knownDirectories
     -- ** TitleExtraction
   , extractTitle
     -- ** Eligibility
@@ -81,12 +82,13 @@ import System.FilePath ((</>), takeBaseName, takeDirectory, takeExtension)
 import Automation.PacificTime (todayPacificDay)
 import Automation.Frontmatter (YamlValue (..), parseFrontmatter, renderYamlValue)
 
+import Automation.BlogImage.TitleExtraction (extractTitle)
 import Automation.BlogImage.ContentDirectory
   ( ContentDirectory (..)
   , contentDirectoryToText
   , contentDirectoryFromText
+  , knownDirectories
   )
-import Automation.BlogImage.TitleExtraction (extractTitle)
 import Automation.BlogImage.Eligibility
   ( BackfillCandidate (..)
   , CandidateEligibility (..)
@@ -320,7 +322,8 @@ collectCandidates repoRoot contentDirectories today = do
 
 collectFromDirectory :: FilePath -> Day -> ContentDirectory -> IO [BackfillCandidate]
 collectFromDirectory repoRoot today directory = do
-  let directoryPath = repoRoot </> T.unpack (contentDirectoryToText directory)
+  let directoryText = contentDirectoryToText directory
+      directoryPath = repoRoot </> T.unpack directoryText
   exists <- doesDirectoryExist directoryPath
   if exists
     then do
@@ -329,7 +332,7 @@ collectFromDirectory repoRoot today directory = do
           sortedFiles = sortByTextDesc contentFiles
       concat <$> traverse (checkCandidate directoryPath directory today) sortedFiles
     else do
-      putStrLn $ "📁 Directory missing: " <> T.unpack (contentDirectoryToText directory)
+      putStrLn $ "📁 Directory missing: " <> T.unpack directoryText
       pure []
 
 checkCandidate :: FilePath -> ContentDirectory -> Day -> Text -> IO [BackfillCandidate]

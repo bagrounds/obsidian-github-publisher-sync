@@ -30,7 +30,6 @@ import qualified Network.HTTP.Client.TLS as TLS
 import System.Directory (listDirectory, doesFileExist, doesDirectoryExist)
 
 import Automation.DailyUpdates (UpdateLink (..), addUpdateLinksToReflection)
-import Automation.BlogSeriesConfig (imageBackfillContentIdsFrom)
 import Automation.EmbedSection
   ( buildBlueskySection
   , buildMastodonSection
@@ -48,6 +47,7 @@ import qualified Automation.Platforms.Twitter as Twitter
 import Automation.Prompts (PromptPair (..), assemblePost, buildQuestionPrompt, buildShortenQuestionPrompt, buildTagsPrompt)
 import Automation.Reflection (ReflectionData (..))
 import Automation.Secret (Secret, unSecret)
+import Automation.BlogImage.ContentDirectory (ContentDirectory)
 import Automation.SocialPosting.ContentDiscovery
   ( ContentNote (..)
   , ContentToPost (..)
@@ -131,14 +131,14 @@ getConfiguredPlatforms ec = catMaybes
 generateSocialPostText :: Manager -> Secret -> ContentNote -> Platform -> IO (Either Text Text)
 generateSocialPostText manager apiKey note platform = do
   let rd = ReflectionData
-        { rdDate = extractDateFromPath (cnRelativePath note)
-        , rdTitle = cnTitle note
-        , rdUrl = cnUrl note
-        , rdBody = cnBody note
-        , rdFilePath = T.pack (cnFilePath note)
-        , rdHasTweetSection = Set.member Twitter (cnPostedPlatforms note)
-        , rdHasBlueskySection = Set.member Bluesky (cnPostedPlatforms note)
-        , rdHasMastodonSection = Set.member Mastodon (cnPostedPlatforms note)
+        { rdDate = extractDateFromPath (noteRelativePath note)
+        , rdTitle = noteTitle note
+        , rdUrl = noteUrl note
+        , rdBody = noteBody note
+        , rdFilePath = T.pack (noteFilePath note)
+        , rdHasTweetSection = Set.member Twitter (notePostedPlatforms note)
+        , rdHasBlueskySection = Set.member Bluesky (notePostedPlatforms note)
+        , rdHasMastodonSection = Set.member Mastodon (notePostedPlatforms note)
         }
       tagsPrompt = buildTagsPrompt rd
       questionPrompt = buildQuestionPrompt rd
@@ -218,10 +218,10 @@ postToBlueskyPlatform manager env note postText =
   case ecBluesky env of
     Nothing -> pure (Left "Bluesky not configured")
     Just creds -> do
-      ogMeta <- fetchOgMetadata (unUrl (cnUrl note))
+      ogMeta <- fetchOgMetadata (unUrl (noteUrl note))
       let linkCard = Bluesky.LinkCard
-            { lcUri = cnUrl note
-            , lcTitle = fromMaybe (cnTitle note) (ogTitle ogMeta)
+            { lcUri = noteUrl note
+            , lcTitle = fromMaybe (noteTitle note) (ogTitle ogMeta)
             , lcDescription = fromMaybe "" (ogDescription ogMeta)
             , lcThumbUrl = ogImageUrl ogMeta
             }
@@ -266,8 +266,8 @@ data PostedNote = PostedNote
   , pnPlatforms :: [Platform]
   } deriving (Show, Eq)
 
-runPostingPipeline :: Manager -> EnvironmentConfig -> Secret -> FilePath -> IO [PostedNote]
-runPostingPipeline manager env apiKey vaultDir = do
+runPostingPipeline :: Manager -> EnvironmentConfig -> Secret -> FilePath -> [ContentDirectory] -> IO [PostedNote]
+runPostingPipeline manager env apiKey vaultDir imageBackfillContentDirs = do
   let platforms = getConfiguredPlatforms env
   putStrLn $ "  🔍 Configured platforms: " <> show platforms
 
@@ -279,7 +279,7 @@ runPostingPipeline manager env apiKey vaultDir = do
         , fccPlatforms = platforms
         , fccPostingCutoff = defaultPostingCutoff
         , fccPublicationChecker = Just (checkUrlPublished tlsManager)
-        , fccImageBackfillContentIds = imageBackfillContentIdsFrom []
+        , fccImageBackfillContentDirs = imageBackfillContentDirs
         }
       isPastHour = currentTime >= defaultPostingCutoff
 
@@ -300,7 +300,7 @@ groupByNote items =
   in Map.elems noteMap
   where
     addToGroup acc ctp =
-      let key = cnRelativePath (ctpNote ctp)
+      let key = noteRelativePath (ctpNote ctp)
       in Map.insertWith merge key
            ([ctpPlatform ctp], ctpNote ctp, ctpPathFromRoot ctp) acc
     merge (p1, n, path) (p2, _, _) = (p1 <> p2, n, path)
@@ -308,7 +308,7 @@ groupByNote items =
 processNoteGroup :: Manager -> EnvironmentConfig -> Secret -> FilePath
                  -> ([Platform], ContentNote, [Text]) -> IO (Maybe PostedNote)
 processNoteGroup manager env apiKey vaultDir (platforms, note, pathFromRoot) = do
-  putStrLn $ "  📝 Processing: " <> T.unpack (unTitle (cnTitle note))
+  putStrLn $ "  📝 Processing: " <> T.unpack (unTitle (noteTitle note))
   putStrLn $ "     Platforms: " <> show platforms
 
   updatePathTimestamps vaultDir pathFromRoot
@@ -326,7 +326,7 @@ processNoteGroup manager env apiKey vaultDir (platforms, note, pathFromRoot) = d
       putStrLn "  ⚠️  No successful posts"
       pure Nothing
     _  -> do
-      Sync.writeEmbedsToNote (cnFilePath note) embedSections
+      Sync.writeEmbedsToNote (noteFilePath note) embedSections
       putStrLn $ "  ✅ " <> show (length successes) <> " embeds written"
       pure (Just (PostedNote note postedPlatforms))
 
@@ -358,8 +358,8 @@ eitherToMaybe :: Either a b -> Maybe b
 eitherToMaybe (Right b) = Just b
 eitherToMaybe (Left _)  = Nothing
 
-autoPost :: Manager -> FilePath -> IO ()
-autoPost manager vaultDir = do
+autoPost :: Manager -> FilePath -> [ContentDirectory] -> IO ()
+autoPost manager vaultDir imageBackfillContentDirs = do
   env <- validateEnvironment
   let apiKey = Gemini.gcApiKey (ecGemini env)
 
@@ -375,14 +375,14 @@ autoPost manager vaultDir = do
     Left exception -> putStrLn $ "  ⚠️  Mastodon embed regeneration failed: " <> show exception
     Right () -> pure ()
 
-  postedNotes <- runPostingPipeline manager env apiKey vaultDir
+  postedNotes <- runPostingPipeline manager env apiKey vaultDir imageBackfillContentDirs
 
   let reflectionsDir = vaultDir </> "reflections"
   today <- todayPacificDay
   let todayStr = formatDay today
       updateLinks = fmap (\pn ->
         let details = fmap platformDetail (pnPlatforms pn)
-        in UpdateLink (cnRelativePath (pnNote pn)) (cnTitle (pnNote pn)) details
+        in UpdateLink (noteRelativePath (pnNote pn)) (noteTitle (pnNote pn)) details
         ) postedNotes
   _ <- addUpdateLinksToReflection reflectionsDir todayStr updateLinks
   pure ()

@@ -5,7 +5,7 @@ import Control.Exception (SomeException, try)
 import Data.List.NonEmpty (NonEmpty ((:|)))
 import Data.Map.Strict (Map)
 import qualified Data.Map.Strict as Map
-import Data.Maybe (catMaybes, fromMaybe, mapMaybe)
+import Data.Maybe (catMaybes, fromMaybe)
 import Data.Text (Text)
 import qualified Data.Text as T
 import qualified Data.Text.IO as TIO
@@ -27,7 +27,8 @@ import Automation.AiFiction
   , reflectionNeedsFiction
   )
 import Automation.BlogComments (fetchAllSeriesComments)
-import Automation.BlogImage (BackfillConfig (..), BackfillResult (..), ImageGenerationResult, syncAttachmentsDir, backfillImages, resolveImageProviders, processNote, contentDirectoryFromText)
+import Automation.BlogImage (BackfillConfig (..), BackfillResult (..), ImageGenerationResult, syncAttachmentsDir, backfillImages, resolveImageProviders, processNote)
+import Automation.BlogImage.ContentDirectory (ContentDirectory)
 import Automation.BlogPosts (BlogPost (..), readSeriesPosts)
 import Automation.BlogPrompt
   ( DisplayTitle (..)
@@ -49,7 +50,7 @@ import Automation.BlogSeries
   )
 import Automation.BlogSeriesConfig
   ( BlogSeriesConfig (..)
-  , imageBackfillContentIdsFrom
+  , imageBackfillContentDirsFrom
   , lookupSeriesIn
   )
 import Automation.BlogSeriesDiscovery
@@ -334,8 +335,8 @@ runBlogSeries context seriesMap runConfigs seriesId = do
 
   logMsg $ "✅ " <> taskName
 
-runBackfillImages :: Context.AppContext -> [Text] -> IO ()
-runBackfillImages context contentIds = do
+runBackfillImages :: Context.AppContext -> [ContentDirectory] -> IO ()
+runBackfillImages context contentDirs = do
   let manager = Context.httpManager context
       repoRoot = Context.repoRoot context
       vaultDir = Context.vaultDir context
@@ -366,10 +367,9 @@ runBackfillImages context contentIds = do
       pure []
     _  -> do
       logMsg $ "  🎨 Image providers: " <> T.pack (show (length providers))
-      let contentDirectories = mapMaybe contentDirectoryFromText contentIds
-          backfillConfig = BackfillConfig
+      let backfillConfig = BackfillConfig
             { backfillRepoRoot = vaultDir
-            , backfillContentDirs = contentDirectories
+            , backfillContentDirs = contentDirs
             , backfillAttachmentsDir = vaultDir </> "attachments"
             , backfillProviders = providers
             , backfillMaxImages = 2
@@ -462,10 +462,10 @@ runInternalLinking context = do
 
   logMsg "✅ internal-linking"
 
-runSocialPosting :: Context.AppContext -> IO ()
-runSocialPosting context = do
+runSocialPosting :: Context.AppContext -> [ContentDirectory] -> IO ()
+runSocialPosting context contentDirs = do
   logMsg "▶️  social-posting"
-  autoPost (Context.httpManager context) (Context.vaultDir context)
+  autoPost (Context.httpManager context) (Context.vaultDir context) contentDirs
   logMsg "✅ social-posting"
 
 runAiFiction :: Context.AppContext -> IO ()
@@ -574,14 +574,14 @@ tryTitleForDate context date = do
 -- Task dispatch
 -- ---------------------------------------------------------------------------
 
-taskRunners :: Context.AppContext -> Map Text BlogSeriesConfig -> Map Text BlogSeriesRunConfig -> [Text] -> [DiscoveredSeries] -> Map TaskId (IO ())
-taskRunners context seriesMap runConfigs contentIds discovered =
+taskRunners :: Context.AppContext -> Map Text BlogSeriesConfig -> Map Text BlogSeriesRunConfig -> [ContentDirectory] -> [DiscoveredSeries] -> Map TaskId (IO ())
+taskRunners context seriesMap runConfigs contentDirs discovered =
   let blogSeriesRunners = Map.fromList
         (fmap (\series -> (BlogSeries (dsId series), runBlogSeries context seriesMap runConfigs (dsId series))) discovered)
       staticRunners = Map.fromList
-        [ (BackfillBlogImages, runBackfillImages context contentIds)
+        [ (BackfillBlogImages, runBackfillImages context contentDirs)
         , (InternalLinking, runInternalLinking context)
-        , (SocialPosting, runSocialPosting context)
+        , (SocialPosting, runSocialPosting context contentDirs)
         , (AiFiction, runAiFiction context)
         , (ReflectionTitle, runReflectionTitle context)
         ]
@@ -627,7 +627,7 @@ main = do
       runConfigs = buildBlogSeriesRunConfigs (fmap deriveBlogSeriesRunConfig discovered)
       dynamicScheduleEntries = fmap deriveScheduleEntry discovered
       fullSchedule = buildSchedule dynamicScheduleEntries
-      contentIds = imageBackfillContentIdsFrom seriesConfigs
+      contentDirs = imageBackfillContentDirsFrom seriesConfigs
 
   tasks <- case cliTaskOverride args of
     Just taskStr ->
@@ -665,7 +665,7 @@ main = do
         Left err -> do
           TIO.hPutStrLn stderr $ "❌ Invalid context: " <> T.pack err
           exitFailure
-      let runners = taskRunners context seriesMap runConfigs contentIds discovered
+      let runners = taskRunners context seriesMap runConfigs contentDirs discovered
       results <- runTasks runners tasks
 
       -- Push vault ONCE at the end

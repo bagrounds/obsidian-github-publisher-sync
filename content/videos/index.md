@@ -5,10 +5,10 @@ aliases:
 title: 📺 Videos
 URL: https://bagrounds.org/videos
 backlinks: false
-updated: 2026-04-12T17:42:24-07:00
+updated: 2026-04-12T18:06:14-07:00
 ---
 [Home](../index.md)  
-# 📺 Videos (742)  
+# 📺 Videos (743)  
 - [💰🤑🤖💡🚀💲 $0.10/Month Runs My Entire AI Life. I'll Show You How.](./0-10-month-runs-my-entire-ai-life-ill-show-you-how.md)  
 - [📊📈📉📃👁️ 10 Charts to Understand the 900 Page Budget Bill](./10-charts-to-understand-the-900-page-budget-bill.md)  
 - [🤖🔗⬆️✅ 12-Factor Agents: Patterns of reliable LLM applications — Dex Horthy, HumanLayer](./12-factor-agents-patterns-of-reliable-llm-applications-dex-horthy-humanlayer.md)  
@@ -649,6 +649,7 @@ updated: 2026-04-12T17:42:24-07:00
 - [👹🐊🔒 Trump visits Florida's 'Alligator Alcatraz,' urges more states to open ICE detention sites](./trump-visits-floridas-alligator-alcatraz-urges-more-states-to-open-ice-detention-sites.md)  
 - [👨‍💼🎓📺 Trump vs Higher Education: Last Week Tonight with John Oliver (HBO)](./trump-vs-higher-education-last-week-tonight-with-john-oliver-hbo.md)  
 - [🏆💡🤔 Turing Award Winner On Thinking Clearly, Paxos vs Raft, Working With Dijkstra | Leslie Lamport](./turing-award-winner-on-thinking-clearly-paxos-vs-raft-working-with-dijkstra-leslie-lamport.md)  
+- [🐦📰🤣 Twitter: Last Week Tonight with John Oliver (HBO)](./twitter-last-week-tonight-with-john-oliver-hbo.md)  
 - [🏛️⚖️💥 «Two incompatible sacred values in American universities» Jon Haidt, Hayek Lecture Series](./two-incompatible-sacred-values-in-american-universities-jon-haidt-hayek-lecture-series.md)  
 - [🇺🇦🤝🤥 Ukraine and America’s Credibility Crisis - with Anne Applebaum](./ukraine-and-americas-credibility-crisis-with-anne-applebaum.md)  
 - [🩰🤸‍♀️🧑‍🏫📖 Ultimate Guide To Learning Dance For Beginners | STEEZY.CO](./ultimate-guide-to-learning-dance-for-beginners-steezy-co.md)  

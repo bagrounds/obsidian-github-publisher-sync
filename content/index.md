@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-04-12T17:42:24-07:00
+updated: 2026-04-12T18:06:14-07:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -65,11 +65,11 @@ updated: 2026-04-12T17:42:24-07:00
 - [🤖📈 Prediction Machines: The Simple Economics of Artificial Intelligence](./books/prediction-machines-the-simple-economics-of-artificial-intelligence.md)  
   
   
-## [📺 Videos](./videos/index.md) (742)  
+## [📺 Videos](./videos/index.md) (743)  
+- [🐦📰🤣 Twitter: Last Week Tonight with John Oliver (HBO)](./videos/twitter-last-week-tonight-with-john-oliver-hbo.md)  
 - [🎤💥👑 Viktor Orbán: Last Week Tonight with John Oliver (HBO)](./videos/viktor-orban-last-week-tonight-with-john-oliver-hbo.md)  
 - [🇭🇺🗳️🏆👋 Peter Magyar wins Hungary election as Orban concedes defeat | DW News](./videos/peter-magyar-wins-hungary-election-as-orban-concedes-defeat-dw-news.md)  
 - [🏛️💬 Politics Chat, April 7, 2026](./videos/politics-chat-april-7-2026.md)  
-- [⚖️🏛️🗣️ Antitrust and The Rule of Law: A Conversation with Former FTC Chair Lina Khan](./videos/antitrust-and-the-rule-of-law-a-conversation-with-former-ftc-chair-lina-khan.md)  
   
   
 ## [🌌 Topics](./topics/index.md) (91)  

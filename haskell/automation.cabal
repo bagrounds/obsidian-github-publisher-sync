@@ -59,6 +59,10 @@ library
     Automation.BlogImage.Markdown
     Automation.BlogImage.Provider
     Automation.InternalLinking
+    Automation.InternalLinking.CandidateDiscovery
+    Automation.InternalLinking.GeminiIntegration
+    Automation.InternalLinking.LinkExtraction
+    Automation.InternalLinking.Masking
     Automation.Pipeline
     Automation.Reflection
     Automation.GeminiQuota

@@ -16,7 +16,7 @@ URL: https://bagrounds.org/ai-blog/2026-04-13-1-dark-social-media-embeds-part-2
 
 ## 🧠 The Design Decision
 
-💡 The fix abandons automatic system theme detection entirely and embraces explicit dark mode. 🎯 The reasoning is simple: the site is dark-themed, so embeds should always be dark. 🚫 System theme detection sounds elegant but proved unreliable across embed implementations.
+💡 The fix abandons automatic system theme detection entirely and embraces explicit dark mode. 🚫 System theme detection sounds elegant but proved unreliable across embed implementations.
 
 🔧 The solution has two parts for each platform: ensure new embeds arrive in dark mode, and convert existing light-mode embeds to dark mode safely over time.
 

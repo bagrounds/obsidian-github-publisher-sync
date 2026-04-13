@@ -38,12 +38,14 @@
 ### 🖼️ Image Backfill Gate
 
 🔍 Before posting, each candidate note is checked for image readiness using the same logic as the image backfill pipeline.
-📂 A note is considered "awaiting image backfill" when all three conditions hold:
-- 📁 Its parent directory is one of the configured image backfill content directories (from `imageBackfillContentIds`)
-- 📄 Its filename passes `shouldHaveImage` (a markdown file not in the exclusion list)
+📂 A note is considered "awaiting image backfill" when its parent directory is one of the configured image backfill content directories (from `imageBackfillContentIds`), its filename passes `shouldHaveImage`, and either of these conditions holds:
 - 🚫 Its body does not contain an embedded image (checked via `hasEmbeddedImage`)
+- ⏰ Its body has an image but `image_date` in frontmatter is less than 1 day old (recently backfilled image may not be deployed yet)
 
-✅ Notes that already have an image are posted normally.
+🔄 The image backfill content directory list is dynamically derived from the auto blog series JSON configs via `imageBackfillContentIdsFrom`, combined with the static extra and library content directories. This makes the system forward-compatible: adding a new series JSON config automatically includes that directory in both image backfilling and the social posting image gate, with zero code changes.
+⏳ The propagation delay prevents a race condition where a note receives an image but is posted to social media before the image is deployed to the live website. Notes with an `image_date` from the same day are deferred until the next day.
+✅ Notes with an image whose `image_date` is at least 1 day old are posted normally.
+✅ Notes without an `image_date` in frontmatter and that already have an image are posted normally.
 ✅ Notes that would never receive an image (files in directories outside the backfill set, excluded files, or non-markdown files) are posted normally.
 ⏭️ Notes awaiting an image are skipped, but BFS still follows their links to discover other postable content.
 📊 Since image backfill runs at twice the rate of social posting (2 images per hour vs 1 post per 2 hours), the queue of image-ready content grows faster than the posting queue.

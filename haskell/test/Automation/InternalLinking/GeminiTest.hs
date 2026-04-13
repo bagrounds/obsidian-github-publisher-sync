@@ -1,8 +1,8 @@
 {-# LANGUAGE OverloadedStrings #-}
 
-module Automation.InternalLinking.GeminiIntegrationTest (tests) where
+module Automation.InternalLinking.GeminiTest (tests) where
 
-import Automation.InternalLinking.GeminiIntegration (buildIdentificationPrompt)
+import Automation.InternalLinking.Gemini (buildIdentificationPrompt)
 import Automation.InternalLinking.CandidateDiscovery (ContentEntry (..))
 import Automation.TestGenerators (testTitle, testRelativePath)
 import qualified Data.Text as T
@@ -10,7 +10,7 @@ import Test.Tasty (TestTree, testGroup)
 import Test.Tasty.HUnit (assertBool, testCase)
 
 tests :: TestTree
-tests = testGroup "InternalLinking.GeminiIntegration"
+tests = testGroup "InternalLinking.Gemini"
   [ buildIdentificationPromptTests
   ]
 

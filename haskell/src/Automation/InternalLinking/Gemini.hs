@@ -1,6 +1,6 @@
 {-# LANGUAGE OverloadedStrings #-}
 
-module Automation.InternalLinking.GeminiIntegration
+module Automation.InternalLinking.Gemini
   ( buildIdentificationPrompt
   , identifyBooksWithGemini
   ) where
@@ -29,10 +29,10 @@ maxBackoffUs = 60_000_000
 buildIdentificationPrompt :: Text -> [ContentEntry] -> Text
 buildIdentificationPrompt fileBody bookEntries =
   let formatBookLine e =
-        let mainNote = case extractMainTitle (unTitle (cePlainTitle e)) of
+        let mainNote = case extractMainTitle (unTitle (plainTitle e)) of
               Just mt -> " (also known as \"" <> mt <> "\")"
               Nothing -> ""
-        in "- \"" <> unTitle (cePlainTitle e) <> "\"" <> mainNote <> " (" <> unRelativePath (ceRelativePath e) <> ")"
+        in "- \"" <> unTitle (plainTitle e) <> "\"" <> mainNote <> " (" <> unRelativePath (relativePath e) <> ")"
       bookList = T.intercalate "\n" $ fmap formatBookLine bookEntries
       systemPrompt = T.intercalate "\n"
         [ "You are a precise editorial assistant for a knowledge base of book reports. Your job is to identify genuine book references in a document."

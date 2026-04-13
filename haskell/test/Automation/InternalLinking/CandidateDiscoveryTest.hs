@@ -6,7 +6,6 @@ import Automation.InternalLinking.CandidateDiscovery
   ( ContentEntry (..)
   , LinkCandidate (..)
   , linkableDirs
-  , stripEmojis
   , escapeRegex
   , formatWikilink
   , extractContext
@@ -15,6 +14,7 @@ import Automation.InternalLinking.CandidateDiscovery
   , findLinkCandidates
   )
 import Automation.InternalLinking.Masking (maskProtectedRegions)
+import Automation.Text (stripEmojis)
 import Automation.TestGenerators (testTitle, testRelativePath)
 import qualified Data.Text as T
 import Test.Tasty (TestTree, testGroup)
@@ -172,13 +172,13 @@ findLinkCandidatesTests = testGroup "findLinkCandidates"
       let content = "prefix Thinking, Fast and Slow suffix"
           candidates = findLinkCandidates [sampleEntry] content content (testRelativePath "reflections/r.md")
       in case candidates of
-        (c:_) -> assertEqual "position after prefix" 7 (lcPosition c)
+        (c:_) -> assertEqual "position after prefix" 7 (position c)
         [] -> assertBool "should have candidates" False
   , testCase "candidate has matched text" $
       let content = "I read Thinking, Fast and Slow recently"
           candidates = findLinkCandidates [sampleEntry] content content (testRelativePath "reflections/r.md")
       in case candidates of
-        (c:_) -> assertEqual "matched text" "Thinking, Fast and Slow" (lcMatchedText c)
+        (c:_) -> assertEqual "matched text" "Thinking, Fast and Slow" (matchedText c)
         [] -> assertBool "should have candidates" False
   , testCase "avoids duplicate entries for same path" $
       let entry1 = sampleEntry

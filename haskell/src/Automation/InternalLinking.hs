@@ -1,31 +1,7 @@
 {-# LANGUAGE OverloadedStrings #-}
 
 module Automation.InternalLinking
-  ( -- * Re-exports from sub-modules for backward compatibility
-    -- ** Masking
-    maskProtectedRegions
-    -- ** LinkExtraction
-  , extractLinkedPaths
-  , findMostRecentReflection
-  , bfsTraversal
-  , normalizeFilePath
-    -- ** CandidateDiscovery
-  , ContentEntry (..)
-  , LinkCandidate (..)
-  , linkableDirs
-  , stripEmojis
-  , escapeRegex
-  , formatWikilink
-  , extractContext
-  , extractMainTitle
-  , contentAlreadyLinksTo
-  , buildContentIndex
-  , findLinkCandidates
-    -- ** GeminiIntegration
-  , buildIdentificationPrompt
-  , identifyBooksWithGemini
-    -- * Defined in this module
-  , FileResult (..)
+  ( FileResult (..)
   , LinkingResult (..)
   , defaultLinkingModel
   , indexableDirs
@@ -40,25 +16,14 @@ module Automation.InternalLinking
 import Automation.InternalLinking.CandidateDiscovery
   ( ContentEntry (..)
   , LinkCandidate (..)
-  , linkableDirs
-  , stripEmojis
-  , escapeRegex
-  , formatWikilink
-  , extractContext
-  , extractMainTitle
   , contentAlreadyLinksTo
   , buildContentIndex
   , findLinkCandidates
+  , formatWikilink
   )
-import Automation.InternalLinking.GeminiIntegration
-  ( buildIdentificationPrompt
-  , identifyBooksWithGemini
-  )
+import Automation.InternalLinking.Gemini (identifyBooksWithGemini)
 import Automation.InternalLinking.LinkExtraction
-  ( extractLinkedPaths
-  , findMostRecentReflection
-  , bfsTraversal
-  , normalizeFilePath
+  ( bfsTraversal
   , splitSlash
   , joinSlash
   )
@@ -99,18 +64,18 @@ traversableDirs =
 
 
 data FileResult = FileResult
-  { frRelativePath  :: RelativePath
-  , frModified      :: Bool
-  , frLinksAdded    :: Int
-  , frUsedInference :: Bool
+  { fileResultRelativePath  :: RelativePath
+  , modified                :: Bool
+  , linksAdded              :: Int
+  , usedInference           :: Bool
   } deriving (Show, Eq)
 
 data LinkingResult = LinkingResult
-  { lrFilesVisited    :: Int
-  , lrFilesModified   :: Int
-  , lrTotalLinksAdded :: Int
-  , lrFilesSkipped    :: Int
-  , lrFileResults     :: [FileResult]
+  { filesVisited    :: Int
+  , filesModified   :: Int
+  , totalLinksAdded :: Int
+  , filesSkipped    :: Int
+  , fileResults     :: [FileResult]
   } deriving (Show, Eq)
 
 
@@ -136,17 +101,17 @@ alreadyAnalyzed content =
 applyReplacements :: Text -> [LinkCandidate] -> [Bool] -> Text
 applyReplacements content candidates validations =
   let validPairs = filter snd (zip candidates validations)
-      sorted     = sortBy (\(a, _) (b, _) -> compare (Down (lcPosition a)) (Down (lcPosition b)))
+      sorted     = sortBy (\(a, _) (b, _) -> compare (Down (position a)) (Down (position b)))
                      validPairs
   in foldl' applyOne content (fmap fst sorted)
   where
     applyOne :: Text -> LinkCandidate -> Text
     applyOne acc candidate =
-      let pos    = lcPosition candidate
-          len    = T.length (lcMatchedText candidate)
+      let pos    = position candidate
+          len    = T.length (matchedText candidate)
           before = T.take pos acc
           after  = T.drop (pos + len) acc
-          wl     = formatWikilink (lcEntry candidate)
+          wl     = formatWikilink (entry candidate)
       in before <> wl <> after
 
 
@@ -207,9 +172,9 @@ recordLinkAnalysis filePath model timestamp =
 
 processFile :: Manager -> Secret -> Gemini.Model -> FilePath -> [ContentEntry] -> IO (Maybe FileResult)
 processFile manager apiKey model filePath index = do
-  let contentDir   = takeDirectory (takeDirectory filePath)
-      relativePath = makeRelPathFromContentDir contentDir filePath
-  case mkRelativePath (T.pack relativePath) of
+  let contentDir      = takeDirectory (takeDirectory filePath)
+      fileRelativePath = makeRelPathFromContentDir contentDir filePath
+  case mkRelativePath (T.pack fileRelativePath) of
     Left reason -> do
       putStrLn $ "  ⚠️  Skipping " <> filePath <> ": " <> T.unpack reason
       pure Nothing
@@ -217,15 +182,15 @@ processFile manager apiKey model filePath index = do
       content <- TIO.readFile filePath
       if alreadyAnalyzed content
         then pure $ Just FileResult
-          { frRelativePath  = relPath
-          , frModified      = False
-          , frLinksAdded    = 0
-          , frUsedInference = False
+          { fileResultRelativePath  = relPath
+          , modified                = False
+          , linksAdded              = 0
+          , usedInference           = False
           }
         else do
           let body = extractBody content
               eligibleBooks = filter
-                (\e -> ceRelativePath e /= relPath
+                (\e -> relativePath e /= relPath
                     && not (contentAlreadyLinksTo content e))
                 index
           case eligibleBooks of
@@ -233,10 +198,10 @@ processFile manager apiKey model filePath index = do
               timestamp <- nowIso
               recordLinkAnalysis filePath model timestamp
               pure $ Just FileResult
-                { frRelativePath  = relPath
-                , frModified      = False
-                , frLinksAdded    = 0
-                , frUsedInference = False
+                { fileResultRelativePath  = relPath
+                , modified                = False
+                , linksAdded              = 0
+                , usedInference           = False
                 }
             _ -> do
               geminiResult <- identifyBooksWithGemini manager apiKey model body eligibleBooks
@@ -244,42 +209,42 @@ processFile manager apiKey model filePath index = do
               recordLinkAnalysis filePath model timestamp
               case geminiResult of
                 Left _err -> pure $ Just FileResult
-                  { frRelativePath  = relPath
-                  , frModified      = False
-                  , frLinksAdded    = 0
-                  , frUsedInference = True
+                  { fileResultRelativePath  = relPath
+                  , modified                = False
+                  , linksAdded              = 0
+                  , usedInference           = True
                   }
                 Right identifiedPaths
                   | null identifiedPaths -> pure $ Just FileResult
-                      { frRelativePath  = relPath
-                      , frModified      = False
-                      , frLinksAdded    = 0
-                      , frUsedInference = True
+                      { fileResultRelativePath  = relPath
+                      , modified                = False
+                      , linksAdded              = 0
+                      , usedInference           = True
                       }
                   | otherwise -> do
                       let identifiedSet = Set.fromList identifiedPaths
                       contentAfterFm <- TIO.readFile filePath
                       let masked          = maskProtectedRegions contentAfterFm
-                          identifiedIndex = filter (\e -> Set.member (unRelativePath (ceRelativePath e)) identifiedSet) index
+                          identifiedIndex = filter (\e -> Set.member (unRelativePath (relativePath e)) identifiedSet) index
                           candidates      = findLinkCandidates identifiedIndex contentAfterFm masked relPath
                       case candidates of
                         [] -> pure $ Just FileResult
-                          { frRelativePath  = relPath
-                          , frModified      = False
-                          , frLinksAdded    = 0
-                          , frUsedInference = True
+                          { fileResultRelativePath  = relPath
+                          , modified                = False
+                          , linksAdded              = 0
+                          , usedInference           = True
                           }
                         _  -> do
                           let validations = replicate (length candidates) True
                               newContent  = applyReplacements contentAfterFm candidates validations
                           TIO.writeFile filePath newContent
-                          putStrLn $ "  ✏️  " <> relativePath <> ": "
+                          putStrLn $ "  ✏️  " <> fileRelativePath <> ": "
                             <> show (length candidates) <> " link(s) applied"
                           pure $ Just FileResult
-                            { frRelativePath  = relPath
-                            , frModified      = True
-                            , frLinksAdded    = length candidates
-                            , frUsedInference = True
+                            { fileResultRelativePath  = relPath
+                            , modified                = True
+                            , linksAdded              = length candidates
+                            , usedInference           = True
                             }
 
 makeRelPathFromContentDir :: FilePath -> FilePath -> FilePath
@@ -303,23 +268,23 @@ run manager model contentDir = do
   putStrLn $ "  🔍 BFS: " <> show (length filesToVisit) <> " files reachable"
 
   apiKey <- lookupSecret
-  fileResults <- processFiles manager apiKey model contentDir index filesToVisit
+  results <- processFiles manager apiKey model contentDir index filesToVisit
 
-  let filesModified  = length $ filter frModified fileResults
-      totalLinks     = sum $ fmap frLinksAdded fileResults
-      filesSkipped   = length $ filter (\r -> not (frModified r) && frLinksAdded r == 0) fileResults
+  let modifiedCount  = length $ filter modified results
+      totalLinks     = sum $ fmap linksAdded results
+      skippedCount   = length $ filter (\r -> not (modified r) && linksAdded r == 0) results
 
   let result = LinkingResult
-        { lrFilesVisited    = length filesToVisit
-        , lrFilesModified   = filesModified
-        , lrTotalLinksAdded = totalLinks
-        , lrFilesSkipped    = filesSkipped
-        , lrFileResults     = fileResults
+        { filesVisited    = length filesToVisit
+        , filesModified   = modifiedCount
+        , totalLinksAdded = totalLinks
+        , filesSkipped    = skippedCount
+        , fileResults     = results
         }
 
-  putStrLn $ "  🏁 Complete: " <> show (lrFilesVisited result) <> " visited, "
-    <> show filesModified <> " modified, " <> show totalLinks <> " links added, "
-    <> show filesSkipped <> " skipped"
+  putStrLn $ "  🏁 Complete: " <> show (filesVisited result) <> " visited, "
+    <> show modifiedCount <> " modified, " <> show totalLinks <> " links added, "
+    <> show skippedCount <> " skipped"
 
   pure result
 
@@ -342,7 +307,7 @@ processFiles manager apiKey model contentDir index filesToVisit = do
         Nothing -> go infRef resRef rest
         Just fileResult -> do
           modifyIORef' resRef (fileResult :)
-          if frUsedInference fileResult
+          if usedInference fileResult
             then do
               infCount <- readIORef infRef
               modifyIORef' infRef (+ 1)

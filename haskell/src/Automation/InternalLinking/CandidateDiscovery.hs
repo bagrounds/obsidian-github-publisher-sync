@@ -4,7 +4,6 @@ module Automation.InternalLinking.CandidateDiscovery
   ( ContentEntry (..)
   , LinkCandidate (..)
   , linkableDirs
-  , stripEmojis
   , escapeRegex
   , formatWikilink
   , extractContext
@@ -16,7 +15,7 @@ module Automation.InternalLinking.CandidateDiscovery
 
 import Automation.Frontmatter (parseFrontmatter)
 import Automation.InternalLinking.LinkExtraction (hasSuffix)
-import Automation.Text (isEmoji)
+import Automation.Text (stripEmojis)
 import Automation.Types (RelativePath, unRelativePath, mkRelativePath, Title, unTitle, mkTitle)
 import Data.List (sortBy)
 import qualified Data.Map.Strict as Map
@@ -37,24 +36,17 @@ linkableDirs :: [Text]
 linkableDirs = ["books"]
 
 data ContentEntry = ContentEntry
-  { ceRelativePath :: RelativePath
-  , ceTitle        :: Title
-  , cePlainTitle   :: Title
+  { relativePath :: RelativePath
+  , title        :: Title
+  , plainTitle   :: Title
   } deriving (Show, Eq)
 
 data LinkCandidate = LinkCandidate
-  { lcEntry       :: ContentEntry
-  , lcMatchedText :: Text
-  , lcPosition    :: Int
-  , lcContext     :: Text
+  { entry       :: ContentEntry
+  , matchedText :: Text
+  , position    :: Int
+  , context     :: Text
   } deriving (Show, Eq)
-
-stripEmojis :: Text -> Text
-stripEmojis =
-  T.intercalate " "
-    . filter (not . T.null)
-    . T.split (== ' ')
-    . T.map (\c -> if isEmoji c then ' ' else c)
 
 escapeRegex :: Text -> Text
 escapeRegex = T.concatMap escChar
@@ -66,10 +58,10 @@ escapeRegex = T.concatMap escChar
       | otherwise             = T.singleton c
 
 formatWikilink :: ContentEntry -> Text
-formatWikilink entry =
-  let path = unRelativePath (ceRelativePath entry)
+formatWikilink contentEntry =
+  let path = unRelativePath (relativePath contentEntry)
       target = fromMaybe path (T.stripSuffix ".md" path)
-  in "[[" <> target <> "|" <> unTitle (ceTitle entry) <> "]]"
+  in "[[" <> target <> "|" <> unTitle (title contentEntry) <> "]]"
 
 extractContext :: Text -> Int -> Int -> Text
 extractContext content pos matchLen =
@@ -94,8 +86,8 @@ extractMainTitle plainTitle =
     countWordsT t = length $ filter (not . T.null) $ T.split (\c -> c == ' ' || c == '-') t
 
 contentAlreadyLinksTo :: Text -> ContentEntry -> Bool
-contentAlreadyLinksTo content entry =
-  let path = unRelativePath (ceRelativePath entry)
+contentAlreadyLinksTo content contentEntry =
+  let path = unRelativePath (relativePath contentEntry)
       pathNoMd = fromMaybe path (T.stripSuffix ".md" path)
   in T.isInfixOf (pathNoMd <> "]") content
   || T.isInfixOf (pathNoMd <> "|") content
@@ -119,8 +111,8 @@ scanDir contentDir dirName = do
 
 readEntry :: FilePath -> Text -> FilePath -> IO (Maybe ContentEntry)
 readEntry contentDir dirName file = do
-  let relativePath = dirName <> "/" <> T.pack file
-      filePath     = contentDir </> T.unpack relativePath
+  let entryRelativePath = dirName <> "/" <> T.pack file
+      filePath           = contentDir </> T.unpack entryRelativePath
   content <- TIO.readFile filePath
   let (fm, _) = parseFrontmatter content
   pure $ do
@@ -129,46 +121,46 @@ readEntry contentDir dirName file = do
     if T.length plain < minTitleLength
       then Nothing
       else do
-        path <- either (const Nothing) Just (mkRelativePath relativePath)
-        title <- either (const Nothing) Just (mkTitle titleText)
-        plainTitle <- either (const Nothing) Just (mkTitle plain)
+        entryPath <- either (const Nothing) Just (mkRelativePath entryRelativePath)
+        entryTitle <- either (const Nothing) Just (mkTitle titleText)
+        entryPlainTitle <- either (const Nothing) Just (mkTitle plain)
         pure ContentEntry
-          { ceRelativePath = path
-          , ceTitle        = title
-          , cePlainTitle   = plainTitle
+          { relativePath = entryPath
+          , title        = entryTitle
+          , plainTitle   = entryPlainTitle
           }
 
 findLinkCandidates :: [ContentEntry] -> Text -> Text -> RelativePath -> [LinkCandidate]
 findLinkCandidates index content masked selfPath =
-  let sortedIndex = sortBy (\a b -> compare (Down (T.length (unTitle (cePlainTitle a))))
-                                            (Down (T.length (unTitle (cePlainTitle b))))) index
+  let sortedIndex = sortBy (\a b -> compare (Down (T.length (unTitle (plainTitle a))))
+                                            (Down (T.length (unTitle (plainTitle b))))) index
       (_, candidates) = foldl' findForEntry ([], []) sortedIndex
-  in sortBy (\a b -> compare (lcPosition a) (lcPosition b)) candidates
+  in sortBy (\a b -> compare (position a) (position b)) candidates
   where
     findForEntry :: ([(Int, Int)], [LinkCandidate]) -> ContentEntry -> ([(Int, Int)], [LinkCandidate])
-    findForEntry (ranges, cands) entry
-      | ceRelativePath entry == selfPath = (ranges, cands)
-      | contentAlreadyLinksTo content entry = (ranges, cands)
-      | any (\c -> ceRelativePath (lcEntry c) == ceRelativePath entry) cands = (ranges, cands)
+    findForEntry (ranges, cands) contentEntry
+      | relativePath contentEntry == selfPath = (ranges, cands)
+      | contentAlreadyLinksTo content contentEntry = (ranges, cands)
+      | any (\c -> relativePath (entry c) == relativePath contentEntry) cands = (ranges, cands)
       | otherwise =
-          let titleTexts = unTitle (cePlainTitle entry) : maybeToList (extractMainTitle (unTitle (cePlainTitle entry)))
-          in tryPatterns ranges cands entry titleTexts
+          let titleTexts = unTitle (plainTitle contentEntry) : maybeToList (extractMainTitle (unTitle (plainTitle contentEntry)))
+          in tryPatterns ranges cands contentEntry titleTexts
 
     tryPatterns :: [(Int, Int)] -> [LinkCandidate] -> ContentEntry -> [Text] -> ([(Int, Int)], [LinkCandidate])
     tryPatterns ranges cands _ [] = (ranges, cands)
-    tryPatterns ranges cands entry (titleText : rest) =
+    tryPatterns ranges cands contentEntry (titleText : rest) =
       let pat     = "\\b" <> T.unpack (escapeRegex titleText) <> "\\b"
           matches = findAllMatches pat (T.unpack masked)
       in case filter (\(p, len) -> not (overlaps ranges p (p + len))) matches of
-        []             -> tryPatterns ranges cands entry rest
+        []             -> tryPatterns ranges cands contentEntry rest
         ((pos, len):_) ->
-          let matchedText = T.take len (T.drop pos content)
-              ctx         = extractContext content pos len
-              candidate   = LinkCandidate
-                { lcEntry       = entry
-                , lcMatchedText = matchedText
-                , lcPosition    = pos
-                , lcContext     = ctx
+          let matched = T.take len (T.drop pos content)
+              ctx     = extractContext content pos len
+              candidate = LinkCandidate
+                { entry       = contentEntry
+                , matchedText = matched
+                , position    = pos
+                , context     = ctx
                 }
           in ((pos, pos + len) : ranges, cands <> [candidate])
 

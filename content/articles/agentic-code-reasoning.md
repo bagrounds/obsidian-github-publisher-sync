@@ -10,9 +10,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-02T00:00:00Z
 force_analyze_links: false
 updated: 2026-04-03T05:43:02
+image_date: 2026-04-13T18:32:30Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A minimalist, high-tech illustration featuring a translucent, glowing human brain silhouette integrated with a complex network of digital code structures. Floating lines of structured, abstract syntax trees and logic gate symbols connect to the brain, radiating outward like a neural map. The color palette uses deep navy and charcoal backgrounds with vibrant accents of cyan, electric blue, and soft white light to represent intelligence and clarity. The composition emphasizes a clean, analytical aesthetic, suggesting a transition from raw, chaotic text into organized, verified logic. Floating geometric prisms and faint, semi-transparent code snippets hover in the background, creating a sense of depth and systematic discovery without the use of legible words.
 ---
 [Home](../index.md) > [Articles](./index.md)  
 # [🤖🧠💻 Agentic Code Reasoning](https://arxiv.org/html/2603.01896v2)  
+![articles-agentic-code-reasoning](../articles-agentic-code-reasoning.jpg)  
   
 ## 🤖 AI Summary  
 * 🧠 Agentic code reasoning enables LLM agents to perform deep semantic analysis by navigating files and tracing dependencies without executing code.  

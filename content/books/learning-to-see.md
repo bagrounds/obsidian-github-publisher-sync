@@ -11,9 +11,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-02T00:00:00Z
 force_analyze_links: false
 updated: 2026-04-02T13:42:02
+image_date: 2026-04-13T19:41:39Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A clean, high-contrast illustration featuring a complex, tangled mess of gray industrial pipes and gears on the left side, representing MUDA or waste. As the eye moves toward the right, the tangle transitions into a crisp, glowing, and perfectly straight golden path or pipeline. A stylized magnifying glass hovers over the transition point, illuminating the shift from chaotic clutter to streamlined, efficient flow. The background is a soft, neutral blueprint-style grid, emphasizing precision and planning. The color palette is limited to deep slate blues, stark whites, and vibrant, energetic gold accents to represent the value being discovered and extracted from the process.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🙈👁️💡🤔 Learning to See: Value-Stream Mapping to Add Value and Eliminate MUDA  
+![books-learning-to-see](../books-learning-to-see.jpg)  
 [🛒 Learning to See: Value-Stream Mapping to Add Value and Eliminate MUDA. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4kTIB9d)  
   
 ## 🤖 AI Summary  

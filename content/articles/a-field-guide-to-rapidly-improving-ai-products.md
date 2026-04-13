@@ -10,9 +10,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-02T00:00:00Z
 force_analyze_links: false
 updated: 2026-04-03T03:11:30
+image_date: 2026-04-13T17:33:09Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A minimalist, high-contrast flat illustration depicting a stylized magnifying glass hovering over a complex, glowing digital circuit board. The circuit board features branching nodes that transition from messy, tangled lines on the left to clean, organized geometric patterns on the right, symbolizing the refinement of AI outputs. A small, vibrant rocket icon is subtly integrated into the flow, suggesting rapid progress. The color palette uses deep navy and slate backgrounds with pops of electric cyan and warm amber to highlight the manual inspection and error analysis focus. The overall aesthetic is clean, technical, and modern, evoking the feeling of a professional field guide or engineering blueprint.
 ---
 [Home](../index.md) > [Articles](./index.md)  
 # [🗺️🚀🤖 A Field Guide to Rapidly Improving AI Products](https://hamel.dev/blog/posts/field-guide)  
+![articles-a-field-guide-to-rapidly-improving-ai-products](../articles-a-field-guide-to-rapidly-improving-ai-products.jpg)  
   
 ## 🤖 AI Summary  
   

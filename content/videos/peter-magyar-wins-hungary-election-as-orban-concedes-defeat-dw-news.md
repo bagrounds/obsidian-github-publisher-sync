@@ -9,6 +9,9 @@ Platform:
 Channel: DW News
 tags:
 youtube: https://youtu.be/UpfU9Hf1_gU
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_time: 2026-04-12T00:00:00Z
+force_analyze_links: false
 ---
 [Home](../index.md) > [Videos](./index.md)  
 # 🇭🇺🗳️🏆👋 Peter Magyar wins Hungary election as Orban concedes defeat | DW News  
@@ -52,7 +55,7 @@ youtube: https://youtu.be/UpfU9Hf1_gU
   
 ### 🆚 Contrasting  
 * 🛡️ The Light that Failed by Ivan Krastev and Stephen Holmes examines why the promise of Western-style liberalism struggled to take root in Eastern Europe.  
-* 🧱 Twilight of Democracy by Anne Applebaum investigates the allure of authoritarianism and why some former democratic supporters turned toward nationalist populism.  
+* 🧱 [🥀 Twilight of Democracy: 🐍 The Seductive Lure of Authoritarianism](../books/twilight-of-democracy.md) by Anne Applebaum investigates the allure of authoritarianism and why some former democratic supporters turned toward nationalist populism.  
   
 ### 🎨 Creatively Related  
 * 🎭 The Melancholy of Resistance by Laszlo Krasznahorkai is a surrealist novel that captures the atmospheric tension and social unrest within a small Hungarian town.  

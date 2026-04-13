@@ -6,6 +6,9 @@ URL: https://bagrounds.org/books/shadow-of-the-new-deal-the-victory-of-public-br
 share: true
 CTA: 📺 Discover radio's legacy.
 affiliate link: https://amzn.to/44fHuKX
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_time: 2026-04-11T00:00:00Z
+force_analyze_links: false
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🇺🇸📻 Shadow of the New Deal: The Victory of Public Broadcasting  

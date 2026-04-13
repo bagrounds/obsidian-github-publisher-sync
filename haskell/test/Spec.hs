@@ -51,6 +51,7 @@ import qualified Automation.BlogImage.ProviderTest
 import qualified Automation.InternalLinking.MaskingTest
 import qualified Automation.InternalLinking.LinkExtractionTest
 import qualified Automation.InternalLinking.CandidateDiscoveryTest
+import qualified Automation.InternalLinking.GeminiTest
 
 main :: IO ()
 main = defaultMain $ testGroup "Automation"
@@ -102,4 +103,5 @@ main = defaultMain $ testGroup "Automation"
   , Automation.InternalLinking.MaskingTest.tests
   , Automation.InternalLinking.LinkExtractionTest.tests
   , Automation.InternalLinking.CandidateDiscoveryTest.tests
+  , Automation.InternalLinking.GeminiTest.tests
   ]

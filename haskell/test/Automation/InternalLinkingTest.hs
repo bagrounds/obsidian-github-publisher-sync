@@ -7,7 +7,6 @@ import Automation.InternalLinking
   , extractBody
   , alreadyAnalyzed
   , applyReplacements
-  , buildIdentificationPrompt
   )
 import Automation.InternalLinking.CandidateDiscovery
   ( ContentEntry (..)
@@ -20,6 +19,7 @@ import Automation.InternalLinking.CandidateDiscovery
   , contentAlreadyLinksTo
   , findLinkCandidates
   )
+import Automation.InternalLinking.Gemini (buildIdentificationPrompt)
 import Automation.InternalLinking.LinkExtraction (extractLinkedPaths, normalizeFilePath)
 import Automation.InternalLinking.Masking (maskProtectedRegions)
 import Automation.Text (stripEmojis)
@@ -460,12 +460,6 @@ buildIdentificationPromptTests = testGroup "buildIdentificationPrompt"
   , testCase "does not include also-known-as for entries without subtitles" $
       let prompt = buildIdentificationPrompt "body text" [sampleEntry]
       in assertBool "no also known as" (not (T.isInfixOf "also known as" prompt))
-  , testCase "includes system instructions about conservative matching" $
-      let prompt = buildIdentificationPrompt "body" [sampleEntry]
-      in assertBool "has conservative instruction" (T.isInfixOf "conservative" prompt)
-  , testCase "includes empty array fallback instruction" $
-      let prompt = buildIdentificationPrompt "body" []
-      in assertBool "has empty array" (T.isInfixOf "[]" prompt)
   ]
 
 propertyTests :: TestTree

@@ -60,6 +60,7 @@ library
     Automation.BlogImage.Provider
     Automation.InternalLinking
     Automation.InternalLinking.CandidateDiscovery
+    Automation.InternalLinking.Gemini
     Automation.InternalLinking.LinkExtraction
     Automation.InternalLinking.Masking
     Automation.Pipeline
@@ -156,6 +157,7 @@ test-suite automation-tests
     Automation.InternalLinking.MaskingTest
     Automation.InternalLinking.LinkExtractionTest
     Automation.InternalLinking.CandidateDiscoveryTest
+    Automation.InternalLinking.GeminiTest
     Automation.BlueskyTest
     Automation.MastodonTest
     Automation.TwitterTest

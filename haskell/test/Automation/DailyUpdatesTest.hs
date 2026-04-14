@@ -31,14 +31,14 @@ addUpdateLinksTests = testGroup "addUpdateLinks"
       in do
         assertBool "should contain updates header"
           (T.isInfixOf "## 🔄 Updates" result)
-        assertBool "should contain stats line"
-          (T.isInfixOf "📊 1 page · 1 🖼️" result)
+        assertBool "should contain stats line with legend"
+          (T.isInfixOf "📊 1 page · 1 🖼️ images" result)
         assertBool "should contain table header"
           (T.isInfixOf "| Page | 🖼️ |" result)
-        assertBool "should contain the page link in table"
-          (T.isInfixOf "[[ai-blog/2026-03-28-post|Post Title]]" result)
-        assertBool "should contain image check"
-          (T.isInfixOf "✓" result)
+        assertBool "should contain the page link with escaped pipe"
+          (T.isInfixOf "[[ai-blog/2026-03-28-post\\|Post Title]]" result)
+        assertBool "should contain image emoji cell"
+          (T.isInfixOf "🖼️" result)
 
   , testCase "adds new page row when updates section exists but page missing" $
       let content = existingTableContent
@@ -47,9 +47,9 @@ addUpdateLinksTests = testGroup "addUpdateLinks"
                      [UpdateLink (testRelativePath "ai-blog/cool-post.md") (testTitle "Cool Post") [PostedTo Bluesky]]
       in do
         assertBool "should preserve existing page"
-          (T.isInfixOf "[[page1|Page 1]]" result)
+          (T.isInfixOf "[[page1\\|Page 1]]" result)
         assertBool "should contain the new page"
-          (T.isInfixOf "[[ai-blog/cool-post|Cool Post]]" result)
+          (T.isInfixOf "[[ai-blog/cool-post\\|Cool Post]]" result)
         assertBool "should show both columns"
           (T.isInfixOf "| 🖼️ | 🦋 |" result)
 
@@ -61,7 +61,7 @@ addUpdateLinksTests = testGroup "addUpdateLinks"
       in do
         assertBool "should show both columns in header"
           (T.isInfixOf "| 🖼️ | 🦋 |" result)
-        let pageLines = filter (T.isInfixOf "[[page1|Page 1]]") (T.splitOn "\n" result)
+        let pageLines = filter (T.isInfixOf "[[page1\\|Page 1]]") (T.splitOn "\n" result)
         assertEqual "should have exactly one page entry" 1 (length pageLines)
 
   , testCase "skips duplicate details" $
@@ -85,9 +85,9 @@ addUpdateLinksTests = testGroup "addUpdateLinks"
           content3 = addUpdateLinks content2
                        [UpdateLink (testRelativePath "link-page.md") (testTitle "Link Page") [InternalLinksAdded 3]]
       in do
-        assertBool "has image page" (T.isInfixOf "[[img-page|Image Page]]" content3)
-        assertBool "has social page" (T.isInfixOf "[[social-page|Social Page]]" content3)
-        assertBool "has link page" (T.isInfixOf "[[link-page|Link Page]]" content3)
+        assertBool "has image page" (T.isInfixOf "[[img-page\\|Image Page]]" content3)
+        assertBool "has social page" (T.isInfixOf "[[social-page\\|Social Page]]" content3)
+        assertBool "has link page" (T.isInfixOf "[[link-page\\|Link Page]]" content3)
         assertBool "stats show 3 pages" (T.isInfixOf "📊 3 pages" content3)
 
   , testCase "preserves content after updates section" $
@@ -102,14 +102,14 @@ addUpdateLinksTests = testGroup "addUpdateLinks"
         assertBool "should preserve books content"
           (T.isInfixOf "Some books" result)
         assertBool "should add social page"
-          (T.isInfixOf "[[sp|SP]]" result)
+          (T.isInfixOf "[[sp\\|SP]]" result)
 
   , testCase "adds multiple details at once for a single page" $
       let content = "# Reflection"
           result = addUpdateLinks content
                      [UpdateLink (testRelativePath "a.md") (testTitle "Page A") [PostedTo Bluesky, PostedTo Mastodon]]
       in do
-        assertBool "has page" (T.isInfixOf "[[a|Page A]]" result)
+        assertBool "has page" (T.isInfixOf "[[a\\|Page A]]" result)
         assertBool "has both platform columns" (T.isInfixOf "| 🦋 | 🐘 |" result)
 
   , testCase "adds multiple pages at once" $
@@ -120,9 +120,9 @@ addUpdateLinksTests = testGroup "addUpdateLinks"
                      , UpdateLink (testRelativePath "c.md") (testTitle "Page C") [InternalLinksAdded 2]
                      ]
       in do
-        assertBool "has A" (T.isInfixOf "[[a|Page A]]" result)
-        assertBool "has B" (T.isInfixOf "[[b|Page B]]" result)
-        assertBool "has C" (T.isInfixOf "[[c|Page C]]" result)
+        assertBool "has A" (T.isInfixOf "[[a\\|Page A]]" result)
+        assertBool "has B" (T.isInfixOf "[[b\\|Page B]]" result)
+        assertBool "has C" (T.isInfixOf "[[c\\|Page C]]" result)
         assertBool "stats show 3 pages" (T.isInfixOf "📊 3 pages" result)
 
   , testCase "inserts updates section before social media sections" $
@@ -131,7 +131,7 @@ addUpdateLinksTests = testGroup "addUpdateLinks"
                      [UpdateLink (testRelativePath "img.md") (testTitle "Image Page") [ImageAdded]]
       in do
         assertBool "has updates header" (T.isInfixOf "## 🔄 Updates" result)
-        assertBool "has page link" (T.isInfixOf "[[img|Image Page]]" result)
+        assertBool "has page link" (T.isInfixOf "[[img\\|Image Page]]" result)
         assertBool "updates before tweet" $
           let uIdx = T.length $ fst $ T.breakOn "## 🔄 Updates" result
               tIdx = T.length $ fst $ T.breakOn "## 🐦 Tweet" result
@@ -155,22 +155,23 @@ addUpdateLinksTests = testGroup "addUpdateLinks"
           content3 = addUpdateLinks content2
                        [UpdateLink (testRelativePath "page1.md") (testTitle "Page 1") [InternalLinksAdded 2]]
       in do
-        assertBool "one page link" (T.isInfixOf "[[page1|Page 1]]" content3)
+        assertBool "one page link" (T.isInfixOf "[[page1\\|Page 1]]" content3)
         assertBool "stats show 1 page" (T.isInfixOf "📊 1 page" content3)
         assertBool "has all three columns" (T.isInfixOf "| 🖼️ | 🔗 | 🦋 |" content3)
-        let pageOccurrences = length $ T.splitOn "[[page1|Page 1]]" content3
+        let pageOccurrences = length $ T.splitOn "[[page1\\|Page 1]]" content3
         assertEqual "should have exactly one page entry" 2 pageOccurrences
 
-  , testCase "table row contains all detail values for a page" $
+  , testCase "table row contains emoji cell values for platforms" $
       let content = "# Reflection"
           result = addUpdateLinks content
                      [UpdateLink (testRelativePath "page.md") (testTitle "My Page") [ImageAdded, PostedTo Bluesky]]
           resultLines = T.splitOn "\n" result
-          pageLines = filter (T.isInfixOf "[[page|My Page]]") resultLines
+          pageLines = filter (T.isInfixOf "[[page\\|My Page]]") resultLines
       in case pageLines of
         (pageLine : _) -> do
-          assertBool "page row contains image check" (T.isInfixOf "✓" pageLine)
-          assertBool "page row contains page link" (T.isInfixOf "[[page|My Page]]" pageLine)
+          assertBool "page row contains image emoji" (T.isInfixOf "🖼️" pageLine)
+          assertBool "page row contains bluesky emoji" (T.isInfixOf "🦋" pageLine)
+          assertBool "page row contains page link" (T.isInfixOf "[[page\\|My Page]]" pageLine)
         [] -> assertBool "page link should be present" False
 
   , testCase "same detail under different pages is not deduplicated across pages" $
@@ -180,9 +181,9 @@ addUpdateLinksTests = testGroup "addUpdateLinks"
                      , UpdateLink (testRelativePath "page-b.md") (testTitle "Page B") [ImageAdded]
                      ]
       in do
-        assertBool "has page A" (T.isInfixOf "[[page-a|Page A]]" result)
-        assertBool "has page B" (T.isInfixOf "[[page-b|Page B]]" result)
-        assertBool "stats show 2 images" (T.isInfixOf "2 🖼️" result)
+        assertBool "has page A" (T.isInfixOf "[[page-a\\|Page A]]" result)
+        assertBool "has page B" (T.isInfixOf "[[page-b\\|Page B]]" result)
+        assertBool "stats show 2 images" (T.isInfixOf "2 🖼️ images" result)
 
   , testCase "same detail under different pages works incrementally" $
       let content0 = "# Reflection"
@@ -191,9 +192,9 @@ addUpdateLinksTests = testGroup "addUpdateLinks"
           content2 = addUpdateLinks content1
                        [UpdateLink (testRelativePath "page-b.md") (testTitle "Page B") [ImageAdded]]
       in do
-        assertBool "has page A" (T.isInfixOf "[[page-a|Page A]]" content2)
-        assertBool "has page B" (T.isInfixOf "[[page-b|Page B]]" content2)
-        assertBool "stats show 2 images" (T.isInfixOf "2 🖼️" content2)
+        assertBool "has page A" (T.isInfixOf "[[page-a\\|Page A]]" content2)
+        assertBool "has page B" (T.isInfixOf "[[page-b\\|Page B]]" content2)
+        assertBool "stats show 2 images" (T.isInfixOf "2 🖼️ images" content2)
 
   , testCase "internal links stats sum across pages" $
       let content = "# Reflection"
@@ -201,7 +202,7 @@ addUpdateLinksTests = testGroup "addUpdateLinks"
                      [ UpdateLink (testRelativePath "a.md") (testTitle "Page A") [InternalLinksAdded 3]
                      , UpdateLink (testRelativePath "b.md") (testTitle "Page B") [InternalLinksAdded 5]
                      ]
-      in assertBool "stats show total 8 links" (T.isInfixOf "8 🔗" result)
+      in assertBool "stats show total 8 links" (T.isInfixOf "8 🔗 links" result)
 
   , testCase "internal links accumulate additively for same page" $
       let content0 = "# Reflection"
@@ -209,7 +210,7 @@ addUpdateLinksTests = testGroup "addUpdateLinks"
                        [UpdateLink (testRelativePath "page.md") (testTitle "Page") [InternalLinksAdded 2]]
           content2 = addUpdateLinks content1
                        [UpdateLink (testRelativePath "page.md") (testTitle "Page") [InternalLinksAdded 3]]
-      in assertBool "stats show total 5 links" (T.isInfixOf "5 🔗" content2)
+      in assertBool "stats show total 5 links" (T.isInfixOf "5 🔗 links" content2)
 
   , testCase "only active columns are shown in table header" $
       let content = "# Reflection"
@@ -233,6 +234,55 @@ addUpdateLinksTests = testGroup "addUpdateLinks"
         assertBool "has mastodon in table" (T.isInfixOf "🐘" result)
         assertBool "no bullet format" (not $ T.isInfixOf "  - " result)
 
+  , testCase "stats line serves as legend with descriptive words" $
+      let content = "# Reflection"
+          result = addUpdateLinks content
+                     [ UpdateLink (testRelativePath "a.md") (testTitle "A") [ImageAdded, PostedTo Bluesky, InternalLinksAdded 3]
+                     , UpdateLink (testRelativePath "b.md") (testTitle "B") [PostedTo Mastodon]
+                     ]
+      in do
+        assertBool "has images label" (T.isInfixOf "🖼️ images" result)
+        assertBool "has links label" (T.isInfixOf "🔗 links" result)
+        assertBool "has Bluesky label" (T.isInfixOf "🦋 Bluesky" result)
+        assertBool "has Mastodon label" (T.isInfixOf "🐘 Mastodon" result)
+
+  , testCase "title containing pipe is escaped in table and round-trips correctly" $
+      let content = "# Reflection"
+          result = addUpdateLinks content
+                     [UpdateLink (testRelativePath "reflections/2026-03-28.md") (testTitle "2026-03-28 | My Reflection") [ImageAdded]]
+      in do
+        assertBool "escaped pipe in wiki link"
+          (T.isInfixOf "[[reflections/2026-03-28\\|2026-03-28 \\| My Reflection]]" result)
+        let result2 = addUpdateLinks result
+                        [UpdateLink (testRelativePath "reflections/2026-03-28.md") (testTitle "2026-03-28 | My Reflection") [PostedTo Bluesky]]
+        assertBool "round-trips: page still has single entry"
+          (let pageOccurrences = length $ T.splitOn "reflections/2026-03-28" result2
+           in pageOccurrences == 2)
+        assertBool "round-trips: both columns present"
+          (T.isInfixOf "| 🖼️ | 🦋 |" result2)
+
+  , testCase "title with multiple pipes is fully escaped" $
+      let content = "# Reflection"
+          result = addUpdateLinks content
+                     [UpdateLink (testRelativePath "notes/test.md") (testTitle "A | B | C") [PostedTo Mastodon]]
+      in do
+        assertBool "all pipes escaped"
+          (T.isInfixOf "[[notes/test\\|A \\| B \\| C]]" result)
+        let result2 = addUpdateLinks result
+                        [UpdateLink (testRelativePath "notes/test.md") (testTitle "A | B | C") [ImageAdded]]
+        assertBool "round-trips with multi-pipe title"
+          (T.isInfixOf "| 🖼️ |" result2 && T.isInfixOf "| 🐘 |" result2)
+
+  , testCase "migrates legacy checkmark format to emoji cells" $
+      let content = "# Reflection\n\n## 🔄 Updates\n📊 1 page · 1 🖼️\n\n| Page | 🖼️ | 🦋 |\n|---|---|---|\n| [[page1|Page 1]] | ✓ | ✓ |\n"
+          result = addUpdateLinks content
+                     [UpdateLink (testRelativePath "page1.md") (testTitle "Page 1") [PostedTo Mastodon]]
+      in do
+        assertBool "image cell uses emoji" (T.isInfixOf "🖼️ |" result)
+        assertBool "bluesky cell uses emoji" (T.isInfixOf "🦋 |" result)
+        assertBool "mastodon cell uses emoji" (T.isInfixOf "🐘 |" result)
+        assertBool "no checkmarks in output" (not $ T.isInfixOf "✓" result)
+
   , testProperty "addUpdateLinks never removes existing lines outside updates section" $
       \(QC.ASCIIString bodyStr) ->
         let body = T.pack bodyStr
@@ -253,7 +303,7 @@ existingTableContent entries =
         <> (if length entries == 1 then "page" else "pages")
         <> T.concat (fmap (\column ->
             let count = computeStatHelper entries column
-            in if count > 0 then " · " <> T.pack (show count) <> " " <> columnEmojiHelper column else ""
+            in if count > 0 then " · " <> T.pack (show count) <> " " <> columnEmojiHelper column <> " " <> columnLabelHelper column else ""
           ) canonicalOrder)
       table = T.intercalate "\n" (header : separator : rows)
   in "# Reflection\n\n## 🔄 Updates\n" <> statsLine <> "\n\n" <> table <> "\n"
@@ -271,13 +321,20 @@ existingTableContent entries =
     columnEmojiHelper (PostedTo Bluesky) = "🦋"
     columnEmojiHelper (PostedTo Mastodon) = "🐘"
     columnEmojiHelper (PostedTo Twitter) = "🐦"
+    columnLabelHelper :: UpdateDetail -> Text
+    columnLabelHelper ImageAdded = "images"
+    columnLabelHelper (InternalLinksAdded _) = "links"
+    columnLabelHelper (PostedTo Bluesky) = "Bluesky"
+    columnLabelHelper (PostedTo Mastodon) = "Mastodon"
+    columnLabelHelper (PostedTo Twitter) = "Twitter"
     cellHelper :: UpdateDetail -> Text
-    cellHelper ImageAdded = "✓"
     cellHelper (InternalLinksAdded n) = T.pack (show n)
-    cellHelper (PostedTo _) = "✓"
+    cellHelper detail = columnEmojiHelper detail
     buildRowHelper :: [UpdateDetail] -> (Text, Text, [UpdateDetail]) -> Text
     buildRowHelper columns (path, title, details) =
-      let pageLink = "[[" <> path <> "|" <> title <> "]]"
+      let escapedPath = T.replace "|" "\\|" path
+          escapedTitle = T.replace "|" "\\|" title
+          pageLink = "[[" <> escapedPath <> "\\|" <> escapedTitle <> "]]"
           cells = fmap (\column -> maybe "" cellHelper (find (matchesColumn column) details)) columns
       in "| " <> pageLink <> " | " <> T.intercalate " | " cells <> " |"
     computeStatHelper :: [(Text, Text, [UpdateDetail])] -> UpdateDetail -> Int
@@ -299,9 +356,9 @@ addUpdateLinksToReflectionTests = testGroup "addUpdateLinksToReflection"
 
         content <- TIO.readFile (reflDir </> "2026-03-28.md")
         assertBool "has updates header" (T.isInfixOf "## 🔄 Updates" content)
-        assertBool "has page link" (T.isInfixOf "[[ai-blog/post|A Post]]" content)
+        assertBool "has page link" (T.isInfixOf "[[ai-blog/post\\|A Post]]" content)
         assertBool "has table format" (T.isInfixOf "| Page |" content)
-        assertBool "has stats" (T.isInfixOf "📊 1 page" content)
+        assertBool "has stats with legend" (T.isInfixOf "📊 1 page · 1 🖼️ images" content)
 
   , testCase "returns false when details already present in table format" $
       withSystemTempDirectory "daily-updates-test" $ \tmpDir -> do
@@ -338,10 +395,10 @@ addUpdateLinksToReflectionTests = testGroup "addUpdateLinksToReflection"
                [UpdateLink (testRelativePath "page.md") (testTitle "My Page") [PostedTo Bluesky]]
 
         content <- TIO.readFile (reflDir </> "2026-03-28.md")
-        assertBool "has page link" (T.isInfixOf "[[page|My Page]]" content)
+        assertBool "has page link" (T.isInfixOf "[[page\\|My Page]]" content)
         assertBool "has image column" (T.isInfixOf "🖼️" content)
         assertBool "has bluesky column" (T.isInfixOf "🦋" content)
-        assertBool "stats show both" (T.isInfixOf "1 🖼️" content && T.isInfixOf "1 🦋" content)
+        assertBool "stats show both" (T.isInfixOf "1 🖼️ images" content && T.isInfixOf "1 🦋 Bluesky" content)
 
   , testCase "different pages create separate table rows" $
       withSystemTempDirectory "daily-updates-test" $ \tmpDir -> do
@@ -356,7 +413,7 @@ addUpdateLinksToReflectionTests = testGroup "addUpdateLinksToReflection"
                [UpdateLink (testRelativePath "social.md") (testTitle "Social Page") [PostedTo Bluesky]]
 
         content <- TIO.readFile (reflDir </> "2026-03-28.md")
-        assertBool "has image page" (T.isInfixOf "[[img|Image Page]]" content)
-        assertBool "has social page" (T.isInfixOf "[[social|Social Page]]" content)
+        assertBool "has image page" (T.isInfixOf "[[img\\|Image Page]]" content)
+        assertBool "has social page" (T.isInfixOf "[[social\\|Social Page]]" content)
         assertBool "stats show 2 pages" (T.isInfixOf "📊 2 pages" content)
   ]

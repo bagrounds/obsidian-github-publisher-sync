@@ -67,10 +67,22 @@ columnEmoji (PostedTo Bluesky)    = "🦋"
 columnEmoji (PostedTo Mastodon)   = "🐘"
 columnEmoji (PostedTo Twitter)    = "🐦"
 
+columnLabel :: UpdateDetail -> Text
+columnLabel ImageAdded            = "images"
+columnLabel (InternalLinksAdded _) = "links"
+columnLabel (PostedTo Bluesky)    = "Bluesky"
+columnLabel (PostedTo Mastodon)   = "Mastodon"
+columnLabel (PostedTo Twitter)    = "Twitter"
+
 cellText :: UpdateDetail -> Text
-cellText ImageAdded            = "✓"
 cellText (InternalLinksAdded n) = T.pack (show n)
-cellText (PostedTo _)          = "✓"
+cellText detail                 = columnEmoji detail
+
+escapeTablePipe :: Text -> Text
+escapeTablePipe = T.replace "|" "\\|"
+
+unescapeTablePipe :: Text -> Text
+unescapeTablePipe = T.replace "\\|" "|"
 
 -- Serialization for backward compatibility with bullet format
 detailFromText :: Text -> Maybe UpdateDetail
@@ -96,10 +108,11 @@ emojiToColumnRepresentative "🐦"  = Just (PostedTo Twitter)
 emojiToColumnRepresentative _     = Nothing
 
 parseCellToDetail :: UpdateDetail -> Text -> Maybe UpdateDetail
-parseCellToDetail ImageAdded "✓"            = Just ImageAdded
 parseCellToDetail (InternalLinksAdded _) num = InternalLinksAdded <$> readMaybe (T.unpack num)
-parseCellToDetail (PostedTo platform) "✓"   = Just (PostedTo platform)
-parseCellToDetail _ _                       = Nothing
+parseCellToDetail column cell
+  | cell == cellText column = Just column
+  | cell == "✓"             = Just column
+  | otherwise               = Nothing
 
 -- Merging: combine two details of the same column
 mergeDetail :: UpdateDetail -> UpdateDetail -> UpdateDetail
@@ -241,9 +254,13 @@ parseWikiLinkCell cell =
       in case T.breakOn "]]" linkContent of
         (_, "") -> Nothing
         (inner, _) ->
-          case T.breakOn "|" inner of
-            (_, "")    -> Nothing
-            (path, titleRest) -> Just (path, T.drop 1 titleRest)
+          case T.breakOn "\\|" inner of
+            (path, titleRest) | not (T.null titleRest) ->
+              Just (unescapeTablePipe path, unescapeTablePipe (T.drop 2 titleRest))
+            _ ->
+              case T.breakOn "|" inner of
+                (_, "")    -> Nothing
+                (path, titleRest) -> Just (path, T.drop 1 titleRest)
 
 -- Rendering
 activeColumns :: [PageEntry] -> [UpdateDetail]
@@ -269,7 +286,7 @@ buildColumnStat :: [PageEntry] -> UpdateDetail -> Maybe Text
 buildColumnStat entries column =
   let count = computeColumnCount entries column
   in if count > 0
-    then Just (T.pack (show count) <> " " <> columnEmoji column)
+    then Just (T.pack (show count) <> " " <> columnEmoji column <> " " <> columnLabel column)
     else Nothing
 
 buildTable :: [PageEntry] -> Text
@@ -285,7 +302,7 @@ buildTable entries =
 
 buildTableRow :: [UpdateDetail] -> PageEntry -> Text
 buildTableRow columns entry =
-  let pageLink = "[[" <> entryPath entry <> "|" <> entryTitle entry <> "]]"
+  let pageLink = "[[" <> escapeTablePipe (entryPath entry) <> "\\|" <> escapeTablePipe (entryTitle entry) <> "]]"
       cells = fmap (cellForColumn entry) columns
   in "| " <> pageLink <> " | " <> T.intercalate " | " cells <> " |"
 

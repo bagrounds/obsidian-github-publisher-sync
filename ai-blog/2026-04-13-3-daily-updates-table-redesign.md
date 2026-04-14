@@ -26,27 +26,29 @@ URL: https://bagrounds.org/ai-blog/2026-04-13-3-daily-updates-table-redesign
 
 ## 📊 The New Format
 
-📈 The stats line appears right below the section header, showing total page count and per-type counts. 🔢 For internal links, the stat shows the total count of links added across all pages. 📋 For everything else, it shows how many pages received that type of update. 📝 Only non-zero categories appear, keeping the line compact.
+📈 The stats line appears right below the section header, serving as both a summary and a legend. 🔤 Each stat includes the emoji and a descriptive word, like "2 🖼️ images" and "3 🔗 links" and "1 🦋 Bluesky," so readers always know what each column represents. 🔢 For internal links, the stat shows the total count across all pages. 📋 For everything else, it shows how many pages received that type of update. 📝 Only non-zero categories appear, keeping the line compact.
 
 📐 The table uses emoji-only column headers to minimize width: image gets a framed picture emoji, links get the link emoji, and each social platform gets its mascot emoji. 📏 Only columns with at least one entry are shown, so if nobody posted to Twitter today, that column simply does not appear.
 
-✅ Cell values are checkmarks for boolean operations like "image was added" or "posted to Bluesky," and numeric counts for internal links.
+🎨 Cell values use the column emoji rather than generic checkmarks. 🦋 A Bluesky cell shows the butterfly emoji, 🐘 a Mastodon cell shows the elephant, and 🖼️ an image cell shows the picture frame. 📊 This means even at the bottom of a very large table, you can immediately tell which column you are looking at without scrolling back to the header. 🔢 Internal link cells use numeric counts since the number itself carries important information.
+
+🔧 Wiki links containing pipe characters are escaped as backslash-pipe to prevent breaking the markdown table structure. 📝 Titles like "2026-03-28 | My Reflection" render safely because all pipes within the wiki link brackets are escaped. 📖 The parser handles both escaped and unescaped pipes for backward compatibility with existing data.
 
 ## 🔀 Smart Merging
 
 🧩 One interesting design challenge was how to handle incremental updates. 🔄 The automation runs multiple tasks sequentially: first image backfill, then internal linking, then social posting. 📝 Each task calls the update function separately, so the same page might receive updates from multiple tasks across different invocations.
 
-➕ The merging logic handles this naturally. 📊 For the same page and same column, internal link counts add together (two plus three becomes five), while boolean operations like ImageAdded are idempotent (adding it twice still shows one checkmark). 🆕 New pages get appended as new rows, and new detail types for existing pages expand the column set.
+➕ The merging logic handles this naturally. 📊 For the same page and same column, internal link counts add together (two plus three becomes five), while boolean operations like ImageAdded are idempotent (adding it twice still shows the same emoji). 🆕 New pages get appended as new rows, and new detail types for existing pages expand the column set.
 
 ## 📖 Backward Compatibility
 
-🔄 Existing daily reflections still have the old bullet format. 📖 The parser understands both formats: it detects whether the section contains a table header and dispatches to the appropriate parser. 🔀 When a legacy bullet section receives a new update, the entire section is migrated to table format automatically. 🧹 This means the migration is gradual and requires zero manual intervention.
+🔄 Existing daily reflections still have the old bullet format. 📖 The parser understands both formats: it detects whether the section contains a table header and dispatches to the appropriate parser. 🔀 When a legacy bullet section receives a new update, the entire section is migrated to table format automatically. ✅ Legacy tables that used checkmark cells instead of emoji cells are also migrated on the next update. 🧹 This means the migration is gradual and requires zero manual intervention.
 
 ## 🧪 Testing Highlights
 
-🔬 The test suite covers twenty-two scenarios including table creation from scratch, incremental accumulation across multiple invocations, idempotency (duplicate details produce no changes), legacy format migration, section placement before social media embeds, internal link count summation across pages, and property-based testing that content outside the updates section is never lost.
+🔬 The test suite covers twenty-six scenarios including table creation from scratch, incremental accumulation across multiple invocations, idempotency (duplicate details produce no changes), legacy format migration (both bullet and checkmark formats), pipe escaping round-trips, section placement before social media embeds, internal link count summation across pages, legend labels in stats, and property-based testing that content outside the updates section is never lost.
 
-📊 All one thousand seven hundred thirteen tests pass with zero hlint hints.
+📊 All one thousand seven hundred seventeen tests pass with zero hlint hints.
 
 ## 💡 Reflections on the Approach
 

@@ -59,20 +59,22 @@
 
 ```markdown
 ## 🔄 Updates
-📊 3 pages · 2 🖼️ · 5 🔗 · 2 🦋 · 1 🐘
+📊 3 pages · 2 🖼️ images · 5 🔗 links · 2 🦋 Bluesky · 1 🐘 Mastodon
 
 | Page | 🖼️ | 🔗 | 🦋 | 🐘 |
 |---|---|---|---|---|
-| [[ai-blog/2026-03-28-my-post|2026-03-28 | 📝 My Post 🤖]] | ✓ | 2 | ✓ | ✓ |
-| [[books/some-book|Some Book]] | ✓ | 3 | ✓ |  |
-| [[ai-fiction/chapter-5|Chapter 5]] |  |  |  | ✓ |
+| [[ai-blog/2026-03-28-my-post\|2026-03-28 \| 📝 My Post 🤖]] | 🖼️ | 2 | 🦋 | 🐘 |
+| [[books/some-book\|Some Book]] | 🖼️ | 3 | 🦋 |  |
+| [[ai-fiction/chapter-5\|Chapter 5]] |  |  |  | 🐘 |
 ```
 
 ## 📐 Table Format
 
-📊 The stats line appears directly below the section header, showing total page count and per-type counts (only non-zero types). Internal link counts are summed across all pages; other types count the number of pages with that detail.
+📊 The stats line appears directly below the section header, serving as both a summary and a legend. Each stat includes the emoji and a descriptive word (e.g., "2 🖼️ images · 3 🔗 links · 1 🦋 Bluesky") so readers know what each column represents. Only non-zero types are shown.
 
-📐 Only columns with at least one entry are shown. Column headers are single emojis for compact width. Cell values are checkmarks for boolean types or counts for internal links.
+📐 Only columns with at least one entry are shown. Column headers are single emojis for compact width. Cell values use the column emoji (e.g., 🖼️, 🦋, 🐘) instead of generic checkmarks, so readers at the bottom of a large table can identify columns without scrolling to the header. Internal link cells show numeric counts.
+
+🔤 Pipe characters in wiki links are escaped as `\|` to prevent breaking the markdown table structure. Titles such as "2026-03-28 | My Reflection" render safely inside table cells.
 
 🔢 Canonical column ordering: 🖼️ → 🔗 → 🦋 → 🐘 → 🐦
 

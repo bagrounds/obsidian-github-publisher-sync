@@ -6,10 +6,11 @@ title: 🤖 AI Blog
 URL: https://bagrounds.org/ai-blog/index
 Author: "[[bryan-grounds]]"
 backlinks: false
-updated: 2026-04-13T16:00:06-07:00
+updated: 2026-04-13T17:04:12-07:00
 ---
 [Home](../index.md)  
-# 🤖 AI Blog (143)  
+# 🤖 AI Blog (144)  
+- [2026-04-13 | 🧩 Breaking the Internal Linking Monolith 🔗](./2026-04-13-2-breaking-the-internal-linking-monolith.md)  
 - [2026-04-12 | 🖼️ Forward-Compatible Image Backfill & Propagation Delay 🏎️](./2026-04-12-6-forward-compatible-image-backfill.md)  
 - [2026-04-12 | 🕐 Working Entirely in Pacific Time 🤖](./2026-04-12-5-working-entirely-in-pacific-time.md)  
 - [2026-04-12 | 🌑 Dark Mode Social Media Embeds 🤖](./2026-04-12-4-dark-mode-social-media-embeds.md)  

@@ -9,8 +9,9 @@ image_date: 2026-04-13T16:35:58Z
 image_model: "@cf/black-forest-labs/flux-1-schnell"
 image_prompt: A vibrant, top-down isometric illustration of a bustling urban park integrated into a modern city grid. The scene features a diverse mix of people—joggers on winding paths, families picnicking on lush lawns, and children playing near a central fountain. The park is densely planted with varied, mature trees and colorful flower beds, acting as a green lung amidst geometric, minimalist city blocks. A small community garden with raised beds is visible in one corner, and a blue, naturalized stream curves through the landscape, demonstrating water management. The color palette is bright and inviting, dominated by deep greens, earthy tones, and soft sunlight that creates long, peaceful shadows. The style is clean, modern, and vector-inspired, emphasizing the harmony between structured urban planning and flourishing, accessible nature.
 link_analysis_model: gemini-3.1-flash-lite-preview
-link_analysis_time: 2026-04-13T00:00:00Z
+link_analysis_time: 2026-04-14T00:00:00Z
 force_analyze_links: false
+link_analysis_version: "2"
 ---
 [Home](../index.md) > [🏛️ Systems for Public Good](./index.md) | [⏮️](./2026-04-12-navigating-our-collective-well-being-a-week-of-foundational-investments.md) [⏭️](./2026-04-14-the-invisible-infrastructure-clean-air-and-water-as-foundational-public-goods.md)  
 # 2026-04-13 | 🏛️ 🌳 Nature's Embrace: Public Parks as a Universal Right 🏛️  

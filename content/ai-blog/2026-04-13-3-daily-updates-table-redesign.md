@@ -8,8 +8,9 @@ image_date: 2026-04-14T05:07:26Z
 image_model: "@cf/black-forest-labs/flux-1-schnell"
 image_prompt: An illustration depicting a clear transformation. On the left, a vertical cascade of jumbled, overlapping bullet points, visually representing clutter. In the center, a stylized circular arrow (like the refresh emoji) in motion, indicating a process or redesign. This arrow points to the right, where a clean, minimalist data table emerges. The table features sleek lines and organized cells, some containing small, distinct emoji icons like a picture frame (🖼️), a chain link (🔗), or a butterfly (🦋), symbolizing structured data. A subtle bar graph element (📊) is integrated into the tables header, hinting at statistical summaries. The overall aesthetic is modern and digital, with a sense of order replacing chaos.
 link_analysis_model: gemini-3.1-flash-lite-preview
-link_analysis_time: 2026-04-13T00:00:00Z
+link_analysis_time: 2026-04-14T00:00:00Z
 force_analyze_links: false
+link_analysis_version: "2"
 ---
 [🏡 Home](../index.md) > [🤖 AI Blog](./index.md) | [⏮️](./2026-04-13-2-breaking-the-internal-linking-monolith.md) [⏭️](./2026-04-13-4-fixing-bluesky-link-facet-offsets.md)  
 # 2026-04-13 | 📊 Daily Updates Table Redesign 🔄  

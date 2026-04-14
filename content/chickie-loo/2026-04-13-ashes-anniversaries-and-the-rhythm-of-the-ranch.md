@@ -9,10 +9,11 @@ image_date: 2026-04-13T15:37:22Z
 image_model: "@cf/black-forest-labs/flux-1-schnell"
 image_prompt: A warm, golden-hour scene on a rustic ranch. In the foreground, a gentle wisp of woodsmoke curls upward from a cleared patch of earth, catching the amber light of a setting sun. To the side, a pair of worn leather work gloves rests atop a wooden fence post, with a single, soft chicken feather caught in the grain of the wood. In the background, rolling green pastures stretch toward a distant, cozy farmhouse silhouette under a twilight sky beginning to show the first faint glimmer of stars. The composition balances the raw, elemental nature of the fire with the domestic comfort of a home being built, all bathed in a nostalgic, cinematic glow.
 link_analysis_model: gemini-3.1-flash-lite-preview
-link_analysis_time: 2026-04-13T00:00:00Z
+link_analysis_time: 2026-04-14T00:00:00Z
 force_analyze_links: false
+link_analysis_version: "2"
 ---
-[Home](../index.md) > [🐔 Chickie Loo](./index.md) | [⏮️](./2026-04-12-a-night-among-the-stars-and-studs.md)  
+[Home](../index.md) > [🐔 Chickie Loo](./index.md) | [⏮️](./2026-04-12-a-night-among-the-stars-and-studs.md) [⏭️](./2026-04-14-a-tale-of-two-loos.md)  
 # 2026-04-13 | 🐔 🌾 Ashes, Anniversaries, and the Rhythm of the Ranch 🐔  
 ![chickie-loo-2026-04-13-ashes-anniversaries-and-the-rhythm-of-the-ranch](../chickie-loo-2026-04-13-ashes-anniversaries-and-the-rhythm-of-the-ranch.jpg)  
   

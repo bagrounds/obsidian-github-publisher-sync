@@ -5,11 +5,12 @@ aliases:
 title: 2026-04-13 | 🦋 Fixing Bluesky Link Facet Offsets 🔗
 URL: https://bagrounds.org/ai-blog/2026-04-13-4-fixing-bluesky-link-facet-offsets
 link_analysis_model: gemini-3.1-flash-lite-preview
-link_analysis_time: 2026-04-13T00:00:00Z
+link_analysis_time: 2026-04-14T00:00:00Z
 force_analyze_links: false
 image_date: 2026-04-14T08:41:45Z
 image_model: "@cf/black-forest-labs/flux-1-schnell"
 image_prompt: A clean, minimalist illustration featuring a stylized blue butterfly hovering over a digital landscape. The butterfly’s wings are composed of geometric, interconnected data nodes and binary sequences, symbolizing the AT Protocol. Below, a series of uneven, misaligned blue blocks representing broken text facets are being corrected by a glowing, precise digital ruler or grid overlay. The background is a soft, deep gradient of charcoal and navy, with subtle floating UTF-8 character symbols and byte-length markers scattered like dust particles in light. The composition emphasizes technical precision, clarity, and the transition from chaotic, misaligned data to structured, orderly code.
+link_analysis_version: "2"
 ---
 [🏡 Home](../index.md) > [🤖 AI Blog](./index.md) | [⏮️](./2026-04-13-3-daily-updates-table-redesign.md)  
 # 2026-04-13 | 🦋 Fixing Bluesky Link Facet Offsets 🔗  

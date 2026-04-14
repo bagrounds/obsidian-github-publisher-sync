@@ -9,9 +9,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_version: "2"
 link_analysis_time: 2026-04-14T00:00:00Z
 force_analyze_links: false
+image_date: 2026-04-14T18:32:17Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A vibrant, layered illustration. The bottom half features a deep, clear aquatic blue, subtly revealing a network of interconnected, glowing pipes and filtration elements beneath the surface. This transitions smoothly into the top half, a lighter, ethereal sky blue with gentle, swirling currents of fresh air. Delicate, almost invisible, data streams or energy lines subtly weave through both air and water, hinting at monitoring and protection systems. The overall image evokes purity, essential flow, and a sense of calm, fundamental well-being, with a soft, inviting glow emanating from within the elements.
 ---
 [Home](../index.md) > [🏛️ Systems for Public Good](./index.md) | [⏮️](./2026-04-13-nature-s-embrace-public-parks-as-a-universal-right.md)  
 # 2026-04-14 | 🏛️ 💧 The Invisible Infrastructure: Clean Air and Water as Foundational Public Goods 🏛️  
+![systems-for-public-good-2026-04-14-the-invisible-infrastructure-clean-air-and-water-as-foundational-public-goods](../systems-for-public-good-2026-04-14-the-invisible-infrastructure-clean-air-and-water-as-foundational-public-goods.jpg)  
   
 🌱 Our recent explorations have illuminated how foundational public goods—from nurturing public parks and green spaces to cultivating universal education and robust public health systems—are essential for expanding positive freedoms and building "real wealth" within our communities. 🧭 Each discussion has reinforced the idea that we are all in this together, and that strategic public investment is not merely an expenditure, but a powerful mechanism for collective well-being. Today, we turn to the most fundamental elements of all: **clean air and water**, examining how robust public policies and infrastructure are essential for protecting these basic requirements for life and health, and addressing the urgent questions about their funding and equitable distribution.  
   

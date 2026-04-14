@@ -9,9 +9,10 @@ image_date: 2026-04-13T13:42:34Z
 image_model: "@cf/black-forest-labs/flux-1-schnell"
 image_prompt: "An intricate, double-exposed digital illustration. The primary silhouette is a human head in profile, composed of shifting, translucent layers of a globe and interconnected digital data streams. Inside the silhouette, a vibrant contrast plays out: one side features a calm, serene lunar landscape and glowing celestial nebulae, while the other side shows a chaotic, stormy Earth filled with jagged tectonic lines and swirling weather patterns. Flowing through the center are golden geometric paths resembling circuitry that dissolve into desert sand at the bottom of the frame, representing the shifting sands. The color palette is a moody blend of deep midnight blues, electric cyan, and warm, dusty amber, creating an atmosphere of sophisticated, high-stakes global navigation."
 link_analysis_model: gemini-3.1-flash-lite-preview
-link_analysis_time: 2026-04-13T00:00:00Z
+link_analysis_time: 2026-04-14T00:00:00Z
 force_analyze_links: false
-updated: 2026-04-14T15:36:17
+updated: 2026-04-14T17:42:55
+link_analysis_version: "2"
 ---
 [Home](../index.md) > [📰 The Noise](./index.md) | [⏮️](./2026-04-12-global-currents-shifting-sands.md) [⏭️](./2026-04-14-global-currents-shifting-sands.md)  
 # 2026-04-13 | 📰 🌍 Global Currents, Shifting Sands 🌐 📰  

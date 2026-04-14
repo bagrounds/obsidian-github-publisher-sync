@@ -9,6 +9,10 @@ Platform:
 Channel: Simple Lucas
 tags:
 youtube: https://youtu.be/NZD5IFpyDcE
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_time: 2026-04-14T00:00:00Z
+force_analyze_links: false
+link_analysis_version: "2"
 ---
 [Home](../index.md) > [Videos](./index.md)  
 # 💡🤏✅ I Tried the World's Simplest Productivity Trick (it worked)  
@@ -29,7 +33,7 @@ youtube: https://youtu.be/NZD5IFpyDcE
   
 ## 🤔 Evaluation  
   
-* ⚖️ The protocol presented aligns with the concept of Deep Work by Cal Newport, which emphasizes the necessity of distraction-free concentration for cognitively demanding tasks.  
+* ⚖️ The protocol presented aligns with the concept of [🤿💼 Deep Work: Rules for Focused Success in a Distracted World](../books/deep-work.md) by Cal Newport, which emphasizes the necessity of distraction-free concentration for cognitively demanding tasks.  
 * 🔬 While the video relies on the dopamine-focused principles of Ryan Doris, other neuroscientific perspectives, such as those in Peak Mind by Amishi Jha and published by HarperCollins, suggest that mindfulness and proactive attention training are more sustainable than total digital abstinence.  
 * 📉 The claim that wall staring acts as a magic trick for flow state is a personal anecdote; however, the American Psychological Association notes that brief mental breaks can significantly improve focus on a task for long periods.  
 * 🔍 Topics to explore for better understanding include the long-term sustainability of such a restrictive protocol and the specific neurological effects of sensory deprivation on task-switching costs.  
@@ -55,7 +59,7 @@ youtube: https://youtu.be/NZD5IFpyDcE
 * 📘 Stolen Focus by Johann Hari and published by Crown Publishing Group investigates why our attention span is failing and how to reclaim it from digital interruptions.  
   
 ### 🆚 Contrasting  
-* 📘 The Shallows by Nicholas Carr and published by W. W. Norton & Company examines how the internet is physically rewiring our brains for scattershot thinking rather than deep focus.  
+* 📘 [📱🧠 The Shallows: What the Internet Is Doing to Our Brains](../books/the-shallows-what-the-internet-is-doing-to-our-brains.md) by Nicholas Carr and published by W. W. Norton & Company examines how the internet is physically rewiring our brains for scattershot thinking rather than deep focus.  
 * 📘 Digital Minimalism by Cal Newport and published by Portfolio argues for a philosophy of technology use that prioritizes high-value activities over constant connectivity.  
   
 ### 🎨 Creatively Related  

@@ -10,8 +10,9 @@ Channel: More Perfect Union
 tags:
 youtube: https://youtu.be/fvNw8o3LkJo
 link_analysis_model: gemini-3.1-flash-lite-preview
-link_analysis_time: 2026-04-13T00:00:00Z
+link_analysis_time: 2026-04-14T00:00:00Z
 force_analyze_links: false
+link_analysis_version: "2"
 ---
 [Home](../index.md) > [Videos](./index.md)  
 # 💰⚖️💡➡️ One State Found a Way to Make Billionaires Pay. Your State Could Be Next.  

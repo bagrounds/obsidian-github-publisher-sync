@@ -42,9 +42,10 @@
 
 ## 📖 Subtitle-Aware Book Matching
 
-📋 Many book titles include subtitles separated by a colon-space (e.g., "Domain-Driven Design: Tackling Complexity in the Heart of Software").
-🔍 Content authors often reference books by their main title only (e.g., just "Domain-Driven Design").
-🧠 The `extractMainTitle` function extracts the text before the first `: ` separator, provided it meets minimum length and word count requirements.
+📋 Many book titles include subtitles separated by a colon-space or a dash (e.g., "Domain-Driven Design: Tackling Complexity in the Heart of Software" or "System Design Interview - An Insider's Guide").
+🔍 Content authors often reference books by their main title only (e.g., just "Domain-Driven Design" or "Refactoring" or "Antifragile").
+🧠 The `extractMainTitle` function extracts the text before the first subtitle separator, trying `: ` first, then falling back to ` - `. The extracted main title must be at least 8 characters long.
+🛡️ Single-word main titles like "Antifragile", "Refactoring", and "Debugging" are supported because the Gemini AI identification layer provides false-positive protection, ensuring only genuinely referenced books are linked.
 🔗 `findLinkCandidates` computes main titles on-the-fly (no caching in the type), tries matching the full `plainTitle` first, falling back to the extracted main title when the full title is not found in the text.
 📖 Wikilinks always use the full title from the book's frontmatter, even when matched via the shorter main title.
 🤖 The Gemini prompt lists books with "also known as" annotations for entries with a main title variant, helping the AI recognize partial references.
@@ -129,19 +130,17 @@
 
 ## 🧪 Testing
 
-🔬 Tests in `haskell/test/Automation/InternalLinkingTest.hs` with 160+ test cases across 36+ suites covering:
+🔬 Tests across `haskell/test/Automation/InternalLinkingTest.hs` and `haskell/test/Automation/InternalLinking/` covering:
 - 🧹 `stripEmojis`: emoji removal, preservation of non-emoji text, edge cases
 - 🛡️ `escapeRegex`: special character escaping
 - 🔗 `formatWikilink`: wikilink formatting from content entries
 - 📋 `extractContext`: context window extraction around match positions
-- 📖 `extractMainTitle`: subtitle extraction, minimum length/word requirements, edge cases
+- 📖 `extractMainTitle`: colon-space separator, dash separator, single-word main titles, minimum length requirement, edge cases
 - 📄 `parseFrontmatter`: key-value parsing, quoted values, missing markers
 - 📇 `buildContentIndex`: directory scanning, title extraction, filtering
 - 🔗 `extractLinkedPaths`: wikilink and markdown link extraction
 - 🔍 `findMostRecentReflection`: date-based file discovery
 - 🧭 `bfsTraversal`: link-following traversal across directories
 - 🛡️ `maskProtectedRegions`: frontmatter, code, link, heading masking
-- 📖 Subtitle matching: on-the-fly main title extraction, full title preference, full title in wikilink, protected region respect
-- 🤖 `buildIdentificationPrompt`: also-known-as annotations for subtitle entries
-
-🔬 Haskell tests in `haskell/test/Automation/InternalLinkingTest.hs` with comprehensive coverage.
+- 📖 Subtitle matching: single-word main titles, dash-separated subtitles, full title preference, full title in wikilink, protected region respect
+- 🤖 `buildIdentificationPrompt`: also-known-as annotations for subtitle entries, single-word main titles, dash-separated subtitles

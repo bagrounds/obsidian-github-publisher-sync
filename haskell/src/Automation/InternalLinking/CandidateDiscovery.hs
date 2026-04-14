@@ -76,17 +76,17 @@ extractContext content pos matchLen =
 
 extractMainTitle :: Text -> Maybe Text
 extractMainTitle title =
-  tryColonSeparator title <|> tryDashSeparator title
+  splitOnColonSpace title <|> splitOnSurroundedDash title
   where
-    tryColonSeparator :: Text -> Maybe Text
-    tryColonSeparator t =
+    splitOnColonSpace :: Text -> Maybe Text
+    splitOnColonSpace t =
       case T.breakOn ": " t of
         (main, rest)
           | T.null rest                  -> Nothing
           | T.length main < minTitleLength -> Nothing
           | otherwise                     -> Just main
-    tryDashSeparator :: Text -> Maybe Text
-    tryDashSeparator t =
+    splitOnSurroundedDash :: Text -> Maybe Text
+    splitOnSurroundedDash t =
       case T.breakOn " - " t of
         (main, rest)
           | T.null rest                  -> Nothing

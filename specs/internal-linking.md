@@ -128,6 +128,20 @@
 | `recordLinkAnalysis(filePath, model, timestamp)` | 📋 Record analysis metadata in frontmatter |
 | `run(config)` | 🔄 Orchestrate full pipeline: index, BFS, process, report |
 
+## 📊 Logging
+
+📋 The linking pipeline logs at two levels: per-file decisions and a run-level summary.
+
+🔍 Per-file logging (only for files not already analyzed):
+- ⏭️ No eligible books: all books are already linked or file is a self-reference
+- 🤖 Checking N eligible books with Gemini: file is being analyzed
+- ❌ Gemini error: API call failed (includes error message)
+- ⏭️ Gemini found no book references: AI determined no books are genuinely referenced
+- ⏭️ Gemini identified N books but no linkable positions found: AI found references but regex could not locate text positions (e.g., protected by masking)
+- ✏️ N links applied: successful link insertion
+
+📊 Run-level summary includes: total files visited, already analyzed count, files checked with Gemini, files modified, and total links added.
+
 ## 🧪 Testing
 
 🔬 Tests across `haskell/test/Automation/InternalLinkingTest.hs` and `haskell/test/Automation/InternalLinking/` covering:

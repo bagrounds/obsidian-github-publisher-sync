@@ -169,7 +169,7 @@ processFile manager apiKey model filePath index = do
       fileRelativePath = makeRelPathFromContentDir contentDir filePath
   case mkRelativePath (T.pack fileRelativePath) of
     Left reason -> do
-      putStrLn $ "  ⚠️  Skipping " <> filePath <> ": " <> T.unpack reason
+      putStrLn $ "  ⚠️  Skipping " <> fileRelativePath <> ": invalid path: " <> T.unpack reason
       pure Nothing
     Right relPath -> do
       content <- TIO.readFile filePath
@@ -188,6 +188,7 @@ processFile manager apiKey model filePath index = do
                 index
           case eligibleBooks of
             [] -> do
+              putStrLn $ "  ⏭️  " <> fileRelativePath <> ": no eligible books (all already linked or self)"
               timestamp <- nowIso
               recordLinkAnalysis filePath model timestamp
               pure $ Just FileResult
@@ -197,23 +198,28 @@ processFile manager apiKey model filePath index = do
                 , usedInference = False
                 }
             _ -> do
+              putStrLn $ "  🤖 " <> fileRelativePath <> ": checking " <> show (length eligibleBooks) <> " eligible books with Gemini"
               geminiResult <- identifyBooksWithGemini manager apiKey model body eligibleBooks
               timestamp <- nowIso
               recordLinkAnalysis filePath model timestamp
               case geminiResult of
-                Left _err -> pure $ Just FileResult
-                  { relativePath = relPath
-                  , modified     = False
-                  , linksAdded   = 0
-                  , usedInference = True
-                  }
+                Left err -> do
+                  putStrLn $ "  ❌ " <> fileRelativePath <> ": Gemini error: " <> T.unpack err
+                  pure $ Just FileResult
+                    { relativePath = relPath
+                    , modified     = False
+                    , linksAdded   = 0
+                    , usedInference = True
+                    }
                 Right identifiedPaths
-                  | null identifiedPaths -> pure $ Just FileResult
-                      { relativePath = relPath
-                      , modified     = False
-                      , linksAdded   = 0
-                      , usedInference = True
-                      }
+                  | null identifiedPaths -> do
+                      putStrLn $ "  ⏭️  " <> fileRelativePath <> ": Gemini found no book references"
+                      pure $ Just FileResult
+                        { relativePath = relPath
+                        , modified     = False
+                        , linksAdded   = 0
+                        , usedInference = True
+                        }
                   | otherwise -> do
                       let identifiedSet = Set.fromList identifiedPaths
                       contentAfterFm <- TIO.readFile filePath
@@ -221,12 +227,15 @@ processFile manager apiKey model filePath index = do
                           identifiedIndex = filter (\e -> Set.member (unRelativePath (CD.relativePath e)) identifiedSet) index
                           candidates      = CD.findLinkCandidates identifiedIndex contentAfterFm masked relPath
                       case candidates of
-                        [] -> pure $ Just FileResult
-                          { relativePath = relPath
-                          , modified     = False
-                          , linksAdded   = 0
-                          , usedInference = True
-                          }
+                        [] -> do
+                          putStrLn $ "  ⏭️  " <> fileRelativePath <> ": Gemini identified " <> show (length identifiedPaths)
+                            <> " book(s) but no linkable positions found"
+                          pure $ Just FileResult
+                            { relativePath = relPath
+                            , modified     = False
+                            , linksAdded   = 0
+                            , usedInference = True
+                            }
                         _  -> do
                           let validations = replicate (length candidates) True
                               newContent  = applyReplacements contentAfterFm candidates validations
@@ -263,9 +272,11 @@ run manager model contentDir = do
   apiKey <- lookupSecret
   results <- processFiles manager apiKey model contentDir index filesToVisit
 
-  let modifiedCount  = length $ filter modified results
-      totalLinks     = sum $ fmap linksAdded results
-      skippedCount   = length $ filter (\r -> not (modified r) && linksAdded r == 0) results
+  let modifiedCount      = length $ filter modified results
+      totalLinks         = sum $ fmap linksAdded results
+      alreadyAnalyzedCount = length $ filter (\r -> not (modified r) && not (usedInference r)) results
+      inferenceCount     = length $ filter usedInference results
+      skippedCount       = length $ filter (\r -> not (modified r) && linksAdded r == 0) results
 
   let result = LinkingResult
         { filesVisited    = length filesToVisit
@@ -276,8 +287,9 @@ run manager model contentDir = do
         }
 
   putStrLn $ "  🏁 Complete: " <> show (filesVisited result) <> " visited, "
-    <> show modifiedCount <> " modified, " <> show totalLinks <> " links added, "
-    <> show skippedCount <> " skipped"
+    <> show alreadyAnalyzedCount <> " already analyzed, "
+    <> show inferenceCount <> " checked with Gemini, "
+    <> show modifiedCount <> " modified, " <> show totalLinks <> " links added"
 
   pure result
 

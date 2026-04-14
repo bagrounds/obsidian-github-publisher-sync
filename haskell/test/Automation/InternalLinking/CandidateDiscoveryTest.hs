@@ -113,8 +113,16 @@ extractMainTitleTests = testGroup "extractMainTitle"
       assertEqual "" Nothing (extractMainTitle "Thinking, Fast and Slow")
   , testCase "returns Nothing when main title too short" $
       assertEqual "" Nothing (extractMainTitle "AI 2041: Ten Visions for Our Future")
-  , testCase "returns Nothing when main title has fewer than 2 words" $
-      assertEqual "" Nothing (extractMainTitle "Abundance: The Inner Path to Wealth")
+  , testCase "extracts single-word main title" $
+      assertEqual "" (Just "Abundance") (extractMainTitle "Abundance: The Inner Path to Wealth")
+  , testCase "extracts single-word main title for distinctive books" $
+      assertEqual "" (Just "Antifragile") (extractMainTitle "Antifragile: Things That Gain from Disorder")
+  , testCase "extracts main title from dash-separated subtitle" $
+      assertEqual "" (Just "System Design Interview")
+        (extractMainTitle "System Design Interview - An Insider's Guide")
+  , testCase "prefers colon separator over dash separator" $
+      assertEqual "" (Just "Factfulness")
+        (extractMainTitle "Factfulness: Ten Reasons We're Wrong About the World - and Why Things Are Better Than You Think")
   , testCase "returns Nothing for colon without space" $
       assertEqual "" Nothing (extractMainTitle "Title:NoSpace")
   ]
@@ -186,6 +194,26 @@ findLinkCandidatesTests = testGroup "findLinkCandidates"
           content = "I read Thinking, Fast and Slow twice"
           candidates = findLinkCandidates [entry1, entry2] content content (testRelativePath "reflections/r.md")
       in assertEqual "only one candidate per path" 1 (length candidates)
+  , testCase "matches single-word main title" $
+      let debugEntry = ContentEntry
+            (testRelativePath "books/debugging.md")
+            (testTitle "Debugging: The 9 Indispensable Rules")
+            (testTitle "Debugging: The 9 Indispensable Rules")
+          content = "Debugging by David J. Agans is a classic"
+          candidates = findLinkCandidates [debugEntry] content content (testRelativePath "reflections/r.md")
+      in do
+          assertEqual "one candidate" 1 (length candidates)
+          case candidates of
+            (c:_) -> assertEqual "matched text" "Debugging" (matchedText c)
+            [] -> assertBool "should have candidates" False
+  , testCase "matches dash-separated subtitle" $
+      let dashEntry = ContentEntry
+            (testRelativePath "books/system-design.md")
+            (testTitle "System Design Interview - An Insider's Guide")
+            (testTitle "System Design Interview - An Insider's Guide")
+          content = "I used System Design Interview to prepare"
+          candidates = findLinkCandidates [dashEntry] content content (testRelativePath "reflections/r.md")
+      in assertEqual "one candidate" 1 (length candidates)
   ]
 
 propertyTests :: TestTree

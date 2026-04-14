@@ -17,6 +17,7 @@ import Automation.Frontmatter (parseFrontmatter)
 import Automation.InternalLinking.LinkExtraction (hasSuffix)
 import Automation.Text (stripEmojis)
 import Automation.Types (RelativePath, unRelativePath, mkRelativePath, Title, unTitle, mkTitle)
+import Control.Applicative ((<|>))
 import Data.List (sortBy)
 import qualified Data.Map.Strict as Map
 import Data.Maybe (catMaybes, fromMaybe, maybeToList)
@@ -74,16 +75,23 @@ extractContext content pos matchLen =
   in prefix <> slice <> suffix
 
 extractMainTitle :: Text -> Maybe Text
-extractMainTitle plainTitle =
-  case T.breakOn ": " plainTitle of
-    (main, rest)
-      | T.null rest        -> Nothing
-      | T.length main < minTitleLength -> Nothing
-      | countWordsT main < 2 -> Nothing
-      | otherwise           -> Just main
+extractMainTitle title =
+  splitOnColonSpace title <|> splitOnSurroundedDash title
   where
-    countWordsT :: Text -> Int
-    countWordsT t = length $ filter (not . T.null) $ T.split (\c -> c == ' ' || c == '-') t
+    splitOnColonSpace :: Text -> Maybe Text
+    splitOnColonSpace t =
+      case T.breakOn ": " t of
+        (main, rest)
+          | T.null rest                  -> Nothing
+          | T.length main < minTitleLength -> Nothing
+          | otherwise                     -> Just main
+    splitOnSurroundedDash :: Text -> Maybe Text
+    splitOnSurroundedDash t =
+      case T.breakOn " - " t of
+        (main, rest)
+          | T.null rest                  -> Nothing
+          | T.length main < minTitleLength -> Nothing
+          | otherwise                     -> Just main
 
 contentAlreadyLinksTo :: Text -> ContentEntry -> Bool
 contentAlreadyLinksTo content contentEntry =

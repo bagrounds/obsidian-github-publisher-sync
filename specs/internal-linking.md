@@ -42,9 +42,10 @@
 
 ## 📖 Subtitle-Aware Book Matching
 
-📋 Many book titles include subtitles separated by a colon-space (e.g., "Domain-Driven Design: Tackling Complexity in the Heart of Software").
-🔍 Content authors often reference books by their main title only (e.g., just "Domain-Driven Design").
-🧠 The `extractMainTitle` function extracts the text before the first `: ` separator, provided it meets minimum length and word count requirements.
+📋 Many book titles include subtitles separated by a colon-space or a dash (e.g., "Domain-Driven Design: Tackling Complexity in the Heart of Software" or "System Design Interview - An Insider's Guide").
+🔍 Content authors often reference books by their main title only (e.g., just "Domain-Driven Design" or "Refactoring" or "Antifragile").
+🧠 The `extractMainTitle` function extracts the text before the first subtitle separator, trying `: ` first, then falling back to ` - `. The extracted main title must be at least 8 characters long.
+🛡️ Single-word main titles like "Antifragile", "Refactoring", and "Debugging" are supported because the Gemini AI identification layer provides false-positive protection, ensuring only genuinely referenced books are linked.
 🔗 `findLinkCandidates` computes main titles on-the-fly (no caching in the type), tries matching the full `plainTitle` first, falling back to the extracted main title when the full title is not found in the text.
 📖 Wikilinks always use the full title from the book's frontmatter, even when matched via the shorter main title.
 🤖 The Gemini prompt lists books with "also known as" annotations for entries with a main title variant, helping the AI recognize partial references.
@@ -64,11 +65,13 @@
 🔗 Only books confirmed by Gemini have their wikilinks inserted at deterministic text positions.
 💥 A `QuotaExhaustedError` is thrown when the daily API quota is exhausted, halting the entire pipeline gracefully.
 
-## 🛡️ Skip Tracking
+## 🛡️ Skip Tracking and Algorithm Versioning
 
-📋 Each processed file gets frontmatter fields recording the analysis model and timestamp.
-🔁 The `alreadyAnalyzed` function checks for these fields to skip previously processed files.
-🔓 Setting `force_analyze_links: true` in frontmatter overrides the skip check for reprocessing.
+📋 Each processed file gets frontmatter fields recording the analysis model, timestamp, and algorithm version.
+🔢 The `linkingAlgorithmVersion` constant tracks the current algorithm version. When the linking algorithm changes meaningfully (new matching rules, separator support, etc.), this version is bumped.
+🔁 The `alreadyAnalyzed` function compares the stored `link_analysis_version` in frontmatter against the current `linkingAlgorithmVersion`. Files analyzed with an older version are automatically re-analyzed.
+🔓 Setting `force_analyze_links: true` in frontmatter overrides the version check for manual reprocessing.
+📝 Frontmatter fields written by `recordLinkAnalysis`: `link_analysis_model`, `link_analysis_version`, `link_analysis_time`, `force_analyze_links`.
 
 ## 📏 Per-Run Limits
 
@@ -107,7 +110,7 @@
 | `extractJsonArray(text)` | 📋 Extract JSON array from Gemini response text |
 | `generateDiff(original, modified)` | 📊 Generate minimal diff showing changed lines |
 | `applyReplacements(content, candidates, validations)` | ✏️ Apply wikilink replacements end-to-start |
-| `alreadyAnalyzed(content)` | 🛡️ Check if file was previously analyzed |
+| `alreadyAnalyzed(version, content)` | 🛡️ Check if file was analyzed with the current algorithm version |
 | `extractBody(content)` | 📄 Extract body text after frontmatter |
 | `isRateLimitError(error)` | 🚦 Detect rate-limit errors |
 | `isDailyQuotaError(error)` | 💥 Detect daily quota exhaustion |
@@ -127,21 +130,33 @@
 | `recordLinkAnalysis(filePath, model, timestamp)` | 📋 Record analysis metadata in frontmatter |
 | `run(config)` | 🔄 Orchestrate full pipeline: index, BFS, process, report |
 
+## 📊 Logging
+
+📋 The linking pipeline logs at two levels: per-file decisions and a run-level summary.
+
+🔍 Per-file logging (only for files not already analyzed):
+- ⏭️ No eligible books: all books are already linked or file is a self-reference
+- 🤖 Checking N eligible books with Gemini: file is being analyzed
+- ❌ Gemini error: API call failed (includes error message)
+- ⏭️ Gemini found no book references: AI determined no books are genuinely referenced
+- ⏭️ Gemini identified N books but no linkable positions found: AI found references but regex could not locate text positions (e.g., protected by masking)
+- ✏️ N links applied: successful link insertion
+
+📊 Run-level summary includes: total files visited, already analyzed count, files checked with Gemini, files modified, and total links added.
+
 ## 🧪 Testing
 
-🔬 Tests in `haskell/test/Automation/InternalLinkingTest.hs` with 160+ test cases across 36+ suites covering:
+🔬 Tests across `haskell/test/Automation/InternalLinkingTest.hs` and `haskell/test/Automation/InternalLinking/` covering:
 - 🧹 `stripEmojis`: emoji removal, preservation of non-emoji text, edge cases
 - 🛡️ `escapeRegex`: special character escaping
 - 🔗 `formatWikilink`: wikilink formatting from content entries
 - 📋 `extractContext`: context window extraction around match positions
-- 📖 `extractMainTitle`: subtitle extraction, minimum length/word requirements, edge cases
+- 📖 `extractMainTitle`: colon-space separator, dash separator, single-word main titles, minimum length requirement, edge cases
 - 📄 `parseFrontmatter`: key-value parsing, quoted values, missing markers
 - 📇 `buildContentIndex`: directory scanning, title extraction, filtering
 - 🔗 `extractLinkedPaths`: wikilink and markdown link extraction
 - 🔍 `findMostRecentReflection`: date-based file discovery
 - 🧭 `bfsTraversal`: link-following traversal across directories
 - 🛡️ `maskProtectedRegions`: frontmatter, code, link, heading masking
-- 📖 Subtitle matching: on-the-fly main title extraction, full title preference, full title in wikilink, protected region respect
-- 🤖 `buildIdentificationPrompt`: also-known-as annotations for subtitle entries
-
-🔬 Haskell tests in `haskell/test/Automation/InternalLinkingTest.hs` with comprehensive coverage.
+- 📖 Subtitle matching: single-word main titles, dash-separated subtitles, full title preference, full title in wikilink, protected region respect
+- 🤖 `buildIdentificationPrompt`: also-known-as annotations for subtitle entries, single-word main titles, dash-separated subtitles

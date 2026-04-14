@@ -4,6 +4,7 @@ module Automation.InternalLinking
   ( FileResult (..)
   , LinkingResult (..)
   , defaultLinkingModel
+  , linkingAlgorithmVersion
   , indexableDirs
   , traversableDirs
   , extractBody
@@ -44,6 +45,9 @@ import System.FilePath (takeDirectory, (</>))
 defaultLinkingModel :: Gemini.Model
 defaultLinkingModel = Gemini.Gemini31FlashLite
 
+linkingAlgorithmVersion :: Int
+linkingAlgorithmVersion = 2
+
 indexableDirs :: [Text]
 indexableDirs =
   [ "books", "articles", "topics", "software", "people"
@@ -83,12 +87,12 @@ extractBody content =
             (_, _ : bodyLs)  -> T.intercalate "\n" bodyLs
     _ -> content
 
-alreadyAnalyzed :: Text -> Bool
-alreadyAnalyzed content =
+alreadyAnalyzed :: Int -> Text -> Bool
+alreadyAnalyzed currentVersion content =
   let (fm, _) = parseFrontmatter content
   in case Map.lookup "force_analyze_links" fm of
     Just "true" -> False
-    _           -> Map.member "link_analysis_model" fm
+    _           -> Map.lookup "link_analysis_version" fm == Just (T.pack (show currentVersion))
 
 
 applyReplacements :: Text -> [CD.LinkCandidate] -> [Bool] -> Text
@@ -158,6 +162,7 @@ recordLinkAnalysis :: FilePath -> Gemini.Model -> Text -> IO ()
 recordLinkAnalysis filePath model timestamp =
   updateFrontmatterFields filePath
     [ ("link_analysis_model", YamlText (Gemini.modelToText model))
+    , ("link_analysis_version", YamlText (T.pack (show linkingAlgorithmVersion)))
     , ("link_analysis_time", YamlText timestamp)
     , ("force_analyze_links", YamlBool False)
     ]
@@ -169,11 +174,11 @@ processFile manager apiKey model filePath index = do
       fileRelativePath = makeRelPathFromContentDir contentDir filePath
   case mkRelativePath (T.pack fileRelativePath) of
     Left reason -> do
-      putStrLn $ "  ⚠️  Skipping " <> filePath <> ": " <> T.unpack reason
+      putStrLn $ "  ⚠️  Skipping " <> fileRelativePath <> ": invalid path: " <> T.unpack reason
       pure Nothing
     Right relPath -> do
       content <- TIO.readFile filePath
-      if alreadyAnalyzed content
+      if alreadyAnalyzed linkingAlgorithmVersion content
         then pure $ Just FileResult
           { relativePath = relPath
           , modified     = False
@@ -188,6 +193,7 @@ processFile manager apiKey model filePath index = do
                 index
           case eligibleBooks of
             [] -> do
+              putStrLn $ "  ⏭️  " <> fileRelativePath <> ": no eligible books (all already linked or self)"
               timestamp <- nowIso
               recordLinkAnalysis filePath model timestamp
               pure $ Just FileResult
@@ -197,23 +203,28 @@ processFile manager apiKey model filePath index = do
                 , usedInference = False
                 }
             _ -> do
+              putStrLn $ "  🤖 " <> fileRelativePath <> ": checking " <> show (length eligibleBooks) <> " eligible books with Gemini"
               geminiResult <- identifyBooksWithGemini manager apiKey model body eligibleBooks
               timestamp <- nowIso
               recordLinkAnalysis filePath model timestamp
               case geminiResult of
-                Left _err -> pure $ Just FileResult
-                  { relativePath = relPath
-                  , modified     = False
-                  , linksAdded   = 0
-                  , usedInference = True
-                  }
+                Left err -> do
+                  putStrLn $ "  ❌ " <> fileRelativePath <> ": Gemini error: " <> T.unpack err
+                  pure $ Just FileResult
+                    { relativePath = relPath
+                    , modified     = False
+                    , linksAdded   = 0
+                    , usedInference = True
+                    }
                 Right identifiedPaths
-                  | null identifiedPaths -> pure $ Just FileResult
-                      { relativePath = relPath
-                      , modified     = False
-                      , linksAdded   = 0
-                      , usedInference = True
-                      }
+                  | null identifiedPaths -> do
+                      putStrLn $ "  ⏭️  " <> fileRelativePath <> ": Gemini found no book references"
+                      pure $ Just FileResult
+                        { relativePath = relPath
+                        , modified     = False
+                        , linksAdded   = 0
+                        , usedInference = True
+                        }
                   | otherwise -> do
                       let identifiedSet = Set.fromList identifiedPaths
                       contentAfterFm <- TIO.readFile filePath
@@ -221,12 +232,15 @@ processFile manager apiKey model filePath index = do
                           identifiedIndex = filter (\e -> Set.member (unRelativePath (CD.relativePath e)) identifiedSet) index
                           candidates      = CD.findLinkCandidates identifiedIndex contentAfterFm masked relPath
                       case candidates of
-                        [] -> pure $ Just FileResult
-                          { relativePath = relPath
-                          , modified     = False
-                          , linksAdded   = 0
-                          , usedInference = True
-                          }
+                        [] -> do
+                          putStrLn $ "  ⏭️  " <> fileRelativePath <> ": Gemini identified " <> show (length identifiedPaths)
+                            <> " book(s) but no linkable positions found"
+                          pure $ Just FileResult
+                            { relativePath = relPath
+                            , modified     = False
+                            , linksAdded   = 0
+                            , usedInference = True
+                            }
                         _  -> do
                           let validations = replicate (length candidates) True
                               newContent  = applyReplacements contentAfterFm candidates validations
@@ -253,6 +267,7 @@ nowIso = do
 run :: Manager -> Gemini.Model -> FilePath -> IO LinkingResult
 run manager model contentDir = do
   putStrLn $ "🔗 Internal linking: model=" <> T.unpack (Gemini.modelToText model)
+    <> " version=" <> show linkingAlgorithmVersion
 
   index <- CD.buildContentIndex contentDir
   putStrLn $ "  📚 Index: " <> show (length index) <> " books"
@@ -263,9 +278,11 @@ run manager model contentDir = do
   apiKey <- lookupSecret
   results <- processFiles manager apiKey model contentDir index filesToVisit
 
-  let modifiedCount  = length $ filter modified results
-      totalLinks     = sum $ fmap linksAdded results
-      skippedCount   = length $ filter (\r -> not (modified r) && linksAdded r == 0) results
+  let modifiedCount      = length $ filter modified results
+      totalLinks         = sum $ fmap linksAdded results
+      alreadyAnalyzedCount = length $ filter (\r -> not (modified r) && not (usedInference r)) results
+      inferenceCount     = length $ filter usedInference results
+      skippedCount       = length $ filter (\r -> not (modified r) && linksAdded r == 0) results
 
   let result = LinkingResult
         { filesVisited    = length filesToVisit
@@ -276,8 +293,9 @@ run manager model contentDir = do
         }
 
   putStrLn $ "  🏁 Complete: " <> show (filesVisited result) <> " visited, "
-    <> show modifiedCount <> " modified, " <> show totalLinks <> " links added, "
-    <> show skippedCount <> " skipped"
+    <> show alreadyAnalyzedCount <> " already analyzed, "
+    <> show inferenceCount <> " checked with Gemini, "
+    <> show modifiedCount <> " modified, " <> show totalLinks <> " links added"
 
   pure result
 

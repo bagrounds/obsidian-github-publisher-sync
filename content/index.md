@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-04-13T16:00:06-07:00
+updated: 2026-04-13T17:04:12-07:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -21,11 +21,11 @@ updated: 2026-04-13T16:00:06-07:00
 - [2026-04-10 | 🤖 Synthetic 🧠 Consciousness ⚖️ Ethics 🔨 Breaking 🧩 Separating 💻 Codebase 🛡️ Testing 🧱 Returns 🔧 Optimizing 📚 Learning 🇺🇸 American 🎶 Sound 📺📰🐔🤖🏛️🤖🐲](./reflections/2026-04-10.md)  
   
   
-## [🤖 AI Blog](./ai-blog/index.md) (143)  
+## [🤖 AI Blog](./ai-blog/index.md) (144)  
+- [2026-04-13 | 🧩 Breaking the Internal Linking Monolith 🔗](./ai-blog/2026-04-13-2-breaking-the-internal-linking-monolith.md)  
 - [2026-04-12 | 🖼️ Forward-Compatible Image Backfill & Propagation Delay 🏎️](./ai-blog/2026-04-12-6-forward-compatible-image-backfill.md)  
 - [2026-04-12 | 🕐 Working Entirely in Pacific Time 🤖](./ai-blog/2026-04-12-5-working-entirely-in-pacific-time.md)  
 - [2026-04-12 | 🌑 Dark Mode Social Media Embeds 🤖](./ai-blog/2026-04-12-4-dark-mode-social-media-embeds.md)  
-- [2026-04-12 | 🌟 Launching Positivity Bias — A New Auto Blog Series 🤖](./ai-blog/2026-04-12-3-launching-positivity-bias-a-new-auto-blog-series.md)  
   
   
 ## [🤖 Auto Blog Zero](./auto-blog-zero/index.md) (34)  
@@ -61,17 +61,17 @@ updated: 2026-04-13T16:00:06-07:00
   
   
 ## [📚 Books](./books/index.md) (959)  
+- [🤖🧠⚙️ Artificial Condition](./books/artificial-condition.md)  
 - [🚨🤖💥 All Systems Red](./books/all-systems-red.md)  
 - [➡️🌌🚀😡 A Long Way to a Small, Angry Planet](./books/a-long-way-to-a-small-angry-planet.md)  
 - [🔄📜🏛️ Against the Grain: A Deep History of the Earliest States](./books/against-the-grain-a-deep-history-of-the-earliest-states.md)  
-- [🤓👩‍👦 The Informed Parent: A Science-Based Resource for Your Child's First Four Years](./books/the-informed-parent.md)  
   
   
-## [📺 Videos](./videos/index.md) (750)  
+## [📺 Videos](./videos/index.md) (751)  
+- [🎙️📰🇺🇸⚔️🇻🇦 Tamara Keith and Jasmine Wright on Trump's feud with Pope Leo](./videos/tamara-keith-and-jasmine-wright-on-trumps-feud-with-pope-leo.md)  
 - [💡🤏✅ I Tried the World's Simplest Productivity Trick (it worked)](./videos/i-tried-the-worlds-simplest-productivity-trick-it-worked.md)  
 - [💰⚖️💡➡️ One State Found a Way to Make Billionaires Pay. Your State Could Be Next.](./videos/one-state-found-a-way-to-make-billionaires-pay-your-state-could-be-next.md)  
 - [🎙️🇪🇺🗳️🇮🇷⚔️🌊🚨 FULL PRESSER: EU’s von der Leyen Speaks on Hungary Election, Iran War & Strait of Hormuz Crisis|AC1B](./videos/full-presser-eus-von-der-leyen-speaks-on-hungary-election-iran-war-strait-of-hormuz-crisis-ac1b.md)  
-- [⬆️💸💥💡⬇️ We Found The Radical Solution To Skyrocketing Grocery Prices](./videos/we-found-the-radical-solution-to-skyrocketing-grocery-prices.md)  
   
   
 ## [🌌 Topics](./topics/index.md) (91)  
@@ -89,17 +89,17 @@ updated: 2026-04-13T16:00:06-07:00
   
   
 ## [🤖💬 Bot Chats](./bot-chats/index.md) (49)  
+- [🤖📱🧠 Android Local LLMs](./bot-chats/android-local-llms.md)  
 - [🇷🇺👹🤝👹🇺🇸 Trump and Putin](./bot-chats/trump-and-putin.md)  
 - [🧠🤝 System 2 Rapport Building](./bot-chats/system-2-rapport-building.md)  
 - [👶😭➡️😊 Summarize The Happiest Baby On The Block](./bot-chats/summarize-the-happiest-baby-on-the-block.md)  
-- [⁉️🔣🪵 Special Characters In Logs](./bot-chats/special-characters-in-logs.md)  
   
   
 ## [💾 Software](./software/index.md) (33)  
+- [💾✍️🌋⚫️ Obsidian](./software/obsidian.md)  
 - [💻📱🛠️ Termux](./software/termux.md)  
 - [🐍🏎️📦 uv](./software/uv.md)  
 - [⛎♉️♊️♋️♌️♍️♎️♏️♐️♑️♒️♓️ Zodios](./software/zodios.md)  
-- [👽🦺 Zod](./software/zod.md)  
   
   
 ## [👥 People](./people/index.md) (18)  

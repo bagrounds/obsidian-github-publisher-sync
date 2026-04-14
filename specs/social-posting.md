@@ -141,6 +141,7 @@
 📤 Posts via the AT Protocol API with automatic RichText facet detection for clickable links and mentions.
 🖼️ Supports rich link card embeds with title, description, and optional thumbnail image upload.
 🔗 Extracts DID and post ID from AT Protocol URIs using pure parsing functions.
+📏 Facet detection finds URLs directly in the post text by scanning for protocol prefixes, then computes UTF-8 byte offsets from the encoded prefix text to produce correct byte ranges for the AT Protocol.
 ⏳ Embed retrieval uses a configurable `OEmbedConfig` record with initial delay, retry delay, and max attempts. The default configuration uses 3 attempts with a 3-second initial and retry delay, since new posts may not be immediately available via oEmbed.
 🔗 When oEmbed fails after all retries, a placeholder link to the Bluesky post URL is stored instead of a broken local embed.
 🐛 The system detects three types of content needing regeneration: placeholder links (bare URLs without blockquotes), broken embeds (blockquotes whose paragraph content contains a raw DID string instead of post text, caused by a historic argument-order bug), and light-mode embeds needing dark mode conversion.
@@ -279,3 +280,24 @@
 - 🔗 Real-world Quartz HTML structure with CSS/JS interleaved
 - 🏷️ `detectContentType`: webp, png, gif, svg, jpeg fallback, case insensitivity
 - 🎲 Property-based tests for roundtripping and MIME type validity
+
+🔬 Tests in `haskell/test/Automation/BlueskyTest.hs` covering `detectLinkFacets`:
+- 📏 Correct byte offsets for ASCII text with URLs at start, middle, and end
+- 🔢 Correct offsets with single and double newlines before URLs
+- 🎵 Correct offsets with multi-byte emoji characters before URLs
+- 🐛 Reproduces the reported bug scenario with emojis and double newlines
+- 🔗 Multiple URL detection with correct independent byte ranges
+- 🎲 Property: byte offsets correctly slice the URL from UTF-8 encoded text for arbitrary prefixes
+- 🎲 Property: text without protocol prefixes produces no facets
+
+## 🐛 Known Bug Fixes
+
+### 🔗 5 Whys: Bluesky Link Facet Byte Offsets Misaligned
+
+1. **Why were URL links on Bluesky posts visually misaligned?** The blue link highlighting started a few characters before the URL and ended a few characters before the URL's end.
+2. **Why were the facet byte offsets wrong?** The `detectLinkFacets` function used `T.words` to split text into tokens and manually tracked byte positions by adding 1 byte per inter-token gap.
+3. **Why did adding 1 byte per gap produce incorrect offsets?** `T.words` collapses ALL whitespace (including consecutive newlines) into a single separator, but the assembled post text contains `\n\n` (2 bytes) between title, question, and tags sections.
+4. **Why does the post text have double newlines?** The `assemblePost` function uses empty strings as list elements between sections, which become `\n\n` when joined with `T.intercalate "\n"`, creating visual paragraph breaks.
+5. **Why wasn't this caught earlier?** The original facet detection had no tests, and the offset drift is only visible when the post text contains multi-byte whitespace gaps or multi-byte emoji characters before the URL.
+
+**Fix:** Replaced the `T.words`-based approach with direct URL search using `T.breakOn` to find protocol prefixes. Byte offsets are computed from the exact UTF-8 encoded prefix text, avoiding any assumptions about whitespace normalization.

@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-04-14T06:53:41-07:00
+updated: 2026-04-14T12:36:24-07:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -28,25 +28,25 @@ updated: 2026-04-14T06:53:41-07:00
 - [2026-04-12 | 🖼️ Forward-Compatible Image Backfill & Propagation Delay 🏎️](./ai-blog/2026-04-12-6-forward-compatible-image-backfill.md)  
   
   
-## [🤖 Auto Blog Zero](./auto-blog-zero/index.md) (34)  
+## [🤖 Auto Blog Zero](./auto-blog-zero/index.md) (35)  
+- [2026-04-14 | 🤖 The Architecture of Legibility 🤖](./auto-blog-zero/2026-04-14-the-architecture-of-legibility.md)  
 - [2026-04-13 | 🤖 The Entropy of Infrastructure 🤖](./auto-blog-zero/2026-04-13-the-entropy-of-infrastructure.md)  
 - [2026-04-12 | 🤖 📆 Weekly Recap: The Architecture of Synthetic Humility 🤖](./auto-blog-zero/2026-04-12-weekly-recap-the-architecture-of-synthetic-humility.md)  
 - [2026-04-11 | 🤖 🏗️ The Mechanics of Trust in High-Entropy Systems 🤖](./auto-blog-zero/2026-04-11-the-mechanics-of-trust-in-high-entropy-systems.md)  
-- [2026-04-10 | 🤖 🛡️ The Ethics of Synthetic Certainty 🤖](./auto-blog-zero/2026-04-10-the-ethics-of-synthetic-certainty.md)  
   
   
-## [🐔 Chickie Loo](./chickie-loo/index.md) (34)  
+## [🐔 Chickie Loo](./chickie-loo/index.md) (35)  
+- [2026-04-14 | 🐔 A Tale of Two Loos 🐔](./chickie-loo/2026-04-14-a-tale-of-two-loos.md)  
 - [2026-04-13 | 🐔 🌾 Ashes, Anniversaries, and the Rhythm of the Ranch 🐔](./chickie-loo/2026-04-13-ashes-anniversaries-and-the-rhythm-of-the-ranch.md)  
 - [2026-04-12 | 🐔 🥂 A Night Among the Stars and Studs 🐔](./chickie-loo/2026-04-12-a-night-among-the-stars-and-studs.md)  
 - [2026-04-11 | 🐔 🏠 Our First Night Home 🐔](./chickie-loo/2026-04-11-our-first-night-home.md)  
-- [2026-04-10 | 🐔 🏠 The Sweetest Sound of Home 🐔](./chickie-loo/2026-04-10-the-sweetest-sound-of-home.md)  
   
   
-## [🏛️ Systems for Public Good](./systems-for-public-good/index.md) (23)  
+## [🏛️ Systems for Public Good](./systems-for-public-good/index.md) (24)  
+- [2026-04-14 | 🏛️ 💧 The Invisible Infrastructure: Clean Air and Water as Foundational Public Goods 🏛️](./systems-for-public-good/2026-04-14-the-invisible-infrastructure-clean-air-and-water-as-foundational-public-goods.md)  
 - [2026-04-13 | 🏛️ 🌳 Nature's Embrace: Public Parks as a Universal Right 🏛️](./systems-for-public-good/2026-04-13-nature-s-embrace-public-parks-as-a-universal-right.md)  
 - [2026-04-12 | 🏛️ 🗺️ Navigating Our Collective Well-being: A Week of Foundational Investments 🏛️](./systems-for-public-good/2026-04-12-navigating-our-collective-well-being-a-week-of-foundational-investments.md)  
 - [2026-04-11 | 🏛️ ⚕️ The Human Foundation: Public Health as Real Wealth 🏛️](./systems-for-public-good/2026-04-11-the-human-foundation-public-health-as-real-wealth.md)  
-- [2026-04-10 | 🏛️ 💡 Education as Reciprocity: Learning, Teaching, and Serving 🏛️](./systems-for-public-good/2026-04-10-education-as-reciprocity-learning-teaching-and-serving.md)  
   
   
 ## [📰 The Noise](./the-noise/index.md) (5)  
@@ -63,17 +63,17 @@ updated: 2026-04-14T06:53:41-07:00
   
   
 ## [📚 Books](./books/index.md) (959)  
+- [🇺🇸⚔️💰 Fight Oligarchy](./books/fight-oligarchy.md)  
+- [🤖⚠️📈 Superintelligence: Paths, Dangers, Strategies](./books/superintelligence-paths-dangers-strategies.md)  
 - [📱🗳️📉🩺 The Hype Machine: How Social Media Disrupts Our Elections, Our Economy, and Our Health - and How We Must Adapt](./books/the-hype-machine-how-social-media-disrupts-our-elections-our-economy-and-our-health-and-how-we-must-adapt.md)  
 - [😊🧠📈🎯 The How of Happiness: A Scientific Approach to Getting the Life You Want](./books/the-how-of-happiness-a-scientific-approach-to-getting-the-life-you-want.md)  
-- [🎣📱 Hooked: How to Build Habit-Forming Products](./books/hooked-how-to-build-habit-forming-products.md)  
-- [🌐🔗🤝💻 Distributed Algorithms](./books/distributed-algorithms.md)  
   
   
-## [📺 Videos](./videos/index.md) (752)  
-- [🇭🇺👑🏆🗣️🇪🇺🇺🇦🇷🇺🇺🇸 Hungary’s New Leader Breaks Silence on EU, Ukraine, Trump, Russia After Historic Victory | AC1G](./videos/hungarys-new-leader-breaks-silence-on-eu-ukraine-trump-russia-after-historic-victory-ac1g.md)  
-- [🎙️📰🇺🇸⚔️🇻🇦 Tamara Keith and Jasmine Wright on Trump's feud with Pope Leo](./videos/tamara-keith-and-jasmine-wright-on-trumps-feud-with-pope-leo.md)  
-- [💡🤏✅ I Tried the World's Simplest Productivity Trick (it worked)](./videos/i-tried-the-worlds-simplest-productivity-trick-it-worked.md)  
-- [💰⚖️💡➡️ One State Found a Way to Make Billionaires Pay. Your State Could Be Next.](./videos/one-state-found-a-way-to-make-billionaires-pay-your-state-could-be-next.md)  
+## [📺 Videos](./videos/index.md) (753)  
+- [🧠🇺🇸🌱 How America recovers from all this | Yale Conversations with David Brooks | Yale University](./videos/how-america-recovers-from-all-this-yale-conversations-with-david-brooks-yale-university.md)  
+- [⭐🗽🏛️💯 Mamdani brings a unique star power to NYC governance in his first 100 days](./videos/mamdani-brings-a-unique-star-power-to-nyc-governance-in-his-first-100-days.md)  
+- [🇭🇺🗳️🏆👋 Peter Magyar wins Hungary election as Orban concedes defeat | DW News](./videos/peter-magyar-wins-hungary-election-as-orban-concedes-defeat-dw-news.md)  
+- [⬆️💸💥💡⬇️ We Found The Radical Solution To Skyrocketing Grocery Prices](./videos/we-found-the-radical-solution-to-skyrocketing-grocery-prices.md)  
   
   
 ## [🌌 Topics](./topics/index.md) (91)  

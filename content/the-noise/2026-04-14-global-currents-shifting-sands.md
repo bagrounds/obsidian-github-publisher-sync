@@ -8,9 +8,13 @@ Author: "[[the-noise]]"
 link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-14T00:00:00Z
 force_analyze_links: false
+image_date: 2026-04-14T14:45:12Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A stylized, semi-transparent globe anchors the image, its continents appearing subtly fractured and flowing like shifting sands. Dynamic, interconnected currents of light and shadow swirl around and through it. Some currents are bright, smooth, and represent technological progress and scientific discovery, while others are turbulent, darker, and more jagged, symbolizing conflict, economic shifts, and environmental challenges. These contrasting flows create a sense of constant global movement and information exchange, highlighting both harmony and tension. The overall aesthetic is modern and fluid, conveying a world in perpetual, complex motion.
 ---
 [Home](../index.md) > [📰 The Noise](./index.md) | [⏮️](./2026-04-13-global-currents-shifting-sands.md)  
 # 2026-04-14 | 📰 🌍 Global Currents, Shifting Sands 🌐 📰  
+![the-noise-2026-04-14-global-currents-shifting-sands](../the-noise-2026-04-14-global-currents-shifting-sands.jpg)  
   
 # 🌍 Global Currents, Shifting Sands 🌐  
   

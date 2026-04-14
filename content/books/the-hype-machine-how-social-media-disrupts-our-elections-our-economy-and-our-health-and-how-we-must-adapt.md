@@ -9,9 +9,13 @@ affiliate link: https://amzn.to/4nUhnku
 link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-03T00:00:00Z
 force_analyze_links: false
+image_date: 2026-04-14T13:44:54Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A stylized, high-contrast illustration featuring a central, glowing smartphone screen emitting a complex web of interconnected digital nodes. These nodes branch out like neural pathways, morphing into abstract silhouettes of human heads, ballot boxes, currency symbols, and medical cross icons. The background is a deep, moody charcoal, while the network lines are vibrant, electric blues and oranges, representing the hype flow. Subtle, geometric gears are integrated into the network, suggesting the mechanical nature of the underlying algorithms. The composition should feel kinetic and slightly chaotic to represent the machine, but with a clear, central focal point that draws the eye toward the device as the source of the disruption. The overall aesthetic should be modern, tech-focused, and slightly ominous, emphasizing the dual nature of connectivity and control.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 📱🗳️📉🩺 The Hype Machine: How Social Media Disrupts Our Elections, Our Economy, and Our Health - and How We Must Adapt  
+![books-the-hype-machine-how-social-media-disrupts-our-elections-our-economy-and-our-health-and-how-we-must-adapt](../books-the-hype-machine-how-social-media-disrupts-our-elections-our-economy-and-our-health-and-how-we-must-adapt.jpg)  
 [🛒 The Hype Machine: How Social Media Disrupts Our Elections, Our Economy, and Our Health - and How We Must Adapt. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4nUhnku)  
   
 ### 🏆 Sinan Aral's Hype Machine Adaptation Strategy  

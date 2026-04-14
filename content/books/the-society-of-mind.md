@@ -10,9 +10,13 @@ updated: 2026-03-25T00:50:25.103Z
 force_analyze_links: false
 link_analysis_time: 2026-03-25T10:18:53.505Z
 link_analysis_model: gemini-3.1-flash-lite-preview
+image_date: 2026-04-14T09:44:23Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A stylized, translucent silhouette of a human head or brain. Inside, a dynamic, intricate network of glowing lines connects numerous small, diverse abstract shapes. These shapes, representing agents, vary subtly in form and color (e.g., tiny geometric forms, soft blobs, or minimal icons), suggesting different functions. Energy pulses along the connections, illustrating constant interaction and communication. The overall composition creates a sense of emergent complexity and organized activity within the mind. The color scheme features deep blues and purples, accented by vibrant greens and warm, luminous yellows for the network and glowing elements, against a subtly textured, dark background.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🧠👥 The Society of Mind  
+![books-the-society-of-mind](../books-the-society-of-mind.jpg)  
 [🛒 The Society of Mind. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4r9Ku5c)  
   
 🤔🧠✨ The mind is a vast, non-hierarchical society of countless simple, interacting agents that collectively generate intelligence, thought, and emotion, much like a complex adaptive system rather than a singular, unified entity.  

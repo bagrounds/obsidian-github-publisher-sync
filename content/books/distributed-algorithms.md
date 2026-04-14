@@ -10,9 +10,13 @@ affiliate link: https://amzn.to/3ZCBPMX
 updated: 2026-03-22T03:56:28.352Z
 link_analysis_time: 2026-03-22T04:05:01.760Z
 link_analysis_model: gemini-3.1-flash-lite-preview
+image_date: 2026-04-14T11:32:08Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: An abstract network of interconnected, glowing nodes. A central, slightly larger node acts as a focal point, with multiple smaller, distinct nodes orbiting or radiating from it. Thin, dynamic lines of light pulse between the nodes, some forming stable connections, others briefly flickering or branching to suggest data flow and redundancy. A few subtle, translucent shields or interlocking gears might appear around key connections, symbolizing fault tolerance and consensus. The color palette features cool blues and purples with bright, energetic accents of green or orange on active links, against a dark, subtly textured background. The overall impression is one of complex coordination and robust communication.
 ---
 [Home](../index.md#) > [Books](./index.md#)    
 # 🌐🔗🤝💻 Distributed Algorithms    
+![books-distributed-algorithms](../books-distributed-algorithms.jpg)  
 [🛒 Distributed Algorithms. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3ZCBPMX)    
     
 ## 🤖 AI Summary    

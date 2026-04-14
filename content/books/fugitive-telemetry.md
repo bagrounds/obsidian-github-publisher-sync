@@ -12,9 +12,13 @@ updated: 2026-03-25T12:16:07.791Z
 force_analyze_links: false
 link_analysis_time: 2026-03-25T00:49:46.661Z
 link_analysis_model: gemini-3.1-flash-lite-preview
+image_date: 2026-04-14T00:38:01Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A shadowy, humanoid robot with a single, glowing red eye is silhouetted against a futuristic, digital landscape. The robot, positioned in a dynamic, slightly turned pose, suggests both pursuit and observation. Behind it, a vibrant, intricate network of neon green and electric blue data streams and circuit lines flows, creating an abstract cityscape or corporate architecture. Scattered within this network are subtle glitch effects and broken data packets, hinting at disrupted information and a sense of escape. The overall composition conveys mystery, high-tech intrigue, and the tension of being tracked.
 ---
 [Home](../index.md) > [Books](./index.md) | [⏮️ 🌐🤖🚀 Network Effect](./network-effect.md)  
 # 🕵️ Fugitive Telemetry  
+![books-fugitive-telemetry](../books-fugitive-telemetry.jpg)  
 [🛒 Fugitive Telemetry. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4l69AQ6)  
 🤖 Mystery, artificial intelligence, and societal norms.  
   

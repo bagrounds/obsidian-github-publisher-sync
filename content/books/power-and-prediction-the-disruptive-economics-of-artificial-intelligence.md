@@ -10,9 +10,13 @@ updated: 2026-03-24T03:01:59.394Z
 force_analyze_links: false
 link_analysis_time: 2026-03-22T23:30:17.135Z
 link_analysis_model: gemini-3.1-flash-lite-preview
+image_date: 2026-04-14T10:33:52Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A dynamic illustration featuring a stylized human brain on one side, subtly detaching from a complex, glowing AI network on the other. A visible energetic arc or chasm separates the judgment (brain) from the prediction (AI network), emphasizing their decoupling. Surrounding this central separation, abstract economic graphs are depicted in motion, with some lines breaking apart and others forming new, interconnected patterns. Gears and architectural blueprints are shown in various stages of redesign, suggesting system-level transformation. The color palette combines electric blues and purples for AI, with contrasting warm golds and oranges highlighting economic shifts.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # ⚡🔮🤖 Power and Prediction: The Disruptive Economics of Artificial Intelligence  
+![books-power-and-prediction-the-disruptive-economics-of-artificial-intelligence](../books-power-and-prediction-the-disruptive-economics-of-artificial-intelligence.jpg)  
 [🛒 Power and Prediction: The Disruptive Economics of Artificial Intelligence. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4lu2zZK)  
   
 💡⚙️🚀 AI's true disruptive power comes from enabling system-level redesign through cheaper, better predictions, fundamentally decoupling prediction from human judgment and shifting economic power.  

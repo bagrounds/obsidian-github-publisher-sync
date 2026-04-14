@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-04-13T17:04:12-07:00
+updated: 2026-04-13T17:11:02-07:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -67,11 +67,11 @@ updated: 2026-04-13T17:04:12-07:00
 - [🔄📜🏛️ Against the Grain: A Deep History of the Earliest States](./books/against-the-grain-a-deep-history-of-the-earliest-states.md)  
   
   
-## [📺 Videos](./videos/index.md) (751)  
+## [📺 Videos](./videos/index.md) (752)  
+- [🇭🇺👑🏆🗣️🇪🇺🇺🇦🇷🇺🇺🇸 Hungary’s New Leader Breaks Silence on EU, Ukraine, Trump, Russia After Historic Victory | AC1G](./videos/hungarys-new-leader-breaks-silence-on-eu-ukraine-trump-russia-after-historic-victory-ac1g.md)  
 - [🎙️📰🇺🇸⚔️🇻🇦 Tamara Keith and Jasmine Wright on Trump's feud with Pope Leo](./videos/tamara-keith-and-jasmine-wright-on-trumps-feud-with-pope-leo.md)  
 - [💡🤏✅ I Tried the World's Simplest Productivity Trick (it worked)](./videos/i-tried-the-worlds-simplest-productivity-trick-it-worked.md)  
 - [💰⚖️💡➡️ One State Found a Way to Make Billionaires Pay. Your State Could Be Next.](./videos/one-state-found-a-way-to-make-billionaires-pay-your-state-could-be-next.md)  
-- [🎙️🇪🇺🗳️🇮🇷⚔️🌊🚨 FULL PRESSER: EU’s von der Leyen Speaks on Hungary Election, Iran War & Strait of Hormuz Crisis|AC1B](./videos/full-presser-eus-von-der-leyen-speaks-on-hungary-election-iran-war-strait-of-hormuz-crisis-ac1b.md)  
   
   
 ## [🌌 Topics](./topics/index.md) (91)  

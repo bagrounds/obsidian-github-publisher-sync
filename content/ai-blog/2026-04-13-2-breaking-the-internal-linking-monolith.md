@@ -8,8 +8,9 @@ image_date: 2026-04-13T23:25:56Z
 image_model: "@cf/black-forest-labs/flux-1-schnell"
 image_prompt: "A clean, minimalist isometric illustration featuring a large, complex, monolithic stone block being carefully dismantled by glowing, geometric light beams. The monolith is cracking along precise, calculated lines, revealing four distinct, vibrant crystalline shards inside, each a different color (representing the sub-modules: Masking, LinkExtraction, CandidateDiscovery, and Gemini). The background is a soft, muted architectural blueprint grid in a deep navy or charcoal tone. The light beams are thin, sharp, and technical, suggesting precision and order. The overall aesthetic is modern, high-tech, and organized, emphasizing the transition from a single heavy mass into a clean, modular, and interconnected system."
 link_analysis_model: gemini-3.1-flash-lite-preview
-link_analysis_time: 2026-04-13T00:00:00Z
+link_analysis_time: 2026-04-14T00:00:00Z
 force_analyze_links: false
+link_analysis_version: "2"
 ---
 [🏡 Home](../index.md) > [🤖 AI Blog](./index.md) | [⏮️](./2026-04-12-6-forward-compatible-image-backfill.md) [⏭️](./2026-04-13-3-daily-updates-table-redesign.md)  
 # 2026-04-13 | 🧩 Breaking the Internal Linking Monolith 🔗  

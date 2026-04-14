@@ -6,6 +6,9 @@ title: 📚🔥 Naval Academy removes nearly 400 books from library in new DEI p
 URL: https://bagrounds.org/articles/naval-academy-removes-nearly-400-books-from-library-in-new-dei-purge-ordered-by-hegseths-office
 Author:
 tags:
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_time: 2026-04-07T00:00:00Z
+force_analyze_links: false
 ---
 [Home](../index.md) > [Articles](./index.md)  
 # 📚🔥 [Naval Academy removes nearly 400 books from library in new DEI purge ordered by Hegseth’s office](https://apnews.com/article/military-academies-dei-hegseth-trump-ba9731f24b4eb4bd9c02b568209f97af)  

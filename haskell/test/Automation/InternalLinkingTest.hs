@@ -390,21 +390,30 @@ extractBodyTests = testGroup "extractBody"
 
 alreadyAnalyzedTests :: TestTree
 alreadyAnalyzedTests = testGroup "alreadyAnalyzed"
-  [ testCase "false when no analysis field" $
-      assertBool "not analyzed" (not (alreadyAnalyzed "---\ntitle: Test\n---\nBody"))
-  , testCase "true when analysis field present" $
-      assertBool "analyzed" (alreadyAnalyzed "---\nlink_analysis_model: gemini-2.5-flash\n---\nBody")
-  , testCase "false when force_analyze_links is true" $
+  [ testCase "false when no analysis fields" $
+      assertBool "not analyzed" (not (alreadyAnalyzed 2 "---\ntitle: Test\n---\nBody"))
+  , testCase "true when version matches current" $
+      assertBool "analyzed" (alreadyAnalyzed 2 "---\nlink_analysis_version: 2\nlink_analysis_model: gemini-2.5-flash\n---\nBody")
+  , testCase "false when version is older than current" $
+      assertBool "outdated version"
+        (not (alreadyAnalyzed 2 "---\nlink_analysis_version: 1\nlink_analysis_model: gemini-2.5-flash\n---\nBody"))
+  , testCase "false when version is missing but model present" $
+      assertBool "no version field"
+        (not (alreadyAnalyzed 2 "---\nlink_analysis_model: gemini-2.5-flash\n---\nBody"))
+  , testCase "false when force_analyze_links is true even with matching version" $
       assertBool "force re-analyze"
-        (not (alreadyAnalyzed "---\nlink_analysis_model: gemini-2.5-flash\nforce_analyze_links: true\n---\nBody"))
-  , testCase "true when force_analyze_links is false" $
+        (not (alreadyAnalyzed 2 "---\nlink_analysis_version: 2\nlink_analysis_model: gemini-2.5-flash\nforce_analyze_links: true\n---\nBody"))
+  , testCase "true when force_analyze_links is false and version matches" $
       assertBool "should be analyzed"
-        (alreadyAnalyzed "---\nlink_analysis_model: gemini-2.5-flash\nforce_analyze_links: false\n---\nBody")
+        (alreadyAnalyzed 2 "---\nlink_analysis_version: 2\nlink_analysis_model: gemini-2.5-flash\nforce_analyze_links: false\n---\nBody")
   , testCase "false when no frontmatter at all" $
-      assertBool "not analyzed" (not (alreadyAnalyzed "Just plain text"))
-  , testCase "true with different model name" $
+      assertBool "not analyzed" (not (alreadyAnalyzed 2 "Just plain text"))
+  , testCase "true with different model but matching version" $
       assertBool "analyzed with different model"
-        (alreadyAnalyzed "---\nlink_analysis_model: gemini-3-flash-preview\n---\nBody")
+        (alreadyAnalyzed 2 "---\nlink_analysis_version: 2\nlink_analysis_model: gemini-3-flash-preview\n---\nBody")
+  , testCase "false when version is newer than current" $
+      assertBool "future version"
+        (not (alreadyAnalyzed 2 "---\nlink_analysis_version: 3\nlink_analysis_model: gemini-2.5-flash\n---\nBody"))
   ]
 
 extractLinkedPathsTests :: TestTree

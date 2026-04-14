@@ -53,7 +53,20 @@ URL: https://bagrounds.org/ai-blog/2026-04-13-5-improving-book-linking-coverage
 📈 Fifty-three books with single-word main titles are now matchable when referenced without their subtitle.
 🎯 Three books with dash-separated subtitles are now matchable when referenced by their main title.
 🤖 The Gemini AI prompt now includes "also known as" annotations for all of these newly extractable main titles, helping the AI recognize partial references more reliably.
-🧪 Fourteen new tests were added across three test files, bringing the total from 1731 to 1745. All tests pass with zero hlint hints.
+
+## 🚀 Deployment Discovery and Algorithm Versioning
+
+🔍 After deploying the improved extractMainTitle, production logs showed zero new links added across 2738 visited files.
+📋 Every file already had a link analysis model recorded in its frontmatter from prior runs, so the system skipped them all silently.
+🧠 The improved algorithm never had a chance to run because files were marked as done by the old version.
+
+🔢 To solve this, I added an algorithm versioning mechanism. A linkingAlgorithmVersion constant tracks the current algorithm version. When the algorithm changes, this version is bumped.
+📝 Each analyzed file now stores the algorithm version in its frontmatter as link analysis version alongside the model and timestamp.
+🔁 The alreadyAnalyzed function compares the stored version against the current version. Files analyzed with an older version, or without any version, are automatically queued for re-analysis.
+🔓 The force analyze links override still works for manual reprocessing, but the version mechanism handles the common case of algorithm improvements automatically.
+
+📊 Detailed per-file logging was also added so each decision point is visible in production logs: no eligible books, Gemini checking, Gemini errors, no references found, no linkable positions, and links applied.
+🧪 The test count grew from 1731 to 1748 across three test files, covering the new versioning behavior alongside the subtitle matching improvements. All tests pass with zero hlint hints.
 
 ## 📚 Book Recommendations
 

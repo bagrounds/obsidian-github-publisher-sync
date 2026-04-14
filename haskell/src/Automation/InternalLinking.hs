@@ -4,6 +4,7 @@ module Automation.InternalLinking
   ( FileResult (..)
   , LinkingResult (..)
   , defaultLinkingModel
+  , linkingAlgorithmVersion
   , indexableDirs
   , traversableDirs
   , extractBody
@@ -44,6 +45,9 @@ import System.FilePath (takeDirectory, (</>))
 defaultLinkingModel :: Gemini.Model
 defaultLinkingModel = Gemini.Gemini31FlashLite
 
+linkingAlgorithmVersion :: Int
+linkingAlgorithmVersion = 2
+
 indexableDirs :: [Text]
 indexableDirs =
   [ "books", "articles", "topics", "software", "people"
@@ -83,12 +87,12 @@ extractBody content =
             (_, _ : bodyLs)  -> T.intercalate "\n" bodyLs
     _ -> content
 
-alreadyAnalyzed :: Text -> Bool
-alreadyAnalyzed content =
+alreadyAnalyzed :: Int -> Text -> Bool
+alreadyAnalyzed currentVersion content =
   let (fm, _) = parseFrontmatter content
   in case Map.lookup "force_analyze_links" fm of
     Just "true" -> False
-    _           -> Map.member "link_analysis_model" fm
+    _           -> Map.lookup "link_analysis_version" fm == Just (T.pack (show currentVersion))
 
 
 applyReplacements :: Text -> [CD.LinkCandidate] -> [Bool] -> Text
@@ -158,6 +162,7 @@ recordLinkAnalysis :: FilePath -> Gemini.Model -> Text -> IO ()
 recordLinkAnalysis filePath model timestamp =
   updateFrontmatterFields filePath
     [ ("link_analysis_model", YamlText (Gemini.modelToText model))
+    , ("link_analysis_version", YamlText (T.pack (show linkingAlgorithmVersion)))
     , ("link_analysis_time", YamlText timestamp)
     , ("force_analyze_links", YamlBool False)
     ]
@@ -173,7 +178,7 @@ processFile manager apiKey model filePath index = do
       pure Nothing
     Right relPath -> do
       content <- TIO.readFile filePath
-      if alreadyAnalyzed content
+      if alreadyAnalyzed linkingAlgorithmVersion content
         then pure $ Just FileResult
           { relativePath = relPath
           , modified     = False
@@ -262,6 +267,7 @@ nowIso = do
 run :: Manager -> Gemini.Model -> FilePath -> IO LinkingResult
 run manager model contentDir = do
   putStrLn $ "🔗 Internal linking: model=" <> T.unpack (Gemini.modelToText model)
+    <> " version=" <> show linkingAlgorithmVersion
 
   index <- CD.buildContentIndex contentDir
   putStrLn $ "  📚 Index: " <> show (length index) <> " books"

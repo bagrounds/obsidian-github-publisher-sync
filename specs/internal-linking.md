@@ -65,11 +65,13 @@
 🔗 Only books confirmed by Gemini have their wikilinks inserted at deterministic text positions.
 💥 A `QuotaExhaustedError` is thrown when the daily API quota is exhausted, halting the entire pipeline gracefully.
 
-## 🛡️ Skip Tracking
+## 🛡️ Skip Tracking and Algorithm Versioning
 
-📋 Each processed file gets frontmatter fields recording the analysis model and timestamp.
-🔁 The `alreadyAnalyzed` function checks for these fields to skip previously processed files.
-🔓 Setting `force_analyze_links: true` in frontmatter overrides the skip check for reprocessing.
+📋 Each processed file gets frontmatter fields recording the analysis model, timestamp, and algorithm version.
+🔢 The `linkingAlgorithmVersion` constant tracks the current algorithm version. When the linking algorithm changes meaningfully (new matching rules, separator support, etc.), this version is bumped.
+🔁 The `alreadyAnalyzed` function compares the stored `link_analysis_version` in frontmatter against the current `linkingAlgorithmVersion`. Files analyzed with an older version are automatically re-analyzed.
+🔓 Setting `force_analyze_links: true` in frontmatter overrides the version check for manual reprocessing.
+📝 Frontmatter fields written by `recordLinkAnalysis`: `link_analysis_model`, `link_analysis_version`, `link_analysis_time`, `force_analyze_links`.
 
 ## 📏 Per-Run Limits
 
@@ -108,7 +110,7 @@
 | `extractJsonArray(text)` | 📋 Extract JSON array from Gemini response text |
 | `generateDiff(original, modified)` | 📊 Generate minimal diff showing changed lines |
 | `applyReplacements(content, candidates, validations)` | ✏️ Apply wikilink replacements end-to-start |
-| `alreadyAnalyzed(content)` | 🛡️ Check if file was previously analyzed |
+| `alreadyAnalyzed(version, content)` | 🛡️ Check if file was analyzed with the current algorithm version |
 | `extractBody(content)` | 📄 Extract body text after frontmatter |
 | `isRateLimitError(error)` | 🚦 Detect rate-limit errors |
 | `isDailyQuotaError(error)` | 💥 Detect daily quota exhaustion |

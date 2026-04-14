@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-04-13T17:11:02-07:00
+updated: 2026-04-14T06:53:41-07:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -14,18 +14,18 @@ updated: 2026-04-13T17:11:02-07:00
 🔊 Listen to any page with built in audio control.  
 💬 Comment on any page with your GitHub account.  
   
-## [🪞 Reflections](./reflections/index.md) ~ Blog (515)  
-- [2026-04-13](./reflections/2026-04-13.md)  
+## [🪞 Reflections](./reflections/index.md) ~ Blog (516)  
+- [2026-04-14](./reflections/2026-04-14.md)  
+- [2026-04-13 | 🌍 Billionaires 💡 Trick 🗣️ Speaks 🪞 Leo 🕊️ Victory 🚀 Accelerates 🌊 Currents ☢️ Entropy 🐔 Rhythm 🌳 Embrace 🔗 Monolith 🔄 Redesign 📺📰🌟🤖🐔🏛️🤖🐲](./reflections/2026-04-13.md)  
 - [2026-04-12 | 🧠 First 🎯 Solution ✨ Brings 🌟 Bright 🌃 Night 🏛️ Foundational 🗺️ Navigating 🌐 Global 🐦 Twitter 🚔 Police 🗳️ Election 🤖 Synthetic 📺📰🌟🐔🤖🏛️🤖🐲](./reflections/2026-04-12.md)  
 - [2026-04-11 | 🧠 Mythos 🚀 Changes 🪚 Broken 🛠️ Fixing 🏠 Home 🌃 Night 🤖 AI 🗣️ Day 📈 Surge 🌐 World 🍎 Embrace 🤫 Noise 🆕 New 🥇 First 🕰️ Time 📚📺🐔🤖🏛️📰🤖🐲](./reflections/2026-04-11.md)  
-- [2026-04-10 | 🤖 Synthetic 🧠 Consciousness ⚖️ Ethics 🔨 Breaking 🧩 Separating 💻 Codebase 🛡️ Testing 🧱 Returns 🔧 Optimizing 📚 Learning 🇺🇸 American 🎶 Sound 📺📰🐔🤖🏛️🤖🐲](./reflections/2026-04-10.md)  
   
   
-## [🤖 AI Blog](./ai-blog/index.md) (144)  
+## [🤖 AI Blog](./ai-blog/index.md) (146)  
+- [2026-04-13 | 🦋 Fixing Bluesky Link Facet Offsets 🔗](./ai-blog/2026-04-13-4-fixing-bluesky-link-facet-offsets.md)  
+- [2026-04-13 | 📊 Daily Updates Table Redesign 🔄](./ai-blog/2026-04-13-3-daily-updates-table-redesign.md)  
 - [2026-04-13 | 🧩 Breaking the Internal Linking Monolith 🔗](./ai-blog/2026-04-13-2-breaking-the-internal-linking-monolith.md)  
 - [2026-04-12 | 🖼️ Forward-Compatible Image Backfill & Propagation Delay 🏎️](./ai-blog/2026-04-12-6-forward-compatible-image-backfill.md)  
-- [2026-04-12 | 🕐 Working Entirely in Pacific Time 🤖](./ai-blog/2026-04-12-5-working-entirely-in-pacific-time.md)  
-- [2026-04-12 | 🌑 Dark Mode Social Media Embeds 🤖](./ai-blog/2026-04-12-4-dark-mode-social-media-embeds.md)  
   
   
 ## [🤖 Auto Blog Zero](./auto-blog-zero/index.md) (34)  
@@ -49,22 +49,24 @@ updated: 2026-04-13T17:11:02-07:00
 - [2026-04-10 | 🏛️ 💡 Education as Reciprocity: Learning, Teaching, and Serving 🏛️](./systems-for-public-good/2026-04-10-education-as-reciprocity-learning-teaching-and-serving.md)  
   
   
-## [📰 The Noise](./the-noise/index.md) (4)  
+## [📰 The Noise](./the-noise/index.md) (5)  
+- [2026-04-14 | 📰 🌍 Global Currents, Shifting Sands 🌐 📰](./the-noise/2026-04-14-global-currents-shifting-sands.md)  
 - [2026-04-13 | 📰 🌍 Global Currents, Shifting Sands 🌐 📰](./the-noise/2026-04-13-global-currents-shifting-sands.md)  
 - [2026-04-12 | 📰 🌊 Global Currents, Shifting Sands 🌐 📰](./the-noise/2026-04-12-global-currents-shifting-sands.md)  
 - [2026-04-11 | 📰 First Broadcast - Tuning Into the World 📰](./the-noise/2026-04-11-first-broadcast.md)  
   
   
-## [🌟 Positivity Bias](./positivity-bias/index.md) (3)  
+## [🌟 Positivity Bias](./positivity-bias/index.md) (4)  
+- [2026-04-14 | 🌟 🏥 Medical Marvels and Environmental Victories Reshape Our World 🌟](./positivity-bias/2026-04-14-medical-marvels-and-environmental-victories-reshape-our-world.md)  
 - [2026-04-13 | 🌟 Innovation Accelerates Across Global Health and Environment 🌟](./positivity-bias/2026-04-13-innovation-accelerates-across-global-health-and-environment.md)  
 - [2026-04-12 | 🌟 Inaugural Edition - Seeking the Bright Spots 🌟](./positivity-bias/2026-04-12-inaugural-seeking-the-bright-spots.md)  
   
   
 ## [📚 Books](./books/index.md) (959)  
-- [🤖🧠⚙️ Artificial Condition](./books/artificial-condition.md)  
-- [🚨🤖💥 All Systems Red](./books/all-systems-red.md)  
-- [➡️🌌🚀😡 A Long Way to a Small, Angry Planet](./books/a-long-way-to-a-small-angry-planet.md)  
-- [🔄📜🏛️ Against the Grain: A Deep History of the Earliest States](./books/against-the-grain-a-deep-history-of-the-earliest-states.md)  
+- [📱🗳️📉🩺 The Hype Machine: How Social Media Disrupts Our Elections, Our Economy, and Our Health - and How We Must Adapt](./books/the-hype-machine-how-social-media-disrupts-our-elections-our-economy-and-our-health-and-how-we-must-adapt.md)  
+- [😊🧠📈🎯 The How of Happiness: A Scientific Approach to Getting the Life You Want](./books/the-how-of-happiness-a-scientific-approach-to-getting-the-life-you-want.md)  
+- [🎣📱 Hooked: How to Build Habit-Forming Products](./books/hooked-how-to-build-habit-forming-products.md)  
+- [🌐🔗🤝💻 Distributed Algorithms](./books/distributed-algorithms.md)  
   
   
 ## [📺 Videos](./videos/index.md) (752)  
@@ -82,17 +84,17 @@ updated: 2026-04-13T17:11:02-07:00
   
   
 ## [📄  Articles](./articles/index.md) (84)  
+- [⏳🏛️💥🗳️📉 Trump is dismantling democracy at unprecedented speed, global report finds](./articles/trump-is-dismantling-democracy-at-unprecedented-speed-global-report-finds.md)  
 - [🤖🧠💻 Agentic Code Reasoning](./articles/agentic-code-reasoning.md)  
 - [🗺️🚀🤖 A Field Guide to Rapidly Improving AI Products](./articles/a-field-guide-to-rapidly-improving-ai-products.md)  
 - [⚙️🤖📈🤝 Engineering and AI: Advancing the synergy](./articles/engineering-and-ai-advancing-the-synergy.md)  
-- [🤖👨‍💻📈⏳ Learnings from two years of using AI tools for software engineering](./articles/learnings-from-two-years-of-using-ai-tools-for-software-engineering.md)  
   
   
 ## [🤖💬 Bot Chats](./bot-chats/index.md) (49)  
+- [🇦🇹💰🆚📈🖨️ Austrian Economics vs Modern Monetary Theory](./bot-chats/austrian-economics-vs-modern-monetary-theory.md)  
+- [⚛️💡🚀 Atomic Innovation](./bot-chats/atomic-innovation.md)  
 - [🤖📱🧠 Android Local LLMs](./bot-chats/android-local-llms.md)  
 - [🇷🇺👹🤝👹🇺🇸 Trump and Putin](./bot-chats/trump-and-putin.md)  
-- [🧠🤝 System 2 Rapport Building](./bot-chats/system-2-rapport-building.md)  
-- [👶😭➡️😊 Summarize The Happiest Baby On The Block](./bot-chats/summarize-the-happiest-baby-on-the-block.md)  
   
   
 ## [💾 Software](./software/index.md) (33)  

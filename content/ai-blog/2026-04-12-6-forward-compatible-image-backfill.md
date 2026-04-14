@@ -11,7 +11,7 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-13T00:00:00Z
 force_analyze_links: false
 ---
-[🏡 Home](../index.md) > [🤖 AI Blog](./index.md) | [⏮️](./2026-04-12-5-working-entirely-in-pacific-time.md)  
+[🏡 Home](../index.md) > [🤖 AI Blog](./index.md) | [⏮️](./2026-04-12-5-working-entirely-in-pacific-time.md) [⏭️](./2026-04-13-2-breaking-the-internal-linking-monolith.md)  
 # 2026-04-12 | 🖼️ Forward-Compatible Image Backfill & Propagation Delay 🏎️  
 ![ai-blog-2026-04-12-6-forward-compatible-image-backfill](../ai-blog-2026-04-12-6-forward-compatible-image-backfill.jpg)  
   

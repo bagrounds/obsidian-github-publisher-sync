@@ -29,7 +29,7 @@ import Network.HTTP.Client (Manager)
 import qualified Network.HTTP.Client.TLS as TLS
 import System.Directory (listDirectory, doesFileExist, doesDirectoryExist)
 
-import Automation.DailyUpdates (UpdateLink (..), addUpdateLinksToReflection)
+import Automation.DailyUpdates (UpdateDetail (..), UpdateLink (..), addUpdateLinksToReflection)
 import Automation.EmbedSection
   ( buildBlueskySection
   , buildMastodonSection
@@ -106,10 +106,8 @@ mkSocialPost Twitter = mkTweet
 mkSocialPost Bluesky = mkBlueskyPost
 mkSocialPost Mastodon = mkMastodonPost
 
-platformDetail :: Platform -> Text
-platformDetail Twitter  = "🐦 posted to Twitter"
-platformDetail Bluesky  = "🦋 posted to BlueSky"
-platformDetail Mastodon = "🐘 posted to Mastodon"
+platformUpdateDetail :: Platform -> UpdateDetail
+platformUpdateDetail = PostedTo
 
 platformSectionHeader :: Platform -> Text
 platformSectionHeader Twitter  = Twitter.sectionHeader
@@ -381,7 +379,7 @@ autoPost manager vaultDir imageBackfillContentDirs = do
   today <- todayPacificDay
   let todayStr = formatDay today
       updateLinks = fmap (\pn ->
-        let details = fmap platformDetail (pnPlatforms pn)
+        let details = fmap platformUpdateDetail (pnPlatforms pn)
         in UpdateLink (noteRelativePath (pnNote pn)) (noteTitle (pnNote pn)) details
         ) postedNotes
   _ <- addUpdateLinksToReflection reflectionsDir todayStr updateLinks

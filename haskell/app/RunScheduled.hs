@@ -62,7 +62,7 @@ import Automation.BlogSeriesDiscovery
   , discoverSeries
   )
 import Automation.DailyReflection (UpdateReflectionResult (..), updateDailyReflection)
-import Automation.DailyUpdates (UpdateLink (..), addUpdateLinksToReflection, extractTitleFromFile)
+import Automation.DailyUpdates (UpdateDetail (..), UpdateLink (..), addUpdateLinksToReflection, extractTitleFromFile)
 import qualified Automation.Gemini as Gemini
 import Automation.ObsidianSync
   ( ObsidianCredentials (..)
@@ -396,7 +396,7 @@ runBackfillImages context contentDirs = do
         title <- extractTitleFromFile (vaultDir </> T.unpack filePath)
         case (mkRelativePath filePath, mkTitle title) of
           (Right relativePath, Right validTitle) ->
-            pure (Just (UpdateLink relativePath validTitle ["🖼️ added image"]))
+            pure (Just (UpdateLink relativePath validTitle [ImageAdded]))
           (Left pathError, _) -> do
             logMsg $ "  ⚠️  Skipping update link for " <> filePath <> ": " <> pathError
             pure Nothing
@@ -449,10 +449,8 @@ runInternalLinking context = do
           reflectionsDir = vaultDir </> "reflections"
       links <- catMaybes <$> traverse (\fr -> do
         title <- extractTitleFromFile (vaultDir </> T.unpack (unRelativePath (IL.relativePath fr)))
-        let addedLinks = IL.linksAdded fr
-            detail = "🔗 added " <> T.pack (show addedLinks) <> " internal link" <> (if addedLinks == 1 then "" else "s")
         case mkTitle title of
-          Right validTitle -> pure (Just (UpdateLink (IL.relativePath fr) validTitle [detail]))
+          Right validTitle -> pure (Just (UpdateLink (IL.relativePath fr) validTitle [InternalLinksAdded (IL.linksAdded fr)]))
           Left titleError -> do
             logMsg $ "  ⚠️  Skipping update link: " <> titleError
             pure Nothing

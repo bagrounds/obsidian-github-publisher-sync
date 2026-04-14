@@ -1,158 +1,357 @@
 module Automation.DailyUpdates
-  ( updatesSectionHeader
+  ( UpdateDetail (..)
   , UpdateLink (..)
-  , buildUpdateLink
   , addUpdateLinks
   , extractTitleFromFile
   , addUpdateLinksToReflection
   ) where
 
 import Control.Monad (when)
+import Data.List (find)
 import qualified Data.Map.Strict as Map
+import Data.Maybe (catMaybes, fromMaybe, mapMaybe)
 import Data.Text (Text)
 import qualified Data.Text as T
 import qualified Data.Text.IO as TIO
 import System.Directory (doesFileExist)
 import System.FilePath ((</>), takeBaseName)
+import Text.Read (readMaybe)
 
 import Automation.DailyReflection (ensureDailyReflection, EnsureReflectionResult (..), findFirstSectionIndex, embedSectionHeaders)
 import Automation.Frontmatter (parseFrontmatter)
+import Automation.Platform (Platform (..))
 import Automation.Types (updatesSectionHeader, RelativePath, unRelativePath, Title, unTitle)
 
+-- | Types of updates that can be made to a page
+data UpdateDetail
+  = ImageAdded
+  | InternalLinksAdded Int
+  | PostedTo Platform
+  deriving (Show, Eq, Ord)
+
+-- | A link to an updated page with its details
 data UpdateLink = UpdateLink
-  { ulRelativePath :: RelativePath
-  , ulTitle        :: Title
-  , ulDetails      :: [Text]
+  { updateRelativePath :: RelativePath
+  , updateTitle        :: Title
+  , updateDetails      :: [UpdateDetail]
   } deriving (Show, Eq)
 
+-- | Internal representation of a parsed page entry
+data PageEntry = PageEntry
+  { entryPath    :: Text
+  , entryTitle   :: Text
+  , entryDetails :: [UpdateDetail]
+  } deriving (Show, Eq)
+
+-- Column identity: two details belong to the same column when their structure matches
+sameColumn :: UpdateDetail -> UpdateDetail -> Bool
+sameColumn ImageAdded ImageAdded                     = True
+sameColumn (InternalLinksAdded _) (InternalLinksAdded _) = True
+sameColumn (PostedTo a) (PostedTo b)                 = a == b
+sameColumn _ _                                       = False
+
+-- Canonical column ordering determines table layout
+canonicalColumns :: [UpdateDetail]
+canonicalColumns =
+  [ ImageAdded
+  , InternalLinksAdded 0
+  , PostedTo Bluesky
+  , PostedTo Mastodon
+  , PostedTo Twitter
+  ]
+
+columnEmoji :: UpdateDetail -> Text
+columnEmoji ImageAdded            = "🖼️"
+columnEmoji (InternalLinksAdded _) = "🔗"
+columnEmoji (PostedTo Bluesky)    = "🦋"
+columnEmoji (PostedTo Mastodon)   = "🐘"
+columnEmoji (PostedTo Twitter)    = "🐦"
+
+columnLabel :: UpdateDetail -> Text
+columnLabel ImageAdded            = "images"
+columnLabel (InternalLinksAdded _) = "links"
+columnLabel (PostedTo Bluesky)    = "Bluesky"
+columnLabel (PostedTo Mastodon)   = "Mastodon"
+columnLabel (PostedTo Twitter)    = "Twitter"
+
+cellText :: UpdateDetail -> Text
+cellText (InternalLinksAdded n) = T.pack (show n)
+cellText detail                 = columnEmoji detail
+
+escapeTablePipe :: Text -> Text
+escapeTablePipe = T.replace "|" "\\|"
+
+unescapeTablePipe :: Text -> Text
+unescapeTablePipe = T.replace "\\|" "|"
+
+-- Serialization for backward compatibility with bullet format
+detailFromText :: Text -> Maybe UpdateDetail
+detailFromText text
+  | text == "🖼️ added image"       = Just ImageAdded
+  | "🔗 added " `T.isPrefixOf` text = parseInternalLinks text
+  | text == "🦋 posted to BlueSky"  = Just (PostedTo Bluesky)
+  | text == "🐘 posted to Mastodon" = Just (PostedTo Mastodon)
+  | text == "🐦 posted to Twitter"  = Just (PostedTo Twitter)
+  | otherwise                       = Nothing
+  where
+    parseInternalLinks source =
+      let stripped = T.drop (T.length "🔗 added ") source
+          numberText = T.takeWhile (/= ' ') stripped
+      in InternalLinksAdded <$> readMaybe (T.unpack numberText)
+
+emojiToColumnRepresentative :: Text -> Maybe UpdateDetail
+emojiToColumnRepresentative "🖼️" = Just ImageAdded
+emojiToColumnRepresentative "🔗"  = Just (InternalLinksAdded 0)
+emojiToColumnRepresentative "🦋"  = Just (PostedTo Bluesky)
+emojiToColumnRepresentative "🐘"  = Just (PostedTo Mastodon)
+emojiToColumnRepresentative "🐦"  = Just (PostedTo Twitter)
+emojiToColumnRepresentative _     = Nothing
+
+parseCellToDetail :: UpdateDetail -> Text -> Maybe UpdateDetail
+parseCellToDetail (InternalLinksAdded _) num = InternalLinksAdded <$> readMaybe (T.unpack num)
+parseCellToDetail column cell
+  | cell == cellText column = Just column
+  | cell == "✓"             = Just column
+  | otherwise               = Nothing
+
+-- Merging: combine two details of the same column
+mergeDetail :: UpdateDetail -> UpdateDetail -> UpdateDetail
+mergeDetail (InternalLinksAdded existing) (InternalLinksAdded incoming) = InternalLinksAdded (existing + incoming)
+mergeDetail _ incoming = incoming
+
+mergeDetailLists :: [UpdateDetail] -> [UpdateDetail] -> [UpdateDetail]
+mergeDetailLists = foldl' mergeOneDetail
+  where
+    mergeOneDetail existing incoming
+      | any (sameColumn incoming) existing =
+          fmap (\detail -> if sameColumn detail incoming then mergeDetail detail incoming else detail) existing
+      | otherwise = existing <> [incoming]
+
+mergeEntries :: [PageEntry] -> [PageEntry] -> [PageEntry]
+mergeEntries = foldl' mergeOneEntry
+  where
+    mergeOneEntry entries incoming
+      | any (\entry -> entryPath entry == entryPath incoming) entries =
+          fmap (\entry ->
+            if entryPath entry == entryPath incoming
+              then entry { entryDetails = mergeDetailLists (entryDetails entry) (entryDetails incoming) }
+              else entry) entries
+      | otherwise = entries <> [incoming]
+
+-- Parsing existing updates section
 stripMd :: Text -> Text
 stripMd path
   | T.isSuffixOf ".md" path = T.dropEnd 3 path
   | otherwise                = path
 
-buildUpdateLink :: Text -> Text -> Text
-buildUpdateLink relativePath title =
-  "- [[" <> stripMd relativePath <> "|" <> title <> "]]"
-
-buildPageEntry :: Text -> Text -> [Text] -> [Text]
-buildPageEntry path title details =
-  buildUpdateLink path title : fmap ("  - " <>) details
-
-extractUpdatesText :: Text -> Text
-extractUpdatesText content =
+extractSectionText :: Text -> Text
+extractSectionText content =
   case T.breakOn updatesSectionHeader content of
     (_, "") -> ""
     (_, sectionStart) ->
       let afterHeader = T.drop (T.length updatesSectionHeader) sectionStart
-      in case T.breakOn "\n## " afterHeader of
-        (section, _) -> section
+      in fst (T.breakOn "\n## " afterHeader)
 
-pagePresent :: Text -> Text -> Bool
-pagePresent updatesText path = T.isInfixOf ("[[" <> stripMd path <> "|") updatesText
+parseExistingEntries :: Text -> [PageEntry]
+parseExistingEntries sectionText
+  | T.null sectionText = []
+  | T.isInfixOf "| Page |" sectionText = parseTableEntries sectionText
+  | otherwise = parseBulletEntries sectionText
 
-detailPresent :: Text -> Text -> Bool
-detailPresent updatesText detail = T.isInfixOf ("  - " <> detail) updatesText
+parseBulletEntries :: Text -> [PageEntry]
+parseBulletEntries = mapMaybe parseBulletGroup . groupBullets . T.splitOn "\n"
 
-extractPageBullets :: Text -> Text -> Text
-extractPageBullets updatesText path =
-  let pageNeedle = "[[" <> stripMd path <> "|"
-      allLines = T.splitOn "\n" updatesText
-      pageIdx = findLineContaining pageNeedle allLines 0
-  in if pageIdx < length allLines
-    then
-      let subLines = takeWhile (T.isPrefixOf "  - ") (drop (pageIdx + 1) allLines)
-      in T.intercalate "\n" subLines
-    else ""
+groupBullets :: [Text] -> [(Text, [Text])]
+groupBullets [] = []
+groupBullets (line : rest)
+  | "- [[" `T.isPrefixOf` line =
+      let (subBullets, remaining) = span (T.isPrefixOf "  - ") rest
+      in (line, fmap (T.drop 4) subBullets) : groupBullets remaining
+  | otherwise = groupBullets rest
+
+parseBulletGroup :: (Text, [Text]) -> Maybe PageEntry
+parseBulletGroup (pageLine, detailTexts) = do
+  (path, title) <- parseWikiLinkLine pageLine
+  let details = mapMaybe detailFromText detailTexts
+  pure (PageEntry path title details)
+
+parseWikiLinkLine :: Text -> Maybe (Text, Text)
+parseWikiLinkLine line = do
+  let afterPrefix = T.drop (T.length "- [[") line
+  case T.breakOn "|" afterPrefix of
+    (_, "") -> Nothing
+    (path, rest) ->
+      case T.breakOn "]]" (T.drop 1 rest) of
+        (title, suffix) | not (T.null suffix) -> Just (path, title)
+        _ -> Nothing
+
+parseTableEntries :: Text -> [PageEntry]
+parseTableEntries sectionText =
+  let contentLines = filter (not . T.null) (T.splitOn "\n" sectionText)
+      headerLine = find (T.isInfixOf "| Page |") contentLines
+      dataRows = case break (T.isInfixOf "| Page |") contentLines of
+        (_, _ : rest) -> case rest of
+          (_ : rows) -> filter isDataRow rows
+          _          -> []
+        _ -> []
+  in case headerLine of
+    Nothing     -> []
+    Just header ->
+      let columns = parseHeaderColumns header
+      in mapMaybe (parseTableRow columns) dataRows
+
+isDataRow :: Text -> Bool
+isDataRow line = T.isInfixOf "[[" (T.strip line)
+
+parseHeaderColumns :: Text -> [UpdateDetail]
+parseHeaderColumns header =
+  case splitSimpleCells header of
+    (_ : columnCells) -> mapMaybe (emojiToColumnRepresentative . T.strip) columnCells
+    _                 -> []
+
+splitSimpleCells :: Text -> [Text]
+splitSimpleCells line =
+  let trimmed = T.strip line
+      stripped = fromMaybe trimmed (T.stripPrefix "|" trimmed >>= T.stripSuffix "|" . T.strip)
+  in fmap T.strip (T.splitOn "|" stripped)
+
+parseTableRow :: [UpdateDetail] -> Text -> Maybe PageEntry
+parseTableRow columns row = do
+  let (pageCell, valueCells) = parseDataRowCells row
+  (path, title) <- parseWikiLinkCell pageCell
+  let details = catMaybes (zipWith parseCellToDetail columns valueCells)
+  pure (PageEntry path title details)
+
+parseDataRowCells :: Text -> (Text, [Text])
+parseDataRowCells row =
+  let trimmed = T.strip row
+      afterLeadingPipe = fromMaybe trimmed (T.stripPrefix "|" trimmed)
+  in case T.breakOn "[[" afterLeadingPipe of
+    (_, "") -> ("", [])
+    (_, fromOpen) ->
+      case T.breakOn "]]" fromOpen of
+        (_, "") -> ("", [])
+        (linkPart, closeAndRest) ->
+          let pageCell = linkPart <> "]]"
+              remaining = T.drop 2 closeAndRest
+          in (T.strip pageCell, parseValueCells remaining)
+
+parseValueCells :: Text -> [Text]
+parseValueCells remaining =
+  case T.breakOn "|" remaining of
+    (_, "") -> []
+    (_, afterFirstPipe) ->
+      let content = T.drop 1 afterFirstPipe
+          withoutTrailing = fromMaybe content (T.stripSuffix "|" content)
+      in fmap T.strip (T.splitOn "|" withoutTrailing)
+
+parseWikiLinkCell :: Text -> Maybe (Text, Text)
+parseWikiLinkCell cell =
+  case T.breakOn "[[" cell of
+    (_, "") -> Nothing
+    (_, rest) ->
+      let linkContent = T.drop 2 rest
+      in case T.breakOn "]]" linkContent of
+        (_, "") -> Nothing
+        (inner, _) ->
+          case T.breakOn "\\|" inner of
+            (path, titleRest) | not (T.null titleRest) ->
+              Just (unescapeTablePipe path, unescapeTablePipe (T.drop 2 titleRest))
+            _ ->
+              case T.breakOn "|" inner of
+                (_, "")    -> Nothing
+                (path, titleRest) -> Just (path, T.drop 1 titleRest)
+
+-- Rendering
+activeColumns :: [PageEntry] -> [UpdateDetail]
+activeColumns entries =
+  let allDetails = concatMap entryDetails entries
+  in filter (\column -> any (sameColumn column) allDetails) canonicalColumns
+
+computeColumnCount :: [PageEntry] -> UpdateDetail -> Int
+computeColumnCount entries (InternalLinksAdded _) =
+  sum [n | entry <- entries, InternalLinksAdded n <- entryDetails entry]
+computeColumnCount entries column =
+  length (filter (any (sameColumn column) . entryDetails) entries)
+
+buildStatsLine :: [PageEntry] -> Text
+buildStatsLine entries =
+  let pageCount = length entries
+      pageWord = if pageCount == 1 then "page" else "pages"
+      columnStats = mapMaybe (buildColumnStat entries) canonicalColumns
+      parts = (T.pack (show pageCount) <> " " <> pageWord) : columnStats
+  in "📊 " <> T.intercalate " · " parts
+
+buildColumnStat :: [PageEntry] -> UpdateDetail -> Maybe Text
+buildColumnStat entries column =
+  let count = computeColumnCount entries column
+  in if count > 0
+    then Just (T.pack (show count) <> " " <> columnEmoji column <> " " <> columnLabel column)
+    else Nothing
+
+buildTable :: [PageEntry] -> Text
+buildTable entries =
+  let columns = activeColumns entries
+  in if null columns
+    then ""
+    else
+      let headerRow = "| Page | " <> T.intercalate " | " (fmap columnEmoji columns) <> " |"
+          separatorRow = "|---|" <> T.concat (replicate (length columns) "---|")
+          dataRows = fmap (buildTableRow columns) entries
+      in T.intercalate "\n" (headerRow : separatorRow : dataRows)
+
+buildTableRow :: [UpdateDetail] -> PageEntry -> Text
+buildTableRow columns entry =
+  let pageLink = "[[" <> escapeTablePipe (entryPath entry) <> "\\|" <> escapeTablePipe (entryTitle entry) <> "]]"
+      cells = fmap (cellForColumn entry) columns
+  in "| " <> pageLink <> " | " <> T.intercalate " | " cells <> " |"
+
+cellForColumn :: PageEntry -> UpdateDetail -> Text
+cellForColumn entry column =
+  maybe "" cellText (find (sameColumn column) (entryDetails entry))
+
+renderUpdatesSection :: [PageEntry] -> Text
+renderUpdatesSection [] = ""
+renderUpdatesSection entries =
+  let statsLine = buildStatsLine entries
+      table = buildTable entries
+  in updatesSectionHeader <> "\n" <> statsLine <> "\n\n" <> table <> "\n"
+
+-- Core logic: parse existing → merge new → render
+convertToEntry :: UpdateLink -> PageEntry
+convertToEntry (UpdateLink pathNewtype titleNewtype details) =
+  PageEntry (stripMd (unRelativePath pathNewtype)) (unTitle titleNewtype) details
 
 addUpdateLinks :: Text -> [UpdateLink] -> Text
 addUpdateLinks content [] = content
-addUpdateLinks content links = foldl addSingleUpdate content links
+addUpdateLinks content links =
+  let existingText = extractSectionText content
+      existingEntries = parseExistingEntries existingText
+      newEntries = fmap convertToEntry links
+      mergedEntries = mergeEntries existingEntries newEntries
+      updatedSection = renderUpdatesSection mergedEntries
+  in replaceUpdatesSection content updatedSection
 
-addSingleUpdate :: Text -> UpdateLink -> Text
-addSingleUpdate content (UpdateLink pathNewtype titleNewtype details) =
-  let path = unRelativePath pathNewtype
-      title = unTitle titleNewtype
-      updatesText = extractUpdatesText content
-      pageBullets = extractPageBullets updatesText path
-      newDetails = filter (not . detailPresent pageBullets) details
-  in case newDetails of
-    [] -> content
-    _  | not (T.isInfixOf updatesSectionHeader content) ->
-           appendNewSection content path title newDetails
-       | not (pagePresent updatesText path) ->
-           appendPageToSection content path title newDetails
-       | otherwise ->
-           insertDetailsUnderPage content path newDetails
+replaceUpdatesSection :: Text -> Text -> Text
+replaceUpdatesSection content newSection =
+  case T.breakOn updatesSectionHeader content of
+    (_, "") ->
+      case findFirstSectionIndex embedSectionHeaders content of
+        Just idx ->
+          let (before, after) = T.splitAt idx content
+          in T.stripEnd before <> "\n\n" <> newSection <> "\n" <> after
+        Nothing ->
+          T.stripEnd content <> "\n\n" <> newSection
+    (before, sectionStart) ->
+      let afterHeader = T.drop (T.length updatesSectionHeader) sectionStart
+          after = case T.breakOn "\n## " afterHeader of
+            (_, rest) | not (T.null rest) -> T.drop 1 rest
+            _                             -> ""
+      in if T.null after
+        then T.stripEnd before <> "\n\n" <> newSection
+        else T.stripEnd before <> "\n\n" <> newSection <> "\n" <> after
 
-appendNewSection :: Text -> Text -> Text -> [Text] -> Text
-appendNewSection content path title details =
-  let entryLines = buildPageEntry path title details
-      sectionBlock = updatesSectionHeader
-        <> "\n" <> T.intercalate "\n" entryLines <> "\n"
-  in case findFirstSectionIndex embedSectionHeaders content of
-    Just idx ->
-      let (before, after) = T.splitAt idx content
-      in T.stripEnd before <> "\n\n" <> sectionBlock <> "\n" <> after
-    Nothing ->
-      T.stripEnd content <> "\n\n" <> sectionBlock
-
-appendPageToSection :: Text -> Text -> Text -> [Text] -> Text
-appendPageToSection content path title details =
-  let allLines = T.splitOn "\n" content
-      updateIdx = findLineIndex updatesSectionHeader allLines 0
-      endIdx = findNextH2OrEnd allLines (updateIdx + 1)
-      (before, after) = splitAt endIdx allLines
-      trimmedBefore = dropTrailingBlanks before
-      entryLines = buildPageEntry path title details
-  in T.intercalate "\n" (trimmedBefore <> entryLines <> [""] <> after)
-
-insertDetailsUnderPage :: Text -> Text -> [Text] -> Text
-insertDetailsUnderPage content path details =
-  let allLines = T.splitOn "\n" content
-      pageNeedle = "[[" <> stripMd path <> "|"
-      pageIdx = findLineContaining pageNeedle allLines 0
-      insertIdx = skipSubBullets allLines (pageIdx + 1)
-      detailLines = fmap ("  - " <>) details
-      (before, after) = splitAt insertIdx allLines
-  in T.intercalate "\n" (before <> detailLines <> after)
-
-findLineIndex :: Text -> [Text] -> Int -> Int
-findLineIndex _ [] n = n
-findLineIndex header (l : rest) n
-  | T.isPrefixOf header l = n
-  | otherwise              = findLineIndex header rest (n + 1)
-
-findLineContaining :: Text -> [Text] -> Int -> Int
-findLineContaining _ [] n = n
-findLineContaining needle (l : rest) n
-  | T.isInfixOf needle l = n
-  | otherwise             = findLineContaining needle rest (n + 1)
-
-findNextH2OrEnd :: [Text] -> Int -> Int
-findNextH2OrEnd allLines idx
-  | idx >= length allLines = length allLines
-  | T.isPrefixOf "## " (safeIdx allLines idx) = idx
-  | otherwise = findNextH2OrEnd allLines (idx + 1)
-
-safeIdx :: [Text] -> Int -> Text
-safeIdx xs i
-  | i >= 0 && i < length xs = xs !! i
-  | otherwise                = ""
-
-safeIndex :: [a] -> Int -> Maybe a
-safeIndex xs i
-  | i < 0 || i >= length xs = Nothing
-  | otherwise                = Just (xs !! i)
-
-skipSubBullets :: [Text] -> Int -> Int
-skipSubBullets allLines idx =
-  case safeIndex allLines idx of
-    Just l | T.isPrefixOf "  - " l -> skipSubBullets allLines (idx + 1)
-    _                              -> idx
-
-dropTrailingBlanks :: [Text] -> [Text]
-dropTrailingBlanks = reverse . dropWhile (\l -> T.strip l == "") . reverse
-
+-- I/O operations
 extractTitleFromFile :: FilePath -> IO Text
 extractTitleFromFile filePath = do
   exists <- doesFileExist filePath
@@ -161,7 +360,7 @@ extractTitleFromFile filePath = do
       fileContent <- TIO.readFile filePath
       let (frontmatter, _) = parseFrontmatter fileContent
           fallback = T.pack (takeBaseName filePath)
-      pure (maybe fallback (\t -> if T.null t then fallback else t) (Map.lookup "title" frontmatter))
+      pure (maybe fallback (\title -> if T.null title then fallback else title) (Map.lookup "title" frontmatter))
     else pure (T.pack (takeBaseName filePath))
 
 addUpdateLinksToReflection :: FilePath -> Text -> [UpdateLink] -> IO Bool
@@ -181,6 +380,6 @@ addUpdateLinksToReflection reflectionsDir date links = do
     then pure False
     else do
       TIO.writeFile reflectionPath updated
-      let linkPaths = T.intercalate ", " (fmap (unRelativePath . ulRelativePath) links)
+      let linkPaths = T.intercalate ", " (fmap (unRelativePath . updateRelativePath) links)
       TIO.putStrLn ("  🔄 Added update link(s) to " <> date <> " reflection: " <> linkPaths)
       pure True

@@ -11,7 +11,7 @@ image_prompt: "An intricate, double-exposed digital illustration. The primary si
 link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-13T00:00:00Z
 force_analyze_links: false
-updated: 2026-04-14T13:45:57
+updated: 2026-04-14T15:36:17
 ---
 [Home](../index.md) > [📰 The Noise](./index.md) | [⏮️](./2026-04-12-global-currents-shifting-sands.md) [⏭️](./2026-04-14-global-currents-shifting-sands.md)  
 # 2026-04-13 | 📰 🌍 Global Currents, Shifting Sands 🌐 📰  
@@ -60,3 +60,11 @@ updated: 2026-04-14T13:45:57
 ✍️ Written by gemini-2.5-flash  
   
 ✍️ Written by gemini-2.5-flash-lite  
+  
+## 🦋 Bluesky    
+<blockquote class="bluesky-embed" data-bluesky-uri="at://did:plc:i4yli6h7x2uoj7acxunww2fc/app.bsky.feed.post/3mjhpii2wlc2a" data-bluesky-cid="bafyreic6tmpoau4rsdiuyrrtdighk42lfp3ocluutp4jgwk4zi5rzgiy2q"><p>2026-04-13 | 📰 🌍 Global Currents, Shifting Sands 🌐 📰  
+  
+#AI Q: 🌎 Which global issue feels most fragmented today?  
+  
+🚀 Space Exploration | 🕊️ Geopolitical Talks | 🤖 AI Regulation | 🌡️ Climate Concerns  
+https://bagrounds.org/the-noise/2026-04-13-global-currents-shifting-sands</p>&mdash; <a href="https://bsky.app/profile/did:plc:i4yli6h7x2uoj7acxunww2fc?ref_src=embed">Bryan Grounds (@bagrounds.bsky.social)</a> <a href="https://bsky.app/profile/did:plc:i4yli6h7x2uoj7acxunww2fc/post/3mjhpii2wlc2a?ref_src=embed">2026-04-14T15:36:27.000Z</a></blockquote><script async src="https://embed.bsky.app/static/embed.js" charset="utf-8"></script>

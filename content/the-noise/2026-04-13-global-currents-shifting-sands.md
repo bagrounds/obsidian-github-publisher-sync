@@ -11,8 +11,9 @@ image_prompt: "An intricate, double-exposed digital illustration. The primary si
 link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-13T00:00:00Z
 force_analyze_links: false
+updated: 2026-04-14T13:45:57
 ---
-[Home](../index.md) > [📰 The Noise](./index.md) | [⏮️](./2026-04-12-global-currents-shifting-sands.md)  
+[Home](../index.md) > [📰 The Noise](./index.md) | [⏮️](./2026-04-12-global-currents-shifting-sands.md) [⏭️](./2026-04-14-global-currents-shifting-sands.md)  
 # 2026-04-13 | 📰 🌍 Global Currents, Shifting Sands 🌐 📰  
 ![the-noise-2026-04-13-global-currents-shifting-sands](../the-noise-2026-04-13-global-currents-shifting-sands.jpg)  
   

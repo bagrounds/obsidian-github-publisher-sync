@@ -5,10 +5,13 @@ module Automation.Platforms.Bluesky
   , LinkCard (..)
   , OEmbedConfig (..)
   , Error (HttpError, JsonParseError, ExtractionError, NetworkError)
+  , Facet (..)
+  , FacetType (..)
   , classifyException
   , parseSession
   , parsePostResponse
   , parseOEmbedHtml
+  , detectLinkFacets
   , limits
   , displayName
   , sectionHeader
@@ -195,11 +198,12 @@ data Facet = Facet
   { facetStart :: Int
   , facetEnd   :: Int
   , facetType  :: FacetType
-  }
+  } deriving (Show, Eq)
 
 data FacetType
   = FacetLink Text
   | FacetMention Text
+  deriving (Show, Eq)
 
 encodeFacet :: Facet -> Json.Value
 encodeFacet Facet{..} =
@@ -224,22 +228,42 @@ encodeFeature (FacetMention did) =
     ]
 
 detectLinkFacets :: Text -> [Facet]
-detectLinkFacets txt =
-  let encoded = TE.encodeUtf8 txt
-      tokens = T.words txt
-  in foldTokens encoded 0 tokens
+detectLinkFacets = findUrlFacets 0
 
-foldTokens :: BS.ByteString -> Int -> [Text] -> [Facet]
-foldTokens _ _ [] = []
-foldTokens fullEncoded pos (token : rest) =
-  let tokenBytes = TE.encodeUtf8 token
-      tokenLen = BS.length tokenBytes
-      spaceLen = if null rest then 0 else 1
-      facets = [Facet pos (pos + tokenLen) (FacetLink (normalizeUrl token)) | isUrl token]
-  in facets <> foldTokens fullEncoded (pos + tokenLen + spaceLen) rest
+findUrlFacets :: Int -> Text -> [Facet]
+findUrlFacets offset txt =
+  case findNextUrl txt of
+    Nothing -> []
+    Just (before, url, after) ->
+      let prefixBytes = BS.length (TE.encodeUtf8 before)
+          urlBytes = BS.length (TE.encodeUtf8 url)
+          start = offset + prefixBytes
+          end = start + urlBytes
+      in Facet start end (FacetLink (normalizeUrl url)) : findUrlFacets end after
 
-isUrl :: Text -> Bool
-isUrl t = T.isPrefixOf "http://" t || T.isPrefixOf "https://" t
+findNextUrl :: Text -> Maybe (Text, Text, Text)
+findNextUrl txt =
+  let (beforeHttps, restHttps) = T.breakOn "https://" txt
+      (beforeHttp, restHttp) = T.breakOn "http://" txt
+  in pickEarliest (beforeHttps, restHttps) (beforeHttp, restHttp)
+
+pickEarliest :: (Text, Text) -> (Text, Text) -> Maybe (Text, Text, Text)
+pickEarliest (beforeHttps, restHttps) (beforeHttp, restHttp)
+  | T.null restHttps && T.null restHttp = Nothing
+  | T.null restHttp = Just (splitUrl beforeHttps restHttps)
+  | T.null restHttps = Just (splitUrl beforeHttp restHttp)
+  | T.length beforeHttps <= T.length beforeHttp = Just (splitUrl beforeHttps restHttps)
+  | otherwise = Just (splitUrl beforeHttp restHttp)
+
+splitUrl :: Text -> Text -> (Text, Text, Text)
+splitUrl before rest =
+  let url = T.takeWhile (not . isUrlTerminator) rest
+      after = T.drop (T.length url) rest
+  in (before, url, after)
+
+isUrlTerminator :: Char -> Bool
+isUrlTerminator character =
+  character == ' ' || character == '\n' || character == '\r' || character == '\t'
 
 normalizeUrl :: Text -> Text
 normalizeUrl t

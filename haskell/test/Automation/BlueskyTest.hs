@@ -1,6 +1,7 @@
 module Automation.BlueskyTest (tests) where
 
 import Control.Exception (toException)
+import qualified Data.ByteString as BS
 import qualified Data.ByteString.Lazy as LBS
 import Data.Maybe (isJust, isNothing)
 import qualified Data.Text as T
@@ -10,6 +11,7 @@ import Test.Tasty.HUnit (testCase, (@?=), assertBool)
 import Test.Tasty.QuickCheck (testProperty)
 
 import qualified Automation.Platforms.Bluesky as Bluesky
+import Automation.Platforms.Bluesky (Facet (..))
 import Automation.Retry (HttpCodeException (HttpCodeException))
 
 tests :: TestTree
@@ -27,6 +29,7 @@ tests = testGroup "Bluesky"
   , extractRegenerationUrlTests
   , replaceSectionContentTests
   , isBrokenEmbedTests
+  , detectLinkFacetsTests
   , propertyTests
   ]
 
@@ -338,6 +341,114 @@ replaceSectionContentTests = testGroup "replaceSectionContent"
         not (brokenEmbedExample `T.isInfixOf` result)
   ]
 
+detectLinkFacetsTests :: TestTree
+detectLinkFacetsTests = testGroup "detectLinkFacets"
+  [ testCase "detects URL in simple ASCII text" $
+      case Bluesky.detectLinkFacets "hello https://example.com world" of
+        [facet] -> do
+          facetStart facet @?= 6
+          facetEnd facet @?= 25
+        other -> assertBool ("expected 1 facet, got " <> show (length other)) False
+
+  , testCase "detects URL at start of text" $
+      case Bluesky.detectLinkFacets "https://example.com rest" of
+        [facet] -> do
+          facetStart facet @?= 0
+          facetEnd facet @?= 19
+        other -> assertBool ("expected 1 facet, got " <> show (length other)) False
+
+  , testCase "detects URL at end of text" $
+      case Bluesky.detectLinkFacets "check https://example.com" of
+        [facet] -> do
+          facetStart facet @?= 6
+          facetEnd facet @?= 25
+        other -> assertBool ("expected 1 facet, got " <> show (length other)) False
+
+  , testCase "handles text with no URLs" $
+      Bluesky.detectLinkFacets "just plain text" @?= []
+
+  , testCase "handles text with newlines before URL" $
+      let text = "line one\nline two\nhttps://example.com"
+          expected = BS.length (TE.encodeUtf8 "line one\nline two\n")
+      in case Bluesky.detectLinkFacets text of
+        [facet] -> do
+          facetStart facet @?= expected
+          facetEnd facet @?= expected + 19
+        other -> assertBool ("expected 1 facet, got " <> show (length other)) False
+
+  , testCase "handles text with double newlines before URL" $
+      let text = "title\n\nquestion\n\ntags\nhttps://example.com"
+          expected = BS.length (TE.encodeUtf8 "title\n\nquestion\n\ntags\n")
+      in case Bluesky.detectLinkFacets text of
+        [facet] -> do
+          facetStart facet @?= expected
+          facetEnd facet @?= expected + 19
+        other -> assertBool ("expected 1 facet, got " <> show (length other)) False
+
+  , testCase "handles text with emojis before URL" $
+      let text = "\129300 hello\nhttps://example.com"
+          expected = BS.length (TE.encodeUtf8 "\129300 hello\n")
+      in case Bluesky.detectLinkFacets text of
+        [facet] -> do
+          facetStart facet @?= expected
+          facetEnd facet @?= expected + 19
+        other -> assertBool ("expected 1 facet, got " <> show (length other)) False
+
+  , testCase "reproduces the reported bug scenario with emojis and newlines" $
+      let text = T.intercalate "\n"
+            [ "\129504\129309 System 2 Rapport Building"
+            , ""
+            , "#AI Q: \129504 How often do snap judgments ruin your chance to connect with someone?"
+            , ""
+            , "\129300 Cognitive Science | \128483\65039 Communication Skills | \129309 Interpersonal Dynamics | \129504 Behavioral Psychology"
+            , "https://bagrounds.org/bot-chats/system-2-rapport-building"
+            ]
+          url = "https://bagrounds.org/bot-chats/system-2-rapport-building"
+          prefixBeforeUrl = T.intercalate "\n"
+            [ "\129504\129309 System 2 Rapport Building"
+            , ""
+            , "#AI Q: \129504 How often do snap judgments ruin your chance to connect with someone?"
+            , ""
+            , "\129300 Cognitive Science | \128483\65039 Communication Skills | \129309 Interpersonal Dynamics | \129504 Behavioral Psychology"
+            , ""
+            ]
+          expectedStart = BS.length (TE.encodeUtf8 prefixBeforeUrl)
+          expectedEnd = expectedStart + BS.length (TE.encodeUtf8 url)
+      in case Bluesky.detectLinkFacets text of
+        [facet] -> do
+          facetStart facet @?= expectedStart
+          facetEnd facet @?= expectedEnd
+        other -> assertBool ("expected 1 facet, got " <> show (length other)) False
+
+  , testCase "detects multiple URLs" $
+      case Bluesky.detectLinkFacets "see https://a.com and https://b.com" of
+        [first, second] -> do
+          facetStart first @?= 4
+          facetEnd first @?= 17
+          facetStart second @?= 22
+          facetEnd second @?= 35
+        other -> assertBool ("expected 2 facets, got " <> show (length other)) False
+
+  , testCase "detects http URL" $
+      case Bluesky.detectLinkFacets "see http://example.com" of
+        [facet] -> do
+          facetStart facet @?= 4
+          facetEnd facet @?= 22
+        other -> assertBool ("expected 1 facet, got " <> show (length other)) False
+
+  , testCase "facet byte offsets match encoded text slicing" $
+      let text = "\129300 emoji text\n\nhttps://example.com/path"
+          encoded = TE.encodeUtf8 text
+      in case Bluesky.detectLinkFacets text of
+        [facet] ->
+          let sliced = BS.take (facetEnd facet - facetStart facet) (BS.drop (facetStart facet) encoded)
+          in TE.decodeUtf8 sliced @?= "https://example.com/path"
+        other -> assertBool ("expected 1 facet, got " <> show (length other)) False
+
+  , testCase "empty text produces no facets" $
+      Bluesky.detectLinkFacets "" @?= []
+  ]
+
 propertyTests :: TestTree
 propertyTests = testGroup "properties"
   [ testProperty "buildPostUrl contains DID and postId" $
@@ -421,6 +532,24 @@ propertyTests = testGroup "properties"
         let content = T.pack (filter (`notElem` ['\0']) postContent)
             darkEmbed = "<blockquote class=\"bluesky-embed\" data-bluesky-uri=\"at://did:plc:test/app.bsky.feed.post/abc\" data-bluesky-embed-color-mode=\"dark\"><p lang=\"en\">" <> content <> " real content</p></blockquote>"
         in not (Bluesky.needsDarkModeUpdate darkEmbed)
+
+  , testProperty "detectLinkFacets byte offsets correctly slice the URL from encoded text" $
+      \prefix ->
+        let safePrefix = T.pack (filter (`notElem` ['\0']) prefix)
+            url = "https://example.com/test"
+            text = safePrefix <> "\n" <> url
+            facets = Bluesky.detectLinkFacets text
+            encoded = TE.encodeUtf8 text
+        in case facets of
+          [facet] ->
+            let sliced = BS.take (facetEnd facet - facetStart facet) (BS.drop (facetStart facet) encoded)
+            in TE.decodeUtf8 sliced == url
+          _ -> False
+
+  , testProperty "detectLinkFacets returns empty for text without URLs" $
+      \content ->
+        let safeContent = T.pack (filter (\character -> character /= '\0' && character /= ':') content)
+        in null (Bluesky.detectLinkFacets safeContent)
   ]
 
 brokenEmbedExample :: T.Text

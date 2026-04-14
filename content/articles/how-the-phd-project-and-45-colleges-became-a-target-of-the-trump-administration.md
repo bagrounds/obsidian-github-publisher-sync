@@ -6,6 +6,9 @@ title: 👨‍🎓🎯🚫 How the Ph.D. Project, and 45 colleges, became a targ
 URL: https://bagrounds.org/articles/how-the-phd-project-and-45-colleges-became-a-target-of-the-trump-administration
 Author:
 tags:
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_time: 2026-04-08T00:00:00Z
+force_analyze_links: false
 ---
 [Home](../index.md) > [Articles](./index.md)  
 # [👨‍🎓🎯🚫 How the Ph.D. Project, and 45 colleges, became a target of the Trump administration](https://www.npr.org/2025/03/24/nx-s1-5330715/trump-phd-college-university-investigation-dei-diversity)  

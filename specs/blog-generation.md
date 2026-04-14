@@ -101,9 +101,10 @@
 
 ## 🔗 Navigation Links
 
-⏮️ `buildBackLink` creates a wikilink to the previous post using the series directory prefix and a back-arrow emoji.
-⏭️ `buildForwardLink` creates a wikilink to the next post with a forward-arrow emoji.
+⏮️ `buildBackLink` creates a wikilink to the previous post using the series directory prefix and a back-arrow emoji, delegating to the shared `Automation.Wikilink.formatWikilink`.
+⏭️ `buildForwardLink` creates a wikilink to the next post with a forward-arrow emoji, also using the shared `formatWikilink`.
 📄 `updatePreviousPost` modifies the previous post file on disk to inject the forward link into its existing navigation line.
+🔗 AI blog navigation links use `buildBackLink aiBlogConfig` and `buildForwardLink aiBlogConfig` rather than separate functions.
 
 ## 📄 Post Parsing and Slug Extraction
 

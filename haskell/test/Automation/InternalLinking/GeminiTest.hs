@@ -55,6 +55,20 @@ buildIdentificationPromptTests = testGroup "buildIdentificationPrompt"
   , testCase "does not include also-known-as for entries without subtitles" $
       let prompt = buildIdentificationPrompt "body" [sampleEntry]
       in assertBool "no also known as" (not (T.isInfixOf "also known as" prompt))
+  , testCase "includes also-known-as for single-word main title entries" $
+      let antifragileEntry = ContentEntry
+            (testRelativePath "books/antifragile.md")
+            (testTitle "Antifragile: Things That Gain from Disorder")
+            (testTitle "Antifragile: Things That Gain from Disorder")
+          prompt = buildIdentificationPrompt "body" [antifragileEntry]
+      in assertBool "has also known as" (T.isInfixOf "also known as \"Antifragile\"" prompt)
+  , testCase "includes also-known-as for dash-separated subtitle entries" $
+      let dashEntry = ContentEntry
+            (testRelativePath "books/system-design.md")
+            (testTitle "System Design Interview - An Insider's Guide")
+            (testTitle "System Design Interview - An Insider's Guide")
+          prompt = buildIdentificationPrompt "body" [dashEntry]
+      in assertBool "has also known as" (T.isInfixOf "also known as \"System Design Interview\"" prompt)
   , testCase "includes system instructions about conservative matching" $
       let prompt = buildIdentificationPrompt "body" [sampleEntry]
       in assertBool "has conservative instruction" (T.isInfixOf "conservative" prompt)

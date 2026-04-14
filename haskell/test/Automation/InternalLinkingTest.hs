@@ -124,8 +124,18 @@ extractMainTitleTests = testGroup "extractMainTitle"
       assertEqual "" Nothing (extractMainTitle "Thinking, Fast and Slow")
   , testCase "returns Nothing when main title too short" $
       assertEqual "" Nothing (extractMainTitle "AI 2041: Ten Visions for Our Future")
-  , testCase "returns Nothing when main title has fewer than 2 words" $
-      assertEqual "" Nothing (extractMainTitle "Abundance: The Inner Path to Wealth")
+  , testCase "extracts single-word main title" $
+      assertEqual "" (Just "Abundance") (extractMainTitle "Abundance: The Inner Path to Wealth")
+  , testCase "extracts single-word main title for distinctive books" $
+      assertEqual "" (Just "Antifragile") (extractMainTitle "Antifragile: Things That Gain from Disorder")
+  , testCase "extracts single-word main title for Refactoring" $
+      assertEqual "" (Just "Refactoring") (extractMainTitle "Refactoring: Improving the Design of Existing Code")
+  , testCase "extracts main title from dash-separated subtitle" $
+      assertEqual "" (Just "System Design Interview")
+        (extractMainTitle "System Design Interview - An Insider's Guide")
+  , testCase "prefers colon separator over dash separator" $
+      assertEqual "" (Just "Factfulness")
+        (extractMainTitle "Factfulness: Ten Reasons We're Wrong About the World - and Why Things Are Better Than You Think")
   , testCase "extracts from first colon-space only" $
       assertEqual "" (Just "A Pattern Language")
         (extractMainTitle "A Pattern Language: Towns, Buildings, Construction")
@@ -327,6 +337,45 @@ subtitleMatchingTests = testGroup "subtitle matching"
           result = applyReplacements content candidates (replicate (length candidates) True)
       in assertBool "wikilink uses full title"
            (T.isInfixOf "Domain-Driven Design: Tackling Complexity" result)
+  , testCase "matches single-word main title from book recommendation" $
+      let refactoringEntry = ContentEntry
+            (testRelativePath "books/refactoring.md")
+            (testTitle "🗑️ Refactoring: Improving the Design of Existing Code")
+            (testTitle "Refactoring: Improving the Design of Existing Code")
+          content = "* Refactoring by Martin Fowler is relevant because it covers restructuring code"
+          masked  = content
+          candidates = findLinkCandidates [refactoringEntry] content masked (testRelativePath "ai-blog/test.md")
+      in do
+          assertEqual "one candidate" 1 (length candidates)
+          case candidates of
+            (c:_) -> assertEqual "matched text" "Refactoring" (matchedText c)
+            [] -> assertBool "should have candidates" False
+  , testCase "matches single-word Antifragile via main title" $
+      let antifragileEntry = ContentEntry
+            (testRelativePath "books/antifragile.md")
+            (testTitle "📉 Antifragile: Things That Gain from Disorder")
+            (testTitle "Antifragile: Things That Gain from Disorder")
+          content = "Antifragile by Nassim Nicholas Taleb offers a contrasting perspective"
+          masked  = content
+          candidates = findLinkCandidates [antifragileEntry] content masked (testRelativePath "ai-blog/test.md")
+      in do
+          assertEqual "one candidate" 1 (length candidates)
+          case candidates of
+            (c:_) -> assertEqual "matched text" "Antifragile" (matchedText c)
+            [] -> assertBool "should have candidates" False
+  , testCase "matches dash-separated subtitle via main title" $
+      let systemDesignEntry = ContentEntry
+            (testRelativePath "books/system-design-interview.md")
+            (testTitle "🎨 System Design Interview - An Insider's Guide")
+            (testTitle "System Design Interview - An Insider's Guide")
+          content = "I recommend System Design Interview for preparing"
+          masked  = content
+          candidates = findLinkCandidates [systemDesignEntry] content masked (testRelativePath "reflections/test.md")
+      in do
+          assertEqual "one candidate" 1 (length candidates)
+          case candidates of
+            (c:_) -> assertEqual "matched text" "System Design Interview" (matchedText c)
+            [] -> assertBool "should have candidates" False
   ]
 
 extractBodyTests :: TestTree

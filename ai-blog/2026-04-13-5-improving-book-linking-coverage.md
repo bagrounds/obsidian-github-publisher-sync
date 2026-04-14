@@ -46,7 +46,7 @@ URL: https://bagrounds.org/ai-blog/2026-04-13-5-improving-book-linking-coverage
 
 ➕ Second, adding support for the dash separator. The function now tries the colon-space separator first, and if that does not yield a result, falls back to the space-dash-space separator. This ensures titles like "System Design Interview - An Insider's Guide" correctly extract "System Design Interview" as their main title.
 
-🧩 The implementation uses Haskell's Alternative type class to compose the two separator strategies cleanly with the angle-bracket-pipe operator, trying the colon separator first and falling back to the dash separator.
+🧩 The implementation uses Haskell's Alternative type class to compose the two separator strategies cleanly, trying the colon separator first and falling back to the dash separator.
 
 ## 📊 Impact
 

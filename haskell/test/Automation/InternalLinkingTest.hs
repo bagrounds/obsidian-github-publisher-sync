@@ -124,11 +124,11 @@ extractMainTitleTests = testGroup "extractMainTitle"
       assertEqual "" Nothing (extractMainTitle "Thinking, Fast and Slow")
   , testCase "returns Nothing when main title too short" $
       assertEqual "" Nothing (extractMainTitle "AI 2041: Ten Visions for Our Future")
-  , testCase "extracts single-word main title" $
+  , testCase "extracts single-word main title (Abundance)" $
       assertEqual "" (Just "Abundance") (extractMainTitle "Abundance: The Inner Path to Wealth")
-  , testCase "extracts single-word main title for distinctive books" $
+  , testCase "extracts single-word main title (Antifragile)" $
       assertEqual "" (Just "Antifragile") (extractMainTitle "Antifragile: Things That Gain from Disorder")
-  , testCase "extracts single-word main title for Refactoring" $
+  , testCase "extracts single-word main title (Refactoring)" $
       assertEqual "" (Just "Refactoring") (extractMainTitle "Refactoring: Improving the Design of Existing Code")
   , testCase "extracts main title from dash-separated subtitle" $
       assertEqual "" (Just "System Design Interview")

@@ -75,19 +75,19 @@ extractContext content pos matchLen =
   in prefix <> slice <> suffix
 
 extractMainTitle :: Text -> Maybe Text
-extractMainTitle fullTitle =
-  tryColonSeparator fullTitle <|> tryDashSeparator fullTitle
+extractMainTitle title =
+  tryColonSeparator title <|> tryDashSeparator title
   where
     tryColonSeparator :: Text -> Maybe Text
-    tryColonSeparator title =
-      case T.breakOn ": " title of
+    tryColonSeparator t =
+      case T.breakOn ": " t of
         (main, rest)
           | T.null rest                  -> Nothing
           | T.length main < minTitleLength -> Nothing
           | otherwise                     -> Just main
     tryDashSeparator :: Text -> Maybe Text
-    tryDashSeparator title =
-      case T.breakOn " - " title of
+    tryDashSeparator t =
+      case T.breakOn " - " t of
         (main, rest)
           | T.null rest                  -> Nothing
           | T.length main < minTitleLength -> Nothing

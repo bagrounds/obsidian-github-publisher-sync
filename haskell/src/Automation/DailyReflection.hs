@@ -24,6 +24,7 @@ import System.FilePath ((</>), dropExtension)
 import Automation.Frontmatter (quoteYamlValue)
 
 import Automation.BlogSeriesConfig (BlogSeriesConfig (..))
+import Automation.Wikilink (formatWikilink)
 import qualified Automation.Platforms.Bluesky as Bluesky
 import qualified Automation.Platforms.Mastodon as Mastodon
 import qualified Automation.Platforms.Twitter as Twitter
@@ -51,7 +52,7 @@ data UpdateReflectionResult = UpdateReflectionResult
 
 buildReflectionContent :: Text -> Maybe Text -> Text
 buildReflectionContent date previousDate =
-  let backLink = maybe "" (\pd -> " | [[reflections/" <> pd <> "|⏮️]]") previousDate
+  let backLink = maybe "" (\pd -> " | " <> formatWikilink ("reflections/" <> pd) "⏮️") previousDate
   in T.intercalate "\n"
     [ "---"
     , "share: true"
@@ -62,22 +63,22 @@ buildReflectionContent date previousDate =
     , "Author: \"[[bryan-grounds]]\""
     , "tags:"
     , "---"
-    , "[[index|Home]] > [[reflections/index|Reflections]]" <> backLink
+    , formatWikilink "index" "Home" <> " > " <> formatWikilink "reflections/index" "Reflections" <> backLink
     , "# " <> date
     , ""
     ]
 
 buildSeriesSectionHeading :: BlogSeriesConfig -> Text
 buildSeriesSectionHeading series =
-  "## [[" <> bscId series <> "/index|" <> bscIcon series <> " " <> bscName series <> "]]"
+  "## " <> formatWikilink (bscId series <> "/index") (bscIcon series <> " " <> bscName series)
 
 buildPostLink :: Text -> Text -> Text -> Text
 buildPostLink seriesId filenameNoExt displayTitle =
-  "- [[" <> seriesId <> "/" <> filenameNoExt <> "|" <> displayTitle <> "]]"
+  "- " <> formatWikilink (seriesId <> "/" <> filenameNoExt) displayTitle
 
 addForwardLink :: Text -> Text -> Text
 addForwardLink content targetDate =
-  let forwardLink = "[[reflections/" <> targetDate <> "|⏭️]]"
+  let forwardLink = formatWikilink ("reflections/" <> targetDate) "⏭️"
       navMarker = "[[reflections/index|Reflections]]"
   in if T.isInfixOf "⏭️" content
     then content

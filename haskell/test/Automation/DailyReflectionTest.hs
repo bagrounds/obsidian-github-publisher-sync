@@ -92,6 +92,12 @@ buildPostLinkTests = testGroup "buildPostLink"
   , testCase "handles special characters in title" $
       let result = buildPostLink "chickie-loo" "fancy-post" "A Post: With Colon"
       in assertBool "contains title" (T.isInfixOf "A Post: With Colon" result)
+  , testCase "preserves emojis in display title for blog series" $
+      buildPostLink "the-noise" "2026-04-14-my-post" "2026-04-14 | 📰 My Post 📰"
+        @?= "- [[the-noise/2026-04-14-my-post|2026-04-14 | 📰 My Post 📰]]"
+  , testCase "preserves emojis in display title for auto-blog-zero" $
+      buildPostLink "auto-blog-zero" "2026-04-14-my-post" "2026-04-14 | 🤖 My Post 🤖"
+        @?= "- [[auto-blog-zero/2026-04-14-my-post|2026-04-14 | 🤖 My Post 🤖]]"
   ]
 
 --------------------------------------------------------------------------------

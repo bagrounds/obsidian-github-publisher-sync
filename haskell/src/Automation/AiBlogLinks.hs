@@ -2,8 +2,6 @@ module Automation.AiBlogLinks
   ( NavLinkResult (..)
   , aiBlogNavPrefix
   , aiBlogConfig
-  , buildAiBlogBackLink
-  , buildAiBlogForwardLink
   , buildNavLine
   , updateNavLinks
   , navLinksMatch
@@ -24,6 +22,7 @@ import Data.Time.LocalTime (midnight)
 import System.Directory (doesDirectoryExist, doesFileExist, listDirectory)
 import System.FilePath ((</>))
 
+import Automation.BlogPrompt (buildBackLink, buildForwardLink)
 import Automation.BlogSeriesConfig (BlogSeriesConfig (..))
 import Automation.Frontmatter (parseFrontmatter)
 
@@ -42,22 +41,11 @@ aiBlogConfig = BlogSeriesConfig
 aiBlogNavPrefix :: Text
 aiBlogNavPrefix = "[[index|🏡 Home]] > [[/ai-blog/index|🤖 AI Blog]]"
 
-buildAiBlogBackLink :: Text -> Text
-buildAiBlogBackLink prevFilename =
-  "[[ai-blog/" <> stripMdExt prevFilename <> "|⏮️]]"
-
-buildAiBlogForwardLink :: Text -> Text
-buildAiBlogForwardLink nextFilename =
-  "[[ai-blog/" <> stripMdExt nextFilename <> "|⏭️]]"
-
-stripMdExt :: Text -> Text
-stripMdExt t = fromMaybe t (T.stripSuffix ".md" t)
-
 buildNavLine :: Maybe Text -> Maybe Text -> Text
 buildNavLine prevFilename nextFilename =
   let links = catMaybes
-        [ fmap buildAiBlogBackLink prevFilename
-        , fmap buildAiBlogForwardLink nextFilename
+        [ fmap (buildBackLink aiBlogConfig) prevFilename
+        , fmap (buildForwardLink aiBlogConfig) nextFilename
         ]
   in case links of
     [] -> aiBlogNavPrefix
@@ -148,8 +136,8 @@ extractAiBlogTitle aiBlogDir filename = do
       let (fm, _) = parseFrontmatter content
       pure $ case Map.lookup "title" fm of
         Just title -> title
-        Nothing    -> stripMdExt filename
-    else pure (stripMdExt filename)
+        Nothing    -> fromMaybe filename (T.stripSuffix ".md" filename)
+    else pure (fromMaybe filename (T.stripSuffix ".md" filename))
 
 buildReflectionLinks :: FilePath -> [NavLinkResult] -> IO [(Text, Text, Text)]
 buildReflectionLinks aiBlogDir results = do

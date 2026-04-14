@@ -324,7 +324,7 @@ runBlogSeries context seriesMap runConfigs seriesId = do
                       regenFilenameNoExt = case mRegen of
                         Just r  -> Just (T.pack (dropExtension r))
                         Nothing -> Nothing
-                  _ <- updateDailyReflection vaultDir todayText series filenameNoExt title regenFilenameNoExt
+                  _ <- updateDailyReflection vaultDir todayText series filenameNoExt displayTitle regenFilenameNoExt
 
                   let postRelPath = T.unpack seriesId </> T.unpack filename
                       postLocalPath = repoRoot </> postRelPath

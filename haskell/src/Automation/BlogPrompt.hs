@@ -39,6 +39,7 @@ import Automation.BlogSeriesConfig (BlogSeriesConfig (..))
 import Automation.Frontmatter (quoteYamlValue)
 import Automation.PacificTime (formatDay, formatDayHuman, toPacificLocalTime)
 import Automation.Text (isEmoji)
+import Automation.Wikilink (formatWikilink)
 import qualified Automation.Platforms.Bluesky as Bluesky
 import qualified Automation.Platforms.Mastodon as Mastodon
 import qualified Automation.Platforms.Twitter as Twitter
@@ -103,12 +104,12 @@ parseUtcTimestamp = iso8601ParseM . T.unpack
 buildBackLink :: BlogSeriesConfig -> Text -> Text
 buildBackLink series filename =
   let slug = fromMaybe filename (T.stripSuffix ".md" filename)
-  in "[[" <> bscId series <> "/" <> slug <> "|⏮️]]"
+  in formatWikilink (bscId series <> "/" <> slug) "⏮️"
 
 buildForwardLink :: BlogSeriesConfig -> Text -> Text
 buildForwardLink series filename =
   let slug = fromMaybe filename (T.stripSuffix ".md" filename)
-  in "[[" <> bscId series <> "/" <> slug <> "|⏭️]]"
+  in formatWikilink (bscId series <> "/" <> slug) "⏭️"
 
 buildDisplayTitle :: BlogSeriesConfig -> Day -> Text -> DisplayTitle
 buildDisplayTitle series today title =

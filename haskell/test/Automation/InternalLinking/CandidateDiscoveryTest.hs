@@ -7,7 +7,7 @@ import Automation.InternalLinking.CandidateDiscovery
   , LinkCandidate (..)
   , linkableDirs
   , escapeRegex
-  , formatWikilink
+  , formatContentEntryWikilink
   , extractContext
   , extractMainTitle
   , contentAlreadyLinksTo
@@ -27,7 +27,7 @@ tests = testGroup "InternalLinking.CandidateDiscovery"
   [ linkableDirsTests
   , stripEmojisTests
   , escapeRegexTests
-  , formatWikilinkTests
+  , formatContentEntryWikilinkTests
   , extractContextTests
   , extractMainTitleTests
   , contentAlreadyLinksToTests
@@ -71,17 +71,17 @@ escapeRegexTests = testGroup "escapeRegex"
       assertEqual "" "a\\[b\\]" (escapeRegex "a[b]")
   ]
 
-formatWikilinkTests :: TestTree
-formatWikilinkTests = testGroup "formatWikilink"
+formatContentEntryWikilinkTests :: TestTree
+formatContentEntryWikilinkTests = testGroup "formatContentEntryWikilink"
   [ testCase "formats basic wikilink" $
       let entry = ContentEntry (testRelativePath "books/test.md") (testTitle "Test Book") (testTitle "Test Book")
-      in assertEqual "" "[[books/test|Test Book]]" (formatWikilink entry)
+      in assertEqual "" "[[books/test|Test Book]]" (formatContentEntryWikilink entry)
   , testCase "strips .md from path" $
       let entry = ContentEntry (testRelativePath "books/foo.md") (testTitle "Foo") (testTitle "Foo")
-      in assertBool "no .md in link" (not (T.isInfixOf ".md" (formatWikilink entry)))
+      in assertBool "no .md in link" (not (T.isInfixOf ".md" (formatContentEntryWikilink entry)))
   , testCase "uses full title with emoji" $
       let entry = ContentEntry (testRelativePath "books/bar.md") (testTitle "📖 Bar Book") (testTitle "Bar Book")
-      in assertBool "has emoji title" (T.isInfixOf "📖 Bar Book" (formatWikilink entry))
+      in assertBool "has emoji title" (T.isInfixOf "📖 Bar Book" (formatContentEntryWikilink entry))
   ]
 
 extractContextTests :: TestTree
@@ -224,11 +224,11 @@ propertyTests = testGroup "properties"
   , testProperty "escapeRegex output is never shorter" $ \s ->
       let txt = T.pack (s :: String)
       in T.length (escapeRegex txt) >= T.length txt
-  , testProperty "formatWikilink contains entry title" $ \s ->
+  , testProperty "formatContentEntryWikilink contains entry title" $ \s ->
       let title = T.pack (s :: String)
       in not (T.null (T.strip title)) QC.==>
         let entry = ContentEntry (testRelativePath "books/test.md") (testTitle title) (testTitle title)
-        in T.isInfixOf title (formatWikilink entry)
+        in T.isInfixOf title (formatContentEntryWikilink entry)
   , testProperty "extractContext result length bounded by radius" $ \s ->
       let content = T.pack (s :: String)
       in not (T.null content) QC.==>

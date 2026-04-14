@@ -5,7 +5,7 @@ module Automation.InternalLinking.CandidateDiscovery
   , LinkCandidate (..)
   , linkableDirs
   , escapeRegex
-  , formatWikilink
+  , formatContentEntryWikilink
   , extractContext
   , extractMainTitle
   , contentAlreadyLinksTo
@@ -17,6 +17,7 @@ import Automation.Frontmatter (parseFrontmatter)
 import Automation.InternalLinking.LinkExtraction (hasSuffix)
 import Automation.Text (stripEmojis)
 import Automation.Types (RelativePath, unRelativePath, mkRelativePath, Title, unTitle, mkTitle)
+import Automation.Wikilink (formatWikilink)
 import Control.Applicative ((<|>))
 import Data.List (sortBy)
 import qualified Data.Map.Strict as Map
@@ -58,11 +59,11 @@ escapeRegex = T.concatMap escChar
       | Set.member c specials = "\\" <> T.singleton c
       | otherwise             = T.singleton c
 
-formatWikilink :: ContentEntry -> Text
-formatWikilink contentEntry =
+formatContentEntryWikilink :: ContentEntry -> Text
+formatContentEntryWikilink contentEntry =
   let path = unRelativePath (relativePath contentEntry)
       target = fromMaybe path (T.stripSuffix ".md" path)
-  in "[[" <> target <> "|" <> unTitle (title contentEntry) <> "]]"
+  in formatWikilink target (unTitle (title contentEntry))
 
 extractContext :: Text -> Int -> Int -> Text
 extractContext content pos matchLen =

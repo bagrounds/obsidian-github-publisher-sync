@@ -10,9 +10,13 @@ updated: 2026-03-24T22:26:21.418Z
 force_analyze_links: false
 link_analysis_time: 2026-03-25T08:15:16.675Z
 link_analysis_model: gemini-3.1-flash-lite-preview
+image_date: 2026-04-14T12:24:58Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A sleek, minimalist smartphone or tablet icon is gently ensnared by a stylized, glowing fishing hook. The hooks barb elegantly wraps around the device, suggesting engagement and attraction rather than harsh entrapment. On the devices screen, a subtle, abstract circular arrow or a shimmering, repeating pattern represents the continuous habit loop. The color palette uses cool blues and purples for the background, contrasting with a warm, inviting glow emanating from the hook and the devices screen, symbolizing both digital allure and the cyclical nature of habit formation. The overall composition is clean and modern, focusing on the interplay between the hook and the digital product.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🎣📱 Hooked: How to Build Habit-Forming Products  
+![books-hooked-how-to-build-habit-forming-products](../books-hooked-how-to-build-habit-forming-products.jpg)  
 [🛒 Hooked: How to Build Habit-Forming Products. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/48vvWGq)  
   
 ### 🏆 Nir Eyal's Hooked Strategy  

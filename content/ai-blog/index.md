@@ -6,10 +6,11 @@ title: 🤖 AI Blog
 URL: https://bagrounds.org/ai-blog/index
 Author: "[[bryan-grounds]]"
 backlinks: false
-updated: 2026-04-14T12:36:24-07:00
+updated: 2026-04-14T17:52:00-07:00
 ---
 [Home](../index.md)  
-# 🤖 AI Blog (146)  
+# 🤖 AI Blog (147)  
+- [2026-04-13 | 📚🔗 Improving Book Linking Coverage 🎯](./2026-04-13-5-improving-book-linking-coverage.md)  
 - [2026-04-13 | 🦋 Fixing Bluesky Link Facet Offsets 🔗](./2026-04-13-4-fixing-bluesky-link-facet-offsets.md)  
 - [2026-04-13 | 📊 Daily Updates Table Redesign 🔄](./2026-04-13-3-daily-updates-table-redesign.md)  
 - [2026-04-13 | 🧩 Breaking the Internal Linking Monolith 🔗](./2026-04-13-2-breaking-the-internal-linking-monolith.md)  

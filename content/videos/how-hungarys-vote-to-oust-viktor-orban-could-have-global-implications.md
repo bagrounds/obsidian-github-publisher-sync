@@ -9,6 +9,10 @@ Platform:
 Channel: PBS NewsHour
 tags:
 youtube: https://youtu.be/GAFtAaWyJhM
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_version: "2"
+link_analysis_time: 2026-04-14T00:00:00Z
+force_analyze_links: false
 ---
 [Home](../index.md) > [Videos](./index.md)  
 # 🇭🇺⚔️👑🌍🌊 How Hungary’s vote to oust Viktor Orbán could have global implications  
@@ -44,7 +48,7 @@ youtube: https://youtu.be/GAFtAaWyJhM
   
 ## 📚 Book Recommendations  
 ### ↔️ Similar  
-* 🏰 Twilight of Democracy by Anne Applebaum explores how modern autocracies rise through the subversion of state institutions and the co-opting of elites.  
+* 🏰 [🥀 Twilight of Democracy: 🐍 The Seductive Lure of Authoritarianism](../books/twilight-of-democracy.md) by Anne Applebaum explores how modern autocracies rise through the subversion of state institutions and the co-opting of elites.  
 * 🛡️ How Democracies Die by Steven Levitsky and Daniel Ziblatt examines the gradual erosion of political norms by elected leaders who consolidate power from within.  
   
 ### 🆚 Contrasting  
@@ -52,5 +56,5 @@ youtube: https://youtu.be/GAFtAaWyJhM
 * 🏛️ The Light that Failed by Ivan Krastev and Stephen Holmes explains Central European illiberalism as a rejection of Western liberal imitation rather than simple corruption.  
   
 ### 🎨 Creatively Related  
-* ♟️ The Dictator's Handbook by Bruce Bueno de Mesquita and Alastair Smith uses game theory to explain the cold logic of how leaders stay in power through patronage.  
-* 📻 Strongmen by Ruth Ben-Ghiat analyzes the visual and rhetorical tools used by populist leaders to build cults of personality across a century of history.
+* ♟️ [👑😈👎📈 The Dictator's Handbook: Why Bad Behavior Is Almost Always Good Politics](../books/the-dictators-handbook.md) by Bruce Bueno de Mesquita and Alastair Smith uses game theory to explain the cold logic of how leaders stay in power through patronage.  
+* 📻 [🇮🇹🇩🇪🇱🇾🇷🇺🇺🇸 Strongmen: Mussolini to the Present](../books/strongmen.md) by Ruth Ben-Ghiat analyzes the visual and rhetorical tools used by populist leaders to build cults of personality across a century of history.

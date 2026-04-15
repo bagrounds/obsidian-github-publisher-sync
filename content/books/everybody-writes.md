@@ -11,9 +11,13 @@ updated: 2026-03-20T02:59:18.498Z
 link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-01T00:00:00Z
 force_analyze_links: false
+image_date: 2026-04-15T00:37:04Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A clean, minimalist workspace featuring a high-quality fountain pen resting on a stack of neatly arranged, crisp white papers. To the side, a steaming ceramic mug of coffee sits on a wooden desk, casting a soft, warm glow. The lighting is bright and natural, streaming in from an unseen window to create gentle highlights and soft shadows. A subtle, modern digital tablet lies nearby, suggesting the blend of traditional craft and modern technology. The composition is uncluttered, focusing on the tools of writing—ink, paper, and digital screens—evoking a sense of clarity, productivity, and professional focus. The color palette consists of soft neutrals, warm wood tones, and crisp whites, creating an inviting and inspiring atmosphere for content creation.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🌍✍🏿 Everybody Writes: Your Go-To Guide to Creating Ridiculously Good Content  
+![books-everybody-writes](../books-everybody-writes.jpg)  
 [🛒 Everybody Writes: Your Go-To Guide to Creating Ridiculously Good Content. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3Ze8194)  
   
 ## 📚 Book Report: Everybody Writes by Ann Handley  

@@ -5,10 +5,10 @@ aliases:
 title: 📺 Videos
 URL: https://bagrounds.org/videos
 backlinks: false
-updated: 2026-04-14T12:36:24-07:00
+updated: 2026-04-14T17:52:00-07:00
 ---
 [Home](../index.md)  
-# 📺 Videos (753)  
+# 📺 Videos (754)  
 - [💰🤑🤖💡🚀💲 $0.10/Month Runs My Entire AI Life. I'll Show You How.](./0-10-month-runs-my-entire-ai-life-ill-show-you-how.md)  
 - [📊📈📉📃👁️ 10 Charts to Understand the 900 Page Budget Bill](./10-charts-to-understand-the-900-page-budget-bill.md)  
 - [🤖🔗⬆️✅ 12-Factor Agents: Patterns of reliable LLM applications — Dex Horthy, HumanLayer](./12-factor-agents-patterns-of-reliable-llm-applications-dex-horthy-humanlayer.md)  
@@ -245,6 +245,7 @@ updated: 2026-04-14T12:36:24-07:00
 - [💡👨‍🔬🏆🚀🌟 How Engineers Break Into The Top 1% | Michael Novati](./how-engineers-break-into-the-top-1-percent-michael-novati.md)  
 - [🕵️‍♂️🤫🚫🗣️🥷 How Governments Spy On Protestors - And How To Avoid It | Incognito Mode | WIRED](./how-governments-spy-on-protestors-and-how-to-avoid-it-incognito-mode-wired.md)  
 - [🇺🇸🤯😵‍💫❓ How half the US lost part of their minds](./how-half-the-us-lost-part-of-their-minds.md)  
+- [🇭🇺⚔️👑🌍🌊 How Hungary’s vote to oust Viktor Orbán could have global implications](./how-hungarys-vote-to-oust-viktor-orban-could-have-global-implications.md)  
 - [🕵️🇺🇸💻👁️ How ICE Spies On American Citizens | Incognito Mode | WIRED](./how-ice-spies-on-american-citizens-incognito-mode-wired.md)  
 - [💪🛠️🧠 How I trained myself to crave hard work](./how-i-trained-myself-to-crave-hard-work.md)  
 - [🙋💻❓ How I use LLMs](./how-i-use-llms.md)  

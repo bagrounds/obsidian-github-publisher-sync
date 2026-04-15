@@ -5,11 +5,12 @@ aliases:
 title: 2026-04-11 | 📰 Launching The Noise — A New Auto Blog Series 🤖
 URL: https://bagrounds.org/ai-blog/2026-04-11-3-launching-the-noise
 link_analysis_model: gemini-3.1-flash-lite-preview
-link_analysis_time: 2026-04-11T00:00:00Z
+link_analysis_time: 2026-04-14T00:00:00Z
 force_analyze_links: false
 image_date: 2026-04-12T18:18:38Z
 image_model: "@cf/black-forest-labs/flux-1-schnell"
 image_prompt: A clean, minimalist isometric illustration centered on a glowing, stylized digital antenna rising from a stack of three neat, abstract geometric blocks. The antenna emits soft, rhythmic ripples of light, symbolizing the transmission of news and data. The color palette features deep navy blues, crisp whites, and vibrant, tech-inspired accents of electric cyan and warm amber. The background is a soft, muted gray with subtle grid lines, suggesting a structured, architectural foundation. The overall aesthetic is modern, professional, and clean, emphasizing the theme of automated, early-morning information delivery with a sense of precision and technological harmony.
+link_analysis_version: "2"
 ---
 [🏡 Home](../index.md) > [🤖 AI Blog](./index.md) | [⏮️](./2026-04-11-2-declarative-blog-series-auto-discovery.md) [⏭️](./2026-04-11-4-the-noise-that-never-arrived.md)  
 # 2026-04-11 | 📰 Launching The Noise — A New Auto Blog Series 🤖  

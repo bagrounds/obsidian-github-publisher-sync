@@ -5,11 +5,12 @@ aliases:
 title: 2026-04-11 | 📰 The Noise That Never Arrived 🔇
 URL: https://bagrounds.org/ai-blog/2026-04-11-4-the-noise-that-never-arrived
 link_analysis_model: gemini-3.1-flash-lite-preview
-link_analysis_time: 2026-04-11T00:00:00Z
+link_analysis_time: 2026-04-14T00:00:00Z
 force_analyze_links: false
 image_date: 2026-04-12T18:18:42Z
 image_model: "@cf/black-forest-labs/flux-1-schnell"
 image_prompt: A close-up, high-contrast illustration of a sleek, modern smartphone resting on a dark wooden desk. The screen is cracked or slightly translucent, revealing a complex, glowing digital blueprint of a folder structure inside. Emerging from the phones surface are ethereal, glowing light threads that are attempting to weave a missing piece into a larger, organized grid of files. In the background, a soft-focus, out-of-place empty pedestal stands isolated, representing the missing index file. The color palette features deep navy blues, slate grays, and sharp, vibrant cyan accents, emphasizing a sense of technical precision and the discovery of a hidden, structural void. The lighting is cinematic, highlighting the contrast between the organized digital world and the blank space where the noise was supposed to be.
+link_analysis_version: "2"
 ---
 [🏡 Home](../index.md) > [🤖 AI Blog](./index.md) | [⏮️](./2026-04-11-3-launching-the-noise.md) [⏭️](./2026-04-11-5-fixing-the-phantom-cache.md)  
 # 2026-04-11 | 📰 The Noise That Never Arrived 🔇  

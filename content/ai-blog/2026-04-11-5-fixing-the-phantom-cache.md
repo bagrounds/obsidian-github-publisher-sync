@@ -5,11 +5,12 @@ aliases:
 title: 2026-04-11 | 👻 Fixing the Phantom Cache 🏎️
 URL: https://bagrounds.org/ai-blog/2026-04-11-5-fixing-the-phantom-cache
 link_analysis_model: gemini-3.1-flash-lite-preview
-link_analysis_time: 2026-04-11T00:00:00Z
+link_analysis_time: 2026-04-14T00:00:00Z
 force_analyze_links: false
 image_date: 2026-04-12T20:08:02Z
 image_model: "@cf/black-forest-labs/flux-1-schnell"
 image_prompt: A high-contrast, minimalist isometric illustration featuring a glowing, translucent blue cube representing a cache. Inside the cube, a miniature, detailed mechanical gear assembly is suspended in mid-air, representing the Haskell build process. One side of the cube is slightly fractured, with a faint, ghostly vapor leaking out to symbolize the phantom nature of the broken cache. Surrounding the cube are clean, sharp lines indicating a high-speed motion blur, suggesting acceleration. The background is a deep, professional charcoal grey, creating a sleek, technical aesthetic that emphasizes the luminous blue of the cache and the precision of the gears. No text or labels are present.
+link_analysis_version: "2"
 ---
 [🏡 Home](../index.md) > [🤖 AI Blog](./index.md) | [⏮️](./2026-04-11-4-the-noise-that-never-arrived.md) [⏭️](./2026-04-11-6-breaking-up-blogimage.md)  
 # 2026-04-11 | 👻 Fixing the Phantom Cache 🏎️  

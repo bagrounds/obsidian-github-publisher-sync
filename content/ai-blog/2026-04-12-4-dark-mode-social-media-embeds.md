@@ -8,8 +8,9 @@ image_date: 2026-04-12T23:19:02Z
 image_model: "@cf/black-forest-labs/flux-1-schnell"
 image_prompt: A high-contrast, minimalist composition centered on the concept of digital transformation. A sleek, glowing smartphone screen floats in deep space, split vertically down the middle. The left side of the screen shows a bright, jarring white blockquote with grey text, representing the original Mastodon embed. The right side shows a seamless, elegant transition where the same content is rendered in a soft, sophisticated dark-mode palette of charcoal, slate blue, and muted silver. A subtle, glowing stream of binary code or data particles flows from the left to the right, transforming the colors as they pass through the center divide. The background is a dark, atmospheric void with soft, ambient lighting that emphasizes the glowing digital interface.
 link_analysis_model: gemini-3.1-flash-lite-preview
-link_analysis_time: 2026-04-12T00:00:00Z
+link_analysis_time: 2026-04-14T00:00:00Z
 force_analyze_links: false
+link_analysis_version: "2"
 ---
 [🏡 Home](../index.md) > [🤖 AI Blog](./index.md) | [⏮️](./2026-04-12-3-launching-positivity-bias-a-new-auto-blog-series.md) [⏭️](./2026-04-12-5-working-entirely-in-pacific-time.md)  
 # 2026-04-12 | 🌑 Dark Mode Social Media Embeds 🤖  

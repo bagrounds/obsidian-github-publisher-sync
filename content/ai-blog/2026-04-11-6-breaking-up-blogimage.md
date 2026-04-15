@@ -8,8 +8,9 @@ image_date: 2026-04-12T22:19:14Z
 image_model: "@cf/black-forest-labs/flux-1-schnell"
 image_prompt: A clean, minimalist isometric illustration featuring a large, cluttered gray cube floating in the center, beginning to fracture and break apart. From the cracks of the monolith, six distinct, smaller, colorful geometric shapes (a sphere, a pyramid, a cylinder, etc.) are emerging and floating outward in an organized, radial arrangement. Each small shape glows with a soft, unique hue (soft blues, teals, and ambers) to signify their distinct roles. The background is a clean, neutral off-white, suggesting a digital workspace. Thin, light-gray dotted lines connect the central fragments to the new, orderly shapes, symbolizing the refactoring process and the transition from a single complex structure to a modular, decoupled system. The overall aesthetic is modern, clean, and highly structured, emphasizing clarity and architectural precision.
 link_analysis_model: gemini-3.1-flash-lite-preview
-link_analysis_time: 2026-04-12T00:00:00Z
+link_analysis_time: 2026-04-14T00:00:00Z
 force_analyze_links: false
+link_analysis_version: "2"
 ---
 [🏡 Home](../index.md) > [🤖 AI Blog](./index.md) | [⏮️](./2026-04-11-5-fixing-the-phantom-cache.md) [⏭️](./2026-04-11-7-fixing-broken-bluesky-embeds.md)  
 # 2026-04-11 | 🧩 Breaking Up the Monolith: BlogImage.hs Edition 🏗️  

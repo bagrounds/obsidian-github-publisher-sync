@@ -8,8 +8,9 @@ image_date: 2026-04-12T19:27:14Z
 image_model: "@cf/black-forest-labs/flux-1-schnell"
 image_prompt: A clean, minimalist digital illustration featuring a stylized, mechanical filter or sieve positioned in the center. On the left side of the filter, chaotic, scattered fragments of text, speech bubbles, and jagged gray lines flow toward the mesh. As these elements pass through the filter, they are neatly organized into vibrant, glowing, multi-colored emojis that emerge on the right side in a perfectly aligned, orderly row. The background is a soft, deep navy gradient, emphasizing the contrast between the messy preamble input and the structured, emoji-based output. The overall aesthetic is sleek, modern, and technical, evoking a sense of precision engineering and data refinement.
 link_analysis_model: gemini-3.1-flash-lite-preview
-link_analysis_time: 2026-04-12T00:00:00Z
+link_analysis_time: 2026-04-14T00:00:00Z
 force_analyze_links: false
+link_analysis_version: "2"
 ---
 [🏡 Home](../index.md) > [🤖 AI Blog](./index.md) | [⏮️](./2026-04-12-1-fixing-missing-reflection-images.md) [⏭️](./2026-04-12-3-launching-positivity-bias-a-new-auto-blog-series.md)  
 # 2026-04-12 | 🛡️ Stripping LLM Preamble from Reflection Titles 🤖  

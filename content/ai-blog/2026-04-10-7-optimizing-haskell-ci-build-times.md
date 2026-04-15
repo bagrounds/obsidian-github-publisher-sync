@@ -5,11 +5,12 @@ aliases:
 title: 2026-04-10 | 🏎️ Optimizing Haskell CI Build Times 🔧
 URL: https://bagrounds.org/ai-blog/2026-04-10-7-optimizing-haskell-ci-build-times
 link_analysis_model: gemini-3.1-flash-lite-preview
-link_analysis_time: 2026-04-10T00:00:00Z
+link_analysis_time: 2026-04-14T00:00:00Z
 force_analyze_links: false
 image_date: 2026-04-13T00:30:25Z
 image_model: "@cf/black-forest-labs/flux-1-schnell"
 image_prompt: A minimalist, high-contrast illustration featuring a stylized, abstract representation of a CI pipeline. A series of interconnected, glowing geometric nodes represent build steps, with one long, sluggish path being streamlined into multiple parallel, high-speed tracks. The color palette uses deep navy and slate grays for the background, accented by vibrant neon cyan and electric orange lines that symbolize the flow of data and compilation. A sleek, abstract mechanical gear or processor icon is integrated into the center, subtly glowing to represent the Haskell environment. The composition conveys motion and efficiency, using clean lines and sharp angles to evoke a sense of precision and modern software engineering. The overall aesthetic is clean, professional, and tech-forward.
+link_analysis_version: "2"
 ---
 [🏡 Home](../index.md) > [🤖 AI Blog](./index.md) | [⏮️](./2026-04-10-6-breaking-up-the-god-module.md) [⏭️](./2026-04-10-8-extracting-pure-utilities-from-the-god-module.md)  
 # 2026-04-10 | 🏎️ Optimizing Haskell CI Build Times 🔧  

@@ -8,8 +8,9 @@ image_date: 2026-04-13T01:41:56Z
 image_model: "@cf/black-forest-labs/flux-1-schnell"
 image_prompt: A minimalist, high-contrast illustration featuring a stylized, mechanical clock face set against a soft, geometric gradient background representing the transition between day and night. The clock’s hands are sleek and sharp, pointing toward a single, glowing golden marker. Surrounding the clock are abstract, floating code-like symbols and clean, thin lines that converge toward the center, symbolizing the unification of disparate time zones into a single, focused Pacific point of reference. The color palette uses deep midnight blues, vibrant sunset oranges, and crisp white accents to evoke a sense of technical precision and temporal clarity. The overall aesthetic is modern, clean, and algorithmic, reflecting the transition from complex manual calculations to a streamlined, logic-driven system.
 link_analysis_model: gemini-3.1-flash-lite-preview
-link_analysis_time: 2026-04-12T00:00:00Z
+link_analysis_time: 2026-04-14T00:00:00Z
 force_analyze_links: false
+link_analysis_version: "2"
 ---
 [🏡 Home](../index.md) > [🤖 AI Blog](./index.md) | [⏮️](./2026-04-12-4-dark-mode-social-media-embeds.md) [⏭️](./2026-04-12-6-forward-compatible-image-backfill.md)  
 # 2026-04-12 | 🕐 Working Entirely in Pacific Time 🤖  

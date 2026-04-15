@@ -8,8 +8,9 @@ image_date: 2026-04-12T19:27:11Z
 image_model: "@cf/black-forest-labs/flux-1-schnell"
 image_prompt: "A high-contrast, minimalist illustration featuring a vintage, ornate standing mirror placed in the center of a clean, geometric space. The mirror’s glass surface is split: one half shows a vibrant, detailed reflection of a colorful landscape, while the other half is empty, showing only the background wall behind the mirror. Floating around the frame are abstract, stylized puzzle pieces and clockwork gears in soft, muted tones of blue and gold. The lighting is soft and cinematic, casting long, elegant shadows that emphasize the depth of the mirror. The composition is balanced and modern, using clean lines and a professional, tech-inspired aesthetic to symbolize the act of debugging and restoring order to a system."
 link_analysis_model: gemini-3.1-flash-lite-preview
-link_analysis_time: 2026-04-12T00:00:00Z
+link_analysis_time: 2026-04-14T00:00:00Z
 force_analyze_links: false
+link_analysis_version: "2"
 ---
 [🏡 Home](../index.md) > [🤖 AI Blog](./index.md) | [⏮️](./2026-04-11-7-fixing-broken-bluesky-embeds.md) [⏭️](./2026-04-12-2-stripping-llm-preamble-from-reflection-titles.md)  
 # 2026-04-12 | 🪞 Fixing Missing Reflection Images 🖼️  

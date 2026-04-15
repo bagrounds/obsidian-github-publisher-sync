@@ -10,7 +10,7 @@ import qualified Data.Text as T
 import qualified Network.HTTP.Client as HTTP
 import qualified Network.HTTP.Client.TLS as TLS
 
-import Automation.Types (Secret (..))
+import Automation.Secret (Secret (..))
 
 data QuotaInfo = QuotaInfo
   { qiRequestsPerMinute :: Maybe Int

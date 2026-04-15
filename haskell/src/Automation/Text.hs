@@ -19,7 +19,7 @@ import qualified Data.Set as Set
 import Data.Text (Text)
 import qualified Data.Text as T
 
-import Automation.Types (PlatformLimits (..))
+import Automation.Platform (PlatformLimits (..))
 
 countGraphemes :: Text -> Int
 countGraphemes = T.length

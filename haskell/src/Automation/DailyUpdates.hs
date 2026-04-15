@@ -19,8 +19,9 @@ import Text.Read (readMaybe)
 
 import Automation.DailyReflection (ensureDailyReflection, EnsureReflectionResult (..), findFirstSectionIndex, embedSectionHeaders)
 import Automation.Frontmatter (parseFrontmatter)
-import Automation.Platform (Platform (..))
-import Automation.Types (updatesSectionHeader, RelativePath, unRelativePath, Title, unTitle)
+import Automation.Platform (Platform (..), updatesSectionHeader)
+import Automation.RelativePath (RelativePath, unRelativePath)
+import Automation.Title (Title, unTitle)
 
 -- | Types of updates that can be made to a page
 data UpdateDetail

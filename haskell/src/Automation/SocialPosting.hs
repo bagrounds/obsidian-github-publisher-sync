@@ -35,14 +35,14 @@ import Automation.EmbedSection
   , buildMastodonSection
   , buildTweetSection
   )
-import Automation.Env (validateEnvironment)
+import Automation.Env (validateEnvironment, EnvironmentConfig (..))
 import Automation.PacificTime (formatDay, todayPacificDay)
 import qualified Automation.Gemini as Gemini
 import qualified Automation.ObsidianSync as Sync
 import Automation.Platform (Platform (..), PlatformLimits (..))
 import qualified Automation.Platforms.Bluesky as Bluesky
 import qualified Automation.Platforms.Mastodon as Mastodon
-import Automation.Platforms.OgMetadata (fetchOgMetadata)
+import Automation.Platforms.OgMetadata (fetchOgMetadata, OgMetadata (..))
 import qualified Automation.Platforms.Twitter as Twitter
 import Automation.Prompts (PromptPair (..), assemblePost, buildQuestionPrompt, buildShortenQuestionPrompt, buildTagsPrompt)
 import Automation.Reflection (ReflectionData (..))
@@ -59,7 +59,6 @@ import Automation.SocialPosting.ContentDiscovery
 import Automation.SocialPosting.FrontmatterUpdate (updatePathTimestamps)
 import Automation.Text (calculatePostLength, fitPostToLimit)
 import Automation.Title (unTitle)
-import Automation.Types (EnvironmentConfig (..), OgMetadata (..))
 import Automation.Url (unUrl)
 import Automation.RelativePath (RelativePath, unRelativePath)
 import System.FilePath (takeBaseName, takeExtension, (</>))

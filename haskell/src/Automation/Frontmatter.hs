@@ -22,7 +22,9 @@ import System.FilePath ((</>), takeBaseName)
 import qualified Automation.Platforms.Bluesky as Bluesky
 import qualified Automation.Platforms.Mastodon as Mastodon
 import qualified Automation.Platforms.Twitter as Twitter
-import Automation.Types (ReflectionData (..), mkTitle, mkUrl)
+import Automation.Reflection (ReflectionData (..))
+import Automation.Title (mkTitle)
+import Automation.Url (mkUrl)
 
 parseFrontmatter :: Text -> (Map Text Text, Text)
 parseFrontmatter content =

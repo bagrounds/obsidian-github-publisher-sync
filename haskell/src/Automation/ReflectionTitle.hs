@@ -23,7 +23,7 @@ import Data.Text (Text)
 import qualified Data.Text as T
 import System.FilePath (takeExtension)
 
-import Automation.Types (updatesSectionHeader)
+import Automation.Platform (updatesSectionHeader)
 import Automation.Frontmatter (parseFrontmatter)
 import Automation.Text (isEmoji, isEmojiOrSpace)
 import qualified Automation.Gemini as Gemini

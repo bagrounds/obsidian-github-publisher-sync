@@ -9,8 +9,9 @@ tags:
 affiliate link: https://amzn.to/4jBFRMB
 updated: 2026-03-10T14:18:36.568Z
 link_analysis_model: gemini-3.1-flash-lite-preview
-link_analysis_time: 2026-03-31T00:00:00Z
+link_analysis_time: 2026-04-15T00:00:00Z
 force_analyze_links: false
+link_analysis_version: "2"
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🧩🧱⚙️❤️ Domain-Driven Design: Tackling Complexity in the Heart of Software  

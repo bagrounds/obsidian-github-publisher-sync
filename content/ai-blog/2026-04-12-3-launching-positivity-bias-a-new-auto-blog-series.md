@@ -8,8 +8,9 @@ image_date: 2026-04-12T20:07:59Z
 image_model: "@cf/black-forest-labs/flux-1-schnell"
 image_prompt: A stylized, minimalist illustration featuring a glowing, golden light source emerging from a complex network of dark, interconnected digital nodes. The light radiates outward, transforming the jagged, monochromatic geometric shapes into soft, vibrant, and colorful flora and organic patterns as they move toward the edges of the frame. The color palette transitions from deep charcoal and slate blues in the background to warm, optimistic hues of sunrise gold, soft amber, and sage green. The composition emphasizes a sense of growth and discovery, with a clean, modern aesthetic that balances technical structure with natural, flourishing life.
 link_analysis_model: gemini-3.1-flash-lite-preview
-link_analysis_time: 2026-04-12T00:00:00Z
+link_analysis_time: 2026-04-14T00:00:00Z
 force_analyze_links: false
+link_analysis_version: "2"
 ---
 [🏡 Home](../index.md) > [🤖 AI Blog](./index.md) | [⏮️](./2026-04-12-2-stripping-llm-preamble-from-reflection-titles.md) [⏭️](./2026-04-12-4-dark-mode-social-media-embeds.md)  
 # 2026-04-12 | 🌟 Launching Positivity Bias — A New Auto Blog Series 🤖  

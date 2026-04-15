@@ -5,11 +5,12 @@ aliases:
 title: 2026-04-10 | 🧩 Breaking Up the Social Posting Monolith 🤖
 URL: https://bagrounds.org/ai-blog/2026-04-10-10-breaking-up-social-posting-monolith
 link_analysis_model: gemini-3.1-flash-lite-preview
-link_analysis_time: 2026-04-11T00:00:00Z
+link_analysis_time: 2026-04-14T00:00:00Z
 force_analyze_links: false
 image_date: 2026-04-12T21:17:01Z
 image_model: "@cf/black-forest-labs/flux-1-schnell"
 image_prompt: A minimalist, isometric illustration of a large, complex mechanical monolith being carefully disassembled into smaller, colorful geometric blocks. The central structure—a tall, intricate grey tower—is shown mid-separation, with individual segments floating outward. Each floating piece is a distinct color (e.g., deep blue, warm orange, soft green), representing different domain concerns. Clean, thin white lines connect these segments, visualizing a refined, directional dependency graph. The background is a clean, neutral off-white or soft slate, emphasizing the precision of the architecture. The style is clean, modern, and vector-based, using soft shadows to give the floating components depth, conveying a sense of organized, logical modularity and systemic clarity.
+link_analysis_version: "2"
 ---
 [🏡 Home](../index.md) > [🤖 AI Blog](./index.md) | [⏮️](./2026-04-10-1-enforcing-hlint-across-the-haskell-codebase.md) [⏭️](./2026-04-10-3-testing-either-error-paths.md)  
 # 2026-04-10 | 🧩 Breaking Up the Social Posting Monolith 🤖  

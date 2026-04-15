@@ -62,9 +62,7 @@ library
     Automation.InternalLinking.Gemini
     Automation.InternalLinking.LinkExtraction
     Automation.InternalLinking.Masking
-    Automation.Pipeline
     Automation.Reflection
-    Automation.GeminiQuota
     Automation.Platforms.Twitter
     Automation.Platforms.Bluesky
     Automation.Platforms.Mastodon

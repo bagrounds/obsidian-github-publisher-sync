@@ -11,21 +11,22 @@ module Automation.ReflectionTitle
   , generateReflectionTitle
   , isReflectionFile
   , extractCreativeTitle
+  , filterRecentReflectionFiles
   , ReflectionTitleConfig (ReflectionTitleConfig, rtcModels, rtcNoteContent, rtcDate, rtcRecentTitles)
   , ReflectionTitleResult (ReflectionTitleResult, rtrTitle, rtrFullTitle, rtrModel, rtrUpdatedContent)
   ) where
 
 import Data.Char (isDigit)
-import Data.List (find, nub)
+import Data.Function ((&))
+import Data.List (find, nub, sortBy)
 import Data.List.NonEmpty (NonEmpty)
-import Data.Maybe (fromMaybe)
 import Data.Text (Text)
 import qualified Data.Text as T
 import System.FilePath (takeExtension)
 
 import Automation.Platform (updatesSectionHeader)
 import Automation.Frontmatter (parseFrontmatter)
-import Automation.Text (isEmoji, isEmojiOrSpace)
+import Automation.Text (isEmoji, isEmojiOrSpace, stripCodeFences)
 import qualified Automation.Gemini as Gemini
 
 defaultTitleModel :: Gemini.Model
@@ -181,19 +182,6 @@ stripInlinePreamble t =
     Just idx | idx > 0 -> T.strip (T.drop idx t)
     _ -> t
 
-(&) :: a -> (a -> b) -> b
-(&) x f = f x
-
-stripCodeFences :: Text -> Text
-stripCodeFences t =
-  let t1 = case T.stripPrefix "```markdown\n" t of
-              Just rest -> rest
-              Nothing -> case T.stripPrefix "```md\n" t of
-                Just rest -> rest
-                Nothing -> fromMaybe t (T.stripPrefix "```\n" t)
-      t2 = fromMaybe t1 (T.stripSuffix "\n```" t1)
-  in t2
-
 stripDatePrefix :: Text -> Text
 stripDatePrefix t = case T.unpack (T.take 13 t) of
   (y1:y2:y3:y4:'-':m1:m2:'-':d1:d2:' ':'|':' ':_)
@@ -291,6 +279,12 @@ isReflectionFile filename =
     && all isDigit (take 2 (drop 5 filename))
     && filename !! 7 == '-'
     && all isDigit (take 2 (drop 8 filename))
+
+filterRecentReflectionFiles :: Text -> [FilePath] -> [FilePath]
+filterRecentReflectionFiles today entries =
+  let dateFiles = filter isReflectionFile entries
+      beforeToday = filter (< T.unpack today <> ".md") dateFiles
+  in take 20 (sortBy (flip compare) beforeToday)
 
 extractCreativeTitle :: Text -> Text
 extractCreativeTitle content =

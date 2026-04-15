@@ -16,6 +16,7 @@ tests = testGroup "PacificTime"
   , formatDayHumanTests
   , pacificHourTests
   , toPacificLocalTimeTests
+  , yesterdayPacificDayTests
   ]
 
 formatDayTests :: TestTree
@@ -112,4 +113,12 @@ toPacificLocalTimeTests = testGroup "toPacificLocalTime"
         let utcTime = UTCTime (fromGregorian 2026 7 15) (secondsToDiffTime (fromIntegral hourUtc * 3600))
             LocalTime _ pacificTimeOfDay = toPacificLocalTime utcTime
         in todHour pacificTimeOfDay == hourUtc - 7
+  ]
+
+yesterdayPacificDayTests :: TestTree
+yesterdayPacificDayTests = testGroup "yesterdayPacificDay"
+  [ testCase "returns exactly one day before today" $ do
+      today <- todayPacificDay
+      yesterday <- yesterdayPacificDay
+      diffDays today yesterday @?= 1
   ]

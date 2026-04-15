@@ -13,7 +13,6 @@ module Automation.AiFiction
   ) where
 
 import Data.List.NonEmpty (NonEmpty)
-import Data.Maybe (fromMaybe)
 import Data.Text (Text)
 import qualified Data.Text as T
 
@@ -21,6 +20,7 @@ import Automation.Platform
   ( updatesSectionHeader
   )
 
+import Automation.Text (stripCodeFences)
 import qualified Automation.Gemini as Gemini
 import qualified Automation.Platforms.Bluesky as Bluesky
 import qualified Automation.Platforms.Mastodon as Mastodon
@@ -101,16 +101,6 @@ parseFictionResponse raw =
       t2 = T.replace fictionSectionHeader "" t1
       t3 = removeQuotationMarks t2
   in T.strip t3
-
-stripCodeFences :: Text -> Text
-stripCodeFences t =
-  let t1 = case T.stripPrefix "```markdown\n" t of
-              Just rest -> rest
-              Nothing -> case T.stripPrefix "```md\n" t of
-                Just rest -> rest
-                Nothing -> fromMaybe t (T.stripPrefix "```\n" t)
-      t2 = fromMaybe t1 (T.stripSuffix "\n```" t1)
-  in t2
 
 removeQuotationMarks :: Text -> Text
 removeQuotationMarks = T.filter (\c ->

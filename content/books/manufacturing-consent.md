@@ -9,12 +9,13 @@ tags:
 affiliate link: https://amzn.to/4l791ED
 CTA: 📢 Question authority.
 link_analysis_model: gemini-3.1-flash-lite-preview
-link_analysis_time: 2026-04-01T00:00:00Z
+link_analysis_time: 2026-04-15T00:00:00Z
 force_analyze_links: false
 updated: 2026-04-02T05:43:06
 image_date: 2026-04-13T19:41:44Z
 image_model: "@cf/black-forest-labs/flux-1-schnell"
 image_prompt: A stylized, cinematic illustration featuring a large, industrial printing press in the center, functioning as the heart of a dark, shadowy factory. Instead of ink, the press is churning out long, uniform ribbons of gray paper that snake outward like conveyor belts. These ribbons transform into stylized silhouettes of television screens and microphones as they reach the foreground. Above the factory floor, shadowy, translucent figures in business suits stand on a catwalk, manipulating strings attached to the media devices below, acting like puppeteers. The color palette is muted, dominated by industrial grays, deep shadows, and stark, cold blues, with a single, sharp accent of warning red on the control knobs of the machines. The overall atmosphere is one of mechanical precision, systemic control, and hidden influence.
+link_analysis_version: "2"
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🏭🫡 Manufacturing Consent: The Political Economy of the Mass Media  

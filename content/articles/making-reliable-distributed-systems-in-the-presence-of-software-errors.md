@@ -9,9 +9,13 @@ tags:
 link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-06T00:00:00Z
 force_analyze_links: false
+image_date: 2026-04-15T15:48:07Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: An abstract, interconnected network of glowing nodes, representing a distributed system. Data flows as luminous lines between them. Small, stylized, mechanical-looking bugs (like a tiny gear-insect hybrid) attempt to bite or disrupt these connections, causing brief, contained flickers of orange or red light. However, a subtle, translucent energy shield or a dynamic, self-healing aura in blues and greens envelops the entire network, deflecting the bugs and instantly repairing any momentary disruptions. The overall impression is one of robust stability and continuous operation despite persistent, minor threats, showcasing resilience and fault-tolerance.
 ---
 [Home](../index.md) > [Articles](./index.md)  
 # [⚙️🛡️🐛 Making Reliable Distributed Systems in the Presence of Software Errors](https://erlang.org/download/armstrong_thesis_2003.pdf)  
+![articles-making-reliable-distributed-systems-in-the-presence-of-software-errors](../articles-making-reliable-distributed-systems-in-the-presence-of-software-errors.jpg)  
 ## 🤖 AI Summary  
 ### TL;DR 💡  
   

@@ -10,11 +10,16 @@ affiliate link: https://amzn.to/4dJnF29
 CTA: 🌟 Discover resilience.
 updated: 2026-03-18T22:09:03.127Z
 force_analyze_links: false
-link_analysis_time: 2026-03-22T23:34:01.201Z
+link_analysis_time: 2026-04-15T00:00:00Z
 link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_version: "2"
+image_date: 2026-04-15T17:33:49Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A minimalist, high-contrast illustration featuring a single, worn lantern sitting on a dark, textured stone floor. The lantern emits a soft, warm, golden glow that cuts through a deep, shadowy void. Inside the lantern, instead of a flame, a small, vibrant green sprout is visible, symbolizing growth and life persisting in harsh conditions. The background is a gradient of deep charcoal to black, emphasizing the isolation of the light. The composition uses negative space to evoke a sense of introspection, resilience, and the quiet search for purpose amidst darkness. The art style is clean and evocative, utilizing sharp lighting to create a focused, hopeful atmosphere.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🔦💡 Man's Search for Meaning  
+![books-mans-search-for-meaning](../books-mans-search-for-meaning.jpg)  
 [🛒 Man's Search for Meaning. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4dJnF29)  
   
 ## 🤖 AI Summary  

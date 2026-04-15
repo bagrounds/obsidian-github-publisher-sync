@@ -13,7 +13,7 @@ image_date: 2026-04-14T19:37:57Z
 image_model: "@cf/black-forest-labs/flux-1-schnell"
 image_prompt: An illustration featuring two stylized, friendly chickens. One chicken, Chickie Loo, is slightly ruffled with a tiny, humorous speck of dirt on its head, embodying the ranchers grit. The other chicken, Loo, is equally friendly but a touch more composed, perhaps holding a small, polished feather. They stand side-by-side on a subtly divided landscape. One half shows a sun-drenched ranch pasture with a distant cow and a barn, symbolizing the outdoor life and new beginnings. The other half transitions into a cozy interior space, with a hint of a freshly polished wooden dresser and a window, representing the comfort of a new home. A soft, warm color palette emphasizes their camaraderie and the blend of rustic and domestic themes.
 ---
-[Home](../index.md) > [🐔 Chickie Loo](./index.md) | [⏮️](./2026-04-13-ashes-anniversaries-and-the-rhythm-of-the-ranch.md)  
+[Home](../index.md) > [🐔 Chickie Loo](./index.md) | [⏮️](./2026-04-13-ashes-anniversaries-and-the-rhythm-of-the-ranch.md) [⏭️](./2026-04-15-the-rooster-attendance-call.md)  
 # 2026-04-14 | 🐔 A Tale of Two Loos 🐔  
 ![chickie-loo-2026-04-14-a-tale-of-two-loos](../chickie-loo-2026-04-14-a-tale-of-two-loos.jpg)  
   

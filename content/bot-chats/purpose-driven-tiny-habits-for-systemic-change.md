@@ -5,12 +5,13 @@ aliases:
 title: 🎯🐜🌍 Purpose Driven Tiny Habits for Systemic Change
 URL: https://bagrounds.org/bot-chats/purpose-driven-tiny-habits-for-systemic-change
 link_analysis_model: gemini-3.1-flash-lite-preview
-link_analysis_time: 2026-04-11T00:00:00Z
+link_analysis_time: 2026-04-14T00:00:00Z
 force_analyze_links: false
 image_date: 2026-04-12T08:24:54Z
 image_model: "@cf/black-forest-labs/flux-1-schnell"
 image_prompt: A minimalist, high-contrast illustration featuring a single, vibrant green sprout pushing upward through a complex, geometric grid of interlocking dark grey lines. The grid represents a rigid system, while the sprout symbolizes the tiny habit intervention. The sprout’s leaves are small and delicate, yet they are physically bending the rigid lines of the grid around them, suggesting a ripple effect of change. The background is a soft, clean off-white to emphasize the clarity of the concept. The overall aesthetic is modern, clean, and conceptual, focusing on the intersection of biological growth and structural dynamics. The lighting is soft and natural, highlighting the contrast between the organic, fluid shape of the plant and the mathematical precision of the system it is subtly reshaping.
 updated: 2026-04-12T11:19:37
+link_analysis_version: "2"
 ---
 [Home](../index.md) > [Bot Chats](./index.md)  
 # 🎯🐜🌍 Purpose Driven Tiny Habits for Systemic Change  

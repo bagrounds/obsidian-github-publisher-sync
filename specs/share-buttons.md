@@ -32,11 +32,11 @@
 | 📧 Email | `mailto:?subject={title}&body={text}` | Opens default mail client |
 | 🔗 Copy Link | JavaScript clipboard API | Copies page URL with visual feedback |
 | 📲 Native Share | Web Share API | Progressive enhancement; shown only when supported |
-| 📘 Facebook | `https://www.facebook.com/sharer/sharer.php?u={url}` | Future phase |
-| 💼 LinkedIn | `https://www.linkedin.com/sharing/share-offsite/?url={url}` | Future phase |
-| 🟠 Reddit | `https://www.reddit.com/submit?url={url}&title={title}` | Future phase |
-| 📱 WhatsApp | `https://wa.me/?text={text}` | Future phase |
-| ✈️ Telegram | `https://t.me/share/url?url={url}&text={text}` | Future phase |
+| 📘 Facebook | `https://www.facebook.com/sharer/sharer.php?u={url}` | URL-only sharing |
+| 💼 LinkedIn | `https://www.linkedin.com/sharing/share-offsite/?url={url}` | URL-only sharing |
+| 🟠 Reddit | `https://www.reddit.com/submit?url={url}&title={title}` | URL and title as separate parameters |
+| 📱 WhatsApp | `https://wa.me/?text={text}` | Combined text with title and URL |
+| ✈️ Telegram | `https://t.me/share/url?url={url}&text={text}` | URL and title as separate parameters |
 
 ### 📝 Default Share Message
 
@@ -75,7 +75,7 @@ For Twitter, the text includes both the title and URL in a single parameter for 
 - 🐘 Mastodon hardcoded to mastodon.social
 - 🐦 Twitter unified to use same share text as other platforms
 
-### 🔮 Phase 3
+### ✅ Phase 3
 
 - 📘 Facebook
 - 💼 LinkedIn

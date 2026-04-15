@@ -12,9 +12,13 @@ updated: 2026-03-20T10:12:53.882Z
 link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-01T00:00:00Z
 force_analyze_links: false
+image_date: 2026-04-14T23:27:58Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A minimalist, high-contrast illustration featuring a stylized, weathered ballot box made of aged wood sitting on a polished marble surface. Emerging from the slot of the ballot box is a single, elegant white dove caught in mid-flight, its wings spread wide to fill the upper portion of the frame. The background is a soft, muted gradient of deep navy and parchment cream, suggesting the historical weight of the 19th century. Subtle, abstract geometric lines intersect the background, representing the structure of a constitution or legal document. The lighting is dramatic, casting a soft glow on the dove to symbolize liberty and hope, while the ballot box remains anchored in shadow, emphasizing the foundations of democratic process. The overall aesthetic is clean, intellectual, and timeless.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🗳️🕊️🇺🇸 Democracy in America  
+![books-democracy-in-america](../books-democracy-in-america.jpg)  
 [🛒 Democracy in America. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4jsqOVj)  
   
 ## 🤖 AI Summary  

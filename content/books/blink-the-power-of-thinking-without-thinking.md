@@ -10,9 +10,13 @@ updated: 2026-03-20T06:19:34.312Z
 force_analyze_links: false
 link_analysis_time: 2026-03-22T23:37:06.492Z
 link_analysis_model: gemini-3.1-flash-lite-preview
+image_date: 2026-04-14T22:24:32Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A minimalist, high-contrast illustration centered on a human silhouette in profile. The head is partially transparent, revealing a glowing, intricate network of neural pathways or lightning-bolt-shaped sparks firing in a split-second flash of light. The background is a deep, solid charcoal gray, symbolizing the unconscious, while the sparks are a vibrant, electric cyan. One side of the face remains dark and shadowy, while the other is illuminated by the sudden blink of insight. The overall composition is clean and modern, emphasizing the concept of rapid, intuitive cognition emerging from the darkness of the subconscious.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # ⚡🚫💭 Blink: The Power of Thinking Without Thinking  
+![books-blink-the-power-of-thinking-without-thinking](../books-blink-the-power-of-thinking-without-thinking.jpg)  
 [🛒 Blink: The Power of Thinking Without Thinking. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/496yeMw)  
   
 ## 📚 Book Report: Blink: The Power of Thinking Without Thinking by Malcolm Gladwell  

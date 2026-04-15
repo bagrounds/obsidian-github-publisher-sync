@@ -9,9 +9,10 @@ image_date: 2026-04-12T13:32:53Z
 image_model: "@cf/black-forest-labs/flux-1-schnell"
 image_prompt: A high-angle, cinematic view of a turbulent ocean merging into a digital landscape. On one side, deep blue, crashing waves represent the chaotic global currents of news and conflict. As the water flows toward the center, it transitions into glowing, translucent geometric shards - representing shifting sands and data points - that float and reassemble into a stylized, holographic globe. The lighting is dramatic, with a stark contrast between the cool tones of the water and the warm, ethereal light emanating from the digital fragments. The atmosphere is vast and interconnected, capturing the tension between organic global events and the structured, technological lens through which we view them. The composition is clean and modern, evoking a sense of complex, shifting momentum.
 link_analysis_model: gemini-3.1-flash-lite-preview
-link_analysis_time: 2026-04-12T00:00:00Z
+link_analysis_time: 2026-04-14T00:00:00Z
 force_analyze_links: false
 updated: 2026-04-12T15:20:48
+link_analysis_version: "2"
 ---
 [Home](../index.md) > [📰 The Noise](./index.md) | [⏮️](./2026-04-11-first-broadcast.md) [⏭️](./2026-04-13-global-currents-shifting-sands.md)  
 # 2026-04-12 | 📰 🌊 Global Currents, Shifting Sands 🌐 📰  

@@ -9,6 +9,10 @@ Platform:
 Channel: Yale Jackson School of Global Affairs
 tags:
 youtube: https://youtu.be/0YRTSA9q-6M
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_version: "2"
+link_analysis_time: 2026-04-14T00:00:00Z
+force_analyze_links: false
 ---
 [Home](../index.md) > [Videos](./index.md)  
 # 🧠🇺🇸🌱 How America recovers from all this | Yale Conversations with David Brooks | Yale University  

@@ -5,11 +5,12 @@ aliases:
 title: 🤰🏼👶🍼👨‍👩‍👦 Parenting and Infant Development Guide
 URL: https://bagrounds.org/bot-chats/parenting-and-infant-development-guide
 link_analysis_model: gemini-3.1-flash-lite-preview
-link_analysis_time: 2026-04-10T00:00:00Z
+link_analysis_time: 2026-04-15T00:00:00Z
 force_analyze_links: false
 image_date: 2026-04-12T06:44:46Z
 image_model: "@cf/black-forest-labs/flux-1-schnell"
 image_prompt: "A soft, warm-toned illustration featuring a cozy, sunlit nursery corner. In the center, a gentle, minimalist line-art drawing of an adult’s hand softly cradling a tiny, peaceful infant’s hand. Surrounding this central focus are subtle, stylized icons representing growth and knowledge: a small sprouting plant, a stylized brain silhouette, a wooden building block, and a soft-glowing star. The background uses a soothing palette of cream, sage green, and muted peach. The composition is clean and airy, with soft-focus lighting that creates an atmosphere of nurturing, intellectual curiosity, and calm. No harsh lines or cluttered details; the aesthetic is modern, professional, and tranquil."
+link_analysis_version: "2"
 ---
 [Home](../index.md) > [Bot Chats](./index.md)  
 # 🤰🏼👶🍼👨‍👩‍👦 Parenting and Infant Development Guide  

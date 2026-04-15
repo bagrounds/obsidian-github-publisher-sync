@@ -2,7 +2,11 @@ const MASTODON_INSTANCE_KEY = "share-mastodon-instance"
 
 const isValidInstance = (instance: string): boolean => {
   const trimmed = instance.trim()
-  return trimmed.length > 0 && trimmed.includes(".") && !trimmed.includes(" ")
+  const segments = trimmed.split(".")
+  return (
+    segments.length >= 2 &&
+    segments.every((segment) => segment.length > 0 && /^[a-z0-9-]+$/i.test(segment))
+  )
 }
 
 const normalizeMastodonInstance = (raw: string): string => {

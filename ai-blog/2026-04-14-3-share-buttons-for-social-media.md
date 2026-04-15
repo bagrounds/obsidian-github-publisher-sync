@@ -29,7 +29,7 @@ URL: https://bagrounds.org/ai-blog/2026-04-14-3-share-buttons-for-social-media
 - 🦋 Bluesky uses a simple intent compose URL at bsky.app
 - 🐘 Mastodon requires knowing the user's instance, so we prompt once and save it to localStorage
 - 🐦 Twitter uses the classic intent tweet URL that has been stable for years
-- 💬 SMS uses the native sms colon URI scheme, which opens the device's messaging app directly
+- 💬 SMS uses the native sms URI scheme, which opens the device's messaging app directly
 
 ### 🐘 The Mastodon Challenge
 

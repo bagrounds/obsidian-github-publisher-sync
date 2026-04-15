@@ -5,11 +5,12 @@ aliases:
 title: 📖 Book 🧭 Explorer 1
 URL: https://bagrounds.org/bot-chats/book-explorer-1
 link_analysis_model: gemini-3.1-flash-lite-preview
-link_analysis_time: 2026-04-06T00:00:00Z
+link_analysis_time: 2026-04-15T00:00:00Z
 force_analyze_links: false
 image_date: 2026-04-11T16:18:43Z
 image_model: "@cf/black-forest-labs/flux-1-schnell"
 image_prompt: "An intricate, isometric illustration of a multi-tiered, floating library garden. At the center, a large, glowing, open book serves as a fountain, with pages turning into cascading waterfalls that nourish a vibrant landscape of diverse flora. Tiny, whimsical paths wind through the scene, connecting miniature sections representing different genres: a rugged mountain range for adventure, a sterile, futuristic metallic dome for science fiction, and a lush, ancient forest for history. Floating compasses and glowing navigation icons drift through the air like golden embers, highlighting various connection points between the sections. The color palette is rich and warm, blending deep mahogany wood tones with vibrant greenery and soft, ethereal light emanating from the central book, suggesting a journey of endless discovery and interconnected ideas."
+link_analysis_version: "2"
 ---
 [Home](../index.md) > [Bot Chats](./index.md) | [⏭️ 📖 Book 🧭 Explorer 2](./book-explorer-2.md)  
 # 📖 Book 🧭 Explorer 1  

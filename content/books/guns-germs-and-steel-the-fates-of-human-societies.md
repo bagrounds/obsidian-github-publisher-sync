@@ -10,9 +10,13 @@ updated: 2026-03-18T10:20:22.077Z
 force_analyze_links: false
 link_analysis_time: 2026-03-22T23:33:05.445Z
 link_analysis_model: gemini-3.1-flash-lite-preview
+image_date: 2026-04-15T12:26:24Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A stylized, ancient-looking globe dominates the center, subtly highlighting continental landmasses. Emerging from the land, a gleaming steel plow is firmly planted, surrounded by golden stalks of wheat, symbolizing agriculture and foundational technology. Nearby, a shadowy, ethereal cloud of microscopic virus-like shapes drifts ominously across another continent, representing the impact of germs. Above, a sleek, dark silhouette of a musket barrel or a cannon points downwards, casting a long shadow, signifying the power of guns and conquest. The overall image illustrates the interconnected, shaping forces on human societies, with subtle gradients suggesting historical progression and divergent paths across the world.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🔫🦠🔩 Guns, Germs, and Steel: The Fates of Human Societies  
+![books-guns-germs-and-steel-the-fates-of-human-societies](../books-guns-germs-and-steel-the-fates-of-human-societies.jpg)  
 [🛒 Guns, Germs, and Steel: The Fates of Human Societies. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3GpLRKU)  
   
 ## 📖 Book Report: 🔫 Guns, 🦠 Germs, and ⚙️ Steel: The Fates of Human Societies  

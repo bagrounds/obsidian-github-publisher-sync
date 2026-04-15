@@ -5,11 +5,12 @@ aliases:
 title: 💭🚫➡️💡 Effective Thought-Action Defusion Techniques
 URL: https://bagrounds.org/bot-chats/effective-thought-action-defusion-techniques
 link_analysis_model: gemini-3.1-flash-lite-preview
-link_analysis_time: 2026-04-06T00:00:00Z
+link_analysis_time: 2026-04-15T00:00:00Z
 force_analyze_links: false
 image_date: 2026-04-11T21:18:14Z
 image_model: "@cf/black-forest-labs/flux-1-schnell"
 image_prompt: A minimalist, surreal illustration depicting the concept of mental separation. In the center, a translucent, glowing human silhouette stands in a serene, vast landscape. Floating around the silhouette are various jagged, dark, scribbled shapes representing intrusive thoughts. A gentle, ethereal light source from above illuminates the scene, causing these dark shapes to cast long, soft shadows on the ground, emphasizing that they are mere projections rather than solid objects. The color palette uses cool, calming blues and soft teals for the environment, contrasting with the muted, neutral tones of the floating thoughts. The composition is clean and spacious, evoking a sense of clarity, mindfulness, and emotional distance.
+link_analysis_version: "2"
 ---
 [Home](../index.md) > [Bot Chats](./index.md)  
 # 💭🚫➡️💡 Effective Thought-Action Defusion Techniques  

@@ -8,11 +8,12 @@ CTA: 🧠 Reclaim focus.
 affiliate link: https://amzn.to/4oPswEe
 updated: 2026-03-25T10:19:30.515Z
 force_analyze_links: false
-link_analysis_time: 2026-03-22T23:36:05.867Z
+link_analysis_time: 2026-04-14T00:00:00Z
 link_analysis_model: gemini-3.1-flash-lite-preview
 image_date: 2026-04-14T08:41:52Z
 image_model: "@cf/black-forest-labs/flux-1-schnell"
 image_prompt: A stylized human head silhouette, split down the middle. One side depicts a calm, deep blue or purple gradient, suggesting a tranquil, focused mind, perhaps with subtle, flowing lines. The other side is a vibrant, chaotic explosion of interconnected, glowing lines and tiny, fragmented digital icons (like miniature app symbols or notification bubbles) in bright, contrasting colors. These lines and icons visually rewire into the brains structure, creating a sense of constant stimulation and distraction. The dividing line between the two halves is sharp and almost electric, emphasizing the stark contrast and the internets invasive influence.
+link_analysis_version: "2"
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 📱🧠 The Shallows: What the Internet Is Doing to Our Brains  

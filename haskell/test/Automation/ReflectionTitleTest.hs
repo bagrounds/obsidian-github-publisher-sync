@@ -1,10 +1,12 @@
 module Automation.ReflectionTitleTest (tests) where
 
+import Data.Time (fromGregorian)
 import qualified Data.Text as T
 import Test.Tasty (TestTree, testGroup)
 import Test.Tasty.HUnit (testCase, (@?=), assertBool)
 
 import Automation.ReflectionTitle
+import Automation.PacificTime (formatDay)
 import qualified Automation.Gemini as Gemini
 
 tests :: TestTree
@@ -244,7 +246,8 @@ filterRecentReflectionFilesTests = testGroup "filterRecentReflectionFiles"
         @?= ["2026-04-13.md", "2026-04-11.md", "2026-04-10.md"]
 
   , testCase "limits to 20 most recent files" $
-      let files = fmap (\day -> "2026-03-" <> (if day < 10 then "0" else "") <> show day <> ".md") ([1..25] :: [Int])
+      let reflectionFile day = T.unpack (formatDay day) <> ".md"
+          files = fmap (reflectionFile . fromGregorian 2026 3) [1..25]
       in length (filterRecentReflectionFiles "2026-04-01" files)
            @?= 20
 

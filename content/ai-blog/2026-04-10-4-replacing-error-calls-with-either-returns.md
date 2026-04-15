@@ -5,11 +5,12 @@ aliases:
 title: 2026-04-10 | 🛡️ Replacing Error Calls with Either Returns 🧱
 URL: https://bagrounds.org/ai-blog/2026-04-10-4-replacing-error-calls-with-either-returns
 link_analysis_model: gemini-3.1-flash-lite-preview
-link_analysis_time: 2026-04-10T00:00:00Z
+link_analysis_time: 2026-04-14T00:00:00Z
 force_analyze_links: false
 image_date: 2026-04-12T22:19:18Z
 image_model: "@cf/black-forest-labs/flux-1-schnell"
 image_prompt: A split-screen composition featuring a sharp contrast between two states. On the left, a chaotic, jagged pile of dark, crumbling stone blocks represents Error calls, with a faint, ominous red glow emanating from the cracks. On the right, a clean, symmetrical, and perfectly interlocking structure of smooth, light-colored blocks represents Either returns. A gentle, calming blue light illuminates the right side, highlighting the stability and seamless fit of the pieces. The transition between the two sides is a clean, vertical line, symbolizing the shift from fragile runtime crashes to robust, type-safe architectural design. The background is a soft, neutral gradient, keeping the focus entirely on the transformation of the structures.
+link_analysis_version: "2"
 ---
 [🏡 Home](../index.md) > [🤖 AI Blog](./index.md) | [⏮️](./2026-04-10-3-testing-either-error-paths.md) [⏭️](./2026-04-10-5-separating-data-from-behavior-in-image-providers.md)  
 # 2026-04-10 | 🛡️ Replacing Error Calls with Either Returns 🧱  

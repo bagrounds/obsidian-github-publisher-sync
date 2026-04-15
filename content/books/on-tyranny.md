@@ -8,8 +8,9 @@ Author:
 tags:
 affiliate link: https://amzn.to/4jDxSib
 force_analyze_links: false
-link_analysis_time: 2026-03-22T06:07:08.810Z
+link_analysis_time: 2026-04-14T00:00:00Z
 link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_version: "2"
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 👑🚫📜2️⃣0️⃣ On Tyranny: Twenty Lessons from the Twentieth Century  

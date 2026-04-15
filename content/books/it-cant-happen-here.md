@@ -9,8 +9,9 @@ tags:
 CTA: 🚨 Avert tyranny.
 affiliate link: https://www.amazon.com/dp/0451525825?tag=bagrounds-20
 force_analyze_links: false
-link_analysis_time: 2026-03-22T06:07:10.709Z
+link_analysis_time: 2026-04-14T00:00:00Z
 link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_version: "2"
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🙅‍♀️👹 It Can't Happen Here  

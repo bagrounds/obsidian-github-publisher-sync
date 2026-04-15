@@ -7,8 +7,9 @@ URL: https://bagrounds.org/articles/reasoning-with-language-model-is-planning-wi
 Author:
 tags: []
 link_analysis_model: gemini-3.1-flash-lite-preview
-link_analysis_time: 2026-04-11T00:00:00Z
+link_analysis_time: 2026-04-14T00:00:00Z
 force_analyze_links: false
+link_analysis_version: "2"
 ---
 [Home](../index.md) > [Articles](./index.md)  
 # [🗣️🗺️🤖⚙️ Reasoning with Language Model is Planning with World Model](https://arxiv.org/pdf/2305.14992)  

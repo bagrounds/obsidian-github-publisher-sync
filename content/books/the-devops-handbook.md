@@ -12,9 +12,13 @@ updated: 2026-03-10T08:12:01.544Z
 link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-01T00:00:00Z
 force_analyze_links: false
+image_date: 2026-04-15T17:34:33Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A stylized, open handbook forms the central element, its pages subtly glowing. From within and around it, a series of interconnected, smoothly rotating gears are depicted, representing technology and collaboration. Arrows subtly weave through the gears, illustrating continuous flow and feedback loops. Above this system, a sleek, upward-launching rocket symbolizes agility and world-class performance. A modern, abstract shield element is integrated, perhaps as a protective aura or a supporting structure, conveying reliability and security. The illustration uses a clean, contemporary style with a palette of cool blues, greens, and metallic grays, accented by a bright, energetic highlight for the rockets ascent.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # ⚙️🚀🛡️ The DevOps Handbook: How to Create World-Class Agility, Reliability, & Security in Technology Organizations  
+![books-the-devops-handbook](../books-the-devops-handbook.jpg)  
 [🛒 The DevOps Handbook, Second Edition: How to Create World-Class Agility, Reliability, & Security in Technology Organizations. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/453CvhM)  
   
 ## 🤖 AI Summary  

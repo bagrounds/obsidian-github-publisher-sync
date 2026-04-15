@@ -149,8 +149,7 @@ buildEntry :: FilePath -> NavLinkResult -> IO (Maybe (Text, Title, Text))
 buildEntry aiBlogDir result = do
   titleText <- extractAiBlogTitle aiBlogDir (nlrFilename result)
   let relPath = "ai-blog/" <> nlrFilename result
-      date = fromMaybe "" (extractPostDate (nlrFilename result))
-  pure $ case (T.null date, mkTitle titleText) of
-    (True, _)                     -> Nothing
-    (_, Left _)                   -> Nothing
-    (False, Right validTitle)     -> Just (relPath, validTitle, date)
+  pure $ do
+    date <- extractPostDate (nlrFilename result)
+    validTitle <- either (const Nothing) Just (mkTitle titleText)
+    Just (relPath, validTitle, date)

@@ -34,19 +34,27 @@ URL: https://bagrounds.org/ai-blog/2026-04-14-1-fixing-link-insertion-for-auto-b
 
 ## 🧩 The Shared Wikilink Module
 
-📦 A new Automation.Wikilink module now provides a single formatWikilink function that takes a target path and an alias and returns a properly formatted wikilink. Every module that constructs wikilinks now delegates to this shared function.
+📦 A new Automation.Wikilink module now provides formatWikilink, buildBackLink, and buildForwardLink as the single source of truth for all wikilink construction. Every module that constructs wikilinks now delegates to this shared module.
 
-🔗 BlogPrompt's buildBackLink and buildForwardLink now use formatWikilink internally.
+🔗 buildBackLink and buildForwardLink were moved from BlogPrompt (which is about AI prompt construction, not navigation) to Wikilink, their domain-appropriate home. AiBlogLinks, BlogSeries, BlogPrompt, and RunScheduled all import them from Wikilink now.
 
-🗑️ AiBlogLinks had its own buildAiBlogBackLink and buildAiBlogForwardLink functions, which were exact duplicates of calling buildBackLink with the AI blog config. These were removed entirely. The module now imports and uses the generic versions from BlogPrompt.
+🗑️ AiBlogLinks had duplicate buildAiBlogBackLink and buildAiBlogForwardLink functions. These were removed entirely, replaced by direct calls to the shared functions.
 
-📝 DailyReflection's buildPostLink, buildSeriesSectionHeading, buildReflectionContent, and addForwardLink all now delegate to the shared formatWikilink.
+📝 DailyReflection's buildPostLink, buildSeriesSectionHeading, buildReflectionContent, and addForwardLink all delegate to the shared formatWikilink.
 
 🔎 InternalLinking's CandidateDiscovery module renamed its formatWikilink to formatContentEntryWikilink, which extracts the path and title from a ContentEntry and delegates to the shared formatWikilink.
 
+## 🏷️ Domain Types Over Primitives
+
+🔒 After the initial fix, a follow-up review pointed out that passing raw Text for the title parameter invites the same class of bug to recur. 📐 The solution: change updateDailyReflection, insertPostLink, and buildPostLink to take Title (a validated newtype from Automation.Title) instead of raw Text.
+
+🧱 This pushes validation to the boundary. The blog series path wraps the display title via mkTitle before calling updateDailyReflection. The AI blog path validates titles inside buildReflectionLinks, filtering out any entries with invalid titles at the source.
+
+🎯 Now, if someone tries to pass a raw Text where a Title is required, the compiler catches it. The type system prevents the bug from recurring.
+
 ## 🧪 Testing
 
-📊 The final test count is 1754, up from 1748 before the change. ✅ Nine new tests cover the shared formatWikilink function: six unit tests verifying correct output for various link types, and three property tests ensuring structural correctness. ➕ Two new tests in DailyReflectionTest verify that emojis are preserved in blog series post links. ➖ Five tests for the removed duplicate functions were cleaned up.
+📊 The final test count is 1758. ✅ Thirteen new tests cover the shared Wikilink module: six unit tests for formatWikilink, four unit tests for buildBackLink and buildForwardLink, and three property tests. ➕ Two tests in DailyReflectionTest verify emoji preservation. All existing tests were updated to use the Title type via the testTitle helper.
 
 🧹 Zero hlint hints, zero compiler warnings.
 

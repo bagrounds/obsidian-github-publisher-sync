@@ -11,9 +11,13 @@ updated: 2026-03-21T22:05:08.774Z
 force_analyze_links: false
 link_analysis_time: 2026-03-22T06:01:20.658Z
 link_analysis_model: gemini-3.1-flash-lite-preview
+image_date: 2026-04-14T20:27:33Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A cosmic tapestry of swirling nebulae in deep blues, purples, and faint greens forms the background. Dominating the foreground is a translucent, intricate network resembling neural pathways or a stylized brain, glowing softly. Within this ethereal structure, or subtly layered behind it, abstract, ghostly forms of diverse life – perhaps a human-like silhouette and a multi-limbed creature – are faintly visible, suggesting fragmented memories or simulated existences. The edges of the neural network subtly pixelate or shimmer, hinting at the fragility and shifting nature of reality and identity. The overall impression is one of profound mystery and intellectual depth, evoking consciousness across deep time.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🧠📖✨ Children of Memory  
+![books-children-of-memory](../books-children-of-memory.jpg)  
 [🛒 Children of Memory. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4bpta6L)  
   
 ## 🤖 AI Summary  

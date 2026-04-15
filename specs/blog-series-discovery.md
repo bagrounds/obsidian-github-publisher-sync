@@ -53,6 +53,7 @@
 | 🏷️ Field | 📊 Type | 📝 Default | 📝 Description |
 |---|---|---|---|
 | `priorityUser` | string or null | null | GitHub handle whose comments get priority flagging |
+| `crossSeries` | boolean | false | When true, includes latest posts from all other series in the generation context for cross-series synthesis |
 
 ### 📄 Example Configuration
 

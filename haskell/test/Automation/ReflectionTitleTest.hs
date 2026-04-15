@@ -20,6 +20,7 @@ tests = testGroup "ReflectionTitle"
   , buildReflectionTitlePromptTests
   , isReflectionFileTests
   , extractCreativeTitleTests
+  , filterRecentReflectionFilesTests
   ]
 
 defaultModelTests :: TestTree
@@ -219,4 +220,46 @@ extractCreativeTitleTests = testGroup "extractCreativeTitle"
 
   , testCase "uses first pipe separator only" $
       extractCreativeTitle "title: \"A | B | C\"\n" @?= "B | C"
+  ]
+
+filterRecentReflectionFilesTests :: TestTree
+filterRecentReflectionFilesTests = testGroup "filterRecentReflectionFiles"
+  [ testCase "filters to reflection files before given date" $
+      filterRecentReflectionFiles "2026-04-15"
+        ["2026-04-14.md", "2026-04-15.md", "2026-04-13.md", "random.txt"]
+        @?= ["2026-04-14.md", "2026-04-13.md"]
+
+  , testCase "returns empty for no matching files" $
+      filterRecentReflectionFiles "2026-01-01"
+        ["readme.md", "notes.txt"]
+        @?= []
+
+  , testCase "returns empty for empty input" $
+      filterRecentReflectionFiles "2026-04-15" []
+        @?= []
+
+  , testCase "sorts in reverse chronological order" $
+      filterRecentReflectionFiles "2026-04-15"
+        ["2026-04-10.md", "2026-04-13.md", "2026-04-11.md"]
+        @?= ["2026-04-13.md", "2026-04-11.md", "2026-04-10.md"]
+
+  , testCase "limits to 20 most recent files" $
+      let files = fmap (\day -> "2026-03-" <> (if day < 10 then "0" else "") <> show day <> ".md") ([1..25] :: [Int])
+      in length (filterRecentReflectionFiles "2026-04-01" files)
+           @?= 20
+
+  , testCase "excludes the target date itself" $
+      filterRecentReflectionFiles "2026-04-15"
+        ["2026-04-15.md", "2026-04-14.md"]
+        @?= ["2026-04-14.md"]
+
+  , testCase "ignores non-reflection files" $
+      filterRecentReflectionFiles "2026-04-15"
+        ["2026-04-14.md", "AGENTS.md", "index.md", "2026-04-13-extra.md"]
+        @?= ["2026-04-14.md"]
+
+  , testCase "handles mixed valid and invalid files" $
+      filterRecentReflectionFiles "2026-04-15"
+        ["2026-04-14.md", "2026-04-12.txt", "not-a-date.md", "2026-04-10.md"]
+        @?= ["2026-04-14.md", "2026-04-10.md"]
   ]

@@ -9,7 +9,6 @@ import Data.Maybe (catMaybes, fromMaybe)
 import Data.Text (Text)
 import qualified Data.Text as T
 import qualified Data.Text.IO as TIO
-import Data.Time (addDays)
 import Network.HTTP.Client (newManager)
 import Network.HTTP.Client.TLS (tlsManagerSettings)
 import System.Directory (createDirectoryIfMissing, doesDirectoryExist, doesFileExist, listDirectory, removeFile)
@@ -74,8 +73,8 @@ import Automation.ReflectionTitle
   , ReflectionTitleResult (rtrFullTitle, rtrModel, rtrUpdatedContent)
   , defaultTitleModel
   , extractCreativeTitle
+  , filterRecentReflectionFiles
   , generateReflectionTitle
-  , isReflectionFile
   , reflectionNeedsTitle
   )
 import Automation.Scheduler
@@ -100,18 +99,10 @@ import qualified Automation.Context as Context
 import qualified Automation.InternalLinking as IL
 import Automation.SocialPosting (autoPost)
 import Automation.CliArgs (CliArgs (..), parseCliArgs)
-import Automation.PacificTime (formatDay, todayPacificDay)
+import Automation.PacificTime (formatDay, todayPacificDay, yesterdayPacificDay)
 import Automation.VaultSync (syncFileToVault, syncNewAiBlogPosts, copySeriesPosts, syncRepoPostsToVault, ensureFileInVault)
 import Automation.TaskRunner (inferenceDashboards, runTasks, logMsg, failTask)
 import Automation.Text (stripCodeFences)
-
--- ---------------------------------------------------------------------------
--- Constants
--- ---------------------------------------------------------------------------
-
--- ---------------------------------------------------------------------------
--- Shared Gemini caller for fiction/title generators
--- ---------------------------------------------------------------------------
 
 callGeminiForGenerator :: Context.AppContext -> NonEmpty Gemini.Model -> (Text, Text) -> IO (Text, Text)
 callGeminiForGenerator context models (systemPrompt, userPrompt) = do
@@ -121,10 +112,6 @@ callGeminiForGenerator context models (systemPrompt, userPrompt) = do
   case result of
     Left err -> failTask $ "Gemini API error: " <> T.pack (show err)
     Right response -> pure (Gemini.responseText response, Gemini.modelToText (Gemini.responseModel response))
-
--- ---------------------------------------------------------------------------
--- Environment helpers
--- ---------------------------------------------------------------------------
 
 requireEnv :: String -> IO Text
 requireEnv key = do
@@ -154,32 +141,6 @@ buildEnvMap keys = Map.fromList <$> mapM lookupOne keys
       mVal <- lookupEnv k
       pure (T.pack k, maybe "" T.pack mVal)
 
--- ---------------------------------------------------------------------------
--- readPreviousPostFilename from metadata file
--- ---------------------------------------------------------------------------
-
-readPreviousPostFilename :: FilePath -> IO (Maybe Text)
-readPreviousPostFilename metadataPath = do
-  exists <- doesFileExist metadataPath
-  if not exists
-    then pure Nothing
-    else do
-      content <- TIO.readFile metadataPath
-      -- Simple parse: find "previousPostFilename":"value"
-      case T.breakOn "\"previousPostFilename\"" content of
-        (_, rest) | not (T.null rest) ->
-          case T.breakOn "\"" (T.drop 1 (snd (T.breakOn ":" rest))) of
-            (_, afterColon) | not (T.null afterColon) ->
-              let afterQuote = T.drop 1 afterColon
-                  val = T.takeWhile (/= '"') afterQuote
-              in pure (Just val)
-            _ -> pure Nothing
-        _ -> pure Nothing
-
--- ---------------------------------------------------------------------------
--- Extract recent creative titles for reflection-title generation
--- ---------------------------------------------------------------------------
-
 extractRecentCreativeTitles :: FilePath -> Text -> IO [Text]
 extractRecentCreativeTitles reflectionsDir today = do
   exists <- doesDirectoryExist reflectionsDir
@@ -187,26 +148,13 @@ extractRecentCreativeTitles reflectionsDir today = do
     then pure []
     else do
       entries <- listDirectory reflectionsDir
-      let dateFiles = filter isReflectionFile entries
-          sorted = reverse $ filter (< T.unpack today <> ".md") dateFiles
-          recent = take 20 sorted
-      titles <- mapM readCreativeTitle recent
+      let recent = filterRecentReflectionFiles today entries
+      titles <- traverse readCreativeTitle recent
       pure (filter (not . T.null) titles)
   where
     readCreativeTitle filename = do
       content <- TIO.readFile (reflectionsDir </> filename)
       pure (extractCreativeTitle content)
-
--- ---------------------------------------------------------------------------
--- yesterdayPacific
--- ---------------------------------------------------------------------------
-
-yesterdayPacific :: IO Text
-yesterdayPacific = formatDay . addDays (-1) <$> todayPacificDay
-
--- ---------------------------------------------------------------------------
--- Task runners
--- ---------------------------------------------------------------------------
 
 runBlogSeries :: Context.AppContext -> Map Text BlogSeriesConfig -> Map Text BlogSeriesRunConfig -> Text -> IO ()
 runBlogSeries context seriesMap runConfigs seriesId = do
@@ -519,7 +467,7 @@ runReflectionTitle context = do
 
   today <- todayPacificDay
   let todayText = formatDay today
-  yesterday <- yesterdayPacific
+  yesterday <- formatDay <$> yesterdayPacificDay
 
   -- Try today first, then yesterday
   todayDone <- tryTitleForDate context todayText
@@ -572,10 +520,6 @@ tryTitleForDate context date = do
           logMsg $ "  🏷️  Title written for " <> date
           pure True
 
--- ---------------------------------------------------------------------------
--- Task dispatch
--- ---------------------------------------------------------------------------
-
 taskRunners :: Context.AppContext -> Map Text BlogSeriesConfig -> Map Text BlogSeriesRunConfig -> [ContentDirectory] -> [DiscoveredSeries] -> Map TaskId (IO ())
 taskRunners context seriesMap runConfigs contentDirs discovered =
   let blogSeriesRunners = Map.fromList
@@ -588,10 +532,6 @@ taskRunners context seriesMap runConfigs contentDirs discovered =
         , (ReflectionTitle, runReflectionTitle context)
         ]
   in Map.union blogSeriesRunners staticRunners
-
--- ---------------------------------------------------------------------------
--- Main
--- ---------------------------------------------------------------------------
 
 main :: IO ()
 main = do

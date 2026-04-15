@@ -1,5 +1,6 @@
 module Automation.PacificTime
   ( todayPacificDay
+  , yesterdayPacificDay
   , formatDay
   , formatDayHuman
   , pacificHour
@@ -12,6 +13,7 @@ import Data.Time
   ( Day
   , LocalTime
   , UTCTime
+  , addDays
   , defaultTimeLocale
   , formatTime
   , getCurrentTime
@@ -34,6 +36,9 @@ formatDayHuman day = T.pack $ formatTime defaultTimeLocale "%A, %B %-d, %Y" day
 todayPacificDay :: IO Day
 todayPacificDay =
   localDay . utcToLocalTimeTZ pacificTZ <$> getCurrentTime
+
+yesterdayPacificDay :: IO Day
+yesterdayPacificDay = addDays (-1) <$> todayPacificDay
 
 pacificHour :: UTCTime -> Int
 pacificHour utcNow =

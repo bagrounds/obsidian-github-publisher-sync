@@ -7,11 +7,12 @@ share: true
 affiliate link: https://amzn.to/43Q2Ldo
 CTA: 🧘‍♀️ Cultivate inner peace.
 link_analysis_model: gemini-3.1-flash-lite-preview
-link_analysis_time: 2026-04-01T00:00:00Z
+link_analysis_time: 2026-04-14T00:00:00Z
 force_analyze_links: false
 image_date: 2026-04-12T13:33:49Z
 image_model: "@cf/black-forest-labs/flux-1-schnell"
 image_prompt: A high-angle, minimalist illustration featuring a clean, modern workspace. In the center, a single, pristine white coffee mug sits on a wooden desk. Rising from the mug is a soft, ethereal wisp of steam that subtly curls into the shape of a tranquil, meditative silhouette. To the side, a simple line graph is drawn on a piece of paper, with the line gently trending upward, representing subtle progress. The lighting is soft and natural, casting long, gentle shadows that emphasize a sense of calm and clarity. The color palette uses muted, soothing tones like sage green, soft slate, and warm oak, evoking a professional yet peaceful atmosphere that bridges the gap between high-pressure corporate life and mindful introspection.
+link_analysis_version: "2"
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 📈🧘🏼‍♀️ 10% Happier  

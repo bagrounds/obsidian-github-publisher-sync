@@ -35,6 +35,8 @@ tests = testGroup "BlogSeries"
       let result = appendModelSignature "Post body" "gemini-2.5-flash"
       in assertBool "should contain model name" $
            "gemini-2.5-flash" `T.isInfixOf` result
+  , containsSystemPromptTests
+  , parseGeneratedPostEchoTests
   , generateSeriesIndexTests
   , buildBlogContextTests
   ]
@@ -115,4 +117,52 @@ buildBlogContextTests = testGroup "buildBlogContext"
         Left reason -> assertBool "error mentions unknown series" $
           T.isInfixOf "Unknown blog series" reason
         Right _ -> assertBool "should return Left for empty series ID" False
+  ]
+
+containsSystemPromptTests :: TestTree
+containsSystemPromptTests = testGroup "containsSystemPrompt"
+  [ testCase "detects verbatim system prompt echo" $
+      let systemPrompt = T.replicate 10 "You are a creative blog writer dedicated to fostering open discussion. "
+          generatedPost = "## Echo Post\n\n" <> systemPrompt <> "\n\nSome extra text."
+      in containsSystemPrompt systemPrompt generatedPost @?= True
+
+  , testCase "returns False for normal blog content" $
+      let systemPrompt = T.replicate 10 "You are a creative blog writer dedicated to fostering open discussion. "
+          generatedPost = "## Great Title\n\n" <> T.replicate 20 "This is original blog content about interesting topics. "
+      in containsSystemPrompt systemPrompt generatedPost @?= False
+
+  , testCase "returns False when system prompt is too short for fingerprinting" $
+      containsSystemPrompt "Short prompt" "## Title\n\nSome long content that contains Short prompt in it somewhere." @?= False
+
+  , testCase "returns False for empty system prompt" $
+      containsSystemPrompt "" ("## Title\n\n" <> T.replicate 20 "Some blog content. ") @?= False
+
+  , testCase "detects partial echo at different positions" $
+      let systemPrompt = T.concat
+            [ T.replicate 80 "A"
+            , T.replicate 80 "B"
+            , T.replicate 80 "C"
+            , T.replicate 80 "D"
+            ]
+          generatedPost = "## Title\n\n" <> T.drop 80 (T.take 280 systemPrompt) <> "\n\nMore content."
+      in containsSystemPrompt systemPrompt generatedPost @?= True
+  ]
+
+parseGeneratedPostEchoTests :: TestTree
+parseGeneratedPostEchoTests = testGroup "parseGeneratedPost with echo detection"
+  [ testCase "containsSystemPrompt rejects echo before parsing" $
+      let systemPrompt = T.replicate 10 "You are a creative blog writer dedicated to fostering open discussion. "
+          rawOutput = "## System Prompt Echo\n\n" <> systemPrompt <> T.replicate 5 "\n\nMore echoed content here. "
+      in containsSystemPrompt systemPrompt rawOutput @?= True
+
+  , testCase "parseGeneratedPost accepts normal post" $
+      let rawOutput = "## Original Post\n\n" <> T.replicate 20 "This is completely original and different content about various topics. "
+      in case parseGeneratedPost rawOutput of
+           Just (_, title) -> assertBool "title should match" $ "Original Post" `T.isInfixOf` title
+           Nothing -> assertBool "should parse successfully" False
+
+  , testCase "normal post does not trigger echo detection" $
+      let systemPrompt = T.replicate 10 "You are a creative blog writer dedicated to fostering open discussion. "
+          rawOutput = "## Original Post\n\n" <> T.replicate 20 "This is completely original and different content about various topics. "
+      in containsSystemPrompt systemPrompt rawOutput @?= False
   ]

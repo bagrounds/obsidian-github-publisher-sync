@@ -17,6 +17,7 @@ module Automation.Gemini
   , flashFallback
   , modelFallback
   , overrideModelChain
+  , supportsSystemInstruction
   , generateContent
   , generateContentWithFallback
   , defaultGenerationConfig
@@ -26,6 +27,7 @@ module Automation.Gemini
   , extractText
   , parseApiStatus
   , parseErrorBody
+  , buildRequestBody
   ) where
 
 import Automation.Json (Value (..), ToValue (..), (.=), object, encode)
@@ -131,6 +133,10 @@ overrideModelChain envValue defaultChain = case envValue of
     in parsed :| filter (/= parsed) (NE.toList defaultChain)
   _ -> defaultChain
 
+supportsSystemInstruction :: Model -> Bool
+supportsSystemInstruction Gemma3 = False
+supportsSystemInstruction _      = True
+
 -- | Domain-specific error type for Gemini API operations.
 -- Structured constructors preserve error context and enable typed pattern
 -- matching. The @HttpError@ constructor carries the parsed @ApiStatus@ from
@@ -217,10 +223,11 @@ defaultGenerationConfig = GenerationConfig
   }
 
 data Request = Request
-  { grPrompt           :: Text
-  , grModel            :: Model
-  , grApiKey           :: Secret
-  , grGenerationConfig :: GenerationConfig
+  { requestPrompt             :: Text
+  , requestSystemInstruction  :: Maybe Text
+  , requestModel              :: Model
+  , requestApiKey             :: Secret
+  , requestGenerationConfig   :: GenerationConfig
   } deriving (Show, Eq)
 
 data Response = Response
@@ -234,11 +241,16 @@ geminiEndpoint model =
     <> modelToText model
     <> ":generateContent"
 
-buildRequestBody :: Text -> GenerationConfig -> Value
-buildRequestBody prompt config = object
-  [ "contents" .= [ object [ "parts" .= [ object [ "text" .= prompt ] ] ] ]
-  , "generationConfig" .= config
-  ]
+buildRequestBody :: Maybe Text -> Text -> GenerationConfig -> Value
+buildRequestBody systemInstruction prompt config =
+  let base =
+        [ "contents" .= [ object [ "parts" .= [ object [ "text" .= prompt ] ] ] ]
+        , "generationConfig" .= config
+        ]
+      fields = case systemInstruction of
+        Nothing -> base
+        Just si -> ("system_instruction" .= object [ "parts" .= [ object [ "text" .= si ] ] ]) : base
+  in object fields
 
 parseResponseText :: LBS.ByteString -> Either Error Text
 parseResponseText body =
@@ -264,9 +276,15 @@ extractText _ = Left (ExtractionError "response is not an object")
 
 generateContent :: Manager -> Request -> IO (Either Error Response)
 generateContent manager req = do
-  let url = T.unpack $ geminiEndpoint (grModel req) <> "?key=" <> unSecret (grApiKey req)
+  let model = requestModel req
+      modelSupport = supportsSystemInstruction model
+      effectiveSystemInstruction = if modelSupport then requestSystemInstruction req else Nothing
+      effectivePrompt = case (requestSystemInstruction req, modelSupport) of
+        (Just systemInstruction, False) -> systemInstruction <> "\n\n" <> requestPrompt req
+        _                               -> requestPrompt req
+  let url = T.unpack $ geminiEndpoint model <> "?key=" <> unSecret (requestApiKey req)
   initReq <- parseRequest url
-  let body = encode $ buildRequestBody (grPrompt req) (grGenerationConfig req)
+  let body = encode $ buildRequestBody effectiveSystemInstruction effectivePrompt (requestGenerationConfig req)
   let httpReq = initReq
         { HTTP.method = "POST"
         , HTTP.requestBody = RequestBodyLBS body
@@ -283,19 +301,20 @@ generateContent manager req = do
         Left err   -> pure $ Left err
         Right text -> pure $ Right Response
           { responseText  = T.strip text
-          , responseModel = grModel req
+          , responseModel = model
           }
     code ->
       let (apiStatus, message) = parseErrorBody (responseBody response)
       in pure $ Left $ HttpError code apiStatus message
 
-generateContentWithFallback :: Manager -> NonEmpty Model -> Text -> Secret -> GenerationConfig -> IO (Either Error Response)
-generateContentWithFallback manager (model :| fallbacks) prompt apiKey config = do
+generateContentWithFallback :: Manager -> NonEmpty Model -> Maybe Text -> Text -> Secret -> GenerationConfig -> IO (Either Error Response)
+generateContentWithFallback manager (model :| fallbacks) systemInstruction prompt apiKey config = do
   result <- generateContent manager Request
-    { grPrompt = prompt
-    , grModel = model
-    , grApiKey = apiKey
-    , grGenerationConfig = config
+    { requestPrompt = prompt
+    , requestSystemInstruction = systemInstruction
+    , requestModel = model
+    , requestApiKey = apiKey
+    , requestGenerationConfig = config
     }
   case result of
     Right response -> pure $ Right response
@@ -303,4 +322,4 @@ generateContentWithFallback manager (model :| fallbacks) prompt apiKey config = 
       [] -> pure $ Left $ AllModelsFailed model err
       (next : rest) -> do
         putStrLn $ "⚠️ Model " <> T.unpack (modelToText model) <> " failed, trying next fallback..."
-        generateContentWithFallback manager (next :| rest) prompt apiKey config
+        generateContentWithFallback manager (next :| rest) systemInstruction prompt apiKey config

@@ -144,8 +144,8 @@ generateSocialPostText manager apiKey note platform = do
       maxLen = platformMaxCharacters (platformLimits platform)
       genConfig = Gemini.defaultGenerationConfig { Gemini.gcTemperature = 0.8, Gemini.gcMaxOutputTokens = 512 }
 
-  tagsResult <- Gemini.generateContentWithFallback manager (Gemini.defaultModel :| [Gemini.gemini3Flash, Gemini.flashFallback]) tagsCombined apiKey genConfig
-  questionResult <- Gemini.generateContentWithFallback manager (Gemini.defaultQuestionModel :| [Gemini.flashFallback]) questionCombined apiKey genConfig
+  tagsResult <- Gemini.generateContentWithFallback manager (Gemini.defaultModel :| [Gemini.gemini3Flash, Gemini.flashFallback]) Nothing tagsCombined apiKey genConfig
+  questionResult <- Gemini.generateContentWithFallback manager (Gemini.defaultQuestionModel :| [Gemini.flashFallback]) Nothing questionCombined apiKey genConfig
 
   case (tagsResult, questionResult) of
     (Left err, _) -> pure (Left $ "Tags generation failed: " <> T.pack (show err))
@@ -162,7 +162,7 @@ generateSocialPostText manager apiKey note platform = do
               shortenPrompt = buildShortenQuestionPrompt question (overage + shortenSafetyBuffer)
               shortenCombined = ppSystem shortenPrompt <> "\n\n" <> ppUser shortenPrompt
           putStrLn $ "  ✂️ Post exceeds Bluesky limit by " <> show overage <> " chars — asking LLM to shorten question..."
-          shortenResult <- Gemini.generateContentWithFallback manager (Gemini.defaultQuestionModel :| [Gemini.flashFallback]) shortenCombined apiKey genConfig
+          shortenResult <- Gemini.generateContentWithFallback manager (Gemini.defaultQuestionModel :| [Gemini.flashFallback]) Nothing shortenCombined apiKey genConfig
           case shortenResult of
             Right shortenResponse -> do
               let shortenedQ = T.strip (Gemini.responseText shortenResponse)

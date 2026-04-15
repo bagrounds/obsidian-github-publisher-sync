@@ -38,7 +38,9 @@
    ├─ 💬 buildCommentsSection() → priority-flagged comments
    └─ 📅 recapInstructions() → weekly/monthly/quarterly/annual recap rules
          ↓
-🤖 Gemini API call → raw generated post
+🤖 Gemini API call (model-aware: system_instruction for Gemini models, concatenated for Gemma) → raw generated post
+         ↓
+🛡️ containsSystemPrompt(systemPrompt, raw) → reject if echo detected
          ↓
 📋 parseGeneratedPost(raw) → { body, title }
          ↓
@@ -112,6 +114,14 @@
 🏷️ The title is extracted from the first H1 or H2 heading in the generated markdown.
 🔗 `extractSlug` strips the YYYY-MM-DD date prefix from filenames to produce URL-friendly slugs.
 
+## 🛡️ System Prompt Echo Detection
+
+🔍 `containsSystemPrompt` detects when AI output echoes the system prompt (AGENTS.md) instead of generating original content.
+🧬 The function samples three 200-character fingerprint substrings from the 25%, 50%, and 75% positions of the system prompt.
+🚫 If any fingerprint appears verbatim in the generated output, the post is rejected before publishing.
+📡 This defense is complementary to using the Gemini API `system_instruction` field, which sends the system prompt as a structured instruction rather than concatenating it with user content.
+⚠️ The `system_instruction` separation is the primary fix — it tells the model to treat the prompt as behavioral instructions, not content to echo. The fingerprint check is a safety net for when the model misbehaves despite correct API usage.
+
 ## 🧹 Title Sanitization
 
 🛡️ `sanitizeTitle` strips date prefixes, pipe separators, and series icon emoji from AI-generated titles before they reach `buildDisplayTitle`.
@@ -147,6 +157,7 @@
 | `assembleFrontmatter(series, today, title, slug)` | BlogPrompt | 📝 Generate YAML frontmatter with display title, quoted Author, and date-prefixed URL |
 | `buildDisplayTitle(series, today, title)` | BlogPrompt | 🏷️ Construct display title as `today \| icon title icon` |
 | `parseGeneratedPost(raw)` | BlogSeries | 📋 Parse and validate AI-generated post content |
+| `containsSystemPrompt(systemPrompt, generated)` | BlogSeries | 🛡️ Detect system prompt echo via fingerprint sampling |
 | `extractSlug(filename)` | BlogSeries | 🔗 Extract URL slug from dated filename |
 | `generateSeriesIndex(series, posts)` | BlogSeries | 📇 Generate dataview-based series index page |
 | `appendModelSignature(body, model)` | BlogSeries | ✍️ Append model attribution signature |

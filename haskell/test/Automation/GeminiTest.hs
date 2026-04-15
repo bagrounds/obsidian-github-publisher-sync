@@ -4,12 +4,14 @@ import Data.List (isInfixOf)
 import Data.List.NonEmpty (NonEmpty ((:|)))
 import qualified Data.List.NonEmpty as NE
 import qualified Data.Text as T
+import qualified Data.Text.Encoding as TE
+import qualified Data.ByteString.Lazy as LBS
 import Test.Tasty (TestTree, testGroup)
 import Test.Tasty.HUnit (testCase, (@?=), assertBool)
 import Test.Tasty.QuickCheck (testProperty)
 import qualified Test.QuickCheck as QC
 
-import Automation.Json (Value (Object, Array, String, Number))
+import Automation.Json (Value (Object, Array, String, Number), encode)
 import qualified Automation.Gemini as Gemini
 
 tests :: TestTree
@@ -24,6 +26,8 @@ tests = testGroup "Gemini"
   , parseResponseTextTests
   , extractTextTests
   , overrideModelChainTests
+  , supportsSystemInstructionTests
+  , buildRequestBodyTests
   , propertyTests
   ]
 
@@ -407,6 +411,60 @@ overrideModelChainTests = testGroup "overrideModelChain"
       let defaultChain = Gemini.Gemini25Flash :| [Gemini.Gemini20Flash, Gemini.Gemini25Flash]
           result = Gemini.overrideModelChain (Just "gemini-2.5-flash") defaultChain
       in NE.toList result @?= [Gemini.Gemini25Flash, Gemini.Gemini20Flash]
+  ]
+
+supportsSystemInstructionTests :: TestTree
+supportsSystemInstructionTests = testGroup "supportsSystemInstruction"
+  [ testCase "Gemma3 does not support system instruction" $
+      Gemini.supportsSystemInstruction Gemini.Gemma3 @?= False
+
+  , testCase "Gemini25Flash supports system instruction" $
+      Gemini.supportsSystemInstruction Gemini.Gemini25Flash @?= True
+
+  , testCase "Gemini25FlashLite supports system instruction" $
+      Gemini.supportsSystemInstruction Gemini.Gemini25FlashLite @?= True
+
+  , testCase "Gemini31FlashLite supports system instruction" $
+      Gemini.supportsSystemInstruction Gemini.Gemini31FlashLite @?= True
+
+  , testCase "Gemini3Flash supports system instruction" $
+      Gemini.supportsSystemInstruction Gemini.Gemini3Flash @?= True
+
+  , testCase "Gemini20Flash supports system instruction" $
+      Gemini.supportsSystemInstruction Gemini.Gemini20Flash @?= True
+
+  , testCase "Gemini31FlashImage supports system instruction" $
+      Gemini.supportsSystemInstruction Gemini.Gemini31FlashImage @?= True
+
+  , testCase "Custom model supports system instruction" $
+      Gemini.supportsSystemInstruction (Gemini.Custom "my-model") @?= True
+  ]
+
+buildRequestBodyTests :: TestTree
+buildRequestBodyTests = testGroup "buildRequestBody"
+  [ testCase "without system instruction omits system_instruction field" $
+      let body = Gemini.buildRequestBody Nothing "hello" Gemini.defaultGenerationConfig
+          encoded = TE.decodeUtf8 (LBS.toStrict (encode body))
+      in assertBool "should not contain system_instruction"
+           (not (T.isInfixOf "system_instruction" encoded))
+
+  , testCase "with system instruction includes system_instruction field" $
+      let body = Gemini.buildRequestBody (Just "You are helpful") "hello" Gemini.defaultGenerationConfig
+          encoded = TE.decodeUtf8 (LBS.toStrict (encode body))
+      in assertBool "should contain system_instruction"
+           (T.isInfixOf "system_instruction" encoded)
+
+  , testCase "prompt text appears in contents" $
+      let body = Gemini.buildRequestBody Nothing "test prompt" Gemini.defaultGenerationConfig
+          encoded = TE.decodeUtf8 (LBS.toStrict (encode body))
+      in assertBool "should contain prompt text"
+           (T.isInfixOf "test prompt" encoded)
+
+  , testCase "system instruction text appears in encoded body" $
+      let body = Gemini.buildRequestBody (Just "system text here") "user text" Gemini.defaultGenerationConfig
+          encoded = TE.decodeUtf8 (LBS.toStrict (encode body))
+      in assertBool "should contain system instruction text"
+           (T.isInfixOf "system text here" encoded)
   ]
 
 propertyTests :: TestTree

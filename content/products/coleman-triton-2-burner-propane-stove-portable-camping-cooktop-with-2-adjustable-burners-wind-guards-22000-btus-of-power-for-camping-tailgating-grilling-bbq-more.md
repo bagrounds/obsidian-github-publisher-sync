@@ -7,11 +7,12 @@ share: true
 affiliate link: https://amzn.to/4nbgxPW
 CTA: 🍔 Grill up goodness.
 link_analysis_model: gemini-3.1-flash-lite-preview
-link_analysis_time: 2026-04-03T00:00:00Z
+link_analysis_time: 2026-04-14T00:00:00Z
 force_analyze_links: false
 image_date: 2026-04-11T10:17:33Z
 image_model: "@cf/black-forest-labs/flux-1-schnell"
 image_prompt: A high-angle, close-up shot of a Coleman Triton stove set up on a rustic wooden picnic table in a sun-dappled forest clearing. The stove’s lid and side wind guards are open, revealing two blue, vibrant flames flickering beneath a stainless steel skillet sizzling with a colorful breakfast scramble. A small green propane cylinder is attached to the side. The background is softly blurred, showing pine trees and golden morning light filtering through the canopy, suggesting a peaceful, crisp camping atmosphere. The focus is sharp on the texture of the stove’s metal and the steam rising from the pan, capturing an inviting, adventurous, and cozy outdoor cooking experience.
+link_analysis_version: "2"
 ---
 [Home](../index.md) > [Products](./index.md)  
 # 🔥💨🏕️ Coleman Triton 2-Burner Propane Stove, Portable Camping Cooktop with 2 Adjustable Burners & Wind Guards, 22,000 BTUs of Power for Camping, Tailgating, Grilling, BBQ, & More  

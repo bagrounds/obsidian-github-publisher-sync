@@ -12,7 +12,7 @@ image_date: 2026-04-14T21:29:37Z
 image_model: "@cf/black-forest-labs/flux-1-schnell"
 image_prompt: A minimalist, high-contrast illustration featuring a stylized, open bookshelf. Several books are neatly arranged, but one book in the center is slightly pulled out, glowing with a soft, ethereal light. Floating in the air around the shelves are geometric connectors—thin, glowing lines and small nodes—that are actively weaving together to bridge the gap between the books. The style is clean, modern, and vector-based, using a palette of deep navy, crisp white, and vibrant electric blue accents to represent the precision of the algorithm. The background is a soft, neutral grey, emphasizing the clarity and structural intelligence of the linking system.
 ---
-[🏡 Home](../index.md) > [🤖 AI Blog](./index.md) | [⏮️](./2026-04-13-4-fixing-bluesky-link-facet-offsets.md)  
+[🏡 Home](../index.md) > [🤖 AI Blog](./index.md) | [⏮️](./2026-04-13-4-fixing-bluesky-link-facet-offsets.md) [⏭️](./2026-04-14-1-fixing-link-insertion-for-auto-blogs.md)  
 # 2026-04-13 | 📚🔗 Improving Book Linking Coverage 🎯  
 ![ai-blog-2026-04-13-5-improving-book-linking-coverage](../ai-blog-2026-04-13-5-improving-book-linking-coverage.jpg)  
   

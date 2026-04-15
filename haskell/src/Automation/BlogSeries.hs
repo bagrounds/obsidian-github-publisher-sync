@@ -3,6 +3,7 @@ module Automation.BlogSeries
   , generateSeriesIndex
   , extractSlug
   , parseGeneratedPost
+  , containsSystemPrompt
   , appendModelSignature
   , updatePreviousPost
   ) where
@@ -80,6 +81,20 @@ parseGeneratedPost raw =
     else case find isHeading (T.lines trimmed) of
       Nothing -> Nothing
       Just h  -> Just (trimmed, extractHeadingText h)
+
+-- | Detect when AI output echoes the system prompt by sampling fingerprint
+-- substrings from the prompt at the 25%, 50%, and 75% positions.
+-- If any 200-character fingerprint appears verbatim in the output,
+-- the post is rejected as a system prompt echo.
+containsSystemPrompt :: Text -> Text -> Bool
+containsSystemPrompt systemPrompt generatedPost
+  | T.length systemPrompt < fingerprintLength = False
+  | otherwise = any (`T.isInfixOf` generatedPost) fingerprints
+  where
+    fingerprintLength = 200
+    promptLength = T.length systemPrompt
+    samplePositions = [promptLength `div` 4, promptLength `div` 2, (3 * promptLength) `div` 4]
+    fingerprints = fmap (\position -> T.take fingerprintLength (T.drop position systemPrompt)) samplePositions
 
 appendModelSignature :: Text -> Text -> Text
 appendModelSignature body model = body <> "\n\n✍️ Written by " <> model

@@ -375,9 +375,9 @@ findInlineData (_ : rest) = findInlineData rest
 describeImageWithGemini
   :: Manager -> Text -> Gemini.Model -> Text -> IO (Either Text Text)
 describeImageWithGemini manager apiKey model content = do
-  let fullPrompt = imageDescriptionSystemPrompt <> "\n\n" <> content
-      req = Gemini.Request
-        { Gemini.grPrompt = fullPrompt
+  let req = Gemini.Request
+        { Gemini.grPrompt = content
+        , Gemini.grSystemInstruction = Just imageDescriptionSystemPrompt
         , Gemini.grModel = model
         , Gemini.grApiKey = Secret apiKey
         , Gemini.grGenerationConfig = Gemini.defaultGenerationConfig

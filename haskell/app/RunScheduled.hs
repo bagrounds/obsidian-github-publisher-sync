@@ -43,6 +43,7 @@ import Automation.BlogPrompt
 import Automation.BlogSeries
   ( appendModelSignature
   , buildBlogContext
+  , containsSystemPrompt
   , generateSeriesIndex
   , parseGeneratedPost
   , updatePreviousPost
@@ -106,9 +107,8 @@ import Automation.Text (stripCodeFences)
 
 callGeminiForGenerator :: Context.AppContext -> NonEmpty Gemini.Model -> (Text, Text) -> IO (Text, Text)
 callGeminiForGenerator context models (systemPrompt, userPrompt) = do
-  let combinedPrompt = systemPrompt <> "\n\n" <> userPrompt
-      config = Gemini.defaultGenerationConfig { Gemini.gcTemperature = 0.9, Gemini.gcMaxOutputTokens = 2048 }
-  result <- Gemini.generateContentWithFallback (Context.httpManager context) models combinedPrompt (Context.geminiApiKey context) config
+  let config = Gemini.defaultGenerationConfig { Gemini.gcTemperature = 0.9, Gemini.gcMaxOutputTokens = 2048 }
+  result <- Gemini.generateContentWithFallback (Context.httpManager context) models (Just systemPrompt) userPrompt (Context.geminiApiKey context) config
   case result of
     Left err -> failTask $ "Gemini API error: " <> T.pack (show err)
     Right response -> pure (Gemini.responseText response, Gemini.modelToText (Gemini.responseModel response))
@@ -210,15 +210,16 @@ runBlogSeries context seriesMap runConfigs seriesId = do
         Left reason -> failTask $ "Blog context build failed: " <> reason
         Right blogContext -> do
           let (systemPrompt, userPrompt) = buildBlogPrompt blogContext
-              combinedPrompt = systemPrompt <> "\n\n" <> userPrompt
               genConfig = Gemini.defaultGenerationConfig { Gemini.gcTemperature = 0.9, Gemini.gcMaxOutputTokens = 8192 }
 
-          result <- Gemini.generateContentWithFallback manager models combinedPrompt apiKey genConfig
+          result <- Gemini.generateContentWithFallback manager models (Just systemPrompt) userPrompt apiKey genConfig
           case result of
             Left err -> failTask $ "Blog generation failed: " <> T.pack (show err)
             Right response -> do
               let rawText = stripCodeFences (Gemini.responseText response)
                   usedModel = Gemini.modelToText (Gemini.responseModel response)
+              when (containsSystemPrompt systemPrompt rawText) $
+                failTask "Generated post echoes the system prompt (AGENTS.md) — rejecting"
               case parseGeneratedPost rawText of
                 Nothing -> failTask "Failed to parse generated blog post"
                 Just (body, rawTitle) -> do

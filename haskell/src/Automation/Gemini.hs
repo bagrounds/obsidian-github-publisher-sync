@@ -217,10 +217,11 @@ defaultGenerationConfig = GenerationConfig
   }
 
 data Request = Request
-  { grPrompt           :: Text
-  , grModel            :: Model
-  , grApiKey           :: Secret
-  , grGenerationConfig :: GenerationConfig
+  { grPrompt             :: Text
+  , grSystemInstruction  :: Maybe Text
+  , grModel              :: Model
+  , grApiKey             :: Secret
+  , grGenerationConfig   :: GenerationConfig
   } deriving (Show, Eq)
 
 data Response = Response
@@ -234,11 +235,16 @@ geminiEndpoint model =
     <> modelToText model
     <> ":generateContent"
 
-buildRequestBody :: Text -> GenerationConfig -> Value
-buildRequestBody prompt config = object
-  [ "contents" .= [ object [ "parts" .= [ object [ "text" .= prompt ] ] ] ]
-  , "generationConfig" .= config
-  ]
+buildRequestBody :: Maybe Text -> Text -> GenerationConfig -> Value
+buildRequestBody systemInstruction prompt config =
+  let base =
+        [ "contents" .= [ object [ "parts" .= [ object [ "text" .= prompt ] ] ] ]
+        , "generationConfig" .= config
+        ]
+      fields = case systemInstruction of
+        Nothing -> base
+        Just si -> ("system_instruction" .= object [ "parts" .= [ object [ "text" .= si ] ] ]) : base
+  in object fields
 
 parseResponseText :: LBS.ByteString -> Either Error Text
 parseResponseText body =
@@ -266,7 +272,7 @@ generateContent :: Manager -> Request -> IO (Either Error Response)
 generateContent manager req = do
   let url = T.unpack $ geminiEndpoint (grModel req) <> "?key=" <> unSecret (grApiKey req)
   initReq <- parseRequest url
-  let body = encode $ buildRequestBody (grPrompt req) (grGenerationConfig req)
+  let body = encode $ buildRequestBody (grSystemInstruction req) (grPrompt req) (grGenerationConfig req)
   let httpReq = initReq
         { HTTP.method = "POST"
         , HTTP.requestBody = RequestBodyLBS body
@@ -289,10 +295,11 @@ generateContent manager req = do
       let (apiStatus, message) = parseErrorBody (responseBody response)
       in pure $ Left $ HttpError code apiStatus message
 
-generateContentWithFallback :: Manager -> NonEmpty Model -> Text -> Secret -> GenerationConfig -> IO (Either Error Response)
-generateContentWithFallback manager (model :| fallbacks) prompt apiKey config = do
+generateContentWithFallback :: Manager -> NonEmpty Model -> Maybe Text -> Text -> Secret -> GenerationConfig -> IO (Either Error Response)
+generateContentWithFallback manager (model :| fallbacks) systemInstruction prompt apiKey config = do
   result <- generateContent manager Request
     { grPrompt = prompt
+    , grSystemInstruction = systemInstruction
     , grModel = model
     , grApiKey = apiKey
     , grGenerationConfig = config
@@ -303,4 +310,4 @@ generateContentWithFallback manager (model :| fallbacks) prompt apiKey config = 
       [] -> pure $ Left $ AllModelsFailed model err
       (next : rest) -> do
         putStrLn $ "⚠️ Model " <> T.unpack (modelToText model) <> " failed, trying next fallback..."
-        generateContentWithFallback manager (next :| rest) prompt apiKey config
+        generateContentWithFallback manager (next :| rest) systemInstruction prompt apiKey config

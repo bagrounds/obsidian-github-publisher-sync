@@ -7,12 +7,13 @@ share: true
 affiliate link: https://amzn.to/3KiCo9S
 CTA: 📺 Question entertainment.
 force_analyze_links: false
-link_analysis_time: 2026-03-22T23:36:04.473Z
+link_analysis_time: 2026-04-15T00:00:00Z
 link_analysis_model: gemini-3.1-flash-lite-preview
 updated: 2026-03-24T03:01:59.394Z
 image_date: 2026-04-14T09:44:30Z
 image_model: "@cf/black-forest-labs/flux-1-schnell"
 image_prompt: "A stylized human head, rendered in profile, features a glowing, vibrant television screen where the brain would be. The screen displays a rapidly changing, abstract montage of colorful, blurred entertainment elements: a game show spinner, a flickering news graphic, a musical note, and a laugh track waveform. Below the head, a stack of worn, classical books appears to be subtly dissolving or turning to dust, their pages fading into pixelated fragments. The overall palette contrasts the cool, artificial glow of the screen with the warm, muted tones of the disintegrating print, conveying a sense of thought being replaced by fleeting amusement."
+link_analysis_version: "2"
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 📺💀 Amusing Ourselves to Death: Public Discourse in the Age of Show Business  

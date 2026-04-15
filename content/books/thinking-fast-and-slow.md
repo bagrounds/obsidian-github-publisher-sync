@@ -10,11 +10,16 @@ affiliate link: https://amzn.to/4jQ0Tax
 CTA: 🧠 Understand your mind.
 updated: 2026-03-20T08:12:44.055Z
 force_analyze_links: false
-link_analysis_time: 2026-03-22T23:32:05.309Z
+link_analysis_time: 2026-04-14T00:00:00Z
 link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_version: "2"
+image_date: 2026-04-15T07:41:35Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A stylized human brain, split vertically down the middle. The left half, representing System 1, is vibrant and chaotic, rendered with energetic, swirling brushstrokes in warm reds and oranges. A blurry, fast-moving silhouette of a rabbit darts across this side. The right half, representing System 2, is cool and composed, depicted with precise, geometric lines in blues and greens. A thoughtful, slow-moving turtle is subtly integrated into this side. A subtle, winding path visually connects the two halves, symbolizing the interplay and occasional conflict between intuitive and deliberate thought processes. The overall aesthetic is clean yet dynamic, contrasting speed and deliberation.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🤔🐇🐢 Thinking, Fast and Slow  
+![books-thinking-fast-and-slow](../books-thinking-fast-and-slow.jpg)  
 [🛒 Thinking, Fast and Slow. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4jQ0Tax)  
   
 ## 🤖 AI Summary  

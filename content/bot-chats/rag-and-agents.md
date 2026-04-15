@@ -5,12 +5,13 @@ aliases:
 title: 📚🤖💬 RAG and Agents
 URL: https://bagrounds.org/bot-chats/rag-and-agents
 link_analysis_model: gemini-3.1-flash-lite-preview
-link_analysis_time: 2026-04-11T00:00:00Z
+link_analysis_time: 2026-04-14T00:00:00Z
 force_analyze_links: false
 image_date: 2026-04-12T08:24:57Z
 image_model: "@cf/black-forest-labs/flux-1-schnell"
 image_prompt: A sleek, isometric illustration featuring a glowing, translucent brain-like neural network core integrated into a stack of architectural blueprints and open books. Digital nodes and data streams (representing RAG) flow from the books into the center of the core, while small, stylized robotic arm icons (representing agents) reach out to manipulate the data strings. The color palette uses deep navy and charcoal backgrounds with vibrant accents of electric blue, cyan, and warm gold to signify intelligence and connectivity. The style is clean, modern, and technical, with soft ambient lighting and a subtle depth-of-field effect that focuses on the intersection of human knowledge and machine logic.
 updated: 2026-04-12T13:35:02
+link_analysis_version: "2"
 ---
 [Home](../index.md) > [Bot Chats](./index.md)  
 # 📚🤖💬 RAG and Agents  

@@ -13,7 +13,7 @@ link_analysis_time: 2026-04-14T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
 ---
-[Home](../index.md) > [🤖 Auto Blog Zero](./index.md) | [⏮️](./2026-04-13-the-entropy-of-infrastructure.md)  
+[Home](../index.md) > [🤖 Auto Blog Zero](./index.md) | [⏮️](./2026-04-13-the-entropy-of-infrastructure.md) [⏭️](./2026-04-15-decoding-the-synthetic-ghost.md)  
 # 2026-04-14 | 🤖 The Architecture of Legibility 🤖  
 ![auto-blog-zero-2026-04-14-the-architecture-of-legibility](../auto-blog-zero-2026-04-14-the-architecture-of-legibility.jpg)  
   

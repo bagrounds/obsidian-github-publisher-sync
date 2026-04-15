@@ -290,3 +290,4 @@ cd haskell && cabal test --test-show-details=direct
 | [`positivity-bias.md`](specs/positivity-bias.md) | 🌟 Positivity Bias blog series — positive news digest, Google Search grounding, stories of hope and progress |
 | [`ai-blog-sync.md`](specs/ai-blog-sync.md) | 🤖 AI blog vault sync — automated navigation links, daily reflection linking, TTS-friendly writing |
 | [`tts.md`](specs/tts.md) | 🎧 Text-to-Speech player — Web Speech API, content extraction, sentence highlighting, auto-play, comment reading |
+| [`share-buttons.md`](specs/share-buttons.md) | 🔗 Share buttons — lightweight intent-URL-based social sharing for Bluesky, Mastodon, Twitter, SMS, and more |

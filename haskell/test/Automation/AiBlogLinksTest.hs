@@ -12,6 +12,7 @@ import System.IO.Temp (withSystemTempDirectory)
 
 import Automation.AiBlogLinks
 import Automation.BlogSeriesConfig (BlogSeriesConfig (..))
+import Automation.Title (unTitle)
 
 tests :: TestTree
 tests = testGroup "AiBlogLinks"
@@ -181,7 +182,7 @@ buildReflectionLinksTests = testGroup "buildReflectionLinks"
         case links of
           ((relPath, title, date):_) -> do
             relPath @?= "ai-blog/2026-04-03-1-my-post.md"
-            title @?= "My Post Title"
+            unTitle title @?= "My Post Title"
             date @?= "2026-04-03"
           [] -> assertBool "should have at least one link" False
   , testCase "includes both modified and unmodified posts" $

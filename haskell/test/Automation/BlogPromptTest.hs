@@ -13,6 +13,7 @@ import Automation.BlogPrompt
 import Automation.PacificTime (formatDay)
 import Automation.BlogSeriesConfig (BlogSeriesConfig (..), lookupSeriesIn)
 import Automation.BlogSeriesDiscovery (deriveBlogSeriesConfig, DiscoveredSeries (..))
+import Automation.Wikilink (buildBackLink, buildForwardLink)
 import qualified Automation.Gemini as Gemini
 import Data.List.NonEmpty (NonEmpty ((:|)))
 import qualified Data.Map.Strict as Map

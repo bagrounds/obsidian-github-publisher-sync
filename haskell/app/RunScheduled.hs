@@ -34,7 +34,6 @@ import Automation.BlogPrompt
   ( DisplayTitle (..)
   , Slug (..)
   , assembleFrontmatter
-  , buildBackLink
   , buildBlogPrompt
   , buildDisplayTitle
   , generateSlug
@@ -93,6 +92,7 @@ import Automation.Scheduler
   , taskIdToText
   )
 import Automation.Types (Secret (..), unRelativePath, mkRelativePath, mkTitle)
+import Automation.Wikilink (buildBackLink)
 import qualified Automation.Context as Context
 import qualified Automation.InternalLinking as IL
 import Automation.SocialPosting (autoPost)
@@ -324,7 +324,8 @@ runBlogSeries context seriesMap runConfigs seriesId = do
                       regenFilenameNoExt = case mRegen of
                         Just r  -> Just (T.pack (dropExtension r))
                         Nothing -> Nothing
-                  _ <- updateDailyReflection vaultDir todayText series filenameNoExt displayTitle regenFilenameNoExt
+                  postTitle <- either (\e -> failTask $ "Invalid display title: " <> e) pure (mkTitle displayTitle)
+                  _ <- updateDailyReflection vaultDir todayText series filenameNoExt postTitle regenFilenameNoExt
 
                   let postRelPath = T.unpack seriesId </> T.unpack filename
                       postLocalPath = repoRoot </> postRelPath

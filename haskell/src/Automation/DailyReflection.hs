@@ -24,6 +24,7 @@ import System.FilePath ((</>), dropExtension)
 import Automation.Frontmatter (quoteYamlValue)
 
 import Automation.BlogSeriesConfig (BlogSeriesConfig (..))
+import Automation.Title (Title, unTitle)
 import Automation.Wikilink (formatWikilink)
 import qualified Automation.Platforms.Bluesky as Bluesky
 import qualified Automation.Platforms.Mastodon as Mastodon
@@ -72,9 +73,9 @@ buildSeriesSectionHeading :: BlogSeriesConfig -> Text
 buildSeriesSectionHeading series =
   "## " <> formatWikilink (bscId series <> "/index") (bscIcon series <> " " <> bscName series)
 
-buildPostLink :: Text -> Text -> Text -> Text
+buildPostLink :: Text -> Text -> Title -> Text
 buildPostLink seriesId filenameNoExt displayTitle =
-  "- " <> formatWikilink (seriesId <> "/" <> filenameNoExt) displayTitle
+  "- " <> formatWikilink (seriesId <> "/" <> filenameNoExt) (unTitle displayTitle)
 
 addForwardLink :: Text -> Text -> Text
 addForwardLink content targetDate =
@@ -114,7 +115,7 @@ insertNewSection content sectionHeading postLink =
     Nothing ->
       T.stripEnd content <> "\n\n" <> sectionBlock <> "\n"
 
-insertPostLink :: Text -> BlogSeriesConfig -> Text -> Text -> Maybe Text -> Text
+insertPostLink :: Text -> BlogSeriesConfig -> Text -> Title -> Maybe Text -> Text
 insertPostLink content series filenameNoExt displayTitle replacingFilenameNoExt =
   let linkTarget = "[[" <> bscId series <> "/" <> filenameNoExt <> "|"
   in if T.isInfixOf linkTarget content
@@ -183,7 +184,7 @@ ensureDailyReflection reflectionsDir today = do
       pure EnsureReflectionResult
         { errCreated = True, errPreviousDate = previousDate, errForwardLinkAdded = forwardLinkAdded }
 
-updateDailyReflection :: FilePath -> Text -> BlogSeriesConfig -> Text -> Text -> Maybe Text -> IO UpdateReflectionResult
+updateDailyReflection :: FilePath -> Text -> BlogSeriesConfig -> Text -> Title -> Maybe Text -> IO UpdateReflectionResult
 updateDailyReflection vaultDir today series postFilename postTitle replacingFilename = do
   let reflectionsDir = vaultDir </> "reflections"
   EnsureReflectionResult{..} <- ensureDailyReflection reflectionsDir today

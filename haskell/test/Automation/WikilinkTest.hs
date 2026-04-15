@@ -1,18 +1,34 @@
 module Automation.WikilinkTest (tests) where
 
 import qualified Data.Text as T
+import Data.Time.LocalTime (TimeOfDay (..))
 import Test.Tasty (TestTree, testGroup)
 import Test.Tasty.HUnit (testCase, (@?=))
 import Test.Tasty.QuickCheck (testProperty)
 import qualified Test.QuickCheck as QC
 
-import Automation.Wikilink (formatWikilink)
+import Automation.BlogSeriesConfig (BlogSeriesConfig (..))
+import Automation.Wikilink (formatWikilink, buildBackLink, buildForwardLink)
 
 tests :: TestTree
 tests = testGroup "Wikilink"
   [ formatWikilinkTests
+  , buildBackLinkTests
+  , buildForwardLinkTests
   , propertyTests
   ]
+
+sampleSeries :: BlogSeriesConfig
+sampleSeries = BlogSeriesConfig
+  { bscId           = "chickie-loo"
+  , bscName         = "Chickie Loo"
+  , bscIcon         = "🐔"
+  , bscAuthor       = "[[chickie-loo]]"
+  , bscBaseUrl      = "https://bagrounds.org/chickie-loo"
+  , bscPriorityUser = Just "ChickieLoo"
+  , bscNavLink      = "[[index|Home]] > [[chickie-loo/index|🐔 Chickie Loo]]"
+  , bscScheduleTime = TimeOfDay 7 0 0
+  }
 
 formatWikilinkTests :: TestTree
 formatWikilinkTests = testGroup "formatWikilink"
@@ -31,6 +47,26 @@ formatWikilinkTests = testGroup "formatWikilink"
   , testCase "formats blog post link with full display title" $
       formatWikilink "the-noise/2026-04-14-my-post" "2026-04-14 | 📰 My Post 📰"
         @?= "[[the-noise/2026-04-14-my-post|2026-04-14 | 📰 My Post 📰]]"
+  ]
+
+buildBackLinkTests :: TestTree
+buildBackLinkTests = testGroup "buildBackLink"
+  [ testCase "builds back link with series prefix" $
+      buildBackLink sampleSeries "2026-03-25-test"
+        @?= "[[chickie-loo/2026-03-25-test|⏮️]]"
+  , testCase "strips .md extension" $
+      buildBackLink sampleSeries "2026-03-25-test.md"
+        @?= "[[chickie-loo/2026-03-25-test|⏮️]]"
+  ]
+
+buildForwardLinkTests :: TestTree
+buildForwardLinkTests = testGroup "buildForwardLink"
+  [ testCase "builds forward link with series prefix" $
+      buildForwardLink sampleSeries "2026-03-27-test"
+        @?= "[[chickie-loo/2026-03-27-test|⏭️]]"
+  , testCase "strips .md extension" $
+      buildForwardLink sampleSeries "2026-03-27-test.md"
+        @?= "[[chickie-loo/2026-03-27-test|⏭️]]"
   ]
 
 propertyTests :: TestTree

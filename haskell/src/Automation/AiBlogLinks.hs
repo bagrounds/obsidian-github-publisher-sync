@@ -22,9 +22,10 @@ import Data.Time.LocalTime (midnight)
 import System.Directory (doesDirectoryExist, doesFileExist, listDirectory)
 import System.FilePath ((</>))
 
-import Automation.BlogPrompt (buildBackLink, buildForwardLink)
 import Automation.BlogSeriesConfig (BlogSeriesConfig (..))
 import Automation.Frontmatter (parseFrontmatter)
+import Automation.Title (Title, mkTitle)
+import Automation.Wikilink (buildBackLink, buildForwardLink)
 
 aiBlogConfig :: BlogSeriesConfig
 aiBlogConfig = BlogSeriesConfig
@@ -139,14 +140,17 @@ extractAiBlogTitle aiBlogDir filename = do
         Nothing    -> fromMaybe filename (T.stripSuffix ".md" filename)
     else pure (fromMaybe filename (T.stripSuffix ".md" filename))
 
-buildReflectionLinks :: FilePath -> [NavLinkResult] -> IO [(Text, Text, Text)]
+buildReflectionLinks :: FilePath -> [NavLinkResult] -> IO [(Text, Title, Text)]
 buildReflectionLinks aiBlogDir results = do
   entries <- traverse (buildEntry aiBlogDir) results
-  pure $ filter (\(_, _, d) -> not (T.null d)) entries
+  pure $ catMaybes entries
 
-buildEntry :: FilePath -> NavLinkResult -> IO (Text, Text, Text)
+buildEntry :: FilePath -> NavLinkResult -> IO (Maybe (Text, Title, Text))
 buildEntry aiBlogDir result = do
-  title <- extractAiBlogTitle aiBlogDir (nlrFilename result)
+  titleText <- extractAiBlogTitle aiBlogDir (nlrFilename result)
   let relPath = "ai-blog/" <> nlrFilename result
       date = fromMaybe "" (extractPostDate (nlrFilename result))
-  pure (relPath, title, date)
+  pure $ case (T.null date, mkTitle titleText) of
+    (True, _)                     -> Nothing
+    (_, Left _)                   -> Nothing
+    (False, Right validTitle)     -> Just (relPath, validTitle, date)

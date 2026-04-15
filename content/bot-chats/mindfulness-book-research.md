@@ -5,11 +5,12 @@ aliases:
 title: 🧘📚🔍 Mindfulness Book Research
 URL: https://bagrounds.org/bot-chats/mindfulness-book-research
 link_analysis_model: gemini-3.1-flash-lite-preview
-link_analysis_time: 2026-04-06T00:00:00Z
+link_analysis_time: 2026-04-15T00:00:00Z
 force_analyze_links: false
 image_date: 2026-04-12T05:07:09Z
 image_model: "@cf/black-forest-labs/flux-1-schnell"
 image_prompt: A serene, top-down view of a wooden desk featuring an open, classic hardcover book. Beside the book sits a steaming ceramic mug of tea and a small, smooth river stone. Soft, natural sunlight filters through a nearby window, casting long, gentle shadows across the table. In the background, a pair of eyeglasses rests on a closed notebook, suggesting a quiet study session. The overall color palette is warm and earthy, utilizing soft browns, creams, and sage greens to evoke a sense of calm, focus, and intellectual discovery. The composition is clean and minimalist, emphasizing the quiet intersection of research and mindfulness.
+link_analysis_version: "2"
 ---
 [Home](../index.md) > [Bot Chats](./index.md)  
 # 🧘📚🔍 Mindfulness Book Research  

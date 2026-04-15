@@ -5,12 +5,13 @@ aliases:
 title: 🐍🏎️📦 uv
 URL: https://bagrounds.org/software/uv
 link_analysis_model: gemini-3.1-flash-lite-preview
-link_analysis_time: 2026-04-09T00:00:00Z
+link_analysis_time: 2026-04-14T00:00:00Z
 force_analyze_links: false
 image_date: 2026-04-11T08:19:28Z
 image_model: "@cf/black-forest-labs/flux-1-schnell"
 image_prompt: A high-speed, minimalist illustration featuring a stylized, metallic snake—representing Python—coiled dynamically around a futuristic, aerodynamic racing car. The car is sleek, with motion blur streaks trailing behind it to emphasize extreme velocity. Surrounding the scene are abstract, glowing geometric blocks that resemble modular components or shipping containers, symbolizing organized packages. The color palette is a sophisticated blend of deep obsidian, vibrant electric blue, and sharp neon green accents. The lighting is dramatic and cinematic, with sharp highlights on the metallic surfaces of the snake and car, conveying precision, performance, and modern engineering. The background is a clean, dark gradient, ensuring the central elements pop with a sense of high-tech efficiency and speed.
 updated: 2026-04-11T11:18:58
+link_analysis_version: "2"
 ---
 [Home](../index.md) > [Software](./index.md)  
 # [🐍🏎️📦 uv](https://docs.astral.sh/uv)  

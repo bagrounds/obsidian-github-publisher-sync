@@ -4,12 +4,13 @@ aliases:
   - ⁉️🔣🪵 Special Characters In Logs
 title: ⁉️🔣🪵 Special Characters In Logs
 link_analysis_model: gemini-3.1-flash-lite-preview
-link_analysis_time: 2026-04-05T00:00:00Z
+link_analysis_time: 2026-04-14T00:00:00Z
 force_analyze_links: false
 image_date: 2026-04-12T11:18:31Z
 image_model: "@cf/black-forest-labs/flux-1-schnell"
 image_prompt: A high-contrast digital illustration featuring a dark, metallic terminal screen. On the screen, a chaotic jumble of glowing, neon-colored ANSI escape sequences—such as u001b, [37m, and [91m—is mid-transformation, unraveling into clean, orderly white text. Some of the raw code characters are depicted as floating, glitchy pixels, while the decoded text is rendered in a sharp, readable monospaced font. The background is a deep, moody charcoal, emphasizing the vibrant, electric blues, magentas, and warnings of red light emanating from the code. The composition uses a shallow depth of field, focusing on the transition from the messy, abstract noise of the raw log data to the clarity of the processed information.
 updated: 2026-04-13T13:44:41
+link_analysis_version: "2"
 ---
 [Home](../index.md) > [Bot Chats](./index.md)  
 # ⁉️🔣🪵 Special Characters In Logs  

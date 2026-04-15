@@ -5,12 +5,13 @@ aliases:
 title: ✨⚙️ Redis
 URL: https://bagrounds.org/software/redis
 link_analysis_model: gemini-3.1-flash-lite-preview
-link_analysis_time: 2026-04-07T00:00:00Z
+link_analysis_time: 2026-04-14T00:00:00Z
 force_analyze_links: false
 image_date: 2026-04-11T07:26:57Z
 image_model: "@cf/black-forest-labs/flux-1-schnell"
 image_prompt: A high-contrast, isometric illustration featuring a glowing, translucent 3D cube floating in a dark, minimalist digital space. Inside the cube, complex geometric shapes—spheres, interconnected nodes, and flowing ribbons of light—represent data structures moving at high velocity. Surrounding the cube are faint, circular energy rings that suggest rapid processing and networking. The color palette uses deep navy and charcoal backgrounds contrasted by vibrant neon red and electric white highlights to symbolize energy, speed, and memory. The overall style is clean, modern, and tech-focused, capturing the essence of high-speed data retrieval and seamless performance without any clutter.
 updated: 2026-04-11T07:28:43
+link_analysis_version: "2"
 ---
 [Home](../index.md) > [Software](./index.md)  
 # ✨⚙️ Redis  

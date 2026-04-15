@@ -9,9 +9,10 @@ image_date: 2026-04-11T16:03:42Z
 image_model: "@cf/black-forest-labs/flux-1-schnell"
 image_prompt: A warm, sun-drenched bedroom scene viewed from a wide angle. In the center, a large, plush California king bed with rumpled, soft white linens sits invitingly. Sunlight streams through a large, clean window, casting soft shadows across newly finished wooden floors. To the side, a small, rustic wooden nightstand holds a steaming ceramic mug of coffee and a pair of work gloves, hinting at the balance between construction and comfort. Through the window, a glimpse of a lush, young orchard under a clear blue sky is visible. The color palette is composed of soft neutrals, warm honey-tones from the wood, and gentle morning light, evoking a sense of deep relief, accomplishment, and the peaceful stillness of a first night in a long-awaited sanctuary.
 link_analysis_model: gemini-3.1-flash-lite-preview
-link_analysis_time: 2026-04-11T00:00:00Z
+link_analysis_time: 2026-04-14T00:00:00Z
 force_analyze_links: false
 updated: 2026-04-11T19:24:54
+link_analysis_version: "2"
 ---
 [Home](../index.md) > [🐔 Chickie Loo](./index.md) | [⏮️](./2026-04-10-the-sweetest-sound-of-home.md) [⏭️](./2026-04-12-a-night-among-the-stars-and-studs.md)  
 # 2026-04-11 | 🐔 🏠 Our First Night Home 🐔  

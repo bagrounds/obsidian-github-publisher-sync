@@ -6,11 +6,12 @@ URL: https://bagrounds.org/books/40-days-to-positive-change-daily-support-to-cre
 share: true
 affiliate link: https://amzn.to/3Fm62Jb
 link_analysis_model: gemini-3.1-flash-lite-preview
-link_analysis_time: 2026-04-07T00:00:00Z
+link_analysis_time: 2026-04-14T00:00:00Z
 force_analyze_links: false
 image_date: 2026-04-12T15:19:24Z
 image_model: "@cf/black-forest-labs/flux-1-schnell"
 image_prompt: A minimalist, high-angle composition featuring a clean, light-colored desk surface. A single, vibrant green seedling sprouts from a small, elegant ceramic pot, symbolizing growth and new beginnings. Arranged in a neat, circular arc around the pot are 40 small, polished river stones, representing the 40-day journey of habit formation. Soft, warm morning sunlight streams across the scene, creating gentle shadows and an atmosphere of calm, focused productivity. The overall aesthetic is airy, serene, and modern, utilizing a palette of soft whites, earthy grays, and the singular, hopeful pop of green from the plant.
+link_analysis_version: "2"
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🗓️➕ 40 Days to Positive Change: Daily Support to Create a New Habit  

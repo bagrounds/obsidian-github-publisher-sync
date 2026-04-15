@@ -5,11 +5,12 @@ aliases:
 title: 📏💻✅ Engineering as Specification
 URL: https://bagrounds.org/bot-chats/engineering-as-specification
 link_analysis_model: gemini-3.1-flash-lite-preview
-link_analysis_time: 2026-04-06T00:00:00Z
+link_analysis_time: 2026-04-15T00:00:00Z
 force_analyze_links: false
 image_date: 2026-04-11T21:18:18Z
 image_model: "@cf/black-forest-labs/flux-1-schnell"
 image_prompt: A minimalist, high-contrast illustration depicting the concept of Engineering as Specification. The scene features a series of concentric, glowing geometric rings (representing nested scopes) floating in a deep, dark space. At the center of these rings sits a clean, crystalline structure that represents a refined principle or architecture. Faint, ethereal lines of light connect the rings to a stylized, abstract digital blueprint on one side, suggesting the flow from high-level specification to concrete engineering. The color palette uses deep navy and charcoal for the background, with vibrant, sharp neon cyan and amber highlights to emphasize the precision of the principles. The composition is balanced and symmetrical, evoking a sense of architectural clarity, structural integrity, and modern technological sophistication.
+link_analysis_version: "2"
 ---
 [Home](../index.md) > [Bot Chats](./index.md)  
 # 📏💻✅ Engineering as Specification  

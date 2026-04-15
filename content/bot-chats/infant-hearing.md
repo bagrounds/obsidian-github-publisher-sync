@@ -5,11 +5,12 @@ aliases:
 title: 👶👂 Infant Hearing
 URL: https://bagrounds.org/bot-chats/infant-hearing
 link_analysis_model: gemini-3.1-flash-lite-preview
-link_analysis_time: 2026-04-07T00:00:00Z
+link_analysis_time: 2026-04-15T00:00:00Z
 force_analyze_links: false
 image_date: 2026-04-12T01:41:47Z
 image_model: "@cf/black-forest-labs/flux-1-schnell"
 image_prompt: A soft, warm-toned illustration featuring a peaceful, sleeping newborn baby lying in a crib. A gentle, stylized glow emanates from a small, soft-tipped clinical probe resting near the baby’s ear, symbolizing the screening process. The background uses a soft, dreamlike gradient of pastel blues and warm creams to evoke a sense of clinical comfort and care. Floating in the air around the baby are subtle, translucent geometric sound waves in light gold, representing the auditory pathway. The composition is clean, minimalist, and centered, focusing on the theme of early health monitoring and developmental support through a soft, modern illustrative style.
+link_analysis_version: "2"
 ---
 [Home](../index.md) > [Bot Chats](./index.md)  
 # 👶👂 Infant Hearing  

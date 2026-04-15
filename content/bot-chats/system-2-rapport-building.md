@@ -5,12 +5,13 @@ aliases:
 title: 🧠🤝 System 2 Rapport Building
 URL: https://bagrounds.org/bot-chats/system-2-rapport-building
 link_analysis_model: gemini-3.1-flash-lite-preview
-link_analysis_time: 2026-04-11T00:00:00Z
+link_analysis_time: 2026-04-14T00:00:00Z
 force_analyze_links: false
 image_date: 2026-04-12T12:17:00Z
 image_model: "@cf/black-forest-labs/flux-1-schnell"
 image_prompt: A split-composition illustration rendered in a clean, modern vector art style. On the left, a chaotic, neon-red System 1 brain is depicted as a jagged, lightning-filled tangle of wires, representing impulsive, rapid-fire snap judgments. A subtle traffic signal glows red nearby. On the right, a serene, cool-blue System 2 brain is shown as a glowing, intricate network of organized, golden clockwork gears and luminous, interconnected neural pathways. A soft, warm light radiates from this side, symbolizing deliberate focus and empathy. Bridging the two sides is a delicate, glowing bridge made of puzzle-piece connections, symbolizing the transition from reactive impulse to conscious rapport. The background is a deep, neutral slate, allowing the contrast between the sharp, chaotic red and the smooth, structured blue-gold to pop visually.
 updated: 2026-04-13T19:42:49
+link_analysis_version: "2"
 ---
 [Home](../index.md) > [Bot Chats](./index.md)  
 # 🧠🤝 System 2 Rapport Building  

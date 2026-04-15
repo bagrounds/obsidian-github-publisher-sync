@@ -12,9 +12,13 @@ updated: 2026-03-20T14:17:57.557Z
 link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-01T00:00:00Z
 force_analyze_links: false
+image_date: 2026-04-15T07:41:29Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A minimalist illustration featuring a serene, gender-neutral silhouette seated in a meditative pose. Above them, a vibrant, swirling nebula of deep blues, purples, and cosmic dust softly glows, representing the universal source of creativity. Wisps of golden and amber light gently descend from the nebula, subtly intertwining with the figure, suggesting a seamless flow of inspiration and connection. The figures head is subtly illuminated, hinting at inner wisdom and presence. The background is a gradient of calming twilight hues, enhancing the ethereal and contemplative atmosphere. The overall impression is one of quiet power, natural flow, and profound connection to an invisible creative current.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # ✨🎭🧘‍♂️🌌 The Creative Act: A Way of Being  
+![books-the-creative-act](../books-the-creative-act.jpg)  
 [🛒 The Creative Act: A Way of Being. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4dRHNiL)  
   
 ## 🤖 AI Summary  

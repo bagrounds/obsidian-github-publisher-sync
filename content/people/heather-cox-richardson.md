@@ -8,8 +8,9 @@ title: 🏛️🇺🇸📖 Heather Cox Richardson
 URL: https://bagrounds.org/people/heather-cox-richardson
 updated: 2026-03-23T12:16:18.457Z
 force_analyze_links: false
-link_analysis_time: 2026-03-25T20:14:22.440Z
+link_analysis_time: 2026-04-14T00:00:00Z
 link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_version: "2"
 ---
 [Home](../index.md) > [People](./index.md)  
 # 🏛️🇺🇸📖 Heather Cox Richardson  

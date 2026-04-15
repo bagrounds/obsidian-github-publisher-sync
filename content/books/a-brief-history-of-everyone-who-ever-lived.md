@@ -7,11 +7,12 @@ share: true
 affiliate link: https://amzn.to/3Irost0
 CTA: Decode ancestry.
 link_analysis_model: gemini-3.1-flash-lite-preview
-link_analysis_time: 2026-04-02T00:00:00Z
+link_analysis_time: 2026-04-14T00:00:00Z
 force_analyze_links: false
 image_date: 2026-04-12T16:18:46Z
 image_model: "@cf/black-forest-labs/flux-1-schnell"
 image_prompt: A double-exposed, artistic illustration featuring a human silhouette filled with a complex, glowing network of golden DNA double helices that branch out like the roots of an ancient tree. The silhouette stands against a soft-focus, ethereal globe, with subtle, translucent lines of light connecting disparate points across the continents, symbolizing migration and shared history. The background is a deep, cosmic navy blue, transitioning into warm, earthy tones near the base. The overall aesthetic is scientific yet mystical, blending the precision of genomics with the vast, interconnected scale of human ancestry. No text is present; the focus remains entirely on the intricate, interconnected patterns of life emerging from the human form.
+link_analysis_version: "2"
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 📜🌍👥 A Brief History of Everyone Who Ever Lived  

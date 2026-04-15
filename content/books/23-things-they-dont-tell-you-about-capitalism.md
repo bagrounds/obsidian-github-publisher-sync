@@ -9,11 +9,12 @@ tags:
 affiliate link: https://amzn.to/3ZLS7Tr
 CTA: 🧐 Question assumptions.
 link_analysis_model: gemini-3.1-flash-lite-preview
-link_analysis_time: 2026-04-01T00:00:00Z
+link_analysis_time: 2026-04-14T00:00:00Z
 force_analyze_links: false
 image_date: 2026-04-12T14:23:43Z
 image_model: "@cf/black-forest-labs/flux-1-schnell"
 image_prompt: A minimalist, high-contrast illustration featuring a stylized, wooden ladder standing in a vast, open field. The ladder is being pushed over by a pair of invisible, ghostly hands, symbolizing the ladder-kicking metaphor. In the background, a series of complex, interconnected gears and pulleys are hidden behind a thin, translucent veil, suggesting that the free market is actually a carefully constructed machine rather than a natural phenomenon. The color palette uses deep navy, slate gray, and muted gold accents to evoke a sense of institutional gravity and hidden truths. The overall composition is clean and modern, focusing on the tension between the visible surface of the economy and the intricate, regulated reality operating underneath.
+link_analysis_version: "2"
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🤫🤑 23 Things They Don't Tell You About Capitalism  

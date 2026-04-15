@@ -5,11 +5,12 @@ aliases:
 title: ♟️👑⚔️🧠 Chess
 URL: https://bagrounds.org/bot-chats/chess
 link_analysis_model: gemini-3.1-flash-lite-preview
-link_analysis_time: 2026-04-08T00:00:00Z
+link_analysis_time: 2026-04-15T00:00:00Z
 force_analyze_links: false
 image_date: 2026-04-11T18:14:51Z
 image_model: "@cf/black-forest-labs/flux-1-schnell"
 image_prompt: A high-angle, cinematic close-up of a wooden chessboard mid-game. A single white knight stands prominently in the center, casting a long, dramatic shadow across the checkered board. In the soft-focus background, a stack of vintage, leather-bound books rests against a warm, library-style mahogany surface. The lighting is moody and intellectual, with golden highlights catching the grain of the wood and the polished edges of the chess pieces. Dust motes dance in a sliver of light filtering from the side, creating an atmosphere of quiet study, strategic depth, and timeless wisdom. The color palette is composed of rich earth tones, deep browns, and creams, evoking a sense of classic sophistication.
+link_analysis_version: "2"
 ---
 [Home](../index.md) > [Bot Chats](./index.md)  
 # ♟️👑⚔️🧠 Chess  

@@ -5,11 +5,12 @@ aliases:
 title: 📚🗳️🤝🏛️ Books for Democracy
 URL: https://bagrounds.org/bot-chats/books-for-democracy
 link_analysis_model: gemini-3.1-flash-lite-preview
-link_analysis_time: 2026-04-08T00:00:00Z
+link_analysis_time: 2026-04-15T00:00:00Z
 force_analyze_links: false
 image_date: 2026-04-11T17:16:45Z
 image_model: "@cf/black-forest-labs/flux-1-schnell"
 image_prompt: An evocative, high-angle composition featuring a stack of vintage and modern hardcover books resting on a weathered stone surface. The books are positioned to resemble the pillars of a neoclassical temple, with their spines facing outward. A soft, warm light illuminates the stack, symbolizing enlightenment and knowledge. Surrounding the base of the books are scattered, slightly out-of-focus white ballot papers, suggesting civic engagement. In the background, a subtle, ethereal silhouette of a classical marble courthouse fades into a twilight sky, transitioning from a soft, hopeful gold to a deep, contemplative navy. The overall aesthetic is intellectual, timeless, and resolute, emphasizing the weight of history and the fragility of democratic institutions.
+link_analysis_version: "2"
 ---
 [Home](../index.md) > [Bot Chats](./index.md)  
 # 📚🗳️🤝🏛️ Books for Democracy  

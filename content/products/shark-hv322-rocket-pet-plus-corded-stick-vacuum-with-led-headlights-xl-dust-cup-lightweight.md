@@ -10,8 +10,9 @@ image_date: 2026-04-11T12:14:06Z
 image_model: "@cf/black-forest-labs/flux-1-schnell"
 image_prompt: A bright, high-angle studio shot of a Bordeaux and silver Shark Rocket vacuum standing on a clean, light-colored hardwood floor. The vacuums LED headlights are illuminated, casting a soft, warm glow on the floor surface. Beside the vacuum, a few specialized attachments are neatly arranged. A small amount of stylized, soft-focus pet fur is scattered near the nozzle to demonstrate the vacuums purpose, but the overall scene is clean, airy, and modern. The background is a soft-focus, neutral-toned living room, creating a sense of a tidy, pet-friendly home. Natural sunlight streams in from the side, highlighting the metallic finish of the vacuum and creating a crisp, inviting atmosphere.
 link_analysis_model: gemini-3.1-flash-lite-preview
-link_analysis_time: 2026-04-11T00:00:00Z
+link_analysis_time: 2026-04-14T00:00:00Z
 force_analyze_links: false
+link_analysis_version: "2"
 ---
 [Home](../index.md) > [Products](./index.md)  
 # 🦈🔦🐈✨🧹 Shark HV322 Rocket Pet Plus Corded Stick Vacuum with LED Headlights, XL Dust Cup, Lightweight, Perfect for Pet Hair Pickup, Converts to a Hand Vacuum, with (2) Pet Attachments, Bordeaux, Silver  

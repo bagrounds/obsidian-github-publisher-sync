@@ -5,12 +5,13 @@ aliases:
 title: 💡🔧📏🔮〰️ Vensim
 URL: https://bagrounds.org/software/vensim
 link_analysis_model: gemini-3.1-flash-lite-preview
-link_analysis_time: 2026-04-07T00:00:00Z
+link_analysis_time: 2026-04-14T00:00:00Z
 force_analyze_links: false
 image_date: 2026-04-11T08:19:40Z
 image_model: "@cf/black-forest-labs/flux-1-schnell"
 image_prompt: A high-angle, minimalist illustration featuring a series of interconnected glass vessels and transparent pipes. Inside the vessels, glowing, semi-fluid geometric shapes represent stocks of data, transitioning through the pipes as vibrant, flowing light trails. The background is a clean, deep slate-gray, providing a stark contrast to the luminous nodes and connections. Floating subtly in the composition are thin, precise architectural lines and translucent mathematical symbols, suggesting a blueprint for a complex system. The aesthetic is modern, clean, and technical, emphasizing the intersection of fluid dynamics and structured data modeling. The lighting is soft and ethereal, casting gentle glows where the pipes meet the vessels, creating a sense of depth and continuous, intelligent motion.
 updated: 2026-04-11T13:32:35
+link_analysis_version: "2"
 ---
 [Home](../index.md) > [Software](./index.md)  
 # 💡🔧📏🔮〰️ Vensim  

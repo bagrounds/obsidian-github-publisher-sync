@@ -5,12 +5,13 @@ aliases:
 title: 🇷🇺👹🤝👹🇺🇸 Trump and Putin
 URL: https://bagrounds.org/bot-chats/trump-and-putin
 link_analysis_model: gemini-3.1-flash-lite-preview
-link_analysis_time: 2026-04-10T00:00:00Z
+link_analysis_time: 2026-04-14T00:00:00Z
 force_analyze_links: false
 image_date: 2026-04-12T12:17:04Z
 image_model: "@cf/black-forest-labs/flux-1-schnell"
 image_prompt: A surreal, high-contrast illustration featuring two stylized, shadowy figures sitting at opposite ends of a long, polished mahogany conference table that stretches into an infinite, dark void. The table surface acts as a mirror, reflecting a distorted map of the world that glows faintly beneath them. One figure wears a dark, sharp-edged business suit, while the other is draped in a heavy, military-style overcoat; both are rendered as silhouettes with subtle, menacing expressions suggested by glowing red eyes. Between them, a single, ornate golden telephone sits prominently on the table, tethered by a tangled, glowing red wire that snakes across the floor like a spiderweb. The background is a cold, deep blue gradient, with abstract architectural silhouettes of skyscrapers and fortress walls fading into the darkness, emphasizing a cold-war atmosphere of hidden agendas and transactional power.
 updated: 2026-04-13T21:28:47
+link_analysis_version: "2"
 ---
 [Home](../index.md) > [Bot Chats](./index.md)  
 # 🇺🇸👹🤝🏻👹🇷🇺 Trump and Putin  

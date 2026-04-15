@@ -19,8 +19,9 @@
 
 ### 🔄 Data Flow
 
-- 🧠 Caller provides prompt text, model chain, and optional grounding config
+- 🧠 Caller provides prompt text, optional system instruction, model chain, and optional grounding config
 - 📡 generateContentWithFallback tries each model in order
+- 📋 When a system instruction is provided, it is sent via the Gemini API `system_instruction` field rather than concatenated with user content
 - 🔄 Each model attempt uses withRetry for transient errors (429, 502, 503, 504)
 - 🌐 If grounding fails with quota error, retries without grounding on same model
 - ⏭️ On definitive failure, moves to next model in chain

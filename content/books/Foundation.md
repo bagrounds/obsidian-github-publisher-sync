@@ -9,11 +9,12 @@ tags:
 affiliate link: https://amzn.to/3JoqJ9q
 CTA: 🌌 Engineer Civilization.
 force_analyze_links: false
-link_analysis_time: 2026-03-22T23:33:04.202Z
+link_analysis_time: 2026-04-14T00:00:00Z
 link_analysis_model: gemini-3.1-flash-lite-preview
 image_date: 2026-04-12T16:18:39Z
 image_model: "@cf/black-forest-labs/flux-1-schnell"
 image_prompt: A wide-angle, cinematic view of a sprawling, futuristic metropolis built into the jagged cliffs of an arid, alien planet. The architecture is monumental and brutalist, featuring towering spires and geometric, interlocking structures that look like a partially constructed jigsaw puzzle. In the foreground, a lone, robed figure stands on a high observation deck, looking out over the vast landscape. Above, a deep, indigo sky is filled with a swirling, translucent nebula and a distant, glowing galaxy, suggesting the immense scale of space. The lighting is dramatic, with long shadows cast by a setting twin sun, creating a high-contrast atmosphere that emphasizes the blend of ancient history and advanced technology. The color palette consists of deep blues, burnt oranges, and metallic silvers.
+link_analysis_version: "2"
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🏗️🧱🌍 Foundation  

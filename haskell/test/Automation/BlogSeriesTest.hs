@@ -51,7 +51,7 @@ sampleSeries = BlogSeriesConfig
   , bscPriorityUser = Just "bagrounds"
   , bscNavLink = "[[index|Home]] > [[the-noise/index|\128240 The Noise]]"
   , bscScheduleTime = TimeOfDay 6 0 0
-  , bscCrossSeries  = False
+  , bscContextQueries = []
   }
 
 generateSeriesIndexTests :: TestTree
@@ -105,7 +105,7 @@ buildBlogContextTests :: TestTree
 buildBlogContextTests = testGroup "buildBlogContext"
   [ testCase "returns Left for nonexistent series ID" $ do
       let today = fromGregorian 2026 6 1
-      result <- buildBlogContext Map.empty "nonexistent-series-id" "." [] today []
+      result <- buildBlogContext Map.empty "nonexistent-series-id" "." [] today
       case result of
         Left reason -> assertBool "error mentions unknown series" $
           T.isInfixOf "Unknown blog series" reason
@@ -113,7 +113,7 @@ buildBlogContextTests = testGroup "buildBlogContext"
 
   , testCase "returns Left for empty series ID" $ do
       let today = fromGregorian 2026 6 1
-      result <- buildBlogContext Map.empty "" "." [] today []
+      result <- buildBlogContext Map.empty "" "." [] today
       case result of
         Left reason -> assertBool "error mentions unknown series" $
           T.isInfixOf "Unknown blog series" reason

@@ -1,6 +1,5 @@
 module Automation.BlogPrompt
   ( BlogContext (..)
-  , CrossSeriesPost (..)
   , Slug (..)
   , DisplayTitle (..)
   , mkSlug
@@ -36,6 +35,7 @@ import Text.Read (readMaybe)
 import Automation.BlogComments (BlogComment (..))
 import Automation.BlogPosts (BlogPost (..))
 import Automation.BlogSeriesConfig (BlogSeriesConfig (..))
+import Automation.ContextQuery (CrossSeriesPost (..))
 import Automation.Frontmatter (quoteYamlValue)
 import Automation.PacificTime (formatDay, formatDayHuman, toPacificLocalTime)
 import Automation.Text (isEmoji)
@@ -56,13 +56,6 @@ mkSlug t
   | T.any (\c -> c == ' ' || c == '\n') t = Left ("Slug contains whitespace: " <> t)
   | T.head t == '-' || T.last t == '-' = Left ("Slug has leading/trailing hyphens: " <> t)
   | otherwise = Right (Slug t)
-
--- | A post from another blog series, providing cross-series context.
-data CrossSeriesPost = CrossSeriesPost
-  { cspSeriesName :: Text
-  , cspSeriesIcon :: Text
-  , cspPost       :: BlogPost
-  } deriving (Show, Eq)
 
 data BlogContext = BlogContext
   { bcxSeries           :: BlogSeriesConfig

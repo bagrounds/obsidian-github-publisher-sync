@@ -28,7 +28,7 @@ sampleSeries = BlogSeriesConfig
   , bscPriorityUser = Just "ChickieLoo"
   , bscNavLink      = "[[index|Home]] > [[chickie-loo/index|🐔 Chickie Loo]]"
   , bscScheduleTime = TimeOfDay 7 0 0
-  , bscCrossSeries  = False
+  , bscContextQueries = []
   }
 
 formatWikilinkTests :: TestTree

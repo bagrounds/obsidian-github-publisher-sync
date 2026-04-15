@@ -37,6 +37,7 @@ library
     Automation.Timer
     Automation.Gemini
     Automation.BlogSeriesConfig
+    Automation.ContextQuery
     Automation.BlogPosts
     Automation.BlogPrompt
     Automation.BlogSeries

@@ -27,6 +27,7 @@ import System.FilePath ((</>), dropExtension, takeExtension)
 import qualified Automation.Gemini as Gemini
 import Automation.Json (FromValue (..), withObject, (.:), (.:?), eitherDecodeStrict)
 import Automation.BlogSeriesConfig (BlogSeriesConfig (..))
+import Automation.ContextQuery (ContextQuery, defaultContextQueries)
 import Automation.Scheduler (BlogSeriesRunConfig (..), ScheduleEntry (..), TaskId (..))
 
 configDirectoryName :: FilePath
@@ -39,7 +40,7 @@ data DiscoveredSeries = DiscoveredSeries
   , dsPriorityUser       :: Maybe Text
   , dsScheduleTime       :: TimeOfDay
   , dsModels             :: NonEmpty Gemini.Model
-  , dsCrossSeries        :: Bool
+  , dsContextQueries     :: [ContextQuery]
   } deriving (Show, Eq)
 
 data DiscoveryError
@@ -53,7 +54,7 @@ data RawConfig = RawConfig
   , rcPriorityUser       :: Maybe Text
   , rcScheduleHourPacific :: Int
   , rcModels             :: [Text]
-  , rcCrossSeries        :: Maybe Bool
+  , rcContextSources     :: Maybe [ContextQuery]
   }
 
 instance FromValue RawConfig where
@@ -63,7 +64,7 @@ instance FromValue RawConfig where
     rcPriorityUser <- obj .:? "priorityUser"
     rcScheduleHourPacific <- obj .: "scheduleHourPacific"
     rcModels <- obj .: "models"
-    rcCrossSeries <- obj .:? "crossSeries"
+    rcContextSources <- obj .:? "contextSources"
     pure RawConfig{..}
 
 discoverSeries :: FilePath -> IO (Either [DiscoveryError] [DiscoveredSeries])
@@ -120,7 +121,7 @@ validateRawConfig filePath seriesId RawConfig{..} =
           , dsPriorityUser = rcPriorityUser
           , dsScheduleTime = TimeOfDay rcScheduleHourPacific 0 0
           , dsModels = Gemini.modelFromText firstModel :| fmap Gemini.modelFromText restModels
-          , dsCrossSeries = rcCrossSeries == Just True
+          , dsContextQueries = maybe defaultContextQueries id rcContextSources
           }
       _ -> Left errors
     else Left errors
@@ -135,7 +136,7 @@ deriveBlogSeriesConfig DiscoveredSeries{..} = BlogSeriesConfig
   , bscPriorityUser = dsPriorityUser
   , bscNavLink = deriveNavLink dsId dsIcon dsName
   , bscScheduleTime = dsScheduleTime
-  , bscCrossSeries = dsCrossSeries
+  , bscContextQueries = dsContextQueries
   }
 
 deriveBlogSeriesRunConfig :: DiscoveredSeries -> BlogSeriesRunConfig

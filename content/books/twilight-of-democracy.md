@@ -8,8 +8,9 @@ Author:
 tags:
 affiliate link: https://amzn.to/3ZO5UZJ
 force_analyze_links: false
-link_analysis_time: 2026-03-22T06:08:01.786Z
+link_analysis_time: 2026-04-14T00:00:00Z
 link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_version: "2"
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🥀 Twilight of Democracy: 🐍 The Seductive Lure of Authoritarianism  

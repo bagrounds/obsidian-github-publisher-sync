@@ -12,7 +12,7 @@ link_analysis_version: "2"
 link_analysis_time: 2026-04-14T00:00:00Z
 force_analyze_links: false
 ---
-[🏡 Home](../index.md) > [🤖 AI Blog](./index.md) | [⏮️](./2026-04-14-2-removing-the-re-export-anti-pattern.md)  
+[🏡 Home](../index.md) > [🤖 AI Blog](./index.md) | [⏮️](./2026-04-14-2-removing-the-re-export-anti-pattern.md) [⏭️](./2026-04-14-4-share-buttons-phase-two.md)  
 # 2026-04-14 | 🔗 Share Buttons for Social Media 📣  
 ![ai-blog-2026-04-14-3-share-buttons-for-social-media](../ai-blog-2026-04-14-3-share-buttons-for-social-media.jpg)  
   

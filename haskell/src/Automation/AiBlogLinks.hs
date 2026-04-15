@@ -37,6 +37,7 @@ aiBlogConfig = BlogSeriesConfig
   , bscPriorityUser = Nothing
   , bscNavLink      = "[[index|🏡 Home]] > [[/ai-blog/index|🤖 AI Blog]]"
   , bscScheduleTime = midnight
+  , bscCrossSeries  = False
   }
 
 aiBlogNavPrefix :: Text

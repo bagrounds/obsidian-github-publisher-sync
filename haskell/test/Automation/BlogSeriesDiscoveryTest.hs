@@ -170,6 +170,23 @@ validationTests = testGroup "validation"
 
   , testCase "missing priorityUser defaults to Nothing" $
       dsPriorityUser (unsafeParse "test" configNoPriorityUser) @?= Nothing
+
+  , testCase "parses config with crossSeries true" $
+      dsCrossSeries (unsafeParse "test" configWithCrossSeries) @?= True
+
+  , testCase "missing crossSeries defaults to False" $
+      dsCrossSeries (unsafeParse "test" configNoPriorityUser) @?= False
+
+  , testCase "crossSeries false parses correctly" $
+      dsCrossSeries (unsafeParse "test" configWithCrossSeriesFalse) @?= False
+
+  , testCase "deriveBlogSeriesConfig preserves crossSeries true" $ do
+      let config = deriveBlogSeriesConfig (unsafeParse "test" configWithCrossSeries)
+      bscCrossSeries config @?= True
+
+  , testCase "deriveBlogSeriesConfig preserves crossSeries false" $ do
+      let config = deriveBlogSeriesConfig sampleDiscovered
+      bscCrossSeries config @?= False
   ]
 
 properties :: TestTree
@@ -279,6 +296,28 @@ configNoPriorityUser = T.unlines
   , "}"
   ]
 
+configWithCrossSeries :: T.Text
+configWithCrossSeries = T.unlines
+  [ "{"
+  , "  \"name\": \"Cross Series Test\","
+  , "  \"icon\": \"\128279\","
+  , "  \"scheduleHourPacific\": 10,"
+  , "  \"models\": [\"gemini-2.5-flash\"],"
+  , "  \"crossSeries\": true"
+  , "}"
+  ]
+
+configWithCrossSeriesFalse :: T.Text
+configWithCrossSeriesFalse = T.unlines
+  [ "{"
+  , "  \"name\": \"No Cross Series\","
+  , "  \"icon\": \"\128736\","
+  , "  \"scheduleHourPacific\": 11,"
+  , "  \"models\": [\"gemini-2.5-flash\"],"
+  , "  \"crossSeries\": false"
+  , "}"
+  ]
+
 sampleDiscovered :: DiscoveredSeries
 sampleDiscovered = DiscoveredSeries
   { dsId = "garden-thoughts"
@@ -287,6 +326,7 @@ sampleDiscovered = DiscoveredSeries
   , dsPriorityUser = Just "bagrounds"
   , dsScheduleTime = TimeOfDay 11 0 0
   , dsModels = Gemini.Gemini25Flash :| [Gemini.Gemini25FlashLite]
+  , dsCrossSeries = False
   }
 
 genSeriesId :: QC.Gen T.Text
@@ -303,6 +343,7 @@ genDiscoveredSeries = do
   icon <- QC.elements ["\129793", "\129302", "\128020", "\127963\65039", "\127925"]
   priorityUser <- QC.oneof [pure Nothing, Just . T.pack <$> QC.listOf1 (QC.elements ['a'..'z'])]
   hour <- QC.choose (0, 23)
+  crossSeries <- QC.arbitrary
   pure DiscoveredSeries
     { dsId = seriesId
     , dsName = name
@@ -310,4 +351,5 @@ genDiscoveredSeries = do
     , dsPriorityUser = priorityUser
     , dsScheduleTime = TimeOfDay hour 0 0
     , dsModels = Gemini.Gemini25Flash :| []
+    , dsCrossSeries = crossSeries
     }

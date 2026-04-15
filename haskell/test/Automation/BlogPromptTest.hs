@@ -10,6 +10,7 @@ import Data.Time (fromGregorian)
 import Data.Time.LocalTime (TimeOfDay (..))
 
 import Automation.BlogPrompt
+import Automation.BlogPosts (BlogPost (..))
 import Automation.PacificTime (formatDay)
 import Automation.BlogSeriesConfig (BlogSeriesConfig (..), lookupSeriesIn)
 import Automation.BlogSeriesDiscovery (deriveBlogSeriesConfig, DiscoveredSeries (..))
@@ -24,16 +25,19 @@ testSeriesMap = Map.fromList
       { dsId = "chickie-loo", dsName = "Chickie Loo", dsIcon = "🐔"
       , dsPriorityUser = Just "ChickieLoo", dsScheduleTime = TimeOfDay 7 0 0
       , dsModels = Gemini.Gemini31FlashLite :| [Gemini.Gemini3Flash]
+      , dsCrossSeries = False
       })
   , ("auto-blog-zero", deriveBlogSeriesConfig DiscoveredSeries
       { dsId = "auto-blog-zero", dsName = "Auto Blog Zero", dsIcon = "🤖"
       , dsPriorityUser = Just "bagrounds", dsScheduleTime = TimeOfDay 8 0 0
       , dsModels = Gemini.Gemini31FlashLite :| [Gemini.Gemini3Flash]
+      , dsCrossSeries = False
       })
   , ("systems-for-public-good", deriveBlogSeriesConfig DiscoveredSeries
       { dsId = "systems-for-public-good", dsName = "Systems for Public Good", dsIcon = "🏛️"
       , dsPriorityUser = Just "bagrounds", dsScheduleTime = TimeOfDay 9 0 0
       , dsModels = Gemini.Gemini25Flash :| [Gemini.Gemini25FlashLite, Gemini.Gemini31FlashLite]
+      , dsCrossSeries = False
       })
   ]
 
@@ -211,6 +215,7 @@ tests = testGroup "BlogPrompt"
             , bcxPreviousPosts = []
             , bcxComments = []
             , bcxToday = fromGregorian 2026 4 11
+            , bcxCrossSeriesPosts = []
             }
           (_, userPrompt) = buildBlogPrompt ctx
       in assertBool "should include human-readable date" $
@@ -224,12 +229,155 @@ tests = testGroup "BlogPrompt"
             , bcxPreviousPosts = []
             , bcxComments = []
             , bcxToday = fromGregorian 2026 4 11
+            , bcxCrossSeriesPosts = []
             }
           (_, userPrompt) = buildBlogPrompt ctx
       in assertBool "should include YYYY-MM-DD date" $
            "2026-04-11" `T.isInfixOf` userPrompt
 
+  , crossSeriesTests
   , generateSlugTests
+  ]
+
+crossSeriesTests :: TestTree
+crossSeriesTests = testGroup "crossSeries"
+  [ testCase "buildCrossSeriesSection returns empty for no cross-series posts" $
+      buildCrossSeriesSection [] @?= ""
+
+  , testCase "buildCrossSeriesSection includes series name" $
+      let post = CrossSeriesPost
+            { cspSeriesName = "The Noise"
+            , cspSeriesIcon = "📰"
+            , cspPost = BlogPost
+                { bpFilename = "2026-04-15-test.md"
+                , bpDate = "2026-04-15"
+                , bpTitle = "Breaking News Today"
+                , bpBody = "Some news content here"
+                }
+            }
+          result = buildCrossSeriesSection [post]
+      in assertBool "should include series name" $
+           "The Noise" `T.isInfixOf` result
+
+  , testCase "buildCrossSeriesSection includes series icon" $
+      let post = CrossSeriesPost
+            { cspSeriesName = "The Noise"
+            , cspSeriesIcon = "📰"
+            , cspPost = BlogPost
+                { bpFilename = "2026-04-15-test.md"
+                , bpDate = "2026-04-15"
+                , bpTitle = "Breaking News"
+                , bpBody = "Content"
+                }
+            }
+          result = buildCrossSeriesSection [post]
+      in assertBool "should include series icon" $
+           "📰" `T.isInfixOf` result
+
+  , testCase "buildCrossSeriesSection includes post title" $
+      let post = CrossSeriesPost
+            { cspSeriesName = "Chickie Loo"
+            , cspSeriesIcon = "🐔"
+            , cspPost = BlogPost
+                { bpFilename = "2026-04-15-morning.md"
+                , bpDate = "2026-04-15"
+                , bpTitle = "Morning at the Ranch"
+                , bpBody = "The chickens woke up early today"
+                }
+            }
+          result = buildCrossSeriesSection [post]
+      in assertBool "should include post title" $
+           "Morning at the Ranch" `T.isInfixOf` result
+
+  , testCase "buildCrossSeriesSection includes post body content" $
+      let post = CrossSeriesPost
+            { cspSeriesName = "Auto Blog Zero"
+            , cspSeriesIcon = "🤖"
+            , cspPost = BlogPost
+                { bpFilename = "2026-04-15-test.md"
+                , bpDate = "2026-04-15"
+                , bpTitle = "AI Musings"
+                , bpBody = "Exploring the nature of synthetic consciousness"
+                }
+            }
+          result = buildCrossSeriesSection [post]
+      in assertBool "should include post body" $
+           "synthetic consciousness" `T.isInfixOf` result
+
+  , testCase "buildCrossSeriesSection includes header" $
+      let post = CrossSeriesPost
+            { cspSeriesName = "Test"
+            , cspSeriesIcon = "🧪"
+            , cspPost = BlogPost
+                { bpFilename = "2026-04-15-test.md"
+                , bpDate = "2026-04-15"
+                , bpTitle = "Test"
+                , bpBody = "Body"
+                }
+            }
+          result = buildCrossSeriesSection [post]
+      in assertBool "should include header" $
+           "Today Across the Blog" `T.isInfixOf` result
+
+  , testCase "buildCrossSeriesSection handles multiple posts" $
+      let posts =
+            [ CrossSeriesPost "The Noise" "📰" (BlogPost "a.md" "2026-04-15" "News" "News body")
+            , CrossSeriesPost "Chickie Loo" "🐔" (BlogPost "b.md" "2026-04-15" "Ranch" "Ranch body")
+            ]
+          result = buildCrossSeriesSection posts
+      in do
+           assertBool "should include first series" $ "The Noise" `T.isInfixOf` result
+           assertBool "should include second series" $ "Chickie Loo" `T.isInfixOf` result
+
+  , testCase "buildCrossSeriesSection truncates long post bodies" $
+      let longBody = T.replicate 300 "This is a long sentence. "
+          post = CrossSeriesPost "Test" "🧪" (BlogPost "a.md" "2026-04-15" "Test" longBody)
+          result = buildCrossSeriesSection [post]
+      in assertBool "should be shorter than full body" $
+           T.length result < T.length longBody
+
+  , testCase "buildCrossSeriesSection strips embed sections from post bodies" $
+      let bodyWithEmbed = "Good content\n\n## 🐦 Tweet\n\nEmbed stuff"
+          post = CrossSeriesPost "Test" "🧪" (BlogPost "a.md" "2026-04-15" "Test" bodyWithEmbed)
+          result = buildCrossSeriesSection [post]
+      in do
+           assertBool "should include good content" $ "Good content" `T.isInfixOf` result
+           assertBool "should not include embed" $ not ("Embed stuff" `T.isInfixOf` result)
+
+  , testCase "buildBlogPrompt includes cross-series section when posts provided" $
+      let series = unsafeLookupSeries "chickie-loo"
+          crossPost = CrossSeriesPost "The Noise" "📰" (BlogPost "a.md" "2026-04-15" "News" "Content")
+          ctx = BlogContext
+            { bcxSeries = series
+            , bcxAgentsMd = ""
+            , bcxPreviousPosts = []
+            , bcxComments = []
+            , bcxToday = fromGregorian 2026 4 15
+            , bcxCrossSeriesPosts = [crossPost]
+            }
+          (_, userPrompt) = buildBlogPrompt ctx
+      in assertBool "user prompt should include cross-series section" $
+           "Today Across the Blog" `T.isInfixOf` userPrompt
+
+  , testCase "buildBlogPrompt omits cross-series section when no posts" $
+      let series = unsafeLookupSeries "chickie-loo"
+          ctx = BlogContext
+            { bcxSeries = series
+            , bcxAgentsMd = ""
+            , bcxPreviousPosts = []
+            , bcxComments = []
+            , bcxToday = fromGregorian 2026 4 15
+            , bcxCrossSeriesPosts = []
+            }
+          (_, userPrompt) = buildBlogPrompt ctx
+      in assertBool "user prompt should not include cross-series section" $
+           not ("Today Across the Blog" `T.isInfixOf` userPrompt)
+
+  , testCase "buildCrossSeriesSection includes post date" $
+      let post = CrossSeriesPost "Test" "🧪" (BlogPost "a.md" "2026-04-15" "Test" "Body")
+          result = buildCrossSeriesSection [post]
+      in assertBool "should include date" $
+           "2026-04-15" `T.isInfixOf` result
   ]
 
 generateSlugTests :: TestTree

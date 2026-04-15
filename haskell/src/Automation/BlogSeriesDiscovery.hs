@@ -39,6 +39,7 @@ data DiscoveredSeries = DiscoveredSeries
   , dsPriorityUser       :: Maybe Text
   , dsScheduleTime       :: TimeOfDay
   , dsModels             :: NonEmpty Gemini.Model
+  , dsCrossSeries        :: Bool
   } deriving (Show, Eq)
 
 data DiscoveryError
@@ -52,6 +53,7 @@ data RawConfig = RawConfig
   , rcPriorityUser       :: Maybe Text
   , rcScheduleHourPacific :: Int
   , rcModels             :: [Text]
+  , rcCrossSeries        :: Maybe Bool
   }
 
 instance FromValue RawConfig where
@@ -61,6 +63,7 @@ instance FromValue RawConfig where
     rcPriorityUser <- obj .:? "priorityUser"
     rcScheduleHourPacific <- obj .: "scheduleHourPacific"
     rcModels <- obj .: "models"
+    rcCrossSeries <- obj .:? "crossSeries"
     pure RawConfig{..}
 
 discoverSeries :: FilePath -> IO (Either [DiscoveryError] [DiscoveredSeries])
@@ -117,6 +120,7 @@ validateRawConfig filePath seriesId RawConfig{..} =
           , dsPriorityUser = rcPriorityUser
           , dsScheduleTime = TimeOfDay rcScheduleHourPacific 0 0
           , dsModels = Gemini.modelFromText firstModel :| fmap Gemini.modelFromText restModels
+          , dsCrossSeries = rcCrossSeries == Just True
           }
       _ -> Left errors
     else Left errors
@@ -131,6 +135,7 @@ deriveBlogSeriesConfig DiscoveredSeries{..} = BlogSeriesConfig
   , bscPriorityUser = dsPriorityUser
   , bscNavLink = deriveNavLink dsId dsIcon dsName
   , bscScheduleTime = dsScheduleTime
+  , bscCrossSeries = dsCrossSeries
   }
 
 deriveBlogSeriesRunConfig :: DiscoveredSeries -> BlogSeriesRunConfig

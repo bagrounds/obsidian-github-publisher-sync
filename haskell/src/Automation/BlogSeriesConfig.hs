@@ -22,6 +22,7 @@ data BlogSeriesConfig = BlogSeriesConfig
   , bscPriorityUser :: Maybe Text
   , bscNavLink      :: Text
   , bscScheduleTime :: TimeOfDay
+  , bscCrossSeries  :: Bool
   } deriving (Show, Eq)
 
 lookupSeriesIn :: Map Text BlogSeriesConfig -> Text -> Either Text BlogSeriesConfig

@@ -33,6 +33,7 @@ sampleSeries = BlogSeriesConfig
   , bscPriorityUser = Just "bagrounds"
   , bscNavLink      = "[[index|Home]] > [[auto-blog-zero/index|🤖 Auto Blog Zero]]"
   , bscScheduleTime = TimeOfDay 8 0 0
+  , bscCrossSeries  = False
   }
 
 --------------------------------------------------------------------------------

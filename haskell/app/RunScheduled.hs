@@ -46,6 +46,7 @@ import Automation.BlogSeries
   , containsSystemPrompt
   , generateSeriesIndex
   , parseGeneratedPost
+  , readCrossSeriesPosts
   , updatePreviousPost
   )
 import Automation.BlogSeriesConfig
@@ -205,7 +206,15 @@ runBlogSeries context seriesMap runConfigs seriesId = do
       comments <- fetchAllSeriesComments manager seriesId (priorityUser >>= (\u -> if T.null u then Nothing else Just u))
       logMsg $ "  📝 Fetched " <> T.pack (show (length comments)) <> " comments"
 
-      blogContextResult <- buildBlogContext seriesMap seriesId seriesDir comments today
+      crossSeriesPosts <- if bscCrossSeries series
+        then do
+          let allSeriesConfigs = Map.elems seriesMap
+          crossPosts <- readCrossSeriesPosts repoRoot seriesId allSeriesConfigs
+          logMsg $ "  🔀 Cross-series context: " <> T.pack (show (length crossPosts)) <> " posts from other series"
+          pure crossPosts
+        else pure []
+
+      blogContextResult <- buildBlogContext seriesMap seriesId seriesDir comments today crossSeriesPosts
       case blogContextResult of
         Left reason -> failTask $ "Blog context build failed: " <> reason
         Right blogContext -> do

@@ -1,5 +1,6 @@
 module Automation.BlogSeries
   ( buildBlogContext
+  , readCrossSeriesPosts
   , generateSeriesIndex
   , extractSlug
   , parseGeneratedPost
@@ -22,6 +23,7 @@ import Automation.BlogComments (BlogComment)
 import Automation.BlogPosts (BlogPost (..), readAgentsMd, readSeriesPosts)
 import Automation.BlogPrompt
   ( BlogContext (..)
+  , CrossSeriesPost (..)
   , filterCommentsAfterLastPost
   )
 import Automation.BlogSeriesConfig (BlogSeriesConfig (..), lookupSeriesIn)
@@ -30,8 +32,8 @@ import Automation.Wikilink (buildForwardLink)
 import Data.Map.Strict (Map)
 import Data.Time (Day)
 
-buildBlogContext :: Map Text BlogSeriesConfig -> Text -> FilePath -> [BlogComment] -> Day -> IO (Either Text BlogContext)
-buildBlogContext seriesMap seriesId seriesDir comments today =
+buildBlogContext :: Map Text BlogSeriesConfig -> Text -> FilePath -> [BlogComment] -> Day -> [CrossSeriesPost] -> IO (Either Text BlogContext)
+buildBlogContext seriesMap seriesId seriesDir comments today crossSeriesPosts =
   case lookupSeriesIn seriesMap seriesId of
     Left reason -> pure (Left reason)
     Right series -> do
@@ -39,12 +41,30 @@ buildBlogContext seriesMap seriesId seriesDir comments today =
       agentsMd <- readAgentsMd seriesDir
       let filteredComments = filterCommentsAfterLastPost series posts comments
       pure $ Right BlogContext
-        { bcxSeries        = series
-        , bcxAgentsMd      = agentsMd
-        , bcxPreviousPosts = posts
-        , bcxComments      = filteredComments
-        , bcxToday         = today
+        { bcxSeries           = series
+        , bcxAgentsMd         = agentsMd
+        , bcxPreviousPosts    = posts
+        , bcxComments         = filteredComments
+        , bcxToday            = today
+        , bcxCrossSeriesPosts = crossSeriesPosts
         }
+
+readCrossSeriesPosts :: FilePath -> Text -> [BlogSeriesConfig] -> IO [CrossSeriesPost]
+readCrossSeriesPosts contentRoot currentSeriesId allSeries = do
+  let otherSeries = filter (\series -> bscId series /= currentSeriesId) allSeries
+  concat <$> traverse (readLatestFromSeries contentRoot) otherSeries
+
+readLatestFromSeries :: FilePath -> BlogSeriesConfig -> IO [CrossSeriesPost]
+readLatestFromSeries contentRoot series = do
+  let seriesDir = contentRoot </> T.unpack (bscId series)
+  posts <- readSeriesPosts seriesDir
+  pure $ case posts of
+    (latest : _) -> [CrossSeriesPost
+      { cspSeriesName = bscName series
+      , cspSeriesIcon = bscIcon series
+      , cspPost = latest
+      }]
+    [] -> []
 
 generateSeriesIndex :: BlogSeriesConfig -> Text
 generateSeriesIndex series =

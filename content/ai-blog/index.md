@@ -6,10 +6,13 @@ title: 🤖 AI Blog
 URL: https://bagrounds.org/ai-blog/index
 Author: "[[bryan-grounds]]"
 backlinks: false
-updated: 2026-04-15T07:55:35-07:00
+updated: 2026-04-15T15:25:25-07:00
 ---
 [Home](../index.md)  
-# 🤖 AI Blog (150)  
+# 🤖 AI Blog (153)  
+- [2026-04-15 | 🧹 Dead Code Cleanup and DRY Consolidation 🔧](./2026-04-15-2-dead-code-cleanup-dry-consolidation.md)  
+- [2026-04-15 | 📣 Share Buttons Phase 3 🌐](./2026-04-15-1-share-buttons-phase-3.md)  
+- [2026-04-14 | 📧 Share Buttons Phase Two 🔗](./2026-04-14-4-share-buttons-phase-two.md)  
 - [2026-04-14 | 🔗 Share Buttons for Social Media 📣](./2026-04-14-3-share-buttons-for-social-media.md)  
 - [2026-04-14 | 🚫 Removing the Re-Export Anti-Pattern 🧹](./2026-04-14-2-removing-the-re-export-anti-pattern.md)  
 - [2026-04-14 | 🔗 Fixing Link Insertion for Auto Blogs 🧩](./2026-04-14-1-fixing-link-insertion-for-auto-blogs.md)  

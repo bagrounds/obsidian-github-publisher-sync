@@ -39,4 +39,18 @@
     outline: 2px solid var(--secondary);
     outline-offset: 2px;
   }
+
+  &.copy-success {
+    background: var(--secondary);
+    border-color: var(--secondary);
+    color: var(--light);
+  }
+}
+
+.share-native {
+  display: none;
+
+  &.share-native-visible {
+    display: inline-flex;
+  }
 }

@@ -1,60 +1,51 @@
-const MASTODON_INSTANCE_KEY = "share-mastodon-instance"
-
-const isValidInstance = (instance: string): boolean => {
-  const trimmed = instance.trim()
-  const segments = trimmed.split(".")
-  return (
-    segments.length >= 2 &&
-    segments.every((segment) => segment.length > 0 && /^[a-z0-9-]+$/i.test(segment))
-  )
+const handleCopyLink = async (button: HTMLButtonElement, url: string): Promise<void> => {
+  try {
+    await navigator.clipboard.writeText(url)
+    button.classList.add("copy-success")
+    const originalText = button.textContent
+    button.textContent = "✅ Copied!"
+    setTimeout(() => {
+      button.textContent = originalText
+      button.classList.remove("copy-success")
+    }, 2000)
+  } catch {
+    prompt("Copy this link:", url)
+  }
 }
 
-const normalizeMastodonInstance = (raw: string): string => {
-  const trimmed = raw.trim().toLowerCase()
-  return trimmed.replace(/^https?:\/\//, "").replace(/\/+$/, "")
-}
-
-const getMastodonShareUrl = (instance: string, text: string): string =>
-  `https://${instance}/share?text=${encodeURIComponent(text)}`
-
-const handleMastodonShare = (shareText: string, forcePrompt: boolean): void => {
-  const saved = localStorage.getItem(MASTODON_INSTANCE_KEY)
-
-  if (saved && !forcePrompt) {
-    window.open(getMastodonShareUrl(saved, shareText), "_blank", "noopener,noreferrer")
-    return
+const handleNativeShare = async (title: string, url: string, text: string): Promise<void> => {
+  try {
+    await navigator.share({ title, url, text })
+  } catch (error: unknown) {
+    if (error instanceof Error && error.name !== "AbortError") {
+      console.error("Share failed:", error)
+    }
   }
-
-  const promptMessage = saved
-    ? `Enter your Mastodon instance (current: ${saved}):`
-    : "Enter your Mastodon instance (e.g. mastodon.social):"
-
-  const input = prompt(promptMessage, saved ?? "")
-
-  if (!input) return
-
-  const instance = normalizeMastodonInstance(input)
-
-  if (!isValidInstance(instance)) {
-    alert("That doesn't look like a valid Mastodon instance domain. Please try again.")
-    return
-  }
-
-  localStorage.setItem(MASTODON_INSTANCE_KEY, instance)
-  window.open(getMastodonShareUrl(instance, shareText), "_blank", "noopener,noreferrer")
 }
 
 document.addEventListener("nav", () => {
-  const mastodonButtons = document.querySelectorAll<HTMLButtonElement>(".share-mastodon")
+  const containers = document.querySelectorAll<HTMLDivElement>(".share-buttons")
 
-  for (const button of mastodonButtons) {
-    const clickHandler = (event: MouseEvent) => {
-      const shareText = button.dataset.shareText ?? ""
-      const forcePrompt = event.shiftKey
-      handleMastodonShare(shareText, forcePrompt)
+  for (const container of containers) {
+    const url = container.dataset.url ?? ""
+    const title = container.dataset.title ?? ""
+    const shareText = container.dataset.shareText ?? ""
+
+    const copyButtons = container.querySelectorAll<HTMLButtonElement>(".share-copy-link")
+    for (const button of copyButtons) {
+      const copyLinkClickHandler = () => { void handleCopyLink(button, url) }
+      button.addEventListener("click", copyLinkClickHandler)
+      window.addCleanup(() => button.removeEventListener("click", copyLinkClickHandler))
     }
 
-    button.addEventListener("click", clickHandler)
-    window.addCleanup(() => button.removeEventListener("click", clickHandler))
+    const nativeButtons = container.querySelectorAll<HTMLButtonElement>(".share-native")
+    for (const button of nativeButtons) {
+      if (navigator.share) {
+        button.classList.add("share-native-visible")
+        const nativeShareClickHandler = () => { void handleNativeShare(title, url, shareText) }
+        button.addEventListener("click", nativeShareClickHandler)
+        window.addCleanup(() => button.removeEventListener("click", nativeShareClickHandler))
+      }
+    }
   }
 })

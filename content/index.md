@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-04-14T17:52:00-07:00
+updated: 2026-04-14T18:55:57-07:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -21,11 +21,11 @@ updated: 2026-04-14T17:52:00-07:00
 - [2026-04-11 | 🧠 Mythos 🚀 Changes 🪚 Broken 🛠️ Fixing 🏠 Home 🌃 Night 🤖 AI 🗣️ Day 📈 Surge 🌐 World 🍎 Embrace 🤫 Noise 🆕 New 🥇 First 🕰️ Time 📚📺🐔🤖🏛️📰🤖🐲](./reflections/2026-04-11.md)  
   
   
-## [🤖 AI Blog](./ai-blog/index.md) (147)  
+## [🤖 AI Blog](./ai-blog/index.md) (148)  
+- [2026-04-14 | 🔗 Fixing Link Insertion for Auto Blogs 🧩](./ai-blog/2026-04-14-1-fixing-link-insertion-for-auto-blogs.md)  
 - [2026-04-13 | 📚🔗 Improving Book Linking Coverage 🎯](./ai-blog/2026-04-13-5-improving-book-linking-coverage.md)  
 - [2026-04-13 | 🦋 Fixing Bluesky Link Facet Offsets 🔗](./ai-blog/2026-04-13-4-fixing-bluesky-link-facet-offsets.md)  
 - [2026-04-13 | 📊 Daily Updates Table Redesign 🔄](./ai-blog/2026-04-13-3-daily-updates-table-redesign.md)  
-- [2026-04-13 | 🧩 Breaking the Internal Linking Monolith 🔗](./ai-blog/2026-04-13-2-breaking-the-internal-linking-monolith.md)  
   
   
 ## [🤖 Auto Blog Zero](./auto-blog-zero/index.md) (35)  
@@ -63,17 +63,17 @@ updated: 2026-04-14T17:52:00-07:00
   
   
 ## [📚 Books](./books/index.md) (959)  
+- [✍️📚⏱️ How to Write a Book in 30 Days](./books/how-to-write-a-book-in-30-days.md)  
 - [🕷️⏳ Children of Time](./books/children-of-time.md)  
 - [📱🧠 The Shallows: What the Internet Is Doing to Our Brains](./books/the-shallows-what-the-internet-is-doing-to-our-brains.md)  
 - [🤿💼 Deep Work: Rules for Focused Success in a Distracted World](./books/deep-work.md)  
-- [🏚️💰 Evicted: Poverty and Profit in the American City](./books/evicted-poverty-and-profit-in-the-american-city.md)  
   
   
-## [📺 Videos](./videos/index.md) (754)  
+## [📺 Videos](./videos/index.md) (755)  
+- [🏛️🗣️ Politics Chat, April 14, 2026](./videos/politics-chat-april-14-2026.md)  
+- [🗣️🏛️🗓️ Politics Chat, December 4, 2025](./videos/politics-chat-december-4-2025.md)  
 - [🇭🇺⚔️👑🌍🌊 How Hungary’s vote to oust Viktor Orbán could have global implications](./videos/how-hungarys-vote-to-oust-viktor-orban-could-have-global-implications.md)  
 - [🏛️📜🧠 You Actually Do Need to Understand Mythos](./videos/you-actually-do-need-to-understand-mythos.md)  
-- [⛽📈➡️☀️❓ Will more Americans embrace renewable energy after the latest oil price surge?](./videos/will-more-americans-embrace-renewable-energy-after-the-latest-oil-price-surge.md)  
-- [🤖✨💥⚠️ Claude Mythos Changes Everything. Your AI Stack Isn't Ready.](./videos/claude-mythos-changes-everything-your-ai-stack-isnt-ready.md)  
   
   
 ## [🌌 Topics](./topics/index.md) (91)  
@@ -98,10 +98,10 @@ updated: 2026-04-14T17:52:00-07:00
   
   
 ## [💾 Software](./software/index.md) (33)  
-- [💾✍️🌋⚫️ Obsidian](./software/obsidian.md)  
-- [💻📱🛠️ Termux](./software/termux.md)  
-- [🐍🏎️📦 uv](./software/uv.md)  
 - [⛎♉️♊️♋️♌️♍️♎️♏️♐️♑️♒️♓️ Zodios](./software/zodios.md)  
+- [👽🦺 Zod](./software/zod.md)  
+- [💡🔧📏🔮〰️ Vensim](./software/vensim.md)  
+- [🐍🏎️📦 uv](./software/uv.md)  
   
   
 ## [👥 People](./people/index.md) (18)  

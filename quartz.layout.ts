@@ -23,6 +23,7 @@ export const sharedPageComponents: SharedLayout = {
       async>
     </script>
     */
+    Component.ShareButtons(),
     Component.Graph(),
     Component.Backlinks(),
     Component.Comments({

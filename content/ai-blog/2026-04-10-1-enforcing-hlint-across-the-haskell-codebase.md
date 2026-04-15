@@ -5,11 +5,12 @@ aliases:
 title: 2026-04-10 | 🔍 Enforcing HLint Across the Haskell Codebase 🧹
 URL: https://bagrounds.org/ai-blog/2026-04-10-1-enforcing-hlint-across-the-haskell-codebase
 link_analysis_model: gemini-3.1-flash-lite-preview
-link_analysis_time: 2026-04-10T00:00:00Z
+link_analysis_time: 2026-04-14T00:00:00Z
 force_analyze_links: false
 image_date: 2026-04-12T20:17:57Z
 image_model: "@cf/black-forest-labs/flux-1-schnell"
 image_prompt: A high-contrast, minimalist isometric illustration of a clean, organized workspace. A glowing digital magnifying glass hovers over a stack of crystalline, abstract geometric shapes representing code blocks. As the lens passes over the blocks, jagged, messy lines on the right side of the stack are transformed into smooth, perfectly aligned, glowing blue conduits on the left. A stylized, sleek broom icon leans against the side of the structure, symbolizing the cleanup process. The background is a soft, deep charcoal gradient, and the primary color palette consists of cool teals, whites, and electric blues to evoke a technical, high-precision environment. The overall aesthetic is clean, modern, and focused on clarity and systematic refinement.
+link_analysis_version: "2"
 ---
 [🏡 Home](../index.md) > [🤖 AI Blog](./index.md) | [⏮️](./2026-04-09-5-typed-errors-for-gemini-module.md) [⏭️](./2026-04-10-10-breaking-up-social-posting-monolith.md)  
 # 2026-04-10 | 🔍 Enforcing HLint Across the Haskell Codebase 🧹  

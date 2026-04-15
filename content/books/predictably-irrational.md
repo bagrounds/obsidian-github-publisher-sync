@@ -9,11 +9,12 @@ tags:
 affiliate link: https://amzn.to/4mRoPwQ
 updated: 2026-03-20T04:34:53.168Z
 force_analyze_links: false
-link_analysis_time: 2026-03-22T23:37:04.373Z
+link_analysis_time: 2026-04-15T00:00:00Z
 link_analysis_model: gemini-3.1-flash-lite-preview
 image_date: 2026-04-15T06:46:59Z
 image_model: "@cf/black-forest-labs/flux-1-schnell"
 image_prompt: A surreal, high-contrast illustration featuring a giant, ornate golden labyrinth set against a deep indigo background. Within the labyrinth, a single, bright red thread winds erratically, forming the shape of a human brain. Instead of a standard exit, the thread leads to a series of floating, translucent geometric shapes—a cube, a sphere, and a pyramid—that are slightly distorted, as if seen through water. Small, glowing white icons representing common decision-making symbols—such as a price tag, a clock, a heart, and a balance scale—are scattered throughout the maze, appearing to pull the red thread off its path. The lighting is dramatic, casting long, soft shadows that emphasize the feeling of being guided by hidden, invisible forces. The overall aesthetic is clean, modern, and intellectually provocative.
+link_analysis_version: "2"
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🔮🤷🏼‍♀️🤪 Predictably Irrational: The Hidden Forces That Shape Our Decisions  

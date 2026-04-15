@@ -17,6 +17,7 @@ module Automation.BlogSeriesDiscovery
 import qualified Data.ByteString as BS
 import Data.List (sortOn)
 import Data.List.NonEmpty (NonEmpty (..))
+import Data.Maybe (fromMaybe)
 import Data.Text (Text)
 import qualified Data.Text as T
 import qualified Data.Text.Encoding as TE
@@ -121,7 +122,7 @@ validateRawConfig filePath seriesId RawConfig{..} =
           , dsPriorityUser = rcPriorityUser
           , dsScheduleTime = TimeOfDay rcScheduleHourPacific 0 0
           , dsModels = Gemini.modelFromText firstModel :| fmap Gemini.modelFromText restModels
-          , dsContextQueries = maybe defaultContextQueries id rcContextSources
+          , dsContextQueries = fromMaybe defaultContextQueries rcContextSources
           }
       _ -> Left errors
     else Left errors

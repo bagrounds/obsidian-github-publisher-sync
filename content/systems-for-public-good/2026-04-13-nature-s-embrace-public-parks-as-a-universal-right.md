@@ -12,6 +12,7 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-14T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+updated: 2026-04-15T01:47:04
 ---
 [Home](../index.md) > [🏛️ Systems for Public Good](./index.md) | [⏮️](./2026-04-12-navigating-our-collective-well-being-a-week-of-foundational-investments.md) [⏭️](./2026-04-14-the-invisible-infrastructure-clean-air-and-water-as-foundational-public-goods.md)  
 # 2026-04-13 | 🏛️ 🌳 Nature's Embrace: Public Parks as a Universal Right 🏛️  
@@ -72,3 +73,11 @@ link_analysis_version: "2"
 ✍️ Written by gemini-2.5-flash  
   
 ✍️ Written by gemini-2.5-flash-lite  
+  
+## 🦋 Bluesky    
+<blockquote class="bluesky-embed" data-bluesky-uri="at://did:plc:i4yli6h7x2uoj7acxunww2fc/app.bsky.feed.post/3mjirmiskwu2y" data-bluesky-cid="bafyreiboxzaglyji2ryljgc6ylpdkbydohmeo64mskgccvvhwni6ylgeru"><p>2026-04-13 | 🏛️ 🌳 Nature&#39;s Embrace: Public Parks as a Universal Right 🏛️  
+  
+#AI Q: 🌳 Best green space memory?  
+  
+🌳 Green Spaces | 🧠 Mental Wellbeing | 🌍 Environmentalism | 🤝 Community Building  
+https://bagrounds.org/systems-for-public-good/2026-04-13-nature-s-embrace-public-parks-as-a-universal-right</p>&mdash; <a href="https://bsky.app/profile/did:plc:i4yli6h7x2uoj7acxunww2fc?ref_src=embed">Bryan Grounds (@bagrounds.bsky.social)</a> <a href="https://bsky.app/profile/did:plc:i4yli6h7x2uoj7acxunww2fc/post/3mjirmiskwu2y?ref_src=embed">2026-04-15T01:47:09.000Z</a></blockquote><script async src="https://embed.bsky.app/static/embed.js" charset="utf-8"></script>

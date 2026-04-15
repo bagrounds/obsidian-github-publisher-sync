@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-04-14T18:55:57-07:00
+updated: 2026-04-15T07:55:35-07:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -14,18 +14,18 @@ updated: 2026-04-14T18:55:57-07:00
 🔊 Listen to any page with built in audio control.  
 💬 Comment on any page with your GitHub account.  
   
-## [🪞 Reflections](./reflections/index.md) ~ Blog (516)  
-- [2026-04-14](./reflections/2026-04-14.md)  
+## [🪞 Reflections](./reflections/index.md) ~ Blog (517)  
+- [2026-04-15](./reflections/2026-04-15.md)  
+- [2026-04-14 | 🌍 Hungary’s 🇺🇸 America's 🗣️ Chat 🌟 Reshape 🌐 Sands 🤖 Architecture 🏛️ Goods 🐔 Loos 🧩 Fixing 🧹 Removing 📣 Buttons 📰📺🌟🤖🏛️🐔🤖🐲](./reflections/2026-04-14.md)  
 - [2026-04-13 | 🌍 Billionaires 💡 Trick 🗣️ Speaks 🪞 Leo 🕊️ Victory 🚀 Accelerates 🌊 Currents ☢️ Entropy 🐔 Rhythm 🌳 Embrace 🔗 Monolith 🔄 Redesign 📺📰🌟🤖🐔🏛️🤖🐲](./reflections/2026-04-13.md)  
 - [2026-04-12 | 🧠 First 🎯 Solution ✨ Brings 🌟 Bright 🌃 Night 🏛️ Foundational 🗺️ Navigating 🌐 Global 🐦 Twitter 🚔 Police 🗳️ Election 🤖 Synthetic 📺📰🌟🐔🤖🏛️🤖🐲](./reflections/2026-04-12.md)  
-- [2026-04-11 | 🧠 Mythos 🚀 Changes 🪚 Broken 🛠️ Fixing 🏠 Home 🌃 Night 🤖 AI 🗣️ Day 📈 Surge 🌐 World 🍎 Embrace 🤫 Noise 🆕 New 🥇 First 🕰️ Time 📚📺🐔🤖🏛️📰🤖🐲](./reflections/2026-04-11.md)  
   
   
-## [🤖 AI Blog](./ai-blog/index.md) (148)  
+## [🤖 AI Blog](./ai-blog/index.md) (150)  
+- [2026-04-14 | 🔗 Share Buttons for Social Media 📣](./ai-blog/2026-04-14-3-share-buttons-for-social-media.md)  
+- [2026-04-14 | 🚫 Removing the Re-Export Anti-Pattern 🧹](./ai-blog/2026-04-14-2-removing-the-re-export-anti-pattern.md)  
 - [2026-04-14 | 🔗 Fixing Link Insertion for Auto Blogs 🧩](./ai-blog/2026-04-14-1-fixing-link-insertion-for-auto-blogs.md)  
 - [2026-04-13 | 📚🔗 Improving Book Linking Coverage 🎯](./ai-blog/2026-04-13-5-improving-book-linking-coverage.md)  
-- [2026-04-13 | 🦋 Fixing Bluesky Link Facet Offsets 🔗](./ai-blog/2026-04-13-4-fixing-bluesky-link-facet-offsets.md)  
-- [2026-04-13 | 📊 Daily Updates Table Redesign 🔄](./ai-blog/2026-04-13-3-daily-updates-table-redesign.md)  
   
   
 ## [🤖 Auto Blog Zero](./auto-blog-zero/index.md) (35)  
@@ -49,71 +49,72 @@ updated: 2026-04-14T18:55:57-07:00
 - [2026-04-11 | 🏛️ ⚕️ The Human Foundation: Public Health as Real Wealth 🏛️](./systems-for-public-good/2026-04-11-the-human-foundation-public-health-as-real-wealth.md)  
   
   
-## [📰 The Noise](./the-noise/index.md) (5)  
+## [📰 The Noise](./the-noise/index.md) (6)  
+- [2026-04-15 | 📰 🌪️ Global Currents, Unfolding Narratives 📰](./the-noise/2026-04-15-global-currents-unfolding-narratives.md)  
 - [2026-04-14 | 📰 🌍 Global Currents, Shifting Sands 🌐 📰](./the-noise/2026-04-14-global-currents-shifting-sands.md)  
 - [2026-04-13 | 📰 🌍 Global Currents, Shifting Sands 🌐 📰](./the-noise/2026-04-13-global-currents-shifting-sands.md)  
 - [2026-04-12 | 📰 🌊 Global Currents, Shifting Sands 🌐 📰](./the-noise/2026-04-12-global-currents-shifting-sands.md)  
-- [2026-04-11 | 📰 First Broadcast - Tuning Into the World 📰](./the-noise/2026-04-11-first-broadcast.md)  
   
   
-## [🌟 Positivity Bias](./positivity-bias/index.md) (4)  
+## [🌟 Positivity Bias](./positivity-bias/index.md) (5)  
+- [2026-04-15 | 🌟 Dawn of Progress: Breakthroughs in Health, Environment, and Global Unity 🌟](./positivity-bias/2026-04-15-dawn-of-progress-breakthroughs-in-health-environment-and-global-unity.md)  
 - [2026-04-14 | 🌟 🏥 Medical Marvels and Environmental Victories Reshape Our World 🌟](./positivity-bias/2026-04-14-medical-marvels-and-environmental-victories-reshape-our-world.md)  
 - [2026-04-13 | 🌟 Innovation Accelerates Across Global Health and Environment 🌟](./positivity-bias/2026-04-13-innovation-accelerates-across-global-health-and-environment.md)  
 - [2026-04-12 | 🌟 Inaugural Edition - Seeking the Bright Spots 🌟](./positivity-bias/2026-04-12-inaugural-seeking-the-bright-spots.md)  
   
   
 ## [📚 Books](./books/index.md) (959)  
-- [✍️📚⏱️ How to Write a Book in 30 Days](./books/how-to-write-a-book-in-30-days.md)  
-- [🕷️⏳ Children of Time](./books/children-of-time.md)  
-- [📱🧠 The Shallows: What the Internet Is Doing to Our Brains](./books/the-shallows-what-the-internet-is-doing-to-our-brains.md)  
-- [🤿💼 Deep Work: Rules for Focused Success in a Distracted World](./books/deep-work.md)  
+- [🏛️👹🇺🇸🏰👹🇷🇺 House of Trump, House of Putin: The Untold Story of Donald Trump and the Russian Mafia](./books/house-of-trump-house-of-putin-the-untold-story-of-donald-trump-and-the-russian-mafia.md)  
+- [🇷🇺🪝🇺🇸 American Kompromat: How the KGB Cultivated Donald Trump, and Other Tales of Sex, Greed, Power, and Treachery](./books/american-kompromat-how-the-kgb-cultivated-donald-trump-and-other-tales-of-sex-greed-power-and-treachery.md)  
+- [🍃🧠🤝🏼 Influence: The Psychology of Persuasion](./books/influence.md)  
+- [🧰💬 Crucial Conversations: Tools for Talking When Stakes Are High](./books/crucial-conversations-tools-for-talking-when-stakes-are-high.md)  
   
   
 ## [📺 Videos](./videos/index.md) (755)  
-- [🏛️🗣️ Politics Chat, April 14, 2026](./videos/politics-chat-april-14-2026.md)  
-- [🗣️🏛️🗓️ Politics Chat, December 4, 2025](./videos/politics-chat-december-4-2025.md)  
-- [🇭🇺⚔️👑🌍🌊 How Hungary’s vote to oust Viktor Orbán could have global implications](./videos/how-hungarys-vote-to-oust-viktor-orban-could-have-global-implications.md)  
-- [🏛️📜🧠 You Actually Do Need to Understand Mythos](./videos/you-actually-do-need-to-understand-mythos.md)  
+- [🍊🤡😈 Trump & Epstein Last Week Tonight](./videos/trump-epstein-last-week-tonight.md)  
+- [🚪🏃‍♂️❓ Why Are They Leaving Office? | Explainer](./videos/why-are-they-leaving-office-explainer.md)  
+- [🏦➕➡️🧑‍🎓🎓 L. Randall Wray - Modern Money Theory for Beginners](./videos/l-randall-wray-modern-money-theory-for-beginners.md)  
+- [🇨🇳🔮❓ Does the Future Belong to China? | Interesting Times with Ross Douthat](./videos/does-the-future-belong-to-china-interesting-times-with-ross-douthat.md)  
   
   
 ## [🌌 Topics](./topics/index.md) (91)  
+- [💻🎨⚙️ ANSI escape codes](./topics/ansi-escape-codes.md)  
 - [🤖🦜 Large Language Models](./topics/large-language-models.md)  
 - [🫂💖 Attachment Theory](./topics/attachment-theory.md)  
 - [🏗️🔧 Engineering](./topics/engineering.md)  
-- [🧩🔄🧠 Self-Organization](./topics/self-organization.md)  
   
   
 ## [📄  Articles](./articles/index.md) (84)  
+- [🪞🇺🇸💔 Mirror, Mirror 2024: A Portrait of the Failing U.S. Health System](./articles/mirror-mirror-2024-a-portrait-of-the-failing-us-health-system.md)  
+- [🗣️🗺️🤖⚙️ Reasoning with Language Model is Planning with World Model](./articles/reasoning-with-language-model-is-planning-with-world-model.md)  
 - [⏳🏛️💥🗳️📉 Trump is dismantling democracy at unprecedented speed, global report finds](./articles/trump-is-dismantling-democracy-at-unprecedented-speed-global-report-finds.md)  
 - [🤖🧠💻 Agentic Code Reasoning](./articles/agentic-code-reasoning.md)  
-- [🗺️🚀🤖 A Field Guide to Rapidly Improving AI Products](./articles/a-field-guide-to-rapidly-improving-ai-products.md)  
-- [⚙️🤖📈🤝 Engineering and AI: Advancing the synergy](./articles/engineering-and-ai-advancing-the-synergy.md)  
   
   
 ## [🤖💬 Bot Chats](./bot-chats/index.md) (49)  
-- [🌸🌬️🤧🔬📚 Allergy Science Books](./bot-chats/allergy-science-books.md)  
-- [🇷🇺👹🤝👹🇺🇸 Trump and Putin](./bot-chats/trump-and-putin.md)  
-- [🧠🤝 System 2 Rapport Building](./bot-chats/system-2-rapport-building.md)  
-- [👶😭➡️😊 Summarize The Happiest Baby On The Block](./bot-chats/summarize-the-happiest-baby-on-the-block.md)  
+- [🕸️🪵🏅 Blogging Success](./bot-chats/blogging-success.md)  
+- [🇦🇹💰🆚📈🖨️ Austrian Economics vs Modern Monetary Theory](./bot-chats/austrian-economics-vs-modern-monetary-theory.md)  
+- [🤰🏼👶🍼👨‍👩‍👦 Parenting and Infant Development Guide](./bot-chats/parenting-and-infant-development-guide.md)  
+- [⚙️📝🧹 Obsidian Templater Filename Sanitization](./bot-chats/obsidian-templater-filename-sanitization.md)  
   
   
 ## [💾 Software](./software/index.md) (33)  
+- [🤖♊ Gemini](./software/gemini.md)  
 - [⛎♉️♊️♋️♌️♍️♎️♏️♐️♑️♒️♓️ Zodios](./software/zodios.md)  
 - [👽🦺 Zod](./software/zod.md)  
 - [💡🔧📏🔮〰️ Vensim](./software/vensim.md)  
-- [🐍🏎️📦 uv](./software/uv.md)  
   
   
 ## [👥 People](./people/index.md) (18)  
-- [🤔⚙️🗣️🤝💡🧩🔭📚👴 Russell Ackoff](./people/russell-ackoff.md)  
 - [🏛️🇺🇸📖 Heather Cox Richardson](./people/heather-cox-richardson.md)  
+- [🤔⚙️🗣️🤝💡🧩🔭📚👴 Russell Ackoff](./people/russell-ackoff.md)  
 - [📈📊⚙️🎯 W Edwards Deming](./people/w-edwards-deming.md)  
 - [👨‍🏫📉💵 Warren Mosler](./people/warren-mosler.md)  
   
   
 ## [🛍️ Products](./products/index.md) (6)  
-- [🦈🔦🐈✨🧹 Shark HV322 Rocket Pet Plus Corded Stick Vacuum with LED Headlights, XL Dust Cup, Lightweight, Perfect for Pet Hair Pickup, Converts to a Hand Vacuum, with (2) Pet Attachments, Bordeaux, Silver](./products/shark-hv322-rocket-pet-plus-corded-stick-vacuum-with-led-headlights-xl-dust-cup-lightweight.md)  
 - [👶🏃🌆 Thule Urban Glide 3](./products/thule-urban-glide-3.md)  
+- [🦈🔦🐈✨🧹 Shark HV322 Rocket Pet Plus Corded Stick Vacuum with LED Headlights, XL Dust Cup, Lightweight, Perfect for Pet Hair Pickup, Converts to a Hand Vacuum, with (2) Pet Attachments, Bordeaux, Silver](./products/shark-hv322-rocket-pet-plus-corded-stick-vacuum-with-led-headlights-xl-dust-cup-lightweight.md)  
 - [🤖🧹🧼🗺️ iRobot Roomba Plus 505 Combo Robot Vacuum & Mop with AutoWash Dock - Extending Spinning Mop Pads, Self-Empties, Pad Wash & Heated Drying, Self-cleaning, Recognizes & Avoids Obstacles, LiDAR Navigation](./products/irobot-roomba-plus-505-combo-robot-vacuum-mop-with-autowash-dock-extending-spinning-mop-pads-self-empties-pad-wash-heated-drying-self-cleaning-recognizes-avoids-obstacles-lidar-navigation.md)  
 - [👶🌧️💨 Graco Baby Jogging Stroller Universal Rain Cover, Ventilated Weather Shield, Waterproof, Windproof, Versatile Size to Fit Most Jogging Strollers, Vinyl, Clear, Plastic](./products/graco-baby-jogging-stroller-universal-rain-cover-ventilated-weather-shield-waterproof-windproof-versatile-size-to-fit-most-jogging-strollers-vinyl-clear-plastic.md)  
   

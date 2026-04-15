@@ -5,11 +5,12 @@ aliases:
 title: 📰 The Noise
 URL: https://bagrounds.org/the-noise
 backlinks: false
-updated: 2026-04-14T18:55:57-07:00
+updated: 2026-04-15T07:55:35-07:00
 ---
 [🏡 Home](../index.md)  
-# 📰 The Noise (5)  
+# 📰 The Noise (6)  
 - [📰 The Noise — AGENTS.md](./AGENTS.md)  
+- [2026-04-15 | 📰 🌪️ Global Currents, Unfolding Narratives 📰](./2026-04-15-global-currents-unfolding-narratives.md)  
 - [2026-04-14 | 📰 🌍 Global Currents, Shifting Sands 🌐 📰](./2026-04-14-global-currents-shifting-sands.md)  
 - [2026-04-13 | 📰 🌍 Global Currents, Shifting Sands 🌐 📰](./2026-04-13-global-currents-shifting-sands.md)  
 - [2026-04-12 | 📰 🌊 Global Currents, Shifting Sands 🌐 📰](./2026-04-12-global-currents-shifting-sands.md)  

@@ -5,12 +5,13 @@ aliases:
 title: 💻📱🛠️ Termux
 URL: https://bagrounds.org/software/termux
 link_analysis_model: gemini-3.1-flash-lite-preview
-link_analysis_time: 2026-04-07T00:00:00Z
+link_analysis_time: 2026-04-14T00:00:00Z
 force_analyze_links: false
 image_date: 2026-04-11T07:27:01Z
 image_model: "@cf/black-forest-labs/flux-1-schnell"
 image_prompt: "A sleek, isometric illustration featuring a modern smartphone resting on a minimalist desk. The phone screen is glowing with a dark, high-contrast terminal interface, displaying vibrant neon-green and blue command-line text and a blinking cursor. Floating just above the phone screen are translucent, stylized 3D icons representing Linux tools: a small penguin silhouette, a package box, and a gear icon. The background is a soft, deep charcoal gradient that makes the glowing screen pop. The overall aesthetic is clean, professional, and slightly cyberpunk, emphasizing the bridge between mobile hardware and powerful desktop-grade software. The lighting is soft and ambient, highlighting the sleek edges of the device."
 updated: 2026-04-11T09:24:11
+link_analysis_version: "2"
 ---
 [Home](../index.md) > [Software](./index.md)  
 # 💻📱🛠️ Termux  

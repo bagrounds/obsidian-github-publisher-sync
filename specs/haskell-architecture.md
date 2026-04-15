@@ -253,12 +253,33 @@ Each error migration delivered with test coverage:
 39. **Re-exports hide unused imports**: When `BlogImage.hs` re-exported 42 symbols from 5 sub-modules, it had to import all of them regardless of whether `BlogImage.hs` itself used them. Removing re-exports immediately revealed 20 unused imports — dead coupling that the compiler couldn't previously detect because the symbols were "used" by re-export.
 40. **Merge duplicate imports after splitting re-exports**: When replacing `import Automation.Types (EnvironmentConfig (..)` and a pre-existing `import Automation.Env (validateEnvironment)`, the result is two imports from `Automation.Env`. Hlint catches these; always merge them in the same PR to keep the import list clean.
 
+### Completed: Dead Code Cleanup + DRY Consolidation
+
+**Goal**: Remove unused modules, dead code, duplicate functions, and anti-patterns. Apply the "no dead code", "no section-demarcating comments", and DRY principles.
+
+- [x] Delete `Automation.Pipeline` — unused module never imported by any other module. Defined generic pipeline infrastructure (`Pipeline`, `PipelineStep`, `runPipeline`) that was never adopted. Removed from `automation.cabal`.
+- [x] Delete `Automation.GeminiQuota` — stub module with two functions (`fetchModelCatalog`, `checkQuota`) that always returned empty values (`pure []`, `pure Nothing`). Never imported by any other module. Removed from `automation.cabal`.
+- [x] Remove `readPreviousPostFilename` dead code — function defined in `RunScheduled.hs` but never called. The paired `.last-generate-metadata.json` file is written but never read back by any code.
+- [x] Deduplicate `stripCodeFences` in `AiFiction.hs` — replaced identical local definition with import from `Automation.Text`. Removed now-unused `fromMaybe` import.
+- [x] Deduplicate `stripCodeFences` in `ReflectionTitle.hs` — replaced identical local definition with import from `Automation.Text`. Removed now-unused `fromMaybe` import.
+- [x] Replace `(&)` redefinition in `ReflectionTitle.hs` — was redefining `Data.Function.(&)` which has been in base since GHC 7.10. Now imports the standard version.
+- [x] Remove 18 section-demarcating comment blocks from `RunScheduled.hs` — blocks of `-- -------...` with section titles like "Constants", "Environment helpers", "Task runners", "Task dispatch", "Main". These violate the no-section-demarcating-comments principle.
+- [x] Extract `yesterdayPacificDay :: IO Day` to `Automation.PacificTime` — moved from local `yesterdayPacific :: IO Text` in `RunScheduled.hs` to the module where `todayPacificDay` already lives. Returns `Day` instead of `Text` for type safety; caller applies `formatDay` at the boundary. 1 new test.
+- [x] Extract `filterRecentReflectionFiles :: Text -> [FilePath] -> [FilePath]` to `Automation.ReflectionTitle` — pure filtering and sorting logic extracted from `extractRecentCreativeTitles` in `RunScheduled.hs`. Filters to reflection files (via `isReflectionFile`), excludes the target date, sorts in reverse chronological order (most recent first), and limits to 20. Uses proper `sortBy (flip compare)` instead of `reverse` which was non-deterministic depending on filesystem ordering. 8 new tests.
+- [x] Slim `RunScheduled.hs` from 688 to 628 lines (60 lines removed, 9% reduction). All 1767 tests pass. Zero hlint hints.
+
+**Learnings from dead code cleanup + DRY consolidation:**
+41. **Stubs are dead code**: A module whose functions always return empty values (`pure []`, `pure Nothing`) is dead code. It compiles and passes type checks but provides no value. Either implement the functionality or delete the module — stubs create false confidence that the feature exists.
+42. **`reverse` is not `sort`**: When `listDirectory` returns files, their order depends on the filesystem. Using `reverse` on the result gives reverse-of-arbitrary-order, not reverse-chronological. Use `sortBy (flip compare)` for deterministic reverse ordering. This bug was latent because ext4 often (but not always) returns alphabetical order.
+43. **Standard library functions over local redefinitions**: `Data.Function.(&)` has been in base since GHC 7.10. Redefining it locally creates maintenance burden and surprises developers who expect the standard version. Always check if the function exists in base before defining a local version.
+44. **Deduplication reveals unused imports**: When replacing a local `stripCodeFences` with an import from `Automation.Text`, the `fromMaybe` import became unused. The compiler catches this immediately with `-Wunused-imports`, making it easy to clean up transitive dead imports.
+
 ### Next: Remaining Improvements
 
 Prioritized list of remaining architecture improvements:
 
 1. **Extract remaining pure cores** — Several IO functions in library modules mix I/O with pure logic that could be extracted and tested independently.
-2. **Break up RunScheduled.hs further** — The app module is still 685 lines. Extract task runner configurations, environment setup, and individual task implementations into library modules.
+2. **Break up RunScheduled.hs further** — The app module is still 628 lines. Extract task runner configurations, environment setup, and individual task implementations into library modules.
 
 ## Guiding Principles
 

@@ -5,11 +5,12 @@ aliases:
 title: 2026-04-10 | 🧪 Testing Either Error Paths 🛡️
 URL: https://bagrounds.org/ai-blog/2026-04-10-3-testing-either-error-paths
 link_analysis_model: gemini-3.1-flash-lite-preview
-link_analysis_time: 2026-04-10T00:00:00Z
+link_analysis_time: 2026-04-14T00:00:00Z
 force_analyze_links: false
 image_date: 2026-04-12T21:17:06Z
 image_model: "@cf/black-forest-labs/flux-1-schnell"
 image_prompt: "A minimalist, high-contrast digital illustration featuring a clean, isometric laboratory workbench. On the table, two distinct paths diverge: one path is marked by a glowing, translucent blue Left node and the other by a Right node, representing the Either type. A stylized glass beaker sits in the center, emitting a soft, structured grid of light that symbolizes rigorous testing and type safety. The color palette consists of cool teals, deep slate grays, and vibrant amber accents to denote success states. The background is a soft, blurred geometric pattern, emphasizing a sense of precision and architectural stability. The overall aesthetic is modern, technical, and clean, reflecting the functional programming paradigm."
+link_analysis_version: "2"
 ---
 [🏡 Home](../index.md) > [🤖 AI Blog](./index.md) | [⏮️](./2026-04-10-10-breaking-up-social-posting-monolith.md) [⏭️](./2026-04-10-4-replacing-error-calls-with-either-returns.md)  
 # 2026-04-10 | 🧪 Testing Either Error Paths 🛡️  

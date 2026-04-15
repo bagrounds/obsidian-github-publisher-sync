@@ -9,9 +9,10 @@ image_date: 2026-04-12T14:22:24Z
 image_model: "@cf/black-forest-labs/flux-1-schnell"
 image_prompt: A warm, ethereal illustration capturing the transition from rustic construction to a cozy home. In the foreground, raw wooden wall studs are visible, with sunlight streaming through a window to illuminate a plush, inviting bed made with soft linens. A single, stylized chicken silhouette is subtly integrated into the patterns of a quilt or perched on a window sill. Outside the window, a soft-focus view of a sprawling ranch landscape under a vast, star-filled night sky transitions into a gentle, golden sunrise. The color palette blends warm earthy tones - sandy wood, soft whites, and creams - with deep indigo, celestial gold, and hints of soft morning peach. The overall atmosphere is peaceful, intimate, and celebratory, capturing the sense of accomplishment and the quiet magic of a first night in a self-built sanctuary.
 link_analysis_model: gemini-3.1-flash-lite-preview
-link_analysis_time: 2026-04-12T00:00:00Z
+link_analysis_time: 2026-04-14T00:00:00Z
 force_analyze_links: false
 updated: 2026-04-12T17:20:21
+link_analysis_version: "2"
 ---
 [Home](../index.md) > [🐔 Chickie Loo](./index.md) | [⏮️](./2026-04-11-our-first-night-home.md) [⏭️](./2026-04-13-ashes-anniversaries-and-the-rhythm-of-the-ranch.md)  
 # 2026-04-12 | 🐔 🥂 A Night Among the Stars and Studs 🐔  

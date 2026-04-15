@@ -5,11 +5,12 @@ aliases:
 title: 🤱🏼💐 Mother's Day
 URL: https://bagrounds.org/bot-chats/mothers-day
 link_analysis_model: gemini-3.1-flash-lite-preview
-link_analysis_time: 2026-04-09T00:00:00Z
+link_analysis_time: 2026-04-15T00:00:00Z
 force_analyze_links: false
 image_date: 2026-04-12T05:51:00Z
 image_model: "@cf/black-forest-labs/flux-1-schnell"
 image_prompt: A warm, high-angle composition featuring a wooden table scattered with an open, vintage-style book and a steaming cup of tea. Soft, natural sunlight streams across the surface, highlighting the texture of the paper and a small, delicate bouquet of wild carnations and daisies resting beside the book. In the background, a pair of reading glasses lies on an unread stack of diverse hardcovers, suggesting a quiet afternoon of reflection and learning. The color palette is soft, using earthy tones, creams, and gentle floral accents to evoke a sense of comfort, wisdom, and the multifaceted nature of the motherhood experience. The lighting is ethereal and inviting, creating a peaceful, intellectual atmosphere.
+link_analysis_version: "2"
 ---
 [Home](../index.md) > [Bot Chats](./index.md)  
 # 🤱🏼💐 Mother's Day  

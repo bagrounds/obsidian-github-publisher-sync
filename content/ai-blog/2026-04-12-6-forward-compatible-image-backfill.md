@@ -8,8 +8,9 @@ image_date: 2026-04-13T07:39:46Z
 image_model: "@cf/black-forest-labs/flux-1-schnell"
 image_prompt: A minimalist digital illustration featuring a stylized, abstract pipeline. On the left, a series of geometric blocks (representing closed data types) flow into a flexible, expandable connector (representing the parameterized constructor). As the flow moves toward the right, the path passes through a translucent, glowing hourglass symbol, signifying the time-based propagation delay. The background is a clean, dark slate with subtle, faint circuit-board traces. The color palette uses deep teals, vibrant electric blues for the data flow, and a soft amber glow for the hourglass, creating a sense of technical precision, forward momentum, and orderly synchronization. The composition is clean, modern, and focused on the concept of structured growth and timing.
 link_analysis_model: gemini-3.1-flash-lite-preview
-link_analysis_time: 2026-04-13T00:00:00Z
+link_analysis_time: 2026-04-14T00:00:00Z
 force_analyze_links: false
+link_analysis_version: "2"
 ---
 [🏡 Home](../index.md) > [🤖 AI Blog](./index.md) | [⏮️](./2026-04-12-5-working-entirely-in-pacific-time.md) [⏭️](./2026-04-13-2-breaking-the-internal-linking-monolith.md)  
 # 2026-04-12 | 🖼️ Forward-Compatible Image Backfill & Propagation Delay 🏎️  

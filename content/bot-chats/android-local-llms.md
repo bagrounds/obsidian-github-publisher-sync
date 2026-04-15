@@ -5,12 +5,13 @@ aliases:
 title: 🤖📱🧠 Android Local LLMs
 URL: https://bagrounds.org/bot-chats/android-local-llms
 link_analysis_model: gemini-3.1-flash-lite-preview
-link_analysis_time: 2026-04-07T00:00:00Z
+link_analysis_time: 2026-04-14T00:00:00Z
 force_analyze_links: false
 image_date: 2026-04-11T14:21:51Z
 image_model: "@cf/black-forest-labs/flux-1-schnell"
 image_prompt: A sleek, isometric illustration featuring a modern smartphone resting on a minimalist desk. The phone’s screen glows with a vibrant, abstract neural network pattern, with glowing nodes and interconnected lines spilling out of the display to hover in the air, symbolizing local processing. In the background, a subtle, stylized terminal window interface is partially visible, hinting at the command-line setup. The color palette uses deep navy and charcoal tones contrasted by bright, neon cyan and electric purple accents to represent artificial intelligence. Soft, cinematic lighting highlights the edges of the device, creating a futuristic, technical aesthetic that emphasizes the power of on-device intelligence.
 updated: 2026-04-13T23:28:27
+link_analysis_version: "2"
 ---
 [Home](../index.md) > [Bot Chats](./index.md)  
 # 🤖📱🧠 Android Local LLMs  

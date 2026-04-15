@@ -10,8 +10,9 @@ Channel: More Perfect Union
 tags:
 youtube: https://youtu.be/PQOXdtPBGXI
 link_analysis_model: gemini-3.1-flash-lite-preview
-link_analysis_time: 2026-04-12T00:00:00Z
+link_analysis_time: 2026-04-14T00:00:00Z
 force_analyze_links: false
+link_analysis_version: "2"
 ---
 [Home](../index.md) > [Videos](./index.md)  
 # ⬆️💸💥💡⬇️ We Found The Radical Solution To Skyrocketing Grocery Prices  

@@ -1,47 +1,5 @@
 module Automation.BlogImage
-  ( -- * Re-exports from sub-modules for backward compatibility
-    -- ** ContentDirectory
-    ContentDirectory (..)
-  , contentDirectoryToText
-  , contentDirectoryFromText
-  , knownDirectories
-    -- ** TitleExtraction
-  , extractTitle
-    -- ** Eligibility
-  , CandidateEligibility (..)
-  , IneligibilityReason (..)
-  , hasEmbeddedImage
-  , shouldHaveImage
-  , isPostFile
-  , parseDateFromFilename
-  , isDateOnlyTitle
-  , checkCandidateEligibility
-    -- ** Markdown
-  , insertImageEmbed
-  , removeImageEmbed
-  , cleanContentForPrompt
-  , buildImagePrompt
-    -- ** Provider
-  , ImageGenerationResult (..)
-  , ImageProvider (..)
-  , PromptDescriber (..)
-  , ImageProviderConfig (..)
-  , providerName
-  , generateImage
-  , describeContent
-  , describeImageWithGemini
-  , resolveImageProviders
-  , isQuotaError
-  , isDailyQuotaError
-  , isProviderUnavailableError
-  , mimeTypeToExtension
-  , generateWithCloudflare
-  , generateWithHuggingFace
-  , generateWithTogether
-  , generateWithPollinations
-  , generateImageWithGemini
-    -- * Orchestration (defined here)
-  , BackfillConfig (..)
+  ( BackfillConfig (..)
   , BackfillResult (..)
   , processNote
   , backfillImages
@@ -86,46 +44,31 @@ import Automation.BlogImage.TitleExtraction (extractTitle)
 import Automation.BlogImage.ContentDirectory
   ( ContentDirectory (..)
   , contentDirectoryToText
-  , contentDirectoryFromText
-  , knownDirectories
   )
 import Automation.BlogImage.Eligibility
   ( BackfillCandidate (..)
   , CandidateEligibility (..)
-  , IneligibilityReason (..)
   , checkCandidateEligibility
   , hasEmbeddedImage
-  , isDateOnlyTitle
-  , isPostFile
   , parseDateFromFilename
   , shouldHaveImage
   , shouldRegenerateImage
   )
 import Automation.BlogImage.Markdown
   ( buildImagePrompt
-  , cleanContentForPrompt
   , insertImageEmbed
   , removeImageEmbed
   )
 import Automation.BlogImage.Provider
   ( ImageGenerationResult (..)
-  , ImageProvider (..)
   , ImageProviderConfig (..)
-  , PromptDescriber (..)
   , describeContent
-  , describeImageWithGemini
   , generateImage
-  , generateImageWithGemini
-  , generateWithCloudflare
-  , generateWithHuggingFace
-  , generateWithPollinations
-  , generateWithTogether
   , isDailyQuotaError
   , isProviderUnavailableError
   , isQuotaError
   , mimeTypeToExtension
   , providerName
-  , resolveImageProviders
   )
 
 data BackfillConfig = BackfillConfig

@@ -27,8 +27,9 @@ import Automation.AiFiction
   , reflectionNeedsFiction
   )
 import Automation.BlogComments (fetchAllSeriesComments)
-import Automation.BlogImage (BackfillConfig (..), BackfillResult (..), ImageGenerationResult, syncAttachmentsDir, backfillImages, resolveImageProviders, processNote)
+import Automation.BlogImage (BackfillConfig (..), BackfillResult (..), syncAttachmentsDir, backfillImages, processNote)
 import Automation.BlogImage.ContentDirectory (ContentDirectory)
+import Automation.BlogImage.Provider (ImageGenerationResult, resolveImageProviders)
 import Automation.BlogPosts (BlogPost (..), readSeriesPosts)
 import Automation.BlogPrompt
   ( DisplayTitle (..)
@@ -91,7 +92,9 @@ import Automation.Scheduler
   , taskIdFromText
   , taskIdToText
   )
-import Automation.Types (Secret (..), unRelativePath, mkRelativePath, mkTitle)
+import Automation.RelativePath (unRelativePath, mkRelativePath)
+import Automation.Secret (Secret (..))
+import Automation.Title (mkTitle)
 import Automation.Wikilink (buildBackLink)
 import qualified Automation.Context as Context
 import qualified Automation.InternalLinking as IL

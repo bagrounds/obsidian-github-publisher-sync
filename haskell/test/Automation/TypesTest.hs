@@ -11,17 +11,11 @@ import Automation.TestGenerators (testUrl, testTitle, testRelativePath)
 import qualified Automation.Platforms.Bluesky as Bluesky
 import qualified Automation.Platforms.Mastodon as Mastodon
 import qualified Automation.Platforms.Twitter as Twitter
-import Automation.Types
-  ( Secret (..)
-  , PlatformLimits (..)
-  , unUrl
-  , unTitle
-  , unRelativePath
-  , mkSecret
-  , mkUrl
-  , mkTitle
-  , mkRelativePath
-  )
+import Automation.Platform (PlatformLimits (..))
+import Automation.RelativePath (unRelativePath, mkRelativePath)
+import Automation.Secret (Secret (..), mkSecret)
+import Automation.Title (unTitle, mkTitle)
+import Automation.Url (unUrl, mkUrl)
 
 tests :: TestTree
 tests = testGroup "Types"

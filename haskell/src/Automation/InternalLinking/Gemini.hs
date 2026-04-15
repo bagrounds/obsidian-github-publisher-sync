@@ -7,7 +7,9 @@ module Automation.InternalLinking.Gemini
 
 import Automation.InternalLinking.CandidateDiscovery (ContentEntry (..), extractMainTitle)
 import Automation.Json (decode)
-import Automation.Types (Secret (..), unRelativePath, unTitle)
+import Automation.RelativePath (unRelativePath)
+import Automation.Secret (Secret (..))
+import Automation.Title (unTitle)
 import qualified Automation.Gemini as Gemini
 import Control.Concurrent (threadDelay)
 import Data.Maybe (fromMaybe)

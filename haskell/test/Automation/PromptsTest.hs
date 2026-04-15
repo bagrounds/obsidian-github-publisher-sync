@@ -10,7 +10,10 @@ import qualified Test.Tasty.QuickCheck as QC
 import Automation.Prompts
 import Automation.TestGenerators (testUrl, testTitle)
 import qualified Automation.Platforms.Bluesky as Bluesky
-import Automation.Types (ReflectionData (..), PlatformLimits (..), unTitle, unUrl)
+import Automation.Platform (PlatformLimits (..))
+import Automation.Reflection (ReflectionData (..))
+import Automation.Title (unTitle)
+import Automation.Url (unUrl)
 
 tests :: TestTree
 tests = testGroup "Prompts"

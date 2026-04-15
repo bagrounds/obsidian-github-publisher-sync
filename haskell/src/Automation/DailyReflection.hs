@@ -29,7 +29,7 @@ import Automation.Wikilink (formatWikilink)
 import qualified Automation.Platforms.Bluesky as Bluesky
 import qualified Automation.Platforms.Mastodon as Mastodon
 import qualified Automation.Platforms.Twitter as Twitter
-import Automation.Types (updatesSectionHeader)
+import Automation.Platform (updatesSectionHeader)
 
 embedSectionHeaders :: [Text]
 embedSectionHeaders = [Twitter.sectionHeader, Bluesky.sectionHeader, Mastodon.sectionHeader]

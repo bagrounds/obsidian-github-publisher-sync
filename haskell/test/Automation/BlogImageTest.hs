@@ -11,9 +11,46 @@ import Test.Tasty.QuickCheck (testProperty)
 import Test.QuickCheck ((==>), forAll, listOf1, elements)
 
 import Automation.BlogImage
+  ( updateFrontmatterFields
+  , applyField
+  , notePathToImageBaseName
+  , sanitizeForYaml
+  , shouldRegenerateImage
+  , parseDateFromFrontmatter
+  , undatedFileFallback
+  )
+import Automation.BlogImage.ContentDirectory (ContentDirectory (..))
+import Automation.BlogImage.Eligibility
+  ( CandidateEligibility (..)
+  , IneligibilityReason (..)
+  , checkCandidateEligibility
+  , hasEmbeddedImage
+  , isDateOnlyTitle
+  , isPostFile
+  , parseDateFromFilename
+  , shouldHaveImage
+  )
+import Automation.BlogImage.Markdown
+  ( buildImagePrompt
+  , cleanContentForPrompt
+  , insertImageEmbed
+  , removeImageEmbed
+  )
+import Automation.BlogImage.Provider
+  ( ImageProvider (..)
+  , ImageProviderConfig (..)
+  , PromptDescriber (..)
+  , isDailyQuotaError
+  , isProviderUnavailableError
+  , isQuotaError
+  , mimeTypeToExtension
+  , providerName
+  , resolveImageProviders
+  )
+import Automation.BlogImage.TitleExtraction (extractTitle)
 import Automation.Frontmatter (YamlValue (..))
 import qualified Automation.Gemini as Gemini
-import Automation.Types (Secret (..))
+import Automation.Secret (Secret (..))
 
 tests :: TestTree
 tests = testGroup "BlogImage"

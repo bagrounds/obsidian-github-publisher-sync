@@ -28,7 +28,6 @@ library
     Automation.Json
     Automation.Secret
     Automation.Platform
-    Automation.Types
     Automation.Env
     Automation.Scheduler
     Automation.Text

@@ -48,7 +48,7 @@ import System.Directory (doesFileExist)
 import System.FilePath (takeBaseName, takeDirectory, takeFileName, (</>))
 import Text.Regex.TDFA ((=~))
 
-import Automation.BlogImage (hasEmbeddedImage, shouldHaveImage)
+import Automation.BlogImage.Eligibility (hasEmbeddedImage, shouldHaveImage)
 import Automation.BlogImage.ContentDirectory (ContentDirectory (..), contentDirectoryFromText)
 import Automation.Frontmatter (parseFrontmatter)
 import Automation.Platform (Platform (..))

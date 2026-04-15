@@ -17,7 +17,7 @@ import Data.Maybe (fromMaybe)
 import Data.Text (Text)
 import qualified Data.Text as T
 
-import Automation.Types
+import Automation.Platform
   ( updatesSectionHeader
   )
 

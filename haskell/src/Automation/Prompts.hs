@@ -14,7 +14,10 @@ import Data.Text (Text)
 import qualified Data.Text as T
 
 import qualified Automation.Platforms.Bluesky as Bluesky
-import Automation.Types (ReflectionData (..), PlatformLimits (..), unTitle, unUrl)
+import Automation.Platform (PlatformLimits (..))
+import Automation.Reflection (ReflectionData (..))
+import Automation.Title (unTitle)
+import Automation.Url (unUrl)
 
 data PromptPair = PromptPair
   { ppSystem :: Text

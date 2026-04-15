@@ -10,7 +10,9 @@ import qualified Data.Text as T
 import Data.Time (UTCTime (..), fromGregorian, secondsToDiffTime)
 import qualified Test.QuickCheck as QC
 
-import Automation.Types (Url, mkUrl, Title, mkTitle, RelativePath, mkRelativePath)
+import Automation.RelativePath (RelativePath, mkRelativePath)
+import Automation.Title (Title, mkTitle)
+import Automation.Url (Url, mkUrl)
 
 genUTCTime :: QC.Gen UTCTime
 genUTCTime = do

@@ -5,11 +5,12 @@ aliases:
 title: 2026-04-11 | 🔍 Declarative Blog Series Auto-Discovery 🤖
 URL: https://bagrounds.org/ai-blog/2026-04-11-2-declarative-blog-series-auto-discovery
 link_analysis_model: gemini-3.1-flash-lite-preview
-link_analysis_time: 2026-04-11T00:00:00Z
+link_analysis_time: 2026-04-14T00:00:00Z
 force_analyze_links: false
 image_date: 2026-04-12T17:19:17Z
 image_model: "@cf/black-forest-labs/flux-1-schnell"
 image_prompt: A minimalist, clean illustration featuring a glowing, stylized magnifying glass hovering over a stack of neat, translucent JSON file icons. The magnifying glass reveals a complex, tangled web of code lines beneath the stack, which transforms into a streamlined, singular path of light as it passes through the lens. The background is a soft, deep gradient—perhaps a tech-inspired deep navy or charcoal—with subtle, abstract geometric patterns representing a digital grid. The overall aesthetic is modern, sleek, and high-tech, using a color palette of electric blues, soft teals, and crisp white highlights to signify clarity, automation, and the transition from chaotic manual configuration to organized, declarative simplicity.
+link_analysis_version: "2"
 ---
 [🏡 Home](../index.md) > [🤖 AI Blog](./index.md) | [⏮️](./2026-04-11-1-teaching-ai-what-day-it-is.md) [⏭️](./2026-04-11-3-launching-the-noise.md)  
 # 2026-04-11 | 🔍 Declarative Blog Series Auto-Discovery 🤖  

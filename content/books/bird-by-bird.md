@@ -12,9 +12,13 @@ updated: 2026-03-20T14:17:57.557Z
 link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-03-31T00:00:00Z
 force_analyze_links: false
+image_date: 2026-04-14T22:24:29Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: "A minimalist, top-down view of a rustic wooden desk. In the center lies a single, slightly frayed notebook with pages filled with messy, handwritten ink scribbles. A single, delicate bird feather—perhaps from a sparrow or a dove—rests across the open page like a bookmark. Surrounding the notebook are scattered, smaller slips of paper, each containing a single line of text or a small sketch, representing the bird by bird approach. The lighting is soft and warm, reminiscent of early morning sunlight streaming through a window, casting gentle shadows. The overall aesthetic is cozy, organic, and uncluttered, emphasizing the tactile, intimate nature of the writing process. The color palette is composed of warm earth tones: cream, slate gray, soft brown, and muted ochre."
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🐦🕊️ Bird by Bird: Some Instructions on Writing and Life  
+![books-bird-by-bird](../books-bird-by-bird.jpg)  
 [🛒 Bird by Bird: Some Instructions on Writing and Life. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4jyNMKu)  
   
 ## 📚 Book Report: 🐦 Bird by Bird by Anne Lamott  

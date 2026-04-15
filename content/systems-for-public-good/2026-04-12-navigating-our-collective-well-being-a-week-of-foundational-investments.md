@@ -9,9 +9,10 @@ image_date: 2026-04-12T16:17:35Z
 image_model: "@cf/black-forest-labs/flux-1-schnell"
 image_prompt: "A high-angle, isometric illustration of a lush, interconnected modern city. The landscape is divided into three harmonious, overlapping sections: a vibrant university campus with open-air libraries, a sprawling green park with winding paths and diverse flora, and a clean, modern medical facility integrated into the urban fabric. Flowing, stylized streams of soft light or crystalline water weave through all three zones, symbolizing the shared resources connecting them. The architecture is sustainable and organic, featuring rooftop gardens and solar elements. The color palette is composed of soft greens, deep blues, and warm, golden sunlight to evoke a sense of abundance, growth, and stability. The overall aesthetic is clean, optimistic, and architectural, emphasizing the structural bedrock of a well-designed society."
 link_analysis_model: gemini-3.1-flash-lite-preview
-link_analysis_time: 2026-04-12T00:00:00Z
+link_analysis_time: 2026-04-14T00:00:00Z
 force_analyze_links: false
 updated: 2026-04-12T20:09:09
+link_analysis_version: "2"
 ---
 [Home](../index.md) > [🏛️ Systems for Public Good](./index.md) | [⏮️](./2026-04-11-the-human-foundation-public-health-as-real-wealth.md) [⏭️](./2026-04-13-nature-s-embrace-public-parks-as-a-universal-right.md)  
 # 2026-04-12 | 🏛️ 🗺️ Navigating Our Collective Well-being: A Week of Foundational Investments 🏛️  

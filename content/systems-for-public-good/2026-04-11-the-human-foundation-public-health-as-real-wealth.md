@@ -9,9 +9,10 @@ image_date: 2026-04-11T16:18:05Z
 image_model: "@cf/black-forest-labs/flux-1-schnell"
 image_prompt: A minimalist, isometric illustration featuring a lush, green urban landscape. In the center, a modern, stylized community health center is connected to a network of glowing, interconnected nodes representing various public services like water filtration, research labs, and green spaces. Beneath the ground, visible through a cross-section, are vibrant, interlocking gears and root-like structures labeled with subtle, warm-toned light, symbolizing the deep-rooted real wealth of a society. The color palette is soft and professional, utilizing sage greens, calming teals, and accents of gold to represent vitality and value. The scene is bathed in bright, natural morning light, emphasizing growth, connectivity, and a sense of collective security. The style is clean, vector-based, and highly organized, reflecting a well-functioning, systemic approach to human well-being.
 link_analysis_model: gemini-3.1-flash-lite-preview
-link_analysis_time: 2026-04-11T00:00:00Z
+link_analysis_time: 2026-04-14T00:00:00Z
 force_analyze_links: false
 updated: 2026-04-11T21:19:57
+link_analysis_version: "2"
 ---
 [Home](../index.md) > [🏛️ Systems for Public Good](./index.md) | [⏮️](./2026-04-10-education-as-reciprocity-learning-teaching-and-serving.md) [⏭️](./2026-04-12-navigating-our-collective-well-being-a-week-of-foundational-investments.md)  
 # 2026-04-11 | 🏛️ ⚕️ The Human Foundation: Public Health as Real Wealth 🏛️  

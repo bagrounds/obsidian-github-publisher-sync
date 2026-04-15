@@ -5,11 +5,12 @@ aliases:
 title: 🤖♊ Gemini
 URL: https://bagrounds.org/software/gemini
 force_analyze_links: false
-link_analysis_time: 2026-03-22T23:34:08.832Z
+link_analysis_time: 2026-04-14T00:00:00Z
 link_analysis_model: gemini-3.1-flash-lite-preview
 image_date: 2026-04-10T20:21:09Z
 image_model: "@cf/black-forest-labs/flux-1-schnell"
 image_prompt: "A high-tech, abstract composition featuring a glowing, translucent neural network core at the center, radiating soft light. Surrounding this core are floating, geometric icons representing different data modalities: a crisp sheet of paper for text, a vibrant color palette for images, and complex bracketed symbols for code. The background is a deep, ethereal gradient of indigo and violet, suggesting a vast digital space. Thin, luminous data streams weave through the icons, connecting them to the central brain-like structure. The overall aesthetic is clean, minimalist, and futuristic, emphasizing the concepts of intelligence, multimodality, and seamless connectivity through a sophisticated, high-fidelity digital art style."
+link_analysis_version: "2"
 ---
 [Home](../index.md) > [Software](./index.md)  
 # 🤖♊ Gemini  

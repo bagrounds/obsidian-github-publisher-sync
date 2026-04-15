@@ -8,11 +8,12 @@ CTA: ⏳ Discover legacy.
 affiliate link: https://amzn.to/4qauY7F
 updated: 2026-03-21T20:05:17.529Z
 force_analyze_links: false
-link_analysis_time: 2026-03-22T06:01:18.091Z
+link_analysis_time: 2026-04-14T00:00:00Z
 link_analysis_model: gemini-3.1-flash-lite-preview
 image_date: 2026-04-14T05:08:07Z
 image_model: "@cf/black-forest-labs/flux-1-schnell"
 image_prompt: A majestic, intricately detailed arachnid stands prominently on a lush, alien planet. Its multifaceted eyes reflect a deep intelligence, and its carapace shimmers with subtle, bioluminescent patterns that suggest advanced organic technology.
+link_analysis_version: "2"
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🕷️⏳ Children of Time  

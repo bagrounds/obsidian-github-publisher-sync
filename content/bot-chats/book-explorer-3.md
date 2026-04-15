@@ -5,11 +5,12 @@ aliases:
 title: 📖 Book 🧭 Explorer 3
 URL: https://bagrounds.org/bot-chats/book-explorer-3
 link_analysis_model: gemini-3.1-flash-lite-preview
-link_analysis_time: 2026-04-07T00:00:00Z
+link_analysis_time: 2026-04-15T00:00:00Z
 force_analyze_links: false
 image_date: 2026-04-11T17:16:36Z
 image_model: "@cf/black-forest-labs/flux-1-schnell"
 image_prompt: A surreal, wide-angle composition of a vast, ancient library landscape that transitions into a natural world. In the foreground, oversized, leather-bound books are partially buried in soft, golden sand, their pages morphing into rolling desert dunes or lush, green mountain ridges. A single, glowing lantern rests on a weathered wooden table, casting long, dramatic shadows across the scene. Swirling, ethereal ink-like patterns drift through the air like stardust, connecting the books to the horizon. The lighting is warm and cinematic, suggesting the golden hour, with a deep indigo sky filled with shimmering, constellations that resemble constellations of punctuation marks. The overall aesthetic is one of quiet wonder, intellectual depth, and serene, timeless discovery.
+link_analysis_version: "2"
 ---
 [Home](../index.md) > [Bot Chats](./index.md) | [⏮️ 📖 Book 🧭 Explorer 2](./book-explorer-2.md)  
 # 📖 Book 🧭 Explorer 3  

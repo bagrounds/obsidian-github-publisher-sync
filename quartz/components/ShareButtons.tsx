@@ -30,17 +30,19 @@ const ShareButtons: QuartzComponent = ({ cfg, fileData }: QuartzComponentProps) 
       >
         🦋 Bluesky
       </a>
-      <button
+      <a
         class="share-button share-mastodon"
+        href={`https://mastodon.social/share?text=${encodeURIComponent(shareText)}`}
+        target="_blank"
+        rel="noopener noreferrer"
         aria-label="Share on Mastodon"
-        title="Share on Mastodon (Shift+click to change instance)"
-        data-share-text={shareText}
+        title="Share on Mastodon"
       >
         🐘 Mastodon
-      </button>
+      </a>
       <a
         class="share-button share-twitter"
-        href={`https://twitter.com/intent/tweet?text=${encodeURIComponent(title)}&url=${encodeURIComponent(pageUrl)}`}
+        href={`https://twitter.com/intent/tweet?text=${encodeURIComponent(shareText)}`}
         target="_blank"
         rel="noopener noreferrer"
         aria-label="Share on Twitter"
@@ -56,6 +58,28 @@ const ShareButtons: QuartzComponent = ({ cfg, fileData }: QuartzComponentProps) 
       >
         💬 Text
       </a>
+      <a
+        class="share-button share-email"
+        href={`mailto:?subject=${encodeURIComponent(title)}&body=${encodeURIComponent(shareText)}`}
+        aria-label="Share via email"
+        title="Share via email"
+      >
+        📧 Email
+      </a>
+      <button
+        class="share-button share-copy-link"
+        aria-label="Copy link to clipboard"
+        title="Copy link to clipboard"
+      >
+        🔗 Copy Link
+      </button>
+      <button
+        class="share-button share-native"
+        aria-label="Share via device share menu"
+        title="Share via device share menu"
+      >
+        📲 Share
+      </button>
     </div>
   )
 }

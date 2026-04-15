@@ -2,7 +2,7 @@
 
 ## Current State Summary
 
-The Haskell codebase was ported from TypeScript and inherited several patterns that don't leverage Haskell's strengths for safety and correctness. The code works well and has good test coverage (1700+ tests), but can be improved to better prevent accidental breakage and improve modularity.
+The Haskell codebase was ported from TypeScript and inherited several patterns that don't leverage Haskell's strengths for safety and correctness. The code works well and has good test coverage (1758+ tests), but can be improved to better prevent accidental breakage and improve modularity.
 
 ### Key Issues Identified
 
@@ -238,12 +238,27 @@ Each error migration delivered with test coverage:
 36. **No re-exports**: Each module exports only what it defines. Consumers import directly from the defining module. Re-exports add complexity and obscure where functionality is defined. When breaking up a module, update all consumers to import from the new sub-modules instead of creating a re-export facade.
 37. **No abbreviation prefixes on record fields**: Use `relativePath`, `title`, `plainTitle` instead of `ceRelativePath`, `ceTitle`, `cePlainTitle`. The module qualifier already provides namespace disambiguation (e.g., `CandidateDiscovery.relativePath`). Abbreviation prefixes violate the no-abbreviations rule and add visual noise.
 
+### Completed: Remove Re-Export Anti-Pattern + Tests
+
+**Goal**: Eliminate all re-export modules and facades, enforcing the principle that every module exports only what it defines. Consumers import directly from the defining module.
+
+- [x] Delete `Automation.Types` — the original re-export hub that re-exported `Secret`, `Url`, `Title`, `RelativePath`, `PlatformLimits`, `Platform`, `updatesSectionHeader`, `ReflectionData`, `EmbedSection`, `EnvironmentConfig`, `OgMetadata`, and `ObsidianCredentials` from 11 different defining modules. All 17 consumers updated to import from the actual defining module. Module removed from `automation.cabal`.
+- [x] Remove re-exports from `Automation.BlogImage` — previously re-exported all symbols from `ContentDirectory`, `TitleExtraction`, `Eligibility`, `Markdown`, and `Provider` sub-modules (42 re-exported symbols). Now exports only the 13 symbols it defines locally (`BackfillConfig`, `BackfillResult`, `processNote`, `backfillImages`, `syncAttachmentsDir`, `updateFrontmatterFields`, `applyField`, `notePathToImageBaseName`, `resolveUniqueImageName`, `sanitizeForYaml`, `shouldRegenerateImage`, `parseDateFromFrontmatter`, `undatedFileFallback`). Consumers updated: `RunScheduled.hs` imports `ImageGenerationResult`/`resolveImageProviders` from `BlogImage.Provider`; `ContentDiscovery.hs` imports `hasEmbeddedImage`/`shouldHaveImage` from `BlogImage.Eligibility`; `BlogImageTest.hs` imports from all five sub-modules directly.
+- [x] Clean up BlogImage.hs internal imports — removed 20 unused sub-module imports that were previously needed only for re-export (`contentDirectoryFromText`, `knownDirectories`, `IneligibilityReason`, `isDateOnlyTitle`, `isPostFile`, `cleanContentForPrompt`, `ImageProvider`, `PromptDescriber`, `describeImageWithGemini`, `generateImageWithGemini`, `generateWithCloudflare`, `generateWithHuggingFace`, `generateWithPollinations`, `generateWithTogether`, `resolveImageProviders`).
+- [x] Fix duplicate imports flagged by hlint — merged `Platform` imports in `DailyUpdates.hs`, `Env` and `OgMetadata` imports in `SocialPosting.hs`.
+- [x] All 1758 tests pass unchanged. Zero hlint hints.
+
+**Learnings from removing re-exports:**
+38. **Re-export hubs accumulate coupling**: `Automation.Types` started as a convenience but grew to re-export from 11 modules, creating a false dependency — every consumer appeared to depend on `Types` when it actually depended on `Secret`, `Platform`, `Url`, etc. Deleting the hub and updating imports reveals the true dependency graph, which is sparser and more focused.
+39. **Re-exports hide unused imports**: When `BlogImage.hs` re-exported 42 symbols from 5 sub-modules, it had to import all of them regardless of whether `BlogImage.hs` itself used them. Removing re-exports immediately revealed 20 unused imports — dead coupling that the compiler couldn't previously detect because the symbols were "used" by re-export.
+40. **Merge duplicate imports after splitting re-exports**: When replacing `import Automation.Types (EnvironmentConfig (..)` and a pre-existing `import Automation.Env (validateEnvironment)`, the result is two imports from `Automation.Env`. Hlint catches these; always merge them in the same PR to keep the import list clean.
+
 ### Next: Remaining Improvements
 
 Prioritized list of remaining architecture improvements:
 
 1. **Extract remaining pure cores** — Several IO functions in library modules mix I/O with pure logic that could be extracted and tested independently.
-2. **Break up RunScheduled.hs further** — The app module is still 665 lines. Extract task runner configurations, environment setup, and individual task implementations into library modules.
+2. **Break up RunScheduled.hs further** — The app module is still 685 lines. Extract task runner configurations, environment setup, and individual task implementations into library modules.
 
 ## Guiding Principles
 

@@ -10,8 +10,9 @@ image_date: 2026-04-11T11:17:20Z
 image_model: "@cf/black-forest-labs/flux-1-schnell"
 image_prompt: A sleek, high-angle shot of a modern, minimalist living room featuring polished hardwood floors. The iRobot Roomba sits in the foreground, glowing with a soft, ambient light, docked at its compact AutoWash station. A subtle, luminous holographic laser grid—representing the LiDAR mapping—projects gently across the floor, highlighting the path the robot has just cleaned. The scene is bathed in warm, natural morning sunlight streaming through a nearby window, emphasizing the contrast between the clean, pristine floor and the high-tech, sophisticated design of the device. The composition is clean and uncluttered, focusing on the seamless integration of technology into a tranquil, contemporary home environment.
 link_analysis_model: gemini-3.1-flash-lite-preview
-link_analysis_time: 2026-04-11T00:00:00Z
+link_analysis_time: 2026-04-14T00:00:00Z
 force_analyze_links: false
+link_analysis_version: "2"
 ---
 [Home](../index.md) > [Products](./index.md)  
 # 🤖🧹🧼🗺️ iRobot Roomba Plus 505 Combo Robot Vacuum & Mop with AutoWash Dock - Extending Spinning Mop Pads, Self-Empties, Pad Wash & Heated Drying, Self-cleaning, Recognizes & Avoids Obstacles, LiDAR Navigation  

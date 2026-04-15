@@ -42,6 +42,7 @@ import qualified Automation.VaultSyncTest
 import qualified Automation.TaskRunnerTest
 import qualified Automation.PacificTimeTest
 import qualified Automation.BlogSeriesDiscoveryTest
+import qualified Automation.WikilinkTest
 import qualified Automation.BlogImage.ContentDirectoryTest
 import qualified Automation.BlogImage.TitleExtractionTest
 import qualified Automation.BlogImage.EligibilityTest
@@ -95,6 +96,7 @@ main = defaultMain $ testGroup "Automation"
   , Automation.TaskRunnerTest.tests
   , Automation.PacificTimeTest.tests
   , Automation.BlogSeriesDiscoveryTest.tests
+  , Automation.WikilinkTest.tests
   , Automation.BlogImage.ContentDirectoryTest.tests
   , Automation.BlogImage.TitleExtractionTest.tests
   , Automation.BlogImage.EligibilityTest.tests

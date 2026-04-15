@@ -21,11 +21,11 @@ import Automation.BlogComments (BlogComment)
 import Automation.BlogPosts (BlogPost (..), readAgentsMd, readSeriesPosts)
 import Automation.BlogPrompt
   ( BlogContext (..)
-  , buildForwardLink
   , filterCommentsAfterLastPost
   )
 import Automation.BlogSeriesConfig (BlogSeriesConfig (..), lookupSeriesIn)
 import Automation.Frontmatter (quoteYamlValue)
+import Automation.Wikilink (buildForwardLink)
 import Data.Map.Strict (Map)
 import Data.Time (Day)
 

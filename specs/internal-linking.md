@@ -99,7 +99,7 @@
 | `countWords(text)` | 📏 Count words splitting on whitespace and hyphens |
 | `extractMainTitle(plainTitle)` | 📖 Extract main title before subtitle separator (`: `) |
 | `escapeRegex(text)` | 🛡️ Escape special regex characters |
-| `formatWikilink(entry)` | 🔗 Format ContentEntry as wikilink |
+| `formatWikilink(entry)` | 🔗 Format ContentEntry as wikilink (delegates to shared `Automation.Wikilink.formatWikilink`) |
 | `extractContext(content, position, length, radius)` | 📋 Extract surrounding context for a match position |
 | `parseFrontmatter(content)` | 📄 Parse key-value frontmatter pairs |
 | `extractLinkedPaths(body, notePath, contentDir)` | 🔗 Extract all linked paths from wikilinks and markdown links |
@@ -149,7 +149,7 @@
 🔬 Tests across `haskell/test/Automation/InternalLinkingTest.hs` and `haskell/test/Automation/InternalLinking/` covering:
 - 🧹 `stripEmojis`: emoji removal, preservation of non-emoji text, edge cases
 - 🛡️ `escapeRegex`: special character escaping
-- 🔗 `formatWikilink`: wikilink formatting from content entries
+- 🔗 `formatContentEntryWikilink`: wikilink formatting from content entries (delegates to shared `Automation.Wikilink.formatWikilink`)
 - 📋 `extractContext`: context window extraction around match positions
 - 📖 `extractMainTitle`: colon-space separator, dash separator, single-word main titles, minimum length requirement, edge cases
 - 📄 `parseFrontmatter`: key-value parsing, quoted values, missing markers

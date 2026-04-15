@@ -85,10 +85,10 @@ tags:
 
 | 🔧 Function | 📝 Purpose |
 |---|---|
-| `buildReflectionContent(date, previousDate?)` | 📄 Generates full reflection markdown from template |
-| `buildSeriesSectionHeading(series)` | 📌 Creates `## [[series/index\|icon name]]` heading |
-| `buildPostLink(seriesId, filenameNoExt, title)` | 🔗 Creates `- [[series/file\|title]]` link |
-| `addForwardLink(content, targetDate)` | ⏭️ Adds forward navigation link to previous day |
+| `buildReflectionContent(date, previousDate?)` | 📄 Generates full reflection markdown from template (uses shared `formatWikilink`) |
+| `buildSeriesSectionHeading(series)` | 📌 Creates `## [[series/index\|icon name]]` heading (uses shared `formatWikilink`) |
+| `buildPostLink(seriesId, filenameNoExt, title)` | 🔗 Creates `- [[series/file\|title]]` link (uses shared `formatWikilink`) |
+| `addForwardLink(content, targetDate)` | ⏭️ Adds forward navigation link to previous day (uses shared `formatWikilink`) |
 | `insertPostLink(content, series, filename, title)` | 📎 Inserts post link, creating section if needed |
 
 ### 💾 I/O Functions
@@ -129,7 +129,7 @@ tags:
 
 🔑 When `OBSIDIAN_AUTH_TOKEN` and `OBSIDIAN_VAULT_NAME` are set, the script:
 1. 📥 Pulls the vault via `syncObsidianVault`
-2. 📝 Calls `updateDailyReflection` with the known filename and title
+2. 📝 Calls `updateDailyReflection` with the known filename and **full display title** (including date and series icon emojis, e.g., "2026-04-14 | 📰 My Post 📰")
 3. 📤 Pushes changes via `pushObsidianVault` (only if reflection was modified)
 
 🚫 When credentials are absent (local development, dry runs), the reflection update is silently skipped.

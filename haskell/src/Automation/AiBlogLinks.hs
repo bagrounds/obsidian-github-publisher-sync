@@ -2,8 +2,6 @@ module Automation.AiBlogLinks
   ( NavLinkResult (..)
   , aiBlogNavPrefix
   , aiBlogConfig
-  , buildAiBlogBackLink
-  , buildAiBlogForwardLink
   , buildNavLine
   , updateNavLinks
   , navLinksMatch
@@ -26,6 +24,8 @@ import System.FilePath ((</>))
 
 import Automation.BlogSeriesConfig (BlogSeriesConfig (..))
 import Automation.Frontmatter (parseFrontmatter)
+import Automation.Title (Title, mkTitle)
+import Automation.Wikilink (buildBackLink, buildForwardLink)
 
 aiBlogConfig :: BlogSeriesConfig
 aiBlogConfig = BlogSeriesConfig
@@ -42,22 +42,11 @@ aiBlogConfig = BlogSeriesConfig
 aiBlogNavPrefix :: Text
 aiBlogNavPrefix = "[[index|🏡 Home]] > [[/ai-blog/index|🤖 AI Blog]]"
 
-buildAiBlogBackLink :: Text -> Text
-buildAiBlogBackLink prevFilename =
-  "[[ai-blog/" <> stripMdExt prevFilename <> "|⏮️]]"
-
-buildAiBlogForwardLink :: Text -> Text
-buildAiBlogForwardLink nextFilename =
-  "[[ai-blog/" <> stripMdExt nextFilename <> "|⏭️]]"
-
-stripMdExt :: Text -> Text
-stripMdExt t = fromMaybe t (T.stripSuffix ".md" t)
-
 buildNavLine :: Maybe Text -> Maybe Text -> Text
 buildNavLine prevFilename nextFilename =
   let links = catMaybes
-        [ fmap buildAiBlogBackLink prevFilename
-        , fmap buildAiBlogForwardLink nextFilename
+        [ fmap (buildBackLink aiBlogConfig) prevFilename
+        , fmap (buildForwardLink aiBlogConfig) nextFilename
         ]
   in case links of
     [] -> aiBlogNavPrefix
@@ -148,17 +137,19 @@ extractAiBlogTitle aiBlogDir filename = do
       let (fm, _) = parseFrontmatter content
       pure $ case Map.lookup "title" fm of
         Just title -> title
-        Nothing    -> stripMdExt filename
-    else pure (stripMdExt filename)
+        Nothing    -> fromMaybe filename (T.stripSuffix ".md" filename)
+    else pure (fromMaybe filename (T.stripSuffix ".md" filename))
 
-buildReflectionLinks :: FilePath -> [NavLinkResult] -> IO [(Text, Text, Text)]
+buildReflectionLinks :: FilePath -> [NavLinkResult] -> IO [(Text, Title, Text)]
 buildReflectionLinks aiBlogDir results = do
   entries <- traverse (buildEntry aiBlogDir) results
-  pure $ filter (\(_, _, d) -> not (T.null d)) entries
+  pure $ catMaybes entries
 
-buildEntry :: FilePath -> NavLinkResult -> IO (Text, Text, Text)
+buildEntry :: FilePath -> NavLinkResult -> IO (Maybe (Text, Title, Text))
 buildEntry aiBlogDir result = do
-  title <- extractAiBlogTitle aiBlogDir (nlrFilename result)
+  titleText <- extractAiBlogTitle aiBlogDir (nlrFilename result)
   let relPath = "ai-blog/" <> nlrFilename result
-      date = fromMaybe "" (extractPostDate (nlrFilename result))
-  pure (relPath, title, date)
+  pure $ do
+    date <- extractPostDate (nlrFilename result)
+    validTitle <- either (const Nothing) Just (mkTitle titleText)
+    Just (relPath, validTitle, date)

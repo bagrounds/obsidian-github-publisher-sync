@@ -13,7 +13,7 @@ import Automation.InternalLinking.CandidateDiscovery
   , LinkCandidate (..)
   , linkableDirs
   , escapeRegex
-  , formatWikilink
+  , formatContentEntryWikilink
   , extractContext
   , extractMainTitle
   , contentAlreadyLinksTo
@@ -36,7 +36,7 @@ tests = testGroup "InternalLinking"
   [ constantsTests
   , stripEmojisTests
   , escapeRegexTests
-  , formatWikilinkTests
+  , formatContentEntryWikilinkTests
   , extractContextTests
   , extractMainTitleTests
   , normalizeFilePathTests
@@ -91,14 +91,14 @@ escapeRegexTests = testGroup "escapeRegex"
       assertEqual "" "hello" (escapeRegex "hello")
   ]
 
-formatWikilinkTests :: TestTree
-formatWikilinkTests = testGroup "formatWikilink"
+formatContentEntryWikilinkTests :: TestTree
+formatContentEntryWikilinkTests = testGroup "formatContentEntryWikilink"
   [ testCase "formats basic wikilink" $
       let entry = ContentEntry (testRelativePath "books/test.md") (testTitle "📖 Test Book") (testTitle "Test Book")
-      in assertEqual "" "[[books/test|📖 Test Book]]" (formatWikilink entry)
+      in assertEqual "" "[[books/test|📖 Test Book]]" (formatContentEntryWikilink entry)
   , testCase "strips .md from path" $
       let entry = ContentEntry (testRelativePath "books/foo.md") (testTitle "Foo") (testTitle "Foo")
-      in assertBool "no .md in link" (not (T.isInfixOf ".md" (formatWikilink entry)))
+      in assertBool "no .md in link" (not (T.isInfixOf ".md" (formatContentEntryWikilink entry)))
   ]
 
 extractContextTests :: TestTree
@@ -529,11 +529,11 @@ propertyTests = testGroup "properties"
   , testProperty "stripEmojis never increases length beyond original" $ \s ->
       let txt = T.pack (s :: String)
       in T.length (stripEmojis txt) <= T.length txt
-  , testProperty "formatWikilink contains entry title" $ \s ->
+  , testProperty "formatContentEntryWikilink contains entry title" $ \s ->
       let title = T.pack (s :: String)
       in not (T.null (T.strip title)) QC.==>
         let entry = ContentEntry (testRelativePath "books/test.md") (testTitle title) (testTitle title)
-            wl = formatWikilink entry
+            wl = formatContentEntryWikilink entry
         in T.isInfixOf title wl
   , testProperty "applyReplacements with all-false validations returns original" $ \s ->
       let content = T.pack (s :: String)

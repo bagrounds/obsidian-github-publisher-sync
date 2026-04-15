@@ -12,13 +12,12 @@ import System.IO.Temp (withSystemTempDirectory)
 
 import Automation.AiBlogLinks
 import Automation.BlogSeriesConfig (BlogSeriesConfig (..))
+import Automation.Title (unTitle)
 
 tests :: TestTree
 tests = testGroup "AiBlogLinks"
   [ constantTests
   , aiBlogConfigTests
-  , buildAiBlogBackLinkTests
-  , buildAiBlogForwardLinkTests
   , buildNavLineTests
   , updateNavLinksTests
   , navLinksMatchTests
@@ -51,32 +50,6 @@ aiBlogConfigTests = testGroup "aiBlogConfig"
       bscIcon aiBlogConfig @?= "🤖"
   , testCase "has AI Blog as name" $
       bscName aiBlogConfig @?= "AI Blog"
-  ]
-
---------------------------------------------------------------------------------
--- buildAiBlogBackLink
---------------------------------------------------------------------------------
-
-buildAiBlogBackLinkTests :: TestTree
-buildAiBlogBackLinkTests = testGroup "buildAiBlogBackLink"
-  [ testCase "builds back link with .md extension stripped" $
-      buildAiBlogBackLink "2026-03-28-1-my-post.md" @?= "[[ai-blog/2026-03-28-1-my-post|⏮️]]"
-  , testCase "handles filename without .md" $
-      buildAiBlogBackLink "2026-03-28-1-my-post" @?= "[[ai-blog/2026-03-28-1-my-post|⏮️]]"
-  , testCase "handles empty filename" $
-      buildAiBlogBackLink "" @?= "[[ai-blog/|⏮️]]"
-  ]
-
---------------------------------------------------------------------------------
--- buildAiBlogForwardLink
---------------------------------------------------------------------------------
-
-buildAiBlogForwardLinkTests :: TestTree
-buildAiBlogForwardLinkTests = testGroup "buildAiBlogForwardLink"
-  [ testCase "builds forward link with .md stripped" $
-      buildAiBlogForwardLink "2026-04-01-1-next-post.md" @?= "[[ai-blog/2026-04-01-1-next-post|⏭️]]"
-  , testCase "handles filename without .md" $
-      buildAiBlogForwardLink "2026-04-01-1-next-post" @?= "[[ai-blog/2026-04-01-1-next-post|⏭️]]"
   ]
 
 --------------------------------------------------------------------------------
@@ -209,7 +182,7 @@ buildReflectionLinksTests = testGroup "buildReflectionLinks"
         case links of
           ((relPath, title, date):_) -> do
             relPath @?= "ai-blog/2026-04-03-1-my-post.md"
-            title @?= "My Post Title"
+            unTitle title @?= "My Post Title"
             date @?= "2026-04-03"
           [] -> assertBool "should have at least one link" False
   , testCase "includes both modified and unmodified posts" $

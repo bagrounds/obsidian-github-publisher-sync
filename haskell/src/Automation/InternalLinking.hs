@@ -108,7 +108,7 @@ applyReplacements content candidates validations =
           len    = T.length (CD.matchedText candidate)
           before = T.take pos acc
           after  = T.drop (pos + len) acc
-          wl     = CD.formatWikilink (CD.entry candidate)
+          wl     = CD.formatContentEntryWikilink (CD.entry candidate)
       in before <> wl <> after
 
 

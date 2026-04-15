@@ -9,9 +9,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_version: "2"
 link_analysis_time: 2026-04-15T00:00:00Z
 force_analyze_links: false
+image_date: 2026-04-15T19:43:00Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: "A dynamic, stylized globe at the center, rendered with subtle topographical lines. Surrounding and weaving through the globe are translucent, undulating ribbons of energy and light, representing global currents. Within these flowing ribbons, minimalist, abstract icons subtly emerge and recede: a peace dove, a rising graph, a swirling DNA helix, a stylized storm cloud, and a faint human silhouette. Some ribbons appear smooth and bright, while others are more turbulent with darker hues. The overall composition conveys a sense of constant movement, interconnectedness, and the complex, unfolding narratives of the world. Colors blend deep blues, greens, and purples with bright, energetic accents."
 ---
 [Home](../index.md) > [📰 The Noise](./index.md) | [⏮️](./2026-04-14-global-currents-shifting-sands.md)  
 # 2026-04-15 | 📰 🌪️ Global Currents, Unfolding Narratives 📰  
+![the-noise-2026-04-15-global-currents-unfolding-narratives](../the-noise-2026-04-15-global-currents-unfolding-narratives.jpg)  
   
 # 🌪️ Global Currents, Unfolding Narratives 📰  
   

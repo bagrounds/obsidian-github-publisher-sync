@@ -5,11 +5,12 @@ aliases:
 title: 👨‍👧‍👦👔🎁 Fathers Day
 URL: https://bagrounds.org/bot-chats/fathers-day
 link_analysis_model: gemini-3.1-flash-lite-preview
-link_analysis_time: 2026-04-08T00:00:00Z
+link_analysis_time: 2026-04-15T00:00:00Z
 force_analyze_links: false
 image_date: 2026-04-11T22:15:59Z
 image_model: "@cf/black-forest-labs/flux-1-schnell"
 image_prompt: A warm, nostalgic illustration featuring a wooden desk bathed in soft, golden morning light. On the desk sits a vintage fountain pen resting on an open, leather-bound journal, symbolizing the legacy of storytelling. Beside it lies a neatly folded silk necktie and a small, wrapped gift box tied with a simple ribbon. In the background, a soft-focus silhouette of a father and child walking through a sun-drenched park creates a sense of connection and history. The color palette uses deep navy, warm mahogany, and soft cream tones to evoke a timeless, sentimental atmosphere. The composition is clean and balanced, emphasizing the quiet, meaningful bond between generations without any clutter.
+link_analysis_version: "2"
 ---
 [Home](../index.md) > [Bot Chats](./index.md)  
 # 👨‍👧‍👦👔🎁 Fathers Day  

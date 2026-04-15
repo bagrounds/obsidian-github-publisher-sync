@@ -7,11 +7,12 @@ share: true
 affiliate link: https://amzn.to/4mKYZKl
 CTA: 🦺 Secure adventures.
 link_analysis_model: gemini-3.1-flash-lite-preview
-link_analysis_time: 2026-04-03T00:00:00Z
+link_analysis_time: 2026-04-14T00:00:00Z
 force_analyze_links: false
 image_date: 2026-04-11T12:14:14Z
 image_model: "@cf/black-forest-labs/flux-1-schnell"
 image_prompt: A side-profile, cinematic shot of a sleek, modern jogging stroller gliding along a sun-drenched, paved path in a vibrant city park. The stroller, featuring large, rugged air-filled tires and a streamlined frame, is captured in motion, blurring the background slightly to emphasize speed and agility. Sunlight filters through the green canopy of nearby trees, creating soft, dappled light on the path. In the soft-focus distance, the silhouette of a modern city skyline rises against a clear sky, bridging the gap between urban life and outdoor adventure. The color palette is composed of cool blues, energetic teals, and earthy greens, highlighting the stroller’s premium design and active, outdoor functionality. The image conveys a sense of freedom, effortless movement, and high-quality engineering.
+link_analysis_version: "2"
 ---
 [Home](../index.md) > [Products](./index.md)  
 # 👶🏃🌆 Thule Urban Glide 3  

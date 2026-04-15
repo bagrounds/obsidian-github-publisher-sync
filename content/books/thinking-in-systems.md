@@ -10,8 +10,9 @@ affiliate link: https://amzn.to/4jxdezW
 CTA: 🌐 Understand interactions.
 updated: 2026-03-11T12:12:18.912Z
 link_analysis_model: gemini-3.1-flash-lite-preview
-link_analysis_time: 2026-03-31T00:00:00Z
+link_analysis_time: 2026-04-15T00:00:00Z
 force_analyze_links: false
+link_analysis_version: "2"
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🌐🔗🧠📖 Thinking in Systems: A Primer  

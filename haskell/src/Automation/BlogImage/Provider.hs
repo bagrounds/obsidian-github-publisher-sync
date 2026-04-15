@@ -376,11 +376,11 @@ describeImageWithGemini
   :: Manager -> Text -> Gemini.Model -> Text -> IO (Either Text Text)
 describeImageWithGemini manager apiKey model content = do
   let req = Gemini.Request
-        { Gemini.grPrompt = content
-        , Gemini.grSystemInstruction = Just imageDescriptionSystemPrompt
-        , Gemini.grModel = model
-        , Gemini.grApiKey = Secret apiKey
-        , Gemini.grGenerationConfig = Gemini.defaultGenerationConfig
+        { Gemini.requestPrompt = content
+        , Gemini.requestSystemInstruction = Just imageDescriptionSystemPrompt
+        , Gemini.requestModel = model
+        , Gemini.requestApiKey = Secret apiKey
+        , Gemini.requestGenerationConfig = Gemini.defaultGenerationConfig
         }
   result <- Gemini.generateContent manager req
   case result of
@@ -388,7 +388,7 @@ describeImageWithGemini manager apiKey model content = do
     Left _err  -> do
       putStrLn $ "⚠️ " <> T.unpack (Gemini.modelToText model) <> " failed for image description, trying fallback..."
       let fallbackModel = geminiModelFallback model
-      let fallbackReq = req { Gemini.grModel = fallbackModel }
+      let fallbackReq = req { Gemini.requestModel = fallbackModel }
       fallbackResult <- Gemini.generateContent manager fallbackReq
       case fallbackResult of
         Right response -> pure $ Right (Gemini.responseText response)

@@ -67,11 +67,11 @@ identifyBooksWithGemini manager apiKey model fileBody bookEntries = do
 retryLoop :: Manager -> Secret -> Gemini.Model -> Text -> Int -> Int -> IO (Either Text [Text])
 retryLoop manager apiKey model prompt attempt backoff = do
   result <- Gemini.generateContent manager Gemini.Request
-    { Gemini.grPrompt             = prompt
-    , Gemini.grSystemInstruction  = Nothing
-    , Gemini.grModel              = model
-    , Gemini.grApiKey             = apiKey
-    , Gemini.grGenerationConfig   = Gemini.GenerationConfig
+    { Gemini.requestPrompt             = prompt
+    , Gemini.requestSystemInstruction  = Nothing
+    , Gemini.requestModel              = model
+    , Gemini.requestApiKey             = apiKey
+    , Gemini.requestGenerationConfig   = Gemini.GenerationConfig
         { Gemini.gcTemperature     = 0.0
         , Gemini.gcMaxOutputTokens = 1024
         }

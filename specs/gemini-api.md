@@ -21,7 +21,7 @@
 
 - 🧠 Caller provides prompt text, optional system instruction, model chain, and optional grounding config
 - 📡 generateContentWithFallback tries each model in order
-- 📋 When a system instruction is provided, it is sent via the Gemini API `system_instruction` field rather than concatenated with user content
+- 📋 When a system instruction is provided, `generateContent` checks `supportsSystemInstruction` for the current model: Gemini models receive the system instruction via the API `system_instruction` field; Gemma models receive it concatenated into the user prompt for compatibility
 - 🔄 Each model attempt uses withRetry for transient errors (429, 502, 503, 504)
 - 🌐 If grounding fails with quota error, retries without grounding on same model
 - ⏭️ On definitive failure, moves to next model in chain

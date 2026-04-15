@@ -38,7 +38,7 @@
    ├─ 💬 buildCommentsSection() → priority-flagged comments
    └─ 📅 recapInstructions() → weekly/monthly/quarterly/annual recap rules
          ↓
-🤖 Gemini API call (system_instruction + contents) → raw generated post
+🤖 Gemini API call (model-aware: system_instruction for Gemini models, concatenated for Gemma) → raw generated post
          ↓
 🛡️ containsSystemPrompt(systemPrompt, raw) → reject if echo detected
          ↓

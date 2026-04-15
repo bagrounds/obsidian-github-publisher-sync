@@ -5,12 +5,13 @@ aliases:
 title: 🤱🏼📚💡 Parenting Resources Recommendations
 URL: https://bagrounds.org/bot-chats/parenting-resources-recommendations
 link_analysis_model: gemini-3.1-flash-lite-preview
-link_analysis_time: 2026-04-10T00:00:00Z
+link_analysis_time: 2026-04-14T00:00:00Z
 force_analyze_links: false
 image_date: 2026-04-12T07:37:48Z
 image_model: "@cf/black-forest-labs/flux-1-schnell"
 image_prompt: A warm, minimalist illustration featuring a cozy, modern nursery corner bathed in soft, natural morning light. In the center, an open book rests on a comfortable armchair, with a small, glowing bedside lamp nearby casting a gentle, welcoming aura. A few neat stacks of books and a small, stylized sprout in a ceramic pot sit on a nearby wooden shelf, symbolizing growth and knowledge. The color palette consists of soft pastels—creams, sage greens, and warm terracottas—evoking a sense of calm, organization, and nurturing. The overall atmosphere is peaceful and scholarly, representing the blend of evidence-based research and the tender, quiet moments of early parenthood.
 updated: 2026-04-12T07:38:55
+link_analysis_version: "2"
 ---
 [Home](../index.md) > [Bot Chats](./index.md)  
 # 🤱🏼📚💡 Parenting Resources Recommendations  

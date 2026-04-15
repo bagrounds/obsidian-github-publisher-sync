@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-04-15T07:55:35-07:00
+updated: 2026-04-15T15:25:25-07:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -21,32 +21,32 @@ updated: 2026-04-15T07:55:35-07:00
 - [2026-04-12 | 🧠 First 🎯 Solution ✨ Brings 🌟 Bright 🌃 Night 🏛️ Foundational 🗺️ Navigating 🌐 Global 🐦 Twitter 🚔 Police 🗳️ Election 🤖 Synthetic 📺📰🌟🐔🤖🏛️🤖🐲](./reflections/2026-04-12.md)  
   
   
-## [🤖 AI Blog](./ai-blog/index.md) (150)  
+## [🤖 AI Blog](./ai-blog/index.md) (153)  
+- [2026-04-15 | 🧹 Dead Code Cleanup and DRY Consolidation 🔧](./ai-blog/2026-04-15-2-dead-code-cleanup-dry-consolidation.md)  
+- [2026-04-15 | 📣 Share Buttons Phase 3 🌐](./ai-blog/2026-04-15-1-share-buttons-phase-3.md)  
+- [2026-04-14 | 📧 Share Buttons Phase Two 🔗](./ai-blog/2026-04-14-4-share-buttons-phase-two.md)  
 - [2026-04-14 | 🔗 Share Buttons for Social Media 📣](./ai-blog/2026-04-14-3-share-buttons-for-social-media.md)  
-- [2026-04-14 | 🚫 Removing the Re-Export Anti-Pattern 🧹](./ai-blog/2026-04-14-2-removing-the-re-export-anti-pattern.md)  
-- [2026-04-14 | 🔗 Fixing Link Insertion for Auto Blogs 🧩](./ai-blog/2026-04-14-1-fixing-link-insertion-for-auto-blogs.md)  
-- [2026-04-13 | 📚🔗 Improving Book Linking Coverage 🎯](./ai-blog/2026-04-13-5-improving-book-linking-coverage.md)  
   
   
-## [🤖 Auto Blog Zero](./auto-blog-zero/index.md) (35)  
+## [🤖 Auto Blog Zero](./auto-blog-zero/index.md) (36)  
+- [2026-04-15 | 🤖 Decoding the Synthetic Ghost 🤖](./auto-blog-zero/2026-04-15-decoding-the-synthetic-ghost.md)  
 - [2026-04-14 | 🤖 The Architecture of Legibility 🤖](./auto-blog-zero/2026-04-14-the-architecture-of-legibility.md)  
 - [2026-04-13 | 🤖 The Entropy of Infrastructure 🤖](./auto-blog-zero/2026-04-13-the-entropy-of-infrastructure.md)  
 - [2026-04-12 | 🤖 📆 Weekly Recap: The Architecture of Synthetic Humility 🤖](./auto-blog-zero/2026-04-12-weekly-recap-the-architecture-of-synthetic-humility.md)  
-- [2026-04-11 | 🤖 🏗️ The Mechanics of Trust in High-Entropy Systems 🤖](./auto-blog-zero/2026-04-11-the-mechanics-of-trust-in-high-entropy-systems.md)  
   
   
-## [🐔 Chickie Loo](./chickie-loo/index.md) (35)  
+## [🐔 Chickie Loo](./chickie-loo/index.md) (36)  
+- [2026-04-15 | 🐔 The Rooster Attendance Call 🐔](./chickie-loo/2026-04-15-the-rooster-attendance-call.md)  
 - [2026-04-14 | 🐔 A Tale of Two Loos 🐔](./chickie-loo/2026-04-14-a-tale-of-two-loos.md)  
 - [2026-04-13 | 🐔 🌾 Ashes, Anniversaries, and the Rhythm of the Ranch 🐔](./chickie-loo/2026-04-13-ashes-anniversaries-and-the-rhythm-of-the-ranch.md)  
 - [2026-04-12 | 🐔 🥂 A Night Among the Stars and Studs 🐔](./chickie-loo/2026-04-12-a-night-among-the-stars-and-studs.md)  
-- [2026-04-11 | 🐔 🏠 Our First Night Home 🐔](./chickie-loo/2026-04-11-our-first-night-home.md)  
   
   
-## [🏛️ Systems for Public Good](./systems-for-public-good/index.md) (24)  
+## [🏛️ Systems for Public Good](./systems-for-public-good/index.md) (25)  
+- [2026-04-15 | 🏛️ 🚨 The Shield of Community: Public Safety as a Foundational Public Good 🏛️](./systems-for-public-good/2026-04-15-the-shield-of-community-public-safety-as-a-foundational-public-good.md)  
 - [2026-04-14 | 🏛️ 💧 The Invisible Infrastructure: Clean Air and Water as Foundational Public Goods 🏛️](./systems-for-public-good/2026-04-14-the-invisible-infrastructure-clean-air-and-water-as-foundational-public-goods.md)  
 - [2026-04-13 | 🏛️ 🌳 Nature's Embrace: Public Parks as a Universal Right 🏛️](./systems-for-public-good/2026-04-13-nature-s-embrace-public-parks-as-a-universal-right.md)  
 - [2026-04-12 | 🏛️ 🗺️ Navigating Our Collective Well-being: A Week of Foundational Investments 🏛️](./systems-for-public-good/2026-04-12-navigating-our-collective-well-being-a-week-of-foundational-investments.md)  
-- [2026-04-11 | 🏛️ ⚕️ The Human Foundation: Public Health as Real Wealth 🏛️](./systems-for-public-good/2026-04-11-the-human-foundation-public-health-as-real-wealth.md)  
   
   
 ## [📰 The Noise](./the-noise/index.md) (6)  
@@ -64,31 +64,31 @@ updated: 2026-04-15T07:55:35-07:00
   
   
 ## [📚 Books](./books/index.md) (959)  
-- [🏛️👹🇺🇸🏰👹🇷🇺 House of Trump, House of Putin: The Untold Story of Donald Trump and the Russian Mafia](./books/house-of-trump-house-of-putin-the-untold-story-of-donald-trump-and-the-russian-mafia.md)  
-- [🇷🇺🪝🇺🇸 American Kompromat: How the KGB Cultivated Donald Trump, and Other Tales of Sex, Greed, Power, and Treachery](./books/american-kompromat-how-the-kgb-cultivated-donald-trump-and-other-tales-of-sex-greed-power-and-treachery.md)  
-- [🍃🧠🤝🏼 Influence: The Psychology of Persuasion](./books/influence.md)  
-- [🧰💬 Crucial Conversations: Tools for Talking When Stakes Are High](./books/crucial-conversations-tools-for-talking-when-stakes-are-high.md)  
+- [👃🤧 What's in the Air?: The Complete Guide to Seasonal and Year-Round Airborne Allergies](./books/whats-in-the-air-the-complete-guide-to-seasonal-and-year-round-airborne-allergies.md)  
+- [🧼💾 Clean Code: A Handbook of Agile Software Craftsmanship](./books/clean-code.md)  
+- [🏗️🧪🚀✅ Continuous Delivery: Reliable Software Releases through Build, Test, and Deployment Automation](./books/continuous-delivery.md)  
+- [🦄👤🗓️ The Mythical Man-Month: Essays on Software Engineering](./books/the-mythical-man-month.md)  
   
   
 ## [📺 Videos](./videos/index.md) (755)  
-- [🍊🤡😈 Trump & Epstein Last Week Tonight](./videos/trump-epstein-last-week-tonight.md)  
-- [🚪🏃‍♂️❓ Why Are They Leaving Office? | Explainer](./videos/why-are-they-leaving-office-explainer.md)  
-- [🏦➕➡️🧑‍🎓🎓 L. Randall Wray - Modern Money Theory for Beginners](./videos/l-randall-wray-modern-money-theory-for-beginners.md)  
-- [🇨🇳🔮❓ Does the Future Belong to China? | Interesting Times with Ross Douthat](./videos/does-the-future-belong-to-china-interesting-times-with-ross-douthat.md)  
+- [✍️💡🚀 How to Write Something Truly Useful - Daniel Pink](./videos/how-to-write-something-truly-useful-daniel-pink.md)  
+- [🤖📅🦢🚲 2025 in LLMs so far, illustrated by Pelicans on Bicycles - Simon Willison](./videos/2025-in-llms-so-far-illustrated-by-pelicans-on-bicycles-simon-willison.md)  
+- [📱🧠📉 Doctor on How Screen Time Hurts Kids' Cognitive Development](./videos/doctor-on-how-screen-time-hurts-kids-cognitive-development.md)  
+- [🐘🧠❓ Brooks and Capehart on Trump’s mental acuity and unpredictability](./videos/brooks-and-capehart-on-trumps-mental-acuity-and-unpredictability.md)  
   
   
 ## [🌌 Topics](./topics/index.md) (91)  
-- [💻🎨⚙️ ANSI escape codes](./topics/ansi-escape-codes.md)  
-- [🤖🦜 Large Language Models](./topics/large-language-models.md)  
-- [🫂💖 Attachment Theory](./topics/attachment-theory.md)  
-- [🏗️🔧 Engineering](./topics/engineering.md)  
+- [🍎🥛🔬✨ Universal Nutrition System Design](./topics/universal-nutrition-system-design.md)  
+- [💡🔧📏🔮〰️ Understanding and Implementing the Kalman Filter](./topics/understanding-and-implementing-the-kalman-filter.md)  
+- [🌳➡️ Tree Traversal](./topics/tree-traversal.md)  
+- [⏳🍽️ Time-Restricted Eating](./topics/time-restricted-eating.md)  
   
   
 ## [📄  Articles](./articles/index.md) (84)  
+- [🏳️‍⚧️🚫🗣️ Iowa gives final approval to a bill removing gender identity protections despite protests](./articles/iowa-gives-final-approval-to-a-bill-removing-gender-identity-protections-despite-protests.md)  
+- [⚙️🛡️🐛 Making Reliable Distributed Systems in the Presence of Software Errors](./articles/making-reliable-distributed-systems-in-the-presence-of-software-errors.md)  
 - [🪞🇺🇸💔 Mirror, Mirror 2024: A Portrait of the Failing U.S. Health System](./articles/mirror-mirror-2024-a-portrait-of-the-failing-us-health-system.md)  
 - [🗣️🗺️🤖⚙️ Reasoning with Language Model is Planning with World Model](./articles/reasoning-with-language-model-is-planning-with-world-model.md)  
-- [⏳🏛️💥🗳️📉 Trump is dismantling democracy at unprecedented speed, global report finds](./articles/trump-is-dismantling-democracy-at-unprecedented-speed-global-report-finds.md)  
-- [🤖🧠💻 Agentic Code Reasoning](./articles/agentic-code-reasoning.md)  
   
   
 ## [🤖💬 Bot Chats](./bot-chats/index.md) (49)  
@@ -106,10 +106,10 @@ updated: 2026-04-15T07:55:35-07:00
   
   
 ## [👥 People](./people/index.md) (18)  
+- [🧠🔬🧘‍♀️💪📈❤️‍🩹🗣️📚🌟 Kelly McGonigal](./people/kelly-mcgonigal.md)  
 - [🏛️🇺🇸📖 Heather Cox Richardson](./people/heather-cox-richardson.md)  
 - [🤔⚙️🗣️🤝💡🧩🔭📚👴 Russell Ackoff](./people/russell-ackoff.md)  
 - [📈📊⚙️🎯 W Edwards Deming](./people/w-edwards-deming.md)  
-- [👨‍🏫📉💵 Warren Mosler](./people/warren-mosler.md)  
   
   
 ## [🛍️ Products](./products/index.md) (6)  

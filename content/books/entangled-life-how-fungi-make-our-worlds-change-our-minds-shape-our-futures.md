@@ -7,11 +7,12 @@ share: true
 affiliate link: https://amzn.to/4n6kNAM
 updated: 2026-03-18T08:14:56.817Z
 link_analysis_model: gemini-3.1-flash-lite-preview
-link_analysis_time: 2026-04-01T00:00:00Z
+link_analysis_time: 2026-04-15T00:00:00Z
 force_analyze_links: false
 image_date: 2026-04-15T12:26:17Z
 image_model: "@cf/black-forest-labs/flux-1-schnell"
 image_prompt: A vibrant illustration depicting a cross-section of forest ground. Below the surface, a dense, glowing network of mycelium spreads, connecting the intricate roots of several trees. The mycelial threads pulse with ethereal light, transitioning from earthy browns and greens into shades of purple and blue. Above ground, a variety of stylized mushrooms emerge, some with caps that subtly resemble neural patterns or abstract thought bubbles. The overall image conveys profound interconnectedness, hidden intelligence, and the vital, unseen influence of fungi on life and mind, blending organic forms with a touch of the fantastical and cosmic.
+link_analysis_version: "2"
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🍄🌍🧠🔮 Entangled Life: How Fungi Make Our Worlds, Change Our Minds & Shape Our Futures  

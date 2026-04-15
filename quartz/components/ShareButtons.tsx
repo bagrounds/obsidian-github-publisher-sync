@@ -51,6 +51,56 @@ const ShareButtons: QuartzComponent = ({ cfg, fileData }: QuartzComponentProps) 
         𝕏 Twitter
       </a>
       <a
+        class="share-button share-facebook"
+        href={`https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(pageUrl)}`}
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="Share on Facebook"
+        title="Share on Facebook"
+      >
+        📘 Facebook
+      </a>
+      <a
+        class="share-button share-linkedin"
+        href={`https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(pageUrl)}`}
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="Share on LinkedIn"
+        title="Share on LinkedIn"
+      >
+        💼 LinkedIn
+      </a>
+      <a
+        class="share-button share-reddit"
+        href={`https://www.reddit.com/submit?url=${encodeURIComponent(pageUrl)}&title=${encodeURIComponent(title)}`}
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="Share on Reddit"
+        title="Share on Reddit"
+      >
+        🟠 Reddit
+      </a>
+      <a
+        class="share-button share-whatsapp"
+        href={`https://wa.me/?text=${encodeURIComponent(shareText)}`}
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="Share on WhatsApp"
+        title="Share on WhatsApp"
+      >
+        📱 WhatsApp
+      </a>
+      <a
+        class="share-button share-telegram"
+        href={`https://t.me/share/url?url=${encodeURIComponent(pageUrl)}&text=${encodeURIComponent(title)}`}
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="Share on Telegram"
+        title="Share on Telegram"
+      >
+        ✈️ Telegram
+      </a>
+      <a
         class="share-button share-sms"
         href={`sms:?&body=${encodeURIComponent(shareText)}`}
         aria-label="Share via text message"

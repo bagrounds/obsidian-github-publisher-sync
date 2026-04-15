@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-04-14T12:36:24-07:00
+updated: 2026-04-14T17:52:00-07:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -21,11 +21,11 @@ updated: 2026-04-14T12:36:24-07:00
 - [2026-04-11 | 🧠 Mythos 🚀 Changes 🪚 Broken 🛠️ Fixing 🏠 Home 🌃 Night 🤖 AI 🗣️ Day 📈 Surge 🌐 World 🍎 Embrace 🤫 Noise 🆕 New 🥇 First 🕰️ Time 📚📺🐔🤖🏛️📰🤖🐲](./reflections/2026-04-11.md)  
   
   
-## [🤖 AI Blog](./ai-blog/index.md) (146)  
+## [🤖 AI Blog](./ai-blog/index.md) (147)  
+- [2026-04-13 | 📚🔗 Improving Book Linking Coverage 🎯](./ai-blog/2026-04-13-5-improving-book-linking-coverage.md)  
 - [2026-04-13 | 🦋 Fixing Bluesky Link Facet Offsets 🔗](./ai-blog/2026-04-13-4-fixing-bluesky-link-facet-offsets.md)  
 - [2026-04-13 | 📊 Daily Updates Table Redesign 🔄](./ai-blog/2026-04-13-3-daily-updates-table-redesign.md)  
 - [2026-04-13 | 🧩 Breaking the Internal Linking Monolith 🔗](./ai-blog/2026-04-13-2-breaking-the-internal-linking-monolith.md)  
-- [2026-04-12 | 🖼️ Forward-Compatible Image Backfill & Propagation Delay 🏎️](./ai-blog/2026-04-12-6-forward-compatible-image-backfill.md)  
   
   
 ## [🤖 Auto Blog Zero](./auto-blog-zero/index.md) (35)  
@@ -63,17 +63,17 @@ updated: 2026-04-14T12:36:24-07:00
   
   
 ## [📚 Books](./books/index.md) (959)  
-- [🇺🇸⚔️💰 Fight Oligarchy](./books/fight-oligarchy.md)  
-- [🤖⚠️📈 Superintelligence: Paths, Dangers, Strategies](./books/superintelligence-paths-dangers-strategies.md)  
-- [📱🗳️📉🩺 The Hype Machine: How Social Media Disrupts Our Elections, Our Economy, and Our Health - and How We Must Adapt](./books/the-hype-machine-how-social-media-disrupts-our-elections-our-economy-and-our-health-and-how-we-must-adapt.md)  
-- [😊🧠📈🎯 The How of Happiness: A Scientific Approach to Getting the Life You Want](./books/the-how-of-happiness-a-scientific-approach-to-getting-the-life-you-want.md)  
+- [🕷️⏳ Children of Time](./books/children-of-time.md)  
+- [📱🧠 The Shallows: What the Internet Is Doing to Our Brains](./books/the-shallows-what-the-internet-is-doing-to-our-brains.md)  
+- [🤿💼 Deep Work: Rules for Focused Success in a Distracted World](./books/deep-work.md)  
+- [🏚️💰 Evicted: Poverty and Profit in the American City](./books/evicted-poverty-and-profit-in-the-american-city.md)  
   
   
-## [📺 Videos](./videos/index.md) (753)  
-- [🧠🇺🇸🌱 How America recovers from all this | Yale Conversations with David Brooks | Yale University](./videos/how-america-recovers-from-all-this-yale-conversations-with-david-brooks-yale-university.md)  
-- [⭐🗽🏛️💯 Mamdani brings a unique star power to NYC governance in his first 100 days](./videos/mamdani-brings-a-unique-star-power-to-nyc-governance-in-his-first-100-days.md)  
-- [🇭🇺🗳️🏆👋 Peter Magyar wins Hungary election as Orban concedes defeat | DW News](./videos/peter-magyar-wins-hungary-election-as-orban-concedes-defeat-dw-news.md)  
-- [⬆️💸💥💡⬇️ We Found The Radical Solution To Skyrocketing Grocery Prices](./videos/we-found-the-radical-solution-to-skyrocketing-grocery-prices.md)  
+## [📺 Videos](./videos/index.md) (754)  
+- [🇭🇺⚔️👑🌍🌊 How Hungary’s vote to oust Viktor Orbán could have global implications](./videos/how-hungarys-vote-to-oust-viktor-orban-could-have-global-implications.md)  
+- [🏛️📜🧠 You Actually Do Need to Understand Mythos](./videos/you-actually-do-need-to-understand-mythos.md)  
+- [⛽📈➡️☀️❓ Will more Americans embrace renewable energy after the latest oil price surge?](./videos/will-more-americans-embrace-renewable-energy-after-the-latest-oil-price-surge.md)  
+- [🤖✨💥⚠️ Claude Mythos Changes Everything. Your AI Stack Isn't Ready.](./videos/claude-mythos-changes-everything-your-ai-stack-isnt-ready.md)  
   
   
 ## [🌌 Topics](./topics/index.md) (91)  
@@ -91,10 +91,10 @@ updated: 2026-04-14T12:36:24-07:00
   
   
 ## [🤖💬 Bot Chats](./bot-chats/index.md) (49)  
-- [🇦🇹💰🆚📈🖨️ Austrian Economics vs Modern Monetary Theory](./bot-chats/austrian-economics-vs-modern-monetary-theory.md)  
-- [⚛️💡🚀 Atomic Innovation](./bot-chats/atomic-innovation.md)  
-- [🤖📱🧠 Android Local LLMs](./bot-chats/android-local-llms.md)  
+- [🌸🌬️🤧🔬📚 Allergy Science Books](./bot-chats/allergy-science-books.md)  
 - [🇷🇺👹🤝👹🇺🇸 Trump and Putin](./bot-chats/trump-and-putin.md)  
+- [🧠🤝 System 2 Rapport Building](./bot-chats/system-2-rapport-building.md)  
+- [👶😭➡️😊 Summarize The Happiest Baby On The Block](./bot-chats/summarize-the-happiest-baby-on-the-block.md)  
   
   
 ## [💾 Software](./software/index.md) (33)  

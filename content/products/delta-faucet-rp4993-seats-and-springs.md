@@ -7,11 +7,12 @@ share: true
 affiliate link: https://amzn.to/4a4Lrpm
 CTA: 💧 Stop drips.
 link_analysis_model: gemini-3.1-flash-lite-preview
-link_analysis_time: 2026-04-10T00:00:00Z
+link_analysis_time: 2026-04-14T00:00:00Z
 force_analyze_links: false
 image_date: 2026-04-11T10:17:36Z
 image_model: "@cf/black-forest-labs/flux-1-schnell"
 image_prompt: A clean, high-contrast close-up shot of a disassembled kitchen faucet handle resting on a polished granite countertop. In the foreground, neatly arranged on a clean white cloth, are the two small, black rubber seats and two gleaming, coiled stainless steel springs. The lighting is bright and professional, highlighting the metallic texture of the springs and the matte finish of the rubber. In the soft-focus background, the faucet body is visible, suggesting a repair in progress. The color palette is dominated by cool silvers, deep blacks, and neutral stone tones, conveying a sense of precision, maintenance, and DIY expertise.
+link_analysis_version: "2"
 ---
 [Home](../index.md) > [Products](./index.md)  
 # 🚰💧⚙️🔧 Delta Faucet RP4993 Seats and Springs  

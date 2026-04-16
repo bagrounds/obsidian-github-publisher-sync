@@ -10,11 +10,16 @@ affiliate link: https://amzn.to/3HibNZ3
 CTA: ⚔️ Conquer resistance.
 updated: 2026-03-17T06:23:48.601Z
 force_analyze_links: false
-link_analysis_time: 2026-03-22T23:37:03.070Z
+link_analysis_time: 2026-04-16T00:00:00Z
 link_analysis_model: gemini-3.1-flash-lite-preview
+image_date: 2026-04-16T09:38:47Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: An artistic illustration featuring a split-composition. On the left, a dark, chaotic, and swirling storm cloud represents Resistance, looming over a workspace. On the right, a bright, structured, and serene desk setup features an empty canvas, a sharp pencil, and a single, steady candle flame. The transition between the two sides is marked by a clean, vertical line, symbolizing the transition from amateur chaos to professional focus. The color palette uses deep, moody blues and blacks on the left, contrasting with warm, golden amber and clean white on the right. The style is minimalist and conceptual, focusing on the tension between the internal struggle and the discipline required to overcome it.
+link_analysis_version: "2"
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🪖🎨 The War of Art: Break Through the Blocks and Win Your Inner Creative Battles  
+![books-the-war-of-art](../books-the-war-of-art.jpg)  
 [🛒 The War of Art: Break Through the Blocks and Win Your Inner Creative Battles. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3HibNZ3)  
   
 ## 🤖 AI Summary  

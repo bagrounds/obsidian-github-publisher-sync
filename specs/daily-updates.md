@@ -110,16 +110,16 @@
 
 ## 🛡️ Data Loss Prevention
 
-🔗 The parser supports two link formats in table rows:
+📊 A safety check compares the number of parsed entries against the page count in the stats line (e.g., "📊 31 pages"). If zero entries were parsed but the stats line indicates entries exist, the function refuses to overwrite and returns the content unchanged. The I/O wrapper logs a warning for diagnosis.
+
+🔗 As a defensive measure, the parser supports two link formats in table rows:
 - **Wiki links**: `[[path\|title]]` — the native format written by the automation
-- **Standard markdown links**: `[title](path)` — the format Obsidian GitHub Publisher converts wiki links into
+- **Standard markdown links**: `[title](path)` — supported defensively in case content is ever modified
 
 📐 When parsing standard markdown links, relative paths are resolved to vault-relative paths:
 - `./file.md` → `reflections/file` (same directory)
 - `../dir/file.md` → `dir/file` (parent directory)
 - `file.md` → `reflections/file` (bare filename)
-
-📊 A safety check compares the number of parsed entries against the page count in the stats line (e.g., "📊 31 pages"). If zero entries were parsed but the stats line indicates entries exist, the function refuses to overwrite and returns the content unchanged. The I/O wrapper logs a warning for diagnosis.
 
 🔀 Tables may contain a mix of wiki links and markdown links. The parser tries wiki link format first, then falls back to markdown link format.
 

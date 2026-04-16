@@ -10,9 +10,13 @@ updated: 2026-03-13T00:20:41.082Z
 force_analyze_links: false
 link_analysis_time: 2026-03-22T23:34:06.343Z
 link_analysis_model: gemini-3.1-flash-lite-preview
+image_date: 2026-04-16T18:35:58Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A minimalist, high-contrast illustration featuring a stylized, translucent human silhouette standing before a vast, complex digital labyrinth. The labyrinth is constructed from glowing geometric nodes and interconnected neural network lines that shift from chaotic, jagged patterns at the periphery to a soft, harmonious golden glow near the human figure. The figure is reaching out, their palm open, interacting with a floating, gentle orb of light that represents human intent. The background is a deep, matte charcoal, emphasizing the contrast between the organic, warm light of the human element and the cold, intricate blue and white circuitry of the machine. The composition suggests a delicate balance between human guidance and the immense, overwhelming power of artificial intelligence.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🤖🧑‍ Human Compatible: Artificial Intelligence and the Problem of Control  
+![books-human-compatible-artificial-intelligence-and-the-problem-of-control](../books-human-compatible-artificial-intelligence-and-the-problem-of-control.jpg)  
 [🛒 Human Compatible: Artificial Intelligence and the Problem of Control. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4oMyd5Q)  
   
 ## 🤖 Book Report: Human Compatible: Artificial Intelligence and the Problem of Control  

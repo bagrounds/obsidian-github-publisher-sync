@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-04-16T13:39:17-07:00
+updated: 2026-04-16T14:14:48-07:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -70,11 +70,11 @@ updated: 2026-04-16T13:39:17-07:00
 - [💃➡️ Beginning Modern Dance](./books/beginning-modern-dance.md)  
   
   
-## [📺 Videos](./videos/index.md) (758)  
+## [📺 Videos](./videos/index.md) (759)  
+- [🕰️🏛️🛑⚡ Trump Is the End of a 100-Year Experiment | Interesting Times with Ross Douthat](./videos/trump-is-the-end-of-a-100-year-experiment-interesting-times-with-ross-douthat.md)  
 - [🇺🇸💸🌍 How America Is Losing the World | Lunch Money with Paul Krugman and Heather Cox Richardson](./videos/how-america-is-losing-the-world-lunch-money-with-paul-krugman-and-heather-cox-richardson.md)  
 - [❓🔥🧾🚫 'What Did That Accomplish?': Don Beyer Grills IRS CEO Over Ending Of IRS Direct File](./videos/what-did-that-accomplish-don-beyer-grills-irs-ceo-over-ending-of-irs-direct-file.md)  
 - [🤯🧾❓📺 Why Doing Taxes Is So Hard | Patriot Act with Hasan Minhaj | Netflix](./videos/why-doing-taxes-is-so-hard-patriot-act-with-hasan-minhaj-netflix.md)  
-- [🚫🏢👑🔄👥 Corporate America’s Biggest Enemy Will Now Lead Mamdani’s Transition Team](./videos/corporate-americas-biggest-enemy-will-now-lead-mamdanis-transition-team.md)  
   
   
 ## [🌌 Topics](./topics/index.md) (91)  

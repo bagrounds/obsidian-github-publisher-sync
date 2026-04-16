@@ -5,10 +5,10 @@ aliases:
 title: 📺 Videos
 URL: https://bagrounds.org/videos
 backlinks: false
-updated: 2026-04-16T13:39:17-07:00
+updated: 2026-04-16T14:14:48-07:00
 ---
 [Home](../index.md)  
-# 📺 Videos (758)  
+# 📺 Videos (759)  
 - [💰🤑🤖💡🚀💲 $0.10/Month Runs My Entire AI Life. I'll Show You How.](./0-10-month-runs-my-entire-ai-life-ill-show-you-how.md)  
 - [📊📈📉📃👁️ 10 Charts to Understand the 900 Page Budget Bill](./10-charts-to-understand-the-900-page-budget-bill.md)  
 - [🤖🔗⬆️✅ 12-Factor Agents: Patterns of reliable LLM applications — Dex Horthy, HumanLayer](./12-factor-agents-patterns-of-reliable-llm-applications-dex-horthy-humanlayer.md)  
@@ -648,6 +648,7 @@ updated: 2026-04-16T13:39:17-07:00
 - [🍊🤡😈 Trump & Epstein Last Week Tonight](./trump-epstein-last-week-tonight.md)  
 - [👨‍⚖️📧❓ Trump faces fresh Epstein questions as new emails and files are released](./trump-faces-fresh-epstein-questions-as-new-emails-and-files-are-released.md)  
 - [👨‍👩‍👧‍👦🪙🤔⬇️ Trump family’s cryptocurrency ties raise concerns as administration loosens regulations](./trump-familys-cryptocurrency-ties-raise-concerns-as-administration-loosens-regulations.md)  
+- [🕰️🏛️🛑⚡ Trump Is the End of a 100-Year Experiment | Interesting Times with Ross Douthat](./trump-is-the-end-of-a-100-year-experiment-interesting-times-with-ross-douthat.md)  
 - [👨‍⚖️💂‍♂️🚨🇺🇸 Trump Orders Another 2,000 Guardsmen, 700 Marines To LA | NPR News Now](./trump-orders-another-2000-guardsmen-700-marines-to-la-npr-news-now.md)  
 - [💰🇺🇸🛢️💵 Trump posts photo of Maduro and says US plans to tap Venezuela's oil reserves](./trump-posts-photo-of-maduro-and-says-us-plans-to-tap-venezuelas-oil-reserves.md)  
 - [🚪👥🚫⚖️ Trump Said He’d Deport Millions. What’s Happening on the Ground? | WSJ](./trump-said-hed-deport-millions-whats-happening-on-the-ground-wsj.md)  

@@ -205,7 +205,7 @@ runBlogSeries context seriesMap runConfigs seriesId = do
       comments <- fetchAllSeriesComments manager seriesId (priorityUser >>= (\u -> if T.null u then Nothing else Just u))
       logMsg $ "  📝 Fetched " <> T.pack (show (length comments)) <> " comments"
 
-      blogContextResult <- buildBlogContext seriesMap seriesId seriesDir comments today
+      blogContextResult <- buildBlogContext seriesMap seriesId repoRoot comments today
       case blogContextResult of
         Left reason -> failTask $ "Blog context build failed: " <> reason
         Right blogContext -> do

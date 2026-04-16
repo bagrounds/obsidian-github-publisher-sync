@@ -2,7 +2,7 @@
 
 ## 🎯 Overview
 
-📋 Generates daily AI-written blog posts for five distinct blog series.
+📋 Generates daily AI-written blog posts for six distinct blog series.
 🧠 Constructs rich prompts from post history, reader comments, and calendar-aware recap detection.
 📅 Includes deterministic human-readable date (day of week, month, day, year) in every prompt for date awareness.
 🔧 Assembles YAML frontmatter with navigation links, slugs, and model signatures.
@@ -51,7 +51,7 @@
 
 ## 📚 Blog Series Configuration
 
-📋 Five series are currently defined in `haskell/series/*.json`, each auto-discovered at runtime.
+📋 Six series are currently defined in `haskell/series/*.json`, each auto-discovered at runtime.
 
 | 🏷️ Series ID | 🎨 Icon | ⏰ Schedule Hour (Pacific) | ⭐ Priority User | 🌐 Base URL |
 |---|---|---|---|---|
@@ -60,6 +60,7 @@
 | 🐔 chickie-loo | 🐔 | 7 AM | ChickieLoo | bagrounds.org/chickie-loo |
 | 🏛️ systems-for-public-good | 🏛️ | 9 AM | bagrounds | bagrounds.org/systems-for-public-good |
 | 🌟 positivity-bias | 🌟 | 6 AM | bagrounds | bagrounds.org/positivity-bias |
+| 🔀 convergence | 🔀 | 10 AM | bagrounds | bagrounds.org/convergence |
 
 📌 Each series also defines a `navLink` in wikilink format for breadcrumb navigation.
 📦 `BACKFILL_CONTENT_IDS` combines all series IDs with `reflections` and `ai-blog` for indexing operations.
@@ -170,7 +171,8 @@
 | `todayPacificDay` | PacificTime | 📅 Return today's date as a Day in Pacific time |
 | `readSeriesPosts(seriesDir)` | BlogPosts | 📄 Read and parse all markdown posts from series directory |
 | `readAgentsMd(seriesDir)` | BlogPosts | 📖 Read AGENTS.md system prompt override |
-| `buildBlogContext(seriesMap, seriesId, repoRoot, comments, today)` | BlogSeries | 📚 Assemble complete blog context from discovered config and disk |
+| `buildBlogContext(seriesMap, seriesId, repoRoot, comments, today)` | BlogSeries | 📚 Assemble complete blog context by evaluating context queries from config |
+| `evaluateQueries(seriesId, contentRoot, seriesMetadata, queries)` | ContextQuery | 🔎 Evaluate SQL-like context queries against content directories |
 | `updatePreviousPost(seriesDir, previousPost, series, nextFilename)` | BlogSeries | 🔗 Update previous post file with forward navigation link |
 
 ## 🧪 Testing

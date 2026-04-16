@@ -36,6 +36,7 @@ import qualified Automation.PlatformTest
 import qualified Automation.CredentialsTest
 import qualified Automation.EmbedTest
 import qualified Automation.ContextTest
+import qualified Automation.ContextQueryTest
 import qualified Automation.GeminiTest
 import qualified Automation.CliArgsTest
 import qualified Automation.VaultSyncTest
@@ -90,6 +91,7 @@ main = defaultMain $ testGroup "Automation"
   , Automation.CredentialsTest.tests
   , Automation.EmbedTest.tests
   , Automation.ContextTest.tests
+  , Automation.ContextQueryTest.tests
   , Automation.GeminiTest.tests
   , Automation.CliArgsTest.tests
   , Automation.VaultSyncTest.tests

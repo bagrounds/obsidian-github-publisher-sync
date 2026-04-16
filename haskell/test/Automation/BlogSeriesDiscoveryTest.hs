@@ -11,6 +11,7 @@ import qualified Test.QuickCheck as QC
 import qualified Automation.Gemini as Gemini
 import Automation.BlogSeriesConfig (BlogSeriesConfig (..))
 import Automation.BlogSeriesDiscovery
+import Automation.ContextQuery (ContextQuery (..), defaultContextQueries)
 import Automation.Scheduler (TaskId (..), ScheduleEntry (..), BlogSeriesRunConfig (..))
 
 tests :: TestTree
@@ -170,6 +171,30 @@ validationTests = testGroup "validation"
 
   , testCase "missing priorityUser defaults to Nothing" $
       dsPriorityUser (unsafeParse "test" configNoPriorityUser) @?= Nothing
+
+  , testCase "parses config with contextSources" $
+      let queries = dsContextQueries (unsafeParse "test" configWithCrossSeries)
+      in case queries of
+        [first, second] -> do
+          directories first @?= ["test"]
+          limit first @?= Just 7
+          directories second @?= ["other-a", "other-b"]
+          limitPerSource second @?= Just 1
+        _ -> assertBool ("expected 2 queries, got " <> show (length queries)) False
+
+  , testCase "missing contextSources defaults to defaultContextQueries" $
+      dsContextQueries (unsafeParse "test" configNoPriorityUser) @?= defaultContextQueries "test"
+
+  , testCase "absent contextSources uses defaultContextQueries" $
+      dsContextQueries (unsafeParse "test" configWithCrossSeriesFalse) @?= defaultContextQueries "test"
+
+  , testCase "deriveBlogSeriesConfig preserves contextQueries" $ do
+      let config = deriveBlogSeriesConfig (unsafeParse "test" configWithCrossSeries)
+      length (bscContextQueries config) @?= 2
+
+  , testCase "deriveBlogSeriesConfig preserves empty contextQueries" $ do
+      let config = deriveBlogSeriesConfig sampleDiscovered
+      bscContextQueries config @?= []
   ]
 
 properties :: TestTree
@@ -279,6 +304,27 @@ configNoPriorityUser = T.unlines
   , "}"
   ]
 
+configWithCrossSeries :: T.Text
+configWithCrossSeries = T.unlines
+  [ "{"
+  , "  \"name\": \"Cross Series Test\","
+  , "  \"icon\": \"\128279\","
+  , "  \"scheduleHourPacific\": 10,"
+  , "  \"models\": [\"gemini-2.5-flash\"],"
+  , "  \"contextSources\": [{\"from\": [\"test\"], \"limit\": 7}, {\"from\": [\"other-a\", \"other-b\"], \"limitPerSource\": 1}]"
+  , "}"
+  ]
+
+configWithCrossSeriesFalse :: T.Text
+configWithCrossSeriesFalse = T.unlines
+  [ "{"
+  , "  \"name\": \"No Cross Series\","
+  , "  \"icon\": \"\128736\","
+  , "  \"scheduleHourPacific\": 11,"
+  , "  \"models\": [\"gemini-2.5-flash\"]"
+  , "}"
+  ]
+
 sampleDiscovered :: DiscoveredSeries
 sampleDiscovered = DiscoveredSeries
   { dsId = "garden-thoughts"
@@ -287,6 +333,7 @@ sampleDiscovered = DiscoveredSeries
   , dsPriorityUser = Just "bagrounds"
   , dsScheduleTime = TimeOfDay 11 0 0
   , dsModels = Gemini.Gemini25Flash :| [Gemini.Gemini25FlashLite]
+  , dsContextQueries = []
   }
 
 genSeriesId :: QC.Gen T.Text
@@ -303,6 +350,7 @@ genDiscoveredSeries = do
   icon <- QC.elements ["\129793", "\129302", "\128020", "\127963\65039", "\127925"]
   priorityUser <- QC.oneof [pure Nothing, Just . T.pack <$> QC.listOf1 (QC.elements ['a'..'z'])]
   hour <- QC.choose (0, 23)
+  contextQueries <- QC.elements [[], defaultContextQueries seriesId]
   pure DiscoveredSeries
     { dsId = seriesId
     , dsName = name
@@ -310,4 +358,5 @@ genDiscoveredSeries = do
     , dsPriorityUser = priorityUser
     , dsScheduleTime = TimeOfDay hour 0 0
     , dsModels = Gemini.Gemini25Flash :| []
+    , dsContextQueries = contextQueries
     }

@@ -12,16 +12,18 @@ import Data.Text (Text)
 import Data.Time.LocalTime (TimeOfDay)
 
 import Automation.BlogImage.ContentDirectory (ContentDirectory (..), contentDirectoryFromText, contentDirectoryToText)
+import Automation.ContextQuery (ContextQuery)
 
 data BlogSeriesConfig = BlogSeriesConfig
-  { bscId           :: Text
-  , bscName         :: Text
-  , bscIcon         :: Text
-  , bscAuthor       :: Text
-  , bscBaseUrl      :: Text
-  , bscPriorityUser :: Maybe Text
-  , bscNavLink      :: Text
-  , bscScheduleTime :: TimeOfDay
+  { bscId             :: Text
+  , bscName           :: Text
+  , bscIcon           :: Text
+  , bscAuthor         :: Text
+  , bscBaseUrl        :: Text
+  , bscPriorityUser   :: Maybe Text
+  , bscNavLink        :: Text
+  , bscScheduleTime   :: TimeOfDay
+  , bscContextQueries :: [ContextQuery]
   } deriving (Show, Eq)
 
 lookupSeriesIn :: Map Text BlogSeriesConfig -> Text -> Either Text BlogSeriesConfig

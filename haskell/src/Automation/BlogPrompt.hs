@@ -1,5 +1,6 @@
 module Automation.BlogPrompt
   ( BlogContext (..)
+  , CrossSeriesPost (..)
   , Slug (..)
   , DisplayTitle (..)
   , mkSlug
@@ -11,6 +12,7 @@ module Automation.BlogPrompt
   , buildDisplayTitle
   , sanitizeTitle
   , recapInstructions
+  , buildCrossSeriesSection
   ) where
 
 import Data.Char (isAsciiLower, isDigit)
@@ -34,6 +36,7 @@ import Text.Read (readMaybe)
 import Automation.BlogComments (BlogComment (..))
 import Automation.BlogPosts (BlogPost (..))
 import Automation.BlogSeriesConfig (BlogSeriesConfig (..))
+
 import Automation.Frontmatter (quoteYamlValue)
 import Automation.PacificTime (formatDay, formatDayHuman, toPacificLocalTime)
 import Automation.Text (isEmoji)
@@ -55,12 +58,20 @@ mkSlug t
   | T.head t == '-' || T.last t == '-' = Left ("Slug has leading/trailing hyphens: " <> t)
   | otherwise = Right (Slug t)
 
+-- | A post from another blog series, carrying metadata for prompt formatting.
+data CrossSeriesPost = CrossSeriesPost
+  { crossSeriesName :: Text
+  , crossSeriesIcon :: Text
+  , crossSeriesPost :: BlogPost
+  } deriving (Show, Eq)
+
 data BlogContext = BlogContext
-  { bcxSeries        :: BlogSeriesConfig
-  , bcxAgentsMd      :: Text
-  , bcxPreviousPosts :: [BlogPost]
-  , bcxComments      :: [BlogComment]
-  , bcxToday         :: Day
+  { bcxSeries           :: BlogSeriesConfig
+  , bcxAgentsMd         :: Text
+  , bcxPreviousPosts    :: [BlogPost]
+  , bcxComments         :: [BlogComment]
+  , bcxToday            :: Day
+  , bcxCrossSeriesPosts :: [CrossSeriesPost]
   } deriving (Show, Eq)
 
 stripEmbedSections :: Text -> Text
@@ -176,12 +187,14 @@ buildUserPrompt ctx =
         <> " Do not include dates, pipe separators, or the series icon emoji in your heading."
         <> " The system adds date and icon formatting automatically."
       postHistory = buildPostHistory series posts
+      crossSeriesContext = buildCrossSeriesSection (bcxCrossSeriesPosts ctx)
       commentsSection = buildCommentsSection comments
       recap = recapInstructions today
   in T.intercalate "\n\n"
     $ filter (not . T.null)
       [ header
       , postHistory
+      , crossSeriesContext
       , commentsSection
       , recap
       ]
@@ -215,6 +228,23 @@ buildCommentsSection [] = ""
 buildCommentsSection comments =
   let formatted = fmap formatComment comments
   in "## Reader Comments\n\n" <> T.intercalate "\n\n" formatted
+
+buildCrossSeriesSection :: [CrossSeriesPost] -> Text
+buildCrossSeriesSection [] = ""
+buildCrossSeriesSection posts =
+  let formatted = fmap formatCrossSeriesPost posts
+  in "## Today Across the Blog\n\n"
+    <> "The following are the most recent posts from other blog series on this site. "
+    <> "Each series has its own voice and perspective. Find connections, tensions, "
+    <> "and emergent themes across these independent voices.\n\n"
+    <> T.intercalate "\n\n---\n\n" formatted
+
+formatCrossSeriesPost :: CrossSeriesPost -> Text
+formatCrossSeriesPost CrossSeriesPost{..} =
+  let body = stripEmbedSections (bpBody crossSeriesPost)
+      excerpt = T.take 2000 body
+  in "### " <> crossSeriesIcon <> " " <> crossSeriesName <> " — " <> bpTitle crossSeriesPost
+    <> " (" <> bpDate crossSeriesPost <> ")\n\n" <> T.strip excerpt
 
 formatComment :: BlogComment -> Text
 formatComment c =

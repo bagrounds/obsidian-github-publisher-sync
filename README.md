@@ -57,6 +57,7 @@
 | 🤖 `auto-blog-zero/` | ~12 | 📝 AI-generated daily blog posts |
 | 🐔 `chickie-loo/` | ~12 | 🐣 AI-generated chicken-themed blog posts |
 | 🏛️ `systems-for-public-good/` | ~1 | 🏛️ AI-generated democracy and public good blog posts |
+| 🔀 `convergence/` | ~1 | 🔀 AI-generated cross-series synthesis blog |
 | 🤖 `ai-blog/` | ~30 | 📝 AI agent blog posts about code changes |
 
 ## ⚙️ GitHub Actions Workflows
@@ -76,6 +77,7 @@
 | 7 | 🐔 Chickie Loo | 🐣 AI blog post with chicken-keeping personality |
 | 8 | 🤖 Auto Blog Zero | 📝 AI blog post based on reflections and discussions |
 | 9 | 🏛️ Systems for Public Good | 🏛️ AI blog with Google Search grounding for current events |
+| 10 | 🔀 Convergence | 🔀 AI cross-series synthesis — reads all other series and finds emergent themes |
 | 23 | 🖼️ Backfill Blog Images | 🔍 Generate missing cover images for all blog posts |
 | 1 | 🔗 Internal Linking | 📥 BFS-driven wikilink insertion in Obsidian vault |
 | Even hours | 📢 Social Posting | 📱 Discover and post unposted content to X/Bluesky/Mastodon |
@@ -224,6 +226,7 @@ Pull Vault → BFS from Most Recent Reflection → For Each File:
 | `SYSTEMS_FOR_PUBLIC_GOOD_PRIORITY_USER` | `bagrounds` | 🏛️ GitHub user for Systems for Public Good priority |
 | `THE_NOISE_PRIORITY_USER` | `bagrounds` | 📰 GitHub user for The Noise priority |
 | `POSITIVITY_BIAS_PRIORITY_USER` | `bagrounds` | 🌟 GitHub user for Positivity Bias priority |
+| `CONVERGENCE_PRIORITY_USER` | `bagrounds` | 🔀 GitHub user for Convergence priority |
 | `DISABLE_TWITTER` | _(empty)_ | 🚫 Set to disable Twitter posting |
 | `DISABLE_BLUESKY` | _(empty)_ | 🚫 Set to disable Bluesky posting |
 | `DISABLE_MASTODON` | _(empty)_ | 🚫 Set to disable Mastodon posting |
@@ -288,6 +291,8 @@ cd haskell && cabal test --test-show-details=direct
 | [`systems-for-public-good.md`](specs/systems-for-public-good.md) | 🏛️ Systems for Public Good blog series — democracy, public goods, grounding with Google Search, editorial guidelines |
 | [`the-noise.md`](specs/the-noise.md) | 📰 The Noise blog series — daily news digest, Google Search grounding, high-quality source curation, original synthesis |
 | [`positivity-bias.md`](specs/positivity-bias.md) | 🌟 Positivity Bias blog series — positive news digest, Google Search grounding, stories of hope and progress |
+| [`convergence.md`](specs/convergence.md) | 🔀 Convergence blog series — cross-series synthesis, emergent themes, systems thinking |
+| [`context-query.md`](specs/context-query.md) | 🔎 Context query engine — declarative query language for AI blog context sources |
 | [`ai-blog-sync.md`](specs/ai-blog-sync.md) | 🤖 AI blog vault sync — automated navigation links, daily reflection linking, TTS-friendly writing |
 | [`tts.md`](specs/tts.md) | 🎧 Text-to-Speech player — Web Speech API, content extraction, sentence highlighting, auto-play, comment reading |
 | [`share-buttons.md`](specs/share-buttons.md) | 🔗 Share buttons — lightweight intent-URL-based social sharing for Bluesky, Mastodon, Twitter, SMS, and more |

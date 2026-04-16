@@ -51,6 +51,7 @@ sampleSeries = BlogSeriesConfig
   , bscPriorityUser = Just "bagrounds"
   , bscNavLink = "[[index|Home]] > [[the-noise/index|\128240 The Noise]]"
   , bscScheduleTime = TimeOfDay 6 0 0
+  , bscContextQueries = []
   }
 
 generateSeriesIndexTests :: TestTree

@@ -17,6 +17,7 @@ module Automation.BlogSeriesDiscovery
 import qualified Data.ByteString as BS
 import Data.List (sortOn)
 import Data.List.NonEmpty (NonEmpty (..))
+import Data.Maybe (fromMaybe)
 import Data.Text (Text)
 import qualified Data.Text as T
 import qualified Data.Text.Encoding as TE
@@ -27,6 +28,7 @@ import System.FilePath ((</>), dropExtension, takeExtension)
 import qualified Automation.Gemini as Gemini
 import Automation.Json (FromValue (..), withObject, (.:), (.:?), eitherDecodeStrict)
 import Automation.BlogSeriesConfig (BlogSeriesConfig (..))
+import Automation.ContextQuery (ContextQuery, defaultContextQueries)
 import Automation.Scheduler (BlogSeriesRunConfig (..), ScheduleEntry (..), TaskId (..))
 
 configDirectoryName :: FilePath
@@ -39,6 +41,7 @@ data DiscoveredSeries = DiscoveredSeries
   , dsPriorityUser       :: Maybe Text
   , dsScheduleTime       :: TimeOfDay
   , dsModels             :: NonEmpty Gemini.Model
+  , dsContextQueries     :: [ContextQuery]
   } deriving (Show, Eq)
 
 data DiscoveryError
@@ -52,6 +55,7 @@ data RawConfig = RawConfig
   , rcPriorityUser       :: Maybe Text
   , rcScheduleHourPacific :: Int
   , rcModels             :: [Text]
+  , rcContextSources     :: Maybe [ContextQuery]
   }
 
 instance FromValue RawConfig where
@@ -61,6 +65,7 @@ instance FromValue RawConfig where
     rcPriorityUser <- obj .:? "priorityUser"
     rcScheduleHourPacific <- obj .: "scheduleHourPacific"
     rcModels <- obj .: "models"
+    rcContextSources <- obj .:? "contextSources"
     pure RawConfig{..}
 
 discoverSeries :: FilePath -> IO (Either [DiscoveryError] [DiscoveredSeries])
@@ -117,6 +122,7 @@ validateRawConfig filePath seriesId RawConfig{..} =
           , dsPriorityUser = rcPriorityUser
           , dsScheduleTime = TimeOfDay rcScheduleHourPacific 0 0
           , dsModels = Gemini.modelFromText firstModel :| fmap Gemini.modelFromText restModels
+          , dsContextQueries = fromMaybe (defaultContextQueries seriesId) rcContextSources
           }
       _ -> Left errors
     else Left errors
@@ -131,6 +137,7 @@ deriveBlogSeriesConfig DiscoveredSeries{..} = BlogSeriesConfig
   , bscPriorityUser = dsPriorityUser
   , bscNavLink = deriveNavLink dsId dsIcon dsName
   , bscScheduleTime = dsScheduleTime
+  , bscContextQueries = dsContextQueries
   }
 
 deriveBlogSeriesRunConfig :: DiscoveredSeries -> BlogSeriesRunConfig

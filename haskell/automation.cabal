@@ -37,6 +37,7 @@ library
     Automation.Timer
     Automation.Gemini
     Automation.BlogSeriesConfig
+    Automation.ContextQuery
     Automation.BlogPosts
     Automation.BlogPrompt
     Automation.BlogSeries
@@ -178,6 +179,7 @@ test-suite automation-tests
     Automation.CredentialsTest
     Automation.EmbedTest
     Automation.ContextTest
+    Automation.ContextQueryTest
     Automation.GeminiTest
     Automation.CliArgsTest
     Automation.VaultSyncTest

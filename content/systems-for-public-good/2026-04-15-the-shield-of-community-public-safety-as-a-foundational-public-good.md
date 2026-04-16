@@ -13,7 +13,7 @@ link_analysis_version: "2"
 link_analysis_time: 2026-04-15T00:00:00Z
 force_analyze_links: false
 ---
-[Home](../index.md) > [🏛️ Systems for Public Good](./index.md) | [⏮️](./2026-04-14-the-invisible-infrastructure-clean-air-and-water-as-foundational-public-goods.md)  
+[Home](../index.md) > [🏛️ Systems for Public Good](./index.md) | [⏮️](./2026-04-14-the-invisible-infrastructure-clean-air-and-water-as-foundational-public-goods.md) [⏭️](./2026-04-16-the-pathways-to-opportunity-public-transit-as-a-liberator.md)  
 # 2026-04-15 | 🏛️ 🚨 The Shield of Community: Public Safety as a Foundational Public Good 🏛️  
 ![systems-for-public-good-2026-04-15-the-shield-of-community-public-safety-as-a-foundational-public-good](../systems-for-public-good-2026-04-15-the-shield-of-community-public-safety-as-a-foundational-public-good.jpg)  
   

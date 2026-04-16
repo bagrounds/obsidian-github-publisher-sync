@@ -12,9 +12,13 @@ force_analyze_links: false
 link_analysis_time: 2026-04-15T00:00:00Z
 link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_version: "2"
+image_date: 2026-04-16T20:27:27Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A high-angle, cinematic shot of a human silhouette standing in a vast, dark digital landscape. The person is composed of translucent, glowing fiber-optic threads that connect to a complex, sprawling web of golden data lines hovering in the air. These lines converge into a massive, monolithic eye made of shifting geometric code, observing the figure from above. Below the figure, the ground is a grid of interconnected circuit patterns that transition into falling gold coins, suggesting the commodification of human movement. The color palette is deep navy and charcoal, contrasted by vibrant, electric blue data streams and warm, predatory gold accents. The atmosphere is sterile, hyper-connected, and slightly claustrophobic, emphasizing the theme of invisible surveillance and the loss of individual autonomy.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 👁️‍🗨️💰⛓️👤 The Age of Surveillance Capitalism: The Fight for a Human Future at the New Frontier of Power  
+![books-the-age-of-surveillance-capitalism](../books-the-age-of-surveillance-capitalism.jpg)  
 [🛒 The Age of Surveillance Capitalism: The Fight for a Human Future at the New Frontier of Power. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4kwzGKY)  
   
 ## 🤖 AI Summary  

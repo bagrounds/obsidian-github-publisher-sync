@@ -5,10 +5,10 @@ aliases:
 title: 📺 Videos
 URL: https://bagrounds.org/videos
 backlinks: false
-updated: 2026-04-15T18:38:54-07:00
+updated: 2026-04-15T20:12:46-07:00
 ---
 [Home](../index.md)  
-# 📺 Videos (755)  
+# 📺 Videos (756)  
 - [💰🤑🤖💡🚀💲 $0.10/Month Runs My Entire AI Life. I'll Show You How.](./0-10-month-runs-my-entire-ai-life-ill-show-you-how.md)  
 - [📊📈📉📃👁️ 10 Charts to Understand the 900 Page Budget Bill](./10-charts-to-understand-the-900-page-budget-bill.md)  
 - [🤖🔗⬆️✅ 12-Factor Agents: Patterns of reliable LLM applications — Dex Horthy, HumanLayer](./12-factor-agents-patterns-of-reliable-llm-applications-dex-horthy-humanlayer.md)  
@@ -732,6 +732,7 @@ updated: 2026-04-15T18:38:54-07:00
 - [Why Bob Woodward worries about Trump's America](./why-bob-woodward-worries-about-trumps-america.md)  
 - [🤥🗣️📰 Why did we stop caring about disinformation? | Skylar Hughes | TEDxDuke](./why-did-we-stop-caring-about-disinformation-skylar-hughes-tedxduke.md)  
 - [Why Do Babies Spit Up So Much?](./why-do-babies-spit-up-so-much.md)  
+- [🤯🧾❓📺 Why Doing Taxes Is So Hard | Patriot Act with Hasan Minhaj | Netflix](./why-doing-taxes-is-so-hard-patriot-act-with-hasan-minhaj-netflix.md)  
 - [💰➡️🪖 Why It Matters That Trump Rerouted Money to Pay the Troops | Explainer](./why-it-matters-that-trump-rerouted-money-to-pay-the-troops-explainer.md)  
 - [💰📈🤕 Why millions of Americans are facing a spike in health care costs](./why-millions-of-americans-are-facing-a-spike-in-health-care-costs.md)  
 - [🤔➡️💰 Why Republicans once staunchly opposed to Trump's bill changed their minds](./why-republicans-once-staunchly-opposed-to-trumps-bill-changed-their-minds.md)  

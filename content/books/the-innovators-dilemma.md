@@ -12,9 +12,13 @@ force_analyze_links: false
 link_analysis_time: 2026-04-16T00:00:00Z
 link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_version: "2"
+image_date: 2026-04-16T20:27:30Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A minimalist, high-contrast illustration featuring a towering, ornate neoclassical skyscraper on the left, rendered in deep navy and grey tones, representing established corporate stability. In the foreground to the right, a small, vibrant, and glowing seedling made of geometric digital circuits sprouts from a cracked concrete foundation. The seedling is colored in bright, energetic amber and neon blue, contrasting sharply with the crumbling, monochromatic base of the massive building. The composition utilizes negative space to emphasize the tension between the monolithic, rigid structure and the small, agile, and disruptive new growth. The background is a clean, matte white, highlighting the clean lines and the stark transition between the old, heavy architecture and the modern, technological evolution.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 💡🤖💰💥🏢📉 The Innovator's Dilemma: When New Technologies Cause Great Firms to Fail  
+![books-the-innovators-dilemma](../books-the-innovators-dilemma.jpg)  
 [🛒 The Innovator's Dilemma: When New Technologies Cause Great Firms to Fail. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/443oyiI)  
   
 ## 🤖💬 AI Summary  

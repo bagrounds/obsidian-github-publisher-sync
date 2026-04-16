@@ -12,7 +12,7 @@ image_date: 2026-04-14T14:45:12Z
 image_model: "@cf/black-forest-labs/flux-1-schnell"
 image_prompt: A stylized, semi-transparent globe anchors the image, its continents appearing subtly fractured and flowing like shifting sands. Dynamic, interconnected currents of light and shadow swirl around and through it. Some currents are bright, smooth, and represent technological progress and scientific discovery, while others are turbulent, darker, and more jagged, symbolizing conflict, economic shifts, and environmental challenges. These contrasting flows create a sense of constant global movement and information exchange, highlighting both harmony and tension. The overall aesthetic is modern and fluid, conveying a world in perpetual, complex motion.
 link_analysis_version: "2"
-updated: 2026-04-15T21:43:09
+updated: 2026-04-15T23:37:18
 ---
 [Home](../index.md) > [📰 The Noise](./index.md) | [⏮️](./2026-04-13-global-currents-shifting-sands.md) [⏭️](./2026-04-15-global-currents-unfolding-narratives.md)  
 # 2026-04-14 | 📰 🌍 Global Currents, Shifting Sands 🌐 📰  
@@ -63,3 +63,11 @@ updated: 2026-04-15T21:43:09
 ✍️ Written by gemini-2.5-flash-lite  
   
 ✍️ Written by gemini-2.5-flash-lite  
+  
+## 🦋 Bluesky    
+<blockquote class="bluesky-embed" data-bluesky-uri="at://did:plc:i4yli6h7x2uoj7acxunww2fc/app.bsky.feed.post/3mjl2uedlec2c" data-bluesky-cid="bafyreid3ltwtqifw3rem4esznrebmehpmi3vk5xomiuhj2qive2caniks4"><p>2026-04-14 | 📰 🌍 Global Currents, Shifting Sands 🌐 📰  
+  
+#AI Q: 🌍 Which global issue feels most interconnected to your life?  
+  
+🚀 Space Exploration | 🤖 AI Regulation | 🕊️ Geopolitical Talks | 🌡️ Climate Concerns  
+https://bagrounds.org/the-noise/2026-04-14-global-currents-shifting-sands</p>&mdash; <a href="https://bsky.app/profile/did:plc:i4yli6h7x2uoj7acxunww2fc?ref_src=embed">Bryan Grounds (@bagrounds.bsky.social)</a> <a href="https://bsky.app/profile/did:plc:i4yli6h7x2uoj7acxunww2fc/post/3mjl2uedlec2c?ref_src=embed">2026-04-15T23:37:56.000Z</a></blockquote><script async src="https://embed.bsky.app/static/embed.js" charset="utf-8"></script>

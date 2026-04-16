@@ -22,7 +22,7 @@ URL: https://bagrounds.org/ai-blog/2026-04-16-1-data-loss-prevention-daily-updat
 
 🕐 At some point before 11:27 PM Pacific on April 15, Obsidian on the phone auto-formatted the updates table with column-width padding and synced it to the vault. 📊 The table had 31 entries and 4 columns, with each row padded to align with the widest entry.
 
-🕚 At 11:27 PM, a manual workflow dispatch (run number 546) started. 🔄 It pulled the vault with the padded table. ❌ The parser checked for the exact substring pipe space Page space pipe as an infix of the section text, but the padded header had many spaces between Page and the next pipe. 🚫 The check failed, so the parser fell through to the bullet-list parser, which found nothing. 📭 With zero parsed entries, the merge produced only the new entries from that run.
+🕚 At 11:27 PM, a manual workflow dispatch (run number 546) started. 🔄 It pulled the vault with the padded table. ❌ The parser looked for the header cell Page surrounded by vertical bars with single spaces, but the padded header had dozens of spaces between Page and the next vertical bar. 🚫 The check failed, so the parser fell through to the bullet-list parser, which found nothing. 📭 With zero parsed entries, the merge produced only the new entries from that run.
 
 🕦 At 11:36 PM, while run 546 was still running, the scheduled hourly run (number 547) also started. 📥 It pulled the same padded vault. ❌ The same parser failure occurred.
 

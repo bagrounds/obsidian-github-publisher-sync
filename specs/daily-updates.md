@@ -31,13 +31,16 @@
          ↓
 📂 Collect modified file paths + build typed UpdateDetail values
          ↓
-🔧 addUpdateLinksToReflection(vaultDir, date, [UpdateLink])
+🔧 addUpdateLinksToReflection(vaultDir, Day, [UpdateLink])
          ↓
 📄 Ensure daily reflection exists (create from template if missing)
          ↓
-📁 Ensure changes directory exists (with index.md)
+📁 Ensure changes directory exists (with index.md + Dataview query)
          ↓
 📄 Ensure changes page exists (changes/YYYY-MM-DD.md)
+   ├── 🔍 Find previous changes page date
+   ├── 📄 Create page with backward link to previous
+   └── ⏭️ Add forward link to previous changes page
          ↓
 📄 Read today's changes page
          ↓
@@ -66,9 +69,13 @@ aliases:
 title: "YYYY-MM-DD"
 URL: "https://bagrounds.org/changes/YYYY-MM-DD"
 ---
-[[index|Home]] > [[changes/index|Changes]] | [[reflections/YYYY-MM-DD|🪞]]
+[[index|Home]] > [[changes/index|Changes]] | [[reflections/YYYY-MM-DD|🪞 YYYY-MM-DD]] | [[changes/PREV-DATE|⏮️]]
 # YYYY-MM-DD
 ```
+
+🧭 The reflection backlink includes both the mirror emoji and the date for clarity.
+🔗 Forward and backward navigation links (⏭️ and ⏮️) are added between consecutive changes pages, following the same pattern used for reflections.
+📎 When a new changes page is created, the previous changes page receives a forward link.
 
 📑 The index page follows this template:
 
@@ -82,7 +89,16 @@ URL: "https://bagrounds.org/changes"
 ---
 [[index|Home]]
 # 🔄 Changes
+
+\`\`\`dataview
+LIST WITHOUT ID link(file.path, file.frontmatter.title)
+FROM "changes"
+WHERE file.name != this.file.name
+SORT file.name DESC
+\`\`\`
 ```
+
+📊 The index uses a Dataview query to automatically list all changes pages, newest first.
 
 ## 🪞 Reflection Integration
 
@@ -112,7 +128,7 @@ aliases:
 title: "2026-03-28"
 URL: "https://bagrounds.org/changes/2026-03-28"
 ---
-[[index|Home]] > [[changes/index|Changes]] | [[reflections/2026-03-28|🪞]]
+[[index|Home]] > [[changes/index|Changes]] | [[reflections/2026-03-28|🪞 2026-03-28]]
 # 2026-03-28
 
 ## 🔄 Updates
@@ -151,18 +167,20 @@ URL: "https://bagrounds.org/changes/2026-03-28"
 | 🔧 Function | 📝 Purpose |
 |---|---|
 | `addUpdateLinks(content, links)` | 📎 Parse existing section → merge new entries → render table with stats |
-| `buildChangesPageContent(date)` | 📄 Build the frontmatter, nav, and heading for a changes page |
-| `buildChangesIndexContent` | 📑 Build the index page for the changes directory |
+| `buildChangesPageContent(date, previousDate)` | 📄 Build the frontmatter, nav (with backward link), and heading for a changes page. Date parameter is `Day`. |
+| `buildChangesIndexContent` | 📑 Build the index page with a Dataview query for the changes directory |
+| `addChangesForwardLink(content, targetDate)` | ⏭️ Add a forward navigation link to a changes page |
 
 ### 💾 I/O Functions
 
 | 🔧 Function | 📝 Purpose |
 |---|---|
 | `extractTitleFromFile(filePath)` | 📄 Reads a file and extracts its title from frontmatter |
-| `addUpdateLinksToReflection(vaultDir, date, links)` | 🎯 Orchestrator: ensure reflection and changes page exist → write updates to changes page → link reflection |
+| `addUpdateLinksToReflection(vaultDir, date, links)` | 🎯 Orchestrator: ensure reflection and changes page exist → write updates to changes page → link reflection. Date parameter is `Day`. |
 | `ensureChangesDirectory(changesDir)` | 📁 Create changes directory and index if missing |
-| `ensureChangesPage(changesDir, date)` | 📄 Create changes page from template if missing |
+| `ensureChangesPage(changesDir, date)` | 📄 Create changes page from template if missing, add forward link to previous page. Date parameter is `Day`. |
 | `ensureChangesLinkInReflection(reflectionPath, date)` | 🔗 Add changes link to reflection if not already present |
+| `findPreviousChangesDate(changesDir, today)` | 🔍 Find the most recent changes page date before today |
 
 ## 🛡️ Data Loss Prevention
 
@@ -214,9 +232,10 @@ URL: "https://bagrounds.org/changes/2026-03-28"
 - 📐 Obsidian-formatted table with column padding
 - 🔀 Mixed wiki and markdown links in same table
 - 📂 Updates written to changes page instead of reflection
-- 📑 Changes index page creation
+- 📑 Changes index page creation with Dataview query
 - 🔗 Changes link added to reflection
-- 📄 Changes page frontmatter and navigation
+- 📄 Changes page frontmatter and navigation with date in reflection backlink
+- ⏭️ Forward and backward navigation links between consecutive changes pages
 
 🔬 Tests in `haskell/test/Automation/DailyReflectionTest.hs` covering:
 - 🔗 Changes link included in new reflection template

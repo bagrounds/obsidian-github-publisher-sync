@@ -4,6 +4,7 @@ import Data.List (find)
 import Data.Text (Text)
 import qualified Data.Text as T
 import qualified Data.Text.IO as TIO
+import Data.Time (fromGregorian)
 import System.Directory (createDirectoryIfMissing)
 import System.FilePath ((</>))
 import System.IO.Temp (withSystemTempDirectory)
@@ -461,104 +462,134 @@ addUpdateLinksToReflectionTests = testGroup "addUpdateLinksToReflection"
   [ testCase "writes updates to changes page and links reflection" $
       withSystemTempDirectory "daily-updates-test" $ \tmpDir -> do
         let reflDir = tmpDir </> "reflections"
+            testDate = fromGregorian 2026 3 28
         createDirectoryIfMissing True reflDir
 
         TIO.writeFile (reflDir </> "2026-03-28.md") "---\ntitle: 2026-03-28\n---\n\n# Reflection\n"
 
-        modified <- addUpdateLinksToReflection tmpDir "2026-03-28"
+        modified <- addUpdateLinksToReflection tmpDir testDate
                       [UpdateLink (testRelativePath "ai-blog/post.md") (testTitle "A Post") [ImageAdded]]
         assertBool "should report modification" modified
 
         changesContent <- TIO.readFile (tmpDir </> "changes" </> "2026-03-28.md")
-        assertBool "changes has updates header" (T.isInfixOf "## 🔄 Updates" changesContent)
+        assertBool "changes has updates header" (T.isInfixOf "## \128260 Updates" changesContent)
         assertBool "changes has page link" (T.isInfixOf "[[ai-blog/post\\|A Post]]" changesContent)
         assertBool "changes has table format" (T.isInfixOf "| Page |" changesContent)
-        assertBool "changes has stats with legend" (T.isInfixOf "📊 1 page · 1 🖼️ images" changesContent)
+        assertBool "changes has stats with legend" (T.isInfixOf "\128202 1 page \183 1 \128444\65039 images" changesContent)
 
         reflContent <- TIO.readFile (reflDir </> "2026-03-28.md")
-        assertBool "reflection has changes link" (T.isInfixOf "[[changes/2026-03-28|🔄 Changes]]" reflContent)
+        assertBool "reflection has changes link" (T.isInfixOf "[[changes/2026-03-28|\128260 Changes]]" reflContent)
         assertBool "reflection does not have updates table" (not (T.isInfixOf "| Page |" reflContent))
 
-  , testCase "creates changes index page" $
+  , testCase "creates changes index page with dataview" $
       withSystemTempDirectory "daily-updates-test" $ \tmpDir -> do
         let reflDir = tmpDir </> "reflections"
+            testDate = fromGregorian 2026 3 28
         createDirectoryIfMissing True reflDir
         TIO.writeFile (reflDir </> "2026-03-28.md") "---\ntitle: 2026-03-28\n---\n\n# Reflection\n"
 
-        _ <- addUpdateLinksToReflection tmpDir "2026-03-28"
+        _ <- addUpdateLinksToReflection tmpDir testDate
                [UpdateLink (testRelativePath "page.md") (testTitle "A Page") [ImageAdded]]
 
         indexContent <- TIO.readFile (tmpDir </> "changes" </> "index.md")
-        assertBool "index has title" (T.isInfixOf "🔄 Changes" indexContent)
+        assertBool "index has title" (T.isInfixOf "\128260 Changes" indexContent)
         assertBool "index has home link" (T.isInfixOf "[[index|Home]]" indexContent)
+        assertBool "index has dataview block" (T.isInfixOf "```dataview" indexContent)
+        assertBool "index has FROM clause" (T.isInfixOf "FROM \"changes\"" indexContent)
+        assertBool "index has LIST query" (T.isInfixOf "LIST WITHOUT ID" indexContent)
 
   , testCase "returns false when details already present in table format" $
       withSystemTempDirectory "daily-updates-test" $ \tmpDir -> do
         let reflDir = tmpDir </> "reflections"
+            testDate = fromGregorian 2026 3 28
         createDirectoryIfMissing True reflDir
 
         TIO.writeFile (reflDir </> "2026-03-28.md") "---\ntitle: 2026-03-28\n---\n\n# Reflection\n"
 
-        _ <- addUpdateLinksToReflection tmpDir "2026-03-28"
+        _ <- addUpdateLinksToReflection tmpDir testDate
                [UpdateLink (testRelativePath "ai-blog/post.md") (testTitle "A Post") [ImageAdded]]
 
-        modified <- addUpdateLinksToReflection tmpDir "2026-03-28"
+        modified <- addUpdateLinksToReflection tmpDir testDate
                       [UpdateLink (testRelativePath "ai-blog/post.md") (testTitle "A Post") [ImageAdded]]
         assertBool "should report no modification" (not modified)
 
   , testCase "returns false for empty links" $
       withSystemTempDirectory "daily-updates-test" $ \tmpDir -> do
-        modified <- addUpdateLinksToReflection tmpDir "2026-03-28" []
+        let testDate = fromGregorian 2026 3 28
+        modified <- addUpdateLinksToReflection tmpDir testDate []
         assertBool "should report no modification" (not modified)
 
   , testCase "different operations accumulate details under same page" $
       withSystemTempDirectory "daily-updates-test" $ \tmpDir -> do
         let reflDir = tmpDir </> "reflections"
+            testDate = fromGregorian 2026 3 28
         createDirectoryIfMissing True reflDir
 
         TIO.writeFile (reflDir </> "2026-03-28.md") "---\ntitle: 2026-03-28\n---\n\n# Reflection\n"
 
-        _ <- addUpdateLinksToReflection tmpDir "2026-03-28"
+        _ <- addUpdateLinksToReflection tmpDir testDate
                [UpdateLink (testRelativePath "page.md") (testTitle "My Page") [ImageAdded]]
-        _ <- addUpdateLinksToReflection tmpDir "2026-03-28"
+        _ <- addUpdateLinksToReflection tmpDir testDate
                [UpdateLink (testRelativePath "page.md") (testTitle "My Page") [PostedTo Bluesky]]
 
         content <- TIO.readFile (tmpDir </> "changes" </> "2026-03-28.md")
         assertBool "has page link" (T.isInfixOf "[[page\\|My Page]]" content)
-        assertBool "has image column" (T.isInfixOf "🖼️" content)
-        assertBool "has bluesky column" (T.isInfixOf "🦋" content)
-        assertBool "stats show both" (T.isInfixOf "1 🖼️ images" content && T.isInfixOf "1 🦋 Bluesky" content)
+        assertBool "has image column" (T.isInfixOf "\128444\65039" content)
+        assertBool "has bluesky column" (T.isInfixOf "\129419" content)
+        assertBool "stats show both" (T.isInfixOf "1 \128444\65039 images" content && T.isInfixOf "1 \129419 Bluesky" content)
 
   , testCase "different pages create separate table rows" $
       withSystemTempDirectory "daily-updates-test" $ \tmpDir -> do
         let reflDir = tmpDir </> "reflections"
+            testDate = fromGregorian 2026 3 28
         createDirectoryIfMissing True reflDir
 
         TIO.writeFile (reflDir </> "2026-03-28.md") "---\ntitle: 2026-03-28\n---\n\n# Reflection\n"
 
-        _ <- addUpdateLinksToReflection tmpDir "2026-03-28"
+        _ <- addUpdateLinksToReflection tmpDir testDate
                [UpdateLink (testRelativePath "img.md") (testTitle "Image Page") [ImageAdded]]
-        _ <- addUpdateLinksToReflection tmpDir "2026-03-28"
+        _ <- addUpdateLinksToReflection tmpDir testDate
                [UpdateLink (testRelativePath "social.md") (testTitle "Social Page") [PostedTo Bluesky]]
 
         content <- TIO.readFile (tmpDir </> "changes" </> "2026-03-28.md")
         assertBool "has image page" (T.isInfixOf "[[img\\|Image Page]]" content)
         assertBool "has social page" (T.isInfixOf "[[social\\|Social Page]]" content)
-        assertBool "stats show 2 pages" (T.isInfixOf "📊 2 pages" content)
+        assertBool "stats show 2 pages" (T.isInfixOf "\128202 2 pages" content)
 
   , testCase "changes page has proper frontmatter and nav" $
       withSystemTempDirectory "daily-updates-test" $ \tmpDir -> do
         let reflDir = tmpDir </> "reflections"
+            testDate = fromGregorian 2026 3 28
         createDirectoryIfMissing True reflDir
         TIO.writeFile (reflDir </> "2026-03-28.md") "---\ntitle: 2026-03-28\n---\n\n# Reflection\n"
 
-        _ <- addUpdateLinksToReflection tmpDir "2026-03-28"
+        _ <- addUpdateLinksToReflection tmpDir testDate
                [UpdateLink (testRelativePath "page.md") (testTitle "A Page") [ImageAdded]]
 
         content <- TIO.readFile (tmpDir </> "changes" </> "2026-03-28.md")
         assertBool "has frontmatter" (T.isPrefixOf "---" content)
         assertBool "has share true" (T.isInfixOf "share: true" content)
         assertBool "has URL" (T.isInfixOf "https://bagrounds.org/changes/2026-03-28" content)
-        assertBool "has reflection backlink" (T.isInfixOf "[[reflections/2026-03-28|🪞]]" content)
+        assertBool "has reflection backlink with date" (T.isInfixOf "[[reflections/2026-03-28|\129694 2026-03-28]]" content)
         assertBool "has changes index link" (T.isInfixOf "[[changes/index|Changes]]" content)
+
+  , testCase "adds forward link to previous changes page" $
+      withSystemTempDirectory "daily-updates-test" $ \tmpDir -> do
+        let reflDir = tmpDir </> "reflections"
+            day1 = fromGregorian 2026 3 27
+            day2 = fromGregorian 2026 3 28
+        createDirectoryIfMissing True reflDir
+        TIO.writeFile (reflDir </> "2026-03-27.md") "---\ntitle: 2026-03-27\n---\n\n# Reflection\n"
+        TIO.writeFile (reflDir </> "2026-03-28.md") "---\ntitle: 2026-03-28\n---\n\n# Reflection\n"
+
+        _ <- addUpdateLinksToReflection tmpDir day1
+               [UpdateLink (testRelativePath "page1.md") (testTitle "Page 1") [ImageAdded]]
+        _ <- addUpdateLinksToReflection tmpDir day2
+               [UpdateLink (testRelativePath "page2.md") (testTitle "Page 2") [ImageAdded]]
+
+        prevContent <- TIO.readFile (tmpDir </> "changes" </> "2026-03-27.md")
+        assertBool "previous page has forward link" (T.isInfixOf "\11157\65039" prevContent)
+
+        nextContent <- TIO.readFile (tmpDir </> "changes" </> "2026-03-28.md")
+        assertBool "next page has backward link" (T.isInfixOf "\11140\65039" nextContent)
   ]

@@ -11,7 +11,7 @@ import qualified Test.QuickCheck as QC
 import qualified Automation.Gemini as Gemini
 import Automation.BlogSeriesConfig (BlogSeriesConfig (..))
 import Automation.BlogSeriesDiscovery
-import Automation.ContextQuery (ContextQuery (..), ContextScope (..), SelectionStrategy (..), defaultContextQueries)
+import Automation.ContextQuery (ContextQuery (..), defaultContextQueries)
 import Automation.Scheduler (TaskId (..), ScheduleEntry (..), BlogSeriesRunConfig (..))
 
 tests :: TestTree
@@ -173,18 +173,24 @@ validationTests = testGroup "validation"
       dsPriorityUser (unsafeParse "test" configNoPriorityUser) @?= Nothing
 
   , testCase "parses config with contextSources" $
-      dsContextQueries (unsafeParse "test" configWithCrossSeries)
-        @?= [ContextQuery Self (Latest 7), ContextQuery OtherSeries (LatestPerSeries 1)]
+      let queries = dsContextQueries (unsafeParse "test" configWithCrossSeries)
+      in case queries of
+        [first, second] -> do
+          cqFrom first @?= ["test"]
+          cqLimit first @?= Just 7
+          cqFrom second @?= ["other-a", "other-b"]
+          cqLimitPerSource second @?= Just 1
+        _ -> assertBool ("expected 2 queries, got " <> show (length queries)) False
 
   , testCase "missing contextSources defaults to defaultContextQueries" $
-      dsContextQueries (unsafeParse "test" configNoPriorityUser) @?= defaultContextQueries
+      dsContextQueries (unsafeParse "test" configNoPriorityUser) @?= defaultContextQueries "test"
 
   , testCase "absent contextSources uses defaultContextQueries" $
-      dsContextQueries (unsafeParse "test" configWithCrossSeriesFalse) @?= defaultContextQueries
+      dsContextQueries (unsafeParse "test" configWithCrossSeriesFalse) @?= defaultContextQueries "test"
 
   , testCase "deriveBlogSeriesConfig preserves contextQueries" $ do
       let config = deriveBlogSeriesConfig (unsafeParse "test" configWithCrossSeries)
-      bscContextQueries config @?= [ContextQuery Self (Latest 7), ContextQuery OtherSeries (LatestPerSeries 1)]
+      length (bscContextQueries config) @?= 2
 
   , testCase "deriveBlogSeriesConfig preserves empty contextQueries" $ do
       let config = deriveBlogSeriesConfig sampleDiscovered
@@ -305,7 +311,7 @@ configWithCrossSeries = T.unlines
   , "  \"icon\": \"\128279\","
   , "  \"scheduleHourPacific\": 10,"
   , "  \"models\": [\"gemini-2.5-flash\"],"
-  , "  \"contextSources\": [{\"from\": \"self\", \"latest\": 7}, {\"from\": \"others\", \"latestPerSeries\": 1}]"
+  , "  \"contextSources\": [{\"from\": [\"test\"], \"limit\": 7}, {\"from\": [\"other-a\", \"other-b\"], \"limitPerSource\": 1}]"
   , "}"
   ]
 
@@ -344,7 +350,7 @@ genDiscoveredSeries = do
   icon <- QC.elements ["\129793", "\129302", "\128020", "\127963\65039", "\127925"]
   priorityUser <- QC.oneof [pure Nothing, Just . T.pack <$> QC.listOf1 (QC.elements ['a'..'z'])]
   hour <- QC.choose (0, 23)
-  contextQueries <- QC.elements [[], defaultContextQueries]
+  contextQueries <- QC.elements [[], defaultContextQueries seriesId]
   pure DiscoveredSeries
     { dsId = seriesId
     , dsName = name

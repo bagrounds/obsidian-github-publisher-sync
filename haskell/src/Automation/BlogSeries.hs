@@ -25,7 +25,7 @@ import Automation.BlogPrompt
   , filterCommentsAfterLastPost
   )
 import Automation.BlogSeriesConfig (BlogSeriesConfig (..), lookupSeriesIn)
-import Automation.ContextQuery (SeriesInfo (..), evaluateQueries)
+import Automation.ContextQuery (evaluateQueries)
 import Automation.Frontmatter (quoteYamlValue)
 import Automation.Wikilink (buildForwardLink)
 import Data.Map.Strict (Map)
@@ -38,8 +38,8 @@ buildBlogContext seriesMap seriesId contentRoot comments today =
     Left reason -> pure (Left reason)
     Right series -> do
       let seriesDir = contentRoot </> T.unpack seriesId
-          seriesInfoMap = Map.map toSeriesInfo seriesMap
-      (selfPosts, crossPosts) <- evaluateQueries seriesId contentRoot seriesInfoMap (bscContextQueries series)
+          seriesMetadata = fmap toMetadataTuple (Map.elems seriesMap)
+      (selfPosts, crossPosts) <- evaluateQueries seriesId contentRoot seriesMetadata (bscContextQueries series)
       agentsMd <- readAgentsMd seriesDir
       let filteredComments = filterCommentsAfterLastPost series selfPosts comments
       pure $ Right BlogContext
@@ -51,12 +51,8 @@ buildBlogContext seriesMap seriesId contentRoot comments today =
         , bcxCrossSeriesPosts = crossPosts
         }
 
-toSeriesInfo :: BlogSeriesConfig -> SeriesInfo
-toSeriesInfo config = SeriesInfo
-  { siId   = bscId config
-  , siName = bscName config
-  , siIcon = bscIcon config
-  }
+toMetadataTuple :: BlogSeriesConfig -> (Text, Text, Text)
+toMetadataTuple config = (bscId config, bscName config, bscIcon config)
 
 generateSeriesIndex :: BlogSeriesConfig -> Text
 generateSeriesIndex series =

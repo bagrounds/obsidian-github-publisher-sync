@@ -122,7 +122,7 @@ validateRawConfig filePath seriesId RawConfig{..} =
           , dsPriorityUser = rcPriorityUser
           , dsScheduleTime = TimeOfDay rcScheduleHourPacific 0 0
           , dsModels = Gemini.modelFromText firstModel :| fmap Gemini.modelFromText restModels
-          , dsContextQueries = fromMaybe defaultContextQueries rcContextSources
+          , dsContextQueries = fromMaybe (defaultContextQueries seriesId) rcContextSources
           }
       _ -> Left errors
     else Left errors

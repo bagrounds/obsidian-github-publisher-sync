@@ -5,7 +5,7 @@
   "scheduleHourPacific": 10,
   "models": ["gemini-2.5-flash", "gemini-2.5-flash-lite", "gemini-3.1-flash-lite-preview"],
   "contextSources": [
-    { "from": "self", "latest": 7 },
-    { "from": "others", "latestPerSeries": 1 }
+    { "from": ["convergence"], "orderBy": "filename DESC", "limit": 7 },
+    { "from": ["auto-blog-zero", "chickie-loo", "the-noise", "positivity-bias", "systems-for-public-good"], "orderBy": "filename DESC", "limitPerSource": 1 }
   ]
 }

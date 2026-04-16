@@ -12,7 +12,7 @@ URL: https://bagrounds.org/ai-blog/2026-04-16-2-changes-directory
 
 📋 Every time an automated task modified a file in the vault, such as backfilling a blog image, adding internal links, or posting to social media, the system appended a row to an updates table directly inside the daily reflection note.
 
-🪟 Over time, these tables grew large. A busy day might accumulate dozens of rows tracking image additions, link insertions, and social media posts across many pages.
+📈 Over time, these tables grew large. A busy day might accumulate dozens of rows tracking image additions, link insertions, and social media posts across many pages.
 
 🐌 The Enveloppe Obsidian plugin, which syncs the vault to GitHub, spent considerable time checking every wiki link in the reflection. Since the updates table was packed with links to pages across the entire vault, each reflection became an expensive file to process.
 

@@ -7,8 +7,9 @@ share: true
 affiliate link: https://amzn.to/3SzzP46
 updated: 2026-03-12T20:09:57.166Z
 force_analyze_links: false
-link_analysis_time: 2026-03-22T23:35:08.563Z
+link_analysis_time: 2026-04-16T00:00:00Z
 link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_version: "2"
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🔮🎨🔬 Superforecasting: The Art and Science of Prediction  

@@ -5,10 +5,10 @@ aliases:
 title: 📺 Videos
 URL: https://bagrounds.org/videos
 backlinks: false
-updated: 2026-04-16T09:04:31-07:00
+updated: 2026-04-16T13:39:17-07:00
 ---
 [Home](../index.md)  
-# 📺 Videos (757)  
+# 📺 Videos (758)  
 - [💰🤑🤖💡🚀💲 $0.10/Month Runs My Entire AI Life. I'll Show You How.](./0-10-month-runs-my-entire-ai-life-ill-show-you-how.md)  
 - [📊📈📉📃👁️ 10 Charts to Understand the 900 Page Budget Bill](./10-charts-to-understand-the-900-page-budget-bill.md)  
 - [🤖🔗⬆️✅ 12-Factor Agents: Patterns of reliable LLM applications — Dex Horthy, HumanLayer](./12-factor-agents-patterns-of-reliable-llm-applications-dex-horthy-humanlayer.md)  
@@ -232,6 +232,7 @@ updated: 2026-04-16T09:04:31-07:00
 - [History Professor Answers Dictator Questions | Tech Support | WIRED](./history-professor-answers-dictator-questions-tech-support-wired.md)  
 - [🌱👨‍👩‍👧‍👦🍎 How a 1/8 Acre Garden Feeds a Family of 6 ALL YEAR!](./how-a-1-8-acre-garden-feeds-a-family-of-6-all-year.md)  
 - [How AI Cracked the Protein Folding Code and Won a Nobel Prize](./how-ai-cracked-the-protein-folding-code-and-won-a-nobel-prize.md)  
+- [🇺🇸💸🌍 How America Is Losing the World | Lunch Money with Paul Krugman and Heather Cox Richardson](./how-america-is-losing-the-world-lunch-money-with-paul-krugman-and-heather-cox-richardson.md)  
 - [🧠🇺🇸🌱 How America recovers from all this | Yale Conversations with David Brooks | Yale University](./how-america-recovers-from-all-this-yale-conversations-with-david-brooks-yale-university.md)  
 - [How automakers are navigating Trump’s tariffs on imported vehicles and parts](./how-automakers-are-navigating-trumps-tariffs-on-imported-vehicles-and-parts.md)  
 - [😴👶🧪 How Babies Sleep: The Gentle, Science-Based… by Sofia Axelrod · Audiobook preview](./how-babies-sleep-the-gentle-science-based-by-sofia-axelrod-audiobook-preview.md)  

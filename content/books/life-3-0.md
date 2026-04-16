@@ -13,9 +13,13 @@ force_analyze_links: false
 link_analysis_time: 2026-04-15T00:00:00Z
 link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_version: "2"
+image_date: 2026-04-16T19:38:47Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: "A conceptual, high-contrast illustration featuring a stylized, translucent human silhouette standing in the center. Inside the silhouette, a complex network of glowing, golden neural pathways transitions into intricate, geometric digital circuitry toward the chest and head. The background is a deep, cosmic indigo, suggesting the vastness of the universe. Floating around the figure are abstract, floating elements representing Life 3.0: subtle, translucent DNA helices blending into pixelated data streams and glowing geometric spheres. The lighting is ethereal, emanating from within the figure, casting soft highlights on the surrounding technological fragments to symbolize the bridge between biological evolution and artificial intelligence. The overall aesthetic is clean, modern, and cerebral, emphasizing the fusion of humanity and machine."
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🧬👥💾 Life 3.0: Being Human in the Age of Artificial Intelligence  
+![books-life-3-0](../books-life-3-0.jpg)  
 [🛒 Life 3.0: Being Human in the Age of Artificial Intelligence. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4kmDGNV)  
   
 ## 🤖 Book Report: Life 3.0: Being Human in the Age of Artificial Intelligence  

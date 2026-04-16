@@ -10,9 +10,13 @@ updated: 2026-03-13T10:11:24.683Z
 force_analyze_links: false
 link_analysis_time: 2026-03-22T23:32:01.992Z
 link_analysis_model: gemini-3.1-flash-lite-preview
+image_date: 2026-04-16T19:38:51Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A minimalist, high-contrast illustration featuring a stylized, translucent glass human head silhouette on the left, representing human judgment. Inside the head, glowing, interconnected nodes and neural pathways pulse with soft light. On the right, a sleek, geometric machine arm or robotic component is precisely placing a glowing, golden data cube into a central slot within the human silhouette. The background is a deep, clean navy blue, emphasizing a sense of clarity and modern technical sophistication. The composition uses thin, elegant lines to connect the machine’s precision to the human’s decision-making process, symbolizing the synergy between AI prediction and human oversight. No text, icons, or labels are present.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🤖📈 Prediction Machines: The Simple Economics of Artificial Intelligence  
+![books-prediction-machines-the-simple-economics-of-artificial-intelligence](../books-prediction-machines-the-simple-economics-of-artificial-intelligence.jpg)  
 [🛒 Prediction Machines: The Simple Economics of Artificial Intelligence. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4h2i3Sm)  
   
 ## 🤖 AI Summary  

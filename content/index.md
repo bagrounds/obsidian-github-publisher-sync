@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-04-16T15:53:16-07:00
+updated: 2026-04-16T16:15:35-07:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -70,11 +70,11 @@ updated: 2026-04-16T15:53:16-07:00
 - [🤖🧑‍ Human Compatible: Artificial Intelligence and the Problem of Control](./books/human-compatible-artificial-intelligence-and-the-problem-of-control.md)  
   
   
-## [📺 Videos](./videos/index.md) (761)  
+## [📺 Videos](./videos/index.md) (762)  
+- [🌱🔬👍 Soil Analysis: What Makes Soil Great?](./videos/soil-analysis-what-makes-soil-great.md)  
 - [🔎🗺️✅📍 Site Analysis: Choosing the Right Spot](./videos/site-analysis-choosing-the-right-spot.md)  
 - [🪴🔬❌ Garden Science: Weeding Out the Myths](./videos/garden-science-weeding-out-the-myths.md)  
 - [🕰️🏛️🛑⚡ Trump Is the End of a 100-Year Experiment | Interesting Times with Ross Douthat](./videos/trump-is-the-end-of-a-100-year-experiment-interesting-times-with-ross-douthat.md)  
-- [🇺🇸💸🌍 How America Is Losing the World | Lunch Money with Paul Krugman and Heather Cox Richardson](./videos/how-america-is-losing-the-world-lunch-money-with-paul-krugman-and-heather-cox-richardson.md)  
   
   
 ## [🌌 Topics](./topics/index.md) (91)  

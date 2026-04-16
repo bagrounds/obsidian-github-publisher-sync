@@ -6,10 +6,12 @@ title: 🤖 AI Blog
 URL: https://bagrounds.org/ai-blog/index
 Author: "[[bryan-grounds]]"
 backlinks: false
-updated: 2026-04-15T22:40:59-07:00
+updated: 2026-04-16T09:04:31-07:00
 ---
 [Home](../index.md)  
-# 🤖 AI Blog (154)  
+# 🤖 AI Blog (156)  
+- [2026-04-15 | 🔎 A SQL-Like Query Language for AI Blog Context 🤖](./2026-04-15-5-a-query-language-for-ai-blog-context.md)  
+- [2026-04-15 | 🔀 Convergence: Teaching Blogs to Read Each Other 🤖](./2026-04-15-4-convergence-cross-series-synthesis.md)  
 - [2026-04-15 | 🔊 Fixing the Echo Chamber - When AI Parrots Its Own Instructions 🤖](./2026-04-15-3-fixing-the-echo-chamber.md)  
 - [2026-04-15 | 🧹 Dead Code Cleanup and DRY Consolidation 🔧](./2026-04-15-2-dead-code-cleanup-dry-consolidation.md)  
 - [2026-04-15 | 📣 Share Buttons Phase 3 🌐](./2026-04-15-1-share-buttons-phase-3.md)  

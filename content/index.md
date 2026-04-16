@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-04-16T09:04:31-07:00
+updated: 2026-04-16T13:39:17-07:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -42,11 +42,11 @@ updated: 2026-04-16T09:04:31-07:00
 - [2026-04-13 | 🐔 🌾 Ashes, Anniversaries, and the Rhythm of the Ranch 🐔](./chickie-loo/2026-04-13-ashes-anniversaries-and-the-rhythm-of-the-ranch.md)  
   
   
-## [🏛️ Systems for Public Good](./systems-for-public-good/index.md) (25)  
+## [🏛️ Systems for Public Good](./systems-for-public-good/index.md) (26)  
+- [2026-04-16 | 🏛️ 🚌 The Pathways to Opportunity: Public Transit as a Liberator 🏛️](./systems-for-public-good/2026-04-16-the-pathways-to-opportunity-public-transit-as-a-liberator.md)  
 - [2026-04-15 | 🏛️ 🚨 The Shield of Community: Public Safety as a Foundational Public Good 🏛️](./systems-for-public-good/2026-04-15-the-shield-of-community-public-safety-as-a-foundational-public-good.md)  
 - [2026-04-14 | 🏛️ 💧 The Invisible Infrastructure: Clean Air and Water as Foundational Public Goods 🏛️](./systems-for-public-good/2026-04-14-the-invisible-infrastructure-clean-air-and-water-as-foundational-public-goods.md)  
 - [2026-04-13 | 🏛️ 🌳 Nature's Embrace: Public Parks as a Universal Right 🏛️](./systems-for-public-good/2026-04-13-nature-s-embrace-public-parks-as-a-universal-right.md)  
-- [2026-04-12 | 🏛️ 🗺️ Navigating Our Collective Well-being: A Week of Foundational Investments 🏛️](./systems-for-public-good/2026-04-12-navigating-our-collective-well-being-a-week-of-foundational-investments.md)  
   
   
 ## [📰 The Noise](./the-noise/index.md) (7)  
@@ -64,17 +64,17 @@ updated: 2026-04-16T09:04:31-07:00
   
   
 ## [📚 Books](./books/index.md) (959)  
-- [💗 Self-Compassion](./books/self-compassion.md)  
-- [🏛️🛡️ Democracy or Else: How to Save America in 10 Easy Steps](./books/democracy-or-else.md)  
-- [👥⚔️🏛️ The People vs. Democracy: Why Our 🗽 Freedom Is in ⚠️ Danger and How to Save It](./books/the-people-vs-democracy.md)  
-- [🏛️🗳️🗣️🤝 On Democracy](./books/on-democracy.md)  
+- [⚙️🧠 The Systems Thinking Playbook: Exercises to Stretch and Build Learning and Systems Thinking Capabilities](./books/the-systems-thinking-playbook-exercises-to-stretch-and-build-learning-and-systems-thinking-capabilities.md)  
+- [🌐🧭❓🔍🗺️ Complexity: A Guided Tour](./books/complexity.md)  
+- [🧶✔️ Six Simple Rules: How to Manage Complexity without Getting Complicated](./books/six-simple-rules.md)  
+- [💃➡️ Beginning Modern Dance](./books/beginning-modern-dance.md)  
   
   
-## [📺 Videos](./videos/index.md) (757)  
+## [📺 Videos](./videos/index.md) (758)  
+- [🇺🇸💸🌍 How America Is Losing the World | Lunch Money with Paul Krugman and Heather Cox Richardson](./videos/how-america-is-losing-the-world-lunch-money-with-paul-krugman-and-heather-cox-richardson.md)  
 - [❓🔥🧾🚫 'What Did That Accomplish?': Don Beyer Grills IRS CEO Over Ending Of IRS Direct File](./videos/what-did-that-accomplish-don-beyer-grills-irs-ceo-over-ending-of-irs-direct-file.md)  
 - [🤯🧾❓📺 Why Doing Taxes Is So Hard | Patriot Act with Hasan Minhaj | Netflix](./videos/why-doing-taxes-is-so-hard-patriot-act-with-hasan-minhaj-netflix.md)  
 - [🚫🏢👑🔄👥 Corporate America’s Biggest Enemy Will Now Lead Mamdani’s Transition Team](./videos/corporate-americas-biggest-enemy-will-now-lead-mamdanis-transition-team.md)  
-- [🤖🧠🚀 What you must know before AGI arrives | Carnegie Mellon University Po-Shen Loh](./videos/what-you-must-know-before-agi-arrives-carnegie-mellon-university-po-shen-loh.md)  
   
   
 ## [🌌 Topics](./topics/index.md) (91)  
@@ -85,17 +85,17 @@ updated: 2026-04-16T09:04:31-07:00
   
   
 ## [📄  Articles](./articles/index.md) (84)  
+- [👀👶🏼🏃🏼‍♀️🛣️ What to Look for in a Jogging Stroller](./articles/what-to-look-for-in-a-jogging-stroller.md)  
+- [🔍🍎🌲📚 Information Foraging Theory](./articles/information-foraging-theory.md)  
 - [🏳️‍⚧️🚫🗣️ Iowa gives final approval to a bill removing gender identity protections despite protests](./articles/iowa-gives-final-approval-to-a-bill-removing-gender-identity-protections-despite-protests.md)  
 - [⚙️🛡️🐛 Making Reliable Distributed Systems in the Presence of Software Errors](./articles/making-reliable-distributed-systems-in-the-presence-of-software-errors.md)  
-- [🪞🇺🇸💔 Mirror, Mirror 2024: A Portrait of the Failing U.S. Health System](./articles/mirror-mirror-2024-a-portrait-of-the-failing-us-health-system.md)  
-- [🗣️🗺️🤖⚙️ Reasoning with Language Model is Planning with World Model](./articles/reasoning-with-language-model-is-planning-with-world-model.md)  
   
   
 ## [🤖💬 Bot Chats](./bot-chats/index.md) (49)  
+- [✍🏼 Blogiversary 🕯️](./bot-chats/blogiversary.md)  
 - [🕸️🪵🏅 Blogging Success](./bot-chats/blogging-success.md)  
 - [🇦🇹💰🆚📈🖨️ Austrian Economics vs Modern Monetary Theory](./bot-chats/austrian-economics-vs-modern-monetary-theory.md)  
 - [🤰🏼👶🍼👨‍👩‍👦 Parenting and Infant Development Guide](./bot-chats/parenting-and-infant-development-guide.md)  
-- [⚙️📝🧹 Obsidian Templater Filename Sanitization](./bot-chats/obsidian-templater-filename-sanitization.md)  
   
   
 ## [💾 Software](./software/index.md) (33)  

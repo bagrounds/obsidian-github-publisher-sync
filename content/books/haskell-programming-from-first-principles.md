@@ -8,11 +8,16 @@ Author:
 tags:
 updated: 2026-03-15T14:10:58.318Z
 link_analysis_model: gemini-3.1-flash-lite-preview
-link_analysis_time: 2026-03-31T00:00:00Z
+link_analysis_time: 2026-04-15T00:00:00Z
 force_analyze_links: false
+link_analysis_version: "2"
+image_date: 2026-04-16T12:29:09Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A clean, minimalist illustration features a central, glowing lambda symbol (λ) in a vibrant, ethereal blue. From its base, a small, stylized seedling with a single bright leaf emerges, firmly rooted in a solid, abstract geometric foundation. Around the lambda, subtle, interconnected lines and transparent geometric shapes hint at a network of logical connections and categories, radiating outward in soft purples and grays. The background is a soft, deep blue gradient, suggesting depth and a calm learning environment. The overall impression is one of elegant simplicity, foundational growth, and profound underlying structure.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🐣🌱👨‍🏫💻 Haskell Programming from First Principles  
+![books-haskell-programming-from-first-principles](../books-haskell-programming-from-first-principles.jpg)  
 ## 🔗 Links  
 - [Haskell Programming from First Principles: What's in the book?](https://haskellbook.com/progress)  
   

@@ -42,7 +42,7 @@
    ├── 🐔 blog-series:chickie-loo      → check exists → pull → generate → image → sync
    ├── 🤖 blog-series:auto-blog-zero   → check exists → pull → generate → image → sync
    ├── 🏛️ blog-series:systems-for-public-good → check exists → pull → generate → image → sync
-   ├── 🔀 blog-series:convergence         → check exists → pull → cross-series read → generate → image → sync
+   ├── 🔀 blog-series:convergence         → check exists → pull → evaluate context queries → generate → image → sync
    ├── 🤖🐲 ai-fiction                  → pull vault → check fiction → generate → push vault
    ├── 🪞 reflection-title             → pull vault → check title → generate → push vault
    ├── 🖼️ backfill-blog-images         → pull → backfill → sync

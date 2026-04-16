@@ -2,29 +2,28 @@
 
 ## 🎯 Overview
 
-🔀 Convergence is a cross-series synthesis blog that reads the latest posts from every other blog series on bagrounds.org and finds hidden connections, tensions, and emergent themes. It is the only series with cross-series awareness — all other series write independently.
+🔀 Convergence is a cross-series synthesis blog that reads the latest posts from every other blog series on bagrounds.org and finds hidden connections, tensions, and emergent themes. It uses the context query engine to pull in posts from all other series, while each other series reads only its own history.
 
 ## 🏗️ Architecture
 
-### 🔗 Cross-Series Context
+### 🔗 Cross-Series Context via Context Queries
 
-🔀 Convergence uses the `crossSeries` flag in its JSON config, which triggers the blog generation pipeline to:
+🔀 Convergence configures `contextSources` in its JSON config with two queries that drive the generation pipeline:
 
-1. 📖 Read the latest post from every other blog series
-2. 📦 Package each post as a `CrossSeriesPost` (series name, icon, latest post)
-3. 📝 Include a "Today Across the Blog" section in the user prompt
-4. 🤖 The AI then synthesizes connections across all series
+1. 📖 `{ "from": "self", "latest": 7 }` — Read up to 7 of its own recent posts for continuity
+2. 📖 `{ "from": "others", "latestPerSeries": 1 }` — Read the latest post from every other series
+3. 📦 Non-self posts are packaged as `CrossSeriesPost` records (series name, icon, latest post)
+4. 📝 A "Today Across the Blog" section is included in the user prompt
+5. 🤖 The AI then synthesizes connections across all series
 
 ### 📊 Data Flow
 
 ```
-discoverSeries → parse convergence.json (crossSeries: true)
+discoverSeries → parse convergence.json (contextSources array)
     ↓
-runBlogSeries → detect bscCrossSeries flag
+evaluateQueries → resolve Self and OtherSeries queries against content directories
     ↓
-readCrossSeriesPosts → read latest post from each other series directory
-    ↓
-buildBlogContext → include CrossSeriesPost list in BlogContext
+buildBlogContext → populate bcxPreviousPosts (self) and bcxCrossSeriesPosts (others)
     ↓
 buildBlogPrompt → add "Today Across the Blog" section to user prompt
     ↓
@@ -33,9 +32,10 @@ Gemini API → generate synthesis post
 
 ### 🧩 Key Types
 
+- `ContextQuery` — A declarative query specifying scope and selection strategy for context posts
 - `CrossSeriesPost` — A post from another series, containing the series name, icon, and the `BlogPost` record
 - `BlogContext.bcxCrossSeriesPosts` — List of cross-series posts included in the generation context
-- `BlogSeriesConfig.bscCrossSeries` — Boolean flag enabling cross-series awareness
+- `BlogSeriesConfig.bscContextQueries` — List of context queries from the JSON config
 
 ## ⚙️ Configuration
 
@@ -46,7 +46,7 @@ Gemini API → generate synthesis post
 | `priorityUser` | bagrounds | Priority comment user |
 | `scheduleHourPacific` | 10 | Generates at 10 AM PT |
 | `models` | gemini-2.5-flash, gemini-2.5-flash-lite, gemini-3.1-flash-lite-preview | Model chain with Google Search grounding |
-| `crossSeries` | true | Enables cross-series context |
+| `contextSources` | self latest 7 and others latestPerSeries 1 | Queries for own history plus latest from all other series |
 
 ## 📐 Post Structure
 
@@ -81,21 +81,23 @@ Gemini API → generate synthesis post
 
 ## 🧪 Testing
 
-- ✅ `crossSeries` JSON parsing: true, false, and missing cases
+- ✅ Context query JSON parsing: `contextSources` arrays with self, others, all, and specific series scopes
+- ✅ `evaluateQueries`: self returns self posts, others excludes self, specific series targets correctly, limits respected
 - ✅ `buildCrossSeriesSection`: empty list, single post, multiple posts, body truncation, embed stripping
 - ✅ `buildBlogPrompt`: includes/excludes cross-series section based on context
-- ✅ `deriveBlogSeriesConfig`: preserves crossSeries flag
-- ✅ Property tests: crossSeries field preserved through discovery pipeline
+- ✅ `deriveBlogSeriesConfig`: preserves context queries through discovery pipeline
+- ✅ Property tests: scope round-trips, SpecificSeries round-trips via parseScope/scopeToText
 
 ## 📁 Files
 
 | 📄 File | 📝 Purpose |
 |---|---|
-| `haskell/series/convergence.json` | Series configuration |
+| `haskell/series/convergence.json` | Series configuration with contextSources |
 | `convergence/AGENTS.md` | System prompt defining synthesis personality |
 | `convergence/2026-04-15-the-observer-awakens.md` | Inaugural seed post |
-| `haskell/src/Automation/BlogPrompt.hs` | CrossSeriesPost type, buildCrossSeriesSection |
-| `haskell/src/Automation/BlogSeries.hs` | readCrossSeriesPosts function |
-| `haskell/src/Automation/BlogSeriesConfig.hs` | bscCrossSeries field |
-| `haskell/src/Automation/BlogSeriesDiscovery.hs` | dsCrossSeries parsing |
+| `haskell/src/Automation/ContextQuery.hs` | ContextQuery types, evaluateQueries engine, CrossSeriesPost |
+| `haskell/src/Automation/BlogPrompt.hs` | buildCrossSeriesSection prompt formatting |
+| `haskell/src/Automation/BlogSeries.hs` | buildBlogContext with query evaluation |
+| `haskell/src/Automation/BlogSeriesConfig.hs` | bscContextQueries field |
+| `haskell/src/Automation/BlogSeriesDiscovery.hs` | contextSources parsing |
 | `specs/convergence.md` | This spec |

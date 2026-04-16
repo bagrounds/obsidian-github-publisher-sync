@@ -53,7 +53,30 @@
 | 🏷️ Field | 📊 Type | 📝 Default | 📝 Description |
 |---|---|---|---|
 | `priorityUser` | string or null | null | GitHub handle whose comments get priority flagging |
-| `crossSeries` | boolean | false | When true, includes latest posts from all other series in the generation context for cross-series synthesis |
+| `contextSources` | array of objects | `[{"from": "self", "latest": 7}]` | Declarative queries specifying which posts to pull into generation context |
+
+### 🔎 Context Query Language
+
+📐 Each element of `contextSources` is a query object with two required properties.
+
+| 🏷️ Field | 📊 Type | 📝 Description |
+|---|---|---|
+| `from` | string | Scope: `"self"` (this series), `"others"` (all other series), `"all"` (every series), or `"series:<id>"` (a specific series) |
+| `latest` | number | Maximum posts total across the scope (mutually exclusive with `latestPerSeries`) |
+| `latestPerSeries` | number | Maximum posts per series within the scope (mutually exclusive with `latest`) |
+
+📝 Exactly one of `latest` or `latestPerSeries` must be specified per query.
+
+📝 When `contextSources` is absent, the default is `[{"from": "self", "latest": 7}]` which reads up to 7 recent posts from the current series, preserving backward compatibility with all existing configs.
+
+📋 Example: a cross-series synthesis blog reads both its own history and the latest from every other series.
+
+```json
+"contextSources": [
+  { "from": "self", "latest": 7 },
+  { "from": "others", "latestPerSeries": 1 }
+]
+```
 
 ### 📄 Example Configuration
 

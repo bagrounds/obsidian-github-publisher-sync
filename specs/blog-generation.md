@@ -171,7 +171,8 @@
 | `todayPacificDay` | PacificTime | 📅 Return today's date as a Day in Pacific time |
 | `readSeriesPosts(seriesDir)` | BlogPosts | 📄 Read and parse all markdown posts from series directory |
 | `readAgentsMd(seriesDir)` | BlogPosts | 📖 Read AGENTS.md system prompt override |
-| `buildBlogContext(seriesMap, seriesId, repoRoot, comments, today)` | BlogSeries | 📚 Assemble complete blog context from discovered config and disk |
+| `buildBlogContext(seriesMap, seriesId, repoRoot, comments, today)` | BlogSeries | 📚 Assemble complete blog context by evaluating context queries from config |
+| `evaluateQueries(seriesId, contentRoot, seriesInfoMap, queries)` | ContextQuery | 🔎 Evaluate context queries to resolve self and cross-series posts |
 | `updatePreviousPost(seriesDir, previousPost, series, nextFilename)` | BlogSeries | 🔗 Update previous post file with forward navigation link |
 
 ## 🧪 Testing

@@ -6,8 +6,9 @@ URL: https://bagrounds.org/books/parenting-from-the-inside-out-how-a-deeper-self
 share: true
 affiliate link: https://amzn.to/4ebCxGV
 link_analysis_model: gemini-3.1-flash-lite-preview
-link_analysis_time: 2026-04-02T00:00:00Z
+link_analysis_time: 2026-04-16T00:00:00Z
 force_analyze_links: false
+link_analysis_version: "2"
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🤱🏼🤿🪞🌱 Parenting from the Inside Out: How a Deeper Self-Understanding Can Help You Raise Children Who Thrive  
@@ -61,7 +62,7 @@ This book is less a "how-to" guide for specific child behaviors and more a "why-
 ### 🎨 Creatively Related Books (Exploring Underlying Concepts)  
   
 * **[🕊️🤝 Nonviolent Communication: A Language of Life](./nonviolent-communication.md)** by Marshall B. Rosenberg. Provides a framework for communication based on needs and feelings, highly relevant to the "mindsight" and communication aspects of *Parenting from the Inside Out*.  
-* 🫂 **Self-Compassion: The Proven Power of Being Kind to Yourself** by Kristin Neff. Directly addresses the importance of self-compassion for parents, a theme that supports the inner work encouraged in Siegel and Hartzell's book.  
+* 🫂 **[💗 Self-Compassion](./self-compassion.md): The Proven Power of Being Kind to Yourself** by Kristin Neff. Directly addresses the importance of self-compassion for parents, a theme that supports the inner work encouraged in Siegel and Hartzell's book.  
 * 👁️ **Mindsight: The New Science of Personal Transformation** by Daniel J. Siegel. Explores the concept of mindsight in a broader context beyond parenting, delving into its neuroscience and applications for personal well-being.  
 * 🧠 **Buddha's Brain: The Practical Neuroscience of Happiness, Love, and Wisdom** by Rick Hanson and Richard Mendius. Connects neuroscience with contemplative practices, offering deeper insight into the brain science mentioned in *Parenting from the Inside Out*.  
 * **[👩🏼‍❤️‍💋‍👨🏻🔗 Attached: The New Science of Adult Attachment and How It Can Help You Find - and Keep - Love](./attached-the-new-science-of-adult-attachment-and-how-it-can-help-you-find-and-keep-love.md)** by Amir Levine and Rachel S.F. Heller. Focuses on adult attachment styles, providing parents with a framework for understanding their own relational patterns which influence parenting.  

@@ -11,9 +11,13 @@ updated: 2026-03-14T20:06:09.031Z
 link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-01T00:00:00Z
 force_analyze_links: false
+image_date: 2026-04-16T18:35:55Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A serene, minimalist illustration of a small, wooden cabin nestled on the quiet, glassy shore of Walden Pond. The scene is bathed in the soft, golden light of early morning mist. Towering, slender pine trees frame the composition, their deep green needles contrasting with the muted earth tones of the forest floor. The water is perfectly still, reflecting the silhouette of the cabin and the vast, clear sky above. The overall aesthetic is one of intentional solitude and peaceful detachment, rendered in a clean, painterly style with soft textures that evoke the feeling of a quiet, reflective morning in nature.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🌲 Walden  
+![books-walden](../books-walden.jpg)  
 [🛒 Walden. As an Amazon Associate I earn from qualifying purchases.](https://www.amazon.com/dp/1787557928?tag=bagrounds-20)  
   
 ## 🤖 AI Summary  

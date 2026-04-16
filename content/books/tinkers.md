@@ -11,9 +11,13 @@ updated: 2026-03-17T12:16:17.445Z
 link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-04T00:00:00Z
 force_analyze_links: false
+image_date: 2026-04-16T09:39:03Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A close-up, atmospheric composition featuring the intricate internal components of an antique pocket watch scattered across a weathered wooden workbench. Brass gears, delicate springs, and tiny screws are arranged in a state of deliberate disarray, catching soft, directional light that highlights the metallic textures. In the background, out of focus, sits a worn leather-bound journal and a single, dried autumn leaf, suggesting the passage of time and the intersection of nature and craftsmanship. The color palette is muted and warm, dominated by sepia tones, deep umber, and metallic gold, evoking a sense of nostalgic, quiet contemplation and the meticulous nature of a life lived in fragments.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🔧🔨⚙️ Tinkers  
+![books-tinkers](../books-tinkers.jpg)  
 [🛒 Tinkers. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/412ASh0)  
   
 ## 🤖 AI Summary  

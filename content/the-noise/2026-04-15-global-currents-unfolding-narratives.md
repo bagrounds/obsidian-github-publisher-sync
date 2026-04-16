@@ -13,7 +13,7 @@ image_date: 2026-04-15T19:43:00Z
 image_model: "@cf/black-forest-labs/flux-1-schnell"
 image_prompt: "A dynamic, stylized globe at the center, rendered with subtle topographical lines. Surrounding and weaving through the globe are translucent, undulating ribbons of energy and light, representing global currents. Within these flowing ribbons, minimalist, abstract icons subtly emerge and recede: a peace dove, a rising graph, a swirling DNA helix, a stylized storm cloud, and a faint human silhouette. Some ribbons appear smooth and bright, while others are more turbulent with darker hues. The overall composition conveys a sense of constant movement, interconnectedness, and the complex, unfolding narratives of the world. Colors blend deep blues, greens, and purples with bright, energetic accents."
 ---
-[Home](../index.md) > [📰 The Noise](./index.md) | [⏮️](./2026-04-14-global-currents-shifting-sands.md)  
+[Home](../index.md) > [📰 The Noise](./index.md) | [⏮️](./2026-04-14-global-currents-shifting-sands.md) [⏭️](./2026-04-16-unseen-currents-emerging-horizons.md)  
 # 2026-04-15 | 📰 🌪️ Global Currents, Unfolding Narratives 📰  
 ![the-noise-2026-04-15-global-currents-unfolding-narratives](../the-noise-2026-04-15-global-currents-unfolding-narratives.jpg)  
   

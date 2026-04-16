@@ -157,10 +157,13 @@ extractSectionText content =
       let afterHeader = T.drop (T.length updatesSectionHeader) sectionStart
       in fst (T.breakOn "\n## " afterHeader)
 
+isPageHeaderLine :: Text -> Bool
+isPageHeaderLine = ("Page" `elem`) . splitSimpleCells
+
 parseExistingEntries :: Text -> [PageEntry]
 parseExistingEntries sectionText
   | T.null sectionText = []
-  | T.isInfixOf "| Page |" sectionText = parseTableEntries sectionText
+  | any isPageHeaderLine (T.splitOn "\n" sectionText) = parseTableEntries sectionText
   | otherwise = parseBulletEntries sectionText
 
 parseBulletEntries :: Text -> [PageEntry]
@@ -193,8 +196,8 @@ parseWikiLinkLine line = do
 parseTableEntries :: Text -> [PageEntry]
 parseTableEntries sectionText =
   let contentLines = filter (not . T.null) (T.splitOn "\n" sectionText)
-      headerLine = find (T.isInfixOf "| Page |") contentLines
-      dataRows = case break (T.isInfixOf "| Page |") contentLines of
+      headerLine = find isPageHeaderLine contentLines
+      dataRows = case break isPageHeaderLine contentLines of
         (_, _ : rest) -> case rest of
           (_ : rows) -> filter isDataRow rows
           _          -> []

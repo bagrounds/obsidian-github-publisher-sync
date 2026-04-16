@@ -110,6 +110,8 @@
 
 ## 🛡️ Data Loss Prevention
 
+📐 The table parser uses whitespace-insensitive header detection: it splits each line by pipe characters, strips whitespace from each cell, and checks if any cell equals "Page". This correctly handles both compact tables written by the automation and padded tables reformatted by Obsidian's editor.
+
 📊 A safety check compares the number of parsed entries against the page count in the stats line (e.g., "📊 31 pages"). If zero entries were parsed but the stats line indicates entries exist, the function refuses to overwrite and returns the content unchanged. The I/O wrapper logs a warning for diagnosis.
 
 🔗 As a defensive measure, the parser supports two link formats in table rows:
@@ -122,6 +124,8 @@
 - `file.md` → `reflections/file` (bare filename)
 
 🔀 Tables may contain a mix of wiki links and markdown links. The parser tries wiki link format first, then falls back to markdown link format.
+
+🔒 The scheduled workflow uses a concurrency group (`scheduled-tasks`) to ensure only one run executes at a time, preventing last-writer-wins race conditions when vault modifications overlap.
 
 ## 🛡️ Idempotency
 
@@ -149,4 +153,5 @@
 - 🛡️ Data loss prevention when table rows are unparseable
 - 📊 Stats page count extraction from stats line
 - 🗺️ Relative path resolution for markdown links
+- 📐 Obsidian-formatted table with column padding
 - 🔀 Mixed wiki and markdown links in same table

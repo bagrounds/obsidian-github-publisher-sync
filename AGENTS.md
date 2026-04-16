@@ -103,3 +103,11 @@ URL: https://bagrounds.org/ai-blog/2026-03-08-1-auto-post-mastodon
 - 🚀 When a PR adds a new auto blog series, follow every step in the [launch checklist](specs/blog-series-launch-checklist.md). The checklist covers everything from the JSON config to the documentation updates that keep the README, specs, and scheduled-tasks tables in sync.
 - 🔗 The auto-discovery architecture means **zero Haskell code changes** are needed, but several documentation files must be updated to reflect the new series.
 - 📋 The checklist is the single source of truth for what belongs in a launch PR. If something is missing from the checklist, update it.
+
+## Root Cause Analysis
+- 🚫 Never guess or invent a root cause. If you do not know what caused a bug, say so explicitly.
+- 🔍 Show all the evidence you have: logs, timestamps, file diffs, version history, and GHA run data.
+- 🧪 Submit the most plausible hypotheses, each with a clear justification grounded in the evidence.
+- 📊 Rank hypotheses by plausibility and explain what evidence supports or contradicts each one.
+- 🔬 When possible, write a failing test that reproduces the exact conditions of the bug before proposing a fix.
+- 🛡️ If the root cause is uncertain, prioritize defensive fixes that prevent the class of failure regardless of cause.

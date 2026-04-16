@@ -364,6 +364,28 @@ addUpdateLinksTests = testGroup "addUpdateLinks"
         assertEqual "dot-dot-slash" "ai-blog/post" (resolveRelativePath "../ai-blog/post")
         assertEqual "bare name" "reflections/file" (resolveRelativePath "file")
 
+  , testCase "parses Obsidian-formatted table with column padding" $
+      let content = T.unlines
+            [ "# Reflection"
+            , ""
+            , "## 🔄 Updates"
+            , "📊 3 pages · 3 🖼️ images"
+            , ""
+            , "| Page                                                                   | 🖼️ |"
+            , "| ---------------------------------------------------------------------- | --- |"
+            , "| [[books/the-creative-act\\|✨🎭🧘\x200d♂️🌌 The Creative Act: A Way of Being]] | 🖼️ |"
+            , "| [[books/thinking-fast-and-slow\\|🤔🐇🐢 Thinking, Fast and Slow]]          | 🖼️ |"
+            , "| [[books/sapiens\\|📜🌍⏳ Sapiens: A Brief History of Humankind]]            | 🖼️ |"
+            ]
+          result = addUpdateLinks content
+                     [UpdateLink (testRelativePath "new-book.md") (testTitle "New Book") [ImageAdded]]
+      in do
+        assertBool "stats show 4 pages" (T.isInfixOf "📊 4 pages" result)
+        assertBool "preserves creative act" (T.isInfixOf "The Creative Act" result)
+        assertBool "preserves thinking fast" (T.isInfixOf "Thinking, Fast and Slow" result)
+        assertBool "preserves sapiens" (T.isInfixOf "Sapiens" result)
+        assertBool "has new book" (T.isInfixOf "New Book" result)
+
   , testCase "mixed wiki and markdown links in same table" $
       let content = T.unlines
             [ "# Reflection"

@@ -9,6 +9,10 @@ Platform:
 Channel: The Great Courses
 tags:
 youtube: https://youtu.be/ey4-1Ve6o7g
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_version: "2"
+link_analysis_time: 2026-04-16T00:00:00Z
+force_analyze_links: false
 ---
 [Home](../index.md) > [Videos](./index.md)  
 # 🔎🗺️✅📍 Site Analysis: Choosing the Right Spot  
@@ -59,7 +63,7 @@ youtube: https://youtu.be/ey4-1Ve6o7g
   
 ### 🆚 Contrasting  
 * 📘 The Holistic Orchard by Michael Phillips offers a perspective focused specifically on fungal health and biological systems rather than just physical site analysis.  
-* 📘 Gaia's Garden by Toby Hemenway approaches site design through the lens of permaculture, emphasizing human-integrated ecosystems over traditional horticultural analysis.  
+* 📘 [🌍🌿 Gaia's Garden: A Guide to Home-Scale Permaculture](../books/gaias-garden.md) by Toby Hemenway approaches site design through the lens of permaculture, emphasizing human-integrated ecosystems over traditional horticultural analysis.  
   
 ### 🎨 Creatively Related  
 * 📘 The Hidden Life of Trees by Peter Wohlleben examines the complex communication and survival strategies of plants in forest environments.  

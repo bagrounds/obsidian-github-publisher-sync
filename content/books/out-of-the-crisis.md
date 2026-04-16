@@ -12,9 +12,13 @@ updated: 2026-03-14T12:09:36.809Z
 force_analyze_links: false
 link_analysis_time: 2026-03-22T23:38:01.263Z
 link_analysis_model: gemini-3.1-flash-lite-preview
+image_date: 2026-04-16T16:40:10Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A minimalist, high-contrast illustration featuring a stylized, jagged line graph transitioning from a sharp downward red trend into a smooth, rising green upward curve. The composition uses clean, geometric lines to represent the transformation from chaos to order. The background is a clean, muted slate gray, emphasizing the shift in direction. Subtle, abstract silhouettes of interconnected gear-like shapes or a series of aligned, uniform building blocks sit beneath the rising line, symbolizing a stable, well-structured system built upon a foundation of quality. The aesthetic is professional, modern, and analytical, evoking themes of structural integrity, systemic improvement, and long-term organizational growth.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 📉⬆️ Out Of The Crisis  
+![books-out-of-the-crisis](../books-out-of-the-crisis.jpg)  
 [🛒 Out Of The Crisis. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3ZjED17)  
   
 ## 🤖 AI Summary  

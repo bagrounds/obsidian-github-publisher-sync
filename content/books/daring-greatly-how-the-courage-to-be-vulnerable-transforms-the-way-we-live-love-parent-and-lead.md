@@ -8,11 +8,16 @@ affiliate link: https://amzn.to/4r5uFwK
 CTA: 🛡️ Embrace vulnerability.
 updated: 2026-03-12T12:10:33.963Z
 link_analysis_model: gemini-3.1-flash-lite-preview
-link_analysis_time: 2026-04-01T00:00:00Z
+link_analysis_time: 2026-04-15T00:00:00Z
 force_analyze_links: false
+link_analysis_version: "2"
+image_date: 2026-04-16T21:26:58Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A minimalist, high-contrast illustration featuring a single, glowing, anatomically shaped heart resting in the center of a dusty, sunlit arena. The heart is vibrant red, contrasting against the muted, earthy tones of the surrounding sand and the distant, shadowed tiers of an ancient amphitheater. A thin, golden light emanates from the heart, illuminating the dust motes dancing in the air, symbolizing the courage found within vulnerability. The composition is clean and focused, emphasizing the solitude and profound strength of stepping into ones own arena. The style is modern and evocative, using soft gradients and sharp, clean lines to convey a sense of quiet power and emotional resonance.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🦁🫀 Daring Greatly: How the Courage to Be Vulnerable Transforms the Way We Live, Love, Parent, and Lead  
+![books-daring-greatly-how-the-courage-to-be-vulnerable-transforms-the-way-we-live-love-parent-and-lead](../books-daring-greatly-how-the-courage-to-be-vulnerable-transforms-the-way-we-live-love-parent-and-lead.jpg)  
 [🛒 Daring Greatly: How the Courage to Be Vulnerable Transforms the Way We Live, Love, Parent, and Lead. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4r5uFwK)  
   
 ## 📖 Book Report: Daring Greatly by Brené Brown  

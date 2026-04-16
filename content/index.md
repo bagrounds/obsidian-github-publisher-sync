@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-04-15T20:12:46-07:00
+updated: 2026-04-15T22:40:59-07:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -15,7 +15,7 @@ updated: 2026-04-15T20:12:46-07:00
 💬 Comment on any page with your GitHub account.  
   
 ## [🪞 Reflections](./reflections/index.md) ~ Blog (517)  
-- [2026-04-15](./reflections/2026-04-15.md)  
+- [2026-04-15 | 🤔 Hard 🌟 Progress 📰 Currents 🤖 Ghost 🌐 Buttons 🔧 Cleanup 🤖 Parrots 🐔 Call 🏛️ Good 📺🌟📰🤖🐔🏛️🤖🐲](./reflections/2026-04-15.md)  
 - [2026-04-14 | 🌍 Hungary’s 🇺🇸 America's 🗣️ Chat 🌟 Reshape 🌐 Sands 🤖 Architecture 🏛️ Goods 🐔 Loos 🧩 Fixing 🧹 Removing 📣 Buttons 📰📺🌟🤖🏛️🐔🤖🐲](./reflections/2026-04-14.md)  
 - [2026-04-13 | 🌍 Billionaires 💡 Trick 🗣️ Speaks 🪞 Leo 🕊️ Victory 🚀 Accelerates 🌊 Currents ☢️ Entropy 🐔 Rhythm 🌳 Embrace 🔗 Monolith 🔄 Redesign 📺📰🌟🤖🐔🏛️🤖🐲](./reflections/2026-04-13.md)  
 - [2026-04-12 | 🧠 First 🎯 Solution ✨ Brings 🌟 Bright 🌃 Night 🏛️ Foundational 🗺️ Navigating 🌐 Global 🐦 Twitter 🚔 Police 🗳️ Election 🤖 Synthetic 📺📰🌟🐔🤖🏛️🤖🐲](./reflections/2026-04-12.md)  
@@ -64,24 +64,24 @@ updated: 2026-04-15T20:12:46-07:00
   
   
 ## [📚 Books](./books/index.md) (959)  
-- [🤔💪 Attention and effort](./books/attention.md)  
-- [⛰️📈🥇 Peak: Secrets from the New Science of Expertise](./books/peak.md)  
-- [🧘 Indistractable: How to Control Your Attention and Choose Your Life](./books/indistractable.md)  
-- [✅🔬🦠 Crisis Averted: The Hidden Science of Fighting Outbreaks](./books/crisis-averted-the-hidden-science-of-fighting-outbreaks.md)  
+- [💰🤫 Dark Money: The Hidden History of the Billionaires Behind the Rise of the Radical Right](./books/dark-money-the-hidden-history-of-the-billionaires-behind-the-rise-of-the-radical-right.md)  
+- [🗳️🕊️🇺🇸 Democracy in America](./books/democracy-in-america.md)  
+- [🧠💰🌍 Beyond Growth: The Economics of Sustainable Development](./books/beyond-growth-the-economics-of-sustainable-development.md)  
+- [🌅🧑‍🤝‍🧑 The Dawn of Everything: A New History of Humanity](./books/the-dawn-of-everything-a-new-history-of-humanity.md)  
   
   
-## [📺 Videos](./videos/index.md) (756)  
+## [📺 Videos](./videos/index.md) (757)  
+- [❓🔥🧾🚫 'What Did That Accomplish?': Don Beyer Grills IRS CEO Over Ending Of IRS Direct File](./videos/what-did-that-accomplish-don-beyer-grills-irs-ceo-over-ending-of-irs-direct-file.md)  
 - [🤯🧾❓📺 Why Doing Taxes Is So Hard | Patriot Act with Hasan Minhaj | Netflix](./videos/why-doing-taxes-is-so-hard-patriot-act-with-hasan-minhaj-netflix.md)  
 - [🚫🏢👑🔄👥 Corporate America’s Biggest Enemy Will Now Lead Mamdani’s Transition Team](./videos/corporate-americas-biggest-enemy-will-now-lead-mamdanis-transition-team.md)  
 - [🤖🧠🚀 What you must know before AGI arrives | Carnegie Mellon University Po-Shen Loh](./videos/what-you-must-know-before-agi-arrives-carnegie-mellon-university-po-shen-loh.md)  
-- [🤯🗣️📱📈 “He behaved like a total maniac” Sam Harris on Elon & Big Tech’s turn towards Trump](./videos/he-behaved-like-a-total-maniac-sam-harris-on-elon-big-techs-turn-towards-trump.md)  
   
   
 ## [🌌 Topics](./topics/index.md) (91)  
+- [🤖🦜 Large Language Models](./topics/large-language-models.md)  
 - [🦬🪒 Yak Shaving](./topics/yak-shaving.md)  
 - [💻🌐<> Web Development](./topics/web-development.md)  
 - [🍎🥛🔬✨ Universal Nutrition System Design](./topics/universal-nutrition-system-design.md)  
-- [💡🔧📏🔮〰️ Understanding and Implementing the Kalman Filter](./topics/understanding-and-implementing-the-kalman-filter.md)  
   
   
 ## [📄  Articles](./articles/index.md) (84)  

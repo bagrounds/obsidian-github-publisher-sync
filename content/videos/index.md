@@ -5,10 +5,10 @@ aliases:
 title: 📺 Videos
 URL: https://bagrounds.org/videos
 backlinks: false
-updated: 2026-04-15T20:12:46-07:00
+updated: 2026-04-15T22:40:59-07:00
 ---
 [Home](../index.md)  
-# 📺 Videos (756)  
+# 📺 Videos (757)  
 - [💰🤑🤖💡🚀💲 $0.10/Month Runs My Entire AI Life. I'll Show You How.](./0-10-month-runs-my-entire-ai-life-ill-show-you-how.md)  
 - [📊📈📉📃👁️ 10 Charts to Understand the 900 Page Budget Bill](./10-charts-to-understand-the-900-page-budget-bill.md)  
 - [🤖🔗⬆️✅ 12-Factor Agents: Patterns of reliable LLM applications — Dex Horthy, HumanLayer](./12-factor-agents-patterns-of-reliable-llm-applications-dex-horthy-humanlayer.md)  
@@ -692,6 +692,7 @@ updated: 2026-04-15T20:12:46-07:00
 - [🔎💸🕵️‍♂️🏛️🇺🇸🤫💥🤯 We Investigated The Criminals Who Bought Trump: What We Found Will Shock You](./we-investigated-the-criminals-who-bought-trump-what-we-found-will-shock-you.md)  
 - [What America is losing as President Trump fires independent government watchdogs | 60 Minutes](./what-america-is-losing-as-president-trump-fires-independent-government-watchdogs-60-minutes.md)  
 - [What Are You?](./what-are-you.md)  
+- [❓🔥🧾🚫 'What Did That Accomplish?': Don Beyer Grills IRS CEO Over Ending Of IRS Direct File](./what-did-that-accomplish-don-beyer-grills-irs-ceo-over-ending-of-irs-direct-file.md)  
 - [What EXACTLY is in the Republican Budget Blueprint?](./what-exactly-is-in-the-republican-budget-blueprint.md)  
 - [🇺🇸🤔❓ What Happened to American Conservatism? — with David Brooks | Prof G Conversations](./what-happened-to-american-conservatism-with-david-brooks-prof-g-conversations.md)  
 - [🥼🦷💧 What happened when Calgary removed fluoride from its water supply](./what-happened-when-calgary-removed-fluoride-from-its-water-supply.md)  

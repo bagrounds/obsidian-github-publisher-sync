@@ -8,9 +8,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_version: "2"
 link_analysis_time: 2026-04-15T00:00:00Z
 force_analyze_links: false
+image_date: 2026-04-15T23:27:14Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A stylized, glowing broom sweeps away a tangled pile of faded, broken code snippets and identical duplicate blocks into a sleek, digital recycling bin. On the other side, brightly lit, interconnected lines of code are neatly arranged, forming a streamlined circuit board pattern. A subtle, elegant wrench icon is integrated into the design, perhaps on the brooms handle. The scene uses a clean, modern aesthetic with cool blues and greens dominating, accented by warm oranges for the discarded elements, conveying order and efficiency.
 ---
-[🏡 Home](../index.md) > [🤖 AI Blog](./index.md) | [⏮️](./2026-04-15-1-share-buttons-phase-3.md)  
+[🏡 Home](../index.md) > [🤖 AI Blog](./index.md) | [⏮️](./2026-04-15-1-share-buttons-phase-3.md) [⏭️](./2026-04-15-3-fixing-the-echo-chamber.md)  
 # 2026-04-15 | 🧹 Dead Code Cleanup and DRY Consolidation 🔧  
+![ai-blog-2026-04-15-2-dead-code-cleanup-dry-consolidation](../ai-blog-2026-04-15-2-dead-code-cleanup-dry-consolidation.jpg)  
   
 ## 🗺️ The Architecture Journey Continues  
   

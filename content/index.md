@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-04-15T15:25:25-07:00
+updated: 2026-04-15T18:38:54-07:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -21,11 +21,11 @@ updated: 2026-04-15T15:25:25-07:00
 - [2026-04-12 | 🧠 First 🎯 Solution ✨ Brings 🌟 Bright 🌃 Night 🏛️ Foundational 🗺️ Navigating 🌐 Global 🐦 Twitter 🚔 Police 🗳️ Election 🤖 Synthetic 📺📰🌟🐔🤖🏛️🤖🐲](./reflections/2026-04-12.md)  
   
   
-## [🤖 AI Blog](./ai-blog/index.md) (153)  
+## [🤖 AI Blog](./ai-blog/index.md) (154)  
+- [2026-04-15 | 🔊 Fixing the Echo Chamber - When AI Parrots Its Own Instructions 🤖](./ai-blog/2026-04-15-3-fixing-the-echo-chamber.md)  
 - [2026-04-15 | 🧹 Dead Code Cleanup and DRY Consolidation 🔧](./ai-blog/2026-04-15-2-dead-code-cleanup-dry-consolidation.md)  
 - [2026-04-15 | 📣 Share Buttons Phase 3 🌐](./ai-blog/2026-04-15-1-share-buttons-phase-3.md)  
 - [2026-04-14 | 📧 Share Buttons Phase Two 🔗](./ai-blog/2026-04-14-4-share-buttons-phase-two.md)  
-- [2026-04-14 | 🔗 Share Buttons for Social Media 📣](./ai-blog/2026-04-14-3-share-buttons-for-social-media.md)  
   
   
 ## [🤖 Auto Blog Zero](./auto-blog-zero/index.md) (36)  
@@ -64,24 +64,24 @@ updated: 2026-04-15T15:25:25-07:00
   
   
 ## [📚 Books](./books/index.md) (959)  
+- [✅🔬🦠 Crisis Averted: The Hidden Science of Fighting Outbreaks](./books/crisis-averted-the-hidden-science-of-fighting-outbreaks.md)  
 - [👃🤧 What's in the Air?: The Complete Guide to Seasonal and Year-Round Airborne Allergies](./books/whats-in-the-air-the-complete-guide-to-seasonal-and-year-round-airborne-allergies.md)  
 - [🧼💾 Clean Code: A Handbook of Agile Software Craftsmanship](./books/clean-code.md)  
 - [🏗️🧪🚀✅ Continuous Delivery: Reliable Software Releases through Build, Test, and Deployment Automation](./books/continuous-delivery.md)  
-- [🦄👤🗓️ The Mythical Man-Month: Essays on Software Engineering](./books/the-mythical-man-month.md)  
   
   
 ## [📺 Videos](./videos/index.md) (755)  
-- [✍️💡🚀 How to Write Something Truly Useful - Daniel Pink](./videos/how-to-write-something-truly-useful-daniel-pink.md)  
-- [🤖📅🦢🚲 2025 in LLMs so far, illustrated by Pelicans on Bicycles - Simon Willison](./videos/2025-in-llms-so-far-illustrated-by-pelicans-on-bicycles-simon-willison.md)  
-- [📱🧠📉 Doctor on How Screen Time Hurts Kids' Cognitive Development](./videos/doctor-on-how-screen-time-hurts-kids-cognitive-development.md)  
-- [🐘🧠❓ Brooks and Capehart on Trump’s mental acuity and unpredictability](./videos/brooks-and-capehart-on-trumps-mental-acuity-and-unpredictability.md)  
+- [🤖🧠🚀 What you must know before AGI arrives | Carnegie Mellon University Po-Shen Loh](./videos/what-you-must-know-before-agi-arrives-carnegie-mellon-university-po-shen-loh.md)  
+- [🤯🗣️📱📈 “He behaved like a total maniac” Sam Harris on Elon & Big Tech’s turn towards Trump](./videos/he-behaved-like-a-total-maniac-sam-harris-on-elon-big-techs-turn-towards-trump.md)  
+- [🌊🚨🇺🇸 Gov. Ferguson Declares Emergency as ‘Historic Flooding’ Hits Washington](./videos/gov-ferguson-declares-emergency-as-historic-flooding-hits-washington.md)  
+- [🗣️⚔️🏛️ FULL DISCUSSION: Gavin Newsom Slams Trump’s Authoritarianism in Explosive WEF Interview | AC1G](./videos/full-discussion-gavin-newsom-slams-trumps-authoritarianism-in-explosive-wef-interview-ac1g.md)  
   
   
 ## [🌌 Topics](./topics/index.md) (91)  
+- [🦬🪒 Yak Shaving](./topics/yak-shaving.md)  
+- [💻🌐<> Web Development](./topics/web-development.md)  
 - [🍎🥛🔬✨ Universal Nutrition System Design](./topics/universal-nutrition-system-design.md)  
 - [💡🔧📏🔮〰️ Understanding and Implementing the Kalman Filter](./topics/understanding-and-implementing-the-kalman-filter.md)  
-- [🌳➡️ Tree Traversal](./topics/tree-traversal.md)  
-- [⏳🍽️ Time-Restricted Eating](./topics/time-restricted-eating.md)  
   
   
 ## [📄  Articles](./articles/index.md) (84)  
@@ -99,10 +99,10 @@ updated: 2026-04-15T15:25:25-07:00
   
   
 ## [💾 Software](./software/index.md) (33)  
-- [🤖♊ Gemini](./software/gemini.md)  
-- [⛎♉️♊️♋️♌️♍️♎️♏️♐️♑️♒️♓️ Zodios](./software/zodios.md)  
-- [👽🦺 Zod](./software/zod.md)  
-- [💡🔧📏🔮〰️ Vensim](./software/vensim.md)  
+- [🌐🔓💻 Open WebUI](./software/open-webui.md)  
+- [🦙💬 Ollama](./software/ollama.md)  
+- [💾✍️🌋⚫️ Obsidian](./software/obsidian.md)  
+- [🐧💻🚀 Linux](./software/linux.md)  
   
   
 ## [👥 People](./people/index.md) (18)  

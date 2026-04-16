@@ -8,11 +8,16 @@ CTA: 🚀 Challenge assumptions.
 affiliate link: https://amzn.to/4pDax3h
 updated: 2026-03-18T12:18:01.368Z
 force_analyze_links: false
-link_analysis_time: 2026-03-22T23:33:07.540Z
+link_analysis_time: 2026-04-15T00:00:00Z
 link_analysis_model: gemini-3.1-flash-lite-preview
+image_date: 2026-04-16T03:15:49Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A vibrant sunrise illuminates a sweeping, diverse landscape. In the foreground, figures representing various ancient societies – hunter-gatherers, early farmers, urban dwellers – are depicted interacting as equals, sharing knowledge and tasks. They are arranged in a dynamic, non-hierarchical composition, perhaps around a communal fire or a shared project. Multiple winding paths crisscross the landscape, suggesting divergent historical trajectories rather than a single linear progression. In the distance, faint outlines of diverse architectural forms, from simple shelters to monumental structures, blend harmoniously into the natural environment. The colors are warm and inviting, emphasizing discovery and collaboration.
+link_analysis_version: "2"
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🌅🧑‍🤝‍🧑 The Dawn of Everything: A New History of Humanity  
+![books-the-dawn-of-everything-a-new-history-of-humanity](../books-the-dawn-of-everything-a-new-history-of-humanity.jpg)  
 [🛒 The Dawn of Everything: A New History of Humanity. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4pDax3h)  
   
 🤯🌍✨ Millennia of diverse, experimental, and often egalitarian societies actively resisted fixed hierarchies, challenging conventional narratives of inevitable progress towards states and inequality.  

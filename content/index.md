@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-04-16T14:14:48-07:00
+updated: 2026-04-16T15:53:16-07:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -64,24 +64,24 @@ updated: 2026-04-16T14:14:48-07:00
   
   
 ## [📚 Books](./books/index.md) (959)  
-- [⚙️🧠 The Systems Thinking Playbook: Exercises to Stretch and Build Learning and Systems Thinking Capabilities](./books/the-systems-thinking-playbook-exercises-to-stretch-and-build-learning-and-systems-thinking-capabilities.md)  
-- [🌐🧭❓🔍🗺️ Complexity: A Guided Tour](./books/complexity.md)  
-- [🧶✔️ Six Simple Rules: How to Manage Complexity without Getting Complicated](./books/six-simple-rules.md)  
-- [💃➡️ Beginning Modern Dance](./books/beginning-modern-dance.md)  
+- [📵 How to Do Nothing: Resisting the Attention Economy](./books/how-to-do-nothing-resisting-the-attention-economy.md)  
+- [📱💔 How to Break Up with Your Phone: The 30-Day Plan to Take Back Your Life](./books/how-to-break-up-with-your-phone-the-30-day-plan-to-take-back-your-life.md)  
+- [🌊🤖🤔 The Coming Wave: Technology, Power, and the 21st Century's Greatest Dilemma](./books/the-coming-wave-technology-power-and-the-21st-centurys-greatest-dilemma.md)  
+- [🤖🧑‍ Human Compatible: Artificial Intelligence and the Problem of Control](./books/human-compatible-artificial-intelligence-and-the-problem-of-control.md)  
   
   
-## [📺 Videos](./videos/index.md) (759)  
+## [📺 Videos](./videos/index.md) (761)  
+- [🔎🗺️✅📍 Site Analysis: Choosing the Right Spot](./videos/site-analysis-choosing-the-right-spot.md)  
+- [🪴🔬❌ Garden Science: Weeding Out the Myths](./videos/garden-science-weeding-out-the-myths.md)  
 - [🕰️🏛️🛑⚡ Trump Is the End of a 100-Year Experiment | Interesting Times with Ross Douthat](./videos/trump-is-the-end-of-a-100-year-experiment-interesting-times-with-ross-douthat.md)  
 - [🇺🇸💸🌍 How America Is Losing the World | Lunch Money with Paul Krugman and Heather Cox Richardson](./videos/how-america-is-losing-the-world-lunch-money-with-paul-krugman-and-heather-cox-richardson.md)  
-- [❓🔥🧾🚫 'What Did That Accomplish?': Don Beyer Grills IRS CEO Over Ending Of IRS Direct File](./videos/what-did-that-accomplish-don-beyer-grills-irs-ceo-over-ending-of-irs-direct-file.md)  
-- [🤯🧾❓📺 Why Doing Taxes Is So Hard | Patriot Act with Hasan Minhaj | Netflix](./videos/why-doing-taxes-is-so-hard-patriot-act-with-hasan-minhaj-netflix.md)  
   
   
 ## [🌌 Topics](./topics/index.md) (91)  
+- [❤️‍🩹⚖️🤝👑😇🗽 Moral Foundations Theory](./topics/moral-foundations-theory.md)  
 - [🏦♾️📈💸 Modern Monetary Theory](./topics/modern-monetary-theory.md)  
 - [🤖🦜 Large Language Models](./topics/large-language-models.md)  
 - [🦬🪒 Yak Shaving](./topics/yak-shaving.md)  
-- [💻🌐<> Web Development](./topics/web-development.md)  
   
   
 ## [📄  Articles](./articles/index.md) (84)  
@@ -106,10 +106,10 @@ updated: 2026-04-16T14:14:48-07:00
   
   
 ## [👥 People](./people/index.md) (18)  
+- [🧠🤝🐘 Jonathan Haidt](./people/jonathan-haidt.md)  
 - [🧠🔬🧘‍♀️💪📈❤️‍🩹🗣️📚🌟 Kelly McGonigal](./people/kelly-mcgonigal.md)  
 - [🏛️🇺🇸📖 Heather Cox Richardson](./people/heather-cox-richardson.md)  
 - [🤔⚙️🗣️🤝💡🧩🔭📚👴 Russell Ackoff](./people/russell-ackoff.md)  
-- [📈📊⚙️🎯 W Edwards Deming](./people/w-edwards-deming.md)  
   
   
 ## [🛍️ Products](./products/index.md) (6)  

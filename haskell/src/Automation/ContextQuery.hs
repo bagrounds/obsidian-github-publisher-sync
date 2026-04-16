@@ -5,12 +5,12 @@ module Automation.ContextQuery
   , Field (..)
   , OrderBy (..)
   , SortDirection (..)
-  , CrossSeriesPost (..)
+  , ContextPost (..)
   , defaultContextQueries
   , evaluateQuery
   , evaluateQueries
-  , parseOrderBy
-  , orderByToText
+  , fieldFromText
+  , fieldToText
   ) where
 
 import Data.List (sortOn)
@@ -41,27 +41,26 @@ data WhereOperator = GreaterOrEqual | LessOrEqual | Contains
 
 -- | A single filter condition: field operator value.
 data WhereCondition = WhereCondition
-  { wcField    :: Field
-  , wcOperator :: WhereOperator
-  , wcValue    :: Text
+  { field    :: Field
+  , operator :: WhereOperator
+  , value    :: Text
   } deriving (Show, Eq)
 
 -- | A declarative, SQL-like query specifying which posts to include in generation context.
 --
 -- Translates to: SELECT posts FROM directories WHERE conditions ORDER BY field LIMIT n
 data ContextQuery = ContextQuery
-  { cqFrom           :: [Text]             -- ^ Content directories to read from (relative to content root)
-  , cqWhere          :: [WhereCondition]   -- ^ Filter conditions (all must match)
-  , cqOrderBy        :: OrderBy            -- ^ Sort order (default: filename DESC)
-  , cqLimit          :: Maybe Int          -- ^ Global limit across all sources
-  , cqLimitPerSource :: Maybe Int          -- ^ Per-source-directory limit
+  { directories    :: [Text]             -- ^ Content directories to read from (relative to content root)
+  , conditions     :: [WhereCondition]   -- ^ Filter conditions (all must match)
+  , orderBy        :: OrderBy            -- ^ Sort order (default: filename DESC)
+  , limit          :: Maybe Int          -- ^ Global limit across all sources
+  , limitPerSource :: Maybe Int          -- ^ Per-source-directory limit
   } deriving (Show, Eq)
 
--- | A post from another blog series, providing cross-series context.
-data CrossSeriesPost = CrossSeriesPost
-  { cspSeriesName :: Text
-  , cspSeriesIcon :: Text
-  , cspPost       :: BlogPost
+-- | A post returned by the query engine, tagged with its source directory.
+data ContextPost = ContextPost
+  { sourceDirectory :: Text
+  , post            :: BlogPost
   } deriving (Show, Eq)
 
 -- | Default context queries when none are specified.
@@ -69,50 +68,24 @@ data CrossSeriesPost = CrossSeriesPost
 defaultContextQueries :: Text -> [ContextQuery]
 defaultContextQueries seriesId =
   [ ContextQuery
-      { cqFrom = [seriesId]
-      , cqWhere = []
-      , cqOrderBy = OrderBy Filename Descending
-      , cqLimit = Just 7
-      , cqLimitPerSource = Nothing
+      { directories = [seriesId]
+      , conditions = []
+      , orderBy = OrderBy Filename Descending
+      , limit = Just 7
+      , limitPerSource = Nothing
       }
   ]
 
--- | Parse an ORDER BY string like "filename DESC" or "date ASC".
-parseOrderBy :: Text -> Either String OrderBy
-parseOrderBy raw =
-  case T.words (T.strip raw) of
-    [fieldText, directionText] -> do
-      field <- parseField fieldText
-      direction <- parseDirection directionText
-      pure (OrderBy field direction)
-    [fieldText] -> do
-      field <- parseField fieldText
-      pure (OrderBy field Descending)
-    _ -> Left $ "Invalid orderBy: " <> T.unpack raw <> ". Expected: <field> [ASC|DESC]"
-
-orderByToText :: OrderBy -> Text
-orderByToText (OrderBy field direction) = fieldToText field <> " " <> directionToText direction
-
-parseField :: Text -> Either String Field
-parseField "filename" = Right Filename
-parseField "date"     = Right Date
-parseField "title"    = Right Title
-parseField other      = Left $ "Unknown field: " <> T.unpack other <> ". Expected: filename, date, or title"
+fieldFromText :: Text -> Either String Field
+fieldFromText "filename" = Right Filename
+fieldFromText "date"     = Right Date
+fieldFromText "title"    = Right Title
+fieldFromText other      = Left $ "Unknown field: " <> T.unpack other <> ". Expected: filename, date, or title"
 
 fieldToText :: Field -> Text
 fieldToText Filename = "filename"
 fieldToText Date = "date"
 fieldToText Title = "title"
-
-parseDirection :: Text -> Either String SortDirection
-parseDirection directionText = case T.toUpper directionText of
-  "ASC"  -> Right Ascending
-  "DESC" -> Right Descending
-  _      -> Left $ "Unknown direction: " <> T.unpack directionText <> ". Expected: ASC or DESC"
-
-directionToText :: SortDirection -> Text
-directionToText Ascending = "ASC"
-directionToText Descending = "DESC"
 
 parseWhereOperator :: Text -> Either String WhereOperator
 parseWhereOperator ">=" = Right GreaterOrEqual
@@ -123,98 +96,64 @@ parseWhereOperator other = Left $ "Unknown operator: " <> T.unpack other <> ". E
 instance FromValue WhereCondition where
   fromValue = withObject "where condition" $ \obj -> do
     fieldText <- obj .: "field"
-    field <- parseField fieldText
+    parsedField <- fieldFromText fieldText
     operatorText <- obj .: "operator"
-    operator <- parseWhereOperator operatorText
-    value <- obj .: "value"
-    pure WhereCondition { wcField = field, wcOperator = operator, wcValue = value }
+    parsedOperator <- parseWhereOperator operatorText
+    parsedValue <- obj .: "value"
+    pure WhereCondition { field = parsedField, operator = parsedOperator, value = parsedValue }
 
 instance FromValue ContextQuery where
   fromValue = withObject "context query" $ \obj -> do
-    from <- obj .: "from"
-    whereConditions <- fmap (fromMaybe []) (obj .:? "where")
-    maybeOrderByText <- obj .:? "orderBy"
-    orderBy <- case (maybeOrderByText :: Maybe Text) of
+    parsedDirectories <- obj .: "from"
+    parsedConditions <- fmap (fromMaybe []) (obj .:? "where")
+    maybeOrderByField <- obj .:? "orderBy"
+    parsedOrderBy <- case (maybeOrderByField :: Maybe Text) of
       Nothing -> Right (OrderBy Filename Descending)
-      Just raw -> parseOrderBy raw
-    limit <- obj .:? "limit"
-    limitPerSource <- obj .:? "limitPerSource"
+      Just fieldText -> do
+        parsedField <- fieldFromText fieldText
+        pure (OrderBy parsedField Descending)
+    maybeAscending <- obj .:? "ascending"
+    let finalOrderBy = case (maybeAscending :: Maybe Bool) of
+          Just True -> case parsedOrderBy of
+            OrderBy parsedField _ -> OrderBy parsedField Ascending
+          _ -> parsedOrderBy
+    parsedLimit <- obj .:? "limit"
+    parsedLimitPerSource <- obj .:? "limitPerSource"
     pure ContextQuery
-      { cqFrom = from
-      , cqWhere = whereConditions
-      , cqOrderBy = orderBy
-      , cqLimit = limit
-      , cqLimitPerSource = limitPerSource
+      { directories = parsedDirectories
+      , conditions = parsedConditions
+      , orderBy = finalOrderBy
+      , limit = parsedLimit
+      , limitPerSource = parsedLimitPerSource
       }
 
--- | Tagged result: which source directory a post came from.
-data TaggedPost = TaggedPost
-  { tpSourceDirectory :: Text
-  , tpPost            :: BlogPost
-  }
-
 -- | Evaluate a single context query against the content directory.
-evaluateQuery :: FilePath -> ContextQuery -> IO [TaggedPost]
+evaluateQuery :: FilePath -> ContextQuery -> IO [ContextPost]
 evaluateQuery contentRoot query = do
-  tagged <- concat <$> traverse (readFromDirectory contentRoot (cqLimitPerSource query)) (cqFrom query)
-  let filtered = filter (matchesAllConditions (cqWhere query) . tpPost) tagged
-      sorted = sortTaggedPosts (cqOrderBy query) filtered
-  pure $ applyGlobalLimit (cqLimit query) sorted
+  tagged <- concat <$> traverse (readFromDirectory contentRoot (limitPerSource query)) (directories query)
+  let filtered = filter (matchesAllConditions (conditions query) . post) tagged
+      sorted = sortContextPosts (orderBy query) filtered
+  pure $ applyGlobalLimit (limit query) sorted
 
--- | Evaluate multiple context queries, partitioning results into self posts and cross-series posts.
--- Posts from the current series directory are self posts; all others are cross-series posts.
-evaluateQueries
-  :: Text                          -- ^ Current series ID (used to partition self vs cross)
-  -> FilePath                      -- ^ Content root directory
-  -> [(Text, Text, Text)]          -- ^ Series metadata: (id, name, icon) for cross-series annotation
-  -> [ContextQuery]                -- ^ Queries to evaluate
-  -> IO ([BlogPost], [CrossSeriesPost])
-evaluateQueries currentSeriesId contentRoot seriesMetadata queries = do
-  allTagged <- concat <$> traverse (evaluateQuery contentRoot) queries
-  let (selfTagged, crossTagged) = partitionBySource currentSeriesId allTagged
-      selfPosts = fmap tpPost selfTagged
-      crossPosts = fmap (tagAsCrossPost seriesMetadata) crossTagged
-  pure (selfPosts, crossPosts)
+-- | Evaluate multiple context queries, returning all matching posts tagged with source info.
+evaluateQueries :: FilePath -> [ContextQuery] -> IO [ContextPost]
+evaluateQueries contentRoot queries =
+  concat <$> traverse (evaluateQuery contentRoot) queries
 
-partitionBySource :: Text -> [TaggedPost] -> ([TaggedPost], [TaggedPost])
-partitionBySource currentSeriesId = foldr partition ([], [])
-  where
-    partition tagged (selfs, crosses)
-      | tpSourceDirectory tagged == currentSeriesId = (tagged : selfs, crosses)
-      | otherwise = (selfs, tagged : crosses)
-
-tagAsCrossPost :: [(Text, Text, Text)] -> TaggedPost -> CrossSeriesPost
-tagAsCrossPost metadata tagged =
-  let sourceId = tpSourceDirectory tagged
-      (name, icon) = lookupSeriesMetadata sourceId metadata
-  in CrossSeriesPost
-    { cspSeriesName = name
-    , cspSeriesIcon = icon
-    , cspPost = tpPost tagged
-    }
-
-lookupSeriesMetadata :: Text -> [(Text, Text, Text)] -> (Text, Text)
-lookupSeriesMetadata sourceId = go
-  where
-    go [] = (sourceId, "📁")
-    go ((seriesId, name, icon) : rest)
-      | seriesId == sourceId = (name, icon)
-      | otherwise = go rest
-
-readFromDirectory :: FilePath -> Maybe Int -> Text -> IO [TaggedPost]
+readFromDirectory :: FilePath -> Maybe Int -> Text -> IO [ContextPost]
 readFromDirectory contentRoot maybePerSourceLimit directory = do
   let dirPath = contentRoot </> T.unpack directory
   posts <- readSeriesPosts dirPath
   let limited = maybe posts (`take` posts) maybePerSourceLimit
-  pure $ fmap (TaggedPost directory) limited
+  pure $ fmap (ContextPost directory) limited
 
 matchesAllConditions :: [WhereCondition] -> BlogPost -> Bool
-matchesAllConditions conditions post = all (`matchesCondition` post) conditions
+matchesAllConditions whereConditions blogPost = all (`matchesCondition` blogPost) whereConditions
 
 matchesCondition :: WhereCondition -> BlogPost -> Bool
-matchesCondition WhereCondition{..} post =
-  let fieldValue = extractField wcField post
-  in applyOperator wcOperator wcValue fieldValue
+matchesCondition WhereCondition{..} blogPost =
+  let fieldValue = extractField field blogPost
+  in applyOperator operator value fieldValue
 
 extractField :: Field -> BlogPost -> Text
 extractField Filename = bpFilename
@@ -226,10 +165,10 @@ applyOperator GreaterOrEqual threshold actual = actual >= threshold
 applyOperator LessOrEqual threshold actual = actual <= threshold
 applyOperator Contains needle actual = T.isInfixOf (T.toLower needle) (T.toLower actual)
 
-sortTaggedPosts :: OrderBy -> [TaggedPost] -> [TaggedPost]
-sortTaggedPosts (OrderBy field Ascending) = sortOn (extractField field . tpPost)
-sortTaggedPosts (OrderBy field Descending) = sortOn (Down . extractField field . tpPost)
+sortContextPosts :: OrderBy -> [ContextPost] -> [ContextPost]
+sortContextPosts (OrderBy sortField Ascending) = sortOn (extractField sortField . post)
+sortContextPosts (OrderBy sortField Descending) = sortOn (Down . extractField sortField . post)
 
-applyGlobalLimit :: Maybe Int -> [TaggedPost] -> [TaggedPost]
+applyGlobalLimit :: Maybe Int -> [ContextPost] -> [ContextPost]
 applyGlobalLimit Nothing = id
 applyGlobalLimit (Just count) = take count

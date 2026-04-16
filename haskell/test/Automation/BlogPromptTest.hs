@@ -11,7 +11,6 @@ import Data.Time.LocalTime (TimeOfDay (..))
 
 import Automation.BlogPrompt
 import Automation.BlogPosts (BlogPost (..))
-import Automation.ContextQuery (CrossSeriesPost (..))
 import Automation.PacificTime (formatDay)
 import Automation.BlogSeriesConfig (BlogSeriesConfig (..), lookupSeriesIn)
 import Automation.BlogSeriesDiscovery (deriveBlogSeriesConfig, DiscoveredSeries (..))
@@ -247,9 +246,9 @@ crossSeriesTests = testGroup "crossSeries"
 
   , testCase "buildCrossSeriesSection includes series name" $
       let post = CrossSeriesPost
-            { cspSeriesName = "The Noise"
-            , cspSeriesIcon = "📰"
-            , cspPost = BlogPost
+            { crossSeriesName = "The Noise"
+            , crossSeriesIcon = "📰"
+            , crossSeriesPost = BlogPost
                 { bpFilename = "2026-04-15-test.md"
                 , bpDate = "2026-04-15"
                 , bpTitle = "Breaking News Today"
@@ -262,9 +261,9 @@ crossSeriesTests = testGroup "crossSeries"
 
   , testCase "buildCrossSeriesSection includes series icon" $
       let post = CrossSeriesPost
-            { cspSeriesName = "The Noise"
-            , cspSeriesIcon = "📰"
-            , cspPost = BlogPost
+            { crossSeriesName = "The Noise"
+            , crossSeriesIcon = "📰"
+            , crossSeriesPost = BlogPost
                 { bpFilename = "2026-04-15-test.md"
                 , bpDate = "2026-04-15"
                 , bpTitle = "Breaking News"
@@ -277,9 +276,9 @@ crossSeriesTests = testGroup "crossSeries"
 
   , testCase "buildCrossSeriesSection includes post title" $
       let post = CrossSeriesPost
-            { cspSeriesName = "Chickie Loo"
-            , cspSeriesIcon = "🐔"
-            , cspPost = BlogPost
+            { crossSeriesName = "Chickie Loo"
+            , crossSeriesIcon = "🐔"
+            , crossSeriesPost = BlogPost
                 { bpFilename = "2026-04-15-morning.md"
                 , bpDate = "2026-04-15"
                 , bpTitle = "Morning at the Ranch"
@@ -292,9 +291,9 @@ crossSeriesTests = testGroup "crossSeries"
 
   , testCase "buildCrossSeriesSection includes post body content" $
       let post = CrossSeriesPost
-            { cspSeriesName = "Auto Blog Zero"
-            , cspSeriesIcon = "🤖"
-            , cspPost = BlogPost
+            { crossSeriesName = "Auto Blog Zero"
+            , crossSeriesIcon = "🤖"
+            , crossSeriesPost = BlogPost
                 { bpFilename = "2026-04-15-test.md"
                 , bpDate = "2026-04-15"
                 , bpTitle = "AI Musings"
@@ -307,9 +306,9 @@ crossSeriesTests = testGroup "crossSeries"
 
   , testCase "buildCrossSeriesSection includes header" $
       let post = CrossSeriesPost
-            { cspSeriesName = "Test"
-            , cspSeriesIcon = "🧪"
-            , cspPost = BlogPost
+            { crossSeriesName = "Test"
+            , crossSeriesIcon = "🧪"
+            , crossSeriesPost = BlogPost
                 { bpFilename = "2026-04-15-test.md"
                 , bpDate = "2026-04-15"
                 , bpTitle = "Test"

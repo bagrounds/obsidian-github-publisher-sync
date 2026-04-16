@@ -17,58 +17,44 @@ import qualified Data.Text.Encoding as TE
 
 tests :: TestTree
 tests = testGroup "ContextQuery"
-  [ orderByParsingTests
-  , orderByRoundTripTests
+  [ fieldParsingTests
+  , fieldRoundTripTests
   , jsonParsingTests
   , whereClauseTests
   , defaultQueryTests
   , evaluationTests
   ]
 
-orderByParsingTests :: TestTree
-orderByParsingTests = testGroup "parseOrderBy"
-  [ testCase "parses filename DESC" $
-      parseOrderBy "filename DESC" @?= Right (OrderBy Filename Descending)
+fieldParsingTests :: TestTree
+fieldParsingTests = testGroup "fieldFromText"
+  [ testCase "parses filename" $
+      fieldFromText "filename" @?= Right Filename
 
-  , testCase "parses date ASC" $
-      parseOrderBy "date ASC" @?= Right (OrderBy Date Ascending)
+  , testCase "parses date" $
+      fieldFromText "date" @?= Right Date
 
-  , testCase "parses title DESC" $
-      parseOrderBy "title DESC" @?= Right (OrderBy Title Descending)
-
-  , testCase "defaults to DESC when direction omitted" $
-      parseOrderBy "filename" @?= Right (OrderBy Filename Descending)
-
-  , testCase "case insensitive direction" $
-      parseOrderBy "date asc" @?= Right (OrderBy Date Ascending)
+  , testCase "parses title" $
+      fieldFromText "title" @?= Right Title
 
   , testCase "rejects unknown field" $
       assertBool "should reject unknown field" $
-        isLeft (parseOrderBy "unknown DESC")
-
-  , testCase "rejects empty string" $
-      assertBool "should reject empty" $
-        isLeft (parseOrderBy "")
-
-  , testCase "rejects unknown direction" $
-      assertBool "should reject unknown direction" $
-        isLeft (parseOrderBy "filename UPWARD")
+        isLeft (fieldFromText "unknown")
   ]
 
-orderByRoundTripTests :: TestTree
-orderByRoundTripTests = testGroup "orderBy round-trip"
-  [ testCase "filename DESC round-trips" $
-      parseOrderBy (orderByToText (OrderBy Filename Descending)) @?= Right (OrderBy Filename Descending)
+fieldRoundTripTests :: TestTree
+fieldRoundTripTests = testGroup "field round-trip"
+  [ testCase "filename round-trips" $
+      fieldFromText (fieldToText Filename) @?= Right Filename
 
-  , testCase "date ASC round-trips" $
-      parseOrderBy (orderByToText (OrderBy Date Ascending)) @?= Right (OrderBy Date Ascending)
+  , testCase "date round-trips" $
+      fieldFromText (fieldToText Date) @?= Right Date
 
-  , testCase "title DESC round-trips" $
-      parseOrderBy (orderByToText (OrderBy Title Descending)) @?= Right (OrderBy Title Descending)
+  , testCase "title round-trips" $
+      fieldFromText (fieldToText Title) @?= Right Title
 
-  , testProperty "all OrderBy values round-trip" $
-      QC.forAll genOrderBy $ \orderBy ->
-        parseOrderBy (orderByToText orderBy) == Right orderBy
+  , testProperty "all Field values round-trip" $
+      QC.forAll genField $ \parsedField ->
+        fieldFromText (fieldToText parsedField) == Right parsedField
   ]
 
 jsonParsingTests :: TestTree
@@ -76,39 +62,53 @@ jsonParsingTests = testGroup "JSON parsing"
   [ testCase "parses simple FROM with limit" $
       let json = "{\"from\": [\"my-series\"], \"limit\": 7}"
       in parseContextQuery json @?= Right (ContextQuery
-          { cqFrom = ["my-series"]
-          , cqWhere = []
-          , cqOrderBy = OrderBy Filename Descending
-          , cqLimit = Just 7
-          , cqLimitPerSource = Nothing
+          { directories = ["my-series"]
+          , conditions = []
+          , orderBy = OrderBy Filename Descending
+          , limit = Just 7
+          , limitPerSource = Nothing
           })
 
   , testCase "parses multiple FROM directories" $
       let json = "{\"from\": [\"series-a\", \"series-b\"], \"limit\": 5}"
           result = parseContextQuery json
       in case result of
-        Right query -> cqFrom query @?= ["series-a", "series-b"]
+        Right query -> directories query @?= ["series-a", "series-b"]
         Left err -> assertBool ("unexpected parse error: " <> err) False
 
-  , testCase "parses orderBy" $
-      let json = "{\"from\": [\"my-series\"], \"orderBy\": \"date ASC\", \"limit\": 3}"
+  , testCase "parses orderBy as field name" $
+      let json = "{\"from\": [\"my-series\"], \"orderBy\": \"date\", \"limit\": 3}"
           result = parseContextQuery json
       in case result of
-        Right query -> cqOrderBy query @?= OrderBy Date Ascending
+        Right query -> orderBy query @?= OrderBy Date Descending
+        Left err -> assertBool ("unexpected parse error: " <> err) False
+
+  , testCase "parses ascending true" $
+      let json = "{\"from\": [\"my-series\"], \"orderBy\": \"date\", \"ascending\": true, \"limit\": 3}"
+          result = parseContextQuery json
+      in case result of
+        Right query -> orderBy query @?= OrderBy Date Ascending
+        Left err -> assertBool ("unexpected parse error: " <> err) False
+
+  , testCase "ascending false means descending" $
+      let json = "{\"from\": [\"my-series\"], \"orderBy\": \"date\", \"ascending\": false, \"limit\": 3}"
+          result = parseContextQuery json
+      in case result of
+        Right query -> orderBy query @?= OrderBy Date Descending
         Left err -> assertBool ("unexpected parse error: " <> err) False
 
   , testCase "parses limitPerSource" $
       let json = "{\"from\": [\"a\", \"b\"], \"limitPerSource\": 1}"
           result = parseContextQuery json
       in case result of
-        Right query -> cqLimitPerSource query @?= Just 1
+        Right query -> limitPerSource query @?= Just 1
         Left err -> assertBool ("unexpected parse error: " <> err) False
 
-  , testCase "defaults orderBy to filename DESC" $
+  , testCase "defaults orderBy to filename descending" $
       let json = "{\"from\": [\"x\"], \"limit\": 3}"
           result = parseContextQuery json
       in case result of
-        Right query -> cqOrderBy query @?= OrderBy Filename Descending
+        Right query -> orderBy query @?= OrderBy Filename Descending
         Left err -> assertBool ("unexpected parse error: " <> err) False
 
   , testCase "accepts no limit and no limitPerSource" $
@@ -116,19 +116,19 @@ jsonParsingTests = testGroup "JSON parsing"
           result = parseContextQuery json
       in case result of
         Right query -> do
-          cqLimit query @?= Nothing
-          cqLimitPerSource query @?= Nothing
+          limit query @?= Nothing
+          limitPerSource query @?= Nothing
         Left err -> assertBool ("unexpected parse error: " <> err) False
 
   , testCase "parses where clause" $
       let json = "{\"from\": [\"x\"], \"where\": [{\"field\": \"date\", \"operator\": \">=\", \"value\": \"2026-04-01\"}], \"limit\": 5}"
           result = parseContextQuery json
       in case result of
-        Right query -> cqWhere query @?= [WhereCondition Date GreaterOrEqual "2026-04-01"]
+        Right query -> conditions query @?= [WhereCondition { field = Date, operator = GreaterOrEqual, value = "2026-04-01" }]
         Left err -> assertBool ("unexpected parse error: " <> err) False
 
   , testCase "rejects invalid orderBy field" $
-      let json = "{\"from\": [\"x\"], \"orderBy\": \"invalid DESC\", \"limit\": 3}"
+      let json = "{\"from\": [\"x\"], \"orderBy\": \"invalid\", \"limit\": 3}"
       in assertBool "should reject invalid field" $
            isLeft (parseContextQuery json)
 
@@ -160,11 +160,11 @@ whereClauseTests = testGroup "WHERE clause evaluation"
         writePostWithDate contentRoot "my-series" "2026-04-15-new.md" "2026-04-15"
         writePostWithDate contentRoot "my-series" "2026-03-01-old.md" "2026-03-01"
         let query = ContextQuery
-              { cqFrom = ["my-series"]
-              , cqWhere = [WhereCondition Date GreaterOrEqual "2026-04-01"]
-              , cqOrderBy = OrderBy Filename Descending
-              , cqLimit = Nothing
-              , cqLimitPerSource = Nothing
+              { directories = ["my-series"]
+              , conditions = [WhereCondition { field = Date, operator = GreaterOrEqual, value = "2026-04-01" }]
+              , orderBy = OrderBy Filename Descending
+              , limit = Nothing
+              , limitPerSource = Nothing
               }
         results <- evaluateQuery contentRoot query
         length results @?= 1
@@ -174,11 +174,11 @@ whereClauseTests = testGroup "WHERE clause evaluation"
         writePostWithDate contentRoot "my-series" "2026-04-15-new.md" "2026-04-15"
         writePostWithDate contentRoot "my-series" "2026-03-01-old.md" "2026-03-01"
         let query = ContextQuery
-              { cqFrom = ["my-series"]
-              , cqWhere = [WhereCondition Date LessOrEqual "2026-03-15"]
-              , cqOrderBy = OrderBy Filename Descending
-              , cqLimit = Nothing
-              , cqLimitPerSource = Nothing
+              { directories = ["my-series"]
+              , conditions = [WhereCondition { field = Date, operator = LessOrEqual, value = "2026-03-15" }]
+              , orderBy = OrderBy Filename Descending
+              , limit = Nothing
+              , limitPerSource = Nothing
               }
         results <- evaluateQuery contentRoot query
         length results @?= 1
@@ -188,11 +188,11 @@ whereClauseTests = testGroup "WHERE clause evaluation"
         writePostWithTitle contentRoot "my-series" "2026-04-15-recap.md" "Weekly Recap"
         writePostWithTitle contentRoot "my-series" "2026-04-14-thoughts.md" "Random Thoughts"
         let query = ContextQuery
-              { cqFrom = ["my-series"]
-              , cqWhere = [WhereCondition Title Contains "recap"]
-              , cqOrderBy = OrderBy Filename Descending
-              , cqLimit = Nothing
-              , cqLimitPerSource = Nothing
+              { directories = ["my-series"]
+              , conditions = [WhereCondition { field = Title, operator = Contains, value = "recap" }]
+              , orderBy = OrderBy Filename Descending
+              , limit = Nothing
+              , limitPerSource = Nothing
               }
         results <- evaluateQuery contentRoot query
         length results @?= 1
@@ -203,14 +203,14 @@ whereClauseTests = testGroup "WHERE clause evaluation"
         writePostWithDate contentRoot "my-series" "2026-04-10-b.md" "2026-04-10"
         writePostWithDate contentRoot "my-series" "2026-03-01-c.md" "2026-03-01"
         let query = ContextQuery
-              { cqFrom = ["my-series"]
-              , cqWhere =
-                  [ WhereCondition Date GreaterOrEqual "2026-04-01"
-                  , WhereCondition Date LessOrEqual "2026-04-12"
+              { directories = ["my-series"]
+              , conditions =
+                  [ WhereCondition { field = Date, operator = GreaterOrEqual, value = "2026-04-01" }
+                  , WhereCondition { field = Date, operator = LessOrEqual, value = "2026-04-12" }
                   ]
-              , cqOrderBy = OrderBy Filename Descending
-              , cqLimit = Nothing
-              , cqLimitPerSource = Nothing
+              , orderBy = OrderBy Filename Descending
+              , limit = Nothing
+              , limitPerSource = Nothing
               }
         results <- evaluateQuery contentRoot query
         length results @?= 1
@@ -224,18 +224,18 @@ defaultQueryTests = testGroup "defaultContextQueries"
   , testCase "queries own directory with limit 7" $
       defaultContextQueries "my-series" @?=
         [ ContextQuery
-            { cqFrom = ["my-series"]
-            , cqWhere = []
-            , cqOrderBy = OrderBy Filename Descending
-            , cqLimit = Just 7
-            , cqLimitPerSource = Nothing
+            { directories = ["my-series"]
+            , conditions = []
+            , orderBy = OrderBy Filename Descending
+            , limit = Just 7
+            , limitPerSource = Nothing
             }
         ]
 
   , testCase "uses provided series ID as FROM path" $
       let queries = defaultContextQueries "chickie-loo"
       in case queries of
-        [query] -> cqFrom query @?= ["chickie-loo"]
+        [query] -> directories query @?= ["chickie-loo"]
         _ -> assertBool "expected exactly one query" False
   ]
 
@@ -245,195 +245,167 @@ evaluationTests = testGroup "evaluateQueries"
       withTestContentDir $ \contentRoot -> do
         writePosts contentRoot "my-series" ["2026-04-15-first.md", "2026-04-14-second.md"]
         let queries = defaultContextQueries "my-series"
-        (selfPosts, crossPosts) <- evaluateQueries "my-series" contentRoot [] queries
-        length selfPosts @?= 2
-        length crossPosts @?= 0
+        results <- evaluateQueries contentRoot queries
+        length results @?= 2
 
   , testCase "limit restricts number of results" $
       withTestContentDir $ \contentRoot -> do
         writePosts contentRoot "my-series" ["2026-04-15-a.md", "2026-04-14-b.md", "2026-04-13-c.md"]
         let query = ContextQuery
-              { cqFrom = ["my-series"]
-              , cqWhere = []
-              , cqOrderBy = OrderBy Filename Descending
-              , cqLimit = Just 2
-              , cqLimitPerSource = Nothing
+              { directories = ["my-series"]
+              , conditions = []
+              , orderBy = OrderBy Filename Descending
+              , limit = Just 2
+              , limitPerSource = Nothing
               }
-        (selfPosts, _) <- evaluateQueries "my-series" contentRoot [] [query]
-        length selfPosts @?= 2
+        results <- evaluateQueries contentRoot [query]
+        length results @?= 2
 
-  , testCase "reading another directory yields cross-series posts" $
+  , testCase "reading another directory yields posts from that directory" $
       withTestContentDir $ \contentRoot -> do
         writePosts contentRoot "my-series" ["2026-04-15-mine.md"]
         writePosts contentRoot "other-series" ["2026-04-15-theirs.md"]
-        let metadata = [("other-series", "Other", "🔹")]
-            query = ContextQuery
-              { cqFrom = ["other-series"]
-              , cqWhere = []
-              , cqOrderBy = OrderBy Filename Descending
-              , cqLimit = Just 1
-              , cqLimitPerSource = Nothing
+        let query = ContextQuery
+              { directories = ["other-series"]
+              , conditions = []
+              , orderBy = OrderBy Filename Descending
+              , limit = Just 1
+              , limitPerSource = Nothing
               }
-        (selfPosts, crossPosts) <- evaluateQueries "my-series" contentRoot metadata [query]
-        length selfPosts @?= 0
-        length crossPosts @?= 1
-        case crossPosts of
-          (cp : _) -> cspSeriesName cp @?= "Other"
-          [] -> assertBool "expected at least one cross post" False
+        results <- evaluateQueries contentRoot [query]
+        length results @?= 1
+        case results of
+          (contextPost : _) -> sourceDirectory contextPost @?= "other-series"
+          [] -> assertBool "expected at least one post" False
 
   , testCase "multi-directory query with limitPerSource" $
       withTestContentDir $ \contentRoot -> do
         writePosts contentRoot "series-a" ["2026-04-15-a1.md", "2026-04-14-a2.md", "2026-04-13-a3.md"]
         writePosts contentRoot "series-b" ["2026-04-15-b1.md", "2026-04-14-b2.md"]
-        let metadata = [("series-a", "A", "🅰️"), ("series-b", "B", "🅱️")]
-            query = ContextQuery
-              { cqFrom = ["series-a", "series-b"]
-              , cqWhere = []
-              , cqOrderBy = OrderBy Filename Descending
-              , cqLimit = Nothing
-              , cqLimitPerSource = Just 1
+        let query = ContextQuery
+              { directories = ["series-a", "series-b"]
+              , conditions = []
+              , orderBy = OrderBy Filename Descending
+              , limit = Nothing
+              , limitPerSource = Just 1
               }
-        (_, crossPosts) <- evaluateQueries "my-series" contentRoot metadata [query]
-        length crossPosts @?= 2
+        results <- evaluateQueries contentRoot [query]
+        length results @?= 2
 
   , testCase "limitPerSource limits each directory independently" $
       withTestContentDir $ \contentRoot -> do
         writePosts contentRoot "series-a" ["2026-04-15-a1.md", "2026-04-14-a2.md", "2026-04-13-a3.md"]
         writePosts contentRoot "series-b" ["2026-04-15-b1.md", "2026-04-14-b2.md"]
-        let metadata = [("series-a", "A", "🅰️"), ("series-b", "B", "🅱️")]
-            query = ContextQuery
-              { cqFrom = ["series-a", "series-b"]
-              , cqWhere = []
-              , cqOrderBy = OrderBy Filename Descending
-              , cqLimit = Nothing
-              , cqLimitPerSource = Just 2
+        let query = ContextQuery
+              { directories = ["series-a", "series-b"]
+              , conditions = []
+              , orderBy = OrderBy Filename Descending
+              , limit = Nothing
+              , limitPerSource = Just 2
               }
-        (_, crossPosts) <- evaluateQueries "my-series" contentRoot metadata [query]
-        length crossPosts @?= 4
+        results <- evaluateQueries contentRoot [query]
+        length results @?= 4
 
   , testCase "global limit caps total across directories" $
       withTestContentDir $ \contentRoot -> do
         writePosts contentRoot "series-a" ["2026-04-15-a1.md", "2026-04-14-a2.md"]
         writePosts contentRoot "series-b" ["2026-04-15-b1.md", "2026-04-14-b2.md"]
-        let metadata = [("series-a", "A", "🅰️"), ("series-b", "B", "🅱️")]
-            query = ContextQuery
-              { cqFrom = ["series-a", "series-b"]
-              , cqWhere = []
-              , cqOrderBy = OrderBy Filename Descending
-              , cqLimit = Just 2
-              , cqLimitPerSource = Nothing
+        let query = ContextQuery
+              { directories = ["series-a", "series-b"]
+              , conditions = []
+              , orderBy = OrderBy Filename Descending
+              , limit = Just 2
+              , limitPerSource = Nothing
               }
-        (_, crossPosts) <- evaluateQueries "my-series" contentRoot metadata [query]
-        length crossPosts @?= 2
+        results <- evaluateQueries contentRoot [query]
+        length results @?= 2
 
-  , testCase "orderBy date ASC sorts oldest first" $
+  , testCase "orderBy date ascending sorts oldest first" $
       withTestContentDir $ \contentRoot -> do
         writePostWithDate contentRoot "my-series" "2026-04-15-new.md" "2026-04-15"
         writePostWithDate contentRoot "my-series" "2026-04-01-old.md" "2026-04-01"
         let query = ContextQuery
-              { cqFrom = ["my-series"]
-              , cqWhere = []
-              , cqOrderBy = OrderBy Date Ascending
-              , cqLimit = Just 1
-              , cqLimitPerSource = Nothing
+              { directories = ["my-series"]
+              , conditions = []
+              , orderBy = OrderBy Date Ascending
+              , limit = Just 1
+              , limitPerSource = Nothing
               }
-        (selfPosts, _) <- evaluateQueries "my-series" contentRoot [] [query]
-        length selfPosts @?= 1
+        results <- evaluateQueries contentRoot [query]
+        length results @?= 1
 
-  , testCase "reading own directory partitions as self posts" $
+  , testCase "posts carry source directory info" $
       withTestContentDir $ \contentRoot -> do
         writePosts contentRoot "my-series" ["2026-04-15-mine.md"]
         let query = ContextQuery
-              { cqFrom = ["my-series"]
-              , cqWhere = []
-              , cqOrderBy = OrderBy Filename Descending
-              , cqLimit = Just 5
-              , cqLimitPerSource = Nothing
+              { directories = ["my-series"]
+              , conditions = []
+              , orderBy = OrderBy Filename Descending
+              , limit = Just 5
+              , limitPerSource = Nothing
               }
-        (selfPosts, crossPosts) <- evaluateQueries "my-series" contentRoot [] [query]
-        length selfPosts @?= 1
-        length crossPosts @?= 0
+        results <- evaluateQueries contentRoot [query]
+        length results @?= 1
+        case results of
+          (contextPost : _) -> sourceDirectory contextPost @?= "my-series"
+          [] -> assertBool "expected at least one post" False
 
   , testCase "multiple queries combine results" $
       withTestContentDir $ \contentRoot -> do
         writePosts contentRoot "my-series" ["2026-04-15-mine.md", "2026-04-14-older.md"]
         writePosts contentRoot "other-a" ["2026-04-15-a.md"]
         writePosts contentRoot "other-b" ["2026-04-15-b.md"]
-        let metadata = [("other-a", "Series A", "🅰️"), ("other-b", "Series B", "🅱️")]
-            queries =
+        let queries =
               [ ContextQuery
-                  { cqFrom = ["my-series"]
-                  , cqWhere = []
-                  , cqOrderBy = OrderBy Filename Descending
-                  , cqLimit = Just 7
-                  , cqLimitPerSource = Nothing
+                  { directories = ["my-series"]
+                  , conditions = []
+                  , orderBy = OrderBy Filename Descending
+                  , limit = Just 7
+                  , limitPerSource = Nothing
                   }
               , ContextQuery
-                  { cqFrom = ["other-a", "other-b"]
-                  , cqWhere = []
-                  , cqOrderBy = OrderBy Filename Descending
-                  , cqLimit = Nothing
-                  , cqLimitPerSource = Just 1
+                  { directories = ["other-a", "other-b"]
+                  , conditions = []
+                  , orderBy = OrderBy Filename Descending
+                  , limit = Nothing
+                  , limitPerSource = Just 1
                   }
               ]
-        (selfPosts, crossPosts) <- evaluateQueries "my-series" contentRoot metadata queries
-        length selfPosts @?= 2
-        length crossPosts @?= 2
+        results <- evaluateQueries contentRoot queries
+        length results @?= 4
 
   , testCase "empty queries return nothing" $
       withTestContentDir $ \contentRoot -> do
         writePosts contentRoot "my-series" ["2026-04-15-mine.md"]
-        (selfPosts, crossPosts) <- evaluateQueries "my-series" contentRoot [] []
-        length selfPosts @?= 0
-        length crossPosts @?= 0
+        results <- evaluateQueries contentRoot []
+        length results @?= 0
 
   , testCase "missing directory returns empty" $
       withTestContentDir $ \contentRoot -> do
         let query = ContextQuery
-              { cqFrom = ["nonexistent"]
-              , cqWhere = []
-              , cqOrderBy = OrderBy Filename Descending
-              , cqLimit = Just 7
-              , cqLimitPerSource = Nothing
+              { directories = ["nonexistent"]
+              , conditions = []
+              , orderBy = OrderBy Filename Descending
+              , limit = Just 7
+              , limitPerSource = Nothing
               }
-        (selfPosts, crossPosts) <- evaluateQueries "nonexistent" contentRoot [] [query]
-        length selfPosts @?= 0
-        length crossPosts @?= 0
+        results <- evaluateQueries contentRoot [query]
+        length results @?= 0
 
-  , testCase "cross series posts carry correct metadata" $
+  , testCase "context posts carry correct source directory" $
       withTestContentDir $ \contentRoot -> do
         writePosts contentRoot "other" ["2026-04-15-post.md"]
-        let metadata = [("other", "Other Name", "✨")]
-            query = ContextQuery
-              { cqFrom = ["other"]
-              , cqWhere = []
-              , cqOrderBy = OrderBy Filename Descending
-              , cqLimit = Nothing
-              , cqLimitPerSource = Just 1
-              }
-        (_, crossPosts) <- evaluateQueries "my-series" contentRoot metadata [query]
-        case crossPosts of
-          (cp : _) -> do
-            cspSeriesName cp @?= "Other Name"
-            cspSeriesIcon cp @?= "✨"
-          [] -> assertBool "expected at least one cross post" False
-
-  , testCase "unknown series uses directory name as fallback" $
-      withTestContentDir $ \contentRoot -> do
-        writePosts contentRoot "unlabeled" ["2026-04-15-post.md"]
         let query = ContextQuery
-              { cqFrom = ["unlabeled"]
-              , cqWhere = []
-              , cqOrderBy = OrderBy Filename Descending
-              , cqLimit = Just 1
-              , cqLimitPerSource = Nothing
+              { directories = ["other"]
+              , conditions = []
+              , orderBy = OrderBy Filename Descending
+              , limit = Nothing
+              , limitPerSource = Just 1
               }
-        (_, crossPosts) <- evaluateQueries "my-series" contentRoot [] [query]
-        case crossPosts of
-          (cp : _) -> do
-            cspSeriesName cp @?= "unlabeled"
-            cspSeriesIcon cp @?= "📁"
-          [] -> assertBool "expected at least one cross post" False
+        results <- evaluateQueries contentRoot [query]
+        case results of
+          (contextPost : _) -> sourceDirectory contextPost @?= "other"
+          [] -> assertBool "expected at least one post" False
   ]
 
 -- Test helpers
@@ -476,11 +448,5 @@ writePostWithTitle contentRoot seriesId filename title = do
   let content = "---\ntitle: \"" <> title <> "\"\n---\nContent for " <> title
   TIO.writeFile (seriesDir </> T.unpack filename) content
 
-genOrderBy :: QC.Gen OrderBy
-genOrderBy = OrderBy <$> genField <*> genDirection
-
 genField :: QC.Gen Field
 genField = QC.elements [Filename, Date, Title]
-
-genDirection :: QC.Gen SortDirection
-genDirection = QC.elements [Ascending, Descending]

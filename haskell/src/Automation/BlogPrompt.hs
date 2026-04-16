@@ -1,5 +1,6 @@
 module Automation.BlogPrompt
   ( BlogContext (..)
+  , CrossSeriesPost (..)
   , Slug (..)
   , DisplayTitle (..)
   , mkSlug
@@ -35,7 +36,7 @@ import Text.Read (readMaybe)
 import Automation.BlogComments (BlogComment (..))
 import Automation.BlogPosts (BlogPost (..))
 import Automation.BlogSeriesConfig (BlogSeriesConfig (..))
-import Automation.ContextQuery (CrossSeriesPost (..))
+
 import Automation.Frontmatter (quoteYamlValue)
 import Automation.PacificTime (formatDay, formatDayHuman, toPacificLocalTime)
 import Automation.Text (isEmoji)
@@ -56,6 +57,13 @@ mkSlug t
   | T.any (\c -> c == ' ' || c == '\n') t = Left ("Slug contains whitespace: " <> t)
   | T.head t == '-' || T.last t == '-' = Left ("Slug has leading/trailing hyphens: " <> t)
   | otherwise = Right (Slug t)
+
+-- | A post from another blog series, carrying metadata for prompt formatting.
+data CrossSeriesPost = CrossSeriesPost
+  { crossSeriesName :: Text
+  , crossSeriesIcon :: Text
+  , crossSeriesPost :: BlogPost
+  } deriving (Show, Eq)
 
 data BlogContext = BlogContext
   { bcxSeries           :: BlogSeriesConfig
@@ -233,10 +241,10 @@ buildCrossSeriesSection posts =
 
 formatCrossSeriesPost :: CrossSeriesPost -> Text
 formatCrossSeriesPost CrossSeriesPost{..} =
-  let body = stripEmbedSections (bpBody cspPost)
+  let body = stripEmbedSections (bpBody crossSeriesPost)
       excerpt = T.take 2000 body
-  in "### " <> cspSeriesIcon <> " " <> cspSeriesName <> " — " <> bpTitle cspPost
-    <> " (" <> bpDate cspPost <> ")\n\n" <> T.strip excerpt
+  in "### " <> crossSeriesIcon <> " " <> crossSeriesName <> " — " <> bpTitle crossSeriesPost
+    <> " (" <> bpDate crossSeriesPost <> ")\n\n" <> T.strip excerpt
 
 formatComment :: BlogComment -> Text
 formatComment c =

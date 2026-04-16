@@ -176,10 +176,10 @@ validationTests = testGroup "validation"
       let queries = dsContextQueries (unsafeParse "test" configWithCrossSeries)
       in case queries of
         [first, second] -> do
-          cqFrom first @?= ["test"]
-          cqLimit first @?= Just 7
-          cqFrom second @?= ["other-a", "other-b"]
-          cqLimitPerSource second @?= Just 1
+          directories first @?= ["test"]
+          limit first @?= Just 7
+          directories second @?= ["other-a", "other-b"]
+          limitPerSource second @?= Just 1
         _ -> assertBool ("expected 2 queries, got " <> show (length queries)) False
 
   , testCase "missing contextSources defaults to defaultContextQueries" $

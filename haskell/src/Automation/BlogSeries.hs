@@ -22,10 +22,11 @@ import Automation.BlogComments (BlogComment)
 import Automation.BlogPosts (BlogPost (..), readAgentsMd)
 import Automation.BlogPrompt
   ( BlogContext (..)
+  , CrossSeriesPost (..)
   , filterCommentsAfterLastPost
   )
 import Automation.BlogSeriesConfig (BlogSeriesConfig (..), lookupSeriesIn)
-import Automation.ContextQuery (evaluateQueries)
+import Automation.ContextQuery (ContextPost (..), evaluateQueries)
 import Automation.Frontmatter (quoteYamlValue)
 import Automation.Wikilink (buildForwardLink)
 import Data.Map.Strict (Map)
@@ -38,8 +39,8 @@ buildBlogContext seriesMap seriesId contentRoot comments today =
     Left reason -> pure (Left reason)
     Right series -> do
       let seriesDir = contentRoot </> T.unpack seriesId
-          seriesMetadata = fmap toMetadataTuple (Map.elems seriesMap)
-      (selfPosts, crossPosts) <- evaluateQueries seriesId contentRoot seriesMetadata (bscContextQueries series)
+      contextPosts <- evaluateQueries contentRoot (bscContextQueries series)
+      let (selfPosts, crossPosts) = partitionContextPosts seriesId seriesMap contextPosts
       agentsMd <- readAgentsMd seriesDir
       let filteredComments = filterCommentsAfterLastPost series selfPosts comments
       pure $ Right BlogContext
@@ -51,8 +52,23 @@ buildBlogContext seriesMap seriesId contentRoot comments today =
         , bcxCrossSeriesPosts = crossPosts
         }
 
-toMetadataTuple :: BlogSeriesConfig -> (Text, Text, Text)
-toMetadataTuple config = (bscId config, bscName config, bscIcon config)
+partitionContextPosts :: Text -> Map Text BlogSeriesConfig -> [ContextPost] -> ([BlogPost], [CrossSeriesPost])
+partitionContextPosts seriesId seriesMap = foldr partition ([], [])
+  where
+    partition contextPost (selfs, crosses)
+      | sourceDirectory contextPost == seriesId = (post contextPost : selfs, crosses)
+      | otherwise = (selfs, annotateWithMetadata seriesMap contextPost : crosses)
+
+annotateWithMetadata :: Map Text BlogSeriesConfig -> ContextPost -> CrossSeriesPost
+annotateWithMetadata seriesMap contextPost =
+  let seriesConfig = Map.lookup (sourceDirectory contextPost) seriesMap
+      name = maybe (sourceDirectory contextPost) bscName seriesConfig
+      icon = maybe "📁" bscIcon seriesConfig
+  in CrossSeriesPost
+    { crossSeriesName = name
+    , crossSeriesIcon = icon
+    , crossSeriesPost = post contextPost
+    }
 
 generateSeriesIndex :: BlogSeriesConfig -> Text
 generateSeriesIndex series =

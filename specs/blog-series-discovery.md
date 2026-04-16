@@ -59,18 +59,19 @@
 
 - 🗂️ from (required) is a JSON array of directory path strings relative to the content root. For example, ["auto-blog-zero"] or ["chickie-loo", "the-noise", "positivity-bias"].
 - 🔎 where (optional) is an array of filter conditions. Each condition has field (filename, date, or title), operator (>=, <=, or contains), and value (the comparison text).
-- 📊 orderBy (optional) is a string like "filename DESC" or "date ASC". Defaults to "filename DESC" when omitted.
+- 📊 orderBy (optional) is a string naming the field to sort by: filename, date, or title. Defaults to filename when omitted.
+- 🔀 ascending (optional) is a boolean. When true, results are sorted in ascending order. Defaults to false (descending).
 - 🔢 limit (optional) is a number capping total results across all source directories.
 - 🔢 limitPerSource (optional) is a number capping results per source directory independently.
 
-📝 When contextSources is absent, the engine generates a default query equivalent to: from is the array containing the series' own ID, orderBy is "filename DESC", and limit is 7. This preserves backward compatibility with all existing configs.
+📝 When contextSources is absent, the engine generates a default query equivalent to: from is the array containing the series' own ID, orderBy is filename (descending by default), and limit is 7. This preserves backward compatibility with all existing configs.
 
 📋 Example: Convergence reads its own recent posts and the latest from each of the other five series.
 
 ```json
 "contextSources": [
-  { "from": ["convergence"], "orderBy": "filename DESC", "limit": 7 },
-  { "from": ["auto-blog-zero", "chickie-loo", "the-noise", "positivity-bias", "systems-for-public-good"], "orderBy": "filename DESC", "limitPerSource": 1 }
+  { "from": ["convergence"], "orderBy": "filename", "limit": 7 },
+  { "from": ["auto-blog-zero", "chickie-loo", "the-noise", "positivity-bias", "systems-for-public-good"], "orderBy": "filename", "limitPerSource": 1 }
 ]
 ```
 

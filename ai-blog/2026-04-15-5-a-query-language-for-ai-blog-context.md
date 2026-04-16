@@ -18,15 +18,15 @@ URL: https://bagrounds.org/ai-blog/2026-04-15-5-a-query-language-for-ai-blog-con
 
 ### 📂 FROM: Directory Paths
 
-🗂️ Instead of abstract scope names, queries specify directory paths relative to the content root. 📁 A query that reads from the chickie-loo directory says exactly that: from is the array containing "chickie-loo." 📁 A query that reads from five directories lists all five. 🎯 There is no indirection, no self or others to resolve. 📐 The caller decides exactly which directories to read, and the engine does exactly what is asked.
+🗂️ Instead of abstract scope names, queries specify directory paths relative to the content root. 📁 A query that reads from the chickie-loo directory says exactly that: the directories field is the array containing "chickie-loo." 📁 A query that reads from five directories lists all five. 🎯 There is no indirection, no self or others to resolve. 📐 The caller decides exactly which directories to read, and the engine does exactly what is asked.
 
 ### 🔎 WHERE: Filter Conditions
 
-🔍 Each query can include an optional array of WHERE conditions. 📋 Each condition specifies a field (filename, date, or title), an operator (greater-or-equal, less-or-equal, or contains), and a value to compare against. 🔗 Multiple conditions are ANDed together, meaning all must match for a post to be included. 📅 For example, a condition filtering date greater-or-equal "2026-04-01" keeps only posts from April onward. 🔎 The contains operator does case-insensitive substring matching, useful for finding recap posts by title.
+🔍 Each query can include an optional array of conditions. 📋 Each condition specifies a field (filename, date, or title), an operator (greater-or-equal, less-or-equal, or contains), and a value to compare against. 🔗 Multiple conditions are ANDed together, meaning all must match for a post to be included. 📅 For example, a condition filtering date greater-or-equal "2026-04-01" keeps only posts from April onward. 🔎 The contains operator does case-insensitive substring matching, useful for finding recap posts by title.
 
 ### 📊 ORDER BY: Sorting
 
-🔀 The orderBy field controls how results are sorted after filtering. 📝 It takes a string like "filename DESC" or "date ASC." 📐 When omitted, the default is filename descending, which gives newest-first ordering since filenames are date-prefixed. 🔠 Three fields are available for sorting: filename, date, and title.
+🔀 The orderBy field names which property to sort by: filename, date, or title. 🔁 A separate ascending boolean controls direction. 📐 When ascending is true, results come in ascending order; when omitted or false, they come in descending order. 📐 When orderBy is omitted entirely, the default is filename descending, which gives newest-first ordering since filenames are date-prefixed. 🧩 Separating the sort field from the direction flag keeps each concern independent — you can change the field without touching the direction and vice versa.
 
 ### 🔢 LIMIT: Result Capping
 
@@ -36,9 +36,9 @@ URL: https://bagrounds.org/ai-blog/2026-04-15-5-a-query-language-for-ai-blog-con
 
 🔧 Context queries live in an optional contextSources array in each series' JSON config file. 📋 Here is what Convergence, the cross-series synthesis blog, specifies:
 
-🔹 The first query reads from the array containing "convergence" with orderBy "filename DESC" and limit 7, meaning up to seven recent posts from its own directory for continuity.
+🔹 The first query reads from the array containing "convergence" with orderBy set to "filename" and limit 7, meaning up to seven recent posts from its own directory for continuity.
 
-🔹 The second query reads from the array containing the five other series directory names with orderBy "filename DESC" and limitPerSource 1, meaning the single most recent post from each other series.
+🔹 The second query reads from the array containing the five other series directory names with orderBy set to "filename" and limitPerSource 1, meaning the single most recent post from each other series.
 
 📝 When contextSources is absent, the engine generates a default query reading from the series' own directory with limit 7. 🔄 Every existing series config works unchanged.
 
@@ -50,41 +50,47 @@ URL: https://bagrounds.org/ai-blog/2026-04-15-5-a-query-language-for-ai-blog-con
 
 🔹 WhereOperator has three constructors: GreaterOrEqual, LessOrEqual, and Contains.
 
-🔹 WhereCondition combines a Field, a WhereOperator, and a Text value.
+🔹 WhereCondition is a record with three fields named field, operator, and value. No abbreviated prefixes.
 
-🔹 ContextQuery is the top-level record with five fields: from (list of directory paths), where (list of conditions), orderBy (sort specification), limit (optional global cap), and limitPerSource (optional per-directory cap).
+🔹 ContextQuery is the top-level record with five fields: directories (list of directory paths), conditions (list of WHERE conditions), orderBy (sort specification), limit (optional global cap), and limitPerSource (optional per-directory cap). Again, no abbreviated prefixes — just clear, full-word names.
 
-🔹 CrossSeriesPost carries series metadata (name and icon) alongside the BlogPost, annotating posts from other directories for the prompt builder.
+🔹 ContextPost is the uniform result type returned by the engine. Each post carries its sourceDirectory (where it was read from) and the BlogPost data. The engine returns a flat list of ContextPost records and does not concern itself with "self" versus "cross-series" distinctions.
 
 ## ⚙️ The Engine
 
-🔀 The evaluateQuery function processes a single query through four stages. 📂 First, it reads posts from each listed directory, applying limitPerSource if specified. 🔎 Second, it filters results through all WHERE conditions. 📊 Third, it sorts by the ORDER BY specification. 🔢 Fourth, it applies the global limit if specified.
+🔀 The evaluateQuery function processes a single query through four stages. 📂 First, it reads posts from each listed directory, applying limitPerSource if specified. 🔎 Second, it filters results through all conditions. 📊 Third, it sorts by the orderBy specification. 🔢 Fourth, it applies the global limit if specified.
 
-🔀 The evaluateQueries function processes multiple queries, concatenates all results, then partitions them: posts whose source directory matches the current series become self posts, and all others become cross-series posts annotated with series metadata (name and icon).
+🔀 The evaluateQueries function processes multiple queries and concatenates all results into a flat list of ContextPost records. 📐 The engine is purely a read-filter-sort-limit pipeline. It has no knowledge of blog series, no metadata annotation, and no concept of "self" or "cross" posts.
+
+🧩 The partitioning and metadata annotation happen one layer up, in buildBlogContext within the BlogSeries module. That function receives the flat ContextPost list, partitions by source directory (matching against the current series ID), and annotates cross-series posts with series name and icon from the BlogSeriesConfig map. The prompt-specific CrossSeriesPost type lives in BlogPrompt, where it belongs as a formatting concern.
 
 🧩 Multiple queries compose naturally. 📦 A series can combine a self-directory query with a cross-directory query, each with their own filters, sorts, and limits, and the engine handles them independently before merging.
 
-## 🧹 What Got Cleaned Up
+## 🧹 Architectural Principles
 
-🗑️ The abstract ContextScope type (Self, OtherSeries, AllSeries, SpecificSeries) was removed. 🗑️ The SelectionStrategy type (Latest, LatestPerSeries) was removed. 🗑️ The SeriesInfo type was removed in favor of simple metadata tuples. 🗑️ The scope resolution functions (readFromSelf, readFromOthers, readFromAll, readFromSpecific) were replaced by a single readFromDirectory function.
+🏛️ Three principles guided the design.
 
-✨ In their place, the engine works with concrete directory paths and SQL-like clauses. 📐 The BlogContext and BlogPrompt interfaces remain identical since the query engine returns the same two data structures (self posts and cross-series posts) that the prompt builder already knows how to format.
+🔹 First, separation of concerns. The query engine reads files. The blog series module partitions and annotates. The prompt module formats. No type crosses these boundaries unnecessarily. CrossSeriesPost does not live in the query engine because "cross-series" is a prompt formatting concept, not a query concept.
+
+🔹 Second, no abbreviations. Every field name in the codebase uses full words. The ContextQuery record has directories, conditions, orderBy, limit, and limitPerSource. WhereCondition has field, operator, and value. ContextPost has sourceDirectory and post. Legibility always wins over brevity.
+
+🔹 Third, orthogonal controls. The orderBy field names a property. The ascending boolean controls direction. These are independent concerns with independent controls, just like SQL's ORDER BY and ASC/DESC keywords.
 
 ## 🧪 Testing
 
 ✅ The test suite covers the full query language and engine.
 
-🔹 ORDER BY parsing tests verify that all field and direction combinations parse correctly, including default direction when omitted and rejection of unknown fields and directions.
+🔹 Field parsing tests verify that all three field names parse correctly and unknown fields are rejected.
 
-🔹 Round-trip property tests confirm that parsing and serializing any OrderBy value produces the same value.
+🔹 Field round-trip property tests confirm that fieldFromText composed with fieldToText preserves the original value for all Field constructors.
 
-🔹 JSON parsing tests verify that query objects with various combinations of from, where, orderBy, limit, and limitPerSource deserialize correctly, and that invalid field names, operators, and orderBy strings are rejected.
+🔹 JSON parsing tests verify queries with from arrays, orderBy as a field name, the ascending flag (both true and false), limitPerSource, WHERE clauses, invalid field names, invalid operators, query arrays, and empty arrays.
 
 🔹 WHERE clause evaluation tests use temporary directories with real files to verify date range filtering with greater-or-equal and less-or-equal, case-insensitive title contains matching, and multiple conditions being ANDed together.
 
-🔹 Evaluation tests with temporary directories verify reading from own directories, limit enforcement, cross-series reads, limitPerSource per directory, global limit across directories, ORDER BY date ascending, self versus cross partition, multiple query combination, empty queries, missing directories, metadata annotation, and fallback for unknown series.
+🔹 Evaluation tests with temporary directories verify reading from directories, limit enforcement, cross-directory reads, limitPerSource per directory, global limit across directories, ORDER BY date ascending, source directory tagging, multiple query combination, empty queries, and missing directories.
 
-📊 Total test count is 1848.
+📊 Total test count is 1845.
 
 ## 🌱 Future Possibilities
 

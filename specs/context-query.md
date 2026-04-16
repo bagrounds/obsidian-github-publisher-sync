@@ -11,11 +11,12 @@
 📐 The query language is built from composable algebraic data types.
 
 - 🏷️ Field represents a post attribute that can be used in ORDER BY and WHERE clauses. Three variants exist: Filename, Date, and Title.
-- 🔀 SortDirection is either Ascending or Descending.
+- 🔀 SortDirection has two constructors: Ascending and Descending.
 - 📊 OrderBy combines a Field and a SortDirection to control result ordering.
 - 🔍 WhereOperator supports three comparison modes: GreaterOrEqual, LessOrEqual, and Contains (case-insensitive substring match).
-- 🔎 WhereCondition combines a Field, a WhereOperator, and a Text value for filtering.
-- 📋 ContextQuery is the top-level query record with five fields: from (list of directory paths), where (list of filter conditions), orderBy (sort specification), limit (global cap), and limitPerSource (per-directory cap).
+- 🔎 WhereCondition combines a field, an operator, and a text value for filtering.
+- 📋 ContextQuery is the top-level query record with five fields: directories (list of directory paths), conditions (list of filter conditions), orderBy (sort specification), limit (global cap), and limitPerSource (per-directory cap).
+- 📦 ContextPost is the uniform result type returned by the engine. Each post carries its sourceDirectory and the BlogPost data.
 
 ### 📊 JSON Schema
 
@@ -23,7 +24,8 @@
 
 - 🗂️ from is a JSON array of strings, each a content directory path relative to the content root. For example, auto-blog-zero or chickie-loo.
 - 🔎 where is an optional array of condition objects. Each condition has three fields: field (one of filename, date, or title), operator (one of >=, <=, or contains), and value (the comparison text).
-- 📊 orderBy is an optional string like "filename DESC" or "date ASC". When omitted, defaults to filename DESC (newest first).
+- 📊 orderBy is an optional string naming the field to sort by: filename, date, or title. When omitted, defaults to filename.
+- 🔀 ascending is an optional boolean. When true, results are sorted in ascending order. When omitted or false, results are sorted in descending order (newest first).
 - 🔢 limit is an optional number capping total results across all sources.
 - 🔢 limitPerSource is an optional number capping results per source directory independently.
 
@@ -33,12 +35,9 @@
 
 ### ⚙️ Query Engine
 
-📐 The evaluateQueries function evaluates a list of queries against the content directory structure. 📤 It returns two lists:
+📐 The evaluateQueries function evaluates a list of queries against the content directory structure. 📤 It returns a flat list of ContextPost records, each tagged with its source directory.
 
-1. 📝 Self posts are posts from the current series' own directory, used in the "Recent Posts" prompt section.
-2. 🌐 Cross-series posts are posts from other directories, used in the "Today Across the Blog" prompt section.
-
-📐 Classification depends on whether a post's source directory matches the current series ID.
+📐 The engine is purely concerned with reading, filtering, sorting, and limiting. It does not partition results or annotate with series metadata. The consumer (such as buildBlogContext in BlogSeries) handles partitioning into self posts versus cross-series posts and looking up series metadata from the config map.
 
 ### 🔍 WHERE Clause Evaluation
 
@@ -50,7 +49,7 @@
 
 ### 📊 Sorting
 
-📐 ORDER BY sorts results after filtering. The default is filename DESC, which gives newest-first ordering since filenames are date-prefixed.
+📐 ORDER BY sorts results after filtering. The orderBy field names the sort field (filename, date, or title), and the ascending boolean controls direction. The default is filename descending, which gives newest-first ordering since filenames are date-prefixed.
 
 ### 🔢 Limiting
 
@@ -65,20 +64,23 @@
 
 ## 📐 Module Design
 
-📐 The Automation.ContextQuery module is self-contained with its own types and engine. 🔗 It imports only from Automation.BlogPosts (for BlogPost and readSeriesPosts) and Automation.Json (for JSON parsing). 📦 Series metadata for cross-series annotation is passed as a simple list of (id, name, icon) tuples, keeping the engine decoupled from BlogSeriesConfig and avoiding circular dependencies.
+📐 The Automation.ContextQuery module is self-contained with its own types and engine. 🔗 It imports only from Automation.BlogPosts (for BlogPost and readSeriesPosts) and Automation.Json (for JSON parsing). 📦 The engine returns uniform ContextPost records without any knowledge of "self" versus "cross-series" distinctions. That classification is a prompt concern handled by the consumer.
+
+📐 The CrossSeriesPost type lives in Automation.BlogPrompt, where it belongs — it is a prompt formatting concept, not a query concept. The buildBlogContext function in BlogSeries partitions ContextPost results by source directory and annotates cross-series posts with metadata from the BlogSeriesConfig map.
 
 ## 🧪 Testing
 
-- ✅ ORDER BY parsing: all field and direction variants plus error cases
-- ✅ ORDER BY round-trip: parseOrderBy composed with orderByToText preserves identity via property test
-- ✅ JSON parsing: simple FROM with limit, multiple directories, orderBy, limitPerSource, WHERE clauses, invalid fields, invalid operators, arrays, empty arrays
+- ✅ Field parsing: all variants (filename, date, title) plus error case for unknown fields
+- ✅ Field round-trip: fieldFromText composed with fieldToText preserves identity via property test
+- ✅ JSON parsing: simple FROM with limit, multiple directories, orderBy as field name, ascending flag (true and false), limitPerSource, WHERE clauses, invalid fields, invalid operators, arrays, empty arrays
 - ✅ WHERE clause evaluation: date range filtering with >= and <=, title contains with case insensitivity, multiple conditions ANDed together
 - ✅ Default queries: produces one query targeting the series' own directory with limit 7
-- ✅ Evaluation with real temporary directories: own directory reads, limit enforcement, cross-series reads, limitPerSource per directory, global limit across directories, ORDER BY date ASC, self vs cross partition, multiple queries combined, empty queries, missing directories, metadata annotation, fallback for unknown series
+- ✅ Evaluation with real temporary directories: own directory reads, limit enforcement, cross-directory reads, limitPerSource per directory, global limit across directories, ORDER BY date ascending, source directory tagging, multiple queries combined, empty queries, missing directories
 
 ## 📁 Files
 
 - 📄 haskell/src/Automation/ContextQuery.hs contains the types, JSON parsing, and query engine.
+- 📄 haskell/src/Automation/BlogPrompt.hs contains the CrossSeriesPost type (a prompt formatting concern).
 - 📄 haskell/test/Automation/ContextQueryTest.hs contains unit tests and property tests.
 - 📄 specs/context-query.md is this spec.
 - 📄 specs/blog-series-discovery.md documents contextSources in the JSON schema.

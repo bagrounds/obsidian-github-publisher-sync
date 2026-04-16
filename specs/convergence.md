@@ -12,24 +12,24 @@
 
 1. 📖 The first query reads from the convergence directory with a limit of 7, providing continuity with its own recent posts.
 2. 📖 The second query reads from the five other series directories (auto-blog-zero, chickie-loo, the-noise, positivity-bias, systems-for-public-good) with limitPerSource of 1, getting the latest post from each.
-3. 📦 Posts from directories other than the current series are packaged as CrossSeriesPost records with series name, icon, and the BlogPost record.
+3. 📦 The engine returns uniform ContextPost records. The buildBlogContext function partitions them by source directory — posts from the convergence directory become self posts, and all others become cross-series posts annotated with series name and icon from the config map.
 4. 📝 A "Today Across the Blog" section is included in the user prompt.
 5. 🤖 The AI then synthesizes connections across all series.
 
 ### 📊 Data Flow
 
 - 🔍 discoverSeries parses convergence.json and its contextSources array.
-- ⚙️ evaluateQueries resolves each query against the content directory, reading posts from the listed directories, applying WHERE filters, sorting by ORDER BY, and capping with LIMIT or limitPerSource.
-- 📋 buildBlogContext populates bcxPreviousPosts with posts from the convergence directory and bcxCrossSeriesPosts with posts from other directories.
+- ⚙️ evaluateQueries resolves each query against the content directory, reading posts from the listed directories, applying WHERE filters, sorting by ORDER BY, and capping with LIMIT or limitPerSource. It returns uniform ContextPost records tagged with source directory.
+- 📋 buildBlogContext partitions ContextPost results into self posts (from the convergence directory) and cross-series posts (from other directories, annotated with metadata from the series config map).
 - 📝 buildBlogPrompt adds a "Today Across the Blog" section to the user prompt.
 - 🤖 The Gemini API generates the synthesis post.
 
 ### 🧩 Key Types
 
-- 📋 ContextQuery is a SQL-like query with from (directory paths), where (filter conditions), orderBy (sort spec), limit (global cap), and limitPerSource (per-directory cap).
-- 🌐 CrossSeriesPost is a post from another series, containing the series name, icon, and the BlogPost record.
-- 📝 BlogContext.bcxCrossSeriesPosts is the list of cross-series posts included in the generation context.
-- ⚙️ BlogSeriesConfig.bscContextQueries is the list of context queries from the JSON config.
+- 📋 ContextQuery is a SQL-like query with directories (directory paths), conditions (filter conditions), orderBy (field name), ascending (optional direction flag), limit (global cap), and limitPerSource (per-directory cap).
+- 📦 ContextPost is the uniform result type from the engine, carrying sourceDirectory and the BlogPost.
+- 🌐 CrossSeriesPost (in BlogPrompt) carries annotated metadata (series name, icon, post) for prompt formatting.
+- 📝 BlogContext.bcxCrossSeriesPosts is the list of annotated cross-series posts included in the generation context.
 
 ## ⚙️ Configuration
 
@@ -75,16 +75,16 @@
 - ✅ buildCrossSeriesSection: empty list, single post, multiple posts, body truncation, embed stripping.
 - ✅ buildBlogPrompt: includes or excludes cross-series section based on context.
 - ✅ deriveBlogSeriesConfig: preserves context queries through discovery pipeline.
-- ✅ Property tests: OrderBy round-trips via parseOrderBy and orderByToText.
+- ✅ Property tests: Field round-trips via fieldFromText and fieldToText.
 
 ## 📁 Files
 
 - 📄 haskell/series/convergence.json contains the series configuration with contextSources.
 - 📄 convergence/AGENTS.md defines the synthesis personality system prompt.
 - 📄 convergence/2026-04-15-the-observer-awakens.md is the inaugural seed post.
-- 📄 haskell/src/Automation/ContextQuery.hs has the ContextQuery types, evaluateQueries engine, and CrossSeriesPost.
-- 📄 haskell/src/Automation/BlogPrompt.hs has buildCrossSeriesSection for prompt formatting.
-- 📄 haskell/src/Automation/BlogSeries.hs has buildBlogContext with query evaluation.
+- 📄 haskell/src/Automation/ContextQuery.hs has the ContextQuery types, ContextPost, and evaluateQueries engine.
+- 📄 haskell/src/Automation/BlogPrompt.hs has CrossSeriesPost and buildCrossSeriesSection for prompt formatting.
+- 📄 haskell/src/Automation/BlogSeries.hs has buildBlogContext with query evaluation, partitioning, and metadata annotation.
 - 📄 haskell/src/Automation/BlogSeriesConfig.hs has the bscContextQueries field.
 - 📄 haskell/src/Automation/BlogSeriesDiscovery.hs handles contextSources parsing.
 - 📄 specs/convergence.md is this spec.

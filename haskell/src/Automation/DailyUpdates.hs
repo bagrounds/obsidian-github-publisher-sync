@@ -4,27 +4,8 @@ module Automation.DailyUpdates
   , addUpdateLinks
   , extractTitleFromFile
   , addUpdateLinksToReflection
-  , PageEntry (..)
-  , parseExistingEntries
-  , extractSectionText
-  , parseTableEntries
-  , parseDataRowCells
-  , parseWikiLinkCell
-  , parseMarkdownLinkCell
-  , parseValueCells
-  , renderUpdatesSection
-  , replaceUpdatesSection
-  , mergeEntries
-  , buildStatsLine
-  , buildTable
-  , canonicalColumns
-  , sameColumn
-  , escapeTablePipe
-  , unescapeTablePipe
-  , updatesSectionHeader
   , parseStatsPageCount
   , resolveRelativePath
-  , isDataRow
   ) where
 
 import Control.Applicative ((<|>))

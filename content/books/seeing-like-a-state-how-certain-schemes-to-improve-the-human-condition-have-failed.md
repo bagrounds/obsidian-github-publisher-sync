@@ -7,8 +7,9 @@ URL: https://bagrounds.org/books/seeing-like-a-state-how-certain-schemes-to-impr
 affiliate link: https://amzn.to/4dOZbVk
 CTA: Resist simplification.
 link_analysis_model: gemini-3.1-flash-lite-preview
-link_analysis_time: 2026-04-01T00:00:00Z
+link_analysis_time: 2026-04-15T00:00:00Z
 force_analyze_links: false
+link_analysis_version: "2"
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 📖🏛️📉 Seeing Like a State: How Certain Schemes to Improve the Human Condition Have Failed  

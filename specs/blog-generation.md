@@ -172,7 +172,7 @@
 | `readSeriesPosts(seriesDir)` | BlogPosts | 📄 Read and parse all markdown posts from series directory |
 | `readAgentsMd(seriesDir)` | BlogPosts | 📖 Read AGENTS.md system prompt override |
 | `buildBlogContext(seriesMap, seriesId, repoRoot, comments, today)` | BlogSeries | 📚 Assemble complete blog context by evaluating context queries from config |
-| `evaluateQueries(seriesId, contentRoot, seriesInfoMap, queries)` | ContextQuery | 🔎 Evaluate context queries to resolve self and cross-series posts |
+| `evaluateQueries(seriesId, contentRoot, seriesMetadata, queries)` | ContextQuery | 🔎 Evaluate SQL-like context queries against content directories |
 | `updatePreviousPost(seriesDir, previousPost, series, nextFilename)` | BlogSeries | 🔗 Update previous post file with forward navigation link |
 
 ## 🧪 Testing

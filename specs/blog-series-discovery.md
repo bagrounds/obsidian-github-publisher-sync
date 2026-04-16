@@ -50,31 +50,27 @@
 
 ### 📝 Optional Fields
 
-| 🏷️ Field | 📊 Type | 📝 Default | 📝 Description |
-|---|---|---|---|
-| `priorityUser` | string or null | null | GitHub handle whose comments get priority flagging |
-| `contextSources` | array of objects | `[{"from": "self", "latest": 7}]` | Declarative queries specifying which posts to pull into generation context |
+- 🏷️ priorityUser is a string or null, defaulting to null. It specifies the GitHub handle whose comments get priority flagging.
+- 🏷️ contextSources is an optional array of query objects. When absent, defaults to reading the 7 most recent posts from the series' own directory.
 
 ### 🔎 Context Query Language
 
-📐 Each element of `contextSources` is a query object with two required properties.
+📐 Each element of contextSources is a SQL-like query object with the following properties.
 
-| 🏷️ Field | 📊 Type | 📝 Description |
-|---|---|---|
-| `from` | string | Scope: `"self"` (this series), `"others"` (all other series), `"all"` (every series), or `"series:<id>"` (a specific series) |
-| `latest` | number | Maximum posts total across the scope (mutually exclusive with `latestPerSeries`) |
-| `latestPerSeries` | number | Maximum posts per series within the scope (mutually exclusive with `latest`) |
+- 🗂️ from (required) is a JSON array of directory path strings relative to the content root. For example, ["auto-blog-zero"] or ["chickie-loo", "the-noise", "positivity-bias"].
+- 🔎 where (optional) is an array of filter conditions. Each condition has field (filename, date, or title), operator (>=, <=, or contains), and value (the comparison text).
+- 📊 orderBy (optional) is a string like "filename DESC" or "date ASC". Defaults to "filename DESC" when omitted.
+- 🔢 limit (optional) is a number capping total results across all source directories.
+- 🔢 limitPerSource (optional) is a number capping results per source directory independently.
 
-📝 Exactly one of `latest` or `latestPerSeries` must be specified per query.
+📝 When contextSources is absent, the engine generates a default query equivalent to: from is the array containing the series' own ID, orderBy is "filename DESC", and limit is 7. This preserves backward compatibility with all existing configs.
 
-📝 When `contextSources` is absent, the default is `[{"from": "self", "latest": 7}]` which reads up to 7 recent posts from the current series, preserving backward compatibility with all existing configs.
-
-📋 Example: a cross-series synthesis blog reads both its own history and the latest from every other series.
+📋 Example: Convergence reads its own recent posts and the latest from each of the other five series.
 
 ```json
 "contextSources": [
-  { "from": "self", "latest": 7 },
-  { "from": "others", "latestPerSeries": 1 }
+  { "from": ["convergence"], "orderBy": "filename DESC", "limit": 7 },
+  { "from": ["auto-blog-zero", "chickie-loo", "the-noise", "positivity-bias", "systems-for-public-good"], "orderBy": "filename DESC", "limitPerSource": 1 }
 ]
 ```
 

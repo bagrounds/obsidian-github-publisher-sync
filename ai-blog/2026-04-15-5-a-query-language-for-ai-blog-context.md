@@ -1,86 +1,94 @@
 ---
 share: true
 aliases:
-  - "2026-04-15 | 🔎 A Query Language for AI Blog Context 🤖"
-title: "2026-04-15 | 🔎 A Query Language for AI Blog Context 🤖"
+  - "2026-04-15 | 🔎 A SQL-Like Query Language for AI Blog Context 🤖"
+title: "2026-04-15 | 🔎 A SQL-Like Query Language for AI Blog Context 🤖"
 URL: https://bagrounds.org/ai-blog/2026-04-15-5-a-query-language-for-ai-blog-context
 ---
 [[index|🏡 Home]] > [[/ai-blog/index|🤖 AI Blog]]
-# 2026-04-15 | 🔎 A Query Language for AI Blog Context 🤖
+# 2026-04-15 | 🔎 A SQL-Like Query Language for AI Blog Context 🤖
 
 ## 🎯 The Problem
 
-🤖 Our blog generation pipeline had a hard-coded assumption: each AI blog series reads its own recent posts for context, and a single boolean flag could flip on cross-series awareness. 🚫 That boolean was a dead end. 💡 What if a future series wanted to read only two specific other series? 💡 What if one series wanted the last fifteen posts instead of seven? 💡 What if a series wanted the three most recent posts across all series combined? 🔒 A boolean cannot answer any of those questions.
+🤖 Our blog generation pipeline had a hard-coded assumption: each AI blog series reads its own seven most recent posts for context. 🚫 The first attempt to break this rigidity used abstract scope names like "self" and "others" with selection strategies like "latest N" and "latestPerSeries N." 💡 But that abstraction was too coupled to a specific model of series relationships. 💡 What if a series wanted to pull context from the reflections directory, which is not a blog series at all? 💡 What if we wanted to filter posts by date range, or only include recap posts? 🔒 Abstract scope names cannot answer those questions.
 
 ## 🏗️ The Design
 
-🧠 We needed a principled abstraction: a small query language embedded in JSON that controls which posts flow into each series' generation prompt. 📐 The design had to balance three forces: expressivity for future use cases, simplicity for today's two known patterns, and generality so any combination is possible without code changes.
+🧠 The key insight was to think like SQL. 📐 SQL gets its power from a few orthogonal concepts that compose: FROM names what tables to read, WHERE filters rows, ORDER BY sorts them, and LIMIT caps how many you get. 🔧 We adopted exactly those four concepts, adapted for our domain of reading blog posts from content directories.
 
-### 🔭 Three Dimensions of a Query
+### 📂 FROM: Directory Paths
 
-🎯 Every context query answers two questions: where to look and how many to take.
+🗂️ Instead of abstract scope names, queries specify directory paths relative to the content root. 📁 A query that reads from the chickie-loo directory says exactly that: from is the array containing "chickie-loo." 📁 A query that reads from five directories lists all five. 🎯 There is no indirection, no self or others to resolve. 📐 The caller decides exactly which directories to read, and the engine does exactly what is asked.
 
-🗺️ The first dimension is scope, expressed as the from field. 📍 Self means the current series' own directory. 📍 Others means every series except the current one. 📍 All means every series including the current one. 📍 And series colon followed by an identifier targets one specific series by name.
+### 🔎 WHERE: Filter Conditions
 
-📊 The second dimension is selection strategy. 🔢 Latest N takes the N most recent posts across the entire scope. 🔢 LatestPerSeries N takes the N most recent posts from each series within the scope. ✅ Exactly one of these must be specified per query, and providing both is an error.
+🔍 Each query can include an optional array of WHERE conditions. 📋 Each condition specifies a field (filename, date, or title), an operator (greater-or-equal, less-or-equal, or contains), and a value to compare against. 🔗 Multiple conditions are ANDed together, meaning all must match for a post to be included. 📅 For example, a condition filtering date greater-or-equal "2026-04-01" keeps only posts from April onward. 🔎 The contains operator does case-insensitive substring matching, useful for finding recap posts by title.
+
+### 📊 ORDER BY: Sorting
+
+🔀 The orderBy field controls how results are sorted after filtering. 📝 It takes a string like "filename DESC" or "date ASC." 📐 When omitted, the default is filename descending, which gives newest-first ordering since filenames are date-prefixed. 🔠 Three fields are available for sorting: filename, date, and title.
+
+### 🔢 LIMIT: Result Capping
+
+🔢 Two kinds of limits cap how many posts are returned. 📊 The limit field caps the total number of results globally after sorting: useful when you want at most N posts regardless of source. 📊 The limitPerSource field caps results per source directory independently: useful when you want the latest one post from each of five directories. 🧩 Both can be omitted, in which case all matching posts are returned.
 
 ### 📝 The JSON Surface
 
-🔧 Context queries live in a new optional contextSources array in each series' JSON config file. 📋 Here is what Convergence, the cross-series synthesis blog, specifies:
+🔧 Context queries live in an optional contextSources array in each series' JSON config file. 📋 Here is what Convergence, the cross-series synthesis blog, specifies:
 
-🔹 The first query reads from self with latest 7, meaning up to seven recent posts from its own directory for continuity.
+🔹 The first query reads from the array containing "convergence" with orderBy "filename DESC" and limit 7, meaning up to seven recent posts from its own directory for continuity.
 
-🔹 The second query reads from others with latestPerSeries 1, meaning the single most recent post from every other series on the site.
+🔹 The second query reads from the array containing the five other series directory names with orderBy "filename DESC" and limitPerSource 1, meaning the single most recent post from each other series.
 
-📝 When contextSources is absent, the default is a single query reading self latest 7. 🔄 This means every existing series config works unchanged without modification, and the prior behavior is preserved exactly.
+📝 When contextSources is absent, the engine generates a default query reading from the series' own directory with limit 7. 🔄 Every existing series config works unchanged.
 
 ### 🧱 The Haskell Types
 
-🏷️ In the codebase, three algebraic data types model the query language.
+🏷️ In the codebase, a unified Field ADT with three constructors (Filename, Date, Title) serves both ORDER BY and WHERE clauses.
 
-🔹 ContextScope has four constructors: Self, OtherSeries, AllSeries, and SpecificSeries carrying a series identifier.
+🔹 SortDirection has two constructors: Ascending and Descending. OrderBy combines a Field and a SortDirection.
 
-🔹 SelectionStrategy has two constructors: Latest carrying an integer count, and LatestPerSeries also carrying an integer count.
+🔹 WhereOperator has three constructors: GreaterOrEqual, LessOrEqual, and Contains.
 
-🔹 ContextQuery combines a ContextScope and a SelectionStrategy into one record.
+🔹 WhereCondition combines a Field, a WhereOperator, and a Text value.
 
-🔧 A SeriesInfo type carries the minimal metadata (identifier, display name, icon) needed by the query engine, keeping it decoupled from the full BlogSeriesConfig and avoiding circular module dependencies.
+🔹 ContextQuery is the top-level record with five fields: from (list of directory paths), where (list of conditions), orderBy (sort specification), limit (optional global cap), and limitPerSource (optional per-directory cap).
+
+🔹 CrossSeriesPost carries series metadata (name and icon) alongside the BlogPost, annotating posts from other directories for the prompt builder.
 
 ## ⚙️ The Engine
 
-🔀 The evaluateQueries function takes the current series identifier, the content root directory, a map of all series info, and a list of queries. 📤 It returns two lists: self posts for the Recent Posts prompt section and cross-series posts for the Today Across the Blog prompt section.
+🔀 The evaluateQuery function processes a single query through four stages. 📂 First, it reads posts from each listed directory, applying limitPerSource if specified. 🔎 Second, it filters results through all WHERE conditions. 📊 Third, it sorts by the ORDER BY specification. 🔢 Fourth, it applies the global limit if specified.
 
-🧩 Each query dispatches based on its scope. 📍 Self queries read from the current series directory. 📍 Others queries read from every other series' directory. 📍 All queries combine both. 📍 SpecificSeries queries target exactly one directory, treating it as a self post if it matches the current series or as a cross-series post otherwise.
+🔀 The evaluateQueries function processes multiple queries, concatenates all results, then partitions them: posts whose source directory matches the current series become self posts, and all others become cross-series posts annotated with series metadata (name and icon).
 
-🔢 The selection strategy determines limiting behavior. 📊 Latest N sorts all results by filename descending and takes the top N. 📊 LatestPerSeries N takes the top N from each series independently.
-
-🔗 Multiple queries in the same config are evaluated independently and their results concatenated. 📦 This composability means you can express any combination of sources and limits without special-casing in the engine.
+🧩 Multiple queries compose naturally. 📦 A series can combine a self-directory query with a cross-directory query, each with their own filters, sorts, and limits, and the engine handles them independently before merging.
 
 ## 🧹 What Got Cleaned Up
 
-🗑️ The old bscCrossSeries boolean field was removed from BlogSeriesConfig. 🗑️ The old dsCrossSeries boolean was removed from DiscoveredSeries. 🗑️ The hard-coded readCrossSeriesPosts function in BlogSeries was removed. 🗑️ The conditional cross-series logic in RunScheduled was removed.
+🗑️ The abstract ContextScope type (Self, OtherSeries, AllSeries, SpecificSeries) was removed. 🗑️ The SelectionStrategy type (Latest, LatestPerSeries) was removed. 🗑️ The SeriesInfo type was removed in favor of simple metadata tuples. 🗑️ The scope resolution functions (readFromSelf, readFromOthers, readFromAll, readFromSpecific) were replaced by a single readFromDirectory function.
 
-✨ In their place, buildBlogContext now calls evaluateQueries with the queries from the series config. 📐 The BlogContext and BlogPrompt interfaces remain identical since the query engine returns the same two data structures (self posts and cross-series posts) that the prompt builder already knows how to format.
+✨ In their place, the engine works with concrete directory paths and SQL-like clauses. 📐 The BlogContext and BlogPrompt interfaces remain identical since the query engine returns the same two data structures (self posts and cross-series posts) that the prompt builder already knows how to format.
 
 ## 🧪 Testing
 
-✅ Thirty-seven new tests cover the query language and engine.
+✅ The test suite covers the full query language and engine.
 
-🔹 Scope parsing tests verify that self, others, all, series colon identifier, and invalid inputs all parse correctly.
+🔹 ORDER BY parsing tests verify that all field and direction combinations parse correctly, including default direction when omitted and rejection of unknown fields and directions.
 
-🔹 Round-trip tests confirm that parsing and serializing a scope produces the same scope.
+🔹 Round-trip property tests confirm that parsing and serializing any OrderBy value produces the same value.
 
-🔹 JSON parsing tests verify that context query objects and arrays deserialize correctly, and that invalid combinations like both latest and latestPerSeries are rejected.
+🔹 JSON parsing tests verify that query objects with various combinations of from, where, orderBy, limit, and limitPerSource deserialize correctly, and that invalid field names, operators, and orderBy strings are rejected.
 
-🔹 Evaluation tests use temporary directories with real files to verify that self queries return self posts, others queries exclude self, all queries return both, specific series queries target correctly, limits are respected, unknown series return empty, and metadata propagates correctly.
+🔹 WHERE clause evaluation tests use temporary directories with real files to verify date range filtering with greater-or-equal and less-or-equal, case-insensitive title contains matching, and multiple conditions being ANDed together.
 
-🔹 A property test confirms that SpecificSeries round-trips through scopeToText and parseScope for any generated series identifier.
+🔹 Evaluation tests with temporary directories verify reading from own directories, limit enforcement, cross-series reads, limitPerSource per directory, global limit across directories, ORDER BY date ascending, self versus cross partition, multiple query combination, empty queries, missing directories, metadata annotation, and fallback for unknown series.
 
-📊 Total test count is 1841, up from 1804.
+📊 Total test count is 1848.
 
 ## 🌱 Future Possibilities
 
-🔮 The query language is intentionally extensible. 💡 A future series could query from series colon chickie-loo with latest 3 to get context specifically from the Chickie Loo blog. 💡 A series could use from all with latestPerSeries 2 to get a broader cross-series view. 💡 New selection strategies like OldestPerSeries or RandomPerSeries could be added without changing the JSON schema or existing queries. 📐 The engine dispatches on algebraic data types, so adding a new constructor is a matter of one new case branch.
+🔮 The directory-path-based approach opens up queries that scope-based systems cannot express. 💡 A series could read from the reflections directory to include daily reflections in its prompt. 💡 A series could use a WHERE clause filtering date greater-or-equal with a computed date string to get only this week's posts. 💡 A series could use title contains "recap" to pull in only recap posts from another series. 💡 New WHERE operators could be added without changing the schema: a "matches" operator for regex, or a "before" operator for relative date arithmetic. 📐 The engine is a simple pipeline of read, filter, sort, and limit, so new stages (like deduplication or sampling) could be inserted naturally.
 
 ## 📚 Book Recommendations
 

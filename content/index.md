@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-04-15T22:40:59-07:00
+updated: 2026-04-16T09:04:31-07:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -14,32 +14,32 @@ updated: 2026-04-15T22:40:59-07:00
 🔊 Listen to any page with built in audio control.  
 💬 Comment on any page with your GitHub account.  
   
-## [🪞 Reflections](./reflections/index.md) ~ Blog (517)  
+## [🪞 Reflections](./reflections/index.md) ~ Blog (518)  
+- [2026-04-16](./reflections/2026-04-16.md)  
 - [2026-04-15 | 🤔 Hard 🌟 Progress 📰 Currents 🤖 Ghost 🌐 Buttons 🔧 Cleanup 🤖 Parrots 🐔 Call 🏛️ Good 📺🌟📰🤖🐔🏛️🤖🐲](./reflections/2026-04-15.md)  
 - [2026-04-14 | 🌍 Hungary’s 🇺🇸 America's 🗣️ Chat 🌟 Reshape 🌐 Sands 🤖 Architecture 🏛️ Goods 🐔 Loos 🧩 Fixing 🧹 Removing 📣 Buttons 📰📺🌟🤖🏛️🐔🤖🐲](./reflections/2026-04-14.md)  
 - [2026-04-13 | 🌍 Billionaires 💡 Trick 🗣️ Speaks 🪞 Leo 🕊️ Victory 🚀 Accelerates 🌊 Currents ☢️ Entropy 🐔 Rhythm 🌳 Embrace 🔗 Monolith 🔄 Redesign 📺📰🌟🤖🐔🏛️🤖🐲](./reflections/2026-04-13.md)  
-- [2026-04-12 | 🧠 First 🎯 Solution ✨ Brings 🌟 Bright 🌃 Night 🏛️ Foundational 🗺️ Navigating 🌐 Global 🐦 Twitter 🚔 Police 🗳️ Election 🤖 Synthetic 📺📰🌟🐔🤖🏛️🤖🐲](./reflections/2026-04-12.md)  
   
   
-## [🤖 AI Blog](./ai-blog/index.md) (154)  
+## [🤖 AI Blog](./ai-blog/index.md) (156)  
+- [2026-04-15 | 🔎 A SQL-Like Query Language for AI Blog Context 🤖](./ai-blog/2026-04-15-5-a-query-language-for-ai-blog-context.md)  
+- [2026-04-15 | 🔀 Convergence: Teaching Blogs to Read Each Other 🤖](./ai-blog/2026-04-15-4-convergence-cross-series-synthesis.md)  
 - [2026-04-15 | 🔊 Fixing the Echo Chamber - When AI Parrots Its Own Instructions 🤖](./ai-blog/2026-04-15-3-fixing-the-echo-chamber.md)  
 - [2026-04-15 | 🧹 Dead Code Cleanup and DRY Consolidation 🔧](./ai-blog/2026-04-15-2-dead-code-cleanup-dry-consolidation.md)  
-- [2026-04-15 | 📣 Share Buttons Phase 3 🌐](./ai-blog/2026-04-15-1-share-buttons-phase-3.md)  
-- [2026-04-14 | 📧 Share Buttons Phase Two 🔗](./ai-blog/2026-04-14-4-share-buttons-phase-two.md)  
   
   
-## [🤖 Auto Blog Zero](./auto-blog-zero/index.md) (36)  
+## [🤖 Auto Blog Zero](./auto-blog-zero/index.md) (37)  
+- [2026-04-16 | 🤖 The Transparency Tax and the Cognitive Mirror 🤖](./auto-blog-zero/2026-04-16-the-transparency-tax-and-the-cognitive-mirror.md)  
 - [2026-04-15 | 🤖 Decoding the Synthetic Ghost 🤖](./auto-blog-zero/2026-04-15-decoding-the-synthetic-ghost.md)  
 - [2026-04-14 | 🤖 The Architecture of Legibility 🤖](./auto-blog-zero/2026-04-14-the-architecture-of-legibility.md)  
 - [2026-04-13 | 🤖 The Entropy of Infrastructure 🤖](./auto-blog-zero/2026-04-13-the-entropy-of-infrastructure.md)  
-- [2026-04-12 | 🤖 📆 Weekly Recap: The Architecture of Synthetic Humility 🤖](./auto-blog-zero/2026-04-12-weekly-recap-the-architecture-of-synthetic-humility.md)  
   
   
-## [🐔 Chickie Loo](./chickie-loo/index.md) (36)  
+## [🐔 Chickie Loo](./chickie-loo/index.md) (37)  
+- [2026-04-16 | 🐔 🌾 The Gentle Pace of Spring 🐔](./chickie-loo/2026-04-16-the-gentle-pace-of-spring.md)  
 - [2026-04-15 | 🐔 The Rooster Attendance Call 🐔](./chickie-loo/2026-04-15-the-rooster-attendance-call.md)  
 - [2026-04-14 | 🐔 A Tale of Two Loos 🐔](./chickie-loo/2026-04-14-a-tale-of-two-loos.md)  
 - [2026-04-13 | 🐔 🌾 Ashes, Anniversaries, and the Rhythm of the Ranch 🐔](./chickie-loo/2026-04-13-ashes-anniversaries-and-the-rhythm-of-the-ranch.md)  
-- [2026-04-12 | 🐔 🥂 A Night Among the Stars and Studs 🐔](./chickie-loo/2026-04-12-a-night-among-the-stars-and-studs.md)  
   
   
 ## [🏛️ Systems for Public Good](./systems-for-public-good/index.md) (25)  
@@ -49,25 +49,25 @@ updated: 2026-04-15T22:40:59-07:00
 - [2026-04-12 | 🏛️ 🗺️ Navigating Our Collective Well-being: A Week of Foundational Investments 🏛️](./systems-for-public-good/2026-04-12-navigating-our-collective-well-being-a-week-of-foundational-investments.md)  
   
   
-## [📰 The Noise](./the-noise/index.md) (6)  
+## [📰 The Noise](./the-noise/index.md) (7)  
+- [2026-04-16 | 📰 🌪️ Unseen Currents, Emerging Horizons 📰](./the-noise/2026-04-16-unseen-currents-emerging-horizons.md)  
 - [2026-04-15 | 📰 🌪️ Global Currents, Unfolding Narratives 📰](./the-noise/2026-04-15-global-currents-unfolding-narratives.md)  
 - [2026-04-14 | 📰 🌍 Global Currents, Shifting Sands 🌐 📰](./the-noise/2026-04-14-global-currents-shifting-sands.md)  
 - [2026-04-13 | 📰 🌍 Global Currents, Shifting Sands 🌐 📰](./the-noise/2026-04-13-global-currents-shifting-sands.md)  
-- [2026-04-12 | 📰 🌊 Global Currents, Shifting Sands 🌐 📰](./the-noise/2026-04-12-global-currents-shifting-sands.md)  
   
   
-## [🌟 Positivity Bias](./positivity-bias/index.md) (5)  
+## [🌟 Positivity Bias](./positivity-bias/index.md) (6)  
+- [2026-04-16 | 🌟 Hope Blooms: Health, Environment, and Community Flourish 🌟](./positivity-bias/2026-04-16-hope-blooms-health-environment-and-community-flourish.md)  
 - [2026-04-15 | 🌟 Dawn of Progress: Breakthroughs in Health, Environment, and Global Unity 🌟](./positivity-bias/2026-04-15-dawn-of-progress-breakthroughs-in-health-environment-and-global-unity.md)  
 - [2026-04-14 | 🌟 🏥 Medical Marvels and Environmental Victories Reshape Our World 🌟](./positivity-bias/2026-04-14-medical-marvels-and-environmental-victories-reshape-our-world.md)  
 - [2026-04-13 | 🌟 Innovation Accelerates Across Global Health and Environment 🌟](./positivity-bias/2026-04-13-innovation-accelerates-across-global-health-and-environment.md)  
-- [2026-04-12 | 🌟 Inaugural Edition - Seeking the Bright Spots 🌟](./positivity-bias/2026-04-12-inaugural-seeking-the-bright-spots.md)  
   
   
 ## [📚 Books](./books/index.md) (959)  
-- [💰🤫 Dark Money: The Hidden History of the Billionaires Behind the Rise of the Radical Right](./books/dark-money-the-hidden-history-of-the-billionaires-behind-the-rise-of-the-radical-right.md)  
-- [🗳️🕊️🇺🇸 Democracy in America](./books/democracy-in-america.md)  
-- [🧠💰🌍 Beyond Growth: The Economics of Sustainable Development](./books/beyond-growth-the-economics-of-sustainable-development.md)  
-- [🌅🧑‍🤝‍🧑 The Dawn of Everything: A New History of Humanity](./books/the-dawn-of-everything-a-new-history-of-humanity.md)  
+- [💗 Self-Compassion](./books/self-compassion.md)  
+- [🏛️🛡️ Democracy or Else: How to Save America in 10 Easy Steps](./books/democracy-or-else.md)  
+- [👥⚔️🏛️ The People vs. Democracy: Why Our 🗽 Freedom Is in ⚠️ Danger and How to Save It](./books/the-people-vs-democracy.md)  
+- [🏛️🗳️🗣️🤝 On Democracy](./books/on-democracy.md)  
   
   
 ## [📺 Videos](./videos/index.md) (757)  
@@ -78,10 +78,10 @@ updated: 2026-04-15T22:40:59-07:00
   
   
 ## [🌌 Topics](./topics/index.md) (91)  
+- [🏦♾️📈💸 Modern Monetary Theory](./topics/modern-monetary-theory.md)  
 - [🤖🦜 Large Language Models](./topics/large-language-models.md)  
 - [🦬🪒 Yak Shaving](./topics/yak-shaving.md)  
 - [💻🌐<> Web Development](./topics/web-development.md)  
-- [🍎🥛🔬✨ Universal Nutrition System Design](./topics/universal-nutrition-system-design.md)  
   
   
 ## [📄  Articles](./articles/index.md) (84)  

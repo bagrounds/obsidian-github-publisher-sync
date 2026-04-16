@@ -4,9 +4,32 @@ module Automation.DailyUpdates
   , addUpdateLinks
   , extractTitleFromFile
   , addUpdateLinksToReflection
+  , PageEntry (..)
+  , parseExistingEntries
+  , extractSectionText
+  , parseTableEntries
+  , parseDataRowCells
+  , parseWikiLinkCell
+  , parseMarkdownLinkCell
+  , parseValueCells
+  , renderUpdatesSection
+  , replaceUpdatesSection
+  , mergeEntries
+  , buildStatsLine
+  , buildTable
+  , canonicalColumns
+  , sameColumn
+  , escapeTablePipe
+  , unescapeTablePipe
+  , updatesSectionHeader
+  , parseStatsPageCount
+  , resolveRelativePath
+  , isDataRow
   ) where
 
+import Control.Applicative ((<|>))
 import Control.Monad (when)
+import Data.Char (isDigit)
 import Data.List (find)
 import qualified Data.Map.Strict as Map
 import Data.Maybe (catMaybes, fromMaybe, mapMaybe)
@@ -202,7 +225,9 @@ parseTableEntries sectionText =
       in mapMaybe (parseTableRow columns) dataRows
 
 isDataRow :: Text -> Bool
-isDataRow line = T.isInfixOf "[[" (T.strip line)
+isDataRow line =
+  let stripped = T.strip line
+  in T.isInfixOf "[[" stripped || T.isInfixOf "](" stripped
 
 parseHeaderColumns :: Text -> [UpdateDetail]
 parseHeaderColumns header =
@@ -219,23 +244,47 @@ splitSimpleCells line =
 parseTableRow :: [UpdateDetail] -> Text -> Maybe PageEntry
 parseTableRow columns row = do
   let (pageCell, valueCells) = parseDataRowCells row
-  (path, title) <- parseWikiLinkCell pageCell
+  (path, title) <- parseWikiLinkCell pageCell <|> parseMarkdownLinkCell pageCell
   let details = catMaybes (zipWith parseCellToDetail columns valueCells)
   pure (PageEntry path title details)
+
+parseWikiLinkFromRow :: Text -> Maybe (Text, Text)
+parseWikiLinkFromRow text =
+  case T.breakOn "[[" text of
+    (_, "") -> Nothing
+    (_, fromOpen) ->
+      case T.breakOn "]]" fromOpen of
+        (_, "") -> Nothing
+        (linkPart, closeAndRest) ->
+          let pageCell = linkPart <> "]]"
+              remaining = T.drop 2 closeAndRest
+          in Just (pageCell, remaining)
+
+parseMarkdownLinkFromRow :: Text -> Maybe (Text, Text)
+parseMarkdownLinkFromRow text =
+  case T.breakOn "[" text of
+    (_, "") -> Nothing
+    (_, fromOpen) ->
+      case T.breakOn "](" fromOpen of
+        (_, "") -> Nothing
+        (titlePart, pathStart) ->
+          let afterBracketParen = T.drop 2 pathStart
+          in case T.breakOn ")" afterBracketParen of
+            (_, "") -> Nothing
+            (path, closeAndRest) ->
+              let pageCell = titlePart <> "](" <> path <> ")"
+                  remaining = T.drop 1 closeAndRest
+              in Just (pageCell, remaining)
 
 parseDataRowCells :: Text -> (Text, [Text])
 parseDataRowCells row =
   let trimmed = T.strip row
       afterLeadingPipe = fromMaybe trimmed (T.stripPrefix "|" trimmed)
-  in case T.breakOn "[[" afterLeadingPipe of
-    (_, "") -> ("", [])
-    (_, fromOpen) ->
-      case T.breakOn "]]" fromOpen of
-        (_, "") -> ("", [])
-        (linkPart, closeAndRest) ->
-          let pageCell = linkPart <> "]]"
-              remaining = T.drop 2 closeAndRest
-          in (T.strip pageCell, parseValueCells remaining)
+  in case parseWikiLinkFromRow afterLeadingPipe of
+    Just (pageCell, remaining) -> (T.strip pageCell, parseValueCells remaining)
+    Nothing -> case parseMarkdownLinkFromRow afterLeadingPipe of
+      Just (pageCell, remaining) -> (T.strip pageCell, parseValueCells remaining)
+      Nothing -> ("", [])
 
 parseValueCells :: Text -> [Text]
 parseValueCells remaining =
@@ -262,6 +311,29 @@ parseWikiLinkCell cell =
               case T.breakOn "|" inner of
                 (_, "")    -> Nothing
                 (path, titleRest) -> Just (path, T.drop 1 titleRest)
+
+parseMarkdownLinkCell :: Text -> Maybe (Text, Text)
+parseMarkdownLinkCell cell =
+  case T.breakOn "[" cell of
+    (_, "") -> Nothing
+    (_, rest) ->
+      let afterOpen = T.drop 1 rest
+      in case T.breakOn "](" afterOpen of
+        (_, "") -> Nothing
+        (rawTitle, pathStart) ->
+          let afterBracketParen = T.drop 2 pathStart
+          in case T.breakOn ")" afterBracketParen of
+            (_, "") -> Nothing
+            (rawPath, _) ->
+              let title = unescapeTablePipe rawTitle
+                  path = resolveRelativePath (stripMd (T.strip rawPath))
+              in Just (path, title)
+
+resolveRelativePath :: Text -> Text
+resolveRelativePath path
+  | T.isPrefixOf "./" path = "reflections/" <> T.drop 2 path
+  | T.isPrefixOf "../" path = T.drop 3 path
+  | otherwise = "reflections/" <> path
 
 -- Rendering
 activeColumns :: [PageEntry] -> [UpdateDetail]
@@ -318,6 +390,15 @@ renderUpdatesSection entries =
       table = buildTable entries
   in updatesSectionHeader <> "\n" <> statsLine <> "\n\n" <> table <> "\n"
 
+parseStatsPageCount :: Text -> Int
+parseStatsPageCount sectionText =
+  case T.breakOn "📊 " sectionText of
+    (_, "") -> 0
+    (_, rest) ->
+      let afterEmoji = T.drop (T.length "📊 ") rest
+          numberStr = T.takeWhile isDigit afterEmoji
+      in fromMaybe 0 (readMaybe (T.unpack numberStr))
+
 -- Core logic: parse existing → merge new → render
 convertToEntry :: UpdateLink -> PageEntry
 convertToEntry (UpdateLink pathNewtype titleNewtype details) =
@@ -328,10 +409,14 @@ addUpdateLinks content [] = content
 addUpdateLinks content links =
   let existingText = extractSectionText content
       existingEntries = parseExistingEntries existingText
+      expectedCount = parseStatsPageCount existingText
       newEntries = fmap convertToEntry links
-      mergedEntries = mergeEntries existingEntries newEntries
-      updatedSection = renderUpdatesSection mergedEntries
-  in replaceUpdatesSection content updatedSection
+  in if null existingEntries && expectedCount > 0
+    then content
+    else
+      let mergedEntries = mergeEntries existingEntries newEntries
+          updatedSection = renderUpdatesSection mergedEntries
+      in replaceUpdatesSection content updatedSection
 
 replaceUpdatesSection :: Text -> Text -> Text
 replaceUpdatesSection content newSection =
@@ -376,6 +461,15 @@ addUpdateLinksToReflection reflectionsDir date links = do
       when (errCreated result) $
         TIO.putStrLn ("  📝 Created daily reflection for " <> date)
   fileContent <- TIO.readFile reflectionPath
+
+  let existingText = extractSectionText fileContent
+      existingEntries = parseExistingEntries existingText
+      expectedCount = parseStatsPageCount existingText
+
+  when (null existingEntries && expectedCount > 0) $
+    TIO.putStrLn $ "  ⚠️  Data loss prevented: parsed 0 entries but stats indicate "
+      <> T.pack (show expectedCount) <> " expected for " <> date
+
   let updated = addUpdateLinks fileContent links
   if updated == fileContent
     then pure False

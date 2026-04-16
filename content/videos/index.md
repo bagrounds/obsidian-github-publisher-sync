@@ -5,10 +5,10 @@ aliases:
 title: 📺 Videos
 URL: https://bagrounds.org/videos
 backlinks: false
-updated: 2026-04-16T14:14:48-07:00
+updated: 2026-04-16T15:53:16-07:00
 ---
 [Home](../index.md)  
-# 📺 Videos (759)  
+# 📺 Videos (761)  
 - [💰🤑🤖💡🚀💲 $0.10/Month Runs My Entire AI Life. I'll Show You How.](./0-10-month-runs-my-entire-ai-life-ill-show-you-how.md)  
 - [📊📈📉📃👁️ 10 Charts to Understand the 900 Page Budget Bill](./10-charts-to-understand-the-900-page-budget-bill.md)  
 - [🤖🔗⬆️✅ 12-Factor Agents: Patterns of reliable LLM applications — Dex Horthy, HumanLayer](./12-factor-agents-patterns-of-reliable-llm-applications-dex-horthy-humanlayer.md)  
@@ -213,6 +213,7 @@ updated: 2026-04-16T14:14:48-07:00
 - [🗣️⚔️🏛️ FULL DISCUSSION: Gavin Newsom Slams Trump’s Authoritarianism in Explosive WEF Interview | AC1G](./full-discussion-gavin-newsom-slams-trumps-authoritarianism-in-explosive-wef-interview-ac1g.md)  
 - [🤖🗣️🏛️⚔️📰 Full interview: Anthropic CEO responds to Trump order, Pentagon clash](./full-interview-anthropic-ceo-responds-to-trump-order-pentagon-clash.md)  
 - [🎙️🇪🇺🗳️🇮🇷⚔️🌊🚨 FULL PRESSER: EU’s von der Leyen Speaks on Hungary Election, Iran War & Strait of Hormuz Crisis|AC1B](./full-presser-eus-von-der-leyen-speaks-on-hungary-election-iran-war-strait-of-hormuz-crisis-ac1b.md)  
+- [🪴🔬❌ Garden Science: Weeding Out the Myths](./garden-science-weeding-out-the-myths.md)  
 - [🪴🧟❌🔬 Garden Zombies: Bogus Gardening Practices That Will Not Die w/ Dr. Linda Chalker-Scott, Ph.D – SCHS](./garden-zombies-bogus-gardening-practices-that-will-not-die-w-dr-linda-chalker-scott-ph-d-schs.md)  
 - [💭🧠💥 George Saunders Says Breaking These 3 Delusions Can Save You | The Interview](./george-saunders-says-breaking-these-3-delusions-can-save-you-the-interview.md)  
 - [🌋☀️🚀 Geothermal energy’s massive leap forward](./geothermal-energys-massive-leap-forward.md)  
@@ -495,6 +496,7 @@ updated: 2026-04-16T14:14:48-07:00
 - [🏃🦵🤕 SHIN SPLINTS for Runners: Challenges, Causes, and Rehab](./shin-splints-for-runners-challenges-causes-and-rehab.md)  
 - [🧑‍💻📈⏩ SIGGRAPH Thesis Fast Forward 2025](./siggraph-thesis-fast-forward-2025.md)  
 - [💰📉🌍 Silvio Gesell's Forgotten Money: The Wörgl Experiment & Demurrage Currency](./silvio-gesells-forgotten-money-the-worgl-experiment-demurrage-currency.md)  
+- [🔎🗺️✅📍 Site Analysis: Choosing the Right Spot](./site-analysis-choosing-the-right-spot.md)  
 - [🦠🤒🏥 Snohomish County sees measles outbreak](./snohomish-county-sees-measles-outbreak.md)  
 - [🪴🔬📚 Soil and Planting Lessons from Research](./soil-and-planting-lessons-from-research.md)  
 - [✨😮🗣️ Something Interesting Happened Today | Explainer](./something-interesting-happened-today-explainer.md)  

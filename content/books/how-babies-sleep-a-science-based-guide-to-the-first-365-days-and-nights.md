@@ -7,8 +7,9 @@ share: true
 CTA: 😴 Decode infant slumber.
 affiliate link: https://amzn.to/48qs2gx
 link_analysis_model: gemini-3.1-flash-lite-preview
-link_analysis_time: 2026-04-11T00:00:00Z
+link_analysis_time: 2026-04-16T00:00:00Z
 force_analyze_links: false
+link_analysis_version: "2"
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 👶😴 How Babies Sleep: A Science-Based Guide to the First 365 Days and Nights  
@@ -31,7 +32,7 @@ force_analyze_links: false
 * 🤝 Harmonize Needs: Seek strategies balancing infant sleep biology with family well-being.  
   
 ## ⚖️ Evaluation  
-* 💔 Challenging Broken Sleep: How Babies Sleep posits that infant sleep is biologically normal and doesn't need fixing, with perceived problems often stemming from cultural expectations. 👍 This perspective offers reassurance to parents but contrasts with many popular sleep training books that frame frequent waking as an issue to be solved.  
+* 💔 Challenging Broken Sleep: [👶😴 How Babies Sleep: The Gentle, Science-Based Method to Help Your Baby Sleep Through the Night](./how-babies-sleep-the-gentle-science-based-method-to-help-your-baby-sleep-through-the-night.md) posits that infant sleep is biologically normal and doesn't need fixing, with perceived problems often stemming from cultural expectations. 👍 This perspective offers reassurance to parents but contrasts with many popular sleep training books that frame frequent waking as an issue to be solved.  
 * 🛏️ Safe Sleep Guidelines: The book supports safe sleep practices. 📢 Leading organizations like the American Academy of Pediatrics (AAP) and the National Sleep Foundation (NSF) strongly recommend placing infants on their back for every sleep, using a firm, flat, non-inclined surface, and room-sharing without bed-sharing, keeping the sleep area free of soft objects and loose bedding. ⚠️ While Ball discusses various sleep locations, her emphasis on safe co-sleeping requires careful consideration against the AAP's strict no bed-sharing recommendation, which states bed-sharing increases the risk of SIDS and accidental suffocation.  
 * 😴 Critique of Sleep Training: Professor Ball critiques behavioral and clinical interventions that try to manipulate baby sleep to fit adult lives, viewing them as potentially creating a mismatch with babies' biology. 🔬 Research on graduated extinction (Ferber method) and full extinction (cry-it-out) generally shows short-term effectiveness in reducing bedtime crying and night wakings, with studies finding no long-term adverse effects on attachment or child development. 🤔 However, some studies note small or non-existent practical outcomes for babies under 6 months, and concerns remain regarding parental emotional distress. 🫂 Gentle sleep coaching methods, which involve more parental intervention and less crying, also exist as evidence-based approaches.  
 * 🧬 Biological and Anthropological Focus: The book's strength lies in its comprehensive integration of cutting-edge science and anthropological insights into infant sleep. 🧠 This multi-disciplinary approach provides a deeper understanding of infant sleep development, including the maturation of circadian rhythms and sleep cycles, which differs significantly from adult patterns.  

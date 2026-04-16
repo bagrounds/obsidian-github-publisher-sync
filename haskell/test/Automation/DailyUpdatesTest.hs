@@ -290,6 +290,121 @@ addUpdateLinksTests = testGroup "addUpdateLinks"
             result = addUpdateLinks content
                        [UpdateLink (testRelativePath "test.md") (testTitle "Test") [ImageAdded]]
         in T.isInfixOf "Some footer" result
+
+  , testCase "preserves existing entries when table contains standard markdown links" $
+      let content = T.unlines
+            [ "# Reflection"
+            , ""
+            , "## 🔄 Updates"
+            , "📊 3 pages · 3 🖼️ images"
+            , ""
+            , "| Page | 🖼️ |"
+            , "|---|---|"
+            , "| [Page One](./page-one.md) | 🖼️ |"
+            , "| [Page Two](../ai-blog/page-two.md) | 🖼️ |"
+            , "| [Page Three](../books/page-three.md) | 🖼️ |"
+            ]
+          result = addUpdateLinks content
+                     [UpdateLink (testRelativePath "new-page.md") (testTitle "New Page") [ImageAdded]]
+      in do
+        assertBool "stats show 4 pages" (T.isInfixOf "📊 4 pages" result)
+        assertBool "has new page" (T.isInfixOf "New Page" result)
+        assertBool "preserves page one" (T.isInfixOf "Page One" result)
+        assertBool "preserves page two" (T.isInfixOf "Page Two" result)
+        assertBool "preserves page three" (T.isInfixOf "Page Three" result)
+
+  , testCase "parses markdown links with escaped pipes in title" $
+      let content = T.unlines
+            [ "# Reflection"
+            , ""
+            , "## 🔄 Updates"
+            , "📊 1 page · 1 🖼️ images"
+            , ""
+            , "| Page | 🖼️ |"
+            , "|---|---|"
+            , "| [2026-04-13 \\| My Reflection](./2026-04-13.md) | 🖼️ |"
+            ]
+          result = addUpdateLinks content
+                     [UpdateLink (testRelativePath "new.md") (testTitle "New") [PostedTo Bluesky]]
+      in do
+        assertBool "stats show 2 pages" (T.isInfixOf "📊 2 pages" result)
+        assertBool "has reflection entry" (T.isInfixOf "2026-04-13" result)
+        assertBool "has new entry" (T.isInfixOf "New" result)
+
+  , testCase "prevents data loss when table cannot be parsed" $
+      let content = T.unlines
+            [ "# Reflection"
+            , ""
+            , "## 🔄 Updates"
+            , "📊 5 pages · 5 🖼️ images"
+            , ""
+            , "| Page | 🖼️ |"
+            , "|---|---|"
+            , "| UNPARSEABLE ROW 1 | 🖼️ |"
+            , "| UNPARSEABLE ROW 2 | 🖼️ |"
+            , "| UNPARSEABLE ROW 3 | 🖼️ |"
+            , "| UNPARSEABLE ROW 4 | 🖼️ |"
+            , "| UNPARSEABLE ROW 5 | 🖼️ |"
+            ]
+          result = addUpdateLinks content
+                     [UpdateLink (testRelativePath "new.md") (testTitle "New") [ImageAdded]]
+      in assertEqual "should preserve content unchanged when parsing fails but stats show entries"
+           content result
+
+  , testCase "parseStatsPageCount extracts count from stats line" $
+      do
+        assertEqual "parses 31 pages" 31 (parseStatsPageCount "📊 31 pages · 24 🖼️ images")
+        assertEqual "parses 1 page" 1 (parseStatsPageCount "📊 1 page · 1 🖼️ images")
+        assertEqual "parses 0 for empty" 0 (parseStatsPageCount "")
+        assertEqual "parses 0 for missing stats" 0 (parseStatsPageCount "no stats here")
+
+  , testCase "resolveRelativePath converts paths correctly" $
+      do
+        assertEqual "dot-slash" "reflections/file" (resolveRelativePath "./file")
+        assertEqual "dot-dot-slash" "ai-blog/post" (resolveRelativePath "../ai-blog/post")
+        assertEqual "bare name" "reflections/file" (resolveRelativePath "file")
+
+  , testCase "parses Obsidian-formatted table with column padding" $
+      let content = T.unlines
+            [ "# Reflection"
+            , ""
+            , "## 🔄 Updates"
+            , "📊 3 pages · 3 🖼️ images"
+            , ""
+            , "| Page                                                                   | 🖼️ |"
+            , "| ---------------------------------------------------------------------- | --- |"
+            , "| [[books/the-creative-act\\|✨🎭🧘\x200d♂️🌌 The Creative Act: A Way of Being]] | 🖼️ |"
+            , "| [[books/thinking-fast-and-slow\\|🤔🐇🐢 Thinking, Fast and Slow]]          | 🖼️ |"
+            , "| [[books/sapiens\\|📜🌍⏳ Sapiens: A Brief History of Humankind]]            | 🖼️ |"
+            ]
+          result = addUpdateLinks content
+                     [UpdateLink (testRelativePath "new-book.md") (testTitle "New Book") [ImageAdded]]
+      in do
+        assertBool "stats show 4 pages" (T.isInfixOf "📊 4 pages" result)
+        assertBool "preserves creative act" (T.isInfixOf "The Creative Act" result)
+        assertBool "preserves thinking fast" (T.isInfixOf "Thinking, Fast and Slow" result)
+        assertBool "preserves sapiens" (T.isInfixOf "Sapiens" result)
+        assertBool "has new book" (T.isInfixOf "New Book" result)
+
+  , testCase "mixed wiki and markdown links in same table" $
+      let content = T.unlines
+            [ "# Reflection"
+            , ""
+            , "## 🔄 Updates"
+            , "📊 2 pages · 2 🖼️ images"
+            , ""
+            , "| Page | 🖼️ |"
+            , "|---|---|"
+            , "| [[page1\\|Page One]] | 🖼️ |"
+            , "| [Page Two](../ai-blog/page-two.md) | 🖼️ |"
+            ]
+          result = addUpdateLinks content
+                     [UpdateLink (testRelativePath "page3.md") (testTitle "Page Three") [ImageAdded]]
+      in do
+        assertBool "stats show 3 pages" (T.isInfixOf "📊 3 pages" result)
+        assertBool "preserves wiki link page" (T.isInfixOf "Page One" result)
+        assertBool "preserves markdown link page" (T.isInfixOf "Page Two" result)
+        assertBool "has new page" (T.isInfixOf "Page Three" result)
   ]
 
 existingTableContent :: [(Text, Text, [UpdateDetail])] -> Text

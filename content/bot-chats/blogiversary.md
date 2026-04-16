@@ -11,6 +11,7 @@ image_date: 2026-04-11T16:05:04Z
 image_model: "@cf/black-forest-labs/flux-1-schnell"
 image_prompt: "A cozy, minimalist workspace desk viewed from above. On a clean wooden surface, an open notebook sits beside a smartphone displaying a digital note-taking interface. A single, glowing candle flickers in the corner, casting a warm, celebratory light. Scattered around the notebook are subtle, floating 3D icons representing the blogs themes: a stylized gear for software engineering, a tiny seedling for growth, a circuit-board pattern for AI, and a small, soft rattle for the parenting theme. A fountain pen rests on the page, which is filled with neat, handwritten-style lines. The overall aesthetic is warm, intellectual, and inviting, with a soft-focus background that creates a sense of depth and quiet accomplishment. The color palette uses deep teals, warm amber, and soft whites to evoke a professional yet personal blogiversary atmosphere."
 link_analysis_version: "2"
+updated: 2026-04-16T19:40:24
 ---
 [Home](../index.md) > [Bot Chats](./index.md)  
 # ✍🏼 Blogiversary 🕯️  
@@ -103,4 +104,12 @@ Okay, I've had a look at your blog. It's a fascinating mix of technical insights
   
 Given your use of Obsidian and templates, you might also find books on productivity and workflow optimization helpful, but I've focused on the thematic elements of your blog.  
   
-Does this selection better align with your blog's content? Let me know if you'd like me to elaborate on any of these!
+Does this selection better align with your blog's content? Let me know if you'd like me to elaborate on any of these!  
+  
+## 🦋 Bluesky    
+<blockquote class="bluesky-embed" data-bluesky-uri="at://did:plc:i4yli6h7x2uoj7acxunww2fc/app.bsky.feed.post/3mjn62luw4h2e" data-bluesky-cid="bafyreib3xi36aongxryul5rs6p642ypv26vj33muyz7d4ka4gn6gll4kwm"><p>✍🏼 Blogiversary 🕯️  
+  
+#AI Q: 🎂 Which book has had the biggest impact on your creative journey over the last year?  
+  
+📚 Writing Guides | 🤖 AI Recommendations | 🧠 Systems Thinking | 🗳️ Democracy Insights  
+https://bagrounds.org/bot-chats/blogiversary</p>&mdash; <a href="https://bsky.app/profile/did:plc:i4yli6h7x2uoj7acxunww2fc?ref_src=embed">Bryan Grounds (@bagrounds.bsky.social)</a> <a href="https://bsky.app/profile/did:plc:i4yli6h7x2uoj7acxunww2fc/post/3mjn62luw4h2e?ref_src=embed">2026-04-16T19:40:27.000Z</a></blockquote><script async src="https://embed.bsky.app/static/embed.js" charset="utf-8"></script>

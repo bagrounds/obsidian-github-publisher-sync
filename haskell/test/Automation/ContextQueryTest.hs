@@ -124,7 +124,7 @@ jsonParsingTests = testGroup "JSON parsing"
       let json = "{\"from\": [\"x\"], \"where\": [{\"field\": \"date\", \"operator\": \">=\", \"value\": \"2026-04-01\"}], \"limit\": 5}"
           result = parseContextQuery json
       in case result of
-        Right query -> conditions query @?= [WhereCondition { field = Date, operator = GreaterOrEqual, value = "2026-04-01" }]
+        Right query -> conditions query @?= [WhereCondition Date GreaterOrEqual "2026-04-01"]
         Left err -> assertBool ("unexpected parse error: " <> err) False
 
   , testCase "rejects invalid orderBy field" $
@@ -161,7 +161,7 @@ whereClauseTests = testGroup "WHERE clause evaluation"
         writePostWithDate contentRoot "my-series" "2026-03-01-old.md" "2026-03-01"
         let query = ContextQuery
               { directories = ["my-series"]
-              , conditions = [WhereCondition { field = Date, operator = GreaterOrEqual, value = "2026-04-01" }]
+              , conditions = [WhereCondition Date GreaterOrEqual "2026-04-01"]
               , orderBy = OrderBy Filename Descending
               , limit = Nothing
               , limitPerSource = Nothing
@@ -175,7 +175,7 @@ whereClauseTests = testGroup "WHERE clause evaluation"
         writePostWithDate contentRoot "my-series" "2026-03-01-old.md" "2026-03-01"
         let query = ContextQuery
               { directories = ["my-series"]
-              , conditions = [WhereCondition { field = Date, operator = LessOrEqual, value = "2026-03-15" }]
+              , conditions = [WhereCondition Date LessOrEqual "2026-03-15"]
               , orderBy = OrderBy Filename Descending
               , limit = Nothing
               , limitPerSource = Nothing
@@ -189,7 +189,7 @@ whereClauseTests = testGroup "WHERE clause evaluation"
         writePostWithTitle contentRoot "my-series" "2026-04-14-thoughts.md" "Random Thoughts"
         let query = ContextQuery
               { directories = ["my-series"]
-              , conditions = [WhereCondition { field = Title, operator = Contains, value = "recap" }]
+              , conditions = [WhereCondition Title Contains "recap"]
               , orderBy = OrderBy Filename Descending
               , limit = Nothing
               , limitPerSource = Nothing
@@ -205,8 +205,8 @@ whereClauseTests = testGroup "WHERE clause evaluation"
         let query = ContextQuery
               { directories = ["my-series"]
               , conditions =
-                  [ WhereCondition { field = Date, operator = GreaterOrEqual, value = "2026-04-01" }
-                  , WhereCondition { field = Date, operator = LessOrEqual, value = "2026-04-12" }
+                  [ WhereCondition Date GreaterOrEqual "2026-04-01"
+                  , WhereCondition Date LessOrEqual "2026-04-12"
                   ]
               , orderBy = OrderBy Filename Descending
               , limit = Nothing

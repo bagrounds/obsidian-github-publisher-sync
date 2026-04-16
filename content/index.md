@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-04-15T18:38:54-07:00
+updated: 2026-04-15T20:12:46-07:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -64,17 +64,17 @@ updated: 2026-04-15T18:38:54-07:00
   
   
 ## [📚 Books](./books/index.md) (959)  
+- [🤔💪 Attention and effort](./books/attention.md)  
+- [⛰️📈🥇 Peak: Secrets from the New Science of Expertise](./books/peak.md)  
+- [🧘 Indistractable: How to Control Your Attention and Choose Your Life](./books/indistractable.md)  
 - [✅🔬🦠 Crisis Averted: The Hidden Science of Fighting Outbreaks](./books/crisis-averted-the-hidden-science-of-fighting-outbreaks.md)  
-- [👃🤧 What's in the Air?: The Complete Guide to Seasonal and Year-Round Airborne Allergies](./books/whats-in-the-air-the-complete-guide-to-seasonal-and-year-round-airborne-allergies.md)  
-- [🧼💾 Clean Code: A Handbook of Agile Software Craftsmanship](./books/clean-code.md)  
-- [🏗️🧪🚀✅ Continuous Delivery: Reliable Software Releases through Build, Test, and Deployment Automation](./books/continuous-delivery.md)  
   
   
-## [📺 Videos](./videos/index.md) (755)  
+## [📺 Videos](./videos/index.md) (756)  
+- [🤯🧾❓📺 Why Doing Taxes Is So Hard | Patriot Act with Hasan Minhaj | Netflix](./videos/why-doing-taxes-is-so-hard-patriot-act-with-hasan-minhaj-netflix.md)  
+- [🚫🏢👑🔄👥 Corporate America’s Biggest Enemy Will Now Lead Mamdani’s Transition Team](./videos/corporate-americas-biggest-enemy-will-now-lead-mamdanis-transition-team.md)  
 - [🤖🧠🚀 What you must know before AGI arrives | Carnegie Mellon University Po-Shen Loh](./videos/what-you-must-know-before-agi-arrives-carnegie-mellon-university-po-shen-loh.md)  
 - [🤯🗣️📱📈 “He behaved like a total maniac” Sam Harris on Elon & Big Tech’s turn towards Trump](./videos/he-behaved-like-a-total-maniac-sam-harris-on-elon-big-techs-turn-towards-trump.md)  
-- [🌊🚨🇺🇸 Gov. Ferguson Declares Emergency as ‘Historic Flooding’ Hits Washington](./videos/gov-ferguson-declares-emergency-as-historic-flooding-hits-washington.md)  
-- [🗣️⚔️🏛️ FULL DISCUSSION: Gavin Newsom Slams Trump’s Authoritarianism in Explosive WEF Interview | AC1G](./videos/full-discussion-gavin-newsom-slams-trumps-authoritarianism-in-explosive-wef-interview-ac1g.md)  
   
   
 ## [🌌 Topics](./topics/index.md) (91)  
@@ -99,10 +99,10 @@ updated: 2026-04-15T18:38:54-07:00
   
   
 ## [💾 Software](./software/index.md) (33)  
-- [🌐🔓💻 Open WebUI](./software/open-webui.md)  
-- [🦙💬 Ollama](./software/ollama.md)  
-- [💾✍️🌋⚫️ Obsidian](./software/obsidian.md)  
-- [🐧💻🚀 Linux](./software/linux.md)  
+- [⚛️🔄 React](./software/react.md)  
+- [🚄🎲✅ QuickCheck](./software/quickcheck.md)  
+- [💎🔬🔍📈 Quartz](./software/quartz.md)  
+- [🐍💻🐍 Python](./software/python.md)  
   
   
 ## [👥 People](./people/index.md) (18)  

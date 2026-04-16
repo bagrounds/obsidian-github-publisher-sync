@@ -9,12 +9,13 @@ tags:
 CTA: 🚀 Explore the unknown.
 affiliate link: https://amzn.to/49ODuEM
 force_analyze_links: false
-link_analysis_time: 2026-03-22T06:06:10.546Z
+link_analysis_time: 2026-04-15T00:00:00Z
 link_analysis_model: gemini-3.1-flash-lite-preview
 updated: 2026-03-25T08:15:52.813Z
 image_date: 2026-04-14T01:45:31Z
 image_model: "@cf/black-forest-labs/flux-1-schnell"
 image_prompt: A stylized astronaut in a slightly retro-futuristic suit stands in the foreground, their back partially to the viewer, gazing into a vibrant, alien starfield. Their helmet visor subtly reflects a distant, struggling red sun, casting a soft, warm glow. Beside them, a unique, almost crystalline alien form, glowing with internal light, suggests a silent, profound companionship. The sleek, metallic curve of a spaceships hull is partially visible behind them, hinting at a vast journey. The color palette emphasizes deep space blues and purples, contrasted with the hopeful internal glow of the alien and the urgent light of the distant star. The illustration conveys scientific wonder, shared purpose, and optimistic adventure.
+link_analysis_version: "2"
 ---
 [Home](../index.md) > [Books](./index.md)  
 # ☄️🧑‍🚀🙏🌍 Project Hail Mary  

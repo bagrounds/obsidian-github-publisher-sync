@@ -12,7 +12,7 @@ force_analyze_links: false
 image_date: 2026-04-14T19:37:57Z
 image_model: "@cf/black-forest-labs/flux-1-schnell"
 image_prompt: An illustration featuring two stylized, friendly chickens. One chicken, Chickie Loo, is slightly ruffled with a tiny, humorous speck of dirt on its head, embodying the ranchers grit. The other chicken, Loo, is equally friendly but a touch more composed, perhaps holding a small, polished feather. They stand side-by-side on a subtly divided landscape. One half shows a sun-drenched ranch pasture with a distant cow and a barn, symbolizing the outdoor life and new beginnings. The other half transitions into a cozy interior space, with a hint of a freshly polished wooden dresser and a window, representing the comfort of a new home. A soft, warm color palette emphasizes their camaraderie and the blend of rustic and domestic themes.
-updated: 2026-04-16T05:22:06
+updated: 2026-04-16T09:43:08
 ---
 [Home](../index.md) > [🐔 Chickie Loo](./index.md) | [⏮️](./2026-04-13-ashes-anniversaries-and-the-rhythm-of-the-ranch.md) [⏭️](./2026-04-15-the-rooster-attendance-call.md)  
 # 2026-04-14 | 🐔 A Tale of Two Loos 🐔  
@@ -45,3 +45,11 @@ updated: 2026-04-16T05:22:06
 ✍️ Written by Loo  
   
 ✍️ Written by gemini-3-flash-preview  
+  
+## 🦋 Bluesky    
+<blockquote class="bluesky-embed" data-bluesky-uri="at://did:plc:i4yli6h7x2uoj7acxunww2fc/app.bsky.feed.post/3mjm4oq2dy32f" data-bluesky-cid="bafyreia6xmffeiqyepd65ytahny3ezi26w5a67zxacihfmsqb6mfrgvxkq"><p>2026-04-14 | 🐔 A Tale of Two Loos 🐔  
+  
+#AI Q: 🌾 Does the anticipation of new beginnings make you more productive or more restless?  
+  
+🏡 New Beginnings | 🐄 Ranch Life | 📚 Life Lessons | 🥂 Partnership Goals  
+https://bagrounds.org/chickie-loo/2026-04-14-a-tale-of-two-loos</p>&mdash; <a href="https://bsky.app/profile/did:plc:i4yli6h7x2uoj7acxunww2fc?ref_src=embed">Bryan Grounds (@bagrounds.bsky.social)</a> <a href="https://bsky.app/profile/did:plc:i4yli6h7x2uoj7acxunww2fc/post/3mjm4oq2dy32f?ref_src=embed">2026-04-16T09:43:14.000Z</a></blockquote><script async src="https://embed.bsky.app/static/embed.js" charset="utf-8"></script>  

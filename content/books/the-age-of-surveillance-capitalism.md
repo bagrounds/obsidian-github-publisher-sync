@@ -9,8 +9,9 @@ tags:
 affiliate link: https://amzn.to/4kwzGKY
 updated: 2026-03-13T16:11:58.094Z
 force_analyze_links: false
-link_analysis_time: 2026-03-22T23:36:03.161Z
+link_analysis_time: 2026-04-15T00:00:00Z
 link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_version: "2"
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 👁️‍🗨️💰⛓️👤 The Age of Surveillance Capitalism: The Fight for a Human Future at the New Frontier of Power  

@@ -6,8 +6,9 @@ URL: https://bagrounds.org/books/blog-inc-blogging-for-passion-profit-and-to-cre
 share: true
 affiliate link: https://amzn.to/43GdDdr
 link_analysis_model: gemini-3.1-flash-lite-preview
-link_analysis_time: 2026-04-07T00:00:00Z
+link_analysis_time: 2026-04-16T00:00:00Z
 force_analyze_links: false
+link_analysis_version: "2"
 ---
 [Home](../index.md) > [Books](./index.md)  
 # ✍️💻💰 Blog, Inc.: Blogging for Passion, Profit, and to Create Community  

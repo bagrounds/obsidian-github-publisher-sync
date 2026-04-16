@@ -10,9 +10,13 @@ updated: 2026-03-15T03:04:18.103Z
 link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-02T00:00:00Z
 force_analyze_links: false
+image_date: 2026-04-16T13:41:58Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A close-up, high-contrast illustration featuring a vintage wooden table. In the center sits a classic bar graph printed on aged, slightly yellowed paper. The bars of the graph are visibly distorted; one bar is unnaturally elongated, reaching off the top of the page, while the others are inconsistently scaled. A sleek, modern magnifying glass rests on the paper, its lens distorting the grid lines beneath it to create a sense of visual trickery. Scattered around the table are a fountain pen, a pair of brass spectacles, and a few loose, crumpled sheets of paper covered in complex mathematical equations that seem to be dissolving into chaotic scribbles. The lighting is moody and dramatic, casting long, sharp shadows that emphasize the deception inherent in the data. The color palette is muted, consisting of deep sepias, charcoal greys, and stark whites.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 📊🤥 How to Lie with Statistics  
+![books-how-to-lie-with-statistics](../books-how-to-lie-with-statistics.jpg)  
 [🛒 How to Lie with Statistics. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3UlsyWd)  
   
 ## 📚 A Guide to Statistical Skepticism: A Book Report on "How to Lie with Statistics"  

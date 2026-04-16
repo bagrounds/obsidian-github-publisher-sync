@@ -10,11 +10,16 @@ affiliate link: https://amzn.to/3ZIy2gS
 CTA: 🤝 Bridge divides.
 updated: 2026-03-18T14:30:36.764Z
 force_analyze_links: false
-link_analysis_time: 2026-03-22T23:33:10.064Z
+link_analysis_time: 2026-04-15T00:00:00Z
 link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_version: "2"
+image_date: 2026-04-16T07:41:07Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: "A conceptual illustration featuring a large, textured grey elephant standing in the center, representing intuition and instinct. Perched atop the elephant is a small, translucent, analytical human figure holding a compass and a stack of papers, representing the rational rider attempting to steer. The background is split down the middle: one side is a warm, sunlit landscape with traditional structures, while the other is a cool-toned, geometric cityscape with modern architectural lines. Connecting the two sides is a stone bridge that appears slightly weathered but sturdy. The overall style is clean, modern, and metaphorical, utilizing a balanced color palette of soft oranges and deep blues to symbolize the ideological divide and the potential for reconciliation."
 ---
 [Home](../index.md) > [Books](./index.md) | [🧠🤝🐘 Jonathan Haidt](../people/jonathan-haidt.md)  
 # 😇🧠 The Righteous Mind: Why Good People Are Divided by Politics and Religion  
+![books-the-righteous-mind](../books-the-righteous-mind.jpg)  
 [🛒 The Righteous Mind: Why Good People Are Divided by Politics and Religion. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3ZIy2gS)  
   
 ## 📝🐒 Human Notes  

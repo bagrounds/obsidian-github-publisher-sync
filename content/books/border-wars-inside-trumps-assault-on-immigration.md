@@ -10,9 +10,13 @@ updated: 2026-03-15T08:10:57.403Z
 link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-04T00:00:00Z
 force_analyze_links: false
+image_date: 2026-04-16T11:29:21Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A stark, high-contrast illustration featuring a weathered, imposing concrete wall bisecting a desolate landscape under a stormy, overcast sky. On one side of the wall, a group of shadowy, indistinct figures walks toward the horizon, their forms blurred to evoke a sense of displacement and uncertainty. On the other side, the ground is broken and jagged, symbolizing the political and social fractures discussed in the text. The color palette is dominated by muted grays, harsh concrete textures, and deep, somber blues, punctuated only by a subtle, cold light reflecting off the barrier. The composition emphasizes the scale of the structure relative to the small, vulnerable silhouettes of the people, highlighting the themes of isolation, systemic policy, and the human cost of the border conflict.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🧱⚔️🚶‍♀️ Border Wars: Inside Trump's Assault on Immigration  
+![books-border-wars-inside-trumps-assault-on-immigration](../books-border-wars-inside-trumps-assault-on-immigration.jpg)  
 [🛒 Border Wars: Inside Trump's Assault on Immigration. As an Amazon Associate I earn from qualifying purchases.](https://a.co/d/08jTdrY6)  
   
 🚧👨‍👩‍👧‍👦💔 Chronicles the tumultuous, often chaotic, and highly polarized efforts by the Trump administration to drastically reshape U.S. immigration policy, revealing inner White House conflicts and the driving forces behind policies like family separations and asylum restrictions.  

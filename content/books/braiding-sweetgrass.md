@@ -10,11 +10,16 @@ affiliate link: https://amzn.to/3Ho8r6E
 CTA: Grow honorably.
 updated: 2026-03-14T18:08:46.233Z
 link_analysis_model: gemini-3.1-flash-lite-preview
-link_analysis_time: 2026-04-01T00:00:00Z
+link_analysis_time: 2026-04-16T00:00:00Z
 force_analyze_links: false
+link_analysis_version: "2"
+image_date: 2026-04-16T14:42:17Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A close-up, high-angle shot focusing on three strands of sweetgrass being woven together by weathered, gentle hands. The grass is vibrant, lush green, with subtle golden highlights catching the morning light. The background is a soft-focus, dappled forest floor featuring mossy textures and scattered autumn leaves in warm earth tones of amber and russet. The lighting is natural and ethereal, casting a soft glow on the braiding process to evoke a sense of quiet connection, tradition, and the tactile nature of the earth’s gifts. The composition is intimate and serene, emphasizing the harmony between human touch and the natural world.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🪢🌾 Braiding Sweetgrass: Indigenous Wisdom, Scientific Knowledge, and the Teachings of Plants  
+![books-braiding-sweetgrass](../books-braiding-sweetgrass.jpg)  
 [🛒 Braiding Sweetgrass: Indigenous Wisdom, Scientific Knowledge, and the Teachings of Plants. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3Ho8r6E)  
   
 ## 📚 Book Report: Braiding Sweetgrass  

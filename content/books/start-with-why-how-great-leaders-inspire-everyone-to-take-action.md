@@ -7,8 +7,9 @@ share: true
 affiliate link: https://amzn.to/44rTF8a
 CTA: Discover your why.
 force_analyze_links: false
-link_analysis_time: 2026-03-22T23:36:08.853Z
+link_analysis_time: 2026-04-15T00:00:00Z
 link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_version: "2"
 ---
 [Home](../index.md) > [Books](./index.md)  
 # ❓🎯 Start with Why: How Great Leaders Inspire Everyone to Take Action  

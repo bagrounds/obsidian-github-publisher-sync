@@ -8,11 +8,16 @@ CTA: 📱 Reclaim your attention.
 affiliate link: https://amzn.to/4q2ZrG5
 updated: 2026-03-15T00:23:57.158Z
 force_analyze_links: false
-link_analysis_time: 2026-03-25T12:15:30.112Z
+link_analysis_time: 2026-04-15T00:00:00Z
 link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_version: "2"
+image_date: 2026-04-16T12:28:48Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: "A stylized smartphone on the left, its screen a vibrant, chaotic swirl of tiny, overlapping app icons and notification bubbles. This digital noise gradually dissolves into a calm, minimalist landscape on the right: a single, elegant tree rooted in a gentle green hill under a clear, open sky. A serene human silhouette sits on the hill, facing the peaceful vista, with the digital chaos receding behind them. The overall composition uses clean lines and soft"
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 📱⬇️🧘 Digital Minimalism: Choosing a Focused Life in a Noisy World  
+![books-digital-minimalism-choosing-a-focused-life-in-a-noisy-world](../books-digital-minimalism-choosing-a-focused-life-in-a-noisy-world.jpg)  
 [🛒 Digital Minimalism: Choosing a Focused Life in a Noisy World. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4q2ZrG5)  
   
 ## 📝🐒 Human Notes  

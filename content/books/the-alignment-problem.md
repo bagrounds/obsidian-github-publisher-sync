@@ -8,12 +8,13 @@ Author:
 tags:
 affiliate link: https://www.amazon.com/dp/0393635821?tag=bagrounds-20
 force_analyze_links: false
-link_analysis_time: 2026-03-22T23:35:01.458Z
+link_analysis_time: 2026-04-16T00:00:00Z
 link_analysis_model: gemini-3.1-flash-lite-preview
 updated: 2026-03-25T04:40:42.267Z
 image_date: 2026-04-14T01:45:39Z
 image_model: "@cf/black-forest-labs/flux-1-schnell"
 image_prompt: A stylized, glowing human silhouette faces a sleek, geometric AI head. Between them, a complex, vibrant neural network pattern attempts to connect, but visible breaks and frayed edges suggest a struggle for alignment. Below, a subtle, imbalanced scale of justice has one pan dipping significantly lower than the other. The image uses a palette of deep blues, purples, and electric greens, with soft, warm light emanating from the human side contrasting with the cool, sharp light from the AI, creating a thoughtful and slightly tense atmosphere.
+link_analysis_version: "2"
 ---
 [Home](../index.md) > [Books](./index.md)  
 # ⚖️🤖 The Alignment Problem  

@@ -12,9 +12,13 @@ force_analyze_links: false
 link_analysis_time: 2026-04-15T00:00:00Z
 link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_version: "2"
+image_date: 2026-04-16T13:42:00Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: "A minimalist, high-contrast illustration featuring a stylized, confusing door handle. The handle is positioned in a way that makes it unclear whether it should be pushed or pulled. Surrounding the door are subtle, floating icons representing design elements: a gear, a magnifying glass, a lightbulb, and a geometric grid pattern. The color palette is clean and professional, utilizing slate blue, crisp white, and a pop of warm amber for the lightbulb. The background is a soft, neutral grey with subtle architectural lines, suggesting a modern interior space. The composition is centered, clean, and balanced, evoking a sense of analytical curiosity and the intersection of human psychology with physical objects."
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 💺🚪💡🤔 The Design of Everyday Things  
+![books-the-design-of-everyday-things](../books-the-design-of-everyday-things.jpg)  
 [🛒 The Design of Everyday Things. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3FFG4Am)  
   
 ## 🤖 AI Summary  

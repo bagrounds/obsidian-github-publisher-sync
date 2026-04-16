@@ -10,11 +10,16 @@ affiliate link: https://amzn.to/43sWW6w
 CTA: 🧠 Master neural networks.
 updated: 2026-03-15T12:09:33.207Z
 link_analysis_model: gemini-3.1-flash-lite-preview
-link_analysis_time: 2026-04-01T00:00:00Z
+link_analysis_time: 2026-04-15T00:00:00Z
 force_analyze_links: false
+link_analysis_version: "2"
+image_date: 2026-04-16T11:29:24Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A high-contrast, minimalist illustration featuring a stylized human brain constructed from glowing, interconnected digital nodes and fiber-optic filaments. The brain is floating against a deep, dark navy background. Faint, translucent geometric layers—representing neural network architecture—radiate outward from the center, transitioning from complex mathematical symbols and grid-like meshes near the core to smooth, flowing data streams at the edges. Soft, cool-toned light emanates from within the brain structure, illuminating the surrounding void with subtle pulses of cyan, electric blue, and magenta. The composition is clean, sophisticated, and focused on the intersection of biological intelligence and computational depth, evoking a sense of high-level analytical rigor and technological wonder.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🧠💻🤖 Deep Learning  
+![books-deep-learning](../books-deep-learning.jpg)  
 [🛒 Deep Learning. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/43sWW6w)  
   
 ## 🤖 AI Summary  

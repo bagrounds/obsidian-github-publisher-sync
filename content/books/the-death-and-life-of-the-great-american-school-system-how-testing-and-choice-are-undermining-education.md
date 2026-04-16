@@ -10,9 +10,13 @@ updated: 2026-03-14T07:08:19.006Z
 link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-02T00:00:00Z
 force_analyze_links: false
+image_date: 2026-04-16T17:37:29Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A conceptual illustration showing an old, weathered schoolhouse building standing in a vast, barren field. The building is partially decaying, with its wooden siding peeling. In front of the school, a modern, sterile metallic conveyor belt runs across the landscape. On this belt, identical, gray, uniform-looking crates move forward, each stamped with a simple barcode. Overhead, the sky is a moody, overcast gray, transitioning into a stormy dark blue. The composition emphasizes the contrast between the traditional, organic nature of the schoolhouse and the cold, industrial, and repetitive nature of the standardized testing system. No human figures are present, focusing the mood entirely on the systemic shift from community-based learning to a rigid, standardized, and mechanical process.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 💀🇺🇸🏫 The Death and Life of the Great American School System: How Testing and Choice Are Undermining Education  
+![books-the-death-and-life-of-the-great-american-school-system-how-testing-and-choice-are-undermining-education](../books-the-death-and-life-of-the-great-american-school-system-how-testing-and-choice-are-undermining-education.jpg)  
 [🛒 The Death and Life of the Great American School System: How Testing and Choice Are Undermining Education. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4ntD7TK)  
   
 ## 📚 Book Report: The Death and Life of the Great American School System: How Testing and Choice Are Undermining Education  

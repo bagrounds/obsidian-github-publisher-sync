@@ -8,11 +8,12 @@ affiliate link: https://amzn.to/3SwyniU
 CTA: 💣 Defy absurdity.
 updated: 2026-03-20T08:12:44.055Z
 force_analyze_links: false
-link_analysis_time: 2026-03-22T23:37:07.720Z
+link_analysis_time: 2026-04-15T00:00:00Z
 link_analysis_model: gemini-3.1-flash-lite-preview
 image_date: 2026-04-14T23:27:53Z
 image_model: "@cf/black-forest-labs/flux-1-schnell"
 image_prompt: "A surreal, high-contrast illustration depicting a vintage propeller airplane trapped inside an infinite, Escher-like loop of bureaucratic red tape. The plane is caught in a Möbius strip formed by a heavy, official-looking document that winds through a hazy, desaturated sky. The scene is filled with subtle, absurd details: a lone, tiny figure in an aviator cap stands on the wing, looking confused at a signpost that points in every direction simultaneously. The color palette is dominated by washed-out military olive, dusty grey, and alarming, saturated splashes of bureaucratic red. The composition feels claustrophobic yet whimsical, capturing the frustration of a perpetual, circular trap against a backdrop of bleak wartime indifference."
+link_analysis_version: "2"
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🔁🤪 Catch-22  

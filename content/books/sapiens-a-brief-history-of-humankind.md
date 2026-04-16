@@ -13,9 +13,13 @@ force_analyze_links: false
 link_analysis_time: 2026-04-14T00:00:00Z
 link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_version: "2"
+image_date: 2026-04-16T03:15:42Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A minimalist illustration depicting the timeline of human evolution transitioning into the modern era. On the far left, a silhouette of a primitive hominid standing upright against a soft, dawn-lit horizon. As the eye moves toward the right, the scene evolves into a stylized landscape of golden wheat fields, representing the agricultural revolution. Further to the right, this transitions into a clean, abstract geometric pattern of interconnected lines and constellations, symbolizing the scientific revolution and the digital age. The background uses a gradient from warm, earthy ochre and terracotta tones on the left to cool, sophisticated slate blue and deep violet on the right, suggesting the progression of time and the expansion of human consciousness. The aesthetic is clean, intellectual, and evocative, focusing on the contrast between biology and technology.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 📜🌍⏳ Sapiens: A Brief History of Humankind  
+![books-sapiens-a-brief-history-of-humankind](../books-sapiens-a-brief-history-of-humankind.jpg)  
 [🛒 Sapiens: A Brief History of Humankind. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3HEBDX1)  
   
 ## 🤖 AI Summary  

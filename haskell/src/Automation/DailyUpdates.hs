@@ -4,12 +4,14 @@ module Automation.DailyUpdates
   , addUpdateLinks
   , extractTitleFromFile
   , addUpdateLinksToReflection
+  , buildChangesPageContent
+  , buildChangesIndexContent
   , parseStatsPageCount
   , resolveRelativePath
   ) where
 
 import Control.Applicative ((<|>))
-import Control.Monad (when)
+import Control.Monad (unless, when)
 import Data.Char (isDigit)
 import Data.List (find)
 import qualified Data.Map.Strict as Map
@@ -17,15 +19,16 @@ import Data.Maybe (catMaybes, fromMaybe, mapMaybe)
 import Data.Text (Text)
 import qualified Data.Text as T
 import qualified Data.Text.IO as TIO
-import System.Directory (doesFileExist)
+import System.Directory (createDirectoryIfMissing, doesFileExist)
 import System.FilePath ((</>), takeBaseName)
 import Text.Read (readMaybe)
 
-import Automation.DailyReflection (ensureDailyReflection, EnsureReflectionResult (..), findFirstSectionIndex, embedSectionHeaders)
-import Automation.Frontmatter (parseFrontmatter)
+import Automation.DailyReflection (ensureDailyReflection, EnsureReflectionResult (..), findFirstSectionIndex, embedSectionHeaders, changesLinkPrefix)
+import Automation.Frontmatter (parseFrontmatter, quoteYamlValue)
 import Automation.Platform (Platform (..), updatesSectionHeader)
 import Automation.RelativePath (RelativePath, unRelativePath)
 import Automation.Title (Title, unTitle)
+import Automation.Wikilink (formatWikilink)
 
 -- | Types of updates that can be made to a page
 data UpdateDetail
@@ -421,6 +424,66 @@ replaceUpdatesSection content newSection =
         then T.stripEnd before <> "\n\n" <> newSection
         else T.stripEnd before <> "\n\n" <> newSection <> "\n" <> after
 
+-- Changes directory content builders
+buildChangesPageContent :: Text -> Text
+buildChangesPageContent date =
+  T.intercalate "\n"
+    [ "---"
+    , "share: true"
+    , "aliases:"
+    , "  - " <> quoteYamlValue date
+    , "title: " <> quoteYamlValue date
+    , "URL: " <> quoteYamlValue ("https://bagrounds.org/changes/" <> date)
+    , "---"
+    , formatWikilink "index" "Home" <> " > " <> formatWikilink "changes/index" "Changes" <> " | " <> formatWikilink ("reflections/" <> date) "🪞"
+    , "# " <> date
+    , ""
+    ]
+
+buildChangesIndexContent :: Text
+buildChangesIndexContent =
+  T.intercalate "\n"
+    [ "---"
+    , "share: true"
+    , "aliases:"
+    , "  - " <> quoteYamlValue "🔄 Changes"
+    , "title: " <> quoteYamlValue "🔄 Changes"
+    , "URL: " <> quoteYamlValue "https://bagrounds.org/changes"
+    , "---"
+    , formatWikilink "index" "Home"
+    , "# 🔄 Changes"
+    , ""
+    ]
+
+ensureChangesDirectory :: FilePath -> IO ()
+ensureChangesDirectory changesDir = do
+  createDirectoryIfMissing True changesDir
+  let indexPath = changesDir </> "index.md"
+  indexExists <- doesFileExist indexPath
+  unless indexExists $ do
+    TIO.writeFile indexPath buildChangesIndexContent
+    TIO.putStrLn "  📁 Created changes directory index"
+
+ensureChangesPage :: FilePath -> Text -> IO ()
+ensureChangesPage changesDir date = do
+  let changesPath = changesDir </> T.unpack date <> ".md"
+  pageExists <- doesFileExist changesPath
+  unless pageExists $ do
+    TIO.writeFile changesPath (buildChangesPageContent date)
+    TIO.putStrLn ("  📝 Created changes page for " <> date)
+
+changesLink :: Text -> Text
+changesLink date = formatWikilink ("changes/" <> date) "🔄 Changes"
+
+ensureChangesLinkInReflection :: FilePath -> Text -> IO ()
+ensureChangesLinkInReflection reflectionPath date = do
+  reflectionExists <- doesFileExist reflectionPath
+  when reflectionExists $ do
+    content <- TIO.readFile reflectionPath
+    unless (T.isInfixOf changesLinkPrefix content) $ do
+      let updated = T.stripEnd content <> "\n\n" <> changesLink date <> "\n"
+      TIO.writeFile reflectionPath updated
+
 -- I/O operations
 extractTitleFromFile :: FilePath -> IO Text
 extractTitleFromFile filePath = do
@@ -435,18 +498,21 @@ extractTitleFromFile filePath = do
 
 addUpdateLinksToReflection :: FilePath -> Text -> [UpdateLink] -> IO Bool
 addUpdateLinksToReflection _ _ [] = pure False
-addUpdateLinksToReflection reflectionsDir date links = do
-  let reflectionPath = reflectionsDir </> T.unpack date <> ".md"
-  exists <- doesFileExist reflectionPath
-  if exists
-    then pure ()
-    else do
-      result <- ensureDailyReflection reflectionsDir date
-      when (errCreated result) $
-        TIO.putStrLn ("  📝 Created daily reflection for " <> date)
-  fileContent <- TIO.readFile reflectionPath
+addUpdateLinksToReflection vaultDir date links = do
+  let reflectionsDir = vaultDir </> "reflections"
+      changesDir = vaultDir </> "changes"
+      reflectionPath = reflectionsDir </> T.unpack date <> ".md"
+      changesPath = changesDir </> T.unpack date <> ".md"
+  reflectionExists <- doesFileExist reflectionPath
+  unless reflectionExists $ do
+    result <- ensureDailyReflection reflectionsDir date
+    when (errCreated result) $
+      TIO.putStrLn ("  📝 Created daily reflection for " <> date)
+  ensureChangesDirectory changesDir
+  ensureChangesPage changesDir date
+  changesContent <- TIO.readFile changesPath
 
-  let existingText = extractSectionText fileContent
+  let existingText = extractSectionText changesContent
       existingEntries = parseExistingEntries existingText
       expectedCount = parseStatsPageCount existingText
 
@@ -454,11 +520,12 @@ addUpdateLinksToReflection reflectionsDir date links = do
     TIO.putStrLn $ "  ⚠️  Data loss prevented: parsed 0 entries but stats indicate "
       <> T.pack (show expectedCount) <> " expected for " <> date
 
-  let updated = addUpdateLinks fileContent links
-  if updated == fileContent
+  let updated = addUpdateLinks changesContent links
+  if updated == changesContent
     then pure False
     else do
-      TIO.writeFile reflectionPath updated
+      TIO.writeFile changesPath updated
+      ensureChangesLinkInReflection reflectionPath date
       let linkPaths = T.intercalate ", " (fmap (unRelativePath . updateRelativePath) links)
-      TIO.putStrLn ("  🔄 Added update link(s) to " <> date <> " reflection: " <> linkPaths)
+      TIO.putStrLn ("  🔄 Added update link(s) to " <> date <> " changes: " <> linkPaths)
       pure True

@@ -374,14 +374,13 @@ autoPost manager vaultDir imageBackfillContentDirs = do
 
   postedNotes <- runPostingPipeline manager env apiKey vaultDir imageBackfillContentDirs
 
-  let reflectionsDir = vaultDir </> "reflections"
   today <- todayPacificDay
   let todayStr = formatDay today
       updateLinks = fmap (\pn ->
         let details = fmap platformUpdateDetail (pnPlatforms pn)
         in UpdateLink (noteRelativePath (pnNote pn)) (noteTitle (pnNote pn)) details
         ) postedNotes
-  _ <- addUpdateLinksToReflection reflectionsDir todayStr updateLinks
+  _ <- addUpdateLinksToReflection vaultDir todayStr updateLinks
   pure ()
 
 regenerateBlueskyEmbeds :: Manager -> FilePath -> IO ()

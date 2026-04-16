@@ -11,9 +11,13 @@ updated: 2026-03-14T16:07:16.773Z
 link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-02T00:00:00Z
 force_analyze_links: false
+image_date: 2026-04-16T16:40:06Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A whimsical, vibrant illustration featuring a stylized, friendly blue whale floating through a cosmic, star-filled sky. The whale is composed of glowing geometric shapes and mathematical symbols, representing the elegance of functional programming. Below, a clean, minimalist landscape consists of rolling hills made of cascading code blocks and interconnected nodes. The color palette is a mix of deep navy, electric purple, and soft teal, evoking a sense of wonder and intellectual exploration. The atmosphere is lighthearted and academic, capturing the intersection of complex logic and creative play. The lighting is soft and ethereal, highlighting the abstract patterns flowing from the whale’s tail into the digital landscape below.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 👨‍🏫🎉👍✨ Learn You a Haskell for Great Good!  
+![books-learn-you-a-haskell-for-great-good](../books-learn-you-a-haskell-for-great-good.jpg)  
 [🛒 Learn You a Haskell for Great Good!. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3HmgMHV)  
   
 ## 🔗 Links  

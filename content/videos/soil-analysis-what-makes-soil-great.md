@@ -9,6 +9,10 @@ Platform:
 Channel: The Great Courses
 tags:
 youtube: https://youtu.be/mc4eKypeqbI
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_version: "2"
+link_analysis_time: 2026-04-16T00:00:00Z
+force_analyze_links: false
 ---
 [Home](../index.md) > [Videos](./index.md)  
 # 🌱🔬👍 Soil Analysis: What Makes Soil Great?  
@@ -54,4 +58,4 @@ youtube: https://youtu.be/mc4eKypeqbI
   
 ### 🎨 Creatively Related  
 * 📘 The Hidden Life of Trees by Peter Wohlleben explores how forest soils facilitate communication and nutrient sharing through fungal networks.  
-* 📘 Braiding Sweetgrass by Robin Wall Kimmerer blends indigenous wisdom with scientific knowledge to explore our relationship with the land and soil.
+* 📘 [🪢🌾 Braiding Sweetgrass: Indigenous Wisdom, Scientific Knowledge, and the Teachings of Plants](../books/braiding-sweetgrass.md) by Robin Wall Kimmerer blends indigenous wisdom with scientific knowledge to explore our relationship with the land and soil.

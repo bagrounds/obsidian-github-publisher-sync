@@ -9,9 +9,13 @@ updated: 2026-03-12T10:15:10.815Z
 link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-02T00:00:00Z
 force_analyze_links: false
+image_date: 2026-04-16T23:27:10Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A minimalist, conceptual illustration depicting the essence of attachment theory. In the center, two abstract, fluid forms—one larger and one smaller—reach toward each other, their edges gently overlapping to create a sense of connection and security. The background is a soft, warm gradient, transitioning from deep charcoal to a gentle, luminous cream. Subtle, thin lines emanate from the figures, suggesting a network of emotional bonds or neural pathways. To the side, a stylized, translucent silhouette of a human brain subtly blends into the background, hinting at the biological and neurological underpinnings of the theory. The overall aesthetic is clean, academic, and sophisticated, using a muted color palette of navy, soft gray, and warm ochre to convey depth, stability, and human connection.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 📖🫂🥼 Handbook of Attachment: Theory, Research, and Clinical Applications  
+![books-handbook-of-attachment-theory-research-and-clinical-applications](../books-handbook-of-attachment-theory-research-and-clinical-applications.jpg)  
 [🛒 Handbook of Attachment: Theory, Research, and Clinical Applications. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4kjOXP5)  
   
 ## 📖 Book Report: Handbook of Attachment: Theory, Research, and Clinical Applications  

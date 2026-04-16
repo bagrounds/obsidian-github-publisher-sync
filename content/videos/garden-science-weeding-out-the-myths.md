@@ -9,6 +9,10 @@ Platform:
 Channel: The Great Courses
 tags:
 youtube: https://youtu.be/9Zh762p9IE4
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_version: "2"
+link_analysis_time: 2026-04-16T00:00:00Z
+force_analyze_links: false
 ---
 [Home](../index.md) > [Videos](./index.md)  
 # 🪴🔬❌ Garden Science: Weeding Out the Myths  
@@ -52,7 +56,7 @@ youtube: https://youtu.be/9Zh762p9IE4
   
 ### 🆚 Contrasting  
   
-* 📖 Gaia's Garden by Toby Hemenway describes ecological design principles for home gardens that emphasize techniques like sheet mulching and mounded beds.  
+* 📖 [🌍🌿 Gaia's Garden: A Guide to Home-Scale Permaculture](../books/gaias-garden.md) by Toby Hemenway describes ecological design principles for home gardens that emphasize techniques like sheet mulching and mounded beds.  
 * 📖 The One-Straw Revolution by Masanobu Fukuoka presents a philosophy of no-till farming that relies on natural cycles and minimal human interference.  
   
 ### 🎨 Creatively Related  

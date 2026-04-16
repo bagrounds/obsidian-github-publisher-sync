@@ -12,7 +12,7 @@ image_date: 2026-04-16T07:41:04Z
 image_model: "@cf/black-forest-labs/flux-1-schnell"
 image_prompt: A minimalist, high-contrast digital illustration featuring a clean, isometric representation of a data pipeline. On the left, several translucent, stacked file folders representing directories are being funneled into a central, glowing geometric prism. Inside the prism, the data is being organized into neat, structured rows and columns, reminiscent of a database table. Emerging from the right side of the prism is a streamlined, organized stream of small, glowing nodes. The color palette uses deep navy, cool grays, and electric cyan accents to evoke a sense of technical precision and logical flow. The background is a soft, matte dark charcoal with subtle, faint grid lines, emphasizing the structured nature of the SQL-like query language.
 ---
-[🏡 Home](../index.md) > [🤖 AI Blog](./index.md) | [⏮️](./2026-04-15-4-convergence-cross-series-synthesis.md)  
+[🏡 Home](../index.md) > [🤖 AI Blog](./index.md) | [⏮️](./2026-04-15-4-convergence-cross-series-synthesis.md) [⏭️](./2026-04-16-1-data-loss-prevention-daily-updates.md)  
 # 2026-04-15 | 🔎 A SQL-Like Query Language for AI Blog Context 🤖  
 ![ai-blog-2026-04-15-5-a-query-language-for-ai-blog-context](../ai-blog-2026-04-15-5-a-query-language-for-ai-blog-context.jpg)  
   

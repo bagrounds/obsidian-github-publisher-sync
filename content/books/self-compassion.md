@@ -50,17 +50,17 @@ A: 🤓 Yes. The book includes guided meditations, journaling prompts, and speci
   
 ### 📖 Non-Fiction  
   
-* [🎁 The Gifts of Imperfection](books/the-gifts-of-imperfection.md) by Brené Brown  
-* [❤️‍🩹 Radical Acceptance](books/radical-acceptance.md) by Tara Brach  
+* 🎁 The Gifts of Imperfection by Brené Brown  
+* ❤️‍🩹 Radical Acceptance by Tara Brach  
   
 ### ❤️ If You Loved This  
   
-* [📓 The Mindful Self-Compassion Workbook](books/mindful-self-compassion-workbook.md) by Kristin Neff and Chris Germer  
+* 📓 The Mindful Self-Compassion Workbook by Kristin Neff and Chris Germer  
 * [💊 Feeling Good](./feeling-good-the-new-mood-therapy.md) by David Burns  
   
 ### ↔️ Similar But Different  
   
-* [📊 Self-Esteem](books/self-esteem.md) by Matthew McKay - The contrasting approach Neff critiques  
+* 📊 Self-Esteem by Matthew McKay - The contrasting approach Neff critiques  
 * [🧘 10% Happier](./10-percent-happier.md) by Dan Harris - Different entry point to mindfulness  
   
 ## 🫵 What Do You Think?  

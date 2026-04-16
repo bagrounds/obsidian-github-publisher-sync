@@ -10,9 +10,13 @@ updated: 2026-03-14T14:09:53.170Z
 link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-01T00:00:00Z
 force_analyze_links: false
+image_date: 2026-04-16T15:41:51Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A minimalist, high-contrast illustration featuring a clean, organized workbench. On the desk sits an open, classic hardcover book with glowing, golden lines of code radiating from the pages, forming geometric constellations in the air above. Beside the book is a sleek, modern mechanical keyboard and a single, perfectly aligned fountain pen. The color palette uses deep navy, slate gray, and vibrant amber accents to signify precision and craftsmanship. The lighting is soft and focused, creating a sense of quiet, intellectual productivity. The background is a subtle, out-of-focus grid pattern, suggesting a structural foundation for the code being built.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # ✅💻 Code Complete  
+![books-code-complete](../books-code-complete.jpg)  
 [🛒 Code Complete. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4nK3tR7)  
   
 📖✨ A guide to software construction, emphasizing enduring principles for writing high-quality, maintainable code amidst evolving technologies.  

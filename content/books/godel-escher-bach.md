@@ -12,9 +12,13 @@ force_analyze_links: false
 link_analysis_time: 2026-04-16T00:00:00Z
 link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_version: "2"
+image_date: 2026-04-16T22:21:32Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: "A surreal, high-contrast illustration featuring a central strange loop. Two intricately detailed human hands emerge from the shadows, each holding a pen and drawing the other into existence, blending into a seamless, impossible Möbius strip. The background is a complex, ethereal tapestry of mathematical equations, geometric fractals, and flowing musical staves that twist and fold into one another. The color palette is rich with deep indigo, gold leaf accents, and stark white, creating a sense of infinite depth. Floating around the central loop are subtle, stylized symbols: a delicate crab silhouette, a fragmented honeycomb, and a crystalline staircase, all converging toward the center to represent the interconnected nature of logic, art, and harmony. The overall aesthetic is intellectual, mysterious, and grand, evoking the feeling of a recursive, eternal braid of human thought."
 ---
 [Home](../index.md) > [Books](./index.md)  
 # ♾️📐🎶🥨 Gödel, Escher, Bach: An Eternal Golden Braid  
+![books-godel-escher-bach](../books-godel-escher-bach.jpg)  
 [🛒 Gödel, Escher, Bach: An Eternal Golden Braid. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3ZGTin5)  
   
 ## 🤖 AI Summary  

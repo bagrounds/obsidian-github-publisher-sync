@@ -9,6 +9,10 @@ Platform:
 Channel: Interesting Times with Ross Douthat
 tags:
 youtube: https://youtu.be/bMOw7H2Jfv0
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_version: "2"
+link_analysis_time: 2026-04-16T00:00:00Z
+force_analyze_links: false
 ---
 [Home](../index.md) > [Videos](./index.md)  
 # 🕰️🏛️🛑⚡ Trump Is the End of a 100-Year Experiment | Interesting Times with Ross Douthat  
@@ -50,5 +54,5 @@ youtube: https://youtu.be/bMOw7H2Jfv0
 * 🛡️ The People's Justice by Amul Thapar presents a defense of originalism by focusing on how conservative rulings affect the lives of ordinary citizens.  
   
 ### 🎨 Creatively Related  
-* 🧱 The Federalist Papers by Alexander Hamilton, James Madison, and John Jay provides the original architectural logic for the separation of powers discussed in the video.  
+* 🧱 [🇺🇸📜 The Federalist Papers](../books/the-federalist-papers.md) by Alexander Hamilton, James Madison, and John Jay provides the original architectural logic for the separation of powers discussed in the video.  
 * 🤺 The Cycles of American History by Arthur M. Schlesinger Jr. explores the recurring shifts in power between the executive and legislative branches over centuries.

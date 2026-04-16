@@ -13,9 +13,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-14T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-04-16T21:27:03Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A minimalist, high-contrast illustration featuring a clean, dark wooden desk surface. In the center, a single, glowing lightbulb floats just above a closed, leather-bound notebook, casting a soft, focused pool of warm light onto the desk. Surrounding this central point of focus, the rest of the workspace fades into deep, blurred shadows, suggesting an environment stripped of clutter and digital noise. A lone, high-quality fountain pen rests precisely beside the notebook. The overall aesthetic is sleek and professional, utilizing a color palette of deep charcoal, slate gray, and a sharp, brilliant amber to evoke a sense of clarity, intentionality, and undisturbed concentration.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🤿💼 Deep Work: Rules for Focused Success in a Distracted World  
+![books-deep-work](../books-deep-work.jpg)  
 [🛒 Deep Work: Rules for Focused Success in a Distracted World. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3HCgWuP)  
   
 ## 📝🐒 Human Notes  

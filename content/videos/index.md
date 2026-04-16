@@ -5,10 +5,10 @@ aliases:
 title: 📺 Videos
 URL: https://bagrounds.org/videos
 backlinks: false
-updated: 2026-04-16T15:53:16-07:00
+updated: 2026-04-16T16:15:35-07:00
 ---
 [Home](../index.md)  
-# 📺 Videos (761)  
+# 📺 Videos (762)  
 - [💰🤑🤖💡🚀💲 $0.10/Month Runs My Entire AI Life. I'll Show You How.](./0-10-month-runs-my-entire-ai-life-ill-show-you-how.md)  
 - [📊📈📉📃👁️ 10 Charts to Understand the 900 Page Budget Bill](./10-charts-to-understand-the-900-page-budget-bill.md)  
 - [🤖🔗⬆️✅ 12-Factor Agents: Patterns of reliable LLM applications — Dex Horthy, HumanLayer](./12-factor-agents-patterns-of-reliable-llm-applications-dex-horthy-humanlayer.md)  
@@ -498,6 +498,7 @@ updated: 2026-04-16T15:53:16-07:00
 - [💰📉🌍 Silvio Gesell's Forgotten Money: The Wörgl Experiment & Demurrage Currency](./silvio-gesells-forgotten-money-the-worgl-experiment-demurrage-currency.md)  
 - [🔎🗺️✅📍 Site Analysis: Choosing the Right Spot](./site-analysis-choosing-the-right-spot.md)  
 - [🦠🤒🏥 Snohomish County sees measles outbreak](./snohomish-county-sees-measles-outbreak.md)  
+- [🌱🔬👍 Soil Analysis: What Makes Soil Great?](./soil-analysis-what-makes-soil-great.md)  
 - [🪴🔬📚 Soil and Planting Lessons from Research](./soil-and-planting-lessons-from-research.md)  
 - [✨😮🗣️ Something Interesting Happened Today | Explainer](./something-interesting-happened-today-explainer.md)  
 - [Spaceship You](./spaceship-you.md)  

@@ -10,11 +10,12 @@ affiliate link: https://amzn.to/4842OVY
 CTA: ✨ Unleash your brilliance.
 updated: 2026-03-20T14:17:57.557Z
 link_analysis_model: gemini-3.1-flash-lite-preview
-link_analysis_time: 2026-04-01T00:00:00Z
+link_analysis_time: 2026-04-16T00:00:00Z
 force_analyze_links: false
 image_date: 2026-04-14T21:29:43Z
 image_model: "@cf/black-forest-labs/flux-1-schnell"
 image_prompt: A surreal, ethereal illustration featuring a glowing, translucent human silhouette standing in a vast, dark forest. From the silhouette’s fingertips, vibrant, swirling ribbons of light—representing creative ideas—spiral upward into the night sky, transforming into shimmering constellations. The figure is looking upward with a sense of calm wonder, while a small, shadowy, yet non-threatening creature representing fear sits quietly at their feet, ignored. The color palette uses deep indigos and blacks contrasted with brilliant, glowing golds, teals, and magentas to evoke a sense of magic and infinite possibility. The composition emphasizes the contrast between the grounded, fearful shadow and the expansive, luminous potential of the creative spirit.
+link_analysis_version: "2"
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🪄 Big Magic: Creative Living Beyond Fear  

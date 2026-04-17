@@ -344,7 +344,6 @@ runBackfillImages context contentDirs = do
   logMsg $ "  🔗 Nav links: " <> T.pack (show modifiedCount) <> " files updated"
 
   -- 4. Add update links from image backfill results
-  let reflectionsDir = vaultDir </> "reflections"
   imageUpdateLinks <- catMaybes <$> traverse (\filePath -> do
         title <- extractTitleFromFile (vaultDir </> T.unpack filePath)
         case (mkRelativePath filePath, mkTitle title) of
@@ -360,7 +359,7 @@ runBackfillImages context contentDirs = do
   case imageUpdateLinks of
     [] -> pure ()
     _  -> do
-      _ <- addUpdateLinksToReflection reflectionsDir todayText imageUpdateLinks
+      _ <- addUpdateLinksToReflection vaultDir today imageUpdateLinks
       pure ()
 
   -- 5. Link AI blog posts to their date's reflection with a dedicated AI Blog section
@@ -398,8 +397,6 @@ runInternalLinking context = do
     [] -> pure ()
     _  -> do
       today <- todayPacificDay
-      let todayText = formatDay today
-          reflectionsDir = vaultDir </> "reflections"
       links <- catMaybes <$> traverse (\fr -> do
         title <- extractTitleFromFile (vaultDir </> T.unpack (unRelativePath (IL.relativePath fr)))
         case mkTitle title of
@@ -408,7 +405,7 @@ runInternalLinking context = do
             logMsg $ "  ⚠️  Skipping update link: " <> titleError
             pure Nothing
         ) modifiedResults
-      _ <- addUpdateLinksToReflection reflectionsDir todayText links
+      _ <- addUpdateLinksToReflection vaultDir today links
       pure ()
 
   logMsg "✅ internal-linking"

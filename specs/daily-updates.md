@@ -1,10 +1,12 @@
-# 🔄 Daily Updates — Wiki Link Notifications in Reflections
+# 🔄 Daily Updates — Changes Directory
 
 ## 🎯 Overview
 
-📋 When files are modified by automated tasks (image backfill, internal linking, auto-posting), a wiki link to each modified file is appended to the daily reflection's `## 🔄 Updates` section.
-🔁 Replaces the old "breadcrumb trail" strategy that updated `updated` frontmatter timestamps along BFS paths.
-📱 Optimized for Obsidian mobile — a single glance at the reflection reveals every file touched today.
+📋 When files are modified by automated tasks (image backfill, internal linking, auto-posting), a wiki link to each modified file is recorded in a daily changes page at `changes/YYYY-MM-DD.md`.
+🔁 Replaces the old approach of writing updates directly into the daily reflection note, reducing Enveloppe plugin link-checking overhead.
+📂 Each day gets its own changes page in the `changes/` directory, named after the date (matching the reflection page naming convention).
+🪞 Each reflection page links to its corresponding changes page at the bottom.
+📱 Optimized for Obsidian mobile — reflections stay lightweight while changes are a click away.
 🧩 Fully idempotent — links and details already present are silently skipped.
 📊 A stats line at the top summarizes total counts per update type.
 📐 Updates are rendered as a compact markdown table with one row per page and emoji column headers.
@@ -15,8 +17,10 @@
 
 | 🧩 Component | 📂 Path | 📝 Purpose |
 |---|---|---|
-| 📚 Library | `haskell/src/Automation/DailyUpdates.hs` | 🔧 Typed update details, parse/merge/render pipeline for table-format updates |
-| 🧪 Tests | `haskell/test/Automation/DailyUpdatesTest.hs` | ✅ Tests covering table format, stats, migration, idempotency |
+| 📚 Library | `haskell/src/Automation/DailyUpdates.hs` | 🔧 Typed update details, parse/merge/render pipeline, changes page management |
+| 📚 Library | `haskell/src/Automation/DailyReflection.hs` | 🪞 Reflection template with changes link, trailing section ordering |
+| 🧪 Tests | `haskell/test/Automation/DailyUpdatesTest.hs` | ✅ Tests covering table format, stats, migration, idempotency, changes directory |
+| 🧪 Tests | `haskell/test/Automation/DailyReflectionTest.hs` | ✅ Tests covering reflection template with changes link |
 | 🔌 Consumers | `haskell/src/Automation/SocialPosting.hs` | 📢 Adds `PostedTo` details after social media posting |
 | 🔌 Consumers | `haskell/app/RunScheduled.hs` | 🖼️🔗 Adds `ImageAdded` and `InternalLinksAdded` details |
 
@@ -27,21 +31,80 @@
          ↓
 📂 Collect modified file paths + build typed UpdateDetail values
          ↓
-🔧 addUpdateLinksToReflection(reflectionsDir, date, [UpdateLink])
+🔧 addUpdateLinksToReflection(vaultDir, Day, [UpdateLink])
          ↓
 📄 Ensure daily reflection exists (create from template if missing)
          ↓
-📄 Read today's reflection note
+📁 Ensure changes directory exists (with index.md + Dataview query)
+         ↓
+📄 Ensure changes page exists (changes/YYYY-MM-DD.md)
+   ├── 🔍 Find previous changes page date
+   ├── 📄 Create page with backward link to previous
+   └── ⏭️ Add forward link to previous changes page
+         ↓
+📄 Read today's changes page
          ↓
 🧩 addUpdateLinks(content, links) — parse → merge → render pipeline
    ├── 📖 Parse existing updates section (table or legacy bullet format)
    ├── 🔀 Merge new entries with existing (per-page, per-column)
    ├── 📊 Compute stats line from merged entries
-   ├── 📐 Render as markdown table with only active columns
-   └── 📍 Place section before social media embeds
+   └── 📐 Render as markdown table with only active columns
          ↓
-💾 Write updated reflection note
+💾 Write updated changes page
+         ↓
+🔗 Ensure reflection has a link to the changes page
 ```
+
+## 📂 Changes Directory Structure
+
+📁 The `changes/` directory is a sibling of `reflections/` in the vault root.
+
+📄 Each changes page follows this template:
+
+```markdown
+---
+share: true
+aliases:
+  - "YYYY-MM-DD"
+title: "YYYY-MM-DD"
+URL: "https://bagrounds.org/changes/YYYY-MM-DD"
+---
+[[index|Home]] > [[changes/index|Changes]] | [[reflections/YYYY-MM-DD|🪞 YYYY-MM-DD]] | [[changes/PREV-DATE|⏮️]]
+# YYYY-MM-DD
+```
+
+🧭 The reflection backlink includes both the mirror emoji and the date for clarity.
+🔗 Forward and backward navigation links (⏭️ and ⏮️) are added between consecutive changes pages, following the same pattern used for reflections.
+📎 When a new changes page is created, the previous changes page receives a forward link.
+
+📑 The index page follows this template:
+
+```markdown
+---
+share: true
+aliases:
+  - "🔄 Changes"
+title: "🔄 Changes"
+URL: "https://bagrounds.org/changes"
+---
+[[index|Home]]
+# 🔄 Changes
+
+\`\`\`dataview
+LIST WITHOUT ID link(file.path, file.frontmatter.title)
+FROM "changes"
+WHERE file.name != this.file.name
+SORT file.name DESC
+\`\`\`
+```
+
+📊 The index uses a Dataview query to automatically list all changes pages, newest first.
+
+## 🪞 Reflection Integration
+
+🔗 Every new reflection page includes a changes link at the very bottom of the template.
+📌 For existing reflections (created before this feature), the changes link is added automatically when updates are first written for that date.
+📐 The changes link prefix is included in `trailingSectionHeaders`, so blog series sections and social embeds are always placed above it.
 
 ## 🏷️ Update Detail Types
 
@@ -55,9 +118,19 @@
 | `PostedTo Mastodon` | Page was posted to Mastodon | auto-post | 🐘 |
 | `PostedTo Twitter` | Page was posted to Twitter | auto-post | 🐦 |
 
-📄 Example reflection with table-format updates:
+📄 Example changes page with table-format updates:
 
 ```markdown
+---
+share: true
+aliases:
+  - "2026-03-28"
+title: "2026-03-28"
+URL: "https://bagrounds.org/changes/2026-03-28"
+---
+[[index|Home]] > [[changes/index|Changes]] | [[reflections/2026-03-28|🪞 2026-03-28]]
+# 2026-03-28
+
 ## 🔄 Updates
 📊 3 pages · 2 🖼️ images · 5 🔗 links · 2 🦋 Bluesky · 1 🐘 Mastodon
 
@@ -87,12 +160,6 @@
 
 📖 Legacy bullet-format sections are automatically migrated to table format on the next update.
 
-## 📍 Section Placement
-
-📌 The `## 🔄 Updates` section is placed **before** social media embed sections (`## 🐦 Tweet`, `## 🦋 Bluesky`, `## 🐘 Mastodon`) if they exist, otherwise at the **end** of the reflection note.
-🆕 If the section does not exist, it is created before social media sections (or at the end if none exist).
-📐 Page ordering from top to bottom: content sections, Updates section, social media sections.
-
 ## 🔧 Key Functions
 
 ### 🧊 Pure Functions (No I/O)
@@ -100,13 +167,20 @@
 | 🔧 Function | 📝 Purpose |
 |---|---|
 | `addUpdateLinks(content, links)` | 📎 Parse existing section → merge new entries → render table with stats |
+| `buildChangesPageContent(date, previousDate)` | 📄 Build the frontmatter, nav (with backward link), and heading for a changes page. Date parameter is `Day`. |
+| `buildChangesIndexContent` | 📑 Build the index page with a Dataview query for the changes directory |
+| `addChangesForwardLink(content, targetDate)` | ⏭️ Add a forward navigation link to a changes page |
 
 ### 💾 I/O Functions
 
 | 🔧 Function | 📝 Purpose |
 |---|---|
 | `extractTitleFromFile(filePath)` | 📄 Reads a file and extracts its title from frontmatter |
-| `addUpdateLinksToReflection(reflectionsDir, date, links)` | 🎯 Orchestrator: ensure reflection exists → insert links with details → write |
+| `addUpdateLinksToReflection(vaultDir, date, links)` | 🎯 Orchestrator: ensure reflection and changes page exist → write updates to changes page → link reflection. Date parameter is `Day`. |
+| `ensureChangesDirectory(changesDir)` | 📁 Create changes directory and index if missing |
+| `ensureChangesPage(changesDir, date)` | 📄 Create changes page from template if missing, add forward link to previous page. Date parameter is `Day`. |
+| `ensureChangesLinkInReflection(reflectionPath, date)` | 🔗 Add changes link to reflection if not already present |
+| `findPreviousChangesDate(changesDir, today)` | 🔍 Find the most recent changes page date before today |
 
 ## 🛡️ Data Loss Prevention
 
@@ -135,6 +209,8 @@
 - 📌 Section creation only happens when the heading is absent.
 - 🔄 Re-running with the same modified paths and details produces no changes.
 - 📢 Social posting updates record only the platforms that were **newly posted** in the current run.
+- 📁 Changes directory and index creation are idempotent — existing files are not overwritten.
+- 🔗 Changes link insertion in reflections checks for existing link prefix before adding.
 
 ## 🧪 Testing
 
@@ -155,3 +231,12 @@
 - 🗺️ Relative path resolution for markdown links
 - 📐 Obsidian-formatted table with column padding
 - 🔀 Mixed wiki and markdown links in same table
+- 📂 Updates written to changes page instead of reflection
+- 📑 Changes index page creation with Dataview query
+- 🔗 Changes link added to reflection
+- 📄 Changes page frontmatter and navigation with date in reflection backlink
+- ⏭️ Forward and backward navigation links between consecutive changes pages
+
+🔬 Tests in `haskell/test/Automation/DailyReflectionTest.hs` covering:
+- 🔗 Changes link included in new reflection template
+- 📍 Changes link positioned after heading

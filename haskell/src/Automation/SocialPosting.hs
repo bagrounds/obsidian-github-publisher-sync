@@ -36,7 +36,7 @@ import Automation.EmbedSection
   , buildTweetSection
   )
 import Automation.Env (validateEnvironment, EnvironmentConfig (..))
-import Automation.PacificTime (formatDay, todayPacificDay)
+import Automation.PacificTime (todayPacificDay)
 import qualified Automation.Gemini as Gemini
 import qualified Automation.ObsidianSync as Sync
 import Automation.Platform (Platform (..), PlatformLimits (..))
@@ -374,14 +374,12 @@ autoPost manager vaultDir imageBackfillContentDirs = do
 
   postedNotes <- runPostingPipeline manager env apiKey vaultDir imageBackfillContentDirs
 
-  let reflectionsDir = vaultDir </> "reflections"
   today <- todayPacificDay
-  let todayStr = formatDay today
-      updateLinks = fmap (\pn ->
+  let updateLinks = fmap (\pn ->
         let details = fmap platformUpdateDetail (pnPlatforms pn)
         in UpdateLink (noteRelativePath (pnNote pn)) (noteTitle (pnNote pn)) details
         ) postedNotes
-  _ <- addUpdateLinksToReflection reflectionsDir todayStr updateLinks
+  _ <- addUpdateLinksToReflection vaultDir today updateLinks
   pure ()
 
 regenerateBlueskyEmbeds :: Manager -> FilePath -> IO ()

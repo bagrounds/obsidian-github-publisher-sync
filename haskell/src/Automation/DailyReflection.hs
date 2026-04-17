@@ -26,7 +26,7 @@ import Automation.Frontmatter (quoteYamlValue)
 
 import Automation.BlogSeriesConfig (BlogSeriesConfig (..))
 import Automation.Title (Title, unTitle)
-import Automation.Wikilink (formatWikilink)
+import Automation.Wikilink (formatWikilink, NavigableDirectory (..), directoryIndexLink, buildNavBackLink, insertForwardNavLink)
 import qualified Automation.Platforms.Bluesky as Bluesky
 import qualified Automation.Platforms.Mastodon as Mastodon
 import qualified Automation.Platforms.Twitter as Twitter
@@ -57,7 +57,7 @@ data UpdateReflectionResult = UpdateReflectionResult
 
 buildReflectionContent :: Text -> Maybe Text -> Text
 buildReflectionContent date previousDate =
-  let backLink = maybe "" (\pd -> " | " <> formatWikilink ("reflections/" <> pd) "⏮️") previousDate
+  let backLink = maybe "" (\pd -> " | " <> buildNavBackLink Reflections pd) previousDate
   in T.intercalate "\n"
     [ "---"
     , "share: true"
@@ -68,7 +68,7 @@ buildReflectionContent date previousDate =
     , "Author: \"[[bryan-grounds]]\""
     , "tags:"
     , "---"
-    , formatWikilink "index" "Home" <> " > " <> formatWikilink "reflections/index" "Reflections" <> backLink
+    , formatWikilink "index" "Home" <> " > " <> directoryIndexLink Reflections <> backLink
     , "# " <> date
     , ""
     , formatWikilink ("changes/" <> date) "🔄 Changes"
@@ -84,16 +84,7 @@ buildPostLink seriesId filenameNoExt displayTitle =
   "- " <> formatWikilink (seriesId <> "/" <> filenameNoExt) (unTitle displayTitle)
 
 addForwardLink :: Text -> Text -> Text
-addForwardLink content targetDate =
-  let forwardLink = formatWikilink ("reflections/" <> targetDate) "⏭️"
-      navMarker = "[[reflections/index|Reflections]]"
-  in if T.isInfixOf "⏭️" content
-    then content
-    else if T.isInfixOf "⏮️]]" content
-      then T.replace "⏮️]]" ("⏮️]] " <> forwardLink) content
-      else if T.isInfixOf navMarker content
-        then T.replace navMarker (navMarker <> " | " <> forwardLink) content
-        else content
+addForwardLink = insertForwardNavLink Reflections
 
 findFirstSectionIndex :: [Text] -> Text -> Maybe Int
 findFirstSectionIndex headers content =

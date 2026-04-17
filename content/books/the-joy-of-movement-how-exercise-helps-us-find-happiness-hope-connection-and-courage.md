@@ -7,8 +7,9 @@ share: true
 affiliate link: https://amzn.to/3I3XBmG
 CTA: 💪 Discover vitality.
 link_analysis_model: gemini-3.1-flash-lite-preview
-link_analysis_time: 2026-04-02T00:00:00Z
+link_analysis_time: 2026-04-16T00:00:00Z
 force_analyze_links: false
+link_analysis_version: "2"
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🏃😊❤️ The Joy of Movement: How Exercise Helps Us Find Happiness, Hope, Connection, and Courage  

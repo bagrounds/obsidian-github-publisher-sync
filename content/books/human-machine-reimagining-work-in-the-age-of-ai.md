@@ -10,9 +10,13 @@ updated: 2026-03-12T16:24:02.847Z
 force_analyze_links: false
 link_analysis_time: 2026-03-22T23:35:06.742Z
 link_analysis_model: gemini-3.1-flash-lite-preview
+image_date: 2026-04-17T00:34:30Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A high-angle, minimalist composition featuring a sleek, modern wooden desk. On one side, a human hand with a relaxed, creative posture rests near a notebook and a fountain pen. On the other side, a polished, minimalist robotic arm gracefully extends, its metallic fingers gently touching the edge of a tablet displaying complex, glowing data visualizations. The lighting is soft and natural, emphasizing the contrast between the warmth of the wood and the cool, refined aesthetic of the technology. The background is a clean, out-of-focus workspace, suggesting a tranquil and collaborative environment. The overall color palette is a sophisticated blend of matte white, slate grey, and warm oak, conveying a sense of professional harmony and forward-thinking innovation.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🧑‍💻🤖 Human + Machine: Reimagining Work in the Age of AI  
+![books-human-machine-reimagining-work-in-the-age-of-ai](../books-human-machine-reimagining-work-in-the-age-of-ai.jpg)  
 [🛒 Human + Machine: Reimagining Work in the Age of AI. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4fA8bOX)  
   
 ## 🤖 A Guide to Thriving in the AI Era: A Report on Human + Machine  

@@ -10,9 +10,13 @@ force_analyze_links: false
 link_analysis_time: 2026-04-16T00:00:00Z
 link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_version: "2"
+image_date: 2026-04-17T01:42:07Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: An intricate, conceptual illustration featuring a modern, minimalist room filled with floating, translucent geometric shapes—spheres, prisms, and cubes—representing data points. A pair of delicate, stylized fox ears emerges from the shadows on one side of the frame, hinting at the fox cognitive style. In the center, a person’s silhouette is visible, holding a magnifying glass to a complex constellation of glowing nodes that represent probabilities. The color palette uses deep midnight blues, soft teals, and vibrant pops of gold and amber to signify insight. The overall atmosphere is analytical, serene, and intellectually stimulating, emphasizing the blend of human intuition and rigorous, data-driven science. The background is a subtle, abstract grid that fades into a starlit nebula, symbolizing the vastness of predictive possibilities.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🔮🎨🔬 Superforecasting: The Art and Science of Prediction  
+![books-superforecasting-the-art-and-science-of-prediction](../books-superforecasting-the-art-and-science-of-prediction.jpg)  
 [🛒 Superforecasting: The Art and Science of Prediction. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3SzzP46)  
   
 ## 📖 Book Report: Superforecasting: The Art and Science of Prediction  

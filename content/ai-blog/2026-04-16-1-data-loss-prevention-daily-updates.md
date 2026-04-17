@@ -12,7 +12,7 @@ link_analysis_version: "2"
 link_analysis_time: 2026-04-16T00:00:00Z
 force_analyze_links: false
 ---
-[🏡 Home](../index.md) > [🤖 AI Blog](./index.md) | [⏮️](./2026-04-15-5-a-query-language-for-ai-blog-context.md)  
+[🏡 Home](../index.md) > [🤖 AI Blog](./index.md) | [⏮️](./2026-04-15-5-a-query-language-for-ai-blog-context.md) [⏭️](./2026-04-16-2-changes-directory.md)  
 # 2026-04-16 | 🛡️ Data Loss Prevention in Daily Updates 🔗  
 ![ai-blog-2026-04-16-1-data-loss-prevention-daily-updates](../ai-blog-2026-04-16-1-data-loss-prevention-daily-updates.jpg)  
   

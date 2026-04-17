@@ -8,11 +8,12 @@ affiliate link: https://amzn.to/4nof1uB
 CTA: Confront injustice.
 updated: 2026-03-20T12:11:10.857Z
 link_analysis_model: gemini-3.1-flash-lite-preview
-link_analysis_time: 2026-04-01T00:00:00Z
+link_analysis_time: 2026-04-16T00:00:00Z
 force_analyze_links: false
 image_date: 2026-04-15T00:37:07Z
 image_model: "@cf/black-forest-labs/flux-1-schnell"
 image_prompt: A stark, high-contrast photograph of a weathered, peeling front door in a dense urban neighborhood. The paint is flaking in long, jagged strips, revealing decaying wood underneath. A single, rusted metal eviction notice is stapled crookedly to the center of the door, casting a harsh, long shadow in the late afternoon light. To the side, a stack of worn cardboard boxes sits on a cracked concrete porch, suggesting a life packed up and displaced. The color palette is muted, consisting of gritty grays, faded browns, and the harsh, jarring white of the paper notice. The composition is tight and claustrophobic, emphasizing the lack of space and the oppressive weight of the housing crisis. The scene is devoid of people, focusing entirely on the physical remnants of a disrupted home.
+link_analysis_version: "2"
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🏚️💰 Evicted: Poverty and Profit in the American City  

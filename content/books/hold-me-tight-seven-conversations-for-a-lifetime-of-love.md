@@ -9,9 +9,13 @@ updated: 2026-03-12T14:19:45.210Z
 link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-02T00:00:00Z
 force_analyze_links: false
+image_date: 2026-04-17T00:34:24Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A soft, minimalist illustration featuring two silhouettes sitting close together on a wooden bench, facing a calm, misty lake at twilight. The focus is on the physical proximity of the figures, with their shoulders gently touching, conveying a sense of secure attachment and quiet intimacy. The color palette uses warm, muted tones—soft ambers, deep indigos, and gentle grays—to evoke a feeling of safety and emotional warmth. In the background, the soft glow of a distant, indistinct light represents the seven conversations as small, glowing lanterns floating near the horizon. The overall composition is clean and serene, emphasizing the themes of connection, emotional responsiveness, and the peace found in a lasting, bonded relationship.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🫂 Hold Me Tight: Seven Conversations for a Lifetime of Love  
+![books-hold-me-tight-seven-conversations-for-a-lifetime-of-love](../books-hold-me-tight-seven-conversations-for-a-lifetime-of-love.jpg)  
 [🛒 Hold Me Tight: Seven Conversations for a Lifetime of Love. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4mIuiG0)  
   
 ## 📚 Book Report: 🫂 Hold Me Tight: Seven Conversations for a Lifetime of Love  

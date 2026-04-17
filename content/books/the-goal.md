@@ -9,11 +9,12 @@ tags:
 affiliate link: https://amzn.to/459fwBT
 updated: 2026-03-14T10:07:37.575Z
 force_analyze_links: false
-link_analysis_time: 2026-03-22T23:38:05.312Z
+link_analysis_time: 2026-04-16T00:00:00Z
 link_analysis_model: gemini-3.1-flash-lite-preview
 image_date: 2026-04-16T17:37:33Z
 image_model: "@cf/black-forest-labs/flux-1-schnell"
 image_prompt: A clean, isometric illustration of a factory floor assembly line. The scene features a series of interconnected gears and conveyor belts. Most of the belt segments are moving smoothly, but one specific section is highlighted by a glowing, golden-hued bottleneck—a pinched, narrow point where the flow of geometric shapes slows down significantly. In the background, a subtle, stylized infinity loop symbol is integrated into the structural support beams, representing the process of continuous improvement. The color palette uses professional shades of deep navy, slate gray, and crisp white, with the golden bottleneck acting as the vibrant focal point. The lighting is bright and clinical, emphasizing clarity, efficiency, and the logical flow of a well-organized system.
+link_analysis_version: "2"
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 📈⚙️♾️ The Goal: A Process of Ongoing Improvement  

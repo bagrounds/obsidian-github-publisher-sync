@@ -10,11 +10,12 @@ affiliate link: https://amzn.to/4dO2eNi
 CTA: ✨ Awaken creative spirit.
 updated: 2026-03-19T22:51:19.507Z
 link_analysis_model: gemini-3.1-flash-lite-preview
-link_analysis_time: 2026-03-31T00:00:00Z
+link_analysis_time: 2026-04-16T00:00:00Z
 force_analyze_links: false
 image_date: 2026-04-15T08:41:54Z
 image_model: "@cf/black-forest-labs/flux-1-schnell"
 image_prompt: A stylized, gender-neutral figure stands on a winding, luminous path that glows with soft, swirling colors like a nebula. The path leads upwards towards a vibrant, abstract light source resembling a radiant sun or a bursting kaleidoscope of creative energy. Around the figures feet, dark, jagged fragments representing creative blocks are breaking apart and dissolving into the colorful light of the path. The background is a gradient of deep spiritual blues and purples, transitioning into warm, inspiring yellows and oranges near the light source. The overall impression is one of spiritual awakening and creative flow.
+link_analysis_version: "2"
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🎨🙏✨ The Artist's Way: A Spiritual Path to Higher Creativity  

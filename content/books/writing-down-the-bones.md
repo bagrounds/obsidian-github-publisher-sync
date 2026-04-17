@@ -9,11 +9,12 @@ tags:
 affiliate link: https://amzn.to/3FlGdZM
 updated: 2026-03-19T22:02:31.937Z
 link_analysis_model: gemini-3.1-flash-lite-preview
-link_analysis_time: 2026-04-01T00:00:00Z
+link_analysis_time: 2026-04-16T00:00:00Z
 force_analyze_links: false
 image_date: 2026-04-15T10:35:27Z
 image_model: "@cf/black-forest-labs/flux-1-schnell"
 image_prompt: A minimalist, high-contrast illustration featuring a single, stylized human hand emerging from a clean, white background. The hand is holding an old-fashioned fountain pen, poised to touch a piece of parchment. Floating in the air around the pen are abstract, glowing fragments of organic shapes that resemble polished bones or smooth, white river stones. The color palette is limited to deep charcoal, soft cream, and subtle hints of warm amber light. The composition is airy and meditative, emphasizing the connection between the physical act of writing and the subconscious mind. The focus is on clean lines and negative space, conveying a sense of quiet discovery and the stripping away of unnecessary layers to reveal the core essence of a story.
+link_analysis_version: "2"
 ---
 [Home](../index.md) > [Books](./index.md)  
 # ✍️🦴 Writing Down the Bones  

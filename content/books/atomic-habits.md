@@ -13,9 +13,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-15T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-04-17T06:46:41Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A minimalist, high-contrast composition featuring a single, pristine white pebble resting on a smooth, dark gray surface. From the pebble, a series of concentric ripples emanate outward into the dark background, glowing with a soft, ethereal light. The ripples represent the compounding power of small actions, growing in strength and scale as they spread. The lighting is focused and cinematic, highlighting the texture of the stone and the clean geometry of the expanding rings. The aesthetic is clean, professional, and sophisticated, utilizing a monochromatic palette with subtle hints of cool blue to emphasize the theme of systematic growth and clarity.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # ⚛️🔄 Atomic Habits: An Easy & Proven Way to Build Good Habits & Break Bad Ones  
+![books-atomic-habits](../books-atomic-habits.jpg)  
 [🛒 Atomic Habits: An Easy & Proven Way to Build Good Habits & Break Bad Ones. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4kmdS4v)  
   
 ## 🤖 AI Summary  

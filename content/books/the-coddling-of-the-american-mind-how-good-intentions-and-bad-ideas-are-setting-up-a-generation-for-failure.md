@@ -7,8 +7,9 @@ share: true
 affiliate link: https://amzn.to/4mRH2d2
 CTA: 🛡️ Fortify resilience.
 link_analysis_model: gemini-3.1-flash-lite-preview
-link_analysis_time: 2026-04-02T00:00:00Z
+link_analysis_time: 2026-04-16T00:00:00Z
 force_analyze_links: false
+link_analysis_version: "2"
 ---
 [Home](../index.md) > [Books](./index.md) | [🧠🤝🐘 Jonathan Haidt](../people/jonathan-haidt.md)  
 # 🤕👶 The Coddling of the American Mind: How Good Intentions and Bad Ideas Are Setting Up a Generation for Failure  

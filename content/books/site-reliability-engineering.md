@@ -9,11 +9,16 @@ tags:
 affiliate link: https://amzn.to/4dMNm21
 updated: 2026-03-11T00:18:21.354Z
 link_analysis_model: gemini-3.1-flash-lite-preview
-link_analysis_time: 2026-03-31T00:00:00Z
+link_analysis_time: 2026-04-17T00:00:00Z
 force_analyze_links: false
+image_date: 2026-04-17T07:41:29Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: "A stylized illustration featuring a robust, glowing server rack at its core, emanating a network of interconnected data flows and monitoring lines. Subtle, abstract icons float around the system: a sleek robotic arm making a precise adjustment, symbolizing automation; a rising arrow graph representing scalability and measurement; a protective shield icon for reliability; and a balanced scale for error budgets. The color palette uses deep blues and purples for the background, contrasted with bright, energetic accents of teal, lime green, and gold for the glowing elements and SRE symbols, conveying a sense of modern efficiency and proactive system management."
+link_analysis_version: "2"
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 💻⚙️🛡️📈 Site Reliability Engineering: How Google Runs Production Systems  
+![books-site-reliability-engineering](../books-site-reliability-engineering.jpg)  
 [🛒 Site Reliability Engineering: How Google Runs Production Systems. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4dMNm21)  
   
 ## 🤖 AI Summary  

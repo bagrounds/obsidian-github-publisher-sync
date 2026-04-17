@@ -5,10 +5,10 @@ aliases:
 title: 📺 Videos
 URL: https://bagrounds.org/videos
 backlinks: false
-updated: 2026-04-17T14:13:07-07:00
+updated: 2026-04-17T15:35:01-07:00
 ---
 [Home](../index.md)  
-# 📺 Videos (763)  
+# 📺 Videos (764)  
 - [💰🤑🤖💡🚀💲 $0.10/Month Runs My Entire AI Life. I'll Show You How.](./0-10-month-runs-my-entire-ai-life-ill-show-you-how.md)  
 - [📊📈📉📃👁️ 10 Charts to Understand the 900 Page Budget Bill](./10-charts-to-understand-the-900-page-budget-bill.md)  
 - [🤖🔗⬆️✅ 12-Factor Agents: Patterns of reliable LLM applications — Dex Horthy, HumanLayer](./12-factor-agents-patterns-of-reliable-llm-applications-dex-horthy-humanlayer.md)  
@@ -418,6 +418,7 @@ updated: 2026-04-17T14:13:07-07:00
 - [🤖⏱️🧠👨‍💻 OpenClaw's Creator Uses AI to Run His Life in 40 Minutes | Peter Steinberger](./how-openclaws-creator-uses-ai-to-run-his-life-in-40-minutes-peter-steinberger.md)  
 - [Optimizing Webservers for High Throughput and Low Latency | Dropbox](./optimizing-webservers-for-high-throughput-and-low-latency-dropbox.md)  
 - [👩‍⚖️🛑🇺🇸🏛️ Oregon governor calls Trump's actions 'an abuse of power and threat to our democracy'](./oregon-governor-calls-trumps-actions-an-abuse-of-power-and-threat-to-our-democracy.md)  
+- [🏛️💸😡 Our Tax System Should Make You Furious | The Ezra Klein Show](./our-tax-system-should-make-you-furious-the-ezra-klein-show.md)  
 - [➡️⚖️💪 Our work continues, without fear or favor](./our-work-continues-without-fear-or-favor.md)  
 - [👩‍⚖️🌪️🐘 Pam Bondi’s Tumultuous Tenure as Trump's Attorney General | The Daily Show](./pam-bondis-tumultuous-tenure-as-trumps-attorney-general-the-daily-show.md)  
 - [🗺️♟️🤖🤝 Parables on the Power of Planning in AI: From Poker to Diplomacy: Noam Brown (OpenAI)](./parables-on-the-power-of-planning-in-ai-from-poker-to-diplomacy-noam-brown-openai.md)  

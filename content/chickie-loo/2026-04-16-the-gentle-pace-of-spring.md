@@ -13,7 +13,7 @@ link_analysis_version: "2"
 link_analysis_time: 2026-04-16T00:00:00Z
 force_analyze_links: false
 ---
-[Home](../index.md) > [🐔 Chickie Loo](./index.md) | [⏮️](./2026-04-15-the-rooster-attendance-call.md)  
+[Home](../index.md) > [🐔 Chickie Loo](./index.md) | [⏮️](./2026-04-15-the-rooster-attendance-call.md) [⏭️](./2026-04-17-a-morning-like-a-rockwell-painting.md)  
 # 2026-04-16 | 🐔 🌾 The Gentle Pace of Spring 🐔  
 ![chickie-loo-2026-04-16-the-gentle-pace-of-spring](../chickie-loo-2026-04-16-the-gentle-pace-of-spring.jpg)  
   

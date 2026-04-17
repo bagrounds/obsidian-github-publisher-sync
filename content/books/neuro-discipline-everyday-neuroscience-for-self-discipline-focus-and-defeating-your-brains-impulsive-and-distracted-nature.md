@@ -6,8 +6,9 @@ URL: https://bagrounds.org/books/neuro-discipline-everyday-neuroscience-for-self
 share: true
 affiliate link: https://amzn.to/4mKaS3G
 link_analysis_model: gemini-3.1-flash-lite-preview
-link_analysis_time: 2026-04-08T00:00:00Z
+link_analysis_time: 2026-04-17T00:00:00Z
 force_analyze_links: false
+link_analysis_version: "2"
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🧠🧘🏼‍♀️ Neuro-Discipline: Everyday Neuroscience for Self-Discipline, Focus, and Defeating Your Brain's Impulsive and Distracted Nature  
@@ -50,7 +51,7 @@ This book is well-suited for:
 ### 🧠 Similar Books (Neuroscience & Self-Discipline/Habits)  
 * **[🧘🏋️ The Willpower Instinct: How Self-Control Works, Why It Matters, and What You Can Do to Get More of It](./the-willpower-instinct.md) by Kelly McGonigal:** 🧪 Blends psychology, neuroscience, and medicine to explain the science of self-control, offering practical strategies based on research. Like *Neuro-Discipline*, it focuses on the biological basis of willpower.  
 * 🧠 **"Buddha's Brain: The Practical Neuroscience of Happiness, Love, and Wisdom" by Rick Hanson and Richard Mendius:** 🙏 Explores how to use mind-training techniques (like mindfulness, discussed briefly in *Neuro-Discipline*) to change brain structure for greater well-being and emotional regulation.  
-* 🧠 **"The Brain That Changes Itself: Stories of Personal Triumph from the Frontiers of Brain Science" by Norman Doidge:** 🔄 Provides compelling stories about neuroplasticity, demonstrating how the brain can rewire itself, relevant to changing habits and overcoming limitations.  
+* 🧠 **"[🧠🔄🏆 The Brain That Changes Itself: Stories of Personal Triumph from the Frontiers of Brain Science](./the-brain-that-changes-itself.md)" by Norman Doidge:** 🔄 Provides compelling stories about neuroplasticity, demonstrating how the brain can rewire itself, relevant to changing habits and overcoming limitations.  
 * 🧠 **"Neuro-Habits: Rewire Your Brain to Stop Self-Defeating Behaviors and Make the Right Choice Every Time" by Peter Hollins:** ✍️ Another book by the same author focusing specifically on habit formation through a neuroscience lens.  
   
 ### ⚖️ Contrasting Approaches (Behavioral/Philosophical/Psychological)  

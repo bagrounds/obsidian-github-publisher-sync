@@ -9,11 +9,16 @@ tags:
 affiliate link: https://amzn.to/4jNZYY9
 updated: 2026-03-10T22:06:20.229Z
 link_analysis_model: gemini-3.1-flash-lite-preview
-link_analysis_time: 2026-03-31T00:00:00Z
+link_analysis_time: 2026-04-16T00:00:00Z
 force_analyze_links: false
+link_analysis_version: "2"
+image_date: 2026-04-17T10:36:06Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A clean, minimalist illustration featuring a series of geometric shapes—circles, squares, and triangles—connected by thin, elegant lines forming a complex, organized network. The composition should feel architectural and precise, representing the structure of a category. On the left, a stylized mathematical symbol for a category flows into a glowing, abstract representation of code syntax on the right, symbolizing the bridge between theory and programming. The color palette uses a sophisticated blend of deep navy, slate gray, and vibrant electric blue accents to convey a sense of modern, intellectual rigor. The background is a soft, textured off-white, suggesting a clean slate for logic and discovery. The overall aesthetic is professional, academic, and highly structured, emphasizing the beauty of mathematical patterns in software design.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🧮➡️👩🏼‍💻 Category Theory for Programmers  
+![books-category-theory-for-programmers](../books-category-theory-for-programmers.jpg)  
 [🛒 Category Theory for Programmers. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4jNZYY9)  
   
 ## 🔗 Links  

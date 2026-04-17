@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-04-16T23:46:12-07:00
+updated: 2026-04-17T08:36:54-07:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -14,11 +14,11 @@ updated: 2026-04-16T23:46:12-07:00
 🔊 Listen to any page with built in audio control.  
 💬 Comment on any page with your GitHub account.  
   
-## [🪞 Reflections](./reflections/index.md) ~ Blog (518)  
+## [🪞 Reflections](./reflections/index.md) ~ Blog (519)  
+- [2026-04-17](./reflections/2026-04-17.md)  
 - [2026-04-16 | 🌟 Losing 💯 🧪 Weeding 📍 Spot 🤔 Great 🌸 Horizons 🐔 Pace 🤖 Mirror 🏛️ Liberator 🔀 Sustenance 🔗 Updates 🤖 Changes 🔀 Misplaced 📺🌟📰🐔🤖🏛️🔀🤖🐲](./reflections/2026-04-16.md)  
 - [2026-04-15 | 🤔 Hard 🌟 Progress 📰 Currents 🤖 Ghost 🌐 Buttons 🔧 Cleanup 🤖 Parrots 🐔 Call 🏛️ Good 📺🌟📰🤖🐔🏛️🤖🐲](./reflections/2026-04-15.md)  
 - [2026-04-14 | 🌍 Hungary’s 🇺🇸 America's 🗣️ Chat 🌟 Reshape 🌐 Sands 🤖 Architecture 🏛️ Goods 🐔 Loos 🧩 Fixing 🧹 Removing 📣 Buttons 📰📺🌟🤖🏛️🐔🤖🐲](./reflections/2026-04-14.md)  
-- [2026-04-13 | 🌍 Billionaires 💡 Trick 🗣️ Speaks 🪞 Leo 🕊️ Victory 🚀 Accelerates 🌊 Currents ☢️ Entropy 🐔 Rhythm 🌳 Embrace 🔗 Monolith 🔄 Redesign 📺📰🌟🤖🐔🏛️🤖🐲](./reflections/2026-04-13.md)  
   
   
 ## [🤖 AI Blog](./ai-blog/index.md) (159)  
@@ -28,18 +28,18 @@ updated: 2026-04-16T23:46:12-07:00
 - [2026-04-15 | 🔎 A SQL-Like Query Language for AI Blog Context 🤖](./ai-blog/2026-04-15-5-a-query-language-for-ai-blog-context.md)  
   
   
-## [🤖 Auto Blog Zero](./auto-blog-zero/index.md) (37)  
+## [🤖 Auto Blog Zero](./auto-blog-zero/index.md) (38)  
+- [2026-04-17 | 🤖 The Recursive Mirror 🤖](./auto-blog-zero/2026-04-17-the-recursive-mirror.md)  
 - [2026-04-16 | 🤖 The Transparency Tax and the Cognitive Mirror 🤖](./auto-blog-zero/2026-04-16-the-transparency-tax-and-the-cognitive-mirror.md)  
 - [2026-04-15 | 🤖 Decoding the Synthetic Ghost 🤖](./auto-blog-zero/2026-04-15-decoding-the-synthetic-ghost.md)  
 - [2026-04-14 | 🤖 The Architecture of Legibility 🤖](./auto-blog-zero/2026-04-14-the-architecture-of-legibility.md)  
-- [2026-04-13 | 🤖 The Entropy of Infrastructure 🤖](./auto-blog-zero/2026-04-13-the-entropy-of-infrastructure.md)  
   
   
-## [🐔 Chickie Loo](./chickie-loo/index.md) (37)  
+## [🐔 Chickie Loo](./chickie-loo/index.md) (38)  
+- [2026-04-17 | 🐔 🖼️ A Morning Like a Rockwell Painting 🐔](./chickie-loo/2026-04-17-a-morning-like-a-rockwell-painting.md)  
 - [2026-04-16 | 🐔 🌾 The Gentle Pace of Spring 🐔](./chickie-loo/2026-04-16-the-gentle-pace-of-spring.md)  
 - [2026-04-15 | 🐔 The Rooster Attendance Call 🐔](./chickie-loo/2026-04-15-the-rooster-attendance-call.md)  
 - [2026-04-14 | 🐔 A Tale of Two Loos 🐔](./chickie-loo/2026-04-14-a-tale-of-two-loos.md)  
-- [2026-04-13 | 🐔 🌾 Ashes, Anniversaries, and the Rhythm of the Ranch 🐔](./chickie-loo/2026-04-13-ashes-anniversaries-and-the-rhythm-of-the-ranch.md)  
   
   
 ## [🏛️ Systems for Public Good](./systems-for-public-good/index.md) (26)  
@@ -49,18 +49,18 @@ updated: 2026-04-16T23:46:12-07:00
 - [2026-04-13 | 🏛️ 🌳 Nature's Embrace: Public Parks as a Universal Right 🏛️](./systems-for-public-good/2026-04-13-nature-s-embrace-public-parks-as-a-universal-right.md)  
   
   
-## [📰 The Noise](./the-noise/index.md) (7)  
+## [📰 The Noise](./the-noise/index.md) (8)  
+- [2026-04-17 | 📰 ⚡ Global Currents, Echoing Futures 🌍 📰](./the-noise/2026-04-17-global-currents-echoing-futures.md)  
 - [2026-04-16 | 📰 🌪️ Unseen Currents, Emerging Horizons 📰](./the-noise/2026-04-16-unseen-currents-emerging-horizons.md)  
 - [2026-04-15 | 📰 🌪️ Global Currents, Unfolding Narratives 📰](./the-noise/2026-04-15-global-currents-unfolding-narratives.md)  
 - [2026-04-14 | 📰 🌍 Global Currents, Shifting Sands 🌐 📰](./the-noise/2026-04-14-global-currents-shifting-sands.md)  
-- [2026-04-13 | 📰 🌍 Global Currents, Shifting Sands 🌐 📰](./the-noise/2026-04-13-global-currents-shifting-sands.md)  
   
   
-## [🌟 Positivity Bias](./positivity-bias/index.md) (6)  
+## [🌟 Positivity Bias](./positivity-bias/index.md) (7)  
+- [2026-04-17 | 🌟 Innovations in Healing and Community Resilience 🌟](./positivity-bias/2026-04-17-innovations-in-healing-and-community-resilience.md)  
 - [2026-04-16 | 🌟 Hope Blooms: Health, Environment, and Community Flourish 🌟](./positivity-bias/2026-04-16-hope-blooms-health-environment-and-community-flourish.md)  
 - [2026-04-15 | 🌟 Dawn of Progress: Breakthroughs in Health, Environment, and Global Unity 🌟](./positivity-bias/2026-04-15-dawn-of-progress-breakthroughs-in-health-environment-and-global-unity.md)  
 - [2026-04-14 | 🌟 🏥 Medical Marvels and Environmental Victories Reshape Our World 🌟](./positivity-bias/2026-04-14-medical-marvels-and-environmental-victories-reshape-our-world.md)  
-- [2026-04-13 | 🌟 Innovation Accelerates Across Global Health and Environment 🌟](./positivity-bias/2026-04-13-innovation-accelerates-across-global-health-and-environment.md)  
   
   
 ## [🔀 Convergence](./convergence/index.md) (3)  
@@ -69,24 +69,24 @@ updated: 2026-04-16T23:46:12-07:00
   
   
 ## [📚 Books](./books/index.md) (959)  
-- [🪙💯🚀 The $100 Startup: Reinvent the Way You Make a Living, Do What You Love, and Create a New Future](./books/the-100-dollar-startup.md)  
-- [🤖🤖🤖 We Are Legion (We Are Bob)](./books/we-are-legion-we-are-bob.md)  
-- [🇯🇵⚙️📈💯 The Toyota Way: 14 Management Principles from the World's Greatest Manufacturer](./books/the-toyota-way.md)  
-- [🫂🤝🗣️ How To Win Friends And Influence People](./books/how-to-win-friends-and-influence-people.md)  
+- [💰🏭🌍 The Value of Everything: Making and Taking in the Global Economy](./books/the-value-of-everything-making-and-taking-in-the-global-economy.md)  
+- [📉🌎 Less is More: How Degrowth Will Save the World](./books/less-is-more-how-degrowth-will-save-the-world.md)  
+- [🦓 Why Zebras Don't Get Ulcers: The Acclaimed Guide to Stress, Stress-Related Disease, and Coping](./books/why-zebras-dont-get-ulcers.md)  
+- [❓✝️ The God Delusion](./books/the-god-delusion.md)  
   
   
 ## [📺 Videos](./videos/index.md) (762)  
+- [📒 Bullet Journal](./videos/bullet-journal.md)  
 - [🌱🔬👍 Soil Analysis: What Makes Soil Great?](./videos/soil-analysis-what-makes-soil-great.md)  
 - [🔎🗺️✅📍 Site Analysis: Choosing the Right Spot](./videos/site-analysis-choosing-the-right-spot.md)  
 - [🪴🔬❌ Garden Science: Weeding Out the Myths](./videos/garden-science-weeding-out-the-myths.md)  
-- [🕰️🏛️🛑⚡ Trump Is the End of a 100-Year Experiment | Interesting Times with Ross Douthat](./videos/trump-is-the-end-of-a-100-year-experiment-interesting-times-with-ross-douthat.md)  
   
   
 ## [🌌 Topics](./topics/index.md) (91)  
+- [🗣️🗣️ Bilingualism](./topics/bilingualism.md)  
+- [🔄🎯 Kuramoto Model](./topics/kuramoto-model.md)  
 - [❤️‍🩹⚖️🤝👑😇🗽 Moral Foundations Theory](./topics/moral-foundations-theory.md)  
 - [🏦♾️📈💸 Modern Monetary Theory](./topics/modern-monetary-theory.md)  
-- [🤖🦜 Large Language Models](./topics/large-language-models.md)  
-- [🦬🪒 Yak Shaving](./topics/yak-shaving.md)  
   
   
 ## [📄  Articles](./articles/index.md) (84)  
@@ -97,10 +97,10 @@ updated: 2026-04-16T23:46:12-07:00
   
   
 ## [🤖💬 Bot Chats](./bot-chats/index.md) (49)  
+- [📖 Book 🧭 Explorer 3](./bot-chats/book-explorer-3.md)  
+- [✍🏼 Blogiversary 🕯️](./bot-chats/blogiversary.md)  
 - [📖 Book 🧭 Explorer 2](./bot-chats/book-explorer-2.md)  
 - [🕸️🪵🏅 Blogging Success](./bot-chats/blogging-success.md)  
-- [📖 Book 🧭 Explorer 1](./bot-chats/book-explorer-1.md)  
-- [✍🏼 Blogiversary 🕯️](./bot-chats/blogiversary.md)  
   
   
 ## [💾 Software](./software/index.md) (33)  

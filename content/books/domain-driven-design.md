@@ -12,9 +12,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-15T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-04-17T12:25:57Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A minimalist, isometric illustration of a complex, interconnected structural system. The scene features glowing, semi-transparent modular blocks—representing bounded contexts—fitting together like a 3D puzzle. A central, intricate gear mechanism made of soft, warm-toned light flows through the blocks, symbolizing the heart of the software logic. Thin, clean lines connect these elements, suggesting a shared language and communication flow between different parts of the architecture. The background is a clean, deep slate-gray, providing a high-contrast canvas for the vibrant, glowing components. The overall aesthetic is professional, architectural, and modern, emphasizing clarity, structural integrity, and the synthesis of abstract concepts into a cohesive, functional design.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🧩🧱⚙️❤️ Domain-Driven Design: Tackling Complexity in the Heart of Software  
+![books-domain-driven-design](../books-domain-driven-design.jpg)  
 [🛒 Domain-Driven Design: Tackling Complexity in the Heart of Software. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4jBFRMB)  
   
 ## 🤖 AI Summary  

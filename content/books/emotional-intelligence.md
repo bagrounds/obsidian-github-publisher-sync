@@ -9,11 +9,16 @@ tags:
 affiliate link: https://amzn.to/45GkyG9
 updated: 2026-03-11T16:18:39.439Z
 link_analysis_model: gemini-3.1-flash-lite-preview
-link_analysis_time: 2026-04-01T00:00:00Z
+link_analysis_time: 2026-04-17T00:00:00Z
 force_analyze_links: false
+image_date: 2026-04-17T07:40:43Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A stylized human head silhouette, split vertically. One half features intricate, interlocking gears and subtle circuit lines, representing logical thought and IQ. The other half bursts with vibrant, flowing abstract shapes in warm, harmonious colors (reds, oranges, purples, yellows), symbolizing emotions and empathy. From this emotional side, gentle, glowing lines extend outwards, subtly connecting to simplified, silhouetted human figures or hands reaching out, signifying social connection and understanding. A subtle upward-curving arrow or growth motif is integrated into the overall composition, suggesting progress and success. The background is clean and softly gradient.
+link_analysis_version: "2"
 ---
 [Home](../index.md) > [Books](./index.md)  
 # ❤️🧠📈🤔 Emotional Intelligence: Why It Can Matter More Than IQ  
+![books-emotional-intelligence](../books-emotional-intelligence.jpg)  
 [🛒 Emotional Intelligence: Why It Can Matter More Than IQ. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/45GkyG9)  
   
 ## 🤖 AI Summary  

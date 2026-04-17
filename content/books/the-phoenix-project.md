@@ -12,9 +12,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-16T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-04-17T14:39:17Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A high-contrast, cinematic illustration featuring a glowing, stylized phoenix composed of digital code and circuitry rising from the wreckage of a dark, cluttered server room. The phoenix, rendered in vibrant shades of fiery orange and electric blue, ascends toward a clean, organized glass office building visible through a broken wall. Below, the chaotic, tangled mess of server cables and physical hardware—representing technical debt—begins to straighten and align into orderly, glowing fiber-optic paths. The lighting is dramatic, with the phoenix providing a warm, hopeful light against the cool, industrial tones of the background. The composition emphasizes the transition from operational chaos to streamlined, efficient flow, using sharp lines and a sense of upward motion to signify transformation and renewal.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🐦‍🔥💻 The Phoenix Project  
+![books-the-phoenix-project](../books-the-phoenix-project.jpg)  
 [🛒 The Phoenix Project. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4jzdwqd)  
   
 ## 🤖 AI Summary  

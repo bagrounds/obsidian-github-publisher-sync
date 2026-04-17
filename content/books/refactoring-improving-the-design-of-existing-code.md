@@ -11,9 +11,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-16T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-04-17T13:39:47Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A minimalist, high-contrast illustration featuring a messy, tangled knot of colorful electrical wires on one side of a workbench. On the opposite side, the same wires are neatly bundled, color-coded, and organized into straight, parallel lines. In the center, a pair of sleek, metallic precision shears rests on the surface, symbolizing the act of cutting away complexity. The background is a clean, neutral slate-gray with soft, architectural lighting that highlights the transition from chaos to order. The aesthetic is modern, professional, and clean, using a palette of deep navy, muted orange, and crisp white to evoke a sense of technical refinement and clarity.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🗑️✨ Refactoring: Improving the Design of Existing Code  
+![books-refactoring-improving-the-design-of-existing-code](../books-refactoring-improving-the-design-of-existing-code.jpg)  
 [🛒 Refactoring: Improving the Design of Existing Code. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/41BsQMJ)  
   
 ## 📖 Book Report: Refactoring: Improving the Design of Existing Code  

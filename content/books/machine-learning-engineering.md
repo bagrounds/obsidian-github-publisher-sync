@@ -7,8 +7,9 @@ share: true
 CTA: 🤖 Construct intelligence.
 affiliate link: https://amzn.to/4oo9og9
 link_analysis_model: gemini-3.1-flash-lite-preview
-link_analysis_time: 2026-04-02T00:00:00Z
+link_analysis_time: 2026-04-17T00:00:00Z
 force_analyze_links: false
+link_analysis_version: "2"
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🤖⚙️ Machine Learning Engineering  
@@ -64,7 +65,7 @@ force_analyze_links: false
   
 ✨ For those looking to explore adjacent fields and a more hands-on, code-focused approach to machine learning, these books offer valuable and inspiring perspectives.  
   
-* 🐍 **Deep Learning with Python by François Chollet:** ✍️ Written by the creator of the Keras library, this book provides a practical and accessible introduction to deep learning. 💡 It emphasizes intuitive explanations and hands-on examples, making it an excellent resource for those who want to understand the "how" and "why" of deep learning models. 🧠 The book covers the use of pre-trained models and the Keras/TensorFlow ecosystem, which are highly relevant skills for any machine learning practitioner.  
+* 🐍 **[🧠💻🤖 Deep Learning](./deep-learning.md) with Python by François Chollet:** ✍️ Written by the creator of the Keras library, this book provides a practical and accessible introduction to deep learning. 💡 It emphasizes intuitive explanations and hands-on examples, making it an excellent resource for those who want to understand the "how" and "why" of deep learning models. 🧠 The book covers the use of pre-trained models and the Keras/TensorFlow ecosystem, which are highly relevant skills for any machine learning practitioner.  
 * 💻 **Hands-On Machine Learning with Scikit-Learn, Keras & TensorFlow by Aurélien Géron:** 👨‍💻 This book is a highly practical guide that walks readers through building machine learning models using popular Python libraries. ✅ It's an excellent choice for those who learn best by doing and want to gain hands-on experience with real-world applications.  
   
 ## 💬 [Gemini](../software/gemini.md) Prompt (gemini-2.5-pro)  

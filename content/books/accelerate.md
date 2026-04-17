@@ -13,9 +13,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-16T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-04-17T10:36:03Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A high-contrast, minimalist isometric illustration featuring a sleek, glowing digital pipeline flowing from left to right. The pipeline starts as chaotic, tangled grey lines on the left and transforms into a structured, vibrant stream of blue and gold data packets as it passes through a series of glowing geometric nodes representing development, testing, and deployment. Floating above the stream are four distinct, clean charts—a line graph, a bar chart, a speedometer, and a shield icon—representing the four key metrics of performance. The background is a deep, professional matte navy, providing a clean, tech-focused aesthetic that emphasizes clarity, speed, and structural integrity. The overall composition is balanced and modern, conveying scientific precision and organizational acceleration.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🏎️💾 Accelerate: The Science of Lean Software and DevOps: Building and Scaling High Performing Technology Organizations  
+![books-accelerate](../books-accelerate.jpg)  
 [🛒 Accelerate: The Science of Lean Software and DevOps: Building and Scaling High Performing Technology Organizations. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4mFi8h4)  
   
 ## 🤖 AI Summary  

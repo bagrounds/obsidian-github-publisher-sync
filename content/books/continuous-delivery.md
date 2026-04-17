@@ -12,9 +12,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-15T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-04-17T11:25:46Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: "A stylized, isometric illustration of a sleek, automated software pipeline. On the left, a clean, modular building block representing source code enters a series of interconnected glass tunnels. Inside these tunnels, glowing geometric shapes pass through three distinct stations: a laboratory flask symbolizing automated testing, a gear representing configuration management, and a rocket engine indicating deployment. The path flows smoothly toward a vibrant, stylized cloud server glowing in the center-right. The background is a soft, professional gradient of cool blues and teals, providing a high-tech, organized aesthetic. The composition emphasizes efficiency, continuous movement, and a seamless transition from development to production, utilizing clean lines and a modern, minimalist design language."
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🏗️🧪🚀✅ Continuous Delivery: Reliable Software Releases through Build, Test, and Deployment Automation  
+![books-continuous-delivery](../books-continuous-delivery.jpg)  
 [🛒 Continuous Delivery: Reliable Software Releases through Build, Test, and Deployment Automation. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3HmSsG0)  
   
 ## 🤖 AI Summary  

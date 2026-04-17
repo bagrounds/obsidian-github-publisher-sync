@@ -8,11 +8,12 @@ CTA: 🧠 Grasp human behavior.
 affiliate link: https://amzn.to/4fVyAa2
 updated: 2026-03-18T22:45:25.162Z
 force_analyze_links: false
-link_analysis_time: 2026-03-22T06:09:04.728Z
+link_analysis_time: 2026-04-17T00:00:00Z
 link_analysis_model: gemini-3.1-flash-lite-preview
 image_date: 2026-04-15T11:26:49Z
 image_model: "@cf/black-forest-labs/flux-1-schnell"
 image_prompt: A stylized human silhouette, partially transparent, stands centrally. Its head contains a prominent, abstract brain illustration. One half of the brain and body is imbued with soft, warm hues like gold and amber, featuring delicate, glowing neural pathways and subtle, intertwined patterns evoking connection and empathy. The other half transitions into cooler, darker tones of deep blue and violet, with more fragmented, angular neural patterns suggesting conflict or aggression. Around the figure, a faint, swirling helix represents genetics, while subtle, radiating lines hint at environmental and temporal influences, all converging on the central human form. The overall image conveys the intricate balance and interplay of biological factors shaping our best and worst behaviors.
+link_analysis_version: "2"
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 😇😈 Behave: The Biology of Humans at Our Best and Worst  

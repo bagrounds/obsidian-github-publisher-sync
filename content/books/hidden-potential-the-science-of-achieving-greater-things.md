@@ -6,11 +6,12 @@ URL: https://bagrounds.org/books/hidden-potential-the-science-of-achieving-great
 share: true
 affiliate link: https://amzn.to/4kQ8hn9
 link_analysis_model: gemini-3.1-flash-lite-preview
-link_analysis_time: 2026-04-08T00:00:00Z
+link_analysis_time: 2026-04-17T00:00:00Z
 force_analyze_links: false
 image_date: 2026-04-14T06:46:43Z
 image_model: "@cf/black-forest-labs/flux-1-schnell"
 image_prompt: A cinematic, low-angle shot of a single, vibrant green sapling sprouting from a crack in a rugged, dark stone staircase. The stairs represent the journey of growth, leading upward into a soft, ethereal light. Surrounding the staircase, the background is a deep, starry nebula that subtly transitions from dark, muted blues at the base to brilliant, warm golds and oranges at the summit. Floating geometric shapes—partially translucent cubes and spheres—are scattered in mid-air, suggesting construction, scaffolding, and the building of character. The lighting is dramatic and aspirational, with a sharp focus on the delicate leaves of the plant, emphasizing the contrast between the organic process of development and the vast, complex systems of the universe. The overall aesthetic is clean, modern, and inspiring.
+link_analysis_version: "2"
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🙈⚡🔬🌌 Hidden Potential: The Science of Achieving Greater Things  

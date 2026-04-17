@@ -13,9 +13,13 @@ force_analyze_links: false
 link_analysis_time: 2026-04-15T00:00:00Z
 link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_version: "2"
+image_date: 2026-04-17T08:40:42Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A graceful, minimalist illustration of a swan, its long, elegant neck forming a subtle S curve. The swan holds a delicate, antique quill pen in its beak, poised over a pristine, open notebook. The paper in the notebook features faint, precise grid lines or a single, perfectly straight horizontal line, symbolizing structure and clarity. The background is a soft, clean gradient of light blues and whites, evoking a sense of calm and unblemished space. The overall aesthetic is refined and precise.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🦢 The Elements of Style  
+![books-the-elements-of-style](../books-the-elements-of-style.jpg)  
 [🛒 The Elements of Style. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4dNkTcj)  
   
 ## 📚 Book Report: The Elements of Style by William Strunk Jr. and E.B. White  

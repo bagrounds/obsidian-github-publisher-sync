@@ -5,12 +5,13 @@ aliases:
 title: 🧩🔄🧠 Self-Organization
 URL: https://bagrounds.org/topics/self-organization
 link_analysis_model: gemini-3.1-flash-lite-preview
-link_analysis_time: 2026-04-01T00:00:00Z
+link_analysis_time: 2026-04-15T00:00:00Z
 force_analyze_links: false
 image_date: 2026-04-10T08:36:21Z
 image_model: "@cf/black-forest-labs/flux-1-schnell"
 image_prompt: A high-angle, minimalist illustration featuring a swarm of small, glowing geometric shapes—such as triangles and hexagons—in the process of assembling. The scene captures a transition from a disorganized, chaotic cloud on the left side of the frame to a perfectly ordered, symmetrical lattice structure on the right. The color palette uses deep navy and charcoal for the background, contrasted by vibrant, luminous gradients of cyan, magenta, and gold emanating from the shapes. Thin, faint lines of light connect the particles, suggesting an invisible network of interaction and communication. The overall aesthetic is clean, modern, and scientific, evoking a sense of fluid movement, complexity, and the spontaneous emergence of order from entropy.
 updated: 2026-04-10T13:39:18
+link_analysis_version: "2"
 ---
 [Home](../index.md) > [Topics](./index.md)  
 # 🧩🔄🧠 Self-Organization  

@@ -12,9 +12,13 @@ force_analyze_links: false
 link_analysis_time: 2026-04-16T00:00:00Z
 link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_version: "2"
+image_date: 2026-04-17T12:25:54Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A minimalist, isometric illustration featuring a complex, interconnected network of glowing data nodes and server racks arranged in a clean, architectural layout. The nodes are linked by vibrant, translucent conduits representing data flow, creating a sense of organized complexity. The aesthetic is modern and professional, utilizing a sophisticated color palette of deep navy, slate gray, and electric cyan accents. Floating geometric shapes—representing cubes, spheres, and fragmented prisms—symbolize modular data structures. The composition emphasizes stability, scalability, and structural integrity, with soft, ambient lighting highlighting the intersections where data streams converge. The background is a soft, neutral matte gray, ensuring the technical elements stand out with sharp, clean lines and a high-tech, polished finish.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 💾⬆️🛡️ Designing Data-Intensive Applications: The Big Ideas Behind Reliable, Scalable, and Maintainable Systems  
+![books-designing-data-intensive-applications](../books-designing-data-intensive-applications.jpg)  
 [🛒 Designing Data-Intensive Applications: The Big Ideas Behind Reliable, Scalable, and Maintainable Systems. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4jvutSk)  
   
 ## 🤖 AI Summary  

@@ -13,9 +13,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-15T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-04-17T11:25:27Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A macro-style, high-contrast studio photograph featuring a sleek, minimalist workspace. In the center, a messy, tangled knot of colorful Ethernet cables lies on a pristine white desk. A pair of sharp, professional-grade silver scissors is poised to cut through the tangle, with a single, perfectly straight, glowing fiber-optic strand emerging from the mess, symbolizing the transition from chaotic spaghetti code to clean, efficient structure. The lighting is bright and clinical, emphasizing the texture of the wires and the metallic sheen of the scissors. The background is a soft-focus, desaturated office environment, keeping the entire visual narrative focused on the act of refinement and precision.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🧼💾 Clean Code: A Handbook of Agile Software Craftsmanship  
+![books-clean-code](../books-clean-code.jpg)  
 [🛒 Clean Code: A Handbook of Agile Software Craftsmanship. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3ZHMwO2)  
   
 ## 📖 Book Report: Clean Code: A Handbook of Agile Software Craftsmanship  

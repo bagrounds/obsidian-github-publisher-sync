@@ -12,9 +12,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-15T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-04-17T14:39:08Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A high-contrast, minimalist illustration depicting a large, complex clockwork mechanism. A single, small silhouette of a person stands in the center, overwhelmed by an intricate tangle of oversized, interlocking brass gears and tangled golden threads. Some gears are misaligned and stuck, while others spin in conflicting directions. The background is a clean, muted slate gray, emphasizing the golden metallic textures of the machinery. The imagery conveys the tension between human effort and the exponential difficulty of managing large-scale systems, using geometric precision to represent the mythical nature of project estimation and the chaos of communication overhead. No characters or text appear in the scene.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🦄👤🗓️ The Mythical Man-Month: Essays on Software Engineering  
+![books-the-mythical-man-month](../books-the-mythical-man-month.jpg)  
 [🛒 The Mythical Man-Month: Essays on Software Engineering. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4dKRNua)  
   
 ## 📚 The Mythical Man-Month: A Summary  

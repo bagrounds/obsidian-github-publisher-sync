@@ -6,11 +6,12 @@ title: 💾✍️🌋⚫️ Obsidian
 URL: https://bagrounds.org/software/obsidian
 updated: 2026-04-13T23:28:27
 link_analysis_model: gemini-3.1-flash-lite-preview
-link_analysis_time: 2026-04-03T00:00:00Z
+link_analysis_time: 2026-04-15T00:00:00Z
 force_analyze_links: false
 image_date: 2026-04-11T01:40:11Z
 image_model: "@cf/black-forest-labs/flux-1-schnell"
 image_prompt: A high-contrast, minimalist digital illustration featuring a glowing, interconnected network of nodes floating in a dark, obsidian-like void. The nodes, representing individual thoughts or notes, are linked by slender, luminous lines that form a complex, organic web structure. The color palette centers on deep charcoal and midnight black backgrounds, contrasted by vibrant, electric-violet and cyan light emanating from the center of the cluster. The composition is expansive and airy, suggesting depth and infinite growth. In the foreground, a single, stylized obsidian gemstone sits partially submerged, with its sharp, crystalline facets refracting the light from the network above, symbolizing the intersection of solid, local data and fluid, interconnected knowledge. The overall aesthetic is clean, modern, and sophisticated, evoking a sense of clarity and intellectual discovery.
+link_analysis_version: "2"
 ---
 [Home](../index.md) > [Software](./index.md)  
 # 💾✍️🌋⚫️ Obsidian  

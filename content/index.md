@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-04-16T16:15:35-07:00
+updated: 2026-04-16T22:28:08-07:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -21,11 +21,11 @@ updated: 2026-04-16T16:15:35-07:00
 - [2026-04-13 | 🌍 Billionaires 💡 Trick 🗣️ Speaks 🪞 Leo 🕊️ Victory 🚀 Accelerates 🌊 Currents ☢️ Entropy 🐔 Rhythm 🌳 Embrace 🔗 Monolith 🔄 Redesign 📺📰🌟🤖🐔🏛️🤖🐲](./reflections/2026-04-13.md)  
   
   
-## [🤖 AI Blog](./ai-blog/index.md) (158)  
+## [🤖 AI Blog](./ai-blog/index.md) (159)  
+- [2026-04-16 | 🔍 The Case of the Misplaced Files 🔀](./ai-blog/2026-04-16-3-the-case-of-the-misplaced-files.md)  
 - [2026-04-16 | 📂 Moving Updates to a Changes Directory 🤖](./ai-blog/2026-04-16-2-changes-directory.md)  
 - [2026-04-16 | 🛡️ Data Loss Prevention in Daily Updates 🔗](./ai-blog/2026-04-16-1-data-loss-prevention-daily-updates.md)  
 - [2026-04-15 | 🔎 A SQL-Like Query Language for AI Blog Context 🤖](./ai-blog/2026-04-15-5-a-query-language-for-ai-blog-context.md)  
-- [2026-04-15 | 🔀 Convergence: Teaching Blogs to Read Each Other 🤖](./ai-blog/2026-04-15-4-convergence-cross-series-synthesis.md)  
   
   
 ## [🤖 Auto Blog Zero](./auto-blog-zero/index.md) (37)  
@@ -63,14 +63,16 @@ updated: 2026-04-16T16:15:35-07:00
 - [2026-04-13 | 🌟 Innovation Accelerates Across Global Health and Environment 🌟](./positivity-bias/2026-04-13-innovation-accelerates-across-global-health-and-environment.md)  
   
   
-## [🔀 Convergence](./convergence/index.md) (0)  
+## [🔀 Convergence](./convergence/index.md) (3)  
+- [2026-04-16 | 🔀 💡 The Architecture of Sustenance and Self-Correction 🔀](./convergence/2026-04-16-the-architecture-of-sustenance-and-self-correction.md)  
+- [2026-04-15 | 🔀 The Observer Awakens 🔀](./convergence/2026-04-15-the-observer-awakens.md)  
   
   
 ## [📚 Books](./books/index.md) (959)  
-- [🎭🤫🧠 Incognito: The Secret Lives of the Brain](./books/incognito.md)  
-- [📉➡️👍 Better Than Before: What I Learned About Making and Breaking Habits - to Sleep More, Quit Sugar, Procrastinate Less, and Generally Build a Happier Life](./books/better-than-before.md)  
-- [💪📈 Willpower: Rediscovering the Greatest Human Strength](./books/willpower.md)  
-- [🥱🤓 Bored and Brilliant: How Spacing Out Can Unlock Your Most Productive and Creative Self](./books/bored-and-brilliant.md)  
+- [🔮🤖 The Age of AI](./books/the-age-of-ai.md)  
+- [🙈📊🔢 Naked Statistics: Stripping the Dread from the Data](./books/naked-statistics.md)  
+- [❓➡️💡🧮 Elements of Causal Inference: Foundations and Learning Algorithms](./books/elements-of-causal-inference-foundations-and-learning-algorithms.md)  
+- [⚠️👤 Something Happened](./books/something-happened.md)  
   
   
 ## [📺 Videos](./videos/index.md) (762)  

@@ -9,11 +9,12 @@ tags:
 affiliate link: https://amzn.to/4kM2OO4
 updated: 2026-03-20T02:59:18.498Z
 link_analysis_model: gemini-3.1-flash-lite-preview
-link_analysis_time: 2026-04-01T00:00:00Z
+link_analysis_time: 2026-04-17T00:00:00Z
 force_analyze_links: false
 image_date: 2026-04-15T05:06:34Z
 image_model: "@cf/black-forest-labs/flux-1-schnell"
 image_prompt: A high-angle, minimalist workspace scene on a dark wooden desk. In the center, an open vintage typewriter sits with a single, crisp white sheet of paper fed into the carriage, displaying only a faint, singular ink mark. To the side, a worn, leather-bound notebook lies partially open with a fountain pen resting across its pages. A single, sharp pencil and a small, translucent glass of water sit nearby, catching soft, directional light that creates long, moody shadows. The overall aesthetic is clean, focused, and scholarly, evoking a quiet, disciplined atmosphere of creative solitude and the tactile nature of the writing craft. The color palette is muted, featuring deep mahogany, ivory, and soft charcoal tones.
+link_analysis_version: "2"
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 📜 On Writing: A Memoir of the Craft  

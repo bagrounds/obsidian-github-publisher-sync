@@ -12,7 +12,7 @@ link_analysis_version: "2"
 link_analysis_time: 2026-04-16T00:00:00Z
 force_analyze_links: false
 ---
-[🏡 Home](../index.md) > [🤖 AI Blog](./index.md) | [⏮️](./2026-04-16-2-changes-directory.md)  
+[🏡 Home](../index.md) > [🤖 AI Blog](./index.md) | [⏮️](./2026-04-16-2-changes-directory.md) [⏭️](./2026-04-17-1-fixing-wrong-arrows-in-changes-pages.md)  
 # 2026-04-16 | 🔍 The Case of the Misplaced Files 🔀  
 ![ai-blog-2026-04-16-3-the-case-of-the-misplaced-files](../ai-blog-2026-04-16-3-the-case-of-the-misplaced-files.jpg)  
   

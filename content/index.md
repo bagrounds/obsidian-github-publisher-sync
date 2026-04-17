@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-04-16T22:28:08-07:00
+updated: 2026-04-16T23:46:12-07:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -15,7 +15,7 @@ updated: 2026-04-16T22:28:08-07:00
 💬 Comment on any page with your GitHub account.  
   
 ## [🪞 Reflections](./reflections/index.md) ~ Blog (518)  
-- [2026-04-16](./reflections/2026-04-16.md)  
+- [2026-04-16 | 🌟 Losing 💯 🧪 Weeding 📍 Spot 🤔 Great 🌸 Horizons 🐔 Pace 🤖 Mirror 🏛️ Liberator 🔀 Sustenance 🔗 Updates 🤖 Changes 🔀 Misplaced 📺🌟📰🐔🤖🏛️🔀🤖🐲](./reflections/2026-04-16.md)  
 - [2026-04-15 | 🤔 Hard 🌟 Progress 📰 Currents 🤖 Ghost 🌐 Buttons 🔧 Cleanup 🤖 Parrots 🐔 Call 🏛️ Good 📺🌟📰🤖🐔🏛️🤖🐲](./reflections/2026-04-15.md)  
 - [2026-04-14 | 🌍 Hungary’s 🇺🇸 America's 🗣️ Chat 🌟 Reshape 🌐 Sands 🤖 Architecture 🏛️ Goods 🐔 Loos 🧩 Fixing 🧹 Removing 📣 Buttons 📰📺🌟🤖🏛️🐔🤖🐲](./reflections/2026-04-14.md)  
 - [2026-04-13 | 🌍 Billionaires 💡 Trick 🗣️ Speaks 🪞 Leo 🕊️ Victory 🚀 Accelerates 🌊 Currents ☢️ Entropy 🐔 Rhythm 🌳 Embrace 🔗 Monolith 🔄 Redesign 📺📰🌟🤖🐔🏛️🤖🐲](./reflections/2026-04-13.md)  
@@ -69,10 +69,10 @@ updated: 2026-04-16T22:28:08-07:00
   
   
 ## [📚 Books](./books/index.md) (959)  
-- [🔮🤖 The Age of AI](./books/the-age-of-ai.md)  
-- [🙈📊🔢 Naked Statistics: Stripping the Dread from the Data](./books/naked-statistics.md)  
-- [❓➡️💡🧮 Elements of Causal Inference: Foundations and Learning Algorithms](./books/elements-of-causal-inference-foundations-and-learning-algorithms.md)  
-- [⚠️👤 Something Happened](./books/something-happened.md)  
+- [🪙💯🚀 The $100 Startup: Reinvent the Way You Make a Living, Do What You Love, and Create a New Future](./books/the-100-dollar-startup.md)  
+- [🤖🤖🤖 We Are Legion (We Are Bob)](./books/we-are-legion-we-are-bob.md)  
+- [🇯🇵⚙️📈💯 The Toyota Way: 14 Management Principles from the World's Greatest Manufacturer](./books/the-toyota-way.md)  
+- [🫂🤝🗣️ How To Win Friends And Influence People](./books/how-to-win-friends-and-influence-people.md)  
   
   
 ## [📺 Videos](./videos/index.md) (762)  

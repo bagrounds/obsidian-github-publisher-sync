@@ -12,7 +12,7 @@ link_analysis_version: "2"
 link_analysis_time: 2026-04-16T00:00:00Z
 force_analyze_links: false
 ---
-[🏡 Home](../index.md) > [🤖 AI Blog](./index.md) | [⏮️](./2026-04-16-1-data-loss-prevention-daily-updates.md)  
+[🏡 Home](../index.md) > [🤖 AI Blog](./index.md) | [⏮️](./2026-04-16-1-data-loss-prevention-daily-updates.md) [⏭️](./2026-04-16-3-the-case-of-the-misplaced-files.md)  
 # 2026-04-16 | 📂 Moving Updates to a Changes Directory 🤖  
 ![ai-blog-2026-04-16-2-changes-directory](../ai-blog-2026-04-16-2-changes-directory.jpg)  
   

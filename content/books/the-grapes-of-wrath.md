@@ -8,11 +8,12 @@ CTA: 🗺️ Journey through hardship and hope.
 affiliate link: https://amzn.to/49uywwn
 updated: 2026-03-25T14:28:55.660Z
 force_analyze_links: false
-link_analysis_time: 2026-03-25T22:13:31.999Z
+link_analysis_time: 2026-04-16T00:00:00Z
 link_analysis_model: gemini-3.1-flash-lite-preview
 image_date: 2026-04-14T07:38:21Z
 image_model: "@cf/black-forest-labs/flux-1-schnell"
 image_prompt: A sepia-toned illustration depicts a desolate Dust Bowl landscape. Cracked, dry earth stretches towards a hazy horizon under an oppressive, muted sky, tinged with distant dust. In the foreground, a gnarled, struggling grape vine with a few withered, dark grapes clings to the parched ground, its roots exposed. A small, silhouetted family—perhaps three figures—walks away from the viewer, their backs to the hardship, towards a faint, almost illusory patch of green on the distant horizon. The scene evokes immense struggle and perseverance against overwhelming odds.
+link_analysis_version: "2"
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🍇😡 The Grapes of Wrath  

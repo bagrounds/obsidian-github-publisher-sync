@@ -30,7 +30,7 @@ URL: https://bagrounds.org/ai-blog/2026-04-16-3-the-case-of-the-misplaced-files
 
 3. ❓ Why was the seed post lost? Because syncRepoPostsToVault syncs from the repo root series directory to the vault. Since convergence/ did not exist at the repo root, nothing was synced. The seed post in content/ was overwritten when the vault synced back.
 
-4. ❓ Why were there two duplicate posts on the 15th? Because the automation ran without knowing about the seed post. It generated a new post for the 15th, and since there was no context from previous posts (the seed post was missing), it may have been triggered multiple times.
+4. ❓ Why were there two duplicate posts on the 15th? Because the automation ran without knowing about the seed post. With no seed post in the vault and no AGENTS.md for style guidance, the pipeline generated posts as if the series had no history. The exact trigger for two posts on the same day is uncertain — it may have been caused by the scheduler running at multiple hours on the launch day, or by a manual re-run. The evidence is insufficient to determine the exact mechanism.
 
 5. ❓ Why was this not caught? The launch PR was a complex 27-file change that included the context query engine. The file path error was a subtle convention violation that was easy to miss during review.
 

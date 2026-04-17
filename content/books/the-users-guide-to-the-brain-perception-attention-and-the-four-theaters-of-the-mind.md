@@ -7,8 +7,9 @@ share: true
 affiliate link: https://amzn.to/44ZdPaa
 CTA: Understand your brain.
 link_analysis_model: gemini-3.1-flash-lite-preview
-link_analysis_time: 2026-04-08T00:00:00Z
+link_analysis_time: 2026-04-17T00:00:00Z
 force_analyze_links: false
+link_analysis_version: "2"
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🧠📖 A User's Guide to the Brain: Perception, Attention, and the Four Theaters of the Brain  

@@ -60,7 +60,7 @@
 | 🐔 chickie-loo | 🐔 | 7 AM | ChickieLoo | bagrounds.org/chickie-loo |
 | 🏛️ systems-for-public-good | 🏛️ | 9 AM | bagrounds | bagrounds.org/systems-for-public-good |
 | 🌟 positivity-bias | 🌟 | 6 AM | bagrounds | bagrounds.org/positivity-bias |
-| 🔀 convergence | 🔀 | 10 AM | bagrounds | bagrounds.org/convergence |
+| 🔀 convergence | 🔀 | 4 PM | bagrounds | bagrounds.org/convergence |
 
 📌 Each series also defines a `navLink` in wikilink format for breadcrumb navigation.
 📦 `BACKFILL_CONTENT_IDS` combines all series IDs with `reflections` and `ai-blog` for indexing operations.

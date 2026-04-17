@@ -77,7 +77,7 @@
 | 7 | 🐔 Chickie Loo | 🐣 AI blog post with chicken-keeping personality |
 | 8 | 🤖 Auto Blog Zero | 📝 AI blog post based on reflections and discussions |
 | 9 | 🏛️ Systems for Public Good | 🏛️ AI blog with Google Search grounding for current events |
-| 10 | 🔀 Convergence | 🔀 AI cross-series synthesis — reads all other series and finds emergent themes |
+| 16 | 🔀 Convergence | 🔀 AI cross-series synthesis — reads all other series and finds emergent themes |
 | 23 | 🖼️ Backfill Blog Images | 🔍 Generate missing cover images for all blog posts |
 | 1 | 🔗 Internal Linking | 📥 BFS-driven wikilink insertion in Obsidian vault |
 | Even hours | 📢 Social Posting | 📱 Discover and post unposted content to X/Bluesky/Mastodon |

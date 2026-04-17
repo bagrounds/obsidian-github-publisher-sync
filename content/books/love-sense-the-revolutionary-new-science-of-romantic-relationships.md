@@ -9,9 +9,13 @@ updated: 2026-03-12T14:19:45.210Z
 link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-02T00:00:00Z
 force_analyze_links: false
+image_date: 2026-04-17T01:42:04Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A clean, minimalist illustration featuring a stylized human brain on the left and a glowing, anatomical heart on the right. Thin, elegant golden lines connect the two organs, weaving together to form a soft, glowing knot in the center space. The background is a soft, warm gradient of cream and muted peach, evoking a sense of calm and clarity. The art style is modern and clean, utilizing delicate line work and gentle, diffused lighting to symbolize the intersection of neurobiology and emotional intimacy. No background clutter—just the two organs in harmony, representing the scientific logic of human connection.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # ❤️🧠 Love Sense: The Revolutionary New Science of Romantic Relationships  
+![books-love-sense-the-revolutionary-new-science-of-romantic-relationships](../books-love-sense-the-revolutionary-new-science-of-romantic-relationships.jpg)  
 [🛒 Love Sense: The Revolutionary New Science of Romantic Relationships. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4ktDD3c)  
   
 ## 📖 Book Report: Love Sense: The Revolutionary New Science of Romantic Relationships  

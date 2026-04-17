@@ -9,7 +9,7 @@ import System.Directory (createDirectoryIfMissing)
 import System.FilePath ((</>))
 import System.IO.Temp (withSystemTempDirectory)
 import Test.Tasty (TestTree, testGroup)
-import Test.Tasty.HUnit (assertEqual, assertBool, testCase)
+import Test.Tasty.HUnit (assertEqual, assertBool, testCase, (@?=))
 import Test.Tasty.QuickCheck (testProperty)
 import qualified Test.Tasty.QuickCheck as QC
 
@@ -20,7 +20,55 @@ import Automation.TestGenerators (testTitle, testRelativePath)
 tests :: TestTree
 tests = testGroup "DailyUpdates"
   [ addUpdateLinksTests
+  , buildChangesPageContentTests
+  , addChangesForwardLinkTests
   , addUpdateLinksToReflectionTests
+  ]
+
+buildChangesPageContentTests :: TestTree
+buildChangesPageContentTests = testGroup "buildChangesPageContent"
+  [ testCase "uses correct back marker emoji when previous date provided" $
+      let content = buildChangesPageContent (fromGregorian 2026 4 2) (Just "2026-04-01")
+      in do
+        assertBool "contains ⏮️" (T.isInfixOf "⏮️" content)
+        assertBool "links to previous changes date" (T.isInfixOf "[[changes/2026-04-01|⏮️]]" content)
+  , testCase "no back link when no previous date" $
+      let content = buildChangesPageContent (fromGregorian 2026 4 1) Nothing
+      in assertBool "no back marker" (not (T.isInfixOf "⏮️" content))
+  ]
+
+addChangesForwardLinkTests :: TestTree
+addChangesForwardLinkTests = testGroup "addChangesForwardLink"
+  [ testCase "adds forward link after existing back link" $
+      let content = "[[index|Home]] > [[changes/index|Changes]] | [[reflections/2026-04-01|\129694 2026-04-01]] | [[changes/2026-03-31|⏮️]]\n# 2026-04-01"
+          result = addChangesForwardLink content "2026-04-02"
+      in do
+        assertBool "contains ⏭️" (T.isInfixOf "⏭️" result)
+        assertBool "links to target date" (T.isInfixOf "[[changes/2026-04-02|⏭️]]" result)
+  , testCase "does not add duplicate forward link" $
+      let content = "[[changes/2026-03-31|⏮️]] [[changes/2026-04-02|⏭️]]\n# Post"
+          result = addChangesForwardLink content "2026-04-03"
+      in result @?= content
+  , testCase "adds forward link when no back link present" $
+      let content = "[[index|Home]] > [[changes/index|Changes]]\n# Post"
+          result = addChangesForwardLink content "2026-04-02"
+      in do
+        assertBool "contains ⏭️" (T.isInfixOf "⏭️" result)
+        assertBool "links to target date" (T.isInfixOf "[[changes/2026-04-02|⏭️]]" result)
+  , testProperty "addChangesForwardLink is idempotent" $
+      \(QC.ASCIIString dateStr) ->
+        let date = T.pack dateStr
+            content = "nav | [[changes/prev|⏮️]]\n# Post"
+            once = addChangesForwardLink content date
+            twice = addChangesForwardLink once date
+        in once == twice
+  , testProperty "addChangesForwardLink is idempotent without back link" $
+      \(QC.ASCIIString dateStr) ->
+        let date = T.pack dateStr
+            content = "[[index|Home]] > [[changes/index|Changes]]\n# Post"
+            once = addChangesForwardLink content date
+            twice = addChangesForwardLink once date
+        in once == twice
   ]
 
 addUpdateLinksTests :: TestTree
@@ -588,8 +636,8 @@ addUpdateLinksToReflectionTests = testGroup "addUpdateLinksToReflection"
                [UpdateLink (testRelativePath "page2.md") (testTitle "Page 2") [ImageAdded]]
 
         prevContent <- TIO.readFile (tmpDir </> "changes" </> "2026-03-27.md")
-        assertBool "previous page has forward link" (T.isInfixOf "\11157\65039" prevContent)
+        assertBool "previous page has forward link" (T.isInfixOf "⏭️" prevContent)
 
         nextContent <- TIO.readFile (tmpDir </> "changes" </> "2026-03-28.md")
-        assertBool "next page has backward link" (T.isInfixOf "\11140\65039" nextContent)
+        assertBool "next page has backward link" (T.isInfixOf "⏮️" nextContent)
   ]

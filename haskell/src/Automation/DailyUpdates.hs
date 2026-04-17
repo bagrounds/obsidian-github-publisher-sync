@@ -31,7 +31,7 @@ import Automation.PacificTime (formatDay)
 import Automation.Platform (Platform (..), updatesSectionHeader)
 import Automation.RelativePath (RelativePath, unRelativePath)
 import Automation.Title (Title, unTitle)
-import Automation.Wikilink (formatWikilink)
+import Automation.Wikilink (formatWikilink, backMarker, addForwardNavLink)
 
 -- | Types of updates that can be made to a page
 data UpdateDetail
@@ -430,7 +430,7 @@ replaceUpdatesSection content newSection =
 buildChangesPageContent :: Day -> Maybe Text -> Text
 buildChangesPageContent date previousDate =
   let dateText = formatDay date
-      backLink = maybe "" (\pd -> " | " <> formatWikilink ("changes/" <> pd) "\11140\65039") previousDate
+      backLink = maybe "" (\pd -> " | " <> formatWikilink ("changes/" <> pd) backMarker) previousDate
   in T.intercalate "\n"
     [ "---"
     , "share: true"
@@ -466,15 +466,7 @@ buildChangesIndexContent =
     ]
 
 addChangesForwardLink :: Text -> Text -> Text
-addChangesForwardLink content targetDate =
-  let forwardLink = formatWikilink ("changes/" <> targetDate) "\11157\65039"
-  in if T.isInfixOf "\11157\65039" content
-    then content
-    else if T.isInfixOf "\11140\65039]]" content
-      then T.replace "\11140\65039]]" ("\11140\65039]] " <> forwardLink) content
-      else if T.isInfixOf "Changes]]" content
-        then T.replace "Changes]]" ("Changes]]" <> " | " <> forwardLink) content
-        else content
+addChangesForwardLink = addForwardNavLink "changes" "Changes]]"
 
 findPreviousChangesDate :: FilePath -> Text -> IO (Maybe Text)
 findPreviousChangesDate changesDir today = do

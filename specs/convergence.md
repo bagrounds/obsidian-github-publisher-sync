@@ -36,7 +36,7 @@
 - 🏷️ name is Convergence.
 - 🏷️ icon is the 🔀 emoji.
 - 🏷️ priorityUser is bagrounds.
-- ⏰ scheduleHourPacific is 10 (generates at 10 AM Pacific time).
+- ⏰ scheduleHourPacific is 16 (generates at 4 PM Pacific time).
 - 🤖 models is gemini-2.5-flash with gemini-2.5-flash-lite and gemini-3.1-flash-lite-preview as fallbacks.
 - 🗂️ contextSources has two queries: one reading from the convergence directory with limit 7, and one reading from the five other series directories with limitPerSource 1.
 
@@ -50,7 +50,7 @@
 
 ## 📅 Schedule
 
-⏰ Convergence generates daily at 10:00 AM Pacific time. 🔀 It is scheduled after most other series (6 through 9 AM) to ensure fresh cross-series context is available.
+⏰ Convergence generates daily at 4:00 PM Pacific time. 🔀 It is scheduled after most other series (6 through 9 AM) to ensure fresh cross-series context is available.
 
 ## 📝 Editorial Standards
 

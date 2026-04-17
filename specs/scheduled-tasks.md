@@ -66,7 +66,7 @@ Pacific before making decisions via `nowPacificHour()`.
 | 7 AM | `blog-series:chickie-loo` | 🐔 Chickie Loo daily post |
 | 8 AM | `blog-series:auto-blog-zero` | 🤖 Auto Blog Zero daily post |
 | 9 AM | `blog-series:systems-for-public-good` | 🏛️ Systems for Public Good daily post |
-| 10 AM | `blog-series:convergence` | 🔀 Convergence cross-series synthesis post |
+| 4 PM | `blog-series:convergence` | 🔀 Convergence cross-series synthesis post |
 
 ### 🪞 Reflection & Fiction — "At or After" Scheduling
 
@@ -104,7 +104,7 @@ Pacific before making decisions via `nowPacificHour()`.
 
 🔒 chickie-loo and auto-blog-zero are restricted to Gemini 3+ models for highest quality blog posts.
 🌐 the-noise, systems-for-public-good, positivity-bias, and convergence lead with gemini-2.5-flash because they need Google Search grounding (free tier, 500 RPD) to reference current events. Grounding is not available on the free tier for Gemini 3+ models.
-🔀 convergence runs at 10 AM to ensure all other series have fresh posts available for cross-series context.
+🔀 convergence runs at 4 PM to ensure all other series have fresh posts available for cross-series context.
 ⚠️ Grounding with Google Search is not available on the free tier for 3+ models.
 
 🔄 The `BLOG_GEMINI_MODEL` GitHub variable prepends to the chain when set.

@@ -31,7 +31,7 @@ import Automation.PacificTime (formatDay)
 import Automation.Platform (Platform (..), updatesSectionHeader)
 import Automation.RelativePath (RelativePath, unRelativePath)
 import Automation.Title (Title, unTitle)
-import Automation.Wikilink (formatWikilink, backMarker, addForwardNavLink)
+import Automation.Wikilink (formatWikilink, NavigableDirectory (..), directoryIndexLink, buildNavBackLink, insertForwardNavLink)
 
 -- | Types of updates that can be made to a page
 data UpdateDetail
@@ -430,7 +430,7 @@ replaceUpdatesSection content newSection =
 buildChangesPageContent :: Day -> Maybe Text -> Text
 buildChangesPageContent date previousDate =
   let dateText = formatDay date
-      backLink = maybe "" (\pd -> " | " <> formatWikilink ("changes/" <> pd) backMarker) previousDate
+      backLink = maybe "" (\pd -> " | " <> buildNavBackLink Changes pd) previousDate
   in T.intercalate "\n"
     [ "---"
     , "share: true"
@@ -439,7 +439,7 @@ buildChangesPageContent date previousDate =
     , "title: " <> quoteYamlValue dateText
     , "URL: " <> quoteYamlValue ("https://bagrounds.org/changes/" <> dateText)
     , "---"
-    , formatWikilink "index" "Home" <> " > " <> formatWikilink "changes/index" "Changes" <> " | " <> formatWikilink ("reflections/" <> dateText) ("\129694 " <> dateText) <> backLink
+    , formatWikilink "index" "Home" <> " > " <> directoryIndexLink Changes <> " | " <> formatWikilink ("reflections/" <> dateText) ("\129694 " <> dateText) <> backLink
     , "# " <> dateText
     , ""
     ]
@@ -466,7 +466,7 @@ buildChangesIndexContent =
     ]
 
 addChangesForwardLink :: Text -> Text -> Text
-addChangesForwardLink = addForwardNavLink "changes" "Changes]]"
+addChangesForwardLink = insertForwardNavLink Changes
 
 findPreviousChangesDate :: FilePath -> Text -> IO (Maybe Text)
 findPreviousChangesDate changesDir today = do

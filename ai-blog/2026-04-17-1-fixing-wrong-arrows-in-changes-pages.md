@@ -30,29 +30,29 @@ URL: https://bagrounds.org/ai-blog/2026-04-17-1-fixing-wrong-arrows-in-changes-p
 
 ## 🛠️ The Fix
 
-📦 Three changes were made to eliminate the bug and prevent recurrence.
+📦 The fix introduced a domain-typed abstraction and decomposed the logic into small, principled functions.
 
-### 🏷️ Shared Constants
+### 🏷️ NavigableDirectory ADT
 
-🔤 Two constants were added to the Wikilink module, backMarker and forwardMarker, defining the canonical navigation emojis in exactly one place. Every module that needs these emojis now imports them rather than hardcoding Unicode values.
+🔒 A NavigableDirectory algebraic data type was added to the Wikilink module with two constructors, Reflections and Changes. This models the closed set of directories that have chronological pages with forward and backward navigation. Internal functions derive the directory path and display name from each constructor, eliminating raw Text parameters.
 
-### 🧩 Shared Forward Link Insertion
+### 🔗 Domain-Specific Link Builders
 
-🔧 A new addForwardNavLink function was added to Wikilink, parameterized by directory name and fallback marker text. This function encapsulates the three-step insertion logic that both reflections and changes pages share: skip if forward link already exists, append after a back link if present, or append after the nav marker as a last resort.
+🧱 Three functions build navigation wikilinks from the domain type. The directoryIndexLink function constructs the index page wikilink, such as turning Reflections into the formatted link pointing to reflections slash index with display name Reflections. The buildNavBackLink and buildNavForwardLink functions each take a NavigableDirectory and a date, producing the properly formatted back or forward navigation wikilink using the canonical marker emoji.
 
-🪞 The DailyReflection module's addForwardLink now delegates to addForwardNavLink with the reflections directory and the Reflections index wikilink as its fallback marker.
+### 🧩 Declarative Forward Link Insertion
 
-📂 The DailyUpdates module's addChangesForwardLink delegates to the same shared function with the changes directory and the Changes closing bracket as its fallback marker.
+🔧 The insertForwardNavLink function replaces the old imperative conditional chain. It takes a NavigableDirectory, the page content, and a target date. A guard clause checks idempotency by looking for the forward marker. The core logic uses the Alternative pattern with Maybe to express insertion priority: try inserting after an existing back link first, then fall back to inserting after the directory index link. Two focused helper functions, insertAfterBackLink and insertAfterAnchor, each return Nothing when their anchor is absent, enabling clean composition with the Alternative operator.
 
-### 🔧 Back Link Fix
+🪞 The DailyReflection module now simply defines addForwardLink as insertForwardNavLink Reflections, and buildReflectionContent uses buildNavBackLink Reflections and directoryIndexLink Reflections instead of hand-assembled strings.
 
-⏮️ The buildChangesPageContent function was updated to use the backMarker constant instead of the wrong codepoint, ensuring new changes pages are created with the correct back arrow.
+📂 The DailyUpdates module defines addChangesForwardLink as insertForwardNavLink Changes, and buildChangesPageContent uses the same domain-typed builders.
 
 ## 📊 Testing
 
-🧪 Fifteen new tests were added, bringing the total from 1857 to 1872.
+🧪 Twenty-three new tests were added, bringing the total from 1857 to 1880.
 
-📦 The Wikilink module gained eight new tests: two verifying the marker constants match the expected emojis, two confirming buildBackLink and buildForwardLink use the markers, three exercising addForwardNavLink scenarios (after back link, no duplicates, after fallback marker), and one property test for idempotency.
+📦 The Wikilink module gained fourteen new tests: two verifying the marker constants match the expected emojis, two confirming buildBackLink and buildForwardLink use the markers, six testing the NavigableDirectory builders for both Reflections and Changes (directoryIndexLink, buildNavBackLink, buildNavForwardLink), and four exercising insertForwardNavLink scenarios including a Changes-specific test and two property tests for idempotency across both directories.
 
 📂 The DailyUpdates module gained seven new tests: two for buildChangesPageContent (correct back emoji present and absent), three for addChangesForwardLink (after back link, no duplicates, after fallback marker), and two property tests for idempotency.
 

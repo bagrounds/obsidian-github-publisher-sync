@@ -8,7 +8,7 @@ import Test.Tasty.QuickCheck (testProperty)
 import qualified Test.QuickCheck as QC
 
 import Automation.BlogSeriesConfig (BlogSeriesConfig (..))
-import Automation.Wikilink (formatWikilink, buildBackLink, buildForwardLink, backMarker, forwardMarker, addForwardNavLink)
+import Automation.Wikilink (formatWikilink, buildBackLink, buildForwardLink, backMarker, forwardMarker, NavigableDirectory (..), directoryIndexLink, buildNavBackLink, buildNavForwardLink, insertForwardNavLink)
 
 tests :: TestTree
 tests = testGroup "Wikilink"
@@ -16,7 +16,8 @@ tests = testGroup "Wikilink"
   , buildBackLinkTests
   , buildForwardLinkTests
   , markerTests
-  , addForwardNavLinkTests
+  , navigableDirectoryTests
+  , insertForwardNavLinkTests
   , propertyTests
   ]
 
@@ -86,30 +87,59 @@ markerTests = testGroup "navigation markers"
       in assertBool "contains forwardMarker" (T.isInfixOf forwardMarker result)
   ]
 
-addForwardNavLinkTests :: TestTree
-addForwardNavLinkTests = testGroup "addForwardNavLink"
-  [ testCase "adds forward link after existing back link" $
-      let content = "[[index|Home]] > [[test/index|Test]] | [[test/2026-03-31|⏮️]]\n# Post"
-          result = addForwardNavLink "test" "[[test/index|Test]]" content "2026-04-02"
+navigableDirectoryTests :: TestTree
+navigableDirectoryTests = testGroup "NavigableDirectory"
+  [ testCase "directoryIndexLink Reflections" $
+      directoryIndexLink Reflections @?= "[[reflections/index|Reflections]]"
+  , testCase "directoryIndexLink Changes" $
+      directoryIndexLink Changes @?= "[[changes/index|Changes]]"
+  , testCase "buildNavBackLink Reflections" $
+      buildNavBackLink Reflections "2026-04-01" @?= "[[reflections/2026-04-01|⏮️]]"
+  , testCase "buildNavBackLink Changes" $
+      buildNavBackLink Changes "2026-04-01" @?= "[[changes/2026-04-01|⏮️]]"
+  , testCase "buildNavForwardLink Reflections" $
+      buildNavForwardLink Reflections "2026-04-02" @?= "[[reflections/2026-04-02|⏭️]]"
+  , testCase "buildNavForwardLink Changes" $
+      buildNavForwardLink Changes "2026-04-02" @?= "[[changes/2026-04-02|⏭️]]"
+  ]
+
+insertForwardNavLinkTests :: TestTree
+insertForwardNavLinkTests = testGroup "insertForwardNavLink"
+  [ testCase "inserts after existing back link" $
+      let content = "[[index|Home]] > [[reflections/index|Reflections]] | [[reflections/2026-03-31|⏮️]]\n# Post"
+          result = insertForwardNavLink Reflections content "2026-04-02"
       in do
         assertBool "contains forward marker" (T.isInfixOf "⏭️" result)
-        assertBool "links to target" (T.isInfixOf "[[test/2026-04-02|⏭️]]" result)
+        assertBool "links to target" (T.isInfixOf "[[reflections/2026-04-02|⏭️]]" result)
   , testCase "does not add duplicate forward link" $
-      let content = "[[test/prev|⏮️]] [[test/next|⏭️]]\n# Post"
-          result = addForwardNavLink "test" "marker" content "2026-04-03"
+      let content = "[[reflections/prev|⏮️]] [[reflections/next|⏭️]]\n# Post"
+          result = insertForwardNavLink Reflections content "2026-04-03"
       in result @?= content
-  , testCase "adds forward link after fallback marker when no back link" $
-      let content = "[[index|Home]] > [[test/index|Test]]\n# Post"
-          result = addForwardNavLink "test" "[[test/index|Test]]" content "2026-04-02"
+  , testCase "inserts after directory index link when no back link" $
+      let content = "[[index|Home]] > [[reflections/index|Reflections]]\n# Post"
+          result = insertForwardNavLink Reflections content "2026-04-02"
       in do
         assertBool "contains forward marker" (T.isInfixOf "⏭️" result)
-        assertBool "links to target" (T.isInfixOf "[[test/2026-04-02|⏭️]]" result)
-  , testProperty "addForwardNavLink is idempotent" $
+        assertBool "links to target" (T.isInfixOf "[[reflections/2026-04-02|⏭️]]" result)
+  , testCase "works for Changes directory" $
+      let content = "[[index|Home]] > [[changes/index|Changes]] | [[changes/2026-03-31|⏮️]]\n# Post"
+          result = insertForwardNavLink Changes content "2026-04-02"
+      in do
+        assertBool "contains forward marker" (T.isInfixOf "⏭️" result)
+        assertBool "links to target" (T.isInfixOf "[[changes/2026-04-02|⏭️]]" result)
+  , testProperty "insertForwardNavLink is idempotent for Reflections" $
       \(QC.ASCIIString dateStr) ->
         let date = T.pack dateStr
-            content = "nav | [[test/prev|⏮️]]\n# Post"
-            once = addForwardNavLink "test" "marker" content date
-            twice = addForwardNavLink "test" "marker" once date
+            content = "nav | [[reflections/prev|⏮️]]\n# Post"
+            once = insertForwardNavLink Reflections content date
+            twice = insertForwardNavLink Reflections once date
+        in once == twice
+  , testProperty "insertForwardNavLink is idempotent for Changes" $
+      \(QC.ASCIIString dateStr) ->
+        let date = T.pack dateStr
+            content = "nav | [[changes/prev|⏮️]]\n# Post"
+            once = insertForwardNavLink Changes content date
+            twice = insertForwardNavLink Changes once date
         in once == twice
   ]
 

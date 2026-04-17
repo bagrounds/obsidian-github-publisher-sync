@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-04-17T11:46:41-07:00
+updated: 2026-04-17T14:13:07-07:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -69,24 +69,24 @@ updated: 2026-04-17T11:46:41-07:00
   
   
 ## [📚 Books](./books/index.md) (960)  
-- [🏚️👶 Children of Ruin](./books/children-of-ruin.md)  
-- [💻⚙️ Software Engineering at Google: Lessons Learned from Programming Over Time](./books/software-engineering-at-google-lessons-learned-from-programming-over-time.md)  
-- [😈💻👹🤖 Daemon](./books/daemon.md)  
-- [🪄💭 Necessary Illusions: Thought Control in Democratic Societies](./books/necessary-illusions.md)  
+- [⚖️⬆️🤝 The Spirit Level: Why Greater Equality Makes Societies Stronger](./books/the-spirit-level-why-greater-equality-makes-societies-stronger.md)  
+- [🧪👎 Bad Science: Quacks, Hacks, and Big Pharma Flacks](./books/bad-science-quacks-hacks-and-big-pharma-flacks.md)  
+- [🤔💻🧠 Algorithms to Live By: The Computer Science of Human Decisions](./books/algorithms-to-live-by.md)  
+- [🧠🤔 How Emotions Are Made: The Secret Life of the Brain](./books/how-emotions-are-made-the-secret-life-of-the-brain.md)  
   
   
-## [📺 Videos](./videos/index.md) (762)  
+## [📺 Videos](./videos/index.md) (763)  
+- [💥🏚️🏛️ Zohran Mamdani says Iran war speaks to a “broken kind of politics” | Newsmakers](./videos/zohran-mamdani-says-iran-war-speaks-to-a-broken-kind-of-politics-newsmakers.md)  
 - [🏦 🇺🇸 📉 🗣️ Tamara Keith and Amy Walter on pushback to Trump's threats to Federal Reserve](./videos/tamara-keith-and-amy-walter-on-pushback-to-trumps-threats-to-federal-reserve.md)  
 - [🏛️📰🗣️🇺🇸 Jelani Cobb talks democracy, Trumpism, and the future of journalism | Code Switch](./videos/jelani-cobb-talks-democracy-trumpism-and-the-future-of-journalism-code-switch.md)  
 - [💰💻✅💡 How to Actually Make Money Online in 2026](./videos/how-to-actually-make-money-online-in-2026.md)  
-- [🏛️🗣️💬 Politics Chat, April 9, 2026](./videos/politics-chat-april-9-2026.md)  
   
   
 ## [🌌 Topics](./topics/index.md) (91)  
-- [📚🎭 Humanities](./topics/humanities.md)  
-- [🤔🚫➡️📚 Heterodox Economics](./topics/heterodox-economics.md)  
-- [🌿🐚 Growing Centenarian Rhubarb in the PNW](./topics/growing-rhubarb-pnw.md)  
-- [🧮💻 Functional Languages](./topics/functional-languages.md)  
+- [📏🔮〰️ Kalman Filter](./topics/kalman-filter.md)  
+- [🧑‍💼🛡️ Job Guarantee, Employer of Last Resort](./topics/job-guarantee-employer-of-last-resort.md)  
+- [📢🎓 Informative Speaking](./topics/informative-speaking.md)  
+- [🔭🌿 iNaturalist](./topics/inaturalist.md)  
   
   
 ## [📄  Articles](./articles/index.md) (84)  

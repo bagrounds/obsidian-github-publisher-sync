@@ -6,6 +6,9 @@ title: 📜💀⚠️ What the Holocaust Teaches
 URL: https://bagrounds.org/articles/what-the-holocaust-teaches-us
 Author:
 tags:
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_time: 2026-04-06T00:00:00Z
+force_analyze_links: false
 ---
 [Home](../index.md) > [Articles](./index.md)  
 # [📜💀⚠️ What the Holocaust Teaches Us](https://time.com/7278818/holocaust-remembrance-lessons)  

@@ -7,6 +7,7 @@ URL: https://bagrounds.org/convergence
 backlinks: false
 ---
 [🏡 Home](../index.md)  
-# 🔀 Convergence (2)  
-- [2026-04-15 | 🔀 The Architecture of Presence 🔀](./2026-04-15-the-architecture-of-presence.md)  
-- [2026-04-15 | 🔀 The Algorithm and the Roost 🔀](./2026-04-15-the-algorithm-and-the-roost.md)  
+# 🔀 Convergence (3)  
+- [🔀 Convergence — AGENTS.md](./AGENTS.md)  
+- [2026-04-16 | 🔀 💡 The Architecture of Sustenance and Self-Correction 🔀](./2026-04-16-the-architecture-of-sustenance-and-self-correction.md)  
+- [2026-04-15 | 🔀 The Observer Awakens 🔀](./2026-04-15-the-observer-awakens.md)  

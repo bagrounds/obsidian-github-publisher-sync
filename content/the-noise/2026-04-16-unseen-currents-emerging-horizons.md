@@ -13,7 +13,7 @@ link_analysis_version: "2"
 link_analysis_time: 2026-04-16T00:00:00Z
 force_analyze_links: false
 ---
-[Home](../index.md) > [📰 The Noise](./index.md) | [⏮️](./2026-04-15-global-currents-unfolding-narratives.md)  
+[Home](../index.md) > [📰 The Noise](./index.md) | [⏮️](./2026-04-15-global-currents-unfolding-narratives.md) [⏭️](./2026-04-17-global-currents-echoing-futures.md)  
 # 2026-04-16 | 📰 🌪️ Unseen Currents, Emerging Horizons 📰  
 ![the-noise-2026-04-16-unseen-currents-emerging-horizons](../the-noise-2026-04-16-unseen-currents-emerging-horizons.jpg)  
   

@@ -8,6 +8,9 @@ Author:
 tags:
 affiliate link: https://amzn.to/4jBYMXz
 CTA: 🤝 Coordinate behaviors.
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_time: 2026-04-07T00:00:00Z
+force_analyze_links: false
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🧮♻️ Rational Ritual: Culture, Coordination, and Common Knowledge  
@@ -70,7 +73,7 @@ CTA: 🤝 Coordinate behaviors.
 * 🧠 **[Thinking, Fast and Slow](./thinking-fast-and-slow.md)** by Daniel Kahneman: 🤯 Explores the two systems of human thought – one fast and intuitive (often less "rational"), one slow and deliberate – challenging purely rational choice models of behavior.  
 * 🏛️ **Comparative Politics: Rationality, Culture, and Structure** edited by Mark Irving Lichbach and Alan S. Zuckerman: ⚖️ Presents and contrasts rational choice, culturalist, and structuralist approaches within political science, providing context for Chwe's rational choice perspective against others.  
 * 🌲 **How Forests Think: Toward an Anthropology Beyond the Human** by Eduardo Kohn: 🤔 Challenges anthropocentric views by exploring non-human forms of meaning-making and communication, offering a radically different perspective on interaction and knowledge.  
-* 🕊️ **Ritual: Perspectives and Dimensions** by Catherine Bell: 🎭 A comprehensive overview of ritual theory across disciplines, presenting various analytical frameworks beyond purely rational coordination (e.g., ritual as performance, embodiment, power negotiation).  
+* 🕊️ **[🕯️👀📐 Ritual: Perspectives and Dimensions](./ritual-perspectives-and-dimensions.md)** by Catherine Bell: 🎭 A comprehensive overview of ritual theory across disciplines, presenting various analytical frameworks beyond purely rational coordination (e.g., ritual as performance, embodiment, power negotiation).  
   
 ### 🌟 Creatively Related (Themes, Fiction)  
   

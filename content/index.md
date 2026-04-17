@@ -21,11 +21,11 @@ updated: 2026-04-16T16:15:35-07:00
 - [2026-04-13 | 🌍 Billionaires 💡 Trick 🗣️ Speaks 🪞 Leo 🕊️ Victory 🚀 Accelerates 🌊 Currents ☢️ Entropy 🐔 Rhythm 🌳 Embrace 🔗 Monolith 🔄 Redesign 📺📰🌟🤖🐔🏛️🤖🐲](./reflections/2026-04-13.md)  
   
   
-## [🤖 AI Blog](./ai-blog/index.md) (156)  
+## [🤖 AI Blog](./ai-blog/index.md) (158)  
+- [2026-04-16 | 📂 Moving Updates to a Changes Directory 🤖](./ai-blog/2026-04-16-2-changes-directory.md)  
+- [2026-04-16 | 🛡️ Data Loss Prevention in Daily Updates 🔗](./ai-blog/2026-04-16-1-data-loss-prevention-daily-updates.md)  
 - [2026-04-15 | 🔎 A SQL-Like Query Language for AI Blog Context 🤖](./ai-blog/2026-04-15-5-a-query-language-for-ai-blog-context.md)  
 - [2026-04-15 | 🔀 Convergence: Teaching Blogs to Read Each Other 🤖](./ai-blog/2026-04-15-4-convergence-cross-series-synthesis.md)  
-- [2026-04-15 | 🔊 Fixing the Echo Chamber - When AI Parrots Its Own Instructions 🤖](./ai-blog/2026-04-15-3-fixing-the-echo-chamber.md)  
-- [2026-04-15 | 🧹 Dead Code Cleanup and DRY Consolidation 🔧](./ai-blog/2026-04-15-2-dead-code-cleanup-dry-consolidation.md)  
   
   
 ## [🤖 Auto Blog Zero](./auto-blog-zero/index.md) (37)  
@@ -63,11 +63,14 @@ updated: 2026-04-16T16:15:35-07:00
 - [2026-04-13 | 🌟 Innovation Accelerates Across Global Health and Environment 🌟](./positivity-bias/2026-04-13-innovation-accelerates-across-global-health-and-environment.md)  
   
   
+## [🔀 Convergence](./convergence/index.md) (0)  
+  
+  
 ## [📚 Books](./books/index.md) (959)  
-- [📵 How to Do Nothing: Resisting the Attention Economy](./books/how-to-do-nothing-resisting-the-attention-economy.md)  
-- [📱💔 How to Break Up with Your Phone: The 30-Day Plan to Take Back Your Life](./books/how-to-break-up-with-your-phone-the-30-day-plan-to-take-back-your-life.md)  
-- [🌊🤖🤔 The Coming Wave: Technology, Power, and the 21st Century's Greatest Dilemma](./books/the-coming-wave-technology-power-and-the-21st-centurys-greatest-dilemma.md)  
-- [🤖🧑‍ Human Compatible: Artificial Intelligence and the Problem of Control](./books/human-compatible-artificial-intelligence-and-the-problem-of-control.md)  
+- [🎭🤫🧠 Incognito: The Secret Lives of the Brain](./books/incognito.md)  
+- [📉➡️👍 Better Than Before: What I Learned About Making and Breaking Habits - to Sleep More, Quit Sugar, Procrastinate Less, and Generally Build a Happier Life](./books/better-than-before.md)  
+- [💪📈 Willpower: Rediscovering the Greatest Human Strength](./books/willpower.md)  
+- [🥱🤓 Bored and Brilliant: How Spacing Out Can Unlock Your Most Productive and Creative Self](./books/bored-and-brilliant.md)  
   
   
 ## [📺 Videos](./videos/index.md) (762)  
@@ -92,10 +95,10 @@ updated: 2026-04-16T16:15:35-07:00
   
   
 ## [🤖💬 Bot Chats](./bot-chats/index.md) (49)  
-- [✍🏼 Blogiversary 🕯️](./bot-chats/blogiversary.md)  
+- [📖 Book 🧭 Explorer 2](./bot-chats/book-explorer-2.md)  
 - [🕸️🪵🏅 Blogging Success](./bot-chats/blogging-success.md)  
-- [🇦🇹💰🆚📈🖨️ Austrian Economics vs Modern Monetary Theory](./bot-chats/austrian-economics-vs-modern-monetary-theory.md)  
-- [🤰🏼👶🍼👨‍👩‍👦 Parenting and Infant Development Guide](./bot-chats/parenting-and-infant-development-guide.md)  
+- [📖 Book 🧭 Explorer 1](./bot-chats/book-explorer-1.md)  
+- [✍🏼 Blogiversary 🕯️](./bot-chats/blogiversary.md)  
   
   
 ## [💾 Software](./software/index.md) (33)  

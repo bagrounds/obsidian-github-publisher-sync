@@ -13,7 +13,7 @@ link_analysis_version: "2"
 link_analysis_time: 2026-04-16T00:00:00Z
 force_analyze_links: false
 ---
-[Home](../index.md) > [🏛️ Systems for Public Good](./index.md) | [⏮️](./2026-04-15-the-shield-of-community-public-safety-as-a-foundational-public-good.md)  
+[Home](../index.md) > [🏛️ Systems for Public Good](./index.md) | [⏮️](./2026-04-15-the-shield-of-community-public-safety-as-a-foundational-public-good.md) [⏭️](./2026-04-17-education-as-reciprocity-learning-teaching-and-serving.md)  
 # 2026-04-16 | 🏛️ 🚌 The Pathways to Opportunity: Public Transit as a Liberator 🏛️  
 ![systems-for-public-good-2026-04-16-the-pathways-to-opportunity-public-transit-as-a-liberator](../systems-for-public-good-2026-04-16-the-pathways-to-opportunity-public-transit-as-a-liberator.jpg)  
   

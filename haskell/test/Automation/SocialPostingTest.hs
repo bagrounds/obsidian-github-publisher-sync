@@ -241,6 +241,10 @@ contentFilterTests = testGroup "content filtering"
         not (isPostableContent (mkNote "books/foo.md" "Foo" (T.replicate 60 "x"))
           { noteNoSocial = True })
 
+  , testCase "isPostableContent rejects changes pages" $
+      assertBool "changes page should not be postable" $
+        not (isPostableContent (mkNote "changes/2026-04-17.md" "2026-04-17" (T.replicate 60 "x")))
+
   , testCase "isUntitledReflection identifies date-only titles" $
       assertBool "date-only title in reflections is untitled" $
         isUntitledReflection (mkNote "reflections/2025-01-15.md" "2025-01-15" "body")

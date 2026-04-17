@@ -6,6 +6,7 @@ module Automation.SocialPosting.ContentDiscovery
   , discoverContentToPost
   , bfsContentDiscovery
   , isPostableContent
+  , isChangesPath
   , isIndexPath
   , isUntitledReflection
   , isReflectionEligibleForPosting
@@ -199,6 +200,7 @@ validateNoteUrl checker note = do
 isPostableContent :: ContentNote -> Bool
 isPostableContent note =
   not (isIndexPage note)
+    && not (isChangesPage note)
     && not (isUntitledReflection note)
     && not (noteNoSocial note)
     && T.length (T.strip (noteBody note)) >= minPostableBodyLength
@@ -208,6 +210,12 @@ isIndexPage = isIndexPath . unRelativePath . noteRelativePath
 
 isIndexPath :: Text -> Bool
 isIndexPath p = takeBaseName (T.unpack p) == "index"
+
+isChangesPage :: ContentNote -> Bool
+isChangesPage = isChangesPath . unRelativePath . noteRelativePath
+
+isChangesPath :: Text -> Bool
+isChangesPath = T.isPrefixOf "changes/"
 
 isUntitledReflection :: ContentNote -> Bool
 isUntitledReflection note =
@@ -316,6 +324,7 @@ bfsLoop config state =
 checkBfsEligibility :: Text -> TimeOfDay -> IO Bool
 checkBfsEligibility relativePath postingCutoff
   | isIndexPath relativePath = pure False
+  | isChangesPath relativePath = pure False
   | isReflectionPath relativePath =
       case parseDateFromPath relativePath of
         Nothing -> pure False

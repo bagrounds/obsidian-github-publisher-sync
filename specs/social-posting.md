@@ -30,6 +30,7 @@
 
 🛡️ A note is postable only if it meets all of these criteria:
 - 📄 Not an index page (filename is not `index.md`)
+- 📂 Not in the changes directory (path does not start with `changes/`)
 - 🏷️ Not flagged with `no_social: true` in frontmatter
 - 📝 Not an untitled reflection (reflection whose title matches the date)
 - 📐 Body content is at least 50 characters after stripping markup

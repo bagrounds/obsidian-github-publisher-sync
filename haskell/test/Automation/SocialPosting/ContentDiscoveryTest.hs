@@ -73,6 +73,18 @@ contentFilterTests = testGroup "content filtering"
       assertBool "book file is not an index path" $
         not (isIndexPath "books/great-book.md")
 
+  , testCase "isChangesPath detects changes directory pages" $
+      assertBool "changes page should be a changes path" $
+        isChangesPath "changes/2026-04-17.md"
+
+  , testCase "isChangesPath detects changes index" $
+      assertBool "changes index should be a changes path" $
+        isChangesPath "changes/index.md"
+
+  , testCase "isChangesPath rejects non-changes files" $
+      assertBool "book file is not a changes path" $
+        not (isChangesPath "books/great-book.md")
+
   , testCase "isAwaitingImageBackfill detects note without image in backfill directory" $
       assertBool "should be awaiting image" $
         isAwaitingImageBackfill defaultContentDirs now "books/great-book.md" "Some text about a great book" Nothing
@@ -137,6 +149,10 @@ bfsEligibilityTests = testGroup "checkBfsEligibility"
   , testCase "old reflection is eligible" $ do
       result <- checkBfsEligibility "reflections/2020-01-01.md" (TimeOfDay 17 0 0)
       assertBool "old reflection should be eligible" result
+
+  , testCase "changes paths are never eligible" $ do
+      result <- checkBfsEligibility "changes/2026-04-17.md" (TimeOfDay 17 0 0)
+      assertBool "changes page should not be eligible" (not result)
   ]
 
 

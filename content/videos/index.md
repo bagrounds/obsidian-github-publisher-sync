@@ -5,10 +5,10 @@ aliases:
 title: 📺 Videos
 URL: https://bagrounds.org/videos
 backlinks: false
-updated: 2026-04-17T11:46:41-07:00
+updated: 2026-04-17T14:13:07-07:00
 ---
 [Home](../index.md)  
-# 📺 Videos (762)  
+# 📺 Videos (763)  
 - [💰🤑🤖💡🚀💲 $0.10/Month Runs My Entire AI Life. I'll Show You How.](./0-10-month-runs-my-entire-ai-life-ill-show-you-how.md)  
 - [📊📈📉📃👁️ 10 Charts to Understand the 900 Page Budget Bill](./10-charts-to-understand-the-900-page-budget-bill.md)  
 - [🤖🔗⬆️✅ 12-Factor Agents: Patterns of reliable LLM applications — Dex Horthy, HumanLayer](./12-factor-agents-patterns-of-reliable-llm-applications-dex-horthy-humanlayer.md)  
@@ -770,4 +770,5 @@ updated: 2026-04-17T11:46:41-07:00
 - [🤕➡️👁️➕ Your reality narrows after trauma — here’s how to expand it | Bessel van der Kolk](./your-reality-narrows-after-trauma-heres-how-to-expand-it-bessel-van-der-kolk.md)  
 - [🔑🖼️🎨👤 Your Theme](./your-theme.md)  
 - [🇿🇼💸📈⏱️ Zimbabwe hyperinflation explained in 8 minutes ~ Fadhel Kaboub  > MMT](./zimbabwe-hyperinflation-explained-in-8-minutes-fadhel-kaboub-mmt.md)  
+- [💥🏚️🏛️ Zohran Mamdani says Iran war speaks to a “broken kind of politics” | Newsmakers](./zohran-mamdani-says-iran-war-speaks-to-a-broken-kind-of-politics-newsmakers.md)  
   

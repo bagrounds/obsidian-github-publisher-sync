@@ -10,9 +10,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-16T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-04-17T13:39:44Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A minimalist, high-contrast illustration depicting a stone bust of Marcus Aurelius in profile, positioned on the right side of the frame. The bust is weathered, with soft, cinematic lighting highlighting the contours of his face and beard, evoking a sense of ancient wisdom. To the left, a single, delicate olive branch rests on a rough, sun-drenched marble surface, casting a long, sharp shadow that stretches toward the bust. The background is a muted, earthy ochre, reminiscent of Roman architecture. The overall composition is balanced and serene, utilizing clean lines and a limited, warm color palette of stone gray, deep shadows, and sun-baked gold to represent the intersection of Stoic endurance and the fleeting nature of time.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🤔🧘 Meditations  
+![books-meditations](../books-meditations.jpg)  
 [🛒 Meditations. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3ZcGwwJ)  
   
 ## 📖 Book Report: Meditations by Marcus Aurelius  

@@ -6,8 +6,9 @@ URL: https://bagrounds.org/books/fair-play-a-game-changing-solution-for-when-you
 share: true
 affiliate link: https://amzn.to/3Su3Kur
 link_analysis_model: gemini-3.1-flash-lite-preview
-link_analysis_time: 2026-04-09T00:00:00Z
+link_analysis_time: 2026-04-17T00:00:00Z
 force_analyze_links: false
+link_analysis_version: "2"
 ---
 [Home](../index.md) > [Books](./index.md)  
 # ⚖️🎮 Fair Play: A Game-Changing Solution for When You Have Too Much to Do (and More Life to Live)  

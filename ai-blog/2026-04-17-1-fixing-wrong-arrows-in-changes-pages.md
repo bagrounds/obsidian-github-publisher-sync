@@ -34,15 +34,15 @@ URL: https://bagrounds.org/ai-blog/2026-04-17-1-fixing-wrong-arrows-in-changes-p
 
 ### 🏷️ NavigableDirectory ADT
 
-🔒 A NavigableDirectory algebraic data type was added to the Wikilink module with two constructors, Reflections and Changes. This models the closed set of directories that have chronological pages with forward and backward navigation. Internal functions derive the directory path and display name from each constructor, eliminating raw Text parameters.
+🔒 A NavigableDirectory algebraic data type was added to the Wikilink module with two constructors, Reflections and Changes. This models the closed set of directories that have chronological pages with forward and backward navigation. Two internal functions, navigableDirectoryPath and navigableDirectoryDisplayName, transform each constructor into its path and display name, eliminating raw Text parameters.
 
 ### 🔗 Domain-Specific Link Builders
 
-🧱 Three functions build navigation wikilinks from the domain type. The directoryIndexLink function constructs the index page wikilink, such as turning Reflections into the formatted link pointing to reflections slash index with display name Reflections. The buildNavBackLink and buildNavForwardLink functions each take a NavigableDirectory and a date, producing the properly formatted back or forward navigation wikilink using the canonical marker emoji.
+🧱 Three functions build navigation wikilinks from the domain type. The directoryIndexLink function constructs the index page wikilink for a directory, such as turning Reflections into the formatted link pointing to the reflections index page with the display name Reflections. The buildNavBackLink and buildNavForwardLink functions each take a NavigableDirectory and a date, producing the properly formatted back or forward navigation wikilink using the canonical marker emoji.
 
 ### 🧩 Declarative Forward Link Insertion
 
-🔧 The insertForwardNavLink function replaces the old imperative conditional chain. It takes a NavigableDirectory, the page content, and a target date. A guard clause checks idempotency by looking for the forward marker. The core logic uses the Alternative pattern with Maybe to express insertion priority: try inserting after an existing back link first, then fall back to inserting after the directory index link. Two focused helper functions, insertAfterBackLink and insertAfterAnchor, each return Nothing when their anchor is absent, enabling clean composition with the Alternative operator.
+🔧 The insertForwardNavLink function replaces the old imperative conditional chain. It takes a NavigableDirectory, the page content, and a target date. A guard clause checks idempotency by looking for the forward marker. The core logic uses the Alternative pattern, where Maybe values combine to express insertion priority. It tries inserting after an existing back link first, then falls back to inserting after the directory index link. Two focused helper functions, insertAfterBackLink and insertAfterAnchor, each return Nothing when their anchor is absent, enabling clean composition.
 
 🪞 The DailyReflection module now simply defines addForwardLink as insertForwardNavLink Reflections, and buildReflectionContent uses buildNavBackLink Reflections and directoryIndexLink Reflections instead of hand-assembled strings.
 

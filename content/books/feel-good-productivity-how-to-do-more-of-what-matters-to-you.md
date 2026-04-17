@@ -6,8 +6,9 @@ URL: https://bagrounds.org/books/feel-good-productivity-how-to-do-more-of-what-m
 share: true
 affiliate link: https://amzn.to/4dJdYRa
 link_analysis_model: gemini-3.1-flash-lite-preview
-link_analysis_time: 2026-04-08T00:00:00Z
+link_analysis_time: 2026-04-17T00:00:00Z
 force_analyze_links: false
+link_analysis_version: "2"
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 😊✅ Feel Good Productivity: How to Do More of What Matters to You  

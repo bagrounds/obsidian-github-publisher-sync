@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-04-17T08:36:54-07:00
+updated: 2026-04-17T11:46:41-07:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -42,11 +42,11 @@ updated: 2026-04-17T08:36:54-07:00
 - [2026-04-14 | 🐔 A Tale of Two Loos 🐔](./chickie-loo/2026-04-14-a-tale-of-two-loos.md)  
   
   
-## [🏛️ Systems for Public Good](./systems-for-public-good/index.md) (26)  
+## [🏛️ Systems for Public Good](./systems-for-public-good/index.md) (27)  
+- [2026-04-17 | 🏛️ Education as Reciprocity: Learning, Teaching, and Serving 🏛️](./systems-for-public-good/2026-04-17-education-as-reciprocity-learning-teaching-and-serving.md)  
 - [2026-04-16 | 🏛️ 🚌 The Pathways to Opportunity: Public Transit as a Liberator 🏛️](./systems-for-public-good/2026-04-16-the-pathways-to-opportunity-public-transit-as-a-liberator.md)  
 - [2026-04-15 | 🏛️ 🚨 The Shield of Community: Public Safety as a Foundational Public Good 🏛️](./systems-for-public-good/2026-04-15-the-shield-of-community-public-safety-as-a-foundational-public-good.md)  
 - [2026-04-14 | 🏛️ 💧 The Invisible Infrastructure: Clean Air and Water as Foundational Public Goods 🏛️](./systems-for-public-good/2026-04-14-the-invisible-infrastructure-clean-air-and-water-as-foundational-public-goods.md)  
-- [2026-04-13 | 🏛️ 🌳 Nature's Embrace: Public Parks as a Universal Right 🏛️](./systems-for-public-good/2026-04-13-nature-s-embrace-public-parks-as-a-universal-right.md)  
   
   
 ## [📰 The Noise](./the-noise/index.md) (8)  
@@ -68,25 +68,25 @@ updated: 2026-04-17T08:36:54-07:00
 - [2026-04-15 | 🔀 The Observer Awakens 🔀](./convergence/2026-04-15-the-observer-awakens.md)  
   
   
-## [📚 Books](./books/index.md) (959)  
-- [💰🏭🌍 The Value of Everything: Making and Taking in the Global Economy](./books/the-value-of-everything-making-and-taking-in-the-global-economy.md)  
-- [📉🌎 Less is More: How Degrowth Will Save the World](./books/less-is-more-how-degrowth-will-save-the-world.md)  
-- [🦓 Why Zebras Don't Get Ulcers: The Acclaimed Guide to Stress, Stress-Related Disease, and Coping](./books/why-zebras-dont-get-ulcers.md)  
-- [❓✝️ The God Delusion](./books/the-god-delusion.md)  
+## [📚 Books](./books/index.md) (960)  
+- [🏚️👶 Children of Ruin](./books/children-of-ruin.md)  
+- [💻⚙️ Software Engineering at Google: Lessons Learned from Programming Over Time](./books/software-engineering-at-google-lessons-learned-from-programming-over-time.md)  
+- [😈💻👹🤖 Daemon](./books/daemon.md)  
+- [🪄💭 Necessary Illusions: Thought Control in Democratic Societies](./books/necessary-illusions.md)  
   
   
 ## [📺 Videos](./videos/index.md) (762)  
-- [📒 Bullet Journal](./videos/bullet-journal.md)  
-- [🌱🔬👍 Soil Analysis: What Makes Soil Great?](./videos/soil-analysis-what-makes-soil-great.md)  
-- [🔎🗺️✅📍 Site Analysis: Choosing the Right Spot](./videos/site-analysis-choosing-the-right-spot.md)  
-- [🪴🔬❌ Garden Science: Weeding Out the Myths](./videos/garden-science-weeding-out-the-myths.md)  
+- [🏦 🇺🇸 📉 🗣️ Tamara Keith and Amy Walter on pushback to Trump's threats to Federal Reserve](./videos/tamara-keith-and-amy-walter-on-pushback-to-trumps-threats-to-federal-reserve.md)  
+- [🏛️📰🗣️🇺🇸 Jelani Cobb talks democracy, Trumpism, and the future of journalism | Code Switch](./videos/jelani-cobb-talks-democracy-trumpism-and-the-future-of-journalism-code-switch.md)  
+- [💰💻✅💡 How to Actually Make Money Online in 2026](./videos/how-to-actually-make-money-online-in-2026.md)  
+- [🏛️🗣️💬 Politics Chat, April 9, 2026](./videos/politics-chat-april-9-2026.md)  
   
   
 ## [🌌 Topics](./topics/index.md) (91)  
-- [🗣️🗣️ Bilingualism](./topics/bilingualism.md)  
-- [🔄🎯 Kuramoto Model](./topics/kuramoto-model.md)  
-- [❤️‍🩹⚖️🤝👑😇🗽 Moral Foundations Theory](./topics/moral-foundations-theory.md)  
-- [🏦♾️📈💸 Modern Monetary Theory](./topics/modern-monetary-theory.md)  
+- [📚🎭 Humanities](./topics/humanities.md)  
+- [🤔🚫➡️📚 Heterodox Economics](./topics/heterodox-economics.md)  
+- [🌿🐚 Growing Centenarian Rhubarb in the PNW](./topics/growing-rhubarb-pnw.md)  
+- [🧮💻 Functional Languages](./topics/functional-languages.md)  
   
   
 ## [📄  Articles](./articles/index.md) (84)  

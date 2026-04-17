@@ -5,11 +5,12 @@ aliases:
 title: ⏳🍽️ Time-Restricted Eating
 URL: https://bagrounds.org/topics/time-restricted-eating
 link_analysis_model: gemini-3.1-flash-lite-preview
-link_analysis_time: 2026-04-09T00:00:00Z
+link_analysis_time: 2026-04-15T00:00:00Z
 force_analyze_links: false
 image_date: 2026-04-10T13:37:01Z
 image_model: "@cf/black-forest-labs/flux-1-schnell"
 image_prompt: "A high-angle, minimalist composition featuring a circular plate centered on a textured wooden table. The plate is divided into two distinct sections: one side is filled with vibrant, colorful whole foods like leafy greens, berries, and nuts, representing the eating window. The other half of the plate is completely empty, highlighting the negative space to represent the fasting window. Surrounding the plate, soft, warm morning sunlight streams in from one side, casting long, gentle shadows that mimic the movement of a clock hand. The overall aesthetic is clean, modern, and serene, using a natural color palette of sage greens, earthy browns, and crisp whites to emphasize health, rhythm, and clarity. No clutter or utensils are present, keeping the focus entirely on the balance between nourishment and rest."
+link_analysis_version: "2"
 ---
 [Home](../index.md) > [Topics](./index.md)  
 # ⏳🍽️ Time-Restricted Eating  

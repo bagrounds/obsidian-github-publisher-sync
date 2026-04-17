@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-04-17T14:13:07-07:00
+updated: 2026-04-17T15:35:01-07:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -21,11 +21,11 @@ updated: 2026-04-17T14:13:07-07:00
 - [2026-04-14 | 🌍 Hungary’s 🇺🇸 America's 🗣️ Chat 🌟 Reshape 🌐 Sands 🤖 Architecture 🏛️ Goods 🐔 Loos 🧩 Fixing 🧹 Removing 📣 Buttons 📰📺🌟🤖🏛️🐔🤖🐲](./reflections/2026-04-14.md)  
   
   
-## [🤖 AI Blog](./ai-blog/index.md) (159)  
+## [🤖 AI Blog](./ai-blog/index.md) (160)  
+- [2026-04-17 | 🔀 Fixing Wrong Arrows in Changes Pages 🤖](./ai-blog/2026-04-17-1-fixing-wrong-arrows-in-changes-pages.md)  
 - [2026-04-16 | 🔍 The Case of the Misplaced Files 🔀](./ai-blog/2026-04-16-3-the-case-of-the-misplaced-files.md)  
 - [2026-04-16 | 📂 Moving Updates to a Changes Directory 🤖](./ai-blog/2026-04-16-2-changes-directory.md)  
 - [2026-04-16 | 🛡️ Data Loss Prevention in Daily Updates 🔗](./ai-blog/2026-04-16-1-data-loss-prevention-daily-updates.md)  
-- [2026-04-15 | 🔎 A SQL-Like Query Language for AI Blog Context 🤖](./ai-blog/2026-04-15-5-a-query-language-for-ai-blog-context.md)  
   
   
 ## [🤖 Auto Blog Zero](./auto-blog-zero/index.md) (38)  
@@ -69,24 +69,24 @@ updated: 2026-04-17T14:13:07-07:00
   
   
 ## [📚 Books](./books/index.md) (960)  
-- [⚖️⬆️🤝 The Spirit Level: Why Greater Equality Makes Societies Stronger](./books/the-spirit-level-why-greater-equality-makes-societies-stronger.md)  
-- [🧪👎 Bad Science: Quacks, Hacks, and Big Pharma Flacks](./books/bad-science-quacks-hacks-and-big-pharma-flacks.md)  
-- [🤔💻🧠 Algorithms to Live By: The Computer Science of Human Decisions](./books/algorithms-to-live-by.md)  
-- [🧠🤔 How Emotions Are Made: The Secret Life of the Brain](./books/how-emotions-are-made-the-secret-life-of-the-brain.md)  
+- [☀️😀👍😊🌻 How to Have a Good Day: Harness the Power of Behavioral Science to Transform Your Working Life](./books/how-to-have-a-good-day.md)  
+- [🧠🎯👁️💡 Applied Attention Theory](./books/human-attention.md)  
+- [🧠🔒 Make It Stick: The Science of Successful Learning](./books/make-it-stick.md)  
+- [🏃‍♂️⛰️ Born to Run: A Hidden Tribe, Superathletes, and the Greatest Race the World Has Never Seen](./books/born-to-run-a-hidden-tribe-superathletes-and-the-greatest-race-the-world-has-never-seen.md)  
   
   
-## [📺 Videos](./videos/index.md) (763)  
+## [📺 Videos](./videos/index.md) (764)  
+- [🏛️💸😡 Our Tax System Should Make You Furious | The Ezra Klein Show](./videos/our-tax-system-should-make-you-furious-the-ezra-klein-show.md)  
 - [💥🏚️🏛️ Zohran Mamdani says Iran war speaks to a “broken kind of politics” | Newsmakers](./videos/zohran-mamdani-says-iran-war-speaks-to-a-broken-kind-of-politics-newsmakers.md)  
 - [🏦 🇺🇸 📉 🗣️ Tamara Keith and Amy Walter on pushback to Trump's threats to Federal Reserve](./videos/tamara-keith-and-amy-walter-on-pushback-to-trumps-threats-to-federal-reserve.md)  
 - [🏛️📰🗣️🇺🇸 Jelani Cobb talks democracy, Trumpism, and the future of journalism | Code Switch](./videos/jelani-cobb-talks-democracy-trumpism-and-the-future-of-journalism-code-switch.md)  
-- [💰💻✅💡 How to Actually Make Money Online in 2026](./videos/how-to-actually-make-money-online-in-2026.md)  
   
   
 ## [🌌 Topics](./topics/index.md) (91)  
-- [📏🔮〰️ Kalman Filter](./topics/kalman-filter.md)  
-- [🧑‍💼🛡️ Job Guarantee, Employer of Last Resort](./topics/job-guarantee-employer-of-last-resort.md)  
-- [📢🎓 Informative Speaking](./topics/informative-speaking.md)  
-- [🔭🌿 iNaturalist](./topics/inaturalist.md)  
+- [➗📐 Math](./topics/math.md)  
+- [🐑🎀 Mary Had a Little Lamb](./topics/mary-had-a-little-lamb.md)  
+- [📚✍️ Literary Arts](./topics/literary-arts.md)  
+- [🗣️📚🧠 Linguistics](./topics/linguistics.md)  
   
   
 ## [📄  Articles](./articles/index.md) (84)  

@@ -6,8 +6,9 @@ URL: https://bagrounds.org/books/from-tree-to-table-growing-backyard-fruit-trees
 share: true
 affiliate link: https://amzn.to/45DykJD
 link_analysis_model: gemini-3.1-flash-lite-preview
-link_analysis_time: 2026-04-03T00:00:00Z
+link_analysis_time: 2026-04-16T00:00:00Z
 force_analyze_links: false
+link_analysis_version: "2"
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🌳🍎🍽️ From Tree to Table: Growing Backyard Fruit Trees in the Pacific Maritime Climate  

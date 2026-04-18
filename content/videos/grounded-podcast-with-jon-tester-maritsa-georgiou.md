@@ -9,6 +9,10 @@ Platform:
 Channel: Heather Cox Richardson
 tags:
 youtube: https://www.youtube.com/embed/kqDNX5pFa6E
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_version: "2"
+link_analysis_time: 2026-04-17T00:00:00Z
+force_analyze_links: false
 ---
 [Home](../index.md) > [Videos](./index.md)  
 # 🌍🎙️ Grounded Podcast with Jon Tester & Maritsa Georgiou  
@@ -52,8 +56,8 @@ youtube: https://www.youtube.com/embed/kqDNX5pFa6E
   
 ### ↔️ Similar  
   
-* 🏛️ Dark Money by Jane Mayer explores how a network of billionaire ideologues radically altered the American political system.  
-* 🗳️ Corruption in America by Zephyr Teachout examines the history of anti-corruption laws and the legal shifts that allowed money to dominate politics.  
+* 🏛️ [💰🤫 Dark Money: The Hidden History of the Billionaires Behind the Rise of the Radical Right](../books/dark-money-the-hidden-history-of-the-billionaires-behind-the-rise-of-the-radical-right.md) by Jane Mayer explores how a network of billionaire ideologues radically altered the American political system.  
+* 🗳️ [💰🇺🇸 Corruption in America: From Benjamin Franklin's Snuff Box to Citizens United](../books/corruption-in-america-from-benjamin-franklins-snuff-box-to-citizens-united.md) by Zephyr Teachout examines the history of anti-corruption laws and the legal shifts that allowed money to dominate politics.  
   
 ### 🆚 Contrasting  
   

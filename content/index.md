@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-04-18T08:56:32-07:00
+updated: 2026-04-18T09:22:42-07:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -21,11 +21,11 @@ updated: 2026-04-18T08:56:32-07:00
 - [2026-04-15 | 🤔 Hard 🌟 Progress 📰 Currents 🤖 Ghost 🌐 Buttons 🔧 Cleanup 🤖 Parrots 🐔 Call 🏛️ Good 📺🌟📰🤖🐔🏛️🤖🐲](./reflections/2026-04-15.md)  
   
   
-## [🤖 AI Blog](./ai-blog/index.md) (161)  
+## [🤖 AI Blog](./ai-blog/index.md) (162)  
+- [2026-04-18 | 🔬 Quality Audit of the Haskell Codebase 🧹](./ai-blog/2026-04-18-1-quality-audit.md)  
 - [2026-04-17 | 🚫 Excluding Changes Pages from Social Posting 🤖](./ai-blog/2026-04-17-2-exclude-changes-from-social-posting.md)  
 - [2026-04-17 | 🔀 Fixing Wrong Arrows in Changes Pages 🤖](./ai-blog/2026-04-17-1-fixing-wrong-arrows-in-changes-pages.md)  
 - [2026-04-16 | 🔍 The Case of the Misplaced Files 🔀](./ai-blog/2026-04-16-3-the-case-of-the-misplaced-files.md)  
-- [2026-04-16 | 📂 Moving Updates to a Changes Directory 🤖](./ai-blog/2026-04-16-2-changes-directory.md)  
   
   
 ## [🤖 Auto Blog Zero](./auto-blog-zero/index.md) (39)  
@@ -42,11 +42,11 @@ updated: 2026-04-18T08:56:32-07:00
 - [2026-04-15 | 🐔 The Rooster Attendance Call 🐔](./chickie-loo/2026-04-15-the-rooster-attendance-call.md)  
   
   
-## [🏛️ Systems for Public Good](./systems-for-public-good/index.md) (27)  
+## [🏛️ Systems for Public Good](./systems-for-public-good/index.md) (28)  
+- [2026-04-18 | 🏛️ 🌐 The Digital Lifeline: Universal Broadband as a Public Good 🏛️](./systems-for-public-good/2026-04-18-the-digital-lifeline-universal-broadband-as-a-public-good.md)  
 - [2026-04-17 | 🏛️ Education as Reciprocity: Learning, Teaching, and Serving 🏛️](./systems-for-public-good/2026-04-17-education-as-reciprocity-learning-teaching-and-serving.md)  
 - [2026-04-16 | 🏛️ 🚌 The Pathways to Opportunity: Public Transit as a Liberator 🏛️](./systems-for-public-good/2026-04-16-the-pathways-to-opportunity-public-transit-as-a-liberator.md)  
 - [2026-04-15 | 🏛️ 🚨 The Shield of Community: Public Safety as a Foundational Public Good 🏛️](./systems-for-public-good/2026-04-15-the-shield-of-community-public-safety-as-a-foundational-public-good.md)  
-- [2026-04-14 | 🏛️ 💧 The Invisible Infrastructure: Clean Air and Water as Foundational Public Goods 🏛️](./systems-for-public-good/2026-04-14-the-invisible-infrastructure-clean-air-and-water-as-foundational-public-goods.md)  
   
   
 ## [📰 The Noise](./the-noise/index.md) (9)  
@@ -70,10 +70,10 @@ updated: 2026-04-18T08:56:32-07:00
   
   
 ## [📚 Books](./books/index.md) (960)  
-- [🔊🎞️🌱🤯 Resonate: Present Visual Stories that Transform Audiences](./books/resonate.md)  
-- [⚙️🔄 The Nature of Technology: What It Is and How It Evolves](./books/the-nature-of-technology-what-it-is-and-how-it-evolves.md)  
-- [⚡🌍⚔️ The New Map: Energy, Climate, and the Clash of Nations](./books/the-new-map-energy-climate-and-the-clash-of-nations.md)  
-- [🏠🛠️ Ultimate Guide to Home Repair & Improvement](./books/ultimate-guide-to-home-repair-improvement.md)  
+- [🤝📈🇺🇸🔁 The Upswing: How America Came Together a Century Ago and How We Can Do It Again](./books/the-upswing.md)  
+- [↔️ Why We're Polarized](./books/why-were-polarized.md)  
+- [🧠🫂 The Embodied Mind: Cognitive Science and Human Experience](./books/the-embodied-mind-cognitive-science-and-human-experience.md)  
+- [🧠🏃 The Psychological Benefits of Exercise and Physical Activity](./books/the-psychological-benefits-of-exercise-and-physical-activity.md)  
   
   
 ## [📺 Videos](./videos/index.md) (770)  

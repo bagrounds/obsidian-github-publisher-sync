@@ -107,7 +107,7 @@ import Automation.Text (stripCodeFences)
 
 callGeminiForGenerator :: Context.AppContext -> NonEmpty Gemini.Model -> (Text, Text) -> IO (Text, Text)
 callGeminiForGenerator context models (systemPrompt, userPrompt) = do
-  let config = Gemini.defaultGenerationConfig { Gemini.gcTemperature = 0.9, Gemini.gcMaxOutputTokens = 2048 }
+  let config = Gemini.defaultGenerationConfig { Gemini.temperature = 0.9, Gemini.maxOutputTokens = 2048 }
   result <- Gemini.generateContentWithFallback (Context.httpManager context) models (Just systemPrompt) userPrompt (Context.geminiApiKey context) config
   case result of
     Left err -> failTask $ "Gemini API error: " <> T.pack (show err)
@@ -210,7 +210,7 @@ runBlogSeries context seriesMap runConfigs seriesId = do
         Left reason -> failTask $ "Blog context build failed: " <> reason
         Right blogContext -> do
           let (systemPrompt, userPrompt) = buildBlogPrompt blogContext
-              genConfig = Gemini.defaultGenerationConfig { Gemini.gcTemperature = 0.9, Gemini.gcMaxOutputTokens = 8192 }
+              genConfig = Gemini.defaultGenerationConfig { Gemini.temperature = 0.9, Gemini.maxOutputTokens = 8192 }
 
           result <- Gemini.generateContentWithFallback manager models (Just systemPrompt) userPrompt apiKey genConfig
           case result of

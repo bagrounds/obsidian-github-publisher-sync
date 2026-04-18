@@ -68,15 +68,15 @@ classifyException exception =
     Nothing -> NetworkError (T.pack (show exception))
 
 data Credentials = Credentials
-  { tcApiKey :: Secret
-  , tcApiSecret :: Secret
-  , tcAccessToken :: Secret
-  , tcAccessSecret :: Secret
+  { apiKey :: Secret
+  , apiSecret :: Secret
+  , accessToken :: Secret
+  , accessSecret :: Secret
   } deriving (Show, Eq)
 
 data PostResult = PostResult
-  { trId :: Text
-  , trText :: Text
+  { postId :: Text
+  , content :: Text
   } deriving (Show, Eq)
 
 limits :: PlatformLimits
@@ -159,11 +159,11 @@ buildOAuthHeader Credentials {..} httpMethod baseUrl = do
   timestamp <- T.pack . show . (floor @Double @Integer) . realToFrac <$> getPOSIXTime
   nonce <- generateNonce
   let oauthParams =
-        [ ("oauth_consumer_key", unSecret tcApiKey)
+        [ ("oauth_consumer_key", unSecret apiKey)
         , ("oauth_nonce", nonce)
         , ("oauth_signature_method", "HMAC-SHA1")
         , ("oauth_timestamp", timestamp)
-        , ("oauth_token", unSecret tcAccessToken)
+        , ("oauth_token", unSecret accessToken)
         , ("oauth_version", "1.0")
         ]
       paramString =
@@ -172,7 +172,7 @@ buildOAuthHeader Credentials {..} httpMethod baseUrl = do
       signatureBase =
         httpMethod <> "&" <> percentEncode baseUrl <> "&" <> percentEncode paramString
       signingKey =
-        TE.encodeUtf8 $ percentEncode (unSecret tcApiSecret) <> "&" <> percentEncode (unSecret tcAccessSecret)
+        TE.encodeUtf8 $ percentEncode (unSecret apiSecret) <> "&" <> percentEncode (unSecret accessSecret)
       signature =
         TE.decodeUtf8 $ B64.encode $ hmacSHA1 signingKey (TE.encodeUtf8 signatureBase)
       allParams = sort $ ("oauth_signature", signature) : oauthParams

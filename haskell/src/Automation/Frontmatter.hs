@@ -136,14 +136,14 @@ readReflection date contentDir = do
             title <- mkTitle titleText
             url <- mkUrl urlText
             pure ReflectionData
-              { rdDate = date
-              , rdTitle = title
-              , rdUrl = url
-              , rdBody = body
-              , rdFilePath = T.pack filePath
-              , rdHasTweetSection = hasTweet
-              , rdHasBlueskySection = hasBluesky
-              , rdHasMastodonSection = hasMastodon
+              { date = date
+              , title = title
+              , url = url
+              , body = body
+              , filePath = T.pack filePath
+              , hasTweetSection = hasTweet
+              , hasBlueskySection = hasBluesky
+              , hasMastodonSection = hasMastodon
               }
       case validated of
         Right reflection -> pure (Just reflection)
@@ -168,14 +168,14 @@ readNote relativePath contentDir = do
             title <- mkTitle titleText
             url <- mkUrl urlText
             pure ReflectionData
-              { rdDate = date
-              , rdTitle = title
-              , rdUrl = url
-              , rdBody = body
-              , rdFilePath = T.pack filePath
-              , rdHasTweetSection = hasTweet
-              , rdHasBlueskySection = hasBluesky
-              , rdHasMastodonSection = hasMastodon
+              { date = date
+              , title = title
+              , url = url
+              , body = body
+              , filePath = T.pack filePath
+              , hasTweetSection = hasTweet
+              , hasBlueskySection = hasBluesky
+              , hasMastodonSection = hasMastodon
               }
       case validated of
         Right note -> pure (Just note)

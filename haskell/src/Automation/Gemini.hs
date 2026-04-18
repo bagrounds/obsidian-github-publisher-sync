@@ -184,9 +184,9 @@ isQuotaExhaustedError (AllModelsFailed _ inner) = isQuotaExhaustedError inner
 isQuotaExhaustedError _ = False
 
 data Config = Config
-  { gcApiKey :: Secret
-  , gcModel :: Model
-  , gcQuestionModel :: Model
+  { apiKey :: Secret
+  , model :: Model
+  , questionModel :: Model
   } deriving (Show, Eq)
 
 defaultModel :: Model
@@ -206,20 +206,20 @@ modelFallback Gemini31FlashLite = Just flashFallback
 modelFallback _                 = Nothing
 
 data GenerationConfig = GenerationConfig
-  { gcTemperature    :: Double
-  , gcMaxOutputTokens :: Int
+  { temperature    :: Double
+  , maxOutputTokens :: Int
   } deriving (Show, Eq)
 
 instance ToValue GenerationConfig where
   toValue gc = object
-    [ "temperature" .= gcTemperature gc
-    , "maxOutputTokens" .= gcMaxOutputTokens gc
+    [ "temperature" .= temperature gc
+    , "maxOutputTokens" .= maxOutputTokens gc
     ]
 
 defaultGenerationConfig :: GenerationConfig
 defaultGenerationConfig = GenerationConfig
-  { gcTemperature     = 0.7
-  , gcMaxOutputTokens = 1024
+  { temperature     = 0.7
+  , maxOutputTokens = 1024
   }
 
 data Request = Request

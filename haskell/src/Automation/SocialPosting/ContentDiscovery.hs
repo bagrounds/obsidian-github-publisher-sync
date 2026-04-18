@@ -75,17 +75,17 @@ data ContentNote = ContentNote
   } deriving (Show, Eq)
 
 data ContentToPost = ContentToPost
-  { ctpPlatform     :: Platform
-  , ctpNote         :: ContentNote
-  , ctpPathFromRoot :: [Text]
+  { platform     :: Platform
+  , note         :: ContentNote
+  , pathFromRoot :: [Text]
   } deriving (Show, Eq)
 
 data FindContentConfig = FindContentConfig
-  { fccContentDir             :: FilePath
-  , fccPlatforms              :: [Platform]
-  , fccPostingCutoff          :: TimeOfDay
-  , fccPublicationChecker     :: Maybe (Text -> IO Bool)
-  , fccImageBackfillContentDirs :: [ContentDirectory]
+  { contentDir             :: FilePath
+  , platforms              :: [Platform]
+  , postingCutoff          :: TimeOfDay
+  , publicationChecker     :: Maybe (Text -> IO Bool)
+  , imageBackfillContentDirs :: [ContentDirectory]
   }
 
 defaultPostingCutoff :: TimeOfDay
@@ -253,70 +253,70 @@ isReflectionEligibleForPosting now postingCutoff reflectionDate =
        || reflectionDate < yesterday
 
 data BfsState = BfsState
-  { bsVisited   :: Set Text
-  , bsQueue     :: [(Text, [Text])]
-  , bsResults   :: [ContentToPost]
-  , bsFilled    :: Set Platform
-  , bsParentMap :: Map.Map Text Text
+  { visited   :: Set Text
+  , queue     :: [(Text, [Text])]
+  , results   :: [ContentToPost]
+  , filled    :: Set Platform
+  , parentMap :: Map.Map Text Text
   }
 
 bfsContentDiscovery :: FindContentConfig -> IO [ContentToPost]
 bfsContentDiscovery config = do
-  mStart <- findMostRecentReflection (fccContentDir config)
+  mStart <- findMostRecentReflection (contentDir config)
   case mStart of
     Nothing -> do
       putStrLn "  📭 No reflections found"
       pure []
     Just startPath -> do
       let initialState = BfsState
-            { bsVisited   = Set.singleton startPath
-            , bsQueue     = [(startPath, [startPath])]
-            , bsResults   = []
-            , bsFilled    = Set.empty
-            , bsParentMap = Map.empty
+            { visited   = Set.singleton startPath
+            , queue     = [(startPath, [startPath])]
+            , results   = []
+            , filled    = Set.empty
+            , parentMap = Map.empty
             }
       bfsLoop config initialState
 
 bfsLoop :: FindContentConfig -> BfsState -> IO [ContentToPost]
 bfsLoop config state =
-  case bsQueue state of
-    [] -> pure (bsResults state)
-    _ | Set.fromList (fccPlatforms config) == bsFilled state ->
-        pure (bsResults state)
+  case queue state of
+    [] -> pure (results state)
+    _ | Set.fromList (platforms config) == filled state ->
+        pure (results state)
     ((currentPath, pathFromRoot) : rest) -> do
-      let state' = state { bsQueue = rest }
-      mNote <- readContentNote currentPath (fccContentDir config)
+      let state' = state { queue = rest }
+      mNote <- readContentNote currentPath (contentDir config)
       case mNote of
         Nothing -> bfsLoop config state'
         Just note -> do
-          eligible <- checkBfsEligibility (unRelativePath (noteRelativePath note)) (fccPostingCutoff config)
+          eligible <- checkBfsEligibility (unRelativePath (noteRelativePath note)) (postingCutoff config)
           now <- getCurrentTime
           let awaitingImage = isAwaitingImageBackfill
-                (fccImageBackfillContentDirs config) now
+                (imageBackfillContentDirs config) now
                 (unRelativePath (noteRelativePath note)) (noteBody note)
                 (noteImageDate note)
-          mValidated <- case (isPostableContent note && eligible && not awaitingImage, fccPublicationChecker config) of
+          mValidated <- case (isPostableContent note && eligible && not awaitingImage, publicationChecker config) of
             (True, Just checker) -> validateNoteUrl checker note
             (True, Nothing)      -> pure (Just note)
             (False, _)           -> pure Nothing
           let neededPlatforms = filter
-                (\p -> not (Set.member p (bsFilled state'))
+                (\p -> not (Set.member p (filled state'))
                        && not (Set.member p (notePostedPlatforms note)))
-                (fccPlatforms config)
+                (platforms config)
               newResults = case mValidated of
                 Just vNote -> fmap (\p -> ContentToPost p vNote pathFromRoot) neededPlatforms
                 Nothing    -> []
-              newFilled = Set.union (bsFilled state') $
-                Set.fromList (fmap ctpPlatform newResults)
-              neighbors = filter (\l -> not (Set.member l (bsVisited state')))
+              newFilled = Set.union (filled state') $
+                Set.fromList (fmap platform newResults)
+              neighbors = filter (\l -> not (Set.member l (visited state')))
                             (fmap unRelativePath (noteLinkedNotePaths note))
-              newVisited = foldl (flip Set.insert) (bsVisited state') neighbors
+              newVisited = foldl (flip Set.insert) (visited state') neighbors
               newQueue = rest <> fmap (\n -> (n, pathFromRoot <> [n])) neighbors
               state'' = state'
-                { bsVisited = newVisited
-                , bsQueue   = newQueue
-                , bsResults = bsResults state' <> newResults
-                , bsFilled  = newFilled
+                { visited = newVisited
+                , queue   = newQueue
+                , results = results state' <> newResults
+                , filled  = newFilled
                 }
           bfsLoop config state''
 
@@ -336,7 +336,7 @@ discoverContentToPost :: FindContentConfig -> Bool -> IO [ContentToPost]
 discoverContentToPost config isPastPostingHour =
   if isPastPostingHour
     then do
-      mRefl <- findMostRecentReflection (fccContentDir config)
+      mRefl <- findMostRecentReflection (contentDir config)
       case mRefl of
         Nothing -> bfsContentDiscovery config
         Just reflPath -> do
@@ -344,14 +344,14 @@ discoverContentToPost config isPastPostingHour =
           let eligible = case parseDateFromPath reflPath of
                 Nothing -> False
                 Just reflectionDate -> isReflectionEligibleForPosting
-                  now (fccPostingCutoff config) reflectionDate
+                  now (postingCutoff config) reflectionDate
           if eligible
             then do
-              mNote <- readContentNote reflPath (fccContentDir config)
+              mNote <- readContentNote reflPath (contentDir config)
               case mNote of
                 Just note | isPostableContent note
-                          , not (isAwaitingImageBackfill (fccImageBackfillContentDirs config) now (unRelativePath (noteRelativePath note)) (noteBody note) (noteImageDate note)) -> do
-                  mValidated <- case fccPublicationChecker config of
+                          , not (isAwaitingImageBackfill (imageBackfillContentDirs config) now (unRelativePath (noteRelativePath note)) (noteBody note) (noteImageDate note)) -> do
+                  mValidated <- case publicationChecker config of
                     Just checker -> validateNoteUrl checker note
                     Nothing      -> pure (Just note)
                   case mValidated of
@@ -361,7 +361,7 @@ discoverContentToPost config isPastPostingHour =
                     Just vNote -> do
                       let neededPlatforms = filter
                             (\p -> not (Set.member p (notePostedPlatforms vNote)))
-                            (fccPlatforms config)
+                            (platforms config)
                       case neededPlatforms of
                         [] -> bfsContentDiscovery config
                         _  -> pure $ fmap (\p -> ContentToPost p vNote [reflPath]) neededPlatforms

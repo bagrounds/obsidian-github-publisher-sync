@@ -42,16 +42,17 @@ import qualified Automation.ObsidianSync as Sync
 import Automation.Platform (Platform (..), PlatformLimits (..))
 import qualified Automation.Platforms.Bluesky as Bluesky
 import qualified Automation.Platforms.Mastodon as Mastodon
-import Automation.Platforms.OgMetadata (fetchOgMetadata, OgMetadata (..))
+import qualified Automation.Platforms.OgMetadata as OgMeta
+import Automation.Platforms.OgMetadata (fetchOgMetadata)
 import qualified Automation.Platforms.Twitter as Twitter
 import Automation.Prompts (PromptPair (..), assemblePost, buildQuestionPrompt, buildShortenQuestionPrompt, buildTagsPrompt)
 import Automation.Reflection (ReflectionData (..))
 import Automation.Secret (Secret, unSecret)
 import Automation.BlogImage.ContentDirectory (ContentDirectory)
+import qualified Automation.SocialPosting.ContentDiscovery as CD
 import Automation.SocialPosting.ContentDiscovery
   ( ContentNote (..)
-  , ContentToPost (..)
-  , FindContentConfig (..)
+  , FindContentConfig (FindContentConfig)
   , checkUrlPublished
   , defaultPostingCutoff
   , discoverContentToPost
@@ -120,29 +121,29 @@ platformLimits Mastodon = Mastodon.limits
 
 getConfiguredPlatforms :: EnvironmentConfig -> [Platform]
 getConfiguredPlatforms ec = catMaybes
-  [ case ecTwitter ec of { Just _ -> Just Twitter; Nothing -> Nothing }
-  , case ecBluesky ec of { Just _ -> Just Bluesky; Nothing -> Nothing }
-  , case ecMastodon ec of { Just _ -> Just Mastodon; Nothing -> Nothing }
+  [ case twitter ec of { Just _ -> Just Twitter; Nothing -> Nothing }
+  , case bluesky ec of { Just _ -> Just Bluesky; Nothing -> Nothing }
+  , case mastodon ec of { Just _ -> Just Mastodon; Nothing -> Nothing }
   ]
 
 generateSocialPostText :: Manager -> Secret -> ContentNote -> Platform -> IO (Either Text Text)
 generateSocialPostText manager apiKey note platform = do
   let rd = ReflectionData
-        { rdDate = extractDateFromPath (noteRelativePath note)
-        , rdTitle = noteTitle note
-        , rdUrl = noteUrl note
-        , rdBody = noteBody note
-        , rdFilePath = T.pack (noteFilePath note)
-        , rdHasTweetSection = Set.member Twitter (notePostedPlatforms note)
-        , rdHasBlueskySection = Set.member Bluesky (notePostedPlatforms note)
-        , rdHasMastodonSection = Set.member Mastodon (notePostedPlatforms note)
+        { date = extractDateFromPath (noteRelativePath note)
+        , title = noteTitle note
+        , url = noteUrl note
+        , body = noteBody note
+        , filePath = T.pack (noteFilePath note)
+        , hasTweetSection = Set.member Twitter (notePostedPlatforms note)
+        , hasBlueskySection = Set.member Bluesky (notePostedPlatforms note)
+        , hasMastodonSection = Set.member Mastodon (notePostedPlatforms note)
         }
       tagsPrompt = buildTagsPrompt rd
       questionPrompt = buildQuestionPrompt rd
-      tagsCombined = ppSystem tagsPrompt <> "\n\n" <> ppUser tagsPrompt
-      questionCombined = ppSystem questionPrompt <> "\n\n" <> ppUser questionPrompt
+      tagsCombined = system tagsPrompt <> "\n\n" <> user tagsPrompt
+      questionCombined = system questionPrompt <> "\n\n" <> user questionPrompt
       maxLen = platformMaxCharacters (platformLimits platform)
-      genConfig = Gemini.defaultGenerationConfig { Gemini.gcTemperature = 0.8, Gemini.gcMaxOutputTokens = 512 }
+      genConfig = Gemini.defaultGenerationConfig { Gemini.temperature = 0.8, Gemini.maxOutputTokens = 512 }
 
   tagsResult <- Gemini.generateContentWithFallback manager (Gemini.defaultModel :| [Gemini.gemini3Flash, Gemini.flashFallback]) Nothing tagsCombined apiKey genConfig
   questionResult <- Gemini.generateContentWithFallback manager (Gemini.defaultQuestionModel :| [Gemini.flashFallback]) Nothing questionCombined apiKey genConfig
@@ -160,7 +161,7 @@ generateSocialPostText manager apiKey note platform = do
         then do
           let shortenSafetyBuffer = 10
               shortenPrompt = buildShortenQuestionPrompt question (overage + shortenSafetyBuffer)
-              shortenCombined = ppSystem shortenPrompt <> "\n\n" <> ppUser shortenPrompt
+              shortenCombined = system shortenPrompt <> "\n\n" <> user shortenPrompt
           putStrLn $ "  ✂️ Post exceeds Bluesky limit by " <> show overage <> " chars — asking LLM to shorten question..."
           shortenResult <- Gemini.generateContentWithFallback manager (Gemini.defaultQuestionModel :| [Gemini.flashFallback]) Nothing shortenCombined apiKey genConfig
           case shortenResult of
@@ -178,9 +179,9 @@ extractDateFromPath path =
   T.pack $ takeBaseName $ T.unpack $ unRelativePath path
 
 data PostResult = PostResult
-  { prPlatform :: Platform
-  , prEmbedHtml :: Text
-  , prSectionBuilder :: Text -> Text -> Text
+  { platform :: Platform
+  , embedHtml :: Text
+  , sectionBuilder :: Text -> Text -> Text
   }
 
 postToPlatform :: Manager -> EnvironmentConfig -> ContentNote -> Text -> Platform
@@ -194,33 +195,33 @@ postToPlatform manager env note postText platform =
 postToTwitterPlatform :: Manager -> EnvironmentConfig -> ContentNote -> Text
                       -> IO (Either Text PostResult)
 postToTwitterPlatform manager env _note postText =
-  case ecTwitter env of
+  case twitter env of
     Nothing -> pure (Left "Twitter not configured")
     Just creds -> do
       result <- Twitter.post manager creds postText
       case result of
         Left err -> pure (Left $ "Twitter post failed: " <> T.pack (show err))
         Right (tweetId, _tweetText) -> do
-          embedHtml <- Twitter.getEmbedHtml manager tweetId (unSecret (Twitter.tcAccessToken creds))
-                         (unSecret (Twitter.tcApiKey creds)) (unSecret (Twitter.tcApiSecret creds))
+          embedHtml <- Twitter.getEmbedHtml manager tweetId (unSecret (Twitter.accessToken creds))
+                         (unSecret (Twitter.apiKey creds)) (unSecret (Twitter.apiSecret creds))
           pure $ Right PostResult
-            { prPlatform = Twitter
-            , prEmbedHtml = embedHtml
-            , prSectionBuilder = buildTweetSection
+            { platform = Twitter
+            , embedHtml = embedHtml
+            , sectionBuilder = buildTweetSection
             }
 
 postToBlueskyPlatform :: Manager -> EnvironmentConfig -> ContentNote -> Text
                       -> IO (Either Text PostResult)
 postToBlueskyPlatform manager env note postText =
-  case ecBluesky env of
+  case bluesky env of
     Nothing -> pure (Left "Bluesky not configured")
     Just creds -> do
       ogMeta <- fetchOgMetadata (unUrl (noteUrl note))
       let linkCard = Bluesky.LinkCard
-            { lcUri = noteUrl note
-            , lcTitle = fromMaybe (noteTitle note) (ogTitle ogMeta)
-            , lcDescription = fromMaybe "" (ogDescription ogMeta)
-            , lcThumbUrl = ogImageUrl ogMeta
+            { uri = noteUrl note
+            , title = fromMaybe (noteTitle note) (OgMeta.title ogMeta)
+            , description = fromMaybe "" (OgMeta.description ogMeta)
+            , thumbUrl = OgMeta.imageUrl ogMeta
             }
       result <- Bluesky.post manager creds postText (Just linkCard)
       case result of
@@ -229,22 +230,22 @@ postToBlueskyPlatform manager env note postText =
           embedHtml <- Bluesky.getEmbedHtml manager Bluesky.defaultOEmbedConfig
                          (Bluesky.postUri blueskyPostResult)
           pure $ Right PostResult
-            { prPlatform = Bluesky
-            , prEmbedHtml = embedHtml
-            , prSectionBuilder = buildBlueskySection
+            { platform = Bluesky
+            , embedHtml = embedHtml
+            , sectionBuilder = buildBlueskySection
             }
 
 postToMastodonPlatform :: Manager -> EnvironmentConfig -> ContentNote -> Text
                        -> IO (Either Text PostResult)
 postToMastodonPlatform manager env _note postText =
-  case ecMastodon env of
+  case mastodon env of
     Nothing -> pure (Left "Mastodon not configured")
     Just creds -> do
       result <- Mastodon.post manager creds postText
       case result of
         Left err -> pure (Left $ "Mastodon post failed: " <> T.pack (show err))
         Right mpr -> do
-          let postUrl = unUrl (Mastodon.mprUrl mpr)
+          let postUrl = unUrl (Mastodon.url mpr)
               mInstance = Mastodon.extractInstanceUrl postUrl
               mStatusId = Mastodon.extractStatusId postUrl
               mUsername = Mastodon.extractUsername postUrl
@@ -252,15 +253,15 @@ postToMastodonPlatform manager env _note postText =
             (Just instanceUrl, Just statusId, Just _username) -> do
               embedHtml <- Mastodon.getEmbedHtml manager postUrl instanceUrl statusId
               pure $ Right PostResult
-                { prPlatform = Mastodon
-                , prEmbedHtml = embedHtml
-                , prSectionBuilder = buildMastodonSection
+                { platform = Mastodon
+                , embedHtml = embedHtml
+                , sectionBuilder = buildMastodonSection
                 }
             _ -> pure $ Left "Could not extract Mastodon post details from URL"
 
 data PostedNote = PostedNote
-  { pnNote      :: ContentNote
-  , pnPlatforms :: [Platform]
+  { note      :: ContentNote
+  , platforms :: [Platform]
   } deriving (Show, Eq)
 
 runPostingPipeline :: Manager -> EnvironmentConfig -> Secret -> FilePath -> [ContentDirectory] -> IO [PostedNote]
@@ -272,11 +273,11 @@ runPostingPipeline manager env apiKey vaultDir imageBackfillContentDirs = do
   tlsManager <- TLS.newTlsManager
   let currentTime = timeToTimeOfDay (utctDayTime now)
       config = FindContentConfig
-        { fccContentDir = vaultDir
-        , fccPlatforms = platforms
-        , fccPostingCutoff = defaultPostingCutoff
-        , fccPublicationChecker = Just (checkUrlPublished tlsManager)
-        , fccImageBackfillContentDirs = imageBackfillContentDirs
+        { contentDir = vaultDir
+        , platforms = platforms
+        , postingCutoff = defaultPostingCutoff
+        , publicationChecker = Just (checkUrlPublished tlsManager)
+        , imageBackfillContentDirs = imageBackfillContentDirs
         }
       isPastHour = currentTime >= defaultPostingCutoff
 
@@ -291,15 +292,15 @@ runPostingPipeline manager env apiKey vaultDir imageBackfillContentDirs = do
       results <- mapM (processNoteGroup manager env apiKey vaultDir) grouped
       pure (catMaybes results)
 
-groupByNote :: [ContentToPost] -> [([Platform], ContentNote, [Text])]
+groupByNote :: [CD.ContentToPost] -> [([Platform], ContentNote, [Text])]
 groupByNote items =
   let noteMap = foldl addToGroup Map.empty items
   in Map.elems noteMap
   where
     addToGroup acc ctp =
-      let key = noteRelativePath (ctpNote ctp)
+      let key = noteRelativePath (CD.note ctp)
       in Map.insertWith merge key
-           ([ctpPlatform ctp], ctpNote ctp, ctpPathFromRoot ctp) acc
+           ([CD.platform ctp], CD.note ctp, CD.pathFromRoot ctp) acc
     merge (p1, n, path) (p2, _, _) = (p1 <> p2, n, path)
 
 processNoteGroup :: Manager -> EnvironmentConfig -> Secret -> FilePath
@@ -314,9 +315,9 @@ processNoteGroup manager env apiKey vaultDir (platforms, note, pathFromRoot) = d
 
   let successes = mapMaybe eitherToMaybe results
       embedSections = fmap
-        (\pr -> (platformSectionHeader (prPlatform pr), prEmbedHtml pr, prSectionBuilder pr))
+        (\pr -> (platformSectionHeader (platform pr), embedHtml pr, sectionBuilder pr))
         successes
-      postedPlatforms = fmap prPlatform successes
+      postedPlatforms = fmap platform successes
 
   case embedSections of
     [] -> do
@@ -358,7 +359,7 @@ eitherToMaybe (Left _)  = Nothing
 autoPost :: Manager -> FilePath -> [ContentDirectory] -> IO ()
 autoPost manager vaultDir imageBackfillContentDirs = do
   env <- validateEnvironment
-  let apiKey = Gemini.gcApiKey (ecGemini env)
+  let apiKey = Gemini.apiKey (gemini env)
 
   regenerateResult <- try (regenerateBlueskyEmbeds manager vaultDir)
     :: IO (Either SomeException ())
@@ -376,8 +377,8 @@ autoPost manager vaultDir imageBackfillContentDirs = do
 
   today <- todayPacificDay
   let updateLinks = fmap (\pn ->
-        let details = fmap platformUpdateDetail (pnPlatforms pn)
-        in UpdateLink (noteRelativePath (pnNote pn)) (noteTitle (pnNote pn)) details
+        let details = fmap platformUpdateDetail (platforms pn)
+        in UpdateLink (noteRelativePath (note pn)) (noteTitle (note pn)) details
         ) postedNotes
   _ <- addUpdateLinksToReflection vaultDir today updateLinks
   pure ()

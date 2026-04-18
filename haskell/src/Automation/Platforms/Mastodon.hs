@@ -68,14 +68,14 @@ classifyException exception =
     Nothing -> NetworkError (T.pack (show exception))
 
 data Credentials = Credentials
-  { mcInstanceUrl :: Url
-  , mcAccessToken :: Secret
+  { instanceUrl :: Url
+  , accessToken :: Secret
   } deriving (Show, Eq)
 
 data PostResult = PostResult
-  { mprId :: Text
-  , mprUrl :: Url
-  , mprText :: Text
+  { postId :: Text
+  , url :: Url
+  , content :: Text
   } deriving (Show, Eq)
 
 limits :: PlatformLimits
@@ -138,7 +138,7 @@ generateUUID = do
 post :: Manager -> Credentials -> Text -> IO (Either Error PostResult)
 post manager Credentials{..} statusText = do
   idempotencyKey <- generateUUID
-  let apiUrl = unUrl mcInstanceUrl <> "/api/v1/statuses"
+  let apiUrl = unUrl instanceUrl <> "/api/v1/statuses"
       bodyJson = encode (object
         [ "status"     .= statusText
         , "visibility" .= ("public" :: Text)
@@ -151,7 +151,7 @@ post manager Credentials{..} statusText = do
             { method = "POST"
             , requestBody = RequestBodyLBS bodyJson
             , requestHeaders =
-                [ ("Authorization", "Bearer " <> TE.encodeUtf8 (unSecret mcAccessToken))
+                [ ("Authorization", "Bearer " <> TE.encodeUtf8 (unSecret accessToken))
                 , ("Content-Type", "application/json")
                 , ("Idempotency-Key", TE.encodeUtf8 idempotencyKey)
                 ]
@@ -180,22 +180,22 @@ extractMastodonData fallbackText = withObject "mastodon response" $ \obj -> do
   statusUrl <- obj .: "url"
   case mkUrl statusUrl of
     Right url -> pure PostResult
-      { mprId = statusId
-      , mprUrl = url
-      , mprText = fallbackText
+      { postId = statusId
+      , url = url
+      , content = fallbackText
       }
     Left err -> Left (T.unpack err)
 
 deletePost :: Manager -> Credentials -> Text -> IO (Either Error ())
 deletePost manager Credentials{..} statusId = do
-  let apiUrl = unUrl mcInstanceUrl <> "/api/v1/statuses/" <> statusId
+  let apiUrl = unUrl instanceUrl <> "/api/v1/statuses/" <> statusId
   result <- try @SomeException $ do
     initialReq <- parseRequest (T.unpack apiUrl)
     let req =
           initialReq
             { method = "DELETE"
             , requestHeaders =
-                [("Authorization", "Bearer " <> TE.encodeUtf8 (unSecret mcAccessToken))]
+                [("Authorization", "Bearer " <> TE.encodeUtf8 (unSecret accessToken))]
             }
     response <- httpLbs req manager
     let status = statusCode (responseStatus response)

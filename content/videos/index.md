@@ -5,10 +5,10 @@ aliases:
 title: 📺 Videos
 URL: https://bagrounds.org/videos
 backlinks: false
-updated: 2026-04-17T23:30:20-07:00
+updated: 2026-04-18T08:47:35-07:00
 ---
 [Home](../index.md)  
-# 📺 Videos (768)  
+# 📺 Videos (769)  
 - [💰🤑🤖💡🚀💲 $0.10/Month Runs My Entire AI Life. I'll Show You How.](./0-10-month-runs-my-entire-ai-life-ill-show-you-how.md)  
 - [📊📈📉📃👁️ 10 Charts to Understand the 900 Page Budget Bill](./10-charts-to-understand-the-900-page-budget-bill.md)  
 - [🤖🔗⬆️✅ 12-Factor Agents: Patterns of reliable LLM applications — Dex Horthy, HumanLayer](./12-factor-agents-patterns-of-reliable-llm-applications-dex-horthy-humanlayer.md)  
@@ -23,6 +23,7 @@ updated: 2026-04-17T23:30:20-07:00
 - [😴⬇️⚡ 22: The Power of the Downstate, Optimizing Sleep and Recovery | Sara Mednick, PhD](./22-the-power-of-the-downstate-optimizing-sleep-and-recovery-sara-mednick-phd.md)  
 - [2️⃣⬆️🧠👩‍🚀 Double Your Productivity using this ADHD System (Invented by a Space Systems Engineer)](./double-your-productivity-using-this-adhd-system-invented-by-a-space-systems-engineer.md)  
 - [🤖💻📈⬇️2️⃣ The 5 Levels of AI Coding (Why Most of You Won't Make It Past Level 2)](./the-5-levels-of-ai-coding-why-most-of-you-wont-make-it-past-level-2.md)  
+- [💲💥🎯 $300 Just Beat 20-Person Teams At Their Own Job. You're Next.](./300-just-beat-20-person-teams-at-their-own-job-youre-next.md)  
 - [3️⃣1️⃣⚖️🏛️ Session 3, Part 1: Legal Issues](./session-3-part-1-legal-issues.md)  
 - [🏋️🤕🛑 3 Causes Of Pain In Shoulder Doing Push-ups +Tips To Stop Your Shoulder From Hurting With Push-ups](./3-causes-of-pain-in-shoulder-doing-push-ups-tips-to-stop-your-shoulder-from-hurting-with-push-ups.md)  
 - [🪜📈🏢 3 High Leverage Career Skills (From a Principal At Amazon)](./3-high-leverage-career-skills-from-a-principal-at-amazon.md)  

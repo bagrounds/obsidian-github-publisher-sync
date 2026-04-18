@@ -9,11 +9,16 @@ tags:
 affiliate link: https://amzn.to/46WtZ45
 updated: 2026-03-25T12:16:07.791Z
 force_analyze_links: false
-link_analysis_time: 2026-03-25T14:28:16.710Z
+link_analysis_time: 2026-04-17T00:00:00Z
 link_analysis_model: gemini-3.1-flash-lite-preview
+image_date: 2026-04-13T23:26:57Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A cinematic, top-down view of a sleek, metallic android hand resting on a polished, dark industrial surface. The hand is partially disassembled, with glowing, intricate circuitry and fiber-optic cables visible beneath a translucent synthetic-skin panel. Nearby, a small, floating diagnostic terminal projects a soft, holographic blue light onto the metallic surface, casting sharp, technical shadows. The background is a blurred, moody interior of a high-tech spaceship corridor, illuminated by dim, ambient amber and teal recessed lighting. The overall aesthetic is cold, precise, and atmospheric, emphasizing themes of artificial self-discovery and internal complexity.
+link_analysis_version: "2"
 ---
 [Home](../index.md) > [Books](./index.md) | [⏮️ 🚨🤖💥 All Systems Red](./all-systems-red.md) [⏭️ 🕵️‍♀️📜💻 Rogue Protocol](./rogue-protocol.md)  
 # 🤖🧠⚙️ Artificial Condition  
+![books-artificial-condition](../books-artificial-condition.jpg)  
 [🛒 Artificial Condition. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/46WtZ45)  
   
 ## 🤖 AI Summary  

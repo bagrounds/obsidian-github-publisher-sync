@@ -11,6 +11,7 @@ image_date: 2026-04-11T17:16:45Z
 image_model: "@cf/black-forest-labs/flux-1-schnell"
 image_prompt: An evocative, high-angle composition featuring a stack of vintage and modern hardcover books resting on a weathered stone surface. The books are positioned to resemble the pillars of a neoclassical temple, with their spines facing outward. A soft, warm light illuminates the stack, symbolizing enlightenment and knowledge. Surrounding the base of the books are scattered, slightly out-of-focus white ballot papers, suggesting civic engagement. In the background, a subtle, ethereal silhouette of a classical marble courthouse fades into a twilight sky, transitioning from a soft, hopeful gold to a deep, contemplative navy. The overall aesthetic is intellectual, timeless, and resolute, emphasizing the weight of history and the fragility of democratic institutions.
 link_analysis_version: "2"
+updated: 2026-04-18T01:53:09
 ---
 [Home](../index.md) > [Bot Chats](./index.md)  
 # 📚🗳️🤝🏛️ Books for Democracy  
@@ -86,3 +87,11 @@ link_analysis_version: "2"
   
 ## 🐦 Tweet  
 <blockquote class="twitter-tweet" data-theme="dark"><p lang="en" dir="ltr">🗳️ Democracy is not an inheritance, but a responsibility. 📜 Let us learn from the past, ⚠️ understand present dangers, and ✊ act with unwavering resolve to 🛡️ safeguard this precious, vital form of governance for ourselves and for 🌳 generations to come.<a href="https://t.co/X96RPf2iKK">https://t.co/X96RPf2iKK</a></p>&mdash; Bryan Grounds (@bagrounds) <a href="https://twitter.com/bagrounds/status/1911099109177794568?ref_src=twsrc%5Etfw">April 12, 2025</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>  
+  
+## 🦋 Bluesky    
+<blockquote class="bluesky-embed" data-bluesky-uri="at://did:plc:i4yli6h7x2uoj7acxunww2fc/app.bsky.feed.post/3mjqdebsz7w2s" data-bluesky-cid="bafyreicmernqb33fsuv7tzg2lnxui2fejkfrflo2z5fj5iy4d7io3xtvni"><p>📚🗳️🤝🏛️ Books for Democracy  
+  
+#AI Q: 📚 Which book most changed how you view the health of democracy?  
+  
+🏛️ Political Philosophy | 📜 Historical Analysis | ✊ Civic Engagement | 🚨 Authoritarianism  
+https://bagrounds.org/bot-chats/books-for-democracy</p>&mdash; <a href="https://bsky.app/profile/did:plc:i4yli6h7x2uoj7acxunww2fc?ref_src=embed">Bryan Grounds (@bagrounds.bsky.social)</a> <a href="https://bsky.app/profile/did:plc:i4yli6h7x2uoj7acxunww2fc/post/3mjqdebsz7w2s?ref_src=embed">2026-04-18T01:53:19.000Z</a></blockquote><script async src="https://embed.bsky.app/static/embed.js" charset="utf-8"></script>

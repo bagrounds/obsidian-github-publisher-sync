@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-04-17T18:00:08-07:00
+updated: 2026-04-17T20:55:00-07:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -70,24 +70,24 @@ updated: 2026-04-17T18:00:08-07:00
   
   
 ## [📚 Books](./books/index.md) (960)  
-- [🤫🧠 Subliminal: How Your Unconscious Mind Rules Your Behavior](./books/subliminal-how-your-unconscious-mind-rules-your-behavior.md)  
-- [🏗️😊🗺️✨ Designing Your Life: How to Build a Well-Lived, Joyful Life](./books/designing-your-life.md)  
-- [♟️🧠📈🎯 The Art of Strategy: A Game Theorist's Guide to Success in Business and Life](./books/the-art-of-strategy-a-game-theorists-guide-to-success-in-business-and-life.md)  
-- [❓🧠 The Hidden Spring: A Journey to the Source of Consciousness](./books/the-hidden-spring-a-journey-to-the-source-of-consciousness.md)  
+- [🇺🇸❓📚 ERISA Law Answer Book](./books/erisa-law-answer-book.md)  
+- [💼📜 ERISA: A Comprehensive Guide](./books/erisa-a-comprehensive-guide.md)  
+- [👨‍💼➕ Introduction to Employee Benefits Law](./books/introduction-to-employee-benefits-law.md)  
+- [💉🦠👶 Booster Shots: The Urgent Lessons of Measles and the Uncertain Future of Children's Health](./books/booster-shots-the-urgent-lessons-of-measles-and-the-uncertain-future-of-childrens-health.md)  
   
   
-## [📺 Videos](./videos/index.md) (765)  
+## [📺 Videos](./videos/index.md) (766)  
+- [🇺🇸🗣️🏛️ American Conversations: Representative Joe Morelle](./videos/american-conversations-representative-joe-morelle.md)  
+- [💰🚫➡️🗺️ Escape from Capitalism | Clara Mattei & Richard Wolff](./videos/escape-from-capitalism-clara-mattei-richard-wolff.md)  
 - [🏛️🗣️ Politics Chat, April 16, 2026](./videos/politics-chat-april-16-2026.md)  
 - [❌🤔💡 On being wrong | Kathryn Schulz](./videos/on-being-wrong-kathryn-schulz.md)  
-- [🏛️💸😡 Our Tax System Should Make You Furious | The Ezra Klein Show](./videos/our-tax-system-should-make-you-furious-the-ezra-klein-show.md)  
-- [💥🏚️🏛️ Zohran Mamdani says Iran war speaks to a “broken kind of politics” | Newsmakers](./videos/zohran-mamdani-says-iran-war-speaks-to-a-broken-kind-of-politics-newsmakers.md)  
   
   
 ## [🌌 Topics](./topics/index.md) (91)  
-- [🫂💖 Attachment Theory](./topics/attachment-theory.md)  
-- [➗📐 Math](./topics/math.md)  
-- [🐑🎀 Mary Had a Little Lamb](./topics/mary-had-a-little-lamb.md)  
-- [📚✍️ Literary Arts](./topics/literary-arts.md)  
+- [🎲🧪 Property Based Testing](./topics/property-based-testing.md)  
+- [💻🗣️ Programming Languages](./topics/programming-languages.md)  
+- [🤔📚 Philosophy](./topics/philosophy.md)  
+- [🌳🗺️🔗🏛️ Ontologies](./topics/ontologies.md)  
   
   
 ## [📄  Articles](./articles/index.md) (84)  
@@ -98,10 +98,10 @@ updated: 2026-04-17T18:00:08-07:00
   
   
 ## [🤖💬 Bot Chats](./bot-chats/index.md) (49)  
-- [📖 Book 🧭 Explorer 3](./bot-chats/book-explorer-3.md)  
-- [✍🏼 Blogiversary 🕯️](./bot-chats/blogiversary.md)  
+- [📐🔗🤖🧠 Category Theory for AI Engineering](./bot-chats/category-theory-for-ai-engineering.md)  
 - [📖 Book 🧭 Explorer 2](./bot-chats/book-explorer-2.md)  
-- [🕸️🪵🏅 Blogging Success](./bot-chats/blogging-success.md)  
+- [📚🗳️🤝🏛️ Books for Democracy](./bot-chats/books-for-democracy.md)  
+- [📖 Book 🧭 Explorer 1](./bot-chats/book-explorer-1.md)  
   
   
 ## [💾 Software](./software/index.md) (33)  
@@ -112,10 +112,10 @@ updated: 2026-04-17T18:00:08-07:00
   
   
 ## [👥 People](./people/index.md) (18)  
+- [👨‍🏫🤖 Andrew Ng](./people/andrew-ng.md)  
 - [🧠🤝🐘 Jonathan Haidt](./people/jonathan-haidt.md)  
 - [🧠🔬🧘‍♀️💪📈❤️‍🩹🗣️📚🌟 Kelly McGonigal](./people/kelly-mcgonigal.md)  
 - [🏛️🇺🇸📖 Heather Cox Richardson](./people/heather-cox-richardson.md)  
-- [🤔⚙️🗣️🤝💡🧩🔭📚👴 Russell Ackoff](./people/russell-ackoff.md)  
   
   
 ## [🛍️ Products](./products/index.md) (6)  

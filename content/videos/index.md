@@ -5,10 +5,10 @@ aliases:
 title: 📺 Videos
 URL: https://bagrounds.org/videos
 backlinks: false
-updated: 2026-04-17T18:00:08-07:00
+updated: 2026-04-17T20:55:00-07:00
 ---
 [Home](../index.md)  
-# 📺 Videos (765)  
+# 📺 Videos (766)  
 - [💰🤑🤖💡🚀💲 $0.10/Month Runs My Entire AI Life. I'll Show You How.](./0-10-month-runs-my-entire-ai-life-ill-show-you-how.md)  
 - [📊📈📉📃👁️ 10 Charts to Understand the 900 Page Budget Bill](./10-charts-to-understand-the-900-page-budget-bill.md)  
 - [🤖🔗⬆️✅ 12-Factor Agents: Patterns of reliable LLM applications — Dex Horthy, HumanLayer](./12-factor-agents-patterns-of-reliable-llm-applications-dex-horthy-humanlayer.md)  
@@ -71,6 +71,7 @@ updated: 2026-04-17T18:00:08-07:00
 - [🇺🇸🗣️👂 American Conversations: Diana Butler Bass](./american-conversations-diana-butler-bass.md)  
 - [🗺️✂️🏛️🗣️ American Conversations: Gerrymandering with Kate Compton Barr and Sam Wang](./american-conversations-gerrymandering-with-kate-compton-barr-and-sam-wang.md)  
 - [🇺🇸🗣️⚖️🗳️ American Conversations: Marc Elias](./american-conversations-marc-elias.md)  
+- [🇺🇸🗣️🏛️ American Conversations: Representative Joe Morelle](./american-conversations-representative-joe-morelle.md)  
 - [🗣️👂🇺🇸 American Conversations: Secretary Pete Buttigieg](./american-conversations-secretary-pete-buttigieg.md)  
 - [🇺🇸🗣️🏛️ American Conversations: Senator Andy Kim](./american-conversations-senator-andy-kim.md)  
 - [🇺🇸🗣️🏛️ American Conversations: Senator Jon Ossoff](./american-conversations-senator-jon-ossoff.md)  

@@ -9,6 +9,10 @@ Platform:
 Channel: Heather Cox Richardson
 tags:
 youtube: https://www.youtube.com/embed/EpP6i73j2CE
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_version: "2"
+link_analysis_time: 2026-04-17T00:00:00Z
+force_analyze_links: false
 ---
 [Home](../index.md) > [Videos](./index.md)  
 # 🏛️🗣️ Politics Chat, April 16, 2026  
@@ -61,4 +65,4 @@ youtube: https://www.youtube.com/embed/EpP6i73j2CE
 ### 🎨 Creatively Related  
   
 * 🌲 The Overstory by Richard Powers uses fiction to explore the deep connection between humans and the natural world, echoing concerns over environmental destruction.  
-* 🚜 The Grapes of Wrath by John Steinbeck illustrates the devastating impact of corporate greed and environmental collapse on the American working class.
+* 🚜 [🍇😡 The Grapes of Wrath](../books/the-grapes-of-wrath.md) by John Steinbeck illustrates the devastating impact of corporate greed and environmental collapse on the American working class.

@@ -10,11 +10,12 @@ CTA: 👣 Walk in their shoes.
 affiliate link: https://amzn.to/4r829t3
 updated: 2026-03-20T12:11:10.857Z
 link_analysis_model: gemini-3.1-flash-lite-preview
-link_analysis_time: 2026-04-03T00:00:00Z
+link_analysis_time: 2026-04-17T00:00:00Z
 force_analyze_links: false
 image_date: 2026-04-15T06:47:06Z
 image_model: "@cf/black-forest-labs/flux-1-schnell"
 image_prompt: A solitary figure, seen from behind, stands on a worn, cracked asphalt road that stretches towards a hazy, ambiguous horizon. The road itself appears to split or crumble into fragments. In the background, a subtle, almost ghostly, outline of an American landscape emerges – perhaps a distant factory or a small town, rendered in muted, desaturated tones. A shimmering, translucent wall or chasm of fractured light and shadow bisects the middle ground, symbolizing a profound emotional barrier and separation. The overall mood is one of quiet melancholy, frustration, and a deep sense of displacement, conveyed through the muted color palette and the figures contemplative stance.
+link_analysis_version: "2"
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🫥🇺🇸😡💔 Strangers in Their Own Land: Anger and Mourning on the American Right  

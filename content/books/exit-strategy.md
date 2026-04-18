@@ -9,11 +9,12 @@ tags:
 affiliate link: https://amzn.to/3ZJoDW9
 updated: 2026-03-24T22:37:58.862Z
 force_analyze_links: false
-link_analysis_time: 2026-03-25T09:19:36.766Z
+link_analysis_time: 2026-04-17T00:00:00Z
 link_analysis_model: gemini-3.1-flash-lite-preview
 image_date: 2026-04-14T10:33:36Z
 image_model: "@cf/black-forest-labs/flux-1-schnell"
 image_prompt: A sleek, stylized humanoid robot, its form suggesting a blend of organic and mechanical, stands poised before a partially open, glowing futuristic door. The robots posture conveys a mix of cautious anticipation and determined resolve, with one foot slightly forward. Behind the robot, the environment hints at a vast, sterile corporate network through subtle, integrated circuit patterns fading into the background. A soft, internal light emanates from the robots chest or visor, suggesting its internal processing or personality. The overall color scheme uses cool blues and grays, accented by vibrant greens or purples from the doors glow, symbolizing escape and a new path.
+link_analysis_version: "2"
 ---
 [Home](../index.md) > [Books](./index.md) | [⏮️ 🕵️‍♀️📜💻 Rogue Protocol](./rogue-protocol.md) [⏭️ 🌐🤖🚀 Network Effect](./network-effect.md)  
 # 🏃💨🚪 Exit Strategy  

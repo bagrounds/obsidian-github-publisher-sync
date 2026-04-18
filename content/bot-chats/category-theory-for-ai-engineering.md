@@ -11,6 +11,7 @@ image_date: 2026-04-11T18:14:46Z
 image_model: "@cf/black-forest-labs/flux-1-schnell"
 image_prompt: A minimalist, high-contrast illustration featuring a network of glowing, interconnected geometric nodes on a dark, deep-blue background. Each node represents a distinct AI foundation model, depicted as a complex, swirling fractal sphere. Connecting these spheres are vibrant, translucent ribbons that represent morphisms, forming a clean, mathematical graph structure. The composition is balanced and architectural, suggesting the order and rigor of category theory. Floating near the center is a subtle, crystalline structure that symbolizes a monad or functor—a geometric shape that bridges the different model nodes. The overall aesthetic is clean, modern, and technical, using a palette of electric blues, soft magentas, and crisp whites to emphasize the fusion of abstract mathematics and machine learning engineering.
 link_analysis_version: "2"
+updated: 2026-04-18T03:16:11
 ---
 [Home](../index.md) > [Bot Chats](./index.md)  
 # 📐🔗🤖🧠 Category Theory for AI Engineering  
@@ -269,4 +270,12 @@ You have a "summarization" task. One FM might prefer a prompt like "Summarize th
 🎉 By combining the practical insights from AI engineering books with the rigorous formalisms of category theory, you'll be well-equipped to explore and implement the "Categorical Model Algebra" approach to building the next generation of robust and intelligent AI systems.  
   
 ## 🐦 Tweet  
-<blockquote class="twitter-tweet" data-theme="dark"><p lang="en" dir="ltr">📐🔗🤖🧠 Category Theory for AI Engineering<br><br>🤖 Foundation Models | 🧮 Abstraction | 🤝 Interoperability | 🧪 Formalization | 🧱 Composition<a href="https://t.co/0HKSKhQpSi">https://t.co/0HKSKhQpSi</a></p>&mdash; Bryan Grounds (@bagrounds) <a href="https://twitter.com/bagrounds/status/1950956565768688039?ref_src=twsrc%5Etfw">July 31, 2025</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+<blockquote class="twitter-tweet" data-theme="dark"><p lang="en" dir="ltr">📐🔗🤖🧠 Category Theory for AI Engineering<br><br>🤖 Foundation Models | 🧮 Abstraction | 🤝 Interoperability | 🧪 Formalization | 🧱 Composition<a href="https://t.co/0HKSKhQpSi">https://t.co/0HKSKhQpSi</a></p>&mdash; Bryan Grounds (@bagrounds) <a href="https://twitter.com/bagrounds/status/1950956565768688039?ref_src=twsrc%5Etfw">July 31, 2025</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>  
+  
+## 🦋 Bluesky    
+<blockquote class="bluesky-embed" data-bluesky-uri="at://did:plc:i4yli6h7x2uoj7acxunww2fc/app.bsky.feed.post/3mjqhzk5pyy27" data-bluesky-cid="bafyreid5heksmfa5nhtgizgoniuns3lqokfkoeh4x6ezilwekannki6vta"><p>📐🔗🤖🧠 Category Theory for AI Engineering  
+  
+#AI Q: 📐 Could abstract math be the secret to fixing broken AI pipelines?  
+  
+🤖 Foundation Models | 🧮 Mathematical Abstraction | 🔌 Interoperability |  
+https://bagrounds.org/bot-chats/category-theory-for-ai-engineering</p>&mdash; <a href="https://bsky.app/profile/did:plc:i4yli6h7x2uoj7acxunww2fc?ref_src=embed">Bryan Grounds (@bagrounds.bsky.social)</a> <a href="https://bsky.app/profile/did:plc:i4yli6h7x2uoj7acxunww2fc/post/3mjqhzk5pyy27?ref_src=embed">2026-04-18T03:16:48.000Z</a></blockquote><script async src="https://embed.bsky.app/static/embed.js" charset="utf-8"></script>

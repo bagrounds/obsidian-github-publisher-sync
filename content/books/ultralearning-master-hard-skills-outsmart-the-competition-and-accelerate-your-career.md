@@ -6,6 +6,10 @@ URL: https://bagrounds.org/books/ultralearning-master-hard-skills-outsmart-the-c
 share: true
 affiliate link: https://amzn.to/40gy3Jj
 CTA: 🚀 Acquire expertise.
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_time: 2026-04-18T00:00:00Z
+force_analyze_links: false
+link_analysis_version: "2"
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🚀🧠🏆 Ultralearning: Master Hard Skills, Outsmart the Competition, and Accelerate Your Career  
@@ -52,7 +56,7 @@ The core of the book outlines nine principles 🌟 that underpin successful ultr
 * 🔢 **A Mind for Numbers: How to Excel at Math and Science (Even If You Flunked Algebra)** by Barbara Oakley. While focused on math and science 🧪, this book offers valuable insights 💡 into effective learning techniques, including dealing with procrastination 😩 and using different modes of thinking 🧠, relevant to any challenging subject.  
 * **[⛰️📈🥇 Peak: Secrets from the New Science of Expertise](./peak.md)** by Anders Ericsson and Robert Pool. This book explores the science of deliberate practice 💪, a concept central to the "Drill" principle in *Ultralearning*, explaining how experts achieve mastery 🌟.  
 * **[⚛️🔄 Atomic Habits: An Easy & Proven Way to Build Good Habits & Break Bad Ones](./atomic-habits.md)** by James Clear. Building consistent learning habits is crucial for any learning endeavor, and Clear's book provides a practical framework for creating and maintaining effective habits.  
-* 🥋 **The Art of Learning: An Inner Journey to Optimal Performance** by Josh Waitzkin. Written by a chess prodigy and martial arts champion 🏆, this book offers insights into the mindset and psychological aspects of mastering skills.  
+* 🥋 **[🎨🤓 The Art of Learning: A Journey in the Pursuit of Excellence](./the-art-of-learning.md): An Inner Journey to Optimal Performance** by Josh Waitzkin. Written by a chess prodigy and martial arts champion 🏆, this book offers insights into the mindset and psychological aspects of mastering skills.  
 * **[💪❤️ So Good They Can't Ignore You: Why Skills Trump Passion in the Quest for Work You Love](./so-good-they-cant-ignore-you-why-skills-trump-passion-in-the-quest-for-work-you-love.md)** by Cal Newport. This book argues for the importance of acquiring rare and valuable skills as a path to career satisfaction, resonating with the career acceleration aspect of *Ultralearning*.  
 * ✍️ **How to Take Smart Notes: One Simple Technique to Boost Writing, Learning and Thinking – for Students, Academics and Nonfiction Book Writers** by Sönke Ahrens. This book introduces the Zettelkasten method 🧠, a system for organizing thoughts and learned information that can significantly enhance retention and synthesis, relevant to the "Retention" principle.  
 * **[📈🌟 High Performance Habits: How Extraordinary People Become That Way](./high-performance-habits-how-extraordinary-people-become-that-way.md)** by Brendon Burchard. This book examines the habits of successful individuals, offering practical advice on achieving high performance 🚀, which can be applied to intense learning projects.  

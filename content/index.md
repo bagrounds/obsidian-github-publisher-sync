@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-04-17T20:55:00-07:00
+updated: 2026-04-17T22:27:28-07:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -70,24 +70,24 @@ updated: 2026-04-17T20:55:00-07:00
   
   
 ## [📚 Books](./books/index.md) (960)  
+- [🧑‍💼✅ Case Studies In ERISA: Why It Matters And How It Benefits You](./books/case-studies-in-erisa-why-it-matters-and-how-it-benefits-you.md)  
 - [🇺🇸❓📚 ERISA Law Answer Book](./books/erisa-law-answer-book.md)  
 - [💼📜 ERISA: A Comprehensive Guide](./books/erisa-a-comprehensive-guide.md)  
 - [👨‍💼➕ Introduction to Employee Benefits Law](./books/introduction-to-employee-benefits-law.md)  
-- [💉🦠👶 Booster Shots: The Urgent Lessons of Measles and the Uncertain Future of Children's Health](./books/booster-shots-the-urgent-lessons-of-measles-and-the-uncertain-future-of-childrens-health.md)  
   
   
-## [📺 Videos](./videos/index.md) (766)  
+## [📺 Videos](./videos/index.md) (767)  
+- [🌍🎙️ Grounded Podcast with Jon Tester & Maritsa Georgiou](./videos/grounded-podcast-with-jon-tester-maritsa-georgiou.md)  
+- [📣📊🧠 Brooks and Capehart on Trump's approval ratings and mental acuity](./videos/brooks-and-capehart-on-trumps-approval-ratings-and-mental-acuity.md)  
 - [🇺🇸🗣️🏛️ American Conversations: Representative Joe Morelle](./videos/american-conversations-representative-joe-morelle.md)  
 - [💰🚫➡️🗺️ Escape from Capitalism | Clara Mattei & Richard Wolff](./videos/escape-from-capitalism-clara-mattei-richard-wolff.md)  
-- [🏛️🗣️ Politics Chat, April 16, 2026](./videos/politics-chat-april-16-2026.md)  
-- [❌🤔💡 On being wrong | Kathryn Schulz](./videos/on-being-wrong-kathryn-schulz.md)  
   
   
 ## [🌌 Topics](./topics/index.md) (91)  
-- [🎲🧪 Property Based Testing](./topics/property-based-testing.md)  
-- [💻🗣️ Programming Languages](./topics/programming-languages.md)  
-- [🤔📚 Philosophy](./topics/philosophy.md)  
-- [🌳🗺️🔗🏛️ Ontologies](./topics/ontologies.md)  
+- [📋⚖️ Rules](./topics/rules.md)  
+- [😴🛌🧘 REST](./topics/rest.md)  
+- [🕊️⛪ Religion](./topics/religion.md)  
+- [🤖🔄🧠💪 Reinforcement Learning based Adaptive Control](./topics/reinforcement-learning-based-adaptive-control.md)  
   
   
 ## [📄  Articles](./articles/index.md) (84)  

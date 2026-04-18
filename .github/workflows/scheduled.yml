@@ -89,6 +89,8 @@ jobs:
           DISABLE_BLUESKY: ${{ vars.DISABLE_BLUESKY || '' }}
           DISABLE_MASTODON: ${{ vars.DISABLE_MASTODON || '' }}
           LINKING_MODEL: ${{ vars.LINKING_MODEL || 'gemini-3.1-flash-lite-preview' }}
+          GA_PROPERTY_ID: ${{ secrets.GA_PROPERTY_ID }}
+          GCP_SERVICE_ACCOUNT_KEY: ${{ secrets.GCP_SERVICE_ACCOUNT_KEY }}
           REPO_ROOT: ${{ github.workspace }}
         run: >-
           bin/run-scheduled

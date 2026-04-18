@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-04-17T22:27:28-07:00
+updated: 2026-04-17T22:34:58-07:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -76,11 +76,11 @@ updated: 2026-04-17T22:27:28-07:00
 - [👨‍💼➕ Introduction to Employee Benefits Law](./books/introduction-to-employee-benefits-law.md)  
   
   
-## [📺 Videos](./videos/index.md) (767)  
+## [📺 Videos](./videos/index.md) (768)  
+- [👑📉⚠️🐘 Why Orbán’s Fall Should Worry Trump and MAGA | Timothy Snyder & Preet Bharara](./videos/why-orbans-fall-should-worry-trump-and-maga-timothy-snyder-preet-bharara.md)  
 - [🌍🎙️ Grounded Podcast with Jon Tester & Maritsa Georgiou](./videos/grounded-podcast-with-jon-tester-maritsa-georgiou.md)  
 - [📣📊🧠 Brooks and Capehart on Trump's approval ratings and mental acuity](./videos/brooks-and-capehart-on-trumps-approval-ratings-and-mental-acuity.md)  
 - [🇺🇸🗣️🏛️ American Conversations: Representative Joe Morelle](./videos/american-conversations-representative-joe-morelle.md)  
-- [💰🚫➡️🗺️ Escape from Capitalism | Clara Mattei & Richard Wolff](./videos/escape-from-capitalism-clara-mattei-richard-wolff.md)  
   
   
 ## [🌌 Topics](./topics/index.md) (91)  

@@ -9,8 +9,9 @@ Platform: "#YouTube"
 Channel:
 tags:
 link_analysis_model: gemini-3.1-flash-lite-preview
-link_analysis_time: 2026-04-01T00:00:00Z
+link_analysis_time: 2026-04-18T00:00:00Z
 force_analyze_links: false
+link_analysis_version: "2"
 ---
 [Home](../index.md) > [Videos](./index.md) | [⏮️ Your Theme](./your-theme.md) [⏭️ 2025 Yearly Themes](./2025-yearly-themes.md) | [📒 Bullet Journal](./bullet-journal.md)  
 # This Journal Keeps Me Productive (and Maybe You Too)  

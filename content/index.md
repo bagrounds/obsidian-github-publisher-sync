@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-04-18T09:22:42-07:00
+updated: 2026-04-18T15:08:25-07:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -70,24 +70,24 @@ updated: 2026-04-18T09:22:42-07:00
   
   
 ## [📚 Books](./books/index.md) (960)  
-- [🤝📈🇺🇸🔁 The Upswing: How America Came Together a Century Ago and How We Can Do It Again](./books/the-upswing.md)  
-- [↔️ Why We're Polarized](./books/why-were-polarized.md)  
-- [🧠🫂 The Embodied Mind: Cognitive Science and Human Experience](./books/the-embodied-mind-cognitive-science-and-human-experience.md)  
-- [🧠🏃 The Psychological Benefits of Exercise and Physical Activity](./books/the-psychological-benefits-of-exercise-and-physical-activity.md)  
+- [🏭☢️😱 Manufactured Crisis: The Untold Story of the Iran Nuclear Scare](./books/manufactured-crisis-the-untold-story-of-the-iran-nuclear-scare.md)  
+- [🤡🫨😭🤬😵‍💫🤥👹🇺🇸 A Very Stable Genius: Donald J. Trump's Testing of America](./books/a-very-stable-genius-donald-j-trumps-testing-of-america.md)  
+- [🤫💰🕵️ The New Confessions of an Economic Hit Man](./books/the-new-confessions-of-an-economic-hit-man.md)  
+- [🇺🇸💸🧺🌍 American Kleptocracy: How the U.S. Created the World's Greatest Money Laundering Scheme in History](./books/american-kleptocracy-how-the-us-created-the-worlds-greatest-money-laundering-scheme-in-history.md)  
   
   
-## [📺 Videos](./videos/index.md) (770)  
-- [📉⚙️📈💰 Three unremarkable systems that made me a six-figure solopreneur](./videos/three-unremarkable-systems-that-made-me-a-six-figure-solopreneur.md)  
-- [💲💥🎯 $300 Just Beat 20-Person Teams At Their Own Job. You're Next.](./videos/300-just-beat-20-person-teams-at-their-own-job-youre-next.md)  
-- [⏰👵🔬 Circadian Code to Extend Longevity | Satchin Panda | TEDxVeniceBeach](./videos/circadian-code-to-extend-longevity-satchin-panda-tedx-venice-beach.md)  
-- [👑📉⚠️🐘 Why Orbán’s Fall Should Worry Trump and MAGA | Timothy Snyder & Preet Bharara](./videos/why-orbans-fall-should-worry-trump-and-maga-timothy-snyder-preet-bharara.md)  
+## [📺 Videos](./videos/index.md) (771)  
+- [💥🇺🇸🏛️ This Could Change American Politics.](./videos/this-could-change-american-politics.md)  
+- [💻🌍🚶‍♀️ Where All the Tech Workers Are Going](./videos/where-all-the-tech-workers-are-going.md)  
+- [🤯🤖✅ The Hardest Problem AI Ever Solved, with Google DeepMind CEO](./videos/the-hardest-problem-ai-ever-solved-with-google-deepmind-ceo.md)  
+- [📓 This Journal Keeps Me Productive (& Maybe You Too)](./videos/this-journal-keeps-me-productive-and-maybe-you-too.md)  
   
   
 ## [🌌 Topics](./topics/index.md) (91)  
+- [♻️🫀🧠💪 Cognitive Behavioral Therapy](./topics/cognitive-behavioral-therapy.md)  
 - [👨‍👩‍👦🧭🤝 Authoritative Parenting](./topics/authoritative-parenting.md)  
 - [🎨🛠️ Applied Arts](./topics/applied-arts.md)  
 - [⚡🔌 Electrical Engineering](./topics/electrical-engineering.md)  
-- [🇨🇳🤖 DeepSeek](./topics/deepseek.md)  
   
   
 ## [📄  Articles](./articles/index.md) (84)  

@@ -9,6 +9,10 @@ Platform:
 Channel: Cindy's Got Systems
 tags:
 youtube: https://youtu.be/Aa48wlLFQBo
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_version: "2"
+link_analysis_time: 2026-04-18T00:00:00Z
+force_analyze_links: false
 ---
 [Home](../index.md) > [Videos](./index.md)  
 # 📉⚙️📈💰 Three unremarkable systems that made me a six-figure solopreneur  
@@ -27,7 +31,7 @@ youtube: https://youtu.be/Aa48wlLFQBo
   
 ## 🤔 Evaluation  
   
-⚖️ This approach prioritizes deep work and single-tasking, which aligns with Cal Newport's philosophies in Deep Work, published by Grand Central Publishing. While the speaker advocates for calendar-only management, some productivity experts, such as David Allen in Getting Things Done (Penguin Books), suggest that a separate system for non-time-specific tasks is necessary to free the mind from open loops. Topics to explore for deeper understanding include the neurological impact of constant context switching and the specific mechanics of time-blocking for creative versus administrative roles.  
+⚖️ This approach prioritizes deep work and single-tasking, which aligns with Cal Newport's philosophies in [🤿💼 Deep Work: Rules for Focused Success in a Distracted World](../books/deep-work.md), published by Grand Central Publishing. While the speaker advocates for calendar-only management, some productivity experts, such as David Allen in [✅😌 Getting Things Done: The Art of Stress-Free Productivity](../books/getting-things-done-the-art-of-stress-free-productivity.md) (Penguin Books), suggest that a separate system for non-time-specific tasks is necessary to free the mind from open loops. Topics to explore for deeper understanding include the neurological impact of constant context switching and the specific mechanics of time-blocking for creative versus administrative roles.  
   
 ## ❓ Frequently Asked Questions (FAQ)  
   

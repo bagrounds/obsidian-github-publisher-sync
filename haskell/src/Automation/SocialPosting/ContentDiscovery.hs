@@ -19,7 +19,6 @@ module Automation.SocialPosting.ContentDiscovery
   , urlFromFilePath
   , validateNoteUrl
   , defaultPostingCutoff
-  , findMostRecentReflection
   ) where
 
 import Control.Applicative ((<|>))

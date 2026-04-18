@@ -19,7 +19,7 @@ import qualified Data.Text.IO as TIO
 import Automation.BlogImage.ContentDirectory (ContentDirectory (..))
 import Automation.BlogSeriesConfig (imageBackfillContentDirsFrom)
 import Automation.Platform (Platform (..))
-import Automation.Reflection (selectMostRecentReflection)
+import Automation.Reflection (findMostRecentReflection, selectMostRecentReflection)
 import Automation.SocialPosting
   ( SocialPost (..)
   , mkBlueskyPost
@@ -36,7 +36,6 @@ import Automation.SocialPosting.ContentDiscovery
   , bfsContentDiscovery
   , checkBfsEligibility
   , detectPostedPlatforms
-  , findMostRecentReflection
   , isAwaitingImageBackfill
   , isIndexPath
   , isPostableContent

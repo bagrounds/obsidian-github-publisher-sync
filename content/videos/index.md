@@ -5,10 +5,10 @@ aliases:
 title: 📺 Videos
 URL: https://bagrounds.org/videos
 backlinks: false
-updated: 2026-04-18T08:47:35-07:00
+updated: 2026-04-18T08:56:32-07:00
 ---
 [Home](../index.md)  
-# 📺 Videos (769)  
+# 📺 Videos (770)  
 - [💰🤑🤖💡🚀💲 $0.10/Month Runs My Entire AI Life. I'll Show You How.](./0-10-month-runs-my-entire-ai-life-ill-show-you-how.md)  
 - [📊📈📉📃👁️ 10 Charts to Understand the 900 Page Budget Bill](./10-charts-to-understand-the-900-page-budget-bill.md)  
 - [🤖🔗⬆️✅ 12-Factor Agents: Patterns of reliable LLM applications — Dex Horthy, HumanLayer](./12-factor-agents-patterns-of-reliable-llm-applications-dex-horthy-humanlayer.md)  
@@ -636,6 +636,7 @@ updated: 2026-04-18T08:47:35-07:00
 - [🗣️📰🏛️ This Week in Politics | Explainer](./this-week-in-politics-explainer-january-20-2025.md)  
 - [🏛️🗣️📰 This Week in Politics | Explainer](./this-week-in-politics-explainer-march-6-2026.md)  
 - [🕸️🛠️🤔 Three decades after inventing the web, Tim Berners-Lee has some ideas on how to fix it](./three-decades-after-inventing-the-web-tim-berners-lee-has-some-ideas-on-how-to-fix-it.md)  
+- [📉⚙️📈💰 Three unremarkable systems that made me a six-figure solopreneur](./three-unremarkable-systems-that-made-me-a-six-figure-solopreneur.md)  
 - [👶🏃‍♀️🏅✅ Thule Urban Glide 3 Full Review | Best Running / Jogging Stroller 2024](./thule-urban-glide-3-full-review-best-running-jogging-stroller-2024.md)  
 - [🏛️📰📣 Today in Politics | Explainer](./today-in-politics-explainer-january-22-2026.md)  
 - [🇺🇸🚀🇻🇪 Today's News, January 3, 2025](./todays-news-january-3-2025.md)  

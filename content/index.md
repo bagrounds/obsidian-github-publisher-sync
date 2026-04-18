@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-04-18T08:47:35-07:00
+updated: 2026-04-18T08:56:32-07:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -76,11 +76,11 @@ updated: 2026-04-18T08:47:35-07:00
 - [🏠🛠️ Ultimate Guide to Home Repair & Improvement](./books/ultimate-guide-to-home-repair-improvement.md)  
   
   
-## [📺 Videos](./videos/index.md) (769)  
+## [📺 Videos](./videos/index.md) (770)  
+- [📉⚙️📈💰 Three unremarkable systems that made me a six-figure solopreneur](./videos/three-unremarkable-systems-that-made-me-a-six-figure-solopreneur.md)  
 - [💲💥🎯 $300 Just Beat 20-Person Teams At Their Own Job. You're Next.](./videos/300-just-beat-20-person-teams-at-their-own-job-youre-next.md)  
 - [⏰👵🔬 Circadian Code to Extend Longevity | Satchin Panda | TEDxVeniceBeach](./videos/circadian-code-to-extend-longevity-satchin-panda-tedx-venice-beach.md)  
 - [👑📉⚠️🐘 Why Orbán’s Fall Should Worry Trump and MAGA | Timothy Snyder & Preet Bharara](./videos/why-orbans-fall-should-worry-trump-and-maga-timothy-snyder-preet-bharara.md)  
-- [🌍🎙️ Grounded Podcast with Jon Tester & Maritsa Georgiou](./videos/grounded-podcast-with-jon-tester-maritsa-georgiou.md)  
   
   
 ## [🌌 Topics](./topics/index.md) (91)  

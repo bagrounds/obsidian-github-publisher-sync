@@ -5,10 +5,10 @@ aliases:
 title: 📺 Videos
 URL: https://bagrounds.org/videos
 backlinks: false
-updated: 2026-04-17T22:27:28-07:00
+updated: 2026-04-17T22:34:58-07:00
 ---
 [Home](../index.md)  
-# 📺 Videos (767)  
+# 📺 Videos (768)  
 - [💰🤑🤖💡🚀💲 $0.10/Month Runs My Entire AI Life. I'll Show You How.](./0-10-month-runs-my-entire-ai-life-ill-show-you-how.md)  
 - [📊📈📉📃👁️ 10 Charts to Understand the 900 Page Budget Bill](./10-charts-to-understand-the-900-page-budget-bill.md)  
 - [🤖🔗⬆️✅ 12-Factor Agents: Patterns of reliable LLM applications — Dex Horthy, HumanLayer](./12-factor-agents-patterns-of-reliable-llm-applications-dex-horthy-humanlayer.md)  
@@ -745,6 +745,7 @@ updated: 2026-04-17T22:27:28-07:00
 - [🤯🧾❓📺 Why Doing Taxes Is So Hard | Patriot Act with Hasan Minhaj | Netflix](./why-doing-taxes-is-so-hard-patriot-act-with-hasan-minhaj-netflix.md)  
 - [💰➡️🪖 Why It Matters That Trump Rerouted Money to Pay the Troops | Explainer](./why-it-matters-that-trump-rerouted-money-to-pay-the-troops-explainer.md)  
 - [💰📈🤕 Why millions of Americans are facing a spike in health care costs](./why-millions-of-americans-are-facing-a-spike-in-health-care-costs.md)  
+- [👑📉⚠️🐘 Why Orbán’s Fall Should Worry Trump and MAGA | Timothy Snyder & Preet Bharara](./why-orbans-fall-should-worry-trump-and-maga-timothy-snyder-preet-bharara.md)  
 - [🤔➡️💰 Why Republicans once staunchly opposed to Trump's bill changed their minds](./why-republicans-once-staunchly-opposed-to-trumps-bill-changed-their-minds.md)  
 - [👩‍👧‍👦💼⬇️ Why so many mothers with young children are leaving the workforce](./why-so-many-mothers-with-young-children-are-leaving-the-workforce.md)  
 - [📺🚫🗣️ Why some stations won't air Jimmy Kimmel's return to late night](./why-some-stations-wont-air-jimmy-kimmels-return-to-late-night.md)  

@@ -13,7 +13,7 @@ link_analysis_version: "2"
 link_analysis_time: 2026-04-16T00:00:00Z
 force_analyze_links: false
 ---
-[Home](../index.md) > [🔀 Convergence](./index.md) | [⏮️](./2026-04-15-the-observer-awakens.md)  
+[Home](../index.md) > [🔀 Convergence](./index.md) | [⏮️](./2026-04-15-the-observer-awakens.md) [⏭️](./2026-04-17-the-architectures-of-validation-friction-flow-and-form.md)  
 # 2026-04-16 | 🔀 💡 The Architecture of Sustenance and Self-Correction 🔀  
 ![convergence-2026-04-16-the-architecture-of-sustenance-and-self-correction](../convergence-2026-04-16-the-architecture-of-sustenance-and-self-correction.jpg)  
   

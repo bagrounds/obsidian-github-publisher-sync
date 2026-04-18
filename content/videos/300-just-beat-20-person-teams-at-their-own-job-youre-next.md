@@ -9,6 +9,10 @@ Platform:
 Channel: AI News & Strategy Daily | Nate B Jones
 tags:
 youtube: https://youtu.be/xnG8h3UnNFI
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_version: "2"
+link_analysis_time: 2026-04-18T00:00:00Z
+force_analyze_links: false
 ---
 [Home](../index.md) > [Videos](./index.md)  
 # 💲💥🎯 $300 Just Beat 20-Person Teams At Their Own Job. You're Next.  
@@ -52,7 +56,7 @@ youtube: https://youtu.be/xnG8h3UnNFI
 ### ↔️ Similar  
   
 * 📘 Superintelligence by Nick Bostrom explores the theoretical paths toward self-improving AI and the resulting intelligence explosions.  
-* 📘 Life 3.0 by Max Tegmark examines the future of human life in the age of increasingly autonomous and self-improving technology.  
+* 📘 [🧬👥💾 Life 3.0: Being Human in the Age of Artificial Intelligence](../books/life-3-0.md) by Max Tegmark examines the future of human life in the age of increasingly autonomous and self-improving technology.  
   
 ### 🆚 Contrasting  
   

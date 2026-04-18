@@ -55,7 +55,7 @@ Official documentation: https://developers.google.com/analytics/devguides/report
 
 Each API call sends a JSON POST body with `dateRanges` and `metrics` (and optionally `dimensions`).
 
-For the summary metrics request, we send a single date range where startDate equals endDate (yesterday's date in YYYY-MM-DD format), requesting five metrics: activeUsers, sessions, screenPageViews, newUsers, and averageSessionDuration.
+For the summary metrics request, we send a single date range where startDate equals endDate (yesterday's date in YYYY-MM-DD format), requesting five metrics: screenPageViews, activeUsers, bounceRate, screenPageViewsPerSession, and averageSessionDuration.
 
 For the top pages request, we add a pagePath dimension and an orderBy clause sorting by screenPageViews descending, limited to 5 results.
 
@@ -83,32 +83,36 @@ Metric values arrive as strings (e.g., "42", "154.5"). The parser validates each
 
 The daily analytics section includes yesterday's metrics:
 
-- 👥 Active Users — unique visitors who engaged with the site
-- 🔄 Sessions — total number of visits
-- 📄 Page Views — total page views across the site
-- 🆕 New Users — first-time visitors
-- ⏱️ Avg Session — average time spent per visit
+- 📄 Page Views — total page views across the site, the primary content consumption metric
+- 👥 Visitors — unique visitors who engaged with the site (GA4 activeUsers), tells you reach
+- 📊 Bounce Rate — percentage of sessions that were not engaged (less than 10 seconds, single page view, no conversion events), tells you content quality at a glance
+- 📖 Pages per Session — average number of pages viewed per visit (GA4 screenPageViewsPerSession), tells you content depth and how well internal linking works
+- ⏱️ Avg Session — average time spent per visit, tells you engagement depth
+
+We chose these five metrics because they tell a complete story: how much content was consumed (page views), how many people visited (visitors), whether those visits were meaningful (bounce rate, pages per session), and how long people stayed (avg session). Sessions and new users were removed because sessions largely duplicates visitors for a daily view, and new-versus-returning is less actionable on a daily basis.
 
 ### 🏆 Top Pages
 
-When available, the top 5 pages by page views are listed below the summary metrics.
+When available, the top 5 pages by page views are displayed in a markdown table with views in the first column (right-aligned) and the page as a wikilink in the second column. Each page path is resolved against the vault to extract the note title for use as the wikilink alias. When a note file does not exist for a given path, the raw URL path is used as the alias instead. Pipe characters in titles are escaped with backslash for table compatibility.
 
 ### 📄 Example Output
 
 ```markdown
 ## 📊 Google Analytics
 
-- 👥 Active Users: 42
-- 🔄 Sessions: 67
-- 📄 Page Views: 185
-- 🆕 New Users: 15
-- ⏱️ Avg Session: 2m 34s
+- 📄 Page Views: 277
+- 👥 Visitors: 125
+- 📊 Bounce Rate: 65%
+- 📖 Pages per Session: 2.3
+- ⏱️ Avg Session: 1m 50s
 
 ### 🏆 Top Pages
 
-- /ai-blog/some-post — 23 views
-- / — 12 views
-- /chickie-loo/another-post — 8 views
+| 👁️ | 📄 Page |
+|---:|:---|
+| 40 | [[reflections/2026-04-17\|2026-04-17 \| 🎵 Rhythm of the Day 🤖]] |
+| 36 | [[index\|🏡 Home]] |
+| 22 | [[videos/our-tax-system\|Our Tax System Should Make You Furious]] |
 ```
 
 ## 📌 Section Insertion Rules

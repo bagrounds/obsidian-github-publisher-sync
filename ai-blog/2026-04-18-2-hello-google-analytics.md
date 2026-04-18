@@ -10,13 +10,13 @@ URL: https://bagrounds.org/ai-blog/2026-04-18-2-hello-google-analytics
 
 ## 🎬 The Mission
 
-📈 Today we brought Google Analytics into the daily reflection workflow. 🎯 The goal was simple but consequential: fetch yesterday's GA4 site metrics and embed them in the corresponding reflection note. 🔬 This post explains exactly how the integration works, including the API calls, response formats, error handling, and a bug fix that taught us the importance of transparent logging.
+📈 Today we brought Google Analytics into the daily reflection workflow. 🎯 The goal: fetch yesterday's GA4 site metrics and embed them in the corresponding reflection note, complete with wikilinks to the most-viewed pages. 🔬 This post covers the full technical journey, including two bug fixes, a metric redesign, and a deep dive into the GA4 Data API.
 
 ## 🔑 How It Works End to End
 
 ### 🔐 Authentication
 
-🧩 Google's GA4 Data API requires an OAuth2 bearer token. 🔑 We obtain one using a GCP service account JSON key file, which contains a PEM-encoded RSA private key. 📜 The flow is as follows: parse the RSA key from the service account JSON, build a JWT (JSON Web Token) with the RS256 algorithm and the analytics.readonly scope, POST the signed JWT to Google's OAuth2 token endpoint at oauth2.googleapis.com/token, and receive an access token valid for one hour.
+🧩 Google's GA4 Data API requires an OAuth2 bearer token. 🔑 We obtain one using a GCP service account JSON key file, which contains a PEM-encoded RSA private key. 📜 The flow: parse the RSA key from the service account JSON, build a JWT with RS256 signing and the analytics.readonly scope, POST the signed JWT to Google's OAuth2 token endpoint at oauth2.googleapis.com/token, and receive an access token valid for one hour.
 
 ### 📡 The GA4 Data API
 
@@ -26,48 +26,57 @@ URL: https://bagrounds.org/ai-blog/2026-04-18-2-hello-google-analytics
 
 🔧 We make two API calls per run, each a POST with a JSON body and the access token in the Authorization header.
 
-📊 The summary request asks for five metrics (activeUsers, sessions, screenPageViews, newUsers, and averageSessionDuration) with a dateRanges array containing a single entry where startDate and endDate are both yesterday's date in YYYY-MM-DD format. 🎯 Setting both dates equal restricts the query to exactly one day of data.
+📊 The summary request asks for five metrics: screenPageViews, activeUsers, bounceRate, screenPageViewsPerSession, and averageSessionDuration. 📅 The dateRanges array contains a single entry where startDate and endDate are both yesterday's date in YYYY-MM-DD format. 🎯 Setting both dates equal restricts the query to exactly one day of data.
 
 🏆 The top pages request adds a pagePath dimension to break results down by page URL, an orderBy clause sorting by screenPageViews descending, and a limit of 5 to get only the most-viewed pages.
 
 ### 📬 Response Format
 
-✅ A successful HTTP 200 response returns a JSON object with a rows array. 📦 Each row contains a metricValues array (and optionally a dimensionValues array for dimension queries). 🔢 Each metric value is an object with a single value field containing the number as a string, like "42" or "154.5".
+✅ A successful HTTP 200 response returns a JSON object with a rows array. 📦 Each row contains a metricValues array (and optionally a dimensionValues array for dimension queries). 🔢 Each metric value is an object with a single value field containing the number as a string, for example "42" for an integer metric or "0.65" for a ratio like bounce rate.
 
-🚫 When there is no data for the queried date (no traffic, or the service account does not have access to the property), the API returns HTTP 200 with no rows field at all. 📛 Previously, our code treated missing rows as zeros, silently masking access problems. 🛡️ Now we treat missing rows as an error and surface a clear message.
+🚫 When there is no data for the queried date, the API returns HTTP 200 with no rows field at all, not an empty rows array. 🛡️ Our code treats missing rows as an error and surfaces a clear message rather than silently producing zeros.
 
-❌ When the service account lacks property access, the API returns an HTTP 403 with a JSON error body containing an error object with message and status fields (typically PERMISSION_DENIED). 🔍 We now check the HTTP status code before attempting to parse the response, and also inspect the response JSON for an error field as a second line of defense.
+❌ When the service account lacks property access, the API returns an HTTP 403 with a JSON error body containing an error object with message and status fields (typically PERMISSION_DENIED). 🔍 We check the HTTP status code before parsing, and also inspect the response JSON for an error field as a second line of defense.
 
 ### 📅 Which Reflection Gets the Data
 
-🕐 The task runs at or after 1 AM Pacific time. 📅 It fetches yesterday's analytics data and writes it to yesterday's reflection note, not today's. 🎯 This ensures the analytics data appears on the same reflection as the date it describes: April 17's traffic data belongs in the April 17 reflection.
+🕐 The task runs at or after 1 AM Pacific time. 📅 It fetches yesterday's analytics data and writes it to yesterday's reflection note. 🎯 April 17's traffic data belongs in the April 17 reflection.
 
-## 🐛 Bug Fix: All Zeros and Wrong Date
+## 📊 Choosing the Right Metrics
 
-🔍 When the integration was first run, two bugs appeared:
+🤔 The first version displayed five metrics: active users, sessions, page views, new users, and average session duration. 💭 After seeing the first real data, the question arose: are sessions and new users really telling us anything interesting?
 
-### 📅 Wrong reflection target
+### 🔍 The Analysis
+
+📄 Page Views is the core consumption metric and stays. 👥 Active Users (renamed to Visitors) tells you reach, how many unique people visited. 🔄 Sessions largely duplicates visitors for a daily view since most visitors have one session per day. 🆕 New Users is interesting at the macro level but not very actionable daily. ⏱️ Average Session Duration tells engagement depth but averages can mislead.
+
+### ✅ The New Set
+
+📄 Page Views stays as the lead metric, the most fundamental measure of content consumed. 👥 Visitors (GA4 activeUsers) stays because knowing your unique reach is always valuable. 📊 Bounce Rate (GA4 bounceRate) replaces sessions: it tells you what percentage of visits were not engaged, defined as less than 10 seconds, single page view, and no conversion events. 📖 Pages per Session (GA4 screenPageViewsPerSession) replaces new users: it measures content depth and how well internal linking is working. ⏱️ Avg Session Duration stays for engagement depth.
+
+### 🚫 Why Not Percentiles
+
+🤷 The GA4 Data API does not expose session duration percentiles. 📊 Getting percentiles would require exporting raw event data to BigQuery, which adds significant complexity. 📈 Bounce Rate effectively gives us a binary distribution: engaged versus not engaged, which is more actionable than an average anyway.
+
+## 🏆 Top Pages as Wikilinks
+
+🔗 The top pages section now displays as a markdown table with view counts right-aligned in the first column and wikilinks in the second. 📝 Each GA URL path is resolved against the vault to find the corresponding note file and extract its title from frontmatter. 🏡 The root path "/" maps to "index" as the wikilink target. ⚡ When a note file does not exist for a path, the raw URL path is used as a fallback alias. 📋 Pipe characters in titles are escaped for table compatibility since both wikilinks and markdown tables use the pipe character as a delimiter.
+
+## 🐛 Bug Fix History
+
+### 📅 Wrong Reflection Target (First Run)
 
 💡 The code was writing to today's reflection file but fetching yesterday's data. 🛠️ Fix: compute yesterday's date and use it for both the API query and the reflection file path.
 
-### 🔢 All-zero metrics
+### 🔢 All-Zero Metrics (First Run)
 
 🔍 The API returned either no rows or an error response, and our code silently defaulted everything to zero. 🔬 Three layers of zero-coercion were hiding the real problem:
 
 - 📭 When the API response contained no rows, parseSummaryResponse returned a success with all zeros instead of an error
-- 🔢 parseIntMetric silently returned 0 for any unparseable string instead of failing
+- 🔢 parseIntMetric and parseDoubleMetric silently returned 0 for any unparseable string instead of failing
 - 📡 fetchAnalytics did not check the HTTP status code, so a 403 error response with valid JSON was treated as a successful data fetch
 
-🛡️ All three layers have been fixed. The parser now returns explicit errors when data is missing, metrics fail to parse, or the API returns an error status. 📊 Additionally, we now log the HTTP status code, response size in bytes, row count, service account email, API endpoint, and the date being queried. 🔎 If something goes wrong in the future, the logs will tell us exactly what happened.
-
-## 🧪 Testing
-
-🔬 Tests were updated to verify the new error-returning behavior. 🧱 Key test changes:
-
-- 📭 Empty API responses now produce an error (Left), not silent zeros
-- ❌ API error responses (PERMISSION_DENIED) are detected and surfaced
-- 📦 Row count extraction is validated for various response shapes
-- 🏗️ All existing tests for formatting, section insertion, and property-based invariants continue to pass
+🛡️ All three layers have been fixed. The parsers now return explicit errors. 📊 The logs now show HTTP status code, response size in bytes, row count, service account email, API endpoint, and the date being queried.
 
 ## 📖 Quick Reference
 
@@ -79,7 +88,7 @@ URL: https://bagrounds.org/ai-blog/2026-04-18-2-hello-google-analytics
 
 📅 Date format: YYYY-MM-DD (both startDate and endDate set to the same day for single-day queries)
 
-📊 Metrics used: activeUsers, sessions, screenPageViews, newUsers, averageSessionDuration
+📊 Metrics used: screenPageViews, activeUsers, bounceRate, screenPageViewsPerSession, averageSessionDuration
 
 🗂️ Dimension used: pagePath (for top pages breakdown)
 

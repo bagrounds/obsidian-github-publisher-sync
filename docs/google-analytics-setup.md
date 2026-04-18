@@ -84,7 +84,7 @@ The daily analytics task runs at 1 AM Pacific time. To test immediately:
 4. Set hour to: `1` (to match the schedule)
 5. Click **Run workflow**
 6. Check the workflow logs for analytics output:
-   - Success: `📊 Analytics for YYYY-MM-DD: X users, Y views, Z sessions`
+   - Success: `📊 Analytics for YYYY-MM-DD: X views, Y visitors, Z% bounce`
    - Disabled: `⚠️ GA_PROPERTY_ID not set — daily analytics disabled` (if secrets not configured)
    - Auth error: `❌ Failed to get access token: ...` (check service account setup)
    - API error: `GA API HTTP 403: ...` (check property access in Step 3)

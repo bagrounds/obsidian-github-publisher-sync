@@ -600,15 +600,28 @@ runDailyAnalytics context = do
                               logMsg $ "  ❌ Parse pages error: " <> err
                               logMsg "✅ daily-analytics (error)"
                             (Right summary, Right pages) -> do
-                              let report = GA.AnalyticsReport summary pages
+                              enrichedPages <- traverse (resolvePageTitle vaultDir) pages
+                              let report = GA.AnalyticsReport summary enrichedPages
                                   updatedContent = GA.applyAnalyticsSection noteContent report
                               TIO.writeFile reflectionPath updatedContent
                               logMsg $ "  📊 Analytics for " <> yesterdayText <> ": "
-                                    <> T.pack (show (GA.activeUsers summary)) <> " users, "
                                     <> T.pack (show (GA.pageViews summary)) <> " views, "
-                                    <> T.pack (show (GA.sessions summary)) <> " sessions"
-                              logMsg $ "  📊 Top pages: " <> T.pack (show (length pages))
+                                    <> T.pack (show (GA.visitors summary)) <> " visitors, "
+                                    <> GA.formatPercentage (GA.bounceRate summary) <> " bounce"
+                              logMsg $ "  📊 Top pages: " <> T.pack (show (length enrichedPages))
                               logMsg "✅ daily-analytics"
+
+resolvePageTitle :: FilePath -> GA.PageMetric -> IO GA.PageMetric
+resolvePageTitle vaultDir metric = do
+  let urlPath = GA.pagePath metric
+      relativePath = GA.pathToWikilinkTarget urlPath
+      filePath = vaultDir </> T.unpack relativePath <> ".md"
+  exists <- doesFileExist filePath
+  if exists
+    then do
+      title <- extractTitleFromFile filePath
+      pure metric { GA.pageTitle = Just title }
+    else pure metric
 
 fetchAnalytics :: HTTP.Manager -> Text -> Text -> Json.Value -> IO (Either Text Json.Value)
 fetchAnalytics manager accessToken endpoint body = do

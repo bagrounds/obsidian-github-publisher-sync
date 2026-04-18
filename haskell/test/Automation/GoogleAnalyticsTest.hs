@@ -13,6 +13,8 @@ tests :: TestTree
 tests = testGroup "GoogleAnalytics"
   [ constantTests
   , formatDurationTests
+  , formatPercentageTests
+  , formatDecimalTests
   , reflectionNeedsAnalyticsTests
   , buildAnalyticsSectionTests
   , applyAnalyticsSectionTests
@@ -21,23 +23,24 @@ tests = testGroup "GoogleAnalytics"
   , requestBodyTests
   , checkForApiErrorTests
   , extractRowCountTests
+  , wikilinkTests
   , propertyTests
   ]
 
 sampleSummary :: AnalyticsSummary
 sampleSummary = AnalyticsSummary
-  { activeUsers = 42
-  , sessions = 67
-  , pageViews = 185
-  , newUsers = 15
+  { pageViews = 185
+  , visitors = 42
+  , bounceRate = 0.65
+  , pagesPerSession = 2.3
   , averageSessionDuration = 154.5
   }
 
 samplePages :: [PageMetric]
 samplePages =
-  [ PageMetric "/ai-blog/some-post" 23
-  , PageMetric "/" 12
-  , PageMetric "/chickie-loo/another-post" 8
+  [ PageMetric "/ai-blog/some-post" 23 (Just "2026-04-15 | 📊 Some Post 🤖")
+  , PageMetric "/" 12 (Just "🏡 Home")
+  , PageMetric "/chickie-loo/another-post" 8 Nothing
   ]
 
 sampleReport :: AnalyticsReport
@@ -67,6 +70,32 @@ formatDurationTests = testGroup "formatDuration"
       formatDuration 5 @?= "0m 05s"
   ]
 
+formatPercentageTests :: TestTree
+formatPercentageTests = testGroup "formatPercentage"
+  [ testCase "zero" $
+      formatPercentage 0 @?= "0%"
+  , testCase "0.65 formats to 65%" $
+      formatPercentage 0.65 @?= "65%"
+  , testCase "1.0 formats to 100%" $
+      formatPercentage 1.0 @?= "100%"
+  , testCase "0.123 rounds to 12%" $
+      formatPercentage 0.123 @?= "12%"
+  , testCase "0.999 rounds to 100%" $
+      formatPercentage 0.999 @?= "100%"
+  ]
+
+formatDecimalTests :: TestTree
+formatDecimalTests = testGroup "formatDecimal"
+  [ testCase "zero" $
+      formatDecimal 0 @?= "0.0"
+  , testCase "2.3 formats correctly" $
+      formatDecimal 2.3 @?= "2.3"
+  , testCase "1.0 formats with decimal" $
+      formatDecimal 1.0 @?= "1.0"
+  , testCase "5.67 rounds to one decimal" $
+      formatDecimal 5.67 @?= "5.7"
+  ]
+
 reflectionNeedsAnalyticsTests :: TestTree
 reflectionNeedsAnalyticsTests = testGroup "reflectionNeedsAnalytics"
   [ testCase "true when section not present" $
@@ -79,20 +108,28 @@ buildAnalyticsSectionTests :: TestTree
 buildAnalyticsSectionTests = testGroup "buildAnalyticsSection"
   [ testCase "includes section header" $
       assertBool "contains header" (T.isInfixOf "## 📊 Google Analytics" (buildAnalyticsSection sampleReport))
-  , testCase "includes active users" $
-      assertBool "contains active users" (T.isInfixOf "👥 Active Users: 42" (buildAnalyticsSection sampleReport))
-  , testCase "includes sessions" $
-      assertBool "contains sessions" (T.isInfixOf "🔄 Sessions: 67" (buildAnalyticsSection sampleReport))
   , testCase "includes page views" $
       assertBool "contains page views" (T.isInfixOf "📄 Page Views: 185" (buildAnalyticsSection sampleReport))
-  , testCase "includes new users" $
-      assertBool "contains new users" (T.isInfixOf "🆕 New Users: 15" (buildAnalyticsSection sampleReport))
+  , testCase "includes visitors" $
+      assertBool "contains visitors" (T.isInfixOf "👥 Visitors: 42" (buildAnalyticsSection sampleReport))
+  , testCase "includes bounce rate" $
+      assertBool "contains bounce rate" (T.isInfixOf "📊 Bounce Rate: 65%" (buildAnalyticsSection sampleReport))
+  , testCase "includes pages per session" $
+      assertBool "contains pages per session" (T.isInfixOf "📖 Pages per Session: 2.3" (buildAnalyticsSection sampleReport))
   , testCase "includes avg session duration" $
       assertBool "contains avg session" (T.isInfixOf "⏱️ Avg Session: 2m 34s" (buildAnalyticsSection sampleReport))
-  , testCase "includes top pages section" $
-      assertBool "contains top pages" (T.isInfixOf "### 🏆 Top Pages" (buildAnalyticsSection sampleReport))
-  , testCase "includes page metrics" $
-      assertBool "contains page path" (T.isInfixOf "/ai-blog/some-post — 23 views" (buildAnalyticsSection sampleReport))
+  , testCase "includes top pages table header" $
+      assertBool "contains table header" (T.isInfixOf "| 👁️ | 📄 Page |" (buildAnalyticsSection sampleReport))
+  , testCase "includes table separator" $
+      assertBool "contains separator" (T.isInfixOf "|---:|:---|" (buildAnalyticsSection sampleReport))
+  , testCase "includes page views in table" $
+      assertBool "contains view count" (T.isInfixOf "| 23 |" (buildAnalyticsSection sampleReport))
+  , testCase "includes wikilink for page with title" $
+      assertBool "contains wikilink" (T.isInfixOf "[[ai-blog/some-post\\|2026-04-15 \\| 📊 Some Post 🤖]]" (buildAnalyticsSection sampleReport))
+  , testCase "includes wikilink for root page" $
+      assertBool "contains index wikilink" (T.isInfixOf "[[index\\|🏡 Home]]" (buildAnalyticsSection sampleReport))
+  , testCase "uses path as alias when no title" $
+      assertBool "contains path fallback" (T.isInfixOf "[[chickie-loo/another-post\\|/chickie-loo/another-post]]" (buildAnalyticsSection sampleReport))
   , testCase "no top pages section when empty" $
       let report = AnalyticsReport sampleSummary []
       in assertBool "no top pages" (not (T.isInfixOf "### 🏆 Top Pages" (buildAnalyticsSection report)))
@@ -105,7 +142,7 @@ applyAnalyticsSectionTests = testGroup "applyAnalyticsSection"
           result = applyAnalyticsSection content sampleReport
       in do
         assertBool "contains header" (T.isInfixOf "## 📊 Google Analytics" result)
-        assertBool "contains stats" (T.isInfixOf "👥 Active Users: 42" result)
+        assertBool "contains stats" (T.isInfixOf "📄 Page Views: 185" result)
   , testCase "inserts after fiction section" $
       let content = "# 2026-04-18\n\nContent\n\n## 🤖🐲 AI Fiction\n\nFiction text"
           result = applyAnalyticsSection content sampleReport
@@ -134,12 +171,12 @@ applyAnalyticsSectionTests = testGroup "applyAnalyticsSection"
           tweetIdx = T.length $ fst $ T.breakOn "## 🐦 Tweet" result
       in assertBool "analytics before tweet" (analyticsIdx < tweetIdx)
   , testCase "replaces existing section" $
-      let content = "# 2026-04-18\n\n## 📊 Google Analytics\n\n- 👥 Active Users: 10\n\n## 🔄 Updates\n\nStuff"
-          updatedReport = AnalyticsReport (sampleSummary { activeUsers = 99 }) []
+      let content = "# 2026-04-18\n\n## 📊 Google Analytics\n\n- 📄 Page Views: 10\n\n## 🔄 Updates\n\nStuff"
+          updatedReport = AnalyticsReport (sampleSummary { pageViews = 99 }) []
           result = applyAnalyticsSection content updatedReport
       in do
-        assertBool "contains new value" (T.isInfixOf "👥 Active Users: 99" result)
-        assertBool "old value gone" (not (T.isInfixOf "👥 Active Users: 10" result))
+        assertBool "contains new value" (T.isInfixOf "📄 Page Views: 99" result)
+        assertBool "old value gone" (not (T.isInfixOf "📄 Page Views: 10" result))
         assertBool "updates section preserved" (T.isInfixOf "## 🔄 Updates" result)
   , testCase "appends at end when no trailing sections" $
       let content = "# 2026-04-18\n\nBody text"
@@ -154,10 +191,10 @@ parseSummaryResponseTests = testGroup "parseSummaryResponse"
             [ ("rows", Json.Array
                 [ Json.Object
                     [ ("metricValues", Json.Array
-                        [ Json.Object [("value", Json.String "42")]
-                        , Json.Object [("value", Json.String "67")]
-                        , Json.Object [("value", Json.String "185")]
-                        , Json.Object [("value", Json.String "15")]
+                        [ Json.Object [("value", Json.String "185")]
+                        , Json.Object [("value", Json.String "42")]
+                        , Json.Object [("value", Json.String "0.65")]
+                        , Json.Object [("value", Json.String "2.3")]
                         , Json.Object [("value", Json.String "154.5")]
                         ])
                     ]
@@ -165,10 +202,10 @@ parseSummaryResponseTests = testGroup "parseSummaryResponse"
             ]
       in case parseSummaryResponse json of
         Right summary -> do
-          activeUsers summary @?= 42
-          sessions summary @?= 67
           pageViews summary @?= 185
-          newUsers summary @?= 15
+          visitors summary @?= 42
+          assertBool "bounce rate close" (abs (bounceRate summary - 0.65) < 0.01)
+          assertBool "pages per session close" (abs (pagesPerSession summary - 2.3) < 0.01)
           assertBool "duration close" (abs (averageSessionDuration summary - 154.5) < 0.01)
         Left err -> error ("Parse failed: " <> T.unpack err)
   , testCase "returns error for empty response (no rows)" $
@@ -220,6 +257,7 @@ parseAnalyticsResponseTests = testGroup "parseAnalyticsResponse"
             (first : _) -> do
               pagePath first @?= "/"
               pagePageViews first @?= 50
+              pageTitle first @?= Nothing
             [] -> error "Expected at least one page"
         Left err -> error ("Parse failed: " <> T.unpack err)
   , testCase "handles empty rows" $
@@ -253,6 +291,15 @@ requestBodyTests = testGroup "request body builders"
             Just (Json.Array metrics) -> length metrics @?= 5
             _ -> error "Expected array metrics"
         _ -> error "Expected object"
+  , testCase "buildSummaryRequestBody requests screenPageViews" $
+      let body = buildSummaryRequestBody "2026-04-17"
+      in assertBool "contains screenPageViews" (T.isInfixOf "screenPageViews" (T.pack (show body)))
+  , testCase "buildSummaryRequestBody requests bounceRate" $
+      let body = buildSummaryRequestBody "2026-04-17"
+      in assertBool "contains bounceRate" (T.isInfixOf "bounceRate" (T.pack (show body)))
+  , testCase "buildSummaryRequestBody requests screenPageViewsPerSession" $
+      let body = buildSummaryRequestBody "2026-04-17"
+      in assertBool "contains screenPageViewsPerSession" (T.isInfixOf "screenPageViewsPerSession" (T.pack (show body)))
   , testCase "buildTopPagesRequestBody includes pagePath dimension" $
       let body = buildTopPagesRequestBody "2026-04-17"
       in case body of
@@ -315,6 +362,27 @@ extractRowCountTests = testGroup "extractRowCount"
       extractRowCount (Json.Object []) @?= 0
   ]
 
+wikilinkTests :: TestTree
+wikilinkTests = testGroup "wikilinks"
+  [ testCase "pathToWikilinkTarget strips leading slash" $
+      pathToWikilinkTarget "/reflections/2026-04-17" @?= "reflections/2026-04-17"
+  , testCase "pathToWikilinkTarget converts root to index" $
+      pathToWikilinkTarget "/" @?= "index"
+  , testCase "pathToWikilinkTarget preserves path without slash" $
+      pathToWikilinkTarget "ai-blog/some-post" @?= "ai-blog/some-post"
+  , testCase "formatTableWikilink with title" $
+      formatTableWikilink "/ai-blog/post" (Just "My Post") @?= "[[ai-blog/post\\|My Post]]"
+  , testCase "formatTableWikilink without title uses path" $
+      formatTableWikilink "/ai-blog/post" Nothing @?= "[[ai-blog/post\\|/ai-blog/post]]"
+  , testCase "formatTableWikilink escapes pipe in title" $
+      formatTableWikilink "/reflections/2026-04-17" (Just "2026-04-17 | Daily Reflection")
+        @?= "[[reflections/2026-04-17\\|2026-04-17 \\| Daily Reflection]]"
+  , testCase "formatTableWikilink root path with title" $
+      formatTableWikilink "/" (Just "🏡 Home") @?= "[[index\\|🏡 Home]]"
+  , testCase "escapeTablePipe replaces pipe" $
+      escapeTablePipe "a | b" @?= "a \\| b"
+  ]
+
 propertyTests :: TestTree
 propertyTests = testGroup "properties"
   [ testProperty "reflectionNeedsAnalytics returns false after applyAnalyticsSection" $
@@ -328,4 +396,14 @@ propertyTests = testGroup "properties"
       QC.forAll (QC.choose (0.0, 100000.0)) $ \duration ->
         let result = formatDuration duration
         in T.isInfixOf "m" result && T.isInfixOf "s" result
+  , testProperty "formatPercentage always ends with percent" $
+      QC.forAll (QC.choose (0.0, 1.0)) $ \ratio ->
+        T.isSuffixOf "%" (formatPercentage ratio)
+  , testProperty "formatDecimal always contains a dot" $
+      QC.forAll (QC.choose (0.0, 100.0)) $ \value ->
+        T.isInfixOf "." (formatDecimal value)
+  , testProperty "pathToWikilinkTarget never starts with slash" $
+      \(QC.ASCIIString path) ->
+        let result = pathToWikilinkTarget (T.pack path)
+        in not (T.isPrefixOf "/" result) || T.null result
   ]

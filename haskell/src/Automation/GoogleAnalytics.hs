@@ -5,6 +5,8 @@ module Automation.GoogleAnalytics
   , analyticsSectionHeader
   , reflectionNeedsAnalytics
   , formatDuration
+  , formatPercentage
+  , formatDecimal
   , buildAnalyticsSection
   , applyAnalyticsSection
   , parseAnalyticsResponse
@@ -15,8 +17,12 @@ module Automation.GoogleAnalytics
   , analyticsApiEndpoint
   , extractRowCount
   , checkForApiError
+  , pathToWikilinkTarget
+  , formatTableWikilink
+  , escapeTablePipe
   ) where
 
+import Data.Maybe (fromMaybe)
 import Data.Text (Text)
 import qualified Data.Text as T
 
@@ -37,16 +43,17 @@ analyticsApiEndpoint propertyId =
   "https://analyticsdata.googleapis.com/v1beta/properties/" <> propertyId <> ":runReport"
 
 data AnalyticsSummary = AnalyticsSummary
-  { activeUsers :: Int
-  , sessions :: Int
-  , pageViews :: Int
-  , newUsers :: Int
+  { pageViews :: Int
+  , visitors :: Int
+  , bounceRate :: Double
+  , pagesPerSession :: Double
   , averageSessionDuration :: Double
   } deriving (Show, Eq)
 
 data PageMetric = PageMetric
   { pagePath :: Text
   , pagePageViews :: Int
+  , pageTitle :: Maybe Text
   } deriving (Show, Eq)
 
 data AnalyticsReport = AnalyticsReport
@@ -65,16 +72,43 @@ formatDuration totalSeconds =
       padded = if seconds < 10 then "0" <> T.pack (show seconds) else T.pack (show seconds)
   in T.pack (show minutes) <> "m " <> padded <> "s"
 
+formatPercentage :: Double -> Text
+formatPercentage ratio =
+  let percent = ratio * 100
+      rounded = round percent :: Int
+  in T.pack (show rounded) <> "%"
+
+formatDecimal :: Double -> Text
+formatDecimal value =
+  let scaled = round (value * 10) :: Int
+      whole = scaled `div` 10
+      fraction = scaled `mod` 10
+  in T.pack (show whole) <> "." <> T.pack (show fraction)
+
+escapeTablePipe :: Text -> Text
+escapeTablePipe = T.replace "|" "\\|"
+
+pathToWikilinkTarget :: Text -> Text
+pathToWikilinkTarget path =
+  let stripped = fromMaybe path (T.stripPrefix "/" path)
+  in if T.null stripped then "index" else stripped
+
+formatTableWikilink :: Text -> Maybe Text -> Text
+formatTableWikilink path title =
+  let target = pathToWikilinkTarget path
+      alias = escapeTablePipe (fromMaybe path title)
+  in "[[" <> target <> "\\|" <> alias <> "]]"
+
 buildAnalyticsSection :: AnalyticsReport -> Text
 buildAnalyticsSection report =
   let summary = reportSummary report
       summaryLines =
         [ analyticsSectionHeader
         , ""
-        , "- 👥 Active Users: " <> T.pack (show (activeUsers summary))
-        , "- 🔄 Sessions: " <> T.pack (show (sessions summary))
         , "- 📄 Page Views: " <> T.pack (show (pageViews summary))
-        , "- 🆕 New Users: " <> T.pack (show (newUsers summary))
+        , "- 👥 Visitors: " <> T.pack (show (visitors summary))
+        , "- 📊 Bounce Rate: " <> formatPercentage (bounceRate summary)
+        , "- 📖 Pages per Session: " <> formatDecimal (pagesPerSession summary)
         , "- ⏱️ Avg Session: " <> formatDuration (averageSessionDuration summary)
         ]
       topPagesLines = case reportTopPages report of
@@ -83,12 +117,14 @@ buildAnalyticsSection report =
           [ ""
           , "### 🏆 Top Pages"
           , ""
-          ] <> fmap formatPageMetric pages
+          , "| 👁️ | 📄 Page |"
+          , "|---:|:---|"
+          ] <> fmap formatPageRow pages
   in T.intercalate "\n" (summaryLines <> topPagesLines)
 
-formatPageMetric :: PageMetric -> Text
-formatPageMetric metric =
-  "- " <> pagePath metric <> " — " <> T.pack (show (pagePageViews metric)) <> " views"
+formatPageRow :: PageMetric -> Text
+formatPageRow metric =
+  "| " <> T.pack (show (pagePageViews metric)) <> " | " <> formatTableWikilink (pagePath metric) (pageTitle metric) <> " |"
 
 embedHeaders :: [Text]
 embedHeaders = [Twitter.sectionHeader, Bluesky.sectionHeader, Mastodon.sectionHeader]
@@ -137,10 +173,10 @@ buildSummaryRequestBody date =
             ]
         ]
     , "metrics" Json..= Json.Array
-        [ Json.object ["name" Json..= ("activeUsers" :: Text)]
-        , Json.object ["name" Json..= ("sessions" :: Text)]
-        , Json.object ["name" Json..= ("screenPageViews" :: Text)]
-        , Json.object ["name" Json..= ("newUsers" :: Text)]
+        [ Json.object ["name" Json..= ("screenPageViews" :: Text)]
+        , Json.object ["name" Json..= ("activeUsers" :: Text)]
+        , Json.object ["name" Json..= ("bounceRate" :: Text)]
+        , Json.object ["name" Json..= ("screenPageViewsPerSession" :: Text)]
         , Json.object ["name" Json..= ("averageSessionDuration" :: Text)]
         ]
     ]
@@ -179,17 +215,17 @@ parseSummaryResponse value = do
     (row : _) -> do
       metrics <- extractMetricValues row
       case metrics of
-        [au, sess, pv, nu, dur] -> do
-          activeUsersVal <- parseIntMetric "activeUsers" au
-          sessionsVal <- parseIntMetric "sessions" sess
+        [pv, vis, br, pps, dur] -> do
           pageViewsVal <- parseIntMetric "screenPageViews" pv
-          newUsersVal <- parseIntMetric "newUsers" nu
+          visitorsVal <- parseIntMetric "activeUsers" vis
+          bounceRateVal <- parseDoubleMetric "bounceRate" br
+          pagesPerSessionVal <- parseDoubleMetric "screenPageViewsPerSession" pps
           durationVal <- parseDoubleMetric "averageSessionDuration" dur
           Right AnalyticsSummary
-            { activeUsers = activeUsersVal
-            , sessions = sessionsVal
-            , pageViews = pageViewsVal
-            , newUsers = newUsersVal
+            { pageViews = pageViewsVal
+            , visitors = visitorsVal
+            , bounceRate = bounceRateVal
+            , pagesPerSession = pagesPerSessionVal
             , averageSessionDuration = durationVal
             }
         _ -> Left $ "Expected 5 metrics, got " <> T.pack (show (length metrics))
@@ -211,6 +247,7 @@ parsePageRow row = do
       Right PageMetric
         { pagePath = path
         , pagePageViews = viewsVal
+        , pageTitle = Nothing
         }
     _ -> Left "Missing dimension or metric in page row"
 

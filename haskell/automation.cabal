@@ -124,6 +124,7 @@ executable run-scheduled
     time,
     http-client,
     http-client-tls,
+    http-types,
     bytestring
 
 executable inject-giscus

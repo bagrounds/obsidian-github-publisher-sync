@@ -85,8 +85,10 @@ The daily analytics task runs at 1 AM Pacific time. To test immediately:
 5. Click **Run workflow**
 6. Check the workflow logs for analytics output:
    - Success: `📊 Analytics for YYYY-MM-DD: X users, Y views, Z sessions`
-   - Skip: `⏭️ GA_PROPERTY_ID not set, skipping` (if secrets not configured)
-   - Error: `❌ Failed to get access token: ...` (check service account setup)
+   - Disabled: `⚠️ GA_PROPERTY_ID not set — daily analytics disabled` (if secrets not configured)
+   - Auth error: `❌ Failed to get access token: ...` (check service account setup)
+   - API error: `GA API HTTP 403: ...` (check property access in Step 3)
+   - No data: `No analytics data returned` (check property ID is correct)
 
 ## 🔍 Troubleshooting
 
@@ -107,8 +109,8 @@ The daily analytics task runs at 1 AM Pacific time. To test immediately:
 - Verify it's the numeric GA4 property ID (not the measurement ID like G-XXXXXXXXXX)
 
 **"No reflection for YYYY-MM-DD, skipping analytics"**
-- The daily reflection note hasn't been created yet for today
-- Blog series tasks create reflections — ensure at least one blog series has run today
+- The daily reflection note hasn't been created yet for yesterday
+- Blog series tasks create reflections — ensure at least one blog series has run
 
 ## 🗑️ Cleanup
 

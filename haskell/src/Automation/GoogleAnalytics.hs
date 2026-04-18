@@ -13,6 +13,8 @@ module Automation.GoogleAnalytics
   , buildTopPagesRequestBody
   , analyticsReadonlyScope
   , analyticsApiEndpoint
+  , extractRowCount
+  , checkForApiError
   ) where
 
 import Data.Text (Text)
@@ -171,30 +173,31 @@ buildTopPagesRequestBody date =
 
 parseSummaryResponse :: Json.Value -> Either Text AnalyticsSummary
 parseSummaryResponse value = do
+  checkForApiError value
   rows <- extractRows value
   case rows of
     (row : _) -> do
       metrics <- extractMetricValues row
       case metrics of
-        [au, sess, pv, nu, dur] ->
+        [au, sess, pv, nu, dur] -> do
+          activeUsersVal <- parseIntMetric "activeUsers" au
+          sessionsVal <- parseIntMetric "sessions" sess
+          pageViewsVal <- parseIntMetric "screenPageViews" pv
+          newUsersVal <- parseIntMetric "newUsers" nu
+          durationVal <- parseDoubleMetric "averageSessionDuration" dur
           Right AnalyticsSummary
-            { activeUsers = parseIntMetric au
-            , sessions = parseIntMetric sess
-            , pageViews = parseIntMetric pv
-            , newUsers = parseIntMetric nu
-            , averageSessionDuration = parseDoubleMetric dur
+            { activeUsers = activeUsersVal
+            , sessions = sessionsVal
+            , pageViews = pageViewsVal
+            , newUsers = newUsersVal
+            , averageSessionDuration = durationVal
             }
         _ -> Left $ "Expected 5 metrics, got " <> T.pack (show (length metrics))
-    [] -> Right AnalyticsSummary
-      { activeUsers = 0
-      , sessions = 0
-      , pageViews = 0
-      , newUsers = 0
-      , averageSessionDuration = 0
-      }
+    [] -> Left "No analytics data returned — the GA4 API response contained no rows. This usually means the service account lacks access to the property, the property ID is wrong, or there was genuinely no traffic."
 
 parseAnalyticsResponse :: Json.Value -> Either Text [PageMetric]
 parseAnalyticsResponse value = do
+  checkForApiError value
   rows <- extractRows value
   traverse parsePageRow rows
 
@@ -203,12 +206,40 @@ parsePageRow row = do
   dims <- extractDimensionValues row
   metrics <- extractMetricValues row
   case (dims, metrics) of
-    (path : _, views : _) ->
+    (path : _, views : _) -> do
+      viewsVal <- parseIntMetric "screenPageViews" views
       Right PageMetric
         { pagePath = path
-        , pagePageViews = parseIntMetric views
+        , pagePageViews = viewsVal
         }
     _ -> Left "Missing dimension or metric in page row"
+
+checkForApiError :: Json.Value -> Either Text ()
+checkForApiError value =
+  case value of
+    Json.Object fields ->
+      case lookup "error" fields of
+        Just (Json.Object errFields) ->
+          let message = case lookup "message" errFields of
+                Just (Json.String msg) -> msg
+                _ -> "unknown error"
+              status = case lookup "status" errFields of
+                Just (Json.String s) -> " (" <> s <> ")"
+                _ -> ""
+          in Left $ "GA4 API error: " <> message <> status
+        _ -> Right ()
+    _ -> Right ()
+
+extractRowCount :: Json.Value -> Int
+extractRowCount value =
+  case value of
+    Json.Object fields ->
+      case lookup "rowCount" fields of
+        Just (Json.Number n) -> round n
+        _ -> case lookup "rows" fields of
+          Just (Json.Array rows) -> length rows
+          _ -> 0
+    _ -> 0
 
 extractRows :: Json.Value -> Either Text [Json.Value]
 extractRows value =
@@ -243,16 +274,16 @@ mapLeft :: (a -> b) -> Either a c -> Either b c
 mapLeft f (Left a) = Left (f a)
 mapLeft _ (Right c) = Right c
 
-parseIntMetric :: Text -> Int
-parseIntMetric text =
+parseIntMetric :: Text -> Text -> Either Text Int
+parseIntMetric metricName text =
   case reads (T.unpack text) of
-    [(n, "")] -> n
+    [(n, "")] -> Right n
     _         -> case reads (T.unpack text) of
-      [(d, _)] -> round (d :: Double)
-      _        -> 0
+      [(d, _)] -> Right (round (d :: Double))
+      _        -> Left $ "Failed to parse " <> metricName <> " value: " <> text
 
-parseDoubleMetric :: Text -> Double
-parseDoubleMetric text =
+parseDoubleMetric :: Text -> Text -> Either Text Double
+parseDoubleMetric metricName text =
   case reads (T.unpack text) of
-    [(d, "")] -> d
-    _         -> 0
+    [(d, "")] -> Right d
+    _         -> Left $ "Failed to parse " <> metricName <> " value: " <> text

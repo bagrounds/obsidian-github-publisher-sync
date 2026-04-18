@@ -19,6 +19,8 @@ tests = testGroup "GoogleAnalytics"
   , parseSummaryResponseTests
   , parseAnalyticsResponseTests
   , requestBodyTests
+  , checkForApiErrorTests
+  , extractRowCountTests
   , propertyTests
   ]
 
@@ -169,13 +171,23 @@ parseSummaryResponseTests = testGroup "parseSummaryResponse"
           newUsers summary @?= 15
           assertBool "duration close" (abs (averageSessionDuration summary - 154.5) < 0.01)
         Left err -> error ("Parse failed: " <> T.unpack err)
-  , testCase "returns zeros for empty response" $
+  , testCase "returns error for empty response (no rows)" $
       let json = Json.Object []
       in case parseSummaryResponse json of
-        Right summary -> do
-          activeUsers summary @?= 0
-          sessions summary @?= 0
-        Left err -> error ("Parse failed: " <> T.unpack err)
+        Left err -> assertBool "mentions no data" (T.isInfixOf "No analytics data" err)
+        Right _ -> error "Expected Left for empty response"
+  , testCase "returns error for API error response" $
+      let json = Json.Object
+            [ ("error", Json.Object
+                [ ("message", Json.String "User does not have sufficient permissions")
+                , ("status", Json.String "PERMISSION_DENIED")
+                ])
+            ]
+      in case parseSummaryResponse json of
+        Left err -> do
+          assertBool "mentions permission" (T.isInfixOf "permissions" err)
+          assertBool "mentions status" (T.isInfixOf "PERMISSION_DENIED" err)
+        Right _ -> error "Expected Left for error response"
   ]
 
 parseAnalyticsResponseTests :: TestTree
@@ -263,6 +275,44 @@ requestBodyTests = testGroup "request body builders"
             Just (Json.Number limitVal) -> limitVal @?= 5
             _ -> error "Expected number limit"
         _ -> error "Expected object"
+  ]
+
+checkForApiErrorTests :: TestTree
+checkForApiErrorTests = testGroup "checkForApiError"
+  [ testCase "returns Right for valid response" $
+      let json = Json.Object [("rows", Json.Array [])]
+      in checkForApiError json @?= Right ()
+  , testCase "returns Left for error response" $
+      let json = Json.Object
+            [ ("error", Json.Object
+                [ ("message", Json.String "Permission denied")
+                , ("status", Json.String "PERMISSION_DENIED")
+                ])
+            ]
+      in case checkForApiError json of
+        Left err -> do
+          assertBool "mentions permission" (T.isInfixOf "Permission denied" err)
+          assertBool "mentions status" (T.isInfixOf "PERMISSION_DENIED" err)
+        Right _ -> error "Expected Left for error response"
+  , testCase "returns Right when no error field" $
+      checkForApiError (Json.Object []) @?= Right ()
+  ]
+
+extractRowCountTests :: TestTree
+extractRowCountTests = testGroup "extractRowCount"
+  [ testCase "counts rows from array" $
+      let json = Json.Object
+            [ ("rows", Json.Array
+                [ Json.Object [("value", Json.String "1")]
+                , Json.Object [("value", Json.String "2")]
+                ])
+            ]
+      in extractRowCount json @?= 2
+  , testCase "uses rowCount field when present" $
+      let json = Json.Object [("rowCount", Json.Number 42)]
+      in extractRowCount json @?= 42
+  , testCase "returns 0 for empty response" $
+      extractRowCount (Json.Object []) @?= 0
   ]
 
 propertyTests :: TestTree

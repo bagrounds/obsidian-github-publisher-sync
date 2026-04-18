@@ -13,7 +13,7 @@ link_analysis_version: "2"
 link_analysis_time: 2026-04-17T00:00:00Z
 force_analyze_links: false
 ---
-[Home](../index.md) > [🌟 Positivity Bias](./index.md) | [⏮️](./2026-04-16-hope-blooms-health-environment-and-community-flourish.md)  
+[Home](../index.md) > [🌟 Positivity Bias](./index.md) | [⏮️](./2026-04-16-hope-blooms-health-environment-and-community-flourish.md) [⏭️](./2026-04-18-horizons-of-progress-healing-harmony-and-a-greener-earth.md)  
 # 2026-04-17 | 🌟 Innovations in Healing and Community Resilience 🌟  
 ![positivity-bias-2026-04-17-innovations-in-healing-and-community-resilience](../positivity-bias-2026-04-17-innovations-in-healing-and-community-resilience.jpg)  
   

@@ -81,6 +81,7 @@
 | 23 | 🖼️ Backfill Blog Images | 🔍 Generate missing cover images for all blog posts |
 | 1 | 🔗 Internal Linking | 📥 BFS-driven wikilink insertion in Obsidian vault |
 | Even hours | 📢 Social Posting | 📱 Discover and post unposted content to X/Bluesky/Mastodon |
+| 22 | 📊 Daily Analytics | 📈 Fetch yesterday's Google Analytics metrics and add to daily reflection |
 
 ### 3. 🔨 Haskell CI (`haskell.yml`)
 
@@ -121,6 +122,7 @@ All automation logic is implemented in Haskell, compiled to native Linux binarie
 | `StaticGiscus` | 💬 Static Giscus comment injection |
 | `AiBlogLinks` | 🤖 AI blog navigation link generation |
 | `AiFiction` | 📖 AI fiction section generation |
+| `GoogleAnalytics` | 📊 Google Analytics daily stats for reflections |
 | `ReflectionTitle` | 📝 Daily reflection title generation via Gemini |
 | `BlogComments` | 💬 Fetch Giscus discussion comments |
 | `BlogSeriesConfig` | ⚙️ Blog series configuration |
@@ -296,3 +298,4 @@ cd haskell && cabal test --test-show-details=direct
 | [`ai-blog-sync.md`](specs/ai-blog-sync.md) | 🤖 AI blog vault sync — automated navigation links, daily reflection linking, TTS-friendly writing |
 | [`tts.md`](specs/tts.md) | 🎧 Text-to-Speech player — Web Speech API, content extraction, sentence highlighting, auto-play, comment reading |
 | [`share-buttons.md`](specs/share-buttons.md) | 🔗 Share buttons — lightweight intent-URL-based social sharing for Bluesky, Mastodon, Twitter, SMS, and more |
+| [`google-analytics.md`](specs/google-analytics.md) | 📊 Google Analytics integration — daily GA4 metrics in reflections, setup guide, future ideas |

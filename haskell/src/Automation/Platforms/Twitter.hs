@@ -79,8 +79,6 @@ data PostResult = PostResult
   , trText :: Text
   } deriving (Show, Eq)
 
--- ── Platform constants ─────────────────────────────────────────────────
-
 limits :: PlatformLimits
 limits = PlatformLimits
   { platformMaxCharacters = 280
@@ -96,15 +94,11 @@ displayName = "Bryan Grounds"
 sectionHeader :: Text
 sectionHeader = "## 🐦 Tweet"
 
--- ── Constants ──────────────────────────────────────────────────────────
-
 tweetsApiUrl :: Text
 tweetsApiUrl = "https://api.twitter.com/2/tweets"
 
 oembedBaseUrl :: String
 oembedBaseUrl = "https://publish.twitter.com/oembed"
-
--- ── OAuth 1.0a (RFC 5849) ─────────────────────────────────────────────
 
 percentEncode :: Text -> Text
 percentEncode = T.pack . concatMap encodeByte . BS.unpack . TE.encodeUtf8
@@ -186,8 +180,6 @@ buildOAuthHeader Credentials {..} httpMethod baseUrl = do
         fmap (\(k, v) -> percentEncode k <> "=\"" <> percentEncode v <> "\"") allParams
   pure $ "OAuth " <> T.intercalate ", " headerParts
 
--- ── Posting ────────────────────────────────────────────────────────────
-
 post :: Manager -> Credentials -> Text -> IO (Either Error (Text, Text))
 post manager creds tweetText = do
   idempotencyKey <- generateUUID
@@ -234,8 +226,6 @@ extractTweetData fallbackText = withObject "tweet response" $ \obj -> do
     )
     dataVal
 
--- ── Deleting ───────────────────────────────────────────────────────────
-
 deletePost :: Manager -> Credentials -> Text -> IO (Either Error ())
 deletePost manager creds tweetId = do
   let url = tweetsApiUrl <> "/" <> tweetId
@@ -256,8 +246,6 @@ deletePost manager creds tweetId = do
   pure $ case result of
     Left err -> Left (classifyException err)
     Right () -> Right ()
-
--- ── Embed HTML ─────────────────────────────────────────────────────────
 
 fetchOEmbed :: Manager -> Text -> IO (Either Error Text)
 fetchOEmbed manager tweetUrl = do

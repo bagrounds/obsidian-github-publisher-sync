@@ -51,8 +51,6 @@ import Automation.Retry (HttpCodeException (HttpCodeException), defaultRetryOpti
 import Automation.Secret (Secret (..))
 import Automation.Url (Url, unUrl, mkUrl)
 
--- ── Domain types ───────────────────────────────────────────────────────
-
 -- | Typed error for Mastodon API operations.
 -- Structured constructors preserve error context and enable pattern matching
 -- for decisions (e.g., checking HTTP status codes) without string inspection.
@@ -80,8 +78,6 @@ data PostResult = PostResult
   , mprText :: Text
   } deriving (Show, Eq)
 
--- ── Platform constants ─────────────────────────────────────────────────
-
 limits :: PlatformLimits
 limits = PlatformLimits
   { platformMaxCharacters = 500
@@ -93,8 +89,6 @@ displayName = "Bryan Grounds"
 
 sectionHeader :: Text
 sectionHeader = "## 🐘 Mastodon"
-
--- ── URL Parsing ────────────────────────────────────────────────────────
 
 extractInstanceUrl :: Text -> Maybe Text
 extractInstanceUrl url =
@@ -116,8 +110,6 @@ extractUsername url =
       (username : _) -> Just username
       _              -> Nothing
     _ -> Nothing
-
--- ── UUID Generation ────────────────────────────────────────────────────
 
 generateUUID :: IO Text
 generateUUID = do
@@ -142,8 +134,6 @@ generateUUID = do
     adjust _ b = b
     toHex :: Int -> String
     toHex b = [intToDigit (b `div` 16), intToDigit (b `mod` 16)]
-
--- ── Posting ────────────────────────────────────────────────────────────
 
 post :: Manager -> Credentials -> Text -> IO (Either Error PostResult)
 post manager Credentials{..} statusText = do
@@ -196,8 +186,6 @@ extractMastodonData fallbackText = withObject "mastodon response" $ \obj -> do
       }
     Left err -> Left (T.unpack err)
 
--- ── Deleting ───────────────────────────────────────────────────────────
-
 deletePost :: Manager -> Credentials -> Text -> IO (Either Error ())
 deletePost manager Credentials{..} statusId = do
   let apiUrl = unUrl mcInstanceUrl <> "/api/v1/statuses/" <> statusId
@@ -217,8 +205,6 @@ deletePost manager Credentials{..} statusId = do
   pure $ case result of
     Left err -> Left (classifyException err)
     Right () -> Right ()
-
--- ── Embed HTML ─────────────────────────────────────────────────────────
 
 fetchOEmbed :: Manager -> Text -> Text -> IO (Either Error Text)
 fetchOEmbed manager instanceUrl statusUrl = do

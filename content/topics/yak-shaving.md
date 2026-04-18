@@ -5,11 +5,12 @@ aliases:
 title: 🦬🪒 Yak Shaving
 URL: https://bagrounds.org/topics/yak-shaving
 link_analysis_model: gemini-3.1-flash-lite-preview
-link_analysis_time: 2026-04-09T00:00:00Z
+link_analysis_time: 2026-04-15T00:00:00Z
 force_analyze_links: false
 image_date: 2026-04-10T15:27:08Z
 image_model: "@cf/black-forest-labs/flux-1-schnell"
 image_prompt: A wide-angle, surreal illustration featuring a solitary, fluffy yak standing in the center of a cluttered, labyrinthine workshop. The yak is holding a small, vintage straight razor. Around it, a complex, sprawling Rube Goldberg machine occupies the entire space, constructed from miscellaneous objects like tangled computer cables, stacks of dusty books, rusted wrenches, and glowing glass vials. The machine’s components are connected by a tangled web of gears, pulleys, and glowing wires that snake throughout the room, leading from the yak’s wooly coat to a tiny, unreachable lightbulb hanging high above. The lighting is warm and moody, highlighting the absurdity of the machinery compared to the simple, calm expression on the yak’s face. The background is a soft, deep blue, emphasizing the intricate metallic and wooden textures of the chaotic, layered environment.
+link_analysis_version: "2"
 ---
 [Home](../index.md) > [Topics](./index.md)  
 # 🦬🪒 Yak Shaving  

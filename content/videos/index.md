@@ -5,10 +5,10 @@ aliases:
 title: 📺 Videos
 URL: https://bagrounds.org/videos
 backlinks: false
-updated: 2026-04-17T15:35:01-07:00
+updated: 2026-04-17T18:00:08-07:00
 ---
 [Home](../index.md)  
-# 📺 Videos (764)  
+# 📺 Videos (765)  
 - [💰🤑🤖💡🚀💲 $0.10/Month Runs My Entire AI Life. I'll Show You How.](./0-10-month-runs-my-entire-ai-life-ill-show-you-how.md)  
 - [📊📈📉📃👁️ 10 Charts to Understand the 900 Page Budget Bill](./10-charts-to-understand-the-900-page-budget-bill.md)  
 - [🤖🔗⬆️✅ 12-Factor Agents: Patterns of reliable LLM applications — Dex Horthy, HumanLayer](./12-factor-agents-patterns-of-reliable-llm-applications-dex-horthy-humanlayer.md)  
@@ -434,6 +434,7 @@ updated: 2026-04-17T15:35:01-07:00
 - [🚨🚓📺🎤 Police Chases: Last Week Tonight with John Oliver (HBO)](./police-chases-last-week-tonight-with-john-oliver-hbo.md)  
 - [👮🚔🕵️ Police Stings: Last Week Tonight with John Oliver (HBO)](./police-stings-last-week-tonight-with-john-oliver-hbo.md)  
 - [🏛️🗣️ Politics Chat, April 14, 2026](./politics-chat-april-14-2026.md)  
+- [🏛️🗣️ Politics Chat, April 16, 2026](./politics-chat-april-16-2026.md)  
 - [🏛️💬 Politics Chat, April 7, 2026](./politics-chat-april-7-2026.md)  
 - [🏛️🗣️💬 Politics Chat, April 9, 2026](./politics-chat-april-9-2026.md)  
 - [🗣️💬🗓️ Politics Chat, December 16, 2025](./politics-chat-december-16-2025.md)  

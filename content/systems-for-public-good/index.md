@@ -5,11 +5,12 @@ aliases:
 title: 🏛️ Systems for Public Good
 URL: https://bagrounds.org/systems-for-public-good
 backlinks: false
-updated: 2026-04-18T08:56:32-07:00
+updated: 2026-04-18T09:22:42-07:00
 ---
 [🏡 Home](../index.md)  
-# 🏛️ Systems for Public Good (27)  
+# 🏛️ Systems for Public Good (28)  
 - [🏛️ Systems for Public Good — AGENTS.md](./AGENTS.md)  
+- [2026-04-18 | 🏛️ 🌐 The Digital Lifeline: Universal Broadband as a Public Good 🏛️](./2026-04-18-the-digital-lifeline-universal-broadband-as-a-public-good.md)  
 - [2026-04-17 | 🏛️ Education as Reciprocity: Learning, Teaching, and Serving 🏛️](./2026-04-17-education-as-reciprocity-learning-teaching-and-serving.md)  
 - [2026-04-16 | 🏛️ 🚌 The Pathways to Opportunity: Public Transit as a Liberator 🏛️](./2026-04-16-the-pathways-to-opportunity-public-transit-as-a-liberator.md)  
 - [2026-04-15 | 🏛️ 🚨 The Shield of Community: Public Safety as a Foundational Public Good 🏛️](./2026-04-15-the-shield-of-community-public-safety-as-a-foundational-public-good.md)  

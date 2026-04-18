@@ -19,7 +19,6 @@ import Data.Text (Text)
 import qualified Data.Text as T
 
 import Automation.Platform (updatesSectionHeader)
-import Automation.AiFiction (fictionSectionHeader)
 import qualified Automation.Json as Json
 import qualified Automation.Platforms.Bluesky as Bluesky
 import qualified Automation.Platforms.Mastodon as Mastodon
@@ -110,7 +109,7 @@ replaceExistingSection content newSection =
 
 insertNewSection :: Text -> Text -> Text
 insertNewSection content sectionBlock =
-  let trailingSections = fictionSectionHeader : updatesSectionHeader : embedHeaders
+  let trailingSections = updatesSectionHeader : embedHeaders
       indices = filter (>= 0) $ fmap (`indexOfHeader` content) trailingSections
   in case indices of
     [] -> T.stripEnd content <> "\n\n" <> sectionBlock <> "\n"

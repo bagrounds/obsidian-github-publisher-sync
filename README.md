@@ -81,7 +81,7 @@
 | 23 | 🖼️ Backfill Blog Images | 🔍 Generate missing cover images for all blog posts |
 | 1 | 🔗 Internal Linking | 📥 BFS-driven wikilink insertion in Obsidian vault |
 | Even hours | 📢 Social Posting | 📱 Discover and post unposted content to X/Bluesky/Mastodon |
-| 22 | 📊 Daily Analytics | 📈 Fetch yesterday's Google Analytics metrics and add to daily reflection |
+| 1 | 📊 Daily Analytics | 📈 Fetch yesterday's Google Analytics metrics and add to daily reflection |
 
 ### 3. 🔨 Haskell CI (`haskell.yml`)
 

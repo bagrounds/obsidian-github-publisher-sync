@@ -535,11 +535,11 @@ runDailyAnalytics context = do
 
   case (mPropertyId, mServiceAccountJson) of
     (Nothing, _) -> do
-      logMsg "  ⏭️  GA_PROPERTY_ID not set, skipping"
-      logMsg "✅ daily-analytics (skipped)"
+      logMsg "  ⚠️  GA_PROPERTY_ID not set — daily analytics disabled"
+      logMsg "✅ daily-analytics (disabled)"
     (_, Nothing) -> do
-      logMsg "  ⏭️  GCP_SERVICE_ACCOUNT_KEY not set, skipping"
-      logMsg "✅ daily-analytics (skipped)"
+      logMsg "  ⚠️  GCP_SERVICE_ACCOUNT_KEY not set — daily analytics disabled"
+      logMsg "✅ daily-analytics (disabled)"
     (Just propertyId, Just serviceAccountJson) -> do
       case GcpAuth.parseServiceAccountKey serviceAccountJson of
         Left err -> do

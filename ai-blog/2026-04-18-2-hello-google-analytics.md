@@ -14,9 +14,9 @@ URL: https://bagrounds.org/ai-blog/2026-04-18-2-hello-google-analytics
 
 ## 🔑 What We Built
 
-### 🔐 RSA Key Parsing from Scratch
+### 🔐 RSA Key Parsing
 
-🧩 The GCP authentication module already existed with a stub where the private key parser should be. 🔧 We implemented a complete PKCS number 8 and PKCS number 1 DER parser from scratch using only the base64 library already in the dependency tree. 💡 No new cryptographic dependencies were added. 🏗️ The parser handles the binary ASN dot 1 DER encoding that Google service account keys use, extracting the RSA modulus, exponents, and prime factors needed for JWT signing.
+🧩 The GCP authentication module already existed with a stub where the private key parser should be. 🔧 We filled in the implementation to parse the PKCS number 8 encoded keys that Google service account JSON files contain. 💡 No new dependencies were added since the cryptographic libraries were already in the dependency tree.
 
 ### 📊 The Analytics Module
 
@@ -25,15 +25,15 @@ URL: https://bagrounds.org/ai-blog/2026-04-18-2-hello-google-analytics
 - 🔧 Request body builders for the GA4 Data API, assembling the JSON payloads for summary metrics and top pages queries
 - 📨 Response parsers that extract metrics from the GA4 response format
 - 📝 Section formatting that builds the markdown analytics section with emoji-prefixed bullet points
-- 📎 Section insertion logic that places analytics before fiction, updates, and social embeds in reflection notes
+- 📎 Section insertion logic that places analytics after fiction but before updates and social embeds in reflection notes
 
 ### ⏱️ The Daily Schedule
 
-🕐 The DailyAnalytics task runs at ten PM Pacific time, fetching yesterday's complete data. 📊 It reports five key metrics: active users, total sessions, page views, new users, and average session duration. 🏆 Below the summary, it lists the top five pages by views.
+🕐 The DailyAnalytics task runs at one AM Pacific time, fetching yesterday's complete data. 📊 It reports five key metrics: active users, total sessions, page views, new users, and average session duration. 🏆 Below the summary, it lists the top five pages by views.
 
 ### 🛡️ Graceful Degradation
 
-🔑 When the GA property ID or service account key environment variables are not set, the task silently skips. ❌ When API calls fail, errors are logged but do not block other tasks. ✅ When the analytics section already exists in a reflection, the task skips to maintain idempotency.
+🔑 When the GA property ID or service account key environment variables are not set, the task logs a warning and reports itself as disabled. ❌ When API calls fail, errors are logged but do not block other tasks. ✅ When the analytics section already exists in a reflection, the task skips to maintain idempotency.
 
 ## 🧪 Testing
 

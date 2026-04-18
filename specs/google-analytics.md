@@ -23,7 +23,7 @@
 ### 🔄 Data Flow
 
 ```
-🕐 Scheduler (hour 22 PT, at-or-after)
+🕐 Scheduler (hour 1 PT, at-or-after)
          ↓
 🔑 Check for GA_PROPERTY_ID + GCP_SERVICE_ACCOUNT_KEY
          ↓ (if available)
@@ -83,7 +83,7 @@ When available, the top 5 pages by page views are listed below the summary metri
 
 1. ✅ If the analytics section already exists, skip (idempotent on first insert)
 2. 🆕 If the section does not exist, insert it before trailing sections
-3. ⬆️ Analytics section is inserted BEFORE: AI Fiction, Updates, social media embeds
+3. ⬆️ Analytics section is inserted AFTER fiction and BEFORE: Updates, social media embeds
 4. 🔄 The section is added once per day and not updated on subsequent runs
 
 ## 🔑 Authentication
@@ -103,11 +103,11 @@ The integration uses a GCP service account with the Google Analytics Data API en
 | `GA_PROPERTY_ID` | GA4 property ID (numeric, e.g., `123456789`) |
 | `GCP_SERVICE_ACCOUNT_KEY` | Full JSON content of the service account key file |
 
-Both must be set as GitHub repository secrets. When either is missing, the task silently skips.
+Both must be set as GitHub repository secrets. When either is missing, the task logs a warning and reports itself as disabled.
 
 ## 🕐 Schedule
 
-- ⏰ Runs at 22:00 Pacific time (10 PM), using at-or-after semantics
+- ⏰ Runs at 01:00 Pacific time (1 AM), using at-or-after semantics
 - 📅 Fetches data for yesterday (the most recent complete day)
 - 🛡️ Idempotent: skips if analytics section already present in the reflection
 

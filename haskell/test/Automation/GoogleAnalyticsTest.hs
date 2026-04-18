@@ -104,12 +104,21 @@ applyAnalyticsSectionTests = testGroup "applyAnalyticsSection"
       in do
         assertBool "contains header" (T.isInfixOf "## 📊 Google Analytics" result)
         assertBool "contains stats" (T.isInfixOf "👥 Active Users: 42" result)
-  , testCase "inserts before fiction section" $
+  , testCase "inserts after fiction section" $
       let content = "# 2026-04-18\n\nContent\n\n## 🤖🐲 AI Fiction\n\nFiction text"
           result = applyAnalyticsSection content sampleReport
           analyticsIdx = T.length $ fst $ T.breakOn "## 📊 Google Analytics" result
           fictionIdx = T.length $ fst $ T.breakOn "## 🤖🐲 AI Fiction" result
-      in assertBool "analytics before fiction" (analyticsIdx < fictionIdx)
+      in assertBool "analytics after fiction" (analyticsIdx > fictionIdx)
+  , testCase "inserts between fiction and updates" $
+      let content = "# 2026-04-18\n\nContent\n\n## 🤖🐲 AI Fiction\n\nFiction text\n\n## 🔄 Updates\n\nUpdate text"
+          result = applyAnalyticsSection content sampleReport
+          fictionIdx = T.length $ fst $ T.breakOn "## 🤖🐲 AI Fiction" result
+          analyticsIdx = T.length $ fst $ T.breakOn "## 📊 Google Analytics" result
+          updatesIdx = T.length $ fst $ T.breakOn "## 🔄 Updates" result
+      in do
+        assertBool "analytics after fiction" (analyticsIdx > fictionIdx)
+        assertBool "analytics before updates" (analyticsIdx < updatesIdx)
   , testCase "inserts before updates section" $
       let content = "# 2026-04-18\n\nContent\n\n## 🔄 Updates\n\nUpdate text"
           result = applyAnalyticsSection content sampleReport

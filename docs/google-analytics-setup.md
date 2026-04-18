@@ -76,12 +76,12 @@ This guide walks you through setting up Google Analytics credentials for the dai
 
 ## ✅ Step 5: Verify the Integration
 
-The daily analytics task runs at 10 PM Pacific time. To test immediately:
+The daily analytics task runs at 1 AM Pacific time. To test immediately:
 
 1. Go to [Actions → All Scheduled Tasks](https://github.com/bagrounds/obsidian-github-publisher-sync/actions/workflows/scheduled.yml)
 2. Click **Run workflow**
 3. Set task to: `daily-analytics`
-4. Set hour to: `22` (to match the schedule)
+4. Set hour to: `1` (to match the schedule)
 5. Click **Run workflow**
 6. Check the workflow logs for analytics output:
    - Success: `📊 Analytics for YYYY-MM-DD: X users, Y views, Z sessions`

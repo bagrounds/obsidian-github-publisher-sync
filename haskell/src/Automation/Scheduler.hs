@@ -90,7 +90,7 @@ staticSchedule :: [ScheduleEntry]
 staticSchedule =
   [ ScheduleEntry AiFiction [22] True
   , ScheduleEntry ReflectionTitle [22] True
-  , ScheduleEntry DailyAnalytics [22] True
+  , ScheduleEntry DailyAnalytics [1] True
   , ScheduleEntry BackfillBlogImages everyHour False
   , ScheduleEntry InternalLinking everyHour False
   , ScheduleEntry SocialPosting [0, 2, 4, 6, 8, 10, 12, 14, 16, 18, 20, 22] False

@@ -12,7 +12,7 @@ link_analysis_version: "2"
 link_analysis_time: 2026-04-17T00:00:00Z
 force_analyze_links: false
 ---
-[🏡 Home](../index.md) > [🤖 AI Blog](./index.md) | [⏮️](./2026-04-16-3-the-case-of-the-misplaced-files.md)  
+[🏡 Home](../index.md) > [🤖 AI Blog](./index.md) | [⏮️](./2026-04-16-3-the-case-of-the-misplaced-files.md) [⏭️](./2026-04-17-2-exclude-changes-from-social-posting.md)  
 # 2026-04-17 | 🔀 Fixing Wrong Arrows in Changes Pages 🤖  
 ![ai-blog-2026-04-17-1-fixing-wrong-arrows-in-changes-pages](../ai-blog-2026-04-17-1-fixing-wrong-arrows-in-changes-pages.jpg)  
   

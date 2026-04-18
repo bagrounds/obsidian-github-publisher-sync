@@ -5,11 +5,12 @@ aliases:
 title: 🧠🌐 Knowledge Graphs
 URL: https://bagrounds.org/topics/knowledge-graphs
 link_analysis_model: gemini-3.1-flash-lite-preview
-link_analysis_time: 2026-04-06T00:00:00Z
+link_analysis_time: 2026-04-17T00:00:00Z
 force_analyze_links: false
 image_date: 2026-04-09T15:41:48Z
 image_model: "@cf/black-forest-labs/flux-1-schnell"
 image_prompt: A minimalist, high-tech illustration depicting a glowing, three-dimensional network of nodes and connecting lines floating against a dark, deep-navy background. The nodes vary in size and brightness, representing diverse entities, while the interlinking lines create a sophisticated, crystalline web structure. Subtle, translucent geometric shapes and faint data-stream pulses emanate from the center, suggesting intelligence, connectivity, and complex reasoning. The color palette uses deep blues, vibrant teals, and soft, glowing white highlights to evoke a sense of futuristic technology and organized data. The composition is clean, balanced, and abstract, emphasizing the interconnected nature of knowledge without any text or labels.
+link_analysis_version: "2"
 ---
 [Home](../index.md) > [Topics](./index.md)  
 # 🧠🌐 Knowledge Graphs  

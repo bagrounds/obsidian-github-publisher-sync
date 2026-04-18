@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-04-17T22:34:58-07:00
+updated: 2026-04-17T23:17:27-07:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -15,7 +15,7 @@ updated: 2026-04-17T22:34:58-07:00
 💬 Comment on any page with your GitHub account.  
   
 ## [🪞 Reflections](./reflections/index.md) ~ Blog (519)  
-- [2026-04-17](./reflections/2026-04-17.md)  
+- [2026-04-17 | 🌟 Children 💯 Of 🗣️ Speaks 😠 Furious 📅 April 🇺🇸 American 🎙️ Grounded 🚨 Worry 🌟 Healing 🌊 Currents 🖼️ Painting 🪞 Mirror 🏛️ Reciprocity 🛠️ Fixing 🚫 Posting 🔀 Architectures 🐔🤖🌍🖼️🪞🏛️🛠️🚫🔀 📚📺🌟📰🐔🤖🏛️🔀🤖🐲](./reflections/2026-04-17.md)  
 - [2026-04-16 | 🌟 Losing 💯 🧪 Weeding 📍 Spot 🤔 Great 🌸 Horizons 🐔 Pace 🤖 Mirror 🏛️ Liberator 🔀 Sustenance 🔗 Updates 🤖 Changes 🔀 Misplaced 📺🌟📰🐔🤖🏛️🔀🤖🐲](./reflections/2026-04-16.md)  
 - [2026-04-15 | 🤔 Hard 🌟 Progress 📰 Currents 🤖 Ghost 🌐 Buttons 🔧 Cleanup 🤖 Parrots 🐔 Call 🏛️ Good 📺🌟📰🤖🐔🏛️🤖🐲](./reflections/2026-04-15.md)  
 - [2026-04-14 | 🌍 Hungary’s 🇺🇸 America's 🗣️ Chat 🌟 Reshape 🌐 Sands 🤖 Architecture 🏛️ Goods 🐔 Loos 🧩 Fixing 🧹 Removing 📣 Buttons 📰📺🌟🤖🏛️🐔🤖🐲](./reflections/2026-04-14.md)  
@@ -70,10 +70,10 @@ updated: 2026-04-17T22:34:58-07:00
   
   
 ## [📚 Books](./books/index.md) (960)  
+- [🐞🔍🤔✅ Debugging: The 9 Indispensable Rules for Finding Even the Most Elusive Software and Hardware Problems](./books/debugging.md)  
+- [📈📉 Progress and Poverty](./books/progress-and-poverty.md)  
+- [🧑‍💼🏦💸 The General Theory of Employment, Interest, and Money](./books/the-general-theory-of-employment-interest-and-money.md)  
 - [🧑‍💼✅ Case Studies In ERISA: Why It Matters And How It Benefits You](./books/case-studies-in-erisa-why-it-matters-and-how-it-benefits-you.md)  
-- [🇺🇸❓📚 ERISA Law Answer Book](./books/erisa-law-answer-book.md)  
-- [💼📜 ERISA: A Comprehensive Guide](./books/erisa-a-comprehensive-guide.md)  
-- [👨‍💼➕ Introduction to Employee Benefits Law](./books/introduction-to-employee-benefits-law.md)  
   
   
 ## [📺 Videos](./videos/index.md) (768)  
@@ -84,10 +84,10 @@ updated: 2026-04-17T22:34:58-07:00
   
   
 ## [🌌 Topics](./topics/index.md) (91)  
-- [📋⚖️ Rules](./topics/rules.md)  
-- [😴🛌🧘 REST](./topics/rest.md)  
-- [🕊️⛪ Religion](./topics/religion.md)  
-- [🤖🔄🧠💪 Reinforcement Learning based Adaptive Control](./topics/reinforcement-learning-based-adaptive-control.md)  
+- [💻🔬 Computer Science](./topics/computer-science.md)  
+- [🧪🔬 Code Testing and Validation](./topics/code-testing-and-validation.md)  
+- [🗣️📢 Communication Studies](./topics/communication-studies.md)  
+- [💰📈 Economics](./topics/economics.md)  
   
   
 ## [📄  Articles](./articles/index.md) (84)  

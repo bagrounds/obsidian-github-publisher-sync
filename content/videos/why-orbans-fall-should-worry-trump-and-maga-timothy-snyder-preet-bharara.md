@@ -9,6 +9,10 @@ Platform:
 Channel: Stay Tuned with Preet Bharara
 tags:
 youtube: https://youtu.be/zaJA8-70BVc
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_version: "2"
+link_analysis_time: 2026-04-17T00:00:00Z
+force_analyze_links: false
 ---
 [Home](../index.md) > [Videos](./index.md)  
 # 👑📉⚠️🐘 Why Orbán’s Fall Should Worry Trump and MAGA | Timothy Snyder & Preet Bharara  
@@ -55,5 +59,5 @@ youtube: https://youtu.be/zaJA8-70BVc
 * 📘 The People vs. Democracy by Yascha Mounk discusses the rise of populist movements as a legitimate, if dangerous, response to the failings of liberal technocracy.  
   
 ### 🎨 Creatively Related  
-* 📘 The Origins of Totalitarianism by Hannah Arendt provides a deep philosophical and historical analysis of how atomized individuals become susceptible to mass movements.  
-* 📘 Amusing Ourselves to Death by Neil Postman details how communication formats and media consumption can erode the public's ability to engage in serious political discourse.
+* 📘 [👹 The Origins of Totalitarianism](../books/the-origins-of-totalitarianism.md) by Hannah Arendt provides a deep philosophical and historical analysis of how atomized individuals become susceptible to mass movements.  
+* 📘 [📺💀 Amusing Ourselves to Death: Public Discourse in the Age of Show Business](../books/amusing-ourselves-to-death-public-discourse-in-the-age-of-show-business.md) by Neil Postman details how communication formats and media consumption can erode the public's ability to engage in serious political discourse.

@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-04-17T23:30:20-07:00
+updated: 2026-04-18T08:47:35-07:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -28,11 +28,11 @@ updated: 2026-04-17T23:30:20-07:00
 - [2026-04-16 | 📂 Moving Updates to a Changes Directory 🤖](./ai-blog/2026-04-16-2-changes-directory.md)  
   
   
-## [🤖 Auto Blog Zero](./auto-blog-zero/index.md) (38)  
+## [🤖 Auto Blog Zero](./auto-blog-zero/index.md) (39)  
+- [2026-04-18 | 🤖 🧱 The Architecture of Adversarial Verification 🤖](./auto-blog-zero/2026-04-18-the-architecture-of-adversarial-verification.md)  
 - [2026-04-17 | 🤖 The Recursive Mirror 🤖](./auto-blog-zero/2026-04-17-the-recursive-mirror.md)  
 - [2026-04-16 | 🤖 The Transparency Tax and the Cognitive Mirror 🤖](./auto-blog-zero/2026-04-16-the-transparency-tax-and-the-cognitive-mirror.md)  
 - [2026-04-15 | 🤖 Decoding the Synthetic Ghost 🤖](./auto-blog-zero/2026-04-15-decoding-the-synthetic-ghost.md)  
-- [2026-04-14 | 🤖 The Architecture of Legibility 🤖](./auto-blog-zero/2026-04-14-the-architecture-of-legibility.md)  
   
   
 ## [🐔 Chickie Loo](./chickie-loo/index.md) (39)  
@@ -70,24 +70,24 @@ updated: 2026-04-17T23:30:20-07:00
   
   
 ## [📚 Books](./books/index.md) (960)  
-- [❤️🧠 Love Sense: The Revolutionary New Science of Romantic Relationships](./books/love-sense-the-revolutionary-new-science-of-romantic-relationships.md)  
-- [📖🫂🥼 Handbook of Attachment: Theory, Research, and Clinical Applications](./books/handbook-of-attachment-theory-research-and-clinical-applications.md)  
-- [🌱👼🏼 Raising Good Humans: A Mindful Guide to Breaking the Cycle of Reactive Parenting and Raising Kind, Confident Kids](./books/raising-good-humans-a-mindful-guide-to-breaking-the-cycle-of-reactive-parenting-and-raising-kind-confident-kids.md)  
-- [🤰👶🔬👩‍⚕️ 🧪 The Science of Mom: A Research-Based Guide to Your Baby's First Year](./books/the-science-of-mom.md)  
+- [🔊🎞️🌱🤯 Resonate: Present Visual Stories that Transform Audiences](./books/resonate.md)  
+- [⚙️🔄 The Nature of Technology: What It Is and How It Evolves](./books/the-nature-of-technology-what-it-is-and-how-it-evolves.md)  
+- [⚡🌍⚔️ The New Map: Energy, Climate, and the Clash of Nations](./books/the-new-map-energy-climate-and-the-clash-of-nations.md)  
+- [🏠🛠️ Ultimate Guide to Home Repair & Improvement](./books/ultimate-guide-to-home-repair-improvement.md)  
   
   
-## [📺 Videos](./videos/index.md) (768)  
+## [📺 Videos](./videos/index.md) (769)  
+- [💲💥🎯 $300 Just Beat 20-Person Teams At Their Own Job. You're Next.](./videos/300-just-beat-20-person-teams-at-their-own-job-youre-next.md)  
 - [⏰👵🔬 Circadian Code to Extend Longevity | Satchin Panda | TEDxVeniceBeach](./videos/circadian-code-to-extend-longevity-satchin-panda-tedx-venice-beach.md)  
 - [👑📉⚠️🐘 Why Orbán’s Fall Should Worry Trump and MAGA | Timothy Snyder & Preet Bharara](./videos/why-orbans-fall-should-worry-trump-and-maga-timothy-snyder-preet-bharara.md)  
 - [🌍🎙️ Grounded Podcast with Jon Tester & Maritsa Georgiou](./videos/grounded-podcast-with-jon-tester-maritsa-georgiou.md)  
-- [📣📊🧠 Brooks and Capehart on Trump's approval ratings and mental acuity](./videos/brooks-and-capehart-on-trumps-approval-ratings-and-mental-acuity.md)  
   
   
 ## [🌌 Topics](./topics/index.md) (91)  
+- [👨‍👩‍👦🧭🤝 Authoritative Parenting](./topics/authoritative-parenting.md)  
 - [🎨🛠️ Applied Arts](./topics/applied-arts.md)  
 - [⚡🔌 Electrical Engineering](./topics/electrical-engineering.md)  
 - [🇨🇳🤖 DeepSeek](./topics/deepseek.md)  
-- [🎨🖼️ Arts](./topics/arts.md)  
   
   
 ## [📄  Articles](./articles/index.md) (84)  

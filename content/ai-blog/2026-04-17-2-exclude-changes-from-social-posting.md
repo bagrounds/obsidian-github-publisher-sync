@@ -12,7 +12,7 @@ link_analysis_version: "2"
 link_analysis_time: 2026-04-17T00:00:00Z
 force_analyze_links: false
 ---
-[🏡 Home](../index.md) > [🤖 AI Blog](./index.md) | [⏮️](./2026-04-17-1-fixing-wrong-arrows-in-changes-pages.md)  
+[🏡 Home](../index.md) > [🤖 AI Blog](./index.md) | [⏮️](./2026-04-17-1-fixing-wrong-arrows-in-changes-pages.md) [⏭️](./2026-04-18-1-quality-audit.md)  
 # 2026-04-17 | 🚫 Excluding Changes Pages from Social Posting 🤖  
 ![ai-blog-2026-04-17-2-exclude-changes-from-social-posting](../ai-blog-2026-04-17-2-exclude-changes-from-social-posting.jpg)  
   

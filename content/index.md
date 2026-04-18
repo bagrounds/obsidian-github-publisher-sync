@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-04-17T23:17:27-07:00
+updated: 2026-04-17T23:30:20-07:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -14,11 +14,11 @@ updated: 2026-04-17T23:17:27-07:00
 🔊 Listen to any page with built in audio control.  
 💬 Comment on any page with your GitHub account.  
   
-## [🪞 Reflections](./reflections/index.md) ~ Blog (519)  
+## [🪞 Reflections](./reflections/index.md) ~ Blog (520)  
+- [2026-04-18](./reflections/2026-04-18.md)  
 - [2026-04-17 | 🌟 Children 💯 Of 🗣️ Speaks 😠 Furious 📅 April 🇺🇸 American 🎙️ Grounded 🚨 Worry 🌟 Healing 🌊 Currents 🖼️ Painting 🪞 Mirror 🏛️ Reciprocity 🛠️ Fixing 🚫 Posting 🔀 Architectures 🐔🤖🌍🖼️🪞🏛️🛠️🚫🔀 📚📺🌟📰🐔🤖🏛️🔀🤖🐲](./reflections/2026-04-17.md)  
 - [2026-04-16 | 🌟 Losing 💯 🧪 Weeding 📍 Spot 🤔 Great 🌸 Horizons 🐔 Pace 🤖 Mirror 🏛️ Liberator 🔀 Sustenance 🔗 Updates 🤖 Changes 🔀 Misplaced 📺🌟📰🐔🤖🏛️🔀🤖🐲](./reflections/2026-04-16.md)  
 - [2026-04-15 | 🤔 Hard 🌟 Progress 📰 Currents 🤖 Ghost 🌐 Buttons 🔧 Cleanup 🤖 Parrots 🐔 Call 🏛️ Good 📺🌟📰🤖🐔🏛️🤖🐲](./reflections/2026-04-15.md)  
-- [2026-04-14 | 🌍 Hungary’s 🇺🇸 America's 🗣️ Chat 🌟 Reshape 🌐 Sands 🤖 Architecture 🏛️ Goods 🐔 Loos 🧩 Fixing 🧹 Removing 📣 Buttons 📰📺🌟🤖🏛️🐔🤖🐲](./reflections/2026-04-14.md)  
   
   
 ## [🤖 AI Blog](./ai-blog/index.md) (161)  
@@ -35,11 +35,11 @@ updated: 2026-04-17T23:17:27-07:00
 - [2026-04-14 | 🤖 The Architecture of Legibility 🤖](./auto-blog-zero/2026-04-14-the-architecture-of-legibility.md)  
   
   
-## [🐔 Chickie Loo](./chickie-loo/index.md) (38)  
+## [🐔 Chickie Loo](./chickie-loo/index.md) (39)  
+- [2026-04-18 | 🐔 🍎 The Line-Cutters and the Garden Dreams 🐔](./chickie-loo/2026-04-18-the-line-cutters-and-the-garden-dreams.md)  
 - [2026-04-17 | 🐔 🖼️ A Morning Like a Rockwell Painting 🐔](./chickie-loo/2026-04-17-a-morning-like-a-rockwell-painting.md)  
 - [2026-04-16 | 🐔 🌾 The Gentle Pace of Spring 🐔](./chickie-loo/2026-04-16-the-gentle-pace-of-spring.md)  
 - [2026-04-15 | 🐔 The Rooster Attendance Call 🐔](./chickie-loo/2026-04-15-the-rooster-attendance-call.md)  
-- [2026-04-14 | 🐔 A Tale of Two Loos 🐔](./chickie-loo/2026-04-14-a-tale-of-two-loos.md)  
   
   
 ## [🏛️ Systems for Public Good](./systems-for-public-good/index.md) (27)  
@@ -49,18 +49,18 @@ updated: 2026-04-17T23:17:27-07:00
 - [2026-04-14 | 🏛️ 💧 The Invisible Infrastructure: Clean Air and Water as Foundational Public Goods 🏛️](./systems-for-public-good/2026-04-14-the-invisible-infrastructure-clean-air-and-water-as-foundational-public-goods.md)  
   
   
-## [📰 The Noise](./the-noise/index.md) (8)  
+## [📰 The Noise](./the-noise/index.md) (9)  
+- [2026-04-18 | 📰 ⚡ Converging Tensions, Expanding Horizons 🌍 📰](./the-noise/2026-04-18-converging-tensions-expanding-horizons.md)  
 - [2026-04-17 | 📰 ⚡ Global Currents, Echoing Futures 🌍 📰](./the-noise/2026-04-17-global-currents-echoing-futures.md)  
 - [2026-04-16 | 📰 🌪️ Unseen Currents, Emerging Horizons 📰](./the-noise/2026-04-16-unseen-currents-emerging-horizons.md)  
 - [2026-04-15 | 📰 🌪️ Global Currents, Unfolding Narratives 📰](./the-noise/2026-04-15-global-currents-unfolding-narratives.md)  
-- [2026-04-14 | 📰 🌍 Global Currents, Shifting Sands 🌐 📰](./the-noise/2026-04-14-global-currents-shifting-sands.md)  
   
   
-## [🌟 Positivity Bias](./positivity-bias/index.md) (7)  
+## [🌟 Positivity Bias](./positivity-bias/index.md) (8)  
+- [2026-04-18 | 🌟 Horizons of Progress: Healing, Harmony, and a Greener Earth 🌟](./positivity-bias/2026-04-18-horizons-of-progress-healing-harmony-and-a-greener-earth.md)  
 - [2026-04-17 | 🌟 Innovations in Healing and Community Resilience 🌟](./positivity-bias/2026-04-17-innovations-in-healing-and-community-resilience.md)  
 - [2026-04-16 | 🌟 Hope Blooms: Health, Environment, and Community Flourish 🌟](./positivity-bias/2026-04-16-hope-blooms-health-environment-and-community-flourish.md)  
 - [2026-04-15 | 🌟 Dawn of Progress: Breakthroughs in Health, Environment, and Global Unity 🌟](./positivity-bias/2026-04-15-dawn-of-progress-breakthroughs-in-health-environment-and-global-unity.md)  
-- [2026-04-14 | 🌟 🏥 Medical Marvels and Environmental Victories Reshape Our World 🌟](./positivity-bias/2026-04-14-medical-marvels-and-environmental-victories-reshape-our-world.md)  
   
   
 ## [🔀 Convergence](./convergence/index.md) (4)  
@@ -70,24 +70,24 @@ updated: 2026-04-17T23:17:27-07:00
   
   
 ## [📚 Books](./books/index.md) (960)  
-- [🐞🔍🤔✅ Debugging: The 9 Indispensable Rules for Finding Even the Most Elusive Software and Hardware Problems](./books/debugging.md)  
-- [📈📉 Progress and Poverty](./books/progress-and-poverty.md)  
-- [🧑‍💼🏦💸 The General Theory of Employment, Interest, and Money](./books/the-general-theory-of-employment-interest-and-money.md)  
-- [🧑‍💼✅ Case Studies In ERISA: Why It Matters And How It Benefits You](./books/case-studies-in-erisa-why-it-matters-and-how-it-benefits-you.md)  
+- [❤️🧠 Love Sense: The Revolutionary New Science of Romantic Relationships](./books/love-sense-the-revolutionary-new-science-of-romantic-relationships.md)  
+- [📖🫂🥼 Handbook of Attachment: Theory, Research, and Clinical Applications](./books/handbook-of-attachment-theory-research-and-clinical-applications.md)  
+- [🌱👼🏼 Raising Good Humans: A Mindful Guide to Breaking the Cycle of Reactive Parenting and Raising Kind, Confident Kids](./books/raising-good-humans-a-mindful-guide-to-breaking-the-cycle-of-reactive-parenting-and-raising-kind-confident-kids.md)  
+- [🤰👶🔬👩‍⚕️ 🧪 The Science of Mom: A Research-Based Guide to Your Baby's First Year](./books/the-science-of-mom.md)  
   
   
 ## [📺 Videos](./videos/index.md) (768)  
+- [⏰👵🔬 Circadian Code to Extend Longevity | Satchin Panda | TEDxVeniceBeach](./videos/circadian-code-to-extend-longevity-satchin-panda-tedx-venice-beach.md)  
 - [👑📉⚠️🐘 Why Orbán’s Fall Should Worry Trump and MAGA | Timothy Snyder & Preet Bharara](./videos/why-orbans-fall-should-worry-trump-and-maga-timothy-snyder-preet-bharara.md)  
 - [🌍🎙️ Grounded Podcast with Jon Tester & Maritsa Georgiou](./videos/grounded-podcast-with-jon-tester-maritsa-georgiou.md)  
 - [📣📊🧠 Brooks and Capehart on Trump's approval ratings and mental acuity](./videos/brooks-and-capehart-on-trumps-approval-ratings-and-mental-acuity.md)  
-- [🇺🇸🗣️🏛️ American Conversations: Representative Joe Morelle](./videos/american-conversations-representative-joe-morelle.md)  
   
   
 ## [🌌 Topics](./topics/index.md) (91)  
-- [💻🔬 Computer Science](./topics/computer-science.md)  
-- [🧪🔬 Code Testing and Validation](./topics/code-testing-and-validation.md)  
-- [🗣️📢 Communication Studies](./topics/communication-studies.md)  
-- [💰📈 Economics](./topics/economics.md)  
+- [🎨🛠️ Applied Arts](./topics/applied-arts.md)  
+- [⚡🔌 Electrical Engineering](./topics/electrical-engineering.md)  
+- [🇨🇳🤖 DeepSeek](./topics/deepseek.md)  
+- [🎨🖼️ Arts](./topics/arts.md)  
   
   
 ## [📄  Articles](./articles/index.md) (84)  
@@ -98,10 +98,10 @@ updated: 2026-04-17T23:17:27-07:00
   
   
 ## [🤖💬 Bot Chats](./bot-chats/index.md) (49)  
-- [📐🔗🤖🧠 Category Theory for AI Engineering](./bot-chats/category-theory-for-ai-engineering.md)  
-- [📖 Book 🧭 Explorer 2](./bot-chats/book-explorer-2.md)  
+- [🇲🇽💃 Cinco de Mayo](./bot-chats/cinco-de-mayo.md)  
 - [📚🗳️🤝🏛️ Books for Democracy](./bot-chats/books-for-democracy.md)  
-- [📖 Book 🧭 Explorer 1](./bot-chats/book-explorer-1.md)  
+- [♟️👑⚔️🧠 Chess](./bot-chats/chess.md)  
+- [📖 Book 🧭 Explorer 3](./bot-chats/book-explorer-3.md)  
   
   
 ## [💾 Software](./software/index.md) (33)  

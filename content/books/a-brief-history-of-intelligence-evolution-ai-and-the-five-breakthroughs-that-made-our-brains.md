@@ -8,11 +8,12 @@ CTA: 💡 Uncover the origins of thought.
 affiliate link: https://amzn.to/4dslDFu
 updated: 2026-03-19T14:20:32.763Z
 force_analyze_links: false
-link_analysis_time: 2026-03-22T06:03:07.635Z
+link_analysis_time: 2026-04-18T00:00:00Z
 link_analysis_model: gemini-3.1-flash-lite-preview
 image_date: 2026-04-15T08:41:46Z
 image_model: "@cf/black-forest-labs/flux-1-schnell"
 image_prompt: A stylized human brain at the center, evolving from a primordial, organic texture on the left (suggesting ancient life, perhaps with faint fossil-like patterns) to a sleek, illuminated network of circuits and glowing data streams on the right, representing AI. A subtle DNA helix intertwines through the organic side, gradually transforming into digital code or neural pathways on the technological side. Five distinct, glowing nodes or concentric layers are embedded within this brains structure, hinting at the breakthroughs. The background blends deep evolutionary blues and greens with futuristic electric purples and teals, creating a sense of vast time and technological progression. A radiant light emanates from the core, symbolizing intelligence.
+link_analysis_version: "2"
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🧠🧬🤖 A Brief History of Intelligence: Evolution, AI, and the Five Breakthroughs That Made Our Brains  

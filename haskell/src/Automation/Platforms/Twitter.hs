@@ -68,18 +68,16 @@ classifyException exception =
     Nothing -> NetworkError (T.pack (show exception))
 
 data Credentials = Credentials
-  { tcApiKey :: Secret
-  , tcApiSecret :: Secret
-  , tcAccessToken :: Secret
-  , tcAccessSecret :: Secret
+  { apiKey :: Secret
+  , apiSecret :: Secret
+  , accessToken :: Secret
+  , accessSecret :: Secret
   } deriving (Show, Eq)
 
 data PostResult = PostResult
-  { trId :: Text
-  , trText :: Text
+  { postId :: Text
+  , content :: Text
   } deriving (Show, Eq)
-
--- ── Platform constants ─────────────────────────────────────────────────
 
 limits :: PlatformLimits
 limits = PlatformLimits
@@ -96,15 +94,11 @@ displayName = "Bryan Grounds"
 sectionHeader :: Text
 sectionHeader = "## 🐦 Tweet"
 
--- ── Constants ──────────────────────────────────────────────────────────
-
 tweetsApiUrl :: Text
 tweetsApiUrl = "https://api.twitter.com/2/tweets"
 
 oembedBaseUrl :: String
 oembedBaseUrl = "https://publish.twitter.com/oembed"
-
--- ── OAuth 1.0a (RFC 5849) ─────────────────────────────────────────────
 
 percentEncode :: Text -> Text
 percentEncode = T.pack . concatMap encodeByte . BS.unpack . TE.encodeUtf8
@@ -165,11 +159,11 @@ buildOAuthHeader Credentials {..} httpMethod baseUrl = do
   timestamp <- T.pack . show . (floor @Double @Integer) . realToFrac <$> getPOSIXTime
   nonce <- generateNonce
   let oauthParams =
-        [ ("oauth_consumer_key", unSecret tcApiKey)
+        [ ("oauth_consumer_key", unSecret apiKey)
         , ("oauth_nonce", nonce)
         , ("oauth_signature_method", "HMAC-SHA1")
         , ("oauth_timestamp", timestamp)
-        , ("oauth_token", unSecret tcAccessToken)
+        , ("oauth_token", unSecret accessToken)
         , ("oauth_version", "1.0")
         ]
       paramString =
@@ -178,15 +172,13 @@ buildOAuthHeader Credentials {..} httpMethod baseUrl = do
       signatureBase =
         httpMethod <> "&" <> percentEncode baseUrl <> "&" <> percentEncode paramString
       signingKey =
-        TE.encodeUtf8 $ percentEncode (unSecret tcApiSecret) <> "&" <> percentEncode (unSecret tcAccessSecret)
+        TE.encodeUtf8 $ percentEncode (unSecret apiSecret) <> "&" <> percentEncode (unSecret accessSecret)
       signature =
         TE.decodeUtf8 $ B64.encode $ hmacSHA1 signingKey (TE.encodeUtf8 signatureBase)
       allParams = sort $ ("oauth_signature", signature) : oauthParams
       headerParts =
         fmap (\(k, v) -> percentEncode k <> "=\"" <> percentEncode v <> "\"") allParams
   pure $ "OAuth " <> T.intercalate ", " headerParts
-
--- ── Posting ────────────────────────────────────────────────────────────
 
 post :: Manager -> Credentials -> Text -> IO (Either Error (Text, Text))
 post manager creds tweetText = do
@@ -234,8 +226,6 @@ extractTweetData fallbackText = withObject "tweet response" $ \obj -> do
     )
     dataVal
 
--- ── Deleting ───────────────────────────────────────────────────────────
-
 deletePost :: Manager -> Credentials -> Text -> IO (Either Error ())
 deletePost manager creds tweetId = do
   let url = tweetsApiUrl <> "/" <> tweetId
@@ -256,8 +246,6 @@ deletePost manager creds tweetId = do
   pure $ case result of
     Left err -> Left (classifyException err)
     Right () -> Right ()
-
--- ── Embed HTML ─────────────────────────────────────────────────────────
 
 fetchOEmbed :: Manager -> Text -> IO (Either Error Text)
 fetchOEmbed manager tweetUrl = do

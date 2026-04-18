@@ -25,11 +25,11 @@ import Automation.Secret (Secret (..))
 import Automation.Url (mkUrl)
 
 data EnvironmentConfig = EnvironmentConfig
-  { ecTwitter :: Maybe Twitter.Credentials
-  , ecBluesky :: Maybe Bluesky.Credentials
-  , ecMastodon :: Maybe Mastodon.Credentials
-  , ecGemini :: Gemini.Config
-  , ecObsidian :: ObsidianCredentials
+  { twitter :: Maybe Twitter.Credentials
+  , bluesky :: Maybe Bluesky.Credentials
+  , mastodon :: Maybe Mastodon.Credentials
+  , gemini :: Gemini.Config
+  , obsidian :: ObsidianCredentials
   } deriving (Show, Eq)
 
 isPlatformDisabled :: String -> IO Bool
@@ -114,9 +114,9 @@ validateEnvironment = do
     <*> fmap (fmap Secret) (lookupEnvText "OBSIDIAN_VAULT_PASSWORD")
 
   pure EnvironmentConfig
-    { ecTwitter = twitter
-    , ecBluesky = bluesky
-    , ecMastodon = mastodon
-    , ecGemini = gemini
-    , ecObsidian = obsidian
+    { twitter = twitter
+    , bluesky = bluesky
+    , mastodon = mastodon
+    , gemini = gemini
+    , obsidian = obsidian
     }

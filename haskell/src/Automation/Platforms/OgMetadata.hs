@@ -16,9 +16,9 @@ import qualified Network.HTTP.Client.TLS as TLS
 import Automation.Title (Title, mkTitle)
 
 data OgMetadata = OgMetadata
-  { ogTitle :: Maybe Title
-  , ogDescription :: Maybe Text
-  , ogImageUrl :: Maybe Text
+  { title :: Maybe Title
+  , description :: Maybe Text
+  , imageUrl :: Maybe Text
   } deriving (Show, Eq)
 
 extractOgProperty :: Text -> Text -> Maybe Text
@@ -35,9 +35,9 @@ fetchOgMetadata url = do
   response <- HTTP.httpLbs request manager
   let body = TE.decodeUtf8Lenient (LBS.toStrict (HTTP.responseBody response))
   pure OgMetadata
-    { ogTitle       = extractOgProperty "title" body >>= either (const Nothing) Just . mkTitle
-    , ogDescription = extractOgProperty "description" body
-    , ogImageUrl    = extractOgProperty "image" body
+    { title       = extractOgProperty "title" body >>= either (const Nothing) Just . mkTitle
+    , description = extractOgProperty "description" body
+    , imageUrl    = extractOgProperty "image" body
     }
 
 detectContentType :: Text -> Text

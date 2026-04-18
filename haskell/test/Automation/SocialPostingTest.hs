@@ -19,7 +19,7 @@ import qualified Data.Text.IO as TIO
 import Automation.BlogImage.ContentDirectory (ContentDirectory (..))
 import Automation.BlogSeriesConfig (imageBackfillContentDirsFrom)
 import Automation.Platform (Platform (..))
-import Automation.Reflection (selectMostRecentReflection)
+import Automation.Reflection (findMostRecentReflection, selectMostRecentReflection)
 import Automation.SocialPosting
   ( SocialPost (..)
   , mkBlueskyPost
@@ -36,7 +36,6 @@ import Automation.SocialPosting.ContentDiscovery
   , bfsContentDiscovery
   , checkBfsEligibility
   , detectPostedPlatforms
-  , findMostRecentReflection
   , isAwaitingImageBackfill
   , isIndexPath
   , isPostableContent
@@ -359,7 +358,7 @@ imageBackfillFilterTests = testGroup "isAwaitingImageBackfill"
            T.replicate 60 "x")
         let config = FindContentConfig dir [Twitter] (TimeOfDay 0 0 0) Nothing defaultContentDirs
         result <- bfsContentDiscovery config
-        let resultPaths = fmap (noteRelativePath . ctpNote) result
+        let resultPaths = fmap (noteRelativePath . note) result
         assertBool "should skip book without image"
           (all (\p -> p /= testRelativePath "books/no-image-book.md") resultPaths)
         assertBool "should find book with image through no-image book"
@@ -476,7 +475,7 @@ bfsEligibilityTests = testGroup "checkBfsEligibility"
            T.replicate 60 "x")
         let config = FindContentConfig dir [Twitter, Bluesky] (TimeOfDay 17 0 0) Nothing defaultContentDirs
         result <- bfsContentDiscovery config
-        let resultPaths = fmap (noteRelativePath . ctpNote) result
+        let resultPaths = fmap (noteRelativePath . note) result
         assertBool "should find linked book, not the ineligible reflection"
           (all (\p -> p /= testRelativePath "reflections/2099-12-31.md") resultPaths)
         assertBool "should find the linked book" (not (null result))
@@ -506,7 +505,7 @@ bfsTraversalTests = testGroup "BFS traversal"
            T.replicate 60 "x")
         let config = FindContentConfig dir [Twitter] (TimeOfDay 0 0 0) Nothing defaultContentDirs
         result <- bfsContentDiscovery config
-        let resultPaths = fmap (noteRelativePath . ctpNote) result
+        let resultPaths = fmap (noteRelativePath . note) result
         assertBool "should not post index page"
           (all (\p -> p /= testRelativePath "books/index.md") resultPaths)
         assertBool "should find hidden gem through index page"
@@ -535,7 +534,7 @@ bfsTraversalTests = testGroup "BFS traversal"
            T.replicate 60 "x")
         let config = FindContentConfig dir [Twitter] (TimeOfDay 0 0 0) Nothing defaultContentDirs
         result <- bfsContentDiscovery config
-        let resultPaths = fmap (noteRelativePath . ctpNote) result
+        let resultPaths = fmap (noteRelativePath . note) result
         assertBool "should not post private topic"
           (all (\p -> p /= testRelativePath "topics/private-topic.md") resultPaths)
         assertBool "should find public book through private topic"
@@ -561,7 +560,7 @@ bfsTraversalTests = testGroup "BFS traversal"
            T.replicate 60 "x")
         let config = FindContentConfig dir [Twitter] (TimeOfDay 0 0 0) Nothing defaultContentDirs
         result <- bfsContentDiscovery config
-        let resultPaths = fmap (noteRelativePath . ctpNote) result
+        let resultPaths = fmap (noteRelativePath . note) result
         assertBool "should not post stub"
           (all (\p -> p /= testRelativePath "books/stub.md") resultPaths)
         assertBool "should find real book through stub"
@@ -713,7 +712,7 @@ urlValidationTests = testGroup "URL validation"
         let checker url = pure (url == "https://bagrounds.org/books/live-book")
             config = FindContentConfig dir [Twitter] (TimeOfDay 0 0 0) (Just checker) defaultContentDirs
         result <- bfsContentDiscovery config
-        let resultPaths = fmap (noteRelativePath . ctpNote) result
+        let resultPaths = fmap (noteRelativePath . note) result
         assertBool "should not include dead-link book"
           (all (\p -> p /= testRelativePath "books/dead-link.md") resultPaths)
         assertBool "should find live book through dead-link book"

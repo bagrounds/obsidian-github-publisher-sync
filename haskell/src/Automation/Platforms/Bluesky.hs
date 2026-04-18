@@ -77,8 +77,8 @@ classifyException exception =
     Nothing -> NetworkError (T.pack (show exception))
 
 data Credentials = Credentials
-  { bcIdentifier :: Text
-  , bcPassword :: Secret
+  { identifier :: Text
+  , password :: Secret
   } deriving (Show, Eq)
 
 data PostResult = PostResult
@@ -92,10 +92,10 @@ newtype EmbedResult = EmbedResult
   } deriving (Show, Eq)
 
 data LinkCard = LinkCard
-  { lcUri :: Url
-  , lcTitle :: Title
-  , lcDescription :: Text
-  , lcThumbUrl :: Maybe Text
+  { uri :: Url
+  , title :: Title
+  , description :: Text
+  , thumbUrl :: Maybe Text
   } deriving (Show, Eq)
 
 data OEmbedConfig = OEmbedConfig
@@ -130,16 +130,16 @@ oembedBaseUrl :: Text
 oembedBaseUrl = "https://embed.bsky.app/oembed"
 
 data AtpSession = AtpSession
-  { asDid         :: Text
-  , asAccessToken :: Text
+  { did         :: Text
+  , accessToken :: Text
   }
 
 createSession :: Manager -> Credentials -> IO (Either Error AtpSession)
 createSession manager Credentials{..} = do
   let url = T.unpack (atpBaseUrl <> "com.atproto.server.createSession")
       bodyJson = encode (object
-        [ "identifier" .= bcIdentifier
-        , "password" .= unSecret bcPassword
+        [ "identifier" .= identifier
+        , "password" .= unSecret password
         ])
   result <- try @SomeException $ withRetry defaultRetryOptions $ do
     initialReq <- parseRequest url
@@ -169,7 +169,7 @@ extractSession :: Json.Value -> Either String AtpSession
 extractSession = withObject "session response" $ \obj -> do
   did <- obj .: "did"
   token <- obj .: "accessJwt"
-  pure AtpSession { asDid = did, asAccessToken = token }
+  pure AtpSession { did = did, accessToken = token }
 
 
 extractPostId :: Text -> Maybe Text
@@ -280,7 +280,7 @@ uploadBlob manager AtpSession{..} contentType imageData = do
           { method = "POST"
           , requestBody = RequestBodyLBS imageData
           , requestHeaders =
-              [ ("Authorization", "Bearer " <> TE.encodeUtf8 asAccessToken)
+              [ ("Authorization", "Bearer " <> TE.encodeUtf8 accessToken)
               , ("Content-Type", contentType)
               ]
           }
@@ -335,7 +335,7 @@ createPost manager session@AtpSession{..} postText maybeLinkCard = do
             Nothing    -> object baseRecord
             Just embed -> object (baseRecord <> ["embed" .= embed])
           bodyJson = encode (object
-            [ "repo" .= asDid
+            [ "repo" .= did
             , "collection" .= ("app.bsky.feed.post" :: Text)
             , "record" .= record
             ])
@@ -346,7 +346,7 @@ createPost manager session@AtpSession{..} postText maybeLinkCard = do
               { method = "POST"
               , requestBody = RequestBodyLBS bodyJson
               , requestHeaders =
-                  [ ("Authorization", "Bearer " <> TE.encodeUtf8 asAccessToken)
+                  [ ("Authorization", "Bearer " <> TE.encodeUtf8 accessToken)
                   , ("Content-Type", "application/json")
                   ]
               }
@@ -366,20 +366,20 @@ buildEmbed
   -> IO (Either Error (Maybe Json.Value))
 buildEmbed _ _ Nothing = pure (Right Nothing)
 buildEmbed manager session (Just LinkCard{..}) = do
-  thumbResult <- case lcThumbUrl of
+  thumbResult <- case thumbUrl of
     Nothing       -> pure (Right Nothing)
-    Just thumbUrl -> do
-      imageData <- fetchImageAsBuffer thumbUrl
-      let mimeType = TE.encodeUtf8 (detectContentType thumbUrl)
+    Just thumbSource -> do
+      imageData <- fetchImageAsBuffer thumbSource
+      let mimeType = TE.encodeUtf8 (detectContentType thumbSource)
       blobResult <- uploadBlob manager session mimeType imageData
       pure (fmap Just blobResult)
   pure $ case thumbResult of
     Left err -> Left err
     Right maybeBlob ->
       let externalFields =
-            [ "uri" .= unUrl lcUri
-            , "title" .= unTitle lcTitle
-            , "description" .= lcDescription
+            [ "uri" .= unUrl uri
+            , "title" .= unTitle title
+            , "description" .= description
             ] <> maybe [] (\blob -> ["thumb" .= blob]) maybeBlob
       in Right $ Just $ object
             [ "$type" .= ("app.bsky.embed.external" :: Text)
@@ -420,7 +420,7 @@ deleteRecord :: Manager -> AtpSession -> Text -> IO (Either Error ())
 deleteRecord manager AtpSession{..} uri = do
   let (collection, rkey) = parseAtUri uri
       bodyJson = encode (object
-        [ "repo" .= asDid
+        [ "repo" .= did
         , "collection" .= collection
         , "rkey" .= rkey
         ])
@@ -431,7 +431,7 @@ deleteRecord manager AtpSession{..} uri = do
           { method = "POST"
           , requestBody = RequestBodyLBS bodyJson
           , requestHeaders =
-              [ ("Authorization", "Bearer " <> TE.encodeUtf8 asAccessToken)
+              [ ("Authorization", "Bearer " <> TE.encodeUtf8 accessToken)
               , ("Content-Type", "application/json")
               ]
           }

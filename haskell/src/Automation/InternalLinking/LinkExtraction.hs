@@ -2,7 +2,6 @@
 
 module Automation.InternalLinking.LinkExtraction
   ( extractLinkedPaths
-  , findMostRecentReflection
   , bfsTraversal
   , normalizeFilePath
   , makeRelativeTo
@@ -12,13 +11,13 @@ module Automation.InternalLinking.LinkExtraction
   ) where
 
 import Automation.Frontmatter (parseFrontmatter)
-import Automation.Reflection (selectMostRecentReflection)
+import Automation.Reflection (findMostRecentReflection)
 import Data.IORef (IORef, modifyIORef', newIORef, readIORef)
 import qualified Data.Set as Set
 import Data.Text (Text)
 import qualified Data.Text as T
 import qualified Data.Text.IO as TIO
-import System.Directory (doesDirectoryExist, doesFileExist, listDirectory)
+import System.Directory (doesFileExist)
 import System.FilePath (takeBaseName, (</>))
 import Text.Regex.TDFA ((=~))
 
@@ -127,14 +126,6 @@ takeDirectory = joinSlash . safeInit . splitSlash
   where
     safeInit [] = []
     safeInit xs = init xs
-
-findMostRecentReflection :: FilePath -> IO (Maybe Text)
-findMostRecentReflection contentDir = do
-  let reflDir = contentDir </> "reflections"
-  exists <- doesDirectoryExist reflDir
-  if exists
-    then selectMostRecentReflection <$> listDirectory reflDir
-    else pure Nothing
 
 bfsTraversal :: FilePath -> IO [Text]
 bfsTraversal contentDir = do

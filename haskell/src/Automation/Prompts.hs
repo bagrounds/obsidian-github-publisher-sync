@@ -20,8 +20,8 @@ import Automation.Title (unTitle)
 import Automation.Url (unUrl)
 
 data PromptPair = PromptPair
-  { ppSystem :: Text
-  , ppUser   :: Text
+  { system :: Text
+  , user   :: Text
   } deriving (Show, Eq)
 
 aiQuestionPrefix :: Text
@@ -40,8 +40,8 @@ topicTagsInstructions = T.intercalate "\n"
 
 calculateQuestionBudget :: ReflectionData -> Int
 calculateQuestionBudget rd =
-  let titleLength = T.length (unTitle (rdTitle rd))
-      urlLength = T.length (unUrl (rdUrl rd))
+  let titleLength = T.length (unTitle (title rd))
+      urlLength = T.length (unUrl (url rd))
       prefixLength = T.length aiQuestionPrefix
       tagLineAllowance = 60 :: Int
       fixedOverhead = titleLength + 2 + prefixLength + 2 + tagLineAllowance + 1 + urlLength
@@ -76,14 +76,14 @@ buildTagsPrompt rd =
       user = T.intercalate "\n"
         [ "Generate emoji topic tags for this page:"
         , ""
-        , "Title: " <> unTitle (rdTitle rd)
-        , "URL: " <> unUrl (rdUrl rd)
-        , "Date: " <> rdDate rd
+        , "Title: " <> unTitle (title rd)
+        , "URL: " <> unUrl (url rd)
+        , "Date: " <> date rd
         , ""
         , "Content:"
-        , rdBody rd
+        , body rd
         ]
-  in PromptPair { ppSystem = system, ppUser = user }
+  in PromptPair { system = system, user = user }
 
 buildQuestionPrompt :: ReflectionData -> PromptPair
 buildQuestionPrompt rd =
@@ -106,14 +106,14 @@ buildQuestionPrompt rd =
       user = T.intercalate "\n"
         [ "Generate a discussion question for this page (max " <> maxCharsText <> " characters):"
         , ""
-        , "Title: " <> unTitle (rdTitle rd)
-        , "URL: " <> unUrl (rdUrl rd)
-        , "Date: " <> rdDate rd
+        , "Title: " <> unTitle (title rd)
+        , "URL: " <> unUrl (url rd)
+        , "Date: " <> date rd
         , ""
         , "Content:"
-        , rdBody rd
+        , body rd
         ]
-  in PromptPair { ppSystem = system, ppUser = user }
+  in PromptPair { system = system, user = user }
 
 parseQuestionAndTags :: Text -> (Text, Text)
 parseQuestionAndTags modelOutput =
@@ -126,12 +126,12 @@ parseQuestionAndTags modelOutput =
 assemblePost :: Text -> ReflectionData -> Text
 assemblePost modelOutput rd =
   let (question, tags) = parseQuestionAndTags modelOutput
-      titlePart = [unTitle (rdTitle rd), ""]
+      titlePart = [unTitle (title rd), ""]
       questionPart = if T.null question
         then []
         else [aiQuestionPrefix <> question, ""]
       tagsPart = [tags | not (T.null tags)]
-      urlPart = [unUrl (rdUrl rd)]
+      urlPart = [unUrl (url rd)]
   in T.intercalate "\n" (titlePart <> questionPart <> tagsPart <> urlPart)
 
 buildShortenQuestionPrompt :: Text -> Int -> PromptPair
@@ -148,4 +148,4 @@ buildShortenQuestionPrompt question overage =
         , ""
         , "Question: " <> question
         ]
-  in PromptPair { ppSystem = system, ppUser = user }
+  in PromptPair { system = system, user = user }

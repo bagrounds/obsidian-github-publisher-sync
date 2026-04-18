@@ -15,14 +15,14 @@ import Automation.Title (Title)
 import Automation.Url (Url)
 
 data ReflectionData = ReflectionData
-  { rdDate :: Text
-  , rdTitle :: Title
-  , rdUrl :: Url
-  , rdBody :: Text
-  , rdFilePath :: Text
-  , rdHasTweetSection :: Bool
-  , rdHasBlueskySection :: Bool
-  , rdHasMastodonSection :: Bool
+  { date :: Text
+  , title :: Title
+  , url :: Url
+  , body :: Text
+  , filePath :: Text
+  , hasTweetSection :: Bool
+  , hasBlueskySection :: Bool
+  , hasMastodonSection :: Bool
   } deriving (Show, Eq)
 
 selectMostRecentReflection :: [String] -> Maybe Text

@@ -58,7 +58,7 @@
 🔧 If the frontmatter URL returns a 404, the system derives the correct URL from the file path using `urlFromFilePath` (format: `https://bagrounds.org/{relative-path-without-.md}`).
 🔄 If the file-path-derived URL differs from the frontmatter URL and is live, the frontmatter `URL` property is automatically updated via `updateFrontmatterUrl` and the corrected note proceeds to posting.
 🚫 If both the frontmatter URL and the file-path-derived URL return 404, the note is skipped but BFS still follows its links to discover other content.
-📋 URL validation is injected into `FindContentConfig` via the optional `fccPublicationChecker` callback.
+📋 URL validation is injected into `FindContentConfig` via the optional `publicationChecker` callback.
 ⚡ URL checks are only performed on notes that pass all other content filters (postable and eligible), avoiding unnecessary HTTP requests during BFS traversal.
 
 ## 🤖 Post Text Generation

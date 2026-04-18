@@ -9,6 +9,10 @@ Platform:
 Channel: Heather Cox Richardson
 tags:
 youtube: https://www.youtube.com/embed/ROhay7D90Ko
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_version: "2"
+link_analysis_time: 2026-04-17T00:00:00Z
+force_analyze_links: false
 ---
 [Home](../index.md) > [Videos](./index.md)  
 # 🇺🇸🗣️🏛️ American Conversations: Representative Joe Morelle  
@@ -51,7 +55,7 @@ youtube: https://www.youtube.com/embed/ROhay7D90Ko
 ### ↔️ Similar  
   
 * 🏛️ The Great Displacement by Jake Bittle, published by Simon and Schuster, explores how institutional failures impact American infrastructure and public trust.  
-* 📜 The Bill of Obligations by Richard Haass, published by Penguin Press, details the habits and reforms necessary to preserve a functioning democratic republic.  
+* 📜 [📜🤝 The Bill of Obligations: The Ten Habits of Good Citizens](../books/the-bill-of-obligations.md) by Richard Haass, published by Penguin Press, details the habits and reforms necessary to preserve a functioning democratic republic.  
   
 ### 🆚 Contrasting  
   

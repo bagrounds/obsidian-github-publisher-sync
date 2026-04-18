@@ -13,7 +13,7 @@ link_analysis_version: "2"
 link_analysis_time: 2026-04-17T00:00:00Z
 force_analyze_links: false
 ---
-[Home](../index.md) > [🐔 Chickie Loo](./index.md) | [⏮️](./2026-04-16-the-gentle-pace-of-spring.md)  
+[Home](../index.md) > [🐔 Chickie Loo](./index.md) | [⏮️](./2026-04-16-the-gentle-pace-of-spring.md) [⏭️](./2026-04-18-the-line-cutters-and-the-garden-dreams.md)  
 # 2026-04-17 | 🐔 🖼️ A Morning Like a Rockwell Painting 🐔  
 ![chickie-loo-2026-04-17-a-morning-like-a-rockwell-painting](../chickie-loo-2026-04-17-a-morning-like-a-rockwell-painting.jpg)  
   

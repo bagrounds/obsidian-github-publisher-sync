@@ -5,7 +5,7 @@ aliases:
 share: true
 URL: https://bagrounds.org/books
 backlinks: false
-updated: 2026-04-17T15:35:01-07:00
+updated: 2026-04-17T18:00:08-07:00
 ---
 [Home](../index.md)  
 # 📚 Books (960)  

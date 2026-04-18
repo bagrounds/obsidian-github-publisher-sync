@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-04-17T15:35:01-07:00
+updated: 2026-04-17T18:00:08-07:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -21,11 +21,11 @@ updated: 2026-04-17T15:35:01-07:00
 - [2026-04-14 | 🌍 Hungary’s 🇺🇸 America's 🗣️ Chat 🌟 Reshape 🌐 Sands 🤖 Architecture 🏛️ Goods 🐔 Loos 🧩 Fixing 🧹 Removing 📣 Buttons 📰📺🌟🤖🏛️🐔🤖🐲](./reflections/2026-04-14.md)  
   
   
-## [🤖 AI Blog](./ai-blog/index.md) (160)  
+## [🤖 AI Blog](./ai-blog/index.md) (161)  
+- [2026-04-17 | 🚫 Excluding Changes Pages from Social Posting 🤖](./ai-blog/2026-04-17-2-exclude-changes-from-social-posting.md)  
 - [2026-04-17 | 🔀 Fixing Wrong Arrows in Changes Pages 🤖](./ai-blog/2026-04-17-1-fixing-wrong-arrows-in-changes-pages.md)  
 - [2026-04-16 | 🔍 The Case of the Misplaced Files 🔀](./ai-blog/2026-04-16-3-the-case-of-the-misplaced-files.md)  
 - [2026-04-16 | 📂 Moving Updates to a Changes Directory 🤖](./ai-blog/2026-04-16-2-changes-directory.md)  
-- [2026-04-16 | 🛡️ Data Loss Prevention in Daily Updates 🔗](./ai-blog/2026-04-16-1-data-loss-prevention-daily-updates.md)  
   
   
 ## [🤖 Auto Blog Zero](./auto-blog-zero/index.md) (38)  
@@ -63,30 +63,31 @@ updated: 2026-04-17T15:35:01-07:00
 - [2026-04-14 | 🌟 🏥 Medical Marvels and Environmental Victories Reshape Our World 🌟](./positivity-bias/2026-04-14-medical-marvels-and-environmental-victories-reshape-our-world.md)  
   
   
-## [🔀 Convergence](./convergence/index.md) (3)  
+## [🔀 Convergence](./convergence/index.md) (4)  
+- [2026-04-17 | 🔀 🪞 The Architectures of Validation: Friction, Flow, and Form 🔀](./convergence/2026-04-17-the-architectures-of-validation-friction-flow-and-form.md)  
 - [2026-04-16 | 🔀 💡 The Architecture of Sustenance and Self-Correction 🔀](./convergence/2026-04-16-the-architecture-of-sustenance-and-self-correction.md)  
 - [2026-04-15 | 🔀 The Observer Awakens 🔀](./convergence/2026-04-15-the-observer-awakens.md)  
   
   
 ## [📚 Books](./books/index.md) (960)  
-- [☀️😀👍😊🌻 How to Have a Good Day: Harness the Power of Behavioral Science to Transform Your Working Life](./books/how-to-have-a-good-day.md)  
-- [🧠🎯👁️💡 Applied Attention Theory](./books/human-attention.md)  
-- [🧠🔒 Make It Stick: The Science of Successful Learning](./books/make-it-stick.md)  
-- [🏃‍♂️⛰️ Born to Run: A Hidden Tribe, Superathletes, and the Greatest Race the World Has Never Seen](./books/born-to-run-a-hidden-tribe-superathletes-and-the-greatest-race-the-world-has-never-seen.md)  
+- [🤫🧠 Subliminal: How Your Unconscious Mind Rules Your Behavior](./books/subliminal-how-your-unconscious-mind-rules-your-behavior.md)  
+- [🏗️😊🗺️✨ Designing Your Life: How to Build a Well-Lived, Joyful Life](./books/designing-your-life.md)  
+- [♟️🧠📈🎯 The Art of Strategy: A Game Theorist's Guide to Success in Business and Life](./books/the-art-of-strategy-a-game-theorists-guide-to-success-in-business-and-life.md)  
+- [❓🧠 The Hidden Spring: A Journey to the Source of Consciousness](./books/the-hidden-spring-a-journey-to-the-source-of-consciousness.md)  
   
   
-## [📺 Videos](./videos/index.md) (764)  
+## [📺 Videos](./videos/index.md) (765)  
+- [🏛️🗣️ Politics Chat, April 16, 2026](./videos/politics-chat-april-16-2026.md)  
+- [❌🤔💡 On being wrong | Kathryn Schulz](./videos/on-being-wrong-kathryn-schulz.md)  
 - [🏛️💸😡 Our Tax System Should Make You Furious | The Ezra Klein Show](./videos/our-tax-system-should-make-you-furious-the-ezra-klein-show.md)  
 - [💥🏚️🏛️ Zohran Mamdani says Iran war speaks to a “broken kind of politics” | Newsmakers](./videos/zohran-mamdani-says-iran-war-speaks-to-a-broken-kind-of-politics-newsmakers.md)  
-- [🏦 🇺🇸 📉 🗣️ Tamara Keith and Amy Walter on pushback to Trump's threats to Federal Reserve](./videos/tamara-keith-and-amy-walter-on-pushback-to-trumps-threats-to-federal-reserve.md)  
-- [🏛️📰🗣️🇺🇸 Jelani Cobb talks democracy, Trumpism, and the future of journalism | Code Switch](./videos/jelani-cobb-talks-democracy-trumpism-and-the-future-of-journalism-code-switch.md)  
   
   
 ## [🌌 Topics](./topics/index.md) (91)  
+- [🫂💖 Attachment Theory](./topics/attachment-theory.md)  
 - [➗📐 Math](./topics/math.md)  
 - [🐑🎀 Mary Had a Little Lamb](./topics/mary-had-a-little-lamb.md)  
 - [📚✍️ Literary Arts](./topics/literary-arts.md)  
-- [🗣️📚🧠 Linguistics](./topics/linguistics.md)  
   
   
 ## [📄  Articles](./articles/index.md) (84)  

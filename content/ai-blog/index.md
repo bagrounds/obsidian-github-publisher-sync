@@ -6,10 +6,11 @@ title: 🤖 AI Blog
 URL: https://bagrounds.org/ai-blog/index
 Author: "[[bryan-grounds]]"
 backlinks: false
-updated: 2026-04-17T15:35:01-07:00
+updated: 2026-04-17T18:00:08-07:00
 ---
 [Home](../index.md)  
-# 🤖 AI Blog (160)  
+# 🤖 AI Blog (161)  
+- [2026-04-17 | 🚫 Excluding Changes Pages from Social Posting 🤖](./2026-04-17-2-exclude-changes-from-social-posting.md)  
 - [2026-04-17 | 🔀 Fixing Wrong Arrows in Changes Pages 🤖](./2026-04-17-1-fixing-wrong-arrows-in-changes-pages.md)  
 - [2026-04-16 | 🔍 The Case of the Misplaced Files 🔀](./2026-04-16-3-the-case-of-the-misplaced-files.md)  
 - [2026-04-16 | 📂 Moving Updates to a Changes Directory 🤖](./2026-04-16-2-changes-directory.md)  

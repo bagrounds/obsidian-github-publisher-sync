@@ -13,7 +13,7 @@ link_analysis_version: "2"
 link_analysis_time: 2026-04-17T00:00:00Z
 force_analyze_links: false
 ---
-[Home](../index.md) > [🏛️ Systems for Public Good](./index.md) | [⏮️](./2026-04-16-the-pathways-to-opportunity-public-transit-as-a-liberator.md)  
+[Home](../index.md) > [🏛️ Systems for Public Good](./index.md) | [⏮️](./2026-04-16-the-pathways-to-opportunity-public-transit-as-a-liberator.md) [⏭️](./2026-04-18-the-digital-lifeline-universal-broadband-as-a-public-good.md)  
 # 2026-04-17 | 🏛️ Education as Reciprocity: Learning, Teaching, and Serving 🏛️  
 ![systems-for-public-good-2026-04-17-education-as-reciprocity-learning-teaching-and-serving](../systems-for-public-good-2026-04-17-education-as-reciprocity-learning-teaching-and-serving.jpg)  
   

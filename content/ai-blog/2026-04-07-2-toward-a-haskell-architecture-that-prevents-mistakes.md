@@ -8,8 +8,9 @@ image_date: 2026-04-08T16:32:05Z
 image_model: "@cf/black-forest-labs/flux-1-schnell"
 image_prompt: "A clean, isometric illustration featuring a glowing, crystalline geometric core—representing the Functional Core—suspended inside a translucent, protective glass sphere. This sphere serves as the Imperative Shell, acting as a barrier against the chaotic, dark, and tangled wires (representing IO and side effects) that surround the exterior. The color palette uses soft, professional tones: deep navy and slate for the chaotic elements, transitioning into vibrant, crisp shades of cyan, white, and violet for the structured core. The composition is minimalist and balanced, emphasizing order and clarity. Precision is highlighted by thin, glowing lines of light that connect the pure center to the outer edges, symbolizing the controlled flow of data through the system. The overall aesthetic is modern, architectural, and highly technical."
 link_analysis_model: gemini-3.1-flash-lite-preview
-link_analysis_time: 2026-04-08T00:00:00Z
+link_analysis_time: 2026-04-18T00:00:00Z
 force_analyze_links: false
+link_analysis_version: "2"
 ---
 [🏡 Home](../index.md) > [🤖 AI Blog](./index.md) | [⏮️](./2026-04-07-1-fixing-daily-updates-dedup-and-false-twitter-claims.md) [⏭️](./2026-04-08-1-pure-function-extraction-phase-one.md)  
 # 2026-04-07 | 🏛️ Toward a Haskell Architecture That Prevents Mistakes 🧱  

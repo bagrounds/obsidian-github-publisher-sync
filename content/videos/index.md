@@ -5,10 +5,10 @@ aliases:
 title: 📺 Videos
 URL: https://bagrounds.org/videos
 backlinks: false
-updated: 2026-04-19T14:05:36-07:00
+updated: 2026-04-19T16:13:07-07:00
 ---
 [Home](../index.md)  
-# 📺 Videos (773)  
+# 📺 Videos (774)  
 - [💰🤑🤖💡🚀💲 $0.10 per Month Runs My Entire AI Life. I'll Show You How.](./0-10-month-runs-my-entire-ai-life-ill-show-you-how.md)  
 - [📊📈📉📃👁️ 10 Charts to Understand the 900 Page Budget Bill](./10-charts-to-understand-the-900-page-budget-bill.md)  
 - [🤖🔗⬆️✅ 12-Factor Agents: Patterns of reliable LLM applications — Dex Horthy, HumanLayer](./12-factor-agents-patterns-of-reliable-llm-applications-dex-horthy-humanlayer.md)  
@@ -590,6 +590,7 @@ updated: 2026-04-19T14:05:36-07:00
 - [🔋🎯💯⚡ THE POWER OF FULL ENGAGEMENT by Jim Loehr and Tony Schwartz | Animated Core Message](./the-power-of-full-engagement-by-jim-loehr-and-tony-schwartz-animated-core-message.md)  
 - [🧠💰⚠️ The price you pay for being smart It's Been a Minute](./the-price-you-pay-for-being-smart-its-been-a-minute.md)  
 - [🧠💰📈 The psychology of making money](./the-psychology-of-making-money.md)  
+- [🎞️🎭🤫🇺🇸 The Public and Private Lives of FDR (1933-1945) | Full Documentary | American Experience PBS](./the-public-and-private-lives-of-fdr-1933-1945-full-documentary-american-experience-pbs.md)  
 - [📉🎶👎 The Real Reason Why Music Is Getting Worse](./the-real-reason-why-music-is-getting-worse.md)  
 - [👓⚖️ There Are Two Ways to Look At Freedom | Explainer](./there-are-two-ways-to-look-at-freedom-explainer.md)  
 - [🌅🧠🗝️🚀📈 The Remarkable Morning Method: 5 Ways to Unlock Your Best Mental State](./the-remarkable-morning-method-5-ways-to-unlock-your-best-mental-state.md)  

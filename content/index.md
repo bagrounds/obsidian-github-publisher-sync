@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-04-19T14:05:36-07:00
+updated: 2026-04-19T16:13:07-07:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -71,17 +71,17 @@ updated: 2026-04-19T14:05:36-07:00
   
   
 ## [📚 Books](./books/index.md) (960)  
-- [🧩⚙️🌱📈 Organize for Complexity: How to Get Life Back Into Work to Build the High-Performance Organization](./books/organize-for-complexity.md)  
-- [🧑‍🌾🌿 A Gardener's Guide to Botany: The Biology Behind the Plants You Love, How They Grow, and What They Need](./books/a-gardeners-guide-to-botany.md)  
-- [🌿🧑‍🌾 Botany for Gardeners](./books/botany-for-gardeners.md)  
-- [🌐💰 Networks, Crowds, and Markets: Reasoning About a Highly Connected World](./books/networks-crowds-and-markets.md)  
+- [🗓️🌷 RHS Gardening Through the Year](./books/rhs-gardening-through-the-year.md)  
+- [🪴🌱 RHS How to Garden When You're New to Gardening: The Basics for Absolute Beginners](./books/rhs-how-to-garden-when-youre-new-to-gardening-the-basics-for-beginners.md)  
+- [🙏🔄 Ritual Theory, Ritual Practice](./books/ritual-theory-ritual-practice.md)  
+- [🕯️🎬👃 Ritual, Performance and the Senses](./books/ritual-performance-and-the-senses.md)  
   
   
-## [📺 Videos](./videos/index.md) (773)  
+## [📺 Videos](./videos/index.md) (774)  
+- [🎞️🎭🤫🇺🇸 The Public and Private Lives of FDR (1933-1945) | Full Documentary | American Experience PBS](./videos/the-public-and-private-lives-of-fdr-1933-1945-full-documentary-american-experience-pbs.md)  
+- [This Single Rule Underpins All Of Physics](./videos/this-single-rule-underpins-all-of-physics.md)  
+- [🍎🔄🩸 Dr. Casey Means: Transform Your Health by Improving Metabolism, Hormone & Blood Sugar Regulation](./videos/dr-casey-means-transform-your-health-by-improving-metabolism-hormone-and-blood-sugar-regulation.md)  
 - [🏗️⭐🤖 How to Build a Remarkable Brand in the Age of AI | Seth Godin](./videos/how-to-build-a-remarkable-brand-in-the-age-of-ai-seth-godin.md)  
-- [❓🏥💰 Who Is the U.S. Health System Really For? | NYT Opinion](./videos/who-is-the-us-health-system-really-for-nyt-opinion.md)  
-- [🗺️♟️🤖🤝 Parables on the Power of Planning in AI: From Poker to Diplomacy: Noam Brown (OpenAI)](./videos/parables-on-the-power-of-planning-in-ai-from-poker-to-diplomacy-noam-brown-openai.md)  
-- [🧠🔄♾️💡 The concept that changes how you learn forever](./videos/the-concept-that-changes-how-you-learn-forever.md)  
   
   
 ## [🌌 Topics](./topics/index.md) (91)  
@@ -92,10 +92,10 @@ updated: 2026-04-19T14:05:36-07:00
   
   
 ## [📄  Articles](./articles/index.md) (84)  
+- [🏛️🗞️🦊 More than 50 House Democrats demand answers after whistleblower report on DOGE](./articles/more-than-50-house-democrats-demand-answers-after-whistleblower-report-on-doge.md)  
 - [📜💀⚠️ What the Holocaust Teaches](./articles/what-the-holocaust-teaches-us.md)  
 - [📚🔥 Naval Academy removes nearly 400 books from library in new DEI purge ordered by Hegseth’s office](./articles/naval-academy-removes-nearly-400-books-from-library-in-new-dei-purge-ordered-by-hegseths-office.md)  
 - [⏱️⚔️🏛️ '60 Minutes' chief resigns, saying show's independence was compromised](./articles/60-minutes-chief-resigns-saying-shows-independence-was-compromised.md)  
-- [🦊😈🐾🕵️💸 5 takeaways about NPR's reporting on the whistleblower report about DOGE at the NLRB](./articles/5-takeaways-about-nprs-reporting-on-the-whistleblower-report-about-doge-at-the-nlrb.md)  
   
   
 ## [🤖💬 Bot Chats](./bot-chats/index.md) (49)  

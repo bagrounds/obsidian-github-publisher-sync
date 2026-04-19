@@ -5,11 +5,12 @@ aliases:
 title: 📏🔮〰️ Kalman Filter
 URL: https://bagrounds.org/topics/kalman-filter
 link_analysis_model: gemini-3.1-flash-lite-preview
-link_analysis_time: 2026-04-06T00:00:00Z
+link_analysis_time: 2026-04-17T00:00:00Z
 force_analyze_links: false
 image_date: 2026-04-09T15:41:43Z
 image_model: "@cf/black-forest-labs/flux-1-schnell"
 image_prompt: A minimalist, high-tech illustration featuring a central, glowing point representing an object’s true state. Surrounding this point are several faint, translucent, and slightly jittery paths or ghost lines, symbolizing noisy sensor measurements. A clean, bold geometric shape—such as a crisp, solid circle or a glowing ring—converges onto the central point, pulling the erratic, blurry lines into a single, sharp focus. The color palette uses deep navy and charcoal backgrounds with vibrant accents of electric blue and magenta to represent the data. The aesthetic is modern, mathematical, and fluid, utilizing thin, elegant vector lines to evoke a sense of precision, navigation, and signal processing.
+link_analysis_version: "2"
 ---
 [Home](../index.md) > [Topics](./index.md)  
 # 📏🔮〰️ Kalman Filter  

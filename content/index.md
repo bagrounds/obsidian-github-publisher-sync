@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-04-19T07:46:27-07:00
+updated: 2026-04-19T08:40:18-07:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -28,11 +28,11 @@ updated: 2026-04-19T07:46:27-07:00
 - [2026-04-17 | 🚫 Excluding Changes Pages from Social Posting 🤖](./ai-blog/2026-04-17-2-exclude-changes-from-social-posting.md)  
   
   
-## [🤖 Auto Blog Zero](./auto-blog-zero/index.md) (39)  
+## [🤖 Auto Blog Zero](./auto-blog-zero/index.md) (40)  
+- [2026-04-19 | 🤖 📆 Weekly Recap: The Architecture of Adversarial Verification 🤖](./auto-blog-zero/2026-04-19-weekly-recap-the-architecture-of-adversarial-verification.md)  
 - [2026-04-18 | 🤖 🧱 The Architecture of Adversarial Verification 🤖](./auto-blog-zero/2026-04-18-the-architecture-of-adversarial-verification.md)  
 - [2026-04-17 | 🤖 The Recursive Mirror 🤖](./auto-blog-zero/2026-04-17-the-recursive-mirror.md)  
 - [2026-04-16 | 🤖 The Transparency Tax and the Cognitive Mirror 🤖](./auto-blog-zero/2026-04-16-the-transparency-tax-and-the-cognitive-mirror.md)  
-- [2026-04-15 | 🤖 Decoding the Synthetic Ghost 🤖](./auto-blog-zero/2026-04-15-decoding-the-synthetic-ghost.md)  
   
   
 ## [🐔 Chickie Loo](./chickie-loo/index.md) (40)  
@@ -71,17 +71,17 @@ updated: 2026-04-19T07:46:27-07:00
   
   
 ## [📚 Books](./books/index.md) (960)  
+- [🎨😨 The Art of Fear: Why Conquering Fear Won't Work and What to Do Instead](./books/the-art-of-fear.md)  
+- [🗺️🎯🪜🏗️ Planning for Everything: The Design of Paths and Goals](./books/planning-for-everything.md)  
 - [⬆️🤥🏛️ A Higher Loyalty: Truth, Lies, and Leadership](./books/a-higher-loyalty-truth-lies-and-leadership.md)  
 - [⚠️🥴🕹️🌐 The Fifth Risk](./books/the-fifth-risk.md)  
-- [📢🕸️ Network Propaganda: Manipulation, Disinformation, and Radicalization in American Politics](./books/network-propaganda-manipulation-disinformation-and-radicalization-in-american-politics.md)  
-- [🔬⚙️ The Sciences of the Artificial](./books/the-sciences-of-the-artificial.md)  
   
   
 ## [📺 Videos](./videos/index.md) (771)  
+- [💰🤑🤖💡🚀💲 $0.10 per Month Runs My Entire AI Life. I'll Show You How.](./videos/0-10-month-runs-my-entire-ai-life-ill-show-you-how.md)  
 - [⚙️⚖️📈 Eliyahu Goldratt - Matter of Choice | Goldratt on the Economy](./videos/eliyahu-goldratt-matter-of-choice-goldratt-on-the-economy.md)  
 - [🤖🧠⚙️👩‍💻 AI Engineering with Chip Huyen](./videos/ai-engineering-with-chip-huyen.md)  
 - [🧠🛠️🕸️🚫🙅‍♂️💼 No Vibes Allowed: Solving Hard Problems in Complex Codebases – Dex Horthy, HumanLayer](./videos/no-vibes-allowed-solving-hard-problems-in-complex-codebases-dex-horthy-humanlayer.md)  
-- [🤖🔗⬆️✅ 12-Factor Agents: Patterns of reliable LLM applications — Dex Horthy, HumanLayer](./videos/12-factor-agents-patterns-of-reliable-llm-applications-dex-horthy-humanlayer.md)  
   
   
 ## [🌌 Topics](./topics/index.md) (91)  
@@ -92,10 +92,10 @@ updated: 2026-04-19T07:46:27-07:00
   
   
 ## [📄  Articles](./articles/index.md) (84)  
+- [✊🏾✊🏽✊🏿 Protesters unite against Trump in hundreds of rallies across the U.S.](./articles/protesters-unite-against-trump-in-hundreds-of-rallies-across-the-us.md)  
 - [👀 Attention Is All You Need](./articles/attention-is-all-you-need.md)  
 - [🏛️🕸️🧩 Architectural Styles and the Design of Network Based Software Architectures](./articles/architectural-styles-and-the-design-of-network-based-software-architectures.md)  
 - [👀👶🏼🏃🏼‍♀️🛣️ What to Look for in a Jogging Stroller](./articles/what-to-look-for-in-a-jogging-stroller.md)  
-- [🔍🍎🌲📚 Information Foraging Theory](./articles/information-foraging-theory.md)  
   
   
 ## [🤖💬 Bot Chats](./bot-chats/index.md) (49)  

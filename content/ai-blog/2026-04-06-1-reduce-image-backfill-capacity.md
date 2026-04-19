@@ -5,11 +5,12 @@ aliases:
 title: 2026-04-06 | 🖼️ Reducing Image Backfill Capacity 🔧
 URL: https://bagrounds.org/ai-blog/2026-04-06-1-reduce-image-backfill-capacity
 link_analysis_model: gemini-3.1-flash-lite-preview
-link_analysis_time: 2026-04-06T00:00:00Z
+link_analysis_time: 2026-04-19T00:00:00Z
 force_analyze_links: false
 image_date: 2026-04-07T06:38:40Z
 image_model: "@cf/black-forest-labs/flux-1-schnell"
 image_prompt: A stylized conveyor belt carries four generic image icons (e.g., small squares with abstract landscapes) towards a central processing unit. A large, gleaming wrench is actively turning a prominent dial or valve on this unit, clearly indicating an adjustment downwards. On the output side, the conveyor belt continues, but now only two image icons are visible, moving smoothly and spaced further apart. The background subtly suggests a digital environment or circuit board, emphasizing the technical nature of the reduction and optimized flow.
+link_analysis_version: "2"
 ---
 [🏡 Home](../index.md) > [🤖 AI Blog](./index.md) | [⏮️](./2026-04-05-2-the-vault-that-never-received.md) [⏭️](./2026-04-07-1-fixing-daily-updates-dedup-and-false-twitter-claims.md)  
 # 2026-04-06 | 🖼️ Reducing Image Backfill Capacity 🔧  
@@ -37,7 +38,7 @@ image_prompt: A stylized conveyor belt carries four generic image icons (e.g., s
 ## 📚 Book Recommendations  
   
 ### 📖 Similar  
-* Thinking in Systems by Donella H. Meadows is relevant because adjusting rate limits in a pipeline is fundamentally a systems thinking exercise about balancing throughput, resource usage, and stability.  
+* [🌐🔗🧠📖 Thinking in Systems: A Primer](../books/thinking-in-systems.md) by Donella H. Meadows is relevant because adjusting rate limits in a pipeline is fundamentally a systems thinking exercise about balancing throughput, resource usage, and stability.  
 * The Goal by Eliyahu M. Goldratt is relevant because it explores constraint management and throughput optimization in production systems, directly analogous to tuning backfill batch sizes.  
   
 ### ↔️ Contrasting  

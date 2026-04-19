@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-04-19T08:40:18-07:00
+updated: 2026-04-19T13:49:06-07:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -21,11 +21,11 @@ updated: 2026-04-19T08:40:18-07:00
 - [2026-04-16 | 🌟 Losing 💯 🧪 Weeding 📍 Spot 🤔 Great 🌸 Horizons 🐔 Pace 🤖 Mirror 🏛️ Liberator 🔀 Sustenance 🔗 Updates 🤖 Changes 🔀 Misplaced 📺🌟📰🐔🤖🏛️🔀🤖🐲](./reflections/2026-04-16.md)  
   
   
-## [🤖 AI Blog](./ai-blog/index.md) (164)  
+## [🤖 AI Blog](./ai-blog/index.md) (167)  
+- [2026-04-19 | 🎂 Blogiversary Two: A Year of Daily Reflections, Haskell, and Six AI Blogs 🕯️🕯️](./ai-blog/2026-04-19-3-blogiversary-2.md)  
+- [2026-04-19 | 🏁 Finishing the Haskell Architecture Journey 🗺️](./ai-blog/2026-04-19-2-finishing-the-haskell-architecture-journey.md)  
+- [2026-04-19 | 🔧 Fixing the Misplaced H2 🤖](./ai-blog/2026-04-19-1-fixing-the-misplaced-h2.md)  
 - [2026-04-18 | 🔗 Changes Link and Analytics Clarity 🤖](./ai-blog/2026-04-18-3-changes-link-and-analytics-clarity.md)  
-- [2026-04-18 | 📊 Hello, Google Analytics 🤖](./ai-blog/2026-04-18-2-hello-google-analytics.md)  
-- [2026-04-18 | 🔬 Quality Audit of the Haskell Codebase 🧹](./ai-blog/2026-04-18-1-quality-audit.md)  
-- [2026-04-17 | 🚫 Excluding Changes Pages from Social Posting 🤖](./ai-blog/2026-04-17-2-exclude-changes-from-social-posting.md)  
   
   
 ## [🤖 Auto Blog Zero](./auto-blog-zero/index.md) (40)  
@@ -42,11 +42,11 @@ updated: 2026-04-19T08:40:18-07:00
 - [2026-04-16 | 🐔 🌾 The Gentle Pace of Spring 🐔](./chickie-loo/2026-04-16-the-gentle-pace-of-spring.md)  
   
   
-## [🏛️ Systems for Public Good](./systems-for-public-good/index.md) (28)  
+## [🏛️ Systems for Public Good](./systems-for-public-good/index.md) (29)  
+- [2026-04-19 | 🏛️ 🗺️ Navigating Our Collective Well-being: A Week of Foundational Investments 🏛️](./systems-for-public-good/2026-04-19-navigating-our-collective-well-being-a-week-of-foundational-investments.md)  
 - [2026-04-18 | 🏛️ 🌐 The Digital Lifeline: Universal Broadband as a Public Good 🏛️](./systems-for-public-good/2026-04-18-the-digital-lifeline-universal-broadband-as-a-public-good.md)  
 - [2026-04-17 | 🏛️ Education as Reciprocity: Learning, Teaching, and Serving 🏛️](./systems-for-public-good/2026-04-17-education-as-reciprocity-learning-teaching-and-serving.md)  
 - [2026-04-16 | 🏛️ 🚌 The Pathways to Opportunity: Public Transit as a Liberator 🏛️](./systems-for-public-good/2026-04-16-the-pathways-to-opportunity-public-transit-as-a-liberator.md)  
-- [2026-04-15 | 🏛️ 🚨 The Shield of Community: Public Safety as a Foundational Public Good 🏛️](./systems-for-public-good/2026-04-15-the-shield-of-community-public-safety-as-a-foundational-public-good.md)  
   
   
 ## [📰 The Noise](./the-noise/index.md) (10)  
@@ -71,17 +71,17 @@ updated: 2026-04-19T08:40:18-07:00
   
   
 ## [📚 Books](./books/index.md) (960)  
-- [🎨😨 The Art of Fear: Why Conquering Fear Won't Work and What to Do Instead](./books/the-art-of-fear.md)  
-- [🗺️🎯🪜🏗️ Planning for Everything: The Design of Paths and Goals](./books/planning-for-everything.md)  
-- [⬆️🤥🏛️ A Higher Loyalty: Truth, Lies, and Leadership](./books/a-higher-loyalty-truth-lies-and-leadership.md)  
-- [⚠️🥴🕹️🌐 The Fifth Risk](./books/the-fifth-risk.md)  
+- [🧩⚙️🌱📈 Organize for Complexity: How to Get Life Back Into Work to Build the High-Performance Organization](./books/organize-for-complexity.md)  
+- [🧑‍🌾🌿 A Gardener's Guide to Botany: The Biology Behind the Plants You Love, How They Grow, and What They Need](./books/a-gardeners-guide-to-botany.md)  
+- [🌿🧑‍🌾 Botany for Gardeners](./books/botany-for-gardeners.md)  
+- [🌐💰 Networks, Crowds, and Markets: Reasoning About a Highly Connected World](./books/networks-crowds-and-markets.md)  
   
   
-## [📺 Videos](./videos/index.md) (771)  
-- [💰🤑🤖💡🚀💲 $0.10 per Month Runs My Entire AI Life. I'll Show You How.](./videos/0-10-month-runs-my-entire-ai-life-ill-show-you-how.md)  
-- [⚙️⚖️📈 Eliyahu Goldratt - Matter of Choice | Goldratt on the Economy](./videos/eliyahu-goldratt-matter-of-choice-goldratt-on-the-economy.md)  
-- [🤖🧠⚙️👩‍💻 AI Engineering with Chip Huyen](./videos/ai-engineering-with-chip-huyen.md)  
-- [🧠🛠️🕸️🚫🙅‍♂️💼 No Vibes Allowed: Solving Hard Problems in Complex Codebases – Dex Horthy, HumanLayer](./videos/no-vibes-allowed-solving-hard-problems-in-complex-codebases-dex-horthy-humanlayer.md)  
+## [📺 Videos](./videos/index.md) (772)  
+- [❓🏥💰 Who Is the U.S. Health System Really For? | NYT Opinion](./videos/who-is-the-us-health-system-really-for-nyt-opinion.md)  
+- [🗺️♟️🤖🤝 Parables on the Power of Planning in AI: From Poker to Diplomacy: Noam Brown (OpenAI)](./videos/parables-on-the-power-of-planning-in-ai-from-poker-to-diplomacy-noam-brown-openai.md)  
+- [🧠🔄♾️💡 The concept that changes how you learn forever](./videos/the-concept-that-changes-how-you-learn-forever.md)  
+- [📈🚀🏁🏆  It’s actually pretty easy to get ahead of 99% of people](./videos/it-is-actually-pretty-easy-to-get-ahead-of-99-percent-of%20people.md)  
   
   
 ## [🌌 Topics](./topics/index.md) (91)  
@@ -92,10 +92,10 @@ updated: 2026-04-19T08:40:18-07:00
   
   
 ## [📄  Articles](./articles/index.md) (84)  
-- [✊🏾✊🏽✊🏿 Protesters unite against Trump in hundreds of rallies across the U.S.](./articles/protesters-unite-against-trump-in-hundreds-of-rallies-across-the-us.md)  
-- [👀 Attention Is All You Need](./articles/attention-is-all-you-need.md)  
-- [🏛️🕸️🧩 Architectural Styles and the Design of Network Based Software Architectures](./articles/architectural-styles-and-the-design-of-network-based-software-architectures.md)  
-- [👀👶🏼🏃🏼‍♀️🛣️ What to Look for in a Jogging Stroller](./articles/what-to-look-for-in-a-jogging-stroller.md)  
+- [📜💀⚠️ What the Holocaust Teaches](./articles/what-the-holocaust-teaches-us.md)  
+- [📚🔥 Naval Academy removes nearly 400 books from library in new DEI purge ordered by Hegseth’s office](./articles/naval-academy-removes-nearly-400-books-from-library-in-new-dei-purge-ordered-by-hegseths-office.md)  
+- [⏱️⚔️🏛️ '60 Minutes' chief resigns, saying show's independence was compromised](./articles/60-minutes-chief-resigns-saying-shows-independence-was-compromised.md)  
+- [🦊😈🐾🕵️💸 5 takeaways about NPR's reporting on the whistleblower report about DOGE at the NLRB](./articles/5-takeaways-about-nprs-reporting-on-the-whistleblower-report-about-doge-at-the-nlrb.md)  
   
   
 ## [🤖💬 Bot Chats](./bot-chats/index.md) (49)  

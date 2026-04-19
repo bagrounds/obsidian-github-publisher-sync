@@ -5,11 +5,12 @@ aliases:
 title: 🗣️📢 Communication Studies
 URL: https://bagrounds.org/topics/communication-studies
 link_analysis_model: gemini-3.1-flash-lite-preview
-link_analysis_time: 2026-04-01T00:00:00Z
+link_analysis_time: 2026-04-17T00:00:00Z
 force_analyze_links: false
 image_date: 2026-04-09T01:40:44Z
 image_model: "@cf/black-forest-labs/flux-1-schnell"
 image_prompt: "A minimalist, conceptual illustration featuring a central, glowing network of interconnected nodes representing human interaction. Thin, elegant lines emanate from the center, branching out into diverse symbolic icons: a stylized microphone for rhetoric, a pair of speech bubbles for interpersonal dialogue, a digital screen for mass media, and a globe for cultural exchange. The color palette utilizes soft gradients of deep indigo, vibrant cyan, and warm amber to suggest the flow of information and energy. The background is a clean, muted charcoal, providing high contrast to the luminous, interconnected structures. The overall aesthetic is modern, academic, and clean, emphasizing the complexity and beauty of human connectivity without the use of any text."
+link_analysis_version: "2"
 ---
 [Home](../index.md) > [Topics](./index.md) > [Knowledge](./a-hierarchical-view-of-human-knowledge.md) > [Social Sciences](./social-sciences.md)  
 # 🗣️📢 Communication Studies  

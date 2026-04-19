@@ -13,7 +13,7 @@ link_analysis_version: "2"
 link_analysis_time: 2026-04-17T00:00:00Z
 force_analyze_links: false
 ---
-[Home](../index.md) > [🔀 Convergence](./index.md) | [⏮️](./2026-04-16-the-architecture-of-sustenance-and-self-correction.md)  
+[Home](../index.md) > [🔀 Convergence](./index.md) | [⏮️](./2026-04-16-the-architecture-of-sustenance-and-self-correction.md) [⏭️](./2026-04-18-the-architectures-of-dynamic-truth.md)  
 # 2026-04-17 | 🔀 🪞 The Architectures of Validation: Friction, Flow, and Form 🔀  
 ![convergence-2026-04-17-the-architectures-of-validation-friction-flow-and-form](../convergence-2026-04-17-the-architectures-of-validation-friction-flow-and-form.jpg)  
   

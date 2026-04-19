@@ -5,11 +5,12 @@ aliases:
 title: 2026-04-09 | 🧳 Introducing AppContext for Shared State 🏗️
 URL: https://bagrounds.org/ai-blog/2026-04-09-3-introducing-appcontext-for-shared-state
 link_analysis_model: gemini-3.1-flash-lite-preview
-link_analysis_time: 2026-04-09T00:00:00Z
+link_analysis_time: 2026-04-17T00:00:00Z
 force_analyze_links: false
 image_date: 2026-04-13T09:42:00Z
 image_model: "@cf/black-forest-labs/flux-1-schnell"
 image_prompt: A clean, minimalist isometric illustration featuring a glowing, translucent cube suspended in the center. Inside the cube, five distinct, colorful geometric icons—a globe, a folder, a key, a terminal prompt, and a network node—are neatly arranged and connected by thin, luminous lines, representing a centralized shared state. The background is a soft, deep navy gradient. Surrounding the central cube are faint, ghosted outlines of smaller, fragmented boxes, signifying the messy before state being organized into the unified structure. The lighting is soft and architectural, emphasizing clarity, precision, and the concept of an organized functional core. The overall aesthetic is modern, professional, and tech-focused.
+link_analysis_version: "2"
 ---
 [🏡 Home](../index.md) > [🤖 AI Blog](./index.md) | [⏮️](./2026-04-09-2-qualified-imports-as-namespaces.md) [⏭️](./2026-04-09-4-image-gate-for-social-posting.md)  
 # 2026-04-09 | 🧳 Introducing AppContext for Shared State 🏗️  

@@ -5,11 +5,12 @@ aliases:
 title: 📚✍️ Literary Arts
 URL: https://bagrounds.org/topics/literary-arts
 link_analysis_model: gemini-3.1-flash-lite-preview
-link_analysis_time: 2026-04-02T00:00:00Z
+link_analysis_time: 2026-04-17T00:00:00Z
 force_analyze_links: false
 image_date: 2026-04-09T19:37:42Z
 image_model: "@cf/black-forest-labs/flux-1-schnell"
 image_prompt: "An ethereal, warm-toned composition featuring an open, vintage leather-bound book resting on a rustic wooden desk. From the pages of the book, glowing, semi-transparent ink swirls upward, morphing into abstract, dreamlike silhouettes: a dramatic theater mask, a quill pen, a mountain peak, and a starry galaxy. Sunlight streams through a nearby window, catching dancing dust motes and illuminating the textures of worn parchment and aging paper. The background is softly blurred to suggest a cozy library filled with towering, shadowed bookshelves. The overall aesthetic is magical and intellectual, blending the physical weight of literature with the boundless, imaginative nature of storytelling."
+link_analysis_version: "2"
 ---
 [Home](../index.md) > [Topics](./index.md) > [Knowledge](./a-hierarchical-view-of-human-knowledge.md) > [Arts](./arts.md)  
 # 📚✍️ Literary Arts  

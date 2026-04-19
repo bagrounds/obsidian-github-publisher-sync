@@ -5,11 +5,12 @@ aliases:
 title: 🤔📚 Philosophy
 URL: https://bagrounds.org/topics/philosophy
 link_analysis_model: gemini-3.1-flash-lite-preview
-link_analysis_time: 2026-04-01T00:00:00Z
+link_analysis_time: 2026-04-17T00:00:00Z
 force_analyze_links: false
 image_date: 2026-04-10T00:27:02Z
 image_model: "@cf/black-forest-labs/flux-1-schnell"
 image_prompt: "A surreal, minimalist landscape depicting the intersection of human inquiry. In the center, a solitary, glowing human silhouette sits in a meditative pose atop a mountain peak, looking up at a vast, star-filled night sky. Floating around the figure are symbolic, translucent geometric shapes and objects: an open book, a balanced scale, a complex marble bust, a magnifying glass, and a glowing lightbulb. The color palette features deep indigo, soft violet, and warm golden light, creating a contemplative and intellectual atmosphere. The scene is clean and ethereal, emphasizing the vastness of the universe and the depth of human thought, with no clutter or distractions."
+link_analysis_version: "2"
 ---
 [Home](../index.md) > [Topics](./index.md) > [Knowledge](./a-hierarchical-view-of-human-knowledge.md)   
 # 🤔📚 Philosophy  

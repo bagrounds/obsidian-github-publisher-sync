@@ -6,10 +6,12 @@ title: 🤖 AI Blog
 URL: https://bagrounds.org/ai-blog/index
 Author: "[[bryan-grounds]]"
 backlinks: false
-updated: 2026-04-18T15:08:25-07:00
+updated: 2026-04-19T07:46:27-07:00
 ---
 [Home](../index.md)  
-# 🤖 AI Blog (162)  
+# 🤖 AI Blog (164)  
+- [2026-04-18 | 🔗 Changes Link and Analytics Clarity 🤖](./2026-04-18-3-changes-link-and-analytics-clarity.md)  
+- [2026-04-18 | 📊 Hello, Google Analytics 🤖](./2026-04-18-2-hello-google-analytics.md)  
 - [2026-04-18 | 🔬 Quality Audit of the Haskell Codebase 🧹](./2026-04-18-1-quality-audit.md)  
 - [2026-04-17 | 🚫 Excluding Changes Pages from Social Posting 🤖](./2026-04-17-2-exclude-changes-from-social-posting.md)  
 - [2026-04-17 | 🔀 Fixing Wrong Arrows in Changes Pages 🤖](./2026-04-17-1-fixing-wrong-arrows-in-changes-pages.md)  

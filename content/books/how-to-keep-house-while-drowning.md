@@ -7,8 +7,9 @@ share: true
 CTA: 🕊️ Lighten your load.
 affiliate link: https://amzn.to/48Xn0t5
 link_analysis_model: gemini-3.1-flash-lite-preview
-link_analysis_time: 2026-04-01T00:00:00Z
+link_analysis_time: 2026-04-16T00:00:00Z
 force_analyze_links: false
+link_analysis_version: "2"
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🧹🌊😵‍💫 How to Keep House While Drowning: A Gentle Approach to Cleaning and Organizing  

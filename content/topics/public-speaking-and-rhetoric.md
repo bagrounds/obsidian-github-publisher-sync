@@ -5,11 +5,12 @@ aliases:
 title: 🎤🗣️ Public Speaking and Rhetoric
 URL: https://bagrounds.org/topics/public-speaking-and-rhetoric
 link_analysis_model: gemini-3.1-flash-lite-preview
-link_analysis_time: 2026-04-02T00:00:00Z
+link_analysis_time: 2026-04-17T00:00:00Z
 force_analyze_links: false
 image_date: 2026-04-10T03:10:11Z
 image_model: "@cf/black-forest-labs/flux-1-schnell"
 image_prompt: A minimalist, high-contrast illustration featuring a stylized, glowing microphone standing center-stage on a dark, polished podium. Behind the microphone, a series of abstract, translucent geometric shapes—representing logos and structure—radiate outward like a spotlight. Floating silhouettes of abstract speech bubbles in varying sizes and soft, warm gradients emerge from the microphone, drifting upward into the negative space. The composition uses a sophisticated color palette of deep navy, slate gray, and electric gold accents to evoke professionalism and intellectual weight. The lighting is cinematic, casting a soft, focused glow on the podium to symbolize the clarity and impact of effective communication.
+link_analysis_version: "2"
 ---
 [Home](../index.md) > [Topics](./index.md) > [Knowledge](./a-hierarchical-view-of-human-knowledge.md) > [Social Sciences](./social-sciences.md) > [Communication Studies](./communication-studies.md)  
 # 🎤🗣️ Public Speaking and Rhetoric  

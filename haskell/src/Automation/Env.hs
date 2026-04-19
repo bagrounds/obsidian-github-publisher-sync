@@ -5,10 +5,16 @@ module Automation.Env
   , getYesterdayDate
   , yesterdayDate
   , validateEnvironment
+  , requireEnv
+  , lookupEnvText
+  , buildEnvMap
+  , getObsidianCreds
   ) where
 
 import Control.Monad (filterM, when)
 import Data.List (intercalate)
+import Data.Map.Strict (Map)
+import qualified Data.Map.Strict as Map
 import Data.Maybe (isJust, isNothing)
 import Data.Text (Text)
 import qualified Data.Text as T
@@ -119,4 +125,22 @@ validateEnvironment = do
     , mastodon = mastodon
     , gemini = gemini
     , obsidian = obsidian
+    }
+
+buildEnvMap :: [String] -> IO (Map Text Text)
+buildEnvMap keys = Map.fromList <$> traverse lookupOne keys
+  where
+    lookupOne key = do
+      mVal <- lookupEnv key
+      pure (T.pack key, maybe "" T.pack mVal)
+
+getObsidianCreds :: IO ObsidianCredentials
+getObsidianCreds = do
+  authToken <- requireEnv "OBSIDIAN_AUTH_TOKEN"
+  vaultName <- requireEnv "OBSIDIAN_VAULT_NAME"
+  vaultPassword <- lookupEnvText "OBSIDIAN_VAULT_PASSWORD"
+  pure ObsidianCredentials
+    { ocAuthToken = Secret authToken
+    , ocVaultName = vaultName
+    , ocVaultPassword = fmap Secret vaultPassword
     }

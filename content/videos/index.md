@@ -5,10 +5,10 @@ aliases:
 title: 📺 Videos
 URL: https://bagrounds.org/videos
 backlinks: false
-updated: 2026-04-19T13:49:06-07:00
+updated: 2026-04-19T14:05:36-07:00
 ---
 [Home](../index.md)  
-# 📺 Videos (772)  
+# 📺 Videos (773)  
 - [💰🤑🤖💡🚀💲 $0.10 per Month Runs My Entire AI Life. I'll Show You How.](./0-10-month-runs-my-entire-ai-life-ill-show-you-how.md)  
 - [📊📈📉📃👁️ 10 Charts to Understand the 900 Page Budget Bill](./10-charts-to-understand-the-900-page-budget-bill.md)  
 - [🤖🔗⬆️✅ 12-Factor Agents: Patterns of reliable LLM applications — Dex Horthy, HumanLayer](./12-factor-agents-patterns-of-reliable-llm-applications-dex-horthy-humanlayer.md)  
@@ -267,6 +267,7 @@ updated: 2026-04-19T13:49:06-07:00
 - [🤓📈📉⚠️ How to Become an Expert in ANYTHING - The Dunning Kruger Effect](./how-to-become-an-expert-in-anything-the-dunning-kruger-effect.md)  
 - [💪🧠⚔️🤝 How to Become Resilient, Forge Your Identity & Lead Others | Jocko Willink](./how-to-become-resilient-forge-your-identity-lead-others-jocko-willink.md)  
 - [🚀📈🤯🚨 How To Be So Productive That It Feels ILLEGAL](./how-to-be-so-productive-that-it-feels-illegal.md)  
+- [🏗️⭐🤖 How to Build a Remarkable Brand in the Age of AI | Seth Godin](./how-to-build-a-remarkable-brand-in-the-age-of-ai-seth-godin.md)  
 - [🏃💪🧠 How to Build Endurance | Huberman Lab Essentials](./how-to-build-endurance-huberman-lab-essentials.md)  
 - [🎯🪜🏗️✅ How to Build Systems to Actually Achieve Your Goals](./how-to-build-systems-to-actually-achieve-your-goals.md)  
 - [💡🔧📏🔮〰️ How to create a capability model](./how-to-create-a-capability-model.md)  

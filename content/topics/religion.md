@@ -5,11 +5,12 @@ aliases:
 title: 🕊️⛪ Religion
 URL: https://bagrounds.org/topics/religion
 link_analysis_model: gemini-3.1-flash-lite-preview
-link_analysis_time: 2026-04-01T00:00:00Z
+link_analysis_time: 2026-04-17T00:00:00Z
 force_analyze_links: false
 image_date: 2026-04-10T05:57:08Z
 image_model: "@cf/black-forest-labs/flux-1-schnell"
 image_prompt: "A circular composition featuring a harmonious blend of diverse sacred symbols floating in a soft, ethereal light. At the center, a golden compass represents guidance, surrounded by stylized icons representing various traditions: a blooming lotus, a flickering candle, a crescent moon, a star, and a woven tree of life. The background is a deep, cosmic indigo that transitions into a warm, sunrise-hued gradient at the bottom, suggesting both the vastness of the universe and the grounding presence of earth. Fine, glowing lines connect the symbols, forming a subtle web that suggests interconnectedness and the search for meaning. The art style is minimalist and elegant, using a soft-focus glow to create a serene, contemplative atmosphere that bridges the gap between the spiritual and the intellectual."
+link_analysis_version: "2"
 ---
 [Home](../index.md) > [Topics](./index.md) > [Knowledge](./a-hierarchical-view-of-human-knowledge.md)  
 # 🕊️⛪ Religion  

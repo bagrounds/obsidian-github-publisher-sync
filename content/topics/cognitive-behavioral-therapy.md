@@ -5,11 +5,12 @@ aliases:
 title: ♻️🫀🧠💪 Cognitive Behavioral Therapy
 URL: https://bagrounds.org/topics/cognitive-behavioral-therapy
 link_analysis_model: gemini-3.1-flash-lite-preview
-link_analysis_time: 2026-04-02T00:00:00Z
+link_analysis_time: 2026-04-18T00:00:00Z
 force_analyze_links: false
 image_date: 2026-04-09T01:40:26Z
 image_model: "@cf/black-forest-labs/flux-1-schnell"
 image_prompt: An abstract, minimalist illustration featuring a translucent human head silhouette in profile, glowing with soft, warm light. Inside the head, a series of interconnected, brightly colored geometric shapes—representing thoughts—are being carefully rearranged by a pair of stylized, neutral-toned hands. Some jagged, dark-colored shards are being smoothed out into soft, rounded forms, symbolizing the process of cognitive restructuring. Below the silhouette, a small, vibrant sprout emerges from a cracked stone, representing the growth and behavioral change resulting from the therapy. The background is a clean, muted gradient of soft blue and sage green, conveying a sense of calm, professional clarity, and mental transformation.
+link_analysis_version: "2"
 ---
 [Home](../index.md) > [Topics](./index.md)  
 # ♻️🫀🧠💪 Cognitive Behavioral Therapy  

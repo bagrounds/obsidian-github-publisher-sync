@@ -50,6 +50,9 @@ import qualified Automation.BlogImage.EligibilityTest
 import qualified Automation.BlogImage.MarkdownTest
 import qualified Automation.BlogImage.ProviderTest
 
+import qualified Automation.GoogleAnalyticsTest
+import qualified Automation.GcpAuthTest
+
 import qualified Automation.InternalLinking.MaskingTest
 import qualified Automation.InternalLinking.LinkExtractionTest
 import qualified Automation.InternalLinking.CandidateDiscoveryTest
@@ -104,6 +107,8 @@ main = defaultMain $ testGroup "Automation"
   , Automation.BlogImage.EligibilityTest.tests
   , Automation.BlogImage.MarkdownTest.tests
   , Automation.BlogImage.ProviderTest.tests
+  , Automation.GoogleAnalyticsTest.tests
+  , Automation.GcpAuthTest.tests
   , Automation.InternalLinking.MaskingTest.tests
   , Automation.InternalLinking.LinkExtractionTest.tests
   , Automation.InternalLinking.CandidateDiscoveryTest.tests

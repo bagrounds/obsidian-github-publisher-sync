@@ -6,11 +6,15 @@ import Data.List.NonEmpty (NonEmpty ((:|)))
 import Data.Map.Strict (Map)
 import qualified Data.Map.Strict as Map
 import Data.Maybe (catMaybes, fromMaybe)
+import qualified Data.ByteString.Lazy as LBS
 import Data.Text (Text)
 import qualified Data.Text as T
+import qualified Data.Text.Encoding as TE
 import qualified Data.Text.IO as TIO
 import Network.HTTP.Client (newManager)
+import qualified Network.HTTP.Client as HTTP
 import Network.HTTP.Client.TLS (tlsManagerSettings)
+import Network.HTTP.Types.Status (statusCode)
 import System.Directory (createDirectoryIfMissing, doesDirectoryExist, doesFileExist, listDirectory, removeFile)
 import System.Environment (getArgs, lookupEnv)
 import System.Exit (exitFailure)
@@ -104,6 +108,9 @@ import Automation.PacificTime (formatDay, todayPacificDay, yesterdayPacificDay)
 import Automation.VaultSync (syncFileToVault, syncNewAiBlogPosts, copySeriesPosts, syncRepoPostsToVault, ensureFileInVault)
 import Automation.TaskRunner (inferenceDashboards, runTasks, logMsg, failTask)
 import Automation.Text (stripCodeFences)
+import qualified Automation.GoogleAnalytics as GA
+import qualified Automation.GcpAuth as GcpAuth
+import qualified Automation.Json as Json
 
 callGeminiForGenerator :: Context.AppContext -> NonEmpty Gemini.Model -> (Text, Text) -> IO (Text, Text)
 callGeminiForGenerator context models (systemPrompt, userPrompt) = do
@@ -518,6 +525,129 @@ tryTitleForDate context date = do
           logMsg $ "  🏷️  Title written for " <> date
           pure True
 
+runDailyAnalytics :: Context.AppContext -> IO ()
+runDailyAnalytics context = do
+  let manager = Context.httpManager context
+      vaultDir = Context.vaultDir context
+  logMsg "▶️  daily-analytics"
+
+  mPropertyId <- lookupEnvText "GA_PROPERTY_ID"
+  mServiceAccountJson <- lookupEnvText "GCP_SERVICE_ACCOUNT_KEY"
+
+  case (mPropertyId, mServiceAccountJson) of
+    (Nothing, _) -> do
+      logMsg "  ⚠️  GA_PROPERTY_ID not set — daily analytics disabled"
+      logMsg "✅ daily-analytics (disabled)"
+    (_, Nothing) -> do
+      logMsg "  ⚠️  GCP_SERVICE_ACCOUNT_KEY not set — daily analytics disabled"
+      logMsg "✅ daily-analytics (disabled)"
+    (Just propertyId, Just serviceAccountJson) -> do
+      case GcpAuth.parseServiceAccountKey serviceAccountJson of
+        Left err -> do
+          logMsg $ "  ❌ Failed to parse service account key: " <> err
+          logMsg "✅ daily-analytics (error)"
+        Right serviceAccount -> do
+          logMsg $ "  🔑 Service account: " <> GcpAuth.sakClientEmail serviceAccount
+          tokenResult <- GcpAuth.getAccessTokenWithScope GA.analyticsReadonlyScope manager serviceAccount
+          case tokenResult of
+            Left err -> do
+              logMsg $ "  ❌ Failed to get access token: " <> err
+              logMsg "✅ daily-analytics (error)"
+            Right accessToken -> do
+              logMsg "  🔓 Access token obtained"
+              yesterday <- yesterdayPacificDay
+              let yesterdayText = formatDay yesterday
+                  reflectionsDir = vaultDir </> "reflections"
+                  reflectionPath = reflectionsDir </> T.unpack yesterdayText <> ".md"
+                  endpoint = GA.analyticsApiEndpoint propertyId
+
+              logMsg $ "  📅 Fetching analytics for: " <> yesterdayText
+              logMsg $ "  🔗 GA4 property: " <> propertyId
+              logMsg $ "  🌐 API endpoint: " <> endpoint
+
+              exists <- doesFileExist reflectionPath
+              if not exists
+                then do
+                  logMsg $ "  📭 No reflection for " <> yesterdayText <> ", skipping analytics"
+                  logMsg "✅ daily-analytics (skipped)"
+                else do
+                  noteContent <- TIO.readFile reflectionPath
+                  if not (GA.reflectionNeedsAnalytics noteContent)
+                    then do
+                      logMsg $ "  ✅ Reflection " <> yesterdayText <> " already has analytics"
+                      logMsg "✅ daily-analytics (already done)"
+                    else do
+                      logMsg "  📡 Calling GA4 Data API for summary metrics..."
+                      summaryResult <- fetchAnalytics manager accessToken endpoint (GA.buildSummaryRequestBody yesterdayText)
+                      logMsg "  📡 Calling GA4 Data API for top pages..."
+                      pagesResult <- fetchAnalytics manager accessToken endpoint (GA.buildTopPagesRequestBody yesterdayText)
+
+                      case (summaryResult, pagesResult) of
+                        (Left err, _) -> do
+                          logMsg $ "  ❌ Summary API error: " <> err
+                          logMsg "✅ daily-analytics (error)"
+                        (_, Left err) -> do
+                          logMsg $ "  ❌ Top pages API error: " <> err
+                          logMsg "✅ daily-analytics (error)"
+                        (Right summaryJson, Right pagesJson) -> do
+                          logMsg $ "  📦 Summary response rows: " <> T.pack (show (GA.extractRowCount summaryJson))
+                          logMsg $ "  📦 Pages response rows: " <> T.pack (show (GA.extractRowCount pagesJson))
+                          case (GA.parseSummaryResponse summaryJson, GA.parseAnalyticsResponse pagesJson) of
+                            (Left err, _) -> do
+                              logMsg $ "  ❌ Parse summary error: " <> err
+                              logMsg "✅ daily-analytics (error)"
+                            (_, Left err) -> do
+                              logMsg $ "  ❌ Parse pages error: " <> err
+                              logMsg "✅ daily-analytics (error)"
+                            (Right summary, Right pages) -> do
+                              enrichedPages <- traverse (enrichPageMetricWithTitle vaultDir) pages
+                              let report = GA.AnalyticsReport summary enrichedPages
+                                  updatedContent = GA.applyAnalyticsSection noteContent report
+                              TIO.writeFile reflectionPath updatedContent
+                              logMsg $ "  📊 Analytics for " <> yesterdayText <> ": "
+                                    <> T.pack (show (GA.pageViews summary)) <> " views, "
+                                    <> T.pack (show (GA.visitors summary)) <> " visitors, "
+                                    <> GA.formatPercentage (GA.bounceRate summary) <> " bounce"
+                              logMsg $ "  📊 Top pages: " <> T.pack (show (length enrichedPages))
+                              logMsg "✅ daily-analytics"
+
+enrichPageMetricWithTitle :: FilePath -> GA.PageMetric -> IO GA.PageMetric
+enrichPageMetricWithTitle vaultDir metric = do
+  let urlPath = GA.pagePath metric
+      relativePath = GA.pathToWikilinkTarget urlPath
+      filePath = vaultDir </> T.unpack relativePath <> ".md"
+  exists <- doesFileExist filePath
+  if exists
+    then do
+      title <- extractTitleFromFile filePath
+      pure metric { GA.pageTitle = Just title }
+    else pure metric
+
+fetchAnalytics :: HTTP.Manager -> Text -> Text -> Json.Value -> IO (Either Text Json.Value)
+fetchAnalytics manager accessToken endpoint body = do
+  let bodyBytes = Json.encode body
+  initReq <- HTTP.parseRequest (T.unpack endpoint)
+  let httpReq = initReq
+        { HTTP.method = "POST"
+        , HTTP.requestBody = HTTP.RequestBodyLBS bodyBytes
+        , HTTP.requestHeaders =
+            [ ("Authorization", "Bearer " <> TE.encodeUtf8 accessToken)
+            , ("Content-Type", "application/json")
+            ]
+        }
+  response <- HTTP.httpLbs httpReq manager
+  let responseBytes = HTTP.responseBody response
+      status = statusCode (HTTP.responseStatus response)
+  logMsg $ "  📬 GA4 API response: HTTP " <> T.pack (show status) <> ", " <> T.pack (show (LBS.length responseBytes)) <> " bytes"
+  case status of
+    200 ->
+      case Json.eitherDecode responseBytes of
+        Right val -> pure $ Right val
+        Left err -> pure $ Left $ "GA API JSON parse error: " <> T.pack err
+          <> " — response: " <> TE.decodeUtf8 (LBS.toStrict (LBS.take 500 responseBytes))
+    _ -> pure $ Left $ "GA API HTTP " <> T.pack (show status)
+      <> ": " <> TE.decodeUtf8 (LBS.toStrict (LBS.take 1000 responseBytes))
+
 taskRunners :: Context.AppContext -> Map Text BlogSeriesConfig -> Map Text BlogSeriesRunConfig -> [ContentDirectory] -> [DiscoveredSeries] -> Map TaskId (IO ())
 taskRunners context seriesMap runConfigs contentDirs discovered =
   let blogSeriesRunners = Map.fromList
@@ -528,6 +658,7 @@ taskRunners context seriesMap runConfigs contentDirs discovered =
         , (SocialPosting, runSocialPosting context contentDirs)
         , (AiFiction, runAiFiction context)
         , (ReflectionTitle, runReflectionTitle context)
+        , (DailyAnalytics, runDailyAnalytics context)
         ]
   in Map.union blogSeriesRunners staticRunners
 

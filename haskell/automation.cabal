@@ -82,6 +82,7 @@ library
     Automation.PacificTime
     Automation.BlogSeriesDiscovery
     Automation.Wikilink
+    Automation.GoogleAnalytics
   build-depends:
     base                 >= 4.18 && < 5,
     text                 >= 2.0,
@@ -122,7 +123,9 @@ executable run-scheduled
     directory,
     time,
     http-client,
-    http-client-tls
+    http-client-tls,
+    http-types,
+    bytestring
 
 executable inject-giscus
   import:              shared
@@ -192,6 +195,8 @@ test-suite automation-tests
     Automation.BlogImage.EligibilityTest
     Automation.BlogImage.MarkdownTest
     Automation.BlogImage.ProviderTest
+    Automation.GoogleAnalyticsTest
+    Automation.GcpAuthTest
     Automation.TestGenerators
   build-depends:
     base,

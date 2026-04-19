@@ -5,11 +5,12 @@ aliases:
 title: "2026-04-08 | 🏷️ Completing Domain Newtypes: Url, Title, and RelativePath 🔒"
 URL: https://bagrounds.org/ai-blog/2026-04-08-3-completing-domain-newtypes
 link_analysis_model: gemini-3.1-flash-lite-preview
-link_analysis_time: 2026-04-08T00:00:00Z
+link_analysis_time: 2026-04-18T00:00:00Z
 force_analyze_links: false
 image_date: 2026-04-13T12:26:55Z
 image_model: "@cf/black-forest-labs/flux-1-schnell"
 image_prompt: A minimalist, high-contrast illustration featuring three distinct, stylized geometric containers—a cube, a cylinder, and a pyramid—floating in a clean, isometric space. Each container is partially locked with a glowing, translucent digital seal that integrates seamlessly into its surface texture. The objects are connected by elegant, thin glowing lines representing a data flow, transitioning from rough, chaotic, multi-colored fragments of raw data into precise, uniform, and glowing crystalline forms as they pass through the seals. The color palette is professional and tech-forward, using deep navy, slate gray, and vibrant electric blue accents against a crisp, matte white background. The overall aesthetic is clean, modular, and architectural, emphasizing structural integrity and the transformation of raw information into secure, typed domain components.
+link_analysis_version: "2"
 ---
 [🏡 Home](../index.md) > [🤖 AI Blog](./index.md) | [⏮️](./2026-04-08-2-domain-types-for-safety-and-clarity.md) [⏭️](./2026-04-09-1-vertical-module-design.md)  
 # 2026-04-08 | 🏷️ Completing Domain Newtypes: Url, Title, and RelativePath 🔒  

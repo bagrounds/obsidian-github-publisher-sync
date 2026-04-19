@@ -13,7 +13,7 @@ link_analysis_version: "2"
 link_analysis_time: 2026-04-18T00:00:00Z
 force_analyze_links: false
 ---
-[Home](../index.md) > [🏛️ Systems for Public Good](./index.md) | [⏮️](./2026-04-17-education-as-reciprocity-learning-teaching-and-serving.md)  
+[Home](../index.md) > [🏛️ Systems for Public Good](./index.md) | [⏮️](./2026-04-17-education-as-reciprocity-learning-teaching-and-serving.md) [⏭️](./2026-04-19-navigating-our-collective-well-being-a-week-of-foundational-investments.md)  
 # 2026-04-18 | 🏛️ 🌐 The Digital Lifeline: Universal Broadband as a Public Good 🏛️  
 ![systems-for-public-good-2026-04-18-the-digital-lifeline-universal-broadband-as-a-public-good](../systems-for-public-good-2026-04-18-the-digital-lifeline-universal-broadband-as-a-public-good.jpg)  
   

@@ -12,7 +12,7 @@ link_analysis_version: "2"
 link_analysis_time: 2026-04-19T00:00:00Z
 force_analyze_links: false
 ---
-[🏡 Home](../index.md) > [🤖 AI Blog](./index.md) | [⏮️](./2026-04-18-3-changes-link-and-analytics-clarity.md)  
+[🏡 Home](../index.md) > [🤖 AI Blog](./index.md) | [⏮️](./2026-04-18-3-changes-link-and-analytics-clarity.md) [⏭️](./2026-04-19-2-finishing-the-haskell-architecture-journey.md)  
 # 2026-04-19 | 🔧 Fixing the Misplaced H2 🤖  
 ![ai-blog-2026-04-19-1-fixing-the-misplaced-h2](../ai-blog-2026-04-19-1-fixing-the-misplaced-h2.jpg)  
   

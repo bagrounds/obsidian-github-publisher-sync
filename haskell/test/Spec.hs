@@ -41,6 +41,7 @@ import qualified Automation.GeminiTest
 import qualified Automation.CliArgsTest
 import qualified Automation.VaultSyncTest
 import qualified Automation.TaskRunnerTest
+import qualified Automation.TaskRunnersTest
 import qualified Automation.PacificTimeTest
 import qualified Automation.BlogSeriesDiscoveryTest
 import qualified Automation.WikilinkTest
@@ -99,6 +100,7 @@ main = defaultMain $ testGroup "Automation"
   , Automation.CliArgsTest.tests
   , Automation.VaultSyncTest.tests
   , Automation.TaskRunnerTest.tests
+  , Automation.TaskRunnersTest.tests
   , Automation.PacificTimeTest.tests
   , Automation.BlogSeriesDiscoveryTest.tests
   , Automation.WikilinkTest.tests

@@ -274,12 +274,10 @@ Each error migration delivered with test coverage:
 43. **Standard library functions over local redefinitions**: `Data.Function.(&)` has been in base since GHC 7.10. Redefining it locally creates maintenance burden and surprises developers who expect the standard version. Always check if the function exists in base before defining a local version.
 44. **Deduplication reveals unused imports**: When replacing a local `stripCodeFences` with an import from `Automation.Text`, the `fromMaybe` import became unused. The compiler catches this immediately with `-Wunused-imports`, making it easy to clean up transitive dead imports.
 
-### Next: Remaining Improvements
+### Completed: Final Architecture Improvements
 
-Prioritized list of remaining architecture improvements:
-
-1. **Extract remaining pure cores** — Several IO functions in library modules mix I/O with pure logic that could be extracted and tested independently.
-2. **Break up RunScheduled.hs further** — The app module is still 628 lines. Extract task runner configurations, environment setup, and individual task implementations into library modules.
+1. **Extract remaining pure cores** — Consolidated environment helpers (`buildEnvMap`, `getObsidianCreds`) into `Automation.Env` library module, making them available for direct testing and reuse. The remaining IO functions in library modules already have good pure/IO separation.
+2. **Break up RunScheduled.hs** — Extracted all task runner functions (`runBlogSeries`, `runBackfillImages`, `runInternalLinking`, `runSocialPosting`, `runAiFiction`, `runReflectionTitle`, `runDailyAnalytics`) plus helpers (`callGeminiForGenerator`, `extractRecentCreativeTitles`, `enrichPageMetricWithTitle`, `fetchAnalytics`, `taskRunners` registry) into new `Automation.TaskRunners` library module. RunScheduled.hs went from 761 lines to 136 lines (82% reduction). Added `TaskRunnersTest` with 6 unit tests and 2 property tests. Added `buildEnvMap` tests to `EnvTest`.
 
 ## Guiding Principles
 

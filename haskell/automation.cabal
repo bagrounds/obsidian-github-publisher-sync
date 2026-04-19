@@ -79,6 +79,7 @@ library
     Automation.CliArgs
     Automation.VaultSync
     Automation.TaskRunner
+    Automation.TaskRunners
     Automation.PacificTime
     Automation.BlogSeriesDiscovery
     Automation.Wikilink
@@ -187,6 +188,7 @@ test-suite automation-tests
     Automation.CliArgsTest
     Automation.VaultSyncTest
     Automation.TaskRunnerTest
+    Automation.TaskRunnersTest
     Automation.PacificTimeTest
     Automation.BlogSeriesDiscoveryTest
     Automation.WikilinkTest

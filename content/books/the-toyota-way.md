@@ -8,8 +8,9 @@ Author:
 tags:
 affiliate link: https://amzn.to/3Ho3dId
 force_analyze_links: false
-link_analysis_time: 2026-03-22T23:38:04.085Z
+link_analysis_time: 2026-04-16T00:00:00Z
 link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_version: "2"
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🇯🇵⚙️📈💯 The Toyota Way: 14 Management Principles from the World's Greatest Manufacturer  

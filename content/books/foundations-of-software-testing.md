@@ -9,11 +9,12 @@ tags:
 affiliate link: https://amzn.to/45DF6Px
 updated: 2026-03-14T06:40:07.839Z
 link_analysis_model: gemini-3.1-flash-lite-preview
-link_analysis_time: 2026-04-02T00:00:00Z
+link_analysis_time: 2026-04-18T00:00:00Z
 force_analyze_links: false
 image_date: 2026-04-16T15:41:54Z
 image_model: "@cf/black-forest-labs/flux-1-schnell"
 image_prompt: A clean, minimalist isometric illustration centered on a glowing, translucent 3D cube representing a software block. Multiple thin, neon-colored paths intersect the cube, visualizing logic flow and branch coverage. Small, stylized digital magnifying glasses and geometric nodes hover around the edges, inspecting the cubes internal structure. A few abstract, segmented mutant icons, slightly altered in shape or color, are scattered nearby to represent mutation testing. The background is a soft, deep charcoal gradient, providing a professional, academic atmosphere. The overall aesthetic is precise, technical, and modern, using a palette of cool blues, crisp whites, and vibrant accent colors like lime green and electric orange to denote testing success and fault detection.
+link_analysis_version: "2"
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🧱✅🐛 Foundations of Software Testing  

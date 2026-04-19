@@ -9,6 +9,10 @@ Platform:
 Channel: The Entrepreneur's Studio
 tags:
 youtube: https://youtu.be/zFHzTy7XLbM
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_version: "2"
+link_analysis_time: 2026-04-19T00:00:00Z
+force_analyze_links: false
 ---
 [Home](../index.md) > [Videos](./index.md)  
 # 🏗️⭐🤖 How to Build a Remarkable Brand in the Age of AI | Seth Godin  
@@ -55,8 +59,8 @@ youtube: https://youtu.be/zFHzTy7XLbM
   
 ### 🆚 Contrasting  
 * 📈 Traction by Gabriel Weinberg and Justin Mares, published by Portfolio, focuses on the quantitative testing of 19 different channels to find explosive growth.  
-* ⚡ Contagious by Jonah Berger, published by Simon and Schuster, uses behavioral science to explain why certain products and ideas go viral through social influence.  
+* ⚡ [🦠 Contagious: Why Things Catch On](../books/contagious.md) by Jonah Berger, published by Simon and Schuster, uses behavioral science to explain why certain products and ideas go viral through social influence.  
   
 ### 🎨 Creatively Related  
-* 🎨 The War of Art by Steven Pressfield, published by Black Irish Entertainment, discusses overcoming the internal resistance that stops professionals from doing meaningful work.  
+* 🎨 [🪖🎨 The War of Art: Break Through the Blocks and Win Your Inner Creative Battles](../books/the-war-of-art.md) by Steven Pressfield, published by Black Irish Entertainment, discusses overcoming the internal resistance that stops professionals from doing meaningful work.  
 * 🌊 Blue Ocean Strategy by W. Chan Kim and Renee Mauborgne, published by Harvard Business Review Press, details how to create uncontested market space and make the competition irrelevant.

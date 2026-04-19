@@ -6,8 +6,9 @@ URL: https://bagrounds.org/books/confidence-man-the-making-of-donald-trump-and-t
 share: true
 affiliate link: https://amzn.to/3FBYOAM
 link_analysis_model: gemini-3.1-flash-lite-preview
-link_analysis_time: 2026-04-03T00:00:00Z
+link_analysis_time: 2026-04-18T00:00:00Z
 force_analyze_links: false
+link_analysis_version: "2"
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 👹🐍🛢️🇺🇸 Confidence Man: The Making of Donald Trump and the Breaking of America  
@@ -49,7 +50,7 @@ force_analyze_links: false
   
 * 🔁 ***[The Power of Habit](./the-power-of-habit.md)*** by Charles Duhigg. 🧠 While not political, this book explores the science behind habits and how they influence behavior, which can offer a different lens through which to view the ingrained patterns of powerful figures.  
 * 🧠 **[🌱🧘🏼‍♀️🏆 Mindset: The New Psychology of Success](./mindset.md)** by Carol S. Dweck. 🏆 This book on the concept of fixed vs. growth mindsets can provide a framework for understanding different approaches to challenges and failure, potentially offering insights into Trump's reactions and strategies.  
-* 🚀 ***Outliers: The Story of Success*** by Malcolm Gladwell. 🌟 Explores the factors that contribute to high levels of success, which could offer a broader context for considering the elements that contributed to Trump's rise.  
+* 🚀 ***[⭐ Outliers](./outliers.md): The Story of Success*** by Malcolm Gladwell. 🌟 Explores the factors that contribute to high levels of success, which could offer a broader context for considering the elements that contributed to Trump's rise.  
 * 💥 ***The Destructionists: The Twenty-Five Year Crack-Up of the Republican Party*** by Dana Milbank. 🐘 Provides a historical perspective on the Republican party's trajectory leading up to and including the Trump era.  
   
 ## 💬 [Gemini](../software/gemini.md) Prompt (gemini-2.5-flash-preview-04-17)  

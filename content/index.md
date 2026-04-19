@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-04-18T15:08:25-07:00
+updated: 2026-04-19T07:46:27-07:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -14,18 +14,18 @@ updated: 2026-04-18T15:08:25-07:00
 🔊 Listen to any page with built in audio control.  
 💬 Comment on any page with your GitHub account.  
   
-## [🪞 Reflections](./reflections/index.md) ~ Blog (520)  
-- [2026-04-18](./reflections/2026-04-18.md)  
+## [🪞 Reflections](./reflections/index.md) ~ Blog (521)  
+- [2026-04-19 | 🥳 Two 🕯️🕯️](./reflections/2026-04-19.md)  
+- [2026-04-18 | 🏆 Beat ⚙️ Systems 🔄 Change 🇺🇸 American 🌟 Progress, 📈 Expanding ✨ Dreams, 🏗️ Architecture 🏛️ Public 🔍 Audit 📊 Analytics ✅ Truth. 📺🌟📰🐔🤖🏛️🔀🔄🤖🐲](./reflections/2026-04-18.md)  
 - [2026-04-17 | 🌟 Children 💯 Of 🗣️ Speaks 😠 Furious 📅 April 🇺🇸 American 🎙️ Grounded 🚨 Worry 🌟 Healing 🌊 Currents 🖼️ Painting 🪞 Mirror 🏛️ Reciprocity 🛠️ Fixing 🚫 Posting 🔀 Architectures 🐔🤖🌍🖼️🪞🏛️🛠️🚫🔀 📚📺🌟📰🐔🤖🏛️🔀🤖🐲](./reflections/2026-04-17.md)  
 - [2026-04-16 | 🌟 Losing 💯 🧪 Weeding 📍 Spot 🤔 Great 🌸 Horizons 🐔 Pace 🤖 Mirror 🏛️ Liberator 🔀 Sustenance 🔗 Updates 🤖 Changes 🔀 Misplaced 📺🌟📰🐔🤖🏛️🔀🤖🐲](./reflections/2026-04-16.md)  
-- [2026-04-15 | 🤔 Hard 🌟 Progress 📰 Currents 🤖 Ghost 🌐 Buttons 🔧 Cleanup 🤖 Parrots 🐔 Call 🏛️ Good 📺🌟📰🤖🐔🏛️🤖🐲](./reflections/2026-04-15.md)  
   
   
-## [🤖 AI Blog](./ai-blog/index.md) (162)  
+## [🤖 AI Blog](./ai-blog/index.md) (164)  
+- [2026-04-18 | 🔗 Changes Link and Analytics Clarity 🤖](./ai-blog/2026-04-18-3-changes-link-and-analytics-clarity.md)  
+- [2026-04-18 | 📊 Hello, Google Analytics 🤖](./ai-blog/2026-04-18-2-hello-google-analytics.md)  
 - [2026-04-18 | 🔬 Quality Audit of the Haskell Codebase 🧹](./ai-blog/2026-04-18-1-quality-audit.md)  
 - [2026-04-17 | 🚫 Excluding Changes Pages from Social Posting 🤖](./ai-blog/2026-04-17-2-exclude-changes-from-social-posting.md)  
-- [2026-04-17 | 🔀 Fixing Wrong Arrows in Changes Pages 🤖](./ai-blog/2026-04-17-1-fixing-wrong-arrows-in-changes-pages.md)  
-- [2026-04-16 | 🔍 The Case of the Misplaced Files 🔀](./ai-blog/2026-04-16-3-the-case-of-the-misplaced-files.md)  
   
   
 ## [🤖 Auto Blog Zero](./auto-blog-zero/index.md) (39)  
@@ -35,11 +35,11 @@ updated: 2026-04-18T15:08:25-07:00
 - [2026-04-15 | 🤖 Decoding the Synthetic Ghost 🤖](./auto-blog-zero/2026-04-15-decoding-the-synthetic-ghost.md)  
   
   
-## [🐔 Chickie Loo](./chickie-loo/index.md) (39)  
+## [🐔 Chickie Loo](./chickie-loo/index.md) (40)  
+- [2026-04-19 | 🐔 🥂 A Dance Floor in the Making 🐔](./chickie-loo/2026-04-19-a-dance-floor-in-the-making.md)  
 - [2026-04-18 | 🐔 🍎 The Line-Cutters and the Garden Dreams 🐔](./chickie-loo/2026-04-18-the-line-cutters-and-the-garden-dreams.md)  
 - [2026-04-17 | 🐔 🖼️ A Morning Like a Rockwell Painting 🐔](./chickie-loo/2026-04-17-a-morning-like-a-rockwell-painting.md)  
 - [2026-04-16 | 🐔 🌾 The Gentle Pace of Spring 🐔](./chickie-loo/2026-04-16-the-gentle-pace-of-spring.md)  
-- [2026-04-15 | 🐔 The Rooster Attendance Call 🐔](./chickie-loo/2026-04-15-the-rooster-attendance-call.md)  
   
   
 ## [🏛️ Systems for Public Good](./systems-for-public-good/index.md) (28)  
@@ -49,59 +49,60 @@ updated: 2026-04-18T15:08:25-07:00
 - [2026-04-15 | 🏛️ 🚨 The Shield of Community: Public Safety as a Foundational Public Good 🏛️](./systems-for-public-good/2026-04-15-the-shield-of-community-public-safety-as-a-foundational-public-good.md)  
   
   
-## [📰 The Noise](./the-noise/index.md) (9)  
+## [📰 The Noise](./the-noise/index.md) (10)  
+- [2026-04-19 | 📰 🌪️ Turbulent Crossroads, Persistent Progress 🌍 📰](./the-noise/2026-04-19-turbulent-crossroads-persistent-progress.md)  
 - [2026-04-18 | 📰 ⚡ Converging Tensions, Expanding Horizons 🌍 📰](./the-noise/2026-04-18-converging-tensions-expanding-horizons.md)  
 - [2026-04-17 | 📰 ⚡ Global Currents, Echoing Futures 🌍 📰](./the-noise/2026-04-17-global-currents-echoing-futures.md)  
 - [2026-04-16 | 📰 🌪️ Unseen Currents, Emerging Horizons 📰](./the-noise/2026-04-16-unseen-currents-emerging-horizons.md)  
-- [2026-04-15 | 📰 🌪️ Global Currents, Unfolding Narratives 📰](./the-noise/2026-04-15-global-currents-unfolding-narratives.md)  
   
   
-## [🌟 Positivity Bias](./positivity-bias/index.md) (8)  
+## [🌟 Positivity Bias](./positivity-bias/index.md) (9)  
+- [2026-04-19 | 🌟 Weekend Glow: Innovations Blossom and Communities Thrive 🌟](./positivity-bias/2026-04-19-weekend-glow-innovations-blossom-and-communities-thrive.md)  
 - [2026-04-18 | 🌟 Horizons of Progress: Healing, Harmony, and a Greener Earth 🌟](./positivity-bias/2026-04-18-horizons-of-progress-healing-harmony-and-a-greener-earth.md)  
 - [2026-04-17 | 🌟 Innovations in Healing and Community Resilience 🌟](./positivity-bias/2026-04-17-innovations-in-healing-and-community-resilience.md)  
 - [2026-04-16 | 🌟 Hope Blooms: Health, Environment, and Community Flourish 🌟](./positivity-bias/2026-04-16-hope-blooms-health-environment-and-community-flourish.md)  
-- [2026-04-15 | 🌟 Dawn of Progress: Breakthroughs in Health, Environment, and Global Unity 🌟](./positivity-bias/2026-04-15-dawn-of-progress-breakthroughs-in-health-environment-and-global-unity.md)  
   
   
-## [🔀 Convergence](./convergence/index.md) (4)  
+## [🔀 Convergence](./convergence/index.md) (5)  
+- [2026-04-18 | 🔀 🪞 The Architectures of Dynamic Truth 🔀](./convergence/2026-04-18-the-architectures-of-dynamic-truth.md)  
 - [2026-04-17 | 🔀 🪞 The Architectures of Validation: Friction, Flow, and Form 🔀](./convergence/2026-04-17-the-architectures-of-validation-friction-flow-and-form.md)  
 - [2026-04-16 | 🔀 💡 The Architecture of Sustenance and Self-Correction 🔀](./convergence/2026-04-16-the-architecture-of-sustenance-and-self-correction.md)  
 - [2026-04-15 | 🔀 The Observer Awakens 🔀](./convergence/2026-04-15-the-observer-awakens.md)  
   
   
 ## [📚 Books](./books/index.md) (960)  
-- [🏭☢️😱 Manufactured Crisis: The Untold Story of the Iran Nuclear Scare](./books/manufactured-crisis-the-untold-story-of-the-iran-nuclear-scare.md)  
-- [🤡🫨😭🤬😵‍💫🤥👹🇺🇸 A Very Stable Genius: Donald J. Trump's Testing of America](./books/a-very-stable-genius-donald-j-trumps-testing-of-america.md)  
-- [🤫💰🕵️ The New Confessions of an Economic Hit Man](./books/the-new-confessions-of-an-economic-hit-man.md)  
-- [🇺🇸💸🧺🌍 American Kleptocracy: How the U.S. Created the World's Greatest Money Laundering Scheme in History](./books/american-kleptocracy-how-the-us-created-the-worlds-greatest-money-laundering-scheme-in-history.md)  
+- [⬆️🤥🏛️ A Higher Loyalty: Truth, Lies, and Leadership](./books/a-higher-loyalty-truth-lies-and-leadership.md)  
+- [⚠️🥴🕹️🌐 The Fifth Risk](./books/the-fifth-risk.md)  
+- [📢🕸️ Network Propaganda: Manipulation, Disinformation, and Radicalization in American Politics](./books/network-propaganda-manipulation-disinformation-and-radicalization-in-american-politics.md)  
+- [🔬⚙️ The Sciences of the Artificial](./books/the-sciences-of-the-artificial.md)  
   
   
 ## [📺 Videos](./videos/index.md) (771)  
-- [💥🇺🇸🏛️ This Could Change American Politics.](./videos/this-could-change-american-politics.md)  
-- [💻🌍🚶‍♀️ Where All the Tech Workers Are Going](./videos/where-all-the-tech-workers-are-going.md)  
-- [🤯🤖✅ The Hardest Problem AI Ever Solved, with Google DeepMind CEO](./videos/the-hardest-problem-ai-ever-solved-with-google-deepmind-ceo.md)  
-- [📓 This Journal Keeps Me Productive (& Maybe You Too)](./videos/this-journal-keeps-me-productive-and-maybe-you-too.md)  
+- [⚙️⚖️📈 Eliyahu Goldratt - Matter of Choice | Goldratt on the Economy](./videos/eliyahu-goldratt-matter-of-choice-goldratt-on-the-economy.md)  
+- [🤖🧠⚙️👩‍💻 AI Engineering with Chip Huyen](./videos/ai-engineering-with-chip-huyen.md)  
+- [🧠🛠️🕸️🚫🙅‍♂️💼 No Vibes Allowed: Solving Hard Problems in Complex Codebases – Dex Horthy, HumanLayer](./videos/no-vibes-allowed-solving-hard-problems-in-complex-codebases-dex-horthy-humanlayer.md)  
+- [🤖🔗⬆️✅ 12-Factor Agents: Patterns of reliable LLM applications — Dex Horthy, HumanLayer](./videos/12-factor-agents-patterns-of-reliable-llm-applications-dex-horthy-humanlayer.md)  
   
   
 ## [🌌 Topics](./topics/index.md) (91)  
-- [♻️🫀🧠💪 Cognitive Behavioral Therapy](./topics/cognitive-behavioral-therapy.md)  
-- [👨‍👩‍👦🧭🤝 Authoritative Parenting](./topics/authoritative-parenting.md)  
-- [🎨🛠️ Applied Arts](./topics/applied-arts.md)  
-- [⚡🔌 Electrical Engineering](./topics/electrical-engineering.md)  
+- [📊🧐📝⚙️ Design a Performance Self-Evaluation System](./topics/design-a-performance-self-evaluation-system.md)  
+- [👯💻 Digital Twin](./topics/digital-twin.md)  
+- [💪🏋️‍♂️ Creatine](./topics/creatine.md)  
+- [⚙️🎛️ Control Systems](./topics/control-systems.md)  
   
   
 ## [📄  Articles](./articles/index.md) (84)  
+- [👀 Attention Is All You Need](./articles/attention-is-all-you-need.md)  
+- [🏛️🕸️🧩 Architectural Styles and the Design of Network Based Software Architectures](./articles/architectural-styles-and-the-design-of-network-based-software-architectures.md)  
 - [👀👶🏼🏃🏼‍♀️🛣️ What to Look for in a Jogging Stroller](./articles/what-to-look-for-in-a-jogging-stroller.md)  
 - [🔍🍎🌲📚 Information Foraging Theory](./articles/information-foraging-theory.md)  
-- [🏳️‍⚧️🚫🗣️ Iowa gives final approval to a bill removing gender identity protections despite protests](./articles/iowa-gives-final-approval-to-a-bill-removing-gender-identity-protections-despite-protests.md)  
-- [⚙️🛡️🐛 Making Reliable Distributed Systems in the Presence of Software Errors](./articles/making-reliable-distributed-systems-in-the-presence-of-software-errors.md)  
   
   
 ## [🤖💬 Bot Chats](./bot-chats/index.md) (49)  
-- [🇲🇽💃 Cinco de Mayo](./bot-chats/cinco-de-mayo.md)  
-- [📚🗳️🤝🏛️ Books for Democracy](./bot-chats/books-for-democracy.md)  
-- [♟️👑⚔️🧠 Chess](./bot-chats/chess.md)  
-- [📖 Book 🧭 Explorer 3](./bot-chats/book-explorer-3.md)  
+- [📏💻✅ Engineering as Specification](./bot-chats/engineering-as-specification.md)  
+- [✍️🥇🇺🇸 Creating the Most Popular Title in the Country](./bot-chats/creating-the-most-popular-title-in-the-country.md)  
+- [💭🚫➡️💡 Effective Thought-Action Defusion Techniques](./bot-chats/effective-thought-action-defusion-techniques.md)  
+- [📈🌐🏆📢 Creating the Most Popular Blog in the World](./bot-chats/creating-the-most-popular-blog-in-the-world.md)  
   
   
 ## [💾 Software](./software/index.md) (33)  
@@ -112,10 +113,10 @@ updated: 2026-04-18T15:08:25-07:00
   
   
 ## [👥 People](./people/index.md) (18)  
+- [🧠👨‍🎓📈 Justin Sung](./people/justin-sung.md)  
 - [👨‍🏫🤖 Andrew Ng](./people/andrew-ng.md)  
 - [🧠🤝🐘 Jonathan Haidt](./people/jonathan-haidt.md)  
 - [🧠🔬🧘‍♀️💪📈❤️‍🩹🗣️📚🌟 Kelly McGonigal](./people/kelly-mcgonigal.md)  
-- [🏛️🇺🇸📖 Heather Cox Richardson](./people/heather-cox-richardson.md)  
   
   
 ## [🛍️ Products](./products/index.md) (6)  

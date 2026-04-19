@@ -7,12 +7,13 @@ share: true
 affiliate link: https://amzn.to/4nZplJK
 CTA: 🌱 Cultivate thriving minds.
 link_analysis_model: gemini-3.1-flash-lite-preview
-link_analysis_time: 2026-04-08T00:00:00Z
+link_analysis_time: 2026-04-18T00:00:00Z
 force_analyze_links: false
 updated: 2026-04-08T09:32:58
 image_date: 2026-04-13T11:34:36Z
 image_model: "@cf/black-forest-labs/flux-1-schnell"
 image_prompt: A minimalist, soft-focus illustration featuring a stylized, translucent human brain glowing gently in the center. From the brain, vibrant, colorful neural pathways reach outward like delicate tree roots or light rays, connecting to a small, warm silhouette of a parent and child sitting together on a grassy hill. The background is a clean, calming gradient of soft blues and warm sunset oranges. The overall aesthetic is ethereal, scientific yet tender, using clean lines and a modern, flat-design style to symbolize the intersection of neurobiology and human connection. The image is bright, airy, and evokes a sense of growth, clarity, and nurturing.
+link_analysis_version: "2"
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🔬🧠👶📈😊 The Science of Parenting: How Today's Brain Research Can Help You Raise Happy, Emotionally Balanced Children  

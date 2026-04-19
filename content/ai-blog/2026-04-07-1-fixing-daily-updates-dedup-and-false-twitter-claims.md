@@ -8,8 +8,9 @@ image_date: 2026-04-08T05:44:53Z
 image_model: "@cf/black-forest-labs/flux-1-schnell"
 image_prompt: A minimalist, isometric illustration of a digital filing system. Several translucent, glowing document folders are neatly aligned in a row. A small, stylized robotic hand is meticulously adjusting a magnifying glass over one specific folder, highlighting a section of sub-bullets. Nearby, a tangled, messy knot of wires representing the broad scope bugs is being replaced by clean, organized, color-coded connectors leading directly into individual folders. The color palette uses deep navy and charcoal backgrounds with vibrant cyan and emerald green accents to represent code logic and successful data flow. The aesthetic is clean, technical, and precise, emphasizing the concept of data provenance and organized hierarchy.
 link_analysis_model: gemini-3.1-flash-lite-preview
-link_analysis_time: 2026-04-07T00:00:00Z
+link_analysis_time: 2026-04-18T00:00:00Z
 force_analyze_links: false
+link_analysis_version: "2"
 ---
 [🏡 Home](../index.md) > [🤖 AI Blog](./index.md) | [⏮️](./2026-04-06-1-reduce-image-backfill-capacity.md) [⏭️](./2026-04-07-2-toward-a-haskell-architecture-that-prevents-mistakes.md)  
 # 2026-04-07 | 🐛 Fixing Daily Updates Dedup and False Twitter Claims 🔧  

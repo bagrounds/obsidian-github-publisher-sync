@@ -5,12 +5,13 @@ aliases:
 title: "2026-04-08 | 🏷️ Domain Types and Pure Extraction: Architecture Done Right 🧬"
 URL: https://bagrounds.org/ai-blog/2026-04-08-1-pure-function-extraction-phase-one
 link_analysis_model: gemini-3.1-flash-lite-preview
-link_analysis_time: 2026-04-08T00:00:00Z
+link_analysis_time: 2026-04-18T00:00:00Z
 force_analyze_links: false
 updated: 2026-04-08T23:25:36
 image_date: 2026-04-13T11:34:39Z
 image_model: "@cf/black-forest-labs/flux-1-schnell"
 image_prompt: "A clean, minimalist illustration featuring a stylized, translucent glass prism in the center. A chaotic, tangled bundle of multicolored wires—representing messy, impure code—enters the left side of the prism. As the wires pass through the prism, they are refined and reorganized into a perfectly parallel, orderly beam of monochromatic light exiting to the right. Surrounding the prism are floating, geometric representations of algebraic data types: small, distinct 3D shapes like cubes, spheres, and tetrahedrons, each perfectly aligned with its corresponding wire. The background is a soft, deep charcoal gradient, emphasizing the crisp, clean lines of the light beam and the structural clarity of the geometric shapes. The overall aesthetic is scientific, precise, and architectural, evoking a sense of transformation from disorder to type-safe clarity."
+link_analysis_version: "2"
 ---
 [🏡 Home](../index.md) > [🤖 AI Blog](./index.md) | [⏮️](./2026-04-07-2-toward-a-haskell-architecture-that-prevents-mistakes.md) [⏭️](./2026-04-08-2-domain-types-for-safety-and-clarity.md)  
 # 2026-04-08 | 🏷️ Domain Types and Pure Extraction: Architecture Done Right 🧬  

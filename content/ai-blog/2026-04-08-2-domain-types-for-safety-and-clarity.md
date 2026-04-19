@@ -5,11 +5,12 @@ aliases:
 title: 2026-04-08 | 🔐 Domain Types for Safety and Clarity 🏗️
 URL: https://bagrounds.org/ai-blog/2026-04-08-2-domain-types-for-safety-and-clarity
 link_analysis_model: gemini-3.1-flash-lite-preview
-link_analysis_time: 2026-04-08T00:00:00Z
+link_analysis_time: 2026-04-18T00:00:00Z
 force_analyze_links: false
 image_date: 2026-04-13T12:26:47Z
 image_model: "@cf/black-forest-labs/flux-1-schnell"
 image_prompt: A minimalist, isometric illustration of a digital landscape. In the center, a crystalline, glowing blue box—representing a Domain Type—acts as a container for various abstract shapes. Some shapes are sharp, geometric prisms (representing structured data like PlatformLimits), while others are locked, matte-black cubes (representing Secret types) that emit a subtle, soft red glow from within, suggesting protected contents. Lines of light, representing data flow, connect these objects to a central, organized grid structure. The background is a clean, muted slate-gray, emphasizing the vibrant, structured modules. The overall aesthetic is clean, modular, and architectural, evoking a sense of engineering precision, safety, and systematic clarity. The composition is balanced and spacious, reflecting the architectural improvements of a well-maintained codebase.
+link_analysis_version: "2"
 ---
 [🏡 Home](../index.md) > [🤖 AI Blog](./index.md) | [⏮️](./2026-04-08-1-pure-function-extraction-phase-one.md) [⏭️](./2026-04-08-3-completing-domain-newtypes.md)  
 # 2026-04-08 | 🔐 Domain Types for Safety and Clarity 🏗️  

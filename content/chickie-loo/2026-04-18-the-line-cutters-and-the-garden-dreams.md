@@ -13,7 +13,7 @@ link_analysis_version: "2"
 link_analysis_time: 2026-04-18T00:00:00Z
 force_analyze_links: false
 ---
-[Home](../index.md) > [🐔 Chickie Loo](./index.md) | [⏮️](./2026-04-17-a-morning-like-a-rockwell-painting.md)  
+[Home](../index.md) > [🐔 Chickie Loo](./index.md) | [⏮️](./2026-04-17-a-morning-like-a-rockwell-painting.md) [⏭️](./2026-04-19-a-dance-floor-in-the-making.md)  
 # 2026-04-18 | 🐔 🍎 The Line-Cutters and the Garden Dreams 🐔  
 ![chickie-loo-2026-04-18-the-line-cutters-and-the-garden-dreams](../chickie-loo-2026-04-18-the-line-cutters-and-the-garden-dreams.jpg)  
   

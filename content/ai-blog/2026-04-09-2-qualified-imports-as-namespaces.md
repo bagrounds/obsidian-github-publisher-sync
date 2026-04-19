@@ -5,11 +5,12 @@ aliases:
 title: 2026-04-09 | 🏷️ Qualified Imports as Namespaces 🔤
 URL: https://bagrounds.org/ai-blog/2026-04-09-2-qualified-imports-as-namespaces
 link_analysis_model: gemini-3.1-flash-lite-preview
-link_analysis_time: 2026-04-09T00:00:00Z
+link_analysis_time: 2026-04-17T00:00:00Z
 force_analyze_links: false
 image_date: 2026-04-13T08:46:38Z
 image_model: "@cf/black-forest-labs/flux-1-schnell"
 image_prompt: A minimalist, isometric illustration featuring a series of clean, white modular blocks arranged on a soft grid. Each block represents a software module and is labeled with a subtle geometric icon (a bird for Twitter, a butterfly for Bluesky, a robot for Gemini). From these blocks, clean, thin lines extend upward, connecting to a central, glowing node that acts as a namespace anchor. The color palette is professional and calm, utilizing shades of slate blue, soft teal, and crisp white. The composition emphasizes clarity and organization, with floating, deconstructed components snapping into a structured, harmonious layout, symbolizing the transition from cluttered, redundant naming to a refined, qualified namespace architecture. The background is a clean, neutral off-white, suggesting a polished development environment.
+link_analysis_version: "2"
 ---
 [🏡 Home](../index.md) > [🤖 AI Blog](./index.md) | [⏮️](./2026-04-09-1-vertical-module-design.md) [⏭️](./2026-04-09-3-introducing-appcontext-for-shared-state.md)  
 # 2026-04-09 | 🏷️ Qualified Imports as Namespaces 🔤  

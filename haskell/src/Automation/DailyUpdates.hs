@@ -518,13 +518,13 @@ ensureChangesPage changesDir date = do
           when (updated /= prevContent) $
             TIO.writeFile prevPath updated
 
-ensureChangesLinkInReflection :: FilePath -> Text -> IO ()
-ensureChangesLinkInReflection reflectionPath dateText = do
+ensureChangesLinkInReflection :: FilePath -> Day -> IO ()
+ensureChangesLinkInReflection reflectionPath date = do
   reflectionExists <- doesFileExist reflectionPath
   when reflectionExists $ do
     content <- TIO.readFile reflectionPath
     unless (T.isInfixOf changesLinkPrefix content) $ do
-      let updated = T.stripEnd content <> "\n\n" <> changesLink dateText <> "\n"
+      let updated = T.stripEnd content <> "\n\n" <> changesLink date <> "\n"
       TIO.writeFile reflectionPath updated
 
 extractTitleFromFile :: FilePath -> IO Text
@@ -548,7 +548,7 @@ addUpdateLinksToReflection vaultDir date links = do
       changesPath = changesDir </> T.unpack dateText <> ".md"
   reflectionExists <- doesFileExist reflectionPath
   unless reflectionExists $ do
-    result <- ensureDailyReflection reflectionsDir dateText
+    result <- ensureDailyReflection reflectionsDir date
     when (errCreated result) $
       TIO.putStrLn ("  \128221 Created daily reflection for " <> dateText)
   ensureChangesDirectory changesDir
@@ -568,7 +568,7 @@ addUpdateLinksToReflection vaultDir date links = do
     then pure False
     else do
       TIO.writeFile changesPath updated
-      ensureChangesLinkInReflection reflectionPath dateText
+      ensureChangesLinkInReflection reflectionPath date
       let linkPaths = T.intercalate ", " (fmap (unRelativePath . updateRelativePath) links)
       TIO.putStrLn ("  \128260 Added update link(s) to " <> dateText <> " changes: " <> linkPaths)
       pure True

@@ -20,10 +20,12 @@ import Data.List (sort)
 import Data.Text (Text)
 import qualified Data.Text as T
 import qualified Data.Text.IO as TIO
+import Data.Time (Day)
 import System.Directory (createDirectoryIfMissing, doesDirectoryExist, doesFileExist, listDirectory)
 import System.FilePath ((</>), dropExtension)
 
 import Automation.Frontmatter (quoteYamlValue)
+import Automation.PacificTime (formatDay)
 
 import Automation.BlogSeriesConfig (BlogSeriesConfig (..))
 import Automation.Title (Title, unTitle)
@@ -39,8 +41,8 @@ embedSectionHeaders = [Twitter.sectionHeader, Bluesky.sectionHeader, Mastodon.se
 changesLinkPrefix :: Text
 changesLinkPrefix = "## [[changes/"
 
-changesLink :: Text -> Text
-changesLink date = "## " <> formatWikilink ("changes/" <> date) "\128260 Changes"
+changesLink :: Day -> Text
+changesLink date = "## " <> formatWikilink ("changes/" <> formatDay date) "\128260 Changes"
 
 trailingSectionHeaders :: [Text]
 trailingSectionHeaders = updatesSectionHeader : changesLinkPrefix : embedSectionHeaders
@@ -59,21 +61,22 @@ data UpdateReflectionResult = UpdateReflectionResult
   , urrPreviousDate      :: Maybe Text
   } deriving (Show, Eq)
 
-buildReflectionContent :: Text -> Maybe Text -> Text
+buildReflectionContent :: Day -> Maybe Text -> Text
 buildReflectionContent date previousDate =
-  let backLink = maybe "" (\pd -> " | " <> buildNavBackLink Reflections pd) previousDate
+  let dateText = formatDay date
+      backLink = maybe "" (\pd -> " | " <> buildNavBackLink Reflections pd) previousDate
   in T.intercalate "\n"
     [ "---"
     , "share: true"
     , "aliases:"
-    , "  - " <> quoteYamlValue date
-    , "title: " <> quoteYamlValue date
-    , "URL: " <> quoteYamlValue ("https://bagrounds.org/reflections/" <> date)
+    , "  - " <> quoteYamlValue dateText
+    , "title: " <> quoteYamlValue dateText
+    , "URL: " <> quoteYamlValue ("https://bagrounds.org/reflections/" <> dateText)
     , "Author: \"[[bryan-grounds]]\""
     , "tags:"
     , "---"
     , formatWikilink "index" "Home" <> " > " <> directoryIndexLink Reflections <> backLink
-    , "# " <> date
+    , "# " <> dateText
     , ""
     , changesLink date
     , ""
@@ -157,15 +160,16 @@ findPreviousReflectionDate reflectionsDir today = do
         _  -> Just $ T.pack $ dropExtension $ T.unpack $ last candidates
     else pure Nothing
 
-ensureDailyReflection :: FilePath -> Text -> IO EnsureReflectionResult
+ensureDailyReflection :: FilePath -> Day -> IO EnsureReflectionResult
 ensureDailyReflection reflectionsDir today = do
-  let reflectionPath = reflectionsDir </> T.unpack today <> ".md"
+  let todayText = formatDay today
+      reflectionPath = reflectionsDir </> T.unpack todayText <> ".md"
   exists <- doesFileExist reflectionPath
   if exists
     then pure EnsureReflectionResult
       { errCreated = False, errPreviousDate = Nothing, errForwardLinkAdded = False }
     else do
-      previousDate <- findPreviousReflectionDate reflectionsDir today
+      previousDate <- findPreviousReflectionDate reflectionsDir todayText
       let content = buildReflectionContent today previousDate
       createDirectoryIfMissing True reflectionsDir
       TIO.writeFile reflectionPath content
@@ -177,7 +181,7 @@ ensureDailyReflection reflectionsDir today = do
           if prevExists
             then do
               prevContent <- TIO.readFile prevPath
-              let updated = addForwardLink prevContent today
+              let updated = addForwardLink prevContent todayText
               if updated == prevContent
                 then pure False
                 else TIO.writeFile prevPath updated >> pure True
@@ -185,11 +189,12 @@ ensureDailyReflection reflectionsDir today = do
       pure EnsureReflectionResult
         { errCreated = True, errPreviousDate = previousDate, errForwardLinkAdded = forwardLinkAdded }
 
-updateDailyReflection :: FilePath -> Text -> BlogSeriesConfig -> Text -> Title -> Maybe Text -> IO UpdateReflectionResult
+updateDailyReflection :: FilePath -> Day -> BlogSeriesConfig -> Text -> Title -> Maybe Text -> IO UpdateReflectionResult
 updateDailyReflection vaultDir today series postFilename postTitle replacingFilename = do
-  let reflectionsDir = vaultDir </> "reflections"
+  let todayText = formatDay today
+      reflectionsDir = vaultDir </> "reflections"
   EnsureReflectionResult{..} <- ensureDailyReflection reflectionsDir today
-  let reflectionPath = reflectionsDir </> T.unpack today <> ".md"
+  let reflectionPath = reflectionsDir </> T.unpack todayText <> ".md"
   content <- TIO.readFile reflectionPath
   let filenameNoExt = T.pack $ dropExtension $ T.unpack postFilename
       replacingFilenameNoExt = fmap (T.pack . dropExtension . T.unpack) replacingFilename

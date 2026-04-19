@@ -105,6 +105,7 @@ import qualified Automation.InternalLinking as IL
 import Automation.SocialPosting (autoPost)
 import Automation.CliArgs (CliArgs (..), parseCliArgs)
 import Automation.PacificTime (formatDay, todayPacificDay, yesterdayPacificDay)
+import Data.Time (defaultTimeLocale, parseTimeM)
 import Automation.VaultSync (syncFileToVault, syncNewAiBlogPosts, copySeriesPosts, syncRepoPostsToVault, ensureFileInVault)
 import Automation.TaskRunner (inferenceDashboards, runTasks, logMsg, failTask)
 import Automation.Text (stripCodeFences)
@@ -284,7 +285,7 @@ runBlogSeries context seriesMap runConfigs seriesId = do
                         Just r  -> Just (T.pack (dropExtension r))
                         Nothing -> Nothing
                   postTitle <- either (\e -> failTask $ "Invalid display title: " <> e) pure (mkTitle displayTitle)
-                  _ <- updateDailyReflection vaultDir todayText series filenameNoExt postTitle regenFilenameNoExt
+                  _ <- updateDailyReflection vaultDir today series filenameNoExt postTitle regenFilenameNoExt
 
                   let postRelPath = T.unpack seriesId </> T.unpack filename
                       postLocalPath = repoRoot </> postRelPath
@@ -372,14 +373,17 @@ runBackfillImages context contentDirs = do
   -- 5. Link AI blog posts to their date's reflection with a dedicated AI Blog section
   --    Filter out future dates to avoid creating reflections ahead of Pacific time
   aiBlogLinks <- buildReflectionLinks aiBlogDir navResults
-  let todayLinks = filter (\(_, _, date) -> date <= todayText) aiBlogLinks
-  mapM_ (\(relPath, title, date) -> do
-    let filename = T.drop (T.length "ai-blog/") relPath
-    result <- updateDailyReflection vaultDir date aiBlogConfig filename title Nothing
-    case result of
-      _ | urrLinkInserted result ->
-            logMsg $ "  🤖 Added AI blog link to " <> date <> " reflection: " <> relPath
-        | otherwise -> pure ()
+  let todayLinks = filter (\(_, _, dateText) -> dateText <= todayText) aiBlogLinks
+  mapM_ (\(relPath, title, dateText) -> do
+    case parseTimeM True defaultTimeLocale "%Y-%m-%d" (T.unpack dateText) of
+      Nothing -> logMsg $ "  ⚠️  Skipping AI blog link with unparseable date: " <> dateText
+      Just day -> do
+        let filename = T.drop (T.length "ai-blog/") relPath
+        result <- updateDailyReflection vaultDir day aiBlogConfig filename title Nothing
+        case result of
+          _ | urrLinkInserted result ->
+                logMsg $ "  🤖 Added AI blog link to " <> dateText <> " reflection: " <> relPath
+            | otherwise -> pure ()
     ) todayLinks
 
   logMsg "✅ backfill-blog-images"

@@ -5,11 +5,12 @@ aliases:
 title: 💻🧠📈 Haskell
 URL: https://bagrounds.org/software/haskell
 link_analysis_model: gemini-3.1-flash-lite-preview
-link_analysis_time: 2026-04-06T00:00:00Z
+link_analysis_time: 2026-04-15T00:00:00Z
 force_analyze_links: false
 image_date: 2026-04-10T23:18:57Z
 image_model: "@cf/black-forest-labs/flux-1-schnell"
 image_prompt: A clean, minimalist composition featuring a glowing, stylized lambda symbol (λ) as the central focus. The symbol is constructed from intricate, interlocking geometric lines that suggest a digital circuit or a structured mathematical proof. Surrounding the lambda are floating, abstract nodes representing data types and functions, connected by thin, luminous threads of light. The background is a deep, moody indigo, transitioning into a soft gradient of twilight purple, creating a sense of depth and intelligence. The overall aesthetic is sleek, modern, and cerebral, evoking the precision of pure functional programming and the elegance of abstract logic. The lighting is soft and ethereal, highlighting the crisp edges of the geometry against the dark, mysterious backdrop.
+link_analysis_version: "2"
 ---
 [Home](../index.md) > [Software](./index.md)  
 # 💻🧠📈 Haskell  

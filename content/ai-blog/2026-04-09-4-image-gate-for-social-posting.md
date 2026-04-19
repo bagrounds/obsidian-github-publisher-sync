@@ -5,11 +5,12 @@ aliases:
 title: 2026-04-09 | 🖼️ Image Gate for Social Posting 🚪
 URL: https://bagrounds.org/ai-blog/2026-04-09-4-image-gate-for-social-posting
 link_analysis_model: gemini-3.1-flash-lite-preview
-link_analysis_time: 2026-04-09T00:00:00Z
+link_analysis_time: 2026-04-17T00:00:00Z
 force_analyze_links: false
 image_date: 2026-04-13T09:42:15Z
 image_model: "@cf/black-forest-labs/flux-1-schnell"
 image_prompt: A minimalist, high-contrast illustration featuring a stylized, ornate wooden door standing upright in a vast, clean digital landscape. The door is slightly ajar, revealing a warm, glowing aperture that emits soft golden light, symbolizing a gate or filter. In the foreground, a series of sleek, abstract data streams—represented by thin, glowing lines of light—converge toward the door. Some lines pass through the open frame, while others are gently deflected by the door’s surface, representing the selection process. The color palette is composed of deep navy blues and muted grays, contrasted by vibrant, luminous gold and electric cyan accents. The aesthetic is modern, clean, and technical, emphasizing precision and the concept of a smart, automated traffic controller for digital content.
+link_analysis_version: "2"
 ---
 [🏡 Home](../index.md) > [🤖 AI Blog](./index.md) | [⏮️](./2026-04-09-3-introducing-appcontext-for-shared-state.md) [⏭️](./2026-04-09-5-typed-errors-for-gemini-module.md)  
 # 2026-04-09 | 🖼️ Image Gate for Social Posting 🚪  

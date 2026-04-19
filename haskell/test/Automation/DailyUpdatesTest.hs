@@ -526,7 +526,7 @@ addUpdateLinksToReflectionTests = testGroup "addUpdateLinksToReflection"
         assertBool "changes has stats with legend" (T.isInfixOf "\128202 1 page \183 1 \128444\65039 images" changesContent)
 
         reflContent <- TIO.readFile (reflDir </> "2026-03-28.md")
-        assertBool "reflection has changes link" (T.isInfixOf "[[changes/2026-03-28|\128260 Changes]]" reflContent)
+        assertBool "reflection has changes link" (T.isInfixOf "## [[changes/2026-03-28|\128260 Changes]]" reflContent)
         assertBool "reflection does not have updates table" (not (T.isInfixOf "| Page |" reflContent))
 
   , testCase "creates changes index page with dataview" $

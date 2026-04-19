@@ -119,7 +119,7 @@ buildAnalyticsSectionTests = testGroup "buildAnalyticsSection"
   , testCase "includes avg session duration" $
       assertBool "contains avg session" (T.isInfixOf "⏱️ Avg Session: 2m 34s" (buildAnalyticsSection sampleReport))
   , testCase "includes top pages table header" $
-      assertBool "contains table header" (T.isInfixOf "| 👁️ | 📄 Page |" (buildAnalyticsSection sampleReport))
+      assertBool "contains table header" (T.isInfixOf "| 👁️ Views | 📄 Page |" (buildAnalyticsSection sampleReport))
   , testCase "includes table separator" $
       assertBool "contains separator" (T.isInfixOf "|---:|:---|" (buildAnalyticsSection sampleReport))
   , testCase "includes page views in table" $
@@ -132,7 +132,7 @@ buildAnalyticsSectionTests = testGroup "buildAnalyticsSection"
       assertBool "contains path fallback" (T.isInfixOf "[[chickie-loo/another-post\\|/chickie-loo/another-post]]" (buildAnalyticsSection sampleReport))
   , testCase "no top pages section when empty" $
       let report = AnalyticsReport sampleSummary []
-      in assertBool "no top pages" (not (T.isInfixOf "### 🏆 Top Pages" (buildAnalyticsSection report)))
+      in assertBool "no top pages" (not (T.isInfixOf "### 🏆 Top Pages Today" (buildAnalyticsSection report)))
   ]
 
 applyAnalyticsSectionTests :: TestTree

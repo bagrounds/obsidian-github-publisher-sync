@@ -131,8 +131,8 @@ buildEnvMap :: [String] -> IO (Map Text Text)
 buildEnvMap keys = Map.fromList <$> traverse lookupOne keys
   where
     lookupOne key = do
-      mVal <- lookupEnv key
-      pure (T.pack key, maybe "" T.pack mVal)
+      maybeValue <- lookupEnv key
+      pure (T.pack key, maybe "" T.pack maybeValue)
 
 getObsidianCreds :: IO ObsidianCredentials
 getObsidianCreds = do

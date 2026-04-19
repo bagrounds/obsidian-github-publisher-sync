@@ -114,4 +114,4 @@ taskRunnersPropertyTests = testGroup "properties"
 genUniqueSeriesIds :: QC.Gen [Text]
 genUniqueSeriesIds = fmap (fmap (T.pack . QC.getASCIIString) . deduplicate) (QC.listOf (QC.resize 10 QC.arbitrary))
   where
-    deduplicate = Map.elems . Map.fromList . fmap (\x -> (QC.getASCIIString x, x))
+    deduplicate = Map.elems . Map.fromList . fmap (\asciiString -> (QC.getASCIIString asciiString, asciiString))

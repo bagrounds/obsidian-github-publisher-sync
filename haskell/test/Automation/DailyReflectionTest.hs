@@ -1,6 +1,7 @@
 module Automation.DailyReflectionTest (tests) where
 
 import qualified Data.Text as T
+import Data.Time (fromGregorian)
 import Test.Tasty (TestTree, testGroup)
 import Test.Tasty.HUnit (testCase, (@?=), assertBool)
 import Test.Tasty.QuickCheck (testProperty)
@@ -10,6 +11,7 @@ import Data.Time.LocalTime (TimeOfDay (..))
 import Automation.AiBlogLinks (aiBlogConfig)
 import Automation.BlogSeriesConfig (BlogSeriesConfig (..))
 import Automation.DailyReflection
+import Automation.PacificTime (formatDay)
 import Automation.TestGenerators (testTitle)
 
 tests :: TestTree
@@ -43,34 +45,34 @@ sampleSeries = BlogSeriesConfig
 buildReflectionContentTests :: TestTree
 buildReflectionContentTests = testGroup "buildReflectionContent"
   [ testCase "generates frontmatter with date" $
-      let result = buildReflectionContent "2026-04-01" Nothing
+      let result = buildReflectionContent (fromGregorian 2026 4 1) Nothing
       in do
         assertBool "starts with frontmatter" (T.isPrefixOf "---" result)
         assertBool "contains share: true" (T.isInfixOf "share: true" result)
         assertBool "contains date in title" (T.isInfixOf "2026-04-01" result)
         assertBool "contains URL" (T.isInfixOf "https://bagrounds.org/reflections/2026-04-01" result)
   , testCase "generates heading with date" $
-      let result = buildReflectionContent "2026-04-01" Nothing
+      let result = buildReflectionContent (fromGregorian 2026 4 1) Nothing
       in assertBool "contains h1 with date" (T.isInfixOf "# 2026-04-01" result)
   , testCase "includes nav breadcrumb" $
-      let result = buildReflectionContent "2026-04-01" Nothing
+      let result = buildReflectionContent (fromGregorian 2026 4 1) Nothing
       in assertBool "contains Home nav" (T.isInfixOf "[[index|Home]]" result)
   , testCase "no backlink when no previous date" $
-      let result = buildReflectionContent "2026-04-01" Nothing
+      let result = buildReflectionContent (fromGregorian 2026 4 1) Nothing
       in assertBool "no back arrow" (not (T.isInfixOf "⏮️" result))
   , testCase "includes backlink when previous date provided" $
-      let result = buildReflectionContent "2026-04-01" (Just "2026-03-31")
+      let result = buildReflectionContent (fromGregorian 2026 4 1) (Just "2026-03-31")
       in do
         assertBool "has back arrow" (T.isInfixOf "⏮️" result)
         assertBool "links to previous date" (T.isInfixOf "reflections/2026-03-31" result)
   , testCase "includes Author field" $
-      let result = buildReflectionContent "2026-04-01" Nothing
+      let result = buildReflectionContent (fromGregorian 2026 4 1) Nothing
       in assertBool "contains Author" (T.isInfixOf "Author:" result)
   , testCase "includes changes link at the bottom" $
-      let result = buildReflectionContent "2026-04-01" Nothing
+      let result = buildReflectionContent (fromGregorian 2026 4 1) Nothing
       in assertBool "contains changes link" (T.isInfixOf "## [[changes/2026-04-01|\128260 Changes]]" result)
   , testCase "changes link is after heading" $
-      let result = buildReflectionContent "2026-04-01" Nothing
+      let result = buildReflectionContent (fromGregorian 2026 4 1) Nothing
           headingIdx = T.length $ fst $ T.breakOn "# 2026-04-01" result
           changesIdx = T.length $ fst $ T.breakOn "## [[changes/2026-04-01|\128260 Changes]]" result
       in assertBool "changes link after heading" (changesIdx > headingIdx)
@@ -194,6 +196,17 @@ insertPostLinkTests = testGroup "insertPostLink"
       let content = "# 2026-04-01\n\nBody text"
           result = insertPostLink content sampleSeries "post" (testTitle "Post") Nothing
       in assertBool "contains post link" (T.isInfixOf "[[auto-blog-zero/post|Post]]" result)
+  , testCase "inserts new section before changes link without splitting H2" $
+      let content = "# 2026-04-01\n\nBody\n\n## [[changes/2026-04-01|\128260 Changes]]\n"
+          result = insertPostLink content sampleSeries "post" (testTitle "Post") Nothing
+      in do
+        assertBool "changes link retains H2 prefix" (T.isInfixOf "## [[changes/2026-04-01|" result)
+        assertBool "no orphaned H2" (not $ T.isInfixOf "\n##\n" result)
+        assertBool "no orphaned H2 at line end" (not $ T.isInfixOf "\n## \n" result)
+        assertBool "section before changes link" $
+          let sIdx = T.length $ fst $ T.breakOn (buildSeriesSectionHeading sampleSeries) result
+              cIdx = T.length $ fst $ T.breakOn "## [[changes/" result
+          in sIdx < cIdx
   ]
 
 --------------------------------------------------------------------------------
@@ -255,11 +268,11 @@ aiBlogSectionTests = testGroup "AI blog section"
 
 propertyTests :: TestTree
 propertyTests = testGroup "properties"
-  [ testProperty "buildReflectionContent always contains the date" $
-      \(QC.ASCIIString dateStr) ->
-        let date = T.pack dateStr
-            result = buildReflectionContent date Nothing
-        in T.isInfixOf date result
+  [ testProperty "buildReflectionContent always contains the formatted date" $
+      \year month dayNum ->
+        let day = fromGregorian year (abs month `mod` 12 + 1) (abs dayNum `mod` 28 + 1)
+            result = buildReflectionContent day Nothing
+        in T.isInfixOf (formatDay day) result
   , testProperty "addForwardLink is idempotent" $
       \(QC.ASCIIString dateStr) ->
         let date = T.pack dateStr

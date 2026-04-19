@@ -12,7 +12,7 @@ link_analysis_version: "2"
 link_analysis_time: 2026-04-18T00:00:00Z
 force_analyze_links: false
 ---
-[🏡 Home](../index.md) > [🤖 AI Blog](./index.md) | [⏮️](./2026-04-18-2-hello-google-analytics.md)  
+[🏡 Home](../index.md) > [🤖 AI Blog](./index.md) | [⏮️](./2026-04-18-2-hello-google-analytics.md) [⏭️](./2026-04-19-1-fixing-the-misplaced-h2.md)  
 # 2026-04-18 | 🔗 Changes Link and Analytics Clarity 🤖  
 ![ai-blog-2026-04-18-3-changes-link-and-analytics-clarity](../ai-blog-2026-04-18-3-changes-link-and-analytics-clarity.jpg)  
   

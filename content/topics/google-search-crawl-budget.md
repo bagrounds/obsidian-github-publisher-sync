@@ -5,12 +5,13 @@ aliases:
 title: 🤖🕸️💸🔎 Google Search Crawl Budget
 URL: https://bagrounds.org/topics/google-search-crawl-budget
 link_analysis_model: gemini-3.1-flash-lite-preview
-link_analysis_time: 2026-04-06T00:00:00Z
+link_analysis_time: 2026-04-17T00:00:00Z
 force_analyze_links: false
 image_date: 2026-04-09T09:37:23Z
 image_model: "@cf/black-forest-labs/flux-1-schnell"
 image_prompt: A stylized, isometric illustration of a digital landscape. A small, friendly robot—representing the search engine crawler—navigates a complex network of glowing, interconnected server nodes. The robot carries a glowing battery pack, symbolizing energy levels, while hovering over a path of organized data blocks. Some paths are clear and highlighted in bright blue, leading to vibrant, open document icons. Other paths are blocked by subtle, semi-transparent stop signs or digital gates, representing optimized crawl paths. In the background, a soft, abstract digital grid fades into a deep, professional blue gradient. The aesthetic is clean, modern, and tech-focused, using a palette of cyan, electric blue, and warm gold accents to represent the budget or credits being spent. The overall scene conveys efficiency, navigation, and digital infrastructure.
 updated: 2026-04-09T15:45:25
+link_analysis_version: "2"
 ---
 [Home](../index.md) > [Topics](./index.md)  
 # 🤖🕸️💸🔎 Google Search Crawl Budget  

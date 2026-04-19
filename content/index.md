@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-04-19T13:49:06-07:00
+updated: 2026-04-19T14:05:36-07:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -77,11 +77,11 @@ updated: 2026-04-19T13:49:06-07:00
 - [🌐💰 Networks, Crowds, and Markets: Reasoning About a Highly Connected World](./books/networks-crowds-and-markets.md)  
   
   
-## [📺 Videos](./videos/index.md) (772)  
+## [📺 Videos](./videos/index.md) (773)  
+- [🏗️⭐🤖 How to Build a Remarkable Brand in the Age of AI | Seth Godin](./videos/how-to-build-a-remarkable-brand-in-the-age-of-ai-seth-godin.md)  
 - [❓🏥💰 Who Is the U.S. Health System Really For? | NYT Opinion](./videos/who-is-the-us-health-system-really-for-nyt-opinion.md)  
 - [🗺️♟️🤖🤝 Parables on the Power of Planning in AI: From Poker to Diplomacy: Noam Brown (OpenAI)](./videos/parables-on-the-power-of-planning-in-ai-from-poker-to-diplomacy-noam-brown-openai.md)  
 - [🧠🔄♾️💡 The concept that changes how you learn forever](./videos/the-concept-that-changes-how-you-learn-forever.md)  
-- [📈🚀🏁🏆  It’s actually pretty easy to get ahead of 99% of people](./videos/it-is-actually-pretty-easy-to-get-ahead-of-99-percent-of%20people.md)  
   
   
 ## [🌌 Topics](./topics/index.md) (91)  

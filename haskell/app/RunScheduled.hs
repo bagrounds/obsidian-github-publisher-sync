@@ -600,7 +600,7 @@ runDailyAnalytics context = do
                               logMsg $ "  ❌ Parse pages error: " <> err
                               logMsg "✅ daily-analytics (error)"
                             (Right summary, Right pages) -> do
-                              enrichedPages <- traverse (resolvePageTitle vaultDir) pages
+                              enrichedPages <- traverse (enrichPageMetricWithTitle vaultDir) pages
                               let report = GA.AnalyticsReport summary enrichedPages
                                   updatedContent = GA.applyAnalyticsSection noteContent report
                               TIO.writeFile reflectionPath updatedContent
@@ -611,8 +611,8 @@ runDailyAnalytics context = do
                               logMsg $ "  📊 Top pages: " <> T.pack (show (length enrichedPages))
                               logMsg "✅ daily-analytics"
 
-resolvePageTitle :: FilePath -> GA.PageMetric -> IO GA.PageMetric
-resolvePageTitle vaultDir metric = do
+enrichPageMetricWithTitle :: FilePath -> GA.PageMetric -> IO GA.PageMetric
+enrichPageMetricWithTitle vaultDir metric = do
   let urlPath = GA.pagePath metric
       relativePath = GA.pathToWikilinkTarget urlPath
       filePath = vaultDir </> T.unpack relativePath <> ".md"

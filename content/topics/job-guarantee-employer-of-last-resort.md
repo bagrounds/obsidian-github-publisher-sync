@@ -5,11 +5,12 @@ aliases:
 title: 🧑‍💼🛡️ Job Guarantee, Employer of Last Resort
 URL: https://bagrounds.org/topics/job-guarantee-employer-of-last-resort
 link_analysis_model: gemini-3.1-flash-lite-preview
-link_analysis_time: 2026-04-01T00:00:00Z
+link_analysis_time: 2026-04-17T00:00:00Z
 force_analyze_links: false
 image_date: 2026-04-09T14:46:09Z
 image_model: "@cf/black-forest-labs/flux-1-schnell"
 image_prompt: "A stylized, isometric illustration of a vibrant, thriving community. At the center, a diverse group of people are engaged in various constructive activities: planting trees in a park, maintaining a community garden, repairing a public building, and facilitating a clean-energy project. The background features a clean, modern cityscape with renewable energy symbols like wind turbines and solar panels. A glowing, translucent shield or dome gently arches over the entire scene, symbolizing security and stability. The color palette uses warm, optimistic tones—golds, greens, and soft blues—to evoke a sense of prosperity and social harmony. The overall aesthetic is clean, minimalist, and hopeful, emphasizing the transformation of labor into tangible public value."
+link_analysis_version: "2"
 ---
 [Home](../index.md) > [Topics](./index.md) > [Knowledge](./a-hierarchical-view-of-human-knowledge.md) > [Social Sciences](./social-sciences.md) > [Economics](./economics.md) > [Heterodox Economics](./heterodox-economics.md) > [🏦♾️📈💸 Modern Monetary Theory](./modern-monetary-theory.md)  
 # 🧑‍💼🛡️ Job Guarantee, Employer of Last Resort  

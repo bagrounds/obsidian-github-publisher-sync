@@ -7,12 +7,13 @@ URL: https://bagrounds.org/topics/functional-finance
 tags:
   - MMT
 link_analysis_model: gemini-3.1-flash-lite-preview
-link_analysis_time: 2026-04-01T00:00:00Z
+link_analysis_time: 2026-04-17T00:00:00Z
 force_analyze_links: false
 image_date: 2026-04-09T08:38:29Z
 image_model: "@cf/black-forest-labs/flux-1-schnell"
 image_prompt: A minimalist, isometric illustration featuring a large, glowing balance scale centered on a clean, light-colored background. On one side of the scale sits a stylized, golden government building representing fiscal policy, effortlessly lifting a collection of heavy, dark-colored debt chains off the ground. On the other side, vibrant, colorful icons representing real resources—such as a gear for production, a silhouette of a person for labor, and a small wheat stalk for goods—are being carefully weighed to maintain equilibrium. Soft, warm light emanates from the center of the scale, casting subtle shadows. The aesthetic is modern, professional, and clean, using a palette of slate blue, deep gold, and crisp white to convey a sense of stability, authority, and systemic clarity.
 updated: 2026-04-09T13:48:37
+link_analysis_version: "2"
 ---
 [Home](../index.md) > [Topics](./index.md) > [Knowledge](./a-hierarchical-view-of-human-knowledge.md) > [Social Sciences](./social-sciences.md) > [Economics](./economics.md) > [Heterodox Economics](./heterodox-economics.md) > [🏦♾️📈💸 Modern Monetary Theory](./modern-monetary-theory.md)  
 # 💰🏛️📈 Functional Finance  

@@ -5,11 +5,12 @@ aliases:
 title: 🦙💬 Ollama
 URL: https://bagrounds.org/software/ollama
 link_analysis_model: gemini-3.1-flash-lite-preview
-link_analysis_time: 2026-04-06T00:00:00Z
+link_analysis_time: 2026-04-15T00:00:00Z
 force_analyze_links: false
 image_date: 2026-04-11T03:09:17Z
 image_model: "@cf/black-forest-labs/flux-1-schnell"
 image_prompt: A stylized, minimalist illustration featuring a friendly, geometric-shaped llama sitting atop a glowing, translucent computer tower. The llama is composed of soft, matte-textured shapes in shades of white and cream. From the llama’s head, a vibrant, flowing stream of digital data—represented by glowing cyan and magenta nodes and connecting lines—curves downward to plug directly into the computers motherboard, which is visible through a transparent side panel. The background is a clean, deep charcoal gradient, suggesting a modern, high-tech workspace. Soft, ambient light emanates from the computer components, casting a gentle glow on the llama, emphasizing the concept of local, private intelligence living right inside the hardware. The aesthetic is clean, professional, and tech-forward.
+link_analysis_version: "2"
 ---
 [Home](../index.md) > [Software](./index.md)  
 # 🦙💬 Ollama  

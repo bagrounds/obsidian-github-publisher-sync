@@ -5,11 +5,12 @@ aliases:
 title: 💻🗣️ Programming Languages
 URL: https://bagrounds.org/topics/programming-languages
 link_analysis_model: gemini-3.1-flash-lite-preview
-link_analysis_time: 2026-04-04T00:00:00Z
+link_analysis_time: 2026-04-17T00:00:00Z
 force_analyze_links: false
 image_date: 2026-04-10T01:41:13Z
 image_model: "@cf/black-forest-labs/flux-1-schnell"
 image_prompt: A vibrant, abstract composition featuring a glowing, central neural-network-like structure made of interconnected digital nodes. Radiating outward from the center are various stylized, translucent geometric shapes—cubes, spheres, and crystalline prisms—each representing a different programming paradigm. These shapes are connected by flowing, illuminated data streams in shades of electric blue, magenta, and soft gold. The background is a deep, dark navy gradient, creating a sense of infinite digital space. Some of the data streams form subtle, elegant lines of code syntax that dissolve into stardust at their edges. The overall aesthetic is clean, modern, and futuristic, emphasizing the bridge between human logic and machine complexity through light and form.
+link_analysis_version: "2"
 ---
 [Home](../index.md) > [Topics](./index.md)  
 # 💻🗣️ Programming Languages  

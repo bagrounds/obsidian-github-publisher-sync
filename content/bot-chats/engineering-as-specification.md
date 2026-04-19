@@ -11,6 +11,7 @@ image_date: 2026-04-11T21:18:18Z
 image_model: "@cf/black-forest-labs/flux-1-schnell"
 image_prompt: A minimalist, high-contrast illustration depicting the concept of Engineering as Specification. The scene features a series of concentric, glowing geometric rings (representing nested scopes) floating in a deep, dark space. At the center of these rings sits a clean, crystalline structure that represents a refined principle or architecture. Faint, ethereal lines of light connect the rings to a stylized, abstract digital blueprint on one side, suggesting the flow from high-level specification to concrete engineering. The color palette uses deep navy and charcoal for the background, with vibrant, sharp neon cyan and amber highlights to emphasize the precision of the principles. The composition is balanced and symmetrical, evoking a sense of architectural clarity, structural integrity, and modern technological sophistication.
 link_analysis_version: "2"
+updated: 2026-04-19T11:21:09
 ---
 [Home](../index.md) > [Bot Chats](./index.md)  
 # 📏💻✅ Engineering as Specification  
@@ -135,4 +136,12 @@ link_analysis_version: "2"
   
 ## 📚 Book Recommendations  
 - [🤖🏗️ AI Engineering: Building Applications with Foundation Models](../books/ai-engineering-building-applications-with-foundation-models.md)  
-- [🤖💻 Vibe Coding: Building Production-Grade Software With GenAI, Chat, Agents, and Beyond](../books/vibe-coding-building-production-grade-software-with-genai-chat-agents-and-beyond.md)
+- [🤖💻 Vibe Coding: Building Production-Grade Software With GenAI, Chat, Agents, and Beyond](../books/vibe-coding-building-production-grade-software-with-genai-chat-agents-and-beyond.md)  
+  
+## 🦋 Bluesky    
+<blockquote class="bluesky-embed" data-bluesky-uri="at://did:plc:i4yli6h7x2uoj7acxunww2fc/app.bsky.feed.post/3mjttkwo7pe2v" data-bluesky-cid="bafyreignbryzlksorw5xc5354b3jb3zasvti2ilo33xsyp2h765qcdcjja"><p>📏💻✅ Engineering as Specification  
+  
+#AI Q: 📏 Is software engineering shifting from writing code to simply defining the rules for AI?  
+  
+🤖 Agent Orchestration | 🏛️ Software Architecture | ⚖️ Technical Governance | 📊 Evaluation  
+https://bagrounds.org/bot-chats/engineering-as-specification</p>&mdash; <a href="https://bsky.app/profile/did:plc:i4yli6h7x2uoj7acxunww2fc?ref_src=embed">Bryan Grounds (@bagrounds.bsky.social)</a> <a href="https://bsky.app/profile/did:plc:i4yli6h7x2uoj7acxunww2fc/post/3mjttkwo7pe2v?ref_src=embed">2026-04-19T11:21:22.000Z</a></blockquote><script async src="https://embed.bsky.app/static/embed.js" charset="utf-8"></script>

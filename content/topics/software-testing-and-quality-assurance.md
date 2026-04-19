@@ -5,12 +5,13 @@ aliases:
 title: 🧪✅ Software Testing and Quality Assurance
 URL: https://bagrounds.org/topics/software-testing-and-quality-assurance
 link_analysis_model: gemini-3.1-flash-lite-preview
-link_analysis_time: 2026-04-03T00:00:00Z
+link_analysis_time: 2026-04-15T00:00:00Z
 force_analyze_links: false
 image_date: 2026-04-10T10:30:21Z
 image_model: "@cf/black-forest-labs/flux-1-schnell"
 image_prompt: "A clean, isometric digital illustration featuring a glowing, translucent 3D cube representing a software application. A robotic mechanical arm, sleek and modern, is carefully inspecting the cube with a magnifying glass lens that emits a soft blue light. Hovering around the cube are glowing holographic icons representing testing processes: a shield for security, a speedometer for performance, a checkmark for acceptance, and a gear for automation. The background is a soft, minimalist gradient of slate blue and white, creating a professional and high-tech atmosphere. The composition is balanced and airy, emphasizing precision, clarity, and the structural integrity of high-quality software engineering."
 updated: 2026-04-11T03:11:38
+link_analysis_version: "2"
 ---
 [Home](../index.md) > [Topics](./index.md) > [Knowledge](./a-hierarchical-view-of-human-knowledge.md) > [Engineering](./engineering.md) > [Software Engineering](./software-engineering.md)  
 # 🧪✅ Software Testing and Quality Assurance  

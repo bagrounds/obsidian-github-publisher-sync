@@ -7,8 +7,9 @@ URL: https://bagrounds.org/articles/architectural-styles-and-the-design-of-netwo
 Author:
 tags:
 link_analysis_model: gemini-3.1-flash-lite-preview
-link_analysis_time: 2026-04-06T00:00:00Z
+link_analysis_time: 2026-04-18T00:00:00Z
 force_analyze_links: false
+link_analysis_version: "2"
 ---
 [Home](../index.md) > [Articles](./index.md)  
 # [🏛️🕸️🧩 Architectural Styles and the Design of Network Based Software Architectures](https://ics.uci.edu/~fielding/pubs/dissertation/top.htm)  

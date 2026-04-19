@@ -5,11 +5,12 @@ aliases:
 title: ➕➖🔢📈📚 Linear Systems Theory
 URL: https://bagrounds.org/topics/linear-systems-theory
 link_analysis_model: gemini-3.1-flash-lite-preview
-link_analysis_time: 2026-04-06T00:00:00Z
+link_analysis_time: 2026-04-17T00:00:00Z
 force_analyze_links: false
 image_date: 2026-04-09T18:28:32Z
 image_model: "@cf/black-forest-labs/flux-1-schnell"
 image_prompt: "A minimalist, high-contrast illustration featuring a clean, glowing grid representing a coordinate plane. Floating above the grid are precise geometric elements: a sharp, perfectly straight diagonal line transitioning into a smooth, elegant sine wave. Interspersed are abstract, translucent 3D shapes like a cube and a sphere, connected by thin, precise vector lines that suggest a network or a control flow. The color palette uses deep navy and charcoal backgrounds with vibrant cyan, magenta, and soft white light for the mathematical elements, creating a sense of technical clarity, stability, and ordered complexity. The composition is balanced and symmetrical, evoking the precision of engineering and the elegance of mathematical theory."
+link_analysis_version: "2"
 ---
 [Home](../index.md) > [Topics](./index.md)  
 # ➕➖🔢📈📚 Linear Systems Theory  

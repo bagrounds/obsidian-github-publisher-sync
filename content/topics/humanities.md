@@ -5,11 +5,12 @@ aliases:
 title: 📚🎭 Humanities
 URL: https://bagrounds.org/topics/humanities
 link_analysis_model: gemini-3.1-flash-lite-preview
-link_analysis_time: 2026-04-01T00:00:00Z
+link_analysis_time: 2026-04-17T00:00:00Z
 force_analyze_links: false
 image_date: 2026-04-09T11:29:38Z
 image_model: "@cf/black-forest-labs/flux-1-schnell"
 image_prompt: "A stylized, isometric composition centered on a glowing, translucent human silhouette. Inside the silhouette, floating icons represent the various humanities: a weathered scroll for history, a classic Greek comedy mask for performing arts, an open book for literature, a quill pen for linguistics, a magnifying glass over a pottery shard for archaeology, and a paint palette for art history. The background is a soft, deep indigo gradient, illuminated by a warm, golden light emanating from the figures core. Surrounding the silhouette are faint, interconnected constellation-like lines that suggest a network of knowledge, connecting the disparate disciplines into a cohesive whole. The aesthetic is clean, intellectual, and inviting, blending classical motifs with a modern, minimalist digital art style."
+link_analysis_version: "2"
 ---
 [Home](../index.md) > [Topics](./index.md) > [Knowledge](./a-hierarchical-view-of-human-knowledge.md)  
 # 📚🎭 Humanities  

@@ -8,11 +8,12 @@ CTA: 🧠 Explore your consciousness.
 affiliate link: https://amzn.to/4r9Ku5c
 updated: 2026-03-25T00:50:25.103Z
 force_analyze_links: false
-link_analysis_time: 2026-03-25T10:18:53.505Z
+link_analysis_time: 2026-04-18T00:00:00Z
 link_analysis_model: gemini-3.1-flash-lite-preview
 image_date: 2026-04-14T09:44:23Z
 image_model: "@cf/black-forest-labs/flux-1-schnell"
 image_prompt: A stylized, translucent silhouette of a human head or brain. Inside, a dynamic, intricate network of glowing lines connects numerous small, diverse abstract shapes. These shapes, representing agents, vary subtly in form and color (e.g., tiny geometric forms, soft blobs, or minimal icons), suggesting different functions. Energy pulses along the connections, illustrating constant interaction and communication. The overall composition creates a sense of emergent complexity and organized activity within the mind. The color scheme features deep blues and purples, accented by vibrant greens and warm, luminous yellows for the network and glowing elements, against a subtly textured, dark background.
+link_analysis_version: "2"
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🧠👥 The Society of Mind  

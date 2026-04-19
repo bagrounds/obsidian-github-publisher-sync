@@ -5,11 +5,12 @@ aliases:
 title: ↔️🔍 Elastic Search
 URL: https://bagrounds.org/software/elastic-search
 link_analysis_model: gemini-3.1-flash-lite-preview
-link_analysis_time: 2026-04-07T00:00:00Z
+link_analysis_time: 2026-04-15T00:00:00Z
 force_analyze_links: false
 image_date: 2026-04-10T18:22:38Z
 image_model: "@cf/black-forest-labs/flux-1-schnell"
 image_prompt: A high-angle, isometric view of a vast, futuristic warehouse interior. Rows of glowing, translucent glass cubes—representing data shards—stretch into the distance. A beam of soft, golden light acts as a scanner, moving across the cubes to illuminate specific segments of data. The atmosphere is clean and high-tech, with a dark navy and cool-toned palette punctuated by vibrant, glowing cyan and amber data streams flowing between the cubes. Floating geometric lines connect the clusters, suggesting a distributed network. The overall aesthetic is minimalist and professional, emphasizing speed, organization, and the vast scale of information processing.
+link_analysis_version: "2"
 ---
 [Home](../index.md) > [Software](./index.md)  
 # ↔️🔍 Elastic Search  

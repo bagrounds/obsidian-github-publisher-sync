@@ -5,11 +5,12 @@ aliases:
 title: 🐍💻🐍 Python
 URL: https://bagrounds.org/software/python
 link_analysis_model: gemini-3.1-flash-lite-preview
-link_analysis_time: 2026-04-06T00:00:00Z
+link_analysis_time: 2026-04-15T00:00:00Z
 force_analyze_links: false
 image_date: 2026-04-11T05:39:16Z
 image_model: "@cf/black-forest-labs/flux-1-schnell"
 image_prompt: A clean, isometric-style illustration featuring a stylized, vibrant blue and yellow geometric snake winding gracefully through a modern, minimalist workspace. The snake is composed of smooth, interconnected modular blocks, symbolizing the language’s versatility and structure. Beside the snake, a glowing, translucent floating terminal window displays elegant, indented code snippets, emphasizing Python’s readability. The background is a soft, deep gradient of navy and teal, with subtle digital elements like floating data nodes and small gear icons surrounding the scene to represent automation and data science. The lighting is soft and cinematic, highlighting the sleek curves of the snake against the clean, technical environment, evoking a sense of both simplicity and powerful, high-level computing.
+link_analysis_version: "2"
 ---
 [Home](../index.md) > [Software](./index.md)  
 # 🐍💻🐍 Python  

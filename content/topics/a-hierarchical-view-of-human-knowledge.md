@@ -5,11 +5,12 @@ aliases:
 title: 🌲🪜🧠 A Hierarchical View of Human Knowledge
 URL: https://bagrounds.org/topics/a-hierarchical-view-of-human-knowledge
 force_analyze_links: false
-link_analysis_time: 2026-03-25T23:13:22.807Z
+link_analysis_time: 2026-04-17T00:00:00Z
 link_analysis_model: gemini-3.1-flash-lite-preview
 image_date: 2026-04-08T17:31:58Z
 image_model: "@cf/black-forest-labs/flux-1-schnell"
 image_prompt: A stylized, isometric illustration of a luminous, multi-tiered structure resembling a glowing tree or a crystalline ladder ascending toward a soft, ethereal light. Each level of the structure branches out into distinct, geometric nodes that represent different disciplines, connected by thin, pulsing threads of light that signify the interconnected nature of knowledge. The color palette transitions from deep, grounded earth tones at the base to vibrant, translucent gradients of gold, azure, and violet at the apex. The background is a clean, dark obsidian, creating a high-contrast aesthetic that makes the intricate, interconnected nodes pop. The overall style is modern and minimalist, blending organic shapes with architectural precision to evoke a sense of intellectual growth and systemic complexity.
+link_analysis_version: "2"
 ---
 [Home](../index.md) > [Topics](./index.md)  
 # 🌲🪜🧠 A Hierarchical View of Human Knowledge  

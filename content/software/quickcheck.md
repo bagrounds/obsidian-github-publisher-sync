@@ -5,11 +5,12 @@ aliases:
 title: 🚄🎲✅ QuickCheck
 URL: https://bagrounds.org/software/quickcheck
 link_analysis_model: gemini-3.1-flash-lite-preview
-link_analysis_time: 2026-04-06T00:00:00Z
+link_analysis_time: 2026-04-15T00:00:00Z
 force_analyze_links: false
 image_date: 2026-04-11T06:29:24Z
 image_model: "@cf/black-forest-labs/flux-1-schnell"
 image_prompt: "A clean, minimalist isometric illustration featuring a sleek, glowing robotic arm meticulously testing a complex mechanical puzzle box. The arm is surrounded by a cloud of floating, abstract geometric shapes—cubes, spheres, and pyramids—representing diverse, randomized test inputs. A beam of light scans the box, highlighting a single, small, glowing fault point being isolated and shrunk down to a precise, singular dot by a digital magnifying lens. The color palette uses a professional tech aesthetic: deep navy and slate grey backgrounds contrasted with vibrant neon cyan and emerald green accents to symbolize precision, logic, and successful verification. The overall composition is balanced and clean, emphasizing themes of automation, structural integrity, and the systematic discovery of edge cases."
+link_analysis_version: "2"
 ---
 [Home](../index.md) > [Software](./index.md)  
 # 🚄🎲✅ QuickCheck  

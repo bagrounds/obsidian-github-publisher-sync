@@ -5,11 +5,12 @@ aliases:
 title: 🌐🔓💻 Open WebUI
 URL: https://bagrounds.org/software/open-webui
 link_analysis_model: gemini-3.1-flash-lite-preview
-link_analysis_time: 2026-04-07T00:00:00Z
+link_analysis_time: 2026-04-15T00:00:00Z
 force_analyze_links: false
 image_date: 2026-04-11T03:09:25Z
 image_model: "@cf/black-forest-labs/flux-1-schnell"
 image_prompt: A sleek, minimalist illustration featuring a glowing, translucent central hub node connected to various abstract digital icons—such as gears, chat bubbles, and code brackets—representing diverse LLM backends. The aesthetic is clean and modern, using a sophisticated color palette of deep navy, electric blue, and soft white. The central hub radiates subtle light, suggesting a command center or orchestration layer. The background is a clean, dark gradient, emphasizing the connectivity and modular nature of the interface. The overall composition is symmetrical and professional, conveying a sense of technical precision, accessibility, and open-source innovation.
+link_analysis_version: "2"
 ---
 [Home](../index.md) > [Software](./index.md)  
 # 🌐🔓💻 Open WebUI  

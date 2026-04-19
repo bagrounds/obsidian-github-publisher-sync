@@ -5,11 +5,12 @@ aliases:
 title: 🧮💻 Functional Languages
 URL: https://bagrounds.org/topics/functional-languages
 link_analysis_model: gemini-3.1-flash-lite-preview
-link_analysis_time: 2026-04-05T00:00:00Z
+link_analysis_time: 2026-04-17T00:00:00Z
 force_analyze_links: false
 image_date: 2026-04-09T10:30:46Z
 image_model: "@cf/black-forest-labs/flux-1-schnell"
 image_prompt: A stylized, top-down view of a clean, minimalist workspace. On a matte wooden desk, a single, glowing glass prism sits in the center. Light enters the prism as a single, clear beam and refracts into a spectrum of vibrant, geometric shapes—circles, triangles, and squares—floating in the air. Surrounding the prism are subtle, floating mathematical symbols like the lambda symbol (λ) and elegant, interconnected nodes representing data flow. The color palette is composed of deep indigo, soft slate, and electric cyan, emphasizing a sense of logical clarity and architectural beauty. The lighting is soft and ambient, casting gentle shadows that suggest depth and precision, evoking the mathematical elegance of functional programming.
+link_analysis_version: "2"
 ---
 [Home](../index.md) > [Topics](./index.md)  
 # 🧮💻 Functional Languages  

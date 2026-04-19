@@ -5,12 +5,13 @@ aliases:
 title: 🏗️🔧 Engineering
 URL: https://bagrounds.org/topics/engineering
 link_analysis_model: gemini-3.1-flash-lite-preview
-link_analysis_time: 2026-04-01T00:00:00Z
+link_analysis_time: 2026-04-17T00:00:00Z
 force_analyze_links: false
 image_date: 2026-04-09T07:40:50Z
 image_model: "@cf/black-forest-labs/flux-1-schnell"
 image_prompt: "A stylized, isometric illustration of a floating, interconnected workshop. The scene features a central blueprint glowing with golden lines, surrounded by diverse engineering elements: a miniature steel bridge, a complex clockwork gear assembly, a sleek drone hovering near a microchip, and a glass beaker bubbling with iridescent liquid. In the background, a subtle, ethereal structure of a skyscraper and a wind turbine rises from a foundation of geometric shapes. The color palette uses a sophisticated blend of deep navy, slate gray, and vibrant copper accents to suggest both industrial strength and modern innovation. Soft, ambient lighting highlights the metallic textures and precision of the tools, creating a sense of depth, curiosity, and boundless creative potential."
 updated: 2026-04-09T07:43:03
+link_analysis_version: "2"
 ---
 [Home](../index.md) > [Topics](./index.md) > [Knowledge](./a-hierarchical-view-of-human-knowledge.md)  
 # 🏗️🔧 Engineering  

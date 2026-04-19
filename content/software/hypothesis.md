@@ -5,11 +5,12 @@ aliases:
 title: ❓🧪✅🤔 Hypothesis
 URL: https://bagrounds.org/software/hypothesis
 link_analysis_model: gemini-3.1-flash-lite-preview
-link_analysis_time: 2026-04-06T00:00:00Z
+link_analysis_time: 2026-04-15T00:00:00Z
 force_analyze_links: false
 image_date: 2026-04-11T00:26:01Z
 image_model: "@cf/black-forest-labs/flux-1-schnell"
 image_prompt: A high-angle, minimalist illustration featuring a clean, white laboratory table. On the table, a glowing, translucent glass prism acts as a central hub. Numerous colorful, geometric shapes—such as spheres, cubes, and pyramids—are emerging from one side of the prism in a steady, organized flow, representing generated test data. On the other side, a single, tiny, jagged bug icon is being isolated and magnified under a sleek, modern magnifying glass. The background is a soft, deep gradient of navy blue to slate, suggesting a professional software environment. The lighting is crisp and clinical, emphasizing precision, structure, and the automated discovery of hidden errors.
+link_analysis_version: "2"
 ---
 [Home](../index.md) > [Software](./index.md)  
 # ❓🧪✅🤔 Hypothesis  

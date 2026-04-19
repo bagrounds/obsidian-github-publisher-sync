@@ -5,12 +5,13 @@ aliases:
 title: 🧪🔬🔭 Science
 URL: https://bagrounds.org/topics/science
 link_analysis_model: gemini-3.1-flash-lite-preview
-link_analysis_time: 2026-04-01T00:00:00Z
+link_analysis_time: 2026-04-15T00:00:00Z
 force_analyze_links: false
 image_date: 2026-04-10T07:37:56Z
 image_model: "@cf/black-forest-labs/flux-1-schnell"
 image_prompt: "A high-angle, cinematic composition featuring a glowing, translucent glass prism centered on a dark, polished obsidian surface. A single beam of white light enters the prism, refracting into a vibrant, sharp spectrum of colors that stretch across the frame. Surrounding the prism are floating, interconnected scientific icons rendered in a minimalist, metallic style: a delicate double helix, a stylized atom with glowing orbital rings, a classic brass telescope pointed toward a faint nebula, and a simple glass beaker bubbling with subtle luminescence. The background is a deep, velvety navy blue, speckled with soft, out-of-focus light points resembling distant stars or dust motes. The overall aesthetic is clean, modern, and intellectual, utilizing a cool color palette with high-contrast highlights to emphasize the beauty of discovery and the interconnected nature of the scientific disciplines."
 updated: 2026-04-10T07:40:07
+link_analysis_version: "2"
 ---
 [Home](../index.md) > [Topics](./index.md) > [Knowledge](./a-hierarchical-view-of-human-knowledge.md)  
 # 🧪🔬🔭 Science  

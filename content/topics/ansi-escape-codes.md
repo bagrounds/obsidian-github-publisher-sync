@@ -5,11 +5,12 @@ aliases:
 title: 💻🎨⚙️ ANSI escape codes
 URL: https://bagrounds.org/topics/ansi-escape-codes
 link_analysis_model: gemini-3.1-flash-lite-preview
-link_analysis_time: 2026-04-06T00:00:00Z
+link_analysis_time: 2026-04-15T00:00:00Z
 force_analyze_links: false
 image_date: 2026-04-08T19:39:49Z
 image_model: "@cf/black-forest-labs/flux-1-schnell"
 image_prompt: A dark, high-contrast terminal screen filled with a cascading waterfall of glowing neon code. Amidst the monochromatic white text, vibrant splashes of cyan, magenta, yellow, and green characters pop out, representing active ANSI color sequences. A stylized, glowing cursor block sits prominently in the center, pulsing with a soft light. The visual style is reminiscent of 1980s retro-futuristic computing, with a slight digital glitch effect at the edges. The composition emphasizes the contrast between the rigid, orderly grid of the terminal and the fluid, colorful energy of the escape codes breathing life into the static text.
+link_analysis_version: "2"
 ---
 [Home](../index.md) > [Topics](./index.md)  
 # 💻🎨⚙️ ANSI escape codes  

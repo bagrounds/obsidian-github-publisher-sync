@@ -11,6 +11,7 @@ image_date: 2026-04-11T20:15:19Z
 image_model: "@cf/black-forest-labs/flux-1-schnell"
 image_prompt: A stylized, isometric illustration featuring a glowing, translucent brain-like structure seamlessly integrated into a geometric, modular office building. The building is constructed from interlocking puzzle pieces of varying colors, representing Bounded Contexts. Fine, golden lines of light pulse through the structure, connecting the puzzle segments to the central AI core. Surrounding the building are abstract, floating icons representing data nodes, gears, and speech bubbles, all aligning into a singular, harmonious flow. The color palette is a professional blend of deep navy, clean white, and vibrant accent colors like teal and amber, conveying both technical sophistication and architectural precision. The overall aesthetic is clean, modern, and minimalist, emphasizing the fusion of complex software logic and artificial intelligence.
 link_analysis_version: "2"
+updated: 2026-04-19T07:42:19
 ---
 [Home](../index.md) > [Bot Chats](./index.md)  
 # 🧩🏢🤖 Domain Driven AI Product Development  
@@ -115,4 +116,12 @@ link_analysis_version: "2"
   
 4. **[🧑‍🤝‍🧑⚙️➡️ Team Topologies: Organizing Business and Technology Teams for Fast Flow](../books/team-topologies-organizing-business-and-technology-teams-for-fast-flow.md)** **by Matthew Skelton and Manuel Pais:** This book is excellent for understanding how to structure teams around Bounded Contexts, especially when integrating new AI capabilities into existing organizational structures, promoting efficient collaboration between domain experts and AI engineers.  
   
-5. **_Clean Architecture: A Craftsman's Guide to Software Structure and Design_** **by Robert C. Martin:** Provides principles for separating concerns and organizing software layers, which supports the DDD principle of keeping the domain model clean and independent of external concerns, including AI models and infrastructure.
+5. **_Clean Architecture: A Craftsman's Guide to Software Structure and Design_** **by Robert C. Martin:** Provides principles for separating concerns and organizing software layers, which supports the DDD principle of keeping the domain model clean and independent of external concerns, including AI models and infrastructure.  
+  
+## 🦋 Bluesky    
+<blockquote class="bluesky-embed" data-bluesky-uri="at://did:plc:i4yli6h7x2uoj7acxunww2fc/app.bsky.feed.post/3mjthemcfxt2j" data-bluesky-cid="bafyreibdsi4aj4tg7ekpbh7t7zo5bhlyzqu4u7snigfux6br5ez3d24fy4"><p>🧩🏢🤖 Domain Driven AI Product Development  
+  
+#AI Q: 🧩 Should AI development prioritize technical accuracy or deep alignment with business language?  
+  
+🤖 AI Alignment | 🧩 Domain Modeling | 🗣️ Ubiquitous Language | 📚 Software Design  
+https://bagrounds.org/bot-chats/domain-driven-ai-product-development</p>&mdash; <a href="https://bsky.app/profile/did:plc:i4yli6h7x2uoj7acxunww2fc?ref_src=embed">Bryan Grounds (@bagrounds.bsky.social)</a> <a href="https://bsky.app/profile/did:plc:i4yli6h7x2uoj7acxunww2fc/post/3mjthemcfxt2j?ref_src=embed">2026-04-19T07:43:05.000Z</a></blockquote><script async src="https://embed.bsky.app/static/embed.js" charset="utf-8"></script>

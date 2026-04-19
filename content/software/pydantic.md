@@ -5,11 +5,12 @@ aliases:
 title: 🐍📜🔍✅ Pydantic
 URL: https://bagrounds.org/software/pydantic
 link_analysis_model: gemini-3.1-flash-lite-preview
-link_analysis_time: 2026-04-06T00:00:00Z
+link_analysis_time: 2026-04-15T00:00:00Z
 force_analyze_links: false
 image_date: 2026-04-11T04:47:35Z
 image_model: "@cf/black-forest-labs/flux-1-schnell"
 image_prompt: A stylized, minimalist illustration featuring a clean, isometric workspace. On a sleek desk sits a translucent, glowing glass box acting as a container. Various geometric shapes—spheres, cubes, and pyramids—are being sorted into the box by a glowing, semi-transparent digital filter. The shapes that fit perfectly are illuminated in a vibrant, crisp green, while a stray, misshapen piece is being nudged away by a soft, warm light. The background is a deep, professional navy blue with subtle, faint white grid lines suggesting a technical architecture. The overall aesthetic is modern, high-tech, and precise, emphasizing the concept of data integrity and structured organization through Pythonic type-hinting.
+link_analysis_version: "2"
 ---
 [Home](../index.md) > [Software](./index.md)  
 # 🐍📜🔍✅ Pydantic  

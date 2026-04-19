@@ -5,11 +5,12 @@ aliases:
 title: 🌐🧱🖥️🎮 Babylon.js
 URL: https://bagrounds.org/software/babylon
 link_analysis_model: gemini-3.1-flash-lite-preview
-link_analysis_time: 2026-04-06T00:00:00Z
+link_analysis_time: 2026-04-15T00:00:00Z
 force_analyze_links: false
 image_date: 2026-04-10T16:25:02Z
 image_model: "@cf/black-forest-labs/flux-1-schnell"
 image_prompt: A vibrant, isometric digital landscape floating in a dark, minimalist void. The scene features a collection of semi-transparent, glowing 3D geometric shapes—cubes, spheres, and pyramids—interconnected by thin, luminous lines of code that weave through the air like fiber-optic cables. A stylized, low-poly astronaut figure stands on a floating platform, reaching toward a holographic interface that displays a complex 3D wireframe mesh. The color palette centers on electric blues, deep violets, and warm cyan highlights, evoking a sense of high-performance web technology and immersive virtual space. The lighting is soft and ambient, casting subtle glows on the surfaces of the shapes to emphasize depth and modern rendering capabilities.
+link_analysis_version: "2"
 ---
 [Home](../index.md) > [Software](./index.md)  
 # 🌐🧱🖥️🎮 Babylon.js  

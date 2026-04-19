@@ -6,8 +6,9 @@ URL: https://bagrounds.org/books/trump-and-hitler-a-comparative-study-in-lying
 share: true
 affiliate link: https://amzn.to/4dQ2o6S
 link_analysis_model: gemini-3.1-flash-lite-preview
-link_analysis_time: 2026-04-06T00:00:00Z
+link_analysis_time: 2026-04-19T00:00:00Z
 force_analyze_links: false
+link_analysis_version: "2"
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🇺🇸🇩🇪🤥📣 Trump and Hitler: A Comparative Study in Lying  
@@ -44,7 +45,7 @@ By demystifying these figures and analyzing their techniques, the book aims to s
 * 📢 **Battling the Big Lie: How Fox, Facebook, and the MAGA Media Are Destroying Democracy** by Dan Pfeiffer. Focuses on the modern right-wing media machine and its use of disinformation, offering insights into the mechanisms behind political lying and propaganda in the Trump era.  
 * ✍️ **When Words Trump Politics: Language and the New American Populism** by Adam Hodges. Analyzes the linguistic techniques and rhetorical strategies employed in Trumpian discourse and its interaction with media.  
 * 🏛️ **On Lying and Politics** by Hannah Arendt. A classic philosophical examination of truth and falsehood in the political realm, providing a foundational context for understanding political deception across different periods.  
-* 📣 **Propaganda** by Edward Bernays. An seminal work on the techniques and psychology of propaganda, highly relevant to understanding how political messages are shaped and disseminated to influence public opinion.  
+* 📣 **[📢 Propaganda](./propaganda.md)** by Edward Bernays. An seminal work on the techniques and psychology of propaganda, highly relevant to understanding how political messages are shaped and disseminated to influence public opinion.  
   
 ### ⚖️ Contrasting Reads (Individual Focus, Democratic Theory)  
   

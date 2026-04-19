@@ -12,6 +12,7 @@ module Automation.DailyReflection
   , findFirstSectionIndex
   , embedSectionHeaders
   , changesLinkPrefix
+  , changesLink
   ) where
 
 import Control.Monad (when)
@@ -36,7 +37,10 @@ embedSectionHeaders :: [Text]
 embedSectionHeaders = [Twitter.sectionHeader, Bluesky.sectionHeader, Mastodon.sectionHeader]
 
 changesLinkPrefix :: Text
-changesLinkPrefix = "[[changes/"
+changesLinkPrefix = "## [[changes/"
+
+changesLink :: Text -> Text
+changesLink date = "## " <> formatWikilink ("changes/" <> date) "\128260 Changes"
 
 trailingSectionHeaders :: [Text]
 trailingSectionHeaders = updatesSectionHeader : changesLinkPrefix : embedSectionHeaders
@@ -71,7 +75,7 @@ buildReflectionContent date previousDate =
     , formatWikilink "index" "Home" <> " > " <> directoryIndexLink Reflections <> backLink
     , "# " <> date
     , ""
-    , "## " <> formatWikilink ("changes/" <> date) "🔄 Changes"
+    , changesLink date
     , ""
     ]
 

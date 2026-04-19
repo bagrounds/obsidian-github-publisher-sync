@@ -25,7 +25,7 @@ import System.Directory (createDirectoryIfMissing, doesDirectoryExist, doesFileE
 import System.FilePath ((</>), dropExtension, takeBaseName)
 import Text.Read (readMaybe)
 
-import Automation.DailyReflection (ensureDailyReflection, EnsureReflectionResult (..), findFirstSectionIndex, embedSectionHeaders, changesLinkPrefix)
+import Automation.DailyReflection (ensureDailyReflection, EnsureReflectionResult (..), findFirstSectionIndex, embedSectionHeaders, changesLinkPrefix, changesLink)
 import Automation.Frontmatter (parseFrontmatter, quoteYamlValue)
 import Automation.PacificTime (formatDay)
 import Automation.Platform (Platform (..), updatesSectionHeader)
@@ -517,9 +517,6 @@ ensureChangesPage changesDir date = do
           let updated = addChangesForwardLink prevContent dateText
           when (updated /= prevContent) $
             TIO.writeFile prevPath updated
-
-changesLink :: Text -> Text
-changesLink dateText = "## " <> formatWikilink ("changes/" <> dateText) "\128260 Changes"
 
 ensureChangesLinkInReflection :: FilePath -> Text -> IO ()
 ensureChangesLinkInReflection reflectionPath dateText = do

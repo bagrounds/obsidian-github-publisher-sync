@@ -102,9 +102,9 @@ SORT file.name DESC
 
 ## 🪞 Reflection Integration
 
-🔗 Every new reflection page includes a changes link as an H2 heading at the very bottom of the template.
+🔗 Every new reflection page includes a changes link as an H2 heading at the very bottom of the template, via the shared `changesLink` function defined in `DailyReflection`.
 📌 For existing reflections (created before this feature), the changes link is added automatically as an H2 heading when updates are first written for that date.
-📐 The changes link prefix is included in `trailingSectionHeaders`, so blog series sections and social embeds are always placed above it.
+📐 The changes link prefix (`"## [[changes/"`) is included in `trailingSectionHeaders`, so blog series sections and social embeds are always placed above it. The prefix includes the H2 marker to ensure section insertion never splits the heading from the link.
 
 ## 🏷️ Update Detail Types
 
@@ -240,3 +240,4 @@ URL: "https://bagrounds.org/changes/2026-03-28"
 🔬 Tests in `haskell/test/Automation/DailyReflectionTest.hs` covering:
 - 🔗 Changes link included in new reflection template
 - 📍 Changes link positioned after heading
+- 🧩 Inserting a section before the changes link preserves the H2 heading

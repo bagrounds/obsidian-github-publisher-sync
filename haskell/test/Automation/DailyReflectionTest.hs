@@ -194,6 +194,17 @@ insertPostLinkTests = testGroup "insertPostLink"
       let content = "# 2026-04-01\n\nBody text"
           result = insertPostLink content sampleSeries "post" (testTitle "Post") Nothing
       in assertBool "contains post link" (T.isInfixOf "[[auto-blog-zero/post|Post]]" result)
+  , testCase "inserts new section before changes link without splitting H2" $
+      let content = "# 2026-04-01\n\nBody\n\n## [[changes/2026-04-01|\128260 Changes]]\n"
+          result = insertPostLink content sampleSeries "post" (testTitle "Post") Nothing
+      in do
+        assertBool "changes link retains H2 prefix" (T.isInfixOf "## [[changes/2026-04-01|" result)
+        assertBool "no orphaned H2" (not $ T.isInfixOf "\n##\n" result)
+        assertBool "no orphaned H2 at line end" (not $ T.isInfixOf "\n## \n" result)
+        assertBool "section before changes link" $
+          let sIdx = T.length $ fst $ T.breakOn (buildSeriesSectionHeading sampleSeries) result
+              cIdx = T.length $ fst $ T.breakOn "## [[changes/" result
+          in sIdx < cIdx
   ]
 
 --------------------------------------------------------------------------------

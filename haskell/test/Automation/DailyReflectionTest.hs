@@ -11,6 +11,7 @@ import Data.Time.LocalTime (TimeOfDay (..))
 import Automation.AiBlogLinks (aiBlogConfig)
 import Automation.BlogSeriesConfig (BlogSeriesConfig (..))
 import Automation.DailyReflection
+import Automation.PacificTime (formatDay)
 import Automation.TestGenerators (testTitle)
 
 tests :: TestTree
@@ -271,7 +272,7 @@ propertyTests = testGroup "properties"
       \year month dayNum ->
         let day = fromGregorian year (abs month `mod` 12 + 1) (abs dayNum `mod` 28 + 1)
             result = buildReflectionContent day Nothing
-        in T.isInfixOf (T.pack $ show year) result
+        in T.isInfixOf (formatDay day) result
   , testProperty "addForwardLink is idempotent" $
       \(QC.ASCIIString dateStr) ->
         let date = T.pack dateStr

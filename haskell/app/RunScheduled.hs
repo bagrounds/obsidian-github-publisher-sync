@@ -376,7 +376,7 @@ runBackfillImages context contentDirs = do
   let todayLinks = filter (\(_, _, dateText) -> dateText <= todayText) aiBlogLinks
   mapM_ (\(relPath, title, dateText) -> do
     case parseTimeM True defaultTimeLocale "%Y-%m-%d" (T.unpack dateText) of
-      Nothing -> logMsg $ "  ⚠️  Skipping AI blog link with unparseable date: " <> dateText
+      Nothing -> logMsg $ "  ⚠️  Skipping AI blog link with unparseable date (expected YYYY-MM-DD): " <> dateText
       Just day -> do
         let filename = T.drop (T.length "ai-blog/") relPath
         result <- updateDailyReflection vaultDir day aiBlogConfig filename title Nothing

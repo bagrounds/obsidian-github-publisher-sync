@@ -8,8 +8,9 @@ Author:
 tags:
 affiliate link: https://amzn.to/4kRG3bD
 link_analysis_model: gemini-3.1-flash-lite-preview
-link_analysis_time: 2026-04-03T00:00:00Z
+link_analysis_time: 2026-04-18T00:00:00Z
 force_analyze_links: false
+link_analysis_version: "2"
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🤯 Mindf\*ck: Cambridge Analytica and the Plot to Break America  

@@ -519,7 +519,7 @@ ensureChangesPage changesDir date = do
             TIO.writeFile prevPath updated
 
 changesLink :: Text -> Text
-changesLink dateText = formatWikilink ("changes/" <> dateText) "\128260 Changes"
+changesLink dateText = "## " <> formatWikilink ("changes/" <> dateText) "\128260 Changes"
 
 ensureChangesLinkInReflection :: FilePath -> Text -> IO ()
 ensureChangesLinkInReflection reflectionPath dateText = do

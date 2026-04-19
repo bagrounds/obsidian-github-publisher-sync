@@ -115,9 +115,9 @@ buildAnalyticsSection report =
         [] -> []
         pages ->
           [ ""
-          , "### 🏆 Top Pages"
+          , "### 🏆 Top Pages Today"
           , ""
-          , "| 👁️ | 📄 Page |"
+          , "| 👁️ Views | 📄 Page |"
           , "|---:|:---|"
           ] <> fmap formatPageRow pages
   in T.intercalate "\n" (summaryLines <> topPagesLines)

@@ -102,8 +102,8 @@ SORT file.name DESC
 
 ## 🪞 Reflection Integration
 
-🔗 Every new reflection page includes a changes link at the very bottom of the template.
-📌 For existing reflections (created before this feature), the changes link is added automatically when updates are first written for that date.
+🔗 Every new reflection page includes a changes link as an H2 heading at the very bottom of the template.
+📌 For existing reflections (created before this feature), the changes link is added automatically as an H2 heading when updates are first written for that date.
 📐 The changes link prefix is included in `trailingSectionHeaders`, so blog series sections and social embeds are always placed above it.
 
 ## 🏷️ Update Detail Types

@@ -68,11 +68,11 @@ buildReflectionContentTests = testGroup "buildReflectionContent"
       in assertBool "contains Author" (T.isInfixOf "Author:" result)
   , testCase "includes changes link at the bottom" $
       let result = buildReflectionContent "2026-04-01" Nothing
-      in assertBool "contains changes link" (T.isInfixOf "[[changes/2026-04-01|\128260 Changes]]" result)
+      in assertBool "contains changes link" (T.isInfixOf "## [[changes/2026-04-01|\128260 Changes]]" result)
   , testCase "changes link is after heading" $
       let result = buildReflectionContent "2026-04-01" Nothing
           headingIdx = T.length $ fst $ T.breakOn "# 2026-04-01" result
-          changesIdx = T.length $ fst $ T.breakOn "[[changes/2026-04-01|\128260 Changes]]" result
+          changesIdx = T.length $ fst $ T.breakOn "## [[changes/2026-04-01|\128260 Changes]]" result
       in assertBool "changes link after heading" (changesIdx > headingIdx)
   ]
 

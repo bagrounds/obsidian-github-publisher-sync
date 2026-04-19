@@ -71,7 +71,7 @@ buildReflectionContent date previousDate =
     , formatWikilink "index" "Home" <> " > " <> directoryIndexLink Reflections <> backLink
     , "# " <> date
     , ""
-    , formatWikilink ("changes/" <> date) "🔄 Changes"
+    , "## " <> formatWikilink ("changes/" <> date) "🔄 Changes"
     , ""
     ]
 

@@ -91,9 +91,9 @@ The daily analytics section includes yesterday's metrics:
 
 We chose these five metrics because they tell a complete story: how much content was consumed (page views), how many people visited (visitors), whether those visits were meaningful (bounce rate, pages per session), and how long people stayed (avg session). Sessions and new users were removed because sessions largely duplicates visitors for a daily view, and new-versus-returning is less actionable on a daily basis.
 
-### 🏆 Top Pages
+### 🏆 Top Pages Today
 
-When available, the top 5 pages by page views are displayed in a markdown table with views in the first column (right-aligned) and the page as a wikilink in the second column. Each page path is resolved against the vault to extract the note title for use as the wikilink alias. When a note file does not exist for a given path, the raw URL path is used as the alias instead. Pipe characters in titles are escaped with backslash for table compatibility.
+When available, the top 5 pages by page views are displayed in a markdown table with views in the first column (right-aligned, headed with 👁️ Views) and the page as a wikilink in the second column. Each page path is resolved against the vault to extract the note title for use as the wikilink alias. When a note file does not exist for a given path, the raw URL path is used as the alias instead. Pipe characters in titles are escaped with backslash for table compatibility.
 
 ### 📄 Example Output
 
@@ -106,9 +106,9 @@ When available, the top 5 pages by page views are displayed in a markdown table 
 - 📖 Pages per Session: 2.3
 - ⏱️ Avg Session: 1m 50s
 
-### 🏆 Top Pages
+### 🏆 Top Pages Today
 
-| 👁️ | 📄 Page |
+| 👁️ Views | 📄 Page |
 |---:|:---|
 | 40 | [[reflections/2026-04-17\|2026-04-17 \| 🎵 Rhythm of the Day 🤖]] |
 | 36 | [[index\|🏡 Home]] |

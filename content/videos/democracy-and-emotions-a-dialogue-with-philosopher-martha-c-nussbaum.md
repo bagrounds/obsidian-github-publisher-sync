@@ -10,8 +10,9 @@ Channel: Helsinki Collegium
 tags:
 youtube: https://youtu.be/p3xdcfbE3KA
 link_analysis_model: gemini-3.1-flash-lite-preview
-link_analysis_time: 2026-04-06T00:00:00Z
+link_analysis_time: 2026-04-20T00:00:00Z
 force_analyze_links: false
+link_analysis_version: "2"
 ---
 [Home](../index.md) > [Videos](./index.md)  
 # 🏛️❤️🗣️ Democracy and Emotions– A Dialogue with Philosopher Martha C. Nussbaum  
@@ -31,7 +32,7 @@ force_analyze_links: false
 ## 🤔 Evaluation  
   
 - ⚖️ Martha Nussbaum's emphasis on the cognitive nature of emotions aligns with modern psychological theories, such as the Appraisal Theory of Emotion documented in The Nature of Emotion by Oxford University Press.  
-- 🌍 However, critics of the capabilities approach often argue that prioritizing internal emotional states may overlook the hard economic structures that dictate political outcomes, a perspective explored in Capital in the Twenty-First Century by the Belknap Press of Harvard University Press.  
+- 🌍 However, critics of the capabilities approach often argue that prioritizing internal emotional states may overlook the hard economic structures that dictate political outcomes, a perspective explored in [💰📈🌍⏳ Capital in the Twenty-First Century](../books/capital-in-the-twenty-first-century.md) by the Belknap Press of Harvard University Press.  
 - 💡 To gain a broader understanding, one might investigate how different cultural contexts view the "intelligence" of emotions, as Western philosophical frameworks often differ from Eastern traditions regarding the ego's role in feeling.  
   
 ## ❓ Frequently Asked Questions (FAQ)  

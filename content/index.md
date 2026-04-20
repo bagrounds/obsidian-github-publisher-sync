@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-04-20T08:22:33-07:00
+updated: 2026-04-20T13:06:42-07:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -28,11 +28,11 @@ updated: 2026-04-20T08:22:33-07:00
 - [2026-04-18 | 🔗 Changes Link and Analytics Clarity 🤖](./ai-blog/2026-04-18-3-changes-link-and-analytics-clarity.md)  
   
   
-## [🤖 Auto Blog Zero](./auto-blog-zero/index.md) (40)  
+## [🤖 Auto Blog Zero](./auto-blog-zero/index.md) (41)  
+- [2026-04-20 | 🤖 The Ethics of the Adversarial Machine 🤖](./auto-blog-zero/2026-04-20-the-ethics-of-the-adversarial-machine.md)  
 - [2026-04-19 | 🤖 📆 Weekly Recap: The Architecture of Adversarial Verification 🤖](./auto-blog-zero/2026-04-19-weekly-recap-the-architecture-of-adversarial-verification.md)  
 - [2026-04-18 | 🤖 🧱 The Architecture of Adversarial Verification 🤖](./auto-blog-zero/2026-04-18-the-architecture-of-adversarial-verification.md)  
 - [2026-04-17 | 🤖 The Recursive Mirror 🤖](./auto-blog-zero/2026-04-17-the-recursive-mirror.md)  
-- [2026-04-16 | 🤖 The Transparency Tax and the Cognitive Mirror 🤖](./auto-blog-zero/2026-04-16-the-transparency-tax-and-the-cognitive-mirror.md)  
   
   
 ## [🐔 Chickie Loo](./chickie-loo/index.md) (41)  
@@ -42,11 +42,11 @@ updated: 2026-04-20T08:22:33-07:00
 - [2026-04-17 | 🐔 🖼️ A Morning Like a Rockwell Painting 🐔](./chickie-loo/2026-04-17-a-morning-like-a-rockwell-painting.md)  
   
   
-## [🏛️ Systems for Public Good](./systems-for-public-good/index.md) (29)  
+## [🏛️ Systems for Public Good](./systems-for-public-good/index.md) (30)  
+- [2026-04-20 | 🏛️ The Interconnected Web of Well-being 🏛️](./systems-for-public-good/2026-04-20-the-interconnected-web-of-well-being.md)  
 - [2026-04-19 | 🏛️ 🗺️ Navigating Our Collective Well-being: A Week of Foundational Investments 🏛️](./systems-for-public-good/2026-04-19-navigating-our-collective-well-being-a-week-of-foundational-investments.md)  
 - [2026-04-18 | 🏛️ 🌐 The Digital Lifeline: Universal Broadband as a Public Good 🏛️](./systems-for-public-good/2026-04-18-the-digital-lifeline-universal-broadband-as-a-public-good.md)  
 - [2026-04-17 | 🏛️ Education as Reciprocity: Learning, Teaching, and Serving 🏛️](./systems-for-public-good/2026-04-17-education-as-reciprocity-learning-teaching-and-serving.md)  
-- [2026-04-16 | 🏛️ 🚌 The Pathways to Opportunity: Public Transit as a Liberator 🏛️](./systems-for-public-good/2026-04-16-the-pathways-to-opportunity-public-transit-as-a-liberator.md)  
   
   
 ## [📰 The Noise](./the-noise/index.md) (11)  
@@ -71,17 +71,17 @@ updated: 2026-04-20T08:22:33-07:00
   
   
 ## [📚 Books](./books/index.md) (960)  
-- [🧠⚙️🐒💡 Executive Functions: What They Are, How They Work, and Why They Evolved](./books/executive-functions.md)  
-- [🧠🧩📈🧑‍🏫 Smart but Scattered: The Revolutionary Executive Skills Approach to Helping Kids Reach Their Potential](./books/smart-but-scattered.md)  
-- [🇮🇱⏳ The Hundred Years' War on Palestine: A History of Settler Colonialism and Resistance, 1917–2017](./books/the-hundred-years-war-on-palestine-a-history-of-settler-colonialism-and-resistance-1917-2017.md)  
-- [⚛️ℹ️👶 Quantum Information for Babies](./books/quantum-information-for-babies.md)  
+- [🏛️⚖️ On the Rule of Law: History, Politics, Theory](./books/on-the-rule-of-law-history-politics-theory.md)  
+- [⚠️🏛️👹🇺🇸 The Most Dangerous Branch: Inside the Supreme Court in the Age of Trump](./books/the-most-dangerous-branch-inside-the-supreme-court-in-the-age-of-trump.md)  
+- [🧠🔌 The Thinking Machine: Jensen Huang, Nvidia, and the World's Most Coveted Microchip](./books/the-thinking-machine-jensen-huang-nvidia-and-the-worlds-most-coveted-microchip.md)  
+- [👻🔗 In the Realm of Hungry Ghosts: Close Encounters with Addiction](./books/in-the-realm-of-hungry-ghosts-close-encounters-with-addiction.md)  
   
   
 ## [📺 Videos](./videos/index.md) (774)  
-- [🏛️🔨🗑️ Brooks and Atkins Stohr on the East Wing demolition](./videos/brooks-and-atkins-stohr-on-the-east-wing-demolition.md)  
-- [🌍🌱🛠️🌳 Unit 6: Tree Planting and Care- Planting Preparation](./videos/unit-6-tree-planting-and-care-planting-preparation.md)  
-- [🌳🚿🪴 Unit 6: Tree Planting and Care- Root Washing](./videos/unit-6-tree-planting-and-care-root-washing.md)  
-- [🔬⬇️🌿🔗💧⚙️💻 Characterizing Root-zone and Plant Integrated Hydraulic Systems Based on... TREE Fund Webinar Series](./videos/characterizing-root-zone-and-plant-integrated-hydraulic-systems-based-on-tree-fund-webinar-series.md)  
+- [Schiff Sends Message Directly to Trump in Surprise Hearing](./videos/schiff-sends-message-directly-to-trump-in-surprise-hearing.md)  
+- [🏛️👔😡💸 Whitehouse and Murphy Dress Down Republican Tax «Thievery» in Colloquy on Senate Floor](./videos/whitehouse-and-murphy-dress-down-republican-tax-thievery-in-colloquy-on-senate-floor.md)  
+- [🎤✨🗣️ TED's secret to great public speaking | Chris Anderson | TED](./videos/teds-secret-to-great-public-speaking-chris-anderson-ted.md)  
+- [💰➡️🌍📉 Lecture 03: Externalities in Theory & Practice](./videos/lecture-03-externalities-in-theory-practice.md)  
   
   
 ## [🌌 Topics](./topics/index.md) (91)  
@@ -92,10 +92,10 @@ updated: 2026-04-20T08:22:33-07:00
   
   
 ## [📄  Articles](./articles/index.md) (84)  
+- [🤱😴👶 Safe Sleep for Breastfeeding Babies](./articles/safe-sleep-for-breastfeeding-babies.md)  
+- [🪵 The Log: What every software engineer should know about real-time data's unifying abstraction](./articles/the-log-what-every-software%20engineer-should-know-about-real-time-datas-unifying-abstraction.md)  
+- [🧑‍💻🤖🤝 How Anthropic Teams Use Claude Code](./articles/how-anthropic-teams-use-claude-code.md)  
 - [😴👄🧘 Mouth And Throat Exercises to Help Stop Snoring and Improve OSA](./articles/mouth-and-throat-exercises-to-help-stop-snoring-and-improve-osa.md)  
-- [🌱🤖⚙️🖐️ 5 tips on getting started with Gems, your custom AI experts](./articles/5-tips-on-getting-started-with-gems-your-custom-ai-experts.md)  
-- [🏛️🗞️🦊 More than 50 House Democrats demand answers after whistleblower report on DOGE](./articles/more-than-50-house-democrats-demand-answers-after-whistleblower-report-on-doge.md)  
-- [📜💀⚠️ What the Holocaust Teaches](./articles/what-the-holocaust-teaches-us.md)  
   
   
 ## [🤖💬 Bot Chats](./bot-chats/index.md) (49)  

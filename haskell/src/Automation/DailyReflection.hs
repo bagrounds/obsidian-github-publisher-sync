@@ -43,6 +43,7 @@ embedSectionHeaders = [Twitter.sectionHeader, Bluesky.sectionHeader, Mastodon.se
 changesLink :: Text
 changesLink = "## " <> formatWikilink "changes/index" "\128260 Changes"
 
+-- | Formatted statistics text extracted from a changes page, ready to embed in a reflection preview.
 newtype ChangesStats = ChangesStats { renderChangesStats :: Text }
   deriving (Show, Eq)
 

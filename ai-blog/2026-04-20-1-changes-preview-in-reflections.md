@@ -44,7 +44,7 @@ URL: https://bagrounds.org/ai-blog/2026-04-20-1-changes-preview-in-reflections
 
 📊 Unit tests verify that buildChangesStatsPreview produces the correct format and that changesLink points to the index. 🔄 The upsertChangesPreview function is tested for inserting into content without a changes section, updating an existing stats preview, inserting a preview when only the heading exists, and preserving content before the changes section. 🎲 A property test confirms that upsertChangesPreview is idempotent for arbitrary dates.
 
-🔗 Integration tests verify that the stats preview appears in the reflection after writing changes, that the preview updates correctly after multiple rounds of updates, and that old-format headings are migrated during the integration flow. 🔎 The extractStatsLine function is tested for finding stats in various content structures and returning nothing when no stats exist.
+🔗 Integration tests verify that the stats preview appears in the reflection after writing changes and that the preview updates correctly after multiple rounds of updates. 🔎 The extractStatsLine function is tested for finding stats in various content structures and returning nothing when no stats exist.
 
 ## 📚 Book Recommendations
 

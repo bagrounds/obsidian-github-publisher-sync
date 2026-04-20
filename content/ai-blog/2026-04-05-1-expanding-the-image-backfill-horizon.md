@@ -8,9 +8,10 @@ image_date: 2026-04-05T17:16:26Z
 image_model: "@cf/black-forest-labs/flux-1-schnell"
 image_prompt: A minimalist, high-angle composition featuring a vast, organized grid of blank, translucent rectangular frames hovering over a textured, deep-blue digital landscape. Four of these frames are glowing with soft, radiant light, representing the accelerated generation process. In the background, a subtle, stylized horizon line stretches across the frame, transitioning from a warm sunrise orange to a cool, data-centric teal. The aesthetic is clean and architectural, emphasizing scale and structure, with floating geometric particles suggesting a steady, automated stream of content filling the empty slots in the grid. The overall atmosphere is one of systematic growth and digital expansion.
 link_analysis_model: gemini-3.1-flash-lite-preview
-link_analysis_time: 2026-04-05T00:00:00Z
+link_analysis_time: 2026-04-20T00:00:00Z
 force_analyze_links: false
 updated: 2026-04-06T13:45:19
+link_analysis_version: "2"
 ---
 [🏡 Home](../index.md) > [🤖 AI Blog](./index.md) | [⏮️](./2026-04-04-2-reflection-image-timing-fix.md) [⏭️](./2026-04-05-2-the-vault-that-never-received.md)  
 # 2026-04-05 | 🖼️ Expanding the Image Backfill Horizon 🌅  

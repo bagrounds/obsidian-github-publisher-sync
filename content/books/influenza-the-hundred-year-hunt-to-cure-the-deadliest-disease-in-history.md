@@ -7,8 +7,9 @@ share: true
 CTA: 💉 Uncover the cure.
 affiliate link: https://amzn.to/44PXnZ2
 link_analysis_model: gemini-3.1-flash-lite-preview
-link_analysis_time: 2026-04-06T00:00:00Z
+link_analysis_time: 2026-04-20T00:00:00Z
 force_analyze_links: false
+link_analysis_version: "2"
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🦠💀🔎💉 Influenza: The Hundred-Year Hunt to Cure the Deadliest Disease in History  
@@ -44,7 +45,7 @@ force_analyze_links: false
 * 🧑‍⚕️ **Expert Perspective:** As an ER doctor and NIH research director, Brown offers a unique and authoritative perspective, blending clinical experience with scientific insight.  
 * 👍 **Clarity and Accessibility:** The book is praised for its no-nonsense account and scientific crispness, making complex scientific information accessible to a general audience.  
 * ⏰ **Timeliness:** Released on the 100th anniversary of the 1918 pandemic, the book serves as a timely reminder of influenza's ongoing threat and the need for preparedness.  
-* 📝 **Critiques on Scope/Style:** Some critics, while acknowledging its value, suggest that John M. Barry's The Great Influenza is better written for narrative history, and Gina Kolata's Flu also stands out as a strong work of science journalism on the topic. Brown's work is noted for being a solid book of popular science and strong in meander[ing] through the archives, but perhaps less for its literary flair.  
+* 📝 **Critiques on Scope/Style:** Some critics, while acknowledging its value, suggest that John M. Barry's [🦠🌍💀 The Great Influenza](./the-great-influenza.md) is better written for narrative history, and Gina Kolata's Flu also stands out as a strong work of science journalism on the topic. Brown's work is noted for being a solid book of popular science and strong in meander[ing] through the archives, but perhaps less for its literary flair.  
 * 🌍 **Focus on Modern Relevance:** Brown effectively connects historical lessons to present-day concerns, including vaccine controversies, antiviral drug efficacy (e.g., Tamiflu), and government pandemic response strategies.  
   
 ## 🔍 Topics for Further Understanding  

@@ -5,12 +5,13 @@ aliases:
 title: 💾🌐 Static APIs
 URL: https://bagrounds.org/topics/static-apis
 link_analysis_model: gemini-3.1-flash-lite-preview
-link_analysis_time: 2026-04-05T00:00:00Z
+link_analysis_time: 2026-04-15T00:00:00Z
 force_analyze_links: false
 image_date: 2026-04-10T11:26:53Z
 image_model: "@cf/black-forest-labs/flux-1-schnell"
 image_prompt: A high-contrast, minimalist isometric illustration featuring a sleek, glowing digital file folder floating in the center. From the folder, several thin, luminous data streams—represented by clean, geometric lines and small nodes—branch outward, transforming into a simplified network diagram against a deep navy or charcoal background. The aesthetic should be clean and tech-forward, using a palette of cyan, electric blue, and soft white to evoke a sense of structured, pre-computed data. The composition is balanced and airy, emphasizing the transition from dynamic server processes to a stable, static state.
 updated: 2026-04-11T05:44:05
+link_analysis_version: "2"
 ---
 [Home](../index.md) > [Topics](./index.md)  
 # 💾🌐 Static APIs  

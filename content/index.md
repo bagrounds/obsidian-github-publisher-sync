@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-04-19T16:13:07-07:00
+updated: 2026-04-20T08:22:33-07:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -14,11 +14,11 @@ updated: 2026-04-19T16:13:07-07:00
 🔊 Listen to any page with built in audio control.  
 💬 Comment on any page with your GitHub account.  
   
-## [🪞 Reflections](./reflections/index.md) ~ Blog (521)  
+## [🪞 Reflections](./reflections/index.md) ~ Blog (522)  
+- [2026-04-20](./reflections/2026-04-20.md)  
 - [2026-04-19 | 🥳 Two 🕯️🕯️](./reflections/2026-04-19.md)  
 - [2026-04-18 | 🏆 Beat ⚙️ Systems 🔄 Change 🇺🇸 American 🌟 Progress, 📈 Expanding ✨ Dreams, 🏗️ Architecture 🏛️ Public 🔍 Audit 📊 Analytics ✅ Truth. 📺🌟📰🐔🤖🏛️🔀🔄🤖🐲](./reflections/2026-04-18.md)  
 - [2026-04-17 | 🌟 Children 💯 Of 🗣️ Speaks 😠 Furious 📅 April 🇺🇸 American 🎙️ Grounded 🚨 Worry 🌟 Healing 🌊 Currents 🖼️ Painting 🪞 Mirror 🏛️ Reciprocity 🛠️ Fixing 🚫 Posting 🔀 Architectures 🐔🤖🌍🖼️🪞🏛️🛠️🚫🔀 📚📺🌟📰🐔🤖🏛️🔀🤖🐲](./reflections/2026-04-17.md)  
-- [2026-04-16 | 🌟 Losing 💯 🧪 Weeding 📍 Spot 🤔 Great 🌸 Horizons 🐔 Pace 🤖 Mirror 🏛️ Liberator 🔀 Sustenance 🔗 Updates 🤖 Changes 🔀 Misplaced 📺🌟📰🐔🤖🏛️🔀🤖🐲](./reflections/2026-04-16.md)  
   
   
 ## [🤖 AI Blog](./ai-blog/index.md) (167)  
@@ -35,11 +35,11 @@ updated: 2026-04-19T16:13:07-07:00
 - [2026-04-16 | 🤖 The Transparency Tax and the Cognitive Mirror 🤖](./auto-blog-zero/2026-04-16-the-transparency-tax-and-the-cognitive-mirror.md)  
   
   
-## [🐔 Chickie Loo](./chickie-loo/index.md) (40)  
+## [🐔 Chickie Loo](./chickie-loo/index.md) (41)  
+- [2026-04-20 | 🐔 🍽️ A Dining Room of Dreams and a Cow’s Quiet Secret 🐔](./chickie-loo/2026-04-20-a-dining-room-of-dreams-and-a-cow-s-quiet-secret.md)  
 - [2026-04-19 | 🐔 🥂 A Dance Floor in the Making 🐔](./chickie-loo/2026-04-19-a-dance-floor-in-the-making.md)  
 - [2026-04-18 | 🐔 🍎 The Line-Cutters and the Garden Dreams 🐔](./chickie-loo/2026-04-18-the-line-cutters-and-the-garden-dreams.md)  
 - [2026-04-17 | 🐔 🖼️ A Morning Like a Rockwell Painting 🐔](./chickie-loo/2026-04-17-a-morning-like-a-rockwell-painting.md)  
-- [2026-04-16 | 🐔 🌾 The Gentle Pace of Spring 🐔](./chickie-loo/2026-04-16-the-gentle-pace-of-spring.md)  
   
   
 ## [🏛️ Systems for Public Good](./systems-for-public-good/index.md) (29)  
@@ -49,53 +49,53 @@ updated: 2026-04-19T16:13:07-07:00
 - [2026-04-16 | 🏛️ 🚌 The Pathways to Opportunity: Public Transit as a Liberator 🏛️](./systems-for-public-good/2026-04-16-the-pathways-to-opportunity-public-transit-as-a-liberator.md)  
   
   
-## [📰 The Noise](./the-noise/index.md) (10)  
+## [📰 The Noise](./the-noise/index.md) (11)  
+- [2026-04-20 | 📰 🌐 Shifting Sands, Enduring Currents 🌊 📰](./the-noise/2026-04-20-shifting-sands-enduring-currents.md)  
 - [2026-04-19 | 📰 🌪️ Turbulent Crossroads, Persistent Progress 🌍 📰](./the-noise/2026-04-19-turbulent-crossroads-persistent-progress.md)  
 - [2026-04-18 | 📰 ⚡ Converging Tensions, Expanding Horizons 🌍 📰](./the-noise/2026-04-18-converging-tensions-expanding-horizons.md)  
 - [2026-04-17 | 📰 ⚡ Global Currents, Echoing Futures 🌍 📰](./the-noise/2026-04-17-global-currents-echoing-futures.md)  
-- [2026-04-16 | 📰 🌪️ Unseen Currents, Emerging Horizons 📰](./the-noise/2026-04-16-unseen-currents-emerging-horizons.md)  
   
   
-## [🌟 Positivity Bias](./positivity-bias/index.md) (9)  
+## [🌟 Positivity Bias](./positivity-bias/index.md) (10)  
+- [2026-04-20 | 🌟 Global Innovations Spark Collective Progress 🌟](./positivity-bias/2026-04-20-global-innovations-spark-collective-progress.md)  
 - [2026-04-19 | 🌟 Weekend Glow: Innovations Blossom and Communities Thrive 🌟](./positivity-bias/2026-04-19-weekend-glow-innovations-blossom-and-communities-thrive.md)  
 - [2026-04-18 | 🌟 Horizons of Progress: Healing, Harmony, and a Greener Earth 🌟](./positivity-bias/2026-04-18-horizons-of-progress-healing-harmony-and-a-greener-earth.md)  
 - [2026-04-17 | 🌟 Innovations in Healing and Community Resilience 🌟](./positivity-bias/2026-04-17-innovations-in-healing-and-community-resilience.md)  
-- [2026-04-16 | 🌟 Hope Blooms: Health, Environment, and Community Flourish 🌟](./positivity-bias/2026-04-16-hope-blooms-health-environment-and-community-flourish.md)  
   
   
-## [🔀 Convergence](./convergence/index.md) (5)  
+## [🔀 Convergence](./convergence/index.md) (6)  
+- [2026-04-19 | 🔀 🪞 The Architects of Meaning: From Friction to Flow 🔀](./convergence/2026-04-19-the-architects-of-meaning-from-friction-to-flow.md)  
 - [2026-04-18 | 🔀 🪞 The Architectures of Dynamic Truth 🔀](./convergence/2026-04-18-the-architectures-of-dynamic-truth.md)  
 - [2026-04-17 | 🔀 🪞 The Architectures of Validation: Friction, Flow, and Form 🔀](./convergence/2026-04-17-the-architectures-of-validation-friction-flow-and-form.md)  
 - [2026-04-16 | 🔀 💡 The Architecture of Sustenance and Self-Correction 🔀](./convergence/2026-04-16-the-architecture-of-sustenance-and-self-correction.md)  
-- [2026-04-15 | 🔀 The Observer Awakens 🔀](./convergence/2026-04-15-the-observer-awakens.md)  
   
   
 ## [📚 Books](./books/index.md) (960)  
-- [🗓️🌷 RHS Gardening Through the Year](./books/rhs-gardening-through-the-year.md)  
-- [🪴🌱 RHS How to Garden When You're New to Gardening: The Basics for Absolute Beginners](./books/rhs-how-to-garden-when-youre-new-to-gardening-the-basics-for-beginners.md)  
-- [🙏🔄 Ritual Theory, Ritual Practice](./books/ritual-theory-ritual-practice.md)  
-- [🕯️🎬👃 Ritual, Performance and the Senses](./books/ritual-performance-and-the-senses.md)  
+- [🧠⚙️🐒💡 Executive Functions: What They Are, How They Work, and Why They Evolved](./books/executive-functions.md)  
+- [🧠🧩📈🧑‍🏫 Smart but Scattered: The Revolutionary Executive Skills Approach to Helping Kids Reach Their Potential](./books/smart-but-scattered.md)  
+- [🇮🇱⏳ The Hundred Years' War on Palestine: A History of Settler Colonialism and Resistance, 1917–2017](./books/the-hundred-years-war-on-palestine-a-history-of-settler-colonialism-and-resistance-1917-2017.md)  
+- [⚛️ℹ️👶 Quantum Information for Babies](./books/quantum-information-for-babies.md)  
   
   
 ## [📺 Videos](./videos/index.md) (774)  
-- [🎞️🎭🤫🇺🇸 The Public and Private Lives of FDR (1933-1945) | Full Documentary | American Experience PBS](./videos/the-public-and-private-lives-of-fdr-1933-1945-full-documentary-american-experience-pbs.md)  
-- [This Single Rule Underpins All Of Physics](./videos/this-single-rule-underpins-all-of-physics.md)  
-- [🍎🔄🩸 Dr. Casey Means: Transform Your Health by Improving Metabolism, Hormone & Blood Sugar Regulation](./videos/dr-casey-means-transform-your-health-by-improving-metabolism-hormone-and-blood-sugar-regulation.md)  
-- [🏗️⭐🤖 How to Build a Remarkable Brand in the Age of AI | Seth Godin](./videos/how-to-build-a-remarkable-brand-in-the-age-of-ai-seth-godin.md)  
+- [🏛️🔨🗑️ Brooks and Atkins Stohr on the East Wing demolition](./videos/brooks-and-atkins-stohr-on-the-east-wing-demolition.md)  
+- [🌍🌱🛠️🌳 Unit 6: Tree Planting and Care- Planting Preparation](./videos/unit-6-tree-planting-and-care-planting-preparation.md)  
+- [🌳🚿🪴 Unit 6: Tree Planting and Care- Root Washing](./videos/unit-6-tree-planting-and-care-root-washing.md)  
+- [🔬⬇️🌿🔗💧⚙️💻 Characterizing Root-zone and Plant Integrated Hydraulic Systems Based on... TREE Fund Webinar Series](./videos/characterizing-root-zone-and-plant-integrated-hydraulic-systems-based-on-tree-fund-webinar-series.md)  
   
   
 ## [🌌 Topics](./topics/index.md) (91)  
+- [🔢➕➕ 3 Sum](./topics/programming-problems/3-sum.md)  
+- [🔢➕ 2 Sum](./topics/programming-problems/2-sum.md)  
+- [🇨🇳🤖 DeepSeek](./topics/deepseek.md)  
 - [📊🧐📝⚙️ Design a Performance Self-Evaluation System](./topics/design-a-performance-self-evaluation-system.md)  
-- [👯💻 Digital Twin](./topics/digital-twin.md)  
-- [💪🏋️‍♂️ Creatine](./topics/creatine.md)  
-- [⚙️🎛️ Control Systems](./topics/control-systems.md)  
   
   
 ## [📄  Articles](./articles/index.md) (84)  
+- [😴👄🧘 Mouth And Throat Exercises to Help Stop Snoring and Improve OSA](./articles/mouth-and-throat-exercises-to-help-stop-snoring-and-improve-osa.md)  
+- [🌱🤖⚙️🖐️ 5 tips on getting started with Gems, your custom AI experts](./articles/5-tips-on-getting-started-with-gems-your-custom-ai-experts.md)  
 - [🏛️🗞️🦊 More than 50 House Democrats demand answers after whistleblower report on DOGE](./articles/more-than-50-house-democrats-demand-answers-after-whistleblower-report-on-doge.md)  
 - [📜💀⚠️ What the Holocaust Teaches](./articles/what-the-holocaust-teaches-us.md)  
-- [📚🔥 Naval Academy removes nearly 400 books from library in new DEI purge ordered by Hegseth’s office](./articles/naval-academy-removes-nearly-400-books-from-library-in-new-dei-purge-ordered-by-hegseths-office.md)  
-- [⏱️⚔️🏛️ '60 Minutes' chief resigns, saying show's independence was compromised](./articles/60-minutes-chief-resigns-saying-shows-independence-was-compromised.md)  
   
   
 ## [🤖💬 Bot Chats](./bot-chats/index.md) (49)  
@@ -113,10 +113,10 @@ updated: 2026-04-19T16:13:07-07:00
   
   
 ## [👥 People](./people/index.md) (18)  
+- [🤔⚙️🗣️🤝💡🧩🔭📚👴 Russell Ackoff](./people/russell-ackoff.md)  
+- [👨‍🏫📈💻 Scott Galloway](./people/scott-galloway.md)  
+- [🧠🫀👀🔬 Andrew Huberman](./people/andrew-huberman.md)  
 - [🧠👨‍🎓📈 Justin Sung](./people/justin-sung.md)  
-- [👨‍🏫🤖 Andrew Ng](./people/andrew-ng.md)  
-- [🧠🤝🐘 Jonathan Haidt](./people/jonathan-haidt.md)  
-- [🧠🔬🧘‍♀️💪📈❤️‍🩹🗣️📚🌟 Kelly McGonigal](./people/kelly-mcgonigal.md)  
   
   
 ## [🛍️ Products](./products/index.md) (6)  

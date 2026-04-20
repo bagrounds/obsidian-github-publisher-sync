@@ -14,6 +14,7 @@ import Test.Tasty.QuickCheck (testProperty)
 import qualified Test.Tasty.QuickCheck as QC
 
 import Automation.DailyUpdates
+import Automation.DailyReflection (ChangesStats (..))
 import Automation.Platform (Platform (..))
 import Automation.TestGenerators (testTitle, testRelativePath)
 
@@ -409,11 +410,11 @@ addUpdateLinksTests = testGroup "addUpdateLinks"
 
   , testCase "extractStatsLine finds stats line in content" $
       do
-        assertEqual "extracts from section" (Just "📊 3 pages · 2 🖼️ images")
+        assertEqual "extracts from section" (Just (ChangesStats "📊 3 pages · 2 🖼️ images"))
           (extractStatsLine "## 🔄 Updates\n📊 3 pages · 2 🖼️ images\n\n| Page |")
         assertEqual "returns Nothing when absent" Nothing
           (extractStatsLine "# Heading\n\nNo stats here")
-        assertEqual "extracts from multiline content" (Just "📊 1 page · 1 🦋 Bluesky")
+        assertEqual "extracts from multiline content" (Just (ChangesStats "📊 1 page · 1 🦋 Bluesky"))
           (extractStatsLine "---\ntitle: test\n---\n# Heading\n\n## 🔄 Updates\n📊 1 page · 1 🦋 Bluesky\n")
 
   , testCase "resolveRelativePath converts paths correctly" $
@@ -674,21 +675,4 @@ addUpdateLinksToReflectionTests = testGroup "addUpdateLinksToReflection"
           (T.isInfixOf "[[changes/2026-03-28|2026-03-28]] | \128202 2 pages" reflContent2)
         assertBool "old stats preview removed"
           (not (T.isInfixOf "\128202 1 page" reflContent2))
-
-  , testCase "migrates old-format changes link in reflection to index link" $
-      withSystemTempDirectory "daily-updates-test" $ \tmpDir -> do
-        let reflDir = tmpDir </> "reflections"
-            testDate = fromGregorian 2026 3 28
-        createDirectoryIfMissing True reflDir
-        TIO.writeFile (reflDir </> "2026-03-28.md")
-          "---\ntitle: 2026-03-28\n---\n\n# Reflection\n\n## [[changes/2026-03-28|\128260 Changes]]\n"
-
-        _ <- addUpdateLinksToReflection tmpDir testDate
-               [UpdateLink (testRelativePath "page.md") (testTitle "A Page") [ImageAdded]]
-
-        reflContent <- TIO.readFile (reflDir </> "2026-03-28.md")
-        assertBool "heading now points to index"
-          (T.isInfixOf "## [[changes/index|\128260 Changes]]" reflContent)
-        assertBool "has stats preview"
-          (T.isInfixOf "[[changes/2026-03-28|2026-03-28]] | \128202 1 page" reflContent)
   ]

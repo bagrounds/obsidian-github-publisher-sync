@@ -27,7 +27,7 @@ import System.Directory (createDirectoryIfMissing, doesDirectoryExist, doesFileE
 import System.FilePath ((</>), dropExtension, takeBaseName)
 import Text.Read (readMaybe)
 
-import Automation.DailyReflection (ensureDailyReflection, EnsureReflectionResult (..), findFirstSectionIndex, embedSectionHeaders, upsertChangesPreview)
+import Automation.DailyReflection (ensureDailyReflection, EnsureReflectionResult (..), findFirstSectionIndex, embedSectionHeaders, upsertChangesPreview, ChangesStats (..))
 import Automation.Frontmatter (parseFrontmatter, quoteYamlValue)
 import Automation.PacificTime (formatDay)
 import Automation.Platform (Platform (..), updatesSectionHeader)
@@ -339,13 +339,13 @@ computeColumnCount entries (InternalLinksAdded _) =
 computeColumnCount entries column =
   length (filter (any (sameColumn column) . entryDetails) entries)
 
-buildStatsLine :: [PageEntry] -> Text
+buildStatsLine :: [PageEntry] -> ChangesStats
 buildStatsLine entries =
   let pageCount = length entries
       pageWord = if pageCount == 1 then "page" else "pages"
       columnStats = mapMaybe (buildColumnStat entries) canonicalColumns
       parts = (T.pack (show pageCount) <> " " <> pageWord) : columnStats
-  in "📊 " <> T.intercalate " · " parts
+  in ChangesStats $ "📊 " <> T.intercalate " · " parts
 
 buildColumnStat :: [PageEntry] -> UpdateDetail -> Maybe Text
 buildColumnStat entries column =
@@ -378,9 +378,9 @@ cellForColumn entry column =
 renderUpdatesSection :: [PageEntry] -> Text
 renderUpdatesSection [] = ""
 renderUpdatesSection entries =
-  let statsLine = buildStatsLine entries
+  let stats = buildStatsLine entries
       table = buildTable entries
-  in updatesSectionHeader <> "\n" <> statsLine <> "\n\n" <> table <> "\n"
+  in updatesSectionHeader <> "\n" <> renderChangesStats stats <> "\n\n" <> table <> "\n"
 
 parseStatsPageCount :: Text -> Int
 parseStatsPageCount sectionText =
@@ -391,9 +391,9 @@ parseStatsPageCount sectionText =
           numberStr = T.takeWhile isDigit afterEmoji
       in fromMaybe 0 (readMaybe (T.unpack numberStr))
 
-extractStatsLine :: Text -> Maybe Text
+extractStatsLine :: Text -> Maybe ChangesStats
 extractStatsLine content =
-  find (T.isPrefixOf "📊 ") (T.splitOn "\n" content)
+  ChangesStats <$> find (T.isPrefixOf "📊 ") (T.splitOn "\n" content)
 
 -- Core logic: parse existing → merge new → render
 convertToEntry :: UpdateLink -> PageEntry
@@ -524,12 +524,12 @@ ensureChangesPage changesDir date = do
           when (updated /= prevContent) $
             TIO.writeFile prevPath updated
 
-updateChangesPreviewInReflection :: FilePath -> Day -> Text -> IO ()
-updateChangesPreviewInReflection reflectionPath date statsLine = do
+updateChangesPreviewInReflection :: FilePath -> Day -> ChangesStats -> IO ()
+updateChangesPreviewInReflection reflectionPath date stats = do
   reflectionExists <- doesFileExist reflectionPath
   when reflectionExists $ do
     content <- TIO.readFile reflectionPath
-    let updated = upsertChangesPreview content date statsLine
+    let updated = upsertChangesPreview content date stats
     when (updated /= content) $
       TIO.writeFile reflectionPath updated
 

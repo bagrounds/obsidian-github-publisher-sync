@@ -11,8 +11,8 @@ module Automation.DailyReflection
   , updateDailyReflection
   , findFirstSectionIndex
   , embedSectionHeaders
-  , changesLinkPrefix
   , changesLink
+  , ChangesStats (..)
   , buildChangesStatsPreview
   , upsertChangesPreview
   ) where
@@ -40,30 +40,30 @@ import Automation.Platform (updatesSectionHeader)
 embedSectionHeaders :: [Text]
 embedSectionHeaders = [Twitter.sectionHeader, Bluesky.sectionHeader, Mastodon.sectionHeader]
 
-changesLinkPrefix :: Text
-changesLinkPrefix = "## [[changes/"
-
 changesLink :: Text
 changesLink = "## " <> formatWikilink "changes/index" "\128260 Changes"
+
+newtype ChangesStats = ChangesStats { renderChangesStats :: Text }
+  deriving (Show, Eq)
 
 changesStatsPreviewLinePrefix :: Text
 changesStatsPreviewLinePrefix = "[[changes/"
 
-buildChangesStatsPreview :: Day -> Text -> Text
-buildChangesStatsPreview date statsLine =
-  formatWikilink ("changes/" <> formatDay date) (formatDay date) <> " | " <> statsLine
+buildChangesStatsPreview :: Day -> ChangesStats -> Text
+buildChangesStatsPreview date stats =
+  formatWikilink ("changes/" <> formatDay date) (formatDay date) <> " | " <> renderChangesStats stats
 
-upsertChangesPreview :: Text -> Day -> Text -> Text
-upsertChangesPreview content date statsLine =
-  let preview = buildChangesStatsPreview date statsLine
-  in if T.isInfixOf changesLinkPrefix content
+upsertChangesPreview :: Text -> Day -> ChangesStats -> Text
+upsertChangesPreview content date stats =
+  let preview = buildChangesStatsPreview date stats
+  in if T.isInfixOf changesLink content
     then replaceChangesSection content preview
     else T.stripEnd content <> "\n\n" <> changesLink <> "\n" <> preview <> "\n"
 
 replaceChangesSection :: Text -> Text -> Text
 replaceChangesSection content preview =
   let contentLines = T.splitOn "\n" content
-      (before, fromChanges) = break (T.isPrefixOf changesLinkPrefix) contentLines
+      (before, fromChanges) = break (== changesLink) contentLines
   in case fromChanges of
     [] -> content
     (_ : rest) ->
@@ -74,7 +74,7 @@ replaceChangesSection content preview =
       in T.intercalate "\n" (before <> [changesLink, preview] <> afterOld)
 
 trailingSectionHeaders :: [Text]
-trailingSectionHeaders = updatesSectionHeader : changesLinkPrefix : embedSectionHeaders
+trailingSectionHeaders = updatesSectionHeader : changesLink : embedSectionHeaders
 
 data EnsureReflectionResult = EnsureReflectionResult
   { errCreated          :: Bool

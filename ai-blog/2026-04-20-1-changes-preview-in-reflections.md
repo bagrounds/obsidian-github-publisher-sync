@@ -30,23 +30,19 @@ URL: https://bagrounds.org/ai-blog/2026-04-20-1-changes-preview-in-reflections
 
 🔁 Every time the changes page is updated with new entries, the stats preview in the corresponding reflection is automatically refreshed to match. 📊 This ensures the reflection always shows the latest stats without any manual intervention. 🧩 The sync is handled by the upsertChangesPreview function, which either inserts a new stats preview or replaces an existing one.
 
-### 🔀 Backward-Compatible Migration
-
-🏗️ Existing reflections that have the old-format heading linking to the specific day are migrated automatically the next time updates are written for that date. 📝 The migration replaces the old heading with the new index-pointing heading and inserts the stats preview line. 🛡️ No manual intervention is needed for the transition.
-
 ## 🏗️ Architecture
 
 📦 Four new pure functions were introduced to support this feature.
 
-🔗 The changesLink function was simplified from a parameterized function taking a date to a constant value pointing to the changes index. 📊 The buildChangesStatsPreview function constructs the stats preview line by formatting a date-linked wikilink followed by the stats text. 🔄 The upsertChangesPreview function handles all the complexity of inserting or updating the changes section in a reflection, including detecting old-format headings and migrating them. 🔎 The extractStatsLine function locates the stats line in a changes page by finding the first line starting with the chart emoji.
+🔗 The changesLink constant points to the changes index. 📊 The buildChangesStatsPreview function constructs the stats preview line by formatting a date-linked wikilink followed by the stats text wrapped in a ChangesStats domain type. 🔄 The upsertChangesPreview function handles inserting or updating the changes section in a reflection. 🔎 The extractStatsLine function locates the stats in a changes page by finding the first line starting with the chart emoji and wraps it in ChangesStats.
 
-🧪 On the I/O side, the old ensureChangesLinkInReflection function was replaced with updateChangesPreviewInReflection, which reads the reflection, applies upsertChangesPreview, and writes back if anything changed. 🎯 The orchestrator function addUpdateLinksToReflection now extracts the stats line from the updated changes page and passes it to the reflection updater.
+🧪 On the I/O side, the old ensureChangesLinkInReflection function was replaced with updateChangesPreviewInReflection, which reads the reflection, applies upsertChangesPreview, and writes back if anything changed. 🎯 The orchestrator function addUpdateLinksToReflection now extracts the stats from the updated changes page and passes it to the reflection updater.
 
 ## 🧪 Testing
 
-🔬 Eleven new tests were added covering every aspect of the feature.
+🔬 Ten new tests cover every aspect of the feature.
 
-📊 Unit tests verify that buildChangesStatsPreview produces the correct format and that changesLink points to the index. 🔄 The upsertChangesPreview function is tested for inserting into content without a changes section, updating an existing stats preview, migrating old-format headings, inserting a preview when only the heading exists, and preserving content before the changes section. 🎲 A property test confirms that upsertChangesPreview is idempotent for arbitrary dates.
+📊 Unit tests verify that buildChangesStatsPreview produces the correct format and that changesLink points to the index. 🔄 The upsertChangesPreview function is tested for inserting into content without a changes section, updating an existing stats preview, inserting a preview when only the heading exists, and preserving content before the changes section. 🎲 A property test confirms that upsertChangesPreview is idempotent for arbitrary dates.
 
 🔗 Integration tests verify that the stats preview appears in the reflection after writing changes, that the preview updates correctly after multiple rounds of updates, and that old-format headings are migrated during the integration flow. 🔎 The extractStatsLine function is tested for finding stats in various content structures and returning nothing when no stats exist.
 

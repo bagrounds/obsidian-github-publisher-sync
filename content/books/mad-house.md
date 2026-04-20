@@ -9,8 +9,9 @@ tags:
 affiliate link: https://amzn.to/3FmLost
 CTA: Expose the madness.
 link_analysis_model: gemini-3.1-flash-lite-preview
-link_analysis_time: 2026-04-06T00:00:00Z
+link_analysis_time: 2026-04-20T00:00:00Z
 force_analyze_links: false
+link_analysis_version: "2"
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🤯🐍🏘️🎪💥 Mad House: How Donald Trump, MAGA Mean Girls, a Former Used Car Salesman, a Florida Nepo Baby, and a Man with Rats in His Walls Broke Congress  
@@ -91,4 +92,4 @@ By Annie Karni
   
 * 🔬 **Best More Rigorous Book:** 📊 "Partisan Polarization in American Politics" by Morris P. Fiorina and Samuel J. Abrams. 🇺🇸 📚 This scholarly work analyzes the causes and consequences of political polarization in the United States. 🤓 🤔 🇺🇸  
   
-* 👓 **Best More Accessible Book:** 📖 "Fear: Trump in the White House" by Bob Woodward. 📰 This book provides an accessible and engaging account of the Trump presidency, focusing on the internal dynamics of the White House. 😮 🏢 🔑  
+* 👓 **Best More Accessible Book:** 📖 "[😱🤡🇺🇸 Fear: Trump in the White House](./fear.md)" by Bob Woodward. 📰 This book provides an accessible and engaging account of the Trump presidency, focusing on the internal dynamics of the White House. 😮 🏢 🔑  

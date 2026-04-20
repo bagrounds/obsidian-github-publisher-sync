@@ -8,11 +8,12 @@ affiliate link: https://amzn.to/44VXum6
 CTA: 🚨 Shield our future.
 updated: 2026-03-15T10:07:30.345Z
 force_analyze_links: false
-link_analysis_time: 2026-03-25T21:14:05.668Z
+link_analysis_time: 2026-04-19T00:00:00Z
 link_analysis_model: gemini-3.1-flash-lite-preview
 image_date: 2026-04-16T14:42:14Z
 image_model: "@cf/black-forest-labs/flux-1-schnell"
 image_prompt: A high-angle, minimalist illustration of a complex federal building complex at twilight. The architecture is imposing and brutalist, rendered in shades of cool slate blue and deep charcoal. Interspersed throughout the scene are glowing, thin, amber-colored circuitry lines that map out the flow of information across the rooftops and into the windows. In the center, a single, slightly oversized, worn manila folder lies abandoned on a sleek, polished concrete plaza, casting a long, dramatic shadow. The atmosphere is quiet and eerie, emphasizing the tension between the invisible, vital systems of government and the looming, dark void of neglect. The overall aesthetic is clean, modern, and slightly foreboding, using high-contrast lighting to highlight the fragility of the infrastructure.
+link_analysis_version: "2"
 ---
 [Home](../index.md) > [Books](./index.md)  
 # ⚠️🥴🕹️🌐 The Fifth Risk  

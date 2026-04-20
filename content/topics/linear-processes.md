@@ -5,11 +5,12 @@ aliases:
 title: ➕ Linear Processes
 URL: https://bagrounds.org/topics/linear-processes
 link_analysis_model: gemini-3.1-flash-lite-preview
-link_analysis_time: 2026-04-04T00:00:00Z
+link_analysis_time: 2026-04-17T00:00:00Z
 force_analyze_links: false
 image_date: 2026-04-09T17:35:06Z
 image_model: "@cf/black-forest-labs/flux-1-schnell"
 image_prompt: A minimalist, conceptual illustration centered on a bright, clean, white background. A single, bold, charcoal-colored line emerges from the bottom left corner, rising diagonally toward the top right. As the line ascends, it transitions from a simple, solid stroke into a vibrant, glowing geometric lattice or a blossoming fractal pattern, symbolizing the transformation of linear effort into exponential, high-leverage growth. Floating near the transition point are subtle, translucent geometric shapes—spheres and cubes—representing discrete units of work being saved or stored. The composition is balanced and airy, using a professional color palette of slate grey, soft cerulean, and a single accent of warm gold to highlight the point where the trajectory accelerates. The aesthetic is clean, modern, and data-driven, evoking the clarity of a high-leverage, efficient process.
+link_analysis_version: "2"
 ---
 [Home](../index.md) > [Topics](./index.md)  
 # ➕ Linear Processes  

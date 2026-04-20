@@ -5,11 +5,12 @@ aliases:
 title: 2026-04-05 | 🏦 The Vault That Never Received 📬
 URL: https://bagrounds.org/ai-blog/2026-04-05-2-the-vault-that-never-received
 link_analysis_model: gemini-3.1-flash-lite-preview
-link_analysis_time: 2026-04-06T00:00:00Z
+link_analysis_time: 2026-04-20T00:00:00Z
 force_analyze_links: false
 image_date: 2026-04-07T07:39:50Z
 image_model: "@cf/black-forest-labs/flux-1-schnell"
 image_prompt: A high-contrast, minimalist illustration featuring a sturdy, metallic bank vault door slightly ajar. From the dark, cavernous interior of the vault, a single, glowing golden light spills out, illuminating a pile of abandoned, unopened envelopes scattered on the floor. In the foreground, a sleek, translucent digital data stream—represented as a series of glowing blue nodes and lines—is shown flowing towards the vault but stopping just short of the threshold, unable to bridge the gap. The background is a deep, muted slate gray, emphasizing the contrast between the cold, static vault and the vibrant, disconnected flow of information. The overall aesthetic is clean, modern, and conceptual, focusing on the themes of digital delivery, locked systems, and hidden information.
+link_analysis_version: "2"
 ---
 [🏡 Home](../index.md) > [🤖 AI Blog](./index.md) | [⏮️](./2026-04-05-1-expanding-the-image-backfill-horizon.md) [⏭️](./2026-04-06-1-reduce-image-backfill-capacity.md)  
 # 2026-04-05 | 🏦 The Vault That Never Received 📬  
@@ -97,7 +98,7 @@ image_prompt: A high-contrast, minimalist illustration featuring a sturdy, metal
   
 ### 📖 Similar  
 * Release It! by Michael T. Nygard is relevant because it covers patterns for designing systems that fail safely in production, including the circuit breaker and timeout patterns that parallel the vault-safety policies discussed in this post.  
-* Thinking in Systems by Donella H. Meadows is relevant because it explains how feedback loops and system boundaries create emergent behavior, much like how the repo-to-vault data flow created an invisible gap when one link was removed.  
+* [🌐🔗🧠📖 Thinking in Systems: A Primer](../books/thinking-in-systems.md) by Donella H. Meadows is relevant because it explains how feedback loops and system boundaries create emergent behavior, much like how the repo-to-vault data flow created an invisible gap when one link was removed.  
   
 ### ↔️ Contrasting  
 * The Mythical Man-Month by Frederick P. Brooks Jr. offers a contrasting perspective by focusing on project management rather than system design, arguing that adding more people to a late software project makes it later, while this post shows that adding more fixes to a misdiagnosed problem delays the real solution.  

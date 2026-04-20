@@ -5,11 +5,12 @@ aliases:
 title: 👯💻 Digital Twin
 URL: https://bagrounds.org/topics/digital-twin
 link_analysis_model: gemini-3.1-flash-lite-preview
-link_analysis_time: 2026-04-05T00:00:00Z
+link_analysis_time: 2026-04-18T00:00:00Z
 force_analyze_links: false
 image_date: 2026-04-09T05:45:01Z
 image_model: "@cf/black-forest-labs/flux-1-schnell"
 image_prompt: A split-composition illustration featuring a sleek, physical object—such as a modern industrial turbine or a human silhouette—on the left side, rendered in warm, natural lighting. A glowing, translucent geometric mesh or wireframe version of the same object occupies the right side, rendered in cool, electric blues and cyans. Thin, luminous data-stream lines connect the two, symbolizing the flow of sensor data. The background is a deep, minimalist slate gray, emphasizing the contrast between the organic, solid form and the synthetic, digital reflection. Small, floating nodes of light hover around the digital side to represent real-time data points, creating a clean, high-tech aesthetic that conveys precision, observation, and technological synchronization.
+link_analysis_version: "2"
 ---
 [Home](../index.md) > [Topics](./index.md)  
 # 👯💻 Digital Twin  

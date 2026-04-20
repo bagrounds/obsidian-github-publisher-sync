@@ -5,11 +5,12 @@ aliases:
 title: 📚⚓ Books Removed From Naval Academy Library
 URL: https://bagrounds.org/topics/books-removed-from-naval-academy-library
 link_analysis_model: gemini-3.1-flash-lite-preview
-link_analysis_time: 2026-04-05T00:00:00Z
+link_analysis_time: 2026-04-18T00:00:00Z
 force_analyze_links: false
 image_date: 2026-04-08T23:23:45Z
 image_model: "@cf/black-forest-labs/flux-1-schnell"
 image_prompt: A grand, dark wooden bookshelf, reminiscent of an old library, fills the frame. Several distinct, rectangular empty spaces are visible where books have been recently removed, casting subtle shadows. One or two books are in the process of being slid out, their spines partially visible, emphasizing the act of removal. The remaining books are diverse in color and size, pressed tightly together. A small, stylized brass anchor is subtly integrated into the design of one of the bookends, hinting at the institution. The overall atmosphere is quiet, contemplative, and highlights absence.
+link_analysis_version: "2"
 ---
 [Home](../index.md) > [Topics](./index.md)  
 # 📚⚓ Books Removed From Naval Academy Library  

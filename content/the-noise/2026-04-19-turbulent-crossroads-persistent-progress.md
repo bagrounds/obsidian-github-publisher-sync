@@ -13,7 +13,7 @@ link_analysis_version: "2"
 link_analysis_time: 2026-04-19T00:00:00Z
 force_analyze_links: false
 ---
-[Home](../index.md) > [📰 The Noise](./index.md) | [⏮️](./2026-04-18-converging-tensions-expanding-horizons.md)  
+[Home](../index.md) > [📰 The Noise](./index.md) | [⏮️](./2026-04-18-converging-tensions-expanding-horizons.md) [⏭️](./2026-04-20-shifting-sands-enduring-currents.md)  
 # 2026-04-19 | 📰 🌪️ Turbulent Crossroads, Persistent Progress 🌍 📰  
 ![the-noise-2026-04-19-turbulent-crossroads-persistent-progress](../the-noise-2026-04-19-turbulent-crossroads-persistent-progress.jpg)  
   

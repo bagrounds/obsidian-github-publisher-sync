@@ -7,8 +7,9 @@ URL: https://bagrounds.org/articles/5-takeaways-about-nprs-reporting-on-the-whis
 Author:
 tags:
 link_analysis_model: gemini-3.1-flash-lite-preview
-link_analysis_time: 2026-04-07T00:00:00Z
+link_analysis_time: 2026-04-19T00:00:00Z
 force_analyze_links: false
+link_analysis_version: "2"
 ---
 [Home](../index.md) > [Articles](./index.md)  
 # 🦊😈🐾🕵️💸 [5 takeaways about NPR's reporting on the whistleblower report about DOGE at the NLRB](https://www.npr.org/2025/04/15/nx-s1-5355895/doge-musk-nlrb-takeaways-security)  

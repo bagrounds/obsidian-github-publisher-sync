@@ -9,11 +9,13 @@ module Automation.DailyUpdates
   , addChangesForwardLink
   , parseStatsPageCount
   , resolveRelativePath
+  , extractStatsLine
   ) where
 
 import Control.Applicative ((<|>))
 import Control.Monad (unless, when)
 import Data.Char (isDigit)
+import Data.Foldable (forM_)
 import Data.List (find, sort)
 import qualified Data.Map.Strict as Map
 import Data.Maybe (catMaybes, fromMaybe, mapMaybe)
@@ -25,7 +27,7 @@ import System.Directory (createDirectoryIfMissing, doesDirectoryExist, doesFileE
 import System.FilePath ((</>), dropExtension, takeBaseName)
 import Text.Read (readMaybe)
 
-import Automation.DailyReflection (ensureDailyReflection, EnsureReflectionResult (..), findFirstSectionIndex, embedSectionHeaders, changesLinkPrefix, changesLink)
+import Automation.DailyReflection (ensureDailyReflection, EnsureReflectionResult (..), findFirstSectionIndex, embedSectionHeaders, upsertChangesPreview)
 import Automation.Frontmatter (parseFrontmatter, quoteYamlValue)
 import Automation.PacificTime (formatDay)
 import Automation.Platform (Platform (..), updatesSectionHeader)
@@ -389,6 +391,10 @@ parseStatsPageCount sectionText =
           numberStr = T.takeWhile isDigit afterEmoji
       in fromMaybe 0 (readMaybe (T.unpack numberStr))
 
+extractStatsLine :: Text -> Maybe Text
+extractStatsLine content =
+  find (T.isPrefixOf "📊 ") (T.splitOn "\n" content)
+
 -- Core logic: parse existing → merge new → render
 convertToEntry :: UpdateLink -> PageEntry
 convertToEntry (UpdateLink pathNewtype titleNewtype details) =
@@ -518,13 +524,13 @@ ensureChangesPage changesDir date = do
           when (updated /= prevContent) $
             TIO.writeFile prevPath updated
 
-ensureChangesLinkInReflection :: FilePath -> Day -> IO ()
-ensureChangesLinkInReflection reflectionPath date = do
+updateChangesPreviewInReflection :: FilePath -> Day -> Text -> IO ()
+updateChangesPreviewInReflection reflectionPath date statsLine = do
   reflectionExists <- doesFileExist reflectionPath
   when reflectionExists $ do
     content <- TIO.readFile reflectionPath
-    unless (T.isInfixOf changesLinkPrefix content) $ do
-      let updated = T.stripEnd content <> "\n\n" <> changesLink date <> "\n"
+    let updated = upsertChangesPreview content date statsLine
+    when (updated /= content) $
       TIO.writeFile reflectionPath updated
 
 extractTitleFromFile :: FilePath -> IO Text
@@ -568,7 +574,8 @@ addUpdateLinksToReflection vaultDir date links = do
     then pure False
     else do
       TIO.writeFile changesPath updated
-      ensureChangesLinkInReflection reflectionPath date
+      forM_ (extractStatsLine updated)
+        (updateChangesPreviewInReflection reflectionPath date)
       let linkPaths = T.intercalate ", " (fmap (unRelativePath . updateRelativePath) links)
       TIO.putStrLn ("  \128260 Added update link(s) to " <> dateText <> " changes: " <> linkPaths)
       pure True

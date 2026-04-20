@@ -13,6 +13,8 @@ module Automation.DailyReflection
   , embedSectionHeaders
   , changesLinkPrefix
   , changesLink
+  , buildChangesStatsPreview
+  , upsertChangesPreview
   ) where
 
 import Control.Monad (when)
@@ -41,8 +43,35 @@ embedSectionHeaders = [Twitter.sectionHeader, Bluesky.sectionHeader, Mastodon.se
 changesLinkPrefix :: Text
 changesLinkPrefix = "## [[changes/"
 
-changesLink :: Day -> Text
-changesLink date = "## " <> formatWikilink ("changes/" <> formatDay date) "\128260 Changes"
+changesLink :: Text
+changesLink = "## " <> formatWikilink "changes/index" "\128260 Changes"
+
+changesStatsPreviewLinePrefix :: Text
+changesStatsPreviewLinePrefix = "[[changes/"
+
+buildChangesStatsPreview :: Day -> Text -> Text
+buildChangesStatsPreview date statsLine =
+  formatWikilink ("changes/" <> formatDay date) (formatDay date) <> " | " <> statsLine
+
+upsertChangesPreview :: Text -> Day -> Text -> Text
+upsertChangesPreview content date statsLine =
+  let preview = buildChangesStatsPreview date statsLine
+  in if T.isInfixOf changesLinkPrefix content
+    then replaceChangesSection content preview
+    else T.stripEnd content <> "\n\n" <> changesLink <> "\n" <> preview <> "\n"
+
+replaceChangesSection :: Text -> Text -> Text
+replaceChangesSection content preview =
+  let contentLines = T.splitOn "\n" content
+      (before, fromChanges) = break (T.isPrefixOf changesLinkPrefix) contentLines
+  in case fromChanges of
+    [] -> content
+    (_ : rest) ->
+      let afterOld = case rest of
+            (nextLine : remaining)
+              | T.isPrefixOf changesStatsPreviewLinePrefix nextLine -> remaining
+            _ -> rest
+      in T.intercalate "\n" (before <> [changesLink, preview] <> afterOld)
 
 trailingSectionHeaders :: [Text]
 trailingSectionHeaders = updatesSectionHeader : changesLinkPrefix : embedSectionHeaders
@@ -78,7 +107,7 @@ buildReflectionContent date previousDate =
     , formatWikilink "index" "Home" <> " > " <> directoryIndexLink Reflections <> backLink
     , "# " <> dateText
     , ""
-    , changesLink date
+    , changesLink
     , ""
     ]
 

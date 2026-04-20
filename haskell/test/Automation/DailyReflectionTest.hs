@@ -22,6 +22,7 @@ tests = testGroup "DailyReflection"
   , addForwardLinkTests
   , insertPostLinkTests
   , aiBlogSectionTests
+  , changesStatsPreviewTests
   , propertyTests
   ]
 
@@ -70,11 +71,11 @@ buildReflectionContentTests = testGroup "buildReflectionContent"
       in assertBool "contains Author" (T.isInfixOf "Author:" result)
   , testCase "includes changes link at the bottom" $
       let result = buildReflectionContent (fromGregorian 2026 4 1) Nothing
-      in assertBool "contains changes link" (T.isInfixOf "## [[changes/2026-04-01|\128260 Changes]]" result)
+      in assertBool "contains changes link" (T.isInfixOf "## [[changes/index|\128260 Changes]]" result)
   , testCase "changes link is after heading" $
       let result = buildReflectionContent (fromGregorian 2026 4 1) Nothing
           headingIdx = T.length $ fst $ T.breakOn "# 2026-04-01" result
-          changesIdx = T.length $ fst $ T.breakOn "## [[changes/2026-04-01|\128260 Changes]]" result
+          changesIdx = T.length $ fst $ T.breakOn "## [[changes/index|\128260 Changes]]" result
       in assertBool "changes link after heading" (changesIdx > headingIdx)
   ]
 
@@ -260,6 +261,58 @@ aiBlogSectionTests = testGroup "AI blog section"
           content = "# 2026-04-01\n\n" <> heading <> "\n- [[ai-blog/2026-04-01-1-post|Post Title]]"
           result = insertPostLink content aiBlogConfig "2026-04-01-1-post" (testTitle "Post Title") Nothing
       in result @?= content
+  ]
+
+--------------------------------------------------------------------------------
+-- changesStatsPreview tests
+--------------------------------------------------------------------------------
+
+changesStatsPreviewTests :: TestTree
+changesStatsPreviewTests = testGroup "changesStatsPreview"
+  [ testCase "buildChangesStatsPreview formats date link with stats" $
+      buildChangesStatsPreview (fromGregorian 2026 4 1) "\128202 3 pages \183 2 \128444\65039 images"
+        @?= "[[changes/2026-04-01|2026-04-01]] | \128202 3 pages \183 2 \128444\65039 images"
+  , testCase "changesLink points to index" $
+      changesLink @?= "## [[changes/index|\128260 Changes]]"
+  , testCase "upsertChangesPreview adds heading and preview when no changes section" $
+      let content = "# 2026-04-01\n\nBody text"
+          result = upsertChangesPreview content (fromGregorian 2026 4 1) "\128202 1 page"
+      in do
+        assertBool "has changes heading" (T.isInfixOf "## [[changes/index|\128260 Changes]]" result)
+        assertBool "has stats preview" (T.isInfixOf "[[changes/2026-04-01|2026-04-01]] | \128202 1 page" result)
+  , testCase "upsertChangesPreview updates stats preview when changes section exists" $
+      let content = "# 2026-04-01\n\n## [[changes/index|\128260 Changes]]\n[[changes/2026-04-01|2026-04-01]] | \128202 1 page\n"
+          result = upsertChangesPreview content (fromGregorian 2026 4 1) "\128202 2 pages \183 1 \128444\65039 images"
+      in do
+        assertBool "heading unchanged" (T.isInfixOf "## [[changes/index|\128260 Changes]]" result)
+        assertBool "stats preview updated" (T.isInfixOf "[[changes/2026-04-01|2026-04-01]] | \128202 2 pages \183 1 \128444\65039 images" result)
+        assertBool "old stats removed" (not (T.isInfixOf "\128202 1 page\n" result))
+  , testCase "upsertChangesPreview migrates old format heading to index link" $
+      let content = "# 2026-04-01\n\n## [[changes/2026-04-01|\128260 Changes]]\n"
+          result = upsertChangesPreview content (fromGregorian 2026 4 1) "\128202 1 page"
+      in do
+        assertBool "heading now points to index" (T.isInfixOf "## [[changes/index|\128260 Changes]]" result)
+        assertBool "has stats preview" (T.isInfixOf "[[changes/2026-04-01|2026-04-01]] | \128202 1 page" result)
+  , testCase "upsertChangesPreview inserts stats preview when heading exists but no preview" $
+      let content = "# 2026-04-01\n\n## [[changes/index|\128260 Changes]]\n"
+          result = upsertChangesPreview content (fromGregorian 2026 4 1) "\128202 1 page"
+      in do
+        assertBool "heading unchanged" (T.isInfixOf "## [[changes/index|\128260 Changes]]" result)
+        assertBool "has stats preview" (T.isInfixOf "[[changes/2026-04-01|2026-04-01]] | \128202 1 page" result)
+  , testCase "upsertChangesPreview preserves content before changes section" $
+      let content = "# 2026-04-01\n\nBody text\n\n## [[changes/index|\128260 Changes]]\n[[changes/2026-04-01|2026-04-01]] | \128202 1 page\n"
+          result = upsertChangesPreview content (fromGregorian 2026 4 1) "\128202 2 pages"
+      in do
+        assertBool "body preserved" (T.isInfixOf "Body text" result)
+        assertBool "heading preserved" (T.isInfixOf "# 2026-04-01" result)
+  , testProperty "upsertChangesPreview is idempotent" $
+      \year month dayNum ->
+        let day = fromGregorian year (abs month `mod` 12 + 1) (abs dayNum `mod` 28 + 1)
+            content = "# " <> formatDay day <> "\n\nBody"
+            statsLine = "\128202 3 pages"
+            once = upsertChangesPreview content day statsLine
+            twice = upsertChangesPreview once day statsLine
+        in once == twice
   ]
 
 --------------------------------------------------------------------------------

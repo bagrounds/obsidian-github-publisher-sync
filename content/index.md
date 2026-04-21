@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-04-20T13:06:42-07:00
+updated: 2026-04-20T21:33:29-07:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -71,17 +71,17 @@ updated: 2026-04-20T13:06:42-07:00
   
   
 ## [📚 Books](./books/index.md) (960)  
+- [💰➡️ The Triumph of Injustice: How the Rich Dodge Taxes and How to Make Them Pay](./books/the-triumph-of-injustice-how-the-rich-dodge-taxes-and-how-to-make-them-pay.md)  
+- [🤖🐍🔎 AI Snake Oil: What Artificial Intelligence Can Do, What It Can't, and How to Tell the Difference](./books/ai-snake-oil.md)  
 - [🤟🆎 American Sign Language Dictionary](./books/american-sign-language-dictionary.md)  
 - [🇺🇸🕵️‍♂️🚫 Where Law Ends: Inside the Mueller Investigation](./books/where-law-ends-inside-the-mueller-investigation.md)  
-- [🧠🤔❓ Rationality: What It Is, Why It Seems Scarce, Why It Matters](./books/rationality.md)  
-- [🐕🐈‍⬛🩺❤️‍🩹 Small Animal Internal Medicine](./books/small-animal-internal-medicine.md)  
   
   
-## [📺 Videos](./videos/index.md) (774)  
-- [🤟🔤📚 Learn the ASL Alphabet Fast | American Sign Language ABCs](./videos/learn-the-asl-alphabet-fast-american-sign-language-abcs.md)  
-- [🧠🗣️1️⃣➡️3️⃣ 'Prompting' Just Split Into 4 Skills. You Only Know One. Here's Why You Need the Other 3 in 2026.](./videos/prompting-just-split-into-4-skills-you-only-know-one-heres-why-you-need-the-other-3-in-2026.md)  
-- [🇻🇪⚔️💥 Tamara Keith and Amy Walter on the political fallout from military action in Venezuela](./videos/tamara-keith-and-amy-walter-on-the-political-fallout-from-military-action-in-venezuela.md)  
-- [⚡🧠🚀✨ ADHD & How Anyone Can Improve Their Focus | Huberman Lab Essentials](./videos/adhd-how-anyone-can-improve-their-focus-huberman-lab-essentials.md)  
+## [📺 Videos](./videos/index.md) (775)  
+- [💰✨🕰️🏭 The Gilded Age | Full Documentary | AMERICAN EXPERIENCE | PBS](./videos/the-gilded-age-full-documentary-american-experience-pbs.md)  
+- [🍎➡️🥗💯 Eat your food in the RIGHT ORDER: 75% healthier with this small trick | Episode 6 of 18](./videos/eat-your-food-in-the-right-order-75-healthier-with-this-small-trick-episode-6-of-18.md)  
+- [🤯➡️🗣️👥➡️🤖 Everyone You Know Is About to Try Claude (I Showed 3 People for 5 Minutes - All 3 Switched)](./videos/everyone-you-know-is-about-to-try-claude-i-showed-3-people-for-5-minutes-all-3-switched.md)  
+- [⚔️🇮🇷📰 War with Iran | PBS News Special Report](./videos/war-with-iran-pbs-news-special-report.md)  
   
   
 ## [🌌 Topics](./topics/index.md) (91)  
@@ -92,10 +92,10 @@ updated: 2026-04-20T13:06:42-07:00
   
   
 ## [📄  Articles](./articles/index.md) (84)  
+- [🤖⚙️🛠️ Agentic Engineering Patterns](./articles/agentic-engineering-patterns.md)  
 - [🤖⚙️🧠 Writing about Agentic Engineering Patterns](./articles/writing-about-agentic-engineering-patterns.md)  
 - [🐈‍⬛🧪💊🩺 Treatment of Feline Gastrointestinal Small-Cell Lymphoma With Chlorambucil and Glucocorticoids](./articles/treatment-of-feline-gastrointestinal-small-cell-lymphoma-with-chlorambucil-and-glucocorticoids.md)  
 - [⚙️🛡️🐛 Making Reliable Distributed Systems in the Presence of Software Errors](./articles/making-reliable-distributed-systems-in-the-presence-of-software-errors.md)  
-- [⚙️🤖📈🤝 Engineering and AI: Advancing the synergy](./articles/engineering-and-ai-advancing-the-synergy.md)  
   
   
 ## [🤖💬 Bot Chats](./bot-chats/index.md) (49)  

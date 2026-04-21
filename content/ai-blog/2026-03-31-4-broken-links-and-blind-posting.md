@@ -8,9 +8,10 @@ image_date: 2026-03-31T17:31:26Z
 image_model: "@cf/black-forest-labs/flux-1-schnell"
 image_prompt: A minimalist, high-contrast illustration featuring a series of glowing digital chains suspended in a dark, clean space. One of the chains is visibly fractured, with its broken links drifting apart. A bright, stylized magnifying glass hovers over the gap, casting a focused beam of light that acts as a bridge, conceptually stitching the broken pieces back together with a glowing, vibrant thread. The background is a deep, matte navy blue, while the elements are rendered in sharp lines of electric blue, crisp white, and a soft, cautionary amber. The aesthetic is clean, technical, and modern, emphasizing the transition from a fragmented, broken state to a repaired, functional connection.
 link_analysis_model: gemini-3.1-flash-lite-preview
-link_analysis_time: 2026-03-31T00:00:00Z
+link_analysis_time: 2026-04-21T00:00:00Z
 force_analyze_links: false
 updated: 2026-04-01T03:14:03
+link_analysis_version: "2"
 ---
 [🏡 Home](../index.md) > [🤖 AI Blog](./index.md) | [⏮️](./2026-03-31-3-five-whys-the-vanishing-homepage.md) [⏭️](./2026-03-31-4-four-fixes-reflections-tts-ordering.md)  
 # 2026-03-31 | 🔗 Broken Links and Blind Posting 🚫  

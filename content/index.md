@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-04-20T21:33:29-07:00
+updated: 2026-04-21T09:00:56-07:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -14,32 +14,32 @@ updated: 2026-04-20T21:33:29-07:00
 🔊 Listen to any page with built in audio control.  
 💬 Comment on any page with your GitHub account.  
   
-## [🪞 Reflections](./reflections/index.md) ~ Blog (522)  
-- [2026-04-20](./reflections/2026-04-20.md)  
+## [🪞 Reflections](./reflections/index.md) ~ Blog (523)  
+- [2026-04-21](./reflections/2026-04-21.md)  
+- [2026-04-20 | 🥳 Age 🌟 Progress 🌊 Secret 🐔 Machine 🏛️ Systems 📺🌟📰🐔🤖🏛️🔀🔄🤖🐲](./reflections/2026-04-20.md)  
 - [2026-04-19 | 🥳 Two 🕯️🕯️](./reflections/2026-04-19.md)  
 - [2026-04-18 | 🏆 Beat ⚙️ Systems 🔄 Change 🇺🇸 American 🌟 Progress, 📈 Expanding ✨ Dreams, 🏗️ Architecture 🏛️ Public 🔍 Audit 📊 Analytics ✅ Truth. 📺🌟📰🐔🤖🏛️🔀🔄🤖🐲](./reflections/2026-04-18.md)  
-- [2026-04-17 | 🌟 Children 💯 Of 🗣️ Speaks 😠 Furious 📅 April 🇺🇸 American 🎙️ Grounded 🚨 Worry 🌟 Healing 🌊 Currents 🖼️ Painting 🪞 Mirror 🏛️ Reciprocity 🛠️ Fixing 🚫 Posting 🔀 Architectures 🐔🤖🌍🖼️🪞🏛️🛠️🚫🔀 📚📺🌟📰🐔🤖🏛️🔀🤖🐲](./reflections/2026-04-17.md)  
   
   
-## [🤖 AI Blog](./ai-blog/index.md) (167)  
+## [🤖 AI Blog](./ai-blog/index.md) (168)  
+- [2026-04-20 | 📊 Changes Preview in Reflections 🪞](./ai-blog/2026-04-20-1-changes-preview-in-reflections.md)  
 - [2026-04-19 | 🎂 Blogiversary Two: A Year of Daily Reflections, Haskell, and Six AI Blogs 🕯️🕯️](./ai-blog/2026-04-19-3-blogiversary-2.md)  
 - [2026-04-19 | 🏁 Finishing the Haskell Architecture Journey 🗺️](./ai-blog/2026-04-19-2-finishing-the-haskell-architecture-journey.md)  
 - [2026-04-19 | 🔧 Fixing the Misplaced H2 🤖](./ai-blog/2026-04-19-1-fixing-the-misplaced-h2.md)  
-- [2026-04-18 | 🔗 Changes Link and Analytics Clarity 🤖](./ai-blog/2026-04-18-3-changes-link-and-analytics-clarity.md)  
   
   
-## [🤖 Auto Blog Zero](./auto-blog-zero/index.md) (41)  
+## [🤖 Auto Blog Zero](./auto-blog-zero/index.md) (42)  
+- [2026-04-21 | 🤖 🏗️ Preventing Synthetic Entropy in Adversarial Loops 🤖](./auto-blog-zero/2026-04-21-preventing-synthetic-entropy-in-adversarial-loops.md)  
 - [2026-04-20 | 🤖 The Ethics of the Adversarial Machine 🤖](./auto-blog-zero/2026-04-20-the-ethics-of-the-adversarial-machine.md)  
 - [2026-04-19 | 🤖 📆 Weekly Recap: The Architecture of Adversarial Verification 🤖](./auto-blog-zero/2026-04-19-weekly-recap-the-architecture-of-adversarial-verification.md)  
 - [2026-04-18 | 🤖 🧱 The Architecture of Adversarial Verification 🤖](./auto-blog-zero/2026-04-18-the-architecture-of-adversarial-verification.md)  
-- [2026-04-17 | 🤖 The Recursive Mirror 🤖](./auto-blog-zero/2026-04-17-the-recursive-mirror.md)  
   
   
-## [🐔 Chickie Loo](./chickie-loo/index.md) (41)  
+## [🐔 Chickie Loo](./chickie-loo/index.md) (42)  
+- [2026-04-21 | 🐔 🔌 Electricians, Eggs, and the Art of Not Naming Calves 🐔](./chickie-loo/2026-04-21-electricians-eggs-and-the-art-of-not-naming-calves.md)  
 - [2026-04-20 | 🐔 🍽️ A Dining Room of Dreams and a Cow’s Quiet Secret 🐔](./chickie-loo/2026-04-20-a-dining-room-of-dreams-and-a-cow-s-quiet-secret.md)  
 - [2026-04-19 | 🐔 🥂 A Dance Floor in the Making 🐔](./chickie-loo/2026-04-19-a-dance-floor-in-the-making.md)  
 - [2026-04-18 | 🐔 🍎 The Line-Cutters and the Garden Dreams 🐔](./chickie-loo/2026-04-18-the-line-cutters-and-the-garden-dreams.md)  
-- [2026-04-17 | 🐔 🖼️ A Morning Like a Rockwell Painting 🐔](./chickie-loo/2026-04-17-a-morning-like-a-rockwell-painting.md)  
   
   
 ## [🏛️ Systems for Public Good](./systems-for-public-good/index.md) (30)  
@@ -49,18 +49,18 @@ updated: 2026-04-20T21:33:29-07:00
 - [2026-04-17 | 🏛️ Education as Reciprocity: Learning, Teaching, and Serving 🏛️](./systems-for-public-good/2026-04-17-education-as-reciprocity-learning-teaching-and-serving.md)  
   
   
-## [📰 The Noise](./the-noise/index.md) (11)  
+## [📰 The Noise](./the-noise/index.md) (12)  
+- [2026-04-21 | 📰 The Dual Engine of Progress and Conflict 📰](./the-noise/2026-04-21-the-dual-engine-of-progress-and-conflict.md)  
 - [2026-04-20 | 📰 🌐 Shifting Sands, Enduring Currents 🌊 📰](./the-noise/2026-04-20-shifting-sands-enduring-currents.md)  
 - [2026-04-19 | 📰 🌪️ Turbulent Crossroads, Persistent Progress 🌍 📰](./the-noise/2026-04-19-turbulent-crossroads-persistent-progress.md)  
 - [2026-04-18 | 📰 ⚡ Converging Tensions, Expanding Horizons 🌍 📰](./the-noise/2026-04-18-converging-tensions-expanding-horizons.md)  
-- [2026-04-17 | 📰 ⚡ Global Currents, Echoing Futures 🌍 📰](./the-noise/2026-04-17-global-currents-echoing-futures.md)  
   
   
-## [🌟 Positivity Bias](./positivity-bias/index.md) (10)  
+## [🌟 Positivity Bias](./positivity-bias/index.md) (11)  
+- [2026-04-21 | 🌟 Health, Environment, and Diplomacy Shine Bright 🌟](./positivity-bias/2026-04-21-health-environment-and-diplomacy-shine-bright.md)  
 - [2026-04-20 | 🌟 Global Innovations Spark Collective Progress 🌟](./positivity-bias/2026-04-20-global-innovations-spark-collective-progress.md)  
 - [2026-04-19 | 🌟 Weekend Glow: Innovations Blossom and Communities Thrive 🌟](./positivity-bias/2026-04-19-weekend-glow-innovations-blossom-and-communities-thrive.md)  
 - [2026-04-18 | 🌟 Horizons of Progress: Healing, Harmony, and a Greener Earth 🌟](./positivity-bias/2026-04-18-horizons-of-progress-healing-harmony-and-a-greener-earth.md)  
-- [2026-04-17 | 🌟 Innovations in Healing and Community Resilience 🌟](./positivity-bias/2026-04-17-innovations-in-healing-and-community-resilience.md)  
   
   
 ## [🔀 Convergence](./convergence/index.md) (7)  
@@ -71,17 +71,17 @@ updated: 2026-04-20T21:33:29-07:00
   
   
 ## [📚 Books](./books/index.md) (960)  
-- [💰➡️ The Triumph of Injustice: How the Rich Dodge Taxes and How to Make Them Pay](./books/the-triumph-of-injustice-how-the-rich-dodge-taxes-and-how-to-make-them-pay.md)  
-- [🤖🐍🔎 AI Snake Oil: What Artificial Intelligence Can Do, What It Can't, and How to Tell the Difference](./books/ai-snake-oil.md)  
-- [🤟🆎 American Sign Language Dictionary](./books/american-sign-language-dictionary.md)  
-- [🇺🇸🕵️‍♂️🚫 Where Law Ends: Inside the Mueller Investigation](./books/where-law-ends-inside-the-mueller-investigation.md)  
+- [🌐🔗🤝💻 Distributed Algorithms](./books/distributed-algorithms.md)  
+- [🇸🇪🇩🇰🇳🇴🇫🇮🧩 The Nordic Theory of Everything: In Search of a Better Life](./books/the-nordic-theory-of-everything.md)  
+- [🧠🧠🧠🧠 A Thousand Brains: A New Theory of Intelligence](./books/a-thousand-brains.md)  
+- [⛈️🏛️ Storm at the Capitol: An Oral History of January 6th](./books/storm-at-the-capitol-an-oral-history-of-january-6th.md)  
   
   
 ## [📺 Videos](./videos/index.md) (775)  
-- [💰✨🕰️🏭 The Gilded Age | Full Documentary | AMERICAN EXPERIENCE | PBS](./videos/the-gilded-age-full-documentary-american-experience-pbs.md)  
-- [🍎➡️🥗💯 Eat your food in the RIGHT ORDER: 75% healthier with this small trick | Episode 6 of 18](./videos/eat-your-food-in-the-right-order-75-healthier-with-this-small-trick-episode-6-of-18.md)  
-- [🤯➡️🗣️👥➡️🤖 Everyone You Know Is About to Try Claude (I Showed 3 People for 5 Minutes - All 3 Switched)](./videos/everyone-you-know-is-about-to-try-claude-i-showed-3-people-for-5-minutes-all-3-switched.md)  
-- [⚔️🇮🇷📰 War with Iran | PBS News Special Report](./videos/war-with-iran-pbs-news-special-report.md)  
+- [🤔🤯❤️📖 How to Understand Emotions | Dr. Lisa Feldman Barrett](./videos/how-to-understand-emotions-dr-lisa-feldman-barrett.md)  
+- [🧠⚙️🛠️💡 You aren't at the mercy of your emotions -- your brain creates them | Lisa Feldman Barrett](./videos/you-arent-at-the-mercy-of-your-emotions-your-brain-creates-them-lisa-feldman-barrett.md)  
+- [News Wrap: Senate pulls all-nighter to pass Republican budget bill](./videos/news-wrap-senate-pulls-all-nighter-to-pass-republican-budget-bill.md)  
+- [Protestors join more than a thousand rallies across the U.S. against Trump’s policies](./videos/protestors-join-more-than-a-thousand-rallies-across-the-us-against-trumps-policies.md)  
   
   
 ## [🌌 Topics](./topics/index.md) (91)  
@@ -92,24 +92,24 @@ updated: 2026-04-20T21:33:29-07:00
   
   
 ## [📄  Articles](./articles/index.md) (84)  
-- [🤖⚙️🛠️ Agentic Engineering Patterns](./articles/agentic-engineering-patterns.md)  
-- [🤖⚙️🧠 Writing about Agentic Engineering Patterns](./articles/writing-about-agentic-engineering-patterns.md)  
-- [🐈‍⬛🧪💊🩺 Treatment of Feline Gastrointestinal Small-Cell Lymphoma With Chlorambucil and Glucocorticoids](./articles/treatment-of-feline-gastrointestinal-small-cell-lymphoma-with-chlorambucil-and-glucocorticoids.md)  
-- [⚙️🛡️🐛 Making Reliable Distributed Systems in the Presence of Software Errors](./articles/making-reliable-distributed-systems-in-the-presence-of-software-errors.md)  
+- [🤖🧠💻 Agentic Code Reasoning](./articles/agentic-code-reasoning.md)  
+- [🗺️🚀🤖 A Field Guide to Rapidly Improving AI Products](./articles/a-field-guide-to-rapidly-improving-ai-products.md)  
+- [🤖🛠️🧠📄 What Fred Brooks Can Teach Us About Writing Specs for AI](./articles/what-fred-brooks-can-teach-us-about-writing-specs-for-ai.md)  
+- [💰⚙️📈🔍 Defining and Characterizing Reward Hacking](./articles/defining-and-characterizing-reward-hacking.md)  
   
   
 ## [🤖💬 Bot Chats](./bot-chats/index.md) (49)  
+- [🧭 Managing 🕸️ Complexity 🧠](./bot-chats/managing-complexity.md)  
+- [⛽ Fueling a 👥 Movement to ⚔️ Fight 👹 Tyranny and 💪 Strengthen 🗳️ Democracy](./bot-chats/fueling-a-movement-to-fight-tyranny-and-strengthen-democracy.md)  
 - [📏💻✅ Engineering as Specification](./bot-chats/engineering-as-specification.md)  
 - [✍️🥇🇺🇸 Creating the Most Popular Title in the Country](./bot-chats/creating-the-most-popular-title-in-the-country.md)  
-- [💭🚫➡️💡 Effective Thought-Action Defusion Techniques](./bot-chats/effective-thought-action-defusion-techniques.md)  
-- [📈🌐🏆📢 Creating the Most Popular Blog in the World](./bot-chats/creating-the-most-popular-blog-in-the-world.md)  
   
   
 ## [💾 Software](./software/index.md) (33)  
+- [🕸️📊 Google Analytics](./software/google-analytics.md)  
 - [⚛️🔄 React](./software/react.md)  
 - [🚄🎲✅ QuickCheck](./software/quickcheck.md)  
 - [💎🔬🔍📈 Quartz](./software/quartz.md)  
-- [🐍💻🐍 Python](./software/python.md)  
   
   
 ## [👥 People](./people/index.md) (18)  

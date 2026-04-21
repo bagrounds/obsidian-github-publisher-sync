@@ -10,8 +10,9 @@ Channel: Jocko Podcast
 tags:
 youtube: https://youtu.be/IdTMDpizis8
 link_analysis_model: gemini-3.1-flash-lite-preview
-link_analysis_time: 2026-04-06T00:00:00Z
+link_analysis_time: 2026-04-20T00:00:00Z
 force_analyze_links: false
+link_analysis_version: "2"
 ---
 [Home](../index.md) > [Videos](./index.md)  
 # 🪖💪💯 Jocko Willink «GOOD» (Official)  
@@ -31,8 +32,8 @@ force_analyze_links: false
 ## 🤔 Evaluation  
   
 * ⚖️ This mindset mirrors Stoic philosophy, specifically the concept of Amor Fati or loving one's fate.  
-* 🏛️ Meditations by Marcus Aurelius, published by Penguin Classics, teaches that the impediment to action advances action.  
-* 🔄 While Jocko focuses on aggressive action, Man's Search for Meaning by Viktor Frankl, published by Beacon Press, suggests that finding meaning in suffering is a psychological necessity for survival.  
+* 🏛️ [🤔🧘 Meditations](../books/meditations.md) by Marcus Aurelius, published by Penguin Classics, teaches that the impediment to action advances action.  
+* 🔄 While Jocko focuses on aggressive action, [🔦💡 Man's Search for Meaning](../books/mans-search-for-meaning.md) by Viktor Frankl, published by Beacon Press, suggests that finding meaning in suffering is a psychological necessity for survival.  
 * 🔬 Research into the growth mindset, detailed in Mindset by Carol Dweck and published by Ballantine Books, supports the idea that viewing failure as a learning opportunity leads to higher achievement.  
 * 🔍 To gain a better understanding, one should explore the physiological effects of chronic stress versus the "challenge response" in performance psychology.  
   

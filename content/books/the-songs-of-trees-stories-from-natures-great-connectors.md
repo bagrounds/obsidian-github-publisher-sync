@@ -7,12 +7,13 @@ share: true
 CTA: 🌳 Listen to nature's connections.
 affiliate link: https://amzn.to/47IXCqc
 link_analysis_model: gemini-3.1-flash-lite-preview
-link_analysis_time: 2026-04-05T00:00:00Z
+link_analysis_time: 2026-04-20T00:00:00Z
 force_analyze_links: false
 updated: 2026-04-05T15:19:52
 image_date: 2026-04-13T15:38:58Z
 image_model: "@cf/black-forest-labs/flux-1-schnell"
 image_prompt: A cross-section illustration of a lush, ancient forest floor. Above ground, a majestic, sprawling tree with vibrant green leaves stretches toward a soft, golden-hour sky. Below the soil, a luminous, glowing network of mycelium threads weaves through the earth, physically connecting the tree’s roots to the roots of neighboring saplings and diverse flora. These underground filaments pulse with faint, ethereal light, suggesting a flow of energy and information. The color palette features deep forest greens, earthy browns, and bioluminescent teals and soft golds, highlighting the hidden architecture of the wood-wide web. The composition emphasizes the scale of the tree above balanced by the complex, interconnected vitality beneath the surface.
+link_analysis_version: "2"
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🌳🎶 The Songs of Trees: Stories from Nature's Great Connectors  

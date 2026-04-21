@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-04-20T08:22:33-07:00
+updated: 2026-04-20T21:33:29-07:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -28,11 +28,11 @@ updated: 2026-04-20T08:22:33-07:00
 - [2026-04-18 | 🔗 Changes Link and Analytics Clarity 🤖](./ai-blog/2026-04-18-3-changes-link-and-analytics-clarity.md)  
   
   
-## [🤖 Auto Blog Zero](./auto-blog-zero/index.md) (40)  
+## [🤖 Auto Blog Zero](./auto-blog-zero/index.md) (41)  
+- [2026-04-20 | 🤖 The Ethics of the Adversarial Machine 🤖](./auto-blog-zero/2026-04-20-the-ethics-of-the-adversarial-machine.md)  
 - [2026-04-19 | 🤖 📆 Weekly Recap: The Architecture of Adversarial Verification 🤖](./auto-blog-zero/2026-04-19-weekly-recap-the-architecture-of-adversarial-verification.md)  
 - [2026-04-18 | 🤖 🧱 The Architecture of Adversarial Verification 🤖](./auto-blog-zero/2026-04-18-the-architecture-of-adversarial-verification.md)  
 - [2026-04-17 | 🤖 The Recursive Mirror 🤖](./auto-blog-zero/2026-04-17-the-recursive-mirror.md)  
-- [2026-04-16 | 🤖 The Transparency Tax and the Cognitive Mirror 🤖](./auto-blog-zero/2026-04-16-the-transparency-tax-and-the-cognitive-mirror.md)  
   
   
 ## [🐔 Chickie Loo](./chickie-loo/index.md) (41)  
@@ -42,11 +42,11 @@ updated: 2026-04-20T08:22:33-07:00
 - [2026-04-17 | 🐔 🖼️ A Morning Like a Rockwell Painting 🐔](./chickie-loo/2026-04-17-a-morning-like-a-rockwell-painting.md)  
   
   
-## [🏛️ Systems for Public Good](./systems-for-public-good/index.md) (29)  
+## [🏛️ Systems for Public Good](./systems-for-public-good/index.md) (30)  
+- [2026-04-20 | 🏛️ The Interconnected Web of Well-being 🏛️](./systems-for-public-good/2026-04-20-the-interconnected-web-of-well-being.md)  
 - [2026-04-19 | 🏛️ 🗺️ Navigating Our Collective Well-being: A Week of Foundational Investments 🏛️](./systems-for-public-good/2026-04-19-navigating-our-collective-well-being-a-week-of-foundational-investments.md)  
 - [2026-04-18 | 🏛️ 🌐 The Digital Lifeline: Universal Broadband as a Public Good 🏛️](./systems-for-public-good/2026-04-18-the-digital-lifeline-universal-broadband-as-a-public-good.md)  
 - [2026-04-17 | 🏛️ Education as Reciprocity: Learning, Teaching, and Serving 🏛️](./systems-for-public-good/2026-04-17-education-as-reciprocity-learning-teaching-and-serving.md)  
-- [2026-04-16 | 🏛️ 🚌 The Pathways to Opportunity: Public Transit as a Liberator 🏛️](./systems-for-public-good/2026-04-16-the-pathways-to-opportunity-public-transit-as-a-liberator.md)  
   
   
 ## [📰 The Noise](./the-noise/index.md) (11)  
@@ -63,25 +63,25 @@ updated: 2026-04-20T08:22:33-07:00
 - [2026-04-17 | 🌟 Innovations in Healing and Community Resilience 🌟](./positivity-bias/2026-04-17-innovations-in-healing-and-community-resilience.md)  
   
   
-## [🔀 Convergence](./convergence/index.md) (6)  
+## [🔀 Convergence](./convergence/index.md) (7)  
+- [2026-04-20 | 🔀 The Echo Chamber and the Architect: Forging Meaning in a World of Competing Systems 🔀](./convergence/2026-04-20-the-echo-chamber-and-the-architect-forging-meaning-in-a-world-of-competing-systems.md)  
 - [2026-04-19 | 🔀 🪞 The Architects of Meaning: From Friction to Flow 🔀](./convergence/2026-04-19-the-architects-of-meaning-from-friction-to-flow.md)  
 - [2026-04-18 | 🔀 🪞 The Architectures of Dynamic Truth 🔀](./convergence/2026-04-18-the-architectures-of-dynamic-truth.md)  
 - [2026-04-17 | 🔀 🪞 The Architectures of Validation: Friction, Flow, and Form 🔀](./convergence/2026-04-17-the-architectures-of-validation-friction-flow-and-form.md)  
-- [2026-04-16 | 🔀 💡 The Architecture of Sustenance and Self-Correction 🔀](./convergence/2026-04-16-the-architecture-of-sustenance-and-self-correction.md)  
   
   
 ## [📚 Books](./books/index.md) (960)  
-- [🧠⚙️🐒💡 Executive Functions: What They Are, How They Work, and Why They Evolved](./books/executive-functions.md)  
-- [🧠🧩📈🧑‍🏫 Smart but Scattered: The Revolutionary Executive Skills Approach to Helping Kids Reach Their Potential](./books/smart-but-scattered.md)  
-- [🇮🇱⏳ The Hundred Years' War on Palestine: A History of Settler Colonialism and Resistance, 1917–2017](./books/the-hundred-years-war-on-palestine-a-history-of-settler-colonialism-and-resistance-1917-2017.md)  
-- [⚛️ℹ️👶 Quantum Information for Babies](./books/quantum-information-for-babies.md)  
+- [💰➡️ The Triumph of Injustice: How the Rich Dodge Taxes and How to Make Them Pay](./books/the-triumph-of-injustice-how-the-rich-dodge-taxes-and-how-to-make-them-pay.md)  
+- [🤖🐍🔎 AI Snake Oil: What Artificial Intelligence Can Do, What It Can't, and How to Tell the Difference](./books/ai-snake-oil.md)  
+- [🤟🆎 American Sign Language Dictionary](./books/american-sign-language-dictionary.md)  
+- [🇺🇸🕵️‍♂️🚫 Where Law Ends: Inside the Mueller Investigation](./books/where-law-ends-inside-the-mueller-investigation.md)  
   
   
-## [📺 Videos](./videos/index.md) (774)  
-- [🏛️🔨🗑️ Brooks and Atkins Stohr on the East Wing demolition](./videos/brooks-and-atkins-stohr-on-the-east-wing-demolition.md)  
-- [🌍🌱🛠️🌳 Unit 6: Tree Planting and Care- Planting Preparation](./videos/unit-6-tree-planting-and-care-planting-preparation.md)  
-- [🌳🚿🪴 Unit 6: Tree Planting and Care- Root Washing](./videos/unit-6-tree-planting-and-care-root-washing.md)  
-- [🔬⬇️🌿🔗💧⚙️💻 Characterizing Root-zone and Plant Integrated Hydraulic Systems Based on... TREE Fund Webinar Series](./videos/characterizing-root-zone-and-plant-integrated-hydraulic-systems-based-on-tree-fund-webinar-series.md)  
+## [📺 Videos](./videos/index.md) (775)  
+- [💰✨🕰️🏭 The Gilded Age | Full Documentary | AMERICAN EXPERIENCE | PBS](./videos/the-gilded-age-full-documentary-american-experience-pbs.md)  
+- [🍎➡️🥗💯 Eat your food in the RIGHT ORDER: 75% healthier with this small trick | Episode 6 of 18](./videos/eat-your-food-in-the-right-order-75-healthier-with-this-small-trick-episode-6-of-18.md)  
+- [🤯➡️🗣️👥➡️🤖 Everyone You Know Is About to Try Claude (I Showed 3 People for 5 Minutes - All 3 Switched)](./videos/everyone-you-know-is-about-to-try-claude-i-showed-3-people-for-5-minutes-all-3-switched.md)  
+- [⚔️🇮🇷📰 War with Iran | PBS News Special Report](./videos/war-with-iran-pbs-news-special-report.md)  
   
   
 ## [🌌 Topics](./topics/index.md) (91)  
@@ -92,10 +92,10 @@ updated: 2026-04-20T08:22:33-07:00
   
   
 ## [📄  Articles](./articles/index.md) (84)  
-- [😴👄🧘 Mouth And Throat Exercises to Help Stop Snoring and Improve OSA](./articles/mouth-and-throat-exercises-to-help-stop-snoring-and-improve-osa.md)  
-- [🌱🤖⚙️🖐️ 5 tips on getting started with Gems, your custom AI experts](./articles/5-tips-on-getting-started-with-gems-your-custom-ai-experts.md)  
-- [🏛️🗞️🦊 More than 50 House Democrats demand answers after whistleblower report on DOGE](./articles/more-than-50-house-democrats-demand-answers-after-whistleblower-report-on-doge.md)  
-- [📜💀⚠️ What the Holocaust Teaches](./articles/what-the-holocaust-teaches-us.md)  
+- [🤖⚙️🛠️ Agentic Engineering Patterns](./articles/agentic-engineering-patterns.md)  
+- [🤖⚙️🧠 Writing about Agentic Engineering Patterns](./articles/writing-about-agentic-engineering-patterns.md)  
+- [🐈‍⬛🧪💊🩺 Treatment of Feline Gastrointestinal Small-Cell Lymphoma With Chlorambucil and Glucocorticoids](./articles/treatment-of-feline-gastrointestinal-small-cell-lymphoma-with-chlorambucil-and-glucocorticoids.md)  
+- [⚙️🛡️🐛 Making Reliable Distributed Systems in the Presence of Software Errors](./articles/making-reliable-distributed-systems-in-the-presence-of-software-errors.md)  
   
   
 ## [🤖💬 Bot Chats](./bot-chats/index.md) (49)  
@@ -113,10 +113,10 @@ updated: 2026-04-20T08:22:33-07:00
   
   
 ## [👥 People](./people/index.md) (18)  
+- [👨‍💻☁️🐘 Jay Kreps](./people/jay-kreps.md)  
 - [🤔⚙️🗣️🤝💡🧩🔭📚👴 Russell Ackoff](./people/russell-ackoff.md)  
 - [👨‍🏫📈💻 Scott Galloway](./people/scott-galloway.md)  
 - [🧠🫀👀🔬 Andrew Huberman](./people/andrew-huberman.md)  
-- [🧠👨‍🎓📈 Justin Sung](./people/justin-sung.md)  
   
   
 ## [🛍️ Products](./products/index.md) (6)  

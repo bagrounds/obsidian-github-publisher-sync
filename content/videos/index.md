@@ -5,10 +5,10 @@ aliases:
 title: 📺 Videos
 URL: https://bagrounds.org/videos
 backlinks: false
-updated: 2026-04-20T08:22:33-07:00
+updated: 2026-04-20T21:33:29-07:00
 ---
 [Home](../index.md)  
-# 📺 Videos (774)  
+# 📺 Videos (775)  
 - [💰🤑🤖💡🚀💲 $0.10 per Month Runs My Entire AI Life. I'll Show You How.](./0-10-month-runs-my-entire-ai-life-ill-show-you-how.md)  
 - [📊📈📉📃👁️ 10 Charts to Understand the 900 Page Budget Bill](./10-charts-to-understand-the-900-page-budget-bill.md)  
 - [🤖🔗⬆️✅ 12-Factor Agents: Patterns of reliable LLM applications — Dex Horthy, HumanLayer](./12-factor-agents-patterns-of-reliable-llm-applications-dex-horthy-humanlayer.md)  
@@ -564,6 +564,7 @@ updated: 2026-04-20T08:22:33-07:00
 - [🌍⚡️🚫🇺🇸 The Future of Energy Has Arrived - Just Not in the U.S.](./the-future-of-energy-has-arrived-just-not-in-the-us.md)  
 - [🤖🧠📈 The future of intelligence | Demis Hassabis (Co-founder and CEO of DeepMind)](./the-future-of-intelligence-demis-hassabis-co-founder-and-ceo-of-deepmind.md)  
 - [🌐🕸️🔮 The Future of the Web • Sir Tim Berners-Lee • GOTO 2018](./the-future-of-the-web-sir-tim-berners-lee-goto-2018.md)  
+- [💰✨🕰️🏭 The Gilded Age | Full Documentary | AMERICAN EXPERIENCE | PBS](./the-gilded-age-full-documentary-american-experience-pbs.md)  
 - [The Happiest Baby on the Block - Harvey Karp (Summary)](./the-happiest-baby-on-the-block-harvey-karp-summary.md)  
 - [🤯🤖✅ The Hardest Problem AI Ever Solved, with Google DeepMind CEO](./the-hardest-problem-ai-ever-solved-with-google-deepmind-ceo.md)  
 - [👿🏷️📉 The hidden history of demonizing SNAP recipients | Code Switch](./the-hidden-history-of-demonizing-snap-recipients-code-switch.md)  

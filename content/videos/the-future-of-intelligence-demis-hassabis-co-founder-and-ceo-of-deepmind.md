@@ -10,8 +10,9 @@ Channel: Google DeepMind
 tags:
 youtube: https://youtu.be/PqVbypvxDto
 link_analysis_model: gemini-3.1-flash-lite-preview
-link_analysis_time: 2026-04-06T00:00:00Z
+link_analysis_time: 2026-04-20T00:00:00Z
 force_analyze_links: false
+link_analysis_version: "2"
 ---
 [Home](../index.md) > [Videos](./index.md)  
 # 🤖🧠📈 The future of intelligence | Demis Hassabis (Co-founder and CEO of DeepMind)  
@@ -34,9 +35,9 @@ force_analyze_links: false
   
 ## 🤔 Evaluation  
   
-* ⚖️ Hassabis frames AI as a tool for scientific abundance, while sources like The Coming Wave by Mustafa Suleyman (Crown) emphasize the inherent danger of proliferation and the difficulty of containment.  
+* ⚖️ Hassabis frames AI as a tool for scientific abundance, while sources like [🌊🤖🤔 The Coming Wave: Technology, Power, and the 21st Century's Greatest Dilemma](../books/the-coming-wave-technology-power-and-the-21st-centurys-greatest-dilemma.md) by Mustafa Suleyman (Crown) emphasize the inherent danger of proliferation and the difficulty of containment.  
 * 📉 While Google highlights model strengths, reports from the AI Index by Stanford University (Stanford Institute for Human-Centered AI) point to the plateauing of performance on traditional benchmarks and the massive environmental costs of training.  
-* 💸 The optimistic view of post-scarcity contrasts with analysis in The Age of AI by Henry Kissinger, Eric Schmidt, and Daniel Huttenlocher (Little, Brown and Company), which warns that AI may erode human reason and traditional geopolitical stability.  
+* 💸 The optimistic view of post-scarcity contrasts with analysis in [🔮🤖 The Age of AI](../books/the-age-of-ai.md) by Henry Kissinger, Eric Schmidt, and Daniel Huttenlocher (Little, Brown and Company), which warns that AI may erode human reason and traditional geopolitical stability.  
 * 🔬 Understanding the specific technical hurdles of AI safety requires exploring Formal Verification for Deep Learning as discussed in research from the Future of Humanity Institute (University of Oxford).  
   
 ## ❓ Frequently Asked Questions (FAQ)  

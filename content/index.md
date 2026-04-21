@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-04-21T09:00:56-07:00
+updated: 2026-04-21T15:02:27-07:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -42,11 +42,11 @@ updated: 2026-04-21T09:00:56-07:00
 - [2026-04-18 | 🐔 🍎 The Line-Cutters and the Garden Dreams 🐔](./chickie-loo/2026-04-18-the-line-cutters-and-the-garden-dreams.md)  
   
   
-## [🏛️ Systems for Public Good](./systems-for-public-good/index.md) (30)  
+## [🏛️ Systems for Public Good](./systems-for-public-good/index.md) (31)  
+- [2026-04-21 | 🏛️ The Interconnected Web of Well-being 🏛️](./systems-for-public-good/2026-04-21-the-interconnected-web-of-well-being.md)  
 - [2026-04-20 | 🏛️ The Interconnected Web of Well-being 🏛️](./systems-for-public-good/2026-04-20-the-interconnected-web-of-well-being.md)  
 - [2026-04-19 | 🏛️ 🗺️ Navigating Our Collective Well-being: A Week of Foundational Investments 🏛️](./systems-for-public-good/2026-04-19-navigating-our-collective-well-being-a-week-of-foundational-investments.md)  
 - [2026-04-18 | 🏛️ 🌐 The Digital Lifeline: Universal Broadband as a Public Good 🏛️](./systems-for-public-good/2026-04-18-the-digital-lifeline-universal-broadband-as-a-public-good.md)  
-- [2026-04-17 | 🏛️ Education as Reciprocity: Learning, Teaching, and Serving 🏛️](./systems-for-public-good/2026-04-17-education-as-reciprocity-learning-teaching-and-serving.md)  
   
   
 ## [📰 The Noise](./the-noise/index.md) (12)  
@@ -77,11 +77,11 @@ updated: 2026-04-21T09:00:56-07:00
 - [⛈️🏛️ Storm at the Capitol: An Oral History of January 6th](./books/storm-at-the-capitol-an-oral-history-of-january-6th.md)  
   
   
-## [📺 Videos](./videos/index.md) (775)  
+## [📺 Videos](./videos/index.md) (776)  
+- [⚠️⚙️ The 5 Things Nobody Tells You About Opus 4.7](./videos/the-5-things-nobody-tells-you-about-opus-4-7.md)  
 - [🤔🤯❤️📖 How to Understand Emotions | Dr. Lisa Feldman Barrett](./videos/how-to-understand-emotions-dr-lisa-feldman-barrett.md)  
 - [🧠⚙️🛠️💡 You aren't at the mercy of your emotions -- your brain creates them | Lisa Feldman Barrett](./videos/you-arent-at-the-mercy-of-your-emotions-your-brain-creates-them-lisa-feldman-barrett.md)  
 - [News Wrap: Senate pulls all-nighter to pass Republican budget bill](./videos/news-wrap-senate-pulls-all-nighter-to-pass-republican-budget-bill.md)  
-- [Protestors join more than a thousand rallies across the U.S. against Trump’s policies](./videos/protestors-join-more-than-a-thousand-rallies-across-the-us-against-trumps-policies.md)  
   
   
 ## [🌌 Topics](./topics/index.md) (91)  

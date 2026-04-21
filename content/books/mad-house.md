@@ -92,4 +92,4 @@ By Annie Karni
   
 * 🔬 **Best More Rigorous Book:** 📊 "Partisan Polarization in American Politics" by Morris P. Fiorina and Samuel J. Abrams. 🇺🇸 📚 This scholarly work analyzes the causes and consequences of political polarization in the United States. 🤓 🤔 🇺🇸  
   
-* 👓 **Best More Accessible Book:** 📖 "[😱🤡🇺🇸 Fear: Trump in the White House](./fear.md)" by Bob Woodward. 📰 This book provides an accessible and engaging account of the Trump presidency, focusing on the internal dynamics of the White House. 😮 🏢 🔑  
+* 👓 **Best More Accessible Book:** [😱🤡🇺🇸 Fear: Trump in the White House](./fear.md) by Bob Woodward. 📰 This book provides an accessible and engaging account of the Trump presidency, focusing on the internal dynamics of the White House. 😮 🏢 🔑  

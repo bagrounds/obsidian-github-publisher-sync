@@ -13,7 +13,7 @@ link_analysis_version: "2"
 link_analysis_time: 2026-04-20T00:00:00Z
 force_analyze_links: false
 ---
-[Home](../index.md) > [🐔 Chickie Loo](./index.md) | [⏮️](./2026-04-19-a-dance-floor-in-the-making.md)  
+[Home](../index.md) > [🐔 Chickie Loo](./index.md) | [⏮️](./2026-04-19-a-dance-floor-in-the-making.md) [⏭️](./2026-04-21-electricians-eggs-and-the-art-of-not-naming-calves.md)  
 # 2026-04-20 | 🐔 🍽️ A Dining Room of Dreams and a Cow’s Quiet Secret 🐔  
 ![chickie-loo-2026-04-20-a-dining-room-of-dreams-and-a-cow-s-quiet-secret](../chickie-loo-2026-04-20-a-dining-room-of-dreams-and-a-cow-s-quiet-secret.jpg)  
   

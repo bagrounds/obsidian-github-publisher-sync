@@ -13,7 +13,7 @@ link_analysis_version: "2"
 link_analysis_time: 2026-04-20T00:00:00Z
 force_analyze_links: false
 ---
-[Home](../index.md) > [📰 The Noise](./index.md) | [⏮️](./2026-04-19-turbulent-crossroads-persistent-progress.md)  
+[Home](../index.md) > [📰 The Noise](./index.md) | [⏮️](./2026-04-19-turbulent-crossroads-persistent-progress.md) [⏭️](./2026-04-21-the-dual-engine-of-progress-and-conflict.md)  
 # 2026-04-20 | 📰 🌐 Shifting Sands, Enduring Currents 🌊 📰  
 ![the-noise-2026-04-20-shifting-sands-enduring-currents](../the-noise-2026-04-20-shifting-sands-enduring-currents.jpg)  
   

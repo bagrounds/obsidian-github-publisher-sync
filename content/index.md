@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-04-21T15:02:27-07:00
+updated: 2026-04-21T15:29:16-07:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -77,11 +77,11 @@ updated: 2026-04-21T15:02:27-07:00
 - [⛈️🏛️ Storm at the Capitol: An Oral History of January 6th](./books/storm-at-the-capitol-an-oral-history-of-january-6th.md)  
   
   
-## [📺 Videos](./videos/index.md) (776)  
+## [📺 Videos](./videos/index.md) (777)  
+- [🏆🐘🆚🔮⚠️ Turing Award Winner: Postgres, Disagreeing with Google, Future Problems | Mike Stonebraker](./videos/turing-award-winner-postgres-disagreeing-with-google-future-problems-mike-stonebraker.md)  
 - [⚠️⚙️ The 5 Things Nobody Tells You About Opus 4.7](./videos/the-5-things-nobody-tells-you-about-opus-4-7.md)  
 - [🤔🤯❤️📖 How to Understand Emotions | Dr. Lisa Feldman Barrett](./videos/how-to-understand-emotions-dr-lisa-feldman-barrett.md)  
 - [🧠⚙️🛠️💡 You aren't at the mercy of your emotions -- your brain creates them | Lisa Feldman Barrett](./videos/you-arent-at-the-mercy-of-your-emotions-your-brain-creates-them-lisa-feldman-barrett.md)  
-- [News Wrap: Senate pulls all-nighter to pass Republican budget bill](./videos/news-wrap-senate-pulls-all-nighter-to-pass-republican-budget-bill.md)  
   
   
 ## [🌌 Topics](./topics/index.md) (91)  

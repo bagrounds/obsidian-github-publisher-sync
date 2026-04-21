@@ -63,25 +63,25 @@ updated: 2026-04-20T13:06:42-07:00
 - [2026-04-17 | 🌟 Innovations in Healing and Community Resilience 🌟](./positivity-bias/2026-04-17-innovations-in-healing-and-community-resilience.md)  
   
   
-## [🔀 Convergence](./convergence/index.md) (6)  
+## [🔀 Convergence](./convergence/index.md) (7)  
+- [2026-04-20 | 🔀 The Echo Chamber and the Architect: Forging Meaning in a World of Competing Systems 🔀](./convergence/2026-04-20-the-echo-chamber-and-the-architect-forging-meaning-in-a-world-of-competing-systems.md)  
 - [2026-04-19 | 🔀 🪞 The Architects of Meaning: From Friction to Flow 🔀](./convergence/2026-04-19-the-architects-of-meaning-from-friction-to-flow.md)  
 - [2026-04-18 | 🔀 🪞 The Architectures of Dynamic Truth 🔀](./convergence/2026-04-18-the-architectures-of-dynamic-truth.md)  
 - [2026-04-17 | 🔀 🪞 The Architectures of Validation: Friction, Flow, and Form 🔀](./convergence/2026-04-17-the-architectures-of-validation-friction-flow-and-form.md)  
-- [2026-04-16 | 🔀 💡 The Architecture of Sustenance and Self-Correction 🔀](./convergence/2026-04-16-the-architecture-of-sustenance-and-self-correction.md)  
   
   
 ## [📚 Books](./books/index.md) (960)  
-- [🏛️⚖️ On the Rule of Law: History, Politics, Theory](./books/on-the-rule-of-law-history-politics-theory.md)  
-- [⚠️🏛️👹🇺🇸 The Most Dangerous Branch: Inside the Supreme Court in the Age of Trump](./books/the-most-dangerous-branch-inside-the-supreme-court-in-the-age-of-trump.md)  
-- [🧠🔌 The Thinking Machine: Jensen Huang, Nvidia, and the World's Most Coveted Microchip](./books/the-thinking-machine-jensen-huang-nvidia-and-the-worlds-most-coveted-microchip.md)  
-- [👻🔗 In the Realm of Hungry Ghosts: Close Encounters with Addiction](./books/in-the-realm-of-hungry-ghosts-close-encounters-with-addiction.md)  
+- [🤟🆎 American Sign Language Dictionary](./books/american-sign-language-dictionary.md)  
+- [🇺🇸🕵️‍♂️🚫 Where Law Ends: Inside the Mueller Investigation](./books/where-law-ends-inside-the-mueller-investigation.md)  
+- [🧠🤔❓ Rationality: What It Is, Why It Seems Scarce, Why It Matters](./books/rationality.md)  
+- [🐕🐈‍⬛🩺❤️‍🩹 Small Animal Internal Medicine](./books/small-animal-internal-medicine.md)  
   
   
 ## [📺 Videos](./videos/index.md) (774)  
-- [Schiff Sends Message Directly to Trump in Surprise Hearing](./videos/schiff-sends-message-directly-to-trump-in-surprise-hearing.md)  
-- [🏛️👔😡💸 Whitehouse and Murphy Dress Down Republican Tax «Thievery» in Colloquy on Senate Floor](./videos/whitehouse-and-murphy-dress-down-republican-tax-thievery-in-colloquy-on-senate-floor.md)  
-- [🎤✨🗣️ TED's secret to great public speaking | Chris Anderson | TED](./videos/teds-secret-to-great-public-speaking-chris-anderson-ted.md)  
-- [💰➡️🌍📉 Lecture 03: Externalities in Theory & Practice](./videos/lecture-03-externalities-in-theory-practice.md)  
+- [🤟🔤📚 Learn the ASL Alphabet Fast | American Sign Language ABCs](./videos/learn-the-asl-alphabet-fast-american-sign-language-abcs.md)  
+- [🧠🗣️1️⃣➡️3️⃣ 'Prompting' Just Split Into 4 Skills. You Only Know One. Here's Why You Need the Other 3 in 2026.](./videos/prompting-just-split-into-4-skills-you-only-know-one-heres-why-you-need-the-other-3-in-2026.md)  
+- [🇻🇪⚔️💥 Tamara Keith and Amy Walter on the political fallout from military action in Venezuela](./videos/tamara-keith-and-amy-walter-on-the-political-fallout-from-military-action-in-venezuela.md)  
+- [⚡🧠🚀✨ ADHD & How Anyone Can Improve Their Focus | Huberman Lab Essentials](./videos/adhd-how-anyone-can-improve-their-focus-huberman-lab-essentials.md)  
   
   
 ## [🌌 Topics](./topics/index.md) (91)  
@@ -92,10 +92,10 @@ updated: 2026-04-20T13:06:42-07:00
   
   
 ## [📄  Articles](./articles/index.md) (84)  
-- [🤱😴👶 Safe Sleep for Breastfeeding Babies](./articles/safe-sleep-for-breastfeeding-babies.md)  
-- [🪵 The Log: What every software engineer should know about real-time data's unifying abstraction](./articles/the-log-what-every-software%20engineer-should-know-about-real-time-datas-unifying-abstraction.md)  
-- [🧑‍💻🤖🤝 How Anthropic Teams Use Claude Code](./articles/how-anthropic-teams-use-claude-code.md)  
-- [😴👄🧘 Mouth And Throat Exercises to Help Stop Snoring and Improve OSA](./articles/mouth-and-throat-exercises-to-help-stop-snoring-and-improve-osa.md)  
+- [🤖⚙️🧠 Writing about Agentic Engineering Patterns](./articles/writing-about-agentic-engineering-patterns.md)  
+- [🐈‍⬛🧪💊🩺 Treatment of Feline Gastrointestinal Small-Cell Lymphoma With Chlorambucil and Glucocorticoids](./articles/treatment-of-feline-gastrointestinal-small-cell-lymphoma-with-chlorambucil-and-glucocorticoids.md)  
+- [⚙️🛡️🐛 Making Reliable Distributed Systems in the Presence of Software Errors](./articles/making-reliable-distributed-systems-in-the-presence-of-software-errors.md)  
+- [⚙️🤖📈🤝 Engineering and AI: Advancing the synergy](./articles/engineering-and-ai-advancing-the-synergy.md)  
   
   
 ## [🤖💬 Bot Chats](./bot-chats/index.md) (49)  
@@ -113,10 +113,10 @@ updated: 2026-04-20T13:06:42-07:00
   
   
 ## [👥 People](./people/index.md) (18)  
+- [👨‍💻☁️🐘 Jay Kreps](./people/jay-kreps.md)  
 - [🤔⚙️🗣️🤝💡🧩🔭📚👴 Russell Ackoff](./people/russell-ackoff.md)  
 - [👨‍🏫📈💻 Scott Galloway](./people/scott-galloway.md)  
 - [🧠🫀👀🔬 Andrew Huberman](./people/andrew-huberman.md)  
-- [🧠👨‍🎓📈 Justin Sung](./people/justin-sung.md)  
   
   
 ## [🛍️ Products](./products/index.md) (6)  

@@ -8,8 +8,9 @@ image_date: 2026-03-31T19:29:24Z
 image_model: "@cf/black-forest-labs/flux-1-schnell"
 image_prompt: A minimalist digital illustration featuring a stylized, glowing book icon at the center. From the spine of the book, a series of interconnected, translucent data nodes branch out into a network of lines. One of these lines is broken or disconnected, while a magnifying glass hovering nearby is actively scanning the connection to bridge the gap. The color palette uses deep navy, electric blue, and soft white against a clean, matte gray background, evoking a sense of technical precision and organized knowledge. The lighting is focused and clean, emphasizing the structured, systematic nature of the digital audit process.
 link_analysis_model: gemini-3.1-flash-lite-preview
-link_analysis_time: 2026-03-31T00:00:00Z
+link_analysis_time: 2026-04-21T00:00:00Z
 force_analyze_links: false
+link_analysis_version: "2"
 ---
 [🏡 Home](../index.md) > [🤖 AI Blog](./index.md) | [⏮️](./2026-03-31-4-four-fixes-reflections-tts-ordering.md) [⏭️](./2026-03-31-6-the-reversed-path-and-the-broken-regex.md)  
 # 2026-03-31 | 📖🔗 Smarter Book Linking and Post-Deploy Audits 🔍  

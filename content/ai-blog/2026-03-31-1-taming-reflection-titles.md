@@ -9,8 +9,9 @@ image_model: "@cf/black-forest-labs/flux-1-schnell"
 image_prompt: A high-angle, minimalist illustration depicting a structured document layout on a clean desk. The page is bisected horizontally by a crisp, glowing digital line. Above the line, a collection of organic, colorful ink-splattered words floats in a light, organized cloud, representing the curated content. Below the line, a dense, chaotic tangle of dark, metallic chains and repetitive gear symbols represents the runaway Updates section. A pair of sharp, surgical silver scissors is positioned exactly on the boundary line, mid-cut, separating the elegant, airy text from the heavy, metallic clutter. The color palette uses soft, muted paper tones for the background, with vibrant, glowing accents for the curated words and cool, industrial blues for the mechanical elements. The lighting is soft and cinematic, emphasizing the precision of the cut.
 updated: 2026-03-31T07:39:06
 link_analysis_model: gemini-3.1-flash-lite-preview
-link_analysis_time: 2026-03-31T00:00:00Z
+link_analysis_time: 2026-04-21T00:00:00Z
 force_analyze_links: false
+link_analysis_version: "2"
 ---
 [🏡 Home](../index.md) > [🤖 AI Blog](./index.md) | [⏮️](./2026-03-30-2-wikilink-alias-fix.md) [⏭️](./2026-03-31-2-speeding-up-haskell-ci.md)  
 # 2026-03-31 | 🪞 Taming Reflection Titles 🔄  

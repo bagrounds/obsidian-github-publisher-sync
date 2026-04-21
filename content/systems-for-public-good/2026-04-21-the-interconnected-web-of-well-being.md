@@ -1,21 +1,21 @@
 ---
 share: true
 aliases:
-  - 2026-04-20 | 🏛️ The Interconnected Web of Well-being 🏛️
-title: 2026-04-20 | 🏛️ The Interconnected Web of Well-being 🏛️
-URL: https://bagrounds.org/systems-for-public-good/2026-04-20-the-interconnected-web-of-well-being
+  - 2026-04-21 | 🏛️ The Interconnected Web of Well-being 🏛️
+title: 2026-04-21 | 🏛️ The Interconnected Web of Well-being 🏛️
+URL: https://bagrounds.org/systems-for-public-good/2026-04-21-the-interconnected-web-of-well-being
 Author: "[[systems-for-public-good]]"
-image_date: 2026-04-20T16:33:30Z
+image_date: 2026-04-21T17:31:57Z
 image_model: "@cf/black-forest-labs/flux-1-schnell"
-image_prompt: "A stylized, isometric illustration of a vibrant, interconnected city landscape. The scene features a central, glowing node from which translucent, golden threads radiate outward, connecting diverse elements: a lush city park with winding paths, a crystalline water treatment fountain, a sleek public transit vehicle gliding along a track, and a modern community center. The color palette transitions from deep earth tones at the base to soft, airy blues and greens above, symbolizing the integration of nature and infrastructure. The composition uses thin, glowing geometric lines to suggest a digital network overlaid on physical architecture, emphasizing the web of systems. The lighting is warm and morning-like, casting long, soft shadows that highlight the harmony between the built environment and natural green spaces, evoking a sense of growth, resilience, and collective prosperity."
+image_prompt: A high-angle, minimalist illustration showing a vibrant, glowing network of interconnected nodes across a landscape. Different icons—a stylized tree representing parks, a water droplet for clean water, a gear for transportation, and a shield for public safety—are positioned at the intersections of a luminous, golden web. The lines of the web pulse with soft light, connecting these icons to one another to form a cohesive, circular structure. The background is a clean, neutral slate, emphasizing the harmony and interdependence of the system. The aesthetic is modern, clean, and optimistic, using a palette of forest green, deep sky blue, and warm sunlight yellow to evoke a sense of organic growth and systemic stability.
 link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_version: "2"
-link_analysis_time: 2026-04-20T00:00:00Z
+link_analysis_time: 2026-04-21T00:00:00Z
 force_analyze_links: false
 ---
-[Home](../index.md) > [🏛️ Systems for Public Good](./index.md) | [⏮️](./2026-04-19-navigating-our-collective-well-being-a-week-of-foundational-investments.md) [⏭️](./2026-04-21-the-interconnected-web-of-well-being.md)  
-# 2026-04-20 | 🏛️ The Interconnected Web of Well-being 🏛️  
-![systems-for-public-good-2026-04-20-the-interconnected-web-of-well-being](../systems-for-public-good-2026-04-20-the-interconnected-web-of-well-being.jpg)  
+[Home](../index.md) > [🏛️ Systems for Public Good](./index.md) | [⏮️](./2026-04-20-the-interconnected-web-of-well-being.md)  
+# 2026-04-21 | 🏛️ The Interconnected Web of Well-being 🏛️  
+![systems-for-public-good-2026-04-21-the-interconnected-web-of-well-being](../systems-for-public-good-2026-04-21-the-interconnected-web-of-well-being.jpg)  
   
 # The Interconnected Web of Well-being  
   
@@ -52,7 +52,5 @@ force_analyze_links: false
 ❓ How can we better communicate the synergistic value of these interconnected public goods to policymakers and the public, moving beyond siloed discussions to embrace a holistic vision of societal investment? And what democratic mechanisms can empower local communities to actively participate in the planning, implementation, and stewardship of these varied public goods, ensuring they truly reflect and serve collective needs and priorities?  
   
 🔭 Next week, we will continue our exploration of the tangible components of "real wealth" by delving into the essential role of **public libraries and information access**, examining how these vital institutions serve as community hubs and guardians of knowledge in a connected world.  
-  
-✍️ Written by gemini-2.5-flash  
   
 ✍️ Written by gemini-2.5-flash-lite  

@@ -10,9 +10,10 @@ Channel: TREE Fund
 tags:
 youtube: https://youtu.be/mCKPbpAc2Ks
 link_analysis_model: gemini-3.1-flash-lite-preview
-link_analysis_time: 2026-04-04T00:00:00Z
+link_analysis_time: 2026-04-20T00:00:00Z
 force_analyze_links: false
 updated: 2026-04-05T01:43:46
+link_analysis_version: "2"
 ---
 [Home](../index.md) > [Videos](./index.md)  
 # 🌳🌱🔬 Digging into the science of tree planting, Hauer, Koeser, etc 1  
@@ -57,7 +58,7 @@ updated: 2026-04-05T01:43:46
 * 📒 Finding the Mother Tree by Suzanne Simard details the fungal networks in old-growth forests, offering a perspective centered on natural ecosystems rather than human-managed landscapes.  
   
 ### 🎨 Creatively Related  
-* 📕 The Songs of Trees by David George Haskell examines the biological and cultural intersections of specific trees around the world through a poetic lens.  
+* 📕 [🌳🎶 The Songs of Trees: Stories from Nature's Great Connectors](../books/the-songs-of-trees-stories-from-natures-great-connectors.md) by David George Haskell examines the biological and cultural intersections of specific trees around the world through a poetic lens.  
 * 📙 Dirr’s Encyclopedia of Trees and Shrubs by Michael A. Dirr serves as the definitive aesthetic and practical guide for selecting woody plants for the landscape.  
   
 ## 🦋 Bluesky    

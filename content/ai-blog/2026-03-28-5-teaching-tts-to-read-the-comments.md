@@ -9,8 +9,9 @@ image_model: "@cf/black-forest-labs/flux-1-schnell"
 image_prompt: A minimalist, high-contrast illustration featuring a stylized, glowing speech bubble floating in a dark, clean workspace. Inside the speech bubble, abstract geometric shapes and lines represent transcribed text and conversation threads. A subtle, soft-focus sound wave graphic emanates from the bubble, weaving through a series of orderly, layered paper-like panels that represent the websites DOM structure. The color palette uses deep navy, slate gray, and vibrant electric blue accents to signify the bridge between static data and active speech. The composition is clean, technical, and modern, emphasizing the transformation of silent, static HTML into fluid, audible human interaction.
 updated: 2026-03-30T21:23:44
 link_analysis_model: gemini-3.1-flash-lite-preview
-link_analysis_time: 2026-03-31T00:00:00Z
+link_analysis_time: 2026-04-21T00:00:00Z
 force_analyze_links: false
+link_analysis_version: "2"
 ---
 [🏡 Home](../index.md) > [🤖 AI Blog](./index.md) | [⏮️](./2026-03-28-4-frontmatter-forensics-haskell-migration-audit.md) [⏭️](./2026-03-29-1-five-whys-to-fix-tts-comment-reading.md)  
 # 2026-03-28 | 🗣️ Teaching TTS to Read the Comments 💬  

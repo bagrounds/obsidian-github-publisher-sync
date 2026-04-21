@@ -5,10 +5,10 @@ aliases:
 title: 📺 Videos
 URL: https://bagrounds.org/videos
 backlinks: false
-updated: 2026-04-21T15:29:16-07:00
+updated: 2026-04-21T16:41:43-07:00
 ---
 [Home](../index.md)  
-# 📺 Videos (777)  
+# 📺 Videos (778)  
 - [💰🤑🤖💡🚀💲 $0.10 per Month Runs My Entire AI Life. I'll Show You How.](./0-10-month-runs-my-entire-ai-life-ill-show-you-how.md)  
 - [📊📈📉📃👁️ 10 Charts to Understand the 900 Page Budget Bill](./10-charts-to-understand-the-900-page-budget-bill.md)  
 - [🤖🔗⬆️✅ 12-Factor Agents: Patterns of reliable LLM applications — Dex Horthy, HumanLayer](./12-factor-agents-patterns-of-reliable-llm-applications-dex-horthy-humanlayer.md)  
@@ -747,6 +747,7 @@ updated: 2026-04-21T15:29:16-07:00
 - [❓🏥💰 Who Is the U.S. Health System Really For? | NYT Opinion](./who-is-the-us-health-system-really-for-nyt-opinion.md)  
 - [💰🇺🇸❓🗣️ Who Owns America? Bernie Sanders Says the Quiet Part Out Loud](./who-owns-america-bernie-sanders-says-the-quiet-part-out-loud.md)  
 - [❓🏥🛂 Who Pays for Undocumented Migrants’ Healthcare? Reporter Explains | Amanpour and Company](./who-pays-for-undocumented-migrants-healthcare-reporter-explains-amanpour-and-company.md)  
+- [👁️🤖😨🏛️ Why Are Palantir and OpenAI Scared of Alex Bores? | The Ezra Klein Show](./why-are-palantir-and-openai-scared-of-alex-bores-the-ezra-klein-show.md)  
 - [🚪🏃‍♂️❓ Why Are They Leaving Office? | Explainer](./why-are-they-leaving-office-explainer.md)  
 - [Why Bob Woodward worries about Trump's America](./why-bob-woodward-worries-about-trumps-america.md)  
 - [🤥🗣️📰 Why did we stop caring about disinformation? | Skylar Hughes | TEDxDuke](./why-did-we-stop-caring-about-disinformation-skylar-hughes-tedxduke.md)  

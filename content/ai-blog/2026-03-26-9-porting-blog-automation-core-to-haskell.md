@@ -7,8 +7,9 @@ image_date: 2026-03-31T20:43:17Z
 image_model: "@cf/black-forest-labs/flux-1-schnell"
 image_prompt: "A minimalist, isometric illustration featuring a sleek, glowing lambda symbol (λ) acting as a structural pillar at the center of a construction site. The scene is divided into two distinct halves: the left side displays translucent, floating TypeScript-style brackets and loose, disorganized code snippets in a soft amber light. As these elements transition toward the center, they are refined into sharp, modular, and perfectly aligned geometric blocks of deep indigo and crisp white, representing the structured Haskell architecture. The background is a clean, dark slate with faint, glowing grid lines that suggest a precision engineering environment. Subtle icons representing a blog post, a folder, and a gear are integrated into the structural blocks, conveying the automation of the publishing pipeline."
 link_analysis_model: gemini-3.1-flash-lite-preview
-link_analysis_time: 2026-03-31T00:00:00Z
+link_analysis_time: 2026-04-21T00:00:00Z
 force_analyze_links: false
+link_analysis_version: "2"
 ---
 [🏡 Home](../index.md) > [🤖 AI Blog](./index.md) | [⏮️](../../2026-03-26-8-porting-env-timer-frontmatter-to-haskell.md) [⏭️](./2026-03-27-1-replacing-aeson-boot-library-ghc914.md)  
 # 🏗️ Porting Blog Automation Core to Haskell  

@@ -52,7 +52,9 @@
          ↓
 💾 Write updated changes page
          ↓
-🔗 Ensure reflection has a link to the changes page
+📊 Sync stats preview to reflection (upsertChangesPreview)
+   ├── 🔗 Ensure changes H2 heading points to changes index
+   └── 📊 Insert/update stats preview line below H2
 ```
 
 ## 📂 Changes Directory Structure
@@ -102,9 +104,12 @@ SORT file.name DESC
 
 ## 🪞 Reflection Integration
 
-🔗 Every new reflection page includes a changes link as an H2 heading at the very bottom of the template, via the shared `changesLink` function defined in `DailyReflection`.
-📌 For existing reflections (created before this feature), the changes link is added automatically as an H2 heading when updates are first written for that date.
-📐 The changes link prefix (`"## [[changes/"`) is included in `trailingSectionHeaders`, so blog series sections and social embeds are always placed above it. The prefix includes the H2 marker to ensure section insertion never splits the heading from the link.
+🔗 Every new reflection page includes a changes H2 heading at the very bottom of the template, pointing to the changes index page via `changesLink` defined in `DailyReflection`.
+📌 For existing reflections (created before this feature), the changes heading and stats preview are added automatically when updates are first written for that date.
+📐 The changes link prefix (`"## [[changes/"`) is included in `trailingSectionHeaders`, so blog series sections and social embeds are always placed above it. The prefix includes the H2 marker to ensure section insertion never splits the heading from the preview.
+📊 A stats preview line appears directly below the H2 heading, showing a link to that day's changes page followed by the stats summary (but not the full table). Format: `[[changes/YYYY-MM-DD|YYYY-MM-DD]] | 📊 N pages · ...`
+🔄 The stats preview is kept in sync with the changes page: every time updates are written to the changes page, the reflection's stats preview is updated to match via `upsertChangesPreview`.
+🔀 Old-format changes headings (pointing to the specific day's page instead of the index) are migrated automatically to the new format on the next update.
 
 ## 🏷️ Update Detail Types
 
@@ -170,16 +175,20 @@ URL: "https://bagrounds.org/changes/2026-03-28"
 | `buildChangesPageContent(date, previousDate)` | 📄 Build the frontmatter, nav (with backward link), and heading for a changes page. Date parameter is `Day`. |
 | `buildChangesIndexContent` | 📑 Build the index page with a Dataview query for the changes directory |
 | `addChangesForwardLink(content, targetDate)` | ⏭️ Add a forward navigation link to a changes page |
+| `extractStatsLine(content)` | 📊 Extract the stats line from page content (returns the first line starting with 📊) |
+| `changesLink` | 🔗 The H2 heading linking to the changes index page |
+| `buildChangesStatsPreview(date, statsLine)` | 📊 Build the stats preview line for a reflection: `[[changes/YYYY-MM-DD\|YYYY-MM-DD]] \| stats` |
+| `upsertChangesPreview(content, date, statsLine)` | 🔄 Insert or update the changes heading and stats preview in reflection content. Migrates old-format headings. |
 
 ### 💾 I/O Functions
 
 | 🔧 Function | 📝 Purpose |
 |---|---|
 | `extractTitleFromFile(filePath)` | 📄 Reads a file and extracts its title from frontmatter |
-| `addUpdateLinksToReflection(vaultDir, date, links)` | 🎯 Orchestrator: ensure reflection and changes page exist → write updates to changes page → link reflection. Date parameter is `Day`. |
+| `addUpdateLinksToReflection(vaultDir, date, links)` | 🎯 Orchestrator: ensure reflection and changes page exist → write updates to changes page → sync stats preview to reflection. Date parameter is `Day`. |
 | `ensureChangesDirectory(changesDir)` | 📁 Create changes directory and index if missing |
 | `ensureChangesPage(changesDir, date)` | 📄 Create changes page from template if missing, add forward link to previous page. Date parameter is `Day`. |
-| `ensureChangesLinkInReflection(reflectionPath, date)` | 🔗 Add changes link to reflection if not already present |
+| `updateChangesPreviewInReflection(reflectionPath, date, statsLine)` | 📊 Update the changes heading and stats preview in a reflection file |
 | `findPreviousChangesDate(changesDir, today)` | 🔍 Find the most recent changes page date before today |
 
 ## 🛡️ Data Loss Prevention
@@ -233,11 +242,21 @@ URL: "https://bagrounds.org/changes/2026-03-28"
 - 🔀 Mixed wiki and markdown links in same table
 - 📂 Updates written to changes page instead of reflection
 - 📑 Changes index page creation with Dataview query
-- 🔗 Changes link added to reflection
+- 📊 Stats preview synced to reflection with changes heading pointing to index
 - 📄 Changes page frontmatter and navigation with date in reflection backlink
 - ⏭️ Forward and backward navigation links between consecutive changes pages
+- 📊 Stats preview stays in sync after multiple updates
+- 🔀 Old-format changes heading migrated to index link on update
+- 📊 extractStatsLine finds stats from content
 
 🔬 Tests in `haskell/test/Automation/DailyReflectionTest.hs` covering:
-- 🔗 Changes link included in new reflection template
-- 📍 Changes link positioned after heading
-- 🧩 Inserting a section before the changes link preserves the H2 heading
+- 🔗 Changes heading points to changes index in new reflection template
+- 📍 Changes heading positioned after page heading
+- 🧩 Inserting a section before the changes heading preserves the H2
+- 📊 buildChangesStatsPreview formats date link with stats
+- 📊 upsertChangesPreview adds heading and preview when no changes section
+- 📊 upsertChangesPreview updates existing stats preview
+- 🔀 upsertChangesPreview migrates old-format heading to index link
+- 📊 upsertChangesPreview inserts stats when heading exists but no preview
+- 📝 upsertChangesPreview preserves content before changes section
+- 🔄 upsertChangesPreview idempotency (property test)

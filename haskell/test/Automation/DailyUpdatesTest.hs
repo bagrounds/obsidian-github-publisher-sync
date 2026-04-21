@@ -407,6 +407,15 @@ addUpdateLinksTests = testGroup "addUpdateLinks"
         assertEqual "parses 0 for empty" 0 (parseStatsPageCount "")
         assertEqual "parses 0 for missing stats" 0 (parseStatsPageCount "no stats here")
 
+  , testCase "extractStatsLine finds stats line in content" $
+      do
+        assertEqual "extracts from section" (Just "📊 3 pages · 2 🖼️ images")
+          (extractStatsLine "## 🔄 Updates\n📊 3 pages · 2 🖼️ images\n\n| Page |")
+        assertEqual "returns Nothing when absent" Nothing
+          (extractStatsLine "# Heading\n\nNo stats here")
+        assertEqual "extracts from multiline content" (Just "📊 1 page · 1 🦋 Bluesky")
+          (extractStatsLine "---\ntitle: test\n---\n# Heading\n\n## 🔄 Updates\n📊 1 page · 1 🦋 Bluesky\n")
+
   , testCase "resolveRelativePath converts paths correctly" $
       do
         assertEqual "dot-slash" "reflections/file" (resolveRelativePath "./file")
@@ -526,7 +535,9 @@ addUpdateLinksToReflectionTests = testGroup "addUpdateLinksToReflection"
         assertBool "changes has stats with legend" (T.isInfixOf "\128202 1 page \183 1 \128444\65039 images" changesContent)
 
         reflContent <- TIO.readFile (reflDir </> "2026-03-28.md")
-        assertBool "reflection has changes link" (T.isInfixOf "## [[changes/2026-03-28|\128260 Changes]]" reflContent)
+        assertBool "reflection has changes heading pointing to index" (T.isInfixOf "## [[changes/index|\128260 Changes]]" reflContent)
+        assertBool "reflection has stats preview with date link" (T.isInfixOf "[[changes/2026-03-28|2026-03-28]]" reflContent)
+        assertBool "reflection has stats in preview" (T.isInfixOf "\128202 1 page \183 1 \128444\65039 images" reflContent)
         assertBool "reflection does not have updates table" (not (T.isInfixOf "| Page |" reflContent))
 
   , testCase "creates changes index page with dataview" $
@@ -640,4 +651,27 @@ addUpdateLinksToReflectionTests = testGroup "addUpdateLinksToReflection"
 
         nextContent <- TIO.readFile (tmpDir </> "changes" </> "2026-03-28.md")
         assertBool "next page has backward link" (T.isInfixOf "⏮️" nextContent)
+
+  , testCase "stats preview in reflection stays in sync with changes page" $
+      withSystemTempDirectory "daily-updates-test" $ \tmpDir -> do
+        let reflDir = tmpDir </> "reflections"
+            testDate = fromGregorian 2026 3 28
+        createDirectoryIfMissing True reflDir
+        TIO.writeFile (reflDir </> "2026-03-28.md") "---\ntitle: 2026-03-28\n---\n\n# Reflection\n"
+
+        _ <- addUpdateLinksToReflection tmpDir testDate
+               [UpdateLink (testRelativePath "page1.md") (testTitle "Page 1") [ImageAdded]]
+
+        reflContent1 <- TIO.readFile (reflDir </> "2026-03-28.md")
+        assertBool "reflection has stats preview after first update"
+          (T.isInfixOf "[[changes/2026-03-28|2026-03-28]] | \128202 1 page" reflContent1)
+
+        _ <- addUpdateLinksToReflection tmpDir testDate
+               [UpdateLink (testRelativePath "page2.md") (testTitle "Page 2") [PostedTo Bluesky]]
+
+        reflContent2 <- TIO.readFile (reflDir </> "2026-03-28.md")
+        assertBool "reflection stats preview updated after second update"
+          (T.isInfixOf "[[changes/2026-03-28|2026-03-28]] | \128202 2 pages" reflContent2)
+        assertBool "old stats preview removed"
+          (not (T.isInfixOf "\128202 1 page" reflContent2))
   ]

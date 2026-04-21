@@ -11,12 +11,16 @@ module Automation.DailyReflection
   , updateDailyReflection
   , findFirstSectionIndex
   , embedSectionHeaders
-  , changesLinkPrefix
   , changesLink
+  , ChangesStats (..)
+  , renderChangesStats
+  , buildChangesStatsPreview
+  , upsertChangesPreview
   ) where
 
 import Control.Monad (when)
 import Data.List (sort)
+import Data.Maybe (catMaybes)
 import Data.Text (Text)
 import qualified Data.Text as T
 import qualified Data.Text.IO as TIO
@@ -38,14 +42,68 @@ import Automation.Platform (updatesSectionHeader)
 embedSectionHeaders :: [Text]
 embedSectionHeaders = [Twitter.sectionHeader, Bluesky.sectionHeader, Mastodon.sectionHeader]
 
-changesLinkPrefix :: Text
-changesLinkPrefix = "## [[changes/"
+changesLink :: Text
+changesLink = "## " <> formatWikilink "changes/index" "\128260 Changes"
 
-changesLink :: Day -> Text
-changesLink date = "## " <> formatWikilink ("changes/" <> formatDay date) "\128260 Changes"
+-- | Statistics for a day's changes page. Using structured integer fields rather than
+-- pre-rendered text ensures these values are constructed at the source (from live PageEntry
+-- data) and rendered only through 'renderChangesStats', keeping presentation separate from data.
+data ChangesStats = ChangesStats
+  { statsPageCount     :: Int
+  , statsImageCount    :: Int
+  , statsLinkCount     :: Int
+  , statsBlueskyCount  :: Int
+  , statsMastodonCount :: Int
+  , statsTwitterCount  :: Int
+  } deriving (Show, Eq)
+
+renderChangesStats :: ChangesStats -> Text
+renderChangesStats stats =
+  let pageWord = if statsPageCount stats == 1 then "page" else "pages"
+      counts = catMaybes
+        [ renderStatCount (statsImageCount stats) "🖼️" "images"
+        , renderStatCount (statsLinkCount stats) "🔗" "links"
+        , renderStatCount (statsBlueskyCount stats) "🦋" "Bluesky"
+        , renderStatCount (statsMastodonCount stats) "🐘" "Mastodon"
+        , renderStatCount (statsTwitterCount stats) "🐦" "Twitter"
+        ]
+      parts = (T.pack (show (statsPageCount stats)) <> " " <> pageWord) : counts
+  in "📊 " <> T.intercalate " · " parts
+
+renderStatCount :: Int -> Text -> Text -> Maybe Text
+renderStatCount count emoji label
+  | count > 0 = Just (T.pack (show count) <> " " <> emoji <> " " <> label)
+  | otherwise = Nothing
+
+changesStatsPreviewLinePrefix :: Text
+changesStatsPreviewLinePrefix = "[[changes/"
+
+buildChangesStatsPreview :: Day -> ChangesStats -> Text
+buildChangesStatsPreview date stats =
+  formatWikilink ("changes/" <> formatDay date) (formatDay date) <> " | " <> renderChangesStats stats
+
+upsertChangesPreview :: Text -> Day -> ChangesStats -> Text
+upsertChangesPreview content date stats =
+  let preview = buildChangesStatsPreview date stats
+  in if T.isInfixOf changesLink content
+    then replaceChangesSection content preview
+    else T.stripEnd content <> "\n\n" <> changesLink <> "\n" <> preview <> "\n"
+
+replaceChangesSection :: Text -> Text -> Text
+replaceChangesSection content preview =
+  let contentLines = T.splitOn "\n" content
+      (before, fromChanges) = break (== changesLink) contentLines
+  in case fromChanges of
+    [] -> content
+    (_ : rest) ->
+      let afterOld = case rest of
+            (nextLine : remaining)
+              | T.isPrefixOf changesStatsPreviewLinePrefix nextLine -> remaining
+            _ -> rest
+      in T.intercalate "\n" (before <> [changesLink, preview] <> afterOld)
 
 trailingSectionHeaders :: [Text]
-trailingSectionHeaders = updatesSectionHeader : changesLinkPrefix : embedSectionHeaders
+trailingSectionHeaders = updatesSectionHeader : changesLink : embedSectionHeaders
 
 data EnsureReflectionResult = EnsureReflectionResult
   { errCreated          :: Bool
@@ -78,7 +136,7 @@ buildReflectionContent date previousDate =
     , formatWikilink "index" "Home" <> " > " <> directoryIndexLink Reflections <> backLink
     , "# " <> dateText
     , ""
-    , changesLink date
+    , changesLink
     , ""
     ]
 

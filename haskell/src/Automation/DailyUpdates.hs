@@ -9,6 +9,7 @@ module Automation.DailyUpdates
   , addChangesForwardLink
   , parseStatsPageCount
   , resolveRelativePath
+  , extractStatsLine
   ) where
 
 import Control.Applicative ((<|>))
@@ -25,7 +26,7 @@ import System.Directory (createDirectoryIfMissing, doesDirectoryExist, doesFileE
 import System.FilePath ((</>), dropExtension, takeBaseName)
 import Text.Read (readMaybe)
 
-import Automation.DailyReflection (ensureDailyReflection, EnsureReflectionResult (..), findFirstSectionIndex, embedSectionHeaders, changesLinkPrefix, changesLink)
+import Automation.DailyReflection (ensureDailyReflection, EnsureReflectionResult (..), findFirstSectionIndex, embedSectionHeaders, upsertChangesPreview, ChangesStats (..), renderChangesStats)
 import Automation.Frontmatter (parseFrontmatter, quoteYamlValue)
 import Automation.PacificTime (formatDay)
 import Automation.Platform (Platform (..), updatesSectionHeader)
@@ -77,13 +78,6 @@ columnEmoji (InternalLinksAdded _) = "🔗"
 columnEmoji (PostedTo Bluesky)    = "🦋"
 columnEmoji (PostedTo Mastodon)   = "🐘"
 columnEmoji (PostedTo Twitter)    = "🐦"
-
-columnLabel :: UpdateDetail -> Text
-columnLabel ImageAdded            = "images"
-columnLabel (InternalLinksAdded _) = "links"
-columnLabel (PostedTo Bluesky)    = "Bluesky"
-columnLabel (PostedTo Mastodon)   = "Mastodon"
-columnLabel (PostedTo Twitter)    = "Twitter"
 
 cellText :: UpdateDetail -> Text
 cellText (InternalLinksAdded n) = T.pack (show n)
@@ -337,20 +331,15 @@ computeColumnCount entries (InternalLinksAdded _) =
 computeColumnCount entries column =
   length (filter (any (sameColumn column) . entryDetails) entries)
 
-buildStatsLine :: [PageEntry] -> Text
-buildStatsLine entries =
-  let pageCount = length entries
-      pageWord = if pageCount == 1 then "page" else "pages"
-      columnStats = mapMaybe (buildColumnStat entries) canonicalColumns
-      parts = (T.pack (show pageCount) <> " " <> pageWord) : columnStats
-  in "📊 " <> T.intercalate " · " parts
-
-buildColumnStat :: [PageEntry] -> UpdateDetail -> Maybe Text
-buildColumnStat entries column =
-  let count = computeColumnCount entries column
-  in if count > 0
-    then Just (T.pack (show count) <> " " <> columnEmoji column <> " " <> columnLabel column)
-    else Nothing
+buildStatsLine :: [PageEntry] -> ChangesStats
+buildStatsLine entries = ChangesStats
+  { statsPageCount     = length entries
+  , statsImageCount    = computeColumnCount entries ImageAdded
+  , statsLinkCount     = computeColumnCount entries (InternalLinksAdded 0)
+  , statsBlueskyCount  = computeColumnCount entries (PostedTo Bluesky)
+  , statsMastodonCount = computeColumnCount entries (PostedTo Mastodon)
+  , statsTwitterCount  = computeColumnCount entries (PostedTo Twitter)
+  }
 
 buildTable :: [PageEntry] -> Text
 buildTable entries =
@@ -376,9 +365,9 @@ cellForColumn entry column =
 renderUpdatesSection :: [PageEntry] -> Text
 renderUpdatesSection [] = ""
 renderUpdatesSection entries =
-  let statsLine = buildStatsLine entries
+  let stats = buildStatsLine entries
       table = buildTable entries
-  in updatesSectionHeader <> "\n" <> statsLine <> "\n\n" <> table <> "\n"
+  in updatesSectionHeader <> "\n" <> renderChangesStats stats <> "\n\n" <> table <> "\n"
 
 parseStatsPageCount :: Text -> Int
 parseStatsPageCount sectionText =
@@ -388,6 +377,10 @@ parseStatsPageCount sectionText =
       let afterEmoji = T.drop (T.length "📊 ") rest
           numberStr = T.takeWhile isDigit afterEmoji
       in fromMaybe 0 (readMaybe (T.unpack numberStr))
+
+extractStatsLine :: Text -> Maybe Text
+extractStatsLine content =
+  find (T.isPrefixOf "📊 ") (T.splitOn "\n" content)
 
 -- Core logic: parse existing → merge new → render
 convertToEntry :: UpdateLink -> PageEntry
@@ -518,13 +511,13 @@ ensureChangesPage changesDir date = do
           when (updated /= prevContent) $
             TIO.writeFile prevPath updated
 
-ensureChangesLinkInReflection :: FilePath -> Day -> IO ()
-ensureChangesLinkInReflection reflectionPath date = do
+updateChangesPreviewInReflection :: FilePath -> Day -> ChangesStats -> IO ()
+updateChangesPreviewInReflection reflectionPath date stats = do
   reflectionExists <- doesFileExist reflectionPath
   when reflectionExists $ do
     content <- TIO.readFile reflectionPath
-    unless (T.isInfixOf changesLinkPrefix content) $ do
-      let updated = T.stripEnd content <> "\n\n" <> changesLink date <> "\n"
+    let updated = upsertChangesPreview content date stats
+    when (updated /= content) $
       TIO.writeFile reflectionPath updated
 
 extractTitleFromFile :: FilePath -> IO Text
@@ -558,6 +551,8 @@ addUpdateLinksToReflection vaultDir date links = do
   let existingText = extractSectionText changesContent
       existingEntries = parseExistingEntries existingText
       expectedCount = parseStatsPageCount existingText
+      newEntries = fmap convertToEntry links
+      mergedEntries = mergeEntries existingEntries newEntries
 
   when (null existingEntries && expectedCount > 0) $
     TIO.putStrLn $ "  \9888\65039  Data loss prevented: parsed 0 entries but stats indicate "
@@ -568,7 +563,7 @@ addUpdateLinksToReflection vaultDir date links = do
     then pure False
     else do
       TIO.writeFile changesPath updated
-      ensureChangesLinkInReflection reflectionPath date
+      updateChangesPreviewInReflection reflectionPath date (buildStatsLine mergedEntries)
       let linkPaths = T.intercalate ", " (fmap (unRelativePath . updateRelativePath) links)
       TIO.putStrLn ("  \128260 Added update link(s) to " <> dateText <> " changes: " <> linkPaths)
       pure True

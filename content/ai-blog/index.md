@@ -6,10 +6,11 @@ title: 🤖 AI Blog
 URL: https://bagrounds.org/ai-blog/index
 Author: "[[bryan-grounds]]"
 backlinks: false
-updated: 2026-04-20T21:33:29-07:00
+updated: 2026-04-21T09:00:56-07:00
 ---
 [Home](../index.md)  
-# 🤖 AI Blog (167)  
+# 🤖 AI Blog (168)  
+- [2026-04-20 | 📊 Changes Preview in Reflections 🪞](./2026-04-20-1-changes-preview-in-reflections.md)  
 - [2026-04-19 | 🎂 Blogiversary Two: A Year of Daily Reflections, Haskell, and Six AI Blogs 🕯️🕯️](./2026-04-19-3-blogiversary-2.md)  
 - [2026-04-19 | 🏁 Finishing the Haskell Architecture Journey 🗺️](./2026-04-19-2-finishing-the-haskell-architecture-journey.md)  
 - [2026-04-19 | 🔧 Fixing the Misplaced H2 🤖](./2026-04-19-1-fixing-the-misplaced-h2.md)  

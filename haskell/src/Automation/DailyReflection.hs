@@ -13,12 +13,14 @@ module Automation.DailyReflection
   , embedSectionHeaders
   , changesLink
   , ChangesStats (..)
+  , renderChangesStats
   , buildChangesStatsPreview
   , upsertChangesPreview
   ) where
 
 import Control.Monad (when)
 import Data.List (sort)
+import Data.Maybe (catMaybes)
 import Data.Text (Text)
 import qualified Data.Text as T
 import qualified Data.Text.IO as TIO
@@ -43,9 +45,34 @@ embedSectionHeaders = [Twitter.sectionHeader, Bluesky.sectionHeader, Mastodon.se
 changesLink :: Text
 changesLink = "## " <> formatWikilink "changes/index" "\128260 Changes"
 
--- | Formatted statistics text extracted from a changes page, ready to embed in a reflection preview.
-newtype ChangesStats = ChangesStats { renderChangesStats :: Text }
-  deriving (Show, Eq)
+-- | Statistics for a day's changes page, capturing the number of pages updated
+-- and the count of each type of update activity.
+data ChangesStats = ChangesStats
+  { statsPageCount     :: Int
+  , statsImageCount    :: Int
+  , statsLinkCount     :: Int
+  , statsBlueskyCount  :: Int
+  , statsMastodonCount :: Int
+  , statsTwitterCount  :: Int
+  } deriving (Show, Eq)
+
+renderChangesStats :: ChangesStats -> Text
+renderChangesStats stats =
+  let pageWord = if statsPageCount stats == 1 then "page" else "pages"
+      counts = catMaybes
+        [ renderStatCount (statsImageCount stats) "🖼️" "images"
+        , renderStatCount (statsLinkCount stats) "🔗" "links"
+        , renderStatCount (statsBlueskyCount stats) "🦋" "Bluesky"
+        , renderStatCount (statsMastodonCount stats) "🐘" "Mastodon"
+        , renderStatCount (statsTwitterCount stats) "🐦" "Twitter"
+        ]
+      parts = (T.pack (show (statsPageCount stats)) <> " " <> pageWord) : counts
+  in "📊 " <> T.intercalate " · " parts
+
+renderStatCount :: Int -> Text -> Text -> Maybe Text
+renderStatCount count emoji label
+  | count > 0 = Just (T.pack (show count) <> " " <> emoji <> " " <> label)
+  | otherwise = Nothing
 
 changesStatsPreviewLinePrefix :: Text
 changesStatsPreviewLinePrefix = "[[changes/"

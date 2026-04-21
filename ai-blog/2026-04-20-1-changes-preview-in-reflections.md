@@ -34,9 +34,9 @@ URL: https://bagrounds.org/ai-blog/2026-04-20-1-changes-preview-in-reflections
 
 📦 Four new pure functions were introduced to support this feature.
 
-🔗 The changesLink constant points to the changes index. 📊 The buildChangesStatsPreview function constructs the stats preview line by formatting a date-linked wikilink followed by the stats text wrapped in a ChangesStats domain type. 🔄 The upsertChangesPreview function handles inserting or updating the changes section in a reflection. 🔎 The extractStatsLine function locates the stats in a changes page by finding the first line starting with the chart emoji and wraps it in ChangesStats.
+🔗 The changesLink constant points to the changes index. 📊 The ChangesStats data type holds the individual integer counts: page count, image count, link count, Bluesky count, Mastodon count, and Twitter count. 🎨 The renderChangesStats function turns those structured values into display text. 🔄 The upsertChangesPreview function handles inserting or updating the changes section in a reflection. 🔎 The extractStatsLine utility extracts the raw stats text line from a changes page when needed.
 
-🧪 On the I/O side, the old ensureChangesLinkInReflection function was replaced with updateChangesPreviewInReflection, which reads the reflection, applies upsertChangesPreview, and writes back if anything changed. 🎯 The orchestrator function addUpdateLinksToReflection now extracts the stats from the updated changes page and passes it to the reflection updater.
+🧪 On the I/O side, the old ensureChangesLinkInReflection function was replaced with updateChangesPreviewInReflection, which reads the reflection, applies upsertChangesPreview, and writes back if anything changed. 🎯 The orchestrator function addUpdateLinksToReflection now builds ChangesStats directly from the merged PageEntry list, avoiding any text round-trip.
 
 ## 🧪 Testing
 

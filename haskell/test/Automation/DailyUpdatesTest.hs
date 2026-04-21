@@ -14,7 +14,6 @@ import Test.Tasty.QuickCheck (testProperty)
 import qualified Test.Tasty.QuickCheck as QC
 
 import Automation.DailyUpdates
-import Automation.DailyReflection (ChangesStats (..))
 import Automation.Platform (Platform (..))
 import Automation.TestGenerators (testTitle, testRelativePath)
 
@@ -410,11 +409,11 @@ addUpdateLinksTests = testGroup "addUpdateLinks"
 
   , testCase "extractStatsLine finds stats line in content" $
       do
-        assertEqual "extracts from section" (Just (ChangesStats "📊 3 pages · 2 🖼️ images"))
+        assertEqual "extracts from section" (Just "📊 3 pages · 2 🖼️ images")
           (extractStatsLine "## 🔄 Updates\n📊 3 pages · 2 🖼️ images\n\n| Page |")
         assertEqual "returns Nothing when absent" Nothing
           (extractStatsLine "# Heading\n\nNo stats here")
-        assertEqual "extracts from multiline content" (Just (ChangesStats "📊 1 page · 1 🦋 Bluesky"))
+        assertEqual "extracts from multiline content" (Just "📊 1 page · 1 🦋 Bluesky")
           (extractStatsLine "---\ntitle: test\n---\n# Heading\n\n## 🔄 Updates\n📊 1 page · 1 🦋 Bluesky\n")
 
   , testCase "resolveRelativePath converts paths correctly" $

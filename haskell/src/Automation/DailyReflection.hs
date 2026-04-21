@@ -45,8 +45,9 @@ embedSectionHeaders = [Twitter.sectionHeader, Bluesky.sectionHeader, Mastodon.se
 changesLink :: Text
 changesLink = "## " <> formatWikilink "changes/index" "\128260 Changes"
 
--- | Statistics for a day's changes page, capturing the number of pages updated
--- and the count of each type of update activity.
+-- | Statistics for a day's changes page. Using structured integer fields rather than
+-- pre-rendered text ensures these values are constructed at the source (from live PageEntry
+-- data) and rendered only through 'renderChangesStats', keeping presentation separate from data.
 data ChangesStats = ChangesStats
   { statsPageCount     :: Int
   , statsImageCount    :: Int

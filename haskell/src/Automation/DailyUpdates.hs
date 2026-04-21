@@ -380,7 +380,7 @@ parseStatsPageCount sectionText =
 
 extractStatsLine :: Text -> Maybe Text
 extractStatsLine content =
-  find (T.isPrefixOf "\128202 ") (T.splitOn "\n" content)
+  find (T.isPrefixOf "📊 ") (T.splitOn "\n" content)
 
 -- Core logic: parse existing → merge new → render
 convertToEntry :: UpdateLink -> PageEntry
@@ -552,6 +552,7 @@ addUpdateLinksToReflection vaultDir date links = do
       existingEntries = parseExistingEntries existingText
       expectedCount = parseStatsPageCount existingText
       newEntries = fmap convertToEntry links
+      mergedEntries = mergeEntries existingEntries newEntries
 
   when (null existingEntries && expectedCount > 0) $
     TIO.putStrLn $ "  \9888\65039  Data loss prevented: parsed 0 entries but stats indicate "
@@ -562,7 +563,6 @@ addUpdateLinksToReflection vaultDir date links = do
     then pure False
     else do
       TIO.writeFile changesPath updated
-      let mergedEntries = mergeEntries existingEntries newEntries
       updateChangesPreviewInReflection reflectionPath date (buildStatsLine mergedEntries)
       let linkPaths = T.intercalate ", " (fmap (unRelativePath . updateRelativePath) links)
       TIO.putStrLn ("  \128260 Added update link(s) to " <> dateText <> " changes: " <> linkPaths)

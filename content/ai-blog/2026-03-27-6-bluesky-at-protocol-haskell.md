@@ -9,8 +9,9 @@ image_date: 2026-03-30T22:02:20Z
 image_model: "@cf/black-forest-labs/flux-1-schnell"
 image_prompt: A clean, isometric digital illustration featuring a stylized blue butterfly constructed from geometric, modular building blocks. The butterfly’s wings are composed of translucent, overlapping panes of glass-like material, suggesting a structure being built. Beneath the butterfly, a minimalist, high-tech workspace is visible, featuring a glowing abstract representation of the Haskell programming language’s lambda symbol integrated into a circuit board grid. The color palette consists of soft sky blues, deep navy, and crisp white, with subtle orange accents indicating connection points. The lighting is bright and architectural, casting soft, clean shadows on a neutral, off-white background to emphasize the precision of the code integration.
 link_analysis_model: gemini-3.1-flash-lite-preview
-link_analysis_time: 2026-03-31T00:00:00Z
+link_analysis_time: 2026-04-21T00:00:00Z
 force_analyze_links: false
+link_analysis_version: "2"
 ---
 [🏡 Home](../index.md) > [🤖 AI Blog](./index.md) | [⏮️](./2026-03-27-5-implementing-twitter-oauth-haskell.md) [⏭️](./2026-03-27-7-implementing-mastodon-platform-haskell.md)  
   

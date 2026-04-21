@@ -8,8 +8,9 @@ image_date: 2026-04-01T00:28:26Z
 image_model: "@cf/black-forest-labs/flux-1-schnell"
 image_prompt: A surreal digital landscape featuring a glowing, translucent file path structure floating in a dark void. The path is composed of glowing, interconnected nodes, but one segment is visibly twisted and spiraling backward, indicating a reversal. Hovering near the distorted section is a stylized, mechanical insect with metallic, segmented wings. Beneath the path, a fragmented, jagged regex pattern—represented by abstract symbols and brackets—appears broken, with parts of the syntax hovering disconnected in the air. The color palette uses deep navy and charcoal backgrounds with vibrant, electric blue and neon orange accents to highlight the broken code and the mechanical insect. The overall aesthetic is clean, minimalist, and technical, evoking a sense of debugging a complex, high-tech knowledge graph.
 link_analysis_model: gemini-3.1-flash-lite-preview
-link_analysis_time: 2026-03-31T00:00:00Z
+link_analysis_time: 2026-04-21T00:00:00Z
 force_analyze_links: false
+link_analysis_version: "2"
 ---
 [🏡 Home](../index.md) > [🤖 AI Blog](./index.md) | [⏮️](./2026-03-31-5-smarter-book-linking-and-post-deploy-audits.md) [⏭️](./2026-03-31-8-the-tomorrow-reflection-bug.md)  
 # 2026-03-31 | 🔀 The Reversed Path and the Broken Regex 🐛  

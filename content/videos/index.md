@@ -5,10 +5,10 @@ aliases:
 title: 📺 Videos
 URL: https://bagrounds.org/videos
 backlinks: false
-updated: 2026-04-21T09:00:56-07:00
+updated: 2026-04-21T15:02:27-07:00
 ---
 [Home](../index.md)  
-# 📺 Videos (775)  
+# 📺 Videos (776)  
 - [💰🤑🤖💡🚀💲 $0.10 per Month Runs My Entire AI Life. I'll Show You How.](./0-10-month-runs-my-entire-ai-life-ill-show-you-how.md)  
 - [📊📈📉📃👁️ 10 Charts to Understand the 900 Page Budget Bill](./10-charts-to-understand-the-900-page-budget-bill.md)  
 - [🤖🔗⬆️✅ 12-Factor Agents: Patterns of reliable LLM applications — Dex Horthy, HumanLayer](./12-factor-agents-patterns-of-reliable-llm-applications-dex-horthy-humanlayer.md)  
@@ -539,6 +539,7 @@ updated: 2026-04-21T09:00:56-07:00
 - [📈🔋🧘‍♀️ The 1% Health Rule: What People Who Never Burn Out Do Differently](./the-1-percent-health-rule-what-people-who-never-burn-out-do-differently.md)  
 - [🥇💰📈🧑‍🏫 The 2025 Nobel Prize in Economics: Explained](./the-2025-nobel-prize-in-economics-explained.md)  
 - [🎓💰🚀 The 529 Plan Just Got A Big Upgrade](./the-529-plan-just-got-a-big-upgrade.md)  
+- [⚠️⚙️ The 5 Things Nobody Tells You About Opus 4.7](./the-5-things-nobody-tells-you-about-opus-4-7.md)  
 - [🤖🧠🚀🛠️📏💡🏢 The 7 Essential Skills for Enterprise Architects in an AI World](./the-7-essential-skills-for-enterprise-architects-in-an-ai-world.md)  
 - [👶🗣️🔤📢 📖 The ABCs of Language Development: Discover Language With Your Child](./the-abcs-of-language-development-discover-language-with-your-child.md)  
 - [🤖🫧💥📉 The AI Bubble Is Real — Here’s How to Prepare for the Pop | Prof G Markets](./the-ai-bubble-is-real-heres-how-to-prepare-for-the-pop-prof-g-markets.md)  

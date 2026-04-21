@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-04-21T16:41:43-07:00
+updated: 2026-04-21T16:56:54-07:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -77,11 +77,11 @@ updated: 2026-04-21T16:41:43-07:00
 - [⛈️🏛️ Storm at the Capitol: An Oral History of January 6th](./books/storm-at-the-capitol-an-oral-history-of-january-6th.md)  
   
   
-## [📺 Videos](./videos/index.md) (778)  
+## [📺 Videos](./videos/index.md) (779)  
+- [🔴🎙️🇺🇸🎓🚀🎉 LIVE with Bernie Sanders & John Russell: More Perfect University Launch Party](./videos/live-with-bernie-sanders-john-russell-more-perfect-university-launch-party.md)  
 - [👁️🤖😨🏛️ Why Are Palantir and OpenAI Scared of Alex Bores? | The Ezra Klein Show](./videos/why-are-palantir-and-openai-scared-of-alex-bores-the-ezra-klein-show.md)  
 - [🏆🐘🆚🔮⚠️ Turing Award Winner: Postgres, Disagreeing with Google, Future Problems | Mike Stonebraker](./videos/turing-award-winner-postgres-disagreeing-with-google-future-problems-mike-stonebraker.md)  
 - [⚠️⚙️ The 5 Things Nobody Tells You About Opus 4.7](./videos/the-5-things-nobody-tells-you-about-opus-4-7.md)  
-- [🤔🤯❤️📖 How to Understand Emotions | Dr. Lisa Feldman Barrett](./videos/how-to-understand-emotions-dr-lisa-feldman-barrett.md)  
   
   
 ## [🌌 Topics](./topics/index.md) (91)  

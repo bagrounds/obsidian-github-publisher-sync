@@ -10,8 +10,9 @@ Channel: David Shapiro
 tags:
 youtube: https://youtu.be/zeHTTXAWDUA
 link_analysis_model: gemini-3.1-flash-lite-preview
-link_analysis_time: 2026-04-06T00:00:00Z
+link_analysis_time: 2026-04-21T00:00:00Z
 force_analyze_links: false
+link_analysis_version: "2"
 ---
 [Home](../index.md) > [Videos](./index.md)  
 # ⏳📅🗓️🚀 The next 36 months will be WILD  
@@ -61,7 +62,7 @@ force_analyze_links: false
 - 🤔 While market forces can indeed alleviate supply chain issues, the long-term energy demands of AI data centers and their environmental impact are complex issues with ongoing research and policy debates, as detailed in Atlas of AI by Kate Crawford, which examines the hidden costs of AI.  
 - 🤔 The video posits that the economic impact of AI, particularly job displacement through ghost jobs and jobless growth, is already occurring and will accelerate (22:19-25:12).  
 - 🤔 This idea of labor decoupling from economic output is a recurring theme in discussions about automation. However, the precise extent and speed of job displacement, and the emergence of new job categories, are areas of ongoing economic analysis and vary across different sectors.  
-- 🤔 A topic to explore for a better understanding is the role of global governance and ethical frameworks in managing the risks and ensuring equitable benefits of rapidly advancing AI. While the video touches on risk categories, it doesn't delve deeply into the mechanisms for international oversight or the development of ethical AI principles, which are critical areas of discussion in the AI ethics community and sources like Stanford Human-Centered Artificial Intelligence (HAI).  
+- 🤔 A topic to explore for a better understanding is the role of global governance and ethical frameworks in managing the risks and ensuring equitable benefits of rapidly advancing AI. While the video touches on risk categories, it doesn't delve deeply into the mechanisms for international oversight or the development of ethical AI principles, which are critical areas of discussion in the AI ethics community and sources like Stanford Human-Centered [🤖🧠 Artificial Intelligence: A Modern Approach](../books/artificial-intelligence-a-modern-approach.md) (HAI).  
   
 ## ❓ Frequently Asked Questions (FAQ)  
   

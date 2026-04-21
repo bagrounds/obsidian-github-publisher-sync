@@ -8,8 +8,9 @@ image_date: 2026-03-30T19:28:58Z
 image_model: "@cf/black-forest-labs/flux-1-schnell"
 image_prompt: A minimalist, high-contrast illustration featuring a stylized, mechanical loom weaving threads of digital code. On the left side, the threads are chaotic, jagged, and multicolored, representing the messy TypeScript architecture. As they pass through a sleek, glowing geometric prism in the center, they are transformed into organized, uniform, and crystalline strands of cool-toned blue and white light. These refined threads emerge on the right side, weaving together to form a perfectly symmetrical, abstract representation of an image frame. The background is a deep, matte charcoal, emphasizing the clean lines and the transition from complexity to functional, type-safe order. Fine, subtle circuit-board patterns are etched into the background, hinting at the underlying infrastructure.
 link_analysis_model: gemini-3.1-flash-lite-preview
-link_analysis_time: 2026-03-31T00:00:00Z
+link_analysis_time: 2026-04-21T00:00:00Z
 force_analyze_links: false
+link_analysis_version: "2"
 ---
 [🏡 Home](../index.md) > [🤖 AI Blog](./index.md) | [⏮️](./2026-03-27-2-wiring-haskell-executables-for-production.md) [⏭️](./2026-03-27-4-porting-internal-linking-to-haskell.md)  
   

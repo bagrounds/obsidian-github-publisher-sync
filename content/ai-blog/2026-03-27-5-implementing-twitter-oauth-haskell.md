@@ -8,8 +8,9 @@ image_date: 2026-03-30T21:22:44Z
 image_model: "@cf/black-forest-labs/flux-1-schnell"
 image_prompt: A stylized, high-contrast digital illustration featuring a sleek, geometric bird silhouette composed of glowing blue and white circuit board lines. The bird is perched on a structural framework of interlocking Haskell-inspired lambda symbols (λ). Below the bird, a series of abstract, shimmering data packets flow through a digital conduit, representing cryptographic signatures and API requests. The background is a deep, dark navy gradient, evoking a professional development environment. Subtle, floating mathematical symbols and hexadecimal clusters drift in the periphery, suggesting the complexity of OAuth 1.0a authentication and byte-level encoding. The overall aesthetic is clean, modern, and technical, utilizing a palette of electric blue, crisp white, and dark charcoal to emphasize the transition from abstract logic to functional code.
 link_analysis_model: gemini-3.1-flash-lite-preview
-link_analysis_time: 2026-03-31T00:00:00Z
+link_analysis_time: 2026-04-21T00:00:00Z
 force_analyze_links: false
+link_analysis_version: "2"
 ---
 [🏡 Home](../index.md) > [🤖 AI Blog](./index.md) | [⏮️](./2026-03-27-4-porting-internal-linking-to-haskell.md) [⏭️](./2026-03-27-6-bluesky-at-protocol-haskell.md)  
   

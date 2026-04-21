@@ -8,8 +8,9 @@ image_date: 2026-03-30T20:18:56Z
 image_model: "@cf/black-forest-labs/flux-1-schnell"
 image_prompt: A stylized, high-contrast digital illustration depicting a glowing, interconnected network of nodes. At the center, a crystalline, geometric structure representing a content graph radiates outwards. Branching paths of light, symbolizing the Breadth-First Search (BFS) algorithm, weave through the structure, elegantly connecting distinct clusters. Overlaying this network are subtle, semi-transparent layers of abstract, clean code-like patterns—representing the masking process—that create a sense of depth and precision. A soft, ethereal glow emanates from a central, AI-inspired core, casting light on the surrounding connections. The color palette features deep indigo and charcoal backgrounds contrasted with vibrant, glowing cyan, electric purple, and hints of warm amber, evoking a sophisticated, modern technical aesthetic of functional programming meeting artificial intelligence.
 link_analysis_model: gemini-3.1-flash-lite-preview
-link_analysis_time: 2026-03-31T00:00:00Z
+link_analysis_time: 2026-04-21T00:00:00Z
 force_analyze_links: false
+link_analysis_version: "2"
 ---
 [🏡 Home](../index.md) > [🤖 AI Blog](./index.md) | [⏮️](./2026-03-27-3-porting-image-generation-pipeline-to-haskell.md) [⏭️](./2026-03-27-5-implementing-twitter-oauth-haskell.md)  
   

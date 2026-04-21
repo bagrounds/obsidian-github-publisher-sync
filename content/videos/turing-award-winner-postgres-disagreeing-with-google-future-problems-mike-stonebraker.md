@@ -9,6 +9,10 @@ Platform:
 Channel: Ryan Peterman
 tags:
 youtube: https://youtu.be/YPObBOwIrHk
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_version: "2"
+link_analysis_time: 2026-04-21T00:00:00Z
+force_analyze_links: false
 ---
 [Home](../index.md) > [Videos](./index.md)  
 # 🏆🐘🆚🔮⚠️ Turing Award Winner: Postgres, Disagreeing with Google, Future Problems | Mike Stonebraker  
@@ -52,7 +56,7 @@ youtube: https://youtu.be/YPObBOwIrHk
 * 📗 Designing Data-Intensive Applications by Martin Kleppmann provides a deep dive into the trade-offs of consistency, scalability, and specialized database architectures.  
   
 ### 🆚 Contrasting  
-* 📘 The Lean Startup by Eric Ries emphasizes shipping early and iterating based on customer feedback, a strategy often at odds with Stonebraker's focus on deep academic rigor before commercialization.  
+* 📘 [📉🧪🚀 The Lean Startup: How Today's Entrepreneurs Use Continuous Innovation to Create Radically Successful Businesses](../books/the-lean-startup.md) by Eric Ries emphasizes shipping early and iterating based on customer feedback, a strategy often at odds with Stonebraker's focus on deep academic rigor before commercialization.  
 * 📙 NoSQL Distilled by Pramod J. Sadalage and Martin Fowler explains the rise and utility of non-relational systems that Stonebraker frequently critiques as being less performant than specialized relational engines.  
   
 ### 🎨 Creatively Related  

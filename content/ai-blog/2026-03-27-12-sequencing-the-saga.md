@@ -10,8 +10,9 @@ image_model: "@cf/black-forest-labs/flux-1-schnell"
 image_prompt: A winding, slightly elevated path made of numerous small, distinct rectangular blocks, each representing a blog post. The blocks are arranged in a clear, linear sequence, subtly hinting at chronological order through their arrangement along the path. Some blocks might have a faint, abstract glow or a subtle numerical-like texture, without actual digits, to convey sequencing. The path stretches into the distance, suggesting a marathon of content. The background is a soft, digital gradient, evoking an organized, online archive.
 updated: 2026-03-31T05:41:56
 link_analysis_model: gemini-3.1-flash-lite-preview
-link_analysis_time: 2026-03-31T00:00:00Z
+link_analysis_time: 2026-04-21T00:00:00Z
 force_analyze_links: false
+link_analysis_version: "2"
 ---
 [🏡 Home](../index.md) > [🤖 AI Blog](./index.md) | [⏮️](./2026-03-27-11-zero-deletion-circuit-breaker.md) [⏭️](./2026-03-27-13-haskell-port-retrospective.md)  
   

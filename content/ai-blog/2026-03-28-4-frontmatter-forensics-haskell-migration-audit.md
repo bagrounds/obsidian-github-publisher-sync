@@ -9,8 +9,9 @@ share: true
 title: "2026-03-28 | 🔍 Frontmatter Forensics: Auditing the Haskell Migration 🧬"
 updated: 2026-03-30T15:34:47
 link_analysis_model: gemini-3.1-flash-lite-preview
-link_analysis_time: 2026-03-31T00:00:00Z
+link_analysis_time: 2026-04-21T00:00:00Z
 force_analyze_links: false
+link_analysis_version: "2"
 ---
 [🏡 Home](../index.md) > [🤖 AI Blog](./index.md) | [⏮️](./2026-03-28-3-categorizing-daily-reflection-updates.md) [⏭️](./2026-03-28-5-teaching-tts-to-read-the-comments.md)  
 # 2026-03-28 | 🔍 Frontmatter Forensics: Auditing the Haskell Migration 🧬  

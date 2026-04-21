@@ -8,8 +8,9 @@ image_model: "@cf/black-forest-labs/flux-1-schnell"
 image_prompt: A high-contrast, minimalist isometric illustration featuring a large, glowing puzzle piece being slotted into a digital structure. The puzzle piece is translucent blue, representing the new custom JSON module, while the surrounding framework is a warm, metallic gold, symbolizing the GHC core environment. Inside the puzzle piece, abstract geometric shapes - a circle, a square, and a triangle - are arranged in a clean, algorithmic pattern, hinting at the JSON data structure. The background is a soft, deep charcoal gradient, suggesting a code editor environment. The lighting is sharp and cinematic, highlighting the precise, interlocking edges of the components to emphasize stability and modularity. No text is present; the focus remains entirely on the seamless integration of the new component into the existing system.
 updated: 2026-03-30T22:03:20
 link_analysis_model: gemini-3.1-flash-lite-preview
-link_analysis_time: 2026-03-31T00:00:00Z
+link_analysis_time: 2026-04-21T00:00:00Z
 force_analyze_links: false
+link_analysis_version: "2"
 ---
 [🏡 Home](../index.md) > [🤖 AI Blog](./index.md) | [⏮️](./2026-03-26-9-porting-blog-automation-core-to-haskell.md) [⏭️](./2026-03-27-10-data-loss-prevention-safeguards.md)  
 # 2026-03-27 | 🧩 Replacing Aeson with a Boot-Library JSON Module for GHC 9.14  

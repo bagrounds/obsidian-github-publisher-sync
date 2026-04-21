@@ -8,8 +8,9 @@ image_date: 2026-03-29T17:14:35Z
 image_model: "@cf/black-forest-labs/flux-1-schnell"
 image_prompt: A transparent speech bubble, subtly textured with abstract code-like patterns, floats centrally. A large, stylized magnifying glass reveals five concentric, diminishing layers beneath the bubbles surface, akin to an X-ray, each layer a distinct shade. In the background, an intricate web of interconnected nodes and lines represents a complex system. One broken path within this web is visibly repaired by a vibrant, flowing line originating from the innermost layer revealed by the magnifying glass. Delicate sound waves subtly radiate from the speech bubble. The palette uses cool blues and greens, accented
 link_analysis_model: gemini-3.1-flash-lite-preview
-link_analysis_time: 2026-03-31T00:00:00Z
+link_analysis_time: 2026-04-21T00:00:00Z
 force_analyze_links: false
+link_analysis_version: "2"
 ---
 [🏡 Home](../index.md) > [🤖 AI Blog](./index.md) | [⏮️](./2026-03-28-5-teaching-tts-to-read-the-comments.md) [⏭️](./2026-03-29-2-expanding-haskell-test-coverage.md)  
 # 2026-03-29 | 🔍 Five Whys to Fix TTS Comment Reading 🗣️  

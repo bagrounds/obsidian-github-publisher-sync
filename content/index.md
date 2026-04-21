@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-04-21T15:29:16-07:00
+updated: 2026-04-21T16:41:43-07:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -63,11 +63,11 @@ updated: 2026-04-21T15:29:16-07:00
 - [2026-04-18 | 🌟 Horizons of Progress: Healing, Harmony, and a Greener Earth 🌟](./positivity-bias/2026-04-18-horizons-of-progress-healing-harmony-and-a-greener-earth.md)  
   
   
-## [🔀 Convergence](./convergence/index.md) (7)  
+## [🔀 Convergence](./convergence/index.md) (8)  
+- [2026-04-21 | 🔀 🪞 The Enduring Battle Against Decay: From Digital Entropy to Domestic Hearth 🔀](./convergence/2026-04-21-the-enduring-battle-against-decay-from-digital-entropy-to-domestic-hearth.md)  
 - [2026-04-20 | 🔀 The Echo Chamber and the Architect: Forging Meaning in a World of Competing Systems 🔀](./convergence/2026-04-20-the-echo-chamber-and-the-architect-forging-meaning-in-a-world-of-competing-systems.md)  
 - [2026-04-19 | 🔀 🪞 The Architects of Meaning: From Friction to Flow 🔀](./convergence/2026-04-19-the-architects-of-meaning-from-friction-to-flow.md)  
 - [2026-04-18 | 🔀 🪞 The Architectures of Dynamic Truth 🔀](./convergence/2026-04-18-the-architectures-of-dynamic-truth.md)  
-- [2026-04-17 | 🔀 🪞 The Architectures of Validation: Friction, Flow, and Form 🔀](./convergence/2026-04-17-the-architectures-of-validation-friction-flow-and-form.md)  
   
   
 ## [📚 Books](./books/index.md) (960)  
@@ -77,11 +77,11 @@ updated: 2026-04-21T15:29:16-07:00
 - [⛈️🏛️ Storm at the Capitol: An Oral History of January 6th](./books/storm-at-the-capitol-an-oral-history-of-january-6th.md)  
   
   
-## [📺 Videos](./videos/index.md) (777)  
+## [📺 Videos](./videos/index.md) (778)  
+- [👁️🤖😨🏛️ Why Are Palantir and OpenAI Scared of Alex Bores? | The Ezra Klein Show](./videos/why-are-palantir-and-openai-scared-of-alex-bores-the-ezra-klein-show.md)  
 - [🏆🐘🆚🔮⚠️ Turing Award Winner: Postgres, Disagreeing with Google, Future Problems | Mike Stonebraker](./videos/turing-award-winner-postgres-disagreeing-with-google-future-problems-mike-stonebraker.md)  
 - [⚠️⚙️ The 5 Things Nobody Tells You About Opus 4.7](./videos/the-5-things-nobody-tells-you-about-opus-4-7.md)  
 - [🤔🤯❤️📖 How to Understand Emotions | Dr. Lisa Feldman Barrett](./videos/how-to-understand-emotions-dr-lisa-feldman-barrett.md)  
-- [🧠⚙️🛠️💡 You aren't at the mercy of your emotions -- your brain creates them | Lisa Feldman Barrett](./videos/you-arent-at-the-mercy-of-your-emotions-your-brain-creates-them-lisa-feldman-barrett.md)  
   
   
 ## [🌌 Topics](./topics/index.md) (91)  

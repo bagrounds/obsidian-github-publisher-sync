@@ -10,8 +10,9 @@ image_model: "@cf/black-forest-labs/flux-1-schnell"
 image_prompt: A split-screen composition depicting the transition from a dynamic, chaotic environment to a structured, stable one. On the left side, a stylized TypeScript logo is dissolving into a flurry of fragmented, glowing pixels and lines of code. On the right, a solid, geometric Haskell lambda symbol sits at the center of a clean, minimalist landscape. A bridge made of interconnected modular blocks connects the two sides, with a small, glowing checkmark icon resting at the end of the bridge, symbolizing the finish line. The color palette transitions from the warm yellow and orange of TypeScript to the cool, deep blues and purples of Haskell, with subtle circuit-board patterns etched into the background to represent the underlying automation system.
 updated: 2026-03-31T05:41:56
 link_analysis_model: gemini-3.1-flash-lite-preview
-link_analysis_time: 2026-03-31T00:00:00Z
+link_analysis_time: 2026-04-21T00:00:00Z
 force_analyze_links: false
+link_analysis_version: "2"
 ---
 [🏡 Home](../index.md) > [🤖 AI Blog](./index.md) | [⏮️](./2026-03-27-12-sequencing-the-saga.md) [⏭️](./2026-03-27-14-taming-the-ci-stampede.md)  
   

@@ -10,9 +10,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-17T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-04-22T18:31:09Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A minimalist, evocative illustration featuring a translucent, glass-like human silhouette standing in a soft, misty landscape. From the chest area of the silhouette, a vibrant, glowing green sprout emerges, breaking through a patch of cracked, dry earth. In the background, faint, shadowy outlines of larger, rigid figures loom but remain distant and blurred, representing the past. The color palette transitions from cool, muted greys and blues in the periphery to warm, radiant gold and emerald green at the center, symbolizing the process of healing and reclaiming one’s own emotional autonomy. The lighting is soft and hopeful, focusing on the growth of the plant against the stark, cold environment.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🧑‍🧒💔🩹 Adult Children of Emotionally Immature Parents: How to Heal from Distant, Rejecting, or Self-Involved Parents  
+![books-adult-children-of-emotionally-immature-parents-how-to-heal-from-distant-rejecting-or-self-involved-parents](../books-adult-children-of-emotionally-immature-parents-how-to-heal-from-distant-rejecting-or-self-involved-parents.jpg)  
 [🛒 Adult Children of Emotionally Immature Parents: How to Heal from Distant, Rejecting, or Self-Involved Parents. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3YONIOL)  
   
 💔🌱✨ Parental emotional immaturity shapes adult lives. Understand these dynamics and actionable strategies to heal and cultivate healthier relationships.  

@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-04-21T16:56:54-07:00
+updated: 2026-04-22T07:26:31-07:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -14,11 +14,11 @@ updated: 2026-04-21T16:56:54-07:00
 🔊 Listen to any page with built in audio control.  
 💬 Comment on any page with your GitHub account.  
   
-## [🪞 Reflections](./reflections/index.md) ~ Blog (523)  
-- [2026-04-21](./reflections/2026-04-21.md)  
+## [🪞 Reflections](./reflections/index.md) ~ Blog (524)  
+- [2026-04-22](./reflections/2026-04-22.md)  
+- [2026-04-21 | 🥳 5 🏆 Winner 🗣️ Show 🚀 Launch 🌟 Shine 📰 Progress 🐔 Eggs 🤖 Entropy 🏛️ Web 🔀 Decay 📺🌟📰🐔🤖🏛️🔀🤖🐲](./reflections/2026-04-21.md)  
 - [2026-04-20 | 🥳 Age 🌟 Progress 🌊 Secret 🐔 Machine 🏛️ Systems 📺🌟📰🐔🤖🏛️🔀🔄🤖🐲](./reflections/2026-04-20.md)  
 - [2026-04-19 | 🥳 Two 🕯️🕯️](./reflections/2026-04-19.md)  
-- [2026-04-18 | 🏆 Beat ⚙️ Systems 🔄 Change 🇺🇸 American 🌟 Progress, 📈 Expanding ✨ Dreams, 🏗️ Architecture 🏛️ Public 🔍 Audit 📊 Analytics ✅ Truth. 📺🌟📰🐔🤖🏛️🔀🔄🤖🐲](./reflections/2026-04-18.md)  
   
   
 ## [🤖 AI Blog](./ai-blog/index.md) (168)  
@@ -49,18 +49,18 @@ updated: 2026-04-21T16:56:54-07:00
 - [2026-04-18 | 🏛️ 🌐 The Digital Lifeline: Universal Broadband as a Public Good 🏛️](./systems-for-public-good/2026-04-18-the-digital-lifeline-universal-broadband-as-a-public-good.md)  
   
   
-## [📰 The Noise](./the-noise/index.md) (12)  
+## [📰 The Noise](./the-noise/index.md) (13)  
+- [2026-04-22 | 📰 The Dual Engine of Progress and Conflict 📰](./the-noise/2026-04-22-the-dual-engine-of-progress-and-conflict.md)  
 - [2026-04-21 | 📰 The Dual Engine of Progress and Conflict 📰](./the-noise/2026-04-21-the-dual-engine-of-progress-and-conflict.md)  
 - [2026-04-20 | 📰 🌐 Shifting Sands, Enduring Currents 🌊 📰](./the-noise/2026-04-20-shifting-sands-enduring-currents.md)  
 - [2026-04-19 | 📰 🌪️ Turbulent Crossroads, Persistent Progress 🌍 📰](./the-noise/2026-04-19-turbulent-crossroads-persistent-progress.md)  
-- [2026-04-18 | 📰 ⚡ Converging Tensions, Expanding Horizons 🌍 📰](./the-noise/2026-04-18-converging-tensions-expanding-horizons.md)  
   
   
-## [🌟 Positivity Bias](./positivity-bias/index.md) (11)  
+## [🌟 Positivity Bias](./positivity-bias/index.md) (12)  
+- [2026-04-22 | 🌟 A World of Innovation and Compassion 🌟](./positivity-bias/2026-04-22-a-world-of-innovation-and-compassion.md)  
 - [2026-04-21 | 🌟 Health, Environment, and Diplomacy Shine Bright 🌟](./positivity-bias/2026-04-21-health-environment-and-diplomacy-shine-bright.md)  
 - [2026-04-20 | 🌟 Global Innovations Spark Collective Progress 🌟](./positivity-bias/2026-04-20-global-innovations-spark-collective-progress.md)  
 - [2026-04-19 | 🌟 Weekend Glow: Innovations Blossom and Communities Thrive 🌟](./positivity-bias/2026-04-19-weekend-glow-innovations-blossom-and-communities-thrive.md)  
-- [2026-04-18 | 🌟 Horizons of Progress: Healing, Harmony, and a Greener Earth 🌟](./positivity-bias/2026-04-18-horizons-of-progress-healing-harmony-and-a-greener-earth.md)  
   
   
 ## [🔀 Convergence](./convergence/index.md) (8)  
@@ -71,31 +71,31 @@ updated: 2026-04-21T16:56:54-07:00
   
   
 ## [📚 Books](./books/index.md) (960)  
-- [🌐🔗🤝💻 Distributed Algorithms](./books/distributed-algorithms.md)  
-- [🇸🇪🇩🇰🇳🇴🇫🇮🧩 The Nordic Theory of Everything: In Search of a Better Life](./books/the-nordic-theory-of-everything.md)  
+- [🇿🇦 The New Apartheid](./books/the-new-apartheid.md)  
 - [🧠🧠🧠🧠 A Thousand Brains: A New Theory of Intelligence](./books/a-thousand-brains.md)  
-- [⛈️🏛️ Storm at the Capitol: An Oral History of January 6th](./books/storm-at-the-capitol-an-oral-history-of-january-6th.md)  
+- [❓📚 A Simple Guide to Retrieval Augmented Generation](./books/a-simple-guide-to-retrieval-augmented-generation.md)  
+- [👨‍👩‍👧‍👦🛡️ A Secure Base: Parent-Child Attachment and Healthy Human Development](./books/a-secure-base-parent-child-attachment-and-healthy-human-development.md)  
   
   
 ## [📺 Videos](./videos/index.md) (779)  
-- [🔴🎙️🇺🇸🎓🚀🎉 LIVE with Bernie Sanders & John Russell: More Perfect University Launch Party](./videos/live-with-bernie-sanders-john-russell-more-perfect-university-launch-party.md)  
-- [👁️🤖😨🏛️ Why Are Palantir and OpenAI Scared of Alex Bores? | The Ezra Klein Show](./videos/why-are-palantir-and-openai-scared-of-alex-bores-the-ezra-klein-show.md)  
-- [🏆🐘🆚🔮⚠️ Turing Award Winner: Postgres, Disagreeing with Google, Future Problems | Mike Stonebraker](./videos/turing-award-winner-postgres-disagreeing-with-google-future-problems-mike-stonebraker.md)  
-- [⚠️⚙️ The 5 Things Nobody Tells You About Opus 4.7](./videos/the-5-things-nobody-tells-you-about-opus-4-7.md)  
+- [News Wrap: Trump says he’s ‘not joking’ about a third term as president](./videos/news-wrap-trump-says-hes-not-joking-about-a-third-term-as-president.md)  
+- [👹🇺🇸📉🔨👁️ With Trump “We Are Watching the Deliberate Dismantling of American Democracy”](./videos/with-trump-we-are-watching-the-deliberate-dismantling-of-american-democracy.md)  
+- [What’s next for America’s Proud Boys after Donald Trump’s pardons | Extra Minutes](./videos/whats-next-for-americas-proud-boys-after-donald-trumps-pardons-extra-minutes.md)  
+- [The security vulnerabilities of using Signal to discuss military operations](./videos/the-security-vulnerabilities-of-using-signal-to-discuss-military-operations.md)  
   
   
 ## [🌌 Topics](./topics/index.md) (91)  
+- [⚛️ Quantum Computing](./topics/quantum-computing.md)  
 - [🔢➕➕ 3 Sum](./topics/programming-problems/3-sum.md)  
 - [🔢➕ 2 Sum](./topics/programming-problems/2-sum.md)  
 - [🇨🇳🤖 DeepSeek](./topics/deepseek.md)  
-- [📊🧐📝⚙️ Design a Performance Self-Evaluation System](./topics/design-a-performance-self-evaluation-system.md)  
   
   
 ## [📄  Articles](./articles/index.md) (84)  
-- [🤖🧠💻 Agentic Code Reasoning](./articles/agentic-code-reasoning.md)  
-- [🗺️🚀🤖 A Field Guide to Rapidly Improving AI Products](./articles/a-field-guide-to-rapidly-improving-ai-products.md)  
-- [🤖🛠️🧠📄 What Fred Brooks Can Teach Us About Writing Specs for AI](./articles/what-fred-brooks-can-teach-us-about-writing-specs-for-ai.md)  
-- [💰⚙️📈🔍 Defining and Characterizing Reward Hacking](./articles/defining-and-characterizing-reward-hacking.md)  
+- [📉🍎🔥🚫 How Project 2025 Would Devastate Public Education](./articles/how-project-2025-would-devastate-public-education.md)  
+- [🏫🔥 Snohomish County schools react to education department firings](./articles/snohomish-county-schools-react-to-education-department-firings.md)  
+- [💻📊 State of Haskell 2025 results](./articles/state-of-haskell-2025-results.md)  
+- [💪🧠📉💊🔎 Creatine Supplementation in Depression: A Review of Mechanisms, Efficacy, Clinical Outcomes, and Future Directions](./articles/creatine-supplementation-in-depression-a-review-of-mechanisms-efficacy-clinical-outcomes-and-future-directions.md)  
   
   
 ## [🤖💬 Bot Chats](./bot-chats/index.md) (49)  

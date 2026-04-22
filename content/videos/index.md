@@ -5,10 +5,10 @@ aliases:
 title: 📺 Videos
 URL: https://bagrounds.org/videos
 backlinks: false
-updated: 2026-04-22T12:10:13-07:00
+updated: 2026-04-22T12:18:23-07:00
 ---
 [Home](../index.md)  
-# 📺 Videos (780)  
+# 📺 Videos (781)  
 - [💰🤑🤖💡🚀💲 $0.10 per Month Runs My Entire AI Life. I'll Show You How.](./0-10-month-runs-my-entire-ai-life-ill-show-you-how.md)  
 - [📊📈📉📃👁️ 10 Charts to Understand the 900 Page Budget Bill](./10-charts-to-understand-the-900-page-budget-bill.md)  
 - [🤖🔗⬆️✅ 12-Factor Agents: Patterns of reliable LLM applications — Dex Horthy, HumanLayer](./12-factor-agents-patterns-of-reliable-llm-applications-dex-horthy-humanlayer.md)  
@@ -356,6 +356,7 @@ updated: 2026-04-22T12:10:13-07:00
 - [💥🇮🇷💰 Justin Wolfers Breaks Down the Potential Economic Consequences of War With Iran](./justin-wolfers-breaks-down-the-potential-economic-consequences-of-war-with-iran.md)  
 - [Just the Facts About the US Federal Budget: Steve Ballmer Talks Through the Numbers](./just-the-facts-about-the-us-federal-budget-steve-ballmer-talks-through-the-numbers.md)  
 - [👩‍💻👑🦆 Kara Swisher: Tech, Power, and Why You Should Get the F*cking Duck](./kara-swisher-tech-power-and-why-you-should-get-the-fcking-duck.md)  
+- [🔒🆚🔓🚨 Karpathy's Wiki vs. Open Brain. One Fails When You Need It Most.](./karpathys-wiki-vs-open-brain-one-fails-when-you-need-it-most.md)  
 - [🗣️💬🧠 Language Acquisition: Crash Course Linguistics  > 12](./language-acquisition-crash-course-linguistics-12.md)  
 - [🎓🎮🏆✨ Last Lecture Series: How to Design a Winnable Game – Graham Weaver](./last-lecture-series-how-to-design-a-winnable-game-graham-weaver.md)  
 - [⚖️🇺🇸🥶🪦 Lawfare Daily: Can Minnesota Prosecute ICE Agent Jonathan Ross?](./lawfare-daily-can-minnesota-prosecute-ice-agent-jonathan-ross.md)  

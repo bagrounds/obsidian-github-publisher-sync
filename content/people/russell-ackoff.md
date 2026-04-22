@@ -6,9 +6,10 @@ aliases:
   - 🤔⚙️🗣️🤝💡🧩🔭📚👴 Russell Ackoff
 title: 🤔⚙️🗣️🤝💡🧩🔭📚👴 Russell Ackoff
 force_analyze_links: false
-link_analysis_time: 2026-03-22T23:32:09.644Z
+link_analysis_time: 2026-04-20T00:00:00Z
 link_analysis_model: gemini-3.1-flash-lite-preview
 updated: 2026-03-23T10:22:47.323Z
+link_analysis_version: "2"
 ---
 [Home](../index.md) > [People](./index.md)  
 # 🤔⚙️🗣️🤝💡🧩🔭📚👴 Russell Ackoff  

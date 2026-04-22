@@ -7,11 +7,16 @@ share: true
 CTA: 🗽 Grasp destiny.
 affiliate link: https://amzn.to/4nUh0pP
 link_analysis_model: gemini-3.1-flash-lite-preview
-link_analysis_time: 2026-04-02T00:00:00Z
+link_analysis_time: 2026-04-18T00:00:00Z
 force_analyze_links: false
+link_analysis_version: "2"
+image_date: 2026-04-22T22:26:22Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A high-contrast, atmospheric illustration featuring a quill pen resting atop a weathered, hand-written manuscript of the Federalist Papers. The scene is lit by the warm, flickering glow of a nearby candle, casting soft shadows across a dark mahogany desk. In the background, partially obscured, is a silhouette of an 18th-century architectural column, symbolizing the foundation of the American financial system. Subtle motifs of a military epaulette and a weathered coin are integrated into the composition, hinting at Hamilton’s dual life as a soldier and an architect of the economy. The color palette relies on deep navy, parchment gold, and charcoal grey, evoking a sense of historical gravitas and the intellectual intensity of the Founding Era.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🇺🇸⚔️ Alexander Hamilton  
+![books-alexander-hamilton](../books-alexander-hamilton.jpg)  
 [🛒 Alexander Hamilton. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4nUh0pP)  
   
 ## 📖 Book Report: Alexander Hamilton by Ron Chernow  

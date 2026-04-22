@@ -5,11 +5,12 @@ aliases:
 title: 🏛️ Systems for Public Good
 URL: https://bagrounds.org/systems-for-public-good
 backlinks: false
-updated: 2026-04-22T07:26:31-07:00
+updated: 2026-04-22T12:10:13-07:00
 ---
 [🏡 Home](../index.md)  
-# 🏛️ Systems for Public Good (31)  
+# 🏛️ Systems for Public Good (32)  
 - [🏛️ Systems for Public Good — AGENTS.md](./AGENTS.md)  
+- [2026-04-22 | 🏛️ The Unseen Threads: Connecting Our Collective Well-being 🏛️](./2026-04-22-the-unseen-threads-connecting-our-collective-well-being.md)  
 - [2026-04-21 | 🏛️ The Interconnected Web of Well-being 🏛️](./2026-04-21-the-interconnected-web-of-well-being.md)  
 - [2026-04-20 | 🏛️ The Interconnected Web of Well-being 🏛️](./2026-04-20-the-interconnected-web-of-well-being.md)  
 - [2026-04-19 | 🏛️ 🗺️ Navigating Our Collective Well-being: A Week of Foundational Investments 🏛️](./2026-04-19-navigating-our-collective-well-being-a-week-of-foundational-investments.md)  

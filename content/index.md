@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-04-22T07:26:31-07:00
+updated: 2026-04-22T12:10:13-07:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -28,25 +28,25 @@ updated: 2026-04-22T07:26:31-07:00
 - [2026-04-19 | 🔧 Fixing the Misplaced H2 🤖](./ai-blog/2026-04-19-1-fixing-the-misplaced-h2.md)  
   
   
-## [🤖 Auto Blog Zero](./auto-blog-zero/index.md) (42)  
+## [🤖 Auto Blog Zero](./auto-blog-zero/index.md) (43)  
+- [2026-04-22 | 🤖 The Feedback Loop of Agency 🤖](./auto-blog-zero/2026-04-22-the-feedback-loop-of-agency.md)  
 - [2026-04-21 | 🤖 🏗️ Preventing Synthetic Entropy in Adversarial Loops 🤖](./auto-blog-zero/2026-04-21-preventing-synthetic-entropy-in-adversarial-loops.md)  
 - [2026-04-20 | 🤖 The Ethics of the Adversarial Machine 🤖](./auto-blog-zero/2026-04-20-the-ethics-of-the-adversarial-machine.md)  
 - [2026-04-19 | 🤖 📆 Weekly Recap: The Architecture of Adversarial Verification 🤖](./auto-blog-zero/2026-04-19-weekly-recap-the-architecture-of-adversarial-verification.md)  
-- [2026-04-18 | 🤖 🧱 The Architecture of Adversarial Verification 🤖](./auto-blog-zero/2026-04-18-the-architecture-of-adversarial-verification.md)  
   
   
-## [🐔 Chickie Loo](./chickie-loo/index.md) (42)  
+## [🐔 Chickie Loo](./chickie-loo/index.md) (43)  
+- [2026-04-22 | 🐔 🥚 Pickled Dreams and Kitchen Patience 🐔](./chickie-loo/2026-04-22-pickled-dreams-and-kitchen-patience.md)  
 - [2026-04-21 | 🐔 🔌 Electricians, Eggs, and the Art of Not Naming Calves 🐔](./chickie-loo/2026-04-21-electricians-eggs-and-the-art-of-not-naming-calves.md)  
 - [2026-04-20 | 🐔 🍽️ A Dining Room of Dreams and a Cow’s Quiet Secret 🐔](./chickie-loo/2026-04-20-a-dining-room-of-dreams-and-a-cow-s-quiet-secret.md)  
 - [2026-04-19 | 🐔 🥂 A Dance Floor in the Making 🐔](./chickie-loo/2026-04-19-a-dance-floor-in-the-making.md)  
-- [2026-04-18 | 🐔 🍎 The Line-Cutters and the Garden Dreams 🐔](./chickie-loo/2026-04-18-the-line-cutters-and-the-garden-dreams.md)  
   
   
-## [🏛️ Systems for Public Good](./systems-for-public-good/index.md) (31)  
+## [🏛️ Systems for Public Good](./systems-for-public-good/index.md) (32)  
+- [2026-04-22 | 🏛️ The Unseen Threads: Connecting Our Collective Well-being 🏛️](./systems-for-public-good/2026-04-22-the-unseen-threads-connecting-our-collective-well-being.md)  
 - [2026-04-21 | 🏛️ The Interconnected Web of Well-being 🏛️](./systems-for-public-good/2026-04-21-the-interconnected-web-of-well-being.md)  
 - [2026-04-20 | 🏛️ The Interconnected Web of Well-being 🏛️](./systems-for-public-good/2026-04-20-the-interconnected-web-of-well-being.md)  
 - [2026-04-19 | 🏛️ 🗺️ Navigating Our Collective Well-being: A Week of Foundational Investments 🏛️](./systems-for-public-good/2026-04-19-navigating-our-collective-well-being-a-week-of-foundational-investments.md)  
-- [2026-04-18 | 🏛️ 🌐 The Digital Lifeline: Universal Broadband as a Public Good 🏛️](./systems-for-public-good/2026-04-18-the-digital-lifeline-universal-broadband-as-a-public-good.md)  
   
   
 ## [📰 The Noise](./the-noise/index.md) (13)  
@@ -71,17 +71,17 @@ updated: 2026-04-22T07:26:31-07:00
   
   
 ## [📚 Books](./books/index.md) (960)  
-- [🇿🇦 The New Apartheid](./books/the-new-apartheid.md)  
-- [🧠🧠🧠🧠 A Thousand Brains: A New Theory of Intelligence](./books/a-thousand-brains.md)  
-- [❓📚 A Simple Guide to Retrieval Augmented Generation](./books/a-simple-guide-to-retrieval-augmented-generation.md)  
-- [👨‍👩‍👧‍👦🛡️ A Secure Base: Parent-Child Attachment and Healthy Human Development](./books/a-secure-base-parent-child-attachment-and-healthy-human-development.md)  
+- [🧑‍🧒💔🩹 Adult Children of Emotionally Immature Parents: How to Heal from Distant, Rejecting, or Self-Involved Parents](./books/adult-children-of-emotionally-immature-parents-how-to-heal-from-distant-rejecting-or-self-involved-parents.md)  
+- [🧬🕹️ Adaptive Control](./books/adaptive-control.md)  
+- [⚔️🤫 The Twilight War: The Secret History of America's Thirty-Year Conflict with Iran](./books/the-twilight-war-the-secret-history-of-americas-thirty-year-conflict-with-iran.md)  
+- [⏳💻💼🎯 The 2-Hour Job Search: Using Technology to Get the Right Job Faster](./books/the-2-hour-job-search.md)  
   
   
-## [📺 Videos](./videos/index.md) (779)  
-- [News Wrap: Trump says he’s ‘not joking’ about a third term as president](./videos/news-wrap-trump-says-hes-not-joking-about-a-third-term-as-president.md)  
-- [👹🇺🇸📉🔨👁️ With Trump “We Are Watching the Deliberate Dismantling of American Democracy”](./videos/with-trump-we-are-watching-the-deliberate-dismantling-of-american-democracy.md)  
-- [What’s next for America’s Proud Boys after Donald Trump’s pardons | Extra Minutes](./videos/whats-next-for-americas-proud-boys-after-donald-trumps-pardons-extra-minutes.md)  
-- [The security vulnerabilities of using Signal to discuss military operations](./videos/the-security-vulnerabilities-of-using-signal-to-discuss-military-operations.md)  
+## [📺 Videos](./videos/index.md) (780)  
+- [📰🏛️💡 Today in Politics | Explainer](./videos/today-in-politics-explainer.md)  
+- [💪🛠️🧠 How I trained myself to crave hard work](./videos/how-i-trained-myself-to-crave-hard-work.md)  
+- [🗣️🇺🇸⚔️👤 Rebecca Solnit Says Trump's Strongest Foil Has Been Here All Along | The Interview](./videos/rebecca-solnit-says-trumps-strongest-foil-has-been-here-all-along-the-interview.md)  
+- [💥🇮🇷💰 Justin Wolfers Breaks Down the Potential Economic Consequences of War With Iran](./videos/justin-wolfers-breaks-down-the-potential-economic-consequences-of-war-with-iran.md)  
   
   
 ## [🌌 Topics](./topics/index.md) (91)  
@@ -92,10 +92,10 @@ updated: 2026-04-22T07:26:31-07:00
   
   
 ## [📄  Articles](./articles/index.md) (84)  
+- [👨‍🎓🎯🚫 How the Ph.D. Project, and 45 colleges, became a target of the Trump administration](./articles/how-the-phd-project-and-45-colleges-became-a-target-of-the-trump-administration.md)  
+- [🚫🏫📉⚠️ Project 2025 and education: A lot of bad ideas, some more actionable than others](./articles/project-2025-and-education-a-lot-of-bad-ideas-some-more-actionable-than-others.md)  
 - [📉🍎🔥🚫 How Project 2025 Would Devastate Public Education](./articles/how-project-2025-would-devastate-public-education.md)  
 - [🏫🔥 Snohomish County schools react to education department firings](./articles/snohomish-county-schools-react-to-education-department-firings.md)  
-- [💻📊 State of Haskell 2025 results](./articles/state-of-haskell-2025-results.md)  
-- [💪🧠📉💊🔎 Creatine Supplementation in Depression: A Review of Mechanisms, Efficacy, Clinical Outcomes, and Future Directions](./articles/creatine-supplementation-in-depression-a-review-of-mechanisms-efficacy-clinical-outcomes-and-future-directions.md)  
   
   
 ## [🤖💬 Bot Chats](./bot-chats/index.md) (49)  

@@ -9,9 +9,13 @@ affiliate link: https://amzn.to/43kHxVq
 link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-11T00:00:00Z
 force_analyze_links: false
+image_date: 2026-04-22T17:34:27Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A conceptual illustration featuring a weathered, classical stone column standing firmly in the center of a swirling, abstract storm. The base of the column is surrounded by a complex, glowing network of interconnected lines and nodes, representing a global digital and diplomatic grid. Above, the sky transitions from dark, turbulent clouds on the periphery to a soft, golden light illuminating the top of the column. Surrounding the base are various symbolic shapes—interlocking gears, a compass, and fragmented geometric scales—suggesting a system in the process of being carefully reconstructed. The aesthetic is clean and modern, utilizing a palette of deep navy, slate gray, and vibrant, optimistic gold accents to convey both the gravity of the crisis and the resilience of democratic institutions.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🌍🤝🏛️ A World Safe for Democracy: Liberal Internationalism and the Crises of Global Order  
+![books-a-world-safe-for-democracy-liberal-internationalism-and-the-crises-of-global-order](../books-a-world-safe-for-democracy-liberal-internationalism-and-the-crises-of-global-order.jpg)  
 [🛒 A World Safe for Democracy: Liberal Internationalism and the Crises of Global Order. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/43kHxVq)  
   
 🌎💡 Liberal internationalism's historical journey has a crucial, reformed role in navigating contemporary global crises and securing democratic futures amidst rising illiberalism and nationalism.  

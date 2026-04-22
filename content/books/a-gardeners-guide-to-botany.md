@@ -6,8 +6,9 @@ URL: https://bagrounds.org/books/a-gardeners-guide-to-botany
 share: true
 affiliate link: https://amzn.to/3SwsHp6
 link_analysis_model: gemini-3.1-flash-lite-preview
-link_analysis_time: 2026-04-03T00:00:00Z
+link_analysis_time: 2026-04-19T00:00:00Z
 force_analyze_links: false
+link_analysis_version: "2"
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🧑‍🌾🌿 A Gardener's Guide to Botany: The Biology Behind the Plants You Love, How They Grow, and What They Need  

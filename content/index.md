@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-04-22T12:10:13-07:00
+updated: 2026-04-22T12:18:23-07:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -77,11 +77,11 @@ updated: 2026-04-22T12:10:13-07:00
 - [⏳💻💼🎯 The 2-Hour Job Search: Using Technology to Get the Right Job Faster](./books/the-2-hour-job-search.md)  
   
   
-## [📺 Videos](./videos/index.md) (780)  
+## [📺 Videos](./videos/index.md) (781)  
+- [🔒🆚🔓🚨 Karpathy's Wiki vs. Open Brain. One Fails When You Need It Most.](./videos/karpathys-wiki-vs-open-brain-one-fails-when-you-need-it-most.md)  
 - [📰🏛️💡 Today in Politics | Explainer](./videos/today-in-politics-explainer.md)  
 - [💪🛠️🧠 How I trained myself to crave hard work](./videos/how-i-trained-myself-to-crave-hard-work.md)  
 - [🗣️🇺🇸⚔️👤 Rebecca Solnit Says Trump's Strongest Foil Has Been Here All Along | The Interview](./videos/rebecca-solnit-says-trumps-strongest-foil-has-been-here-all-along-the-interview.md)  
-- [💥🇮🇷💰 Justin Wolfers Breaks Down the Potential Economic Consequences of War With Iran](./videos/justin-wolfers-breaks-down-the-potential-economic-consequences-of-war-with-iran.md)  
   
   
 ## [🌌 Topics](./topics/index.md) (91)  

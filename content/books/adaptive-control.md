@@ -11,9 +11,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-18T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-04-22T18:31:02Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A sleek, high-tech illustration featuring a central, glowing DNA double helix that seamlessly morphs into a complex digital circuit board. The background is a deep, moody indigo, illuminated by floating, ethereal geometric nodes and fine, interconnected signal lines. A robotic, articulated mechanical arm reaches into the frame, adjusting a floating, translucent holographic control interface with precise, elegant movements. The overall composition balances organic biological patterns with rigid, algorithmic precision, utilizing a color palette of electric blue, vibrant cyan, and soft white highlights to evoke a sense of advanced engineering, mathematical rigor, and artificial intelligence. The style is clean, modern, and professional, emphasizing the interplay between dynamic system evolution and stable, adaptive regulation.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🧬🕹️ Adaptive Control  
+![books-adaptive-control](../books-adaptive-control.jpg)  
 [🛒 Adaptive Control. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4jrDdsB)  
   
 ## 🤖 AI Summary  

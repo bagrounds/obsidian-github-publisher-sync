@@ -7,11 +7,16 @@ share: true
 affiliate link: https://amzn.to/4gGFu3m
 CTA: ⚖️ Judge character.
 link_analysis_model: gemini-3.1-flash-lite-preview
-link_analysis_time: 2026-04-02T00:00:00Z
+link_analysis_time: 2026-04-19T00:00:00Z
 force_analyze_links: false
+link_analysis_version: "2"
+image_date: 2026-04-22T10:36:03Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A minimalist, high-contrast illustration featuring a set of classic brass scales of justice resting on a polished, dark mahogany desk. One side of the scale holds a heavy, solid stone cube representing the rule of law and institutional integrity. The other side is slightly elevated and holds a transparent, fragile glass sphere that appears to be fracturing, symbolizing the fragility of truth and personal loyalty. In the background, a soft, out-of-focus silhouette of a grand neoclassical government building is visible through a large window, bathed in the cool, gray light of dawn. The color palette is restricted to deep blues, slate grays, and metallic gold accents, creating an atmosphere of somber authority, tension, and ethical weight.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # ⬆️🤥🏛️ A Higher Loyalty: Truth, Lies, and Leadership  
+![books-a-higher-loyalty-truth-lies-and-leadership](../books-a-higher-loyalty-truth-lies-and-leadership.jpg)  
 [🛒 A Higher Loyalty: Truth, Lies, and Leadership. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4gGFu3m)  
   
 ## 📚 Book Report: A Higher Loyalty: Truth, Lies, and Leadership  

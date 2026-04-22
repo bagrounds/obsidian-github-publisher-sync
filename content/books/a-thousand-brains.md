@@ -10,9 +10,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-21T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-04-22T13:41:20Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A central, glowing human brain rendered in a stylized, translucent glass aesthetic. Surrounding this central organ are hundreds of smaller, miniature, geometric brain-like nodes floating in a dark, infinite void. These miniature nodes are connected by intricate, shimmering golden lines of light, forming a complex, sprawling neural network that resembles both a biological cortex and a digital constellation. The color palette features deep navy blues and blacks, contrasted by vibrant pulses of cyan, electric purple, and warm gold. The composition should feel expansive and cerebral, emphasizing the concept of distributed intelligence and interconnected mental models.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🧠🧠🧠🧠 A Thousand Brains: A New Theory of Intelligence  
+![books-a-thousand-brains](../books-a-thousand-brains.jpg)  
 [🛒 A Thousand Brains: A New Theory of Intelligence. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4jzV3d7)  
   
 ## 🤖 AI Summary  

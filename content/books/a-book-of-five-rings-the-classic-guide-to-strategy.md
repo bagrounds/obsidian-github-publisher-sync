@@ -7,11 +7,16 @@ share: true
 CTA: ⚔️ Master strategy.
 affiliate link: https://amzn.to/4bdrddS
 link_analysis_model: gemini-3.1-flash-lite-preview
-link_analysis_time: 2026-04-02T00:00:00Z
+link_analysis_time: 2026-04-17T00:00:00Z
 force_analyze_links: false
+link_analysis_version: "2"
+image_date: 2026-04-22T08:40:32Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: "A minimalist, high-contrast composition featuring two traditional Japanese katana blades crossed in an X formation against a clean, textured stone background. Behind the swords, five faint, concentric circular rings are subtly etched into the surface, representing the elements: Earth, Water, Fire, Wind, and Void. The lighting is dramatic and cinematic, with soft shadows emphasizing the sharpness of the steel. The color palette is restricted to deep charcoal, slate gray, and muted metallic silver, with a single, faint brushstroke of deep crimson behind the center of the cross to symbolize the Fire element. The overall aesthetic is disciplined, ancient, and profoundly focused, evoking the spirit of a samurai’s unwavering concentration."
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🇯🇵⚔️ A Book of Five Rings: The Classic Guide to Strategy  
+![books-a-book-of-five-rings-the-classic-guide-to-strategy](../books-a-book-of-five-rings-the-classic-guide-to-strategy.jpg)  
 [🛒 A Book of Five Rings: The Classic Guide to Strategy. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4bdrddS)  
   
 ⚔️🧠🎯 A concise 17th-century guide to strategy, rooted in swordsmanship but offering timeless, adaptable principles for achieving mastery, decisive action, and competitive advantage in all aspects of life.  

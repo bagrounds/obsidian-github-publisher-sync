@@ -9,9 +9,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-19T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-04-22T09:40:24Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: "A split-composition illustration blending art and science. On the left side, a detailed, vintage-style botanical cross-section of a plant shows the inner workings: roots absorbing water from soil, xylem vessels in the stem, and chloroplasts within a leaf. On the right side, a vibrant, lush garden scene features a variety of healthy, flowering plants bathed in soft, golden sunlight. The two halves are connected by delicate, glowing root systems and thin, illustrative lines that bridge the gap between the internal biological anatomy and the external, flourishing garden. The color palette is earthy and organic, dominated by deep forest greens, terracotta, warm yellow, and hints of floral pink, set against a clean, light-colored background."
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🧑‍🌾🌿 A Gardener's Guide to Botany: The Biology Behind the Plants You Love, How They Grow, and What They Need  
+![books-a-gardeners-guide-to-botany](../books-a-gardeners-guide-to-botany.jpg)  
 [🛒 A Gardener's Guide to Botany: The Biology Behind the Plants You Love, How They Grow, and What They Need. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3SwsHp6)  
   
 ## 📖 Book Report: 🪴 A Gardener's Guide to Botany  

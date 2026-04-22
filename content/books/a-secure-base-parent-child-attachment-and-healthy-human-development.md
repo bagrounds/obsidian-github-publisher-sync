@@ -9,9 +9,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-18T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-04-22T12:27:05Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A warm, minimalist illustration featuring a small, stylized sapling growing in the foreground, protected by the gentle, sweeping curve of a large, abstract stone archway behind it. The archway represents a secure base, providing shelter while remaining open to a soft, golden-hued horizon. The color palette uses gentle earth tones—sage greens, warm terracottas, and soft creams—to evoke a sense of safety, growth, and calm. The scene is clean and uncluttered, focusing on the relationship between the protected young plant and the sturdy, supportive structure. The lighting is soft and diffused, suggesting a peaceful, nurturing environment.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 👨‍👩‍👧‍👦🛡️ A Secure Base: Parent-Child Attachment and Healthy Human Development  
+![books-a-secure-base-parent-child-attachment-and-healthy-human-development](../books-a-secure-base-parent-child-attachment-and-healthy-human-development.jpg)  
 [🛒 A Secure Base: Parent-Child Attachment and Healthy Human Development. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4knb2wj)  
   
 ## 📚 Book Report: A Secure Base by John Bowlby  

@@ -10,9 +10,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-15T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-04-22T13:41:03Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A clean, isometric-style 3D illustration centered on a glowing, translucent robotic brain. Streams of digital data, represented by vibrant blue and gold light particles, flow from an open, traditional hardcover book toward the brain. The background is a soft, professional gradient of deep navy and slate grey. On one side, a stylized digital library shelf contains organized data cubes, while on the other, a sleek, minimalist glowing interface processes the incoming information. The lighting is soft and cinematic, emphasizing the synergy between human-readable knowledge and machine-learning intelligence. The composition is balanced and modern, conveying clarity, technology, and the process of information retrieval.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # ❓📚 A Simple Guide to Retrieval Augmented Generation  
+![books-a-simple-guide-to-retrieval-augmented-generation](../books-a-simple-guide-to-retrieval-augmented-generation.jpg)  
 [🛒 A Simple Guide to Retrieval Augmented Generation. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4mjMeXb)  
   
 ## 📖 A Simple Guide to Retrieval Augmented Generation: A Book Report  

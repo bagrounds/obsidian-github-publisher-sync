@@ -181,7 +181,7 @@ runBlogSeries context seriesMap runConfigs seriesId = do
             Right response -> do
               let rawText = stripCodeFences (Gemini.responseText response)
                   usedModel = Gemini.modelToText (Gemini.responseModel response)
-                  sources = Gemini.responseGroundingSources response
+                  groundingSources = Gemini.responseGroundingSources response
               when (containsSystemPrompt systemPrompt rawText) $
                 failTask "Generated post echoes the system prompt (AGENTS.md) — rejecting"
               case parseGeneratedPost rawText of
@@ -204,10 +204,10 @@ runBlogSeries context seriesMap runConfigs seriesId = do
                       navLine = bscNavLink series <> backLink
                       displayTitle = unDisplayTitle $ buildDisplayTitle series today title
                       header = navLine <> "\n# " <> displayTitle <> "\n\n"
-                      sourcesSection = Gemini.formatGroundingSources sources
+                      sourcesSection = Gemini.formatGroundingSources groundingSources
                       bodyWithSig = appendModelSignature body usedModel
-                  unless (null sources) $
-                    logMsg $ "  🔍 Embedded " <> T.pack (show (length sources)) <> " grounding sources"
+                  unless (null groundingSources) $
+                    logMsg $ "  🔍 Embedded " <> T.pack (show (length groundingSources)) <> " grounding sources"
                   createDirectoryIfMissing True seriesDir
                   let postPath = seriesDir </> T.unpack filename
                   TIO.writeFile postPath (frontmatter <> "\n" <> header <> bodyWithSig <> sourcesSection <> "\n")

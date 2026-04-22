@@ -256,16 +256,16 @@ geminiEndpoint model =
 
 buildRequestBody :: Maybe Text -> Text -> GenerationConfig -> Bool -> Value
 buildRequestBody systemInstruction prompt config withGrounding =
-  let base =
+  let contentFields =
         [ "contents" .= [ object [ "parts" .= [ object [ "text" .= prompt ] ] ] ]
         , "generationConfig" .= config
         ]
-      withTools = if withGrounding
-        then ("tools" .= [ object [ "google_search" .= object [] ] ]) : base
-        else base
+      fieldsWithTools = if withGrounding
+        then ("tools" .= [ object [ "google_search" .= object [] ] ]) : contentFields
+        else contentFields
       fields = case systemInstruction of
-        Nothing -> withTools
-        Just si -> ("system_instruction" .= object [ "parts" .= [ object [ "text" .= si ] ] ]) : withTools
+        Nothing -> fieldsWithTools
+        Just si -> ("system_instruction" .= object [ "parts" .= [ object [ "text" .= si ] ] ]) : fieldsWithTools
   in object fields
 
 parseResponseText :: LBS.ByteString -> Either Error Text
@@ -292,7 +292,7 @@ extractText _ = Left (ExtractionError "response is not an object")
 
 -- | Extract grounding sources from a Gemini API response value.
 -- Sources come from @candidates[0].groundingMetadata.groundingChunks[].web@.
--- Only sources with non-empty @https@ or @http@ URIs are included.
+-- Only sources with valid @http://@ or @https://@ URIs are included.
 -- Ordering matches the API response order.
 extractGroundingSources :: Value -> [GroundingSource]
 extractGroundingSources (Object obj) =
@@ -317,7 +317,8 @@ extractChunkSource (Object chunk) =
           title = case lookup "title" web of
                     Just (String t) -> if T.null t then uri else t
                     _               -> uri
-      in [GroundingSource { groundingSourceUri = uri, groundingSourceTitle = title } | T.isPrefixOf "http" uri]
+      in [GroundingSource { groundingSourceUri = uri, groundingSourceTitle = title }
+          | T.isPrefixOf "http://" uri || T.isPrefixOf "https://" uri]
     _ -> []
 extractChunkSource _ = []
 

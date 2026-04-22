@@ -36,7 +36,6 @@ module Automation.Gemini
 import Automation.Json (Value (..), ToValue (..), (.=), object, encode)
 import qualified Automation.Json as Json
 import Automation.Secret (Secret (..))
-import Data.List (foldl')
 import Data.List.NonEmpty (NonEmpty ((:|)))
 import qualified Data.List.NonEmpty as NE
 import Data.Text (Text)
@@ -318,9 +317,7 @@ extractChunkSource (Object chunk) =
           title = case lookup "title" web of
                     Just (String t) -> if T.null t then uri else t
                     _               -> uri
-      in if T.null uri || not (T.isPrefixOf "http" uri)
-           then []
-           else [GroundingSource { groundingSourceUri = uri, groundingSourceTitle = title }]
+      in [GroundingSource { groundingSourceUri = uri, groundingSourceTitle = title } | T.isPrefixOf "http" uri]
     _ -> []
 extractChunkSource _ = []
 

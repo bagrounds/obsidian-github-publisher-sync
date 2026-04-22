@@ -12,9 +12,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-15T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-04-22T19:39:35Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A sleek, high-tech isometric illustration featuring a central, glowing digital brain node connected to a network of smaller, diverse robotic modules. The modules represent different agentic functions—such as a data-mining gear, a communication quill, and a logic-gate processor—all interconnected by vibrant, flowing fiber-optic data streams. The background is a clean, minimalist deep navy, contrasting with the neon cyan and electric gold accents of the agents. The composition conveys a sense of organized, autonomous collaboration and sophisticated technical architecture, emphasizing the in action nature of the systems with floating particles and subtle motion-blur lines radiating from the central hub. The overall aesthetic is modern, professional, and evocative of advanced software engineering.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🤖⚙️ AI Agents in Action  
+![books-ai-agents-in-action](../books-ai-agents-in-action.jpg)  
 [🛒 AI Agents in Action. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/45s1Z79)  
   
 ## 🤖 AI Agents in Action: A Book Report  

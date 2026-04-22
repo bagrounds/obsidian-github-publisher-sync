@@ -12,9 +12,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-16T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-04-22T08:40:48Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A surreal, artistic depiction of a cosmic hourglass floating in deep space. Instead of sand, the top bulb contains a swirling, luminous galaxy of stars and nebulae, while the bottom bulb holds a dark, dense, swirling black hole. The glass of the hourglass is crystalline and slightly warped, refracting the vibrant colors of the cosmos. Thin, glowing golden threads of light weave through the center of the hourglass, representing the fabric of spacetime connecting the two extremes. The background is a vast, velvety expanse of deep indigo and black, dotted with distant, twinkling stars and faint, ethereal dust clouds, emphasizing the immense scale and mystery of the universe. The lighting is dramatic, with the galaxy providing a cool, ethereal glow against the deep shadows of the void.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🤏📜⏳ A Brief History of Time  
+![books-a-brief-history-of-time](../books-a-brief-history-of-time.jpg)  
 [🛒 A Brief History of Time. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4jsHpZa)  
   
 ## 🤖 AI Summary  

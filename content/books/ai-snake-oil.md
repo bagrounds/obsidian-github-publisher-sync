@@ -12,9 +12,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-20T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-04-22T21:30:38Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A high-contrast, conceptual illustration featuring a sleek, glowing digital robot head appearing to pour a bubbling, iridescent, and suspiciously colorful liquid from its mouth into an ornate, vintage-style glass medicine bottle. The liquid splashes onto a cluttered desk filled with scattered blueprints and translucent, shifting geometric shapes that represent data. In the background, a magnifying glass rests on a pile of technical manuals, with its lens focused on a small, simple mechanical gear, suggesting a shift from complex, artificial illusions to grounded, mechanical reality. The color palette uses deep midnight blues and sharp, warning-sign yellows to emphasize the tension between modern technological hype and cold, critical analysis. The overall aesthetic is clean, modern, and slightly surreal.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🤖🐍🔎 AI Snake Oil: What Artificial Intelligence Can Do, What It Can't, and How to Tell the Difference  
+![books-ai-snake-oil](../books-ai-snake-oil.jpg)  
 [🛒 AI Snake Oil: What Artificial Intelligence Can Do, What It Can't, and How to Tell the Difference. As an Amazon Associate I earn from qualifying purchases.](https://www.amazon.com/dp/0691249148?tag=bagrounds-20)  
   
 🧐💡 Argues against prevalent AI hype, highlighting current artificial intelligence's fundamental limitations like lack of common sense and robust reasoning, offering a critical lens to discern genuine progress from exaggerated claims.  

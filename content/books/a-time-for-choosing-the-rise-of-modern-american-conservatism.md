@@ -7,11 +7,16 @@ share: true
 CTA: 🦅 Understand conservatism.
 affiliate link: https://amzn.to/43r4vKp
 link_analysis_model: gemini-3.1-flash-lite-preview
-link_analysis_time: 2026-04-04T00:00:00Z
+link_analysis_time: 2026-04-21T00:00:00Z
 force_analyze_links: false
+link_analysis_version: "2"
+image_date: 2026-04-22T15:39:57Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A high-contrast, artistic illustration featuring a stylized, weathered American flag transitioning into a rising sun on the horizon. In the foreground, a rustic, two-way wooden signpost stands at a crossroads; one weathered sign points toward a vast, open landscape representing individual liberty, while the other points toward a dense, shadowy thicket representing institutional bureaucracy. The lighting is cinematic, with golden-hour sunlight illuminating the path of freedom, creating a stark visual metaphor for a critical decision. The aesthetic is clean, professional, and evocative of mid-century Americana, utilizing a palette of deep navy, crimson, and warm gold to convey a sense of historical gravity and ideological clarity.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🇺🇸➡️ A Time for Choosing: The Rise of Modern American Conservatism  
+![books-a-time-for-choosing-the-rise-of-modern-american-conservatism](../books-a-time-for-choosing-the-rise-of-modern-american-conservatism.jpg)  
 [🛒 A Time for Choosing: The Rise of Modern American Conservatism. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/43r4vKp)  
   
 ### 🏆 Reagan's A Time for Choosing Core Principles  

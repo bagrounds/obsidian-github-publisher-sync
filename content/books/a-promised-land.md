@@ -7,11 +7,16 @@ share: true
 affiliate link: https://amzn.to/46Ff7Gm
 CTA: 🇺🇸 Embrace hope.
 link_analysis_model: gemini-3.1-flash-lite-preview
-link_analysis_time: 2026-04-02T00:00:00Z
+link_analysis_time: 2026-04-20T00:00:00Z
 force_analyze_links: false
+link_analysis_version: "2"
+image_date: 2026-04-22T12:26:41Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A minimalist, artistic illustration featuring a stylized silhouette of a solitary figure standing on a vast, gentle hill at dawn. The horizon stretches wide, painted in soft gradients of warm gold, deep navy, and sunrise orange, symbolizing the transition from night to day. In the foreground, a subtle, ethereal map of the United States is etched into the landscape, with glowing, soft-focus points of light marking distant cities. The overall aesthetic is clean, modern, and aspirational, using clean lines and a professional color palette to evoke a sense of quiet gravitas, hope, and the weight of a long journey. The composition is balanced and spacious, emphasizing the theme of looking forward toward a new, uncharted horizon.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # ➡️🌟🗺️ A Promised Land  
+![books-a-promised-land](../books-a-promised-land.jpg)  
 [🛒 A Promised Land. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/46Ff7Gm)  
   
 ## 📖 A Promised Land Book Report  

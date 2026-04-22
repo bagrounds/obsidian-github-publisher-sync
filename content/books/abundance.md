@@ -6,9 +6,16 @@ URL: https://bagrounds.org/books/abundance
 share: true
 affiliate link: https://amzn.to/4524SME
 CTA: Think bigger.
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_time: 2026-04-10T00:00:00Z
+force_analyze_links: false
+image_date: 2026-04-22T16:36:41Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A wide-angle, cinematic view of a modern cityscape at sunrise. In the foreground, a sleek, minimalist wooden drafting table sits on a rooftop terrace, covered in architectural blueprints and a glowing, futuristic clean-energy model—a miniature solar-powered structure. The background features a vibrant, thriving city with modern architecture, lush vertical gardens, and clean, efficient infrastructure under a clear, expansive sky. The lighting is warm and golden, emphasizing a sense of optimism, growth, and vast possibility. The composition uses clean lines and a bright, airy color palette of sky blue, soft white, and natural wood tones to evoke a sense of open potential and the breaking of barriers.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # ✅➕ Abundance  
+![books-abundance](../books-abundance.jpg)  
 [🛒 Abundance. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4524SME)  
   
 ## 📖 Book Report: Abundance  

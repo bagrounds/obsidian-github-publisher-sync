@@ -12,9 +12,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-15T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-04-22T19:39:42Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A stylized, high-contrast illustration featuring a glowing, translucent digital brain integrated into a minimalist architectural structure. The brain is composed of interconnected nodes and data streams, representing neural networks and foundation models. Surrounding the brain, clean isometric scaffolding and abstract geometric shapes symbolize the engineering and construction process. The color palette uses deep navy and charcoal backgrounds with vibrant accents of electric blue, neon teal, and soft white light to signify intelligence and technology. The composition is balanced and modern, with thin, precise lines that convey a sense of technical rigor, structural stability, and the intersection of human design with artificial intelligence. The aesthetic is clean, professional, and sophisticated, emphasizing the building aspect of AI engineering.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🤖🏗️ AI Engineering: Building Applications with Foundation Models  
+![books-ai-engineering-building-applications-with-foundation-models](../books-ai-engineering-building-applications-with-foundation-models.jpg)  
 [🛒 AI Engineering: Building Applications with Foundation Models. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/459bMyS)  
   
 ## 📝🐒 Human Notes  

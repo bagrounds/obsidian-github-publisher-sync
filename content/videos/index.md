@@ -5,10 +5,10 @@ aliases:
 title: 📺 Videos
 URL: https://bagrounds.org/videos
 backlinks: false
-updated: 2026-04-22T12:18:23-07:00
+updated: 2026-04-22T13:13:21-07:00
 ---
 [Home](../index.md)  
-# 📺 Videos (781)  
+# 📺 Videos (783)  
 - [💰🤑🤖💡🚀💲 $0.10 per Month Runs My Entire AI Life. I'll Show You How.](./0-10-month-runs-my-entire-ai-life-ill-show-you-how.md)  
 - [📊📈📉📃👁️ 10 Charts to Understand the 900 Page Budget Bill](./10-charts-to-understand-the-900-page-budget-bill.md)  
 - [🤖🔗⬆️✅ 12-Factor Agents: Patterns of reliable LLM applications — Dex Horthy, HumanLayer](./12-factor-agents-patterns-of-reliable-llm-applications-dex-horthy-humanlayer.md)  
@@ -194,6 +194,7 @@ updated: 2026-04-22T12:18:23-07:00
 - [🗳️🎉➡️ Ezra Klein: This Is How Democrats Win](./ezra-klein-this-is-how-democrats-win.md)  
 - [Fascist tendencies in Trump: A comparison to Hitler's rise | DW News](./fascist-tendencies-in-trump-a-comparison-to-hitler-s-rise-dw-news.md)  
 - [🔎🏠📰🗣️🇺🇸 FBI searches reporter’s home, raising concerns about intimidation of free press](./fbi-searches-reporters-home-raising-concerns-about-intimidation-of-free-press.md)  
+- [🇺🇸👨‍💼⬆️🏛️📜 FDR’s Path to the White House (1882-1933) | Full Documentary | American Experience PBS](./fdrs-path-to-the-white-house-1882-1933-full-documentary-american-experience-pbs.md)  
 - [📉❓⬇️💰 Federal Reserve cuts interest rates amid economic uncertainty](./federal-reserve-cuts-interest-rates-amid-economic-uncertainty.md)  
 - [⚠️🌊🏘️❌ FEMA missed major flood risks at Camp Mystic in Texas, new analysis reveals](./fema-missed-major-flood-risks-at-camp-mystic-in-texas-new-analysis-reveals.md)  
 - [🇫🇮🇺🇸🗣️👑📢 Finnish President Stubb on Trump, MAGA, JD Vance Speech, Rubio & US Foreign Policy | AC1G](./finnish-president-stubb-on-trump-maga-jd-vance-speech-rubio-us-foreign-policy-ac1g.md)  
@@ -421,6 +422,7 @@ updated: 2026-04-22T12:18:23-07:00
 - [💻🤖🏠📚 Ollama Course – Build AI Apps Locally](./ollama-course-build-ai-apps-locally.md)  
 - [❌🤔💡 On being wrong | Kathryn Schulz](./on-being-wrong-kathryn-schulz.md)  
 - [💰⚖️💡➡️ One State Found a Way to Make Billionaires Pay. Your State Could Be Next.](./one-state-found-a-way-to-make-billionaires-pay-your-state-could-be-next.md)  
+- [🚨🌍📉 On the Brink of Global Recession | The David Frum Show](./on-the-brink-of-global-recession-the-david-frum-show.md)  
 - [🤖⏱️🧠👨‍💻 OpenClaw's Creator Uses AI to Run His Life in 40 Minutes | Peter Steinberger](./how-openclaws-creator-uses-ai-to-run-his-life-in-40-minutes-peter-steinberger.md)  
 - [Optimizing Webservers for High Throughput and Low Latency | Dropbox](./optimizing-webservers-for-high-throughput-and-low-latency-dropbox.md)  
 - [👩‍⚖️🛑🇺🇸🏛️ Oregon governor calls Trump's actions 'an abuse of power and threat to our democracy'](./oregon-governor-calls-trumps-actions-an-abuse-of-power-and-threat-to-our-democracy.md)  

@@ -8,12 +8,13 @@ affiliate link: https://amzn.to/45e9rCD
 tags:
   - AIEngineering
 link_analysis_model: gemini-3.1-flash-lite-preview
-link_analysis_time: 2026-04-04T00:00:00Z
+link_analysis_time: 2026-04-17T00:00:00Z
 force_analyze_links: false
 updated: 2026-04-04T07:29:21
 image_date: 2026-04-13T15:40:11Z
 image_model: "@cf/black-forest-labs/flux-1-schnell"
 image_prompt: A minimalist, high-contrast illustration featuring a translucent, glowing digital orb floating in the center, representing an autonomous AI agent. From this core, intricate, thin geometric filaments branch outward like a neural network, connecting to various stylized icons representing business, productivity, and logistics—such as a clock, a gear, a magnifying glass, and a rising graph. The background is a deep, professional navy blue, providing a clean canvas for the soft, bioluminescent cyan and violet light of the network. The composition is balanced and airy, suggesting seamless integration and intelligent flow rather than chaotic complexity. The aesthetic is modern, sleek, and tech-forward, emphasizing the shift from static tools to dynamic, active intelligence.
+link_analysis_version: "2"
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🤖⚙️ Agentic Artificial Intelligence: Harnessing AI Agents to Reinvent Business, Work and Life  

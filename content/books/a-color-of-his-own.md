@@ -8,9 +8,13 @@ affiliate link: https://amzn.to/4mJOfwg
 link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-08T00:00:00Z
 force_analyze_links: false
+image_date: 2026-04-22T09:40:13Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: "A whimsical, minimalist illustration featuring two vibrant chameleons sitting side-by-side on a textured, collage-style tree branch. The branch is split into two distinct segments: one side is a lush, vibrant green, while the other transitions into a warm, autumnal orange-red. The two chameleons are perfectly camouflaged, with their bodies blending seamlessly into the colors of the branch beneath them. The background is a soft, neutral cream, reminiscent of high-quality art paper. The art style mimics Leo Lionni’s signature paper-cut collage technique, using clean, geometric shapes and soft, layered textures to create a gentle, heartwarming atmosphere that emphasizes the theme of companionship and shared identity."
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🌈🦎 A Color of His Own  
+![books-a-color-of-his-own](../books-a-color-of-his-own.jpg)  
 [🛒 A Color of His Own. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4mJOfwg)  
   
 ## 📘 Book Report: A Color of His Own  

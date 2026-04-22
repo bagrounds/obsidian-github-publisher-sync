@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-04-22T14:42:18-07:00
+updated: 2026-04-22T16:09:21-07:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -71,17 +71,17 @@ updated: 2026-04-22T14:42:18-07:00
   
   
 ## [📚 Books](./books/index.md) (960)  
+- [📚🧠 The New York Times Guide to Essential Knowledge: A Desk Reference for the Curious Mind](./books/the-new-york-times-guide-to-essential-knowledge-a-desk-reference-for-the-curious-mind.md)  
+- [⚙️🎯 Algorithms for Optimization](./books/algorithms-for-optimization.md)  
+- [🇺🇸⚔️ Alexander Hamilton](./books/alexander-hamilton.md)  
 - [🤖🐍🔎 AI Snake Oil: What Artificial Intelligence Can Do, What It Can't, and How to Tell the Difference](./books/ai-snake-oil.md)  
-- [🤖💻 AI-Powered Developer: Build great software with ChatGPT and Copilot](./books/ai-powered-developer-build-great-software-with-chatgpt-and-copilot.md)  
-- [🤖🖱️🤝 AI meets UX: Designing the Next Generation of User-Centered Products: Where innovation meets empathy to shape the future of design](./books/ai-meets-ux-designing-the-next-generation-of-user-centered-products-where-innovation-meets-empathy-to-shape-the-future-of-design.md)  
-- [🤖📈 AI for Marketing and Product Innovation: Powerful New Tools for Predicting Trends, Connecting with Customers, and Closing Sales](./books/ai-for-marketing-and-product-innovation-powerful-new-tools-for-predicting-trends-connecting-with-customers-and-closing-sales.md)  
   
   
-## [📺 Videos](./videos/index.md) (784)  
-- [🔍🔬🧠 I Researched How To Do Research, Here's What I Learned](./videos/i-researched-how-to-do-research-heres-what-i-learned.md)  
-- [💰💸⚔️ A “Billion Dollar a Day” War | Explainer](./videos/a-billion-dollar-a-day-war-explainer.md)  
-- [🤖✂️💰🚀 The AI Job Market Split in Two. One Side Pays $400K and Can't Hire Fast Enough.](./videos/the-ai-job-market-split-in-two-one-side-pays-400k-and-cant-hire-fast-enough.md)  
-- [🇺🇸👨‍💼⬆️🏛️📜 FDR’s Path to the White House (1882-1933) | Full Documentary | American Experience PBS](./videos/fdrs-path-to-the-white-house-1882-1933-full-documentary-american-experience-pbs.md)  
+## [📺 Videos](./videos/index.md) (786)  
+- [🧠💰🚀 Class  > 2 | MS&E435: Economics of the AI Supercycle Stanford University Spring '26 Apoorv Agrawal](./videos/class-2-ms-e435-economics-of-the-ai-supercycle-stanford-university-spring-26-apoorv-agrawal.md)  
+- [🤖📈🚀 Class  > 1 | MS&E435: Economics of the AI Supercycle Stanford University Spring '26 Apoorv Agrawal](./videos/class-1-ms-e435-economics-of-the-ai-supercycle-stanford-university-spring-26-apoorv-agrawal.md)  
+- [🇮🇱⚔️🌍🚶 News Wrap: Netanyahu vows to press ahead in Gaza as U.N. delegates walk out in protest](./videos/news-wrap-netanyahu-vows-to-press-ahead-in-gaza-as-un-delegates-walk-out-in-protest.md)  
+- [🇺🇸🗳️⚙️🤔 How the Trump administration is trying to change the way people vote](./videos/how-the-trump-administration-is-trying-to-change-the-way-people-vote.md)  
   
   
 ## [🌌 Topics](./topics/index.md) (91)  

@@ -10,9 +10,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-17T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-04-22T22:26:37Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A minimalist, high-contrast composition featuring a stylized, three-dimensional topographical landscape rendered in shades of deep navy and electric cyan. A single, glowing golden sphere rests precisely at the lowest point of a complex, undulating valley, representing the convergence of an optimization process. Floating above the terrain are subtle, geometric wireframe structures—partially transparent cubes and interlocking gears—suggesting mathematical precision and engineering complexity. The background is a clean, dark slate grey with fine, faint grid lines that fade into the distance, evoking a sense of computational space. The lighting is soft and focused, highlighting the golden sphere to create a clear focal point that symbolizes an optimal solution.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # ⚙️🎯 Algorithms for Optimization  
+![books-algorithms-for-optimization](../books-algorithms-for-optimization.jpg)  
 [🛒 Algorithms for Optimization. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3Y3tZdT)  
   
 🚀✨ Distill complex mathematical optimization into practical, implementable methods for engineers and scientists, focusing on foundational concepts, diverse applications, and modern algorithmic techniques.  

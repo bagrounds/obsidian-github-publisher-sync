@@ -9,6 +9,10 @@ Platform:
 Channel: WheezyWaiter
 tags:
 youtube: https://youtu.be/Pz5Nq8PDKDo
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_version: "2"
+link_analysis_time: 2026-04-22T00:00:00Z
+force_analyze_links: false
 ---
 [Home](../index.md) > [Videos](./index.md)  
 # 🔍🔬🧠 I Researched How To Do Research, Here's What I Learned  
@@ -49,7 +53,7 @@ youtube: https://youtu.be/Pz5Nq8PDKDo
 ### ↔️ Similar  
   
 * 📖 The Art of Thinking Clearly by Rolf Dobelli examines common cognitive biases and how to avoid them during decision making and research.  
-* 📖 Factfulness by Hans Rosling explores how to use data to understand the world accurately despite our inherent dramatic instincts.  
+* 📖 [🤔🌍📈✅ Factfulness: Ten Reasons We're Wrong About the World - and Why Things Are Better Than You Think](../books/factfulness.md) by Hans Rosling explores how to use data to understand the world accurately despite our inherent dramatic instincts.  
   
 ### 🆚 Contrasting  
   
@@ -58,5 +62,5 @@ youtube: https://youtu.be/Pz5Nq8PDKDo
   
 ### 🎨 Creatively Related  
   
-* 📖 Thinking, Fast and Slow by Daniel Kahneman details the dual systems of the human mind and how they influence our intuition and logic.  
+* 📖 [🤔🐇🐢 Thinking, Fast and Slow](../books/thinking-fast-and-slow.md) by Daniel Kahneman details the dual systems of the human mind and how they influence our intuition and logic.  
 * 📖 Scout Mindset by Julia Galef advocates for a mindset focused on seeing things as they are rather than as we want them to be.

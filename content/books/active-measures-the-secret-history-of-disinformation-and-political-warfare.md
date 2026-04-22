@@ -10,9 +10,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-18T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-04-22T17:34:36Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: "A moody, high-contrast illustration featuring a vintage wooden desk in a dimly lit room. On the desk lies a scattered collection of items: a classic rotary telephone, a fountain pen, and several aged, typed documents with redacted lines and blurred text. A single, sharp spotlight cuts through the darkness, casting long, dramatic shadows that stretch across the surface, obscuring some papers while highlighting others. In the background, a silhouette of a person wearing a trench coat and a fedora stands near a window with Venetian blinds, allowing thin, horizontal slivers of light to stripe the room. The color palette is dominated by muted grays, deep blacks, and subtle, sickly amber tones, evoking an atmosphere of Cold War espionage, institutional secrecy, and the manipulation of truth."
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🎭🤫 Active Measures: The Secret History of Disinformation and Political Warfare  
+![books-active-measures-the-secret-history-of-disinformation-and-political-warfare](../books-active-measures-the-secret-history-of-disinformation-and-political-warfare.jpg)  
 [🛒 Active Measures: The Secret History of Disinformation and Political Warfare. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4qCazd8)  
   
 🧐🕵️‍♂️🌐 State-sponsored disinformation is a century-old strategic weapon, often exploiting existing societal divisions and the inherent openness of democratic systems, rather than a novel digital-era phenomenon.  

@@ -10,9 +10,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-18T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-04-22T16:36:23Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A high-contrast, conceptual illustration depicting a marble-white bust of a generic, idealized leader placed upon a crumbling, ornate pedestal. The pedestal is fracturing, with deep fissures spreading across its base. Surrounding the pedestal, the background is a chaotic swirl of deep navy blue and storm-cloud gray, suggesting a turbulent atmosphere. Scattered across the floor around the base are small, disjointed geometric shapes—representing broken order—mixed with ink-like splatters that bleed into the composition. The lighting is dramatic and cinematic, with a single, harsh spotlight from above casting long, distorted shadows that emphasize the cracks in the stone. The overall aesthetic is one of tension, instability, and the erosion of structural integrity, rendered in a sharp, modern editorial illustration style.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🤡🫨😭🤬😵‍💫🤥👹🇺🇸 A Very Stable Genius: Donald J. Trump's Testing of America  
+![books-a-very-stable-genius-donald-j-trumps-testing-of-america](../books-a-very-stable-genius-donald-j-trumps-testing-of-america.jpg)  
 [🛒 A Very Stable Genius: Donald J. Trump's Testing of America. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4jJeL64)  
   
 ## 📚 Book Report: A Very Stable Genius: Donald J. Trump's Testing of America  

@@ -10,9 +10,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-16T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-04-22T10:36:40Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: An isometric illustration featuring a layered, interconnected town model transitioning from macro to micro scales. At the top, stylized topographical lines and clusters of neighborhood blocks represent regional planning. These flow downward into detailed architectural structures, such as a sunlit courtyard, a cozy window seat, and a garden path. The style uses a warm, earthy color palette of terracotta, soft greens, and cream. Delicate, thin lines connect various elements like nodes in a network, suggesting the hierarchy and relationships between the patterns. The composition is clean, balanced, and organic, conveying a sense of human-scale harmony and thoughtful craftsmanship without any clutter. The background is a soft, neutral off-white that highlights the depth and structural complexity of the design.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🏘️🧱🏗️ A Pattern Language: Towns, Buildings, Construction  
+![books-a-pattern-language-towns-buildings-construction](../books-a-pattern-language-towns-buildings-construction.jpg)  
 [🛒 A Pattern Language: Towns, Buildings, Construction. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/43iEkWk)  
   
 📚 A hierarchical system of 253 interconnected patterns to empower ordinary people to design human-centric towns, buildings, and construction elements.  

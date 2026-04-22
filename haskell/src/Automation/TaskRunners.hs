@@ -10,7 +10,7 @@ module Automation.TaskRunners
   ) where
 
 import Control.Exception (SomeException, try)
-import Control.Monad (when)
+import Control.Monad (when, unless)
 import Data.List.NonEmpty (NonEmpty ((:|)))
 import Data.Map.Strict (Map)
 import qualified Data.Map.Strict as Map
@@ -98,7 +98,7 @@ import Automation.Wikilink (buildBackLink)
 callGeminiForGenerator :: Context.AppContext -> NonEmpty Gemini.Model -> (Text, Text) -> IO (Text, Text)
 callGeminiForGenerator context models (systemPrompt, userPrompt) = do
   let config = Gemini.defaultGenerationConfig { Gemini.temperature = 0.9, Gemini.maxOutputTokens = 2048 }
-  result <- Gemini.generateContentWithFallback (Context.httpManager context) models (Just systemPrompt) userPrompt (Context.geminiApiKey context) config
+  result <- Gemini.generateContentWithFallback (Context.httpManager context) models (Just systemPrompt) userPrompt (Context.geminiApiKey context) config False
   case result of
     Left err -> failTask $ "Gemini API error: " <> T.pack (show err)
     Right response -> pure (Gemini.responseText response, Gemini.modelToText (Gemini.responseModel response))
@@ -173,13 +173,15 @@ runBlogSeries context seriesMap runConfigs seriesId = do
         Right blogContext -> do
           let (systemPrompt, userPrompt) = buildBlogPrompt blogContext
               genConfig = Gemini.defaultGenerationConfig { Gemini.temperature = 0.9, Gemini.maxOutputTokens = 8192 }
+              useGrounding = bsrcEnableGrounding runConfig
 
-          result <- Gemini.generateContentWithFallback manager models (Just systemPrompt) userPrompt apiKey genConfig
+          result <- Gemini.generateContentWithFallback manager models (Just systemPrompt) userPrompt apiKey genConfig useGrounding
           case result of
             Left err -> failTask $ "Blog generation failed: " <> T.pack (show err)
             Right response -> do
               let rawText = stripCodeFences (Gemini.responseText response)
                   usedModel = Gemini.modelToText (Gemini.responseModel response)
+                  sources = Gemini.responseGroundingSources response
               when (containsSystemPrompt systemPrompt rawText) $
                 failTask "Generated post echoes the system prompt (AGENTS.md) — rejecting"
               case parseGeneratedPost rawText of
@@ -202,10 +204,13 @@ runBlogSeries context seriesMap runConfigs seriesId = do
                       navLine = bscNavLink series <> backLink
                       displayTitle = unDisplayTitle $ buildDisplayTitle series today title
                       header = navLine <> "\n# " <> displayTitle <> "\n\n"
+                      sourcesSection = Gemini.formatGroundingSources sources
                       bodyWithSig = appendModelSignature body usedModel
+                  unless (null sources) $
+                    logMsg $ "  🔍 Embedded " <> T.pack (show (length sources)) <> " grounding sources"
                   createDirectoryIfMissing True seriesDir
                   let postPath = seriesDir </> T.unpack filename
-                  TIO.writeFile postPath (frontmatter <> "\n" <> header <> bodyWithSig <> "\n")
+                  TIO.writeFile postPath (frontmatter <> "\n" <> header <> bodyWithSig <> sourcesSection <> "\n")
                   logMsg $ "  ✅ Written: " <> filename <> " [" <> usedModel <> "]"
 
                   let attachmentsDir = repoRoot </> "attachments"

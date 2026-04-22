@@ -142,6 +142,15 @@ derivationTests = testGroup "derivation functions"
       let config = deriveBlogSeriesRunConfig sampleDiscovered
       bsrcPriorityUserEnvVar config @?= "GARDEN_THOUGHTS_PRIORITY_USER"
 
+  , testCase "deriveBlogSeriesRunConfig sets enableGrounding false for sampleDiscovered" $ do
+      let config = deriveBlogSeriesRunConfig sampleDiscovered
+      bsrcEnableGrounding config @?= False
+
+  , testCase "deriveBlogSeriesRunConfig passes enableGrounding true when set" $ do
+      let discovered = sampleDiscovered { dsEnableGrounding = True }
+          config = deriveBlogSeriesRunConfig discovered
+      bsrcEnableGrounding config @?= True
+
   , testCase "deriveScheduleEntry sets correct task ID" $ do
       let entry = deriveScheduleEntry sampleDiscovered
       seTaskId entry @?= BlogSeries "garden-thoughts"
@@ -195,6 +204,15 @@ validationTests = testGroup "validation"
   , testCase "deriveBlogSeriesConfig preserves empty contextQueries" $ do
       let config = deriveBlogSeriesConfig sampleDiscovered
       bscContextQueries config @?= []
+
+  , testCase "missing enableGrounding defaults to False" $
+      dsEnableGrounding (unsafeParse "test" configNoPriorityUser) @?= False
+
+  , testCase "enableGrounding true is parsed correctly" $
+      dsEnableGrounding (unsafeParse "grounded-series" configWithGrounding) @?= True
+
+  , testCase "enableGrounding false is parsed correctly" $
+      dsEnableGrounding (unsafeParse "ungrounded-series" configWithGroundingFalse) @?= False
   ]
 
 properties :: TestTree
@@ -233,6 +251,10 @@ properties = testGroup "properties"
   , testProperty "deriveBlogSeriesConfig preserves name" $
       QC.forAll genDiscoveredSeries $ \discovered ->
         bscName (deriveBlogSeriesConfig discovered) == dsName discovered
+
+  , testProperty "deriveBlogSeriesRunConfig preserves enableGrounding" $
+      QC.forAll genDiscoveredSeries $ \discovered ->
+        bsrcEnableGrounding (deriveBlogSeriesRunConfig discovered) == dsEnableGrounding discovered
   ]
 
 isRight :: Either a b -> Bool
@@ -334,7 +356,30 @@ sampleDiscovered = DiscoveredSeries
   , dsScheduleTime = TimeOfDay 11 0 0
   , dsModels = Gemini.Gemini25Flash :| [Gemini.Gemini25FlashLite]
   , dsContextQueries = []
+  , dsEnableGrounding = False
   }
+
+configWithGrounding :: T.Text
+configWithGrounding = T.unlines
+  [ "{"
+  , "  \"name\": \"Grounded Series\","
+  , "  \"icon\": \"\128269\","
+  , "  \"scheduleHourPacific\": 8,"
+  , "  \"models\": [\"gemini-2.5-flash\"],"
+  , "  \"enableGrounding\": true"
+  , "}"
+  ]
+
+configWithGroundingFalse :: T.Text
+configWithGroundingFalse = T.unlines
+  [ "{"
+  , "  \"name\": \"Ungrounded Series\","
+  , "  \"icon\": \"\128269\","
+  , "  \"scheduleHourPacific\": 8,"
+  , "  \"models\": [\"gemini-2.5-flash\"],"
+  , "  \"enableGrounding\": false"
+  , "}"
+  ]
 
 genSeriesId :: QC.Gen T.Text
 genSeriesId = do
@@ -351,6 +396,7 @@ genDiscoveredSeries = do
   priorityUser <- QC.oneof [pure Nothing, Just . T.pack <$> QC.listOf1 (QC.elements ['a'..'z'])]
   hour <- QC.choose (0, 23)
   contextQueries <- QC.elements [[], defaultContextQueries seriesId]
+  enableGrounding <- QC.arbitrary
   pure DiscoveredSeries
     { dsId = seriesId
     , dsName = name
@@ -359,4 +405,5 @@ genDiscoveredSeries = do
     , dsScheduleTime = TimeOfDay hour 0 0
     , dsModels = Gemini.Gemini25Flash :| []
     , dsContextQueries = contextQueries
+    , dsEnableGrounding = enableGrounding
     }

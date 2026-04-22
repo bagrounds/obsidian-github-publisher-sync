@@ -51,9 +51,10 @@ data ScheduleEntry = ScheduleEntry
   } deriving (Generic, Show, Eq)
 
 data BlogSeriesRunConfig = BlogSeriesRunConfig
-  { bsrcSeriesId :: Text
-  , bsrcModelChain :: NonEmpty Gemini.Model
+  { bsrcSeriesId          :: Text
+  , bsrcModelChain        :: NonEmpty Gemini.Model
   , bsrcPriorityUserEnvVar :: Text
+  , bsrcEnableGrounding   :: Bool
   } deriving (Generic, Show, Eq)
 
 taskIdToText :: TaskId -> Text

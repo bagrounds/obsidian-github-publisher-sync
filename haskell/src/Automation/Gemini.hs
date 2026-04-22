@@ -4,6 +4,7 @@ module Automation.Gemini
   ( Config (..)
   , Request (..)
   , Response (..)
+  , GroundingSource (..)
   , GenerationConfig (..)
   , Error (..)
   , ApiStatus (..)
@@ -25,14 +26,17 @@ module Automation.Gemini
   , isQuotaExhaustedError
   , parseResponseText
   , extractText
+  , extractGroundingSources
   , parseApiStatus
   , parseErrorBody
   , buildRequestBody
+  , formatGroundingSources
   ) where
 
 import Automation.Json (Value (..), ToValue (..), (.=), object, encode)
 import qualified Automation.Json as Json
 import Automation.Secret (Secret (..))
+import Data.List (foldl')
 import Data.List.NonEmpty (NonEmpty ((:|)))
 import qualified Data.List.NonEmpty as NE
 import Data.Text (Text)
@@ -228,11 +232,21 @@ data Request = Request
   , requestModel              :: Model
   , requestApiKey             :: Secret
   , requestGenerationConfig   :: GenerationConfig
+  , requestEnableGrounding    :: Bool
+  } deriving (Show, Eq)
+
+-- | A single grounded web source returned by the Gemini API when Google Search
+-- grounding is enabled. The @groundingSourceUri@ is the URL of the page that
+-- was retrieved; @groundingSourceTitle@ is its human-readable title.
+data GroundingSource = GroundingSource
+  { groundingSourceUri   :: Text
+  , groundingSourceTitle :: Text
   } deriving (Show, Eq)
 
 data Response = Response
-  { responseText  :: Text
-  , responseModel :: Model
+  { responseText             :: Text
+  , responseModel            :: Model
+  , responseGroundingSources :: [GroundingSource]
   } deriving (Show, Eq)
 
 geminiEndpoint :: Model -> Text
@@ -241,15 +255,18 @@ geminiEndpoint model =
     <> modelToText model
     <> ":generateContent"
 
-buildRequestBody :: Maybe Text -> Text -> GenerationConfig -> Value
-buildRequestBody systemInstruction prompt config =
+buildRequestBody :: Maybe Text -> Text -> GenerationConfig -> Bool -> Value
+buildRequestBody systemInstruction prompt config withGrounding =
   let base =
         [ "contents" .= [ object [ "parts" .= [ object [ "text" .= prompt ] ] ] ]
         , "generationConfig" .= config
         ]
+      withTools = if withGrounding
+        then ("tools" .= [ object [ "google_search" .= object [] ] ]) : base
+        else base
       fields = case systemInstruction of
-        Nothing -> base
-        Just si -> ("system_instruction" .= object [ "parts" .= [ object [ "text" .= si ] ] ]) : base
+        Nothing -> withTools
+        Just si -> ("system_instruction" .= object [ "parts" .= [ object [ "text" .= si ] ] ]) : withTools
   in object fields
 
 parseResponseText :: LBS.ByteString -> Either Error Text
@@ -274,6 +291,61 @@ extractText (Object obj) =
     _ -> Left (ExtractionError "no candidates in response")
 extractText _ = Left (ExtractionError "response is not an object")
 
+-- | Extract grounding sources from a Gemini API response value.
+-- Sources come from @candidates[0].groundingMetadata.groundingChunks[].web@.
+-- Only sources with non-empty @https@ or @http@ URIs are included.
+-- Ordering matches the API response order.
+extractGroundingSources :: Value -> [GroundingSource]
+extractGroundingSources (Object obj) =
+  case lookup "candidates" obj of
+    Just (Array (Object candidate : _)) ->
+      case lookup "groundingMetadata" candidate of
+        Just (Object meta) ->
+          case lookup "groundingChunks" meta of
+            Just (Array chunks) -> concatMap extractChunkSource chunks
+            _                   -> []
+        _ -> []
+    _ -> []
+extractGroundingSources _ = []
+
+extractChunkSource :: Value -> [GroundingSource]
+extractChunkSource (Object chunk) =
+  case lookup "web" chunk of
+    Just (Object web) ->
+      let uri = case lookup "uri" web of
+                  Just (String u) -> u
+                  _               -> ""
+          title = case lookup "title" web of
+                    Just (String t) -> if T.null t then uri else t
+                    _               -> uri
+      in if T.null uri || not (T.isPrefixOf "http" uri)
+           then []
+           else [GroundingSource { groundingSourceUri = uri, groundingSourceTitle = title }]
+    _ -> []
+extractChunkSource _ = []
+
+-- | Format a list of grounding sources as a markdown section.
+-- Returns empty text when the list is empty.
+-- Deduplicates by URI, preserving the first occurrence of each.
+formatGroundingSources :: [GroundingSource] -> Text
+formatGroundingSources [] = ""
+formatGroundingSources sources =
+  let unique = deduplicateByUri sources
+      items = fmap formatSourceItem unique
+  in "\n\n## 🔍 Sources\n\n" <> T.intercalate "\n" items
+
+deduplicateByUri :: [GroundingSource] -> [GroundingSource]
+deduplicateByUri = foldl' addIfNew []
+  where
+    addIfNew acc source =
+      if any (\s -> groundingSourceUri s == groundingSourceUri source) acc
+        then acc
+        else acc <> [source]
+
+formatSourceItem :: GroundingSource -> Text
+formatSourceItem source =
+  "- 🌐 [" <> groundingSourceTitle source <> "](" <> groundingSourceUri source <> ")"
+
 generateContent :: Manager -> Request -> IO (Either Error Response)
 generateContent manager req = do
   let model = requestModel req
@@ -284,7 +356,7 @@ generateContent manager req = do
         _                               -> requestPrompt req
   let url = T.unpack $ geminiEndpoint model <> "?key=" <> unSecret (requestApiKey req)
   initReq <- parseRequest url
-  let body = encode $ buildRequestBody effectiveSystemInstruction effectivePrompt (requestGenerationConfig req)
+  let body = encode $ buildRequestBody effectiveSystemInstruction effectivePrompt (requestGenerationConfig req) (requestEnableGrounding req)
   let httpReq = initReq
         { HTTP.method = "POST"
         , HTTP.requestBody = RequestBodyLBS body
@@ -297,29 +369,53 @@ generateContent manager req = do
   let status = statusCode $ responseStatus response
   case status of
     200 ->
-      case parseResponseText (responseBody response) of
-        Left err   -> pure $ Left err
-        Right text -> pure $ Right Response
-          { responseText  = T.strip text
-          , responseModel = model
+      case (parseResponseText (responseBody response), Json.decode (responseBody response)) of
+        (Left err, _) -> pure $ Left err
+        (Right text, Nothing) -> pure $ Right Response
+          { responseText             = T.strip text
+          , responseModel            = model
+          , responseGroundingSources = []
+          }
+        (Right text, Just val) -> pure $ Right Response
+          { responseText             = T.strip text
+          , responseModel            = model
+          , responseGroundingSources = extractGroundingSources val
           }
     code ->
       let (apiStatus, message) = parseErrorBody (responseBody response)
       in pure $ Left $ HttpError code apiStatus message
 
-generateContentWithFallback :: Manager -> NonEmpty Model -> Maybe Text -> Text -> Secret -> GenerationConfig -> IO (Either Error Response)
-generateContentWithFallback manager (model :| fallbacks) systemInstruction prompt apiKey config = do
+generateContentWithFallback :: Manager -> NonEmpty Model -> Maybe Text -> Text -> Secret -> GenerationConfig -> Bool -> IO (Either Error Response)
+generateContentWithFallback manager (model :| fallbacks) systemInstruction prompt apiKey config useGrounding = do
   result <- generateContent manager Request
-    { requestPrompt = prompt
+    { requestPrompt            = prompt
     , requestSystemInstruction = systemInstruction
-    , requestModel = model
-    , requestApiKey = apiKey
-    , requestGenerationConfig = config
+    , requestModel             = model
+    , requestApiKey            = apiKey
+    , requestGenerationConfig  = config
+    , requestEnableGrounding   = useGrounding
     }
   case result of
     Right response -> pure $ Right response
+    Left err | useGrounding && isRateLimitError err -> do
+      putStrLn $ "⚠️ Grounding quota exceeded for " <> T.unpack (modelToText model) <> ", retrying without grounding..."
+      groundingFallbackResult <- generateContent manager Request
+        { requestPrompt            = prompt
+        , requestSystemInstruction = systemInstruction
+        , requestModel             = model
+        , requestApiKey            = apiKey
+        , requestGenerationConfig  = config
+        , requestEnableGrounding   = False
+        }
+      case groundingFallbackResult of
+        Right response -> pure $ Right response
+        Left fallbackErr -> case fallbacks of
+          [] -> pure $ Left $ AllModelsFailed model fallbackErr
+          (next : rest) -> do
+            putStrLn $ "⚠️ Model " <> T.unpack (modelToText model) <> " failed after grounding fallback, trying next..."
+            generateContentWithFallback manager (next :| rest) systemInstruction prompt apiKey config False
     Left err -> case fallbacks of
       [] -> pure $ Left $ AllModelsFailed model err
       (next : rest) -> do
         putStrLn $ "⚠️ Model " <> T.unpack (modelToText model) <> " failed, trying next fallback..."
-        generateContentWithFallback manager (next :| rest) systemInstruction prompt apiKey config
+        generateContentWithFallback manager (next :| rest) systemInstruction prompt apiKey config useGrounding

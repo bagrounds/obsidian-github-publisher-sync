@@ -6,8 +6,9 @@ aliases:
 URL: https://bagrounds.org/books/ritual-performance-and-the-senses
 affiliate link: https://amzn.to/3SA7fiZ
 link_analysis_model: gemini-3.1-flash-lite-preview
-link_analysis_time: 2026-04-07T00:00:00Z
+link_analysis_time: 2026-04-19T00:00:00Z
 force_analyze_links: false
+link_analysis_version: "2"
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🕯️🎬👃 Ritual, Performance and the Senses  

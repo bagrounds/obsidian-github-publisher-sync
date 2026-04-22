@@ -10,8 +10,9 @@ Channel: AI News & Strategy Daily | Nate B Jones
 tags:
 youtube: https://youtu.be/4cuT-LKcmWs
 force_analyze_links: false
-link_analysis_time: 2026-03-26T23:09:09.538Z
+link_analysis_time: 2026-04-22T00:00:00Z
 link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_version: "2"
 ---
 [Home](../index.md) > [Videos](./index.md)  
 # 🤖✂️💰🚀 The AI Job Market Split in Two. One Side Pays $400K and Can't Hire Fast Enough.  
@@ -51,7 +52,7 @@ link_analysis_model: gemini-3.1-flash-lite-preview
   
 ### ↔️ Similar  
 * 📘 Co-Intelligence by Ethan Mollick explores how to work alongside AI as a partner, tutor, and coach in the modern workplace.  
-* 📘 Prediction Machines by Ajay Agrawal, Joshua Gans, and Avi Goldfarb examines the economics of AI and how it shifts the value from prediction to human judgment.  
+* 📘 [🤖📈 Prediction Machines: The Simple Economics of Artificial Intelligence](../books/prediction-machines-the-simple-economics-of-artificial-intelligence.md) by Ajay Agrawal, Joshua Gans, and Avi Goldfarb examines the economics of AI and how it shifts the value from prediction to human judgment.  
   
 ### 🆚 Contrasting  
 * 📘 The Myth of Artificial Intelligence by Erik J. Larson argues that the gap between human intuition and machine computation is far wider than current hype suggests.  
@@ -59,4 +60,4 @@ link_analysis_model: gemini-3.1-flash-lite-preview
   
 ### 🎨 Creatively Related  
 * 📘 [💺🚪💡🤔 The Design of Everyday Things](../books/the-design-of-everyday-things.md) by Don Norman provides fundamental principles of usability and communication that apply to designing agentic guardrails.  
-* 📘 Thinking in Systems by Donella Meadows offers essential mental models for understanding the cascading failures and feedback loops inherent in multi-agent AI architectures.
+* 📘 [🌐🔗🧠📖 Thinking in Systems: A Primer](../books/thinking-in-systems.md) by Donella Meadows offers essential mental models for understanding the cascading failures and feedback loops inherent in multi-agent AI architectures.

@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-04-22T13:13:21-07:00
+updated: 2026-04-22T14:42:18-07:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -71,17 +71,17 @@ updated: 2026-04-22T13:13:21-07:00
   
   
 ## [📚 Books](./books/index.md) (960)  
-- [🤖🏗️ AI Engineering: Building Applications with Foundation Models](./books/ai-engineering-building-applications-with-foundation-models.md)  
-- [🤖⚙️ AI Agents in Action](./books/ai-agents-in-action.md)  
-- [🧑‍🧒💔🩹 Adult Children of Emotionally Immature Parents: How to Heal from Distant, Rejecting, or Self-Involved Parents](./books/adult-children-of-emotionally-immature-parents-how-to-heal-from-distant-rejecting-or-self-involved-parents.md)  
-- [🧬🕹️ Adaptive Control](./books/adaptive-control.md)  
+- [🤖🐍🔎 AI Snake Oil: What Artificial Intelligence Can Do, What It Can't, and How to Tell the Difference](./books/ai-snake-oil.md)  
+- [🤖💻 AI-Powered Developer: Build great software with ChatGPT and Copilot](./books/ai-powered-developer-build-great-software-with-chatgpt-and-copilot.md)  
+- [🤖🖱️🤝 AI meets UX: Designing the Next Generation of User-Centered Products: Where innovation meets empathy to shape the future of design](./books/ai-meets-ux-designing-the-next-generation-of-user-centered-products-where-innovation-meets-empathy-to-shape-the-future-of-design.md)  
+- [🤖📈 AI for Marketing and Product Innovation: Powerful New Tools for Predicting Trends, Connecting with Customers, and Closing Sales](./books/ai-for-marketing-and-product-innovation-powerful-new-tools-for-predicting-trends-connecting-with-customers-and-closing-sales.md)  
   
   
-## [📺 Videos](./videos/index.md) (783)  
+## [📺 Videos](./videos/index.md) (784)  
+- [🔍🔬🧠 I Researched How To Do Research, Here's What I Learned](./videos/i-researched-how-to-do-research-heres-what-i-learned.md)  
+- [💰💸⚔️ A “Billion Dollar a Day” War | Explainer](./videos/a-billion-dollar-a-day-war-explainer.md)  
+- [🤖✂️💰🚀 The AI Job Market Split in Two. One Side Pays $400K and Can't Hire Fast Enough.](./videos/the-ai-job-market-split-in-two-one-side-pays-400k-and-cant-hire-fast-enough.md)  
 - [🇺🇸👨‍💼⬆️🏛️📜 FDR’s Path to the White House (1882-1933) | Full Documentary | American Experience PBS](./videos/fdrs-path-to-the-white-house-1882-1933-full-documentary-american-experience-pbs.md)  
-- [🚨🌍📉 On the Brink of Global Recession | The David Frum Show](./videos/on-the-brink-of-global-recession-the-david-frum-show.md)  
-- [🔒🆚🔓🚨 Karpathy's Wiki vs. Open Brain. One Fails When You Need It Most.](./videos/karpathys-wiki-vs-open-brain-one-fails-when-you-need-it-most.md)  
-- [📰🏛️💡 Today in Politics | Explainer](./videos/today-in-politics-explainer.md)  
   
   
 ## [🌌 Topics](./topics/index.md) (91)  

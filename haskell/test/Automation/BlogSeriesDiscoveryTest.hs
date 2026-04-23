@@ -208,7 +208,7 @@ validationTests = testGroup "validation"
 
   , testCase "missing enableGrounding fails to parse" $
       assertBool "should fail without enableGrounding" $
-        isLeft (parseSeriesConfig "test" configNoPriorityUser)
+        isLeft (parseSeriesConfig "test" configMissingEnableGrounding)
 
   , testCase "enableGrounding true is parsed correctly" $
       dsSearchGrounding (unsafeParse "grounded-series" configWithGrounding) @?= True
@@ -323,10 +323,10 @@ configEmptyModels = T.unlines
   , "}"
   ]
 
-configNoPriorityUser :: T.Text
-configNoPriorityUser = T.unlines
+configMissingEnableGrounding :: T.Text
+configMissingEnableGrounding = T.unlines
   [ "{"
-  , "  \"name\": \"No Priority\","
+  , "  \"name\": \"Forgot Grounding Flag\","
   , "  \"icon\": \"\128736\","
   , "  \"scheduleHourPacific\": 11,"
   , "  \"models\": [\"gemini-2.5-flash\"]"

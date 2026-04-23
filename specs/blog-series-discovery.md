@@ -78,13 +78,24 @@
 
 ### 📄 Example Configuration
 
-The following prose describes the example JSON that every series config must follow.
-The object has these fields: name is a display string, icon is an emoji string, priorityUser is either a username string or omitted, scheduleHourPacific is an integer hour in Pacific time, models is an array of model name strings with the primary model first, and enableGrounding is a required boolean.
-For example, a series called Garden Thoughts with the seedling emoji, priorityUser of bagrounds, scheduled at hour 11, using gemini 2.5 flash and gemini 2.5 flash lite as the model chain, with enableGrounding set to false.
+📄 The following JSON shows the full schema with all fields, where priorityUser is the only optional field.
+
+The required fields are name (the display title), icon (an emoji), scheduleHourPacific (the hour in Pacific time to publish, zero through twenty-three), models (the Gemini model chain array with the primary model first and fallbacks after), and enableGrounding (a boolean controlling whether Google Search grounding is used during generation). The optional priorityUser field names a GitHub handle whose comments get priority flagging.
+
+```json
+{
+  "name": "Garden Thoughts",
+  "icon": "🌱",
+  "priorityUser": "bagrounds",
+  "scheduleHourPacific": 11,
+  "models": ["gemini-2.5-flash", "gemini-2.5-flash-lite"],
+  "enableGrounding": false
+}
+```
 
 ### 🔮 Extensibility Design
 
-📐 New required fields should be added to all existing config files at the same time as the Haskell change.
+📐 New required fields must be added to all existing config files at the same time as the Haskell change.
 🆕 To add a new optional customization (e.g., recap frequency, minimum post length, or image generation style), add an optional field to the JSON schema and use the optional operator in the FromValue instance with a sensible default value.
 📋 Planned future fields are documented in the Future Considerations section.
 

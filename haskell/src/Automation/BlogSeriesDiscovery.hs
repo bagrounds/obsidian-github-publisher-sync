@@ -57,7 +57,7 @@ data RawConfig = RawConfig
   , rcScheduleHourPacific :: Int
   , rcModels             :: [Text]
   , rcContextSources     :: Maybe [ContextQuery]
-  , rcSearchGrounding    :: Bool
+  , rcEnableGrounding    :: Bool
   }
 
 instance FromValue RawConfig where
@@ -68,7 +68,7 @@ instance FromValue RawConfig where
     rcScheduleHourPacific <- obj .: "scheduleHourPacific"
     rcModels <- obj .: "models"
     rcContextSources <- obj .:? "contextSources"
-    rcSearchGrounding <- obj .: "enableGrounding"
+    rcEnableGrounding <- obj .: "enableGrounding"
     pure RawConfig{..}
 
 discoverSeries :: FilePath -> IO (Either [DiscoveryError] [DiscoveredSeries])
@@ -126,7 +126,7 @@ validateRawConfig filePath seriesId RawConfig{..} =
           , dsScheduleTime = TimeOfDay rcScheduleHourPacific 0 0
           , dsModels = Gemini.modelFromText firstModel :| fmap Gemini.modelFromText restModels
           , dsContextQueries = fromMaybe (defaultContextQueries seriesId) rcContextSources
-          , dsSearchGrounding = rcSearchGrounding
+          , dsSearchGrounding = rcEnableGrounding
           }
       _ -> Left errors
     else Left errors

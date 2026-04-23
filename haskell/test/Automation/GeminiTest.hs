@@ -741,6 +741,9 @@ genModel = QC.oneof
 genKnownModel :: QC.Gen Gemini.Model
 genKnownModel = QC.elements Gemini.knownModels
 
+-- | Build a GroundingSource for use in tests. All URIs passed to this function
+-- must be valid http or https URLs. Invalid URIs will cause a test failure with
+-- an error message indicating the invalid URL.
 testUrl :: T.Text -> T.Text -> Gemini.GroundingSource
 testUrl uriText titleText =
   let url = either (error . ("Invalid test URL: " <>) . T.unpack) id (mkUrl uriText)

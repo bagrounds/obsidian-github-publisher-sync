@@ -9,6 +9,10 @@ Platform:
 Channel: "MS&E 435: Economics of AI"
 tags:
 youtube: https://youtu.be/4zk-hJ50vmU
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_version: "2"
+link_analysis_time: 2026-04-22T00:00:00Z
+force_analyze_links: false
 ---
 [Home](../index.md) > [Videos](./index.md)  
 # 🤖💰📈🚀 Class #3 | MS&E435: Economics of the AI Supercycle Stanford University Spring '26 Apoorv Agrawal  
@@ -52,7 +56,7 @@ youtube: https://youtu.be/4zk-hJ50vmU
 * 📘 Chip War by Chris Miller provides a detailed history of the semiconductor industry and its geopolitical importance.  
   
 ### 🆚 Contrasting  
-* 📙 Less is More by Jason Hickel argues for degrowth and challenges the necessity of infinite economic expansion driven by technology.  
+* 📙 [📉🌎 Less is More: How Degrowth Will Save the World](../books/less-is-more-how-degrowth-will-save-the-world.md) by Jason Hickel argues for degrowth and challenges the necessity of infinite economic expansion driven by technology.  
 * 📙 The Age of Surveillance Capitalism by Shoshana Zuboff examines the negative societal impacts and power dynamics of large-scale data processing.  
   
 ### 🎨 Creatively Related  

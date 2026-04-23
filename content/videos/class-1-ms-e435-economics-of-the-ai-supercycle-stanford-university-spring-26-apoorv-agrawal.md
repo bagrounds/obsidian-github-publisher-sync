@@ -9,6 +9,10 @@ Platform:
 Channel: "MS&E 435: Economics of AI"
 tags:
 youtube: https://youtu.be/-ubIUNA-zRA
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_version: "2"
+link_analysis_time: 2026-04-22T00:00:00Z
+force_analyze_links: false
 ---
 [Home](../index.md) > [Videos](./index.md)  
 # 🤖📈🚀 Class #1 | MS&E435: Economics of the AI Supercycle Stanford University Spring '26 Apoorv Agrawal  
@@ -52,9 +56,9 @@ youtube: https://youtu.be/-ubIUNA-zRA
 * 📗 The Master Switch by Tim Wu via Knopf Doubleday Publishing Group details the history of information cycles and the rise of dominant tech monopolies.  
   
 ### 🆚 Contrasting  
-* 📙 Prediction Machines by Ajay Agrawal via Harvard Business Review Press focuses on the microeconomics of AI as a drop in the cost of prediction.  
+* 📙 [🤖📈 Prediction Machines: The Simple Economics of Artificial Intelligence](../books/prediction-machines-the-simple-economics-of-artificial-intelligence.md) by Ajay Agrawal via Harvard Business Review Press focuses on the microeconomics of AI as a drop in the cost of prediction.  
 * 📕 Radical Uncertainty by John Kay and Mervyn King via W. W. Norton & Company argues against over-reliance on mathematical models in unpredictable economic cycles.  
   
 ### 🎨 Creatively Related  
-* 📒 The Second Machine Age by Erik Brynjolfsson and Andrew McAfee via W. W. Norton & Company discusses how digital technologies redefine work and the economy.  
+* 📒 [🤖📈 The Second Machine Age: Work, Progress, and Prosperity in a Time of Brilliant Technologies](../books/the-second-machine-age-work-progress-and-prosperity-in-a-time-of-brilliant-technologies.md) by Erik Brynjolfsson and Andrew McAfee via W. W. Norton & Company discusses how digital technologies redefine work and the economy.  
 * 📓 Engines of Logic by Martin Davis via W. W. Norton & Company provides a historical look at the mathematicians who conceptualized the computer.

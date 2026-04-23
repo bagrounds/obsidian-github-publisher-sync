@@ -54,7 +54,7 @@ data BlogSeriesRunConfig = BlogSeriesRunConfig
   { bsrcSeriesId          :: Text
   , bsrcModelChain        :: NonEmpty Gemini.Model
   , bsrcPriorityUserEnvVar :: Text
-  , bsrcEnableGrounding   :: Bool
+  , searchGrounding       :: Bool
   } deriving (Generic, Show, Eq)
 
 taskIdToText :: TaskId -> Text

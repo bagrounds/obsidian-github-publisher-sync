@@ -42,7 +42,7 @@ data DiscoveredSeries = DiscoveredSeries
   , dsScheduleTime       :: TimeOfDay
   , dsModels             :: NonEmpty Gemini.Model
   , dsContextQueries     :: [ContextQuery]
-  , dsEnableGrounding    :: Bool
+  , dsSearchGrounding    :: Bool
   } deriving (Show, Eq)
 
 data DiscoveryError
@@ -57,7 +57,7 @@ data RawConfig = RawConfig
   , rcScheduleHourPacific :: Int
   , rcModels             :: [Text]
   , rcContextSources     :: Maybe [ContextQuery]
-  , rcEnableGrounding    :: Maybe Bool
+  , rcSearchGrounding    :: Bool
   }
 
 instance FromValue RawConfig where
@@ -68,7 +68,7 @@ instance FromValue RawConfig where
     rcScheduleHourPacific <- obj .: "scheduleHourPacific"
     rcModels <- obj .: "models"
     rcContextSources <- obj .:? "contextSources"
-    rcEnableGrounding <- obj .:? "enableGrounding"
+    rcSearchGrounding <- obj .: "enableGrounding"
     pure RawConfig{..}
 
 discoverSeries :: FilePath -> IO (Either [DiscoveryError] [DiscoveredSeries])
@@ -126,7 +126,7 @@ validateRawConfig filePath seriesId RawConfig{..} =
           , dsScheduleTime = TimeOfDay rcScheduleHourPacific 0 0
           , dsModels = Gemini.modelFromText firstModel :| fmap Gemini.modelFromText restModels
           , dsContextQueries = fromMaybe (defaultContextQueries seriesId) rcContextSources
-          , dsEnableGrounding = fromMaybe False rcEnableGrounding
+          , dsSearchGrounding = rcSearchGrounding
           }
       _ -> Left errors
     else Left errors
@@ -149,7 +149,7 @@ deriveBlogSeriesRunConfig DiscoveredSeries{..} = BlogSeriesRunConfig
   { bsrcSeriesId          = dsId
   , bsrcModelChain        = dsModels
   , bsrcPriorityUserEnvVar = derivePriorityUserEnvVar dsId
-  , bsrcEnableGrounding   = dsEnableGrounding
+  , searchGrounding       = dsSearchGrounding
   }
 
 deriveScheduleEntry :: DiscoveredSeries -> ScheduleEntry

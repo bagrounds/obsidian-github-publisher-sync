@@ -74,8 +74,8 @@ retryLoop manager apiKey model prompt attempt backoff = do
     , Gemini.requestGenerationConfig   = Gemini.GenerationConfig
         { Gemini.temperature     = 0.0
         , Gemini.maxOutputTokens = 1024
+        , Gemini.searchGrounding = False
         }
-    , Gemini.requestEnableGrounding    = False
     }
   case result of
     Right response ->

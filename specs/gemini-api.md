@@ -23,8 +23,7 @@
 - 📡 generateContentWithFallback tries each model in order
 - 📋 When a system instruction is provided, `generateContent` checks `supportsSystemInstruction` for the current model: Gemini models receive the system instruction via the API `system_instruction` field; Gemma models receive it concatenated into the user prompt for compatibility
 - 🔄 Each model attempt uses withRetry for transient errors (429, 502, 503, 504)
-- 🌐 If grounding is enabled and a rate limit error occurs, retries without grounding on same model before trying next model
-- ⏭️ On definitive failure, moves to next model in chain
+- ⏭️ On definitive failure (including quota exhaustion), moves to next model in chain
 - 📦 Returns generated text and grounding sources, or throws after exhausting all models
 
 ## 🔧 Key Functions
@@ -50,10 +49,13 @@
 ## 🌐 Grounding Support
 
 - 📡 When a series config sets enableGrounding to true, blog posts are generated with Google Search grounding enabled
+- 🏷️ Grounding is configured through GenerationConfig by setting searchGrounding to true, keeping request configuration cohesive
 - 🔗 Grounded responses include groundingChunks in the response metadata containing web URIs and titles
-- 🧹 Sources are deduplicated by URI preserving first occurrence order, and filtered to only include valid http(s) URLs
+- 🏷️ Source URLs are validated using the Url domain type via mkUrl, ensuring only http and https URLs are ever included in a GroundingSource
+- 🧹 Sources are deduplicated by URL preserving first occurrence order
 - 📝 A Sources section is appended to blog posts listing all grounding sources as markdown links prefixed with the globe emoji
-- 🔄 If grounding quota is exhausted (rate limit error), the request is automatically retried without grounding on the same model
+- 🔄 formatGroundingSources returns Nothing for empty lists and Just for non-empty lists, letting callers decide whether to include the section
+- 🛑 If grounding fails, the entire model attempt fails and the next model in the chain is tried; there is no silent fallback to an ungrounded post
 - ✅ Enabled for: the-noise, systems-for-public-good, positivity-bias, convergence
 
 ## 🔐 GCP Authentication

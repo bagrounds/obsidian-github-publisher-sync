@@ -381,7 +381,6 @@ describeImageWithGemini manager apiKey model content = do
         , Gemini.requestModel = model
         , Gemini.requestApiKey = Secret apiKey
         , Gemini.requestGenerationConfig = Gemini.defaultGenerationConfig
-        , Gemini.requestEnableGrounding = False
         }
   result <- Gemini.generateContent manager req
   case result of

@@ -14,7 +14,7 @@ import Control.Monad (when, unless)
 import Data.List.NonEmpty (NonEmpty ((:|)))
 import Data.Map.Strict (Map)
 import qualified Data.Map.Strict as Map
-import Data.Maybe (catMaybes)
+import Data.Maybe (catMaybes, fromMaybe)
 import qualified Data.ByteString.Lazy as LBS
 import Data.Text (Text)
 import qualified Data.Text as T
@@ -98,7 +98,7 @@ import Automation.Wikilink (buildBackLink)
 callGeminiForGenerator :: Context.AppContext -> NonEmpty Gemini.Model -> (Text, Text) -> IO (Text, Text)
 callGeminiForGenerator context models (systemPrompt, userPrompt) = do
   let config = Gemini.defaultGenerationConfig { Gemini.temperature = 0.9, Gemini.maxOutputTokens = 2048 }
-  result <- Gemini.generateContentWithFallback (Context.httpManager context) models (Just systemPrompt) userPrompt (Context.geminiApiKey context) config False
+  result <- Gemini.generateContentWithFallback (Context.httpManager context) models (Just systemPrompt) userPrompt (Context.geminiApiKey context) config
   case result of
     Left err -> failTask $ "Gemini API error: " <> T.pack (show err)
     Right response -> pure (Gemini.responseText response, Gemini.modelToText (Gemini.responseModel response))
@@ -172,10 +172,12 @@ runBlogSeries context seriesMap runConfigs seriesId = do
         Left reason -> failTask $ "Blog context build failed: " <> reason
         Right blogContext -> do
           let (systemPrompt, userPrompt) = buildBlogPrompt blogContext
-              genConfig = Gemini.defaultGenerationConfig { Gemini.temperature = 0.9, Gemini.maxOutputTokens = 8192 }
-              useGrounding = bsrcEnableGrounding runConfig
+              genConfig = Gemini.defaultGenerationConfig
+                { Gemini.temperature = 0.9, Gemini.maxOutputTokens = 8192
+                , Gemini.searchGrounding = searchGrounding runConfig
+                }
 
-          result <- Gemini.generateContentWithFallback manager models (Just systemPrompt) userPrompt apiKey genConfig useGrounding
+          result <- Gemini.generateContentWithFallback manager models (Just systemPrompt) userPrompt apiKey genConfig
           case result of
             Left err -> failTask $ "Blog generation failed: " <> T.pack (show err)
             Right response -> do
@@ -204,13 +206,13 @@ runBlogSeries context seriesMap runConfigs seriesId = do
                       navLine = bscNavLink series <> backLink
                       displayTitle = unDisplayTitle $ buildDisplayTitle series today title
                       header = navLine <> "\n# " <> displayTitle <> "\n\n"
-                      sourcesSection = Gemini.formatGroundingSources groundingSources
+                      maybeSourcesSection = Gemini.formatGroundingSources groundingSources
                       bodyWithSig = appendModelSignature body usedModel
                   unless (null groundingSources) $
                     logMsg $ "  🔍 Embedded " <> T.pack (show (length groundingSources)) <> " grounding sources"
                   createDirectoryIfMissing True seriesDir
                   let postPath = seriesDir </> T.unpack filename
-                  TIO.writeFile postPath (frontmatter <> "\n" <> header <> bodyWithSig <> sourcesSection <> "\n")
+                  TIO.writeFile postPath (frontmatter <> "\n" <> header <> bodyWithSig <> fromMaybe "" maybeSourcesSection <> "\n")
                   logMsg $ "  ✅ Written: " <> filename <> " [" <> usedModel <> "]"
 
                   let attachmentsDir = repoRoot </> "attachments"

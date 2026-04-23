@@ -25,19 +25,19 @@ testSeriesMap = Map.fromList
       { dsId = "chickie-loo", dsName = "Chickie Loo", dsIcon = "🐔"
       , dsPriorityUser = Just "ChickieLoo", dsScheduleTime = TimeOfDay 7 0 0
       , dsModels = Gemini.Gemini31FlashLite :| [Gemini.Gemini3Flash]
-      , dsContextQueries = [], dsEnableGrounding = False
+      , dsContextQueries = [], dsSearchGrounding = False
       })
   , ("auto-blog-zero", deriveBlogSeriesConfig DiscoveredSeries
       { dsId = "auto-blog-zero", dsName = "Auto Blog Zero", dsIcon = "🤖"
       , dsPriorityUser = Just "bagrounds", dsScheduleTime = TimeOfDay 8 0 0
       , dsModels = Gemini.Gemini31FlashLite :| [Gemini.Gemini3Flash]
-      , dsContextQueries = [], dsEnableGrounding = False
+      , dsContextQueries = [], dsSearchGrounding = False
       })
   , ("systems-for-public-good", deriveBlogSeriesConfig DiscoveredSeries
       { dsId = "systems-for-public-good", dsName = "Systems for Public Good", dsIcon = "🏛️"
       , dsPriorityUser = Just "bagrounds", dsScheduleTime = TimeOfDay 9 0 0
       , dsModels = Gemini.Gemini25Flash :| [Gemini.Gemini25FlashLite, Gemini.Gemini31FlashLite]
-      , dsContextQueries = [], dsEnableGrounding = False
+      , dsContextQueries = [], dsSearchGrounding = False
       })
   ]
 

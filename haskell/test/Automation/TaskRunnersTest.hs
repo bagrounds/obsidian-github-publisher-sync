@@ -40,7 +40,7 @@ mkTestSeries seriesId = DiscoveredSeries
   , dsScheduleTime = TimeOfDay 6 0 0
   , dsModels = Gemini.Gemini25Flash :| []
   , dsContextQueries = []
-  , dsEnableGrounding = False
+  , dsSearchGrounding = False
   }
 
 tests :: TestTree

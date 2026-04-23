@@ -13,6 +13,7 @@ import qualified Test.QuickCheck as QC
 
 import Automation.Json (Value (Object, Array, String, Number), encode)
 import qualified Automation.Gemini as Gemini
+import Automation.Url (mkUrl)
 
 tests :: TestTree
 tests = testGroup "Gemini"
@@ -445,49 +446,52 @@ supportsSystemInstructionTests = testGroup "supportsSystemInstruction"
 buildRequestBodyTests :: TestTree
 buildRequestBodyTests = testGroup "buildRequestBody"
   [ testCase "without system instruction omits system_instruction field" $
-      let body = Gemini.buildRequestBody Nothing "hello" Gemini.defaultGenerationConfig False
+      let body = Gemini.buildRequestBody Nothing "hello" Gemini.defaultGenerationConfig
           encoded = TE.decodeUtf8 (LBS.toStrict (encode body))
       in assertBool "should not contain system_instruction"
            (not (T.isInfixOf "system_instruction" encoded))
 
   , testCase "with system instruction includes system_instruction field" $
-      let body = Gemini.buildRequestBody (Just "You are helpful") "hello" Gemini.defaultGenerationConfig False
+      let body = Gemini.buildRequestBody (Just "You are helpful") "hello" Gemini.defaultGenerationConfig
           encoded = TE.decodeUtf8 (LBS.toStrict (encode body))
       in assertBool "should contain system_instruction"
            (T.isInfixOf "system_instruction" encoded)
 
   , testCase "prompt text appears in contents" $
-      let body = Gemini.buildRequestBody Nothing "test prompt" Gemini.defaultGenerationConfig False
+      let body = Gemini.buildRequestBody Nothing "test prompt" Gemini.defaultGenerationConfig
           encoded = TE.decodeUtf8 (LBS.toStrict (encode body))
       in assertBool "should contain prompt text"
            (T.isInfixOf "test prompt" encoded)
 
   , testCase "system instruction text appears in encoded body" $
-      let body = Gemini.buildRequestBody (Just "system text here") "user text" Gemini.defaultGenerationConfig False
+      let body = Gemini.buildRequestBody (Just "system text here") "user text" Gemini.defaultGenerationConfig
           encoded = TE.decodeUtf8 (LBS.toStrict (encode body))
       in assertBool "should contain system instruction text"
            (T.isInfixOf "system text here" encoded)
 
   , testCase "without grounding does not include google_search tool" $
-      let body = Gemini.buildRequestBody Nothing "hello" Gemini.defaultGenerationConfig False
+      let body = Gemini.buildRequestBody Nothing "hello" Gemini.defaultGenerationConfig
           encoded = TE.decodeUtf8 (LBS.toStrict (encode body))
       in assertBool "should not contain google_search"
            (not (T.isInfixOf "google_search" encoded))
 
   , testCase "with grounding includes google_search tool" $
-      let body = Gemini.buildRequestBody Nothing "hello" Gemini.defaultGenerationConfig True
+      let config = Gemini.defaultGenerationConfig { Gemini.searchGrounding = True }
+          body = Gemini.buildRequestBody Nothing "hello" config
           encoded = TE.decodeUtf8 (LBS.toStrict (encode body))
       in assertBool "should contain google_search"
            (T.isInfixOf "google_search" encoded)
 
   , testCase "with grounding includes tools field" $
-      let body = Gemini.buildRequestBody Nothing "hello" Gemini.defaultGenerationConfig True
+      let config = Gemini.defaultGenerationConfig { Gemini.searchGrounding = True }
+          body = Gemini.buildRequestBody Nothing "hello" config
           encoded = TE.decodeUtf8 (LBS.toStrict (encode body))
       in assertBool "should contain tools"
            (T.isInfixOf "tools" encoded)
 
   , testCase "with grounding and system instruction includes both" $
-      let body = Gemini.buildRequestBody (Just "be helpful") "hello" Gemini.defaultGenerationConfig True
+      let config = Gemini.defaultGenerationConfig { Gemini.searchGrounding = True }
+          body = Gemini.buildRequestBody (Just "be helpful") "hello" config
           encoded = TE.decodeUtf8 (LBS.toStrict (encode body))
       in do
         assertBool "should contain google_search" (T.isInfixOf "google_search" encoded)
@@ -528,8 +532,9 @@ extractGroundingSourcesTests = testGroup "extractGroundingSources"
                 ]
               )
             ]
+          expectedUrl = either (error . T.unpack) id (mkUrl "https://example.com")
       in Gemini.extractGroundingSources val @?=
-           [Gemini.GroundingSource { Gemini.groundingSourceUri = "https://example.com", Gemini.groundingSourceTitle = "Example" }]
+           [Gemini.GroundingSource { Gemini.groundingSourceUrl = expectedUrl, Gemini.groundingSourceTitle = "Example" }]
 
   , testCase "skips chunks with empty URI" $
       let val = Object
@@ -577,8 +582,9 @@ extractGroundingSourcesTests = testGroup "extractGroundingSources"
                 ]
               )
             ]
+          expectedUrl = either (error . T.unpack) id (mkUrl "https://example.com")
       in Gemini.extractGroundingSources val @?=
-           [Gemini.GroundingSource { Gemini.groundingSourceUri = "https://example.com", Gemini.groundingSourceTitle = "https://example.com" }]
+           [Gemini.GroundingSource { Gemini.groundingSourceUrl = expectedUrl, Gemini.groundingSourceTitle = "https://example.com" }]
 
   , testCase "extracts multiple sources preserving order" $
       let val = Object
@@ -596,53 +602,63 @@ extractGroundingSourcesTests = testGroup "extractGroundingSources"
                 ]
               )
             ]
+          urlA = either (error . T.unpack) id (mkUrl "https://a.com")
+          urlB = either (error . T.unpack) id (mkUrl "https://b.com")
           expected =
-            [ Gemini.GroundingSource "https://a.com" "A"
-            , Gemini.GroundingSource "https://b.com" "B"
+            [ Gemini.GroundingSource urlA "A"
+            , Gemini.GroundingSource urlB "B"
             ]
       in Gemini.extractGroundingSources val @?= expected
   ]
 
 formatGroundingSourcesTests :: TestTree
 formatGroundingSourcesTests = testGroup "formatGroundingSources"
-  [ testCase "empty list returns empty text" $
-      Gemini.formatGroundingSources [] @?= ""
+  [ testCase "empty list returns Nothing" $
+      Gemini.formatGroundingSources [] @?= Nothing
 
   , testCase "single source produces sources section" $
-      let sources = [Gemini.GroundingSource "https://example.com" "Example Article"]
+      let sources = [testUrl "https://example.com" "Example Article"]
           result = Gemini.formatGroundingSources sources
-      in do
-        assertBool "should contain Sources heading" (T.isInfixOf "## 🔍 Sources" result)
-        assertBool "should contain link" (T.isInfixOf "[Example Article](https://example.com)" result)
-        assertBool "should contain globe emoji" (T.isInfixOf "🌐" result)
+      in case result of
+           Nothing -> assertBool "expected Just, got Nothing" False
+           Just text -> do
+             assertBool "should contain Sources heading" (T.isInfixOf "## 🔍 Sources" text)
+             assertBool "should contain link" (T.isInfixOf "[Example Article](https://example.com)" text)
+             assertBool "should contain globe emoji" (T.isInfixOf "🌐" text)
 
   , testCase "multiple sources appear as list items" $
       let sources =
-            [ Gemini.GroundingSource "https://a.com" "Article A"
-            , Gemini.GroundingSource "https://b.com" "Article B"
+            [ testUrl "https://a.com" "Article A"
+            , testUrl "https://b.com" "Article B"
             ]
           result = Gemini.formatGroundingSources sources
-      in do
-        assertBool "should contain Article A" (T.isInfixOf "Article A" result)
-        assertBool "should contain Article B" (T.isInfixOf "Article B" result)
+      in case result of
+           Nothing -> assertBool "expected Just, got Nothing" False
+           Just text -> do
+             assertBool "should contain Article A" (T.isInfixOf "Article A" text)
+             assertBool "should contain Article B" (T.isInfixOf "Article B" text)
 
-  , testCase "deduplicates sources with same URI" $
+  , testCase "deduplicates sources with same URL" $
       let sources =
-            [ Gemini.GroundingSource "https://same.com" "First Title"
-            , Gemini.GroundingSource "https://other.com" "Other"
-            , Gemini.GroundingSource "https://same.com" "Duplicate"
+            [ testUrl "https://same.com" "First Title"
+            , testUrl "https://other.com" "Other"
+            , testUrl "https://same.com" "Duplicate"
             ]
           result = Gemini.formatGroundingSources sources
-      in do
-        assertBool "should contain First Title" (T.isInfixOf "First Title" result)
-        assertBool "should contain Other" (T.isInfixOf "Other" result)
-        assertBool "should not contain Duplicate" (not (T.isInfixOf "Duplicate" result))
+      in case result of
+           Nothing -> assertBool "expected Just, got Nothing" False
+           Just text -> do
+             assertBool "should contain First Title" (T.isInfixOf "First Title" text)
+             assertBool "should contain Other" (T.isInfixOf "Other" text)
+             assertBool "should not contain Duplicate" (not (T.isInfixOf "Duplicate" text))
 
   , testCase "list items start with dash and emoji" $
-      let sources = [Gemini.GroundingSource "https://example.com" "Example"]
+      let sources = [testUrl "https://example.com" "Example"]
           result = Gemini.formatGroundingSources sources
-      in assertBool "list item should start with - 🌐"
-           (T.isInfixOf "- 🌐 [" result)
+      in case result of
+           Nothing -> assertBool "expected Just, got Nothing" False
+           Just text -> assertBool "list item should start with - 🌐"
+                          (T.isInfixOf "- 🌐 [" text)
   ]
 
 propertyTests :: TestTree
@@ -724,3 +740,8 @@ genModel = QC.oneof
 
 genKnownModel :: QC.Gen Gemini.Model
 genKnownModel = QC.elements Gemini.knownModels
+
+testUrl :: T.Text -> T.Text -> Gemini.GroundingSource
+testUrl uriText titleText =
+  let url = either (error . ("Invalid test URL: " <>) . T.unpack) id (mkUrl uriText)
+  in Gemini.GroundingSource url titleText

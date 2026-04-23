@@ -85,7 +85,8 @@ parseSeriesConfigTests = testGroup "parseSeriesConfig"
             , "  \"icon\": \"\129302\","
             , "  \"priorityUser\": \"bagrounds\","
             , "  \"scheduleHourPacific\": 8,"
-            , "  \"models\": [\"gemini-3.1-flash-lite-preview\", \"gemini-3-flash-preview\"]"
+            , "  \"models\": [\"gemini-3.1-flash-lite-preview\", \"gemini-3-flash-preview\"],"
+            , "  \"enableGrounding\": false"
             , "}"
             ]
           discovered = unsafeParse "auto-blog-zero" config
@@ -142,14 +143,14 @@ derivationTests = testGroup "derivation functions"
       let config = deriveBlogSeriesRunConfig sampleDiscovered
       bsrcPriorityUserEnvVar config @?= "GARDEN_THOUGHTS_PRIORITY_USER"
 
-  , testCase "deriveBlogSeriesRunConfig sets enableGrounding false for sampleDiscovered" $ do
+  , testCase "deriveBlogSeriesRunConfig sets searchGrounding false for sampleDiscovered" $ do
       let config = deriveBlogSeriesRunConfig sampleDiscovered
-      bsrcEnableGrounding config @?= False
+      searchGrounding config @?= False
 
-  , testCase "deriveBlogSeriesRunConfig passes enableGrounding true when set" $ do
-      let discovered = sampleDiscovered { dsEnableGrounding = True }
+  , testCase "deriveBlogSeriesRunConfig passes searchGrounding true when set" $ do
+      let discovered = sampleDiscovered { dsSearchGrounding = True }
           config = deriveBlogSeriesRunConfig discovered
-      bsrcEnableGrounding config @?= True
+      searchGrounding config @?= True
 
   , testCase "deriveScheduleEntry sets correct task ID" $ do
       let entry = deriveScheduleEntry sampleDiscovered
@@ -176,10 +177,10 @@ validationTests = testGroup "validation"
 
   , testCase "accepts config without priorityUser" $
       assertBool "should accept missing priorityUser" $
-        isRight (parseSeriesConfig "test" configNoPriorityUser)
+        isRight (parseSeriesConfig "test" configWithoutPriorityUser)
 
   , testCase "missing priorityUser defaults to Nothing" $
-      dsPriorityUser (unsafeParse "test" configNoPriorityUser) @?= Nothing
+      dsPriorityUser (unsafeParse "test" configWithoutPriorityUser) @?= Nothing
 
   , testCase "parses config with contextSources" $
       let queries = dsContextQueries (unsafeParse "test" configWithCrossSeries)
@@ -192,7 +193,7 @@ validationTests = testGroup "validation"
         _ -> assertBool ("expected 2 queries, got " <> show (length queries)) False
 
   , testCase "missing contextSources defaults to defaultContextQueries" $
-      dsContextQueries (unsafeParse "test" configNoPriorityUser) @?= defaultContextQueries "test"
+      dsContextQueries (unsafeParse "test" configWithoutPriorityUser) @?= defaultContextQueries "test"
 
   , testCase "absent contextSources uses defaultContextQueries" $
       dsContextQueries (unsafeParse "test" configWithCrossSeriesFalse) @?= defaultContextQueries "test"
@@ -205,14 +206,15 @@ validationTests = testGroup "validation"
       let config = deriveBlogSeriesConfig sampleDiscovered
       bscContextQueries config @?= []
 
-  , testCase "missing enableGrounding defaults to False" $
-      dsEnableGrounding (unsafeParse "test" configNoPriorityUser) @?= False
+  , testCase "missing enableGrounding fails to parse" $
+      assertBool "should fail without enableGrounding" $
+        isLeft (parseSeriesConfig "test" configNoPriorityUser)
 
   , testCase "enableGrounding true is parsed correctly" $
-      dsEnableGrounding (unsafeParse "grounded-series" configWithGrounding) @?= True
+      dsSearchGrounding (unsafeParse "grounded-series" configWithGrounding) @?= True
 
   , testCase "enableGrounding false is parsed correctly" $
-      dsEnableGrounding (unsafeParse "ungrounded-series" configWithGroundingFalse) @?= False
+      dsSearchGrounding (unsafeParse "ungrounded-series" configWithGroundingFalse) @?= False
   ]
 
 properties :: TestTree
@@ -252,9 +254,9 @@ properties = testGroup "properties"
       QC.forAll genDiscoveredSeries $ \discovered ->
         bscName (deriveBlogSeriesConfig discovered) == dsName discovered
 
-  , testProperty "deriveBlogSeriesRunConfig preserves enableGrounding" $
+  , testProperty "deriveBlogSeriesRunConfig preserves searchGrounding" $
       QC.forAll genDiscoveredSeries $ \discovered ->
-        bsrcEnableGrounding (deriveBlogSeriesRunConfig discovered) == dsEnableGrounding discovered
+        searchGrounding (deriveBlogSeriesRunConfig discovered) == dsSearchGrounding discovered
   ]
 
 isRight :: Either a b -> Bool
@@ -272,7 +274,8 @@ minimalConfig = T.unlines
   , "  \"icon\": \"\129793\","
   , "  \"priorityUser\": \"bagrounds\","
   , "  \"scheduleHourPacific\": 11,"
-  , "  \"models\": [\"gemini-2.5-flash\", \"gemini-2.5-flash-lite\"]"
+  , "  \"models\": [\"gemini-2.5-flash\", \"gemini-2.5-flash-lite\"],"
+  , "  \"enableGrounding\": false"
   , "}"
   ]
 
@@ -282,7 +285,8 @@ configWithoutPriorityUser = T.unlines
   , "  \"name\": \"Solo Bot\","
   , "  \"icon\": \"\129302\","
   , "  \"scheduleHourPacific\": 6,"
-  , "  \"models\": [\"gemini-2.5-flash\"]"
+  , "  \"models\": [\"gemini-2.5-flash\"],"
+  , "  \"enableGrounding\": false"
   , "}"
   ]
 
@@ -293,7 +297,8 @@ configWithNullPriorityUser = T.unlines
   , "  \"icon\": \"\129302\","
   , "  \"priorityUser\": null,"
   , "  \"scheduleHourPacific\": 6,"
-  , "  \"models\": [\"gemini-2.5-flash\"]"
+  , "  \"models\": [\"gemini-2.5-flash\"],"
+  , "  \"enableGrounding\": false"
   , "}"
   ]
 
@@ -302,7 +307,8 @@ configMissingName = T.unlines
   [ "{"
   , "  \"icon\": \"\129793\","
   , "  \"scheduleHourPacific\": 11,"
-  , "  \"models\": [\"gemini-2.5-flash\"]"
+  , "  \"models\": [\"gemini-2.5-flash\"],"
+  , "  \"enableGrounding\": false"
   , "}"
   ]
 
@@ -312,7 +318,8 @@ configEmptyModels = T.unlines
   , "  \"name\": \"Empty Models\","
   , "  \"icon\": \"\10060\","
   , "  \"scheduleHourPacific\": 11,"
-  , "  \"models\": []"
+  , "  \"models\": [],"
+  , "  \"enableGrounding\": false"
   , "}"
   ]
 
@@ -333,7 +340,8 @@ configWithCrossSeries = T.unlines
   , "  \"icon\": \"\128279\","
   , "  \"scheduleHourPacific\": 10,"
   , "  \"models\": [\"gemini-2.5-flash\"],"
-  , "  \"contextSources\": [{\"from\": [\"test\"], \"limit\": 7}, {\"from\": [\"other-a\", \"other-b\"], \"limitPerSource\": 1}]"
+  , "  \"contextSources\": [{\"from\": [\"test\"], \"limit\": 7}, {\"from\": [\"other-a\", \"other-b\"], \"limitPerSource\": 1}],"
+  , "  \"enableGrounding\": false"
   , "}"
   ]
 
@@ -343,7 +351,8 @@ configWithCrossSeriesFalse = T.unlines
   , "  \"name\": \"No Cross Series\","
   , "  \"icon\": \"\128736\","
   , "  \"scheduleHourPacific\": 11,"
-  , "  \"models\": [\"gemini-2.5-flash\"]"
+  , "  \"models\": [\"gemini-2.5-flash\"],"
+  , "  \"enableGrounding\": false"
   , "}"
   ]
 
@@ -356,7 +365,7 @@ sampleDiscovered = DiscoveredSeries
   , dsScheduleTime = TimeOfDay 11 0 0
   , dsModels = Gemini.Gemini25Flash :| [Gemini.Gemini25FlashLite]
   , dsContextQueries = []
-  , dsEnableGrounding = False
+  , dsSearchGrounding = False
   }
 
 configWithGrounding :: T.Text
@@ -405,5 +414,5 @@ genDiscoveredSeries = do
     , dsScheduleTime = TimeOfDay hour 0 0
     , dsModels = Gemini.Gemini25Flash :| []
     , dsContextQueries = contextQueries
-    , dsEnableGrounding = enableGrounding
+    , dsSearchGrounding = enableGrounding
     }

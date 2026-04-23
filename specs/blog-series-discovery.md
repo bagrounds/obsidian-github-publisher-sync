@@ -47,6 +47,7 @@
 | `icon` | string | Emoji icon for the series |
 | `scheduleHourPacific` | number | Hour in Pacific time to generate posts (0-23) |
 | `models` | array of strings | Gemini model chain (primary model first, fallbacks after) |
+| `enableGrounding` | boolean | Whether to enable Google Search grounding for post generation |
 
 ### 📝 Optional Fields
 
@@ -77,21 +78,14 @@
 
 ### 📄 Example Configuration
 
-```json
-{
-  "name": "Garden Thoughts",
-  "icon": "🌱",
-  "priorityUser": "bagrounds",
-  "scheduleHourPacific": 11,
-  "models": ["gemini-2.5-flash", "gemini-2.5-flash-lite"]
-}
-```
+The following prose describes the example JSON that every series config must follow.
+The object has these fields: name is a display string, icon is an emoji string, priorityUser is either a username string or omitted, scheduleHourPacific is an integer hour in Pacific time, models is an array of model name strings with the primary model first, and enableGrounding is a required boolean.
+For example, a series called Garden Thoughts with the seedling emoji, priorityUser of bagrounds, scheduled at hour 11, using gemini 2.5 flash and gemini 2.5 flash lite as the model chain, with enableGrounding set to false.
 
 ### 🔮 Extensibility Design
 
-📐 The schema is designed for forward-compatible evolution through optional fields with sensible defaults.
-🆕 To add a new customization option (e.g., recap frequency, minimum post length, or image generation style), add an optional field to the JSON schema and use `(.:?)` in the `FromValue` instance with a default value.
-🔇 Existing config files continue to work unchanged when new optional fields are added because missing keys resolve to `Nothing` via `(.:?)`.
+📐 New required fields should be added to all existing config files at the same time as the Haskell change.
+🆕 To add a new optional customization (e.g., recap frequency, minimum post length, or image generation style), add an optional field to the JSON schema and use the optional operator in the FromValue instance with a sensible default value.
 📋 Planned future fields are documented in the Future Considerations section.
 
 ## 🔧 Convention-Based Derivation

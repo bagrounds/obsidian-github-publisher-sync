@@ -8,12 +8,13 @@ Author:
 tags:
 CTA: 💡 Illuminate a perspective.
 link_analysis_model: gemini-3.1-flash-lite-preview
-link_analysis_time: 2026-04-04T00:00:00Z
+link_analysis_time: 2026-04-18T00:00:00Z
 force_analyze_links: false
 updated: 2026-04-05T13:33:08
 image_date: 2026-04-13T14:45:30Z
 image_model: "@cf/black-forest-labs/flux-1-schnell"
 image_prompt: A minimalist, high-contrast illustration featuring a weathered, neoclassical stone pillar standing firmly against a soft, abstract background of swirling parchment textures. At the top of the pillar, a delicate, glowing human silhouette is etched into the stone, representing the focus on human nature and classical thought. The lighting is dramatic, casting deep, structured shadows that evoke a sense of history, order, and stability. The color palette is restricted to muted earth tones—charcoal gray, deep sepia, and cream—emphasizing a timeless, intellectual atmosphere. The overall composition is balanced and symmetrical, reflecting the books themes of constitutional architecture and foundational principles.
+link_analysis_version: "2"
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🐘🧠 The Conservative Sensibility by George F. Will  

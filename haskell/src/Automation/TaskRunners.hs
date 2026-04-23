@@ -294,14 +294,14 @@ runBackfillImages context contentDirs = do
             , backfillMaxImages = 2
             }
       result <- backfillImages manager backfillConfig
-      logMsg $ "  🖼️  Images: " <> T.pack (show (brImagesGenerated result))
+      logMsg $ "  🖼️  Images: " <> T.pack (show (imagesGenerated result))
             <> "/" <> T.pack (show (backfillMaxImages backfillConfig))
-            <> " generated, " <> T.pack (show (brFilesUpdated result))
-            <> " files updated, " <> T.pack (show (brFilesSkipped result)) <> " skipped"
-      case brErrors result of
+            <> " generated, " <> T.pack (show (filesUpdated result))
+            <> " files updated, " <> T.pack (show (filesSkipped result)) <> " skipped"
+      case errors result of
         [] -> pure ()
         errs -> logMsg $ "  ⚠️  Errors: " <> T.intercalate "; " errs
-      pure (brModifiedFiles result)
+      pure (modifiedFiles result)
 
   let aiBlogDir = vaultDir </> "ai-blog"
   navResults <- ensureAllNavLinks aiBlogDir
@@ -503,7 +503,7 @@ runDailyAnalytics context = do
           logMsg $ "  ❌ Failed to parse service account key: " <> err
           logMsg "✅ daily-analytics (error)"
         Right serviceAccount -> do
-          logMsg $ "  🔑 Service account: " <> GcpAuth.sakClientEmail serviceAccount
+          logMsg $ "  🔑 Service account: " <> GcpAuth.clientEmail serviceAccount
           tokenResult <- GcpAuth.getAccessTokenWithScope GA.analyticsReadonlyScope manager serviceAccount
           case tokenResult of
             Left err -> do

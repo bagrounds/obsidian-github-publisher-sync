@@ -49,9 +49,9 @@ import Network.HTTP.Client
 import Network.HTTP.Types.Status (statusCode)
 
 data ServiceAccountKey = ServiceAccountKey
-  { sakProjectId   :: Text
-  , sakClientEmail :: Text
-  , sakPrivateKey  :: Text
+  { projectId   :: Text
+  , clientEmail :: Text
+  , privateKey  :: Text
   } deriving (Show, Eq)
 
 instance FromValue ServiceAccountKey where
@@ -62,17 +62,17 @@ instance FromValue ServiceAccountKey where
       <*> v .: "private_key"
 
 data JwtClaims = JwtClaims
-  { jcIss   :: Text
-  , jcScope :: Text
-  , jcAud   :: Text
-  , jcIat   :: Int
-  , jcExp   :: Int
+  { issuer    :: Text
+  , scope     :: Text
+  , audience  :: Text
+  , issuedAt  :: Int
+  , expiresAt :: Int
   } deriving (Show, Eq)
 
 data TokenResponse = TokenResponse
-  { trAccessToken :: Text
-  , trTokenType   :: Text
-  , trExpiresIn   :: Int
+  { accessToken :: Text
+  , tokenType   :: Text
+  , expiresIn   :: Int
   } deriving (Show, Eq)
 
 instance FromValue TokenResponse where
@@ -108,9 +108,9 @@ parseServiceAccountKey raw =
   in case decoded of
     Left err -> Left err
     Right key
-      | T.null (sakProjectId key)   -> Left "Service account key must contain project_id"
-      | T.null (sakClientEmail key) -> Left "Service account key must contain client_email"
-      | T.null (sakPrivateKey key)  -> Left "Service account key must contain private_key"
+      | T.null (projectId key)   -> Left "Service account key must contain project_id"
+      | T.null (clientEmail key) -> Left "Service account key must contain client_email"
+      | T.null (privateKey key)  -> Left "Service account key must contain private_key"
       | otherwise                   -> Right key
 
 parseRSAPrivateKey :: Text -> Either Text PrivateKey
@@ -232,11 +232,11 @@ showHexByte byte =
 encodeJwtPayload :: JwtClaims -> ByteString
 encodeJwtPayload claims =
   let payload = object
-        [ "iss"   .= jcIss claims
-        , "scope" .= jcScope claims
-        , "aud"   .= jcAud claims
-        , "iat"   .= jcIat claims
-        , "exp"   .= jcExp claims
+        [ "iss"   .= issuer claims
+        , "scope" .= scope claims
+        , "aud"   .= audience claims
+        , "iat"   .= issuedAt claims
+        , "exp"   .= expiresAt claims
         ]
   in LBS.toStrict $ encode payload
 
@@ -254,33 +254,33 @@ getAccessToken :: Manager -> ServiceAccountKey -> IO (Either Text Text)
 getAccessToken = getAccessTokenWithScope cloudPlatformScope
 
 getAccessTokenWithScope :: Text -> Manager -> ServiceAccountKey -> IO (Either Text Text)
-getAccessTokenWithScope scope manager sak = do
+getAccessTokenWithScope scopeParam manager sak = do
   now <- round <$> getPOSIXTime :: IO Int
-  case parseRSAPrivateKey (sakPrivateKey sak) of
+  case parseRSAPrivateKey (privateKey sak) of
     Left err -> pure $ Left err
     Right privKey -> do
       let claims = JwtClaims
-            { jcIss   = sakClientEmail sak
-            , jcScope = scope
-            , jcAud   = T.pack tokenEndpoint
-            , jcIat   = now
-            , jcExp   = now + jwtExpirationSeconds
+            { issuer    = clientEmail sak
+            , scope     = scopeParam
+            , audience  = T.pack tokenEndpoint
+            , issuedAt  = now
+            , expiresAt = now + jwtExpirationSeconds
             }
       case createJwt claims privKey of
         Left err -> pure $ Left err
         Right jwt -> do
-          initReq <- parseRequest tokenEndpoint
+          parsedRequest <- parseRequest tokenEndpoint
           let httpReq = urlEncodedBody
                 [ ("grant_type", "urn:ietf:params:oauth:grant-type:jwt-bearer")
                 , ("assertion", jwt)
-                ] initReq
+                ] parsedRequest
           response <- httpLbs httpReq manager
           let status = statusCode $ responseStatus response
           case status of
             200 ->
               case Json.eitherDecode (responseBody response) of
                 Left err -> pure $ Left $ "Token response parse error: " <> T.pack err
-                Right tokenResp -> pure $ Right $ trAccessToken tokenResp
+                Right tokenResp -> pure $ Right $ accessToken tokenResp
             code -> pure $ Left $
               "Token endpoint returned status " <> T.pack (show code)
                 <> ": " <> TE.decodeUtf8 (LBS.toStrict $ responseBody response)

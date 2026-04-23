@@ -9,6 +9,10 @@ Platform:
 Channel: Stay Tuned with Preet Bharara
 tags:
 youtube: https://youtu.be/fnk-wg5LoMw
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_version: "2"
+link_analysis_time: 2026-04-22T00:00:00Z
+force_analyze_links: false
 ---
 [Home](../index.md) > [Videos](./index.md)  
 # 🏛️➡️👑🗓️ Why Viktor Orbán Matters to Trump and Project 2025 | Anne Applebaum & Preet Bharara  
@@ -27,8 +31,8 @@ youtube: https://youtu.be/fnk-wg5LoMw
 * 👥 The current administration’s failure to engage or plan with the Iranian democratic opposition is both a criminal omission and a strategic blunder. \[[21:05](http://www.youtube.com/watch?v=fnk-wg5LoMw&t=1265)]  
   
 ## 🤔 Evaluation  
-* 🌍 While the speaker emphasizes the contagion of democracy following Orban's defeat, the book Twilight of Democracy by Anne Applebaum (Doubleday) notes that the lure of authoritarianism remains strong among elites who feel meritocracy has failed them.  
-* 📈 Contrastingly, The Age of AI by Henry Kissinger, Eric Schmidt, and Daniel Huttenlocher (Little, Brown and Company) suggests that global instability is driven less by individual leaders and more by the fundamental shift in how technology and AI reorder human perception and power structures.  
+* 🌍 While the speaker emphasizes the contagion of democracy following Orban's defeat, the book [🥀 Twilight of Democracy: 🐍 The Seductive Lure of Authoritarianism](../books/twilight-of-democracy.md) by Anne Applebaum (Doubleday) notes that the lure of authoritarianism remains strong among elites who feel meritocracy has failed them.  
+* 📈 Contrastingly, [🔮🤖 The Age of AI](../books/the-age-of-ai.md) by Henry Kissinger, Eric Schmidt, and Daniel Huttenlocher (Little, Brown and Company) suggests that global instability is driven less by individual leaders and more by the fundamental shift in how technology and AI reorder human perception and power structures.  
 * 🔍 Topics to explore for better understanding include the specific mechanisms of Project 2025 and how the Hungarian judicial capture model is being adapted for the United States legal system.  
   
 ## ❓ Frequently Asked Questions (FAQ)  
@@ -48,11 +52,11 @@ youtube: https://youtu.be/fnk-wg5LoMw
   
 ### ↔️ Similar  
 * 📘 Autocracy, Inc: The Dictators Who Want to Run the World by Anne Applebaum explores how modern autocrats collaborate to maintain power and undermine democratic movements.  
-* 📘 Strongmen: Mussolini to the Present by Ruth Ben-Ghiat examines the tools used by authoritarian leaders to claim power and the patterns of their eventual downfalls.  
+* 📘 [🇮🇹🇩🇪🇱🇾🇷🇺🇺🇸 Strongmen: Mussolini to the Present](../books/strongmen.md) by Ruth Ben-Ghiat examines the tools used by authoritarian leaders to claim power and the patterns of their eventual downfalls.  
   
 ### 🆚 Contrasting  
 * 📙 The People vs. Tech: How the Internet Is Killing Democracy (and How We Save It) by Jamie Bartlett argues that digital infrastructure, rather than individual political models, is the primary driver of democratic decay.  
-* 📙 The Conservative Sensibility by George F. Will defends the American founding principles against both progressivism and the populist illiberalism described in the video.  
+* 📙 [🐘🧠 The Conservative Sensibility by George F. Will](../books/the-conservative-sensibility.md) defends the American founding principles against both progressivism and the populist illiberalism described in the video.  
   
 ### 🎨 Creatively Related  
 * 📗 The Death of Truth by Michiko Kakutani analyzes how the decline of objective facts in the era of Trump and Orban mirrors the literary warnings of the twentieth century.  

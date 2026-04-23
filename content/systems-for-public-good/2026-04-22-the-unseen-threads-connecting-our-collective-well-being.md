@@ -13,7 +13,7 @@ link_analysis_version: "2"
 link_analysis_time: 2026-04-22T00:00:00Z
 force_analyze_links: false
 ---
-[Home](../index.md) > [🏛️ Systems for Public Good](./index.md) | [⏮️](./2026-04-21-the-interconnected-web-of-well-being.md)  
+[Home](../index.md) > [🏛️ Systems for Public Good](./index.md) | [⏮️](./2026-04-21-the-interconnected-web-of-well-being.md) [⏭️](./2026-04-23-the-enduring-sanctuary-of-knowledge-public-libraries-as-public-goods.md)  
 # 2026-04-22 | 🏛️ The Unseen Threads: Connecting Our Collective Well-being 🏛️  
 ![systems-for-public-good-2026-04-22-the-unseen-threads-connecting-our-collective-well-being](../systems-for-public-good-2026-04-22-the-unseen-threads-connecting-our-collective-well-being.jpg)  
   

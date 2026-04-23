@@ -9,9 +9,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-16T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-04-23T06:03:39Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A stylized, high-contrast illustration featuring a giant, weathered medical caduceus staff made of metallic pipes and gears, standing upright in the center. The base of the staff is tangled in a thick, thorny web of red ticker-tape and gold coins that spill out from underneath. In the background, a sterile, minimalist hospital corridor fades into a dark, shadowy boardroom, blending clinical white surfaces with deep corporate blues and charcoal greys. A single, small, glowing lightbulb sits on a clean, stark white table in the foreground, symbolizing patient-centric clarity and individual empowerment against the chaotic, complex machinery of the healthcare industry. The overall aesthetic is modern, metaphorical, and analytical.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 💰⚕️⬆️ An American Sickness: How Healthcare Became Big Business and How You Can Take It Back  
+![books-an-american-sickness-how-healthcare-became-big-business-and-how-you-can-take-it-back](../books-an-american-sickness-how-healthcare-became-big-business-and-how-you-can-take-it-back.jpg)  
 [🛒 An American Sickness: How Healthcare Became Big Business and How You Can Take It Back. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3WXwRZi)  
   
 😡💰💊 Profit motives transformed US healthcare into a dysfunctional big business. Discover actionable strategies for patients and systemic reform to reclaim patient-centric care.  

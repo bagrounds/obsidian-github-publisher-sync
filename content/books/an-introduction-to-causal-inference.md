@@ -10,9 +10,13 @@ affiliate link: https://amzn.to/45BaONo
 link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-09T00:00:00Z
 force_analyze_links: false
+image_date: 2026-04-23T17:44:18Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A minimalist, high-contrast illustration featuring a stylized, three-tiered ladder climbing toward a bright, glowing light. Each rung of the ladder is connected to a complex, geometric web of lines and nodes, representing a Directed Acyclic Graph (DAG). The background is a deep, muted navy blue, symbolizing the complexity of observational data. The nodes are crisp white circles, and the directional arrows are thin, elegant lines. Below the ladder, a single, slightly larger node splits into a branching path of multiple possibilities, illustrating the concept of counterfactuals. The overall aesthetic is clean, academic, and modern, using a limited color palette of white, gold, and charcoal to evoke a sense of logical clarity and intellectual discovery.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # ❓➡️ An Introduction to Causal Inference  
+![books-an-introduction-to-causal-inference](../books-an-introduction-to-causal-inference.jpg)  
 [🛒 An Introduction to Causal Inference. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/45BaONo)  
   
 ## 🤖 AI Summary  

@@ -6,11 +6,16 @@ URL: https://bagrounds.org/books/american-kleptocracy-how-the-u-s-created-the-wo
 share: true
 affiliate link: https://amzn.to/3SvVOsw
 link_analysis_model: gemini-3.1-flash-lite-preview
-link_analysis_time: 2026-04-08T00:00:00Z
+link_analysis_time: 2026-04-18T00:00:00Z
 force_analyze_links: false
+link_analysis_version: "2"
+image_date: 2026-04-23T03:12:44Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A crisp, high-contrast digital illustration featuring a stylized, translucent U.S. map floating against a dark, moody background. Inside the borders of states like Delaware and Nevada, glowing geometric structures resembling sleek, glass bank vaults and skyscrapers are being filled with swirling, golden liquid that flows in from international borders. A subtle, intricate web of thin, glowing lines connects these domestic hubs to shadowy, abstract global silhouettes. In the foreground, a crisp, white dress shirt sleeve with a gold cufflink is visible, with a hand casually dropping a heavy, metallic coin into a shredder that is disguised as a classic American mailbox. The overall aesthetic is sleek, corporate, and ominous, utilizing a palette of deep navy, charcoal, metallic gold, and piercing white light.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🇺🇸💸🧺🌍 American Kleptocracy: How the U.S. Created the World's Greatest Money Laundering Scheme in History  
+![books-american-kleptocracy-how-the-us-created-the-worlds-greatest-money-laundering-scheme-in-history](../books-american-kleptocracy-how-the-us-created-the-worlds-greatest-money-laundering-scheme-in-history.jpg)  
 [🛒 American Kleptocracy: How the U.S. Created the World's Greatest Money Laundering Scheme in History. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3SvVOsw)  
   
 ## 📚 Book Report: American Kleptocracy: How the U.S. Created the World's Greatest Money Laundering Scheme in History  

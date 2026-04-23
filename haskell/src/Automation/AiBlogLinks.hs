@@ -87,8 +87,8 @@ extractPostDate filename =
      else Nothing
 
 data NavLinkResult = NavLinkResult
-  { nlrFilename :: Text
-  , nlrModified :: Bool
+  { filename :: Text
+  , modified :: Bool
   } deriving (Show, Eq)
 
 readAiBlogPostFiles :: FilePath -> IO [Text]
@@ -119,14 +119,14 @@ processFile aiBlogDir files fileCount (idx, filename) = do
       filePath = aiBlogDir </> T.unpack filename
   content <- TIO.readFile filePath
   if navLinksMatch content prevFilename nextFilename
-    then pure NavLinkResult { nlrFilename = filename, nlrModified = False }
+    then pure NavLinkResult { filename = filename, modified = False }
     else
       let updated = updateNavLinks content prevFilename nextFilename
       in if updated == content
-         then pure NavLinkResult { nlrFilename = filename, nlrModified = False }
+         then pure NavLinkResult { filename = filename, modified = False }
          else do
            TIO.writeFile filePath updated
-           pure NavLinkResult { nlrFilename = filename, nlrModified = True }
+           pure NavLinkResult { filename = filename, modified = True }
 
 extractAiBlogTitle :: FilePath -> Text -> IO Text
 extractAiBlogTitle aiBlogDir filename = do
@@ -148,9 +148,9 @@ buildReflectionLinks aiBlogDir results = do
 
 buildEntry :: FilePath -> NavLinkResult -> IO (Maybe (Text, Title, Text))
 buildEntry aiBlogDir result = do
-  titleText <- extractAiBlogTitle aiBlogDir (nlrFilename result)
-  let relPath = "ai-blog/" <> nlrFilename result
+  titleText <- extractAiBlogTitle aiBlogDir (filename result)
+  let relPath = "ai-blog/" <> filename result
   pure $ do
-    date <- extractPostDate (nlrFilename result)
+    date <- extractPostDate (filename result)
     validTitle <- either (const Nothing) Just (mkTitle titleText)
     Just (relPath, validTitle, date)

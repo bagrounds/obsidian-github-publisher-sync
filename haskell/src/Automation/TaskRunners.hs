@@ -28,8 +28,8 @@ import Data.Time (defaultTimeLocale, parseTimeM)
 
 import Automation.AiBlogLinks (NavLinkResult (..), aiBlogConfig, ensureAllNavLinks, buildReflectionLinks)
 import Automation.AiFiction
-  ( FictionConfig (FictionConfig, fcModels, fcNoteContent)
-  , FictionResult (frFiction, frModel, frUpdatedContent)
+  ( FictionConfig (FictionConfig, models, noteContent)
+  , FictionResult (FictionResult, fiction, generatedModel, updatedContent)
   , defaultFictionModel
   , generateFiction
   , reflectionNeedsFiction
@@ -73,8 +73,8 @@ import qualified Automation.InternalLinking as IL
 import qualified Automation.Json as Json
 import Automation.PacificTime (formatDay, todayPacificDay, yesterdayPacificDay)
 import Automation.ReflectionTitle
-  ( ReflectionTitleConfig (ReflectionTitleConfig, rtcModels, rtcNoteContent, rtcDate, rtcRecentTitles)
-  , ReflectionTitleResult (rtrFullTitle, rtrModel, rtrUpdatedContent)
+  ( ReflectionTitleConfig (ReflectionTitleConfig, models, noteContent, date, recentTitles)
+  , ReflectionTitleResult (ReflectionTitleResult, fullTitle, generatedModel, updatedContent)
   , defaultTitleModel
   , extractCreativeTitle
   , filterRecentReflectionFiles
@@ -305,7 +305,7 @@ runBackfillImages context contentDirs = do
 
   let aiBlogDir = vaultDir </> "ai-blog"
   navResults <- ensureAllNavLinks aiBlogDir
-  let modifiedCount = length (filter nlrModified navResults)
+  let modifiedCount = length (filter modified navResults)
   logMsg $ "  🔗 Nav links: " <> T.pack (show modifiedCount) <> " files updated"
 
   imageUpdateLinks <- catMaybes <$> traverse (\filePath -> do
@@ -408,16 +408,17 @@ runAiFiction context = do
               models = Gemini.overrideModelChain envModel defaultChain
 
           let config = FictionConfig
-                { fcModels = models
-                , fcNoteContent = noteContent
+                { models = models
+                , noteContent = noteContent
                 }
 
-          result <- generateFiction config (callGeminiForGenerator context)
+          FictionResult { fiction = generatedFiction, generatedModel = fictionModel, updatedContent = fictionContent }
+            <- generateFiction config (callGeminiForGenerator context)
 
-          let wordCount = length (T.words (frFiction result))
-          logMsg $ "  🤖🐲 Generated fiction (model=" <> frModel result <> ", " <> T.pack (show wordCount) <> " words)"
+          let wordCount = length (T.words generatedFiction)
+          logMsg $ "  🤖🐲 Generated fiction (model=" <> fictionModel <> ", " <> T.pack (show wordCount) <> " words)"
 
-          TIO.writeFile reflectionPath (frUpdatedContent result)
+          TIO.writeFile reflectionPath fictionContent
           logMsg $ "  ✏️  Updated " <> todayText <> ".md with AI fiction"
 
           logMsg "✅ ai-fiction"
@@ -465,17 +466,18 @@ tryTitleForDate context date = do
               models = Gemini.overrideModelChain envModel defaultChain
 
           let config = ReflectionTitleConfig
-                { rtcModels = models
-                , rtcNoteContent = content
-                , rtcDate = date
-                , rtcRecentTitles = recentTitles
+                { models = models
+                , noteContent = content
+                , date = date
+                , recentTitles = recentTitles
                 }
 
-          result <- generateReflectionTitle config (callGeminiForGenerator context)
+          ReflectionTitleResult { fullTitle = reflectionFullTitle, generatedModel = reflectionModel, updatedContent = reflectionContent }
+            <- generateReflectionTitle config (callGeminiForGenerator context)
 
-          logMsg $ "  🏷️  Generated title: " <> rtrFullTitle result <> " [" <> rtrModel result <> "]"
+          logMsg $ "  🏷️  Generated title: " <> reflectionFullTitle <> " [" <> reflectionModel <> "]"
 
-          TIO.writeFile reflectionPath (rtrUpdatedContent result)
+          TIO.writeFile reflectionPath reflectionContent
           logMsg $ "  🏷️  Title written for " <> date
           pure True
 

@@ -175,7 +175,7 @@ buildReflectionLinksTests = testGroup "buildReflectionLinks"
         let postFile = tmpDir </> "2026-04-03-1-my-post.md"
         TIO.writeFile postFile "---\ntitle: \"My Post Title\"\n---\n[[index|🏡 Home]] > [[/ai-blog/index|🤖 AI Blog]]\n# My Post"
         let results =
-              [ NavLinkResult { nlrFilename = "2026-04-03-1-my-post.md", nlrModified = False }
+              [ NavLinkResult { filename = "2026-04-03-1-my-post.md", modified = False }
               ]
         links <- buildReflectionLinks tmpDir results
         assertBool "should include unmodified post" (length links == 1)
@@ -190,8 +190,8 @@ buildReflectionLinksTests = testGroup "buildReflectionLinks"
         TIO.writeFile (tmpDir </> "2026-04-01-1-old.md") "---\ntitle: \"Old Post\"\n---\nContent"
         TIO.writeFile (tmpDir </> "2026-04-03-1-new.md") "---\ntitle: \"New Post\"\n---\nContent"
         let results =
-              [ NavLinkResult { nlrFilename = "2026-04-01-1-old.md", nlrModified = True }
-              , NavLinkResult { nlrFilename = "2026-04-03-1-new.md", nlrModified = False }
+              [ NavLinkResult { filename = "2026-04-01-1-old.md", modified = True }
+              , NavLinkResult { filename = "2026-04-03-1-new.md", modified = False }
               ]
         links <- buildReflectionLinks tmpDir results
         assertBool "should include both posts" (length links == 2)
@@ -199,7 +199,7 @@ buildReflectionLinksTests = testGroup "buildReflectionLinks"
       withSystemTempDirectory "ai-blog-test" $ \tmpDir -> do
         TIO.writeFile (tmpDir </> "no-date.md") "---\ntitle: \"No Date\"\n---\nContent"
         let results =
-              [ NavLinkResult { nlrFilename = "no-date.md", nlrModified = False }
+              [ NavLinkResult { filename = "no-date.md", modified = False }
               ]
         links <- buildReflectionLinks tmpDir results
         assertBool "should exclude posts without valid dates" (null links)

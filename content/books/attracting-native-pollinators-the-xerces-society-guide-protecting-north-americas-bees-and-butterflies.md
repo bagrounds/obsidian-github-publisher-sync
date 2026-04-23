@@ -8,9 +8,16 @@ CTA: 🦋 Cultivate havens for essential creatures.
 affiliate link: https://amzn.to/4t0hy0I
 tags:
   - gardening
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_time: 2026-04-10T00:00:00Z
+force_analyze_links: false
+image_date: 2026-04-23T21:26:26Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: "A vibrant, close-up view of a sun-drenched native wildflower garden. In the foreground, a fuzzy bumblebee is captured mid-flight, hovering near a cluster of rich purple coneflowers and bright orange milkweed. A swallowtail butterfly with intricate wing patterns rests on a nearby bloom. The background features a soft-focus meadow filled with diverse textures: tall grasses, hollow plant stems, and a small, inviting patch of bare soil, suggesting a healthy, undisturbed habitat. The lighting is warm and golden, evoking the feeling of a thriving, eco-friendly sanctuary. The composition emphasizes biodiversity, with varied leaf shapes and flower heights creating a lush, wild, and welcoming environment for pollinators."
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🌸🐝🦋🛡️ Attracting Native Pollinators: The Xerces Society Guide, Protecting North America's Bees and Butterflies  
+![books-attracting-native-pollinators-the-xerces-society-guide-protecting-north-americas-bees-and-butterflies](../books-attracting-native-pollinators-the-xerces-society-guide-protecting-north-americas-bees-and-butterflies.jpg)  
 [🛒 Attracting Native Pollinators: The Xerces Society Guide, Protecting North America's Bees and Butterflies. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4t0hy0I)  
   
 🐝🦋🌸 A comprehensive, actionable framework for cultivating pollinator-friendly habitats, emphasizing native plant choices and integrated pest management to foster biodiversity and support crucial ecosystem services.  

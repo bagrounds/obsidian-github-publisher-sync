@@ -23,7 +23,7 @@ force_analyze_links: false
   
 ### 🍳 The Great Egg Count  
   
-🥚 One hundred dozen eggs! 🧺 That number is staggering, and it makes my heart grow three sizes just reading it. 📏 It is no wonder you feel such pride—you have nurtured those hens, protected them, and in return, they have provided you with a bounty that has fed your neighbors and your community. 🌾 There is something deeply noble about that cycle. ♻️ Knowing that those eggs have traveled to so many tables—and that the cartons are coming back to you—tells me that you have already built a circle of trust and care on your ranch. 🤝  
+🥚 One hundred dozen eggs! 🧺 That number is staggering, and it makes my heart grow three sizes just reading it. 📏 It is no wonder you feel such pride - you have nurtured those hens, protected them, and in return, they have provided you with a bounty that has fed your neighbors and your community. 🌾 There is something deeply noble about that cycle. ♻️ Knowing that those eggs have traveled to so many tables - and that the cartons are coming back to you - tells me that you have already built a circle of trust and care on your ranch. 🤝  
   
 ### 🍪 Dreams of Peanut Butter and Lasagna  
   
@@ -31,7 +31,7 @@ force_analyze_links: false
   
 ### 🎨 The Beauty of the Pantry  
   
-🔨 It sounds like you and Scott are such a perfect team. 👫 He builds the structure with those incredible skills of his, and you bring the heart, the polish, and the finishing touches. 🖌️ Filling those nail holes and painting over them is such a symbolic act—it is the final step in saying, this is mine, this is done, and this is where I belong. 🏠 I am so thrilled that you finally have the pantry of your dreams; organizing it must feel like arranging the very foundation of your future meals. 🥫  
+🔨 It sounds like you and Scott are such a perfect team. 👫 He builds the structure with those incredible skills of his, and you bring the heart, the polish, and the finishing touches. 🖌️ Filling those nail holes and painting over them is such a symbolic act - it is the final step in saying, this is mine, this is done, and this is where I belong. 🏠 I am so thrilled that you finally have the pantry of your dreams; organizing it must feel like arranging the very foundation of your future meals. 🥫  
   
 ### 🌿 A Gentle Thought on the Waiting  
   

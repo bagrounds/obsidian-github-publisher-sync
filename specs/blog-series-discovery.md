@@ -47,12 +47,12 @@
 | `icon` | string | Emoji icon for the series |
 | `scheduleHourPacific` | number | Hour in Pacific time to generate posts (0-23) |
 | `models` | array of strings | Gemini model chain (primary model first, fallbacks after) |
-| `enableGrounding` | boolean | Whether to enable Google Search grounding for post generation |
 
 ### 📝 Optional Fields
 
 - 🏷️ priorityUser is a string or null, defaulting to null. It specifies the GitHub handle whose comments get priority flagging.
 - 🏷️ contextSources is an optional array of query objects. When absent, defaults to reading the 7 most recent posts from the series' own directory.
+- 🏷️ enableGrounding is a boolean, defaulting to false. When true, Google Search grounding is used during post generation and a Sources section with verified URLs is appended to each post. All active series configs declare this field explicitly even though it is optional.
 
 ### 🔎 Context Query Language
 
@@ -78,9 +78,7 @@
 
 ### 📄 Example Configuration
 
-📄 The following JSON shows the full schema with all fields, where priorityUser is the only optional field.
-
-The required fields are name (the display title), icon (an emoji), scheduleHourPacific (the hour in Pacific time to publish, zero through twenty-three), models (the Gemini model chain array with the primary model first and fallbacks after), and enableGrounding (a boolean controlling whether Google Search grounding is used during generation). The optional priorityUser field names a GitHub handle whose comments get priority flagging.
+📄 The following JSON shows the full schema. All fields except priorityUser, contextSources, and enableGrounding are required.
 
 ```json
 {
@@ -96,7 +94,7 @@ The required fields are name (the display title), icon (an emoji), scheduleHourP
 ### 🔮 Extensibility Design
 
 📐 New required fields must be added to all existing config files at the same time as the Haskell change.
-🆕 To add a new optional customization (e.g., recap frequency, minimum post length, or image generation style), add an optional field to the JSON schema and use the optional operator in the FromValue instance with a sensible default value.
+🆕 To add a new optional customization (e.g., recap frequency, minimum post length, or image generation style), add an optional field to the JSON schema and use the optional operator in the FromValue instance with a sensible default value. This keeps existing configs valid during rollout.
 📋 Planned future fields are documented in the Future Considerations section.
 
 ## 🔧 Convention-Based Derivation

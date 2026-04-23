@@ -65,7 +65,7 @@ URL: https://bagrounds.org/ai-blog/2026-04-22-1-gemini-grounding-source-links
 ### ⚙️ Series Configuration
 
 🗂️ The DiscoveredSeries type gained a dsSearchGrounding field, and BlogSeriesRunConfig gained a searchGrounding field, both of type Bool.
-📄 The enableGrounding field in the series JSON config is now required. All series files explicitly declare whether they use grounding.
+📄 The enableGrounding field in the series JSON config is optional and defaults to false, preserving backward compatibility with configs that do not yet include it.
 ✅ The following series have grounding enabled: the-noise, systems-for-public-good, positivity-bias, and convergence.
 🔒 The remaining series, auto-blog-zero and chickie-loo, explicitly declare enableGrounding as false.
 
@@ -78,13 +78,13 @@ URL: https://bagrounds.org/ai-blog/2026-04-22-1-gemini-grounding-source-links
 🔬 The extractGroundingSourcesTests group tests seven distinct scenarios: empty object, non-object input, response without grounding metadata, response with valid chunks, empty URI rejection, non-http URI rejection, empty title fallback, and multi-source ordering preservation.
 📋 The formatGroundingSourcesTests group tests five scenarios: empty list returns Nothing, single source produces the Sources section, multiple sources all appear, deduplication removes later duplicates of the same URL, and list items start with the expected dash and globe emoji.
 🔧 The buildRequestBodyTests group tests grounding through GenerationConfig: grounding off omits google underscore search, grounding on includes it, grounding on includes the tools field, and grounding on with a system instruction includes both.
-🌱 The BlogSeriesDiscovery tests verify that a missing enableGrounding field causes a parse failure, true and false are parsed correctly, and the value is preserved through deriveBlogSeriesRunConfig.
+🌱 The BlogSeriesDiscovery tests verify that a missing enableGrounding field defaults to false, true and false are parsed correctly, and the value is preserved through deriveBlogSeriesRunConfig.
 
 ## 💡 Key Design Decisions
 
 🚫 The AI is still instructed not to include links in its output, which prevents hallucinated links.
 🌐 Source links come exclusively from the API response grounding metadata, which are verified URLs.
-🔒 The feature is opt-in per series via the required enableGrounding config field.
+🔒 The feature is opt-in per series via the optional enableGrounding config field, which defaults to false for backward compatibility.
 🏷️ Using the Url domain type instead of Text for groundingSourceUrl enforces protocol validation at the type level.
 🔒 Grounding is now part of GenerationConfig rather than a standalone Request field, keeping configuration cohesive.
 📐 The deduplication uses a strict left fold to maintain correct insertion order, since foldr with consing would reverse the list.

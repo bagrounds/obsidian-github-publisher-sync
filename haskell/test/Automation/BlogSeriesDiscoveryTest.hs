@@ -206,9 +206,8 @@ validationTests = testGroup "validation"
       let config = deriveBlogSeriesConfig sampleDiscovered
       bscContextQueries config @?= []
 
-  , testCase "missing enableGrounding fails to parse" $
-      assertBool "should fail without enableGrounding" $
-        isLeft (parseSeriesConfig "test" configMissingEnableGrounding)
+  , testCase "missing enableGrounding defaults to False" $
+      dsSearchGrounding (unsafeParse "test" configMissingEnableGrounding) @?= False
 
   , testCase "enableGrounding true is parsed correctly" $
       dsSearchGrounding (unsafeParse "grounded-series" configWithGrounding) @?= True

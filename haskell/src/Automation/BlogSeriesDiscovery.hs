@@ -68,7 +68,7 @@ instance FromValue RawConfig where
     rcScheduleHourPacific <- obj .: "scheduleHourPacific"
     rcModels <- obj .: "models"
     rcContextSources <- obj .:? "contextSources"
-    rcEnableGrounding <- obj .: "enableGrounding"
+    rcEnableGrounding <- fromMaybe False <$> obj .:? "enableGrounding"
     pure RawConfig{..}
 
 discoverSeries :: FilePath -> IO (Either [DiscoveryError] [DiscoveredSeries])

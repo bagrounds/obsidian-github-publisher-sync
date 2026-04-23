@@ -3,5 +3,6 @@
   "icon": "🐔",
   "priorityUser": "ChickieLoo",
   "scheduleHourPacific": 7,
-  "models": ["gemini-3.1-flash-lite-preview", "gemini-3-flash-preview"]
+  "models": ["gemini-3.1-flash-lite-preview", "gemini-3-flash-preview"],
+  "enableGrounding": false
 }

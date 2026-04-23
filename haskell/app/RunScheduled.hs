@@ -64,7 +64,7 @@ main = do
   discovered <- case discoveryResult of
     Right series -> do
       logMsg $ "📋 Discovered " <> T.pack (show (length series)) <> " blog series: "
-        <> T.intercalate ", " (fmap dsId series)
+        <> T.intercalate ", " (fmap seriesId series)
       pure series
     Left errors -> do
       TIO.hPutStrLn stderr "❌ Blog series discovery errors:"
@@ -84,7 +84,7 @@ main = do
   tasks <- case cliTaskOverride args of
     Just taskStr ->
       if isValidTaskId fullSchedule taskStr
-        then case taskIdFromText (fmap seTaskId dynamicScheduleEntries) taskStr of
+        then case taskIdFromText (fmap taskId dynamicScheduleEntries) taskStr of
           Just tid -> pure [tid]
           Nothing  -> do
             TIO.hPutStrLn stderr $ "❌ Unknown task: " <> taskStr

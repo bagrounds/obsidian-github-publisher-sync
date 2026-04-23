@@ -22,22 +22,22 @@ import qualified Data.Map.Strict as Map
 testSeriesMap :: Map.Map T.Text BlogSeriesConfig
 testSeriesMap = Map.fromList
   [ ("chickie-loo", deriveBlogSeriesConfig DiscoveredSeries
-      { dsId = "chickie-loo", dsName = "Chickie Loo", dsIcon = "🐔"
-      , dsPriorityUser = Just "ChickieLoo", dsScheduleTime = TimeOfDay 7 0 0
-      , dsModels = Gemini.Gemini31FlashLite :| [Gemini.Gemini3Flash]
-      , dsContextQueries = []
+      { seriesId = "chickie-loo", seriesName = "Chickie Loo", seriesIcon = "🐔"
+      , priorityUser = Just "ChickieLoo", scheduleTime = TimeOfDay 7 0 0
+      , modelChain = Gemini.Gemini31FlashLite :| [Gemini.Gemini3Flash]
+      , contextQueries = [], searchGrounding = False
       })
   , ("auto-blog-zero", deriveBlogSeriesConfig DiscoveredSeries
-      { dsId = "auto-blog-zero", dsName = "Auto Blog Zero", dsIcon = "🤖"
-      , dsPriorityUser = Just "bagrounds", dsScheduleTime = TimeOfDay 8 0 0
-      , dsModels = Gemini.Gemini31FlashLite :| [Gemini.Gemini3Flash]
-      , dsContextQueries = []
+      { seriesId = "auto-blog-zero", seriesName = "Auto Blog Zero", seriesIcon = "🤖"
+      , priorityUser = Just "bagrounds", scheduleTime = TimeOfDay 8 0 0
+      , modelChain = Gemini.Gemini31FlashLite :| [Gemini.Gemini3Flash]
+      , contextQueries = [], searchGrounding = False
       })
   , ("systems-for-public-good", deriveBlogSeriesConfig DiscoveredSeries
-      { dsId = "systems-for-public-good", dsName = "Systems for Public Good", dsIcon = "🏛️"
-      , dsPriorityUser = Just "bagrounds", dsScheduleTime = TimeOfDay 9 0 0
-      , dsModels = Gemini.Gemini25Flash :| [Gemini.Gemini25FlashLite, Gemini.Gemini31FlashLite]
-      , dsContextQueries = []
+      { seriesId = "systems-for-public-good", seriesName = "Systems for Public Good", seriesIcon = "🏛️"
+      , priorityUser = Just "bagrounds", scheduleTime = TimeOfDay 9 0 0
+      , modelChain = Gemini.Gemini25Flash :| [Gemini.Gemini25FlashLite, Gemini.Gemini31FlashLite]
+      , contextQueries = [], searchGrounding = False
       })
   ]
 

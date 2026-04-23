@@ -52,6 +52,7 @@
 
 - 🏷️ priorityUser is a string or null, defaulting to null. It specifies the GitHub handle whose comments get priority flagging.
 - 🏷️ contextSources is an optional array of query objects. When absent, defaults to reading the 7 most recent posts from the series' own directory.
+- 🏷️ enableGrounding is a boolean, defaulting to false. When true, Google Search grounding is used during post generation and a Sources section with verified URLs is appended to each post. All active series configs declare this field explicitly even though it is optional.
 
 ### 🔎 Context Query Language
 
@@ -77,21 +78,23 @@
 
 ### 📄 Example Configuration
 
+📄 The following JSON shows the full schema. All fields except priorityUser, contextSources, and enableGrounding are required.
+
 ```json
 {
   "name": "Garden Thoughts",
   "icon": "🌱",
   "priorityUser": "bagrounds",
   "scheduleHourPacific": 11,
-  "models": ["gemini-2.5-flash", "gemini-2.5-flash-lite"]
+  "models": ["gemini-2.5-flash", "gemini-2.5-flash-lite"],
+  "enableGrounding": false
 }
 ```
 
 ### 🔮 Extensibility Design
 
-📐 The schema is designed for forward-compatible evolution through optional fields with sensible defaults.
-🆕 To add a new customization option (e.g., recap frequency, minimum post length, or image generation style), add an optional field to the JSON schema and use `(.:?)` in the `FromValue` instance with a default value.
-🔇 Existing config files continue to work unchanged when new optional fields are added because missing keys resolve to `Nothing` via `(.:?)`.
+📐 New required fields must be added to all existing config files at the same time as the Haskell change.
+🆕 To add a new optional customization (e.g., recap frequency, minimum post length, or image generation style), add an optional field to the JSON schema and use the optional operator in the FromValue instance with a sensible default value. This keeps existing configs valid during rollout.
 📋 Planned future fields are documented in the Future Considerations section.
 
 ## 🔧 Convention-Based Derivation

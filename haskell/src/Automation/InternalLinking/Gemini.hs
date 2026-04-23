@@ -22,11 +22,11 @@ import Network.HTTP.Client (Manager)
 maxGeminiRetries :: Int
 maxGeminiRetries = 3
 
-initialBackoffUs :: Int
-initialBackoffUs = 5_000_000
+initialBackoffMicroseconds :: Int
+initialBackoffMicroseconds = 5_000_000
 
-maxBackoffUs :: Int
-maxBackoffUs = 60_000_000
+maxBackoffMicroseconds :: Int
+maxBackoffMicroseconds = 60_000_000
 
 buildIdentificationPrompt :: Text -> [ContentEntry] -> Text
 buildIdentificationPrompt fileBody bookEntries =
@@ -62,7 +62,7 @@ identifyBooksWithGemini :: Manager -> Secret -> Gemini.Model -> Text -> [Content
 identifyBooksWithGemini _ _ _ _ [] = pure (Right [])
 identifyBooksWithGemini manager apiKey model fileBody bookEntries = do
   let prompt = buildIdentificationPrompt fileBody bookEntries
-  retryLoop manager apiKey model prompt 0 initialBackoffUs
+  retryLoop manager apiKey model prompt 0 initialBackoffMicroseconds
 
 retryLoop :: Manager -> Secret -> Gemini.Model -> Text -> Int -> Int -> IO (Either Text [Text])
 retryLoop manager apiKey model prompt attempt backoff = do
@@ -74,6 +74,7 @@ retryLoop manager apiKey model prompt attempt backoff = do
     , Gemini.requestGenerationConfig   = Gemini.GenerationConfig
         { Gemini.temperature     = 0.0
         , Gemini.maxOutputTokens = 1024
+        , Gemini.searchGrounding = False
         }
     }
   case result of
@@ -84,7 +85,7 @@ retryLoop manager apiKey model prompt attempt backoff = do
           putStrLn $ "  ⏳ Rate limit, retry " <> show (attempt + 1) <> "/" <> show maxGeminiRetries
             <> " in " <> show (backoff `div` 1_000_000) <> "s"
           threadDelay backoff
-          retryLoop manager apiKey model prompt (attempt + 1) (min (backoff * 2) maxBackoffUs)
+          retryLoop manager apiKey model prompt (attempt + 1) (min (backoff * 2) maxBackoffMicroseconds)
       | Gemini.isQuotaExhaustedError err ->
           pure (Left ("QuotaExhausted: " <> T.pack (show err)))
       | otherwise ->

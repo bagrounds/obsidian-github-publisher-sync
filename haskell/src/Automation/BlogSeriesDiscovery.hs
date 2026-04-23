@@ -26,47 +26,31 @@ import System.Directory (doesDirectoryExist, listDirectory)
 import System.FilePath ((</>), dropExtension, takeExtension)
 
 import qualified Automation.Gemini as Gemini
-import Automation.Json (FromValue (..), withObject, (.:), (.:?), eitherDecodeStrict)
+import Automation.Json (eitherDecodeStrict)
 import Automation.BlogSeriesConfig (BlogSeriesConfig (..))
+import Automation.BlogSeriesDiscovery.RawConfig (RawConfig (..))
 import Automation.ContextQuery (ContextQuery, defaultContextQueries)
-import Automation.Scheduler (BlogSeriesRunConfig (..), ScheduleEntry (..), TaskId (..))
+import Automation.Scheduler (BlogSeriesRunConfig (BlogSeriesRunConfig), ScheduleEntry (..), TaskId (..))
+import qualified Automation.Scheduler as Scheduler
 
 configDirectoryName :: FilePath
 configDirectoryName = "series"
 
 data DiscoveredSeries = DiscoveredSeries
-  { dsId                 :: Text
-  , dsName               :: Text
-  , dsIcon               :: Text
-  , dsPriorityUser       :: Maybe Text
-  , dsScheduleTime       :: TimeOfDay
-  , dsModels             :: NonEmpty Gemini.Model
-  , dsContextQueries     :: [ContextQuery]
+  { seriesId             :: Text
+  , seriesName           :: Text
+  , seriesIcon           :: Text
+  , priorityUser         :: Maybe Text
+  , scheduleTime         :: TimeOfDay
+  , modelChain           :: NonEmpty Gemini.Model
+  , contextQueries       :: [ContextQuery]
+  , searchGrounding      :: Bool
   } deriving (Show, Eq)
 
 data DiscoveryError
   = JsonParseError FilePath String
   | ValidationError FilePath Text
   deriving (Show)
-
-data RawConfig = RawConfig
-  { rcName               :: Text
-  , rcIcon               :: Text
-  , rcPriorityUser       :: Maybe Text
-  , rcScheduleHourPacific :: Int
-  , rcModels             :: [Text]
-  , rcContextSources     :: Maybe [ContextQuery]
-  }
-
-instance FromValue RawConfig where
-  fromValue = withObject "series config" $ \obj -> do
-    rcName <- obj .: "name"
-    rcIcon <- obj .: "icon"
-    rcPriorityUser <- obj .:? "priorityUser"
-    rcScheduleHourPacific <- obj .: "scheduleHourPacific"
-    rcModels <- obj .: "models"
-    rcContextSources <- obj .:? "contextSources"
-    pure RawConfig{..}
 
 discoverSeries :: FilePath -> IO (Either [DiscoveryError] [DiscoveredSeries])
 discoverSeries baseDir = do
@@ -81,7 +65,7 @@ discoverSeries baseDir = do
       let errors = concatMap (\case Left errs -> errs; Right _ -> []) results
           successes = concatMap (\case Right series -> [series]; Left _ -> []) results
       if null errors
-        then pure (Right (sortOn dsId successes))
+        then pure (Right (sortOn seriesId successes))
         else pure (Left errors)
 
 isJsonFile :: FilePath -> Bool
@@ -103,55 +87,57 @@ parseSeriesConfig seriesId content =
     Right rawConfig -> validateRawConfig "<input>" seriesId rawConfig
 
 validateRawConfig :: FilePath -> Text -> RawConfig -> Either [DiscoveryError] DiscoveredSeries
-validateRawConfig filePath seriesId RawConfig{..} =
+validateRawConfig filePath seriesIdValue RawConfig{..} =
   let errors =
-        (case rcScheduleHourPacific of
+        (case scheduleHourPacific of
             hour | hour < 0 || hour > 23 ->
               [ValidationError filePath ("scheduleHourPacific must be 0-23, got: " <> T.pack (show hour))]
             _ -> [])
-        ++ (case rcModels of
+        ++ (case models of
             [] -> [ValidationError filePath "models list must not be empty"]
             _ -> [])
   in if null errors
-    then case rcModels of
+    then case models of
       (firstModel : restModels) ->
         Right DiscoveredSeries
-          { dsId = seriesId
-          , dsName = rcName
-          , dsIcon = rcIcon
-          , dsPriorityUser = rcPriorityUser
-          , dsScheduleTime = TimeOfDay rcScheduleHourPacific 0 0
-          , dsModels = Gemini.modelFromText firstModel :| fmap Gemini.modelFromText restModels
-          , dsContextQueries = fromMaybe (defaultContextQueries seriesId) rcContextSources
+          { seriesId = seriesIdValue
+          , seriesName = name
+          , seriesIcon = icon
+          , priorityUser = priorityUser
+          , scheduleTime = TimeOfDay scheduleHourPacific 0 0
+          , modelChain = Gemini.modelFromText firstModel :| fmap Gemini.modelFromText restModels
+          , contextQueries = fromMaybe (defaultContextQueries seriesIdValue) contextSources
+          , searchGrounding = enableGrounding
           }
       _ -> Left errors
     else Left errors
 
 deriveBlogSeriesConfig :: DiscoveredSeries -> BlogSeriesConfig
 deriveBlogSeriesConfig DiscoveredSeries{..} = BlogSeriesConfig
-  { bscId = dsId
-  , bscName = dsName
-  , bscIcon = dsIcon
-  , bscAuthor = deriveAuthor dsId
-  , bscBaseUrl = deriveBaseUrl dsId
-  , bscPriorityUser = dsPriorityUser
-  , bscNavLink = deriveNavLink dsId dsIcon dsName
-  , bscScheduleTime = dsScheduleTime
-  , bscContextQueries = dsContextQueries
+  { bscId = seriesId
+  , bscName = seriesName
+  , bscIcon = seriesIcon
+  , bscAuthor = deriveAuthor seriesId
+  , bscBaseUrl = deriveBaseUrl seriesId
+  , bscPriorityUser = priorityUser
+  , bscNavLink = deriveNavLink seriesId seriesIcon seriesName
+  , bscScheduleTime = scheduleTime
+  , bscContextQueries = contextQueries
   }
 
 deriveBlogSeriesRunConfig :: DiscoveredSeries -> BlogSeriesRunConfig
 deriveBlogSeriesRunConfig DiscoveredSeries{..} = BlogSeriesRunConfig
-  { bsrcSeriesId = dsId
-  , bsrcModelChain = dsModels
-  , bsrcPriorityUserEnvVar = derivePriorityUserEnvVar dsId
+  { Scheduler.seriesId          = seriesId
+  , Scheduler.modelChain        = modelChain
+  , Scheduler.priorityUserEnvVar = derivePriorityUserEnvVar seriesId
+  , Scheduler.searchGrounding   = searchGrounding
   }
 
 deriveScheduleEntry :: DiscoveredSeries -> ScheduleEntry
 deriveScheduleEntry DiscoveredSeries{..} = ScheduleEntry
-  { seTaskId = deriveTaskId dsId
-  , seHoursPacific = [todHour dsScheduleTime]
-  , seAtOrAfter = False
+  { taskId = deriveTaskId seriesId
+  , hoursPacific = [todHour scheduleTime]
+  , atOrAfter = False
   }
 
 deriveTaskId :: Text -> TaskId

@@ -49,15 +49,3 @@ URL: https://bagrounds.org/ai-blog/2026-04-23-1-haskell-no-abbreviations-refacto
 
 ### 🔗 Related
 * Types and Programming Languages by Benjamin C. Pierce is related because the challenge of disambiguating duplicate record field names is fundamentally a story about the limits of type inference, a topic Pierce covers with great depth and clarity.
-
-## 📚 Book Recommendations
-
-### 📖 Similar
-* Clean Code: A Handbook of Agile Software Craftsmanship by Robert C. Martin is relevant because it makes the case for expressive naming and the boy-scout rule as core professional disciplines, mirroring exactly what this refactor applied.
-* The Pragmatic Programmer: Your Journey to Mastery by David Thomas and Andrew Hunt is relevant because it introduces the concepts of self-documenting code and leaving the campground cleaner than you found it, which motivated this entire session.
-
-### ↔️ Contrasting
-* Code Complete: A Practical Handbook of Software Construction by Steve McConnell offers a contrasting perspective where abbreviations are sometimes recommended for brevity in tightly scoped local variables, arguing that context can make short names acceptable.
-
-### 🔗 Related
-* Types and Programming Languages by Benjamin C. Pierce is related because the challenge of disambiguating duplicate record field names is fundamentally a story about the limits of type inference, a topic Pierce covers with great depth and clarity.

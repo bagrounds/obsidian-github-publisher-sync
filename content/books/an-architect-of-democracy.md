@@ -12,9 +12,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-19T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-04-23T06:03:54Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A wide-angle, cinematic shot of a grand, unfinished mosaic floor stretching across a sunlit plaza. The mosaic is being assembled by diverse hands—men and women of different ages and backgrounds—carefully placing small, colorful stone tiles into intricate, interlocking patterns. In the background, modern, minimalist architectural blueprints of democratic institutions—represented by clean, structural arches and pillars—are spread out on a wooden drafting table. The scene is bathed in warm, natural morning light, emphasizing the slow, deliberate, and collaborative nature of the work. The color palette is composed of soft, hopeful earth tones, deep blues, and vibrant gold accents, symbolizing stability and enlightenment. The atmosphere is industrious and serene, capturing the transition from a fragmented landscape to a unified, peaceful whole.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # ✍️🗺️🏗️🗳️ An Architect of Democracy: Building a Mosaic of Peace  
+![books-an-architect-of-democracy](../books-an-architect-of-democracy.jpg)  
 [🛒 An Architect of Democracy: Building a Mosaic of Peace. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4mOSl6u)  
   
 ## 🤖 AI Summary  

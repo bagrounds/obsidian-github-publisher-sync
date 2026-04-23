@@ -1,4 +1,3 @@
-{-# LANGUAGE DuplicateRecordFields #-}
 module Automation.BlogSeriesDiscovery
   ( DiscoveredSeries (..)
   , DiscoveryError (..)
@@ -27,8 +26,9 @@ import System.Directory (doesDirectoryExist, listDirectory)
 import System.FilePath ((</>), dropExtension, takeExtension)
 
 import qualified Automation.Gemini as Gemini
-import Automation.Json (FromValue (..), withObject, (.:), (.:?), eitherDecodeStrict)
+import Automation.Json (eitherDecodeStrict)
 import Automation.BlogSeriesConfig (BlogSeriesConfig (..))
+import Automation.BlogSeriesDiscovery.RawConfig (RawConfig (..))
 import Automation.ContextQuery (ContextQuery, defaultContextQueries)
 import Automation.Scheduler (BlogSeriesRunConfig (BlogSeriesRunConfig), ScheduleEntry (..), TaskId (..))
 import qualified Automation.Scheduler as Scheduler
@@ -51,27 +51,6 @@ data DiscoveryError
   = JsonParseError FilePath String
   | ValidationError FilePath Text
   deriving (Show)
-
-data RawConfig = RawConfig
-  { name               :: Text
-  , icon               :: Text
-  , priorityUser       :: Maybe Text
-  , scheduleHourPacific :: Int
-  , models             :: [Text]
-  , contextSources     :: Maybe [ContextQuery]
-  , enableGrounding    :: Bool
-  }
-
-instance FromValue RawConfig where
-  fromValue = withObject "series config" $ \obj -> do
-    name <- obj .: "name"
-    icon <- obj .: "icon"
-    priorityUser <- obj .:? "priorityUser"
-    scheduleHourPacific <- obj .: "scheduleHourPacific"
-    models <- obj .: "models"
-    contextSources <- obj .:? "contextSources"
-    enableGrounding <- fromMaybe False <$> obj .:? "enableGrounding"
-    pure RawConfig{..}
 
 discoverSeries :: FilePath -> IO (Either [DiscoveryError] [DiscoveredSeries])
 discoverSeries baseDir = do

@@ -82,6 +82,7 @@ library
     Automation.TaskRunners
     Automation.PacificTime
     Automation.BlogSeriesDiscovery
+    Automation.BlogSeriesDiscovery.RawConfig
     Automation.Wikilink
     Automation.GoogleAnalytics
   build-depends:

@@ -26,9 +26,9 @@ URL: https://bagrounds.org/ai-blog/2026-04-23-1-haskell-no-abbreviations-refacto
 
 ⚠️ Removing prefixes introduced a potential compiler challenge: when two record types have a field with the same name, GHC cannot always determine which type's field is meant.
 
-🔑 The safe and simple solution is qualified module imports. 🗂️ Because `DiscoveredSeries` lives in `Automation.BlogSeriesDiscovery` and `BlogSeriesRunConfig` lives in `Automation.Scheduler`, importing Scheduler qualified as `Scheduler` makes the module the disambiguator. 🧩 Unqualified `seriesId` refers to `DiscoveredSeries.seriesId`; `Scheduler.seriesId` refers to `BlogSeriesRunConfig.seriesId`. ✅ No language extension is needed for this cross-module case.
+🔑 The primary solution is qualified module imports. 🗂️ Because `DiscoveredSeries` lives in `Automation.BlogSeriesDiscovery` and `BlogSeriesRunConfig` lives in `Automation.Scheduler`, importing Scheduler qualified as `Scheduler` makes the module the disambiguator. 🧩 Unqualified `seriesId` refers to `DiscoveredSeries.seriesId`; `Scheduler.seriesId` refers to `BlogSeriesRunConfig.seriesId`. ✅ No language extension is needed for this cross-module case.
 
-🔬 The one remaining same-module conflict is `DiscoveredSeries.priorityUser` and `RawConfig.priorityUser`, both defined inside `BlogSeriesDiscovery.hs`. 📌 Qualified imports cannot disambiguate names within the same module. 🏷️ For this narrow case, a per-file `DuplicateRecordFields` pragma is added at the top of that one file, making the extension explicit and scoped to exactly where it is needed rather than a global project setting. 🗒️ Alternatively, moving `RawConfig` to its own module would solve this too, but since `RawConfig` is a private parse-only type, a targeted pragma is simpler and communicates intent just as clearly.
+🔬 The one remaining same-module conflict was `DiscoveredSeries.priorityUser` and `RawConfig.priorityUser`, both originally defined inside `BlogSeriesDiscovery.hs`. 📌 Qualified imports cannot disambiguate names within the same module. 🏗️ The clean solution is to move `RawConfig` into its own dedicated module, `Automation.BlogSeriesDiscovery.RawConfig`. 📦 Once `RawConfig` lives in a separate file, qualified imports handle any disambiguation and no language extension is needed anywhere in the project.
 
 🧹 The approach also simplified other code. 🔄 With qualified imports, `sortOn (\DiscoveredSeries{..} -> seriesId) successes` becomes simply `sortOn seriesId successes` because the unqualified `seriesId` is now unambiguously `DiscoveredSeries.seriesId`. 🔄 Record update syntax like `sampleDiscovered { searchGrounding = True }` is similarly unambiguous, eliminating the need for test workarounds.
 
@@ -36,7 +36,7 @@ URL: https://bagrounds.org/ai-blog/2026-04-23-1-haskell-no-abbreviations-refacto
 
 ## ✅ Outcome
 
-🟢 All 2007 tests pass. 🟢 Zero hlint hints. 🟢 The codebase is now free of Hungarian-notation-style prefixes and cryptic single-letter locals in these modules. 🔒 Cross-module field disambiguation is handled by qualified imports with no language extensions, and the one same-module case is pinned with a local per-file pragma.
+🟢 All 2007 tests pass. 🟢 Zero hlint hints. 🟢 The codebase is now free of Hungarian-notation-style prefixes and cryptic single-letter locals in these modules. 🔒 Cross-module field disambiguation is handled entirely by qualified imports — no language extensions required anywhere.
 
 ## 📚 Book Recommendations
 

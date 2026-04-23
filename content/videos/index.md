@@ -5,10 +5,10 @@ aliases:
 title: 📺 Videos
 URL: https://bagrounds.org/videos
 backlinks: false
-updated: 2026-04-22T16:09:21-07:00
+updated: 2026-04-22T22:32:17-07:00
 ---
 [Home](../index.md)  
-# 📺 Videos (786)  
+# 📺 Videos (788)  
 - [💰🤑🤖💡🚀💲 $0.10 per Month Runs My Entire AI Life. I'll Show You How.](./0-10-month-runs-my-entire-ai-life-ill-show-you-how.md)  
 - [📊📈📉📃👁️ 10 Charts to Understand the 900 Page Budget Bill](./10-charts-to-understand-the-900-page-budget-bill.md)  
 - [🤖🔗⬆️✅ 12-Factor Agents: Patterns of reliable LLM applications — Dex Horthy, HumanLayer](./12-factor-agents-patterns-of-reliable-llm-applications-dex-horthy-humanlayer.md)  
@@ -147,6 +147,7 @@ updated: 2026-04-22T16:09:21-07:00
 - [💰🚫🌍✨ Clara Mattei: capitalism is not natural - it’s enforced](./clara-mattei-capitalism-is-not-natural-its-enforced.md)  
 - [🤖📈🚀 Class  > 1 | MS&E435: Economics of the AI Supercycle Stanford University Spring '26 Apoorv Agrawal](./class-1-ms-e435-economics-of-the-ai-supercycle-stanford-university-spring-26-apoorv-agrawal.md)  
 - [🧠💰🚀 Class  > 2 | MS&E435: Economics of the AI Supercycle Stanford University Spring '26 Apoorv Agrawal](./class-2-ms-e435-economics-of-the-ai-supercycle-stanford-university-spring-26-apoorv-agrawal.md)  
+- [🤖💰📈🚀 Class  > 3 | MS&E435: Economics of the AI Supercycle Stanford University Spring '26 Apoorv Agrawal](./class-3-ms-e435-economics-of-the-ai-supercycle-stanford-university-spring-26-apoorv-agrawal.md)  
 - [🤖🆚🧠⏳📉🔊 Claude Code vs Codex: The Decision That Compounds Every Week You Delay That Nobody Is Talking About](./claude-code-vs-codex-the-decision-that-compounds-every-week-you-delay-that-nobody-is-talking-about.md)  
 - [🤖✨💥⚠️ Claude Mythos Changes Everything. Your AI Stack Isn't Ready.](./claude-mythos-changes-everything-your-ai-stack-isnt-ready.md)  
 - [✨🧠🧹🗄️ Cleaning And Organizing An ADHD Logjam](./cleaning-and-organizing-an-adhd-logjam.md)  
@@ -773,6 +774,7 @@ updated: 2026-04-22T16:09:21-07:00
 - [🏛️⚔️🤖 Why the Trump administration is clashing with AI-firm Anthropic](./why-the-trump-administration-is-clashing-with-ai-firm-anthropic.md)  
 - [👴🚫📈 Why the Trump Administration Is Doubling Down as Momentum Grows Against Them | Explainer](./why-the-trump-administration-is-doubling-down-as-momentum-grows-against-them-explainer.md)  
 - [👹⏱️🇺🇸➡️💰 Why the Trump Administration Is Rushing the Budget Reconciliation Bill Through](./why-the-trump-administration-is-rushing-the-budget-reconciliation-bill-through.md)  
+- [🏛️➡️👑🗓️ Why Viktor Orbán Matters to Trump and Project 2025 | Anne Applebaum & Preet Bharara](./why-viktor-orban-matters-to-trump-and-project-2025-anne-applebaum-preet-bharara.md)  
 - [😴☕️💡 Why you’re so tired](./why-youre-so-tired.md)  
 - [💡🧠🤖📝 Why you should take notes if you use AI](./why-you-should-take-notes-if-you-use-ai.md)  
 - [🏃🤸🧠💪 Why You Should Train Movement, Not Muscle](./why-you-should-train-movement-not-muscle-with-jay-dicharry.md)  

@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-04-23T11:00:46-07:00
+updated: 2026-04-23T12:54:03-07:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -71,17 +71,17 @@ updated: 2026-04-23T11:00:46-07:00
   
   
 ## [📚 Books](./books/index.md) (960)  
-- [❓➡️ An Introduction to Causal Inference](./books/an-introduction-to-causal-inference.md)  
-- [🇺🇸🏹 An Indigenous Peoples' History of the United States](./books/an-indigenous-peoples-history-of-the-united-states.md)  
-- [😠🎭 Uncivil Agreement: How Politics Became Our Identity](./books/uncivil-agreement-how-politics-became-our-identity.md)  
-- [✍️🗺️🏗️🗳️ An Architect of Democracy: Building a Mosaic of Peace](./books/an-architect-of-democracy.md)  
+- [🌊🥋 Be Water, My Friend: The Teachings of Bruce Lee](./books/be-water-my-friend-the-teachings-of-bruce-lee.md)  
+- [👣🗺️💥 Everyone Who Is Gone Is Here: The United States, Central America, and the Making of a Crisis](./books/everyone-who-is-gone-is-here-the-united-states-central-america-and-the-making-of-a-crisis.md)  
+- [⚡🗣️ Think Faster, Talk Smarter: How to Speak Successfully When You're Put on the Spot](./books/think-faster-talk-smarter-how-to-speak-successfully-when-youre-put-on-the-spot.md)  
+- [🤖🧠 Artificial Intelligence: A Modern Approach](./books/artificial-intelligence-a-modern-approach.md)  
   
   
-## [📺 Videos](./videos/index.md) (788)  
-- [👹📜🏛️🏠 What's in the version of Trump's bill passed by the Senate and its chances in the House](./videos/whats-in-the-version-of-trumps-bill-passed-by-the-senate-and-its-chances-in-the-house.md)  
-- [👹🐊🔒 Trump visits Florida's 'Alligator Alcatraz,' urges more states to open ICE detention sites](./videos/trump-visits-floridas-alligator-alcatraz-urges-more-states-to-open-ice-detention-sites.md)  
-- [🏛️👹👑📜 Politics Chat, July 1, 2025](./videos/politics-chat-july-1-2025.md)  
-- [🧠🛠️♾️💪 How to reprogram your mind to have infinite resilience](./videos/how-to-reprogram-your-mind-to-have-infinite-resilience.md)  
+## [📺 Videos](./videos/index.md) (789)  
+- [⚖️🦅🐘❓🔄 LegalEagle’s Devin Stone On The ‘Unpresidented’ Times of Trump 2.0](./videos/legaleagles-devin-stone-on-the-unpresidented-times-of-trump-2-0.md)  
+- [🏃🤸💃📚 The Kinesthetic Classroom: Teaching and Learning through Movement | Michael Kuczala | TEDxAshburn](./videos/the-kinesthetic-classroom-teaching-and-learning-through-movement-michael-kuczala-tedxashburn.md)  
+- [🚪👥🚫⚖️ Trump Said He’d Deport Millions. What’s Happening on the Ground? | WSJ](./videos/trump-said-hed-deport-millions-whats-happening-on-the-ground-wsj.md)  
+- [🗣️✨ How to Speak Clearly & With Confidence | Matt Abrahams](./videos/how-to-speak-clearly-and-with-confidence-matt-abrahams.md)  
   
   
 ## [🌌 Topics](./topics/index.md) (91)  

@@ -7,11 +7,16 @@ share: true
 CTA: ✊ Honor native sovereignty.
 affiliate link: https://amzn.to/4hSFyO1
 link_analysis_model: gemini-3.1-flash-lite-preview
-link_analysis_time: 2026-04-01T00:00:00Z
+link_analysis_time: 2026-04-16T00:00:00Z
 force_analyze_links: false
+link_analysis_version: "2"
+image_date: 2026-04-23T17:44:03Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A stark, powerful composition featuring an aged, weathered map of the North American continent layered over a textured, earthen background. The map is partially obscured by a series of translucent, overlapping silhouettes of diverse Indigenous symbols—a feathered arrow, a geometric patterned loom, and a stylized eagle—that appear to be emerging from the paper rather than resting on it. The color palette uses deep, saturated ochres, charcoal greys, and faded crimson, evoking a sense of unearthed history. Small, subtle cracks run across the surface of the map, symbolizing the fracturing of traditional narratives. The lighting is dramatic and low-angled, casting long shadows that give the image a tactile, three-dimensional depth, emphasizing the weight and endurance of Indigenous presence against the backdrop of colonial cartography.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🇺🇸🏹 An Indigenous Peoples' History of the United States  
+![books-an-indigenous-peoples-history-of-the-united-states](../books-an-indigenous-peoples-history-of-the-united-states.jpg)  
 [🛒 An Indigenous Peoples' History of the United States. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4hSFyO1)  
   
 🌍💔📜 The nation's origins and development are inextricably linked to settler colonialism and genocidal policies against Indigenous peoples, a perspective vital for understanding contemporary societal structures and injustices.  

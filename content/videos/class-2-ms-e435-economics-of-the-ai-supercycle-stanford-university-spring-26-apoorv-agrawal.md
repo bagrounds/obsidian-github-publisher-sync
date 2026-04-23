@@ -9,6 +9,10 @@ Platform:
 Channel: "MS&E 435: Economics of AI"
 tags:
 youtube: https://youtu.be/4faCRNl9Bi4
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_version: "2"
+link_analysis_time: 2026-04-22T00:00:00Z
+force_analyze_links: false
 ---
 [Home](../index.md) > [Videos](./index.md)  
 # 🧠💰🚀 Class #2 | MS&E435: Economics of the AI Supercycle Stanford University Spring '26 Apoorv Agrawal  
@@ -50,13 +54,13 @@ youtube: https://youtu.be/4faCRNl9Bi4
 ## 📚 Book Recommendations  
   
 ### ↔️ Similar  
-* 📘 The Coming Wave by Mustafa Suleyman and Michael Bhaskar, published by Crown, explores the inevitable rise of AI and synthetic biology as the next great technological revolution.  
-* 📗 Prediction Machines by Ajay Agrawal, Joshua Gans, and Avi Goldfarb, published by Harvard Business Review Press, analyzes the economics of AI as a drop in the cost of prediction.  
+* 📘 [🌊🤖🤔 The Coming Wave: Technology, Power, and the 21st Century's Greatest Dilemma](../books/the-coming-wave-technology-power-and-the-21st-centurys-greatest-dilemma.md) by Mustafa Suleyman and Michael Bhaskar, published by Crown, explores the inevitable rise of AI and synthetic biology as the next great technological revolution.  
+* 📗 [🤖📈 Prediction Machines: The Simple Economics of Artificial Intelligence](../books/prediction-machines-the-simple-economics-of-artificial-intelligence.md) by Ajay Agrawal, Joshua Gans, and Avi Goldfarb, published by Harvard Business Review Press, analyzes the economics of AI as a drop in the cost of prediction.  
   
 ### 🆚 Contrasting  
 * 📕 The Myth of Artificial Intelligence by Erik J. Larson, published by Belknap Press, argues that we are nowhere near achieving general intelligence and that the current trajectory is fundamentally flawed.  
 * 📙 Rebooting AI by Gary Marcus and Ernest Davis, published by Pantheon, suggests that deep learning alone cannot reach true understanding and requires a shift toward symbolic logic.  
   
 ### 🎨 Creatively Related  
-* 📒 The Second Machine Age by Erik Brynjolfsson and Andrew McAfee, published by W. W. Norton and Company, discusses how digital technologies are redefining our economic and social lives.  
-* 📓 Abundance by Peter Diamandis and Steven Kotler, published by Free Press, envisions a future where technology provides for the basic needs of every person on Earth.
+* 📒 [🤖📈 The Second Machine Age: Work, Progress, and Prosperity in a Time of Brilliant Technologies](../books/the-second-machine-age-work-progress-and-prosperity-in-a-time-of-brilliant-technologies.md) by Erik Brynjolfsson and Andrew McAfee, published by W. W. Norton and Company, discusses how digital technologies are redefining our economic and social lives.  
+* 📓 [✅➕ Abundance](../books/abundance.md) by Peter Diamandis and Steven Kotler, published by Free Press, envisions a future where technology provides for the basic needs of every person on Earth.

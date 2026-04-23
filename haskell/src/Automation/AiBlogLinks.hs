@@ -29,15 +29,15 @@ import Automation.Wikilink (buildBackLink, buildForwardLink)
 
 aiBlogConfig :: BlogSeriesConfig
 aiBlogConfig = BlogSeriesConfig
-  { bscId           = "ai-blog"
-  , bscName         = "AI Blog"
-  , bscIcon         = "🤖"
-  , bscAuthor       = "[[bryan-grounds]]"
-  , bscBaseUrl      = "https://bagrounds.org/ai-blog"
-  , bscPriorityUser = Nothing
-  , bscNavLink      = "[[index|🏡 Home]] > [[/ai-blog/index|🤖 AI Blog]]"
-  , bscScheduleTime = midnight
-  , bscContextQueries = []
+  { seriesId       = "ai-blog"
+  , name           = "AI Blog"
+  , icon           = "🤖"
+  , author         = "[[bryan-grounds]]"
+  , baseUrl        = "https://bagrounds.org/ai-blog"
+  , priorityUser   = Nothing
+  , navLink        = "[[index|🏡 Home]] > [[/ai-blog/index|🤖 AI Blog]]"
+  , scheduleTime   = midnight
+  , contextQueries = []
   }
 
 aiBlogNavPrefix :: Text

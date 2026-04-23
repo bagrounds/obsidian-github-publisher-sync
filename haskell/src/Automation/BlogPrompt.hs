@@ -98,7 +98,7 @@ filterCommentsAfterLastPost :: BlogSeriesConfig -> [BlogPost] -> [BlogComment] -
 filterCommentsAfterLastPost _ [] comments = comments
 filterCommentsAfterLastPost series (latestPost : _) comments =
   let postDay = fromMaybe (fromGregorian 2026 1 1) (parseDate (bpDate latestPost))
-      cutoff = LocalTime postDay (bscScheduleTime series)
+      cutoff = LocalTime postDay (scheduleTime series)
   in filter (commentAfterCutoff cutoff) comments
 
 commentAfterCutoff :: LocalTime -> BlogComment -> Bool
@@ -112,21 +112,21 @@ parseUtcTimestamp = iso8601ParseM . T.unpack
 
 buildDisplayTitle :: BlogSeriesConfig -> Day -> Text -> DisplayTitle
 buildDisplayTitle series today title =
-  DisplayTitle $ formatDay today <> " | " <> bscIcon series <> " " <> title <> " " <> bscIcon series
+  DisplayTitle $ formatDay today <> " | " <> icon series <> " " <> title <> " " <> icon series
 
 sanitizeTitle :: BlogSeriesConfig -> Text -> Text
 sanitizeTitle series raw =
   T.strip $ stripTrailingIcon $ stripLeadingIcon $ stripDatePipe $ stripLeadingIcon $ T.strip raw
   where
-    icon = bscIcon series
+    seriesIcon = icon series
 
     stripLeadingIcon t =
       maybe (T.stripStart t) T.stripStart
-        (T.stripPrefix icon (T.stripStart t))
+        (T.stripPrefix seriesIcon (T.stripStart t))
 
     stripTrailingIcon t =
       maybe (T.stripEnd t) T.stripEnd
-        (T.stripSuffix icon (T.stripEnd t))
+        (T.stripSuffix seriesIcon (T.stripEnd t))
 
     stripDatePipe t =
       let s = T.stripStart t
@@ -141,7 +141,7 @@ sanitizeTitle series raw =
 assembleFrontmatter :: BlogSeriesConfig -> Day -> Text -> Slug -> Text
 assembleFrontmatter series day title slug =
   let (DisplayTitle displayTitle) = buildDisplayTitle series day title
-      url = bscBaseUrl series <> "/" <> formatDay day <> "-" <> unSlug slug
+      url = baseUrl series <> "/" <> formatDay day <> "-" <> unSlug slug
   in T.intercalate "\n"
     [ "---"
     , "share: true"
@@ -149,7 +149,7 @@ assembleFrontmatter series day title slug =
     , "  - " <> quoteYamlValue displayTitle
     , "title: " <> quoteYamlValue displayTitle
     , "URL: " <> quoteYamlValue url
-    , "Author: " <> quoteYamlValue (bscAuthor series)
+    , "Author: " <> quoteYamlValue (author series)
     , "---"
     ]
 
@@ -181,7 +181,7 @@ buildUserPrompt ctx =
       comments = bcxComments ctx
       today = bcxToday ctx
       header = "Today is " <> formatDayHuman today <> "."
-        <> "\nWrite the next blog post for the " <> bscName series <> " series."
+        <> "\nWrite the next blog post for the " <> name series <> " series."
         <> "\nToday's date: " <> formatDay today
         <> "\n\nIMPORTANT: Your heading (# or ##) must contain ONLY the creative title."
         <> " Do not include dates, pipe separators, or the series icon emoji in your heading."

@@ -30,12 +30,12 @@ formatWikilink target alias = "[[" <> target <> "|" <> alias <> "]]"
 buildBackLink :: BlogSeriesConfig -> Text -> Text
 buildBackLink series filename =
   let slug = fromMaybe filename (T.stripSuffix ".md" filename)
-  in formatWikilink (bscId series <> "/" <> slug) backMarker
+  in formatWikilink (seriesId series <> "/" <> slug) backMarker
 
 buildForwardLink :: BlogSeriesConfig -> Text -> Text
 buildForwardLink series filename =
   let slug = fromMaybe filename (T.stripSuffix ".md" filename)
-  in formatWikilink (bscId series <> "/" <> slug) forwardMarker
+  in formatWikilink (seriesId series <> "/" <> slug) forwardMarker
 
 data NavigableDirectory
   = Reflections

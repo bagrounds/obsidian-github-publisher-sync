@@ -11,10 +11,8 @@ import System.Exit (exitFailure)
 import System.FilePath ((</>))
 import System.IO (hSetBuffering, stdout, stderr, BufferMode(..))
 
-import Automation.BlogSeriesConfig
-  ( BlogSeriesConfig (..)
-  , imageBackfillContentDirsFrom
-  )
+import Automation.BlogSeriesConfig (imageBackfillContentDirsFrom)
+import qualified Automation.BlogSeriesConfig as BSC
 import Automation.BlogSeriesDiscovery
   ( DiscoveredSeries (..)
   , DiscoveryError (..)
@@ -75,7 +73,7 @@ main = do
       exitFailure
 
   let seriesConfigs = fmap deriveBlogSeriesConfig discovered
-      seriesMap = Map.fromList (fmap (\config -> (bscId config, config)) seriesConfigs)
+      seriesMap = Map.fromList (fmap (\config -> (BSC.seriesId config, config)) seriesConfigs)
       runConfigs = buildBlogSeriesRunConfigs (fmap deriveBlogSeriesRunConfig discovered)
       dynamicScheduleEntries = fmap deriveScheduleEntry discovered
       fullSchedule = buildSchedule dynamicScheduleEntries

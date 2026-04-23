@@ -23,15 +23,15 @@ tests = testGroup "Wikilink"
 
 sampleSeries :: BlogSeriesConfig
 sampleSeries = BlogSeriesConfig
-  { bscId           = "chickie-loo"
-  , bscName         = "Chickie Loo"
-  , bscIcon         = "🐔"
-  , bscAuthor       = "[[chickie-loo]]"
-  , bscBaseUrl      = "https://bagrounds.org/chickie-loo"
-  , bscPriorityUser = Just "ChickieLoo"
-  , bscNavLink      = "[[index|Home]] > [[chickie-loo/index|🐔 Chickie Loo]]"
-  , bscScheduleTime = TimeOfDay 7 0 0
-  , bscContextQueries = []
+  { seriesId       = "chickie-loo"
+  , name           = "Chickie Loo"
+  , icon           = "🐔"
+  , author         = "[[chickie-loo]]"
+  , baseUrl        = "https://bagrounds.org/chickie-loo"
+  , priorityUser   = Just "ChickieLoo"
+  , navLink        = "[[index|Home]] > [[chickie-loo/index|🐔 Chickie Loo]]"
+  , scheduleTime   = TimeOfDay 7 0 0
+  , contextQueries = []
   }
 
 formatWikilinkTests :: TestTree

@@ -39,7 +39,7 @@ buildBlogContext seriesMap seriesId contentRoot comments today =
     Left reason -> pure (Left reason)
     Right series -> do
       let seriesDir = contentRoot </> T.unpack seriesId
-      contextPosts <- evaluateQueries contentRoot (bscContextQueries series)
+      contextPosts <- evaluateQueries contentRoot (contextQueries series)
       let (selfPosts, crossPosts) = partitionContextPosts seriesId seriesMap contextPosts
       agentsMd <- readAgentsMd seriesDir
       let filteredComments = filterCommentsAfterLastPost series selfPosts comments
@@ -62,31 +62,31 @@ partitionContextPosts seriesId seriesMap = foldr partition ([], [])
 annotateWithMetadata :: Map Text BlogSeriesConfig -> ContextPost -> CrossSeriesPost
 annotateWithMetadata seriesMap contextPost =
   let seriesConfig = Map.lookup (sourceDirectory contextPost) seriesMap
-      name = maybe (sourceDirectory contextPost) bscName seriesConfig
-      icon = maybe "📁" bscIcon seriesConfig
+      seriesName = maybe (sourceDirectory contextPost) name seriesConfig
+      seriesIcon = maybe "📁" icon seriesConfig
   in CrossSeriesPost
-    { crossSeriesName = name
-    , crossSeriesIcon = icon
+    { crossSeriesName = seriesName
+    , crossSeriesIcon = seriesIcon
     , crossSeriesPost = post contextPost
     }
 
 generateSeriesIndex :: BlogSeriesConfig -> Text
 generateSeriesIndex series =
-  let displayName = bscIcon series <> " " <> bscName series
+  let displayName = icon series <> " " <> name series
   in T.intercalate "\n"
     [ "---"
     , "share: true"
     , "aliases:"
     , "  - " <> quoteYamlValue displayName
     , "title: " <> quoteYamlValue displayName
-    , "URL: " <> quoteYamlValue (bscBaseUrl series)
+    , "URL: " <> quoteYamlValue (baseUrl series)
     , "backlinks: false"
     , "---"
     , "[[index|🏡 Home]]"
     , "# " <> displayName <> " (`$= dv.pages('\"' + dv.current().file.folder + '\"').length - 1`)"
     , "```dataview"
     , "LIST WITHOUT ID link(file.path, file.frontmatter.title)"
-    , "FROM \"" <> bscId series <> "\""
+    , "FROM \"" <> seriesId series <> "\""
     , "WHERE file.name != this.file.name"
     , "SORT file.name DESC"
     , "```"
@@ -130,7 +130,7 @@ updatePreviousPost seriesDir prevPost series newFilename = do
   when exists $ do
     content <- TIO.readFile filePath
     let fwdLink = buildForwardLink series newFilename
-        navPrefix = bscNavLink series
+        navPrefix = navLink series
         ls = T.splitOn "\n" content
         updatedLines = fmap (updateNavLine navPrefix fwdLink) ls
         updated = T.intercalate "\n" updatedLines

@@ -45,11 +45,11 @@ constantTests = testGroup "constants"
 aiBlogConfigTests :: TestTree
 aiBlogConfigTests = testGroup "aiBlogConfig"
   [ testCase "has ai-blog as id" $
-      bscId aiBlogConfig @?= "ai-blog"
+      seriesId aiBlogConfig @?= "ai-blog"
   , testCase "has robot emoji as icon" $
-      bscIcon aiBlogConfig @?= "🤖"
+      icon aiBlogConfig @?= "🤖"
   , testCase "has AI Blog as name" $
-      bscName aiBlogConfig @?= "AI Blog"
+      name aiBlogConfig @?= "AI Blog"
   ]
 
 --------------------------------------------------------------------------------

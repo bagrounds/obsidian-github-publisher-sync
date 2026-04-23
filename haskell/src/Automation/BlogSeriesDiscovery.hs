@@ -27,7 +27,8 @@ import System.FilePath ((</>), dropExtension, takeExtension)
 
 import qualified Automation.Gemini as Gemini
 import Automation.Json (eitherDecodeStrict)
-import Automation.BlogSeriesConfig (BlogSeriesConfig (..))
+import Automation.BlogSeriesConfig (BlogSeriesConfig)
+import qualified Automation.BlogSeriesConfig as BSC
 import Automation.BlogSeriesDiscovery.RawConfig (RawConfig (..))
 import Automation.ContextQuery (ContextQuery, defaultContextQueries)
 import Automation.Scheduler (BlogSeriesRunConfig (BlogSeriesRunConfig), ScheduleEntry (..), TaskId (..))
@@ -113,16 +114,16 @@ validateRawConfig filePath seriesIdValue RawConfig{..} =
     else Left errors
 
 deriveBlogSeriesConfig :: DiscoveredSeries -> BlogSeriesConfig
-deriveBlogSeriesConfig DiscoveredSeries{..} = BlogSeriesConfig
-  { bscId = seriesId
-  , bscName = seriesName
-  , bscIcon = seriesIcon
-  , bscAuthor = deriveAuthor seriesId
-  , bscBaseUrl = deriveBaseUrl seriesId
-  , bscPriorityUser = priorityUser
-  , bscNavLink = deriveNavLink seriesId seriesIcon seriesName
-  , bscScheduleTime = scheduleTime
-  , bscContextQueries = contextQueries
+deriveBlogSeriesConfig DiscoveredSeries{..} = BSC.BlogSeriesConfig
+  { BSC.seriesId       = seriesId
+  , BSC.name           = seriesName
+  , BSC.icon           = seriesIcon
+  , BSC.author         = deriveAuthor seriesId
+  , BSC.baseUrl        = deriveBaseUrl seriesId
+  , BSC.priorityUser   = priorityUser
+  , BSC.navLink        = deriveNavLink seriesId seriesIcon seriesName
+  , BSC.scheduleTime   = scheduleTime
+  , BSC.contextQueries = contextQueries
   }
 
 deriveBlogSeriesRunConfig :: DiscoveredSeries -> BlogSeriesRunConfig

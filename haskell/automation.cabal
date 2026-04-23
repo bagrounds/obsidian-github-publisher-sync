@@ -12,6 +12,7 @@ common shared
     RecordWildCards
     LambdaCase
     TupleSections
+    DuplicateRecordFields
   ghc-options:
     -Wall
     -Wcompat

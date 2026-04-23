@@ -202,7 +202,7 @@ runBlogSeries context seriesMap runConfigs seriesId = do
                       backLink = case previousPost of
                         Just post -> " | " <> buildBackLink series (bpFilename post)
                         Nothing -> ""
-                      navLine = bscNavLink series <> backLink
+                      navLine = navLink series <> backLink
                       displayTitle = unDisplayTitle $ buildDisplayTitle series today title
                       header = navLine <> "\n# " <> displayTitle <> "\n\n"
                       maybeSourcesSection = Gemini.formatGroundingSources groundingSources

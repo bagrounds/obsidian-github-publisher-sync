@@ -7,7 +7,8 @@ import Data.Time.LocalTime (TimeOfDay (..))
 import Test.Tasty (TestTree, testGroup)
 import Test.Tasty.HUnit (testCase, (@?=), assertBool)
 
-import Automation.BlogSeriesConfig
+import Automation.BlogSeriesConfig (BlogSeriesConfig, lookupSeriesIn, backfillContentIdsFrom)
+import qualified Automation.BlogSeriesConfig as BSC
 import Automation.BlogSeriesDiscovery
 import qualified Automation.Gemini as Gemini
 
@@ -37,20 +38,20 @@ testSeriesConfigs :: [BlogSeriesConfig]
 testSeriesConfigs = fmap deriveBlogSeriesConfig testSeries
 
 testSeriesMap :: Map.Map Text BlogSeriesConfig
-testSeriesMap = Map.fromList (fmap (\config -> (bscId config, config)) testSeriesConfigs)
+testSeriesMap = Map.fromList (fmap (\config -> (BSC.seriesId config, config)) testSeriesConfigs)
 
 tests :: TestTree
 tests = testGroup "BlogSeriesConfig"
   [ testCase "lookupSeriesIn finds chickie-loo" $
       assertBool "should find chickie-loo" $
         case lookupSeriesIn testSeriesMap "chickie-loo" of
-          Right s -> bscId s == "chickie-loo"
+          Right s -> BSC.seriesId s == "chickie-loo"
           Left _  -> False
 
   , testCase "lookupSeriesIn finds auto-blog-zero" $
       assertBool "should find auto-blog-zero" $
         case lookupSeriesIn testSeriesMap "auto-blog-zero" of
-          Right s -> bscId s == "auto-blog-zero"
+          Right s -> BSC.seriesId s == "auto-blog-zero"
           Left _  -> False
 
   , testCase "lookupSeriesIn returns Left for unknown" $
@@ -68,6 +69,6 @@ tests = testGroup "BlogSeriesConfig"
 
   , testCase "chickie-loo has correct icon" $
       case lookupSeriesIn testSeriesMap "chickie-loo" of
-        Right s -> bscIcon s @?= "🐔"
+        Right s -> BSC.icon s @?= "🐔"
         Left _  -> assertBool "should find series" False
   ]

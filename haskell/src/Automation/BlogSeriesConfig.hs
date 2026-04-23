@@ -15,15 +15,15 @@ import Automation.BlogImage.ContentDirectory (ContentDirectory (..), contentDire
 import Automation.ContextQuery (ContextQuery)
 
 data BlogSeriesConfig = BlogSeriesConfig
-  { bscId             :: Text
-  , bscName           :: Text
-  , bscIcon           :: Text
-  , bscAuthor         :: Text
-  , bscBaseUrl        :: Text
-  , bscPriorityUser   :: Maybe Text
-  , bscNavLink        :: Text
-  , bscScheduleTime   :: TimeOfDay
-  , bscContextQueries :: [ContextQuery]
+  { seriesId       :: Text
+  , name           :: Text
+  , icon           :: Text
+  , author         :: Text
+  , baseUrl        :: Text
+  , priorityUser   :: Maybe Text
+  , navLink        :: Text
+  , scheduleTime   :: TimeOfDay
+  , contextQueries :: [ContextQuery]
   } deriving (Show, Eq)
 
 lookupSeriesIn :: Map Text BlogSeriesConfig -> Text -> Either Text BlogSeriesConfig
@@ -38,7 +38,7 @@ extraContentDirs = [Reflections, AiBlog]
 
 backfillContentIdsFrom :: [BlogSeriesConfig] -> [Text]
 backfillContentIdsFrom allSeries =
-  fmap contentDirectoryToText extraContentDirs <> fmap bscId allSeries
+  fmap contentDirectoryToText extraContentDirs <> fmap seriesId allSeries
 
 libraryContentDirs :: [ContentDirectory]
 libraryContentDirs =
@@ -49,5 +49,5 @@ libraryContentDirs =
 imageBackfillContentDirsFrom :: [BlogSeriesConfig] -> [ContentDirectory]
 imageBackfillContentDirsFrom allSeries =
   extraContentDirs
-    <> fmap (contentDirectoryFromText . bscId) allSeries
+    <> fmap (contentDirectoryFromText . seriesId) allSeries
     <> libraryContentDirs

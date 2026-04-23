@@ -6,9 +6,16 @@ URL: https://bagrounds.org/books/american-gulag-inside-u-s-immigration-prisons
 share: true
 affiliate link: https://amzn.to/4exgfzo
 CTA: Confront injustice.
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_time: 2026-04-08T00:00:00Z
+force_analyze_links: false
+image_date: 2026-04-23T01:47:06Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A stark, high-contrast illustration featuring a silhouette of a person standing behind a heavy chain-link fence. The fence is rendered in cold, metallic grays and blues, stretching across the entire frame to suggest an expansive, inescapable barrier. Beyond the mesh, the background is a muted, desaturated landscape, suggesting an isolated, barren environment. A single, dramatic beam of light cuts through the shadows, illuminating the person’s hands gripping the wire, emphasizing a sense of confinement and the loss of agency. The overall aesthetic is somber, gritty, and minimalist, utilizing a monochromatic palette with sharp, jagged lines to evoke a feeling of systemic oppression and hidden injustice.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🇺🇸🔒 American Gulag: Inside U.S. Immigration Prisons  
+![books-american-gulag-inside-us-immigration-prisons](../books-american-gulag-inside-us-immigration-prisons.jpg)  
 [🛒 American Gulag: Inside U.S. Immigration Prisons. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4exgfzo)  
   
 ## 📚 Book Report: 🇺🇸 American Gulag: 🔒 Inside U.S. Immigration Prisons  

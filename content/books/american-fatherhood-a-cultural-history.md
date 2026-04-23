@@ -6,11 +6,16 @@ URL: https://bagrounds.org/books/american-fatherhood-a-cultural-history
 share: true
 affiliate link: https://amzn.to/3TdA0T3
 link_analysis_model: gemini-3.1-flash-lite-preview
-link_analysis_time: 2026-04-08T00:00:00Z
+link_analysis_time: 2026-04-16T00:00:00Z
 force_analyze_links: false
+link_analysis_version: "2"
+image_date: 2026-04-23T01:46:56Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: An evocative, split-composition illustration depicting the evolution of American fatherhood. On the left side, rendered in a muted, sepia-toned vintage style, a silhouette of a 1950s-era businessman in a suit and fedora sits stiffly in an armchair reading a newspaper, representing the traditional provider archetype. A soft, vertical gradient transition leads to the right side, rendered in vibrant, modern colors, showing a contemporary father in casual attire actively engaged on the floor with his young child, surrounded by building blocks and open storybooks. The backdrop features subtle, faint textures of historical parchment and grid lines, symbolizing the passage of time and the sociological study of the family unit. The lighting is warm and domestic, emphasizing an atmosphere of growth and shifting generational dynamics.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 👨‍👦🇺🇸📜 American Fatherhood: A Cultural History  
+![books-american-fatherhood-a-cultural-history](../books-american-fatherhood-a-cultural-history.jpg)  
 [🛒 American Fatherhood: A Cultural History. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3TdA0T3)  
   
 ## 📚 Book Report: 👨‍👧‍👦 American Fatherhood: A Cultural History by Lawrence R. Samuel  

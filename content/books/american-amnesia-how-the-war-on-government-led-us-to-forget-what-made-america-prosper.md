@@ -7,11 +7,16 @@ share: true
 affiliate link: https://amzn.to/4nzpWAQ
 CTA: 🇺🇸 Reclaim our heritage.
 link_analysis_model: gemini-3.1-flash-lite-preview
-link_analysis_time: 2026-04-03T00:00:00Z
+link_analysis_time: 2026-04-22T00:00:00Z
 force_analyze_links: false
+image_date: 2026-04-23T00:40:44Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: "A stylized, slightly faded map of the United States forms the central silhouette. Within its borders, ghostly, blueprint-like outlines of foundational American prosperity symbols emerge: a grand bridge spanning a river, a bustling factory with subtle smoke plumes, and a classical academic building. These elements appear as if old, sepia-toned memories, rendered in muted blues and grays. Overlaying this, subtle neural pathways or memory fragments appear to be dissolving or breaking apart, particularly over the prosperity symbols. A subtle crack or fissure runs through the map, visually representing division and the erosion of collective memory. The overall mood is reflective and melancholic."
+link_analysis_version: "2"
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🇺🇸🧠 American Amnesia: How the War on Government Led Us to Forget What Made America Prosper  
+![books-american-amnesia-how-the-war-on-government-led-us-to-forget-what-made-america-prosper](../books-american-amnesia-how-the-war-on-government-led-us-to-forget-what-made-america-prosper.jpg)  
 [🛒 American Amnesia: How the War on Government Led Us to Forget What Made America Prosper. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4nzpWAQ)  
   
 ## 📖 Book Report: American Amnesia  

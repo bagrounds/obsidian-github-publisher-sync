@@ -7,11 +7,16 @@ share: true
 CTA: 🕵️ Expose corruption.
 affiliate link: https://amzn.to/4nNNz9x
 link_analysis_model: gemini-3.1-flash-lite-preview
-link_analysis_time: 2026-04-10T00:00:00Z
+link_analysis_time: 2026-04-15T00:00:00Z
 force_analyze_links: false
+link_analysis_version: "2"
+image_date: 2026-04-23T03:12:53Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A dark, cinematic composition featuring a silhouette of a man in a sharp suit standing before a towering, stylized Kremlin wall. From the shadows of the wall, thin, marionette-like strings descend, attached to the mans limbs. The color palette is dominated by deep midnight blues, cold grays, and sharp, ominous crimson accents. In the foreground, a vintage rotary phone and a stack of blurred, illicit-looking documents lie on a mahogany desk, partially obscured by heavy, dramatic shadows. The atmosphere is cold, clandestine, and tense, evoking themes of espionage, hidden manipulation, and the weight of compromised power. The lighting is high-contrast, with a singular, harsh spotlight casting long, jagged shadows across the floor, suggesting a clandestine meeting or a secret deal.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🇷🇺🪝🇺🇸 American Kompromat: How the KGB Cultivated Donald Trump, and Other Tales of Sex, Greed, Power, and Treachery  
+![books-american-kompromat-how-the-kgb-cultivated-donald-trump-and-other-tales-of-sex-greed-power-and-treachery](../books-american-kompromat-how-the-kgb-cultivated-donald-trump-and-other-tales-of-sex-greed-power-and-treachery.jpg)  
 [🛒 American Kompromat: How the KGB Cultivated Donald Trump, and Other Tales of Sex, Greed, Power, and Treachery. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4nNNz9x)  
   
 ## 📚 Book Report: 🇺🇸 American Kompromat: 🇷🇺 How the KGB Cultivated Donald Trump, and Other Tales of Sex, Greed, Power, and Treachery  

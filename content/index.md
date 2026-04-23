@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-04-22T16:09:21-07:00
+updated: 2026-04-22T22:32:17-07:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -15,7 +15,7 @@ updated: 2026-04-22T16:09:21-07:00
 💬 Comment on any page with your GitHub account.  
   
 ## [🪞 Reflections](./reflections/index.md) ~ Blog (524)  
-- [2026-04-22](./reflections/2026-04-22.md)  
+- [2026-04-22 | 🗓️ Today 🧠 Brain 📈 Recession 🏛️ White 💡 Learned 🤖 AI 🤖 AI ✨ Compassion 📰 Conflict 🤖 Agency 🐔 Patience 🏛️ Well-being 🔀 Friction 📺🌟📰🤖🐔🏛️🔀🔄🤖🐲](./reflections/2026-04-22.md)  
 - [2026-04-21 | 🥳 5 🏆 Winner 🗣️ Show 🚀 Launch 🌟 Shine 📰 Progress 🐔 Eggs 🤖 Entropy 🏛️ Web 🔀 Decay 📺🌟📰🐔🤖🏛️🔀🤖🐲](./reflections/2026-04-21.md)  
 - [2026-04-20 | 🥳 Age 🌟 Progress 🌊 Secret 🐔 Machine 🏛️ Systems 📺🌟📰🐔🤖🏛️🔀🔄🤖🐲](./reflections/2026-04-20.md)  
 - [2026-04-19 | 🥳 Two 🕯️🕯️](./reflections/2026-04-19.md)  
@@ -63,32 +63,32 @@ updated: 2026-04-22T16:09:21-07:00
 - [2026-04-19 | 🌟 Weekend Glow: Innovations Blossom and Communities Thrive 🌟](./positivity-bias/2026-04-19-weekend-glow-innovations-blossom-and-communities-thrive.md)  
   
   
-## [🔀 Convergence](./convergence/index.md) (8)  
+## [🔀 Convergence](./convergence/index.md) (9)  
+- [2026-04-22 | 🔀 ⚖️ The Sovereignty of Thought: Navigating Correction, Care, and Creative Friction 🔀](./convergence/2026-04-22-the-sovereignty-of-thought-navigating-correction-care-and-creative-friction.md)  
 - [2026-04-21 | 🔀 🪞 The Enduring Battle Against Decay: From Digital Entropy to Domestic Hearth 🔀](./convergence/2026-04-21-the-enduring-battle-against-decay-from-digital-entropy-to-domestic-hearth.md)  
 - [2026-04-20 | 🔀 The Echo Chamber and the Architect: Forging Meaning in a World of Competing Systems 🔀](./convergence/2026-04-20-the-echo-chamber-and-the-architect-forging-meaning-in-a-world-of-competing-systems.md)  
 - [2026-04-19 | 🔀 🪞 The Architects of Meaning: From Friction to Flow 🔀](./convergence/2026-04-19-the-architects-of-meaning-from-friction-to-flow.md)  
-- [2026-04-18 | 🔀 🪞 The Architectures of Dynamic Truth 🔀](./convergence/2026-04-18-the-architectures-of-dynamic-truth.md)  
   
   
 ## [📚 Books](./books/index.md) (960)  
-- [📚🧠 The New York Times Guide to Essential Knowledge: A Desk Reference for the Curious Mind](./books/the-new-york-times-guide-to-essential-knowledge-a-desk-reference-for-the-curious-mind.md)  
-- [⚙️🎯 Algorithms for Optimization](./books/algorithms-for-optimization.md)  
-- [🇺🇸⚔️ Alexander Hamilton](./books/alexander-hamilton.md)  
-- [🤖🐍🔎 AI Snake Oil: What Artificial Intelligence Can Do, What It Can't, and How to Tell the Difference](./books/ai-snake-oil.md)  
+- [🇺🇸🧠 American Amnesia: How the War on Government Led Us to Forget What Made America Prosper](./books/american-amnesia-how-the-war-on-government-led-us-to-forget-what-made-america-prosper.md)  
+- [🙋‍♂️🏛️ Why I Am a Liberal: Being Definitions and Personal Confessions of Faith by the Best Minds of the Liberal Party](./books/why-i-am-a-liberal-being-definitions-and-personal-confessions-of-faith-by-the-best-minds-of-the-liberal-party.md)  
+- [🤟🆎 American Sign Language Dictionary](./books/american-sign-language-dictionary.md)  
+- [🙏🏛️ The Establishment Clause: Religion and the First Amendment](./books/the-establishment-clause-religion-and-the-first-amendment.md)  
   
   
-## [📺 Videos](./videos/index.md) (786)  
-- [🧠💰🚀 Class  > 2 | MS&E435: Economics of the AI Supercycle Stanford University Spring '26 Apoorv Agrawal](./videos/class-2-ms-e435-economics-of-the-ai-supercycle-stanford-university-spring-26-apoorv-agrawal.md)  
-- [🤖📈🚀 Class  > 1 | MS&E435: Economics of the AI Supercycle Stanford University Spring '26 Apoorv Agrawal](./videos/class-1-ms-e435-economics-of-the-ai-supercycle-stanford-university-spring-26-apoorv-agrawal.md)  
-- [🇮🇱⚔️🌍🚶 News Wrap: Netanyahu vows to press ahead in Gaza as U.N. delegates walk out in protest](./videos/news-wrap-netanyahu-vows-to-press-ahead-in-gaza-as-un-delegates-walk-out-in-protest.md)  
-- [🇺🇸🗳️⚙️🤔 How the Trump administration is trying to change the way people vote](./videos/how-the-trump-administration-is-trying-to-change-the-way-people-vote.md)  
+## [📺 Videos](./videos/index.md) (788)  
+- [🏛️➡️👑🗓️ Why Viktor Orbán Matters to Trump and Project 2025 | Anne Applebaum & Preet Bharara](./videos/why-viktor-orban-matters-to-trump-and-project-2025-anne-applebaum-preet-bharara.md)  
+- [🤖💰📈🚀 Class  > 3 | MS&E435: Economics of the AI Supercycle Stanford University Spring '26 Apoorv Agrawal](./videos/class-3-ms-e435-economics-of-the-ai-supercycle-stanford-university-spring-26-apoorv-agrawal.md)  
+- [🛂🛑🇺🇸🎤 Immigration Enforcement: Last Week Tonight with John Oliver (HBO)](./videos/immigration-enforcement-last-week-tonight-with-john-oliver-hbo.md)  
+- [🧠💪🧘 How To Force Your Brain To Do Hard Things (Lotus Method)](./videos/how-to-force-your-brain-to-do-hard-things-lotus-method.md)  
   
   
 ## [🌌 Topics](./topics/index.md) (91)  
+- [📚⚓ Books Removed From Naval Academy Library](./topics/books-removed-from-naval-academy-library.md)  
 - [⚛️ Quantum Computing](./topics/quantum-computing.md)  
 - [🔢➕➕ 3 Sum](./topics/programming-problems/3-sum.md)  
 - [🔢➕ 2 Sum](./topics/programming-problems/2-sum.md)  
-- [🇨🇳🤖 DeepSeek](./topics/deepseek.md)  
   
   
 ## [📄  Articles](./articles/index.md) (84)  

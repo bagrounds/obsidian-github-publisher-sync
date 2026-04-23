@@ -9,9 +9,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-17T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-04-22T23:30:19Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: "A stylized, isometric illustration set against a clean, soft-toned background. In the center, a human brain is depicted as a complex, glowing circuit board with interconnected nodes and flowing data lines. Surrounding the brain are various everyday objects transformed into geometric, digital icons: a calendar floating with floating task blocks, a sorting tray organizing colorful spheres, a clock face with segmented time intervals, and a branching tree diagram representing decision paths. The style is modern, minimalist, and vibrant, using a palette of deep blues, crisp whites, and accent colors like electric yellow and soft coral. The composition suggests the seamless fusion of computational logic with the messy, organic nature of human daily life."
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🤔💻🧠 Algorithms to Live By: The Computer Science of Human Decisions  
+![books-algorithms-to-live-by](../books-algorithms-to-live-by.jpg)  
 [🛒 Algorithms to Live By: The Computer Science of Human Decisions. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4kxUFwM)  
   
 ## 📚 Book Report: 🤖 Algorithms to Live By: 💻 The Computer Science of Human Decisions  

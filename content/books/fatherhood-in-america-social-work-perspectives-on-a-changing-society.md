@@ -6,8 +6,9 @@ URL: https://bagrounds.org/books/fatherhood-in-america-social-work-perspectives-
 share: true
 affiliate link: https://amzn.to/3SSpU9N
 link_analysis_model: gemini-3.1-flash-lite-preview
-link_analysis_time: 2026-04-08T00:00:00Z
+link_analysis_time: 2026-04-18T00:00:00Z
 force_analyze_links: false
+link_analysis_version: "2"
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 👨‍👩‍👧‍👦🇺🇸 Fatherhood in America: Social Work Perspectives on a Changing Society  

@@ -7,11 +7,16 @@ share: true
 CTA: 👋 Learn a new language.
 affiliate link: https://amzn.to/4qZc2cn
 link_analysis_model: gemini-3.1-flash-lite-preview
-link_analysis_time: 2026-04-06T00:00:00Z
+link_analysis_time: 2026-04-20T00:00:00Z
 force_analyze_links: false
+link_analysis_version: "2"
+image_date: 2026-04-23T05:10:56Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A minimalist, high-contrast composition featuring a pair of expressive human hands centered against a soft, neutral-toned background. The hands are captured mid-motion, depicting a clear, graceful sign language gesture that suggests movement and fluidity. Subtle, glowing geometric lines or light trails trace the path of the hands movement, emphasizing the kinetic nature of the language. The lighting is soft and cinematic, highlighting the skin texture and the precise positioning of the fingers. The overall aesthetic is modern, academic, and clean, using a palette of deep blues, crisp whites, and warm skin tones to evoke a sense of clarity, intelligence, and human connection.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🤟🆎 American Sign Language Dictionary  
+![books-american-sign-language-dictionary](../books-american-sign-language-dictionary.jpg)  
 [🛒 American Sign Language Dictionary. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4qZc2cn)  
   
 📚🧠💡 A visual and linguistic resource for learners and native signers, evolving from static English-glossed texts to dynamic video-based and monolingual ASL references that emphasize grammar and cultural context.  

@@ -6,7 +6,7 @@ title: "2026-04-23 | 🏷️ Haskell Record Field Prefix Removal Round 2 🧹"
 URL: https://bagrounds.org/ai-blog/2026-04-23-4-record-field-prefix-removal-round-2
 ---
 [[index|🏡 Home]] > [[/ai-blog/index|🤖 AI Blog]]
-# 2026-04-23 | 🏷️ Haskell Record Field Removal Round 2 🧹
+# 2026-04-23 | 🏷️ Haskell Record Field Prefix Removal Round 2 🧹
 
 ## 🎯 What Changed
 

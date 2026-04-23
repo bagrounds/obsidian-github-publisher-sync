@@ -1,6 +1,5 @@
 module Automation.DailyReflection
-  ( EnsureReflectionResult (..)
-  , UpdateReflectionResult (..)
+  ( UpdateReflectionResult (..)
   , buildReflectionContent
   , buildSeriesSectionHeading
   , buildPostLink
@@ -38,6 +37,7 @@ import qualified Automation.Platforms.Bluesky as Bluesky
 import qualified Automation.Platforms.Mastodon as Mastodon
 import qualified Automation.Platforms.Twitter as Twitter
 import Automation.Platform (updatesSectionHeader)
+import qualified Automation.DailyReflection.EnsureResult as EnsureResult
 
 embedSectionHeaders :: [Text]
 embedSectionHeaders = [Twitter.sectionHeader, Bluesky.sectionHeader, Mastodon.sectionHeader]
@@ -105,18 +105,12 @@ replaceChangesSection content preview =
 trailingSectionHeaders :: [Text]
 trailingSectionHeaders = updatesSectionHeader : changesLink : embedSectionHeaders
 
-data EnsureReflectionResult = EnsureReflectionResult
-  { errCreated          :: Bool
-  , errPreviousDate     :: Maybe Text
-  , errForwardLinkAdded :: Bool
-  } deriving (Show, Eq)
-
 data UpdateReflectionResult = UpdateReflectionResult
-  { urrReflectionCreated :: Bool
-  , urrSectionCreated    :: Bool
-  , urrLinkInserted      :: Bool
-  , urrForwardLinkAdded  :: Bool
-  , urrPreviousDate      :: Maybe Text
+  { reflectionCreated :: Bool
+  , sectionCreated    :: Bool
+  , linkInserted      :: Bool
+  , forwardLinkAdded  :: Bool
+  , previousDate      :: Maybe Text
   } deriving (Show, Eq)
 
 buildReflectionContent :: Day -> Maybe Text -> Text
@@ -218,20 +212,20 @@ findPreviousReflectionDate reflectionsDir today = do
         _  -> Just $ T.pack $ dropExtension $ T.unpack $ last candidates
     else pure Nothing
 
-ensureDailyReflection :: FilePath -> Day -> IO EnsureReflectionResult
+ensureDailyReflection :: FilePath -> Day -> IO EnsureResult.EnsureReflectionResult
 ensureDailyReflection reflectionsDir today = do
   let todayText = formatDay today
       reflectionPath = reflectionsDir </> T.unpack todayText <> ".md"
   exists <- doesFileExist reflectionPath
   if exists
-    then pure EnsureReflectionResult
-      { errCreated = False, errPreviousDate = Nothing, errForwardLinkAdded = False }
+    then pure EnsureResult.EnsureReflectionResult
+      { EnsureResult.reflectionCreated = False, EnsureResult.previousDate = Nothing, EnsureResult.forwardLinkAdded = False }
     else do
-      previousDate <- findPreviousReflectionDate reflectionsDir todayText
-      let content = buildReflectionContent today previousDate
+      maybePreviousDate <- findPreviousReflectionDate reflectionsDir todayText
+      let content = buildReflectionContent today maybePreviousDate
       createDirectoryIfMissing True reflectionsDir
       TIO.writeFile reflectionPath content
-      forwardLinkAdded <- case previousDate of
+      didAddForwardLink <- case maybePreviousDate of
         Nothing -> pure False
         Just pd -> do
           let prevPath = reflectionsDir </> T.unpack pd <> ".md"
@@ -244,27 +238,27 @@ ensureDailyReflection reflectionsDir today = do
                 then pure False
                 else TIO.writeFile prevPath updated >> pure True
             else pure False
-      pure EnsureReflectionResult
-        { errCreated = True, errPreviousDate = previousDate, errForwardLinkAdded = forwardLinkAdded }
+      pure EnsureResult.EnsureReflectionResult
+        { EnsureResult.reflectionCreated = True, EnsureResult.previousDate = maybePreviousDate, EnsureResult.forwardLinkAdded = didAddForwardLink }
 
 updateDailyReflection :: FilePath -> Day -> BlogSeriesConfig -> Text -> Title -> Maybe Text -> IO UpdateReflectionResult
 updateDailyReflection vaultDir today series postFilename postTitle replacingFilename = do
   let todayText = formatDay today
       reflectionsDir = vaultDir </> "reflections"
-  EnsureReflectionResult{..} <- ensureDailyReflection reflectionsDir today
+  EnsureResult.EnsureReflectionResult{..} <- ensureDailyReflection reflectionsDir today
   let reflectionPath = reflectionsDir </> T.unpack todayText <> ".md"
   content <- TIO.readFile reflectionPath
   let filenameNoExt = T.pack $ dropExtension $ T.unpack postFilename
       replacingFilenameNoExt = fmap (T.pack . dropExtension . T.unpack) replacingFilename
       hadSection = T.isInfixOf (buildSeriesSectionHeading series) content
       updated = insertPostLink content series filenameNoExt postTitle replacingFilenameNoExt
-      linkInserted = updated /= content
-  when linkInserted $
+      linkInserted' = updated /= content
+  when linkInserted' $
     TIO.writeFile reflectionPath updated
   pure UpdateReflectionResult
-    { urrReflectionCreated = errCreated
-    , urrSectionCreated    = not hadSection && linkInserted
-    , urrLinkInserted      = linkInserted
-    , urrForwardLinkAdded  = errForwardLinkAdded
-    , urrPreviousDate      = errPreviousDate
+    { reflectionCreated = reflectionCreated
+    , sectionCreated    = not hadSection && linkInserted'
+    , linkInserted      = linkInserted'
+    , forwardLinkAdded  = forwardLinkAdded
+    , previousDate      = previousDate
     }

@@ -43,6 +43,7 @@ library
     Automation.BlogPrompt
     Automation.BlogSeries
     Automation.DailyReflection
+    Automation.DailyReflection.EnsureResult
     Automation.DailyUpdates
     Automation.EmbedSection
     Automation.Prompts

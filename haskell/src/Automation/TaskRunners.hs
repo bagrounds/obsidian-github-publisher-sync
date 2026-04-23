@@ -335,7 +335,7 @@ runBackfillImages context contentDirs = do
         let filename = T.drop (T.length "ai-blog/") relPath
         result <- updateDailyReflection vaultDir day aiBlogConfig filename title Nothing
         case result of
-          _ | urrLinkInserted result ->
+          _ | linkInserted result ->
                 logMsg $ "  🤖 Added AI blog link to " <> dateText <> " reflection: " <> relPath
             | otherwise -> pure ()
     ) todayLinks

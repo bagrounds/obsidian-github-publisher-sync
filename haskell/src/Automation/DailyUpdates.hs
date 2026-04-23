@@ -26,7 +26,8 @@ import System.Directory (createDirectoryIfMissing, doesDirectoryExist, doesFileE
 import System.FilePath ((</>), dropExtension, takeBaseName)
 import Text.Read (readMaybe)
 
-import Automation.DailyReflection (ensureDailyReflection, EnsureReflectionResult (..), findFirstSectionIndex, embedSectionHeaders, upsertChangesPreview, ChangesStats (..), renderChangesStats)
+import Automation.DailyReflection (ensureDailyReflection, findFirstSectionIndex, embedSectionHeaders, upsertChangesPreview, ChangesStats (..), renderChangesStats)
+import Automation.DailyReflection.EnsureResult (EnsureReflectionResult (..))
 import Automation.Frontmatter (parseFrontmatter, quoteYamlValue)
 import Automation.PacificTime (formatDay)
 import Automation.Platform (Platform (..), updatesSectionHeader)
@@ -542,7 +543,7 @@ addUpdateLinksToReflection vaultDir date links = do
   reflectionExists <- doesFileExist reflectionPath
   unless reflectionExists $ do
     result <- ensureDailyReflection reflectionsDir date
-    when (errCreated result) $
+    when (reflectionCreated result) $
       TIO.putStrLn ("  \128221 Created daily reflection for " <> dateText)
   ensureChangesDirectory changesDir
   ensureChangesPage changesDir date

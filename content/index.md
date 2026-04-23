@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-04-23T12:54:03-07:00
+updated: 2026-04-23T14:35:47-07:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -71,17 +71,17 @@ updated: 2026-04-23T12:54:03-07:00
   
   
 ## [📚 Books](./books/index.md) (960)  
-- [🌊🥋 Be Water, My Friend: The Teachings of Bruce Lee](./books/be-water-my-friend-the-teachings-of-bruce-lee.md)  
-- [👣🗺️💥 Everyone Who Is Gone Is Here: The United States, Central America, and the Making of a Crisis](./books/everyone-who-is-gone-is-here-the-united-states-central-america-and-the-making-of-a-crisis.md)  
-- [⚡🗣️ Think Faster, Talk Smarter: How to Speak Successfully When You're Put on the Spot](./books/think-faster-talk-smarter-how-to-speak-successfully-when-youre-put-on-the-spot.md)  
-- [🤖🧠 Artificial Intelligence: A Modern Approach](./books/artificial-intelligence-a-modern-approach.md)  
+- [🌡️✅🌎 What If We Get It Right?: Visions of Climate Futures](./books/what-if-we-get-it-right-visions-of-climate-futures.md)  
+- [👑🌎 Autocracy, Inc.: The Dictators Who Want to Run the World](./books/autocracy-inc-the-dictators-who-want-to-run-the-world.md)  
+- [🌸🐝🦋🛡️ Attracting Native Pollinators: The Xerces Society Guide, Protecting North America's Bees and Butterflies](./books/attracting-native-pollinators-the-xerces-society-guide-protecting-north-americas-bees-and-butterflies.md)  
+- [🤔💪 Attention and effort](./books/attention.md)  
   
   
-## [📺 Videos](./videos/index.md) (789)  
-- [⚖️🦅🐘❓🔄 LegalEagle’s Devin Stone On The ‘Unpresidented’ Times of Trump 2.0](./videos/legaleagles-devin-stone-on-the-unpresidented-times-of-trump-2-0.md)  
-- [🏃🤸💃📚 The Kinesthetic Classroom: Teaching and Learning through Movement | Michael Kuczala | TEDxAshburn](./videos/the-kinesthetic-classroom-teaching-and-learning-through-movement-michael-kuczala-tedxashburn.md)  
-- [🚪👥🚫⚖️ Trump Said He’d Deport Millions. What’s Happening on the Ground? | WSJ](./videos/trump-said-hed-deport-millions-whats-happening-on-the-ground-wsj.md)  
-- [🗣️✨ How to Speak Clearly & With Confidence | Matt Abrahams](./videos/how-to-speak-clearly-and-with-confidence-matt-abrahams.md)  
+## [📺 Videos](./videos/index.md) (790)  
+- [📢👂🆕💻✨ We heard you: the new Framework Laptop 13 Pro.](./videos/we-heard-you-the-new-framework-laptop-13-pro.md)  
+- [Susan Crawford wins Wisconsin Supreme Court seat, cementing liberal majority](./videos/susan-crawford-wins-wisconsin-supreme-court-seat-cementing-liberal-majority.md)  
+- [To Save Democracy, Here’s a Playbook That Works](./videos/to-save-democracy-heres-a-playbook-that-works.md)  
+- [Systems Thinking Course - Lesson 03 - Pillar 2: Communication](./videos/systems-thinking-course-lesson-03-pillar-2-communication.md)  
   
   
 ## [🌌 Topics](./topics/index.md) (91)  

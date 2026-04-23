@@ -10,9 +10,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-18T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-04-23T21:26:37Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A dark, cinematic composition featuring a sprawling, interconnected digital web that spans the globe. Glowing, golden lines of light form a complex network connecting various silhouettes of capital cities, representing a shadow infrastructure. At the center of the globe, several indistinct, shadowy figures in sharp suits stand around a circular, metallic conference table, their faces obscured by deep, dramatic shadows. A subtle, cold blue light illuminates the edges of the globe, contrasting with the warm, greedy glow of the golden network. The atmosphere is tense, sophisticated, and ominous, emphasizing themes of surveillance, kleptocracy, and clandestine global influence. The background is a deep, textured midnight blue, suggesting a high-level, hidden operation occurring just out of sight.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 👑🌎 Autocracy, Inc.: The Dictators Who Want to Run the World  
+![books-autocracy-inc-the-dictators-who-want-to-run-the-world](../books-autocracy-inc-the-dictators-who-want-to-run-the-world.jpg)  
 [🛒 Autocracy, Inc.: The Dictators Who Want to Run the World. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4aiO4Ez)  
   
 🍎 Modern autocracies, unlike historical dictatorships, form a global, interconnected 🌐 network of kleptocratic regimes sharing tactics, technology, and disinformation to undermine democracies and perpetuate their power and wealth 💰.  

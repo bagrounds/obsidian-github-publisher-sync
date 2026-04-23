@@ -5,10 +5,10 @@ aliases:
 title: 📺 Videos
 URL: https://bagrounds.org/videos
 backlinks: false
-updated: 2026-04-23T12:54:03-07:00
+updated: 2026-04-23T14:35:47-07:00
 ---
 [Home](../index.md)  
-# 📺 Videos (789)  
+# 📺 Videos (790)  
 - [💰🤑🤖💡🚀💲 $0.10 per Month Runs My Entire AI Life. I'll Show You How.](./0-10-month-runs-my-entire-ai-life-ill-show-you-how.md)  
 - [📊📈📉📃👁️ 10 Charts to Understand the 900 Page Budget Bill](./10-charts-to-understand-the-900-page-budget-bill.md)  
 - [🤖🔗⬆️✅ 12-Factor Agents: Patterns of reliable LLM applications — Dex Horthy, HumanLayer](./12-factor-agents-patterns-of-reliable-llm-applications-dex-horthy-humanlayer.md)  
@@ -716,6 +716,7 @@ updated: 2026-04-23T12:54:03-07:00
 - [⏳🗳️🙅 We Cannot Wait for the Ballot Box in November 2026 | Explainer](./we-cannot-wait-for-the-ballot-box-in-november-2026-explainer.md)  
 - [⬆️💸💥💡⬇️ We Found The Radical Solution To Skyrocketing Grocery Prices](./we-found-the-radical-solution-to-skyrocketing-grocery-prices.md)  
 - [🛒💲📈 We Had 400 People Shop For Groceries. What We Found Will Shock You.](./we-had-400-people-shop-for-groceries-what-we-found-will-shock-you.md)  
+- [📢👂🆕💻✨ We heard you: the new Framework Laptop 13 Pro.](./we-heard-you-the-new-framework-laptop-13-pro.md)  
 - [🔎💸🕵️‍♂️🏛️🇺🇸🤫💥🤯 We Investigated The Criminals Who Bought Trump: What We Found Will Shock You](./we-investigated-the-criminals-who-bought-trump-what-we-found-will-shock-you.md)  
 - [What America is losing as President Trump fires independent government watchdogs | 60 Minutes](./what-america-is-losing-as-president-trump-fires-independent-government-watchdogs-60-minutes.md)  
 - [What Are You?](./what-are-you.md)  

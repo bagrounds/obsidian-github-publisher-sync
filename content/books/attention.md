@@ -12,9 +12,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-15T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-04-23T20:29:17Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A minimalist, high-contrast illustration featuring a single, glowing lightbulb suspended in a dark, clean space. The filament of the bulb is intricately designed to resemble a human brain, with thin, golden lines of light radiating outward to represent the delicate, finite nature of focus. Below the bulb, a translucent, crystalline prism captures the light, refracting it into a narrow, focused beam that illuminates a single, sharp point on a dark surface. The color palette is restricted to deep midnight blues, charcoal grays, and a singular, vibrant amber for the light, emphasizing the concepts of controlled energy, mental clarity, and the prioritization of cognitive resources against a backdrop of complex, chaotic shadows.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🤔💪 Attention and effort  
+![books-attention](../books-attention.jpg)  
 [🛒 Attention and effort. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4kp44XK)  
   
 ## 🤖 AI Summary  

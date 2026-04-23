@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-04-22T22:32:17-07:00
+updated: 2026-04-23T11:00:46-07:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -14,11 +14,11 @@ updated: 2026-04-22T22:32:17-07:00
 🔊 Listen to any page with built in audio control.  
 💬 Comment on any page with your GitHub account.  
   
-## [🪞 Reflections](./reflections/index.md) ~ Blog (524)  
+## [🪞 Reflections](./reflections/index.md) ~ Blog (525)  
+- [2026-04-23](./reflections/2026-04-23.md)  
 - [2026-04-22 | 🗓️ Today 🧠 Brain 📈 Recession 🏛️ White 💡 Learned 🤖 AI 🤖 AI ✨ Compassion 📰 Conflict 🤖 Agency 🐔 Patience 🏛️ Well-being 🔀 Friction 📺🌟📰🤖🐔🏛️🔀🔄🤖🐲](./reflections/2026-04-22.md)  
 - [2026-04-21 | 🥳 5 🏆 Winner 🗣️ Show 🚀 Launch 🌟 Shine 📰 Progress 🐔 Eggs 🤖 Entropy 🏛️ Web 🔀 Decay 📺🌟📰🐔🤖🏛️🔀🤖🐲](./reflections/2026-04-21.md)  
 - [2026-04-20 | 🥳 Age 🌟 Progress 🌊 Secret 🐔 Machine 🏛️ Systems 📺🌟📰🐔🤖🏛️🔀🔄🤖🐲](./reflections/2026-04-20.md)  
-- [2026-04-19 | 🥳 Two 🕯️🕯️](./reflections/2026-04-19.md)  
   
   
 ## [🤖 AI Blog](./ai-blog/index.md) (168)  
@@ -28,39 +28,39 @@ updated: 2026-04-22T22:32:17-07:00
 - [2026-04-19 | 🔧 Fixing the Misplaced H2 🤖](./ai-blog/2026-04-19-1-fixing-the-misplaced-h2.md)  
   
   
-## [🤖 Auto Blog Zero](./auto-blog-zero/index.md) (43)  
+## [🤖 Auto Blog Zero](./auto-blog-zero/index.md) (44)  
+- [2026-04-23 | 🤖 🧠 Beyond the Scaffolding of Correction 🤖](./auto-blog-zero/2026-04-23-beyond-the-scaffolding-of-correction.md)  
 - [2026-04-22 | 🤖 The Feedback Loop of Agency 🤖](./auto-blog-zero/2026-04-22-the-feedback-loop-of-agency.md)  
 - [2026-04-21 | 🤖 🏗️ Preventing Synthetic Entropy in Adversarial Loops 🤖](./auto-blog-zero/2026-04-21-preventing-synthetic-entropy-in-adversarial-loops.md)  
 - [2026-04-20 | 🤖 The Ethics of the Adversarial Machine 🤖](./auto-blog-zero/2026-04-20-the-ethics-of-the-adversarial-machine.md)  
-- [2026-04-19 | 🤖 📆 Weekly Recap: The Architecture of Adversarial Verification 🤖](./auto-blog-zero/2026-04-19-weekly-recap-the-architecture-of-adversarial-verification.md)  
   
   
-## [🐔 Chickie Loo](./chickie-loo/index.md) (43)  
+## [🐔 Chickie Loo](./chickie-loo/index.md) (44)  
+- [2026-04-23 | 🐔 🍪 Cookies, Plumbers, and the Joy of a Full Pantry 🐔](./chickie-loo/2026-04-23-cookies-plumbers-and-the-joy-of-a-full-pantry.md)  
 - [2026-04-22 | 🐔 🥚 Pickled Dreams and Kitchen Patience 🐔](./chickie-loo/2026-04-22-pickled-dreams-and-kitchen-patience.md)  
 - [2026-04-21 | 🐔 🔌 Electricians, Eggs, and the Art of Not Naming Calves 🐔](./chickie-loo/2026-04-21-electricians-eggs-and-the-art-of-not-naming-calves.md)  
 - [2026-04-20 | 🐔 🍽️ A Dining Room of Dreams and a Cow’s Quiet Secret 🐔](./chickie-loo/2026-04-20-a-dining-room-of-dreams-and-a-cow-s-quiet-secret.md)  
-- [2026-04-19 | 🐔 🥂 A Dance Floor in the Making 🐔](./chickie-loo/2026-04-19-a-dance-floor-in-the-making.md)  
   
   
-## [🏛️ Systems for Public Good](./systems-for-public-good/index.md) (32)  
+## [🏛️ Systems for Public Good](./systems-for-public-good/index.md) (33)  
+- [2026-04-23 | 🏛️ 📚 The Enduring Sanctuary of Knowledge: Public Libraries as Public Goods 🏛️](./systems-for-public-good/2026-04-23-the-enduring-sanctuary-of-knowledge-public-libraries-as-public-goods.md)  
 - [2026-04-22 | 🏛️ The Unseen Threads: Connecting Our Collective Well-being 🏛️](./systems-for-public-good/2026-04-22-the-unseen-threads-connecting-our-collective-well-being.md)  
 - [2026-04-21 | 🏛️ The Interconnected Web of Well-being 🏛️](./systems-for-public-good/2026-04-21-the-interconnected-web-of-well-being.md)  
 - [2026-04-20 | 🏛️ The Interconnected Web of Well-being 🏛️](./systems-for-public-good/2026-04-20-the-interconnected-web-of-well-being.md)  
-- [2026-04-19 | 🏛️ 🗺️ Navigating Our Collective Well-being: A Week of Foundational Investments 🏛️](./systems-for-public-good/2026-04-19-navigating-our-collective-well-being-a-week-of-foundational-investments.md)  
   
   
-## [📰 The Noise](./the-noise/index.md) (13)  
+## [📰 The Noise](./the-noise/index.md) (14)  
+- [2026-04-23 | 📰 🌐 Navigating Shifting Grounds and Soaring Heights 🚀 📰](./the-noise/2026-04-23-navigating-shifting-grounds-and-soaring-heights.md)  
 - [2026-04-22 | 📰 The Dual Engine of Progress and Conflict 📰](./the-noise/2026-04-22-the-dual-engine-of-progress-and-conflict.md)  
 - [2026-04-21 | 📰 The Dual Engine of Progress and Conflict 📰](./the-noise/2026-04-21-the-dual-engine-of-progress-and-conflict.md)  
 - [2026-04-20 | 📰 🌐 Shifting Sands, Enduring Currents 🌊 📰](./the-noise/2026-04-20-shifting-sands-enduring-currents.md)  
-- [2026-04-19 | 📰 🌪️ Turbulent Crossroads, Persistent Progress 🌍 📰](./the-noise/2026-04-19-turbulent-crossroads-persistent-progress.md)  
   
   
-## [🌟 Positivity Bias](./positivity-bias/index.md) (12)  
+## [🌟 Positivity Bias](./positivity-bias/index.md) (13)  
+- [2026-04-23 | 🌟 Triumphs of Ingenuity and Compassion 🌟](./positivity-bias/2026-04-23-triumphs-of-ingenuity-and-compassion.md)  
 - [2026-04-22 | 🌟 A World of Innovation and Compassion 🌟](./positivity-bias/2026-04-22-a-world-of-innovation-and-compassion.md)  
 - [2026-04-21 | 🌟 Health, Environment, and Diplomacy Shine Bright 🌟](./positivity-bias/2026-04-21-health-environment-and-diplomacy-shine-bright.md)  
 - [2026-04-20 | 🌟 Global Innovations Spark Collective Progress 🌟](./positivity-bias/2026-04-20-global-innovations-spark-collective-progress.md)  
-- [2026-04-19 | 🌟 Weekend Glow: Innovations Blossom and Communities Thrive 🌟](./positivity-bias/2026-04-19-weekend-glow-innovations-blossom-and-communities-thrive.md)  
   
   
 ## [🔀 Convergence](./convergence/index.md) (9)  
@@ -71,17 +71,17 @@ updated: 2026-04-22T22:32:17-07:00
   
   
 ## [📚 Books](./books/index.md) (960)  
-- [🇺🇸🧠 American Amnesia: How the War on Government Led Us to Forget What Made America Prosper](./books/american-amnesia-how-the-war-on-government-led-us-to-forget-what-made-america-prosper.md)  
-- [🙋‍♂️🏛️ Why I Am a Liberal: Being Definitions and Personal Confessions of Faith by the Best Minds of the Liberal Party](./books/why-i-am-a-liberal-being-definitions-and-personal-confessions-of-faith-by-the-best-minds-of-the-liberal-party.md)  
-- [🤟🆎 American Sign Language Dictionary](./books/american-sign-language-dictionary.md)  
-- [🙏🏛️ The Establishment Clause: Religion and the First Amendment](./books/the-establishment-clause-religion-and-the-first-amendment.md)  
+- [❓➡️ An Introduction to Causal Inference](./books/an-introduction-to-causal-inference.md)  
+- [🇺🇸🏹 An Indigenous Peoples' History of the United States](./books/an-indigenous-peoples-history-of-the-united-states.md)  
+- [😠🎭 Uncivil Agreement: How Politics Became Our Identity](./books/uncivil-agreement-how-politics-became-our-identity.md)  
+- [✍️🗺️🏗️🗳️ An Architect of Democracy: Building a Mosaic of Peace](./books/an-architect-of-democracy.md)  
   
   
 ## [📺 Videos](./videos/index.md) (788)  
-- [🏛️➡️👑🗓️ Why Viktor Orbán Matters to Trump and Project 2025 | Anne Applebaum & Preet Bharara](./videos/why-viktor-orban-matters-to-trump-and-project-2025-anne-applebaum-preet-bharara.md)  
-- [🤖💰📈🚀 Class  > 3 | MS&E435: Economics of the AI Supercycle Stanford University Spring '26 Apoorv Agrawal](./videos/class-3-ms-e435-economics-of-the-ai-supercycle-stanford-university-spring-26-apoorv-agrawal.md)  
-- [🛂🛑🇺🇸🎤 Immigration Enforcement: Last Week Tonight with John Oliver (HBO)](./videos/immigration-enforcement-last-week-tonight-with-john-oliver-hbo.md)  
-- [🧠💪🧘 How To Force Your Brain To Do Hard Things (Lotus Method)](./videos/how-to-force-your-brain-to-do-hard-things-lotus-method.md)  
+- [👹📜🏛️🏠 What's in the version of Trump's bill passed by the Senate and its chances in the House](./videos/whats-in-the-version-of-trumps-bill-passed-by-the-senate-and-its-chances-in-the-house.md)  
+- [👹🐊🔒 Trump visits Florida's 'Alligator Alcatraz,' urges more states to open ICE detention sites](./videos/trump-visits-floridas-alligator-alcatraz-urges-more-states-to-open-ice-detention-sites.md)  
+- [🏛️👹👑📜 Politics Chat, July 1, 2025](./videos/politics-chat-july-1-2025.md)  
+- [🧠🛠️♾️💪 How to reprogram your mind to have infinite resilience](./videos/how-to-reprogram-your-mind-to-have-infinite-resilience.md)  
   
   
 ## [🌌 Topics](./topics/index.md) (91)  

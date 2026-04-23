@@ -84,10 +84,10 @@ import Automation.ReflectionTitle
 import Automation.RelativePath (unRelativePath, mkRelativePath)
 import Automation.Scheduler
   ( TaskId (..)
-  , BlogSeriesRunConfig (..)
   , blogPostExistsForToday
   , findPostToRegenerate
   )
+import qualified Automation.Scheduler as Scheduler
 import Automation.SocialPosting (autoPost)
 import Automation.TaskRunner (logMsg, failTask)
 import Automation.Text (stripCodeFences)
@@ -118,7 +118,7 @@ extractRecentCreativeTitles reflectionsDir today = do
       content <- TIO.readFile (reflectionsDir </> filename)
       pure (extractCreativeTitle content)
 
-runBlogSeries :: Context.AppContext -> Map Text BlogSeriesConfig -> Map Text BlogSeriesRunConfig -> Text -> IO ()
+runBlogSeries :: Context.AppContext -> Map Text BlogSeriesConfig -> Map Text Scheduler.BlogSeriesRunConfig -> Text -> IO ()
 runBlogSeries context seriesMap runConfigs seriesId = do
   let taskName = "blog-series:" <> seriesId
       manager = Context.httpManager context
@@ -159,10 +159,9 @@ runBlogSeries context seriesMap runConfigs seriesId = do
     (Nothing, True) -> pure ()
     _ -> do
       envModel <- lookupEnvText "BLOG_GEMINI_MODEL"
-      let BlogSeriesRunConfig{modelChain, searchGrounding} = runConfig
-          models = Gemini.overrideModelChain envModel modelChain
+      let models = Gemini.overrideModelChain envModel (Scheduler.modelChain runConfig)
 
-      priorityUser <- lookupEnvText (T.unpack (priorityUserEnvVar runConfig))
+      priorityUser <- lookupEnvText (T.unpack (Scheduler.priorityUserEnvVar runConfig))
 
       comments <- fetchAllSeriesComments manager seriesId (priorityUser >>= (\u -> if T.null u then Nothing else Just u))
       logMsg $ "  📝 Fetched " <> T.pack (show (length comments)) <> " comments"
@@ -174,7 +173,7 @@ runBlogSeries context seriesMap runConfigs seriesId = do
           let (systemPrompt, userPrompt) = buildBlogPrompt blogContext
               genConfig = Gemini.defaultGenerationConfig
                 { Gemini.temperature = 0.9, Gemini.maxOutputTokens = 8192
-                , Gemini.searchGrounding = searchGrounding
+                , Gemini.searchGrounding = Scheduler.searchGrounding runConfig
                 }
 
           result <- Gemini.generateContentWithFallback manager models (Just systemPrompt) userPrompt apiKey genConfig
@@ -603,7 +602,7 @@ fetchAnalytics manager accessToken endpoint body = do
     _ -> pure $ Left $ "GA API HTTP " <> T.pack (show status)
       <> ": " <> TE.decodeUtf8 (LBS.toStrict (LBS.take 1000 responseBytes))
 
-taskRunners :: Context.AppContext -> Map Text BlogSeriesConfig -> Map Text BlogSeriesRunConfig -> [ContentDirectory] -> [DiscoveredSeries] -> Map TaskId (IO ())
+taskRunners :: Context.AppContext -> Map Text BlogSeriesConfig -> Map Text Scheduler.BlogSeriesRunConfig -> [ContentDirectory] -> [DiscoveredSeries] -> Map TaskId (IO ())
 taskRunners context seriesMap runConfigs contentDirs discovered =
   let blogSeriesRunners = Map.fromList
         (fmap (\DiscoveredSeries{..} -> (BlogSeries seriesId, runBlogSeries context seriesMap runConfigs seriesId)) discovered)

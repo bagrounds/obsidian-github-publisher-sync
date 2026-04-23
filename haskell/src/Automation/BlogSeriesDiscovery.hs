@@ -1,3 +1,4 @@
+{-# LANGUAGE DuplicateRecordFields #-}
 module Automation.BlogSeriesDiscovery
   ( DiscoveredSeries (..)
   , DiscoveryError (..)
@@ -29,7 +30,8 @@ import qualified Automation.Gemini as Gemini
 import Automation.Json (FromValue (..), withObject, (.:), (.:?), eitherDecodeStrict)
 import Automation.BlogSeriesConfig (BlogSeriesConfig (..))
 import Automation.ContextQuery (ContextQuery, defaultContextQueries)
-import Automation.Scheduler (BlogSeriesRunConfig (..), ScheduleEntry (..), TaskId (..))
+import Automation.Scheduler (BlogSeriesRunConfig (BlogSeriesRunConfig), ScheduleEntry (..), TaskId (..))
+import qualified Automation.Scheduler as Scheduler
 
 configDirectoryName :: FilePath
 configDirectoryName = "series"
@@ -84,7 +86,7 @@ discoverSeries baseDir = do
       let errors = concatMap (\case Left errs -> errs; Right _ -> []) results
           successes = concatMap (\case Right series -> [series]; Left _ -> []) results
       if null errors
-        then pure (Right (sortOn (\DiscoveredSeries{..} -> seriesId) successes))
+        then pure (Right (sortOn seriesId successes))
         else pure (Left errors)
 
 isJsonFile :: FilePath -> Bool
@@ -146,10 +148,10 @@ deriveBlogSeriesConfig DiscoveredSeries{..} = BlogSeriesConfig
 
 deriveBlogSeriesRunConfig :: DiscoveredSeries -> BlogSeriesRunConfig
 deriveBlogSeriesRunConfig DiscoveredSeries{..} = BlogSeriesRunConfig
-  { seriesId          = seriesId
-  , modelChain        = modelChain
-  , priorityUserEnvVar = derivePriorityUserEnvVar seriesId
-  , searchGrounding   = searchGrounding
+  { Scheduler.seriesId          = seriesId
+  , Scheduler.modelChain        = modelChain
+  , Scheduler.priorityUserEnvVar = derivePriorityUserEnvVar seriesId
+  , Scheduler.searchGrounding   = searchGrounding
   }
 
 deriveScheduleEntry :: DiscoveredSeries -> ScheduleEntry

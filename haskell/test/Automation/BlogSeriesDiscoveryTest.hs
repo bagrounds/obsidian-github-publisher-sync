@@ -12,7 +12,8 @@ import qualified Automation.Gemini as Gemini
 import Automation.BlogSeriesConfig (BlogSeriesConfig (..))
 import Automation.BlogSeriesDiscovery
 import Automation.ContextQuery (ContextQuery (..), defaultContextQueries)
-import Automation.Scheduler (TaskId (..), ScheduleEntry (..), BlogSeriesRunConfig (..))
+import Automation.Scheduler (TaskId (..), ScheduleEntry (..))
+import qualified Automation.Scheduler as Scheduler
 
 tests :: TestTree
 tests = testGroup "BlogSeriesDiscovery"
@@ -22,11 +23,9 @@ tests = testGroup "BlogSeriesDiscovery"
   , properties
   ]
 
-unsafeParse :: T.Text -> T.Text -> DiscoveredSeries
-unsafeParse seriesId content =
-  case parseSeriesConfig seriesId content of
-    Right discovered -> discovered
-    Left errors -> error $ "Test setup failed: " <> show errors
+parseSeries :: T.Text -> T.Text -> DiscoveredSeries
+parseSeries identifier content =
+  either (error . show) id (parseSeriesConfig identifier content)
 
 parseSeriesConfigTests :: TestTree
 parseSeriesConfigTests = testGroup "parseSeriesConfig"
@@ -51,32 +50,32 @@ parseSeriesConfigTests = testGroup "parseSeriesConfig"
         isLeft (parseSeriesConfig "test" "not json")
 
   , testCase "extracts correct name" $
-      seriesName (unsafeParse "garden-thoughts" minimalConfig) @?= "Garden Thoughts"
+      seriesName (parseSeries "garden-thoughts" minimalConfig) @?= "Garden Thoughts"
 
   , testCase "extracts correct icon" $
-      seriesIcon (unsafeParse "garden-thoughts" minimalConfig) @?= "\129793"
+      seriesIcon (parseSeries "garden-thoughts" minimalConfig) @?= "\129793"
 
   , testCase "extracts correct schedule hour" $
-      todHour (scheduleTime (unsafeParse "garden-thoughts" minimalConfig)) @?= 11
+      todHour (scheduleTime (parseSeries "garden-thoughts" minimalConfig)) @?= 11
 
   , testCase "extracts correct models" $
-      let DiscoveredSeries{modelChain} = unsafeParse "garden-thoughts" minimalConfig
+      let DiscoveredSeries{modelChain} = parseSeries "garden-thoughts" minimalConfig
       in modelChain @?= (Gemini.Gemini25Flash :| [Gemini.Gemini25FlashLite])
 
   , testCase "extracts correct post time" $
-      scheduleTime (unsafeParse "garden-thoughts" minimalConfig) @?= TimeOfDay 11 0 0
+      scheduleTime (parseSeries "garden-thoughts" minimalConfig) @?= TimeOfDay 11 0 0
 
   , testCase "extracts priority user" $
-      priorityUser (unsafeParse "garden-thoughts" minimalConfig) @?= Just "bagrounds"
+      priorityUser (parseSeries "garden-thoughts" minimalConfig) @?= Just "bagrounds"
 
   , testCase "missing priority user defaults to Nothing" $
-      priorityUser (unsafeParse "solo-bot" configWithoutPriorityUser) @?= Nothing
+      priorityUser (parseSeries "solo-bot" configWithoutPriorityUser) @?= Nothing
 
   , testCase "null priority user gives Nothing" $
-      priorityUser (unsafeParse "solo-bot" configWithNullPriorityUser) @?= Nothing
+      priorityUser (parseSeries "solo-bot" configWithNullPriorityUser) @?= Nothing
 
   , testCase "sets series ID from argument" $
-      let DiscoveredSeries{seriesId} = unsafeParse "garden-thoughts" minimalConfig
+      let DiscoveredSeries{seriesId} = parseSeries "garden-thoughts" minimalConfig
       in seriesId @?= "garden-thoughts"
 
   , testCase "parses existing auto-blog-zero config" $ do
@@ -90,7 +89,7 @@ parseSeriesConfigTests = testGroup "parseSeriesConfig"
             , "  \"enableGrounding\": false"
             , "}"
             ]
-          discovered = unsafeParse "auto-blog-zero" config
+          discovered = parseSeries "auto-blog-zero" config
       seriesName discovered @?= "Auto Blog Zero"
       scheduleTime discovered @?= TimeOfDay 8 0 0
   ]
@@ -134,28 +133,24 @@ derivationTests = testGroup "derivation functions"
 
   , testCase "deriveBlogSeriesRunConfig sets correct series ID" $ do
       let config = deriveBlogSeriesRunConfig sampleDiscovered
-          BlogSeriesRunConfig{seriesId} = config
-      seriesId @?= "garden-thoughts"
+      Scheduler.seriesId config @?= "garden-thoughts"
 
   , testCase "deriveBlogSeriesRunConfig sets correct model chain" $ do
       let config = deriveBlogSeriesRunConfig sampleDiscovered
-          BlogSeriesRunConfig{modelChain} = config
-      modelChain @?= (Gemini.Gemini25Flash :| [Gemini.Gemini25FlashLite])
+      Scheduler.modelChain config @?= (Gemini.Gemini25Flash :| [Gemini.Gemini25FlashLite])
 
   , testCase "deriveBlogSeriesRunConfig sets correct env var" $ do
       let config = deriveBlogSeriesRunConfig sampleDiscovered
-      priorityUserEnvVar config @?= "GARDEN_THOUGHTS_PRIORITY_USER"
+      Scheduler.priorityUserEnvVar config @?= "GARDEN_THOUGHTS_PRIORITY_USER"
 
   , testCase "deriveBlogSeriesRunConfig sets searchGrounding false for sampleDiscovered" $ do
       let config = deriveBlogSeriesRunConfig sampleDiscovered
-          BlogSeriesRunConfig{searchGrounding} = config
-      searchGrounding @?= False
+      Scheduler.searchGrounding config @?= False
 
   , testCase "deriveBlogSeriesRunConfig passes searchGrounding true when set" $ do
-      let discovered = unsafeParse "grounded-series" configWithGrounding
+      let discovered = parseSeries "grounded-series" configWithGrounding
           config = deriveBlogSeriesRunConfig discovered
-          BlogSeriesRunConfig{searchGrounding} = config
-      searchGrounding @?= True
+      Scheduler.searchGrounding config @?= True
 
   , testCase "deriveScheduleEntry sets correct task ID" $ do
       let entry = deriveScheduleEntry sampleDiscovered
@@ -185,10 +180,10 @@ validationTests = testGroup "validation"
         isRight (parseSeriesConfig "test" configWithoutPriorityUser)
 
   , testCase "missing priorityUser defaults to Nothing" $
-      priorityUser (unsafeParse "test" configWithoutPriorityUser) @?= Nothing
+      priorityUser (parseSeries "test" configWithoutPriorityUser) @?= Nothing
 
   , testCase "parses config with contextSources" $
-      let queries = contextQueries (unsafeParse "test" configWithCrossSeries)
+      let queries = contextQueries (parseSeries "test" configWithCrossSeries)
       in case queries of
         [first, second] -> do
           directories first @?= ["test"]
@@ -198,13 +193,13 @@ validationTests = testGroup "validation"
         _ -> assertBool ("expected 2 queries, got " <> show (length queries)) False
 
   , testCase "missing contextSources defaults to defaultContextQueries" $
-      contextQueries (unsafeParse "test" configWithoutPriorityUser) @?= defaultContextQueries "test"
+      contextQueries (parseSeries "test" configWithoutPriorityUser) @?= defaultContextQueries "test"
 
   , testCase "absent contextSources uses defaultContextQueries" $
-      contextQueries (unsafeParse "test" configWithCrossSeriesFalse) @?= defaultContextQueries "test"
+      contextQueries (parseSeries "test" configWithCrossSeriesFalse) @?= defaultContextQueries "test"
 
   , testCase "deriveBlogSeriesConfig preserves contextQueries" $ do
-      let config = deriveBlogSeriesConfig (unsafeParse "test" configWithCrossSeries)
+      let config = deriveBlogSeriesConfig (parseSeries "test" configWithCrossSeries)
       length (bscContextQueries config) @?= 2
 
   , testCase "deriveBlogSeriesConfig preserves empty contextQueries" $ do
@@ -212,15 +207,15 @@ validationTests = testGroup "validation"
       bscContextQueries config @?= []
 
   , testCase "missing enableGrounding defaults to False" $
-      let DiscoveredSeries{searchGrounding} = unsafeParse "test" configMissingEnableGrounding
+      let DiscoveredSeries{searchGrounding} = parseSeries "test" configMissingEnableGrounding
       in searchGrounding @?= False
 
   , testCase "enableGrounding true is parsed correctly" $
-      let DiscoveredSeries{searchGrounding} = unsafeParse "grounded-series" configWithGrounding
+      let DiscoveredSeries{searchGrounding} = parseSeries "grounded-series" configWithGrounding
       in searchGrounding @?= True
 
   , testCase "enableGrounding false is parsed correctly" $
-      let DiscoveredSeries{searchGrounding} = unsafeParse "ungrounded-series" configWithGroundingFalse
+      let DiscoveredSeries{searchGrounding} = parseSeries "ungrounded-series" configWithGroundingFalse
       in searchGrounding @?= False
   ]
 
@@ -264,8 +259,8 @@ properties = testGroup "properties"
 
   , testProperty "deriveBlogSeriesRunConfig preserves searchGrounding" $
       QC.forAll genDiscoveredSeries $ \discovered ->
-        let BlogSeriesRunConfig{searchGrounding = runConfigSearchGrounding} = deriveBlogSeriesRunConfig discovered
-            DiscoveredSeries{searchGrounding = discoveredSearchGrounding} = discovered
+        let runConfigSearchGrounding = Scheduler.searchGrounding (deriveBlogSeriesRunConfig discovered)
+            discoveredSearchGrounding = searchGrounding discovered
         in runConfigSearchGrounding == discoveredSearchGrounding
   ]
 

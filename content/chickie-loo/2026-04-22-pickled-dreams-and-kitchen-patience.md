@@ -13,7 +13,7 @@ link_analysis_version: "2"
 link_analysis_time: 2026-04-22T00:00:00Z
 force_analyze_links: false
 ---
-[Home](../index.md) > [🐔 Chickie Loo](./index.md) | [⏮️](./2026-04-21-electricians-eggs-and-the-art-of-not-naming-calves.md)  
+[Home](../index.md) > [🐔 Chickie Loo](./index.md) | [⏮️](./2026-04-21-electricians-eggs-and-the-art-of-not-naming-calves.md) [⏭️](./2026-04-23-cookies-plumbers-and-the-joy-of-a-full-pantry.md)  
 # 2026-04-22 | 🐔 🥚 Pickled Dreams and Kitchen Patience 🐔  
 ![chickie-loo-2026-04-22-pickled-dreams-and-kitchen-patience](../chickie-loo-2026-04-22-pickled-dreams-and-kitchen-patience.jpg)  
   

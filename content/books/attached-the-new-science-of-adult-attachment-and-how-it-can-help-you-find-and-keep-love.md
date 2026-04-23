@@ -9,9 +9,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-17T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-04-23T20:29:04Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A minimalist, high-contrast illustration featuring two stylized human figures standing on opposite sides of a delicate, glowing web of interconnected lines. One figure is encased in a subtle, protective glass-like dome, representing the avoidant style, while the other reaches out with open, fluid gestures, representing the anxious style. In the center, where the lines overlap and thicken, a warm, golden light glows, symbolizing the secure attachment point where the two styles find common ground. The background is a soft, deep navy blue, with the interconnected lines rendered in thin, elegant white and gold strokes to emphasize the complexity of human bonding. The overall aesthetic is clean, modern, and psychological, evoking a sense of clarity and balance.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 👩🏼‍❤️‍💋‍👨🏻🔗 Attached: The New Science of Adult Attachment and How It Can Help You Find - and Keep - Love  
+![books-attached-the-new-science-of-adult-attachment-and-how-it-can-help-you-find-and-keep-love](../books-attached-the-new-science-of-adult-attachment-and-how-it-can-help-you-find-and-keep-love.jpg)  
 [🛒 Attached: The New Science of Adult Attachment and How It Can Help You Find - and Keep - Love. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/43GaUkd)  
   
 ## 📚 Book Report: 🔗 Attached by Amir Levine and Rachel S. F. Heller  

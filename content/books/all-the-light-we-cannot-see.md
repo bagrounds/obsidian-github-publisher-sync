@@ -11,9 +11,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-16T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-04-22T23:30:30Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A high-contrast, atmospheric illustration set in a dimly lit, cobblestone European city street during the 1940s. A delicate, glowing radio transmitter sits on a weathered wooden table in the foreground, its vacuum tubes emitting a soft, ethereal golden light that cuts through the surrounding gloom. Wisps of light particles—representing invisible radio waves—swirl upward into the night sky, weaving between the silhouettes of jagged, bombed-out stone buildings. In the distance, a faint, flickering beam of a searchlight pierces the clouds, creating a sense of vastness and mystery. The color palette is dominated by deep blues, charcoal grays, and shadows, punctuated by the warm, amber luminescence of the radio, evoking a poignant contrast between human resilience and the harsh darkness of wartime.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🌟👁️🔦 All the Light We Cannot See  
+![books-all-the-light-we-cannot-see](../books-all-the-light-we-cannot-see.jpg)  
 [🛒 All the Light We Cannot See. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4pMVYK6)  
   
 ✨ Intricate sensory descriptions and a non-linear structure illuminate the resilience of the human spirit amidst global devastation.  

@@ -10,9 +10,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-20T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-04-23T18:32:00Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A minimalist, high-contrast illustration featuring a stylized, translucent human silhouette in a mid-stride running pose. The silhouette is overlaid with clean, glowing geometric lines and nodes that highlight the skeletal structure of the legs, hips, and core, emphasizing biomechanical alignment and joints. The background is a deep, solid charcoal or navy blue to make the anatomical highlights pop. The art style is modern, clinical, and sleek, using a limited color palette of vibrant cyan and white to represent energy and precision. No text, labels, or complex textures are present; the focus remains entirely on the fluidity of motion and the structural integrity of the human form in action.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🏃‍♀️🦴 Anatomy for Runners: Unlocking Your Athletic Potential for Health, Speed, and Injury Prevention  
+![books-anatomy-for-runners-unlocking-your-athletic-potential-for-health-speed-and-injury-prevention](../books-anatomy-for-runners-unlocking-your-athletic-potential-for-health-speed-and-injury-prevention.jpg)  
 [🛒 Anatomy for Runners: Unlocking Your Athletic Potential for Health, Speed, and Injury Prevention. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4nuh7IA)  
   
 ## 📝🐒 Human Notes  

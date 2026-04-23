@@ -9,9 +9,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-15T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-04-23T19:38:49Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A stylized, minimalist human head in profile, rendered with glowing, interconnected geometric shapes and lines, subtly suggesting a neural network. From the eye area, a focused beam of light extends forward, illuminating a complex, abstract grid of data points and pathways, symbolizing problem-solving and exploration. The background is a deep, gradient blue-purple, with faint, ethereal data streams flowing. The overall impression is one of intelligent thought engaging with a structured, digital world, blending human intellect with advanced technology.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🤖🧠 Artificial Intelligence: A Modern Approach  
+![books-artificial-intelligence-a-modern-approach](../books-artificial-intelligence-a-modern-approach.jpg)  
 [🛒 Artificial Intelligence: A Modern Approach. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4obYudu)  
   
 ## 🤖 A Modern Approach to Understanding AI  

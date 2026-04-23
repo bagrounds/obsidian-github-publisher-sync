@@ -12,9 +12,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-19T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-04-23T19:38:43Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A split-composition illustration depicting the collision between idealism and chaos. On the left, a minimalist, sleek, and brightly lit techno-utopian workspace features clean geometric lines, glowing holographic interfaces, and soft pastel nodes representing connectivity and global harmony. This side transitions abruptly into the right side, which is dark, jagged, and chaotic. Here, the clean lines shatter into a web of distorted, high-contrast digital artifacts and aggressive, glitch-art patterns. Silhouetted, anonymous figures lurk within the shadows of the digital fray, their forms dissolving into pixelated static. A central, glowing fiber-optic cable snakes across the divide, serving as the only bridge between the two worlds, glowing with a pulsing, warning-red light that suggests the transmission of something virulent. The overall aesthetic is modern, cerebral, and unsettling.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🙅🗣️💻 Antisocial: Online Extremists, Techno-Utopians, and the Hijacking of the American Conversation  
+![books-antisocial-online-extremists-techno-utopians-and-the-hijacking-of-the-american-conversation](../books-antisocial-online-extremists-techno-utopians-and-the-hijacking-of-the-american-conversation.jpg)  
 [🛒 Antisocial: Online Extremists, Techno-Utopians, and the Hijacking of the American Conversation. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4kPcass)  
   
 ## 📚 Book Report: 😈 Antisocial by Andrew Marantz  

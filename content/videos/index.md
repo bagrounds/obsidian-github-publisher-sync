@@ -5,10 +5,10 @@ aliases:
 title: 📺 Videos
 URL: https://bagrounds.org/videos
 backlinks: false
-updated: 2026-04-23T11:00:46-07:00
+updated: 2026-04-23T12:54:03-07:00
 ---
 [Home](../index.md)  
-# 📺 Videos (788)  
+# 📺 Videos (789)  
 - [💰🤑🤖💡🚀💲 $0.10 per Month Runs My Entire AI Life. I'll Show You How.](./0-10-month-runs-my-entire-ai-life-ill-show-you-how.md)  
 - [📊📈📉📃👁️ 10 Charts to Understand the 900 Page Budget Bill](./10-charts-to-understand-the-900-page-budget-bill.md)  
 - [🤖🔗⬆️✅ 12-Factor Agents: Patterns of reliable LLM applications — Dex Horthy, HumanLayer](./12-factor-agents-patterns-of-reliable-llm-applications-dex-horthy-humanlayer.md)  
@@ -373,6 +373,7 @@ updated: 2026-04-23T11:00:46-07:00
 - [💰📉🌎 Lecture 02: Externalities in Theory](./lecture-02-externalities-in-theory.md)  
 - [💰➡️🌍📉 Lecture 03: Externalities in Theory & Practice](./lecture-03-externalities-in-theory-practice.md)  
 - [💰🏛️📈 Lecture 22: Wealth Taxation](./lecture-22-wealth-taxation.md)  
+- [⚖️🦅🐘❓🔄 LegalEagle’s Devin Stone On The ‘Unpresidented’ Times of Trump 2.0](./legaleagles-devin-stone-on-the-unpresidented-times-of-trump-2-0.md)  
 - [✍️📜🗝️💡 Lessons In Deep Living From Legendary Writers | Cal Newport](./lessons-in-deep-living-from-legendary-writers-cal-newport.md)  
 - [🧠🌱⬆️ Lisa Lawson explores the neuroscience of adolescence in 'Thrive'](./lisa-lawson-explores-the-neuroscience-of-adolescence-in-thrive.md)  
 - [📣👮🏿‍♂️🧑🏿‍🤝‍🧑🏿 LIVE: LAPD press conference after protests in Los Angeles over National Guard deployment](./live-lapd-press-conference-after-protests-in-los-angeles-over-national-guard-deployment.md)  

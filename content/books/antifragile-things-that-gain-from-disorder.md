@@ -12,9 +12,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-16T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-04-23T18:32:21Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A high-contrast, minimalist illustration featuring a stylized, jagged mountain peak composed of geometric shards. At the base, the landscape is chaotic and turbulent, depicted with swirling, abstract lines representing a storm. As the eye moves upward toward the peak, these chaotic shards reorganize into a solid, crystalline structure that glows with a subtle, inner light. The color palette uses deep charcoal and slate grays for the chaotic base, transitioning into vibrant, energetic golds and electric blues at the summit to symbolize strength gained through adversity. The composition is balanced and powerful, focusing on the transformation from disordered fragments into a refined, indestructible form, emphasizing the concept of growth through volatility without the use of any text or symbols.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 📉📈🌪️💪 Antifragile: Things That Gain from Disorder  
+![books-antifragile-things-that-gain-from-disorder](../books-antifragile-things-that-gain-from-disorder.jpg)  
 [🛒 Antifragile: Things That Gain from Disorder. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/45JAVlg)  
   
 ## 🤖 AI Summary  

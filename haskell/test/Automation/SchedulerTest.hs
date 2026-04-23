@@ -21,7 +21,7 @@ testSchedule :: [ScheduleEntry]
 testSchedule = buildSchedule testDynamicEntries
 
 testBlogSeriesTaskIds :: [TaskId]
-testBlogSeriesTaskIds = fmap seTaskId testDynamicEntries
+testBlogSeriesTaskIds = fmap taskId testDynamicEntries
 
 tests :: TestTree
 tests = testGroup "Scheduler"

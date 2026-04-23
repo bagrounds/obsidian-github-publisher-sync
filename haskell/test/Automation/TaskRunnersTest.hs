@@ -32,15 +32,15 @@ mkTestContext = do
     Left err -> fail $ "Failed to create test context: " <> err
 
 mkTestSeries :: Text -> DiscoveredSeries
-mkTestSeries seriesId = DiscoveredSeries
-  { dsId = seriesId
-  , dsName = "Test Series " <> seriesId
-  , dsIcon = "🧪"
-  , dsPriorityUser = Nothing
-  , dsScheduleTime = TimeOfDay 6 0 0
-  , dsModels = Gemini.Gemini25Flash :| []
-  , dsContextQueries = []
-  , dsSearchGrounding = False
+mkTestSeries seriesIdValue = DiscoveredSeries
+  { seriesId = seriesIdValue
+  , seriesName = "Test Series " <> seriesIdValue
+  , seriesIcon = "🧪"
+  , priorityUser = Nothing
+  , scheduleTime = TimeOfDay 6 0 0
+  , modelChain = Gemini.Gemini25Flash :| []
+  , contextQueries = []
+  , searchGrounding = False
   }
 
 tests :: TestTree

@@ -45,16 +45,16 @@ data TaskId
   deriving (Show, Eq, Ord)
 
 data ScheduleEntry = ScheduleEntry
-  { seTaskId :: TaskId
-  , seHoursPacific :: [Int]
-  , seAtOrAfter :: Bool
+  { taskId :: TaskId
+  , hoursPacific :: [Int]
+  , atOrAfter :: Bool
   } deriving (Generic, Show, Eq)
 
 data BlogSeriesRunConfig = BlogSeriesRunConfig
-  { bsrcSeriesId          :: Text
-  , bsrcModelChain        :: NonEmpty Gemini.Model
-  , bsrcPriorityUserEnvVar :: Text
-  , searchGrounding       :: Bool
+  { seriesId          :: Text
+  , modelChain        :: NonEmpty Gemini.Model
+  , priorityUserEnvVar :: Text
+  , searchGrounding   :: Bool
   } deriving (Generic, Show, Eq)
 
 taskIdToText :: TaskId -> Text
@@ -101,10 +101,10 @@ buildSchedule :: [ScheduleEntry] -> [ScheduleEntry]
 buildSchedule dynamicEntries = dynamicEntries <> staticSchedule
 
 buildBlogSeriesRunConfigs :: [BlogSeriesRunConfig] -> Map Text BlogSeriesRunConfig
-buildBlogSeriesRunConfigs = Map.fromList . fmap (\config -> (bsrcSeriesId config, config))
+buildBlogSeriesRunConfigs = Map.fromList . fmap (\config -> (seriesId config, config))
 
 validTaskIds :: [ScheduleEntry] -> Set TaskId
-validTaskIds = Set.fromList . fmap seTaskId
+validTaskIds = Set.fromList . fmap taskId
 
 isBlogSeries :: TaskId -> Bool
 isBlogSeries (BlogSeries _) = True
@@ -112,19 +112,19 @@ isBlogSeries _              = False
 
 getScheduledTasks :: [ScheduleEntry] -> Int -> [TaskId]
 getScheduledTasks fullSchedule hourPacific =
-  fmap seTaskId (filter (isScheduled hourPacific) fullSchedule)
+  fmap taskId (filter (isScheduled hourPacific) fullSchedule)
 
 isScheduled :: Int -> ScheduleEntry -> Bool
 isScheduled hourPacific ScheduleEntry{..}
-  | seAtOrAfter || isBlogSeries seTaskId = any (hourPacific >=) seHoursPacific
-  | otherwise                            = hourPacific `elem` seHoursPacific
+  | atOrAfter || isBlogSeries taskId = any (hourPacific >=) hoursPacific
+  | otherwise                        = hourPacific `elem` hoursPacific
 
 isValidTaskId :: [ScheduleEntry] -> Text -> Bool
 isValidTaskId fullSchedule t =
   maybe False (`Set.member` validTaskIds fullSchedule) (taskIdFromText (blogSeriesTaskIds fullSchedule) t)
 
 blogSeriesTaskIds :: [ScheduleEntry] -> [TaskId]
-blogSeriesTaskIds = filter isBlogSeries . fmap seTaskId
+blogSeriesTaskIds = filter isBlogSeries . fmap taskId
 
 extractSeriesId :: TaskId -> Maybe Text
 extractSeriesId = T.stripPrefix "blog-series:" . taskIdToText

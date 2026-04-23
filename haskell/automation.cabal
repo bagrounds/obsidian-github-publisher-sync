@@ -8,6 +8,7 @@ build-type:          Simple
 common shared
   default-language:    GHC2021
   default-extensions:
+    DuplicateRecordFields
     OverloadedStrings
     RecordWildCards
     LambdaCase

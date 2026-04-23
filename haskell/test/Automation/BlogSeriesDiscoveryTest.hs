@@ -51,32 +51,33 @@ parseSeriesConfigTests = testGroup "parseSeriesConfig"
         isLeft (parseSeriesConfig "test" "not json")
 
   , testCase "extracts correct name" $
-      dsName (unsafeParse "garden-thoughts" minimalConfig) @?= "Garden Thoughts"
+      seriesName (unsafeParse "garden-thoughts" minimalConfig) @?= "Garden Thoughts"
 
   , testCase "extracts correct icon" $
-      dsIcon (unsafeParse "garden-thoughts" minimalConfig) @?= "\129793"
+      seriesIcon (unsafeParse "garden-thoughts" minimalConfig) @?= "\129793"
 
   , testCase "extracts correct schedule hour" $
-      todHour (dsScheduleTime (unsafeParse "garden-thoughts" minimalConfig)) @?= 11
+      todHour (scheduleTime (unsafeParse "garden-thoughts" minimalConfig)) @?= 11
 
   , testCase "extracts correct models" $
-      dsModels (unsafeParse "garden-thoughts" minimalConfig)
-        @?= (Gemini.Gemini25Flash :| [Gemini.Gemini25FlashLite])
+      let DiscoveredSeries{modelChain} = unsafeParse "garden-thoughts" minimalConfig
+      in modelChain @?= (Gemini.Gemini25Flash :| [Gemini.Gemini25FlashLite])
 
   , testCase "extracts correct post time" $
-      dsScheduleTime (unsafeParse "garden-thoughts" minimalConfig) @?= TimeOfDay 11 0 0
+      scheduleTime (unsafeParse "garden-thoughts" minimalConfig) @?= TimeOfDay 11 0 0
 
   , testCase "extracts priority user" $
-      dsPriorityUser (unsafeParse "garden-thoughts" minimalConfig) @?= Just "bagrounds"
+      priorityUser (unsafeParse "garden-thoughts" minimalConfig) @?= Just "bagrounds"
 
   , testCase "missing priority user defaults to Nothing" $
-      dsPriorityUser (unsafeParse "solo-bot" configWithoutPriorityUser) @?= Nothing
+      priorityUser (unsafeParse "solo-bot" configWithoutPriorityUser) @?= Nothing
 
   , testCase "null priority user gives Nothing" $
-      dsPriorityUser (unsafeParse "solo-bot" configWithNullPriorityUser) @?= Nothing
+      priorityUser (unsafeParse "solo-bot" configWithNullPriorityUser) @?= Nothing
 
   , testCase "sets series ID from argument" $
-      dsId (unsafeParse "garden-thoughts" minimalConfig) @?= "garden-thoughts"
+      let DiscoveredSeries{seriesId} = unsafeParse "garden-thoughts" minimalConfig
+      in seriesId @?= "garden-thoughts"
 
   , testCase "parses existing auto-blog-zero config" $ do
       let config = T.unlines
@@ -90,8 +91,8 @@ parseSeriesConfigTests = testGroup "parseSeriesConfig"
             , "}"
             ]
           discovered = unsafeParse "auto-blog-zero" config
-      dsName discovered @?= "Auto Blog Zero"
-      dsScheduleTime discovered @?= TimeOfDay 8 0 0
+      seriesName discovered @?= "Auto Blog Zero"
+      scheduleTime discovered @?= TimeOfDay 8 0 0
   ]
 
 derivationTests :: TestTree
@@ -133,36 +134,40 @@ derivationTests = testGroup "derivation functions"
 
   , testCase "deriveBlogSeriesRunConfig sets correct series ID" $ do
       let config = deriveBlogSeriesRunConfig sampleDiscovered
-      bsrcSeriesId config @?= "garden-thoughts"
+          BlogSeriesRunConfig{seriesId} = config
+      seriesId @?= "garden-thoughts"
 
   , testCase "deriveBlogSeriesRunConfig sets correct model chain" $ do
       let config = deriveBlogSeriesRunConfig sampleDiscovered
-      bsrcModelChain config @?= (Gemini.Gemini25Flash :| [Gemini.Gemini25FlashLite])
+          BlogSeriesRunConfig{modelChain} = config
+      modelChain @?= (Gemini.Gemini25Flash :| [Gemini.Gemini25FlashLite])
 
   , testCase "deriveBlogSeriesRunConfig sets correct env var" $ do
       let config = deriveBlogSeriesRunConfig sampleDiscovered
-      bsrcPriorityUserEnvVar config @?= "GARDEN_THOUGHTS_PRIORITY_USER"
+      priorityUserEnvVar config @?= "GARDEN_THOUGHTS_PRIORITY_USER"
 
   , testCase "deriveBlogSeriesRunConfig sets searchGrounding false for sampleDiscovered" $ do
       let config = deriveBlogSeriesRunConfig sampleDiscovered
-      searchGrounding config @?= False
+          BlogSeriesRunConfig{searchGrounding} = config
+      searchGrounding @?= False
 
   , testCase "deriveBlogSeriesRunConfig passes searchGrounding true when set" $ do
-      let discovered = sampleDiscovered { dsSearchGrounding = True }
+      let discovered = unsafeParse "grounded-series" configWithGrounding
           config = deriveBlogSeriesRunConfig discovered
-      searchGrounding config @?= True
+          BlogSeriesRunConfig{searchGrounding} = config
+      searchGrounding @?= True
 
   , testCase "deriveScheduleEntry sets correct task ID" $ do
       let entry = deriveScheduleEntry sampleDiscovered
-      seTaskId entry @?= BlogSeries "garden-thoughts"
+      taskId entry @?= BlogSeries "garden-thoughts"
 
   , testCase "deriveScheduleEntry sets correct hours" $ do
       let entry = deriveScheduleEntry sampleDiscovered
-      seHoursPacific entry @?= [11]
+      hoursPacific entry @?= [11]
 
   , testCase "deriveScheduleEntry sets atOrAfter False" $ do
       let entry = deriveScheduleEntry sampleDiscovered
-      seAtOrAfter entry @?= False
+      atOrAfter entry @?= False
   ]
 
 validationTests :: TestTree
@@ -180,10 +185,10 @@ validationTests = testGroup "validation"
         isRight (parseSeriesConfig "test" configWithoutPriorityUser)
 
   , testCase "missing priorityUser defaults to Nothing" $
-      dsPriorityUser (unsafeParse "test" configWithoutPriorityUser) @?= Nothing
+      priorityUser (unsafeParse "test" configWithoutPriorityUser) @?= Nothing
 
   , testCase "parses config with contextSources" $
-      let queries = dsContextQueries (unsafeParse "test" configWithCrossSeries)
+      let queries = contextQueries (unsafeParse "test" configWithCrossSeries)
       in case queries of
         [first, second] -> do
           directories first @?= ["test"]
@@ -193,10 +198,10 @@ validationTests = testGroup "validation"
         _ -> assertBool ("expected 2 queries, got " <> show (length queries)) False
 
   , testCase "missing contextSources defaults to defaultContextQueries" $
-      dsContextQueries (unsafeParse "test" configWithoutPriorityUser) @?= defaultContextQueries "test"
+      contextQueries (unsafeParse "test" configWithoutPriorityUser) @?= defaultContextQueries "test"
 
   , testCase "absent contextSources uses defaultContextQueries" $
-      dsContextQueries (unsafeParse "test" configWithCrossSeriesFalse) @?= defaultContextQueries "test"
+      contextQueries (unsafeParse "test" configWithCrossSeriesFalse) @?= defaultContextQueries "test"
 
   , testCase "deriveBlogSeriesConfig preserves contextQueries" $ do
       let config = deriveBlogSeriesConfig (unsafeParse "test" configWithCrossSeries)
@@ -207,13 +212,16 @@ validationTests = testGroup "validation"
       bscContextQueries config @?= []
 
   , testCase "missing enableGrounding defaults to False" $
-      dsSearchGrounding (unsafeParse "test" configMissingEnableGrounding) @?= False
+      let DiscoveredSeries{searchGrounding} = unsafeParse "test" configMissingEnableGrounding
+      in searchGrounding @?= False
 
   , testCase "enableGrounding true is parsed correctly" $
-      dsSearchGrounding (unsafeParse "grounded-series" configWithGrounding) @?= True
+      let DiscoveredSeries{searchGrounding} = unsafeParse "grounded-series" configWithGrounding
+      in searchGrounding @?= True
 
   , testCase "enableGrounding false is parsed correctly" $
-      dsSearchGrounding (unsafeParse "ungrounded-series" configWithGroundingFalse) @?= False
+      let DiscoveredSeries{searchGrounding} = unsafeParse "ungrounded-series" configWithGroundingFalse
+      in searchGrounding @?= False
   ]
 
 properties :: TestTree
@@ -243,19 +251,22 @@ properties = testGroup "properties"
 
   , testProperty "deriveBlogSeriesConfig preserves ID" $
       QC.forAll genDiscoveredSeries $ \discovered ->
-        bscId (deriveBlogSeriesConfig discovered) == dsId discovered
+        let DiscoveredSeries{seriesId} = discovered
+        in bscId (deriveBlogSeriesConfig discovered) == seriesId
 
   , testProperty "deriveBlogSeriesConfig preserves icon" $
       QC.forAll genDiscoveredSeries $ \discovered ->
-        bscIcon (deriveBlogSeriesConfig discovered) == dsIcon discovered
+        bscIcon (deriveBlogSeriesConfig discovered) == seriesIcon discovered
 
   , testProperty "deriveBlogSeriesConfig preserves name" $
       QC.forAll genDiscoveredSeries $ \discovered ->
-        bscName (deriveBlogSeriesConfig discovered) == dsName discovered
+        bscName (deriveBlogSeriesConfig discovered) == seriesName discovered
 
   , testProperty "deriveBlogSeriesRunConfig preserves searchGrounding" $
       QC.forAll genDiscoveredSeries $ \discovered ->
-        searchGrounding (deriveBlogSeriesRunConfig discovered) == dsSearchGrounding discovered
+        let BlogSeriesRunConfig{searchGrounding = runConfigSearchGrounding} = deriveBlogSeriesRunConfig discovered
+            DiscoveredSeries{searchGrounding = discoveredSearchGrounding} = discovered
+        in runConfigSearchGrounding == discoveredSearchGrounding
   ]
 
 isRight :: Either a b -> Bool
@@ -357,14 +368,14 @@ configWithCrossSeriesFalse = T.unlines
 
 sampleDiscovered :: DiscoveredSeries
 sampleDiscovered = DiscoveredSeries
-  { dsId = "garden-thoughts"
-  , dsName = "Garden Thoughts"
-  , dsIcon = "\129793"
-  , dsPriorityUser = Just "bagrounds"
-  , dsScheduleTime = TimeOfDay 11 0 0
-  , dsModels = Gemini.Gemini25Flash :| [Gemini.Gemini25FlashLite]
-  , dsContextQueries = []
-  , dsSearchGrounding = False
+  { seriesId = "garden-thoughts"
+  , seriesName = "Garden Thoughts"
+  , seriesIcon = "\129793"
+  , priorityUser = Just "bagrounds"
+  , scheduleTime = TimeOfDay 11 0 0
+  , modelChain = Gemini.Gemini25Flash :| [Gemini.Gemini25FlashLite]
+  , contextQueries = []
+  , searchGrounding = False
   }
 
 configWithGrounding :: T.Text
@@ -398,20 +409,20 @@ genSeriesId = do
 
 genDiscoveredSeries :: QC.Gen DiscoveredSeries
 genDiscoveredSeries = do
-  seriesId <- genSeriesId
+  seriesIdValue <- genSeriesId
   name <- T.pack <$> QC.listOf1 (QC.elements ['A'..'Z'])
   icon <- QC.elements ["\129793", "\129302", "\128020", "\127963\65039", "\127925"]
-  priorityUser <- QC.oneof [pure Nothing, Just . T.pack <$> QC.listOf1 (QC.elements ['a'..'z'])]
+  priorityUserValue <- QC.oneof [pure Nothing, Just . T.pack <$> QC.listOf1 (QC.elements ['a'..'z'])]
   hour <- QC.choose (0, 23)
-  contextQueries <- QC.elements [[], defaultContextQueries seriesId]
-  enableGrounding <- QC.arbitrary
+  contextQueriesValue <- QC.elements [[], defaultContextQueries seriesIdValue]
+  searchGroundingValue <- QC.arbitrary
   pure DiscoveredSeries
-    { dsId = seriesId
-    , dsName = name
-    , dsIcon = icon
-    , dsPriorityUser = priorityUser
-    , dsScheduleTime = TimeOfDay hour 0 0
-    , dsModels = Gemini.Gemini25Flash :| []
-    , dsContextQueries = contextQueries
-    , dsSearchGrounding = enableGrounding
+    { seriesId = seriesIdValue
+    , seriesName = name
+    , seriesIcon = icon
+    , priorityUser = priorityUserValue
+    , scheduleTime = TimeOfDay hour 0 0
+    , modelChain = Gemini.Gemini25Flash :| []
+    , contextQueries = contextQueriesValue
+    , searchGrounding = searchGroundingValue
     }

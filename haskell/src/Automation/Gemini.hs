@@ -216,9 +216,9 @@ data GenerationConfig = GenerationConfig
   } deriving (Show, Eq)
 
 instance ToValue GenerationConfig where
-  toValue gc = object
-    [ "temperature" .= temperature gc
-    , "maxOutputTokens" .= maxOutputTokens gc
+  toValue config = object
+    [ "temperature" .= temperature config
+    , "maxOutputTokens" .= maxOutputTokens config
     ]
 
 defaultGenerationConfig :: GenerationConfig
@@ -267,7 +267,7 @@ buildRequestBody systemInstruction prompt config =
         else contentFields
       fields = case systemInstruction of
         Nothing -> fieldsWithTools
-        Just si -> ("system_instruction" .= object [ "parts" .= [ object [ "text" .= si ] ] ]) : fieldsWithTools
+        Just instruction -> ("system_instruction" .= object [ "parts" .= [ object [ "text" .= instruction ] ] ]) : fieldsWithTools
   in object fields
 
 parseResponseText :: LBS.ByteString -> Either Error Text
@@ -354,9 +354,9 @@ generateContent manager req = do
         (Just systemInstruction, False) -> systemInstruction <> "\n\n" <> requestPrompt req
         _                               -> requestPrompt req
   let url = T.unpack $ geminiEndpoint model <> "?key=" <> unSecret (requestApiKey req)
-  initReq <- parseRequest url
+  parsedRequest <- parseRequest url
   let body = encode $ buildRequestBody effectiveSystemInstruction effectivePrompt (requestGenerationConfig req)
-  let httpReq = initReq
+  let httpReq = parsedRequest
         { HTTP.method = "POST"
         , HTTP.requestBody = RequestBodyLBS body
         , HTTP.requestHeaders =

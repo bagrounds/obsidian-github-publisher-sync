@@ -127,9 +127,8 @@ runBlogSeries context seriesMap runConfigs seriesId = do
       apiKey = Context.geminiApiKey context
   logMsg $ "▶️  " <> taskName
 
-  let mRunConfig = Map.lookup seriesId runConfigs
-  runConfig <- case mRunConfig of
-    Just rc -> pure rc
+  runConfig <- case Map.lookup seriesId runConfigs of
+    Just config -> pure config
     Nothing -> failTask $ "No run config for series: " <> seriesId
 
   today <- todayPacificDay
@@ -145,8 +144,8 @@ runBlogSeries context seriesMap runConfigs seriesId = do
   _ <- syncRepoPostsToVault repoRoot seriesId vaultDir logMsg
 
   let seriesDir = repoRoot </> T.unpack seriesId
-  mRegen <- findPostToRegenerate seriesDir todayText
-  case mRegen of
+  maybeRegenPost <- findPostToRegenerate seriesDir todayText
+  case maybeRegenPost of
     Just postToRegen -> do
       logMsg $ "  ♻️  Regeneration requested for " <> T.pack postToRegen <> " — removing old post"
       removeFile (seriesDir </> postToRegen)
@@ -156,13 +155,14 @@ runBlogSeries context seriesMap runConfigs seriesId = do
         logMsg $ "  ⏭️  Already generated for " <> todayText
 
   existsNow <- blogPostExistsForToday seriesDir todayText
-  case (mRegen, existsNow) of
+  case (maybeRegenPost, existsNow) of
     (Nothing, True) -> pure ()
     _ -> do
       envModel <- lookupEnvText "BLOG_GEMINI_MODEL"
-      let models = Gemini.overrideModelChain envModel (bsrcModelChain runConfig)
+      let BlogSeriesRunConfig{modelChain, searchGrounding} = runConfig
+          models = Gemini.overrideModelChain envModel modelChain
 
-      priorityUser <- lookupEnvText (T.unpack (bsrcPriorityUserEnvVar runConfig))
+      priorityUser <- lookupEnvText (T.unpack (priorityUserEnvVar runConfig))
 
       comments <- fetchAllSeriesComments manager seriesId (priorityUser >>= (\u -> if T.null u then Nothing else Just u))
       logMsg $ "  📝 Fetched " <> T.pack (show (length comments)) <> " comments"
@@ -174,7 +174,7 @@ runBlogSeries context seriesMap runConfigs seriesId = do
           let (systemPrompt, userPrompt) = buildBlogPrompt blogContext
               genConfig = Gemini.defaultGenerationConfig
                 { Gemini.temperature = 0.9, Gemini.maxOutputTokens = 8192
-                , Gemini.searchGrounding = searchGrounding runConfig
+                , Gemini.searchGrounding = searchGrounding
                 }
 
           result <- Gemini.generateContentWithFallback manager models (Just systemPrompt) userPrompt apiKey genConfig
@@ -201,7 +201,7 @@ runBlogSeries context seriesMap runConfigs seriesId = do
 
                   let frontmatter = assembleFrontmatter series today title slug
                       backLink = case previousPost of
-                        Just pp -> " | " <> buildBackLink series (bpFilename pp)
+                        Just post -> " | " <> buildBackLink series (bpFilename post)
                         Nothing -> ""
                       navLine = bscNavLink series <> backLink
                       displayTitle = unDisplayTitle $ buildDisplayTitle series today title
@@ -232,17 +232,17 @@ runBlogSeries context seriesMap runConfigs seriesId = do
                         Left err -> logMsg $ "  ⚠️  Image generation failed for " <> filename <> ": " <> T.pack (show err)
 
                   case previousPost of
-                    Just pp -> updatePreviousPost (vaultDir </> T.unpack seriesId) pp series filename
+                    Just post -> updatePreviousPost (vaultDir </> T.unpack seriesId) post series filename
                     Nothing -> pure ()
 
                   let metadataPath = seriesDir </> ".last-generate-metadata.json"
                   case previousPost of
-                    Just pp -> TIO.writeFile metadataPath $
-                      "{\"previousPostFilename\":\"" <> bpFilename pp <> "\",\"newPostFilename\":\"" <> filename <> "\"}"
+                    Just post -> TIO.writeFile metadataPath $
+                      "{\"previousPostFilename\":\"" <> bpFilename post <> "\",\"newPostFilename\":\"" <> filename <> "\"}"
                     Nothing -> pure ()
 
                   let filenameNoExt = T.pack $ dropExtension $ T.unpack filename
-                      regenFilenameNoExt = case mRegen of
+                      regenFilenameNoExt = case maybeRegenPost of
                         Just r  -> Just (T.pack (dropExtension r))
                         Nothing -> Nothing
                   postTitle <- either (\e -> failTask $ "Invalid display title: " <> e) pure (mkTitle displayTitle)
@@ -272,7 +272,7 @@ runBackfillImages context contentDirs = do
   newPostCount <- syncNewAiBlogPosts repoAiBlogDir vaultAiBlogDir logMsg
   case newPostCount of
     0 -> pure ()
-    n -> logMsg $ "  📝 Synced " <> T.pack (show n) <> " new AI blog post(s) to vault"
+    count -> logMsg $ "  📝 Synced " <> T.pack (show count) <> " new AI blog post(s) to vault"
 
   envMap <- buildEnvMap
     [ "GEMINI_API_KEY", "CLOUDFLARE_API_TOKEN", "CLOUDFLARE_ACCOUNT_ID"
@@ -486,10 +486,10 @@ runDailyAnalytics context = do
       vaultDir = Context.vaultDir context
   logMsg "▶️  daily-analytics"
 
-  mPropertyId <- lookupEnvText "GA_PROPERTY_ID"
-  mServiceAccountJson <- lookupEnvText "GCP_SERVICE_ACCOUNT_KEY"
+  maybePropertyId <- lookupEnvText "GA_PROPERTY_ID"
+  maybeServiceAccountJson <- lookupEnvText "GCP_SERVICE_ACCOUNT_KEY"
 
-  case (mPropertyId, mServiceAccountJson) of
+  case (maybePropertyId, maybeServiceAccountJson) of
     (Nothing, _) -> do
       logMsg "  ⚠️  GA_PROPERTY_ID not set — daily analytics disabled"
       logMsg "✅ daily-analytics (disabled)"
@@ -581,8 +581,8 @@ enrichPageMetricWithTitle vaultDir metric = do
 fetchAnalytics :: HTTP.Manager -> Text -> Text -> Json.Value -> IO (Either Text Json.Value)
 fetchAnalytics manager accessToken endpoint body = do
   let bodyBytes = Json.encode body
-  initReq <- HTTP.parseRequest (T.unpack endpoint)
-  let httpReq = initReq
+  parsedRequest <- HTTP.parseRequest (T.unpack endpoint)
+  let httpReq = parsedRequest
         { HTTP.method = "POST"
         , HTTP.requestBody = HTTP.RequestBodyLBS bodyBytes
         , HTTP.requestHeaders =
@@ -606,7 +606,7 @@ fetchAnalytics manager accessToken endpoint body = do
 taskRunners :: Context.AppContext -> Map Text BlogSeriesConfig -> Map Text BlogSeriesRunConfig -> [ContentDirectory] -> [DiscoveredSeries] -> Map TaskId (IO ())
 taskRunners context seriesMap runConfigs contentDirs discovered =
   let blogSeriesRunners = Map.fromList
-        (fmap (\series -> (BlogSeries (dsId series), runBlogSeries context seriesMap runConfigs (dsId series))) discovered)
+        (fmap (\DiscoveredSeries{..} -> (BlogSeries seriesId, runBlogSeries context seriesMap runConfigs seriesId)) discovered)
       staticRunners = Map.fromList
         [ (BackfillBlogImages, runBackfillImages context contentDirs)
         , (InternalLinking, runInternalLinking context)

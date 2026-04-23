@@ -64,7 +64,7 @@ URL: https://bagrounds.org/ai-blog/2026-04-22-1-gemini-grounding-source-links
 
 ### ⚙️ Series Configuration
 
-🗂️ The DiscoveredSeries type gained a dsSearchGrounding field, and BlogSeriesRunConfig gained a searchGrounding field, both of type Bool.
+🗂️ The DiscoveredSeries type gained a searchGrounding field of type Bool, and BlogSeriesRunConfig was updated to include the same field.
 📄 The enableGrounding field in the series JSON config is optional and defaults to false, preserving backward compatibility with configs that do not yet include it.
 ✅ The following series have grounding enabled: the-noise, systems-for-public-good, positivity-bias, and convergence.
 🔒 The remaining series, auto-blog-zero and chickie-loo, explicitly declare enableGrounding as false.

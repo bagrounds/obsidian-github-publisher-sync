@@ -5,10 +5,10 @@ aliases:
 title: 📺 Videos
 URL: https://bagrounds.org/videos
 backlinks: false
-updated: 2026-04-24T15:27:44-07:00
+updated: 2026-04-24T15:35:15-07:00
 ---
 [Home](../index.md)  
-# 📺 Videos (793)  
+# 📺 Videos (794)  
 - [💰🤑🤖💡🚀💲 $0.10 per Month Runs My Entire AI Life. I'll Show You How.](./0-10-month-runs-my-entire-ai-life-ill-show-you-how.md)  
 - [📊📈📉📃👁️ 10 Charts to Understand the 900 Page Budget Bill](./10-charts-to-understand-the-900-page-budget-bill.md)  
 - [🤖🔗⬆️✅ 12-Factor Agents: Patterns of reliable LLM applications — Dex Horthy, HumanLayer](./12-factor-agents-patterns-of-reliable-llm-applications-dex-horthy-humanlayer.md)  
@@ -486,6 +486,7 @@ updated: 2026-04-24T15:27:44-07:00
 - [Rep. Aime Wichtendahl testifies as Iowa removes civil rights for trans people (Feb 27, 2025)](./rep-aime-wichtendahl-testifies-as-iowa-removes-civil-rights-for-trans-people-feb-27-2025.md)  
 - [👩‍⚖️📜➡️ Rep. Alexandria Ocasio-Cortez (D-NY) on Resolution Honoring Charlie Kirk](./rep-alexandria-ocasio-cortez-d-ny-on-resolution-honoring-charlie-kirk.md)  
 - [😠🗣️🚫🤬 Republican Thom Tillis' SCATHING message to Stephen Miller](./im-sick-of-stupid-republican-thom-tillis-scathing-message-to-stephen-miller.md)  
+- [🏢♟️🏆 Retired Amazon VP: How Corporate Politics Work And How To Win | Ethan Evans](./retired-amazon-vp-how-corporate-politics-work-and-how-to-win-ethan-evans.md)  
 - [👴🏻🪖🇺🇸🤥👹❓ Retired military leaders analyze Trump's deployment of Marines and National Guard in LAW](./retired-military-leaders-analyze-trumps-deployment-of-marines-and-national-guard-in-la.md)  
 - [Robert Putnam reflects on how America became so polarized and what can unify the nation](./robert-putnam-reflects-on-how-america-became-so-polarized-and-what-can-unify-the-nation.md)  
 - [🧠💥🔄 RUDE AWAKENING: How Rich’s adult autism diagnosis changed everything](./rude-awakening-how-rich-s-adult-autism-diagnosis-changed-everything.md)  

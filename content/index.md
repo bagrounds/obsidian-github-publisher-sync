@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-04-24T11:53:08-07:00
+updated: 2026-04-24T14:40:35-07:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -71,17 +71,17 @@ updated: 2026-04-24T11:53:08-07:00
   
   
 ## [📚 Books](./books/index.md) (960)  
-- [🌊🧠🙏⚔️ River of the Gods: Genius, Belief, and Betrayal in the Search for the Source of the Nile](./books/river-of-the-gods.md)  
-- [🧭🕰️🥇🗺️ Longitude: The True Story of a Lone Genius Who Solved the Greatest Scientific Problem of His Time](./books/longitude.md)  
-- [🤸😊🎯🌟 The Art of Living: The Classical Manual on Virtue, Happiness, and Effectiveness](./books/the-art-of-living.md)  
-- [💼🔙📦 Working Backwards: Insights, Stories, and Secrets from Inside Amazon](./books/working-backwards-insights-stories-and-secrets-from-inside-amazon.md)  
+- [👂📱🐾🌿 The Sounds of Life: How Digital Technology Is Bringing Us Closer to the Worlds of Animals and Plants](./books/the-sounds-of-life-how-digital-technology-is-bringing-us-closer-to-the-worlds-of-animals-and-plants.md)  
+- [🏛️⚙️ Bureaucracy: What Government Agencies Do And Why They Do It](./books/bureaucracy-what-government-agencies-do-and-why-they-do-it.md)  
+- [💩💼 Bullshit Jobs: A Theory](./books/bullshit-jobs-a-theory.md)  
+- [🏃🤸 Built to Move: The Ten Essential Habits to Help You Move Freely and Live Fully](./books/built-to-move-the-ten-essential-habits-to-help-you-move-freely-and-live-fully.md)  
   
   
-## [📺 Videos](./videos/index.md) (791)  
-- [🕵️‍♀️📰🗳️👑 ProPublica Goes Inside Trump’s Effort to “Take Over” the Midterm Elections | Amanpour and Company](./videos/propublica-goes-inside-trumps-effort-to-take-over-the-midterm-elections-amanpour-and-company.md)  
-- [How “Digital Twins” Could Help Us Predict the Future | Karen Willcox | TED](./videos/how-digital-twins-could-help-us-predict-the-future-karen-willcox-ted.md)  
-- [🧠🎯⬆️ Tools to Enhance Working Memory & Attention](./videos/tools-to-enhance-working-memory-and-attention.md)  
-- [📜🇺🇸🗽➡️ The Declaration of Independence | Journey to American Democracy](./videos/the-declaration-of-independence-journey-to-american-democracy.md)  
+## [📺 Videos](./videos/index.md) (792)  
+- [🧑‍🏫🇭🇺⚔️✝️🚩🇺🇸🤫 Historian Timothy Snyder on Orbán's Defeat, Christian Nationalism, and What Trump Is Really Planning](./videos/historian-timothy-snyder-on-orbans-defeat-christian-nationalism-and-what-trump-is-really-planning.md)  
+- [🇺🇸🏛️🗣️📊 An Analysis of Modern Republicanism | Explainer](./videos/an-analysis-of-modern-republicanism-explainer.md)  
+- [🇺🇸🗣️🏛️ American Conversations: Senator Jon Ossoff](./videos/american-conversations-senator-jon-ossoff.md)  
+- [🌿🤖🛰️ These AI Devices Protect Nature in Real Time | Juan M. Lavista Ferres | TED](./videos/these-ai-devices-protect-nature-in-real-time-juan-m-lavista-ferres-ted.md)  
   
   
 ## [🌌 Topics](./topics/index.md) (91)  
@@ -113,10 +113,10 @@ updated: 2026-04-24T11:53:08-07:00
   
   
 ## [👥 People](./people/index.md) (18)  
+- [🕸️🌐👨‍💻 Tim Berners-Lee](./people/tim-berners-lee.md)  
 - [📈📊⚙️🎯 W Edwards Deming](./people/w-edwards-deming.md)  
 - [🤖🧠💻 Andrej Karpathy](./people/andrej-karpathy.md)  
 - [👨‍💻☁️🐘 Jay Kreps](./people/jay-kreps.md)  
-- [🤔⚙️🗣️🤝💡🧩🔭📚👴 Russell Ackoff](./people/russell-ackoff.md)  
   
   
 ## [🛍️ Products](./products/index.md) (6)  

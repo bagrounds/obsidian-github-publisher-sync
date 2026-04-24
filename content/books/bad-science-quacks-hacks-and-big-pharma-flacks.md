@@ -10,9 +10,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-17T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-04-24T01:45:48Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: "A high-contrast, conceptual illustration featuring a cluttered wooden desk. On the left side, a collection of pseudoscientific items: a vintage, unlabeled brown medicine bottle, a crystal, and a coil of wire, all looking dusty and slightly ominous. On the right, a sharp, modern magnifying glass rests over a stack of complex, clinical-looking charts and data graphs printed on white paper. A bright, focused spotlight shines down on the magnifying glass, casting a harsh shadow over the pseudoscientific items. The color palette is clinical white and sterile blue, contrasted by the murky, dull tones of the quackery items. The background is a dark, out-of-focus laboratory setting, emphasizing the separation between evidence-based clarity and the chaotic, misleading nature of misinformation."
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🧪👎 Bad Science: Quacks, Hacks, and Big Pharma Flacks  
+![books-bad-science-quacks-hacks-and-big-pharma-flacks](../books-bad-science-quacks-hacks-and-big-pharma-flacks.jpg)  
 [🛒 Bad Science: Quacks, Hacks, and Big Pharma Flacks. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/42ezkla)  
   
 ## 📚 Book Report: Bad Science: Quacks, Hacks, and Big Pharma Flacks  

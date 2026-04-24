@@ -5,10 +5,10 @@ aliases:
 title: 📺 Videos
 URL: https://bagrounds.org/videos
 backlinks: false
-updated: 2026-04-24T14:40:35-07:00
+updated: 2026-04-24T15:27:44-07:00
 ---
 [Home](../index.md)  
-# 📺 Videos (792)  
+# 📺 Videos (793)  
 - [💰🤑🤖💡🚀💲 $0.10 per Month Runs My Entire AI Life. I'll Show You How.](./0-10-month-runs-my-entire-ai-life-ill-show-you-how.md)  
 - [📊📈📉📃👁️ 10 Charts to Understand the 900 Page Budget Bill](./10-charts-to-understand-the-900-page-budget-bill.md)  
 - [🤖🔗⬆️✅ 12-Factor Agents: Patterns of reliable LLM applications — Dex Horthy, HumanLayer](./12-factor-agents-patterns-of-reliable-llm-applications-dex-horthy-humanlayer.md)  
@@ -17,6 +17,7 @@ updated: 2026-04-24T14:40:35-07:00
 - [🧠💪🤯🔄♾️ 15 Books So Hard They’ll Reshape Your Brain Forever](./15-books-so-hard-theyll-reshape-your-brain-forever.md)  
 - [🧠📈🥇 15 Books That Will Make You a Top 1% Thinker](./15-books-that-will-make-you-a-top-1-percent-thinker.md)  
 - [🤰👩‍⚕️👶🍼⏰ 16.7 Professor Helen Ball midwifery hour](./16-7-professor-helen-ball-midwiferyhour.md)  
+- [⭐1️⃣💰 If You Only Watch One Money Video, Make It This](./if-you-only-watch-one-money-video-make-it-this.md)  
 - [🤖📅🦢🚲 2025 in LLMs so far, illustrated by Pelicans on Bicycles - Simon Willison](./2025-in-llms-so-far-illustrated-by-pelicans-on-bicycles-simon-willison.md)  
 - [🗓️🎯📈💡 2025 Yearly Themes](./2025-yearly-themes.md)  
 - [📚⏱️💡 21 Life-Changing Books Summarized in 18 Minutes](./21-life-changing-books-summarized-in-18-minutes.md)  

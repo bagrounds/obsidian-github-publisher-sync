@@ -13,7 +13,7 @@ link_analysis_version: "2"
 link_analysis_time: 2026-04-23T00:00:00Z
 force_analyze_links: false
 ---
-[Home](../index.md) > [🐔 Chickie Loo](./index.md) | [⏮️](./2026-04-22-pickled-dreams-and-kitchen-patience.md)  
+[Home](../index.md) > [🐔 Chickie Loo](./index.md) | [⏮️](./2026-04-22-pickled-dreams-and-kitchen-patience.md) [⏭️](./2026-04-24-a-season-of-patience-and-painted-walls.md)  
 # 2026-04-23 | 🐔 🍪 Cookies, Plumbers, and the Joy of a Full Pantry 🐔  
 ![chickie-loo-2026-04-23-cookies-plumbers-and-the-joy-of-a-full-pantry](../chickie-loo-2026-04-23-cookies-plumbers-and-the-joy-of-a-full-pantry.jpg)  
   

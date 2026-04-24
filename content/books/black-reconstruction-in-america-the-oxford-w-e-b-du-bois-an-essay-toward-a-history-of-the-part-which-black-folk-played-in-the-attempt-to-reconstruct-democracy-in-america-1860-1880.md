@@ -9,9 +9,13 @@ affiliate link: https://amzn.to/47M6gmX
 link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-07T00:00:00Z
 force_analyze_links: false
+image_date: 2026-04-24T12:29:33Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A powerful, artistic representation of the Reconstruction era. In the foreground, a diverse group of Black men and women stand with dignity, holding tools and books, symbolizing labor and the pursuit of education. Behind them, the faint, ghostly silhouette of a neoclassical government building emerges from the mist, representing the promise of democratic institutions. The color palette is dominated by deep, earthy tones—ochre, slate, and charcoal—accented by a singular, bright golden light illuminating the figures from the front. The composition feels like a vintage woodcut or a layered lithograph, capturing a sense of historical weight, resilience, and the unfinished nature of the movement for equality. The background features subtle, sweeping lines suggesting the shifting landscapes of the American South during the transition from slavery to freedom.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🧑🏿‍🤝‍🧑🏿🏛️ Black Reconstruction in America (The Oxford W. E. B. Du Bois): An Essay Toward a History of the Part Which Black Folk Played in the Attempt to Reconstruct Democracy in America, 1860-1880  
+![books-black-reconstruction-in-america-the-oxford-w-e-b-du-bois-an-essay-toward-a-history-of-the-part-which-black-folk-played-in-the-attempt-to-reconstruct-democracy-in-america-1860-1880](../books-black-reconstruction-in-america-the-oxford-w-e-b-du-bois-an-essay-toward-a-history-of-the-part-which-black-folk-played-in-the-attempt-to-reconstruct-democracy-in-america-1860-1880.jpg)  
 [🛒 Black Reconstruction in America (The Oxford W. E. B. Du Bois): An Essay Toward a History of the Part Which Black Folk Played in the Attempt to Reconstruct Democracy in America, 1860-1880. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/47M6gmX)  
   
 ✊🏾 Black agency, particularly through a general strike of enslaved people, was central to the Union victory. Reconstruction was a failed attempt at interracial democracy, thwarted by white supremacy and a missed opportunity for cross-racial labor solidarity 📜💔.  

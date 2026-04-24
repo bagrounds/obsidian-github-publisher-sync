@@ -6,9 +6,17 @@ URL: https://bagrounds.org/books/be-water-my-friend-the-teachings-of-bruce-lee
 share: true
 CTA: 🌊 Adapt and flow.
 affiliate link: https://amzn.to/4jHtLTS
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_time: 2026-04-23T00:00:00Z
+force_analyze_links: false
+link_analysis_version: "2"
+image_date: 2026-04-24T03:15:19Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A minimalist, high-contrast composition featuring a single, crystalline drop of water frozen in mid-air above a dark, still pool. As the drop touches the surface, it creates perfectly concentric, glowing ripples that transform into the subtle, sweeping brushstroke silhouette of a martial artist in a fluid, defensive stance. The color palette is dominated by deep ink-blacks, slate grays, and luminous, electric cyan highlights. The background is a soft, blurred gradient suggesting the transition from shadow to light, evoking a sense of calm, focused energy and the seamless integration of movement and stillness.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🌊🥋 Be Water, My Friend: The Teachings of Bruce Lee  
+![books-be-water-my-friend-the-teachings-of-bruce-lee](../books-be-water-my-friend-the-teachings-of-bruce-lee.jpg)  
 [🛒 Be Water, My Friend: The Teachings of Bruce Lee. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4jHtLTS)  
   
 🌊💡🌱 Bruce Lee's philosophy of adaptability, self-actualization, and embracing life's constant change can empower individuals to cultivate authentic self-expression and navigate challenges with fluid strength.  

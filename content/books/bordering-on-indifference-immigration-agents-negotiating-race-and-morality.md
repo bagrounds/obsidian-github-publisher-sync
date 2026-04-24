@@ -7,11 +7,16 @@ share: true
 CTA: 🛂 Confront the complexity.
 affiliate link: https://amzn.to/4azhXAy
 link_analysis_model: gemini-3.1-flash-lite-preview
-link_analysis_time: 2026-04-09T00:00:00Z
+link_analysis_time: 2026-04-24T00:00:00Z
 force_analyze_links: false
+link_analysis_version: "2"
+image_date: 2026-04-24T14:41:29Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A minimalist, high-contrast illustration featuring a stylized, blurred silhouette of a person wearing a uniform, standing at the edge of a stark, geometric divide. The background is split into two muted, desaturated tones—a cold industrial grey and a warm, dusty desert ochre. In the center, a pair of balanced scales hangs from an invisible line, but instead of weights, the pans are filled with indistinct, fragmented shadows. The composition emphasizes a sense of cold, detached precision, using clean lines and a somber color palette to evoke the tension between individual humanity and the rigid, impersonal nature of bureaucratic enforcement. The atmosphere is quiet, heavy, and contemplative.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🛂😐🧑🏿🧑🏻⚖️ Bordering on Indifference: Immigration Agents Negotiating Race and Morality  
+![books-bordering-on-indifference-immigration-agents-negotiating-race-and-morality](../books-bordering-on-indifference-immigration-agents-negotiating-race-and-morality.jpg)  
 [🛒 Bordering on Indifference: Immigration Agents Negotiating Race and Morality. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4azhXAy)  
   
 💔⚖️🛂 U.S. immigration agents, predominantly Mexican Americans, cultivate emotional detachment to reconcile the racial and moral dilemmas inherent in enforcing exclusionary policies, revealing how bureaucratic indifference normalizes state violence.  

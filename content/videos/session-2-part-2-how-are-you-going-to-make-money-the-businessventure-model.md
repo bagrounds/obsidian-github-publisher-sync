@@ -10,9 +10,10 @@ Channel: MIT OpenCourseWare
 tags:
 youtube: https://youtu.be/wzC4PddpFnA
 force_analyze_links: false
-link_analysis_time: 2026-03-24T07:53:03.375Z
+link_analysis_time: 2026-04-24T00:00:00Z
 link_analysis_model: gemini-3.1-flash-lite-preview
 updated: 2026-03-24T22:26:21.418Z
+link_analysis_version: "2"
 ---
 [Home](../index.md) > [Videos](./index.md) | [3️⃣1️⃣⚖️🏛️ Session 3, Part 1: Legal Issues](./session-3-part-1-legal-issues.md)  
 # 💰🚀💼 Session 2, Part 2: How Are You Going to Make Money? - The Business/Venture Model  
@@ -57,7 +58,7 @@ updated: 2026-03-24T22:26:21.418Z
   
 ### 🆚 Contrasting  
 * 📘 Good to Great by Jim Collins suggests that long-term success comes from sticking to a core hedgehog concept rather than constant model pivots.  
-* 📘 The Innovator's Dilemma by Clayton Christensen explores why established companies often fail to adapt their business models even when they see new technology coming.  
+* 📘 [💡🤖💰💥🏢📉 The Innovator's Dilemma: When New Technologies Cause Great Firms to Fail](../books/the-innovators-dilemma.md) by Clayton Christensen explores why established companies often fail to adapt their business models even when they see new technology coming.  
   
 ### 🎨 Creatively Related  
 * 📘 The Age of Surveillance Capitalism by Shoshana Zuboff explores the darker side of the data-driven business models used by companies like Google.  

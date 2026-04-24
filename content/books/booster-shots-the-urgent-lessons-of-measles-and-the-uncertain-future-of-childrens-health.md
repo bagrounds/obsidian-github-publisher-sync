@@ -7,11 +7,16 @@ share: true
 CTA: 💉 Protect futures.
 affiliate link: https://amzn.to/3YIYAxH
 link_analysis_model: gemini-3.1-flash-lite-preview
-link_analysis_time: 2026-04-09T00:00:00Z
+link_analysis_time: 2026-04-17T00:00:00Z
 force_analyze_links: false
+link_analysis_version: "2"
+image_date: 2026-04-24T14:41:27Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A minimalist, high-contrast illustration featuring a stylized, translucent medical shield protecting a vibrant, abstract silhouette of a young child. Floating around the shield are soft, geometric representations of viral structures rendered in muted, cool tones, contrasted by a single, glowing, warm-toned syringe icon at the center. The background is a clean, clinical white, transitioning into a subtle, soft-focus gradient of deep blue, evoking a sense of scientific authority and protection. The composition is balanced and modern, utilizing clean lines and a professional color palette to convey the urgency of public health and the necessity of immunization in a clear, metaphorical way.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 💉🦠👶 Booster Shots: The Urgent Lessons of Measles and the Uncertain Future of Children's Health  
+![books-booster-shots-the-urgent-lessons-of-measles-and-the-uncertain-future-of-childrens-health](../books-booster-shots-the-urgent-lessons-of-measles-and-the-uncertain-future-of-childrens-health.jpg)  
 [🛒 Booster Shots: The Urgent Lessons of Measles and the Uncertain Future of Children's Health. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3YIYAxH)  
   
 💉🦠🌍 The resurgence of measles serves as a critical warning of declining public trust in science, the dangers of vaccine hesitancy, and an underfunded public health infrastructure. Consider a historical and scientific context to protect children's health in future pandemics.  

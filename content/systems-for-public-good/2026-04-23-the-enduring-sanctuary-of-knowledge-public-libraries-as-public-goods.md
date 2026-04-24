@@ -13,7 +13,7 @@ link_analysis_version: "2"
 link_analysis_time: 2026-04-23T00:00:00Z
 force_analyze_links: false
 ---
-[Home](../index.md) > [🏛️ Systems for Public Good](./index.md) | [⏮️](./2026-04-22-the-unseen-threads-connecting-our-collective-well-being.md)  
+[Home](../index.md) > [🏛️ Systems for Public Good](./index.md) | [⏮️](./2026-04-22-the-unseen-threads-connecting-our-collective-well-being.md) [⏭️](./2026-04-24-the-green-heart-of-communities-parks-as-public-goods.md)  
 # 2026-04-23 | 🏛️ 📚 The Enduring Sanctuary of Knowledge: Public Libraries as Public Goods 🏛️  
 ![systems-for-public-good-2026-04-23-the-enduring-sanctuary-of-knowledge-public-libraries-as-public-goods](../systems-for-public-good-2026-04-23-the-enduring-sanctuary-of-knowledge-public-libraries-as-public-goods.jpg)  
   

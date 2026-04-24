@@ -10,9 +10,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-17T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-04-24T17:35:24Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: "A stylized, cross-section illustration of a human brain floating in the center of the frame. The brain is vibrant and glowing with soft, bioluminescent circuits pulsing in warm colors like gold, teal, and magenta. Surrounding the brain are twelve minimalist, floating icons representing the core principles: a running shoe (exercise), a crescent moon (sleep), a lightbulb (innovation), an eye (vision), a puzzle piece (problem-solving), and a seedling (growth). The background is a clean, deep navy blue, creating a high-contrast, modern, and intellectual aesthetic. The composition is balanced and airy, suggesting clarity, cognitive optimization, and the intersection of biology and modern life."
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🧠💡📈🏠🏢🧑‍🎓 Brain Rules: 12 Principles for Surviving and Thriving at Work, Home, and School  
+![books-brain-rules-12-principles-for-surviving-and-thriving-at-work-home-and-school](../books-brain-rules-12-principles-for-surviving-and-thriving-at-work-home-and-school.jpg)  
 [🛒 Brain Rules: 12 Principles for Surviving and Thriving at Work, Home, and School. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3TQGlUy)  
   
 ## 🧠 Book Report: Brain Rules by John Medina  

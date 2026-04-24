@@ -9,9 +9,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-19T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-04-24T21:26:51Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A high-angle, minimalist illustration featuring a complex network of interlocking brass gears and neoclassical marble columns. The scene blends organic, weathered stone architecture with precise, mechanical metallic components, suggesting the intersection of rigid government structure and internal operational machinery. The composition is balanced and symmetrical, rendered in a muted color palette of slate gray, oxidized copper, and cool cream. Subtle, thin lines of light trace pathways through the gears, representing the flow of policy and decision-making. The background is a clean, solid off-white, emphasizing the stark contrast between the heavy, permanent nature of the columns and the intricate, ever-moving gears. The overall aesthetic is professional, academic, and analytical.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🏛️⚙️ Bureaucracy: What Government Agencies Do And Why They Do It  
+![books-bureaucracy-what-government-agencies-do-and-why-they-do-it](../books-bureaucracy-what-government-agencies-do-and-why-they-do-it.jpg)  
 [🛒 Bureaucracy: What Government Agencies Do And Why They Do It. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/44YROZ4)  
   
 ## 📖 Book Report: Bureaucracy: What Government Agencies Do And Why They Do It  

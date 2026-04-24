@@ -9,6 +9,10 @@ Platform:
 Channel: Amanpour and Company
 tags:
 youtube: https://youtu.be/L2NqfLtkUvA
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_version: "2"
+link_analysis_time: 2026-04-24T00:00:00Z
+force_analyze_links: false
 ---
 [Home](../index.md) > [Videos](./index.md)  
 # 🕵️‍♀️📰🗳️👑 ProPublica Goes Inside Trump’s Effort to “Take Over” the Midterm Elections | Amanpour and Company  

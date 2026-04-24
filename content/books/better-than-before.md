@@ -11,9 +11,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-16T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-04-24T08:48:12Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A minimalist, clean illustration featuring a stylized, ascending staircase made of vibrant, interlocking puzzle pieces. The staircase begins on the left with a dull, gray, jagged line representing a downward trend, which seamlessly transforms into a smooth, glowing, upward-sloping gold line as it climbs the steps. The background is a soft, warm gradient shifting from a muted morning blue to a bright, energized sunrise yellow. Floating subtly around the steps are four distinct geometric shapes—a circle, a square, a triangle, and a star—each in a different vibrant color, representing the four personality tendencies. The overall aesthetic is modern, optimistic, and organized, emphasizing growth, clarity, and the successful transformation of behavior.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 📉➡️👍 Better Than Before: What I Learned About Making and Breaking Habits - to Sleep More, Quit Sugar, Procrastinate Less, and Generally Build a Happier Life  
+![books-better-than-before](../books-better-than-before.jpg)  
 [🛒 Better Than Before: What I Learned About Making and Breaking Habits - to Sleep More, Quit Sugar, Procrastinate Less, and Generally Build a Happier Life. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4556LsH)  
   
 ## 🤖 AI Summary  

@@ -7,8 +7,9 @@ share: true
 CTA: 🚀 Discover your origins.
 affiliate link: https://amzn.to/3Njf2Cb
 link_analysis_model: gemini-3.1-flash-lite-preview
-link_analysis_time: 2026-04-08T00:00:00Z
+link_analysis_time: 2026-04-24T00:00:00Z
 force_analyze_links: false
+link_analysis_version: "2"
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 💻0️⃣ Source Code: My Beginnings  
@@ -78,7 +79,7 @@ force_analyze_links: false
   
 ### 🔗 Related  
 * [🤿💼 Deep Work: Rules for Focused Success in a Distracted World](./deep-work.md) by Cal Newport: Discusses the value of focused, uninterrupted work in a distracted age, echoing the intense concentration Gates applied to early coding.  
-* 📈 Outliers by Malcolm Gladwell: Explores the factors contributing to high levels of success, including the role of opportunity, timing, and deliberate practice, which are evident in Gates's early life.  
+* 📈 [⭐ Outliers](./outliers.md) by Malcolm Gladwell: Explores the factors contributing to high levels of success, including the role of opportunity, timing, and deliberate practice, which are evident in Gates's early life.  
   
 ## 🫵 What Do You Think?  
 🤔 What aspects of Bill Gates's early experiences were most impactful for developing a strong personal or professional source code?

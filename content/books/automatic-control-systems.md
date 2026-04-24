@@ -12,9 +12,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-19T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-04-23T23:27:18Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A clean, high-contrast isometric illustration featuring a centralized, glowing mechanical gear integrated with a digital circuit board pattern. From the gear, a series of elegant, flowing data streams and feedback loops arc outward, transitioning from structured blue mathematical graphs (like sine waves and root locus plots) on one side to soft, glowing robotic nodes on the other. The background is a deep, professional charcoal grey, emphasizing the contrast of neon cyan and white lines. The composition represents the intersection of classical mechanical engineering and modern computational logic, utilizing a minimalist aesthetic with sharp, precise geometric lines to convey stability, automation, and technological precision.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # ⚙️🤖🔄🕹️ Automatic Control Systems  
+![books-automatic-control-systems](../books-automatic-control-systems.jpg)  
 [🛒 Automatic Control Systems. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3Zcedyr)  
   
 ## 🤖 AI Summary  

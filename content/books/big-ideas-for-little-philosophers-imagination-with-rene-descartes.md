@@ -6,11 +6,16 @@ URL: https://bagrounds.org/books/big-ideas-for-little-philosophers-imagination-w
 share: true
 affiliate link: https://amzn.to/4egVN5X
 link_analysis_model: gemini-3.1-flash-lite-preview
-link_analysis_time: 2026-04-07T00:00:00Z
+link_analysis_time: 2026-04-19T00:00:00Z
 force_analyze_links: false
+link_analysis_version: "2"
+image_date: 2026-04-24T11:33:10Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A whimsical, soft-focus illustration featuring a curious toddler sitting on a plush rug in a sunlit nursery. The child is holding a small, glowing paper boat that is transforming into a vibrant, swirling cloud of colorful, dreamlike shapes—stars, moons, and geometric patterns—that float upward toward the ceiling. In the background, a silhouette of a classic quill pen rests on an open book, subtly nodding to the historical philosopher. The color palette is warm and gentle, using soft pastels like dusty blue, warm yellow, and cream to evoke a sense of wonder, intellectual discovery, and the boundless nature of a childs imagination. The lighting is ethereal, suggesting that the child’s thoughts are literally illuminating the room.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🤔👶💭 Big Ideas for Little Philosophers: Imagination with René Descartes  
+![books-big-ideas-for-little-philosophers-imagination-with-rene-descartes](../books-big-ideas-for-little-philosophers-imagination-with-rene-descartes.jpg)  
 [🛒 Big Ideas for Little Philosophers: Imagination with René Descartes. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4egVN5X)  
   
 ## 📚 Book Report: 🧠 Big Ideas for Little Philosophers: 💭 Imagination with René Descartes  

@@ -14,7 +14,7 @@ link_analysis_time: 2026-04-22T00:00:00Z
 force_analyze_links: false
 updated: 2026-04-23T19:41:00
 ---
-[Home](../index.md) > [📰 The Noise](./index.md) | [⏮️](./2026-04-21-the-dual-engine-of-progress-and-conflict.md) [⏭️](./2026-04-23-navigating-shifting-grounds-and-soaring-heights.md)  
+[Home](../index.md) > [📰 The Noise](./index.md) | [⏮️](./2026-04-21-the-dual-engine-of-progress-and-conflict.md) [⏭️](./2026-04-23-global-currents-echoing-futures.md)  
 # 2026-04-22 | 📰 The Dual Engine of Progress and Conflict 📰  
 ![the-noise-2026-04-22-the-dual-engine-of-progress-and-conflict](../the-noise-2026-04-22-the-dual-engine-of-progress-and-conflict.jpg)  
   

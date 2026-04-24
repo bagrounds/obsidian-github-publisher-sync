@@ -7,11 +7,16 @@ share: true
 affiliate link: https://amzn.to/3UwSu1e
 CTA: 💃 Get moving.
 link_analysis_model: gemini-3.1-flash-lite-preview
-link_analysis_time: 2026-04-11T00:00:00Z
+link_analysis_time: 2026-04-16T00:00:00Z
 force_analyze_links: false
+link_analysis_version: "2"
+image_date: 2026-04-24T06:48:48Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A minimalist, high-contrast illustration featuring a silhouette of a dancer mid-leap. The dancer is captured in a fluid, asymmetrical modern dance pose against a soft, neutral-toned studio background. A single, dramatic light source from the side casts a long, graceful shadow on the floor, emphasizing the movements arc. The color palette is limited to deep charcoal, warm cream, and a single accent of muted terracotta. Clean, geometric lines represent the studio space, suggesting openness and creative potential. The overall aesthetic is elegant, professional, and focused on the raw expression of human motion.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 💃➡️ Beginning Modern Dance  
+![books-beginning-modern-dance](../books-beginning-modern-dance.jpg)  
 [🛒 Beginning Modern Dance. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3UwSu1e)  
   
 📖 A comprehensive analysis of "Beginning Modern Dance" awaits, complete with a curated selection of recommendations for further reading. 📝 This report delves into the foundational text, offering a gateway to the expressive world of modern dance. 📚 Following the report, a diverse list of similar, contrasting, and creatively related books is provided to expand the reader's understanding and appreciation of the art form.  

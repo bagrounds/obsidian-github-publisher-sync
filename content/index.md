@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-04-23T14:35:47-07:00
+updated: 2026-04-24T06:33:13-07:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -14,18 +14,18 @@ updated: 2026-04-23T14:35:47-07:00
 🔊 Listen to any page with built in audio control.  
 💬 Comment on any page with your GitHub account.  
   
-## [🪞 Reflections](./reflections/index.md) ~ Blog (525)  
-- [2026-04-23](./reflections/2026-04-23.md)  
+## [🪞 Reflections](./reflections/index.md) ~ Blog (526)  
+- [2026-04-24](./reflections/2026-04-24.md)  
+- [2026-04-23 | 🗓️ Unpresidented 💻 Framework 🤖 Correction 🐔 Pantry 🌟 Compassion 🏛️ Knowledge 📰 Futures 🧹 Refactor 🔀 Architectures 📺🤖🐔🌟🏛️📰🔀🔄🤖🐲](./reflections/2026-04-23.md)  
 - [2026-04-22 | 🗓️ Today 🧠 Brain 📈 Recession 🏛️ White 💡 Learned 🤖 AI 🤖 AI ✨ Compassion 📰 Conflict 🤖 Agency 🐔 Patience 🏛️ Well-being 🔀 Friction 📺🌟📰🤖🐔🏛️🔀🔄🤖🐲](./reflections/2026-04-22.md)  
 - [2026-04-21 | 🥳 5 🏆 Winner 🗣️ Show 🚀 Launch 🌟 Shine 📰 Progress 🐔 Eggs 🤖 Entropy 🏛️ Web 🔀 Decay 📺🌟📰🐔🤖🏛️🔀🤖🐲](./reflections/2026-04-21.md)  
-- [2026-04-20 | 🥳 Age 🌟 Progress 🌊 Secret 🐔 Machine 🏛️ Systems 📺🌟📰🐔🤖🏛️🔀🔄🤖🐲](./reflections/2026-04-20.md)  
   
   
-## [🤖 AI Blog](./ai-blog/index.md) (168)  
+## [🤖 AI Blog](./ai-blog/index.md) (170)  
+- [2026-04-23 | 🔤 No Abbreviations in Haskell: A Boy-Scout Refactor 🧹](./ai-blog/2026-04-23-1-haskell-no-abbreviations-refactor.md)  
+- [2026-04-22 | 🌐 Gemini: Search Grounded Response Links 🔍](./ai-blog/2026-04-22-1-gemini-grounding-source-links.md)  
 - [2026-04-20 | 📊 Changes Preview in Reflections 🪞](./ai-blog/2026-04-20-1-changes-preview-in-reflections.md)  
 - [2026-04-19 | 🎂 Blogiversary Two: A Year of Daily Reflections, Haskell, and Six AI Blogs 🕯️🕯️](./ai-blog/2026-04-19-3-blogiversary-2.md)  
-- [2026-04-19 | 🏁 Finishing the Haskell Architecture Journey 🗺️](./ai-blog/2026-04-19-2-finishing-the-haskell-architecture-journey.md)  
-- [2026-04-19 | 🔧 Fixing the Misplaced H2 🤖](./ai-blog/2026-04-19-1-fixing-the-misplaced-h2.md)  
   
   
 ## [🤖 Auto Blog Zero](./auto-blog-zero/index.md) (44)  
@@ -50,7 +50,7 @@ updated: 2026-04-23T14:35:47-07:00
   
   
 ## [📰 The Noise](./the-noise/index.md) (14)  
-- [2026-04-23 | 📰 🌐 Navigating Shifting Grounds and Soaring Heights 🚀 📰](./the-noise/2026-04-23-navigating-shifting-grounds-and-soaring-heights.md)  
+- [2026-04-23 | 📰 Global Currents, Echoing Futures 📰](./the-noise/2026-04-23-global-currents-echoing-futures.md)  
 - [2026-04-22 | 📰 The Dual Engine of Progress and Conflict 📰](./the-noise/2026-04-22-the-dual-engine-of-progress-and-conflict.md)  
 - [2026-04-21 | 📰 The Dual Engine of Progress and Conflict 📰](./the-noise/2026-04-21-the-dual-engine-of-progress-and-conflict.md)  
 - [2026-04-20 | 📰 🌐 Shifting Sands, Enduring Currents 🌊 📰](./the-noise/2026-04-20-shifting-sands-enduring-currents.md)  
@@ -63,39 +63,39 @@ updated: 2026-04-23T14:35:47-07:00
 - [2026-04-20 | 🌟 Global Innovations Spark Collective Progress 🌟](./positivity-bias/2026-04-20-global-innovations-spark-collective-progress.md)  
   
   
-## [🔀 Convergence](./convergence/index.md) (9)  
+## [🔀 Convergence](./convergence/index.md) (10)  
+- [2026-04-23 | 🔀 🪞 The Sustaining Architectures of Agency and Abundance 🔀](./convergence/2026-04-23-the-sustaining-architectures-of-agency-and-abundance.md)  
 - [2026-04-22 | 🔀 ⚖️ The Sovereignty of Thought: Navigating Correction, Care, and Creative Friction 🔀](./convergence/2026-04-22-the-sovereignty-of-thought-navigating-correction-care-and-creative-friction.md)  
 - [2026-04-21 | 🔀 🪞 The Enduring Battle Against Decay: From Digital Entropy to Domestic Hearth 🔀](./convergence/2026-04-21-the-enduring-battle-against-decay-from-digital-entropy-to-domestic-hearth.md)  
 - [2026-04-20 | 🔀 The Echo Chamber and the Architect: Forging Meaning in a World of Competing Systems 🔀](./convergence/2026-04-20-the-echo-chamber-and-the-architect-forging-meaning-in-a-world-of-competing-systems.md)  
-- [2026-04-19 | 🔀 🪞 The Architects of Meaning: From Friction to Flow 🔀](./convergence/2026-04-19-the-architects-of-meaning-from-friction-to-flow.md)  
   
   
 ## [📚 Books](./books/index.md) (960)  
-- [🌡️✅🌎 What If We Get It Right?: Visions of Climate Futures](./books/what-if-we-get-it-right-visions-of-climate-futures.md)  
-- [👑🌎 Autocracy, Inc.: The Dictators Who Want to Run the World](./books/autocracy-inc-the-dictators-who-want-to-run-the-world.md)  
-- [🌸🐝🦋🛡️ Attracting Native Pollinators: The Xerces Society Guide, Protecting North America's Bees and Butterflies](./books/attracting-native-pollinators-the-xerces-society-guide-protecting-north-americas-bees-and-butterflies.md)  
-- [🤔💪 Attention and effort](./books/attention.md)  
+- [📢💡 Public Broadcasting and the Public Interest](./books/public-broadcasting-and-the-public-interest.md)  
+- [✍️💻💰 Blog, Inc.: Blogging for Passion, Profit, and to Create Community](./books/blog-inc-blogging-for-passion-profit-and-to-create-community.md)  
+- [🧑🏿‍🤝‍🧑🏿🏛️ Black Reconstruction in America (The Oxford W. E. B. Du Bois): An Essay Toward a History of the Part Which Black Folk Played in the Attempt to Reconstruct Democracy in America, 1860-1880](./books/black-reconstruction-in-america-the-oxford-w-e-b-du-bois-an-essay-toward-a-history-of-the-part-which-black-folk-played-in-the-attempt-to-reconstruct-democracy-in-america-1860-1880.md)  
+- [🛂😐🧑🏿🧑🏻⚖️ Bordering on Indifference: Immigration Agents Negotiating Race and Morality](./books/bordering-on-indifference-immigration-agents-negotiating-race-and-morality.md)  
   
   
 ## [📺 Videos](./videos/index.md) (790)  
-- [📢👂🆕💻✨ We heard you: the new Framework Laptop 13 Pro.](./videos/we-heard-you-the-new-framework-laptop-13-pro.md)  
-- [Susan Crawford wins Wisconsin Supreme Court seat, cementing liberal majority](./videos/susan-crawford-wins-wisconsin-supreme-court-seat-cementing-liberal-majority.md)  
-- [To Save Democracy, Here’s a Playbook That Works](./videos/to-save-democracy-heres-a-playbook-that-works.md)  
-- [Systems Thinking Course - Lesson 03 - Pillar 2: Communication](./videos/systems-thinking-course-lesson-03-pillar-2-communication.md)  
+- [🧠⚡️😊⬇️⬆️ How Dopamine & Serotonin Shape Decisions, Motivation & Learning | Dr. Read Montague](./videos/how-dopamine-serotonin-shape-decisions-motivation-learning-dr-read-montague.md)  
+- [🤖🧪🚫🛑💥 Anthropic Tested 16 Models. Instructions Didn't Stop Them (When Security is a Structural Failure)](./videos/anthropic-tested-16-models-instructions-didnt-stop-them-when-security-is-a-structural-failure.md)  
+- [📺📰👋🔚😢😠 Highlights from PBS News Weekend as show goes off the air](./videos/highlights-from-pbs-news-weekend-as-show-goes-off-the-air.md)  
+- [🧠➡️🤖⚡️ Your Brain Doesn't Command Your Body. It Predicts It. | Max Bennett](./videos/your-brain-doesnt-command-your-body-it-predicts-it-max-bennett.md)  
   
   
 ## [🌌 Topics](./topics/index.md) (91)  
+- [♻️🫀🧠💪 Cognitive Behavioral Therapy](./topics/cognitive-behavioral-therapy.md)  
 - [📚⚓ Books Removed From Naval Academy Library](./topics/books-removed-from-naval-academy-library.md)  
 - [⚛️ Quantum Computing](./topics/quantum-computing.md)  
 - [🔢➕➕ 3 Sum](./topics/programming-problems/3-sum.md)  
-- [🔢➕ 2 Sum](./topics/programming-problems/2-sum.md)  
   
   
 ## [📄  Articles](./articles/index.md) (84)  
-- [👨‍🎓🎯🚫 How the Ph.D. Project, and 45 colleges, became a target of the Trump administration](./articles/how-the-phd-project-and-45-colleges-became-a-target-of-the-trump-administration.md)  
-- [🚫🏫📉⚠️ Project 2025 and education: A lot of bad ideas, some more actionable than others](./articles/project-2025-and-education-a-lot-of-bad-ideas-some-more-actionable-than-others.md)  
-- [📉🍎🔥🚫 How Project 2025 Would Devastate Public Education](./articles/how-project-2025-would-devastate-public-education.md)  
-- [🏫🔥 Snohomish County schools react to education department firings](./articles/snohomish-county-schools-react-to-education-department-firings.md)  
+- [🧠📈🔑 Cognitive load is what matters](./articles/cognitive-load-is-what-matters.md)  
+- [🤔⚙️🧩🏗️💡 Everything I know about good system design](./articles/everything-i-know-about-good-system-design.md)  
+- [❓📈🤦 Failing to Understand the Exponential, Again](./articles/failing-to-understand-the-exponential-again.md)  
+- [🤖⚙️🔄🗣️ Agentic Context Engineering: Evolving Contexts for Self Improving Language Models](./articles/agentic-context-engineering-evolving-contexts-for-self-improving-language-models.md)  
   
   
 ## [🤖💬 Bot Chats](./bot-chats/index.md) (49)  
@@ -113,10 +113,10 @@ updated: 2026-04-23T14:35:47-07:00
   
   
 ## [👥 People](./people/index.md) (18)  
+- [📈📊⚙️🎯 W Edwards Deming](./people/w-edwards-deming.md)  
 - [🤖🧠💻 Andrej Karpathy](./people/andrej-karpathy.md)  
 - [👨‍💻☁️🐘 Jay Kreps](./people/jay-kreps.md)  
 - [🤔⚙️🗣️🤝💡🧩🔭📚👴 Russell Ackoff](./people/russell-ackoff.md)  
-- [👨‍🏫📈💻 Scott Galloway](./people/scott-galloway.md)  
   
   
 ## [🛍️ Products](./products/index.md) (6)  

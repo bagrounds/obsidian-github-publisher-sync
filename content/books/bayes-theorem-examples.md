@@ -10,9 +10,13 @@ affiliate link: https://amzn.to/43TFRTr
 link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-09T00:00:00Z
 force_analyze_links: false
+image_date: 2026-04-24T01:45:57Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: "A minimalist, clean composition featuring a stylized, floating tree diagram constructed from colorful, translucent geometric shapes. The branches of the diagram branch out into smaller, lighter-colored nodes, representing probability paths. In the center, a magnifying glass hovers over a single, glowing node, symbolizing the act of investigating evidence. Surrounding the diagram are scattered, soft-edged icons representing common probability scenarios: a single six-sided die, a stylized envelope, and a small, simplified medical cross. The background is a soft, neutral matte off-white, providing a bright and intellectual atmosphere. The lighting is soft and diffused, creating subtle drop shadows that give the floating elements a sense of depth and dimensionality, emphasizing clarity and logical progression."
 ---
 [Home](../index.md) > [Books](./index.md)  
 # ➕🎲👀👶 Bayes' Theorem Examples: A Visual Introduction For Beginners  
+![books-bayes-theorem-examples](../books-bayes-theorem-examples.jpg)  
 [🛒 Bayes' Theorem Examples: A Visual Introduction For Beginners. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/43TFRTr)  
   
 ## 🤖 AI Summary  

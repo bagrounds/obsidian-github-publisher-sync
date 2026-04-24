@@ -7,11 +7,16 @@ share: true
 affiliate link: https://amzn.to/3VwOyhF
 CTA: 🧐 Question everything.
 link_analysis_model: gemini-3.1-flash-lite-preview
-link_analysis_time: 2026-04-02T00:00:00Z
+link_analysis_time: 2026-04-18T00:00:00Z
 force_analyze_links: false
+link_analysis_version: "2"
+image_date: 2026-04-24T06:48:58Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A conceptual illustration featuring a minimalist, hand-drawn-style maze set against a soft, textured paper background. In the center of the maze, a single, vibrant red ink blot disrupts the otherwise clean, black-and-white geometric path, symbolizing a mistake. Radiating outward from the center are faint, ghostly pencil sketches of diverging paths that suggest alternative possibilities or wrong turns. A compass lies near the bottom, its needle spinning erratically and pointing in multiple directions at once, representing the loss of certainty. The lighting is soft and intellectual, casting subtle shadows that give the image depth. The overall aesthetic is clean, academic, and contemplative, emphasizing the beauty and complexity found within human fallibility.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # ❌ Being Wrong: Adventures in the Margin of Error  
+![books-being-wrong-adventures-in-the-margin-of-error](../books-being-wrong-adventures-in-the-margin-of-error.jpg)  
 [🛒 Being Wrong: Adventures in the Margin of Error. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3VwOyhF)  
   
 ## 📚 Book Report: 😟 Being Wrong: Adventures in the Margin of Error  

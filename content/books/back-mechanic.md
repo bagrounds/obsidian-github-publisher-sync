@@ -7,11 +7,16 @@ share: true
 affiliate link: https://amzn.to/3Te4Xq3
 CTA: 🚶‍♀️ Restore your back.
 link_analysis_model: gemini-3.1-flash-lite-preview
-link_analysis_time: 2026-04-08T00:00:00Z
+link_analysis_time: 2026-04-20T00:00:00Z
 force_analyze_links: false
+link_analysis_version: "2"
+image_date: 2026-04-24T00:36:24Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A clean, minimalist illustration featuring a stylized, glowing human spine composed of interlocking mechanical gears and structural supports. The spine is centered against a soft, neutral-toned background. To the side, a set of simplified, high-quality professional tools—a wrench and a caliper—are arranged neatly, symbolizing precision and repair. The lighting is soft and clinical, highlighting the connection between biological anatomy and mechanical engineering. The overall aesthetic is professional, calming, and educational, emphasizing the concept of spine hygiene and structural integrity through a blend of human physiology and technical maintenance.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🔙🛠️ Back Mechanic  
+![books-back-mechanic](../books-back-mechanic.jpg)  
 [🛒 Back Mechanic. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3Te4Xq3)  
   
 ## 📖 Book Report: Back Mechanic by Dr. Stuart McGill  

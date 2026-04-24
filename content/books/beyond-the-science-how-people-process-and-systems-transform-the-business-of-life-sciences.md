@@ -9,9 +9,13 @@ affiliate link: https://amzn.to/4p4mZJB
 link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-11T00:00:00Z
 force_analyze_links: false
+image_date: 2026-04-24T09:43:27Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: "A minimalist, high-contrast composition featuring three overlapping translucent geometric shapes: a soft, human-centric organic silhouette representing People, a precise interlocking gear representing Process, and a glowing, interconnected digital network node representing Systems. These elements converge in the center to form a vibrant, crystalline structure that resembles a DNA double helix. The background is a clean, professional clinical white with subtle, faint blueprint grid lines. The color palette uses professional tones of deep navy, scientific teal, and a bright, energetic accent of electric orange, symbolizing the intersection of corporate strategy and life-saving innovation. The lighting is soft and studio-quality, emphasizing clarity, precision, and modern sophistication."
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🧑‍🤝‍🧑⚙️🧬 Beyond the Science: How People, Process, and Systems Transform the Business of Life Sciences  
+![books-beyond-the-science-how-people-process-and-systems-transform-the-business-of-life-sciences](../books-beyond-the-science-how-people-process-and-systems-transform-the-business-of-life-sciences.jpg)  
 [🛒 Beyond the Science: How People, Process, and Systems Transform the Business of Life Sciences. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4p4mZJB)  
   
 🔬 Achieving excellence in drug and device development: scientific breakthroughs alone are insufficient without robust operational frameworks.  

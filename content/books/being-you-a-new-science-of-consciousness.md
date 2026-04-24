@@ -10,9 +10,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-17T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-04-24T07:43:49Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A surreal, artistic rendering of a human silhouette facing a dark, infinite void. The figure is composed of intricate, glowing neural networks and constellations of light that bleed outward, blending into the surrounding darkness. Inside the head, a vibrant, multi-layered projection of a forest landscape is being rendered, suggesting an internal model of reality. The color palette is deep indigo and midnight blue, contrasted by brilliant pulses of neon cyan and warm amber light emanating from the brain. The style is minimalist yet ethereal, emphasizing the concept of a controlled hallucination where the self is a shimmering, incomplete construct emerging from the complex architecture of the mind.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 👤🧠 Being You: A New Science of Consciousness  
+![books-being-you-a-new-science-of-consciousness](../books-being-you-a-new-science-of-consciousness.jpg)  
 [🛒 Being You: A New Science of Consciousness. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4jubxDi)  
   
 ## 📝🐒 Human Notes  

@@ -6,11 +6,16 @@ URL: https://bagrounds.org/books/big-ideas-for-little-philosophers-happiness-wit
 share: true
 affiliate link: https://amzn.to/3ZLGBaU
 link_analysis_model: gemini-3.1-flash-lite-preview
-link_analysis_time: 2026-04-07T00:00:00Z
+link_analysis_time: 2026-04-19T00:00:00Z
 force_analyze_links: false
+link_analysis_version: "2"
+image_date: 2026-04-24T10:39:35Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A whimsical, soft-focus illustration featuring a stylized, toddler-sized Aristotle with a gentle smile, sitting on a patch of lush green grass. He is holding a small, glowing golden heart in one hand and reaching out with the other toward a diverse group of happy, playful children. Above them, a soft, sun-drenched sky contains faint, ethereal outlines of a lightbulb and a stylized ancient Greek column. The color palette is warm and inviting, using golden yellows, soft teals, and earthy greens to evoke a sense of wisdom, friendship, and childhood wonder. The overall aesthetic is clean and modern, mimicking the charming, minimalist art style of a high-quality children’s board book.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🤔👶😊 Big Ideas for Little Philosophers: Happiness with Aristotle  
+![books-big-ideas-for-little-philosophers-happiness-with-aristotle](../books-big-ideas-for-little-philosophers-happiness-with-aristotle.jpg)  
 [🛒 Big Ideas for Little Philosophers: Happiness with Aristotle. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3ZLGBaU)  
   
 ## 📚 Book Report: Big Ideas for Little Philosophers: Happiness with Aristotle  

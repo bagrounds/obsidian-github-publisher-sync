@@ -12,9 +12,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-16T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-04-24T10:39:32Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A minimalist, high-contrast composition featuring a complex geometric structure, such as a multi-dimensional lattice or a fragmented crystalline orb, floating in a void. Rays of soft, ethereal light refract through the structure, casting intricate, overlapping shadows that defy standard perspective. Half of the object appears as a solid, recognizable physical form, while the other half dissolves into a swirling, translucent cloud of digital-like data points or mathematical symbols, suggesting the transition from classical intuition to quantum information. The color palette uses deep navy and obsidian blacks contrasted with vibrant, glowing cyan and electric violet highlights to evoke a sense of deep space and scientific discovery. The overall aesthetic is clean, modern, and intellectual, emphasizing the intersection of abstract theory and physical reality.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # ⚛️🌎 Beyond Weird: Why Everything You Thought You Knew about Quantum Physics Is Different  
+![books-beyond-weird](../books-beyond-weird.jpg)  
 [🛒 Beyond Weird: Why Everything You Thought You Knew about Quantum Physics Is Different. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4kkWHjM)  
   
 ## 📚 Book Report: *Beyond Weird* by Philip Ball  

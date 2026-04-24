@@ -10,9 +10,10 @@ Channel: Vinh Nguyen
 tags:
 youtube: https://youtu.be/HQ4_mgY4pgs
 force_analyze_links: false
-link_analysis_time: 2026-03-26T00:21:18.658Z
+link_analysis_time: 2026-04-23T00:00:00Z
 link_analysis_model: gemini-3.1-flash-lite-preview
 updated: 2026-03-26T03:06:02.259Z
+link_analysis_version: "2"
 ---
 [Home](../index.md) > [Videos](./index.md)  
 # 🛡️⚙️🤖🔭 Antibrittle Agents: Engineering Reliability for Long-Horizon AI  
@@ -53,7 +54,7 @@ updated: 2026-03-26T03:06:02.259Z
   
 ### ↔️ Similar  
   
-* 🌊 The Coming Wave by Mustafa Suleyman explores the convergence of AI and biotech and the urgent need for containment and structural safety.  
+* 🌊 [🌊🤖🤔 The Coming Wave: Technology, Power, and the 21st Century's Greatest Dilemma](../books/the-coming-wave-technology-power-and-the-21st-centurys-greatest-dilemma.md) by Mustafa Suleyman explores the convergence of AI and biotech and the urgent need for containment and structural safety.  
 * 🤖 Human Compatible by Stuart Russell argues that we must rebuild AI around the principle of provable benefit to humans to avoid catastrophic loss of control.  
   
 ### 🆚 Contrasting  

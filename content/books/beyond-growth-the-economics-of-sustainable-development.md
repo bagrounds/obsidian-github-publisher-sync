@@ -7,11 +7,16 @@ share: true
 CTA: 🌍 Redefine flourishing.
 affiliate link: https://amzn.to/4iXp87F
 link_analysis_model: gemini-3.1-flash-lite-preview
-link_analysis_time: 2026-04-02T00:00:00Z
+link_analysis_time: 2026-04-15T00:00:00Z
 force_analyze_links: false
+link_analysis_version: "2"
+image_date: 2026-04-24T08:48:21Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A minimalist, high-contrast illustration depicting a cross-section of a globe. Inside the sphere, a delicate, glowing tree grows within a glass terrarium, representing the economy as a finite subsystem. The roots of the tree extend downward into a layer of rich, dark earth, while the upper branches reach toward the clear glass boundary. Outside the sphere, abstract geometric shapes—representing industrial gears and jagged, grey-toned charts—are beginning to press against the outer surface, illustrating the tension between growth and ecological limits. The color palette uses deep forest greens, earthy browns, and soft, warm sunlight against a stark, neutral background, emphasizing the balance between nature and human activity. The overall aesthetic is clean, modern, and conceptual, focusing on the harmony of a closed-loop system.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🧠💰🌍 Beyond Growth: The Economics of Sustainable Development  
+![books-beyond-growth-the-economics-of-sustainable-development](../books-beyond-growth-the-economics-of-sustainable-development.jpg)  
 [🛒 Beyond Growth: The Economics of Sustainable Development. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4iXp87F)  
   
 🌍💡📉 Challenge the prevailing dogma of perpetual economic growth. Sustainable development requires a qualitative improvement within a finite ecological system, rather than quantitative expansion that inevitably leads to ruin.  

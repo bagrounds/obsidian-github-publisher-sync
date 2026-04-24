@@ -11,9 +11,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-15T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-04-24T18:27:55Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A high-contrast, surreal illustration featuring a single, pristine white pill resting on a polished chrome surface. Inside the pill, a miniature, vibrant, and orderly cityscape is visible, glowing with a soft, synthetic neon light. Surrounding the pill, the background fades from a sterile, clinical laboratory blue into a warm, intoxicating amber. Floating in the air around the pill are ethereal, translucent bubbles containing faint outlines of smiling, expressionless faces. The lighting is sharp and cinematic, emphasizing the contrast between the cold, technological perfection of the pill and the shadowy, ambiguous nature of the environment. The overall aesthetic is sleek, mid-century modern, and subtly unsettling.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 💊 Brave New World  
+![books-brave-new-world](../books-brave-new-world.jpg)  
 [🛒 Brave New World. As an Amazon Associate I earn from qualifying purchases.](https://www.amazon.com/dp/0060850523?tag=bagrounds-20)  
   
 ## 🤖 AI Summary  

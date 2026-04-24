@@ -5,10 +5,10 @@ aliases:
 title: 📺 Videos
 URL: https://bagrounds.org/videos
 backlinks: false
-updated: 2026-04-24T11:53:08-07:00
+updated: 2026-04-24T14:40:35-07:00
 ---
 [Home](../index.md)  
-# 📺 Videos (791)  
+# 📺 Videos (792)  
 - [💰🤑🤖💡🚀💲 $0.10 per Month Runs My Entire AI Life. I'll Show You How.](./0-10-month-runs-my-entire-ai-life-ill-show-you-how.md)  
 - [📊📈📉📃👁️ 10 Charts to Understand the 900 Page Budget Bill](./10-charts-to-understand-the-900-page-budget-bill.md)  
 - [🤖🔗⬆️✅ 12-Factor Agents: Patterns of reliable LLM applications — Dex Horthy, HumanLayer](./12-factor-agents-patterns-of-reliable-llm-applications-dex-horthy-humanlayer.md)  
@@ -237,6 +237,7 @@ updated: 2026-04-24T11:53:08-07:00
 - [🧠📉⚠️ Heather Cox Richardson: Trump Is Mentally Crumbling—But Still Dangerous | The Bulwark Podcast](./heather-cox-richardson-trump-is-mentally-crumbling-but-still-dangerous-the-bulwark-podcast.md)  
 - [🤯🗣️📱📈 “He behaved like a total maniac” Sam Harris on Elon & Big Tech’s turn towards Trump](./he-behaved-like-a-total-maniac-sam-harris-on-elon-big-techs-turn-towards-trump.md)  
 - [📺📰👋🔚😢😠 Highlights from PBS News Weekend as show goes off the air](./highlights-from-pbs-news-weekend-as-show-goes-off-the-air.md)  
+- [🧑‍🏫🇭🇺⚔️✝️🚩🇺🇸🤫 Historian Timothy Snyder on Orbán's Defeat, Christian Nationalism, and What Trump Is Really Planning](./historian-timothy-snyder-on-orbans-defeat-christian-nationalism-and-what-trump-is-really-planning.md)  
 - [History Professor Answers Dictator Questions | Tech Support | WIRED](./history-professor-answers-dictator-questions-tech-support-wired.md)  
 - [🌱👨‍👩‍👧‍👦🍎 How a 1/8 Acre Garden Feeds a Family of 6 ALL YEAR!](./how-a-1-8-acre-garden-feeds-a-family-of-6-all-year.md)  
 - [How AI Cracked the Protein Folding Code and Won a Nobel Prize](./how-ai-cracked-the-protein-folding-code-and-won-a-nobel-prize.md)  

@@ -13,7 +13,7 @@ link_analysis_version: "2"
 link_analysis_time: 2026-04-23T00:00:00Z
 force_analyze_links: false
 ---
-[Home](../index.md) > [🌟 Positivity Bias](./index.md) | [⏮️](./2026-04-22-a-world-of-innovation-and-compassion.md)  
+[Home](../index.md) > [🌟 Positivity Bias](./index.md) | [⏮️](./2026-04-22-a-world-of-innovation-and-compassion.md) [⏭️](./2026-04-24-horizons-of-hope-healing-harmony-and-a-greener-earth.md)  
 # 2026-04-23 | 🌟 Triumphs of Ingenuity and Compassion 🌟  
 ![positivity-bias-2026-04-23-triumphs-of-ingenuity-and-compassion](../positivity-bias-2026-04-23-triumphs-of-ingenuity-and-compassion.jpg)  
   

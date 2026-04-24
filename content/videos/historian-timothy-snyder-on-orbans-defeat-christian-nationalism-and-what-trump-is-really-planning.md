@@ -9,6 +9,10 @@ Platform:
 Channel: Katie Couric
 tags:
 youtube: https://youtu.be/1U0I2wI5UOc
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_version: "2"
+link_analysis_time: 2026-04-24T00:00:00Z
+force_analyze_links: false
 ---
 [Home](../index.md) > [Videos](./index.md)  
 # 🧑‍🏫🇭🇺⚔️✝️🚩🇺🇸🤫 Historian Timothy Snyder on Orbán's Defeat, Christian Nationalism, and What Trump Is Really Planning  
@@ -57,4 +61,4 @@ youtube: https://youtu.be/1U0I2wI5UOc
 ### 🎨 Creatively Related  
   
 * 📖 Amusing Ourselves to Death by Neil Postman describes how the transformation of politics into entertainment erodes the ability of a citizenry to engage with truth.  
-* 📖 The Origins of Totalitarianism by Hannah Arendt provides a deep philosophical dive into the social isolation and propaganda that precede the rise of total power.
+* 📖 [👹 The Origins of Totalitarianism](../books/the-origins-of-totalitarianism.md) by Hannah Arendt provides a deep philosophical dive into the social isolation and propaganda that precede the rise of total power.

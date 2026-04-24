@@ -398,5 +398,5 @@ generateContentWithFallback manager (model :| fallbacks) systemInstruction promp
     Left err -> case fallbacks of
       [] -> pure $ Left $ AllModelsFailed model err
       (next : rest) -> do
-        putStrLn $ "⚠️ Model " <> T.unpack (modelToText model) <> " failed, trying next fallback..."
+        putStrLn $ "⚠️ Model " <> T.unpack (modelToText model) <> " failed (" <> show err <> "), trying next fallback..."
         generateContentWithFallback manager (next :| rest) systemInstruction prompt apiKey config

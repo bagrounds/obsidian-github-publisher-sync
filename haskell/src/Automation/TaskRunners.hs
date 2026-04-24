@@ -10,7 +10,7 @@ module Automation.TaskRunners
   ) where
 
 import Control.Exception (SomeException, try)
-import Control.Monad (when, unless)
+import Control.Monad (when)
 import Data.List.NonEmpty (NonEmpty ((:|)))
 import Data.Map.Strict (Map)
 import qualified Data.Map.Strict as Map
@@ -207,8 +207,10 @@ runBlogSeries context seriesMap runConfigs seriesId = do
                       header = navLine <> "\n# " <> displayTitle <> "\n\n"
                       maybeSourcesSection = Gemini.formatGroundingSources groundingSources
                       bodyWithSig = appendModelSignature body usedModel
-                  unless (null groundingSources) $
-                    logMsg $ "  🔍 Embedded " <> T.pack (show (length groundingSources)) <> " grounding sources"
+                  if null groundingSources
+                    then when (Scheduler.searchGrounding runConfig) $
+                      logMsg $ "  ⚠️  Grounding was requested but " <> usedModel <> " returned no sources"
+                    else logMsg $ "  🔍 Embedded " <> T.pack (show (length groundingSources)) <> " grounding sources"
                   createDirectoryIfMissing True seriesDir
                   let postPath = seriesDir </> T.unpack filename
                   TIO.writeFile postPath (frontmatter <> "\n" <> header <> bodyWithSig <> fromMaybe "" maybeSourcesSection <> "\n")

@@ -5,10 +5,10 @@ aliases:
 title: 📺 Videos
 URL: https://bagrounds.org/videos
 backlinks: false
-updated: 2026-04-24T06:59:31-07:00
+updated: 2026-04-24T11:53:08-07:00
 ---
 [Home](../index.md)  
-# 📺 Videos (790)  
+# 📺 Videos (791)  
 - [💰🤑🤖💡🚀💲 $0.10 per Month Runs My Entire AI Life. I'll Show You How.](./0-10-month-runs-my-entire-ai-life-ill-show-you-how.md)  
 - [📊📈📉📃👁️ 10 Charts to Understand the 900 Page Budget Bill](./10-charts-to-understand-the-900-page-budget-bill.md)  
 - [🤖🔗⬆️✅ 12-Factor Agents: Patterns of reliable LLM applications — Dex Horthy, HumanLayer](./12-factor-agents-patterns-of-reliable-llm-applications-dex-horthy-humanlayer.md)  
@@ -473,6 +473,7 @@ updated: 2026-04-24T06:59:31-07:00
 - [🇺🇸📅👎 Project 2025 Is Here and Americans Hate It | Explainer](./project-2025-is-here-and-americans-hate-it-explainer.md)  
 - [🏛️➡️🚪⚠️ Prominent conservative judge resigns, calling Trump 'uniquely dangerous'](./prominent-conservative-judge-resigns-calling-trump-uniquely-dangerous.md)  
 - [🤖🥀➡️❓🚀 Prompt Engineering Is Dead. Context Engineering Is Dying. What Comes Next Changes Everything.](./prompt-engineering-is-dead-context-engineering-is-dying-what-comes-next-changes-everything.md)  
+- [🕵️‍♀️📰🗳️👑 ProPublica Goes Inside Trump’s Effort to “Take Over” the Midterm Elections | Amanpour and Company](./propublica-goes-inside-trumps-effort-to-take-over-the-midterm-elections-amanpour-and-company.md)  
 - [Protestors join more than a thousand rallies across the U.S. against Trump’s policies](./protestors-join-more-than-a-thousand-rallies-across-the-us-against-trumps-policies.md)  
 - [✂️🌳🍎 Pruning Fruit Trees - OSU Master Gardeners](./pruning-fruit-trees-osu-master-gardeners.md)  
 - [😴🧠👨‍⚕️ Psychiatrist Explains Why You Feel Tired All The Time (No Matter What You Do...)](./psychiatrist-explains-why-you-feel-tired-all-the-time-no-matter-what-you-do.md)  

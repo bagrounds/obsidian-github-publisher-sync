@@ -10,9 +10,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-18T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-04-24T19:27:26Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A minimalist, ethereal illustration featuring a silhouette of a human profile in soft, cool tones of blue and slate. From the nose, a gentle, swirling ribbon of translucent, glowing white air flows outward, transitioning into an abstract, organic pattern that mimics the structure of tree branches or lung bronchioles. The background is a clean, textured off-white, suggesting a sense of calm and clarity. The composition is balanced and airy, emphasizing the flow of breath through the nasal passage rather than the mouth. The lighting is soft and diffused, creating a serene, meditative atmosphere that highlights the connection between the physical body and the invisible, vital energy of the air.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🫁🌬️ Breath: The New Science of a Lost Art  
+![books-breath-the-new-science-of-a-lost-art](../books-breath-the-new-science-of-a-lost-art.jpg)  
 [🛒 Breath: The New Science of a Lost Art. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/41jFDTS)  
   
 ## 🫁 A Deep Dive into the Science of a Lost Art  

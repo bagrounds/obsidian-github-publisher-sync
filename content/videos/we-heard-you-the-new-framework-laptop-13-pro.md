@@ -9,6 +9,10 @@ Platform:
 Channel: Framework
 tags:
 youtube: https://youtu.be/GnOpIQJnYWU
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_version: "2"
+link_analysis_time: 2026-04-23T00:00:00Z
+force_analyze_links: false
 ---
 [Home](../index.md) > [Videos](./index.md)  
 # 📢👂🆕💻✨ We heard you: the new Framework Laptop 13 Pro.  
@@ -50,11 +54,11 @@ youtube: https://youtu.be/GnOpIQJnYWU
   
 ### ↔️ Similar  
 * 📘 The Nvidia Way by Tae Kim explores how a hardware company creates a dominant platform through relentless innovation and strategic culture.  
-* 📗 The Thinking Machine by Stephen Witt provides a detailed history of the evolution of GPUs and the hardware that powers modern computing.  
+* 📗 [🧠🔌 The Thinking Machine: Jensen Huang, Nvidia, and the World's Most Coveted Microchip](../books/the-thinking-machine-jensen-huang-nvidia-and-the-worlds-most-coveted-microchip.md) by Stephen Witt provides a detailed history of the evolution of GPUs and the hardware that powers modern computing.  
   
 ### 🆚 Contrasting  
 * 📙 Chip War by Chris Miller examines the geopolitical and industrial forces that prioritize massive scale and national security over individual repairability and modularity.  
-* 📕 The Innovator's Dilemma by Clayton Christensen explains why established leaders often struggle to adopt the modular or disruptive architectures championed by smaller firms.  
+* 📕 [💡🤖💰💥🏢📉 The Innovator's Dilemma: When New Technologies Cause Great Firms to Fail](../books/the-innovators-dilemma.md) by Clayton Christensen explains why established leaders often struggle to adopt the modular or disruptive architectures championed by smaller firms.  
   
 ### 🎨 Creatively Related  
 * 📓 Rise of the Robots by Martin Ford analyzes how the advancement of hardware and AI will fundamentally reshape the future of work and the global economy.  

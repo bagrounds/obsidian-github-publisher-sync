@@ -10,9 +10,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-16T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-04-24T13:41:19Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A top-down, high-contrast close-up of a wooden chessboard. The board is bathed in dramatic, cinematic studio lighting, creating deep shadows that emphasize the texture of the grain. In the center, a single white queen stands poised near a cluster of black pieces, capturing the tension of a tactical puzzle. The background is softly blurred, keeping the focus entirely on the sharp, iconic silhouettes of the chess pieces. The color palette is limited to rich mahogany, creamy whites, and deep, obsidian blacks, evoking a sense of classic, intellectual rigor and timeless mastery. The composition is clean and minimalist, highlighting the geometry of the board and the singular focus of a tactical strike.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # ♟️🧑‍🏫 Bobby Fischer Teaches Chess  
+![books-bobby-fischer-teaches-chess](../books-bobby-fischer-teaches-chess.jpg)  
 [🛒 Bobby Fischer Teaches Chess. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3FEUG3b)  
   
 ## 📚 Book Report: Bobby Fischer Teaches Chess  

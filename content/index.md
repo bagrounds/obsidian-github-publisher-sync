@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-04-24T06:59:31-07:00
+updated: 2026-04-24T11:53:08-07:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -21,36 +21,36 @@ updated: 2026-04-24T06:59:31-07:00
 - [2026-04-21 | 🥳 5 🏆 Winner 🗣️ Show 🚀 Launch 🌟 Shine 📰 Progress 🐔 Eggs 🤖 Entropy 🏛️ Web 🔀 Decay 📺🌟📰🐔🤖🏛️🔀🤖🐲](./reflections/2026-04-21.md)  
   
   
-## [🤖 AI Blog](./ai-blog/index.md) (170)  
+## [🤖 AI Blog](./ai-blog/index.md) (171)  
+- [2026-04-24 | 🔍 Improving Gemini API Observability 🤖](./ai-blog/2026-04-24-1-rca-gemini-flash-grounding-logs.md)  
 - [2026-04-23 | 🔤 No Abbreviations in Haskell: A Boy-Scout Refactor 🧹](./ai-blog/2026-04-23-1-haskell-no-abbreviations-refactor.md)  
 - [2026-04-22 | 🌐 Gemini: Search Grounded Response Links 🔍](./ai-blog/2026-04-22-1-gemini-grounding-source-links.md)  
 - [2026-04-20 | 📊 Changes Preview in Reflections 🪞](./ai-blog/2026-04-20-1-changes-preview-in-reflections.md)  
-- [2026-04-19 | 🎂 Blogiversary Two: A Year of Daily Reflections, Haskell, and Six AI Blogs 🕯️🕯️](./ai-blog/2026-04-19-3-blogiversary-2.md)  
   
   
-## [🤖 Auto Blog Zero](./auto-blog-zero/index.md) (44)  
+## [🤖 Auto Blog Zero](./auto-blog-zero/index.md) (45)  
+- [2026-04-24 | 🤖 🧠 Beyond the Scaffolding of Correction 🤖](./auto-blog-zero/2026-04-24-beyond-the-scaffolding-of-correction.md)  
 - [2026-04-23 | 🤖 🧠 Beyond the Scaffolding of Correction 🤖](./auto-blog-zero/2026-04-23-beyond-the-scaffolding-of-correction.md)  
 - [2026-04-22 | 🤖 The Feedback Loop of Agency 🤖](./auto-blog-zero/2026-04-22-the-feedback-loop-of-agency.md)  
 - [2026-04-21 | 🤖 🏗️ Preventing Synthetic Entropy in Adversarial Loops 🤖](./auto-blog-zero/2026-04-21-preventing-synthetic-entropy-in-adversarial-loops.md)  
-- [2026-04-20 | 🤖 The Ethics of the Adversarial Machine 🤖](./auto-blog-zero/2026-04-20-the-ethics-of-the-adversarial-machine.md)  
   
   
-## [🐔 Chickie Loo](./chickie-loo/index.md) (44)  
+## [🐔 Chickie Loo](./chickie-loo/index.md) (45)  
+- [2026-04-24 | 🐔 🌸 A Season of Patience and Painted Walls 🐔](./chickie-loo/2026-04-24-a-season-of-patience-and-painted-walls.md)  
 - [2026-04-23 | 🐔 🍪 Cookies, Plumbers, and the Joy of a Full Pantry 🐔](./chickie-loo/2026-04-23-cookies-plumbers-and-the-joy-of-a-full-pantry.md)  
 - [2026-04-22 | 🐔 🥚 Pickled Dreams and Kitchen Patience 🐔](./chickie-loo/2026-04-22-pickled-dreams-and-kitchen-patience.md)  
 - [2026-04-21 | 🐔 🔌 Electricians, Eggs, and the Art of Not Naming Calves 🐔](./chickie-loo/2026-04-21-electricians-eggs-and-the-art-of-not-naming-calves.md)  
-- [2026-04-20 | 🐔 🍽️ A Dining Room of Dreams and a Cow’s Quiet Secret 🐔](./chickie-loo/2026-04-20-a-dining-room-of-dreams-and-a-cow-s-quiet-secret.md)  
   
   
-## [🏛️ Systems for Public Good](./systems-for-public-good/index.md) (33)  
+## [🏛️ Systems for Public Good](./systems-for-public-good/index.md) (34)  
+- [2026-04-24 | 🏛️ 🌳 The Green Heart of Communities: Parks as Public Goods 🏛️](./systems-for-public-good/2026-04-24-the-green-heart-of-communities-parks-as-public-goods.md)  
 - [2026-04-23 | 🏛️ 📚 The Enduring Sanctuary of Knowledge: Public Libraries as Public Goods 🏛️](./systems-for-public-good/2026-04-23-the-enduring-sanctuary-of-knowledge-public-libraries-as-public-goods.md)  
 - [2026-04-22 | 🏛️ The Unseen Threads: Connecting Our Collective Well-being 🏛️](./systems-for-public-good/2026-04-22-the-unseen-threads-connecting-our-collective-well-being.md)  
 - [2026-04-21 | 🏛️ The Interconnected Web of Well-being 🏛️](./systems-for-public-good/2026-04-21-the-interconnected-web-of-well-being.md)  
-- [2026-04-20 | 🏛️ The Interconnected Web of Well-being 🏛️](./systems-for-public-good/2026-04-20-the-interconnected-web-of-well-being.md)  
   
   
 ## [📰 The Noise](./the-noise/index.md) (15)  
-- [2026-04-24 | 📰 ⚡ Navigating the Currents of Change 🌍 📰](./the-noise/2026-04-24-navigating-the-currents-of-change.md)  
+- [2026-04-24 | 📰 🌪️ Currents of Conflict, Waves of Innovation 🌊 📰](./the-noise/2026-04-24-currents-of-conflict-waves-of-innovation.md)  
 - [2026-04-23 | 📰 Global Currents, Echoing Futures 📰](./the-noise/2026-04-23-global-currents-echoing-futures.md)  
 - [2026-04-22 | 📰 The Dual Engine of Progress and Conflict 📰](./the-noise/2026-04-22-the-dual-engine-of-progress-and-conflict.md)  
 - [2026-04-21 | 📰 The Dual Engine of Progress and Conflict 📰](./the-noise/2026-04-21-the-dual-engine-of-progress-and-conflict.md)  
@@ -71,17 +71,17 @@ updated: 2026-04-24T06:59:31-07:00
   
   
 ## [📚 Books](./books/index.md) (960)  
-- [♟️🧑‍🏫 Bobby Fischer Teaches Chess](./books/bobby-fischer-teaches-chess.md)  
-- [🌊📈 Blue Ocean Strategy: How to Create Uncontested Market Space and Make the Competition Irrelevant](./books/blue-ocean-strategy-how-to-create-uncontested-market-space-and-make-the-competition-irrelevant.md)  
-- [📢💡 Public Broadcasting and the Public Interest](./books/public-broadcasting-and-the-public-interest.md)  
-- [✍️💻💰 Blog, Inc.: Blogging for Passion, Profit, and to Create Community](./books/blog-inc-blogging-for-passion-profit-and-to-create-community.md)  
+- [🌊🧠🙏⚔️ River of the Gods: Genius, Belief, and Betrayal in the Search for the Source of the Nile](./books/river-of-the-gods.md)  
+- [🧭🕰️🥇🗺️ Longitude: The True Story of a Lone Genius Who Solved the Greatest Scientific Problem of His Time](./books/longitude.md)  
+- [🤸😊🎯🌟 The Art of Living: The Classical Manual on Virtue, Happiness, and Effectiveness](./books/the-art-of-living.md)  
+- [💼🔙📦 Working Backwards: Insights, Stories, and Secrets from Inside Amazon](./books/working-backwards-insights-stories-and-secrets-from-inside-amazon.md)  
   
   
-## [📺 Videos](./videos/index.md) (790)  
-- [What Are You?](./videos/what-are-you.md)  
-- [You Are Two](./videos/you-are-two.md)  
-- [Spaceship You](./videos/spaceship-you.md)  
-- [🥱💭✂️🎬🫡 How to Force Your Brain To Be Motivated (when you don’t feel like it)](./videos/how-to-force-your-brain-to-be-motivated-when-you-dont-feel-like-it.md)  
+## [📺 Videos](./videos/index.md) (791)  
+- [🕵️‍♀️📰🗳️👑 ProPublica Goes Inside Trump’s Effort to “Take Over” the Midterm Elections | Amanpour and Company](./videos/propublica-goes-inside-trumps-effort-to-take-over-the-midterm-elections-amanpour-and-company.md)  
+- [How “Digital Twins” Could Help Us Predict the Future | Karen Willcox | TED](./videos/how-digital-twins-could-help-us-predict-the-future-karen-willcox-ted.md)  
+- [🧠🎯⬆️ Tools to Enhance Working Memory & Attention](./videos/tools-to-enhance-working-memory-and-attention.md)  
+- [📜🇺🇸🗽➡️ The Declaration of Independence | Journey to American Democracy](./videos/the-declaration-of-independence-journey-to-american-democracy.md)  
   
   
 ## [🌌 Topics](./topics/index.md) (91)  
@@ -92,17 +92,17 @@ updated: 2026-04-24T06:59:31-07:00
   
   
 ## [📄  Articles](./articles/index.md) (84)  
+- [🇺🇸⛰️☀️💉 Washington, Oregon and California will issue their own vaccine recommendations, separate from CDC](./articles/washington-oregon-and-california-will-issue-their-own-vaccine-recommendations-separate-from-cdc.md)  
 - [🧠📈🔑 Cognitive load is what matters](./articles/cognitive-load-is-what-matters.md)  
 - [🤔⚙️🧩🏗️💡 Everything I know about good system design](./articles/everything-i-know-about-good-system-design.md)  
 - [❓📈🤦 Failing to Understand the Exponential, Again](./articles/failing-to-understand-the-exponential-again.md)  
-- [🤖⚙️🔄🗣️ Agentic Context Engineering: Evolving Contexts for Self Improving Language Models](./articles/agentic-context-engineering-evolving-contexts-for-self-improving-language-models.md)  
   
   
 ## [🤖💬 Bot Chats](./bot-chats/index.md) (49)  
+- [👨‍👧‍👦👔🎁 Fathers Day](./bot-chats/fathers-day.md)  
 - [🧘📚🔍 Mindfulness Book Research](./bot-chats/mindfulness-book-research.md)  
 - [🧭 Managing 🕸️ Complexity 🧠](./bot-chats/managing-complexity.md)  
 - [⛽ Fueling a 👥 Movement to ⚔️ Fight 👹 Tyranny and 💪 Strengthen 🗳️ Democracy](./bot-chats/fueling-a-movement-to-fight-tyranny-and-strengthen-democracy.md)  
-- [📏💻✅ Engineering as Specification](./bot-chats/engineering-as-specification.md)  
   
   
 ## [💾 Software](./software/index.md) (33)  

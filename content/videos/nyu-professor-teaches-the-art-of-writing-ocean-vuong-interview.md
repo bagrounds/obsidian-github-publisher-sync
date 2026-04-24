@@ -10,8 +10,9 @@ Channel: David Perell
 tags:
 youtube: https://youtu.be/kn4r4CmWmUw
 force_analyze_links: false
-link_analysis_time: 2026-03-26T01:35:48.401Z
+link_analysis_time: 2026-04-23T00:00:00Z
 link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_version: "2"
 ---
 [Home](../index.md) > [Videos](./index.md)  
 # 🧑‍🏫🎨✍️🎤 NYU Professor Teaches the Art of Writing (Ocean Vuong Interview)  
@@ -32,7 +33,7 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 * 🛹 Daringness and disobedience are essential virtues for any artist looking to break from the factory of production.  
   
 ## 🤔 Evaluation  
-* ⚖️ Ocean Vuong advocates for a return to the lush, complex Victorian sentence as a rebellion against modern efficiency. This perspective aligns with the arguments in The Shallows by Nicholas Carr (W. W. Norton & Company), which posits that modern digital environments and standardized communication are physically altering our brains to favor superficiality over deep, artistic focus.  
+* ⚖️ Ocean Vuong advocates for a return to the lush, complex Victorian sentence as a rebellion against modern efficiency. This perspective aligns with the arguments in [📱🧠 The Shallows: What the Internet Is Doing to Our Brains](../books/the-shallows-what-the-internet-is-doing-to-our-brains.md) by Nicholas Carr (W. W. Norton & Company), which posits that modern digital environments and standardized communication are physically altering our brains to favor superficiality over deep, artistic focus.  
 * 🏗️ The critique of the homogenization of culture is mirrored in the work of architects and urban theorists. To further understand the right angleization of the world, one should explore the concept of Critical Regionalism, which seeks to counter the placelessness of modern architecture.  
 * 🏫 While Vuong views the workshop as a potential site of creative destruction, other educators like those at the Iowa Writers' Workshop argue that the structured feedback loop is vital for technical mastery. Exploring the history of creative writing pedagogy would provide a more balanced view of the role of criticism in artistic growth.  
   

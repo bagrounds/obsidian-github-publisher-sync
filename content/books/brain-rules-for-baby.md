@@ -12,9 +12,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-16T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-04-24T18:27:53Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A soft, top-down view of a brightly lit, modern nursery floor. In the center, an inquisitive toddler sits on a neutral-toned rug, surrounded by a few wooden, open-ended building blocks and a colorful, textured sensory ball. A soft, glowing, stylized outline of a human brain is subtly integrated into the rugs pattern beneath the child, glowing with warm, golden light to represent cognitive growth. To the side, a pair of adult hands are visible, gently guiding the child toward a book. The color palette is warm and calming, featuring soft pastels, sage green, and natural wood tones. The lighting is natural and diffuse, casting gentle shadows to create a sense of peace, curiosity, and scientific wonder, without any clutter or text.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 👶🧠😊📈📚 Brain Rules for Baby: How to Raise a Smart and Happy Child from Zero to Five  
+![books-brain-rules-for-baby](../books-brain-rules-for-baby.jpg)  
 [🛒 Brain Rules for Baby: How to Raise a Smart and Happy Child from Zero to Five. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4km3BoW)  
   
 ## 🤖 AI Summary  

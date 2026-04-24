@@ -37,7 +37,6 @@ import Automation.Json (Value (..), ToValue (..), (.=), object, encode)
 import qualified Automation.Json as Json
 import Automation.Secret (Secret (..))
 import Automation.Url (Url, unUrl, mkUrl)
-import Control.Monad (when)
 import Data.List.NonEmpty (NonEmpty ((:|)))
 import qualified Data.List.NonEmpty as NE
 import Data.Text (Text)
@@ -357,6 +356,8 @@ generateContent manager req = do
   let url = T.unpack $ geminiEndpoint model <> "?key=" <> unSecret (requestApiKey req)
   parsedRequest <- parseRequest url
   let body = encode $ buildRequestBody effectiveSystemInstruction effectivePrompt (requestGenerationConfig req)
+  putStrLn $ "📤 Gemini request (" <> T.unpack (modelToText model) <> "): "
+    <> T.unpack (TE.decodeUtf8 (LBS.toStrict body))
   let httpReq = parsedRequest
         { HTTP.method = "POST"
         , HTTP.requestBody = RequestBodyLBS body
@@ -367,6 +368,8 @@ generateContent manager req = do
         }
   response <- httpLbs httpReq manager
   let status = statusCode $ responseStatus response
+  putStrLn $ "📥 Gemini response (" <> T.unpack (modelToText model) <> ", status " <> show status <> "): "
+    <> T.unpack (TE.decodeUtf8 (LBS.toStrict (responseBody response)))
   case status of
     200 ->
       case (parseResponseText (responseBody response), Json.decode (responseBody response)) of
@@ -378,10 +381,6 @@ generateContent manager req = do
           }
         (Right text, Just val) -> do
           let sources = extractGroundingSources val
-          when (searchGrounding (requestGenerationConfig req) && null sources) $
-            putStrLn $ "⚠️ Grounding requested for " <> T.unpack (modelToText model)
-              <> " but response contains no groundingChunks. Raw response body: "
-              <> T.unpack (TE.decodeUtf8 (LBS.toStrict (responseBody response)))
           pure $ Right Response
             { responseText             = T.strip text
             , responseModel            = model

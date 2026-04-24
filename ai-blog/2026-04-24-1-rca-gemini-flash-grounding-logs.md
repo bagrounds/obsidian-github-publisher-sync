@@ -46,7 +46,7 @@ URL: https://bagrounds.org/ai-blog/2026-04-24-1-rca-gemini-flash-grounding-logs
 
 - 📋 In generateContentWithFallback in Gemini.hs, the fallback log message now includes the error value so the reason for the failure is always visible in the logs. The new format is: "Model {name} failed ({error}), trying next fallback...".
 
-- 🔎 In generateContent in Gemini.hs, when grounding is requested and the model returns a successful 200 response but with no grounding chunks, the entire raw response body is now logged. This lets operators check directly whether grounding data is present in the response or genuinely absent, distinguishing a parser bug from a model limitation without guessing.
+- 🔎 In generateContent in Gemini.hs, the raw request body and raw response body are now logged unconditionally on every API call. The request log includes the model name and the full JSON body sent. The response log includes the model name, the HTTP status code, and the full response body received. This makes every interaction with the Gemini API observable without any special conditions — whether grounding was requested, what the API actually returned, and what the HTTP status was are all visible in the log.
 
 - ⚠️ In runBlogSeries in TaskRunners.hs, a warning is now logged when grounding was requested but the response contained no sources. The message is: "Grounding was requested but {model} returned no sources". When sources are present the existing log "Embedded N grounding sources" continues to appear.
 
@@ -55,7 +55,7 @@ URL: https://bagrounds.org/ai-blog/2026-04-24-1-rca-gemini-flash-grounding-logs
 ## 📐 Lessons and Implications
 
 - 🔊 Observability is a first-class requirement. Every model fallback should carry its error reason in the log so operators can diagnose failures without reading source code or guessing.
-- 🔎 Logging raw API responses on unexpected outcomes removes ambiguity between a parser bug and an API behavior change. Without the raw response we cannot know which explanation is correct.
+- 🔎 Logging raw API requests and responses unconditionally means every interaction is observable — not just edge cases. This removes ambiguity between a parser bug and an API behavior change, and eliminates the need to reproduce specific conditions to see what the API actually sent and received.
 - 🤷 It is better to say "we do not know yet" than to invent a plausible-sounding explanation. The logging improvements added here will make the next incident answerable with actual evidence.
 
 ## 📚 Book Recommendations

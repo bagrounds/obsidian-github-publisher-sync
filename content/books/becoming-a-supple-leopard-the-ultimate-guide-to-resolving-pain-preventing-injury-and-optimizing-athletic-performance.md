@@ -10,9 +10,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-18T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-04-24T03:15:35Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A high-contrast, minimalist illustration featuring a stylized, agile leopard in a dynamic mid-leap pose. The leopard is rendered with clean, geometric lines, blending organic muscle anatomy with structural, architectural forms to symbolize the fusion of biology and mechanics. The background is a solid, neutral matte color to emphasize the subject. Subtle, abstract vector lines trace the leopards joints and spine, highlighting alignment and flow. The color palette is limited to deep charcoal, crisp white, and a single vibrant accent color, such as electric orange, to denote movement and energy. The overall aesthetic is modern, professional, and evocative of peak physical performance and precision.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🤸🤕 Becoming a Supple Leopard: The Ultimate Guide to Resolving Pain, Preventing Injury, and Optimizing Athletic Performance  
+![books-becoming-a-supple-leopard-the-ultimate-guide-to-resolving-pain-preventing-injury-and-optimizing-athletic-performance](../books-becoming-a-supple-leopard-the-ultimate-guide-to-resolving-pain-preventing-injury-and-optimizing-athletic-performance.jpg)  
 [🛒 Becoming a Supple Leopard: The Ultimate Guide to Resolving Pain, Preventing Injury, and Optimizing Athletic Performance. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3W98irW)  
   
 ### 🏆 Kelly Starrett's Supple Leopard Strategy  

@@ -12,9 +12,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-16T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-04-24T15:37:38Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A minimalist, surreal illustration featuring a person sitting comfortably in a soft, sunlit armchair. Instead of a smartphone in their hand, they are holding a delicate, glowing lightbulb that radiates soft, colorful sparks upward into the air. Above their head, the sparks transform into ethereal, abstract shapes—clouds, geometric patterns, and botanical swirls—representing the blooming of creative thoughts during a state of mind-wandering. The background is a clean, muted pastel palette, emphasizing a sense of calm and quiet space. There are no digital devices visible; instead, the room is filled with soft, warm light that suggests a peaceful, unplugged sanctuary. The overall aesthetic is clean, modern, and airy, capturing the transition from digital noise to internal brilliance.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🥱🤓 Bored and Brilliant: How Spacing Out Can Unlock Your Most Productive and Creative Self  
+![books-bored-and-brilliant](../books-bored-and-brilliant.jpg)  
 [🛒 Bored and Brilliant: How Spacing Out Can Unlock Your Most Productive and Creative Self. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3FA2N0J)  
   
 ## 📖 Book Report: 🤯 Bored and Brilliant  

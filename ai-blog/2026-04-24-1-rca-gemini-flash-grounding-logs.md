@@ -61,13 +61,15 @@ URL: https://bagrounds.org/ai-blog/2026-04-24-1-rca-gemini-flash-grounding-logs
 
 ## 🔧 The Fix
 
-🛠️ Two minimal code changes were made:
+🛠️ Three minimal code changes were made:
 
 - 📋 In generateContentWithFallback in Gemini.hs, the fallback log message now includes the error value so the reason for the failure is always visible in the logs. The new format is: "Model {name} failed ({error}), trying next fallback...".
 
+- 🔎 In generateContent in Gemini.hs, when grounding is requested and the model returns a successful 200 response but with no grounding chunks, the entire raw response body is now logged. This lets operators verify whether grounding data exists elsewhere in the response, distinguishing a parser bug from a genuine absence of grounding sources.
+
 - ⚠️ In runBlogSeries in TaskRunners.hs, a warning is now logged when grounding was requested but the used model returned no sources. The message is: "Grounding was requested but {model} returned no sources". When sources are present the existing log "Embedded N grounding sources" continues to appear.
 
-🧪 Both changes compile cleanly under GHC 9.14.1, all 2007 existing tests pass, and hlint reports no hints.
+🧪 All three changes compile cleanly under GHC 9.14.1, all 2007 existing tests pass, and hlint reports no hints.
 
 ## 📐 Lessons and Implications
 

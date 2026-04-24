@@ -37,6 +37,7 @@ import Automation.Json (Value (..), ToValue (..), (.=), object, encode)
 import qualified Automation.Json as Json
 import Automation.Secret (Secret (..))
 import Automation.Url (Url, unUrl, mkUrl)
+import Control.Monad (when)
 import Data.List.NonEmpty (NonEmpty ((:|)))
 import qualified Data.List.NonEmpty as NE
 import Data.Text (Text)
@@ -375,11 +376,17 @@ generateContent manager req = do
           , responseModel            = model
           , responseGroundingSources = []
           }
-        (Right text, Just val) -> pure $ Right Response
-          { responseText             = T.strip text
-          , responseModel            = model
-          , responseGroundingSources = extractGroundingSources val
-          }
+        (Right text, Just val) -> do
+          let sources = extractGroundingSources val
+          when (searchGrounding (requestGenerationConfig req) && null sources) $
+            putStrLn $ "⚠️ Grounding requested for " <> T.unpack (modelToText model)
+              <> " but response contains no groundingChunks. Raw response body: "
+              <> T.unpack (TE.decodeUtf8 (LBS.toStrict (responseBody response)))
+          pure $ Right Response
+            { responseText             = T.strip text
+            , responseModel            = model
+            , responseGroundingSources = sources
+            }
     code ->
       let (apiStatus, message) = parseErrorBody (responseBody response)
       in pure $ Left $ HttpError code apiStatus message

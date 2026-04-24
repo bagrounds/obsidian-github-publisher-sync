@@ -6,11 +6,16 @@ URL: https://bagrounds.org/books/big-ideas-for-little-philosophers-truth-with-so
 share: true
 affiliate link: https://amzn.to/3G9KUWP
 link_analysis_model: gemini-3.1-flash-lite-preview
-link_analysis_time: 2026-04-08T00:00:00Z
+link_analysis_time: 2026-04-19T00:00:00Z
 force_analyze_links: false
+link_analysis_version: "2"
+image_date: 2026-04-24T11:33:14Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A soft-focus, whimsical illustration featuring a stylized, friendly-looking Socrates with a white beard, wearing a simple Greek tunic. He is sitting on a grassy patch beneath an ancient, sun-dappled stone archway. Beside him sits a small, curious owl perched on a stack of colorful, oversized wooden blocks. A diverse group of young children gathers around, looking up at him with expressions of wonder and engagement. One child holds a magnifying glass, while another traces a glowing, floating question mark in the air. The background is a gentle, pastel-colored garden scene, emphasizing a warm, inviting atmosphere of discovery, learning, and childhood innocence. The style is clean, modern, and illustrative, resembling high-quality children’s book art with bold shapes and a vibrant, friendly color palette.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # ❓🏛️👶 Big Ideas for Little Philosophers: Truth with Socrates  
+![books-big-ideas-for-little-philosophers-truth-with-socrates](../books-big-ideas-for-little-philosophers-truth-with-socrates.jpg)  
 [🛒 Big Ideas for Little Philosophers: Truth with Socrates. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3G9KUWP)  
   
 ## 📚 Book Report: 🧠 Big Ideas for Little Philosophers: 🗣️ Truth with Socrates  

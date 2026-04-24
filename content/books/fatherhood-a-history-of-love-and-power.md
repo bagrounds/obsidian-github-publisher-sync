@@ -6,8 +6,9 @@ URL: https://bagrounds.org/books/fatherhood-a-history-of-love-and-power
 share: true
 affiliate link: https://amzn.to/4e3NtGg
 link_analysis_model: gemini-3.1-flash-lite-preview
-link_analysis_time: 2026-04-08T00:00:00Z
+link_analysis_time: 2026-04-16T00:00:00Z
 force_analyze_links: false
+link_analysis_version: "2"
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 👨‍👧‍👦❤️💪 Fatherhood: A History of Love and Power  

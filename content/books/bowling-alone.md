@@ -11,9 +11,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-15T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-04-24T17:35:22Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A solitary, polished wooden bowling ball sits stationary in the center of a glossy, reflective bowling lane. The lane stretches into the distance, leading toward a set of ten pristine, upright pins. The lighting is moody and cinematic, with soft, cool-toned spotlights highlighting the texture of the polished wood and the glint of the ball. In the background, the blurred silhouette of an empty, expansive bowling alley suggests silence and stillness. The composition emphasizes a sense of vast, quiet space, contrasting the intimacy of a communal game with the stark reality of individual isolation. The color palette features deep blues, warm amber highlights from the lane lights, and the stark white of the pins.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🎳🏘️📉📈 Bowling Alone: The Collapse and Revival of American Community  
+![books-bowling-alone](../books-bowling-alone.jpg)  
 [🛒 Bowling Alone: The Collapse and Revival of American Community. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4e40uA1)  
   
 ## 🤖 AI Summary  

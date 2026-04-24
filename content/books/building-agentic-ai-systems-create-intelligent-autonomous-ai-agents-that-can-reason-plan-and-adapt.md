@@ -12,9 +12,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-15T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-04-24T19:27:29Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A sleek, futuristic illustration featuring a central, glowing neural network core that radiates interconnected nodes and pathways. Surrounding this core are translucent, geometric layers representing planning and decision-making architecture. Floating metallic gears and digital data streams integrate seamlessly into the structure, symbolizing the bridge between mechanical engineering and artificial intelligence. The color palette is a sophisticated blend of deep navy, electric cyan, and soft silver, creating a sense of clean, professional innovation. The background is a minimalist, dark gradient that emphasizes the luminescence of the central agentic system, suggesting a high-tech, autonomous, and analytical environment.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🤖🧠⚙️💡 Building Agentic AI Systems: Create intelligent, autonomous AI agents that can reason, plan, and adapt  
+![books-building-agentic-ai-systems-create-intelligent-autonomous-ai-agents-that-can-reason-plan-and-adapt](../books-building-agentic-ai-systems-create-intelligent-autonomous-ai-agents-that-can-reason-plan-and-adapt.jpg)  
 [🛒 Building Agentic AI Systems: Create intelligent, autonomous AI agents that can reason, plan, and adapt. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3UdszvC)  
   
 ## 📚 Book Report: 🤖 Building Agentic AI Systems  

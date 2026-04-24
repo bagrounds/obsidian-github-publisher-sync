@@ -9,9 +9,13 @@ affiliate link: https://amzn.to/3WkxbAX
 link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-04T00:00:00Z
 force_analyze_links: false
+image_date: 2026-04-24T22:25:45Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: "A sleek, modern composition featuring a glowing, slightly charred smartphone lying on a dark, polished desk. The screen of the phone is cracked, with a vibrant, glitching digital flame flickering from the fissure. Surrounding the phone are scattered, high-end tech components—a detached mechanical keyboard key, a sleek stylus, and a tangled charging cable—all cast in deep shadows. The background is a moody, blurred gradient of Silicon Valley sunset colors: deep purples, fiery oranges, and cold, electric blues. The lighting is cinematic, highlighting the contrast between the sharp edges of the technology and the soft, organic chaos of the flickering flame."
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 💔💻 Burn Book: A Tech Love Story  
+![books-burn-book-a-tech-love-story](../books-burn-book-a-tech-love-story.jpg)  
 [🛒 Burn Book: A Tech Love Story. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3WkxbAX)  
   
 💔📱💥 A sharp, witty, and often scathing memoir exploring Silicon Valley's transformation from optimistic innovation to problematic power, chronicling her three-decade insider perspective on its most influential figures and their impact on society.  

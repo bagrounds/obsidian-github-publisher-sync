@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-04-24T14:40:35-07:00
+updated: 2026-04-24T15:27:44-07:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -71,17 +71,17 @@ updated: 2026-04-24T14:40:35-07:00
   
   
 ## [📚 Books](./books/index.md) (960)  
+- [👤✊ The Power of the Powerless](./books/the-power-of-the-powerless.md)  
+- [🥵🔥💨 Burnout: The Secret to Unlocking the Stress Cycle](./books/burnout-the-secret-to-unlocking-the-stress-cycle.md)  
+- [💔💻 Burn Book: A Tech Love Story](./books/burn-book-a-tech-love-story.md)  
 - [👂📱🐾🌿 The Sounds of Life: How Digital Technology Is Bringing Us Closer to the Worlds of Animals and Plants](./books/the-sounds-of-life-how-digital-technology-is-bringing-us-closer-to-the-worlds-of-animals-and-plants.md)  
-- [🏛️⚙️ Bureaucracy: What Government Agencies Do And Why They Do It](./books/bureaucracy-what-government-agencies-do-and-why-they-do-it.md)  
-- [💩💼 Bullshit Jobs: A Theory](./books/bullshit-jobs-a-theory.md)  
-- [🏃🤸 Built to Move: The Ten Essential Habits to Help You Move Freely and Live Fully](./books/built-to-move-the-ten-essential-habits-to-help-you-move-freely-and-live-fully.md)  
   
   
-## [📺 Videos](./videos/index.md) (792)  
-- [🧑‍🏫🇭🇺⚔️✝️🚩🇺🇸🤫 Historian Timothy Snyder on Orbán's Defeat, Christian Nationalism, and What Trump Is Really Planning](./videos/historian-timothy-snyder-on-orbans-defeat-christian-nationalism-and-what-trump-is-really-planning.md)  
-- [🇺🇸🏛️🗣️📊 An Analysis of Modern Republicanism | Explainer](./videos/an-analysis-of-modern-republicanism-explainer.md)  
-- [🇺🇸🗣️🏛️ American Conversations: Senator Jon Ossoff](./videos/american-conversations-senator-jon-ossoff.md)  
-- [🌿🤖🛰️ These AI Devices Protect Nature in Real Time | Juan M. Lavista Ferres | TED](./videos/these-ai-devices-protect-nature-in-real-time-juan-m-lavista-ferres-ted.md)  
+## [📺 Videos](./videos/index.md) (793)  
+- [⭐1️⃣💰 If You Only Watch One Money Video, Make It This](./videos/if-you-only-watch-one-money-video-make-it-this.md)  
+- [📊📈📉📃👁️ 10 Charts to Understand the 900 Page Budget Bill](./videos/10-charts-to-understand-the-900-page-budget-bill.md)  
+- [💰🔄 Trump’s mega bill ‘hasn’t even cut taxes, it’s redistributed them’ | Justin Wolfers](./videos/trumps-mega-bill-hasnt-even-cut-taxes-its-redistributed-them-justin-wolfers.md)  
+- [😵‍💫🇺🇸🐘🚫 Strange cognitive dissonance among the MAGA who are convinced to vote against their own interests](./videos/strange-cognitive-dissonance-among-the-maga-who-are-convinced-to-vote-against-their-own-interests.md)  
   
   
 ## [🌌 Topics](./topics/index.md) (91)  

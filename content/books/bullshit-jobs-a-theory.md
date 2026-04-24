@@ -10,9 +10,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-16T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-04-24T21:26:48Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A surreal, high-contrast illustration featuring a sleek, modern glass-and-steel office skyscraper rising from a barren, dusty landscape. The building is transparent, revealing a repetitive grid of identical, empty cubicles containing only floating, oversized cardboard boxes stacked to the ceiling. A single, stylized marionette string hangs from the sky, attached to a lone, faceless suit-wearing figure sitting at a desk, mindlessly pushing a single paper across a surface. The color palette is composed of sterile corporate blues and grays, sharply contrasted by a single, vibrant, golden lightbulb glowing faintly in a dark, neglected corner of the office, symbolizing lost potential and hidden humanity. The overall aesthetic is minimalist, clean, and slightly dystopian.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 💩💼 Bullshit Jobs: A Theory  
+![books-bullshit-jobs-a-theory](../books-bullshit-jobs-a-theory.jpg)  
 [🛒 Bullshit Jobs: A Theory. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4apTihA)  
   
 🤯💸🤦 A significant portion of modern white-collar employment is pointless, psychologically damaging, and socially parasitic, perpetuated by managerial feudalism and a flawed moral economy rather than genuine economic necessity 🤯💸🤦.  

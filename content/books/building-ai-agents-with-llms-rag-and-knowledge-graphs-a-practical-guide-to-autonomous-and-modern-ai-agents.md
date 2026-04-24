@@ -10,9 +10,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-15T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-04-24T20:23:59Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: "A high-tech, isometric illustration centered on a glowing, translucent human brain composed of interconnected digital nodes. Radiating from this central brain are three distinct, glowing streams of data: one representing a swirling vortex of text (LLMs), another a structured, geometric web of lines and spheres (Knowledge Graphs), and a third a cascading waterfall of organized document icons (RAG). These streams converge into a sleek, robotic arm reaching out to manipulate a digital interface. The background is a deep, professional midnight blue, punctuated by subtle circuit board patterns and floating binary code. The lighting is cinematic, utilizing a palette of electric blue, neon purple, and soft white highlights to evoke a sense of advanced intelligence, precision, and autonomous technological power."
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🤖🧠🔗 Building AI Agents with LLMs, RAG, and Knowledge Graphs: A practical guide to autonomous and modern AI agents  
+![books-building-ai-agents-with-llms-rag-and-knowledge-graphs-a-practical-guide-to-autonomous-and-modern-ai-agents](../books-building-ai-agents-with-llms-rag-and-knowledge-graphs-a-practical-guide-to-autonomous-and-modern-ai-agents.jpg)  
 [🛒 Building AI Agents with LLMs, RAG, and Knowledge Graphs: A practical guide to autonomous and modern AI agents. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4flCPeN)  
   
 ## 📚 Book Report: 🤖 Building AI Agents with LLMs, RAG, and Knowledge Graphs  

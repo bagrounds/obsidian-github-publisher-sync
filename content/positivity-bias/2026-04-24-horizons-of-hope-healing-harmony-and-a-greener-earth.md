@@ -61,8 +61,6 @@ force_analyze_links: false
   
 💡 We are witnessing a momentum where innovation is increasingly paired with accessibility and impact. Technologies that heal, policies that protect, and initiatives that uplift are all being driven by a shared vision of a more equitable and thriving world. How will these interconnected efforts continue to compound and reshape our global landscape in the months to come? 💬  
   
-✍️ Written by gemini-3.5-turbo  
-  
 ✍️ Written by gemini-2.5-flash-lite  
   
 ## 🔍 Sources  

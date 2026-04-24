@@ -10,9 +10,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-18T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-04-24T20:24:02Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A minimalist, high-contrast illustration featuring a stylized human silhouette in motion. The figure is captured in a fluid transition between a deep squat and a standing reach, symbolizing mobility and range of motion. The background is a clean, neutral gradient, with subtle, thin geometric lines tracing the arc of the movement to emphasize grace and functional alignment. The aesthetic is modern, clean, and energetic, utilizing a vibrant color palette of teal and burnt orange to represent vitality and balance. No complex background elements or clutter; the focus remains entirely on the anatomy of the movement and the concept of living fully through physical freedom.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🏃🤸 Built to Move: The Ten Essential Habits to Help You Move Freely and Live Fully  
+![books-built-to-move-the-ten-essential-habits-to-help-you-move-freely-and-live-fully](../books-built-to-move-the-ten-essential-habits-to-help-you-move-freely-and-live-fully.jpg)  
 [🛒 Built to Move: The Ten Essential Habits to Help You Move Freely and Live Fully. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3JaD5lg)  
   
 Built to Move by Kelly and Juliet Starrett presents ten essential, easy-to-implement habits and corresponding tests that empower individuals to restore natural movement patterns, improve mobility, reduce pain, and enhance overall physical and mental vitality for a healthier, more functional life at any age.  

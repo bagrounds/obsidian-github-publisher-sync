@@ -9,9 +9,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-17T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-04-24T22:25:47Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A stylized, minimalist illustration depicting the concept of the stress cycle. In the center, a human silhouette is rendered in a dark, heavy, charcoal-toned texture, representing pent-up stress and exhaustion. Surrounding the silhouette, vibrant, flowing lines of color—like deep oranges, soft teals, and warm yellows—spiral outward like an unfolding ribbon or a release of energy. These lines symbolize the transition from a constricted, static state into movement and flow. The background is a soft, neutral cream, providing a calm, uncluttered space that emphasizes the contrast between the trapped, heavy center and the liberating, rhythmic motion of the escaping energy. The overall aesthetic is clean, modern, and metaphorical, focusing on the physiological transition from tension to relief.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🥵🔥💨 Burnout: The Secret to Unlocking the Stress Cycle  
+![books-burnout-the-secret-to-unlocking-the-stress-cycle](../books-burnout-the-secret-to-unlocking-the-stress-cycle.jpg)  
 [🛒 Burnout: The Secret to Unlocking the Stress Cycle. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3FkgmkX)  
   
 ## 📚 Book Report: 😩 Burnout: The Secret to Unlocking the Stress Cycle  

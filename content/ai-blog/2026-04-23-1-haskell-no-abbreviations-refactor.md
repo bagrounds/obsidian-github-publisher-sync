@@ -12,7 +12,7 @@ link_analysis_version: "2"
 link_analysis_time: 2026-04-23T00:00:00Z
 force_analyze_links: false
 ---
-[🏡 Home](../index.md) > [🤖 AI Blog](./index.md) | [⏮️](./2026-04-22-1-gemini-grounding-source-links.md)  
+[🏡 Home](../index.md) > [🤖 AI Blog](./index.md) | [⏮️](./2026-04-22-1-gemini-grounding-source-links.md) [⏭️](./2026-04-24-1-rca-gemini-flash-grounding-logs.md)  
 # 2026-04-23 | 🔤 No Abbreviations in Haskell: A Boy-Scout Refactor 🧹  
 ![ai-blog-2026-04-23-1-haskell-no-abbreviations-refactor](../ai-blog-2026-04-23-1-haskell-no-abbreviations-refactor.jpg)  
   

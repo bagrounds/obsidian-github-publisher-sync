@@ -10,9 +10,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-18T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-04-24T05:14:56Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A serene, stylized profile of an elderly person, their features softened and peaceful, gazing gently towards a warm, soft light emanating from the background. Delicately intertwined around the figure, almost like a subtle halo or an ethereal embrace, are faint, abstract lines suggestive of a medical cross or a stethoscope, blending seamlessly with organic, flowing shapes. In the foreground, a single, autumnal leaf or a delicate feather drifts downwards, symbolizing the natural cycle of life. The color palette features muted earth tones, soft blues, and gentle golden hues, creating an atmosphere of quiet reflection, dignity, and calm acceptance.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # ⚕️💀 Being Mortal: Medicine and What Matters in the End  
+![books-being-mortal-medicine-and-what-matters-in-the-end](../books-being-mortal-medicine-and-what-matters-in-the-end.jpg)  
 [🛒 Being Mortal: Medicine and What Matters in the End. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4nxP2jC)  
   
 ## 📚 Book Report: Being Mortal: Medicine and What Matters in the End  

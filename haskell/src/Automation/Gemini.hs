@@ -356,6 +356,8 @@ generateContent manager req = do
   let url = T.unpack $ geminiEndpoint model <> "?key=" <> unSecret (requestApiKey req)
   parsedRequest <- parseRequest url
   let body = encode $ buildRequestBody effectiveSystemInstruction effectivePrompt (requestGenerationConfig req)
+  putStrLn $ "📤 Gemini request (" <> T.unpack (modelToText model) <> "): "
+    <> T.unpack (TE.decodeUtf8 (LBS.toStrict body))
   let httpReq = parsedRequest
         { HTTP.method = "POST"
         , HTTP.requestBody = RequestBodyLBS body
@@ -366,6 +368,8 @@ generateContent manager req = do
         }
   response <- httpLbs httpReq manager
   let status = statusCode $ responseStatus response
+  putStrLn $ "📥 Gemini response (" <> T.unpack (modelToText model) <> ", status " <> show status <> "): "
+    <> T.unpack (TE.decodeUtf8 (LBS.toStrict (responseBody response)))
   case status of
     200 ->
       case (parseResponseText (responseBody response), Json.decode (responseBody response)) of
@@ -375,11 +379,13 @@ generateContent manager req = do
           , responseModel            = model
           , responseGroundingSources = []
           }
-        (Right text, Just val) -> pure $ Right Response
-          { responseText             = T.strip text
-          , responseModel            = model
-          , responseGroundingSources = extractGroundingSources val
-          }
+        (Right text, Just val) -> do
+          let sources = extractGroundingSources val
+          pure $ Right Response
+            { responseText             = T.strip text
+            , responseModel            = model
+            , responseGroundingSources = sources
+            }
     code ->
       let (apiStatus, message) = parseErrorBody (responseBody response)
       in pure $ Left $ HttpError code apiStatus message
@@ -398,5 +404,5 @@ generateContentWithFallback manager (model :| fallbacks) systemInstruction promp
     Left err -> case fallbacks of
       [] -> pure $ Left $ AllModelsFailed model err
       (next : rest) -> do
-        putStrLn $ "⚠️ Model " <> T.unpack (modelToText model) <> " failed, trying next fallback..."
+        putStrLn $ "⚠️ Model " <> T.unpack (modelToText model) <> " failed (" <> show err <> "), trying next fallback..."
         generateContentWithFallback manager (next :| rest) systemInstruction prompt apiKey config

@@ -57,6 +57,9 @@
 - 🔄 formatGroundingSources returns Nothing for empty lists and Just for non-empty lists, letting callers decide whether to include the section
 - 🛑 If grounding fails, the entire model attempt fails and the next model in the chain is tried; there is no silent fallback to an ungrounded post
 - ✅ Enabled for: the-noise, systems-for-public-good, positivity-bias, convergence
+- ⚠️ When grounding is enabled but a fallback model returns no grounding chunks, a warning is logged: "Grounding was requested but {model} returned no sources". This is expected behavior when a fallback model does not support grounding on the free tier
+- 🔎 When grounding is enabled and the response contains no groundingChunks, the entire raw response body is logged so operators can verify whether grounding data exists elsewhere in the response and whether the parser is missing it
+- 📋 The model fallback log message includes the error details: "Model {name} failed ({error}), trying next fallback..." — this makes it possible to diagnose whether the failure was a rate limit, quota exhaustion, or a different API error
 
 ## 🔐 GCP Authentication
 

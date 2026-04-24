@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-04-24T06:33:13-07:00
+updated: 2026-04-24T06:59:31-07:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -49,18 +49,18 @@ updated: 2026-04-24T06:33:13-07:00
 - [2026-04-20 | 🏛️ The Interconnected Web of Well-being 🏛️](./systems-for-public-good/2026-04-20-the-interconnected-web-of-well-being.md)  
   
   
-## [📰 The Noise](./the-noise/index.md) (14)  
+## [📰 The Noise](./the-noise/index.md) (15)  
+- [2026-04-24 | 📰 ⚡ Navigating the Currents of Change 🌍 📰](./the-noise/2026-04-24-navigating-the-currents-of-change.md)  
 - [2026-04-23 | 📰 Global Currents, Echoing Futures 📰](./the-noise/2026-04-23-global-currents-echoing-futures.md)  
 - [2026-04-22 | 📰 The Dual Engine of Progress and Conflict 📰](./the-noise/2026-04-22-the-dual-engine-of-progress-and-conflict.md)  
 - [2026-04-21 | 📰 The Dual Engine of Progress and Conflict 📰](./the-noise/2026-04-21-the-dual-engine-of-progress-and-conflict.md)  
-- [2026-04-20 | 📰 🌐 Shifting Sands, Enduring Currents 🌊 📰](./the-noise/2026-04-20-shifting-sands-enduring-currents.md)  
   
   
-## [🌟 Positivity Bias](./positivity-bias/index.md) (13)  
+## [🌟 Positivity Bias](./positivity-bias/index.md) (14)  
+- [2026-04-24 | 🌟 Horizons of Hope: Healing, Harmony, and a Greener Earth 🌟](./positivity-bias/2026-04-24-horizons-of-hope-healing-harmony-and-a-greener-earth.md)  
 - [2026-04-23 | 🌟 Triumphs of Ingenuity and Compassion 🌟](./positivity-bias/2026-04-23-triumphs-of-ingenuity-and-compassion.md)  
 - [2026-04-22 | 🌟 A World of Innovation and Compassion 🌟](./positivity-bias/2026-04-22-a-world-of-innovation-and-compassion.md)  
 - [2026-04-21 | 🌟 Health, Environment, and Diplomacy Shine Bright 🌟](./positivity-bias/2026-04-21-health-environment-and-diplomacy-shine-bright.md)  
-- [2026-04-20 | 🌟 Global Innovations Spark Collective Progress 🌟](./positivity-bias/2026-04-20-global-innovations-spark-collective-progress.md)  
   
   
 ## [🔀 Convergence](./convergence/index.md) (10)  
@@ -71,17 +71,17 @@ updated: 2026-04-24T06:33:13-07:00
   
   
 ## [📚 Books](./books/index.md) (960)  
+- [♟️🧑‍🏫 Bobby Fischer Teaches Chess](./books/bobby-fischer-teaches-chess.md)  
+- [🌊📈 Blue Ocean Strategy: How to Create Uncontested Market Space and Make the Competition Irrelevant](./books/blue-ocean-strategy-how-to-create-uncontested-market-space-and-make-the-competition-irrelevant.md)  
 - [📢💡 Public Broadcasting and the Public Interest](./books/public-broadcasting-and-the-public-interest.md)  
 - [✍️💻💰 Blog, Inc.: Blogging for Passion, Profit, and to Create Community](./books/blog-inc-blogging-for-passion-profit-and-to-create-community.md)  
-- [🧑🏿‍🤝‍🧑🏿🏛️ Black Reconstruction in America (The Oxford W. E. B. Du Bois): An Essay Toward a History of the Part Which Black Folk Played in the Attempt to Reconstruct Democracy in America, 1860-1880](./books/black-reconstruction-in-america-the-oxford-w-e-b-du-bois-an-essay-toward-a-history-of-the-part-which-black-folk-played-in-the-attempt-to-reconstruct-democracy-in-america-1860-1880.md)  
-- [🛂😐🧑🏿🧑🏻⚖️ Bordering on Indifference: Immigration Agents Negotiating Race and Morality](./books/bordering-on-indifference-immigration-agents-negotiating-race-and-morality.md)  
   
   
 ## [📺 Videos](./videos/index.md) (790)  
-- [🧠⚡️😊⬇️⬆️ How Dopamine & Serotonin Shape Decisions, Motivation & Learning | Dr. Read Montague](./videos/how-dopamine-serotonin-shape-decisions-motivation-learning-dr-read-montague.md)  
-- [🤖🧪🚫🛑💥 Anthropic Tested 16 Models. Instructions Didn't Stop Them (When Security is a Structural Failure)](./videos/anthropic-tested-16-models-instructions-didnt-stop-them-when-security-is-a-structural-failure.md)  
-- [📺📰👋🔚😢😠 Highlights from PBS News Weekend as show goes off the air](./videos/highlights-from-pbs-news-weekend-as-show-goes-off-the-air.md)  
-- [🧠➡️🤖⚡️ Your Brain Doesn't Command Your Body. It Predicts It. | Max Bennett](./videos/your-brain-doesnt-command-your-body-it-predicts-it-max-bennett.md)  
+- [What Are You?](./videos/what-are-you.md)  
+- [You Are Two](./videos/you-are-two.md)  
+- [Spaceship You](./videos/spaceship-you.md)  
+- [🥱💭✂️🎬🫡 How to Force Your Brain To Be Motivated (when you don’t feel like it)](./videos/how-to-force-your-brain-to-be-motivated-when-you-dont-feel-like-it.md)  
   
   
 ## [🌌 Topics](./topics/index.md) (91)  
@@ -99,10 +99,10 @@ updated: 2026-04-24T06:33:13-07:00
   
   
 ## [🤖💬 Bot Chats](./bot-chats/index.md) (49)  
+- [🧘📚🔍 Mindfulness Book Research](./bot-chats/mindfulness-book-research.md)  
 - [🧭 Managing 🕸️ Complexity 🧠](./bot-chats/managing-complexity.md)  
 - [⛽ Fueling a 👥 Movement to ⚔️ Fight 👹 Tyranny and 💪 Strengthen 🗳️ Democracy](./bot-chats/fueling-a-movement-to-fight-tyranny-and-strengthen-democracy.md)  
 - [📏💻✅ Engineering as Specification](./bot-chats/engineering-as-specification.md)  
-- [✍️🥇🇺🇸 Creating the Most Popular Title in the Country](./bot-chats/creating-the-most-popular-title-in-the-country.md)  
   
   
 ## [💾 Software](./software/index.md) (33)  

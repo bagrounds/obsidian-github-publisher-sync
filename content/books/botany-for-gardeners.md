@@ -10,9 +10,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-19T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-04-24T16:34:39Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: "An overhead, flat-lay composition on a rustic wooden potting bench. A well-worn, open botanical textbook sits in the center, its pages filled with intricate, hand-drawn ink sketches of root systems, leaf venation, and floral cross-sections. Surrounding the book are various gardening tools: a pair of vintage copper-handled shears, a small brass magnifying glass resting on a diagram, and a handful of dried pressed flowers. A few stray, healthy green seedlings in small terracotta pots are tucked into the corners. The lighting is soft and natural, suggesting a bright morning in a greenhouse, with subtle dust motes dancing in the light to create an atmosphere of quiet, academic discovery. The color palette features earthy tones of terracotta, sage green, and warm wood grain."
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🌿🧑‍🌾 Botany for Gardeners  
+![books-botany-for-gardeners](../books-botany-for-gardeners.jpg)  
 [🛒 Botany for Gardeners. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4jt9qQg)  
   
 ## 📖 Book Report: Botany for Gardeners  

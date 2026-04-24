@@ -10,9 +10,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-17T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-04-24T16:34:36Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A wide-angle, cinematic view of a sun-drenched, rugged canyon landscape with deep, stratified rock walls in shades of ochre and burnt orange. In the distance, a lone runner in simple, traditional clothing is captured mid-stride on a narrow, winding dirt trail that hugs the canyon cliffside. The atmosphere is hazy with dust kicked up from the path. The lighting is dramatic, with long shadows emphasizing the steep terrain and the vastness of the wilderness. In the foreground, a pair of worn, handmade leather sandals rests on a rocky outcrop, suggesting a transition from modern life to a primal, natural state. The overall tone is one of endurance, solitude, and ancient connection to the earth.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🏃‍♂️⛰️ Born to Run: A Hidden Tribe, Superathletes, and the Greatest Race the World Has Never Seen  
+![books-born-to-run-a-hidden-tribe-superathletes-and-the-greatest-race-the-world-has-never-seen](../books-born-to-run-a-hidden-tribe-superathletes-and-the-greatest-race-the-world-has-never-seen.jpg)  
 [🛒 Born to Run: A Hidden Tribe, Superathletes, and the Greatest Race the World Has Never Seen. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/41R4BdG)  
   
 ## 📚 Book Report: Born to Run: A Hidden Tribe, Superathletes, and the Greatest Race the World Has Never Seen  

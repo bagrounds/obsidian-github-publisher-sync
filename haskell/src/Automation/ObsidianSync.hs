@@ -46,21 +46,21 @@ import System.Process
   )
 
 data ObsidianCredentials = ObsidianCredentials
-  { ocAuthToken     :: Secret
-  , ocVaultName     :: Text
-  , ocVaultPassword :: Maybe Secret
+  { authToken     :: Secret
+  , vaultName     :: Text
+  , vaultPassword :: Maybe Secret
   } deriving (Show, Eq)
 
 data SyncResult = SyncResult
-  { srVaultDir :: FilePath
-  , srSuccess  :: Bool
+  { vaultDirectory :: FilePath
+  , syncSucceeded  :: Bool
   } deriving (Show, Eq)
 
 runObCommand :: [String] -> Maybe FilePath -> [(String, String)] -> IO (String, String)
-runObCommand args mCwd extraEnv = do
+runObCommand args maybeWorkingDirectory extraEnv = do
   parentEnv <- getEnvironment
   let mergedEnv = parentEnv <> extraEnv
-      cp = (proc "ob" args) { cwd = mCwd, env = Just mergedEnv }
+      cp = (proc "ob" args) { cwd = maybeWorkingDirectory, env = Just mergedEnv }
   (exitCode, stdout, stderr) <- readCreateProcessWithExitCode cp ""
   case exitCode of
     ExitSuccess -> pure (stdout, stderr)
@@ -82,9 +82,9 @@ removeSyncLock vaultDir = do
     removeDirectoryRecursive lockPath
 
 findObProcesses :: Maybe FilePath -> IO [String]
-findObProcesses mVaultDir = do
+findObProcesses maybeVaultDirectory = do
   myPid <- show <$> getProcessID
-  let patterns = ["obsidian-headless"] <> maybe [] pure mVaultDir
+  let patterns = ["obsidian-headless"] <> maybe [] pure maybeVaultDirectory
       grepPattern = intercalate "|" patterns
   result <- try $ readProcess "bash" ["-c",
     "ps -u $(id -u) -o pid,args 2>/dev/null | grep -E '" <> grepPattern <> "' | grep -v grep | awk '{print $1}'"
@@ -94,8 +94,8 @@ findObProcesses mVaultDir = do
     Right pids -> filter (\p -> not (null p) && p /= myPid) $ lines pids
 
 killObProcesses :: Maybe FilePath -> IO ()
-killObProcesses mVaultDir = do
-  pids <- findObProcesses mVaultDir
+killObProcesses maybeVaultDirectory = do
+  pids <- findObProcesses maybeVaultDirectory
   case pids of
     [] -> pure ()
     _  -> do
@@ -133,11 +133,11 @@ runObSyncWithRetry args env vaultDir maxRetries = go 0
               canRetry = attempt < maxRetries
           in case (isLockContention, canRetry) of
             (True, True) -> do
-              let delayMs = 2000 * (2 ^ attempt)
+              let delayMilliseconds = 2000 * (2 ^ attempt)
               putStrLn $ "⚠️ Sync lock contention (retry " <> show (attempt + 1) <> "/" <> show maxRetries
-                <> "), retrying in " <> show (delayMs `div` 1000) <> "s..."
+                <> "), retrying in " <> show (delayMilliseconds `div` 1000) <> "s..."
               ensureSyncClean vaultDir
-              threadDelay (delayMs * 1000)
+              threadDelay (delayMilliseconds * 1000)
               go (attempt + 1)
             _ -> throwIO err
 
@@ -145,15 +145,15 @@ syncObsidianVault :: ObsidianCredentials -> IO FilePath
 syncObsidianVault creds = do
   pid <- show <$> getProcessID
   let vaultDir = "/tmp/obsidian-vault-" <> pid
-      env = [("OBSIDIAN_AUTH_TOKEN", T.unpack $ unSecret $ ocAuthToken creds)]
+      env = [("OBSIDIAN_AUTH_TOKEN", T.unpack $ unSecret $ authToken creds)]
   coldCacheSync creds vaultDir env
 
 coldCacheSync :: ObsidianCredentials -> FilePath -> [(String, String)] -> IO FilePath
 coldCacheSync creds vaultDir env = do
   createDirectoryIfMissing True vaultDir
-  let setupArgs = ["sync-setup", "--vault", T.unpack $ ocVaultName creds, "--path", vaultDir]
-        <> maybe [] (\pw -> ["--password", T.unpack (unSecret pw)]) (ocVaultPassword creds)
-  putStrLn $ "🔧 Setting up Obsidian Sync for vault: " <> T.unpack (ocVaultName creds)
+  let setupArgs = ["sync-setup", "--vault", T.unpack $ vaultName creds, "--path", vaultDir]
+        <> maybe [] (\pw -> ["--password", T.unpack (unSecret pw)]) (vaultPassword creds)
+  putStrLn $ "🔧 Setting up Obsidian Sync for vault: " <> T.unpack (vaultName creds)
   _ <- runObCommand setupArgs Nothing env
   removeSyncLock vaultDir
   putStrLn "📥 Pulling latest vault content..."
@@ -182,10 +182,10 @@ validatePrePushFileCount vaultDir currentCount = do
   if markerExists
     then do
       baselineStr <- readFile markerPath
-      let mBaseline = case reads baselineStr of
+      let maybeBaseline = case reads baselineStr of
             [(n, _)] -> Just (n :: Int)
             _        -> Nothing
-      case mBaseline of
+      case maybeBaseline of
         Nothing -> putStrLn "⚠️ Could not parse baseline file count — skipping deletion check"
         Just baseline -> do
           let lost = baseline - currentCount
@@ -255,4 +255,4 @@ appendEmbedsToObsidianNote :: FilePath -> [(Text, Text, Text -> Text -> Text)] -
 appendEmbedsToObsidianNote notePath sections creds = do
   vaultDir <- syncObsidianVault creds
   writeEmbedsToNote (vaultDir </> notePath) sections
-  pushObsidianVault vaultDir (ocAuthToken creds)
+  pushObsidianVault vaultDir (authToken creds)

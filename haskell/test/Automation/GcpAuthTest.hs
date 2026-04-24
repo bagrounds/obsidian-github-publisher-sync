@@ -19,8 +19,8 @@ parseServiceAccountKeyTests = testGroup "parseServiceAccountKey"
       let json = "{\"project_id\":\"my-project\",\"client_email\":\"test@test.iam.gserviceaccount.com\",\"private_key\":\"-----BEGIN PRIVATE KEY-----\\nfake\\n-----END PRIVATE KEY-----\"}"
       in case parseServiceAccountKey json of
         Right key -> do
-          sakProjectId key @?= "my-project"
-          sakClientEmail key @?= "test@test.iam.gserviceaccount.com"
+          projectId key @?= "my-project"
+          clientEmail key @?= "test@test.iam.gserviceaccount.com"
         Left err -> error ("Parse failed: " <> T.unpack err)
   , testCase "rejects empty project_id" $
       let json = "{\"project_id\":\"\",\"client_email\":\"test@test.iam.gserviceaccount.com\",\"private_key\":\"key\"}"

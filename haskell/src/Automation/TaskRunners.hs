@@ -503,7 +503,7 @@ runDailyAnalytics context = do
           logMsg $ "  ❌ Failed to parse service account key: " <> err
           logMsg "✅ daily-analytics (error)"
         Right serviceAccount -> do
-          logMsg $ "  🔑 Service account: " <> GcpAuth.sakClientEmail serviceAccount
+          logMsg $ "  🔑 Service account: " <> GcpAuth.clientEmail serviceAccount
           tokenResult <- GcpAuth.getAccessTokenWithScope GA.analyticsReadonlyScope manager serviceAccount
           case tokenResult of
             Left err -> do
@@ -583,7 +583,7 @@ fetchAnalytics :: HTTP.Manager -> Text -> Text -> Json.Value -> IO (Either Text 
 fetchAnalytics manager accessToken endpoint body = do
   let bodyBytes = Json.encode body
   parsedRequest <- HTTP.parseRequest (T.unpack endpoint)
-  let httpReq = parsedRequest
+  let request = parsedRequest
         { HTTP.method = "POST"
         , HTTP.requestBody = HTTP.RequestBodyLBS bodyBytes
         , HTTP.requestHeaders =
@@ -591,7 +591,7 @@ fetchAnalytics manager accessToken endpoint body = do
             , ("Content-Type", "application/json")
             ]
         }
-  response <- HTTP.httpLbs httpReq manager
+  response <- HTTP.httpLbs request manager
   let responseBytes = HTTP.responseBody response
       status = statusCode (HTTP.responseStatus response)
   logMsg $ "  📬 GA4 API response: HTTP " <> T.pack (show status) <> ", " <> T.pack (show (LBS.length responseBytes)) <> " bytes"

@@ -120,7 +120,7 @@ main = do
       results <- runTasks runners tasks
 
       logMsg "📤 Pushing Obsidian vault..."
-      pushObsidianVault vaultDir (ocAuthToken creds)
+      pushObsidianVault vaultDir (authToken creds)
       logMsg "📤 Vault pushed"
 
       let succeeded = length (filter (\(_, success, _) -> success) results)

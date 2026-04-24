@@ -18,32 +18,32 @@ import Data.Time (NominalDiffTime, UTCTime, diffUTCTime, getCurrentTime)
 import Numeric (showFFloat)
 
 data TimerEntry = TimerEntry
-  { teName      :: Text
-  , teStartTime :: UTCTime
-  , teEndTime   :: Maybe UTCTime
+  { name      :: Text
+  , startTime :: UTCTime
+  , endTime   :: Maybe UTCTime
   } deriving (Show, Eq)
 
 data PipelineTimer = PipelineTimer
-  { ptEntries   :: IORef [TimerEntry]
-  , ptStartTime :: UTCTime
+  { entries       :: IORef [TimerEntry]
+  , pipelineStart :: UTCTime
   }
 
 newPipelineTimer :: IO PipelineTimer
 newPipelineTimer = PipelineTimer <$> newIORef [] <*> getCurrentTime
 
 timerStart :: PipelineTimer -> Text -> IO ()
-timerStart timer name = do
+timerStart timer timerName = do
   now <- getCurrentTime
-  modifyIORef' (ptEntries timer) (<> [TimerEntry name now Nothing])
+  modifyIORef' (entries timer) (<> [TimerEntry timerName now Nothing])
 
 timerEnd :: PipelineTimer -> Text -> IO ()
-timerEnd timer name = do
+timerEnd timer timerName = do
   now <- getCurrentTime
-  modifyIORef' (ptEntries timer) (fmap (closeEntry now))
+  modifyIORef' (entries timer) (fmap (closeEntry now))
   where
     closeEntry now entry
-      | teName entry == name && isNothing (teEndTime entry) =
-          entry { teEndTime = Just now }
+      | name entry == timerName && isNothing (endTime entry) =
+          entry { endTime = Just now }
       | otherwise = entry
 
 timerTime :: PipelineTimer -> Text -> IO a -> IO a
@@ -69,24 +69,24 @@ padStart n t = T.replicate (max 0 (n - T.length t)) " " <> t
 printTimerSummary :: PipelineTimer -> IO ()
 printTimerSummary timer = do
   now <- getCurrentTime
-  entries <- readIORef (ptEntries timer)
-  let totalDt = diffUTCTime now (ptStartTime timer)
+  timerEntries <- readIORef (entries timer)
+  let totalDuration = diffUTCTime now (pipelineStart timer)
       separator = T.replicate 52 "─"
   TIO.putStrLn ""
   TIO.putStrLn "⏱️  Pipeline Timing Summary:"
   TIO.putStrLn separator
-  mapM_ (printEntry now totalDt) entries
+  mapM_ (printEntry now totalDuration) timerEntries
   TIO.putStrLn separator
   TIO.putStrLn $
     "  🏁 Total pipeline time" <> T.replicate 13 " "
-      <> " " <> padStart 7 (formatDuration totalDt) <> "s"
+      <> " " <> padStart 7 (formatDuration totalDuration) <> "s"
 
 printEntry :: UTCTime -> NominalDiffTime -> TimerEntry -> IO ()
-printEntry now totalDt entry =
-  let endTime = fromMaybe now (teEndTime entry)
-      durationDt = diffUTCTime endTime (teStartTime entry)
-      status = maybe "⏳" (const "✅") (teEndTime entry)
+printEntry now totalDuration entry =
+  let entryEndTime = fromMaybe now (endTime entry)
+      duration = diffUTCTime entryEndTime (startTime entry)
+      status = maybe "⏳" (const "✅") (endTime entry)
   in TIO.putStrLn $
-       "  " <> status <> " " <> padEnd 30 (teName entry)
-         <> " " <> padStart 7 (formatDuration durationDt) <> "s"
-         <> "  (" <> padStart 5 (formatPercent durationDt totalDt) <> "%)"
+       "  " <> status <> " " <> padEnd 30 (name entry)
+         <> " " <> padStart 7 (formatDuration duration) <> "s"
+         <> "  (" <> padStart 5 (formatPercent duration totalDuration) <> "%)"

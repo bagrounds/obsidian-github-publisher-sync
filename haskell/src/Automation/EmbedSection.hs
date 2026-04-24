@@ -19,9 +19,9 @@ import qualified Automation.Platforms.Mastodon as Mastodon
 import qualified Automation.Platforms.Twitter as Twitter
 
 data EmbedSection = EmbedSection
-  { esHeader :: Text
-  , esEmbedHtml :: Text
-  , esBuildSection :: Text -> Text -> Text
+  { header       :: Text
+  , embedHtml    :: Text
+  , buildSection :: Text -> Text -> Text
   }
 
 createSectionBuilder :: Text -> Text -> Text -> Text

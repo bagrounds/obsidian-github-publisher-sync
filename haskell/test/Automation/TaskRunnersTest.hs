@@ -23,9 +23,9 @@ mkTestContext :: IO AppContext
 mkTestContext = do
   manager <- newManager defaultManagerSettings
   let credentials = ObsidianCredentials
-        { ocAuthToken = Secret "test-token"
-        , ocVaultName = "test-vault"
-        , ocVaultPassword = Nothing
+        { authToken     = Secret "test-token"
+        , vaultName     = "test-vault"
+        , vaultPassword = Nothing
         }
   case mkAppContext manager "/tmp/vault" "/tmp/repo" (Secret "test-key") credentials of
     Right context -> pure context

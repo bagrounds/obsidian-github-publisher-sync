@@ -99,15 +99,15 @@ data LinkCard = LinkCard
   } deriving (Show, Eq)
 
 data OEmbedConfig = OEmbedConfig
-  { initialDelayMs :: Int
-  , retryDelayMs :: Int
+  { initialDelayMilliseconds :: Int
+  , retryDelayMilliseconds :: Int
   , maxAttempts :: Int
   } deriving (Show, Eq)
 
 defaultOEmbedConfig :: OEmbedConfig
 defaultOEmbedConfig = OEmbedConfig
-  { initialDelayMs = 3000
-  , retryDelayMs = 3000
+  { initialDelayMilliseconds = 3000
+  , retryDelayMilliseconds = 3000
   , maxAttempts = 3
   }
 
@@ -492,8 +492,8 @@ getEmbedHtml manager config atUri =
 tryOEmbedWithRetry :: Manager -> OEmbedConfig -> Url -> Int -> IO Text
 tryOEmbedWithRetry manager config postUrl attempt = do
   let delayMs = if attempt == 0
-        then initialDelayMs config
-        else retryDelayMs config
+        then initialDelayMilliseconds config
+        else retryDelayMilliseconds config
   when (delayMs > 0) $
     threadDelay (delayMs * 1000)
   result <- fetchOEmbed manager postUrl

@@ -18,9 +18,9 @@ testManager = unsafePerformIO (newManager defaultManagerSettings)
 
 testObsidianCredentials :: ObsidianCredentials
 testObsidianCredentials = ObsidianCredentials
-  { ocAuthToken = Secret "token"
-  , ocVaultName = "test-vault"
-  , ocVaultPassword = Nothing
+  { authToken     = Secret "token"
+  , vaultName     = "test-vault"
+  , vaultPassword = Nothing
   }
 
 tests :: TestTree

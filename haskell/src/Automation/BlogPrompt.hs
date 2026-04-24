@@ -103,7 +103,7 @@ filterCommentsAfterLastPost series (latestPost : _) comments =
 
 commentAfterCutoff :: LocalTime -> BlogComment -> Bool
 commentAfterCutoff cutoff comment =
-  case parseUtcTimestamp (bcCreatedAt comment) of
+  case parseUtcTimestamp (createdAt comment) of
     Nothing      -> True
     Just utcTime -> toPacificLocalTime utcTime >= cutoff
 
@@ -247,9 +247,9 @@ formatCrossSeriesPost CrossSeriesPost{..} =
     <> " (" <> bpDate crossSeriesPost <> ")\n\n" <> T.strip excerpt
 
 formatComment :: BlogComment -> Text
-formatComment c =
-  let priority = if bcIsPriority c then " ⭐" else ""
-  in "**" <> bcAuthor c <> "**" <> priority <> " (" <> bcCreatedAt c <> "):\n" <> bcBody c
+formatComment comment =
+  let priority = if isPriority comment then " ⭐" else ""
+  in "**" <> author comment <> "**" <> priority <> " (" <> createdAt comment <> "):\n" <> body comment
 
 parseDate :: Text -> Maybe Day
 parseDate t =

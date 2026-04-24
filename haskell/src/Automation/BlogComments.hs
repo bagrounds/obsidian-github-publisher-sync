@@ -6,16 +6,8 @@ module Automation.BlogComments
   , fetchAllSeriesComments
   ) where
 
-import Automation.Json
-  ( FromValue (..)
-  , (.=)
-  , (.:)
-  , (.:?)
-  , encode
-  , eitherDecode
-  , object
-  , withObject
-  )
+import Automation.Json ((.=), encode, eitherDecode, object)
+import qualified Automation.BlogComments.GqlTypes as Gql
 import Data.List (sortOn)
 import Data.Ord (Down (..))
 import Data.Text (Text)
@@ -40,95 +32,20 @@ graphqlEndpoint :: String
 graphqlEndpoint = "https://api.github.com/graphql"
 
 data BlogComment = BlogComment
-  { bcAuthor     :: Text
-  , bcBody       :: Text
-  , bcCreatedAt  :: Text
-  , bcIsPriority :: Bool
+  { author     :: Text
+  , body       :: Text
+  , createdAt  :: Text
+  , isPriority :: Bool
   } deriving (Show, Eq)
 
-newtype GqlAuthor = GqlAuthor
-  { gaLogin :: Text
-  } deriving (Show, Eq)
-
-instance FromValue GqlAuthor where
-  fromValue = withObject "GqlAuthor" $ \v ->
-    GqlAuthor <$> v .: "login"
-
-data GqlComment = GqlComment
-  { gcBody      :: Text
-  , gcAuthor    :: Maybe GqlAuthor
-  , gcCreatedAt :: Text
-  } deriving (Show, Eq)
-
-instance FromValue GqlComment where
-  fromValue = withObject "GqlComment" $ \v ->
-    GqlComment
-      <$> v .: "body"
-      <*> v .:? "author"
-      <*> v .: "createdAt"
-
-newtype GqlCommentsNode = GqlCommentsNode
-  { gcnNodes :: [GqlComment]
-  } deriving (Show, Eq)
-
-instance FromValue GqlCommentsNode where
-  fromValue = withObject "GqlCommentsNode" $ \v ->
-    GqlCommentsNode <$> v .: "nodes"
-
-data GqlDiscussion = GqlDiscussion
-  { gdTitle    :: Text
-  , gdComments :: GqlCommentsNode
-  } deriving (Show, Eq)
-
-instance FromValue GqlDiscussion where
-  fromValue = withObject "GqlDiscussion" $ \v ->
-    GqlDiscussion
-      <$> v .: "title"
-      <*> v .: "comments"
-
-newtype GqlSearchNodes = GqlSearchNodes
-  { gsnNodes :: [GqlDiscussion]
-  } deriving (Show, Eq)
-
-instance FromValue GqlSearchNodes where
-  fromValue = withObject "GqlSearchNodes" $ \v ->
-    GqlSearchNodes <$> v .: "nodes"
-
-newtype GqlSearchData = GqlSearchData
-  { gsdSearch :: GqlSearchNodes
-  } deriving (Show, Eq)
-
-instance FromValue GqlSearchData where
-  fromValue = withObject "GqlSearchData" $ \v ->
-    GqlSearchData <$> v .: "search"
-
-newtype GqlError = GqlError
-  { geMessage :: Text
-  } deriving (Show, Eq)
-
-instance FromValue GqlError where
-  fromValue = withObject "GqlError" $ \v ->
-    GqlError <$> v .: "message"
-
-data GqlResponse = GqlResponse
-  { grData   :: Maybe GqlSearchData
-  , grErrors :: Maybe [GqlError]
-  } deriving (Show, Eq)
-
-instance FromValue GqlResponse where
-  fromValue = withObject "GqlResponse" $ \v ->
-    GqlResponse
-      <$> v .:? "data"
-      <*> v .:? "errors"
-
-toComment :: Maybe Text -> GqlComment -> BlogComment
-toComment priorityUser gc = BlogComment
-  { bcAuthor     = maybe "unknown" gaLogin (gcAuthor gc)
-  , bcBody       = gcBody gc
-  , bcCreatedAt  = gcCreatedAt gc
-  , bcIsPriority = case priorityUser of
-      Just pu -> maybe False (\a -> gaLogin a == pu) (gcAuthor gc)
-      Nothing -> False
+toComment :: Maybe Text -> Gql.GqlComment -> BlogComment
+toComment priorityUser gqlComment = BlogComment
+  { author     = maybe "unknown" Gql.login (Gql.author gqlComment)
+  , body       = Gql.body gqlComment
+  , createdAt  = Gql.createdAt gqlComment
+  , isPriority = case priorityUser of
+      Just priorityLogin -> maybe False (\a -> Gql.login a == priorityLogin) (Gql.author gqlComment)
+      Nothing            -> False
   }
 
 buildQuery :: Int -> Int -> Text
@@ -139,23 +56,23 @@ buildQuery maxResults maxComments =
     <> T.pack (show maxComments)
     <> ") { nodes { body, author { login }, createdAt } } } } } }"
 
-searchDiscussions :: Manager -> Text -> Text -> Int -> Int -> IO [GqlDiscussion]
+searchDiscussions :: Manager -> Text -> Text -> Int -> Int -> IO [Gql.GqlDiscussion]
 searchDiscussions manager token searchQuery maxResults maxComments = do
-  initReq <- parseRequest graphqlEndpoint
-  let body = encode $ object
+  parsedRequest <- parseRequest graphqlEndpoint
+  let requestBody = encode $ object
         [ "query" .= buildQuery maxResults maxComments
         , "variables" .= object [ "searchQuery" .= searchQuery ]
         ]
-  let httpReq = initReq
+  let request = parsedRequest
         { method = "POST"
-        , requestBody = RequestBodyLBS body
+        , requestBody = RequestBodyLBS requestBody
         , requestHeaders =
             [ ("Authorization", "Bearer " <> TE.encodeUtf8 token)
             , ("Content-Type", "application/json")
             , ("User-Agent", "obsidian-github-publisher-sync")
             ]
         }
-  response <- httpLbs httpReq manager
+  response <- httpLbs request manager
   let status = statusCode $ responseStatus response
   case status of
     200 ->
@@ -163,40 +80,40 @@ searchDiscussions manager token searchQuery maxResults maxComments = do
         Left err -> do
           putStrLn $ "GraphQL parse error: " <> err
           pure []
-        Right gqlResp ->
-          case grErrors gqlResp of
+        Right gqlResponse ->
+          case Gql.responseErrors gqlResponse of
             Just errs -> do
-              putStrLn $ "GraphQL errors: " <> show (fmap geMessage errs)
+              putStrLn $ "GraphQL errors: " <> show (fmap Gql.message errs)
               pure []
             Nothing ->
-              pure $ maybe [] (gsnNodes . gsdSearch) (grData gqlResp)
+              pure $ maybe [] (Gql.discussions . Gql.searchNodes) (Gql.responseData gqlResponse)
     _ -> do
       putStrLn $ "GraphQL HTTP error: " <> show status
       pure []
 
 fetchGiscusComments :: Manager -> Text -> Maybe Text -> IO [BlogComment]
 fetchGiscusComments manager pathname priorityUser = do
-  mToken <- lookupEnv "GITHUB_TOKEN"
-  case mToken of
+  maybeGithubToken <- lookupEnv "GITHUB_TOKEN"
+  case maybeGithubToken of
     Nothing -> do
       putStrLn "skip_giscus: no GITHUB_TOKEN"
       pure []
     Just token -> do
       let searchQuery = "repo:" <> giscusRepo <> " in:title \"" <> pathname <> "\""
-      discussions <- searchDiscussions manager (T.pack token) searchQuery 1 100
-      pure $ case discussions of
+      foundDiscussions <- searchDiscussions manager (T.pack token) searchQuery 1 100
+      pure $ case foundDiscussions of
         []    -> []
-        (d:_) -> fmap (toComment priorityUser) (gcnNodes $ gdComments d)
+        (d:_) -> fmap (toComment priorityUser) (Gql.comments $ Gql.commentsPage d)
 
 fetchAllSeriesComments :: Manager -> Text -> Maybe Text -> IO [BlogComment]
 fetchAllSeriesComments manager seriesId priorityUser = do
-  mToken <- lookupEnv "GITHUB_TOKEN"
-  case mToken of
+  maybeGithubToken <- lookupEnv "GITHUB_TOKEN"
+  case maybeGithubToken of
     Nothing -> do
       putStrLn "skip_giscus: no GITHUB_TOKEN"
       pure []
     Just token -> do
       let searchQuery = "repo:" <> giscusRepo <> " in:title \"" <> seriesId <> "/\""
-      discussions <- searchDiscussions manager (T.pack token) searchQuery 50 50
-      let allComments = concatMap (fmap (toComment priorityUser) . gcnNodes . gdComments) discussions
-      pure $ sortOn (Down . bcCreatedAt) allComments
+      foundDiscussions <- searchDiscussions manager (T.pack token) searchQuery 50 50
+      let allComments = concatMap (fmap (toComment priorityUser) . Gql.comments . Gql.commentsPage) foundDiscussions
+      pure $ sortOn (Down . createdAt) allComments

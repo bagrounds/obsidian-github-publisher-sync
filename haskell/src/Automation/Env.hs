@@ -40,12 +40,12 @@ data EnvironmentConfig = EnvironmentConfig
 
 isPlatformDisabled :: String -> IO Bool
 isPlatformDisabled envVar = do
-  mValue <- lookupEnv envVar
-  pure $ isPlatformDisabledValue (fmap T.pack mValue)
+  maybeValue <- lookupEnv envVar
+  pure $ isPlatformDisabledValue (fmap T.pack maybeValue)
 
 isPlatformDisabledValue :: Maybe Text -> Bool
-isPlatformDisabledValue mValue =
-  fmap (T.strip . T.toLower) mValue `elem` [Just "true", Just "1", Just "yes"]
+isPlatformDisabledValue maybeValue =
+  fmap (T.strip . T.toLower) maybeValue `elem` [Just "true", Just "1", Just "yes"]
 
 yesterdayDate :: UTCTime -> Day
 yesterdayDate (UTCTime day _) = addDays (-1) day
@@ -140,7 +140,7 @@ getObsidianCreds = do
   vaultName <- requireEnv "OBSIDIAN_VAULT_NAME"
   vaultPassword <- lookupEnvText "OBSIDIAN_VAULT_PASSWORD"
   pure ObsidianCredentials
-    { ocAuthToken = Secret authToken
-    , ocVaultName = vaultName
-    , ocVaultPassword = fmap Secret vaultPassword
+    { authToken     = Secret authToken
+    , vaultName     = vaultName
+    , vaultPassword = fmap Secret vaultPassword
     }

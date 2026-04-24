@@ -13,7 +13,7 @@ link_analysis_version: "2"
 link_analysis_time: 2026-04-23T00:00:00Z
 force_analyze_links: false
 ---
-[Home](../index.md) > [📰 The Noise](./index.md) | [⏮️](./2026-04-22-the-dual-engine-of-progress-and-conflict.md) [⏭️](./2026-04-24-navigating-the-currents-of-change.md)  
+[Home](../index.md) > [📰 The Noise](./index.md) | [⏮️](./2026-04-22-the-dual-engine-of-progress-and-conflict.md) [⏭️](./2026-04-24-currents-of-conflict-waves-of-innovation.md)  
 # 2026-04-23 | 📰 Global Currents, Echoing Futures 📰  
 ![the-noise-2026-04-23-global-currents-echoing-futures](../the-noise-2026-04-23-global-currents-echoing-futures.jpg)  
   

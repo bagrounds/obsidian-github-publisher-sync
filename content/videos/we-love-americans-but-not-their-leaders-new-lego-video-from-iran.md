@@ -9,6 +9,10 @@ Platform:
 Channel: Sophmara
 tags:
 youtube: https://youtu.be/2R7xUxtd5Bk
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_version: "2"
+link_analysis_time: 2026-04-25T00:00:00Z
+force_analyze_links: false
 ---
 [Home](../index.md) > [Videos](./index.md)  
 # ❤️🚫🏛️🇮🇷🧱🎥 We Love Americans - But Not Their Leaders | New LEGO Video from IRAN  
@@ -32,7 +36,7 @@ youtube: https://youtu.be/2R7xUxtd5Bk
   
 * 🏛️ The perspective that political elites are disconnected from the citizenry aligns with the concept of the Deep State or Power Elite, a theory explored in The Power Elite by C. Wright Mills, published by Oxford University Press.  
 * 📰 While the video suggests a unified hidden agenda between parties, many political scientists argue that significant policy differences exist on climate, healthcare, and social rights, as detailed in Polarized by James Campbell, published by Princeton University Press.  
-* 🛡️ The claim that the media manufactures enemies for political gain is a central theme of Manufacturing Consent by Edward S. Herman and Noam Chomsky, published by Pantheon Books.  
+* 🛡️ The claim that the media manufactures enemies for political gain is a central theme of [🏭🫡 Manufacturing Consent: The Political Economy of the Mass Media](../books/manufacturing-consent.md) by Edward S. Herman and Noam Chomsky, published by Pantheon Books.  
 * 🔍 Topics to explore for better understanding include the impact of lobbying on legislation and the history of military interventions in the Middle East.  
   
 ## ❓ Frequently Asked Questions (FAQ)  
@@ -60,5 +64,5 @@ youtube: https://youtu.be/2R7xUxtd5Bk
 * 🗳️ Why Liberalism Works by Deirdre Nansen McCloskey, Yale University Press, defends the current liberal democratic order and its role in human flourishing.  
   
 ### 🎨 Creatively Related  
-* 🏙️ Brave New World by Aldous Huxley, Chatto & Windus, depicts a society where the population is controlled through pleasure and distraction rather than overt force.  
+* 🏙️ [💊 Brave New World](../books/brave-new-world.md) by Aldous Huxley, Chatto & Windus, depicts a society where the population is controlled through pleasure and distraction rather than overt force.  
 * 🚜 Animal Farm by George Orwell, Secker and Warburg, illustrates how revolutionary ideals can be corrupted by a new ruling class that eventually resembles the old.

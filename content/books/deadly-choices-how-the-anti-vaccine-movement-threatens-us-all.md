@@ -10,9 +10,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-18T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-04-25T20:21:59Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A stylized, high-contrast illustration featuring a central, glowing glass vial representing a vaccine, emitting a soft, protective blue light. Surrounding the vial, a dark, chaotic swirling mist of jagged gray shapes and fragmented geometric patterns represents the noise of misinformation. The composition is split by a sharp, clean diagonal line that separates the dark, distorted background from a calm, structured grid pattern on the other side, symbolizing the restoration of order through scientific evidence. The color palette uses deep navy and slate grays for the shadows, contrasted with vibrant, clinical cyan and bright white highlights to draw the eye toward the center. The overall aesthetic is modern, clean, and metaphorical, emphasizing the clarity of science cutting through the confusion of fear.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 💀🚫🦠 Deadly Choices: How the Anti-Vaccine Movement Threatens Us All  
+![books-deadly-choices-how-the-anti-vaccine-movement-threatens-us-all](../books-deadly-choices-how-the-anti-vaccine-movement-threatens-us-all.jpg)  
 [🛒 Deadly Choices: How the Anti-Vaccine Movement Threatens Us All. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3L27vHh)  
   
 💉🔬 A compelling and meticulously researched examination of the anti-vaccine movement, dissecting its historical roots, its leaders, the pseudoscience it promotes, and the tangible public health dangers it poses to communities globally, advocating for scientific literacy and evidence-based decision-making.  

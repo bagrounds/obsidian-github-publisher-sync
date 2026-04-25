@@ -12,9 +12,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-16T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-04-25T11:25:04Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A central glowing lightbulb, symbolizing an idea, anchors the bottom of the image. From it, a vibrant, organic network of interconnected dots and flowing lines spreads upwards and outwards, filling the frame. Some dots subtly resemble simplified human heads or abstract figures, representing individuals. Dynamic, arcing lines connect these points, conveying movement and the rapid spread of information. The network is alive with subtle energy, perhaps with a slight glow along the paths, suggesting influence and connection. The color palette is bright and inviting, featuring warm yellows radiating from the lightbulb, transitioning into energetic blues, greens, and purples for the expanding network. The overall impression is one of dynamic growth and interconnectedness.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🦠 Contagious: Why Things Catch On  
+![books-contagious](../books-contagious.jpg)  
 [🛒 Contagious: Why Things Catch On. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3INeYZQ)  
   
 ## 📚 Book Report: 🦠 Contagious: Why Things Catch On by Jonah Berger  

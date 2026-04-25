@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-04-24T15:35:15-07:00
+updated: 2026-04-24T22:57:44-07:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -15,7 +15,7 @@ updated: 2026-04-24T15:35:15-07:00
 💬 Comment on any page with your GitHub account.  
   
 ## [🪞 Reflections](./reflections/index.md) ~ Blog (526)  
-- [2026-04-24](./reflections/2026-04-24.md)  
+- [2026-04-24 | 📅 Weekly 🤖 AI 🇺🇸 Trump 🗣️ Planning 💰 One 🏆 Wins 🌟 Hope 🌊 Conflict 🐔 Patience 🤖 Correction 🤖 Improving 🏛️ Public 🔀 Care. 📉📺🌟📰🐔🤖🏛️🔀🔄🤖🐲](./reflections/2026-04-24.md)  
 - [2026-04-23 | 🗓️ Unpresidented 💻 Framework 🤖 Correction 🐔 Pantry 🌟 Compassion 🏛️ Knowledge 📰 Futures 🧹 Refactor 🔀 Architectures 📺🤖🐔🌟🏛️📰🔀🔄🤖🐲](./reflections/2026-04-23.md)  
 - [2026-04-22 | 🗓️ Today 🧠 Brain 📈 Recession 🏛️ White 💡 Learned 🤖 AI 🤖 AI ✨ Compassion 📰 Conflict 🤖 Agency 🐔 Patience 🏛️ Well-being 🔀 Friction 📺🌟📰🤖🐔🏛️🔀🔄🤖🐲](./reflections/2026-04-22.md)  
 - [2026-04-21 | 🥳 5 🏆 Winner 🗣️ Show 🚀 Launch 🌟 Shine 📰 Progress 🐔 Eggs 🤖 Entropy 🏛️ Web 🔀 Decay 📺🌟📰🐔🤖🏛️🔀🤖🐲](./reflections/2026-04-21.md)  
@@ -63,25 +63,25 @@ updated: 2026-04-24T15:35:15-07:00
 - [2026-04-21 | 🌟 Health, Environment, and Diplomacy Shine Bright 🌟](./positivity-bias/2026-04-21-health-environment-and-diplomacy-shine-bright.md)  
   
   
-## [🔀 Convergence](./convergence/index.md) (10)  
+## [🔀 Convergence](./convergence/index.md) (11)  
+- [2026-04-24 | 🔀 🪞 The Enduring Architecture of Care: Sustaining Agency and Abundance 🔀](./convergence/2026-04-24-the-enduring-architecture-of-care-sustaining-agency-and-abundance.md)  
 - [2026-04-23 | 🔀 🪞 The Sustaining Architectures of Agency and Abundance 🔀](./convergence/2026-04-23-the-sustaining-architectures-of-agency-and-abundance.md)  
 - [2026-04-22 | 🔀 ⚖️ The Sovereignty of Thought: Navigating Correction, Care, and Creative Friction 🔀](./convergence/2026-04-22-the-sovereignty-of-thought-navigating-correction-care-and-creative-friction.md)  
 - [2026-04-21 | 🔀 🪞 The Enduring Battle Against Decay: From Digital Entropy to Domestic Hearth 🔀](./convergence/2026-04-21-the-enduring-battle-against-decay-from-digital-entropy-to-domestic-hearth.md)  
-- [2026-04-20 | 🔀 The Echo Chamber and the Architect: Forging Meaning in a World of Competing Systems 🔀](./convergence/2026-04-20-the-echo-chamber-and-the-architect-forging-meaning-in-a-world-of-competing-systems.md)  
   
   
 ## [📚 Books](./books/index.md) (960)  
-- [👤✊ The Power of the Powerless](./books/the-power-of-the-powerless.md)  
-- [🥵🔥💨 Burnout: The Secret to Unlocking the Stress Cycle](./books/burnout-the-secret-to-unlocking-the-stress-cycle.md)  
-- [💔💻 Burn Book: A Tech Love Story](./books/burn-book-a-tech-love-story.md)  
-- [👂📱🐾🌿 The Sounds of Life: How Digital Technology Is Bringing Us Closer to the Worlds of Animals and Plants](./books/the-sounds-of-life-how-digital-technology-is-bringing-us-closer-to-the-worlds-of-animals-and-plants.md)  
+- [📊🫠 Statistics for Dummies](./books/statistics-for-dummies.md)  
+- [🧠🤓📈💡 Head First Statistics: A Brain-Friendly Guide](./books/head-first-statistics.md)  
+- [➕🎲👀👶 Bayes' Theorem Examples: A Visual Introduction For Beginners](./books/bayes-theorem-examples.md)  
+- [🎲🧮🧠🤖 Probabilistic Reasoning in Intelligent Systems: Networks of Plausible Inference](./books/probabilistic-reasoning-in-intelligent-systems.md)  
   
   
 ## [📺 Videos](./videos/index.md) (794)  
-- [🏢♟️🏆 Retired Amazon VP: How Corporate Politics Work And How To Win | Ethan Evans](./videos/retired-amazon-vp-how-corporate-politics-work-and-how-to-win-ethan-evans.md)  
-- [⭐1️⃣💰 If You Only Watch One Money Video, Make It This](./videos/if-you-only-watch-one-money-video-make-it-this.md)  
-- [📊📈📉📃👁️ 10 Charts to Understand the 900 Page Budget Bill](./videos/10-charts-to-understand-the-900-page-budget-bill.md)  
-- [💰🔄 Trump’s mega bill ‘hasn’t even cut taxes, it’s redistributed them’ | Justin Wolfers](./videos/trumps-mega-bill-hasnt-even-cut-taxes-its-redistributed-them-justin-wolfers.md)  
+- [🌱📈✅➡️🔄 A healthy economy should be designed to thrive, not grow | Kate Raworth](./videos/a-healthy-economy-should-be-designed-to-thrive-not-grow-kate-raworth.md)  
+- [🏛️📜💰🚨 Amy Walter and Jasmine Wright on how Senate Republicans feel about Trump's big bill](./videos/amy-walter-and-jasmine-wright-on-how-senate-republicans-feel-about-trumps-big-bill.md)  
+- [👹👶🏼💸➡️👴🏻💰 What Trump’s ‘Big, Beautiful Bill’ Is Really Doing (Part 2) | The Ezra Klein Show](./videos/what-trumps-big-beautiful-bill-is-really-doing-part-2-the-ezra-klein-show.md)  
+- [💰💣 What Trump’s ‘Big, Beautiful Bill’ Is Really Doing (Part 1) | The Ezra Klein Show](./videos/what-trumps-big-beautiful-bill-is-really-doing-part-1-the-ezra-klein-show.md)  
   
   
 ## [🌌 Topics](./topics/index.md) (91)  
@@ -92,10 +92,10 @@ updated: 2026-04-24T15:35:15-07:00
   
   
 ## [📄  Articles](./articles/index.md) (84)  
+- [⏳🏛️💥🗳️📉 Trump is dismantling democracy at unprecedented speed, global report finds](./articles/trump-is-dismantling-democracy-at-unprecedented-speed-global-report-finds.md)  
+- [💻💰🤝👹🇺🇸 Tech moguls Altman, Bezos and Zuckerberg donate to Trump's inauguration fund](./articles/tech-moguls-altman-bezos-and-zuckerberg-donate-to-trumps-inauguration-fund.md)  
 - [🇺🇸⛰️☀️💉 Washington, Oregon and California will issue their own vaccine recommendations, separate from CDC](./articles/washington-oregon-and-california-will-issue-their-own-vaccine-recommendations-separate-from-cdc.md)  
 - [🧠📈🔑 Cognitive load is what matters](./articles/cognitive-load-is-what-matters.md)  
-- [🤔⚙️🧩🏗️💡 Everything I know about good system design](./articles/everything-i-know-about-good-system-design.md)  
-- [❓📈🤦 Failing to Understand the Exponential, Again](./articles/failing-to-understand-the-exponential-again.md)  
   
   
 ## [🤖💬 Bot Chats](./bot-chats/index.md) (49)  

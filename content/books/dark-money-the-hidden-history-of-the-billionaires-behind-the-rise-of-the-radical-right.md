@@ -9,9 +9,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-15T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-04-25T19:28:23Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A conceptual illustration featuring a complex, translucent web of thin, golden threads spreading across a deep navy-blue background. At the center of the web, several interlocking, semi-transparent gear-like shapes subtly form the silhouette of a grand, neoclassical government building. Small, glowing points of light are scattered throughout the web like distant stars, symbolizing hidden financial connections. The lighting is moody and cinematic, with deep shadows and sharp, high-contrast highlights that evoke a sense of secrecy, surveillance, and systemic influence. The overall aesthetic is sophisticated, minimalist, and ominous, emphasizing the theme of unseen power structures operating behind the scenes of the political landscape.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 💰🤫 Dark Money: The Hidden History of the Billionaires Behind the Rise of the Radical Right  
+![books-dark-money-the-hidden-history-of-the-billionaires-behind-the-rise-of-the-radical-right](../books-dark-money-the-hidden-history-of-the-billionaires-behind-the-rise-of-the-radical-right.jpg)  
 [🛒 Dark Money: The Hidden History of the Billionaires Behind the Rise of the Radical Right. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/440bbie)  
   
 ## 📚 Book Report: 💰 Dark Money: The Hidden History of the Billionaires Behind the Rise of the Radical Right  

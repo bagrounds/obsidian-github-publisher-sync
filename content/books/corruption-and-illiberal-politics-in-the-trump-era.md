@@ -8,11 +8,16 @@ Author:
 tags:
 affiliate link: https://amzn.to/4kIIhtz
 link_analysis_model: gemini-3.1-flash-lite-preview
-link_analysis_time: 2026-04-09T00:00:00Z
+link_analysis_time: 2026-04-25T00:00:00Z
 force_analyze_links: false
+link_analysis_version: "2"
+image_date: 2026-04-25T13:41:50Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A surreal, high-contrast illustration depicting a crumbling marble neoclassical pillar entwined with golden, snake-like vines. The base of the pillar is cracked, revealing dark, shadowy gears grinding within the stone. In the background, a distorted, stylized American flag hangs limp and gray against a stormy, deep indigo sky. Scattered around the base are fragmented golden coins and shattered glass, symbolizing the erosion of institutional integrity. The lighting is dramatic and cinematic, with a single sharp spotlight highlighting the decay of the marble, casting long, distorted shadows that stretch across a barren, cracked earth landscape. The composition is balanced but unsettling, emphasizing the tension between classical democratic ideals and the chaotic, corrosive nature of systemic corruption.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 💰👑👎🇺🇸 Corruption and Illiberal Politics in the Trump Era  
+![books-corruption-and-illiberal-politics-in-the-trump-era](../books-corruption-and-illiberal-politics-in-the-trump-era.jpg)  
 [🛒 Corruption and Illiberal Politics in the Trump Era. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4kIIhtz)  
   
 ## 🤖 AI Summary  

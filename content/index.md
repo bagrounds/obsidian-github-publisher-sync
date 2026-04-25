@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-04-25T07:38:12-07:00
+updated: 2026-04-25T07:52:59-07:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -77,11 +77,11 @@ updated: 2026-04-25T07:38:12-07:00
 - [💰👑👎🇺🇸 Corruption and Illiberal Politics in the Trump Era](./books/corruption-and-illiberal-politics-in-the-trump-era.md)  
   
   
-## [📺 Videos](./videos/index.md) (795)  
+## [📺 Videos](./videos/index.md) (796)  
+- [📰💡 Today in Politics | Explainer](./videos/today-in-politics-explainer-april-23-2026.md)  
 - [🚫✍️🚀 No one is writing Project 2029. So I started.](./videos/no-one-is-writing-project-2029-so-i-started.md)  
 - [🛂🇺🇸🤝 ICE & DHS: Last Week Tonight with John Oliver (HBO)](./videos/ice-dhs-last-week-tonight-with-john-oliver-hbo.md)  
 - [🦠🤒🏥 Snohomish County sees measles outbreak](./videos/snohomish-county-sees-measles-outbreak.md)  
-- [❤️🧠👨‍👩‍👧‍👦 The crucial emotional skill most adults were never taught | Becky Kennedy](./videos/the-crucial-emotional-skill-most-adults-were-never-taught-becky-kennedy.md)  
   
   
 ## [🌌 Topics](./topics/index.md) (91)  

@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-04-25T15:09:59-07:00
+updated: 2026-04-25T15:39:32-07:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -71,17 +71,17 @@ updated: 2026-04-25T15:09:59-07:00
   
   
 ## [📚 Books](./books/index.md) (960)  
+- [📱📢🤖 Computational Propaganda: Political Parties, Politicians, and Political Manipulation on Social Media](./books/computational-propaganda-political-parties-politicians-and-political-manipulation-on-social-media.md)  
+- [🐈‍⬛❓ Decoding Your Cat: The Ultimate Experts Explain Common Cat Behaviors and Reveal How to Prevent or Change Unwanted Ones](./books/decoding-your-cat-the-ultimate-experts-explain-common-cat-behaviors-and-reveal-how-to-prevent-or-change-unwanted-ones.md)  
+- [🗑️⏱️ Decluttering at the Speed of Life: Winning Your Never-Ending Battle with Stuff](./books/decluttering-at-the-speed-of-life-winning-your-never-ending-battle-with-stuff.md)  
 - [💰⚕️ Making Them Pay: How to Get the Most from Health Insurance and Managed Care](./books/making-them-pay-how-to-get-the-most-from-health-insurance-and-managed-care.md)  
-- [🙅🏼‍♀️🧾🏥⚔️ Never Pay the First Bill: And Other Ways to Fight the Health Care System and Win](./books/never-pay-the-first-bill-and-other-ways-to-fight-the-health-care-system-and-win.md)  
-- [🧑‍⚕️🗣️ Patient Advocacy for Health Care Quality: Strategies for Achieving Patient-Centered Care](./books/patient-advocacy-for-health-care-quality-strategies-for-achieving-patient-centered-care.md)  
-- [⚕️💸 Health Insurance in America: A Consumer's Guide](./books/health-insurance-in-america-a-consumers-guide.md)  
   
   
-## [📺 Videos](./videos/index.md) (801)  
-- [🎷🎶🗳️ NEW JAZZ HIT - It's Cause the Midterms](./videos/new-jazz-hit-its-cause-the-midterms.md)  
-- [❤️🚫🏛️🇮🇷🧱🎥 We Love Americans - But Not Their Leaders | New LEGO Video from IRAN](./videos/we-love-americans-but-not-their-leaders-new-lego-video-from-iran.md)  
-- [💨🏠⚡🚫❓ This Chimney Will Cool Your Entire Home WITHOUT Electricity. Why Did The Energy Industry Hide It?](./videos/this-chimney-will-cool-your-entire-home-without-electricity-why-did-the-energy-industry-hide-it.md)  
-- [💰➡️🪖 Why It Matters That Trump Rerouted Money to Pay the Troops | Explainer](./videos/why-it-matters-that-trump-rerouted-money-to-pay-the-troops-explainer.md)  
+## [📺 Videos](./videos/index.md) (802)  
+- [👴📚⚙️💻 75 Year of Learning to Engineer Software - Silvio Meira - ICSE 2026 keynote](./videos/75-year-of-learning-to-engineer-software-silvio-meira-icse-2026-keynote.md)  
+- [😇🧠⚖️ The Righteous Mind by Jonathan Haidt (BOOK INSIGHTS)](./videos/the-righteous-mind-by-jonathan-haidt-book-insights.md)  
+- [😇🧠⚖️ The Righteous Mind | Jonathan Haidt | Talks at Google](./videos/the-righteous-mind-jonathan-haidt-talks-at-google.md)  
+- [🇺🇸🗣️❓ The State of the United States: A Conversation with Jack Smith](./videos/the-state-of-the-united-states-a-conversation-with-jack-smith.md)  
   
   
 ## [🌌 Topics](./topics/index.md) (91)  

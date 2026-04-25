@@ -10,9 +10,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-17T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-04-25T22:19:39Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A bright, minimalist living room scene captured from a high angle. In the center, a single, organized wooden shelf sits against a clean white wall, holding only a few intentional objects. Beside it, a soft-focus blurred area suggests the transition from a cluttered state to a simplified one. The color palette is warm and airy, featuring soft sunlight streaming through a nearby window, casting gentle shadows. A small, open cardboard box sits on the floor nearby, representing the process of sorting. The overall aesthetic is calm, breathable, and aspirational, emphasizing the container concept with plenty of negative space to convey a sense of peace and manageable order.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🗑️⏱️ Decluttering at the Speed of Life: Winning Your Never-Ending Battle with Stuff  
+![books-decluttering-at-the-speed-of-life-winning-your-never-ending-battle-with-stuff](../books-decluttering-at-the-speed-of-life-winning-your-never-ending-battle-with-stuff.jpg)  
 [🛒 Decluttering at the Speed of Life: Winning Your Never-Ending Battle with Stuff. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4oZI2wu)  
   
 🏠✨ A practical, shame-free approach to managing clutter by focusing on small, consistent actions and embracing the concept that done is better than perfect for sustainable results.  

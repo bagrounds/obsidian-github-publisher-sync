@@ -9,9 +9,13 @@ affiliate link: https://amzn.to/3KULv0G
 link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-04T00:00:00Z
 force_analyze_links: false
+image_date: 2026-04-25T09:26:20Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A stylized smartphone screen dominates the center, displaying a fragmented, shifting news feed with various abstract symbols. From behind the screen, glowing lines, like data streams or neural networks, extend outwards, subtly wrapping around and influencing abstract, silhouetted figures of people. One line subtly morphs into a puppet string, gently tugging at a figures head, while a discreet robotic arm or gear mechanism peeks from behind the phone, hinting at automated influence. The background is a gradient of cool blues and purples, with small, contrasting flashes of orange or red within the data lines, symbolizing deception. The overall impression is one of subtle, pervasive digital manipulation.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 📱📢🤖 Computational Propaganda: Political Parties, Politicians, and Political Manipulation on Social Media  
+![books-computational-propaganda-political-parties-politicians-and-political-manipulation-on-social-media](../books-computational-propaganda-political-parties-politicians-and-political-manipulation-on-social-media.jpg)  
 [🛒 Computational Propaganda: Political Parties, Politicians, and Political Manipulation on Social Media. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3KULv0G)  
   
 💻 Algorithms and automation, orchestrated by humans and bots, are weaponizing social media to actively manipulate public opinion and distort democratic processes globally, differing significantly from traditional propaganda by mimicking real people at scale to spread misleading information.  

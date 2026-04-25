@@ -8,11 +8,12 @@ Author:
 tags:
 updated: 2026-03-22T04:39:07.379Z
 force_analyze_links: false
-link_analysis_time: 2026-03-22T06:03:01.901Z
+link_analysis_time: 2026-04-24T00:00:00Z
 link_analysis_model: gemini-3.1-flash-lite-preview
 image_date: 2026-04-14T12:25:08Z
 image_model: "@cf/black-forest-labs/flux-1-schnell"
 image_prompt: An illustration of a grand, classical dome or capitol building, heavily cracked and visibly crumbling at an unprecedented speed. Jagged fissures spread rapidly across its facade, with some pieces already detaching and falling. A dark, stylized silhouette of a figure, reminiscent of Donald Trump, stands prominently in the foreground, casting an ominous, long shadow over the decaying structure. Subtle, glowing lines emanate from the cracks, symbolizing the destructive force. The background features a faint, abstract pattern resembling a downward-trending graph, hinting at the global report and rapid decline. The color palette is stark, with dramatic contrasts between light and shadow.
+link_analysis_version: "2"
 ---
 [Home](../index.md) > [Articles](./index.md)  
 # [⏳🏛️💥🗳️📉 Trump is dismantling democracy at unprecedented speed, global report finds](https://www.npr.org/2026/03/20/nx-s1-5754021/trump-democracy-autocracy-dictatorship-reports)  

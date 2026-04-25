@@ -9,6 +9,10 @@ Platform:
 Channel: The Daily Show
 tags:
 youtube: https://youtu.be/OiPqXDNBrjo
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_version: "2"
+link_analysis_time: 2026-04-25T00:00:00Z
+force_analyze_links: false
 ---
 [Home](../index.md) > [Videos](./index.md)  
 # 📺📰♟️🇮🇷🏛️🥳🚨 Jon on Trump's «Art of the Deal» in Iran & Kosta on Kash Patel's Partying Problem | The Daily Show  
@@ -60,7 +64,7 @@ youtube: https://youtu.be/OiPqXDNBrjo
   
 ### ↔️ Similar  
 * 🤝 The Art of the Deal by Donald J. Trump explores the high-stakes negotiation tactics and personal philosophy mentioned in the video.  
-* 🎖️ How to Change Your Mind by Michael Pollan examines the history and medical potential of psychedelic substances like those being fast-tracked for veterans.  
+* 🎖️ [🧠🍄 How to Change Your Mind: What the New Science of Psychedelics Teaches Us About Consciousness, Dying, Addiction, Depression, and Transcendence](../books/how-to-change-your-mind-what-the-new-science-of-psychedelics-teaches-us-about-consciousness-dying-addiction-depression-and-transcendence.md) by Michael Pollan examines the history and medical potential of psychedelic substances like those being fast-tracked for veterans.  
   
 ### 🆚 Contrasting  
 * 🕊️ Getting to Yes by Roger Fisher and William Ury advocates for principled negotiation based on merits rather than the aggressive posturing described.  

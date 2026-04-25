@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-04-25T14:53:55-07:00
+updated: 2026-04-25T15:09:59-07:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -77,11 +77,11 @@ updated: 2026-04-25T14:53:55-07:00
 - [⚕️💸 Health Insurance in America: A Consumer's Guide](./books/health-insurance-in-america-a-consumers-guide.md)  
   
   
-## [📺 Videos](./videos/index.md) (800)  
+## [📺 Videos](./videos/index.md) (801)  
+- [🎷🎶🗳️ NEW JAZZ HIT - It's Cause the Midterms](./videos/new-jazz-hit-its-cause-the-midterms.md)  
 - [❤️🚫🏛️🇮🇷🧱🎥 We Love Americans - But Not Their Leaders | New LEGO Video from IRAN](./videos/we-love-americans-but-not-their-leaders-new-lego-video-from-iran.md)  
 - [💨🏠⚡🚫❓ This Chimney Will Cool Your Entire Home WITHOUT Electricity. Why Did The Energy Industry Hide It?](./videos/this-chimney-will-cool-your-entire-home-without-electricity-why-did-the-energy-industry-hide-it.md)  
 - [💰➡️🪖 Why It Matters That Trump Rerouted Money to Pay the Troops | Explainer](./videos/why-it-matters-that-trump-rerouted-money-to-pay-the-troops-explainer.md)  
-- [🏆✍️💡 Pulitzer Prize-Winner Explains His Writing Process - Richard Powers](./videos/pulitzer-prize-winner-explains-his-writing-process-richard-powers.md)  
   
   
 ## [🌌 Topics](./topics/index.md) (91)  

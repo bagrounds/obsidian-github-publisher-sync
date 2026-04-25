@@ -11,9 +11,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_version: "2"
 link_analysis_time: 2026-04-17T00:00:00Z
 force_analyze_links: false
+image_date: 2026-04-25T05:01:32Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A wide, cinematic shot of a vibrant, alien oceanic world viewed from the interior of a sleek, high-tech spaceship observation deck. Outside, massive, bioluminescent coral-like structures rise from a deep indigo sea, illuminated by the soft glow of a distant, twin-star system. Floating in the water are complex, translucent geometric entities—representing non-human consciousness—that emit rhythmic, pulsing ribbons of neon light. The interior foreground features metallic, modular instrumentation with soft, cool-toned ambient lighting, contrasting with the chaotic, organic majesty of the alien ecosystem outside. The atmosphere is vast, lonely, and profoundly scientific, emphasizing the theme of first contact between human technology and radically alien biology.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🏚️👶 Children of Ruin  
+![books-children-of-ruin](../books-children-of-ruin.jpg)  
 [🛒 Children of Ruin. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4cjR2Jv)  
   
 ## 🤖 AI Summary  

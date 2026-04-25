@@ -13,7 +13,7 @@ link_analysis_version: "2"
 link_analysis_time: 2026-04-23T00:00:00Z
 force_analyze_links: false
 ---
-[Home](../index.md) > [🔀 Convergence](./index.md) | [⏮️](./2026-04-22-the-sovereignty-of-thought-navigating-correction-care-and-creative-friction.md)  
+[Home](../index.md) > [🔀 Convergence](./index.md) | [⏮️](./2026-04-22-the-sovereignty-of-thought-navigating-correction-care-and-creative-friction.md) [⏭️](./2026-04-24-the-enduring-architecture-of-care-sustaining-agency-and-abundance.md)  
 # 2026-04-23 | 🔀 🪞 The Sustaining Architectures of Agency and Abundance 🔀  
 ![convergence-2026-04-23-the-sustaining-architectures-of-agency-and-abundance](../convergence-2026-04-23-the-sustaining-architectures-of-agency-and-abundance.jpg)  
   

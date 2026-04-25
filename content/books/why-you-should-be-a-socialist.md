@@ -7,8 +7,9 @@ share: true
 affiliate link: https://amzn.to/461CTOe
 CTA: Demand equality.
 link_analysis_model: gemini-3.1-flash-lite-preview
-link_analysis_time: 2026-04-07T00:00:00Z
+link_analysis_time: 2026-04-25T00:00:00Z
 force_analyze_links: false
+link_analysis_version: "2"
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🫵🤝🌍🏛️ Why You Should Be a Socialist  
@@ -62,7 +63,7 @@ Robinson's approach is characterized by its direct address to skeptics 🗣️ a
 ### 🎨 Creatively Related Books (Exploring Relevant Themes)  
   
 * **[👁️ Nineteen Eighty-Four](./1984.md)** by George Orwell: A dystopian novel 🌃 exploring totalitarianism ⛓️ and the dangers of unchecked state power 👑, often interpreted as a critique of authoritarian socialism.  
-* 📕 **Brave New World** by Aldous Huxley: Another dystopian novel 🌃 examining social control, technological manipulation 🤖, and the loss of individuality 👤 in a seemingly perfect society.  
+* 📕 **[💊 Brave New World](./brave-new-world.md)** by Aldous Huxley: Another dystopian novel 🌃 examining social control, technological manipulation 🤖, and the loss of individuality 👤 in a seemingly perfect society.  
 * 📕 **Looking Backward** by Edward Bellamy: A utopian novel 🌈 from the 19th century depicting a future socialist state that has eradicated social ills 🚫.  
 * **[🍇😡 The Grapes of Wrath](./the-grapes-of-wrath.md)** by John Steinbeck: A novel depicting the struggles of a poor farming family 🧑‍🌾 during the Great Depression 📉, highlighting economic hardship 💔 and social inequality 💸.  
 * 🌍 **Slouching Towards Utopia: An Economic History of the Twentieth Century** by J. Bradford DeLong: An economic history exploring the "long 20th century" through the lenses of technological change ⚙️, markets 📈, and government intervention 🏛️, often referencing figures like Hayek and Polanyi.  

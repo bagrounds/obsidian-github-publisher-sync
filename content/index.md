@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-04-24T22:57:44-07:00
+updated: 2026-04-25T07:18:38-07:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -14,11 +14,11 @@ updated: 2026-04-24T22:57:44-07:00
 🔊 Listen to any page with built in audio control.  
 💬 Comment on any page with your GitHub account.  
   
-## [🪞 Reflections](./reflections/index.md) ~ Blog (526)  
+## [🪞 Reflections](./reflections/index.md) ~ Blog (527)  
+- [2026-04-25](./reflections/2026-04-25.md)  
 - [2026-04-24 | 📅 Weekly 🤖 AI 🇺🇸 Trump 🗣️ Planning 💰 One 🏆 Wins 🌟 Hope 🌊 Conflict 🐔 Patience 🤖 Correction 🤖 Improving 🏛️ Public 🔀 Care. 📉📺🌟📰🐔🤖🏛️🔀🔄🤖🐲](./reflections/2026-04-24.md)  
 - [2026-04-23 | 🗓️ Unpresidented 💻 Framework 🤖 Correction 🐔 Pantry 🌟 Compassion 🏛️ Knowledge 📰 Futures 🧹 Refactor 🔀 Architectures 📺🤖🐔🌟🏛️📰🔀🔄🤖🐲](./reflections/2026-04-23.md)  
 - [2026-04-22 | 🗓️ Today 🧠 Brain 📈 Recession 🏛️ White 💡 Learned 🤖 AI 🤖 AI ✨ Compassion 📰 Conflict 🤖 Agency 🐔 Patience 🏛️ Well-being 🔀 Friction 📺🌟📰🤖🐔🏛️🔀🔄🤖🐲](./reflections/2026-04-22.md)  
-- [2026-04-21 | 🥳 5 🏆 Winner 🗣️ Show 🚀 Launch 🌟 Shine 📰 Progress 🐔 Eggs 🤖 Entropy 🏛️ Web 🔀 Decay 📺🌟📰🐔🤖🏛️🔀🤖🐲](./reflections/2026-04-21.md)  
   
   
 ## [🤖 AI Blog](./ai-blog/index.md) (171)  
@@ -49,18 +49,18 @@ updated: 2026-04-24T22:57:44-07:00
 - [2026-04-21 | 🏛️ The Interconnected Web of Well-being 🏛️](./systems-for-public-good/2026-04-21-the-interconnected-web-of-well-being.md)  
   
   
-## [📰 The Noise](./the-noise/index.md) (15)  
+## [📰 The Noise](./the-noise/index.md) (16)  
+- [2026-04-25 | 📰 💥 Echoes of Conflict, Sparks of Discovery 🚀 📰](./the-noise/2026-04-25-echoes-of-conflict-sparks-of-discovery.md)  
 - [2026-04-24 | 📰 🌪️ Currents of Conflict, Waves of Innovation 🌊 📰](./the-noise/2026-04-24-currents-of-conflict-waves-of-innovation.md)  
 - [2026-04-23 | 📰 Global Currents, Echoing Futures 📰](./the-noise/2026-04-23-global-currents-echoing-futures.md)  
 - [2026-04-22 | 📰 The Dual Engine of Progress and Conflict 📰](./the-noise/2026-04-22-the-dual-engine-of-progress-and-conflict.md)  
-- [2026-04-21 | 📰 The Dual Engine of Progress and Conflict 📰](./the-noise/2026-04-21-the-dual-engine-of-progress-and-conflict.md)  
   
   
-## [🌟 Positivity Bias](./positivity-bias/index.md) (14)  
+## [🌟 Positivity Bias](./positivity-bias/index.md) (15)  
+- [2026-04-25 | 🌟 Seeds of Progress: Breakthroughs, Green Shoots, and Global Handshakes 🌟](./positivity-bias/2026-04-25-seeds-of-progress-breakthroughs-green-shoots-and-global-handshakes.md)  
 - [2026-04-24 | 🌟 Horizons of Hope: Healing, Harmony, and a Greener Earth 🌟](./positivity-bias/2026-04-24-horizons-of-hope-healing-harmony-and-a-greener-earth.md)  
 - [2026-04-23 | 🌟 Triumphs of Ingenuity and Compassion 🌟](./positivity-bias/2026-04-23-triumphs-of-ingenuity-and-compassion.md)  
 - [2026-04-22 | 🌟 A World of Innovation and Compassion 🌟](./positivity-bias/2026-04-22-a-world-of-innovation-and-compassion.md)  
-- [2026-04-21 | 🌟 Health, Environment, and Diplomacy Shine Bright 🌟](./positivity-bias/2026-04-21-health-environment-and-diplomacy-shine-bright.md)  
   
   
 ## [🔀 Convergence](./convergence/index.md) (11)  
@@ -71,17 +71,17 @@ updated: 2026-04-24T22:57:44-07:00
   
   
 ## [📚 Books](./books/index.md) (960)  
-- [📊🫠 Statistics for Dummies](./books/statistics-for-dummies.md)  
-- [🧠🤓📈💡 Head First Statistics: A Brain-Friendly Guide](./books/head-first-statistics.md)  
-- [➕🎲👀👶 Bayes' Theorem Examples: A Visual Introduction For Beginners](./books/bayes-theorem-examples.md)  
-- [🎲🧮🧠🤖 Probabilistic Reasoning in Intelligent Systems: Networks of Plausible Inference](./books/probabilistic-reasoning-in-intelligent-systems.md)  
+- [💰👑👎🇺🇸 Corruption and Illiberal Politics in the Trump Era](./books/corruption-and-illiberal-politics-in-the-trump-era.md)  
+- [⛰️⬇️📈 Convex Optimization](./books/convex-optimization.md)  
+- [✍️📚⏱️ How to Write a Book in 30 Days](./books/how-to-write-a-book-in-30-days.md)  
+- [⚙️📈🎯🤖 Control Systems Engineering](./books/control-systems-engineering.md)  
   
   
 ## [📺 Videos](./videos/index.md) (794)  
-- [🌱📈✅➡️🔄 A healthy economy should be designed to thrive, not grow | Kate Raworth](./videos/a-healthy-economy-should-be-designed-to-thrive-not-grow-kate-raworth.md)  
-- [🏛️📜💰🚨 Amy Walter and Jasmine Wright on how Senate Republicans feel about Trump's big bill](./videos/amy-walter-and-jasmine-wright-on-how-senate-republicans-feel-about-trumps-big-bill.md)  
-- [👹👶🏼💸➡️👴🏻💰 What Trump’s ‘Big, Beautiful Bill’ Is Really Doing (Part 2) | The Ezra Klein Show](./videos/what-trumps-big-beautiful-bill-is-really-doing-part-2-the-ezra-klein-show.md)  
-- [💰💣 What Trump’s ‘Big, Beautiful Bill’ Is Really Doing (Part 1) | The Ezra Klein Show](./videos/what-trumps-big-beautiful-bill-is-really-doing-part-1-the-ezra-klein-show.md)  
+- [⚙️❓🤖 Judea Pearl, 2012 ACM A.M. Turing Award Lecture «The Mechanization of Causal Inference»](./videos/judea-pearl-2012-acm-a-m-turing-award-lecture-the-mechanization-of-causal-inference.md)  
+- [Judea Pearl, 2011 ACM Turing Award Recipient](./videos/judea-pearl-2011-acm-turing-award-recipient.md)  
+- [❓🤯😵‍💫 What the Heck Just Happened | 2025-08-30](./videos/what-the-heck-just-happened-2025-08-30.md)  
+- [🇺🇸🗣️🏛️ American Conversations: Senator Sherrod Brown](./videos/american-conversations-senator-sherrod-brown.md)  
   
   
 ## [🌌 Topics](./topics/index.md) (91)  
@@ -92,17 +92,17 @@ updated: 2026-04-24T22:57:44-07:00
   
   
 ## [📄  Articles](./articles/index.md) (84)  
+- [🧠🪜⏱️📈 Hierarchical gradients of multiple timescales in the mammalian forebrain](./articles/hierarchical-gradients-of-multiple-timescales-in-the-mammalian-forebrain.md)  
+- [🧠🤖📈 Scientists just developed a new AI modeled on the human brain — it's outperforming LLMs like ChatGPT at reasoning tasks](./articles/scientists-just-developed-a-new-ai-modeled-on-the-human-brain-its-outperforming-llms-like-chatgpt-at-reasoning-tasks.md)  
 - [⏳🏛️💥🗳️📉 Trump is dismantling democracy at unprecedented speed, global report finds](./articles/trump-is-dismantling-democracy-at-unprecedented-speed-global-report-finds.md)  
 - [💻💰🤝👹🇺🇸 Tech moguls Altman, Bezos and Zuckerberg donate to Trump's inauguration fund](./articles/tech-moguls-altman-bezos-and-zuckerberg-donate-to-trumps-inauguration-fund.md)  
-- [🇺🇸⛰️☀️💉 Washington, Oregon and California will issue their own vaccine recommendations, separate from CDC](./articles/washington-oregon-and-california-will-issue-their-own-vaccine-recommendations-separate-from-cdc.md)  
-- [🧠📈🔑 Cognitive load is what matters](./articles/cognitive-load-is-what-matters.md)  
   
   
 ## [🤖💬 Bot Chats](./bot-chats/index.md) (49)  
+- [🏡🍎🌳📚 Home Fruit Tree Books](./bot-chats/fruit-tree-books.md)  
+- [🧩🏢🤖 Domain Driven AI Product Development](./bot-chats/domain-driven-ai-product-development.md)  
 - [👨‍👧‍👦👔🎁 Fathers Day](./bot-chats/fathers-day.md)  
 - [🧘📚🔍 Mindfulness Book Research](./bot-chats/mindfulness-book-research.md)  
-- [🧭 Managing 🕸️ Complexity 🧠](./bot-chats/managing-complexity.md)  
-- [⛽ Fueling a 👥 Movement to ⚔️ Fight 👹 Tyranny and 💪 Strengthen 🗳️ Democracy](./bot-chats/fueling-a-movement-to-fight-tyranny-and-strengthen-democracy.md)  
   
   
 ## [💾 Software](./software/index.md) (33)  

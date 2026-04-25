@@ -6,9 +6,17 @@ URL: https://bagrounds.org/books/concentration-camps-a-short-history
 share: true
 affiliate link: https://amzn.to/3IePtzH
 CTA: Confront atrocity.
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_time: 2026-04-24T00:00:00Z
+force_analyze_links: false
+link_analysis_version: "2"
+image_date: 2026-04-25T09:26:27Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A stark, desolate landscape under a heavy, overcast sky. A long, winding strand of rusted barbed wire stretches across the foreground, receding into the distance. The wire is the dominant element, symbolizing confinement and suffering. In the mid-ground, faint, indistinct silhouettes of various structures — perhaps a watchtower, a simple tent, and a more industrial building — are subtly integrated into the muted horizon line, hinting at the diverse historical and global contexts of camps without being specific to any one. The overall color palette is somber, featuring deep grays, muted browns, and faded blues.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # ⛓️🏕️📜 Concentration Camps: A Short History  
+![books-concentration-camps-a-short-history](../books-concentration-camps-a-short-history.jpg)  
 [🛒 Concentration Camps: A Short History. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3IePtzH)  
   
 ## 📚 Book Report: 🧱 Concentration Camps: A Short History  

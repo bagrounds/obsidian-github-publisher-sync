@@ -11,6 +11,7 @@ image_date: 2026-04-11T22:55:40Z
 image_model: "@cf/black-forest-labs/flux-1-schnell"
 image_prompt: A warm, sun-dappled backyard scene featuring a healthy, young fruit tree as the focal point. The tree is laden with a mix of ripening apples and pears. Beneath the tree, a small, weathered wooden garden bench holds a neat stack of three vintage-style gardening books. A pair of well-used pruning shears rests on top of the stack. The background shows a soft-focus view of a lush, thriving home garden with raised beds and vibrant foliage, suggesting a peaceful, productive ecosystem. The lighting is golden and inviting, evoking a sense of growth, learning, and the satisfaction of home cultivation. The style is clean, semi-realistic, and serene.
 link_analysis_version: "2"
+updated: 2026-04-25T11:29:16
 ---
 [Home](../index.md) > [Bot Chats](./index.md)  
 # 🏡🍎🌳📚 Home Fruit Tree Books  
@@ -78,4 +79,12 @@ That's a great idea! 👍 Master Gardeners 🧑‍🌾 are volunteers 🙋‍♀
     *   💻 **Search WSU Extension's website:** Use keywords like "fruit trees 🌳," "home orchard 🏡," and "Master Gardener 🧑‍🌾" on the WSU Extension website https://extension.wsu.edu. You might find downloadable guides ⬇️, articles 📰, or even information ℹ️ about local Master Gardener programs 🧑‍🌾 that could offer workshops 🧑‍🏫 or advice 💡.  
     *   📰 **Check for WSU Extension publications:** Many county-level 🗺️ WSU Extension offices also produce their own guides 🗺️ and resources 📚. Searching for "[Your County] WSU Extension fruit trees 🌳" might yield very localized and helpful information ℹ️.  
   
-While finding a widely published book 📚 _solely_ authored by a Master Gardener 🧑‍🌾 might be less common (as their focus is often on local outreach and education 🧑‍🏫), seeking resources connected to the WSU Extension will provide you with expertise and regional focus 📍. Ann Lovejoy's book 📚 also comes highly recommended 👍 as a practical guide 🗺️ from a knowledgeable Pacific Northwest gardener 🧑‍🌾 whose advice 💡 often aligns with Master Gardener best practices ✅.
+While finding a widely published book 📚 _solely_ authored by a Master Gardener 🧑‍🌾 might be less common (as their focus is often on local outreach and education 🧑‍🏫), seeking resources connected to the WSU Extension will provide you with expertise and regional focus 📍. Ann Lovejoy's book 📚 also comes highly recommended 👍 as a practical guide 🗺️ from a knowledgeable Pacific Northwest gardener 🧑‍🌾 whose advice 💡 often aligns with Master Gardener best practices ✅.  
+  
+## 🦋 Bluesky    
+<blockquote class="bluesky-embed" data-bluesky-uri="at://did:plc:i4yli6h7x2uoj7acxunww2fc/app.bsky.feed.post/3mkcwt2cxto2s" data-bluesky-cid="bafyreigqfwlmqwbr66tfb3mkmk7gij3jlcghbpfnarlspo4gvgh7nxdowi"><p>🏡🍎🌳📚 Home Fruit Tree Books  
+  
+#AI Q: 🍎 Which single fruit tree would you plant if you only had space for one?  
+  
+📚 Orchard Guides | 🍎 Fruit Cultivation | 🌿 Organic Methods | 🌳 Systems Thinking  
+https://bagrounds.org/bot-chats/fruit-tree-books</p>&mdash; <a href="https://bsky.app/profile/did:plc:i4yli6h7x2uoj7acxunww2fc?ref_src=embed">Bryan Grounds (@bagrounds.bsky.social)</a> <a href="https://bsky.app/profile/did:plc:i4yli6h7x2uoj7acxunww2fc/post/3mkcwt2cxto2s?ref_src=embed">2026-04-25T11:29:31.000Z</a></blockquote><script async src="https://embed.bsky.app/static/embed.js" charset="utf-8"></script>

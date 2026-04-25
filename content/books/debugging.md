@@ -12,9 +12,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-17T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-04-25T21:23:08Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A high-angle, minimalist composition featuring a complex, tangled web of glowing blue neon lines representing a digital circuit or software architecture. In the center, a single, clear, magnifying glass hovers over a specific, glowing golden node, isolating a tiny, metallic mechanical beetle. The background is a deep, professional charcoal grey. Surrounding the magnifying glass are faint, clean geometric outlines of the nine rules, depicted as subtle, floating icons like a gear, a checklist, a puzzle piece, and a lightbulb. The lighting is crisp and clinical, emphasizing clarity and precision. The overall aesthetic is modern, technical, and sophisticated, conveying the transition from chaotic complexity to orderly, logical resolution.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🐞🔍🤔✅ Debugging: The 9 Indispensable Rules for Finding Even the Most Elusive Software and Hardware Problems  
+![books-debugging](../books-debugging.jpg)  
 [🛒 Debugging: The 9 Indispensable Rules for Finding Even the Most Elusive Software and Hardware Problems. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4kmA3HP)  
   
 ## 🤖 AI Summary  

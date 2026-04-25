@@ -9,6 +9,10 @@ Platform:
 Channel: Sharran Srivatsaa
 tags:
 youtube: https://youtu.be/OWorFLIbRoo
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_version: "2"
+link_analysis_time: 2026-04-24T00:00:00Z
+force_analyze_links: false
 ---
 [Home](../index.md) > [Videos](./index.md)  
 # ⭐1️⃣💰 If You Only Watch One Money Video, Make It This  
@@ -48,13 +52,13 @@ youtube: https://youtu.be/OWorFLIbRoo
 ## 📚 Book Recommendations  
   
 ### ↔️ Similar  
-* 💰 The Psychology of Money by Morgan Housel explores how behavior and patience are more important than technical skill in building long-term wealth.  
+* 💰 [💰🤔😊 The Psychology of Money: Timeless lessons on wealth, greed, and happiness](../books/the-psychology-of-money.md) by Morgan Housel explores how behavior and patience are more important than technical skill in building long-term wealth.  
 * 🌊 Rich Dad Poor Dad by Robert Kiyosaki details the fundamental difference between working for money and having assets that produce cash flow and equity.  
   
 ### 🆚 Contrasting  
 * 🧺 The Little Book of Common Sense Investing by John Bogle argues that trying to find concentrated winners is a loser's game and advocates for owning the entire market through low-cost index funds.  
-* 🛑 The Black Swan by Nassim Nicholas Taleb warns against the dangers of over-leveraging and the unpredictability of extreme market events that can wipe out concentrated bets.  
+* 🛑 [⚫🦢🎲 The Black Swan: The Impact of the Highly Improbable](../books/the-black-swan-the-impact-of-the-highly-improbable.md) by Nassim Nicholas Taleb warns against the dangers of over-leveraging and the unpredictability of extreme market events that can wipe out concentrated bets.  
   
 ### 🎨 Creatively Related  
 * 🔨 Principles by Ray Dalio outlines a systematic approach to decision-making and risk management based on radical truth and transparency.  
-* ⏳ Deep Work by Cal Newport discusses the focus required to build valuable skills and businesses in an increasingly distracted world.
+* ⏳ [🤿💼 Deep Work: Rules for Focused Success in a Distracted World](../books/deep-work.md) by Cal Newport discusses the focus required to build valuable skills and businesses in an increasingly distracted world.

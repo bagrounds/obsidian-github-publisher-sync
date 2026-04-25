@@ -9,9 +9,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-16T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-04-25T05:48:51Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A split-composition illustration depicting the intersection of two histories. On the left, a vintage 19th-century aesthetic features a weathered, sepia-toned newspaper clipping from a California Spanish-language publication, alongside a subtle silhouette of a miner’s pickaxe. On the right, a vibrant, modern aesthetic showcases a stylized, colorful festive banner—reminiscent of Mexican *papel picado*—interwoven with the bold, clean stars and stripes of an American flag. The two sides blend seamlessly in the center, representing the fusion of Mexican heritage and American Civil War-era history. The background is a soft, parchment-like texture, evoking the feeling of an archival discovery being brought into the light of contemporary celebration.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🇲🇽🇺🇸 Cinco de Mayo: An American Tradition  
+![books-cinco-de-mayo-an-american-tradition](../books-cinco-de-mayo-an-american-tradition.jpg)  
 [🛒 Cinco de Mayo: An American Tradition. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/43YipV6)  
   
   

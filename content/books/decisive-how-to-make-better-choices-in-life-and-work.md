@@ -9,9 +9,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-16T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-04-25T21:23:11Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A stylized, minimalist illustration of a complex crossroads in a misty landscape. At the center, a person stands before a large, intricate mechanical scale. On one side of the scale, several glowing, interconnected geometric shapes represent diverse options. On the other side, a singular, heavy, opaque shadow represents a narrow bias. A subtle, luminous path splits into multiple directions, symbolizing the widening of choices. The color palette uses deep navy, cool grays, and pops of warm amber light emanating from the center of the scale to suggest clarity and insight. The overall aesthetic is clean, modern, and intellectual, evoking a sense of calm, deliberate contemplation rather than impulsive action.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🤔💡⚖️✅ Decisive: How to Make Better Choices in Life and Work  
+![books-decisive-how-to-make-better-choices-in-life-and-work](../books-decisive-how-to-make-better-choices-in-life-and-work.jpg)  
 [🛒 Decisive: How to Make Better Choices in Life and Work. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4kEP5s8)  
   
 ## 📚 Book Report: 🎯 Decisive: How to Make Better Choices in Life and Work  

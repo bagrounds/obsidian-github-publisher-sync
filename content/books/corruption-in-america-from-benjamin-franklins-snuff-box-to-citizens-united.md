@@ -10,9 +10,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-17T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-04-25T14:25:00Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A split-screen composition contrasting the past and the present. On the left, a sepia-toned, antique aesthetic features an ornate, 18th-century snuff box resting on a weathered wooden desk next to a quill and a parchment document sealed with wax. On the right, a modern, cold-toned aesthetic depicts a sleek, metallic gavel resting atop a stack of crisp, contemporary hundred-dollar bills. The two sides are separated by a subtle, jagged crack running down the center of the image, symbolizing the erosion of democratic principles. The lighting is dramatic, with soft, natural light illuminating the historical side and harsh, sterile studio lighting highlighting the modern side, emphasizing the shift from classical integrity to institutionalized financial influence.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 💰🇺🇸 Corruption in America: From Benjamin Franklin's Snuff Box to Citizens United  
+![books-corruption-in-america-from-benjamin-franklins-snuff-box-to-citizens-united](../books-corruption-in-america-from-benjamin-franklins-snuff-box-to-citizens-united.jpg)  
 [🛒 Corruption in America: From Benjamin Franklin's Snuff Box to Citizens United. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3WV4V8w)  
   
 🏛️💸⚖️ The Founders understood corruption broadly as using public power for private gain, a definition dangerously narrowed by modern Supreme Court rulings like Citizens United to only quid pro quo bribery, undermining American democracy.  

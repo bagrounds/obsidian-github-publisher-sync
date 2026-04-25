@@ -7,11 +7,16 @@ share: true
 affiliate link: https://amzn.to/3UXkpI9
 CTA: 🗣️ Decode devotion.
 link_analysis_model: gemini-3.1-flash-lite-preview
-link_analysis_time: 2026-04-03T00:00:00Z
+link_analysis_time: 2026-04-18T00:00:00Z
 force_analyze_links: false
+link_analysis_version: "2"
+image_date: 2026-04-25T17:26:46Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A minimalist, high-contrast graphic illustration. In the center, a stylized human head is rendered in silhouette, filled with a chaotic swirl of tangled, glowing threads that represent tangled speech and linguistic webs. A single, sharp, glowing red thread pulls tight from the center of the brain, leading outward toward a dark, circular void. Surrounding the head are faint, ghostly geometric shapes—triangles and circles—that suggest patterns of conformity and insular structures. The background is a deep, moody charcoal, creating a sense of psychological weight. The lighting is dramatic, with the red thread acting as the primary light source, casting long, sharp shadows that distort into unrecognizable shapes, symbolizing the way language is used to manipulate and obscure reality.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # ✝️🗣️ Cultish: The Language of Fanaticism  
+![books-cultish-the-language-of-fanaticism](../books-cultish-the-language-of-fanaticism.jpg)  
 [🛒 Cultish: The Language of Fanaticism. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3UXkpI9)  
   
 ## 📚 Book Report: 🗣️ Cultish: The Language of Fanaticism  

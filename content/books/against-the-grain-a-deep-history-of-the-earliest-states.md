@@ -6,12 +6,13 @@ URL: https://bagrounds.org/books/against-the-grain-a-deep-history-of-the-earlies
 share: true
 CTA: 🌍 Unearth ancient societies.
 link_analysis_model: gemini-3.1-flash-lite-preview
-link_analysis_time: 2026-04-01T00:00:00Z
+link_analysis_time: 2026-04-16T00:00:00Z
 force_analyze_links: false
 updated: 2026-04-01T11:27:54
 image_date: 2026-04-13T21:27:39Z
 image_model: "@cf/black-forest-labs/flux-1-schnell"
 image_prompt: A split-composition illustration contrasting two ways of life. On the left, a lush, verdant landscape shows a diverse group of hunter-gatherers interacting freely in a wild, forest-edge environment, characterized by varied foraging and open space. On the right, a rigid, geometric grid of golden wheat fields is enclosed by high, weathered stone walls. Within these walls, rows of identical, small huts are organized in strict lines, with a tall, imposing ziggurat-like structure looming in the background. Subtle visual motifs of chains or iron links are integrated into the stonework of the walls, while the sky above the agricultural section is slightly hazy, contrasting with the clear, vibrant sky over the foragers. The art style is textured and painterly, reminiscent of an ancient manuscript, using a palette of earthy ochres, deep greens, and cold stone grays.
+link_analysis_version: "2"
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🔄📜🏛️ Against the Grain: A Deep History of the Earliest States  

@@ -5,10 +5,10 @@ aliases:
 title: 📺 Videos
 URL: https://bagrounds.org/videos
 backlinks: false
-updated: 2026-04-25T07:38:12-07:00
+updated: 2026-04-25T07:52:59-07:00
 ---
 [Home](../index.md)  
-# 📺 Videos (795)  
+# 📺 Videos (796)  
 - [💰🤑🤖💡🚀💲 $0.10 per Month Runs My Entire AI Life. I'll Show You How.](./0-10-month-runs-my-entire-ai-life-ill-show-you-how.md)  
 - [📊📈📉📃👁️ 10 Charts to Understand the 900 Page Budget Bill](./10-charts-to-understand-the-900-page-budget-bill.md)  
 - [🤖🔗⬆️✅ 12-Factor Agents: Patterns of reliable LLM applications — Dex Horthy, HumanLayer](./12-factor-agents-patterns-of-reliable-llm-applications-dex-horthy-humanlayer.md)  
@@ -659,6 +659,7 @@ updated: 2026-04-25T07:38:12-07:00
 - [👶🏃‍♀️🏅✅ Thule Urban Glide 3 Full Review | Best Running / Jogging Stroller 2024](./thule-urban-glide-3-full-review-best-running-jogging-stroller-2024.md)  
 - [🏛️📰📣 Today in Politics | Explainer](./today-in-politics-explainer-january-22-2026.md)  
 - [📰🏛️💡 Today in Politics | Explainer](./today-in-politics-explainer.md)  
+- [📰💡 Today in Politics | Explainer](./today-in-politics-explainer-april-23-2026.md)  
 - [🇺🇸🚀🇻🇪 Today's News, January 3, 2025](./todays-news-january-3-2025.md)  
 - [🤥📢👨‍💼 Tony Schwartz: The Truth About Trump | Oxford Union Q&A](./tony-schwartz-the-truth-about-trump-oxford-union-q-a.md)  
 - [💪🧠🚫💊🚀 Tools for Overcoming Substance & Behavioral Addictions | Ryan Soave](./tools-for-overcoming-substance-behavioral-addictions-ryan-soave.md)  

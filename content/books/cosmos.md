@@ -10,9 +10,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-16T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-04-25T14:25:09Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A breathtaking, wide-angle view of the deep cosmos featuring a vibrant, swirling nebula in shades of deep indigo, violet, and gold. In the foreground, a single, glowing, translucent human silhouette stands on a rocky, lunar-like surface, looking upward toward a brilliant, star-filled expanse. The scene emphasizes the contrast between the vast, infinite scale of the universe and the small, curious observer. Wisps of stardust and faint, distant galaxies create a sense of profound depth and movement, while a soft, ethereal light emanates from the center, casting a gentle glow over the rugged terrain to symbolize the bridge between human inquiry and cosmic mystery.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🌌 Cosmos  
+![books-cosmos](../books-cosmos.jpg)  
 [🛒 Cosmos. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/49G7Jhi)  
   
 A 🔭 profound, beautifully articulated journey through 14 billion years of cosmic evolution, urging humanity to embrace scientific inquiry, humility, and environmental stewardship to navigate our precious, tiny 🌍 planetary home. ✨  

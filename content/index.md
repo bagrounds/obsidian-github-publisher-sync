@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-04-25T07:52:59-07:00
+updated: 2026-04-25T13:39:17-07:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -28,11 +28,11 @@ updated: 2026-04-25T07:52:59-07:00
 - [2026-04-20 | 📊 Changes Preview in Reflections 🪞](./ai-blog/2026-04-20-1-changes-preview-in-reflections.md)  
   
   
-## [🤖 Auto Blog Zero](./auto-blog-zero/index.md) (45)  
+## [🤖 Auto Blog Zero](./auto-blog-zero/index.md) (46)  
+- [2026-04-25 | 🤖 🧩 The Geometry of Automated Agency 🤖](./auto-blog-zero/2026-04-25-the-geometry-of-automated-agency.md)  
 - [2026-04-24 | 🤖 🧠 Beyond the Scaffolding of Correction 🤖](./auto-blog-zero/2026-04-24-beyond-the-scaffolding-of-correction.md)  
 - [2026-04-23 | 🤖 🧠 Beyond the Scaffolding of Correction 🤖](./auto-blog-zero/2026-04-23-beyond-the-scaffolding-of-correction.md)  
 - [2026-04-22 | 🤖 The Feedback Loop of Agency 🤖](./auto-blog-zero/2026-04-22-the-feedback-loop-of-agency.md)  
-- [2026-04-21 | 🤖 🏗️ Preventing Synthetic Entropy in Adversarial Loops 🤖](./auto-blog-zero/2026-04-21-preventing-synthetic-entropy-in-adversarial-loops.md)  
   
   
 ## [🐔 Chickie Loo](./chickie-loo/index.md) (46)  
@@ -42,11 +42,11 @@ updated: 2026-04-25T07:52:59-07:00
 - [2026-04-22 | 🐔 🥚 Pickled Dreams and Kitchen Patience 🐔](./chickie-loo/2026-04-22-pickled-dreams-and-kitchen-patience.md)  
   
   
-## [🏛️ Systems for Public Good](./systems-for-public-good/index.md) (34)  
+## [🏛️ Systems for Public Good](./systems-for-public-good/index.md) (35)  
+- [2026-04-25 | 🏛️ 🎨 The Canvas of Community: Arts and Cultural Institutions as Public Goods 🏛️](./systems-for-public-good/2026-04-25-the-canvas-of-community-arts-and-cultural-institutions-as-public-goods.md)  
 - [2026-04-24 | 🏛️ 🌳 The Green Heart of Communities: Parks as Public Goods 🏛️](./systems-for-public-good/2026-04-24-the-green-heart-of-communities-parks-as-public-goods.md)  
 - [2026-04-23 | 🏛️ 📚 The Enduring Sanctuary of Knowledge: Public Libraries as Public Goods 🏛️](./systems-for-public-good/2026-04-23-the-enduring-sanctuary-of-knowledge-public-libraries-as-public-goods.md)  
 - [2026-04-22 | 🏛️ The Unseen Threads: Connecting Our Collective Well-being 🏛️](./systems-for-public-good/2026-04-22-the-unseen-threads-connecting-our-collective-well-being.md)  
-- [2026-04-21 | 🏛️ The Interconnected Web of Well-being 🏛️](./systems-for-public-good/2026-04-21-the-interconnected-web-of-well-being.md)  
   
   
 ## [📰 The Noise](./the-noise/index.md) (16)  
@@ -71,17 +71,17 @@ updated: 2026-04-25T07:52:59-07:00
   
   
 ## [📚 Books](./books/index.md) (960)  
-- [🔧🔨⚙️ Tinkers](./books/tinkers.md)  
-- [🌌 Cosmos](./books/cosmos.md)  
-- [💰🇺🇸 Corruption in America: From Benjamin Franklin's Snuff Box to Citizens United](./books/corruption-in-america-from-benjamin-franklins-snuff-box-to-citizens-united.md)  
-- [💰👑👎🇺🇸 Corruption and Illiberal Politics in the Trump Era](./books/corruption-and-illiberal-politics-in-the-trump-era.md)  
+- [💥💰🔓 Escape from Capitalism: An Intervention](./books/escape-from-capitalism-an-intervention.md)  
+- [🏛️💰 Debt: The First 5,000 Years](./books/debt-the-first-5000-years.md)  
+- [💀🚫🦠 Deadly Choices: How the Anti-Vaccine Movement Threatens Us All](./books/deadly-choices-how-the-anti-vaccine-movement-threatens-us-all.md)  
+- [🧠👶📈 Introduction to Developmental Cognitive Neuroscience: An Introduction](./books/developmental-cognitive-neuroscience.md)  
   
   
-## [📺 Videos](./videos/index.md) (796)  
-- [📰💡 Today in Politics | Explainer](./videos/today-in-politics-explainer-april-23-2026.md)  
-- [🚫✍️🚀 No one is writing Project 2029. So I started.](./videos/no-one-is-writing-project-2029-so-i-started.md)  
-- [🛂🇺🇸🤝 ICE & DHS: Last Week Tonight with John Oliver (HBO)](./videos/ice-dhs-last-week-tonight-with-john-oliver-hbo.md)  
-- [🦠🤒🏥 Snohomish County sees measles outbreak](./videos/snohomish-county-sees-measles-outbreak.md)  
+## [📺 Videos](./videos/index.md) (798)  
+- [🤵🎙️📜🚨 Mayor Mamdani Holds a Press Conference to Make a Deed Theft Announcement](./videos/mayor-mamdani-holds-a-press-conference-to-make-a-deed-theft-announcement.md)  
+- [🧠✨💫 The Development of Imagination](./videos/the-development-of-imagination.md)  
+- [💰🚫🌍✨ Clara Mattei: capitalism is not natural - it’s enforced](./videos/clara-mattei-capitalism-is-not-natural-its-enforced.md)  
+- [⚡️🔋💪 How To Have More Energy | Sean Hall | TEDxUNSW](./videos/how-to-have-more-energy-sean-hall-tedxunsw.md)  
   
   
 ## [🌌 Topics](./topics/index.md) (91)  
@@ -92,10 +92,10 @@ updated: 2026-04-25T07:52:59-07:00
   
   
 ## [📄  Articles](./articles/index.md) (84)  
+- [🤖😴📢🗳️ Sleeper Social Bots: A New Generation of AI Disinformation Bots are Already a Political Threat](./articles/sleeper-social-bots-a-new-generation-of-ai-disinformation-bots-are-already-a-political-threat.md)  
 - [🧠🪜⏱️📈 Hierarchical gradients of multiple timescales in the mammalian forebrain](./articles/hierarchical-gradients-of-multiple-timescales-in-the-mammalian-forebrain.md)  
 - [🧠🤖📈 Scientists just developed a new AI modeled on the human brain — it's outperforming LLMs like ChatGPT at reasoning tasks](./articles/scientists-just-developed-a-new-ai-modeled-on-the-human-brain-its-outperforming-llms-like-chatgpt-at-reasoning-tasks.md)  
 - [⏳🏛️💥🗳️📉 Trump is dismantling democracy at unprecedented speed, global report finds](./articles/trump-is-dismantling-democracy-at-unprecedented-speed-global-report-finds.md)  
-- [💻💰🤝👹🇺🇸 Tech moguls Altman, Bezos and Zuckerberg donate to Trump's inauguration fund](./articles/tech-moguls-altman-bezos-and-zuckerberg-donate-to-trumps-inauguration-fund.md)  
   
   
 ## [🤖💬 Bot Chats](./bot-chats/index.md) (49)  

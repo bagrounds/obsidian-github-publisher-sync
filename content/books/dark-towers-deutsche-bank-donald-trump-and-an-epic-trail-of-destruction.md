@@ -10,9 +10,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-16T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-04-25T19:28:26Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A towering, brutalist skyscraper constructed of dark, reflective glass looms over a desolate, stormy cityscape. The building’s sharp, angular silhouette is slightly distorted, as if seen through a shattered lens. Near the base, a tangle of golden, glowing ticker-tape ribbons spirals upward, morphing into jagged, chaotic lines that resemble both a stock market graph and prison bars. The atmosphere is moody and cinematic, dominated by deep blues, charcoal grays, and harsh, piercing highlights of metallic gold. In the foreground, a single, discarded fountain pen lies on a cold marble surface, casting a long, ominous shadow toward the tower, symbolizing the intersection of high-stakes finance and unchecked institutional power.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🏦👨‍💼💥 Dark Towers: Deutsche Bank, Donald Trump, and an Epic Trail of Destruction  
+![books-dark-towers-deutsche-bank-donald-trump-and-an-epic-trail-of-destruction](../books-dark-towers-deutsche-bank-donald-trump-and-an-epic-trail-of-destruction.jpg)  
 [🛒 Dark Towers: Deutsche Bank, Donald Trump, and an Epic Trail of Destruction. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4o1hz0H)  
   
 💰🚨 The truth behind Deutsche Bank's financial recklessness and its long, controversial relationship with Donald Trump reveals a pattern of criminality and moral compromise at the highest levels of global finance and power 💰🚨.  

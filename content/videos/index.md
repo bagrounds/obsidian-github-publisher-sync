@@ -5,10 +5,10 @@ aliases:
 title: 📺 Videos
 URL: https://bagrounds.org/videos
 backlinks: false
-updated: 2026-04-25T07:52:59-07:00
+updated: 2026-04-25T13:39:17-07:00
 ---
 [Home](../index.md)  
-# 📺 Videos (796)  
+# 📺 Videos (798)  
 - [💰🤑🤖💡🚀💲 $0.10 per Month Runs My Entire AI Life. I'll Show You How.](./0-10-month-runs-my-entire-ai-life-ill-show-you-how.md)  
 - [📊📈📉📃👁️ 10 Charts to Understand the 900 Page Budget Bill](./10-charts-to-understand-the-900-page-budget-bill.md)  
 - [🤖🔗⬆️✅ 12-Factor Agents: Patterns of reliable LLM applications — Dex Horthy, HumanLayer](./12-factor-agents-patterns-of-reliable-llm-applications-dex-horthy-humanlayer.md)  
@@ -355,6 +355,7 @@ updated: 2026-04-25T07:52:59-07:00
 - [🪖💪💯 Jocko Willink «GOOD» (Official)](./jocko-willink-good-official.md)  
 - [✍️🎭🧙‍♂️ Joe Abercrombie Shows Me How to Write PERFECT Character Introductions](./joe-abercrombie-shows-me-how-to-write-perfect-character-introductions.md)  
 - [🤖🧑‍💻📈🚧 John Schulman - Reinforcement Learning from Human Feedback: Progress and Challenges](./john-schulman-reinforcement-learning-from-human-feedback-progress-and-challenges.md)  
+- [📺📰♟️🇮🇷🏛️🥳🚨 Jon on Trump's «Art of the Deal» in Iran & Kosta on Kash Patel's Partying Problem | The Daily Show](./jon-on-trumps-art-of-the-deal-in-iran-kosta-on-kash-patels-partying-problem-the-daily-show.md)  
 - [😡🏛️🤝 Jon Stewart «Can't F**king Believe» Democrats Caved on the Shutdown | The Daily Show](./jon-stewart-cant-fking-believe-democrats-caved-on-the-shutdown-the-daily-show.md)  
 - [🇺🇸😡📺 Jon Stewart on the L.A. ICE Protests and Trump's Escalating Response | The Daily Show](./jon-stewart-on-the-la-ice-protests-and-trumps-escalating-response-the-daily-show.md)  
 - [🤡🗣️📰🇺🇸 Jon Stewart's Post-Kimmel Primer on Free Speech in the Glorious Trump Era | The Daily Show](./jon-stewarts-post-kimmel-primer-on-free-speech-in-the-glorious-trump-era-the-daily-show.md)  
@@ -391,6 +392,7 @@ updated: 2026-04-25T07:52:59-07:00
 - [Mass firings begin at government health agencies, including FDA, CDC and NIH](./mass-firings-begin-at-government-health-agencies-including-fda-cdc-and-nih.md)  
 - [💡🎨💃 Master the Creative Process | Twyla Tharp](./master-the-creative-process-twyla-tharp.md)  
 - [📰🌍🏘️ Matryoshka ACL 2025: Hierarchical Level-Wise News Article Clustering via Multilingual Matryoshka Embeddings](./acl-2025-hierarchical-level-wise-news-article-clustering-via-multilingual-matryoshka-embeddings.md)  
+- [🤵🎙️📜🚨 Mayor Mamdani Holds a Press Conference to Make a Deed Theft Announcement](./mayor-mamdani-holds-a-press-conference-to-make-a-deed-theft-announcement.md)  
 - [💉📉🦠📈 Measles cases surged in 2025 as vaccination rates dropped](./measles-cases-surged-in-2025-as-vaccination-rates-dropped.md)  
 - [Migrants in U.S. legally and with no criminal history caught up in Trump crackdown](./migrants-in-us-legally-and-with-no-criminal-history-caught-up-in-trump-crackdown.md)  
 - [🗣️🤫🐘 Mike Levin Reveals What Republicans Told Him Behind Closed Doors About Big Beautiful Bill](./mike-levin-reveals-what-republicans-told-him-behind-closed-doors-about-big-beautiful-bill.md)  

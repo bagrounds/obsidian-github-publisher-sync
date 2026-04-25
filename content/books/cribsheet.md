@@ -12,9 +12,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-15T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-04-25T16:25:25Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A clean, minimalist flat-lay illustration featuring a wooden nursery floor. On the floor sits a soft, neutral-colored baby blanket, a pair of tiny cotton booties, and an open notebook displaying neat, hand-drawn bar graphs and pie charts. Beside the notebook, a stylized wooden building block serves as a paperweight. The lighting is bright, soft, and natural, casting gentle shadows. The color palette is composed of soothing, muted tones like sage green, soft cream, and slate blue, evoking a sense of calm, organized, and modern parenting. The composition is balanced and airy, emphasizing clarity, evidence, and a stress-free approach to early childhood.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 👶📊😌 Cribsheet: A Data-Driven Guide to Better, More Relaxed Parenting, from Birth to Preschool  
+![books-cribsheet](../books-cribsheet.jpg)  
 [🛒 Cribsheet: A Data-Driven Guide to Better, More Relaxed Parenting, from Birth to Preschool. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/43sW41K)  
   
 ## 🤖 AI Summary  

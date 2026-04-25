@@ -9,9 +9,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-15T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-04-25T17:26:43Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A split-screen illustration featuring two stylized figures sitting across from each other at a clean, minimalist table. Between them, instead of physical objects, a glowing, translucent pool of soft light rises from the center of the table, representing a shared meaning. The background is a calm, neutral gradient. One side of the image subtly incorporates a soft, geometric icon of a toolkit, while the other side features a stylized speech bubble icon, both integrated seamlessly into the environment. The lighting is warm and balanced, emphasizing clarity, calm, and connection. The overall aesthetic is modern, professional, and metaphorical, focusing on the concept of bridge-building through communication rather than conflict.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🧰💬 Crucial Conversations: Tools for Talking When Stakes Are High  
+![books-crucial-conversations-tools-for-talking-when-stakes-are-high](../books-crucial-conversations-tools-for-talking-when-stakes-are-high.jpg)  
 [🛒 Crucial Conversations: Tools for Talking When Stakes Are High. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/43EgFPt)  
   
 ## 📚 Book Report: Crucial Conversations  

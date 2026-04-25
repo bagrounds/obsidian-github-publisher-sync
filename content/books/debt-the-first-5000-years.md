@@ -10,9 +10,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-16T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-04-25T20:22:02Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A split-composition image illustrating the evolution of debt. On the left, a warm, textured scene depicts ancient, hand-carved clay tablets and primitive knotted strings representing social obligations and communal barter. On the right, a cold, metallic aesthetic features modern, sharp-edged gold coins and abstract digital ledger lines fading into a dark, structured grid. Connecting the two sides, a faint, weathered balance scale sits at the center, its beam slightly tilted. The background transitions from a soft, earthy parchment tone to a stark, industrial slate gray, symbolizing the shift from human-centered social relationships to impersonal, state-enforced financial systems. The lighting is dramatic and cinematic, emphasizing the weight and history of these economic symbols.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🏛️💰 Debt: The First 5,000 Years  
+![books-debt-the-first-5000-years](../books-debt-the-first-5000-years.jpg)  
 [🛒 Debt: The First 5,000 Years. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3SwYlTh)  
   
 ## 📖 Book Report: Debt: The First 5,000 Years by David Graeber  

@@ -5,10 +5,10 @@ aliases:
 title: 📺 Videos
 URL: https://bagrounds.org/videos
 backlinks: false
-updated: 2026-04-25T15:09:59-07:00
+updated: 2026-04-25T15:39:32-07:00
 ---
 [Home](../index.md)  
-# 📺 Videos (801)  
+# 📺 Videos (802)  
 - [💰🤑🤖💡🚀💲 $0.10 per Month Runs My Entire AI Life. I'll Show You How.](./0-10-month-runs-my-entire-ai-life-ill-show-you-how.md)  
 - [📊📈📉📃👁️ 10 Charts to Understand the 900 Page Budget Bill](./10-charts-to-understand-the-900-page-budget-bill.md)  
 - [🤖🔗⬆️✅ 12-Factor Agents: Patterns of reliable LLM applications — Dex Horthy, HumanLayer](./12-factor-agents-patterns-of-reliable-llm-applications-dex-horthy-humanlayer.md)  
@@ -36,6 +36,7 @@ updated: 2026-04-25T15:09:59-07:00
 - [🧠⚡️👶🏽 5 Tiny Habits That Supercharge Your Child's Brain Development | Dr. Arif Khan](./5-tiny-habits-that-supercharge-your-childs-brain-development-dr-arif-khan.md)  
 - [🚀📈📰 5 Ways To Promote And Grow Your Blog](./5-ways-to-promote-and-grow-your-blog.md)  
 - [🧠🪜💡🤔⬆️🎓 6 Levels of Thinking Every Student MUST Master](./6-levels-of-thinking-every-student-must-master.md)  
+- [👴📚⚙️💻 75 Year of Learning to Engineer Software - Silvio Meira - ICSE 2026 keynote](./75-year-of-learning-to-engineer-software-silvio-meira-icse-2026-keynote.md)  
 - [😇😈📉🚫 7️⃣ Deadly Innocent Frauds-A BCB Economics Lecture](./seven-deadly-innocent-frauds-a-bcb-economics-lecture.md)  
 - [👶🧸8️⃣🗓️ Montessori Items For An 8 Month Old Baby](./8-montessori-items-for-an-8-month-old-baby-cc.md)  
 - [😴➡️😩8️⃣💤 Why You Wake Up Exhausted (Even After 8 Hours)](./why-you-wake-up-exhausted-even-after-8-hours.md)  

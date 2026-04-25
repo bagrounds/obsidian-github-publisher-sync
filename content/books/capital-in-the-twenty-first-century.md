@@ -12,9 +12,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-15T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-04-25T00:37:33Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A high-angle, minimalist illustration featuring a clean, white background. In the center, a large, ornate golden balance scale sits on a polished wooden surface. One side of the scale is heavily weighted down by a dense, towering stack of dark metallic coins and geometric blocks representing capital. The other side holds a single, delicate glass hourglass filled with golden sand, representing time and labor, which is suspended high in the air. The contrast between the heavy, grounded pile of wealth and the light, elevated hourglass creates a sense of tension and imbalance. The lighting is soft and architectural, casting long, sharp shadows that emphasize the disparity in weight between the two sides of the scale. The overall aesthetic is sophisticated, academic, and stark.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 💰📈🌍⏳ Capital in the Twenty-First Century  
+![books-capital-in-the-twenty-first-century](../books-capital-in-the-twenty-first-century.jpg)  
 [🛒 Capital in the Twenty-First Century. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3HjBmbV)  
   
 ## 🤖 AI Summary  

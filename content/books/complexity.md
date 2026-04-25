@@ -12,9 +12,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-16T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-04-25T08:25:51Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A minimalist, stylized composition depicting the concept of emergence. At the center, a dense, glowing cluster of interconnected nodes and lines forms a complex, organic-looking structure, resembling both a neural network and a constellation. Surrounding this vibrant core are simple, geometric shapes—small squares, triangles, and circles—drifting inward. As these simple shapes touch the central cluster, they transform and integrate into the intricate, fractal-like patterns of the whole. The background is a deep, dark navy blue, emphasizing the luminosity of the network. The lighting is ethereal, creating a sense of depth and infinite scale, shifting from cold, sharp lines at the periphery to soft, pulsing gradients of light at the heart of the system.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🌐🧭❓🔍🗺️ Complexity: A Guided Tour  
+![books-complexity](../books-complexity.jpg)  
 [🛒 Complexity: A Guided Tour. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3Svi7i6)  
   
 ## 🤖 AI Summary  

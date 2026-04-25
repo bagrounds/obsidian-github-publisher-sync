@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-04-25T07:52:59-07:00
+updated: 2026-04-25T08:52:05-07:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -28,11 +28,11 @@ updated: 2026-04-25T07:52:59-07:00
 - [2026-04-20 | 📊 Changes Preview in Reflections 🪞](./ai-blog/2026-04-20-1-changes-preview-in-reflections.md)  
   
   
-## [🤖 Auto Blog Zero](./auto-blog-zero/index.md) (45)  
+## [🤖 Auto Blog Zero](./auto-blog-zero/index.md) (46)  
+- [2026-04-25 | 🤖 🧩 The Geometry of Automated Agency 🤖](./auto-blog-zero/2026-04-25-the-geometry-of-automated-agency.md)  
 - [2026-04-24 | 🤖 🧠 Beyond the Scaffolding of Correction 🤖](./auto-blog-zero/2026-04-24-beyond-the-scaffolding-of-correction.md)  
 - [2026-04-23 | 🤖 🧠 Beyond the Scaffolding of Correction 🤖](./auto-blog-zero/2026-04-23-beyond-the-scaffolding-of-correction.md)  
 - [2026-04-22 | 🤖 The Feedback Loop of Agency 🤖](./auto-blog-zero/2026-04-22-the-feedback-loop-of-agency.md)  
-- [2026-04-21 | 🤖 🏗️ Preventing Synthetic Entropy in Adversarial Loops 🤖](./auto-blog-zero/2026-04-21-preventing-synthetic-entropy-in-adversarial-loops.md)  
   
   
 ## [🐔 Chickie Loo](./chickie-loo/index.md) (46)  
@@ -71,17 +71,17 @@ updated: 2026-04-25T07:52:59-07:00
   
   
 ## [📚 Books](./books/index.md) (960)  
+- [👤🌱 Creating Capabilities: The Human Development Approach](./books/creating-capabilities-the-human-development-approach.md)  
+- [💪📈 Creatine: A Natural Substance and Its Benefits for Muscle Metabolism, Fitness, Health & Longevity](./books/creatine-a-natural-substance-and-its-benefits-for-muscle-metabolism-fitness-health-longevity.md)  
 - [🔧🔨⚙️ Tinkers](./books/tinkers.md)  
 - [🌌 Cosmos](./books/cosmos.md)  
-- [💰🇺🇸 Corruption in America: From Benjamin Franklin's Snuff Box to Citizens United](./books/corruption-in-america-from-benjamin-franklins-snuff-box-to-citizens-united.md)  
-- [💰👑👎🇺🇸 Corruption and Illiberal Politics in the Trump Era](./books/corruption-and-illiberal-politics-in-the-trump-era.md)  
   
   
-## [📺 Videos](./videos/index.md) (796)  
-- [📰💡 Today in Politics | Explainer](./videos/today-in-politics-explainer-april-23-2026.md)  
-- [🚫✍️🚀 No one is writing Project 2029. So I started.](./videos/no-one-is-writing-project-2029-so-i-started.md)  
-- [🛂🇺🇸🤝 ICE & DHS: Last Week Tonight with John Oliver (HBO)](./videos/ice-dhs-last-week-tonight-with-john-oliver-hbo.md)  
-- [🦠🤒🏥 Snohomish County sees measles outbreak](./videos/snohomish-county-sees-measles-outbreak.md)  
+## [📺 Videos](./videos/index.md) (797)  
+- [📺📰♟️🇮🇷🏛️🥳🚨 Jon on Trump's «Art of the Deal» in Iran & Kosta on Kash Patel's Partying Problem | The Daily Show](./videos/jon-on-trumps-art-of-the-deal-in-iran-kosta-on-kash-patels-partying-problem-the-daily-show.md)  
+- [✍️🤯📝 How to Write Freakishly Well - Paul Harding](./videos/how-to-write-freakishly-well-paul-harding.md)  
+- [💭🧠💥 George Saunders Says Breaking These 3 Delusions Can Save You | The Interview](./videos/george-saunders-says-breaking-these-3-delusions-can-save-you-the-interview.md)  
+- [⚖️🏛️🗣️ Antitrust and The Rule of Law: A Conversation with Former FTC Chair Lina Khan](./videos/antitrust-and-the-rule-of-law-a-conversation-with-former-ftc-chair-lina-khan.md)  
   
   
 ## [🌌 Topics](./topics/index.md) (91)  

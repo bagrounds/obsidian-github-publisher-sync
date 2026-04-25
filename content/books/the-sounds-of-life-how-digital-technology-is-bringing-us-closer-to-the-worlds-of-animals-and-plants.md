@@ -8,11 +8,12 @@ CTA: 🎧 Discover nature's symphony.
 affiliate link: https://amzn.to/4rMwTzW
 updated: 2026-03-23T00:23:39.443Z
 force_analyze_links: false
-link_analysis_time: 2026-03-23T07:51:39.118Z
+link_analysis_time: 2026-04-24T00:00:00Z
 link_analysis_model: gemini-3.1-flash-lite-preview
 image_date: 2026-04-14T19:38:04Z
 image_model: "@cf/black-forest-labs/flux-1-schnell"
 image_prompt: "A vibrant, stylized illustration showing a harmonious blend of nature and technology. In the center, a translucent, abstract ear shape subtly emerges, from which glowing sound waves radiate outwards. These waves elegantly interweave through a rich, detailed natural landscape featuring diverse elements: the silhouette of a whale in deep blue waters, a bird perched on a branch, and a plant with visible root systems. Each natural element emits its own unique, visible sound pattern that merges with the central waves. Overlaying this natural scene are subtle, ethereal digital circuit lines or data points, suggesting the technological aspect, all unified by a gradient of natural greens and blues accented with soft, electric glows."
+link_analysis_version: "2"
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 👂📱🐾🌿 The Sounds of Life: How Digital Technology Is Bringing Us Closer to the Worlds of Animals and Plants  

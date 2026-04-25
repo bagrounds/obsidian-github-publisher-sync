@@ -10,9 +10,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-16T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-04-25T07:36:46Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A high-contrast, atmospheric illustration featuring an open, weathered parchment document resting on a rustic wooden desk. A single, flickering quill pen lies across the pages, casting long, dramatic shadows. In the background, the soft, warm glow of a solitary candle illuminates the scene, symbolizing the dawn of Enlightenment thinking. The overall color palette is dominated by deep sepia tones, charcoal blacks, and muted parchment yellows. Soft light catches the edges of the paper, suggesting a sense of urgency and intellectual awakening. The composition is clean and minimalist, focusing on the historical gravity of the revolutionary pamphlet without any distracting clutter, emphasizing the power of the written word to spark change in a dimly lit, pre-industrial world.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🧠💡 Common Sense  
+![books-common-sense](../books-common-sense.jpg)  
 [🛒 Common Sense. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3I6vjYX)  
   
 ## 📖 Book Report: 💡 Common Sense by Thomas Paine  

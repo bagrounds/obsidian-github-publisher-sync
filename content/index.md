@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-04-25T07:18:38-07:00
+updated: 2026-04-25T07:38:12-07:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -35,11 +35,11 @@ updated: 2026-04-25T07:18:38-07:00
 - [2026-04-21 | 🤖 🏗️ Preventing Synthetic Entropy in Adversarial Loops 🤖](./auto-blog-zero/2026-04-21-preventing-synthetic-entropy-in-adversarial-loops.md)  
   
   
-## [🐔 Chickie Loo](./chickie-loo/index.md) (45)  
+## [🐔 Chickie Loo](./chickie-loo/index.md) (46)  
+- [2026-04-25 | 🐔 A Symphony of Milestones and Rainy Day Rewards 🐔](./chickie-loo/2026-04-25-a-symphony-of-milestones-and-rainy-day-rewards.md)  
 - [2026-04-24 | 🐔 🌸 A Season of Patience and Painted Walls 🐔](./chickie-loo/2026-04-24-a-season-of-patience-and-painted-walls.md)  
 - [2026-04-23 | 🐔 🍪 Cookies, Plumbers, and the Joy of a Full Pantry 🐔](./chickie-loo/2026-04-23-cookies-plumbers-and-the-joy-of-a-full-pantry.md)  
 - [2026-04-22 | 🐔 🥚 Pickled Dreams and Kitchen Patience 🐔](./chickie-loo/2026-04-22-pickled-dreams-and-kitchen-patience.md)  
-- [2026-04-21 | 🐔 🔌 Electricians, Eggs, and the Art of Not Naming Calves 🐔](./chickie-loo/2026-04-21-electricians-eggs-and-the-art-of-not-naming-calves.md)  
   
   
 ## [🏛️ Systems for Public Good](./systems-for-public-good/index.md) (34)  
@@ -71,17 +71,17 @@ updated: 2026-04-25T07:18:38-07:00
   
   
 ## [📚 Books](./books/index.md) (960)  
+- [🔧🔨⚙️ Tinkers](./books/tinkers.md)  
+- [🌌 Cosmos](./books/cosmos.md)  
+- [💰🇺🇸 Corruption in America: From Benjamin Franklin's Snuff Box to Citizens United](./books/corruption-in-america-from-benjamin-franklins-snuff-box-to-citizens-united.md)  
 - [💰👑👎🇺🇸 Corruption and Illiberal Politics in the Trump Era](./books/corruption-and-illiberal-politics-in-the-trump-era.md)  
-- [⛰️⬇️📈 Convex Optimization](./books/convex-optimization.md)  
-- [✍️📚⏱️ How to Write a Book in 30 Days](./books/how-to-write-a-book-in-30-days.md)  
-- [⚙️📈🎯🤖 Control Systems Engineering](./books/control-systems-engineering.md)  
   
   
-## [📺 Videos](./videos/index.md) (794)  
-- [⚙️❓🤖 Judea Pearl, 2012 ACM A.M. Turing Award Lecture «The Mechanization of Causal Inference»](./videos/judea-pearl-2012-acm-a-m-turing-award-lecture-the-mechanization-of-causal-inference.md)  
-- [Judea Pearl, 2011 ACM Turing Award Recipient](./videos/judea-pearl-2011-acm-turing-award-recipient.md)  
-- [❓🤯😵‍💫 What the Heck Just Happened | 2025-08-30](./videos/what-the-heck-just-happened-2025-08-30.md)  
-- [🇺🇸🗣️🏛️ American Conversations: Senator Sherrod Brown](./videos/american-conversations-senator-sherrod-brown.md)  
+## [📺 Videos](./videos/index.md) (795)  
+- [🚫✍️🚀 No one is writing Project 2029. So I started.](./videos/no-one-is-writing-project-2029-so-i-started.md)  
+- [🛂🇺🇸🤝 ICE & DHS: Last Week Tonight with John Oliver (HBO)](./videos/ice-dhs-last-week-tonight-with-john-oliver-hbo.md)  
+- [🦠🤒🏥 Snohomish County sees measles outbreak](./videos/snohomish-county-sees-measles-outbreak.md)  
+- [❤️🧠👨‍👩‍👧‍👦 The crucial emotional skill most adults were never taught | Becky Kennedy](./videos/the-crucial-emotional-skill-most-adults-were-never-taught-becky-kennedy.md)  
   
   
 ## [🌌 Topics](./topics/index.md) (91)  

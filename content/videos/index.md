@@ -5,10 +5,10 @@ aliases:
 title: 📺 Videos
 URL: https://bagrounds.org/videos
 backlinks: false
-updated: 2026-04-25T14:53:55-07:00
+updated: 2026-04-25T15:09:59-07:00
 ---
 [Home](../index.md)  
-# 📺 Videos (800)  
+# 📺 Videos (801)  
 - [💰🤑🤖💡🚀💲 $0.10 per Month Runs My Entire AI Life. I'll Show You How.](./0-10-month-runs-my-entire-ai-life-ill-show-you-how.md)  
 - [📊📈📉📃👁️ 10 Charts to Understand the 900 Page Budget Bill](./10-charts-to-understand-the-900-page-budget-bill.md)  
 - [🤖🔗⬆️✅ 12-Factor Agents: Patterns of reliable LLM applications — Dex Horthy, HumanLayer](./12-factor-agents-patterns-of-reliable-llm-applications-dex-horthy-humanlayer.md)  
@@ -414,6 +414,7 @@ updated: 2026-04-25T14:53:55-07:00
 - [🇮🇱🎤📺 Netanyahu: Last Week Tonight with John Oliver (HBO)](./netanyahu-last-week-tonight-with-john-oliver-hbo.md)  
 - [🇺🇸🛡️💪 Never Give Up A Conversation with Joyce White Vance—«Giving Up Is Unforgivable: A Manual for Keeping a Democracy»](./a-conversation-with-joyce-white-vance-giving-up-is-unforgivable-a-manual-for-keeping-a-democracy.md)  
 - [🤖🏢👁️ New book ‘Empire of AI’ investigates OpenAI, the company behind ChatGPT](./new-book-empire-of-ai-investigates-openai-the-company-behind-chatgpt.md)  
+- [🎷🎶🗳️ NEW JAZZ HIT - It's Cause the Midterms](./new-jazz-hit-its-cause-the-midterms.md)  
 - [👶🧑‍👩‍👧‍👦💲➡️ New Mexico to launch universal free childcare for all New Mexicans](./new-mexico-to-launch-universal-free-childcare-for-all-new-mexicans.md)  
 - [🇮🇱⚔️🌍🚶 News Wrap: Netanyahu vows to press ahead in Gaza as U.N. delegates walk out in protest](./news-wrap-netanyahu-vows-to-press-ahead-in-gaza-as-un-delegates-walk-out-in-protest.md)  
 - [News Wrap: Senate pulls all-nighter to pass Republican budget bill](./news-wrap-senate-pulls-all-nighter-to-pass-republican-budget-bill.md)  

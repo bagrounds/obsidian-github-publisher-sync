@@ -11,9 +11,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-16T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-04-25T03:11:47Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A high-contrast, artistic visualization featuring a delicate, vibrant butterfly positioned at the center of a swirling, tempestuous storm. The wings of the butterfly are composed of intricate, recursive fractal patterns in shades of electric blue and deep violet, contrasting against a background of chaotic, monochromatic ink-like clouds. Fine, golden lines trace the path of a strange attractor, weaving through the storm to suggest hidden order within the turbulence. The lighting is cinematic and dramatic, with a soft glow emanating from the butterflys wings, casting long shadows that distort into complex, geometric shapes. The overall aesthetic is a blend of scientific beauty and raw, unpredictable energy.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🌪️💥🦋🆕 Chaos: Making a New Science  
+![books-chaos](../books-chaos.jpg)  
 [🛒 Chaos: Making a New Science. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4dGUlt6)  
   
 ## 🤖 AI Summary  

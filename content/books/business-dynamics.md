@@ -11,9 +11,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-16T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-04-24T23:25:54Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A minimalist, isometric illustration featuring a complex, interconnected web of glowing nodes and translucent geometric shapes. The nodes are linked by thin, flowing lines that form circular feedback loops, representing systemic motion. In the center, a stylized stock-and-flow diagram—depicted as a series of interconnected reservoirs and valves—glows softly, symbolizing the transformation of resources over time. The color palette uses deep navy and charcoal backgrounds with vibrant, contrasting accents of electric blue, amber, and teal to signify data points and energy flow. The composition should evoke a sense of architectural precision and depth, suggesting a hidden, underlying structure beneath the surface of a chaotic, abstract business environment. The style is clean, modern, and professional, utilizing soft light gradients to emphasize the interconnectedness of the various system parts.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🌐🔗📈🧩 Business Dynamics: Systems Thinking and Modeling for a Complex World  
+![books-business-dynamics](../books-business-dynamics.jpg)  
 [🛒 Business Dynamics: Systems Thinking and Modeling for a Complex World. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4kOfhAR)  
   
 ## 🤖 AI Summary  

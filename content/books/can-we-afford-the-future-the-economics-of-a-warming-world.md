@@ -10,9 +10,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-18T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-04-25T00:37:30Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A split-composition illustration depicting a balance scale resting on a globe. On one side of the scale sits a stack of gold coins and abstract financial charts, representing short-term economic models. On the other side sits a vibrant, thriving green forest and a clean, blue ocean, representing long-term planetary health. The two sides are perfectly balanced, suggesting that environmental preservation and economic stability are interconnected. The background is a soft, warm gradient transitioning from a hazy, industrial orange to a clear, hopeful sky blue, symbolizing the shift from current climate challenges toward a sustainable future. The style is clean, modern, and minimalist, utilizing geometric shapes and a sophisticated color palette of deep greens, metallic golds, and bright teals.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 💰🌎🌡️ Can We Afford the Future?: The Economics of a Warming World  
+![books-can-we-afford-the-future-the-economics-of-a-warming-world](../books-can-we-afford-the-future-the-economics-of-a-warming-world.jpg)  
 [🛒 Can We Afford the Future?: The Economics of a Warming World. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3LBIVwF)  
   
 🌱💰🌍 A re-evaluation of climate change economics arguing that solutions are affordable and essential, challenging conventional models that undervalue environmental protection and necessitate urgent, large-scale investment in low-carbon technologies.  

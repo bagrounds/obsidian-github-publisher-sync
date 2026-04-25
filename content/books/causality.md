@@ -11,9 +11,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-17T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-04-25T01:45:01Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A minimalist, high-contrast illustration featuring a complex, interconnected web of nodes and lines representing a directed acyclic graph (DAG). Some nodes are glowing, connected by bold, directional arrows that signify causal flow. In the center, a stylized, translucent glass prism refracts a single beam of light into a structured, geometric pattern of branching paths. The background is a deep, matte charcoal, emphasizing the clean, white, and electric-blue lines of the diagram. The aesthetic is modern, scientific, and architectural, evoking a sense of clarity, logic, and the systematic deconstruction of complexity into fundamental cause-and-effect relationships.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # ❓➡️⚙️ Causality: Models, Reasoning, and Inference  
+![books-causality](../books-causality.jpg)  
 [🛒 Causality: Models, Reasoning, and Inference. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4dOAtEw)  
   
 ## 🤖 AI Summary  

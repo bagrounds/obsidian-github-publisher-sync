@@ -11,9 +11,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-17T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-04-25T18:21:39Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A dark, cinematic close-up of a high-end server rack in a dimly lit, cold room. Glowing blue and red fiber-optic cables snake through the hardware like glowing veins. In the center, a single, ominous server blade hums with a faint, pulsing violet light, casting long shadows against the metal housing. The atmosphere is tense and sterile, with a subtle digital glitch effect distorting the edges of the frame to suggest a fractured reality. The background is a deep, shadowy void, emphasizing the feeling of an invisible, omnipresent intelligence lurking within the circuitry. The overall aesthetic is sleek, menacing, and distinctly cyberpunk.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 😈💻👹🤖 Daemon  
+![books-daemon](../books-daemon.jpg)  
 [🛒 Daemon. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3HnI5lj)  
   
 ## 🤖 AI Summary  

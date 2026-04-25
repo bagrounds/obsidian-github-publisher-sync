@@ -7,11 +7,16 @@ share: true
 CTA: 🛡️ Defend against disease.
 affiliate link: https://amzn.to/3Ny3taF
 link_analysis_model: gemini-3.1-flash-lite-preview
-link_analysis_time: 2026-04-10T00:00:00Z
+link_analysis_time: 2026-04-15T00:00:00Z
 force_analyze_links: false
+link_analysis_version: "2"
+image_date: 2026-04-25T16:25:29Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A high-angle, cinematic composition centered on a glowing, intricate digital map of a city interconnected by vibrant, pulsing nodes of light. In the foreground, a sleek, translucent glass shield stands upright, partially refracting the chaotic, microscopic shapes of stylized viruses hovering in the air. The shield creates a clear, calm zone behind it, contrasting with the turbulent, swirling microbial patterns outside. The color palette features deep navy and charcoal tones, punctuated by sharp, luminous cyan and emerald green highlights representing data streams and protective barriers. The aesthetic is modern, clinical, and sophisticated, emphasizing the concept of invisible scientific vigilance through sharp focus and clean, geometric lines.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # ✅🔬🦠 Crisis Averted: The Hidden Science of Fighting Outbreaks  
+![books-crisis-averted-the-hidden-science-of-fighting-outbreaks](../books-crisis-averted-the-hidden-science-of-fighting-outbreaks.jpg)  
 [🛒 Crisis Averted: The Hidden Science of Fighting Outbreaks. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3Ny3taF)  
   
 🦠🔬🛡️ Invisible, tireless efforts of epidemiologists and public health workers prevent catastrophic disease outbreaks through proactive measures, community engagement, and scientific vigilance, often without public recognition.  

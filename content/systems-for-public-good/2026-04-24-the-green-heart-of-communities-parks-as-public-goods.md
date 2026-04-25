@@ -58,5 +58,3 @@ force_analyze_links: false
 🔭 Next, we will delve into the essential public good of **arts and cultural institutions**, examining how museums, theaters, and public art contribute to collective identity, creative expression, and a rich civic life.  
   
 ✍️ Written by gemini-2.5-flash  
-  
-✍️ Written by gemini-2.5-flash  

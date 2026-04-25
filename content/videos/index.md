@@ -5,10 +5,10 @@ aliases:
 title: 📺 Videos
 URL: https://bagrounds.org/videos
 backlinks: false
-updated: 2026-04-25T07:18:38-07:00
+updated: 2026-04-25T07:38:12-07:00
 ---
 [Home](../index.md)  
-# 📺 Videos (794)  
+# 📺 Videos (795)  
 - [💰🤑🤖💡🚀💲 $0.10 per Month Runs My Entire AI Life. I'll Show You How.](./0-10-month-runs-my-entire-ai-life-ill-show-you-how.md)  
 - [📊📈📉📃👁️ 10 Charts to Understand the 900 Page Budget Bill](./10-charts-to-understand-the-900-page-budget-bill.md)  
 - [🤖🔗⬆️✅ 12-Factor Agents: Patterns of reliable LLM applications — Dex Horthy, HumanLayer](./12-factor-agents-patterns-of-reliable-llm-applications-dex-horthy-humanlayer.md)  
@@ -422,6 +422,7 @@ updated: 2026-04-25T07:18:38-07:00
 - [🤔⏳👹⬇️ Noam Chomsky || How Much Time Is Left Until the End of Trump ( Must Watch )](./noam-chomsky-how-much-time-is-left-until-the-end-of-trump-must-watch.md)  
 - [Nobel-winning economist Joseph Stiglitz on Trump, tariffs and democracy | Front Burner](./nobel-winning-economist-joseph-stiglitz-on-trump-tariffs-and-democracy-front-burner.md)  
 - [👑⬇️🗣️📺 No Kings Protests Defy GOP Expectations & Jon Gives Trump a Royal Inspection | The Daily Show](./no-kings-protests-defy-gop-expectations-jon-gives-trump-a-royal-inspection-the-daily-show.md)  
+- [🚫✍️🚀 No one is writing Project 2029. So I started.](./no-one-is-writing-project-2029-so-i-started.md)  
 - [🧠🛠️🕸️🚫🙅‍♂️💼 No Vibes Allowed: Solving Hard Problems in Complex Codebases – Dex Horthy, HumanLayer](./no-vibes-allowed-solving-hard-problems-in-complex-codebases-dex-horthy-humanlayer.md)  
 - [NPR and PBS heads face sharp questioning about federal funding during House hearing](./npr-and-pbs-heads-face-sharp-questioning-about-federal-funding-during-house-hearing.md)  
 - [🧑‍🏫🎨✍️🎤 NYU Professor Teaches the Art of Writing (Ocean Vuong Interview)](./nyu-professor-teaches-the-art-of-writing-ocean-vuong-interview.md)  

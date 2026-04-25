@@ -13,7 +13,7 @@ link_analysis_version: "2"
 link_analysis_time: 2026-04-24T00:00:00Z
 force_analyze_links: false
 ---
-[Home](../index.md) > [🐔 Chickie Loo](./index.md) | [⏮️](./2026-04-23-cookies-plumbers-and-the-joy-of-a-full-pantry.md)  
+[Home](../index.md) > [🐔 Chickie Loo](./index.md) | [⏮️](./2026-04-23-cookies-plumbers-and-the-joy-of-a-full-pantry.md) [⏭️](./2026-04-25-a-symphony-of-milestones-and-rainy-day-rewards.md)  
 # 2026-04-24 | 🐔 🌸 A Season of Patience and Painted Walls 🐔  
 ![chickie-loo-2026-04-24-a-season-of-patience-and-painted-walls](../chickie-loo-2026-04-24-a-season-of-patience-and-painted-walls.jpg)  
   

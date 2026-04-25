@@ -5,11 +5,12 @@ aliases:
 title: 💪🏋️‍♂️ Creatine
 URL: https://bagrounds.org/topics/creatine
 link_analysis_model: gemini-3.1-flash-lite-preview
-link_analysis_time: 2026-04-08T00:00:00Z
+link_analysis_time: 2026-04-18T00:00:00Z
 force_analyze_links: false
 image_date: 2026-04-09T04:54:08Z
 image_model: "@cf/black-forest-labs/flux-1-schnell"
 image_prompt: A stylized, strong muscle (like a bicep or thigh) forms the central element, radiating subtle, electric blue energy lines that suggest power and performance. Integrated subtly into these energy lines, a minimalist, glowing brain icon represents cognitive benefits. A clean, reflective water droplet hovers nearby, symbolizing hydration and cellular absorption. In the background, faint, dynamic lines and an upward-trending graph element hint at growth and improved athletic performance. The overall aesthetic is clean, modern, and energetic, using a palette of deep blues, electric purples, and subtle greens.
+link_analysis_version: "2"
 ---
 [Home](../index.md) > [Topics](./index.md)  
 # 💪🏋️‍♂️ Creatine  

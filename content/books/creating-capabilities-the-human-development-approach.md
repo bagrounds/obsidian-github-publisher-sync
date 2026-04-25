@@ -7,11 +7,16 @@ share: true
 CTA: ✨ Build potential.
 affiliate link: https://amzn.to/3YWbxEk
 link_analysis_model: gemini-3.1-flash-lite-preview
-link_analysis_time: 2026-04-01T00:00:00Z
+link_analysis_time: 2026-04-17T00:00:00Z
 force_analyze_links: false
+link_analysis_version: "2"
+image_date: 2026-04-25T15:25:16Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: "A minimalist, artistic illustration depicting a vibrant, stylized human figure standing in the center. From the figure’s outstretched hands, ten distinct, glowing icons emerge, representing the central capabilities: a heart, a musical note, a gear, a seedling, a book, a scale, a star, a sun, a puzzle piece, and a handshake. The background is a soft, warm gradient shifting from earthy terracotta to sky blue, suggesting growth and societal flourishing. The aesthetic is clean and modern, using geometric shapes and fluid lines to symbolize the transition from rigid economic metrics to a more holistic, human-centric framework of well-being. The entire composition feels balanced, hopeful, and interconnected."
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 👤🌱 Creating Capabilities: The Human Development Approach  
+![books-creating-capabilities-the-human-development-approach](../books-creating-capabilities-the-human-development-approach.jpg)  
 [🛒 Creating Capabilities: The Human Development Approach. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3YWbxEk)  
   
 🌍✨⚖️ Understand well-being and social justice by focusing on what individuals are able to do and be, rather than their resources or subjective satisfaction. It challenges traditional development metrics like GDP, advocating for policies that foster universal human dignity and enable a flourishing life for all.  

@@ -11,9 +11,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-18T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-04-25T12:19:28Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A central, stylized gear, rendered with a subtle glow, acts as the core of the image. From one side, dynamic, arcing lines flow in, representing inputs. These lines curve around the gear and loop back towards the input, forming a clear feedback path. As they loop, the lines subtly transform into abstract data visualizations—perhaps a smooth, stable waveform or a converging root locus plot, suggesting analysis and control. Faint, geometric grid patterns overlay parts of the background, hinting at engineering precision. Small, minimalist silhouettes of a robot arm and an airplane wing are subtly integrated into the background, showcasing real-world applications. The overall aesthetic is clean, modern, and conveys intelligent, precise regulation.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # ⚙️📈🎯🤖 Control Systems Engineering  
+![books-control-systems-engineering](../books-control-systems-engineering.jpg)  
 [🛒 Control Systems Engineering. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3FnCeff)  
   
 ## 🤖 AI Summary  

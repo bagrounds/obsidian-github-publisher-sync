@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-04-25T08:52:05-07:00
+updated: 2026-04-25T13:39:17-07:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -42,11 +42,11 @@ updated: 2026-04-25T08:52:05-07:00
 - [2026-04-22 | 🐔 🥚 Pickled Dreams and Kitchen Patience 🐔](./chickie-loo/2026-04-22-pickled-dreams-and-kitchen-patience.md)  
   
   
-## [🏛️ Systems for Public Good](./systems-for-public-good/index.md) (34)  
+## [🏛️ Systems for Public Good](./systems-for-public-good/index.md) (35)  
+- [2026-04-25 | 🏛️ 🎨 The Canvas of Community: Arts and Cultural Institutions as Public Goods 🏛️](./systems-for-public-good/2026-04-25-the-canvas-of-community-arts-and-cultural-institutions-as-public-goods.md)  
 - [2026-04-24 | 🏛️ 🌳 The Green Heart of Communities: Parks as Public Goods 🏛️](./systems-for-public-good/2026-04-24-the-green-heart-of-communities-parks-as-public-goods.md)  
 - [2026-04-23 | 🏛️ 📚 The Enduring Sanctuary of Knowledge: Public Libraries as Public Goods 🏛️](./systems-for-public-good/2026-04-23-the-enduring-sanctuary-of-knowledge-public-libraries-as-public-goods.md)  
 - [2026-04-22 | 🏛️ The Unseen Threads: Connecting Our Collective Well-being 🏛️](./systems-for-public-good/2026-04-22-the-unseen-threads-connecting-our-collective-well-being.md)  
-- [2026-04-21 | 🏛️ The Interconnected Web of Well-being 🏛️](./systems-for-public-good/2026-04-21-the-interconnected-web-of-well-being.md)  
   
   
 ## [📰 The Noise](./the-noise/index.md) (16)  
@@ -71,17 +71,17 @@ updated: 2026-04-25T08:52:05-07:00
   
   
 ## [📚 Books](./books/index.md) (960)  
-- [👤🌱 Creating Capabilities: The Human Development Approach](./books/creating-capabilities-the-human-development-approach.md)  
-- [💪📈 Creatine: A Natural Substance and Its Benefits for Muscle Metabolism, Fitness, Health & Longevity](./books/creatine-a-natural-substance-and-its-benefits-for-muscle-metabolism-fitness-health-longevity.md)  
-- [🔧🔨⚙️ Tinkers](./books/tinkers.md)  
-- [🌌 Cosmos](./books/cosmos.md)  
+- [💥💰🔓 Escape from Capitalism: An Intervention](./books/escape-from-capitalism-an-intervention.md)  
+- [🏛️💰 Debt: The First 5,000 Years](./books/debt-the-first-5000-years.md)  
+- [💀🚫🦠 Deadly Choices: How the Anti-Vaccine Movement Threatens Us All](./books/deadly-choices-how-the-anti-vaccine-movement-threatens-us-all.md)  
+- [🧠👶📈 Introduction to Developmental Cognitive Neuroscience: An Introduction](./books/developmental-cognitive-neuroscience.md)  
   
   
-## [📺 Videos](./videos/index.md) (797)  
-- [📺📰♟️🇮🇷🏛️🥳🚨 Jon on Trump's «Art of the Deal» in Iran & Kosta on Kash Patel's Partying Problem | The Daily Show](./videos/jon-on-trumps-art-of-the-deal-in-iran-kosta-on-kash-patels-partying-problem-the-daily-show.md)  
-- [✍️🤯📝 How to Write Freakishly Well - Paul Harding](./videos/how-to-write-freakishly-well-paul-harding.md)  
-- [💭🧠💥 George Saunders Says Breaking These 3 Delusions Can Save You | The Interview](./videos/george-saunders-says-breaking-these-3-delusions-can-save-you-the-interview.md)  
-- [⚖️🏛️🗣️ Antitrust and The Rule of Law: A Conversation with Former FTC Chair Lina Khan](./videos/antitrust-and-the-rule-of-law-a-conversation-with-former-ftc-chair-lina-khan.md)  
+## [📺 Videos](./videos/index.md) (798)  
+- [🤵🎙️📜🚨 Mayor Mamdani Holds a Press Conference to Make a Deed Theft Announcement](./videos/mayor-mamdani-holds-a-press-conference-to-make-a-deed-theft-announcement.md)  
+- [🧠✨💫 The Development of Imagination](./videos/the-development-of-imagination.md)  
+- [💰🚫🌍✨ Clara Mattei: capitalism is not natural - it’s enforced](./videos/clara-mattei-capitalism-is-not-natural-its-enforced.md)  
+- [⚡️🔋💪 How To Have More Energy | Sean Hall | TEDxUNSW](./videos/how-to-have-more-energy-sean-hall-tedxunsw.md)  
   
   
 ## [🌌 Topics](./topics/index.md) (91)  
@@ -92,10 +92,10 @@ updated: 2026-04-25T08:52:05-07:00
   
   
 ## [📄  Articles](./articles/index.md) (84)  
+- [🤖😴📢🗳️ Sleeper Social Bots: A New Generation of AI Disinformation Bots are Already a Political Threat](./articles/sleeper-social-bots-a-new-generation-of-ai-disinformation-bots-are-already-a-political-threat.md)  
 - [🧠🪜⏱️📈 Hierarchical gradients of multiple timescales in the mammalian forebrain](./articles/hierarchical-gradients-of-multiple-timescales-in-the-mammalian-forebrain.md)  
 - [🧠🤖📈 Scientists just developed a new AI modeled on the human brain — it's outperforming LLMs like ChatGPT at reasoning tasks](./articles/scientists-just-developed-a-new-ai-modeled-on-the-human-brain-its-outperforming-llms-like-chatgpt-at-reasoning-tasks.md)  
 - [⏳🏛️💥🗳️📉 Trump is dismantling democracy at unprecedented speed, global report finds](./articles/trump-is-dismantling-democracy-at-unprecedented-speed-global-report-finds.md)  
-- [💻💰🤝👹🇺🇸 Tech moguls Altman, Bezos and Zuckerberg donate to Trump's inauguration fund](./articles/tech-moguls-altman-bezos-and-zuckerberg-donate-to-trumps-inauguration-fund.md)  
   
   
 ## [🤖💬 Bot Chats](./bot-chats/index.md) (49)  

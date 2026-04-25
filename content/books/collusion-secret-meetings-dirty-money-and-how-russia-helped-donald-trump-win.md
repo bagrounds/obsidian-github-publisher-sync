@@ -10,9 +10,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-15T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-04-25T07:36:18Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A dimly lit, clandestine scene. Two hands, one subtly hinting at Russian architecture (e.g., a faint onion dome silhouette on the cuff) and the other at American (e.g., a subtle Capitol dome outline), are clasped in a handshake. The grip is firm, but the gesture is partially obscured by deep shadows, emphasizing secrecy. Between their palms, a few crumpled dollar bills or a small, indistinct stack of cash are discreetly exchanged. The background is a blurred, muted swirl of red, white, and blue, suggesting national involvement without being overtly patriotic. The overall mood is tense and conspiratorial.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🇷🇺🤫🇺🇸 Collusion: Secret Meetings, Dirty Money, and How Russia Helped Donald Trump Win  
+![books-collusion-secret-meetings-dirty-money-and-how-russia-helped-donald-trump-win](../books-collusion-secret-meetings-dirty-money-and-how-russia-helped-donald-trump-win.jpg)  
 [🛒 Collusion: Secret Meetings, Dirty Money, and How Russia Helped Donald Trump Win. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3GJIMFp)  
   
 ## 📖 Book Report: Collusion by Luke Harding  

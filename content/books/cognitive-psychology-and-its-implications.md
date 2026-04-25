@@ -12,9 +12,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-18T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-04-25T06:44:39Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: "A minimalist, high-contrast illustration featuring a stylized human silhouette profile in soft, matte blue. Inside the head, a vibrant, glowing network of interconnected golden nodes and synaptic pathways forms a complex, geometric puzzle pattern. Floating around the silhouette are abstract, semi-transparent icons representing cognitive functions: a small magnifying glass for perception, a stack of translucent blocks for memory, a delicate gear for problem-solving, and a glowing lightbulb for insight. The background is a clean, neutral charcoal gray with subtle, faint concentric circles radiating from the center of the brain, suggesting deep focus and ripple effects of thought. The overall aesthetic is sleek, modern, and academic, utilizing a professional color palette of navy, gold, and slate to evoke a sense of intellectual clarity and scientific discovery."
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🧠🤔💡➡️ Cognitive Psychology and Its Implications  
+![books-cognitive-psychology-and-its-implications](../books-cognitive-psychology-and-its-implications.jpg)  
 [🛒 Cognitive Psychology and Its Implications. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4jx7AxG)  
   
 ## 🤖 AI Summary  

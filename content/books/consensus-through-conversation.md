@@ -8,11 +8,16 @@ Author:
 tags:
 affiliate link: https://amzn.to/3FLfoOB
 link_analysis_model: gemini-3.1-flash-lite-preview
-link_analysis_time: 2026-04-06T00:00:00Z
+link_analysis_time: 2026-04-24T00:00:00Z
 force_analyze_links: false
+link_analysis_version: "2"
+image_date: 2026-04-25T10:25:14Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A circular composition of diverse, subtly outlined human profiles (heads, shoulders) in various muted colors, facing inward. From each profile, a unique, flowing line or light stream extends towards the center. These lines gracefully intertwine and converge to form a bright, glowing, multifaceted gem or knot in the very middle, symbolizing a unified, high-commitment decision. The background is a soft, warm gradient.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🗣️🤝✅ Consensus through Conversation: How to Achieve High-Commitment Decisions  
+![books-consensus-through-conversation](../books-consensus-through-conversation.jpg)  
 [🛒 Consensus through Conversation: How to Achieve High-Commitment Decisions. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3FLfoOB)  
   
 ## 🤖 AI Summary  

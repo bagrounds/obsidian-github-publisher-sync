@@ -12,9 +12,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-16T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-04-25T13:41:47Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A clean, minimalist digital illustration featuring a stylized 3D topographic mountain landscape. The peaks are smooth and rounded, representing the concept of convexity. A glowing, vibrant path traces a smooth, singular descent from the highest summit down toward a central, perfectly rounded valley floor. The background is a soft, deep gradient of navy and teal, contrasted by the bright, warm gold of the path. Floating geometric elements—such as a subtle, translucent grid overlay and a few elegant, floating spheres—hover near the mountain to signify mathematical precision and computational structure. The overall composition is balanced and symmetrical, evoking a sense of clarity, efficiency, and logical order.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # ⛰️⬇️📈 Convex Optimization  
+![books-convex-optimization](../books-convex-optimization.jpg)  
 [🛒 Convex Optimization. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4564QUI)  
   
 ## 🤖 AI Summary  

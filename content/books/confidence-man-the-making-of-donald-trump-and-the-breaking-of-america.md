@@ -9,9 +9,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-18T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-04-25T10:24:37Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: "A stylized, slightly distorted portrait of a mans face dominates the foreground, featuring a confident, almost theatrical smirk and shadowed eyes, hinting at a hidden agenda. Behind him, the map of the United States is depicted as a fragile, cracked ceramic plate, with fissures spreading from the center, some pieces visibly shifting apart. Subtle visual cues are integrated: a coiled snake subtly emerging from the cracks, oil derricks silhouetted against a dramatic, stormy sky, and a faint, crumbling New York skyscraper in the distant background. The overall tone is dramatic and unsettling, using a palette of deep blues, fractured reds, and ominous grays, suggesting both power and decay."
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 👹🐍🛢️🇺🇸 Confidence Man: The Making of Donald Trump and the Breaking of America  
+![books-confidence-man-the-making-of-donald-trump-and-the-breaking-of-america](../books-confidence-man-the-making-of-donald-trump-and-the-breaking-of-america.jpg)  
 [🛒 Confidence Man: The Making of Donald Trump and the Breaking of America. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3FBYOAM)  
   
 ## 📖 Book Report: Confidence Man: The Making of Donald Trump and the Breaking of America by Maggie Haberman  

@@ -9,9 +9,13 @@ affiliate link: https://amzn.to/4qlSS0F
 link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-10T00:00:00Z
 force_analyze_links: false
+image_date: 2026-04-25T11:24:41Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A high-contrast, isometric illustration featuring a complex, translucent 3D puzzle cube suspended in a digital workspace. The cube is composed of interlocking gears, geometric nodes, and glowing circuit-like pathways that connect various vertices. Some segments of the cube are perfectly aligned and illuminated in soft cyan, while others are slightly detached and glowing in warm orange, representing the search for a solution. The background is a deep, matte navy blue with subtle, faint white grid lines suggesting a mathematical coordinate system. Floating particles of light drift between the puzzle pieces, emphasizing the algorithmic process of pruning and constraint satisfaction. The aesthetic is clean, modern, and technical, blending abstract geometry with high-tech computational imagery.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🧩⚙️ Constraint Processing  
+![books-constraint-processing](../books-constraint-processing.jpg)  
 [🛒 Constraint Processing. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4qlSS0F)  
   
 🧠✨ Theoretical foundations and practical algorithms for solving Constraint Satisfaction Problems. A foundational text for AI, operations research, and computer science practitioners.  

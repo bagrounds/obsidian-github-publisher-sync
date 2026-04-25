@@ -10,9 +10,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-17T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-04-25T06:44:35Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A high-angle, minimalist composition featuring a sleek, modern wooden desk. On one side sits an open notebook with a fountain pen resting on a blank page. Opposite it, a glowing, translucent geometric orb representing artificial intelligence hovers slightly above the desk surface, emitting a soft, warm amber light. The light from the orb subtly illuminates the human workspace, blending organic textures like paper and wood with ethereal digital elements. The background is a soft-focus, neutral-toned office environment, emphasizing a clean, professional aesthetic of partnership and collaboration between traditional human tools and advanced technology. The lighting is balanced and atmospheric, suggesting a seamless integration of the two worlds.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🧑‍🤝‍🤖 Co-Intelligence: The Definitive, Bestselling Guide to Living and Working with AI  
+![books-co-intelligence-the-definitive-bestselling-guide-to-living-and-working-with-ai](../books-co-intelligence-the-definitive-bestselling-guide-to-living-and-working-with-ai.jpg)  
 [🛒 Co-Intelligence: The Definitive, Bestselling Guide to Living and Working with AI. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4p7nbH9)  
   
 A guide to blend human ingenuity with AI's capabilities to thrive in our rapidly evolving, AI-augmented world. 🚀🤝💡  

@@ -13,7 +13,7 @@ link_analysis_version: "2"
 link_analysis_time: 2026-04-24T00:00:00Z
 force_analyze_links: false
 ---
-[Home](../index.md) > [📰 The Noise](./index.md) | [⏮️](./2026-04-23-global-currents-echoing-futures.md)  
+[Home](../index.md) > [📰 The Noise](./index.md) | [⏮️](./2026-04-23-global-currents-echoing-futures.md) [⏭️](./2026-04-25-echoes-of-conflict-sparks-of-discovery.md)  
 # 2026-04-24 | 📰 🌪️ Currents of Conflict, Waves of Innovation 🌊 📰  
 ![the-noise-2026-04-24-currents-of-conflict-waves-of-innovation](../the-noise-2026-04-24-currents-of-conflict-waves-of-innovation.jpg)  
   

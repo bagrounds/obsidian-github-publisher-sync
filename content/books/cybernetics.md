@@ -14,9 +14,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-18T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-04-25T18:21:36Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A split-composition illustration rendered in a clean, minimalist aesthetic. On the left side, a stylized anatomical sketch of a biological nervous system glows in soft, organic amber tones. On the right side, the corresponding structure is mirrored as a complex, geometric circuit board rendered in cool, metallic blue. In the center, where the two halves meet, a series of glowing, circular feedback loops intertwine, bridging the gap between the organic and the mechanical. The background is a deep, matte charcoal, emphasizing the vibrancy of the lines and the interconnected nature of the two systems. The overall style is reminiscent of a classic 1940s scientific diagram reimagined with modern, sleek vector art.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🤖🗣️🐒⚙️ Cybernetics: or Control and Communication in the Animal and the Machine  
+![books-cybernetics](../books-cybernetics.jpg)  
 [🛒 Cybernetics: or Control and Communication in the Animal and the Machine. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3FmVo4Z)  
   
 ## 🤖 AI Summary  

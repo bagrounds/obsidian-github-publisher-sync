@@ -5,10 +5,10 @@ aliases:
 title: 📺 Videos
 URL: https://bagrounds.org/videos
 backlinks: false
-updated: 2026-04-25T13:39:17-07:00
+updated: 2026-04-25T14:53:55-07:00
 ---
 [Home](../index.md)  
-# 📺 Videos (798)  
+# 📺 Videos (800)  
 - [💰🤑🤖💡🚀💲 $0.10 per Month Runs My Entire AI Life. I'll Show You How.](./0-10-month-runs-my-entire-ai-life-ill-show-you-how.md)  
 - [📊📈📉📃👁️ 10 Charts to Understand the 900 Page Budget Bill](./10-charts-to-understand-the-900-page-budget-bill.md)  
 - [🤖🔗⬆️✅ 12-Factor Agents: Patterns of reliable LLM applications — Dex Horthy, HumanLayer](./12-factor-agents-patterns-of-reliable-llm-applications-dex-horthy-humanlayer.md)  
@@ -641,6 +641,7 @@ updated: 2026-04-25T13:39:17-07:00
 - [🏫➡️🧊👨‍👩‍👧‍👦💔 'They are circling our schools,' superintendent says after 5-year-old detained by ICE](./they-are-circling-our-schools-superintendent-says-after-5-year-old-detained-by-ice.md)  
 - [💥👥💀🚨 ‘They killed a man, created chaos:’ Gov. Walz on shooting](./they-killed-a-man-created-chaos-gov-walz-on-shooting.md)  
 - [🧠💡✨ This 1 Book ACTUALLY Teaches You to Think Like a Genius](./this-1-book-actually-teaches-you-to-think-like-a-genius.md)  
+- [💨🏠⚡🚫❓ This Chimney Will Cool Your Entire Home WITHOUT Electricity. Why Did The Energy Industry Hide It?](./this-chimney-will-cool-your-entire-home-without-electricity-why-did-the-energy-industry-hide-it.md)  
 - [💥🇺🇸🏛️ This Could Change American Politics.](./this-could-change-american-politics.md)  
 - [📊👀🌍 This graph will change how you see the world](./this-graph-will-change-how-you-see-the-world.md)  
 - [🤫💰🪙 This Is What They Don't Tell You About Money And Gold | Prof. L. Randall Wray](./this-is-what-they-dont-tell-you-about-money-and-gold-prof-l-randall-wray.md)  
@@ -726,6 +727,7 @@ updated: 2026-04-25T13:39:17-07:00
 - [🛒💲📈 We Had 400 People Shop For Groceries. What We Found Will Shock You.](./we-had-400-people-shop-for-groceries-what-we-found-will-shock-you.md)  
 - [📢👂🆕💻✨ We heard you: the new Framework Laptop 13 Pro.](./we-heard-you-the-new-framework-laptop-13-pro.md)  
 - [🔎💸🕵️‍♂️🏛️🇺🇸🤫💥🤯 We Investigated The Criminals Who Bought Trump: What We Found Will Shock You](./we-investigated-the-criminals-who-bought-trump-what-we-found-will-shock-you.md)  
+- [❤️🚫🏛️🇮🇷🧱🎥 We Love Americans - But Not Their Leaders | New LEGO Video from IRAN](./we-love-americans-but-not-their-leaders-new-lego-video-from-iran.md)  
 - [What America is losing as President Trump fires independent government watchdogs | 60 Minutes](./what-america-is-losing-as-president-trump-fires-independent-government-watchdogs-60-minutes.md)  
 - [What Are You?](./what-are-you.md)  
 - [❓🔥🧾🚫 'What Did That Accomplish?': Don Beyer Grills IRS CEO Over Ending Of IRS Direct File](./what-did-that-accomplish-don-beyer-grills-irs-ceo-over-ending-of-irs-direct-file.md)  

@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-04-25T13:39:17-07:00
+updated: 2026-04-25T14:53:55-07:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -71,17 +71,17 @@ updated: 2026-04-25T13:39:17-07:00
   
   
 ## [📚 Books](./books/index.md) (960)  
-- [💥💰🔓 Escape from Capitalism: An Intervention](./books/escape-from-capitalism-an-intervention.md)  
-- [🏛️💰 Debt: The First 5,000 Years](./books/debt-the-first-5000-years.md)  
-- [💀🚫🦠 Deadly Choices: How the Anti-Vaccine Movement Threatens Us All](./books/deadly-choices-how-the-anti-vaccine-movement-threatens-us-all.md)  
-- [🧠👶📈 Introduction to Developmental Cognitive Neuroscience: An Introduction](./books/developmental-cognitive-neuroscience.md)  
+- [💰⚕️ Making Them Pay: How to Get the Most from Health Insurance and Managed Care](./books/making-them-pay-how-to-get-the-most-from-health-insurance-and-managed-care.md)  
+- [🙅🏼‍♀️🧾🏥⚔️ Never Pay the First Bill: And Other Ways to Fight the Health Care System and Win](./books/never-pay-the-first-bill-and-other-ways-to-fight-the-health-care-system-and-win.md)  
+- [🧑‍⚕️🗣️ Patient Advocacy for Health Care Quality: Strategies for Achieving Patient-Centered Care](./books/patient-advocacy-for-health-care-quality-strategies-for-achieving-patient-centered-care.md)  
+- [⚕️💸 Health Insurance in America: A Consumer's Guide](./books/health-insurance-in-america-a-consumers-guide.md)  
   
   
-## [📺 Videos](./videos/index.md) (798)  
-- [🤵🎙️📜🚨 Mayor Mamdani Holds a Press Conference to Make a Deed Theft Announcement](./videos/mayor-mamdani-holds-a-press-conference-to-make-a-deed-theft-announcement.md)  
-- [🧠✨💫 The Development of Imagination](./videos/the-development-of-imagination.md)  
-- [💰🚫🌍✨ Clara Mattei: capitalism is not natural - it’s enforced](./videos/clara-mattei-capitalism-is-not-natural-its-enforced.md)  
-- [⚡️🔋💪 How To Have More Energy | Sean Hall | TEDxUNSW](./videos/how-to-have-more-energy-sean-hall-tedxunsw.md)  
+## [📺 Videos](./videos/index.md) (800)  
+- [❤️🚫🏛️🇮🇷🧱🎥 We Love Americans - But Not Their Leaders | New LEGO Video from IRAN](./videos/we-love-americans-but-not-their-leaders-new-lego-video-from-iran.md)  
+- [💨🏠⚡🚫❓ This Chimney Will Cool Your Entire Home WITHOUT Electricity. Why Did The Energy Industry Hide It?](./videos/this-chimney-will-cool-your-entire-home-without-electricity-why-did-the-energy-industry-hide-it.md)  
+- [💰➡️🪖 Why It Matters That Trump Rerouted Money to Pay the Troops | Explainer](./videos/why-it-matters-that-trump-rerouted-money-to-pay-the-troops-explainer.md)  
+- [🏆✍️💡 Pulitzer Prize-Winner Explains His Writing Process - Richard Powers](./videos/pulitzer-prize-winner-explains-his-writing-process-richard-powers.md)  
   
   
 ## [🌌 Topics](./topics/index.md) (91)  

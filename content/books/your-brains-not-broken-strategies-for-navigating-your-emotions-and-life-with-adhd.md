@@ -6,6 +6,10 @@ URL: https://bagrounds.org/books/your-brains-not-broken-strategies-for-navigatin
 share: true
 CTA: 💡 Thrive with ADHD.
 affiliate link: https://amzn.to/3NU3aXM
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_time: 2026-04-25T00:00:00Z
+force_analyze_links: false
+link_analysis_version: "2"
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🧠🧭⚡ Your Brain's Not Broken: Strategies for Navigating Your Emotions and Life with ADHD  

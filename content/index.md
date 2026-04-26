@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-04-25T15:39:32-07:00
+updated: 2026-04-26T07:20:23-07:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -14,11 +14,11 @@ updated: 2026-04-25T15:39:32-07:00
 🔊 Listen to any page with built in audio control.  
 💬 Comment on any page with your GitHub account.  
   
-## [🪞 Reflections](./reflections/index.md) ~ Blog (527)  
-- [2026-04-25](./reflections/2026-04-25.md)  
+## [🪞 Reflections](./reflections/index.md) ~ Blog (528)  
+- [2026-04-26](./reflections/2026-04-26.md)  
+- [2026-04-25 | 🤔 Started 📅 Today 🗣️ Deal 🏛️ Deed 💡 Electricity 🇺🇸 Americans 🎶 Cause ⚙️ Engineer 🌟 Progress 🚀 Conflict 🐔 Rewards 🤖 Agency 🏛️ Public 🔀 Clarity 📺🌟📰🐔🤖🏛️🔀🔄🤖🐲](./reflections/2026-04-25.md)  
 - [2026-04-24 | 📅 Weekly 🤖 AI 🇺🇸 Trump 🗣️ Planning 💰 One 🏆 Wins 🌟 Hope 🌊 Conflict 🐔 Patience 🤖 Correction 🤖 Improving 🏛️ Public 🔀 Care. 📉📺🌟📰🐔🤖🏛️🔀🔄🤖🐲](./reflections/2026-04-24.md)  
 - [2026-04-23 | 🗓️ Unpresidented 💻 Framework 🤖 Correction 🐔 Pantry 🌟 Compassion 🏛️ Knowledge 📰 Futures 🧹 Refactor 🔀 Architectures 📺🤖🐔🌟🏛️📰🔀🔄🤖🐲](./reflections/2026-04-23.md)  
-- [2026-04-22 | 🗓️ Today 🧠 Brain 📈 Recession 🏛️ White 💡 Learned 🤖 AI 🤖 AI ✨ Compassion 📰 Conflict 🤖 Agency 🐔 Patience 🏛️ Well-being 🔀 Friction 📺🌟📰🤖🐔🏛️🔀🔄🤖🐲](./reflections/2026-04-22.md)  
   
   
 ## [🤖 AI Blog](./ai-blog/index.md) (171)  
@@ -49,39 +49,39 @@ updated: 2026-04-25T15:39:32-07:00
 - [2026-04-22 | 🏛️ The Unseen Threads: Connecting Our Collective Well-being 🏛️](./systems-for-public-good/2026-04-22-the-unseen-threads-connecting-our-collective-well-being.md)  
   
   
-## [📰 The Noise](./the-noise/index.md) (16)  
+## [📰 The Noise](./the-noise/index.md) (17)  
+- [2026-04-26 | 📰 🌎 Crossroads of Chaos and Breakthroughs 💫 📰](./the-noise/2026-04-26-crossroads-of-chaos-and-breakthroughs.md)  
 - [2026-04-25 | 📰 💥 Echoes of Conflict, Sparks of Discovery 🚀 📰](./the-noise/2026-04-25-echoes-of-conflict-sparks-of-discovery.md)  
 - [2026-04-24 | 📰 🌪️ Currents of Conflict, Waves of Innovation 🌊 📰](./the-noise/2026-04-24-currents-of-conflict-waves-of-innovation.md)  
 - [2026-04-23 | 📰 Global Currents, Echoing Futures 📰](./the-noise/2026-04-23-global-currents-echoing-futures.md)  
-- [2026-04-22 | 📰 The Dual Engine of Progress and Conflict 📰](./the-noise/2026-04-22-the-dual-engine-of-progress-and-conflict.md)  
   
   
-## [🌟 Positivity Bias](./positivity-bias/index.md) (15)  
+## [🌟 Positivity Bias](./positivity-bias/index.md) (16)  
+- [2026-04-26 | 🌟 Ripples of Resilience: Progress in Health, Earth, and Human Connection 🌟](./positivity-bias/2026-04-26-ripples-of-resilience-progress-in-health-earth-and-human-connection.md)  
 - [2026-04-25 | 🌟 Seeds of Progress: Breakthroughs, Green Shoots, and Global Handshakes 🌟](./positivity-bias/2026-04-25-seeds-of-progress-breakthroughs-green-shoots-and-global-handshakes.md)  
 - [2026-04-24 | 🌟 Horizons of Hope: Healing, Harmony, and a Greener Earth 🌟](./positivity-bias/2026-04-24-horizons-of-hope-healing-harmony-and-a-greener-earth.md)  
 - [2026-04-23 | 🌟 Triumphs of Ingenuity and Compassion 🌟](./positivity-bias/2026-04-23-triumphs-of-ingenuity-and-compassion.md)  
-- [2026-04-22 | 🌟 A World of Innovation and Compassion 🌟](./positivity-bias/2026-04-22-a-world-of-innovation-and-compassion.md)  
   
   
-## [🔀 Convergence](./convergence/index.md) (11)  
+## [🔀 Convergence](./convergence/index.md) (12)  
+- [2026-04-25 | 🔀 🪞 The Architectures of Clarity and Sanctuary 🔀](./convergence/2026-04-25-the-architectures-of-clarity-and-sanctuary.md)  
 - [2026-04-24 | 🔀 🪞 The Enduring Architecture of Care: Sustaining Agency and Abundance 🔀](./convergence/2026-04-24-the-enduring-architecture-of-care-sustaining-agency-and-abundance.md)  
 - [2026-04-23 | 🔀 🪞 The Sustaining Architectures of Agency and Abundance 🔀](./convergence/2026-04-23-the-sustaining-architectures-of-agency-and-abundance.md)  
 - [2026-04-22 | 🔀 ⚖️ The Sovereignty of Thought: Navigating Correction, Care, and Creative Friction 🔀](./convergence/2026-04-22-the-sovereignty-of-thought-navigating-correction-care-and-creative-friction.md)  
-- [2026-04-21 | 🔀 🪞 The Enduring Battle Against Decay: From Digital Entropy to Domestic Hearth 🔀](./convergence/2026-04-21-the-enduring-battle-against-decay-from-digital-entropy-to-domestic-hearth.md)  
   
   
 ## [📚 Books](./books/index.md) (960)  
-- [📱📢🤖 Computational Propaganda: Political Parties, Politicians, and Political Manipulation on Social Media](./books/computational-propaganda-political-parties-politicians-and-political-manipulation-on-social-media.md)  
-- [🐈‍⬛❓ Decoding Your Cat: The Ultimate Experts Explain Common Cat Behaviors and Reveal How to Prevent or Change Unwanted Ones](./books/decoding-your-cat-the-ultimate-experts-explain-common-cat-behaviors-and-reveal-how-to-prevent-or-change-unwanted-ones.md)  
-- [🗑️⏱️ Decluttering at the Speed of Life: Winning Your Never-Ending Battle with Stuff](./books/decluttering-at-the-speed-of-life-winning-your-never-ending-battle-with-stuff.md)  
-- [💰⚕️ Making Them Pay: How to Get the Most from Health Insurance and Managed Care](./books/making-them-pay-how-to-get-the-most-from-health-insurance-and-managed-care.md)  
+- [🧪👁️ The Scientific Image](./books/the-scientific-image.md)  
+- [☀️📖🌿 The New Sunset Western Garden Book: The Ultimate Gardening Guide](./books/the-new-sunset-western-garden-book-the-ultimate-gardening-guide.md)  
+- [🧠💥📈💡🎆 Dynamical Systems in Neuroscience: The Geometry of Excitability and Bursting](./books/dynamical-systems-in-neuroscience.md)  
+- [🏜️🐛 Dune](./books/dune.md)  
   
   
 ## [📺 Videos](./videos/index.md) (802)  
-- [👴📚⚙️💻 75 Year of Learning to Engineer Software - Silvio Meira - ICSE 2026 keynote](./videos/75-year-of-learning-to-engineer-software-silvio-meira-icse-2026-keynote.md)  
-- [😇🧠⚖️ The Righteous Mind by Jonathan Haidt (BOOK INSIGHTS)](./videos/the-righteous-mind-by-jonathan-haidt-book-insights.md)  
-- [😇🧠⚖️ The Righteous Mind | Jonathan Haidt | Talks at Google](./videos/the-righteous-mind-jonathan-haidt-talks-at-google.md)  
-- [🇺🇸🗣️❓ The State of the United States: A Conversation with Jack Smith](./videos/the-state-of-the-united-states-a-conversation-with-jack-smith.md)  
+- [🧠🪜💡🤔⬆️🎓 6 Levels of Thinking Every Student MUST Master](./videos/6-levels-of-thinking-every-student-must-master.md)  
+- [🌅🧠🚀♾️ This morning routine is scientifically proven to make you limitless](./videos/this-morning-routine-is-scientifically-proven-to-make-you-limitless.md)  
+- [🏛️🗣️📅 Politics Chat, October 21, 2025](./videos/politics-chat-october-21-2025.md)  
+- [🚫👑⚡✊ Sen. Bernie Sanders - Harnessing Energy From «No Kings» Rally to «Fight Oligarchy» | The Daily Show](./videos/sen-bernie-sanders-harnessing-energy-from-no-kings-rally-to-fight-oligarchy-the-daily-show.md)  
   
   
 ## [🌌 Topics](./topics/index.md) (91)  
@@ -92,17 +92,17 @@ updated: 2026-04-25T15:39:32-07:00
   
   
 ## [📄  Articles](./articles/index.md) (84)  
-- [🤖😴📢🗳️ Sleeper Social Bots: A New Generation of AI Disinformation Bots are Already a Political Threat](./articles/sleeper-social-bots-a-new-generation-of-ai-disinformation-bots-are-already-a-political-threat.md)  
-- [🧠🪜⏱️📈 Hierarchical gradients of multiple timescales in the mammalian forebrain](./articles/hierarchical-gradients-of-multiple-timescales-in-the-mammalian-forebrain.md)  
-- [🧠🤖📈 Scientists just developed a new AI modeled on the human brain — it's outperforming LLMs like ChatGPT at reasoning tasks](./articles/scientists-just-developed-a-new-ai-modeled-on-the-human-brain-its-outperforming-llms-like-chatgpt-at-reasoning-tasks.md)  
-- [⏳🏛️💥🗳️📉 Trump is dismantling democracy at unprecedented speed, global report finds](./articles/trump-is-dismantling-democracy-at-unprecedented-speed-global-report-finds.md)  
+- [😴💰🏛️🤑👴🇸🇪 ‘We got lazy and complacent’: Swedish pensioners explain how abolishing the wealth tax changed their country](./articles/we-got-lazy-and-complacent-swedish-pensioners-explain-how-abolishing-the-wealth-tax-changed-their-country.md)  
+- [🎶👶🧠🗣️ Musical intervention enhances infants’ neural processing of temporal structure in music and speech](./articles/musical-intervention-enhances-infants-neural-processing-of-temporal-structure-in-music-and-speech.md)  
+- [🧑‍⚖️🧬💰🤝 Judge OKs sale of 23andMe - and its trove of DNA data - to a nonprofit led by its founder](./articles/judge-oks-sale-of-23andme-and-its-trove-of-dna-data-to-a-nonprofit-led-by-its-founder.md)  
+- [🧑‍🏫🌍🛠️📈 Agent Skills: Equipping agents for the real world with Agent Skills](./articles/equipping-agents-for-the-real-world-with-agent-skills.md)  
   
   
 ## [🤖💬 Bot Chats](./bot-chats/index.md) (49)  
-- [🏡🍎🌳📚 Home Fruit Tree Books](./bot-chats/fruit-tree-books.md)  
-- [🧩🏢🤖 Domain Driven AI Product Development](./bot-chats/domain-driven-ai-product-development.md)  
+- [🪵❓ How Much Wood](./bot-chats/how-much-wood.md)  
 - [👨‍👧‍👦👔🎁 Fathers Day](./bot-chats/fathers-day.md)  
-- [🧘📚🔍 Mindfulness Book Research](./bot-chats/mindfulness-book-research.md)  
+- [🤕😖 Headaches](./bot-chats/headaches.md)  
+- [📏💻✅ Engineering as Specification](./bot-chats/engineering-as-specification.md)  
   
   
 ## [💾 Software](./software/index.md) (33)  
@@ -113,10 +113,10 @@ updated: 2026-04-25T15:39:32-07:00
   
   
 ## [👥 People](./people/index.md) (18)  
+- [⚔️🗡️🩸 Joe Abercrombie](./people/joe-abercrombie.md)  
 - [🕸️🌐👨‍💻 Tim Berners-Lee](./people/tim-berners-lee.md)  
 - [📈📊⚙️🎯 W Edwards Deming](./people/w-edwards-deming.md)  
 - [🤖🧠💻 Andrej Karpathy](./people/andrej-karpathy.md)  
-- [👨‍💻☁️🐘 Jay Kreps](./people/jay-kreps.md)  
   
   
 ## [🛍️ Products](./products/index.md) (6)  

@@ -10,9 +10,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-17T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-04-26T10:24:48Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A serene, high-angle view of a sun-drenched wooden dock extending over calm, turquoise water. At the very end of the dock, a single, empty hammock sways gently in a soft breeze. Beside the hammock sits a wide-brimmed straw hat and a closed, unread book resting on the weathered planks. Lush, vibrant green palm fronds lean into the frame from the corner, casting soft, dappled shadows across the wood. The horizon line is clear and expansive, blending a pale blue sky into the tranquil sea, evoking a profound sense of stillness, silence, and the deliberate absence of digital devices or productivity. The color palette is warm and natural, emphasizing soft sunlight, earth tones, and cool blues.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🌴🧘🏼‍♀️ Do Nothing: How to Break Away from Overworking, Overdoing, and Underliving  
+![books-do-nothing-how-to-break-away-from-overworking-overdoing-and-underliving](../books-do-nothing-how-to-break-away-from-overworking-overdoing-and-underliving.jpg)  
 [🛒 Do Nothing: How to Break Away from Overworking, Overdoing, and Underliving. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/43I7zB8)  
   
 ## 📚 Book Report: 🧘 Do Nothing by Celeste Headlee  

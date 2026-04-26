@@ -8,11 +8,12 @@ CTA: 🌎 Master global influence.
 affiliate link: https://amzn.to/4rJmZz3
 updated: 2026-03-19T00:22:30.281Z
 link_analysis_model: gemini-3.1-flash-lite-preview
-link_analysis_time: 2026-04-04T00:00:00Z
+link_analysis_time: 2026-04-25T00:00:00Z
 force_analyze_links: false
 image_date: 2026-04-15T10:35:01Z
 image_model: "@cf/black-forest-labs/flux-1-schnell"
 image_prompt: "A prominent, glowing equilateral triangle dominates the composition. Each vertex represents one of the three global powers: the Global West (cool blue hue), the Global East (warm red hue), and the Global South (earthy gold hue). Subtle, abstract symbols hinting at continent shapes are embedded within each vertex. Dynamic, curved lines of light flow between the vertices and towards a central, stylized globe that appears to be gently rotating or shifting, signifying the rebalancing of power. The globe itself is composed of interwoven lines, suggesting interconnectedness and flux. The background is a dark, deep space, enhancing the sense of a grand, strategic global dynamic."
+link_analysis_version: "2"
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🔺⚡🔄🌍 The Triangle of Power: Rebalancing the New World Order  

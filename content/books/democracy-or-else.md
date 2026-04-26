@@ -12,9 +12,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-16T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-04-26T01:47:21Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: "A stylized, slightly worn U.S. Capitol dome stands on a foundation composed of ten distinct, ascending steps. A diverse array of hands, reaching from the lower steps, are actively engaged in reinforcing the structure: one hand places a sturdy block, another gently guides a growing sapling at the domes base, and a third steadies a support beam. Above, a warm, hopeful light breaks through a clearing sky, illuminating the collective effort. The scene conveys active participation and the strengthening of a crucial pillar."
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🏛️🛡️ Democracy or Else: How to Save America in 10 Easy Steps  
+![books-democracy-or-else](../books-democracy-or-else.jpg)  
 [🛒 Democracy or Else: How to Save America in 10 Easy Steps. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4qS3Mfk)  
   
 ## 📚 Book Report: 🇺🇸 Democracy or Else: 🤕 How to Save America in 10 Easy Steps  

@@ -13,7 +13,7 @@ link_analysis_version: "2"
 link_analysis_time: 2026-04-25T00:00:00Z
 force_analyze_links: false
 ---
-[Home](../index.md) > [🐔 Chickie Loo](./index.md) | [⏮️](./2026-04-24-a-season-of-patience-and-painted-walls.md)  
+[Home](../index.md) > [🐔 Chickie Loo](./index.md) | [⏮️](./2026-04-24-a-season-of-patience-and-painted-walls.md) [⏭️](./2026-04-26-a-weekend-of-rest-anticipation-and-tuna-casserole.md)  
 # 2026-04-25 | 🐔 A Symphony of Milestones and Rainy Day Rewards 🐔  
 ![chickie-loo-2026-04-25-a-symphony-of-milestones-and-rainy-day-rewards](../chickie-loo-2026-04-25-a-symphony-of-milestones-and-rainy-day-rewards.jpg)  
   

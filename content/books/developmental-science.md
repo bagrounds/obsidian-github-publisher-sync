@@ -11,9 +11,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-18T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-04-26T06:50:12Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: "A minimalist, high-contrast illustration featuring a stylized human silhouette profile. Inside the silhouette, a complex, interconnected network of glowing neural pathways and abstract geometric shapes—representing synapses and data nodes—fades from a soft, warm pastel at the bottom (representing infancy) to a vibrant, structured crystalline structure at the top (representing adolescence and maturity). The background is a clean, deep navy blue, suggesting the vastness of scientific inquiry. Floating gracefully around the silhouette are delicate, thin-line icons representing the core themes: a double-helix DNA strand, a small seedling, a mathematical growth curve, and an open book. The composition is balanced and elegant, using a professional color palette of teal, gold, and white to convey a sense of academic depth and biological discovery."
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 👶🧠📈📚 Developmental Science: An Advanced Textbook  
+![books-developmental-science](../books-developmental-science.jpg)  
 [🛒 Developmental Science: An Advanced Textbook. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4kzqRQz)  
   
 ## 🤖 AI Summary  

@@ -9,6 +9,10 @@ Platform:
 Channel: INES IA INCT
 tags:
 youtube: https://youtu.be/mmPMcSoyuBA
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_version: "2"
+link_analysis_time: 2026-04-25T00:00:00Z
+force_analyze_links: false
 ---
 [Home](../index.md) > [Videos](./index.md)  
 # 👴📚⚙️💻 75 Year of Learning to Engineer Software - Silvio Meira - ICSE 2026 keynote  
@@ -49,8 +53,8 @@ youtube: https://youtu.be/mmPMcSoyuBA
 * 📘 The Mythical Man Month by Frederick Brooks Jr. from Addison-Wesley Professional remains the definitive source on the human and organizational challenges of complex software systems.  
   
 ### 🆚 Contrasting  
-* 📗 Clean Code A Handbook of Agile Software Craftsmanship by Robert Martin from Pearson Education focuses on the granular importance of implementation and code quality which the speaker suggests is becoming secondary.  
-* 📗 The Lean Startup by Eric Ries from Crown Publishing Group advocates for rapid market-driven experimentation that the speaker critiques as often lacking scientific and ethical rigor.  
+* 📗 [🧼💾 Clean Code: A Handbook of Agile Software Craftsmanship](../books/clean-code.md) A Handbook of Agile Software Craftsmanship by Robert Martin from Pearson Education focuses on the granular importance of implementation and code quality which the speaker suggests is becoming secondary.  
+* 📗 [📉🧪🚀 The Lean Startup: How Today's Entrepreneurs Use Continuous Innovation to Create Radically Successful Businesses](../books/the-lean-startup.md) by Eric Ries from Crown Publishing Group advocates for rapid market-driven experimentation that the speaker critiques as often lacking scientific and ethical rigor.  
   
 ### 🎨 Creatively Related  
 * 📙 The Laws of Simplicity by John Maeda from MIT Press explores how to balance simplicity and complexity in design and technology.  

@@ -9,11 +9,16 @@ tags:
 affiliate link: https://amzn.to/4dHj3cM
 CTA: 🧠 Explore brain rhythms.
 link_analysis_model: gemini-3.1-flash-lite-preview
-link_analysis_time: 2026-04-06T00:00:00Z
+link_analysis_time: 2026-04-20T00:00:00Z
 force_analyze_links: false
+link_analysis_version: "2"
+image_date: 2026-04-26T13:38:35Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A minimalist, high-contrast illustration featuring a stylized, translucent human brain silhouette centered against a deep obsidian background. Inside the brain, intricate, glowing geometric lines trace complex phase-space trajectories, spirals, and bifurcation points in vibrant neon blues and magentas. Some of these lines converge into tight, rhythmic limit cycle loops that pulse with soft light, representing neural oscillations. Thin, crystalline structures branch out like dendrites, connecting these mathematical nodes. The overall composition is sleek and abstract, emphasizing the intersection of biological complexity and elegant mathematical order, with subtle particle dust representing neural activity floating throughout the space.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🧠💥📈💡🎆 Dynamical Systems in Neuroscience: The Geometry of Excitability and Bursting  
+![books-dynamical-systems-in-neuroscience](../books-dynamical-systems-in-neuroscience.jpg)  
 [🛒 Dynamical Systems in Neuroscience: The Geometry of Excitability and Bursting. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4dHj3cM)  
   
 ## 🤖 AI Summary  

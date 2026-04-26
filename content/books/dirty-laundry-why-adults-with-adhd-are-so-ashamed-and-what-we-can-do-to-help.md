@@ -6,9 +6,17 @@ URL: https://bagrounds.org/books/dirty-laundry-why-adults-with-adhd-are-so-asham
 share: true
 CTA: 🤫 Unburden your shame.
 affiliate link: https://amzn.to/3ZcLiK1
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_time: 2026-04-24T00:00:00Z
+force_analyze_links: false
+link_analysis_version: "2"
+image_date: 2026-04-26T07:40:32Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A minimalist, conceptual illustration featuring a vibrant, glowing human brain silhouette centered against a soft, neutral background. From the base of the brain, a tangled, messy pile of colorful laundry—socks, shirts, and linens—is slowly unravelling and transforming into organized, neat stacks or delicate, floating geometric shapes as they move upward. The lighting transitions from warm, gentle glows near the brain to soft shadows at the base, symbolizing the shift from chaotic shame to clarity and self-compassion. The art style is clean, modern, and slightly whimsical, using a palette of calming teals, soft oranges, and warm whites to evoke a sense of relief and mental order.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 😳🧠🤝 Dirty Laundry: Why Adults with ADHD Are So Ashamed and What We Can Do to Help  
+![books-dirty-laundry-why-adults-with-adhd-are-so-ashamed-and-what-we-can-do-to-help](../books-dirty-laundry-why-adults-with-adhd-are-so-ashamed-and-what-we-can-do-to-help.jpg)  
 [🛒 Dirty Laundry: Why Adults with ADHD Are So Ashamed and What We Can Do to Help. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3ZcLiK1)  
   
 💖🧠💡 An empowering, witty guide to understanding and destigmatizing adult ADHD, fostering self-compassion, and providing practical strategies for both individuals with ADHD and their loved ones.  

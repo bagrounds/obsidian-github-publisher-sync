@@ -11,6 +11,7 @@ image_date: 2026-04-12T00:29:23Z
 image_model: "@cf/black-forest-labs/flux-1-schnell"
 image_prompt: A stylized, digital illustration featuring a cute, anthropomorphic woodchuck wearing a tiny construction hard hat. The woodchuck is standing next to a large, neatly stacked pile of weathered logs in a lush, sun-dappled forest clearing. Floating faintly in the air around the woodchuck are glowing, translucent digital data nodes and bits of binary code, representing the intersection of nature and mobile AI technology. The color palette features warm earth tones—deep browns, forest greens, and golden sunlight—contrasted with subtle, cool-toned neon blue accents from the digital elements. The composition is clean and whimsical, with a soft-focus background of pine trees, emphasizing the playful, hypothetical nature of the inquiry.
 link_analysis_version: "2"
+updated: 2026-04-26T11:27:27
 ---
 [Home](../index.md) > [Bot Chats](./index.md)  
 # 🪵❓ How Much Wood  
@@ -33,4 +34,12 @@ I made this query to test the [Obsidian](../software/obsidian.md) Local GPT plug
 🌲 If we extrapolate this to wood, which is also relatively dense and heavy, we could estimate that a woodchuck might be able to move around 1-2 cubic feet (28-57 liters) of wood per hour. 🪵 This would translate to a significant amount of wood, considering the average cord of wood is approximately 128 cubic feet (3.7 cubic meters).  
   
 ### ✅ Conclusion  
-😂 While the exact answer remains a playful joke, it's clear that if a woodchuck could chuck wood, they might be able to move a substantial amount of it. 🚫 However, it's essential to remember that this is purely hypothetical and for entertainment purposes only. 🌍 In reality, woodchucks are fascinating creatures that deserve our respect and care, not our attempts to estimate their wood-chucking abilities.
+😂 While the exact answer remains a playful joke, it's clear that if a woodchuck could chuck wood, they might be able to move a substantial amount of it. 🚫 However, it's essential to remember that this is purely hypothetical and for entertainment purposes only. 🌍 In reality, woodchucks are fascinating creatures that deserve our respect and care, not our attempts to estimate their wood-chucking abilities.  
+  
+## 🦋 Bluesky    
+<blockquote class="bluesky-embed" data-bluesky-uri="at://did:plc:i4yli6h7x2uoj7acxunww2fc/app.bsky.feed.post/3mkfh6dohhh2w" data-bluesky-cid="bafyreidbt5djzgqo43zlvumi4za445qkhfdwfyzjhewdmywrbfvkdwoa5m"><p>🪵❓ How Much Wood  
+  
+#AI Q: 🪵 If animals could perform human tasks, which job would yours choose?  
+  
+🪵 Riddles | 🦫 Wildlife | 🤖 LLMs | ⛏️ Excavation  
+https://bagrounds.org/bot-chats/how-much-wood</p>&mdash; <a href="https://bsky.app/profile/did:plc:i4yli6h7x2uoj7acxunww2fc?ref_src=embed">Bryan Grounds (@bagrounds.bsky.social)</a> <a href="https://bsky.app/profile/did:plc:i4yli6h7x2uoj7acxunww2fc/post/3mkfh6dohhh2w?ref_src=embed">2026-04-26T11:27:29.000Z</a></blockquote><script async src="https://embed.bsky.app/static/embed.js" charset="utf-8"></script>

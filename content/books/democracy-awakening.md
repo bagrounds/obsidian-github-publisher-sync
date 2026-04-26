@@ -11,9 +11,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-14T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-04-25T23:23:53Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A conceptual illustration featuring a grand, neoclassical marble building, such as a capitol or courthouse, partially shrouded in deep, long shadows that stretch from the right side of the frame. From the left, a vibrant, golden sunrise breaks through the darkness, casting warm, hopeful light across the building’s columns and steps. A single, stylized sprout is pushing through a crack in the stone foundation, reaching toward the light. The composition uses high contrast between the cool, dark tones of the shadows and the warm, glowing hues of the morning sun to symbolize the struggle between authoritarian decline and democratic renewal. The style is clean and modern, evoking a sense of historical gravitas and civic urgency without using any text or iconography.
 ---
 [Home](../index.md) > [Books](./index.md) | [🏛️🇺🇸📖 Heather Cox Richardson](../people/heather-cox-richardson.md)  
 # 🏛️☀️⬆️ Democracy Awakening: 📝 Notes on the State of 🇺🇸 America  
+![books-democracy-awakening](../books-democracy-awakening.jpg)  
 [🛒 Democracy Awakening: 📝 Notes on the State of 🇺🇸 America. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3SzacAq)  
   
 ## 📖 Book Report: Democracy Awakening  

@@ -10,9 +10,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-15T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-04-26T05:13:25Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: "A minimalist, conceptual illustration featuring a human silhouette standing in the center of a vast, open landscape. The figure is reaching upward toward a glowing, golden star that is breaking through a dark, geometric cage or frame, symbolizing the transition from constraint to liberation. Surrounding the figure are five distinct, soft-glowing icons representing interconnected pathways: a ballot box, a sprouting plant, an open book, a balanced scale, and a protective shield. The color palette transitions from cool, muted slate blues in the background to vibrant, warm golds and sunlight yellows in the center, emphasizing the theme of human potential and the expansion of agency. The style is clean, modern, and atmospheric, using light and shadow to evoke a sense of hope and intellectual clarity."
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🌟🔓 Development as Freedom  
+![books-development-as-freedom](../books-development-as-freedom.jpg)  
 [🛒 Development as Freedom. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4soSEaE)  
   
 🎯🌍 Nobel laureate Amartya Sen reshapes the understanding of development from a narrow focus on economic growth to a holistic process of expanding individual freedoms, which are both the primary ends and principal means of true human progress.  

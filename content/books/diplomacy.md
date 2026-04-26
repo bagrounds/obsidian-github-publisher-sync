@@ -10,9 +10,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-17T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-04-26T07:40:26Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A minimalist, high-contrast illustration featuring a stylized, vintage world map rendered in muted sepia and charcoal tones. Overlaid on the map are two elegant, fountain-pen-drawn hands reaching toward each other in a handshake, positioned at the center of the composition. A subtle, golden-hued scale of justice sits faintly in the background, balanced perfectly to represent the concept of equilibrium. The lighting is dramatic, with deep shadows and soft, focused highlights that emphasize the textures of aged parchment and ink. The overall aesthetic is sophisticated, academic, and timeless, evoking the weight of history and the gravity of global statecraft.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🤝🌍 Diplomacy  
+![books-diplomacy](../books-diplomacy.jpg)  
 [🛒 Diplomacy. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3U9t21C)  
   
 ## 📖 Book Report: Diplomacy by Henry Kissinger  

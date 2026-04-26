@@ -13,7 +13,7 @@ link_analysis_version: "2"
 link_analysis_time: 2026-04-25T00:00:00Z
 force_analyze_links: false
 ---
-[Home](../index.md) > [📰 The Noise](./index.md) | [⏮️](./2026-04-24-currents-of-conflict-waves-of-innovation.md)  
+[Home](../index.md) > [📰 The Noise](./index.md) | [⏮️](./2026-04-24-currents-of-conflict-waves-of-innovation.md) [⏭️](./2026-04-26-crossroads-of-chaos-and-breakthroughs.md)  
 # 2026-04-25 | 📰 💥 Echoes of Conflict, Sparks of Discovery 🚀 📰  
 ![the-noise-2026-04-25-echoes-of-conflict-sparks-of-discovery](../the-noise-2026-04-25-echoes-of-conflict-sparks-of-discovery.jpg)  
   

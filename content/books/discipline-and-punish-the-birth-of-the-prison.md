@@ -10,9 +10,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-16T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-04-26T08:33:39Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A high-contrast, atmospheric illustration featuring a central, looming silhouette of a circular prison tower. The architecture is stark and cold, with multiple rows of dark, uniform windows radiating outward. In the foreground, a single, solitary human shadow stretches across a sterile, grid-patterned floor, appearing small and fragmented. The lighting is dramatic, with sharp beams of light cutting through a hazy, industrial environment, emphasizing a sense of constant, unseen observation. The color palette is restricted to muted greys, deep blacks, and a cold, clinical blue, evoking a feeling of institutional entrapment and the pervasive, invisible gaze of power.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # ⚙️⛓️ Discipline and Punish: The Birth of the Prison  
+![books-discipline-and-punish-the-birth-of-the-prison](../books-discipline-and-punish-the-birth-of-the-prison.jpg)  
 [🛒 Discipline and Punish: The Birth of the Prison. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/48VXHrn)  
   
 🧐⛓️🏫 Chart the transition from brutal public spectacle punishment to a pervasive, invisible disciplinary power that shapes individuals into docile bodies through constant surveillance and normalization, extending far beyond the prison walls into all modern institutions.  

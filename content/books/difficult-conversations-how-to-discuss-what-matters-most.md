@@ -9,9 +9,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-17T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-04-26T03:15:18Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A minimalist, split-screen illustration featuring two stylized figures seated across from one another at a simple wooden table. Between them, three translucent, overlapping geometric shapes—a circle, a square, and a triangle—glow softly, representing the three conversations (What Happened, Feelings, and Identity). The background is a soft, neutral gradient that transitions from a slightly tense, cool blue on one side to a warm, inviting amber on the other, symbolizing the shift from conflict to understanding. The figures are rendered in clean, modern vector lines, leaning slightly forward with open, attentive body language. Subtle, abstract light rays emanate from the center where the shapes intersect, suggesting clarity and connection. The overall aesthetic is professional, calm, and insightful.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 💬😬 Difficult Conversations: How to Discuss What Matters Most  
+![books-difficult-conversations-how-to-discuss-what-matters-most](../books-difficult-conversations-how-to-discuss-what-matters-most.jpg)  
 [🛒 Difficult Conversations: How to Discuss What Matters Most. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/45697HO)  
   
 ## 📚 Book Report: 🗣️ Difficult Conversations: How to Discuss What Matters Most  

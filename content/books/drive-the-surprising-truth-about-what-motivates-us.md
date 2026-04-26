@@ -12,9 +12,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-15T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-04-26T12:23:37Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: "A clean, minimalist illustration featuring three glowing, interconnected geometric icons floating in a soft, ethereal space: a compass representing autonomy, a rising staircase representing mastery, and a radiant star representing purpose. The background is a deep, professional navy blue with subtle, translucent circuit-like lines or constellations connecting the icons, suggesting human complexity and growth. The style is modern and high-contrast, utilizing a vibrant color palette of electric blue, gold, and teal to evoke energy and innovation. The composition is balanced and spacious, emphasizing clarity, forward momentum, and the transition from traditional mechanical thinking to dynamic, internal inspiration."
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🏎️⛽ Drive: The Surprising Truth About What Motivates Us  
+![books-drive-the-surprising-truth-about-what-motivates-us](../books-drive-the-surprising-truth-about-what-motivates-us.jpg)  
 [🛒 Drive: The Surprising Truth About What Motivates Us. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4o1nZyf)  
   
 ## 🤖 AI Summary  

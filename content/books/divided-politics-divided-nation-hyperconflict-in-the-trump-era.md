@@ -7,11 +7,16 @@ share: true
 CTA: 🇺🇸 Rebuild unity.
 affiliate link: https://amzn.to/3JlaV78
 link_analysis_model: gemini-3.1-flash-lite-preview
-link_analysis_time: 2026-04-04T00:00:00Z
+link_analysis_time: 2026-04-26T00:00:00Z
 force_analyze_links: false
+image_date: 2026-04-26T10:24:45Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A high-contrast conceptual illustration featuring a stylized, cracked map of the United States. The map is split down the center by a jagged, glowing fissure that emits a faint, cool-toned light. On one side of the divide, the landscape is rendered in deep, saturated crimson; on the other, a stark, profound navy blue. Between the two halves, a small, worn stone bridge spans the chasm, appearing fragile but intact. The background is a dark, moody charcoal texture, suggesting a storm-like atmosphere. The composition is minimalist and cinematic, focusing on the tension between the fractured geography and the singular, narrow path connecting the two sides.
+link_analysis_version: "2"
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🇺🇸⚔️ Divided Politics, Divided Nation: Hyperconflict in the Trump Era  
+![books-divided-politics-divided-nation-hyperconflict-in-the-trump-era](../books-divided-politics-divided-nation-hyperconflict-in-the-trump-era.jpg)  
 [🛒 Divided Politics, Divided Nation: Hyperconflict in the Trump Era. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3JlaV78)  
   
 🇺🇸💔 The book Divided Politics, Divided Nation: Hyperconflict in the Trump Era summary reveals Darrell M. West's argument that societal tensions, fueled by economic, cultural, and political polarization, have transformed into a dangerous tribalism threatening US democracy unless citizens bridge these divisions. 🇺🇸💔  

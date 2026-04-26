@@ -10,9 +10,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-16T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-04-26T01:47:27Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: "A clean, modern illustration featuring a central, abstract representation of interconnected neural network nodes, glowing softly. Surrounding this core, a dynamic, circular arrow path symbolizes the iterative process. Along this path, simplified icons depict key stages: a data funnel feeding into the neural network, a stylized server rack representing deployment, and a monitoring gauge providing feedback, completing the loop. The design uses a palette of cool blues, purples, and greens, with subtle light effects to suggest technological sophistication and flow."
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🤖⚙️🔁 Designing Machine Learning Systems: An Iterative Process for Production-Ready Applications  
+![books-designing-machine-learning-systems-an-iterative-process-for-production-ready-applications](../books-designing-machine-learning-systems-an-iterative-process-for-production-ready-applications.jpg)  
 [🛒 Designing Machine Learning Systems: An Iterative Process for Production-Ready Applications. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4lpZ59z)  
   
 ## 📚 Book Report: Designing Machine Learning Systems  

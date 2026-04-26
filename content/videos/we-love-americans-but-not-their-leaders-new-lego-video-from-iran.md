@@ -65,4 +65,7 @@ force_analyze_links: false
   
 ### 🎨 Creatively Related  
 * 🏙️ [💊 Brave New World](../books/brave-new-world.md) by Aldous Huxley, Chatto & Windus, depicts a society where the population is controlled through pleasure and distraction rather than overt force.  
-* 🚜 Animal Farm by George Orwell, Secker and Warburg, illustrates how revolutionary ideals can be corrupted by a new ruling class that eventually resembles the old.
+* 🚜 Animal Farm by George Orwell, Secker and Warburg, illustrates how revolutionary ideals can be corrupted by a new ruling class that eventually resembles the old.  
+  
+## 🐦 Tweet  
+<blockquote class="twitter-tweet" data-theme="dark"><p lang="en" dir="ltr">❤️🚫🏛️🇮🇷🧱🎥 We Love Americans - But Not Their Leaders | New LEGO Video from IRAN<br><br>🌏 Western populations 🇺🇸 | 🎭 Political deception | 👔 Elitist control | 💰 Debt &amp; war | 📺 Manipulation | 💊 Corporate exploitation | 🧱 Division | 🤝 Solidarity<a href="https://t.co/ZdzzyWR6DX">https://t.co/ZdzzyWR6DX</a></p>&mdash; Bryan Grounds (@bagrounds) <a href="https://twitter.com/bagrounds/status/2048411263546593725?ref_src=twsrc%5Etfw">April 26, 2026</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>

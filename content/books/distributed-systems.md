@@ -12,9 +12,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-17T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-04-26T09:27:20Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: "A digital landscape rendered in a sleek, isometric style, featuring a glowing constellation of interconnected geometric nodes. Thin, luminous lines pulse between these nodes, representing data flow across a global network. In the center, a complex, interlocking gear mechanism made of translucent glass emerges from a shimmering cloud of data packets. Floating around the central structure are abstract symbols representing core concepts: a small, glowing key, a stylized puzzle piece, and a fine, web-like mesh overlaying the entire scene. The color palette consists of deep midnight blues and charcoal grays, contrasted by vibrant, electric-cyan and magenta highlights that signify activity and connectivity. The atmosphere is clean, technical, and sophisticated, emphasizing the architecture and structural integrity of a large-scale distributed system."
 ---
 [Home](../index.md) > [Books](./index.md)  
 # ⚙️🕸️🧩🔑 Distributed Systems: Principles and Paradigms  
+![books-distributed-systems](../books-distributed-systems.jpg)  
 [🛒 Distributed Systems: Principles and Paradigms. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4jCApcr)  
   
 ## 🤖 AI Summary  

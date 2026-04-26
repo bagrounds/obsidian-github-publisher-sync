@@ -9,9 +9,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-16T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-04-26T00:34:20Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A stylized classical dome, reminiscent of the U.S. Capitol, stands centrally. Heavy, dark iron chains coil around its base and extend into a deep, shadowy background, suggesting an unseen force. One chain link subtly forms the silhouette of a grasping hand or a stylized dollar sign, hinting at financial control. The dome itself shows cracks, with a faint, struggling light emanating from within, contrasting with the oppressive darkness and weight of the chains. The color palette is dominated by somber blues, grays, and metallic tones, conveying a sense of foreboding and constraint.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🏛️⛓️ Democracy in Chains: The Deep History of the Radical Right's Stealth Plan for America  
+![books-democracy-in-chains-the-deep-history-of-the-radical-rights-stealth-plan-for-america](../books-democracy-in-chains-the-deep-history-of-the-radical-rights-stealth-plan-for-america.jpg)  
 [🛒 Democracy in Chains: The Deep History of the Radical Right's Stealth Plan for America. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3G2kqGH)  
   
 ## 📚 Book Report: Democracy in Chains: The Deep History of the Radical Right's Stealth Plan for America  

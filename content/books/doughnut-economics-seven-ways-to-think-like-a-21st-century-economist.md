@@ -10,9 +10,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-15T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-04-26T11:25:24Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: An abstract, vibrant illustration featuring a stylized, glowing doughnut shape floating in a deep indigo space. The center hole of the doughnut is filled with a lush, thriving miniature ecosystem of green forests and clear water. The outer ring is composed of concentric circles representing planetary boundaries, transitioning from soft, harmonious pastel colors on the inside to a thin, structured, and slightly frayed edge on the outside. Small, interconnected nodes and glowing filaments branch out from the doughnut, suggesting a complex, living system. The overall aesthetic is clean, modern, and minimalist, using a balance of warm earth tones and cool atmospheric blues to symbolize the delicate equilibrium between human society and the natural world.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🍩🌍⚖️ Doughnut Economics: Seven Ways to Think Like a 21st-Century Economist  
+![books-doughnut-economics-seven-ways-to-think-like-a-21st-century-economist](../books-doughnut-economics-seven-ways-to-think-like-a-21st-century-economist.jpg)  
 [🛒 Doughnut Economics: Seven Ways to Think Like a 21st-Century Economist. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/48Xh4PO)  
   
 🌍🍩⚖️ Challenge outdated growth-centric economic models with a visual framework where humanity thrives in a safe and just space between social foundations and ecological ceilings, necessitating regenerative and distributive design.  

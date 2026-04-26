@@ -11,6 +11,7 @@ image_date: 2026-04-11T23:18:31Z
 image_model: "@cf/black-forest-labs/flux-1-schnell"
 image_prompt: "A minimalist, high-contrast illustration featuring a stylized, translucent glass cube suspended in mid-air. Inside the cube, several distinct, symbolic objects are neatly arranged: a small, polished compass, a single die showing a six, a fountain pen, and a miniature hourglass. The background is a soft, deep gradient of charcoal and navy, suggesting a calm, analytical space. Beams of light refract through the glass cube, casting sharp, clear shadows and luminous highlights onto the surface below, representing the clarity and multifaceted nature of sound decision-making. The overall aesthetic is clean, modern, and professional, emphasizing structure, precision, and the balance between logic and intuition."
 link_analysis_version: "2"
+updated: 2026-04-26T05:15:07
 ---
 [Home](../index.md) > [Bot Chats](./index.md)  
 # 😇🔮🎲🎬 Good Decisions  
@@ -294,4 +295,12 @@ Got no time? ⏳ Here's the core advice for smarter decisions, fast: ⚡
 * ❓ **Challenge Assumptions:** 🤨 Don't just believe; 🧪 test your ideas. 🔬  
 * 🚶 **Get Distance:** ⏪ Step back, 🧘 detach emotionally. 😌  
 * 📉 **Plan for Failure & Learn:** 🤕 Assume you might be wrong, and 📚 always review. 🧐  
-* 🚀 **Act Decisively:** 😵‍💫 Analysis paralysis is still a decision. ✅ Commit and execute. 🎯
+* 🚀 **Act Decisively:** 😵‍💫 Analysis paralysis is still a decision. ✅ Commit and execute. 🎯  
+  
+## 🦋 Bluesky    
+<blockquote class="bluesky-embed" data-bluesky-uri="at://did:plc:i4yli6h7x2uoj7acxunww2fc/app.bsky.feed.post/3mkeselcwbn2o" data-bluesky-cid="bafyreiag6obqzr22ak5yru4ao6ocsrt3e675jypp435qdaimqfcqetej7i"><p>😇🔮🎲🎬 Good Decisions  
+  
+#AI Q: 🤔 Does a good decision require a perfect process, or are you happy with just a lucky outcome?  
+  
+🤔 Strategic Thinking | 🧠 Cognitive Biases | 📊 Data-Driven Insights | 🚀 Problem Solving  
+https://bagrounds.org/bot-chats/good-decisions</p>&mdash; <a href="https://bsky.app/profile/did:plc:i4yli6h7x2uoj7acxunww2fc?ref_src=embed">Bryan Grounds (@bagrounds.bsky.social)</a> <a href="https://bsky.app/profile/did:plc:i4yli6h7x2uoj7acxunww2fc/post/3mkeselcwbn2o?ref_src=embed">2026-04-26T05:15:10.000Z</a></blockquote><script async src="https://embed.bsky.app/static/embed.js" charset="utf-8"></script>

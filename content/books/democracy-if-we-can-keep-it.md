@@ -11,9 +11,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-16T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-04-25T23:23:56Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A minimalist, conceptual illustration featuring a weathered, antique wooden ballot box sitting on a polished mahogany surface. Emerging from the slot of the ballot box is a vibrant, translucent ribbon that transitions from the colors of an old parchment document into the bold, modern colors of the American flag. The background is a soft, moody gradient of deep navy and charcoal, subtly suggesting a courtroom or library setting with blurred, out-of-focus bookshelves. A single, sharp spotlight illuminates the ballot box, casting a long, steady shadow that stretches toward the viewer, symbolizing the enduring weight and fragility of democratic institutions over the past century. The aesthetic is sophisticated, professional, and evocative of historical gravity.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🗳️✊🤺🇺🇸 Democracy, If We Can Keep It: The ACLU's 100-Year Fight for Rights in America  
+![books-democracy-if-we-can-keep-it](../books-democracy-if-we-can-keep-it.jpg)  
 [🛒 Democracy, If We Can Keep It: The ACLU's 100-Year Fight for Rights in America. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3HBPu0g)  
   
 ## 📚 Book Report: "Democracy, If We Can Keep It: The ACLU's 100-Year Fight for Rights in America"  

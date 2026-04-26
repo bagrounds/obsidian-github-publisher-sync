@@ -11,9 +11,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-16T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-04-26T11:25:21Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A minimalist, isometric illustration centered on a clean, glowing smartphone screen floating in a soft, neutral-toned space. On the screen, a complex, tangled web of neon-colored lines and messy icons suddenly transforms into a single, perfectly straight path leading to a glowing Go button. Surrounding the device, floating abstract geometric shapes—a lightbulb, a magnifying glass, and a simple cursor—are arranged in a perfectly balanced, symmetrical grid. The lighting is soft and professional, utilizing a palette of deep navy blue, crisp white, and subtle teal accents. The overall aesthetic is uncluttered and sophisticated, emphasizing clarity, logical flow, and the removal of cognitive friction.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🚫💭🌐 Don't Make Me Think, Revisited: A Common Sense Approach to Web Usability  
+![books-dont-make-me-think-revisited](../books-dont-make-me-think-revisited.jpg)  
 [🛒 Don't Make Me Think, Revisited: A Common Sense Approach to Web Usability. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3HF6Qt9)  
   
 ## 🤖 AI Summary  

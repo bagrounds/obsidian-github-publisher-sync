@@ -11,9 +11,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-17T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-04-26T03:15:12Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: An individual, gender-neutral figure stands on a large, unfolding blueprint. The blueprint lines seamlessly transition into a vibrant, three-dimensional landscape featuring rolling green hills, a winding river, and a small, inviting home nestled among trees. The figure holds a large, stylized pencil or a drafting compass, actively sketching a new section of the path that extends into the distance, suggesting future possibilities. Elements like gears, lightbulbs, and blossoming flowers subtly emerge from the blueprint, symbolizing ideas, growth, and joy. The color palette is bright and optimistic, with clear blue skies and warm, inviting greens and yellows.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🏗️😊🗺️✨ Designing Your Life: How to Build a Well-Lived, Joyful Life  
+![books-designing-your-life](../books-designing-your-life.jpg)  
 [🛒 Designing Your Life: How to Build a Well-Lived, Joyful Life. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/43IBg5n)  
   
 ## 🤖 AI Summary  

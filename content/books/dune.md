@@ -10,9 +10,13 @@ force_analyze_links: false
 link_analysis_time: 2026-04-15T00:00:00Z
 link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_version: "2"
+image_date: 2026-04-26T13:38:33Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A vast, sweeping landscape of orange and gold sand dunes under a harsh, dual-sunlit sky. In the foreground, a single, weathered desert-dweller’s stillsuit mask lies partially buried in the shifting sand, casting a sharp, elongated shadow. In the distant, shimmering heat haze, the colossal, segmented silhouette of a giant sandworm rises from the horizon, its mouth slightly agape, creating a sense of epic scale and impending mystery. The color palette is dominated by deep ochre, burnt sienna, and brilliant cerulean blue, capturing the stark contrast between the arid desert floor and the infinite atmosphere of Arrakis. The overall aesthetic is cinematic, minimalist, and atmospheric, emphasizing the vast, lonely scale of the desert.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🏜️🐛 Dune  
+![books-dune](../books-dune.jpg)  
 [🛒 Dune. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/47VKBce)  
   
 🪐 A landmark novel of political intrigue and ecological vision, *Dune* is essential reading for fans of complex world-building and philosophical science fiction.  

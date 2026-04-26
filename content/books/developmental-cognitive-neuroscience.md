@@ -8,11 +8,16 @@ Author:
 tags:
 affiliate link: https://amzn.to/43tZS2M
 link_analysis_model: gemini-3.1-flash-lite-preview
-link_analysis_time: 2026-04-09T00:00:00Z
+link_analysis_time: 2026-04-25T00:00:00Z
 force_analyze_links: false
+link_analysis_version: "2"
+image_date: 2026-04-26T06:50:06Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A stylized, symmetrical composition featuring a translucent, glowing human brain suspended in the center. The brain is rendered with vibrant, interconnected neural pathways that glow in soft shades of electric blue and magenta. Emerging from the base of the brain, delicate, golden-hued, abstract tree-like branches reach upward, symbolizing growth and development. The background is a clean, dark navy gradient, suggesting the vastness of the mind. Scattered around the periphery are subtle, floating geometric icons representing cognitive functions—small translucent cubes, light-refracting spheres, and soft, glowing nodes. The overall aesthetic is modern, scientific, and ethereal, focusing on the intersection of biological complexity and the wonder of early human development.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🧠👶📈 Introduction to Developmental Cognitive Neuroscience: An Introduction  
+![books-developmental-cognitive-neuroscience](../books-developmental-cognitive-neuroscience.jpg)  
 [🛒 Developmental Cognitive Neuroscience. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/43tZS2M)  
   
 ## 🤖 AI Summary  

@@ -9,9 +9,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-17T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-04-26T09:27:17Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A stark, high-contrast black-and-white photograph. In the foreground, a pair of worn, rugged tactical boots stands firmly on a concrete surface, suggesting readiness and grounding. Behind them, a minimalist, industrial-style sunrise breaks over a dark, barren horizon, casting long, sharp shadows that stretch toward the viewer. The lighting is dramatic and moody, emphasizing textures like grit, concrete, and the laces of the boots. The composition is centered and balanced, evoking a sense of stoic calm, unwavering focus, and the transition from darkness into clarity. There is a palpable feeling of heavy, intentional stillness, representing the intersection of physical effort and mental liberation without the use of any text or symbols.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🧘🟰🕊️ Discipline Equals Freedom: Field Manual  
+![books-discipline-equals-freedom-field-manual](../books-discipline-equals-freedom-field-manual.jpg)  
 [🛒 Discipline Equals Freedom: Field Manual. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3ZHtmry)  
   
 ## 📖 Book Report: ⛓️ Discipline Equals 🔓 Freedom: 🪖 Field Manual  

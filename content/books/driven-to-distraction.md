@@ -11,9 +11,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-18T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-04-26T12:23:40Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A vibrant, conceptual illustration featuring a human silhouette in profile, filled with a swirling galaxy of colorful, abstract shapes that represent a wandering mind. Inside the silhouette, elements like a racing car, a delicate butterfly, and a curious squirrel are intertwined with glowing, interconnected neural pathways. The background is a soft, deep navy gradient, transitioning into bright, energetic bursts of light around the head area to symbolize creative sparks and bursts of focus. The art style is clean and modern, using a palette of electric blue, warm orange, and soft violet to contrast the chaos of distraction with the beauty of a unique, high-energy cognitive landscape.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🏎️🦋🐿️✨ Driven to Distraction: Recognizing and Coping with Attention Deficit Disorder from Childhood Through Adulthood  
+![books-driven-to-distraction](../books-driven-to-distraction.jpg)  
 [🛒 Driven to Distraction: Recognizing and Coping with Attention Deficit Disorder from Childhood Through Adulthood. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3HoR4mj)  
   
 ## 🤖 AI Summary  

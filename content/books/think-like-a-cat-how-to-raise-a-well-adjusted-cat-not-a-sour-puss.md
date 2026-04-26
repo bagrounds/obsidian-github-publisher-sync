@@ -7,8 +7,9 @@ share: true
 CTA: 🐱 Embrace feline wisdom.
 affiliate link: https://amzn.to/49c02Ps
 link_analysis_model: gemini-3.1-flash-lite-preview
-link_analysis_time: 2026-04-04T00:00:00Z
+link_analysis_time: 2026-04-26T00:00:00Z
 force_analyze_links: false
+link_analysis_version: "2"
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🐱👍 Think Like a Cat: How to Raise a Well-Adjusted Cat - Not a Sour Puss  

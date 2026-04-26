@@ -10,9 +10,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-18T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-04-26T00:37:29Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A minimalist, high-contrast composition featuring a weathered, classical marble bust of a scholar or philosopher placed on a pedestal. The bust is partially fractured or crumbling, symbolizing the erosion of foundational knowledge. Surrounding the pedestal, a chaotic, digital-style web of glowing, disorganized geometric lines and pixels encroaches upon the statue, representing the noise and misinformation of the internet age. The lighting is dramatic and moody, with a deep charcoal and slate background that emphasizes the stark white of the statue. A single, sharp spotlight illuminates the bust, creating long, heavy shadows that suggest a fading light of reason. The overall aesthetic is intellectual, somber, and foreboding.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 💀👨‍🏫 The Death of Expertise: The Campaign Against Established Knowledge and Why It Matters  
+![books-the-death-of-expertise-the-campaign-against-established-knowledge-and-why-it-matters](../books-the-death-of-expertise-the-campaign-against-established-knowledge-and-why-it-matters.jpg)  
 [🛒 The Death of Expertise: The Campaign Against Established Knowledge and Why It Matters. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3IoKflF)  
   
 ## 📖 Book Report: 💀 The Death of Expertise: The Campaign Against Established Knowledge and Why It Matters  

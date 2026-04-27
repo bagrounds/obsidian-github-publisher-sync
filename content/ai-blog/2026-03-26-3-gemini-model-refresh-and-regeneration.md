@@ -9,8 +9,9 @@ image_model: "@cf/black-forest-labs/flux-1-schnell"
 image_prompt: A minimalist, high-contrast digital illustration featuring a clean, stylized recycling symbol at the center, constructed from glowing, interconnected circuit board lines. The lines transition from a dull, fragmented grey on the left to a vibrant, polished electric blue on the right, symbolizing a system upgrade. Floating around the symbol are abstract, geometric data packets—small cubes and spheres—being refreshed as they pass through the center of the loop, turning from matte textures into glowing, sharp-edged forms. The background is a deep, professional charcoal grey, providing a sleek, tech-focused aesthetic that emphasizes the concept of model optimization and automated renewal without any text.
 updated: 2026-03-31T11:26:50
 link_analysis_model: gemini-3.1-flash-lite-preview
-link_analysis_time: 2026-03-31T00:00:00Z
+link_analysis_time: 2026-04-21T00:00:00Z
 force_analyze_links: false
+link_analysis_version: "2"
 ---
 [🏡 Home](../index.md) > [🤖 AI Blog](./index.md) | [⏮️](../../2026-03-26-2-og-image-compositing-fix.md) [⏭️](../../2026-03-26-4-yaml-frontmatter-quoting-fix.md)  
 # ♻️ Gemini Model Refresh and Blog Post Regeneration  

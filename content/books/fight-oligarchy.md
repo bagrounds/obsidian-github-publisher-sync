@@ -7,11 +7,12 @@ share: true
 affiliate link: https://amzn.to/43AWcf8
 CTA: 💥 Challenge the elite.
 link_analysis_model: gemini-3.1-flash-lite-preview
-link_analysis_time: 2026-04-04T00:00:00Z
+link_analysis_time: 2026-04-26T00:00:00Z
 force_analyze_links: false
 image_date: 2026-04-14T18:34:15Z
 image_model: "@cf/black-forest-labs/flux-1-schnell"
 image_prompt: A powerful, high-contrast digital illustration depicting a massive, weathered stone pyramid representing a rigid social hierarchy. At the very peak sits a small, glowing gold coin, casting long, sharp shadows over the base. Below, a diverse, silhouette-style crowd of people is shown pushing against the base of the structure, their collective motion creating cracks in the foundation. The color palette is moody and urgent, utilizing deep charcoal grays, stark white highlights, and a singular, piercing metallic gold for the elite symbol. The style is clean and graphic, resembling a modern political poster with bold lines and a focus on the tension between the monolithic structure of power and the rising tide of unified human resistance.
+link_analysis_version: "2"
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🇺🇸⚔️💰 Fight Oligarchy  

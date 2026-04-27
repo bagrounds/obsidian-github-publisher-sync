@@ -6,11 +6,16 @@ URL: https://bagrounds.org/books/empire-of-ai-dreams-and-nightmares-in-sam-altma
 share: true
 affiliate link: https://amzn.to/3Hyx3K0
 link_analysis_model: gemini-3.1-flash-lite-preview
-link_analysis_time: 2026-04-06T00:00:00Z
+link_analysis_time: 2026-04-20T00:00:00Z
 force_analyze_links: false
+link_analysis_version: "2"
+image_date: 2026-04-26T17:25:04Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: "A high-contrast, surreal digital illustration. In the center, a stylized, crystalline brain glows with electric blue light, partially encased in a cold, metallic, golden crown that appears to be fracturing. The background is split diagonally: one side features a warm, ethereal sunrise over a futuristic cityscape representing dreams, while the other side transitions into a dark, industrial landscape of towering server racks and cables resembling the roots of a dying tree, representing nightmares. Wisps of digital smoke and binary code drift between the two halves. The aesthetic is clean, sharp, and ominous, emphasizing the tension between utopian ambition and the heavy, tangible costs of artificial intelligence."
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🤖👑 Empire of AI: Dreams and Nightmares in Sam Altman's OpenAI  
+![books-empire-of-ai-dreams-and-nightmares-in-sam-altmans-openai](../books-empire-of-ai-dreams-and-nightmares-in-sam-altmans-openai.jpg)  
 [🛒 Empire of AI: Dreams and Nightmares in Sam Altman's OpenAI. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3Hyx3K0)  
   
 ## 📚 Book Report: 🤖 Empire of AI: 🌃 Dreams and 😨 Nightmares in Sam Altman's OpenAI  

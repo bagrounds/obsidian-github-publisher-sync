@@ -4,9 +4,10 @@ title: 📈📊⚙️🎯 W Edwards Deming
 aliases:
   - 📈📊⚙️🎯 W Edwards Deming
 force_analyze_links: false
-link_analysis_time: 2026-03-22T23:32:08.286Z
+link_analysis_time: 2026-04-24T00:00:00Z
 link_analysis_model: gemini-3.1-flash-lite-preview
 updated: 2026-03-23T08:20:15.795Z
+link_analysis_version: "2"
 ---
 [Home](../index.md) > [People](./index.md)  
 # 📈📊⚙️🎯 W Edwards Deming  

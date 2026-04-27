@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-04-26T19:12:27-07:00
+updated: 2026-04-26T19:39:18-07:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -77,11 +77,11 @@ updated: 2026-04-26T19:12:27-07:00
 - [🌸🐝🦋🛡️ Attracting Native Pollinators: The Xerces Society Guide, Protecting North America's Bees and Butterflies](./books/attracting-native-pollinators-the-xerces-society-guide-protecting-north-americas-bees-and-butterflies.md)  
   
   
-## [📺 Videos](./videos/index.md) (805)  
+## [📺 Videos](./videos/index.md) (806)  
+- [🌈🧠🦸 Why Being Delusional is a Superpower](./videos/why-being-delusional-is-a-superpower.md)  
 - [⚔️⚖️🗣️🧩 They Championed D.E.I. Now They’re Divided. | NYT Opinion](./videos/they-championed-dei-now-theyre-divided-nyt-opinion.md)  
 - [🤥🦠🇺🇸🏥 As misinformation spreads and mistrust deepens, can the U.S. handle another pandemic?](./videos/as-misinformation-spreads-and-mistrust-deepens-can-the-us-handle-another-pandemic.md)  
 - [❓😵🤯 What the Heck Just Happened (2025-10-25)?](./videos/what-the-heck-just-happened-2025-10-25.md)  
-- [🤔📊📉❓ What happens when no one trusts a country’s economic data](./videos/what-happens-when-no-one-trusts-a-countrys-economic-data.md)  
   
   
 ## [🌌 Topics](./topics/index.md) (91)  

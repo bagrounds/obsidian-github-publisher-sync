@@ -9,8 +9,9 @@ Platform: "#YouTube"
 Channel: "[[A Life Engineered]]"
 tags:
 link_analysis_model: gemini-3.1-flash-lite-preview
-link_analysis_time: 2026-04-05T00:00:00Z
+link_analysis_time: 2026-04-26T00:00:00Z
 force_analyze_links: false
+link_analysis_version: "2"
 ---
 [Home](../index.md) > [Videos](./index.md)  
 # 🪜📈🏢 3 High Leverage Career Skills (From a Principal At Amazon)  

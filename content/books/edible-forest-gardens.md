@@ -9,9 +9,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-16T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-04-26T15:25:19Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: An illustration showing a cross-section of a thriving, multi-layered forest garden. The scene features a rich, diverse ecosystem with a tall canopy of fruit-bearing trees, a mid-story of berry bushes and shrubs, and a lush ground cover of herbs and perennial vegetables. Sunlight filters through the leaves in soft, golden beams, illuminating the interconnected layers. In the foreground, a healthy, dark-soiled garden bed integrates seamlessly with the surrounding woodland, highlighting the harmony between wild forest structure and cultivated food production. The style is warm, organic, and slightly painterly, emphasizing the lush textures of leaves, ripening fruits, and rich, fertile earth, evoking a sense of abundance and ecological balance.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🍎🌳 Edible Forest Gardens  
+![books-edible-forest-gardens](../books-edible-forest-gardens.jpg)  
 [🛒 Edible Forest Gardens. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4n0cW7Z)  
   
 ## 🌳 Book Report: Edible Forest Gardens  

@@ -10,9 +10,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-16T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-04-26T20:22:25Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A minimalist, high-contrast illustration featuring a glowing, stylized lightbulb centered against a deep navy background. Within the glass of the bulb, intricate, golden geometric lines form a network that resembles both a neural map and a constellation. Emanating from the base of the bulb are upward-trending bar graphs and subtle, clean icons representing a microscope, a DNA helix, and a handshake. The composition is balanced and clean, using a palette of warm gold, crisp white, and deep slate blue to evoke a sense of clarity, intellect, and forward-moving optimism. The overall aesthetic is modern, professional, and symbolic of the intersection between human ingenuity and scientific advancement.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 💡🔬🧑‍🤝‍🧑📈 Enlightenment Now: The Case for Reason, Science, Humanism, and Progress  
+![books-enlightenment-now-the-case-for-reason-science-humanism-and-progress](../books-enlightenment-now-the-case-for-reason-science-humanism-and-progress.jpg)  
 [🛒 Enlightenment Now: The Case for Reason, Science, Humanism, and Progress. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4mziiGD)  
   
 ## 📚 Book Report: Enlightenment Now  

@@ -8,11 +8,16 @@ tags:
   - law
 affiliate link: https://amzn.to/3HlwLWQ
 link_analysis_model: gemini-3.1-flash-lite-preview
-link_analysis_time: 2026-04-09T00:00:00Z
+link_analysis_time: 2026-04-25T00:00:00Z
 force_analyze_links: false
+link_analysis_version: "2"
+image_date: 2026-04-26T22:23:02Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A robust, stylized pillar stands centrally, reminiscent of a classical courthouse column. Its lower half features solid, engraved patterns suggesting ancient legal texts or foundational laws. As the pillar rises, these patterns subtly transition and intertwine with intricate, glowing circuit board traces and abstract binary code, flowing upwards. At its apex, the capital of the pillar subtly transforms into a balanced, minimalist scale; one pan holds a rolled parchment scroll, while the other cradles a glowing, abstract digital data representation. The background is a soft, gradient blend of deep blues and purples, with subtle light emanating from the digital elements.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🏛️💻 ERISA: The Law and the Code  
+![books-erisa-the-law-and-the-code](../books-erisa-the-law-and-the-code.jpg)  
 [🛒 ERISA: The Law and the Code. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3HlwLWQ)  
   
 ## 📚 Book Report: ERISA: The Law and the Code  

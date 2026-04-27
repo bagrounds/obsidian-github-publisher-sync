@@ -10,9 +10,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-18T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-04-26T14:27:26Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A split-screen composition contrasting two worlds. The left side depicts a desaturated, fractured landscape representing the Too Little Too Late scenario, with smoke, barren earth, and crumbling structures. A sharp, diagonal transition leads to the right side, which showcases a vibrant, lush Giant Leap landscape. This side features a thriving circular city integrated with dense, healthy forests, clean rivers, and wind turbines nestled among greenery. The sun rises over the horizon, casting a warm, golden glow across the thriving ecosystem. The overall aesthetic is a blend of clean, modern infographic illustration and organic, hopeful nature, emphasizing the transition from crisis to systemic harmony.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🌍🆘 Earth for All: A Survival Guide for Humanity  
+![books-earth-for-all-a-survival-guide-for-humanity](../books-earth-for-all-a-survival-guide-for-humanity.jpg)  
 [🛒 Earth for All: A Survival Guide for Humanity. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4qSCw0f)  
   
 🌎📈🌱 A rigorously modeled pathway out of global crises through five interconnected societal turnarounds to achieve prosperity for all within planetary boundaries, serving as both a dire warning and an urgent, optimistic blueprint for collective action.  

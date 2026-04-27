@@ -7,11 +7,16 @@ share: true
 affiliate link: https://amzn.to/3I0d5s4
 CTA: 🧠 Explore consciousness.
 link_analysis_model: gemini-3.1-flash-lite-preview
-link_analysis_time: 2026-04-03T00:00:00Z
+link_analysis_time: 2026-04-18T00:00:00Z
 force_analyze_links: false
+link_analysis_version: "2"
+image_date: 2026-04-27T09:58:43Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A double-exposure style illustration centered on a human silhouette transitioning into organic, biological forms. The head of the silhouette is composed of intricate, glowing neural networks that seamlessly blend into the branching patterns of a growing tree or root system. The background features a soft, ethereal gradient that transitions from a deep, atmospheric blue at the bottom to a warm, sun-drenched golden light at the top. Floating, semi-transparent geometric shapes representing abstract systems and patterns orbit the figure, symbolizing the intersection of cognitive science and complex systems theory. The overall aesthetic is clean, modern, and contemplative, emphasizing the deep, seamless continuity between biological life, the physical environment, and the conscious mind.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🧠🌱🤔 Mind in Life: Biology, Phenomenology, and the Sciences of Mind  
+![books-mind-in-life-biology-phenomenology-and-the-sciences-of-mind](../books-mind-in-life-biology-phenomenology-and-the-sciences-of-mind.jpg)  
 [🛒 Mind in Life: Biology, Phenomenology, and the Sciences of Mind. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3I0d5s4)  
   
 ## 📖 Book Report: 🧠 Mind in Life: Biology, Phenomenology, and the Sciences of Mind  

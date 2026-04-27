@@ -7,11 +7,16 @@ share: true
 CTA: 🌍 Uncover the roots of displacement.
 affiliate link: https://amzn.to/49cljXP
 link_analysis_model: gemini-3.1-flash-lite-preview
-link_analysis_time: 2026-04-08T00:00:00Z
+link_analysis_time: 2026-04-23T00:00:00Z
 force_analyze_links: false
+link_analysis_version: "2"
+image_date: 2026-04-27T00:36:44Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A stylized, fractured map shows Central America merging into the southern U.S. A winding, cracked path, resembling a distressed seam, flows northward from the heart of Central America, crossing an abstract border. Faint, ethereal silhouettes of people, appearing to be in motion, are visible along this path. The Central American landscape is textured with subtle hints of arid earth, a thorny plant, and a distant, almost imperceptible plume of smoke. The U.S. side features a muted, slightly stark horizon. The color palette uses deep earth tones, dusty reds, and muted blues, with somber grays where the path intersects.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 👣🗺️💥 Everyone Who Is Gone Is Here: The United States, Central America, and the Making of a Crisis  
+![books-everyone-who-is-gone-is-here-the-united-states-central-america-and-the-making-of-a-crisis](../books-everyone-who-is-gone-is-here-the-united-states-central-america-and-the-making-of-a-crisis.jpg)  
 [🛒 Everyone Who Is Gone Is Here: The United States, Central America, and the Making of a Crisis. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/49cljXP)  
   
 🌎✈️🛂 Decades of multifaceted U.S. intervention, political corruption, and socioeconomic instability in Central America—primarily El Salvador, Guatemala, and Honduras—intertwined to ignite the enduring migration crisis at the U.S. southern border, viewed through the deeply human stories of those impacted.  

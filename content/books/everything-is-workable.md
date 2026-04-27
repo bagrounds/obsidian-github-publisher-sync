@@ -11,9 +11,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-17T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-04-27T03:14:10Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: Two distinct, angular, and somewhat jagged abstract forms, one light and one dark, meet in the center of the image. Instead of clashing, their edges are softly blending and smoothing into each other, creating a harmonious, flowing connection. From this point of integration, a single, stylized lotus flower emerges, its petals unfolding gracefully upwards. The scene is set over a calm, reflective surface, perhaps water, with subtle, concentric ripples radiating outwards. The color palette is serene, with muted earth tones, soft blues, and greens, highlighting the gentle transformation.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🤝🧘 Everything Is Workable: A Zen Approach to Conflict Resolution  
+![books-everything-is-workable](../books-everything-is-workable.jpg)  
 [🛒 Everything Is Workable: A Zen Approach to Conflict Resolution. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3SwE3JK)  
   
 ## 📖 Book Report: 🧘‍♀️ Everything Is Workable: A Zen Approach to Conflict Resolution  

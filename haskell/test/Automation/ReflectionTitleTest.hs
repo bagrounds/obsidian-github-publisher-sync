@@ -13,6 +13,7 @@ tests :: TestTree
 tests = testGroup "ReflectionTitle"
   [ defaultModelTests
   , reflectionNeedsTitleTests
+  , reflectionTitleTargetDayTests
   , stripTitlePrefixesTests
   , extractTrailingEmojisTests
   , extractHeadingEmojisTests
@@ -43,6 +44,24 @@ reflectionNeedsTitleTests = testGroup "reflectionNeedsTitle"
       reflectionNeedsTitle "---\ntags: foo\n---\nbody" "2025-01-15" @?= True
   , testCase "needs title when no frontmatter" $
       reflectionNeedsTitle "just body text" "2025-01-15" @?= True
+  ]
+
+reflectionTitleTargetDayTests :: TestTree
+reflectionTitleTargetDayTests = testGroup "reflectionTitleTargetDay"
+  [ testCase "hour 22 (10 PM) returns today" $
+      reflectionTitleTargetDay 22 (fromGregorian 2026 4 27) @?= fromGregorian 2026 4 27
+  , testCase "hour 23 (11 PM) returns today" $
+      reflectionTitleTargetDay 23 (fromGregorian 2026 4 27) @?= fromGregorian 2026 4 27
+  , testCase "hour 0 (midnight, past-midnight run) returns yesterday" $
+      reflectionTitleTargetDay 0 (fromGregorian 2026 4 27) @?= fromGregorian 2026 4 26
+  , testCase "hour 1 (1 AM, past-midnight run) returns yesterday" $
+      reflectionTitleTargetDay 1 (fromGregorian 2026 4 27) @?= fromGregorian 2026 4 26
+  , testCase "hour 21 (9 PM) returns yesterday" $
+      reflectionTitleTargetDay 21 (fromGregorian 2026 4 27) @?= fromGregorian 2026 4 26
+  , testCase "handles month boundary correctly" $
+      reflectionTitleTargetDay 0 (fromGregorian 2026 5 1) @?= fromGregorian 2026 4 30
+  , testCase "handles year boundary correctly" $
+      reflectionTitleTargetDay 0 (fromGregorian 2027 1 1) @?= fromGregorian 2026 12 31
   ]
 
 stripTitlePrefixesTests :: TestTree

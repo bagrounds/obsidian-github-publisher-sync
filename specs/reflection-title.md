@@ -25,6 +25,24 @@ to the daily reflection.
 - **Idempotency**: Skips if the title field already contains a creative title
   (i.e., anything beyond the bare date)
 
+## Midnight-Transition Guard
+
+Because scheduled runs start at the top of each hour and individual tasks
+execute sequentially (with 30-second inter-task delays), a run that starts at
+11 PM Pacific can still be executing tasks after midnight Pacific. Without a
+guard, `runReflectionTitle` would call `todayPacificDay` after midnight and
+discover a reflection created by a blog-series task also running in that same
+process — then prematurely title it 22 hours before the correct window.
+
+The guard is implemented in `reflectionTitleTargetDay`:
+
+- If the current Pacific hour is **22 or 23**, use today's date as the target.
+- If the current Pacific hour is **0–21** (we have crossed midnight), use
+  yesterday's date as the target, ensuring the task acts as if it is still
+  operating under the previous evening's window.
+
+This function is pure and fully tested in `ReflectionTitleTest.hs`.
+
 ## Title Format
 
 Titles follow a creative game observed across 20+ existing reflection notes:
@@ -116,6 +134,7 @@ The task updates three locations in the reflection note:
 | `extractHeadingEmojis(heading)` | Extract leading emojis from one heading line |
 | `stripTitlePrefixes(title)` | Remove date and emoji prefixes |
 | `reflectionNeedsTitle(content, date)` | Idempotency check |
+| `reflectionTitleTargetDay(hour, today)` | Return the target date for titling given the current Pacific hour; guards against premature titling after midnight during long-running task sequences |
 | `buildReflectionTitlePrompt(titles, examples)` | Gemini prompt construction |
 | `parseReflectionTitle(raw)` | Clean raw model response |
 | `applyReflectionTitle(content, date, title)` | Apply title to note |
@@ -129,13 +148,14 @@ The task updates three locations in the reflection note:
 
 ## Tests
 
-56 tests across 9 suites covering:
+63 tests across 10 suites covering:
 
 - `extractHeadingEmojis`: Wiki links, markdown links, plain headings, no-emoji headings
 - `extractTrailingEmojis`: Multi-heading extraction, deduplication
 - `stripTitlePrefixes`: Emoji stripping, date stripping, combined, plain text
 - `extractLinkedTitles`: Wiki links, markdown links, heading exclusion, date prefix stripping
 - `reflectionNeedsTitle`: Date-only detection, titled detection, edge cases
+- `reflectionTitleTargetDay`: Hour 22/23 → today, hours 0–21 → yesterday, month/year boundaries
 - `buildReflectionTitlePrompt`: One-word-per-title instructions, examples inclusion, numbering
 - `parseReflectionTitle`: Code fence stripping, quote removal, date prefix handling, backtick
   stripping, emoji spacing normalization, preamble stripping (single-line, multi-line, thinking output)

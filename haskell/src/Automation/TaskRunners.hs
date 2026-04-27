@@ -24,7 +24,7 @@ import qualified Network.HTTP.Client as HTTP
 import Network.HTTP.Types.Status (statusCode)
 import System.Directory (createDirectoryIfMissing, doesDirectoryExist, doesFileExist, listDirectory, removeFile)
 import System.FilePath ((</>), dropExtension)
-import Data.Time (defaultTimeLocale, parseTimeM)
+import Data.Time (defaultTimeLocale, parseTimeM, getCurrentTime, addDays, localDay, localTimeOfDay, todHour)
 
 import Automation.AiBlogLinks (NavLinkResult (..), aiBlogConfig, ensureAllNavLinks, buildReflectionLinks)
 import Automation.AiFiction
@@ -71,7 +71,7 @@ import qualified Automation.Gemini as Gemini
 import qualified Automation.GoogleAnalytics as GA
 import qualified Automation.InternalLinking as IL
 import qualified Automation.Json as Json
-import Automation.PacificTime (formatDay, todayPacificDay, yesterdayPacificDay)
+import Automation.PacificTime (formatDay, toPacificLocalTime, todayPacificDay, yesterdayPacificDay)
 import Automation.ReflectionTitle
   ( ReflectionTitleConfig (ReflectionTitleConfig, rtcModels, rtcNoteContent, rtcDate, rtcRecentTitles)
   , ReflectionTitleResult (rtrFullTitle, rtrModel, rtrUpdatedContent)
@@ -80,6 +80,7 @@ import Automation.ReflectionTitle
   , filterRecentReflectionFiles
   , generateReflectionTitle
   , reflectionNeedsTitle
+  , reflectionTitleTargetDay
   )
 import Automation.RelativePath (unRelativePath, mkRelativePath)
 import Automation.Scheduler
@@ -428,16 +429,22 @@ runReflectionTitle :: Context.AppContext -> IO ()
 runReflectionTitle context = do
   logMsg "▶️  reflection-title"
 
-  today <- todayPacificDay
-  let todayText = formatDay today
-  yesterday <- formatDay <$> yesterdayPacificDay
+  now <- getCurrentTime
+  let localNow = toPacificLocalTime now
+      currentHour = todHour (localTimeOfDay localNow)
+      today = localDay localNow
+      targetDay = reflectionTitleTargetDay currentHour today
+      targetText = formatDay targetDay
+      yesterdayText = formatDay (addDays (-1) targetDay)
 
-  todayDone <- tryTitleForDate context todayText
+  logMsg $ "  🕐 Pacific hour: " <> T.pack (show currentHour) <> ", targeting: " <> targetText
+
+  todayDone <- tryTitleForDate context targetText
   if todayDone
     then pure ()
     else do
-      logMsg $ "  📅 Checking yesterday (" <> yesterday <> ")..."
-      _ <- tryTitleForDate context yesterday
+      logMsg $ "  📅 Checking yesterday (" <> yesterdayText <> ")..."
+      _ <- tryTitleForDate context yesterdayText
       pure ()
 
   logMsg "✅ reflection-title"

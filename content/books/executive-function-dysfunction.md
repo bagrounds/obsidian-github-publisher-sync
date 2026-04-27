@@ -8,11 +8,16 @@ Author:
 tags:
 affiliate link: https://amzn.to/3HDxFOl
 link_analysis_model: gemini-3.1-flash-lite-preview
-link_analysis_time: 2026-04-07T00:00:00Z
+link_analysis_time: 2026-04-21T00:00:00Z
 force_analyze_links: false
+link_analysis_version: "2"
+image_date: 2026-04-27T05:16:43Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A high-angle, minimalist illustration featuring a wooden desk surface. On the desk, scattered but neatly arranged, are various colorful puzzle pieces, a set of translucent building blocks, and an open notebook with a hand-drawn flow chart. A soft, warm light illuminates the scene from the side, casting gentle shadows that give the objects depth. In the center, a stylized, glowing outline of a human brain is composed of interconnected light filaments, symbolizing clarity and cognitive connection. The background is a soft, muted teal, providing a professional yet approachable atmosphere. The overall aesthetic is clean, modern, and organized, emphasizing the transition from chaos to structure through thoughtful support and strategy.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🧠🧩🚧🧑‍🏫👩‍👧‍👦 Executive Function Dysfunction - Strategies for Educators and Parents  
+![books-executive-function-dysfunction](../books-executive-function-dysfunction.jpg)  
 [🛒 Executive Function Dysfunction - Strategies for Educators and Parents. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3HDxFOl)  
   
 ## 🤖 AI Summary  

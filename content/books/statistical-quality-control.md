@@ -8,12 +8,13 @@ Author:
 tags:
 affiliate link: https://amzn.to/3FIloYq
 link_analysis_model: gemini-3.1-flash-lite-preview
-link_analysis_time: 2026-04-04T00:00:00Z
+link_analysis_time: 2026-04-20T00:00:00Z
 force_analyze_links: false
 updated: 2026-04-04T09:22:56
 image_date: 2026-04-13T16:37:02Z
 image_model: "@cf/black-forest-labs/flux-1-schnell"
 image_prompt: A clean, minimalist illustration featuring a professional industrial setting. In the foreground, a sleek, modern clipboard rests on a polished steel workbench, holding a sheet of paper with a clear, vibrant line graph showing a stable, controlled process with data points fluctuating within defined upper and lower control limits. To the side, a high-precision digital caliper and a small, organized bin of perfectly uniform metal components sit in soft, diffuse light. The color palette is professional and crisp, utilizing shades of slate blue, cool grey, and crisp white, accented by a single, sharp teal highlight on the graphs trend line. The background is slightly out of focus, suggesting a quiet, high-tech manufacturing environment with subtle geometric shapes and clean, sharp lines to evoke a sense of precision, analytical rigor, and systematic quality.
+link_analysis_version: "2"
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 📊📈✅🔍 Statistical Quality Control  

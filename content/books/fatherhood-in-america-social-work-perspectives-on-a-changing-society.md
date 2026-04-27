@@ -9,9 +9,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-18T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-04-27T15:47:25Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: "A warm, stylized illustration featuring a diverse collection of silhouettes representing fathers in various roles: a father reading to a young child, a man pushing a stroller, and a father teaching a teenager to ride a bike. The background is a soft, abstract gradient of sunrise colors, suggesting a new era for modern parenting. Interwoven in the background are faint, minimalist geometric lines and subtle patterns representing social connections and community networks. The overall aesthetic is professional, compassionate, and contemporary, using a balanced color palette of muted blues, warm ochres, and soft teals to evoke a sense of stability, growth, and inclusive support."
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 👨‍👩‍👧‍👦🇺🇸 Fatherhood in America: Social Work Perspectives on a Changing Society  
+![books-fatherhood-in-america-social-work-perspectives-on-a-changing-society](../books-fatherhood-in-america-social-work-perspectives-on-a-changing-society.jpg)  
 [🛒 Fatherhood in America: Social Work Perspectives on a Changing Society. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3SSpU9N)  
   
 ## 📚 Book Report: 👨‍👧‍👦 Fatherhood in America: 🧑‍💼 Social Work Perspectives on a Changing Society  

@@ -5,10 +5,10 @@ aliases:
 title: 📺 Videos
 URL: https://bagrounds.org/videos
 backlinks: false
-updated: 2026-04-26T18:55:19-07:00
+updated: 2026-04-26T19:12:27-07:00
 ---
 [Home](../index.md)  
-# 📺 Videos (804)  
+# 📺 Videos (805)  
 - [💰🤑🤖💡🚀💲 $0.10 per Month Runs My Entire AI Life. I'll Show You How.](./0-10-month-runs-my-entire-ai-life-ill-show-you-how.md)  
 - [📊📈📉📃👁️ 10 Charts to Understand the 900 Page Budget Bill](./10-charts-to-understand-the-900-page-budget-bill.md)  
 - [🤖🔗⬆️✅ 12-Factor Agents: Patterns of reliable LLM applications — Dex Horthy, HumanLayer](./12-factor-agents-patterns-of-reliable-llm-applications-dex-horthy-humanlayer.md)  
@@ -643,6 +643,7 @@ updated: 2026-04-26T18:55:19-07:00
 - [🧏🎭📖 The Untold Story of Deaf Theater](./the-untold-story-of-deaf-theater.md)  
 - [🏠👩‍👧‍👦💸💰 The women who demanded wages for housework - Witness History, BBC World Service](./the-women-who-demanded-wages-for-housework-witness-history-bbc-world-service.md)  
 - [🏫➡️🧊👨‍👩‍👧‍👦💔 'They are circling our schools,' superintendent says after 5-year-old detained by ICE](./they-are-circling-our-schools-superintendent-says-after-5-year-old-detained-by-ice.md)  
+- [⚔️⚖️🗣️🧩 They Championed D.E.I. Now They’re Divided. | NYT Opinion](./they-championed-dei-now-theyre-divided-nyt-opinion.md)  
 - [💥👥💀🚨 ‘They killed a man, created chaos:’ Gov. Walz on shooting](./they-killed-a-man-created-chaos-gov-walz-on-shooting.md)  
 - [🧠💡✨ This 1 Book ACTUALLY Teaches You to Think Like a Genius](./this-1-book-actually-teaches-you-to-think-like-a-genius.md)  
 - [💨🏠⚡🚫❓ This Chimney Will Cool Your Entire Home WITHOUT Electricity. Why Did The Energy Industry Hide It?](./this-chimney-will-cool-your-entire-home-without-electricity-why-did-the-energy-industry-hide-it.md)  

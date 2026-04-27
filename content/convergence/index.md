@@ -5,11 +5,12 @@ aliases:
 title: 🔀 Convergence
 URL: https://bagrounds.org/convergence
 backlinks: false
-updated: 2026-04-26T07:20:23-07:00
+updated: 2026-04-26T18:32:07-07:00
 ---
 [🏡 Home](../index.md)  
-# 🔀 Convergence (12)  
+# 🔀 Convergence (13)  
 - [🔀 Convergence — AGENTS.md](./AGENTS.md)  
+- [2026-04-26 | 🔀 🪞 The Architectures of Care and Cognition 🔀](./2026-04-26-the-architectures-of-care-and-cognition.md)  
 - [2026-04-25 | 🔀 🪞 The Architectures of Clarity and Sanctuary 🔀](./2026-04-25-the-architectures-of-clarity-and-sanctuary.md)  
 - [2026-04-24 | 🔀 🪞 The Enduring Architecture of Care: Sustaining Agency and Abundance 🔀](./2026-04-24-the-enduring-architecture-of-care-sustaining-agency-and-abundance.md)  
 - [2026-04-23 | 🔀 🪞 The Sustaining Architectures of Agency and Abundance 🔀](./2026-04-23-the-sustaining-architectures-of-agency-and-abundance.md)  

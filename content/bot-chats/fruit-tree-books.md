@@ -11,7 +11,7 @@ image_date: 2026-04-11T22:55:40Z
 image_model: "@cf/black-forest-labs/flux-1-schnell"
 image_prompt: A warm, sun-dappled backyard scene featuring a healthy, young fruit tree as the focal point. The tree is laden with a mix of ripening apples and pears. Beneath the tree, a small, weathered wooden garden bench holds a neat stack of three vintage-style gardening books. A pair of well-used pruning shears rests on top of the stack. The background shows a soft-focus view of a lush, thriving home garden with raised beds and vibrant foliage, suggesting a peaceful, productive ecosystem. The lighting is golden and inviting, evoking a sense of growth, learning, and the satisfaction of home cultivation. The style is clean, semi-realistic, and serene.
 link_analysis_version: "2"
-updated: 2026-04-25T11:29:16
+updated: 2026-04-27T01:47:00
 ---
 [Home](../index.md) > [Bot Chats](./index.md)  
 # 🏡🍎🌳📚 Home Fruit Tree Books  

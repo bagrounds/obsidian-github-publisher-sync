@@ -10,9 +10,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-18T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-04-26T19:30:33Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A split-composition illustration visualizing the bridge between the physical and the cerebral. On the left side, a stylized, high-contrast silhouette of a runner in mid-stride, rendered in deep earthy tones to represent the body. On the right side, a glowing, intricate neural network or labyrinthine map of the brain, rendered in vibrant, electric blues and golds to represent the mind. The two halves meet in the center, where the runner’s silhouette seamlessly transitions into the glowing light of the neural pathways. The background is a stark, minimalist gradient from deep charcoal to soft white, emphasizing the concept of pushing against a horizon. The overall aesthetic is clean, modern, and scientific, evoking a sense of human potential and the elastic nature of our perceived boundaries.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 💪🧠 Endure: Mind, Body, and the Curiously Elastic Limits of Human Performance  
+![books-endure-mind-body-and-the-curiously-elastic-limits-of-human-performance](../books-endure-mind-body-and-the-curiously-elastic-limits-of-human-performance.jpg)  
 [🛒 Endure: Mind, Body, and the Curiously Elastic Limits of Human Performance. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3W37Vzf)  
   
 ## 📚 Book Report: Endure: Mind, Body, and the Curiously Elastic Limits of Human Performance  

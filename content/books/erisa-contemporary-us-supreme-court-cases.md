@@ -8,11 +8,16 @@ tags:
   - law
 affiliate link: https://amzn.to/43tlvjW
 link_analysis_model: gemini-3.1-flash-lite-preview
-link_analysis_time: 2026-04-09T00:00:00Z
+link_analysis_time: 2026-04-25T00:00:00Z
 force_analyze_links: false
+link_analysis_version: "2"
+image_date: 2026-04-26T21:21:13Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: "A stylized, majestic view of the US Supreme Court buildings iconic facade, rendered with a clean, modern aesthetic. From its base, dynamic, interconnected lines and abstract shapes sweep upwards, symbolizing the complex flow of employee benefits and legal interpretations. Intertwined within these lines are subtle, minimalist icons: a stack of coins for pensions, a medical cross for health plans, and a secure house silhouette for retirement. The color palette features dignified blues, greys, and warm gold accents, conveying authority, complexity, and human impact."
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🇺🇸⚖️ ERISA: Contemporary US Supreme Court Cases  
+![books-erisa-contemporary-us-supreme-court-cases](../books-erisa-contemporary-us-supreme-court-cases.jpg)  
 [🛒 ERISA: Contemporary US Supreme Court Cases. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/43tlvjW)  
   
 ## 📖 Book Report: ⚖️ ERISA: Contemporary US Supreme Court Cases  

@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-04-26T07:20:23-07:00
+updated: 2026-04-26T18:32:07-07:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -28,25 +28,25 @@ updated: 2026-04-26T07:20:23-07:00
 - [2026-04-20 | 📊 Changes Preview in Reflections 🪞](./ai-blog/2026-04-20-1-changes-preview-in-reflections.md)  
   
   
-## [🤖 Auto Blog Zero](./auto-blog-zero/index.md) (46)  
+## [🤖 Auto Blog Zero](./auto-blog-zero/index.md) (47)  
+- [2026-04-26 | 🤖 📆 Weekly Recap: The Geometry of Human-Machine Collaboration 🤖](./auto-blog-zero/2026-04-26-weekly-recap-the-geometry-of-human-machine-collaboration.md)  
 - [2026-04-25 | 🤖 🧩 The Geometry of Automated Agency 🤖](./auto-blog-zero/2026-04-25-the-geometry-of-automated-agency.md)  
 - [2026-04-24 | 🤖 🧠 Beyond the Scaffolding of Correction 🤖](./auto-blog-zero/2026-04-24-beyond-the-scaffolding-of-correction.md)  
 - [2026-04-23 | 🤖 🧠 Beyond the Scaffolding of Correction 🤖](./auto-blog-zero/2026-04-23-beyond-the-scaffolding-of-correction.md)  
-- [2026-04-22 | 🤖 The Feedback Loop of Agency 🤖](./auto-blog-zero/2026-04-22-the-feedback-loop-of-agency.md)  
   
   
-## [🐔 Chickie Loo](./chickie-loo/index.md) (46)  
+## [🐔 Chickie Loo](./chickie-loo/index.md) (47)  
+- [2026-04-26 | 🐔 A Weekend of Rest, Anticipation, and Tuna Casserole 🐔](./chickie-loo/2026-04-26-a-weekend-of-rest-anticipation-and-tuna-casserole.md)  
 - [2026-04-25 | 🐔 A Symphony of Milestones and Rainy Day Rewards 🐔](./chickie-loo/2026-04-25-a-symphony-of-milestones-and-rainy-day-rewards.md)  
 - [2026-04-24 | 🐔 🌸 A Season of Patience and Painted Walls 🐔](./chickie-loo/2026-04-24-a-season-of-patience-and-painted-walls.md)  
 - [2026-04-23 | 🐔 🍪 Cookies, Plumbers, and the Joy of a Full Pantry 🐔](./chickie-loo/2026-04-23-cookies-plumbers-and-the-joy-of-a-full-pantry.md)  
-- [2026-04-22 | 🐔 🥚 Pickled Dreams and Kitchen Patience 🐔](./chickie-loo/2026-04-22-pickled-dreams-and-kitchen-patience.md)  
   
   
-## [🏛️ Systems for Public Good](./systems-for-public-good/index.md) (35)  
+## [🏛️ Systems for Public Good](./systems-for-public-good/index.md) (36)  
+- [2026-04-26 | 🏛️ 🗓️ This Week in Collective Well-being: Building Civic Foundations 🏛️](./systems-for-public-good/2026-04-26-this-week-in-collective-well-being-building-civic-foundations.md)  
 - [2026-04-25 | 🏛️ 🎨 The Canvas of Community: Arts and Cultural Institutions as Public Goods 🏛️](./systems-for-public-good/2026-04-25-the-canvas-of-community-arts-and-cultural-institutions-as-public-goods.md)  
 - [2026-04-24 | 🏛️ 🌳 The Green Heart of Communities: Parks as Public Goods 🏛️](./systems-for-public-good/2026-04-24-the-green-heart-of-communities-parks-as-public-goods.md)  
 - [2026-04-23 | 🏛️ 📚 The Enduring Sanctuary of Knowledge: Public Libraries as Public Goods 🏛️](./systems-for-public-good/2026-04-23-the-enduring-sanctuary-of-knowledge-public-libraries-as-public-goods.md)  
-- [2026-04-22 | 🏛️ The Unseen Threads: Connecting Our Collective Well-being 🏛️](./systems-for-public-good/2026-04-22-the-unseen-threads-connecting-our-collective-well-being.md)  
   
   
 ## [📰 The Noise](./the-noise/index.md) (17)  
@@ -63,25 +63,25 @@ updated: 2026-04-26T07:20:23-07:00
 - [2026-04-23 | 🌟 Triumphs of Ingenuity and Compassion 🌟](./positivity-bias/2026-04-23-triumphs-of-ingenuity-and-compassion.md)  
   
   
-## [🔀 Convergence](./convergence/index.md) (12)  
+## [🔀 Convergence](./convergence/index.md) (13)  
+- [2026-04-26 | 🔀 🪞 The Architectures of Care and Cognition 🔀](./convergence/2026-04-26-the-architectures-of-care-and-cognition.md)  
 - [2026-04-25 | 🔀 🪞 The Architectures of Clarity and Sanctuary 🔀](./convergence/2026-04-25-the-architectures-of-clarity-and-sanctuary.md)  
 - [2026-04-24 | 🔀 🪞 The Enduring Architecture of Care: Sustaining Agency and Abundance 🔀](./convergence/2026-04-24-the-enduring-architecture-of-care-sustaining-agency-and-abundance.md)  
 - [2026-04-23 | 🔀 🪞 The Sustaining Architectures of Agency and Abundance 🔀](./convergence/2026-04-23-the-sustaining-architectures-of-agency-and-abundance.md)  
-- [2026-04-22 | 🔀 ⚖️ The Sovereignty of Thought: Navigating Correction, Care, and Creative Friction 🔀](./convergence/2026-04-22-the-sovereignty-of-thought-navigating-correction-care-and-creative-friction.md)  
   
   
 ## [📚 Books](./books/index.md) (960)  
-- [🧪👁️ The Scientific Image](./books/the-scientific-image.md)  
-- [☀️📖🌿 The New Sunset Western Garden Book: The Ultimate Gardening Guide](./books/the-new-sunset-western-garden-book-the-ultimate-gardening-guide.md)  
-- [🧠💥📈💡🎆 Dynamical Systems in Neuroscience: The Geometry of Excitability and Bursting](./books/dynamical-systems-in-neuroscience.md)  
-- [🏜️🐛 Dune](./books/dune.md)  
+- [🌸🐝🦋🛡️ Attracting Native Pollinators: The Xerces Society Guide, Protecting North America's Bees and Butterflies](./books/attracting-native-pollinators-the-xerces-society-guide-protecting-north-americas-bees-and-butterflies.md)  
+- [♂️👑✊ Political Masculinity: How Incels, Fundamentalists and Authoritarians Mobilise for Patriarchy](./books/political-masculinity-how-incels-fundamentalists-and-authoritarians-mobilise-for-patriarchy.md)  
+- [👣🗺️💥 Everyone Who Is Gone Is Here: The United States, Central America, and the Making of a Crisis](./books/everyone-who-is-gone-is-here-the-united-states-central-america-and-the-making-of-a-crisis.md)  
+- [💪⚕️ Essentials of Creatine in Sports and Health](./books/essentials-of-creatine-in-sports-and-health.md)  
   
   
-## [📺 Videos](./videos/index.md) (802)  
-- [🧠🪜💡🤔⬆️🎓 6 Levels of Thinking Every Student MUST Master](./videos/6-levels-of-thinking-every-student-must-master.md)  
-- [🌅🧠🚀♾️ This morning routine is scientifically proven to make you limitless](./videos/this-morning-routine-is-scientifically-proven-to-make-you-limitless.md)  
-- [🏛️🗣️📅 Politics Chat, October 21, 2025](./videos/politics-chat-october-21-2025.md)  
-- [🚫👑⚡✊ Sen. Bernie Sanders - Harnessing Energy From «No Kings» Rally to «Fight Oligarchy» | The Daily Show](./videos/sen-bernie-sanders-harnessing-energy-from-no-kings-rally-to-fight-oligarchy-the-daily-show.md)  
+## [📺 Videos](./videos/index.md) (803)  
+- [🎓🤥 The Expert Myth](./videos/the-expert-myth.md)  
+- [🐛🐌🐞🌿🏡🦠 Managing Pests & Diseases in Your Backyard: Aphids, Blight, and Slugs - Oh My! Workshop](./videos/managing-pests-diseases-in-your-backyard-aphids-blight-and-slugs-oh-my-workshop.md)  
+- [🗣️👨‍💼 A Conversation with Paul Krugman](./videos/a-conversation-with-paul-krugman.md)  
+- [🗣️🏛️📈 This Moment in Politics | Explainer](./videos/this-moment-in-politics-explainer.md)  
   
   
 ## [🌌 Topics](./topics/index.md) (91)  
@@ -113,10 +113,10 @@ updated: 2026-04-26T07:20:23-07:00
   
   
 ## [👥 People](./people/index.md) (18)  
+- [👨‍🏫📚💻🤔 Cal Newport](./people/cal-newport.md)  
 - [⚔️🗡️🩸 Joe Abercrombie](./people/joe-abercrombie.md)  
 - [🕸️🌐👨‍💻 Tim Berners-Lee](./people/tim-berners-lee.md)  
 - [📈📊⚙️🎯 W Edwards Deming](./people/w-edwards-deming.md)  
-- [🤖🧠💻 Andrej Karpathy](./people/andrej-karpathy.md)  
   
   
 ## [🛍️ Products](./products/index.md) (6)  

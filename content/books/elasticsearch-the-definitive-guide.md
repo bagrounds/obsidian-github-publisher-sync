@@ -8,11 +8,16 @@ Author:
 tags:
 affiliate link: https://amzn.to/4dOURFt
 link_analysis_model: gemini-3.1-flash-lite-preview
-link_analysis_time: 2026-04-07T00:00:00Z
+link_analysis_time: 2026-04-21T00:00:00Z
 force_analyze_links: false
+link_analysis_version: "2"
+image_date: 2026-04-26T15:25:21Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A stylized, high-contrast illustration of a glowing, translucent glass cube floating in a dark, infinite digital void. The cube is composed of a complex, three-dimensional grid of interconnected nodes and shimmering fiber-optic filaments, representing a distributed cluster. Inside the cube, a miniature, golden magnifying glass hovers, casting a beam of light that illuminates a cascade of floating, holographic data shards and binary code fragments. The aesthetic is clean and modern, using a color palette of deep navy, electric blue, and vibrant amber accents to evoke themes of search, precision, and high-performance data architecture. The background features subtle, geometric patterns suggesting a network infrastructure, with a sharp focus on the central, glowing cube to emphasize depth and technical complexity.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # ⚡🔍👑📖 Elasticsearch: The Definitive Guide  
+![books-elasticsearch-the-definitive-guide](../books-elasticsearch-the-definitive-guide.jpg)  
 [🛒 Elasticsearch: The Definitive Guide. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4dOURFt)  
   
 ## 🤖 AI Summary  

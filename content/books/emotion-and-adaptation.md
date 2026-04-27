@@ -7,11 +7,16 @@ share: true
 affiliate link: https://amzn.to/3KoOmyy
 CTA: 🌱 Nurture resilience.
 link_analysis_model: gemini-3.1-flash-lite-preview
-link_analysis_time: 2026-04-02T00:00:00Z
+link_analysis_time: 2026-04-22T00:00:00Z
 force_analyze_links: false
+link_analysis_version: "2"
+image_date: 2026-04-26T17:25:01Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A conceptual illustration featuring a human silhouette formed by shifting, translucent geometric shapes. Inside the chest area, a vibrant, glowing core of light pulses outward, representing the internal emotional landscape. Surrounding the figure, delicate, interconnected neural pathways transition into organic, root-like structures that anchor into a textured, earthy ground. The background is a soft, atmospheric gradient, shifting from cool, contemplative blues at the edges to warm, energetic ambers near the center. The composition emphasizes the bridge between internal cognitive processing and external physical adaptation, using a balance of structured lines and fluid, abstract forms to suggest the complexity of the human experience without any text.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 😢🔄 Emotion and Adaptation  
+![books-emotion-and-adaptation](../books-emotion-and-adaptation.jpg)  
 [🛒 Emotion and Adaptation. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3KoOmyy)  
   
 ## 📚 Book Report: 😢 Emotion and Adaptation  

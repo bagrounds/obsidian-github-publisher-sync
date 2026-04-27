@@ -10,9 +10,13 @@ force_analyze_links: false
 link_analysis_time: 2026-04-15T00:00:00Z
 link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_version: "2"
+image_date: 2026-04-26T23:27:29Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A single, brightly illuminated, perfectly straight path emerges from a complex tangle of many fainter, winding, and diverging paths. A pair of sleek, modern scissors, sharp and precise, is positioned at the edge of the tangle, in the act of snipping away one of the less defined, meandering paths. The cut path visually recedes and fades into the background, leaving the central, clear path even more prominent. The overall aesthetic is clean, minimalist, and focused, emphasizing clarity and intentional reduction.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # ➖💯 Essentialism: The Disciplined Pursuit of Less  
+![books-essentialism-the-disciplined-pursuit-of-less](../books-essentialism-the-disciplined-pursuit-of-less.jpg)  
 [🛒 Essentialism: The Disciplined Pursuit of Less. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4q8rVOm)  
   
 ## 📚 Book Report: Essentialism: The Disciplined Pursuit of Less  

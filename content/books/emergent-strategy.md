@@ -12,9 +12,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-15T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-04-26T16:23:49Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A vibrant, high-angle composition featuring a sprawling, intricate mycelial network glowing softly against a dark, rich soil background. Emerging from the center of this fungal web is a single, vivid monarch butterfly mid-flight, its wings transitioning into a pattern of tessellating fractals. Surrounding the network are subtle, interconnected geometric shapes—reminiscent of both constellations and organic cell structures—that pulse with light. The color palette is earthy and organic, dominated by deep moss greens, rich browns, and burnt oranges, contrasted by the luminous, ethereal gold and teal of the butterfly and the shifting light of the network. The atmosphere is one of quiet, interconnected growth and transformation, capturing the essence of small-scale patterns evolving into large-scale change.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🦋♟️ Emergent Strategy: Shaping Change, Changing Worlds  
+![books-emergent-strategy](../books-emergent-strategy.jpg)  
 [🛒 Emergent Strategy: Shaping Change, Changing Worlds. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/456a6HQ)  
   
 ## 📖 Book Report: 🦋 Emergent Strategy: Shaping Change, Changing Worlds  

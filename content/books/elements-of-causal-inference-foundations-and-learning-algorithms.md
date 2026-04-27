@@ -11,9 +11,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-16T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-04-26T16:23:39Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A minimalist, high-contrast illustration featuring a network of glowing nodes and interconnecting lines suspended in a dark, clean space. The nodes are arranged to form a Directed Acyclic Graph (DAG), with some lines featuring subtle directional arrows. In the center, a complex, tangled cluster of lines is being clarified into a structured, linear flow by a translucent, geometric prism. The color palette uses deep navy and charcoal backgrounds with vibrant accents of electric blue and warm amber to represent data and insight. The overall aesthetic is scientific and modern, evoking precision, mathematical logic, and the transition from chaotic correlation to structured causal understanding.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # ❓➡️💡🧮 Elements of Causal Inference: Foundations and Learning Algorithms  
+![books-elements-of-causal-inference-foundations-and-learning-algorithms](../books-elements-of-causal-inference-foundations-and-learning-algorithms.jpg)  
 [🛒 Elements of Causal Inference: Foundations and Learning Algorithms. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4mKBX6C)  
   
 ## 🤖 AI Summary  

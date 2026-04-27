@@ -11,9 +11,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-19T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-04-26T19:30:30Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A high-angle, close-up composition featuring a stack of three thick, professional-looking reference volumes bound in deep forest green and slate grey. Resting on top of the books is a modern compound light microscope next to a delicate, pressed fern leaf and a small glass vial containing plant seeds. The background is a soft-focus laboratory workbench with faint, blurred outlines of DNA double-helix diagrams and molecular structures sketched on a glass partition. The lighting is bright, clean, and clinical, casting soft shadows that emphasize the texture of the paper and the intricate details of the botanical specimen. The color palette is dominated by earthy greens, crisp whites, and cool laboratory blues.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 📚🌿🔬 Encyclopedia of Applied Plant Sciences  
+![books-encyclopedia-of-applied-plant-sciences](../books-encyclopedia-of-applied-plant-sciences.jpg)  
 [🛒 Encyclopedia of Applied Plant Sciences. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3ZjA0Ep)  
   
 ## 📖 Book Report: 🌿 Encyclopedia of Applied Plant Sciences  

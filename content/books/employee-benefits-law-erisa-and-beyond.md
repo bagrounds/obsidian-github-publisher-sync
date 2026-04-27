@@ -11,9 +11,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-18T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-04-26T18:23:06Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A high-quality, professional composition featuring a thick, leather-bound legal tome centered on a polished mahogany desk. Resting atop the book is a brass-plated pair of scales of justice, perfectly balanced. To the side, a golden fountain pen lies next to a pair of professional wire-rimmed glasses. In the soft-focus background, a stylized, minimalist graphic of a rising bar chart and a golden shield silhouette appear on a blurred office wall, symbolizing financial growth and regulatory protection. The lighting is warm and sophisticated, casting soft shadows that emphasize the textures of the leather and metal, evoking a sense of authority, precision, and the complex, structured world of corporate law.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🧑‍💼💰⚖️ Employee Benefits Law: ERISA and Beyond  
+![books-employee-benefits-law-erisa-and-beyond](../books-employee-benefits-law-erisa-and-beyond.jpg)  
 [🛒 Employee Benefits Law: ERISA and Beyond. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3ZFRdI3)  
   
 ## 📚 Book Report: Employee Benefits Law: ERISA and Beyond  

@@ -9,6 +9,10 @@ Platform:
 Channel: PBS NewsHour
 tags:
 youtube: https://youtu.be/4rJn0qvRQyU
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_version: "2"
+link_analysis_time: 2026-04-26T00:00:00Z
+force_analyze_links: false
 ---
 [Home](../index.md) > [Videos](./index.md)  
 # 🤥🦠🇺🇸🏥 As misinformation spreads and mistrust deepens, can the U.S. handle another pandemic?  

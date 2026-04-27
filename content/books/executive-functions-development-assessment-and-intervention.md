@@ -8,11 +8,16 @@ Author:
 tags:
 affiliate link: https://amzn.to/43rYNsf
 link_analysis_model: gemini-3.1-flash-lite-preview
-link_analysis_time: 2026-04-07T00:00:00Z
+link_analysis_time: 2026-04-20T00:00:00Z
 force_analyze_links: false
+link_analysis_version: "2"
+image_date: 2026-04-27T08:59:21Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: "A stylized, translucent brain glows softly at the center. Inside, a vibrant collection of abstract shapes – representing focus, planning, and memory – are gently being organized by a subtle, guiding hand. Some shapes are already neatly interlocked, forming clear pathways, while others are just beginning to align. Around the brain, faint, illustrative icons suggest assessment and intervention: a magnifying glass hovering over a scattered group of shapes, and a small, open toolbox emitting a helpful glow towards a connecting pathway. The background is clean and soft, emphasizing clarity and potential. The image conveys cognitive processes being understood, supported, and brought into harmonious function."
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🧠🧩🛠️ Assessment and Intervention for Executive Function Difficulties  
+![books-executive-functions-development-assessment-and-intervention](../books-executive-functions-development-assessment-and-intervention.jpg)  
 [🛒 Assessment and Intervention for Executive Function Difficulties. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/43rYNsf)  
   
 ## 🤖 AI Summary  

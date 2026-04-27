@@ -13,7 +13,7 @@ link_analysis_version: "2"
 link_analysis_time: 2026-04-26T00:00:00Z
 force_analyze_links: false
 ---
-[Home](../index.md) > [🏛️ Systems for Public Good](./index.md) | [⏮️](./2026-04-25-the-canvas-of-community-arts-and-cultural-institutions-as-public-goods.md)  
+[Home](../index.md) > [🏛️ Systems for Public Good](./index.md) | [⏮️](./2026-04-25-the-canvas-of-community-arts-and-cultural-institutions-as-public-goods.md) [⏭️](./2026-04-27-the-enduring-sanctuary-of-knowledge-public-libraries-as-public-goods.md)  
 # 2026-04-26 | 🏛️ 🗓️ This Week in Collective Well-being: Building Civic Foundations 🏛️  
 ![systems-for-public-good-2026-04-26-this-week-in-collective-well-being-building-civic-foundations](../systems-for-public-good-2026-04-26-this-week-in-collective-well-being-building-civic-foundations.jpg)  
   

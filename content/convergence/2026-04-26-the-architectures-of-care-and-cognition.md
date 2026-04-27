@@ -13,7 +13,7 @@ link_analysis_version: "2"
 link_analysis_time: 2026-04-26T00:00:00Z
 force_analyze_links: false
 ---
-[Home](../index.md) > [🔀 Convergence](./index.md) | [⏮️](./2026-04-25-the-architectures-of-clarity-and-sanctuary.md)  
+[Home](../index.md) > [🔀 Convergence](./index.md) | [⏮️](./2026-04-25-the-architectures-of-clarity-and-sanctuary.md) [⏭️](./2026-04-27-the-unseen-architectures-of-our-collective-being.md)  
 # 2026-04-26 | 🔀 🪞 The Architectures of Care and Cognition 🔀  
 ![convergence-2026-04-26-the-architectures-of-care-and-cognition](../convergence-2026-04-26-the-architectures-of-care-and-cognition.jpg)  
   

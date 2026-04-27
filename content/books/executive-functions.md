@@ -8,11 +8,16 @@ Author:
 tags:
 affiliate link: https://amzn.to/3T7a8rC
 link_analysis_model: gemini-3.1-flash-lite-preview
-link_analysis_time: 2026-04-07T00:00:00Z
+link_analysis_time: 2026-04-20T00:00:00Z
 force_analyze_links: false
+link_analysis_version: "2"
+image_date: 2026-04-27T12:37:06Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: "A stylized, minimalist human head in profile, facing right. The frontal lobe area is subtly highlighted with intricate, glowing neural pathways. From this illuminated region, a dynamic cluster of abstract icons emerges: a small, intricate gear, a clock face without hands, and an upward-pointing arrow. These elements are interconnected by faint, glowing lines, forming a forward-moving arc. A very subtle, almost translucent silhouette of a primates head is integrated into the lower part of the human heads profile, a ghost-like echo of ancestry. The color palette is cool blues and purples, with bright yellow and orange accents"
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🧠⚙️🐒💡 Executive Functions: What They Are, How They Work, and Why They Evolved  
+![books-executive-functions](../books-executive-functions.jpg)  
 [🛒 Executive Functions: What They Are, How They Work, and Why They Evolved. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3T7a8rC)  
   
 ## 🤖 AI Summary  

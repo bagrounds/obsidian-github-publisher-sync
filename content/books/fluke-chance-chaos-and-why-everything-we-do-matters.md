@@ -9,9 +9,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-19T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-04-27T14:51:24Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A conceptual illustration featuring a delicate, translucent butterfly resting on the edge of a complex, glowing mechanical clockwork mechanism. The gears of the clock are slightly misaligned and overlapping, symbolizing chaos and path dependency. Golden, glowing ethereal threads—representing interconnectedness—radiate outward from the butterflys wings, weaving through the gears and stretching toward an infinite, misty horizon. The color palette is a high-contrast mix of deep midnight blue and vibrant, warm amber light. The composition emphasizes the contrast between the rigid, predictable nature of the machinery and the fragile, unpredictable influence of the small creature, capturing the essence of a world shaped by both order and random chance.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🍀⁉️ Fluke: Chance, Chaos, and Why Everything We Do Matters  
+![books-fluke-chance-chaos-and-why-everything-we-do-matters](../books-fluke-chance-chaos-and-why-everything-we-do-matters.jpg)  
 [🛒 Fluke: Chance, Chaos, and Why Everything We Do Matters. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4mFRDYY)  
   
 ## 📚 Book Report: *Fluke: Chance, Chaos, and Why Everything We Do Matters* by Brian Klaas  

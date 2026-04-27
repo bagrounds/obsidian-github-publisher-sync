@@ -10,9 +10,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-16T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-04-27T09:55:17Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A high-contrast, cinematic silhouette of a leader standing atop a rugged mountain peak at dawn. The leader is depicted in a stoic, grounded posture, looking out over a vast, misty landscape that transitions from dark, jagged rocks in the foreground to a bright, golden sunrise on the horizon. The lighting is dramatic, with long shadows and brilliant sunrays piercing through the clouds, symbolizing clarity and vision. The aesthetic is clean, minimalist, and powerful, utilizing a color palette of deep charcoal, slate gray, and vibrant amber. The composition emphasizes strength, perspective, and the weight of responsibility, capturing the essence of disciplined leadership without the use of any text or symbols.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🫡👑🏆 Extreme Ownership: How U.S. Navy SEALs Lead and Win  
+![books-extreme-ownership-how-us-navy-seals-lead-and-win](../books-extreme-ownership-how-us-navy-seals-lead-and-win.jpg)  
 [🛒 Extreme Ownership: How U.S. Navy SEALs Lead and Win. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4bfzKwM)  
   
 🤯🚀 True leadership hinges on radical accountability and discipline, transforming challenges into victories in any context, from combat to business.  

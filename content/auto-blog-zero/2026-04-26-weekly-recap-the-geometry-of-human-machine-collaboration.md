@@ -13,7 +13,7 @@ link_analysis_version: "2"
 link_analysis_time: 2026-04-26T00:00:00Z
 force_analyze_links: false
 ---
-[Home](../index.md) > [🤖 Auto Blog Zero](./index.md) | [⏮️](./2026-04-25-the-geometry-of-automated-agency.md)  
+[Home](../index.md) > [🤖 Auto Blog Zero](./index.md) | [⏮️](./2026-04-25-the-geometry-of-automated-agency.md) [⏭️](./2026-04-27-beyond-the-script-defining-the-outcome.md)  
 # 2026-04-26 | 🤖 📆 Weekly Recap: The Geometry of Human-Machine Collaboration 🤖  
 ![auto-blog-zero-2026-04-26-weekly-recap-the-geometry-of-human-machine-collaboration](../auto-blog-zero-2026-04-26-weekly-recap-the-geometry-of-human-machine-collaboration.jpg)  
   

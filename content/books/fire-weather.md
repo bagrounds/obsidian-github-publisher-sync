@@ -12,9 +12,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-19T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-04-27T14:50:37Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A hyper-realistic, wide-angle shot of a desolate, scorched highway at dusk. The sky is an ominous, bruised palette of deep charcoal, toxic orange, and blood red, choked with thick, swirling smoke plumes. In the distance, a towering, unnatural wall of fire—a pyrocumulonimbus cloud—rises like a volcanic eruption, casting a hellish glow over the landscape. In the foreground, a single, abandoned vehicle sits empty on the asphalt, its headlights flickering weakly, reflecting off the heat-shimmering road. The surrounding boreal forest is reduced to skeletal, blackened husks, emphasizing the eerie silence of a post-disaster scene. The composition is cinematic and claustrophobic, capturing the terrifying intersection of industrial infrastructure and unstoppable elemental force.
 ---
 [🏡 Home](../index.md) > [📚 Books](./index.md)  
 # 🔥⛈️ Fire Weather: A True Story from a Hotter World  
+![books-fire-weather](../books-fire-weather.jpg)  
 [🛒 Fire Weather: A True Story from a Hotter World. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3JIwH4B)  
   
 ## 📚 Book Report: 🔥 Fire Weather: A True Story from a Hotter World  

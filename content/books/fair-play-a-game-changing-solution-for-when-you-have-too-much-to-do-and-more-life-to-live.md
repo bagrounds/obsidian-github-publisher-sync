@@ -9,9 +9,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-17T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-04-27T13:40:52Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: "A top-down, high-contrast flat lay composition on a clean, light-colored surface. In the center, a deck of illustrated playing cards is fanned out, each card featuring simple, minimalist icons representing various household chores—such as a grocery basket, a laundry hamper, a clock, and a vacuum. Two hands enter the frame from opposite sides, each holding a neat stack of these cards, symbolizing a fair, balanced distribution. Surrounding the cards are subtle, cheerful elements representing personal passions: a paintbrush, a closed notebook, and a small potted plant. The lighting is bright and modern, casting soft shadows that emphasize the organized, gamified nature of the system. The aesthetic is clean, professional, and optimistic, focusing on the transition from chaos to harmony."
 ---
 [Home](../index.md) > [Books](./index.md)  
 # ⚖️🎮 Fair Play: A Game-Changing Solution for When You Have Too Much to Do (and More Life to Live)  
+![books-fair-play-a-game-changing-solution-for-when-you-have-too-much-to-do-and-more-life-to-live](../books-fair-play-a-game-changing-solution-for-when-you-have-too-much-to-do-and-more-life-to-live.jpg)  
 [🛒 Fair Play: A Game-Changing Solution for When You Have Too Much to Do (and More Life to Live). As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3Su3Kur)  
   
 ## 📚 Book Report: Fair Play by Eve Rodsky  

@@ -10,9 +10,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-19T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-04-27T00:36:38Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A dynamic, abstract illustration featuring a stylized, glowing muscle fiber at its core. Energetic, crystalline fragments, representing creatine molecules, radiate outwards from the muscle. Surrounding this, subtle, blurred silhouettes of athletes in various poses (e.g., a weightlifter, a sprinter) are integrated into flowing, abstract shapes that suggest movement and performance. The color palette transitions from deep blues and purples, hinting at scientific depth, to vibrant greens and oranges, conveying vitality and power. The overall composition is clean, modern, and conveys a sense of strength, health, and advanced science.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 💪⚕️ Essentials of Creatine in Sports and Health  
+![books-essentials-of-creatine-in-sports-and-health](../books-essentials-of-creatine-in-sports-and-health.jpg)  
 [🛒 Essentials of Creatine in Sports and Health. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4nquiuL)  
   
 ## 📖 Book Report: Essentials of Creatine in Sports and Health  

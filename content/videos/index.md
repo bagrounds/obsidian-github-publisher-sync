@@ -5,10 +5,10 @@ aliases:
 title: 📺 Videos
 URL: https://bagrounds.org/videos
 backlinks: false
-updated: 2026-04-26T07:20:23-07:00
+updated: 2026-04-26T18:32:07-07:00
 ---
 [Home](../index.md)  
-# 📺 Videos (802)  
+# 📺 Videos (803)  
 - [💰🤑🤖💡🚀💲 $0.10 per Month Runs My Entire AI Life. I'll Show You How.](./0-10-month-runs-my-entire-ai-life-ill-show-you-how.md)  
 - [📊📈📉📃👁️ 10 Charts to Understand the 900 Page Budget Bill](./10-charts-to-understand-the-900-page-budget-bill.md)  
 - [🤖🔗⬆️✅ 12-Factor Agents: Patterns of reliable LLM applications — Dex Horthy, HumanLayer](./12-factor-agents-patterns-of-reliable-llm-applications-dex-horthy-humanlayer.md)  
@@ -578,6 +578,7 @@ updated: 2026-04-26T07:20:23-07:00
 - [🧠✨💫 The Development of Imagination](./the-development-of-imagination.md)  
 - [🔋📈🧘🗣️ The Energy Project | Tony Schwartz | Talks at Google](./the-energy-project-tony-schwartz-talks-at-google.md)  
 - [✏️🗂️⏱️✨ The Excalidraw Obsidian Showcase 57 key features in just 17 minutes](../the-excalidraw-obsidian-showcase-57-key-features-in-just-17-minutes.md)  
+- [🎓🤥 The Expert Myth](./the-expert-myth.md)  
 - [The far-right Proud Boys’ chilling message for the world | 60 Minutes Australia](./the-far-right-proud-boys-chilling-message-for-the-world-60-minutes-australia.md)  
 - [🇺🇸⚔️🏛️ The Fight to Save American Democracy — with Heather Cox Richardson | Prof G Conversations](./the-fight-to-save-american-democracy-with-heather-cox-richardson-prof-g-conversations.md)  
 - [🌍⚡️🚫🇺🇸 The Future of Energy Has Arrived - Just Not in the U.S.](./the-future-of-energy-has-arrived-just-not-in-the-us.md)  

@@ -6,11 +6,16 @@ URL: https://bagrounds.org/books/farming-for-us-all-practical-agriculture-and-th
 share: true
 affiliate link: https://amzn.to/3FOaRuT
 link_analysis_model: gemini-3.1-flash-lite-preview
-link_analysis_time: 2026-04-06T00:00:00Z
+link_analysis_time: 2026-04-20T00:00:00Z
 force_analyze_links: false
+link_analysis_version: "2"
+image_date: 2026-04-27T13:41:09Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A split-composition illustration showing the transition from industrial to sustainable agriculture. The left side features a monochromatic, stylized depiction of large-scale industrial machinery amidst barren, dry earth. The right side transitions into a vibrant, lush landscape showing a diverse, small-scale polyculture farm. A human hand is shown in the center, gently holding a handful of rich, dark soil containing a small, green sprouting seedling. The horizon line blends the two worlds, with soft, natural sunlight illuminating the sustainable side and casting warm light over the entire scene. The art style is clean and modern with a focus on earthy textures and organic shapes, emphasizing growth, community, and ecological harmony.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🚜🧑‍🌾🌱 Farming for Us All: Practical Agriculture and the Cultivation of Sustainability  
+![books-farming-for-us-all-practical-agriculture-and-the-cultivation-of-sustainability](../books-farming-for-us-all-practical-agriculture-and-the-cultivation-of-sustainability.jpg)  
 [🛒 Farming for Us All: Practical Agriculture and the Cultivation of Sustainability. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3FOaRuT)  
   
 ## 📚 Book Report: 🧑‍🌾 Farming for Us All: 🚜 Practical Agriculture and the 🌱 Cultivation of Sustainability  

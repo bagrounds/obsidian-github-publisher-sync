@@ -9,9 +9,13 @@ affiliate link: https://amzn.to/43cVXXG
 link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-06T00:00:00Z
 force_analyze_links: false
+image_date: 2026-04-27T01:44:06Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A minimalist illustration of a stylized brain, where one hemisphere is subtly composed of interlocking gears and neatly aligned calendar squares, symbolizing systems and routine. From this systematic brain, a clear, upward-curving path emerges, leading to a small, glowing target or a rising sun on the horizon. The overall aesthetic uses clean lines and a palette of calming blues, greens, and soft yellows, conveying clarity, growth, and consistent progress.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # ✅🗓️ Evidence-Based Habit Building: Finally Get Sh\*t Done  
+![books-evidence-based-habit-building-finally-get-sht-done](../books-evidence-based-habit-building-finally-get-sht-done.jpg)  
 [🛒 Evidence-Based Habit Building: Finally Get Sh\*t Done. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/43cVXXG)  
   
 🚀🧬📈 A scientific, practical framework to build goal-aligned habits, leveraging neuroscience to overcome willpower fatigue and ensure lasting behavior change.  

@@ -7,11 +7,16 @@ share: true
 CTA: 🌍 Build community.
 affiliate link: https://amzn.to/4aJtaOV
 link_analysis_model: gemini-3.1-flash-lite-preview
-link_analysis_time: 2026-04-06T00:00:00Z
+link_analysis_time: 2026-04-20T00:00:00Z
 force_analyze_links: false
+link_analysis_version: "2"
+image_date: 2026-04-27T01:43:52Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: "A vibrant, sun-drenched rooftop garden atop a weathered New York City tenement building. The scene depicts a diverse group of people of varying ages and backgrounds sitting in a loose circle on repurposed wooden crates and colorful, mismatched cushions. They are engaged in animated conversation, gesturing with their hands. In the background, the iconic Manhattan skyline is transformed: lush vertical forests climb the sides of skyscrapers, and wind turbines are integrated into the architecture. A clothesline strung between two chimneys holds drying fabrics, and a shared meal is spread out on a low table. The art style is warm and textured, reminiscent of a watercolor painting or a vivid graphic novel panel, emphasizing human connection, collective labor, and the integration of nature into the urban landscape."
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🫂🏙️🗣️ Everything for Everyone: An Oral History of the New York Commune, 2052–2072  
+![books-everything-for-everyone-an-oral-history-of-the-new-york-commune-2052-2072](../books-everything-for-everyone-an-oral-history-of-the-new-york-commune-2052-2072.jpg)  
 [🛒 Everything for Everyone: An Oral History of the New York Commune, 2052–2072. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4aJtaOV)  
   
 ✨🌆🌍 A speculative oral history chronicling a post-capitalist, communal New York City born from global collapse and a successful social revolution, exploring themes of collective survival, liberation, and ongoing societal transformation through diverse personal accounts.  

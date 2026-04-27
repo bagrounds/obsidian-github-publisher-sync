@@ -5,10 +5,10 @@ aliases:
 title: 📺 Videos
 URL: https://bagrounds.org/videos
 backlinks: false
-updated: 2026-04-26T18:32:07-07:00
+updated: 2026-04-26T18:55:19-07:00
 ---
 [Home](../index.md)  
-# 📺 Videos (803)  
+# 📺 Videos (804)  
 - [💰🤑🤖💡🚀💲 $0.10 per Month Runs My Entire AI Life. I'll Show You How.](./0-10-month-runs-my-entire-ai-life-ill-show-you-how.md)  
 - [📊📈📉📃👁️ 10 Charts to Understand the 900 Page Budget Bill](./10-charts-to-understand-the-900-page-budget-bill.md)  
 - [🤖🔗⬆️✅ 12-Factor Agents: Patterns of reliable LLM applications — Dex Horthy, HumanLayer](./12-factor-agents-patterns-of-reliable-llm-applications-dex-horthy-humanlayer.md)  
@@ -104,6 +104,7 @@ updated: 2026-04-26T18:32:07-07:00
 - [🇺🇸⚔️ Are We Headed for a Civil War? | Explainer](./are-we-headed-for-a-civil-war-explainer.md)  
 - [🗣️🛠️☮️ A simple tool for better communication during toxic conflict | Amanda Ripley](./a-simple-tool-for-better-communication-during-toxic-conflict-amanda-ripley.md)  
 - [👶🧩🧠➡️ A Simple Way to Learn Complex Skills](./a-simple-way-to-learn-complex-skills.md)  
+- [🤥🦠🇺🇸🏥 As misinformation spreads and mistrust deepens, can the U.S. handle another pandemic?](./as-misinformation-spreads-and-mistrust-deepens-can-the-us-handle-another-pandemic.md)  
 - [🌍🏠📉 Aswath Damodaran Says «There’s No Place to Hide in Stocks» | Prof G Markets](./aswath-damodaran-says-theres-no-place-to-hide-in-stocks-prof-g-markets.md)  
 - [🔬🛡️🤥 Authors of 'Science Under Siege' warn of concerted effort to discredit science](./authors-of-science-under-siege-warn-of-concerted-effort-to-discredit-science.md)  
 - [🧩🗣️👎 Autism advocate calls Trump's statements on the condition 'stigmatizing'](./autism-advocate-calls-trumps-statements-on-the-condition-stigmatizing.md)  

@@ -9,11 +9,12 @@ tags: []
 affiliate link: https://amzn.to/4jy1HR7
 updated: 2026-03-12T04:35:41.242Z
 link_analysis_model: gemini-3.1-flash-lite-preview
-link_analysis_time: 2026-04-05T00:00:00Z
+link_analysis_time: 2026-04-24T00:00:00Z
 force_analyze_links: false
 image_date: 2026-04-17T05:59:47Z
 image_model: "@cf/black-forest-labs/flux-1-schnell"
 image_prompt: A minimalist, isometric illustration of a winding, multi-tiered stone path leading up a gentle mountain. The path is divided into distinct sections, each representing a different stage of professional growth. At the base, small, simple geometric shapes represent individual tasks. As the path ascends, the shapes become more complex and interconnected, symbolizing the transition from individual contributor to strategic leader. The summit features a stylized, glowing compass and an abstract network of nodes, representing the clarity and organizational influence required of a staff engineer. The color palette uses soft, professional tones like slate blue, sage green, and warm amber, set against a clean, light-colored background. The overall aesthetic is modern, clean, and aspirational, focusing on the journey of career progression and strategic navigation.
+link_analysis_version: "2"
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 👶⬆️👨‍💻📈 The Staff Engineer's Path  

@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-04-26T18:32:07-07:00
+updated: 2026-04-26T18:55:19-07:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -71,17 +71,17 @@ updated: 2026-04-26T18:32:07-07:00
   
   
 ## [📚 Books](./books/index.md) (960)  
+- [🏚️⚠️ The Precariat: The New Dangerous Class](./books/the-precariat-the-new-dangerous-class.md)  
+- [✅🗓️ Evidence-Based Habit Building: Finally Get Sh*t Done](./books/evidence-based-habit-building-finally-get-sht-done.md)  
+- [🫂🏙️🗣️ Everything for Everyone: An Oral History of the New York Commune, 2052–2072](./books/everything-for-everyone-an-oral-history-of-the-new-york-commune-2052-2072.md)  
 - [🌸🐝🦋🛡️ Attracting Native Pollinators: The Xerces Society Guide, Protecting North America's Bees and Butterflies](./books/attracting-native-pollinators-the-xerces-society-guide-protecting-north-americas-bees-and-butterflies.md)  
-- [♂️👑✊ Political Masculinity: How Incels, Fundamentalists and Authoritarians Mobilise for Patriarchy](./books/political-masculinity-how-incels-fundamentalists-and-authoritarians-mobilise-for-patriarchy.md)  
-- [👣🗺️💥 Everyone Who Is Gone Is Here: The United States, Central America, and the Making of a Crisis](./books/everyone-who-is-gone-is-here-the-united-states-central-america-and-the-making-of-a-crisis.md)  
-- [💪⚕️ Essentials of Creatine in Sports and Health](./books/essentials-of-creatine-in-sports-and-health.md)  
   
   
-## [📺 Videos](./videos/index.md) (803)  
-- [🎓🤥 The Expert Myth](./videos/the-expert-myth.md)  
-- [🐛🐌🐞🌿🏡🦠 Managing Pests & Diseases in Your Backyard: Aphids, Blight, and Slugs - Oh My! Workshop](./videos/managing-pests-diseases-in-your-backyard-aphids-blight-and-slugs-oh-my-workshop.md)  
-- [🗣️👨‍💼 A Conversation with Paul Krugman](./videos/a-conversation-with-paul-krugman.md)  
-- [🗣️🏛️📈 This Moment in Politics | Explainer](./videos/this-moment-in-politics-explainer.md)  
+## [📺 Videos](./videos/index.md) (804)  
+- [🤥🦠🇺🇸🏥 As misinformation spreads and mistrust deepens, can the U.S. handle another pandemic?](./videos/as-misinformation-spreads-and-mistrust-deepens-can-the-us-handle-another-pandemic.md)  
+- [❓😵🤯 What the Heck Just Happened (2025-10-25)?](./videos/what-the-heck-just-happened-2025-10-25.md)  
+- [🤔📊📉❓ What happens when no one trusts a country’s economic data](./videos/what-happens-when-no-one-trusts-a-countrys-economic-data.md)  
+- [📈🪜🚀 Principal Engineer Reveals How To Be Promoted FAST](./videos/principal-engineer-reveals-how-to-be-promoted-fast.md)  
   
   
 ## [🌌 Topics](./topics/index.md) (91)  
@@ -99,10 +99,10 @@ updated: 2026-04-26T18:32:07-07:00
   
   
 ## [🤖💬 Bot Chats](./bot-chats/index.md) (49)  
+- [🥱👎 How To Not Be Tired](./bot-chats/how-to-not-be-tired.md)  
+- [🏡🍎🌳📚 Home Fruit Tree Books](./bot-chats/fruit-tree-books.md)  
 - [🪵❓ How Much Wood](./bot-chats/how-much-wood.md)  
 - [👨‍👧‍👦👔🎁 Fathers Day](./bot-chats/fathers-day.md)  
-- [🤕😖 Headaches](./bot-chats/headaches.md)  
-- [📏💻✅ Engineering as Specification](./bot-chats/engineering-as-specification.md)  
   
   
 ## [💾 Software](./software/index.md) (33)  

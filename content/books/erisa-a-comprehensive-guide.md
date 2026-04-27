@@ -11,9 +11,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-17T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-04-26T20:22:29Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: "A professional, high-angle composition featuring a thick, authoritative leather-bound legal treatise centered on a dark mahogany desk. The book is slightly open, with a gold-leaf bookmark ribbon trailing out. Surrounding the book are subtle, professional objects: a pair of gold-rimmed reading glasses, a high-quality fountain pen resting on a notepad, and a small, polished brass scale of justice sitting in the corner of the frame. The lighting is warm and academic, casting soft shadows that emphasize the texture of the paper and the weight of the book. The background is a blurred, deep-toned library setting with hints of dark wood bookshelves, evoking an atmosphere of expertise, legal precision, and institutional stability."
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 💼📜 ERISA: A Comprehensive Guide  
+![books-erisa-a-comprehensive-guide](../books-erisa-a-comprehensive-guide.jpg)  
 [🛒 ERISA: A Comprehensive Guide. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4mHAePB)  
   
 ## 📖 Book Report: ERISA: A Comprehensive Guide  

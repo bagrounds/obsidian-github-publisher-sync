@@ -9,9 +9,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-16T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-04-26T14:27:29Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A vibrant, high-contrast illustration featuring a stylized, glowing human silhouette. Within the chest area, a complex, intricate network of golden, lightning-bolt-shaped mitochondria pulses with electric energy. Surrounding the silhouette are floating, artistic representations of nutrient-dense whole foods—vibrant berries, leafy greens, and colorful vegetables—which seem to be dissolving into particles of pure light that flow toward the center of the body. The background is a deep, dark navy blue, emphasizing the brightness of the golden energy and the organic colors of the food. The overall aesthetic is clean, modern, and scientific, conveying a sense of cellular optimization, vitality, and the transition from fatigue to peak performance.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🍎⚡ Eat for Energy: How to Beat Fatigue, Supercharge Your Mitochondria, and Unlock All-Day Energy  
+![books-eat-for-energy-how-to-beat-fatigue-supercharge-your-mitochondria-and-unlock-all-day-energy](../books-eat-for-energy-how-to-beat-fatigue-supercharge-your-mitochondria-and-unlock-all-day-energy.jpg)  
 [🛒 Eat for Energy: How to Beat Fatigue, Supercharge Your Mitochondria, and Unlock All-Day Energy. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3HkgWQ4)  
   
 ## 📖 Book Report: ⚡ Eat for Energy by Ari Whitten and Alex Leaf M.S.  

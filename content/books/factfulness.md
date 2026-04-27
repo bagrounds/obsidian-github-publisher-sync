@@ -12,9 +12,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-16T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-04-27T03:14:25Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A vibrant, minimalist illustration featuring a stylized, multi-colored globe centered in the frame. Surrounding the globe are various geometric icons representing data and growth, such as upward-trending bar charts, smooth line graphs, and subtle, interconnected nodes. The color palette uses bright, optimistic tones like sky blue, soft green, and warm yellow against a clean, neutral background. A pair of magnifying glasses hover near the globe, with one lens showing a chaotic, fragmented view and the other showing a clear, organized, and colorful data visualization. The overall aesthetic is clean, modern, and professional, emphasizing clarity, global perspective, and the transition from confusion to understanding.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🤔🌍📈✅ Factfulness: Ten Reasons We're Wrong About the World - and Why Things Are Better Than You Think  
+![books-factfulness](../books-factfulness.jpg)  
 [🛒 Factfulness: Ten Reasons We're Wrong About the World - and Why Things Are Better Than You Think. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3ZKol1s)  
   
 ## 🤖 AI Summary  

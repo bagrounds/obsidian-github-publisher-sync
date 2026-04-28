@@ -12,9 +12,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-16T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-04-28T01:49:39Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A conceptual illustration featuring a minimalist, high-contrast style. In the center, a magnifying glass is held over a classic wooden abacus. Instead of standard beads, the abacus features small, diverse icons representing various facets of daily life—a tiny house, a paper bill, a sumo wrestler silhouette, and a baby rattle—scattered in an unusual, chaotic pattern. The background is a clean, slate-gray surface with faint, ghosted mathematical equations and statistical bell curves sketched in white chalk. The lighting is dramatic, casting long, sharp shadows that transform the icons into distorted, unexpected shapes on the surface, emphasizing the theme of hidden perspectives and the hidden side of reality. The overall aesthetic is intellectual, analytical, and slightly mysterious.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🤓🕵️‍♂️❓ Freakonomics: A Rogue Economist Explores the Hidden Side of Everything  
+![books-freakonomics](../books-freakonomics.jpg)  
 [🛒 Freakonomics: A Rogue Economist Explores the Hidden Side of Everything. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3Zf86tf)  
   
 ## 🤖 AI Summary  

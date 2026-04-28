@@ -5,10 +5,10 @@ aliases:
 title: 📺 Videos
 URL: https://bagrounds.org/videos
 backlinks: false
-updated: 2026-04-27T22:01:34-07:00
+updated: 2026-04-27T22:15:55-07:00
 ---
 [Home](../index.md)  
-# 📺 Videos (811)  
+# 📺 Videos (812)  
 - [💰🤑🤖💡🚀💲 $0.10 per Month Runs My Entire AI Life. I'll Show You How.](./0-10-month-runs-my-entire-ai-life-ill-show-you-how.md)  
 - [📊📈📉📃👁️ 10 Charts to Understand the 900 Page Budget Bill](./10-charts-to-understand-the-900-page-budget-bill.md)  
 - [🤖🔗⬆️✅ 12-Factor Agents: Patterns of reliable LLM applications — Dex Horthy, HumanLayer](./12-factor-agents-patterns-of-reliable-llm-applications-dex-horthy-humanlayer.md)  
@@ -224,6 +224,7 @@ updated: 2026-04-27T22:01:34-07:00
 - [🗣️⚔️🏛️ FULL DISCUSSION: Gavin Newsom Slams Trump’s Authoritarianism in Explosive WEF Interview | AC1G](./full-discussion-gavin-newsom-slams-trumps-authoritarianism-in-explosive-wef-interview-ac1g.md)  
 - [🤖🗣️🏛️⚔️📰 Full interview: Anthropic CEO responds to Trump order, Pentagon clash](./full-interview-anthropic-ceo-responds-to-trump-order-pentagon-clash.md)  
 - [🎙️🇪🇺🗳️🇮🇷⚔️🌊🚨 FULL PRESSER: EU’s von der Leyen Speaks on Hungary Election, Iran War & Strait of Hormuz Crisis|AC1B](./full-presser-eus-von-der-leyen-speaks-on-hungary-election-iran-war-strait-of-hormuz-crisis-ac1b.md)  
+- [🤖💻⚙️ Full Walkthrough: Workflow for AI Coding - Matt Pocock](./full-walkthrough-workflow-for-ai-coding-matt-pocock.md)  
 - [🪴🔬❌ Garden Science: Weeding Out the Myths](./garden-science-weeding-out-the-myths.md)  
 - [🪴🧟❌🔬 Garden Zombies: Bogus Gardening Practices That Will Not Die w/ Dr. Linda Chalker-Scott, Ph.D – SCHS](./garden-zombies-bogus-gardening-practices-that-will-not-die-w-dr-linda-chalker-scott-ph-d-schs.md)  
 - [💭🧠💥 George Saunders Says Breaking These 3 Delusions Can Save You | The Interview](./george-saunders-says-breaking-these-3-delusions-can-save-you-the-interview.md)  

@@ -10,9 +10,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-15T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-04-28T16:00:12Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A cozy, dimly lit nursery at twilight. A large, circular window dominates the wall, framing a soft, glowing full moon in a deep indigo sky filled with gentle starlight. Inside the room, a child’s wooden rocking chair sits near a small bed with a neatly tucked-in quilt. A bedside lamp casts a warm, golden pool of light onto an open book resting on a side table. Shadows are long and soft, creating an atmosphere of profound stillness and peace. The color palette transitions from deep midnight blues and purples in the corners of the room to warm, inviting ambers and creams near the sleeping area, evoking the quiet, rhythmic transition from wakefulness to sleep.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🌙🛌 Goodnight Moon  
+![books-goodnight-moon](../books-goodnight-moon.jpg)  
 [🛒 Goodnight Moon. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/490VIAY)  
   
 🌙 A timeless bedtime classic, gently guiding children through a soothing goodnight ritual to the familiar objects in their room, fostering a sense of peace and security.  

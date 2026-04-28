@@ -9,9 +9,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-16T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-04-28T05:18:35Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: "A lush, sun-dappled backyard orchard in the Pacific Northwest during early autumn. In the foreground, a rustic wooden table sits on soft, mossy grass, holding a wicker basket overflowing with a variety of freshly picked fruits: crisp red apples, golden pears, and deep purple figs. A pair of vintage gardening shears rests beside a ceramic plate featuring a half-sliced peach. In the background, well-pruned fruit trees with dark, textured bark rise toward a soft-focus, misty evergreen forest typical of the Pacific maritime climate. The lighting is warm and golden, filtering through the canopy to create gentle highlights on the dew-kissed fruit skins. The overall aesthetic is organic, tranquil, and evocative of a bountiful, self-sufficient garden harvest."
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🌳🍎🍽️ From Tree to Table: Growing Backyard Fruit Trees in the Pacific Maritime Climate  
+![books-from-tree-to-table-growing-backyard-fruit-trees-in-the-pacific-maritime-climate](../books-from-tree-to-table-growing-backyard-fruit-trees-in-the-pacific-maritime-climate.jpg)  
 [🛒 From Tree to Table: Growing Backyard Fruit Trees in the Pacific Maritime Climate. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/45DykJD)  
   
 ## 🌳 Book Report: 🍎 From Tree to Table: Growing Backyard Fruit Trees in the Pacific Maritime Climate  

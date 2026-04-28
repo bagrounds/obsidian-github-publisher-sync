@@ -24,7 +24,7 @@ import qualified Network.HTTP.Client as HTTP
 import Network.HTTP.Types.Status (statusCode)
 import System.Directory (createDirectoryIfMissing, doesDirectoryExist, doesFileExist, listDirectory, removeFile)
 import System.FilePath ((</>), dropExtension)
-import Data.Time (defaultTimeLocale, parseTimeM, getCurrentTime, addDays)
+import Data.Time (defaultTimeLocale, parseTimeM, getCurrentTime, addDays, localDay)
 
 import Automation.AiBlogLinks (NavLinkResult (..), aiBlogConfig, ensureAllNavLinks, buildReflectionLinks)
 import Automation.AiFiction
@@ -80,7 +80,7 @@ import Automation.ReflectionTitle
   , filterRecentReflectionFiles
   , generateReflectionTitle
   , reflectionNeedsTitle
-  , reflectionTitleTargetDay
+  , reflectionTitleCutoff
   )
 import Automation.RelativePath (unRelativePath, mkRelativePath)
 import Automation.Scheduler
@@ -431,19 +431,13 @@ runReflectionTitle context = do
 
   now <- getCurrentTime
   let localNow = toPacificLocalTime now
-      targetDay = reflectionTitleTargetDay localNow
-      targetText = formatDay targetDay
-      yesterdayText = formatDay (addDays (-1) targetDay)
+      today = localDay localNow
+      candidateDays = map (\offset -> addDays (-offset) today) [0..4]
+      eligibleDays = filter (\day -> localNow >= reflectionTitleCutoff day) candidateDays
 
-  logMsg $ "  🕐 Pacific time: " <> T.pack (show localNow) <> ", targeting: " <> targetText
+  logMsg $ "  🕐 Pacific time: " <> T.pack (show localNow) <> " — " <> T.pack (show (length eligibleDays)) <> " eligible day(s) to check"
 
-  todayDone <- tryTitleForDate context targetText
-  if todayDone
-    then pure ()
-    else do
-      logMsg $ "  📅 Checking yesterday (" <> yesterdayText <> ")..."
-      _ <- tryTitleForDate context yesterdayText
-      pure ()
+  mapM_ (tryTitleForDate context . formatDay) eligibleDays
 
   logMsg "✅ reflection-title"
 

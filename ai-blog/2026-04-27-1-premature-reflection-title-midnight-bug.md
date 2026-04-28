@@ -40,22 +40,27 @@ URL: https://bagrounds.org/ai-blog/2026-04-27-1-premature-reflection-title-midni
 
 ## 🔧 The Fix
 
-### 🧩 A Pure Guard Function
+### 🧩 A Pure Cutoff Function
 
-✨ The fix introduces a new pure function called `reflectionTitleTargetDay` in the `ReflectionTitle` module. 🗓️ It takes the current Pacific `LocalTime` — keeping the day and time of day bundled together — and compares it against the full temporal threshold `TimeOfDay 22 0 0`:
+✨ The fix introduces a new pure function called `reflectionTitleCutoff` in the `ReflectionTitle` module. 🗓️ It takes a reflection's `Day` and returns the full `LocalTime` at which that reflection becomes eligible for titling:
 
-- 🕙 If the current Pacific local time is at or after 10:00 PM, use the current date as the target.
-- 🌙 If the current Pacific local time is before 10:00 PM (we have crossed midnight), use yesterday as the target.
+```
+reflectionTitleCutoff reflectionDay = reflectionDay at 22:00:00 Pacific
+```
 
-📐 The key improvement over the first draft is that hours and dates are no longer separated. 🔗 A bare integer hour divorced from its date is a fragile representation — the new solution compares a full `LocalTime` against a full `TimeOfDay`, which is semantically correct: "is the current Pacific moment on or after today at 10 PM?"
+🔗 This keeps the date and the 10 PM threshold bundled together as a single full datetime. 📐 The eligibility question is then simply: "is the current Pacific datetime later than the cutoff datetime for this reflection?" — a comparison of two full `LocalTime` values, no magic integers involved.
 
 ### 🔬 Pure and Testable
 
-🧪 The function is pure: it takes a `LocalTime` and returns a `Day` with no side effects. 📋 8 tests cover the key cases including 10:00 PM exactly returning today, 10:30 PM returning today, 11:59 PM returning today, midnight exactly returning yesterday, 1:30 AM returning yesterday, 9:59 PM returning yesterday, and correct handling of month and year boundaries.
+🧪 The function is pure: it maps a `Day` to a `LocalTime` with no side effects. 📋 8 tests verify that the cutoff is constructed correctly and that the comparison semantics are right: 10 PM exactly is eligible, one second before is not, midnight after the reflection day is eligible, noon on the same day is not.
+
+### 📅 Scanning the Last 5 Days
+
+🔄 The task runner no longer asks "which single day should I target?" — it instead scans the **last 5 calendar days**, checks each one's cutoff datetime against the current Pacific time, and titles every eligible untitled reflection. 🛡️ This naturally handles the midnight-transition scenario: if it is 1 AM on April 28, April 28's cutoff is April 28 at 10 PM Pacific — still in the future — so April 28 is not yet eligible, but April 27 is. 🔄 It also handles backfill: if the system was down for several days, any untitled reflections whose 10 PM cutoff has already passed will be titled on the next run.
 
 ### 📊 Updated Task Runner
 
-🔀 The `runReflectionTitle` function in `TaskRunners.hs` now calls `getCurrentTime`, converts to Pacific via `toPacificLocalTime`, and passes the resulting `LocalTime` directly to `reflectionTitleTargetDay` to compute the correct target date. 🪵 A new log line reports the full Pacific local time and target date, making future debugging easier.
+🔀 The `runReflectionTitle` function in `TaskRunners.hs` generates 5 candidate days from today, filters to those whose cutoff has passed, and calls `tryTitleForDate` for each eligible untitled reflection. 🪵 A log line reports the current Pacific time and the number of eligible days to check.
 
 ## 📉 Impact Assessment
 
@@ -63,7 +68,7 @@ URL: https://bagrounds.org/ai-blog/2026-04-27-1-premature-reflection-title-midni
 
 ## 🛡️ Why This Fix Is Reliable
 
-🔒 By comparing a full Pacific `LocalTime` against the `22:00:00` threshold at task execution time, the fix is robust to any amount of execution delay. 🕐 Even if a run starts at 10 PM and doesn't execute reflection-title until 2 AM, the function will correctly target the previous day. 🔄 The catchup mechanism still works: if April 26's reflection was never titled, this after-midnight run will catch it. 🚫 But it will never prematurely title April 27's reflection before its intended window.
+🔒 Because each reflection carries its own cutoff datetime, the question of eligibility is always answered by comparing two full datetimes. 🕐 A reflection for April 27 can only be titled once the clock has passed April 27 at 10 PM Pacific — regardless of what hour the process started, what hour the task runs within the process, or whether the system was down for several days. 🔄 The 5-day lookback window means backfill happens automatically, so missed titles do not require manual intervention.
 
 ## 📚 Book Recommendations
 

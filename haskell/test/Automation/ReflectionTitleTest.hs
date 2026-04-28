@@ -13,7 +13,7 @@ tests :: TestTree
 tests = testGroup "ReflectionTitle"
   [ defaultModelTests
   , reflectionNeedsTitleTests
-  , reflectionTitleTargetDayTests
+  , reflectionTitleCutoffTests
   , stripTitlePrefixesTests
   , extractTrailingEmojisTests
   , extractHeadingEmojisTests
@@ -46,32 +46,37 @@ reflectionNeedsTitleTests = testGroup "reflectionNeedsTitle"
       reflectionNeedsTitle "just body text" "2025-01-15" @?= True
   ]
 
-reflectionTitleTargetDayTests :: TestTree
-reflectionTitleTargetDayTests = testGroup "reflectionTitleTargetDay"
-  [ testCase "10 PM exactly (22:00:00) returns today" $
-      reflectionTitleTargetDay (LocalTime (fromGregorian 2026 4 27) (TimeOfDay 22 0 0))
-        @?= fromGregorian 2026 4 27
-  , testCase "10:30 PM (22:30:00) returns today" $
-      reflectionTitleTargetDay (LocalTime (fromGregorian 2026 4 27) (TimeOfDay 22 30 0))
-        @?= fromGregorian 2026 4 27
-  , testCase "11:59 PM (23:59:59) returns today" $
-      reflectionTitleTargetDay (LocalTime (fromGregorian 2026 4 27) (TimeOfDay 23 59 59))
-        @?= fromGregorian 2026 4 27
-  , testCase "midnight exactly (0:00:00) returns yesterday" $
-      reflectionTitleTargetDay (LocalTime (fromGregorian 2026 4 27) (TimeOfDay 0 0 0))
-        @?= fromGregorian 2026 4 26
-  , testCase "1:30 AM (1:30:00) returns yesterday" $
-      reflectionTitleTargetDay (LocalTime (fromGregorian 2026 4 27) (TimeOfDay 1 30 0))
-        @?= fromGregorian 2026 4 26
-  , testCase "9:59 PM (21:59:59) returns yesterday" $
-      reflectionTitleTargetDay (LocalTime (fromGregorian 2026 4 27) (TimeOfDay 21 59 59))
-        @?= fromGregorian 2026 4 26
-  , testCase "handles month boundary correctly" $
-      reflectionTitleTargetDay (LocalTime (fromGregorian 2026 5 1) (TimeOfDay 0 0 0))
-        @?= fromGregorian 2026 4 30
-  , testCase "handles year boundary correctly" $
-      reflectionTitleTargetDay (LocalTime (fromGregorian 2027 1 1) (TimeOfDay 0 0 0))
-        @?= fromGregorian 2026 12 31
+reflectionTitleCutoffTests :: TestTree
+reflectionTitleCutoffTests = testGroup "reflectionTitleCutoff"
+  [ testCase "cutoff for a mid-month day is that day at 22:00:00" $
+      reflectionTitleCutoff (fromGregorian 2026 4 27)
+        @?= LocalTime (fromGregorian 2026 4 27) (TimeOfDay 22 0 0)
+  , testCase "cutoff for the first of a month is that day at 22:00:00" $
+      reflectionTitleCutoff (fromGregorian 2026 5 1)
+        @?= LocalTime (fromGregorian 2026 5 1) (TimeOfDay 22 0 0)
+  , testCase "cutoff for January 1 is that day at 22:00:00" $
+      reflectionTitleCutoff (fromGregorian 2027 1 1)
+        @?= LocalTime (fromGregorian 2027 1 1) (TimeOfDay 22 0 0)
+  , testCase "10 PM exactly on reflection day is eligible" $
+      LocalTime (fromGregorian 2026 4 27) (TimeOfDay 22 0 0)
+        >= reflectionTitleCutoff (fromGregorian 2026 4 27)
+        @?= True
+  , testCase "one second before cutoff on reflection day is not eligible" $
+      LocalTime (fromGregorian 2026 4 27) (TimeOfDay 21 59 59)
+        >= reflectionTitleCutoff (fromGregorian 2026 4 27)
+        @?= False
+  , testCase "midnight after reflection day is eligible" $
+      LocalTime (fromGregorian 2026 4 28) (TimeOfDay 0 0 0)
+        >= reflectionTitleCutoff (fromGregorian 2026 4 27)
+        @?= True
+  , testCase "next day at noon is eligible" $
+      LocalTime (fromGregorian 2026 4 28) (TimeOfDay 12 0 0)
+        >= reflectionTitleCutoff (fromGregorian 2026 4 27)
+        @?= True
+  , testCase "same day at noon is not yet eligible" $
+      LocalTime (fromGregorian 2026 4 27) (TimeOfDay 12 0 0)
+        >= reflectionTitleCutoff (fromGregorian 2026 4 27)
+        @?= False
   ]
 
 stripTitlePrefixesTests :: TestTree

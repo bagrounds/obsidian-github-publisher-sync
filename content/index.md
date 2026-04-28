@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-04-27T17:32:33-07:00
+updated: 2026-04-27T21:11:44-07:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -71,17 +71,17 @@ updated: 2026-04-27T17:32:33-07:00
   
   
 ## [📚 Books](./books/index.md) (960)  
-- [🤖💻 AI-Powered Developer: Build great software with ChatGPT and Copilot](./books/ai-powered-developer-build-great-software-with-chatgpt-and-copilot.md)  
-- [🃏🎲 Fooled by Randomness: The Hidden Role of Chance in Life and in the Markets](./books/fooled-by-randomness-the-hidden-role-of-chance-in-life-and-in-the-markets.md)  
-- [🌊🧘🏼‍♀️🧠📈 Flow: The Psychology of Optimal Experience](./books/flow-the-psychology-of-optimal-experience.md)  
-- [🧑‍💻🤖 Beyond Vibe Coding: From Coder to AI-Era Developer](./books/beyond-vibe-coding-from-coder-to-ai-era-developer.md)  
+- [🧑‍🤝‍🧑🗣️ The Social Skills Guidebook: Manage Shyness, Improve Your Conversations, and Make Friends, Without Giving Up Who You Are](./books/the-social-skills-guidebook-manage-shyness-improve-your-conversations-and-make-friends-without-giving-up-who-you-are.md)  
+- [🛂⛓️ From Deportation to Prison: The Politics of Immigration Enforcement in Post-Civil Rights America](./books/from-deportation-to-prison-the-politics-of-immigration-enforcement-in-post-civil-rights-america.md)  
+- [🗽🗣️😠 Freedom for the Thought That We Hate: A Biography of the First Amendment](./books/freedom-for-the-thought-that-we-hate-a-biography-of-the-first-amendment.md)  
+- [🧑‍🤝‍🧑 Platonic: How the Science of Attachment Can Help You Make - and Keep - Friends](./books/platonic-how-the-science-of-attachment-can-help-you-make-and-keep-friends.md)  
   
   
-## [📺 Videos](./videos/index.md) (807)  
-- [🤖💬📺 AI Chatbots: Last Week Tonight with John Oliver (HBO)](./videos/ai-chatbots-last-week-tonight-with-john-oliver-hbo.md)  
-- [🏛️🤕❓ Architect of Obamacare: Health Care Is Still a Mess | The David Frum Show](./videos/architect-of-obamacare-health-care-is-still-a-mess-the-david-frum-show.md)  
-- [🌍❓🤔 Making Sense of a World in Crisis | Yuval Noah Harari](./videos/making-sense-of-a-world-in-crisis-yuval-noah-harari.md)  
-- [🇺🇸🗣️⚖️🗳️ American Conversations: Marc Elias](./videos/american-conversations-marc-elias.md)  
+## [📺 Videos](./videos/index.md) (809)  
+- [🌀🍽️🔫📺 Trump Spins Dinner Shooting for Ballroom Agenda & Blitzer Is CNN's One-Shoed Hero | The Daily Show](./videos/trump-spins-dinner-shooting-for-ballroom-agenda-blitzer-is-cnns-one-shoed-hero-the-daily-show.md)  
+- [🗳️🚨🗣️ Election officials sound alarm over political interference in midterms](./videos/election-officials-sound-alarm-over-political-interference-in-midterms.md)  
+- [😠🗣️👎 WATCH: Sen. Kelly holds a news conference on Trump and Hegseth's 'efforts to intimidate him'](./videos/watch-sen-kelly-holds-a-news-conference-on-trump-and-hegseths-efforts-to-intimidate-him.md)  
+- [🆕🧱🗣️ A New Theory of Compositionality](./videos/a-new-theory-of-compositionality.md)  
   
   
 ## [🌌 Topics](./topics/index.md) (91)  
@@ -92,10 +92,10 @@ updated: 2026-04-27T17:32:33-07:00
   
   
 ## [📄  Articles](./articles/index.md) (84)  
+- [🤖🧱🏗️🧠 An Approach to Building with AI](./articles/an-approach-to-building-with-ai.md)  
+- [🗓️🇵🇹💉✅🕊️ 20 years of Portuguese drug policy - developments, challenges and the quest for human rights](./articles/20-years-of-portuguese-drug-policy-developments-challenges-and-the-quest-for-human-rights.md)  
+- [🤖♾️🗂️ Scaling Long Horizon LLM Agent via Context Folding](./articles/scaling-long-horizon-llm-agent-via-context-folding.md)  
 - [♊💻🆚 Gemini CLI + VS Code: Native diffing and context-aware workflows](./articles/gemini-cli-+-vs-code-native-diffing-and-context-aware-workflows.md)  
-- [🗣️🧠🧑‍💻📚 Relating Natural Language Aptitude to Individual Differences in Learning Programming Languages](./articles/relating-natural-language-aptitude-to-individual-differences-in-learning-programming-languages.md)  
-- [🤖📢❌ Digital Yard Signs: Analysis of an AI Bot Political Influence Campaign on X](./articles/digital-yard-signs-analysis-of-an-ai-bot-political-influence-campaign-on-x.md)  
-- [📚🧩🤖 Guide Comprehensive RAG Implementation Guide](./articles/comprehensive-rag-implementation-guide.md)  
   
   
 ## [🤖💬 Bot Chats](./bot-chats/index.md) (49)  

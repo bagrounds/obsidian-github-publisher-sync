@@ -9,9 +9,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-17T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-04-27T21:31:24Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A clean, minimalist illustration featuring a glowing, stylized human silhouette sitting at a desk. The desk is uncluttered, holding only a single plant and a notebook. Above the desk, abstract, colorful geometric shapes—representing energy and creativity—float upward like bubbles. The color palette is bright and optimistic, using soft yellows, calming teals, and warm oranges against a clean white background. The atmosphere is serene and airy, evoking a sense of balance, flow, and effortless productivity rather than stress or rigid structure. The composition is balanced and spacious, emphasizing clarity and well-being.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 😊✅ Feel Good Productivity: How to Do More of What Matters to You  
+![books-feel-good-productivity-how-to-do-more-of-what-matters-to-you](../books-feel-good-productivity-how-to-do-more-of-what-matters-to-you.jpg)  
 [🛒 Feel Good Productivity: How to Do More of What Matters to You. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4dJdYRa)  
   
 ## 📚 Book Report: Feel Good Productivity by Ali Abdaal  

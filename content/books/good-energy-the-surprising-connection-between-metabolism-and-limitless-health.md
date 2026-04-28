@@ -9,9 +9,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-16T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-04-28T12:45:18Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A high-contrast, minimalist illustration featuring a stylized human silhouette centered in the frame. Inside the chest cavity, a vibrant, glowing network of golden light represents healthy mitochondria, resembling a sunburst or a constellation. Radiating from the center, thin, elegant lines of light extend outward into the limbs, symbolizing systemic metabolic vitality. The background is a deep, clean matte charcoal, allowing the warm, electric yellow and amber glow of the energy network to pop. The aesthetic is modern, scientific, and clean, utilizing geometric shapes and soft, atmospheric lighting to convey a sense of internal harmony, cellular efficiency, and radiant health. The overall mood is one of clarity, enlightenment, and biological optimization.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # ⚡❤️‍🩹 Good Energy: The Surprising Connection Between Metabolism and Limitless Health  
+![books-good-energy-the-surprising-connection-between-metabolism-and-limitless-health](../books-good-energy-the-surprising-connection-between-metabolism-and-limitless-health.jpg)  
 [🛒 Good Energy: The Surprising Connection Between Metabolism and Limitless Health. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3FiAkws)  
   
 ## 📖 Book Report: Good Energy by Casey Means, MD  

@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-04-27T21:48:39-07:00
+updated: 2026-04-27T22:01:34-07:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -77,11 +77,11 @@ updated: 2026-04-27T21:48:39-07:00
 - [🧑‍🤝‍🧑 Platonic: How the Science of Attachment Can Help You Make - and Keep - Friends](./books/platonic-how-the-science-of-attachment-can-help-you-make-and-keep-friends.md)  
   
   
-## [📺 Videos](./videos/index.md) (810)  
+## [📺 Videos](./videos/index.md) (811)  
+- [🐘✂️📉 PostgREST Deletes 80% of Your Backend Code](./videos/postgrest-deletes-80-of-your-backend-code.md)  
 - [🐘⚙️🔄 I replaced my entire stack with Postgres](./videos/i-replaced-my-entire-stack-with-postgres.md)  
 - [🌀🍽️🔫📺 Trump Spins Dinner Shooting for Ballroom Agenda & Blitzer Is CNN's One-Shoed Hero | The Daily Show](./videos/trump-spins-dinner-shooting-for-ballroom-agenda-blitzer-is-cnns-one-shoed-hero-the-daily-show.md)  
 - [🗳️🚨🗣️ Election officials sound alarm over political interference in midterms](./videos/election-officials-sound-alarm-over-political-interference-in-midterms.md)  
-- [😠🗣️👎 WATCH: Sen. Kelly holds a news conference on Trump and Hegseth's 'efforts to intimidate him'](./videos/watch-sen-kelly-holds-a-news-conference-on-trump-and-hegseths-efforts-to-intimidate-him.md)  
   
   
 ## [🌌 Topics](./topics/index.md) (91)  

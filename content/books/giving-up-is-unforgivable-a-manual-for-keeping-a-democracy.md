@@ -7,11 +7,16 @@ share: true
 CTA: 🇺🇸 Defend self-governance.
 affiliate link: https://amzn.to/4oIQgsE
 link_analysis_model: gemini-3.1-flash-lite-preview
-link_analysis_time: 2026-04-05T00:00:00Z
+link_analysis_time: 2026-04-27T00:00:00Z
 force_analyze_links: false
+link_analysis_version: "2"
+image_date: 2026-04-28T10:46:02Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A close-up, high-contrast illustration of a weathered, classical marble column standing firm against a turbulent, stormy sky. At the base of the column, a pair of diverse human hands are interlocked, firmly gripping the stone to steady it, symbolizing collective strength and civic resolve. The lighting is dramatic, with a single, golden beam of sunlight breaking through the dark clouds to illuminate the hands and the base of the pillar, signifying hope and persistence. The style is clean, modern, and minimalist, using a palette of deep slate blues, stark whites, and vibrant gold accents to convey both the gravity of the task and the resilience of the human spirit.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🏛️💪 Giving Up Is Unforgivable: A Manual for Keeping a Democracy  
+![books-giving-up-is-unforgivable-a-manual-for-keeping-a-democracy](../books-giving-up-is-unforgivable-a-manual-for-keeping-a-democracy.jpg)  
 [🛒 Giving Up Is Unforgivable: A Manual for Keeping a Democracy. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4oIQgsE)  
   
 🗽 Preserving democratic norms requires persistent, collective civic action and offers a hopeful blueprint to combat despair and strengthen democratic institutions in an era of unprecedented challenges.  

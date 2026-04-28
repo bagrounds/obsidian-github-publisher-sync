@@ -7,11 +7,16 @@ share: true
 affiliate link: https://amzn.to/4hMqzW9
 CTA: 🤝 Build a fair future.
 link_analysis_model: gemini-3.1-flash-lite-preview
-link_analysis_time: 2026-04-01T00:00:00Z
+link_analysis_time: 2026-04-18T00:00:00Z
 force_analyze_links: false
+link_analysis_version: "2"
+image_date: 2026-04-28T07:07:44Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A stylized, isometric illustration featuring a diverse group of people collaborating to build a vibrant, interconnected community. In the center, individuals are planting trees and installing solar panels on modular, eco-friendly structures, symbolizing environmental sustainability. Paths and gears connect these structures to a central hub, representing a well-functioning, community-driven economy. The color palette uses warm earth tones—deep greens, soft terracottas, and vibrant blues—to evoke growth and stability. The background is a clean, minimalist landscape with stylized rolling hills and a bright, clear sky, emphasizing a sense of hope and structural harmony. The overall composition is balanced and optimistic, focusing on human cooperation and the integration of social and environmental progress.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🧑‍🤝‍🧑✅🌍 Full Employment and Social Justice: Solidarity and Sustainability  
+![books-full-employment-and-social-justice-solidarity-and-sustainability](../books-full-employment-and-social-justice-solidarity-and-sustainability.jpg)  
 [🛒 Full Employment and Social Justice: Solidarity and Sustainability. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4hMqzW9)  
   
 🌎 Full employment, spearheaded by a federally funded Job Guarantee, can fundamentally reshape economies towards genuine social justice and environmental sustainability, fostering empowered communities and eliminating opportunity gaps.  

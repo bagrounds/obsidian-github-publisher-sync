@@ -10,9 +10,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-15T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-04-28T08:55:31Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A minimalist, high-angle composition featuring a clean, modern wooden desk. In the center, a single, elegant fountain pen rests beside an open, organized leather-bound planner with neatly written checklists. To the side, a clear glass of water sits next to a small, thriving succulent plant, symbolizing a calm and focused environment. The lighting is soft, natural, and diffused, casting gentle shadows that emphasize a sense of order and tranquility. The color palette consists of calming earth tones, muted greens, and crisp whites, evoking a feeling of clarity and mental space. The background is slightly out of focus, keeping the viewers attention on the organized workspace and the absence of clutter.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # ✅😌 Getting Things Done: The Art of Stress-Free Productivity  
+![books-getting-things-done-the-art-of-stress-free-productivity](../books-getting-things-done-the-art-of-stress-free-productivity.jpg)  
 [🛒 Getting Things Done: The Art of Stress-Free Productivity. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3FiAaFm)  
   
 ## 📚 Book Report: ⚙️ Getting Things Done: The Art of Stress-Free Productivity  

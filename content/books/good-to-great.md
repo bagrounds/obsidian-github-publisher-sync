@@ -11,9 +11,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-16T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-04-28T13:47:30Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A large, heavy iron flywheel stands in the center of a minimalist, clean-lined space. The wheel is partially blurred to suggest slow, steady motion, symbolizing the accumulation of momentum. Beside it, a simple, elegant geometric diagram overlays the scene, featuring three interlocking circles—representing the Hedgehog Concept—with a glowing center point where they meet. The lighting is soft and professional, casting long, sharp shadows that emphasize depth and stability. The color palette consists of deep slate, crisp white, and subtle metallic gold accents, evoking a sense of disciplined, long-term growth and corporate sophistication. The composition is balanced and focused, highlighting the transition from static potential to unstoppable, rhythmic energy.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 👍➡️👍👍 Good to Great: Why Some Companies Make the Leap...And Others Don't  
+![books-good-to-great](../books-good-to-great.jpg)  
 [🛒 Good to Great: Why Some Companies Make the Leap...And Others Don't. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/455mhoo)  
   
 ## 🤖 AI Summary  

@@ -6,9 +6,17 @@ URL: https://bagrounds.org/books/god-is-not-great-how-religion-poisons-everythin
 share: true
 affiliate link: https://amzn.to/4pIxPWA
 CTA: 💀 Confront dogma.
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_time: 2026-04-18T00:00:00Z
+force_analyze_links: false
+link_analysis_version: "2"
+image_date: 2026-04-28T10:46:21Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A stark, high-contrast illustration featuring a weathered, ancient stone pillar crumbling at the top. From the cracks in the masonry, vibrant, glowing human silhouettes emerge, reaching upward toward a clear, open sky filled with stars and nebulae. Surrounding the base of the pillar are tangled, dark thorny vines that appear to be withering and turning to dust. The color palette is dominated by deep charcoal, slate gray, and obsidian for the religious iconography, contrasting sharply with brilliant, warm gold and electric blue light emanating from the liberated figures. The composition is minimalist and symbolic, emphasizing the transition from rigid, heavy dogma to the expansive, luminous freedom of scientific inquiry and human reason.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🙏🚫🌍 God Is Not Great: How Religion Poisons Everything  
+![books-god-is-not-great-how-religion-poisons-everything](../books-god-is-not-great-how-religion-poisons-everything.jpg)  
 [🛒 God Is Not Great: How Religion Poisons Everything. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4pIxPWA)  
   
 ## 📖 Book Report: ✝️ God Is Not Great: ☣️ How Religion Poisons Everything  

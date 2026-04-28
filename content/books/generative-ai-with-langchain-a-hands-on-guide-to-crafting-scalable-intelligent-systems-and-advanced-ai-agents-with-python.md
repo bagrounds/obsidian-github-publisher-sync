@@ -12,9 +12,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-17T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-04-28T09:57:46Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A high-tech, isometric illustration featuring a glowing, translucent neural network core. Intricate, interconnected golden chains flow outward from the center, weaving through stylized, floating Python code blocks and modular geometric shapes representing scalable infrastructure. A sleek, abstract robotic node sits at the focal point, emitting subtle pulses of light that represent data processing and decision-making. The background is a clean, deep navy blue gradient, emphasizing the vibrant neon accents of the circuitry. The composition feels sophisticated, modern, and structured, symbolizing the fusion of software engineering, artificial intelligence, and complex agentic workflows.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # ✨🤖🔗🐍 Generative AI with LangChain: A Hands On Guide to Crafting Scalable, Intelligent Systems and Advanced AI Agents with Python  
+![books-generative-ai-with-langchain-a-hands-on-guide-to-crafting-scalable-intelligent-systems-and-advanced-ai-agents-with-python](../books-generative-ai-with-langchain-a-hands-on-guide-to-crafting-scalable-intelligent-systems-and-advanced-ai-agents-with-python.jpg)  
 [🛒 Generative AI with LangChain: A Hands On Guide to Crafting Scalable, Intelligent Systems and Advanced AI Agents with Python. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4janMqg)  
   
 🧠🚀 A practical guide for developers, researchers, and data scientists looking to build scalable, intelligent, and production-ready Generative AI systems and advanced AI agents using LangChain and Python, with a strong emphasis on real-world applications and deployment strategies.  

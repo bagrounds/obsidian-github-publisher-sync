@@ -7,11 +7,16 @@ share: true
 CTA: 🏛️ Fight monopolists.
 affiliate link: https://amzn.to/4oBcdtf
 link_analysis_model: gemini-3.1-flash-lite-preview
-link_analysis_time: 2026-04-04T00:00:00Z
+link_analysis_time: 2026-04-18T00:00:00Z
 force_analyze_links: false
+link_analysis_version: "2"
+image_date: 2026-04-28T11:42:08Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: "A stark, high-contrast illustration featuring a weathered, classical marble column standing in the center, representing democracy. Looming over the column is a massive, dark, monolithic gear-like structure that casts a long, sharp shadow, threatening to crush the architectural base. The background is divided: one side shows the golden, chaotic energy of early industrial laborers and small storefronts, while the other side transitions into the cold, sterile, geometric lines of modern digital server farms and skyscrapers. The aesthetic is reminiscent of a woodcut print, using a palette of deep charcoal, muted gold, and off-white to evoke a sense of historical gravitas and the enduring friction between human-scale society and centralized, mechanical power."
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 👑⚔️🏛️ Goliath: The 100-Year War Between Monopoly Power and Democracy  
+![books-goliath-the-100-year-war-between-monopoly-power-and-democracy](../books-goliath-the-100-year-war-between-monopoly-power-and-democracy.jpg)  
 [🛒 Goliath: The 100-Year War Between Monopoly Power and Democracy. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4oBcdtf)  
   
 🇺🇸💰💥 A critical examination of the century-long, often hidden, war between concentrated monopoly power and democratic forces in the United States, arguing that the erosion of antitrust enforcement has led to today's political and economic crises.  

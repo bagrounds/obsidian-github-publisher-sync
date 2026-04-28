@@ -9,9 +9,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-17T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-04-28T08:55:41Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A minimalist, high-contrast illustration featuring two hands meeting in a firm, balanced handshake. The hands are rendered in clean, geometric lines against a neutral, soft-toned background. Above the hands, a simple, abstract lightbulb icon glows, symbolizing the generation of mutual options. To the side, a set of balanced scales represents objective criteria, with both sides perfectly level. The overall color palette uses professional, calm tones like deep navy, slate gray, and a single accent of warm gold to highlight the point of connection. The composition is centered and uncluttered, emphasizing clarity, cooperation, and analytical thinking.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 👉🤝 Getting to Yes: Negotiating Agreement Without Giving In  
+![books-getting-to-yes-negotiating-agreement-without-giving-in](../books-getting-to-yes-negotiating-agreement-without-giving-in.jpg)  
 [🛒 Getting to Yes: Negotiating Agreement Without Giving In. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4mWV0Lo)  
   
 ## 📖 Book Report: 🤝 Getting to Yes: Negotiating Agreement Without Giving In  

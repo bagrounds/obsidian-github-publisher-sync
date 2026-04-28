@@ -11,9 +11,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-16T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-04-28T07:07:35Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A high-angle, minimalist composition featuring a calm, centered figure sitting in a lotus position on a smooth, flat stone. The background is a soft-focus, swirling gradient that transitions from a chaotic, dark charcoal grey at the edges to a serene, luminous golden light at the center. Surrounding the person are faint, ethereal outlines of falling leaves or rain droplets that blur into stillness as they approach the figure. The lighting is soft and diffused, casting gentle, long shadows. The overall aesthetic is one of profound stillness amidst turbulence, utilizing a balanced color palette of deep slate, warm amber, and muted cream to evoke a sense of grounding and mental clarity.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🌪️🧘🏼‍♀️ Full Catastrophe Living: Using the Wisdom of Your Body and Mind to Face Stress, Pain, and Illness  
+![books-full-catastrophe-living](../books-full-catastrophe-living.jpg)  
 [🛒 Full Catastrophe Living: Using the Wisdom of Your Body and Mind to Face Stress, Pain, and Illness. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4mJU6Sg)  
   
 ## 📝🐒 Human Notes  

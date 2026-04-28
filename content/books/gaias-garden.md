@@ -10,9 +10,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-16T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-04-28T07:57:34Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A lush, high-angle view of a thriving home-scale permaculture garden. The scene features a diverse guild of plants, including a central fruit-bearing tree surrounded by clusters of vibrant vegetables, nitrogen-fixing legumes, and flowering herbs that attract pollinators. The layout is naturalistic and organic rather than grid-like, with a winding stone path integrated into the landscape. A small, clever water-catchment feature, like a decorative swale or a stone-lined basin, sits at the edge of a raised garden bed. The soil is dark, rich, and covered with organic mulch. Soft, dappled sunlight filters through the canopy, highlighting the varied textures of the leaves and a few honeybees busy among the blossoms. The overall aesthetic is one of abundant, self-sustaining harmony and ecological health.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🌍🌿 Gaia's Garden: A Guide to Home-Scale Permaculture  
+![books-gaias-garden](../books-gaias-garden.jpg)  
 [🛒 Gaia's Garden: A Guide to Home-Scale Permaculture. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3Zbj8Q4)  
   
 ## 📚 Book Report: 🌍 Gaia's Garden: A Guide to Home-Scale Permaculture  

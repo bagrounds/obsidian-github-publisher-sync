@@ -10,9 +10,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-16T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-04-27T19:47:07Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A minimalist, high-contrast illustration featuring a stylized human silhouette in a soft, cool-toned gradient of deep blues and teals. Inside the silhouette, a delicate, glowing network of neural pathways and cellular structures is depicted in warm, golden light, suggesting the inner biological complexity of fatigue. The background is a clean, muted off-white, emphasizing a sense of clinical calm and scientific inquiry. Subtle geometric shapes—like faint, overlapping circles or soft-focus molecular spheres—float around the figure, representing the multifaceted nature of the bodys energy systems. The overall aesthetic is professional, modern, and serene, focusing on the intersection of human physiology and scientific research.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 😩⚕️ Fatigue Science for Human Health  
+![books-fatigue-science-for-human-health](../books-fatigue-science-for-human-health.jpg)  
 [🛒 Fatigue Science for Human Health. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/43oKvbT)  
   
 ## 📖 Book Report: Fatigue Science for Human Health  

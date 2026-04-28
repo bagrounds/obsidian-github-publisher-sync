@@ -5,10 +5,10 @@ aliases:
 title: 📺 Videos
 URL: https://bagrounds.org/videos
 backlinks: false
-updated: 2026-04-27T11:32:11-07:00
+updated: 2026-04-27T21:11:44-07:00
 ---
 [Home](../index.md)  
-# 📺 Videos (806)  
+# 📺 Videos (809)  
 - [💰🤑🤖💡🚀💲 $0.10 per Month Runs My Entire AI Life. I'll Show You How.](./0-10-month-runs-my-entire-ai-life-ill-show-you-how.md)  
 - [📊📈📉📃👁️ 10 Charts to Understand the 900 Page Budget Bill](./10-charts-to-understand-the-900-page-budget-bill.md)  
 - [🤖🔗⬆️✅ 12-Factor Agents: Patterns of reliable LLM applications — Dex Horthy, HumanLayer](./12-factor-agents-patterns-of-reliable-llm-applications-dex-horthy-humanlayer.md)  
@@ -61,6 +61,7 @@ updated: 2026-04-27T11:32:11-07:00
 - [🌱📈✅➡️🔄 A healthy economy should be designed to thrive, not grow | Kate Raworth](./a-healthy-economy-should-be-designed-to-thrive-not-grow-kate-raworth.md)  
 - [🤖🤝🏛️ AI and Democracy (Chris Bail at Lake Como Lectures on Democracy)](./ai-and-democracy-chris-bail-at-lake-como-lectures-on-democracy.md)  
 - [🤖💡🤝🗣️🏛️ AI Can Help Humans Find Common Ground in Democratic Deliberation – MH Tessler | IASEAI 2025](./ai-can-help-humans-find-common-ground-in-democratic-deliberation-mh-tessler-iaseai-2025.md)  
+- [🤖💬📺 AI Chatbots: Last Week Tonight with John Oliver (HBO)](./ai-chatbots-last-week-tonight-with-john-oliver-hbo.md)  
 - [🤖🗣️⚠️😵‍💫 AI content supercharges confusion and spreads misleading information, critics warn](./ai-content-supercharges-confusion-and-spreads-misleading-information-critics-warn.md)  
 - [🤖🧠⚙️👩‍💻 AI Engineering with Chip Huyen](./ai-engineering-with-chip-huyen.md)  
 - [🤖🗣️🔮✨ AI Talks | Gen AI 2026: What Will Shape the Future](./ai-talks-gen-ai-2026-what-will-shape-the-future.md)  
@@ -181,6 +182,7 @@ updated: 2026-04-27T11:32:11-07:00
 - [🍎➡️🥗💯 Eat your food in the RIGHT ORDER: 75% healthier with this small trick | Episode 6 of 18](./eat-your-food-in-the-right-order-75-healthier-with-this-small-trick-episode-6-of-18.md)  
 - [🏃‍♀️⚕️💪 ECFIT Expert Series - Jay Dicharry](./ecfit-expert-series-jay-dicharry.md)  
 - [🌱⛰️💪 Effective Resistance to Authoritarianism: «The violets in the mountains have broken the rocks»](./effective-resistance-to-authoritarianism-the-violets-in-the-mountains-have-broken-the-rocks.md)  
+- [🗳️🚨🗣️ Election officials sound alarm over political interference in midterms](./election-officials-sound-alarm-over-political-interference-in-midterms.md)  
 - [⚙️⚖️📈 Eliyahu Goldratt - Matter of Choice | Goldratt on the Economy](./eliyahu-goldratt-matter-of-choice-goldratt-on-the-economy.md)  
 - [🤑🤥💡💰🗣️ Eliza Filby: Hard Work Is a Lie, This Is What Rich People Never Tell You](./eliza-filby-hard-work-is-a-lie-this-is-what-rich-people-never-tell-you.md)  
 - [🇿🇦👨‍👩‍👧‍👦⛓️卐 Elon Musk's Family History in South Africa Reveals Ties to Apartheid & Neo-Nazi Movements](./elon-musks-family-history-in-south-africa-reveals-ties-to-apartheid-neo-nazi-movements.md)  
@@ -696,6 +698,7 @@ updated: 2026-04-27T11:32:11-07:00
 - [🌪️🇺🇸📉🌍 Trump’s instability and the potential of a post-American world](./trumps-instability-and-the-potential-of-a-post-american-world.md)  
 - [💰🔄 Trump’s mega bill ‘hasn’t even cut taxes, it’s redistributed them’ | Justin Wolfers](./trumps-mega-bill-hasnt-even-cut-taxes-its-redistributed-them-justin-wolfers.md)  
 - [🤡💵📺 Trump’s One Big Beautiful Bill: Last Week Tonight with John Oliver (HBO)](./trumps-one-big-beautiful-bill-last-week-tonight-with-john-oliver-hbo.md)  
+- [🌀🍽️🔫📺 Trump Spins Dinner Shooting for Ballroom Agenda & Blitzer Is CNN's One-Shoed Hero | The Daily Show](./trump-spins-dinner-shooting-for-ballroom-agenda-blitzer-is-cnns-one-shoed-hero-the-daily-show.md)  
 - [Trump Tariff Cold Open - SNL](./trump-tariff-cold-open-snl.md)  
 - [👹🐊🔒 Trump visits Florida's 'Alligator Alcatraz,' urges more states to open ICE detention sites](./trump-visits-floridas-alligator-alcatraz-urges-more-states-to-open-ice-detention-sites.md)  
 - [👨‍💼🎓📺 Trump vs Higher Education: Last Week Tonight with John Oliver (HBO)](./trump-vs-higher-education-last-week-tonight-with-john-oliver-hbo.md)  

@@ -11,9 +11,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-17T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-04-27T20:32:38Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A high-contrast, moody illustration of the West Wing of the White House at night. The building is cast in deep shadows with only a few windows glowing with an eerie, flickering amber light. In the foreground, a heavy, ornate wooden desk sits slightly askew, cluttered with scattered, redacted documents and a pair of spectacles left behind in haste. Surrounding the desk are dark, indistinct silhouettes of figures caught in mid-motion, suggesting a frantic, clandestine atmosphere. The color palette is dominated by charcoal grays, deep navy, and sharp, metallic gold accents, conveying a sense of institutional tension and high-stakes chaos. The overall composition feels claustrophobic and cinematic, emphasizing the feeling of an administration operating behind closed, heavy doors.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 😱🤡🇺🇸 Fear: Trump in the White House  
+![books-fear](../books-fear.jpg)  
 by Bob Woodward  
 [🛒 Fear: Trump in the White House. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4kr6q8q)  
   

@@ -10,9 +10,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-16T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-04-27T23:29:43Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A high-contrast, minimalist illustration featuring a single, polished marble rolling across a complex, multi-tiered mechanical gear system. The gears are made of dark, weathered iron, representing deterministic structure, while the marble is bright, translucent, and glowing, symbolizing the unpredictable element of chance. In the background, a faint, blurred silhouette of a human silhouette looks on, their hand outstretched as if trying to grasp the marble, but they are clearly positioned too far away to influence its path. The lighting is dramatic, with deep shadows and sharp highlights, emphasizing the tension between the cold, rigid logic of the machine and the chaotic, fluid movement of the marble. The color palette is restricted to deep charcoal, slate gray, and a striking, vibrant amber for the marble.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🃏🎲 Fooled by Randomness: The Hidden Role of Chance in Life and in the Markets  
+![books-fooled-by-randomness-the-hidden-role-of-chance-in-life-and-in-the-markets](../books-fooled-by-randomness-the-hidden-role-of-chance-in-life-and-in-the-markets.jpg)  
 [🛒 Fooled by Randomness: The Hidden Role of Chance in Life and in the Markets. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/45EX7gu)  
   
 ## 📚 Book Report: 🎲 Fooled by Randomness: 🎭 The Hidden Role of Chance in Life and in the Markets  

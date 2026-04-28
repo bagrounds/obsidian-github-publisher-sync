@@ -7,11 +7,16 @@ share: true
 affiliate link: https://amzn.to/40nBWMn
 CTA: Understand immigration.
 link_analysis_model: gemini-3.1-flash-lite-preview
-link_analysis_time: 2026-04-07T00:00:00Z
+link_analysis_time: 2026-04-19T00:00:00Z
 force_analyze_links: false
+link_analysis_version: "2"
+image_date: 2026-04-28T03:15:23Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A stark illustration depicts a winding, dusty path under a muted, expansive sky, hinting at a border landscape. As the path progresses, it subtly transforms, its texture shifting from cracked earth to the cold, rigid lines of prison bars, and finally into a solid, imposing concrete wall. Small, anonymous silhouettes of figures walk along this changing ground, their journey leading them from the open, harsh environment directly into the confines of the institutional structure. A subtle, cool light emanates from the barred section, emphasizing the transition and the restrictive endpoint.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🛂⛓️ From Deportation to Prison: The Politics of Immigration Enforcement in Post-Civil Rights America  
+![books-from-deportation-to-prison-the-politics-of-immigration-enforcement-in-post-civil-rights-america](../books-from-deportation-to-prison-the-politics-of-immigration-enforcement-in-post-civil-rights-america.jpg)  
 [🛒 From Deportation to Prison: The Politics of Immigration Enforcement in Post-Civil Rights America. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/40nBWMn)  
   
 ## 📚 Book Report: ➡️ From Deportation to Prison: 🏛️ The Politics of Immigration Enforcement in Post-Civil Rights America  

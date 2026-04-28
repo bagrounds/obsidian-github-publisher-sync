@@ -1,6 +1,6 @@
 module Automation.ReflectionTitleTest (tests) where
 
-import Data.Time (fromGregorian)
+import Data.Time (LocalTime (..), TimeOfDay (..), fromGregorian)
 import qualified Data.Text as T
 import Test.Tasty (TestTree, testGroup)
 import Test.Tasty.HUnit (testCase, (@?=), assertBool)
@@ -13,6 +13,7 @@ tests :: TestTree
 tests = testGroup "ReflectionTitle"
   [ defaultModelTests
   , reflectionNeedsTitleTests
+  , reflectionTitleCutoffTests
   , stripTitlePrefixesTests
   , extractTrailingEmojisTests
   , extractHeadingEmojisTests
@@ -43,6 +44,39 @@ reflectionNeedsTitleTests = testGroup "reflectionNeedsTitle"
       reflectionNeedsTitle "---\ntags: foo\n---\nbody" "2025-01-15" @?= True
   , testCase "needs title when no frontmatter" $
       reflectionNeedsTitle "just body text" "2025-01-15" @?= True
+  ]
+
+reflectionTitleCutoffTests :: TestTree
+reflectionTitleCutoffTests = testGroup "reflectionTitleCutoff"
+  [ testCase "cutoff for a mid-month day is that day at 22:00:00" $
+      reflectionTitleCutoff (fromGregorian 2026 4 27)
+        @?= LocalTime (fromGregorian 2026 4 27) (TimeOfDay 22 0 0)
+  , testCase "cutoff for the first of a month is that day at 22:00:00" $
+      reflectionTitleCutoff (fromGregorian 2026 5 1)
+        @?= LocalTime (fromGregorian 2026 5 1) (TimeOfDay 22 0 0)
+  , testCase "cutoff for January 1 is that day at 22:00:00" $
+      reflectionTitleCutoff (fromGregorian 2027 1 1)
+        @?= LocalTime (fromGregorian 2027 1 1) (TimeOfDay 22 0 0)
+  , testCase "10 PM exactly on reflection day is eligible" $
+      LocalTime (fromGregorian 2026 4 27) (TimeOfDay 22 0 0)
+        >= reflectionTitleCutoff (fromGregorian 2026 4 27)
+        @?= True
+  , testCase "one second before cutoff on reflection day is not eligible" $
+      LocalTime (fromGregorian 2026 4 27) (TimeOfDay 21 59 59)
+        >= reflectionTitleCutoff (fromGregorian 2026 4 27)
+        @?= False
+  , testCase "midnight after reflection day is eligible" $
+      LocalTime (fromGregorian 2026 4 28) (TimeOfDay 0 0 0)
+        >= reflectionTitleCutoff (fromGregorian 2026 4 27)
+        @?= True
+  , testCase "next day at noon is eligible" $
+      LocalTime (fromGregorian 2026 4 28) (TimeOfDay 12 0 0)
+        >= reflectionTitleCutoff (fromGregorian 2026 4 27)
+        @?= True
+  , testCase "same day at noon is not yet eligible" $
+      LocalTime (fromGregorian 2026 4 27) (TimeOfDay 12 0 0)
+        >= reflectionTitleCutoff (fromGregorian 2026 4 27)
+        @?= False
   ]
 
 stripTitlePrefixesTests :: TestTree

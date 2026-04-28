@@ -25,6 +25,27 @@ to the daily reflection.
 - **Idempotency**: Skips if the title field already contains a creative title
   (i.e., anything beyond the bare date)
 
+## Titling Eligibility
+
+🗓️ A reflection note becomes eligible for titling at 10 PM Pacific on the day of the reflection. 📋 The cutoff datetime for any given reflection is computed by `reflectionTitleCutoff`:
+
+```haskell
+reflectionTitleCutoff :: Day -> LocalTime
+reflectionTitleCutoff reflectionDay = LocalTime reflectionDay (TimeOfDay 22 0 0)
+```
+
+🕐 A reflection on day `D` can be titled whenever `currentPacificTime >= reflectionTitleCutoff D`. This keeps the day and time bundled together as a full datetime, rather than comparing a bare time-of-day against an isolated threshold.
+
+## Backfill: Scanning the Last 5 Days
+
+🔄 `runReflectionTitle` does not hard-code a single target date. Instead, it scans the **last 5 calendar days** (relative to today Pacific), computes the cutoff datetime for each, and titles every eligible untitled reflection:
+
+- 📅 Candidate days: today, today minus 1, today minus 2, today minus 3, today minus 4
+- ✅ Eligible: `currentPacificTime >= reflectionTitleCutoff candidateDay`
+- 🏷️ For each eligible day: if the reflection file exists and lacks a creative title, generate and apply a title
+
+🛡️ This means if the automation system stops running for several days, any untitled reflections that have passed their 10 PM cutoff will be backfilled automatically on the next run. The "is it time yet?" question is always answered by comparing two full datetimes.
+
 ## Title Format
 
 Titles follow a creative game observed across 20+ existing reflection notes:
@@ -116,6 +137,7 @@ The task updates three locations in the reflection note:
 | `extractHeadingEmojis(heading)` | Extract leading emojis from one heading line |
 | `stripTitlePrefixes(title)` | Remove date and emoji prefixes |
 | `reflectionNeedsTitle(content, date)` | Idempotency check |
+| `reflectionTitleCutoff(reflectionDay)` | Return the earliest `LocalTime` at which a reflection for `reflectionDay` is eligible to be titled (i.e., `reflectionDay @ 22:00:00`) |
 | `buildReflectionTitlePrompt(titles, examples)` | Gemini prompt construction |
 | `parseReflectionTitle(raw)` | Clean raw model response |
 | `applyReflectionTitle(content, date, title)` | Apply title to note |
@@ -129,13 +151,14 @@ The task updates three locations in the reflection note:
 
 ## Tests
 
-56 tests across 9 suites covering:
+64 tests across 10 suites covering:
 
 - `extractHeadingEmojis`: Wiki links, markdown links, plain headings, no-emoji headings
 - `extractTrailingEmojis`: Multi-heading extraction, deduplication
 - `stripTitlePrefixes`: Emoji stripping, date stripping, combined, plain text
 - `extractLinkedTitles`: Wiki links, markdown links, heading exclusion, date prefix stripping
 - `reflectionNeedsTitle`: Date-only detection, titled detection, edge cases
+- `reflectionTitleCutoff`: returns `LocalTime day (TimeOfDay 22 0 0)` for a given `Day`; eligibility tests verify correct comparison semantics (at/after 10 PM eligible, before not, next day noon eligible, same day noon not)
 - `buildReflectionTitlePrompt`: One-word-per-title instructions, examples inclusion, numbering
 - `parseReflectionTitle`: Code fence stripping, quote removal, date prefix handling, backtick
   stripping, emoji spacing normalization, preamble stripping (single-line, multi-line, thinking output)

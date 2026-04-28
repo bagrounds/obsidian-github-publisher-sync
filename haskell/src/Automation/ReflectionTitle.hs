@@ -5,6 +5,7 @@ module Automation.ReflectionTitle
   , extractHeadingEmojis
   , stripTitlePrefixes
   , reflectionNeedsTitle
+  , reflectionTitleCutoff
   , buildReflectionTitlePrompt
   , parseReflectionTitle
   , applyReflectionTitle
@@ -22,6 +23,7 @@ import Data.List (find, nub, sortBy)
 import Data.List.NonEmpty (NonEmpty)
 import Data.Text (Text)
 import qualified Data.Text as T
+import Data.Time (Day, LocalTime (..), TimeOfDay (..))
 import System.FilePath (takeExtension)
 
 import Automation.Platform (updatesSectionHeader)
@@ -102,6 +104,9 @@ extractMarkdownLinkTitles t = case T.breakOn "](" t of
           _ -> []
     in titlePart <> extractMarkdownLinkTitles (T.drop 1 afterRemainder)
   _ -> []
+
+reflectionTitleCutoff :: Day -> LocalTime
+reflectionTitleCutoff reflectionDay = LocalTime reflectionDay (TimeOfDay 22 0 0)
 
 reflectionNeedsTitle :: Text -> Text -> Bool
 reflectionNeedsTitle content date =

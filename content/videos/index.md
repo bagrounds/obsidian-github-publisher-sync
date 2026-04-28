@@ -5,10 +5,10 @@ aliases:
 title: 📺 Videos
 URL: https://bagrounds.org/videos
 backlinks: false
-updated: 2026-04-27T11:32:11-07:00
+updated: 2026-04-27T17:32:33-07:00
 ---
 [Home](../index.md)  
-# 📺 Videos (806)  
+# 📺 Videos (807)  
 - [💰🤑🤖💡🚀💲 $0.10 per Month Runs My Entire AI Life. I'll Show You How.](./0-10-month-runs-my-entire-ai-life-ill-show-you-how.md)  
 - [📊📈📉📃👁️ 10 Charts to Understand the 900 Page Budget Bill](./10-charts-to-understand-the-900-page-budget-bill.md)  
 - [🤖🔗⬆️✅ 12-Factor Agents: Patterns of reliable LLM applications — Dex Horthy, HumanLayer](./12-factor-agents-patterns-of-reliable-llm-applications-dex-horthy-humanlayer.md)  
@@ -61,6 +61,7 @@ updated: 2026-04-27T11:32:11-07:00
 - [🌱📈✅➡️🔄 A healthy economy should be designed to thrive, not grow | Kate Raworth](./a-healthy-economy-should-be-designed-to-thrive-not-grow-kate-raworth.md)  
 - [🤖🤝🏛️ AI and Democracy (Chris Bail at Lake Como Lectures on Democracy)](./ai-and-democracy-chris-bail-at-lake-como-lectures-on-democracy.md)  
 - [🤖💡🤝🗣️🏛️ AI Can Help Humans Find Common Ground in Democratic Deliberation – MH Tessler | IASEAI 2025](./ai-can-help-humans-find-common-ground-in-democratic-deliberation-mh-tessler-iaseai-2025.md)  
+- [🤖💬📺 AI Chatbots: Last Week Tonight with John Oliver (HBO)](./ai-chatbots-last-week-tonight-with-john-oliver-hbo.md)  
 - [🤖🗣️⚠️😵‍💫 AI content supercharges confusion and spreads misleading information, critics warn](./ai-content-supercharges-confusion-and-spreads-misleading-information-critics-warn.md)  
 - [🤖🧠⚙️👩‍💻 AI Engineering with Chip Huyen](./ai-engineering-with-chip-huyen.md)  
 - [🤖🗣️🔮✨ AI Talks | Gen AI 2026: What Will Shape the Future](./ai-talks-gen-ai-2026-what-will-shape-the-future.md)  

@@ -6,9 +6,17 @@ URL: https://bagrounds.org/books/freedom-for-the-thought-that-we-hate-a-biograph
 share: true
 CTA: 🛡️ Defend dissent.
 affiliate link: https://amzn.to/4b1injh
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_time: 2026-04-24T00:00:00Z
+force_analyze_links: false
+link_analysis_version: "2"
+image_date: 2026-04-28T03:15:15Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A conceptual illustration featuring a weathered, monumental stone gavel resting on a weathered parchment document of the U.S. Constitution. The parchment is slightly frayed at the edges, symbolizing the historical struggle of legal interpretation. Surrounding the document are various abstract, stylized speech bubbles of different shapes and sizes, some jagged and sharp to represent harsh or hateful discourse, and others soft and rounded. These bubbles float upward, caught in a beam of light that illuminates the center of the composition. The background is a deep, moody charcoal texture, emphasizing the gravity of the subject. The overall aesthetic is clean, intellectual, and timeless, focusing on the tension between the weight of legal authority and the chaotic, diverse nature of human expression.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🗽🗣️😠 Freedom for the Thought That We Hate: A Biography of the First Amendment  
+![books-freedom-for-the-thought-that-we-hate-a-biography-of-the-first-amendment](../books-freedom-for-the-thought-that-we-hate-a-biography-of-the-first-amendment.jpg)  
 [🛒 Freedom for the Thought That We Hate: A Biography of the First Amendment. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4b1injh)  
   
 🗽📜⚖️ The First Amendment's tumultuous journey and evolving interpretation, focusing on how free speech—even offensive speech—became a foundational American right through landmark Supreme Court cases and the enduring vision of justices like Holmes and Brandeis.  

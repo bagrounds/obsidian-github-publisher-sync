@@ -12,9 +12,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-15T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-04-27T23:29:33Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A minimalist, surrealist illustration featuring a human silhouette sitting in a meditative lotus position. The figure is composed of translucent, flowing liquid light that merges seamlessly into a calm, deep-blue ocean below. Above the figure, a complex, glowing geometric lattice represents a focused mind, with intricate golden lines connecting to form a structured pattern against a soft, ethereal gradient sky. The scene conveys a sense of perfect balance between challenge and skill, with the liquid form suggesting fluidity and the geometric lines suggesting precise intellectual engagement. The color palette uses deep indigos, vibrant teals, and accents of warm amber, evoking a sense of deep, focused tranquility and high-performance clarity.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🌊🧘🏼‍♀️🧠📈 Flow: The Psychology of Optimal Experience  
+![books-flow-the-psychology-of-optimal-experience](../books-flow-the-psychology-of-optimal-experience.jpg)  
 [🛒 Flow: The Psychology of Optimal Experience. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4jrYkLn)  
   
 ## 🤖 AI Summary  

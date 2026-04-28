@@ -10,9 +10,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-17T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-04-28T13:47:16Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A minimalist, split-composition illustration. On the left, a cluttered, high-tech environment features glowing neon vials, a complex tangle of colorful wires, and a metallic cryotherapy chamber, representing the strange science and expensive fads of the recovery industry. On the right, a serene, sunlit bedroom setting features a simple wooden nightstand, a soft pillow, a glass of water, and a single houseplant, representing the foundational pillars of sleep and rest. The two sides are divided by a clean, vertical line, emphasizing the contrast between complex, unproven gimmicks and the essential, quiet nature of true physiological recovery. The art style is clean, modern, and vector-based with a muted color palette of cool blues, crisp whites, and warm earthy tones.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 💪🧪 Good to Go: What the Athlete in All of Us Can Learn from the Strange Science of Recovery  
+![books-good-to-go-what-the-athlete-in-all-of-us-can-learn-from-the-strange-science-of-recovery](../books-good-to-go-what-the-athlete-in-all-of-us-can-learn-from-the-strange-science-of-recovery.jpg)  
 [🛒 Good to Go: What the Athlete in All of Us Can Learn from the Strange Science of Recovery. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3JggfZg)  
   
 ## 📖 Book Report: Good to Go: What the Athlete in All of Us Can Learn from the Strange Science of Recovery  

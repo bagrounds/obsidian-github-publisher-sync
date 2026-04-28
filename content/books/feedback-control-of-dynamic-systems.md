@@ -14,9 +14,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-19T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-04-27T20:32:51Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A minimalist, high-contrast illustration featuring a stylized, glowing circuit board pattern that transitions into a smooth, flowing sine wave. At the center, a golden mechanical gear is perfectly balanced atop a digital node, representing the intersection of physical systems and computational control. Fine, geometric lines and mathematical vectors (representing root locus and frequency response) radiate outward from the center, suggesting stability and precision. The color palette uses deep navy blue as a base, with vibrant cyan and electric gold accents to signify energy and feedback loops. The composition is clean, modern, and technical, emphasizing the harmony between dynamic movement and controlled equilibrium.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # ⚙️📈🔄🎯 Feedback Control of Dynamic Systems  
+![books-feedback-control-of-dynamic-systems](../books-feedback-control-of-dynamic-systems.jpg)  
 [🛒 Feedback Control of Dynamic Systems. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/459IjXa)  
   
 ## 🤖 AI Summary  

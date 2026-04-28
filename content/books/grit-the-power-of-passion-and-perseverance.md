@@ -10,9 +10,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-15T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-04-28T16:00:31Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A close-up, high-contrast image of a weathered, sturdy rope being pulled taut against a rugged mountain landscape. The texture of the rope is detailed, showing frayed fibers and tight twists, symbolizing the strength found in endurance. In the background, a steep, rocky path winds upward toward a sunlit peak, representing a long-term goal. The lighting is dramatic, with golden-hour sunlight hitting the rope and the mountain face, creating deep shadows that emphasize the grit and determination of the climb. The color palette consists of earthy tones—slate gray, burnt orange, and deep brown—evoking a sense of resilience and grounded effort. The composition is clean and focused, capturing the essence of steady, unwavering progress through difficult terrain.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # ❤️‍🔥💪 Grit: The Power of Passion and Perseverance  
+![books-grit-the-power-of-passion-and-perseverance](../books-grit-the-power-of-passion-and-perseverance.jpg)  
 [🛒 Grit: The Power of Passion and Perseverance. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3Gpbiwb)  
   
 ## 📖 Book Report: Grit: The Power of Passion and Perseverance  

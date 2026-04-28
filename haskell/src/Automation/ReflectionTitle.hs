@@ -23,7 +23,7 @@ import Data.List (find, nub, sortBy)
 import Data.List.NonEmpty (NonEmpty)
 import Data.Text (Text)
 import qualified Data.Text as T
-import Data.Time (Day, addDays)
+import Data.Time (Day, LocalTime, TimeOfDay (..), addDays, localDay, localTimeOfDay)
 import System.FilePath (takeExtension)
 
 import Automation.Platform (updatesSectionHeader)
@@ -105,10 +105,10 @@ extractMarkdownLinkTitles t = case T.breakOn "](" t of
     in titlePart <> extractMarkdownLinkTitles (T.drop 1 afterRemainder)
   _ -> []
 
-reflectionTitleTargetDay :: Int -> Day -> Day
-reflectionTitleTargetDay currentHour today
-  | currentHour >= 22 = today
-  | otherwise         = addDays (-1) today
+reflectionTitleTargetDay :: LocalTime -> Day
+reflectionTitleTargetDay localNow
+  | localTimeOfDay localNow >= TimeOfDay 22 0 0 = localDay localNow
+  | otherwise                                    = addDays (-1) (localDay localNow)
 
 reflectionNeedsTitle :: Text -> Text -> Bool
 reflectionNeedsTitle content date =

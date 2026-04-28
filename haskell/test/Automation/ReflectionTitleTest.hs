@@ -1,6 +1,6 @@
 module Automation.ReflectionTitleTest (tests) where
 
-import Data.Time (fromGregorian)
+import Data.Time (LocalTime (..), TimeOfDay (..), fromGregorian)
 import qualified Data.Text as T
 import Test.Tasty (TestTree, testGroup)
 import Test.Tasty.HUnit (testCase, (@?=), assertBool)
@@ -48,20 +48,30 @@ reflectionNeedsTitleTests = testGroup "reflectionNeedsTitle"
 
 reflectionTitleTargetDayTests :: TestTree
 reflectionTitleTargetDayTests = testGroup "reflectionTitleTargetDay"
-  [ testCase "hour 22 (10 PM) returns today" $
-      reflectionTitleTargetDay 22 (fromGregorian 2026 4 27) @?= fromGregorian 2026 4 27
-  , testCase "hour 23 (11 PM) returns today" $
-      reflectionTitleTargetDay 23 (fromGregorian 2026 4 27) @?= fromGregorian 2026 4 27
-  , testCase "hour 0 (midnight, past-midnight run) returns yesterday" $
-      reflectionTitleTargetDay 0 (fromGregorian 2026 4 27) @?= fromGregorian 2026 4 26
-  , testCase "hour 1 (1 AM, past-midnight run) returns yesterday" $
-      reflectionTitleTargetDay 1 (fromGregorian 2026 4 27) @?= fromGregorian 2026 4 26
-  , testCase "hour 21 (9 PM) returns yesterday" $
-      reflectionTitleTargetDay 21 (fromGregorian 2026 4 27) @?= fromGregorian 2026 4 26
+  [ testCase "10 PM exactly (22:00:00) returns today" $
+      reflectionTitleTargetDay (LocalTime (fromGregorian 2026 4 27) (TimeOfDay 22 0 0))
+        @?= fromGregorian 2026 4 27
+  , testCase "10:30 PM (22:30:00) returns today" $
+      reflectionTitleTargetDay (LocalTime (fromGregorian 2026 4 27) (TimeOfDay 22 30 0))
+        @?= fromGregorian 2026 4 27
+  , testCase "11:59 PM (23:59:59) returns today" $
+      reflectionTitleTargetDay (LocalTime (fromGregorian 2026 4 27) (TimeOfDay 23 59 59))
+        @?= fromGregorian 2026 4 27
+  , testCase "midnight exactly (0:00:00) returns yesterday" $
+      reflectionTitleTargetDay (LocalTime (fromGregorian 2026 4 27) (TimeOfDay 0 0 0))
+        @?= fromGregorian 2026 4 26
+  , testCase "1:30 AM (1:30:00) returns yesterday" $
+      reflectionTitleTargetDay (LocalTime (fromGregorian 2026 4 27) (TimeOfDay 1 30 0))
+        @?= fromGregorian 2026 4 26
+  , testCase "9:59 PM (21:59:59) returns yesterday" $
+      reflectionTitleTargetDay (LocalTime (fromGregorian 2026 4 27) (TimeOfDay 21 59 59))
+        @?= fromGregorian 2026 4 26
   , testCase "handles month boundary correctly" $
-      reflectionTitleTargetDay 0 (fromGregorian 2026 5 1) @?= fromGregorian 2026 4 30
+      reflectionTitleTargetDay (LocalTime (fromGregorian 2026 5 1) (TimeOfDay 0 0 0))
+        @?= fromGregorian 2026 4 30
   , testCase "handles year boundary correctly" $
-      reflectionTitleTargetDay 0 (fromGregorian 2027 1 1) @?= fromGregorian 2026 12 31
+      reflectionTitleTargetDay (LocalTime (fromGregorian 2027 1 1) (TimeOfDay 0 0 0))
+        @?= fromGregorian 2026 12 31
   ]
 
 stripTitlePrefixesTests :: TestTree

@@ -24,7 +24,7 @@ import qualified Network.HTTP.Client as HTTP
 import Network.HTTP.Types.Status (statusCode)
 import System.Directory (createDirectoryIfMissing, doesDirectoryExist, doesFileExist, listDirectory, removeFile)
 import System.FilePath ((</>), dropExtension)
-import Data.Time (defaultTimeLocale, parseTimeM, getCurrentTime, addDays, localDay, localTimeOfDay, todHour)
+import Data.Time (defaultTimeLocale, parseTimeM, getCurrentTime, addDays)
 
 import Automation.AiBlogLinks (NavLinkResult (..), aiBlogConfig, ensureAllNavLinks, buildReflectionLinks)
 import Automation.AiFiction
@@ -431,13 +431,11 @@ runReflectionTitle context = do
 
   now <- getCurrentTime
   let localNow = toPacificLocalTime now
-      currentHour = todHour (localTimeOfDay localNow)
-      today = localDay localNow
-      targetDay = reflectionTitleTargetDay currentHour today
+      targetDay = reflectionTitleTargetDay localNow
       targetText = formatDay targetDay
       yesterdayText = formatDay (addDays (-1) targetDay)
 
-  logMsg $ "  🕐 Pacific hour: " <> T.pack (show currentHour) <> ", targeting: " <> targetText
+  logMsg $ "  🕐 Pacific time: " <> T.pack (show localNow) <> ", targeting: " <> targetText
 
   todayDone <- tryTitleForDate context targetText
   if todayDone

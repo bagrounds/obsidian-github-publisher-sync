@@ -42,28 +42,28 @@ URL: https://bagrounds.org/ai-blog/2026-04-27-1-premature-reflection-title-midni
 
 ### 🧩 A Pure Guard Function
 
-✨ The fix introduces a new pure function called `reflectionTitleTargetDay` in the `ReflectionTitle` module:
+✨ The fix introduces a new pure function called `reflectionTitleTargetDay` in the `ReflectionTitle` module. 🗓️ It takes the current Pacific `LocalTime` — keeping the day and time of day bundled together — and compares it against the full temporal threshold `TimeOfDay 22 0 0`:
 
-- 🕙 If the current Pacific hour is 22 or 23, use today's date as the target.
-- 🌙 If the current Pacific hour is 0 through 21, use yesterday's date as the target.
+- 🕙 If the current Pacific local time is at or after 10:00 PM, use the current date as the target.
+- 🌙 If the current Pacific local time is before 10:00 PM (we have crossed midnight), use yesterday as the target.
 
-📐 The intuition is simple: the reflection-title task is scheduled to run in the 10 PM to midnight window. 🔄 If it finds itself executing after midnight due to a long-running task sequence, it should still behave as if it is completing work from the previous evening — not starting fresh on the new day.
+📐 The key improvement over the first draft is that hours and dates are no longer separated. 🔗 A bare integer hour divorced from its date is a fragile representation — the new solution compares a full `LocalTime` against a full `TimeOfDay`, which is semantically correct: "is the current Pacific moment on or after today at 10 PM?"
 
 ### 🔬 Pure and Testable
 
-🧪 The function is pure: it takes an integer hour and a Day value and returns a Day value with no side effects. 📋 7 tests cover the key cases including hour 22 and 23 returning today, hours 0 and 1 returning yesterday, hour 21 returning yesterday, and correct handling of month and year boundaries.
+🧪 The function is pure: it takes a `LocalTime` and returns a `Day` with no side effects. 📋 8 tests cover the key cases including 10:00 PM exactly returning today, 10:30 PM returning today, 11:59 PM returning today, midnight exactly returning yesterday, 1:30 AM returning yesterday, 9:59 PM returning yesterday, and correct handling of month and year boundaries.
 
 ### 📊 Updated Task Runner
 
-🔀 The `runReflectionTitle` function in `TaskRunners.hs` now calls `getCurrentTime` and `toPacificLocalTime` to determine the current Pacific hour at execution time, then passes both the hour and the current day to `reflectionTitleTargetDay` to compute the correct target date. 🪵 A new log line reports the Pacific hour and target date, making future debugging easier.
+🔀 The `runReflectionTitle` function in `TaskRunners.hs` now calls `getCurrentTime`, converts to Pacific via `toPacificLocalTime`, and passes the resulting `LocalTime` directly to `reflectionTitleTargetDay` to compute the correct target date. 🪵 A new log line reports the full Pacific local time and target date, making future debugging easier.
 
 ## 📉 Impact Assessment
 
-🕐 The bug caused a single reflection — April twenty-seventh — to receive its creative title approximately twenty-two hours early. 📅 The reflection content at the time was incomplete since most of the day's blog posts, links, and activities had not yet been added. 🎨 This means the generated title was based on incomplete content, not the full day's reflection.
+🕐 The bug caused a single reflection — April 27 — to receive its creative title approximately 22 hours early. 📅 The reflection content at the time was incomplete since most of the day's blog posts, links, and activities had not yet been added. 🎨 This means the generated title was based on incomplete content, not the full day's reflection.
 
 ## 🛡️ Why This Fix Is Reliable
 
-🔒 By checking the Pacific hour at the moment of task execution rather than relying on the scheduler's startup check, the fix is robust to any amount of task-execution delay. 🕐 Even if a run starts at ten PM and somehow doesn't execute reflection-title until two AM, the function will correctly target the previous day. 🔄 The catchup mechanism still works: if April twenty-sixth's reflection was never titled, this after-midnight run will catch it. 🚫 But it will never prematurely title April twenty-seventh's reflection before its intended window.
+🔒 By comparing a full Pacific `LocalTime` against the `22:00:00` threshold at task execution time, the fix is robust to any amount of execution delay. 🕐 Even if a run starts at 10 PM and doesn't execute reflection-title until 2 AM, the function will correctly target the previous day. 🔄 The catchup mechanism still works: if April 26's reflection was never titled, this after-midnight run will catch it. 🚫 But it will never prematurely title April 27's reflection before its intended window.
 
 ## 📚 Book Recommendations
 

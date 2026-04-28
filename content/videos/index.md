@@ -5,10 +5,10 @@ aliases:
 title: 📺 Videos
 URL: https://bagrounds.org/videos
 backlinks: false
-updated: 2026-04-27T21:48:39-07:00
+updated: 2026-04-27T22:01:34-07:00
 ---
 [Home](../index.md)  
-# 📺 Videos (810)  
+# 📺 Videos (811)  
 - [💰🤑🤖💡🚀💲 $0.10 per Month Runs My Entire AI Life. I'll Show You How.](./0-10-month-runs-my-entire-ai-life-ill-show-you-how.md)  
 - [📊📈📉📃👁️ 10 Charts to Understand the 900 Page Budget Bill](./10-charts-to-understand-the-900-page-budget-bill.md)  
 - [🤖🔗⬆️✅ 12-Factor Agents: Patterns of reliable LLM applications — Dex Horthy, HumanLayer](./12-factor-agents-patterns-of-reliable-llm-applications-dex-horthy-humanlayer.md)  
@@ -473,6 +473,7 @@ updated: 2026-04-27T21:48:39-07:00
 - [🏛️🗣️🗓️ Politics Chat, November 18, 2025](./politics-chat-november-18-2025.md)  
 - [🏛️🗣️📅 Politics Chat, October 21, 2025](./politics-chat-october-21-2025.md)  
 - [🏛️🗣️📅 Politics Chat, September 25, 2025](./politics-chat-september-25-2025.md)  
+- [🐘✂️📉 PostgREST Deletes 80% of Your Backend Code](./postgrest-deletes-80-of-your-backend-code.md)  
 - [👨‍⚖️🚫👩🏿‍💼 Power to Fire Lisa Cook? | Explainer](./does-trump-have-the-power-to-fire-lisa-cook-explainer.md)  
 - [Presentation Zen | Garr Reynolds | Talks at Google](./presentation-zen-garr-reynolds-talks-at-google.md)  
 - [👨🏿🗣️🏛️ President Barack Obama in Conversation with Steve Scully | Jefferson Educational Society](./president-barack-obama-in-conversation-with-steve-scully-jefferson-educational-society.md)  

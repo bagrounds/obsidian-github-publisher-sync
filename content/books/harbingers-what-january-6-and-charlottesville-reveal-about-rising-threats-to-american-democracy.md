@@ -6,11 +6,16 @@ URL: https://bagrounds.org/books/harbingers-what-january-6-and-charlottesville-r
 share: true
 affiliate link: https://amzn.to/3SRdP4Q
 link_analysis_model: gemini-3.1-flash-lite-preview
-link_analysis_time: 2026-04-08T00:00:00Z
+link_analysis_time: 2026-04-19T00:00:00Z
 force_analyze_links: false
+link_analysis_version: "2"
+image_date: 2026-04-28T18:43:35Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A stark, high-contrast illustration featuring a weathered, slightly frayed American flag hanging limp against a dark, moody background. In the foreground, fragmented shards of a glass mirror are scattered on a neutral surface; each shard reflects a distorted, monochromatic glimpse of iconic American architecture, such as the silhouette of the U.S. Capitol or a historic town square. A single, thin red thread weaves through the shards, connecting them to emphasize a dangerous, unfolding pattern. The lighting is dramatic and cinematic, utilizing deep shadows and cold, steely blue tones to evoke a sense of urgency, instability, and impending threat, while maintaining a somber, investigative atmosphere.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🇺🇸⚠️ Harbingers: What January 6 and Charlottesville Reveal About Rising Threats to American Democracy  
+![books-harbingers-what-january-6-and-charlottesville-reveal-about-rising-threats-to-american-democracy](../books-harbingers-what-january-6-and-charlottesville-reveal-about-rising-threats-to-american-democracy.jpg)  
 [🛒 Harbingers: What January 6 and Charlottesville Reveal About Rising Threats to American Democracy. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3SRdP4Q)  
   
 ## 📖 Book Report: 📢 Harbingers: What January 6 and Charlottesville Reveal About Rising Threats to American Democracy  

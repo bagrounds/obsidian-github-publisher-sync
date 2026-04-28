@@ -10,9 +10,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-17T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-04-28T19:41:43Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A minimalist, high-contrast illustration featuring a small, simplified silhouette of a young boy in pajamas standing on a vast, empty white background. A single, bold, vibrant purple line curves upward from the tip of a crayon held in the boys hand, gracefully transforming into the outline of a whimsical, towering mountain range and a crescent moon hanging in the air. The style mimics clean, hand-drawn line art, emphasizing the contrast between the stark white negative space and the energetic, fluid motion of the purple crayon strokes. The composition feels open and expansive, capturing the essence of pure, limitless creation.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 👦🟣🖍️ Harold and the Purple Crayon  
+![books-harold-and-the-purple-crayon](../books-harold-and-the-purple-crayon.jpg)  
 [🛒 Harold and the Purple Crayon. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4riOKPh)  
   
 🌙✨ A small boy named Harold embarks on an imaginative journey, drawing his entire world and its challenges with a purple crayon, ultimately navigating back to his own bed.  

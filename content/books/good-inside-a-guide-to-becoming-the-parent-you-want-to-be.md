@@ -10,9 +10,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-17T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-04-28T12:45:32Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A warm, minimalist illustration depicting a parent and child sitting together on a soft rug in a sunlit room. The parent is kneeling at eye level with the child, their hands gently resting on the childs shoulders. Both figures have soft, glowing outlines, representing the good inside concept. The background is a cozy, uncluttered living space with a single potted plant and a bookshelf, emphasizing a calm, safe environment. The color palette features soft earth tones, warm ambers, and gentle greens to evoke a sense of empathy, patience, and emotional connection. The lighting is soft and diffused, creating a peaceful, nurturing atmosphere that highlights the bond between the two figures without any distracting details.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # ❤️👪 Good Inside: A Guide to Becoming the Parent You Want to Be  
+![books-good-inside-a-guide-to-becoming-the-parent-you-want-to-be](../books-good-inside-a-guide-to-becoming-the-parent-you-want-to-be.jpg)  
 [🛒 Good Inside: A Guide to Becoming the Parent You Want to Be. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4pTMPAX)  
   
 ### 🏆 Dr. Becky Kennedy's Good Inside Strategy  

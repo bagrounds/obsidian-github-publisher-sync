@@ -7,11 +7,12 @@ share: true
 CTA: ✨ Explore complexity.
 affiliate link: https://amzn.to/486VNUA
 link_analysis_model: gemini-3.1-flash-lite-preview
-link_analysis_time: 2026-04-11T00:00:00Z
+link_analysis_time: 2026-04-28T00:00:00Z
 force_analyze_links: false
 image_date: 2026-04-28T00:42:56Z
 image_model: "@cf/black-forest-labs/flux-1-schnell"
 image_prompt: A vibrant, digital-art composition centered on a glowing, multi-colored Mandelbrot set. The fractal edges transition seamlessly into a swirling, chaotic strange attractor nebula, with thin, glowing lines weaving through the space like data streams. Overlaying this, a series of transparent, overlapping logarithmic graphs fade into the background, their axes subtly merging with the organic curves of the fractal. The color palette uses deep space blues and purples contrasted with electric cyan and magenta highlights. The composition feels infinite and expansive, with a sense of hidden, mathematical order emerging from a dense, swirling cloud of cosmic dust and light, emphasizing the intersection of natural beauty and rigorous geometric complexity.
+link_analysis_version: "2"
 ---
 [Home](../index.md) > [Books](./index.md)  
 # ♾️〰️📊 Fractals, Chaos, Power Laws: Minutes from an Infinite Paradise  

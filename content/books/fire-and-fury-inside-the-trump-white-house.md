@@ -10,9 +10,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-18T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-04-27T22:30:41Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A dramatic, high-contrast illustration featuring the silhouette of the White House set against a turbulent, stormy sky. Vibrant orange and deep red flames lick the edges of the frame, suggesting a sense of internal combustion and chaos. In the center, a stylized, fractured paper document or manuscript appears to be swirling into the fire, symbolizing leaked information and exposed secrets. The overall color palette uses intense fire tones—amber, crimson, and charcoal gray—to evoke a feeling of volatility, urgency, and political upheaval. The aesthetic is sharp, modern, and editorial, using bold lines and shadow to emphasize the tension and disorder described in the book.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🔥💣💥😡🤬 Fire and Fury: Inside the Trump White House  
+![books-fire-and-fury-inside-the-trump-white-house](../books-fire-and-fury-inside-the-trump-white-house.jpg)  
 [🛒 Fire and Fury: Inside the Trump White House. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/44dqshb)  
   
 ## 📖 Book Report: 🔥 Fire and Fury: Inside the Trump White House  

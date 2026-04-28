@@ -10,9 +10,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-16T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-04-27T22:30:50Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A minimalist composition featuring a stark white, two-dimensional plane viewed from a slight isometric angle. On this flat surface, a collection of simple geometric shapes—a sharp-edged triangle, a square, and a thin, vibrant line—cast long, crisp shadows. Rising abruptly from the center of this flat grid is a translucent, glowing three-dimensional sphere. The sphere appears to intersect the plane, creating a circular refraction where it touches the surface. The background is a deep, architectural indigo, emphasizing the contrast between the flat, rigid world and the ethereal, volumetric intruder. The overall aesthetic is clean, mathematical, and surreal, using sharp lines and soft, ambient light to represent the collision of dimensions.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🗺️❤️📐 Flatland: A Romance of Many Dimensions  
+![books-flatland-a-romance-of-many-dimensions](../books-flatland-a-romance-of-many-dimensions.jpg)  
 [🛒 Flatland: A Romance of Many Dimensions. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/45SL4Mu)  
   
 ## 📖 Book Report: Flatland: A Romance of Many Dimensions  

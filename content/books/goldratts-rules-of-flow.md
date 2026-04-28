@@ -9,11 +9,16 @@ tags:
 affiliate link: https://amzn.to/3Z7Ba5N
 CTA: Optimize flow.
 link_analysis_model: gemini-3.1-flash-lite-preview
-link_analysis_time: 2026-04-08T00:00:00Z
+link_analysis_time: 2026-04-24T00:00:00Z
 force_analyze_links: false
+link_analysis_version: "2"
+image_date: 2026-04-28T11:41:58Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A minimalist, high-contrast illustration depicting a complex, tangled knot of flowing water pipes transitioning into a single, streamlined, smooth-flowing stream. The left side of the image features chaotic, overlapping, and congested pipes in a muted, industrial gray. As these pipes converge toward the right, they merge into a clean, transparent blue conduit representing clarity and efficiency. The background is a crisp, clean white, emphasizing the shift from complexity to order. The composition uses clean geometric lines and a soft, professional aesthetic to symbolize the transition from bad multitasking and local optimization to a singular, optimized global flow.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 📏🌊 Goldratt's Rules of Flow  
+![books-goldratts-rules-of-flow](../books-goldratts-rules-of-flow.jpg)  
 [🛒 Goldratt's Rules of Flow. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3Z7Ba5N)  
   
 ## 🤖 AI Summary  

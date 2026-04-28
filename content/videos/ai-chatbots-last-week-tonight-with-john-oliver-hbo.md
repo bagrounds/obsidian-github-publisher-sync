@@ -9,6 +9,10 @@ Platform:
 Channel: LastWeekTonight
 tags:
 youtube: https://youtu.be/Ykvf3MunGf8
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_version: "2"
+link_analysis_time: 2026-04-27T00:00:00Z
+force_analyze_links: false
 ---
 [Home](../index.md) > [Videos](./index.md)  
 # 🤖💬📺 AI Chatbots: Last Week Tonight with John Oliver (HBO)  
@@ -46,9 +50,9 @@ youtube: https://youtu.be/Ykvf3MunGf8
 * 🕸️ The Age of Surveillance Capitalism by Shoshana Zuboff details how tech companies exploit human experience as free raw material for hidden commercial practices.  
   
 ### 🆚 Contrasting  
-* 🚀 The Coming Wave by Mustafa Suleyman argues that while risks exist, AI and biotechnology represent the greatest opportunity for human advancement if contained correctly.  
-* 💡 Life 3.0 by Max Tegmark explores a variety of future scenarios for AI, including many where the technology helps humanity flourish and solve complex global problems.  
+* 🚀 [🌊🤖🤔 The Coming Wave: Technology, Power, and the 21st Century's Greatest Dilemma](../books/the-coming-wave-technology-power-and-the-21st-centurys-greatest-dilemma.md) by Mustafa Suleyman argues that while risks exist, AI and biotechnology represent the greatest opportunity for human advancement if contained correctly.  
+* 💡 [🧬👥💾 Life 3.0: Being Human in the Age of Artificial Intelligence](../books/life-3-0.md) by Max Tegmark explores a variety of future scenarios for AI, including many where the technology helps humanity flourish and solve complex global problems.  
   
 ### 🎨 Creatively Related  
 * 🔌 Klara and the Sun by Kazuo Ishiguro provides a fictional exploration of the emotional complexities and limitations of an artificial friend designed to prevent loneliness.  
-* 📺 Amusing Ourselves to Death by Neil Postman examines how the medium of our communication shapes our thinking and warns against a culture addicted to trivial entertainment.
+* 📺 [📺💀 Amusing Ourselves to Death: Public Discourse in the Age of Show Business](../books/amusing-ourselves-to-death-public-discourse-in-the-age-of-show-business.md) by Neil Postman examines how the medium of our communication shapes our thinking and warns against a culture addicted to trivial entertainment.

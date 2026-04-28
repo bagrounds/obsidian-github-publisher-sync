@@ -9,9 +9,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-16T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-04-27T19:46:51Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A minimalist, artistic illustration featuring a silhouette of a father figure standing in profile. From his shadow, a complex, intricate network of golden lines extends outward like roots or a constellation, connecting to various historical icons—a crown, a quill, a shield, and a heart. The background is a soft, textured parchment tone, representing the depth of history. The composition is balanced and elegant, using a color palette of deep charcoal, warm gold, and muted cream to evoke a sense of timelessness, authority, and emotional connection. The imagery is abstract and symbolic, focusing on the interplay between the individual and the legacy of his role throughout time.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 👨‍👧‍👦❤️💪 Fatherhood: A History of Love and Power  
+![books-fatherhood-a-history-of-love-and-power](../books-fatherhood-a-history-of-love-and-power.jpg)  
 [🛒 Fatherhood: A History of Love and Power. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4e3NtGg)  
   
 ## 📖 Book Report: 👨‍👧‍👦 Fatherhood: A History of Love and Power  

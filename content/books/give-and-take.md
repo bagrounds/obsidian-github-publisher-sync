@@ -12,9 +12,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-15T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-04-28T09:58:02Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A minimalist, high-contrast illustration centered on a balanced scale. On one side of the scale, a vibrant, glowing gift box sits, representing generosity. On the other side, a polished, golden trophy rests, representing success. The two sides are perfectly level, emphasizing the synergy between giving and achievement. The background is a clean, soft-focus professional office setting with warm, ambient lighting that transitions from a deep teal to a soft amber. Subtle geometric lines connect the two objects, suggesting a flow of energy or network connections. The overall aesthetic is modern, sophisticated, and clean, using a professional color palette of navy, gold, and white to convey a sense of trust and intellectual rigor.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🎁➡️🏆 Give and Take: A Revolutionary Approach to Success  
+![books-give-and-take](../books-give-and-take.jpg)  
 [🛒 Give and Take: A Revolutionary Approach to Success. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3ZCD26X)  
   
 ## 🤖 AI Summary  

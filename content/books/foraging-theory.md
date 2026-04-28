@@ -10,9 +10,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-18T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-04-28T00:42:43Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: "A top-down, minimalist illustration of a stylized forest floor. The scene features a clean, geometric grid overlaying a diverse collection of organic elements: vibrant red mushrooms, wild berries, and fallen leaves. A vintage brass compass rests in the center, its needle pointing toward a cluster of ripe fruit, symbolizing the intersection of navigation and resource acquisition. The color palette is earthy, dominated by deep moss greens, rich browns, and pops of bright, saturated berry red. The lighting is soft and natural, casting gentle shadows that emphasize the texture of the forest floor, creating a sense of calculated, efficient discovery. The overall aesthetic is scientific yet artistic, blending the precision of a map with the raw beauty of nature."
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🧭🍎 Foraging Theory  
+![books-foraging-theory](../books-foraging-theory.jpg)  
 [🛒 Foraging Theory. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3IncZen)  
   
 ## 📖 Book Report: 🌳 Foraging Theory  

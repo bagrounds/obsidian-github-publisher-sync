@@ -9,6 +9,10 @@ Platform:
 Channel: AI Engineer
 tags:
 youtube: https://youtu.be/-QFHIoCo-Ko
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_version: "2"
+link_analysis_time: 2026-04-28T00:00:00Z
+force_analyze_links: false
 ---
 [Home](../index.md) > [Videos](./index.md)  
 # 🤖💻⚙️ Full Walkthrough: Workflow for AI Coding - Matt Pocock  
@@ -42,7 +46,7 @@ youtube: https://youtu.be/-QFHIoCo-Ko
 * 📘 Modern Software Engineering by David Farley focuses on the principles and practices required to manage the complexity of modern development processes.  
   
 ### 🆚 Contrasting  
-* 📙 Clean Code by Robert C. Martin emphasizes method level readability and refactoring prioritizing a human centric codebase approach over agent optimized module depth.  
+* 📙 [🧼💾 Clean Code: A Handbook of Agile Software Craftsmanship](../books/clean-code.md) by Robert C. Martin emphasizes method level readability and refactoring prioritizing a human centric codebase approach over agent optimized module depth.  
 * 📙 The Mythical Man Month by Fred Brooks explores the sociological and organizational challenges of software development that exist regardless of automation levels.  
   
 ### 🎨 Creatively Related  

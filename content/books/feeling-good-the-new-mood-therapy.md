@@ -9,9 +9,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-18T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-04-27T21:31:39Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A minimalist, uplifting illustration featuring a stylized, translucent human head silhouette set against a soft, gradient background transitioning from cool slate blue to a warm, vibrant golden sunrise. Inside the head, a chaotic tangle of dark, jagged, thorny lines representing negative thoughts is being gently untangled and transformed into smooth, luminous, glowing golden threads. A single, stylized plant sprout emerges from the top of the head, symbolizing growth and renewed perspective. The lighting is clean and airy, using a soft-focus aesthetic to evoke clarity, mental lightness, and emotional balance. No sharp edges; the composition focuses on the transition from mental clutter to serene, organized harmony.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 😊👍 Feeling Good: The New Mood Therapy  
+![books-feeling-good-the-new-mood-therapy](../books-feeling-good-the-new-mood-therapy.jpg)  
 [🛒 Feeling Good: The New Mood Therapy. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3Hvk2B0)  
   
 ## 📚 Book Report: 😊 Feeling Good: The New Mood Therapy by David D. Burns  

@@ -5,10 +5,10 @@ aliases:
 title: 📺 Videos
 URL: https://bagrounds.org/videos
 backlinks: false
-updated: 2026-04-27T21:11:44-07:00
+updated: 2026-04-27T21:48:39-07:00
 ---
 [Home](../index.md)  
-# 📺 Videos (809)  
+# 📺 Videos (810)  
 - [💰🤑🤖💡🚀💲 $0.10 per Month Runs My Entire AI Life. I'll Show You How.](./0-10-month-runs-my-entire-ai-life-ill-show-you-how.md)  
 - [📊📈📉📃👁️ 10 Charts to Understand the 900 Page Budget Bill](./10-charts-to-understand-the-900-page-budget-bill.md)  
 - [🤖🔗⬆️✅ 12-Factor Agents: Patterns of reliable LLM applications — Dex Horthy, HumanLayer](./12-factor-agents-patterns-of-reliable-llm-applications-dex-horthy-humanlayer.md)  
@@ -340,6 +340,7 @@ updated: 2026-04-27T21:11:44-07:00
 - [🇺🇸💻💰💥 Inside the Tech Company Powering Trump’s Most Controversial Policies](./inside-the-tech-company-powering-trumps-most-controversial-policies.md)  
 - [👧🏝️💰🏚️ Inside Virginia Giuffre’s Memoir, Trump’s Profits, and the East Wing Demolition](./inside-virginia-giuffres-memoir-trumps-profits-and-the-east-wing-demolition.md)  
 - [👑💰👨‍👦‍👦💥 Investigation delves into the Tate brothers and their connection to the Trump family](./investigation-delves-into-the-tate-brothers-and-their-connection-to-the-trump-family.md)  
+- [🐘⚙️🔄 I replaced my entire stack with Postgres](./i-replaced-my-entire-stack-with-postgres.md)  
 - [🔍🔬🧠 I Researched How To Do Research, Here's What I Learned](./i-researched-how-to-do-research-heres-what-i-learned.md)  
 - [Is Every Civilization Doomed to Fail? - Gregory Aldrete](./is-every-civilization-doomed-to-fail-gregory-aldrete.md)  
 - [🗳️🔓🤔 Is it easy to steal an election?](./is-it-easy-to-steal-an-election.md)  

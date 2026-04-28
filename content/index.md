@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-04-27T11:32:11-07:00
+updated: 2026-04-27T17:32:33-07:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -71,17 +71,17 @@ updated: 2026-04-27T11:32:11-07:00
   
   
 ## [📚 Books](./books/index.md) (960)  
-- [🧪📣🏛️ Science with Impact: How to Engage People, Change Practice, and Influence Policy](./books/science-with-impact-how-to-engage-people-change-practice-and-influence-policy.md)  
-- [🧪🏛️ The Science of Science Policy: A Handbook](./books/the-science-of-science-policy-a-handbook.md)  
-- [🏛️💪 Giving Up Is Unforgivable: A Manual for Keeping a Democracy](./books/giving-up-is-unforgivable-a-manual-for-keeping-a-democracy.md)  
-- [🤖🧩 Patterns of Application Development Using AI](./books/patterns-of-application-development-using-ai.md)  
+- [🤖💻 AI-Powered Developer: Build great software with ChatGPT and Copilot](./books/ai-powered-developer-build-great-software-with-chatgpt-and-copilot.md)  
+- [🃏🎲 Fooled by Randomness: The Hidden Role of Chance in Life and in the Markets](./books/fooled-by-randomness-the-hidden-role-of-chance-in-life-and-in-the-markets.md)  
+- [🌊🧘🏼‍♀️🧠📈 Flow: The Psychology of Optimal Experience](./books/flow-the-psychology-of-optimal-experience.md)  
+- [🧑‍💻🤖 Beyond Vibe Coding: From Coder to AI-Era Developer](./books/beyond-vibe-coding-from-coder-to-ai-era-developer.md)  
   
   
-## [📺 Videos](./videos/index.md) (806)  
-- [🤖⏱️🧠👨‍💻 OpenClaw's Creator Uses AI to Run His Life in 40 Minutes | Peter Steinberger](./videos/how-openclaws-creator-uses-ai-to-run-his-life-in-40-minutes-peter-steinberger.md)  
-- [🧠⚡️💻🚀 ADHD & Software Development: Real Practices That Work w/ Paige Watson | Agile Mentors Podcast](./videos/adhd-software-development-real-practices-that-work-w-paige-watson-agile-mentors-podcast.md)  
-- [🎙️🇺🇸🛥️💥 Brooks and Capehart on the political fallout over Trump's boat strikes](./videos/brooks-and-capehart-on-the-political-fallout-over-trumps-boat-strikes.md)  
-- [❓🕵️‍♂️🇺🇸📉 What’s Happening to U.S. Intelligence Under the Second Trump Administration? | Senator Mark Warner](./videos/whats-happening-to-us-intelligence-under-the-second-trump-administration-senator-mark-warner.md)  
+## [📺 Videos](./videos/index.md) (807)  
+- [🤖💬📺 AI Chatbots: Last Week Tonight with John Oliver (HBO)](./videos/ai-chatbots-last-week-tonight-with-john-oliver-hbo.md)  
+- [🏛️🤕❓ Architect of Obamacare: Health Care Is Still a Mess | The David Frum Show](./videos/architect-of-obamacare-health-care-is-still-a-mess-the-david-frum-show.md)  
+- [🌍❓🤔 Making Sense of a World in Crisis | Yuval Noah Harari](./videos/making-sense-of-a-world-in-crisis-yuval-noah-harari.md)  
+- [🇺🇸🗣️⚖️🗳️ American Conversations: Marc Elias](./videos/american-conversations-marc-elias.md)  
   
   
 ## [🌌 Topics](./topics/index.md) (91)  
@@ -92,10 +92,10 @@ updated: 2026-04-27T11:32:11-07:00
   
   
 ## [📄  Articles](./articles/index.md) (84)  
-- [📈❤️⏱️💪🧘 High Intensity Functional Training Guided by Individualized Heart Rate Variability Results in Similar Health and Fitness Improvements as Predetermined Training with Less Effort](./articles/high-intensity-functional-training-guided-by-individualized-heart-rate-variability-results-in-similar-health-and-fitness-improvements-as-predetermined-training-with-less-effort.md)  
-- [🇷🇺🇺🇸👹🗳️💸 Letters from an American - August 18, 2025](./articles/letters-from-an-american-august-18-2025.md)  
-- [❤️📈🏋️ HRV Guided training](./articles/hrv-guided-training.md)  
-- [🧲🧑‍💻🤖 Magnetic UI: Towards Human In The Loop Agentic Systems](./articles/magentic-ui-towards-human-in-the-loop-agentic-systems.md)  
+- [♊💻🆚 Gemini CLI + VS Code: Native diffing and context-aware workflows](./articles/gemini-cli-+-vs-code-native-diffing-and-context-aware-workflows.md)  
+- [🗣️🧠🧑‍💻📚 Relating Natural Language Aptitude to Individual Differences in Learning Programming Languages](./articles/relating-natural-language-aptitude-to-individual-differences-in-learning-programming-languages.md)  
+- [🤖📢❌ Digital Yard Signs: Analysis of an AI Bot Political Influence Campaign on X](./articles/digital-yard-signs-analysis-of-an-ai-bot-political-influence-campaign-on-x.md)  
+- [📚🧩🤖 Guide Comprehensive RAG Implementation Guide](./articles/comprehensive-rag-implementation-guide.md)  
   
   
 ## [🤖💬 Bot Chats](./bot-chats/index.md) (49)  

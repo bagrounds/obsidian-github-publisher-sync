@@ -10,9 +10,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-17T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-04-28T07:57:21Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: "An isometric 3D illustration featuring a stylized data pipeline flowing through a series of interconnected, translucent geometric blocks. Each block represents a stage of the data lifecycle: a glowing digital source node, a storage vault, a processing gear mechanism, and a final dashboard interface. The composition uses a clean, minimalist aesthetic with a palette of deep navy, electric blue, and soft amber accents. Thin, elegant lines connect these components, symbolizing orchestration and data flow. The background is a subtle, neutral grid pattern, suggesting architectural precision and structural planning. The overall style is professional, modern, and tech-forward, emphasizing the concepts of stability, engineering, and systemic flow without clutter."
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 💾🏗️ Fundamentals of Data Engineering: Plan and Build Robust Data Systems  
+![books-fundamentals-of-data-engineering-plan-and-build-robust-data-systems](../books-fundamentals-of-data-engineering-plan-and-build-robust-data-systems.jpg)  
 [🛒 Fundamentals of Data Engineering: Plan and Build Robust Data Systems. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4ldNGZu)  
   
 ## 📚 Book Report: Fundamentals of Data Engineering  

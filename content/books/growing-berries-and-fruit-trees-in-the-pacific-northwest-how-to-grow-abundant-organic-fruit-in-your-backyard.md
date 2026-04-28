@@ -9,9 +9,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-18T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-04-28T16:45:01Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: "A lush, sun-dappled Pacific Northwest orchard scene. In the foreground, a rustic wooden basket overflows with a vibrant, organic harvest: bright red strawberries, deep blue blueberries, and glossy blackberries. Behind the basket, a young, healthy apple tree stands with its branches laden with ripening fruit. The background features the misty, evergreen-covered hills characteristic of the Pacific Northwest, with soft, natural light filtering through the canopy. The aesthetic is warm, earthy, and inviting, emphasizing a bountiful, home-grown lifestyle with a focus on rich textures like damp soil, mossy bark, and dew-covered fruit skins."
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🍓🌳 Growing Berries and Fruit Trees in the Pacific Northwest: How to Grow Abundant, Organic Fruit in Your Backyard  
+![books-growing-berries-and-fruit-trees-in-the-pacific-northwest-how-to-grow-abundant-organic-fruit-in-your-backyard](../books-growing-berries-and-fruit-trees-in-the-pacific-northwest-how-to-grow-abundant-organic-fruit-in-your-backyard.jpg)  
 [🛒 Growing Berries and Fruit Trees in the Pacific Northwest: How to Grow Abundant, Organic Fruit in Your Backyard. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3Su4QGz)  
   
 ## 🌳 Book Report: 🍓 Growing Berries and 🍎 Fruit Trees in the Pacific Northwest  

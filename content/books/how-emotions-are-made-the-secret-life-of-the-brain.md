@@ -10,9 +10,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-17T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-04-29T03:16:09Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A surreal, artistic representation of a human head in profile, composed of intricate, swirling layers of translucent geometric shapes and flowing light. Inside the cranium, instead of a traditional brain, there is a dynamic, abstract construction of glowing neural pathways and shifting colorful prisms. These pathways branch out toward the edges of the silhouette, blending into the surrounding space as if the mind is actively painting the world into existence. The color palette features deep indigo, vibrant violet, and soft gold highlights, suggesting a blend of biological complexity and psychological wonder. The overall aesthetic is clean, modern, and cerebral, emphasizing the concept of internal construction rather than fixed biology.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🧠🤔 How Emotions Are Made: The Secret Life of the Brain  
+![books-how-emotions-are-made-the-secret-life-of-the-brain](../books-how-emotions-are-made-the-secret-life-of-the-brain.jpg)  
 [🛒 How Emotions Are Made: The Secret Life of the Brain. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3VCEKTq)  
   
 ## 🧠 Book Report: How Emotions Are Made: The Secret Life of the Brain  

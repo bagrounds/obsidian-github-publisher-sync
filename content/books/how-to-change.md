@@ -9,11 +9,16 @@ tags:
 affiliate link: https://amzn.to/3HGbEyo
 CTA: 💪 Master transformation.
 link_analysis_model: gemini-3.1-flash-lite-preview
-link_analysis_time: 2026-04-07T00:00:00Z
+link_analysis_time: 2026-04-21T00:00:00Z
 force_analyze_links: false
+link_analysis_version: "2"
+image_date: 2026-04-29T11:38:40Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A high-angle, minimalist composition featuring a sleek, modern desk surface. On the left side, a simple, unadorned glass jar contains a single, lifelike caterpillar resting on a small twig. On the right side, the jar is open, and a vibrant, detailed butterfly with intricate wing patterns is captured in mid-flight, ascending toward a soft, warm light source. The background is a clean, neutral gradient that transitions from a muted, earthy tone on the left to a bright, optimistic sunrise yellow on the right. The lighting is soft and cinematic, emphasizing the contrast between the static nature of the caterpillar and the dynamic, upward movement of the butterfly, symbolizing transformation and growth through a clean, scientific aesthetic.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🐛➡️🦋 How to Change: The Science of Getting from Where You Are to Where You Want to Be  
+![books-how-to-change](../books-how-to-change.jpg)  
 [🛒 How to Change: The Science of Getting from Where You Are to Where You Want to Be. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3HGbEyo)  
   
 ## 🤖 AI Summary  

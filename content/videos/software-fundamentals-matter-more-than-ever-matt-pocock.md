@@ -9,6 +9,10 @@ Platform:
 Channel: AI Engineer
 tags:
 youtube: https://youtube.com/watch?v=v4F1gFy-hqg
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_version: "2"
+link_analysis_time: 2026-04-29T00:00:00Z
+force_analyze_links: false
 ---
 [Home](../index.md) > [Videos](./index.md)  
 # 💻🏗️🧠 Software Fundamentals Matter More Than Ever - Matt Pocock  

@@ -11,9 +11,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-17T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-04-29T17:42:03Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A minimalist, high-contrast illustration featuring a stylized human silhouette in profile. Within the head, a glowing, intricate network of golden neural pathways converges into a single, sharp, vibrant lens or aperture focused on a distant, solitary point of light. Surrounding the silhouette are abstract, floating geometric shapes—circles, squares, and triangles—representing distinct cognitive resources. Some are being neatly filtered through the aperture, while others drift in the periphery, blurred and out of focus. The color palette uses deep navy and charcoal backgrounds to signify the noise of the environment, contrasted by luminous cyan and amber lines to represent the precision of directed attention. The style is clean, modern, and vector-based, emphasizing the concept of cognitive filtering and mental focus.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🧠🎯👁️💡 Applied Attention Theory  
+![books-human-attention](../books-human-attention.jpg)  
 [🛒 Applied Attention Theory. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/43Vx0Rb)  
   
 ## 🤖 AI Summary  

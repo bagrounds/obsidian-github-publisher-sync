@@ -12,9 +12,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-18T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-04-29T17:41:43Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A vintage 1940s-style wooden radio sits center stage on a dark, textured desk. The radio’s glowing, warm amber dial emits a subtle, distorted light that casts long, dramatic shadows across the room. Emerging from the radio’s speaker mesh is a swirling, ethereal cloud of smoke or ink that transforms into fragmented, abstract silhouettes of soldiers and marching crowds. In the background, a stark contrast is created by a modern, sharp-edged digital glitch effect—representing pixels and binary code—that is slowly unraveling the historical scene. The color palette is composed of deep sepia, charcoal, and muted military greens, punctuated by a single, piercing vein of bright, electric blue light representing the modern information war. The overall atmosphere is tense, intellectual, and noir-inspired.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🏆📰📣 How to Win an Information War: The Propagandist Who Outwitted Hitler  
+![books-how-to-win-an-information-war](../books-how-to-win-an-information-war.jpg)  
 [🛒 How to Win an Information War: The Propagandist Who Outwitted Hitler. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4kLWjL2)  
   
 ## 📖 Book Report: 🏆 How to Win an Information War: 📢 The Propagandist Who Outwitted Hitler  

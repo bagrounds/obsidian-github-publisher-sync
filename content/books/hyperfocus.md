@@ -11,9 +11,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-15T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-04-29T19:45:27Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A clean, minimalist workspace featuring a single, glowing lightbulb suspended above a wooden desk. The light from the bulb creates a sharp, focused cone of illumination on a single open notebook and a high-quality pen, while the surrounding environment fades into a soft, blurred, and slightly desaturated blue-grey haze. Floating in the periphery of the blurred background are subtle, abstract geometric shapes—representing scattered thoughts—that contrast with the crisp, high-contrast clarity of the illuminated workspace. The overall aesthetic is modern, serene, and professional, emphasizing the balance between intense concentration and the vast, soft potential of a wandering mind. The lighting is cinematic, highlighting textures on the desk surface to provide a sense of calm, deliberate productivity.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🎯👓🧠 Hyperfocus: How to Be More Productive in a World of Distraction  
+![books-hyperfocus](../books-hyperfocus.jpg)  
 [🛒 Hyperfocus: How to Be More Productive in a World of Distraction. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4dMMEll)  
   
 ## 🤖 AI Summary  

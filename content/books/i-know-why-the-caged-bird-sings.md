@@ -7,11 +7,16 @@ share: true
 affiliate link: https://amzn.to/46qC80X
 CTA: 🕊️ Empathize with resilience.
 link_analysis_model: gemini-3.1-flash-lite-preview
-link_analysis_time: 2026-04-02T00:00:00Z
+link_analysis_time: 2026-04-22T00:00:00Z
 force_analyze_links: false
+link_analysis_version: "2"
+image_date: 2026-04-29T20:39:14Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A minimalist, evocative illustration featuring a weathered, ornate iron birdcage sitting on a wooden surface. The door of the cage is wide open. Perched just outside the cage is a small, vibrant songbird with its wings partially spread as if ready for flight. Soft, warm sunlight streams from a window, casting a long, gentle shadow across the scene and illuminating floating dust motes in the air. The background is a soft-focus, muted interior, suggesting a quiet home library. The color palette uses deep, earthy tones—mahogany, brass, and charcoal—contrasted by the bright, hopeful plumage of the bird. The style is semi-realistic with a focus on lighting and texture to convey a sense of resilience and newfound freedom.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🔒🐦 I Know Why the Caged Bird Sings  
+![books-i-know-why-the-caged-bird-sings](../books-i-know-why-the-caged-bird-sings.jpg)  
 [🛒 I Know Why the Caged Bird Sings. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/46qC80X)  
   
 ## 📖 Book Report: 🐦 I Know Why the Caged Bird Sings  

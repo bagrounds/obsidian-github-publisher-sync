@@ -11,9 +11,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-16T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-04-29T16:46:27Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A warm, minimalist illustration featuring two stylized figures sitting across from each other at a small, circular wooden table in a sunlit, soft-focus café. Between them sits a single, steaming cup of coffee, symbolizing shared connection. The background is composed of soft, blurred pastel geometric shapes that suggest a comfortable, open environment. A subtle light source originates from above, casting a gentle glow on the figures to emphasize openness and rapport. The color palette relies on warm earth tones—soft amber, muted terracotta, and cream—to evoke a sense of sincerity, empathy, and approachable wisdom. The overall aesthetic is clean, professional, and inviting, focusing on the human element of conversation without any clutter.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🫂🤝🗣️ How To Win Friends And Influence People  
+![books-how-to-win-friends-and-influence-people](../books-how-to-win-friends-and-influence-people.jpg)  
 [🛒 How To Win Friends And Influence People. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3FwV1Vs)  
   
 ## 🤖 AI Summary  

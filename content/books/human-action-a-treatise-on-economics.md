@@ -10,9 +10,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-16T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-04-29T16:46:54Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: An abstract illustration centered on a dynamic network of interconnected, minimalist human silhouettes. These diverse figures, in various poses of interaction and movement, form a complex, organic web that expands upwards and outwards. Subtle lines of energy or connection flow between them, suggesting purposeful action and market interactions. In the background, translucent, glowing geometric forms, like stylized gears or a subtle digital grid, subtly emerge, representing economic mechanisms and rational calculation. A soft, radiant light source emanates from the upper right, casting a warm, optimistic glow over the entire scene, symbolizing prosperity and clarity of insight. The palette blends warm golds and oranges with cool, clear blues and greens, creating a sense of balance and dynamism.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🧑‍🤝‍🧑💰 Human Action: A Treatise on Economics  
+![books-human-action-a-treatise-on-economics](../books-human-action-a-treatise-on-economics.jpg)  
 [🛒 Human Action: A Treatise on Economics. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/48lI1fQ)  
   
 📜💡🌍📈 An analysis of human purposeful action, establishing a comprehensive case for unhampered markets as the sole foundation for rational economic calculation and societal prosperity.  

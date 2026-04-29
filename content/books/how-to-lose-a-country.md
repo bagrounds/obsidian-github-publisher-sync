@@ -11,9 +11,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-15T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-04-29T14:56:54Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: An illustration featuring a grand, classical marble staircase that begins to crumble and morph into a jagged, steep incline as it ascends. At the bottom, the steps are pristine and geometric, representing a stable democracy. As the eye moves upward, the architecture becomes distorted and menacing, with the marble fracturing into sharp, dark shapes. A single, ornate crown sits precariously on the highest, most unstable step, appearing to lose its balance. The background is a stark, high-contrast gradient shifting from a soft, hopeful dawn light at the bottom to a deep, ominous crimson shadow at the top. The overall aesthetic is minimalist and symbolic, utilizing clean lines and a cold, professional color palette to evoke a sense of creeping institutional decay and political fragility.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🏛️➡️👑 How to Lose a Country: The 7 Steps from Democracy to Dictatorship  
+![books-how-to-lose-a-country](../books-how-to-lose-a-country.jpg)  
 [🛒 How to Lose a Country: The 7 Steps from Democracy to Dictatorship. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4km5FNP)  
   
 ## 📖 Book Report: How to Lose a Country  

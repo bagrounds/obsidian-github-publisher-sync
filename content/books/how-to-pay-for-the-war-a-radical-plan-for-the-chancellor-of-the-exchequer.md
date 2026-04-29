@@ -7,11 +7,16 @@ share: true
 CTA: 💰 Fund a better future.
 affiliate link: https://amzn.to/48UVuwS
 link_analysis_model: gemini-3.1-flash-lite-preview
-link_analysis_time: 2026-04-01T00:00:00Z
+link_analysis_time: 2026-04-18T00:00:00Z
 force_analyze_links: false
+link_analysis_version: "2"
+image_date: 2026-04-29T15:48:01Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A high-contrast, stylized illustration featuring a vintage 1940s-style ledger book resting on a dark wooden desk. One half of the page is filled with dense, orderly rows of accounting figures, while the other half transitions into a jagged, abstract depiction of a battlefield with silhouettes of industrial machinery and artillery. A fountain pen lies across the ledger, its ink bleeding into the shape of a downward-trending graph. The color palette is muted, utilizing deep navy, charcoal, and sepia tones, punctuated by a single, sharp accent of metallic gold on the edges of the ledger pages. The lighting is dramatic and moody, casting long, sharp shadows across the desk to emphasize the weight of economic decision-making during a period of conflict.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 💰⚔️ How to pay for the war: a radical plan for the chancellor of the exchequer  
+![books-how-to-pay-for-the-war-a-radical-plan-for-the-chancellor-of-the-exchequer](../books-how-to-pay-for-the-war-a-radical-plan-for-the-chancellor-of-the-exchequer.jpg)  
 [🛒 How to pay for the war: a radical plan for the chancellor of the exchequer. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/48UVuwS)  
   
 💰 A radical plan for wartime finance centered on compulsory saving (deferred pay) and higher taxation to curb inflation, mobilize resources, and prevent post-war depression, rather than relying solely on deficit spending. 📈🛡️  

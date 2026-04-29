@@ -12,9 +12,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-16T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-04-29T15:48:13Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A high-contrast, conceptual illustration featuring a lone, illuminated fountain pen standing upright in the center of a dark, fractured digital landscape. The ground beneath the pen is composed of glowing, interconnected circuit board patterns that shatter into jagged shards as they move toward the edges of the frame. From the tip of the pen, a vibrant, solid beam of light rises upward, piercing through a thick, swirling fog of dark gray binary code and fragmented digital shadows. The style is minimalist and cinematic, using a stark palette of deep charcoal, slate blue, and a singular, piercing golden-white light to represent the struggle between truth and systemic disinformation. The composition emphasizes resilience and clarity amidst a chaotic, crumbling information environment.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 👥⚔️👑 How to Stand Up to a Dictator: The Fight for Our Future  
+![books-how-to-stand-up-to-a-dictator](../books-how-to-stand-up-to-a-dictator.jpg)  
 [🛒 How to Stand Up to a Dictator: The Fight for Our Future. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4kq8ddX)  
   
 ## 📖 Book Report: 📢 How to Stand Up to a Dictator: The Fight for Our Future by Maria Ressa  

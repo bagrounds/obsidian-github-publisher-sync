@@ -12,9 +12,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-18T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-04-29T08:54:35Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: "A clean, minimalist illustration featuring a glowing, stylized human head profile composed of interconnected nodes and glowing golden filaments. Inside the head, symbols representing the core principles float in organized harmony: a small open book, a rising sprout, a compass, and a gear. The background is a soft, deep navy blue, transitioning into a warm amber gradient at the center where the head is positioned. Soft, diffuse light emanates from the center, suggesting enlightenment and cognitive growth. The overall aesthetic is modern, academic, and professional, using a balanced color palette of deep blue, white, and gold to evoke a sense of clarity, intelligence, and scientific discovery."
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🧠📚🍎💡📝 How Learning Works: Eight Research-Based Principles for Smart Teaching  
+![books-how-learning-works](../books-how-learning-works.jpg)  
 [🛒 How Learning Works: Eight Research-Based Principles for Smart Teaching. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3SAmrNa)  
   
 ## 🤖 AI Summary  

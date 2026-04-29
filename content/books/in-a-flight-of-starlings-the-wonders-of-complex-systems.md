@@ -6,9 +6,17 @@ URL: https://bagrounds.org/books/in-a-flight-of-starlings-the-wonders-of-complex
 share: true
 affiliate link: https://amzn.to/4pRxgcO
 CTA: ✨ Explore emergence.
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_time: 2026-04-23T00:00:00Z
+force_analyze_links: false
+link_analysis_version: "2"
+image_date: 2026-04-29T21:35:51Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A high-contrast, artistic illustration of a starling murmuration against a twilight sky. The birds are rendered as thousands of tiny, dark, geometric silhouettes that coalesce into fluid, organic shapes, resembling a living liquid or a nebular cloud. The background features a deep gradient from indigo to soft amber, emphasizing the transition from individual points to a unified, complex collective movement. Subtle, faint mathematical lines or faint, interconnected nodes weave through the flock, suggesting the hidden rules and underlying connections governing their flight. The overall aesthetic is minimalist and elegant, focusing on the beauty of emergent patterns and the transition from chaos to organized, rhythmic complexity.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🐦➕ In a Flight of Starlings: The Wonders of Complex Systems  
+![books-in-a-flight-of-starlings-the-wonders-of-complex-systems](../books-in-a-flight-of-starlings-the-wonders-of-complex-systems.jpg)  
 [🛒 In a Flight of Starlings: The Wonders of Complex Systems. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4pRxgcO)  
   
 ### 🏆 🎉 Giorgio Parisi's Complex Systems Understanding Strategy  

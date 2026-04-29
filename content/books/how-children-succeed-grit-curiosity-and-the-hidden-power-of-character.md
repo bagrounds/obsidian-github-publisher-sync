@@ -10,9 +10,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-18T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-04-29T01:50:21Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A conceptual illustration featuring a small, vibrant green sapling growing directly out of the center of a worn, weathered wooden block puzzle. The puzzle pieces are slightly misaligned, symbolizing the challenges of growth. The scene is set on a clean, light-colored wooden surface with soft, natural morning sunlight streaming in from the side, casting gentle, long shadows. In the background, a soft-focus chalkboard suggests an educational environment without being distracting. The overall color palette uses earthy tones—warm browns, soft creams, and a pop of bright, hopeful green—evoking a sense of organic development, resilience, and the quiet strength required for personal growth. The composition is balanced and minimalist, emphasizing the contrast between the rigid structure of the blocks and the flexible, budding life of the plant.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🧑‍🎓🌱 How Children Succeed: Grit, Curiosity, and the Hidden Power of Character  
+![books-how-children-succeed-grit-curiosity-and-the-hidden-power-of-character](../books-how-children-succeed-grit-curiosity-and-the-hidden-power-of-character.jpg)  
 [🛒 How Children Succeed: Grit, Curiosity, and the Hidden Power of Character. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3VTeEeN)  
   
 ## 📚 Book Report: How Children Succeed: Grit, Curiosity, and the Hidden Power of Character  

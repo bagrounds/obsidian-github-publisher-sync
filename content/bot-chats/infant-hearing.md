@@ -11,6 +11,7 @@ image_date: 2026-04-12T01:41:47Z
 image_model: "@cf/black-forest-labs/flux-1-schnell"
 image_prompt: A soft, warm-toned illustration featuring a peaceful, sleeping newborn baby lying in a crib. A gentle, stylized glow emanates from a small, soft-tipped clinical probe resting near the baby’s ear, symbolizing the screening process. The background uses a soft, dreamlike gradient of pastel blues and warm creams to evoke a sense of clinical comfort and care. Floating in the air around the baby are subtle, translucent geometric sound waves in light gold, representing the auditory pathway. The composition is clean, minimalist, and centered, focusing on the theme of early health monitoring and developmental support through a soft, modern illustrative style.
 link_analysis_version: "2"
+updated: 2026-04-29T05:18:27
 ---
 [Home](../index.md) > [Bot Chats](./index.md)  
 # 👶👂 Infant Hearing  
@@ -182,4 +183,12 @@ While specific individual names of "experts" might fluctuate as research evolves
 📚✅ This list provides a good starting point for exploring the multifaceted world of infant hearing, hearing loss, and deafness. 📅✅ Remember to check publication dates for the most up-to-date information, especially for technology and medical recommendations.  
   
 ## 🐦 Tweet  
-<blockquote class="twitter-tweet" data-theme="dark"><p lang="en" dir="ltr">👶👂 Infant Hearing<br><br>👶 Newborn Care | 👶🗣️ Language Development | 🧪👂 Screening Tools | ⚙️👂 Otoacoustic Emissions | 🧠⚡️ Auditory Brainstem Response | 👨‍⚕️👂 Pediatric Audiology | 🏢🗣️ ASHA | 🌐👶 CDC EHDI | 🍎📚 Educational Practices | 🫶 Deaf Culture<a href="https://t.co/2ALMo3mH2m">https://t.co/2ALMo3mH2m</a></p>&mdash; Bryan Grounds (@bagrounds) <a href="https://twitter.com/bagrounds/status/1937989386328822036?ref_src=twsrc%5Etfw">June 25, 2025</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+<blockquote class="twitter-tweet" data-theme="dark"><p lang="en" dir="ltr">👶👂 Infant Hearing<br><br>👶 Newborn Care | 👶🗣️ Language Development | 🧪👂 Screening Tools | ⚙️👂 Otoacoustic Emissions | 🧠⚡️ Auditory Brainstem Response | 👨‍⚕️👂 Pediatric Audiology | 🏢🗣️ ASHA | 🌐👶 CDC EHDI | 🍎📚 Educational Practices | 🫶 Deaf Culture<a href="https://t.co/2ALMo3mH2m">https://t.co/2ALMo3mH2m</a></p>&mdash; Bryan Grounds (@bagrounds) <a href="https://twitter.com/bagrounds/status/1937989386328822036?ref_src=twsrc%5Etfw">June 25, 2025</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>  
+  
+## 🦋 Bluesky    
+<blockquote class="bluesky-embed" data-bluesky-uri="at://did:plc:i4yli6h7x2uoj7acxunww2fc/app.bsky.feed.post/3mkmdxoij3y2j" data-bluesky-cid="bafyreieljqt2tixdfw2bmzx6kd2z6zaiodizvrk6dlwyqecmsohnvp4ho4"><p>👶👂 Infant Hearing  
+  
+#AI Q: 👶 Which developmental milestones do you find most fascinating to watch during a child&#39;s first year?  
+  
+👶🗣️ Language Development | 🧪👂 Screening Tools | 👂🧠 Auditory Response | 👨‍⚕️👂 Pediatric Audiology  
+https://bagrounds.org/bot-chats/infant-hearing</p>&mdash; <a href="https://bsky.app/profile/did:plc:i4yli6h7x2uoj7acxunww2fc?ref_src=embed">Bryan Grounds (@bagrounds.bsky.social)</a> <a href="https://bsky.app/profile/did:plc:i4yli6h7x2uoj7acxunww2fc/post/3mkmdxoij3y2j?ref_src=embed">2026-04-29T05:18:43.000Z</a></blockquote><script async src="https://embed.bsky.app/static/embed.js" charset="utf-8"></script>

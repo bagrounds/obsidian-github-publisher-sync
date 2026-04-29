@@ -52,6 +52,17 @@
 - **Ordering**: Runs BEFORE `reflection-title` in the same hour 22 slot
 - **Idempotency**: Skips if `## 🤖🐲 AI Fiction` section already exists in today's reflection
 
+## 📅 Fiction Eligibility
+
+🗓️ A reflection note becomes eligible for AI fiction generation at 10 PM Pacific on the day of the reflection. 📋 The cutoff datetime is computed by `fictionEligibilityCutoff`:
+
+```haskell
+fictionEligibilityCutoff :: Day -> LocalTime
+fictionEligibilityCutoff day = LocalTime day (TimeOfDay 22 0 0)
+```
+
+🕐 A reflection on day `D` can receive fiction whenever `currentPacificTime >= fictionEligibilityCutoff D`. This prevents midnight-crossing runs from generating fiction for a new day before 10 PM on that day.
+
 ## ✍️ Fiction Rules
 
 📝 The generated fiction passage follows strict formatting rules:
@@ -95,6 +106,7 @@
 
 | 🔧 Function | 📝 Purpose |
 |---|---|
+| `fictionEligibilityCutoff(day)` | 📅 Returns the `LocalTime` at which a reflection becomes eligible for fiction (10 PM Pacific on that day) |
 | `stripForPrompt(content)` | 🧹 Remove frontmatter and embed/updates sections from reflection content |
 | `reflectionNeedsFiction(content)` | 🛡️ Idempotency check — returns false if `## 🤖🐲 AI Fiction` already exists |
 | `buildFictionPrompt(strippedContent)` | 🧠 Construct structured Gemini prompt with fiction rules and themes |
@@ -124,6 +136,7 @@
 ## 🧪 Testing
 
 🔬 Tests in `haskell/test/Automation/AiFictionTest.hs` covering:
+- 📅 `fictionEligibilityCutoff`: cutoff construction, eligibility semantics (10 PM eligible, before 10 PM not eligible, midnight-crossing eligible)
 - 🧹 `stripForPrompt`: frontmatter removal, embed section removal, updates section removal, content preservation
 - 🛡️ `reflectionNeedsFiction`: detection of existing fiction section, fresh reflections
 - 🧠 `buildFictionPrompt`: prompt structure, fiction rules inclusion, content forwarding

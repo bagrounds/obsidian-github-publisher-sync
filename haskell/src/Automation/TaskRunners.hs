@@ -31,6 +31,7 @@ import Automation.AiFiction
   ( FictionConfig (FictionConfig, fcModels, fcNoteContent)
   , FictionResult (frFiction, frModel, frUpdatedContent)
   , defaultFictionModel
+  , fictionEligibilityCutoff
   , generateFiction
   , reflectionNeedsFiction
   )
@@ -388,42 +389,50 @@ runAiFiction context = do
   let vaultDir = Context.vaultDir context
   logMsg "▶️  ai-fiction"
 
-  today <- todayPacificDay
-  let todayText = formatDay today
+  now <- getCurrentTime
+  let localNow = toPacificLocalTime now
+      today = localDay localNow
 
-  let reflectionsDir = vaultDir </> "reflections"
-      reflectionPath = reflectionsDir </> T.unpack todayText <> ".md"
-
-  exists <- doesFileExist reflectionPath
-  if not exists
+  if localNow < fictionEligibilityCutoff today
     then do
-      logMsg $ "  📭 No reflection for " <> todayText <> ", skipping AI fiction"
-      logMsg "✅ ai-fiction (skipped)"
+      logMsg $ "  ⏳ Pacific time: " <> T.pack (show localNow) <> " — before 10 PM cutoff, skipping ai-fiction"
+      logMsg "✅ ai-fiction (skipped — too early)"
     else do
-      noteContent <- TIO.readFile reflectionPath
-      if not (reflectionNeedsFiction noteContent)
+      let todayText = formatDay today
+
+      let reflectionsDir = vaultDir </> "reflections"
+          reflectionPath = reflectionsDir </> T.unpack todayText <> ".md"
+
+      exists <- doesFileExist reflectionPath
+      if not exists
         then do
-          logMsg $ "  ✅ Reflection " <> todayText <> " already has AI fiction"
-          logMsg "✅ ai-fiction (already done)"
+          logMsg $ "  📭 No reflection for " <> todayText <> ", skipping AI fiction"
+          logMsg "✅ ai-fiction (skipped)"
         else do
-          envModel <- lookupEnvText "FICTION_MODEL"
-          let defaultChain = defaultFictionModel :| [Gemini.Gemini25FlashLite, Gemini.Gemini31FlashLite]
-              models = Gemini.overrideModelChain envModel defaultChain
+          noteContent <- TIO.readFile reflectionPath
+          if not (reflectionNeedsFiction noteContent)
+            then do
+              logMsg $ "  ✅ Reflection " <> todayText <> " already has AI fiction"
+              logMsg "✅ ai-fiction (already done)"
+            else do
+              envModel <- lookupEnvText "FICTION_MODEL"
+              let defaultChain = defaultFictionModel :| [Gemini.Gemini25FlashLite, Gemini.Gemini31FlashLite]
+                  models = Gemini.overrideModelChain envModel defaultChain
 
-          let config = FictionConfig
-                { fcModels = models
-                , fcNoteContent = noteContent
-                }
+              let config = FictionConfig
+                    { fcModels = models
+                    , fcNoteContent = noteContent
+                    }
 
-          result <- generateFiction config (callGeminiForGenerator context)
+              result <- generateFiction config (callGeminiForGenerator context)
 
-          let wordCount = length (T.words (frFiction result))
-          logMsg $ "  🤖🐲 Generated fiction (model=" <> frModel result <> ", " <> T.pack (show wordCount) <> " words)"
+              let wordCount = length (T.words (frFiction result))
+              logMsg $ "  🤖🐲 Generated fiction (model=" <> frModel result <> ", " <> T.pack (show wordCount) <> " words)"
 
-          TIO.writeFile reflectionPath (frUpdatedContent result)
-          logMsg $ "  ✏️  Updated " <> todayText <> ".md with AI fiction"
+              TIO.writeFile reflectionPath (frUpdatedContent result)
+              logMsg $ "  ✏️  Updated " <> todayText <> ".md with AI fiction"
 
-          logMsg "✅ ai-fiction"
+              logMsg "✅ ai-fiction"
 
 runReflectionTitle :: Context.AppContext -> IO ()
 runReflectionTitle context = do

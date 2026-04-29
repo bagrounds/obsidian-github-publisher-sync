@@ -6,10 +6,11 @@ title: 🤖 AI Blog
 URL: https://bagrounds.org/ai-blog/index
 Author: "[[bryan-grounds]]"
 backlinks: false
-updated: 2026-04-27T22:15:55-07:00
+updated: 2026-04-29T07:30:34-07:00
 ---
 [Home](../index.md)  
-# 🤖 AI Blog (171)  
+# 🤖 AI Blog (172)  
+- [2026-04-27 | 🕛 The Midnight Bug: How a Reflection Got Titled Too Early 🤖](./2026-04-27-1-premature-reflection-title-midnight-bug.md)  
 - [2026-04-24 | 🔍 Improving Gemini API Observability 🤖](./2026-04-24-1-rca-gemini-flash-grounding-logs.md)  
 - [2026-04-23 | 🔤 No Abbreviations in Haskell: A Boy-Scout Refactor 🧹](./2026-04-23-1-haskell-no-abbreviations-refactor.md)  
 - [2026-04-22 | 🌐 Gemini: Search Grounded Response Links 🔍](./2026-04-22-1-gemini-grounding-source-links.md)  

@@ -10,9 +10,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-14T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-04-29T08:54:55Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A split-composition illustration depicting the evolution of American power. On the left, a faded, sepia-toned silhouette of a 19th-century plantation landscape with rows of cotton fields under a heavy, stormy sky. As the eye moves toward the right, the scene transitions into a sharp, modern-day landscape of the American West, featuring stark, towering oil derricks and vast, arid plains. In the center, a worn, tattered American flag transitions from a traditional design into a sleek, metallic, and rigid geometric pattern, symbolizing the transformation of democratic ideals into an oligarchic structure. The color palette shifts from earthy, muted tones on the left to high-contrast, cold, and metallic blues and greys on the right, highlighting the tension between historical legacy and contemporary political power.
 ---
 [Home](../index.md) > [Books](./index.md) | [🏛️🇺🇸📖 Heather Cox Richardson](../people/heather-cox-richardson.md)  
 # 🇺🇲⚔️ How the South Won the Civil War: Oligarchy, Democracy, and the Continuing Fight for the Soul of America  
+![books-how-the-south-won-the-civil-war-oligarchy-democracy-and-the-continuing-fight-for-the-soul-of-america](../books-how-the-south-won-the-civil-war-oligarchy-democracy-and-the-continuing-fight-for-the-soul-of-america.jpg)  
 [🛒 How the South Won the Civil War: Oligarchy, Democracy, and the Continuing Fight for the Soul of America. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3WDO8qn)  
   
 ⚔️💸🇺🇸 Despite the Union's military victory, the South's oligarchic, anti-democratic ideology of white male supremacy spread west after the Civil War, ultimately shaping American politics and society through today's conservative movement.  

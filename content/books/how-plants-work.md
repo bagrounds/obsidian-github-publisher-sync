@@ -11,9 +11,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-19T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-04-29T07:50:05Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A cross-section illustration of a vibrant, healthy plant, split between the surface and the soil. Above ground, translucent, glowing veins highlight the structure of a lush green leaf, capturing the movement of light and energy. Below the surface, the complex, intricate root system is rendered in fine, scientific detail, branching into rich, textured soil. Tiny, stylized diagrams of cellular structures and water molecules float subtly around the roots, representing the invisible chemical processes at work. The aesthetic is a blend of botanical illustration and modern scientific diagram, using a palette of deep forest greens, earthy browns, and soft, ethereal light to evoke a sense of wonder and intellectual discovery. The background is a clean, muted parchment texture to keep the focus on the biological elegance of the plant.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🌿🔬 How Plants Work: The Science Behind the Amazing Things Plants Do  
+![books-how-plants-work](../books-how-plants-work.jpg)  
 [🛒 How Plants Work: The Science Behind the Amazing Things Plants Do. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3HAzxYa)  
   
 ## 📚 Book Report: 🪴 How Plants Work: The Science Behind the Amazing Things Plants Do  

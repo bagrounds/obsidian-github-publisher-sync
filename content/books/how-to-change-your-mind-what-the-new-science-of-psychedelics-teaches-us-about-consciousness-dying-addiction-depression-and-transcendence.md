@@ -9,9 +9,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-17T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-04-29T10:45:03Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: An ethereal, double-exposed illustration blending human anatomy with the natural world. On the left, a detailed, translucent profile of a human head glows with an intricate network of glowing, neural pathways resembling tree roots. On the right, these neural branches transition seamlessly into the sprawling, crystalline gills of a glowing mushroom. The background is a soft, deep gradient—shifting from a dark, grounding charcoal at the bottom to a vibrant, ethereal violet and gold at the top, suggesting the transition from the physical brain to the expanded consciousness of a mystical experience. The art style is clean and modern, using fine, geometric line work to represent the Default Mode Network dissolving into organic, fluid shapes.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🧠🍄 How to Change Your Mind: What the New Science of Psychedelics Teaches Us About Consciousness, Dying, Addiction, Depression, and Transcendence  
+![books-how-to-change-your-mind-what-the-new-science-of-psychedelics-teaches-us-about-consciousness-dying-addiction-depression-and-transcendence](../books-how-to-change-your-mind-what-the-new-science-of-psychedelics-teaches-us-about-consciousness-dying-addiction-depression-and-transcendence.jpg)  
 [🛒 How to Change Your Mind: What the New Science of Psychedelics Teaches Us About Consciousness, Dying, Addiction, Depression, and Transcendence. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4kFyVyO)  
   
 ## 📖 Book Report: How to Change Your Mind  

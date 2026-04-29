@@ -10,9 +10,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-16T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-04-29T13:44:20Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A high-angle, minimalist illustration featuring a single, vibrant green fern growing through a crack in a smooth, gray concrete floor. Beside the plant lies a discarded, dark-screened smartphone, partially obscured by a soft, dappled shadow cast from an unseen tree branch overhead. The lighting is natural and warm, suggesting a quiet afternoon in a sun-drenched courtyard. The composition emphasizes the contrast between the rigid, sterile geometry of the urban environment and the organic, unhurried growth of nature. The color palette is muted, dominated by cool grays and earthy tones, punctuated only by the deep, lively green of the plant, symbolizing a deliberate shift in focus from digital noise to the immediate, physical world.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 📵 How to Do Nothing: Resisting the Attention Economy  
+![books-how-to-do-nothing-resisting-the-attention-economy](../books-how-to-do-nothing-resisting-the-attention-economy.jpg)  
 [🛒 How to Do Nothing: Resisting the Attention Economy. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3UbwpW0)  
   
 ## 📢 A Stand Against the Noise: A Report on How to Do Nothing  

@@ -10,9 +10,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-14T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-04-29T00:45:10Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A peaceful, high-angle shot of a baby sleeping soundly in a minimalist wooden crib. The room is bathed in a soft, warm amber glow, reminiscent of a low-intensity red nightlight. Beside the crib, a small, modern bedside lamp emits a gentle, diffused light. The background features clean, neutral tones with soft textures like a muslin swaddle or a knitted blanket, evoking a serene and calm atmosphere. The composition is balanced and airy, emphasizing comfort, safety, and the science of healthy sleep environments, with no clutter to distract from the tranquil scene.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 👶😴 How Babies Sleep: The Gentle, Science-Based Method to Help Your Baby Sleep Through the Night  
+![books-how-babies-sleep-the-gentle-science-based-method-to-help-your-baby-sleep-through-the-night](../books-how-babies-sleep-the-gentle-science-based-method-to-help-your-baby-sleep-through-the-night.jpg)  
 [🛒 How Babies Sleep: The Gentle, Science-Based Method to Help Your Baby Sleep Through the Night. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3KnIgil)  
   
 ## 🤖 AI Summary  

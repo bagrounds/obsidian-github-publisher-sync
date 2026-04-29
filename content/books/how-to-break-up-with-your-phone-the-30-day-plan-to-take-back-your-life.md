@@ -10,9 +10,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-16T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-04-29T09:51:25Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A clean, minimalist workspace featuring a wooden desk bathed in soft, natural morning sunlight. In the center, a smartphone lies face down, disconnected from its charger. Next to it, a ceramic cup of coffee sends up a gentle wisp of steam, and a simple, open notebook with a pen rests nearby. The background is slightly blurred, showing a hint of a green houseplant, symbolizing a return to the physical world. The color palette is warm, earthy, and serene, emphasizing a sense of calm, intentionality, and freedom from digital distraction. The composition is balanced and airy, evoking a feeling of reclaiming one’s time and mental space.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 📱💔 How to Break Up with Your Phone: The 30-Day Plan to Take Back Your Life  
+![books-how-to-break-up-with-your-phone-the-30-day-plan-to-take-back-your-life](../books-how-to-break-up-with-your-phone-the-30-day-plan-to-take-back-your-life.jpg)  
 [🛒 How to Break Up with Your Phone: The 30-Day Plan to Take Back Your Life. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3J8wcAP)  
   
 ### 🏆 Catherine Price's How to Break Up with Your Phone Cheat Sheet  

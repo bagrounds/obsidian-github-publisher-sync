@@ -11,9 +11,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-18T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-04-29T05:16:56Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A stylized, high-contrast isometric illustration featuring a glowing, multi-layered digital pyramid structure floating above a sleek, dark-themed workspace. The base of the pyramid consists of thousands of tiny, organized blocks representing unit tests, transitioning upward into streamlined, interconnected nodes for integration and end-to-end testing. A magnifying glass icon hovers over the structure, casting a soft, data-blue light onto a minimalist computer monitor nearby. Faint, ethereal lines of binary code flow through the air like digital circuitry, connecting the testing infrastructure to a central, glowing hub. The color palette uses deep navy, electric cyan, and clean white, evoking a sense of precision, scalability, and high-tech engineering excellence. The background is a clean, dark gradient that emphasizes the luminous, technical elements.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 💻🔍✅ Google Tests Software  
+![books-how-google-tests-software](../books-how-google-tests-software.jpg)  
 [🛒 How Google Tests Software. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3HoCkUh)  
   
 ## 🤖 AI Summary  

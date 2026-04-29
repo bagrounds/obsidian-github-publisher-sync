@@ -11,9 +11,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-16T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-04-29T07:49:47Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A minimalist, high-contrast illustration featuring a chaotic tangle of scribbled, complex equations and messy data lines in the background. In the foreground, a single, sharp, glowing geometric shape—such as a perfect golden ratio spiral or a clean, illuminated triangle—cuts through the disorder, acting as a lens. Through this shape, the chaotic lines behind it are reorganized into a structured, clear, and perfectly aligned grid pattern. The color palette uses deep navy and charcoal for the chaos, with vibrant, electric cyan or gold for the geometric lens, symbolizing the clarity and order that mathematical thinking brings to a confusing world.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🚫❌🧮💭 How Not to Be Wrong: The Power of Mathematical Thinking  
+![books-how-not-to-be-wrong](../books-how-not-to-be-wrong.jpg)  
 [🛒 How Not to Be Wrong: The Power of Mathematical Thinking. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3JubPOW)  
   
 ## 🤖 AI Summary  

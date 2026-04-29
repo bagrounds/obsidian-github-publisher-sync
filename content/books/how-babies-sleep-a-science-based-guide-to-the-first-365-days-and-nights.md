@@ -10,9 +10,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-16T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-04-29T00:45:00Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A peaceful, top-down view of a sleeping infant nestled in a minimalist, neutral-toned crib. The baby is swaddled in soft, organic cotton fabric. Surrounding the crib, subtle, stylized line-art diagrams of a circadian clock and soft, glowing moon phases are integrated into the bedding’s pattern, symbolizing the intersection of biology and nature. The color palette is composed of calming, muted earth tones—warm beige, soft sage, and gentle cream—creating a serene, scientific, yet deeply cozy atmosphere. Soft, diffused moonlight filters into the room, casting gentle, natural shadows that emphasize a sense of quiet, nighttime rest. The overall aesthetic is modern, clean, and evidence-based, avoiding clutter to evoke a feeling of calm and parental confidence.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 👶😴 How Babies Sleep: A Science-Based Guide to the First 365 Days and Nights  
+![books-how-babies-sleep-a-science-based-guide-to-the-first-365-days-and-nights](../books-how-babies-sleep-a-science-based-guide-to-the-first-365-days-and-nights.jpg)  
 [🛒 How Babies Sleep: A Science-Based Guide to the First 365 Days and Nights. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/48qs2gx)  
   
 ## 🤖 AI Summary  

@@ -11,7 +11,7 @@ link_analysis_time: 2026-04-28T00:00:00Z
 force_analyze_links: false
 updated: 2026-04-28T16:04:02
 ---
-[Home](../index.md) > [📰 The Noise](./index.md) | [⏮️](./2026-04-27-persistent-tensions-accelerating-horizons.md)  
+[Home](../index.md) > [📰 The Noise](./index.md) | [⏮️](./2026-04-27-persistent-tensions-accelerating-horizons.md) [⏭️](./2026-04-29-shifting-sands-enduring-currents.md)  
 # 2026-04-28 | 📰 Global Currents, Echoing Futures 📰  
   
 # Global Currents, Echoing Futures  
@@ -54,7 +54,7 @@ updated: 2026-04-28T16:04:02
   
 ### [⏮️](./2026-04-22-the-dual-engine-of-progress-and-conflict.md) The Dual Engine of Progress and Conflict (2026-04-22)  
   
-[Home](../index.md) > [📰 The Noise](./index.md) | [⏮️](./2026-04-21-the-dual-engine-of-progress-and-conflict.md) [⏭️](./2026-04-23-global-currents-echoing-futures.md)  
+[Home](../index.md) > [📰 The Noise](./index.md) | [⏮️](./2026-04-21-the-dual-engine-of-progress-and-conflict.md) [⏭️](./2026-04-29-shifting-sands-enduring-currents.md)  
 # 2026-04-22 | 📰 The Dual Engine of Progress and Conflict 📰  
 ![the-noise-2026-04-22-the-dual-engine-of-progress-and-conflict](../the-noise-2026-04-22-the-dual-engine-of-progress-and-conflict.jpg)  
   
@@ -98,7 +98,7 @@ updated: 2026-04-28T16:04:02
   
 ### [⏮️](./2026-04-21-the-dual-engine-of-progress-and-conflict.md) The Dual Engine of Progress and Conflict (2026-04-21)  
   
-[Home](../index.md) > [📰 The Noise](./index.md) | [⏮️](./2026-04-20-shifting-sands-enduring-currents.md) [⏭️](./2026-04-22-the-dual-engine-of-progress-and-conflict.md)  
+[Home](../index.md) > [📰 The Noise](./index.md) | [⏮️](./2026-04-20-shifting-sands-enduring-currents.md) [⏭️](./2026-04-29-shifting-sands-enduring-currents.md)  
 # 2026-04-21 | 📰 The Dual Engine of Progress and Conflict 📰  
 ![the-noise-2026-04-21-the-dual-engine-of-progress-and-conflict](../the-noise-2026-04-21-the-dual-engine-of-progress-and-conflict.jpg)  
   

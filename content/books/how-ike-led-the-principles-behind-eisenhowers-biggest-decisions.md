@@ -6,11 +6,16 @@ URL: https://bagrounds.org/books/how-ike-led-the-principles-behind-eisenhowers-b
 share: true
 affiliate link: https://amzn.to/4dOJKMN
 link_analysis_model: gemini-3.1-flash-lite-preview
-link_analysis_time: 2026-04-06T00:00:00Z
+link_analysis_time: 2026-04-20T00:00:00Z
 force_analyze_links: false
+link_analysis_version: "2"
+image_date: 2026-04-29T07:03:45Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A minimalist, high-contrast illustration features a crisp, stylized silhouette of a classic military-style commander’s cap resting atop a wooden chess board. One chess piece, a knight, stands prominently in the center, casting a long, deliberate shadow that morphs into the faint outline of the U.S. Capitol dome. The color palette is muted and professional, utilizing deep navy, slate gray, and a touch of warm parchment gold. The background is a soft, textured off-white, suggesting a historical document or a map. The composition is balanced and clean, emphasizing themes of strategic foresight, disciplined leadership, and the intersection of military duty and political governance.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🇺🇸🪖♟️🔍⚖️🕊️🤝 How Ike Led: The Principles Behind Eisenhower's Biggest Decisions  
+![books-how-ike-led-the-principles-behind-eisenhowers-biggest-decisions](../books-how-ike-led-the-principles-behind-eisenhowers-biggest-decisions.jpg)  
 [🛒 How Ike Led: The Principles Behind Eisenhower's Biggest Decisions. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4dOJKMN)  
   
 ## 📖 Book Report: How Ike Led: The Principles Behind Eisenhower's Biggest Decisions  

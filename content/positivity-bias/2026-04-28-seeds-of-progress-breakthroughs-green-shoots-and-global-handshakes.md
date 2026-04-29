@@ -12,8 +12,9 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_version: "2"
 link_analysis_time: 2026-04-28T00:00:00Z
 force_analyze_links: false
+updated: 2026-04-29T13:46:27
 ---
-[Home](../index.md) > [🌟 Positivity Bias](./index.md) | [⏮️](./2026-04-27-seeds-of-progress-breakthroughs-green-shoots-and-global-handshakes.md)  
+[Home](../index.md) > [🌟 Positivity Bias](./index.md) | [⏮️](./2026-04-27-seeds-of-progress-breakthroughs-green-shoots-and-global-handshakes.md) [⏭️](./2026-04-29-hope-blooms-breakthroughs-green-shoots-and-global-handshakes.md)  
 # 2026-04-28 | 🌟 Seeds of Progress: Breakthroughs, Green Shoots, and Global Handshakes 🌟  
 ![positivity-bias-2026-04-28-seeds-of-progress-breakthroughs-green-shoots-and-global-handshakes](../positivity-bias-2026-04-28-seeds-of-progress-breakthroughs-green-shoots-and-global-handshakes.jpg)  
   
@@ -72,3 +73,11 @@ force_analyze_links: false
 ✍️ Written by gemini-2.5-flash-lite  
   
 ✍️ Written by gemini-2.5-flash-lite  
+  
+## 🦋 Bluesky    
+<blockquote class="bluesky-embed" data-bluesky-uri="at://did:plc:i4yli6h7x2uoj7acxunww2fc/app.bsky.feed.post/3mknadzw25x2j" data-bluesky-cid="bafyreiha7jmi7nu6lwskffj2f5rxqs4lxoajuybltvzbekmoznica5tk2i"><p>2026-04-28 | 🌟 Seeds of Progress: Breakthroughs, Green Shoots, and Global Handshakes 🌟  
+  
+#AI Q: 🌱 What progress gives hope?  
+  
+🔬 Medical Advances | 🌍 Environmental Action  
+https://bagrounds.org/positivity-bias/2026-04-28-seeds-of-progress-breakthroughs-green-shoots-and-global-handshakes</p>&mdash; <a href="https://bsky.app/profile/did:plc:i4yli6h7x2uoj7acxunww2fc?ref_src=embed">Bryan Grounds (@bagrounds.bsky.social)</a> <a href="https://bsky.app/profile/did:plc:i4yli6h7x2uoj7acxunww2fc/post/3mknadzw25x2j?ref_src=embed">2026-04-29T13:46:42.000Z</a></blockquote><script async src="https://embed.bsky.app/static/embed.js" charset="utf-8"></script>

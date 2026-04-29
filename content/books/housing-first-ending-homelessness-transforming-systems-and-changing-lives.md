@@ -7,11 +7,16 @@ share: true
 CTA: 🏠 End homelessness.
 affiliate link: https://amzn.to/4qpw4Nk
 link_analysis_model: gemini-3.1-flash-lite-preview
-link_analysis_time: 2026-04-07T00:00:00Z
+link_analysis_time: 2026-04-22T00:00:00Z
 force_analyze_links: false
+link_analysis_version: "2"
+image_date: 2026-04-28T23:29:21Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A warm, minimalist illustration featuring a single, sturdy front door standing independently in the middle of a soft, sunlit meadow. The door is slightly ajar, casting a welcoming, golden glow from within onto the grass. Above the door, a small, stylized house icon floats gently. The scene uses a soft, optimistic color palette of sage greens, sky blues, and warm amber light. The composition is clean and uncluttered, emphasizing a sense of stability, dignity, and a fresh start. The background fades into a soft focus, keeping the focus entirely on the inviting doorway as a symbol of foundation and transition.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🏠⬆️ Housing First: Ending Homelessness, Transforming Systems, and Changing Lives  
+![books-housing-first-ending-homelessness-transforming-systems-and-changing-lives](../books-housing-first-ending-homelessness-transforming-systems-and-changing-lives.jpg)  
 [🛒 Housing First: Ending Homelessness, Transforming Systems, and Changing Lives. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4qpw4Nk)  
   
 🏡🔑💖 An evidence-based argument for prioritizing immediate, unconditional housing as the foundational solution to homelessness, demonstrating its efficacy in improving individual outcomes and achieving systemic change.  

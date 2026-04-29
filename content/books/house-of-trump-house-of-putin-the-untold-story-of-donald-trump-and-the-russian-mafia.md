@@ -10,9 +10,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-15T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-04-28T23:29:05Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A cinematic, split-composition illustration rendered in a dark, moody noir style. On the left, the golden, opulent facade of a skyscraper looms against a stormy, deep-blue sky. On the right, the silhouette of a stark, brutalist Kremlin-style fortress emerges from a dense, swirling red fog. Connecting the two structures is a complex, tangled web of dark, metallic chains that weave through the clouds, resembling a spider’s web. In the shadows between the buildings, subtle, ghostly outlines of chess pieces—a knight and a king—are partially obscured by the shifting mist. The color palette is dominated by sharp contrasts of gold, blood red, and ink black, creating an atmosphere of secrecy, high-stakes corruption, and geopolitical tension.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🏛️👹🇺🇸🏰👹🇷🇺 House of Trump, House of Putin: The Untold Story of Donald Trump and the Russian Mafia  
+![books-house-of-trump-house-of-putin-the-untold-story-of-donald-trump-and-the-russian-mafia](../books-house-of-trump-house-of-putin-the-untold-story-of-donald-trump-and-the-russian-mafia.jpg)  
 [🛒 House of Trump, House of Putin: The Untold Story of Donald Trump and the Russian Mafia. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/40jb28x)  
   
 ## 📖 Book Report: 🏠 House of Trump, 🇷🇺 House of Putin by Craig Unger  

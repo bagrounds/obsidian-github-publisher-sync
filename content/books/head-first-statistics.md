@@ -8,11 +8,16 @@ Author:
 tags:
 affiliate link: https://amzn.to/4jzIcaU
 link_analysis_model: gemini-3.1-flash-lite-preview
-link_analysis_time: 2026-04-09T00:00:00Z
+link_analysis_time: 2026-04-24T00:00:00Z
 force_analyze_links: false
+link_analysis_version: "2"
+image_date: 2026-04-28T19:41:54Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: "A vibrant, whimsical illustration featuring a glowing, stylized human brain floating in the center. The brain is integrated with colorful statistical elements: a translucent bell curve glowing in soft blue, floating 3D bar charts, and scattered dice that appear to be hovering in mid-air. Lines of neon-colored data points and mathematical symbols swirl around the brain like a nebula. The background is a clean, minimalist off-white, allowing the bright, playful colors of the data visualizations—citrus oranges, teals, and magenta—to pop. The overall aesthetic is clean, modern, and educational, suggesting a friendly and approachable way to master complex data, with a soft, diffused light source that gives the scene a sense of intellectual energy and clarity."
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🧠🤓📈💡 Head First Statistics: A Brain-Friendly Guide  
+![books-head-first-statistics](../books-head-first-statistics.jpg)  
 [🛒 Head First Statistics: A Brain-Friendly Guide. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4jzIcaU)  
   
 ## 🤖 AI Summary  

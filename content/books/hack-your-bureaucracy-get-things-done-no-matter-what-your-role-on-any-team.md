@@ -9,9 +9,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-19T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-04-28T16:45:51Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A high-angle, minimalist illustration showing a complex, tangled maze of thick, dark gray pipes and gears filling the frame. Amidst this rigid, industrial structure, a single, vibrant yellow paperclip is being used as a makeshift tool to bridge a gap between two disconnected gears. The lighting is clean and modern, casting sharp shadows that emphasize the dense, overwhelming nature of the machinery. The composition focuses on the contrast between the massive, immobile bureaucracy—represented by the heavy metallic pipes—and the small, agile, and ingenious intervention of the paperclip, symbolizing the hack that restores momentum to the system. The color palette is restricted to cool slate grays and deep shadows, punctuated only by the bright, hopeful pop of the yellow paperclip.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # ⚙️🏢 Hack Your Bureaucracy: Get Things Done No Matter What Your Role on Any Team  
+![books-hack-your-bureaucracy-get-things-done-no-matter-what-your-role-on-any-team](../books-hack-your-bureaucracy-get-things-done-no-matter-what-your-role-on-any-team.jpg)  
 [🛒 Hack Your Bureaucracy: Get Things Done No Matter What Your Role on Any Team. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3T3FwHv)  
   
 ## 📚 Book Report: Hack Your Bureaucracy  

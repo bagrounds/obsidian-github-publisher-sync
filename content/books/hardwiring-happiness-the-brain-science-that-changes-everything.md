@@ -11,9 +11,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-18T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-04-28T18:43:45Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A minimalist, high-contrast illustration of a human silhouette facing profile. Inside the silhouette, the brain is represented as a glowing, intricate network of golden neural pathways that resemble a branching tree or a circuit board. Small, radiant sparks of light are traveling along these pathways, suggesting active connections being formed. The background is a deep, calming navy blue, fading into a soft, warm amber glow around the head area, symbolizing the internalization of positive experiences. The overall aesthetic is clean, modern, and serene, emphasizing the concept of neuroplasticity—the idea of literally rewiring the mind for a more optimistic and resilient state.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🔌😁🧠🔬 Hardwiring Happiness: The New Brain Science of Contentment, Calm, and Confidence  
+![books-hardwiring-happiness-the-brain-science-that-changes-everything](../books-hardwiring-happiness-the-brain-science-that-changes-everything.jpg)  
 [🛒 Hardwiring Happiness: The New Brain Science of Contentment, Calm, and Confidence. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/45LixIK)  
   
 ## 🤖 AI Summary  

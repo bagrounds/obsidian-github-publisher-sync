@@ -7,11 +7,16 @@ share: true
 affiliate link: https://amzn.to/4gQB362
 CTA: 🚀 Cultivate excellence.
 link_analysis_model: gemini-3.1-flash-lite-preview
-link_analysis_time: 2026-04-02T00:00:00Z
+link_analysis_time: 2026-04-18T00:00:00Z
 force_analyze_links: false
+link_analysis_version: "2"
+image_date: 2026-04-28T22:33:27Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A minimalist, high-contrast illustration featuring a stylized, ascending staircase made of glowing geometric blocks that vanish into a bright, golden horizon. At the base of the stairs, a single, bold silhouette stands poised in a confident, forward-leaning posture. The color palette uses deep navy and charcoal for the background to represent focus, contrasted with vibrant gold and electric blue accents that symbolize energy, clarity, and breakthrough performance. Subtle, abstract light rays emanate from the top of the stairs, suggesting upward momentum and the pursuit of excellence. The overall composition is clean, modern, and aspirational, conveying the concept of deliberate growth and peak achievement without the use of any text.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 📈🌟 High Performance Habits: How Extraordinary People Become That Way  
+![books-high-performance-habits-how-extraordinary-people-become-that-way](../books-high-performance-habits-how-extraordinary-people-become-that-way.jpg)  
 [🛒 High Performance Habits: How Extraordinary People Become That Way. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4gQB362)  
   
 ### 🏆 Brendon Burchard's High Performance Habits  

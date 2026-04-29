@@ -10,8 +10,9 @@ Channel: Heather Cox Richardson
 tags:
 youtube: https://www.youtube.com/embed/E-eP-Ac_2Mk
 link_analysis_model: gemini-3.1-flash-lite-preview
-link_analysis_time: 2026-04-11T00:00:00Z
+link_analysis_time: 2026-04-28T00:00:00Z
 force_analyze_links: false
+link_analysis_version: "2"
 ---
 [Home](../index.md) > [Videos](./index.md) | [🏛️🇺🇸📖 Heather Cox Richardson](../people/heather-cox-richardson.md)  
 # 🏛️🗣️🗓️ Politics Chat, November 13, 2025  
@@ -55,7 +56,7 @@ force_analyze_links: false
 * 💰 Griftopia Bubble Machines Vampire Squids and the Long Con That Is Breaking America by Matt Taibbi. 🏦 Details institutional corruption and the financialization of the American economy, echoing the video's theme of entitled privilege for a very few.  
   
 ### 🆚 Contrasting  
-* 🏛️ The Conservative Sensibility by George F. Will. 💭 Provides a framework for American governance rooted in the principles of the Western political tradition, contrasting with the political chaos described in the video.  
+* 🏛️ [🐘🧠 The Conservative Sensibility by George F. Will](../books/the-conservative-sensibility.md). 💭 Provides a framework for American governance rooted in the principles of the Western political tradition, contrasting with the political chaos described in the video.  
 * 💫 The Myth of Left and Right by Hyrum Lewis and Verlan Lewis. 💡 Argues that the traditional political spectrum is inadequate and often mischaracterizes American political conflict, offering an alternative view of modern political hostility.  
   
 ### 🎨 Creatively Related  

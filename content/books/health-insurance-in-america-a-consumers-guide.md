@@ -6,11 +6,16 @@ URL: https://bagrounds.org/books/health-insurance-in-america-a-consumers-guide
 share: true
 affiliate link: https://amzn.to/3Swd0hy
 link_analysis_model: gemini-3.1-flash-lite-preview
-link_analysis_time: 2026-04-10T00:00:00Z
+link_analysis_time: 2026-04-25T00:00:00Z
 force_analyze_links: false
+link_analysis_version: "2"
+image_date: 2026-04-28T20:38:09Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A clean, minimalist composition featuring a glowing medical caduceus symbol intertwined with a stylized golden dollar sign, centered against a soft, professional blue gradient background. To the left, a neatly organized stack of translucent, paper-like documents represents insurance policies and billing statements. To the right, a simplified, modern compass points toward a small, bright shield icon, symbolizing navigation and protection. The lighting is bright and clinical, using a soft-focus aesthetic to convey clarity, trust, and financial empowerment. The overall mood is calm, authoritative, and helpful, avoiding clutter to emphasize the concept of demystifying a complex subject.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # ⚕️💸 Health Insurance in America: A Consumer's Guide  
+![books-health-insurance-in-america-a-consumers-guide](../books-health-insurance-in-america-a-consumers-guide.jpg)  
 [🛒 Health Insurance in America: A Consumer's Guide. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3Swd0hy)  
   
 ## 📖 Book Report: 🏥 Health Insurance in America: A Consumer's Guide  

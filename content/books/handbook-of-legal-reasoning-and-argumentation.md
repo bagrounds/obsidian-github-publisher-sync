@@ -8,11 +8,16 @@ tags:
   - law
 affiliate link: https://amzn.to/43pv7fr
 link_analysis_model: gemini-3.1-flash-lite-preview
-link_analysis_time: 2026-04-08T00:00:00Z
+link_analysis_time: 2026-04-24T00:00:00Z
 force_analyze_links: false
+link_analysis_version: "2"
+image_date: 2026-04-28T17:48:45Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A clean, minimalist composition featuring a pair of classic brass scales of justice centered on a polished dark mahogany desk. Surrounding the scales are abstract geometric shapes—a translucent cube, a sphere, and a pyramid—representing the foundational logic and structural elements of legal reasoning. Soft, directional light streams in from a window, casting long, sharp shadows that suggest depth and intellectual rigor. The color palette is sophisticated, utilizing deep navy, slate gray, and metallic gold accents. The background is a blurred view of a law library with rows of leather-bound books, evoking an atmosphere of academic study and professional authority. The overall aesthetic is professional, scholarly, and modern.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 👩🏼‍⚖️⚖️💭🧮🗣️ Handbook of Legal Reasoning and Argumentation  
+![books-handbook-of-legal-reasoning-and-argumentation](../books-handbook-of-legal-reasoning-and-argumentation.jpg)  
 [🛒 Handbook of Legal Reasoning and Argumentation. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/43pv7fr)  
   
 ## 📖 Book Report: ⚖️ Handbook of Legal Reasoning and Argumentation  

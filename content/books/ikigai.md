@@ -11,9 +11,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-17T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-04-29T21:35:17Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A serene illustration centers on a stylized, ancient cherry blossom tree, its gnarled branches reaching upward. From its heart, a soft, warm glow radiates outwards, symbolizing purpose and inner peace (Ikigai). The trees roots gently intertwine with the edge of a tranquil pond, reflecting a harmonious blend of soft pinks, blues, and golden yellows from a rising sun. Distant, rolling hills with a subtle outline of a Japanese-style roof peek through the gentle mist in the background, anchoring the scene in a sense of place and longevity. The overall atmosphere is calm, contemplative, and deeply connected to nature.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🇯🇵🔑😊💯 Ikigai: The Japanese Secret to a Long and Happy Life  
+![books-ikigai](../books-ikigai.jpg)  
 [🛒 Ikigai: The Japanese Secret to a Long and Happy Life. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4jzQLm4)  
   
 ## 🤖 AI Summary  

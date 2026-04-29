@@ -12,9 +12,13 @@ force_analyze_links: false
 link_analysis_time: 2026-04-14T00:00:00Z
 link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_version: "2"
+image_date: 2026-04-29T03:15:55Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A minimalist, high-contrast illustration featuring a classical white marble column standing on a pedestal. The column is visibly weathered, with subtle hairline cracks spider-webbing across its surface, suggesting structural decay from within rather than external damage. The base of the column is partially obscured by creeping, dark ivy vines that subtly resemble barbed wire, symbolizing the slow, suffocating nature of institutional erosion. The background is a stark, solid charcoal gray, casting long, dramatic shadows that emphasize a sense of impending gloom. The overall aesthetic is clean, intellectual, and somber, utilizing a muted color palette of white, slate, and deep shadows to convey the gravity of the subject matter without relying on literal imagery of politicians or specific national symbols.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🗳️🏛️☠️ How Democracies Die  
+![books-how-democracies-die](../books-how-democracies-die.jpg)  
 [🛒 How Democracies Die. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4knY1mj)  
   
 ## 🤖 AI Summary  

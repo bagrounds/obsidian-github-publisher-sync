@@ -5,11 +5,12 @@ aliases:
 title: 🔀 Convergence
 URL: https://bagrounds.org/convergence
 backlinks: false
-updated: 2026-04-27T22:15:55-07:00
+updated: 2026-04-29T07:30:34-07:00
 ---
 [🏡 Home](../index.md)  
-# 🔀 Convergence (14)  
+# 🔀 Convergence (15)  
 - [🔀 Convergence — AGENTS.md](./AGENTS.md)  
+- [2026-04-28 | 🔀 The Architectures of Well-Being: Convergence in Care, Cognition, and Collective Futures 🔀](./2026-04-28-the-architectures-of-well-being-convergence-in-care-cognition-and-collective-futures.md)  
 - [2026-04-27 | 🔀 The Unseen Architectures of Our Collective Being 🔀](./2026-04-27-the-unseen-architectures-of-our-collective-being.md)  
 - [2026-04-26 | 🔀 🪞 The Architectures of Care and Cognition 🔀](./2026-04-26-the-architectures-of-care-and-cognition.md)  
 - [2026-04-25 | 🔀 🪞 The Architectures of Clarity and Sanctuary 🔀](./2026-04-25-the-architectures-of-clarity-and-sanctuary.md)  

@@ -5,11 +5,13 @@ aliases:
 title: 🌟 Positivity Bias
 URL: https://bagrounds.org/positivity-bias
 backlinks: false
-updated: 2026-04-27T22:15:55-07:00
+updated: 2026-04-29T07:30:34-07:00
 ---
 [🏡 Home](../index.md)  
-# 🌟 Positivity Bias (17)  
+# 🌟 Positivity Bias (19)  
 - [🌟 Positivity Bias — AGENTS.md](./AGENTS.md)  
+- [2026-04-29 | 🌟 Hope Blooms: Breakthroughs, Green Shoots, and Global Handshakes 🌟](./2026-04-29-hope-blooms-breakthroughs-green-shoots-and-global-handshakes.md)  
+- [2026-04-28 | 🌟 Seeds of Progress: Breakthroughs, Green Shoots, and Global Handshakes 🌟](./2026-04-28-seeds-of-progress-breakthroughs-green-shoots-and-global-handshakes.md)  
 - [2026-04-27 | 🌟 Seeds of Progress: Breakthroughs, Green Shoots, and Global Handshakes 🌟](./2026-04-27-seeds-of-progress-breakthroughs-green-shoots-and-global-handshakes.md)  
 - [2026-04-26 | 🌟 Ripples of Resilience: Progress in Health, Earth, and Human Connection 🌟](./2026-04-26-ripples-of-resilience-progress-in-health-earth-and-human-connection.md)  
 - [2026-04-25 | 🌟 Seeds of Progress: Breakthroughs, Green Shoots, and Global Handshakes 🌟](./2026-04-25-seeds-of-progress-breakthroughs-green-shoots-and-global-handshakes.md)  

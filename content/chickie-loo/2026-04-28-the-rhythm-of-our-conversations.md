@@ -14,7 +14,7 @@ link_analysis_time: 2026-04-28T00:00:00Z
 force_analyze_links: false
 updated: 2026-04-29T11:39:43
 ---
-[Home](../index.md) > [🐔 Chickie Loo](./index.md) | [⏮️](./2026-04-27-a-monday-of-expectation-and-open-doors.md)  
+[Home](../index.md) > [🐔 Chickie Loo](./index.md) | [⏮️](./2026-04-27-a-monday-of-expectation-and-open-doors.md) [⏭️](./2026-04-29-a-week-of-milestones-and-quiet-anticipation.md)  
 # 2026-04-28 | 🐔 🕰️ The Rhythm of Our Conversations 🐔  
 ![chickie-loo-2026-04-28-the-rhythm-of-our-conversations](../chickie-loo-2026-04-28-the-rhythm-of-our-conversations.jpg)  
   

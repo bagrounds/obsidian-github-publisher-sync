@@ -10,9 +10,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-19T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-04-29T10:44:52Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A minimalist, high-contrast illustration featuring a stylized, interconnected network of gears and structural foundations. The gears, representing policies, are colored in a spectrum of deep earth tones and vibrant, inclusive shades, all turning in unison to lift a central, balanced platform. Below the structure, deep, solid roots anchor the imagery into the ground, symbolizing the systemic nature of the concepts. The background is a clean, soft cream, ensuring the focus remains on the structural integrity and kinetic energy of the mechanical elements. The composition is clean and geometric, using bold, clean lines to evoke a sense of progress, intentionality, and systemic shift without relying on literal representations of people.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # ✊🏿 How to Be An Antiracist  
+![books-how-to-be-an-antiracist](../books-how-to-be-an-antiracist.jpg)  
 [🛒 How to Be An Antiracist. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4nr8heh)  
   
 ### 🏆 Ibram X. Kendi's Antiracist Strategy  

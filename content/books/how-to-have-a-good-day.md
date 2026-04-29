@@ -10,9 +10,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-17T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-04-29T12:37:45Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A bright, minimalist composition featuring a clean wooden desk surface bathed in warm, natural morning sunlight. On the desk, a sleek, open notebook lies flat with a neatly organized checklist of small, achievable goals written in ink. Beside it, a single vibrant sunflower in a glass vase adds a pop of yellow, symbolizing growth and optimism. A pair of glasses rests nearby, and a steaming cup of coffee emits a soft, gentle curl of vapor, suggesting a calm, focused start to the day. The background is a soft-focus, airy office environment with neutral tones, emphasizing a sense of clarity, intentionality, and peaceful productivity.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # ☀️😀👍😊🌻 How to Have a Good Day: Harness the Power of Behavioral Science to Transform Your Working Life  
+![books-how-to-have-a-good-day](../books-how-to-have-a-good-day.jpg)  
 [🛒 How to Have a Good Day: Harness the Power of Behavioral Science to Transform Your Working Life. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3SCFkyV)  
   
 🚀🧠✨ Research-backed strategies to optimize daily productivity and well-being by understanding how our brains work and making conscious choices.  

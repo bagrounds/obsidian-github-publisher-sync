@@ -7,11 +7,16 @@ share: true
 CTA: 🧑‍💻 Empower AI.
 affiliate link: https://amzn.to/3HLE5eT
 link_analysis_model: gemini-3.1-flash-lite-preview
-link_analysis_time: 2026-04-05T00:00:00Z
+link_analysis_time: 2026-04-26T00:00:00Z
 force_analyze_links: false
+link_analysis_version: "2"
+image_date: 2026-04-29T18:39:06Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A stylized, isometric illustration featuring a glowing, translucent digital brain hovering above a clean, modern workspace. A human hand reaches into the scene, delicately placing a glowing, golden puzzle piece into a gap within the brain’s structure. Surrounding the brain are floating, semi-transparent data nodes—represented as small icons of text, images, and audio waveforms—that are being drawn toward the center by thin, luminous lines of light. The background is a soft, professional slate gray, creating a high-contrast aesthetic that highlights the warm, vibrant colors of the interaction. The composition emphasizes the synergy between human intuition and machine intelligence, using clean lines and a minimalist, tech-forward aesthetic to convey precision, collaboration, and the structured process of active learning.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🧑‍💻🤖 Human-in-the-Loop Machine Learning: Active learning and annotation for human-centered AI  
+![books-human-in-the-loop-machine-learning-active-learning-and-annotation-for-human-centered-ai](../books-human-in-the-loop-machine-learning-active-learning-and-annotation-for-human-centered-ai.jpg)  
 [🛒 Human-in-the-Loop Machine Learning: Active learning and annotation for human-centered AI. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3HLE5eT)  
   
 ## 📚 Book Report: 🧑‍💻 Human-in-the-Loop Machine Learning: 🤖 Active learning and annotation for human-centered AI  

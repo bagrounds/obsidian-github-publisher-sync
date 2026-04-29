@@ -7,11 +7,16 @@ share: true
 CTA: 🚀 Embrace imperfection.
 affiliate link: https://amzn.to/43zLwgZ
 link_analysis_model: gemini-3.1-flash-lite-preview
-link_analysis_time: 2026-04-11T00:00:00Z
+link_analysis_time: 2026-04-28T00:00:00Z
 force_analyze_links: false
+link_analysis_version: "2"
+image_date: 2026-04-29T12:37:27Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A dynamic illustration depicts a winding, upward path. At the bottom, several small, abstract failure symbols (e.g., a crumpled shape, a broken line) are scattered, subtly interconnected by a thin, glowing thread. As the path ascends, this thread thickens, evolving into a series of interlocking gears and varied shapes, representing systems and skill-stacking. These elements coalesce into a vibrant, gleaming upward-pointing arrow or an abstract trophy shape at the peak, bathed in a warm, inviting light, signifying success built from numerous, integrated setbacks.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 📉🏆 How to Fail at Almost Everything and Still Win Big: Kind of the Story of My Life  
+![books-how-to-fail-at-almost-everything-and-still-win-big-kind-of-the-story-of-my-life](../books-how-to-fail-at-almost-everything-and-still-win-big-kind-of-the-story-of-my-life.jpg)  
 [🛒 How to Fail at Almost Everything and Still Win Big: Kind of the Story of My Life. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/43zLwgZ)  
   
 🤔🚀 Embracing systems over goals and leveraging seemingly small failures leads to compounding success in unexpected ways.  

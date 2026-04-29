@@ -10,9 +10,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-16T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-04-29T13:44:37Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: "A soft, watercolor-style illustration depicting a cozy, slightly cluttered living space. In the center, a single, glowing warm light source—like a bedside lamp or a candle—casts a gentle, calming glow over a small corner of the room. A soft, unmade bed with a comfortable-looking blanket and a few scattered books creates an atmosphere of rest and self-compassion. The color palette uses soothing pastels: muted blues, soft teals, and warm amber tones. The overall aesthetic is peaceful and non-judgmental, emphasizing a good enough approach rather than clinical perfection. A small, open window allows a breeze to flutter a light curtain, suggesting a breath of fresh air and a sense of relief amidst the overwhelm."
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🧹🌊😵‍💫 How to Keep House While Drowning: A Gentle Approach to Cleaning and Organizing  
+![books-how-to-keep-house-while-drowning](../books-how-to-keep-house-while-drowning.jpg)  
 [🛒 How to Keep House While Drowning. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/48Xn0t5)  
   
 🏡✨ An approach to home care emphasizing self-compassion, functionality, and the moral neutrality of care tasks for those overwhelmed by life, mental health struggles, or neurodivergence.  

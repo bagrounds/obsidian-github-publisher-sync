@@ -50,9 +50,9 @@
 - **Hour**: 22 Pacific (10 PM PST / PDT)
 - **Semantics**: At-or-after — eligible at hour 22 and all subsequent hours until 11:59 PM Pacific
 - **Ordering**: Runs BEFORE `reflection-title` in the same hour 22 slot
-- **Idempotency**: Skips if `## 🤖🐲 AI Fiction` section already exists in today's reflection
+- **Idempotency**: Skips if `## 🤖🐲 AI Fiction` section already exists in a reflection
 
-## 📅 Fiction Eligibility
+## 📅 Fiction Eligibility and Backfill
 
 🗓️ A reflection note becomes eligible for AI fiction generation at 10 PM Pacific on the day of the reflection. 📋 The cutoff datetime is computed by `fictionEligibilityCutoff`:
 
@@ -61,7 +61,7 @@ fictionEligibilityCutoff :: Day -> LocalTime
 fictionEligibilityCutoff day = LocalTime day (TimeOfDay 22 0 0)
 ```
 
-🕐 A reflection on day `D` can receive fiction whenever `currentPacificTime >= fictionEligibilityCutoff D`. This prevents midnight-crossing runs from generating fiction for a new day before 10 PM on that day.
+🕐 A reflection on day `D` can receive fiction whenever `currentPacificTime >= fictionEligibilityCutoff D`. 🔄 `runAiFiction` scans the **last 5 calendar days**, filters to those whose cutoff has passed, and generates fiction for every eligible reflection that still lacks a fiction section. 🛡️ This handles midnight-crossing naturally: a run at 1 AM on day D+1 will not touch D+1's reflection (cutoff not yet reached) but will still catch D if it was missed. 🔁 If the automation was down for several days, any reflections whose 10 PM cutoff has passed will be backfilled automatically on the next run.
 
 ## ✍️ Fiction Rules
 

@@ -24,7 +24,7 @@ import qualified Network.HTTP.Client as HTTP
 import Network.HTTP.Types.Status (statusCode)
 import System.Directory (createDirectoryIfMissing, doesDirectoryExist, doesFileExist, listDirectory, removeFile)
 import System.FilePath ((</>), dropExtension)
-import Data.Time (defaultTimeLocale, parseTimeM, getCurrentTime, addDays, localDay)
+import Data.Time (Day, defaultTimeLocale, parseTimeM, getCurrentTime, addDays, localDay)
 
 import Automation.AiBlogLinks (NavLinkResult (..), aiBlogConfig, ensureAllNavLinks, buildReflectionLinks)
 import Automation.AiFiction
@@ -386,53 +386,51 @@ runSocialPosting context contentDirs = do
 
 runAiFiction :: Context.AppContext -> IO ()
 runAiFiction context = do
-  let vaultDir = Context.vaultDir context
   logMsg "▶️  ai-fiction"
 
   now <- getCurrentTime
   let localNow = toPacificLocalTime now
       today = localDay localNow
+      candidateDays = map (\offset -> addDays (-offset) today) [0..4]
+      eligibleDays = filter (\day -> localNow >= fictionEligibilityCutoff day) candidateDays
 
-  if localNow < fictionEligibilityCutoff today
-    then do
-      logMsg $ "  ⏳ Pacific time: " <> T.pack (show localNow) <> " — before 10 PM cutoff, skipping ai-fiction"
-      logMsg "✅ ai-fiction (skipped — too early)"
+  logMsg $ "  🕐 Pacific time: " <> T.pack (show localNow) <> " — " <> T.pack (show (length eligibleDays)) <> " eligible day(s) to check"
+
+  mapM_ (tryFictionForDate context) eligibleDays
+
+  logMsg "✅ ai-fiction"
+
+tryFictionForDate :: Context.AppContext -> Day -> IO ()
+tryFictionForDate context day = do
+  let vaultDir = Context.vaultDir context
+      dateText = formatDay day
+      reflectionsDir = vaultDir </> "reflections"
+      reflectionPath = reflectionsDir </> T.unpack dateText <> ".md"
+
+  exists <- doesFileExist reflectionPath
+  if not exists
+    then logMsg $ "  ⏭️  No reflection note for " <> dateText
     else do
-      let todayText = formatDay today
-
-      let reflectionsDir = vaultDir </> "reflections"
-          reflectionPath = reflectionsDir </> T.unpack todayText <> ".md"
-
-      exists <- doesFileExist reflectionPath
-      if not exists
-        then do
-          logMsg $ "  📭 No reflection for " <> todayText <> ", skipping AI fiction"
-          logMsg "✅ ai-fiction (skipped)"
+      noteContent <- TIO.readFile reflectionPath
+      if not (reflectionNeedsFiction noteContent)
+        then logMsg $ "  ⏭️  AI fiction already present for " <> dateText
         else do
-          noteContent <- TIO.readFile reflectionPath
-          if not (reflectionNeedsFiction noteContent)
-            then do
-              logMsg $ "  ✅ Reflection " <> todayText <> " already has AI fiction"
-              logMsg "✅ ai-fiction (already done)"
-            else do
-              envModel <- lookupEnvText "FICTION_MODEL"
-              let defaultChain = defaultFictionModel :| [Gemini.Gemini25FlashLite, Gemini.Gemini31FlashLite]
-                  models = Gemini.overrideModelChain envModel defaultChain
+          envModel <- lookupEnvText "FICTION_MODEL"
+          let defaultChain = defaultFictionModel :| [Gemini.Gemini25FlashLite, Gemini.Gemini31FlashLite]
+              models = Gemini.overrideModelChain envModel defaultChain
 
-              let config = FictionConfig
-                    { fcModels = models
-                    , fcNoteContent = noteContent
-                    }
+          let config = FictionConfig
+                { fcModels = models
+                , fcNoteContent = noteContent
+                }
 
-              result <- generateFiction config (callGeminiForGenerator context)
+          result <- generateFiction config (callGeminiForGenerator context)
 
-              let wordCount = length (T.words (frFiction result))
-              logMsg $ "  🤖🐲 Generated fiction (model=" <> frModel result <> ", " <> T.pack (show wordCount) <> " words)"
+          let wordCount = length (T.words (frFiction result))
+          logMsg $ "  🤖🐲 Generated fiction (model=" <> frModel result <> ", " <> T.pack (show wordCount) <> " words)"
 
-              TIO.writeFile reflectionPath (frUpdatedContent result)
-              logMsg $ "  ✏️  Updated " <> todayText <> ".md with AI fiction"
-
-              logMsg "✅ ai-fiction"
+          TIO.writeFile reflectionPath (frUpdatedContent result)
+          logMsg $ "  ✏️  Updated " <> dateText <> ".md with AI fiction"
 
 runReflectionTitle :: Context.AppContext -> IO ()
 runReflectionTitle context = do

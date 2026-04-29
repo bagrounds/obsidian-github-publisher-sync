@@ -40,7 +40,7 @@ URL: https://bagrounds.org/ai-blog/2026-04-29-1-premature-ai-fiction-midnight-bu
 
 ## 🔗 Connection to the Reflection Title Fix
 
-🔁 This bug is structurally identical to the reflection-title midnight bug fixed on April 27. 🧩 That fix introduced a pure `reflectionTitleCutoff :: Day -> LocalTime` function and used it to filter candidate days before titling. 🐲 The ai-fiction task had the same vulnerability but was missed when the reflection title fix landed — likely because it was a separate code path with a simpler single-day check rather than the multi-day backfill loop that reflection-title uses.
+🔁 This bug is structurally identical to the reflection-title midnight bug fixed on April 27. 🧩 That fix introduced a pure `reflectionTitleCutoff :: Day -> LocalTime` function, a 5-day backfill loop, and a per-day eligibility filter. 🐲 The ai-fiction task had the same vulnerability but was given only a simpler single-day eligibility check — missing the backfill property that makes the reflection-title fix so robust.
 
 ## 🔧 The Fix
 
@@ -56,9 +56,9 @@ fictionEligibilityCutoff day = LocalTime day (TimeOfDay 22 0 0)
 
 🔗 This is exactly the same shape as `reflectionTitleCutoff` — both tasks share the same 10 PM Pacific eligibility window. 🏠 Each module owns its own cutoff function, consistent with the library-developer module design principle.
 
-### 📅 Eligibility Check in runAiFiction
+### 📅 5-Day Backfill in runAiFiction
 
-🔀 The `runAiFiction` function no longer calls `todayPacificDay` and proceeds unconditionally. 🕐 Instead, it gets the current UTC time, converts it to Pacific local time, extracts today's date from that, and then immediately checks whether the current Pacific time has reached `fictionEligibilityCutoff today`. 🛡️ If not, it logs a message and skips — no fiction is generated. If yes, it proceeds with the existing idempotency check and generation logic.
+🔀 The `runAiFiction` function now mirrors the `runReflectionTitle` structure exactly. 🗓️ It generates 5 candidate days (today through today minus 4), filters to those whose cutoff has passed using `fictionEligibilityCutoff`, logs the Pacific time and eligible day count, and then calls a `tryFictionForDate` helper for each eligible day. 🛡️ A run at 1 AM on day D+1 will not touch D+1's reflection (its cutoff is D+1 at 10 PM — still in the future), but it will still generate fiction for day D if that was missed. 🔁 If the automation was down for several days, any reflections whose 10 PM cutoff has passed will be backfilled automatically on the next run — no manual intervention needed.
 
 ### 🔬 Pure and Testable
 
@@ -70,7 +70,7 @@ fictionEligibilityCutoff day = LocalTime day (TimeOfDay 22 0 0)
 
 ## 🛡️ Why This Fix Is Reliable
 
-🔒 Because each reflection carries its own cutoff datetime, the question of fiction eligibility is always answered by comparing two full datetimes. 🕐 A reflection for day D can only receive fiction once the clock has passed day D at 10 PM Pacific — regardless of what hour the process started, what hour the task runs within the process, or how long earlier tasks took to complete. 🔄 The fix mirrors the approach proven effective for the reflection-title task.
+🔒 Because each reflection carries its own cutoff datetime, the question of fiction eligibility is always answered by comparing two full datetimes. 🕐 A reflection for day D can only receive fiction once the clock has passed day D at 10 PM Pacific — regardless of what hour the process started, what hour the task runs within the process, or how long earlier tasks took to complete. 🔄 The 5-day lookback window means backfill happens automatically, so missed fiction passages do not require manual intervention. 🧩 This gives ai-fiction the same robustness guarantees that reflection-title has had since April 27.
 
 ## 📚 Book Recommendations
 

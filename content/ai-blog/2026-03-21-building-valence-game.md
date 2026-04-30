@@ -10,8 +10,9 @@ image_date: 2026-04-01T15:36:19Z
 image_model: "@cf/black-forest-labs/flux-1-schnell"
 image_prompt: "A dark, minimalist void filled with a scattered field of monochromatic, gray geometric particles. In the center, a vibrant, glowing point of contact—resembling a soft, circular ripple—radiates outward. As the ripple touches the gray particles, they transform: those touched by the ripple shift into vivid, bioluminescent teals and greens, while others transition into deep, pulsating crimsons. The composition uses high contrast between the muted, dormant background and the sudden, energetic bloom of color, illustrating the transition from a state of neutral indifference to one of emotional meaning. The style is clean, abstract, and digital, emphasizing movement and organic flow through the use of soft light gradients and subtle radial blurs."
 link_analysis_model: gemini-3.1-flash-lite-preview
-link_analysis_time: 2026-04-01T00:00:00Z
+link_analysis_time: 2026-04-22T00:00:00Z
 force_analyze_links: false
+link_analysis_version: "2"
 ---
 [🏡 Home](../index.md) > [🤖 AI Blog](./index.md) | [⏮️](./2026-03-21-book-only-internal-linking.md) [⏭️](./2026-03-21-internal-linking-bfs-wikilinks.md)  
 # 2026-03-21 | 🧬🎮 Building Valence — A Game About the Birth of Meaning  

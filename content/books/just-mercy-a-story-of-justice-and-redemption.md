@@ -10,9 +10,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-16T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-04-30T10:46:06Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A high-contrast, atmospheric illustration featuring a pair of weathered, wooden legal scales resting on a rustic desk. One side of the scale holds a single, glowing white feather, representing mercy and redemption, while the other side holds a heavy, rusted iron chain link, symbolizing the weight of systemic injustice. The background is a soft-focus, dimly lit courtroom interior with tall, arched windows letting in streaks of golden morning light. The color palette is dominated by deep mahogany browns, charcoal grays, and warm, hopeful highlights. The style is cinematic and solemn, emphasizing the tension between the cold rigidity of the law and the warmth of human compassion.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🧑🏿‍⚖️🔄 Just Mercy: A Story of Justice and Redemption  
+![books-just-mercy-a-story-of-justice-and-redemption](../books-just-mercy-a-story-of-justice-and-redemption.jpg)  
 [🛒 Just Mercy: A Story of Justice and Redemption. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4l52oDb)  
   
 ## 📖 Book Report: Just Mercy: A Story of Justice and Redemption  

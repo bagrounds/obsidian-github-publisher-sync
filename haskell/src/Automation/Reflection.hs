@@ -2,11 +2,13 @@ module Automation.Reflection
   ( ReflectionData (..)
   , selectMostRecentReflection
   , findMostRecentReflection
+  , eligibleReflectionDays
   ) where
 
 import Data.List (sortBy)
 import Data.Text (Text)
 import qualified Data.Text as T
+import Data.Time (Day, LocalTime, addDays, localDay)
 import System.Directory (doesDirectoryExist, listDirectory)
 import System.FilePath ((</>))
 import Text.Regex.TDFA ((=~))
@@ -41,3 +43,9 @@ findMostRecentReflection contentDir = do
   if exists
     then selectMostRecentReflection <$> listDirectory reflDir
     else pure Nothing
+
+eligibleReflectionDays :: LocalTime -> (Day -> LocalTime) -> [Day]
+eligibleReflectionDays localNow eligibilityCutoff =
+  let today = localDay localNow
+      candidateDays = map (\offset -> addDays (-offset) today) [0..4]
+  in filter (\day -> localNow >= eligibilityCutoff day) candidateDays

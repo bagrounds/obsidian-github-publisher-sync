@@ -24,13 +24,14 @@ import qualified Network.HTTP.Client as HTTP
 import Network.HTTP.Types.Status (statusCode)
 import System.Directory (createDirectoryIfMissing, doesDirectoryExist, doesFileExist, listDirectory, removeFile)
 import System.FilePath ((</>), dropExtension)
-import Data.Time (defaultTimeLocale, parseTimeM, getCurrentTime, addDays, localDay)
+import Data.Time (Day, defaultTimeLocale, parseTimeM, getCurrentTime)
 
 import Automation.AiBlogLinks (NavLinkResult (..), aiBlogConfig, ensureAllNavLinks, buildReflectionLinks)
 import Automation.AiFiction
   ( FictionConfig (FictionConfig, fcModels, fcNoteContent)
   , FictionResult (frFiction, frModel, frUpdatedContent)
   , defaultFictionModel
+  , fictionEligibilityCutoff
   , generateFiction
   , reflectionNeedsFiction
   )
@@ -72,6 +73,7 @@ import qualified Automation.GoogleAnalytics as GA
 import qualified Automation.InternalLinking as IL
 import qualified Automation.Json as Json
 import Automation.PacificTime (formatDay, toPacificLocalTime, todayPacificDay, yesterdayPacificDay)
+import Automation.Reflection (eligibleReflectionDays)
 import Automation.ReflectionTitle
   ( ReflectionTitleConfig (ReflectionTitleConfig, rtcModels, rtcNoteContent, rtcDate, rtcRecentTitles)
   , ReflectionTitleResult (rtrFullTitle, rtrModel, rtrUpdatedContent)
@@ -385,26 +387,32 @@ runSocialPosting context contentDirs = do
 
 runAiFiction :: Context.AppContext -> IO ()
 runAiFiction context = do
-  let vaultDir = Context.vaultDir context
   logMsg "▶️  ai-fiction"
 
-  today <- todayPacificDay
-  let todayText = formatDay today
+  now <- getCurrentTime
+  let localNow = toPacificLocalTime now
+      eligibleDays = eligibleReflectionDays localNow fictionEligibilityCutoff
 
-  let reflectionsDir = vaultDir </> "reflections"
-      reflectionPath = reflectionsDir </> T.unpack todayText <> ".md"
+  logMsg $ "  🕐 Pacific time: " <> T.pack (show localNow) <> " — " <> T.pack (show (length eligibleDays)) <> " eligible day(s) to check"
+
+  mapM_ (tryFictionForDate context) eligibleDays
+
+  logMsg "✅ ai-fiction"
+
+tryFictionForDate :: Context.AppContext -> Day -> IO ()
+tryFictionForDate context day = do
+  let vaultDir = Context.vaultDir context
+      dateText = formatDay day
+      reflectionsDir = vaultDir </> "reflections"
+      reflectionPath = reflectionsDir </> T.unpack dateText <> ".md"
 
   exists <- doesFileExist reflectionPath
   if not exists
-    then do
-      logMsg $ "  📭 No reflection for " <> todayText <> ", skipping AI fiction"
-      logMsg "✅ ai-fiction (skipped)"
+    then logMsg $ "  ⏭️  No reflection note for " <> dateText
     else do
       noteContent <- TIO.readFile reflectionPath
       if not (reflectionNeedsFiction noteContent)
-        then do
-          logMsg $ "  ✅ Reflection " <> todayText <> " already has AI fiction"
-          logMsg "✅ ai-fiction (already done)"
+        then logMsg $ "  ⏭️  AI fiction already present for " <> dateText
         else do
           envModel <- lookupEnvText "FICTION_MODEL"
           let defaultChain = defaultFictionModel :| [Gemini.Gemini25FlashLite, Gemini.Gemini31FlashLite]
@@ -421,9 +429,7 @@ runAiFiction context = do
           logMsg $ "  🤖🐲 Generated fiction (model=" <> frModel result <> ", " <> T.pack (show wordCount) <> " words)"
 
           TIO.writeFile reflectionPath (frUpdatedContent result)
-          logMsg $ "  ✏️  Updated " <> todayText <> ".md with AI fiction"
-
-          logMsg "✅ ai-fiction"
+          logMsg $ "  ✏️  Updated " <> dateText <> ".md with AI fiction"
 
 runReflectionTitle :: Context.AppContext -> IO ()
 runReflectionTitle context = do
@@ -431,9 +437,7 @@ runReflectionTitle context = do
 
   now <- getCurrentTime
   let localNow = toPacificLocalTime now
-      today = localDay localNow
-      candidateDays = map (\offset -> addDays (-offset) today) [0..4]
-      eligibleDays = filter (\day -> localNow >= reflectionTitleCutoff day) candidateDays
+      eligibleDays = eligibleReflectionDays localNow reflectionTitleCutoff
 
   logMsg $ "  🕐 Pacific time: " <> T.pack (show localNow) <> " — " <> T.pack (show (length eligibleDays)) <> " eligible day(s) to check"
 

@@ -50,7 +50,24 @@
 - **Hour**: 22 Pacific (10 PM PST / PDT)
 - **Semantics**: At-or-after — eligible at hour 22 and all subsequent hours until 11:59 PM Pacific
 - **Ordering**: Runs BEFORE `reflection-title` in the same hour 22 slot
-- **Idempotency**: Skips if `## 🤖🐲 AI Fiction` section already exists in today's reflection
+- **Idempotency**: Skips if `## 🤖🐲 AI Fiction` section already exists in a reflection
+
+## 📅 Fiction Eligibility and Backfill
+
+🗓️ A reflection note becomes eligible for AI fiction generation at 10 PM Pacific on the day of the reflection. 📋 The cutoff datetime is computed by `fictionEligibilityCutoff`:
+
+```haskell
+fictionEligibilityCutoff :: Day -> LocalTime
+fictionEligibilityCutoff day = LocalTime day (TimeOfDay 22 0 0)
+```
+
+🕐 A reflection on day `D` can receive fiction whenever `currentPacificTime >= fictionEligibilityCutoff D`. 🔄 `runAiFiction` uses the shared `eligibleReflectionDays` function from `Automation.Reflection` to scan the last 5 calendar days, filtering to those whose cutoff has passed, then generates fiction for every eligible reflection that still lacks a fiction section:
+
+```haskell
+eligibleReflectionDays :: LocalTime -> (Day -> LocalTime) -> [Day]
+```
+
+🧩 `runReflectionTitle` uses the same function with `reflectionTitleCutoff` — all 5-day window and filter logic lives in one place. 🛡️ This handles midnight-crossing naturally: a run at 1 AM on day D+1 will not touch D+1's reflection (cutoff not yet reached) but will still catch D if it was missed. 🔁 If the automation was down for several days, any reflections whose 10 PM cutoff has passed will be backfilled automatically on the next run.
 
 ## ✍️ Fiction Rules
 
@@ -95,6 +112,7 @@
 
 | 🔧 Function | 📝 Purpose |
 |---|---|
+| `fictionEligibilityCutoff(day)` | 📅 Returns the `LocalTime` at which a reflection becomes eligible for fiction (10 PM Pacific on that day) |
 | `stripForPrompt(content)` | 🧹 Remove frontmatter and embed/updates sections from reflection content |
 | `reflectionNeedsFiction(content)` | 🛡️ Idempotency check — returns false if `## 🤖🐲 AI Fiction` already exists |
 | `buildFictionPrompt(strippedContent)` | 🧠 Construct structured Gemini prompt with fiction rules and themes |
@@ -124,6 +142,7 @@
 ## 🧪 Testing
 
 🔬 Tests in `haskell/test/Automation/AiFictionTest.hs` covering:
+- 📅 `fictionEligibilityCutoff`: cutoff construction, eligibility semantics (10 PM eligible, before 10 PM not eligible, midnight-crossing eligible)
 - 🧹 `stripForPrompt`: frontmatter removal, embed section removal, updates section removal, content preservation
 - 🛡️ `reflectionNeedsFiction`: detection of existing fiction section, fresh reflections
 - 🧠 `buildFictionPrompt`: prompt structure, fiction rules inclusion, content forwarding

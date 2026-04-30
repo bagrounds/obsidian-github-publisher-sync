@@ -1,5 +1,6 @@
 module Automation.AiFictionTest (tests) where
 
+import Data.Time (LocalTime (..), TimeOfDay (..), fromGregorian)
 import qualified Data.Text as T
 import Test.Tasty (TestTree, testGroup)
 import Test.Tasty.HUnit (testCase, (@?=), assertBool)
@@ -12,6 +13,7 @@ import qualified Automation.Gemini as Gemini
 tests :: TestTree
 tests = testGroup "AiFiction"
   [ constantTests
+  , fictionEligibilityCutoffTests
   , stripForPromptTests
   , reflectionNeedsFictionTests
   , parseFictionResponseTests
@@ -30,6 +32,43 @@ constantTests = testGroup "constants"
       fictionSectionHeader @?= "## 🤖🐲 AI Fiction"
   , testCase "defaultFictionModel" $
       defaultFictionModel @?= Gemini.Gemini25Flash
+  ]
+
+--------------------------------------------------------------------------------
+-- fictionEligibilityCutoff
+--------------------------------------------------------------------------------
+
+fictionEligibilityCutoffTests :: TestTree
+fictionEligibilityCutoffTests = testGroup "fictionEligibilityCutoff"
+  [ testCase "cutoff for a mid-month day is that day at 22:00:00" $
+      fictionEligibilityCutoff (fromGregorian 2026 4 29)
+        @?= LocalTime (fromGregorian 2026 4 29) (TimeOfDay 22 0 0)
+  , testCase "cutoff for the first of a month is that day at 22:00:00" $
+      fictionEligibilityCutoff (fromGregorian 2026 5 1)
+        @?= LocalTime (fromGregorian 2026 5 1) (TimeOfDay 22 0 0)
+  , testCase "cutoff for January 1 is that day at 22:00:00" $
+      fictionEligibilityCutoff (fromGregorian 2027 1 1)
+        @?= LocalTime (fromGregorian 2027 1 1) (TimeOfDay 22 0 0)
+  , testCase "10 PM exactly on the day is eligible" $
+      LocalTime (fromGregorian 2026 4 29) (TimeOfDay 22 0 0)
+        >= fictionEligibilityCutoff (fromGregorian 2026 4 29)
+        @?= True
+  , testCase "one second before cutoff on the day is not eligible" $
+      LocalTime (fromGregorian 2026 4 29) (TimeOfDay 21 59 59)
+        >= fictionEligibilityCutoff (fromGregorian 2026 4 29)
+        @?= False
+  , testCase "midnight after the day is eligible" $
+      LocalTime (fromGregorian 2026 4 30) (TimeOfDay 0 0 0)
+        >= fictionEligibilityCutoff (fromGregorian 2026 4 29)
+        @?= True
+  , testCase "next day at noon is eligible" $
+      LocalTime (fromGregorian 2026 4 30) (TimeOfDay 12 0 0)
+        >= fictionEligibilityCutoff (fromGregorian 2026 4 29)
+        @?= True
+  , testCase "same day at noon is not yet eligible" $
+      LocalTime (fromGregorian 2026 4 29) (TimeOfDay 12 0 0)
+        >= fictionEligibilityCutoff (fromGregorian 2026 4 29)
+        @?= False
   ]
 
 --------------------------------------------------------------------------------

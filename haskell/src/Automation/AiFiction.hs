@@ -1,6 +1,7 @@
 module Automation.AiFiction
   ( fictionSectionHeader
   , defaultFictionModel
+  , fictionEligibilityCutoff
   , stripForPrompt
   , reflectionNeedsFiction
   , buildFictionPrompt
@@ -15,6 +16,7 @@ module Automation.AiFiction
 import Data.List.NonEmpty (NonEmpty)
 import Data.Text (Text)
 import qualified Data.Text as T
+import Data.Time (Day, LocalTime (..), TimeOfDay (..))
 
 import Automation.Platform
   ( updatesSectionHeader
@@ -31,6 +33,9 @@ fictionSectionHeader = "## 🤖🐲 AI Fiction"
 
 defaultFictionModel :: Gemini.Model
 defaultFictionModel = Gemini.Gemini25Flash
+
+fictionEligibilityCutoff :: Day -> LocalTime
+fictionEligibilityCutoff day = LocalTime day (TimeOfDay 22 0 0)
 
 embedHeaders :: [Text]
 embedHeaders = [Twitter.sectionHeader, Bluesky.sectionHeader, Mastodon.sectionHeader]

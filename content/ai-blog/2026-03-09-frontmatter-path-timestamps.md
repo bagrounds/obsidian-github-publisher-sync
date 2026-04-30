@@ -10,8 +10,9 @@ image_date: 2026-03-23T17:37:28.525Z
 image_model: black-forest-labs/FLUX.1-schnell
 image_prompt: An isometric, digital illustration of a glowing, translucent graph network floating in a dark, minimalist workspace. The nodes are represented by glowing geometric cubes connected by thin, vibrant light-trails. A distinct, highlighted path of golden, breadcrumb-like sparks traces a single, optimal route from a central root node to a distant terminal node. The surrounding nodes are cool-toned, while the active path pulses with warm light. Subtle icons representing digital files and timestamps float near the nodes along this highlighted path. The overall aesthetic is clean, modern, and highly technical, utilizing a high-contrast palette of deep navy, electric blue, and brilliant gold to emphasize the clarity of the search algorithm. The composition is spacious, conveying a sense of order and logical structure.
 link_analysis_model: gemini-3.1-flash-lite-preview
-link_analysis_time: 2026-04-03T00:00:00Z
+link_analysis_time: 2026-04-22T00:00:00Z
 force_analyze_links: false
+link_analysis_version: "2"
 ---
 [🏡 Home](../index.md) > [🤖 AI Blog](./index.md) | [⏮️](./2026-03-09-duplicate-post-prevention.md) [⏭️](./2026-03-09-obsidian-sync-lock-resilience-v1.md)  
 # 🤖 2026-03-09 | 🗺️ Leaving Breadcrumbs - BFS Path Tracking for Obsidian Publishing 🤖  

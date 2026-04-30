@@ -10,9 +10,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-18T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-04-29T22:32:41Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: "A rustic, wooden kitchen table bathed in soft, natural morning sunlight. In the center sits a simple, woven wicker basket overflowing with a vibrant, unrefined harvest: earthy carrots with green tops, a head of crisp kale, a few heirloom tomatoes, and a handful of walnuts. Beside the basket is a single, plain ceramic bowl containing a small, mindful portion of whole grains. In the background, slightly out of focus, stands a weathered wooden cutting board and a small, potted herb plant. The color palette is composed of rich, organic earth tones—deep greens, warm browns, and vibrant vegetable reds—evoking a sense of simplicity, tradition, and connection to the land, entirely devoid of modern packaging or artificial branding."
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🛡️🥦 In Defense of Food: An Eater's Manifesto  
+![books-in-defense-of-food-an-eaters-manifesto](../books-in-defense-of-food-an-eaters-manifesto.jpg)  
 [🛒 In Defense of Food: An Eater's Manifesto. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3Nns9lY)  
   
 🍎🥦🍚 Against nutritionism and the detrimental Western diet, return to simple, traditional eating: Eat food. Not too much. Mostly plants.  

@@ -4,8 +4,8 @@
 The `deploy.yml` GitHub Actions workflow builds the Quartz static site and deploys it to GitHub Pages.
 
 ## Trigger
-- Runs on every `push` to any branch (`**`)
-- Enables build validation AND deployment for all branches, including PRs
+- Runs only on `push` to the `main` branch
+- PRs do not trigger a deployment, preventing stale or partial builds from overwriting the live site
 
 ## Concurrency
 - All runs share a single concurrency group (`pages`)
@@ -14,7 +14,7 @@ The `deploy.yml` GitHub Actions workflow builds the Quartz static site and deplo
 ## Jobs
 
 ### Build
-- Runs on all branches
+- Runs on `main` only
 - Checks out the full git history (`fetch-depth: 0`) for date computation
 - Uses Node 22 and npm for the Quartz build
 - Caches `node_modules` and `.quartz-cache` across runs
@@ -25,9 +25,7 @@ The `deploy.yml` GitHub Actions workflow builds the Quartz static site and deplo
 
 ### Deploy
 - Deploys the built artifact to the `github-pages` environment
-- Runs on every branch so PRs can be tested before merging
-- All branches share the `pages` concurrency group with cancel-in-progress, so the latest push always wins
-- Merging to `main` immediately triggers a fresh deploy, replacing any PR preview
+- Runs only on `main`, so the live site always reflects the latest merged code
 
 ## AliasRedirects: Disabled
 The `AliasRedirects` Quartz emitter plugin is **disabled** (removed from `quartz.config.ts`). Aliases in frontmatter are only used by Obsidian for wikilink display text — nobody navigates to emoji-heavy title URLs. Disabling AliasRedirects eliminates the risk of empty aliases overwriting the homepage.

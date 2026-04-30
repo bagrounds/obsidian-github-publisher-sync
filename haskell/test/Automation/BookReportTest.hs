@@ -1,0 +1,303 @@
+module Automation.BookReportTest (tests) where
+
+import Automation.BookReport
+  ( titleToKebabCase
+  , extractAsin
+  , buildAffiliateUrl
+  , buildBookFrontmatter
+  , buildBookBody
+  , buildBookFileContent
+  , booksSectionHeading
+  , insertBookLink
+  , defaultBookReportModel
+  , defaultAmazonSearchModel
+  )
+import qualified Automation.Gemini as Gemini
+import Data.Char (isLower, isDigit)
+import Data.Text (Text)
+import qualified Data.Text as T
+import Test.Tasty (TestTree, testGroup)
+import Test.Tasty.HUnit (assertEqual, assertBool, testCase)
+import Test.Tasty.QuickCheck (testProperty)
+import qualified Test.QuickCheck as QC
+
+tests :: TestTree
+tests = testGroup "BookReport"
+  [ defaultModelTests
+  , titleToKebabCaseTests
+  , extractAsinTests
+  , buildAffiliateUrlTests
+  , buildBookFrontmatterTests
+  , buildBookBodyTests
+  , buildBookFileContentTests
+  , booksSectionHeadingTests
+  , insertBookLinkTests
+  , propertyTests
+  ]
+
+defaultModelTests :: TestTree
+defaultModelTests = testGroup "default models"
+  [ testCase "defaultBookReportModel is Gemini25Flash" $
+      assertEqual "" Gemini.Gemini25Flash defaultBookReportModel
+  , testCase "defaultAmazonSearchModel is Gemini25Flash" $
+      assertEqual "" Gemini.Gemini25Flash defaultAmazonSearchModel
+  ]
+
+titleToKebabCaseTests :: TestTree
+titleToKebabCaseTests = testGroup "titleToKebabCase"
+  [ testCase "converts basic title to kebab case" $
+      assertEqual "" "lord-of-the-flies" (titleToKebabCase "Lord of the Flies")
+
+  , testCase "lowercases input" $
+      assertEqual "" "dune" (titleToKebabCase "DUNE")
+
+  , testCase "replaces spaces with hyphens" $
+      assertEqual "" "thinking-fast-and-slow" (titleToKebabCase "Thinking Fast and Slow")
+
+  , testCase "removes apostrophes without adding dashes" $
+      assertEqual "" "the-hitchhikers-guide-to-the-galaxy"
+        (titleToKebabCase "The Hitchhiker's Guide to the Galaxy")
+
+  , testCase "collapses multiple consecutive non-alphanumeric characters" $
+      assertEqual "" "lord-of-the-flies" (titleToKebabCase "Lord  of  the  Flies")
+
+  , testCase "trims leading and trailing dashes" $
+      assertEqual "" "the-road" (titleToKebabCase " The Road ")
+
+  , testCase "handles punctuation in title" $
+      assertEqual "" "1984" (titleToKebabCase "1984")
+
+  , testCase "handles colon in subtitle" $
+      assertEqual "" "sapiens-a-brief-history-of-humankind"
+        (titleToKebabCase "Sapiens: A Brief History of Humankind")
+
+  , testCase "handles em-dash" $
+      assertEqual "" "brave-new-world" (titleToKebabCase "Brave—New—World")
+
+  , testCase "handles single word title" $
+      assertEqual "" "tinkers" (titleToKebabCase "Tinkers")
+
+  , testCase "handles emoji-prefixed titles" $
+      assertEqual "" "lord-of-the-flies" (titleToKebabCase "👦🏝️ Lord of the Flies")
+  ]
+
+extractAsinTests :: TestTree
+extractAsinTests = testGroup "extractAsin"
+  [ testCase "extracts ASIN from /dp/ URL" $
+      assertEqual "" (Just "B0ABCDE123") $
+        extractAsin "https://www.amazon.com/dp/B0ABCDE123"
+
+  , testCase "extracts ASIN from full product URL with title" $
+      assertEqual "" (Just "0345339738") $
+        extractAsin "https://www.amazon.com/Hitchhikers-Guide-Galaxy-Douglas-Adams/dp/0345339738"
+
+  , testCase "extracts ASIN from /gp/product/ URL" $
+      assertEqual "" (Just "0345339738") $
+        extractAsin "https://www.amazon.com/gp/product/0345339738"
+
+  , testCase "returns Nothing for URL without ASIN pattern" $
+      assertEqual "" Nothing $
+        extractAsin "https://www.amazon.com/s?k=dune"
+
+  , testCase "returns Nothing for non-Amazon URL" $
+      assertEqual "" Nothing $
+        extractAsin "https://www.goodreads.com/book/show/12345"
+
+  , testCase "returns Nothing when ASIN is too short" $
+      assertEqual "" Nothing $
+        extractAsin "https://www.amazon.com/dp/SHORT"
+
+  , testCase "returns Nothing when ASIN is too long" $
+      assertEqual "" Nothing $
+        extractAsin "https://www.amazon.com/dp/TOOLONGASIN12"
+
+  , testCase "extracts numeric ASIN (ISBN-10)" $
+      assertEqual "" (Just "0140449469") $
+        extractAsin "https://www.amazon.com/dp/0140449469"
+  ]
+
+buildAffiliateUrlTests :: TestTree
+buildAffiliateUrlTests = testGroup "buildAffiliateUrl"
+  [ testCase "builds correct affiliate URL format" $
+      assertEqual ""
+        "https://www.amazon.com/dp/B0ABCDE123?tag=mysite-20"
+        (buildAffiliateUrl "B0ABCDE123" "mysite-20")
+
+  , testCase "includes the ASIN" $
+      assertBool "ASIN in URL" $
+        T.isInfixOf "0345339738" (buildAffiliateUrl "0345339738" "test-20")
+
+  , testCase "includes the associate tag" $
+      assertBool "tag in URL" $
+        T.isInfixOf "tag=test-associate-20" (buildAffiliateUrl "B0ABCDE123" "test-associate-20")
+
+  , testCase "URL starts with amazon.com" $
+      assertBool "amazon.com prefix" $
+        T.isPrefixOf "https://www.amazon.com/" (buildAffiliateUrl "B0ABCDE123" "test-20")
+  ]
+
+buildBookFrontmatterTests :: TestTree
+buildBookFrontmatterTests = testGroup "buildBookFrontmatter"
+  [ testCase "includes title in aliases" $ do
+      let fm = buildBookFrontmatter "Lord of the Flies" "lord-of-the-flies" Nothing
+      assertBool "title in aliases" (T.isInfixOf "Lord of the Flies" fm)
+
+  , testCase "includes URL with slug" $ do
+      let fm = buildBookFrontmatter "Dune" "dune" Nothing
+      assertBool "URL in frontmatter" $
+        T.isInfixOf "https://bagrounds.org/books/dune" fm
+
+  , testCase "includes affiliate link when provided" $ do
+      let fm = buildBookFrontmatter "Dune" "dune" (Just "https://www.amazon.com/dp/B0001?tag=test-20")
+      assertBool "affiliate link in frontmatter" $
+        T.isInfixOf "affiliate link:" fm
+
+  , testCase "omits affiliate link when not provided" $ do
+      let fm = buildBookFrontmatter "Dune" "dune" Nothing
+      assertBool "no affiliate link" $
+        not (T.isInfixOf "affiliate link:" fm)
+
+  , testCase "starts with YAML front matter delimiter" $ do
+      let fm = buildBookFrontmatter "Dune" "dune" Nothing
+      assertBool "starts with ---" (T.isPrefixOf "---" fm)
+
+  , testCase "ends with YAML front matter delimiter" $ do
+      let fm = buildBookFrontmatter "Dune" "dune" Nothing
+      assertBool "ends with ---" (T.isSuffixOf "---" fm)
+
+  , testCase "includes share: true" $ do
+      let fm = buildBookFrontmatter "Dune" "dune" Nothing
+      assertBool "share: true" (T.isInfixOf "share: true" fm)
+  ]
+
+buildBookBodyTests :: TestTree
+buildBookBodyTests = testGroup "buildBookBody"
+  [ testCase "includes nav breadcrumb" $ do
+      let body = buildBookBody "Dune" "## Book Report\nDune is..." Nothing Gemini.Gemini25Flash
+      assertBool "Home link" (T.isInfixOf "[[index|🏡 Home]]" body)
+      assertBool "Books link" (T.isInfixOf "[[/books/index|📚 Books]]" body)
+
+  , testCase "includes the H1 title" $ do
+      let body = buildBookBody "Dune" "content" Nothing Gemini.Gemini25Flash
+      assertBool "H1 title" (T.isInfixOf "# Dune" body)
+
+  , testCase "includes the report content" $ do
+      let report = "## Summary\nThis is a great book."
+          body = buildBookBody "Dune" report Nothing Gemini.Gemini25Flash
+      assertBool "report content" (T.isInfixOf report body)
+
+  , testCase "includes Gemini prompt attribution" $ do
+      let body = buildBookBody "Dune" "content" Nothing Gemini.Gemini25Flash
+      assertBool "Gemini attribution" (T.isInfixOf "Gemini" body)
+
+  , testCase "includes affiliate link line when provided" $ do
+      let link = "https://www.amazon.com/dp/B0001?tag=test-20"
+          body = buildBookBody "Dune" "content" (Just link) Gemini.Gemini25Flash
+      assertBool "affiliate link in body" (T.isInfixOf "Amazon Associate" body)
+      assertBool "affiliate URL in body" (T.isInfixOf link body)
+
+  , testCase "omits affiliate link line when not provided" $ do
+      let body = buildBookBody "Dune" "content" Nothing Gemini.Gemini25Flash
+      assertBool "no Amazon Associate line" (not (T.isInfixOf "Amazon Associate" body))
+  ]
+
+buildBookFileContentTests :: TestTree
+buildBookFileContentTests = testGroup "buildBookFileContent"
+  [ testCase "contains both frontmatter and body" $ do
+      let content = buildBookFileContent "Dune" "## Summary\nGreat book." Nothing Gemini.Gemini25Flash
+      assertBool "has frontmatter start" (T.isInfixOf "---\nshare:" content)
+      assertBool "has nav breadcrumb" (T.isInfixOf "[[index|🏡 Home]]" content)
+
+  , testCase "derives slug from title for URL" $ do
+      let content = buildBookFileContent "The Great Gatsby" "content" Nothing Gemini.Gemini25Flash
+      assertBool "slug in URL" (T.isInfixOf "books/the-great-gatsby" content)
+  ]
+
+booksSectionHeadingTests :: TestTree
+booksSectionHeadingTests = testGroup "booksSectionHeading"
+  [ testCase "is a level-2 markdown heading" $
+      assertBool "## prefix" (T.isPrefixOf "## " booksSectionHeading)
+
+  , testCase "links to the books index" $
+      assertBool "books/index link" (T.isInfixOf "/books/index" booksSectionHeading)
+
+  , testCase "uses the Books emoji and label" $
+      assertBool "📚 Books" (T.isInfixOf "📚 Books" booksSectionHeading)
+  ]
+
+insertBookLinkTests :: TestTree
+insertBookLinkTests = testGroup "insertBookLink"
+  [ testCase "inserts book link under existing books section" $ do
+      let content = "# 2026-04-30\n\n" <> booksSectionHeading <> "\n- [[books/dune|Dune]]\n\n## 📢 Updates\n"
+          updated = insertBookLink content "lord-of-the-flies" "Lord of the Flies"
+      assertBool "new book link present" (T.isInfixOf "[[books/lord-of-the-flies|Lord of the Flies]]" updated)
+      assertBool "existing link preserved" (T.isInfixOf "[[books/dune|Dune]]" updated)
+
+  , testCase "creates new books section when none exists" $ do
+      let content = "# 2026-04-30\n\nSome content here.\n"
+          updated = insertBookLink content "dune" "Dune"
+      assertBool "section created" (T.isInfixOf booksSectionHeading updated)
+      assertBool "link created" (T.isInfixOf "[[books/dune|Dune]]" updated)
+
+  , testCase "is idempotent — does not duplicate a link" $ do
+      let content = "# 2026-04-30\n\n" <> booksSectionHeading <> "\n- [[books/dune|Dune]]\n"
+          updated = insertBookLink content "dune" "Dune"
+      assertEqual "content unchanged" content updated
+
+  , testCase "inserts books section before trailing social sections" $ do
+      let content = "# 2026-04-30\n\nContent.\n\n## 🐦 Twitter\n## 🦋 Bluesky\n"
+          updated = insertBookLink content "dune" "Dune"
+      let booksPos = T.length (fst (T.breakOn booksSectionHeading updated))
+          twitterPos = T.length (fst (T.breakOn "## 🐦 Twitter" updated))
+      assertBool "books section before twitter" (booksPos < twitterPos)
+
+  , testCase "inserts books section before changes section" $ do
+      let content = "# 2026-04-30\n\nContent.\n\n## [[changes/index|🔄 Changes]]\n"
+          updated = insertBookLink content "dune" "Dune"
+      assertBool "books section created" (T.isInfixOf booksSectionHeading updated)
+
+  , testCase "appends at end when no trailing sections exist" $ do
+      let content = "# 2026-04-30\n\nJust content here.\n"
+          updated = insertBookLink content "dune" "Dune"
+      assertBool "link appended" (T.isInfixOf "[[books/dune|Dune]]" updated)
+  ]
+
+propertyTests :: TestTree
+propertyTests = testGroup "properties"
+  [ testProperty "titleToKebabCase output is all lowercase-alphanumeric-or-hyphen" $
+      QC.forAll genPrintableText $ \title ->
+        let slug = titleToKebabCase title
+        in T.all (\character -> isLower character || isDigit character || character == '-') slug
+
+  , testProperty "titleToKebabCase never produces leading or trailing hyphens" $
+      QC.forAll genPrintableText $ \title ->
+        let slug = titleToKebabCase title
+        in T.null slug || (T.head slug /= '-' && T.last slug /= '-')
+
+  , testProperty "titleToKebabCase never produces consecutive hyphens" $
+      QC.forAll genPrintableText $ \title ->
+        let slug = titleToKebabCase title
+        in not (T.isInfixOf "--" slug)
+
+  , testProperty "insertBookLink is idempotent" $
+      QC.forAll genBookSlug $ \slug ->
+        QC.forAll genPrintableText $ \title ->
+          let content = "# Reflection\n\nSome content.\n"
+              once = insertBookLink content slug title
+              twice = insertBookLink once slug title
+          in once == twice
+
+  , testProperty "extractAsin . buildAffiliateUrl roundtrip" $
+      QC.forAll genValidAsin $ \productAsin ->
+        let url = buildAffiliateUrl productAsin "test-20"
+        in extractAsin url == Just productAsin
+  ]
+
+genPrintableText :: QC.Gen Text
+genPrintableText = T.pack <$> QC.listOf (QC.elements (['a'..'z'] <> ['A'..'Z'] <> ['0'..'9'] <> " -:!"))
+
+genBookSlug :: QC.Gen Text
+genBookSlug = T.pack <$> QC.listOf1 (QC.elements (['a'..'z'] <> ['0'..'9'] <> "-"))
+
+genValidAsin :: QC.Gen Text
+genValidAsin = T.pack <$> QC.vectorOf 10 (QC.elements (['A'..'Z'] <> ['0'..'9']))

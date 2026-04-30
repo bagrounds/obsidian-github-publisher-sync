@@ -7,11 +7,16 @@ share: true
 affiliate link: https://amzn.to/3HetfOr
 CTA: 🧠 Apply user insights.
 link_analysis_model: gemini-3.1-flash-lite-preview
-link_analysis_time: 2026-04-05T00:00:00Z
+link_analysis_time: 2026-04-27T00:00:00Z
 force_analyze_links: false
+link_analysis_version: "2"
+image_date: 2026-04-30T14:54:53Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: "A clean, minimalist isometric composition featuring a glowing human brain integrated with geometric architectural elements. Floating around the brain are stylized 3D icons representing UX principles: a large clickable target, a simplified decision-making flowchart, and a series of balanced, orderly shapes. The color palette uses deep navy, electric blue, and soft coral accents against a neutral off-white background. The lighting is soft and diffused, highlighting the intersection of organic biological curves and precise mathematical lines, symbolizing the harmony between human cognition and structural design. The overall aesthetic is professional, modern, and intellectual."
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🧠📐 Laws of UX: Using Psychology to Design Better Products & Services  
+![books-laws-of-ux-using-psychology-to-design-better-products-services](../books-laws-of-ux-using-psychology-to-design-better-products-services.jpg)  
 [🛒 Laws of UX: Using Psychology to Design Better Products & Services. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3HetfOr)  
   
 ## 📝🐒 Human Notes  

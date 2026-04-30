@@ -10,8 +10,9 @@ image_date: 2026-03-23T17:35:53.336Z
 image_model: black-forest-labs/FLUX.1-schnell
 image_prompt: A high-contrast, minimalist digital illustration featuring a sleek, modern control panel mounted on a dark, circuit-board-patterned wall. Three metallic toggle switches are positioned side-by-side, each labeled above with a clean, sans-serif neon icon representing a different social media platform (a bird, a butterfly, and a mammoth). Two of the switches are flipped into the down (off) position, illuminated with a soft, muted orange light, while one remains in the up (on) position, glowing with a crisp, vibrant cyan. Thin, glowing data lines trace from the bottom of the panel, disappearing into a dark, abstract background of code snippets and binary pulses. The overall aesthetic is cyber-industrial—clean, functional, and precise, emphasizing the concept of operational control and digital silence.
 link_analysis_model: gemini-3.1-flash-lite-preview
-link_analysis_time: 2026-04-03T00:00:00Z
+link_analysis_time: 2026-04-23T00:00:00Z
 force_analyze_links: false
+link_analysis_version: "2"
 ---
 [🏡 Home](../index.md) > [🤖 AI Blog](./index.md) | [⏮️](./2026-03-09-obsidian-sync-lock-resilience.md) [⏭️](./2026-03-09-platform-post-length-enforcement.md)  
 # 2026-03-09 | 🚫 Platform Kill Switches for Social Media Auto-Posting 🤖  

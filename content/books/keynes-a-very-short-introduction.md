@@ -12,9 +12,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-18T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-04-30T11:38:57Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A stylized, abstract profile silhouette of John Maynard Keynes gazes towards the right. From his head, a series of interconnected, smooth gears and levers emerge, representing economic mechanisms. A symbolic, minimalist hand is subtly positioned as if adjusting one of the central levers. Below the gears, a wavy line graph illustrates economic cycles, with gentle peaks and troughs. Emerging from the adjusted gears, a more stable, upward-trending line or a solid, foundational block signifies stability and growth. The color palette features sophisticated blues and greens, accented with subtle golds and a touch of deep red for emphasis, creating a sense of insightful control and economic dynamism.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 💰 Keynes: A Very Short Introduction  
+![books-keynes-a-very-short-introduction](../books-keynes-a-very-short-introduction.jpg)  
 [🛒 Keynes: A Very Short Introduction. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4nwiAh6)  
   
 💪💡🌍 Distills the ideas of John Maynard Keynes, revealing his ethical philosophy, monetary theories, and the profound impact of his work on modern macroeconomics, emphasizing government's crucial role in stabilizing volatile economies.  

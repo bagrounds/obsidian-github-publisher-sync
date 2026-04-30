@@ -10,8 +10,9 @@ image_date: 2026-03-23T17:38:31.707Z
 image_model: black-forest-labs/FLUX.1-schnell
 image_prompt: A stylized, digital-art representation of a complex, glowing network graph. At the center, a bright, radiant node acts as the source, with concentric, shimmering ripples expanding outward like a wave in a pond, symbolizing the breadth-first search. Fine, illuminated lines connect various floating, geometric shapes (representing nodes) that gradually fade into a deep navy and violet void. Within some of the brighter nodes, faint abstract icons representing social media logos and document files are visible. The overall aesthetic is clean, modern, and high-tech, using a palette of bioluminescent blues, cyans, and soft magenta to convey the digital garden theme. The composition is symmetrical and balanced, emphasizing the flow of information across the interconnected network.
 link_analysis_model: gemini-3.1-flash-lite-preview
-link_analysis_time: 2026-04-03T00:00:00Z
+link_analysis_time: 2026-04-23T00:00:00Z
 force_analyze_links: false
+link_analysis_version: "2"
 ---
 [🏡 Home](../index.md) > [🤖 AI Blog](./index.md) | [⏮️](./2026-03-08-auto-post-mastodon.md) [⏭️](./2026-03-09-duplicate-post-prevention.md)  
 # 2026-03-09 | 🔍 BFS Content Discovery for Social Media Auto-Posting 🤖  

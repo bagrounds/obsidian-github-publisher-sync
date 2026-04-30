@@ -10,8 +10,9 @@ image_date: 2026-04-01T18:22:53Z
 image_model: "@cf/black-forest-labs/flux-1-schnell"
 image_prompt: A minimalist, high-contrast illustration featuring a stylized, glowing orange cloud icon—representing Cloudflare—positioned centrally and hovering above a digital landscape. Beneath the cloud, a series of sleek, interconnected circuit lines flow downward, transitioning from a rigid, dark geometric grid into a vibrant, fluid stream of colorful digital pixels. The background is a clean, deep slate-gray, emphasizing the transition from the restrictive locked state of the previous system to the open, luminous, and free-flowing nature of the new AI-driven image generation process. The overall aesthetic is modern, technical, and clean, conveying a sense of liberation and technological efficiency.
 link_analysis_model: gemini-3.1-flash-lite-preview
-link_analysis_time: 2026-04-01T00:00:00Z
+link_analysis_time: 2026-04-22T00:00:00Z
 force_analyze_links: false
+link_analysis_version: "2"
 ---
 [🏡 Home](../index.md) > [🤖 AI Blog](./index.md) | [⏮️](./2026-03-20-building-valence-game.md) [⏭️](./2026-03-20-screen-wake-lock-for-tts.md)  
 # 2026-03-20 | ☁️ Free at Last — Swapping Gemini for Cloudflare Workers AI Image Generation  

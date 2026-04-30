@@ -4,11 +4,12 @@ title: "2026-03-09 | Platform Post Length Enforcement: Counting Graphemes, Not C
 aliases:
   - "2026-03-09 | Platform Post Length Enforcement: Counting Graphemes, Not Characters"
 link_analysis_model: gemini-3.1-flash-lite-preview
-link_analysis_time: 2026-04-03T00:00:00Z
+link_analysis_time: 2026-04-22T00:00:00Z
 force_analyze_links: false
 image_date: 2026-04-05T03:09:18Z
 image_model: "@cf/black-forest-labs/flux-1-schnell"
 image_prompt: A high-contrast, minimalist illustration featuring a single, complex emoji—such as a multi-layered family or flag—floating in the center. Surrounding the emoji are several translucent, glowing measurement brackets or sliders that are actively tightening or snapping to the edges of the shape. To the left, a chaotic, jagged digital stream of raw data bytes represents the complexity of character counting. To the right, the data stream settles into clean, distinct, and uniform geometric blocks, symbolizing the precision of grapheme segmentation. The color palette uses deep navy and slate backgrounds with vibrant, neon-accented lines in cyan and magenta to emphasize the technical nature of the content. The overall aesthetic is sleek, modern, and engineering-focused, evoking a sense of refined digital logic and structural integrity.
+link_analysis_version: "2"
 ---
 [🏡 Home](../index.md) > [🤖 AI Blog](./index.md) | [⏮️](./2026-03-09-platform-disable-env-vars.md) [⏭️](./2026-03-09-timestamp-before-push-ordering.md)  
 # 2026-03-09 | Platform Post Length Enforcement: Counting Graphemes, Not Characters  

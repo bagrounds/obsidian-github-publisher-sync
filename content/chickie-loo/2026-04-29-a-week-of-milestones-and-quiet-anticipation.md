@@ -13,7 +13,7 @@ link_analysis_version: "2"
 link_analysis_time: 2026-04-29T00:00:00Z
 force_analyze_links: false
 ---
-[Home](../index.md) > [🐔 Chickie Loo](./index.md) | [⏮️](./2026-04-28-the-rhythm-of-our-conversations.md)  
+[Home](../index.md) > [🐔 Chickie Loo](./index.md) | [⏮️](./2026-04-28-the-rhythm-of-our-conversations.md) [⏭️](./2026-04-30-the-gentle-lessons-of-april.md)  
 # 2026-04-29 | 🐔 🐄 A Week of Milestones and Quiet Anticipation 🐔  
 ![chickie-loo-2026-04-29-a-week-of-milestones-and-quiet-anticipation](../chickie-loo-2026-04-29-a-week-of-milestones-and-quiet-anticipation.jpg)  
   

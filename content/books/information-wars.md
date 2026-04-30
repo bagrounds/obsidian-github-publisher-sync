@@ -12,9 +12,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-18T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-04-30T01:47:04Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A conceptual illustration featuring a digital landscape under siege. In the center, a fragmented, glowing human brain is being pulled apart by glowing, pixelated digital threads and jagged geometric shards. The background is a stark contrast between a crumbling, classical marble pillar on the left, representing traditional democratic truth, and a chaotic, neon-lit digital web on the right, representing the spread of misinformation. A dark, stormy sky hangs overhead, with faint, shadowy silhouettes of puppet strings descending from the clouds. The color palette uses deep navy, charcoal, and electric crimson to evoke a sense of high-stakes, asymmetric cyber-conflict. The lighting is dramatic, with the only source of warmth coming from the flickering, unstable light of the central brain.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 📰⚔️🧠 Information Wars: How We Lost the Global Battle Against Disinformation and What We Can Do About It  
+![books-information-wars](../books-information-wars.jpg)  
 [🛒 Information Wars: How We Lost the Global Battle Against Disinformation and What We Can Do About It. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3ZcSgPK)  
   
 ## 📖 Book Report: Information Wars  

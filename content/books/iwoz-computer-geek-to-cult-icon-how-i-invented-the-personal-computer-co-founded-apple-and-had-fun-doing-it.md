@@ -10,9 +10,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-24T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-04-30T09:48:43Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A stylized, minimalist workspace set in a 1970s-style garage. A wooden workbench is cluttered with vintage circuit boards, soldering irons, and a single, glowing Apple I prototype. Warm, golden sunlight streams through a dusty window, illuminating floating particles and highlighting the intricate, hand-soldered wiring of the computer. In the foreground, a pair of thick-rimmed glasses rests next to a playful, colorful Rubik’s cube, symbolizing the blend of engineering genius and whimsical fun. The aesthetic is nostalgic and warm, using a rich palette of amber, wood tones, and soft metallic grays to evoke the dawn of the personal computing revolution.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🧑‍💻🍎🌟😄 iWoz: Computer Geek to Cult Icon: How I Invented the Personal Computer, Co-Founded Apple, and Had Fun Doing It  
+![books-iwoz-computer-geek-to-cult-icon-how-i-invented-the-personal-computer-co-founded-apple-and-had-fun-doing-it](../books-iwoz-computer-geek-to-cult-icon-how-i-invented-the-personal-computer-co-founded-apple-and-had-fun-doing-it.jpg)  
 [🛒 iWoz: Computer Geek to Cult Icon: How I Invented the Personal Computer, Co-Founded Apple, and Had Fun Doing It. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3Njfu3l)  
   
 🍎💻✨ Steve Wozniak's journey from electronics enthusiast and prankster to co-founding Apple, inventing the personal computer, and prioritizing passion, simplicity, and fun over corporate ambition.  

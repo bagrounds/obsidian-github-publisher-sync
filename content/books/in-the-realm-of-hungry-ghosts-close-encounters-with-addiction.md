@@ -7,11 +7,16 @@ share: true
 CTA: 🙏 Empathize with suffering.
 affiliate link: https://amzn.to/4qAyytj
 link_analysis_model: gemini-3.1-flash-lite-preview
-link_analysis_time: 2026-04-06T00:00:00Z
+link_analysis_time: 2026-04-20T00:00:00Z
 force_analyze_links: false
+link_analysis_version: "2"
+image_date: 2026-04-29T22:32:51Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A surreal, haunting illustration featuring a translucent, ethereal figure wandering through a dark, misty forest. The figure is composed of swirling, smoky light, reaching out toward a shimmering, golden orb that remains perpetually just out of reach, symbolizing an insatiable hunger. Beneath the figure, the ground is cracked, revealing glowing, intricate neural pathways that look like roots intertwining with the soil. The color palette is dominated by deep indigo, charcoal, and muted purples, contrasted by the intense, warm glow of the unreachable orb and the internal neural network. The atmosphere is somber yet poignant, emphasizing a sense of profound isolation seeking connection and healing.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 👻🔗 In the Realm of Hungry Ghosts: Close Encounters with Addiction  
+![books-in-the-realm-of-hungry-ghosts-close-encounters-with-addiction](../books-in-the-realm-of-hungry-ghosts-close-encounters-with-addiction.jpg)  
 [🛒 In the Realm of Hungry Ghosts: Close Encounters with Addiction. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4qAyytj)  
   
 💔🧠🌍 In the Realm of Hungry Ghosts: Close Encounters with Addiction analyzes addiction not as a moral failing but as a deep-seated response to early trauma and emotional pain, advocating for compassion and systemic change over punitive measures.  

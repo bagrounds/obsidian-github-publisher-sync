@@ -6,11 +6,16 @@ URL: https://bagrounds.org/books/inner-excellence-train-your-mind-for-extraordin
 share: true
 affiliate link: https://amzn.to/46Lws0o
 link_analysis_model: gemini-3.1-flash-lite-preview
-link_analysis_time: 2026-04-03T00:00:00Z
+link_analysis_time: 2026-04-23T00:00:00Z
 force_analyze_links: false
+link_analysis_version: "2"
+image_date: 2026-04-30T08:57:35Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A minimalist, cinematic illustration featuring a solitary, athletic figure standing at the base of a vast, misty mountain range. The person is poised in a balanced, mindful stance, with a soft, warm golden glow emanating from their chest, symbolizing inner light and clarity. The landscape transitions from dark, jagged rocks at the bottom to a clear, expansive sky at the top, representing the journey from internal struggle to peak performance. The style is clean and modern, using a palette of deep navy, slate gray, and vibrant amber highlights. The composition emphasizes space and focus, conveying a sense of calm strength, mental discipline, and the pursuit of a higher purpose without any clutter or distractions.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🧠🏆 Inner Excellence: Train Your Mind for Extraordinary Performance and the Best Possible Life  
+![books-inner-excellence-train-your-mind-for-extraordinary-performance-and-the-best-possible-life](../books-inner-excellence-train-your-mind-for-extraordinary-performance-and-the-best-possible-life.jpg)  
 [🛒 Inner Excellence: Train Your Mind for Extraordinary Performance and the Best Possible Life. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/46Lws0o)  
   
 ## 🏆 Book Report: 🧠 Inner Excellence: Train Your Mind for Extraordinary Performance and the Best Possible Life  

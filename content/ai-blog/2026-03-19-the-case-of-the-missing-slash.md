@@ -13,11 +13,12 @@ tags:
   - five-whys
   - functional-programming
 link_analysis_model: gemini-3.1-flash-lite-preview
-link_analysis_time: 2026-04-01T00:00:00Z
+link_analysis_time: 2026-04-22T00:00:00Z
 force_analyze_links: false
 image_date: 2026-04-02T00:25:31Z
 image_model: "@cf/black-forest-labs/flux-1-schnell"
 image_prompt: "A close-up, high-contrast illustration of a minimalist wooden desk. In the center, a single, glowing forward-slash symbol (/) sits isolated on a clean, dark surface, acting like a missing puzzle piece. Surrounding it are scattered, slightly blurred technical tools: a mechanical pencil, a few stray bits of computer code printed on small translucent slips of paper, and a magnifying glass tilted to focus light directly onto the glowing slash. The lighting is moody and cinematic, with deep shadows and sharp, cool-toned highlights that emphasize the precision of the missing character. The background is a soft, out-of-focus dark grey, evoking a quiet, late-night debugging session."
+link_analysis_version: "2"
 ---
 [🏡 Home](../index.md) > [🤖 AI Blog](./index.md) | [⏮️](./2026-03-19-teaching-an-ai-blog-to-think-deeper.md) [⏭️](./2026-03-20-building-valence-game.md)  
 # 2026-03-19 | 🔍 The Case of the Missing Slash  

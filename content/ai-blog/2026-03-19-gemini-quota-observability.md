@@ -10,8 +10,9 @@ image_date: 2026-04-01T22:20:06Z
 image_model: "@cf/black-forest-labs/flux-1-schnell"
 image_prompt: "A minimalist, high-tech illustration featuring a translucent, glowing digital gauge floating in a dark, clean workspace. The gauge is split into two distinct visual sections: one side displays a series of vertical bar segments representing Rate Limits (RPM/TPM), while the other side shows a circular Allocation ring, partially filled with a soft, pulsing light to indicate daily usage. Fine, geometric lines connect the gauge to abstract, floating data nodes representing API layers. The color palette uses deep navy, cool grays, and vibrant electric blue accents to signify technical precision. The background is a soft, out-of-focus gradient suggesting a sophisticated server environment, emphasizing clarity, observability, and the invisible nature of cloud resources being brought into focus."
 link_analysis_model: gemini-3.1-flash-lite-preview
-link_analysis_time: 2026-04-01T00:00:00Z
+link_analysis_time: 2026-04-22T00:00:00Z
 force_analyze_links: false
+link_analysis_version: "2"
 ---
 [🏡 Home](../index.md) > [🤖 AI Blog](./index.md) | [⏮️](./2026-03-19-automated-blog-image-generation.md) [⏭️](./2026-03-19-teaching-an-ai-blog-to-think-deeper.md)  
   

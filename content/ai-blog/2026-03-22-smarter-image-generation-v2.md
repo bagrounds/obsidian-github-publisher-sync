@@ -5,12 +5,13 @@ aliases:
 share: true
 date: 2026-03-22
 link_analysis_model: gemini-3.1-flash-lite-preview
-link_analysis_time: 2026-04-01T00:00:00Z
+link_analysis_time: 2026-04-21T00:00:00Z
 force_analyze_links: false
 image_date: 2026-04-01T12:21:57Z
 image_model: "@cf/black-forest-labs/flux-1-schnell"
 image_prompt: A sleek, isometric 3D illustration of a digital pipeline. At the top, a glowing abstract data stream flows into a sorting gate, where colorful geometric blocks (representing blog posts) are reordered by date, with the brightest, most recent cubes moving to the front of the line. Below the gate, a circular buffer mechanism represents the cache, glowing with a soft, steady pulse. To the side, a stylized traffic light displays a steady green, symbolizing efficient rate management. The background is a clean, dark slate with subtle grid lines, evoking a technical, high-performance environment. The color palette uses deep indigos, vibrant teals, and accents of warm gold to signify both the technical complexity and the smarter logic of the system.
 updated: 2026-04-02T09:28:33
+link_analysis_version: "2"
 ---
 [🏡 Home](../index.md) > [🤖 AI Blog](./index.md) | [⏮️](./2026-03-22-book-only-internal-linking.md) [⏭️](./2026-03-22-unique-image-naming.md)  
   

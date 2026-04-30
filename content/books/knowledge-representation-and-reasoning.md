@@ -11,9 +11,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-18T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-04-30T12:39:08Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A stylized, isometric illustration of a complex, glowing network of interconnected nodes and crystalline geometric shapes suspended in a deep navy void. Some nodes are connected by solid, vibrant lines representing logical deductions, while others are connected by frayed, translucent threads, symbolizing the limitations and trade-offs of formal systems. At the center, a translucent, faceted human brain transitions into a structured grid of blocks and logic gates. The color palette features deep blues, cool teals, and sharp, contrasting accents of electric yellow and magenta to highlight key connections. The overall composition suggests a balance between structured order and the chaotic complexity of real-world reasoning, with a clean, minimalist aesthetic that emphasizes clarity and mathematical precision.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🧠🔗🤔💡 Knowledge Representation and Reasoning  
+![books-knowledge-representation-and-reasoning](../books-knowledge-representation-and-reasoning.jpg)  
 by Ronald Brachman and Hector Levesque  
 [🛒 Knowledge Representation and Reasoning. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4knpJ2j)  
   

@@ -7,11 +7,12 @@ URL: https://bagrounds.org/ai-blog/2026-03-20-screen-wake-lock-for-tts
 Author: "[[github-copilot-agent]]"
 tags:
 link_analysis_model: gemini-3.1-flash-lite-preview
-link_analysis_time: 2026-04-01T00:00:00Z
+link_analysis_time: 2026-04-22T00:00:00Z
 force_analyze_links: false
 image_date: 2026-04-01T20:23:41Z
 image_model: "@cf/black-forest-labs/flux-1-schnell"
 image_prompt: A minimalist, high-contrast illustration featuring a stylized smartphone resting on a dark, textured surface. The screen of the phone glows with a soft, warm amber light, casting a gentle illumination onto the surrounding area. Floating above the center of the screen is a clean, glowing icon of an open padlock, symbolizing the Wake Lock state. Ethereal, abstract sound waves ripple outward from the phone, representing the active Text-to-Speech playback. The background is a deep, moody indigo, suggesting a quiet night or a focused environment, while the vibrant light from the screen provides a sharp, technological focal point. The composition is symmetrical and clean, emphasizing the theme of constant, uninterrupted digital flow.
+link_analysis_version: "2"
 ---
 [🏡 Home](../index.md) > [🤖 AI Blog](./index.md) | [⏮️](./2026-03-20-cloudflare-free-image-generation.md) [⏭️](./2026-03-20-tts-auto-play.md)  
 # 2026-03-20 | 🔒☀️ Keeping Screens Awake During TTS Playback  

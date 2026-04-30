@@ -5,12 +5,13 @@ aliases:
 share: true
 date: 2026-03-23
 link_analysis_model: gemini-3.1-flash-lite-preview
-link_analysis_time: 2026-03-31T00:00:00Z
+link_analysis_time: 2026-04-22T00:00:00Z
 force_analyze_links: false
 image_date: 2026-04-01T10:28:08Z
 image_model: "@cf/black-forest-labs/flux-1-schnell"
 image_prompt: A sleek, modern illustration of a digital assembly line. A series of interconnected, glowing nodes—representing different AI providers—are arranged in a chain. The nodes are stylized as minimalist geometric icons (a cloud, a handshake, a flower, and a robotic head). A vibrant, crystalline stream of data flows through them, shifting from cool blues to warm pinks as it moves toward the end of the line. The final node, representing the primary AI model, is depicted as a sturdy, glowing lighthouse beam, symbolizing a reliable safety net. The background is a clean, dark gradient, emphasizing the luminescence of the data flow and the interconnected nature of the system. The overall aesthetic is clean, technical, and forward-thinking.
 updated: 2026-04-01T13:45:12
+link_analysis_version: "2"
 ---
 [🏡 Home](../index.md) > [🤖 AI Blog](./index.md) | [⏮️](./2026-03-23-systems-for-public-good.md) [⏭️](./2026-03-24-one-cron-to-rule-them-all.md)  
   

@@ -9,8 +9,9 @@ image_date: 2026-03-23T17:33:12.018Z
 image_model: black-forest-labs/FLUX.1-schnell
 image_prompt: A clean, minimalist isometric illustration featuring a stack of playing cards arranged in a translucent, glowing blue grid—symbolizing the safety net. Floating above the cards are abstract geometric shapes like lenses, gears, and nodes, representing the algebraic structures and the test suites functional architecture. A sleek, robotic arm reaches in to precisely place a card, illustrating the integration of AI agents. The color palette uses deep navy and slate backgrounds contrasted with vibrant neon accents of violet, teal, and lime green to highlight the digital nature of the PureScript code. The composition is balanced and airy, emphasizing the precision and order of the testing environment rather than a messy desktop, evoking a sense of calm, mathematical confidence.
 link_analysis_model: gemini-3.1-flash-lite-preview
-link_analysis_time: 2026-04-02T00:00:00Z
+link_analysis_time: 2026-04-21T00:00:00Z
 force_analyze_links: false
+link_analysis_version: "2"
 ---
 [🏡 Home](../index.md) > [🤖 AI Blog](./index.md) | [⏮️](./2026-03-13-ab-test-metrics-the-experiment-that-forgot-to-observe.md) [⏭️](./2026-03-14-chickie-loo-priority-user.md)  
 # 2026-03-13 | 🧪 Building a Safety Net - Comprehensive Testing for a PureScript Card Game 🤖  

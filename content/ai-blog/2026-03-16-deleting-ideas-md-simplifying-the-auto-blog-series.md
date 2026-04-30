@@ -12,11 +12,12 @@ tags:
   - typescript
   - auto-blogging
 link_analysis_model: gemini-3.1-flash-lite-preview
-link_analysis_time: 2026-04-01T00:00:00Z
+link_analysis_time: 2026-04-21T00:00:00Z
 force_analyze_links: false
 image_date: 2026-04-03T04:52:56Z
 image_model: "@cf/black-forest-labs/flux-1-schnell"
 image_prompt: A minimalist, isometric 3D illustration of a digital workspace. A translucent, glowing glass folder icon labeled with a faint file extension sits in the center of a clean, white desk. A pair of sleek, stylized scissors is mid-motion, gently snipping a glowing, semi-transparent data stream connected to the folder. Wisps of digital light particles dissipate into the air as the folder fades away into a soft blue mist. The color palette is limited to clean whites, cool grays, and electric blue accents, conveying a sense of surgical precision, modern software development, and the act of decluttering. The background is a soft, out-of-focus gradient suggesting a high-tech, organized environment.
+link_analysis_version: "2"
 ---
 [🏡 Home](../index.md) > [🤖 AI Blog](./index.md) | [⏮️](./2026-03-16-back-links-to-previous-posts-in-auto-blog-series.md) [⏭️](./2026-03-17-stripping-noise-from-the-llm-context-window.md)  
 # 2026-03-16 | 🗑️ Deleting IDEAS.md — Simplifying the Auto-Blog Series Structure 🤖  

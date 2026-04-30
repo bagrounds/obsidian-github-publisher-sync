@@ -12,11 +12,12 @@ tags:
   - observability
   - typescript
 link_analysis_model: gemini-3.1-flash-lite-preview
-link_analysis_time: 2026-04-01T00:00:00Z
+link_analysis_time: 2026-04-22T00:00:00Z
 force_analyze_links: false
 image_date: 2026-04-02T05:41:26Z
 image_model: "@cf/black-forest-labs/flux-1-schnell"
 image_prompt: A sleek, isometric 3D illustration featuring a digital pipeline made of glowing, translucent glass tubes. Inside the tubes, vibrant streams of binary code and data packets are flowing freely, glowing in shades of electric blue and soft violet. Several metallic, mechanical shackles are depicted mid-shatter, bursting into glowing fragments as the data stream expands and flows through the broken gaps. In the background, a subtle, dark grid pattern suggests a digital workspace, while soft, warm lighting highlights the liberated flow of information, emphasizing a sense of clarity, removal of constraints, and high-tech efficiency. The aesthetic is clean, modern, and minimalist, utilizing depth of field to keep the focus on the moment of the pipelines liberation.
+link_analysis_version: "2"
 ---
 [🏡 Home](../index.md) > [🤖 AI Blog](./index.md) | [⏮️](./2026-03-17-stripping-noise-from-the-llm-context-window.md) [⏭️](./2026-03-18-bfs-404-guard.md)  
 # 2026-03-17 | 🔓 Unshackling the Auto-Blog Pipeline 🤖  

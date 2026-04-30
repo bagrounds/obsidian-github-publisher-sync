@@ -10,9 +10,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-17T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-04-30T11:39:03Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A high-angle, cinematic shot of a sleek, modern glass skyscraper in a global financial hub at dusk. The building’s facade is partially transparent, revealing a glowing, golden labyrinth of currency symbols, complex geometric gears, and interlocking pipes hidden within its steel frame. Outside, the city is shrouded in deep, shadowy blues, while the interior of the building emits a harsh, artificial light. In the foreground, a single, pristine white marble statue of Lady Justice lies cracked and partially submerged in a dark, murky pool of oil or ink. The contrast between the polished, hyper-modern architecture and the corruption bleeding into the environment creates a sense of systemic, hidden decay. The aesthetic is sharp, professional, and ominous, emphasizing the intersection of high finance and illicit influence.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 💸🌍 Kleptopia: How Dirty Money Is Conquering the World  
+![books-kleptopia-how-dirty-money-is-conquering-the-world](../books-kleptopia-how-dirty-money-is-conquering-the-world.jpg)  
 [🛒 Kleptopia: How Dirty Money Is Conquering the World. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/48wEJHX)  
   
 💸🌍 Kleptopia: How Dirty Money Is Conquering the World, by Tom Burgis, exposes how a global network of kleptocrats, facilitated by Western enablers, launders vast sums of dirty money, undermining democracy and perpetuating authoritarianism worldwide 💸🌍.  

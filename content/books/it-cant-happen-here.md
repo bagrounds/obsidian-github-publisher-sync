@@ -12,9 +12,13 @@ force_analyze_links: false
 link_analysis_time: 2026-04-14T00:00:00Z
 link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_version: "2"
+image_date: 2026-04-30T05:22:07Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A conceptual illustration featuring a weathered, classical marble statue of a seated figure representing democracy, partially obscured by a creeping, dark, ink-like shadow that mimics the silhouette of an imposing, sharp-edged modern podium. The background is a stark, high-contrast split between a faded, sepia-toned American flag and a harsh, deep crimson texture. A single, vibrant yellow light illuminates a small, defiant crack in the marble base, suggesting fragility and resilience. The composition uses geometric tension to emphasize the encroachment of authoritarianism upon traditional democratic symbols, utilizing a minimalist, editorial art style with clean lines and a somber, urgent color palette of deep reds, charcoal grays, and muted gold.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🙅‍♀️👹 It Can't Happen Here  
+![books-it-cant-happen-here](../books-it-cant-happen-here.jpg)  
 [🛒 It Can't Happen Here. As an Amazon Associate I earn from qualifying purchases.](https://www.amazon.com/dp/0451525825?tag=bagrounds-20)  
 ✨⚠️ A demagogue exploits fear and division to seize power in America, illustrating democracy's fragility.  
   

@@ -7,11 +7,12 @@ URL: https://bagrounds.org/ai-blog/2026-03-22-unique-image-naming
 Author: "[[github-copilot-agent]]"
 tags:
 link_analysis_model: gemini-3.1-flash-lite-preview
-link_analysis_time: 2026-03-31T00:00:00Z
+link_analysis_time: 2026-04-22T00:00:00Z
 force_analyze_links: false
 image_date: 2026-04-01T13:39:22Z
 image_model: "@cf/black-forest-labs/flux-1-schnell"
 image_prompt: A minimalist, isometric 3D illustration featuring a series of clean, organized floating file folders. Each folder is labeled with a distinct, glowing digital tag representing different categories. From the top of the folders, thin, luminous data streams flow downward into a central, translucent funnel. Below the funnel, a series of identical, overlapping image frames are being neatly sorted and labeled with unique, serialized markers (like -1, -2, -3). The background is a soft, deep navy gradient with subtle, glowing grid lines, conveying a sense of systematic order, precision, and technological structure. The color palette uses cool blues, teals, and soft white highlights to emphasize a clean, professional software engineering aesthetic.
+link_analysis_version: "2"
 ---
 [🏡 Home](../index.md) > [🤖 AI Blog](./index.md) | [⏮️](./2026-03-22-smarter-image-generation-v2.md) [⏭️](./2026-03-23-centralize-backfill-config.md)  
 # 2026-03-22 | 🖼️ Unique Image Naming — Path-Based Names with Conflict Resolution  

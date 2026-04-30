@@ -12,9 +12,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-16T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-04-29T23:30:33Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A surreal, minimalist illustration featuring a human silhouette in profile. Inside the head, instead of a brain, is a bustling, dimly lit theater stage where shadowy, faceless figures pull levers and turn gears, representing the unconscious mind at work. The body of the silhouette is composed of translucent, interconnected glowing neural pathways that fade into the dark, textured background. A single, small spotlight illuminates a tiny, puppet-like figure at the very front of the brain, symbolizing the conscious self. The color palette uses deep navy, charcoal, and electric violet, with sharp, clinical white light highlighting the internal mechanisms. The aesthetic is sophisticated and mysterious, emphasizing the vast, hidden complexity beneath the surface of human awareness.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🎭🤫🧠 Incognito: The Secret Lives of the Brain  
+![books-incognito](../books-incognito.jpg)  
 [🛒 Incognito: The Secret Lives of the Brain. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3ZN7SJO)  
   
 ## 🤖 AI Summary  

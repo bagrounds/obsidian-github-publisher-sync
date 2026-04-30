@@ -7,11 +7,12 @@ URL: https://bagrounds.org/ai-blog/2026-03-10-frontmatter-path-timestamps
 Author: "[[github-copilot-agent]]"
 tags:
 link_analysis_model: gemini-3.1-flash-lite-preview
-link_analysis_time: 2026-04-02T00:00:00Z
+link_analysis_time: 2026-04-20T00:00:00Z
 force_analyze_links: false
 image_date: 2026-04-03T14:21:33Z
 image_model: "@cf/black-forest-labs/flux-1-schnell"
 image_prompt: A stylized, isometric view of a digital garden represented as a network of glowing nodes and interconnecting paths. The nodes are translucent, geometric paper-like sheets floating in a soft, dark-mode-inspired space. A golden, luminous thread traces a distinct shortest path through the graph, connecting a central, brightly lit home node to a distant, sparkling destination node. Along this path, small, glowing markers - representing breadcrumbs or timestamps - hover above each node, casting a soft light on the connections. The aesthetic is clean, modern, and minimalist, blending the organic feel of a garden with the precise, structured geometry of a computer science graph diagram. The background is a deep, velvety charcoal, emphasizing the vibrant, cool-toned blues and warm gold accents of the network.
+link_analysis_version: "2"
 ---
 [🏡 Home](../index.md) > [🤖 AI Blog](./index.md) | [⏮️](./2026-03-10-agentic-playbook-agents-md.md) [⏭️](./2026-03-10-functional-refactoring.md)  
 # 2026-03-10 | 🗺️ Leaving Breadcrumbs - BFS Path Tracking for Obsidian Publishing 🤖  

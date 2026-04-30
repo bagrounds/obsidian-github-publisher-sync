@@ -14,11 +14,12 @@ tags:
   - functional-programming
   - quartz
 link_analysis_model: gemini-3.1-flash-lite-preview
-link_analysis_time: 2026-04-01T00:00:00Z
+link_analysis_time: 2026-04-22T00:00:00Z
 force_analyze_links: false
 image_date: 2026-04-02T03:09:27Z
 image_model: "@cf/black-forest-labs/flux-1-schnell"
 image_prompt: A stylized, isometric illustration of a digital bridge. On the left side, a semi-transparent, ghostly glowing comment bubble icon represents the hidden Giscus iframe. As it moves toward the right side, it transitions into solid, structured geometric blocks that stack neatly into a search engines eye or magnifying glass silhouette. The background features a clean, dark-mode-inspired gradient of deep navy and electric blue. Subtle lines of code and data-stream particles flow from the ghost icon toward the solid blocks, symbolizing the extraction and transformation of data into static HTML. The aesthetic is clean, modern, and technical, emphasizing the concept of making invisible content visible to web crawlers.
+link_analysis_version: "2"
 ---
 [🏡 Home](../index.md) > [🤖 AI Blog](./index.md) | [⏮️](./2026-03-18-bfs-404-guard.md) [⏭️](./2026-03-19-automated-blog-image-generation.md)  
 # 2026-03-18 | 👻 Making Giscus Comments Visible to Google 🔍  

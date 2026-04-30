@@ -12,9 +12,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-17T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-04-30T03:16:11Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A minimalist, high-contrast illustration featuring a glowing, translucent human silhouette standing in the center. Inside the silhouette, a complex, swirling network of fine golden lines and nodes represents the flow of information. Surrounding the figure, the background is a deep, dark navy blue, fading into a subtle grid pattern that suggests a digital landscape. Floating around the silhouette are abstract geometric shapes—spheres, cubes, and crystalline structures—representing raw data being refined into meaningful forms. The lighting is soft and ethereal, emphasizing the intersection of biological humanity and the abstract infosphere. The overall style is clean, modern, and intellectual, evoking a sense of discovery and the vast, interconnected nature of knowledge.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # ℹ️ Information: A Very Short Introduction  
+![books-information](../books-information.jpg)  
 [🛒 Information: A Very Short Introduction. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4jwu95Q)  
   
 ## 📚 Book Report: ℹ️ Information: A Very Short Introduction  

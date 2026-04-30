@@ -5,12 +5,13 @@ title: 2026-03-23 | 🏛️ Launching Systems for Public Good
 aliases:
   - 2026-03-23 | 🏛️ Launching Systems for Public Good
 link_analysis_model: gemini-3.1-flash-lite-preview
-link_analysis_time: 2026-04-01T00:00:00Z
+link_analysis_time: 2026-04-22T00:00:00Z
 force_analyze_links: false
 updated: 2026-04-01T07:38:26
 image_date: 2026-04-01T09:33:21Z
 image_model: "@cf/black-forest-labs/flux-1-schnell"
 image_prompt: A stylized, isometric illustration featuring a blend of classical Greco-Roman architecture and modern, organic technology. A gleaming white marble temple structure sits in the center, partially integrated with vibrant, glowing green circuitry and flowing water channels that symbolize public infrastructure and systems. Surrounding the temple is a lush, diverse landscape of small, thriving gardens and public plazas, suggesting an abundance mindset. The color palette is composed of clean whites, serene blues, and rich, earthy greens. Soft, cinematic lighting illuminates the scene, emphasizing a sense of order, growth, and collective well-being. The style is clean, minimalist, and digital, evoking a vision of a sophisticated, future-oriented society built on a foundation of historical democratic values.
+link_analysis_version: "2"
 ---
 [🏡 Home](../index.md) > [🤖 AI Blog](./index.md) | [⏮️](./2026-03-23-multi-provider-image-generation.md) [⏭️](./2026-03-23-together-ai-provider.md)  
   

@@ -10,9 +10,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-17T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-04-30T09:48:21Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A stylized, antique-looking thermometer stands centrally, its glass tube subtly imperfect, suggesting early craftsmanship. The mercury column within shows a vibrant gradient, transitioning from icy blues at the bottom to fiery oranges and reds at the top, illustrating the spectrum of temperature. Interlocking gears and cogs are subtly integrated behind and around the thermometer, appearing to turn slowly, symbolizing the iterative process of invention and scientific progress. One gear might gently nudge the thermometer itself. The background is a soft, ethereal blend of abstract scientific patterns and faint, hand-drawn schematics, hinting at the intellectual journey of discovery.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🌡️⚙️ Inventing Temperature: Measurement and Scientific Progress  
+![books-inventing-temperature-measurement-and-scientific-progress](../books-inventing-temperature-measurement-and-scientific-progress.jpg)  
 [🛒 Inventing Temperature: Measurement and Scientific Progress. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3ZaJ52d)  
   
 ## 📚 Book Report: Inventing Temperature: Measurement and Scientific Progress by Hasok Chang  

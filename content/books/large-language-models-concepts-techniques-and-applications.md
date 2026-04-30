@@ -7,11 +7,16 @@ share: true
 affiliate link: https://amzn.to/3Ty40sY
 CTA: 💡 Unlock LLM potential.
 link_analysis_model: gemini-3.1-flash-lite-preview
-link_analysis_time: 2026-04-09T00:00:00Z
+link_analysis_time: 2026-04-17T00:00:00Z
 force_analyze_links: false
+link_analysis_version: "2"
+image_date: 2026-04-30T13:43:50Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A stylized, glowing brain at the core, rendered with subtle geometric facets. From its neural connections, abstract data streams branch out, transforming into a cascade of ethereal, fragmented letterforms and subtle speech bubble outlines. These elements flow downwards, subtly interacting with a minimalistic, glowing terminal window displaying abstract code symbols. The entire scene is interwoven with delicate, interconnected lines and nodes, suggesting a vast digital network. A vibrant, intelligent blue and purple color scheme dominates, with bright white or yellow accents highlighting key elements.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🤖🦜 Large Language Models: Concepts, Techniques and Applications  
+![books-large-language-models-concepts-techniques-and-applications](../books-large-language-models-concepts-techniques-and-applications.jpg)  
 [🛒 Large Language Models: Concepts, Techniques and Applications. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3Ty40sY)  
   
 ## 📖 Book Report: Large Language Models: Concepts, Techniques and Applications  

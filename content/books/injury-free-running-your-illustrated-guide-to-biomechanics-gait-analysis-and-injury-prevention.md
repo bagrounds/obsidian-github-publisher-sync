@@ -10,9 +10,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-21T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-04-30T05:21:23Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A high-contrast, artistic illustration of a runner’s skeletal structure superimposed over their muscular form, captured in mid-stride. The image uses a clean, technical aesthetic with glowing lines tracing the kinetic chain of the leg, highlighting the hip, knee, and ankle joints. Subtle, semi-transparent geometric overlays and vector arrows indicate force distribution and proper alignment vectors. The background is a minimalist, cool-toned gradient, suggesting a focus on precision and clinical analysis. The overall composition is balanced and scholarly, emphasizing the fusion of human anatomy and mechanical efficiency, rendered in a professional, modern style.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🏃🤕 Injury-Free Running: Your Illustrated Guide to Biomechanics, Gait Analysis, and Injury Prevention  
+![books-injury-free-running-your-illustrated-guide-to-biomechanics-gait-analysis-and-injury-prevention](../books-injury-free-running-your-illustrated-guide-to-biomechanics-gait-analysis-and-injury-prevention.jpg)  
 [🛒 Injury-Free Running: Your Illustrated Guide to Biomechanics, Gait Analysis, and Injury Prevention. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/47Kbmlm)  
   
 ## 📖 Book Report: 🏃‍♂️ Injury-Free Running: Your Illustrated Guide to Biomechanics, Gait Analysis, and Injury Prevention  

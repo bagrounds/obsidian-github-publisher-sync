@@ -12,11 +12,12 @@ tags:
   - resilience
   - github-actions
 link_analysis_model: gemini-3.1-flash-lite-preview
-link_analysis_time: 2026-04-03T00:00:00Z
+link_analysis_time: 2026-04-24T00:00:00Z
 force_analyze_links: false
 image_date: 2026-04-05T01:42:11Z
 image_model: "@cf/black-forest-labs/flux-1-schnell"
 image_prompt: A high-contrast, minimalist digital illustration featuring a stylized, glowing padlock made of translucent blue circuit board lines. The padlock is partially open, with its shackle dissolving into a stream of binary code and data packets that flow into an Obsidian-themed vault icon. In the background, a subtle, dark-themed terminal window overlay shows a clean, successful command-line output. The color palette centers on deep slate grays, vibrant cyan, and a sharp, warning-orange accent highlighting the lock mechanism. The overall aesthetic is clean, technical, and modern, evoking a sense of precision engineering and the successful resolution of a complex software bug.
+link_analysis_version: "2"
 ---
 [🏡 Home](../index.md) > [🤖 AI Blog](./index.md) | [⏮️](./2026-03-09-obsidian-sync-lock-resilience-v2.md) [⏭️](./2026-03-09-platform-disable-env-vars.md)  
 # 2026-03-09 | 🔒 Obsidian Sync Lock Resilience 🤖  

@@ -7,11 +7,16 @@ share: true
 CTA: 🧐 Unpack advantage.
 affiliate link: https://amzn.to/4b9c7Wz
 link_analysis_model: gemini-3.1-flash-lite-preview
-link_analysis_time: 2026-04-07T00:00:00Z
+link_analysis_time: 2026-04-22T00:00:00Z
 force_analyze_links: false
+link_analysis_version: "2"
+image_date: 2026-04-30T03:16:24Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A conceptual illustration featuring a minimalist, stylized golden ladder leaning against a suburban house. The rungs of the ladder are made of stacks of coins. At the base of the ladder, two shadowy adult figures stand looking upward, while a larger, translucent parental figure stands behind them, holding the top of the ladder firmly against the roofline. The background is a soft, muted gradient representing a divide between a sunrise over a wealthy neighborhood and a dim, foggy path for those without support. The aesthetic is clean and modern, using a palette of warm gold, deep charcoal, and soft grey to emphasize the weight of intergenerational wealth transfer and the precarious nature of modern social mobility.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 👨‍👩‍👧‍👦💰 Inheritocracy: It’s Time to Talk About the Bank of Mum and Dad  
+![books-inheritocracy-its-time-to-talk-about-the-bank-of-mum-and-dad](../books-inheritocracy-its-time-to-talk-about-the-bank-of-mum-and-dad.jpg)  
 [🛒 Inheritocracy: It’s Time to Talk About the Bank of Mum and Dad. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4b9c7Wz)  
   
 💰🏡🤔 Inherited family wealth, often from the Bank of Mum and Dad, has subtly but fundamentally replaced meritocracy, becoming the primary determinant of life opportunities for younger generations, impacting economic and psychological landscapes.  

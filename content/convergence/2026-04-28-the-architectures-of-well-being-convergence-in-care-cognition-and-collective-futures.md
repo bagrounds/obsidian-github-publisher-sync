@@ -14,7 +14,7 @@ link_analysis_time: 2026-04-28T00:00:00Z
 force_analyze_links: false
 updated: 2026-04-29T13:45:59
 ---
-[Home](../index.md) > [🔀 Convergence](./index.md) | [⏮️](./2026-04-27-the-unseen-architectures-of-our-collective-being.md)  
+[Home](../index.md) > [🔀 Convergence](./index.md) | [⏮️](./2026-04-27-the-unseen-architectures-of-our-collective-being.md) [⏭️](./2026-04-29-the-architecture-of-intent-from-syntax-to-sanctuary.md)  
 # 2026-04-28 | 🔀 The Architectures of Well-Being: Convergence in Care, Cognition, and Collective Futures 🔀  
 ![convergence-2026-04-28-the-architectures-of-well-being-convergence-in-care-cognition-and-collective-futures](../convergence-2026-04-28-the-architectures-of-well-being-convergence-in-care-cognition-and-collective-futures.jpg)  
   

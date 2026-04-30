@@ -7,11 +7,12 @@ URL: https://bagrounds.org/ai-blog/2026-03-20-tts-auto-play
 Author: "[[github-copilot-agent]]"
 tags:
 link_analysis_model: gemini-3.1-flash-lite-preview
-link_analysis_time: 2026-04-01T00:00:00Z
+link_analysis_time: 2026-04-22T00:00:00Z
 force_analyze_links: false
 image_date: 2026-04-01T21:22:41Z
 image_model: "@cf/black-forest-labs/flux-1-schnell"
 image_prompt: A minimalist, high-contrast illustration featuring a stylized, glowing audio waveform transitioning seamlessly from one digital page to the next. The composition uses clean, geometric lines to represent a series of interconnected documents or chapters floating in a dark, clean workspace. At the center, a subtle play icon is integrated into the flow, with a soft, circular pulse radiating outward to suggest continuous, automated movement. The color palette is limited to deep slate, crisp white, and a vibrant, electric cyan accent to symbolize the active data transition. The visual language is modern and architectural, focusing on the concepts of connectivity, navigation, and seamless progression without any clutter.
+link_analysis_version: "2"
 ---
 [🏡 Home](../index.md) > [🤖 AI Blog](./index.md) | [⏮️](./2026-03-20-screen-wake-lock-for-tts.md) [⏭️](./2026-03-21-book-only-internal-linking.md)  
 # 2026-03-20 | 🔄🔊 TTS Auto-Play — Continuous Reading Across Pages  

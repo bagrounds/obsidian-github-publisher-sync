@@ -56,13 +56,19 @@ fictionEligibilityCutoff day = LocalTime day (TimeOfDay 22 0 0)
 
 🔗 This is exactly the same shape as `reflectionTitleCutoff` — both tasks share the same 10 PM Pacific eligibility window. 🏠 Each module owns its own cutoff function, consistent with the library-developer module design principle.
 
-### 📅 5-Day Backfill in runAiFiction
+### 📅 Shared Abstraction: eligibleReflectionDays
 
-🔀 The `runAiFiction` function now mirrors the `runReflectionTitle` structure exactly. 🗓️ It generates 5 candidate days (today through today minus 4), filters to those whose cutoff has passed using `fictionEligibilityCutoff`, logs the Pacific time and eligible day count, and then calls a `tryFictionForDate` helper for each eligible day. 🛡️ A run at 1 AM on day D+1 will not touch D+1's reflection (its cutoff is D+1 at 10 PM — still in the future), but it will still generate fiction for day D if that was missed. 🔁 If the automation was down for several days, any reflections whose 10 PM cutoff has passed will be backfilled automatically on the next run — no manual intervention needed.
+🔀 Rather than duplicating the 5-day window logic in both task runners, the fix extracts a single pure function `eligibleReflectionDays` in the `Automation.Reflection` module:
+
+```haskell
+eligibleReflectionDays :: LocalTime -> (Day -> LocalTime) -> [Day]
+```
+
+🧩 The function takes the current Pacific local time and any eligibility cutoff function, then returns the subset of the last 5 calendar days whose cutoffs have passed. 🎯 Both `runAiFiction` and `runReflectionTitle` call it with their own cutoff function — `fictionEligibilityCutoff` and `reflectionTitleCutoff` respectively — so the window and filter logic lives in exactly one place. 🛡️ A run at 1 AM on day D+1 will not touch D+1's reflection (its cutoff is D+1 at 10 PM — still in the future), but it will still generate fiction or a title for day D if that was missed. 🔁 If the automation was down for several days, any reflections whose 10 PM cutoff has passed will be backfilled automatically on the next run — no manual intervention needed.
 
 ### 🔬 Pure and Testable
 
-🧪 The `fictionEligibilityCutoff` function is pure: it maps a `Day` to a `LocalTime` with no side effects. 📋 Eight tests verify that the cutoff is constructed correctly and that the comparison semantics are right: 10 PM exactly is eligible, one second before is not, midnight on the following day is eligible, noon on the same day is not.
+🧪 Both `fictionEligibilityCutoff` and `eligibleReflectionDays` are pure functions with no side effects. 📋 The `fictionEligibilityCutoff` tests cover the cutoff construction and comparison semantics. 📋 The `eligibleReflectionDays` tests cover today-included, today-excluded, exact boundary, 5-day window size, newest-first ordering, midnight-crossing, and month-boundary cases.
 
 ## 📉 Impact Assessment
 

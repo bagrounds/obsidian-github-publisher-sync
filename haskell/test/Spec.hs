@@ -26,6 +26,7 @@ import qualified Automation.StaticGiscusTest
 import qualified Automation.AiBlogLinksTest
 import qualified Automation.AiFictionTest
 import qualified Automation.DailyReflectionTest
+import qualified Automation.ReflectionTest
 import qualified Automation.PromptsTest
 import qualified Automation.JsonTest
 import qualified Automation.OgMetadataTest
@@ -85,6 +86,7 @@ main = defaultMain $ testGroup "Automation"
   , Automation.AiBlogLinksTest.tests
   , Automation.AiFictionTest.tests
   , Automation.DailyReflectionTest.tests
+  , Automation.ReflectionTest.tests
   , Automation.PromptsTest.tests
   , Automation.JsonTest.tests
   , Automation.ReflectionTitleTest.tests

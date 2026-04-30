@@ -24,7 +24,7 @@ import qualified Network.HTTP.Client as HTTP
 import Network.HTTP.Types.Status (statusCode)
 import System.Directory (createDirectoryIfMissing, doesDirectoryExist, doesFileExist, listDirectory, removeFile)
 import System.FilePath ((</>), dropExtension)
-import Data.Time (Day, defaultTimeLocale, parseTimeM, getCurrentTime, addDays, localDay)
+import Data.Time (Day, defaultTimeLocale, parseTimeM, getCurrentTime)
 
 import Automation.AiBlogLinks (NavLinkResult (..), aiBlogConfig, ensureAllNavLinks, buildReflectionLinks)
 import Automation.AiFiction
@@ -73,6 +73,7 @@ import qualified Automation.GoogleAnalytics as GA
 import qualified Automation.InternalLinking as IL
 import qualified Automation.Json as Json
 import Automation.PacificTime (formatDay, toPacificLocalTime, todayPacificDay, yesterdayPacificDay)
+import Automation.Reflection (eligibleReflectionDays)
 import Automation.ReflectionTitle
   ( ReflectionTitleConfig (ReflectionTitleConfig, rtcModels, rtcNoteContent, rtcDate, rtcRecentTitles)
   , ReflectionTitleResult (rtrFullTitle, rtrModel, rtrUpdatedContent)
@@ -390,9 +391,7 @@ runAiFiction context = do
 
   now <- getCurrentTime
   let localNow = toPacificLocalTime now
-      today = localDay localNow
-      candidateDays = map (\offset -> addDays (-offset) today) [0..4]
-      eligibleDays = filter (\day -> localNow >= fictionEligibilityCutoff day) candidateDays
+      eligibleDays = eligibleReflectionDays localNow fictionEligibilityCutoff
 
   logMsg $ "  🕐 Pacific time: " <> T.pack (show localNow) <> " — " <> T.pack (show (length eligibleDays)) <> " eligible day(s) to check"
 
@@ -438,9 +437,7 @@ runReflectionTitle context = do
 
   now <- getCurrentTime
   let localNow = toPacificLocalTime now
-      today = localDay localNow
-      candidateDays = map (\offset -> addDays (-offset) today) [0..4]
-      eligibleDays = filter (\day -> localNow >= reflectionTitleCutoff day) candidateDays
+      eligibleDays = eligibleReflectionDays localNow reflectionTitleCutoff
 
   logMsg $ "  🕐 Pacific time: " <> T.pack (show localNow) <> " — " <> T.pack (show (length eligibleDays)) <> " eligible day(s) to check"
 

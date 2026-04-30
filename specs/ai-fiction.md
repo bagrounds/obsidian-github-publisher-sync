@@ -61,7 +61,13 @@ fictionEligibilityCutoff :: Day -> LocalTime
 fictionEligibilityCutoff day = LocalTime day (TimeOfDay 22 0 0)
 ```
 
-🕐 A reflection on day `D` can receive fiction whenever `currentPacificTime >= fictionEligibilityCutoff D`. 🔄 `runAiFiction` scans the **last 5 calendar days**, filters to those whose cutoff has passed, and generates fiction for every eligible reflection that still lacks a fiction section. 🛡️ This handles midnight-crossing naturally: a run at 1 AM on day D+1 will not touch D+1's reflection (cutoff not yet reached) but will still catch D if it was missed. 🔁 If the automation was down for several days, any reflections whose 10 PM cutoff has passed will be backfilled automatically on the next run.
+🕐 A reflection on day `D` can receive fiction whenever `currentPacificTime >= fictionEligibilityCutoff D`. 🔄 `runAiFiction` uses the shared `eligibleReflectionDays` function from `Automation.Reflection` to scan the last 5 calendar days, filtering to those whose cutoff has passed, then generates fiction for every eligible reflection that still lacks a fiction section:
+
+```haskell
+eligibleReflectionDays :: LocalTime -> (Day -> LocalTime) -> [Day]
+```
+
+🧩 `runReflectionTitle` uses the same function with `reflectionTitleCutoff` — all 5-day window and filter logic lives in one place. 🛡️ This handles midnight-crossing naturally: a run at 1 AM on day D+1 will not touch D+1's reflection (cutoff not yet reached) but will still catch D if it was missed. 🔁 If the automation was down for several days, any reflections whose 10 PM cutoff has passed will be backfilled automatically on the next run.
 
 ## ✍️ Fiction Rules
 

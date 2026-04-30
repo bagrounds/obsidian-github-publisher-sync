@@ -11,9 +11,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-17T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-04-30T10:45:59Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A minimalist, high-contrast illustration featuring two stylized human silhouettes facing each other in profile. Between them, the space is filled with a soft, glowing, golden aura representing the listening bridge. One silhouette is slightly leaned back in a posture of calm attention, while the other appears to be exhaling a complex, tangled cloud of dark lines that transitions into smooth, flowing ribbons as it passes toward the listener. The background is a deep, muted navy blue, emphasizing the warmth of the golden light. The style is clean, modern, and vector-based, utilizing negative space to convey the concept of clearing emotional clutter through the act of being heard.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 👂🤫 Just Listen: Discover the Secret to Getting Through to Absolutely Anyone  
+![books-just-listen](../books-just-listen.jpg)  
 [🛒 Just Listen: Discover the Secret to Getting Through to Absolutely Anyone. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3Td6r3D)  
   
 ## 🤖 AI Summary  

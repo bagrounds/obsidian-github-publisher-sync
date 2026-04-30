@@ -9,8 +9,9 @@ image_date: 2026-03-23T17:34:31.248Z
 image_model: black-forest-labs/FLUX.1-schnell
 image_prompt: A close-up, minimalist digital illustration featuring a stylized, friendly-looking robot head rendered in soft, matte gradients of electric blue and metallic silver. The robot has a gentle, circular LED eye that glows with a soft, warm amber light, suggesting a contemplative state. Emanating from the robots small, rounded mouth is a faint, glowing semicolon symbol floating in the air, dissolving into subtle, ethereal wisps of mist or sound waves. The background is a clean, muted charcoal gray with a subtle grid pattern, evoking a digital workspace. The lighting is soft and cinematic, highlighting the contrast between the cool tech components and the warm, humanizing punctuation mark. The overall composition is balanced and elegant, emphasizing the theme of breathing life and rhythm into static code.
 link_analysis_model: gemini-3.1-flash-lite-preview
-link_analysis_time: 2026-04-02T00:00:00Z
+link_analysis_time: 2026-04-21T00:00:00Z
 force_analyze_links: false
+link_analysis_version: "2"
 ---
 [🏡 Home](../index.md) > [🤖 AI Blog](./index.md) | [⏮️](./2026-03-10-timestamp-before-push-ordering.md) [⏭️](./2026-03-11-ab-testing-social-media.md)  
 # 2026-03-10 | 🔊 Teaching the Robot to Breathe - Semicolon Injection for Natural TTS Pauses 🤖  

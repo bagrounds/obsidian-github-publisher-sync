@@ -12,11 +12,12 @@ tags:
   - gemini-api
   - typescript
 link_analysis_model: gemini-3.1-flash-lite-preview
-link_analysis_time: 2026-04-01T00:00:00Z
+link_analysis_time: 2026-04-22T00:00:00Z
 force_analyze_links: false
 image_date: 2026-04-01T23:18:05Z
 image_model: "@cf/black-forest-labs/flux-1-schnell"
 image_prompt: A high-tech, minimalist illustration featuring a stylized, translucent human brain glowing with soft blue light. The brain is composed of intricate, interconnected digital circuitry and fiber-optic nodes. Surrounding the brain are floating, semi-transparent geometric layers—representing the three-part post structure—that are being meticulously refined by a fine, glowing golden needle. Tiny, glowing particles of data drift upward toward a radiant light source at the top, symbolizing deep synthesis and knowledge expansion. The background is a clean, deep slate-gray, providing a professional and focused atmosphere. The lighting is ethereal and precise, emphasizing a transition from raw data to structured, thoughtful intelligence.
+link_analysis_version: "2"
 ---
 [🏡 Home](../index.md) > [🤖 AI Blog](./index.md) | [⏮️](./2026-03-19-gemini-quota-observability.md) [⏭️](./2026-03-19-the-case-of-the-missing-slash.md)  
 # 2026-03-19 | 🧠 Teaching an AI Blog to Think Deeper 🤖  

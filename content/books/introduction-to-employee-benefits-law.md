@@ -11,9 +11,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-17T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-04-30T08:57:46Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A clean, professional composition featuring a neatly organized wooden desk. On the surface, a thick, classic leather-bound law textbook sits open, with a pair of reading glasses resting on its pages. Beside the book is a brass fountain pen and a neatly stacked set of documents secured with a metal paperclip. In the background, a soft-focus office environment—suggested by a blurred bookshelf and warm, natural light filtering through a window—evokes a sense of order, expertise, and scholarly diligence. The color palette consists of rich mahogany, muted navy, and warm gold tones, conveying a sense of authority and academic tradition.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 👨‍💼➕ Introduction to Employee Benefits Law  
+![books-introduction-to-employee-benefits-law](../books-introduction-to-employee-benefits-law.jpg)  
 [🛒 Introduction to Employee Benefits Law. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/43C3pe9)  
   
 ## 📖 Introduction to Employee Benefits Law: Book Report  

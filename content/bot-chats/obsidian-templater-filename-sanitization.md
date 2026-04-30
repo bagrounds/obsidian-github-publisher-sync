@@ -11,6 +11,7 @@ image_date: 2026-04-12T06:44:43Z
 image_model: "@cf/black-forest-labs/flux-1-schnell"
 image_prompt: A clean, isometric-style illustration featuring a glowing, translucent obsidian cube floating above a minimalist workspace. Inside the cube, a digital stream of chaotic, messy characters (symbols, uppercase letters, and spaces) flows into a sleek, mechanical filter device at the base. From the bottom of the filter, the characters emerge transformed into perfectly uniform, lowercase, hyphenated text strings (kebab-case). The background is a soft, deep gradient of dark grays and muted purples, illuminated by gentle bioluminescent teal accents that trace the path of the data. The aesthetic is clean, technical, and organized, emphasizing the process of refinement and digital hygiene.
 link_analysis_version: "2"
+updated: 2026-04-30T03:17:56
 ---
 [Home](../index.md) > [Bot Chats](./index.md)  
 # ⚙️📝🧹 Obsidian Templater Filename Sanitization  
@@ -30,3 +31,11 @@ It replaces all sequences of non-alphanumeric characters with a single dash usin
 It removes any leading or trailing dashes from the filename using another replace() method with a regular expression.  
 Finally, it renames the file to the sanitized filename using tp.file.rename().  
 To use this script, simply create a new Templater template in Obsidian and paste the script into it. You can then run the template on any file to sanitize its filename.  
+  
+## 🦋 Bluesky    
+<blockquote class="bluesky-embed" data-bluesky-uri="at://did:plc:i4yli6h7x2uoj7acxunww2fc/app.bsky.feed.post/3mkonoveo542j" data-bluesky-cid="bafyreifybtumhvu324psbogfjrfic6jx6i54raq7a3x3f34twjs3mrytom"><p>⚙️📝🧹 Obsidian Templater Filename Sanitization  
+  
+#AI Q: 🧹 Messy file names: biggest struggle?  
+  
+🤖 Automation | 📝 Scripting | 🧹 Data Cleaning | ⚙️ Obsidian  
+https://bagrounds.org/bot-chats/obsidian-templater-filename-sanitization</p>&mdash; <a href="https://bsky.app/profile/did:plc:i4yli6h7x2uoj7acxunww2fc?ref_src=embed">Bryan Grounds (@bagrounds.bsky.social)</a> <a href="https://bsky.app/profile/did:plc:i4yli6h7x2uoj7acxunww2fc/post/3mkonoveo542j?ref_src=embed">2026-04-30T03:18:05.000Z</a></blockquote><script async src="https://embed.bsky.app/static/embed.js" charset="utf-8"></script>

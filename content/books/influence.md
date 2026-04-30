@@ -12,9 +12,13 @@ force_analyze_links: false
 link_analysis_time: 2026-04-15T00:00:00Z
 link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_version: "2"
+image_date: 2026-04-30T00:44:16Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: "A minimalist, high-contrast illustration featuring a stylized human silhouette in profile. From the center of the silhouettes head, a vibrant, interconnected network of glowing geometric lines radiates outward, symbolizing the psychological triggers of persuasion. Floating around the head are six subtle, translucent icons representing the core principles: a gift box (reciprocity), a checklist (commitment), a crowd of silhouettes (social proof), a crown (authority), a heart (liking), and an hourglass (scarcity). The background is a clean, deep slate-grey, while the icons and network glow in shades of soft gold, teal, and magenta. The overall aesthetic is modern, clean, and professional, emphasizing the complex, invisible architecture of human influence."
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🍃🧠🤝🏼 Influence: The Psychology of Persuasion  
+![books-influence](../books-influence.jpg)  
 [🛒 Influence: The Psychology of Persuasion. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4dJSMul)  
   
 ## 📝🐒 Human Notes   

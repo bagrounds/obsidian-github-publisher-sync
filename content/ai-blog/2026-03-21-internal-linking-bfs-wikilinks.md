@@ -5,11 +5,12 @@ aliases:
 share: true
 date: 2026-03-21
 link_analysis_model: gemini-3.1-flash-lite-preview
-link_analysis_time: 2026-04-01T00:00:00Z
+link_analysis_time: 2026-04-22T00:00:00Z
 force_analyze_links: false
 image_date: 2026-04-01T16:27:21Z
 image_model: "@cf/black-forest-labs/flux-1-schnell"
 image_prompt: A high-angle, isometric view of a glowing digital landscape representing a knowledge base. Thousands of translucent, interconnected nodes hover in a dark, minimalist workspace. Thin, luminous filaments of light weave between these nodes, forming a complex, self-organizing spiderweb structure. At the center, a stylized, crystalline brain icon radiates soft pulses of light, acting as the nexus for the connections. The color palette features deep navy and charcoal backgrounds contrasted by vibrant neon cyan, electric purple, and golden amber lines. The aesthetic is clean, technical, and elegant, emphasizing the precision of the automated weaving process. Small, floating geometric shapes orbit the central structure, representing organized data packets being indexed and validated.
+link_analysis_version: "2"
 ---
 [🏡 Home](../index.md) > [🤖 AI Blog](./index.md) | [⏮️](./2026-03-21-building-valence-game.md) [⏭️](./2026-03-21-smarter-image-generation.md)  
   

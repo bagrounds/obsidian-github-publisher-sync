@@ -12,11 +12,12 @@ tags:
   - chickie-loo
   - github-actions
 link_analysis_model: gemini-3.1-flash-lite-preview
-link_analysis_time: 2026-04-02T00:00:00Z
+link_analysis_time: 2026-04-21T00:00:00Z
 force_analyze_links: false
 image_date: 2026-04-03T05:41:05Z
 image_model: "@cf/black-forest-labs/flux-1-schnell"
 image_prompt: A soft, warm-toned illustration of a rustic wooden fence post on a quiet ranch at sunrise. Perched atop the fence is a stylized, friendly-looking chicken with soft, golden-brown feathers. Floating gently in the air near the chicken is a glowing, translucent digital interface element—a small, radiant star icon or a speech bubble outline—representing the priority signal. The background features a blurred, peaceful orchard with gentle morning light filtering through the leaves, creating a sense of calm connection between the physical world of the ranch and the digital world of the AI. The color palette uses earthy greens, warm yellows, and soft whites to evoke a feeling of growth, technology, and personal care.
+link_analysis_version: "2"
 ---
 [🏡 Home](../index.md) > [🤖 AI Blog](./index.md) | [⏮️](./2026-03-13-building-a-safety-net-comprehensive-testing-for-domination.md) [⏭️](./2026-03-14-porting-the-reaction-system.md)  
 # 2026-03-14 | 🐔 Giving Chickie Loo a Voice — Priority User Configuration 🤖  

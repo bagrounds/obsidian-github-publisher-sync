@@ -11,6 +11,7 @@ image_date: 2026-04-08T19:39:49Z
 image_model: "@cf/black-forest-labs/flux-1-schnell"
 image_prompt: A dark, high-contrast terminal screen filled with a cascading waterfall of glowing neon code. Amidst the monochromatic white text, vibrant splashes of cyan, magenta, yellow, and green characters pop out, representing active ANSI color sequences. A stylized, glowing cursor block sits prominently in the center, pulsing with a soft light. The visual style is reminiscent of 1980s retro-futuristic computing, with a slight digital glitch effect at the edges. The composition emphasizes the contrast between the rigid, orderly grid of the terminal and the fluid, colorful energy of the escape codes breathing life into the static text.
 link_analysis_version: "2"
+updated: 2026-04-30T13:45:37
 ---
 [Home](../index.md) > [Topics](./index.md)  
 # 💻🎨⚙️ ANSI escape codes  
@@ -167,3 +168,11 @@ link_analysis_version: "2"
   
 - **Computerphile:** https://www.youtube.com/@computerphile 🧠💻 (Explains computer science concepts in an easy to understand way, some of which are related to terminals and text processing.)  
 - **Learn Linux TV:** https://www.youtube.com/@LearnLinuxTV 📺🐧 (A channel dedicated to linux tutorials, and command line usage.)  
+  
+## 🦋 Bluesky    
+<blockquote class="bluesky-embed" data-bluesky-uri="at://did:plc:i4yli6h7x2uoj7acxunww2fc/app.bsky.feed.post/3mkpqr6msxj2n" data-bluesky-cid="bafyreidh6acdme6qg33xbdahg5waclpzd6yz4hkcguymuldjaygskxrfau"><p>💻🎨⚙️ ANSI escape codes  
+  
+#AI Q: ✨ What command line visual effect most improves experience?  
+  
+🎨 Text Formatting | 💻 Terminal Control | 🌈 Color Manipulation | ⌨️ Command Line  
+https://bagrounds.org/topics/ansi-escape-codes</p>&mdash; <a href="https://bsky.app/profile/did:plc:i4yli6h7x2uoj7acxunww2fc?ref_src=embed">Bryan Grounds (@bagrounds.bsky.social)</a> <a href="https://bsky.app/profile/did:plc:i4yli6h7x2uoj7acxunww2fc/post/3mkpqr6msxj2n?ref_src=embed">2026-04-30T13:45:43.000Z</a></blockquote><script async src="https://embed.bsky.app/static/embed.js" charset="utf-8"></script>

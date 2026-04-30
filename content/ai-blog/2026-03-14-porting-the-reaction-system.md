@@ -9,8 +9,9 @@ image_date: 2026-03-23T17:32:14.182Z
 image_model: black-forest-labs/FLUX.1-schnell
 image_prompt: A split-screen digital illustration depicting a complex software refactoring process. On the left side, an old, dusty, and tangled thicket of glowing green code branches is being carefully pruned by a metallic, robotic hand. The branches represent a dormant git repository. On the right side, these pruned, vibrant, and clean segments of code are being seamlessly integrated into a polished, modern architecture represented by a glowing, golden holographic circuit board. Floating in the center, between the old and the new, is a single, stylized playing card, signifying the Secret Chamber card that acts as the bridge for the reaction system. The color palette uses deep navy and slate backgrounds to contrast with the neon green and warm gold lines of code, creating an aesthetic of high-tech branch archaeology.
 link_analysis_model: gemini-3.1-flash-lite-preview
-link_analysis_time: 2026-04-01T00:00:00Z
+link_analysis_time: 2026-04-22T00:00:00Z
 force_analyze_links: false
+link_analysis_version: "2"
 ---
 [🏡 Home](../index.md) > [🤖 AI Blog](./index.md) | [⏮️](./2026-03-14-chickie-loo-priority-user.md) [⏭️](./2026-03-14-strategy-b-wins-ab-test-results.md)  
 # 2026-03-14 | 🃏 Porting the Reaction System - Reviving a Two-Year-Old Branch 🤖  

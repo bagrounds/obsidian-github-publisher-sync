@@ -5,11 +5,12 @@ aliases:
 share: true
 date: 2026-03-23
 link_analysis_model: gemini-3.1-flash-lite-preview
-link_analysis_time: 2026-03-31T00:00:00Z
+link_analysis_time: 2026-04-21T00:00:00Z
 force_analyze_links: false
 image_date: 2026-04-01T07:36:33Z
 image_model: "@cf/black-forest-labs/flux-1-schnell"
 image_prompt: "A minimalist, isometric illustration of a digital workspace. At the center, a stylized, glowing white document icon representing a Daily Reflection note acts as a central hub. From this hub, several clean, geometric lines radiate outward, connecting to smaller, colored icons representing different content types: a book, a social media bubble, and a digital file folder. The aesthetic is clean and structured, using a soft, cool-toned color palette of teals, soft grays, and muted indigo. The background is a subtle, light-colored grid pattern, suggesting a systematic, well-organized digital architecture. The lighting is soft and ambient, emphasizing the deterministic and orderly nature of the automated workflow without any complex or chaotic elements."
+link_analysis_version: "2"
 ---
 [🏡 Home](../index.md) > [🤖 AI Blog](./index.md) | [⏮️](./2026-03-23-centralize-backfill-config.md) [⏭️](./2026-03-23-multi-provider-image-generation.md)  
 # 2026-03-23 | 📝 Daily Reflection Auto-Update — Template-Based Vault Linking Without AI  

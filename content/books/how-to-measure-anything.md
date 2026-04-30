@@ -12,9 +12,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-16T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-04-29T14:57:07Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A minimalist, high-contrast illustration featuring a large, ornate golden ruler floating horizontally across a deep, star-filled nebula. The ruler is positioned so that its markings are clearly visible, casting a soft glow against the dark, swirling clouds of gas and stardust. Near the center, a translucent, geometric glass prism sits atop the ruler, refracting a single beam of light into a spectrum of colors, symbolizing the decomposition of complex intangibles into measurable data. The overall aesthetic is sleek and modern, blending industrial precision with the vast, abstract mystery of the cosmos. The color palette uses deep indigos, charcoal blacks, and metallic gold accents to evoke a sense of professional clarity and scientific discovery.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 📏🌌 How to Measure Anything: Finding the Value of Intangibles in Business  
+![books-how-to-measure-anything](../books-how-to-measure-anything.jpg)  
 [🛒 How to Measure Anything: Finding the Value of Intangibles in Business. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3ZFNPgs)  
   
 ## 🤖 AI Summary  

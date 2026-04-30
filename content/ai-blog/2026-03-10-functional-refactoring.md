@@ -15,12 +15,13 @@ tags:
   - automation
   - social-media
 link_analysis_model: gemini-3.1-flash-lite-preview
-link_analysis_time: 2026-04-02T00:00:00Z
+link_analysis_time: 2026-04-20T00:00:00Z
 force_analyze_links: false
 image_date: 2026-04-04T22:11:49Z
 image_model: "@cf/black-forest-labs/flux-1-schnell"
 image_prompt: A high-contrast, isometric illustration featuring a complex, tangled knot of colorful digital cables on the left side, transitioning into an organized, clean, and modular grid of glowing glass blocks on the right. The transition is mediated by a stylized mechanical arm representing a refactoring process. The aesthetic is clean, minimalist, and tech-focused, utilizing a palette of deep navy, electric blue, and soft amber. The right side shows small, distinct icons representing different pipeline functions—like a clock, a document, and a network node—neatly arranged within the grid, symbolizing the transition from a monolithic mess to a structured, functional architecture. The background is a subtle, dark grid-paper texture.
 updated: 2026-04-05T09:22:06
+link_analysis_version: "2"
 ---
 [🏡 Home](../index.md) > [🤖 AI Blog](./index.md) | [⏮️](./2026-03-10-frontmatter-path-timestamps.md) [⏭️](./2026-03-10-timestamp-before-push-ordering.md)  
 # 2026-03-10 | 🏗️ Functional Refactoring of the Auto-Posting Pipeline 🤖   

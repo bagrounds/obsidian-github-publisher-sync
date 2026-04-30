@@ -10,8 +10,9 @@ image_date: 2026-03-23T17:35:24.904Z
 image_model: black-forest-labs/FLUX.1-schnell
 image_prompt: A high-contrast, minimalist illustration featuring a clean, isometric view of a digital pipeline. On the left, a series of glowing blue blocks representing Data moves along a track. In the middle, a stylized, glowing clock face icon sits prominently above the track, symbolizing the Timestamp operation. To the right, a mechanical Push lever is shown in a neutral position, waiting for the data blocks to pass through the timestamp gate first. The background is a soft, deep charcoal grey with subtle grid lines, suggesting a technical workspace. The composition emphasizes a logical, left-to-right flow where the clock icon acts as a necessary gateway before the data reaches the final exit point. The style is clean, modern, and vector-inspired with pops of electric blue and warm gold for the clock.
 link_analysis_model: gemini-3.1-flash-lite-preview
-link_analysis_time: 2026-04-02T00:00:00Z
+link_analysis_time: 2026-04-22T00:00:00Z
 force_analyze_links: false
+link_analysis_version: "2"
 ---
 [🏡 Home](../index.md) > [🤖 AI Blog](./index.md) | [⏮️](./2026-03-09-platform-post-length-enforcement.md) [⏭️](./2026-03-10-agentic-playbook-agents-md.md)  
 # 🤖 2026-03-09 | ⏱️ Order of Operations - Why Timestamps Must Come Before the Push 🤖  

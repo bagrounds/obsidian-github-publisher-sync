@@ -10,9 +10,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-20T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-04-30T01:46:43Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: "A stylized, high-contrast illustration featuring a central, glowing influenza virus particle rendered with sharp, geometric spikes. The background is a split composition: on one side, sepia-toned, grainy historical imagery of early 20th-century medical pioneers in lab coats and vintage microscopes; on the other, a stark, modern clinical aesthetic with digital DNA strands and faint, glowing medical charts. A single, sharp needle points toward the virus from the bottom, casting a long, dramatic shadow across the frame. The color palette uses deep charcoal, sterile white, and a vibrant, warning-sign orange to highlight the viral structure, emphasizing the tension between past medical struggles and the high-tech, ongoing pursuit of a universal cure."
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🦠💀🔎💉 Influenza: The Hundred-Year Hunt to Cure the Deadliest Disease in History  
+![books-influenza-the-hundred-year-hunt-to-cure-the-deadliest-disease-in-history](../books-influenza-the-hundred-year-hunt-to-cure-the-deadliest-disease-in-history.jpg)  
 [🛒 Influenza: The Hundred-Year Hunt to Cure the Deadliest Disease in History. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/44PXnZ2)  
   
 🦠🔬⏳ Examines humanity's century-long struggle against the elusive influenza virus, highlighting the medical community's triumphs and persistent challenges in understanding, treating, and preventing this devastating global killer.  

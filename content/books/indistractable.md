@@ -12,9 +12,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-15T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-04-30T00:44:02Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A minimalist, high-contrast composition featuring a single, glowing lightbulb suspended in the center of a dark, cluttered room. The bulb emits a soft, warm aura, symbolizing focused attention. Surrounding the bulb, various digital icons—notifications, chat bubbles, and social media symbols—are depicted in muted, desaturated gray tones, fading into the shadows of the background. The floor is clean and orderly, with a single, neatly placed open planner reflecting the light from above. The overall aesthetic is clean, modern, and serene, emphasizing the contrast between the chaos of external distractions and the clarity of intentional, focused living.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🧘 Indistractable: How to Control Your Attention and Choose Your Life  
+![books-indistractable](../books-indistractable.jpg)  
 [🛒 Indistractable: How to Control Your Attention and Choose Your Life. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/43YVI2Y)  
   
 ## 📝🐒 Human Notes   

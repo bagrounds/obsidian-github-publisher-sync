@@ -7,11 +7,16 @@ share: true
 CTA: 🚨 Unmask the court.
 affiliate link: https://amzn.to/45MWIc7
 link_analysis_model: gemini-3.1-flash-lite-preview
-link_analysis_time: 2026-04-06T00:00:00Z
+link_analysis_time: 2026-04-21T00:00:00Z
 force_analyze_links: false
+link_analysis_version: "2"
+image_date: 2026-04-30T14:54:36Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: An illustration of the United States Supreme Court building, front facade prominent. The iconic structure is depicted with significant, deep cracks spreading across its pillars and pediment, suggesting instability and decay. Dark, turbulent storm clouds swirl ominously above the building, casting long, dramatic shadows. The ground beneath the court is fractured and uneven, with sharp, jagged fragments protruding from the earth, hinting at a chaotic, unstable foundation. A single scale of justice, visibly unbalanced, hangs askew in the foreground, with one pan tipped dramatically low, emitting shadowy, unsettling tendrils. The color palette is dominated by deep blues, grays, and purples, with subtle hints of distressed red in the cracks and shadows, conveying a sense of unease and grievance.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🇺🇸🏛️🚫📜⚖️ Lawless: How the Supreme Court Runs on Conservative Grievance, Fringe Theories, and Bad Vibes  
+![books-lawless-how-the-supreme-court-runs-on-conservative-grievance-fringe-theories-and-bad-vibes](../books-lawless-how-the-supreme-court-runs-on-conservative-grievance-fringe-theories-and-bad-vibes.jpg)  
 [🛒 Lawless: How the Supreme Court Runs on Conservative Grievance, Fringe Theories, and Bad Vibes. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/45MWIc7)  
   
 ## 📖 Book Report: Lawless: How the Supreme Court Runs on Conservative Grievance, Fringe Theories, and Bad Vibes  

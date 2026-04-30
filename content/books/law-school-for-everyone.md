@@ -8,11 +8,16 @@ tags:
   - law
 affiliate link: https://amzn.to/3FIMCy5
 link_analysis_model: gemini-3.1-flash-lite-preview
-link_analysis_time: 2026-04-08T00:00:00Z
+link_analysis_time: 2026-04-24T00:00:00Z
 force_analyze_links: false
+link_analysis_version: "2"
+image_date: 2026-04-30T13:43:57Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A stylized, balanced scale of justice forms the central element. On one pan rests an open legal textbook, its pages subtly glowing with a soft light, while the other holds a simplified, radiant lightbulb icon, symbolizing insight and legal thinking. Around the base of the scales, a diverse group of three to four abstract, friendly silhouettes are gathered, attentively looking towards the central elements, representing everyone engaging with the law. The background is a clean, gradient blend of deep blue transitioning to a lighter, hopeful sky blue, suggesting clarity and accessibility. The overall style is modern and inviting, with smooth lines and a sense of shared discovery.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🧑‍⚖️📚 Law School for Everyone  
+![books-law-school-for-everyone](../books-law-school-for-everyone.jpg)  
 [🛒 Law School for Everyone. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3FIMCy5)  
   
 ## 📖 Book Report: ⚖️ Law School for Everyone  

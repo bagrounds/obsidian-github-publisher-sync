@@ -7,11 +7,16 @@ share: true
 CTA: ⚖️ Demand accountability.
 affiliate link: https://amzn.to/3LnOMG3
 link_analysis_model: gemini-3.1-flash-lite-preview
-link_analysis_time: 2026-04-06T00:00:00Z
+link_analysis_time: 2026-04-26T00:00:00Z
 force_analyze_links: false
+link_analysis_version: "2"
+image_date: 2026-04-30T07:54:41Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A dramatic, high-contrast illustration featuring a weathered, stone-carved scales of justice resting on a dark, polished mahogany desk. One side of the scale is weighted down by a heavy, ornate golden crown, while the other side is empty and tilting upward. The background is a moody, out-of-focus corridor of a grand government building, illuminated by a single, cold shaft of light that casts long, distorted shadows. Wisps of grey smoke or fog curl around the base of the scales, symbolizing uncertainty and the erosion of clarity. The color palette is restricted to deep navy blues, charcoal greys, and muted gold accents to convey a sense of solemnity, institutional decay, and moral gravity.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🏛️💔 Injustice: How Politics and Fear Vanquished America's Justice Department  
+![books-injustice-how-politics-and-fear-vanquished-americas-justice-department](../books-injustice-how-politics-and-fear-vanquished-americas-justice-department.jpg)  
 [🛒 Injustice: How Politics and Fear Vanquished America's Justice Department. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3LnOMG3)  
   
 ⚖️ Injustice: How Politics and Fear Vanquished America's Justice Department by Carol Leonnig and Aaron C. Davis reveals how political pressure and strategic caution undermined the integrity of the U.S. Justice Department, potentially jeopardizing the rule of law. ⚖️ 🏛️ 🚨  

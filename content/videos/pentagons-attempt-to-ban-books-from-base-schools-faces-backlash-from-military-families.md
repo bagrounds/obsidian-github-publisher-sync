@@ -10,8 +10,9 @@ Channel: PBS NewsHour
 tags:
 youtube: https://youtu.be/bxQFPAK31Gs
 link_analysis_model: gemini-3.1-flash-lite-preview
-link_analysis_time: 2026-04-05T00:00:00Z
+link_analysis_time: 2026-04-27T00:00:00Z
 force_analyze_links: false
+link_analysis_version: "2"
 ---
 [Home](../index.md) > [Videos](./index.md)  
 # 🪖🚫📚😠 Pentagon's attempt to ban books from base schools faces backlash from military families  

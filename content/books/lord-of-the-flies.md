@@ -10,9 +10,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-16T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-04-30T22:34:23Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A high-contrast, atmospheric illustration centered on a deserted tropical beach at twilight. In the foreground, a large, weathered conch shell rests in the sand, partially shattered. A few feet away, a makeshift spear tipped with a sharpened stick is driven into the ground, topped with a grim, visceral pig’s skull. In the background, the silhouette of a dense, dark jungle looms under a bruised purple and orange sky. A thin, wispy trail of smoke rises from a dying signal fire on a distant ridge, while a faint, blurred outline of a naval ship sits on the horizon line across a calm, dark ocean. The overall aesthetic is moody, cinematic, and ominous, emphasizing the decay of order amidst a wild, untamed landscape.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 👦🏝️🐷 Lord of the Flies  
+![books-lord-of-the-flies](../books-lord-of-the-flies.jpg)  
 [🛒 Lord of the Flies. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4oK6eUe)  
   
 ## 📖 Book Report: Lord of the Flies  

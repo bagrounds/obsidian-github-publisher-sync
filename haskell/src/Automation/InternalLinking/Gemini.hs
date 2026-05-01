@@ -12,7 +12,6 @@ import Automation.Secret (Secret (..))
 import Automation.Title (unTitle)
 import qualified Automation.Gemini as Gemini
 import Control.Concurrent (threadDelay)
-import Data.Maybe (fromMaybe)
 import Data.Text (Text)
 import qualified Data.Text as T
 import qualified Data.ByteString.Lazy as LBS
@@ -93,32 +92,10 @@ retryLoop manager apiKey model prompt attempt backoff = do
 
 parseGeminiBookPaths :: Text -> Either Text [Text]
 parseGeminiBookPaths raw =
-  let cleaned = extractJsonArrayText raw
+  let cleaned = Gemini.extractJsonArray raw
   in case decode (encodeToLbs cleaned) :: Maybe [Text] of
     Just paths -> Right paths
     Nothing    -> Left ("Failed to parse Gemini response as JSON array: " <> raw)
   where
     encodeToLbs :: Text -> LBS.ByteString
     encodeToLbs t = LBS.fromStrict (TE.encodeUtf8 t)
-
-extractJsonArrayText :: Text -> Text
-extractJsonArrayText txt =
-  let stripped = T.strip txt
-      noFences = stripCodeFences stripped
-  in case (T.findIndex (== '[') noFences, findLastIndex (== ']') noFences) of
-    (Just start, Just end) -> T.take (end - start + 1) (T.drop start noFences)
-    _                      -> noFences
-
-stripCodeFences :: Text -> Text
-stripCodeFences txt =
-  let noStart = fromMaybe txt (T.stripPrefix "```json" txt >>= Just . T.strip)
-      noStart' = fromMaybe noStart (T.stripPrefix "```" noStart >>= Just . T.strip)
-  in fromMaybe noStart' (T.stripSuffix "```" noStart' >>= Just . T.strip)
-
-findLastIndex :: (Char -> Bool) -> Text -> Maybe Int
-findLastIndex predicate txt = go Nothing 0 (T.unpack txt)
-  where
-    go acc _ [] = acc
-    go acc i (c : cs)
-      | predicate c = go (Just i) (i + 1) cs
-      | otherwise   = go acc (i + 1) cs

@@ -98,7 +98,7 @@ staticSchedule =
   , ScheduleEntry BackfillBlogImages everyHour False
   , ScheduleEntry InternalLinking everyHour False
   , ScheduleEntry SocialPosting [0, 2, 4, 6, 8, 10, 12, 14, 16, 18, 20, 22] False
-  , ScheduleEntry BookReports [4, 8, 12, 16] False
+  , ScheduleEntry BookReports [1] True
   ]
 
 buildSchedule :: [ScheduleEntry] -> [ScheduleEntry]

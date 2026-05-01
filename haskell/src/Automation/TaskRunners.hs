@@ -631,14 +631,15 @@ runBookReports context = do
       apiKey = Context.geminiApiKey context
   logMsg "▶️  book-reports"
 
-  associateTag <- fromMaybe "" <$> lookupEnvText "AMAZON_ASSOCIATE_TAG"
-  when (T.null associateTag) $
-    logMsg "  ⚠️  AMAZON_ASSOCIATE_TAG not set — book pages will have no affiliate links"
-
-  result <- BookReport.run manager apiKey associateTag vaultDir
-  logMsg $ "  📚 Books generated: " <> T.pack (show (BookReport.booksGenerated result))
-        <> ", attempted: " <> T.pack (show (BookReport.booksAttempted result))
-        <> ", skipped: " <> T.pack (show (BookReport.booksSkipped result))
-
-  logMsg "✅ book-reports"
+  mAssociateTag <- lookupEnvText "AMAZON_ASSOCIATE_TAG"
+  case mAssociateTag of
+    Nothing -> do
+      logMsg "  🚫 AMAZON_ASSOCIATE_TAG not set — refusing to generate book reports without affiliate links"
+      logMsg "✅ book-reports (skipped)"
+    Just associateTag -> do
+      result <- BookReport.run manager apiKey associateTag vaultDir
+      logMsg $ "  📚 Books generated: " <> T.pack (show (BookReport.booksGenerated result))
+            <> ", attempted: " <> T.pack (show (BookReport.booksAttempted result))
+            <> ", skipped: " <> T.pack (show (BookReport.booksSkipped result))
+      logMsg "✅ book-reports"
 

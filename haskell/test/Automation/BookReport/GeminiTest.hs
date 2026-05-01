@@ -91,21 +91,37 @@ buildReportPromptTests = testGroup "buildReportPrompt"
       let prompt = buildReportPrompt "Dune"
       assertBool "title in prompt" (T.isInfixOf "Dune" prompt)
 
-  , testCase "requests markdown formatting" $
-      assertBool "markdown instruction" $
-        T.isInfixOf "markdown" (buildReportPrompt "Test Book")
+  , testCase "instructs to begin each line with a relevant emoji" $
+      assertBool "emoji instruction" $
+        T.isInfixOf "emoji" (buildReportPrompt "Test Book")
 
   , testCase "requests book recommendations" $
       assertBool "recommendations instruction" $
-        T.isInfixOf "recommendations" (buildReportPrompt "Test Book")
+        T.isInfixOf "Recommendations" (buildReportPrompt "Test Book")
 
-  , testCase "instructs to start headings at H2" $
-      assertBool "H2 heading instruction" $
-        T.isInfixOf "H2" (buildReportPrompt "Test Book")
+  , testCase "includes AI Summary section header" $
+      assertBool "AI Summary section" $
+        T.isInfixOf "AI Summary" (buildReportPrompt "Test Book")
 
   , testCase "instructs not to quote or italicize titles" $
       assertBool "no quote/italicize instruction" $
         T.isInfixOf "italicize" (buildReportPrompt "Test Book")
+
+  , testCase "includes Evaluation section" $
+      assertBool "Evaluation section" $
+        T.isInfixOf "Evaluation" (buildReportPrompt "Test Book")
+
+  , testCase "includes FAQ section" $
+      assertBool "FAQ section" $
+        T.isInfixOf "FAQ" (buildReportPrompt "Test Book")
+
+  , testCase "includes What Do You Think section" $
+      assertBool "What Do You Think section" $
+        T.isInfixOf "What Do You Think" (buildReportPrompt "Test Book")
+
+  , testCase "requests emojified title on first line" $
+      assertBool "emojified title instruction" $
+        T.isInfixOf "emojified" (buildReportPrompt "Test Book")
   ]
 
 buildAmazonSearchPromptTests :: TestTree

@@ -54,43 +54,54 @@ buildFindMentionsPrompt body = T.intercalate "\n"
 -- Expects a JSON array; returns empty list on any parse failure.
 parseMentionsList :: Text -> [Text]
 parseMentionsList raw =
-  let cleaned = extractJsonArray raw
+  let cleaned = Gemini.extractJsonArray raw
   in fromMaybe [] (decode (encodeToLbs cleaned) :: Maybe [Text])
   where
     encodeToLbs :: Text -> LBS.ByteString
     encodeToLbs text = LBS.fromStrict (TE.encodeUtf8 text)
 
-extractJsonArray :: Text -> Text
-extractJsonArray txt =
-  let stripped = T.strip txt
-      unfencedText = stripFences stripped
-  in case (T.findIndex (== '[') unfencedText, findLastIndex (== ']') unfencedText) of
-    (Just start, Just end) -> T.take (end - start + 1) (T.drop start unfencedText)
-    _                      -> unfencedText
-
-stripFences :: Text -> Text
-stripFences txt =
-  let noStart = fromMaybe txt (T.stripPrefix "```json" txt >>= Just . T.strip)
-      noStart' = fromMaybe noStart (T.stripPrefix "```" noStart >>= Just . T.strip)
-  in fromMaybe noStart' (T.stripSuffix "```" noStart' >>= Just . T.strip)
-
-findLastIndex :: (Char -> Bool) -> Text -> Maybe Int
-findLastIndex predicate txt = go Nothing 0 (T.unpack txt)
-  where
-    go acc _ [] = acc
-    go acc index (character : rest)
-      | predicate character = go (Just index) (index + 1) rest
-      | otherwise           = go acc (index + 1) rest
-
 -- | Build the book report generation prompt for a given title.
+-- Follows the Obsidian book template structure, producing an emojified title
+-- on the first line followed by all report sections.
 buildReportPrompt :: Text -> Text
-buildReportPrompt bookTitle = T.intercalate " "
-  [ "Write a markdown-formatted (start headings at level H2) book report,"
-  , "followed by a plethora of additional similar, contrasting, and creatively related book"
-  , "recommendations on " <> bookTitle <> "."
-  , "Be thorough in content discussed but concise and economical with your language."
-  , "Structure the report with section headings and bulleted lists to avoid long blocks of text."
-  , "Never quote or italicize titles."
+buildReportPrompt bookTitle = T.intercalate "\n"
+  [ "Act as a world-class, critically-minded expert on the book " <> bookTitle <> "."
+  , ""
+  , "First, output a single line containing only the emojified book title:"
+  , "  <emoji(s)> " <> bookTitle
+  , "(Prefix with the smallest set of emojis that accurately capture the book's meaning."
+  , "Put 1 space between the final emoji and the first word. Return only the result on that line.)"
+  , ""
+  , "Then write the following sections in order."
+  , "Begin every heading, bullet point, and line of text with a relevant emoji."
+  , "Never quote or italicize titles. Be ultra-concise."
+  , ""
+  , "One sentence TLDR (emojis at the start, plain text, no heading)."
+  , ""
+  , "## 🤖 AI Summary"
+  , "Ultra-concise cheat sheet with ### subsections. Full sentences not required."
+  , "E.g.: \"Protein: 1.6 g/kg min. Muscle preservation.\" Nested bullets. No tables."
+  , ""
+  , "## ⚖️ Evaluation"
+  , "Compare the book's main claims with high-quality, unbiased sources."
+  , "Cite each point in brackets, e.g. [Source, Year]. No extreme or politically biased sources."
+  , ""
+  , "## 🔍 Topics for Further Understanding"
+  , "Bulleted list of distinct related topics not explicitly covered in the book."
+  , ""
+  , "## ❓ Frequently Asked Questions (FAQ)"
+  , "Questions real readers search for. Each question must be self-contained (use the full book title)."
+  , "Format each as:"
+  , "### 💡 Q: ...question...?"
+  , "✅ A: ...concise authoritative answer..."
+  , ""
+  , "## 📚 Book Recommendations"
+  , "### 📖 Similar"
+  , "### ↔️ Contrasting"
+  , "### 🔗 Related"
+  , ""
+  , "## 🫵 What Do You Think?"
+  , "1-2 open-ended engaging questions inviting readers to share their thoughts in the comments."
   ]
 
 -- | Build a search prompt to find the Amazon.com product URL for a book.
@@ -135,7 +146,8 @@ retryFindMentions manager apiKey model prompt attempt backoff = do
       | otherwise ->
           pure (Left (T.pack (show err)))
 
--- | Generate a book report for the given title using Gemini.
+-- | Generate a book report for the given title using Gemini with Google Search grounding.
+-- The response begins with an emojified title line followed by the full report body.
 generateBookReportWithGemini :: Manager -> Secret -> Gemini.Model -> Text -> IO (Either Text Text)
 generateBookReportWithGemini manager apiKey model bookTitle = do
   let prompt = buildReportPrompt bookTitle
@@ -146,8 +158,8 @@ generateBookReportWithGemini manager apiKey model bookTitle = do
     , Gemini.requestApiKey            = apiKey
     , Gemini.requestGenerationConfig  = Gemini.defaultGenerationConfig
         { Gemini.temperature     = 0.7
-        , Gemini.maxOutputTokens = 4096
-        , Gemini.searchGrounding = False
+        , Gemini.maxOutputTokens = 8192
+        , Gemini.searchGrounding = True
         }
     }
   case result of
@@ -179,14 +191,12 @@ searchAmazonProductUrl manager apiKey model bookTitle = do
       in case amazonUrls of
         (url : _) -> pure (Just url)
         [] ->
-          if isAmazonProductUrlText responseText && responseText /= "NOT_FOUND"
+          if isAmazonProductUrl responseText && responseText /= "NOT_FOUND"
             then pure (Just responseText)
             else pure Nothing
 
 isAmazonProductUrl :: Text -> Bool
-isAmazonProductUrl = isAmazonProductUrlText
-
-isAmazonProductUrlText :: Text -> Bool
-isAmazonProductUrlText url =
+isAmazonProductUrl url =
   T.isPrefixOf "https://www.amazon.com/" url
     && T.isInfixOf "/dp/" url
+

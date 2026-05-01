@@ -139,65 +139,73 @@ buildAffiliateUrlTests = testGroup "buildAffiliateUrl"
 buildBookFrontmatterTests :: TestTree
 buildBookFrontmatterTests = testGroup "buildBookFrontmatter"
   [ testCase "includes title in aliases" $ do
-      let fm = buildBookFrontmatter "Lord of the Flies" "lord-of-the-flies" Nothing
+      let fm = buildBookFrontmatter "Lord of the Flies" "lord-of-the-flies" Nothing Nothing
       assertBool "title in aliases" (T.isInfixOf "Lord of the Flies" fm)
 
   , testCase "includes URL with slug" $ do
-      let fm = buildBookFrontmatter "Dune" "dune" Nothing
+      let fm = buildBookFrontmatter "Dune" "dune" Nothing Nothing
       assertBool "URL in frontmatter" $
         T.isInfixOf "https://bagrounds.org/books/dune" fm
 
   , testCase "includes affiliate link when provided" $ do
-      let fm = buildBookFrontmatter "Dune" "dune" (Just "https://www.amazon.com/dp/B0001?tag=test-20")
+      let fm = buildBookFrontmatter "Dune" "dune" (Just "https://www.amazon.com/dp/B0001?tag=test-20") Nothing
       assertBool "affiliate link in frontmatter" $
         T.isInfixOf "affiliate link:" fm
 
   , testCase "omits affiliate link when not provided" $ do
-      let fm = buildBookFrontmatter "Dune" "dune" Nothing
+      let fm = buildBookFrontmatter "Dune" "dune" Nothing Nothing
       assertBool "no affiliate link" $
         not (T.isInfixOf "affiliate link:" fm)
 
   , testCase "starts with YAML front matter delimiter" $ do
-      let fm = buildBookFrontmatter "Dune" "dune" Nothing
+      let fm = buildBookFrontmatter "Dune" "dune" Nothing Nothing
       assertBool "starts with ---" (T.isPrefixOf "---" fm)
 
   , testCase "ends with YAML front matter delimiter" $ do
-      let fm = buildBookFrontmatter "Dune" "dune" Nothing
+      let fm = buildBookFrontmatter "Dune" "dune" Nothing Nothing
       assertBool "ends with ---" (T.isSuffixOf "---" fm)
 
   , testCase "includes share: true" $ do
-      let fm = buildBookFrontmatter "Dune" "dune" Nothing
+      let fm = buildBookFrontmatter "Dune" "dune" Nothing Nothing
       assertBool "share: true" (T.isInfixOf "share: true" fm)
+
+  , testCase "uses emojified title in aliases when provided" $ do
+      let fm = buildBookFrontmatter "Dune" "dune" Nothing (Just "🏜️ Dune")
+      assertBool "emojified title in aliases" (T.isInfixOf "🏜️ Dune" fm)
   ]
 
 buildBookBodyTests :: TestTree
 buildBookBodyTests = testGroup "buildBookBody"
   [ testCase "includes nav breadcrumb" $ do
-      let body = buildBookBody "Dune" "## Book Report\nDune is..." Nothing Gemini.Gemini25Flash
+      let body = buildBookBody "Dune" "## Book Report\nDune is..." Nothing Nothing Gemini.Gemini25Flash
       assertBool "Home link" (T.isInfixOf "[[index|🏡 Home]]" body)
       assertBool "Books link" (T.isInfixOf "[[/books/index|📚 Books]]" body)
 
   , testCase "includes the H1 title" $ do
-      let body = buildBookBody "Dune" "content" Nothing Gemini.Gemini25Flash
+      let body = buildBookBody "Dune" "content" Nothing Nothing Gemini.Gemini25Flash
       assertBool "H1 title" (T.isInfixOf "# Dune" body)
+
+  , testCase "uses emojified title in H1 when provided" $ do
+      let body = buildBookBody "Dune" "content" Nothing (Just "🏜️ Dune") Gemini.Gemini25Flash
+      assertBool "emojified H1" (T.isInfixOf "# 🏜️ Dune" body)
 
   , testCase "includes the report content" $ do
       let report = "## Summary\nThis is a great book."
-          body = buildBookBody "Dune" report Nothing Gemini.Gemini25Flash
+          body = buildBookBody "Dune" report Nothing Nothing Gemini.Gemini25Flash
       assertBool "report content" (T.isInfixOf report body)
 
   , testCase "includes Gemini prompt attribution" $ do
-      let body = buildBookBody "Dune" "content" Nothing Gemini.Gemini25Flash
+      let body = buildBookBody "Dune" "content" Nothing Nothing Gemini.Gemini25Flash
       assertBool "Gemini attribution" (T.isInfixOf "Gemini" body)
 
   , testCase "includes affiliate link line when provided" $ do
       let link = "https://www.amazon.com/dp/B0001?tag=test-20"
-          body = buildBookBody "Dune" "content" (Just link) Gemini.Gemini25Flash
+          body = buildBookBody "Dune" "content" (Just link) Nothing Gemini.Gemini25Flash
       assertBool "affiliate link in body" (T.isInfixOf "Amazon Associate" body)
       assertBool "affiliate URL in body" (T.isInfixOf link body)
 
   , testCase "omits affiliate link line when not provided" $ do
-      let body = buildBookBody "Dune" "content" Nothing Gemini.Gemini25Flash
+      let body = buildBookBody "Dune" "content" Nothing Nothing Gemini.Gemini25Flash
       assertBool "no Amazon Associate line" (not (T.isInfixOf "Amazon Associate" body))
   ]
 
@@ -211,6 +219,17 @@ buildBookFileContentTests = testGroup "buildBookFileContent"
   , testCase "derives slug from title for URL" $ do
       let content = buildBookFileContent "The Great Gatsby" "content" Nothing Gemini.Gemini25Flash
       assertBool "slug in URL" (T.isInfixOf "books/the-great-gatsby" content)
+
+  , testCase "parses emojified title from first response line" $ do
+      let response = "🏜️ Dune\n## Summary\nGreat book."
+          content = buildBookFileContent "Dune" response Nothing Gemini.Gemini25Flash
+      assertBool "emojified title in H1" (T.isInfixOf "# 🏜️ Dune" content)
+      assertBool "emojified title in frontmatter" (T.isInfixOf "🏜️ Dune" content)
+
+  , testCase "falls back to plain title when response lacks emojified first line" $ do
+      let response = "## Summary\nA stark portrait of survival."
+          content = buildBookFileContent "The Road" response Nothing Gemini.Gemini25Flash
+      assertBool "plain title in H1" (T.isInfixOf "# The Road" content)
   ]
 
 booksSectionHeadingTests :: TestTree
@@ -228,10 +247,15 @@ booksSectionHeadingTests = testGroup "booksSectionHeading"
 insertBookLinkTests :: TestTree
 insertBookLinkTests = testGroup "insertBookLink"
   [ testCase "inserts book link under existing books section" $ do
-      let content = "# 2026-04-30\n\n" <> booksSectionHeading <> "\n- [[books/dune|Dune]]\n\n## 📢 Updates\n"
+      let content = "# 2026-04-30\n\n" <> booksSectionHeading <> "\n- [[books/dune|Dune]]\n\n## 🔄 Updates\n"
           updated = insertBookLink content "lord-of-the-flies" "Lord of the Flies"
       assertBool "new book link present" (T.isInfixOf "[[books/lord-of-the-flies|Lord of the Flies]]" updated)
       assertBool "existing link preserved" (T.isInfixOf "[[books/dune|Dune]]" updated)
+
+  , testCase "new link includes auto-generated marker" $ do
+      let content = "# 2026-04-30\n\nSome content here.\n"
+          updated = insertBookLink content "dune" "Dune"
+      assertBool "auto-generated marker present" (T.isInfixOf "🤖" updated)
 
   , testCase "creates new books section when none exists" $ do
       let content = "# 2026-04-30\n\nSome content here.\n"
@@ -250,6 +274,14 @@ insertBookLinkTests = testGroup "insertBookLink"
       let booksPos = T.length (fst (T.breakOn booksSectionHeading updated))
           twitterPos = T.length (fst (T.breakOn "## 🐦 Twitter" updated))
       assertBool "books section before twitter" (booksPos < twitterPos)
+
+  , testCase "inserts books section before blog series auto sections" $ do
+      let noiseSeries = "## [[the-noise/index|📰 The Noise]]"
+          content = "# 2026-04-30\n\nContent.\n\n" <> noiseSeries <> "\n- [[the-noise/post|Post]]\n\n## 🦋 Bluesky\n"
+          updated = insertBookLink content "dune" "Dune"
+      let booksPos = T.length (fst (T.breakOn booksSectionHeading updated))
+          seriesPos = T.length (fst (T.breakOn noiseSeries updated))
+      assertBool "books section before blog series" (booksPos < seriesPos)
 
   , testCase "inserts books section before changes section" $ do
       let content = "# 2026-04-30\n\nContent.\n\n## [[changes/index|🔄 Changes]]\n"

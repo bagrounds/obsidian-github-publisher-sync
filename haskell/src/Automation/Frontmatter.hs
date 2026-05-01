@@ -3,11 +3,13 @@ module Automation.Frontmatter
   , YamlValue (..)
   , renderYamlValue
   , quoteYamlValue
+  , updateFrontmatterFields
   , getReflectionPath
   , readReflection
   , readNote
   ) where
 
+import Control.Monad (when)
 import Data.Char (isAlphaNum, isDigit)
 import Data.Map.Strict (Map)
 import qualified Data.Map.Strict as Map
@@ -183,4 +185,49 @@ readNote relativePath contentDir = do
           putStrLn $ "  ⚠️  Skipping " <> filePath <> ": " <> T.unpack reason
           pure Nothing
     else pure Nothing
+
+-- | Update or insert frontmatter fields in a file. Preserves all existing
+-- fields not listed in the update, and adds new fields that don't exist yet.
+-- If a field's value is empty string, the field is set to an empty string
+-- rather than removed.
+updateFrontmatterFields :: FilePath -> [(Text, YamlValue)] -> IO ()
+updateFrontmatterFields filePath fields = do
+  exists <- doesFileExist filePath
+  when exists $ do
+    raw <- TIO.readFile filePath
+    let ls = T.splitOn "\n" raw
+    case ls of
+      (first : rest)
+        | T.strip first == "---" ->
+            case break (\l -> T.strip l == "---") rest of
+              (_, []) -> pure ()
+              (fmLines, closingDash : bodyLines) ->
+                let updatedFm = foldl upsertField fmLines fields
+                in TIO.writeFile filePath
+                     (T.intercalate "\n" (first : updatedFm <> [closingDash] <> bodyLines))
+      _ -> do
+        let entries = T.intercalate "\n" $ fmap (\(k, v) -> k <> ": " <> renderYamlValue v) fields
+        TIO.writeFile filePath ("---\n" <> entries <> "\n---\n" <> raw)
+
+upsertField :: [Text] -> (Text, YamlValue) -> [Text]
+upsertField ls (key, val) =
+  let newLine    = key <> ": " <> renderYamlValue val
+      keyPrefix  = key <> ":"
+      didReplace = any (T.isPrefixOf keyPrefix . T.stripStart) ls
+      replaced   = replaceFieldLine keyPrefix newLine ls
+  in if didReplace then replaced else ls <> [newLine]
+
+replaceFieldLine :: Text -> Text -> [Text] -> [Text]
+replaceFieldLine _ _ [] = []
+replaceFieldLine keyPrefix newLine (l : rest)
+  | keyPrefix `T.isPrefixOf` T.stripStart l =
+      newLine : dropContinuationLines rest
+  | otherwise = l : replaceFieldLine keyPrefix newLine rest
+
+dropContinuationLines :: [Text] -> [Text]
+dropContinuationLines [] = []
+dropContinuationLines (l : rest)
+  | not (T.null l) && T.isPrefixOf " " l = dropContinuationLines rest
+  | otherwise                             = l : rest
+
 

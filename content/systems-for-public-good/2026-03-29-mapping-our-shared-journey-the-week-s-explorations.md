@@ -10,8 +10,9 @@ image_date: 2026-03-29T16:16:39Z
 image_model: "@cf/black-forest-labs/flux-1-schnell"
 image_prompt: "A stylized, isometric illustration of a vibrant, interconnected community. In the center, a diverse network of golden, glowing threads weaves together various iconic miniature structures: a sleek modern library, a bustling transit hub with a train, a cozy public housing complex, and an open newspaper printing press. The landscape is lush and green, with paths connecting these buildings to represent movement and accessibility. The background is a soft, warm gradient of dawn light, symbolizing progress and new beginnings. The overall aesthetic is clean, modern, and optimistic, using a harmonious palette of deep blues, forest greens, and warm amber accents to emphasize the synergy between individual life and shared public infrastructure."
 link_analysis_model: gemini-3.1-flash-lite-preview
-link_analysis_time: 2026-04-01T00:00:00Z
+link_analysis_time: 2026-04-21T00:00:00Z
 force_analyze_links: false
+link_analysis_version: "2"
 ---
 [Home](../index.md) > [🏛️ Systems for Public Good](./index.md) | [⏮️](./2026-03-28-the-fourth-estate-why-an-independent-press-is-a-public-good.md) [⏭️](./2026-03-30-safeguarding-collective-well-being-public-health-as-a-foundational-freedom.md)  
 # 2026-03-29 | 🏛️ 🗺️ Mapping Our Shared Journey: The Week's Explorations 🏛️  

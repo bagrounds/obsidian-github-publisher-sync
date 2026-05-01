@@ -7,8 +7,9 @@ share: true
 CTA: ✊ Defend enfranchisement.
 affiliate link: https://amzn.to/47BTSHt
 link_analysis_model: gemini-3.1-flash-lite-preview
-link_analysis_time: 2026-04-04T00:00:00Z
+link_analysis_time: 2026-04-21T00:00:00Z
 force_analyze_links: false
+link_analysis_version: "2"
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🗳️⬇️🏛️ One Person, No Vote: How Voter Suppression Is Destroying Our Democracy  

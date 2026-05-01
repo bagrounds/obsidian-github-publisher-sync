@@ -315,7 +315,7 @@ validateAffiliateUrl manager affiliateUrl bookTitle = go 0
               putStrLn "  ❌ Affiliate URL returned 404 — URL does not exist"
               pure False
             200 -> do
-              let bodyText = T.toLower (TE.decodeUtf8 (LBS.toStrict (LBS.take (fromIntegral amazonPageSampleBytes) (responseBody response))))
+              let bodyText = T.toLower (TE.decodeUtf8 (LBS.toStrict (responseBody response)))
                   normalizedTitle = T.toLower (T.strip (stripEmojis bookTitle))
                   titleWords = filter ((> minimumTitleWordLength) . T.length) (T.words normalizedTitle)
                   titleConfirmed = not (null titleWords) && all (`T.isInfixOf` bodyText) titleWords
@@ -347,12 +347,6 @@ urlValidationRetryCount = 3
 -- | Base delay in milliseconds between retries (doubles on each attempt).
 urlValidationBaseDelayMs :: Int
 urlValidationBaseDelayMs = 2000
-
--- | Number of bytes of the Amazon page body to scan when checking whether
--- the book title is present. 64 KB is large enough to include the product
--- title section without loading the entire page into memory.
-amazonPageSampleBytes :: Int
-amazonPageSampleBytes = 65536
 
 -- | Minimum length of a title word considered significant when matching the
 -- book title against an Amazon page body. Words of two characters or fewer
@@ -393,7 +387,7 @@ data BookCandidate = BookCandidate
 -- Returns Nothing if no pending work exists or if the book file was already created.
 resolvePendingState :: Map.Map Text Text -> FilePath -> IO (Maybe PendingBookState)
 resolvePendingState frontmatter vaultDir =
-  case Map.lookup "book-report-pending" frontmatter of
+  case Map.lookup "book_report_pending" frontmatter of
     Nothing -> pure Nothing
     Just pending | T.null (T.strip pending) -> pure Nothing
     Just pendingTitle -> do
@@ -404,7 +398,7 @@ resolvePendingState frontmatter vaultDir =
       if alreadyExists
         then pure Nothing
         else do
-          let mAsin = Map.lookup "book-report-asin" frontmatter
+          let mAsin = Map.lookup "book_report_asin" frontmatter
                 >>= \rawAsin -> if T.null (T.strip rawAsin) then Nothing else Just (T.strip rawAsin)
           pure (Just PendingBookState { pendingTitle = title, cachedAsin = mAsin })
 
@@ -491,9 +485,10 @@ run manager apiKey associateTag vaultDir
                   tryGenerateReport manager apiKey associateTag vaultDir reflectionPath booksIndex todayText candidates 0
 
 -- | BFS through content files, scanning ONE file for plain-text book mentions.
--- Skips files already scanned today (detected by the book-mention-scanned frontmatter
--- field) so that retries within the same day do not repeat expensive Gemini calls.
--- After scanning, writes book-mention-scanned: <date> to the file's own frontmatter.
+-- Skips files that have already been scanned (detected by the book_mention_scanned
+-- frontmatter field having any value). The scan is permanent — a scanned file is
+-- never re-scanned by a future run.
+-- After scanning, writes book_mention_scanned: <date> to the file's own frontmatter.
 -- Also inserts wikilinks for books that are mentioned but already have pages.
 -- Returns a list of BookCandidate values; candidateAsin is always Nothing for
 -- newly discovered candidates (only set when resuming from pending state).
@@ -511,9 +506,9 @@ findFirstCandidates manager apiKey vaultDir existingBooks allFiles existingNorma
           content <- TIO.readFile filePath
           let (frontmatter, body) = parseFrontmatter content
           -- Skip files already scanned today to avoid redundant Gemini calls on retry
-          case Map.lookup "book-mention-scanned" frontmatter of
-            Just scannedDate | scannedDate == todayText -> do
-              putStrLn $ "  ⏭️  Already scanned today: " <> T.unpack relPath
+          case Map.lookup "book_mention_scanned" frontmatter of
+            Just _ -> do
+              putStrLn $ "  ⏭️  Already scanned (permanent): " <> T.unpack relPath
               go rest accumulator
             _ -> do
               putStrLn $ "  🔎 Scanning for book mentions: " <> T.unpack relPath
@@ -523,8 +518,8 @@ findFirstCandidates manager apiKey vaultDir existingBooks allFiles existingNorma
                   putStrLn $ "  ⚠️  Gemini error scanning " <> T.unpack relPath <> ": " <> T.unpack err
                   go rest accumulator
                 Right mentions -> do
-                  -- Cache the scan result in the file's frontmatter so it is skipped on retry
-                  updateFrontmatterFields filePath [("book-mention-scanned", YamlText todayText)]
+                  -- Record the scan date permanently so this file is never re-scanned.
+                  updateFrontmatterFields filePath [("book_mention_scanned", YamlText todayText)]
                   let newBooks = filter (\t -> not (Set.member (normalizeTitleForComparison t) existingNormalizedTitles)) mentions
                       existingMentioned = filter (\t -> Set.member (normalizeTitleForComparison t) existingNormalizedTitles) mentions
                   putStrLn $ "  📖 " <> T.unpack relPath <> ": " <> show (length mentions) <> " mention(s), "
@@ -570,7 +565,7 @@ normalizeTitleForComparison = T.toLower . T.strip . stripEmojis
 -- Amazon search already completed; Nothing for freshly discovered candidates.
 -- Pending state is stored in the books index frontmatter (not the reflection)
 -- so it persists across day boundaries.
--- On success clears book-report-pending and book-report-asin from the books index.
+-- On success clears book_report_pending and book_report_asin from the books index.
 tryGenerateReport :: Manager -> Secret -> Text -> FilePath -> FilePath -> FilePath -> Text -> [BookCandidate] -> Int -> IO BookReportResult
 tryGenerateReport _ _ _ _ _ _ _ [] attempted =
   pure BookReportResult { booksGenerated = 0, booksAttempted = attempted, booksSkipped = 0 }
@@ -578,7 +573,7 @@ tryGenerateReport manager apiKey associateTag vaultDir reflectionPath booksIndex
   let bookTitle = candidateTitle candidate
   -- Persist the candidate title in the books index before any expensive API calls.
   -- Using the books index (not the daily reflection) means this survives across days.
-  updateFrontmatterFields booksIndex [("book-report-pending", YamlText bookTitle)]
+  updateFrontmatterFields booksIndex [("book_report_pending", YamlText bookTitle)]
 
   mAsin <- case candidateAsin candidate of
     Just resumedAsin -> do
@@ -609,7 +604,7 @@ tryGenerateReport manager apiKey associateTag vaultDir reflectionPath booksIndex
                   pure Nothing
                 else do
                   -- Cache the ASIN so a retry skips the Amazon search step
-                  updateFrontmatterFields booksIndex [("book-report-asin", YamlText extractedAsin)]
+                  updateFrontmatterFields booksIndex [("book_report_asin", YamlText extractedAsin)]
                   pure (Just extractedAsin)
 
   case mAsin of
@@ -653,8 +648,8 @@ tryGenerateReport manager apiKey associateTag vaultDir reflectionPath booksIndex
 
               -- Clear the pending state from the books index now that the report is done.
               updateFrontmatterFields booksIndex
-                [ ("book-report-pending", YamlText "")
-                , ("book-report-asin",    YamlText "")
+                [ ("book_report_pending", YamlText "")
+                , ("book_report_asin",    YamlText "")
                 ]
               putStrLn "  🧹 Cleared pending state from books index"
 

@@ -92,17 +92,17 @@ URL: https://bagrounds.org/ai-blog/2026-04-30-2-auto-generate-book-reports
 
 🗓️ The pipeline has three natural checkpoint positions where partial progress can be lost if the process exits unexpectedly. Each is now cached durably.
 
-📁 The first checkpoint is the file scan. Once Gemini has analyzed a file for book mentions, the result is recorded in the file's own frontmatter with today's date. Any retry within the same day skips that file without a second Gemini call. The scan date resets naturally by day, so every file is reconsidered on subsequent days.
+📁 The first checkpoint is the file scan. Once Gemini has analyzed a file for book mentions, the result is recorded permanently in the file's own frontmatter under the key book_mention_scanned. Any future run skips that file without a second Gemini call. This annotation is never reset: the design assumes one scan per file for the lifetime of the vault, with a version-two pass to be designed separately if ever needed.
 
-🔑 The second checkpoint is candidate discovery. When a new title is identified, it is written to the books index frontmatter as book-report-pending before any further API calls. The books index is not date-scoped, so this persists even if the task cannot complete until the next day. On any run, if a pending title is found and no book file exists yet, the task resumes directly from that title.
+🔑 The second checkpoint is candidate discovery. When a new title is identified, it is written to the books index frontmatter as book_report_pending before any further API calls. The books index is not date-scoped, so this persists even if the task cannot complete until the next day. On any run, if a pending title is found and no book file exists yet, the task resumes directly from that title.
 
-🛒 The third checkpoint is the Amazon search. After the ASIN is extracted and the URL is validated, the ASIN is written to the books index as book-report-asin. If report generation fails, the next run reuses the cached ASIN and skips the Amazon search step entirely.
+🛒 The third checkpoint is the Amazon search. After the ASIN is extracted and the URL is validated, the ASIN is written to the books index as book_report_asin. If report generation fails, the next run reuses the cached ASIN and skips the Amazon search step entirely.
 
 ### 📐 ASIN Extraction Safety
 
 🔒 The ASIN extraction function stops at the first non-alphanumeric character, then verifies the segment is exactly ten characters. The property-based roundtrip test confirms that building an affiliate URL from a valid ASIN and then extracting the ASIN from that URL always returns the original.
 
-🌐 After assembling the affiliate URL, the task fetches the page to confirm it exists. A confirmed 404 causes the candidate to be skipped immediately. Connection errors and transient server errors such as 5xx and 429 are retried up to three times with exponential back-off so that a momentary outage or rate-limit does not silently bypass validation. If the URL still cannot be confirmed after all retries the candidate is skipped. The task also checks whether the title appears in the first 64 kilobytes of the response body as a best-effort signal that the URL points to the correct book.
+🌐 After assembling the affiliate URL, the task fetches the page to confirm it exists. A confirmed 404 causes the candidate to be skipped immediately. Connection errors and transient server errors such as 5xx and 429 are retried up to three times with exponential back-off so that a momentary outage or rate-limit does not silently bypass validation. If the URL still cannot be confirmed after all retries the candidate is skipped. The task also checks whether the title appears anywhere in the full response body as a best-effort signal that the URL points to the correct book.
 
 ## 🧪 Testing
 

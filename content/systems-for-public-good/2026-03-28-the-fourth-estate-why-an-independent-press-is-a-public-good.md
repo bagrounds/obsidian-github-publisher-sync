@@ -11,8 +11,9 @@ image_date: 2026-03-28T16:16:28Z
 image_model: "@cf/black-forest-labs/flux-1-schnell"
 image_prompt: A high-angle, minimalist illustration featuring a sturdy, vintage wooden printing press placed in the center of a sunlit, modern public square. The press is constructed from warm, dark mahogany with polished brass accents, and it emits a soft, golden glow that illuminates the surrounding cobblestones. Instead of traditional ink, the press is printing streams of translucent, glowing light that flow outward like ribbons, connecting to various geometric shapes representing different segments of society—homes, schools, and civic buildings. The background is a clean, serene architectural composition of neoclassical columns and open, airy spaces. The color palette uses deep navy, slate gray, and warm ochre, contrasted by the bright, ethereal light emanating from the center. The overall aesthetic is clean, professional, and evocative of stability, transparency, and the foundational nature of democratic infrastructure.
 link_analysis_model: gemini-3.1-flash-lite-preview
-link_analysis_time: 2026-04-01T00:00:00Z
+link_analysis_time: 2026-04-21T00:00:00Z
 force_analyze_links: false
+link_analysis_version: "2"
 ---
 [🏡 Home](../index.md) > [🏛️ Systems for Public Good](./index.md) | [⏮️](./2026-03-27-the-freedom-to-know-libraries-as-democratic-essentials.md)  
 # 2026-03-28 | 🏛️ 📰 The Fourth Estate: Why an Independent Press is a Public Good 🏛️  

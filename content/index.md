@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-05-01T07:44:11-07:00
+updated: 2026-05-01T14:53:27-07:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -21,11 +21,11 @@ updated: 2026-05-01T07:44:11-07:00
 - [2026-04-28 | 🐔 Rhythm 📰 Echoing 🌟 Progress 🔀 Architectures 🏛️ Engagement 🤖 Ambiguity. 📺🤖🐔🔀🌟🏛️📰🔄🤖🐲](./reflections/2026-04-28.md)  
   
   
-## [🤖 AI Blog](./ai-blog/index.md) (173)  
+## [🤖 AI Blog](./ai-blog/index.md) (174)  
+- [2026-04-30 | 📚 Auto-Generating Book Reports 🤖](./ai-blog/2026-04-30-2-auto-generate-book-reports.md)  
 - [2026-04-30 | 🚀 Deploy to GitHub Pages on Main Branch Only 🤖](./ai-blog/2026-04-30-1-deploy-main-branch-only.md)  
 - [2026-04-27 | 🕛 The Midnight Bug: How a Reflection Got Titled Too Early 🤖](./ai-blog/2026-04-27-1-premature-reflection-title-midnight-bug.md)  
 - [2026-04-24 | 🔍 Improving Gemini API Observability 🤖](./ai-blog/2026-04-24-1-rca-gemini-flash-grounding-logs.md)  
-- [2026-04-23 | 🔤 No Abbreviations in Haskell: A Boy-Scout Refactor 🧹](./ai-blog/2026-04-23-1-haskell-no-abbreviations-refactor.md)  
   
   
 ## [🤖 Auto Blog Zero](./auto-blog-zero/index.md) (52)  
@@ -71,17 +71,17 @@ updated: 2026-05-01T07:44:11-07:00
   
   
 ## [📚 Books](./books/index.md) (960)  
-- [👶🗣️ My First Learn-to-Talk Book: Created by an Early Speech Expert!](./books/my-first-learn-to-talk-book-created-by-an-early-speech-expert.md)  
-- [🤱🏼🧠 Mother Brain: How Neuroscience Is Rewriting the Story of Parenthood](./books/mother-brain-how-neuroscience-is-rewriting-the-story-of-parenthood.md)  
-- [🚶‍♂️🧠 Moonwalking with Einstein: The Art and Science of Remembering Everything](./books/moonwalking-with-einstein-the-art-and-science-of-remembering-everything.md)  
-- [📉⚾💰 Moneyball: The Art of Winning an Unfair Game](./books/moneyball.md)  
+- [🕊️🤝 Nonviolent Communication: A Language of Life](./books/nonviolent-communication.md)  
+- [🦋🌀💥🤖 Nonlinear Dynamics and Chaos: With Applications to Physics, Biology, Chemistry, and Engineering](./books/nonlinear-dynamics-and-chaos.md)  
+- [🙉📢😵‍💫🔇 Noise: A Flaw in Human Judgment](./books/noise.md)  
+- [💔👊⚖️ Nobody's Girl: A Memoir of Surviving Abuse and Fighting for Justice](./books/nobodys-girl-a-memoir-of-surviving-abuse-and-fighting-for-justice.md)  
   
   
-## [📺 Videos](./videos/index.md) (813)  
+## [📺 Videos](./videos/index.md) (814)  
+- [🤖🧹💻 How To De-Slop A Codebase Ruined By AI (with one skill)](./videos/how-to-de-slop-a-codebase-ruined-by-ai-with-one-skill.md)  
 - [💻🏗️🧠 Software Fundamentals Matter More Than Ever - Matt Pocock](./videos/software-fundamentals-matter-more-than-ever-matt-pocock.md)  
 - [🧠👶🐒 Alison Gopnik, The Evolution of Human Intelligences | Natural Philosophy Forum Lecture 2025](./videos/alison-gopnik-the-evolution-of-human-intelligences-natural-philosophy-forum-lecture-2025.md)  
 - [🏛️🗣️🗓️ Politics Chat, November 18, 2025](./videos/politics-chat-november-18-2025.md)  
-- [👶🏆🧠✨ What kids know about motivation (and we don't) | Betsy Blackard | TEDx Claremont Graduate University](./videos/what-kids-know-about-motivation-and-we-dont-betsy-blackard-tedx-claremont-graduate-university.md)  
   
   
 ## [🌌 Topics](./topics/index.md) (91)  

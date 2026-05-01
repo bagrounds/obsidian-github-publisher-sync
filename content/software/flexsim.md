@@ -5,11 +5,12 @@ aliases:
 title: ⚙️📊🔄 FlexSim
 URL: https://bagrounds.org/software/flexsim
 link_analysis_model: gemini-3.1-flash-lite-preview
-link_analysis_time: 2026-04-02T00:00:00Z
+link_analysis_time: 2026-04-15T00:00:00Z
 force_analyze_links: false
 image_date: 2026-04-10T19:25:43Z
 image_model: "@cf/black-forest-labs/flux-1-schnell"
 image_prompt: A high-tech isometric 3D illustration of a digital factory floor, rendered in a clean, professional aesthetic. The scene features translucent, glowing blue modular components—conveyor belts, robotic arms, and storage racks—floating slightly above a dark grid-patterned surface. Streams of glowing data particles flow along the paths between these objects, representing the movement of entities. A stylized digital twin overlay, featuring subtle wireframe geometry, partially overlaps the solid models. The lighting is cool-toned with neon cyan and white accents, emphasizing a sense of precision, simulation, and technological connectivity. The background is a soft, deep charcoal gradient that makes the vibrant, analytical elements of the industrial layout pop.
+link_analysis_version: "2"
 ---
 [🏡 Home](../index.md) > [💾 Software](./index.md)  
 # ⚙️📊🔄 FlexSim  

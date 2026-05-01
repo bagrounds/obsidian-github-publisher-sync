@@ -12,9 +12,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-15T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-05-01T09:39:50Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: "A stylized human head, depicted in profile, with its brain visible. One half of the brain appears as a rigid, grey brick wall, perhaps with a small, withered plant trying to break through. The other half of the brain is vibrant and dynamic: a lush, green plant confidently sprouting upwards, its roots deeply embedded in fertile soil. Butterflies flutter around this thriving side, and a subtle, glowing upward arrow or path emerges, symbolizing progress and potential. The color scheme shifts from muted, static greys and browns on the fixed side to bright, hopeful greens and yellows on the growth side, with a clear, soft divide down the middle."
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🌱🧘🏼‍♀️🏆 Mindset: The New Psychology of Success  
+![books-mindset](../books-mindset.jpg)  
 [🛒 Mindset: The New Psychology of Success. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3HAAyQ0)  
   
 ## 📝🐒 Human Notes  

@@ -9,6 +9,10 @@ Platform:
 Channel: Sen. Adam Schiff
 tags:
 youtube: https://youtu.be/HoaTV7rd1LQ
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_time: 2026-04-25T00:00:00Z
+force_analyze_links: false
+link_analysis_version: "2"
 ---
 [Home](../index.md) > [Videos](./index.md)  
 # 🤯😲😳 You Aren't Going to Believe This  

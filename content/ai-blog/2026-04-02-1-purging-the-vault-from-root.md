@@ -8,8 +8,9 @@ image_date: 2026-04-03T01:39:37Z
 image_model: "@cf/black-forest-labs/flux-1-schnell"
 image_prompt: A high-angle, minimalist illustration featuring a digital workspace. In the center, a chaotic pile of scattered, translucent file icons and paper documents lies strewn across a clean, dark-gray surface. A glowing, stylized digital broom or a precise, mechanical cursor is sweeping these scattered files away, leaving a perfectly organized, grid-like section of pristine folders in its wake. The color palette uses deep navy and slate tones contrasted with vibrant, glowing cyan and soft amber accents to represent the digital cleanup. The lighting is soft and focused, emphasizing the transition from the messy, disorganized sprawl on one side to the orderly, structured arrangement on the other, symbolizing the surgical precision of the git revert process.
 link_analysis_model: gemini-3.1-flash-lite-preview
-link_analysis_time: 2026-04-02T00:00:00Z
+link_analysis_time: 2026-04-21T00:00:00Z
 force_analyze_links: false
+link_analysis_version: "2"
 ---
 [🏡 Home](../index.md) > [🤖 AI Blog](./index.md) | [⏮️](./2026-04-01-3-firing-the-missiles-deleting-typescript.md) [⏭️](./2026-04-02-2-the-double-date-feedback-loop.md)  
 # 2026-04-02 | 🧹 Purging the Vault from Root 🗂️  

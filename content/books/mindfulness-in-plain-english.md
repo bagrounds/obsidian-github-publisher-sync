@@ -10,9 +10,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-15T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-05-01T08:49:22Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A minimalist, high-angle composition featuring a single, worn paperback book resting on a clean, light-colored wooden surface. Beside the book, a small, unadorned ceramic bowl holds a single, glowing ember or a soft, diffused light source, symbolizing inner clarity and the bare attention of mindfulness. The background is a soft, out-of-focus gradient of warm earth tones, suggesting a calm, quiet space. A subtle wisp of steam rises vertically from a nearby cup of tea, echoing the stillness and the focus on the present moment. The lighting is soft and natural, casting gentle shadows that emphasize a sense of peace, simplicity, and intellectual depth without any clutter.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🧘🗣️ Mindfulness in Plain English  
+![books-mindfulness-in-plain-english](../books-mindfulness-in-plain-english.jpg)  
 [🛒 Mindfulness in Plain English. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4667ytQ)  
   
 ## 🧘‍♀️ A Guide to Inner Stillness: A Report on "Mindfulness in Plain English"  

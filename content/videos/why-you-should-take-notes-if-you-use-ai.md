@@ -9,6 +9,10 @@ Platform:
 Channel: Vicky Zhao [BEEAMP]
 tags:
 youtube: https://youtu.be/FtJYJF8QodM
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_time: 2026-04-27T00:00:00Z
+force_analyze_links: false
+link_analysis_version: "2"
 ---
 [Home](../index.md) > [Videos](./index.md)  
 # 💡🧠🤖📝 Why you should take notes if you use AI  

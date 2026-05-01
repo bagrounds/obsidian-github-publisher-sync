@@ -10,9 +10,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-17T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-04-30T16:40:44Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A stylized, healthy globe, predominantly green and blue, with simplified, gentle contours. From the top, a single, verdant tree grows, its branches reaching upwards but also gently curving downwards, as if embracing the globe. Below the globe, instead of endless expansion, a few small, harmonious, green-roofed structures are integrated seamlessly into a serene landscape, suggesting human life in balance with nature. A subtle, soft light emanates from the core of the globe, symbolizing well-being. The overall impression is one of calm, sustainability, and sufficiency.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 📉🌎 Less is More: How Degrowth Will Save the World  
+![books-less-is-more-how-degrowth-will-save-the-world](../books-less-is-more-how-degrowth-will-save-the-world.jpg)  
 [🛒 Less is More: How Degrowth Will Save the World. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3Y2USyC)  
   
 🌍📉🔥 Endless capitalist growth is destroying our planet and deepening inequality, proposing degrowth—a planned, equitable reduction in resource use in wealthy nations—as the only viable path to ecological survival and a more just, flourishing world.  

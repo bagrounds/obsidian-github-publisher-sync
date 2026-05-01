@@ -11,9 +11,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-19T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-05-01T17:36:43Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A sophisticated, high-contrast digital illustration featuring a complex, glowing network of nodes and interconnected lines suspended in a dark, atmospheric space. The nodes vary in size, representing a scale-free network, with some clusters densely packed to suggest crowds or hubs. Subtle, translucent geometric overlays suggest market graphs or flow charts weaving through the web. A soft, radial gradient of deep blues and vibrant electric teals provides depth, with golden sparks of light pulsing at key intersection points to signify the flow of information or economic transactions. The aesthetic is modern, clean, and abstract, emphasizing the interconnected nature of complex systems without clutter.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🌐💰 Networks, Crowds, and Markets: Reasoning About a Highly Connected World  
+![books-networks-crowds-and-markets](../books-networks-crowds-and-markets.jpg)  
 [🛒 Networks, Crowds, and Markets: Reasoning About a Highly Connected World. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3HnZSZw)  
   
 ## 📖 Book Report: Networks, Crowds, and Markets  

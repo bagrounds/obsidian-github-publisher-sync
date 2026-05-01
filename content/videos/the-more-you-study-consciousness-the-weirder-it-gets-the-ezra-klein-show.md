@@ -10,8 +10,9 @@ Channel: The Ezra Klein Show
 tags:
 youtube: https://youtu.be/hYrgLn7pWp8
 link_analysis_model: gemini-3.1-flash-lite-preview
-link_analysis_time: 2026-04-10T00:00:00Z
+link_analysis_time: 2026-04-15T00:00:00Z
 force_analyze_links: false
+link_analysis_version: "2"
 ---
 [Home](../index.md) > [Videos](./index.md)  
 # 🧠❓🤯 The More You Study Consciousness, the Weirder It Gets | The Ezra Klein Show  

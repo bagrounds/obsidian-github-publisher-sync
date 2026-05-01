@@ -10,9 +10,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-18T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-04-30T17:42:03Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A stylized, isometric illustration featuring a complex, clockwork-like machine constructed from glowing circuit boards, tangled fiber-optic cables, and metallic gears. Emerging from the machine’s central processor are shadowy, indistinct humanoid silhouettes—troll figures—interacting with a swarm of small, stylized robotic spiders that weave a web of digital noise across a cracked, classical marble pillar representing democracy. The background is a deep, moody navy gradient, with sharp, glitch-like geometric light streaks cutting through the composition to represent the spread of data. The visual tone is tense and analytical, emphasizing the contrast between the rigid, decaying structure of the institution and the chaotic, pervasive nature of the digital manipulation.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🤖🏛️ Lie Machines: How to Save Democracy from Troll Armies, Deceitful Robots, Junk News Operations, and Political Operatives  
+![books-lie-machines-how-to-save-democracy-from-troll-armies-deceitful-robots-junk-news-operations-and-political-operatives](../books-lie-machines-how-to-save-democracy-from-troll-armies-deceitful-robots-junk-news-operations-and-political-operatives.jpg)  
 [🛒 Lie Machines: How to Save Democracy from Troll Armies, Deceitful Robots, Junk News Operations, and Political Operatives. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4hdvb76)  
   
 🛡️💡 Philip N. Howard's *Lie Machines: How to Save Democracy from Troll Armies, Deceitful Robots, Junk News Operations, and Political Operatives summary* concisely unpacks the socio-technical systems of computational propaganda, offering a compelling analysis of democratic threats and actionable strategies to dismantle these digital disinformation networks 🛡️💡.  

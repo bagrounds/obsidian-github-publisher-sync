@@ -11,8 +11,9 @@ image_model: "@cf/black-forest-labs/flux-1-schnell"
 image_prompt: A stylized illustration featuring a strong, healthy tree with deeply intertwined roots. These roots are visibly anchored into a layered foundation, where subtle elements like an open book, a simplified house silhouette, and a guiding hand are integrated, representing public goods. The trees vibrant branches extend upwards towards a bright, expansive sky, filled with soft, warm light and abstract swirling paths indicating progress and opportunity. The palette is harmonious, blending earthy tones with hopeful blues and yellows.
 updated: 2026-03-24T23:38:58.865Z
 force_analyze_links: false
-link_analysis_time: 2026-03-24T22:25:44.721Z
+link_analysis_time: 2026-04-22T00:00:00Z
 link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_version: "2"
 ---
 [🏡 Home](../index.md) > [🏛️ Systems for Public Good](./index.md) | [⏮️](./2026-03-23-the-forgotten-commons.md) [⏭️](./2026-03-25-the-interplay-of-freedoms-when-my-liberty-meets-yours.md)  
 # 2026-03-24 | 🏛️ 🫂 The Foundations of Freedom - A Personal Journey into Public Good 🏛️  

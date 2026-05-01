@@ -5,11 +5,12 @@ aliases:
 title: 🏛️ Systems for Public Good
 URL: https://bagrounds.org/systems-for-public-good
 backlinks: false
-updated: 2026-04-30T08:15:52-07:00
+updated: 2026-05-01T07:44:11-07:00
 ---
 [🏡 Home](../index.md)  
-# 🏛️ Systems for Public Good (40)  
+# 🏛️ Systems for Public Good (41)  
 - [🏛️ Systems for Public Good — AGENTS.md](./AGENTS.md)  
+- [2026-05-01 | 🏛️ Weaving the Democratic Fabric: Civic Infrastructure as Collective Power 🏛️](./2026-05-01-weaving-the-democratic-fabric-civic-infrastructure-as-collective-power.md)  
 - [2026-04-30 | 🏛️ 🗓️ April in Review: Building the Foundations of Collective Well-being 🏛️](./2026-04-30-april-in-review-building-the-foundations-of-collective-well-being.md)  
 - [2026-04-29 | 🏛️ 📡 The Public's Airwaves: Cultivating an Informed Society 🏛️](./2026-04-29-the-public-s-airwaves-cultivating-an-informed-society.md)  
 - [2026-04-28 | 🏛️ The Architecture of Engagement: Civic Infrastructure 🏛️](./2026-04-28-the-architecture-of-engagement-civic-infrastructure.md)  

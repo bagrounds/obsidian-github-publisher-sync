@@ -7,11 +7,12 @@ share: true
 CTA: ⏰ Seize liberation.
 affiliate link: https://amzn.to/3XsOvEu
 link_analysis_model: gemini-3.1-flash-lite-preview
-link_analysis_time: 2026-04-11T00:00:00Z
+link_analysis_time: 2026-04-28T00:00:00Z
 force_analyze_links: false
 image_date: 2026-04-24T23:25:57Z
 image_model: "@cf/black-forest-labs/flux-1-schnell"
 image_prompt: A minimalist illustration featuring a clean, modern workspace. In the center, a stylized hourglass stands on a desk; the top bulb is filled with glowing golden sand, while the bottom bulb is partially cracked, with sand spilling out and transforming into small, floating geometric shapes that drift upward. To the side, a set of heavy, rusted iron shackles lies broken and discarded on the floor, their chains fading into light, airy ribbons. The background is a soft, gradient sky moving from a deep twilight blue at the bottom to a bright, expansive gold at the top, symbolizing the transition from being stuck to achieving freedom. The lighting is crisp and cinematic, emphasizing the contrast between the weight of the past and the lightness of reclaimed time.
+link_analysis_version: "2"
 ---
 [Home](../index.md) > [Books](./index.md)  
 # ⏳🔓👑 Buy Back Your Time: Get Unstuck, Reclaim Your Freedom, and Build Your Empire  

@@ -11,8 +11,9 @@ tags:
 youtube: https://youtu.be/roLRPQPQU58
 updated: 2026-03-16T12:17:09.674Z
 link_analysis_model: gemini-3.1-flash-lite-preview
-link_analysis_time: 2026-04-04T00:00:00Z
+link_analysis_time: 2026-04-25T00:00:00Z
 force_analyze_links: false
+link_analysis_version: "2"
 ---
 [Home](../index.md) > [Videos](./index.md)  
 # ✍️🤯📝 How to Write Freakishly Well - Paul Harding  

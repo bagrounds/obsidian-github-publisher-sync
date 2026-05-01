@@ -6,6 +6,10 @@ URL: https://bagrounds.org/books/quantum-computing-for-dummies
 share: true
 CTA: 🚀 Explore the future of computation.
 affiliate link: https://amzn.to/4qm5aWh
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_time: 2026-04-27T00:00:00Z
+force_analyze_links: false
+link_analysis_version: "2"
 ---
 [Home](../index.md) > [Books](./index.md)  
 # ⚛️💻💡 Quantum Computing For Dummies  

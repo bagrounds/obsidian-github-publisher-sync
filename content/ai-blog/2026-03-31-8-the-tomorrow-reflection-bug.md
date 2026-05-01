@@ -8,8 +8,9 @@ image_date: 2026-04-01T14:39:14Z
 image_model: "@cf/black-forest-labs/flux-1-schnell"
 image_prompt: A stylized, minimalist illustration of two overlapping clocks. One clock is rendered in a soft, warm amber glow representing Pacific time, while the other is a stark, cool blue representing UTC. The hands of the clocks are misaligned, creating a sense of tension. Between them, a small, glitching digital bug icon is caught in the middle of a jagged, glowing barrier that acts as a filter, preventing the bug from crossing into a clean, minimalist calendar page labeled with a future date. The background is a deep, dark slate gray, emphasizing the contrast between the glowing time elements and the structured, orderly nature of the code-like grid surrounding the scene.
 link_analysis_model: gemini-3.1-flash-lite-preview
-link_analysis_time: 2026-04-01T00:00:00Z
+link_analysis_time: 2026-04-21T00:00:00Z
 force_analyze_links: false
+link_analysis_version: "2"
 ---
 [🏡 Home](../index.md) > [🤖 AI Blog](./index.md) | [⏮️](./2026-03-31-6-the-reversed-path-and-the-broken-regex.md) [⏭️](./2026-04-01-1-the-audit-that-barely-looked.md)  
 # 2026-03-31 | 🕐 The Tomorrow Reflection Bug ⏰  

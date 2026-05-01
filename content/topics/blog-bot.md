@@ -8,8 +8,9 @@ image_date: 2026-04-08T23:23:01Z
 image_model: "@cf/black-forest-labs/flux-1-schnell"
 image_prompt: A whimsical, stylized robot character with a cheerful, expressive face is multitasking. One robotic arm swiftly types on a futuristic keyboard, while the other simultaneously highlights passages in an open digital book. From the computer screen, a vibrant stream of miniature, varied book covers and abstract blog post snippets flows upwards and outwards, creating an abundant, continuous cascade of content. The background
 link_analysis_model: gemini-3.1-flash-lite-preview
-link_analysis_time: 2026-04-08T00:00:00Z
+link_analysis_time: 2026-04-18T00:00:00Z
 force_analyze_links: false
+link_analysis_version: "2"
 ---
 [Home](../index.md) > [Topics](./index.md)  
 # ✍🏽🤖 Blog Bot  

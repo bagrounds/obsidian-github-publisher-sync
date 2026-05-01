@@ -10,9 +10,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-18T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-04-30T20:37:37Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A minimalist, high-contrast illustration featuring a stylized, translucent globe resting precariously on a thin, cracked glass pedestal. Inside the globe, faint, glowing interlocking gear mechanisms represent the interconnected global systems of population and industry. Surrounding the globe, delicate golden lines trace the silhouette of a forest and a city skyline, which begin to dissolve into fine, drifting sand at the edges. The background is a deep, moody charcoal gradient, suggesting a vast, empty space. A single, thin red line charts an exponential upward curve that abruptly turns downward, bisecting the composition. The overall aesthetic is clean, modern, and somber, emphasizing the tension between fragile planetary boundaries and the weight of human activity.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 📉🌍⏳ Limits to Growth: The 30-Year Global Update  
+![books-limits-to-growth-the-30-year-global-update](../books-limits-to-growth-the-30-year-global-update.jpg)  
 [🛒 Limits to Growth: The 30-Year Global Update. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3JusFxb)  
   
 ⚠️🌍📉 Humanity is in dangerous overshoot of Earth's capacity, heading towards inevitable collapse if exponential population and consumption growth persist, but systemic change can still guide us to a sustainable future.  

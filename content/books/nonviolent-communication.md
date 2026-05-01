@@ -12,9 +12,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-17T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-05-01T21:28:50Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: "A minimalist and warm illustration featuring two stylized, abstract figures sitting across from each other at a simple wooden table. Between them, four distinct glowing icons float in the air, representing the core NVC components: an eye (observation), a heart (feeling), a leaf (need), and an open hand (request). The background is a soft, calming gradient of warm earth tones and sky blue. The lighting is gentle and diffused, suggesting a peaceful, safe space for dialogue. The overall aesthetic is clean, modern, and serene, emphasizing connection, clarity, and the organic nature of human empathy without any distracting details or text."
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🕊️🤝 Nonviolent Communication: A Language of Life  
+![books-nonviolent-communication](../books-nonviolent-communication.jpg)  
 [🛒 Nonviolent Communication: A Language of Life. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3T980zy)  
   
 ## 📚 Book Report: Nonviolent Communication: A Language of Life  

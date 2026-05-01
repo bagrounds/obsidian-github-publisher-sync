@@ -10,9 +10,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-16T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-05-01T18:31:25Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A stylized, high-tech illustration featuring a translucent, glowing human brain composed of interconnected digital nodes and fiber-optic cables. Emerging from the center of the brain is a complex, multi-layered geometric structure—a transformer block—radiating vibrant pulses of light. Surrounding this central figure are cascading streams of binary code and abstract linguistic symbols that transform into structured, orderly text as they pass through the core. The background is a deep, professional navy blue with subtle grid lines, creating a sense of sophisticated data architecture. The lighting is ethereal and modern, utilizing a color palette of electric cyan, magenta, and warm gold to represent the transition from raw data to intelligent, human-like language processing.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🗣️💻 Natural Language Processing with Transformers  
+![books-natural-language-processing-with-transformers](../books-natural-language-processing-with-transformers.jpg)  
 [🛒 Natural Language Processing with Transformers. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4eLqHU9)  
   
 ## 📖 Book Report: 🤖 Natural Language Processing with Transformers  

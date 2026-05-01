@@ -61,17 +61,16 @@ taskRunnersRegistryTests = testGroup "taskRunners registry"
             , AiFiction
             , ReflectionTitle
             , DailyAnalytics
-            , BookReports
             ]
       mapM_ (\taskIdentifier ->
         assertBool ("runner registered for " <> show taskIdentifier) $
           Map.member taskIdentifier runners
         ) expectedStaticTasks
 
-  , testCase "static runner count is 7 with no blog series" $ do
+  , testCase "static runner count is 6 with no blog series" $ do
       context <- mkTestContext
       let runners = taskRunners context Map.empty Map.empty [] []
-      Map.size runners @?= 7
+      Map.size runners @?= 6
 
   , testCase "includes dynamic blog series runners" $ do
       context <- mkTestContext
@@ -92,24 +91,24 @@ taskRunnersRegistryTests = testGroup "taskRunners registry"
             , mkTestSeries "series-b"
             ]
           runners = taskRunners context Map.empty Map.empty [] discovered
-      Map.size runners @?= 9
+      Map.size runners @?= 8
   ]
 
 taskRunnersPropertyTests :: TestTree
 taskRunnersPropertyTests = testGroup "properties"
-  [ testProperty "runner count equals 7 plus number of unique blog series" $
+  [ testProperty "runner count equals 6 plus number of unique blog series" $
       QC.forAll genUniqueSeriesIds $ \seriesIds -> QC.ioProperty $ do
         context <- mkTestContext
         let discovered = fmap mkTestSeries seriesIds
             runners = taskRunners context Map.empty Map.empty [] discovered
-        pure (Map.size runners == 7 + length seriesIds)
+        pure (Map.size runners == 6 + length seriesIds)
 
   , testProperty "all static tasks are always registered" $
       QC.forAll genUniqueSeriesIds $ \seriesIds -> QC.ioProperty $ do
         context <- mkTestContext
         let discovered = fmap mkTestSeries seriesIds
             runners = taskRunners context Map.empty Map.empty [] discovered
-            staticTasks = [BackfillBlogImages, InternalLinking, SocialPosting, AiFiction, ReflectionTitle, DailyAnalytics, BookReports]
+            staticTasks = [BackfillBlogImages, InternalLinking, SocialPosting, AiFiction, ReflectionTitle, DailyAnalytics]
         pure (all (`Map.member` runners) staticTasks)
   ]
 

@@ -7,7 +7,6 @@ module Automation.TaskRunners
   , runAiFiction
   , runReflectionTitle
   , runDailyAnalytics
-  , runBookReports
   ) where
 
 import Control.Exception (SomeException, try)
@@ -64,7 +63,6 @@ import Automation.BlogSeriesConfig
   , lookupSeriesIn
   )
 import Automation.BlogSeriesDiscovery (DiscoveredSeries (..))
-import qualified Automation.BookReport as BookReport
 import qualified Automation.Context as Context
 import Automation.DailyReflection (UpdateReflectionResult (..), updateDailyReflection)
 import Automation.DailyUpdates (UpdateDetail (..), UpdateLink (..), addUpdateLinksToReflection, extractTitleFromFile)
@@ -620,26 +618,5 @@ taskRunners context seriesMap runConfigs contentDirs discovered =
         , (AiFiction, runAiFiction context)
         , (ReflectionTitle, runReflectionTitle context)
         , (DailyAnalytics, runDailyAnalytics context)
-        , (BookReports, runBookReports context)
         ]
   in Map.union blogSeriesRunners staticRunners
-
-runBookReports :: Context.AppContext -> IO ()
-runBookReports context = do
-  let manager = Context.httpManager context
-      vaultDir = Context.vaultDir context
-      apiKey = Context.geminiApiKey context
-  logMsg "▶️  book-reports"
-
-  mAssociateTag <- lookupEnvText "AMAZON_ASSOCIATE_TAG"
-  case mAssociateTag of
-    Nothing -> do
-      logMsg "  🚫 AMAZON_ASSOCIATE_TAG not set — refusing to generate book reports without affiliate links"
-      logMsg "✅ book-reports (skipped)"
-    Just associateTag -> do
-      result <- BookReport.run manager apiKey associateTag vaultDir
-      logMsg $ "  📚 Books generated: " <> T.pack (show (BookReport.booksGenerated result))
-            <> ", attempted: " <> T.pack (show (BookReport.booksAttempted result))
-            <> ", skipped: " <> T.pack (show (BookReport.booksSkipped result))
-      logMsg "✅ book-reports"
-

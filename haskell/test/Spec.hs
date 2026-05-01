@@ -60,9 +60,6 @@ import qualified Automation.InternalLinking.LinkExtractionTest
 import qualified Automation.InternalLinking.CandidateDiscoveryTest
 import qualified Automation.InternalLinking.GeminiTest
 
-import qualified Automation.BookReportTest
-import qualified Automation.BookReport.GeminiTest
-
 main :: IO ()
 main = defaultMain $ testGroup "Automation"
   [ Automation.SchedulerTest.tests
@@ -120,6 +117,4 @@ main = defaultMain $ testGroup "Automation"
   , Automation.InternalLinking.LinkExtractionTest.tests
   , Automation.InternalLinking.CandidateDiscoveryTest.tests
   , Automation.InternalLinking.GeminiTest.tests
-  , Automation.BookReportTest.tests
-  , Automation.BookReport.GeminiTest.tests
   ]

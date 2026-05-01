@@ -84,7 +84,6 @@ Pacific before making decisions via `nowPacificHour()`.
 | Every hour | `backfill-blog-images` | 🖼️ Backfill 1 missing blog image per hour |
 | Every hour | `internal-linking` | 🔗 BFS wikilink insertion for 1 note per hour |
 | 0,2,4,6,8,10,12,14,16,18,20,22 | `social-posting` | 📢 Auto-post to X/Bluesky/Mastodon (every 2 hours) |
-| 4,8,12,16 | `book-reports` | 📚 Generate 1 new book report from unlinked mentions (4 times/day) |
 
 ### 🛡️ Social Media Safety Gate
 
@@ -172,7 +171,6 @@ Pacific before making decisions via `nowPacificHour()`.
 |---|---|---|
 | `backfill-blog-images` | 1 image per run | 🖼️ Each image requires ~2 inference calls (describe + generate) |
 | `internal-linking` | 1 inference request per run | 🔗 Traverses all reachable files via BFS but only calls Gemini for 1 un-analyzed file per hour |
-| `book-reports` | 1 report per run | 📚 Each report requires 2-3 Gemini calls (mention scan + Amazon search + report generation) |
 
 🔄 With hourly scheduling, this achieves up to 24 images and 24 notes processed per day while staying well within free-tier rate limits.
 

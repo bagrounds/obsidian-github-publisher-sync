@@ -24,10 +24,11 @@ import Automation.InternalLinking.LinkExtraction
 import Automation.InternalLinking.Masking (maskProtectedRegions)
 
 import Automation.PacificTime (formatDay, todayPacificDay)
-import Automation.Frontmatter (YamlValue (..), parseFrontmatter, updateFrontmatterFields)
+import Automation.Frontmatter (YamlValue (..), parseFrontmatter, renderYamlValue)
 import qualified Automation.Gemini as Gemini
 import Automation.RelativePath (RelativePath, unRelativePath, mkRelativePath)
 import Automation.Secret (Secret (..))
+import Control.Monad (when)
 import Data.IORef (IORef, modifyIORef', newIORef, readIORef)
 import Data.List (sortBy)
 import qualified Data.Map.Strict as Map
@@ -37,6 +38,7 @@ import Data.Text (Text)
 import qualified Data.Text as T
 import qualified Data.Text.IO as TIO
 import Network.HTTP.Client (Manager)
+import System.Directory (doesFileExist)
 import System.Environment (lookupEnv)
 import System.FilePath (takeDirectory, (</>))
 
@@ -110,6 +112,52 @@ applyReplacements content candidates validations =
           wl     = CD.formatContentEntryWikilink (CD.entry candidate)
       in before <> wl <> after
 
+
+updateFrontmatterFields :: FilePath -> [(Text, YamlValue)] -> IO ()
+updateFrontmatterFields filePath fields = do
+  exists <- doesFileExist filePath
+  when exists $ do
+    raw <- TIO.readFile filePath
+    let ls = T.splitOn "\n" raw
+    case ls of
+      (first : rest)
+        | T.strip first == "---" ->
+            case break (\l -> T.strip l == "---") rest of
+              (_, []) -> pure ()
+              (fmLines, closingDash : bodyLines) ->
+                let updatedFm = foldl' upsertField fmLines fields
+                in TIO.writeFile filePath
+                     (T.intercalate "\n" (first : updatedFm <> [closingDash] <> bodyLines))
+      _ -> do
+        let entries = T.intercalate "\n" $ fmap (\(k, v) -> k <> ": " <> renderYamlValue v) fields
+        TIO.writeFile filePath ("---\n" <> entries <> "\n---\n" <> raw)
+
+upsertField :: [Text] -> (Text, YamlValue) -> [Text]
+upsertField ls (key, val) =
+  let newLine   = key <> ": " <> renderYamlValue val
+      pat       = T.pack (T.unpack key <> ":")
+      didReplace = any (matchesKey pat) ls
+      replaced = replaceWithContinuation pat newLine ls
+  in if didReplace then replaced else ls <> [newLine]
+  where
+    matchesKey :: Text -> Text -> Bool
+    matchesKey p line = T.isPrefixOf p (T.stripStart line)
+
+replaceWithContinuation :: Text -> Text -> [Text] -> [Text]
+replaceWithContinuation _ _ [] = []
+replaceWithContinuation keyPrefix newLine (l : rest)
+  | keyPrefix `T.isPrefixOf` T.stripStart l =
+      newLine : dropContinuationLines rest
+  | otherwise = l : replaceWithContinuation keyPrefix newLine rest
+
+dropContinuationLines :: [Text] -> [Text]
+dropContinuationLines [] = []
+dropContinuationLines (l : rest)
+  | isContinuationLine l = dropContinuationLines rest
+  | otherwise = l : rest
+
+isContinuationLine :: Text -> Bool
+isContinuationLine l = not (T.null l) && T.isPrefixOf " " l
 
 recordLinkAnalysis :: FilePath -> Gemini.Model -> Text -> IO ()
 recordLinkAnalysis filePath model timestamp =

@@ -11,11 +11,22 @@ import Automation.RelativePath (unRelativePath)
 import Automation.Secret (Secret (..))
 import Automation.Title (unTitle)
 import qualified Automation.Gemini as Gemini
+import Control.Concurrent (threadDelay)
+import Data.Maybe (fromMaybe)
 import Data.Text (Text)
 import qualified Data.Text as T
 import qualified Data.ByteString.Lazy as LBS
 import qualified Data.Text.Encoding as TE
 import Network.HTTP.Client (Manager)
+
+maxGeminiRetries :: Int
+maxGeminiRetries = 3
+
+initialBackoffMicroseconds :: Int
+initialBackoffMicroseconds = 5_000_000
+
+maxBackoffMicroseconds :: Int
+maxBackoffMicroseconds = 60_000_000
 
 buildIdentificationPrompt :: Text -> [ContentEntry] -> Text
 buildIdentificationPrompt fileBody bookEntries =
@@ -51,7 +62,11 @@ identifyBooksWithGemini :: Manager -> Secret -> Gemini.Model -> Text -> [Content
 identifyBooksWithGemini _ _ _ _ [] = pure (Right [])
 identifyBooksWithGemini manager apiKey model fileBody bookEntries = do
   let prompt = buildIdentificationPrompt fileBody bookEntries
-  result <- Gemini.generateContentWithRetry manager Gemini.Request
+  retryLoop manager apiKey model prompt 0 initialBackoffMicroseconds
+
+retryLoop :: Manager -> Secret -> Gemini.Model -> Text -> Int -> Int -> IO (Either Text [Text])
+retryLoop manager apiKey model prompt attempt backoff = do
+  result <- Gemini.generateContent manager Gemini.Request
     { Gemini.requestPrompt             = prompt
     , Gemini.requestSystemInstruction  = Nothing
     , Gemini.requestModel              = model
@@ -62,16 +77,48 @@ identifyBooksWithGemini manager apiKey model fileBody bookEntries = do
         , Gemini.searchGrounding = False
         }
     }
-  pure $ case result of
-    Right response -> parseGeminiBookPaths (Gemini.responseText response)
-    Left err       -> Left (T.pack (show err))
+  case result of
+    Right response ->
+      pure (parseGeminiBookPaths (Gemini.responseText response))
+    Left err
+      | Gemini.isRateLimitError err && attempt < maxGeminiRetries -> do
+          putStrLn $ "  ⏳ Rate limit, retry " <> show (attempt + 1) <> "/" <> show maxGeminiRetries
+            <> " in " <> show (backoff `div` 1_000_000) <> "s"
+          threadDelay backoff
+          retryLoop manager apiKey model prompt (attempt + 1) (min (backoff * 2) maxBackoffMicroseconds)
+      | Gemini.isQuotaExhaustedError err ->
+          pure (Left ("QuotaExhausted: " <> T.pack (show err)))
+      | otherwise ->
+          pure (Left (T.pack (show err)))
 
 parseGeminiBookPaths :: Text -> Either Text [Text]
 parseGeminiBookPaths raw =
-  let cleaned = Gemini.extractJsonArray raw
+  let cleaned = extractJsonArrayText raw
   in case decode (encodeToLbs cleaned) :: Maybe [Text] of
     Just paths -> Right paths
     Nothing    -> Left ("Failed to parse Gemini response as JSON array: " <> raw)
   where
     encodeToLbs :: Text -> LBS.ByteString
     encodeToLbs t = LBS.fromStrict (TE.encodeUtf8 t)
+
+extractJsonArrayText :: Text -> Text
+extractJsonArrayText txt =
+  let stripped = T.strip txt
+      noFences = stripCodeFences stripped
+  in case (T.findIndex (== '[') noFences, findLastIndex (== ']') noFences) of
+    (Just start, Just end) -> T.take (end - start + 1) (T.drop start noFences)
+    _                      -> noFences
+
+stripCodeFences :: Text -> Text
+stripCodeFences txt =
+  let noStart = fromMaybe txt (T.stripPrefix "```json" txt >>= Just . T.strip)
+      noStart' = fromMaybe noStart (T.stripPrefix "```" noStart >>= Just . T.strip)
+  in fromMaybe noStart' (T.stripSuffix "```" noStart' >>= Just . T.strip)
+
+findLastIndex :: (Char -> Bool) -> Text -> Maybe Int
+findLastIndex predicate txt = go Nothing 0 (T.unpack txt)
+  where
+    go acc _ [] = acc
+    go acc i (c : cs)
+      | predicate c = go (Just i) (i + 1) cs
+      | otherwise   = go acc (i + 1) cs

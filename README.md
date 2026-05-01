@@ -299,4 +299,3 @@ cd haskell && cabal test --test-show-details=direct
 | [`tts.md`](specs/tts.md) | 🎧 Text-to-Speech player — Web Speech API, content extraction, sentence highlighting, auto-play, comment reading |
 | [`share-buttons.md`](specs/share-buttons.md) | 🔗 Share buttons — lightweight intent-URL-based social sharing for Bluesky, Mastodon, Twitter, SMS, and more |
 | [`google-analytics.md`](specs/google-analytics.md) | 📊 Google Analytics integration — daily GA4 metrics in reflections, setup guide, future ideas |
-| [`book-reports.md`](specs/book-reports.md) | 📚 Book report auto-generation — BFS mention discovery, Amazon affiliate links, Gemini report generation, reflection linking |

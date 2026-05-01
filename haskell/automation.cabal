@@ -85,8 +85,6 @@ library
     Automation.BlogSeriesDiscovery.RawConfig
     Automation.Wikilink
     Automation.GoogleAnalytics
-    Automation.BookReport
-    Automation.BookReport.Gemini
   build-depends:
     base                 >= 4.18 && < 5,
     text                 >= 2.0,
@@ -203,8 +201,6 @@ test-suite automation-tests
     Automation.BlogImage.ProviderTest
     Automation.GoogleAnalyticsTest
     Automation.GcpAuthTest
-    Automation.BookReportTest
-    Automation.BookReport.GeminiTest
     Automation.TestGenerators
   build-depends:
     base,

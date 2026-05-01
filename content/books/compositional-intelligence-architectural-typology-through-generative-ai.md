@@ -7,11 +7,12 @@ share: true
 CTA: 🏛️ Reimagine buildings.
 affiliate link: https://amzn.to/4pI6CCn
 link_analysis_model: gemini-3.1-flash-lite-preview
-link_analysis_time: 2026-04-11T00:00:00Z
+link_analysis_time: 2026-04-27T00:00:00Z
 force_analyze_links: false
 image_date: 2026-04-25T08:26:29Z
 image_model: "@cf/black-forest-labs/flux-1-schnell"
 image_prompt: An abstract, evolving architectural form. On one side, a clean, defined building silhouette with clear lines, representing typology. Towards the center, it seamlessly transitions into a dynamic, flowing composition of interconnected geometric shapes and ethereal, glowing lines, suggesting generative intelligence. These elements form a complex, organic yet structured pattern, like a digital blueprint coming to life. The color palette features deep blues and purples, accented by vibrant electric teal and gold highlights, conveying innovation and sophisticated design. The background is a subtle, dark gradient.
+link_analysis_version: "2"
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🏢🤖 Compositional Intelligence: Architectural Typology Through Generative AI  

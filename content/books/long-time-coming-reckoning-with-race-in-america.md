@@ -12,9 +12,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-19T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-04-30T21:35:18Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A powerful illustration depicting a landscape split horizontally. The lower half features deep, dark, textured earth with gnarled, intertwining roots that subtly morph into broken chains and historical shadows, symbolizing deep-seated history and systemic issues. Above, the sky transitions from a stormy, midnight blue to a soft, hopeful dawn, with warm, golden light beginning to break through the clouds. Silhouettes of diverse figures stand at the horizon line, gazing towards the emerging light, suggesting reflection, acknowledgment, and the anticipation of a new, more just day. The overall mood is one of solemn truth-telling leading to a glimmer of redemption.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🧑🏿⚖️🧑🏻 Long Time Coming: Reckoning With Race In America  
+![books-long-time-coming-reckoning-with-race-in-america](../books-long-time-coming-reckoning-with-race-in-america.jpg)  
 [🛒 Long Time Coming: Reckoning With Race In America. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3HkBKa8)  
   
 ## 📚 Book Report: Long Time Coming: Reckoning With Race In America  

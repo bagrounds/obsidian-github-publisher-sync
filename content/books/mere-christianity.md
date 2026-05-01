@@ -10,9 +10,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-17T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-05-01T07:55:36Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A winding, illuminated path, constructed from sturdy, interlocking blocks, emerges from a diverse landscape of rolling hills and valleys. This path, symbolizing reason and shared understanding, ascends gently towards a radiant, warm light at the horizon. Within the heart of this light, a subtle, elegant cross shape is discernible, not as a stark symbol, but as an integrated source of illumination. The sky above transitions from thoughtful twilight hues to a clear,
 ---
 [Home](../index.md) > [Books](./index.md)  
 # ✝️ Mere Christianity  
+![books-mere-christianity](../books-mere-christianity.jpg)  
 [🛒 Mere Christianity. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/48yl8Hx)  
   
 ## 📖 Book Report: Mere Christianity  

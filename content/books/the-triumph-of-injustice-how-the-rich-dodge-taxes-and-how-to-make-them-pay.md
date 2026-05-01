@@ -7,8 +7,9 @@ share: true
 affiliate link: https://amzn.to/4lAXY6F
 CTA: ⚖️ Demand fairness.
 link_analysis_model: gemini-3.1-flash-lite-preview
-link_analysis_time: 2026-04-05T00:00:00Z
+link_analysis_time: 2026-04-20T00:00:00Z
 force_analyze_links: false
+link_analysis_version: "2"
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 💰➡️ The Triumph of Injustice: How the Rich Dodge Taxes and How to Make Them Pay  

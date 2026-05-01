@@ -10,8 +10,9 @@ Channel: PBS NewsHour
 tags:
 youtube: https://youtu.be/K6LPvk6VF9w
 link_analysis_model: gemini-3.1-flash-lite-preview
-link_analysis_time: 2026-04-07T00:00:00Z
+link_analysis_time: 2026-04-28T00:00:00Z
 force_analyze_links: false
+link_analysis_version: "2"
 ---
 [Home](../index.md) > [Videos](./index.md)  
 # 🔒✈️🍔 Longest shutdown on record disrupts air travel and food assistance for Americans  

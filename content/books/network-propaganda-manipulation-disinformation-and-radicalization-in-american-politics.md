@@ -10,9 +10,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-19T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-05-01T16:35:44Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A high-angle, minimalist illustration featuring a complex, tangled web of glowing digital nodes and fiber-optic cables set against a deep navy background. One distinct cluster of nodes on the right side is illuminated in a jarring, vibrant red, glowing with intense, chaotic energy and radiating jagged lines that distort the surrounding space. The rest of the network is depicted in muted, cool tones of blue and grey, connected by orderly, straight lines. A single, sharp, metallic-looking needle or splinter is shown piercing the center of the red cluster, suggesting an analytical investigation or unmasking. The overall aesthetic is clinical, data-driven, and slightly ominous, emphasizing the contrast between structured information and a localized, volatile feedback loop.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 📢🕸️ Network Propaganda: Manipulation, Disinformation, and Radicalization in American Politics  
+![books-network-propaganda-manipulation-disinformation-and-radicalization-in-american-politics](../books-network-propaganda-manipulation-disinformation-and-radicalization-in-american-politics.jpg)  
 [🛒 Network Propaganda: Manipulation, Disinformation, and Radicalization in American Politics. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/44DV6jX)  
   
 📖 A profound analysis of the modern American political media landscape, "Network Propaganda: Manipulation, Disinformation, and Radicalization in American Politics" by Yochai Benkler, Robert Faris, and Hal Roberts, offers a compelling, data-driven perspective on the forces shaping contemporary political discourse. 📅 Published in 2018, the book challenges conventional narratives surrounding the 🇺🇸 2016 U.S. presidential election and the rise of a "post-truth" era.  

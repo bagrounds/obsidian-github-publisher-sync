@@ -11,9 +11,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-16T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-05-01T20:45:40Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A surreal, high-contrast illustration featuring a large, central human head rendered in a clean, minimalist style. From the side of the head, a chaotic storm of vibrant, multicolored geometric shards—representing noise—bursts outward, contrasting with a single, sharp, orderly laser-like beam of light passing through the center of the skull, representing judgment. The background is a deep, muted navy blue to emphasize the central explosion of color. Surrounding the head are faint, ghostly outlines of scales and gears, suggesting the internal struggle between analytical structure and human inconsistency. The composition is balanced but tension-filled, capturing the collision between clear logic and erratic, unpredictable variability.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🙉📢😵‍💫🔇 Noise: A Flaw in Human Judgment  
+![books-noise](../books-noise.jpg)  
 [🛒 Noise: A Flaw in Human Judgment. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4jB8bi7)  
   
 ## 🤖 AI Summary  

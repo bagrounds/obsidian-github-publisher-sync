@@ -12,9 +12,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-16T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-05-01T17:37:09Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A soft, warm-toned illustration of a parent and a young child sitting comfortably on a carpeted floor. The child is expressing big emotions with a furrowed brow, while the parent sits calmly at the child’s eye level, leaning in with an open, compassionate posture. A faint, glowing outline of a human brain is subtly integrated into the background, with soft light emanating from the frontal lobe area to symbolize the upstairs brain engaging. The overall aesthetic is minimalist and serene, using a palette of calming blues, warm yellows, and soft grays to represent the transition from chaotic emotion to rational understanding. The focus is on the tender, supportive connection between the two figures, emphasizing empathy and patience.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🚫🎭🧠 No-Drama Discipline: The Whole-Brain Way to Calm the Chaos and Nurture Your Child's Developing Mind  
+![books-no-drama-discipline](../books-no-drama-discipline.jpg)  
 [🛒 No-Drama Discipline: The Whole-Brain Way to Calm the Chaos and Nurture Your Child's Developing Mind. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4knWZGV)  
   
 ## 📚 Book Report: No-Drama Discipline  

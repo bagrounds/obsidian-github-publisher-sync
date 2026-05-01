@@ -12,7 +12,7 @@ link_analysis_version: "2"
 link_analysis_time: 2026-04-30T00:00:00Z
 force_analyze_links: false
 ---
-[🏡 Home](../index.md) > [🤖 AI Blog](./index.md) | [⏮️](./2026-04-27-1-premature-reflection-title-midnight-bug.md)  
+[🏡 Home](../index.md) > [🤖 AI Blog](./index.md) | [⏮️](./2026-04-27-1-premature-reflection-title-midnight-bug.md) [⏭️](./2026-04-30-2-auto-generate-book-reports.md)  
 # 2026-04-30 | 🚀 Deploy to GitHub Pages on Main Branch Only 🤖  
 ![ai-blog-2026-04-30-1-deploy-main-branch-only](../ai-blog-2026-04-30-1-deploy-main-branch-only.jpg)  
   

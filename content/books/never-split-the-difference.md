@@ -9,9 +9,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-16T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-05-01T20:27:39Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A minimalist, high-contrast illustration featuring a sleek, professional desk. On one side, a pair of handcuffs rests near a leather-bound notebook and a fountain pen, symbolizing the transition from high-stakes hostage negotiation to business strategy. A single, perfectly balanced scale sits in the center, but instead of traditional weights, one side holds a small, glowing lightbulb representing insight, while the other holds a puzzle piece, suggesting the discovery of Black Swan information. The background is a soft, moody gradient of deep navy and charcoal, evoking a sense of calm authority and focus. The lighting is dramatic and cinematic, highlighting the metallic textures of the objects to emphasize precision, tactical intelligence, and the gravity of high-stakes communication.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🙅‍♀️✂️⚖️ Never Split the Difference: Negotiating As If Your Life Depended On It  
+![books-never-split-the-difference](../books-never-split-the-difference.jpg)  
 [🛒 Never Split the Difference: Negotiating As If Your Life Depended On It. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/43qPIQD)  
   
 ## 📖 Book Report: Never Split the Difference: Negotiating As If Your Life Depended On It  

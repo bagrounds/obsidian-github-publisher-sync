@@ -9,9 +9,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-17T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-05-01T19:40:52Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A split-screen composition featuring a stylized human silhouette. On the left side, the brain is represented by chaotic, tangled glowing wires in vibrant, restless colors like neon orange and jagged red, symbolizing impulsivity and distraction. On the right side, the brain transitions into an orderly, symmetrical structure with cool, calming hues of deep blue and emerald green, organized by precise, glowing geometric lines representing focus and discipline. A faint, translucent lotus flower icon is centered at the junction of the two sides, bridging the gap between the chaotic and the controlled. The background is a clean, dark slate, allowing the luminous neurological pathways to stand out with a crisp, modern aesthetic.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🧠🧘🏼‍♀️ Neuro-Discipline: Everyday Neuroscience for Self-Discipline, Focus, and Defeating Your Brain's Impulsive and Distracted Nature  
+![books-neuro-discipline-everyday-neuroscience-for-self-discipline-focus-and-defeating-your-brains-impulsive-and-distracted-nature](../books-neuro-discipline-everyday-neuroscience-for-self-discipline-focus-and-defeating-your-brains-impulsive-and-distracted-nature.jpg)  
 [🛒 Neuro-Discipline: Everyday Neuroscience for Self-Discipline, Focus, and Defeating Your Brain's Impulsive and Distracted Nature. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4mKaS3G)  
   
 ## 🧠 Book Report: Neuro-Discipline  

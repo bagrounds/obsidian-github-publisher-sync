@@ -5,10 +5,10 @@ aliases:
 title: 📺 Videos
 URL: https://bagrounds.org/videos
 backlinks: false
-updated: 2026-05-01T07:44:11-07:00
+updated: 2026-05-01T14:53:27-07:00
 ---
 [Home](../index.md)  
-# 📺 Videos (813)  
+# 📺 Videos (814)  
 - [💰🤑🤖💡🚀💲 $0.10 per Month Runs My Entire AI Life. I'll Show You How.](./0-10-month-runs-my-entire-ai-life-ill-show-you-how.md)  
 - [📊📈📉📃👁️ 10 Charts to Understand the 900 Page Budget Bill](./10-charts-to-understand-the-900-page-budget-bill.md)  
 - [🤖🔗⬆️✅ 12-Factor Agents: Patterns of reliable LLM applications — Dex Horthy, HumanLayer](./12-factor-agents-patterns-of-reliable-llm-applications-dex-horthy-humanlayer.md)  
@@ -282,6 +282,7 @@ updated: 2026-05-01T07:44:11-07:00
 - [🏃💪🧠 How to Build Endurance | Huberman Lab Essentials](./how-to-build-endurance-huberman-lab-essentials.md)  
 - [🎯🪜🏗️✅ How to Build Systems to Actually Achieve Your Goals](./how-to-build-systems-to-actually-achieve-your-goals.md)  
 - [💡🔧📏🔮〰️ How to create a capability model](./how-to-create-a-capability-model.md)  
+- [🤖🧹💻 How To De-Slop A Codebase Ruined By AI (with one skill)](./how-to-de-slop-a-codebase-ruined-by-ai-with-one-skill.md)  
 - [🚀⏱️💥🏆 How to do more in 90 days than most do in their entire lives](./how-to-do-more-in-90-days-than-most-do-in-their-entire-lives.md)  
 - [🧠👁️📈✨ How to Expand Your Consciousness | Dr. Christof Koch](./how-to-expand-your-consciousness-dr-christof-koch.md)  
 - [👊👹🇺🇸🛡️ How to Fight Fascism in America — with Timothy Snyder | Prof G Conversations](./how-to-fight-fascism-in-america-with-timothy-snyder-prof-g-conversations.md)  

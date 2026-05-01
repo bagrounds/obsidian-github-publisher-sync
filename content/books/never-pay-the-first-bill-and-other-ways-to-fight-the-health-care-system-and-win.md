@@ -10,9 +10,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-25T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-05-01T19:41:01Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A determined individual stands confidently, holding a rolled-up medical bill like a strategic scroll or baton, pointing it forward. Behind them, a towering, intricate structure looms, composed of stylized medical symbols (intertwined caduceus, hospital crosses) and layers of dense, unreadable paperwork, representing the complex healthcare system. This structure appears formidable but not insurmountable. The individual has a clear, illuminated path ahead, contrasting with the cooler, bureaucratic tones of the background. The overall impression conveys strategic defiance and empowerment against a confusing system.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🙅🏼‍♀️🧾🏥⚔️ Never Pay the First Bill: And Other Ways to Fight the Health Care System and Win  
+![books-never-pay-the-first-bill-and-other-ways-to-fight-the-health-care-system-and-win](../books-never-pay-the-first-bill-and-other-ways-to-fight-the-health-care-system-and-win.jpg)  
 [🛒 Never Pay the First Bill: And Other Ways to Fight the Health Care System and Win. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/45BkIhZ)  
   
 ## 📚 Book Report: Never Pay the First Bill: And Other Ways to Fight the Health Care System and Win 🏆  

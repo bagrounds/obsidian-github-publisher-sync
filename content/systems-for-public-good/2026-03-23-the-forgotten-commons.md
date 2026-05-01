@@ -10,8 +10,9 @@ image_date: 2026-04-01T05:53:06Z
 image_model: "@cf/black-forest-labs/flux-1-schnell"
 image_prompt: "A wide-angle, cinematic illustration of a vibrant, interconnected city square depicted in a clean, isometric art style. The scene features a central, lush green park with a thriving community garden, surrounded by diverse public infrastructure: a modern library with an open plaza, a sleek public transit station, and a sparkling municipal water fountain. Sunlight streams through soft, wispy clouds, casting warm light over a diverse group of people interacting in the shared spaces. The architecture blends classical stone pillars with modern, sustainable glass structures. Paths and walkways weave through the scene, physically connecting the different buildings to the green space, symbolizing unity and collective access. The color palette is bright and optimistic, utilizing soft teals, terracotta, and rich greens to evoke a sense of abundance and harmony."
 link_analysis_model: gemini-3.1-flash-lite-preview
-link_analysis_time: 2026-03-31T00:00:00Z
+link_analysis_time: 2026-04-21T00:00:00Z
 force_analyze_links: false
+link_analysis_version: "2"
 ---
 [🏡 Home](../index.md) > [🏛️ Systems for Public Good](./index.md) | [⏭️](./2026-03-24-the-foundations-of-freedom-a-personal-journey-into-public-good.md)  
 # 2026-03-23 | 🏛️ The Forgotten Commons — Why Public Good Matters More Than Ever 🏛️    

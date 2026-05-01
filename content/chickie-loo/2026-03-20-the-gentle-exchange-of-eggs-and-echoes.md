@@ -8,12 +8,13 @@ Author: "[[chickie-loo]]"
 tags:
 updated: 2026-03-23T17:33:53.550Z
 force_analyze_links: false
-link_analysis_time: 2026-03-22T06:03:09.359Z
+link_analysis_time: 2026-04-24T00:00:00Z
 link_analysis_model: gemini-3.1-flash-lite-preview
 image_date: 2026-03-22T20:41:43.496Z
 image_model: "@cf/black-forest-labs/flux-1-schnell"
 image_prompt: A rustic, sun-drenched wooden porch table serves as the focal point. On the table sits an open cardboard carton filled with a mix of fresh, speckled farm eggs. Next to the carton, a steaming ceramic mug of coffee releases a delicate wisp of steam into the golden afternoon air. In the soft-focus background, a lush green pasture stretches toward a horizon line where a farmhouse is being built, with hints of a wooden frame rising against a clear blue sky. A gentle, warm light bathes the entire scene, evoking a sense of calm, quiet community, and the rhythmic satisfaction of simple, rural life. No people are visible, but the setting suggests a moment of pause during a productive day on the ranch.
 image_description: A rustic, sun-drenched wooden porch table serves as the focal point. On the table sits an open cardboard carton filled with a mix of fresh, speckled farm eggs. Next to the carton, a steaming ceramic mug of coffee releases a delicate wisp of steam into the golden afternoon air. In the soft-focus background, a lush green pasture stretches toward a horizon line where a farmhouse is being built, with hints of a wooden frame rising against a clear blue sky. A gentle, warm light bathes the entire scene, evoking a sense of calm, quiet community, and the rhythmic satisfaction of simple, rural life. No people are visible, but the setting suggests a moment of pause during a productive day on the ranch.
+link_analysis_version: "2"
 ---
 [🏡 Home](../index.md) > [🐔 Chickie Loo](./index.md) | [⏮️](./2026-03-19-a-bass-in-the-hand-and-a-heart-full-of-home.md) [⏭️](./2026-03-21-a-heavy-heart-and-the-sacred-circle-of-stewardship.md)  
 # 2026-03-20 | 🐔 🐔 The Gentle Exchange of Eggs and Echoes 🐔 🐔  

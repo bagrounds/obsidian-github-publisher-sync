@@ -6,8 +6,9 @@ URL: https://bagrounds.org/books/what-if-we-get-it-right-visions-of-climate-futu
 share: true
 affiliate link: https://amzn.to/3T4xv5a
 link_analysis_model: gemini-3.1-flash-lite-preview
-link_analysis_time: 2026-04-09T00:00:00Z
+link_analysis_time: 2026-04-23T00:00:00Z
 force_analyze_links: false
+link_analysis_version: "2"
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🌡️✅🌎 What If We Get It Right?: Visions of Climate Futures  

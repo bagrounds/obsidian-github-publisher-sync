@@ -2,6 +2,7 @@
 
 module Automation.BookReport
   ( BookReportResult (..)
+  , defaultMentionScanModel
   , defaultBookReportModel
   , defaultAmazonSearchModel
   , titleToKebabCase
@@ -37,7 +38,7 @@ import Control.Concurrent (threadDelay)
 import Control.Exception (SomeException, try)
 import qualified Data.ByteString.Lazy as LBS
 import qualified Data.Char as Char
-import Data.List (find)
+import Data.List (find, partition)
 import Data.Maybe (fromMaybe, mapMaybe)
 import qualified Data.Map.Strict as Map
 import qualified Data.Set as Set
@@ -63,11 +64,32 @@ data BookReportResult = BookReportResult
   , booksSkipped   :: Int
   } deriving (Show, Eq)
 
+-- | Model used for scanning files for plain-text book mentions.
+-- This task does not require search grounding, so the lighter
+-- Gemini31FlashLite model is used to preserve 2.5-flash quota.
+defaultMentionScanModel :: Gemini.Model
+defaultMentionScanModel = Gemini.Gemini31FlashLite
+
+-- | Model used for generating the full book report.
+-- Requires Google Search grounding (for Evaluation citations), so must be
+-- a model that supports the grounding tool — currently 2.5-flash.
 defaultBookReportModel :: Gemini.Model
 defaultBookReportModel = Gemini.Gemini25Flash
 
+-- | Model used for the Amazon product URL search.
+-- Requires Google Search grounding to find the current URL, so must be
+-- a model that supports the grounding tool — currently 2.5-flash.
 defaultAmazonSearchModel :: Gemini.Model
 defaultAmazonSearchModel = Gemini.Gemini25Flash
+
+-- | Maximum number of files that may receive a Gemini mention-scan call in a
+-- single run. Files that are already stamped with 'book_mention_scanned' are
+-- not counted against this limit — only actual API calls count.
+-- Keeping this small bounds the worst-case run time: at ~2 s per call the
+-- scan phase takes at most ~40 s. Progress accumulates across daily runs as
+-- more files get their permanent scan stamp.
+maxFilesScannedPerRun :: Int
+maxFilesScannedPerRun = 20
 
 -- | Convert a book title to a URL-safe kebab-case slug.
 -- Follows the same rules as the Obsidian Templater script:
@@ -471,7 +493,11 @@ run manager apiKey associateTag vaultDir
                 Nothing -> do
                   allFiles <- bfsTraversal vaultDir
                   putStrLn $ "  🔍 BFS: " <> show (length allFiles) <> " files reachable"
-                  findFirstCandidates manager apiKey vaultDir existingBooks allFiles existingNormalizedTitles todayText
+                  -- Prioritise book pages so inter-book mentions are linked quickly,
+                  -- then continue with the rest of the BFS-ordered file list.
+                  let (bookFiles, otherFiles) = partition (T.isPrefixOf "books/") allFiles
+                      prioritizedFiles = bookFiles <> otherFiles
+                  findFirstCandidates manager apiKey vaultDir existingBooks prioritizedFiles existingNormalizedTitles todayText
 
               case candidates of
                 [] -> do
@@ -484,7 +510,8 @@ run manager apiKey associateTag vaultDir
                     )
                   tryGenerateReport manager apiKey associateTag vaultDir reflectionPath booksIndex todayText candidates 0
 
--- | BFS through content files, scanning ONE file for plain-text book mentions.
+-- | BFS through content files, scanning files for plain-text book mentions.
+-- Stops after 'maxFilesScannedPerRun' actual Gemini calls to bound run time.
 -- Skips files that have already been scanned (detected by the book_mention_scanned
 -- frontmatter field having any value). The scan is permanent — a scanned file is
 -- never re-scanned by a future run.
@@ -494,29 +521,33 @@ run manager apiKey associateTag vaultDir
 -- newly discovered candidates (only set when resuming from pending state).
 findFirstCandidates :: Manager -> Secret -> FilePath -> [ContentEntry] -> [Text] -> Set.Set Text -> Text -> IO [BookCandidate]
 findFirstCandidates manager apiKey vaultDir existingBooks allFiles existingNormalizedTitles todayText =
-  go allFiles []
+  go allFiles [] 0
   where
-    go [] accumulator = pure accumulator
-    go (relPath : rest) accumulator = do
+    go [] accumulator _ = pure accumulator
+    go _ accumulator scansThisRun | scansThisRun >= maxFilesScannedPerRun = do
+      putStrLn $ "  🛑 Completed " <> show maxFilesScannedPerRun
+        <> " scan(s) this run — remaining files will be scanned in future runs"
+      pure accumulator
+    go (relPath : rest) accumulator scansThisRun = do
       let filePath = vaultDir </> T.unpack relPath
       exists <- doesFileExist filePath
       if not exists
-        then go rest accumulator
+        then go rest accumulator scansThisRun
         else do
           content <- TIO.readFile filePath
           let (frontmatter, body) = parseFrontmatter content
-          -- Skip files already scanned today to avoid redundant Gemini calls on retry
+          -- Skip files already scanned to avoid redundant Gemini calls
           case Map.lookup "book_mention_scanned" frontmatter of
             Just _ -> do
               putStrLn $ "  ⏭️  Already scanned (permanent): " <> T.unpack relPath
-              go rest accumulator
+              go rest accumulator scansThisRun
             _ -> do
               putStrLn $ "  🔎 Scanning for book mentions: " <> T.unpack relPath
-              result <- findBookMentionsWithGemini manager apiKey defaultBookReportModel body
+              result <- findBookMentionsWithGemini manager apiKey defaultMentionScanModel body
               case result of
                 Left err -> do
                   putStrLn $ "  ⚠️  Gemini error scanning " <> T.unpack relPath <> ": " <> T.unpack err
-                  go rest accumulator
+                  go rest accumulator (scansThisRun + 1)
                 Right mentions -> do
                   -- Record the scan date permanently so this file is never re-scanned.
                   updateFrontmatterFields filePath [("book_mention_scanned", YamlText todayText)]
@@ -527,7 +558,7 @@ findFirstCandidates manager apiKey vaultDir existingBooks allFiles existingNorma
                   insertWikilinksForExistingMentions relPath filePath existingBooks existingMentioned
                   let candidates = map (\title -> BookCandidate { candidateTitle = title, candidateAsin = Nothing, candidateSource = relPath }) newBooks
                   if null candidates
-                    then go rest accumulator
+                    then go rest accumulator (scansThisRun + 1)
                     else pure (accumulator <> candidates)
 
 -- | Insert wikilinks for books that are mentioned in plain text but already have pages.

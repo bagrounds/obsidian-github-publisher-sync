@@ -20,7 +20,7 @@ URL: https://bagrounds.org/ai-blog/2026-04-30-2-auto-generate-book-reports
 
 ### 🔍 Step One: Discovering Book Mentions
 
-🌐 A BFS traversal walks the vault's content graph starting from the most recently linked notes. For each file visited, we ask Gemini to identify plain-text book mentions, meaning titles that appear in the body but are not already wrapped in double-bracket wikilinks.
+🌐 A BFS traversal walks the vault's content graph starting from the most recently linked notes. Book pages are prioritized so inter-book mentions are wired up before any other content type is scanned. For each file visited, we ask Gemini to identify plain-text book mentions, meaning titles that appear in the body but are not already wrapped in double-bracket wikilinks.
 
 🗂️ Those mentions are cross-referenced against the existing book index. Comparison is case-insensitive and emoji-stripped so a mention of "Sapiens" correctly matches an existing page titled "🧬 Sapiens: A Brief History of Humankind."
 
@@ -28,19 +28,21 @@ URL: https://bagrounds.org/ai-blog/2026-04-30-2-auto-generate-book-reports
 
 💾 After scanning each file, the task writes a book_mention_scanned field to that file's frontmatter. Once set, this flag is permanent — any future run sees it and skips the file entirely without a redundant Gemini inference call. The design assumes one scan per file for the lifetime of the vault.
 
+🛑 To prevent runaway execution, the scan phase is capped at twenty Gemini calls per run. Already-scanned files are skipped instantly and do not count against the limit. Progress accumulates across daily runs as more files receive their permanent scan stamp, so the vault is covered steadily without any single run taking tens of minutes.
+
 📌 Newly discovered titles that do not yet have pages become candidates for full report generation. Only one book report is generated per run.
 
 ### 🔄 Step Two: Idempotency and Crash Recovery
 
 🔎 Idempotency is detected by scanning today's reflection body for evidence: a list item starting with the books wikilink prefix and ending with the robot-emoji marker. If any such line is found, the task exits immediately. This mirrors how other content automation tasks detect prior work — by looking at what is on the page, not at a separately maintained frontmatter flag.
 
-📚 When a new candidate is identified, the task immediately writes a book-report-pending field to the books index frontmatter. Unlike the daily reflection, the books index is not tied to a specific date, so this pending state survives across day boundaries. If Gemini is unavailable all day on Monday, the Tuesday run can resume from the same title without repeating the BFS scan.
+📚 When a new candidate is identified, the task immediately writes a book_report_pending field to the books index frontmatter. Unlike the daily reflection, the books index is not tied to a specific date, so this pending state survives across day boundaries. If Gemini is unavailable all day on Monday, the Tuesday run can resume from the same title without repeating the BFS scan.
 
-🔑 Once Amazon search succeeds, the extracted ASIN is written to the books index as book-report-asin. If the process exits before generating the report, the next run reads the cached ASIN and skips the Amazon search step entirely, going straight to report generation.
+🔑 Once Amazon search succeeds, the extracted ASIN is written to the books index as book_report_asin. If the process exits before generating the report, the next run reads the cached ASIN and skips the Amazon search step entirely, going straight to report generation.
 
-🧹 After a report is successfully written and the reflection is updated, both book-report-pending and book-report-asin are cleared from the books index frontmatter, leaving it in a clean state for the next run.
+🧹 After a report is successfully written and the reflection is updated, both book_report_pending and book_report_asin are cleared from the books index frontmatter, leaving it in a clean state for the next run.
 
-🚫 If the environment variable AMAZON_ASSOCIATE_TAG is not set, the task refuses to run entirely. Generating book pages without affiliate links would require manual cleanup later, so we fail fast rather than produce incomplete output. The secret is passed to the process via the scheduled workflow's env block, mapping secrets.AMAZON_ASSOCIATE_TAG to the process environment.
+🚫 If the environment variable AMAZON_ASSOCIATE_TAG is not set, the task refuses to run entirely. Generating book pages without affiliate links would require manual cleanup later, so we fail fast rather than produce incomplete output. The variable is passed to the process via the scheduled workflow's env block using the GitHub Actions vars context.
 
 ### 🛒 Step Three: Finding and Validating the Amazon Product URL
 
@@ -74,6 +76,18 @@ URL: https://bagrounds.org/ai-blog/2026-04-30-2-auto-generate-book-reports
 
 ## 🏗️ Architecture Decisions
 
+### 🤖 Gemini Model Strategy
+
+🗺️ The pipeline uses three distinct Gemini inference calls, each assigned the most appropriate model.
+
+🪶 The mention-scan step calls gemini-3.1-flash-lite-preview, the model with the highest available quota. This task asks a simple question — does this document contain any plain-text book titles? — and does not require Google Search grounding. Using the lighter model here preserves the more capable models for tasks that need them and keeps the scan phase fast and cheap.
+
+🔍 Both the Amazon URL search and the book report generation call gemini-2.5-flash. These tasks require Google Search grounding: the URL search needs to retrieve a live Amazon product page, and the report generation benefits from real-time sourcing for the Evaluation section citations. Google Search grounding is currently only available for the 2.5-series models.
+
+### 🔄 Shared Rate-Limit Handling
+
+📡 All Gemini inference calls go through a single shared retry function called generateContentWithRetry that lives in the core Gemini module. It automatically retries on transient rate-limit errors using exponential back-off starting at five seconds, doubling on each attempt up to sixty seconds, with a maximum of three retries. A daily quota exhaustion error returns immediately since retrying the same model within the same run would be pointless. This retry logic replaces the duplicate retry loops that previously existed separately in both the book-report Gemini module and the internal-linking Gemini module.
+
 ### 🧊 Pure Core, IO at the Edges
 
 🔬 All slug generation, ASIN extraction, affiliate URL construction, frontmatter assembly, body building, and reflection insertion are pure functions with no IO. The IO boundary is at the run function which handles file reads, HTTP fetches, Gemini calls, and writes.
@@ -98,6 +112,10 @@ URL: https://bagrounds.org/ai-blog/2026-04-30-2-auto-generate-book-reports
 
 🛒 The third checkpoint is the Amazon search. After the ASIN is extracted and the URL is validated, the ASIN is written to the books index as book_report_asin. If report generation fails, the next run reuses the cached ASIN and skips the Amazon search step entirely.
 
+### ⏱️ Bounding Run Time
+
+🛑 The scan phase is bounded by a per-run limit of twenty Gemini inference calls. On the very first run against a large vault most files have not been scanned yet, and without a limit the process could spend tens of minutes scanning hundreds of files one by one. With the limit in place, each run touches at most twenty new files, taking roughly forty seconds for the scan phase. Files that are already stamped are skipped in microseconds and do not count. Progress accumulates reliably across daily runs.
+
 ### 📐 ASIN Extraction Safety
 
 🔒 The ASIN extraction function stops at the first non-alphanumeric character, then verifies the segment is exactly ten characters. The property-based roundtrip test confirms that building an affiliate URL from a valid ASIN and then extracting the ASIN from that URL always returns the original.
@@ -108,7 +126,7 @@ URL: https://bagrounds.org/ai-blog/2026-04-30-2-auto-generate-book-reports
 
 ✅ The implementation adds tests across two modules covering the full pipeline.
 
-📋 The BookReport module tests cover title-to-kebab-case conversion with property tests for slug invariants, ASIN extraction with the roundtrip property, affiliate URL construction, frontmatter assembly including the emojified-title override, body building with and without affiliate links, the hasAutoGeneratedBookLink function (which is the page-evidence idempotency check), reflection section insertion before blog series sections and social sections, idempotency, and the auto-generated robot-emoji marker.
+📋 The BookReport module tests cover title-to-kebab-case conversion with property tests for slug invariants, ASIN extraction with the roundtrip property, affiliate URL construction, frontmatter assembly including the emojified-title override, body building with and without affiliate links, the hasAutoGeneratedBookLink function (which is the page-evidence idempotency check), reflection section insertion before blog series sections and social sections, idempotency, the auto-generated robot-emoji marker, and the expected model constants for each inference task.
 
 📋 The BookReport.Gemini module tests cover the find-mentions prompt structure, JSON array parsing with code-fence stripping, the seven-section report prompt structure including the AI Summary and FAQ sections, and the Amazon search prompt.
 

@@ -14,22 +14,12 @@ import Automation.Json (decode)
 import Automation.Secret (Secret)
 import Automation.Url (unUrl)
 import qualified Automation.Gemini as Gemini
-import Control.Concurrent (threadDelay)
 import Data.Text (Text)
 import qualified Data.Text as T
 import qualified Data.ByteString.Lazy as LBS
 import qualified Data.Text.Encoding as TE
 import Data.Maybe (fromMaybe)
 import Network.HTTP.Client (Manager)
-
-maximumRetries :: Int
-maximumRetries = 3
-
-initialBackoffDurationMicroseconds :: Int
-initialBackoffDurationMicroseconds = 5_000_000
-
-maximumBackoffDurationMicroseconds :: Int
-maximumBackoffDurationMicroseconds = 60_000_000
 
 -- | Build a prompt asking Gemini to find all plain-text book mentions in a document
 -- (i.e., titles not already wrapped in [[wikilinks]]).
@@ -115,14 +105,11 @@ buildAmazonSearchPrompt bookTitle = T.intercalate "\n"
 
 -- | Ask Gemini to identify plain-text book mentions in the given file body.
 -- Returns a list of book titles or a Left error if the API call fails permanently.
+-- Uses 'Gemini.generateContentWithRetry' to retry on transient rate-limit errors.
 findBookMentionsWithGemini :: Manager -> Secret -> Gemini.Model -> Text -> IO (Either Text [Text])
-findBookMentionsWithGemini manager apiKey model body =
-  retryFindMentions manager apiKey model (buildFindMentionsPrompt body) 0 initialBackoffDurationMicroseconds
-
-retryFindMentions :: Manager -> Secret -> Gemini.Model -> Text -> Int -> Int -> IO (Either Text [Text])
-retryFindMentions manager apiKey model prompt attempt backoff = do
-  result <- Gemini.generateContent manager Gemini.Request
-    { Gemini.requestPrompt            = prompt
+findBookMentionsWithGemini manager apiKey model body = do
+  result <- Gemini.generateContentWithRetry manager Gemini.Request
+    { Gemini.requestPrompt            = buildFindMentionsPrompt body
     , Gemini.requestSystemInstruction = Nothing
     , Gemini.requestModel             = model
     , Gemini.requestApiKey            = apiKey
@@ -132,27 +119,17 @@ retryFindMentions manager apiKey model prompt attempt backoff = do
         , Gemini.searchGrounding = False
         }
     }
-  case result of
-    Right response ->
-      pure (Right (parseMentionsList (Gemini.responseText response)))
-    Left err
-      | Gemini.isRateLimitError err && attempt < maximumRetries -> do
-          putStrLn $ "  ⏳ Rate limit, retry " <> show (attempt + 1) <> "/" <> show maximumRetries
-            <> " in " <> show (backoff `div` 1_000_000) <> "s"
-          threadDelay backoff
-          retryFindMentions manager apiKey model prompt (attempt + 1) (min (backoff * 2) maximumBackoffDurationMicroseconds)
-      | Gemini.isQuotaExhaustedError err ->
-          pure (Left ("QuotaExhausted: " <> T.pack (show err)))
-      | otherwise ->
-          pure (Left (T.pack (show err)))
+  pure $ case result of
+    Right response -> Right (parseMentionsList (Gemini.responseText response))
+    Left err       -> Left (T.pack (show err))
 
 -- | Generate a book report for the given title using Gemini with Google Search grounding.
 -- The response begins with an emojified title line followed by the full report body.
+-- Uses 'Gemini.generateContentWithRetry' to retry on transient rate-limit errors.
 generateBookReportWithGemini :: Manager -> Secret -> Gemini.Model -> Text -> IO (Either Text Text)
 generateBookReportWithGemini manager apiKey model bookTitle = do
-  let prompt = buildReportPrompt bookTitle
-  result <- Gemini.generateContent manager Gemini.Request
-    { Gemini.requestPrompt            = prompt
+  result <- Gemini.generateContentWithRetry manager Gemini.Request
+    { Gemini.requestPrompt            = buildReportPrompt bookTitle
     , Gemini.requestSystemInstruction = Nothing
     , Gemini.requestModel             = model
     , Gemini.requestApiKey            = apiKey
@@ -162,17 +139,17 @@ generateBookReportWithGemini manager apiKey model bookTitle = do
         , Gemini.searchGrounding = True
         }
     }
-  case result of
-    Right response -> pure (Right (Gemini.responseText response))
-    Left err       -> pure (Left (T.pack (show err)))
+  pure $ case result of
+    Right response -> Right (Gemini.responseText response)
+    Left err       -> Left (T.pack (show err))
 
 -- | Use Gemini with Google Search grounding to find the Amazon.com product URL for a book.
 -- Returns Just url if an Amazon product URL is found, Nothing otherwise.
+-- Uses 'Gemini.generateContentWithRetry' to retry on transient rate-limit errors.
 searchAmazonProductUrl :: Manager -> Secret -> Gemini.Model -> Text -> IO (Maybe Text)
 searchAmazonProductUrl manager apiKey model bookTitle = do
-  let prompt = buildAmazonSearchPrompt bookTitle
-  result <- Gemini.generateContent manager Gemini.Request
-    { Gemini.requestPrompt            = prompt
+  result <- Gemini.generateContentWithRetry manager Gemini.Request
+    { Gemini.requestPrompt            = buildAmazonSearchPrompt bookTitle
     , Gemini.requestSystemInstruction = Nothing
     , Gemini.requestModel             = model
     , Gemini.requestApiKey            = apiKey
@@ -182,18 +159,18 @@ searchAmazonProductUrl manager apiKey model bookTitle = do
         , Gemini.searchGrounding = True
         }
     }
-  case result of
-    Left _ -> pure Nothing
+  pure $ case result of
+    Left _ -> Nothing
     Right response ->
       let sources = Gemini.responseGroundingSources response
           amazonUrls = filter isAmazonProductUrl (fmap (unUrl . Gemini.groundingSourceUrl) sources)
           responseText = T.strip (Gemini.responseText response)
       in case amazonUrls of
-        (url : _) -> pure (Just url)
+        (url : _) -> Just url
         [] ->
           if isAmazonProductUrl responseText && responseText /= "NOT_FOUND"
-            then pure (Just responseText)
-            else pure Nothing
+            then Just responseText
+            else Nothing
 
 isAmazonProductUrl :: Text -> Bool
 isAmazonProductUrl url =

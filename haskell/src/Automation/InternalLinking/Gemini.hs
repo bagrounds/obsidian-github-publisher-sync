@@ -11,21 +11,11 @@ import Automation.RelativePath (unRelativePath)
 import Automation.Secret (Secret (..))
 import Automation.Title (unTitle)
 import qualified Automation.Gemini as Gemini
-import Control.Concurrent (threadDelay)
 import Data.Text (Text)
 import qualified Data.Text as T
 import qualified Data.ByteString.Lazy as LBS
 import qualified Data.Text.Encoding as TE
 import Network.HTTP.Client (Manager)
-
-maxGeminiRetries :: Int
-maxGeminiRetries = 3
-
-initialBackoffMicroseconds :: Int
-initialBackoffMicroseconds = 5_000_000
-
-maxBackoffMicroseconds :: Int
-maxBackoffMicroseconds = 60_000_000
 
 buildIdentificationPrompt :: Text -> [ContentEntry] -> Text
 buildIdentificationPrompt fileBody bookEntries =
@@ -61,11 +51,7 @@ identifyBooksWithGemini :: Manager -> Secret -> Gemini.Model -> Text -> [Content
 identifyBooksWithGemini _ _ _ _ [] = pure (Right [])
 identifyBooksWithGemini manager apiKey model fileBody bookEntries = do
   let prompt = buildIdentificationPrompt fileBody bookEntries
-  retryLoop manager apiKey model prompt 0 initialBackoffMicroseconds
-
-retryLoop :: Manager -> Secret -> Gemini.Model -> Text -> Int -> Int -> IO (Either Text [Text])
-retryLoop manager apiKey model prompt attempt backoff = do
-  result <- Gemini.generateContent manager Gemini.Request
+  result <- Gemini.generateContentWithRetry manager Gemini.Request
     { Gemini.requestPrompt             = prompt
     , Gemini.requestSystemInstruction  = Nothing
     , Gemini.requestModel              = model
@@ -76,19 +62,9 @@ retryLoop manager apiKey model prompt attempt backoff = do
         , Gemini.searchGrounding = False
         }
     }
-  case result of
-    Right response ->
-      pure (parseGeminiBookPaths (Gemini.responseText response))
-    Left err
-      | Gemini.isRateLimitError err && attempt < maxGeminiRetries -> do
-          putStrLn $ "  ⏳ Rate limit, retry " <> show (attempt + 1) <> "/" <> show maxGeminiRetries
-            <> " in " <> show (backoff `div` 1_000_000) <> "s"
-          threadDelay backoff
-          retryLoop manager apiKey model prompt (attempt + 1) (min (backoff * 2) maxBackoffMicroseconds)
-      | Gemini.isQuotaExhaustedError err ->
-          pure (Left ("QuotaExhausted: " <> T.pack (show err)))
-      | otherwise ->
-          pure (Left (T.pack (show err)))
+  pure $ case result of
+    Right response -> parseGeminiBookPaths (Gemini.responseText response)
+    Left err       -> Left (T.pack (show err))
 
 parseGeminiBookPaths :: Text -> Either Text [Text]
 parseGeminiBookPaths raw =

@@ -24,6 +24,7 @@ module Automation.Gemini
   , defaultGenerationConfig
   , isRateLimitError
   , isQuotaExhaustedError
+  , generateContentWithRetry
   , parseResponseText
   , extractText
   , extractGroundingSources
@@ -40,6 +41,7 @@ import Automation.Json (Value (..), ToValue (..), (.=), object, encode)
 import qualified Automation.Json as Json
 import Automation.Secret (Secret (..))
 import Automation.Url (Url, unUrl, mkUrl)
+import Control.Concurrent (threadDelay)
 import Data.List.NonEmpty (NonEmpty ((:|)))
 import qualified Data.List.NonEmpty as NE
 import Data.Maybe (fromMaybe)
@@ -410,6 +412,40 @@ generateContentWithFallback manager (model :| fallbacks) systemInstruction promp
       (next : rest) -> do
         putStrLn $ "⚠️ Model " <> T.unpack (modelToText model) <> " failed (" <> show err <> "), trying next fallback..."
         generateContentWithFallback manager (next :| rest) systemInstruction prompt apiKey config
+
+-- | Retry constants for Gemini API calls.
+-- Shared by all modules that call Gemini, via 'generateContentWithRetry'.
+geminiMaxRetries :: Int
+geminiMaxRetries = 3
+
+geminiInitialBackoffMicroseconds :: Int
+geminiInitialBackoffMicroseconds = 5_000_000
+
+geminiMaxBackoffMicroseconds :: Int
+geminiMaxBackoffMicroseconds = 60_000_000
+
+-- | Execute a Gemini API call and automatically retry on transient rate-limit
+-- errors using exponential back-off.
+-- On a daily quota error the call returns Left immediately — retrying the
+-- same model within the same run would be pointless.
+-- On any other non-rate-limit error the call also returns Left immediately.
+generateContentWithRetry :: Manager -> Request -> IO (Either Error Response)
+generateContentWithRetry manager req = go 0 geminiInitialBackoffMicroseconds
+  where
+    go attempt backoff = do
+      result <- generateContent manager req
+      case result of
+        Right response -> pure (Right response)
+        Left err
+          | isQuotaExhaustedError err ->
+              pure (Left err)
+          | isRateLimitError err && attempt < geminiMaxRetries -> do
+              putStrLn $ "⏳ Rate limit, retry " <> show (attempt + 1) <> "/" <> show geminiMaxRetries
+                <> " in " <> show (backoff `div` 1_000_000) <> "s"
+              threadDelay backoff
+              go (attempt + 1) (min (backoff * 2) geminiMaxBackoffMicroseconds)
+          | otherwise ->
+              pure (Left err)
 
 -- | Extract a JSON array from Gemini response text, stripping any surrounding
 -- markdown code fences and non-array text.

@@ -9,9 +9,10 @@ image_date: 2026-04-01T14:38:39Z
 image_model: "@cf/black-forest-labs/flux-1-schnell"
 image_prompt: An impressionistic, soft-focus illustration of a sun-drenched orchard during early spring. In the foreground, a few gnarled, weathered fruit tree branches reach across the frame, their buds just beginning to swell with tiny, pale green leaves. A small, fluffy chick stands near the base of a tree, looking toward a patch of emerging wildflowers nestled in the damp, dark soil. The background features a gentle, hazy landscape with soft morning light filtering through a light mist. The color palette is composed of muted earth tones, mossy greens, and soft, warm golden highlights. A rustic wooden fence post is visible to one side, adding a sense of structure and home. The overall atmosphere is quiet, serene, and filled with the gentle anticipation of the new season.
 link_analysis_model: gemini-3.1-flash-lite-preview
-link_analysis_time: 2026-04-01T00:00:00Z
+link_analysis_time: 2026-04-22T00:00:00Z
 force_analyze_links: false
 updated: 2026-04-01T15:38:15
+link_analysis_version: "2"
 ---
 [Home](../index.md) > [🐔 Chickie Loo](./index.md) | [⏮️](./2026-03-31-a-season-of-building-believing-and-becoming.md)  
 # 2026-04-01 | 🐔 🐔 2026-04-01 | 🌷 The Orchard’s First Secret and the Quiet of April 🌿 🐔  

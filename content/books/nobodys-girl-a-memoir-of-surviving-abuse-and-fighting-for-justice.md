@@ -10,9 +10,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-27T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-05-01T20:45:28Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A minimalist, powerful composition centered on a single, weathered gavel resting on a dark, polished wooden surface. The lighting is dramatic and moody, casting long shadows that suggest a courtroom setting. Emerging from the darkness behind the gavel is a single, vibrant white lily, symbolizing resilience, purity, and the reclamation of a voice. The background is a deep, somber navy gradient that transitions into charcoal, evoking a sense of solemnity and the gravity of a long-fought battle for justice. The overall aesthetic is clean, cinematic, and somber, focusing on the dichotomy between the hardness of institutional power and the fragile but unbreakable strength of the human spirit.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 💔👊⚖️ Nobody's Girl: A Memoir of Surviving Abuse and Fighting for Justice  
+![books-nobodys-girl-a-memoir-of-surviving-abuse-and-fighting-for-justice](../books-nobodys-girl-a-memoir-of-surviving-abuse-and-fighting-for-justice.jpg)  
 [🛒 Nobody's Girl: A Memoir of Surviving Abuse and Fighting for Justice. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/49ss8Ge)  
   
 Virginia Roberts Giuffre's harrowing, posthumously published account detailing her childhood sexual abuse, grooming and sex trafficking by Jeffrey Epstein and Ghislaine Maxwell, and her courageous, unwavering fight for justice against powerful figures, cementing her legacy as a survivor advocate.  

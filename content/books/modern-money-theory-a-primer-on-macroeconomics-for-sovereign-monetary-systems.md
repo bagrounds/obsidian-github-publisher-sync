@@ -12,9 +12,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-16T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-05-01T12:30:10Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A stylized, grand government building (e.g., a classical dome) stands at the top of the image. From its base, a vibrant river of interconnected, abstract currency symbols (coins, bills, digital icons) flows downwards and outwards. This river nourishes a thriving, colorful landscape below, depicting a bustling economy with small factories, houses, and silhouetted figures engaged in work—symbolizing full employment. Around the outer edges of this prosperous scene, a subtle, warm gradient transitions from orange to a soft red, like a gentle heat haze, visually representing the inflation limit encroaching on the flourishing economy.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 💰🏛️ Modern Money Theory: A Primer on Macroeconomics for Sovereign Monetary Systems  
+![books-modern-money-theory-a-primer-on-macroeconomics-for-sovereign-monetary-systems](../books-modern-money-theory-a-primer-on-macroeconomics-for-sovereign-monetary-systems.jpg)  
 [🛒 Modern Money Theory: A Primer on Macroeconomics for Sovereign Monetary Systems. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3KZBJKR)  
   
 💡 Monetarily sovereign governments, as currency issuers, face no financial constraints on spending, using fiscal policy to achieve full employment and price stability, with inflation as the sole economic limit 💰📈.  

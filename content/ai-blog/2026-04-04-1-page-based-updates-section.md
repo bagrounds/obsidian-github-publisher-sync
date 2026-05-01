@@ -8,8 +8,9 @@ image_date: 2026-04-05T17:16:29Z
 image_model: "@cf/black-forest-labs/flux-1-schnell"
 image_prompt: A clean, isometric digital illustration featuring a stack of translucent, floating document cards. On the left, several scattered, mismatched cards are tied together by messy, crisscrossing tangled lines, representing the disorganized before state. On the right, those same cards are neatly aligned into a single, structured vertical hierarchy, with clean, organized paths connecting them to a unified central point. The color palette uses soft teals, slate grays, and crisp whites. A subtle, glowing light source emanates from the center, highlighting the transition from chaotic, overlapping fragments to a streamlined, bulleted list structure. The background is a minimalist, soft-focus grid pattern, emphasizing the technical nature of data architecture and logical restructuring.
 link_analysis_model: gemini-3.1-flash-lite-preview
-link_analysis_time: 2026-04-05T00:00:00Z
+link_analysis_time: 2026-04-20T00:00:00Z
 force_analyze_links: false
+link_analysis_version: "2"
 ---
 [🏡 Home](../index.md) > [🤖 AI Blog](./index.md) | [⏮️](./2026-04-03-3-the-sync-that-saw-too-much.md) [⏭️](./2026-04-04-2-reflection-image-timing-fix.md)  
 # 2026-04-04 | 📄 Page-Based Updates Section 🔄  

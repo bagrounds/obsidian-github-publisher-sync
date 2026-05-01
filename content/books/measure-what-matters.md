@@ -12,9 +12,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-18T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-05-01T03:16:43Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A clean, professional illustration featuring a large, glowing target symbol in the center, integrated into a stylized mountain landscape. Rising from the base of the mountain are multiple translucent, ascending bar charts that transform into smooth, upward-trending growth lines toward the target. Floating geometric shapes—a compass, a ruler, and a checklist—are arranged symmetrically around the central peak, rendered in a modern, minimalist vector style. The color palette uses deep navy, vibrant teal, and energetic orange accents to evoke a sense of strategic precision and forward momentum. The background is a soft, light gray gradient, creating a crisp, corporate, and aspirational aesthetic.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 📈🎯✅📏 Measure What Matters: How Google, Bono, and the Gates Foundation Rock the World with OKRs  
+![books-measure-what-matters](../books-measure-what-matters.jpg)  
 [🛒 Measure What Matters: How Google, Bono, and the Gates Foundation Rock the World with OKRs. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/440jLPc)  
   
 ## 🤖 AI Summary  

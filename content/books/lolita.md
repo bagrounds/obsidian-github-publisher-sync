@@ -11,9 +11,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-16T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-04-30T21:35:07Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A surreal, atmospheric composition centered on a single, wilting red rose held within a delicate, ornate glass bell jar. The background is a moody, deep-shadowed library with blurred, towering bookshelves that suggest intellectual weight and isolation. Soft, golden light filters through a window, catching dust motes in the air and highlighting the sharp, jagged thorns on the rose stem. The colors are muted—deep crimsons, dusty golds, and obsidian blacks—evoking a sense of melancholic elegance. Beside the jar, a single, discarded fountain pen rests on a dark mahogany desk, hinting at the deceptive power of the written word. The overall aesthetic is sophisticated, haunting, and intentionally unsettling.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 👧💔🥀 Lolita  
+![books-lolita](../books-lolita.jpg)  
 [🛒 Lolita. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3NT9Xkh)  
   
 🖋️ Complex linguistic acrobatics and an unreliable voice weave a haunting exploration of obsession and the devastating power of manipulation.  

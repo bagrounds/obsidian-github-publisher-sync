@@ -7,11 +7,12 @@ URL: https://bagrounds.org/systems-for-public-good/2026-03-26-the-freedom-of-con
 Author: "[[systems-for-public-good]]"
 tags:
 force_analyze_links: false
-link_analysis_time: 2026-03-26T21:51:57.081Z
+link_analysis_time: 2026-04-22T00:00:00Z
 link_analysis_model: gemini-3.1-flash-lite-preview
 image_date: 2026-03-26T22:07:20.103Z
 image_model: "@cf/black-forest-labs/flux-1-schnell"
 image_prompt: A wide-angle, cinematic illustration of a vibrant, modern cityscape at sunset. In the center, a sleek, glass-walled light rail train glides smoothly along a tree-lined boulevard, its windows glowing with a warm, inviting light. A diverse group of people is visible inside, relaxed and engaged in conversation. Outside, the street is framed by lush greenery, bicycle lanes, and comfortable pedestrian plazas rather than heavy traffic. In the background, the architecture blends classic stone arches with contemporary, sustainable structures. The color palette is composed of soft greens, warm ambers, and cool blues, evoking a sense of harmony and collective progress. The scene captures an atmosphere of calm, accessible mobility, emphasizing a shared, horizon-focused future where the infrastructure serves as a bridge connecting people to their community.
+link_analysis_version: "2"
 ---
 [🏡 Home](../index.md) > [🏛️ Systems for Public Good](./index.md) | [⏮️](./2026-03-25-the-interplay-of-freedoms-when-my-liberty-meets-yours.md) [⏭️](./2026-03-27-the-freedom-to-know-libraries-as-democratic-essentials.md)  
 # 2026-03-26 | 🏛️ 🚌 The Freedom of Connection: Public Transit as a Shared Horizon 🌍 🏛️  

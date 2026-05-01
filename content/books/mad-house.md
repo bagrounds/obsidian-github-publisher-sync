@@ -12,9 +12,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-20T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-04-30T23:33:48Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: "An isometric, high-angle illustration of the U.S. Capitol building transformed into a chaotic, multi-level dollhouse. The dome is cracked, with a spotlight shining through the fissure. Various rooms are visible through cutaway walls: one room features a ringmaster’s top hat on a desk, another shows shadows of rats scurrying across a marble floor, and a third contains a pile of discarded, messy blueprints. In the foreground, a sleek, luxury car is parked haphazardly on the manicured lawn. The color palette is a stark, high-contrast mix of deep navy, sterile white, and vibrant, warning-sign shades of neon orange and hazard yellow. The overall aesthetic is clean and modern but visually unsettling, emphasizing a sense of structural collapse and performative disorder."
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🤯🐍🏘️🎪💥 Mad House: How Donald Trump, MAGA Mean Girls, a Former Used Car Salesman, a Florida Nepo Baby, and a Man with Rats in His Walls Broke Congress  
+![books-mad-house](../books-mad-house.jpg)  
 By Annie Karni  
 [🛒 Mad House: How Donald Trump, MAGA Mean Girls, a Former Used Car Salesman, a Florida Nepo Baby, and a Man with Rats in His Walls Broke Congress. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3FmLost)  
   

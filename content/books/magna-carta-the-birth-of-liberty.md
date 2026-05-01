@@ -7,11 +7,16 @@ share: true
 CTA: 📜 Secure your freedom.
 affiliate link: https://amzn.to/4pFY8vj
 link_analysis_model: gemini-3.1-flash-lite-preview
-link_analysis_time: 2026-04-04T00:00:00Z
+link_analysis_time: 2026-04-18T00:00:00Z
 force_analyze_links: false
+link_analysis_version: "2"
+image_date: 2026-05-01T01:50:58Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A weathered, ancient parchment scroll, partially unrolled, dominates the foreground. From its top edge, a vibrant, green sapling with hopeful leaves sprouts, reaching upwards. Behind it, slightly to one side, a subtly cracked, ornate gold crown rests, symbolizing limited power. On the opposite side, a perfectly balanced scale of justice hangs, its pans empty but poised, signifying the rule of law. The background is a soft, muted historical tableau, suggesting timelessness.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 📜👶🗽 Magna Carta: The Birth of Liberty  
+![books-magna-carta-the-birth-of-liberty](../books-magna-carta-the-birth-of-liberty.jpg)  
 [🛒 Magna Carta: The Birth of Liberty. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4pFY8vj)  
   
 🕊️👑📜 The turbulent origins of a failed medieval peace treaty that unexpectedly blossomed into a global cornerstone of liberty and constitutional governance.  

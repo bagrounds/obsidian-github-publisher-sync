@@ -10,9 +10,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-19T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-04-30T15:49:45Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A moody, high-contrast composition featuring a weathered, vintage manila file folder resting on a dark, mahogany desk. The folder is slightly open, spilling a fine dusting of gray ash across the polished wood surface. In the background, partially obscured by deep shadows, sits a classic black rotary telephone and a single, flickering desk lamp that casts long, dramatic silhouettes. The atmosphere is cold and clinical, with a color palette of charcoal, sepia, and muted blues. Subtle, wispy tendrils of smoke curl upward from the ash, suggesting the remnants of burned documents, emphasizing a sense of hidden history and destroyed secrets. The lighting is focused and cinematic, highlighting the texture of the paper and the gritty particles of ash against the dark, reflective desk.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🕵️📜 Legacy of Ashes: The History of the CIA  
+![books-legacy-of-ashes-the-history-of-the-cia](../books-legacy-of-ashes-the-history-of-the-cia.jpg)  
 [🛒 Legacy of Ashes: The History of the CIA. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3KMPDjt)  
   
 🕵️‍♂️📉🇺🇸 A meticulously researched, yet deeply critical, account exposing decades of the CIA's operational failures, internal mismanagement, and profound impact on U.S. national security, all presented without anonymous sources.  

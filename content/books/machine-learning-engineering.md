@@ -10,9 +10,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-17T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-04-30T22:34:35Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A high-contrast, isometric illustration featuring a stylized, translucent robotic brain integrated into a complex mechanical assembly. The brain is glowing with a soft, cyan light, connected by glowing circuit-like pathways to a series of interlocking bronze and steel gears, pulleys, and server racks. The background is a deep, matte charcoal, emphasizing the vibrant blue and metallic gold tones of the central machine. The composition is clean and minimalist, suggesting the intersection of abstract intelligence and physical, industrial-grade engineering. The overall aesthetic is professional, modern, and precise, capturing the essence of building, scaling, and maintaining robust systems.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🤖⚙️ Machine Learning Engineering  
+![books-machine-learning-engineering](../books-machine-learning-engineering.jpg)  
 [🛒 Machine Learning Engineering. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4oo9og9)  
   
 ## 🤖 A Guide to Building Real-World AI: A Report on Machine Learning Engineering by Andriy Burkov  

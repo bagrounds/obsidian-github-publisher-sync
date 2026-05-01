@@ -10,9 +10,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-18T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-04-30T19:42:18Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A high-contrast, cinematic composition featuring a glowing smartphone held in a dark, gloved hand. The screen emits a harsh, cool blue light that illuminates a dusty, war-torn battlefield in the background, where silhouettes of modern military hardware and social media iconography—like speech bubbles, hearts, and arrows—are intertwined in a chaotic web of fiber-optic cables. The atmosphere is tense and atmospheric, with embers floating in the air that transition into pixelated digital particles. The overall color palette is a stark dichotomy of deep, shadowy blacks and vibrant, aggressive neon blues and oranges, symbolizing the intersection of traditional kinetic warfare and the invisible, rapid-fire nature of digital influence campaigns.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 📱⚔️ LikeWar: The Weaponization of Social Media  
+![books-likewar-the-weaponization-of-social-media](../books-likewar-the-weaponization-of-social-media.jpg)  
 [🛒 LikeWar: The Weaponization of Social Media. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3JBVvvr)  
   
 🚀 LikeWar dramatically illustrates how social media has transformed global conflict into a perpetual, emotionally charged information battlefield, where virality eclipses truth and likes become weapons, fundamentally reshaping war, politics, and the very fabric of society. 🤯 ⚔️ 📱  

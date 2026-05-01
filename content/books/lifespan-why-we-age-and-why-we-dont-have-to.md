@@ -10,9 +10,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-17T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-04-30T19:41:55Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A central, glowing, intricate network of luminous lines, resembling a high-tech biological circuit or stylized DNA strands, radiates vibrant energy. This network is actively mending or rejuvenating a subtly cracked, ancient-looking surface beneath it, perhaps resembling old stone or dried earth. The fine cracks visibly recede where the glowing network touches, replaced by smooth, nascent forms. A soft, ethereal light emanates from the core, suggesting life and renewal. The color palette features luminous blues and greens against muted grays and browns, conveying scientific hope and transformation.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # ⏳🙅 Lifespan: Why We Age - and Why We Don't Have To  
+![books-lifespan-why-we-age-and-why-we-dont-have-to](../books-lifespan-why-we-age-and-why-we-dont-have-to.jpg)  
 [🛒 Lifespan: Why We Age - and Why We Don't Have To. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/486SRHZ)  
   
 ## 📖 Book Report: Lifespan: Why We Age - and Why We Don't Have To  

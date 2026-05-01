@@ -9,11 +9,16 @@ CTA: 💰 Empower citizens.
 tags:
   - MMT
 link_analysis_model: gemini-3.1-flash-lite-preview
-link_analysis_time: 2026-04-01T00:00:00Z
+link_analysis_time: 2026-04-18T00:00:00Z
 force_analyze_links: false
+link_analysis_version: "2"
+image_date: 2026-05-01T01:51:07Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: "A majestic, stylized American eagle, its wings subtly integrated with gears and circuits, overlooks a vibrant landscape. Below, golden streams of energy flow from the eagle, nourishing scenes of public prosperity: gleaming solar panels, a modern bridge, and diverse figures engaged in community-building work. The color palette is optimistic, featuring rich blues, reds, and golds, emphasizing growth and purpose."
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 💰🇺🇸 Making Money Work for Us: How MMT Can Save America  
+![books-making-money-work-for-us-how-mmt-can-save-america](../books-making-money-work-for-us-how-mmt-can-save-america.jpg)  
 [🛒 Making Money Work for Us: How MMT Can Save America. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4oIDomB)  
   
 💡💰 A sovereign currency issuer can leverage its fiscal powers to achieve public prosperity and full employment, challenging conventional wisdom that budget deficits are inherently bad.  

@@ -13,9 +13,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-18T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-04-30T23:33:33Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A minimalist, high-contrast illustration featuring a stylized, translucent globe at the center, glowing with a soft golden light. Surrounding the globe are elegant, floating geometric lines and interconnected nodes that represent global financial circuits. Below the globe, a balanced scale rests on a surface, with a stack of currency symbols on one side and a group of stylized human silhouettes on the other, symbolizing the equilibrium between fiscal policy and full employment. The background is a deep, professional navy blue, with faint, clean grid lines suggesting a technical, data-driven approach to macroeconomics. The overall aesthetic is modern, sophisticated, and academic, using a palette of deep blues, crisp whites, and metallic gold accents to evoke a sense of stability and global scale.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🌍💰📊 Macroeconomics  
+![books-macroeconomics](../books-macroeconomics.jpg)  
 ## 🤖 AI Summary  
 ### 📖 Book Report: Macroeconomics  
 by William Mitchell, L. Randall Wray, and Martin Watts  

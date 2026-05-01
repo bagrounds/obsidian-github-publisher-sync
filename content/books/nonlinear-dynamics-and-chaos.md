@@ -11,9 +11,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-16T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-05-01T21:28:34Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A high-contrast, artistic visualization of a Lorenz attractor—the iconic butterfly shape—rendered in glowing, ethereal neon lines against a deep, dark void. The lines should appear as a continuous, complex trajectory that loops and twists, suggesting infinite depth and mathematical precision. Interwoven with the attractor are subtle, translucent geometric overlays, such as a faint Poincaré section grid and a bifurcation diagram fading into the background. The color palette features vibrant electric blues, deep purples, and sparks of warm orange, evoking the intersection of physics, biology, and chemistry. The aesthetic is clean, modern, and intellectual, capturing the essence of order emerging from apparent chaos without any distracting text.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🦋🌀💥🤖 Nonlinear Dynamics and Chaos: With Applications to Physics, Biology, Chemistry, and Engineering  
+![books-nonlinear-dynamics-and-chaos](../books-nonlinear-dynamics-and-chaos.jpg)  
 [🛒 Nonlinear Dynamics and Chaos: With Applications to Physics, Biology, Chemistry, and Engineering. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4ky6Wlc)  
   
 ## 🤖 AI Summary  

@@ -12,9 +12,9 @@ URL: https://bagrounds.org/ai-blog/2026-04-30-2-auto-generate-book-reports
 
 📚 This work adds a scheduled automation task that discovers book references in the personal knowledge base, finds the corresponding Amazon product pages, generates a full book report using Gemini, and wires everything back into the daily reflection.
 
-🤖 The pipeline combines regex matching, structured Gemini inference, and Google Search grounding to produce rich book pages that follow the same Obsidian Templater format used for manually created book notes.
+🤖 The pipeline combines BFS graph traversal, structured Gemini inference, Google Search grounding, and HTTP URL validation to produce rich book pages that follow the same Obsidian Templater format used for manually created book notes.
 
-⏰ The task runs once per day at 1 AM Pacific time and generates at most one new book report per run. An idempotency check prevents the task from running a second time on the same day if a report has already been generated.
+⏰ The task runs once per day at 1 AM Pacific time and generates at most one new book report per run. Idempotency is detected by scanning the reflection page for evidence rather than relying on a frontmatter flag.
 
 ## 🧩 How It Works
 
@@ -26,23 +26,31 @@ URL: https://bagrounds.org/ai-blog/2026-04-30-2-auto-generate-book-reports
 
 🔗 If a mentioned title already has a book page, we immediately insert a wikilink for it in the scanned file using the same infrastructure the internal-linking task uses, specifically the candidate-discovery and replacement engine. This closes the gap without a new book page needing to be generated.
 
+💾 After scanning each file, the task writes a book-mention-scanned field with today's date to that file's frontmatter. On a retry within the same day, the task sees this field and skips the file entirely, avoiding a redundant Gemini inference call.
+
 📌 Newly discovered titles that do not yet have pages become candidates for full report generation. Only one book report is generated per run.
 
 ### 🔄 Step Two: Idempotency and Crash Recovery
 
-📓 Before any expensive API calls, the task writes a frontmatter field called book-report-pending to today's reflection file with the candidate title. If the task is interrupted by a transient error such as a 503 response, the next run reads that field and resumes from the same title without repeating the BFS scan.
+🔎 Idempotency is detected by scanning today's reflection body for evidence: a list item starting with the books wikilink prefix and ending with the robot-emoji marker. If any such line is found, the task exits immediately. This mirrors how other content automation tasks detect prior work — by looking at what is on the page, not at a separately maintained frontmatter flag.
 
-✅ Once a book report is successfully written and the reflection is updated, the task writes book-reports-run to today's reflection frontmatter with today's date. On any future run the same day, this field is detected and the task exits immediately without any API calls.
+📚 When a new candidate is identified, the task immediately writes a book-report-pending field to the books index frontmatter. Unlike the daily reflection, the books index is not tied to a specific date, so this pending state survives across day boundaries. If Gemini is unavailable all day on Monday, the Tuesday run can resume from the same title without repeating the BFS scan.
+
+🔑 Once Amazon search succeeds, the extracted ASIN is written to the books index as book-report-asin. If the process exits before generating the report, the next run reads the cached ASIN and skips the Amazon search step entirely, going straight to report generation.
+
+🧹 After a report is successfully written and the reflection is updated, both book-report-pending and book-report-asin are cleared from the books index frontmatter, leaving it in a clean state for the next run.
 
 🚫 If the environment variable AMAZON_ASSOCIATE_TAG is not set, the task refuses to run entirely. Generating book pages without affiliate links would require manual cleanup later, so we fail fast rather than produce incomplete output.
 
-### 🛒 Step Three: Finding the Amazon Product URL
+### 🛒 Step Three: Finding and Validating the Amazon Product URL
 
 🔗 For each candidate title we send a Gemini request with Google Search grounding asking for the Amazon.com product page URL for the most popular print version.
 
 🔎 The response is inspected at two levels. First, the grounding source URLs are checked for Amazon product pages containing the slash-dp-slash ASIN pattern. Second, if no grounding source qualifies, the raw response text is checked for a valid Amazon URL.
 
 📦 The ASIN extraction is careful to verify the segment is exactly ten alphanumeric characters. The affiliate URL is assembled as the Amazon dp path followed by the tag query parameter using the AMAZON_ASSOCIATE_TAG environment variable.
+
+🔍 Once the affiliate URL is assembled, it is validated by fetching the page over HTTP. A 404 response means the URL does not exist and the candidate is skipped. A 200 response confirms the page exists; the response body is also scanned for the book title as a best-effort check that the URL points to the right book. Transient errors such as connection failures or 5xx responses are treated as valid to avoid blocking the pipeline on Amazon rate limits or anti-bot responses.
 
 ### 📝 Step Four: Generating the Book Report
 
@@ -62,13 +70,13 @@ URL: https://bagrounds.org/ai-blog/2026-04-30-2-auto-generate-book-reports
 
 ⬆️ The section is inserted before any trailing sections including social embeds such as Updates, Changes, Twitter, Bluesky, or Mastodon, and also before any auto-generated blog series sections such as the daily noise digest. The detection uses both a static prefix list and a dynamic scan for headings that match the pattern of auto-generated series sections, which all take the form of a level-two heading containing a wikilink to an index page.
 
-🤖 Every automatically inserted book link is annotated with a robot emoji at the end. This makes it easy to distinguish links the automation added from links added manually.
+🤖 Every automatically inserted book link is annotated with a robot emoji at the end. This makes it easy to distinguish links the automation added from links added manually, and it is precisely what the idempotency check looks for on the next run.
 
 ## 🏗️ Architecture Decisions
 
 ### 🧊 Pure Core, IO at the Edges
 
-🔬 All slug generation, ASIN extraction, affiliate URL construction, frontmatter assembly, body building, and reflection insertion are pure functions with no IO. The IO boundary is at the run function which handles file reads, Gemini calls, and writes.
+🔬 All slug generation, ASIN extraction, affiliate URL construction, frontmatter assembly, body building, and reflection insertion are pure functions with no IO. The IO boundary is at the run function which handles file reads, HTTP fetches, Gemini calls, and writes.
 
 🧪 This design makes every component testable with unit tests and property-based tests. The property tests verify that the kebab-case slug function never produces consecutive hyphens, never leaves leading or trailing hyphens, and only outputs lowercase alphanumeric characters and hyphens.
 
@@ -80,25 +88,29 @@ URL: https://bagrounds.org/ai-blog/2026-04-30-2-auto-generate-book-reports
 
 🔗 When inserting wikilinks for books that already have pages, the implementation calls directly into the candidate-discovery and replacement engine from the internal-linking module, avoiding any duplicate matching logic.
 
-### 💾 Minimizing Inference Calls
+### 💾 Caching at Every Partial Stop Point
 
-🔢 Each book report run uses at most three Gemini API calls: one to scan a single file for plain-text mentions, one to search Amazon for the product URL, and one to generate the report. The BFS scan visits only one file per run rather than five, which keeps the per-run token cost low.
+🗓️ The pipeline has three natural checkpoint positions where partial progress can be lost if the process exits unexpectedly. Each is now cached durably.
 
-📌 Results from partially successful runs are persisted in frontmatter before the expensive downstream calls, so a transient failure never re-triggers the discovery scan on the next attempt.
+📁 The first checkpoint is the file scan. Once Gemini has analyzed a file for book mentions, the result is recorded in the file's own frontmatter with today's date. Any retry within the same day skips that file without a second Gemini call. The scan date resets naturally by day, so every file is reconsidered on subsequent days.
 
-🗓️ The once-daily schedule means there is at most one book report generated per day, which keeps the total inference budget predictable and avoids quota exhaustion.
+🔑 The second checkpoint is candidate discovery. When a new title is identified, it is written to the books index frontmatter as book-report-pending before any further API calls. The books index is not date-scoped, so this persists even if the task cannot complete until the next day. On any run, if a pending title is found and no book file exists yet, the task resumes directly from that title.
+
+🛒 The third checkpoint is the Amazon search. After the ASIN is extracted and the URL is validated, the ASIN is written to the books index as book-report-asin. If report generation fails, the next run reuses the cached ASIN and skips the Amazon search step entirely.
 
 ### 📐 ASIN Extraction Safety
 
 🔒 The ASIN extraction function stops at the first non-alphanumeric character, then verifies the segment is exactly ten characters. The property-based roundtrip test confirms that building an affiliate URL from a valid ASIN and then extracting the ASIN from that URL always returns the original.
 
+🌐 After assembling the affiliate URL, the task fetches the page to confirm it exists. A confirmed 404 causes the candidate to be skipped. The task also checks whether the title appears in the first 64 kilobytes of the response body as a best-effort signal that the URL points to the correct book.
+
 ## 🧪 Testing
 
 ✅ The implementation adds tests across two modules covering the full pipeline.
 
-📋 The BookReport module tests cover title-to-kebab-case conversion with property tests for slug invariants, ASIN extraction with the roundtrip property, affiliate URL construction, frontmatter assembly including the emojified-title override, body building with and without affiliate links, reflection section insertion before blog series sections and social sections, idempotency, and the auto-generated robot-emoji marker.
+📋 The BookReport module tests cover title-to-kebab-case conversion with property tests for slug invariants, ASIN extraction with the roundtrip property, affiliate URL construction, frontmatter assembly including the emojified-title override, body building with and without affiliate links, the hasAutoGeneratedBookLink function (which is the page-evidence idempotency check), reflection section insertion before blog series sections and social sections, idempotency, and the auto-generated robot-emoji marker.
 
-📋 The BookReport.Gemini module tests cover the find-mentions prompt structure, JSON array parsing with code-fence stripping, the new seven-section report prompt structure including the AI Summary and FAQ sections, and the Amazon search prompt.
+📋 The BookReport.Gemini module tests cover the find-mentions prompt structure, JSON array parsing with code-fence stripping, the seven-section report prompt structure including the AI Summary and FAQ sections, and the Amazon search prompt.
 
 ## 📚 Book Recommendations
 

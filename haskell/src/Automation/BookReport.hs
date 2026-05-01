@@ -1,5 +1,4 @@
 {-# LANGUAGE OverloadedStrings #-}
-{-# LANGUAGE TupleSections #-}
 
 module Automation.BookReport
   ( BookReportResult (..)
@@ -309,9 +308,9 @@ validateAffiliateUrl manager affiliateUrl bookTitle = do
           putStrLn "  ❌ Affiliate URL returned 404 — URL does not exist"
           pure False
         200 -> do
-          let bodyText = T.toLower (TE.decodeUtf8 (LBS.toStrict (LBS.take 65536 (responseBody response))))
+          let bodyText = T.toLower (TE.decodeUtf8 (LBS.toStrict (LBS.take (fromIntegral amazonPageSampleBytes) (responseBody response))))
               normalizedTitle = T.toLower (T.strip (stripEmojis bookTitle))
-              titleWords = filter ((> 2) . T.length) (T.words normalizedTitle)
+              titleWords = filter ((> minimumTitleWordLength) . T.length) (T.words normalizedTitle)
               titleConfirmed = not (null titleWords) && all (`T.isInfixOf` bodyText) titleWords
           if titleConfirmed
             then putStrLn "  ✅ Affiliate URL confirmed (title found on page)"
@@ -321,15 +320,43 @@ validateAffiliateUrl manager affiliateUrl bookTitle = do
           putStrLn $ "  ⚠️  Affiliate URL returned HTTP " <> show other <> " (assuming valid)"
           pure True
 
+-- | Number of bytes of the Amazon page body to scan when checking whether
+-- the book title is present. 64 KB is large enough to include the product
+-- title section without loading the entire page into memory.
+amazonPageSampleBytes :: Int
+amazonPageSampleBytes = 65536
+
+-- | Minimum length of a title word considered significant when matching the
+-- book title against an Amazon page body. Words of two characters or fewer
+-- (such as "a", "of", "to") are common to many titles and would produce
+-- false positive matches if included.
+minimumTitleWordLength :: Int
+minimumTitleWordLength = 2
+
 -- | The path to the books index file within the vault.
 booksIndexFilePath :: FilePath -> FilePath
 booksIndexFilePath vaultDir = vaultDir </> "books" </> "index.md"
 
--- | Pending state read from the books index frontmatter.
--- Persisted across days so a half-finished run can resume even the next day.
+-- | Pending state stored in the books index frontmatter between runs.
+-- Written before any expensive API calls so a partially completed run
+-- can resume even on a subsequent day (the books index is not date-scoped,
+-- unlike the daily reflection file). The pending title identifies the book
+-- being processed; the cached ASIN skips the Amazon search step on resume.
+-- Both fields are cleared from the books index after a successful run.
 data PendingBookState = PendingBookState
   { pendingTitle :: Text
   , cachedAsin   :: Maybe Text
+  }
+
+-- | A candidate book discovered during BFS scanning.
+-- The title is the plain-text book title as found in the content.
+-- The asin is populated only when resuming from a previous run that
+-- already completed the Amazon search step.
+-- The source is the relative path of the file where the title was found.
+data BookCandidate = BookCandidate
+  { candidateTitle  :: Text
+  , candidateAsin   :: Maybe Text
+  , candidateSource :: Text
   }
 
 -- | Read any pending book state from the books index frontmatter.
@@ -414,7 +441,11 @@ run manager apiKey associateTag vaultDir
                   case cachedAsin state of
                     Just resumedAsin -> putStrLn $ "  💾 Using cached ASIN: " <> T.unpack resumedAsin
                     Nothing          -> pure ()
-                  pure [(pendingTitle state, cachedAsin state, "<pending>")]
+                  pure [ BookCandidate
+                           { candidateTitle  = pendingTitle state
+                           , candidateAsin   = cachedAsin state
+                           , candidateSource = "<pending>"
+                           } ]
                 Nothing -> do
                   allFiles <- bfsTraversal vaultDir
                   putStrLn $ "  🔍 BFS: " <> show (length allFiles) <> " files reachable"
@@ -427,7 +458,7 @@ run manager apiKey associateTag vaultDir
                 _ -> do
                   putStrLn $ T.unpack
                     (  "  📋 Found " <> T.pack (show (length candidates)) <> " book candidate(s): "
-                    <> T.intercalate ", " (map (\(title, _, _) -> title) (take 3 candidates))
+                    <> T.intercalate ", " (map candidateTitle (take 3 candidates))
                     )
                   tryGenerateReport manager apiKey associateTag vaultDir reflectionPath booksIndex todayText candidates 0
 
@@ -436,9 +467,9 @@ run manager apiKey associateTag vaultDir
 -- field) so that retries within the same day do not repeat expensive Gemini calls.
 -- After scanning, writes book-mention-scanned: <date> to the file's own frontmatter.
 -- Also inserts wikilinks for books that are mentioned but already have pages.
--- Returns a list of (title, cachedAsin, sourceFile) triples; cachedAsin is always
--- Nothing for newly discovered candidates (only set on a resume from pending state).
-findFirstCandidates :: Manager -> Secret -> FilePath -> [ContentEntry] -> [Text] -> Set.Set Text -> Text -> IO [(Text, Maybe Text, Text)]
+-- Returns a list of BookCandidate values; candidateAsin is always Nothing for
+-- newly discovered candidates (only set when resuming from pending state).
+findFirstCandidates :: Manager -> Secret -> FilePath -> [ContentEntry] -> [Text] -> Set.Set Text -> Text -> IO [BookCandidate]
 findFirstCandidates manager apiKey vaultDir existingBooks allFiles existingNormalizedTitles todayText =
   go allFiles []
   where
@@ -471,7 +502,7 @@ findFirstCandidates manager apiKey vaultDir existingBooks allFiles existingNorma
                   putStrLn $ "  📖 " <> T.unpack relPath <> ": " <> show (length mentions) <> " mention(s), "
                     <> show (length newBooks) <> " new, " <> show (length existingMentioned) <> " already have pages"
                   insertWikilinksForExistingMentions relPath filePath existingBooks existingMentioned
-                  let candidates = map (, Nothing, relPath) newBooks
+                  let candidates = map (\title -> BookCandidate { candidateTitle = title, candidateAsin = Nothing, candidateSource = relPath }) newBooks
                   if null candidates
                     then go rest accumulator
                     else pure (accumulator <> candidates)
@@ -507,23 +538,24 @@ normalizeTitleForComparison = T.toLower . T.strip . stripEmojis
 
 -- | Try to generate a book report for the first candidate that successfully
 -- passes Amazon search and URL validation.
--- Each candidate triple is (title, cachedAsin, sourceFile); cachedAsin is set
--- when resuming from a pending state where Amazon search already completed.
+-- BookCandidate.candidateAsin is set when resuming from a pending state where
+-- Amazon search already completed; Nothing for freshly discovered candidates.
 -- Pending state is stored in the books index frontmatter (not the reflection)
 -- so it persists across day boundaries.
 -- On success clears book-report-pending and book-report-asin from the books index.
-tryGenerateReport :: Manager -> Secret -> Text -> FilePath -> FilePath -> FilePath -> Text -> [(Text, Maybe Text, Text)] -> Int -> IO BookReportResult
+tryGenerateReport :: Manager -> Secret -> Text -> FilePath -> FilePath -> FilePath -> Text -> [BookCandidate] -> Int -> IO BookReportResult
 tryGenerateReport _ _ _ _ _ _ _ [] attempted =
   pure BookReportResult { booksGenerated = 0, booksAttempted = attempted, booksSkipped = 0 }
-tryGenerateReport manager apiKey associateTag vaultDir reflectionPath booksIndex todayText ((bookTitle, mCachedAsin, _) : rest) attempted = do
+tryGenerateReport manager apiKey associateTag vaultDir reflectionPath booksIndex todayText (candidate : rest) attempted = do
+  let bookTitle = candidateTitle candidate
   -- Persist the candidate title in the books index before any expensive API calls.
   -- Using the books index (not the daily reflection) means this survives across days.
   updateFrontmatterFields booksIndex [("book-report-pending", YamlText bookTitle)]
 
-  mAsin <- case mCachedAsin of
-    Just cachedAsin -> do
-      putStrLn $ "  💾 Reusing cached ASIN: " <> T.unpack cachedAsin
-      pure (Just cachedAsin)
+  mAsin <- case candidateAsin candidate of
+    Just resumedAsin -> do
+      putStrLn $ "  💾 Reusing cached ASIN: " <> T.unpack resumedAsin
+      pure (Just resumedAsin)
     Nothing -> do
       putStrLn $ "  🔍 Searching Amazon for: " <> T.unpack bookTitle
       mAmazonUrl <- searchAmazonProductUrl manager apiKey defaultAmazonSearchModel bookTitle

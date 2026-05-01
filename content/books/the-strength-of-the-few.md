@@ -6,6 +6,10 @@ URL: https://bagrounds.org/books/the-strength-of-the-few
 share: true
 CTA: 🛡️ Defend your principles.
 affiliate link: https://amzn.to/3Zrcchu
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_time: 2026-04-25T00:00:00Z
+force_analyze_links: false
+link_analysis_version: "2"
 ---
 [Home](../index.md) > [Books](./index.md) | [⏮️ 👥⚔️👑 The Will of the Many](./the-will-of-the-many.md)  
 # 💪👥 The Strength of the Few  

@@ -11,9 +11,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-19T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-04-30T18:43:18Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: "A high-contrast, minimalist composition featuring a complex, interconnected web of thin, glowing lines representing a social network. Within this web, most nodes are uniform, orderly, and linked in a symmetrical pattern, symbolizing societal cooperation and trust. However, a single, distinct node—a different color and slightly jagged in shape—exists outside the main geometric structure, representing an outlier. Subtle, translucent geometric shapes like a lock, a scale, and a stylized eye are integrated into the background to represent the four societal pressures: security, institutional, reputational, and moral. The overall aesthetic is sophisticated, slightly cinematic, and moody, utilizing a deep navy and slate grey palette punctuated by vibrant, sharp accents of electric blue and warning orange."
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🤥😈 Liars and Outliers: Enabling the Trust That Society Needs to Thrive  
+![books-liars-and-outliers](../books-liars-and-outliers.jpg)  
 [🛒 Liars and Outliers: Enabling the Trust That Society Needs to Thrive. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3Zf2mQ9)  
   
   

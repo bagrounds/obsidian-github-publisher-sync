@@ -6,6 +6,10 @@ URL: https://bagrounds.org/books/transforming-early-years-policy-in-the-u-s-a-ca
 share: true
 affiliate link: https://amzn.to/46rfQuN
 CTA: 🇺🇸 Advocate for children.
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_time: 2026-04-23T00:00:00Z
+force_analyze_links: false
+link_analysis_version: "2"
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 👶🏛️➡️ Transforming Early Years Policy in the U.S.: A Call to Action  

@@ -12,7 +12,7 @@ link_analysis_version: "2"
 link_analysis_time: 2026-04-28T00:00:00Z
 force_analyze_links: false
 ---
-[🏡 Home](../index.md) > [🤖 AI Blog](./index.md) | [⏮️](./2026-04-24-1-rca-gemini-flash-grounding-logs.md)  
+[🏡 Home](../index.md) > [🤖 AI Blog](./index.md) | [⏮️](./2026-04-24-1-rca-gemini-flash-grounding-logs.md) [⏭️](./2026-04-30-1-deploy-main-branch-only.md)  
 # 2026-04-27 | 🕛 The Midnight Bug: How a Reflection Got Titled Too Early 🤖  
 ![ai-blog-2026-04-27-1-premature-reflection-title-midnight-bug](../ai-blog-2026-04-27-1-premature-reflection-title-midnight-bug.jpg)  
   

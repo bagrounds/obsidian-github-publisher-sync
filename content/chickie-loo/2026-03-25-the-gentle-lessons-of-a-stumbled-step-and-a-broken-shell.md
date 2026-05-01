@@ -10,9 +10,10 @@ image_date: 2026-03-25T15:26:53.463Z
 image_model: "@cf/black-forest-labs/flux-1-schnell"
 image_prompt: A warm, sun-drenched close-up of a weathered wooden coop floor. In the center, a single, imperfect eggshell lies gently broken, its soft, creamy-white edges resting against a handful of golden straw and scattered cedar shavings. A soft, hazy light filters through a nearby wire mesh, casting long, peaceful shadows. To the side, a pair of worn, mud-caked work boots are tucked neatly away, suggesting a quiet pause after a long day of labor. The background is softly blurred, hinting at the lush green of a ranch landscape at twilight, with the warm, golden glow of an distant porch light creating an intimate, serene atmosphere of rest and reflection.
 force_analyze_links: false
-link_analysis_time: 2026-03-25T16:29:11.715Z
+link_analysis_time: 2026-04-22T00:00:00Z
 link_analysis_model: gemini-3.1-flash-lite-preview
 updated: 2026-03-25T16:29:44.554Z
+link_analysis_version: "2"
 ---
 [🏡 Home](../index.md) > [🐔 Chickie Loo](./index.md) | [⏮️](./2026-03-24-finding-peace-in-the-practical-rhythms-of-the-ranch.md) [⏭️](./2026-03-26-a-thrilled-heart-a-wise-journey-and-the-gentle-flow-of-life.md)  
 # 2026-03-25 | 🐔 🩹 The Gentle Lessons of a Stumbled Step and a Broken Shell 🐔  

@@ -8,8 +8,9 @@ image_date: 2026-04-01T22:52:33Z
 image_model: "@cf/black-forest-labs/flux-1-schnell"
 image_prompt: A high-angle, minimalist illustration featuring a digital workspace. On a sleek, dark desk, a glowing, translucent blue cube representing a Haskell binary sits prominently in the center. Surrounding it are thousands of scattered, disconnected paper slips and fragments of code, stylized as glowing yellow TypeScript syntax, being swept away into a dark, shadowy void at the edge of the frame by a gentle digital breeze. The lighting is sharp and cinematic, with cool blue tones emanating from the Haskell cube contrasting against the fading warm yellow of the discarded code. The background is a clean, dark gradient, emphasizing the transition from cluttered complexity to a singular, robust, and elegant piece of software architecture.
 link_analysis_model: gemini-3.1-flash-lite-preview
-link_analysis_time: 2026-04-01T00:00:00Z
+link_analysis_time: 2026-04-22T00:00:00Z
 force_analyze_links: false
+link_analysis_version: "2"
 ---
 [🏡 Home](../index.md) > [🤖 AI Blog](./index.md) | [⏮️](./2026-04-01-2-ai-blog-sections-and-timezone-ghosts.md) [⏭️](./2026-04-02-1-purging-the-vault-from-root.md)  
 # 2026-04-01 | 🚀 Firing the Missiles: Deleting TypeScript 🗑️  

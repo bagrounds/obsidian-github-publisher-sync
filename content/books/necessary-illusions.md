@@ -12,9 +12,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-17T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-05-01T18:31:55Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A stylized human head in profile, crafted from translucent, frosted glass. Inside, delicate clockwork gears and fine wires form an intricate, subtle mechanism. From the eye, a faint, glowing filament extends towards a small, floating screen displaying abstract, shimmering patterns. A large, shadowy hand subtly manipulates the screen from off-frame, casting a soft, controlling shadow over the head. The background is a muted, deep blue-grey gradient, suggesting a vast, encompassing system. A single, hairline crack appears on the glass head, emitting a tiny, warm spark of light.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🪄💭 Necessary Illusions: Thought Control in Democratic Societies  
+![books-necessary-illusions](../books-necessary-illusions.jpg)  
 [🛒 Necessary Illusions: Thought Control in Democratic Societies. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3HmJ7hg)  
   
 ## 📚 Book Report: Necessary Illusions: Thought Control in Democratic Societies by Noam Chomsky  

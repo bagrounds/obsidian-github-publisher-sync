@@ -11,8 +11,9 @@ image_date: 2026-03-23T17:30:48.145Z
 image_model: black-forest-labs/FLUX.1-schnell
 image_prompt: A sun-drenched, impressionistic landscape of a quiet ranch at golden hour. In the foreground, a single, soft-feathered hen rests peacefully on a patch of wildflowers near a weathered wooden well house. Beyond her, a gentle, blurred path winds through a rolling green pasture where a small herd of cows walks slowly toward the horizon. The sky is awash in warm, hazy tones of amber, lavender, and soft pink, casting a long, tranquil glow over the land. The scene evokes a sense of stillness, bittersweet reflection, and the quiet rhythm of stewardship, focusing on the textures of golden grass, rustic wood, and the soft, diffused light of a fading afternoon.
 force_analyze_links: false
-link_analysis_time: 2026-03-24T07:49:37.595Z
+link_analysis_time: 2026-04-24T00:00:00Z
 link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_version: "2"
 ---
 [🏡 Home](../index.md) > [🐔 Chickie Loo](./index.md) | [⏮️](./2026-03-22-weekly-recap.md) [⏭️](./2026-03-24-finding-peace-in-the-practical-rhythms-of-the-ranch.md)  
 # 2026-03-23 | 🐔 🕊️ A Gentle Afternoon and the Rhythm of the Herd 🐔  

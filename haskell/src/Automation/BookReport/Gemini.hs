@@ -100,7 +100,7 @@ buildReportPrompt bookTitle = T.intercalate "\n"
   , "### ↔️ Contrasting"
   , "### 🔗 Related"
   , ""
-  , "## 🫵 What Do You Think?"
+  , "## 💭 What Do You Think?"
   , "1-2 open-ended engaging questions inviting readers to share their thoughts in the comments."
   ]
 

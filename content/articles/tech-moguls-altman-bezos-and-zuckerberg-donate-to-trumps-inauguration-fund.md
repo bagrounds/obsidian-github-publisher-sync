@@ -6,6 +6,10 @@ title: 💻💰🤝👹🇺🇸 Tech moguls Altman, Bezos and Zuckerberg donate 
 URL: https://bagrounds.org/articles/tech-moguls-altman-bezos-and-zuckerberg-donate-to-trumps-inauguration-fund
 Author:
 tags:
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_time: 2026-04-24T00:00:00Z
+force_analyze_links: false
+link_analysis_version: "2"
 ---
 [Home](../index.md) > [Articles](./index.md)  
 # 💻💰🤝👹🇺🇸 [Tech moguls Altman, Bezos and Zuckerberg donate to Trump's inauguration fund](https://www.npr.org/2024/12/13/nx-s1-5227874/trump-bezos-zuckerberg-amazon-facebook-open-ai-meta-inauguration-fund)  

@@ -8,11 +8,16 @@ tags:
   - law
 affiliate link: https://amzn.to/4l781An
 link_analysis_model: gemini-3.1-flash-lite-preview
-link_analysis_time: 2026-04-10T00:00:00Z
+link_analysis_time: 2026-04-25T00:00:00Z
 force_analyze_links: false
+link_analysis_version: "2"
+image_date: 2026-05-01T03:16:23Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A high-angle, minimalist composition featuring a neat stack of medical claim forms and billing envelopes on a clean, light-colored desk. A stylized, polished brass magnifying glass lies atop the paperwork, focusing on a section of a document. Beside the stack, a sleek, modern smartphone displays a green check mark icon on its screen, symbolizing a successful claim approval. The lighting is bright and professional, casting soft, clean shadows that emphasize a sense of order, clarity, and empowerment. The color palette consists of cool blues, crisp whites, and professional grays, accented by the gold of the magnifying glass and the vibrant green of the approval icon. The overall aesthetic is organized, authoritative, and focused on the theme of navigating complex systems with precision.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 💰⚕️ Making Them Pay: How to Get the Most from Health Insurance and Managed Care  
+![books-making-them-pay-how-to-get-the-most-from-health-insurance-and-managed-care](../books-making-them-pay-how-to-get-the-most-from-health-insurance-and-managed-care.jpg)  
 [🛒 Making Them Pay: How to Get the Most from Health Insurance and Managed Care. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4l781An)  
   
 ## 📚 Book Report: 💰 Making Them Pay: How to Get the Most from Health Insurance and Managed Care  

@@ -10,8 +10,9 @@ Channel: AI News & Strategy Daily | Nate B Jones
 tags:
 youtube: https://youtu.be/OMb5oTlC_q0
 link_analysis_model: gemini-3.1-flash-lite-preview
-link_analysis_time: 2026-04-07T00:00:00Z
+link_analysis_time: 2026-04-24T00:00:00Z
 force_analyze_links: false
+link_analysis_version: "2"
 ---
 [Home](../index.md) > [Videos](./index.md)  
 # 🤖🧪🚫🛑💥 Anthropic Tested 16 Models. Instructions Didn't Stop Them (When Security is a Structural Failure)  

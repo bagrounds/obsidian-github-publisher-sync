@@ -50,7 +50,7 @@ URL: https://bagrounds.org/ai-blog/2026-04-30-2-auto-generate-book-reports
 
 📦 The ASIN extraction is careful to verify the segment is exactly ten alphanumeric characters. The affiliate URL is assembled as the Amazon dp path followed by the tag query parameter using the AMAZON_ASSOCIATE_TAG environment variable.
 
-🔍 Once the affiliate URL is assembled, it is validated by fetching the page over HTTP. A 404 response means the URL does not exist and the candidate is skipped. A 200 response confirms the page exists; the response body is also scanned for the book title as a best-effort check that the URL points to the right book. Transient errors such as connection failures or 5xx responses are treated as valid to avoid blocking the pipeline on Amazon rate limits or anti-bot responses.
+🔍 Once the affiliate URL is assembled, it is validated by fetching the page over HTTP. A 404 response means the URL does not exist and the candidate is skipped immediately. A 200 response confirms the page exists; the response body is also scanned for the book title as a best-effort check that the URL points to the right book. Transient errors such as connection failures, 429 responses, and 5xx server errors are retried up to three times with exponential back-off starting at two seconds. If the URL cannot be confirmed after all retries are exhausted, the candidate is skipped so the task never blindly accepts an unverified URL.
 
 ### 📝 Step Four: Generating the Book Report
 
@@ -102,7 +102,7 @@ URL: https://bagrounds.org/ai-blog/2026-04-30-2-auto-generate-book-reports
 
 🔒 The ASIN extraction function stops at the first non-alphanumeric character, then verifies the segment is exactly ten characters. The property-based roundtrip test confirms that building an affiliate URL from a valid ASIN and then extracting the ASIN from that URL always returns the original.
 
-🌐 After assembling the affiliate URL, the task fetches the page to confirm it exists. A confirmed 404 causes the candidate to be skipped. The task also checks whether the title appears in the first 64 kilobytes of the response body as a best-effort signal that the URL points to the correct book.
+🌐 After assembling the affiliate URL, the task fetches the page to confirm it exists. A confirmed 404 causes the candidate to be skipped immediately. Connection errors and transient server errors such as 5xx and 429 are retried up to three times with exponential back-off so that a momentary outage or rate-limit does not silently bypass validation. If the URL still cannot be confirmed after all retries the candidate is skipped. The task also checks whether the title appears in the first 64 kilobytes of the response body as a best-effort signal that the URL points to the correct book.
 
 ## 🧪 Testing
 

@@ -33,6 +33,7 @@ import Automation.Secret (Secret)
 import Automation.Text (stripEmojis)
 import Automation.Title (unTitle)
 import qualified Automation.Gemini as Gemini
+import Control.Concurrent (threadDelay)
 import Control.Exception (SomeException, try)
 import qualified Data.ByteString.Lazy as LBS
 import qualified Data.Char as Char
@@ -281,44 +282,71 @@ insertBooksSection content bookLink =
       in T.stripEnd before <> "\n\n" <> sectionBlock <> "\n\n" <> after
 
 -- | Validate an Amazon affiliate URL by fetching it.
--- Returns True if the page loads (HTTP 200), which confirms the URL exists.
--- Returns False only if the server explicitly returns 404 (URL does not exist).
--- On transient errors (connection failure, 5xx) returns True to avoid blocking
--- the pipeline on Amazon anti-bot responses or rate limiting.
--- Logs a warning when the page title cannot be confirmed in the response body.
+-- Returns True only when the page responds with HTTP 200; returns False otherwise.
+-- Retries up to `urlValidationRetryCount` times (with exponential back-off) on
+-- connection errors and transient server errors (429, 5xx) so that a single
+-- rate-limit or momentary outage does not silently skip an otherwise valid URL.
+-- A confirmed 404 (the URL does not exist) returns False immediately without
+-- retrying. Any error after all retries are exhausted returns False so the
+-- candidate is skipped rather than accepted on blind faith.
+-- Also logs a warning when the page is reachable but the book title cannot be
+-- found in the response body (possible wrong-page hit).
 validateAffiliateUrl :: Manager -> Text -> Text -> IO Bool
-validateAffiliateUrl manager affiliateUrl bookTitle = do
-  fetchResult <- try $ do
-    initReq <- parseRequest (T.unpack affiliateUrl)
-    let httpReq = initReq
-          { requestHeaders =
-              [ ("User-Agent", "Mozilla/5.0 (compatible; BookReport/1.0)")
-              , ("Accept", "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8")
-              ]
-          }
-    httpLbs httpReq manager
-  case fetchResult of
-    Left (exception :: SomeException) -> do
-      putStrLn $ "  ⚠️  Could not fetch affiliate URL (assuming valid): " <> show exception
-      pure True
-    Right response -> do
-      let status = statusCode (responseStatus response)
-      case status of
-        404 -> do
-          putStrLn "  ❌ Affiliate URL returned 404 — URL does not exist"
-          pure False
-        200 -> do
-          let bodyText = T.toLower (TE.decodeUtf8 (LBS.toStrict (LBS.take (fromIntegral amazonPageSampleBytes) (responseBody response))))
-              normalizedTitle = T.toLower (T.strip (stripEmojis bookTitle))
-              titleWords = filter ((> minimumTitleWordLength) . T.length) (T.words normalizedTitle)
-              titleConfirmed = not (null titleWords) && all (`T.isInfixOf` bodyText) titleWords
-          if titleConfirmed
-            then putStrLn "  ✅ Affiliate URL confirmed (title found on page)"
-            else putStrLn "  ⚠️  Affiliate URL returned 200 but title not confirmed on page (proceeding)"
-          pure True
-        other -> do
-          putStrLn $ "  ⚠️  Affiliate URL returned HTTP " <> show other <> " (assuming valid)"
-          pure True
+validateAffiliateUrl manager affiliateUrl bookTitle = go 0
+  where
+    go attempt = do
+      fetchResult <- try @SomeException $ do
+        initReq <- parseRequest (T.unpack affiliateUrl)
+        let httpReq = initReq
+              { requestHeaders =
+                  [ ("User-Agent", "Mozilla/5.0 (compatible; BookReport/1.0)")
+                  , ("Accept", "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8")
+                  ]
+              }
+        httpLbs httpReq manager
+      case fetchResult of
+        Left exception -> do
+          putStrLn $ "  ⚠️  Affiliate URL fetch error (attempt " <> attemptLabel <> "): " <> show exception
+          retryOrFail attempt "fetch error"
+        Right response -> do
+          let status = statusCode (responseStatus response)
+          case status of
+            404 -> do
+              putStrLn "  ❌ Affiliate URL returned 404 — URL does not exist"
+              pure False
+            200 -> do
+              let bodyText = T.toLower (TE.decodeUtf8 (LBS.toStrict (LBS.take (fromIntegral amazonPageSampleBytes) (responseBody response))))
+                  normalizedTitle = T.toLower (T.strip (stripEmojis bookTitle))
+                  titleWords = filter ((> minimumTitleWordLength) . T.length) (T.words normalizedTitle)
+                  titleConfirmed = not (null titleWords) && all (`T.isInfixOf` bodyText) titleWords
+              if titleConfirmed
+                then putStrLn "  ✅ Affiliate URL confirmed (title found on page)"
+                else putStrLn "  ⚠️  Affiliate URL returned 200 but title not confirmed on page (proceeding)"
+              pure True
+            other -> do
+              putStrLn $ "  ⚠️  Affiliate URL returned HTTP " <> show other <> " (attempt " <> attemptLabel <> ")"
+              retryOrFail attempt ("HTTP " <> show other)
+      where
+        attemptLabel = show (attempt + 1) <> "/" <> show (urlValidationRetryCount + 1)
+        retryOrFail currentAttempt reason =
+          if currentAttempt < urlValidationRetryCount
+            then do
+              let delayMs = urlValidationBaseDelayMs * (2 ^ currentAttempt)
+              putStrLn $ "  🔄 Retrying affiliate URL validation in " <> show delayMs <> " ms"
+              threadDelay (delayMs * 1000)
+              go (currentAttempt + 1)
+            else do
+              putStrLn $ "  ❌ Affiliate URL could not be confirmed after retries (" <> reason <> ") — skipping candidate"
+              pure False
+
+-- | Number of retry attempts for affiliate URL validation (after the initial attempt).
+-- So the total attempts = urlValidationRetryCount + 1.
+urlValidationRetryCount :: Int
+urlValidationRetryCount = 3
+
+-- | Base delay in milliseconds between retries (doubles on each attempt).
+urlValidationBaseDelayMs :: Int
+urlValidationBaseDelayMs = 2000
 
 -- | Number of bytes of the Amazon page body to scan when checking whether
 -- the book title is present. 64 KB is large enough to include the product

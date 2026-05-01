@@ -4,12 +4,13 @@ aliases:
   - 🎯🧘 Focus
 title: 🎯🧘 Focus
 link_analysis_model: gemini-3.1-flash-lite-preview
-link_analysis_time: 2026-04-05T00:00:00Z
+link_analysis_time: 2026-04-17T00:00:00Z
 force_analyze_links: false
 image_date: 2026-04-09T08:38:17Z
 image_model: "@cf/black-forest-labs/flux-1-schnell"
 image_prompt: A minimalist, high-contrast illustration featuring a single, glowing golden arrow piercing the exact center of a series of concentric, soft-focus circular rings. The background is a deep, muted navy blue, creating a sense of calm and depth. Floating near the center, a stylized, abstract silhouette of a human head is rendered in fine, ethereal white lines, with a soft, warm light emanating from the brain region, symbolizing clarity and deep concentration. The composition uses negative space to draw the viewer’s eye toward the bullseye, emphasizing precision, stillness, and mental sharpness. The overall aesthetic is clean, modern, and serene.
 updated: 2026-04-09T11:32:17
+link_analysis_version: "2"
 ---
 [Home](../index.md) > [Topics](./index.md)  
 # 🎯🧘 Focus  

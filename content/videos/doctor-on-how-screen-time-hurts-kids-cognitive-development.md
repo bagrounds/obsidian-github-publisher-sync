@@ -10,9 +10,10 @@ Channel: C-SPAN
 tags:
 youtube: https://youtu.be/Fd-_VDYit3U
 link_analysis_model: gemini-3.1-flash-lite-preview
-link_analysis_time: 2026-04-10T00:00:00Z
+link_analysis_time: 2026-04-15T00:00:00Z
 force_analyze_links: false
 updated: 2026-04-10T11:30:04
+link_analysis_version: "2"
 ---
 [Home](../index.md) > [Videos](./index.md)  
 # 📱🧠📉 Doctor on How Screen Time Hurts Kids' Cognitive Development  

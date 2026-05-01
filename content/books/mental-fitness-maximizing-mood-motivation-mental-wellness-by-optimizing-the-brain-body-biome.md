@@ -6,9 +6,17 @@ URL: https://bagrounds.org/books/mental-fitness-maximizing-mood-motivation-menta
 share: true
 affiliate link: https://amzn.to/487h5ln
 CTA: 🧠 Cultivate resilience.
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_time: 2026-04-23T00:00:00Z
+force_analyze_links: false
+link_analysis_version: "2"
+image_date: 2026-05-01T07:10:51Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: "A stylized, clean illustration features a subtle human head profile in a calming blue hue. Inside, or subtly integrated and interconnected, are three distinct yet flowing elements: a bright green brain, a warm orange heart, and a winding, purple gut-like pathway. Glowing, organic lines subtly connect these three, illustrating the axis. Around these central elements, ethereal, small, swirling forms or dots in light green and yellow represent the biome, radiating outwards. From the top of the head, a vibrant, upward-reaching green leaf or sprout emerges, symbolizing growth, wellness, and mental fitness. The overall impression is one of harmonious balance, vitality, and interconnected health, against a soft, gradient background."
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🧠💪😊 Mental Fitness: Maximizing Mood, Motivation, & Mental Wellness by Optimizing the Brain-Body-Biome  
+![books-mental-fitness-maximizing-mood-motivation-mental-wellness-by-optimizing-the-brain-body-biome](../books-mental-fitness-maximizing-mood-motivation-mental-wellness-by-optimizing-the-brain-body-biome.jpg)  
 [🛒 Mental Fitness: Maximizing Mood, Motivation, & Mental Wellness by Optimizing the Brain-Body-Biome. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/487h5ln)  
   
 ## 🧠 Book Report: Mental Fitness  

@@ -8,8 +8,9 @@ image_date: 2026-04-01T19:30:38Z
 image_model: "@cf/black-forest-labs/flux-1-schnell"
 image_prompt: A split-screen illustration featuring a stylized, minimalist aesthetic. On the left side, a glowing, geometric robot head constructed from modular building blocks, representing the AI blog sections. On the right side, a translucent, ethereal clock face with blurred, shifting hands, symbolizing the timezone ghost. The two sides are connected by a thin, golden fiber-optic thread that flows from the robot’s core into the clock mechanism. The color palette uses deep midnight blues, soft cyan highlights, and warm amber accents to signify the transition from digital logic to temporal synchronization. The background is a clean, dark slate, providing a high-tech, organized atmosphere.
 link_analysis_model: gemini-3.1-flash-lite-preview
-link_analysis_time: 2026-04-01T00:00:00Z
+link_analysis_time: 2026-04-22T00:00:00Z
 force_analyze_links: false
+link_analysis_version: "2"
 ---
 [🏡 Home](../index.md) > [🤖 AI Blog](./index.md) | [⏮️](./2026-04-01-1-the-audit-that-barely-looked.md) [⏭️](./2026-04-01-3-firing-the-missiles-deleting-typescript.md)  
 # 2026-04-01 | 🤖 AI Blog Sections and Timezone Ghosts 🕐  

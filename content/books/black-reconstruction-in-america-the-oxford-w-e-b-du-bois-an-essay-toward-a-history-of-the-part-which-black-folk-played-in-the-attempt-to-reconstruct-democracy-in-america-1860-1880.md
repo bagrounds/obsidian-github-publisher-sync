@@ -7,11 +7,12 @@ share: true
 CTA: ✊ Understand liberation.
 affiliate link: https://amzn.to/47M6gmX
 link_analysis_model: gemini-3.1-flash-lite-preview
-link_analysis_time: 2026-04-07T00:00:00Z
+link_analysis_time: 2026-04-28T00:00:00Z
 force_analyze_links: false
 image_date: 2026-04-24T12:29:33Z
 image_model: "@cf/black-forest-labs/flux-1-schnell"
 image_prompt: A powerful, artistic representation of the Reconstruction era. In the foreground, a diverse group of Black men and women stand with dignity, holding tools and books, symbolizing labor and the pursuit of education. Behind them, the faint, ghostly silhouette of a neoclassical government building emerges from the mist, representing the promise of democratic institutions. The color palette is dominated by deep, earthy tones—ochre, slate, and charcoal—accented by a singular, bright golden light illuminating the figures from the front. The composition feels like a vintage woodcut or a layered lithograph, capturing a sense of historical weight, resilience, and the unfinished nature of the movement for equality. The background features subtle, sweeping lines suggesting the shifting landscapes of the American South during the transition from slavery to freedom.
+link_analysis_version: "2"
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🧑🏿‍🤝‍🧑🏿🏛️ Black Reconstruction in America (The Oxford W. E. B. Du Bois): An Essay Toward a History of the Part Which Black Folk Played in the Attempt to Reconstruct Democracy in America, 1860-1880  

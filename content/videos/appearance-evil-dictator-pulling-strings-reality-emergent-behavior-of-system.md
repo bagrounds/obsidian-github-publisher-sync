@@ -9,6 +9,10 @@ Platform:
 Channel: The New Enlightenment with Ashley
 tags:
 youtube: https://youtu.be/8m3by-mgFWI
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_time: 2026-04-27T00:00:00Z
+force_analyze_links: false
+link_analysis_version: "2"
 ---
 [Home](../index.md) > [Videos](./index.md)  
 # 👑〰️📈 Appearance: Evil Dictator Pulling Strings | Reality: Emergent Behavior of System  

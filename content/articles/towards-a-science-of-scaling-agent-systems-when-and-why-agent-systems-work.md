@@ -6,6 +6,10 @@ title: "🤖🧠📈🗣️🧰 Towards a science of scaling agent systems: When
 URL: https://bagrounds.org/articles/towards-a-science-of-scaling-agent-systems-when-and-why-agent-systems-work
 Author:
 tags:
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_time: 2026-04-27T00:00:00Z
+force_analyze_links: false
+link_analysis_version: "2"
 ---
 [Home](../index.md) > [Articles](./index.md)  
 # [🤖🧠📈🗣️🧰 Towards a science of scaling agent systems: When and why agent systems work](https://research.google/blog/towards-a-science-of-scaling-agent-systems-when-and-why-agent-systems-work)  

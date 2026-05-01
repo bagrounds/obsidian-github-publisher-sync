@@ -12,9 +12,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-17T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-05-01T00:47:20Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A conceptual illustration featuring a glowing, translucent human head silhouette set against a deep navy background. Inside the brain area, vibrant, colorful puzzle pieces are actively snapping into place, illuminated by soft, golden light. Surrounding the head, abstract geometric shapes and lines—representing interconnected neural pathways—are being drawn with glowing ink. Some lines are solid and thick, symbolizing deep-rooted, long-term memory, while others are thinner and fading, representing forgotten information. The overall aesthetic is clean, modern, and scientific, using a palette of electric blue, warm gold, and crisp white to evoke a sense of intellectual clarity and the Aha! moment of durable learning. The composition is balanced and focused, emphasizing the active, effortful process of building knowledge rather than passive absorption.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🧠🔒 Make It Stick: The Science of Successful Learning  
+![books-make-it-stick](../books-make-it-stick.jpg)  
 [🛒 Make It Stick: The Science of Successful Learning. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3HoJAQh)  
   
 ## 🤖 AI Summary  

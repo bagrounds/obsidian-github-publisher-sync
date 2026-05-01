@@ -9,6 +9,10 @@ Platform:
 Channel: Andy Galpin
 tags:
 youtube: https://youtu.be/fFR6Kx4Aj58
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_time: 2026-04-24T00:00:00Z
+force_analyze_links: false
+link_analysis_version: "2"
 ---
 [Home](../index.md) > [Videos](./index.md)  
 # ❤️⬇️🔬 Lower Your Resting Heart Rate (The Simple Science Most People Miss) | Dr. Andy Galpin 5 Minute Phys  

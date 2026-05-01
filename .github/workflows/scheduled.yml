@@ -90,6 +90,7 @@ jobs:
           DISABLE_MASTODON: ${{ vars.DISABLE_MASTODON || '' }}
           LINKING_MODEL: ${{ vars.LINKING_MODEL || 'gemini-3.1-flash-lite-preview' }}
           GA_PROPERTY_ID: ${{ secrets.GA_PROPERTY_ID }}
+          AMAZON_ASSOCIATE_TAG: ${{ secrets.AMAZON_ASSOCIATE_TAG }}
           REPO_ROOT: ${{ github.workspace }}
         run: >-
           bin/run-scheduled

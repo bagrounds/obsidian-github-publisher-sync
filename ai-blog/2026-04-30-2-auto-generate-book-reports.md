@@ -26,7 +26,7 @@ URL: https://bagrounds.org/ai-blog/2026-04-30-2-auto-generate-book-reports
 
 🔗 If a mentioned title already has a book page, we immediately insert a wikilink for it in the scanned file using the same infrastructure the internal-linking task uses, specifically the candidate-discovery and replacement engine. This closes the gap without a new book page needing to be generated.
 
-💾 After scanning each file, the task writes a book-mention-scanned field with today's date to that file's frontmatter. On a retry within the same day, the task sees this field and skips the file entirely, avoiding a redundant Gemini inference call.
+💾 After scanning each file, the task writes a book_mention_scanned field to that file's frontmatter. Once set, this flag is permanent — any future run sees it and skips the file entirely without a redundant Gemini inference call. The design assumes one scan per file for the lifetime of the vault.
 
 📌 Newly discovered titles that do not yet have pages become candidates for full report generation. Only one book report is generated per run.
 
@@ -40,7 +40,7 @@ URL: https://bagrounds.org/ai-blog/2026-04-30-2-auto-generate-book-reports
 
 🧹 After a report is successfully written and the reflection is updated, both book-report-pending and book-report-asin are cleared from the books index frontmatter, leaving it in a clean state for the next run.
 
-🚫 If the environment variable AMAZON_ASSOCIATE_TAG is not set, the task refuses to run entirely. Generating book pages without affiliate links would require manual cleanup later, so we fail fast rather than produce incomplete output.
+🚫 If the environment variable AMAZON_ASSOCIATE_TAG is not set, the task refuses to run entirely. Generating book pages without affiliate links would require manual cleanup later, so we fail fast rather than produce incomplete output. The secret is passed to the process via the scheduled workflow's env block, mapping secrets.AMAZON_ASSOCIATE_TAG to the process environment.
 
 ### 🛒 Step Three: Finding and Validating the Amazon Product URL
 

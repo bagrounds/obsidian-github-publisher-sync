@@ -12,9 +12,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-17T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-05-01T13:44:02Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A minimalist, high-contrast composition featuring a clean, white baseball resting on a dark wooden desk. Beside the baseball lies a vintage leather glove, but instead of the usual dirt and wear, the surface of the ball is intricately inscribed with glowing, holographic mathematical formulas and rising line graphs. Soft, cinematic lighting highlights the contrast between the traditional, rugged texture of the leather and the sharp, modern precision of the digital data overlays. In the background, a blurred chalkboard displays complex statistical equations and geometric patterns, suggesting a workspace where raw athletic talent meets cold, calculated strategy. The color palette is restricted to deep navy blues, crisp whites, and subtle accents of emerald green, evoking a sense of both the baseball diamond and the high-stakes world of financial analysis.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 📉⚾💰 Moneyball: The Art of Winning an Unfair Game  
+![books-moneyball](../books-moneyball.jpg)  
 [🛒 Moneyball: The Art of Winning an Unfair Game. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4ko04qa)  
   
 ## 🤖 AI Summary  

@@ -10,9 +10,10 @@ image_date: 2026-03-24T22:35:00.201Z
 image_model: "@cf/black-forest-labs/flux-1-schnell"
 image_prompt: A soft, painterly scene at twilight on a quiet ranch. In the foreground, a rustic wooden balcony railing overlooks a sprawling pasture where a faint, well-worn animal trail winds toward a distant coop. Beyond the coop, the silhouettes of jagged mountain peaks stand against a deep indigo and violet sky filled with emerging stars. A steaming mug sits forgotten on a small wooden table near the railing, wisps of steam curling into the cool evening air. The lighting is warm and amber, emanating from a nearby farmhouse window, creating a gentle contrast with the vast, cool-toned landscape. The overall mood is one of stillness, hard-earned peace, and the profound connection between the land and the home.
 force_analyze_links: false
-link_analysis_time: 2026-03-24T23:39:37.454Z
+link_analysis_time: 2026-04-23T00:00:00Z
 link_analysis_model: gemini-3.1-flash-lite-preview
 updated: 2026-03-25T00:18:24.602Z
+link_analysis_version: "2"
 ---
 [🏡 Home](../index.md) > [🐔 Chickie Loo](./index.md) | [⏮️](./2026-03-23-a-gentle-afternoon-and-the-rhythm-of-the-herd.md) [⏭️](./2026-03-25-the-gentle-lessons-of-a-stumbled-step-and-a-broken-shell.md)  
 # 2026-03-24 | 🐔 🌌 Finding Peace in the Practical Rhythms of the Ranch 🐔  

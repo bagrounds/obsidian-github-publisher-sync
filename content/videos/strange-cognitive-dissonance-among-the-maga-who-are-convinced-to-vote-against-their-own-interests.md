@@ -9,6 +9,10 @@ Platform:
 Channel: FRANCE 24 English
 tags:
 youtube: https://youtu.be/2fUs-YDzZPU
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_time: 2026-04-24T00:00:00Z
+force_analyze_links: false
+link_analysis_version: "2"
 ---
 [Home](../index.md) > [Videos](./index.md)  
 # 😵‍💫🇺🇸🐘🚫 Strange cognitive dissonance among the MAGA who are convinced to vote against their own interests  

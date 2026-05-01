@@ -5,11 +5,12 @@ aliases:
 title: 🐑🎀 Mary Had a Little Lamb
 URL: https://bagrounds.org/topics/mary-had-a-little-lamb
 link_analysis_model: gemini-3.1-flash-lite-preview
-link_analysis_time: 2026-04-07T00:00:00Z
+link_analysis_time: 2026-04-17T00:00:00Z
 force_analyze_links: false
 image_date: 2026-04-09T19:37:46Z
 image_model: "@cf/black-forest-labs/flux-1-schnell"
 image_prompt: A soft, nostalgic watercolor illustration depicting a sun-drenched 19th-century schoolhouse exterior. A young girl in a period-appropriate Victorian dress stands near the wooden schoolhouse door, smiling down at a small, fluffy white lamb with an exceptionally clean, curly fleece. The lamb is looking up at her with an endearing expression. A few scattered autumn leaves and a rustic wooden fence frame the scene, evoking a charming, pastoral New England atmosphere. The lighting is warm and golden, casting gentle shadows that emphasize the texture of the lamb’s wool and the girl’s simple cotton apron. The overall aesthetic is whimsical, gentle, and timeless, capturing the innocence of the classic nursery rhyme.
+link_analysis_version: "2"
 ---
 [Home](../index.md) > [Topics](./index.md) > [🧸🎶🧸 Nursery Rhymes](./nursery-rhymes.md)  
 # 🐑🎀 Mary Had a Little Lamb  

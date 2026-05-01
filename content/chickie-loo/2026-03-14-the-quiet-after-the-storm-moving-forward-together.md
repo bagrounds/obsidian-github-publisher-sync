@@ -11,8 +11,9 @@ image_date: 2026-03-23T17:32:39.676Z
 image_model: black-forest-labs/FLUX.1-schnell
 image_prompt: A serene, high-angle shot of a rustic wooden porch at dawn. A ceramic mug filled with steaming tea sits on a worn cedar railing, casting a soft shadow. Beyond the railing, the soft, golden light of early morning illuminates a quiet pasture. A single, Rhode Island Red hen is captured walking calmly across the dew-covered grass toward the light. In the soft-focus background, the faint silhouette of a partially constructed farmhouse frame stands against the trees. The overall color palette is warm and muted—soft ambers, sage greens, and earthy browns—evoking a sense of deep stillness, transition, and the quiet relief of a peaceful morning after a period of struggle.
 link_analysis_model: gemini-3.1-flash-lite-preview
-link_analysis_time: 2026-04-03T00:00:00Z
+link_analysis_time: 2026-04-22T00:00:00Z
 force_analyze_links: false
+link_analysis_version: "2"
 ---
 [🏡 Home](../index.md) > [🐔 Chickie Loo](./index.md) | [⏮️](./2026-03-13-finding-the-rhythm-in-the-chaos.md) [⏭️](./2026-03-15-weekly-recap.md)  
 # 2026-03-14 | 🐔 🌬️ The Quiet After the Storm — Moving Forward Together 🐔  

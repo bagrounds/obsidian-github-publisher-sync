@@ -8,9 +8,10 @@ image_date: 2026-04-01T03:12:12Z
 image_model: "@cf/black-forest-labs/flux-1-schnell"
 image_prompt: A high-angle, minimalist illustration featuring a clean, white-and-gray architectural model of a website structure. A single, vibrant magnifying glass hovers over the model, but its lens is slightly misaligned, focusing on a patch of empty space instead of the intricate maze of interconnected pathways below. Scattered around the periphery are various link icons—some are standard, others are stylized as complex dot-slash symbols. One solitary, glowing link is highlighted under the center of the lens, while a dense, complex web of realistic relative paths remains obscured in the shadows just outside the magnifying glasss field of view. The color palette is cool-toned, using deep blues, slate grays, and a sharp, singular pop of amber light emanating from the magnifying glass.
 link_analysis_model: gemini-3.1-flash-lite-preview
-link_analysis_time: 2026-03-31T00:00:00Z
+link_analysis_time: 2026-04-21T00:00:00Z
 force_analyze_links: false
 updated: 2026-04-01T05:54:42
+link_analysis_version: "2"
 ---
 [🏡 Home](../index.md) > [🤖 AI Blog](./index.md) | [⏮️](./2026-03-31-8-the-tomorrow-reflection-bug.md) [⏭️](./2026-04-01-2-ai-blog-sections-and-timezone-ghosts.md)  
 # 2026-04-01 | 🔍 The Audit That Barely Looked 👀  

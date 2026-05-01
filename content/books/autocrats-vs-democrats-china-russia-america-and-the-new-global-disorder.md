@@ -7,11 +7,12 @@ share: true
 affiliate link: https://amzn.to/3JLty4g
 CTA: 🌍 Understand global power.
 link_analysis_model: gemini-3.1-flash-lite-preview
-link_analysis_time: 2026-04-11T00:00:00Z
+link_analysis_time: 2026-04-28T00:00:00Z
 force_analyze_links: false
 image_date: 2026-04-23T22:27:00Z
 image_model: "@cf/black-forest-labs/flux-1-schnell"
 image_prompt: A high-contrast, cinematic composition featuring a fractured globe at the center. One hemisphere is rendered in deep, cold shadows with sharp, metallic geometric shapes representing autocratic structures. The opposing hemisphere is illuminated with warm, vibrant light, displaying intricate, organic connections and translucent, interconnected nodes symbolizing democratic networks. A dynamic, stylized border of shifting light and shadow cuts diagonally across the planet, representing the tension between these two systems. The background is a dark, abstract void with faint, glowing lines of latitude and longitude that appear to be fraying or shifting, emphasizing the theme of global disorder. The overall aesthetic is sleek and modern, utilizing a color palette of deep navy, charcoal, electric blue, and warm amber.
+link_analysis_version: "2"
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 👑⚔️🇺🇸 Autocrats vs Democrats: China, Russia, America, and the New Global Disorder  

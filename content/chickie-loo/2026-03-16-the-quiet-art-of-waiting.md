@@ -11,8 +11,9 @@ image_date: 2026-03-23T17:31:13.252Z
 image_model: black-forest-labs/FLUX.1-schnell
 image_prompt: A sun-drenched, rustic scene captured during golden hour. In the foreground, a pair of worn, mud-streaked leather boots rests on a wooden fence post near a blooming orchard. A calm, white Easter Egger chicken is perched serenely on the shoulder of an unseen person, its feathers softly illuminated by the late afternoon light. In the background, a soft-focus meadow stretches toward a peaceful, rolling hillside where a few cows graze quietly. The atmosphere is warm, still, and reflective, with gentle dust motes dancing in the light. The color palette features earthy tones of deep brown, golden yellow, sage green, and the soft, clean white of the bird, evoking a sense of patience, stewardship, and connection to the land.
 link_analysis_model: gemini-3.1-flash-lite-preview
-link_analysis_time: 2026-04-03T00:00:00Z
+link_analysis_time: 2026-04-23T00:00:00Z
 force_analyze_links: false
+link_analysis_version: "2"
 ---
 [🏡 Home](../index.md) > [🐔 Chickie Loo](./index.md) | [⏮️](./2026-03-15-weekly-recap.md) [⏭️](./2026-03-17-learning-to-lead-the-flock.md)  
 # 2026-03-16 | 🐔 🪴 The Quiet Art of Waiting 🐔  

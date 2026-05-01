@@ -6,6 +6,10 @@ URL: https://bagrounds.org/books/recovering-from-training-how-to-manage-fatigue-
 share: true
 affiliate link: https://amzn.to/3ViSdQ4
 CTA: 💪 Optimize recuperation.
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_time: 2026-04-23T00:00:00Z
+force_analyze_links: false
+link_analysis_version: "2"
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🤕📈 Recovering from Training: How to Manage Fatigue to Maximize Performance  

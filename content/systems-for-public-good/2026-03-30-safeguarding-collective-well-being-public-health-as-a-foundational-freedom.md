@@ -11,8 +11,9 @@ tags: ""
 title: "2026-03-30 | 🏛️ 🌡️ Safeguarding Collective Well-being: Public Health as a Foundational Freedom 🏛️"
 updated: 2026-03-30T19:29:58
 link_analysis_model: gemini-3.1-flash-lite-preview
-link_analysis_time: 2026-03-31T00:00:00Z
+link_analysis_time: 2026-04-21T00:00:00Z
 force_analyze_links: false
+link_analysis_version: "2"
 ---
 [Home](../index.md) > [🏛️ Systems for Public Good](./index.md) | [⏮️](./2026-03-29-mapping-our-shared-journey-the-week-s-explorations.md) [⏭️](./2026-03-31-the-cornerstone-of-well-being-housing-as-a-foundational-freedom.md)  
 # 2026-03-30 | 🏛️ 🌡️ Safeguarding Collective Well-being: Public Health as a Foundational Freedom 🏛️  

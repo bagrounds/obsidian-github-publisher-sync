@@ -8,8 +8,9 @@ image_date: 2026-04-05T17:16:32Z
 image_model: "@cf/black-forest-labs/flux-1-schnell"
 image_prompt: A minimalist, high-contrast illustration featuring a stylized analog clock face floating against a soft, gradient background transitioning from deep indigo to warm amber. The clock’s hands are frozen at 10:00. Below the clock, a series of abstract, geometric paper-like rectangles—representing blog post notes—are scattered. Most of the rectangles are blank and grayscale, while one central rectangle is vibrant, colorful, and detailed, symbolizing the note that has finally received its creative title. Subtle, glowing digital particles drift upward toward the clock, representing the synchronization of the image backfill process. The overall aesthetic is clean, modern, and tech-focused, using a palette of deep blues, crisp whites, and a single accent of golden yellow to emphasize the fixed timing.
 link_analysis_model: gemini-3.1-flash-lite-preview
-link_analysis_time: 2026-04-05T00:00:00Z
+link_analysis_time: 2026-04-20T00:00:00Z
 force_analyze_links: false
+link_analysis_version: "2"
 ---
 [🏡 Home](../index.md) > [🤖 AI Blog](./index.md) | [⏮️](./2026-04-04-1-page-based-updates-section.md) [⏭️](./2026-04-05-1-expanding-the-image-backfill-horizon.md)  
 # 2026-04-04 | 🖼️ Reflection Image Timing Fix 🕐  

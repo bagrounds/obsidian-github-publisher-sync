@@ -11,9 +11,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-18T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-05-01T07:55:47Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A surreal, high-contrast digital illustration depicting a human silhouette composed of thousands of tiny, glowing fiber-optic threads. These threads radiate outward, connecting to a chaotic, swirling web of fragmented data points, binary code, and shadowy geometric shapes that form the faint, distorted outline of a voting ballot box. The color palette features deep obsidian blacks, electric neon blues, and jarring, glitchy bursts of warning-sign orange. The background is a dark, textured gradient suggesting a server room or a digital void. The overall composition feels tense and claustrophobic, emphasizing the theme of unseen manipulation, the weaponization of personal identity, and the fragility of democratic systems under the influence of hidden algorithms.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🤯 Mindf\*ck: Cambridge Analytica and the Plot to Break America  
+![books-mindf-ck-cambridge-analytica-and-the-plot-to-break-america](../books-mindf-ck-cambridge-analytica-and-the-plot-to-break-america.jpg)  
 [🛒 Mindf*ck: Cambridge Analytica and the Plot to Break America. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4kRG3bD)  
   
 ## 📖 Book Report: Mindf\*ck: Cambridge Analytica and the Plot to Break America  

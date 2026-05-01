@@ -10,9 +10,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-16T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-05-01T09:40:03Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A minimalist illustration featuring a clean, white background. In the center, a stylized, symmetrical human silhouette is split down the middle. One side of the figure is composed of rigid, geometric, metallic lines representing a cold, mathematical Econ. The other side is rendered in fluid, organic, colorful shapes—swirls of ink and soft textures—representing the unpredictable, emotional Human. Between the two halves, a single, slightly lopsided coin is captured mid-toss, frozen in the air. The lighting is soft and studio-quality, emphasizing the contrast between the sharp, calculated structure on the left and the chaotic, vibrant spontaneity on the right.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🤔💸 Misbehaving: The Making of Behavioral Economics  
+![books-misbehaving-the-making-of-behavioral-economics](../books-misbehaving-the-making-of-behavioral-economics.jpg)  
 [🛒 Misbehaving: The Making of Behavioral Economics. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4jAWjN8)  
   
 ## 📚 Book Report: Misbehaving: The Making of Behavioral Economics  

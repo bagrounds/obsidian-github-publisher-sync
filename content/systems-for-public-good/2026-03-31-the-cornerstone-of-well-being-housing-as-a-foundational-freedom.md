@@ -9,9 +9,10 @@ image_date: 2026-03-31T16:33:38Z
 image_model: "@cf/black-forest-labs/flux-1-schnell"
 image_prompt: A warm, inviting illustration featuring a stylized, modern neighborhood nestled in a lush, green landscape. In the center, a diverse group of people of varying ages are gathered around a large, solid stone cornerstone that serves as the foundation for a collection of bright, welcoming homes. The art style is clean and architectural, with soft, natural lighting suggesting sunrise. The homes are connected by winding paths and vibrant community gardens, emphasizing social cohesion and stability. The color palette uses warm earth tones—terracotta, soft greens, and deep blues—to evoke a sense of security, growth, and long-term investment. The overall composition is balanced and serene, focusing on the concept of housing as the literal and figurative base for human flourishing.
 link_analysis_model: gemini-3.1-flash-lite-preview
-link_analysis_time: 2026-03-31T00:00:00Z
+link_analysis_time: 2026-04-21T00:00:00Z
 force_analyze_links: false
 updated: 2026-03-31T23:17:54
+link_analysis_version: "2"
 ---
 [Home](../index.md) > [🏛️ Systems for Public Good](./index.md) | [⏮️](./2026-03-30-safeguarding-collective-well-being-public-health-as-a-foundational-freedom.md) [⏭️](./2026-04-01-expanding-housing-abundance-beyond-traditional-models.md)  
 # 2026-03-31 | 🏛️ 🏡 The Cornerstone of Well-being: Housing as a Foundational Freedom 🏛️  

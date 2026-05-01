@@ -7,11 +7,12 @@ share: true
 CTA: 🗣️ Uncover suppressed narratives.
 affiliate link: https://amzn.to/3JOysh4
 link_analysis_model: gemini-3.1-flash-lite-preview
-link_analysis_time: 2026-04-11T00:00:00Z
+link_analysis_time: 2026-04-28T00:00:00Z
 force_analyze_links: false
 image_date: 2026-04-22T11:32:59Z
 image_model: "@cf/black-forest-labs/flux-1-schnell"
 image_prompt: A wide-angle, cinematic illustration of a winding river flowing through a diverse, layered landscape. The river represents the passage of time, with its banks teeming with small, diverse groups of ordinary people—women, laborers, and families—engaged in acts of communal service, quiet devotion, and shared meals. In the background, faint, translucent silhouettes of grand cathedrals and stone monuments rise into the clouds, representing the traditional institutional history. The color palette is warm and earthy, using golden hour sunlight to highlight the individuals on the riverbanks, contrasting with the cool, shadowed, and slightly faded appearance of the massive stone structures in the distance. The overall aesthetic is textured and evocative, blending historical realism with a sense of grassroots movement and hidden narratives.
+link_analysis_version: "2"
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 👥✝️ A People's History of Christianity: The Other Side of the Story  

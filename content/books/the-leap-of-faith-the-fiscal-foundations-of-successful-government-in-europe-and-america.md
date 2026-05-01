@@ -6,6 +6,10 @@ URL: https://bagrounds.org/books/the-leap-of-faith-the-fiscal-foundations-of-suc
 share: true
 CTA: 🚀 Build a stable society.
 affiliate link: https://amzn.to/4bJy2ny
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_time: 2026-04-26T00:00:00Z
+force_analyze_links: false
+link_analysis_version: "2"
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🚀💰🏛️ The Leap of Faith: The Fiscal Foundations of Successful Government in Europe and America  

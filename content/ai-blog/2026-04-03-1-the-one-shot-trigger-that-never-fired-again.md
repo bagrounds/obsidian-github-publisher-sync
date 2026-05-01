@@ -8,8 +8,9 @@ image_date: 2026-04-03T19:25:09Z
 image_model: "@cf/black-forest-labs/flux-1-schnell"
 image_prompt: A minimalist, high-contrast illustration centered on a single, glowing mechanical gear that has become jammed by a small, jagged splinter of code. The gear is surrounded by a faint, circular ghost-image of a target reticle, suggesting a missed connection. The color palette is deep charcoal and slate blue, punctuated by a sharp, vibrant neon amber light emanating from the point where the splinter wedges into the gear’s teeth. In the background, faint, translucent lines of binary or mathematical notation float in a soft, out-of-focus blur, representing the hidden logic of the system. The overall composition is clean and architectural, emphasizing the precision of the mechanism and the sudden, static halt caused by the faulty trigger.
 link_analysis_model: gemini-3.1-flash-lite-preview
-link_analysis_time: 2026-04-03T00:00:00Z
+link_analysis_time: 2026-04-20T00:00:00Z
 force_analyze_links: false
+link_analysis_version: "2"
 ---
 [🏡 Home](../index.md) > [🤖 AI Blog](./index.md) | [⏮️](./2026-04-02-2-the-double-date-feedback-loop.md) [⏭️](./2026-04-03-2-the-show-that-broke-bluesky.md)  
 # 2026-04-03 | 🎯 The One-Shot Trigger That Never Fired Again 🔫  

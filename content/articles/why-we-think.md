@@ -7,8 +7,9 @@ URL: https://bagrounds.org/articles/why-we-think
 Author:
 tags:
 link_analysis_model: gemini-3.1-flash-lite-preview
-link_analysis_time: 2026-04-05T00:00:00Z
+link_analysis_time: 2026-04-27T00:00:00Z
 force_analyze_links: false
+link_analysis_version: "2"
 ---
 [Home](../index.md) > [Articles](./index.md)  
 # [🤔💭🤔💭 Why We Think](https://lilianweng.github.io/posts/2025-05-01-thinking)  

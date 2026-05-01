@@ -9,9 +9,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-19T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-05-01T08:49:11Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A minimalist, high-contrast illustration featuring a single, sturdy stone cairn balanced perfectly on a flat, reflective surface. The background is a soft, calming gradient shifting from a deep, focused indigo to a warm, purposeful amber. Circling the cairn is a thin, glowing, circular light-path that suggests movement and orbit, representing a disciplined, intentional journey. The overall aesthetic is clean, modern, and serene, utilizing clean lines and geometric shapes to evoke a sense of mental clarity, balance, and the focused pursuit of a singular goal amidst a void of empty space. No clutter, no distractions—only the essential harmony of mindfulness and action.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🧘🎯 Mindful Self-Discipline: Living with Purpose and Achieving Your Goals in a World of Distractions  
+![books-mindful-self-discipline-living-with-purpose-and-achieving-your-goals-in-a-world-of-distractions](../books-mindful-self-discipline-living-with-purpose-and-achieving-your-goals-in-a-world-of-distractions.jpg)  
 [🛒 Mindful Self-Discipline: Living with Purpose and Achieving Your Goals in a World of Distractions. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4kNM2ya)  
   
 ## 📖 Book Report: 🧘‍♀️ Mindful Self-Discipline  

@@ -9,11 +9,12 @@ tags:
 affiliate link: https://www.amazon.com/dp/1250229863?tag=bagrounds-20
 updated: 2026-03-25T08:15:52.813Z
 force_analyze_links: false
-link_analysis_time: 2026-03-25T03:02:40.483Z
+link_analysis_time: 2026-04-18T00:00:00Z
 link_analysis_model: gemini-3.1-flash-lite-preview
 image_date: 2026-04-14T00:38:12Z
 image_model: "@cf/black-forest-labs/flux-1-schnell"
 image_prompt: A sleek, dark humanoid security unit, Murderbot, stands in a protective, slightly weary stance, its glowing optical sensors fixed forward. Its battle-worn armor reflects soft, warm light from a
+link_analysis_version: "2"
 ---
 [Home](../index.md) > [Books](./index.md) | [⏮️ 🏃💨🚪 Exit Strategy](./exit-strategy.md) [⏭️ 🕵️ Fugitive Telemetry](./fugitive-telemetry.md)  
 # 🌐🤖🚀 Network Effect  

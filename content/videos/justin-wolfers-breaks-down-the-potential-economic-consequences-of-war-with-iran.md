@@ -10,8 +10,9 @@ Channel: Slate
 tags:
 youtube: https://youtu.be/qgbC3JnQU4w
 link_analysis_model: gemini-3.1-flash-lite-preview
-link_analysis_time: 2026-04-05T00:00:00Z
+link_analysis_time: 2026-04-22T00:00:00Z
 force_analyze_links: false
+link_analysis_version: "2"
 ---
 [Home](../index.md) > [Videos](./index.md)  
 # 💥🇮🇷💰 Justin Wolfers Breaks Down the Potential Economic Consequences of War With Iran  

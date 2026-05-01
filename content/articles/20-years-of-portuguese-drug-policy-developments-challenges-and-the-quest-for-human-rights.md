@@ -7,8 +7,9 @@ URL: https://bagrounds.org/articles/20-years-of-portuguese-drug-policy-developme
 Author:
 tags:
 link_analysis_model: gemini-3.1-flash-lite-preview
-link_analysis_time: 2026-04-06T00:00:00Z
+link_analysis_time: 2026-04-27T00:00:00Z
 force_analyze_links: false
+link_analysis_version: "2"
 ---
 [Home](../index.md) > [Articles](./index.md)  
 # [🗓️🇵🇹💉✅🕊️ 20 years of Portuguese drug policy - developments, challenges and the quest for human rights](https://pmc.ncbi.nlm.nih.gov/articles/PMC8285857)  

@@ -7,12 +7,13 @@ URL: https://bagrounds.org/articles/learnings-from-two-years-of-using-ai-tools-f
 Author:
 tags:
 link_analysis_model: gemini-3.1-flash-lite-preview
-link_analysis_time: 2026-04-04T00:00:00Z
+link_analysis_time: 2026-04-20T00:00:00Z
 force_analyze_links: false
 updated: 2026-04-04T11:18:01
 image_date: 2026-04-13T16:37:11Z
 image_model: "@cf/black-forest-labs/flux-1-schnell"
 image_prompt: A split-composition illustration depicting the evolution of software development. On the left, a traditional wooden desk features a single keyboard and scattered technical blueprints, representing the past. On the right, the workspace transitions into a modern, minimalist glass desk where a glowing, translucent humanoid silhouette—a digital collaborator—hovers over a laptop. Streams of vibrant, interconnected data lines and geometric code structures flow between the human’s hands and the digital entity, symbolizing a seamless, symbiotic partnership. The color palette shifts from warm, earthy tones on the left to cool, electric blues and soft purples on the right. The background is a clean, abstract gradient that suggests a sense of depth and infinite digital potential without any text or characters.
+link_analysis_version: "2"
 ---
 [Home](../index.md) > [Articles](./index.md)  
 # [🤖👨‍💻📈⏳ Learnings from two years of using AI tools for software engineering](https://newsletter.pragmaticengineer.com/p/two-years-of-using-ai)  

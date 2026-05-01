@@ -10,8 +10,9 @@ Channel: The Sydney Morning Herald and The Age
 tags:
 youtube: https://youtu.be/93Y9DNFHws4
 link_analysis_model: gemini-3.1-flash-lite-preview
-link_analysis_time: 2026-04-08T00:00:00Z
+link_analysis_time: 2026-04-19T00:00:00Z
 force_analyze_links: false
+link_analysis_version: "2"
 ---
 [Home](../index.md) > [Videos](./index.md)  
 # 👹👀🇺🇸📉 The Big Short author Michael Lewis on what he thinks happens next with Trump and the USA  

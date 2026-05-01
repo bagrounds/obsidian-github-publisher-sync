@@ -9,6 +9,10 @@ Platform:
 Channel: PBS NewsHour
 tags:
 youtube: https://youtu.be/l9kSyaU2aQo
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_time: 2026-04-23T00:00:00Z
+force_analyze_links: false
+link_analysis_version: "2"
 ---
 [Home](../index.md) > [Videos](./index.md)  
 # 🇺🇸✂️🩺🤕 States face hard choices after major cuts to federal health care funding  

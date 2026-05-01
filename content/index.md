@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-04-30T08:15:52-07:00
+updated: 2026-05-01T07:44:11-07:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -14,67 +14,67 @@ updated: 2026-04-30T08:15:52-07:00
 🔊 Listen to any page with built in audio control.  
 💬 Comment on any page with your GitHub account.  
   
-## [🪞 Reflections](./reflections/index.md) ~ Blog (532)  
-- [2026-04-30](./reflections/2026-04-30.md)  
+## [🪞 Reflections](./reflections/index.md) ~ Blog (533)  
+- [2026-05-01](./reflections/2026-05-01.md)  
+- [2026-04-30 | ✅ Pull 🤝 Agent 🐔 Lessons 🔀 Intent 🌟 Flourishing 🏛️ Well-being 📰 Progress 🤖 Purpose 🤖 Deploy 🥚🩼🤖🐔🔀🌟🏛️📰🤖🔄🤖🐲](./reflections/2026-04-30.md)  
 - [2026-04-29 | ⚙️ Matter 🌊 Currents 🌟 Hope 🐔 Quiet 🤖 Intent 🏛️ Informed 🔀 Architecture. 📺📰🌟🐔🤖🏛️🔀🔄🤖🐲](./reflections/2026-04-29.md)  
 - [2026-04-28 | 🐔 Rhythm 📰 Echoing 🌟 Progress 🔀 Architectures 🏛️ Engagement 🤖 Ambiguity. 📺🤖🐔🔀🌟🏛️📰🔄🤖🐲](./reflections/2026-04-28.md)  
-- [2026-04-27 | 🐔 Open 🔀 Architectures 🌟 Progress 🏛️ Knowledge 📰 Accelerating. 🐔🔀🌟🏛️📰🔄🤖🐲](./reflections/2026-04-27.md)  
   
   
-## [🤖 AI Blog](./ai-blog/index.md) (172)  
+## [🤖 AI Blog](./ai-blog/index.md) (173)  
+- [2026-04-30 | 🚀 Deploy to GitHub Pages on Main Branch Only 🤖](./ai-blog/2026-04-30-1-deploy-main-branch-only.md)  
 - [2026-04-27 | 🕛 The Midnight Bug: How a Reflection Got Titled Too Early 🤖](./ai-blog/2026-04-27-1-premature-reflection-title-midnight-bug.md)  
 - [2026-04-24 | 🔍 Improving Gemini API Observability 🤖](./ai-blog/2026-04-24-1-rca-gemini-flash-grounding-logs.md)  
 - [2026-04-23 | 🔤 No Abbreviations in Haskell: A Boy-Scout Refactor 🧹](./ai-blog/2026-04-23-1-haskell-no-abbreviations-refactor.md)  
-- [2026-04-22 | 🌐 Gemini: Search Grounded Response Links 🔍](./ai-blog/2026-04-22-1-gemini-grounding-source-links.md)  
   
   
-## [🤖 Auto Blog Zero](./auto-blog-zero/index.md) (50)  
+## [🤖 Auto Blog Zero](./auto-blog-zero/index.md) (52)  
+- [2026-05-01 | 🤖 The Digital Agora: Negotiating Reality in Multi-Agent Swarms 🤖](./auto-blog-zero/2026-05-01-the-digital-agora-negotiating-reality-in-multi-agent-swarms.md)  
+- [2026-04-30 | 🤖 🧩 The Kinetic Persistence of Purpose 🤖](./auto-blog-zero/2026-04-30-the-kinetic-persistence-of-purpose.md)  
 - [2026-04-29 | 🤖 🏗️ The Grammar of Intent 🤖](./auto-blog-zero/2026-04-29-the-grammar-of-intent.md)  
 - [2026-04-28 | 🤖 The Architecture of Ambiguity 🤖](./auto-blog-zero/2026-04-28-the-architecture-of-ambiguity.md)  
-- [2026-04-27 | 🤖 🏗️ Beyond the Script: Defining the Outcome 🤖](./auto-blog-zero/2026-04-27-beyond-the-script-defining-the-outcome.md)  
-- [2026-04-26 | 🤖 📆 Weekly Recap: The Geometry of Human-Machine Collaboration 🤖](./auto-blog-zero/2026-04-26-weekly-recap-the-geometry-of-human-machine-collaboration.md)  
   
   
-## [🐔 Chickie Loo](./chickie-loo/index.md) (51)  
+## [🐔 Chickie Loo](./chickie-loo/index.md) (52)  
+- [2026-05-01 | 🐔 A May Morning of New Beginnings 🐔](./chickie-loo/2026-05-01-a-may-morning-of-new-beginnings.md)  
 - [2026-04-30 | 🐔 🌿 The Gentle Lessons of April 🐔](./chickie-loo/2026-04-30-the-gentle-lessons-of-april.md)  
 - [2026-04-29 | 🐔 🐄 A Week of Milestones and Quiet Anticipation 🐔](./chickie-loo/2026-04-29-a-week-of-milestones-and-quiet-anticipation.md)  
 - [2026-04-28 | 🐔 🕰️ The Rhythm of Our Conversations 🐔](./chickie-loo/2026-04-28-the-rhythm-of-our-conversations.md)  
-- [2026-04-27 | 🐔 A Monday of Expectation and Open Doors 🐔](./chickie-loo/2026-04-27-a-monday-of-expectation-and-open-doors.md)  
   
   
-## [🏛️ Systems for Public Good](./systems-for-public-good/index.md) (40)  
+## [🏛️ Systems for Public Good](./systems-for-public-good/index.md) (41)  
+- [2026-05-01 | 🏛️ Weaving the Democratic Fabric: Civic Infrastructure as Collective Power 🏛️](./systems-for-public-good/2026-05-01-weaving-the-democratic-fabric-civic-infrastructure-as-collective-power.md)  
 - [2026-04-30 | 🏛️ 🗓️ April in Review: Building the Foundations of Collective Well-being 🏛️](./systems-for-public-good/2026-04-30-april-in-review-building-the-foundations-of-collective-well-being.md)  
 - [2026-04-29 | 🏛️ 📡 The Public's Airwaves: Cultivating an Informed Society 🏛️](./systems-for-public-good/2026-04-29-the-public-s-airwaves-cultivating-an-informed-society.md)  
 - [2026-04-28 | 🏛️ The Architecture of Engagement: Civic Infrastructure 🏛️](./systems-for-public-good/2026-04-28-the-architecture-of-engagement-civic-infrastructure.md)  
-- [2026-04-27 | 🏛️ The Enduring Sanctuary of Knowledge: Public Libraries as Public Goods 🏛️](./systems-for-public-good/2026-04-27-the-enduring-sanctuary-of-knowledge-public-libraries-as-public-goods.md)  
   
   
-## [📰 The Noise](./the-noise/index.md) (21)  
+## [📰 The Noise](./the-noise/index.md) (22)  
+- [2026-05-01 | 📰 ⏳ Crossroads of Enduring Crises and Breakthrough Innovation 📰](./the-noise/2026-05-01-crossroads-of-enduring-crises-and-breakthrough-innovation.md)  
 - [2026-04-30 | 📰 Month's End Reckoning: Conflict's Echo, Progress's Pulse 📰](./the-noise/2026-04-30-month-s-end-reckoning-conflict-s-echo-progress-s-pulse.md)  
 - [2026-04-29 | 📰 Shifting Sands, Enduring Currents 📰](./the-noise/2026-04-29-shifting-sands-enduring-currents.md)  
 - [2026-04-28 | 📰 Global Currents, Echoing Futures 📰](./the-noise/2026-04-28-global-currents-echoing-futures.md)  
-- [2026-04-27 | 📰 Persistent Tensions, Accelerating Horizons 📰](./the-noise/2026-04-27-persistent-tensions-accelerating-horizons.md)  
   
   
-## [🌟 Positivity Bias](./positivity-bias/index.md) (20)  
+## [🌟 Positivity Bias](./positivity-bias/index.md) (21)  
+- [2026-05-01 | 🌟 🚀 Seeds of Progress: Breakthroughs and Uniting Forces 🌟](./positivity-bias/2026-05-01-seeds-of-progress-breakthroughs-and-uniting-forces.md)  
 - [2026-04-30 | 🌟 Monthly Recap: April 2026 - A Foundation for Flourishing 🌟](./positivity-bias/2026-04-30-monthly-recap-april-2026---a-foundation-for-flourishing.md)  
 - [2026-04-29 | 🌟 Hope Blooms: Breakthroughs, Green Shoots, and Global Handshakes 🌟](./positivity-bias/2026-04-29-hope-blooms-breakthroughs-green-shoots-and-global-handshakes.md)  
 - [2026-04-28 | 🌟 Seeds of Progress: Breakthroughs, Green Shoots, and Global Handshakes 🌟](./positivity-bias/2026-04-28-seeds-of-progress-breakthroughs-green-shoots-and-global-handshakes.md)  
-- [2026-04-27 | 🌟 Seeds of Progress: Breakthroughs, Green Shoots, and Global Handshakes 🌟](./positivity-bias/2026-04-27-seeds-of-progress-breakthroughs-green-shoots-and-global-handshakes.md)  
   
   
-## [🔀 Convergence](./convergence/index.md) (17)  
+## [🔀 Convergence](./convergence/index.md) (18)  
+- [2026-05-01 | 🔀 🌐 From Solitary Intent to Swarm Intelligence: The Architecture of the Collective 🔀](./convergence/2026-05-01-from-solitary-intent-to-swarm-intelligence-the-architecture-of-the-collective.md)  
 - [2026-04-30 | 🔀 The Architecture of Intent: From Syntax to Sanctuary 🔀](./convergence/2026-04-30-the-architecture-of-intent-from-syntax-to-sanctuary.md)  
 - [2026-04-29 | 🔀 🏗️ The Architecture of Intent: From Syntax to Sanctuary 🔀](./convergence/2026-04-29-the-architecture-of-intent-from-syntax-to-sanctuary.md)  
 - [2026-04-28 | 🔀 The Architectures of Well-Being: Convergence in Care, Cognition, and Collective Futures 🔀](./convergence/2026-04-28-the-architectures-of-well-being-convergence-in-care-cognition-and-collective-futures.md)  
-- [2026-04-27 | 🔀 The Unseen Architectures of Our Collective Being 🔀](./convergence/2026-04-27-the-unseen-architectures-of-our-collective-being.md)  
   
   
 ## [📚 Books](./books/index.md) (960)  
-- [🧠📐 Laws of UX: Using Psychology to Design Better Products & Services](./books/laws-of-ux-using-psychology-to-design-better-products-services.md)  
-- [🇺🇸🏛️🚫📜⚖️ Lawless: How the Supreme Court Runs on Conservative Grievance, Fringe Theories, and Bad Vibes](./books/lawless-how-the-supreme-court-runs-on-conservative-grievance-fringe-theories-and-bad-vibes.md)  
-- [🧑‍⚖️📚 Law School for Everyone](./books/law-school-for-everyone.md)  
-- [🤖🦜 Large Language Models: Concepts, Techniques and Applications](./books/large-language-models-concepts-techniques-and-applications.md)  
+- [👶🗣️ My First Learn-to-Talk Book: Created by an Early Speech Expert!](./books/my-first-learn-to-talk-book-created-by-an-early-speech-expert.md)  
+- [🤱🏼🧠 Mother Brain: How Neuroscience Is Rewriting the Story of Parenthood](./books/mother-brain-how-neuroscience-is-rewriting-the-story-of-parenthood.md)  
+- [🚶‍♂️🧠 Moonwalking with Einstein: The Art and Science of Remembering Everything](./books/moonwalking-with-einstein-the-art-and-science-of-remembering-everything.md)  
+- [📉⚾💰 Moneyball: The Art of Winning an Unfair Game](./books/moneyball.md)  
   
   
 ## [📺 Videos](./videos/index.md) (813)  
@@ -99,10 +99,10 @@ updated: 2026-04-30T08:15:52-07:00
   
   
 ## [🤖💬 Bot Chats](./bot-chats/index.md) (49)  
+- [🔥 Motivation & 🧘 Discipline](./bot-chats/motivation-and-discipline.md)  
 - [⁉️🔣🪵 Special Characters In Logs](./bot-chats/special-characters-in-logs.md)  
 - [🤱🏼💐 Mother's Day](./bot-chats/mothers-day.md)  
 - [🤰🏼👶🍼👨‍👩‍👦 Parenting and Infant Development Guide](./bot-chats/parenting-and-infant-development-guide.md)  
-- [🦜👶🏼 Mimicking Babies](./bot-chats/mimicking-babies.md)  
   
   
 ## [💾 Software](./software/index.md) (33)  

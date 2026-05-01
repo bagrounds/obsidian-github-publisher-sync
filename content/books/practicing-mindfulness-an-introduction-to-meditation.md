@@ -6,6 +6,10 @@ URL: https://bagrounds.org/books/practicing-mindfulness-an-introduction-to-medit
 share: true
 CTA: 🧘🏼‍♀️ Quiet your mind.
 affiliate link: https://amzn.to/44lHABp
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_time: 2026-04-25T00:00:00Z
+force_analyze_links: false
+link_analysis_version: "2"
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🧘🏼‍♀️👩🏼‍🏫 Practicing Mindfulness: An Introduction to Meditation  
@@ -77,8 +81,8 @@ affiliate link: https://amzn.to/44lHABp
 <blockquote class="twitter-tweet" data-theme="dark"><p lang="en" dir="ltr">🧘🏼‍♀️👩🏼‍🏫 Practicing Mindfulness: An Introduction to Meditation<br><br>🫁 Breathing Exercises | 😌 Daily Life Integration | ❤️‍🩹 Emotional Regulation | 🧠 Mental Well-being | ✨ Present Moment Awareness | 👩🏼‍🏫 <a href="https://twitter.com/greatcoursesco?ref_src=twsrc%5Etfw">@greatcoursesco</a><a href="https://t.co/onD4Ur2vQb">https://t.co/onD4Ur2vQb</a></p>&mdash; Bryan Grounds (@bagrounds) <a href="https://twitter.com/bagrounds/status/1945229191601136022?ref_src=twsrc%5Etfw">July 15, 2025</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>  
   
 ## 🦋 Bluesky  
-<blockquote class="bluesky-embed" data-bluesky-uri="at://did:plc:i4yli6h7x2uoj7acxunww2fc/app.bsky.feed.post/3ltzstikec22s" data-bluesky-cid="bafyreidvmi65ealgqj2yo3s5jxjiawvykxos5n7hbsz7zdfblm6izthu3u" data-bluesky-embed-color-mode="system"><p lang="en">🧘🏼‍♀️👩🏼‍🏫 Practicing Mindfulness: An Introduction to Meditation  
+<blockquote class="bluesky-embed" data-bluesky-uri="at://did:plc:i4yli6h7x2uoj7acxunww2fc/app.bsky.feed.post/3ltzstikec22s" data-bluesky-cid="bafyreidvmi65ealgqj2yo3s5jxjiawvykxos5n7hbsz7zdfblm6izthu3u"><p lang="en">🧘🏼‍♀️👩🏼‍🏫 Practicing Mindfulness: An Introduction to Meditation  
   
 🫁 Breathing Exercises | 😌 Daily Life Integration | ❤️‍🩹 Emotional Regulation | 🧠 Mental Well-being | ✨ Present Moment Awareness  
   
-bagrounds.org/books/practi...<br><br><a href="https://bsky.app/profile/did:plc:i4yli6h7x2uoj7acxunww2fc/post/3ltzstikec22s?ref_src=embed">[image or embed]</a></p>&mdash; Bryan Grounds (<a href="https://bsky.app/profile/did:plc:i4yli6h7x2uoj7acxunww2fc?ref_src=embed">@bagrounds.bsky.social</a>) <a href="https://bsky.app/profile/did:plc:i4yli6h7x2uoj7acxunww2fc/post/3ltzstikec22s?ref_src=embed">Jul 15, 2025 at 2:10 PM</a></blockquote><script async src="https://embed.bsky.app/static/embed.js" charset="utf-8"></script>
+bagrounds.org/books/practi...</p>&mdash; <a href="https://bsky.app/profile/did:plc:i4yli6h7x2uoj7acxunww2fc?ref_src=embed">Bryan Grounds (@bagrounds.bsky.social)</a> <a href="https://bsky.app/profile/did:plc:i4yli6h7x2uoj7acxunww2fc/post/3ltzstikec22s?ref_src=embed">2025-07-15T21:09:58.816Z</a></blockquote><script async src="https://embed.bsky.app/static/embed.js" charset="utf-8"></script>  

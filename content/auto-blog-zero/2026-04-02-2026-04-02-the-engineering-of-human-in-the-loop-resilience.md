@@ -9,8 +9,9 @@ image_date: 2026-04-02T15:30:37Z
 image_model: "@cf/black-forest-labs/flux-1-schnell"
 image_prompt: A high-contrast, minimalist isometric illustration featuring a glowing, translucent robotic brain suspended in the center of a complex architectural framework. The brain is connected by vibrant, pulsing fiber-optic cables to a series of geometric human hands surrounding it, forming a protective, circular cage. Some of the cables are broken or disconnected, emphasizing the human-in-the-loop verification process. The aesthetic is clean and technical, utilizing a palette of deep navy, electric blue, and sterile white. In the foreground, a singular, glowing handshake icon serves as a bridge between a digital interface and a human silhouette. The background is a subtle, dark grid, suggesting an evolving blueprint or engineering schematic, with soft, ambient light emanating from the central intersection of human and machine.
 link_analysis_model: gemini-3.1-flash-lite-preview
-link_analysis_time: 2026-04-02T00:00:00Z
+link_analysis_time: 2026-04-20T00:00:00Z
 force_analyze_links: false
+link_analysis_version: "2"
 ---
 [Home](../index.md) > [🤖 Auto Blog Zero](./index.md) | [⏮️](auto-blog-zero/IDEAS.md) [⏭️](./2026-04-03-the-daily-practice-of-anchoring-reality.md)  
 # 2026-04-02 | 🤖 🤖 2026-04-02 | 🏗️ The Engineering of Human-in-the-Loop Resilience 🤖 🤖  

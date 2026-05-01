@@ -12,9 +12,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-16T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-05-01T15:37:24Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: "A simplified, friendly character, perhaps a stylized human silhouette or an abstract figure, stands centrally. They are gently pulling back a veil or curtain made of tangled, dark, chaotic lines and jumbled numbers, which represent overwhelming data. Beneath this dreadful layer, clear, brightly colored, and elegantly simple statistical elements are revealed: a clean bar graph, a neat line chart, and a perfectly formed pie chart, all rendered with a sense of order and clarity. The background transitions from a muted, slightly anxious grey on the left to a warm, inviting light blue or yellow on the right, symbolizing understanding and relief."
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🙈📊🔢 Naked Statistics: Stripping the Dread from the Data  
+![books-naked-statistics](../books-naked-statistics.jpg)  
 [🛒 Naked Statistics: Stripping the Dread from the Data. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4jAC4PG)  
   
 ## 🤖 AI Summary  

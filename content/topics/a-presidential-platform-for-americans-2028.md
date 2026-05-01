@@ -8,8 +8,9 @@ image_date: 2026-04-08T18:35:17Z
 image_model: "@cf/black-forest-labs/flux-1-schnell"
 image_prompt: A vibrant, high-angle illustration of a modern, thriving American cityscape integrated with lush green spaces. At the center, a diverse group of people—construction workers, teachers, parents, and engineers—are collaborating around a glowing, translucent architectural blueprint of a community hub. The horizon features clean, renewable energy infrastructure like wind turbines and vertical gardens. The color palette is bright and optimistic, dominated by soft blues, warm golds, and vibrant greens. Sunlight streams through clouds, casting a hopeful, cinematic glow over the scene, symbolizing progress, civic unity, and renewed infrastructure. The overall aesthetic is clean, digital, and professional, blending high-tech innovation with organic, human-centric design.
 link_analysis_model: gemini-3.1-flash-lite-preview
-link_analysis_time: 2026-04-08T00:00:00Z
+link_analysis_time: 2026-04-18T00:00:00Z
 force_analyze_links: false
+link_analysis_version: "2"
 ---
 [Home](../index.md) > [Topics](./index.md)  
 # 🇺🇸🗣️💡🗓️ A Presidential Platform for Americans 2028  

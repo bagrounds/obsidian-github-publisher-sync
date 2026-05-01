@@ -10,8 +10,9 @@ Channel: The Bulwark
 tags:
 youtube: https://youtube.com/watch?v=vp1xD3bcFo4
 link_analysis_model: gemini-3.1-flash-lite-preview
-link_analysis_time: 2026-04-04T00:00:00Z
+link_analysis_time: 2026-04-25T00:00:00Z
 force_analyze_links: false
+link_analysis_version: "2"
 ---
 [Home](../index.md) > [Videos](./index.md) | [🏛️🇺🇸📖 Heather Cox Richardson](../people/heather-cox-richardson.md)  
 # 🧠📉⚠️ Heather Cox Richardson: Trump Is Mentally Crumbling—But Still Dangerous | The Bulwark Podcast  

@@ -9,6 +9,10 @@ Platform:
 Channel: Hank Green
 tags:
 youtube: https://youtu.be/UtBa6BM-2OE
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_time: 2026-04-24T00:00:00Z
+force_analyze_links: false
+link_analysis_version: "2"
 ---
 [Home](../index.md) > [Videos](./index.md)  
 # 📊📈📉📃👁️ 10 Charts to Understand the 900 Page Budget Bill  

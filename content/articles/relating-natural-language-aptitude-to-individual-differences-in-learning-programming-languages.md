@@ -7,8 +7,9 @@ URL: https://bagrounds.org/articles/relating-natural-language-aptitude-to-indivi
 Author:
 tags:
 link_analysis_model: gemini-3.1-flash-lite-preview
-link_analysis_time: 2026-04-05T00:00:00Z
+link_analysis_time: 2026-04-27T00:00:00Z
 force_analyze_links: false
+link_analysis_version: "2"
 ---
 [Home](../index.md) > [Articles](./index.md)  
 # [🗣️🧠🧑‍💻📚 Relating Natural Language Aptitude to Individual Differences in Learning Programming Languages](https://www.nature.com/articles/s41598-020-60661-8)  

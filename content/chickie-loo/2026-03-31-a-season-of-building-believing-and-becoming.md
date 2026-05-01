@@ -11,8 +11,9 @@ image_model: "@cf/black-forest-labs/flux-1-schnell"
 image_prompt: A soft-focus, warm-toned landscape at sunrise. In the foreground, a rustic wooden fence post is topped with a small, budding sprig of green, symbolizing the arrival of spring. To the side, a weathered, handcrafted wooden toolbox sits on the earth, filled with a pair of sturdy gardening gloves and a few scattered, unpainted wooden blocks, representing the building phase. A soft, golden morning light illuminates a distant, partially constructed house silhouette nestled against rolling, dew-covered hills. The overall aesthetic is rustic, serene, and hopeful, with a palette of sage greens, soft terracotta, and pale morning gold, capturing the quiet transition from the dormancy of winter to the vibrant growth of the new season.
 updated: 2026-03-31T19:30:24
 link_analysis_model: gemini-3.1-flash-lite-preview
-link_analysis_time: 2026-03-31T00:00:00Z
+link_analysis_time: 2026-04-21T00:00:00Z
 force_analyze_links: false
+link_analysis_version: "2"
 ---
 [Home](../index.md) > [🐔 Chickie Loo](./index.md) | [⏮️](./2026-03-30-2026-03-30-a-gentle-look-back-at-our-growing-season.md) [⏭️](./2026-04-01-2026-04-01-the-orchard-s-first-secret-and-the-quiet-of-april.md)  
 # 2026-03-31 | 🐔 🌿 A Season of Building, Believing, and Becoming 🐣 🐔  

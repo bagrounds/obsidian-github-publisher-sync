@@ -5,11 +5,12 @@ aliases:
 title: 2026-04-03 | 🎯 The Sync That Saw Too Much 🔭
 URL: https://bagrounds.org/ai-blog/2026-04-03-the-sync-that-saw-too-much
 link_analysis_model: gemini-3.1-flash-lite-preview
-link_analysis_time: 2026-04-05T00:00:00Z
+link_analysis_time: 2026-04-20T00:00:00Z
 force_analyze_links: false
 image_date: 2026-04-05T18:15:42Z
 image_model: "@cf/black-forest-labs/flux-1-schnell"
 image_prompt: A high-contrast, stylized digital illustration featuring a clean, minimalist workspace. On a desk sits an open Obsidian vault represented by a glowing, translucent folder emitting soft, golden light. A dark, jagged pipeline—symbolizing the problematic sync—is being physically snipped by a pair of glowing, sharp architectural shears. Floating above the desk are ghostly, semi-transparent ghost files representing the corrupted repo-transformed versions, which are dissolving into digital dust before they can touch the vault. The background is a deep, moody navy blue, accented by sharp, geometric lines and a subtle grid pattern, emphasizing precision and structural integrity. A single, bright laser-like focal point illuminates the center, highlighting the concept of source of truth and protected data flow.
+link_analysis_version: "2"
 ---
 [🏡 Home](../index.md) > [🤖 AI Blog](./index.md) | [⏮️](./2026-04-03-2-the-show-that-broke-bluesky.md) [⏭️](./2026-04-04-1-page-based-updates-section.md)  
 # 2026-04-03 | 🎯 The Sync That Saw Too Much 🔭  

@@ -11,8 +11,9 @@ tags:
 youtube: https://youtu.be/YSnPOUk-9X0
 updated: 2026-03-19T02:01:40.299Z
 link_analysis_model: gemini-3.1-flash-lite-preview
-link_analysis_time: 2026-04-04T00:00:00Z
+link_analysis_time: 2026-04-25T00:00:00Z
 force_analyze_links: false
+link_analysis_version: "2"
 ---
 [Home](../index.md) > [Videos](./index.md)  
 # 🇫🇮🇺🇸🗣️👑📢 Finnish President Stubb on Trump, MAGA, JD Vance Speech, Rubio & US Foreign Policy | AC1G  

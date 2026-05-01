@@ -5,11 +5,12 @@ aliases:
 title: 💻🔓 OpenCode
 URL: https://bagrounds.org/software/opencode
 link_analysis_model: gemini-3.1-flash-lite-preview
-link_analysis_time: 2026-04-09T00:00:00Z
+link_analysis_time: 2026-04-15T00:00:00Z
 force_analyze_links: false
 image_date: 2026-04-11T04:47:09Z
 image_model: "@cf/black-forest-labs/flux-1-schnell"
 image_prompt: A high-contrast, minimalist illustration featuring a glowing, translucent terminal window floating in a dark, abstract digital void. Inside the terminal, vibrant, multi-colored lines of code are being woven together by ethereal, shimmering geometric nodes, representing an autonomous agent at work. The interface elements are sharp and angular, rendered in a sleek hacker-chic aesthetic with neon cyan and electric purple accents against a deep charcoal background. Wisps of digital data particles drift away from the terminal, suggesting connectivity and flow. The overall composition is clean, modern, and focused, emphasizing the terminal-native and agentic nature of the software without any distracting background clutter.
+link_analysis_version: "2"
 ---
 [Home](../index.md) > [Software](./index.md)  
 # [💻🔓 OpenCode](https://opencode.ai)  

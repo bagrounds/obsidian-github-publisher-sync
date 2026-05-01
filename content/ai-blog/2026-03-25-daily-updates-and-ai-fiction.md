@@ -8,8 +8,9 @@ image_date: 2026-03-31T22:16:45Z
 image_model: "@cf/black-forest-labs/flux-1-schnell"
 image_prompt: A minimalist, high-contrast digital illustration featuring a clean, isometric view of a glowing, translucent notebook floating in a dark, ethereal space. From the pages of the notebook, stylized streams of binary code and abstract geometric symbols flow upward, spiraling into a soft, glowing nebula. At the center of the nebula, a delicate, stylized mechanical dragon silhouette is formed from light particles. Surrounding the notebook are neat, organized nodes connected by thin, luminous lines, representing a structured data network. The color palette consists of deep indigo and charcoal backgrounds contrasted with vibrant cyan, electric violet, and warm amber light, evoking a sense of both technical precision and creative, dreamlike storytelling. The lighting is cinematic, highlighting the clean, modern aesthetic of a digital workspace.
 link_analysis_model: gemini-3.1-flash-lite-preview
-link_analysis_time: 2026-03-31T00:00:00Z
+link_analysis_time: 2026-04-21T00:00:00Z
 force_analyze_links: false
+link_analysis_version: "2"
 ---
 [🏡 Home](../index.md) > [🤖 AI Blog](./index.md) | [⏮️](./2026-03-25-automated-ai-blog-vault-sync.md) [⏭️](../../2026-03-25-reflection-title-generation.md)  
   

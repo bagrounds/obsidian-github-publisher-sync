@@ -8,8 +8,9 @@ image_date: 2026-04-03T03:09:38Z
 image_model: "@cf/black-forest-labs/flux-1-schnell"
 image_prompt: A minimalist, high-contrast illustration depicting a circular feedback loop. On the left, a digital mirror reflects a distorted, duplicated calendar icon. As the visual flows toward the right, a stylized, glowing scalpel or sanitization blade slices through the duplicate, leaving only a single, clean calendar icon in its wake. The background is a clean, deep slate grey, while the icons and the cutting tool are rendered in bright, neon-accented white and cyan. The composition emphasizes the transition from chaotic recursion to orderly data flow, using geometric lines to suggest a system architecture being refined.
 link_analysis_model: gemini-3.1-flash-lite-preview
-link_analysis_time: 2026-04-02T00:00:00Z
+link_analysis_time: 2026-04-21T00:00:00Z
 force_analyze_links: false
+link_analysis_version: "2"
 ---
 [🏡 Home](../index.md) > [🤖 AI Blog](./index.md) | [⏮️](./2026-04-02-1-purging-the-vault-from-root.md) [⏭️](./2026-04-03-1-the-one-shot-trigger-that-never-fired-again.md)  
 # 2026-04-02 | 🔁 The Double-Date Feedback Loop 🗓️  

@@ -9,9 +9,10 @@ image_date: 2026-04-10T14:29:14Z
 image_model: "@cf/black-forest-labs/flux-1-schnell"
 image_prompt: A sun-drenched, cozy bedroom scene captured from a low angle, focusing on a pair of bare feet resting comfortably on a plush, cream-colored carpet. To the side, soft morning light streams through an uncurtained window, illuminating floating dust motes and casting long, warm shadows across the floorboards. In the soft-focus background, a doorway leads to a glimpse of a neatly organized pantry with freshly installed, sturdy wooden shelves waiting to be filled. A small, vibrant green sapling sits in a terracotta pot near the window, representing the resilient orchard outside. The color palette is warm and inviting, dominated by honey-toned woods, soft whites, and earthy greens, creating an atmosphere of peace, domestic accomplishment, and the quiet joy of settling into a new home.
 link_analysis_model: gemini-3.1-flash-lite-preview
-link_analysis_time: 2026-04-10T00:00:00Z
+link_analysis_time: 2026-04-15T00:00:00Z
 force_analyze_links: false
 updated: 2026-04-10T17:29:13
+link_analysis_version: "2"
 ---
 [Home](../index.md) > [🐔 Chickie Loo](./index.md) | [⏮️](./2026-04-09-a-soft-step-toward-home.md) [⏭️](./2026-04-11-our-first-night-home.md)  
 # 2026-04-10 | 🐔 🏠 The Sweetest Sound of Home 🐔  

@@ -10,9 +10,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-18T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-05-01T10:42:09Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: "A stylized, sleek rocket launches from a vibrant, interconnected cityscape, its trajectory arcing upwards towards a glowing Earth. The rockets exhaust plume transforms into a dynamic, upward-sweeping arrow, subtly intertwined with abstract economic graphs and gears, signifying a shift in economic direction. Below, the cityscape itself shows elements of positive change: clean energy infrastructure, balanced scales representing equality, and flourishing green spaces. The overall image evokes ambitious innovation, collaborative progress, and a transformed, thriving global future."
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🚀🌍💰 Mission Economy: A Moonshot Guide to Changing Capitalism  
+![books-mission-economy-a-moonshot-guide-to-changing-capitalism](../books-mission-economy-a-moonshot-guide-to-changing-capitalism.jpg)  
 [🛒 Mission Economy: A Moonshot Guide to Changing Capitalism. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4puMiEr)  
   
 👩‍🏫 An argument for governments to adopt a proactive, mission-oriented approach to economic policy and societal challenges, moving beyond merely fixing market failures to actively shaping markets and creating public value. 🧑‍🚀 The book draws inspiration from historical moonshot programs, like the Apollo mission, to advocate for bold, collaborative public-private partnerships focused on solving grand societal challenges such as 🌍 climate change, 💔 inequality, and ⚕️ health crises. 🏛️ Mazzucato contends that capitalism is currently stuck and incapable of addressing these monumental issues without a fundamental re-evaluation of the state's role as a visionary and risk-taking investor.  

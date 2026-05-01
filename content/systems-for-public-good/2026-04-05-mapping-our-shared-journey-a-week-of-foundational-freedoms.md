@@ -9,9 +9,10 @@ image_date: 2026-04-05T16:17:47Z
 image_model: "@cf/black-forest-labs/flux-1-schnell"
 image_prompt: "A top-down, isometric illustration of a vibrant, interconnected community map. The scene features miniature, stylized structures representing the week’s themes: a cozy housing complex with a communal garden, a bright childcare center with a playground, a digital hub with fiber-optic nodes, and a lush park space where people gather. These elements are connected by winding, glowing paths that weave together like threads in a tapestry, symbolizing the shared journey. The color palette uses soft, warm earth tones—greens, terracottas, and blues—to evoke stability and growth. The overall aesthetic is clean, modern, and optimistic, utilizing soft, diffused lighting to create a sense of harmony and collective well-being. A faint, architectural grid overlay subtly suggests planning and foundational structure without cluttering the serene, inviting landscape."
 link_analysis_model: gemini-3.1-flash-lite-preview
-link_analysis_time: 2026-04-05T00:00:00Z
+link_analysis_time: 2026-04-19T00:00:00Z
 force_analyze_links: false
 updated: 2026-04-06T07:56:54
+link_analysis_version: "2"
 ---
 [Home](../index.md) > [🏛️ Systems for Public Good](./index.md) | [⏮️](./2026-04-04-cultivating-connection-social-health-as-a-public-good.md) [⏭️](./2026-04-06-educating-for-a-shared-future-beyond-the-k-12-horizon.md)  
 # 2026-04-05 | 🏛️ 🗺️ Mapping Our Shared Journey: A Week of Foundational Freedoms 🏛️  

@@ -8,8 +8,9 @@ image_date: 2026-03-31T21:22:06Z
 image_model: "@cf/black-forest-labs/flux-1-schnell"
 image_prompt: A clean, isometric-style illustration featuring a glowing digital loop. On one side, a stylized open notebook representing an Obsidian vault, and on the other, a sleek cloud server icon representing a GitHub repository. A vibrant, flowing stream of interconnected nodes and data lines bridges the two, forming a circular, infinite-loop path. The color palette uses deep navy, electric cyan, and soft white, evoking a sense of automated precision and modern software architecture. The composition is balanced and minimalist, emphasizing the seamless synchronization between the two systems without any clutter.
 link_analysis_model: gemini-3.1-flash-lite-preview
-link_analysis_time: 2026-03-31T00:00:00Z
+link_analysis_time: 2026-04-21T00:00:00Z
 force_analyze_links: false
+link_analysis_version: "2"
 ---
 [🏡 Home](../index.md) > [🤖 AI Blog](./index.md) | [⏮️](../../2026-03-24-steady-drip-backfilling.md) [⏭️](./2026-03-25-daily-updates-and-ai-fiction.md)  
   

@@ -7,12 +7,13 @@ share: true
 affiliate link: https://amzn.to/4kb2xUk
 CTA: 🤯 Comprehend the artifice.
 link_analysis_model: gemini-3.1-flash-lite-preview
-link_analysis_time: 2026-04-08T00:00:00Z
+link_analysis_time: 2026-04-18T00:00:00Z
 force_analyze_links: false
 updated: 2026-04-09T01:43:08
 image_date: 2026-04-13T07:39:52Z
 image_model: "@cf/black-forest-labs/flux-1-schnell"
 image_prompt: A shadowy, high-contrast illustration featuring a vintage office desk illuminated by a single, harsh desk lamp. On the desk sits an open, worn manila folder spilling out scattered, grainy documents. A magnifying glass rests atop the papers, focusing on a distorted, shadowy diagram that hints at industrial piping or architectural blueprints. In the background, the soft, out-of-focus silhouette of a nuclear cooling tower looms against a dark, moody cityscape. The color palette is restricted to deep charcoal, muted slate blue, and sharp, piercing highlights of amber light, evoking a sense of clandestine investigation, political intrigue, and the cold, mechanical nature of manufactured deception. The overall aesthetic is cinematic, noir-inspired, and intellectually tense.
+link_analysis_version: "2"
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🏭☢️😱 Manufactured Crisis: The Untold Story of the Iran Nuclear Scare  

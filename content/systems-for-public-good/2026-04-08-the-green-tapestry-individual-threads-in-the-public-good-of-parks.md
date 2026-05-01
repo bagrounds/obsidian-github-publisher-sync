@@ -9,9 +9,10 @@ image_date: 2026-04-08T20:21:39Z
 image_model: "@cf/black-forest-labs/flux-1-schnell"
 image_prompt: "An intricate, top-down illustration of a vibrant public park, designed like a stylized tapestry. The scene features a variety of people - diverse in age and background - engaged in different acts of stewardship: planting native flowers, maintaining a trail, and walking along a meandering path. The park is depicted as a lush, green ecosystem with winding water features, dense clusters of trees, and diverse flora. The style uses clean, modern vector lines with a rich, earthy color palette of forest greens, terracotta, and sky blues. The composition emphasizes interconnectedness, showing how individual actions weave together to form a cohesive, thriving landscape. The overall aesthetic is optimistic, communal, and grounded in the concept of real wealth and collective environmental care."
 link_analysis_model: gemini-3.1-flash-lite-preview
-link_analysis_time: 2026-04-08T00:00:00Z
+link_analysis_time: 2026-04-18T00:00:00Z
 force_analyze_links: false
 updated: 2026-04-08T21:27:58
+link_analysis_version: "2"
 ---
 [Home](../index.md) > [🏛️ Systems for Public Good](./index.md) | [⏮️](./2026-04-07-nature-s-embrace-public-parks-as-a-universal-right.md) [⏭️](./2026-04-09-investing-in-lifelong-learning-beyond-the-k-12-horizon-revisited.md)  
 # 2026-04-08 | 🏛️ 🌳 The Green Tapestry: Individual Threads in the Public Good of Parks 🏛️  

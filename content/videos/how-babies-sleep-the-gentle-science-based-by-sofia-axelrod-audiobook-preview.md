@@ -10,8 +10,9 @@ Channel: Google Play Books
 tags:
 youtube: https://youtu.be/qFc7Z0Npa-E
 link_analysis_model: gemini-3.1-flash-lite-preview
-link_analysis_time: 2026-04-11T00:00:00Z
+link_analysis_time: 2026-04-28T00:00:00Z
 force_analyze_links: false
+link_analysis_version: "2"
 ---
 [Home](../index.md) > [Videos](./index.md) | [👶😴 How Babies Sleep: The Gentle, Science-Based Method to Help Your Baby Sleep Through the Night](../books/how-babies-sleep-the-gentle-science-based-method-to-help-your-baby-sleep-through-the-night.md)  
 # 😴👶🧪 How Babies Sleep: The Gentle, Science-Based… by Sofia Axelrod · Audiobook preview  

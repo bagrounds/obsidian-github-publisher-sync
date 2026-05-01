@@ -7,11 +7,12 @@ share: true
 CTA: 💎 Embrace possibility.
 updated: 2026-03-12T06:18:43.764Z
 link_analysis_model: gemini-3.1-flash-lite-preview
-link_analysis_time: 2026-04-05T00:00:00Z
+link_analysis_time: 2026-04-20T00:00:00Z
 force_analyze_links: false
 image_date: 2026-04-16T22:21:29Z
 image_model: "@cf/black-forest-labs/flux-1-schnell"
 image_prompt: A surreal, split-composition illustration contrasting two ways of existence. On the left side, a rigid, geometric landscape features a golden trophy atop a pyramid of stone blocks, surrounded by sharp, dark iron fences that define clear boundaries. The colors are muted grays and browns, evoking a sense of finality and static structure. On the right side, the scene transitions into a vibrant, fluid environment. A glowing Möbius strip weaves through a lush, colorful forest where the paths have no beginning or end. The ground is composed of soft, swirling gradients of light, and floating geometric shapes—circles, triangles, and spheres—interact playfully in mid-air. The overall aesthetic is ethereal and expansive, using warm, hopeful colors like gold, azure, and soft violet to represent the endless, evolving nature of infinite play.
+link_analysis_version: "2"
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🎲♾️ Finite and Infinite Games: A Vision of Life as Play and Possibility  

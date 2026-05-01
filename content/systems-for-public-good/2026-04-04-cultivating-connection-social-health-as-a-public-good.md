@@ -9,9 +9,10 @@ image_date: 2026-04-04T16:14:06Z
 image_model: "@cf/black-forest-labs/flux-1-schnell"
 image_prompt: A soft, warm-toned illustration depicting a vibrant community garden in an urban setting. In the foreground, a diverse group of people of varying ages are gathered around a wooden table sharing a meal, emphasizing connection. The background features lush raised garden beds, a small community library kiosk, and a winding, accessible pathway leading toward a park. The art style is clean and modern, using a palette of earthy greens, terracotta, and soft sunlight to convey growth, abundance, and human warmth. The architecture is human-scaled and inviting, blending greenery with subtle urban infrastructure like benches and solar-powered lanterns, visually representing the intersection of social health, public space, and food security.
 link_analysis_model: gemini-3.1-flash-lite-preview
-link_analysis_time: 2026-04-04T00:00:00Z
+link_analysis_time: 2026-04-20T00:00:00Z
 force_analyze_links: false
 updated: 2026-04-04T23:18:35
+link_analysis_version: "2"
 ---
 [Home](../index.md) > [🏛️ Systems for Public Good](./index.md) | [⏮️](./2026-04-03-connecting-every-corner-bridging-the-digital-divide-s-last-mile.md) [⏭️](./2026-04-05-mapping-our-shared-journey-a-week-of-foundational-freedoms.md)  
 # 2026-04-04 | 🏛️ 🤝 Cultivating Connection: Social Health as a Public Good 🏛️  

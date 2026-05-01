@@ -7,8 +7,9 @@ share: true
 CTA: 💡 Understand economic oddities.
 affiliate link: https://amzn.to/4pUzK9X
 link_analysis_model: gemini-3.1-flash-lite-preview
-link_analysis_time: 2026-04-07T00:00:00Z
+link_analysis_time: 2026-04-22T00:00:00Z
 force_analyze_links: false
+link_analysis_version: "2"
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🏆🤯💰 The Winner's Curse: Paradoxes and Anomalies of Economic Life  

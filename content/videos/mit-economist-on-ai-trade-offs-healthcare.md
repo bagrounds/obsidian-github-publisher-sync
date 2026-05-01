@@ -10,8 +10,9 @@ Channel: MIT OpenCourseWare
 tags:
 youtube: https://youtu.be/dLg9MK1hv2Y
 link_analysis_model: gemini-3.1-flash-lite-preview
-link_analysis_time: 2026-04-11T00:00:00Z
+link_analysis_time: 2026-04-28T00:00:00Z
 force_analyze_links: false
+link_analysis_version: "2"
 ---
 [Home](../index.md) > [Videos](./index.md)  
 # 👨‍💼🤖📈⚕️ MIT Economist on AI, Trade-Offs & Healthcare  

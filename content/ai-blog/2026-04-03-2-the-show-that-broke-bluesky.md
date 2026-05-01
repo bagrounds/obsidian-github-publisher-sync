@@ -8,8 +8,9 @@ image_date: 2026-04-05T17:16:35Z
 image_model: "@cf/black-forest-labs/flux-1-schnell"
 image_prompt: A high-contrast, macro-style illustration featuring a sleek, minimalist blue butterfly perched on a tangled, messy nest of glowing, glitchy computer code. The code is rendered as thin, luminous lines of light in shades of electric cyan and white. A single, dark, oversized escape character—a prominent backslash—is suspended in the air above the butterfly, casting a long, distorted shadow across the digital landscape. The background is a deep, moody navy blue, representing the void or empty metadata state. The overall aesthetic is clean and modern, blending biological elegance with the sharp, clinical tension of a software debugging session.
 link_analysis_model: gemini-3.1-flash-lite-preview
-link_analysis_time: 2026-04-05T00:00:00Z
+link_analysis_time: 2026-04-20T00:00:00Z
 force_analyze_links: false
+link_analysis_version: "2"
 ---
 [🏡 Home](../index.md) > [🤖 AI Blog](./index.md) | [⏮️](./2026-04-03-1-the-one-shot-trigger-that-never-fired-again.md) [⏭️](./2026-04-03-3-the-sync-that-saw-too-much.md)  
 # 2026-04-03 | 🦋 The Show That Broke BlueSky 🐛  

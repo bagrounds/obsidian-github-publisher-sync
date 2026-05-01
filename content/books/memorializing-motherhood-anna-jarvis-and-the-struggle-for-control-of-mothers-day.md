@@ -9,9 +9,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-17T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-05-01T05:32:10Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A split-composition illustration depicting the tension between the private and commercial spheres. On the left, a soft, sepia-toned illustration shows a delicate white carnation resting on an antique wooden writing desk beside a quill and an inkwell, evoking the sentimental, domestic origins of the holiday. A sharp, diagonal line cuts across the center to the right side, which transitions into a vibrant, modern collage of stylized, bold-colored retail shopping bags, price tags, and glossy ribbons. The contrast between the fragile, historical symbol of the flower and the aggressive, saturated icons of consumerism captures the lifelong struggle of Anna Jarvis to protect her vision from the encroaching marketplace. The background is a muted, parchment-like texture that subtly shifts from warm, organic tones to stark, modern white.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 💐👩‍👧‍👦⚔️ Memorializing Motherhood: Anna Jarvis and the Struggle for Control of Mother's Day  
+![books-memorializing-motherhood-anna-jarvis-and-the-struggle-for-control-of-mothers-day](../books-memorializing-motherhood-anna-jarvis-and-the-struggle-for-control-of-mothers-day.jpg)  
 [🛒 Memorializing Motherhood: Anna Jarvis and the Struggle for Control of Mother's Day. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3HgYaJB)  
   
 ## 📚 Book Report: 💐 Memorializing Motherhood: Anna Jarvis and the Struggle for Control of Mother's Day  

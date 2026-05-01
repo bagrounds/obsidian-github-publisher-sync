@@ -9,9 +9,10 @@ image_date: 2026-04-03T16:17:00Z
 image_model: "@cf/black-forest-labs/flux-1-schnell"
 image_prompt: An illustration featuring a stylized, isometric landscape where digital infrastructure and human well-being intersect. In the foreground, a network of glowing, golden fiber-optic lines emerges from a central hub, branching out across a textured terrain to reach small, diverse community dwellings. Interwoven with these digital pathways are soft, organic shapes representing human connection—glowing, interconnected nodes that resemble both neural pathways and community gathering spaces. The color palette uses deep teals and warm, sunrise ambers to suggest hope and technological progress. In the background, a subtle, stylized horizon line suggests a landscape of rolling hills, blending rural isolation with modern connectivity. The overall aesthetic is clean, modern, and optimistic, emphasizing the flow of information and support systems reaching every corner of a community.
 link_analysis_model: gemini-3.1-flash-lite-preview
-link_analysis_time: 2026-04-03T00:00:00Z
+link_analysis_time: 2026-04-20T00:00:00Z
 force_analyze_links: false
 updated: 2026-04-03T21:17:31
+link_analysis_version: "2"
 ---
 [Home](../index.md) > [🏛️ Systems for Public Good](./index.md) | [⏮️](./2026-04-02-cultivating-care-beyond-subsidies-and-elevating-a-vital-profession.md) [⏭️](./2026-04-04-cultivating-connection-social-health-as-a-public-good.md)  
 # 2026-04-03 | 🏛️ 🌐 Connecting Every Corner: Bridging the Digital Divide's Last Mile 🏛️  

@@ -6,6 +6,10 @@ title: "😴💰🏛️🤑👴🇸🇪 ‘We got lazy and complacent’: Swedis
 URL: https://bagrounds.org/articles/we-got-lazy-and-complacent-swedish-pensioners-explain-how-abolishing-the-wealth-tax-changed-their-country
 Author:
 tags:
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_time: 2026-04-26T00:00:00Z
+force_analyze_links: false
+link_analysis_version: "2"
 ---
 [Home](../index.md) > [Articles](./index.md)  
 # 😴💰🏛️🤑👴🇸🇪 ‘We got lazy and complacent’: Swedish pensioners explain how abolishing the wealth tax changed their country  

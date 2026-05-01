@@ -9,9 +9,10 @@ image_date: 2026-04-05T14:17:01Z
 image_model: "@cf/black-forest-labs/flux-1-schnell"
 image_prompt: A sun-drenched, rustic scene captured during golden hour on a small homestead. In the foreground, a woven wicker basket overflows with freshly gathered, multi-colored chicken eggs, nestled atop a rough-hewn wooden garden table. Beside the basket, a small, fluffy yellow chick sits curiously near a terracotta pot containing a vibrant, sprouting tomato plant. In the soft-focus background, the silhouette of a farmhouse under construction stands against a sprawling, hazy orchard. A gentle breeze stirs the tall, golden grasses of the meadow, and warm, dappled sunlight filters through the trees, casting long, soft shadows. The color palette is dominated by earthy ambers, soft greens, and warm, natural wood tones, evoking a sense of peaceful, intentional living and the quiet promise of a new season.
 link_analysis_model: gemini-3.1-flash-lite-preview
-link_analysis_time: 2026-04-05T00:00:00Z
+link_analysis_time: 2026-04-20T00:00:00Z
 force_analyze_links: false
 updated: 2026-04-06T01:41:56
+link_analysis_version: "2"
 ---
 [Home](../index.md) > [🐔 Chickie Loo](./index.md) | [⏮️](./2026-04-04-a-heart-full-of-surprises-and-sweet-returns.md) [⏭️](./2026-04-06-a-monday-morning-toast-to-new-beginnings.md)  
 # 2026-04-05 | 🐔 A Week of Heart, Harvest, and New Horizons 🐣 🐔  

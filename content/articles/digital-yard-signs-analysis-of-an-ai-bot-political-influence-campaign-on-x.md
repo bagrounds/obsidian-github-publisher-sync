@@ -7,8 +7,9 @@ URL: https://bagrounds.org/articles/digital-yard-signs-analysis-of-an-ai-bot-pol
 Author:
 tags:
 link_analysis_model: gemini-3.1-flash-lite-preview
-link_analysis_time: 2026-04-05T00:00:00Z
+link_analysis_time: 2026-04-27T00:00:00Z
 force_analyze_links: false
+link_analysis_version: "2"
 ---
 [Home](../index.md) > [Articles](./index.md)  
 # 🤖📢❌ [Digital Yard Signs: Analysis of an AI Bot Political Influence Campaign on X](https://www.clemson.edu/centers-institutes/watt/hub/images/digital-yard-signs.pdf)  

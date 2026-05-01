@@ -10,9 +10,10 @@ Channel: PBS NewsHour
 tags:
 youtube: https://youtu.be/tdmguGOt398
 link_analysis_model: gemini-3.1-flash-lite-preview
-link_analysis_time: 2026-04-07T00:00:00Z
+link_analysis_time: 2026-04-18T00:00:00Z
 force_analyze_links: false
 updated: 2026-04-08T05:46:29
+link_analysis_version: "2"
 ---
 [Home](../index.md) > [Videos](./index.md)  
 # 🗣️🔄💬🇮🇷⚔️ Tamara Keith and Amy Walter on Trump’s shifting messaging on Iran war  

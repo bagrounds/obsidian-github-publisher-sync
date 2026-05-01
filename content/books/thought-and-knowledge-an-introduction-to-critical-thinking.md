@@ -6,6 +6,10 @@ URL: https://bagrounds.org/books/thought-and-knowledge-an-introduction-to-critic
 share: true
 CTA: 💡 Master your mind.
 affiliate link: https://amzn.to/4qGsWgI
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_time: 2026-04-26T00:00:00Z
+force_analyze_links: false
+link_analysis_version: "2"
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🧠🔎 Thought and Knowledge: An Introduction to Critical Thinking  

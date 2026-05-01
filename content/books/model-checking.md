@@ -11,9 +11,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-19T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-05-01T11:33:11Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A stylized, isometric illustration of a complex, glowing digital labyrinth. The maze is composed of intricate circuitry and interconnected nodes, representing a state space. A small, sleek magnifying glass icon hovers over a specific junction, highlighting a perfectly formed checkmark symbol that glows with a soft, blue light. In the background, faint, translucent geometric patterns of temporal logic symbols—like clocks and branching path arrows—float in a deep, dark navy and cyan gradient. The overall aesthetic is clean, modern, and highly technical, emphasizing precision, formal verification, and the systematic navigation of complex computational architectures.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🤖🔍✅ Model Checking  
+![books-model-checking](../books-model-checking.jpg)  
 [🛒 Model Checking. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3ZRR706)  
   
 ## 🤖 AI Summary  

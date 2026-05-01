@@ -9,9 +9,10 @@ image_date: 2026-04-07T16:31:23Z
 image_model: "@cf/black-forest-labs/flux-1-schnell"
 image_prompt: "A vibrant, stylized illustration depicting a diverse group of people enjoying a lush public park. In the foreground, silhouetted figures of various ages and abilities are engaged in gentle activities: a child on a swing, someone reading on a park bench, others walking or picnicking. Mature trees with abundant green foliage frame the scene, with dappled sunlight filtering through. A winding path leads to a serene pond reflecting a soft, stylized urban skyline in the distance, subtly bridging nature and city. The overall mood is harmonious, inclusive, and refreshing, emphasizing accessibility and communal well-being."
 link_analysis_model: gemini-3.1-flash-lite-preview
-link_analysis_time: 2026-04-07T00:00:00Z
+link_analysis_time: 2026-04-18T00:00:00Z
 force_analyze_links: false
 updated: 2026-04-07T23:23:35
+link_analysis_version: "2"
 ---
 [Home](../index.md) > [🏛️ Systems for Public Good](./index.md) | [⏮️](./2026-04-06-educating-for-a-shared-future-beyond-the-k-12-horizon.md) [⏭️](./2026-04-08-the-green-tapestry-individual-threads-in-the-public-good-of-parks.md)  
 # 2026-04-07 | 🏛️ 🌳 Nature's Embrace: Public Parks as a Universal Right 🏛️  

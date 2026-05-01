@@ -11,8 +11,9 @@ tags:
 youtube: https://youtu.be/cZitIRcj-0M
 updated: 2026-03-25T14:28:55.660Z
 force_analyze_links: false
-link_analysis_time: 2026-03-25T05:30:56.106Z
+link_analysis_time: 2026-04-24T00:00:00Z
 link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_version: "2"
 ---
 [Home](../index.md) > [Videos](./index.md) | [🏛️🇺🇸📖 Heather Cox Richardson](../people/heather-cox-richardson.md)  
 # 🇺🇸🏛️🗣️📊 An Analysis of Modern Republicanism | Explainer  

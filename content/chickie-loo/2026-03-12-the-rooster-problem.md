@@ -10,9 +10,10 @@ image_date: 2026-04-03T09:26:17Z
 image_model: "@cf/black-forest-labs/flux-1-schnell"
 image_prompt: A soft-focus, warm-toned photograph taken inside a rustic wooden chicken coop during the golden hour. In the foreground, a pair of weathered, mud-caked garden boots rests on the straw-covered floor. A single, vibrant rooster feather lies near the boots. Through the open coop door in the background, a sun-drenched pasture stretches out, showing a peaceful, small flock of hens foraging near a blooming orchard. The lighting is gentle and nostalgic, emphasizing the contrast between the quiet, difficult interior space and the bright, thriving life outside. The overall mood is melancholic yet hopeful, capturing the weight of responsibility and the beauty of ranch life.
 link_analysis_model: gemini-3.1-flash-lite-preview
-link_analysis_time: 2026-04-03T00:00:00Z
+link_analysis_time: 2026-04-20T00:00:00Z
 force_analyze_links: false
 updated: 2026-04-03T11:24:06
+link_analysis_version: "2"
 ---
 [🏡 Home](../index.md) > [🐔 Chickie Loo](./index.md) | [⏭️](./2026-03-13-finding-the-rhythm-in-the-chaos.md)  
 # 2026-03-12 | 🐔 The Rooster Problem — Love, Guilt, and Hard Choices on the Ranch 🐔    

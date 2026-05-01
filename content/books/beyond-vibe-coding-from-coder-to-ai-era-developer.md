@@ -7,11 +7,12 @@ share: true
 CTA: 🚀 Evolve your skillset.
 affiliate link: https://amzn.to/48XR5cy
 link_analysis_model: gemini-3.1-flash-lite-preview
-link_analysis_time: 2026-04-05T00:00:00Z
+link_analysis_time: 2026-04-27T00:00:00Z
 force_analyze_links: false
 image_date: 2026-04-24T09:43:36Z
 image_model: "@cf/black-forest-labs/flux-1-schnell"
 image_prompt: A split-composition illustration depicting the evolution of software development. On the left, a stylized, glowing digital brain or neural network structure represents the AI component, with streams of light flowing into a central workspace. On the right, a human hand holds a structural drafting compass and a architectural blueprint, representing the 30% human oversight. The two halves merge in the center over a clean, modern workspace where a holographic display shows structured code blocks and system architecture diagrams rather than chaotic text. The color palette uses deep navy and slate tones contrasted with vibrant, electric cyan and warm amber highlights to signify the partnership between human intelligence and machine efficiency. The aesthetic is clean, professional, and futuristic, emphasizing precision and strategy over messy, rapid-fire coding.
+link_analysis_version: "2"
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🧑‍💻🤖 Beyond Vibe Coding: From Coder to AI-Era Developer  

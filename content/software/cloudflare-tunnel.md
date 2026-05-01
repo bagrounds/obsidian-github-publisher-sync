@@ -5,11 +5,12 @@ aliases:
 title: ☁️🛡️ Cloudflare Tunnel (cloudflared)
 URL: https://bagrounds.org/software/cloudflare-tunnel
 link_analysis_model: gemini-3.1-flash-lite-preview
-link_analysis_time: 2026-04-05T00:00:00Z
+link_analysis_time: 2026-04-15T00:00:00Z
 force_analyze_links: false
 image_date: 2026-04-10T17:25:25Z
 image_model: "@cf/black-forest-labs/flux-1-schnell"
 image_prompt: A stylized, isometric illustration featuring a glowing, translucent blue tunnel connecting a small, minimalist home server icon to a larger, abstract cloud structure floating above. The tunnel is represented by a beam of light composed of digital data particles or fiber-optic strands, symbolizing a secure connection. The background is a clean, dark navy gradient, accented with soft, glowing geometric shapes and subtle circuit board patterns. A golden shield icon subtly overlays the tunnel entrance to represent security. The overall aesthetic is modern, sleek, and high-tech, utilizing a color palette of electric blues, vibrant oranges, and deep grays to evoke a sense of digital infrastructure and reliable protection.
+link_analysis_version: "2"
 ---
 [Home](../index.md) > [Software](./index.md)  
 # [☁️🛡️ Cloudflare Tunnel (cloudflared)](https://developers.cloudflare.com/cloudflare-one/connections/connect-apps)  

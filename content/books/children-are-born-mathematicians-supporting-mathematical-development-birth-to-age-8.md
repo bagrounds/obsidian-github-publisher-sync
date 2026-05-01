@@ -7,11 +7,12 @@ share: true
 CTA: 🌟 Cultivate genius.
 affiliate link: https://amzn.to/4kuBJ2Q
 link_analysis_model: gemini-3.1-flash-lite-preview
-link_analysis_time: 2026-04-10T00:00:00Z
+link_analysis_time: 2026-04-26T00:00:00Z
 force_analyze_links: false
 image_date: 2026-04-25T05:01:29Z
 image_model: "@cf/black-forest-labs/flux-1-schnell"
 image_prompt: A vibrant, close-up scene capturing a young child’s hands engaged in tactile play on a wooden table. The child is sorting colorful geometric wooden blocks—spheres, cubes, and pyramids—into corresponding patterns. Soft, natural sunlight streams across the workspace, highlighting the textures of the wood and the bright primary colors of the shapes. In the soft-focus background, a pair of adult hands is gently present, subtly guiding the activity without interfering. The overall atmosphere is one of curiosity, discovery, and quiet focus, emphasizing the joy of hands-on mathematical exploration. The composition uses a shallow depth of field to keep the focus on the child’s constructive play, symbolizing the organic development of numerical and spatial awareness.
+link_analysis_version: "2"
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 👶🧠➕ Children are Born Mathematicians: Supporting Mathematical Development, Birth to Age 8  

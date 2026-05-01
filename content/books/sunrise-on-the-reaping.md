@@ -8,12 +8,13 @@ Author:
 tags:
 affiliate link: https://amzn.to/43MNXfg
 link_analysis_model: gemini-3.1-flash-lite-preview
-link_analysis_time: 2026-04-07T00:00:00Z
+link_analysis_time: 2026-04-18T00:00:00Z
 force_analyze_links: false
 updated: 2026-04-07T09:34:34
 image_date: 2026-04-13T13:43:19Z
 image_model: "@cf/black-forest-labs/flux-1-schnell"
 image_prompt: A high-contrast, atmospheric illustration set in a desolate, industrial arena at dawn. In the foreground, a single, ornate, silver-plated knife is embedded vertically into cracked, ash-covered earth. The blade catches the harsh, orange light of a rising sun that struggles to pierce through a thick, smog-filled sky. In the blurred background, the jagged, menacing silhouette of a futuristic observation tower looms over the horizon, casting a long, sharp shadow across the debris-strewn ground. The color palette is dominated by cold, metallic grays and deep, bruised purples, contrasted sharply by the piercing, fiery glow of the sunrise on the horizon. The scene evokes a sense of impending violence, survival, and the cold, calculated nature of the Games.
+link_analysis_version: "2"
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🌅🔪💀 Sunrise On The Reaping  

@@ -9,9 +9,10 @@ image_date: 2026-04-03T14:20:59Z
 image_model: "@cf/black-forest-labs/flux-1-schnell"
 image_prompt: A warm, soft-focus morning scene inside a rustic wooden chicken coop. Golden sunlight streams through a weathered window, illuminating dust motes dancing in the air and casting long, gentle shadows across a bed of fresh, golden straw. A few fluffy, contented hens are perched on a low wooden roost, while a handful of scattered, earthy grains catch the light on the floor. In the foreground, a steaming ceramic mug sits on a rough-hewn wooden crate, suggesting a quiet moment of reflection. Through the open coop door, a blurred hint of a lush green orchard and the soft, hazy pinks and oranges of an early April sunrise are visible. The overall aesthetic is peaceful, pastoral, and intimate, capturing the stillness of a slow, purposeful morning.
 link_analysis_model: gemini-3.1-flash-lite-preview
-link_analysis_time: 2026-04-03T00:00:00Z
+link_analysis_time: 2026-04-20T00:00:00Z
 force_analyze_links: false
 updated: 2026-04-03T15:25:49
+link_analysis_version: "2"
 ---
 [Home](../index.md) > [🐔 Chickie Loo](./index.md) | [⏮️](./2026-04-02-2026-04-02-finding-our-rhythm-in-the-morning-light.md) [⏭️](./2026-04-04-a-heart-full-of-surprises-and-sweet-returns.md)  
 # 2026-04-03 | 🐔 A Quiet Morning in the Coop 🐣 🐔  

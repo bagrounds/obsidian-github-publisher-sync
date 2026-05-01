@@ -10,8 +10,9 @@ Channel: TED
 tags:
 youtube: https://youtu.be/lGeoH4SaFIo
 link_analysis_model: gemini-3.1-flash-lite-preview
-link_analysis_time: 2026-04-04T00:00:00Z
+link_analysis_time: 2026-04-24T00:00:00Z
 force_analyze_links: false
+link_analysis_version: "2"
 ---
 [Home](../index.md) > [Videos](./index.md)  
 # 🫂🔑📈 The Secret Trick to Improve Your Social Connections | Kasley Killam | How to Be a Better Human | TED  

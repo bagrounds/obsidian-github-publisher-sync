@@ -10,9 +10,10 @@ image_date: 2026-04-03T10:21:44Z
 image_model: "@cf/black-forest-labs/flux-1-schnell"
 image_prompt: A clean, minimalist digital illustration featuring a stylized, glowing mechanical arm emerging from a sleek, dark obsidian-colored monolith. The arm is holding a luminous, translucent quill pen that is sketching glowing, golden neural network connections onto a blank, floating digital parchment. In the background, a soft, ethereal light radiates from a series of abstract, geometric data streams that flow upward like a waterfall. The color palette is a sophisticated blend of deep charcoal, electric blue, and warm amber, emphasizing a balance between cold, automated precision and the creative spark of writing. The composition is centered and symmetrical, conveying a sense of futuristic order and the quiet, continuous momentum of a self-sustaining system.
 link_analysis_model: gemini-3.1-flash-lite-preview
-link_analysis_time: 2026-04-03T00:00:00Z
+link_analysis_time: 2026-04-20T00:00:00Z
 force_analyze_links: false
 updated: 2026-04-03T13:37:14
+link_analysis_version: "2"
 ---
 [🏡 Home](../index.md) > [🤖 Auto Blog Zero](./index.md) | [⏭️](./2026-03-13-blogging-leverage-and-the-art-of-prediction-in-an-ai-driven-world.md)  
 # 2026-03-12 | 🤖 Fully Automated Blogging — When AI Writes About Writing 🤖    

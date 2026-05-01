@@ -9,9 +9,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-17T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-05-01T14:36:30Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A stylized, artistic illustration featuring a human silhouette in profile. Inside the silhouette, the brain is rendered as a vibrant, glowing network of neural pathways. Instead of standard neurons, the synapses are composed of soft, intertwining floral vines and delicate roots that bloom into small, abstract icons representing growth and connection. The color palette uses deep midnight blues and rich indigos for the background, contrasting with warm, luminous golds, soft corals, and teal accents for the neural connections. The overall aesthetic is ethereal, scientific, and organic, suggesting the profound, transformative rewiring of the mind during the transition into parenthood. The lighting is soft and focused, creating a sense of wonder and intellectual discovery.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🤱🏼🧠 Mother Brain: How Neuroscience Is Rewriting the Story of Parenthood  
+![books-mother-brain-how-neuroscience-is-rewriting-the-story-of-parenthood](../books-mother-brain-how-neuroscience-is-rewriting-the-story-of-parenthood.jpg)  
 [🛒 Mother Brain: How Neuroscience Is Rewriting the Story of Parenthood. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/45ocnyr)  
   
 ## 🧠 Book Report: 👩‍⚕️ Mother Brain: How Neuroscience Is Rewriting the Story of Parenthood by Chelsea Conaboy  

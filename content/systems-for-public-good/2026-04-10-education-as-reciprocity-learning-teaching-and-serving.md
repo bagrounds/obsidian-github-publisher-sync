@@ -9,9 +9,10 @@ image_date: 2026-04-10T16:24:23Z
 image_model: "@cf/black-forest-labs/flux-1-schnell"
 image_prompt: "A stylized, isometric illustration showing a vibrant, interconnected community. At the center, a large, glowing tree with translucent, network-like roots serves as the focal point, symbolizing the wellspring of shared knowledge. From the tree, paths radiate outward, connecting diverse architectural spaces: a modern library, a community garden, a clinic, and a laboratory. Diverse figures are depicted in fluid, graceful silhouettes—one person is handing a book to another, while a group collaborates around a large communal table. The background features a clean, clear sky and a flowing blue river winding through the urban landscape, emphasizing the link between education and environmental health. The color palette is warm and optimistic, using soft greens, deep blues, and golden light to evoke a sense of abundance, growth, and collective, systemic harmony."
 link_analysis_model: gemini-3.1-flash-lite-preview
-link_analysis_time: 2026-04-10T00:00:00Z
+link_analysis_time: 2026-04-15T00:00:00Z
 force_analyze_links: false
 updated: 2026-04-10T23:21:28
+link_analysis_version: "2"
 ---
 [Home](../index.md) > [🏛️ Systems for Public Good](./index.md) | [⏮️](./2026-04-09-investing-in-lifelong-learning-beyond-the-k-12-horizon-revisited.md) [⏭️](./2026-04-11-the-human-foundation-public-health-as-real-wealth.md)  
 # 2026-04-10 | 🏛️ 💡 Education as Reciprocity: Learning, Teaching, and Serving 🏛️  

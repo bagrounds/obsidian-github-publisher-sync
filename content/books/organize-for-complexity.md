@@ -11,9 +11,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-19T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-05-02T11:24:11Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A minimalist, conceptual illustration featuring a vibrant, organic network of interconnected nodes. In the center, a rigid, grey geometric gear is being overtaken and re-integrated by lush, green, sprouting vines and interconnected, glowing filaments. The background is a clean, soft-focus gradient, transitioning from a structured, dark grid at the bottom to an open, light-filled space at the top. The overall composition suggests a transition from mechanical, top-down control to a living, decentralized, and highly collaborative ecosystem. The aesthetic is clean, modern, and professional, using a palette of deep teal, forest green, and subtle metallic accents to evoke both technology and natural growth.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🧩⚙️🌱📈 Organize for Complexity: How to Get Life Back Into Work to Build the High-Performance Organization  
+![books-organize-for-complexity](../books-organize-for-complexity.jpg)  
 [🛒 Organize for Complexity: How to Get Life Back Into Work to Build the High-Performance Organization. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/43NLf9B)  
   
 ## 🤖 AI Summary  

@@ -79,8 +79,8 @@ data LinkingResult = LinkingResult
 
 extractBody :: Text -> Text
 extractBody content =
-  let ls = T.splitOn "\n" content
-  in case ls of
+  let contentLines = T.splitOn "\n" content
+  in case contentLines of
     (first : rest)
       | T.strip first == "---" ->
           case break (\l -> T.strip l == "---") rest of
@@ -105,11 +105,11 @@ applyReplacements content candidates validations =
   where
     applyOne :: Text -> CD.LinkCandidate -> Text
     applyOne acc candidate =
-      let pos    = CD.position candidate
-          len    = T.length (CD.matchedText candidate)
-          before = T.take pos acc
-          after  = T.drop (pos + len) acc
-          wl     = CD.formatContentEntryWikilink (CD.entry candidate)
+      let position = CD.position candidate
+          len      = T.length (CD.matchedText candidate)
+          before   = T.take position acc
+          after    = T.drop (position + len) acc
+          wl       = CD.formatContentEntryWikilink (CD.entry candidate)
       in before <> wl <> after
 
 
@@ -118,8 +118,8 @@ updateFrontmatterFields filePath fields = do
   exists <- doesFileExist filePath
   when exists $ do
     raw <- TIO.readFile filePath
-    let ls = T.splitOn "\n" raw
-    case ls of
+    let contentLines = T.splitOn "\n" raw
+    case contentLines of
       (first : rest)
         | T.strip first == "---" ->
             case break (\l -> T.strip l == "---") rest of
@@ -133,12 +133,12 @@ updateFrontmatterFields filePath fields = do
         TIO.writeFile filePath ("---\n" <> entries <> "\n---\n" <> raw)
 
 upsertField :: [Text] -> (Text, YamlValue) -> [Text]
-upsertField ls (key, val) =
-  let newLine   = key <> ": " <> renderYamlValue val
-      pat       = T.pack (T.unpack key <> ":")
-      didReplace = any (matchesKey pat) ls
-      replaced = replaceWithContinuation pat newLine ls
-  in if didReplace then replaced else ls <> [newLine]
+upsertField contentLines (key, val) =
+  let newLine    = key <> ": " <> renderYamlValue val
+      pat        = T.pack (T.unpack key <> ":")
+      didReplace = any (matchesKey pat) contentLines
+      replaced   = replaceWithContinuation pat newLine contentLines
+  in if didReplace then replaced else contentLines <> [newLine]
   where
     matchesKey :: Text -> Text -> Bool
     matchesKey p line = T.isPrefixOf p (T.stripStart line)

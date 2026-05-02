@@ -6,6 +6,10 @@ URL: https://bagrounds.org/books/the-art-of-doing-science-and-engineering-learni
 share: true
 CTA: 🔬 Master innovation.
 affiliate link: https://amzn.to/48CP8kP
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_version: "2"
+link_analysis_time: 2026-05-01T00:00:00Z
+force_analyze_links: false
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🧪⚙️🧠 The Art of Doing Science and Engineering: Learning to Learn  
@@ -53,17 +57,17 @@ affiliate link: https://amzn.to/48CP8kP
 ### 🔗 Similar  
 * 💹 Practical Speculation by Victor Niederhoffer  
 * 🌌 The Beginning of Infinity by David Deutsch  
-* 🔄 Thinking in Systems by Donella Meadows  
+* 🔄 [🌐🔗🧠📖 Thinking in Systems: A Primer](./thinking-in-systems.md) by Donella Meadows  
   
 ### 🌓 Contrasting  
 * 🏹 Range by David Epstein  
-* 📈 Outliers by Malcolm Gladwell  
+* 📈 [⭐ Outliers](./outliers.md) by Malcolm Gladwell  
 * 🦢 The Black Swan by Nassim Taleb  
   
 ### 🧬 Related  
 * 🧮 A Mathematicians Apology by G.H. Hardy  
 * ⚛️ Surely Youre Joking Mr. Feynman by Richard Feynman  
-* 🧪 The Structure of Scientific Revolutions by Thomas Kuhn  
+* 🧪 [🔬🔄 The Structure of Scientific Revolutions](./the-structure-of-scientific-revolutions.md) by Thomas Kuhn  
   
 ## 🫵 What Do You Think?  
 * ❓ Which Great Problem in your specific field are you currently avoiding, and why?  

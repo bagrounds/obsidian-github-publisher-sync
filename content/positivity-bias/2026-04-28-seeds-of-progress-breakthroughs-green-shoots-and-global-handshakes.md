@@ -13,6 +13,7 @@ link_analysis_version: "2"
 link_analysis_time: 2026-04-28T00:00:00Z
 force_analyze_links: false
 updated: 2026-04-29T15:49:18
+book_mention_scanned: 2026-05-01
 ---
 [Home](../index.md) > [🌟 Positivity Bias](./index.md) | [⏮️](./2026-04-27-seeds-of-progress-breakthroughs-green-shoots-and-global-handshakes.md) [⏭️](./2026-04-29-hope-blooms-breakthroughs-green-shoots-and-global-handshakes.md)  
 # 2026-04-28 | 🌟 Seeds of Progress: Breakthroughs, Green Shoots, and Global Handshakes 🌟  

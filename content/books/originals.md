@@ -11,9 +11,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-16T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-05-02T12:24:01Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A high-contrast, minimalist illustration featuring a single, vibrant dandelion growing through a crack in a perfectly uniform, grey concrete pavement. While the surrounding dandelions are withered and identical, this specific flower is multicolored and luminous, casting a soft glow on the ground. The background is a clean, muted slate blue, emphasizing the solitary, colorful bloom as it tilts upward toward an unseen light source. The composition uses clean lines and a modern, vector-art style to symbolize breaking the status quo and standing out from the crowd.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 💡🎨 Originals: How Non-Conformists Move the World  
+![books-originals](../books-originals.jpg)  
 [🛒 Originals: How Non-Conformists Move the World. As an Amazon Associate I earn from qualifying purchases.](https://www.amazon.com/dp/0525429565?tag=bagrounds-20)  
   
 ## 🤖 AI Summary  

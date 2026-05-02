@@ -11,9 +11,13 @@ force_analyze_links: false
 link_analysis_time: 2026-04-14T00:00:00Z
 link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_version: "2"
+image_date: 2026-05-02T07:43:03Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A stark, high-contrast illustration featuring a single, sturdy stone pillar standing resilient amidst a swirling, chaotic storm of dark, abstract shadows. The pillar is illuminated by a warm, steady golden light from above, symbolizing truth and democratic institutions. At the base of the pillar, a small, solitary sapling grows through a crack in the pavement, representing individual responsibility and the beginnings of resistance. The background is a gradient of deep charcoal to muted grey, suggesting the encroaching fog of authoritarianism. The composition is clean, minimalist, and geometric, emphasizing the tension between the fragility of civic life and the enduring strength of historical lessons. The visual style is reminiscent of mid-century woodcut prints, sharp and impactful, focusing on form and shadow to convey gravity and hope.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 👑🚫📜2️⃣0️⃣ On Tyranny: Twenty Lessons from the Twentieth Century  
+![books-on-tyranny](../books-on-tyranny.jpg)  
 by Timothy Snyder  
 [🛒 2️⃣0️⃣ On Tyranny: Twenty Lessons from the Twentieth Century. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4jDxSib)  
   

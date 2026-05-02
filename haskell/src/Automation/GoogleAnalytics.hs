@@ -215,12 +215,12 @@ parseSummaryResponse value = do
     (row : _) -> do
       metrics <- extractMetricValues row
       case metrics of
-        [pv, vis, br, pps, dur] -> do
-          pageViewsVal <- parseIntMetric "screenPageViews" pv
-          visitorsVal <- parseIntMetric "activeUsers" vis
-          bounceRateVal <- parseDoubleMetric "bounceRate" br
-          pagesPerSessionVal <- parseDoubleMetric "screenPageViewsPerSession" pps
-          durationVal <- parseDoubleMetric "averageSessionDuration" dur
+        [pageViewsText, visitorsText, bounceRateText, pagesPerSessionText, durationText] -> do
+          pageViewsVal <- parseIntMetric "screenPageViews" pageViewsText
+          visitorsVal <- parseIntMetric "activeUsers" visitorsText
+          bounceRateVal <- parseDoubleMetric "bounceRate" bounceRateText
+          pagesPerSessionVal <- parseDoubleMetric "screenPageViewsPerSession" pagesPerSessionText
+          durationVal <- parseDoubleMetric "averageSessionDuration" durationText
           Right AnalyticsSummary
             { pageViews = pageViewsVal
             , visitors = visitorsVal

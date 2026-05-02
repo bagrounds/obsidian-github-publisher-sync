@@ -39,22 +39,7 @@ These are local bindings inside function bodies. Renaming them does not affect e
 
 - [x] `initReq` → `initialRequest` (local binding for the parsed HTTP request)
 - [x] `gc` → `graphqlComment` (parameter in `toComment`)
-- [ ] `bcAuthor` → `author` (BlogComment record field) — may require moving types to separate modules
-- [ ] `bcBody` → `body` (BlogComment record field)
-- [ ] `bcCreatedAt` → `createdAt` (BlogComment record field)
-- [ ] `bcIsPriority` → `isPriority` (BlogComment record field)
-- [ ] `gcBody` → `body` (GqlComment record field)
-- [ ] `gcAuthor` → `author` (GqlComment record field)
-- [ ] `gcCreatedAt` → `createdAt` (GqlComment record field)
-- [ ] `gcnNodes` → `nodes` (GqlCommentsNode record field)
-- [ ] `gdTitle` → `title` (GqlDiscussion record field)
-- [ ] `gdComments` → `comments` (GqlDiscussion record field)
-- [ ] `gsnNodes` → `nodes` (GqlSearchNodes record field)
-- [ ] `gsdSearch` → `search` (GqlSearchData record field)
-- [ ] `grData` → `responseData` (GqlResponse record field)
-- [ ] `grErrors` → `errors` (GqlResponse record field)
-- [ ] `geMessage` → `message` (GqlError record field)
-- [ ] `gaLogin` → `login` (GqlAuthor record field)
+- (record field renames moved to Phase 2 — require moving Gql* types to a sub-module first)
 
 #### BlogImage/Provider.hs
 
@@ -80,13 +65,57 @@ These are local bindings inside function bodies. Renaming them does not affect e
 
 Record field abbreviation prefixes must be removed. When two records in the same module would share the same field name after de-prefixing, move one record to its own module and import it qualified.
 
+#### BlogComments.hs
+
+- [ ] `bcAuthor` → `author` (BlogComment record field) — may require moving Gql* types to Automation.BlogComments.GraphQL
+- [ ] `bcBody` → `body` (BlogComment record field)
+- [ ] `bcCreatedAt` → `createdAt` (BlogComment record field)
+- [ ] `bcIsPriority` → `isPriority` (BlogComment record field)
+- [ ] `gcBody` → `body` (GqlComment record field) — move Gql* to sub-module first
+- [ ] `gcAuthor` → `author` (GqlComment record field)
+- [ ] `gcCreatedAt` → `createdAt` (GqlComment record field)
+- [ ] `gcnNodes` → `nodes` (GqlCommentsNode record field)
+- [ ] `gdTitle` → `title` (GqlDiscussion record field)
+- [ ] `gdComments` → `comments` (GqlDiscussion record field)
+- [ ] `gsnNodes` → `nodes` (GqlSearchNodes record field)
+- [ ] `gsdSearch` → `search` (GqlSearchData record field)
+- [ ] `grData` → `responseData` (GqlResponse record field)
+- [ ] `grErrors` → `errors` (GqlResponse record field)
+- [ ] `geMessage` → `message` (GqlError record field)
+- [ ] `gaLogin` → `login` (GqlAuthor record field)
+
+#### BlogImage/Eligibility.hs
+
+- [ ] `bcFilePath` → `filePath` (BackfillCandidate record field)
+- [ ] `bcDirectory` → `directory` (BackfillCandidate record field)
+- [ ] `bcFilename` → `filename` (BackfillCandidate record field)
+- [ ] `bcDate` → `date` (BackfillCandidate record field)
+- [ ] `bcNeedsRegeneration` → `needsRegeneration` (BackfillCandidate record field)
+
+#### BlogImage.hs
+
+- [ ] `brImagesGenerated` → `imagesGenerated` (BackfillResult record field)
+- [ ] `brFilesUpdated` → `filesUpdated` (BackfillResult record field)
+- [ ] `brFilesSkipped` → `filesSkipped` (BackfillResult record field)
+- [ ] `brModifiedFiles` → `modifiedFiles` (BackfillResult record field)
+- [ ] `brErrors` → `errors` (BackfillResult record field)
+
+#### BlogPrompt.hs
+
+- [ ] `bcxSeries` → `series` (BlogContext record field)
+- [ ] `bcxAgentsMd` → `agentsMd` (BlogContext record field)
+- [ ] `bcxPreviousPosts` → `previousPosts` (BlogContext record field)
+- [ ] `bcxComments` → `comments` (BlogContext record field)
+- [ ] `bcxToday` → `today` (BlogContext record field)
+- [ ] `bcxCrossSeriesPosts` → `crossSeriesPosts` (BlogContext record field)
+
 #### GoogleAnalytics.hs
 
-- [ ] Audit all record fields for abbreviated prefixes
+- [x] Audit all record fields for abbreviated prefixes — no abbreviated prefixes found; `pv`, `vis`, `br`, `pps`, `dur` local variables in `parseSummaryResponse` renamed to full names
 
 #### DailyUpdates.hs
 
-- [ ] `idx` → `index` (local variable in section insertion logic)
+- [x] `idx` → `index` (local variable in section insertion logic)
 
 #### Prompts.hs
 
@@ -112,6 +141,7 @@ Record field abbreviation prefixes must be removed. When two records in the same
 #### AiFiction.hs
 
 - [ ] `ls` → `contentLines` (local variable)
+- [ ] `idx` → `index` (local variable in `findClosingDash`)
 
 #### ReflectionTitle.hs
 
@@ -125,6 +155,11 @@ Record field abbreviation prefixes must be removed. When two records in the same
 #### AiBlogLinks.hs
 
 - [ ] `ls` → `contentLines` (local variable)
+- [ ] `idx` → `index` (local variable in `updateNavigation` and `processFile`)
+
+#### Frontmatter.hs
+
+- [ ] `ls` → `contentLines` (local variable in `parseFrontmatter`)
 
 #### Text.hs
 

@@ -9,9 +9,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-18T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-05-02T18:26:32Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A minimalist, high-contrast illustration featuring a stylized, abstract playroom. On one side, a simple wooden chair sits empty, representing the caregivers departure. On the other, a small, soft-edged silhouette of a child stands reaching toward a doorway. The floor is divided into geometric shapes, suggesting the structured nature of a laboratory environment. The color palette uses muted, calming tones like soft blue, warm beige, and a touch of gentle yellow to evoke a sense of early childhood development. The composition is spacious and clean, focusing on the concepts of distance, connection, and the emotional space between the caregiver and the child, rendered in a modern, clean-line graphic style.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 👶🤔 Patterns of Attachment: A Psychological Study of the Strange Situation  
+![books-patterns-of-attachment-a-psychological-study-of-the-strange-situation](../books-patterns-of-attachment-a-psychological-study-of-the-strange-situation.jpg)  
 [🛒 Patterns of Attachment: A Psychological Study of the Strange Situation. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4kSo9Wh)  
   
 ## 📚 Book Report: Patterns of Attachment  

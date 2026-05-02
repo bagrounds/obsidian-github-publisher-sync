@@ -10,9 +10,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-19T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-05-02T03:13:31Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A high-contrast, conceptual illustration featuring a glowing, sturdy shield positioned in the center, acting as a barrier against a chaotic storm of fragmented, dark, and distorted digital shards. The shield emits a soft, steady golden light that illuminates the surrounding darkness, representing clarity and factual integrity. On the left side of the composition, the shards are jagged and chaotic, symbolizing the noise and confusion of disinformation. As these shards hit the shield, they dissipate into harmless, fading particles. The background is a deep, moody navy blue, transitioning into a cleaner, lighter space behind the shield, suggesting the restoration of order and truth. The style is clean, modern, and vector-inspired, emphasizing sharp lines and symbolic shapes rather than realistic human figures.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 📢🛡️ On Disinformation: How to Fight for Truth and Protect Democracy  
+![books-on-disinformation-how-to-fight-for-truth-and-protect-democracy](../books-on-disinformation-how-to-fight-for-truth-and-protect-democracy.jpg)  
 [🛒 On Disinformation: How to Fight for Truth and Protect Democracy. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3UBO7Cg)  
   
 ## 📢 On Disinformation: How to Fight for Truth and Protect Democracy - Book Report  

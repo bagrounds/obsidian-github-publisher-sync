@@ -62,11 +62,11 @@ instance FromValue ServiceAccountKey where
       <*> v .: "private_key"
 
 data JwtClaims = JwtClaims
-  { jcIss   :: Text
-  , jcScope :: Text
-  , jcAud   :: Text
-  , jcIat   :: Int
-  , jcExp   :: Int
+  { issuer     :: Text
+  , scope      :: Text
+  , audience   :: Text
+  , issuedAt   :: Int
+  , expiresAt  :: Int
   } deriving (Show, Eq)
 
 data TokenResponse = TokenResponse
@@ -232,11 +232,11 @@ showHexByte byte =
 encodeJwtPayload :: JwtClaims -> ByteString
 encodeJwtPayload claims =
   let payload = object
-        [ "iss"   .= jcIss claims
-        , "scope" .= jcScope claims
-        , "aud"   .= jcAud claims
-        , "iat"   .= jcIat claims
-        , "exp"   .= jcExp claims
+        [ "iss"   .= issuer claims
+        , "scope" .= scope claims
+        , "aud"   .= audience claims
+        , "iat"   .= issuedAt claims
+        , "exp"   .= expiresAt claims
         ]
   in LBS.toStrict $ encode payload
 
@@ -260,11 +260,11 @@ getAccessTokenWithScope scope manager serviceAccountKey = do
     Left err -> pure $ Left err
     Right privKey -> do
       let claims = JwtClaims
-            { jcIss   = sakClientEmail serviceAccountKey
-            , jcScope = scope
-            , jcAud   = T.pack tokenEndpoint
-            , jcIat   = now
-            , jcExp   = now + jwtExpirationSeconds
+            { issuer    = sakClientEmail serviceAccountKey
+            , scope     = scope
+            , audience  = T.pack tokenEndpoint
+            , issuedAt  = now
+            , expiresAt = now + jwtExpirationSeconds
             }
       case createJwt claims privKey of
         Left err -> pure $ Left err

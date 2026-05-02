@@ -10,9 +10,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-20T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-05-02T14:27:34Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: "A stylized, minimalist illustration showing a human silhouette profile against a soft, gradient background. Inside the silhouette’s head, a vibrant, glowing network of interconnected neural pathways forms a complex, geometric pattern. One section of these pathways is glowing brighter than the rest, representing a conscious switch or a lightbulb moment. Floating around the silhouette are subtle, semi-transparent icons representing habits and mental states: a small gear for productivity, a rising arrow for growth, a tiny lotus for mindfulness, and a sleeping moon for rest. The aesthetic is clean and modern, using a cool color palette of deep blues and teals contrasted with energetic pops of warm amber and gold to signify clarity and intellectual breakthrough."
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🧠📈 Outsmart Yourself: Brain-Based Strategies for a Bettery You  
+![books-outsmart-yourself-brain-based-strategies-for-a-bettery-you](../books-outsmart-yourself-brain-based-strategies-for-a-bettery-you.jpg)  
 [🛒 Outsmart Yourself: Brain-Based Strategies for a Bettery You. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4ln5XnQ)  
   
 ## 📝🐒 Human Notes  

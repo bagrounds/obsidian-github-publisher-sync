@@ -12,9 +12,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-15T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-05-02T14:27:32Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A split-composition image blending biological science and human vitality. On the left side, a stylized, glowing DNA double helix transitions into a series of intricate, translucent anatomical diagrams of the human heart and brain, set against a deep navy laboratory background with faint, floating molecular structures. On the right side, the scene shifts to a warm, sun-drenched outdoor environment featuring a silhouette of an agile, elderly person performing a dynamic movement, such as a balanced lunge or a reach toward the sky. The transition between the two sides is a soft gradient, symbolizing the bridge between rigorous scientific data and the art of living a long, active life. The color palette uses crisp clinical whites and blues for the science side, warming into vibrant, energetic golds and oranges on the human activity side.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # ⏳🔬🎨 Outlive: The Science and Art of Longevity  
+![books-outlive](../books-outlive.jpg)  
 [🛒 Outlive: The Science and Art of Longevity. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3SBXukf)  
   
 ## 🤖 AI Summary  

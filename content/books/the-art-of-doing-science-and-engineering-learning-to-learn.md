@@ -17,6 +17,9 @@ force_analyze_links: false
   
 🚀 🧠 Richard Hamming’s masterpiece explores the cultivation of style in scientific thinking, emphasizing that greatness is a practiced skill rooted in identifying significant problems and learning how to learn.  
   
+## 📝🐒 Human Notes  
+- Inventors often don't fully understand their inventions  
+  
 ## 🤖 AI Summary  
 ### 💡 Core Philosophy: Learning to Learn  
 * 🔄 Education as a lifelong iterative process.  

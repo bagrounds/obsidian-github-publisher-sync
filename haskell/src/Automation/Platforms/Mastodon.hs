@@ -145,9 +145,9 @@ post manager Credentials{..} statusText = do
         , "language"   .= ("en" :: Text)
         ])
   result <- try @SomeException $ withRetry defaultRetryOptions $ do
-    initialReq <- parseRequest (T.unpack apiUrl)
+    initialRequest <- parseRequest (T.unpack apiUrl)
     let req =
-          initialReq
+          initialRequest
             { method = "POST"
             , requestBody = RequestBodyLBS bodyJson
             , requestHeaders =
@@ -190,9 +190,9 @@ deletePost :: Manager -> Credentials -> Text -> IO (Either Error ())
 deletePost manager Credentials{..} statusId = do
   let apiUrl = unUrl instanceUrl <> "/api/v1/statuses/" <> statusId
   result <- try @SomeException $ do
-    initialReq <- parseRequest (T.unpack apiUrl)
+    initialRequest <- parseRequest (T.unpack apiUrl)
     let req =
-          initialReq
+          initialRequest
             { method = "DELETE"
             , requestHeaders =
                 [("Authorization", "Bearer " <> TE.encodeUtf8 (unSecret accessToken))]

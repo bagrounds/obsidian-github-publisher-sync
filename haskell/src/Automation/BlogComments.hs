@@ -141,12 +141,12 @@ buildQuery maxResults maxComments =
 
 searchDiscussions :: Manager -> Text -> Text -> Int -> Int -> IO [GqlDiscussion]
 searchDiscussions manager token searchQuery maxResults maxComments = do
-  initReq <- parseRequest graphqlEndpoint
+  initialRequest <- parseRequest graphqlEndpoint
   let body = encode $ object
         [ "query" .= buildQuery maxResults maxComments
         , "variables" .= object [ "searchQuery" .= searchQuery ]
         ]
-  let httpReq = initReq
+  let httpReq = initialRequest
         { method = "POST"
         , requestBody = RequestBodyLBS body
         , requestHeaders =

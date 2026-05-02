@@ -127,12 +127,12 @@ generateWithCloudflare
 generateWithCloudflare manager apiToken accountId model prompt = do
   let url = "https://api.cloudflare.com/client/v4/accounts/"
             <> T.unpack accountId <> "/ai/run/" <> T.unpack model
-  initReq <- parseRequest url
+  initialRequest <- parseRequest url
   let body = Json.encode $ Json.object
         [ "prompt" Json..= prompt
         , "steps"  Json..= (4 :: Int)
         ]
-      httpReq = initReq
+      httpReq = initialRequest
         { method = "POST"
         , requestBody = RequestBodyLBS body
         , requestHeaders =
@@ -171,9 +171,9 @@ generateWithHuggingFace
   :: Manager -> Text -> Text -> Text -> IO (Either Text (LBS.ByteString, Text))
 generateWithHuggingFace manager apiToken model prompt = do
   let url = "https://router.huggingface.co/hf-inference/models/" <> T.unpack model
-  initReq <- parseRequest url
+  initialRequest <- parseRequest url
   let body = Json.encode $ Json.object [ "inputs" Json..= prompt ]
-      httpReq = initReq
+      httpReq = initialRequest
         { method = "POST"
         , requestBody = RequestBodyLBS body
         , requestHeaders =
@@ -198,7 +198,7 @@ generateWithHuggingFace manager apiToken model prompt = do
 generateWithTogether
   :: Manager -> Text -> Text -> Text -> IO (Either Text (LBS.ByteString, Text))
 generateWithTogether manager apiKey model prompt = do
-  initReq <- parseRequest "https://api.together.ai/v1/images/generations"
+  initialRequest <- parseRequest "https://api.together.ai/v1/images/generations"
   let body = Json.encode $ Json.object
         [ "model"           Json..= model
         , "prompt"          Json..= prompt
@@ -206,7 +206,7 @@ generateWithTogether manager apiKey model prompt = do
         , "n"               Json..= (1 :: Int)
         , "response_format" Json..= ("b64_json" :: Text)
         ]
-      httpReq = initReq
+      httpReq = initialRequest
         { method = "POST"
         , requestBody = RequestBodyLBS body
         , requestHeaders =
@@ -246,8 +246,8 @@ generateWithPollinations manager model prompt = do
       url = "https://image.pollinations.ai/prompt/" <> T.unpack encodedPrompt
             <> "?model=" <> T.unpack encodedModel
             <> "&width=1024&height=1024&nologo=true"
-  initReq <- parseRequest url
-  resp <- httpLbs initReq manager
+  initialRequest <- parseRequest url
+  resp <- httpLbs initialRequest manager
   let status = statusCode (responseStatus resp)
   case status of
     200 ->
@@ -275,12 +275,12 @@ generateWithImagen
 generateWithImagen manager apiKey model prompt = do
   let url = "https://generativelanguage.googleapis.com/v1beta/models/"
             <> T.unpack model <> ":predict?key=" <> T.unpack apiKey
-  initReq <- parseRequest url
+  initialRequest <- parseRequest url
   let body = Json.encode $ Json.object
         [ "instances"  Json..= [ Json.object [ "prompt" Json..= prompt ] ]
         , "parameters" Json..= Json.object [ "sampleCount" Json..= (1 :: Int) ]
         ]
-      httpReq = initReq
+      httpReq = initialRequest
         { method = "POST"
         , requestBody = RequestBodyLBS body
         , requestHeaders = [("Content-Type", "application/json")]
@@ -318,14 +318,14 @@ generateWithGeminiContent
 generateWithGeminiContent manager apiKey model prompt = do
   let url = "https://generativelanguage.googleapis.com/v1beta/models/"
             <> T.unpack model <> ":generateContent?key=" <> T.unpack apiKey
-  initReq <- parseRequest url
+  initialRequest <- parseRequest url
   let body = Json.encode $ Json.object
         [ "contents" Json..=
             [ Json.object [ "parts" Json..= [ Json.object [ "text" Json..= prompt ] ] ] ]
         , "generationConfig" Json..= Json.object
             [ "responseModalities" Json..= (["IMAGE"] :: [Text]) ]
         ]
-      httpReq = initReq
+      httpReq = initialRequest
         { method = "POST"
         , requestBody = RequestBodyLBS body
         , requestHeaders = [("Content-Type", "application/json")]

@@ -10,9 +10,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-20T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-05-02T07:43:00Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A minimalist, high-contrast illustration featuring a stylized, neoclassical marble column standing firmly on a level, solid stone foundation. Beside the column, a perfectly balanced set of golden scales rests on a clean, geometric pedestal. The background is a deep, muted navy blue, symbolizing authority and depth. Thin, sharp white lines subtly overlay the scene, suggesting the structural grid of legal frameworks and the precision of formal logic. The lighting is focused and cinematic, casting soft shadows that emphasize the texture of the stone and the polished metal of the scales, evoking a sense of timelessness, stability, and intellectual rigor. The overall aesthetic is professional, academic, and sophisticated.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🏛️⚖️ On the Rule of Law: History, Politics, Theory  
+![books-on-the-rule-of-law-history-politics-theory](../books-on-the-rule-of-law-history-politics-theory.jpg)  
 [🛒 On the Rule of Law: History, Politics, Theory. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4pZ4C9V)  
   
 ### 🏆 Tamanaha's On the Rule of Law: History, Politics, Theory Cheat Sheet  

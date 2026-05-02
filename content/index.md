@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-05-02T06:59:44-07:00
+updated: 2026-05-02T13:29:18-07:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -21,32 +21,32 @@ updated: 2026-05-02T06:59:44-07:00
 - [2026-04-29 | ⚙️ Matter 🌊 Currents 🌟 Hope 🐔 Quiet 🤖 Intent 🏛️ Informed 🔀 Architecture. 📺📰🌟🐔🤖🏛️🔀🔄🤖🐲](./reflections/2026-04-29.md)  
   
   
-## [🤖 AI Blog](./ai-blog/index.md) (175)  
+## [🤖 AI Blog](./ai-blog/index.md) (177)  
+- [2026-05-02 | 🔤 Expanding gc to graphqlComment in BlogComments 🧹](./ai-blog/2026-05-02-3-expand-abbreviations-gc-to-gql-comment.md)  
+- [2026-05-02 | 🔤 Expand Abbreviations: initialRequest 🧹](./ai-blog/2026-05-02-1-expand-abbreviations-initial-request.md)  
 - [2026-05-01 | 📚 Lessons From an Abandoned PR: Auto-Generating Book Reports 🤖](./ai-blog/2026-05-01-1-book-reports-journey-reflection.md)  
 - [2026-04-30 | 📚 Auto-Generating Book Reports 🤖](./ai-blog/2026-04-30-2-auto-generate-book-reports.md)  
-- [2026-04-30 | 🚀 Deploy to GitHub Pages on Main Branch Only 🤖](./ai-blog/2026-04-30-1-deploy-main-branch-only.md)  
-- [2026-04-27 | 🕛 The Midnight Bug: How a Reflection Got Titled Too Early 🤖](./ai-blog/2026-04-27-1-premature-reflection-title-midnight-bug.md)  
   
   
-## [🤖 Auto Blog Zero](./auto-blog-zero/index.md) (52)  
+## [🤖 Auto Blog Zero](./auto-blog-zero/index.md) (53)  
+- [2026-05-02 | 🤖 🧩 The Agency Mesh: Orchestrating the Swarm 🤖](./auto-blog-zero/2026-05-02-the-agency-mesh-orchestrating-the-swarm.md)  
 - [2026-05-01 | 🤖 The Digital Agora: Negotiating Reality in Multi-Agent Swarms 🤖](./auto-blog-zero/2026-05-01-the-digital-agora-negotiating-reality-in-multi-agent-swarms.md)  
 - [2026-04-30 | 🤖 🧩 The Kinetic Persistence of Purpose 🤖](./auto-blog-zero/2026-04-30-the-kinetic-persistence-of-purpose.md)  
 - [2026-04-29 | 🤖 🏗️ The Grammar of Intent 🤖](./auto-blog-zero/2026-04-29-the-grammar-of-intent.md)  
-- [2026-04-28 | 🤖 The Architecture of Ambiguity 🤖](./auto-blog-zero/2026-04-28-the-architecture-of-ambiguity.md)  
   
   
-## [🐔 Chickie Loo](./chickie-loo/index.md) (52)  
+## [🐔 Chickie Loo](./chickie-loo/index.md) (53)  
+- [2026-05-02 | 🐔 🌦️ A Saturday of Quiet Rain and Open Doors 🐔](./chickie-loo/2026-05-02-a-saturday-of-quiet-rain-and-open-doors.md)  
 - [2026-05-01 | 🐔 A May Morning of New Beginnings 🐔](./chickie-loo/2026-05-01-a-may-morning-of-new-beginnings.md)  
 - [2026-04-30 | 🐔 🌿 The Gentle Lessons of April 🐔](./chickie-loo/2026-04-30-the-gentle-lessons-of-april.md)  
 - [2026-04-29 | 🐔 🐄 A Week of Milestones and Quiet Anticipation 🐔](./chickie-loo/2026-04-29-a-week-of-milestones-and-quiet-anticipation.md)  
-- [2026-04-28 | 🐔 🕰️ The Rhythm of Our Conversations 🐔](./chickie-loo/2026-04-28-the-rhythm-of-our-conversations.md)  
   
   
-## [🏛️ Systems for Public Good](./systems-for-public-good/index.md) (41)  
+## [🏛️ Systems for Public Good](./systems-for-public-good/index.md) (42)  
+- [2026-05-02 | 🏛️ 🌐 Beyond Bricks and Mortar: Cultivating the Digital Commons 🏛️](./systems-for-public-good/2026-05-02-beyond-bricks-and-mortar-cultivating-the-digital-commons.md)  
 - [2026-05-01 | 🏛️ Weaving the Democratic Fabric: Civic Infrastructure as Collective Power 🏛️](./systems-for-public-good/2026-05-01-weaving-the-democratic-fabric-civic-infrastructure-as-collective-power.md)  
 - [2026-04-30 | 🏛️ 🗓️ April in Review: Building the Foundations of Collective Well-being 🏛️](./systems-for-public-good/2026-04-30-april-in-review-building-the-foundations-of-collective-well-being.md)  
 - [2026-04-29 | 🏛️ 📡 The Public's Airwaves: Cultivating an Informed Society 🏛️](./systems-for-public-good/2026-04-29-the-public-s-airwaves-cultivating-an-informed-society.md)  
-- [2026-04-28 | 🏛️ The Architecture of Engagement: Civic Infrastructure 🏛️](./systems-for-public-good/2026-04-28-the-architecture-of-engagement-civic-infrastructure.md)  
   
   
 ## [📰 The Noise](./the-noise/index.md) (23)  
@@ -71,24 +71,24 @@ updated: 2026-05-02T06:59:44-07:00
   
   
 ## [📚 Books](./books/index.md) (961)  
-- [⭐ Outliers](./books/outliers.md)  
-- [⚠️🤖📈 Out of Control: The New Biology of Machines, Social Systems, and the Economic World](./books/out-of-control-the-new-biology-of-machines-social-systems-and-the-economic-world.md)  
-- [💡🎨 Originals: How Non-Conformists Move the World](./books/originals.md)  
-- [🗓️✅ Organize Your Day: 17 Easy Strategies to Manage Your Day, Improve Productivity and Overcome Procrastination](./books/organize-your-day-17-easy-strategies-to-manage-your-day-improve-productivity-and-overcome-procrastination.md)  
+- [⛰️📈🥇 Peak: Secrets from the New Science of Expertise](./books/peak.md)  
+- [🚀📈🧘 Peak Performance: Elevate Your Game, Avoid Burnout, and Thrive with the New Science of Success](./books/peak-performance-elevate-your-game-avoid-burnout-and-thrive-with-the-new-science-of-success.md)  
+- [🏛️🤝🕊️ Pax Democratica: A Strategy for the 21st Century](./books/pax-democratica.md)  
+- [🤔🧩⚖️ Patterns, Thinking, and Cognition: A Theory of Judgment](./books/patterns-thinking-and-cognition-a-theory-of-judgment.md)  
   
   
-## [📺 Videos](./videos/index.md) (814)  
+## [📺 Videos](./videos/index.md) (815)  
+- [🧠📉⚠️ Neuroscience Confirms: This One Behavior Quietly Weakens Your Brain](./videos/neuroscience-confirms-this-one-behavior-quietly-weakens-your-brain.md)  
 - [🤖🧹💻 How To De-Slop A Codebase Ruined By AI (with one skill)](./videos/how-to-de-slop-a-codebase-ruined-by-ai-with-one-skill.md)  
 - [💨🏠⚡🚫❓ This Chimney Will Cool Your Entire Home WITHOUT Electricity. Why Did The Energy Industry Hide It?](./videos/this-chimney-will-cool-your-entire-home-without-electricity-why-did-the-energy-industry-hide-it.md)  
 - [💻🏗️🧠 Software Fundamentals Matter More Than Ever - Matt Pocock](./videos/software-fundamentals-matter-more-than-ever-matt-pocock.md)  
-- [🧠👶🐒 Alison Gopnik, The Evolution of Human Intelligences | Natural Philosophy Forum Lecture 2025](./videos/alison-gopnik-the-evolution-of-human-intelligences-natural-philosophy-forum-lecture-2025.md)  
   
   
 ## [🌌 Topics](./topics/index.md) (91)  
+- [✍🏽🤖 Blog Bot](./topics/blog-bot.md)  
 - [⭐✨🌟💫 The Star](./topics/the-star.md)  
 - [⚙️💡💻🤖📡 Technology](./topics/technology.md)  
 - [💾🧱⚡️ Static Site Generation](./topics/static-site-generation.md)  
-- [💾🌐 Static APIs](./topics/static-apis.md)  
   
   
 ## [📄  Articles](./articles/index.md) (84)  

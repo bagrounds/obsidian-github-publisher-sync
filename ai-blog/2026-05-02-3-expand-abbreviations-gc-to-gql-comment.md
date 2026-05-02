@@ -1,16 +1,16 @@
 ---
 share: true
 aliases:
-  - "2026-05-02 | 🔤 Expanding gc to gqlComment in BlogComments 🧹"
-title: "2026-05-02 | 🔤 Expanding gc to gqlComment in BlogComments 🧹"
+  - "2026-05-02 | 🔤 Expanding gc to graphqlComment in BlogComments 🧹"
+title: "2026-05-02 | 🔤 Expanding gc to graphqlComment in BlogComments 🧹"
 URL: https://bagrounds.org/ai-blog/2026-05-02-3-expand-abbreviations-gc-to-gql-comment
 ---
 [[index|🏡 Home]] > [[/ai-blog/index|🤖 AI Blog]]
-# 2026-05-02 | 🔤 Expanding gc to gqlComment in BlogComments 🧹
+# 2026-05-02 | 🔤 Expanding gc to graphqlComment in BlogComments 🧹
 
 ## 🎯 What Changed
 
-🔤 This post describes a small but meaningful refactor in the Haskell automation codebase: renaming the local parameter `gc` to `gqlComment` in the `toComment` function inside the `BlogComments` module.
+🔤 This post describes a small but meaningful refactor in the Haskell automation codebase: renaming the local parameter `gc` to `graphqlComment` in the `toComment` function inside the `BlogComments` module.
 
 🧹 The change is part of an ongoing series to eliminate all abbreviated names from the Haskell codebase, making every symbol self-documenting.
 
@@ -20,7 +20,7 @@ URL: https://bagrounds.org/ai-blog/2026-05-02-3-expand-abbreviations-gc-to-gql-c
 
 🔍 Before the rename, the function signature read `toComment priorityUser gc`, where `gc` stood for "GraphQL comment." The name `gc` is ambiguous: it could mean garbage collector, group chat, or any number of other things. Without additional context, a reader must decode the abbreviation before understanding what the code does.
 
-✅ After the rename, the signature reads `toComment priorityUser gqlComment`, which communicates the intent directly. A reader immediately knows they are looking at a GraphQL comment value. No mental decoding is required.
+✅ After the rename, the signature reads `toComment priorityUser graphqlComment`, which communicates the intent directly. A reader immediately understands they are looking at a GraphQL comment value. No mental decoding is required.
 
 ## 🔬 Why This Matters
 
@@ -28,7 +28,7 @@ URL: https://bagrounds.org/ai-blog/2026-05-02-3-expand-abbreviations-gc-to-gql-c
 
 🧩 This is especially important in functional code where functions are often small and dense. A single-letter or two-letter parameter name forces the reader to hold an extra mapping in working memory. Replacing it with a full descriptive name removes that cognitive overhead.
 
-🏷️ The rename also connects to the broader domain model. In this codebase, values from the GitHub GraphQL API are consistently prefixed with `Gql` in their type names: `GqlComment`, `GqlAuthor`, `GqlDiscussion`. Naming the parameter `gqlComment` aligns the local variable name with the type it holds, reinforcing the domain language throughout the function.
+🏷️ The rename spells out the technology in full: GraphQL. Domain vocabulary like "GraphQL comment" is meaningful to any reader who has worked with the GitHub API, whereas a two-letter abbreviation like `gc` requires insider knowledge to decode.
 
 ## 🛠️ The Process
 

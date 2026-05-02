@@ -122,12 +122,12 @@ instance FromValue GqlResponse where
       <*> v .:? "errors"
 
 toComment :: Maybe Text -> GqlComment -> BlogComment
-toComment priorityUser gqlComment = BlogComment
-  { bcAuthor     = maybe "unknown" gaLogin (gcAuthor gqlComment)
-  , bcBody       = gcBody gqlComment
-  , bcCreatedAt  = gcCreatedAt gqlComment
+toComment priorityUser graphqlComment = BlogComment
+  { bcAuthor     = maybe "unknown" gaLogin (gcAuthor graphqlComment)
+  , bcBody       = gcBody graphqlComment
+  , bcCreatedAt  = gcCreatedAt graphqlComment
   , bcIsPriority = case priorityUser of
-      Just pu -> maybe False (\a -> gaLogin a == pu) (gcAuthor gqlComment)
+      Just pu -> maybe False (\a -> gaLogin a == pu) (gcAuthor graphqlComment)
       Nothing -> False
   }
 

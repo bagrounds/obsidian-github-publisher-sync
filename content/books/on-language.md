@@ -6,9 +6,17 @@ URL: https://bagrounds.org/books/on-language
 share: true
 affiliate link: https://amzn.to/3TLztYD
 CTA: 🗣️ Explore expression.
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_time: 2026-04-26T00:00:00Z
+force_analyze_links: false
+link_analysis_version: "2"
+image_date: 2026-05-02T06:48:42Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A minimalist, high-contrast illustration featuring a stylized human silhouette in profile. Inside the silhouette, instead of a brain, there is a complex, glowing network of interconnected geometric nodes and lines representing a neural structure or a linguistic tree diagram. Faint, ethereal outlines of various global alphabets and abstract symbols float around the silhouette, suggesting the vastness of language. The color palette is deep navy blue and stark white, with subtle accents of warm gold glowing from the center of the neural network to symbolize the spark of innate cognition. The background is a clean, textured off-white, evoking the feeling of a vintage academic paper or a high-quality book cover.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🗣️ On Language  
+![books-on-language](../books-on-language.jpg)  
 [🛒 On Language. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3TLztYD)  
   
 ## 🧐 A Look "On Language": A Report on Noam Chomsky's Foundational Work  

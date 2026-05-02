@@ -13,6 +13,7 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_version: "2"
 link_analysis_time: 2026-04-25T00:00:00Z
 force_analyze_links: false
+book_mention_scanned: 2026-05-01
 ---
 [Home](../index.md) > [Videos](./index.md)  
 # 💨🏠⚡🚫❓ This Chimney Will Cool Your Entire Home WITHOUT Electricity. Why Did The Energy Industry Hide It?  

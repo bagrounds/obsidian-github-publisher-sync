@@ -10,9 +10,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-18T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-05-01T23:44:41Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A towering, monolithic skyscraper made of dark, reflective glass dominates the center of the frame, casting a long, imposing shadow over a miniature city below. The skyscraper is shaped slightly like a gavel, its sharp, geometric edges cutting into a stormy, overcast sky. In the foreground, a single, weathered iron scale of justice sits on a cobblestone street, its balance tipped heavily toward the side of the monolithic tower. The color palette is moody and industrial, utilizing deep charcoal, slate blue, and muted gold accents to evoke a sense of historical gravitas and modern corporate dominance. The overall composition emphasizes the visual contrast between the overwhelming scale of the bigness and the delicate, fragile nature of the legal balance.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 👑⚖️ The Curse of Bigness: Antitrust in the New Gilded Age  
+![books-the-curse-of-bigness-antitrust-in-the-new-gilded-age](../books-the-curse-of-bigness-antitrust-in-the-new-gilded-age.jpg)  
 [🛒 The Curse of Bigness: Antitrust in the New Gilded Age. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4pUfRiO)  
   
 📖 Excessive corporate concentration threatens democracy and economic freedom. We should return to robust antitrust enforcement reminiscent of the Progressive Era.  

@@ -11,9 +11,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-16T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-05-02T08:36:54Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A minimalist, high-contrast composition featuring a vintage wooden desk surface. In the center, a single, high-quality fountain pen rests diagonally across a crisp, blank sheet of white paper. Beside the paper, a small, elegant pair of silver scissors lies partially atop a discarded, crumpled draft, symbolizing the act of editing and removing clutter. The lighting is soft and natural, coming from a nearby window, casting gentle shadows that emphasize the texture of the paper and the grain of the wood. The color palette is muted, focusing on warm wood tones, stark white, and metallic accents, evoking a sense of quiet focus, clarity, and the timeless craft of writing.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # ✍🏼👍🏼 On Writing Well: The Classic Guide to Writing Nonfiction  
+![books-on-writing-well](../books-on-writing-well.jpg)  
 [🛒 On Writing Well: The Classic Guide to Writing Nonfiction. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/45aFANb)  
   
 ## 📖 Book Report: 🖋️ On Writing Well by William Zinsser  

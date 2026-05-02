@@ -10,21 +10,21 @@ URL: https://bagrounds.org/ai-blog/2026-05-02-7-expand-abbreviations-idx-ls-pos
 
 ## 🎯 What We Did
 
-🔤 This session continued the incremental work to eliminate every abbreviation from the Haskell codebase. 📋 The plan in the spec now tracks dozens of abbreviated names across more than a dozen files. 🚀 We completed three more steps: renaming `idx` to `index` in Prompts dot h s, and renaming `ls` to `contentLines` and `pos` to `position` in InternalLinking dot h s.
+🔤 This session continued the incremental work to eliminate every abbreviation from the Haskell codebase. 📋 The plan in the spec now tracks dozens of abbreviated names across more than a dozen files. 🚀 We completed three more steps: renaming `idx` to `index` in the Prompts module, and renaming `ls` to `contentLines` and `pos` to `position` in the InternalLinking module.
 
 ## 🔢 The Three Steps
 
 ### 🏷️ Step One: idx → index in Prompts.hs
 
-🔍 The `stripSubtitle` function splits a post title on the colon character to remove its subtitle portion. 🧩 It called `T.findIndex` to locate the colon and bound the result to a variable named `idx`. 📝 The abbreviation `idx` is a common shorthand for "index" — the kind of mental decoding a reader should never have to do. 🔄 The rename to `index` makes the code read like plain English: find the colon position, then take the title up to that position.
+🔍 The `stripSubtitle` function in the Prompts module splits a post title on the colon character to remove its subtitle portion. 🧩 It called `T.findIndex` to locate the colon and bound the result to a variable named `idx`. 📝 The abbreviation `idx` is a common shorthand for "index" — the kind of mental decoding a reader should never have to do. 🔄 The rename to `index` makes the code read like plain English: find the colon position, then take the title up to that position.
 
 ### 📋 Step Two: ls → contentLines in InternalLinking.hs
 
-🧱 The `extractBody` function strips YAML frontmatter from a file by splitting on newlines and pattern matching on the resulting list. ⚙️ The variable `ls` held that list of lines. 🗂️ The same abbreviation appeared in `updateFrontmatterFields` and as the parameter name in `upsertField`. 🔡 Renaming all three occurrences to `contentLines` removes ambiguity about what the list contains and why it exists.
+🧱 The `extractBody` function in the InternalLinking module strips YAML frontmatter from a file by splitting on newlines and pattern matching on the resulting list. ⚙️ The variable `ls` held that list of lines. 🗂️ The same abbreviation appeared in `updateFrontmatterFields` and as the parameter name in `upsertField`. 🔡 Renaming all three occurrences to `contentLines` removes ambiguity about what the list contains and why it exists.
 
 ### 📍 Step Three: pos → position in InternalLinking.hs
 
-🔗 The `applyOne` helper inside `applyReplacements` applies a single wikilink substitution to a text buffer. 🎯 It used `CD.position candidate` — a character offset into the text — and stored it in a variable named `pos`. ✂️ The function then called `T.take pos` and `T.drop (pos + len)` to splice in the wikilink. 📖 Renaming `pos` to `position` makes those lines read as a direct description of what they do: take the text before the match position, and drop the text after the match position plus its length.
+🔗 The `applyOne` helper inside `applyReplacements` in the InternalLinking module applies a single wikilink substitution to a text buffer. 🎯 It used `CD.position candidate` — a character offset into the text — and stored it in a variable named `pos`. ✂️ The function then called `T.take pos` and `T.drop (pos + len)` to splice in the wikilink. 📖 Renaming `pos` to `position` makes those lines read as a direct description of what they do: take the text before the match position, and drop the text after the match position plus its length.
 
 ## 🧪 Tests and Linting
 

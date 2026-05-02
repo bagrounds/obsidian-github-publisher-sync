@@ -11,9 +11,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-16T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-05-02T03:13:17Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A stylized, minimalist illustration featuring a classical white marble column standing prominently in the center, symbolizing the foundations of democratic history. Surrounding the base of the column are various abstract, overlapping geometric shapes in soft blue, gold, and white, representing the interconnectedness of modern society. A single, stylized ballot paper floats gently toward a transparent, glowing ballot box positioned near the column’s base. In the background, soft, blurred outlines of diverse, indistinct human silhouettes are gathered in a gentle, circular formation, suggesting open discussion and community engagement. The lighting is bright and balanced, casting soft shadows that evoke a sense of clarity, stability, and intellectual rigor. The overall aesthetic is clean, modern, and professional, using a sophisticated color palette of navy, cream, and muted gold.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🏛️🗳️🗣️🤝 On Democracy  
+![books-on-democracy](../books-on-democracy.jpg)  
 by Robert Dahl  
 [🛒 On Democracy. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4dLzFAp)  
   

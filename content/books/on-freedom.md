@@ -11,9 +11,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-20T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-05-02T05:14:09Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A minimalist, conceptual illustration featuring five vertical pillars rising from a solid foundation. The pillars are constructed from diverse, interlocking geometric shapes that represent stability and structure. From the top of these pillars, vibrant, translucent ribbons of light spiral upward into an open, expansive sky, symbolizing growth, mobility, and the transition from static constraints to active potential. The color palette transitions from deep, grounded earth tones at the base to bright, ethereal blues and golds at the top, evoking a sense of clarity and forward momentum. The composition is clean and balanced, emphasizing the idea of freedom as a collaborative, ongoing project of cultivation rather than a solitary state of being.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # ✍️🗽 On Freedom  
+![books-on-freedom](../books-on-freedom.jpg)  
 [🛒 On Freedom. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4knlP9H)  
   
 ## 🤖 AI Summary  

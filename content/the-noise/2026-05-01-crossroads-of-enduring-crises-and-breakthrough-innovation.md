@@ -13,7 +13,7 @@ link_analysis_version: "2"
 link_analysis_time: 2026-05-01T00:00:00Z
 force_analyze_links: false
 ---
-[Home](../index.md) > [📰 The Noise](./index.md) | [⏮️](./2026-04-30-month-s-end-reckoning-conflict-s-echo-progress-s-pulse.md)  
+[Home](../index.md) > [📰 The Noise](./index.md) | [⏮️](./2026-04-30-month-s-end-reckoning-conflict-s-echo-progress-s-pulse.md) [⏭️](./2026-05-02-the-shifting-sands-of-peace-and-innovation-s-march.md)  
 # 2026-05-01 | 📰 ⏳ Crossroads of Enduring Crises and Breakthrough Innovation 📰  
 ![the-noise-2026-05-01-crossroads-of-enduring-crises-and-breakthrough-innovation](../the-noise-2026-05-01-crossroads-of-enduring-crises-and-breakthrough-innovation.jpg)  
   

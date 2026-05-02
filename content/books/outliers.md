@@ -11,9 +11,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-17T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-05-02T13:40:04Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A high-angle, minimalist illustration featuring a single, vibrant golden mountain peak rising prominently above a vast, flat landscape of uniform, grey-toned hills. The golden peak is illuminated by a focused spotlight from above, emphasizing its singular status. Scattered across the flat horizon are several small, identical geometric shapes representing the average, while the golden outlier stands tall and distinct, casting a long, dramatic shadow. The color palette is composed of deep charcoal, slate blue, and a striking, warm metallic gold, creating a sophisticated contrast that represents the themes of individual success, hidden advantages, and the rarity of the outlier experience.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # ⭐ Outliers  
+![books-outliers](../books-outliers.jpg)  
 [🛒 Outliers. As an Amazon Associate I earn from qualifying purchases.](https://www.amazon.com/dp/0316017922?tag=bagrounds-20)  
   
 ## 🤖 AI Summary  

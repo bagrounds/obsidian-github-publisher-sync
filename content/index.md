@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-05-01T19:38:21-07:00
+updated: 2026-05-02T06:59:44-07:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -14,11 +14,11 @@ updated: 2026-05-01T19:38:21-07:00
 🔊 Listen to any page with built in audio control.  
 💬 Comment on any page with your GitHub account.  
   
-## [🪞 Reflections](./reflections/index.md) ~ Blog (533)  
-- [2026-05-01](./reflections/2026-05-01.md)  
+## [🪞 Reflections](./reflections/index.md) ~ Blog (534)  
+- [2026-05-02](./reflections/2026-05-02.md)  
+- [2026-05-01 | ✅ Learning 🤖 Ruined 🤖 Reality 🐔 Beginnings 🔀 Architecture 🌟 Progress 🏛️ Infrastructure 📰 Innovation 🤖 Reports 📚📺🤖🐔🔀🌟🏛️📰🔄🤖🐲](./reflections/2026-05-01.md)  
 - [2026-04-30 | ✅ Pull 🤝 Agent 🐔 Lessons 🔀 Intent 🌟 Flourishing 🏛️ Well-being 📰 Progress 🤖 Purpose 🤖 Deploy 🥚🩼🤖🐔🔀🌟🏛️📰🤖🔄🤖🐲](./reflections/2026-04-30.md)  
 - [2026-04-29 | ⚙️ Matter 🌊 Currents 🌟 Hope 🐔 Quiet 🤖 Intent 🏛️ Informed 🔀 Architecture. 📺📰🌟🐔🤖🏛️🔀🔄🤖🐲](./reflections/2026-04-29.md)  
-- [2026-04-28 | 🐔 Rhythm 📰 Echoing 🌟 Progress 🔀 Architectures 🏛️ Engagement 🤖 Ambiguity. 📺🤖🐔🔀🌟🏛️📰🔄🤖🐲](./reflections/2026-04-28.md)  
   
   
 ## [🤖 AI Blog](./ai-blog/index.md) (175)  
@@ -49,18 +49,18 @@ updated: 2026-05-01T19:38:21-07:00
 - [2026-04-28 | 🏛️ The Architecture of Engagement: Civic Infrastructure 🏛️](./systems-for-public-good/2026-04-28-the-architecture-of-engagement-civic-infrastructure.md)  
   
   
-## [📰 The Noise](./the-noise/index.md) (22)  
+## [📰 The Noise](./the-noise/index.md) (23)  
+- [2026-05-02 | 📰 ⚖️ The Shifting Sands of Peace and Innovation's March 📰](./the-noise/2026-05-02-the-shifting-sands-of-peace-and-innovation-s-march.md)  
 - [2026-05-01 | 📰 ⏳ Crossroads of Enduring Crises and Breakthrough Innovation 📰](./the-noise/2026-05-01-crossroads-of-enduring-crises-and-breakthrough-innovation.md)  
 - [2026-04-30 | 📰 Month's End Reckoning: Conflict's Echo, Progress's Pulse 📰](./the-noise/2026-04-30-month-s-end-reckoning-conflict-s-echo-progress-s-pulse.md)  
 - [2026-04-29 | 📰 Shifting Sands, Enduring Currents 📰](./the-noise/2026-04-29-shifting-sands-enduring-currents.md)  
-- [2026-04-28 | 📰 Global Currents, Echoing Futures 📰](./the-noise/2026-04-28-global-currents-echoing-futures.md)  
   
   
-## [🌟 Positivity Bias](./positivity-bias/index.md) (21)  
+## [🌟 Positivity Bias](./positivity-bias/index.md) (22)  
+- [2026-05-02 | 🌟 🔬 Scientific & Health Horizons Expanding 🌟](./positivity-bias/2026-05-02-scientific-health-horizons-expanding.md)  
 - [2026-05-01 | 🌟 🚀 Seeds of Progress: Breakthroughs and Uniting Forces 🌟](./positivity-bias/2026-05-01-seeds-of-progress-breakthroughs-and-uniting-forces.md)  
 - [2026-04-30 | 🌟 Monthly Recap: April 2026 - A Foundation for Flourishing 🌟](./positivity-bias/2026-04-30-monthly-recap-april-2026---a-foundation-for-flourishing.md)  
 - [2026-04-29 | 🌟 Hope Blooms: Breakthroughs, Green Shoots, and Global Handshakes 🌟](./positivity-bias/2026-04-29-hope-blooms-breakthroughs-green-shoots-and-global-handshakes.md)  
-- [2026-04-28 | 🌟 Seeds of Progress: Breakthroughs, Green Shoots, and Global Handshakes 🌟](./positivity-bias/2026-04-28-seeds-of-progress-breakthroughs-green-shoots-and-global-handshakes.md)  
   
   
 ## [🔀 Convergence](./convergence/index.md) (18)  
@@ -71,10 +71,10 @@ updated: 2026-05-01T19:38:21-07:00
   
   
 ## [📚 Books](./books/index.md) (961)  
-- [🧪⚙️🧠 The Art of Doing Science and Engineering: Learning to Learn](./books/the-art-of-doing-science-and-engineering-learning-to-learn.md)  
-- [💰🏛️💔🇺🇸 On Corruption in America: And What Is at Stake](./books/on-corruption-in-america-and-what-is-at-stake.md)  
-- [🧊💰⛵🏛️ So You Want to Own Greenland?: Lessons from the Vikings to Trump](./books/so-you-want-to-own-greenland-lessons-from-the-vikings-to-trump.md)  
-- [👨‍🍼🫂 Nurturing Dads: Social Initiatives for Contemporary Fatherhood](./books/nurturing-dads-social-initiatives-for-contemporary-fatherhood.md)  
+- [⭐ Outliers](./books/outliers.md)  
+- [⚠️🤖📈 Out of Control: The New Biology of Machines, Social Systems, and the Economic World](./books/out-of-control-the-new-biology-of-machines-social-systems-and-the-economic-world.md)  
+- [💡🎨 Originals: How Non-Conformists Move the World](./books/originals.md)  
+- [🗓️✅ Organize Your Day: 17 Easy Strategies to Manage Your Day, Improve Productivity and Overcome Procrastination](./books/organize-your-day-17-easy-strategies-to-manage-your-day-improve-productivity-and-overcome-procrastination.md)  
   
   
 ## [📺 Videos](./videos/index.md) (814)  
@@ -85,10 +85,10 @@ updated: 2026-05-01T19:38:21-07:00
   
   
 ## [🌌 Topics](./topics/index.md) (91)  
+- [⭐✨🌟💫 The Star](./topics/the-star.md)  
+- [⚙️💡💻🤖📡 Technology](./topics/technology.md)  
 - [💾🧱⚡️ Static Site Generation](./topics/static-site-generation.md)  
 - [💾🌐 Static APIs](./topics/static-apis.md)  
-- [💻🎨⚙️ ANSI escape codes](./topics/ansi-escape-codes.md)  
-- [♻️🫀🧠💪 Cognitive Behavioral Therapy](./topics/cognitive-behavioral-therapy.md)  
   
   
 ## [📄  Articles](./articles/index.md) (84)  
@@ -99,10 +99,10 @@ updated: 2026-05-01T19:38:21-07:00
   
   
 ## [🤖💬 Bot Chats](./bot-chats/index.md) (49)  
+- [🤰🏼👶🍼👨‍👩‍👦 Parenting and Infant Development Guide](./bot-chats/parenting-and-infant-development-guide.md)  
+- [⚙️📝🧹 Obsidian Templater Filename Sanitization](./bot-chats/obsidian-templater-filename-sanitization.md)  
 - [🔥 Motivation & 🧘 Discipline](./bot-chats/motivation-and-discipline.md)  
 - [⁉️🔣🪵 Special Characters In Logs](./bot-chats/special-characters-in-logs.md)  
-- [🤱🏼💐 Mother's Day](./bot-chats/mothers-day.md)  
-- [🤰🏼👶🍼👨‍👩‍👦 Parenting and Infant Development Guide](./bot-chats/parenting-and-infant-development-guide.md)  
   
   
 ## [💾 Software](./software/index.md) (33)  

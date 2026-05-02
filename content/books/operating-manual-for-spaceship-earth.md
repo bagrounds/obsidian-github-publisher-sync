@@ -11,9 +11,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-16T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-05-02T10:26:41Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A minimalist, high-contrast illustration featuring a stylized, translucent geodesic sphere floating in the deep velvet void of space. Inside the delicate, geometric lattice of the sphere, a vibrant, glowing Earth is visible. Thin, elegant white lines trace schematic-like diagrams—gears, solar symbols, and interconnected nodes—that appear to be floating or etched onto the surface of the sphere, suggesting a technical blueprint or instruction manual. The lighting is ethereal and cool, focusing on the contrast between the complex, man-made structural lines of the geodesic dome and the organic, soft blue and green glow of the planet within. The overall aesthetic is clean, visionary, and scientific, evoking the intersection of industrial design and cosmic philosophy.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 📗🚀🌍 Operating Manual for Spaceship Earth  
+![books-operating-manual-for-spaceship-earth](../books-operating-manual-for-spaceship-earth.jpg)  
 [🛒 Operating Manual for Spaceship Earth. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4knXcKd)  
   
 ## 📖 Book Report: Operating Manual for Spaceship Earth 🌍  

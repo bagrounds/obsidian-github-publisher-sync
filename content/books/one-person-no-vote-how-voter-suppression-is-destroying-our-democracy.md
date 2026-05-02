@@ -10,9 +10,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-21T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-05-02T09:31:49Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A dramatic, high-contrast illustration featuring a weathered, antique ballot box sitting in the center. The ballot box is partially transparent, revealing a tangle of red tape and heavy iron chains constricting the slot where ballots should be inserted. In the background, the silhouette of a grand, classical marble courthouse is fractured and crumbling at the edges, casting long, sharp shadows across the floor. The color palette is stark, using deep charcoal, muted slate, and blood-red accents to emphasize the gravity of the subject. A single, crisp white ballot lies discarded and crumpled on the floor in the foreground, just out of reach of the restricted box. The overall mood is somber, urgent, and symbolic of systemic obstruction.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🗳️⬇️🏛️ One Person, No Vote: How Voter Suppression Is Destroying Our Democracy  
+![books-one-person-no-vote-how-voter-suppression-is-destroying-our-democracy](../books-one-person-no-vote-how-voter-suppression-is-destroying-our-democracy.jpg)  
 [🛒 One Person, No Vote: How Voter Suppression Is Destroying Our Democracy. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/47BTSHt)  
   
 🗳️📜 Systemic, often racially motivated, strategies restrict voting access and undermine the foundational principles of American democracy.  

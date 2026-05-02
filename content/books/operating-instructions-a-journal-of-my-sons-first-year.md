@@ -9,9 +9,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-17T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-05-02T10:26:39Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A close-up, top-down view of a cluttered wooden desk bathed in soft, warm morning sunlight. In the center lies an open, well-worn journal with handwritten ink notes and a few coffee ring stains on the pages. Beside the journal sits a pair of oversized, thick-rimmed reading glasses and a small, delicate baby rattle. A single, half-empty mug of coffee with a hint of steam rising from it rests near the edge. The background is softly blurred, suggesting a cozy, lived-in nursery environment with a hint of a knitted baby blanket visible in the corner. The color palette is composed of warm earth tones, soft creams, and gentle shadows, evoking a sense of intimacy, exhaustion, and quiet reflection.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 👶📖 Operating Instructions: A Journal of My Son’s First Year  
+![books-operating-instructions-a-journal-of-my-sons-first-year](../books-operating-instructions-a-journal-of-my-sons-first-year.jpg)  
 [🛒 Operating Instructions: A Journal of My Son’s First Year. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3HoA7by)  
   
 ## 📖 Book Report: Operating Instructions: A Journal of My Son's First Year by Anne Lamott  

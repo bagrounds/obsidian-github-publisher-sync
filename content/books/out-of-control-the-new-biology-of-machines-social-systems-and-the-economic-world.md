@@ -10,9 +10,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-19T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-05-02T13:40:01Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A high-contrast digital illustration featuring a complex, sprawling network that seamlessly transitions from mechanical gears and circuit board traces into organic, glowing root systems and branching neural pathways. At the center, a chaotic, vibrant swarm of geometric nodes forms a hive-like structure, radiating lines of light outward. The background is a deep, dark void, emphasizing the emergent, self-organizing glow of the interconnected web. The aesthetic is sleek and futuristic, blending the cold precision of technology with the fluid, sprawling growth patterns of a biological organism, capturing the essence of decentralized intelligence and complex adaptive systems.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # ⚠️🤖📈 Out of Control: The New Biology of Machines, Social Systems, and the Economic World  
+![books-out-of-control-the-new-biology-of-machines-social-systems-and-the-economic-world](../books-out-of-control-the-new-biology-of-machines-social-systems-and-the-economic-world.jpg)  
 [🛒 Out of Control: The New Biology of Machines, Social Systems, and the Economic World. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/49JB1vh)  
   
 🌍🤖🕸️ Our increasingly complex world functions best when control is decentralized, allowing self-organizing systems, from biological organisms to advanced machines and economies, to emerge and evolve with minimal top-down intervention, embracing unpredictability as a feature, not a bug.  

@@ -38,7 +38,7 @@ These are local bindings inside function bodies. Renaming them does not affect e
 #### BlogComments.hs
 
 - [x] `initReq` → `initialRequest` (local binding for the parsed HTTP request)
-- [ ] `gc` → `gqlComment` (parameter in `toComment`)
+- [x] `gc` → `graphqlComment` (parameter in `toComment`)
 - [ ] `bcAuthor` → `author` (BlogComment record field) — may require moving types to separate modules
 - [ ] `bcBody` → `body` (BlogComment record field)
 - [ ] `bcCreatedAt` → `createdAt` (BlogComment record field)

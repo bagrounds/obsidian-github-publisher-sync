@@ -61,5 +61,21 @@ link_analysis_version: "2"
   
 ## 🔮 Plan  
 ### 🗺️ Design  
+#### Vertical Slices  
+1. Book Identification  
+    1. Maintain a list of books to generate reports for  
+    2. Identify mentioned books that don't have reports in existing content  
+2. Amazon affiliate link construction  
+    1. Discover and validate the book page  
+    2. Construct the affiliate link  
+    3. Store it somewhere  
+3. Report Generation  
+    1. Generate the report with AI  
+    2. Write it to a new file with the appropriate template  
+    3. Link to it from daily reflection  
   
 ### 🪜 Steps  
+  
+## 🪵 Log  
+### [2026-05-01](../reflections/2026-05-01.md)  
+- [2026-05-01 | 📚 Lessons From an Abandoned PR: Auto-Generating Book Reports 🤖](../ai-blog/2026-05-01-1-book-reports-journey-reflection.md)

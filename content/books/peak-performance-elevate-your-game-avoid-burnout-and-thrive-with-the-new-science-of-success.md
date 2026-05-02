@@ -10,9 +10,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-17T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-05-02T19:34:02Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: "A minimalist, high-contrast illustration featuring a stylized, ascending mountain path that transforms into a smooth, flowing wave. The composition is split vertically: the left side uses sharp, geometric lines representing intense focus, structure, and deep work, while the right side features soft, organic curves representing rest, mindfulness, and recovery. A glowing, golden sun rises at the intersection of these two paths, symbolizing the balance of the growth equation. The color palette uses deep navy and slate gray for the structural elements, contrasted by warm amber and sage green for the restorative elements. The overall aesthetic is clean, modern, and professional, emphasizing clarity and sustainable progress without clutter."
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🚀📈🧘 Peak Performance: Elevate Your Game, Avoid Burnout, and Thrive with the New Science of Success  
+![books-peak-performance-elevate-your-game-avoid-burnout-and-thrive-with-the-new-science-of-success](../books-peak-performance-elevate-your-game-avoid-burnout-and-thrive-with-the-new-science-of-success.jpg)  
 [🛒 Peak Performance: Elevate Your Game, Avoid Burnout, and Thrive with the New Science of Success. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3HDF0xm)  
   
 ## 🏆 Stulberg & Magness' Peak Performance  

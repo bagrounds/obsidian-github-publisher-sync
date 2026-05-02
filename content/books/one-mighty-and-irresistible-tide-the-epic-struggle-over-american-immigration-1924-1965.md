@@ -10,9 +10,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-19T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-05-02T08:36:58Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: "A stylized, double-exposure illustration. In the foreground, a silhouette of a classic 1920s-era government document or legislative seal, its edges fraying into paper dust. Within the silhouette, a vibrant, modern ocean tide rises, transitioning from grayscale historical imagery at the bottom—depicting steamships and crowded ports—to a colorful, diverse mosaic of faces and landscapes at the crest of the wave. The background is a minimalist, split-tone aesthetic: a rigid, stark grid representing the restrictive quotas of 1924 on one side, which dissolves into organic, fluid watercolor washes on the other, symbolizing the transformative 1965 Act. The overall composition suggests a powerful, unstoppable historical shift from confinement toward a multicultural horizon."
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🌊🌎 One Mighty and Irresistible Tide: The Epic Struggle Over American Immigration, 1924-1965  
+![books-one-mighty-and-irresistible-tide-the-epic-struggle-over-american-immigration-1924-1965](../books-one-mighty-and-irresistible-tide-the-epic-struggle-over-american-immigration-1924-1965.jpg)  
 [🛒 One Mighty and Irresistible Tide: The Epic Struggle Over American Immigration, 1924-1965. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4qMD0Ve)  
   
 🇺🇸🗽📖 Unravel the complex, often racist, political machinations behind American immigration policy from the restrictive 1924 National Origins Act to the transformative 1965 Immigration and Nationality Act, revealing how a few dedicated individuals ultimately redefined the very essence of American identity.  

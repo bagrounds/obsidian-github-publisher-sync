@@ -12,9 +12,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-15T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-05-02T20:21:01Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A minimalist, high-contrast illustration featuring a stylized mountain peak rising against a clean, geometric background. The mountain is constructed from ascending, layered topographic lines that transition into an upward-trending bar graph toward the summit. A single, glowing golden light illuminates the very tip of the peak, representing the pinnacle of expertise. The color palette uses deep navy, slate gray, and vibrant gold accents. The style is clean, modern, and vector-based, emphasizing structural growth, clarity, and the steady climb toward mastery through focused, deliberate effort. No textures or realistic shading; just sharp, deliberate lines that symbolize the precision of cognitive training.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # ⛰️📈🥇 Peak: Secrets from the New Science of Expertise  
+![books-peak](../books-peak.jpg)  
 [🛒 Peak: Secrets from the New Science of Expertise. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/448T3mz)  
   
 ## 🤖 AI Summary  

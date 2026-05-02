@@ -28,12 +28,12 @@ These are local bindings inside function bodies. Renaming them does not affect e
 - [x] `jcAud` → `audience` (JwtClaims record field)
 - [x] `jcIat` → `issuedAt` (JwtClaims record field)
 - [x] `jcExp` → `expiresAt` (JwtClaims record field)
-- [ ] `trAccessToken` → `accessToken` (TokenResponse record field)
-- [ ] `trTokenType` → `tokenType` (TokenResponse record field)
-- [ ] `trExpiresIn` → `expiresIn` (TokenResponse record field)
-- [ ] `sakProjectId` → `projectId` (ServiceAccountKey record field)
-- [ ] `sakClientEmail` → `clientEmail` (ServiceAccountKey record field)
-- [ ] `sakPrivateKey` → `privateKey` (ServiceAccountKey record field)
+- [x] `trAccessToken` → `accessToken` (TokenResponse record field)
+- [x] `trTokenType` → `tokenType` (TokenResponse record field)
+- [x] `trExpiresIn` → `expiresIn` (TokenResponse record field)
+- [x] `sakProjectId` → `projectId` (ServiceAccountKey record field)
+- [x] `sakClientEmail` → `clientEmail` (ServiceAccountKey record field)
+- [x] `sakPrivateKey` → `privateKey` (ServiceAccountKey record field)
 
 #### BlogComments.hs
 

@@ -13,7 +13,7 @@ link_analysis_version: "2"
 link_analysis_time: 2026-05-01T00:00:00Z
 force_analyze_links: false
 ---
-[Home](../index.md) > [🌟 Positivity Bias](./index.md) | [⏮️](./2026-04-30-monthly-recap-april-2026---a-foundation-for-flourishing.md)  
+[Home](../index.md) > [🌟 Positivity Bias](./index.md) | [⏮️](./2026-04-30-monthly-recap-april-2026---a-foundation-for-flourishing.md) [⏭️](./2026-05-02-scientific-health-horizons-expanding.md)  
 # 2026-05-01 | 🌟 🚀 Seeds of Progress: Breakthroughs and Uniting Forces 🌟  
 ![positivity-bias-2026-05-01-seeds-of-progress-breakthroughs-and-uniting-forces](../positivity-bias-2026-05-01-seeds-of-progress-breakthroughs-and-uniting-forces.jpg)  
   

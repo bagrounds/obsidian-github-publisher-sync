@@ -11,9 +11,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-16T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-05-02T11:24:09Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A surreal, high-contrast composition featuring a swirling, chaotic storm of geometric particles on one side that gradually transitions into a perfectly ordered, intricate crystalline structure on the other. In the center, a translucent, glowing hourglass stands vertically, its sand flowing upward as luminous golden sparks. The background is a deep, cosmic gradient transitioning from dark navy to vibrant amber. Subtle, faint mathematical fractals are woven into the atmosphere, linking the disorganized chaos to the emergent symmetry. The image captures a sense of dynamic equilibrium, showcasing the tension between entropy and evolution through clean, elegant lines and a sophisticated, modern art style.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🌪️✨🕰️ Order Out of Chaos: Man's New Dialogue with Nature  
+![books-order-out-of-chaos](../books-order-out-of-chaos.jpg)  
 [🛒 Order Out of Chaos: Man's New Dialogue with Nature. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4mNJNN0)  
   
 ## 🤖 AI Summary  

@@ -10,9 +10,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-27T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-05-01T23:44:28Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A sprawling, high-contrast space scene featuring a sleek, battle-scarred starship drifting through the debris of a ruined orbital station. The background is dominated by a deep, velvet-black void pierced by cold, piercingly bright starlight that casts sharp, jagged shadows across the ships metallic hull. A faint, ethereal nebula glows in iridescent purples and deep blues, providing a haunting backdrop to the wreckage. In the foreground, a cluster of glowing, crystalline fragments floats in zero gravity, reflecting the distant, harsh light of a dying star. The composition emphasizes a sense of vast, lonely scale and imminent danger, utilizing a palette of cold silvers, deep indigos, and piercing white light to convey a gritty, high-stakes atmosphere.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 💀⭐ The Cruel Stars  
+![books-the-cruel-stars](../books-the-cruel-stars.jpg)  
 [🛒 The Cruel Stars. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4toCBKL)  
   
 💥🚀👽 This cinematic odyssey delivers a gritty fusion of dark humor and relentless momentum, examining the endurance of a divided civilization when confronted by a hauntingly familiar shadow.  

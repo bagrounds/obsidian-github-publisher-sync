@@ -3,7 +3,7 @@ share: true
 aliases:
   - 💾🧱⚡️ Static Site Generation
 title: 💾🧱⚡️ Static Site Generation
-URL: https://bagrounds.org/software/static-site-generation
+URL: https://bagrounds.org/topics/static-site-generation
 link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-15T00:00:00Z
 force_analyze_links: false
@@ -11,6 +11,7 @@ image_date: 2026-04-10T11:26:58Z
 image_model: "@cf/black-forest-labs/flux-1-schnell"
 image_prompt: A clean, isometric digital illustration featuring a stack of minimalist, glowing building blocks—representing modular web components—being assembled by a stylized, abstract robotic arm. The blocks are translucent and vibrant, emitting soft light. In the background, a series of sleek, simplified architectural blueprints or wireframe outlines of web pages float in a deep-space environment. A stylized lightning bolt icon, rendered in a clean geometric style, sits prominently above the structure, symbolizing speed and energy. The color palette uses deep navy and charcoal grays contrasted with vivid neon accents like cyan, electric purple, and orange. The overall composition is balanced and modern, conveying precision, structural integrity, and high-performance technology.
 link_analysis_version: "2"
+updated: 2026-05-02T01:48:47
 ---
 [Home](../index.md) > [Topics](./index.md)  
 # 💾🧱⚡️ Static Site Generation  
@@ -150,3 +151,11 @@ SSG evolved to address the performance limitations of dynamic websites. 🌐 Ear
 - **Accessible:** "HTML and CSS: Design and Build Websites" by Jon Duckett 🌐  
   
 ### 📺 Links To Relevant YouTube Channels Or Videos  
+  
+## 🦋 Bluesky    
+<blockquote class="bluesky-embed" data-bluesky-uri="at://did:plc:i4yli6h7x2uoj7acxunww2fc/app.bsky.feed.post/3mktjnfgttp2s" data-bluesky-cid="bafyreialwnocwrko4gbp2ax7edy6rmqzfg7iwu4yo5vwtksgca2m2izzre"><p>💾🧱⚡️ Static Site Generation  
+  
+#AI Q: 🚀 Is speed worth the sacrifice of dynamic content in your web projects?  
+  
+🌐 Web Development | 🚀 Performance Optimization | 📦 Build Tools | 📝 Content Management  
+https://bagrounds.org/topics/static-site-generation</p>&mdash; <a href="https://bsky.app/profile/did:plc:i4yli6h7x2uoj7acxunww2fc?ref_src=embed">Bryan Grounds (@bagrounds.bsky.social)</a> <a href="https://bsky.app/profile/did:plc:i4yli6h7x2uoj7acxunww2fc/post/3mktjnfgttp2s?ref_src=embed">2026-05-02T01:48:58.000Z</a></blockquote><script async src="https://embed.bsky.app/static/embed.js" charset="utf-8"></script>

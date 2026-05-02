@@ -12,9 +12,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-15T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-05-01T23:28:51Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A top-down, minimalist illustration featuring a clean, white tabletop. In the center, a simple wooden maze is laid out with a single, clear path toward an exit. Resting near the entrance of the maze is a pair of human hands, with one index finger gently pushing a small, vibrant green marble toward the correct path. Surrounding the maze are several abstract icons representing health (a stylized apple), wealth (a small stack of coins), and happiness (a subtle sunburst), all rendered in soft, modern geometric shapes. The lighting is bright and even, casting soft shadows that emphasize the tactile nature of the objects. The overall aesthetic is professional, uncluttered, and conceptual, highlighting the theme of subtle guidance and decision architecture.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 👉🤏 Nudge: Improving Decisions about Health, Wealth, and Happiness  
+![books-nudge](../books-nudge.jpg)  
 [🛒 Nudge: Improving Decisions about Health, Wealth, and Happiness. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3ZLXT7C)  
   
 ## 🤖 AI Summary  

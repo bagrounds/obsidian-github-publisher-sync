@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-05-01T14:53:27-07:00
+updated: 2026-05-01T19:38:21-07:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -21,11 +21,11 @@ updated: 2026-05-01T14:53:27-07:00
 - [2026-04-28 | 🐔 Rhythm 📰 Echoing 🌟 Progress 🔀 Architectures 🏛️ Engagement 🤖 Ambiguity. 📺🤖🐔🔀🌟🏛️📰🔄🤖🐲](./reflections/2026-04-28.md)  
   
   
-## [🤖 AI Blog](./ai-blog/index.md) (174)  
+## [🤖 AI Blog](./ai-blog/index.md) (175)  
+- [2026-05-01 | 📚 Lessons From an Abandoned PR: Auto-Generating Book Reports 🤖](./ai-blog/2026-05-01-1-book-reports-journey-reflection.md)  
 - [2026-04-30 | 📚 Auto-Generating Book Reports 🤖](./ai-blog/2026-04-30-2-auto-generate-book-reports.md)  
 - [2026-04-30 | 🚀 Deploy to GitHub Pages on Main Branch Only 🤖](./ai-blog/2026-04-30-1-deploy-main-branch-only.md)  
 - [2026-04-27 | 🕛 The Midnight Bug: How a Reflection Got Titled Too Early 🤖](./ai-blog/2026-04-27-1-premature-reflection-title-midnight-bug.md)  
-- [2026-04-24 | 🔍 Improving Gemini API Observability 🤖](./ai-blog/2026-04-24-1-rca-gemini-flash-grounding-logs.md)  
   
   
 ## [🤖 Auto Blog Zero](./auto-blog-zero/index.md) (52)  
@@ -70,25 +70,25 @@ updated: 2026-05-01T14:53:27-07:00
 - [2026-04-28 | 🔀 The Architectures of Well-Being: Convergence in Care, Cognition, and Collective Futures 🔀](./convergence/2026-04-28-the-architectures-of-well-being-convergence-in-care-cognition-and-collective-futures.md)  
   
   
-## [📚 Books](./books/index.md) (960)  
-- [🕊️🤝 Nonviolent Communication: A Language of Life](./books/nonviolent-communication.md)  
-- [🦋🌀💥🤖 Nonlinear Dynamics and Chaos: With Applications to Physics, Biology, Chemistry, and Engineering](./books/nonlinear-dynamics-and-chaos.md)  
-- [🙉📢😵‍💫🔇 Noise: A Flaw in Human Judgment](./books/noise.md)  
-- [💔👊⚖️ Nobody's Girl: A Memoir of Surviving Abuse and Fighting for Justice](./books/nobodys-girl-a-memoir-of-surviving-abuse-and-fighting-for-justice.md)  
+## [📚 Books](./books/index.md) (961)  
+- [🧪⚙️🧠 The Art of Doing Science and Engineering: Learning to Learn](./books/the-art-of-doing-science-and-engineering-learning-to-learn.md)  
+- [💰🏛️💔🇺🇸 On Corruption in America: And What Is at Stake](./books/on-corruption-in-america-and-what-is-at-stake.md)  
+- [🧊💰⛵🏛️ So You Want to Own Greenland?: Lessons from the Vikings to Trump](./books/so-you-want-to-own-greenland-lessons-from-the-vikings-to-trump.md)  
+- [👨‍🍼🫂 Nurturing Dads: Social Initiatives for Contemporary Fatherhood](./books/nurturing-dads-social-initiatives-for-contemporary-fatherhood.md)  
   
   
 ## [📺 Videos](./videos/index.md) (814)  
 - [🤖🧹💻 How To De-Slop A Codebase Ruined By AI (with one skill)](./videos/how-to-de-slop-a-codebase-ruined-by-ai-with-one-skill.md)  
+- [💨🏠⚡🚫❓ This Chimney Will Cool Your Entire Home WITHOUT Electricity. Why Did The Energy Industry Hide It?](./videos/this-chimney-will-cool-your-entire-home-without-electricity-why-did-the-energy-industry-hide-it.md)  
 - [💻🏗️🧠 Software Fundamentals Matter More Than Ever - Matt Pocock](./videos/software-fundamentals-matter-more-than-ever-matt-pocock.md)  
 - [🧠👶🐒 Alison Gopnik, The Evolution of Human Intelligences | Natural Philosophy Forum Lecture 2025](./videos/alison-gopnik-the-evolution-of-human-intelligences-natural-philosophy-forum-lecture-2025.md)  
-- [🏛️🗣️🗓️ Politics Chat, November 18, 2025](./videos/politics-chat-november-18-2025.md)  
   
   
 ## [🌌 Topics](./topics/index.md) (91)  
+- [💾🧱⚡️ Static Site Generation](./topics/static-site-generation.md)  
+- [💾🌐 Static APIs](./topics/static-apis.md)  
 - [💻🎨⚙️ ANSI escape codes](./topics/ansi-escape-codes.md)  
 - [♻️🫀🧠💪 Cognitive Behavioral Therapy](./topics/cognitive-behavioral-therapy.md)  
-- [📚⚓ Books Removed From Naval Academy Library](./topics/books-removed-from-naval-academy-library.md)  
-- [⚛️ Quantum Computing](./topics/quantum-computing.md)  
   
   
 ## [📄  Articles](./articles/index.md) (84)  

@@ -12,9 +12,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-17T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-05-02T01:46:53Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A neoclassical marble pillar, representing a government institution, stands prominently in the center of the frame. The pillar is visibly cracking, with jagged fissures running from the base to the capital. Inside the cracks, instead of stone, there is a glowing, liquid gold texture that seems to be widening the fractures. Surrounding the base of the pillar are scattered, weathered pieces of paper and official-looking wax seals, suggesting crumbling bureaucracy. The background is a moody, desaturated twilight blue, contrasting sharply with the warm, greedy glow of the gold seeping through the stone. The composition is minimalist and stark, emphasizing the tension between structural integrity and the corrosive influence of wealth.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 💰🏛️💔🇺🇸 On Corruption in America: And What Is at Stake  
+![books-on-corruption-in-america-and-what-is-at-stake](../books-on-corruption-in-america-and-what-is-at-stake.jpg)  
 [🛒 On Corruption in America: And What Is at Stake. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3SDyzNj)  
   
 ## 🤖 AI Summary  

@@ -9,9 +9,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-18T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-05-02T00:44:23Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A modern, diverse father figure with a gentle, engaged expression warmly embraces a young child. Their hands are intertwined, emphasizing a deep emotional connection. In the background, soft, interconnected abstract shapes or blurred figures subtly hint at a supportive community or social network. The color palette features inviting gradients of soft blues, greens, and warm yellows, creating an atmosphere of care, growth, and collective support for contemporary fatherhood.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 👨‍🍼🫂 Nurturing Dads: Social Initiatives for Contemporary Fatherhood  
+![books-nurturing-dads-social-initiatives-for-contemporary-fatherhood](../books-nurturing-dads-social-initiatives-for-contemporary-fatherhood.jpg)  
 [🛒 Nurturing Dads: Social Initiatives for Contemporary Fatherhood. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4kapJlD)  
   
 ## 📚 Book Report: 🫂 Nurturing Dads: 🏛️ Social Initiatives for Contemporary Fatherhood  

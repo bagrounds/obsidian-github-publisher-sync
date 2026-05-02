@@ -10,9 +10,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-24T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-05-02T00:45:04Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: An icy, stylized silhouette of Greenland dominates the center, shimmering with cool blues and whites. From the left, a traditional Viking longship, with a detailed dragon figurehead, sails towards its coast. From the right, a sleek, modern icebreaker cuts through stylized waves, representing contemporary interests. Above Greenland, a subtle, golden crown or a target symbol hovers, signifying desirability and contested ownership. Embedded within the icy landmass are glints of abstract gold or precious crystals, hinting at valuable resources. The background features swirling lines that suggest ocean currents and geopolitical influence.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🧊💰⛵🏛️ So You Want to Own Greenland?: Lessons from the Vikings to Trump  
+![books-so-you-want-to-own-greenland-lessons-from-the-vikings-to-trump](../books-so-you-want-to-own-greenland-lessons-from-the-vikings-to-trump.jpg)  
 [🛒 So You Want to Own Greenland?: Lessons from the Vikings to Trump. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4pxdSAE)  
   
 🧊🗺️💼 Unpacks Greenland's millennia-long history as a geopolitical chess piece, from Viking settlements to modern-day resource and strategic competition among global powers, underscoring its enduring allure and the complex challenges of true sovereignty.  

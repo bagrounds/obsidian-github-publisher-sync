@@ -9,6 +9,10 @@ Platform:
 Channel: Matt Pocock
 tags:
 youtube: https://youtu.be/3MP8D-mdheA
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_version: "2"
+link_analysis_time: 2026-05-01T00:00:00Z
+force_analyze_links: false
 ---
 [Home](../index.md) > [Videos](./index.md)  
 # 🤖🧹💻 How To De-Slop A Codebase Ruined By AI (with one skill)  

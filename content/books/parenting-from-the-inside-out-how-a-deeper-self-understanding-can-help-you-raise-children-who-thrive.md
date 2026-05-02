@@ -9,9 +9,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-16T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-05-02T16:26:55Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A split-composition illustration showing a silhouette of an adult on the left and a child on the right, connected by a glowing, intricate network of light representing neural pathways and roots. Inside the adults silhouette, a soft, warm light radiates from the chest area, reflecting outward like a mirror. The background is a serene, soft-focus forest floor with young green sprouts emerging from rich soil. The color palette features calming teals, earthy browns, and warm golden light. The overall mood is introspective, organic, and nurturing, emphasizing the theme of internal growth fostering external development.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🤱🏼🤿🪞🌱 Parenting from the Inside Out: How a Deeper Self-Understanding Can Help You Raise Children Who Thrive  
+![books-parenting-from-the-inside-out-how-a-deeper-self-understanding-can-help-you-raise-children-who-thrive](../books-parenting-from-the-inside-out-how-a-deeper-self-understanding-can-help-you-raise-children-who-thrive.jpg)  
 [🛒 Parenting from the Inside Out: How a Deeper Self-Understanding Can Help You Raise Children Who Thrive. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4ebCxGV)  
   
 ## 📖 Book Report: Parenting from the Inside Out  

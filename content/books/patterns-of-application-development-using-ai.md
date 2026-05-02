@@ -10,9 +10,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-27T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-05-02T17:30:36Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A clean, isometric digital illustration featuring a central, glowing neural network core depicted as a complex crystalline structure. Surrounding this core are interconnected modular blocks and geometric puzzle pieces in shades of deep blue, tech-teal, and soft gold. Thin, luminous circuit-like pathways connect these modules, representing data flow and architectural integration. The composition feels balanced and professional, suggesting structural integrity and systematic design. The background is a minimalist, soft-gradient slate gray, emphasizing the clean lines and modern aesthetic of the tech components. The overall visual language communicates precision, scalability, and the sophisticated intersection of software engineering and artificial intelligence.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🤖🧩 Patterns of Application Development Using AI  
+![books-patterns-of-application-development-using-ai](../books-patterns-of-application-development-using-ai.jpg)  
 [🛒 Patterns of Application Development Using AI. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4oKCExg)  
   
 🗺️🤖 Architectural patterns and practical strategies for building robust, scalable, intelligent applications.  

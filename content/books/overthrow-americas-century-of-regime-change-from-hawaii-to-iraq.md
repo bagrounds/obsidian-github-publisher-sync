@@ -10,9 +10,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-20T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-05-02T15:26:55Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A stylized, high-contrast illustration featuring a large, weathered stone pedestal standing in the center of a desert landscape. Resting atop the pedestal is a classic marble bust of a historical leader, but it is cracked and toppling over, mid-fall. In the background, a vast, swirling map of the globe is rendered in muted, vintage sepia tones. Faint, jagged lines of red ink stretch across the map, connecting various points like Hawaii, Iran, and Latin America, suggesting a tangled web of influence. The lighting is dramatic, with long, stark shadows stretching across the ground, evoking a sense of historical weight and the instability of power. The overall aesthetic is gritty, editorial, and documentary-focused, utilizing a palette of deep blues, charcoal greys, and burnt oranges.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🇺🇸💥🏛️ Overthrow: America's Century of Regime Change from Hawaii to Iraq  
+![books-overthrow-americas-century-of-regime-change-from-hawaii-to-iraq](../books-overthrow-americas-century-of-regime-change-from-hawaii-to-iraq.jpg)  
 [🛒 Overthrow: America's Century of Regime Change from Hawaii to Iraq. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3YnPR3N)  
   
 🌍💥📜 Stephen Kinzer's Overthrow details America's century-long pattern of orchestrating regime changes globally, from Hawaii to Iraq, revealing a consistent, often detrimental, foreign policy strategy.  

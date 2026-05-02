@@ -9,9 +9,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-25T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-05-02T16:26:57Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A warm, professional illustration featuring a stylized, diverse group of people sitting in a circle in a bright, modern clinical setting. At the center of the circle, a large, glowing puzzle piece shaped like a heart connects to smaller, interconnected icons representing various healthcare elements—a stethoscope, a clipboard, a speech bubble, and an open hand. The color palette uses calming blues, soft greens, and warm oranges to evoke trust and collaboration. The lighting is soft and natural, streaming through a large window, symbolizing clarity and transparency. The composition emphasizes partnership, open communication, and the human-centric nature of patient advocacy, with the figures leaning in toward one another in an engaged, supportive dialogue.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🧑‍⚕️🗣️ Patient Advocacy for Health Care Quality: Strategies for Achieving Patient-Centered Care  
+![books-patient-advocacy-for-health-care-quality-strategies-for-achieving-patient-centered-care](../books-patient-advocacy-for-health-care-quality-strategies-for-achieving-patient-centered-care.jpg)  
 [🛒 Patient Advocacy for Health Care Quality: Strategies for Achieving Patient-Centered Care. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4kHFy3z)  
   
 ## 📚 Book Report: 🗣️ Patient Advocacy for Health Care Quality: 🎯 Strategies for Achieving Patient-Centered Care  

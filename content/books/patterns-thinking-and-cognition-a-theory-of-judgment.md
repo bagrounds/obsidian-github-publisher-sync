@@ -7,11 +7,16 @@ share: true
 CTA: 🧠 Understand decisions.
 affiliate link: https://amzn.to/45TIJ2t
 link_analysis_model: gemini-3.1-flash-lite-preview
-link_analysis_time: 2026-04-01T00:00:00Z
+link_analysis_time: 2026-04-16T00:00:00Z
 force_analyze_links: false
+link_analysis_version: "2"
+image_date: 2026-05-02T18:26:35Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A conceptual illustration featuring a complex, abstract mosaic puzzle being assembled in mid-air. The puzzle pieces are translucent and organic in shape, glowing with soft light as they click together to form a coherent, shifting image of a human profile. Floating around the central assembly are stylized, faint silhouettes of a balanced scale and geometric patterns, representing the intersection of logic and intuition. The background is a deep, muted navy blue with subtle, interconnected neural-like lines connecting the drifting pieces, emphasizing the evolution of cognitive patterns. The lighting is cinematic, highlighting the interplay between the chaotic, unformed fragments and the structured, emerging clarity of the central shape.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🤔🧩⚖️ Patterns, Thinking, and Cognition: A Theory of Judgment  
+![books-patterns-thinking-and-cognition-a-theory-of-judgment](../books-patterns-thinking-and-cognition-a-theory-of-judgment.jpg)  
 [🛒 Patterns, Thinking, and Cognition: A Theory of Judgment. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/45TIJ2t)  
   
 ## 📚 Book Report: 🧠 Patterns, Thinking, and Cognition: 💡 A Theory of Judgment  

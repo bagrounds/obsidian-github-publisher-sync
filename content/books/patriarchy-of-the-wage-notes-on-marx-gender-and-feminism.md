@@ -10,9 +10,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-26T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-05-02T17:30:33Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A minimalist, high-contrast illustration featuring a stylized, mechanical factory gear intertwined with a delicate, flowing organic vine. The gear, representing industrial capitalism and the traditional wage, is rusted and rigid, while the vine—symbolizing reproductive labor—is vibrant and burgeoning with small, blossoming flowers. At the base of the gear, several scattered, translucent coin shapes are being slowly absorbed or transformed by the roots of the vine. The background is a stark, monochromatic slate gray, emphasizing the tension between the cold, structured world of production and the vital, invisible energy of care work. The lighting is dramatic, highlighting the contrast between the sharp edges of the metal and the soft, organic curves of the plant life.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # ♂️💰♀️🚩 Patriarchy of the Wage: Notes on Marx, Gender, and Feminism  
+![books-patriarchy-of-the-wage-notes-on-marx-gender-and-feminism](../books-patriarchy-of-the-wage-notes-on-marx-gender-and-feminism.jpg)  
 [🛒 Patriarchy of the Wage: Notes on Marx, Gender, and Feminism. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4qddQ1t)  
   
 💡✊🌍 Redefine Marxist analysis by foregrounding the critical role of women's unwaged reproductive labor in capitalist accumulation and urging a radical political rethinking beyond traditional class struggle.  

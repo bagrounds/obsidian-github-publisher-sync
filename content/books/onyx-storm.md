@@ -11,9 +11,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-21T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-05-02T09:31:52Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A majestic, obsidian-scaled dragon with glowing violet eyes coiled atop a jagged, rain-slicked mountain peak. The dragon’s wings are partially unfurled, casting a wide shadow over the treacherous terrain. In the background, a turbulent, ink-black sky is illuminated by jagged bolts of white and electric-blue lightning. Heavy rain streaks the atmosphere, blurring the edges of the distant, ominous cliffs. The overall color palette is a high-contrast blend of deep charcoals, midnight blues, and brilliant, piercing flashes of light, evoking a sense of high-stakes tension, dark fantasy, and raw elemental power.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🖤🐲⛈️ Onyx Storm  
+![books-onyx-storm](../books-onyx-storm.jpg)  
 [🛒 Onyx Storm. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3Z95D3u)  
   
 ## 🤖 AI Summary  

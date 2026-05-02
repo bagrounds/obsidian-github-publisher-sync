@@ -506,7 +506,7 @@ runDailyAnalytics context = do
           logMsg $ "  ❌ Failed to parse service account key: " <> err
           logMsg "✅ daily-analytics (error)"
         Right serviceAccount -> do
-          logMsg $ "  🔑 Service account: " <> GcpAuth.sakClientEmail serviceAccount
+          logMsg $ "  🔑 Service account: " <> GcpAuth.clientEmail serviceAccount
           tokenResult <- GcpAuth.getAccessTokenWithScope GA.analyticsReadonlyScope manager serviceAccount
           case tokenResult of
             Left err -> do

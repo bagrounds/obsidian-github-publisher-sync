@@ -49,9 +49,9 @@ import Network.HTTP.Client
 import Network.HTTP.Types.Status (statusCode)
 
 data ServiceAccountKey = ServiceAccountKey
-  { sakProjectId   :: Text
-  , sakClientEmail :: Text
-  , sakPrivateKey  :: Text
+  { projectId    :: Text
+  , clientEmail  :: Text
+  , privateKey   :: Text
   } deriving (Show, Eq)
 
 instance FromValue ServiceAccountKey where
@@ -70,9 +70,9 @@ data JwtClaims = JwtClaims
   } deriving (Show, Eq)
 
 data TokenResponse = TokenResponse
-  { trAccessToken :: Text
-  , trTokenType   :: Text
-  , trExpiresIn   :: Int
+  { accessToken :: Text
+  , tokenType   :: Text
+  , expiresIn   :: Int
   } deriving (Show, Eq)
 
 instance FromValue TokenResponse where
@@ -108,9 +108,9 @@ parseServiceAccountKey raw =
   in case decoded of
     Left err -> Left err
     Right key
-      | T.null (sakProjectId key)   -> Left "Service account key must contain project_id"
-      | T.null (sakClientEmail key) -> Left "Service account key must contain client_email"
-      | T.null (sakPrivateKey key)  -> Left "Service account key must contain private_key"
+      | T.null (projectId key)   -> Left "Service account key must contain project_id"
+      | T.null (clientEmail key) -> Left "Service account key must contain client_email"
+      | T.null (privateKey key)  -> Left "Service account key must contain private_key"
       | otherwise                   -> Right key
 
 parseRSAPrivateKey :: Text -> Either Text PrivateKey
@@ -256,11 +256,11 @@ getAccessToken = getAccessTokenWithScope cloudPlatformScope
 getAccessTokenWithScope :: Text -> Manager -> ServiceAccountKey -> IO (Either Text Text)
 getAccessTokenWithScope scope manager serviceAccountKey = do
   now <- round <$> getPOSIXTime :: IO Int
-  case parseRSAPrivateKey (sakPrivateKey serviceAccountKey) of
+  case parseRSAPrivateKey (privateKey serviceAccountKey) of
     Left err -> pure $ Left err
     Right privKey -> do
       let claims = JwtClaims
-            { issuer    = sakClientEmail serviceAccountKey
+            { issuer    = clientEmail serviceAccountKey
             , scope     = scope
             , audience  = T.pack tokenEndpoint
             , issuedAt  = now
@@ -280,7 +280,7 @@ getAccessTokenWithScope scope manager serviceAccountKey = do
             200 ->
               case Json.eitherDecode (responseBody response) of
                 Left err -> pure $ Left $ "Token response parse error: " <> T.pack err
-                Right tokenResp -> pure $ Right $ trAccessToken tokenResp
+                Right tokenResp -> pure $ Right $ accessToken tokenResp
             code -> pure $ Left $
               "Token endpoint returned status " <> T.pack (show code)
                 <> ": " <> TE.decodeUtf8 (LBS.toStrict $ responseBody response)

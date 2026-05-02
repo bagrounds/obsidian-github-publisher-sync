@@ -6,10 +6,11 @@ title: 🤖 AI Blog
 URL: https://bagrounds.org/ai-blog/index
 Author: "[[bryan-grounds]]"
 backlinks: false
-updated: 2026-05-01T14:53:27-07:00
+updated: 2026-05-01T19:38:21-07:00
 ---
 [Home](../index.md)  
-# 🤖 AI Blog (174)  
+# 🤖 AI Blog (175)  
+- [2026-05-01 | 📚 Lessons From an Abandoned PR: Auto-Generating Book Reports 🤖](./2026-05-01-1-book-reports-journey-reflection.md)  
 - [2026-04-30 | 📚 Auto-Generating Book Reports 🤖](./2026-04-30-2-auto-generate-book-reports.md)  
 - [2026-04-30 | 🚀 Deploy to GitHub Pages on Main Branch Only 🤖](./2026-04-30-1-deploy-main-branch-only.md)  
 - [2026-04-27 | 🕛 The Midnight Bug: How a Reflection Got Titled Too Early 🤖](./2026-04-27-1-premature-reflection-title-midnight-bug.md)  

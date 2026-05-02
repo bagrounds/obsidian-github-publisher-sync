@@ -11,9 +11,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-19T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-05-01T23:28:39Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: An artistic representation of a globe transitioning from a grey, industrial landscape into a vibrant, lush ecosystem. On one side, subtle outlines of smokestacks and factories fade into the background; on the other, the Earth blooms with rich green forests, clean blue oceans, and renewable energy icons like wind turbines and solar panels integrated seamlessly into the natural terrain. A warm, golden light—symbolizing urgent optimism—shines from the horizon, illuminating the transition. The style is clean, modern, and minimalist, utilizing a bright, hopeful color palette of emerald green, sky blue, and soft sunlight yellow against a clean white background to emphasize clarity, data-driven progress, and a sustainable future.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # ⛔🌎🔚 Not the End of the World: How We Can Be the First Generation to Build a Sustainable Planet  
+![books-not-the-end-of-the-world](../books-not-the-end-of-the-world.jpg)  
 [🛒 Not the End of the World: How We Can Be the First Generation to Build a Sustainable Planet. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4mIM241)  
   
 ## 📚 Book Report: 🌍 Not the End of the World  

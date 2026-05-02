@@ -5,10 +5,11 @@ aliases:
 share: true
 URL: https://bagrounds.org/books
 backlinks: false
-updated: 2026-05-01T14:53:27-07:00
+updated: 2026-05-01T19:38:21-07:00
+book_report_pending: "Cradle to Cradle: Remaking the Way We Make Things"
 ---
 [Home](../index.md)  
-# 📚 Books (960)  
+# 📚 Books (961)  
 - [0️⃣➡️1️⃣ Zero To One](./zero-to-one.md)  
 - [💻0️⃣ Source Code: My Beginnings](./source-code-my-beginnings.md)  
 - [📈🧘🏼‍♀️ 10% Happier](./10-percent-happier.md)  
@@ -651,6 +652,7 @@ updated: 2026-05-01T14:53:27-07:00
 - [🐜 The Ants](./the-ants.md)  
 - [📱😥 The Anxious Generation: How the Great Rewiring of Childhood Is Causing an Epidemic of Mental Illness](./the-anxious-generation-how-the-great-rewiring-of-childhood-is-causing-an-epidemic-of-mental-illness.md)  
 - [🎨🙏✨ The Artist's Way: A Spiritual Path to Higher Creativity](./the-artists-way.md)  
+- [🧪⚙️🧠 The Art of Doing Science and Engineering: Learning to Learn](./the-art-of-doing-science-and-engineering-learning-to-learn.md)  
 - [🎨😨 The Art of Fear: Why Conquering Fear Won't Work and What to Do Instead](./the-art-of-fear.md)  
 - [🎨🤓 The Art of Learning: A Journey in the Pursuit of Excellence](./the-art-of-learning.md)  
 - [🤸😊🎯🌟 The Art of Living: The Classical Manual on Virtue, Happiness, and Effectiveness](./the-art-of-living.md)  

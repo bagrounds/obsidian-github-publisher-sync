@@ -406,8 +406,8 @@ replaceUpdatesSection content newSection =
   case T.breakOn updatesSectionHeader content of
     (_, "") ->
       case findFirstSectionIndex embedSectionHeaders content of
-        Just idx ->
-          let (before, after) = T.splitAt idx content
+        Just index ->
+          let (before, after) = T.splitAt index content
           in T.stripEnd before <> "\n\n" <> newSection <> "\n" <> after
         Nothing ->
           T.stripEnd content <> "\n\n" <> newSection

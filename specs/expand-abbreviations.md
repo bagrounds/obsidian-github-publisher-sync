@@ -22,7 +22,7 @@ These are local bindings inside function bodies. Renaming them does not affect e
 #### GcpAuth.hs
 
 - [x] `initReq` → `initialRequest` (local binding for the parsed HTTP request before configuration)
-- [ ] `sak` → `serviceAccountKey` (parameter name in `getAccessTokenWithScope`)
+- [x] `sak` → `serviceAccountKey` (parameter name in `getAccessTokenWithScope`)
 - [ ] `jcIss` → `issuer` (JwtClaims record field)
 - [ ] `jcScope` → `scope` (JwtClaims record field)
 - [ ] `jcAud` → `audience` (JwtClaims record field)

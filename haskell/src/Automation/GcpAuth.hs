@@ -254,13 +254,13 @@ getAccessToken :: Manager -> ServiceAccountKey -> IO (Either Text Text)
 getAccessToken = getAccessTokenWithScope cloudPlatformScope
 
 getAccessTokenWithScope :: Text -> Manager -> ServiceAccountKey -> IO (Either Text Text)
-getAccessTokenWithScope scope manager sak = do
+getAccessTokenWithScope scope manager serviceAccountKey = do
   now <- round <$> getPOSIXTime :: IO Int
-  case parseRSAPrivateKey (sakPrivateKey sak) of
+  case parseRSAPrivateKey (sakPrivateKey serviceAccountKey) of
     Left err -> pure $ Left err
     Right privKey -> do
       let claims = JwtClaims
-            { jcIss   = sakClientEmail sak
+            { jcIss   = sakClientEmail serviceAccountKey
             , jcScope = scope
             , jcAud   = T.pack tokenEndpoint
             , jcIat   = now

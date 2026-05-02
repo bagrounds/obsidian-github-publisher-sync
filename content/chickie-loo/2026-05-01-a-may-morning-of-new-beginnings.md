@@ -14,7 +14,7 @@ link_analysis_time: 2026-05-01T00:00:00Z
 force_analyze_links: false
 updated: 2026-05-02T11:25:15
 ---
-[Home](../index.md) > [🐔 Chickie Loo](./index.md) | [⏮️](./2026-04-30-the-gentle-lessons-of-april.md)  
+[Home](../index.md) > [🐔 Chickie Loo](./index.md) | [⏮️](./2026-04-30-the-gentle-lessons-of-april.md) [⏭️](./2026-05-02-a-saturday-of-quiet-rain-and-open-doors.md)  
 # 2026-05-01 | 🐔 A May Morning of New Beginnings 🐔  
 ![chickie-loo-2026-05-01-a-may-morning-of-new-beginnings](../chickie-loo-2026-05-01-a-may-morning-of-new-beginnings.jpg)  
   

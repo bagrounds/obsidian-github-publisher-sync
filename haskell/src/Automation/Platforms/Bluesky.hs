@@ -142,8 +142,8 @@ createSession manager Credentials{..} = do
         , "password" .= unSecret password
         ])
   result <- try @SomeException $ withRetry defaultRetryOptions $ do
-    initialReq <- parseRequest url
-    let req = initialReq
+    initialRequest <- parseRequest url
+    let req = initialRequest
           { method = "POST"
           , requestBody = RequestBodyLBS bodyJson
           , requestHeaders = [("Content-Type", "application/json")]
@@ -275,8 +275,8 @@ uploadBlob :: Manager -> AtpSession -> BS.ByteString -> LBS.ByteString -> IO (Ei
 uploadBlob manager AtpSession{..} contentType imageData = do
   let url = T.unpack (atpBaseUrl <> "com.atproto.repo.uploadBlob")
   result <- try @SomeException $ withRetry defaultRetryOptions $ do
-    initialReq <- parseRequest url
-    let req = initialReq
+    initialRequest <- parseRequest url
+    let req = initialRequest
           { method = "POST"
           , requestBody = RequestBodyLBS imageData
           , requestHeaders =
@@ -341,8 +341,8 @@ createPost manager session@AtpSession{..} postText maybeLinkCard = do
             ])
           url = T.unpack (atpBaseUrl <> "com.atproto.repo.createRecord")
       result <- try @SomeException $ withRetry defaultRetryOptions $ do
-        initialReq <- parseRequest url
-        let req = initialReq
+        initialRequest <- parseRequest url
+        let req = initialRequest
               { method = "POST"
               , requestBody = RequestBodyLBS bodyJson
               , requestHeaders =
@@ -426,8 +426,8 @@ deleteRecord manager AtpSession{..} uri = do
         ])
       url = T.unpack (atpBaseUrl <> "com.atproto.repo.deleteRecord")
   result <- try @SomeException $ withRetry defaultRetryOptions $ do
-    initialReq <- parseRequest url
-    let req = initialReq
+    initialRequest <- parseRequest url
+    let req = initialRequest
           { method = "POST"
           , requestBody = RequestBodyLBS bodyJson
           , requestHeaders =

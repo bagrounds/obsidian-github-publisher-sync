@@ -280,7 +280,7 @@ graphqlEndpoint = "https://api.github.com/graphql"
 
 fetchDiscussionPage :: Manager -> Text -> Text -> Text -> Text -> Maybe Text -> IO (Maybe GqlDiscussionsPage)
 fetchDiscussionPage manager token owner repo categoryId mAfter = do
-  initReq <- parseRequest graphqlEndpoint
+  initialRequest <- parseRequest graphqlEndpoint
   let query = "query($owner: String!, $name: String!, $categoryId: ID!, $after: String) {\
               \ repository(owner: $owner, name: $name) {\
               \   discussions(categoryId: $categoryId, first: 100, after: $after, orderBy: { field: UPDATED_AT, direction: DESC }) {\
@@ -304,7 +304,7 @@ fetchDiscussionPage manager token owner repo categoryId mAfter = do
         [ "query" .= (query :: Text)
         , "variables" .= variables
         ]
-      httpReq = initReq
+      httpReq = initialRequest
         { method = "POST"
         , requestBody = RequestBodyLBS body
         , requestHeaders =

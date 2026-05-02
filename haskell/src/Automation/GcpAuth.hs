@@ -269,11 +269,11 @@ getAccessTokenWithScope scope manager sak = do
       case createJwt claims privKey of
         Left err -> pure $ Left err
         Right jwt -> do
-          initReq <- parseRequest tokenEndpoint
+          initialRequest <- parseRequest tokenEndpoint
           let httpReq = urlEncodedBody
                 [ ("grant_type", "urn:ietf:params:oauth:grant-type:jwt-bearer")
                 , ("assertion", jwt)
-                ] initReq
+                ] initialRequest
           response <- httpLbs httpReq manager
           let status = statusCode $ responseStatus response
           case status of

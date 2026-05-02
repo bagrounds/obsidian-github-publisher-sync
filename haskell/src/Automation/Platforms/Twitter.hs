@@ -186,9 +186,9 @@ post manager creds tweetText = do
   let bodyJson = encode (object ["text" .= tweetText])
   result <- try @SomeException $ withRetry defaultRetryOptions $ do
     authHeader <- buildOAuthHeader creds "POST" tweetsApiUrl
-    initialReq <- parseRequest (T.unpack tweetsApiUrl)
+    initialRequest <- parseRequest (T.unpack tweetsApiUrl)
     let req =
-          initialReq
+          initialRequest
             { method = "POST"
             , requestBody = RequestBodyLBS bodyJson
             , requestHeaders =
@@ -231,9 +231,9 @@ deletePost manager creds tweetId = do
   let url = tweetsApiUrl <> "/" <> tweetId
   result <- try @SomeException $ do
     authHeader <- buildOAuthHeader creds "DELETE" url
-    initialReq <- parseRequest (T.unpack url)
+    initialRequest <- parseRequest (T.unpack url)
     let req =
-          initialReq
+          initialRequest
             { method = "DELETE"
             , requestHeaders =
                 [("Authorization", TE.encodeUtf8 authHeader)]

@@ -6,9 +6,17 @@ URL: https://bagrounds.org/books/on-revolution
 share: true
 CTA: 🔥 Kindle change.
 affiliate link: https://amzn.to/45qFakd
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_time: 2026-04-28T00:00:00Z
+force_analyze_links: false
+link_analysis_version: "2"
+image_date: 2026-05-02T06:48:53Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A minimalist, high-contrast illustration featuring two distinct architectural silhouettes side-by-side. On the left, a sturdy, neoclassical marble column base represents the American foundation, depicted with clean, geometric lines and a sense of structural permanence. On the right, a jagged, crumbling stone wall or a stylized, fractured guillotine blade represents the volatile French Revolution, portrayed with sharp, chaotic angles and rough textures. Between them, a single, glowing light source—representing the concept of public freedom—casts long, intersecting shadows across a neutral, stone-colored background. The composition is balanced but tension-filled, emphasizing the divide between deliberate political construction and the chaotic, destructive forces of social upheaval. The color palette is restricted to slate gray, deep obsidian, and a stark, warm amber for the light.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🔄 On Revolution  
+![books-on-revolution](../books-on-revolution.jpg)  
 [🛒 On Revolution. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/45qFakd)  
   
 ## 📢 On Revolution: Arendt's Clarion Call for Political Freedom  

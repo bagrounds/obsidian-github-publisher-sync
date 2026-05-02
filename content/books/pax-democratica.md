@@ -11,9 +11,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-19T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-05-02T19:33:59Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A panoramic, high-angle view of a futuristic architectural plaza designed with classical Greco-Roman columns blended with sleek, modern glass structures. In the center, a diverse group of stylized, abstract figures from various nations are gathered around a circular, glowing map of the world embedded in the floor. They are engaged in collaborative gestures, suggesting dialogue and consensus. The atmosphere is bright and serene, illuminated by soft, natural sunlight filtering through the open-air design. Above the plaza, the sky is a clear, gradient blue, transitioning into a soft dawn, symbolizing a new era of global cooperation. The composition is symmetrical and balanced, emphasizing stability, unity, and the harmony of democratic governance. The color palette is composed of cool blues, crisp whites, and warm, golden highlights.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🏛️🤝🕊️ Pax Democratica: A Strategy for the 21st Century  
+![books-pax-democratica](../books-pax-democratica.jpg)  
 by James Robert Huntley  
 [🛒 Pax Democratica: A Strategy for the 21st Century. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4jCPhY6)  
   

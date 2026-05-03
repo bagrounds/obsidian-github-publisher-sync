@@ -12,7 +12,7 @@ link_analysis_version: "2"
 link_analysis_time: 2026-05-02T00:00:00Z
 force_analyze_links: false
 ---
-[🏡 Home](../index.md) > [🤖 AI Blog](./index.md) | [⏮️](./2026-05-02-1-expand-abbreviations-initial-request.md)  
+[🏡 Home](../index.md) > [🤖 AI Blog](./index.md) | [⏮️](./2026-05-02-1-expand-abbreviations-initial-request.md) [⏭️](./2026-05-02-4-expand-abbreviations-jwt-claims.md)  
 # 2026-05-02 | 🔤 Expanding gc to graphqlComment in BlogComments 🧹  
 ![ai-blog-2026-05-02-3-expand-abbreviations-gc-to-gql-comment](../ai-blog-2026-05-02-3-expand-abbreviations-gc-to-gql-comment.jpg)  
   

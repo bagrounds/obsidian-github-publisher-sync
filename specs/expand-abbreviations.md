@@ -266,38 +266,44 @@ Record field abbreviation prefixes must be removed. When two records in the same
 - [x] `mPage` → `maybePage` (local binding for `fetchDiscussionPage` result in `fetchAllDiscussions`)
 - [x] `acc` → `accumulatedDiscussions` (accumulator parameter in `fetchAllDiscussions` inner helper)
 - [x] `newAcc` → `updatedDiscussions` (local binding for updated accumulator in `fetchAllDiscussions`)
-- [ ] `go` → `paginatedFetch` (inner helper name in `fetchAllDiscussions` — `go` is opaque)
+- [x] `go` → `paginatedFetch` (inner helper name in `fetchAllDiscussions` — `go` is opaque)
 
 #### BlogPosts.hs
 
 - [x] `bpFilename` → `filename` (BlogPost record field — `bp` prefix)
 - [x] `bpDate` → `date` (BlogPost record field — `bp` prefix)
 - [x] `bpTitle` → `title` (BlogPost record field — `bp` prefix)
-- [ ] `bpBody` → `body` (BlogPost record field — `bp` prefix — requires renaming local `body` variable in BlogPrompt.hs)
+- [x] `bpBody` → `body` (BlogPost record field — `bp` prefix — local `body` variables in BlogPrompt.hs renamed to `postBody`)
 
 #### Frontmatter.hs
 
-- [ ] `fmLines` → `frontmatterLines` (local binding for parsed frontmatter lines in `parseFrontmatter`)
+- [x] `fmLines` → `frontmatterLines` (local binding for parsed frontmatter lines in `parseFrontmatter`)
 
 #### InternalLinking.hs
 
-- [ ] `fmLines` → `frontmatterLines` (local binding for parsed frontmatter lines in `updateFrontmatterFields`)
-- [ ] `updatedFm` → `updatedFrontmatter` (local binding for updated frontmatter lines in `updateFrontmatterFields`)
+- [x] `fmLines` → `frontmatterLines` (local binding for parsed frontmatter lines in `updateFrontmatterFields`)
+- [x] `updatedFm` → `updatedFrontmatter` (local binding for updated frontmatter lines in `updateFrontmatterFields`)
 
 #### BlogImage.hs
 
-- [ ] `fmLines` → `frontmatterLines` (local binding for parsed frontmatter lines in `updateFrontmatterFields` and `applyField`)
-- [ ] `updatedFm` → `updatedFrontmatter` (local binding for updated frontmatter lines in `updateFrontmatterFields`)
+- [x] `fmLines` → `frontmatterLines` (local binding for parsed frontmatter lines in `updateFrontmatterFields` and `applyField`)
+- [x] `updatedFm` → `updatedFrontmatter` (local binding for updated frontmatter lines in `updateFrontmatterFields`)
 
 #### ReflectionTitle.hs
 
-- [ ] `fmLines` → `frontmatterLines` (parameter in `updateFmFields` and local binding in `updateContentWithTitle`)
-- [ ] `updatedFm` → `updatedFrontmatter` (local binding in `updateContentWithTitle`)
-- [ ] `updateFmFields` → `updateFrontmatterFields` (function name — `Fm` abbreviation)
+- [x] `fmLines` → `frontmatterLines` (parameter in `updateFrontmatterFields` and local binding in `updateTitleFrontmatter`)
+- [x] `updatedFm` → `updatedFrontmatter` (local binding in `updateTitleFrontmatter`)
+- [x] `updateFmFields` → `updateFrontmatterFields` (function name — `Fm` abbreviation)
 
 #### SocialPosting/FrontmatterUpdate.hs
 
-- [ ] `fmLines` → `frontmatterLines` (local binding for parsed frontmatter lines)
+- [ ] `ls` → `contentLines` (local binding for split content lines in `updateFrontmatterTimestamp` and `updateFrontmatterUrl`)
+- [ ] `fmLines` → `frontmatterLines` (local binding for parsed frontmatter lines in `updateFrontmatterTimestamp` and `updateFrontmatterUrl`)
+- [ ] `updatedFm` → `updatedFrontmatter` (local binding for updated frontmatter lines in `updateFrontmatterTimestamp` and `updateFrontmatterUrl`)
+- [ ] `upsertFmField` → `upsertFrontmatterField` (function name — `Fm` abbreviation; also update all callers)
+- [ ] `renderedVal` → `renderedValue` (parameter in `upsertFrontmatterField`)
+- [ ] `has` → `hasKey` (local boolean in `upsertFrontmatterField`)
+- [ ] `pat` → `keyPattern` (local binding in `upsertFrontmatterField`)
 
 #### AiFiction.hs
 
@@ -317,6 +323,23 @@ Record field abbreviation prefixes must be removed. When two records in the same
 - [ ] `rtrFullTitle` → `fullTitle` (ReflectionTitleResult record field — `rtr` prefix)
 - [ ] `rtrModel` → `model` (ReflectionTitleResult record field — `rtr` prefix)
 - [ ] `rtrUpdatedContent` → `updatedContent` (ReflectionTitleResult record field — `rtr` prefix)
+
+#### InternalLinking.hs (additional locals)
+
+- [ ] `pat` → `keyPattern` (local binding in `upsertField`)
+- [ ] `p` → `prefix` (parameter in `matchesKey` within `upsertField`)
+
+#### Other files with opaque `go` helpers
+
+- [ ] `go` → `processArgs` (inner helper in `CliArgs.hs` `parseCliArgs`)
+- [ ] `go` → `runAttempt` (inner helper in `Retry.hs` `withRetry`)
+- [ ] `go` → `runAttempt` (inner helper in `ObsidianSync.hs` `runObSyncWithRetry`)
+- [ ] `go` → `countBits` (inner helper in `GcpAuth.hs` `bitLength`)
+- [ ] `go` → `searchBackward` (inner helper in `Text.hs` `findLastIndex`)
+- [ ] `go` → `runTask` (inner helper in `TaskRunner.hs` `runTasksWithDelay`)
+- [ ] `go` → `findMatch` (inner helper in `InternalLinking/CandidateDiscovery.hs` `findAllMatches`)
+- [ ] `go` → `parseLinks` (inner helper in `InternalLinking/LinkExtraction.hs` `markdownLinks`)
+- [ ] `go` → `parseLinks` (inner helper in `SocialPosting/LinkExtraction.hs` `mdLinks`)
 
 ## Ordering Notes
 

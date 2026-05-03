@@ -20,7 +20,7 @@ data BlogPost = BlogPost
   { filename :: Text
   , date     :: Text
   , title    :: Text
-  , bpBody   :: Text
+  , body     :: Text
   } deriving (Show, Eq)
 
 excludedFiles :: [Text]
@@ -48,7 +48,7 @@ parsePostFile seriesDir filename = do
     { filename = filename
     , date     = extractDate filename
     , title    = title
-    , bpBody   = body
+    , body     = body
     }
 
 readSeriesPosts :: FilePath -> IO [BlogPost]

@@ -208,23 +208,23 @@ updateTitleFrontmatter content fullTitle =
     (first : rest)
       | T.strip first == "---" ->
         case break (\l -> T.strip l == "---") rest of
-          (fmLines, closingDash : body) ->
-            let updatedFm = updateFmFields fmLines fullTitle
-            in T.unlines (["---"] <> updatedFm <> [closingDash] <> body)
+          (frontmatterLines, closingDash : body) ->
+            let updatedFrontmatter = updateFrontmatterFields frontmatterLines fullTitle
+            in T.unlines (["---"] <> updatedFrontmatter <> [closingDash] <> body)
           _ -> content
     _ -> content
 
-updateFmFields :: [Text] -> Text -> [Text]
-updateFmFields fmLines fullTitle =
+updateFrontmatterFields :: [Text] -> Text -> [Text]
+updateFrontmatterFields frontmatterLines fullTitle =
   let quoted = "\"" <> T.replace "\\" "\\\\" (T.replace "\"" "\\\"" fullTitle) <> "\""
-      hasTitle = any (T.isPrefixOf "title:") fmLines
-      hasAliases = any (T.isPrefixOf "aliases:") fmLines
+      hasTitle = any (T.isPrefixOf "title:") frontmatterLines
+      hasAliases = any (T.isPrefixOf "aliases:") frontmatterLines
       updateLine l
         | T.isPrefixOf "title:" l = "title: " <> quoted
         | otherwise = l
       withTitle = if hasTitle
-        then fmap updateLine fmLines
-        else fmLines <> ["title: " <> quoted]
+        then fmap updateLine frontmatterLines
+        else frontmatterLines <> ["title: " <> quoted]
       updateAliases [] = []
       updateAliases (l:rest)
         | T.isPrefixOf "aliases:" l =

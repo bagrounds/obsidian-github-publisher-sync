@@ -214,9 +214,9 @@ isRecapPost = T.isInfixOf "recap" . T.toLower . title
 formatPost :: BlogSeriesConfig -> BlogPost -> Text
 formatPost series post =
   let link = buildBackLink series (filename post)
-      body = stripEmbedSections (bpBody post)
+      postBody = stripEmbedSections (body post)
       cleanTitle = sanitizeTitle series (title post)
-  in "### " <> link <> " " <> cleanTitle <> " (" <> date post <> ")\n\n" <> T.strip body
+  in "### " <> link <> " " <> cleanTitle <> " (" <> date post <> ")\n\n" <> T.strip postBody
 
 buildCommentsSection :: [BlogComment] -> Text
 buildCommentsSection [] = ""
@@ -236,8 +236,8 @@ buildCrossSeriesSection posts =
 
 formatCrossSeriesPost :: CrossSeriesPost -> Text
 formatCrossSeriesPost CrossSeriesPost{..} =
-  let body = stripEmbedSections (bpBody crossSeriesPost)
-      excerpt = T.take 2000 body
+  let postBody = stripEmbedSections (body crossSeriesPost)
+      excerpt = T.take 2000 postBody
   in "### " <> crossSeriesIcon <> " " <> crossSeriesName <> " — " <> title crossSeriesPost
     <> " (" <> date crossSeriesPost <> ")\n\n" <> T.strip excerpt
 

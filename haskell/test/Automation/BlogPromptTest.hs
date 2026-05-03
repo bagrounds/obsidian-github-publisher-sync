@@ -252,7 +252,7 @@ crossSeriesTests = testGroup "crossSeries"
                 { filename = "2026-04-15-test.md"
                 , date = "2026-04-15"
                 , title = "Breaking News Today"
-                , bpBody = "Some news content here"
+                , body = "Some news content here"
                 }
             }
           result = buildCrossSeriesSection [post]
@@ -267,7 +267,7 @@ crossSeriesTests = testGroup "crossSeries"
                 { filename = "2026-04-15-test.md"
                 , date = "2026-04-15"
                 , title = "Breaking News"
-                , bpBody = "Content"
+                , body = "Content"
                 }
             }
           result = buildCrossSeriesSection [post]
@@ -282,7 +282,7 @@ crossSeriesTests = testGroup "crossSeries"
                 { filename = "2026-04-15-morning.md"
                 , date = "2026-04-15"
                 , title = "Morning at the Ranch"
-                , bpBody = "The chickens woke up early today"
+                , body = "The chickens woke up early today"
                 }
             }
           result = buildCrossSeriesSection [post]
@@ -297,7 +297,7 @@ crossSeriesTests = testGroup "crossSeries"
                 { filename = "2026-04-15-test.md"
                 , date = "2026-04-15"
                 , title = "AI Musings"
-                , bpBody = "Exploring the nature of synthetic consciousness"
+                , body = "Exploring the nature of synthetic consciousness"
                 }
             }
           result = buildCrossSeriesSection [post]
@@ -312,7 +312,7 @@ crossSeriesTests = testGroup "crossSeries"
                 { filename = "2026-04-15-test.md"
                 , date = "2026-04-15"
                 , title = "Test"
-                , bpBody = "Body"
+                , body = "Body"
                 }
             }
           result = buildCrossSeriesSection [post]

@@ -238,16 +238,16 @@ fetchDiscussionPage manager token owner repo categoryId maybeAfterCursor = do
 
 fetchAllDiscussions :: Manager -> Text -> Text -> Text -> Text -> IO [GqlDiscussion]
 fetchAllDiscussions manager token owner repo categoryId =
-  go Nothing []
+  paginatedFetch Nothing []
   where
-    go maybeAfterCursor accumulatedDiscussions = do
+    paginatedFetch maybeAfterCursor accumulatedDiscussions = do
       maybePage <- fetchDiscussionPage manager token owner repo categoryId maybeAfterCursor
       case maybePage of
         Nothing -> pure accumulatedDiscussions
         Just page ->
           let updatedDiscussions = accumulatedDiscussions <> Gql.discussionNodes page
           in if Gql.hasNextPage (Gql.pageInfo page)
-             then go (Gql.endCursor (Gql.pageInfo page)) updatedDiscussions
+             then paginatedFetch (Gql.endCursor (Gql.pageInfo page)) updatedDiscussions
              else pure updatedDiscussions
 
 walkHtmlFiles :: FilePath -> IO [FilePath]

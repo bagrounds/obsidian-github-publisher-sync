@@ -34,8 +34,8 @@ parseFrontmatter content =
       | T.strip first == "---" ->
           case break (\l -> T.strip l == "---") rest of
             (_, [])              -> (Map.empty, content)
-            (fmLines, _ : body) ->
-              ( Map.fromList $ concatMap parseLine fmLines
+            (frontmatterLines, _ : body) ->
+              ( Map.fromList $ concatMap parseLine frontmatterLines
               , T.intercalate "\n" body
               )
     _ -> (Map.empty, content)

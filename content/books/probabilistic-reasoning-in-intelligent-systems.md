@@ -8,11 +8,16 @@ Author:
 tags:
 affiliate link: https://amzn.to/4kM6KOF
 link_analysis_model: gemini-3.1-flash-lite-preview
-link_analysis_time: 2026-04-09T00:00:00Z
+link_analysis_time: 2026-04-24T00:00:00Z
 force_analyze_links: false
+link_analysis_version: "2"
+image_date: 2026-05-03T13:39:25Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A high-contrast, minimalist illustration featuring a complex, glowing network of interconnected nodes and thin, luminous lines floating against a deep charcoal background. The nodes are arranged in a directed acyclic graph (DAG) structure, with some nodes appearing as soft, translucent spheres and others as crisp geometric points. Subtle, ethereal data streams or mathematical symbols—like small floating sigmas or probability distribution curves—weave through the edges of the network. A central, ethereal human silhouette, rendered in fine wireframe lines, stands to the side, with a glowing, intricate neural-like lattice branching out from the head area, symbolizing the integration of human intuition and computational logic. The color palette is limited to deep navy, electric cyan, and soft white, evoking a sense of high-tech intelligence, precision, and the elegant complexity of probabilistic reasoning.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🎲🧮🧠🤖 Probabilistic Reasoning in Intelligent Systems: Networks of Plausible Inference  
+![books-probabilistic-reasoning-in-intelligent-systems](../books-probabilistic-reasoning-in-intelligent-systems.jpg)  
 [🛒 Probabilistic Reasoning in Intelligent Systems: Networks of Plausible Inference. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4kM6KOF)  
   
 ## 🤖 AI Summary  

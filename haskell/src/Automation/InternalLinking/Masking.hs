@@ -27,9 +27,9 @@ maskFrontmatter content =
       case T.breakOn "\n---\n" afterOpen of
         (_, "") -> content
         (frontmatter, rest) ->
-          let fmBlock = "---\n" <> frontmatter <> "\n---\n"
+          let frontmatterBlock = "---\n" <> frontmatter <> "\n---\n"
               afterBlock = T.drop (T.length "\n---\n") rest
-          in T.replicate (T.length fmBlock) " " <> afterBlock
+          in T.replicate (T.length frontmatterBlock) " " <> afterBlock
 
 maskFencedCode :: Text -> Text
 maskFencedCode = maskBetweenFences

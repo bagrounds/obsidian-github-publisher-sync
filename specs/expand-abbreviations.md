@@ -247,7 +247,7 @@ Record field abbreviation prefixes must be removed. When two records in the same
 - [x] `sgdComments` → `comments` (GqlDiscussion record field — `sgd` prefix)
 - [x] `sgpHasNextPage` → `hasNextPage` (GqlPageInfo record field — `sgp` prefix)
 - [x] `sgpEndCursor` → `endCursor` (GqlPageInfo record field — `sgp` prefix)
-- [x] `sgdpNodes` → `discussionNodes` (GqlDiscussionsPage record field — `sgdp` prefix — renamed `discussionNodes` not `nodes` to avoid same-module conflict with `GqlCommentsNode.nodes`; moved all Gql* types to `Automation.StaticGiscus.GraphQL` sub-module)
+- [x] `sgdpNodes` → `discussionNodes` (GqlDiscussionsPage record field — `sgdp` prefix — renamed `discussionNodes` not `nodes` to avoid same-module conflict with `GqlCommentsNode.nodes`)
 - [x] `sgdpPageInfo` → `pageInfo` (GqlDiscussionsPage record field — `sgdp` prefix)
 - [x] `sgrDiscussions` → `discussions` (GqlRepository record field — `sgr` prefix)
 - [x] `sgdRepository` → `repository` (GqlData record field — `sgd` prefix)

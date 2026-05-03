@@ -16,51 +16,51 @@ URL: https://bagrounds.org/ai-blog/2026-05-03-4-expand-abbreviations-haskell-pas
 
 ## 📋 The Ten Steps
 
-### 1️⃣ StaticGiscus — Migrate Gql* types to `Automation.StaticGiscus.GraphQL`
+### ⚙️ Prerequisite — Migrate Gql* types to `Automation.StaticGiscus.GraphQL`
 
 🏗️ Before any of the remaining StaticGiscus field renames could proceed, a structural prerequisite had to be addressed. 📦 The `GqlComment` record already had an `author` field, and `GqlCommentsNode` already had a `nodes` field. 🚧 Renaming `StaticComment.scAuthor` to `author` would create a collision with `GqlComment.author` in the same module, and renaming `GqlDiscussionsPage.sgdpNodes` to `nodes` would collide with `GqlCommentsNode.nodes`.
 
 🔀 The solution follows the same pattern established by `Automation.BlogComments.GraphQL` earlier in the series: move all the Gql* types into a new sub-module called `Automation.StaticGiscus.GraphQL`, and import them qualified as `Gql` in the main module. 🎯 This keeps the accessor names unambiguous — `Gql.author`, `Gql.nodes`, `Gql.title` — while freeing up the unqualified namespace in the main module for `StaticComment`'s own fields.
 
-### 2️⃣ GqlPageInfo — `sgpEndCursor` to `endCursor`
+### 1️⃣ GqlPageInfo — `sgpEndCursor` to `endCursor`
 
 📄 The `GqlPageInfo` record tracks pagination state for GitHub's GraphQL API. 🔑 Its cursor field, which carries the opaque string identifying the current page boundary, was named `sgpEndCursor` — where `sgp` stands for "static Giscus page info". 🔤 Renamed to `endCursor`, directly matching the field name used in the GraphQL schema.
 
-### 3️⃣ GqlDiscussionsPage — `sgdpNodes` to `discussionNodes`
+### 2️⃣ GqlDiscussionsPage — `sgdpNodes` to `discussionNodes`
 
 📋 The `GqlDiscussionsPage` record wraps a page of GitHub Discussions with its items and pagination state. 🔤 The items field was named `sgdpNodes`, where `sgdp` stands for "static Giscus discussions page". 🚧 Renaming it to `nodes` would conflict with the already-renamed `GqlCommentsNode.nodes` field — both live in the same sub-module.
 
 📖 Following the precedent from `Automation.BlogComments.GraphQL`, where `GqlSearchNodes.gsnNodes` was renamed to `searchNodes` rather than `nodes` to avoid a similar clash, this field was renamed `discussionNodes`. 🎯 The name is explicit: it tells the reader that these are discussion items, not generic nodes.
 
-### 4️⃣ GqlDiscussionsPage — `sgdpPageInfo` to `pageInfo`
+### 3️⃣ GqlDiscussionsPage — `sgdpPageInfo` to `pageInfo`
 
 🔢 The `pageInfo` field on `GqlDiscussionsPage` held the pagination cursor and next-page flag. 🔤 It was named `sgdpPageInfo`, where `sgdp` is the same "static Giscus discussions page" prefix. 📖 Renamed to `pageInfo`, which is both shorter and more meaningful — it reads naturally in code like `Gql.pageInfo page`.
 
-### 5️⃣ GqlRepository — `sgrDiscussions` to `discussions`
+### 4️⃣ GqlRepository — `sgrDiscussions` to `discussions`
 
 🗂️ The `GqlRepository` record represents a GitHub repository in the GraphQL response. 🔤 Its field for the discussions connection was named `sgrDiscussions`, where `sgr` stands for "static Giscus repository". 📖 Renamed to `discussions` — no prefix needed when you can just write `Gql.discussions repository`.
 
-### 6️⃣ GqlData — `sgdRepository` to `repository`
+### 5️⃣ GqlData — `sgdRepository` to `repository`
 
 📦 The `GqlData` record wraps the `data` field of a GraphQL response envelope. 🔤 Its inner repository field was named `sgdRepository`, where `sgd` stands for "static Giscus data". 📖 Renamed to `repository`, matching the GraphQL field name directly.
 
-### 7️⃣ GqlError — `sgeMessage` to `message`
+### 6️⃣ GqlError — `sgeMessage` to `message`
 
 ⚠️ The `GqlError` record carries a single error description from the GraphQL API. 🔤 That description was stored in `sgeMessage`, where `sge` stands for "static Giscus error". 📖 Renamed to `message` — which is exactly what it is, and what the JSON field is called.
 
-### 8️⃣ GqlResponse — `sgrData` to `responseData`
+### 7️⃣ GqlResponse — `sgrData` to `responseData`
 
 📬 The `GqlResponse` record is the top-level envelope for a GraphQL API response. 🔤 Its `data` field was named `sgrData`, where `sgr` stands for "static Giscus response". 📖 Renamed to `responseData`, following the same convention used in `Automation.BlogComments.GraphQL` where the same pattern already appeared.
 
-### 9️⃣ GqlResponse — `sgrErrors` to `errors`
+### 8️⃣ GqlResponse — `sgrErrors` to `errors`
 
 ❌ The `GqlResponse.sgrErrors` field holds the optional list of errors returned alongside a GraphQL response. 🔤 The `sgr` prefix was stripped, giving the clean and self-descriptive name `errors`.
 
-### 🔟 StaticComment — `scAuthor` to `author`
+### 9️⃣ StaticComment — `scAuthor` to `author`
 
 🧑 The `StaticComment` record represents a rendered Giscus comment ready for HTML injection. 🔤 The author's display name was stored in `scAuthor`, where `sc` stands for "static comment". 📖 Renamed to `author`. 🛡️ Thanks to the sub-module migration, there is no longer any `author` accessor in scope from the Gql types — `Gql.author` is qualified, so unqualified `author` unambiguously refers to `StaticComment.author`.
 
-### 1️⃣1️⃣ StaticComment — `scAuthorUrl` to `authorUrl`
+### 🔟 StaticComment — `scAuthorUrl` to `authorUrl`
 
 🔗 The author's profile URL in `StaticComment` was stored in `scAuthorUrl`. 🔤 Renamed to `authorUrl`. 🏁 This completes the first two of the four `sc*` field renames for `StaticComment`; the remaining two (`scBodyHtml` and `scCreatedAt`) will follow in a future pass.
 

@@ -225,9 +225,9 @@ mkDiscussion discussionTitle discussionComments = GqlDiscussion
   }
 
 mkStaticComment :: Text -> Text -> StaticComment
-mkStaticComment commentAuthor body = StaticComment
-  { author      = commentAuthor
-  , authorUrl   = "https://github.com/" <> commentAuthor
+mkStaticComment authorName body = StaticComment
+  { author      = authorName
+  , authorUrl   = "https://github.com/" <> authorName
   , scBodyHtml  = body
   , scCreatedAt = "2026-01-15T10:00:00Z"
   }

@@ -11,9 +11,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-20T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-05-03T18:28:28Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A minimalist, high-contrast composition featuring a glowing golden compass centered on a clean, textured surface. Surrounding the compass are three interconnected geometric shapes—a translucent prism, a stylized human silhouette, and a rising arrow—each casting soft, colorful light onto the background. The color palette uses deep navy, professional charcoal, and vibrant gold accents. The scene is illuminated by a soft, directional light source, creating a sense of clarity, forward momentum, and balance. The aesthetic is modern, sophisticated, and professional, emphasizing the synergy between leadership, connection, and purposeful achievement without any distracting elements.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🎯🎭🔗🧭🏆 Purposeful Performance: The Secret Mix of Connecting, Leading, and Succeeding  
+![books-purposeful-performance](../books-purposeful-performance.jpg)  
 [🛒 Purposeful Performance: The Secret Mix of Connecting, Leading, and Succeeding. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/43CBOJS)  
   
 ## 🤖 AI Summary  

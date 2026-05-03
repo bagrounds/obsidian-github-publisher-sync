@@ -61,14 +61,13 @@ partitionContextPosts seriesId seriesMap = foldr partition ([], [])
 
 annotateWithMetadata :: Map Text BlogSeriesConfig -> ContextPost -> CrossSeriesPost
 annotateWithMetadata seriesMap contextPost =
-  let seriesConfig = Map.lookup (sourceDirectory contextPost) seriesMap
-      displayName = maybe (sourceDirectory contextPost) name seriesConfig
-      displayIcon = maybe "📁" icon seriesConfig
-  in CrossSeriesPost
-    { crossSeriesName = displayName
-    , crossSeriesIcon = displayIcon
+  CrossSeriesPost
+    { crossSeriesName = maybe (sourceDirectory contextPost) name seriesConfig
+    , crossSeriesIcon = maybe "📁" icon seriesConfig
     , crossSeriesPost = post contextPost
     }
+  where
+    seriesConfig = Map.lookup (sourceDirectory contextPost) seriesMap
 
 generateSeriesIndex :: BlogSeriesConfig -> Text
 generateSeriesIndex series =

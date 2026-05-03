@@ -118,15 +118,13 @@ sanitizeTitle :: BlogSeriesConfig -> Text -> Text
 sanitizeTitle series raw =
   T.strip $ stripTrailingIcon $ stripLeadingIcon $ stripDatePipe $ stripLeadingIcon $ T.strip raw
   where
-    seriesIcon = icon series
-
     stripLeadingIcon t =
       maybe (T.stripStart t) T.stripStart
-        (T.stripPrefix seriesIcon (T.stripStart t))
+        (T.stripPrefix (icon series) (T.stripStart t))
 
     stripTrailingIcon t =
       maybe (T.stripEnd t) T.stripEnd
-        (T.stripSuffix seriesIcon (T.stripEnd t))
+        (T.stripSuffix (icon series) (T.stripEnd t))
 
     stripDatePipe t =
       let s = T.stripStart t

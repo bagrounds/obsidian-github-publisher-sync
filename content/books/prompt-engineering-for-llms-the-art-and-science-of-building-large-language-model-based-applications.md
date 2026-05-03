@@ -12,9 +12,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-18T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-05-03T15:28:29Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A high-contrast, artistic composition featuring a glowing, translucent neural network structure emerging from a sleek, modern mechanical keyboard. The keyboard keys are subtly illuminated with soft blue and gold light, representing the intersection of human input and artificial intelligence. Floating above the keys are abstract geometric shapes—representing nodes and data paths—that coalesce into a structured, crystalline shape, symbolizing the transition from raw data to refined logic. The background is a deep, professional charcoal grey, creating a clean, sophisticated atmosphere. The lighting is cinematic, highlighting the art and science theme with sharp, clean lines and a sense of depth, focus, and technological innovation.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # ⌨️🤖 Prompt Engineering for LLMs: The Art and Science of Building Large Language Model-Based Applications  
+![books-prompt-engineering-for-llms-the-art-and-science-of-building-large-language-model-based-applications](../books-prompt-engineering-for-llms-the-art-and-science-of-building-large-language-model-based-applications.jpg)  
 [🛒 Prompt Engineering for LLMs: The Art and Science of Building Large Language Model-Based Applications. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3J6B21F)  
   
 ✨ Unlock LLM potential and merge foundational concepts with advanced application development strategies 🚀💡🤖.  

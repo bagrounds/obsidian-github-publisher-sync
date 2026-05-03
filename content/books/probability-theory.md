@@ -11,9 +11,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-16T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-05-03T14:31:37Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A minimalist, high-contrast illustration centered on a polished, translucent six-sided die resting on a dark surface. The die is not resting flat; it is caught in a moment of motion, glowing with a soft, ethereal light from within. Radiating outward from the die are delicate, geometric golden lines resembling a complex mathematical grid or a neural network, suggesting the connection between chance and logic. In the background, faint, ghostly silhouettes of mathematical symbols like sigma, integral signs, and bell curves float in a deep navy and charcoal void. The aesthetic is sophisticated and academic, blending the precision of classical physics with the abstract elegance of information theory. The lighting is dramatic, emphasizing sharp edges and soft, focused shadows to create a sense of intellectual depth and mystery.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🎲🧮 Probability Theory: The Logic of Science  
+![books-probability-theory](../books-probability-theory.jpg)  
 [🛒 Probability Theory: The Logic of Science. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/43YIOCc)  
   
 ## 🤖 AI Summary  

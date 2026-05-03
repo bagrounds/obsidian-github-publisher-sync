@@ -9,9 +9,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-17T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-05-03T17:28:01Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A minimalist, high-contrast illustration featuring a translucent human silhouette standing in profile. Inside the head, a glowing, golden geometric target is centered, representing the mental blueprint. From the target, faint, schematic lines—resembling a mix of neural pathways and technical circuit diagrams—radiate outward toward the edges of the silhouette. The background is a deep, muted navy blue, while the silhouette and target are rendered in soft, ethereal white and warm amber light. The composition is clean, modern, and cerebral, emphasizing the intersection of biology and mechanical goal-seeking systems.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🧐🕹️🔁 Psycho-Cybernetics: A New Way to Get More Living Out of Life  
+![books-psycho-cybernetics-a-new-way-to-get-more-living-out-of-life](../books-psycho-cybernetics-a-new-way-to-get-more-living-out-of-life.jpg)  
 [🛒 Psycho-Cybernetics: A New Way to Get More Living Out of Life. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4dGk7h6)  
   
 ## 📚 Book Report: *Psycho-Cybernetics: A New Way to Get More Living Out of Life*  

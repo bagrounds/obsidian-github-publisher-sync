@@ -10,9 +10,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-19T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-05-03T00:38:22Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A minimalist graphic featuring a stylized, vibrant compass needle mid-rotation, transitioning from a muted, static grey background to a bright, energetic gradient of sunrise orange and deep teal. Surrounding the compass are several small, translucent geometric shapes—circles and squares—that appear to be floating or shifting into new positions, representing iterative movement. The composition is clean and modern, emphasizing a sense of intentional, forward-thinking momentum. The lighting is soft and focused, highlighting the pivot point of the compass to symbolize the critical nature of the next step. The overall aesthetic is professional, encouraging, and focused on growth.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # ➡️ Pivot: The Only Move That Matters Is Your Next One  
+![books-pivot-the-only-move-that-matters-is-your-next-one](../books-pivot-the-only-move-that-matters-is-your-next-one.jpg)  
 [🛒 Pivot: The Only Move That Matters Is Your Next One. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/40uJFbA)  
   
 ## 📚 Book Report: 🔄 Pivot: The Only Move That Matters Is Your Next One by Jenny Blake  

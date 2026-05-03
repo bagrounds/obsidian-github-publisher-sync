@@ -6,9 +6,17 @@ URL: https://bagrounds.org/books/perceptrons-an-introduction-to-computational-ge
 share: true
 CTA: 📐 Construct understanding.
 affiliate link: https://amzn.to/45Bwclc
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_time: 2026-04-28T00:00:00Z
+force_analyze_links: false
+link_analysis_version: "2"
+image_date: 2026-05-02T22:23:44Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A minimalist, high-contrast digital illustration featuring a geometric plane divided by a single, sharp diagonal line. On one side of the line, a cluster of glowing blue dots represents one data class; on the other, a cluster of orange dots represents the second. The composition is clean and technical, reminiscent of mid-century scientific diagrams. Above the plane, thin, translucent, interconnected nodes float in the air, suggesting the structure of a neural network. The background is a deep, matte slate gray, emphasizing the crisp white lines of the geometric grid and the vibrant, glowing points of data. The overall aesthetic is elegant, mathematical, and stark, capturing the essence of linear separability and the foundational logic of early computational geometry.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🤖📐 Perceptrons: An Introduction to Computational Geometry  
+![books-perceptrons-an-introduction-to-computational-geometry](../books-perceptrons-an-introduction-to-computational-geometry.jpg)  
 [🛒 Perceptrons: An Introduction to Computational Geometry. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/45Bwclc)  
   
 ## 🤖 A Foundational Critique of Machine Learning: A Report on Perceptrons  

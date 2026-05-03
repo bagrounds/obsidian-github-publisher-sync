@@ -11,6 +11,7 @@ image_date: 2026-04-10T13:37:01Z
 image_model: "@cf/black-forest-labs/flux-1-schnell"
 image_prompt: "A high-angle, minimalist composition featuring a circular plate centered on a textured wooden table. The plate is divided into two distinct sections: one side is filled with vibrant, colorful whole foods like leafy greens, berries, and nuts, representing the eating window. The other half of the plate is completely empty, highlighting the negative space to represent the fasting window. Surrounding the plate, soft, warm morning sunlight streams in from one side, casting long, gentle shadows that mimic the movement of a clock hand. The overall aesthetic is clean, modern, and serene, using a natural color palette of sage greens, earthy browns, and crisp whites to emphasize health, rhythm, and clarity. No clutter or utensils are present, keeping the focus entirely on the balance between nourishment and rest."
 link_analysis_version: "2"
+updated: 2026-05-02T23:26:49
 ---
 [Home](../index.md) > [Topics](./index.md)  
 # ⏳🍽️ Time-Restricted Eating  
@@ -196,4 +197,12 @@ Why did the clock ⏰ break up with the stomach 😩 during time-restricted eati
 ### 📺 Links To Relevant YouTube Channels Or Videos 🎬  
   
 - [⏰👵🔬 Circadian Code to Extend Longevity | Satchin Panda | TEDxVeniceBeach](../videos/circadian-code-to-extend-longevity-satchin-panda-tedx-venice-beach.md)  
-- [Dr. Jason Fung's Channel](https://www.youtube.com/c/drjasonfung1): Focuses on intermittent fasting and low-carb diets, explaining mechanisms like insulin resistance 👨‍⚕️.
+- [Dr. Jason Fung's Channel](https://www.youtube.com/c/drjasonfung1): Focuses on intermittent fasting and low-carb diets, explaining mechanisms like insulin resistance 👨‍⚕️.  
+  
+## 🦋 Bluesky    
+<blockquote class="bluesky-embed" data-bluesky-uri="at://did:plc:i4yli6h7x2uoj7acxunww2fc/app.bsky.feed.post/3mkvs67t55k2e" data-bluesky-cid="bafyreiho4x7up6tpc3g335mspfdhmajjjbpmyu5ya4kphevf5e4clq3m7e"><p>⏳🍽️ Time-Restricted Eating  
+  
+#AI Q: ⏰ Does limiting your daily eating window actually make life simpler or just hungrier?  
+  
+🕰️ Circadian Rhythms | 🍎 Nutrition Science | ⏳ Intermittent Fasting | 🔥 Metabolism  
+https://bagrounds.org/topics/time-restricted-eating</p>&mdash; <a href="https://bsky.app/profile/did:plc:i4yli6h7x2uoj7acxunww2fc?ref_src=embed">Bryan Grounds (@bagrounds.bsky.social)</a> <a href="https://bsky.app/profile/did:plc:i4yli6h7x2uoj7acxunww2fc/post/3mkvs67t55k2e?ref_src=embed">2026-05-02T23:26:52.000Z</a></blockquote><script async src="https://embed.bsky.app/static/embed.js" charset="utf-8"></script>

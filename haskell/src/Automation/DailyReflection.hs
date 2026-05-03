@@ -161,9 +161,9 @@ findFirstSectionIndex headers content =
 
 appendLinkToExistingSection :: Text -> Text -> Text -> Text
 appendLinkToExistingSection content sectionHeading postLink =
-  let ls = T.splitOn "\n" content
-      sectionIndex = length $ takeWhile (not . T.isPrefixOf sectionHeading) ls
-      (before, after) = splitAt (sectionIndex + 1) ls
+  let contentLines = T.splitOn "\n" content
+      sectionIndex = length $ takeWhile (not . T.isPrefixOf sectionHeading) contentLines
+      (before, after) = splitAt (sectionIndex + 1) contentLines
       (listItems, rest) = span (T.isPrefixOf "- ") after
   in T.intercalate "\n" (before <> listItems <> [postLink] <> rest)
 
@@ -171,8 +171,8 @@ insertNewSection :: Text -> Text -> Text -> Text
 insertNewSection content sectionHeading postLink =
   let sectionBlock = sectionHeading <> "\n" <> postLink
   in case findFirstSectionIndex trailingSectionHeaders content of
-    Just idx ->
-      let (before, after) = T.splitAt idx content
+    Just index ->
+      let (before, after) = T.splitAt index content
       in T.stripEnd before <> "\n\n" <> sectionBlock <> "\n\n" <> after
     Nothing ->
       T.stripEnd content <> "\n\n" <> sectionBlock <> "\n"
@@ -189,8 +189,8 @@ insertPostLink content series filenameNoExt displayTitle replacingFilenameNoExt 
               let oldLinkTarget = "- [[" <> bscId series <> "/" <> oldName <> "|"
               in if T.isInfixOf oldLinkTarget content
                 then
-                  let ls = T.splitOn "\n" content
-                  in T.intercalate "\n" $ fmap (\l -> if T.isPrefixOf oldLinkTarget l then postLink else l) ls
+                  let contentLines = T.splitOn "\n" content
+                  in T.intercalate "\n" $ fmap (\l -> if T.isPrefixOf oldLinkTarget l then postLink else l) contentLines
                 else content
             Nothing -> content
           sectionHeading = buildSeriesSectionHeading series

@@ -42,16 +42,16 @@ embedHeaders = [Twitter.sectionHeader, Bluesky.sectionHeader, Mastodon.sectionHe
 
 stripForPrompt :: Text -> Text
 stripForPrompt content =
-  let ls = T.lines content
-      hasFrontmatter = case ls of
+  let contentLines = T.lines content
+      hasFrontmatter = case contentLines of
         (first:_) -> T.strip first == "---"
         []        -> False
       fmEnd = if hasFrontmatter
-              then findClosingDash (drop 1 ls) 1
+              then findClosingDash (drop 1 contentLines) 1
               else Nothing
       bodyLines = case fmEnd of
-        Just idx -> drop (idx + 1) ls
-        Nothing  -> ls
+        Just index -> drop (index + 1) contentLines
+        Nothing  -> contentLines
       body = T.unlines bodyLines
       firstEmbedIdx = findFirstIndex embedHeaders body
       fictionIdx = indexOfHeader fictionSectionHeader body
@@ -61,8 +61,8 @@ stripForPrompt content =
 
 findClosingDash :: [Text] -> Int -> Maybe Int
 findClosingDash [] _ = Nothing
-findClosingDash (l:rest) idx =
-  if T.strip l == "---" then Just idx else findClosingDash rest (idx + 1)
+findClosingDash (l:rest) index =
+  if T.strip l == "---" then Just index else findClosingDash rest (index + 1)
 
 findFirstIndex :: [Text] -> Text -> Int
 findFirstIndex headers body =

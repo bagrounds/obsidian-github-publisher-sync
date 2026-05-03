@@ -53,8 +53,8 @@ isUpdatesSectionHeading l = T.stripEnd l == updatesSectionHeader
 
 extractTrailingEmojis :: Text -> Text
 extractTrailingEmojis noteContent =
-  let ls = T.lines noteContent
-      h2Lines = filter (\l -> T.isPrefixOf "## " l && not (isUpdatesSectionHeading l)) ls
+  let contentLines = T.lines noteContent
+      h2Lines = filter (\l -> T.isPrefixOf "## " l && not (isUpdatesSectionHeading l)) contentLines
       extracted = fmap extractHeadingEmojis h2Lines
       deduped = nub $ filter (not . T.null) extracted
   in T.concat deduped
@@ -74,9 +74,9 @@ stripTitlePrefixes title =
 extractLinkedTitles :: Text -> [Text]
 extractLinkedTitles noteContent =
   let (_, body) = parseFrontmatter noteContent
-      ls = T.lines body
-      lsBeforeUpdates = takeWhile (not . isUpdatesSectionHeading) ls
-      listItems = filter (T.isPrefixOf "- " . T.stripStart) lsBeforeUpdates
+      contentLines = T.lines body
+      contentLinesBeforeUpdates = takeWhile (not . isUpdatesSectionHeading) contentLines
+      listItems = filter (T.isPrefixOf "- " . T.stripStart) contentLinesBeforeUpdates
       titles = concatMap extractTitlesFromLine listItems
   in filter (not . T.null) $ fmap stripTitlePrefixes titles
 
@@ -110,16 +110,15 @@ reflectionTitleCutoff reflectionDay = LocalTime reflectionDay (TimeOfDay 22 0 0)
 
 reflectionNeedsTitle :: Text -> Text -> Bool
 reflectionNeedsTitle content date =
-  let titleLine = findTitleLine (T.lines content)
-  in case titleLine of
+  case findTitleLine (T.lines content) of
     Nothing -> True
-    Just tl ->
-      let val = T.strip $ T.drop 6 tl
-          unquoted = T.dropAround (\c -> c == '"' || c == '\'') val
+    Just titleLine ->
+      let titleValue = T.strip $ T.drop 6 titleLine
+          unquoted = T.dropAround (\c -> c == '"' || c == '\'') titleValue
       in unquoted == date
 
 findTitleLine :: [Text] -> Maybe Text
-findTitleLine = foldr (\l acc -> if T.isPrefixOf "title:" l then Just l else acc) Nothing
+findTitleLine = foldr (\l found -> if T.isPrefixOf "title:" l then Just l else found) Nothing
 
 buildReflectionTitlePrompt :: [Text] -> [Text] -> (Text, Text)
 buildReflectionTitlePrompt linkedTitles recentTitles =
@@ -204,8 +203,8 @@ applyReflectionTitle content date creativeTitle =
 
 updateTitleFrontmatter :: Text -> Text -> Text
 updateTitleFrontmatter content fullTitle =
-  let ls = T.lines content
-  in case ls of
+  let contentLines = T.lines content
+  in case contentLines of
     (first : rest)
       | T.strip first == "---" ->
         case break (\l -> T.strip l == "---") rest of
@@ -237,11 +236,11 @@ updateFmFields fmLines fullTitle =
 
 updateH1Heading :: Text -> Text -> Text -> Text
 updateH1Heading content date fullTitle =
-  let ls = T.lines content
+  let contentLines = T.lines content
       updatedLines = fmap (\l ->
         if T.isPrefixOf "# " l && T.isInfixOf date l
         then "# " <> fullTitle
-        else l) ls
+        else l) contentLines
   in T.unlines updatedLines
 
 data ReflectionTitleConfig = ReflectionTitleConfig

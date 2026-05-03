@@ -139,28 +139,28 @@ Record field abbreviation prefixes must be removed. When two records in the same
 - [x] `go` → `visitFiles` (meaningless helper name replaced with descriptive name)
 - [x] `inferenceRef` → `inferenceCount` (outer IORef binding in `processFiles`, dropping `Ref`)
 - [x] `resultRef` → `fileResults` (outer IORef binding in `processFiles`, dropping `Ref`)
-- [ ] `fm` → `frontmatter` (local binding for `parseFrontmatter` result in `alreadyAnalyzed`)
+- [x] `fm` → `frontmatter` (local binding for `parseFrontmatter` result in `alreadyAnalyzed`)
 
 #### DailyReflection.hs
 
-- [ ] `ls` → `contentLines` (local variable)
-- [ ] `idx` → `index` (local variable)
+- [x] `ls` → `contentLines` (local variable)
+- [x] `idx` → `index` (local variable)
 
 #### BlogSeries.hs
 
-- [ ] `ls` → `contentLines` (local variable)
+- [x] `ls` → `contentLines` (local variable)
 
 #### AiFiction.hs
 
-- [ ] `ls` → `contentLines` (local variable)
-- [ ] `idx` → `index` (local variable in `findClosingDash`)
+- [x] `ls` → `contentLines` (local variable)
+- [x] `idx` → `index` (local variable in `findClosingDash`)
 
 #### ReflectionTitle.hs
 
-- [ ] `ls` → `titleLines` (local variable)
-- [ ] `val` → `titleValue` (local variable in `titleMatchesDate`)
-- [ ] `tl` → `titleLine` (parameter in `titleMatchesDate`)
-- [ ] `acc` → `found` (accumulator in `findTitleLine`)
+- [x] `ls` → `contentLines` (local variable — also renamed `lsBeforeUpdates` → `contentLinesBeforeUpdates`)
+- [x] `val` → `titleValue` (local variable in `reflectionNeedsTitle`)
+- [x] `tl` → `titleLine` (parameter in `reflectionNeedsTitle`)
+- [x] `acc` → `found` (accumulator in `findTitleLine`)
 - [ ] `idx` → `index` (local variable in `stripInlinePreamble`)
 
 #### SocialPosting.hs

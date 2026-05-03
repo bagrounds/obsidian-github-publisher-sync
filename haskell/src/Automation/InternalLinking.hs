@@ -90,10 +90,10 @@ extractBody content =
 
 alreadyAnalyzed :: Int -> Text -> Bool
 alreadyAnalyzed currentVersion content =
-  let (fm, _) = parseFrontmatter content
-  in case Map.lookup "force_analyze_links" fm of
+  let (frontmatter, _) = parseFrontmatter content
+  in case Map.lookup "force_analyze_links" frontmatter of
     Just "true" -> False
-    _           -> Map.lookup "link_analysis_version" fm == Just (T.pack (show currentVersion))
+    _           -> Map.lookup "link_analysis_version" frontmatter == Just (T.pack (show currentVersion))
 
 
 applyReplacements :: Text -> [CD.LinkCandidate] -> [Bool] -> Text

@@ -125,7 +125,7 @@ decodePem pemText =
       body = TE.encodeUtf8 (T.concat bodyLines)
   in case B64.decode body of
     Left err -> Left $ "PEM base64 decode error: " <> T.pack err
-    Right bs -> Right bs
+    Right bytes -> Right bytes
 
 parseDerPrivateKey :: ByteString -> Either Text PrivateKey
 parseDerPrivateKey derBytes =
@@ -179,46 +179,46 @@ integerBitLength n
     go x acc = go (x `div` 2) (acc + 1)
 
 parseDerTag :: Word8 -> ByteString -> Either Text (ByteString, ByteString)
-parseDerTag expectedTag bs
-  | BS.null bs = Left "Unexpected end of DER data"
-  | BS.index bs 0 /= expectedTag =
+parseDerTag expectedTag bytes
+  | BS.null bytes = Left "Unexpected end of DER data"
+  | BS.index bytes 0 /= expectedTag =
       Left $ "Expected DER tag 0x" <> T.pack (showHexByte expectedTag)
-          <> " but got 0x" <> T.pack (showHexByte (BS.index bs 0))
+          <> " but got 0x" <> T.pack (showHexByte (BS.index bytes 0))
   | otherwise = do
-      (contentLength, headerLength) <- parseDerLength (BS.drop 1 bs)
-      let content = BS.take contentLength (BS.drop headerLength (BS.drop 1 bs))
-          remaining = BS.drop (1 + headerLength + contentLength) bs
+      (contentLength, headerLength) <- parseDerLength (BS.drop 1 bytes)
+      let content = BS.take contentLength (BS.drop headerLength (BS.drop 1 bytes))
+          remaining = BS.drop (1 + headerLength + contentLength) bytes
       Right (content, remaining)
 
 parseDerInteger :: ByteString -> Either Text (Integer, ByteString)
-parseDerInteger bs = do
-  (content, remaining) <- parseDerTag 0x02 bs
+parseDerInteger bytes = do
+  (content, remaining) <- parseDerTag 0x02 bytes
   Right (bytesToInteger content, remaining)
 
 parseDerLength :: ByteString -> Either Text (Int, Int)
-parseDerLength bs
-  | BS.null bs = Left "Unexpected end of DER length"
+parseDerLength bytes
+  | BS.null bytes = Left "Unexpected end of DER length"
   | otherwise =
-      let firstByte = BS.index bs 0
+      let firstByte = BS.index bytes 0
       in if firstByte < 0x80
         then Right (fromIntegral firstByte, 1)
         else
           let numLengthBytes = fromIntegral (firstByte - 0x80)
-          in if BS.length bs < numLengthBytes + 1
+          in if BS.length bytes < numLengthBytes + 1
             then Left "DER length extends beyond data"
             else
-              let lengthBytes = BS.take numLengthBytes (BS.drop 1 bs)
+              let lengthBytes = BS.take numLengthBytes (BS.drop 1 bytes)
                   lengthValue = BS.foldl' (\acc byte -> acc `shiftL` 8 .|. fromIntegral byte) 0 lengthBytes
               in Right (lengthValue, numLengthBytes + 1)
 
 bytesToInteger :: ByteString -> Integer
-bytesToInteger bs
-  | BS.null bs = 0
-  | BS.index bs 0 >= 0x80 =
-      let unsigned = BS.foldl' (\acc byte -> acc `shiftL` 8 .|. fromIntegral byte) 0 bs :: Integer
-          bitCount = BS.length bs * 8
+bytesToInteger bytes
+  | BS.null bytes = 0
+  | BS.index bytes 0 >= 0x80 =
+      let unsigned = BS.foldl' (\acc byte -> acc `shiftL` 8 .|. fromIntegral byte) 0 bytes :: Integer
+          bitCount = BS.length bytes * 8
       in unsigned - (1 `shiftL` bitCount)
-  | otherwise = BS.foldl' (\acc byte -> acc `shiftL` 8 .|. fromIntegral byte) 0 bs
+  | otherwise = BS.foldl' (\acc byte -> acc `shiftL` 8 .|. fromIntegral byte) 0 bytes
 
 showHexByte :: Word8 -> String
 showHexByte byte =

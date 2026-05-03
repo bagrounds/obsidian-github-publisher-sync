@@ -124,9 +124,9 @@ readEntry contentDir dirName file = do
   let entryRelativePath = dirName <> "/" <> T.pack file
       filePath           = contentDir </> T.unpack entryRelativePath
   content <- TIO.readFile filePath
-  let (fm, _) = parseFrontmatter content
+  let (frontmatter, _) = parseFrontmatter content
   pure $ do
-    titleText <- Map.lookup "title" fm
+    titleText <- Map.lookup "title" frontmatter
     let plain = stripEmojis titleText
     if T.length plain < minTitleLength
       then Nothing

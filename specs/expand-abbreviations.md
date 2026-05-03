@@ -101,7 +101,7 @@ Record field abbreviation prefixes must be removed. When two records in the same
 - [x] `brModifiedFiles` → `modifiedFiles` (BackfillResult record field)
 - [x] `brErrors` → `errors` (BackfillResult record field)
 - [x] `fm` → `frontmatter` (local binding for `parseFrontmatter` result in `extractFrontmatterValue`)
-- [ ] `ls` → `contentLines` (local variable in `updateFrontmatterFields`)
+- [x] `ls` → `contentLines` (local variable in `updateFrontmatterFields`)
 
 #### BlogPrompt.hs
 
@@ -203,36 +203,37 @@ Record field abbreviation prefixes must be removed. When two records in the same
 - [x] `lns` → `contentLines` (parameter in `fitWithStrategies`; local variable `contentLines` inside renamed to `preUrlLines` to avoid shadowing)
 - [x] `urlIdx` → `urlIndex` (local variable in `fitWithStrategies`)
 - [x] `ci` → `colonIndex` (pattern variable in `strategy3`)
-- [ ] `colonIdx` → `colonPosition` (local binding in `strategy3` — the `Maybe Int` holding the colon position)
-- [ ] `i` → `index` (parameter in `removeAt`)
+- [x] `colonIdx` → `colonPosition` (local binding in `strategy3` — the `Maybe Int` holding the colon position)
+- [x] `i` → `index` (parameter in `removeAt`)
 
 #### Scheduler.hs
 
-- [ ] `fm` → `frontmatter` (local binding for frontmatter text in `needsRegeneration` and `parseFrontmatterText`)
+- [x] `fm` → `frontmatter` (local binding for frontmatter text in `needsRegeneration` and `parseFrontmatterText`)
 
 #### InternalLinking/Masking.hs
 
-- [ ] `fm` → `frontmatter` (local binding for frontmatter text in `maskProtectedRegions`)
+- [x] `fm` → `frontmatter` (local binding for frontmatter text in `maskProtectedRegions`)
+- [ ] `fmBlock` → `frontmatterBlock` (local binding for the masked frontmatter block in `maskFrontmatter`)
 
 #### InternalLinking/CandidateDiscovery.hs
 
-- [ ] `fm` → `frontmatter` (local binding for `parseFrontmatter` result in `contentTitle`)
+- [x] `fm` → `frontmatter` (local binding for `parseFrontmatter` result in `contentTitle`)
 
 #### SocialPosting/ContentDiscovery.hs
 
-- [ ] `fm` → `frontmatter` (local binding for `parseFrontmatter` result in `readContentNote`)
+- [x] `fm` → `frontmatter` (local binding for `parseFrontmatter` result in `readContentNote`)
 
 #### BlogPosts.hs
 
-- [ ] `fm` → `frontmatter` (local binding for `parseFrontmatter` result in `readPost`)
+- [x] `fm` → `frontmatter` (local binding for `parseFrontmatter` result in `readPost`)
 
 #### Gemini.hs
 
-- [ ] `req` → `request` (parameter name for `Request` in `generateContent`)
+- [x] `req` → `request` (parameter name for `Request` in `generateContent`)
 
 #### GcpAuth.hs
 
-- [ ] `bs` → `bytes` (parameter name for `ByteString` in `parseDerTag`, `parseDerInteger`, `parseDerLength`, and `bytesToInteger`)
+- [x] `bs` → `bytes` (parameter name for `ByteString` in `parseDerTag`, `parseDerInteger`, `parseDerLength`, `bytesToInteger`, and `decodePem`)
 
 #### StaticGiscus.hs
 
@@ -264,6 +265,30 @@ Record field abbreviation prefixes must be removed. When two records in the same
 - [ ] `bpDate` → `date` (BlogPost record field — `bp` prefix)
 - [ ] `bpTitle` → `title` (BlogPost record field — `bp` prefix)
 - [ ] `bpBody` → `body` (BlogPost record field — `bp` prefix)
+
+#### Frontmatter.hs
+
+- [ ] `fmLines` → `frontmatterLines` (local binding for parsed frontmatter lines in `parseFrontmatter`)
+
+#### InternalLinking.hs
+
+- [ ] `fmLines` → `frontmatterLines` (local binding for parsed frontmatter lines in `updateFrontmatterFields`)
+- [ ] `updatedFm` → `updatedFrontmatter` (local binding for updated frontmatter lines in `updateFrontmatterFields`)
+
+#### BlogImage.hs
+
+- [ ] `fmLines` → `frontmatterLines` (local binding for parsed frontmatter lines in `updateFrontmatterFields` and `applyField`)
+- [ ] `updatedFm` → `updatedFrontmatter` (local binding for updated frontmatter lines in `updateFrontmatterFields`)
+
+#### ReflectionTitle.hs
+
+- [ ] `fmLines` → `frontmatterLines` (parameter in `updateFmFields` and local binding in `updateContentWithTitle`)
+- [ ] `updatedFm` → `updatedFrontmatter` (local binding in `updateContentWithTitle`)
+- [ ] `updateFmFields` → `updateFrontmatterFields` (function name — `Fm` abbreviation)
+
+#### SocialPosting/FrontmatterUpdate.hs
+
+- [ ] `fmLines` → `frontmatterLines` (local binding for parsed frontmatter lines)
 
 ## Ordering Notes
 

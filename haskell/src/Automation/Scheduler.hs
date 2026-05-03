@@ -166,14 +166,14 @@ hasRegenerateMarker :: Text -> Bool
 hasRegenerateMarker content =
   case extractFrontmatter content of
     Nothing -> False
-    Just fm -> any isRegenerateLine (T.lines fm)
+    Just frontmatter -> any isRegenerateLine (T.lines frontmatter)
 
 extractFrontmatter :: Text -> Maybe Text
 extractFrontmatter content = do
   rest <- T.stripPrefix "---\n" content
   case T.breakOn "\n---" rest of
     (_, "")  -> Nothing
-    (fm, _)  -> Just fm
+    (frontmatter, _)  -> Just frontmatter
 
 isRegenerateLine :: Text -> Bool
 isRegenerateLine line =

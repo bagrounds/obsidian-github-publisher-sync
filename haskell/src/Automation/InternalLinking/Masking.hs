@@ -26,8 +26,8 @@ maskFrontmatter content =
     Just afterOpen ->
       case T.breakOn "\n---\n" afterOpen of
         (_, "") -> content
-        (fm, rest) ->
-          let fmBlock = "---\n" <> fm <> "\n---\n"
+        (frontmatter, rest) ->
+          let fmBlock = "---\n" <> frontmatter <> "\n---\n"
               afterBlock = T.drop (T.length "\n---\n") rest
           in T.replicate (T.length fmBlock) " " <> afterBlock
 

@@ -42,8 +42,8 @@ extractDate filename =
 parsePostFile :: FilePath -> Text -> IO BlogPost
 parsePostFile seriesDir filename = do
   content <- TIO.readFile (seriesDir </> T.unpack filename)
-  let (fm, body) = parseFrontmatter content
-      title = fromMaybe (T.pack $ dropExtension $ T.unpack filename) (Map.lookup "title" fm)
+  let (frontmatter, body) = parseFrontmatter content
+      title = fromMaybe (T.pack $ dropExtension $ T.unpack filename) (Map.lookup "title" frontmatter)
   pure BlogPost
     { bpFilename = filename
     , bpDate     = extractDate filename

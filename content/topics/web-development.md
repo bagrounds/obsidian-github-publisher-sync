@@ -11,6 +11,7 @@ image_date: 2026-04-10T15:27:03Z
 image_model: "@cf/black-forest-labs/flux-1-schnell"
 image_prompt: A sleek, isometric illustration of a digital cityscape being constructed. The scene features glowing, semi-transparent modular blocks representing code architecture—HTML tags, CSS stylesheets, and JavaScript nodes—floating together to form a modern building. A vibrant, flowing ribbon of data streams connects the structure to a stylized, abstract globe in the background. The color palette uses deep navy and charcoal tones contrasted with bright, neon accents of cyan, electric purple, and amber to signify energy and connectivity. The composition is clean and minimalist, emphasizing the concepts of scalability, structural integrity, and the living nature of the web. The lighting is soft and ambient, suggesting a high-tech, professional environment of innovation and digital craftsmanship.
 link_analysis_version: "2"
+updated: 2026-05-03T09:41:10
 ---
 [Home](../index.md) > [Topics](./index.md)  
 # 💻🌐<> Web Development  
@@ -150,4 +151,12 @@ link_analysis_version: "2"
   
 - Traversy Media: [https://www.youtube.com/c/TraversyMedia](https://www.youtube.com/c/TraversyMedia) 📺  
 - The Net Ninja: [https://www.youtube.com/c/TheNetNinja](https://www.youtube.com/c/TheNetNinja) 📺  
-- FreeCodeCamp.org: [https://www.youtube.com/c/Freecodecamp](https://www.youtube.com/c/Freecodecamp) 📺
+- FreeCodeCamp.org: [https://www.youtube.com/c/Freecodecamp](https://www.youtube.com/c/Freecodecamp) 📺  
+  
+## 🦋 Bluesky    
+<blockquote class="bluesky-embed" data-bluesky-uri="at://did:plc:i4yli6h7x2uoj7acxunww2fc/app.bsky.feed.post/3mkwuiq55cv26" data-bluesky-cid="bafyreievhha2byutyvfflo2feq46nvhsaye3cfkvzt24vwomvphjjlvske"><p>💻🌐&lt;&gt; Web Development  
+  
+#AI Q: 🌐 Which website feature do you find most frustrating when it fails to work?  
+  
+💻 Software Craftsmanship | 🎨 UI/UX Design | 💾 Database Systems | 🌐 Network Systems  
+https://bagrounds.org/topics/web-development</p>&mdash; <a href="https://bsky.app/profile/did:plc:i4yli6h7x2uoj7acxunww2fc?ref_src=embed">Bryan Grounds (@bagrounds.bsky.social)</a> <a href="https://bsky.app/profile/did:plc:i4yli6h7x2uoj7acxunww2fc/post/3mkwuiq55cv26?ref_src=embed">2026-05-03T09:41:12.000Z</a></blockquote><script async src="https://embed.bsky.app/static/embed.js" charset="utf-8"></script>

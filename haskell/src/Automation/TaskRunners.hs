@@ -26,7 +26,7 @@ import System.Directory (createDirectoryIfMissing, doesDirectoryExist, doesFileE
 import System.FilePath ((</>), dropExtension)
 import Data.Time (Day, defaultTimeLocale, parseTimeM, getCurrentTime)
 
-import Automation.AiBlogLinks (NavLinkResult (..), aiBlogConfig, ensureAllNavLinks, buildReflectionLinks)
+import Automation.AiBlogLinks (NavLinkResult (modified), aiBlogConfig, ensureAllNavLinks, buildReflectionLinks)
 import Automation.AiFiction
   ( FictionConfig (FictionConfig, fcModels, fcNoteContent)
   , FictionResult (frFiction, frModel, frUpdatedContent)
@@ -194,7 +194,7 @@ runBlogSeries context seriesMap runConfigs seriesId = do
                   let title = sanitizeTitle series rawTitle
                       slugText = generateSlug title
                   slug <- either (\slugError -> failTask $ "Invalid slug: " <> slugError) pure (mkSlug slugText)
-                  let filename = todayText <> "-" <> unSlug slug <> ".md"
+                  let newPostFilename = todayText <> "-" <> unSlug slug <> ".md"
 
                   posts <- readSeriesPosts seriesDir
                   let previousPost = case posts of
@@ -203,7 +203,7 @@ runBlogSeries context seriesMap runConfigs seriesId = do
 
                   let frontmatter = assembleFrontmatter series today title slug
                       backLink = case previousPost of
-                        Just post -> " | " <> buildBackLink series (bpFilename post)
+                        Just post -> " | " <> buildBackLink series (filename post)
                         Nothing -> ""
                       navLine = navLink series <> backLink
                       displayTitle = unDisplayTitle $ buildDisplayTitle series today title
@@ -215,9 +215,9 @@ runBlogSeries context seriesMap runConfigs seriesId = do
                       logMsg $ "  ⚠️  Grounding was requested but " <> usedModel <> " returned no sources"
                     else logMsg $ "  🔍 Embedded " <> T.pack (show (length groundingSources)) <> " grounding sources"
                   createDirectoryIfMissing True seriesDir
-                  let postPath = seriesDir </> T.unpack filename
+                  let postPath = seriesDir </> T.unpack newPostFilename
                   TIO.writeFile postPath (frontmatter <> "\n" <> header <> bodyWithSig <> fromMaybe "" maybeSourcesSection <> "\n")
-                  logMsg $ "  ✅ Written: " <> filename <> " [" <> usedModel <> "]"
+                  logMsg $ "  ✅ Written: " <> newPostFilename <> " [" <> usedModel <> "]"
 
                   let attachmentsDir = repoRoot </> "attachments"
                   imageEnvMap <- buildEnvMap
@@ -232,27 +232,27 @@ runBlogSeries context seriesMap runConfigs seriesId = do
                     (provider : _) -> do
                       imageResult <- try (processNote manager provider postPath attachmentsDir) :: IO (Either SomeException ImageGenerationResult)
                       case imageResult of
-                        Right _ -> logMsg $ "  🖼️  Image generated for " <> filename
-                        Left err -> logMsg $ "  ⚠️  Image generation failed for " <> filename <> ": " <> T.pack (show err)
+                        Right _ -> logMsg $ "  🖼️  Image generated for " <> newPostFilename
+                        Left err -> logMsg $ "  ⚠️  Image generation failed for " <> newPostFilename <> ": " <> T.pack (show err)
 
                   case previousPost of
-                    Just post -> updatePreviousPost (vaultDir </> T.unpack seriesId) post series filename
+                    Just post -> updatePreviousPost (vaultDir </> T.unpack seriesId) post series newPostFilename
                     Nothing -> pure ()
 
                   let metadataPath = seriesDir </> ".last-generate-metadata.json"
                   case previousPost of
                     Just post -> TIO.writeFile metadataPath $
-                      "{\"previousPostFilename\":\"" <> bpFilename post <> "\",\"newPostFilename\":\"" <> filename <> "\"}"
+                      "{\"previousPostFilename\":\"" <> filename post <> "\",\"newPostFilename\":\"" <> newPostFilename <> "\"}"
                     Nothing -> pure ()
 
-                  let filenameNoExt = T.pack $ dropExtension $ T.unpack filename
+                  let filenameNoExt = T.pack $ dropExtension $ T.unpack newPostFilename
                       regenFilenameNoExt = case maybeRegenPost of
                         Just r  -> Just (T.pack (dropExtension r))
                         Nothing -> Nothing
                   postTitle <- either (\e -> failTask $ "Invalid display title: " <> e) pure (mkTitle displayTitle)
                   _ <- updateDailyReflection vaultDir today series filenameNoExt postTitle regenFilenameNoExt
 
-                  let postRelPath = T.unpack seriesId </> T.unpack filename
+                  let postRelPath = T.unpack seriesId </> T.unpack newPostFilename
                       postLocalPath = repoRoot </> postRelPath
                   _ <- syncFileToVault postLocalPath postRelPath vaultDir
 

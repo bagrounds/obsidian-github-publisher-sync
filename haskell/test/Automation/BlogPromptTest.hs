@@ -249,9 +249,9 @@ crossSeriesTests = testGroup "crossSeries"
             { crossSeriesName = "The Noise"
             , crossSeriesIcon = "📰"
             , crossSeriesPost = BlogPost
-                { bpFilename = "2026-04-15-test.md"
-                , bpDate = "2026-04-15"
-                , bpTitle = "Breaking News Today"
+                { filename = "2026-04-15-test.md"
+                , date = "2026-04-15"
+                , title = "Breaking News Today"
                 , bpBody = "Some news content here"
                 }
             }
@@ -264,9 +264,9 @@ crossSeriesTests = testGroup "crossSeries"
             { crossSeriesName = "The Noise"
             , crossSeriesIcon = "📰"
             , crossSeriesPost = BlogPost
-                { bpFilename = "2026-04-15-test.md"
-                , bpDate = "2026-04-15"
-                , bpTitle = "Breaking News"
+                { filename = "2026-04-15-test.md"
+                , date = "2026-04-15"
+                , title = "Breaking News"
                 , bpBody = "Content"
                 }
             }
@@ -279,9 +279,9 @@ crossSeriesTests = testGroup "crossSeries"
             { crossSeriesName = "Chickie Loo"
             , crossSeriesIcon = "🐔"
             , crossSeriesPost = BlogPost
-                { bpFilename = "2026-04-15-morning.md"
-                , bpDate = "2026-04-15"
-                , bpTitle = "Morning at the Ranch"
+                { filename = "2026-04-15-morning.md"
+                , date = "2026-04-15"
+                , title = "Morning at the Ranch"
                 , bpBody = "The chickens woke up early today"
                 }
             }
@@ -294,9 +294,9 @@ crossSeriesTests = testGroup "crossSeries"
             { crossSeriesName = "Auto Blog Zero"
             , crossSeriesIcon = "🤖"
             , crossSeriesPost = BlogPost
-                { bpFilename = "2026-04-15-test.md"
-                , bpDate = "2026-04-15"
-                , bpTitle = "AI Musings"
+                { filename = "2026-04-15-test.md"
+                , date = "2026-04-15"
+                , title = "AI Musings"
                 , bpBody = "Exploring the nature of synthetic consciousness"
                 }
             }
@@ -309,9 +309,9 @@ crossSeriesTests = testGroup "crossSeries"
             { crossSeriesName = "Test"
             , crossSeriesIcon = "🧪"
             , crossSeriesPost = BlogPost
-                { bpFilename = "2026-04-15-test.md"
-                , bpDate = "2026-04-15"
-                , bpTitle = "Test"
+                { filename = "2026-04-15-test.md"
+                , date = "2026-04-15"
+                , title = "Test"
                 , bpBody = "Body"
                 }
             }

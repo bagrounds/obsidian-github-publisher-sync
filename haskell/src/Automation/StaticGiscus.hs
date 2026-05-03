@@ -53,8 +53,8 @@ import qualified Automation.StaticGiscus.GraphQL as Gql
 data StaticComment = StaticComment
   { author      :: Text
   , authorUrl   :: Text
-  , scBodyHtml  :: Text
-  , scCreatedAt :: Text
+  , bodyHtml    :: Text
+  , createdAt   :: Text
   } deriving (Show, Eq)
 
 type CommentsMap = Map Text [StaticComment]
@@ -78,8 +78,8 @@ toStaticComment :: GqlComment -> StaticComment
 toStaticComment c = StaticComment
   { author    = maybe "unknown" Gql.login (Gql.author c)
   , authorUrl = maybe "https://github.com" Gql.url (Gql.author c)
-  , scBodyHtml = Gql.bodyHtml c
-  , scCreatedAt = Gql.createdAt c
+  , bodyHtml  = Gql.bodyHtml c
+  , createdAt = Gql.createdAt c
   }
 
 buildCommentsMap :: [GqlDiscussion] -> CommentsMap
@@ -126,10 +126,10 @@ renderStaticComment c =
   \<header class=\"static-giscus-comment-header\">\n\
   \<a href=\"" <> escapeHtml (authorUrl c) <> "\" rel=\"nofollow\" class=\"static-giscus-author\">"
   <> escapeHtml (author c) <> "</a>\n\
-  \<time datetime=\"" <> scCreatedAt c <> "\" class=\"static-giscus-time\">"
-  <> formatDisplayDate (T.take 10 (scCreatedAt c)) <> "</time>\n\
+  \<time datetime=\"" <> createdAt c <> "\" class=\"static-giscus-time\">"
+  <> formatDisplayDate (T.take 10 (createdAt c)) <> "</time>\n\
   \</header>\n\
-  \<div class=\"static-giscus-body\">" <> scBodyHtml c <> "</div>\n\
+  \<div class=\"static-giscus-body\">" <> bodyHtml c <> "</div>\n\
   \</article>"
 
 renderStaticCommentsHtml :: [StaticComment] -> Text
@@ -165,8 +165,8 @@ injectStaticComments html commentsMap =
           let staticHtml = renderStaticCommentsHtml comments
           in case findGiscusDiv html of
             Nothing -> html
-            Just idx ->
-              T.take idx html <> staticHtml <> "\n" <> T.drop idx html
+            Just insertionPoint ->
+              T.take insertionPoint html <> staticHtml <> "\n" <> T.drop insertionPoint html
 
 findGiscusDiv :: Text -> Maybe Int
 findGiscusDiv html =
@@ -183,7 +183,7 @@ graphqlEndpoint :: String
 graphqlEndpoint = "https://api.github.com/graphql"
 
 fetchDiscussionPage :: Manager -> Text -> Text -> Text -> Text -> Maybe Text -> IO (Maybe GqlDiscussionsPage)
-fetchDiscussionPage manager token owner repo categoryId mAfter = do
+fetchDiscussionPage manager token owner repo categoryId maybeAfterCursor = do
   initialRequest <- parseRequest graphqlEndpoint
   let query = "query($owner: String!, $name: String!, $categoryId: ID!, $after: String) {\
               \ repository(owner: $owner, name: $name) {\
@@ -202,7 +202,7 @@ fetchDiscussionPage manager token owner repo categoryId mAfter = do
         [ "owner" .= owner
         , "name" .= repo
         , "categoryId" .= categoryId
-        , "after" .= mAfter
+        , "after" .= maybeAfterCursor
         ]
       body = encode $ object
         [ "query" .= (query :: Text)
@@ -240,15 +240,15 @@ fetchAllDiscussions :: Manager -> Text -> Text -> Text -> Text -> IO [GqlDiscuss
 fetchAllDiscussions manager token owner repo categoryId =
   go Nothing []
   where
-    go mAfter acc = do
-      mPage <- fetchDiscussionPage manager token owner repo categoryId mAfter
-      case mPage of
-        Nothing -> pure acc
+    go maybeAfterCursor accumulatedDiscussions = do
+      maybePage <- fetchDiscussionPage manager token owner repo categoryId maybeAfterCursor
+      case maybePage of
+        Nothing -> pure accumulatedDiscussions
         Just page ->
-          let newAcc = acc <> Gql.discussionNodes page
+          let updatedDiscussions = accumulatedDiscussions <> Gql.discussionNodes page
           in if Gql.hasNextPage (Gql.pageInfo page)
-             then go (Gql.endCursor (Gql.pageInfo page)) newAcc
-             else pure newAcc
+             then go (Gql.endCursor (Gql.pageInfo page)) updatedDiscussions
+             else pure updatedDiscussions
 
 walkHtmlFiles :: FilePath -> IO [FilePath]
 walkHtmlFiles dir = do

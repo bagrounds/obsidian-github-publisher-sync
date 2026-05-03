@@ -17,10 +17,10 @@ import System.FilePath ((</>), dropExtension)
 import Automation.Frontmatter (parseFrontmatter)
 
 data BlogPost = BlogPost
-  { bpFilename :: Text
-  , bpDate     :: Text
-  , bpTitle    :: Text
-  , bpBody     :: Text
+  { filename :: Text
+  , date     :: Text
+  , title    :: Text
+  , bpBody   :: Text
   } deriving (Show, Eq)
 
 excludedFiles :: [Text]
@@ -45,10 +45,10 @@ parsePostFile seriesDir filename = do
   let (frontmatter, body) = parseFrontmatter content
       title = fromMaybe (T.pack $ dropExtension $ T.unpack filename) (Map.lookup "title" frontmatter)
   pure BlogPost
-    { bpFilename = filename
-    , bpDate     = extractDate filename
-    , bpTitle    = title
-    , bpBody     = body
+    { filename = filename
+    , date     = extractDate filename
+    , title    = title
+    , bpBody   = body
     }
 
 readSeriesPosts :: FilePath -> IO [BlogPost]
@@ -59,7 +59,7 @@ readSeriesPosts seriesDir = do
       entries <- listDirectory seriesDir
       let mdFiles = filter isPostFile $ fmap T.pack entries
       posts <- traverse (parsePostFile seriesDir) mdFiles
-      pure $ sortOn (Down . bpFilename) posts
+      pure $ sortOn (Down . filename) posts
     else pure []
 
 readAgentsMd :: FilePath -> IO Text

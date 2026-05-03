@@ -156,9 +156,9 @@ matchesCondition WhereCondition{..} blogPost =
   in applyOperator operator value fieldValue
 
 extractField :: Field -> BlogPost -> Text
-extractField Filename = bpFilename
-extractField Date = bpDate
-extractField Title = bpTitle
+extractField Filename = filename
+extractField Date = date
+extractField Title = title
 
 applyOperator :: WhereOperator -> Text -> Text -> Bool
 applyOperator GreaterOrEqual threshold actual = actual >= threshold

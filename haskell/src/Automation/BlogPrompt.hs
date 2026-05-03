@@ -98,7 +98,7 @@ buildBlogPrompt ctx =
 filterCommentsAfterLastPost :: BlogSeriesConfig -> [BlogPost] -> [BlogComment] -> [BlogComment]
 filterCommentsAfterLastPost _ [] comments = comments
 filterCommentsAfterLastPost series (latestPost : _) comments =
-  let postDay = fromMaybe (fromGregorian 2026 1 1) (parseDate (bpDate latestPost))
+  let postDay = fromMaybe (fromGregorian 2026 1 1) (parseDate (date latestPost))
       cutoff = LocalTime postDay (scheduleTime series)
   in filter (commentAfterCutoff cutoff) comments
 
@@ -209,14 +209,14 @@ postsSinceLastRecap posts =
     Just i  -> take (i + 1) capped
 
 isRecapPost :: BlogPost -> Bool
-isRecapPost = T.isInfixOf "recap" . T.toLower . bpTitle
+isRecapPost = T.isInfixOf "recap" . T.toLower . title
 
 formatPost :: BlogSeriesConfig -> BlogPost -> Text
 formatPost series post =
-  let link = buildBackLink series (bpFilename post)
+  let link = buildBackLink series (filename post)
       body = stripEmbedSections (bpBody post)
-      cleanTitle = sanitizeTitle series (bpTitle post)
-  in "### " <> link <> " " <> cleanTitle <> " (" <> bpDate post <> ")\n\n" <> T.strip body
+      cleanTitle = sanitizeTitle series (title post)
+  in "### " <> link <> " " <> cleanTitle <> " (" <> date post <> ")\n\n" <> T.strip body
 
 buildCommentsSection :: [BlogComment] -> Text
 buildCommentsSection [] = ""
@@ -238,8 +238,8 @@ formatCrossSeriesPost :: CrossSeriesPost -> Text
 formatCrossSeriesPost CrossSeriesPost{..} =
   let body = stripEmbedSections (bpBody crossSeriesPost)
       excerpt = T.take 2000 body
-  in "### " <> crossSeriesIcon <> " " <> crossSeriesName <> " — " <> bpTitle crossSeriesPost
-    <> " (" <> bpDate crossSeriesPost <> ")\n\n" <> T.strip excerpt
+  in "### " <> crossSeriesIcon <> " " <> crossSeriesName <> " — " <> title crossSeriesPost
+    <> " (" <> date crossSeriesPost <> ")\n\n" <> T.strip excerpt
 
 formatComment :: BlogComment -> Text
 formatComment c =

@@ -13,8 +13,8 @@ module Automation.ReflectionTitle
   , isReflectionFile
   , extractCreativeTitle
   , filterRecentReflectionFiles
-  , ReflectionTitleConfig (ReflectionTitleConfig, rtcModels, rtcNoteContent, rtcDate, rtcRecentTitles)
-  , ReflectionTitleResult (ReflectionTitleResult, rtrTitle, rtrFullTitle, rtrModel, rtrUpdatedContent)
+  , ReflectionTitleConfig (ReflectionTitleConfig, models, noteContent, date, recentTitles)
+  , ReflectionTitleResult (ReflectionTitleResult, title, fullTitle, model, updatedContent)
   ) where
 
 import Data.Char (isDigit)
@@ -244,34 +244,34 @@ updateH1Heading content date fullTitle =
   in T.unlines updatedLines
 
 data ReflectionTitleConfig = ReflectionTitleConfig
-  { rtcModels       :: NonEmpty Gemini.Model
-  , rtcNoteContent  :: Text
-  , rtcDate         :: Text
-  , rtcRecentTitles :: [Text]
+  { models       :: NonEmpty Gemini.Model
+  , noteContent  :: Text
+  , date         :: Text
+  , recentTitles :: [Text]
   } deriving (Show, Eq)
 
 data ReflectionTitleResult = ReflectionTitleResult
-  { rtrTitle          :: Text
-  , rtrFullTitle      :: Text
-  , rtrModel          :: Text
-  , rtrUpdatedContent :: Text
+  { title          :: Text
+  , fullTitle      :: Text
+  , model          :: Text
+  , updatedContent :: Text
   } deriving (Show, Eq)
 
 generateReflectionTitle :: ReflectionTitleConfig -> (NonEmpty Gemini.Model -> (Text, Text) -> IO (Text, Text)) -> IO ReflectionTitleResult
 generateReflectionTitle config callModel = do
-  let linkedTitles = extractLinkedTitles (rtcNoteContent config)
-      trailingEmojis = extractTrailingEmojis (rtcNoteContent config)
-      prompt = buildReflectionTitlePrompt linkedTitles (rtcRecentTitles config)
-  (text, model) <- callModel (rtcModels config) prompt
+  let linkedTitles = extractLinkedTitles (noteContent config)
+      trailingEmojis = extractTrailingEmojis (noteContent config)
+      prompt = buildReflectionTitlePrompt linkedTitles (recentTitles config)
+  (text, usedModel) <- callModel (models config) prompt
   let creativePart = parseReflectionTitle text
-      title = if T.null trailingEmojis then creativePart else creativePart <> " " <> trailingEmojis
-      fullTitle = rtcDate config <> " | " <> title
-      updatedContent = applyReflectionTitle (rtcNoteContent config) (rtcDate config) title
+      creativeTitle = if T.null trailingEmojis then creativePart else creativePart <> " " <> trailingEmojis
+      generatedFullTitle = date config <> " | " <> creativeTitle
+      newContent = applyReflectionTitle (noteContent config) (date config) creativeTitle
   pure ReflectionTitleResult
-    { rtrTitle = title
-    , rtrFullTitle = fullTitle
-    , rtrModel = model
-    , rtrUpdatedContent = updatedContent
+    { title = creativeTitle
+    , fullTitle = generatedFullTitle
+    , model = usedModel
+    , updatedContent = newContent
     }
 
 isReflectionFile :: FilePath -> Bool

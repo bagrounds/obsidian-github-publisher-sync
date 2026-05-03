@@ -27,10 +27,9 @@ import System.FilePath ((</>), dropExtension)
 import Data.Time (Day, defaultTimeLocale, parseTimeM, getCurrentTime)
 
 import Automation.AiBlogLinks (NavLinkResult (modified), aiBlogConfig, ensureAllNavLinks, buildReflectionLinks)
+import qualified Automation.AiFiction as AiFiction
 import Automation.AiFiction
-  ( FictionConfig (FictionConfig, fcModels, fcNoteContent)
-  , FictionResult (frFiction, frModel, frUpdatedContent)
-  , defaultFictionModel
+  ( defaultFictionModel
   , fictionEligibilityCutoff
   , generateFiction
   , reflectionNeedsFiction
@@ -74,10 +73,9 @@ import qualified Automation.InternalLinking as IL
 import qualified Automation.Json as Json
 import Automation.PacificTime (formatDay, toPacificLocalTime, todayPacificDay, yesterdayPacificDay)
 import Automation.Reflection (eligibleReflectionDays)
+import qualified Automation.ReflectionTitle as ReflectionTitle
 import Automation.ReflectionTitle
-  ( ReflectionTitleConfig (ReflectionTitleConfig, rtcModels, rtcNoteContent, rtcDate, rtcRecentTitles)
-  , ReflectionTitleResult (rtrFullTitle, rtrModel, rtrUpdatedContent)
-  , defaultTitleModel
+  ( defaultTitleModel
   , extractCreativeTitle
   , filterRecentReflectionFiles
   , generateReflectionTitle
@@ -418,17 +416,17 @@ tryFictionForDate context day = do
           let defaultChain = defaultFictionModel :| [Gemini.Gemini25FlashLite, Gemini.Gemini31FlashLite]
               models = Gemini.overrideModelChain envModel defaultChain
 
-          let config = FictionConfig
-                { fcModels = models
-                , fcNoteContent = noteContent
+          let config = AiFiction.FictionConfig
+                { AiFiction.models = models
+                , AiFiction.noteContent = noteContent
                 }
 
           result <- generateFiction config (callGeminiForGenerator context)
 
-          let wordCount = length (T.words (frFiction result))
-          logMsg $ "  🤖🐲 Generated fiction (model=" <> frModel result <> ", " <> T.pack (show wordCount) <> " words)"
+          let wordCount = length (T.words (AiFiction.fiction result))
+          logMsg $ "  🤖🐲 Generated fiction (model=" <> AiFiction.model result <> ", " <> T.pack (show wordCount) <> " words)"
 
-          TIO.writeFile reflectionPath (frUpdatedContent result)
+          TIO.writeFile reflectionPath (AiFiction.updatedContent result)
           logMsg $ "  ✏️  Updated " <> dateText <> ".md with AI fiction"
 
 runReflectionTitle :: Context.AppContext -> IO ()
@@ -469,18 +467,18 @@ tryTitleForDate context date = do
           let defaultChain = defaultTitleModel :| [Gemini.Gemini25FlashLite, Gemini.Gemini31FlashLite]
               models = Gemini.overrideModelChain envModel defaultChain
 
-          let config = ReflectionTitleConfig
-                { rtcModels = models
-                , rtcNoteContent = content
-                , rtcDate = date
-                , rtcRecentTitles = recentTitles
+          let config = ReflectionTitle.ReflectionTitleConfig
+                { ReflectionTitle.models = models
+                , ReflectionTitle.noteContent = content
+                , ReflectionTitle.date = date
+                , ReflectionTitle.recentTitles = recentTitles
                 }
 
           result <- generateReflectionTitle config (callGeminiForGenerator context)
 
-          logMsg $ "  🏷️  Generated title: " <> rtrFullTitle result <> " [" <> rtrModel result <> "]"
+          logMsg $ "  🏷️  Generated title: " <> ReflectionTitle.fullTitle result <> " [" <> ReflectionTitle.model result <> "]"
 
-          TIO.writeFile reflectionPath (rtrUpdatedContent result)
+          TIO.writeFile reflectionPath (ReflectionTitle.updatedContent result)
           logMsg $ "  🏷️  Title written for " <> date
           pure True
 

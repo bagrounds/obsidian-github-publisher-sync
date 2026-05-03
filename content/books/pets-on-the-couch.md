@@ -7,9 +7,13 @@ goodreads: https://www.goodreads.com/book/show/27274445-pets-on-the-couch
 URL: https://bagrounds.org/books/pets-on-the-couch
 share: true
 affiliate link: https://amzn.to/4kPcUxN
+image_date: 2026-05-03T00:38:20Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A cozy, sunlit living room featuring a plush, mid-century modern sofa. On the sofa sits a calm golden retriever and a black cat curled up together, both looking thoughtfully toward a soft, warm light source. Beside them lies a small, worn leather-bound notebook and a pair of spectacles resting on a cushion, suggesting a therapeutic or scholarly setting. The color palette uses soft earth tones—warm browns, muted greens, and cream—to evoke a sense of comfort and healing. A gentle, hazy glow from a nearby window creates a serene, introspective atmosphere, emphasizing the emotional connection between humans and their animal companions.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🐈🐕🛋️ Pets on the Couch  
+![books-pets-on-the-couch](../books-pets-on-the-couch.jpg)  
 _Neurotic Dogs, Compulsive Cats, Anxious Birds, and the New Science of Animal Psychiatry_  
 [🛒 Pets on the Couch. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4kPcUxN)  
   

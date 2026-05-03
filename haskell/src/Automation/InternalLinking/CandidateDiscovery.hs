@@ -179,14 +179,14 @@ findLinkCandidates index content masked selfPath =
       any (\(rStart, rEnd) -> start < rEnd && end > rStart) ranges
 
 findAllMatches :: String -> String -> [(Int, Int)]
-findAllMatches pat = go 0
+findAllMatches pat = findMatch 0
   where
-    go :: Int -> String -> [(Int, Int)]
-    go _offset [] = []
-    go offset s =
+    findMatch :: Int -> String -> [(Int, Int)]
+    findMatch _offset [] = []
+    findMatch offset s =
       case (s =~ pat :: (String, String, String)) of
         (_, "", _)      -> []
         (before, match, after) ->
           let pos = offset + length before
               len = length match
-          in (pos, len) : go (pos + len) after
+          in (pos, len) : findMatch (pos + len) after

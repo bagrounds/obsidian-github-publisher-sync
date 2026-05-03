@@ -135,13 +135,13 @@ updateFrontmatterFields filePath fields = do
 upsertField :: [Text] -> (Text, YamlValue) -> [Text]
 upsertField contentLines (key, yamlValue) =
   let newLine    = key <> ": " <> renderYamlValue yamlValue
-      pat        = T.pack (T.unpack key <> ":")
-      didReplace = any (matchesKey pat) contentLines
-      replaced   = replaceWithContinuation pat newLine contentLines
+      keyPattern = T.pack (T.unpack key <> ":")
+      didReplace = any (matchesKey keyPattern) contentLines
+      replaced   = replaceWithContinuation keyPattern newLine contentLines
   in if didReplace then replaced else contentLines <> [newLine]
   where
     matchesKey :: Text -> Text -> Bool
-    matchesKey p line = T.isPrefixOf p (T.stripStart line)
+    matchesKey prefix line = T.isPrefixOf prefix (T.stripStart line)
 
 replaceWithContinuation :: Text -> Text -> [Text] -> [Text]
 replaceWithContinuation _ _ [] = []

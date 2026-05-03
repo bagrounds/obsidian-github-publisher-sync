@@ -57,10 +57,10 @@ runTasks :: Map TaskId (IO ()) -> [TaskId] -> IO [TaskResult]
 runTasks = runTasksWithDelay interTaskDelayMicroseconds
 
 runTasksWithDelay :: Int -> Map TaskId (IO ()) -> [TaskId] -> IO [TaskResult]
-runTasksWithDelay delayMicroseconds runners taskIdentifiers = go taskIdentifiers []
+runTasksWithDelay delayMicroseconds runners taskIdentifiers = runTask taskIdentifiers []
   where
-    go [] accumulator = pure (reverse accumulator)
-    go (taskIdentifier : rest) accumulator = do
+    runTask [] accumulator = pure (reverse accumulator)
+    runTask (taskIdentifier : rest) accumulator = do
       case accumulator of
         [] -> pure ()
         _  -> do
@@ -71,12 +71,12 @@ runTasksWithDelay delayMicroseconds runners taskIdentifiers = go taskIdentifiers
       case mRunner of
         Nothing -> do
           logMsg $ "  ⚠️  Unknown task: " <> taskIdToText taskIdentifier
-          go rest ((taskIdentifier, False, Just "no runner registered") : accumulator)
+          runTask rest ((taskIdentifier, False, Just "no runner registered") : accumulator)
         Just runner -> do
           result <- try runner :: IO (Either SomeException ())
           case result of
-            Right () -> go rest ((taskIdentifier, True, Nothing) : accumulator)
+            Right () -> runTask rest ((taskIdentifier, True, Nothing) : accumulator)
             Left exception -> do
               let errorMessage = T.pack (show exception)
               logMsg $ "❌ " <> taskIdToText taskIdentifier <> " — " <> errorMessage
-              go rest ((taskIdentifier, False, Just errorMessage) : accumulator)
+              runTask rest ((taskIdentifier, False, Just errorMessage) : accumulator)

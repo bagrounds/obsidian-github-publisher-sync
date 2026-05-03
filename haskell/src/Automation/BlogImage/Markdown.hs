@@ -53,10 +53,10 @@ stripAttachmentsPrefix :: Text -> Text
 stripAttachmentsPrefix t = fromMaybe t (T.stripPrefix "attachments/" t)
 
 collapseNewlines :: Text -> Text
-collapseNewlines = go
+collapseNewlines = collapseStep
   where
-    go t = let t' = T.replace "\n\n\n" "\n\n" t
-           in if t' == t then t else go t'
+    collapseStep t = let t' = T.replace "\n\n\n" "\n\n" t
+                     in if t' == t then t else collapseStep t'
 
 stripMarkdownSyntax :: Text -> Text
 stripMarkdownSyntax =
@@ -109,14 +109,14 @@ removeMarkdownLinks t =
   in T.pack result
 
 removeCodeBlocks :: Text -> Text
-removeCodeBlocks content = T.intercalate "\n" (go (T.lines content) False)
+removeCodeBlocks content = T.intercalate "\n" (processLines (T.lines content) False)
   where
-    go [] _ = []
-    go (l : rest) inBlock
-      | "```" `T.isPrefixOf` l && inBlock = go rest False
-      | "```" `T.isPrefixOf` l            = go rest True
-      | inBlock                            = go rest True
-      | otherwise                          = l : go rest False
+    processLines [] _ = []
+    processLines (l : rest) inBlock
+      | "```" `T.isPrefixOf` l && inBlock = processLines rest False
+      | "```" `T.isPrefixOf` l            = processLines rest True
+      | inBlock                            = processLines rest True
+      | otherwise                          = l : processLines rest False
 
 removeInlineCode :: Text -> Text
 removeInlineCode t =

@@ -54,12 +54,12 @@ validatePostLength limits text =
   in (postLength <= platformMaxCharacters limits, postLength)
 
 findLastIndex :: (a -> Int -> Bool) -> [a] -> Int
-findLastIndex predicate elements = go (length elements - 1) (reverse elements)
+findLastIndex predicate elements = searchBackward (length elements - 1) (reverse elements)
   where
-    go _ []     = -1
-    go i (y:ys)
+    searchBackward _ []     = -1
+    searchBackward i (y:ys)
       | predicate y i = i
-      | otherwise     = go (i - 1) ys
+      | otherwise     = searchBackward (i - 1) ys
 
 rebuildPost :: [Text] -> Int -> Text -> Text -> [Text] -> Text
 rebuildPost contentLines topicIndex newTopicLine urlLine trailingLines =

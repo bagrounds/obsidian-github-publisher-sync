@@ -326,29 +326,29 @@ Record field abbreviation prefixes must be removed. When two records in the same
 
 #### InternalLinking.hs (additional locals)
 
-- [ ] `pat` → `keyPattern` (local binding in `upsertField`)
-- [ ] `p` → `prefix` (parameter in `matchesKey` within `upsertField`)
+- [x] `pat` → `keyPattern` (local binding in `upsertField`)
+- [x] `p` → `prefix` (parameter in `matchesKey` within `upsertField`)
 
 #### Other files with opaque `go` helpers
 
-- [ ] `go` → `processArgs` (inner helper in `CliArgs.hs` `parseCliArgs`)
-- [ ] `go` → `runAttempt` (inner helper in `Retry.hs` `withRetry`)
-- [ ] `go` → `runAttempt` (inner helper in `ObsidianSync.hs` `runObSyncWithRetry`)
-- [ ] `go` → `countBits` (inner helper in `GcpAuth.hs` `bitLength`)
-- [ ] `go` → `searchBackward` (inner helper in `Text.hs` `findLastIndex`)
-- [ ] `go` → `runTask` (inner helper in `TaskRunner.hs` `runTasksWithDelay`)
-- [ ] `go` → `findMatch` (inner helper in `InternalLinking/CandidateDiscovery.hs` `findAllMatches`)
-- [ ] `go` → `parseLinks` (inner helper in `InternalLinking/LinkExtraction.hs` `markdownLinks`)
-- [ ] `go` → `parseLinks` (inner helper in `SocialPosting/LinkExtraction.hs` `mdLinks`)
-- [ ] `go` → `findAt` (inner helper in `AiBlogLinks.hs` local `findIndex`)
-- [ ] `go` → `collapseStep` (inner helper in `BlogImage/Markdown.hs` `collapseNewlines`)
-- [ ] `go` → `processLines` (inner helper in `BlogImage/Markdown.hs` `removeCodeBlocks`)
-- [ ] `go` → `searchForward` (inner helper in `InternalLinking/Gemini.hs` `findLastIndex`)
-- [ ] `go` → `processFences` (inner helper in `InternalLinking/Masking.hs` `maskBetweenFences`)
-- [ ] `go` → `processLinks` (inner helper in `InternalLinking/Masking.hs` `maskMdLinks`)
-- [ ] `go` → `processWikiLinks` (inner helper in `InternalLinking/Masking.hs` `maskWikiL`)
-- [ ] `go` → `processBold` (inner helper in `InternalLinking/Masking.hs` `maskBold`)
-- [ ] `go` → `replaceMatches` (inner helper in `InternalLinking/Masking.hs` `replaceAllRegex`)
+- [x] `go` → `processArgs` (inner helper in `CliArgs.hs` `parseCliArgs`)
+- [x] `go` → `runAttempt` (inner helper in `Retry.hs` `withRetry`)
+- [x] `go` → `runAttempt` (inner helper in `ObsidianSync.hs` `runObSyncWithRetry`)
+- [x] `go` → `countBits` (inner helper in `GcpAuth.hs` `bitLength`)
+- [x] `go` → `searchBackward` (inner helper in `Text.hs` `findLastIndex`)
+- [x] `go` → `runTask` (inner helper in `TaskRunner.hs` `runTasksWithDelay`)
+- [x] `go` → `findMatch` (inner helper in `InternalLinking/CandidateDiscovery.hs` `findAllMatches`)
+- [x] `go` → `parseLinks` (inner helper in `InternalLinking/LinkExtraction.hs` `markdownLinks`)
+- [x] `go` → `parseLinks` (inner helper in `SocialPosting/LinkExtraction.hs` `mdLinks`)
+- [x] `go` → `findAt` (inner helper in `AiBlogLinks.hs` local `findIndex`)
+- [x] `go` → `collapseStep` (inner helper in `BlogImage/Markdown.hs` `collapseNewlines`)
+- [x] `go` → `processLines` (inner helper in `BlogImage/Markdown.hs` `removeCodeBlocks`)
+- [x] `go` → `searchForward` (inner helper in `InternalLinking/Gemini.hs` `findLastIndex`)
+- [x] `go` → `processFences` (inner helper in `InternalLinking/Masking.hs` `maskBetweenFences`)
+- [x] `go` → `processLinks` (inner helper in `InternalLinking/Masking.hs` `maskMdLinks`)
+- [x] `go` → `processWikiLinks` (inner helper in `InternalLinking/Masking.hs` `maskWikiL`)
+- [x] `go` → `processBold` (inner helper in `InternalLinking/Masking.hs` `maskBold`)
+- [x] `go` → `replaceMatches` (inner helper in `InternalLinking/Masking.hs` `replaceAllRegex`)
 - [ ] `go` → `buildPath` (inner helper in `SocialPosting/LinkExtraction.hs` `reconstructPath`)
 
 #### InternalLinking/CandidateDiscovery.hs (additional locals)
@@ -359,10 +359,12 @@ Record field abbreviation prefixes must be removed. When two records in the same
 #### InternalLinking/LinkExtraction.hs (additional locals)
 
 - [ ] `acc` → `accumulated` (accumulator parameter in `collectLink`)
+- [ ] `acc` → `accumulated` (accumulator parameter `step acc` in `normalizeFilePath`)
 
 #### SocialPosting/LinkExtraction.hs (additional locals)
 
 - [ ] `acc` → `accumulated` (accumulator parameter in `collectLink`)
+- [ ] `acc` → `accumulated` (accumulator parameter `step acc` in `normalizeFilePath`)
 
 #### Platforms/Twitter.hs (additional locals)
 
@@ -378,7 +380,18 @@ Record field abbreviation prefixes must be removed. When two records in the same
 
 #### Json.hs (additional locals)
 
-- [ ] `val` → `value` (local binding in `parseJson`, `parseJsonAs`, and `jsonPair`)
+- [ ] `val` → `value` (local binding in `eitherDecode`, `eitherDecodeStrict`, and `keyValuePair`)
+- [ ] `val` → `value` (parameter in `.=` operator)
+- [ ] `vals` → `values` (local binding in `jsonArray`)
+
+#### Gemini.hs (additional locals)
+
+- [ ] `val` → `jsonValue` (local binding in `parseResponseText` and `generateContent`)
+- [ ] `acc` → `accumulated` (accumulator parameter in `addIfNew` within `deduplicateByUrl`)
+
+#### GcpAuth.hs (additional locals)
+
+- [ ] `acc` → `accumulated` (lambda accumulator in `foldl'` calls in `parseDerLength` and `bytesToInteger`)
 
 ## Ordering Notes
 

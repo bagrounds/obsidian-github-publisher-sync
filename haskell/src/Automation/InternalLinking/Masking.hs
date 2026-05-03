@@ -35,9 +35,9 @@ maskFencedCode :: Text -> Text
 maskFencedCode = maskBetweenFences
 
 maskBetweenFences :: Text -> Text
-maskBetweenFences = go
+maskBetweenFences = processFences
   where
-    go txt =
+    processFences txt =
       let (before, rest) = breakOnFence txt
       in case rest of
         Nothing -> txt
@@ -52,7 +52,7 @@ maskBetweenFences = go
                    <> T.replicate (T.length fence) " "
                    <> T.replicate (T.length block) " "
                    <> T.replicate (T.length closingFence) " "
-                   <> go afterClose
+                   <> processFences afterClose
 
     breakOnFence :: Text -> (Text, Maybe (Text, Text))
     breakOnFence txt =
@@ -88,30 +88,30 @@ maskMarkdownLinks :: Text -> Text
 maskMarkdownLinks = maskMdLinks
 
 maskMdLinks :: Text -> Text
-maskMdLinks = go
+maskMdLinks = processLinks
   where
-    go txt =
+    processLinks txt =
       case T.breakOn "[" txt of
         (_, "") -> txt
         (before, rest) ->
           case T.breakOn "](" (T.drop 1 rest) of
-            (_, "") -> before <> "[" <> go (T.drop 1 rest)
+            (_, "") -> before <> "[" <> processLinks (T.drop 1 rest)
             (linkText, afterBracket) ->
               case T.breakOn ")" (T.drop 2 afterBracket) of
-                (_, "") -> before <> "[" <> go (T.drop 1 rest)
+                (_, "") -> before <> "[" <> processLinks (T.drop 1 rest)
                 (url, afterParen) ->
                   let fullMatch = "[" <> linkText <> "](" <> url <> ")"
                   in before
                        <> T.replicate (T.length fullMatch) " "
-                       <> go (T.drop 1 afterParen)
+                       <> processLinks (T.drop 1 afterParen)
 
 maskWikilinks :: Text -> Text
 maskWikilinks = maskWikiL
 
 maskWikiL :: Text -> Text
-maskWikiL = go
+maskWikiL = processWikiLinks
   where
-    go txt =
+    processWikiLinks txt =
       case T.breakOn "[[" txt of
         (_, "") -> txt
         (before, rest) ->
@@ -121,7 +121,7 @@ maskWikiL = go
               let fullMatch = "[[" <> inner <> "]]"
               in before
                    <> T.replicate (T.length fullMatch) " "
-                   <> go (T.drop 2 afterClose)
+                   <> processWikiLinks (T.drop 2 afterClose)
 
 maskHeadings :: Text -> Text
 maskHeadings input =
@@ -142,18 +142,18 @@ maskUrls :: Text -> Text
 maskUrls = replaceAllRegex "https?://[^] \t\n)]+"
 
 maskBold :: Text -> Text
-maskBold = go
+maskBold = processBold
   where
-    go txt =
+    processBold txt =
       case T.breakOn "**" txt of
         (_, "") -> txt
         (before, rest) ->
-          before <> "  " <> go (T.drop 2 rest)
+          before <> "  " <> processBold (T.drop 2 rest)
 
 replaceAllRegex :: String -> Text -> Text
-replaceAllRegex pat = go
+replaceAllRegex pat = replaceMatches
   where
-    go txt
+    replaceMatches txt
       | T.null txt = txt
       | otherwise  =
           let s = T.unpack txt
@@ -162,4 +162,4 @@ replaceAllRegex pat = go
             (before, match, after) ->
               T.pack before
                 <> T.replicate (length match) " "
-                <> go (T.pack after)
+                <> replaceMatches (T.pack after)

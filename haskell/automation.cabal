@@ -53,6 +53,7 @@ library
     Automation.GcpAuth
     Automation.ObsidianSync
     Automation.StaticGiscus
+    Automation.StaticGiscus.GraphQL
     Automation.BlogImage
     Automation.BlogImage.ContentDirectory
     Automation.BlogImage.TitleExtraction

@@ -12,6 +12,12 @@ import Test.Tasty (TestTree, testGroup)
 import Test.Tasty.HUnit (testCase, (@?=), assertBool)
 
 import Automation.StaticGiscus
+import Automation.StaticGiscus.GraphQL
+  ( GqlAuthor (..)
+  , GqlComment (..)
+  , GqlCommentsNode (..)
+  , GqlDiscussion (..)
+  )
 
 -- ---------------------------------------------------------------------------
 -- Pure function tests
@@ -219,10 +225,10 @@ mkDiscussion discussionTitle discussionComments = GqlDiscussion
   }
 
 mkStaticComment :: Text -> Text -> StaticComment
-mkStaticComment author body = StaticComment
-  { scAuthor = author
-  , scAuthorUrl = "https://github.com/" <> author
-  , scBodyHtml = body
+mkStaticComment commentAuthor body = StaticComment
+  { author      = commentAuthor
+  , authorUrl   = "https://github.com/" <> commentAuthor
+  , scBodyHtml  = body
   , scCreatedAt = "2026-01-15T10:00:00Z"
   }
 

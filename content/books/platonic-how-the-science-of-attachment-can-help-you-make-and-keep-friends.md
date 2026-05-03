@@ -10,9 +10,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-27T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-05-03T03:17:19Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A minimalist, modern illustration featuring three stylized, abstract figures sitting in a circle on a soft, neutral-colored background. The figures are connected by thin, glowing lines that weave between them, symbolizing the invisible bonds of attachment and communication. The color palette uses warm, inviting earth tones—soft terracotta, sage green, and cream—to evoke a sense of comfort and psychological safety. One figure is slightly leaning forward with an open posture, while the others are relaxed, representing the balance of initiative and vulnerability. The overall aesthetic is clean, sophisticated, and professional, utilizing geometric shapes and soft gradients to suggest the complexity and fluidity of human connection without using any text.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🧑‍🤝‍🧑 Platonic: How the Science of Attachment Can Help You Make - and Keep - Friends  
+![books-platonic-how-the-science-of-attachment-can-help-you-make-and-keep-friends](../books-platonic-how-the-science-of-attachment-can-help-you-make-and-keep-friends.jpg)  
 [🛒 Platonic: How the Science of Attachment Can Help You Make - and Keep - Friends. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/47Bpagm)  
   
 🫂💡💖 A research-backed blueprint for understanding how our attachment styles influence our platonic relationships and provides actionable strategies for fostering deeper, more resilient friendships in an increasingly isolated world.  

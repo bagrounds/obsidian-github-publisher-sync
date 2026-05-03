@@ -10,9 +10,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-16T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-05-03T03:17:16Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A single, vibrant spotlight shines down from above onto a dark, cluttered stage filled with chaotic, blurry silhouettes of indistinguishable objects. In the center of the illuminated circle stands a clean, minimalist wooden podium. Resting on the podium is a single, glowing megaphone emitting soft, golden light waves that ripple outward, cutting through the surrounding shadows. The contrast between the dark, disorganized background and the crisp, bright focal point emphasizes clarity and intentionality. The aesthetic is modern and professional, utilizing a high-contrast color palette of deep charcoal, slate blue, and brilliant gold accents to symbolize rising above the noise.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 📢📣 Platform: Get Noticed in a Noisy World  
+![books-platform-get-noticed-in-a-noisy-world](../books-platform-get-noticed-in-a-noisy-world.jpg)  
 [🛒 Platform: Get Noticed in a Noisy World. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4jwJ003)  
   
 ## 📚 Book Report: 📢 Platform: Get Noticed in a Noisy World  

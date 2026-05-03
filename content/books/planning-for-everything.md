@@ -12,9 +12,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-19T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-05-03T01:44:58Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: "An overhead view of a clean, minimalist workspace featuring a large, blank architectural blueprint spread across a wooden table. On top of the blueprint, a collection of diverse, tactile objects are arranged: a brass compass, a set of colorful wooden building blocks, a translucent protractor, and a partially sketched mind map on a piece of graph paper. Several paths are drawn in faint, elegant charcoal lines that diverge and converge across the paper, suggesting multiple possibilities rather than a single fixed route. Soft, natural light streams in from a nearby window, casting gentle shadows that give the scene depth. The atmosphere is one of calm, deliberate exploration and creative strategy, emphasizing the blend of logic, design, and human intuition."
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🗺️🎯🪜🏗️ Planning for Everything: The Design of Paths and Goals  
+![books-planning-for-everything](../books-planning-for-everything.jpg)  
 [🛒 Planning for Everything: The Design of Paths and Goals. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3HsfA5T)  
   
 ## 🤖 AI Summary  

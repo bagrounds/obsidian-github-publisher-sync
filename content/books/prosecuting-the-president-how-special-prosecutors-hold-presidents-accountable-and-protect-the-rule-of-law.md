@@ -10,9 +10,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-20T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-05-03T17:27:58Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A dramatic, high-contrast illustration featuring a set of polished brass scales of justice centered in the foreground. One side of the scale holds a classic, weathered leather-bound law book, while the other side holds a stylized, minimalist silhouette of a white neoclassical building with grand pillars, representing the executive branch. The background is a deep, moody charcoal gray with subtle, sharp geometric lines suggesting the structure of a courtroom or a constitution. A single, focused beam of cool blue light illuminates the scales from above, casting long, sharp shadows that emphasize the gravity and tension of the scene. The overall aesthetic is professional, solemn, and cinematic, evoking themes of institutional integrity and the weight of legal accountability.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # ⚖️🏛️ Prosecuting the President: How Special Prosecutors Hold Presidents Accountable and Protect the Rule of Law  
+![books-prosecuting-the-president-how-special-prosecutors-hold-presidents-accountable-and-protect-the-rule-of-law](../books-prosecuting-the-president-how-special-prosecutors-hold-presidents-accountable-and-protect-the-rule-of-law.jpg)  
 [🛒 Prosecuting the President: How Special Prosecutors Hold Presidents Accountable and Protect the Rule of Law. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4soTtjN)  
   
 🏛️⚖️ Special prosecutors are catalysts for upholding the rule of law by galvanizing public accountability when presidents are investigated for high-level misconduct.  

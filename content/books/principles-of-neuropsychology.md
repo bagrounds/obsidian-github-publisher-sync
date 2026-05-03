@@ -8,11 +8,16 @@ Author:
 tags:
 affiliate link: https://amzn.to/454VJna
 link_analysis_model: gemini-3.1-flash-lite-preview
-link_analysis_time: 2026-04-07T00:00:00Z
+link_analysis_time: 2026-04-21T00:00:00Z
 force_analyze_links: false
+link_analysis_version: "2"
+image_date: 2026-05-03T13:39:22Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: "A stylized, high-contrast illustration featuring a translucent human silhouette of a head in profile. Inside the cranial space, a glowing network of bioluminescent neural pathways forms a complex, interconnected web. Floating around the brain are abstract scientific icons rendered in a clean, minimalist aesthetic: a magnifying glass focusing on a synaptic gap, a geometric representation of a spiral DNA strand, a series of interconnected nodes representing data points, and a subtle prism refracting light into a spectrum. The background is a deep, sophisticated navy blue, creating a sense of depth and mystery. The overall lighting is soft and ethereal, emphasizing the intersection of biological structure and clinical analysis, with a professional, academic, and modern feel."
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🧠🤔🧪🔬 Principles of Neuropsychology  
+![books-principles-of-neuropsychology](../books-principles-of-neuropsychology.jpg)  
 [🛒 Principles of Neuropsychology. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/454VJna)  
   
 ## 🤖 AI Summary  

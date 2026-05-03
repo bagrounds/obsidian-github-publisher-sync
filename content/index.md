@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-05-03T12:15:55-07:00
+updated: 2026-05-03T14:55:21-07:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -21,11 +21,11 @@ updated: 2026-05-03T12:15:55-07:00
 - [2026-04-30 | ✅ Pull 🤝 Agent 🐔 Lessons 🔀 Intent 🌟 Flourishing 🏛️ Well-being 📰 Progress 🤖 Purpose 🤖 Deploy 🥚🩼🤖🐔🔀🌟🏛️📰🤖🔄🤖🐲](./reflections/2026-04-30.md)  
   
   
-## [🤖 AI Blog](./ai-blog/index.md) (185)  
-- [2026-05-03 | 🔤 Expand Abbreviations in Haskell Pass 12 🤖](./ai-blog/2026-05-03-1-expand-abbreviations-haskell-pass-12.md)  
-- [2026-05-02 | 🔤 Expand Abbreviations: inferenceCountRef, resultsRef, maybeFileResult, inferenceCount, maybeKey 🧹](./ai-blog/2026-05-02-9-expand-abbreviations-inference-refs.md)  
-- [2026-05-02 | 🔤 Expand Abbreviations: idx, ls, pos 🧹](./ai-blog/2026-05-02-7-expand-abbreviations-idx-ls-pos.md)  
-- [2026-05-02 | 🔤 Expand Abbreviations: Analytics & Daily Updates 🧹](./ai-blog/2026-05-02-6-expand-abbreviations-analytics-and-daily-updates.md)  
+## [🤖 AI Blog](./ai-blog/index.md) (189)  
+- [2026-05-03 | 🔤 Expand Abbreviations: Haskell Pass 17 🧹](./ai-blog/2026-05-03-6-expand-abbreviations-haskell-pass-17.md)  
+- [2026-05-03 | 🔤 Expand Abbreviations in the Haskell Codebase, Pass 16 🤖](./ai-blog/2026-05-03-5-expand-abbreviations-haskell-pass-16.md)  
+- [2026-05-03 | 🔤 Expand Abbreviations in Haskell Pass 15 🤖](./ai-blog/2026-05-03-4-expand-abbreviations-haskell-pass-15.md)  
+- [2026-05-03 | 🔤 Expand Abbreviations in Haskell Pass 14 🤖](./ai-blog/2026-05-03-3-expand-abbreviations-haskell-pass-14.md)  
   
   
 ## [🤖 Auto Blog Zero](./auto-blog-zero/index.md) (54)  
@@ -71,10 +71,10 @@ updated: 2026-05-03T12:15:55-07:00
   
   
 ## [📚 Books](./books/index.md) (961)  
+- [⚛️💻💡 Quantum Computing For Dummies](./books/quantum-computing-for-dummies.md)  
+- [⚙️🔗 Quality Software Management: Systems Thinking](./books/quality-software-management-systems-thinking.md)  
 - [ 🎯🎭🔗🧭🏆 Purposeful Performance: The Secret Mix of Connecting, Leading, and Succeeding](./books/purposeful-performance.md)  
 - [📢💡 Public Broadcasting and the Public Interest](./books/public-broadcasting-and-the-public-interest.md)  
-- [🧐🕹️🔁 Psycho-Cybernetics: A New Way to Get More Living Out of Life](./books/psycho-cybernetics-a-new-way-to-get-more-living-out-of-life.md)  
-- [⚖️🏛️ Prosecuting the President: How Special Prosecutors Hold Presidents Accountable and Protect the Rule of Law](./books/prosecuting-the-president-how-special-prosecutors-hold-presidents-accountable-and-protect-the-rule-of-law.md)  
   
   
 ## [📺 Videos](./videos/index.md) (816)  

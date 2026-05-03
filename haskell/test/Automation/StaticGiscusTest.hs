@@ -228,8 +228,8 @@ mkStaticComment :: Text -> Text -> StaticComment
 mkStaticComment authorName body = StaticComment
   { author      = authorName
   , authorUrl   = "https://github.com/" <> authorName
-  , scBodyHtml  = body
-  , scCreatedAt = "2026-01-15T10:00:00Z"
+  , bodyHtml    = body
+  , createdAt   = "2026-01-15T10:00:00Z"
   }
 
 isSuffixOf' :: String -> FilePath -> Bool

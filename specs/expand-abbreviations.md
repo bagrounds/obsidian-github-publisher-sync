@@ -256,23 +256,24 @@ Record field abbreviation prefixes must be removed. When two records in the same
 - [x] `sgrErrors` → `errors` (GqlResponse record field — `sgr` prefix)
 - [x] `scAuthor` → `author` (StaticComment record field — `sc` prefix)
 - [x] `scAuthorUrl` → `authorUrl` (StaticComment record field — `sc` prefix)
-- [ ] `scBodyHtml` → `bodyHtml` (StaticComment record field — `sc` prefix)
-- [ ] `scCreatedAt` → `createdAt` (StaticComment record field — `sc` prefix)
+- [x] `scBodyHtml` → `bodyHtml` (StaticComment record field — `sc` prefix)
+- [x] `scCreatedAt` → `createdAt` (StaticComment record field — `sc` prefix)
 
 #### StaticGiscus.hs (local variables)
 
-- [ ] `idx` → `insertionPoint` (local binding for `findGiscusDiv` result in `injectStaticComments`)
-- [ ] `mAfter` → `maybeAfterCursor` (parameter in `fetchAllDiscussions` inner helper)
-- [ ] `mPage` → `maybePage` (local binding for `fetchDiscussionPage` result in `fetchAllDiscussions`)
-- [ ] `acc` → `accumulatedDiscussions` (accumulator parameter in `fetchAllDiscussions` inner helper)
-- [ ] `newAcc` → `updatedDiscussions` (local binding for updated accumulator in `fetchAllDiscussions`)
+- [x] `idx` → `insertionPoint` (local binding for `findGiscusDiv` result in `injectStaticComments`)
+- [x] `mAfter` → `maybeAfterCursor` (parameter in `fetchDiscussionPage` and `fetchAllDiscussions` inner helper)
+- [x] `mPage` → `maybePage` (local binding for `fetchDiscussionPage` result in `fetchAllDiscussions`)
+- [x] `acc` → `accumulatedDiscussions` (accumulator parameter in `fetchAllDiscussions` inner helper)
+- [x] `newAcc` → `updatedDiscussions` (local binding for updated accumulator in `fetchAllDiscussions`)
+- [ ] `go` → `paginatedFetch` (inner helper name in `fetchAllDiscussions` — `go` is opaque)
 
 #### BlogPosts.hs
 
-- [ ] `bpFilename` → `filename` (BlogPost record field — `bp` prefix)
-- [ ] `bpDate` → `date` (BlogPost record field — `bp` prefix)
-- [ ] `bpTitle` → `title` (BlogPost record field — `bp` prefix)
-- [ ] `bpBody` → `body` (BlogPost record field — `bp` prefix)
+- [x] `bpFilename` → `filename` (BlogPost record field — `bp` prefix)
+- [x] `bpDate` → `date` (BlogPost record field — `bp` prefix)
+- [x] `bpTitle` → `title` (BlogPost record field — `bp` prefix)
+- [ ] `bpBody` → `body` (BlogPost record field — `bp` prefix — requires renaming local `body` variable in BlogPrompt.hs)
 
 #### Frontmatter.hs
 
@@ -297,6 +298,25 @@ Record field abbreviation prefixes must be removed. When two records in the same
 #### SocialPosting/FrontmatterUpdate.hs
 
 - [ ] `fmLines` → `frontmatterLines` (local binding for parsed frontmatter lines)
+
+#### AiFiction.hs
+
+- [ ] `fcModels` → `models` (FictionConfig record field — `fc` prefix)
+- [ ] `fcNoteContent` → `noteContent` (FictionConfig record field — `fc` prefix)
+- [ ] `frFiction` → `fiction` (FictionResult record field — `fr` prefix)
+- [ ] `frModel` → `model` (FictionResult record field — `fr` prefix)
+- [ ] `frUpdatedContent` → `updatedContent` (FictionResult record field — `fr` prefix)
+
+#### ReflectionTitle.hs (record field prefixes)
+
+- [ ] `rtcModels` → `models` (ReflectionTitleConfig record field — `rtc` prefix)
+- [ ] `rtcNoteContent` → `noteContent` (ReflectionTitleConfig record field — `rtc` prefix)
+- [ ] `rtcDate` → `date` (ReflectionTitleConfig record field — `rtc` prefix)
+- [ ] `rtcRecentTitles` → `recentTitles` (ReflectionTitleConfig record field — `rtc` prefix)
+- [ ] `rtrTitle` → `title` (ReflectionTitleResult record field — `rtr` prefix)
+- [ ] `rtrFullTitle` → `fullTitle` (ReflectionTitleResult record field — `rtr` prefix)
+- [ ] `rtrModel` → `model` (ReflectionTitleResult record field — `rtr` prefix)
+- [ ] `rtrUpdatedContent` → `updatedContent` (ReflectionTitleResult record field — `rtr` prefix)
 
 ## Ordering Notes
 

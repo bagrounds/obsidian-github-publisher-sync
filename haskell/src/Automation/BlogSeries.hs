@@ -124,7 +124,7 @@ appendModelSignature body model = body <> "\n\n✍️ Written by " <> model
 
 updatePreviousPost :: FilePath -> BlogPost -> BlogSeriesConfig -> Text -> IO ()
 updatePreviousPost seriesDir prevPost series newFilename = do
-  let filePath = seriesDir </> T.unpack (bpFilename prevPost)
+  let filePath = seriesDir </> T.unpack (filename prevPost)
   exists <- doesFileExist filePath
   when exists $ do
     content <- TIO.readFile filePath

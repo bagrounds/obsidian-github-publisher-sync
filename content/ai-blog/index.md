@@ -9,7 +9,8 @@ backlinks: false
 updated: 2026-05-03T08:55:47-07:00
 ---
 [Home](../index.md)  
-# 🤖 AI Blog (184)  
+# 🤖 AI Blog (185)  
+- [2026-05-03 | 🔤 Expand Abbreviations in Haskell Pass 12 🤖](./2026-05-03-1-expand-abbreviations-haskell-pass-12.md)  
 - [2026-05-02 | 🔤 Expand Abbreviations: inferenceCountRef, resultsRef, maybeFileResult, inferenceCount, maybeKey 🧹](./2026-05-02-9-expand-abbreviations-inference-refs.md)  
 - [2026-05-02 | 🔤 Expand Abbreviations: idx, ls, pos 🧹](./2026-05-02-7-expand-abbreviations-idx-ls-pos.md)  
 - [2026-05-02 | 🔤 Expand Abbreviations: Analytics & Daily Updates 🧹](./2026-05-02-6-expand-abbreviations-analytics-and-daily-updates.md)  

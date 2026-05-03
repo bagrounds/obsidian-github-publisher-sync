@@ -10,9 +10,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-25T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-05-03T11:24:10Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A serene, minimalist illustration featuring a person sitting in a comfortable cross-legged meditation pose. They are positioned in the center of a soft, sunlit room with clean lines. A gentle, stylized ripple effect emanates from the person, representing calm and focus. Next to them, a small, playful puppy sits quietly, symbolizing the disciplined mind. The color palette uses calming earth tones—soft sage greens, warm beiges, and muted terracottas—with a golden, ethereal light filtering through a nearby window. The overall aesthetic is peaceful, uncluttered, and grounded, evoking a sense of clarity and presence.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🧘🏼‍♀️👩🏼‍🏫 Practicing Mindfulness: An Introduction to Meditation  
+![books-practicing-mindfulness-an-introduction-to-meditation](../books-practicing-mindfulness-an-introduction-to-meditation.jpg)  
 [🛒 Practicing Mindfulness: An Introduction to Meditation. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/44lHABp)  
   
 ## 📝🐒 Human Notes  

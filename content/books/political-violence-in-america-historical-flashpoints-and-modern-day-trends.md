@@ -9,9 +9,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-19T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-05-03T08:43:16Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A high-contrast, double-exposure composition featuring the silhouette of a classical, marble-style neoclassical government building integrated into a distressed, weathered American flag. The flag’s stripes transition from sharp, clean lines into jagged, fragmented shards, suggesting a sense of instability and historical tension. The color palette is muted, utilizing deep charcoal, desaturated navy, and stark crimson accents. In the foreground, subtle shadows of a crowd are cast against the base of the structure, emphasizing the theme of civil unrest and shifting societal tides. The overall aesthetic is serious, academic, and evocative of a scholarly investigation into the darker undercurrents of the nations history. The lighting is cinematic, with dramatic highlights that emphasize the textures of stone and frayed fabric.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🇺🇸💥 Political Violence in America: Historical Flashpoints and Modern-Day Trends  
+![books-political-violence-in-america-historical-flashpoints-and-modern-day-trends](../books-political-violence-in-america-historical-flashpoints-and-modern-day-trends.jpg)  
 ## 📖 Book Report: 💥 Political Violence in America: 🗓️ Historical Flashpoints and 📈 Modern-Day Trends  
 [🛒 Political Violence in America: Historical Flashpoints and Modern-Day Trends. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/43Jdt6r)  
   

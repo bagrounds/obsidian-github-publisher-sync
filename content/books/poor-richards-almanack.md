@@ -10,9 +10,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-16T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-05-03T09:39:54Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A rustic, warm-toned scene featuring a weathered wooden desk bathed in soft, natural morning light. On the desk sits an open, antique leather-bound journal with yellowed parchment pages, filled with neat, 18th-century quill-ink calligraphy. Beside the book rests a single, dark inkwell with a quill pen resting across its rim. A brass pocket watch lies partially open near the book, its hands frozen in time. In the background, a pair of spectacles rests atop a stack of vintage papers. The overall aesthetic is minimalist and scholarly, evoking a sense of timeless wisdom, productivity, and the quiet discipline of the Enlightenment era. Dust motes dance in the light shafts, creating an atmosphere of contemplative study.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🗓️💡 Poor Richard's Almanack  
+![books-poor-richards-almanack](../books-poor-richards-almanack.jpg)  
 [🛒 Poor Richard's Almanack. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4rCzQ79)  
   
 Poor Richard's Almanack distills practical wisdom, urging industry, frugality, and moral virtue for personal prosperity and civic well-being, wrapped in Franklin's witty, accessible prose. 💰💡📚  

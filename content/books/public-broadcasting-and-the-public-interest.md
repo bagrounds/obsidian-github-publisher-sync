@@ -10,9 +10,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-24T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-05-03T18:28:25Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A conceptual illustration featuring a vintage, glowing vacuum-tube television set sitting in the center of a bustling, abstract cityscape. The screen of the television emits a warm, bright light that illuminates a diverse crowd of stylized, silhouetted people gathering around it. Emerging from the top of the TV are translucent, interconnected digital nodes and fiber-optic cables that reach upward to form a canopy over the crowd, representing the transition from traditional broadcasting to a decentralized, modern network. The color palette uses deep navy and slate tones for the background, contrasted by vibrant, warm gold and electric blue light emanating from the television, symbolizing the spark of informed civic engagement and the enduring importance of public interest in a digital age.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 📢💡 Public Broadcasting and the Public Interest  
+![books-public-broadcasting-and-the-public-interest](../books-public-broadcasting-and-the-public-interest.jpg)  
 [🛒 Public Broadcasting and the Public Interest. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3NcYQ5G)  
   
 🌍📺 Explore the existential challenges confronting public broadcasting, from funding shifts to defining its public service mission amidst commercial pressures and evolving media landscapes.  

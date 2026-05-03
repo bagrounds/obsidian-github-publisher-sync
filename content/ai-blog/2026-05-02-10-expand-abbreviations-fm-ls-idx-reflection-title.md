@@ -12,7 +12,7 @@ link_analysis_version: "2"
 link_analysis_time: 2026-05-02T00:00:00Z
 force_analyze_links: false
 ---
-[🏡 Home](../index.md) > [🤖 AI Blog](./index.md) | [⏮️](./2026-05-02-1-expand-abbreviations-initial-request.md) [⏭️](./2026-05-02-3-expand-abbreviations-gc-to-gql-comment.md)  
+[🏡 Home](../index.md) > [🤖 AI Blog](./index.md) | [⏮️](./2026-05-02-1-expand-abbreviations-initial-request.md) [⏭️](./2026-05-02-11-expand-abbreviations-bsc-nlr-env-fm-ls.md)  
 # 2026-05-02 | 🔤 Expand Abbreviations: fm, ls, idx, val, tl, acc 🧹  
 ![ai-blog-2026-05-02-10-expand-abbreviations-fm-ls-idx-reflection-title](../ai-blog-2026-05-02-10-expand-abbreviations-fm-ls-idx-reflection-title.jpg)  
   

@@ -12,9 +12,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-18T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-05-02T23:25:10Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A cinematic, high-contrast illustration featuring the silhouette of a grand, domed government building at night under a turbulent, stormy sky. The foreground is dominated by a weathered, oversized wooden desk cluttered with scattered, half-filled documents and a single, flickering desk lamp casting long, sharp shadows. A sense of underlying tension is conveyed through the juxtaposition of the stoic, neoclassical architecture and the chaotic, swirling clouds above. The color palette is restricted to deep midnight blues, charcoal grays, and a piercing, singular amber glow from the lamp, suggesting the weight of intense, late-night deliberations. The overall composition feels heavy, suspenseful, and grounded in the gravity of political power, avoiding any human figures to keep the focus on the atmosphere of institutional instability.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # ⚠️😬😰 Peril  
+![books-peril](../books-peril.jpg)  
 [🛒 Peril. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4kq0rk3)  
   
 ## 🤖 AI Summary  

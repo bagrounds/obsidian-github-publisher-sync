@@ -10,9 +10,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-16T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-05-02T23:25:13Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A dark, atmospheric composition featuring a weathered, tarnished brass scale of justice resting on a polished mahogany desk. One side of the scale is heavily weighted down by a stack of shadowed, indistinct legal documents and a flickering, dying candle, while the other side is empty and elevated, hanging in the air. In the background, a large, blurred window overlooks a cold, gray cityscape at twilight. A single, sharp spotlight cuts through the gloom, illuminating dust motes dancing in the air and casting long, distorted shadows across the surface. The overall color palette is dominated by deep blues, charcoal grays, and muted gold, evoking a sense of institutional secrecy and buried truth.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # ⚖️😈🔞 Perversion of Justice: The Jeffrey Epstein Story  
+![books-perversion-of-justice-the-jeffrey-epstein-story](../books-perversion-of-justice-the-jeffrey-epstein-story.jpg)  
 [🛒 Perversion of Justice: The Jeffrey Epstein Story. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/48SKHD0)  
   
 🕵️‍♀️⚖️ A corrupt justice system, powerful connections, and prosecutorial misconduct enabled Jeffrey Epstein's decades-long sex trafficking enterprise to flourish.  

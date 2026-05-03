@@ -161,38 +161,38 @@ Record field abbreviation prefixes must be removed. When two records in the same
 - [x] `val` → `titleValue` (local variable in `reflectionNeedsTitle`)
 - [x] `tl` → `titleLine` (parameter in `reflectionNeedsTitle`)
 - [x] `acc` → `found` (accumulator in `findTitleLine`)
-- [ ] `idx` → `index` (local variable in `stripInlinePreamble`)
+- [x] `idx` → `index` (local variable in `stripInlinePreamble`)
 
 #### SocialPosting.hs
 
-- [ ] `acc` → `grouped` (accumulator in `addToGroup`)
-- [ ] `env` → `environmentConfig` (parameter name for `EnvironmentConfig` in `postToPlatform`, `postToTwitterPlatform`, `postToBlueskyPlatform`, `postToMastodonPlatform`, `runPostingPipeline`, `processNoteGroup`, `postForPlatform`, and `run`)
+- [x] `acc` → `grouped` (accumulator in `addToGroup`)
+- [x] `env` → `environmentConfig` (parameter name for `EnvironmentConfig` in `postToPlatform`, `postToTwitterPlatform`, `postToBlueskyPlatform`, `postToMastodonPlatform`, `runPostingPipeline`, `processNoteGroup`, `postForPlatform`, and `run`)
 
 #### AiBlogLinks.hs
 
-- [ ] `ls` → `contentLines` (local variable in `updateNavLinks`)
-- [ ] `idx` → `index` (local variable in `updateNavLinks` and `processFile`)
-- [ ] `p` → `predicate` (parameter in local `findIndex`)
-- [ ] `fm` → `frontmatter` (local binding for `parseFrontmatter` result in `processFile`)
-- [ ] `nlrFilename` → `filename` (NavLinkResult record field)
-- [ ] `nlrModified` → `modified` (NavLinkResult record field)
+- [x] `ls` → `contentLines` (local variable in `updateNavLinks`)
+- [x] `idx` → `index` (local variable in `updateNavLinks` and `processFile`)
+- [x] `p` → `predicate` (parameter in local `findIndex`)
+- [x] `fm` → `frontmatter` (local binding for `parseFrontmatter` result in `processFile`)
+- [x] `nlrFilename` → `filename` (NavLinkResult record field)
+- [x] `nlrModified` → `modified` (NavLinkResult record field)
 
 #### BlogSeriesConfig.hs
 
-- [ ] `bscId` → `identifier` (BlogSeriesConfig record field — `id` shadows Prelude)
-- [ ] `bscName` → `name` (BlogSeriesConfig record field)
-- [ ] `bscIcon` → `icon` (BlogSeriesConfig record field)
-- [ ] `bscAuthor` → `author` (BlogSeriesConfig record field)
-- [ ] `bscBaseUrl` → `baseUrl` (BlogSeriesConfig record field)
-- [ ] `bscPriorityUser` → `priorityUser` (BlogSeriesConfig record field)
-- [ ] `bscNavLink` → `navLink` (BlogSeriesConfig record field)
-- [ ] `bscScheduleTime` → `scheduleTime` (BlogSeriesConfig record field)
-- [ ] `bscContextQueries` → `contextQueries` (BlogSeriesConfig record field)
+- [x] `bscId` → `identifier` (BlogSeriesConfig record field — `id` shadows Prelude)
+- [x] `bscName` → `name` (BlogSeriesConfig record field)
+- [x] `bscIcon` → `icon` (BlogSeriesConfig record field)
+- [x] `bscAuthor` → `author` (BlogSeriesConfig record field)
+- [x] `bscBaseUrl` → `baseUrl` (BlogSeriesConfig record field)
+- [x] `bscPriorityUser` → `priorityUser` (BlogSeriesConfig record field)
+- [x] `bscNavLink` → `navLink` (BlogSeriesConfig record field)
+- [x] `bscScheduleTime` → `scheduleTime` (BlogSeriesConfig record field)
+- [x] `bscContextQueries` → `contextQueries` (BlogSeriesConfig record field)
 
 #### Frontmatter.hs
 
-- [ ] `ls` → `contentLines` (local variable in `parseFrontmatter`)
-- [ ] `fm` → `frontmatter` (local binding for `parseFrontmatter` result in `deriveUrl`, `readReflection`, and `readNote`)
+- [x] `ls` → `contentLines` (local variable in `parseFrontmatter`)
+- [x] `fm` → `frontmatter` (local binding for `parseFrontmatter` result in `deriveUrl`, `readReflection`, and `readNote`)
 
 #### Text.hs
 

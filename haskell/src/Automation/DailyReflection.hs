@@ -142,7 +142,7 @@ buildReflectionContent date previousDate =
 
 buildSeriesSectionHeading :: BlogSeriesConfig -> Text
 buildSeriesSectionHeading series =
-  "## " <> formatWikilink (bscId series <> "/index") (bscIcon series <> " " <> bscName series)
+  "## " <> formatWikilink (identifier series <> "/index") (icon series <> " " <> name series)
 
 buildPostLink :: Text -> Text -> Title -> Text
 buildPostLink seriesId filenameNoExt displayTitle =
@@ -179,14 +179,14 @@ insertNewSection content sectionHeading postLink =
 
 insertPostLink :: Text -> BlogSeriesConfig -> Text -> Title -> Maybe Text -> Text
 insertPostLink content series filenameNoExt displayTitle replacingFilenameNoExt =
-  let linkTarget = "[[" <> bscId series <> "/" <> filenameNoExt <> "|"
+  let linkTarget = "[[" <> identifier series <> "/" <> filenameNoExt <> "|"
   in if T.isInfixOf linkTarget content
     then content
     else
-      let postLink = buildPostLink (bscId series) filenameNoExt displayTitle
+      let postLink = buildPostLink (identifier series) filenameNoExt displayTitle
           replacedContent = case replacingFilenameNoExt of
             Just oldName ->
-              let oldLinkTarget = "- [[" <> bscId series <> "/" <> oldName <> "|"
+              let oldLinkTarget = "- [[" <> identifier series <> "/" <> oldName <> "|"
               in if T.isInfixOf oldLinkTarget content
                 then
                   let contentLines = T.splitOn "\n" content

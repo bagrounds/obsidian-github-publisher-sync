@@ -9,7 +9,7 @@ import Test.Tasty.QuickCheck (testProperty)
 import qualified Test.QuickCheck as QC
 
 import qualified Automation.Gemini as Gemini
-import Automation.BlogSeriesConfig (BlogSeriesConfig (..))
+import qualified Automation.BlogSeriesConfig as BSC
 import Automation.BlogSeriesDiscovery
 import Automation.ContextQuery (ContextQuery (..), defaultContextQueries)
 import Automation.Scheduler (TaskId (..), ScheduleEntry (..))
@@ -117,19 +117,19 @@ derivationTests = testGroup "derivation functions"
 
   , testCase "deriveBlogSeriesConfig sets correct ID" $ do
       let config = deriveBlogSeriesConfig sampleDiscovered
-      bscId config @?= "garden-thoughts"
+      BSC.identifier config @?= "garden-thoughts"
 
   , testCase "deriveBlogSeriesConfig derives author" $ do
       let config = deriveBlogSeriesConfig sampleDiscovered
-      bscAuthor config @?= "[[garden-thoughts]]"
+      BSC.author config @?= "[[garden-thoughts]]"
 
   , testCase "deriveBlogSeriesConfig derives base URL" $ do
       let config = deriveBlogSeriesConfig sampleDiscovered
-      bscBaseUrl config @?= "https://bagrounds.org/garden-thoughts"
+      BSC.baseUrl config @?= "https://bagrounds.org/garden-thoughts"
 
   , testCase "deriveBlogSeriesConfig preserves priority user" $ do
       let config = deriveBlogSeriesConfig sampleDiscovered
-      bscPriorityUser config @?= Just "bagrounds"
+      BSC.priorityUser config @?= Just "bagrounds"
 
   , testCase "deriveBlogSeriesRunConfig sets correct series ID" $ do
       let config = deriveBlogSeriesRunConfig sampleDiscovered
@@ -200,11 +200,11 @@ validationTests = testGroup "validation"
 
   , testCase "deriveBlogSeriesConfig preserves contextQueries" $ do
       let config = deriveBlogSeriesConfig (parseSeries "test" configWithCrossSeries)
-      length (bscContextQueries config) @?= 2
+      length (BSC.contextQueries config) @?= 2
 
   , testCase "deriveBlogSeriesConfig preserves empty contextQueries" $ do
       let config = deriveBlogSeriesConfig sampleDiscovered
-      bscContextQueries config @?= []
+      BSC.contextQueries config @?= []
 
   , testCase "missing enableGrounding defaults to False" $
       let DiscoveredSeries{searchGrounding} = parseSeries "test" configMissingEnableGrounding
@@ -247,15 +247,15 @@ properties = testGroup "properties"
   , testProperty "deriveBlogSeriesConfig preserves ID" $
       QC.forAll genDiscoveredSeries $ \discovered ->
         let DiscoveredSeries{seriesId} = discovered
-        in bscId (deriveBlogSeriesConfig discovered) == seriesId
+        in BSC.identifier (deriveBlogSeriesConfig discovered) == seriesId
 
   , testProperty "deriveBlogSeriesConfig preserves icon" $
       QC.forAll genDiscoveredSeries $ \discovered ->
-        bscIcon (deriveBlogSeriesConfig discovered) == seriesIcon discovered
+        BSC.icon (deriveBlogSeriesConfig discovered) == seriesIcon discovered
 
   , testProperty "deriveBlogSeriesConfig preserves name" $
       QC.forAll genDiscoveredSeries $ \discovered ->
-        bscName (deriveBlogSeriesConfig discovered) == seriesName discovered
+        BSC.name (deriveBlogSeriesConfig discovered) == seriesName discovered
 
   , testProperty "deriveBlogSeriesRunConfig preserves searchGrounding" $
       QC.forAll genDiscoveredSeries $ \discovered ->

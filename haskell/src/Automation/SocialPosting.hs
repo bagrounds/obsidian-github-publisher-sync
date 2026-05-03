@@ -186,16 +186,16 @@ data PostResult = PostResult
 
 postToPlatform :: Manager -> EnvironmentConfig -> ContentNote -> Text -> Platform
                -> IO (Either Text PostResult)
-postToPlatform manager env note postText platform =
+postToPlatform manager environmentConfig note postText platform =
   case platform of
-    Twitter -> postToTwitterPlatform manager env note postText
-    Bluesky -> postToBlueskyPlatform manager env note postText
-    Mastodon -> postToMastodonPlatform manager env note postText
+    Twitter -> postToTwitterPlatform manager environmentConfig note postText
+    Bluesky -> postToBlueskyPlatform manager environmentConfig note postText
+    Mastodon -> postToMastodonPlatform manager environmentConfig note postText
 
 postToTwitterPlatform :: Manager -> EnvironmentConfig -> ContentNote -> Text
                       -> IO (Either Text PostResult)
-postToTwitterPlatform manager env _note postText =
-  case twitter env of
+postToTwitterPlatform manager environmentConfig _note postText =
+  case twitter environmentConfig of
     Nothing -> pure (Left "Twitter not configured")
     Just creds -> do
       result <- Twitter.post manager creds postText
@@ -212,8 +212,8 @@ postToTwitterPlatform manager env _note postText =
 
 postToBlueskyPlatform :: Manager -> EnvironmentConfig -> ContentNote -> Text
                       -> IO (Either Text PostResult)
-postToBlueskyPlatform manager env note postText =
-  case bluesky env of
+postToBlueskyPlatform manager environmentConfig note postText =
+  case bluesky environmentConfig of
     Nothing -> pure (Left "Bluesky not configured")
     Just creds -> do
       ogMeta <- fetchOgMetadata (unUrl (noteUrl note))
@@ -237,8 +237,8 @@ postToBlueskyPlatform manager env note postText =
 
 postToMastodonPlatform :: Manager -> EnvironmentConfig -> ContentNote -> Text
                        -> IO (Either Text PostResult)
-postToMastodonPlatform manager env _note postText =
-  case mastodon env of
+postToMastodonPlatform manager environmentConfig _note postText =
+  case mastodon environmentConfig of
     Nothing -> pure (Left "Mastodon not configured")
     Just creds -> do
       result <- Mastodon.post manager creds postText
@@ -265,8 +265,8 @@ data PostedNote = PostedNote
   } deriving (Show, Eq)
 
 runPostingPipeline :: Manager -> EnvironmentConfig -> Secret -> FilePath -> [ContentDirectory] -> IO [PostedNote]
-runPostingPipeline manager env apiKey vaultDir imageBackfillContentDirs = do
-  let platforms = getConfiguredPlatforms env
+runPostingPipeline manager environmentConfig apiKey vaultDir imageBackfillContentDirs = do
+  let platforms = getConfiguredPlatforms environmentConfig
   putStrLn $ "  🔍 Configured platforms: " <> show platforms
 
   now <- getCurrentTime
@@ -289,7 +289,7 @@ runPostingPipeline manager env apiKey vaultDir imageBackfillContentDirs = do
     items -> do
       putStrLn $ "  📋 Found " <> show (length items) <> " items to post"
       let grouped = groupByNote items
-      results <- mapM (processNoteGroup manager env apiKey vaultDir) grouped
+      results <- mapM (processNoteGroup manager environmentConfig apiKey vaultDir) grouped
       pure (catMaybes results)
 
 groupByNote :: [CD.ContentToPost] -> [([Platform], ContentNote, [Text])]
@@ -297,21 +297,21 @@ groupByNote items =
   let noteMap = foldl addToGroup Map.empty items
   in Map.elems noteMap
   where
-    addToGroup acc ctp =
+    addToGroup grouped ctp =
       let key = noteRelativePath (CD.note ctp)
       in Map.insertWith merge key
-           ([CD.platform ctp], CD.note ctp, CD.pathFromRoot ctp) acc
+           ([CD.platform ctp], CD.note ctp, CD.pathFromRoot ctp) grouped
     merge (p1, n, path) (p2, _, _) = (p1 <> p2, n, path)
 
 processNoteGroup :: Manager -> EnvironmentConfig -> Secret -> FilePath
                  -> ([Platform], ContentNote, [Text]) -> IO (Maybe PostedNote)
-processNoteGroup manager env apiKey vaultDir (platforms, note, pathFromRoot) = do
+processNoteGroup manager environmentConfig apiKey vaultDir (platforms, note, pathFromRoot) = do
   putStrLn $ "  📝 Processing: " <> T.unpack (unTitle (noteTitle note))
   putStrLn $ "     Platforms: " <> show platforms
 
   updatePathTimestamps vaultDir pathFromRoot
 
-  results <- mapConcurrently (postForPlatform manager env apiKey note) platforms
+  results <- mapConcurrently (postForPlatform manager environmentConfig apiKey note) platforms
 
   let successes = mapMaybe eitherToMaybe results
       embedSections = fmap
@@ -330,7 +330,7 @@ processNoteGroup manager env apiKey vaultDir (platforms, note, pathFromRoot) = d
 
 postForPlatform :: Manager -> EnvironmentConfig -> Secret -> ContentNote -> Platform
                 -> IO (Either Text PostResult)
-postForPlatform manager env apiKey note platform = do
+postForPlatform manager environmentConfig apiKey note platform = do
   postTextResult <- generateSocialPostText manager apiKey note platform
   case postTextResult of
     Left err -> do
@@ -338,7 +338,7 @@ postForPlatform manager env apiKey note platform = do
       pure (Left err)
     Right postText -> do
       putStrLn $ "  📤 Posting to " <> show platform <> "..."
-      result <- try (postToPlatform manager env note postText platform)
+      result <- try (postToPlatform manager environmentConfig note postText platform)
         :: IO (Either SomeException (Either Text PostResult))
       case result of
         Left exc -> do
@@ -358,8 +358,8 @@ eitherToMaybe (Left _)  = Nothing
 
 autoPost :: Manager -> FilePath -> [ContentDirectory] -> IO ()
 autoPost manager vaultDir imageBackfillContentDirs = do
-  env <- validateEnvironment
-  let apiKey = Gemini.apiKey (gemini env)
+  environmentConfig <- validateEnvironment
+  let apiKey = Gemini.apiKey (gemini environmentConfig)
 
   regenerateResult <- try (regenerateBlueskyEmbeds manager vaultDir)
     :: IO (Either SomeException ())
@@ -373,7 +373,7 @@ autoPost manager vaultDir imageBackfillContentDirs = do
     Left exception -> putStrLn $ "  ⚠️  Mastodon embed regeneration failed: " <> show exception
     Right () -> pure ()
 
-  postedNotes <- runPostingPipeline manager env apiKey vaultDir imageBackfillContentDirs
+  postedNotes <- runPostingPipeline manager environmentConfig apiKey vaultDir imageBackfillContentDirs
 
   today <- todayPacificDay
   let updateLinks = fmap (\pn ->

@@ -28,15 +28,15 @@ tests = testGroup "DailyReflection"
 
 sampleSeries :: BlogSeriesConfig
 sampleSeries = BlogSeriesConfig
-  { bscId           = "auto-blog-zero"
-  , bscName         = "Auto Blog Zero"
-  , bscIcon         = "🤖"
-  , bscAuthor       = "[[auto-blog-zero]]"
-  , bscBaseUrl      = "https://bagrounds.org/auto-blog-zero"
-  , bscPriorityUser = Just "bagrounds"
-  , bscNavLink      = "[[index|Home]] > [[auto-blog-zero/index|🤖 Auto Blog Zero]]"
-  , bscScheduleTime = TimeOfDay 8 0 0
-  , bscContextQueries = []
+  { identifier      = "auto-blog-zero"
+  , name            = "Auto Blog Zero"
+  , icon            = "🤖"
+  , author          = "[[auto-blog-zero]]"
+  , baseUrl         = "https://bagrounds.org/auto-blog-zero"
+  , priorityUser    = Just "bagrounds"
+  , navLink         = "[[index|Home]] > [[auto-blog-zero/index|🤖 Auto Blog Zero]]"
+  , scheduleTime    = TimeOfDay 8 0 0
+  , contextQueries  = []
   }
 
 buildReflectionContentTests :: TestTree

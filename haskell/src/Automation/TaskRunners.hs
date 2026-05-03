@@ -205,7 +205,7 @@ runBlogSeries context seriesMap runConfigs seriesId = do
                       backLink = case previousPost of
                         Just post -> " | " <> buildBackLink series (bpFilename post)
                         Nothing -> ""
-                      navLine = bscNavLink series <> backLink
+                      navLine = navLink series <> backLink
                       displayTitle = unDisplayTitle $ buildDisplayTitle series today title
                       header = navLine <> "\n# " <> displayTitle <> "\n\n"
                       maybeSourcesSection = Gemini.formatGroundingSources groundingSources
@@ -310,7 +310,7 @@ runBackfillImages context contentDirs = do
 
   let aiBlogDir = vaultDir </> "ai-blog"
   navResults <- ensureAllNavLinks aiBlogDir
-  let modifiedCount = length (filter nlrModified navResults)
+  let modifiedCount = length (filter modified navResults)
   logMsg $ "  🔗 Nav links: " <> T.pack (show modifiedCount) <> " files updated"
 
   imageUpdateLinks <- catMaybes <$> traverse (\filePath -> do

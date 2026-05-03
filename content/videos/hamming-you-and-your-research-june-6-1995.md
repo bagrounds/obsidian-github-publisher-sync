@@ -9,6 +9,10 @@ Platform:
 Channel: securitylectures
 tags:
 youtube: https://youtu.be/a1zDuOPkMSw
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_version: "2"
+link_analysis_time: 2026-05-03T00:00:00Z
+force_analyze_links: false
 ---
 [Home](../index.md) > [Videos](./index.md)  
 # 🧠💡🔬 Hamming «You and Your Research» (June 6, 1995)  
@@ -29,7 +33,7 @@ youtube: https://youtu.be/a1zDuOPkMSw
   
 ## 🤔 Evaluation  
   
-* ⚖️ Richard Hamming focuses on individual mindset while The Structure of Scientific Revolutions by Thomas Kuhn from University of Chicago Press argues that scientific progress is driven by communal paradigm shifts.  
+* ⚖️ Richard Hamming focuses on individual mindset while [🔬🔄 The Structure of Scientific Revolutions](../books/the-structure-of-scientific-revolutions.md) by Thomas Kuhn from University of Chicago Press argues that scientific progress is driven by communal paradigm shifts.  
 * 🔍 Research in Grit: The Power of Passion and Perseverance by Angela Duckworth at Scribner confirms that sustained effort is a better predictor of success than innate talent.  
 * 🧩 A deeper understanding requires exploring how modern collaborative digital environments change the open door dynamic described at Bell Labs.  
   
@@ -52,14 +56,14 @@ youtube: https://youtu.be/a1zDuOPkMSw
 ### ↔️ Similar  
   
 * 🧠 Art of Doing Science and Engineering by Richard Hamming from Stripe Press provides a detailed roadmap for developing the technical intuition and habits necessary for a lifetime of learning.  
-* ⛰️ Deep Work by Cal Newport from Grand Central Publishing describes the specific environmental and mental conditions required to produce elite results in a distracted world.  
+* ⛰️ [🤿💼 Deep Work: Rules for Focused Success in a Distracted World](../books/deep-work.md) by Cal Newport from Grand Central Publishing describes the specific environmental and mental conditions required to produce elite results in a distracted world.  
   
 ### 🆚 Contrasting  
   
 * 🧩 Range by David Epstein from Riverhead Books argues that generalists who explore many diverse fields often have a greater impact than those who focus early on single problems.  
-* 🎲 The Black Swan by Nassim Nicholas Taleb from Random House explains how massive success is often driven by unpredictable outliers rather than intentional planning or hard work.  
+* 🎲 [⚫🦢🎲 The Black Swan: The Impact of the Highly Improbable](../books/the-black-swan-the-impact-of-the-highly-improbable.md) by Nassim Nicholas Taleb from Random House explains how massive success is often driven by unpredictable outliers rather than intentional planning or hard work.  
   
 ### 🎨 Creatively Related  
   
-* 🎨 The War of Art by Steven Pressfield from Black Irish Entertainment identifies the internal psychological resistance that prevents people from committing to their most important creative tasks.  
+* 🎨 [🪖🎨 The War of Art: Break Through the Blocks and Win Your Inner Creative Battles](../books/the-war-of-art.md) by Steven Pressfield from Black Irish Entertainment identifies the internal psychological resistance that prevents people from committing to their most important creative tasks.  
 * 🌊 Flow by Mihaly Csikszentmihalyi from Harper Perennial details the state of consciousness that allows for peak performance and total immersion in complex activities.

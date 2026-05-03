@@ -124,10 +124,10 @@ updateFrontmatterFields filePath fields = do
         | T.strip first == "---" ->
             case break (\l -> T.strip l == "---") rest of
               (_, []) -> pure ()
-              (fmLines, closingDash : bodyLines) ->
-                let updatedFm = foldl' upsertField fmLines fields
+              (frontmatterLines, closingDash : bodyLines) ->
+                let updatedFrontmatter = foldl' upsertField frontmatterLines fields
                 in TIO.writeFile filePath
-                     (T.intercalate "\n" (first : updatedFm <> [closingDash] <> bodyLines))
+                     (T.intercalate "\n" (first : updatedFrontmatter <> [closingDash] <> bodyLines))
       _ -> do
         let entries = T.intercalate "\n" $ fmap (\(k, v) -> k <> ": " <> renderYamlValue v) fields
         TIO.writeFile filePath ("---\n" <> entries <> "\n---\n" <> raw)

@@ -121,20 +121,20 @@ updateFrontmatterFields content fields =
       | T.strip first == "---" ->
           case break (\l -> T.strip l == "---") rest of
             (_, []) -> content
-            (fmLines, _ : body) ->
-              let updatedFm = foldl' applyField fmLines fields
-              in T.intercalate "\n" (["---"] <> updatedFm <> ["---"] <> body)
+            (frontmatterLines, _ : body) ->
+              let updatedFrontmatter = foldl' applyField frontmatterLines fields
+              in T.intercalate "\n" (["---"] <> updatedFrontmatter <> ["---"] <> body)
     _ ->
-      let fmLines = fmap (\(k, v) -> k <> ": " <> renderYamlValue v) fields
-      in T.intercalate "\n" (["---"] <> fmLines <> ["---", content])
+      let frontmatterLines = fmap (\(k, v) -> k <> ": " <> renderYamlValue v) fields
+      in T.intercalate "\n" (["---"] <> frontmatterLines <> ["---", content])
 
 applyField :: [Text] -> (Text, YamlValue) -> [Text]
-applyField fmLines (key, value) =
+applyField frontmatterLines (key, value) =
   let keyPrefix = key <> ":"
       newLine = key <> ": " <> renderYamlValue value
-      keyExists = any (\l -> keyPrefix `T.isPrefixOf` T.stripStart l) fmLines
-      replaced = replaceWithContinuation keyPrefix newLine fmLines
-  in if keyExists then replaced else fmLines <> [newLine]
+      keyExists = any (\l -> keyPrefix `T.isPrefixOf` T.stripStart l) frontmatterLines
+      replaced = replaceWithContinuation keyPrefix newLine frontmatterLines
+  in if keyExists then replaced else frontmatterLines <> [newLine]
 
 replaceWithContinuation :: Text -> Text -> [Text] -> [Text]
 replaceWithContinuation _ _ [] = []

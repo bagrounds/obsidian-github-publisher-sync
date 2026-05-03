@@ -69,7 +69,7 @@ rebuildPost contentLines topicIndex newTopicLine urlLine trailingLines =
   in T.intercalate "\n" (updated <> [urlLine] <> trailingLines)
 
 removeAt :: Int -> [a] -> [a]
-removeAt i elements = take i elements <> drop (i + 1) elements
+removeAt index elements = take index elements <> drop (index + 1) elements
 
 fitPostToLimit :: Text -> Int -> Text
 fitPostToLimit text maxGraphemes
@@ -135,8 +135,8 @@ strategy3 :: [Text] -> Int -> Text -> [Text] -> Int -> Maybe Text
 strategy3 contentLines topicIndex urlLine trailingLines maxGraphemes =
   let workingLines = removeTopicLine contentLines topicIndex
       titleLine = safeHead "" workingLines
-      colonIdx = T.findIndex (== ':') titleLine
-  in case colonIdx of
+      colonPosition = T.findIndex (== ':') titleLine
+  in case colonPosition of
        Just colonIndex | colonIndex > 0 ->
          let shortTitle = T.strip (T.take colonIndex titleLine)
          in if T.null shortTitle

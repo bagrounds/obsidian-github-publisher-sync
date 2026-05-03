@@ -115,8 +115,8 @@ collapseSpaces = T.intercalate " " . filter (not . T.null) . T.splitOn " "
 
 updateFrontmatterFields :: Text -> [(Text, YamlValue)] -> Text
 updateFrontmatterFields content fields =
-  let ls = T.splitOn "\n" content
-  in case ls of
+  let contentLines = T.splitOn "\n" content
+  in case contentLines of
     (first : rest)
       | T.strip first == "---" ->
           case break (\l -> T.strip l == "---") rest of

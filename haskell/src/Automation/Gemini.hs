@@ -346,16 +346,16 @@ formatSourceItem source =
   "- 🌐 [" <> groundingSourceTitle source <> "](" <> unUrl (groundingSourceUrl source) <> ")"
 
 generateContent :: Manager -> Request -> IO (Either Error Response)
-generateContent manager req = do
-  let model = requestModel req
+generateContent manager request = do
+  let model = requestModel request
       modelSupport = supportsSystemInstruction model
-      effectiveSystemInstruction = if modelSupport then requestSystemInstruction req else Nothing
-      effectivePrompt = case (requestSystemInstruction req, modelSupport) of
-        (Just systemInstruction, False) -> systemInstruction <> "\n\n" <> requestPrompt req
-        _                               -> requestPrompt req
-  let url = T.unpack $ geminiEndpoint model <> "?key=" <> unSecret (requestApiKey req)
+      effectiveSystemInstruction = if modelSupport then requestSystemInstruction request else Nothing
+      effectivePrompt = case (requestSystemInstruction request, modelSupport) of
+        (Just systemInstruction, False) -> systemInstruction <> "\n\n" <> requestPrompt request
+        _                               -> requestPrompt request
+  let url = T.unpack $ geminiEndpoint model <> "?key=" <> unSecret (requestApiKey request)
   parsedRequest <- parseRequest url
-  let body = encode $ buildRequestBody effectiveSystemInstruction effectivePrompt (requestGenerationConfig req)
+  let body = encode $ buildRequestBody effectiveSystemInstruction effectivePrompt (requestGenerationConfig request)
   putStrLn $ "📤 Gemini request (" <> T.unpack (modelToText model) <> "): "
     <> T.unpack (TE.decodeUtf8 (LBS.toStrict body))
   let httpReq = parsedRequest

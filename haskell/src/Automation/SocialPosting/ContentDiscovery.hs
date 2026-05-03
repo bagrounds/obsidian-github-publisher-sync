@@ -113,14 +113,14 @@ readContentNote relativePath contentDir = do
   if exists
     then do
       content <- TIO.readFile filePath
-      let (fm, body) = parseFrontmatter content
+      let (frontmatter, body) = parseFrontmatter content
           postedPlatforms = detectPostedPlatforms content
           linkedPaths = extractMarkdownLinks body relativePath contentDir
-          noSocial = Map.lookup "no_social" fm == Just "true"
-          titleText = fromMaybe (T.pack $ takeBaseName $ T.unpack relativePath) (Map.lookup "title" fm)
+          noSocial = Map.lookup "no_social" frontmatter == Just "true"
+          titleText = fromMaybe (T.pack $ takeBaseName $ T.unpack relativePath) (Map.lookup "title" frontmatter)
           slug = fromMaybe relativePath (T.stripSuffix ".md" relativePath)
-          urlText = fromMaybe ("https://bagrounds.org/" <> slug) (Map.lookup "URL" fm)
-          imageDate = Map.lookup "image_date" fm >>= parseImageDate
+          urlText = fromMaybe ("https://bagrounds.org/" <> slug) (Map.lookup "URL" frontmatter)
+          imageDate = Map.lookup "image_date" frontmatter >>= parseImageDate
           validated = do
             title <- mkTitle titleText
             url <- mkUrl urlText

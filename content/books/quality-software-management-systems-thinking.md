@@ -10,9 +10,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-28T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-05-03T20:27:26Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: An abstract, isometric illustration depicting a complex, interconnected clockwork mechanism. Gears of varying sizes represent different organizational layers—people, processes, and technology—all meshing together. The scene uses a clean, minimalist aesthetic with soft, professional lighting. Thin, glowing lines connect the gears, symbolizing the flow of information and systemic influence. In the center, a singular, polished orb represents Quality as a value-driven core. The color palette is composed of muted teals, deep navy, and subtle gold accents to evoke a sense of professional clarity and structural maturity. The background is a crisp, light gray gradient, suggesting a modern, organized workspace.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # ⚙️🔗 Quality Software Management: Systems Thinking  
+![books-quality-software-management-systems-thinking](../books-quality-software-management-systems-thinking.jpg)  
 [🛒 Quality Software Management: Systems Thinking. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/47NjsrB)  
   
 🚀💡🌱🛠️ Effective software quality stems from understanding complex human and organizational systems, not just technical processes. Conscious management and cultural awareness prevent endemic issues.  

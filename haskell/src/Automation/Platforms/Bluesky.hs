@@ -161,7 +161,7 @@ parseSession :: LBS.ByteString -> Either Error AtpSession
 parseSession body =
   case eitherDecode @Json.Value body of
     Left err  -> Left (JsonParseError (T.pack err))
-    Right val -> case extractSession val of
+    Right jsonValue -> case extractSession jsonValue of
       Left err  -> Left (ExtractionError (T.pack err))
       Right s   -> Right s
 
@@ -293,7 +293,7 @@ uploadBlob manager AtpSession{..} contentType imageData = do
     Left err   -> Left (classifyException err)
     Right body -> case eitherDecode @Json.Value body of
       Left err  -> Left (JsonParseError (T.pack err))
-      Right val -> case withObject "blob response" (.: "blob") val of
+      Right jsonValue -> case withObject "blob response" (.: "blob") jsonValue of
         Left err   -> Left (ExtractionError (T.pack err))
         Right blob -> Right blob
 
@@ -390,7 +390,7 @@ parsePostResponse :: Text -> LBS.ByteString -> Either Error PostResult
 parsePostResponse postText body =
   case eitherDecode @Json.Value body of
     Left err  -> Left (JsonParseError (T.pack err))
-    Right val -> case extractPostData postText val of
+    Right jsonValue -> case extractPostData postText jsonValue of
       Left err  -> Left (ExtractionError (T.pack err))
       Right r   -> Right r
 
@@ -475,7 +475,7 @@ parseOEmbedHtml :: LBS.ByteString -> Either Error EmbedResult
 parseOEmbedHtml body =
   case eitherDecode @Json.Value body of
     Left err  -> Left (JsonParseError (T.pack err))
-    Right val -> case withObject "oembed" (.: "html") val of
+    Right jsonValue -> case withObject "oembed" (.: "html") jsonValue of
       Left err   -> Left (ExtractionError (T.pack err))
       Right html -> Right (EmbedResult html)
 

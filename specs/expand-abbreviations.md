@@ -349,49 +349,63 @@ Record field abbreviation prefixes must be removed. When two records in the same
 - [x] `go` → `processWikiLinks` (inner helper in `InternalLinking/Masking.hs` `maskWikiL`)
 - [x] `go` → `processBold` (inner helper in `InternalLinking/Masking.hs` `maskBold`)
 - [x] `go` → `replaceMatches` (inner helper in `InternalLinking/Masking.hs` `replaceAllRegex`)
-- [ ] `go` → `buildPath` (inner helper in `SocialPosting/LinkExtraction.hs` `reconstructPath`)
+- [x] `go` → `buildPath` (inner helper in `SocialPosting/LinkExtraction.hs` `reconstructPath`)
 
 #### InternalLinking/CandidateDiscovery.hs (additional locals)
 
-- [ ] `len` → `matchLength` (local variable in `findAllMatches` result tuple and `collectCandidates`)
-- [ ] `p` → `position` (pattern variable in `collectCandidates` filter lambda `\(p, len)`)
+- [x] `len` → `matchLength` (local variable in `findAllMatches` result tuple and `tryPatterns`)
+- [x] `p` → `position` (pattern variable in `tryPatterns` filter lambda `\(position, matchLength)`)
+- [x] `cands` → `candidates` (accumulator parameter in `findForEntry` and `tryPatterns`)
 
 #### InternalLinking/LinkExtraction.hs (additional locals)
 
-- [ ] `acc` → `accumulated` (accumulator parameter in `collectLink`)
-- [ ] `acc` → `accumulated` (accumulator parameter `step acc` in `normalizeFilePath`)
+- [x] `acc` → `accumulated` (accumulator parameter in `collectLink`)
+- [x] `acc` → `accumulated` (accumulator parameter `step accumulated` in `normalizeFilePath`)
 
 #### SocialPosting/LinkExtraction.hs (additional locals)
 
-- [ ] `acc` → `accumulated` (accumulator parameter in `collectLink`)
-- [ ] `acc` → `accumulated` (accumulator parameter `step acc` in `normalizeFilePath`)
+- [x] `acc` → `accumulated` (accumulator parameter in `collectLink`)
+- [x] `acc` → `accumulated` (accumulator parameter `step accumulated` in `normalizeFilePath`)
 
 #### Platforms/Twitter.hs (additional locals)
 
-- [ ] `val` → `jsonValue` (local binding for parsed JSON value in `parseTweetResponse` and `parseOEmbedHtml`)
+- [x] `val` → `jsonValue` (local binding for parsed JSON value in `parseTweetResponse` and `parseOEmbedHtml`)
 
 #### Platforms/Bluesky.hs (additional locals)
 
-- [ ] `val` → `jsonValue` (local binding for parsed JSON value in `parseSession`, `uploadBlob`, `parsePostResponse`, and `parseOEmbedHtml`)
+- [x] `val` → `jsonValue` (local binding for parsed JSON value in `parseSession`, `uploadBlob`, `parsePostResponse`, and `parseOEmbedHtml`)
 
 #### Platforms/Mastodon.hs (additional locals)
 
-- [ ] `val` → `jsonValue` (local binding for parsed JSON value in `parseMastodonResponse` and `parseOEmbedHtml`)
+- [x] `val` → `jsonValue` (local binding for parsed JSON value in `parseMastodonResponse` and `parseOEmbedHtml`)
 
 #### Json.hs (additional locals)
 
-- [ ] `val` → `value` (local binding in `eitherDecode`, `eitherDecodeStrict`, and `keyValuePair`)
-- [ ] `val` → `value` (parameter in `.=` operator)
-- [ ] `vals` → `values` (local binding in `jsonArray`)
+- [x] `val` → `value` (local binding in `eitherDecode`, `eitherDecodeStrict`, and `keyValuePair`)
+- [x] `val` → `value` (parameter in `.=` operator)
+- [x] `vals` → `values` (local binding in `jsonArray`)
 
 #### Gemini.hs (additional locals)
 
-- [ ] `val` → `jsonValue` (local binding in `parseResponseText` and `generateContent`)
-- [ ] `acc` → `accumulated` (accumulator parameter in `addIfNew` within `deduplicateByUrl`)
+- [x] `val` → `jsonValue` (local binding in `parseResponseText` and `generateContent`)
+- [x] `acc` → `accumulated` (accumulator parameter in `addIfNew` within `deduplicateByUrl`)
 
 #### GcpAuth.hs (additional locals)
 
-- [ ] `acc` → `accumulated` (lambda accumulator in `foldl'` calls in `parseDerLength` and `bytesToInteger`)
+- [x] `acc` → `accumulated` (lambda accumulator in `foldl'` calls in `parseDerLength` and `bytesToInteger`)
+- [x] `acc` → `bitCount` (accumulator parameter in `countBits` within `integerBitLength`)
+
+#### BlogImage/Markdown.hs (additional locals)
+
+- [x] `ls` → `contentLines` (local binding in `insertImageEmbed`)
+
+#### InternalLinking/Gemini.hs (additional locals)
+
+- [x] `acc` → `accumulated` (accumulator parameter in `searchForward` within `findLastIndex`)
+
+#### Json.hs (additional locals discovered in pass 20)
+
+- [ ] `acc` → `accumulated` (lambda accumulator in `foldl` within `unicodeEscape`)
 
 ## Ordering Notes
 

@@ -148,31 +148,31 @@ findLinkCandidates index content masked selfPath =
   in sortBy (\a b -> compare (position a) (position b)) candidates
   where
     findForEntry :: ([(Int, Int)], [LinkCandidate]) -> ContentEntry -> ([(Int, Int)], [LinkCandidate])
-    findForEntry (ranges, cands) contentEntry
-      | relativePath contentEntry == selfPath = (ranges, cands)
-      | contentAlreadyLinksTo content contentEntry = (ranges, cands)
-      | any (\c -> relativePath (entry c) == relativePath contentEntry) cands = (ranges, cands)
+    findForEntry (ranges, candidates) contentEntry
+      | relativePath contentEntry == selfPath = (ranges, candidates)
+      | contentAlreadyLinksTo content contentEntry = (ranges, candidates)
+      | any (\c -> relativePath (entry c) == relativePath contentEntry) candidates = (ranges, candidates)
       | otherwise =
           let titleTexts = unTitle (plainTitle contentEntry) : maybeToList (extractMainTitle (unTitle (plainTitle contentEntry)))
-          in tryPatterns ranges cands contentEntry titleTexts
+          in tryPatterns ranges candidates contentEntry titleTexts
 
     tryPatterns :: [(Int, Int)] -> [LinkCandidate] -> ContentEntry -> [Text] -> ([(Int, Int)], [LinkCandidate])
-    tryPatterns ranges cands _ [] = (ranges, cands)
-    tryPatterns ranges cands contentEntry (titleText : rest) =
+    tryPatterns ranges candidates _ [] = (ranges, candidates)
+    tryPatterns ranges candidates contentEntry (titleText : rest) =
       let pat     = "\\b" <> T.unpack (escapeRegex titleText) <> "\\b"
           matches = findAllMatches pat (T.unpack masked)
-      in case filter (\(p, len) -> not (overlaps ranges p (p + len))) matches of
-        []             -> tryPatterns ranges cands contentEntry rest
-        ((pos, len):_) ->
-          let matched = T.take len (T.drop pos content)
-              ctx     = extractContext content pos len
+      in case filter (\(position, matchLength) -> not (overlaps ranges position (position + matchLength))) matches of
+        []             -> tryPatterns ranges candidates contentEntry rest
+        ((pos, matchLength):_) ->
+          let matched = T.take matchLength (T.drop pos content)
+              ctx     = extractContext content pos matchLength
               candidate = LinkCandidate
                 { entry       = contentEntry
                 , matchedText = matched
                 , position    = pos
                 , context     = ctx
                 }
-          in ((pos, pos + len) : ranges, cands <> [candidate])
+          in ((pos, pos + matchLength) : ranges, candidates <> [candidate])
 
     overlaps :: [(Int, Int)] -> Int -> Int -> Bool
     overlaps ranges start end =
@@ -187,6 +187,6 @@ findAllMatches pat = findMatch 0
       case (s =~ pat :: (String, String, String)) of
         (_, "", _)      -> []
         (before, match, after) ->
-          let pos = offset + length before
-              len = length match
-          in (pos, len) : findMatch (pos + len) after
+          let pos         = offset + length before
+              matchLength = length match
+          in (pos, matchLength) : findMatch (pos + matchLength) after

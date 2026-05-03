@@ -24,10 +24,10 @@ extractMarkdownLinks body noteRelativePath contentDir =
        (mdLinks body noteDir contentDir <> wikiLinksFromBody body noteDir contentDir)
 
 collectLink :: (Set Text, [Text]) -> Text -> (Set Text, [Text])
-collectLink (seen, acc) rel
-  | T.isPrefixOf ".." rel = (seen, acc)
-  | Set.member rel seen   = (seen, acc)
-  | otherwise             = (Set.insert rel seen, acc <> [rel])
+collectLink (seen, accumulated) rel
+  | T.isPrefixOf ".." rel = (seen, accumulated)
+  | Set.member rel seen   = (seen, accumulated)
+  | otherwise             = (Set.insert rel seen, accumulated <> [rel])
 
 mdLinks :: Text -> FilePath -> FilePath -> [Text]
 mdLinks body noteDir contentDir = parseLinks (T.unpack body)
@@ -85,9 +85,9 @@ normalizeFilePath = joinSlash . reverse . resolve . splitSlash
     resolve = foldl step []
 
     step :: [String] -> String -> [String]
-    step acc "."      = acc
+    step accumulated "."      = accumulated
     step (_:rest) ".." = rest
-    step acc seg       = seg : acc
+    step accumulated seg       = seg : accumulated
 
 makeRelativeTo :: FilePath -> FilePath -> FilePath
 makeRelativeTo base target =
@@ -106,10 +106,10 @@ joinSlash [x]    = x
 joinSlash (x:xs) = x </> joinSlash xs
 
 reconstructPath :: Map Text Text -> Text -> Text -> [Text]
-reconstructPath parentMap start target = reverse $ go target
+reconstructPath parentMap start target = reverse $ buildPath target
   where
-    go current
+    buildPath current
       | current == start = [current]
       | otherwise = case Map.lookup current parentMap of
-          Just parent -> current : go parent
+          Just parent -> current : buildPath parent
           Nothing     -> [current]

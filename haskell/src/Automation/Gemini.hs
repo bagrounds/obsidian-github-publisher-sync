@@ -273,8 +273,8 @@ buildRequestBody systemInstruction prompt config =
 parseResponseText :: LBS.ByteString -> Either Error Text
 parseResponseText body =
   case Json.decode body of
-    Nothing  -> Left JsonParseError
-    Just val -> extractText val
+    Nothing       -> Left JsonParseError
+    Just jsonValue -> extractText jsonValue
 
 extractText :: Value -> Either Error Text
 extractText (Object obj) =
@@ -336,10 +336,10 @@ formatGroundingSources sources =
 deduplicateByUrl :: [GroundingSource] -> [GroundingSource]
 deduplicateByUrl = foldl' addIfNew []
   where
-    addIfNew acc source =
-      if any (\s -> groundingSourceUrl s == groundingSourceUrl source) acc
-        then acc
-        else acc <> [source]
+    addIfNew accumulated source =
+      if any (\s -> groundingSourceUrl s == groundingSourceUrl source) accumulated
+        then accumulated
+        else accumulated <> [source]
 
 formatSourceItem :: GroundingSource -> Text
 formatSourceItem source =
@@ -379,8 +379,8 @@ generateContent manager request = do
           , responseModel            = model
           , responseGroundingSources = []
           }
-        (Right text, Just val) -> do
-          let sources = extractGroundingSources val
+        (Right text, Just jsonValue) -> do
+          let sources = extractGroundingSources jsonValue
           pure $ Right Response
             { responseText             = T.strip text
             , responseModel            = model

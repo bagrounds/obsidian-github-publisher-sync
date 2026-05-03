@@ -112,7 +112,7 @@ object :: [(Text, Value)] -> Value
 object = Object
 
 (.=) :: ToValue a => Text -> a -> (Text, Value)
-(.=) key val = (key, toValue val)
+(.=) key value = (key, toValue value)
 infixr 8 .=
 
 (.:) :: FromValue a => [(Text, Value)] -> Text -> Either String a
@@ -182,16 +182,16 @@ eitherDecode bs = do
   txt <- case TLE.decodeUtf8' bs of
     Right t  -> Right (TL.toStrict t)
     Left err -> Left $ "UTF-8 decode error: " <> show err
-  val <- parseJsonText txt
-  fromValue val
+  value <- parseJsonText txt
+  fromValue value
 
 eitherDecodeStrict :: FromValue a => BS.ByteString -> Either String a
 eitherDecodeStrict bs = do
   txt <- case TE.decodeUtf8' bs of
     Right t  -> Right t
     Left err -> Left $ "UTF-8 decode error: " <> show err
-  val <- parseJsonText txt
-  fromValue val
+  value <- parseJsonText txt
+  fromValue value
 
 parseJsonText :: Text -> Either String Value
 parseJsonText txt = case parse (jsonValue <* eof) "json" txt of
@@ -270,9 +270,9 @@ unicodeEscape = do
 jsonArray :: Parser Value
 jsonArray = do
   _ <- char '[' <* spaces
-  vals <- sepBy (jsonValue <* spaces) (char ',' <* spaces)
+  values <- sepBy (jsonValue <* spaces) (char ',' <* spaces)
   _ <- char ']'
-  pure (Array vals)
+  pure (Array values)
 
 jsonObject :: Parser Value
 jsonObject = do
@@ -285,5 +285,5 @@ keyValuePair :: Parser (Text, Value)
 keyValuePair = do
   key <- spaces *> jsonStringLiteral <* spaces
   _ <- char ':' <* spaces
-  val <- jsonValue
-  pure (key, val)
+  value <- jsonValue
+  pure (key, value)

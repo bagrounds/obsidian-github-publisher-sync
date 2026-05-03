@@ -29,10 +29,10 @@ extractLinkedPaths body noteRelativePath contentDir =
        (markdownLinks body noteDir contentDir <> wikiLinks body noteDir contentDir)
 
 collectLink :: (Set.Set Text, [Text]) -> Text -> (Set.Set Text, [Text])
-collectLink (seen, acc) rel
-  | T.isPrefixOf ".." rel = (seen, acc)
-  | Set.member rel seen   = (seen, acc)
-  | otherwise             = (Set.insert rel seen, acc <> [rel])
+collectLink (seen, accumulated) rel
+  | T.isPrefixOf ".." rel = (seen, accumulated)
+  | Set.member rel seen   = (seen, accumulated)
+  | otherwise             = (Set.insert rel seen, accumulated <> [rel])
 
 markdownLinks :: Text -> FilePath -> FilePath -> [Text]
 markdownLinks body noteDir contentDir = parseLinks (T.unpack body)
@@ -98,9 +98,9 @@ normalizeFilePath = joinSlash . reverse . resolve . splitSlash
     resolve = foldl' step []
 
     step :: [String] -> String -> [String]
-    step acc "."      = acc
+    step accumulated "."      = accumulated
     step (_:rest) ".." = rest
-    step acc seg       = seg : acc
+    step accumulated seg       = seg : accumulated
 
 makeRelativeTo :: FilePath -> FilePath -> FilePath
 makeRelativeTo base target =

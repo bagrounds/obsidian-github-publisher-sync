@@ -11,9 +11,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-17T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-05-03T15:28:31Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A stylized, high-contrast illustration featuring a vintage marionette puppet suspended by intricate, thin golden strings against a deep, moody background. The puppet’s wooden limbs are articulated, but its head is replaced by a complex, glowing geometric gear mechanism that suggests analytical control. Below, a vast, blurred crowd of faceless silhouettes looks upward, their forms merging into a sea of monochromatic gray. A single, sharp spotlight cuts through the darkness, casting long, dramatic shadows that stretch toward the viewer. The overall aesthetic is mid-century modern, utilizing a color palette of charcoal, burnt orange, and muted cream to evoke a sense of clinical, calculated influence and the invisible government described in the text.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 📢 Propaganda  
+![books-propaganda](../books-propaganda.jpg)  
 [🛒 Propaganda. As an Amazon Associate I earn from qualifying purchases.](https://www.amazon.com/dp/1684228417?tag=bagrounds-20)  
   
 ## 🤖 AI Summary  

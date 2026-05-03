@@ -13,7 +13,7 @@ link_analysis_version: "2"
 link_analysis_time: 2026-05-02T00:00:00Z
 force_analyze_links: false
 ---
-[Home](../index.md) > [🏛️ Systems for Public Good](./index.md) | [⏮️](./2026-05-01-weaving-the-democratic-fabric-civic-infrastructure-as-collective-power.md)  
+[Home](../index.md) > [🏛️ Systems for Public Good](./index.md) | [⏮️](./2026-05-01-weaving-the-democratic-fabric-civic-infrastructure-as-collective-power.md) [⏭️](./2026-05-03-this-week-s-threads-weaving-the-foundations-of-a-shared-society.md)  
 # 2026-05-02 | 🏛️ 🌐 Beyond Bricks and Mortar: Cultivating the Digital Commons 🏛️  
 ![systems-for-public-good-2026-05-02-beyond-bricks-and-mortar-cultivating-the-digital-commons](../systems-for-public-good-2026-05-02-beyond-bricks-and-mortar-cultivating-the-digital-commons.jpg)  
   

@@ -302,35 +302,35 @@ run manager model contentDir = do
 
 processFiles :: Manager -> Secret -> Gemini.Model -> FilePath -> [CD.ContentEntry] -> [Text] -> IO [FileResult]
 processFiles manager apiKey model contentDir index filesToVisit = do
-  inferenceRef <- newIORef (0 :: Int)
-  resultRef    <- newIORef ([] :: [FileResult])
-  go inferenceRef resultRef filesToVisit
-  reverse <$> readIORef resultRef
+  inferenceCount <- newIORef (0 :: Int)
+  fileResults    <- newIORef ([] :: [FileResult])
+  visitFiles inferenceCount fileResults filesToVisit
+  reverse <$> readIORef fileResults
   where
     maxInferencePerRun :: Int
     maxInferencePerRun = 10
 
-    go :: IORef Int -> IORef [FileResult] -> [Text] -> IO ()
-    go _ _ [] = pure ()
-    go infRef resRef (relPath : rest) = do
+    visitFiles :: IORef Int -> IORef [FileResult] -> [Text] -> IO ()
+    visitFiles _ _ [] = pure ()
+    visitFiles inferenceCount fileResults (relPath : rest) = do
       let filePath = contentDir </> T.unpack relPath
-      mFileResult <- processFile manager apiKey model filePath index
-      case mFileResult of
-        Nothing -> go infRef resRef rest
+      maybeFileResult <- processFile manager apiKey model filePath index
+      case maybeFileResult of
+        Nothing -> visitFiles inferenceCount fileResults rest
         Just fileResult -> do
-          modifyIORef' resRef (fileResult :)
+          modifyIORef' fileResults (fileResult :)
           if usedInference fileResult
             then do
-              infCount <- readIORef infRef
-              modifyIORef' infRef (+ 1)
-              let newCount = infCount + 1
+              currentInferenceCount <- readIORef inferenceCount
+              modifyIORef' inferenceCount (+ 1)
+              let newCount = currentInferenceCount + 1
               if newCount >= maxInferencePerRun
                 then
                   putStrLn $ "  ⏹️  Inference limit reached: " <> show newCount <> "/" <> show maxInferencePerRun
-                else go infRef resRef rest
-            else go infRef resRef rest
+                else visitFiles inferenceCount fileResults rest
+            else visitFiles inferenceCount fileResults rest
 
 lookupSecret :: IO Secret
 lookupSecret = do
-  mKey <- lookupEnv "GEMINI_API_KEY"
-  pure $ Secret (maybe "" T.pack mKey)
+  maybeKey <- lookupEnv "GEMINI_API_KEY"
+  pure $ Secret (maybe "" T.pack maybeKey)

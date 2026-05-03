@@ -10,9 +10,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-17T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-05-03T14:31:47Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A split-composition illustration depicting the contrast between economic stagnation and prosperity. On the left side, a stark, monochromatic urban scene shows dilapidated buildings, overgrown weeds, and a lone, weary figure sitting on a barren patch of dirt. On the right side, the same landscape is transformed into a vibrant, sunlit city with lush greenery, modern architecture, and bustling, organized public spaces. A golden, glowing grid pattern overlays the landscape, representing land value. In the center, a stylized, balanced scale hangs, with a stack of coins on one side and a flourishing sapling on the other, symbolizing the transition from extractive rent-seeking to productive, community-focused growth. The color palette shifts from desaturated grays and sepias on the left to warm, optimistic golds, greens, and blues on the right.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 📈📉 Progress and Poverty  
+![books-progress-and-poverty](../books-progress-and-poverty.jpg)  
 [🛒 Progress and Poverty. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3KXhOw8)  
   
 💰💡🌍 Poverty persists amidst technological advancement and increasing wealth because private land ownership allows landowners to capture unearned economic rent, primarily through a proposed single tax on land values to fund public services.  

@@ -312,25 +312,25 @@ processFiles manager apiKey model contentDir index filesToVisit = do
 
     go :: IORef Int -> IORef [FileResult] -> [Text] -> IO ()
     go _ _ [] = pure ()
-    go infRef resRef (relPath : rest) = do
+    go inferenceCountRef resultsRef (relPath : rest) = do
       let filePath = contentDir </> T.unpack relPath
-      mFileResult <- processFile manager apiKey model filePath index
-      case mFileResult of
-        Nothing -> go infRef resRef rest
+      maybeFileResult <- processFile manager apiKey model filePath index
+      case maybeFileResult of
+        Nothing -> go inferenceCountRef resultsRef rest
         Just fileResult -> do
-          modifyIORef' resRef (fileResult :)
+          modifyIORef' resultsRef (fileResult :)
           if usedInference fileResult
             then do
-              infCount <- readIORef infRef
-              modifyIORef' infRef (+ 1)
-              let newCount = infCount + 1
+              inferenceCount <- readIORef inferenceCountRef
+              modifyIORef' inferenceCountRef (+ 1)
+              let newCount = inferenceCount + 1
               if newCount >= maxInferencePerRun
                 then
                   putStrLn $ "  ⏹️  Inference limit reached: " <> show newCount <> "/" <> show maxInferencePerRun
-                else go infRef resRef rest
-            else go infRef resRef rest
+                else go inferenceCountRef resultsRef rest
+            else go inferenceCountRef resultsRef rest
 
 lookupSecret :: IO Secret
 lookupSecret = do
-  mKey <- lookupEnv "GEMINI_API_KEY"
-  pure $ Secret (maybe "" T.pack mKey)
+  maybeKey <- lookupEnv "GEMINI_API_KEY"
+  pure $ Secret (maybe "" T.pack maybeKey)

@@ -91,6 +91,7 @@ Record field abbreviation prefixes must be removed. When two records in the same
 - [ ] `bcFilename` → `filename` (BackfillCandidate record field)
 - [ ] `bcDate` → `date` (BackfillCandidate record field)
 - [ ] `bcNeedsRegeneration` → `needsRegeneration` (BackfillCandidate record field)
+- [ ] `fm` → `frontmatter` (local binding for `parseFrontmatter` result in `needsImageRegeneration`)
 
 #### BlogImage.hs
 
@@ -99,6 +100,7 @@ Record field abbreviation prefixes must be removed. When two records in the same
 - [ ] `brFilesSkipped` → `filesSkipped` (BackfillResult record field)
 - [ ] `brModifiedFiles` → `modifiedFiles` (BackfillResult record field)
 - [ ] `brErrors` → `errors` (BackfillResult record field)
+- [ ] `fm` → `frontmatter` (local binding for `parseFrontmatter` result in `lookupFrontmatterKey`)
 
 #### BlogPrompt.hs
 
@@ -129,11 +131,12 @@ Record field abbreviation prefixes must be removed. When two records in the same
 - [x] `wl` → `wikilink` (local variable in `applyReplacements`)
 - [x] `val` → `yamlValue` (parameter in `upsertField`)
 - [x] `acc` → `currentText` (accumulator parameter in `applyOne`)
-- [ ] `mFileResult` → `maybeFileResult` (local binding in `go`)
-- [ ] `infRef` → `inferenceCountRef` (IORef parameter in `processFiles`/`go`)
-- [ ] `resRef` → `resultsRef` (IORef parameter in `processFiles`/`go`)
-- [ ] `infCount` → `inferenceCount` (local binding in `go`)
-- [ ] `mKey` → `maybeKey` (local binding in `lookupSecret`)
+- [x] `mFileResult` → `maybeFileResult` (local binding in `go`)
+- [x] `infRef` → `inferenceCountRef` (IORef parameter in `go`)
+- [x] `resRef` → `resultsRef` (IORef parameter in `go`)
+- [x] `infCount` → `inferenceCount` (local binding in `go`)
+- [x] `mKey` → `maybeKey` (local binding in `lookupSecret`)
+- [ ] `fm` → `frontmatter` (local binding for `parseFrontmatter` result in `alreadyAnalyzed`)
 
 #### DailyReflection.hs
 
@@ -160,12 +163,14 @@ Record field abbreviation prefixes must be removed. When two records in the same
 #### SocialPosting.hs
 
 - [ ] `acc` → `grouped` (accumulator in `addToGroup`)
+- [ ] `env` → `environmentConfig` (parameter name for `EnvironmentConfig` in `postToPlatform`, `postToTwitterPlatform`, `postToBlueskyPlatform`, `postToMastodonPlatform`, `runPostingPipeline`, `processNoteGroup`, `postForPlatform`, and `run`)
 
 #### AiBlogLinks.hs
 
 - [ ] `ls` → `contentLines` (local variable in `updateNavLinks`)
 - [ ] `idx` → `index` (local variable in `updateNavLinks` and `processFile`)
 - [ ] `p` → `predicate` (parameter in local `findIndex`)
+- [ ] `fm` → `frontmatter` (local binding for `parseFrontmatter` result in `processFile`)
 - [ ] `nlrFilename` → `filename` (NavLinkResult record field)
 - [ ] `nlrModified` → `modified` (NavLinkResult record field)
 
@@ -184,6 +189,7 @@ Record field abbreviation prefixes must be removed. When two records in the same
 #### Frontmatter.hs
 
 - [ ] `ls` → `contentLines` (local variable in `parseFrontmatter`)
+- [ ] `fm` → `frontmatter` (local binding for `parseFrontmatter` result in `deriveUrl`, `readReflection`, and `readNote`)
 
 #### Text.hs
 
@@ -193,6 +199,34 @@ Record field abbreviation prefixes must be removed. When two records in the same
 - [ ] `lns` → `contentLines` (local variable in `fitPostToLimit` and `fitWithStrategies`)
 - [ ] `urlIdx` → `urlIndex` (local variable in `fitWithStrategies`)
 - [ ] `ci` → `colonIndex` (pattern variable in `strategy3`)
+
+#### Scheduler.hs
+
+- [ ] `fm` → `frontmatter` (local binding for frontmatter text in `needsRegeneration` and `parseFrontmatterText`)
+
+#### InternalLinking/Masking.hs
+
+- [ ] `fm` → `frontmatter` (local binding for frontmatter text in `maskProtectedRegions`)
+
+#### InternalLinking/CandidateDiscovery.hs
+
+- [ ] `fm` → `frontmatter` (local binding for `parseFrontmatter` result in `contentTitle`)
+
+#### SocialPosting/ContentDiscovery.hs
+
+- [ ] `fm` → `frontmatter` (local binding for `parseFrontmatter` result in `readContentNote`)
+
+#### BlogPosts.hs
+
+- [ ] `fm` → `frontmatter` (local binding for `parseFrontmatter` result in `readPost`)
+
+#### Gemini.hs
+
+- [ ] `req` → `request` (parameter name for `Request` in `generateContent`)
+
+#### GcpAuth.hs
+
+- [ ] `bs` → `bytes` (parameter name for `ByteString` in `parseDerTag`, `parseDerInteger`, `parseDerLength`, and `bytesToInteger`)
 
 ## Ordering Notes
 

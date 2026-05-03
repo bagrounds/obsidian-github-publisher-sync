@@ -6,11 +6,18 @@ title: 🤖 AI Blog
 URL: https://bagrounds.org/ai-blog/index
 Author: "[[bryan-grounds]]"
 backlinks: false
-updated: 2026-05-02T13:29:18-07:00
+updated: 2026-05-03T06:10:06-07:00
 ---
 [Home](../index.md)  
-# 🤖 AI Blog (177)  
+# 🤖 AI Blog (184)  
+- [2026-05-02 | 🔤 Expand Abbreviations: inferenceCountRef, resultsRef, maybeFileResult, inferenceCount, maybeKey 🧹](./2026-05-02-9-expand-abbreviations-inference-refs.md)  
+- [2026-05-02 | 🔤 Expand Abbreviations: idx, ls, pos 🧹](./2026-05-02-7-expand-abbreviations-idx-ls-pos.md)  
+- [2026-05-02 | 🔤 Expand Abbreviations: Analytics & Daily Updates 🧹](./2026-05-02-6-expand-abbreviations-analytics-and-daily-updates.md)  
+- [2026-05-02 | 🔤 Expand Abbreviations: TokenResponse and ServiceAccountKey Fields 🧹](./2026-05-02-5-expand-abbreviations-token-response-and-service-account-key.md)  
+- [2026-05-02 | 🔤 Expand Abbreviations: JwtClaims Fields 🧹](./2026-05-02-4-expand-abbreviations-jwt-claims.md)  
 - [2026-05-02 | 🔤 Expanding gc to graphqlComment in BlogComments 🧹](./2026-05-02-3-expand-abbreviations-gc-to-gql-comment.md)  
+- [2026-05-02 | 🔤 Expand Abbreviations: BlogSeriesConfig, NavLinkResult, env, fm, ls 🤖](./2026-05-02-11-expand-abbreviations-bsc-nlr-env-fm-ls.md)  
+- [2026-05-02 | 🔤 Expand Abbreviations: fm, ls, idx, val, tl, acc 🧹](./2026-05-02-10-expand-abbreviations-fm-ls-idx-reflection-title.md)  
 - [2026-05-02 | 🔤 Expand Abbreviations: initialRequest 🧹](./2026-05-02-1-expand-abbreviations-initial-request.md)  
 - [2026-05-01 | 📚 Lessons From an Abandoned PR: Auto-Generating Book Reports 🤖](./2026-05-01-1-book-reports-journey-reflection.md)  
 - [2026-04-30 | 📚 Auto-Generating Book Reports 🤖](./2026-04-30-2-auto-generate-book-reports.md)  

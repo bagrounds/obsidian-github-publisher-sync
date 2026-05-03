@@ -10,6 +10,7 @@ image_date: 2026-04-10T13:37:04Z
 image_model: "@cf/black-forest-labs/flux-1-schnell"
 image_prompt: A stylized, minimalist data structure diagram centered against a soft, dark-themed background. A symmetrical binary tree is depicted with thin, glowing geometric nodes connected by delicate, branching lines. One path through the tree is highlighted in a vibrant, contrasting color (such as electric blue or amber), showing a continuous, winding line that snakes through the nodes to represent a traversal trace. The aesthetic is clean and modern, using a mix of matte surfaces and soft neon highlights to suggest a fusion of organic tree imagery and structured computer science. The composition is balanced, with subtle, floating particles or light flares around the nodes to add depth and a sense of technical sophistication.
 link_analysis_version: "2"
+updated: 2026-05-03T01:46:18
 ---
 [Home](../index.md) > [Topics](./index.md)  
 # 🌳➡️ Tree Traversal  
@@ -80,3 +81,11 @@ flowchart
   
 ## Level-order  
 AKA Breadth-first search (BFS)  
+  
+## 🦋 Bluesky    
+<blockquote class="bluesky-embed" data-bluesky-uri="at://did:plc:i4yli6h7x2uoj7acxunww2fc/app.bsky.feed.post/3mkvzxm4aoa2o" data-bluesky-cid="bafyreicg7bxxjffkoayw7zvlvv5dudmsefhwwpawjwg3bqq5o6fkpbscpy"><p>🌳➡️ Tree Traversal  
+  
+#AI Q: 🌳 Which traversal method makes the most logical sense to you?  
+  
+🌳 Data Structures | 🔍 Search Algorithms | 🪜 Recursive Functions | 📊 Graph Theory  
+https://bagrounds.org/topics/tree-traversal</p>&mdash; <a href="https://bsky.app/profile/did:plc:i4yli6h7x2uoj7acxunww2fc?ref_src=embed">Bryan Grounds (@bagrounds.bsky.social)</a> <a href="https://bsky.app/profile/did:plc:i4yli6h7x2uoj7acxunww2fc/post/3mkvzxm4aoa2o?ref_src=embed">2026-05-03T01:46:20.000Z</a></blockquote><script async src="https://embed.bsky.app/static/embed.js" charset="utf-8"></script>

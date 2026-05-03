@@ -297,32 +297,32 @@ Record field abbreviation prefixes must be removed. When two records in the same
 
 #### SocialPosting/FrontmatterUpdate.hs
 
-- [ ] `ls` → `contentLines` (local binding for split content lines in `updateFrontmatterTimestamp` and `updateFrontmatterUrl`)
-- [ ] `fmLines` → `frontmatterLines` (local binding for parsed frontmatter lines in `updateFrontmatterTimestamp` and `updateFrontmatterUrl`)
-- [ ] `updatedFm` → `updatedFrontmatter` (local binding for updated frontmatter lines in `updateFrontmatterTimestamp` and `updateFrontmatterUrl`)
-- [ ] `upsertFmField` → `upsertFrontmatterField` (function name — `Fm` abbreviation; also update all callers)
-- [ ] `renderedVal` → `renderedValue` (parameter in `upsertFrontmatterField`)
-- [ ] `has` → `hasKey` (local boolean in `upsertFrontmatterField`)
-- [ ] `pat` → `keyPattern` (local binding in `upsertFrontmatterField`)
+- [x] `ls` → `contentLines` (local binding for split content lines in `updateFrontmatterTimestamp` and `updateFrontmatterUrl`)
+- [x] `fmLines` → `frontmatterLines` (local binding for parsed frontmatter lines in `updateFrontmatterTimestamp` and `updateFrontmatterUrl`)
+- [x] `updatedFm` → `updatedFrontmatter` (local binding for updated frontmatter lines in `updateFrontmatterTimestamp` and `updateFrontmatterUrl`)
+- [x] `upsertFmField` → `upsertFrontmatterField` (function name — `Fm` abbreviation; also update all callers)
+- [x] `renderedVal` → `renderedValue` (parameter in `upsertFrontmatterField`)
+- [x] `has` → `hasKey` (local boolean in `upsertFrontmatterField`)
+- [x] `pat` → `keyPattern` (local binding in `upsertFrontmatterField`)
 
 #### AiFiction.hs
 
-- [ ] `fcModels` → `models` (FictionConfig record field — `fc` prefix)
-- [ ] `fcNoteContent` → `noteContent` (FictionConfig record field — `fc` prefix)
-- [ ] `frFiction` → `fiction` (FictionResult record field — `fr` prefix)
-- [ ] `frModel` → `model` (FictionResult record field — `fr` prefix)
-- [ ] `frUpdatedContent` → `updatedContent` (FictionResult record field — `fr` prefix)
+- [x] `fcModels` → `models` (FictionConfig record field — `fc` prefix)
+- [x] `fcNoteContent` → `noteContent` (FictionConfig record field — `fc` prefix)
+- [x] `frFiction` → `fiction` (FictionResult record field — `fr` prefix)
+- [x] `frModel` → `model` (FictionResult record field — `fr` prefix)
+- [x] `frUpdatedContent` → `updatedContent` (FictionResult record field — `fr` prefix)
 
 #### ReflectionTitle.hs (record field prefixes)
 
-- [ ] `rtcModels` → `models` (ReflectionTitleConfig record field — `rtc` prefix)
-- [ ] `rtcNoteContent` → `noteContent` (ReflectionTitleConfig record field — `rtc` prefix)
-- [ ] `rtcDate` → `date` (ReflectionTitleConfig record field — `rtc` prefix)
-- [ ] `rtcRecentTitles` → `recentTitles` (ReflectionTitleConfig record field — `rtc` prefix)
-- [ ] `rtrTitle` → `title` (ReflectionTitleResult record field — `rtr` prefix)
-- [ ] `rtrFullTitle` → `fullTitle` (ReflectionTitleResult record field — `rtr` prefix)
-- [ ] `rtrModel` → `model` (ReflectionTitleResult record field — `rtr` prefix)
-- [ ] `rtrUpdatedContent` → `updatedContent` (ReflectionTitleResult record field — `rtr` prefix)
+- [x] `rtcModels` → `models` (ReflectionTitleConfig record field — `rtc` prefix)
+- [x] `rtcNoteContent` → `noteContent` (ReflectionTitleConfig record field — `rtc` prefix)
+- [x] `rtcDate` → `date` (ReflectionTitleConfig record field — `rtc` prefix)
+- [x] `rtcRecentTitles` → `recentTitles` (ReflectionTitleConfig record field — `rtc` prefix)
+- [x] `rtrTitle` → `title` (ReflectionTitleResult record field — `rtr` prefix)
+- [x] `rtrFullTitle` → `fullTitle` (ReflectionTitleResult record field — `rtr` prefix)
+- [x] `rtrModel` → `model` (ReflectionTitleResult record field — `rtr` prefix)
+- [x] `rtrUpdatedContent` → `updatedContent` (ReflectionTitleResult record field — `rtr` prefix)
 
 #### InternalLinking.hs (additional locals)
 
@@ -340,6 +340,45 @@ Record field abbreviation prefixes must be removed. When two records in the same
 - [ ] `go` → `findMatch` (inner helper in `InternalLinking/CandidateDiscovery.hs` `findAllMatches`)
 - [ ] `go` → `parseLinks` (inner helper in `InternalLinking/LinkExtraction.hs` `markdownLinks`)
 - [ ] `go` → `parseLinks` (inner helper in `SocialPosting/LinkExtraction.hs` `mdLinks`)
+- [ ] `go` → `findAt` (inner helper in `AiBlogLinks.hs` local `findIndex`)
+- [ ] `go` → `collapseStep` (inner helper in `BlogImage/Markdown.hs` `collapseNewlines`)
+- [ ] `go` → `processLines` (inner helper in `BlogImage/Markdown.hs` `removeCodeBlocks`)
+- [ ] `go` → `searchForward` (inner helper in `InternalLinking/Gemini.hs` `findLastIndex`)
+- [ ] `go` → `processFences` (inner helper in `InternalLinking/Masking.hs` `maskBetweenFences`)
+- [ ] `go` → `processLinks` (inner helper in `InternalLinking/Masking.hs` `maskMdLinks`)
+- [ ] `go` → `processWikiLinks` (inner helper in `InternalLinking/Masking.hs` `maskWikiL`)
+- [ ] `go` → `processBold` (inner helper in `InternalLinking/Masking.hs` `maskBold`)
+- [ ] `go` → `replaceMatches` (inner helper in `InternalLinking/Masking.hs` `replaceAllRegex`)
+- [ ] `go` → `buildPath` (inner helper in `SocialPosting/LinkExtraction.hs` `reconstructPath`)
+
+#### InternalLinking/CandidateDiscovery.hs (additional locals)
+
+- [ ] `len` → `matchLength` (local variable in `findAllMatches` result tuple and `collectCandidates`)
+- [ ] `p` → `position` (pattern variable in `collectCandidates` filter lambda `\(p, len)`)
+
+#### InternalLinking/LinkExtraction.hs (additional locals)
+
+- [ ] `acc` → `accumulated` (accumulator parameter in `collectLink`)
+
+#### SocialPosting/LinkExtraction.hs (additional locals)
+
+- [ ] `acc` → `accumulated` (accumulator parameter in `collectLink`)
+
+#### Platforms/Twitter.hs (additional locals)
+
+- [ ] `val` → `jsonValue` (local binding for parsed JSON value in `parseTweetResponse` and `parseOEmbedHtml`)
+
+#### Platforms/Bluesky.hs (additional locals)
+
+- [ ] `val` → `jsonValue` (local binding for parsed JSON value in `parseSession`, `uploadBlob`, `parsePostResponse`, and `parseOEmbedHtml`)
+
+#### Platforms/Mastodon.hs (additional locals)
+
+- [ ] `val` → `jsonValue` (local binding for parsed JSON value in `parseMastodonResponse` and `parseOEmbedHtml`)
+
+#### Json.hs (additional locals)
+
+- [ ] `val` → `value` (local binding in `parseJson`, `parseJsonAs`, and `jsonPair`)
 
 ## Ordering Notes
 

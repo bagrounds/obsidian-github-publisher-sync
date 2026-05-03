@@ -2,7 +2,7 @@ module Automation.SocialPosting.FrontmatterUpdate
   ( updateFrontmatterTimestamp
   , updatePathTimestamps
   , updateFrontmatterUrl
-  , upsertFmField
+  , upsertFrontmatterField
   ) where
 
 import Control.Monad (when)
@@ -22,16 +22,16 @@ updateFrontmatterTimestamp filePath = do
     content <- TIO.readFile filePath
     now <- getCurrentTime
     let timestamp = T.pack $ formatTime defaultTimeLocale "%Y-%m-%dT%H:%M:%S" now
-        ls = T.splitOn "\n" content
-    case ls of
+        contentLines = T.splitOn "\n" content
+    case contentLines of
       (first : rest)
         | T.strip first == "---" ->
             case break (\l -> T.strip l == "---") rest of
               (_, []) -> pure ()
-              (fmLines, closingDash : bodyLines) ->
-                let updatedFm = upsertFmField fmLines "updated" (quoteYamlValue timestamp)
+              (frontmatterLines, closingDash : bodyLines) ->
+                let updatedFrontmatter = upsertFrontmatterField frontmatterLines "updated" (quoteYamlValue timestamp)
                 in TIO.writeFile filePath
-                     (T.intercalate "\n" (first : updatedFm <> [closingDash] <> bodyLines))
+                     (T.intercalate "\n" (first : updatedFrontmatter <> [closingDash] <> bodyLines))
       _ -> pure ()
 
 updatePathTimestamps :: FilePath -> [Text] -> IO ()
@@ -43,22 +43,22 @@ updateFrontmatterUrl filePath newUrl = do
   exists <- doesFileExist filePath
   when exists $ do
     content <- TIO.readFile filePath
-    let ls = T.splitOn "\n" content
-    case ls of
+    let contentLines = T.splitOn "\n" content
+    case contentLines of
       (first : rest)
         | T.strip first == "---" ->
             case break (\l -> T.strip l == "---") rest of
               (_, []) -> pure ()
-              (fmLines, closingDash : bodyLines) ->
-                let updatedFm = upsertFmField fmLines "URL" (quoteYamlValue newUrl)
+              (frontmatterLines, closingDash : bodyLines) ->
+                let updatedFrontmatter = upsertFrontmatterField frontmatterLines "URL" (quoteYamlValue newUrl)
                 in TIO.writeFile filePath
-                     (T.intercalate "\n" (first : updatedFm <> [closingDash] <> bodyLines))
+                     (T.intercalate "\n" (first : updatedFrontmatter <> [closingDash] <> bodyLines))
       _ -> pure ()
 
-upsertFmField :: [Text] -> Text -> Text -> [Text]
-upsertFmField ls key renderedVal =
-  let newLine = key <> ": " <> renderedVal
-      pat = key <> ":"
-      has = any (T.isPrefixOf pat . T.stripStart) ls
-      replaced = fmap (\l -> if T.isPrefixOf pat (T.stripStart l) then newLine else l) ls
-  in if has then replaced else ls <> [newLine]
+upsertFrontmatterField :: [Text] -> Text -> Text -> [Text]
+upsertFrontmatterField contentLines key renderedValue =
+  let newLine = key <> ": " <> renderedValue
+      keyPattern = key <> ":"
+      hasKey = any (T.isPrefixOf keyPattern . T.stripStart) contentLines
+      replaced = fmap (\l -> if T.isPrefixOf keyPattern (T.stripStart l) then newLine else l) contentLines
+  in if hasKey then replaced else contentLines <> [newLine]

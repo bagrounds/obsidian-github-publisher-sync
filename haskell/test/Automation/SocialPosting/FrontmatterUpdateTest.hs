@@ -12,31 +12,31 @@ import Automation.SocialPosting.FrontmatterUpdate
 
 tests :: TestTree
 tests = testGroup "SocialPosting.FrontmatterUpdate"
-  [ upsertFmFieldTests
+  [ upsertFrontmatterFieldTests
   , updateFrontmatterUrlTests
   , updateFrontmatterTimestampTests
   , updatePathTimestampsTests
   ]
 
--- upsertFmField
+-- upsertFrontmatterField
 
-upsertFmFieldTests :: TestTree
-upsertFmFieldTests = testGroup "upsertFmField"
+upsertFrontmatterFieldTests :: TestTree
+upsertFrontmatterFieldTests = testGroup "upsertFrontmatterField"
   [ testCase "inserts new field when not present" $
       assertEqual "" ["title: My Title", "URL: \"https://example.com\""]
-        (upsertFmField ["title: My Title"] "URL" "\"https://example.com\"")
+        (upsertFrontmatterField ["title: My Title"] "URL" "\"https://example.com\"")
 
   , testCase "updates existing field" $
       assertEqual "" ["title: My Title", "URL: \"https://new.com\""]
-        (upsertFmField ["title: My Title", "URL: \"https://old.com\""] "URL" "\"https://new.com\"")
+        (upsertFrontmatterField ["title: My Title", "URL: \"https://old.com\""] "URL" "\"https://new.com\"")
 
   , testCase "preserves other fields when updating" $
       assertEqual "" ["title: My Title", "URL: \"https://new.com\"", "share: true"]
-        (upsertFmField ["title: My Title", "URL: \"https://old.com\"", "share: true"] "URL" "\"https://new.com\"")
+        (upsertFrontmatterField ["title: My Title", "URL: \"https://old.com\"", "share: true"] "URL" "\"https://new.com\"")
 
   , testCase "handles empty field list" $
       assertEqual "" ["updated: \"2026-01-01\""]
-        (upsertFmField [] "updated" "\"2026-01-01\"")
+        (upsertFrontmatterField [] "updated" "\"2026-01-01\"")
   ]
 
 -- updateFrontmatterUrl

@@ -9,8 +9,8 @@ module Automation.AiFiction
   , buildFictionSignature
   , applyFiction
   , generateFiction
-  , FictionConfig (FictionConfig, fcModels, fcNoteContent)
-  , FictionResult (FictionResult, frFiction, frModel, frUpdatedContent)
+  , FictionConfig (FictionConfig, models, noteContent)
+  , FictionResult (FictionResult, fiction, model, updatedContent)
   ) where
 
 import Data.List.NonEmpty (NonEmpty)
@@ -135,25 +135,25 @@ applyFiction content fiction mModel =
       T.stripEnd content <> "\n\n" <> sectionBlock <> "\n"
 
 data FictionConfig = FictionConfig
-  { fcModels      :: NonEmpty Gemini.Model
-  , fcNoteContent :: Text
+  { models      :: NonEmpty Gemini.Model
+  , noteContent :: Text
   } deriving (Show, Eq)
 
 data FictionResult = FictionResult
-  { frFiction        :: Text
-  , frModel          :: Text
-  , frUpdatedContent :: Text
+  { fiction        :: Text
+  , model          :: Text
+  , updatedContent :: Text
   } deriving (Show, Eq)
 
 generateFiction :: FictionConfig -> (NonEmpty Gemini.Model -> (Text, Text) -> IO (Text, Text)) -> IO FictionResult
 generateFiction config callModel = do
-  let stripped = stripForPrompt (fcNoteContent config)
+  let stripped = stripForPrompt (noteContent config)
       prompt = buildFictionPrompt stripped
-  (text, model) <- callModel (fcModels config) prompt
-  let fiction = parseFictionResponse text
-      updatedContent = applyFiction (fcNoteContent config) fiction (Just model)
+  (text, usedModel) <- callModel (models config) prompt
+  let fictionText = parseFictionResponse text
+      newContent = applyFiction (noteContent config) fictionText (Just usedModel)
   pure FictionResult
-    { frFiction = fiction
-    , frModel = model
-    , frUpdatedContent = updatedContent
+    { fiction = fictionText
+    , model = usedModel
+    , updatedContent = newContent
     }

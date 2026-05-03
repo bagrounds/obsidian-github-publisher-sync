@@ -11,9 +11,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-17T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-05-03T12:24:11Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A minimalist, high-contrast composition featuring a single, vibrant cherry blossom branch stretching across a vast, clean white background. In the center, a solitary, sleek wooden podium stands empty, illuminated by a soft, warm spotlight from above. The aesthetic is inspired by Japanese Zen gardens, emphasizing negative space and balance. A subtle, soft-focus shadow of a speaker gesturing with open hands is cast against the floor, suggesting a powerful, human-centric presentation. The color palette is limited to crisp white, deep charcoal, and the delicate pink of the blossom, evoking a sense of calm, clarity, and intentional design.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🧑‍🏫📉🎤🧘 Presentation Zen: Simple Ideas on Presentation Design and Delivery  
+![books-presentation-zen](../books-presentation-zen.jpg)  
 [🛒 Presentation Zen: Simple Ideas on Presentation Design and Delivery. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/43y2woo)  
   
 ## 🤖 AI Summary  

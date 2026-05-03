@@ -21,11 +21,11 @@ updated: 2026-05-03T08:55:47-07:00
 - [2026-04-30 | ✅ Pull 🤝 Agent 🐔 Lessons 🔀 Intent 🌟 Flourishing 🏛️ Well-being 📰 Progress 🤖 Purpose 🤖 Deploy 🥚🩼🤖🐔🔀🌟🏛️📰🤖🔄🤖🐲](./reflections/2026-04-30.md)  
   
   
-## [🤖 AI Blog](./ai-blog/index.md) (184)  
+## [🤖 AI Blog](./ai-blog/index.md) (185)  
+- [2026-05-03 | 🔤 Expand Abbreviations in Haskell Pass 12 🤖](./ai-blog/2026-05-03-1-expand-abbreviations-haskell-pass-12.md)  
 - [2026-05-02 | 🔤 Expand Abbreviations: inferenceCountRef, resultsRef, maybeFileResult, inferenceCount, maybeKey 🧹](./ai-blog/2026-05-02-9-expand-abbreviations-inference-refs.md)  
 - [2026-05-02 | 🔤 Expand Abbreviations: idx, ls, pos 🧹](./ai-blog/2026-05-02-7-expand-abbreviations-idx-ls-pos.md)  
 - [2026-05-02 | 🔤 Expand Abbreviations: Analytics & Daily Updates 🧹](./ai-blog/2026-05-02-6-expand-abbreviations-analytics-and-daily-updates.md)  
-- [2026-05-02 | 🔤 Expand Abbreviations: TokenResponse and ServiceAccountKey Fields 🧹](./ai-blog/2026-05-02-5-expand-abbreviations-token-response-and-service-account-key.md)  
   
   
 ## [🤖 Auto Blog Zero](./auto-blog-zero/index.md) (54)  
@@ -42,11 +42,11 @@ updated: 2026-05-03T08:55:47-07:00
 - [2026-04-30 | 🐔 🌿 The Gentle Lessons of April 🐔](./chickie-loo/2026-04-30-the-gentle-lessons-of-april.md)  
   
   
-## [🏛️ Systems for Public Good](./systems-for-public-good/index.md) (42)  
+## [🏛️ Systems for Public Good](./systems-for-public-good/index.md) (43)  
+- [2026-05-03 | 🏛️ 🗓️ This Week's Threads: Weaving the Foundations of a Shared Society 🏛️](./systems-for-public-good/2026-05-03-this-week-s-threads-weaving-the-foundations-of-a-shared-society.md)  
 - [2026-05-02 | 🏛️ 🌐 Beyond Bricks and Mortar: Cultivating the Digital Commons 🏛️](./systems-for-public-good/2026-05-02-beyond-bricks-and-mortar-cultivating-the-digital-commons.md)  
 - [2026-05-01 | 🏛️ Weaving the Democratic Fabric: Civic Infrastructure as Collective Power 🏛️](./systems-for-public-good/2026-05-01-weaving-the-democratic-fabric-civic-infrastructure-as-collective-power.md)  
 - [2026-04-30 | 🏛️ 🗓️ April in Review: Building the Foundations of Collective Well-being 🏛️](./systems-for-public-good/2026-04-30-april-in-review-building-the-foundations-of-collective-well-being.md)  
-- [2026-04-29 | 🏛️ 📡 The Public's Airwaves: Cultivating an Informed Society 🏛️](./systems-for-public-good/2026-04-29-the-public-s-airwaves-cultivating-an-informed-society.md)  
   
   
 ## [📰 The Noise](./the-noise/index.md) (24)  
@@ -71,10 +71,10 @@ updated: 2026-05-03T08:55:47-07:00
   
   
 ## [📚 Books](./books/index.md) (961)  
+- [🧑‍💼💥 Prophet of Innovation: Joseph Schumpeter and Creative Destruction](./books/prophet-of-innovation-joseph-schumpeter-and-creative-destruction.md)  
 - [📢 Propaganda](./books/propaganda.md)  
 - [⌨️🤖 Prompt Engineering for LLMs: The Art and Science of Building Large Language Model-Based Applications](./books/prompt-engineering-for-llms-the-art-and-science-of-building-large-language-model-based-applications.md)  
 - [📈📉 Progress and Poverty](./books/progress-and-poverty.md)  
-- [🎲🧮 Probability Theory: The Logic of Science](./books/probability-theory.md)  
   
   
 ## [📺 Videos](./videos/index.md) (815)  

@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-05-03T08:55:47-07:00
+updated: 2026-05-03T12:15:55-07:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -71,17 +71,17 @@ updated: 2026-05-03T08:55:47-07:00
   
   
 ## [📚 Books](./books/index.md) (961)  
-- [🧑‍💼💥 Prophet of Innovation: Joseph Schumpeter and Creative Destruction](./books/prophet-of-innovation-joseph-schumpeter-and-creative-destruction.md)  
-- [📢 Propaganda](./books/propaganda.md)  
-- [⌨️🤖 Prompt Engineering for LLMs: The Art and Science of Building Large Language Model-Based Applications](./books/prompt-engineering-for-llms-the-art-and-science-of-building-large-language-model-based-applications.md)  
-- [📈📉 Progress and Poverty](./books/progress-and-poverty.md)  
+- [ 🎯🎭🔗🧭🏆 Purposeful Performance: The Secret Mix of Connecting, Leading, and Succeeding](./books/purposeful-performance.md)  
+- [📢💡 Public Broadcasting and the Public Interest](./books/public-broadcasting-and-the-public-interest.md)  
+- [🧐🕹️🔁 Psycho-Cybernetics: A New Way to Get More Living Out of Life](./books/psycho-cybernetics-a-new-way-to-get-more-living-out-of-life.md)  
+- [⚖️🏛️ Prosecuting the President: How Special Prosecutors Hold Presidents Accountable and Protect the Rule of Law](./books/prosecuting-the-president-how-special-prosecutors-hold-presidents-accountable-and-protect-the-rule-of-law.md)  
   
   
-## [📺 Videos](./videos/index.md) (815)  
+## [📺 Videos](./videos/index.md) (816)  
+- [🧠💡🔬 Hamming «You and Your Research» (June 6, 1995)](./videos/hamming-you-and-your-research-june-6-1995.md)  
 - [🧠📉⚠️ Neuroscience Confirms: This One Behavior Quietly Weakens Your Brain](./videos/neuroscience-confirms-this-one-behavior-quietly-weakens-your-brain.md)  
 - [🤖🧹💻 How To De-Slop A Codebase Ruined By AI (with one skill)](./videos/how-to-de-slop-a-codebase-ruined-by-ai-with-one-skill.md)  
 - [💨🏠⚡🚫❓ This Chimney Will Cool Your Entire Home WITHOUT Electricity. Why Did The Energy Industry Hide It?](./videos/this-chimney-will-cool-your-entire-home-without-electricity-why-did-the-energy-industry-hide-it.md)  
-- [💻🏗️🧠 Software Fundamentals Matter More Than Ever - Matt Pocock](./videos/software-fundamentals-matter-more-than-ever-matt-pocock.md)  
   
   
 ## [🌌 Topics](./topics/index.md) (91)  

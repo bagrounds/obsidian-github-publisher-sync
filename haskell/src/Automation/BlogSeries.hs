@@ -131,8 +131,8 @@ updatePreviousPost seriesDir prevPost series newFilename = do
     content <- TIO.readFile filePath
     let fwdLink = buildForwardLink series newFilename
         navPrefix = bscNavLink series
-        ls = T.splitOn "\n" content
-        updatedLines = fmap (updateNavLine navPrefix fwdLink) ls
+        contentLines = T.splitOn "\n" content
+        updatedLines = fmap (updateNavLine navPrefix fwdLink) contentLines
         updated = T.intercalate "\n" updatedLines
     when (updated /= content) $
       TIO.writeFile filePath updated

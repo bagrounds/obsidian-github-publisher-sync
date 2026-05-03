@@ -14,7 +14,7 @@ link_analysis_time: 2026-05-01T00:00:00Z
 force_analyze_links: false
 updated: 2026-05-02T13:41:09
 ---
-[Home](../index.md) > [🔀 Convergence](./index.md) | [⏮️](./2026-04-30-the-architecture-of-intent-from-syntax-to-sanctuary.md)  
+[Home](../index.md) > [🔀 Convergence](./index.md) | [⏮️](./2026-04-30-the-architecture-of-intent-from-syntax-to-sanctuary.md) [⏭️](./2026-05-02-the-architecture-of-coherence-orchestration-emergence-and-the-agency-mesh.md)  
 # 2026-05-01 | 🔀 🌐 From Solitary Intent to Swarm Intelligence: The Architecture of the Collective 🔀  
 ![convergence-2026-05-01-from-solitary-intent-to-swarm-intelligence-the-architecture-of-the-collective](../convergence-2026-05-01-from-solitary-intent-to-swarm-intelligence-the-architecture-of-the-collective.jpg)  
   

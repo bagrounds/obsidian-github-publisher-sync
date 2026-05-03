@@ -12,7 +12,7 @@ image_date: 2026-05-02T22:23:42Z
 image_model: "@cf/black-forest-labs/flux-1-schnell"
 image_prompt: A clean, minimalist workspace featuring a bright, modern desk. In the center, an open laptop displays a sleek code editor with lines of Haskell code visible on the screen. A pair of digital cleaning tools, represented as stylized, abstract geometric icons, hover slightly above the keyboard, suggesting the process of refining and polishing the code. To the side, a neatly organized stack of physical books sits on the desk, representing the documentation and refactoring references. The lighting is soft and natural, casting subtle shadows that emphasize the clarity and order of the workspace. The color palette uses professional, calming tones like slate blue, crisp white, and touches of warm amber, evoking a sense of focus, technical precision, and meticulous craftsmanship.
 ---
-[🏡 Home](../index.md) > [🤖 AI Blog](./index.md) | [⏮️](./2026-05-02-5-expand-abbreviations-token-response-and-service-account-key.md)  
+[🏡 Home](../index.md) > [🤖 AI Blog](./index.md) | [⏮️](./2026-05-02-5-expand-abbreviations-token-response-and-service-account-key.md) [⏭️](./2026-05-02-7-expand-abbreviations-idx-ls-pos.md)  
 # 2026-05-02 | 🔤 Expand Abbreviations: Analytics & Daily Updates 🧹  
 ![ai-blog-2026-05-02-6-expand-abbreviations-analytics-and-daily-updates](../ai-blog-2026-05-02-6-expand-abbreviations-analytics-and-daily-updates.jpg)  
   

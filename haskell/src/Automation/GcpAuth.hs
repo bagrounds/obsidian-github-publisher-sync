@@ -173,10 +173,10 @@ parsePkcs1Key derBytes = do
 integerBitLength :: Integer -> Int
 integerBitLength n
   | n <= 0 = 0
-  | otherwise = go n 0
+  | otherwise = countBits n 0
   where
-    go 0 acc = acc
-    go x acc = go (x `div` 2) (acc + 1)
+    countBits 0 acc = acc
+    countBits x acc = countBits (x `div` 2) (acc + 1)
 
 parseDerTag :: Word8 -> ByteString -> Either Text (ByteString, ByteString)
 parseDerTag expectedTag bytes

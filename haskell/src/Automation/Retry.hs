@@ -48,14 +48,14 @@ isTransientError e =
     Nothing   -> False
 
 withRetry :: RetryOptions -> IO a -> IO a
-withRetry opts action = go 0
+withRetry opts action = runAttempt 0
   where
-    go attempt =
+    runAttempt attempt =
       action `catch` \(err :: SomeException) ->
         if attempt < roMaxRetries opts && isTransientError err
         then do
           let delayMs = roBaseDelayMs opts * (2 ^ attempt)
           roOnRetry opts err (attempt + 1) delayMs
           threadDelay (delayMs * 1000)
-          go (attempt + 1)
+          runAttempt (attempt + 1)
         else throwIO err

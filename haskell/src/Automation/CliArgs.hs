@@ -13,9 +13,9 @@ data CliArgs = CliArgs
   } deriving (Show, Eq)
 
 parseCliArgs :: [String] -> CliArgs
-parseCliArgs = go (CliArgs Nothing Nothing)
+parseCliArgs = processArgs (CliArgs Nothing Nothing)
   where
-    go accumulator [] = accumulator
-    go accumulator ("--hour" : hourStr : rest) = go (accumulator { cliHourOverride = readMaybe hourStr }) rest
-    go accumulator ("--task" : taskStr : rest) = go (accumulator { cliTaskOverride = Just (T.pack taskStr) }) rest
-    go accumulator (_ : rest) = go accumulator rest
+    processArgs accumulator [] = accumulator
+    processArgs accumulator ("--hour" : hourStr : rest) = processArgs (accumulator { cliHourOverride = readMaybe hourStr }) rest
+    processArgs accumulator ("--task" : taskStr : rest) = processArgs (accumulator { cliTaskOverride = Just (T.pack taskStr) }) rest
+    processArgs accumulator (_ : rest) = processArgs accumulator rest

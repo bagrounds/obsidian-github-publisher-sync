@@ -116,9 +116,9 @@ stripCodeFences txt =
   in fromMaybe noStart' (T.stripSuffix "```" noStart' >>= Just . T.strip)
 
 findLastIndex :: (Char -> Bool) -> Text -> Maybe Int
-findLastIndex predicate txt = go Nothing 0 (T.unpack txt)
+findLastIndex predicate txt = searchForward Nothing 0 (T.unpack txt)
   where
-    go acc _ [] = acc
-    go acc i (c : cs)
-      | predicate c = go (Just i) (i + 1) cs
-      | otherwise   = go acc (i + 1) cs
+    searchForward acc _ [] = acc
+    searchForward acc i (c : cs)
+      | predicate c = searchForward (Just i) (i + 1) cs
+      | otherwise   = searchForward acc (i + 1) cs

@@ -35,16 +35,16 @@ collectLink (seen, acc) rel
   | otherwise             = (Set.insert rel seen, acc <> [rel])
 
 markdownLinks :: Text -> FilePath -> FilePath -> [Text]
-markdownLinks body noteDir contentDir = go (T.unpack body)
+markdownLinks body noteDir contentDir = parseLinks (T.unpack body)
   where
-    go :: String -> [Text]
-    go s = case (s =~ ("\\]\\(([^)]+\\.md)\\)" :: String) :: (String, String, String, [String])) of
+    parseLinks :: String -> [Text]
+    parseLinks s = case (s =~ ("\\]\\(([^)]+\\.md)\\)" :: String) :: (String, String, String, [String])) of
       (_, _, after, [target])
         | not ("http://" `isPrefixOfS` target) && not ("https://" `isPrefixOfS` target) ->
             let absTarget  = normalizeFilePath (noteDir </> target)
                 relPath    = makeRelativeTo contentDir absTarget
-            in T.pack relPath : go after
-        | otherwise -> go after
+            in T.pack relPath : parseLinks after
+        | otherwise -> parseLinks after
       _ -> []
 
 wikiLinks :: Text -> FilePath -> FilePath -> [Text]

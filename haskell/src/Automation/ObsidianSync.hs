@@ -121,9 +121,9 @@ ensureSyncClean vaultDir = do
     removeDirectoryRecursive lockPath
 
 runObSyncWithRetry :: [String] -> [(String, String)] -> FilePath -> Int -> IO ()
-runObSyncWithRetry args env vaultDir maxRetries = go 0
+runObSyncWithRetry args env vaultDir maxRetries = runAttempt 0
   where
-    go attempt = do
+    runAttempt attempt = do
       result <- try $ runObCommand args Nothing env :: IO (Either SomeException (String, String))
       case result of
         Right _ -> pure ()
@@ -138,7 +138,7 @@ runObSyncWithRetry args env vaultDir maxRetries = go 0
                 <> "), retrying in " <> show (delayMs `div` 1000) <> "s..."
               ensureSyncClean vaultDir
               threadDelay (delayMs * 1000)
-              go (attempt + 1)
+              runAttempt (attempt + 1)
             _ -> throwIO err
 
 syncObsidianVault :: ObsidianCredentials -> IO FilePath

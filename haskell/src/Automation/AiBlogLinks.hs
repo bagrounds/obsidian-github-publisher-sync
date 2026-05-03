@@ -67,10 +67,10 @@ updateNavLinks content prevFilename nextFilename =
          else T.unlines (take index contentLines <> [navLine] <> drop (index + 1) contentLines)
 
 findIndex :: (a -> Bool) -> [a] -> Maybe Int
-findIndex predicate = go 0
+findIndex predicate = findAt 0
   where
-    go _ []     = Nothing
-    go i (y:ys) = if predicate y then Just i else go (i + 1) ys
+    findAt _ []     = Nothing
+    findAt i (y:ys) = if predicate y then Just i else findAt (i + 1) ys
 
 navLinksMatch :: Text -> Maybe Text -> Maybe Text -> Bool
 navLinksMatch content prevFilename nextFilename =

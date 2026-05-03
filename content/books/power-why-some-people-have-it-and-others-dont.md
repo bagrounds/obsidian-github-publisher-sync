@@ -9,9 +9,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-15T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-05-03T10:27:47Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: "A minimalist, high-contrast illustration featuring a single, ornate chess king standing firmly at the center of a glass boardroom table. The surrounding chairs are empty, but their shadows on the floor are elongated and distorted into shapes resembling people reaching upward. The color palette is strictly professional: deep charcoal, slate grey, and sharp metallic gold accents. The lighting is dramatic, casting a spotlight directly onto the king piece, emphasizing its stature against the cool, sterile environment of the office. The composition conveys a sense of calculated strategy, solitude, and the inherent hierarchy of organizational power."
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 👑💪🏽⁉️ Power: Why Some People Have It - and Others Don't  
+![books-power-why-some-people-have-it-and-others-dont](../books-power-why-some-people-have-it-and-others-dont.jpg)  
 [🛒 Power: Why Some People Have It - and Others Don't. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3Fud3aT)  
   
 ## 📚 Book Report: 👑 Power: ❓ Why Some People Have It - and Others Don't by Jeffrey Pfeffer  

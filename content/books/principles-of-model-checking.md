@@ -11,9 +11,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-20T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-05-03T12:24:14Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A high-contrast, isometric illustration featuring a complex network of interconnected nodes and glowing pathways. A central, translucent geometric cube represents a finite-state system, with smaller, branching lines emanating from it to visualize state-space exploration. The background is a deep, technical navy blue, accented by vibrant cyan and magenta light trails that symbolize logic flows and temporal paths. In the foreground, a stylized, glowing magnifying glass hovers over a section of the network, highlighting a singular, perfectly verified path. The aesthetic is clean, mathematical, and futuristic, emphasizing precision, formal verification, and the structural beauty of algorithmic complexity.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🤖✅ Principles of Model Checking  
+![books-principles-of-model-checking](../books-principles-of-model-checking.jpg)  
 [🛒 Principles of Model Checking. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4jE9QmR)  
   
 ## 🤖 AI Summary  

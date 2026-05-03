@@ -9,6 +9,10 @@ Platform:
 Channel: Dr. Matt Jones
 tags:
 youtube: https://youtu.be/negnKVYXloc
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_version: "2"
+link_analysis_time: 2026-05-02T00:00:00Z
+force_analyze_links: false
 ---
 [Home](../index.md) > [Videos](./index.md)  
 # 🧠📉⚠️ Neuroscience Confirms: This One Behavior Quietly Weakens Your Brain  
@@ -47,11 +51,11 @@ youtube: https://youtu.be/negnKVYXloc
 ## 📚 Book Recommendations  
   
 ### ↔️ Similar  
-* 💻 Deep Work by Cal Newport describes how cultivating intense focus leads to professional excellence in a distracted world.  
+* 💻 [🤿💼 Deep Work: Rules for Focused Success in a Distracted World](../books/deep-work.md) by Cal Newport describes how cultivating intense focus leads to professional excellence in a distracted world.  
 * 📢 Stolen Focus by Johann Hari investigates the systemic forces that have depleted the collective human attention span.  
   
 ### 🆚 Contrasting  
-* 🛠️ The Shallows by Nicholas Carr argues that the internet is fundamentally re-wiring our brains for superficiality rather than just providing a habit to be managed.  
+* 🛠️ [📱🧠 The Shallows: What the Internet Is Doing to Our Brains](../books/the-shallows-what-the-internet-is-doing-to-our-brains.md) by Nicholas Carr argues that the internet is fundamentally re-wiring our brains for superficiality rather than just providing a habit to be managed.  
 * 📜 Digital Minimalism by Cal Newport advocates for a total philosophy of technology use rather than specific cognitive drills.  
   
 ### 🎨 Creatively Related  

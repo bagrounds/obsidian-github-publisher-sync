@@ -1,9 +1,5 @@
 module Automation.StaticGiscus
   ( StaticComment (..)
-  , GqlDiscussion (..)
-  , GqlComment (..)
-  , GqlAuthor (..)
-  , GqlCommentsNode (..)
   , CommentsMap
   , normalizePathname
   , slugToPathname
@@ -20,14 +16,10 @@ module Automation.StaticGiscus
   ) where
 
 import Automation.Json
-  ( FromValue (..)
-  , (.=)
-  , (.:)
-  , (.:?)
+  ( (.=)
   , encode
   , eitherDecode
   , object
-  , withObject
   )
 import Control.Monad (filterM)
 import Data.Map.Strict (Map)
@@ -51,104 +43,16 @@ import System.Directory (doesDirectoryExist, doesFileExist, listDirectory)
 import System.FilePath ((</>), takeExtension)
 
 import Automation.Html (escapeHtml, formatDisplayDate)
-
-data GqlAuthor = GqlAuthor
-  { login :: Text
-  , url   :: Text
-  } deriving (Show, Eq)
-
-instance FromValue GqlAuthor where
-  fromValue = withObject "GqlAuthor" $ \v ->
-    GqlAuthor <$> v .: "login" <*> v .: "url"
-
-data GqlComment = GqlComment
-  { bodyHtml  :: Text
-  , author    :: Maybe GqlAuthor
-  , createdAt :: Text
-  } deriving (Show, Eq)
-
-instance FromValue GqlComment where
-  fromValue = withObject "GqlComment" $ \v ->
-    GqlComment
-      <$> v .: "bodyHTML"
-      <*> v .:? "author"
-      <*> v .: "createdAt"
-
-newtype GqlCommentsNode = GqlCommentsNode
-  { nodes :: [GqlComment]
-  } deriving (Show, Eq)
-
-instance FromValue GqlCommentsNode where
-  fromValue = withObject "GqlCommentsNode" $ \v ->
-    GqlCommentsNode <$> v .: "nodes"
-
-data GqlDiscussion = GqlDiscussion
-  { title    :: Text
-  , comments :: GqlCommentsNode
-  } deriving (Show, Eq)
-
-instance FromValue GqlDiscussion where
-  fromValue = withObject "GqlDiscussion" $ \v ->
-    GqlDiscussion
-      <$> v .: "title"
-      <*> v .: "comments"
-
-data GqlPageInfo = GqlPageInfo
-  { hasNextPage :: Bool
-  , sgpEndCursor :: Maybe Text
-  } deriving (Show, Eq)
-
-instance FromValue GqlPageInfo where
-  fromValue = withObject "GqlPageInfo" $ \v ->
-    GqlPageInfo <$> v .: "hasNextPage" <*> v .:? "endCursor"
-
-data GqlDiscussionsPage = GqlDiscussionsPage
-  { sgdpNodes    :: [GqlDiscussion]
-  , sgdpPageInfo :: GqlPageInfo
-  } deriving (Show, Eq)
-
-instance FromValue GqlDiscussionsPage where
-  fromValue = withObject "GqlDiscussionsPage" $ \v ->
-    GqlDiscussionsPage <$> v .: "nodes" <*> v .: "pageInfo"
-
-newtype GqlRepository = GqlRepository
-  { sgrDiscussions :: Maybe GqlDiscussionsPage
-  } deriving (Show, Eq)
-
-instance FromValue GqlRepository where
-  fromValue = withObject "GqlRepository" $ \v ->
-    GqlRepository <$> v .:? "discussions"
-
-newtype GqlData = GqlData
-  { sgdRepository :: Maybe GqlRepository
-  } deriving (Show, Eq)
-
-instance FromValue GqlData where
-  fromValue = withObject "GqlData" $ \v ->
-    GqlData <$> v .:? "repository"
-
-newtype GqlError = GqlError
-  { sgeMessage :: Text
-  } deriving (Show, Eq)
-
-instance FromValue GqlError where
-  fromValue = withObject "GqlError" $ \v ->
-    GqlError <$> v .: "message"
-
-data GqlResponse = GqlResponse
-  { sgrData   :: Maybe GqlData
-  , sgrErrors :: Maybe [GqlError]
-  } deriving (Show, Eq)
-
-instance FromValue GqlResponse where
-  fromValue = withObject "GqlResponse" $ \v ->
-    GqlResponse
-      <$> v .:? "data"
-      <*> v .:? "errors"
+import Automation.StaticGiscus.GraphQL
+  ( GqlComment
+  , GqlDiscussion
+  , GqlDiscussionsPage
+  )
+import qualified Automation.StaticGiscus.GraphQL as Gql
 
 data StaticComment = StaticComment
-  { scAuthor    :: Text
-  , scAuthorUrl :: Text
+  { author      :: Text
+  , authorUrl   :: Text
   , scBodyHtml  :: Text
   , scCreatedAt :: Text
   } deriving (Show, Eq)
@@ -172,10 +76,10 @@ titleToPathname title
 
 toStaticComment :: GqlComment -> StaticComment
 toStaticComment c = StaticComment
-  { scAuthor = maybe "unknown" login (author c)
-  , scAuthorUrl = maybe "https://github.com" url (author c)
-  , scBodyHtml = bodyHtml c
-  , scCreatedAt = createdAt c
+  { author    = maybe "unknown" Gql.login (Gql.author c)
+  , authorUrl = maybe "https://github.com" Gql.url (Gql.author c)
+  , scBodyHtml = Gql.bodyHtml c
+  , scCreatedAt = Gql.createdAt c
   }
 
 buildCommentsMap :: [GqlDiscussion] -> CommentsMap
@@ -183,8 +87,8 @@ buildCommentsMap discussions =
   Map.fromList $ mapMaybe toEntry discussions
   where
     toEntry d =
-      let pathname = normalizePathname (titleToPathname (title d))
-          staticComments = fmap toStaticComment (nodes (comments d))
+      let pathname = normalizePathname (titleToPathname (Gql.title d))
+          staticComments = fmap toStaticComment (Gql.nodes (Gql.comments d))
       in if null staticComments then Nothing else Just (pathname, staticComments)
 
 staticGiscusCss :: Text
@@ -220,8 +124,8 @@ renderStaticComment :: StaticComment -> Text
 renderStaticComment c =
   "<article class=\"static-giscus-comment\">\n\
   \<header class=\"static-giscus-comment-header\">\n\
-  \<a href=\"" <> escapeHtml (scAuthorUrl c) <> "\" rel=\"nofollow\" class=\"static-giscus-author\">"
-  <> escapeHtml (scAuthor c) <> "</a>\n\
+  \<a href=\"" <> escapeHtml (authorUrl c) <> "\" rel=\"nofollow\" class=\"static-giscus-author\">"
+  <> escapeHtml (author c) <> "</a>\n\
   \<time datetime=\"" <> scCreatedAt c <> "\" class=\"static-giscus-time\">"
   <> formatDisplayDate (T.take 10 (scCreatedAt c)) <> "</time>\n\
   \</header>\n\
@@ -322,12 +226,12 @@ fetchDiscussionPage manager token owner repo categoryId mAfter = do
           putStrLn $ "GraphQL parse error: " <> err
           pure Nothing
         Right gqlResp ->
-          case sgrErrors gqlResp of
+          case Gql.errors gqlResp of
             Just errs -> do
-              putStrLn $ "GraphQL errors: " <> show (fmap sgeMessage errs)
+              putStrLn $ "GraphQL errors: " <> show (fmap Gql.message errs)
               pure Nothing
             Nothing ->
-              pure $ sgrData gqlResp >>= sgdRepository >>= sgrDiscussions >>= Just
+              pure $ Gql.responseData gqlResp >>= Gql.repository >>= Gql.discussions >>= Just
     _ -> do
       putStrLn $ "GraphQL HTTP error: " <> show status
       pure Nothing
@@ -341,9 +245,9 @@ fetchAllDiscussions manager token owner repo categoryId =
       case mPage of
         Nothing -> pure acc
         Just page ->
-          let newAcc = acc <> sgdpNodes page
-          in if hasNextPage (sgdpPageInfo page)
-             then go (sgpEndCursor (sgdpPageInfo page)) newAcc
+          let newAcc = acc <> Gql.discussionNodes page
+          in if Gql.hasNextPage (Gql.pageInfo page)
+             then go (Gql.endCursor (Gql.pageInfo page)) newAcc
              else pure newAcc
 
 walkHtmlFiles :: FilePath -> IO [FilePath]

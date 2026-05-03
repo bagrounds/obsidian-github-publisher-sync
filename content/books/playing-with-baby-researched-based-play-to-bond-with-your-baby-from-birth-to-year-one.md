@@ -10,9 +10,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-28T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-05-03T07:43:13Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A warm, sunlit close-up shot of a parent and a baby engaged in face-to-face play on a soft, neutral-colored rug. The parent is smiling gently, leaning in close to the baby, who is looking back with wide, curious eyes and a joyful expression. The background is softly blurred, showing a few simple, wooden developmental toys scattered nearby. The overall aesthetic is clean, minimalist, and serene, emphasizing the emotional connection and intimacy of the moment. The lighting is soft and natural, casting a glow that highlights the bond between the two figures.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 👶🧸 Playing with Baby: Researched-Based Play to Bond with Your Baby from Birth to Year One  
+![books-playing-with-baby-researched-based-play-to-bond-with-your-baby-from-birth-to-year-one](../books-playing-with-baby-researched-based-play-to-bond-with-your-baby-from-birth-to-year-one.jpg)  
 [🛒 Playing with Baby: Researched-Based Play to Bond with Your Baby from Birth to Year One. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/47x0jLP)  
   
 👶 A month-by-month, research-backed guide to optimizing infant play for secure attachment and holistic development, making bonding enjoyable and deeply impactful.  

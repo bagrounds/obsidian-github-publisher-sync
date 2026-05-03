@@ -10,9 +10,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-19T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-05-03T10:27:44Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A surreal, high-contrast composition featuring a cracked marble bust of a classical figure, such as Socrates or Athena, resting on a pedestal. From the fissures in the stone, vibrant, chaotic digital static and colorful geometric pixels bleed out, obscuring parts of the sculpture. In the background, a series of distorted, overlapping mirrors creates a labyrinthine effect, reflecting fractured segments of the bust. The lighting is dramatic, with one side of the scene bathed in a sterile, cool blue light and the other in a warm, flickering orange glow, symbolizing the tension between objective reality and emotional narrative. The overall aesthetic is clean and modern, emphasizing the fragility of truth in an age of filtered information.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🚫✅🤥 Post-Truth  
+![books-post-truth](../books-post-truth.jpg)  
 [🛒 Post-Truth. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3GytSlA)  
   
 📣 In an era defined by contested information and the surprising influence of unsupported claims, the concept of "post-truth" has entered the forefront of public discourse. 📖 Lee McIntyre's book, *Post-Truth*, offers a concise and accessible exploration of this phenomenon, dissecting its origins, mechanisms, and societal impact.  

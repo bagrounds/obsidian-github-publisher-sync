@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-05-03T06:10:06-07:00
+updated: 2026-05-03T08:55:47-07:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -28,18 +28,18 @@ updated: 2026-05-03T06:10:06-07:00
 - [2026-05-02 | 🔤 Expand Abbreviations: TokenResponse and ServiceAccountKey Fields 🧹](./ai-blog/2026-05-02-5-expand-abbreviations-token-response-and-service-account-key.md)  
   
   
-## [🤖 Auto Blog Zero](./auto-blog-zero/index.md) (53)  
+## [🤖 Auto Blog Zero](./auto-blog-zero/index.md) (54)  
+- [2026-05-03 | 🤖 📆 Weekly Recap: The Architecture of Intent 🤖](./auto-blog-zero/2026-05-03-weekly-recap-the-architecture-of-intent.md)  
 - [2026-05-02 | 🤖 🧩 The Agency Mesh: Orchestrating the Swarm 🤖](./auto-blog-zero/2026-05-02-the-agency-mesh-orchestrating-the-swarm.md)  
 - [2026-05-01 | 🤖 The Digital Agora: Negotiating Reality in Multi-Agent Swarms 🤖](./auto-blog-zero/2026-05-01-the-digital-agora-negotiating-reality-in-multi-agent-swarms.md)  
 - [2026-04-30 | 🤖 🧩 The Kinetic Persistence of Purpose 🤖](./auto-blog-zero/2026-04-30-the-kinetic-persistence-of-purpose.md)  
-- [2026-04-29 | 🤖 🏗️ The Grammar of Intent 🤖](./auto-blog-zero/2026-04-29-the-grammar-of-intent.md)  
   
   
-## [🐔 Chickie Loo](./chickie-loo/index.md) (53)  
+## [🐔 Chickie Loo](./chickie-loo/index.md) (54)  
+- [2026-05-03 | 🐔 🌻 A Sunday of Reflection and Roots 🐔](./chickie-loo/2026-05-03-a-sunday-of-reflection-and-roots.md)  
 - [2026-05-02 | 🐔 🌦️ A Saturday of Quiet Rain and Open Doors 🐔](./chickie-loo/2026-05-02-a-saturday-of-quiet-rain-and-open-doors.md)  
 - [2026-05-01 | 🐔 A May Morning of New Beginnings 🐔](./chickie-loo/2026-05-01-a-may-morning-of-new-beginnings.md)  
 - [2026-04-30 | 🐔 🌿 The Gentle Lessons of April 🐔](./chickie-loo/2026-04-30-the-gentle-lessons-of-april.md)  
-- [2026-04-29 | 🐔 🐄 A Week of Milestones and Quiet Anticipation 🐔](./chickie-loo/2026-04-29-a-week-of-milestones-and-quiet-anticipation.md)  
   
   
 ## [🏛️ Systems for Public Good](./systems-for-public-good/index.md) (42)  
@@ -49,18 +49,18 @@ updated: 2026-05-03T06:10:06-07:00
 - [2026-04-29 | 🏛️ 📡 The Public's Airwaves: Cultivating an Informed Society 🏛️](./systems-for-public-good/2026-04-29-the-public-s-airwaves-cultivating-an-informed-society.md)  
   
   
-## [📰 The Noise](./the-noise/index.md) (23)  
+## [📰 The Noise](./the-noise/index.md) (24)  
+- [2026-05-03 | 📰 🌐 Shifting Balances and Rapid Strides 📰](./the-noise/2026-05-03-shifting-balances-and-rapid-strides.md)  
 - [2026-05-02 | 📰 ⚖️ The Shifting Sands of Peace and Innovation's March 📰](./the-noise/2026-05-02-the-shifting-sands-of-peace-and-innovation-s-march.md)  
 - [2026-05-01 | 📰 ⏳ Crossroads of Enduring Crises and Breakthrough Innovation 📰](./the-noise/2026-05-01-crossroads-of-enduring-crises-and-breakthrough-innovation.md)  
 - [2026-04-30 | 📰 Month's End Reckoning: Conflict's Echo, Progress's Pulse 📰](./the-noise/2026-04-30-month-s-end-reckoning-conflict-s-echo-progress-s-pulse.md)  
-- [2026-04-29 | 📰 Shifting Sands, Enduring Currents 📰](./the-noise/2026-04-29-shifting-sands-enduring-currents.md)  
   
   
-## [🌟 Positivity Bias](./positivity-bias/index.md) (22)  
+## [🌟 Positivity Bias](./positivity-bias/index.md) (23)  
+- [2026-05-03 | 🌟 Echoes of Progress and Shared Endeavors 🌟](./positivity-bias/2026-05-03-echoes-of-progress-and-shared-endeavors.md)  
 - [2026-05-02 | 🌟 🔬 Scientific & Health Horizons Expanding 🌟](./positivity-bias/2026-05-02-scientific-health-horizons-expanding.md)  
 - [2026-05-01 | 🌟 🚀 Seeds of Progress: Breakthroughs and Uniting Forces 🌟](./positivity-bias/2026-05-01-seeds-of-progress-breakthroughs-and-uniting-forces.md)  
 - [2026-04-30 | 🌟 Monthly Recap: April 2026 - A Foundation for Flourishing 🌟](./positivity-bias/2026-04-30-monthly-recap-april-2026---a-foundation-for-flourishing.md)  
-- [2026-04-29 | 🌟 Hope Blooms: Breakthroughs, Green Shoots, and Global Handshakes 🌟](./positivity-bias/2026-04-29-hope-blooms-breakthroughs-green-shoots-and-global-handshakes.md)  
   
   
 ## [🔀 Convergence](./convergence/index.md) (19)  
@@ -71,10 +71,10 @@ updated: 2026-05-03T06:10:06-07:00
   
   
 ## [📚 Books](./books/index.md) (961)  
-- [🤖✅ Principles of Model Checking](./books/principles-of-model-checking.md)  
-- [🧑‍🏫📉🎤🧘 Presentation Zen: Simple Ideas on Presentation Design and Delivery](./books/presentation-zen.md)  
-- [🌱🔢✨ Precursor Math Concepts: The Wonder of Mathematical Worlds With Infants and Toddlers](./books/precursor-math-concepts-the-wonder-of-mathematical-worlds-with-infants-and-toddlers.md)  
-- [🧘🏼‍♀️👩🏼‍🏫 Practicing Mindfulness: An Introduction to Meditation](./books/practicing-mindfulness-an-introduction-to-meditation.md)  
+- [📢 Propaganda](./books/propaganda.md)  
+- [⌨️🤖 Prompt Engineering for LLMs: The Art and Science of Building Large Language Model-Based Applications](./books/prompt-engineering-for-llms-the-art-and-science-of-building-large-language-model-based-applications.md)  
+- [📈📉 Progress and Poverty](./books/progress-and-poverty.md)  
+- [🎲🧮 Probability Theory: The Logic of Science](./books/probability-theory.md)  
   
   
 ## [📺 Videos](./videos/index.md) (815)  

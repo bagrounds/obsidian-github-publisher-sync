@@ -125,10 +125,10 @@ Record field abbreviation prefixes must be removed. When two records in the same
 
 - [x] `ls` → `contentLines` (local variable in `extractBody` and `updateFrontmatterFields`, parameter in `upsertField`)
 - [x] `pos` → `position` (local variable in `applyReplacements`)
-- [ ] `len` → `matchLength` (local variable in `applyReplacements`)
-- [ ] `wl` → `wikilink` (local variable in `applyReplacements`)
-- [ ] `val` → `yamlValue` (parameter in `upsertField`)
-- [ ] `acc` → `currentText` (accumulator parameter in `applyOne`)
+- [x] `len` → `matchLength` (local variable in `applyReplacements`)
+- [x] `wl` → `wikilink` (local variable in `applyReplacements`)
+- [x] `val` → `yamlValue` (parameter in `upsertField`)
+- [x] `acc` → `currentText` (accumulator parameter in `applyOne`)
 - [ ] `mFileResult` → `maybeFileResult` (local binding in `go`)
 - [ ] `infRef` → `inferenceCountRef` (IORef parameter in `processFiles`/`go`)
 - [ ] `resRef` → `resultsRef` (IORef parameter in `processFiles`/`go`)
@@ -155,6 +155,7 @@ Record field abbreviation prefixes must be removed. When two records in the same
 - [ ] `val` → `titleValue` (local variable in `titleMatchesDate`)
 - [ ] `tl` → `titleLine` (parameter in `titleMatchesDate`)
 - [ ] `acc` → `found` (accumulator in `findTitleLine`)
+- [ ] `idx` → `index` (local variable in `stripInlinePreamble`)
 
 #### SocialPosting.hs
 
@@ -162,8 +163,23 @@ Record field abbreviation prefixes must be removed. When two records in the same
 
 #### AiBlogLinks.hs
 
-- [ ] `ls` → `contentLines` (local variable)
-- [ ] `idx` → `index` (local variable in `updateNavigation` and `processFile`)
+- [ ] `ls` → `contentLines` (local variable in `updateNavLinks`)
+- [ ] `idx` → `index` (local variable in `updateNavLinks` and `processFile`)
+- [ ] `p` → `predicate` (parameter in local `findIndex`)
+- [ ] `nlrFilename` → `filename` (NavLinkResult record field)
+- [ ] `nlrModified` → `modified` (NavLinkResult record field)
+
+#### BlogSeriesConfig.hs
+
+- [ ] `bscId` → `identifier` (BlogSeriesConfig record field — `id` shadows Prelude)
+- [ ] `bscName` → `name` (BlogSeriesConfig record field)
+- [ ] `bscIcon` → `icon` (BlogSeriesConfig record field)
+- [ ] `bscAuthor` → `author` (BlogSeriesConfig record field)
+- [ ] `bscBaseUrl` → `baseUrl` (BlogSeriesConfig record field)
+- [ ] `bscPriorityUser` → `priorityUser` (BlogSeriesConfig record field)
+- [ ] `bscNavLink` → `navLink` (BlogSeriesConfig record field)
+- [ ] `bscScheduleTime` → `scheduleTime` (BlogSeriesConfig record field)
+- [ ] `bscContextQueries` → `contextQueries` (BlogSeriesConfig record field)
 
 #### Frontmatter.hs
 
@@ -171,9 +187,12 @@ Record field abbreviation prefixes must be removed. When two records in the same
 
 #### Text.hs
 
-- [ ] `xs` → `elements` (parameter in `findLastIndex`, `removeAt`)
+- [ ] `xs` → `elements` (parameter in `findLastIndex`, `removeAt`, and lambda in `strategy4`)
 - [ ] `len` → `postLength` (local variable in `validatePostLength`)
 - [ ] `p` → `predicate` (parameter in `findLastIndex`)
+- [ ] `lns` → `contentLines` (local variable in `fitPostToLimit` and `fitWithStrategies`)
+- [ ] `urlIdx` → `urlIndex` (local variable in `fitWithStrategies`)
+- [ ] `ci` → `colonIndex` (pattern variable in `strategy3`)
 
 ## Ordering Notes
 

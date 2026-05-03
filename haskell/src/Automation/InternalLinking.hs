@@ -104,13 +104,13 @@ applyReplacements content candidates validations =
   in foldl' applyOne content (fmap fst sorted)
   where
     applyOne :: Text -> CD.LinkCandidate -> Text
-    applyOne acc candidate =
-      let position = CD.position candidate
-          len      = T.length (CD.matchedText candidate)
-          before   = T.take position acc
-          after    = T.drop (position + len) acc
-          wl       = CD.formatContentEntryWikilink (CD.entry candidate)
-      in before <> wl <> after
+    applyOne currentText candidate =
+      let position    = CD.position candidate
+          matchLength = T.length (CD.matchedText candidate)
+          before      = T.take position currentText
+          after       = T.drop (position + matchLength) currentText
+          wikilink    = CD.formatContentEntryWikilink (CD.entry candidate)
+      in before <> wikilink <> after
 
 
 updateFrontmatterFields :: FilePath -> [(Text, YamlValue)] -> IO ()
@@ -133,8 +133,8 @@ updateFrontmatterFields filePath fields = do
         TIO.writeFile filePath ("---\n" <> entries <> "\n---\n" <> raw)
 
 upsertField :: [Text] -> (Text, YamlValue) -> [Text]
-upsertField contentLines (key, val) =
-  let newLine    = key <> ": " <> renderYamlValue val
+upsertField contentLines (key, yamlValue) =
+  let newLine    = key <> ": " <> renderYamlValue yamlValue
       pat        = T.pack (T.unpack key <> ":")
       didReplace = any (matchesKey pat) contentLines
       replaced   = replaceWithContinuation pat newLine contentLines

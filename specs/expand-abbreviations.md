@@ -213,7 +213,7 @@ Record field abbreviation prefixes must be removed. When two records in the same
 #### InternalLinking/Masking.hs
 
 - [x] `fm` → `frontmatter` (local binding for frontmatter text in `maskProtectedRegions`)
-- [ ] `fmBlock` → `frontmatterBlock` (local binding for the masked frontmatter block in `maskFrontmatter`)
+- [x] `fmBlock` → `frontmatterBlock` (local binding for the masked frontmatter block in `maskFrontmatter`)
 
 #### InternalLinking/CandidateDiscovery.hs
 
@@ -237,15 +237,15 @@ Record field abbreviation prefixes must be removed. When two records in the same
 
 #### StaticGiscus.hs
 
-- [ ] `sgaLogin` → `login` (GqlAuthor record field — `sga` prefix)
-- [ ] `sgaUrl` → `url` (GqlAuthor record field — `sga` prefix)
-- [ ] `sgcBodyHtml` → `bodyHtml` (GqlComment record field — `sgc` prefix)
-- [ ] `sgcAuthor` → `author` (GqlComment record field — `sgc` prefix)
-- [ ] `sgcCreatedAt` → `createdAt` (GqlComment record field — `sgc` prefix)
-- [ ] `sgcnNodes` → `nodes` (GqlCommentsNode record field — `sgcn` prefix)
-- [ ] `sgdTitle` → `title` (GqlDiscussion record field — `sgd` prefix)
-- [ ] `sgdComments` → `comments` (GqlDiscussion record field — `sgd` prefix)
-- [ ] `sgpHasNextPage` → `hasNextPage` (GqlPageInfo record field — `sgp` prefix)
+- [x] `sgaLogin` → `login` (GqlAuthor record field — `sga` prefix)
+- [x] `sgaUrl` → `url` (GqlAuthor record field — `sga` prefix)
+- [x] `sgcBodyHtml` → `bodyHtml` (GqlComment record field — `sgc` prefix)
+- [x] `sgcAuthor` → `author` (GqlComment record field — `sgc` prefix)
+- [x] `sgcCreatedAt` → `createdAt` (GqlComment record field — `sgc` prefix)
+- [x] `sgcnNodes` → `nodes` (GqlCommentsNode record field — `sgcn` prefix)
+- [x] `sgdTitle` → `title` (GqlDiscussion record field — `sgd` prefix)
+- [x] `sgdComments` → `comments` (GqlDiscussion record field — `sgd` prefix)
+- [x] `sgpHasNextPage` → `hasNextPage` (GqlPageInfo record field — `sgp` prefix)
 - [ ] `sgpEndCursor` → `endCursor` (GqlPageInfo record field — `sgp` prefix)
 - [ ] `sgdpNodes` → `nodes` (GqlDiscussionsPage record field — `sgdp` prefix)
 - [ ] `sgdpPageInfo` → `pageInfo` (GqlDiscussionsPage record field — `sgdp` prefix)
@@ -258,6 +258,14 @@ Record field abbreviation prefixes must be removed. When two records in the same
 - [ ] `scAuthorUrl` → `authorUrl` (StaticComment record field — `sc` prefix)
 - [ ] `scBodyHtml` → `bodyHtml` (StaticComment record field — `sc` prefix)
 - [ ] `scCreatedAt` → `createdAt` (StaticComment record field — `sc` prefix)
+
+#### StaticGiscus.hs (local variables)
+
+- [ ] `idx` → `insertionPoint` (local binding for `findGiscusDiv` result in `injectStaticComments`)
+- [ ] `mAfter` → `maybeAfterCursor` (parameter in `fetchAllDiscussions` inner helper)
+- [ ] `mPage` → `maybePage` (local binding for `fetchDiscussionPage` result in `fetchAllDiscussions`)
+- [ ] `acc` → `accumulatedDiscussions` (accumulator parameter in `fetchAllDiscussions` inner helper)
+- [ ] `newAcc` → `updatedDiscussions` (local binding for updated accumulator in `fetchAllDiscussions`)
 
 #### BlogPosts.hs
 

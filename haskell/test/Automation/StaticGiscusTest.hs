@@ -206,16 +206,16 @@ sampleHtml :: Text
 sampleHtml = "<html><body data-slug=\"reflections/2026-03-28\"><article>Content</article><div class=\"giscus\" data-repo=\"test\"></div></body></html>"
 
 mkGqlComment :: Text -> Text -> GqlComment
-mkGqlComment login body = GqlComment
-  { sgcBodyHtml = "<p>" <> body <> "</p>"
-  , sgcAuthor = Just (GqlAuthor login ("https://github.com/" <> login))
-  , sgcCreatedAt = "2026-01-15T10:00:00Z"
+mkGqlComment username body = GqlComment
+  { bodyHtml = "<p>" <> body <> "</p>"
+  , author = Just (GqlAuthor username ("https://github.com/" <> username))
+  , createdAt = "2026-01-15T10:00:00Z"
   }
 
 mkDiscussion :: Text -> [GqlComment] -> GqlDiscussion
-mkDiscussion title comments = GqlDiscussion
-  { sgdTitle = title
-  , sgdComments = GqlCommentsNode comments
+mkDiscussion discussionTitle discussionComments = GqlDiscussion
+  { title = discussionTitle
+  , comments = GqlCommentsNode discussionComments
   }
 
 mkStaticComment :: Text -> Text -> StaticComment

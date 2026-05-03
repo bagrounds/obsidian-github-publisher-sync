@@ -53,8 +53,8 @@ import System.FilePath ((</>), takeExtension)
 import Automation.Html (escapeHtml, formatDisplayDate)
 
 data GqlAuthor = GqlAuthor
-  { sgaLogin :: Text
-  , sgaUrl   :: Text
+  { login :: Text
+  , url   :: Text
   } deriving (Show, Eq)
 
 instance FromValue GqlAuthor where
@@ -62,9 +62,9 @@ instance FromValue GqlAuthor where
     GqlAuthor <$> v .: "login" <*> v .: "url"
 
 data GqlComment = GqlComment
-  { sgcBodyHtml  :: Text
-  , sgcAuthor    :: Maybe GqlAuthor
-  , sgcCreatedAt :: Text
+  { bodyHtml  :: Text
+  , author    :: Maybe GqlAuthor
+  , createdAt :: Text
   } deriving (Show, Eq)
 
 instance FromValue GqlComment where
@@ -75,7 +75,7 @@ instance FromValue GqlComment where
       <*> v .: "createdAt"
 
 newtype GqlCommentsNode = GqlCommentsNode
-  { sgcnNodes :: [GqlComment]
+  { nodes :: [GqlComment]
   } deriving (Show, Eq)
 
 instance FromValue GqlCommentsNode where
@@ -83,8 +83,8 @@ instance FromValue GqlCommentsNode where
     GqlCommentsNode <$> v .: "nodes"
 
 data GqlDiscussion = GqlDiscussion
-  { sgdTitle    :: Text
-  , sgdComments :: GqlCommentsNode
+  { title    :: Text
+  , comments :: GqlCommentsNode
   } deriving (Show, Eq)
 
 instance FromValue GqlDiscussion where
@@ -94,8 +94,8 @@ instance FromValue GqlDiscussion where
       <*> v .: "comments"
 
 data GqlPageInfo = GqlPageInfo
-  { sgpHasNextPage :: Bool
-  , sgpEndCursor   :: Maybe Text
+  { hasNextPage :: Bool
+  , sgpEndCursor :: Maybe Text
   } deriving (Show, Eq)
 
 instance FromValue GqlPageInfo where
@@ -172,10 +172,10 @@ titleToPathname title
 
 toStaticComment :: GqlComment -> StaticComment
 toStaticComment c = StaticComment
-  { scAuthor = maybe "unknown" sgaLogin (sgcAuthor c)
-  , scAuthorUrl = maybe "https://github.com" sgaUrl (sgcAuthor c)
-  , scBodyHtml = sgcBodyHtml c
-  , scCreatedAt = sgcCreatedAt c
+  { scAuthor = maybe "unknown" login (author c)
+  , scAuthorUrl = maybe "https://github.com" url (author c)
+  , scBodyHtml = bodyHtml c
+  , scCreatedAt = createdAt c
   }
 
 buildCommentsMap :: [GqlDiscussion] -> CommentsMap
@@ -183,9 +183,9 @@ buildCommentsMap discussions =
   Map.fromList $ mapMaybe toEntry discussions
   where
     toEntry d =
-      let pathname = normalizePathname (titleToPathname (sgdTitle d))
-          comments = fmap toStaticComment (sgcnNodes (sgdComments d))
-      in if null comments then Nothing else Just (pathname, comments)
+      let pathname = normalizePathname (titleToPathname (title d))
+          staticComments = fmap toStaticComment (nodes (comments d))
+      in if null staticComments then Nothing else Just (pathname, staticComments)
 
 staticGiscusCss :: Text
 staticGiscusCss = "<style>\n\
@@ -342,7 +342,7 @@ fetchAllDiscussions manager token owner repo categoryId =
         Nothing -> pure acc
         Just page ->
           let newAcc = acc <> sgdpNodes page
-          in if sgpHasNextPage (sgdpPageInfo page)
+          in if hasNextPage (sgdpPageInfo page)
              then go (sgpEndCursor (sgdpPageInfo page)) newAcc
              else pure newAcc
 

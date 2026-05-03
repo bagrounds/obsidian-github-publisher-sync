@@ -50,16 +50,16 @@ calculatePostLength limits text =
 
 validatePostLength :: PlatformLimits -> Text -> (Bool, Int)
 validatePostLength limits text =
-  let len = calculatePostLength limits text
-  in (len <= platformMaxCharacters limits, len)
+  let postLength = calculatePostLength limits text
+  in (postLength <= platformMaxCharacters limits, postLength)
 
 findLastIndex :: (a -> Int -> Bool) -> [a] -> Int
-findLastIndex p xs = go (length xs - 1) (reverse xs)
+findLastIndex predicate elements = go (length elements - 1) (reverse elements)
   where
     go _ []     = -1
     go i (y:ys)
-      | p y i    = i
-      | otherwise = go (i - 1) ys
+      | predicate y i = i
+      | otherwise     = go (i - 1) ys
 
 rebuildPost :: [Text] -> Int -> Text -> Text -> [Text] -> Text
 rebuildPost contentLines topicIndex newTopicLine urlLine trailingLines =
@@ -69,7 +69,7 @@ rebuildPost contentLines topicIndex newTopicLine urlLine trailingLines =
   in T.intercalate "\n" (updated <> [urlLine] <> trailingLines)
 
 removeAt :: Int -> [a] -> [a]
-removeAt i xs = take i xs <> drop (i + 1) xs
+removeAt i elements = take i elements <> drop (i + 1) elements
 
 fitPostToLimit :: Text -> Int -> Text
 fitPostToLimit text maxGraphemes
@@ -77,16 +77,16 @@ fitPostToLimit text maxGraphemes
   | otherwise = fitWithStrategies (T.splitOn "\n" text) maxGraphemes
 
 fitWithStrategies :: [Text] -> Int -> Text
-fitWithStrategies lns maxGraphemes =
-  let urlLineIndex = findLastIndex (\l _ -> urlPattern l) lns
+fitWithStrategies contentLines maxGraphemes =
+  let urlLineIndex = findLastIndex (\l _ -> urlPattern l) contentLines
   in case urlLineIndex of
-    i | i < 0 -> truncateToGraphemeLimit (T.intercalate "\n" lns) maxGraphemes
-    urlIdx ->
-      let urlLine       = lns !! urlIdx
-          contentLines  = take urlIdx lns
-          trailingLines = drop (urlIdx + 1) lns
-          topicIndex    = findLastIndex (\l i -> i > 0 && " | " `T.isInfixOf` l) contentLines
-      in tryStrategies contentLines topicIndex urlLine trailingLines maxGraphemes
+    i | i < 0 -> truncateToGraphemeLimit (T.intercalate "\n" contentLines) maxGraphemes
+    urlIndex ->
+      let urlLine     = contentLines !! urlIndex
+          preUrlLines = take urlIndex contentLines
+          trailingLines = drop (urlIndex + 1) contentLines
+          topicIndex    = findLastIndex (\l i -> i > 0 && " | " `T.isInfixOf` l) preUrlLines
+      in tryStrategies preUrlLines topicIndex urlLine trailingLines maxGraphemes
 
 tryStrategies :: [Text] -> Int -> Text -> [Text] -> Int -> Text
 tryStrategies contentLines topicIndex urlLine trailingLines maxGraphemes =
@@ -137,8 +137,8 @@ strategy3 contentLines topicIndex urlLine trailingLines maxGraphemes =
       titleLine = safeHead "" workingLines
       colonIdx = T.findIndex (== ':') titleLine
   in case colonIdx of
-       Just ci | ci > 0 ->
-         let shortTitle = T.strip (T.take ci titleLine)
+       Just colonIndex | colonIndex > 0 ->
+         let shortTitle = T.strip (T.take colonIndex titleLine)
          in if T.null shortTitle
             then Nothing
             else let updated = shortTitle : drop 1 workingLines
@@ -155,8 +155,8 @@ strategy4 contentLines topicIndex urlLine trailingLines maxGraphemes =
        [] -> Nothing
        (_:rest) ->
          let noTitle = case rest of
-               ("":xs) -> xs
-               xs      -> xs
+               ("":elements) -> elements
+               elements      -> elements
              candidate = T.intercalate "\n" (noTitle <> [urlLine] <> trailingLines)
          in if countGraphemes candidate <= maxGraphemes
             then Just candidate

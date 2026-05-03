@@ -210,12 +210,12 @@ tests = testGroup "BlogPrompt"
   , testCase "buildBlogPrompt user prompt includes human-readable date" $
       let series = unsafeLookupSeries "chickie-loo"
           ctx = BlogContext
-            { bcxSeries = series
-            , bcxAgentsMd = ""
-            , bcxPreviousPosts = []
-            , bcxComments = []
-            , bcxToday = fromGregorian 2026 4 11
-            , bcxCrossSeriesPosts = []
+            { series = series
+            , agentsMd = ""
+            , previousPosts = []
+            , comments = []
+            , today = fromGregorian 2026 4 11
+            , crossSeriesPosts = []
             }
           (_, userPrompt) = buildBlogPrompt ctx
       in assertBool "should include human-readable date" $
@@ -224,12 +224,12 @@ tests = testGroup "BlogPrompt"
   , testCase "buildBlogPrompt user prompt includes YYYY-MM-DD date" $
       let series = unsafeLookupSeries "chickie-loo"
           ctx = BlogContext
-            { bcxSeries = series
-            , bcxAgentsMd = ""
-            , bcxPreviousPosts = []
-            , bcxComments = []
-            , bcxToday = fromGregorian 2026 4 11
-            , bcxCrossSeriesPosts = []
+            { series = series
+            , agentsMd = ""
+            , previousPosts = []
+            , comments = []
+            , today = fromGregorian 2026 4 11
+            , crossSeriesPosts = []
             }
           (_, userPrompt) = buildBlogPrompt ctx
       in assertBool "should include YYYY-MM-DD date" $
@@ -348,12 +348,12 @@ crossSeriesTests = testGroup "crossSeries"
       let series = unsafeLookupSeries "chickie-loo"
           crossPost = CrossSeriesPost "The Noise" "📰" (BlogPost "a.md" "2026-04-15" "News" "Content")
           ctx = BlogContext
-            { bcxSeries = series
-            , bcxAgentsMd = ""
-            , bcxPreviousPosts = []
-            , bcxComments = []
-            , bcxToday = fromGregorian 2026 4 15
-            , bcxCrossSeriesPosts = [crossPost]
+            { series = series
+            , agentsMd = ""
+            , previousPosts = []
+            , comments = []
+            , today = fromGregorian 2026 4 15
+            , crossSeriesPosts = [crossPost]
             }
           (_, userPrompt) = buildBlogPrompt ctx
       in assertBool "user prompt should include cross-series section" $
@@ -362,12 +362,12 @@ crossSeriesTests = testGroup "crossSeries"
   , testCase "buildBlogPrompt omits cross-series section when no posts" $
       let series = unsafeLookupSeries "chickie-loo"
           ctx = BlogContext
-            { bcxSeries = series
-            , bcxAgentsMd = ""
-            , bcxPreviousPosts = []
-            , bcxComments = []
-            , bcxToday = fromGregorian 2026 4 15
-            , bcxCrossSeriesPosts = []
+            { series = series
+            , agentsMd = ""
+            , previousPosts = []
+            , comments = []
+            , today = fromGregorian 2026 4 15
+            , crossSeriesPosts = []
             }
           (_, userPrompt) = buildBlogPrompt ctx
       in assertBool "user prompt should not include cross-series section" $

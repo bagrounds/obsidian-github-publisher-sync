@@ -80,11 +80,11 @@ data BackfillConfig = BackfillConfig
   }
 
 data BackfillResult = BackfillResult
-  { brImagesGenerated :: Int
-  , brFilesUpdated    :: Int
-  , brFilesSkipped    :: Int
-  , brModifiedFiles   :: [Text]
-  , brErrors          :: [Text]
+  { imagesGenerated :: Int
+  , filesUpdated    :: Int
+  , filesSkipped    :: Int
+  , modifiedFiles   :: [Text]
+  , errors          :: [Text]
   } deriving (Show, Eq)
 
 notePathToImageBaseName :: FilePath -> Text
@@ -154,8 +154,8 @@ isContinuationLine l = not (T.null l) && T.isPrefixOf " " l
 
 extractFrontmatterValue :: Text -> Text -> Maybe Text
 extractFrontmatterValue content key =
-  let (fm, _) = parseFrontmatter content
-  in Map.lookup key fm
+  let (frontmatter, _) = parseFrontmatter content
+  in Map.lookup key frontmatter
 
 resolveUniqueImageName :: Text -> Text -> FilePath -> IO Text
 resolveUniqueImageName baseName extension attachmentsDir = do
@@ -310,8 +310,8 @@ sortByDateDesc = foldl' insertSorted []
   where
     insertSorted [] c = [c]
     insertSorted (x : xs) c
-      | bcDate c >= bcDate x = c : x : xs
-      | otherwise            = x : insertSorted xs c
+      | date c >= date x = c : x : xs
+      | otherwise        = x : insertSorted xs c
 
 sortByTextDesc :: [Text] -> [Text]
 sortByTextDesc = foldl' ins []
@@ -325,51 +325,51 @@ processWithProviders
   :: Manager -> BackfillConfig -> [BackfillCandidate]
   -> Int -> BackfillResult -> IO BackfillResult
 processWithProviders _ _ [] _ result = do
-  putStrLn $ "📭 No more candidates | generated: " <> show (brImagesGenerated result)
-          <> " | skipped: " <> show (brFilesSkipped result)
-          <> " | errors: " <> show (length (brErrors result))
+  putStrLn $ "📭 No more candidates | generated: " <> show (imagesGenerated result)
+          <> " | skipped: " <> show (filesSkipped result)
+          <> " | errors: " <> show (length (errors result))
   pure result
 processWithProviders _ config _ _ result
   | null (backfillProviders config) = do
       putStrLn "🚫 No providers available"
-      pure result { brErrors = brErrors result <> ["No providers available"] }
+      pure result { errors = errors result <> ["No providers available"] }
 processWithProviders _manager config _candidates providerIdx result
   | providerIdx >= length (backfillProviders config) = do
-      putStrLn $ "🛑 All providers exhausted | generated: " <> show (brImagesGenerated result)
-             <> " | errors: " <> show (length (brErrors result))
-      pure result { brErrors = brErrors result <> ["All providers exhausted"] }
-  | brImagesGenerated result >= backfillMaxImages config = do
-      putStrLn $ "🎯 Max images reached: " <> show (brImagesGenerated result)
+      putStrLn $ "🛑 All providers exhausted | generated: " <> show (imagesGenerated result)
+             <> " | errors: " <> show (length (errors result))
+      pure result { errors = errors result <> ["All providers exhausted"] }
+  | imagesGenerated result >= backfillMaxImages config = do
+      putStrLn $ "🎯 Max images reached: " <> show (imagesGenerated result)
              <> "/" <> show (backfillMaxImages config)
       pure result
 processWithProviders manager config (candidate : rest) providerIdx result = do
   let provider = backfillProviders config !! providerIdx
-      action = if bcNeedsRegeneration candidate then "Regenerating" else "Generating"
-      progress = show (brImagesGenerated result + 1) <> "/" <> show (backfillMaxImages config)
-      directoryLabel = T.unpack (contentDirectoryToText (bcDirectory candidate))
+      action = if requiresRegeneration candidate then "Regenerating" else "Generating"
+      progress = show (imagesGenerated result + 1) <> "/" <> show (backfillMaxImages config)
+      directoryLabel = T.unpack (contentDirectoryToText (directory candidate))
   putStrLn $ "🎨 [" <> progress <> "] " <> action <> " image for "
-          <> directoryLabel <> "/" <> T.unpack (bcFilename candidate)
+          <> directoryLabel <> "/" <> T.unpack (filename candidate)
           <> " via " <> T.unpack (providerName (ipcProvider provider))
   genResult <- tryGenerate manager provider candidate (backfillAttachmentsDir config)
   case genResult of
     Right imgResult
       | not (igrSkipped imgResult) -> do
           putStrLn $ "✅ Generated: " <> maybe "?" T.unpack (igrImageName imgResult)
-          let relativePath = contentDirectoryToText (bcDirectory candidate) <> "/" <> bcFilename candidate
+          let relativePath = contentDirectoryToText (directory candidate) <> "/" <> filename candidate
               newResult = result
-                { brImagesGenerated = brImagesGenerated result + 1
-                , brFilesUpdated = brFilesUpdated result + 1
-                , brModifiedFiles = brModifiedFiles result <> [relativePath]
+                { imagesGenerated = imagesGenerated result + 1
+                , filesUpdated = filesUpdated result + 1
+                , modifiedFiles = modifiedFiles result <> [relativePath]
                 }
-          if brImagesGenerated newResult >= backfillMaxImages config
+          if imagesGenerated newResult >= backfillMaxImages config
             then do
-              putStrLn $ "🎯 Max images reached: " <> show (brImagesGenerated newResult)
+              putStrLn $ "🎯 Max images reached: " <> show (imagesGenerated newResult)
                      <> "/" <> show (backfillMaxImages config)
               pure newResult
             else processWithProviders manager config rest providerIdx newResult
       | otherwise -> do
-          putStrLn $ "⏭️  Skipped: " <> directoryLabel <> "/" <> T.unpack (bcFilename candidate)
-          let newResult = result { brFilesSkipped = brFilesSkipped result + 1 }
+          putStrLn $ "⏭️  Skipped: " <> directoryLabel <> "/" <> T.unpack (filename candidate)
+          let newResult = result { filesSkipped = filesSkipped result + 1 }
           processWithProviders manager config rest providerIdx newResult
     Left err
       | isDailyQuotaError err || isQuotaError err || isProviderUnavailableError err -> do
@@ -384,18 +384,18 @@ processWithProviders manager config (candidate : rest) providerIdx result = do
               processWithProviders manager config (candidate : rest) nextIdx result
             else do
               putStrLn $ "🛑 All " <> show (length (backfillProviders config)) <> " providers exhausted"
-              pure result { brErrors = brErrors result <> [err] }
+              pure result { errors = errors result <> [err] }
       | otherwise -> do
-          putStrLn $ "❌ Error on " <> directoryLabel <> "/" <> T.unpack (bcFilename candidate)
+          putStrLn $ "❌ Error on " <> directoryLabel <> "/" <> T.unpack (filename candidate)
                   <> ": " <> T.unpack err
-          let newResult = result { brErrors = brErrors result <> [err] }
+          let newResult = result { errors = errors result <> [err] }
           processWithProviders manager config rest providerIdx newResult
 
 tryGenerate
   :: Manager -> ImageProviderConfig -> BackfillCandidate -> FilePath
   -> IO (Either Text ImageGenerationResult)
 tryGenerate manager provider candidate attachmentsDir =
-  safeIO $ processNote manager provider (bcFilePath candidate) attachmentsDir
+  safeIO $ processNote manager provider (filePath candidate) attachmentsDir
 
 safeIO :: IO a -> IO (Either Text a)
 safeIO action =

@@ -33,7 +33,8 @@ import Data.Time
 import Data.Time.Format.ISO8601 (iso8601ParseM)
 import Text.Read (readMaybe)
 
-import Automation.BlogComments (BlogComment (..))
+import Automation.BlogComments (BlogComment)
+import qualified Automation.BlogComments as Comments
 import Automation.BlogPosts (BlogPost (..))
 import Automation.BlogSeriesConfig (BlogSeriesConfig (..))
 
@@ -66,12 +67,12 @@ data CrossSeriesPost = CrossSeriesPost
   } deriving (Show, Eq)
 
 data BlogContext = BlogContext
-  { bcxSeries           :: BlogSeriesConfig
-  , bcxAgentsMd         :: Text
-  , bcxPreviousPosts    :: [BlogPost]
-  , bcxComments         :: [BlogComment]
-  , bcxToday            :: Day
-  , bcxCrossSeriesPosts :: [CrossSeriesPost]
+  { series           :: BlogSeriesConfig
+  , agentsMd         :: Text
+  , previousPosts    :: [BlogPost]
+  , comments         :: [BlogComment]
+  , today            :: Day
+  , crossSeriesPosts :: [CrossSeriesPost]
   } deriving (Show, Eq)
 
 stripEmbedSections :: Text -> Text
@@ -88,9 +89,9 @@ stripEmbedSections content =
 buildBlogPrompt :: BlogContext -> (Text, Text)
 buildBlogPrompt ctx =
   let systemPrompt =
-        if T.null (T.strip (bcxAgentsMd ctx))
+        if T.null (T.strip (agentsMd ctx))
           then defaultSystemPrompt
-          else bcxAgentsMd ctx
+          else agentsMd ctx
       userPrompt = buildUserPrompt ctx
   in (systemPrompt, userPrompt)
 
@@ -103,7 +104,7 @@ filterCommentsAfterLastPost series (latestPost : _) comments =
 
 commentAfterCutoff :: LocalTime -> BlogComment -> Bool
 commentAfterCutoff cutoff comment =
-  case parseUtcTimestamp (bcCreatedAt comment) of
+  case parseUtcTimestamp (Comments.createdAt comment) of
     Nothing      -> True
     Just utcTime -> toPacificLocalTime utcTime >= cutoff
 
@@ -173,19 +174,15 @@ defaultSystemPrompt :: Text
 defaultSystemPrompt = "You are a creative blog writer. Write engaging, thoughtful blog posts."
 
 buildUserPrompt :: BlogContext -> Text
-buildUserPrompt ctx =
-  let series = bcxSeries ctx
-      posts = bcxPreviousPosts ctx
-      comments = bcxComments ctx
-      today = bcxToday ctx
-      header = "Today is " <> formatDayHuman today <> "."
+buildUserPrompt BlogContext{..} =
+  let header = "Today is " <> formatDayHuman today <> "."
         <> "\nWrite the next blog post for the " <> name series <> " series."
         <> "\nToday's date: " <> formatDay today
         <> "\n\nIMPORTANT: Your heading (# or ##) must contain ONLY the creative title."
         <> " Do not include dates, pipe separators, or the series icon emoji in your heading."
         <> " The system adds date and icon formatting automatically."
-      postHistory = buildPostHistory series posts
-      crossSeriesContext = buildCrossSeriesSection (bcxCrossSeriesPosts ctx)
+      postHistory = buildPostHistory series previousPosts
+      crossSeriesContext = buildCrossSeriesSection crossSeriesPosts
       commentsSection = buildCommentsSection comments
       recap = recapInstructions today
   in T.intercalate "\n\n"
@@ -246,8 +243,8 @@ formatCrossSeriesPost CrossSeriesPost{..} =
 
 formatComment :: BlogComment -> Text
 formatComment c =
-  let priority = if bcIsPriority c then " ⭐" else ""
-  in "**" <> bcAuthor c <> "**" <> priority <> " (" <> bcCreatedAt c <> "):\n" <> bcBody c
+  let priority = if Comments.isPriority c then " ⭐" else ""
+  in "**" <> Comments.author c <> "**" <> priority <> " (" <> Comments.createdAt c <> "):\n" <> Comments.body c
 
 parseDate :: Text -> Maybe Day
 parseDate t =

@@ -67,49 +67,50 @@ Record field abbreviation prefixes must be removed. When two records in the same
 
 #### BlogComments.hs
 
-- [ ] `bcAuthor` → `author` (BlogComment record field) — may require moving Gql* types to Automation.BlogComments.GraphQL
-- [ ] `bcBody` → `body` (BlogComment record field)
-- [ ] `bcCreatedAt` → `createdAt` (BlogComment record field)
-- [ ] `bcIsPriority` → `isPriority` (BlogComment record field)
-- [ ] `gcBody` → `body` (GqlComment record field) — move Gql* to sub-module first
-- [ ] `gcAuthor` → `author` (GqlComment record field)
-- [ ] `gcCreatedAt` → `createdAt` (GqlComment record field)
-- [ ] `gcnNodes` → `nodes` (GqlCommentsNode record field)
-- [ ] `gdTitle` → `title` (GqlDiscussion record field)
-- [ ] `gdComments` → `comments` (GqlDiscussion record field)
-- [ ] `gsnNodes` → `nodes` (GqlSearchNodes record field)
-- [ ] `gsdSearch` → `search` (GqlSearchData record field)
-- [ ] `grData` → `responseData` (GqlResponse record field)
-- [ ] `grErrors` → `errors` (GqlResponse record field)
-- [ ] `geMessage` → `message` (GqlError record field)
-- [ ] `gaLogin` → `login` (GqlAuthor record field)
+- [x] `bcAuthor` → `author` (BlogComment record field) — moved Gql* types to Automation.BlogComments.GraphQL
+- [x] `bcBody` → `body` (BlogComment record field)
+- [x] `bcCreatedAt` → `createdAt` (BlogComment record field)
+- [x] `bcIsPriority` → `isPriority` (BlogComment record field)
+- [x] `gcBody` → `body` (GqlComment record field) — moved to Automation.BlogComments.GraphQL
+- [x] `gcAuthor` → `author` (GqlComment record field)
+- [x] `gcCreatedAt` → `createdAt` (GqlComment record field)
+- [x] `gcnNodes` → `nodes` (GqlCommentsNode record field)
+- [x] `gdTitle` → `title` (GqlDiscussion record field)
+- [x] `gdComments` → `comments` (GqlDiscussion record field)
+- [x] `gsnNodes` → `searchNodes` (GqlSearchNodes record field — renamed `searchNodes` not `nodes` to avoid same-module conflict with `GqlCommentsNode.nodes`)
+- [x] `gsdSearch` → `search` (GqlSearchData record field)
+- [x] `grData` → `responseData` (GqlResponse record field)
+- [x] `grErrors` → `errors` (GqlResponse record field)
+- [x] `geMessage` → `message` (GqlError record field)
+- [x] `gaLogin` → `login` (GqlAuthor record field)
 
 #### BlogImage/Eligibility.hs
 
-- [ ] `bcFilePath` → `filePath` (BackfillCandidate record field)
-- [ ] `bcDirectory` → `directory` (BackfillCandidate record field)
-- [ ] `bcFilename` → `filename` (BackfillCandidate record field)
-- [ ] `bcDate` → `date` (BackfillCandidate record field)
-- [ ] `bcNeedsRegeneration` → `needsRegeneration` (BackfillCandidate record field)
-- [ ] `fm` → `frontmatter` (local binding for `parseFrontmatter` result in `needsImageRegeneration`)
+- [x] `bcFilePath` → `filePath` (BackfillCandidate record field)
+- [x] `bcDirectory` → `directory` (BackfillCandidate record field)
+- [x] `bcFilename` → `filename` (BackfillCandidate record field)
+- [x] `bcDate` → `date` (BackfillCandidate record field)
+- [x] `bcNeedsRegeneration` → `requiresRegeneration` (BackfillCandidate record field — renamed `requiresRegeneration` not `needsRegeneration` to avoid same-module conflict with `CandidateEligibility.needsRegeneration`)
+- [x] `fm` → `frontmatter` (local binding for `parseFrontmatter` result in `shouldRegenerateImage`)
 
 #### BlogImage.hs
 
-- [ ] `brImagesGenerated` → `imagesGenerated` (BackfillResult record field)
-- [ ] `brFilesUpdated` → `filesUpdated` (BackfillResult record field)
-- [ ] `brFilesSkipped` → `filesSkipped` (BackfillResult record field)
-- [ ] `brModifiedFiles` → `modifiedFiles` (BackfillResult record field)
-- [ ] `brErrors` → `errors` (BackfillResult record field)
-- [ ] `fm` → `frontmatter` (local binding for `parseFrontmatter` result in `lookupFrontmatterKey`)
+- [x] `brImagesGenerated` → `imagesGenerated` (BackfillResult record field)
+- [x] `brFilesUpdated` → `filesUpdated` (BackfillResult record field)
+- [x] `brFilesSkipped` → `filesSkipped` (BackfillResult record field)
+- [x] `brModifiedFiles` → `modifiedFiles` (BackfillResult record field)
+- [x] `brErrors` → `errors` (BackfillResult record field)
+- [x] `fm` → `frontmatter` (local binding for `parseFrontmatter` result in `extractFrontmatterValue`)
+- [ ] `ls` → `contentLines` (local variable in `updateFrontmatterFields`)
 
 #### BlogPrompt.hs
 
-- [ ] `bcxSeries` → `series` (BlogContext record field)
-- [ ] `bcxAgentsMd` → `agentsMd` (BlogContext record field)
-- [ ] `bcxPreviousPosts` → `previousPosts` (BlogContext record field)
-- [ ] `bcxComments` → `comments` (BlogContext record field)
-- [ ] `bcxToday` → `today` (BlogContext record field)
-- [ ] `bcxCrossSeriesPosts` → `crossSeriesPosts` (BlogContext record field)
+- [x] `bcxSeries` → `series` (BlogContext record field)
+- [x] `bcxAgentsMd` → `agentsMd` (BlogContext record field)
+- [x] `bcxPreviousPosts` → `previousPosts` (BlogContext record field)
+- [x] `bcxComments` → `comments` (BlogContext record field)
+- [x] `bcxToday` → `today` (BlogContext record field)
+- [x] `bcxCrossSeriesPosts` → `crossSeriesPosts` (BlogContext record field)
 
 #### GoogleAnalytics.hs
 
@@ -196,12 +197,14 @@ Record field abbreviation prefixes must be removed. When two records in the same
 
 #### Text.hs
 
-- [ ] `xs` → `elements` (parameter in `findLastIndex`, `removeAt`, and lambda in `strategy4`)
-- [ ] `len` → `postLength` (local variable in `validatePostLength`)
-- [ ] `p` → `predicate` (parameter in `findLastIndex`)
-- [ ] `lns` → `contentLines` (local variable in `fitPostToLimit` and `fitWithStrategies`)
-- [ ] `urlIdx` → `urlIndex` (local variable in `fitWithStrategies`)
-- [ ] `ci` → `colonIndex` (pattern variable in `strategy3`)
+- [x] `xs` → `elements` (parameter in `findLastIndex`, `removeAt`, and lambda in `strategy4`)
+- [x] `len` → `postLength` (local variable in `validatePostLength`)
+- [x] `p` → `predicate` (parameter in `findLastIndex`)
+- [x] `lns` → `contentLines` (parameter in `fitWithStrategies`; local variable `contentLines` inside renamed to `preUrlLines` to avoid shadowing)
+- [x] `urlIdx` → `urlIndex` (local variable in `fitWithStrategies`)
+- [x] `ci` → `colonIndex` (pattern variable in `strategy3`)
+- [ ] `colonIdx` → `colonPosition` (local binding in `strategy3` — the `Maybe Int` holding the colon position)
+- [ ] `i` → `index` (parameter in `removeAt`)
 
 #### Scheduler.hs
 
@@ -230,6 +233,37 @@ Record field abbreviation prefixes must be removed. When two records in the same
 #### GcpAuth.hs
 
 - [ ] `bs` → `bytes` (parameter name for `ByteString` in `parseDerTag`, `parseDerInteger`, `parseDerLength`, and `bytesToInteger`)
+
+#### StaticGiscus.hs
+
+- [ ] `sgaLogin` → `login` (GqlAuthor record field — `sga` prefix)
+- [ ] `sgaUrl` → `url` (GqlAuthor record field — `sga` prefix)
+- [ ] `sgcBodyHtml` → `bodyHtml` (GqlComment record field — `sgc` prefix)
+- [ ] `sgcAuthor` → `author` (GqlComment record field — `sgc` prefix)
+- [ ] `sgcCreatedAt` → `createdAt` (GqlComment record field — `sgc` prefix)
+- [ ] `sgcnNodes` → `nodes` (GqlCommentsNode record field — `sgcn` prefix)
+- [ ] `sgdTitle` → `title` (GqlDiscussion record field — `sgd` prefix)
+- [ ] `sgdComments` → `comments` (GqlDiscussion record field — `sgd` prefix)
+- [ ] `sgpHasNextPage` → `hasNextPage` (GqlPageInfo record field — `sgp` prefix)
+- [ ] `sgpEndCursor` → `endCursor` (GqlPageInfo record field — `sgp` prefix)
+- [ ] `sgdpNodes` → `nodes` (GqlDiscussionsPage record field — `sgdp` prefix)
+- [ ] `sgdpPageInfo` → `pageInfo` (GqlDiscussionsPage record field — `sgdp` prefix)
+- [ ] `sgrDiscussions` → `discussions` (GqlRepository record field — `sgr` prefix)
+- [ ] `sgdRepository` → `repository` (GqlData record field — `sgd` prefix)
+- [ ] `sgeMessage` → `message` (GqlError record field — `sge` prefix)
+- [ ] `sgrData` → `responseData` (GqlResponse record field — `sgr` prefix)
+- [ ] `sgrErrors` → `errors` (GqlResponse record field — `sgr` prefix)
+- [ ] `scAuthor` → `author` (StaticComment record field — `sc` prefix)
+- [ ] `scAuthorUrl` → `authorUrl` (StaticComment record field — `sc` prefix)
+- [ ] `scBodyHtml` → `bodyHtml` (StaticComment record field — `sc` prefix)
+- [ ] `scCreatedAt` → `createdAt` (StaticComment record field — `sc` prefix)
+
+#### BlogPosts.hs
+
+- [ ] `bpFilename` → `filename` (BlogPost record field — `bp` prefix)
+- [ ] `bpDate` → `date` (BlogPost record field — `bp` prefix)
+- [ ] `bpTitle` → `title` (BlogPost record field — `bp` prefix)
+- [ ] `bpBody` → `body` (BlogPost record field — `bp` prefix)
 
 ## Ordering Notes
 

@@ -6,10 +6,14 @@ title: 🤖 AI Blog
 URL: https://bagrounds.org/ai-blog/index
 Author: "[[bryan-grounds]]"
 backlinks: false
-updated: 2026-05-03T12:15:55-07:00
+updated: 2026-05-03T14:55:21-07:00
 ---
 [Home](../index.md)  
-# 🤖 AI Blog (185)  
+# 🤖 AI Blog (189)  
+- [2026-05-03 | 🔤 Expand Abbreviations: Haskell Pass 17 🧹](./2026-05-03-6-expand-abbreviations-haskell-pass-17.md)  
+- [2026-05-03 | 🔤 Expand Abbreviations in the Haskell Codebase, Pass 16 🤖](./2026-05-03-5-expand-abbreviations-haskell-pass-16.md)  
+- [2026-05-03 | 🔤 Expand Abbreviations in Haskell Pass 15 🤖](./2026-05-03-4-expand-abbreviations-haskell-pass-15.md)  
+- [2026-05-03 | 🔤 Expand Abbreviations in Haskell Pass 14 🤖](./2026-05-03-3-expand-abbreviations-haskell-pass-14.md)  
 - [2026-05-03 | 🔤 Expand Abbreviations in Haskell Pass 12 🤖](./2026-05-03-1-expand-abbreviations-haskell-pass-12.md)  
 - [2026-05-02 | 🔤 Expand Abbreviations: inferenceCountRef, resultsRef, maybeFileResult, inferenceCount, maybeKey 🧹](./2026-05-02-9-expand-abbreviations-inference-refs.md)  
 - [2026-05-02 | 🔤 Expand Abbreviations: idx, ls, pos 🧹](./2026-05-02-7-expand-abbreviations-idx-ls-pos.md)  

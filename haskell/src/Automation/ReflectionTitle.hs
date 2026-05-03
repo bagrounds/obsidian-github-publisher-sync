@@ -183,7 +183,7 @@ startsWithEmoji t = case T.uncons t of
 stripInlinePreamble :: Text -> Text
 stripInlinePreamble t =
   case T.findIndex isEmoji t of
-    Just idx | idx > 0 -> T.strip (T.drop idx t)
+    Just index | index > 0 -> T.strip (T.drop index t)
     _ -> t
 
 stripDatePrefix :: Text -> Text

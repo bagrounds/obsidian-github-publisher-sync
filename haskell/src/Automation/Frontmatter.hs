@@ -28,8 +28,8 @@ import Automation.Url (mkUrl)
 
 parseFrontmatter :: Text -> (Map Text Text, Text)
 parseFrontmatter content =
-  let ls = T.splitOn "\n" content
-  in case ls of
+  let contentLines = T.splitOn "\n" content
+  in case contentLines of
     (first : rest)
       | T.strip first == "---" ->
           case break (\l -> T.strip l == "---") rest of
@@ -117,9 +117,9 @@ extractDateFromFilename filename =
     else T.pack . formatTime defaultTimeLocale "%Y-%m-%d" <$> getCurrentTime
 
 deriveUrl :: Map Text Text -> Text -> Text
-deriveUrl fm relativePath =
+deriveUrl frontmatter relativePath =
   let slug = fromMaybe relativePath (T.stripSuffix ".md" relativePath)
-  in fromMaybe ("https://bagrounds.org/" <> slug) (Map.lookup "URL" fm)
+  in fromMaybe ("https://bagrounds.org/" <> slug) (Map.lookup "URL" frontmatter)
 
 readReflection :: Text -> FilePath -> IO (Maybe ReflectionData)
 readReflection date contentDir = do
@@ -128,10 +128,10 @@ readReflection date contentDir = do
   if exists
     then do
       content <- TIO.readFile filePath
-      let (fm, body) = parseFrontmatter content
+      let (frontmatter, body) = parseFrontmatter content
           (hasTweet, hasBluesky, hasMastodon) = detectSections content
-          titleText = fromMaybe date (Map.lookup "title" fm)
-          urlText = fromMaybe ("https://bagrounds.org/reflections/" <> date) (Map.lookup "URL" fm)
+          titleText = fromMaybe date (Map.lookup "title" frontmatter)
+          urlText = fromMaybe ("https://bagrounds.org/reflections/" <> date) (Map.lookup "URL" frontmatter)
           validated = do
             title <- mkTitle titleText
             url <- mkUrl urlText
@@ -159,11 +159,11 @@ readNote relativePath contentDir = do
   if exists
     then do
       content <- TIO.readFile filePath
-      let (fm, body) = parseFrontmatter content
+      let (frontmatter, body) = parseFrontmatter content
           (hasTweet, hasBluesky, hasMastodon) = detectSections content
       date <- extractDateFromFilename relativePath
-      let titleText = fromMaybe (T.pack $ takeBaseName $ T.unpack relativePath) (Map.lookup "title" fm)
-          urlText = deriveUrl fm relativePath
+      let titleText = fromMaybe (T.pack $ takeBaseName $ T.unpack relativePath) (Map.lookup "title" frontmatter)
+          urlText = deriveUrl frontmatter relativePath
           validated = do
             title <- mkTitle titleText
             url <- mkUrl urlText

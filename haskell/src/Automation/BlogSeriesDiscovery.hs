@@ -114,15 +114,15 @@ validateRawConfig filePath seriesIdValue RawConfig{..} =
 
 deriveBlogSeriesConfig :: DiscoveredSeries -> BlogSeriesConfig
 deriveBlogSeriesConfig DiscoveredSeries{..} = BlogSeriesConfig
-  { bscId = seriesId
-  , bscName = seriesName
-  , bscIcon = seriesIcon
-  , bscAuthor = deriveAuthor seriesId
-  , bscBaseUrl = deriveBaseUrl seriesId
-  , bscPriorityUser = priorityUser
-  , bscNavLink = deriveNavLink seriesId seriesIcon seriesName
-  , bscScheduleTime = scheduleTime
-  , bscContextQueries = contextQueries
+  { identifier     = seriesId
+  , name           = seriesName
+  , icon           = seriesIcon
+  , author         = deriveAuthor seriesId
+  , baseUrl        = deriveBaseUrl seriesId
+  , priorityUser   = priorityUser
+  , navLink        = deriveNavLink seriesId seriesIcon seriesName
+  , scheduleTime   = scheduleTime
+  , contextQueries = contextQueries
   }
 
 deriveBlogSeriesRunConfig :: DiscoveredSeries -> BlogSeriesRunConfig

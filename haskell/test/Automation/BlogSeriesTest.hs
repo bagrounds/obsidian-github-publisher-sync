@@ -43,15 +43,15 @@ tests = testGroup "BlogSeries"
 
 sampleSeries :: BlogSeriesConfig
 sampleSeries = BlogSeriesConfig
-  { bscId = "the-noise"
-  , bscName = "The Noise"
-  , bscIcon = "\128240"
-  , bscAuthor = "[[the-noise]]"
-  , bscBaseUrl = "https://bagrounds.org/the-noise"
-  , bscPriorityUser = Just "bagrounds"
-  , bscNavLink = "[[index|Home]] > [[the-noise/index|\128240 The Noise]]"
-  , bscScheduleTime = TimeOfDay 6 0 0
-  , bscContextQueries = []
+  { identifier     = "the-noise"
+  , name           = "The Noise"
+  , icon           = "\128240"
+  , author         = "[[the-noise]]"
+  , baseUrl        = "https://bagrounds.org/the-noise"
+  , priorityUser   = Just "bagrounds"
+  , navLink        = "[[index|Home]] > [[the-noise/index|\128240 The Noise]]"
+  , scheduleTime   = TimeOfDay 6 0 0
+  , contextQueries = []
   }
 
 generateSeriesIndexTests :: TestTree

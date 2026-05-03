@@ -29,15 +29,15 @@ import Automation.Wikilink (buildBackLink, buildForwardLink)
 
 aiBlogConfig :: BlogSeriesConfig
 aiBlogConfig = BlogSeriesConfig
-  { bscId           = "ai-blog"
-  , bscName         = "AI Blog"
-  , bscIcon         = "🤖"
-  , bscAuthor       = "[[bryan-grounds]]"
-  , bscBaseUrl      = "https://bagrounds.org/ai-blog"
-  , bscPriorityUser = Nothing
-  , bscNavLink      = "[[index|🏡 Home]] > [[/ai-blog/index|🤖 AI Blog]]"
-  , bscScheduleTime = midnight
-  , bscContextQueries = []
+  { identifier      = "ai-blog"
+  , name            = "AI Blog"
+  , icon            = "🤖"
+  , author          = "[[bryan-grounds]]"
+  , baseUrl         = "https://bagrounds.org/ai-blog"
+  , priorityUser    = Nothing
+  , navLink         = "[[index|🏡 Home]] > [[/ai-blog/index|🤖 AI Blog]]"
+  , scheduleTime    = midnight
+  , contextQueries  = []
   }
 
 aiBlogNavPrefix :: Text
@@ -56,21 +56,21 @@ buildNavLine prevFilename nextFilename =
 updateNavLinks :: Text -> Maybe Text -> Maybe Text -> Text
 updateNavLinks content prevFilename nextFilename =
   let navLine = buildNavLine prevFilename nextFilename
-      ls = T.lines content
-      navIndex = findIndex (T.isPrefixOf aiBlogNavPrefix) ls
+      contentLines = T.lines content
+      navIndex = findIndex (T.isPrefixOf aiBlogNavPrefix) contentLines
   in case navIndex of
     Nothing -> content
-    Just idx ->
-      let currentLine = ls !! idx
+    Just index ->
+      let currentLine = contentLines !! index
       in if currentLine == navLine
          then content
-         else T.unlines (take idx ls <> [navLine] <> drop (idx + 1) ls)
+         else T.unlines (take index contentLines <> [navLine] <> drop (index + 1) contentLines)
 
 findIndex :: (a -> Bool) -> [a] -> Maybe Int
-findIndex p = go 0
+findIndex predicate = go 0
   where
     go _ []     = Nothing
-    go i (y:ys) = if p y then Just i else go (i + 1) ys
+    go i (y:ys) = if predicate y then Just i else go (i + 1) ys
 
 navLinksMatch :: Text -> Maybe Text -> Maybe Text -> Bool
 navLinksMatch content prevFilename nextFilename =
@@ -87,8 +87,8 @@ extractPostDate filename =
      else Nothing
 
 data NavLinkResult = NavLinkResult
-  { nlrFilename :: Text
-  , nlrModified :: Bool
+  { filename :: Text
+  , modified :: Bool
   } deriving (Show, Eq)
 
 readAiBlogPostFiles :: FilePath -> IO [Text]
@@ -113,20 +113,20 @@ ensureAllNavLinks aiBlogDir = do
   traverse (processFile aiBlogDir files fileCount) indexed
 
 processFile :: FilePath -> [Text] -> Int -> (Int, Text) -> IO NavLinkResult
-processFile aiBlogDir files fileCount (idx, filename) = do
-  let prevFilename = if idx > 0 then Just (files !! (idx - 1)) else Nothing
-      nextFilename = if idx < fileCount - 1 then Just (files !! (idx + 1)) else Nothing
+processFile aiBlogDir files fileCount (index, filename) = do
+  let prevFilename = if index > 0 then Just (files !! (index - 1)) else Nothing
+      nextFilename = if index < fileCount - 1 then Just (files !! (index + 1)) else Nothing
       filePath = aiBlogDir </> T.unpack filename
   content <- TIO.readFile filePath
   if navLinksMatch content prevFilename nextFilename
-    then pure NavLinkResult { nlrFilename = filename, nlrModified = False }
+    then pure NavLinkResult { filename = filename, modified = False }
     else
       let updated = updateNavLinks content prevFilename nextFilename
       in if updated == content
-         then pure NavLinkResult { nlrFilename = filename, nlrModified = False }
+         then pure NavLinkResult { filename = filename, modified = False }
          else do
            TIO.writeFile filePath updated
-           pure NavLinkResult { nlrFilename = filename, nlrModified = True }
+           pure NavLinkResult { filename = filename, modified = True }
 
 extractAiBlogTitle :: FilePath -> Text -> IO Text
 extractAiBlogTitle aiBlogDir filename = do
@@ -135,8 +135,8 @@ extractAiBlogTitle aiBlogDir filename = do
   if exists
     then do
       content <- TIO.readFile filePath
-      let (fm, _) = parseFrontmatter content
-      pure $ case Map.lookup "title" fm of
+      let (frontmatter, _) = parseFrontmatter content
+      pure $ case Map.lookup "title" frontmatter of
         Just title -> title
         Nothing    -> fromMaybe filename (T.stripSuffix ".md" filename)
     else pure (fromMaybe filename (T.stripSuffix ".md" filename))
@@ -148,9 +148,9 @@ buildReflectionLinks aiBlogDir results = do
 
 buildEntry :: FilePath -> NavLinkResult -> IO (Maybe (Text, Title, Text))
 buildEntry aiBlogDir result = do
-  titleText <- extractAiBlogTitle aiBlogDir (nlrFilename result)
-  let relPath = "ai-blog/" <> nlrFilename result
+  titleText <- extractAiBlogTitle aiBlogDir (filename result)
+  let relPath = "ai-blog/" <> filename result
   pure $ do
-    date <- extractPostDate (nlrFilename result)
+    date <- extractPostDate (filename result)
     validTitle <- either (const Nothing) Just (mkTitle titleText)
     Just (relPath, validTitle, date)

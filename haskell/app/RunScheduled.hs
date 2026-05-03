@@ -75,7 +75,7 @@ main = do
       exitFailure
 
   let seriesConfigs = fmap deriveBlogSeriesConfig discovered
-      seriesMap = Map.fromList (fmap (\config -> (bscId config, config)) seriesConfigs)
+      seriesMap = Map.fromList (fmap (\config -> (identifier config, config)) seriesConfigs)
       runConfigs = buildBlogSeriesRunConfigs (fmap deriveBlogSeriesRunConfig discovered)
       dynamicScheduleEntries = fmap deriveScheduleEntry discovered
       fullSchedule = buildSchedule dynamicScheduleEntries

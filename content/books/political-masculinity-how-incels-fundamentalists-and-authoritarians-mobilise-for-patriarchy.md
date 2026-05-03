@@ -10,9 +10,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-26T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-05-03T09:39:51Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A high-contrast, conceptual illustration featuring a digital landscape. In the center, a towering, jagged monolith made of dark, fragmented stone represents a crumbling patriarchal structure. From its base, tangled, glowing red fiber-optic cables snake outward like tree roots, connecting to various disconnected silhouettes—a hooded figure, a stylized crown, and a closed iron fist—all hovering in a murky, gray-toned void. The lighting is harsh and cinematic, casting long, dramatic shadows. The color palette is restricted to deep charcoal, slate gray, and an intense, warning-sign crimson. The composition conveys a sense of fragile, manufactured power and underlying volatility, emphasizing the intersection of digital radicalization and rigid, archaic hierarchies.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # ♂️👑✊ Political Masculinity: How Incels, Fundamentalists and Authoritarians Mobilise for Patriarchy  
+![books-political-masculinity-how-incels-fundamentalists-and-authoritarians-mobilise-for-patriarchy](../books-political-masculinity-how-incels-fundamentalists-and-authoritarians-mobilise-for-patriarchy.jpg)  
 [🛒 Political Masculinity: How Incels, Fundamentalists and Authoritarians Mobilise for Patriarchy. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3YpBQm5)  
   
 📖🌍🔥 Incels, fundamentalists, and authoritarians globally mobilize shared male-supremacist ideologies and aggrieved entitlement to translate reactionary dreams of male domination into political action, thereby underscoring masculinity as a key driver of the authoritarian backlash.  

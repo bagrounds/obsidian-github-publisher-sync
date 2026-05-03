@@ -10,9 +10,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-25T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-05-03T08:43:09Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A minimalist, high-contrast illustration featuring a weathered, neoclassical marble column being reconstructed by modern, geometric scaffolding. The scene is set against a stark, neutral background. At the base of the column, a vibrant, multi-colored assembly of puzzle-piece shapes—representing a diverse electorate—is actively fitting together to replace cracked sections of the stone. The lighting is sharp and dramatic, casting long, clean shadows that emphasize the juxtaposition between the rigid, traditional structure of the past and the fluid, reforming energy of the present. The overall aesthetic is clean, intellectual, and architectural, emphasizing themes of structural renewal and systemic change.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🏛️🗣️ Polemic for Democracy  
+![books-polemic-for-democracy](../books-polemic-for-democracy.jpg)  
 [🛒 Polemic for Democracy. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4kraS6o)  
   
 ## 📖 Book Report: 🏛️ Polemic for Democracy  

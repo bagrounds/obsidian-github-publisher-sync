@@ -49,6 +49,7 @@ library
     Automation.AiBlogLinks
     Automation.AiFiction
     Automation.BlogComments
+    Automation.BlogComments.GraphQL
     Automation.GcpAuth
     Automation.ObsidianSync
     Automation.StaticGiscus

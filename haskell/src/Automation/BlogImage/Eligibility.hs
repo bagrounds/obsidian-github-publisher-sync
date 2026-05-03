@@ -36,11 +36,11 @@ data IneligibilityReason
   deriving (Show, Eq)
 
 data BackfillCandidate = BackfillCandidate
-  { bcFilePath          :: FilePath
-  , bcDirectory         :: ContentDirectory
-  , bcFilename          :: Text
-  , bcDate              :: Day
-  , bcNeedsRegeneration :: Bool
+  { filePath            :: FilePath
+  , directory           :: ContentDirectory
+  , filename            :: Text
+  , date                :: Day
+  , requiresRegeneration :: Bool
   }
 
 excludedFiles :: [Text]
@@ -55,8 +55,8 @@ hasEmbeddedImage content =
 
 shouldRegenerateImage :: Text -> Bool
 shouldRegenerateImage content =
-  let (fm, _) = parseFrontmatter content
-  in case Map.lookup "regenerate_image" fm of
+  let (frontmatter, _) = parseFrontmatter content
+  in case Map.lookup "regenerate_image" frontmatter of
     Just v  -> T.strip (T.toLower v) `elem` ["true", "yes"]
     Nothing -> False
 

@@ -44,12 +44,12 @@ buildBlogContext seriesMap seriesId contentRoot comments today =
       agentsMd <- readAgentsMd seriesDir
       let filteredComments = filterCommentsAfterLastPost series selfPosts comments
       pure $ Right BlogContext
-        { bcxSeries           = series
-        , bcxAgentsMd         = agentsMd
-        , bcxPreviousPosts    = selfPosts
-        , bcxComments         = filteredComments
-        , bcxToday            = today
-        , bcxCrossSeriesPosts = crossPosts
+        { series           = series
+        , agentsMd         = agentsMd
+        , previousPosts    = selfPosts
+        , comments         = filteredComments
+        , today            = today
+        , crossSeriesPosts = crossPosts
         }
 
 partitionContextPosts :: Text -> Map Text BlogSeriesConfig -> [ContextPost] -> ([BlogPost], [CrossSeriesPost])

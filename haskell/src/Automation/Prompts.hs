@@ -52,8 +52,8 @@ stripSubtitle :: Text -> Text
 stripSubtitle title =
   case T.findIndex (== ':') title of
     Nothing -> title
-    Just idx ->
-      let shortened = T.strip (T.take idx title)
+    Just index ->
+      let shortened = T.strip (T.take index title)
       in if T.null shortened
         then title
         else shortened

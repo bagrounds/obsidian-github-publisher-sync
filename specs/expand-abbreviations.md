@@ -119,15 +119,21 @@ Record field abbreviation prefixes must be removed. When two records in the same
 
 #### Prompts.hs
 
-- [ ] `idx` → `index` (local variable in title truncation logic)
+- [x] `idx` → `index` (local variable in title truncation logic)
 
 #### InternalLinking.hs
 
-- [ ] `ls` → `contentLines` (local variable in `extractBody` and `processYamlFrontmatter`)
-- [ ] `pos` → `position` (local variable in `applyReplacements`)
+- [x] `ls` → `contentLines` (local variable in `extractBody` and `updateFrontmatterFields`, parameter in `upsertField`)
+- [x] `pos` → `position` (local variable in `applyReplacements`)
 - [ ] `len` → `matchLength` (local variable in `applyReplacements`)
 - [ ] `wl` → `wikilink` (local variable in `applyReplacements`)
-- [ ] `val` → expanded based on context
+- [ ] `val` → `yamlValue` (parameter in `upsertField`)
+- [ ] `acc` → `currentText` (accumulator parameter in `applyOne`)
+- [ ] `mFileResult` → `maybeFileResult` (local binding in `go`)
+- [ ] `infRef` → `inferenceCountRef` (IORef parameter in `processFiles`/`go`)
+- [ ] `resRef` → `resultsRef` (IORef parameter in `processFiles`/`go`)
+- [ ] `infCount` → `inferenceCount` (local binding in `go`)
+- [ ] `mKey` → `maybeKey` (local binding in `lookupSecret`)
 
 #### DailyReflection.hs
 
@@ -146,7 +152,9 @@ Record field abbreviation prefixes must be removed. When two records in the same
 #### ReflectionTitle.hs
 
 - [ ] `ls` → `titleLines` (local variable)
-- [ ] `val` → expanded based on context
+- [ ] `val` → `titleValue` (local variable in `titleMatchesDate`)
+- [ ] `tl` → `titleLine` (parameter in `titleMatchesDate`)
+- [ ] `acc` → `found` (accumulator in `findTitleLine`)
 
 #### SocialPosting.hs
 
@@ -164,7 +172,8 @@ Record field abbreviation prefixes must be removed. When two records in the same
 #### Text.hs
 
 - [ ] `xs` → `elements` (parameter in `findLastIndex`, `removeAt`)
-- [ ] `len` → `postLength` (local variable in `withinLimit`)
+- [ ] `len` → `postLength` (local variable in `validatePostLength`)
+- [ ] `p` → `predicate` (parameter in `findLastIndex`)
 
 ## Ordering Notes
 

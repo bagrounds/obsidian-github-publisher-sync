@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-05-02T13:29:18-07:00
+updated: 2026-05-03T06:10:06-07:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -14,18 +14,18 @@ updated: 2026-05-02T13:29:18-07:00
 🔊 Listen to any page with built in audio control.  
 💬 Comment on any page with your GitHub account.  
   
-## [🪞 Reflections](./reflections/index.md) ~ Blog (534)  
-- [2026-05-02](./reflections/2026-05-02.md)  
+## [🪞 Reflections](./reflections/index.md) ~ Blog (535)  
+- [2026-05-03](./reflections/2026-05-03.md)  
+- [2026-05-02 | 🧠 Learning 📈 Expanding 🌟 Horizons, 📰 Shifting 🐔 Open 🤖 Agency 🧹 Analytics 🏛️ Commons 🔀 Architecture. 📚📺🌌🌟📰🐔🤖🏛️🔀🔄🤖🐲](./reflections/2026-05-02.md)  
 - [2026-05-01 | ✅ Learning 🤖 Ruined 🤖 Reality 🐔 Beginnings 🔀 Architecture 🌟 Progress 🏛️ Infrastructure 📰 Innovation 🤖 Reports 📚📺🤖🐔🔀🌟🏛️📰🔄🤖🐲](./reflections/2026-05-01.md)  
 - [2026-04-30 | ✅ Pull 🤝 Agent 🐔 Lessons 🔀 Intent 🌟 Flourishing 🏛️ Well-being 📰 Progress 🤖 Purpose 🤖 Deploy 🥚🩼🤖🐔🔀🌟🏛️📰🤖🔄🤖🐲](./reflections/2026-04-30.md)  
-- [2026-04-29 | ⚙️ Matter 🌊 Currents 🌟 Hope 🐔 Quiet 🤖 Intent 🏛️ Informed 🔀 Architecture. 📺📰🌟🐔🤖🏛️🔀🔄🤖🐲](./reflections/2026-04-29.md)  
   
   
-## [🤖 AI Blog](./ai-blog/index.md) (177)  
-- [2026-05-02 | 🔤 Expanding gc to graphqlComment in BlogComments 🧹](./ai-blog/2026-05-02-3-expand-abbreviations-gc-to-gql-comment.md)  
-- [2026-05-02 | 🔤 Expand Abbreviations: initialRequest 🧹](./ai-blog/2026-05-02-1-expand-abbreviations-initial-request.md)  
-- [2026-05-01 | 📚 Lessons From an Abandoned PR: Auto-Generating Book Reports 🤖](./ai-blog/2026-05-01-1-book-reports-journey-reflection.md)  
-- [2026-04-30 | 📚 Auto-Generating Book Reports 🤖](./ai-blog/2026-04-30-2-auto-generate-book-reports.md)  
+## [🤖 AI Blog](./ai-blog/index.md) (184)  
+- [2026-05-02 | 🔤 Expand Abbreviations: inferenceCountRef, resultsRef, maybeFileResult, inferenceCount, maybeKey 🧹](./ai-blog/2026-05-02-9-expand-abbreviations-inference-refs.md)  
+- [2026-05-02 | 🔤 Expand Abbreviations: idx, ls, pos 🧹](./ai-blog/2026-05-02-7-expand-abbreviations-idx-ls-pos.md)  
+- [2026-05-02 | 🔤 Expand Abbreviations: Analytics & Daily Updates 🧹](./ai-blog/2026-05-02-6-expand-abbreviations-analytics-and-daily-updates.md)  
+- [2026-05-02 | 🔤 Expand Abbreviations: TokenResponse and ServiceAccountKey Fields 🧹](./ai-blog/2026-05-02-5-expand-abbreviations-token-response-and-service-account-key.md)  
   
   
 ## [🤖 Auto Blog Zero](./auto-blog-zero/index.md) (53)  
@@ -63,18 +63,18 @@ updated: 2026-05-02T13:29:18-07:00
 - [2026-04-29 | 🌟 Hope Blooms: Breakthroughs, Green Shoots, and Global Handshakes 🌟](./positivity-bias/2026-04-29-hope-blooms-breakthroughs-green-shoots-and-global-handshakes.md)  
   
   
-## [🔀 Convergence](./convergence/index.md) (18)  
+## [🔀 Convergence](./convergence/index.md) (19)  
+- [2026-05-02 | 🔀 🕸️ The Architecture of Coherence: Orchestration, Emergence, and the Agency Mesh 🔀](./convergence/2026-05-02-the-architecture-of-coherence-orchestration-emergence-and-the-agency-mesh.md)  
 - [2026-05-01 | 🔀 🌐 From Solitary Intent to Swarm Intelligence: The Architecture of the Collective 🔀](./convergence/2026-05-01-from-solitary-intent-to-swarm-intelligence-the-architecture-of-the-collective.md)  
 - [2026-04-30 | 🔀 The Architecture of Intent: From Syntax to Sanctuary 🔀](./convergence/2026-04-30-the-architecture-of-intent-from-syntax-to-sanctuary.md)  
 - [2026-04-29 | 🔀 🏗️ The Architecture of Intent: From Syntax to Sanctuary 🔀](./convergence/2026-04-29-the-architecture-of-intent-from-syntax-to-sanctuary.md)  
-- [2026-04-28 | 🔀 The Architectures of Well-Being: Convergence in Care, Cognition, and Collective Futures 🔀](./convergence/2026-04-28-the-architectures-of-well-being-convergence-in-care-cognition-and-collective-futures.md)  
   
   
 ## [📚 Books](./books/index.md) (961)  
-- [⛰️📈🥇 Peak: Secrets from the New Science of Expertise](./books/peak.md)  
-- [🚀📈🧘 Peak Performance: Elevate Your Game, Avoid Burnout, and Thrive with the New Science of Success](./books/peak-performance-elevate-your-game-avoid-burnout-and-thrive-with-the-new-science-of-success.md)  
-- [🏛️🤝🕊️ Pax Democratica: A Strategy for the 21st Century](./books/pax-democratica.md)  
-- [🤔🧩⚖️ Patterns, Thinking, and Cognition: A Theory of Judgment](./books/patterns-thinking-and-cognition-a-theory-of-judgment.md)  
+- [🤖✅ Principles of Model Checking](./books/principles-of-model-checking.md)  
+- [🧑‍🏫📉🎤🧘 Presentation Zen: Simple Ideas on Presentation Design and Delivery](./books/presentation-zen.md)  
+- [🌱🔢✨ Precursor Math Concepts: The Wonder of Mathematical Worlds With Infants and Toddlers](./books/precursor-math-concepts-the-wonder-of-mathematical-worlds-with-infants-and-toddlers.md)  
+- [🧘🏼‍♀️👩🏼‍🏫 Practicing Mindfulness: An Introduction to Meditation](./books/practicing-mindfulness-an-introduction-to-meditation.md)  
   
   
 ## [📺 Videos](./videos/index.md) (815)  
@@ -85,10 +85,10 @@ updated: 2026-05-02T13:29:18-07:00
   
   
 ## [🌌 Topics](./topics/index.md) (91)  
-- [✍🏽🤖 Blog Bot](./topics/blog-bot.md)  
+- [🦬🪒 Yak Shaving](./topics/yak-shaving.md)  
+- [⏳🍽️ Time-Restricted Eating](./topics/time-restricted-eating.md)  
+- [💻🌐<> Web Development](./topics/web-development.md)  
 - [⭐✨🌟💫 The Star](./topics/the-star.md)  
-- [⚙️💡💻🤖📡 Technology](./topics/technology.md)  
-- [💾🧱⚡️ Static Site Generation](./topics/static-site-generation.md)  
   
   
 ## [📄  Articles](./articles/index.md) (84)  
@@ -99,10 +99,10 @@ updated: 2026-05-02T13:29:18-07:00
   
   
 ## [🤖💬 Bot Chats](./bot-chats/index.md) (49)  
+- [⁉️🔣🪵 Special Characters In Logs](./bot-chats/special-characters-in-logs.md)  
 - [🤰🏼👶🍼👨‍👩‍👦 Parenting and Infant Development Guide](./bot-chats/parenting-and-infant-development-guide.md)  
 - [⚙️📝🧹 Obsidian Templater Filename Sanitization](./bot-chats/obsidian-templater-filename-sanitization.md)  
 - [🔥 Motivation & 🧘 Discipline](./bot-chats/motivation-and-discipline.md)  
-- [⁉️🔣🪵 Special Characters In Logs](./bot-chats/special-characters-in-logs.md)  
   
   
 ## [💾 Software](./software/index.md) (33)  

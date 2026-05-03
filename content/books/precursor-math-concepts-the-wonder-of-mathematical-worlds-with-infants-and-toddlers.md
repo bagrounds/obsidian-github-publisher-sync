@@ -10,9 +10,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-26T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-05-03T11:24:13Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A bright, sunlit room featuring a soft-colored rug where a toddler is engaged in play. The scene focuses on a collection of natural objects—smooth wooden blocks, colorful fabric scraps, and round river stones—arranged in a loose, intuitive pattern. Some objects are grouped by color, while others are stacked in varying heights, showing a subtle exploration of size and sequence. A pair of adult hands is gently placed nearby, not interfering, but clearly observing. The atmosphere is warm, calm, and curious, highlighting the intersection of childhood wonder and the early building blocks of logic. The lighting is soft and natural, casting gentle shadows that emphasize the textures of the wooden blocks and the tactile nature of the play.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🌱🔢✨ Precursor Math Concepts: The Wonder of Mathematical Worlds With Infants and Toddlers  
+![books-precursor-math-concepts-the-wonder-of-mathematical-worlds-with-infants-and-toddlers](../books-precursor-math-concepts-the-wonder-of-mathematical-worlds-with-infants-and-toddlers.jpg)  
 [🛒 Precursor Math Concepts: The Wonder of Mathematical Worlds With Infants and Toddlers. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4ceTZeA)  
   
 👶➕➖🤔 Infants and toddlers naturally develop foundational mathematical thinking through four precursor concepts: Attribute, Comparison, Change, and Pattern.  

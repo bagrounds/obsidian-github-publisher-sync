@@ -131,11 +131,14 @@ Record field abbreviation prefixes must be removed. When two records in the same
 - [x] `wl` → `wikilink` (local variable in `applyReplacements`)
 - [x] `val` → `yamlValue` (parameter in `upsertField`)
 - [x] `acc` → `currentText` (accumulator parameter in `applyOne`)
-- [x] `mFileResult` → `maybeFileResult` (local binding in `go`)
-- [x] `infRef` → `inferenceCountRef` (IORef parameter in `go`)
-- [x] `resRef` → `resultsRef` (IORef parameter in `go`)
-- [x] `infCount` → `inferenceCount` (local binding in `go`)
+- [x] `mFileResult` → `maybeFileResult` (local binding in `visitFiles`)
+- [x] `infRef` → `inferenceCount` (IORef parameter in `visitFiles`, dropping redundant `Ref` suffix)
+- [x] `resRef` → `fileResults` (IORef parameter in `visitFiles`, dropping redundant `Ref` suffix)
+- [x] `infCount` → `currentInferenceCount` (local read binding in `visitFiles`)
 - [x] `mKey` → `maybeKey` (local binding in `lookupSecret`)
+- [x] `go` → `visitFiles` (meaningless helper name replaced with descriptive name)
+- [x] `inferenceRef` → `inferenceCount` (outer IORef binding in `processFiles`, dropping `Ref`)
+- [x] `resultRef` → `fileResults` (outer IORef binding in `processFiles`, dropping `Ref`)
 - [ ] `fm` → `frontmatter` (local binding for `parseFrontmatter` result in `alreadyAnalyzed`)
 
 #### DailyReflection.hs

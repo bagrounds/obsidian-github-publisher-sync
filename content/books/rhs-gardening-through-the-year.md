@@ -11,9 +11,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-19T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-05-04T11:41:11Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: "A high-angle, split-composition illustration depicting a lush garden evolving across four seasons. The image is divided into four quadrants, each featuring a distinct seasonal transition: a patch of spring crocuses pushing through damp soil, a vibrant summer vegetable bed overflowing with ripe tomatoes and leafy greens, a crisp autumn scene with fallen golden leaves and a wooden garden fork leaning against a terracotta pot, and a quiet winter garden featuring frost-covered evergreen shrubs and bare, elegant branches. The color palette shifts from soft pastels to vibrant greens, then to warm oranges and deep earthy browns, and finally to cool, icy blues and whites. A subtle, circular layout suggests the cyclical nature of the year, with soft, natural lighting creating a serene and inviting atmosphere."
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🗓️🌷 RHS Gardening Through the Year  
+![books-rhs-gardening-through-the-year](../books-rhs-gardening-through-the-year.jpg)  
 [🛒 RHS Gardening Through the Year. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3FD3Dd1)  
   
 ## 📚 Book Report: 🌻 RHS Gardening Through the Year by Ian Spence  

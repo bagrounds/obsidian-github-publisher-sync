@@ -13,7 +13,7 @@ link_analysis_version: "2"
 link_analysis_time: 2026-05-03T00:00:00Z
 force_analyze_links: false
 ---
-[Home](../index.md) > [🐔 Chickie Loo](./index.md) | [⏮️](./2026-05-02-a-saturday-of-quiet-rain-and-open-doors.md)  
+[Home](../index.md) > [🐔 Chickie Loo](./index.md) | [⏮️](./2026-05-02-a-saturday-of-quiet-rain-and-open-doors.md) [⏭️](./2026-05-04-a-full-house-and-a-full-heart.md)  
 # 2026-05-03 | 🐔 🌻 A Sunday of Reflection and Roots 🐔  
 ![chickie-loo-2026-05-03-a-sunday-of-reflection-and-roots](../chickie-loo-2026-05-03-a-sunday-of-reflection-and-roots.jpg)  
   

@@ -596,7 +596,8 @@ bfsTests = testGroup "BFS discovery"
           Nothing -> assertBool "should have read note" False
           Just note -> do
             assertEqual "title" (testTitle "My Book") (noteTitle note)
-            assertEqual "url" (testUrl "https://example.com/books/my-book") (noteUrl note)
+            assertEqual "url is derived from file path, not frontmatter"
+              (testUrl "https://bagrounds.org/books/my-book") (noteUrl note)
 
   , testCase "bfsContentDiscovery with empty dir returns empty" $ do
       withSystemTempDirectory "social-test" $ \dir -> do
@@ -653,7 +654,7 @@ urlValidationTests = testGroup "URL validation"
       result <- validateNoteUrl alwaysDead note
       assertEqual "should return Nothing for dead URL" Nothing result
 
-  , testCase "validateNoteUrl fixes stale frontmatter URL when file-path URL is live" $ do
+  , testCase "validateNoteUrl updates stale frontmatter URL to canonical URL when live" $ do
       withSystemTempDirectory "url-test" $ \dir -> do
         let booksDir = dir </> "books"
         createDirectoryIfMissing True booksDir
@@ -664,7 +665,7 @@ urlValidationTests = testGroup "URL validation"
               { noteFilePath = booksDir </> "renamed-book.md"
               , noteRelativePath = testRelativePath "books/renamed-book.md"
               , noteTitle = testTitle "My Book"
-              , noteUrl = testUrl "https://bagrounds.org/books/old-name"
+              , noteUrl = testUrl "https://bagrounds.org/books/renamed-book"
               , noteBody = T.replicate 60 "x"
               , notePostedPlatforms = Set.empty
               , noteLinkedNotePaths = []
@@ -673,22 +674,34 @@ urlValidationTests = testGroup "URL validation"
               }
         result <- validateNoteUrl checker note
         case result of
-          Nothing -> assertBool "should return fixed note" False
-          Just n  -> assertEqual "url should be updated"
+          Nothing -> assertBool "should return note when live" False
+          Just n  -> assertEqual "url should be the canonical one"
             (testUrl "https://bagrounds.org/books/renamed-book") (noteUrl n)
-        -- Verify the file was updated
+        -- Verify the stale frontmatter URL was replaced with the canonical URL
         updatedContent <- TIO.readFile (booksDir </> "renamed-book.md")
-        assertBool "file should contain new URL"
+        assertBool "file should contain canonical URL"
           (T.isInfixOf "https://bagrounds.org/books/renamed-book" updatedContent)
+        assertBool "file should not contain stale URL"
+          (not (T.isInfixOf "https://bagrounds.org/books/old-name" updatedContent))
 
-  , testCase "validateNoteUrl returns Nothing when both URLs are dead" $ do
+  , testCase "validateNoteUrl returns Nothing when canonical URL is dead" $ do
       let alwaysDead _ = pure False
           note = (mkNote "books/my-book.md" "My Book" (T.replicate 60 "x"))
-            { noteUrl = testUrl "https://bagrounds.org/books/old-name"
-            , noteFilePath = "/nonexistent/books/my-book.md"
-            }
+            { noteUrl = testUrl "https://bagrounds.org/books/my-book" }
       result <- validateNoteUrl alwaysDead note
-      assertEqual "should return Nothing for both dead URLs" Nothing result
+      assertEqual "should return Nothing for dead URL" Nothing result
+
+  , testCase "readContentNote derives URL from file path ignoring frontmatter URL" $ do
+      withSystemTempDirectory "read-test" $ \dir -> do
+        let booksDir = dir </> "books"
+        createDirectoryIfMissing True booksDir
+        TIO.writeFile (booksDir </> "my-book.md")
+          ("---\ntitle: My Book\nURL: \"https://bagrounds.org/wrong-url\"\n---\n" <> T.replicate 60 "x")
+        result <- readContentNote "books/my-book.md" dir
+        case result of
+          Nothing -> assertBool "should read note" False
+          Just n  -> assertEqual "url should be derived from file path, not frontmatter"
+            (testUrl "https://bagrounds.org/books/my-book") (noteUrl n)
 
   , testCase "BFS skips notes with dead URLs but still follows links" $ do
       withSystemTempDirectory "url-test" $ \dir -> do

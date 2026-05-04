@@ -118,8 +118,7 @@ readContentNote relativePath contentDir = do
           linkedPaths = extractMarkdownLinks body relativePath contentDir
           noSocial = Map.lookup "no_social" frontmatter == Just "true"
           titleText = fromMaybe (T.pack $ takeBaseName $ T.unpack relativePath) (Map.lookup "title" frontmatter)
-          slug = fromMaybe relativePath (T.stripSuffix ".md" relativePath)
-          urlText = fromMaybe ("https://bagrounds.org/" <> slug) (Map.lookup "URL" frontmatter)
+          urlText = urlFromFilePath relativePath
           imageDate = Map.lookup "image_date" frontmatter >>= parseImageDate
           validated = do
             title <- mkTitle titleText
@@ -168,33 +167,16 @@ urlFromFilePath relativePath =
 
 validateNoteUrl :: (Text -> IO Bool) -> ContentNote -> IO (Maybe ContentNote)
 validateNoteUrl checker note = do
-  isLive <- checker (unUrl (noteUrl note))
+  let canonicalUrl = unUrl (noteUrl note)
+  isLive <- checker canonicalUrl
   if isLive
-    then pure (Just note)
+    then do
+      updateFrontmatterUrl (noteFilePath note) canonicalUrl
+      pure (Just note)
     else do
-      let pathUrl = urlFromFilePath (unRelativePath (noteRelativePath note))
-      if pathUrl == unUrl (noteUrl note)
-        then do
-          putStrLn $ "  🚫 URL not published (404): "
-            <> T.unpack (unTitle (noteTitle note)) <> " (" <> T.unpack (unUrl (noteUrl note)) <> ")"
-          pure Nothing
-        else do
-          putStrLn $ "  🔧 Frontmatter URL 404'd (" <> T.unpack (unUrl (noteUrl note))
-            <> "), trying file-path URL: " <> T.unpack pathUrl
-          isPathLive <- checker pathUrl
-          if isPathLive
-            then case mkUrl pathUrl of
-              Right newUrl -> do
-                putStrLn "  ✅ File-path URL is live, updating frontmatter"
-                updateFrontmatterUrl (noteFilePath note) pathUrl
-                pure (Just note { noteUrl = newUrl })
-              Left reason -> do
-                putStrLn $ "  ⚠️  Invalid path URL: " <> T.unpack reason
-                pure Nothing
-            else do
-              putStrLn $ "  🚫 Both URLs not published: "
-                <> T.unpack (unUrl (noteUrl note)) <> " and " <> T.unpack pathUrl
-              pure Nothing
+      putStrLn $ "  🚫 URL not published (404): "
+        <> T.unpack (unTitle (noteTitle note)) <> " (" <> T.unpack canonicalUrl <> ")"
+      pure Nothing
 
 isPostableContent :: ContentNote -> Bool
 isPostableContent note =

@@ -1,10 +1,10 @@
-# 🔍 Blog Series Auto-Discovery — Declarative Configuration
+# 🔍 Blog Series Configuration — Declarative Haskell Configs
 
 ## 🎯 Overview
 
-📋 Blog series are defined as individual JSON configuration files in the `haskell/series/` directory.
-🔍 The system auto-discovers all `.json` files at startup and derives everything needed to run each series.
-🚀 Adding a new blog series requires only creating a single config file — no Haskell source changes.
+📋 Blog series are defined as individual Haskell modules in `haskell/src/Automation/Series/`.
+🔍 The central registry `haskell/src/Automation/Series.hs` combines all series into a sorted list at compile time.
+🚀 Adding a new blog series requires creating a Haskell module and registering it in the central registry.
 
 ## 🏗️ Architecture
 
@@ -12,17 +12,17 @@
 
 | 🧩 Component | 📂 Path | 📝 Purpose |
 |---|---|---|
-| 🔍 Discovery | `haskell/src/Automation/BlogSeriesDiscovery.hs` | JSON config parser, validation, convention-based derivation |
+| 🗂️ Series Registry | `haskell/src/Automation/Series.hs` | Exports `allSeries :: [DiscoveredSeries]` sorted by ID |
+| 🗂️ Series Modules | `haskell/src/Automation/Series/*.hs` | One module per series, each exporting a `series :: DiscoveredSeries` value |
+| 🔍 Derivation | `haskell/src/Automation/BlogSeriesDiscovery.hs` | `DiscoveredSeries` type and convention-based derivation functions |
 | ⚙️ Series Config | `haskell/src/Automation/BlogSeriesConfig.hs` | Runtime-parameterized series metadata and lookup |
 | 🗓️ Scheduler | `haskell/src/Automation/Scheduler.hs` | Dynamic schedule built from discovered series |
-| 🚀 Runner | `haskell/app/RunScheduled.hs` | Discovers series at startup, builds dynamic task runners |
+| 🚀 Runner | `haskell/app/RunScheduled.hs` | Uses `allSeries` at startup to build dynamic task runners |
 
 ### 🔄 Data Flow
 
 ```
-📂 haskell/series/*.json (config files on disk)
-         ↓
-🔍 discoverSeries(haskellDir) → [DiscoveredSeries]
+📦 Automation.Series.allSeries :: [DiscoveredSeries] (compile-time)
          ↓
    ├─ deriveBlogSeriesConfig → BlogSeriesConfig (metadata)
    ├─ deriveBlogSeriesRunConfig → BlogSeriesRunConfig (models, env var)
@@ -33,69 +33,76 @@
 🚀 taskRunners(context, seriesMap, runConfigs) → Map TaskId (IO ())
 ```
 
-## 📄 Configuration Schema
+## 📄 Configuration — DiscoveredSeries Fields
 
-📋 Each series is a JSON object in `haskell/series/{series-id}.json`.
-🏷️ The series ID is derived from the filename (e.g., `garden-thoughts.json` becomes series ID `garden-thoughts`).
-📦 Parsing uses the existing `Automation.Json` module with `FromValue` and the `(.:)` and `(.:?)` operators.
+📋 Each series module defines a `DiscoveredSeries` value with the following fields.
 
 ### 📝 Required Fields
 
 | 🏷️ Field | 📊 Type | 📝 Description |
 |---|---|---|
-| `name` | string | Display name for the series |
-| `icon` | string | Emoji icon for the series |
-| `scheduleHourPacific` | number | Hour in Pacific time to generate posts (0-23) |
-| `models` | array of strings | Gemini model chain (primary model first, fallbacks after) |
+| `seriesId` | `Text` | Unique kebab-case identifier matching the content directory name |
+| `seriesName` | `Text` | Display name for the series |
+| `seriesIcon` | `Text` | Emoji icon for the series |
+| `scheduleTime` | `TimeOfDay` | Pacific time to generate posts (use `TimeOfDay hour 0 0`) |
+| `modelChain` | `NonEmpty Gemini.Model` | Primary model followed by fallbacks |
+| `contextQueries` | `[ContextQuery]` | Posts to include as generation context |
+| `searchGrounding` | `Bool` | Whether to use Google Search grounding |
 
 ### 📝 Optional Fields
 
-- 🏷️ priorityUser is a string or null, defaulting to null. It specifies the GitHub handle whose comments get priority flagging.
-- 🏷️ contextSources is an optional array of query objects. When absent, defaults to reading the 7 most recent posts from the series' own directory.
-- 🏷️ enableGrounding is a boolean, defaulting to false. When true, Google Search grounding is used during post generation and a Sources section with verified URLs is appended to each post. All active series configs declare this field explicitly even though it is optional.
+- 🏷️ `priorityUser` is `Maybe Text`. Use `Just "handle"` or `Nothing`. It specifies the GitHub handle whose comments get priority flagging.
+- 🗂️ `contextQueries` accepts `defaultContextQueries seriesId` for the standard 7 most-recent-posts behaviour, or a custom `[ContextQuery]` list for cross-series context (see Convergence for an example).
 
-### 🔎 Context Query Language
+### 📄 Example Module
 
-📐 Each element of contextSources is a SQL-like query object with the following properties.
+📄 The following Haskell shows a minimal series configuration.
 
-- 🗂️ from (required) is a JSON array of directory path strings relative to the content root. For example, ["auto-blog-zero"] or ["chickie-loo", "the-noise", "positivity-bias"].
-- 🔎 where (optional) is an array of filter conditions. Each condition has field (filename, date, or title), operator (>=, <=, or contains), and value (the comparison text).
-- 📊 orderBy (optional) is a string naming the field to sort by: filename, date, or title. Defaults to filename when omitted.
-- 🔀 ascending (optional) is a boolean. When true, results are sorted in ascending order. Defaults to false (descending).
-- 🔢 limit (optional) is a number capping total results across all source directories.
-- 🔢 limitPerSource (optional) is a number capping results per source directory independently.
+```haskell
+module Automation.Series.GardenThoughts (series) where
 
-📝 When contextSources is absent, the engine generates a default query equivalent to: from is the array containing the series' own ID, orderBy is filename (descending by default), and limit is 7. This preserves backward compatibility with all existing configs.
+import Data.List.NonEmpty (NonEmpty ((:|)))
+import Data.Time.LocalTime (TimeOfDay (..))
 
-📋 Example: Convergence reads its own recent posts and the latest from each of the other five series.
+import qualified Automation.Gemini as Gemini
+import Automation.BlogSeriesDiscovery (DiscoveredSeries (..))
+import Automation.ContextQuery (defaultContextQueries)
 
-```json
-"contextSources": [
-  { "from": ["convergence"], "orderBy": "filename", "limit": 7 },
-  { "from": ["auto-blog-zero", "chickie-loo", "the-noise", "positivity-bias", "systems-for-public-good"], "orderBy": "filename", "limitPerSource": 1 }
-]
+series :: DiscoveredSeries
+series = DiscoveredSeries
+  { seriesId        = "garden-thoughts"
+  , seriesName      = "Garden Thoughts"
+  , seriesIcon      = "🌱"
+  , priorityUser    = Just "bagrounds"
+  , scheduleTime    = TimeOfDay 11 0 0
+  , modelChain      = Gemini.Gemini25Flash :| [Gemini.Gemini25FlashLite]
+  , contextQueries  = defaultContextQueries "garden-thoughts"
+  , searchGrounding = False
+  }
 ```
 
-### 📄 Example Configuration
+### 📋 Cross-Series Context Queries
 
-📄 The following JSON shows the full schema. All fields except priorityUser, contextSources, and enableGrounding are required.
+📐 Series that draw context from multiple other series define their `contextQueries` explicitly using `ContextQuery` values. 📋 The Convergence series reads recent posts from its own directory and one latest post from each of the other five series.
 
-```json
-{
-  "name": "Garden Thoughts",
-  "icon": "🌱",
-  "priorityUser": "bagrounds",
-  "scheduleHourPacific": 11,
-  "models": ["gemini-2.5-flash", "gemini-2.5-flash-lite"],
-  "enableGrounding": false
-}
+```haskell
+contextQueries =
+  [ ContextQuery
+      { directories    = ["convergence"]
+      , conditions     = []
+      , orderBy        = OrderBy Filename Descending
+      , limit          = Just 7
+      , limitPerSource = Nothing
+      }
+  , ContextQuery
+      { directories    = ["auto-blog-zero", "chickie-loo", "the-noise", "positivity-bias", "systems-for-public-good"]
+      , conditions     = []
+      , orderBy        = OrderBy Filename Descending
+      , limit          = Nothing
+      , limitPerSource = Just 1
+      }
+  ]
 ```
-
-### 🔮 Extensibility Design
-
-📐 New required fields must be added to all existing config files at the same time as the Haskell change.
-🆕 To add a new optional customization (e.g., recap frequency, minimum post length, or image generation style), add an optional field to the JSON schema and use the optional operator in the FromValue instance with a sensible default value. This keeps existing configs valid during rollout.
-📋 Planned future fields are documented in the Future Considerations section.
 
 ## 🔧 Convention-Based Derivation
 
@@ -114,26 +121,31 @@
 
 📋 To add a new fully automated blog series, follow the [Blog Series Launch Checklist](blog-series-launch-checklist.md). 🚀 The checklist covers all files to create, all documentation to update, and what the automation handles automatically.
 
-📐 The technical minimum is a single JSON config file, but a complete launch PR also includes an AGENTS.md system prompt, an inaugural seed post, a product spec, and documentation updates to the README, blog-generation spec, and scheduled-tasks spec.
+📐 The technical minimum is a new Haskell module and a one-line addition to the central registry, but a complete launch PR also includes an AGENTS.md system prompt, an inaugural seed post, a product spec, and documentation updates to the README, blog-generation spec, and scheduled-tasks spec.
 
-### 1️⃣ Create the config file
+### 1️⃣ Create the series Haskell module
 
-📄 Create `haskell/series/{series-id}.json` with the required fields.
-📝 The filename determines the series ID.
+📄 Create `haskell/src/Automation/Series/{PascalCaseId}.hs` following the example above.
+📝 The `seriesId` field determines the series ID and must match the content directory name.
 
-### 2️⃣ Create the content directory with AGENTS.md and seed post
+### 2️⃣ Register in the central registry
+
+📝 Add `import qualified Automation.Series.{PascalCaseId} as {PascalCaseId}` and `{PascalCaseId}.series` to the list in `haskell/src/Automation/Series.hs`.
+📦 Add both `Automation.Series.{PascalCaseId}` entries to the `exposed-modules` list in `haskell/automation.cabal`.
+
+### 3️⃣ Create the content directory with AGENTS.md and seed post
 
 📂 Create the directory `{series-id}/` in the repo root.
 📖 Add an `AGENTS.md` file with the series system prompt defining identity, voice, editorial standards, and post structure.
 📰 Add an inaugural seed post to give the automation context for subsequent posts.
 
-### 3️⃣ Update documentation
+### 4️⃣ Update documentation
 
 📝 See the [launch checklist](blog-series-launch-checklist.md) for the complete list of documentation files that must be updated (README, blog-generation spec, scheduled-tasks spec).
 
 ### 🔧 What happens automatically
 
-🔍 The system discovers the config file at startup.
+🔍 The system includes the series at compile time via `allSeries`.
 📐 Derives the base URL, author link, nav link, and environment variable name.
 🗓️ Registers a schedule entry for the configured hour.
 🤖 Registers a task runner with the configured model chain.
@@ -142,29 +154,14 @@
 🧠 Shared prompt construction, date awareness, recap detection, and navigation linking work automatically.
 🖼️ Image generation and backfill work automatically.
 
-### 🚫 What you do NOT need to change
-
-🚫 No changes to `BlogSeriesConfig.hs` — discovery replaces the hardcoded map.
-🚫 No changes to `Scheduler.hs` — dynamic schedule entries are built from configs.
-🚫 No changes to `RunScheduled.hs` — dynamic task runners are built from configs.
-🚫 No changes to any `TaskId` type — `BlogSeries Text` handles all series dynamically.
-
 ## 🧪 Testing
 
-🔬 `BlogSeriesDiscoveryTest.hs` contains tests across four suites:
-- 📄 Parsing: valid JSON configs, null and missing priority users, error cases
-- 📐 Derivation: author, base URL, nav link, env var, task ID, schedule entry
-- ✅ Validation: missing fields, empty models, optional fields
-- 🔬 Properties: wikilink wrapping, URL prefixing, env var format, ID preservation
+🔬 `BlogSeriesDiscoveryTest.hs` contains tests across three suites:
+- 📐 Derivation: author, base URL, nav link, env var, task ID, schedule entry, `deriveBlogSeriesConfig`, `deriveBlogSeriesRunConfig`
+- 🗂️ Context queries: `deriveBlogSeriesConfig` preserves explicit and empty context query lists
+- 🔬 Properties: wikilink wrapping, URL prefixing, env var format, ID and icon and name preservation
 
-🔬 Existing tests in `BlogSeriesConfigTest.hs`, `SchedulerTest.hs`, and `BlogSeriesTest.hs` were updated to work with the runtime-parameterized API.
-
-## ⚠️ Error Handling
-
-📋 Discovery errors are reported with clear context:
-- 📄 JSON parse errors include the file path and parse error message
-- ⚠️ Validation errors include the file path and description of the missing or invalid field
-- ❌ If any config file fails to parse or validate, the application exits with a nonzero status
+🔬 Existing tests in `BlogSeriesConfigTest.hs`, `SchedulerTest.hs`, and `BlogSeriesTest.hs` continue to use `DiscoveredSeries` values directly via `deriveBlogSeriesConfig`.
 
 ## 🔮 Future Considerations
 

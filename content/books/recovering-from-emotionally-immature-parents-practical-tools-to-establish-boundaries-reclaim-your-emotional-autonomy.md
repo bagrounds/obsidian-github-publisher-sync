@@ -10,9 +10,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-18T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-05-04T08:09:32Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A minimalist, metaphorical composition centered on a vibrant, translucent butterfly emerging from a crumbling, grey stone cocoon. The background is a soft, warm gradient shifting from deep shadows on the bottom left to a bright, hopeful morning light on the top right. A single, thin, golden line circles the butterfly, representing a protective boundary that separates it from the fragmented, monochromatic remnants of the cocoon. The scene is serene and airy, focusing on themes of transformation, self-liberation, and the reclamation of one’s own space. The lighting is soft and diffuse, highlighting the delicate texture of the butterfly’s wings against the harsh, jagged edges of the discarded stone.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # ❤️‍🩹👶🚫🌱 Recovering from Emotionally Immature Parents: Practical Tools to Establish Boundaries & Reclaim Your Emotional Autonomy  
+![books-recovering-from-emotionally-immature-parents-practical-tools-to-establish-boundaries-reclaim-your-emotional-autonomy](../books-recovering-from-emotionally-immature-parents-practical-tools-to-establish-boundaries-reclaim-your-emotional-autonomy.jpg)  
 [🛒 Recovering from Emotionally Immature Parents: Practical Tools to Establish Boundaries & Reclaim Your Emotional Autonomy. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3YgJKyl)  
   
 💪🛡️🦋 Pragmatic strategies and actionable tools for adult children to navigate relationships with emotionally immature parents, establishing healthy boundaries and reclaiming personal emotional autonomy to foster a more authentic and fulfilling life.  

@@ -405,7 +405,7 @@ Record field abbreviation prefixes must be removed. When two records in the same
 
 #### Json.hs (additional locals discovered in pass 20)
 
-- [ ] `acc` → `accumulated` (lambda accumulator in `foldl` within `unicodeEscape`)
+- [x] `acc` → `accumulated` (lambda accumulator in `foldl` within `unicodeEscape`)
 
 ## Ordering Notes
 

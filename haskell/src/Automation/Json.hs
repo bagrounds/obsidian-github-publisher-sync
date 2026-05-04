@@ -264,7 +264,7 @@ unicodeEscape :: Parser Char
 unicodeEscape = do
   _ <- char 'u'
   hex <- count 4 hexDigit
-  let code = foldl (\acc d -> acc * 16 + digitToInt d) 0 hex
+  let code = foldl (\accumulated d -> accumulated * 16 + digitToInt d) 0 hex
   pure (chr code)
 
 jsonArray :: Parser Value

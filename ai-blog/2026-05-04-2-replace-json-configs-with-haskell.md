@@ -22,7 +22,7 @@ URL: https://bagrounds.org/ai-blog/2026-05-04-2-replace-json-configs-with-haskel
 
 🧾 Instead of the JSON field `"models": ["gemini-3.1-flash-lite-preview", "gemini-3-flash-preview"]`, the Haskell config writes `Gemini.Gemini31FlashLite :| [Gemini.Gemini3Flash]`. 📅 Instead of `"scheduleHourPacific": 8`, it writes `TimeOfDay 8 0 0`. 🌐 Instead of a JSON object with string keys for context sources, it uses `ContextQuery` values directly with named fields like `directories`, `orderBy`, and `limit`.
 
-🗂️ A central registry module at `Automation.Series` imports all six series modules and exports `allSeries :: [DiscoveredSeries]`, sorted alphabetically by series ID. 🚀 The `RunScheduled.hs` entry point now just binds `let discovered = allSeries` instead of performing IO to discover JSON files and handling discovery errors.
+🗂️ A central registry module at `Automation.Series` imports all six series modules and exports `allSeries :: [DiscoveredSeries]` in insertion order. 🚀 The `RunScheduled.hs` entry point now just binds `let discovered = allSeries` instead of performing IO to discover JSON files and handling discovery errors.
 
 ## 🧹 What Got Removed
 
@@ -34,7 +34,7 @@ URL: https://bagrounds.org/ai-blog/2026-05-04-2-replace-json-configs-with-haskel
 
 🏗️ The new design aligns with several core Haskell architecture principles. 🧊 Configuration data is now a compile-time fact, not a runtime discovery — impossible states cannot be represented because the type checker enforces all invariants. 🏷️ Model names use the `Gemini.Model` ADT instead of free-form strings, so misspelling a model name is a compile error rather than a silent fallback to `Custom`. 🔒 Schedule hours use `TimeOfDay` directly, eliminating the integer-to-time conversion and the bounds validation that went with it.
 
-🧩 Each series module is self-contained and focused. 📖 The `Convergence.hs` module, which has custom cross-series context queries, reads exactly like its intent: six named fields in a record, two `ContextQuery` values listing the directories and limits, and a single `True` for `searchGrounding`. 📋 No JSON schema knowledge is required to understand or modify it.
+🧩 Each series module is self-contained and focused. 📖 Each module exports both `series :: DiscoveredSeries` and `identifier :: Text`, where `identifier` is the single source of truth for the series ID string. 🔁 The `seriesId` field and the `contextQueries` both use `identifier` rather than repeating the literal string — so there is exactly one place per module where the series ID is written. 🔗 For `Convergence.hs`, which reads posts from all other series, the cross-series directory references use the other modules' exported `identifier` values directly — for example, `AutoBlogZero.identifier` instead of the raw string `"auto-blog-zero"`. 🛡️ This means if a series ID ever changes, the compiler catches every use across the whole codebase rather than leaving silent mismatches.
 
 🔄 Adding a new series now requires creating one Haskell module, adding two lines to `Automation.Series`, adding one line to the cabal file, and updating documentation. 📋 The launch checklist spec was updated to reflect these steps. 🔬 The `BlogSeriesDiscoveryTest` test suite was simplified by removing the JSON parsing tests, which tested the now-deleted parsing pipeline, while retaining all the derivation tests and property-based tests.
 

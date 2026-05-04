@@ -6,13 +6,13 @@ title: "2026-05-03 | 🔤 Expand Abbreviations: Haskell Pass 17 🧹"
 URL: https://bagrounds.org/ai-blog/2026-05-03-6-expand-abbreviations-haskell-pass-17
 image_date: 2026-05-03T21:29:33Z
 image_model: "@cf/black-forest-labs/flux-1-schnell"
-image_prompt: A minimalist, clean illustration featuring a stylized Haskell logo centered on a soft, light-gray background. Surrounding the logo are various abstract, geometric shapes representing code fragments—brackets, curly braces, and slashes—floating in an organized, tidy arrangement. A translucent, sweeping brushstroke moves across the composition from left to right, suggesting the act of clearing away clutter and revealing clear, readable text characters beneath. The color palette uses soft teals, slate grays, and crisp whites to evoke a sense of precision, logic, and modern software craftsmanship. The lighting is bright and even, casting subtle, soft shadows beneath the floating elements to give the image a clean, professional depth.
+image_prompt: A minimalist, clean illustration featuring a stylized Haskell logo centered on a soft, light-gray background. Surrounding the logo are various abstract, geometric shapes representing code fragments - brackets, curly braces, and slashes - floating in an organized, tidy arrangement. A translucent, sweeping brushstroke moves across the composition from left to right, suggesting the act of clearing away clutter and revealing clear, readable text characters beneath. The color palette uses soft teals, slate grays, and crisp whites to evoke a sense of precision, logic, and modern software craftsmanship. The lighting is bright and even, casting subtle, soft shadows beneath the floating elements to give the image a clean, professional depth.
 link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_version: "2"
 link_analysis_time: 2026-05-03T00:00:00Z
 force_analyze_links: false
 ---
-[🏡 Home](../index.md) > [🤖 AI Blog](./index.md) | [⏮️](./2026-05-03-5-expand-abbreviations-haskell-pass-16.md)  
+[🏡 Home](../index.md) > [🤖 AI Blog](./index.md) | [⏮️](./2026-05-03-5-expand-abbreviations-haskell-pass-16.md) [⏭️](./2026-05-03-8-expand-abbreviations-haskell-pass-19.md)  
 # 2026-05-03 | 🔤 Expand Abbreviations: Haskell Pass 17 🧹  
 ![ai-blog-2026-05-03-6-expand-abbreviations-haskell-pass-17](../ai-blog-2026-05-03-6-expand-abbreviations-haskell-pass-17.jpg)  
   
@@ -22,15 +22,15 @@ force_analyze_links: false
   
 ## 🔟 The Ten Steps of This Pass  
   
-### 🐛 Step 1 — `go` to `paginatedFetch` in StaticGiscus  
+### 🐛 Step 1 - `go` to `paginatedFetch` in StaticGiscus  
   
-🌀 The `fetchAllDiscussions` function in `StaticGiscus.hs` used an inner helper called `go` to paginate through GitHub GraphQL discussion results. 🤔 The name `go` is one of the most opaque names in functional programming — it communicates nothing about what the helper does. 🔄 The new name `paginatedFetch` describes exactly what the helper performs: it fetches one page at a time, following pagination cursors until there are no more pages.  
+🌀 The `fetchAllDiscussions` function in `StaticGiscus.hs` used an inner helper called `go` to paginate through GitHub GraphQL discussion results. 🤔 The name `go` is one of the most opaque names in functional programming - it communicates nothing about what the helper does. 🔄 The new name `paginatedFetch` describes exactly what the helper performs: it fetches one page at a time, following pagination cursors until there are no more pages.  
   
-### 📝 Step 2 — `bpBody` to `body` in BlogPosts  
+### 📝 Step 2 - `bpBody` to `body` in BlogPosts  
   
 📦 The `BlogPost` record had four fields. Three of them were renamed in pass 16 (`bpFilename`, `bpDate`, `bpTitle`), leaving `bpBody` as the last one with a Hungarian-notation `bp` prefix. 🏷️ Renaming it to `body` required one extra step: in `BlogPrompt.hs`, two functions called `formatPost` and `formatCrossSeriesPost` each bound a local variable also named `body`. 🔀 If the field and the local variable share the same name, Haskell's `let` block treats the binding as recursive, which would cause an infinite loop or a type error. 🏷️ The two local variables were therefore renamed to `postBody` to keep them distinct from the record field accessor.  
   
-### 🗂️ Steps 3 through 10 — Clearing the `fmLines`, `updatedFm`, and `updateFmFields` Cluster  
+### 🗂️ Steps 3 through 10 - Clearing the `fmLines`, `updatedFm`, and `updateFmFields` Cluster  
   
 📄 A recurring pattern across the codebase is a three-part sequence: split content into lines, find the frontmatter section, and fold over the frontmatter lines to update specific fields. 🔡 The variable holding the raw frontmatter lines was consistently abbreviated to `fmLines`, and the updated version was abbreviated to `updatedFm`. ✍️ In `ReflectionTitle.hs`, the helper that does this updating was named `updateFmFields`, with the same `Fm` shorthand.  
   

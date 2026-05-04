@@ -11,9 +11,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-18T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-05-04T07:10:35Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A minimalist, stylized illustration featuring a weathered, classical marble column standing firmly in the center. The column is being wrapped by vibrant, interlocking gears and industrial cogs that suggest a transition from ancient structure to modern, managed activity. At the base of the column, stylized hands reach upward in a gesture of collective support and empowerment, symbolizing democratic participation. The background is a soft, gradient sky—shifting from a muted, desaturated grey at the bottom to a bright, hopeful sunrise gold at the top, representing a movement from a stagnant status quo toward a progressive, post-neoliberal future. The overall aesthetic is clean, geometric, and balanced, using a palette of slate blue, terracotta, and warm ochre to evoke authority, stability, and human-centric progress.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🏛️🔄✊🌍 Reclaiming the State: A Progressive Vision of Sovereignty for a Post-Neoliberal World  
+![books-reclaiming-the-state](../books-reclaiming-the-state.jpg)  
 [🛒 Reclaiming the State: A Progressive Vision of Sovereignty for a Post-Neoliberal World. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4dSXFl4)  
   
 ## 🤖 AI Summary  

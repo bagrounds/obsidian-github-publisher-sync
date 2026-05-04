@@ -11,9 +11,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-15T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-05-04T03:18:57Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A stylized, circular illustration divided into four equal quadrants, each featuring a minimalist, high-contrast silhouette representing a specific animal archetype. In the top-left, a powerful, commanding Lion silhouette stands in profile. In the top-right, a small, humble Mouse silhouette is depicted with soft, rounded lines. In the bottom-left, a fierce, sharp-edged T-Rex silhouette represents conflict. In the bottom-right, a playful, agile Monkey silhouette is shown in a dynamic, reaching pose. The background is a clean, neutral cream color, and the animals are rendered in a deep, sophisticated charcoal gray. The lines connecting the quadrants are subtle, suggesting a fluid, interconnected wheel of communication styles. The overall aesthetic is modern, professional, and clean, reminiscent of a high-end psychological infographic.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🤝🐾 Rapport: The Four Ways to Read People  
+![books-rapport](../books-rapport.jpg)  
 [🛒 Rapport: The Four Ways to Read People. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3FKbMwe)  
   
 - Rapport can be learned. Practice.  

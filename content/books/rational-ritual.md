@@ -12,9 +12,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-19T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-05-04T05:25:26Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A minimalist, isometric illustration featuring a large, glowing circular platform at the center of a dark, stylized space. On this platform, a group of identical, faceless geometric figures stand in a perfect ring, all facing inward. Above their heads, thin, glowing threads of light connect each figure to every other figure, weaving a complex, shimmering web of lines that cross the center. The aesthetic is clean, geometric, and high-contrast, utilizing a palette of deep navy, electric blue, and stark white. The visual focus is on the interconnectedness of the individuals and the symmetry of the arrangement, emphasizing the concept of a shared, simultaneous experience and the structural nature of collective coordination.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🧮♻️ Rational Ritual: Culture, Coordination, and Common Knowledge  
+![books-rational-ritual](../books-rational-ritual.jpg)  
 [🛒 Rational Ritual: Culture, Coordination, and Common Knowledge. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4jBYMXz)  
   
 ## 📚 Book Report: Rational Ritual  

@@ -13,7 +13,7 @@ link_analysis_version: "2"
 link_analysis_time: 2026-05-03T00:00:00Z
 force_analyze_links: false
 ---
-[Home](../index.md) > [📰 The Noise](./index.md) | [⏮️](./2026-05-02-the-shifting-sands-of-peace-and-innovation-s-march.md)  
+[Home](../index.md) > [📰 The Noise](./index.md) | [⏮️](./2026-05-02-the-shifting-sands-of-peace-and-innovation-s-march.md) [⏭️](./2026-05-04-global-currents-echoing-futures.md)  
 # 2026-05-03 | 📰 🌐 Shifting Balances and Rapid Strides 📰  
 ![the-noise-2026-05-03-shifting-balances-and-rapid-strides](../the-noise-2026-05-03-shifting-balances-and-rapid-strides.jpg)  
   

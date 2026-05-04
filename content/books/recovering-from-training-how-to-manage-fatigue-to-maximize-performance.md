@@ -10,9 +10,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-23T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-05-04T08:09:35Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A split-screen composition contrasting two states of athletic performance. On the left, a stylized silhouette of a human figure stands in a muted, cool-toned environment, representing fatigue and depletion. This side features subtle, abstract geometric lines suggesting a downward trend or drained energy. On the right, the same figure stands in a vibrant, warm-toned environment, representing restoration and peak performance. A glowing, ascending bar graph or upward-trending wave pattern overlays this side, symbolizing progress and recovery. The background integrates soft, organic shapes representing the pillars of recovery—a pillow for sleep, a bowl for nutrition, and a zen-like circle for stress management—all rendered in a clean, modern, minimalist aesthetic. The lighting shifts from a soft, dim glow on the left to a bright, energetic light on the right.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🤕📈 Recovering from Training: How to Manage Fatigue to Maximize Performance  
+![books-recovering-from-training-how-to-manage-fatigue-to-maximize-performance](../books-recovering-from-training-how-to-manage-fatigue-to-maximize-performance.jpg)  
 [🛒 Recovering from Training: How to Manage Fatigue to Maximize Performance. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3ViSdQ4)  
   
 ## 📚 Book Report: 🤕 Recovering from Training: How to Manage Fatigue to Maximize Performance  

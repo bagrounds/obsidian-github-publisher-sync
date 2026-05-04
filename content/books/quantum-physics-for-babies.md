@@ -10,9 +10,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-20T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-05-03T23:29:04Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A vibrant, minimalist illustration featuring a stylized, colorful atom floating in the center. The nucleus is depicted as a bright, glowing sun-like sphere, while electrons are represented as playful, orbiting rings of soft, primary-colored light. The background is a clean, deep navy blue, creating a sense of space and wonder. Surrounding the atom are small, whimsical geometric shapes—triangles, circles, and squares—floating like constellations. The art style is clean and modern, reminiscent of high-contrast board books, with bold lines and soft, inviting gradients that appeal to both infants and adults. The overall composition is balanced and serene, evoking a feeling of early scientific discovery and gentle curiosity.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # ⚛️👶 Quantum Physics for Babies  
+![books-quantum-physics-for-babies](../books-quantum-physics-for-babies.jpg)  
 [🛒 Quantum Physics for Babies. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4oqrvRs)  
   
 👶🔬✨ Explain foundational concepts like atoms and quantized energy through ultra-simple language and vibrant illustrations, aiming to spark early scientific curiosity in infants and parents alike 👶🔬✨.  

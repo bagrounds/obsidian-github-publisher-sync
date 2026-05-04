@@ -11,9 +11,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-19T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-05-04T11:41:14Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A bright, overhead-style flat-lay shot on a rustic wooden potting bench. The arrangement includes a pair of clean, professional-grade gardening gloves, a small hand trowel, and a wooden dibber. In the center, a terracotta pot holds a small, vibrant green seedling. Surrounding these tools are a few scattered packets of vegetable seeds and a small, vintage-style watering can. The lighting is soft, natural, and warm, suggesting a sunny morning in a garden shed or greenhouse. The composition is clean and organized, conveying a sense of approachable, manageable, and inviting gardening activity for a beginner. The background is a soft-focus, blurred view of a lush, thriving garden bed in late spring.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🪴🌱 RHS How to Garden When You're New to Gardening: The Basics for Absolute Beginners  
+![books-rhs-how-to-garden-when-youre-new-to-gardening-the-basics-for-beginners](../books-rhs-how-to-garden-when-youre-new-to-gardening-the-basics-for-beginners.jpg)  
 [🛒 RHS How to Garden When You're New to Gardening: The Basics for Absolute Beginners. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/450yhHJ)  
   
 ## 📖 Book Report: RHS How to Garden When You're New to Gardening  

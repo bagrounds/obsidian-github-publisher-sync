@@ -11,9 +11,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-20T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-05-04T07:10:31Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A minimalist, high-contrast illustration centered on a human silhouette composed of intricate, glowing geometric lines and nodes. Inside the head, a vibrant, organized network of interconnected gears, compass needles, and probability trees radiates outward, replacing the brain. Floating around the figure are floating, semi-transparent 3D shapes—a cube, a sphere, and a pyramid—representing logical frameworks. The background is a deep, clean navy blue, suggesting the vastness of the unknown. A single, sharp beam of white light illuminates the figure from above, casting a precise shadow on the ground that reveals the shape of a magnifying glass, symbolizing the focused, investigative nature of rational inquiry. The style is modern, sleek, and intellectual, utilizing a palette of electric blue, crisp white, and subtle gold accents.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🧠🤔❓ Rationality: What It Is, Why It Seems Scarce, Why It Matters  
+![books-rationality](../books-rationality.jpg)  
 [🛒 Rationality: What It Is, Why It Seems Scarce, Why It Matters. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3FKe7Y4)  
   
 ## 🤖 AI Summary  

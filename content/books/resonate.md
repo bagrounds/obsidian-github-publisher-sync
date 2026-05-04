@@ -12,9 +12,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-18T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-05-04T10:46:18Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A conceptual illustration featuring a bridge spanning a vast, misty chasm. On the left side, the landscape is monochromatic, jagged, and static, representing the What Is. On the right side, the landscape transitions into a vibrant, glowing, and lush environment, representing the What Could Be. A single, luminous beam of light arcs across the gap, connecting the two terrains like a spark of inspiration. In the foreground, a stylized, translucent silhouette of a human figure stands at the edge of the chasm, holding a glowing geometric shape that reflects the light of the future. The overall aesthetic is clean and modern, using a palette of deep navy, slate gray, and brilliant, energetic gold to emphasize the contrast between current reality and transformative potential.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🔊🎞️🌱🤯 Resonate: Present Visual Stories that Transform Audiences  
+![books-resonate](../books-resonate.jpg)  
 [🛒 Resonate: Present Visual Stories that Transform Audiences. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/45zltYW)  
   
 ## 🤖 AI Summary  

@@ -10,9 +10,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-20T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-05-04T09:55:19Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A stylized illustration featuring a sturdy, classic red brick schoolhouse standing in the foreground, representing a community cornerstone. In the background, a shadowy, abstract cityscape of sleek, jagged glass towers looms over the school, with golden coins and ticker-tape symbols raining down, partially obscuring the schoolhouse. A large, transparent crack runs through the center of the image, separating the traditional, warm-toned educational environment from the cold, metallic, corporate-influenced structures. The composition uses high contrast between the warm, inviting colors of the school and the sharp, sterile blues and grays of the surrounding urban encroachment to emphasize the tension between public service and private profit.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 👑🏫🤥 Reign of Error: The Hoax of the Privatization Movement and the Danger to America's Public Schools  
+![books-reign-of-error-the-hoax-of-the-privatization-movement-and-the-danger-to-americas-public-schools](../books-reign-of-error-the-hoax-of-the-privatization-movement-and-the-danger-to-americas-public-schools.jpg)  
 [🛒 Reign of Error: The Hoax of the Privatization Movement and the Danger to America's Public Schools. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/43txYmZ)  
   
 📚🍎🛑 Diane Ravitch meticulously dismantles the narrative of public education crisis, revealing it as a concerted effort by private interests to dismantle and profit from a vital democratic institution, advocating instead for systemic investments and social reforms.  

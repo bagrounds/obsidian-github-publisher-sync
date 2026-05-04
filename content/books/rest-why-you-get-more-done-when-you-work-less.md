@@ -9,9 +9,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-17T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-05-04T10:46:29Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A minimalist, split-composition illustration. On the left side, a stylized, dark-toned desk setup shows a closed laptop and a single, neatly placed pen, representing the end of a focused work session. On the right side, a contrasting warm-toned, airy scene depicts a comfortable armchair bathed in soft, natural sunlight, with a small potted plant and an open book resting nearby. The transition between the two sides is seamless, suggesting a balanced lifestyle. The color palette uses deep navy and slate grey for the work side, transitioning into soft creams, sage greens, and warm gold for the rest side. The overall aesthetic is clean, professional, and tranquil, emphasizing the harmony between deliberate effort and intentional recovery.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 😴📈 Rest: Why You Get More Done When You Work Less  
+![books-rest-why-you-get-more-done-when-you-work-less](../books-rest-why-you-get-more-done-when-you-work-less.jpg)  
 [🛒 Rest: Why You Get More Done When You Work Less. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4mH6zWM)  
   
 ## 📚 Book Report: 😴 Rest by Alex Soojung-Kim Pang  

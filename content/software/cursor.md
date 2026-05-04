@@ -11,6 +11,7 @@ image_date: 2026-04-10T17:26:20Z
 image_model: "@cf/black-forest-labs/flux-1-schnell"
 image_prompt: A prominent, stylized mouse cursor, glowing with a subtle electric blue or green aura, takes center stage. From its pointed tip, abstract, luminous lines of code or data flow outwards, subtly forming interconnected neural pathways or thought bubbles. These lines hint at AI-driven code generation and understanding. The background is a dark, minimalist grid pattern, reminiscent of a code editor, with a faint, warm glow emanating from behind the cursor, symbolizing computational power and intelligence. The aesthetic is clean, modern, and futuristic, emphasizing the fusion of human interaction and AI assistance in coding.
 link_analysis_version: "2"
+updated: 2026-05-04T09:56:43
 ---
 [Home](../index.md) > [Software](./index.md)  
 # 🤖🖱️📍 Cursor  
@@ -142,3 +143,11 @@ Cursor IDE emerged as a response to the advancements in LLMs, aiming to bring th
 - Lex Fridman Podcast: [https://www.youtube.com/@lexfridman](https://www.youtube.com/@lexfridman) 🎙️  
 - Two Minute Papers: [https://www.youtube.com/@TwoMinutePapers](https://www.youtube.com/@TwoMinutePapers) 📄  
 - Cursor IDE channel: Search Youtube for "Cursor IDE". 💻  
+  
+## 🦋 Bluesky    
+<blockquote class="bluesky-embed" data-bluesky-uri="at://did:plc:i4yli6h7x2uoj7acxunww2fc/app.bsky.feed.post/3mkzfti2rfn2j" data-bluesky-cid="bafyreigybnyrkr6fwwrkqecaian7fmzcnbja52iuqujvta3mrzcwn4dugm"><p>🤖🖱️📍 Cursor  
+  
+#AI Q: 🤖 Does AI coding assistance make you a better programmer or just a faster one?  
+  
+🤖 AI Tools | 💻 Code Editors | 🧠 Deep Learning | 🗣️ Natural Language Processing  
+https://bagrounds.org/software/cursor</p>&mdash; <a href="https://bsky.app/profile/did:plc:i4yli6h7x2uoj7acxunww2fc?ref_src=embed">Bryan Grounds (@bagrounds.bsky.social)</a> <a href="https://bsky.app/profile/did:plc:i4yli6h7x2uoj7acxunww2fc/post/3mkzfti2rfn2j?ref_src=embed">2026-05-04T09:56:46.000Z</a></blockquote><script async src="https://embed.bsky.app/static/embed.js" charset="utf-8"></script>

@@ -9,9 +9,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-19T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-05-04T13:45:38Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: An abstract composition depicting the concept of ritualization through layers of perception. In the foreground, a series of translucent, overlapping geometric shapes—triangles, circles, and prisms—float in a soft-focus environment. These shapes cast sharp, distinct shadows on a textured, neutral-toned surface, representing the interplay between action and meaning. A single, stylized candle flame sits off-center, emitting a warm, diffused glow that catches the edges of the geometric forms, creating a spectrum of light and shadow. The background is a gradient of deep, atmospheric indigo fading into a soft, parchment-like beige, suggesting both the academic depth of history and the ephemeral nature of practice. The overall aesthetic is clean, intellectual, and minimalist, emphasizing perspective, dimension, and the strategic layering of human activity.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🕯️👀📐 Ritual: Perspectives and Dimensions  
+![books-ritual-perspectives-and-dimensions](../books-ritual-perspectives-and-dimensions.jpg)  
 [🛒 Ritual: Perspectives and Dimensions. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3ZMrCgF)  
   
 ## 📖 Book Report: Ritual: Perspectives and Dimensions by Catherine Bell  

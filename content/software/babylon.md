@@ -11,6 +11,7 @@ image_date: 2026-04-10T16:25:02Z
 image_model: "@cf/black-forest-labs/flux-1-schnell"
 image_prompt: A vibrant, isometric digital landscape floating in a dark, minimalist void. The scene features a collection of semi-transparent, glowing 3D geometric shapes—cubes, spheres, and pyramids—interconnected by thin, luminous lines of code that weave through the air like fiber-optic cables. A stylized, low-poly astronaut figure stands on a floating platform, reaching toward a holographic interface that displays a complex 3D wireframe mesh. The color palette centers on electric blues, deep violets, and warm cyan highlights, evoking a sense of high-performance web technology and immersive virtual space. The lighting is soft and ambient, casting subtle glows on the surfaces of the shapes to emphasize depth and modern rendering capabilities.
 link_analysis_version: "2"
+updated: 2026-05-04T03:20:17
 ---
 [Home](../index.md) > [Software](./index.md)  
 # 🌐🧱🖥️🎮 Babylon.js  
@@ -147,4 +148,12 @@ Babylon.js was created by David Catuhe and his team at Microsoft to provide a po
 📺 **Links To Relevant YouTube Channels Or Videos**  
   
 * [Babylon.js Official Channel](https://youtube.com/@babylonjsengine?si=QJ9icnUvTIxX8m-J) 📺🎉  
-* Babylon.js Playground Tutorials: Search YouTube for "Babylon.js Playground tutorial" 📺💻🎉
+* Babylon.js Playground Tutorials: Search YouTube for "Babylon.js Playground tutorial" 📺💻🎉  
+  
+## 🦋 Bluesky    
+<blockquote class="bluesky-embed" data-bluesky-uri="at://did:plc:i4yli6h7x2uoj7acxunww2fc/app.bsky.feed.post/3mkypoyppbv2j" data-bluesky-cid="bafyreideiqqxlk5vgge445yt4gozrvl423mjaaiqwg7sjaazr4wpgfhsg4"><p>🌐🧱🖥️🎮 Babylon.js  
+  
+#AI Q: 🎮 Would you rather build a 3D game in a browser or use dedicated software?  
+  
+🎮 3D Game Dev | 🌐 WebGL/WebGPU | 💻 JavaScript Framework | 🎨 3D Graphics  
+https://bagrounds.org/software/babylon</p>&mdash; <a href="https://bsky.app/profile/did:plc:i4yli6h7x2uoj7acxunww2fc?ref_src=embed">Bryan Grounds (@bagrounds.bsky.social)</a> <a href="https://bsky.app/profile/did:plc:i4yli6h7x2uoj7acxunww2fc/post/3mkypoyppbv2j?ref_src=embed">2026-05-04T03:20:33.000Z</a></blockquote><script async src="https://embed.bsky.app/static/embed.js" charset="utf-8"></script>

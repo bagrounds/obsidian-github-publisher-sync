@@ -61,7 +61,7 @@ import Automation.BlogSeriesConfig
   ( BlogSeriesConfig (..)
   , lookupSeriesIn
   )
-import Automation.BlogSeriesDiscovery (DiscoveredSeries (..))
+import Automation.BlogSeriesDiscovery (AutoBlogSeries (..))
 import qualified Automation.Context as Context
 import Automation.DailyReflection (UpdateReflectionResult (..), updateDailyReflection)
 import Automation.DailyUpdates (UpdateDetail (..), UpdateLink (..), addUpdateLinksToReflection, extractTitleFromFile)
@@ -605,10 +605,10 @@ fetchAnalytics manager accessToken endpoint body = do
     _ -> pure $ Left $ "GA API HTTP " <> T.pack (show status)
       <> ": " <> TE.decodeUtf8 (LBS.toStrict (LBS.take 1000 responseBytes))
 
-taskRunners :: Context.AppContext -> Map Text BlogSeriesConfig -> Map Text Scheduler.BlogSeriesRunConfig -> [ContentDirectory] -> [DiscoveredSeries] -> Map TaskId (IO ())
+taskRunners :: Context.AppContext -> Map Text BlogSeriesConfig -> Map Text Scheduler.BlogSeriesRunConfig -> [ContentDirectory] -> [AutoBlogSeries] -> Map TaskId (IO ())
 taskRunners context seriesMap runConfigs contentDirs discovered =
   let blogSeriesRunners = Map.fromList
-        (fmap (\DiscoveredSeries{..} -> (BlogSeries seriesId, runBlogSeries context seriesMap runConfigs seriesId)) discovered)
+        (fmap (\AutoBlogSeries{..} -> (BlogSeries seriesId, runBlogSeries context seriesMap runConfigs seriesId)) discovered)
       staticRunners = Map.fromList
         [ (BackfillBlogImages, runBackfillImages context contentDirs)
         , (InternalLinking, runInternalLinking context)

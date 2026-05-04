@@ -12,7 +12,7 @@ import Test.Tasty.QuickCheck (testProperty)
 import qualified Test.QuickCheck as QC
 
 import Automation.Context (AppContext, mkAppContext)
-import Automation.BlogSeriesDiscovery (DiscoveredSeries (..))
+import Automation.BlogSeriesDiscovery (AutoBlogSeries (..))
 import qualified Automation.Gemini as Gemini
 import Automation.ObsidianSync (ObsidianCredentials (..))
 import Automation.Scheduler (TaskId (..))
@@ -31,8 +31,8 @@ mkTestContext = do
     Right context -> pure context
     Left err -> fail $ "Failed to create test context: " <> err
 
-mkTestSeries :: Text -> DiscoveredSeries
-mkTestSeries seriesIdValue = DiscoveredSeries
+mkTestSeries :: Text -> AutoBlogSeries
+mkTestSeries seriesIdValue = AutoBlogSeries
   { seriesId = seriesIdValue
   , seriesName = "Test Series " <> seriesIdValue
   , seriesIcon = "🧪"

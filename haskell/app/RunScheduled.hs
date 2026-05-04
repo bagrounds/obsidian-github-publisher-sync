@@ -8,7 +8,6 @@ import Network.HTTP.Client (newManager)
 import Network.HTTP.Client.TLS (tlsManagerSettings)
 import System.Environment (getArgs, lookupEnv)
 import System.Exit (exitFailure)
-import System.FilePath ((</>))
 import System.IO (hSetBuffering, stdout, stderr, BufferMode(..))
 
 import Automation.BlogSeriesConfig
@@ -16,13 +15,12 @@ import Automation.BlogSeriesConfig
   , imageBackfillContentDirsFrom
   )
 import Automation.BlogSeriesDiscovery
-  ( DiscoveredSeries (..)
-  , DiscoveryError (..)
+  ( AutoBlogSeries (..)
   , deriveBlogSeriesConfig
   , deriveBlogSeriesRunConfig
   , deriveScheduleEntry
-  , discoverSeries
   )
+import Automation.Series (allSeries)
 import Automation.CliArgs (CliArgs (..), parseCliArgs)
 import qualified Automation.Context as Context
 import Automation.Env (requireEnv, getObsidianCreds)
@@ -59,20 +57,9 @@ main = do
         Nothing -> fromMaybe "." mWorkspace
   manager <- newManager tlsManagerSettings
 
-  let haskellDir = repoRoot </> "haskell"
-  discoveryResult <- discoverSeries haskellDir
-  discovered <- case discoveryResult of
-    Right series -> do
-      logMsg $ "📋 Discovered " <> T.pack (show (length series)) <> " blog series: "
-        <> T.intercalate ", " (fmap seriesId series)
-      pure series
-    Left errors -> do
-      TIO.hPutStrLn stderr "❌ Blog series discovery errors:"
-      mapM_ (\case
-        JsonParseError path err -> TIO.hPutStrLn stderr $ "  📄 " <> T.pack path <> ": " <> T.pack err
-        ValidationError path msg -> TIO.hPutStrLn stderr $ "  ⚠️  " <> T.pack path <> ": " <> msg
-        ) errors
-      exitFailure
+  let discovered = allSeries
+  logMsg $ "📋 " <> T.pack (show (length discovered)) <> " blog series: "
+    <> T.intercalate ", " (fmap seriesId discovered)
 
   let seriesConfigs = fmap deriveBlogSeriesConfig discovered
       seriesMap = Map.fromList (fmap (\config -> (identifier config, config)) seriesConfigs)

@@ -84,7 +84,13 @@ library
     Automation.TaskRunners
     Automation.PacificTime
     Automation.BlogSeriesDiscovery
-    Automation.BlogSeriesDiscovery.RawConfig
+    Automation.Series
+    Automation.Series.AutoBlogZero
+    Automation.Series.ChickieLoo
+    Automation.Series.Convergence
+    Automation.Series.PositivityBias
+    Automation.Series.SystemsForPublicGood
+    Automation.Series.TheNoise
     Automation.Wikilink
     Automation.GoogleAnalytics
   build-depends:
@@ -123,8 +129,6 @@ executable run-scheduled
     automation,
     text,
     containers,
-    filepath,
-    directory,
     time,
     http-client,
     http-client-tls,

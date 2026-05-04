@@ -44,63 +44,63 @@ derivationTests = testGroup "derivation functions"
       deriveTaskId "garden-thoughts" @?= BlogSeries "garden-thoughts"
 
   , testCase "deriveBlogSeriesConfig sets correct ID" $ do
-      let config = deriveBlogSeriesConfig sampleDiscovered
+      let config = deriveBlogSeriesConfig sampleSeries
       BSC.identifier config @?= "garden-thoughts"
 
   , testCase "deriveBlogSeriesConfig derives author" $ do
-      let config = deriveBlogSeriesConfig sampleDiscovered
+      let config = deriveBlogSeriesConfig sampleSeries
       BSC.author config @?= "[[garden-thoughts]]"
 
   , testCase "deriveBlogSeriesConfig derives base URL" $ do
-      let config = deriveBlogSeriesConfig sampleDiscovered
+      let config = deriveBlogSeriesConfig sampleSeries
       BSC.baseUrl config @?= "https://bagrounds.org/garden-thoughts"
 
   , testCase "deriveBlogSeriesConfig preserves priority user" $ do
-      let config = deriveBlogSeriesConfig sampleDiscovered
+      let config = deriveBlogSeriesConfig sampleSeries
       BSC.priorityUser config @?= Just "bagrounds"
 
   , testCase "deriveBlogSeriesRunConfig sets correct series ID" $ do
-      let config = deriveBlogSeriesRunConfig sampleDiscovered
+      let config = deriveBlogSeriesRunConfig sampleSeries
       Scheduler.seriesId config @?= "garden-thoughts"
 
   , testCase "deriveBlogSeriesRunConfig sets correct model chain" $ do
-      let config = deriveBlogSeriesRunConfig sampleDiscovered
+      let config = deriveBlogSeriesRunConfig sampleSeries
       Scheduler.modelChain config @?= (Gemini.Gemini25Flash :| [Gemini.Gemini25FlashLite])
 
   , testCase "deriveBlogSeriesRunConfig sets correct env var" $ do
-      let config = deriveBlogSeriesRunConfig sampleDiscovered
+      let config = deriveBlogSeriesRunConfig sampleSeries
       Scheduler.priorityUserEnvVar config @?= "GARDEN_THOUGHTS_PRIORITY_USER"
 
-  , testCase "deriveBlogSeriesRunConfig sets searchGrounding false for sampleDiscovered" $ do
-      let config = deriveBlogSeriesRunConfig sampleDiscovered
+  , testCase "deriveBlogSeriesRunConfig sets searchGrounding false for sampleSeries" $ do
+      let config = deriveBlogSeriesRunConfig sampleSeries
       Scheduler.searchGrounding config @?= False
 
   , testCase "deriveBlogSeriesRunConfig passes searchGrounding true when set" $ do
-      let config = deriveBlogSeriesRunConfig sampleDiscovered { searchGrounding = True }
+      let config = deriveBlogSeriesRunConfig sampleSeries { searchGrounding = True }
       Scheduler.searchGrounding config @?= True
 
   , testCase "deriveScheduleEntry sets correct task ID" $ do
-      let entry = deriveScheduleEntry sampleDiscovered
+      let entry = deriveScheduleEntry sampleSeries
       taskId entry @?= BlogSeries "garden-thoughts"
 
   , testCase "deriveScheduleEntry sets correct hours" $ do
-      let entry = deriveScheduleEntry sampleDiscovered
+      let entry = deriveScheduleEntry sampleSeries
       hoursPacific entry @?= [11]
 
   , testCase "deriveScheduleEntry sets atOrAfter False" $ do
-      let entry = deriveScheduleEntry sampleDiscovered
+      let entry = deriveScheduleEntry sampleSeries
       atOrAfter entry @?= False
   ]
 
 contextQueryTests :: TestTree
 contextQueryTests = testGroup "context queries"
   [ testCase "deriveBlogSeriesConfig preserves contextQueries" $ do
-      let discovered = sampleDiscovered { contextQueries = defaultContextQueries "garden-thoughts" }
+      let discovered = sampleSeries { contextQueries = defaultContextQueries "garden-thoughts" }
           config = deriveBlogSeriesConfig discovered
       length (BSC.contextQueries config) @?= 1
 
   , testCase "deriveBlogSeriesConfig preserves empty contextQueries" $ do
-      let config = deriveBlogSeriesConfig sampleDiscovered
+      let config = deriveBlogSeriesConfig sampleSeries
       BSC.contextQueries config @?= []
   ]
 
@@ -130,27 +130,27 @@ properties = testGroup "properties"
           _ -> False
 
   , testProperty "deriveBlogSeriesConfig preserves ID" $
-      QC.forAll genDiscoveredSeries $ \discovered ->
-        let DiscoveredSeries{seriesId} = discovered
+      QC.forAll genAutoBlogSeries $ \discovered ->
+        let AutoBlogSeries{seriesId} = discovered
         in BSC.identifier (deriveBlogSeriesConfig discovered) == seriesId
 
   , testProperty "deriveBlogSeriesConfig preserves icon" $
-      QC.forAll genDiscoveredSeries $ \discovered ->
+      QC.forAll genAutoBlogSeries $ \discovered ->
         BSC.icon (deriveBlogSeriesConfig discovered) == seriesIcon discovered
 
   , testProperty "deriveBlogSeriesConfig preserves name" $
-      QC.forAll genDiscoveredSeries $ \discovered ->
+      QC.forAll genAutoBlogSeries $ \discovered ->
         BSC.name (deriveBlogSeriesConfig discovered) == seriesName discovered
 
   , testProperty "deriveBlogSeriesRunConfig preserves searchGrounding" $
-      QC.forAll genDiscoveredSeries $ \discovered ->
+      QC.forAll genAutoBlogSeries $ \discovered ->
         let runConfigSearchGrounding = Scheduler.searchGrounding (deriveBlogSeriesRunConfig discovered)
             discoveredSearchGrounding = searchGrounding discovered
         in runConfigSearchGrounding == discoveredSearchGrounding
   ]
 
-sampleDiscovered :: DiscoveredSeries
-sampleDiscovered = DiscoveredSeries
+sampleSeries :: AutoBlogSeries
+sampleSeries = AutoBlogSeries
   { seriesId = "garden-thoughts"
   , seriesName = "Garden Thoughts"
   , seriesIcon = "\129793"
@@ -168,8 +168,8 @@ genSeriesId = do
   where
     genWord = T.pack <$> QC.listOf1 (QC.elements ['a'..'z'])
 
-genDiscoveredSeries :: QC.Gen DiscoveredSeries
-genDiscoveredSeries = do
+genAutoBlogSeries :: QC.Gen AutoBlogSeries
+genAutoBlogSeries = do
   seriesIdValue <- genSeriesId
   name <- T.pack <$> QC.listOf1 (QC.elements ['A'..'Z'])
   icon <- QC.elements ["\129793", "\129302", "\128020", "\127963\65039", "\127925"]
@@ -177,7 +177,7 @@ genDiscoveredSeries = do
   hour <- QC.choose (0, 23)
   contextQueriesValue <- QC.elements [[], defaultContextQueries seriesIdValue]
   searchGroundingValue <- QC.arbitrary
-  pure DiscoveredSeries
+  pure AutoBlogSeries
     { seriesId = seriesIdValue
     , seriesName = name
     , seriesIcon = icon

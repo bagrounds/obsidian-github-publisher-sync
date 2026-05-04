@@ -1,5 +1,5 @@
 module Automation.BlogSeriesDiscovery
-  ( DiscoveredSeries (..)
+  ( AutoBlogSeries (..)
   , deriveBlogSeriesConfig
   , deriveBlogSeriesRunConfig
   , deriveScheduleEntry
@@ -21,7 +21,7 @@ import Automation.ContextQuery (ContextQuery)
 import Automation.Scheduler (BlogSeriesRunConfig (BlogSeriesRunConfig), ScheduleEntry (..), TaskId (..))
 import qualified Automation.Scheduler as Scheduler
 
-data DiscoveredSeries = DiscoveredSeries
+data AutoBlogSeries = AutoBlogSeries
   { seriesId             :: Text
   , seriesName           :: Text
   , seriesIcon           :: Text
@@ -32,8 +32,8 @@ data DiscoveredSeries = DiscoveredSeries
   , searchGrounding      :: Bool
   } deriving (Show, Eq)
 
-deriveBlogSeriesConfig :: DiscoveredSeries -> BlogSeriesConfig
-deriveBlogSeriesConfig DiscoveredSeries{..} = BlogSeriesConfig
+deriveBlogSeriesConfig :: AutoBlogSeries -> BlogSeriesConfig
+deriveBlogSeriesConfig AutoBlogSeries{..} = BlogSeriesConfig
   { identifier     = seriesId
   , name           = seriesName
   , icon           = seriesIcon
@@ -45,16 +45,16 @@ deriveBlogSeriesConfig DiscoveredSeries{..} = BlogSeriesConfig
   , contextQueries = contextQueries
   }
 
-deriveBlogSeriesRunConfig :: DiscoveredSeries -> BlogSeriesRunConfig
-deriveBlogSeriesRunConfig DiscoveredSeries{..} = BlogSeriesRunConfig
+deriveBlogSeriesRunConfig :: AutoBlogSeries -> BlogSeriesRunConfig
+deriveBlogSeriesRunConfig AutoBlogSeries{..} = BlogSeriesRunConfig
   { Scheduler.seriesId          = seriesId
   , Scheduler.modelChain        = modelChain
   , Scheduler.priorityUserEnvVar = derivePriorityUserEnvVar seriesId
   , Scheduler.searchGrounding   = searchGrounding
   }
 
-deriveScheduleEntry :: DiscoveredSeries -> ScheduleEntry
-deriveScheduleEntry DiscoveredSeries{..} = ScheduleEntry
+deriveScheduleEntry :: AutoBlogSeries -> ScheduleEntry
+deriveScheduleEntry AutoBlogSeries{..} = ScheduleEntry
   { taskId = deriveTaskId seriesId
   , hoursPacific = [todHour scheduleTime]
   , atOrAfter = False

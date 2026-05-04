@@ -1,18 +1,18 @@
-module Automation.Series.SystemsForPublicGood (series, identifier) where
+module Automation.Series.SystemsForPublicGood (series) where
 
 import Data.List.NonEmpty (NonEmpty ((:|)))
 import Data.Text (Text)
 import Data.Time.LocalTime (TimeOfDay (..))
 
 import qualified Automation.Gemini as Gemini
-import Automation.BlogSeriesDiscovery (DiscoveredSeries (..))
+import Automation.BlogSeriesDiscovery (AutoBlogSeries (..))
 import Automation.ContextQuery (defaultContextQueries)
 
 identifier :: Text
 identifier = "systems-for-public-good"
 
-series :: DiscoveredSeries
-series = DiscoveredSeries
+series :: AutoBlogSeries
+series = AutoBlogSeries
   { seriesId        = identifier
   , seriesName      = "Systems for Public Good"
   , seriesIcon      = "🏛️"

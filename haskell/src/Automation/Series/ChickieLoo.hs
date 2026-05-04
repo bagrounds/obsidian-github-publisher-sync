@@ -1,18 +1,18 @@
-module Automation.Series.ChickieLoo (series, identifier) where
+module Automation.Series.ChickieLoo (series) where
 
 import Data.List.NonEmpty (NonEmpty ((:|)))
 import Data.Text (Text)
 import Data.Time.LocalTime (TimeOfDay (..))
 
 import qualified Automation.Gemini as Gemini
-import Automation.BlogSeriesDiscovery (DiscoveredSeries (..))
+import Automation.BlogSeriesDiscovery (AutoBlogSeries (..))
 import Automation.ContextQuery (defaultContextQueries)
 
 identifier :: Text
 identifier = "chickie-loo"
 
-series :: DiscoveredSeries
-series = DiscoveredSeries
+series :: AutoBlogSeries
+series = AutoBlogSeries
   { seriesId        = identifier
   , seriesName      = "Chickie Loo"
   , seriesIcon      = "🐔"

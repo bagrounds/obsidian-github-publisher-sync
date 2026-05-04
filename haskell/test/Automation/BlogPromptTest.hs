@@ -13,7 +13,7 @@ import Automation.BlogPrompt
 import Automation.BlogPosts (BlogPost (..))
 import Automation.PacificTime (formatDay)
 import Automation.BlogSeriesConfig (BlogSeriesConfig (..), lookupSeriesIn)
-import Automation.BlogSeriesDiscovery (deriveBlogSeriesConfig, DiscoveredSeries (..))
+import Automation.BlogSeriesDiscovery (deriveBlogSeriesConfig, AutoBlogSeries (..))
 import Automation.Wikilink (buildBackLink, buildForwardLink)
 import qualified Automation.Gemini as Gemini
 import Data.List.NonEmpty (NonEmpty ((:|)))
@@ -21,19 +21,19 @@ import qualified Data.Map.Strict as Map
 
 testSeriesMap :: Map.Map T.Text BlogSeriesConfig
 testSeriesMap = Map.fromList
-  [ ("chickie-loo", deriveBlogSeriesConfig DiscoveredSeries
+  [ ("chickie-loo", deriveBlogSeriesConfig AutoBlogSeries
       { seriesId = "chickie-loo", seriesName = "Chickie Loo", seriesIcon = "🐔"
       , priorityUser = Just "ChickieLoo", scheduleTime = TimeOfDay 7 0 0
       , modelChain = Gemini.Gemini31FlashLite :| [Gemini.Gemini3Flash]
       , contextQueries = [], searchGrounding = False
       })
-  , ("auto-blog-zero", deriveBlogSeriesConfig DiscoveredSeries
+  , ("auto-blog-zero", deriveBlogSeriesConfig AutoBlogSeries
       { seriesId = "auto-blog-zero", seriesName = "Auto Blog Zero", seriesIcon = "🤖"
       , priorityUser = Just "bagrounds", scheduleTime = TimeOfDay 8 0 0
       , modelChain = Gemini.Gemini31FlashLite :| [Gemini.Gemini3Flash]
       , contextQueries = [], searchGrounding = False
       })
-  , ("systems-for-public-good", deriveBlogSeriesConfig DiscoveredSeries
+  , ("systems-for-public-good", deriveBlogSeriesConfig AutoBlogSeries
       { seriesId = "systems-for-public-good", seriesName = "Systems for Public Good", seriesIcon = "🏛️"
       , priorityUser = Just "bagrounds", scheduleTime = TimeOfDay 9 0 0
       , modelChain = Gemini.Gemini25Flash :| [Gemini.Gemini25FlashLite, Gemini.Gemini31FlashLite]

@@ -15,7 +15,7 @@ import Automation.BlogSeriesConfig
   , imageBackfillContentDirsFrom
   )
 import Automation.BlogSeriesDiscovery
-  ( DiscoveredSeries (..)
+  ( AutoBlogSeries (..)
   , deriveBlogSeriesConfig
   , deriveBlogSeriesRunConfig
   , deriveScheduleEntry

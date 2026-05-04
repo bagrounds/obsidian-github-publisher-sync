@@ -1,18 +1,18 @@
-module Automation.Series.TheNoise (series, identifier) where
+module Automation.Series.TheNoise (series) where
 
 import Data.List.NonEmpty (NonEmpty ((:|)))
 import Data.Text (Text)
 import Data.Time.LocalTime (TimeOfDay (..))
 
 import qualified Automation.Gemini as Gemini
-import Automation.BlogSeriesDiscovery (DiscoveredSeries (..))
+import Automation.BlogSeriesDiscovery (AutoBlogSeries (..))
 import Automation.ContextQuery (defaultContextQueries)
 
 identifier :: Text
 identifier = "the-noise"
 
-series :: DiscoveredSeries
-series = DiscoveredSeries
+series :: AutoBlogSeries
+series = AutoBlogSeries
   { seriesId        = identifier
   , seriesName      = "The Noise"
   , seriesIcon      = "📰"

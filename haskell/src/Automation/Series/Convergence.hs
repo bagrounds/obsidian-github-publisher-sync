@@ -1,11 +1,11 @@
-module Automation.Series.Convergence (series, identifier) where
+module Automation.Series.Convergence (series) where
 
 import Data.List.NonEmpty (NonEmpty ((:|)))
 import Data.Text (Text)
 import Data.Time.LocalTime (TimeOfDay (..))
 
 import qualified Automation.Gemini as Gemini
-import Automation.BlogSeriesDiscovery (DiscoveredSeries (..))
+import Automation.BlogSeriesDiscovery (AutoBlogSeries (..), seriesId)
 import Automation.ContextQuery (ContextQuery (..), OrderBy (..), Field (..), SortDirection (..))
 import qualified Automation.Series.AutoBlogZero as AutoBlogZero
 import qualified Automation.Series.ChickieLoo as ChickieLoo
@@ -16,8 +16,8 @@ import qualified Automation.Series.TheNoise as TheNoise
 identifier :: Text
 identifier = "convergence"
 
-series :: DiscoveredSeries
-series = DiscoveredSeries
+series :: AutoBlogSeries
+series = AutoBlogSeries
   { seriesId        = identifier
   , seriesName      = "Convergence"
   , seriesIcon      = "🔀"
@@ -33,11 +33,11 @@ series = DiscoveredSeries
           , limitPerSource = Nothing
           }
       , ContextQuery
-          { directories    = [ AutoBlogZero.identifier
-                              , ChickieLoo.identifier
-                              , TheNoise.identifier
-                              , PositivityBias.identifier
-                              , SystemsForPublicGood.identifier
+          { directories    = [ seriesId AutoBlogZero.series
+                              , seriesId ChickieLoo.series
+                              , seriesId TheNoise.series
+                              , seriesId PositivityBias.series
+                              , seriesId SystemsForPublicGood.series
                               ]
           , conditions     = []
           , orderBy        = OrderBy Filename Descending

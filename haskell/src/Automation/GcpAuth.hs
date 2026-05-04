@@ -175,8 +175,8 @@ integerBitLength n
   | n <= 0 = 0
   | otherwise = countBits n 0
   where
-    countBits 0 acc = acc
-    countBits x acc = countBits (x `div` 2) (acc + 1)
+    countBits 0 bitCount = bitCount
+    countBits x bitCount = countBits (x `div` 2) (bitCount + 1)
 
 parseDerTag :: Word8 -> ByteString -> Either Text (ByteString, ByteString)
 parseDerTag expectedTag bytes
@@ -208,17 +208,17 @@ parseDerLength bytes
             then Left "DER length extends beyond data"
             else
               let lengthBytes = BS.take numLengthBytes (BS.drop 1 bytes)
-                  lengthValue = BS.foldl' (\acc byte -> acc `shiftL` 8 .|. fromIntegral byte) 0 lengthBytes
+                  lengthValue = BS.foldl' (\accumulated byte -> accumulated `shiftL` 8 .|. fromIntegral byte) 0 lengthBytes
               in Right (lengthValue, numLengthBytes + 1)
 
 bytesToInteger :: ByteString -> Integer
 bytesToInteger bytes
   | BS.null bytes = 0
   | BS.index bytes 0 >= 0x80 =
-      let unsigned = BS.foldl' (\acc byte -> acc `shiftL` 8 .|. fromIntegral byte) 0 bytes :: Integer
+      let unsigned = BS.foldl' (\accumulated byte -> accumulated `shiftL` 8 .|. fromIntegral byte) 0 bytes :: Integer
           bitCount = BS.length bytes * 8
       in unsigned - (1 `shiftL` bitCount)
-  | otherwise = BS.foldl' (\acc byte -> acc `shiftL` 8 .|. fromIntegral byte) 0 bytes
+  | otherwise = BS.foldl' (\accumulated byte -> accumulated `shiftL` 8 .|. fromIntegral byte) 0 bytes
 
 showHexByte :: Word8 -> String
 showHexByte byte =

@@ -211,7 +211,7 @@ parseTweetResponse :: Text -> LBS.ByteString -> Either Error (Text, Text)
 parseTweetResponse fallbackText body =
   case eitherDecode @Json.Value body of
     Left err -> Left (JsonParseError (T.pack err))
-    Right val -> case extractTweetData fallbackText val of
+    Right jsonValue -> case extractTweetData fallbackText jsonValue of
       Left err -> Left (ExtractionError (T.pack err))
       Right r -> Right r
 
@@ -270,7 +270,7 @@ parseOEmbedHtml :: LBS.ByteString -> Either Error Text
 parseOEmbedHtml body =
   case eitherDecode @Json.Value body of
     Left err -> Left (JsonParseError (T.pack err))
-    Right val -> case withObject "oembed" (.: "html") val of
+    Right jsonValue -> case withObject "oembed" (.: "html") jsonValue of
       Left err -> Left (ExtractionError (T.pack err))
       Right html -> Right html
 

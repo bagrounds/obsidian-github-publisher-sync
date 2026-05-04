@@ -26,13 +26,13 @@ cloudflarePromptMaxLength = 2048
 
 insertImageEmbed :: Text -> Text -> Text
 insertImageEmbed content imageName =
-  let ls = T.splitOn "\n" content
+  let contentLines = T.splitOn "\n" content
       embed = "![[attachments/" <> imageName <> "]]"
       insertAfterH1 [] = []
       insertAfterH1 (l : rest)
         | "# " `T.isPrefixOf` l = l : embed : rest
         | otherwise              = l : insertAfterH1 rest
-  in T.intercalate "\n" (insertAfterH1 ls)
+  in T.intercalate "\n" (insertAfterH1 contentLines)
 
 removeImageEmbed :: Text -> (Text, Maybe Text)
 removeImageEmbed content =

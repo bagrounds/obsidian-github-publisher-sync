@@ -12,9 +12,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-16T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-05-04T09:55:22Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A minimalist, high-contrast illustration featuring a stylized, glowing geometric brain composed of interconnected nodes and lines. From the center of the brain, a path of golden light filaments reaches out toward a series of floating, abstract shapes—a cube, a sphere, and a pyramid—each sitting on a different platform. A small, sleek robotic arm is interacting with one of the shapes, causing it to emit a soft, rewarding pulse of light. The background is a deep, dark navy blue, creating a clean aesthetic that suggests complex computation and digital intelligence. The composition uses thin, crisp lines and soft neon gradients to represent the intersection of biological learning and machine adaptation.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🤖➕🧠➡️ Reinforcement Learning: An Introduction  
+![books-reinforcement-learning-an-introduction](../books-reinforcement-learning-an-introduction.jpg)  
 [🛒 Reinforcement Learning: An Introduction. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4krIXUx)  
   
 ## 🤖 AI Summary  

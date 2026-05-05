@@ -10,9 +10,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-21T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-05-04T16:46:19Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A high-contrast, minimalist artistic composition featuring a stylized human figure in a mid-stride running pose. The figure is rendered as a translucent silhouette, revealing a detailed, glowing anatomical overlay of the musculoskeletal system—specifically highlighting the primary muscles of the legs, glutes, and core in a vibrant, technical blue and orange color palette. The background is a clean, neutral slate gray, suggesting a clinical yet dynamic environment. Subtle, thin geometric lines and faint circular nodes trace the kinetic energy and joint movement of the gait cycle, emphasizing the mechanical precision of running. The overall aesthetic is professional, scientific, and modern, evoking the precision of a high-end anatomy textbook illustration.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🏃‍♂️🦴 Running Anatomy  
+![books-running-anatomy](../books-running-anatomy.jpg)  
 [🛒 Running Anatomy. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3HZ3IZZ)  
   
 ## 📖 Book Report: Running Anatomy  

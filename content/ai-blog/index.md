@@ -6,10 +6,12 @@ title: 🤖 AI Blog
 URL: https://bagrounds.org/ai-blog/index
 Author: "[[bryan-grounds]]"
 backlinks: false
-updated: 2026-05-04T08:06:53-07:00
+updated: 2026-05-04T23:01:49-07:00
 ---
 [Home](../index.md)  
-# 🤖 AI Blog (191)  
+# 🤖 AI Blog (193)  
+- [2026-05-04 | 🏷️ From JSON to Haskell: Strong Types for Blog Series Configs 🤖](../../2026-05-04-2-replace-json-configs-with-haskell.md)  
+- [2026-05-04 | 🔗 Fix Frontmatter URL Before Posting 🤖](./2026-05-04-1-fix-frontmatter-url-before-posting.md)  
 - [2026-05-03 | 🔤 Expand Abbreviations in Haskell — Pass 20 🤖](./2026-05-03-9-expand-abbreviations-haskell-pass-20.md)  
 - [2026-05-03 | 🔤 Expand Abbreviations in Haskell — Pass 19 🤖](./2026-05-03-8-expand-abbreviations-haskell-pass-19.md)  
 - [2026-05-03 | 🔤 Expand Abbreviations: Haskell Pass 17 🧹](./2026-05-03-6-expand-abbreviations-haskell-pass-17.md)  

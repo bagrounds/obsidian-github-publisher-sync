@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-05-04T23:01:49-07:00
+updated: 2026-05-05T07:30:37-07:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -49,18 +49,18 @@ updated: 2026-05-04T23:01:49-07:00
 - [2026-05-01 | 🏛️ Weaving the Democratic Fabric: Civic Infrastructure as Collective Power 🏛️](./systems-for-public-good/2026-05-01-weaving-the-democratic-fabric-civic-infrastructure-as-collective-power.md)  
   
   
-## [📰 The Noise](./the-noise/index.md) (25)  
+## [📰 The Noise](./the-noise/index.md) (26)  
+- [2026-05-05 | 📰 🌪️ Whirlwinds of Diplomacy, Currents of Discovery 📰](./the-noise/2026-05-05-whirlwinds-of-diplomacy-currents-of-discovery.md)  
 - [2026-05-04 | 📰 Global Currents, Echoing Futures 📰](./the-noise/2026-05-04-global-currents-echoing-futures.md)  
 - [2026-05-03 | 📰 🌐 Shifting Balances and Rapid Strides 📰](./the-noise/2026-05-03-shifting-balances-and-rapid-strides.md)  
 - [2026-05-02 | 📰 ⚖️ The Shifting Sands of Peace and Innovation's March 📰](./the-noise/2026-05-02-the-shifting-sands-of-peace-and-innovation-s-march.md)  
-- [2026-05-01 | 📰 ⏳ Crossroads of Enduring Crises and Breakthrough Innovation 📰](./the-noise/2026-05-01-crossroads-of-enduring-crises-and-breakthrough-innovation.md)  
   
   
-## [🌟 Positivity Bias](./positivity-bias/index.md) (24)  
+## [🌟 Positivity Bias](./positivity-bias/index.md) (25)  
+- [2026-05-05 | 🌟 🔬 Scientific & Health Horizons Expanding 🌟](./positivity-bias/2026-05-05-scientific-health-horizons-expanding.md)  
 - [2026-05-04 | 🌟 Glimmers of Hope: Innovation and Resilience Shine Through 🌟](./positivity-bias/2026-05-04-glimmers-of-hope-innovation-and-resilience-shine-through.md)  
 - [2026-05-03 | 🌟 Echoes of Progress and Shared Endeavors 🌟](./positivity-bias/2026-05-03-echoes-of-progress-and-shared-endeavors.md)  
 - [2026-05-02 | 🌟 🔬 Scientific & Health Horizons Expanding 🌟](./positivity-bias/2026-05-02-scientific-health-horizons-expanding.md)  
-- [2026-05-01 | 🌟 🚀 Seeds of Progress: Breakthroughs and Uniting Forces 🌟](./positivity-bias/2026-05-01-seeds-of-progress-breakthroughs-and-uniting-forces.md)  
   
   
 ## [🔀 Convergence](./convergence/index.md) (21)  
@@ -71,10 +71,10 @@ updated: 2026-05-04T23:01:49-07:00
   
   
 ## [📚 Books](./books/index.md) (961)  
+- [😴👶  Solve Your Child's Sleep Problems](./books/solve-your-childs-sleep-problems.md)  
+- [💾🔮🤔🎲🎱 Software Estimation: Demystifying the Black Art](./books/software-estimation.md)  
 - [💻⚙️ Software Engineering at Google: Lessons Learned from Programming Over Time](./books/software-engineering-at-google-lessons-learned-from-programming-over-time.md)  
 - [🧠🔄💡🌱✨ Soft Wired: How the New Science of Brain Plasticity Can Change Your Life](./books/soft-wired-how-the-new-science-of-brain-plasticity-can-change-your-life.md)  
-- [🗣️💡🦠 Social Physics: How Good Ideas Spread - The Lessons from a New Science](./books/social-physics.md)  
-- [💪❤️ So Good They Can't Ignore You: Why Skills Trump Passion in the Quest for Work You Love](./books/so-good-they-cant-ignore-you-why-skills-trump-passion-in-the-quest-for-work-you-love.md)  
   
   
 ## [📺 Videos](./videos/index.md) (816)  

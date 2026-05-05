@@ -14,11 +14,11 @@ updated: 2026-05-04T23:01:49-07:00
 🔊 Listen to any page with built in audio control.  
 💬 Comment on any page with your GitHub account.  
   
-## [🪞 Reflections](./reflections/index.md) ~ Blog (536)  
+## [🪞 Reflections](./reflections/index.md) ~ Blog (537)  
+- [2026-05-05](./reflections/2026-05-05.md)  
 - [2026-05-04 | 🌟 Hope 📰 Echoing 🐔 Heart 🤖 Truth 🏛️ Commons 🤖 Fix 🤖 Strong 🔀 Collective. 🌟📰🐔🤖🏛️🔀🔄🤖🐲](./reflections/2026-05-04.md)  
 - [2026-05-03 | 🧠 Learning 🔬 Research 🌟 Progress 📰 Shifting 🐔 Roots 🤖 Architecture 🏛️ Foundations 🤖 Expand 🤖 Pass 🔀 Purpose 📚📺🌟📰🐔🤖🏛️🔀🔄🤖🐲](./reflections/2026-05-03.md)  
 - [2026-05-02 | 🧠 Learning 📈 Expanding 🌟 Horizons, 📰 Shifting 🐔 Open 🤖 Agency 🧹 Analytics 🏛️ Commons 🔀 Architecture. 📚📺🌌🌟📰🐔🤖🏛️🔀🔄🤖🐲](./reflections/2026-05-02.md)  
-- [2026-05-01 | ✅ Learning 🤖 Ruined 🤖 Reality 🐔 Beginnings 🔀 Architecture 🌟 Progress 🏛️ Infrastructure 📰 Innovation 🤖 Reports 📚📺🤖🐔🔀🌟🏛️📰🔄🤖🐲](./reflections/2026-05-01.md)  
   
   
 ## [🤖 AI Blog](./ai-blog/index.md) (193)  
@@ -71,10 +71,10 @@ updated: 2026-05-04T23:01:49-07:00
   
   
 ## [📚 Books](./books/index.md) (961)  
-- [🧶✔️ Six Simple Rules: How to Manage Complexity without Getting Complicated](./books/six-simple-rules.md)  
-- [🛡️🌪️🇷🇺🔥 Siege: Trump Under Fire](./books/siege-trump-under-fire.md)  
-- [📝🎨🎶 Show Your Work!: 10 Ways to Share Your Creativity and Get Discovered](./books/show-your-work.md)  
-- [🔥⛈️ Fire Weather: A True Story from a Hotter World](./books/fire-weather.md)  
+- [💻⚙️ Software Engineering at Google: Lessons Learned from Programming Over Time](./books/software-engineering-at-google-lessons-learned-from-programming-over-time.md)  
+- [🧠🔄💡🌱✨ Soft Wired: How the New Science of Brain Plasticity Can Change Your Life](./books/soft-wired-how-the-new-science-of-brain-plasticity-can-change-your-life.md)  
+- [🗣️💡🦠 Social Physics: How Good Ideas Spread - The Lessons from a New Science](./books/social-physics.md)  
+- [💪❤️ So Good They Can't Ignore You: Why Skills Trump Passion in the Quest for Work You Love](./books/so-good-they-cant-ignore-you-why-skills-trump-passion-in-the-quest-for-work-you-love.md)  
   
   
 ## [📺 Videos](./videos/index.md) (816)  
@@ -106,10 +106,10 @@ updated: 2026-05-04T23:01:49-07:00
   
   
 ## [💾 Software](./software/index.md) (33)  
+- [🤖💻🪄 GitHub Copilot for VS Code](./software/github-copilot-for-vs-code.md)  
+- [🤖🖱️📍 Cursor](./software/cursor.md)  
+- [💾➕🤝 Git](./software/git.md)  
 - [⚙️📊🔄 FlexSim](./software/flexsim.md)  
-- [☁️🛡️ Cloudflare Tunnel (cloudflared)](./software/cloudflare-tunnel.md)  
-- [🌐🛤️ Express.js](./software/express.md)  
-- [🌐🧱🖥️🎮 Babylon.js](./software/babylon.md)  
   
   
 ## [👥 People](./people/index.md) (18)  

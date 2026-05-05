@@ -10,9 +10,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-28T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-05-05T00:40:56Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A vintage, mid-century radio microphone stands prominently in the foreground, its chrome finish catching the warm, golden light of a setting sun. Behind it, a stylized, blueprint-like illustration of a radio transmission tower rises against a textured background reminiscent of aged parchment or architectural drafting paper. The composition uses a muted color palette of navy blue, cream, and deep amber to evoke a sense of history and intellectual rigor. Subtle, overlapping geometric shapes and faint, intricate grid lines suggest the structural development and strategic planning of a grassroots movement. The overall aesthetic is sophisticated and academic, emphasizing the transition from early experimental radio to a structured, institutionalized system of public education.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🇺🇸📻 Shadow of the New Deal: The Victory of Public Broadcasting  
+![books-shadow-of-the-new-deal-the-victory-of-public-broadcasting](../books-shadow-of-the-new-deal-the-victory-of-public-broadcasting.jpg)  
 [🛒 Shadow of the New Deal: The Victory of Public Broadcasting. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/44fHuKX)  
   
 📺🏛️📚 A dedicated media reform movement rooted in New Deal ideals, established a noncommercial public broadcasting system against considerable odds, transforming American culture with a vision of equitable access to education and information.  

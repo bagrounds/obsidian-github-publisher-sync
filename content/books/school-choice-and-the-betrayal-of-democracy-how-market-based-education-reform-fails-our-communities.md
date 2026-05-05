@@ -10,9 +10,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-25T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-05-04T18:45:24Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: "A stark, conceptual illustration featuring a grand, classical-style stone schoolhouse building in the center. The building is partially crumbling, with cracks running through the foundation. In the foreground, a vibrant, lush community garden with diverse, interconnected roots is being uprooted by sharp, metallic gears and jagged geometric shapes that represent market forces. The scene uses a high-contrast color palette: warm, golden tones highlighting the community roots and the school’s architecture, contrasted against cold, industrial blues and greys encroaching from the edges. The sky is divided, with one side showing a soft, hopeful sunrise and the other a stormy, fragmented horizon, symbolizing the tension between collective democratic values and individualistic privatization."
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🏫💔🏛️ School Choice and the Betrayal of Democracy: How Market-Based Education Reform Fails Our Communities  
+![books-school-choice-and-the-betrayal-of-democracy-how-market-based-education-reform-fails-our-communities](../books-school-choice-and-the-betrayal-of-democracy-how-market-based-education-reform-fails-our-communities.jpg)  
 [🛒 School Choice and the Betrayal of Democracy: How Market-Based Education Reform Fails Our Communities. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/46XpRkY)  
   
 📚💔🏛️ School Choice and the Betrayal of Democracy: How Market-Based Education Reform Fails Our Communities summary reveals how market-based education reforms, driven by values of choice, competition, and self-interest, fundamentally undermine democratic communities and public education by promoting individualism over collective civic responsibility 📚💔🏛️.  

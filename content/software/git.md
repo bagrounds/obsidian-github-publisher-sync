@@ -11,6 +11,7 @@ image_date: 2026-04-10T20:21:18Z
 image_model: "@cf/black-forest-labs/flux-1-schnell"
 image_prompt: A stylized, isometric illustration of a digital tree growing from a stack of glowing, translucent data blocks. The branches of the tree consist of interconnected nodes and lines, representing a directed acyclic graph (DAG). Each node glows with a soft light, symbolizing distinct commits. The roots of the tree extend downward into the blocks, which are etched with subtle, abstract circuit-board patterns. The background is a clean, minimalist gradient of deep navy and electric blue, suggesting a high-tech, organized environment. Floating geometric shapes and thin, ethereal lines connect the tree to the edges of the frame, emphasizing the concept of a distributed, collaborative network. The overall aesthetic is modern, sleek, and technical, utilizing a palette of cool blues, crisp whites, and vibrant cyan accents.
 link_analysis_version: "2"
+updated: 2026-05-05T09:46:09
 ---
 [Home](../index.md) > [Software](./index.md)  
 # 💾➕🤝 Git  
@@ -140,3 +141,11 @@ Git was created by Linus Torvalds in 2005 to manage the [Linux](./linux.md) kern
   
 - "[Git and GitHub for Beginners - Crash Course](https://www.youtube.com/watch?v=RGOj5yH7evk)" by freeCodeCamp.org 📺  
 - "[Git Explained in 100 Seconds](https://youtu.be/hwP7WQkmECE?si=KsrrushNfCBfFV1s)" by Fireship 📺  
+  
+## 🦋 Bluesky    
+<blockquote class="bluesky-embed" data-bluesky-uri="at://did:plc:i4yli6h7x2uoj7acxunww2fc/app.bsky.feed.post/3ml3vpmtrsm2o" data-bluesky-cid="bafyreiadzfhdqigfor6siwjsu4hfp2ztn35uwkyl33zfboofiillxoviwy"><p>💾➕🤝 Git  
+  
+#AI Q: 🌿 What is the one Git command you wish you had learned much sooner?  
+  
+💾 Version Control | 🧑‍💻 Collaboration | 🌳 Branching | 🌐 Distributed Systems  
+https://bagrounds.org/software/git</p>&mdash; <a href="https://bsky.app/profile/did:plc:i4yli6h7x2uoj7acxunww2fc?ref_src=embed">Bryan Grounds (@bagrounds.bsky.social)</a> <a href="https://bsky.app/profile/did:plc:i4yli6h7x2uoj7acxunww2fc/post/3ml3vpmtrsm2o?ref_src=embed">2026-05-05T09:46:16.000Z</a></blockquote><script async src="https://embed.bsky.app/static/embed.js" charset="utf-8"></script>

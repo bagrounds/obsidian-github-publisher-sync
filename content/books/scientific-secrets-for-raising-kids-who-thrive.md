@@ -10,9 +10,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-16T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-05-04T19:45:07Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A clean, minimalist illustration featuring a stylized, glowing brain icon integrated with a small, flourishing green sprout. The sprout grows from the center of the brain, symbolizing the intersection of cognitive development and natural growth. The background is a soft, warm gradient of cream and light sage, evoking a sense of calm and nurturing. Surrounding the central motif are subtle, clean-lined geometric shapes—a small wooden block, a musical note, and a simplified representation of a book—arranged in a balanced, organized composition. The overall aesthetic is modern, bright, and academic, using a soft color palette of mint, soft yellow, and muted terracotta to convey a sense of gentle, evidence-based guidance.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🧪👶📈 Scientific Secrets for Raising Kids Who Thrive  
+![books-scientific-secrets-for-raising-kids-who-thrive](../books-scientific-secrets-for-raising-kids-who-thrive.jpg)  
 [🛒 Scientific Secrets for Raising Kids Who Thrive. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4dISzYB)  
   
 ## 📝🐒 Human Notes  

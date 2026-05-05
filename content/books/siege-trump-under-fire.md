@@ -9,9 +9,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-18T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-05-05T03:16:22Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A stylized, high-contrast illustration featuring a weathered, neoclassical stone pillar—evoking a government building—cracked and crumbling under the pressure of a swirling, dark storm cloud. Lightning bolts strike the structure, casting harsh, dramatic shadows. In the center, a silhouette of a solitary figure stands behind a heavy, ornate wooden desk, appearing small and isolated against the vast, turbulent atmosphere. The color palette is restricted to deep charcoal, slate grey, and piercing, fiery orange embers that glow near the base of the pillar, suggesting internal heat and volatile instability. The overall composition conveys a sense of intense pressure, systemic decay, and a looming, inescapable confrontation.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🛡️🌪️🇷🇺🔥 Siege: Trump Under Fire  
+![books-siege-trump-under-fire](../books-siege-trump-under-fire.jpg)  
 [🛒 Siege: Trump Under Fire. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4ej4PPG)  
   
 ## 📖 Book Report: 💥 Siege: Trump Under Fire  

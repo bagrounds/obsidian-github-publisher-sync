@@ -8,11 +8,16 @@ Author:
 tags:
 affiliate link: https://amzn.to/3FnUVQ1
 link_analysis_model: gemini-3.1-flash-lite-preview
-link_analysis_time: 2026-04-09T00:00:00Z
+link_analysis_time: 2026-04-24T00:00:00Z
 force_analyze_links: false
+link_analysis_version: "2"
+image_date: 2026-05-04T14:53:37Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A sweeping, atmospheric landscape painting of the Nile River winding through dense, mist-covered African jungle at dawn. In the foreground, a weathered, hand-drawn Victorian-era map lies partially unfurled on a mossy rock, its ink lines fading into the parchment. Two shadowy, silhouetted figures stand at the rivers edge, facing in opposite directions, symbolizing the deep rift between the explorers. A vintage brass sextant rests beside the map. The color palette features deep emerald greens, murky river blues, and warm, golden sunlight piercing through the canopy, creating a contrast between the lush, untamed wilderness and the rigid, analytical tools of 19th-century colonial ambition. The composition evokes a sense of mystery, historical tension, and the relentless, dangerous pursuit of discovery.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🌊🧠🙏⚔️ River of the Gods: Genius, Belief, and Betrayal in the Search for the Source of the Nile  
+![books-river-of-the-gods](../books-river-of-the-gods.jpg)  
 [🛒 River of the Gods: Genius, Belief, and Betrayal in the Search for the Source of the Nile. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3FnUVQ1)  
   
 ## 🤖 AI Summary  

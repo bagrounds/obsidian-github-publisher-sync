@@ -12,9 +12,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-18T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-05-05T10:47:56Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A minimalist, high-contrast illustration featuring a stylized, translucent glass coin hovering above an intricate, geometric architectural blueprint of a government building. The coin glows with a soft, warm light, casting long shadows across the floor plan. Surrounding the building are abstract, floating bar charts and mathematical symbols that dissolve into fine golden dust as they rise. The color palette is composed of deep navy, muted slate, and vibrant metallic gold. The composition is clean, modern, and intellectual, emphasizing the intersection of abstract financial theory and tangible economic infrastructure. The background is a textured, matte charcoal finish, providing a sophisticated backdrop for the central golden elements.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 💵🏛️📈 Soft Currency Economics II: The Origin of Modern Monetary Theory  
+![books-soft-currency-economics-ii-the-origin-of-modern-monetary-theory](../books-soft-currency-economics-ii-the-origin-of-modern-monetary-theory.jpg)  
 [🛒 Soft Currency Economics II: The Origin of Modern Monetary Theory. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4qz8KOa)  
   
 🤯💰💡 Debunk conventional economic myths surrounding government finance. Monetarily sovereign nations possess unparalleled fiscal flexibility, constrained only by real resources and inflation, not by taxes or debt.  

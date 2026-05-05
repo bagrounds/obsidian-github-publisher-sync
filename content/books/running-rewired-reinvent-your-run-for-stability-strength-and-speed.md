@@ -10,9 +10,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-21T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-05-04T17:42:45Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: "A professional, high-contrast illustration featuring a stylized human runner in motion. The runner’s body is depicted with a split-visual effect: one side shows the sleek, blurred silhouette of a person running at speed, while the other side reveals a detailed, glowing anatomical blueprint of muscles and joints highlighted in vibrant electric blue and orange lines. The background is a clean, minimalist dark charcoal, emphasizing the kinetic energy of the runner. Subtle geometric overlays of grid lines and mechanical gears surround the joints, symbolizing the rewiring and structural optimization of the human frame. The overall aesthetic is scientific, modern, and energetic, focusing on the intersection of human biology and mechanical precision."
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🏃🛠️⚡ Running Rewired: Reinvent Your Run for Stability, Strength, and Speed  
+![books-running-rewired-reinvent-your-run-for-stability-strength-and-speed](../books-running-rewired-reinvent-your-run-for-stability-strength-and-speed.jpg)  
 [🛒 Running Rewired: Reinvent Your Run for Stability, Strength, and Speed. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4gjnAn7)  
   
 ## 📖 Book Report: 🏃‍♂️ Running Rewired: Reinvent Your Run for Stability, Strength, and Speed  

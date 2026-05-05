@@ -26,12 +26,14 @@ force_analyze_links: false
 * ⏩ Focus on the future, not the past.  
     * 📏 Hammings Rule: Understand the style of thinking rather than just the results.  
     * 📈 Knowledge and ability are compound interest; the more you know, the more you can learn.  
+  
 ### 🛠️ The Methodology of Greatness  
 * 🎯 Selection of Great Problems.  
     * 🗓️ Habit of spending Friday afternoons on Great Thoughts.  
     * 🚧 If you aren't working on important problems, it's unlikely you'll do important work.  
 * 🦁 Courage and confidence.  
     * 🛡️ Self-delusion is a barrier to progress; total honesty with oneself is mandatory.  
+  
 ### ⚙️ Technical & Engineering Excellence  
 * 🔢 Error-correcting codes and digital filters.  
     * 🧠 Shift from how it works to how to think about how it works.  

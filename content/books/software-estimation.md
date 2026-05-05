@@ -8,11 +8,16 @@ Author:
 tags:
 affiliate link: https://amzn.to/4kUnd3v
 link_analysis_model: gemini-3.1-flash-lite-preview
-link_analysis_time: 2026-04-10T00:00:00Z
+link_analysis_time: 2026-04-26T00:00:00Z
 force_analyze_links: false
+link_analysis_version: "2"
+image_date: 2026-05-05T13:44:08Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A surreal, high-contrast illustration featuring a glowing, translucent crystal ball resting on a minimalist wooden desk. Inside the sphere, a complex, glowing digital blueprint of a software architecture floats, surrounded by swirling nebulae of data points and geometric shapes. Beside the sphere, a set of polyhedral dice—resembling those used in tabletop games—are scattered, with one die mid-air as if caught in a toss. A soft, warm desk lamp casts dramatic shadows, highlighting the contrast between the chaotic, swirling light of the future inside the sphere and the structured, tangible objects on the desk surface. The background is a dark, moody professional office environment, rendered in a clean, modern, slightly abstract digital art style.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 💾🔮🤔🎲🎱 Software Estimation: Demystifying the Black Art  
+![books-software-estimation](../books-software-estimation.jpg)  
 [🛒 Software Estimation: Demystifying the Black Art. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4kUnd3v)  
   
 ## 🤖 AI Summary  

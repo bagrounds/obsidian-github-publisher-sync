@@ -10,9 +10,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-18T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-05-05T09:43:44Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A minimalist, high-angle illustration featuring a single, vibrant green sapling growing out of the center of a rustic, hand-crafted wooden gear. The gear rests on a patch of rich, dark soil, surrounded by a subtle, soft-focus background of a thriving, diverse community garden. The lighting is warm and natural, suggesting a sunrise that casts long, gentle shadows. The composition emphasizes a balance between human ingenuity—represented by the tactile, simple wooden tool—and the organic, sustainable growth of the natural world. The style is clean and modern, using an earthy color palette of forest greens, warm wood tones, and soft terracotta, highlighting the harmony between technology and the environment.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🤏🧑 Small Is Beautiful: Economics as if People Mattered  
+![books-small-is-beautiful-economics-as-if-people-mattered](../books-small-is-beautiful-economics-as-if-people-mattered.jpg)  
 [🛒 Small Is Beautiful: Economics as if People Mattered. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4oDqFSv)  
   
 🌍🌱 A human-centered economic system focused on sustainability, local self-sufficiency, and appropriate technology as an alternative to unchecked industrial growth and resource depletion.  

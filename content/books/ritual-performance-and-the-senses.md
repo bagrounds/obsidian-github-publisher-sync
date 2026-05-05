@@ -9,9 +9,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-19T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-05-04T12:41:55Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: "A surreal, atmospheric composition centered on a human silhouette standing in a dimly lit, ancient stone chamber. The figure is captured in a fluid, performative gesture, suggesting dance or ritual movement. Around the figure, abstract sensory elements float in the air: a glowing, golden incense trail swirling like smoke, translucent spectral ripples representing sound waves, and soft, ethereal light-orbs that suggest touch and vision. The background blends historical architectural textures with a subtle, modern technological glow, symbolizing the intersection of ancient ritual and cognitive science. The color palette is deep indigo, warm amber, and muted charcoal, creating a sense of mystery and profound, embodied experience. The overall aesthetic is cinematic and evocative, emphasizing the connection between the physical body and the intangible sensory world."
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🕯️🎬👃 Ritual, Performance and the Senses  
+![books-ritual-performance-and-the-senses](../books-ritual-performance-and-the-senses.jpg)  
 [🛒 Ritual, Performance and the Senses. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3SA7fiZ)  
   
 ## 📖 Book Report: 🎭 Ritual, 🎬 Performance and the 👃 Senses  

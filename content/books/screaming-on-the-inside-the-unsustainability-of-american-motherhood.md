@@ -10,9 +10,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-17T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-05-04T20:44:57Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A minimalist, surreal illustration featuring a woman standing in a clean, modern kitchen. She is dressed in smart-casual business attire, holding a toy in one hand and a smartphone in the other. While her face is calm and composed, a subtle, ethereal crack runs down the center of her silhouette, revealing a vibrant, chaotic storm of swirling colors and tangled threads inside her chest. The background is a soft, muted pastel, contrasting with the sharp, jagged energy emitting from within her. The lighting is bright and sterile, emphasizing the juxtaposition between the polished external appearance and the internal emotional pressure.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 😫👩‍👧‍👦 Screaming on the Inside: The Unsustainability of American Motherhood  
+![books-screaming-on-the-inside-the-unsustainability-of-american-motherhood](../books-screaming-on-the-inside-the-unsustainability-of-american-motherhood.jpg)  
 [🛒 Screaming on the Inside: The Unsustainability of American Motherhood. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/43HjoI1)  
   
 ## 📚 Book Report: 😫 Screaming on the Inside: The Unsustainability of American Motherhood  

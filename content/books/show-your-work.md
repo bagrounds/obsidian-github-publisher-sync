@@ -11,9 +11,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-16T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-05-05T03:16:19Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: "A top-down, brightly lit flat-lay composition on a clean, wooden desk surface. In the center, an open sketchbook displays a chaotic but vibrant mix of hand-drawn diagrams, sticky notes, and unfinished sketches in graphite and ink. Surrounding the sketchbook are the tools of the creative process: a fountain pen, a pair of scissors, a small pile of colorful paper scraps, a smartphone displaying a social media feed, and a steaming mug of coffee. A warm, natural light casts soft shadows across the items, suggesting a work-in-progress. The aesthetic is organized yet authentic, capturing the spirit of documenting ones journey rather than presenting a polished final product. The color palette is earthy and professional, featuring muted tones of paper, wood, and pops of vibrant ink colors."
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 📝🎨🎶 Show Your Work!: 10 Ways to Share Your Creativity and Get Discovered  
+![books-show-your-work](../books-show-your-work.jpg)  
 [🛒 Show Your Work!: 10 Ways to Share Your Creativity and Get Discovered. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4kFdY7g)  
   
 ## 📚 Book Report: 🌟 Show Your Work! 🎨 10 Ways to Share Your Creativity and Get Discovered by Austin Kleon  

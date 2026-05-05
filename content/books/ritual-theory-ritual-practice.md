@@ -9,9 +9,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-19T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-05-04T13:45:41Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A minimalist, high-contrast illustration featuring a series of geometric stone shapes stacked in a delicate, precarious balance. In the center, a subtle, ethereal human silhouette is captured in a mid-motion gesture, suggesting a repetitive, rhythmic movement. The background is a soft, textured parchment gradient, blending deep charcoal and muted terracotta tones. Surrounding the central stack are faint, ghostly outlines of circular ripples or concentric rings, symbolizing the dynamic, recurring nature of ritualization. The overall composition is clean and academic, emphasizing the tension between rigid theoretical structures and the fluid, embodied nature of human practice, rendered with sharp lines and soft, atmospheric shadows.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🙏🔄 Ritual Theory, Ritual Practice  
+![books-ritual-theory-ritual-practice](../books-ritual-theory-ritual-practice.jpg)  
 [🛒 Ritual Theory, Ritual Practice. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4dGnlRM)  
   
 ## 📚 Book Report: *Ritual Theory, Ritual Practice* (Ed. Catherine Bell, 1992)  

@@ -9,9 +9,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-17T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-05-05T12:33:56Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: "A high-angle, minimalist illustration featuring a clean, isometric workspace. On a sleek wooden desk, a single open laptop glows softly, displaying a complex, glowing network of interconnected nodes and lines that represent a massive codebase. Surrounding the laptop are symbolic icons arranged neatly: a small group of abstract human silhouettes representing culture, a balanced scale representing trade-offs, and a series of interlocking gears representing processes and tools. The background is a soft, professional slate blue, transitioning into a light gradient. The lighting is crisp and modern, emphasizing clarity, precision, and the concept of growth over time through a subtle, glowing timeline bar at the base of the desk. The overall aesthetic is professional, architectural, and tech-forward."
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 💻⚙️ Software Engineering at Google: Lessons Learned from Programming Over Time  
+![books-software-engineering-at-google-lessons-learned-from-programming-over-time](../books-software-engineering-at-google-lessons-learned-from-programming-over-time.jpg)  
 - [🛒 Software Engineering at Google: Lessons Learned from Programming Over Time. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4l1cDbb)  
 - [🆓 Software Engineering at Google](https://abseil.io/resources/swe-book)  
   

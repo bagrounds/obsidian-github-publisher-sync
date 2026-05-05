@@ -10,9 +10,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-15T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-05-04T21:35:06Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: "A split-screen composition contrasting two visions of a landscape. On the left, a legible high-modernist grid: a perfectly sterile, top-down map featuring uniform square city blocks, straight roads, and identical trees planted in rigid, equidistant rows. The palette here is cold and monochromatic, using stark grays and clinical blues. On the right, the reality of the same landscape: a vibrant, chaotic, and organic ecosystem. This side features a winding river, tangled forest growth, and an irregular, overlapping village layout with narrow, organic pathways. This side is rendered in warm, naturalistic tones—rich greens, earthy browns, and soft golden light. Where the two sides meet in the middle, the rigid lines of the grid begin to fray and dissolve into the organic complexity of the wild, illustrating the failure of the state’s attempt to impose order on human and natural life."
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 📖🏛️📉 Seeing Like a State: How Certain Schemes to Improve the Human Condition Have Failed  
+![books-seeing-like-a-state-how-certain-schemes-to-improve-the-human-condition-have-failed](../books-seeing-like-a-state-how-certain-schemes-to-improve-the-human-condition-have-failed.jpg)  
 [🛒 Seeing Like a State: How Certain Schemes to Improve the Human Condition Have Failed. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4dOZbVk)  
   
 ## 📚 Book Report: *Seeing Like a State* by James C. Scott  

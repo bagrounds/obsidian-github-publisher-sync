@@ -10,9 +10,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-16T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-05-05T06:55:50Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A surreal, high-contrast illustration featuring a human silhouette lying in profile, composed of soft, ethereal clouds and starlight. Within the silhouette’s head, a complex, glowing neural network pulses with soft bioluminescent blue and violet light, representing synaptic activity. The background is a deep, velvety midnight blue, transitioning into a subtle, gradient sunrise on one side to symbolize circadian rhythms. Floating gently around the head are abstract, translucent geometric shapes and soft, swirling nebulas that suggest the dream state and REM cycles. The overall aesthetic is clean, modern, and serene, blending scientific precision with the dreamlike quality of sleep. The lighting is soft and diffused, focusing on the calm, restorative nature of the brain at rest.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 😴🧠 Sleepyhead: The Neuroscience of a Good Night's Rest  
+![books-sleepyhead-the-neuroscience-of-a-good-nights-rest](../books-sleepyhead-the-neuroscience-of-a-good-nights-rest.jpg)  
 [🛒 Sleepyhead: The Neuroscience of a Good Night's Rest. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3FwiUwm)  
   
 ## 😴 Book Report: Sleepyhead: The Neuroscience of a Good Night's Rest  

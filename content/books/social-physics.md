@@ -12,9 +12,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-19T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-05-05T11:35:25Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A high-contrast, minimalist graphic design featuring a complex web of interconnected nodes. The nodes are represented by glowing, translucent spheres connected by thin, vibrant lines of light, suggesting a dynamic social network. The central cluster of nodes is tightly woven, symbolizing engagement, while several lines extend outward into the surrounding space, representing exploration. The background is a deep, matte navy blue, making the luminous network pop. The overall aesthetic is clean, modern, and scientific, emphasizing the flow of information and collective intelligence without the use of any text or labels. The composition should feel balanced, capturing the essence of a living, breathing data-driven system.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🗣️💡🦠 Social Physics: How Good Ideas Spread - The Lessons from a New Science  
+![books-social-physics](../books-social-physics.jpg)  
 [🛒 Social Physics: How Good Ideas Spread - The Lessons from a New Science. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4kKKnsZ)  
   
 ## 📚 Book Report: Social Physics  

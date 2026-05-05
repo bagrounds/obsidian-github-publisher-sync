@@ -9,9 +9,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-16T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-05-04T22:30:51Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A close-up, artistic illustration of two hands captured in mid-motion, forming a sign language gesture against a soft, neutral background. The lighting is dramatic and focused, highlighting the expressive contours of the fingers and the fluidity of the movement. Surrounding the hands, subtle, ethereal ribbons of light or ink-like trails trace the path of the gesture, symbolizing the voice being seen. The color palette is composed of deep charcoals, muted greys, and a single, vibrant accent color—perhaps a warm gold or soft blue—to emphasize the connection between the physical act of signing and the abstract beauty of language. The overall mood is contemplative, intellectual, and deeply human, evoking a sense of quiet intensity and profound communication.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 👁️🔇 Seeing Voices: A Journey into the World of the Deaf  
+![books-seeing-voices-a-journey-into-the-world-of-the-deaf](../books-seeing-voices-a-journey-into-the-world-of-the-deaf.jpg)  
 [🛒 Seeing Voices: A Journey into the World of the Deaf. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4nlpnv6)  
   
 ## 📖 Book Report: 🗣️ Seeing Voices: A Journey into the World of the Deaf by Oliver Sacks  

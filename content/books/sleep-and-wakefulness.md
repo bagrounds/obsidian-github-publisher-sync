@@ -9,9 +9,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-16T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-05-05T06:55:37Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A split-composition illustration visualizing the duality of the sleep-wake cycle. On the left, a tranquil, deep-blue nocturnal scene featuring a stylized human head in profile, with soft, glowing neural pathways illuminated like constellations, representing the active REM state. On the right, a bright, golden-hued daytime scene depicting a stylized clock mechanism integrated with a rising sun, symbolizing circadian rhythm and wakefulness. The two halves transition seamlessly at the center, where a subtle, abstract wave graphic connects the dark and light elements, symbolizing the fluid biological transition between the two states. The art style is clean, modern, and minimalist, utilizing a high-contrast palette of navy, gold, and cream.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 😴🌞 Sleep and Wakefulness  
+![books-sleep-and-wakefulness](../books-sleep-and-wakefulness.jpg)  
 [🛒 Sleep and Wakefulness. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/445lxxn)  
   
 ## 📖 Book Report: Sleep and Wakefulness by Nathaniel Kleitman  

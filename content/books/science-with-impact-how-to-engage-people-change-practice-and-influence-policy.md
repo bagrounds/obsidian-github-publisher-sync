@@ -10,9 +10,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-27T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-05-04T19:45:04Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: "A stylized, isometric illustration featuring a glowing, translucent glass beaker at the center. From the beaker, vibrant, colorful light rays and interconnected nodes emerge, branching outward like a network. These nodes connect to various icons representing different sectors of society: a group of diverse people in a community, a stylized government building, and a megaphone, symbolizing communication and influence. The background is a clean, soft-gradient teal, emphasizing a professional and academic atmosphere. The overall aesthetic is modern, minimalist, and clean, using a palette of deep blues, bright oranges, and crisp whites to represent the transition from abstract scientific data to tangible, real-world societal impact."
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🧪📣🏛️ Science with Impact: How to Engage People, Change Practice, and Influence Policy  
+![books-science-with-impact-how-to-engage-people-change-practice-and-influence-policy](../books-science-with-impact-how-to-engage-people-change-practice-and-influence-policy.jpg)  
 [🛒 Science with Impact: How to Engage People, Change Practice, and Influence Policy. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/47AH2rL)  
   
 💡 Scientists must actively engage diverse communities and policymakers, build trust, and ensure their work meaningfully addresses societal challenges.  

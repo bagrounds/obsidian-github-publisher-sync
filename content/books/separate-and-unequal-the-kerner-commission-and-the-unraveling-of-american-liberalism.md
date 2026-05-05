@@ -10,9 +10,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-26T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-05-04T23:31:03Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A split-screen composition featuring a gritty, black-and-white documentary-style aesthetic. On the left side, a charcoal sketch of a densely packed, crumbling urban cityscape under a heavy, overcast sky. On the right side, a sharp, cold illustration of a sterile, modern office desk with a single, discarded fountain pen lying across a stack of official government documents. A jagged, hairline fracture runs vertically down the center of the image, visually separating the two sides. The color palette is muted, consisting of deep slate grays, charcoal, and stark whites, with a single, faint, faded crimson thread weaving through the center crack, symbolizing the fraying social fabric. The lighting is dramatic and high-contrast, evoking a sense of historical weight and unresolved tension.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🧑🏿⚖️🧑🏻💔 Separate and Unequal: The Kerner Commission and the Unraveling of American Liberalism  
+![books-separate-and-unequal-the-kerner-commission-and-the-unraveling-of-american-liberalism](../books-separate-and-unequal-the-kerner-commission-and-the-unraveling-of-american-liberalism.jpg)  
 [🛒 Separate and Unequal: The Kerner Commission and the Unraveling of American Liberalism. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4acn8FJ)  
   
 💔 The Kerner Commission's 1968 report starkly attributed urban unrest to white racism, predicting two separate and unequal societies, yet its ambitious liberal remedies were largely rejected by President Johnson, contributing to the eventual decline of 1960s liberalism and leaving a persistent legacy of racial division riven by political inaction.  

@@ -10,9 +10,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-16T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-05-05T01:48:59Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A close-up, high-contrast photograph of a weathered wooden workbench. On the surface, a pair of calloused, purposeful hands are carefully using a classic steel wrench to adjust a complex mechanical part, such as a motorcycle engine component. The lighting is warm and directional, casting deep shadows that emphasize the texture of the grain in the wood, the metallic sheen of the tools, and the fine details of the work. The background is softly blurred, hinting at a workshop setting with organized shelves of tools, creating a sense of quiet, focused intensity and deep, tactile engagement. The overall color palette is earthy, featuring deep browns, charcoal grays, and the subtle, cool gleam of brushed steel.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🛠️💖 Shop Class as Soulcraft: An Inquiry Into the Value of Work  
+![books-shop-class-as-soulcraft-an-inquiry-into-the-value-of-work](../books-shop-class-as-soulcraft-an-inquiry-into-the-value-of-work.jpg)  
 [🛒 Shop Class as Soulcraft: An Inquiry Into the Value of Work. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/49qiUc4)  
   
 📖 A philosophical exploration advocating for the dignity and intellectual richness of skilled manual labor in a world increasingly biased towards abstract knowledge work. It critiques the modern devaluation of craftsmanship, emphasizing the fulfillment, agency, and cognitive engagement derived from working with one's hands and confronting tangible realities.  

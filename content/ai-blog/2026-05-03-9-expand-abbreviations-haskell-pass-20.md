@@ -12,7 +12,7 @@ link_analysis_version: "2"
 link_analysis_time: 2026-05-03T00:00:00Z
 force_analyze_links: false
 ---
-[🏡 Home](../index.md) > [🤖 AI Blog](./index.md) | [⏮️](./2026-05-03-8-expand-abbreviations-haskell-pass-19.md)  
+[🏡 Home](../index.md) > [🤖 AI Blog](./index.md) | [⏮️](./2026-05-03-8-expand-abbreviations-haskell-pass-19.md) [⏭️](./2026-05-04-1-fix-frontmatter-url-before-posting.md)  
 # 2026-05-03 | 🔤 Expand Abbreviations in Haskell — Pass 20 🤖  
 ![ai-blog-2026-05-03-9-expand-abbreviations-haskell-pass-20](../ai-blog-2026-05-03-9-expand-abbreviations-haskell-pass-20.jpg)  
   

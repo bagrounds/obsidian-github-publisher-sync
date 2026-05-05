@@ -10,9 +10,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-27T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-05-05T01:49:16Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A stylized, high-contrast illustration featuring a split perspective. On one side, a gleaming, modern wind turbine and solar panel array emerge from a lush, green landscape, symbolizing clean energy progress. This side is being encroached upon by a network of dark, jagged electrical wires and heavy, industrial gears that weave through the scene like a web. The wires lead toward a shadowy, monolithic building representing a traditional utility company. Subtle visual metaphors of a short circuit appear as flickering, orange electrical sparks at the points where the wires intersect with the clean energy infrastructure, illustrating the tension between innovation and institutional obstruction. The color palette contrasts vibrant greens and blues against deep, industrial grays and oranges to emphasize the conflict.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # ⚡🏛️ Short Circuiting Policy: Interest Groups and the Battle Over Clean Energy and Climate Policy in the American States  
+![books-short-circuiting-policy-interest-groups-and-the-battle-over-clean-energy-and-climate-policy-in-the-american-states](../books-short-circuiting-policy-interest-groups-and-the-battle-over-clean-energy-and-climate-policy-in-the-american-states.jpg)  
 [🛒 Short Circuiting Policy: Interest Groups and the Battle Over Clean Energy and Climate Policy in the American States. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/449rDxv)  
   
 ⚡️💡📉 Well-resourced fossil fuel and utility interest groups consistently undermine state-level clean energy policies, leading to retrenchment and stalled climate action despite initial legislative victories.  

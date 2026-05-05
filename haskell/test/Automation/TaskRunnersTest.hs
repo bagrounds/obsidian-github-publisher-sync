@@ -61,7 +61,7 @@ taskRunnersRegistryTests = testGroup "taskRunners registry"
             , AiFiction
             , ReflectionTitle
             , DailyAnalytics
-            , AutoBookReports
+            , BookReports
             ]
       mapM_ (\taskIdentifier ->
         assertBool ("runner registered for " <> show taskIdentifier) $
@@ -109,7 +109,7 @@ taskRunnersPropertyTests = testGroup "properties"
         context <- mkTestContext
         let discovered = fmap mkTestSeries seriesIds
             runners = taskRunners context Map.empty Map.empty [] discovered
-            staticTasks = [BackfillBlogImages, InternalLinking, SocialPosting, AiFiction, ReflectionTitle, DailyAnalytics, AutoBookReports]
+            staticTasks = [BackfillBlogImages, InternalLinking, SocialPosting, AiFiction, ReflectionTitle, DailyAnalytics, BookReports]
         pure (all (`Map.member` runners) staticTasks)
   ]
 

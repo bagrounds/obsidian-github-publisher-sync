@@ -60,11 +60,12 @@ import qualified Automation.InternalLinking.LinkExtractionTest
 import qualified Automation.InternalLinking.CandidateDiscoveryTest
 import qualified Automation.InternalLinking.GeminiTest
 
-import qualified Automation.AutoBookReports.AmazonLinkTest
-import qualified Automation.AutoBookReports.DiscoveryTest
-import qualified Automation.AutoBookReports.IdentifyTest
-import qualified Automation.AutoBookReports.ReflectionLinkTest
-import qualified Automation.AutoBookReports.ReportTest
+import qualified Automation.BookReports.AmazonTest
+import qualified Automation.BookReports.DiscoveryTest
+import qualified Automation.BookReports.PendingStateTest
+import qualified Automation.BookReports.ReflectionUpdateTest
+import qualified Automation.BookReports.ReportTest
+import qualified Automation.BookReports.TypesTest
 
 main :: IO ()
 main = defaultMain $ testGroup "Automation"
@@ -123,9 +124,10 @@ main = defaultMain $ testGroup "Automation"
   , Automation.InternalLinking.LinkExtractionTest.tests
   , Automation.InternalLinking.CandidateDiscoveryTest.tests
   , Automation.InternalLinking.GeminiTest.tests
-  , Automation.AutoBookReports.AmazonLinkTest.tests
-  , Automation.AutoBookReports.DiscoveryTest.tests
-  , Automation.AutoBookReports.IdentifyTest.tests
-  , Automation.AutoBookReports.ReflectionLinkTest.tests
-  , Automation.AutoBookReports.ReportTest.tests
+  , Automation.BookReports.AmazonTest.tests
+  , Automation.BookReports.DiscoveryTest.tests
+  , Automation.BookReports.PendingStateTest.tests
+  , Automation.BookReports.ReflectionUpdateTest.tests
+  , Automation.BookReports.ReportTest.tests
+  , Automation.BookReports.TypesTest.tests
   ]

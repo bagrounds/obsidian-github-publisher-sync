@@ -491,12 +491,14 @@ existingTableContent entries =
     columnEmojiHelper :: UpdateDetail -> Text
     columnEmojiHelper ImageAdded = "🖼️"
     columnEmojiHelper (InternalLinksAdded _) = "🔗"
+    columnEmojiHelper BookReportGenerated = "📚"
     columnEmojiHelper (PostedTo Bluesky) = "🦋"
     columnEmojiHelper (PostedTo Mastodon) = "🐘"
     columnEmojiHelper (PostedTo Twitter) = "🐦"
     columnLabelHelper :: UpdateDetail -> Text
     columnLabelHelper ImageAdded = "images"
     columnLabelHelper (InternalLinksAdded _) = "links"
+    columnLabelHelper BookReportGenerated = "book reports"
     columnLabelHelper (PostedTo Bluesky) = "Bluesky"
     columnLabelHelper (PostedTo Mastodon) = "Mastodon"
     columnLabelHelper (PostedTo Twitter) = "Twitter"

@@ -36,8 +36,6 @@ import qualified Automation.BookReports.ReflectionUpdate as ReflectionUpdate
 import Automation.BookReports.Discovery (BookCandidate (..))
 import Automation.BookReports.Types
   ( AmazonResolution (..)
-  , Asin
-  , BookSlug
   , AmazonVariant (..)
   , Asin
   , BookSlug

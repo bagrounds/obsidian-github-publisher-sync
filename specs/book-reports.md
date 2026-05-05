@@ -75,10 +75,10 @@ This replaces the previous Gemini-based identification step. Candidates are grou
 
 ## 🛒 Amazon — one Gemini call, validated output
 
-`BookReports.Amazon.buildAmazonResolutionPrompt` asks Gemini (with Google Search grounding enabled) for a single canonical ASIN, preferring **Hardcover > Paperback > Kindle > Audible** (`defaultVariantPriority`). The response is parsed into `AmazonResolution { resolvedAsin, resolvedVariant, resolvedUrl }`. The ASIN must:
+`BookReports.Amazon.buildAmazonResolutionPrompt` asks Gemini (with Google Search grounding enabled) for a single canonical ASIN, preferring **Hardcover > Paperback > Kindle > Audible** (`defaultVariantPriority`). The response is parsed into `AmazonResolution { resolvedAsin, resolvedVariant }`. The ASIN must:
 
 - Match `^[A-Z0-9]{10}$` (validated by `mkAsin`)
-- Be parseable from the returned URL (cross-check via `extractAsinFromUrl`)
+- Be parseable from the URL the model returned alongside the JSON (cross-checked via `extractAsinFromUrl`)
 - Have a recognised variant (`variantFromText`)
 
 If any check fails, the run **stops** without publishing — better no report than a wrong link.

@@ -28,7 +28,7 @@ data BookCandidate = BookCandidate
   } deriving (Eq, Show)
 
 recentReflectionWindow :: Int
-recentReflectionWindow = 14
+recentReflectionWindow = 7
 
 isReflectionFileName :: FilePath -> Bool
 isReflectionFileName path =

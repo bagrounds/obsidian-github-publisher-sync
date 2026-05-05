@@ -11,9 +11,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-16T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-05-05T10:45:39Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A high-contrast cyberpunk aesthetic featuring a stylized, glitching digital cityscape at night. In the foreground, a sleek, katana-wielding figure stands in a dynamic, low-angle pose on a rain-slicked asphalt street reflecting vibrant neon signs in magenta, cyan, and electric yellow. The background transitions from hyper-realistic urban architecture into a fractured, geometric wireframe void, representing the Metaverse. Digital artifacts, data streams, and static-like snow pixels fragment the edges of the frame, blending the physical world with a crumbling virtual reality. The overall mood is tense, fast-paced, and retro-futuristic, emphasizing the collision of ancient swordplay and advanced high-tech data environments.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # ❄️💻💥 Snow Crash  
+![books-snow-crash](../books-snow-crash.jpg)  
 [🛒 Snow Crash. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4kQEIBO)  
   
 ## 🤖 AI Summary  

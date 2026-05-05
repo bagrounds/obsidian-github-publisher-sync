@@ -12,9 +12,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-16T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-05-04T03:18:45Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A minimalist, high-contrast illustration featuring a single, vibrant path winding through a landscape of diverse, geometric shapes. The path starts as a tangled, multicolored thread at the bottom, symbolizing exploration and experimentation. As it moves toward the horizon, it gradually organizes into a sleek, unified, and multicolored prism that refracts light into various directions. Surrounding the path are subtle, overlapping icons representing different disciplines—a gear, a musical note, a microscope, and a brush—blending seamlessly into the environment. The background is a soft, neutral gradient, emphasizing the central movement from chaotic, varied origins toward a state of multifaceted, integrated wisdom. The style is clean, modern, and conceptual, focusing on the beauty of breadth and synthesis rather than rigid structure.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🌐🔭🎨🧩👨‍🎓 Range: Why Generalists Triumph in a Specialized World  
+![books-range](../books-range.jpg)  
 [🛒 Range: Why Generalists Triumph in a Specialized World. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4ktRiao)  
   
 ## 🤖 AI Summary  

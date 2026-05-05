@@ -11,9 +11,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-17T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-05-04T22:31:05Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A minimalist, ethereal illustration featuring a pair of soft, translucent hands gently cradling a glowing, warm heart-shaped light. The background is a serene gradient of soft pastel hues, transitioning from a calm lavender to a warm peach, suggesting tranquility and emotional safety. Subtle, organic watercolor textures surround the central figures, creating a sense of flow and gentleness. A single, small sprout emerges from the base of the hands, symbolizing personal growth and the nourishment that comes from kindness. The lighting is soft and diffused, emphasizing a peaceful, meditative atmosphere without any sharp edges or distracting details.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 💗 Self-Compassion  
+![books-self-compassion](../books-self-compassion.jpg)  
 [🛒 Self-Compassion. As an Amazon Associate I earn from qualifying purchases.](https://www.amazon.com/dp/1444738178?tag=bagrounds-20)  
   
 ## 🤖 AI Summary  

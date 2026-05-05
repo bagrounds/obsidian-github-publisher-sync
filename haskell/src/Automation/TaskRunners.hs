@@ -7,6 +7,7 @@ module Automation.TaskRunners
   , runAiFiction
   , runReflectionTitle
   , runDailyAnalytics
+  , runAutoBookReports
   ) where
 
 import Control.Exception (SomeException, try)
@@ -34,6 +35,7 @@ import Automation.AiFiction
   , generateFiction
   , reflectionNeedsFiction
   )
+import qualified Automation.AutoBookReports as AutoBookReports
 import Automation.BlogComments (fetchAllSeriesComments)
 import Automation.BlogImage (BackfillConfig (..), BackfillResult (..), syncAttachmentsDir, backfillImages, processNote)
 import Automation.BlogImage.ContentDirectory (ContentDirectory)
@@ -616,5 +618,9 @@ taskRunners context seriesMap runConfigs contentDirs discovered =
         , (AiFiction, runAiFiction context)
         , (ReflectionTitle, runReflectionTitle context)
         , (DailyAnalytics, runDailyAnalytics context)
+        , (AutoBookReports, runAutoBookReports context)
         ]
   in Map.union blogSeriesRunners staticRunners
+
+runAutoBookReports :: Context.AppContext -> IO ()
+runAutoBookReports = AutoBookReports.runAutoBookReports

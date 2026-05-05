@@ -42,6 +42,7 @@ data TaskId
   | AiFiction
   | ReflectionTitle
   | DailyAnalytics
+  | AutoBookReports
   deriving (Show, Eq, Ord)
 
 data ScheduleEntry = ScheduleEntry
@@ -66,6 +67,7 @@ taskIdToText = \case
   AiFiction           -> "ai-fiction"
   ReflectionTitle     -> "reflection-title"
   DailyAnalytics      -> "daily-analytics"
+  AutoBookReports     -> "auto-book-reports"
 
 staticTaskIds :: [TaskId]
 staticTaskIds =
@@ -75,6 +77,7 @@ staticTaskIds =
   , AiFiction
   , ReflectionTitle
   , DailyAnalytics
+  , AutoBookReports
   ]
 
 taskIdFromText :: [TaskId] -> Text -> Maybe TaskId
@@ -95,6 +98,10 @@ staticSchedule =
   , ScheduleEntry BackfillBlogImages everyHour False
   , ScheduleEntry InternalLinking everyHour False
   , ScheduleEntry SocialPosting [0, 2, 4, 6, 8, 10, 12, 14, 16, 18, 20, 22] False
+  -- Manual-only: empty 'hoursPacific' means it never auto-runs but remains a
+  -- valid task ID accepted by `--task auto-book-reports`. Once vetted on
+  -- live data, change the empty list to the desired hours.
+  , ScheduleEntry AutoBookReports [] False
   ]
 
 buildSchedule :: [ScheduleEntry] -> [ScheduleEntry]

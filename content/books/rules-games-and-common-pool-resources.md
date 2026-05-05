@@ -12,9 +12,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-14T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-05-04T15:48:13Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A high-angle, stylized illustration of a vibrant, shared landscape segmented into a patchwork of sustainable zones. A lush forest, a clear irrigation canal, and a coastal fishery are interconnected by intricate, glowing geometric lines representing social rules and governance structures. In the center, a stylized, wooden game board sits on the earth, featuring abstract tokens representing people collaborating. The art style is clean and modern, using an earthy color palette—deep greens, river blues, and warm wood tones—with a soft, golden light illuminating the connections between the people and the landscape to suggest harmony and collective intelligence. The composition is balanced and symmetrical, emphasizing the polycentric nature of the resource management systems described.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 📜🎮🏞️ Rules, Games, and Common Pool Resources  
+![books-rules-games-and-common-pool-resources](../books-rules-games-and-common-pool-resources.jpg)  
 [🛒 Rules, Games, and Common Pool Resources. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4mP8SY4)  
   
 ## 🤖 AI Summary  

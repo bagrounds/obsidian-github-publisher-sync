@@ -11,9 +11,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-17T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-05-04T15:48:09Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A cinematic, low-angle shot inside a dimly lit, abandoned terraforming facility. The floor is covered in fine, metallic dust and tangled, rusted conduits. In the center, a sleek, shadowy silhouette of an android stands motionless, partially illuminated by the cool, flickering blue glow of a handheld data pad. The surrounding environment is cluttered with overgrown, skeletal machinery and hanging cables, casting long, sharp shadows across the room. A single sliver of harsh, amber light pierces through a jagged hole in the ceiling, illuminating floating dust motes and highlighting the contrast between high-tech autonomy and industrial decay. The color palette is composed of deep indents, slate greys, and metallic rust, punctuated by the sharp, electric blue light emanating from the interface.
 ---
 [Home](../index.md) > [Books](./index.md) | [⏮️ 🤖🧠⚙️ Artificial Condition](./artificial-condition.md) [⏭️ 🏃💨🚪 Exit Strategy](./exit-strategy.md)  
 # 🕵️‍♀️📜💻 Rogue Protocol  
+![books-rogue-protocol](../books-rogue-protocol.jpg)  
 [🛒 Rogue Protocol. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3OP8qMB)  
   
 🤖 Sarcastic internal monologues and high-stakes kinetic action drive this exploration of what truly constitutes personhood and emotional autonomy.  

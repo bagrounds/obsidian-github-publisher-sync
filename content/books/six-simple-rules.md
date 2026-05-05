@@ -11,9 +11,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-16T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-05-05T05:16:50Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A minimalist, high-contrast illustration featuring a tangled, chaotic ball of dark, knotted yarn on the left side of the frame. As the eye moves toward the right, the messy threads transition into six clean, parallel, vibrant-colored lines that flow smoothly across the composition. The background is a clean, solid, neutral off-white, emphasizing the transformation from complexity to structured simplicity. The style is clean, modern, and vector-inspired with soft shadows to provide depth.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🧶✔️ Six Simple Rules: How to Manage Complexity without Getting Complicated  
+![books-six-simple-rules](../books-six-simple-rules.jpg)  
 [🛒 Six Simple Rules: How to Manage Complexity without Getting Complicated. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3HkYkPW)  
   
 ## 📚 Book Report: Six Simple Rules  

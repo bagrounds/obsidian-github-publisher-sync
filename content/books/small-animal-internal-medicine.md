@@ -11,9 +11,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-20T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-05-05T07:49:12Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A clean, professional illustration featuring a stylized, high-quality stethoscope resting on a white, clinical surface. Beside the stethoscope sits a modern tablet displaying a glowing, abstract digital representation of a dog and a cat silhouette, rendered in soft, cool blue and teal light. In the background, a blurred, warm-toned medical office environment suggests a calm, expert setting. The lighting is soft and focused, emphasizing the intersection of advanced diagnostic technology and compassionate veterinary care. The color palette is a sophisticated mix of professional medical blues, clean whites, and warm, inviting amber highlights, creating a balanced, trustworthy aesthetic suitable for a clinical reference guide.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🐕🐈‍⬛🩺❤️‍🩹 Small Animal Internal Medicine  
+![books-small-animal-internal-medicine](../books-small-animal-internal-medicine.jpg)  
 [🛒 Small Animal Internal Medicine. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3ZQjV9c)  
   
 ## 🤖 AI Summary  

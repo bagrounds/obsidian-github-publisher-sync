@@ -10,9 +10,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-24T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-05-04T18:45:28Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: "A cinematic, high-contrast illustration featuring a glowing, translucent shield protecting a delicate glass model of a DNA helix and a stylized earth from five encroaching, dark, shadowy silhouettes. These shapes represent the Five Forces: a jagged sack of coins (Plutocrats), a smokestack plume (Petrostates), a distorted scholarly mortarboard (Pros), a megaphone emitting chaotic static (Propagandists), and a flickering, fractured printing press (the Press). The shield emits a warm, steady golden light that repels the encroaching shadows. The background is a deep, moody navy blue, emphasizing the urgency and the struggle between enlightenment and obfuscation. The overall style is clean, sharp, and modern, evoking a sense of intellectual defense and resilience."
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🔬🛡️ Science Under Siege: How to Fight the Five Most Powerful Forces That Threaten Our World  
+![books-science-under-siege-how-to-fight-the-five-most-powerful-forces-that-threaten-our-world](../books-science-under-siege-how-to-fight-the-five-most-powerful-forces-that-threaten-our-world.jpg)  
 [🛒 Science Under Siege: How to Fight the Five Most Powerful Forces That Threaten Our World. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3WlMVE1)  
   
 ### 🏆 Mann & Hotez's Science Under Siege Strategy  

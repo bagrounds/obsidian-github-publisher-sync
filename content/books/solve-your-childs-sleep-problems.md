@@ -10,9 +10,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-16T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-05-05T13:44:14Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A peaceful, high-angle shot of a nursery at night, illuminated by the soft, warm glow of a crescent moon shining through a window. In the center, a wooden crib holds a cozy, sleeping baby tucked under a plush blanket, with a small, comforting stuffed animal resting nearby. The room is tidy and minimalist, featuring soft shadows and muted, soothing tones of navy, cream, and gentle gold. A slightly open door in the background shows a dim light in the hallway, suggesting a calm, quiet atmosphere. The overall composition creates a sense of tranquility, rest, and serene independence.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 😴👶  Solve Your Child's Sleep Problems  
+![books-solve-your-childs-sleep-problems](../books-solve-your-childs-sleep-problems.jpg)  
 [🛒 Solve Your Child's Sleep Problems. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4a5orqs)  
   
 😴📈 Dr. Richard Ferber's *Solve Your Child's Sleep Problems* champions a progressive waiting or graduated extinction approach to teach children self-soothing for independent sleep, sparking both fervent support and debate over its cry it out components.  

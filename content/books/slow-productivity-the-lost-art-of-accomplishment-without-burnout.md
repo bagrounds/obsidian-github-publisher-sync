@@ -10,9 +10,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-15T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-05-05T07:49:09Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A minimalist, high-contrast illustration featuring a single, stylized snail slowly climbing the side of a sleek, modern obsidian pen. The background is a soft, warm cream color, suggesting a calm and intentional workspace. The composition is clean and uncluttered, with the snail’s shell displaying a subtle, intricate geometric pattern that represents focus and craft. The lighting is soft and natural, casting a gentle, elongated shadow that emphasizes the passage of time. The overall aesthetic is serene and sophisticated, capturing the essence of steady progress, the rejection of modern clutter, and the pursuit of quality over speed.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🐌🎯 Slow Productivity: The Lost Art of Accomplishment Without Burnout  
+![books-slow-productivity-the-lost-art-of-accomplishment-without-burnout](../books-slow-productivity-the-lost-art-of-accomplishment-without-burnout.jpg)  
 [🛒 Slow Productivity: The Lost Art of Accomplishment Without Burnout. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/45x3xxT)  
   
 ## 📚 Book Report: 🐌 Slow Productivity: The Lost Art of Accomplishment Without Burnout  

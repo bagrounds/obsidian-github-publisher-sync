@@ -11,9 +11,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-17T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-05-05T12:33:53Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A high-resolution, artistic depiction of a human brain silhouette composed of glowing, interconnected fiber-optic cables or intricate, shimmering golden neural pathways. These pathways are actively shifting and reconfiguring, with some strands glowing brighter as they weave together, suggesting dynamic growth. Soft, ethereal light emanates from the center of the brain, casting a gentle gradient across a deep navy blue background. Small, luminous particles—representing synaptic connections—float around the structure like stardust. A subtle, organic sprout or a single, vibrant green leaf is emerging from the side of the brain, symbolizing the life-changing potential and continuous renewal described by neuroplasticity. The overall aesthetic is modern, clean, and inspiring, conveying a sense of intelligence, transformation, and infinite potential.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🧠🔄💡🌱✨ Soft Wired: How the New Science of Brain Plasticity Can Change Your Life  
+![books-soft-wired-how-the-new-science-of-brain-plasticity-can-change-your-life](../books-soft-wired-how-the-new-science-of-brain-plasticity-can-change-your-life.jpg)  
 [🛒 Soft Wired: How the New Science of Brain Plasticity Can Change Your Life. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3ZcZzac)  
   
 ## 🤖 AI Summary  

@@ -11,6 +11,7 @@ image_date: 2026-04-10T21:18:49Z
 image_model: "@cf/black-forest-labs/flux-1-schnell"
 image_prompt: A sleek, stylized robot arm, subtly hinting at the GitHub Octocats form, extends from the left side of the frame. Its metallic fingers gently hover over a glowing, minimalist representation of a VS Code editor window. From the robots fingertips, ethereal, translucent lines of code or shimmering symbols flow directly into the editor, appearing to autocomplete or suggest themselves onto the screen. The editor itself is filled with abstract, colorful code snippets, illuminated by a soft, internal glow. The background is a dynamic gradient of electric blues and purples, emphasizing the futuristic and intelligent nature of the interaction.
 link_analysis_version: "2"
+updated: 2026-05-05T11:37:00
 ---
 [Home](../index.md) > [Software](./index.md)  
 # 🤖💻🪄 GitHub Copilot for VS Code  
@@ -148,3 +149,11 @@ GitHub Copilot was developed as a collaboration between GitHub 🐱‍💻 and O
   
 * GitHub YouTube Channel: [https://www.youtube.com/github](https://www.youtube.com/github) 📺🐱‍💻  
 * "GitHub Copilot Explained" : search on Youtube. 🔍📺  
+  
+## 🦋 Bluesky    
+<blockquote class="bluesky-embed" data-bluesky-uri="at://did:plc:i4yli6h7x2uoj7acxunww2fc/app.bsky.feed.post/3ml43wngqvp2m" data-bluesky-cid="bafyreih24ohem3jq4eptudpgz2i4gembwcogohysbxeqic37cv6us6b3li"><p>🤖💻🪄 GitHub Copilot for VS Code  
+  
+#AI Q: 🤖 Does AI coding assistance boost your productivity or just make you lazy?  
+  
+🤖 AI Tools | 💻 Code Assistance | 🧠 Machine Learning | 📚 Developer Resources  
+https://bagrounds.org/software/github-copilot-for-vs-code</p>&mdash; <a href="https://bsky.app/profile/did:plc:i4yli6h7x2uoj7acxunww2fc?ref_src=embed">Bryan Grounds (@bagrounds.bsky.social)</a> <a href="https://bsky.app/profile/did:plc:i4yli6h7x2uoj7acxunww2fc/post/3ml43wngqvp2m?ref_src=embed">2026-05-05T11:37:34.000Z</a></blockquote><script async src="https://embed.bsky.app/static/embed.js" charset="utf-8"></script>

@@ -10,9 +10,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-16T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-05-04T21:34:55Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: An atmospheric, conceptual illustration featuring a weathered, neoclassical stone archway standing in the center of a lush, untamed forest. On one side of the arch, the forest is dense and wild, representing the state of nature. On the other, the ground is orderly, featuring a set of balanced golden scales resting on a stone plinth. A single shaft of warm, golden sunlight pierces through the canopy, illuminating a worn leather-bound manuscript placed atop the plinth. The composition emphasizes the transition from natural wildness to organized, civilized liberty. The color palette uses deep, earthy greens and shadows contrasted with bright, clean marble whites and metallic gold accents, creating a timeless, academic, and philosophical aesthetic.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 👑🏛️ Second Treatise of Government  
+![books-second-treatise-of-government](../books-second-treatise-of-government.jpg)  
 [🛒 Second Treatise of Government. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/46dbGGU)  
   
 ## 📖 Book Report: Second Treatise of Government  

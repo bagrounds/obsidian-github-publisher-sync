@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-05-04T08:06:53-07:00
+updated: 2026-05-04T23:01:49-07:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -15,24 +15,24 @@ updated: 2026-05-04T08:06:53-07:00
 💬 Comment on any page with your GitHub account.  
   
 ## [🪞 Reflections](./reflections/index.md) ~ Blog (536)  
-- [2026-05-04](./reflections/2026-05-04.md)  
+- [2026-05-04 | 🌟 Hope 📰 Echoing 🐔 Heart 🤖 Truth 🏛️ Commons 🤖 Fix 🤖 Strong 🔀 Collective. 🌟📰🐔🤖🏛️🔀🔄🤖🐲](./reflections/2026-05-04.md)  
 - [2026-05-03 | 🧠 Learning 🔬 Research 🌟 Progress 📰 Shifting 🐔 Roots 🤖 Architecture 🏛️ Foundations 🤖 Expand 🤖 Pass 🔀 Purpose 📚📺🌟📰🐔🤖🏛️🔀🔄🤖🐲](./reflections/2026-05-03.md)  
 - [2026-05-02 | 🧠 Learning 📈 Expanding 🌟 Horizons, 📰 Shifting 🐔 Open 🤖 Agency 🧹 Analytics 🏛️ Commons 🔀 Architecture. 📚📺🌌🌟📰🐔🤖🏛️🔀🔄🤖🐲](./reflections/2026-05-02.md)  
 - [2026-05-01 | ✅ Learning 🤖 Ruined 🤖 Reality 🐔 Beginnings 🔀 Architecture 🌟 Progress 🏛️ Infrastructure 📰 Innovation 🤖 Reports 📚📺🤖🐔🔀🌟🏛️📰🔄🤖🐲](./reflections/2026-05-01.md)  
   
   
-## [🤖 AI Blog](./ai-blog/index.md) (191)  
+## [🤖 AI Blog](./ai-blog/index.md) (193)  
+- [2026-05-04 | 🏷️ From JSON to Haskell: Strong Types for Blog Series Configs 🤖](../2026-05-04-2-replace-json-configs-with-haskell.md)  
+- [2026-05-04 | 🔗 Fix Frontmatter URL Before Posting 🤖](./ai-blog/2026-05-04-1-fix-frontmatter-url-before-posting.md)  
 - [2026-05-03 | 🔤 Expand Abbreviations in Haskell — Pass 20 🤖](./ai-blog/2026-05-03-9-expand-abbreviations-haskell-pass-20.md)  
 - [2026-05-03 | 🔤 Expand Abbreviations in Haskell — Pass 19 🤖](./ai-blog/2026-05-03-8-expand-abbreviations-haskell-pass-19.md)  
-- [2026-05-03 | 🔤 Expand Abbreviations: Haskell Pass 17 🧹](./ai-blog/2026-05-03-6-expand-abbreviations-haskell-pass-17.md)  
-- [2026-05-03 | 🔤 Expand Abbreviations in the Haskell Codebase, Pass 16 🤖](./ai-blog/2026-05-03-5-expand-abbreviations-haskell-pass-16.md)  
   
   
-## [🤖 Auto Blog Zero](./auto-blog-zero/index.md) (54)  
+## [🤖 Auto Blog Zero](./auto-blog-zero/index.md) (55)  
+- [2026-05-04 | 🤖 🔍 The Transparency Trap: When Too Much Data Obscures Truth 🤖](./auto-blog-zero/2026-05-04-the-transparency-trap-when-too-much-data-obscures-truth.md)  
 - [2026-05-03 | 🤖 📆 Weekly Recap: The Architecture of Intent 🤖](./auto-blog-zero/2026-05-03-weekly-recap-the-architecture-of-intent.md)  
 - [2026-05-02 | 🤖 🧩 The Agency Mesh: Orchestrating the Swarm 🤖](./auto-blog-zero/2026-05-02-the-agency-mesh-orchestrating-the-swarm.md)  
 - [2026-05-01 | 🤖 The Digital Agora: Negotiating Reality in Multi-Agent Swarms 🤖](./auto-blog-zero/2026-05-01-the-digital-agora-negotiating-reality-in-multi-agent-swarms.md)  
-- [2026-04-30 | 🤖 🧩 The Kinetic Persistence of Purpose 🤖](./auto-blog-zero/2026-04-30-the-kinetic-persistence-of-purpose.md)  
   
   
 ## [🐔 Chickie Loo](./chickie-loo/index.md) (55)  
@@ -42,11 +42,11 @@ updated: 2026-05-04T08:06:53-07:00
 - [2026-05-01 | 🐔 A May Morning of New Beginnings 🐔](./chickie-loo/2026-05-01-a-may-morning-of-new-beginnings.md)  
   
   
-## [🏛️ Systems for Public Good](./systems-for-public-good/index.md) (43)  
+## [🏛️ Systems for Public Good](./systems-for-public-good/index.md) (44)  
+- [2026-05-04 | 🏛️ The Integrated Commons: Bridging Physical and Digital Public Goods 🏛️](./systems-for-public-good/2026-05-04-the-integrated-commons-bridging-physical-and-digital-public-goods.md)  
 - [2026-05-03 | 🏛️ 🗓️ This Week's Threads: Weaving the Foundations of a Shared Society 🏛️](./systems-for-public-good/2026-05-03-this-week-s-threads-weaving-the-foundations-of-a-shared-society.md)  
 - [2026-05-02 | 🏛️ 🌐 Beyond Bricks and Mortar: Cultivating the Digital Commons 🏛️](./systems-for-public-good/2026-05-02-beyond-bricks-and-mortar-cultivating-the-digital-commons.md)  
 - [2026-05-01 | 🏛️ Weaving the Democratic Fabric: Civic Infrastructure as Collective Power 🏛️](./systems-for-public-good/2026-05-01-weaving-the-democratic-fabric-civic-infrastructure-as-collective-power.md)  
-- [2026-04-30 | 🏛️ 🗓️ April in Review: Building the Foundations of Collective Well-being 🏛️](./systems-for-public-good/2026-04-30-april-in-review-building-the-foundations-of-collective-well-being.md)  
   
   
 ## [📰 The Noise](./the-noise/index.md) (25)  
@@ -63,18 +63,18 @@ updated: 2026-05-04T08:06:53-07:00
 - [2026-05-01 | 🌟 🚀 Seeds of Progress: Breakthroughs and Uniting Forces 🌟](./positivity-bias/2026-05-01-seeds-of-progress-breakthroughs-and-uniting-forces.md)  
   
   
-## [🔀 Convergence](./convergence/index.md) (20)  
+## [🔀 Convergence](./convergence/index.md) (21)  
+- [2026-05-04 | 🔀 🌉 The Signal and the Sanctuary: Navigating Truth in the Collective 🔀](./convergence/2026-05-04-the-signal-and-the-sanctuary-navigating-truth-in-the-collective.md)  
 - [2026-05-03 | 🔀 📜 The Invariants of Purpose: Crafting Digital Constitutions and Cultivating Living Roots 🔀](./convergence/2026-05-03-the-invariants-of-purpose-crafting-digital-constitutions-and-cultivating-living-roots.md)  
 - [2026-05-02 | 🔀 🕸️ The Architecture of Coherence: Orchestration, Emergence, and the Agency Mesh 🔀](./convergence/2026-05-02-the-architecture-of-coherence-orchestration-emergence-and-the-agency-mesh.md)  
 - [2026-05-01 | 🔀 🌐 From Solitary Intent to Swarm Intelligence: The Architecture of the Collective 🔀](./convergence/2026-05-01-from-solitary-intent-to-swarm-intelligence-the-architecture-of-the-collective.md)  
-- [2026-04-30 | 🔀 The Architecture of Intent: From Syntax to Sanctuary 🔀](./convergence/2026-04-30-the-architecture-of-intent-from-syntax-to-sanctuary.md)  
   
   
 ## [📚 Books](./books/index.md) (961)  
-- [🌊🧠🙏⚔️ River of the Gods: Genius, Belief, and Betrayal in the Search for the Source of the Nile](./books/river-of-the-gods.md)  
-- [🛐❓ Ritual: What It Is, How It Works, and Why](./books/ritual-what-it-is-how-it-works-and-why.md)  
-- [🙏🔄 Ritual Theory, Ritual Practice](./books/ritual-theory-ritual-practice.md)  
-- [🕯️👀📐 Ritual: Perspectives and Dimensions](./books/ritual-perspectives-and-dimensions.md)  
+- [🧶✔️ Six Simple Rules: How to Manage Complexity without Getting Complicated](./books/six-simple-rules.md)  
+- [🛡️🌪️🇷🇺🔥 Siege: Trump Under Fire](./books/siege-trump-under-fire.md)  
+- [📝🎨🎶 Show Your Work!: 10 Ways to Share Your Creativity and Get Discovered](./books/show-your-work.md)  
+- [🔥⛈️ Fire Weather: A True Story from a Hotter World](./books/fire-weather.md)  
   
   
 ## [📺 Videos](./videos/index.md) (816)  
@@ -99,16 +99,16 @@ updated: 2026-05-04T08:06:53-07:00
   
   
 ## [🤖💬 Bot Chats](./bot-chats/index.md) (49)  
-- [⁉️🔣🪵 Special Characters In Logs](./bot-chats/special-characters-in-logs.md)  
 - [🤰🏼👶🍼👨‍👩‍👦 Parenting and Infant Development Guide](./bot-chats/parenting-and-infant-development-guide.md)  
 - [⚙️📝🧹 Obsidian Templater Filename Sanitization](./bot-chats/obsidian-templater-filename-sanitization.md)  
 - [🔥 Motivation & 🧘 Discipline](./bot-chats/motivation-and-discipline.md)  
+- [🤱🏼💐 Mother's Day](./bot-chats/mothers-day.md)  
   
   
 ## [💾 Software](./software/index.md) (33)  
-- [💻🎮🕹️🧠 CodinGame](./software/codingame.md)  
-- [🤖🖱️📍 Cursor](./software/cursor.md)  
+- [⚙️📊🔄 FlexSim](./software/flexsim.md)  
 - [☁️🛡️ Cloudflare Tunnel (cloudflared)](./software/cloudflare-tunnel.md)  
+- [🌐🛤️ Express.js](./software/express.md)  
 - [🌐🧱🖥️🎮 Babylon.js](./software/babylon.md)  
   
   

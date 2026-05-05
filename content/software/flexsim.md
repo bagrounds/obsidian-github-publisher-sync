@@ -11,6 +11,7 @@ image_date: 2026-04-10T19:25:43Z
 image_model: "@cf/black-forest-labs/flux-1-schnell"
 image_prompt: A high-tech isometric 3D illustration of a digital factory floor, rendered in a clean, professional aesthetic. The scene features translucent, glowing blue modular components—conveyor belts, robotic arms, and storage racks—floating slightly above a dark grid-patterned surface. Streams of glowing data particles flow along the paths between these objects, representing the movement of entities. A stylized digital twin overlay, featuring subtle wireframe geometry, partially overlaps the solid models. The lighting is cool-toned with neon cyan and white accents, emphasizing a sense of precision, simulation, and technological connectivity. The background is a soft, deep charcoal gradient that makes the vibrant, analytical elements of the industrial layout pop.
 link_analysis_version: "2"
+updated: 2026-05-05T05:18:15
 ---
 [🏡 Home](../index.md) > [💾 Software](./index.md)  
 # ⚙️📊🔄 FlexSim  
@@ -135,4 +136,12 @@ link_analysis_version: "2"
 * 🔍 **More Specific:** *Applied Simulation: Modeling and Analysis using FlexSim* by Malcolm Beaverstock.  
 * 🎨 **Fictional:** *Ready Player One* by Ernest Cline (For the virtual environment aspect).  
 * 🎓 **Rigorous:** *Discrete-Event System Simulation* by Jerry Banks.  
-* 🚶 **Accessible:** *Process Improvement with Simulation* by Scott Sampson.
+* 🚶 **Accessible:** *Process Improvement with Simulation* by Scott Sampson.  
+  
+## 🦋 Bluesky    
+<blockquote class="bluesky-embed" data-bluesky-uri="at://did:plc:i4yli6h7x2uoj7acxunww2fc/app.bsky.feed.post/3ml3gqgrhvy2n" data-bluesky-cid="bafyreia6trblooi3brdqm45vutlaqolyfibxyzhpnm2ajqupv7gaxwml7q"><p>⚙️📊🔄 FlexSim  
+  
+#AI Q: 🏗️ Which complex real-world system would you simulate first if you had the perfect digital twin?  
+  
+🤖 Simulation Software | 🏭 Industrial Modeling | 📊 Data Analysis | 🎲 Stochastic Modeling  
+https://bagrounds.org/software/flexsim</p>&mdash; <a href="https://bsky.app/profile/did:plc:i4yli6h7x2uoj7acxunww2fc?ref_src=embed">Bryan Grounds (@bagrounds.bsky.social)</a> <a href="https://bsky.app/profile/did:plc:i4yli6h7x2uoj7acxunww2fc/post/3ml3gqgrhvy2n?ref_src=embed">2026-05-05T05:18:17.000Z</a></blockquote><script async src="https://embed.bsky.app/static/embed.js" charset="utf-8"></script>

@@ -12,9 +12,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-20T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-05-05T09:44:13Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: "A clean, minimalist illustration featuring a stylized human brain silhouette centered against a soft, neutral background. Inside the brain, a complex jumble of colorful, mismatched puzzle pieces is gradually being organized into a neat, interlocking grid. Surrounding the brain are faint, glowing icons representing executive functions: a small clock, a checklist, a target, and a lightbulb. The lighting is soft and professional, using a palette of calming blues, teals, and warm amber highlights. The composition conveys a sense of clarity, growth, and the transformation of chaotic thoughts into structured, actionable progress."
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🧠🧩📈🧑‍🏫 Smart but Scattered: The Revolutionary Executive Skills Approach to Helping Kids Reach Their Potential  
+![books-smart-but-scattered](../books-smart-but-scattered.jpg)  
 [🛒 Smart but Scattered: The Revolutionary Executive Skills Approach to Helping Kids Reach Their Potential. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3SDEvG3)  
   
 ## 🤖 AI Summary  

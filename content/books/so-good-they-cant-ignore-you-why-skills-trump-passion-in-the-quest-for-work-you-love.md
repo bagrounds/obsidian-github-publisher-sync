@@ -10,9 +10,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-17T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-05-05T11:35:05Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A minimalist illustration featuring a glowing, multifaceted diamond being carefully polished by a pair of steady, focused hands. The diamond sits on a clean, wooden workbench. In the background, soft, warm light illuminates a sequence of translucent, overlapping geometric layers that represent the gradual accumulation of skill. The overall aesthetic is clean, professional, and modern, using a sophisticated color palette of deep navy, slate gray, and vibrant, metallic gold highlights to signify the transition from raw effort to refined expertise. The composition is balanced and centered, emphasizing the concept of deliberate practice and the structural growth of ones career capital.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 💪❤️ So Good They Can't Ignore You: Why Skills Trump Passion in the Quest for Work You Love  
+![books-so-good-they-cant-ignore-you-why-skills-trump-passion-in-the-quest-for-work-you-love](../books-so-good-they-cant-ignore-you-why-skills-trump-passion-in-the-quest-for-work-you-love.jpg)  
 [🛒 So Good They Can't Ignore You: Why Skills Trump Passion in the Quest for Work You Love. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3HrsgdT)  
   
 ## 📚 Book Report: So Good They Can't Ignore You  

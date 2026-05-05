@@ -11,9 +11,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-18T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-05-05T00:40:51Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A minimalist, isometric composition featuring a set of colorful, geometric 3D puzzle blocks floating in mid-air. The blocks—cubes, cylinders, and triangular prisms—are partially connected by thin, glowing lines that represent nodes and edges. One block is being slotted into a larger, incomplete structure, symbolizing the process of composition. The background is a clean, soft-gradient slate blue, emphasizing the mathematical precision of the objects. Surrounding the central structure are faint, delicate sketches of wiring diagrams and signal flow graphs rendered in fine white lines, suggesting the underlying abstract theory. The overall aesthetic is clean, modern, and intellectual, evoking a sense of structural harmony and organized complexity.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 📦➡️🧩 An Invitation to Applied Category Theory: Seven Sketches in Compositionality  
+![books-seven-sketches-in-compositionality](../books-seven-sketches-in-compositionality.jpg)  
 [🛒 An Invitation to Applied Category Theory: Seven Sketches in Compositionality. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3Fnjexu)  
   
 ## 🔗 Links  

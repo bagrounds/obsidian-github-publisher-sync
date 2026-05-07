@@ -9,9 +9,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-19T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-05-05T17:43:35Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A surreal, split-composition image depicting the synthesis of science and mysticism. On the left side, a stylized anatomical human brain glows with intricate, translucent neural pathways rendered in cool, electric blue light, representing modern neuroscience. On the right side, the brain transitions into an ethereal, golden nebula filled with alchemical symbols, tarot motifs, and flowing, dreamlike wisps of smoke, representing the ancient unconscious. A bridge of shimmering, crystalline light connects the two halves, spanning across a dark, starry void. The aesthetic is clean and contemporary, utilizing a high-contrast palette of deep navy, vibrant teal, and glowing gold to evoke a sense of intellectual wonder and hidden depth.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🧪✨🧠 Spellbound: Modern Science, Ancient Magic, and the Hidden Potential of the Unconscious Mind  
+![books-spellbound-modern-science-ancient-magic-and-the-hidden-potential-of-the-unconscious-mind](../books-spellbound-modern-science-ancient-magic-and-the-hidden-potential-of-the-unconscious-mind.jpg)  
 [🛒 Spellbound: Modern Science, Ancient Magic, and the Hidden Potential of the Unconscious Mind. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/43VlUfd)  
   
 ## ✨ Spellbound: Modern Science, Ancient Magic, and the Hidden Potential of the Unconscious Mind  

@@ -12,9 +12,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-17T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-05-06T20:45:56Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: "A minimalist, split-composition illustration depicting the intersection of two worlds: on the left, a sleek, high-contrast black and white chessboard with a single knight piece casting a long, deliberate shadow; on the right, a soft, ethereal ink-wash painting style representing a Tai Chi practitioner in motion, with fluid, sweeping lines suggesting energy and movement. A glowing, golden geometric path connects the two sides, winding through the center like a staircase. The background is a soft, textured parchment paper, evoking the feeling of an ancient yet timeless manual. The overall aesthetic is clean, sophisticated, and intellectual, using a palette of deep charcoal, crisp white, and subtle gold accents to represent the balance between rigid strategy and fluid intuition."
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🎨🤓 The Art of Learning: A Journey in the Pursuit of Excellence  
+![books-the-art-of-learning](../books-the-art-of-learning.jpg)  
 [🛒 The Art of Learning: A Journey in the Pursuit of Excellence. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4jx0LML)  
   
 Blend peak performance 🚀 strategies from chess ♟️ and martial arts 🥋, emphasizing the importance of incremental learning 📈, mental resilience 💪, and embracing failure 💔 to achieve mastery 🏆 in any field.  

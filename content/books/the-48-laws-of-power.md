@@ -11,9 +11,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-15T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-05-06T11:47:07Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A cinematic, high-contrast composition featuring a single, ornate obsidian chess piece—a king—resting on a dark, polished marble surface. To the side, a weathered, velvet theatrical mask lies partially in the shadows, its expression ambiguous. In the background, soft, warm candlelight catches the edges of aged, leather-bound scrolls and a scattering of gold coins. The lighting is dramatic and moody, utilizing chiaroscuro to emphasize textures of velvet, stone, and gold. The overall aesthetic is sophisticated, mysterious, and intellectual, evoking a sense of calculated strategy and historical weight. The color palette is dominated by deep blacks, charcoal greys, and muted gold accents.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 👑🎭♟️ The 48 Laws of Power  
+![books-the-48-laws-of-power](../books-the-48-laws-of-power.jpg)  
 [🛒 The 48 Laws of Power. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4jzNVxa)  
   
 ## 🤖 AI Summary  

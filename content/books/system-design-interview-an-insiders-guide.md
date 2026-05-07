@@ -10,9 +10,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-20T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-05-06T01:46:30Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: "A clean, isometric illustration of a complex digital architecture. At the center, a glowing, stylized server node radiates connections to various icons representing cloud infrastructure: load balancers, database clusters, and cache layers. The lines connecting these components are vibrant and geometric, suggesting data flow and scalability. The background is a soft, deep navy blue, with subtle grid lines that give the impression of a technical blueprint or a whiteboard workspace. The aesthetic is modern, professional, and minimalist, using a color palette of cool cyans, electric blues, and muted teals to evoke a sense of high-tech engineering and structured problem-solving."
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🖥️🔑 System Design Interview - An Insider's Guide  
+![books-system-design-interview-an-insiders-guide](../books-system-design-interview-an-insiders-guide.jpg)  
 [🛒 System Design Interview - An Insider's Guide. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/43RaTKo)  
   
 ## 📖 Book Report: System Design Interview - An Insider's Guide  

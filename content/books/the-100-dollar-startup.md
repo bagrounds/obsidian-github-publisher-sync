@@ -11,9 +11,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-16T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-05-06T10:52:18Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A minimalist illustration featuring a single, vibrant lightbulb sprouting from a small, stylized desk. Inside the glass of the lightbulb, a tiny, intricate paper airplane takes flight, symbolizing the intersection of passion and travel. Beneath the bulb, a simple wooden coin rests on the desk surface, representing the low-cost barrier to entry. The background is a clean, soft-focus gradient of warm amber and cool teal, conveying a sense of energy, creativity, and the dawn of a new project. The style is modern, clean vector art with sharp lines and a balanced, optimistic composition.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🪙💯🚀 The $100 Startup: Reinvent the Way You Make a Living, Do What You Love, and Create a New Future  
+![books-the-100-dollar-startup](../books-the-100-dollar-startup.jpg)  
 [🛒 The $100 Startup: Reinvent the Way You Make a Living, Do What You Love, and Create a New Future. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3Ht9v9p)  
   
 ## 🤖 AI Summary  

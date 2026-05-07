@@ -8,11 +8,16 @@ Author:
 tags:
 affiliate link: https://amzn.to/4dPcsxc
 link_analysis_model: gemini-3.1-flash-lite-preview
-link_analysis_time: 2026-04-09T00:00:00Z
+link_analysis_time: 2026-04-24T00:00:00Z
 force_analyze_links: false
+link_analysis_version: "2"
+image_date: 2026-05-06T20:46:13Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A serene, minimalist composition featuring a stone balance sculpture—three smooth, asymmetrical river stones stacked perfectly on top of one another. The stones sit on a weathered wooden surface, bathed in soft, warm morning sunlight that creates long, gentle shadows. In the background, a subtle, out-of-focus hint of a lush green forest or a calm body of water provides a sense of nature and tranquility. The color palette is earthy and muted, dominated by slate grays, warm browns, and soft moss greens. The overall aesthetic is one of stillness, intentionality, and quiet strength, symbolizing the dichotomy of control and the pursuit of inner peace.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🤸😊🎯🌟 The Art of Living: The Classical Manual on Virtue, Happiness, and Effectiveness  
+![books-the-art-of-living](../books-the-art-of-living.jpg)  
 [🛒 The Art of Living: The Classical Manual on Virtue, Happiness, and Effectiveness. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4dPcsxc)  
   
 ## 🤖 AI Summary  

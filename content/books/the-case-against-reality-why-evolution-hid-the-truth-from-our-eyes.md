@@ -10,9 +10,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-16T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-05-07T10:57:00Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A surreal, high-contrast illustration featuring a human eye set against a deep cosmic void. Within the iris of the eye, instead of a pupil, there is a glowing, complex digital desktop interface with abstract geometric icons floating in mid-air, representing the user interface of reality. The edges of the eye are peeling away like a theater curtain or a painted mask, revealing a vast, ethereal network of interconnected, luminous nodes—representing conscious agents—pulsing in the dark background. The color palette uses deep indigos, electric blues, and vibrant neon accents to emphasize the contrast between the familiar physical world and the hidden, fundamental nature of consciousness. The overall composition is minimalist, clean, and thought-provoking.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🧬🎭👁️ The Case Against Reality: Why Evolution Hid the Truth from Our Eyes  
+![books-the-case-against-reality-why-evolution-hid-the-truth-from-our-eyes](../books-the-case-against-reality-why-evolution-hid-the-truth-from-our-eyes.jpg)  
 [🛒 The Case Against Reality: Why Evolution Hid the Truth from Our Eyes. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/44kl37A)  
   
 🧬🎮 Natural selection shapes our perceptions not to reveal objective truth, but to serve as a species-specific user interface for survival and reproduction.  

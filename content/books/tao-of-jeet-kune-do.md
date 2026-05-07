@@ -10,9 +10,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-22T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-05-06T07:57:30Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A minimalist, high-contrast composition featuring a single, pristine drop of water hitting a dark, reflective surface. As the water impacts, it creates a subtle, perfectly circular ripple that transitions into the silhouette of a closed fist emerging from the center. The color palette is restricted to deep ink-blacks, slate grays, and a soft, luminous white for the water. The lighting is dramatic and cinematic, emphasizing the interplay between fluid softness and structured strength. The background is a clean, matte texture that suggests the pages of a notebook, evoking the raw, foundational essence of personal reflection and martial discipline without the use of any text.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # ☯️🥋 Tao of Jeet Kune Do  
+![books-tao-of-jeet-kune-do](../books-tao-of-jeet-kune-do.jpg)  
 [🛒 Tao of Jeet Kune Do. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4qiWtNe)  
   
 ✨ A revolutionary guide to martial arts and life, advocating adaptability, simplicity, and self-expression over rigid styles, urging practitioners to 'be like water' 🌊 and find their own way.  

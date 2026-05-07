@@ -11,6 +11,7 @@ image_date: 2026-04-11T04:47:35Z
 image_model: "@cf/black-forest-labs/flux-1-schnell"
 image_prompt: A stylized, minimalist illustration featuring a clean, isometric workspace. On a sleek desk sits a translucent, glowing glass box acting as a container. Various geometric shapes—spheres, cubes, and pyramids—are being sorted into the box by a glowing, semi-transparent digital filter. The shapes that fit perfectly are illuminated in a vibrant, crisp green, while a stray, misshapen piece is being nudged away by a soft, warm light. The background is a deep, professional navy blue with subtle, faint white grid lines suggesting a technical architecture. The overall aesthetic is modern, high-tech, and precise, emphasizing the concept of data integrity and structured organization through Pythonic type-hinting.
 link_analysis_version: "2"
+updated: 2026-05-07T03:21:45
 ---
 [Home](../index.md) > [Software](./index.md)  
 # 🐍📜🔍✅ Pydantic  
@@ -142,3 +143,11 @@ Pydantic was created to address the need for robust data validation and settings
 * Pydantic's official documentation and examples 📄.  
 * Videos on FastAPI 🚀, which extensively uses Pydantic 🐍.  
 * Search YouTube for "Pydantic tutorial" for many useful videos 🎥.  
+  
+## 🦋 Bluesky    
+<blockquote class="bluesky-embed" data-bluesky-uri="at://did:plc:i4yli6h7x2uoj7acxunww2fc/app.bsky.feed.post/3mlab6deief2v" data-bluesky-cid="bafyreiep33bb3k3s65ps7ije2jdzbtu3ibrcnxcapemshsxbb75oeakts4"><p>🐍📜🔍✅ Pydantic  
+  
+#AI Q: 🐍 Do you prefer strict type validation or loose data structures in your Python code?  
+  
+✅ Data Validation | 📝 Type Hinting | 🐍 Python Library  
+https://bagrounds.org/software/pydantic</p>&mdash; <a href="https://bsky.app/profile/did:plc:i4yli6h7x2uoj7acxunww2fc?ref_src=embed">Bryan Grounds (@bagrounds.bsky.social)</a> <a href="https://bsky.app/profile/did:plc:i4yli6h7x2uoj7acxunww2fc/post/3mlab6deief2v?ref_src=embed">2026-05-07T03:22:00.000Z</a></blockquote><script async src="https://embed.bsky.app/static/embed.js" charset="utf-8"></script>

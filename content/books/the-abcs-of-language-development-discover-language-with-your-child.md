@@ -8,9 +8,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-17T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-05-06T13:43:01Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A cozy, sunlit living room scene featuring a young child and a caregiver sitting together on a comfortable rug. The caregiver is holding an open picture book, pointing at colorful illustrations, while the child looks on with a curious and engaged expression. Scattered around them are soft building blocks, a few oversized alphabet letters, and a plush toy, suggesting a playful environment. The atmosphere is warm and inviting, illuminated by soft, natural light coming through a nearby window. The color palette consists of soft pastels—warm yellows, gentle blues, and earthy greens—creating a sense of calm, connection, and growth. The focus is on the intimate, face-to-face interaction and the shared discovery of language through play and reading.
 ---
 [Home](../index.md) > [Books](./index.md) | [📺 👶🗣️🔤📢 📖 The ABCs of Language Development: Discover Language With Your Child](../videos/the-abcs-of-language-development-discover-language-with-your-child.md)  
 # 👶🔤 The ABC’s of Language Development: Discover Language with Your Child  
+![books-the-abcs-of-language-development-discover-language-with-your-child](../books-the-abcs-of-language-development-discover-language-with-your-child.jpg)  
 [🆓 The ABCs of Language Development Book](https://languagesciences.ubc.ca/abcs-book)  
   
 ## 📖 Book Report: 🗣️ The ABC’s of Language Development: 👶 Discover Language with Your Child  

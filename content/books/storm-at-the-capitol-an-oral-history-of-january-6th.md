@@ -10,9 +10,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-21T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-05-05T20:35:26Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A dramatic, low-angle shot of the U.S. Capitol dome silhouetted against a turbulent, dark, and stormy sky. The lighting is moody and high-contrast, with flashes of lightning illuminating the clouds and casting deep, long shadows across the building’s neoclassical columns. In the foreground, the scene is abstract and atmospheric, featuring swirling gray and deep blue fog that suggests confusion and chaos. The overall aesthetic is cinematic and somber, emphasizing the weight of the historical event through architectural scale and intense, brooding weather patterns.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # ⛈️🏛️ Storm at the Capitol: An Oral History of January 6th  
+![books-storm-at-the-capitol-an-oral-history-of-january-6th](../books-storm-at-the-capitol-an-oral-history-of-january-6th.jpg)  
 [🛒 Storm at the Capitol: An Oral History of January 6th. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3LuvUWd)  
   
 🚨🇺🇸 A comprehensive, hour-by-hour account of the Capitol attack through over 200 firsthand narratives, intertwining experiences of rioters, police, lawmakers, and journalists to highlight the day's visceral reality and its impact on American democracy.  

@@ -13,9 +13,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-19T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-05-06T16:46:49Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: "A high-tech, isometric illustration of a modular digital brain floating in a clean, minimalist workspace. The brain is composed of glowing, interconnected geometric nodes and translucent circuit pathways, suggesting complex cognitive architecture. Radiating outward from the center are abstract, semi-transparent icons representing a perception-action loop: a radar pulse, a gear, and a branching decision tree. The color palette uses deep navy and charcoal backgrounds with vibrant cyan and electric violet accents to signify intelligence and precision. The style is clean, technical, and modern, conveying a sense of sophisticated engineering, autonomous agency, and systematic design."
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🤖⚙️ The Agentic AI Engineer's Handbook  
+![books-the-agentic-ai-engineers-handbook](../books-the-agentic-ai-engineers-handbook.jpg)  
 [🛒 The Agentic AI Engineer's Handbook. As an Amazon Associate I earn from qualifying purchases.](https://www.amazon.com/dp/B0G2JDBTZP?tag=bagrounds-20)  
 ✨ 🛠️ This handbook distills essential principles and actionable methodologies for designing, developing, and deploying robust agentic AI systems for engineers.  
   

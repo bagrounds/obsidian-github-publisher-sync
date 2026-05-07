@@ -10,9 +10,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-18T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-05-07T12:43:27Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A minimalist, high-contrast illustration featuring a stylized human silhouette centered against a soft, glowing gradient. The background transitions vertically from a warm, golden sunrise at the top to a deep, serene twilight indigo at the bottom. Within the silhouette, a delicate, glowing clockwork mechanism or a series of concentric, interconnected rings subtly pulses, representing internal biological rhythms. To the left, a gentle sun icon rises; to the right, a soft crescent moon sets. The overall aesthetic is clean, modern, and scientific, utilizing a palette of amber, soft white, and midnight blue to evoke the balance between day and night, activity and rest. The composition is balanced and serene, emphasizing the harmony of the body’s internal clock.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🌄⏳ The Circadian Code: Lose Weight, Supercharge Your Energy, and Transform Your Health from Morning to Midnight  
+![books-the-circadian-code](../books-the-circadian-code.jpg)  
 [🛒 The Circadian Code: Lose Weight, Supercharge Your Energy, and Transform Your Health from Morning to Midnight. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4mKeliI)  
   
 ## 📖 Book Report: The Circadian Code  

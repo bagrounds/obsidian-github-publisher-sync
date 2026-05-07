@@ -10,9 +10,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-16T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-05-06T00:40:51Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A soft, atmospheric illustration capturing the quiet intimacy of a mother and infant sleeping together. The scene is bathed in the gentle, warm glow of moonlight filtering through a window, casting soft shadows across a minimalist, firm mattress. The mother is lying on her side, facing her baby, with her arm protectively yet relaxed around them. The color palette features soothing, muted tones of midnight blue, soft lavender, and warm cream. The focus is on the peaceful connection between the two figures, emphasizing tranquility, safety, and natural closeness. The background is simple and uncluttered, with a cozy, textured wool blanket draped over the edge of the bed to evoke a sense of warmth and comfort.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 😴🤱 Sweet Sleep: Nighttime and Naptime Strategies for the Breastfeeding Family  
+![books-sweet-sleep-nighttime-and-naptime-strategies-for-the-breastfeeding-family](../books-sweet-sleep-nighttime-and-naptime-strategies-for-the-breastfeeding-family.jpg)  
 [🛒 Sweet Sleep: Nighttime and Naptime Strategies for the Breastfeeding Family. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4iKUQoN)  
   
 😴👶💖 Evidence-based guidance and reassurance for breastfeeding parents navigating infant and toddler sleep, advocating for safe bed-sharing practices as a normal and beneficial approach.  

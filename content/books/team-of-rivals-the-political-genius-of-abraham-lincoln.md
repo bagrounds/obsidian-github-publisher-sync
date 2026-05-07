@@ -10,9 +10,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-15T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-05-06T09:56:30Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: An atmospheric, historical illustration featuring a dimly lit, 19th-century cabinet room. In the center, a silhouette of Abraham Lincoln stands tall near a large wooden table covered in maps and parchment documents. Surrounding the table are four distinct, shadowed figures representing his rivals, each turned toward Lincoln in a posture of intense debate and deliberation. The room is illuminated by the warm, flickering glow of a single brass oil lamp, casting long, dramatic shadows against heavy velvet curtains and wood-paneled walls. The color palette is dominated by deep mahogany, sepia tones, and muted blues, evoking a sense of gravity, intellectual tension, and the weight of a nation at a crossroads. The composition emphasizes the theme of a team coming together amidst the gloom of the Civil War era.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🤝🏛️ Team of Rivals: The Political Genius of Abraham Lincoln  
+![books-team-of-rivals-the-political-genius-of-abraham-lincoln](../books-team-of-rivals-the-political-genius-of-abraham-lincoln.jpg)  
 [🛒 Team of Rivals: The Political Genius of Abraham Lincoln. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/463g50l)  
   
 ## 📚 Book Report: Team of Rivals: The Political Genius of Abraham Lincoln  

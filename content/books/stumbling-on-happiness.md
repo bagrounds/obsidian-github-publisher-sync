@@ -10,9 +10,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-16T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-05-05T22:29:55Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A surreal, whimsical illustration featuring a person walking along a winding, translucent path that fades into a misty, dreamlike horizon. The person is holding a compass that points toward a shimmering, abstract geometric shape rather than a destination. Floating around them are several translucent, glowing bubbles, each containing a different miniature scene of everyday life—a house, a job, a sunset—representing disparate future possibilities. The lighting is soft and ethereal, using a palette of warm ambers and cool teals to evoke a sense of curiosity and introspection. The background is a minimalist, abstract landscape of soft gradients and subtle, floating geometric fragments, suggesting the unpredictable and shifting nature of human imagination and the elusive search for contentment.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 😮😊 Stumbling on Happiness  
+![books-stumbling-on-happiness](../books-stumbling-on-happiness.jpg)  
 [🛒 Stumbling on Happiness. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4s2vXZZ)  
   
 🤯🧠✨ Our brains spectacularly mispredict what will make us happy, leading us to miswant things, and how our psychological immune system often synthesizes contentment when plans go awry.  

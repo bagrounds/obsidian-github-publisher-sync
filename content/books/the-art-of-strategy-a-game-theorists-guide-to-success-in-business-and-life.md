@@ -12,9 +12,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-17T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-05-06T22:27:58Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A high-contrast, minimalist composition featuring a sleek, modern chessboard set against a dark, moody background. A single white knight is positioned in the center, casting a long, dramatic shadow that transforms into the shape of a complex, glowing neural network or a series of interconnected decision-tree nodes. Soft, cinematic lighting highlights the polished surface of the pieces, while faint, translucent geometric grid lines overlay the board, suggesting analytical depth. The color palette is dominated by deep charcoal, slate blue, and sharp, electric white accents. The overall atmosphere is sophisticated, intellectual, and intensely focused, evoking the high-stakes precision of both business strategy and abstract game theory.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # ♟️🧠📈🎯 The Art of Strategy: A Game Theorist's Guide to Success in Business and Life  
+![books-the-art-of-strategy-a-game-theorists-guide-to-success-in-business-and-life](../books-the-art-of-strategy-a-game-theorists-guide-to-success-in-business-and-life.jpg)  
 [🛒 The Art of Strategy: A Game Theorist's Guide to Success in Business and Life. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4dQlUR1)  
   
 ## 🤖 AI Summary  

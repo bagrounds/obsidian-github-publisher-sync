@@ -10,9 +10,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-19T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-05-06T07:57:33Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A split-composition illustration showing the harmony between tradition and technology. On the left side, a warm, soft-lit wooden desk features an open leather-bound book, a pair of vintage eyeglasses, and a fountain pen, symbolizing the human history of learning. On the right side, a sleek, translucent holographic interface emerges from the pages, displaying glowing nodes, neural network patterns, and floating mathematical symbols in cool blue and violet tones. The two worlds blend in the center, where the glowing digital light illuminates the pages of the book, suggesting a seamless integration of AI into the classroom. The background is a clean, minimalist academic setting with a soft-focus bookshelf, creating a professional and forward-thinking atmosphere.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🤖🧑‍🏫 Teaching with AI: A Practical Guide to a New Era of Human Learning  
+![books-teaching-with-ai-a-practical-guide-to-a-new-era-of-human-learning](../books-teaching-with-ai-a-practical-guide-to-a-new-era-of-human-learning.jpg)  
 [🛒 Teaching with AI: A Practical Guide to a New Era of Human Learning. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/45WGtcr)  
   
 ## 📚 Book Report: 🤖 Teaching with AI: A Practical Guide to a New Era of Human Learning  

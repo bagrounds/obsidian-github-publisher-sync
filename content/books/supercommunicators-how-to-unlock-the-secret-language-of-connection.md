@@ -10,9 +10,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-22T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-05-05T23:33:58Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A minimalist, high-contrast illustration featuring two stylized human silhouettes facing each other in profile. Between them, the empty space is bridged by a series of glowing, interconnected nodes and thin, elegant lines that form an abstract neural or constellation-like web. The background is a deep, sophisticated navy blue, while the lines and nodes pulse with soft, warm gradients of amber and teal. The composition emphasizes harmony and the flow of information, using soft light to represent the secret language of empathy and understanding. The overall aesthetic is clean, modern, and intellectual, evoking a sense of clarity and human connection without the use of any text or distracting details.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🗣️🔗 Supercommunicators: How to Unlock the Secret Language of Connection  
+![books-supercommunicators-how-to-unlock-the-secret-language-of-connection](../books-supercommunicators-how-to-unlock-the-secret-language-of-connection.jpg)  
 [🛒 Supercommunicators: How to Unlock the Secret Language of Connection. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4npQHYA)  
   
 ## 📚 Book Report: Supercommunicators: How to Unlock the Secret Language of Connection  

@@ -12,9 +12,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-16T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-05-05T16:43:18Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A vibrant, stylized illustration featuring a human silhouette in mid-stride, captured in a dynamic running pose. From the runner’s head, a glowing network of neural pathways and synapses radiates outward, transforming into ethereal, lightning-like energy bolts that illuminate the surrounding space. The color palette utilizes electric blues, deep indus, and flashes of bright, warm yellow to represent cognitive ignition and neuroplasticity. The background is a clean, dark gradient, emphasizing the high-contrast spark of energy emanating from the brain. The composition is sleek and minimalist, capturing the intersection of human physical movement and neurological vitality.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # ⚡🧠🏃 Spark: The Revolutionary New Science of Exercise and the Brain  
+![books-spark-the-revolutionary-new-science-of-exercise-and-the-brain](../books-spark-the-revolutionary-new-science-of-exercise-and-the-brain.jpg)  
 [🛒 Spark: The Revolutionary New Science of Exercise and the Brain. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3ZfcoAJ)  
   
 ## 📝🐒 Human Notes  

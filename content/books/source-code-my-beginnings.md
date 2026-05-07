@@ -10,9 +10,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-24T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-05-05T15:49:54Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A close-up, top-down view of an antique, heavy-duty teletype terminal or early mainframe computer keyboard. The keys are slightly yellowed with age, glowing faintly under a warm, nostalgic desk lamp. A tangled mess of punch cards is scattered artistically across the wooden desk surface. In the background, a soft-focus silhouette of a young, studious person hunched over a glowing monitor creates a sense of late-night discovery. The color palette is composed of deep teals, warm ambers, and muted grays, evoking a vintage 1970s laboratory atmosphere. The lighting highlights the texture of the paper punch cards and the mechanical depth of the keys, symbolizing the raw, foundational beginnings of the digital age.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 💻0️⃣ Source Code: My Beginnings  
+![books-source-code-my-beginnings](../books-source-code-my-beginnings.jpg)  
 [🛒 0️⃣ Source Code: My Beginnings. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3Njf2Cb)  
   
 🚀💻🧠 Bill Gates' early life: childhood, pivotal friendships, and the intense passion for coding that laid the foundation for Microsoft, reveal a self-deprecating yet driven tech visionary's origin story.  

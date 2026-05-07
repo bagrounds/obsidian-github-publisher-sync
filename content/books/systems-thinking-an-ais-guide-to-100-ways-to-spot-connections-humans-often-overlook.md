@@ -10,9 +10,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-28T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-05-06T01:46:33Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A high-tech, abstract visualization of a complex network. In the center, a glowing, translucent human brain is composed of intricate, shimmering digital filaments. These filaments extend outward, connecting to a vast web of floating geometric shapes, crystalline nodes, and data streams that pulse with soft light. Some nodes are bright and interconnected, representing clarity, while others fade into a deep, dark blue background, suggesting hidden layers. The overall aesthetic is clean and futuristic, using a color palette of electric blue, cyan, and subtle gold accents to represent the synthesis of organic human intuition and mechanical AI intelligence. The lighting is ethereal, creating a sense of depth and infinite complexity.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🤖🔗👁️ Systems Thinking: An AI’s Guide to 100 Ways to Spot Connections Humans Often Overlook  
+![books-systems-thinking-an-ais-guide-to-100-ways-to-spot-connections-humans-often-overlook](../books-systems-thinking-an-ais-guide-to-100-ways-to-spot-connections-humans-often-overlook.jpg)  
 [🛒 Systems Thinking: An AI’s Guide to 100 Ways to Spot Connections Humans Often Overlook. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4oButnl)  
   
 🧠💡🔗 This AI-authored guide unpacks 100 system-level connection insights, demonstrating how artificial intelligence identifies patterns humans often miss to foster holistic understanding and problem-solving.  

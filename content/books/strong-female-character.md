@@ -10,9 +10,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-24T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-05-05T21:32:41Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A minimalist, high-contrast illustration featuring a stylized silhouette of a woman standing confidently against a fractured, geometric background. The figure is composed of complex, overlapping puzzle-piece patterns in muted blues and greys, representing the multifaceted nature of neurodiversity. One side of the silhouette is illuminated by a warm, golden light, symbolizing the clarity of self-discovery, while the other side remains in deep, textured shadows. Scattered around the figure are subtle, abstract shapes—a microphone, a theatrical mask, and jagged lines—suggesting the chaotic yet creative journey of comedy and survival. The overall aesthetic is raw and edgy, utilizing a stark color palette of charcoal, slate, and electric yellow to evoke a sense of unfiltered honesty and inner strength.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🦸‍♀️ Strong Female Character  
+![books-strong-female-character](../books-strong-female-character.jpg)  
 [🛒 Strong Female Character. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4qmP2op)  
   
 🧠🔥🎭 A raw, darkly humorous memoir chronicling her life as an autistic, working-class Scottish woman, navigating mental health struggles, abusive relationships, and a career in comedy, while exposing societal failures in recognizing autism in women.  

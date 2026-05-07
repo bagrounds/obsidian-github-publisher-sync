@@ -9,9 +9,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-16T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-05-07T05:24:12Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A high-contrast, minimalist composition featuring a serene, white swan gliding across a perfectly black, mirror-like surface of water. In the foreground, a single, weighted black six-sided die rests on the edge of the water, half-submerged, creating subtle, distorted ripples that disrupt the swans reflection. The lighting is dramatic and cinematic, with a soft, ethereal glow highlighting the texture of the swans feathers against the deep, infinite darkness of the background. The overall aesthetic is clean, intellectual, and slightly surreal, emphasizing the tension between the expected and the improbable.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # ⚫🦢🎲 The Black Swan: The Impact of the Highly Improbable  
+![books-the-black-swan-the-impact-of-the-highly-improbable](../books-the-black-swan-the-impact-of-the-highly-improbable.jpg)  
 [🛒 The Black Swan: The Impact of the Highly Improbable. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/43K2rgc)  
   
 ## 🦢 The Black Swan: The Impact of the Highly Improbable  

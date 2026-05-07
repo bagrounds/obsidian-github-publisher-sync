@@ -11,6 +11,7 @@ image_date: 2026-04-11T03:09:17Z
 image_model: "@cf/black-forest-labs/flux-1-schnell"
 image_prompt: A stylized, minimalist illustration featuring a friendly, geometric-shaped llama sitting atop a glowing, translucent computer tower. The llama is composed of soft, matte-textured shapes in shades of white and cream. From the llama’s head, a vibrant, flowing stream of digital data—represented by glowing cyan and magenta nodes and connecting lines—curves downward to plug directly into the computers motherboard, which is visible through a transparent side panel. The background is a clean, deep charcoal gradient, suggesting a modern, high-tech workspace. Soft, ambient light emanates from the computer components, casting a gentle glow on the llama, emphasizing the concept of local, private intelligence living right inside the hardware. The aesthetic is clean, professional, and tech-forward.
 link_analysis_version: "2"
+updated: 2026-05-06T21:40:44
 ---
 [Home](../index.md) > [Software](./index.md)  
 # 🦙💬 Ollama  
@@ -123,3 +124,11 @@ link_analysis_version: "2"
 **Links to Official and Supportive Documentation:**  
   
 * Ollama Official Docs: [https://ollama.ai/](https://ollama.ai/) 📜  
+  
+## 🦋 Bluesky    
+<blockquote class="bluesky-embed" data-bluesky-uri="at://did:plc:i4yli6h7x2uoj7acxunww2fc/app.bsky.feed.post/3ml7o4tkqn32c" data-bluesky-cid="bafyreibrbkrwxdl3w53eih3kmydihtcwf3tvaqzsflmakrb5jjua2bf3ju"><p>🦙💬 Ollama  
+  
+#AI Q: 🤖 Would you trust a private AI more than a cloud based service?  
+  
+🏠 Local AI | 🔒 Privacy Focused | 🧠 Language Models | 💻 Open Source Framework  
+https://bagrounds.org/software/ollama</p>&mdash; <a href="https://bsky.app/profile/did:plc:i4yli6h7x2uoj7acxunww2fc?ref_src=embed">Bryan Grounds (@bagrounds.bsky.social)</a> <a href="https://bsky.app/profile/did:plc:i4yli6h7x2uoj7acxunww2fc/post/3ml7o4tkqn32c?ref_src=embed">2026-05-06T21:41:09.000Z</a></blockquote><script async src="https://embed.bsky.app/static/embed.js" charset="utf-8"></script>

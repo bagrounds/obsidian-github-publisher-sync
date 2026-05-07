@@ -11,9 +11,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-21T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-05-07T07:15:36Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A close-up, high-contrast composition featuring a weathered, notched steel sword resting against a cold, moss-covered stone wall. The blade is partially obscured by shifting shadows, reflecting a dim, moody light that highlights faint scratches and bloodstains on the metal. In the background, a soft, out-of-focus blizzard of grey ash or embers drifts through the air, suggesting an unforgiving and gritty environment. The color palette is muted, dominated by charcoal greys, slate blues, and the dull, tarnished silver of the blade, with subtle, rusted orange undertones to evoke a sense of decay and violence. No human figures are present, focusing entirely on the stark, brutalist atmosphere of a world defined by conflict.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🗡️🤕 The Blade Itself  
+![books-the-blade-itself](../books-the-blade-itself.jpg)  
 [🛒 The Blade Itself. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3SxcboT)  
   
 ## 🤖 AI Review  

@@ -10,9 +10,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-16T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-05-05T17:43:39Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A sun-drenched, cinematic view of the Roman Forum at dusk. In the foreground, a weathered marble bust of a Roman senator stands on a stone pedestal, casting a long shadow across a mosaic-tiled floor. Behind the bust, the iconic columns of a ruined temple rise against a deep indigo sky, with golden light filtering through the stone arches. A weathered, half-unrolled parchment scroll lies resting against the base of the pedestal. The atmosphere is scholarly and timeless, using a palette of warm terracotta, cool marble whites, and deep, atmospheric blues. No text or characters are present, focusing entirely on the architectural grandeur and the tactile, ancient textures of the Roman world.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🏛️📜 SPQR: A History of Ancient Rome  
+![books-spqr-a-history-of-ancient-rome](../books-spqr-a-history-of-ancient-rome.jpg)  
 [🛒 SPQR: A History of Ancient Rome. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3MaZNvf)  
   
 🏛️📜✨ A refreshingly accessible yet rigorously academic re-examination of Roman civilization, challenging conventional narratives from its foundational myths to its imperial zenith.  

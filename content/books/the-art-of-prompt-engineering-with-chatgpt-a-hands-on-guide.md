@@ -12,9 +12,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-18T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-05-06T21:38:26Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A minimalist, high-contrast illustration centered on a sleek, modern laptop glowing with soft, ethereal blue light. Emerging from the screen is a structured, luminous geometric grid that transforms into a collection of floating, abstract icons representing language, creativity, and data—such as stylized quotation marks, lightbulbs, and crystalline nodes. The background is a deep, matte charcoal, providing a professional atmosphere. A pair of elegant, minimalist lines representing a human hand gestures toward the glowing interface, symbolizing the bridge between human intent and machine output. The overall aesthetic is clean, technological, and sophisticated, using a palette of electric blue, crisp white, and dark slate to evoke a sense of precision, intelligence, and discovery.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 💻✍️ The Art of Prompt Engineering with ChatGPT: A Hands-On Guide  
+![books-the-art-of-prompt-engineering-with-chatgpt-a-hands-on-guide](../books-the-art-of-prompt-engineering-with-chatgpt-a-hands-on-guide.jpg)  
 [🛒 The Art of Prompt Engineering with ChatGPT: A Hands-On Guide. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/40LrCON)  
   
 ## 🤖 The Art of Prompt Engineering with ChatGPT: A Hands-On Guide: A Book Report 📖  

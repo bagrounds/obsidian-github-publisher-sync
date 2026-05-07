@@ -10,9 +10,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-16T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-05-07T12:43:33Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A minimalist, conceptual illustration featuring a single, sturdy sapling growing through a crack in a thick, protective concrete dome. The dome is cracked and slightly weathered, symbolizing the breaking of overprotective safetyism. The sapling reaches upward toward bright, natural sunlight, representing resilience and growth through adversity. The background is a clean, neutral gradient, focusing the viewer’s attention on the contrast between the rigid, artificial barrier and the organic, developing life force. The color palette uses muted grays for the concrete and vibrant, hopeful greens for the plant, emphasizing the shift from fragile, artificial comfort to natural, antifragile strength.
 ---
 [Home](../index.md) > [Books](./index.md) | [🧠🤝🐘 Jonathan Haidt](../people/jonathan-haidt.md)  
 # 🤕👶 The Coddling of the American Mind: How Good Intentions and Bad Ideas Are Setting Up a Generation for Failure  
+![books-the-coddling-of-the-american-mind-how-good-intentions-and-bad-ideas-are-setting-up-a-generation-for-failure](../books-the-coddling-of-the-american-mind-how-good-intentions-and-bad-ideas-are-setting-up-a-generation-for-failure.jpg)  
 [🛒 The Coddling of the American Mind: How Good Intentions and Bad Ideas Are Setting Up a Generation for Failure. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4mRH2d2)  
   
 ## 📝🐒 Human Notes  

@@ -10,9 +10,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-17T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-05-05T22:29:58Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A surreal, high-contrast digital illustration featuring a human silhouette in profile against a deep indigo background. Inside the head, instead of a brain, there is a glowing, intricate clockwork mechanism composed of gears, floating neurons, and abstract geometric shapes. A faint, ethereal light emanates from the center of the head, casting a soft glow on the silhouettes face. Below the neckline, the silhouette dissolves into a complex, swirling nebula of colorful dust and data streams, representing the vast, hidden depths of the unconscious. The overall aesthetic is clean, modern, and cerebral, emphasizing the contrast between the sharp, ordered conscious mind and the mysterious, chaotic expanse of the subconscious.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🤫🧠 Subliminal: How Your Unconscious Mind Rules Your Behavior  
+![books-subliminal-how-your-unconscious-mind-rules-your-behavior](../books-subliminal-how-your-unconscious-mind-rules-your-behavior.jpg)  
 [🛒 Subliminal: How Your Unconscious Mind Rules Your Behavior. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3GqZgCm)  
   
 ## 📚 Book Report: 🧠 Subliminal: 🤔 How Your Unconscious Mind Rules Your Behavior  

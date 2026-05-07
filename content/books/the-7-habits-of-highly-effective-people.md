@@ -12,9 +12,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-15T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-05-06T12:44:06Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A stylized, minimalist illustration featuring a central, vibrant green sapling growing out of a solid geometric stone compass. The roots of the plant are intertwined with the compass needle, symbolizing the inside-out approach of anchoring growth in core principles. Surrounding the compass are seven distinct, abstract icons—a gear, a target, a handshake, a lightbulb, a clock, a book, and a sharpening stone—arranged in a balanced, circular orbit. The background is a clean, soft-gradient parchment texture, suggesting timeless wisdom. The color palette uses deep forest greens, slate grays, and warm gold accents to evoke a sense of professional growth, stability, and enduring character development. The composition is clean, symmetrical, and modern.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 👤📈🎯🌟🔑🤝🏆 The 7 Habits of Highly Effective People  
+![books-the-7-habits-of-highly-effective-people](../books-the-7-habits-of-highly-effective-people.jpg)  
 [🛒 The 7 Habits of Highly Effective People. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/43HW8th)  
   
 ## 🤖 AI Summary  

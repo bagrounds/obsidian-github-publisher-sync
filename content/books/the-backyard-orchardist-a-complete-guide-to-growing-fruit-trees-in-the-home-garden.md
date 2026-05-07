@@ -9,9 +9,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-16T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-05-07T00:40:18Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: An inviting, sun-drenched scene of a thriving home backyard orchard. In the foreground, a healthy, young apple tree laden with vibrant, ripe red fruit stands in rich, dark soil. Beside it, a pair of wooden gardening gloves and a simple hand trowel rest on the grass. In the background, soft-focus rows of various fruit trees—pears, cherries, and stone fruits—stretch toward a rustic wooden fence. A small, neatly organized container garden with herbs and dwarf shrubs sits to one side. The lighting is warm and golden, suggesting a peaceful morning of garden maintenance. The color palette features earthy greens, deep browns, and the bright, appetizing reds and yellows of fresh fruit. The style is detailed and realistic, capturing the essence of a well-tended, productive personal sanctuary.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🏡🍎 The Backyard Orchardist: A Complete Guide to Growing Fruit Trees in the Home Garden  
+![books-the-backyard-orchardist-a-complete-guide-to-growing-fruit-trees-in-the-home-garden](../books-the-backyard-orchardist-a-complete-guide-to-growing-fruit-trees-in-the-home-garden.jpg)  
 [🛒 The Backyard Orchardist: A Complete Guide to Growing Fruit Trees in the Home Garden. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3Hp6K95)  
   
 ## 📖 Book Report: The Backyard Orchardist  

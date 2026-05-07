@@ -10,9 +10,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-14T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-05-06T10:52:15Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A clean, minimalist isometric illustration featuring a complex, multifaceted geometric puzzle—like a dodecahedron—floating in the center of a bright, professional workspace. Each of the ten faces of the object is subtly textured with different icons or patterns representing business elements like gears, networks, lightbulbs, and user-experience nodes. The lighting is crisp and modern, with soft shadows casting onto a white surface. The color palette consists of vibrant, professional tones—deep blues, energetic oranges, and crisp teals—against a neutral, airy background. The overall composition conveys a sense of structured creativity, architectural precision, and the systematic assembly of diverse parts to form a singular, breakthrough whole.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🔟💡 Ten Types of Innovation: The Discipline of Building Breakthroughs  
+![books-ten-types-of-innovation-the-discipline-of-building-breakthroughs](../books-ten-types-of-innovation-the-discipline-of-building-breakthroughs.jpg)  
 [🛒 Ten Types of Innovation: The Discipline of Building Breakthroughs. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/45mhkHi)  
   
 🚀 A groundbreaking analysis of innovation, "Ten Types of Innovation: The Discipline of Building Breakthroughs" by Larry Keeley, Helen Walters, Ryan Pikkel, and Brian Quinn, offers a structured approach to fostering innovation within any organization. 📚 Based on over three decades of research and analysis of more than 2,000 successful innovations, the book provides a comprehensive framework for identifying and executing breakthrough ideas. ✍️ The authors argue that innovation is not a mysterious art but a discipline that can be learned and systematically applied.  

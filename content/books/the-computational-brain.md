@@ -10,9 +10,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-27T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-05-07T15:10:15Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A stylized human brain, rendered with a subtle, electric glow, sits centrally. From its intricate folds, a vibrant web of interconnected neural pathways extends outwards, resembling both biological dendrites and digital circuitry. These luminous lines pulse with soft light, some forming abstract patterns reminiscent of data streams or network graphs. The background is a deep, gradient field of blues and purples, subtly hinting at a vast, intricate computational space. The overall effect is a seamless integration of organic complexity and digital intelligence.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🧠💻 The Computational Brain  
+![books-the-computational-brain](../books-the-computational-brain.jpg)  
 [🛒 The Computational Brain. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3KzzcqG)  
   
 🧠 Unify neuroscience and computation. Neural networks give rise to complex mental life, thereby fundamentally shaping modern computational neuroscience.  

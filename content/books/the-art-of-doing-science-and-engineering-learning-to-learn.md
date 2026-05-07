@@ -10,9 +10,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_version: "2"
 link_analysis_time: 2026-05-01T00:00:00Z
 force_analyze_links: false
+image_date: 2026-05-06T19:46:46Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: "A minimalist, high-contrast illustration featuring a glowing, translucent human brain composed of intricate, interconnected geometric patterns and digital circuits. Emerging from the center of the brain is a single, vibrant light bulb that transitions into a complex mechanical gear. The background is a deep, matte navy blue, suggesting a vast, intellectual space. Floating around the central figure are subtle, abstract representations of scientific tools: a faint, elegant mathematical equation, a crystalline structure, and a series of flowing data lines. The lighting is sharp and focused, highlighting the fusion of organic thought and rigorous engineering, with a color palette of electric blue, crisp white, and subtle metallic gold accents."
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🧪⚙️🧠 The Art of Doing Science and Engineering: Learning to Learn  
+![books-the-art-of-doing-science-and-engineering-learning-to-learn](../books-the-art-of-doing-science-and-engineering-learning-to-learn.jpg)  
 [🛒 The Art of Doing Science and Engineering: Learning to Learn. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/48CP8kP)  
   
 🚀 🧠 Richard Hamming’s masterpiece explores the cultivation of style in scientific thinking, emphasizing that greatness is a practiced skill rooted in identifying significant problems and learning how to learn.  

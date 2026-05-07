@@ -10,9 +10,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-18T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-05-07T01:45:56Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A stylized, cinematic illustration of a traditional Wall Street ticker tape machine in the foreground, glowing with a soft, ominous light. Instead of standard financial data, the paper ribbon spilling out of the machine is transforming into a complex, precarious Jenga-style tower made of miniature suburban houses. The tower is visibly tilting and beginning to crumble at the base. In the background, a dark, abstract cityscape of skyscrapers looms under a stormy, high-contrast sky with deep shadows and sharp highlights, evoking a sense of looming financial collapse and systemic instability. The color palette is dominated by deep charcoal, slate gray, and muted gold, punctuated by a single, sharp streak of warning-red light cutting across the scene.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 💰💥📉 The Big Short: Inside the Doomsday Machine  
+![books-the-big-short-inside-the-doomsday-machine](../books-the-big-short-inside-the-doomsday-machine.jpg)  
 [🛒 The Big Short: Inside the Doomsday Machine. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/43WFjMD)  
   
 ## 📖 Book Report: The Big Short: Inside the Doomsday Machine 💥  

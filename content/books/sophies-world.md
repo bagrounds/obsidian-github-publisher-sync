@@ -10,9 +10,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-16T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-05-05T15:49:51Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: "A surreal, atmospheric illustration depicting a young girl standing in a vast, dreamlike library that transitions into an open, starry landscape. Her silhouette is partially transparent, subtly revealing the interconnected constellations and gears of a clockwork universe behind her. Floating around her are symbolic objects representing philosophical eras: a marble bust of a Greek philosopher, a glowing geometric shape (Platonic solid), a vintage hourglass, and a series of open books whose pages transform into flocks of birds flying toward the horizon. The color palette features deep indigos, soft golds, and ethereal teals, creating a sense of wonder and intellectual discovery. The perspective is slightly wide-angle to emphasize the scale of the cosmos merging with the intimate act of reading."
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🤔🌍 Sophie’s World  
+![books-sophies-world](../books-sophies-world.jpg)  
 [🛒 Sophie’s World. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4bc7idt)  
   
 🤔🌌🤯 Blend a coming-of-age story with an accessible, chronological overview of Western philosophy, ultimately questioning the very nature of reality itself.  

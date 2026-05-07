@@ -7,11 +7,16 @@ share: true
 CTA: 🕊️ Be wise.
 affiliate link: https://amzn.to/4lMEw6H
 link_analysis_model: gemini-3.1-flash-lite-preview
-link_analysis_time: 2026-04-01T00:00:00Z
+link_analysis_time: 2026-04-16T00:00:00Z
 force_analyze_links: false
+link_analysis_version: "2"
+image_date: 2026-05-06T17:44:51Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A minimalist illustration featuring an aged, weathered bamboo scroll partially unfurled across a dark, textured stone surface. Beside the scroll sits a single, elegant ink brush resting on a ceramic holder. A soft, warm light emanates from the upper corner, casting long, gentle shadows that suggest a quiet, scholarly study. The composition is balanced and serene, utilizing a muted color palette of earthy browns, deep charcoal, and soft parchment tones. The overall aesthetic is classical and timeless, evoking the atmosphere of ancient Chinese philosophy without the use of any symbols or text.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 👤💬 The Analects of Confucius  
+![books-the-analects-of-confucius](../books-the-analects-of-confucius.jpg)  
 [🛒 The Analects of Confucius. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4lMEw6H)  
   
 ## 📚 Book Report: The Analects of Confucius  

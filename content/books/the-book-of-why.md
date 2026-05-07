@@ -11,9 +11,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-16T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-05-07T07:15:42Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A minimalist, conceptual illustration featuring a stylized three-tiered ladder ascending toward a glowing, radiant lightbulb. The ladder is constructed from clean, geometric lines, representing the Ladder of Causation. Surrounding the ladder are faint, ghost-like outlines of interconnected nodes and branching pathways, symbolizing a complex causal network or a Directed Acyclic Graph (DAG). The background is a deep, sophisticated navy blue, providing a stark contrast to the bright, warm yellow of the lightbulb and the crisp white of the ladder. The composition is balanced and modern, emphasizing clarity, structural thinking, and the transition from dark, scattered data points into a singular, illuminated causal insight.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # ❓➡️💡 The Book of Why: The New Science of Cause and Effect  
+![books-the-book-of-why](../books-the-book-of-why.jpg)  
 [🛒 The Book of Why: The New Science of Cause and Effect. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4dNzsfR)  
   
 ## 🤖 AI Summary  

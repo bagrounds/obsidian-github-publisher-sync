@@ -11,6 +11,7 @@ image_date: 2026-04-11T04:47:09Z
 image_model: "@cf/black-forest-labs/flux-1-schnell"
 image_prompt: A high-contrast, minimalist illustration featuring a glowing, translucent terminal window floating in a dark, abstract digital void. Inside the terminal, vibrant, multi-colored lines of code are being woven together by ethereal, shimmering geometric nodes, representing an autonomous agent at work. The interface elements are sharp and angular, rendered in a sleek hacker-chic aesthetic with neon cyan and electric purple accents against a deep charcoal background. Wisps of digital data particles drift away from the terminal, suggesting connectivity and flow. The overall composition is clean, modern, and focused, emphasizing the terminal-native and agentic nature of the software without any distracting background clutter.
 link_analysis_version: "2"
+updated: 2026-05-07T01:48:32
 ---
 [Home](../index.md) > [Software](./index.md)  
 # [💻🔓 OpenCode](https://opencode.ai)  
@@ -161,4 +162,12 @@ link_analysis_version: "2"
 * 🔬 **More Specific:** *Crafting Interpreters* by Robert Nystrom (for understanding how code is parsed).  
 * 🎨 **Fictional:** Neuromancer by William Gibson.  
 * 🏛️ **Rigorous:** [🧠💻🤖 Deep Learning](../books/deep-learning.md) by Ian Goodfellow.  
-* 📗 **Accessible:** [🤖🔮🌍 AI 2041: Ten Visions for Our Future](../books/ai-2041-ten-visions-for-our-future.md) by Kai-Fu Lee.
+* 📗 **Accessible:** [🤖🔮🌍 AI 2041: Ten Visions for Our Future](../books/ai-2041-ten-visions-for-our-future.md) by Kai-Fu Lee.  
+  
+## 🦋 Bluesky    
+<blockquote class="bluesky-embed" data-bluesky-uri="at://did:plc:i4yli6h7x2uoj7acxunww2fc/app.bsky.feed.post/3mla3xweqbi2s" data-bluesky-cid="bafyreiep7bucjlzqm4zccxkmigsf5yjmc4ekkv264gul6i2kc7jwxgtuqu"><p>💻🔓 OpenCode  
+  
+#AI Q: 🤖 Would you trust an AI agent to refactor your entire codebase without manual oversight?  
+  
+🤖 AI Agents | 🐚 Terminal Interfaces | 🛠️ Programming Automation | 🧠  
+https://bagrounds.org/software/opencode</p>&mdash; <a href="https://bsky.app/profile/did:plc:i4yli6h7x2uoj7acxunww2fc?ref_src=embed">Bryan Grounds (@bagrounds.bsky.social)</a> <a href="https://bsky.app/profile/did:plc:i4yli6h7x2uoj7acxunww2fc/post/3mla3xweqbi2s?ref_src=embed">2026-05-07T01:48:56.000Z</a></blockquote><script async src="https://embed.bsky.app/static/embed.js" charset="utf-8"></script>

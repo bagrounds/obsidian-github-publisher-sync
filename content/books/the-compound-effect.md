@@ -10,9 +10,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-15T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-05-07T15:10:06Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A winding, upward path or staircase, composed of many small, distinct blocks or tiles. Each block subtly increases in size and vibrancy as the path ascends. At the very bottom, a tiny, almost imperceptible seed or seedling. As the path reaches its peak, the seed has transformed into a magnificent, flourishing tree with a broad canopy, its roots firmly gripping the largest blocks. A soft, warm light emanates from the tree and the paths destination, suggesting growth and achievement over time.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 📈➕ The Compound Effect  
+![books-the-compound-effect](../books-the-compound-effect.jpg)  
 [🛒 The Compound Effect. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/455U9Bt)  
   
 ## 📖 Book Report: ➕ The Compound Effect by Darren Hardy  

@@ -12,9 +12,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-18T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-05-05T18:39:55Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A stylized, high-contrast illustration featuring a precarious, towering stack of golden coins and geometric building blocks that transition from a solid, stable base at the bottom to a fragile, leaning structure at the top. The top of the stack is jagged and beginning to fracture, suggesting an imminent collapse. In the background, a subtle, sweeping line graph overlaid on a blueprint grid shows a sharp, downward-plunging trajectory. The color palette uses deep navy, slate gray, and muted gold, evoking a sense of serious financial analysis. The lighting is dramatic, casting long shadows that emphasize the height and instability of the structure against a clean, minimalist backdrop.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 📉📈 Stabilizing an Unstable Economy  
+![books-stabilizing-an-unstable-economy](../books-stabilizing-an-unstable-economy.jpg)  
 [🛒 Stabilizing an Unstable Economy. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4qt1iDY)  
   
   

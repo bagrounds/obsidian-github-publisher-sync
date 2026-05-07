@@ -11,9 +11,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-14T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-05-05T21:32:43Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: "A minimalist, high-contrast illustration featuring a series of monolithic, grey stone pedestals arranged in a receding row. Each pedestal supports a singular, stylized icon representing authoritarian tools: a megaphone, a broken gavel, a closed iron gate, and a silhouette of a theatrical mask. The background is a stark, monochromatic deep crimson, transitioning into shadow at the edges. The lighting is harsh and dramatic, casting long, sharp, geometric shadows across the floor to emphasize a sense of impending weight and rigid structure. The overall aesthetic is cold, architectural, and foreboding, evoking the intersection of historical propaganda and modern institutional decay without depicting any specific human figures."
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🇮🇹🇩🇪🇱🇾🇷🇺🇺🇸 Strongmen: Mussolini to the Present  
+![books-strongmen](../books-strongmen.jpg)  
 by Ruth Ben-Ghiat  
 [🛒 Strongmen: Mussolini to the Present. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/43Mp17S)  
   

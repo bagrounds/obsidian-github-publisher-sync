@@ -10,9 +10,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-20T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-05-07T03:20:10Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A split-composition image illustrating the concept of neuroplasticity and agency. On the left, a stylized, glowing neural network is tangled in dark, rigid metallic chains, representing a deeply ingrained, habitual loop. On the right, the chains are breaking apart, dissolving into light-filled, golden neural pathways that branch outward like the roots of a tree or a rising sunrise. The background is a deep, moody indigo that transitions into a warm, hopeful amber light. The overall aesthetic is clean, modern, and scientific, using a minimalist graphic style to emphasize the transition from a trapped, repetitive state to one of expansive, self-directed growth and cognitive freedom.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🧠⛓️🚫 The Biology of Desire: Why Addiction Is Not a Disease  
+![books-the-biology-of-desire-why-addiction-is-not-a-disease](../books-the-biology-of-desire-why-addiction-is-not-a-disease.jpg)  
 [🛒 The Biology of Desire: Why Addiction Is Not a Disease. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/49DyLEp)  
   
 🧠🔄💡 Marc Lewis, a neuroscientist and former addict, argues that addiction is not a disease but a powerfully learned habit driven by normal brain neuroplasticity and desire, suggesting recovery through re-prioritizing goals and self-directed change.  

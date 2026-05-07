@@ -10,9 +10,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-16T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-05-06T17:44:35Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A vast, golden-hued desert landscape under a deep twilight sky filled with brilliant, shimmering stars. In the foreground, a lone, weathered traveler stands with his back to the viewer, looking out toward a distant, glowing silhouette of the Egyptian pyramids on the horizon. Beside him, a small, rustic wooden chest sits half-buried in the shifting sand, casting a soft, warm light from within. A gentle, swirling breeze carries faint, ethereal golden particles that dance between the dunes and the starlit sky, suggesting a mystical connection between the earth and the heavens. The color palette is dominated by warm ambers, deep indigos, and subtle metallic gold accents, evoking a sense of ancient wisdom, mystery, and the pursuit of a lifelong destiny.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # ✨🧙‍♂️⚗️ The Alchemist  
+![books-the-alchemist](../books-the-alchemist.jpg)  
 ## 🤖 AI Summary  
 ✨ This lyrical fable uses a simplified narrative style to explore the profound spiritual conviction that the entire universe aligns to support those who dare to pursue their true purpose.  
   

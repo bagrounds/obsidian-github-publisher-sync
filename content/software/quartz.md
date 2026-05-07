@@ -11,6 +11,7 @@ image_date: 2026-04-11T05:39:38Z
 image_model: "@cf/black-forest-labs/flux-1-schnell"
 image_prompt: A high-contrast, artistic composition featuring a glowing, translucent quartz crystal at the center, resting on a minimalist desk. From the crystal, thin, luminous threads of light extend outward, connecting to various floating, holographic document icons and geometric nodes, representing a networked knowledge graph. The color palette uses deep navy and charcoal backgrounds to signify the digital nature, while the nodes and threads glow in vibrant shades of cyan, magenta, and white. The lighting is soft and ethereal, emphasizing the intersection of raw nature and precise, modern technology. The overall aesthetic is clean, sophisticated, and tech-forward, evoking the feeling of a digital garden blooming from structured, interconnected data.
 link_analysis_version: "2"
+updated: 2026-05-07T09:15:16
 ---
 [Home](../index.md) > [Software](./index.md)  
 # 💎🔬🔍📈 Quartz  
@@ -170,3 +171,11 @@ link_analysis_version: "2"
   
 - Tailwind CSS official channel: [Tailwind Labs](https://www.youtube.com/c/TailwindLabs) 🎨  
 - Static Site Generators: [Static Site Generators Explained](https://www.youtube.com/results?search_query=static+site+generators) 🌐  
+  
+## 🦋 Bluesky    
+<blockquote class="bluesky-embed" data-bluesky-uri="at://did:plc:i4yli6h7x2uoj7acxunww2fc/app.bsky.feed.post/3mlauwk53nl2e" data-bluesky-cid="bafyreiees3gzptplgjzlfpt3azormpodjvf2mdr3m46tdfznlsgumg36ea"><p>💎🔬🔍📈 Quartz  
+  
+#AI Q: 🌱 Does turning your personal notes into a public website change how you think?  
+  
+🌱 Digital Gardens | 🏗️ Static Site Generation | 🧠 Knowledge Management |  
+https://bagrounds.org/software/quartz</p>&mdash; <a href="https://bsky.app/profile/did:plc:i4yli6h7x2uoj7acxunww2fc?ref_src=embed">Bryan Grounds (@bagrounds.bsky.social)</a> <a href="https://bsky.app/profile/did:plc:i4yli6h7x2uoj7acxunww2fc/post/3mlauwk53nl2e?ref_src=embed">2026-05-07T09:15:33.000Z</a></blockquote><script async src="https://embed.bsky.app/static/embed.js" charset="utf-8"></script>

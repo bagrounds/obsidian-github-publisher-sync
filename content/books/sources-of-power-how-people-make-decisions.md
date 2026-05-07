@@ -9,9 +9,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-16T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-05-05T16:43:14Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A surreal, split-composition illustration depicting the intersection of human intuition and complex decision-making. On the left, a glowing, translucent human silhouette is filled with swirling golden light and intricate, interconnected neural pathways, representing internal expertise and experience. On the right, this silhouette transitions into a crisp, architectural blueprint of a mechanical clockwork mechanism, symbolizing the structured, high-stakes environments of firefighting and command. Fragments of a puzzle are suspended in the air between these two realms, with some pieces glowing as they snap into place, representing the recognition-primed moment of insight. The background is a deep, moody indigo, accented by faint, subtle light rays that highlight the shift from chaotic, incomplete information to a clear, singular path of action.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # ⛲🔌🤔⚙️ Sources of Power: How People Make Decisions  
+![books-sources-of-power-how-people-make-decisions](../books-sources-of-power-how-people-make-decisions.jpg)  
 [🛒 Sources of Power: How People Make Decisions. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4juuGFc)  
   
 ## 📚 Book Report: Sources of Power: How People Make Decisions by Gary Klein  

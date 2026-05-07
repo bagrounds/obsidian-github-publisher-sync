@@ -10,9 +10,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-16T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-05-07T09:13:23Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A warm, inviting nighttime scene at a campsite. In the foreground, a seasoned cast-iron skillet rests on a glowing bed of orange and red embers, containing a rustic, bubbling dish. Beside the fire, a steaming enamel mug sits on a wooden log. In the background, a silhouette of a sturdy tent is pitched under a vast, dark blue night sky filled with bright, twinkling stars and a soft Milky Way galaxy. The surrounding forest is rendered in deep, moody greens and shadows, creating a cozy and adventurous atmosphere. The lighting is dominated by the flickering, golden glow of the campfire, casting soft highlights on the cooking gear and the nearby pine needles.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # ⛺🔥 The Campout Cookbook: Inspired Recipes for Cooking Around the Fire and Under the Stars  
+![books-the-campout-cookbook-inspired-recipes-for-cooking-around-the-fire-and-under-the-stars](../books-the-campout-cookbook-inspired-recipes-for-cooking-around-the-fire-and-under-the-stars.jpg)  
 [🛒 The Campout Cookbook: Inspired Recipes for Cooking Around the Fire and Under the Stars. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/46Lj4dS)  
   
 ## 🏕️ Book Report: The Campout Cookbook  

@@ -10,9 +10,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-16T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-05-06T22:28:18Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: An intricate, minimalist illustration featuring a human silhouette standing before a complex, tangled knot of colorful threads. The silhouette holds a single, glowing lightbulb that casts a clear, bright beam onto the knot, causing a portion of the tangled mess to unravel into straight, organized parallel lines. The surrounding background is a soft, neutral slate, emphasizing the contrast between the chaotic, vibrant confusion of the knot and the serene, orderly clarity created by the light. The overall aesthetic is clean and modern, using geometric shapes and subtle gradients to represent the process of untangling cognitive biases and achieving mental precision.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🎨🤔🖼️ The Art of Thinking Clearly  
+![books-the-art-of-thinking-clearly](../books-the-art-of-thinking-clearly.jpg)  
 [🛒 The Art of Thinking Clearly. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3ZN0tKD)  
   
 ## 📖 Book Report: The Art of Thinking Clearly by Rolf Dobelli  

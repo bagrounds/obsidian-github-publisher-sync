@@ -10,9 +10,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-18T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-05-06T21:38:54Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A serene, minimalist illustration featuring a cozy, sun-drenched reading nook. A comfortable armchair sits beside a large window overlooking a lush, quiet forest. On a small wooden side table, a steaming mug of tea rests next to an open book. Soft, warm light filters through the foliage, casting gentle shadows across the floor. In the corner, a single, glowing meditation cushion lies on a soft rug. The color palette uses muted earth tones—sage green, warm beige, and soft ochre—to evoke a sense of deep tranquility and stillness. The composition is uncluttered, emphasizing open space and a slow, peaceful atmosphere.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🎨😴🧘☕⏳ The Art of Rest: How to Find Respite in the Modern Age  
+![books-the-art-of-rest-how-to-find-respite-in-the-modern-age](../books-the-art-of-rest-how-to-find-respite-in-the-modern-age.jpg)  
 [🛒 The Art of Rest: How to Find Respite in the Modern Age. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4kTTWXi)  
   
 ## 📖 Book Report: The Art of Rest: How to Find Respite in the Modern Age  

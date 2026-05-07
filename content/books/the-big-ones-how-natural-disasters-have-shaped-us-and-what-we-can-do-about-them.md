@@ -10,9 +10,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-18T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-05-07T00:40:35Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: "A split-screen composition contrasting the raw power of nature with human resilience. The left side features a stylized, dramatic landscape showing four distinct elemental forces: a towering volcanic plume, a swirling hurricane vortex, a cresting tsunami wave, and a glowing wildfire. These elements bleed into the right side, where the scene shifts to a modern, structured cityscape. In this urban space, resilient architecture—such as reinforced bridge supports and elevated flood barriers—stands firm against the encroaching elements. The color palette uses deep oranges, electric blues, and charcoal grays, transitioning from the chaotic, saturated tones of the disaster to the cool, stable, and organized geometric lines of the prepared city. A faint, glowing light emanates from the center, symbolizing knowledge and proactive planning."
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🌋🌊🌪️🔥 The Big Ones: How Natural Disasters Have Shaped Us (and What We Can Do About Them)  
+![books-the-big-ones-how-natural-disasters-have-shaped-us-and-what-we-can-do-about-them](../books-the-big-ones-how-natural-disasters-have-shaped-us-and-what-we-can-do-about-them.jpg)  
 [🛒 The Big Ones: How Natural Disasters Have Shaped Us (and What We Can Do About Them). As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3KthxRE)  
   
 🌍🏛️🚨 Distill centuries of catastrophic events to reveal how natural hazards, though inevitable, become human catastrophes through societal choices, offering historical insights and a call to action for enhanced resilience.  

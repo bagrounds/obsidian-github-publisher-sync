@@ -11,9 +11,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-16T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-05-06T00:41:15Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A vast, dark cosmic void serves as the backdrop for a mesmerizing display of emergent order. On the left side of the frame, a swirling, chaotic nebula of glowing particles, jagged lightning-like fractals, and scattered, disoriented clock gears represents entropy and disorder. As the eye moves toward the right, these disparate elements transition into a perfectly aligned, harmonious stream of luminous, synchronized light pulses. A series of pendulums suspended in the center begin to swing in perfect unison, their paths tracing elegant, glowing sine waves. The transition from the chaotic left to the rhythmic, ordered right creates a sense of fluid movement, illustrating the spontaneous emergence of structure. The aesthetic is clean, scientific, and ethereal, utilizing a palette of deep blues, vibrant purples, and brilliant, rhythmic pulses of gold and white light.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 💥🌀➡️⏳⚖️🕰️ ️ Sync: How Order Emerges From Chaos In The Universe, Nature, And Daily Life  
+![books-sync](../books-sync.jpg)  
 [🛒 Sync: How Order Emerges From Chaos In The Universe, Nature, And Daily Life. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4kHe8La)  
   
 ## 🤖 AI Summary  

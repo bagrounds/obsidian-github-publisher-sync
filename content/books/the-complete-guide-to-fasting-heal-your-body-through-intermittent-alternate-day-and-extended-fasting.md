@@ -9,9 +9,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-18T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-05-07T13:42:22Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A harmonious illustration featuring a stylized, gender-neutral figure in a calm, balanced pose. A subtle, glowing inner light radiates from the figures core, symbolizing healing and renewed energy. Around the figure, abstract, flowing lines or a segmented circle subtly suggest the passage of time and cycles of rest and activity. The overall color palette is fresh and clean, with soft greens, serene blues, and warm whites, conveying wellness, balance, and a sense of gentle transformation.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 📖⏱️🍎 The Complete Guide to Fasting: Heal Your Body Through Intermittent, Alternate-Day, and Extended Fasting  
+![books-the-complete-guide-to-fasting-heal-your-body-through-intermittent-alternate-day-and-extended-fasting](../books-the-complete-guide-to-fasting-heal-your-body-through-intermittent-alternate-day-and-extended-fasting.jpg)  
 [🛒 The Complete Guide to Fasting: Heal Your Body Through Intermittent, Alternate-Day, and Extended Fasting. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3FwibLE)  
   
 ## 📖 Book Report: The Complete Guide to Fasting  

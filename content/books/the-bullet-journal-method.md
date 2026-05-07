@@ -12,9 +12,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-15T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-05-07T09:13:10Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: An overhead, high-angle composition featuring an open, dotted-grid notebook resting on a clean, light-colored wooden desk. A sleek fountain pen lies diagonally across the open pages, which contain crisp, handwritten bullet points, simple geometric sketches, and a small, hand-drawn monthly calendar. Soft, natural morning sunlight streams in from the side, casting gentle shadows and creating a warm, inviting atmosphere. Beside the notebook, a small, polished brass compass and a single sprig of dried lavender add a touch of intentionality and calm. The overall aesthetic is minimalist, serene, and organized, emphasizing the tactile, analog nature of the Bullet Journal method without any digital distractions. The color palette is muted, consisting of warm creams, soft grays, and deep ink-black accents.
 ---
 [Home](../index.md) > [Books](./index.md) | [Bullet Journal](../videos/bullet-journal.md)  
 # 📓📜🗂️🔮 The Bullet Journal Method: Track the Past, Order the Present, Design the Future  
+![books-the-bullet-journal-method](../books-the-bullet-journal-method.jpg)  
 [🛒 The Bullet Journal Method: Track the Past, Order the Present, Design the Future. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3HmIyUZ)  
   
 ## 📝🐒 Human Notes  

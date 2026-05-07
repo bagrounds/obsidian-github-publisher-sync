@@ -10,9 +10,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-18T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-05-06T09:00:59Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A clean, minimalist composition featuring a stark white background. Ten distinct, bold black circles of varying sizes are scattered across the frame, mimicking the playful, artistic style of the book. Some dots are clustered together, while others stand alone, suggesting the potential to transform into objects like wheels, eyes, or buttons. The lighting is flat and even to emphasize the high-contrast graphic shapes, creating a sense of clean, educational simplicity. The overall aesthetic is modern, bright, and focused on the geometric purity of the black dots against a negative space, evoking a sense of creative possibility.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # ⚫🔢 Ten Black Dots  
+![books-ten-black-dots](../books-ten-black-dots.jpg)  
 [🛒 Ten Black Dots. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4kasfrO)  
   
 ## 📚 Book Report: ⚫ Ten Black Dots by Donald Crews  

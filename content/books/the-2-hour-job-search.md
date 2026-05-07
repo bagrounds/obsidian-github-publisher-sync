@@ -11,9 +11,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-22T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-05-06T11:46:44Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A sleek, minimalist illustration features a laptop as the central focus. Its screen displays a clean, organized interface with four distinct, simple icons representing List, Alumni, Motivation, and Posting, arranged in a clear flow. From the laptop, dynamic digital lines radiate outwards, forming a web of interconnected nodes that subtly resemble a network of people or career paths. A stylized, half-empty hourglass or a fast-forward clock icon is subtly integrated into the background, hinting at efficiency and speed. The overall composition conveys a sense of streamlined progress and technology-driven acceleration towards a clear goal, with a subtle upward trajectory implied by the radiating lines.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # ⏳💻💼🎯 The 2-Hour Job Search: Using Technology to Get the Right Job Faster  
+![books-the-2-hour-job-search](../books-the-2-hour-job-search.jpg)  
 [🛒 The 2-Hour Job Search: Using Technology to Get the Right Job Faster. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3Sx4leV)  
   
 ## 🤖 AI Summary  

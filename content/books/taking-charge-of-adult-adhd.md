@@ -11,9 +11,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-18T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-05-06T05:20:33Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: "A minimalist, high-contrast illustration featuring a stylized, translucent human head silhouette in profile. Inside the head, a chaotic tangle of vibrant, glowing lines in various colors represents scattered thoughts. Toward the front of the brain, these lines transition into organized, orderly geometric shapes like cubes and spheres, symbolizing the transition from chaos to executive control. Floating around the silhouette are subtle, semi-transparent icons representing daily life: a clock face, a calendar page, a small briefcase, and a simplified house outline. The background is a clean, soft neutral tone to emphasize the central graphic. The lighting is focused and warm, suggesting clarity, focus, and the successful navigation of complex mental processes."
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🧠⬆️💼🏠❤️ Taking Charge of Adult ADHD: Proven Strategies to Succeed at Work, at Home, and in Relationships  
+![books-taking-charge-of-adult-adhd](../books-taking-charge-of-adult-adhd.jpg)  
 [🛒 Taking Charge of Adult ADHD: Proven Strategies to Succeed at Work, at Home, and in Relationships. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3SBUTH3)  
   
 ## 🤖 AI Summary  

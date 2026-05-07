@@ -11,6 +11,7 @@ image_date: 2026-04-11T06:29:24Z
 image_model: "@cf/black-forest-labs/flux-1-schnell"
 image_prompt: "A clean, minimalist isometric illustration featuring a sleek, glowing robotic arm meticulously testing a complex mechanical puzzle box. The arm is surrounded by a cloud of floating, abstract geometric shapes—cubes, spheres, and pyramids—representing diverse, randomized test inputs. A beam of light scans the box, highlighting a single, small, glowing fault point being isolated and shrunk down to a precise, singular dot by a digital magnifying lens. The color palette uses a professional tech aesthetic: deep navy and slate grey backgrounds contrasted with vibrant neon cyan and emerald green accents to symbolize precision, logic, and successful verification. The overall composition is balanced and clean, emphasizing themes of automation, structural integrity, and the systematic discovery of edge cases."
 link_analysis_version: "2"
+updated: 2026-05-07T11:44:14
 ---
 [Home](../index.md) > [Software](./index.md)  
 # 🚄🎲✅ QuickCheck  
@@ -147,3 +148,11 @@ QuickCheck was originally developed for the Haskell programming language to addr
   
 * "Property-Based Testing with QuickCheck" - [YouTube](https://www.youtube.com/results?search_query=property+based+testing+quickcheck) 📺  
 * "Haskell QuickCheck" - [YouTube](https://www.youtube.com/results?search_query=haskell+quickcheck) 📺  
+  
+## 🦋 Bluesky    
+<blockquote class="bluesky-embed" data-bluesky-uri="at://did:plc:i4yli6h7x2uoj7acxunww2fc/app.bsky.feed.post/3mlb5at47uy2o" data-bluesky-cid="bafyreihm4qjnjyrcx7nzh4gyfjpmwpti62uvnp6nau6jxntgrnzoczgxba"><p>🚄🎲✅ QuickCheck  
+  
+#AI Q: 🧪 Better to write specific test cases or let automation find the edge cases for you?  
+  
+🧪 Property-Based Testing | 🛡️ Software Verification | 🎲 Randomized Inputs | 🔍  
+https://bagrounds.org/software/quickcheck</p>&mdash; <a href="https://bsky.app/profile/did:plc:i4yli6h7x2uoj7acxunww2fc?ref_src=embed">Bryan Grounds (@bagrounds.bsky.social)</a> <a href="https://bsky.app/profile/did:plc:i4yli6h7x2uoj7acxunww2fc/post/3mlb5at47uy2o?ref_src=embed">2026-05-07T11:44:28.000Z</a></blockquote><script async src="https://embed.bsky.app/static/embed.js" charset="utf-8"></script>

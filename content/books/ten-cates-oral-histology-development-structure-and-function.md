@@ -9,9 +9,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-15T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-05-06T09:01:15Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: "A high-resolution, artistic composition featuring a cross-section of a human molar emerging from the gingiva. The image is split: one half shows a realistic, anatomical rendering of the tooth, gum tissue, and underlying alveolar bone, while the other half transitions into a stylized, vibrant microscopic view. This side displays intricate cellular structures, such as odontoblasts, enamel rods, and collagen fibers, rendered in soft, glowing neon hues against a dark, deep-blue background. Fine, translucent golden lines trace the developmental pathways of the tooth, connecting the microscopic cellular layers to the macroscopic structure. The overall aesthetic is clean, professional, and scientific, evoking the precision of modern histology and developmental biology."
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🦷👶 Ten Cate's Oral Histology: Development, Structure, and Function  
+![books-ten-cates-oral-histology-development-structure-and-function](../books-ten-cates-oral-histology-development-structure-and-function.jpg)  
 [🛒 Ten Cate's Oral Histology: Development, Structure, and Function. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4mEPBZf)  
   
 ## 📖 Book Report: Ten Cate's Oral Histology: Development, Structure, and Function  

@@ -10,9 +10,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-24T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-05-06T16:00:21Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A surreal, cinematic wide shot of a crumbling neoclassical marble monument, reminiscent of the Lincoln Memorial, silhouetted against a dark, stormy twilight sky. In the foreground, a single, ornate golden theater mask lies face-down in the dirt, partially shattered. Tangled, glowing neon-blue threads—symbolizing globalized digital networks—snare the columns of the monument, pulling them slightly inward toward a central point of collapse. Scattered around the base are faded, discarded symbols of prosperity, such as a single tarnished gold coin and a rusted military medal. The lighting is moody and high-contrast, with long, dramatic shadows stretching across a barren, cracked landscape, evoking a sense of lost grandeur and the hollow aftermath of a failed empire.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🎭🇺🇸💸🏆 The Age of Illusions: How America Squandered Its Cold War Victory  
+![books-the-age-of-illusions-how-america-squandered-its-cold-war-victory](../books-the-age-of-illusions-how-america-squandered-its-cold-war-victory.jpg)  
 [🛒 The Age of Illusions: How America Squandered Its Cold War Victory. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/45HznYi)  
   
 🪄🌎🪖🗽 America's post-Cold War era, marked by triumphalism, birthed illusions of globalized neoliberalism, militarized hegemony, and unchecked freedom, ultimately leading to deep domestic divisions and the rise of figures like Donald Trump.  

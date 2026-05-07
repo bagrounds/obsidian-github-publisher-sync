@@ -10,9 +10,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-15T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-05-06T18:45:57Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A minimalist illustration featuring a dark, stylized silhouette of a child sitting alone on a park bench. The child is hunched over, illuminated only by the harsh, cool-toned blue glow emanating from a smartphone held in their hands. Behind the child, the background is a soft, blurred-out landscape of an empty, sunlit playground with an abandoned swing set, representing the lost world of outdoor play. The contrast between the vibrant, warm, natural light of the outdoors and the cold, artificial light of the screen highlights the shift from a physical to a digital childhood. The overall mood is somber and reflective, emphasizing isolation and the digital tether.
 ---
 [Home](../index.md) > [Books](./index.md) | [🧠🤝🐘 Jonathan Haidt](../people/jonathan-haidt.md)  
 # 📱😥 The Anxious Generation: How the Great Rewiring of Childhood Is Causing an Epidemic of Mental Illness  
+![books-the-anxious-generation-how-the-great-rewiring-of-childhood-is-causing-an-epidemic-of-mental-illness](../books-the-anxious-generation-how-the-great-rewiring-of-childhood-is-causing-an-epidemic-of-mental-illness.jpg)  
 [🛒 The Anxious Generation: How the Great Rewiring of Childhood Is Causing an Epidemic of Mental Illness. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/488y2M5)  
   
 ## 📚 Book Report: 📱 The Anxious Generation: How the Great Rewiring of Childhood Is Causing an Epidemic of Mental Illness  

@@ -10,9 +10,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-24T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-05-06T07:09:55Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A high-contrast, conceptual illustration featuring a blurred urban cityscape at twilight. In the foreground, a pair of deep blue police handcuffs rests on a weathered concrete surface, but the metal links of the chain are replaced by a complex, tangled knot of golden twine or yarn. The lighting is moody, with cool blue tones dominating the shadows of the alleyway, while a faint, warm glow from a distant streetlamp catches the texture of the knot. The composition is clean and minimalist, focusing on the metaphor of the tangled nature of law enforcement, creating a sense of systemic complexity and human tension without any specific figures or text.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 👮‍♀️🪢 Tangled Up in Blue: Policing the American City  
+![books-tangled-up-in-blue-policing-the-american-city](../books-tangled-up-in-blue-policing-the-american-city.jpg)  
 [🛒 Tangled Up in Blue: Policing the American City. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4jzO4SS)  
   
 👮‍♀️🏙️⚖️ A law professor's firsthand account of becoming a reserve police officer in Washington D.C., exposing the complex, often contradictory realities of urban policing, blending memoir with critical analysis to challenge simplistic narratives about law enforcement.  

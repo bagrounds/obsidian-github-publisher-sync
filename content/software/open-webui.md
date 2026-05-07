@@ -11,6 +11,7 @@ image_date: 2026-04-11T03:09:25Z
 image_model: "@cf/black-forest-labs/flux-1-schnell"
 image_prompt: A sleek, minimalist illustration featuring a glowing, translucent central hub node connected to various abstract digital icons—such as gears, chat bubbles, and code brackets—representing diverse LLM backends. The aesthetic is clean and modern, using a sophisticated color palette of deep navy, electric blue, and soft white. The central hub radiates subtle light, suggesting a command center or orchestration layer. The background is a clean, dark gradient, emphasizing the connectivity and modular nature of the interface. The overall composition is symmetrical and professional, conveying a sense of technical precision, accessibility, and open-source innovation.
 link_analysis_version: "2"
+updated: 2026-05-06T23:34:37
 ---
 [Home](../index.md) > [Software](./index.md)  
 # 🌐🔓💻 Open WebUI  
@@ -125,3 +126,11 @@ Open WebUI emerged from the growing need for a versatile and self-hostable inter
 ### Links to Official and Supportive Documentation 📄  
   
 * Open WebUI Documentation (GitHub README): [https://github.com/open-webui/open-webui/blob/main/README.md](https://github.com/open-webui/open-webui/blob/main/README.md) 📝  
+  
+## 🦋 Bluesky    
+<blockquote class="bluesky-embed" data-bluesky-uri="at://did:plc:i4yli6h7x2uoj7acxunww2fc/app.bsky.feed.post/3ml7uhybqhq2o" data-bluesky-cid="bafyreia5m3qnuh3mxpmstvyequzgjlzkc4ayry3p7d3fnvghh37s4k62ju"><p>🌐🔓💻 Open WebUI  
+  
+#AI Q: 🤖 Is privacy worth the effort of self hosting your own AI chat interface?  
+  
+🧠 Language Models | 🐳 Container Deployment | 🏠 Local AI  
+https://bagrounds.org/software/open-webui</p>&mdash; <a href="https://bsky.app/profile/did:plc:i4yli6h7x2uoj7acxunww2fc?ref_src=embed">Bryan Grounds (@bagrounds.bsky.social)</a> <a href="https://bsky.app/profile/did:plc:i4yli6h7x2uoj7acxunww2fc/post/3ml7uhybqhq2o?ref_src=embed">2026-05-06T23:34:45.000Z</a></blockquote><script async src="https://embed.bsky.app/static/embed.js" charset="utf-8"></script>

@@ -10,9 +10,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-28T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-05-06T18:45:41Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: "A cross-section of a vibrant underground ant nest, meticulously detailed. In the central chamber, a regal queen ant is surrounded by a cluster of eggs and larvae, attended by diligent workers. Intricate tunnels branch out, teeming with worker ants engaged in diverse tasks: some carrying tiny food particles, others excavating, and a few standing guard. Subtle, shimmering trails of pheromones emanate from an ant heading towards the surface. The earthy tones of the soil contrast with the amber and reddish-brown hues of the ants, highlighting their collective energy and the complex architecture of their superorganism."
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🐜 The Ants  
+![books-the-ants](../books-the-ants.jpg)  
 [🛒 The Ants. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/480Adjd)  
   
 🐜 A Pulitzer-winning, definitive zoology masterpiece that comprehensively details the intricate anatomy, physiology, social organization, and ecology of ant societies, brilliantly establishing them as complex superorganisms and foundational models for sociobiology. 👑🌿  

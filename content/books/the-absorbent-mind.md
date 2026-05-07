@@ -10,9 +10,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-24T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-05-06T15:07:24Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A minimalist, high-contrast illustration depicting a stylized human silhouette of a young child’s head in profile. Inside the head, instead of a brain, is a vibrant, glowing sponge-like structure soaking up colorful, floating geometric shapes and symbols representing letters, musical notes, and nature elements. The background is a soft, warm neutral tone, emphasizing the internal glow. The art style is clean and modern, using gentle gradients and soft lighting to evoke a sense of curiosity, wonder, and organic intellectual growth. There are no harsh edges; the composition is balanced and serene, focusing on the concept of effortless, natural learning.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🧽🧠 The Absorbent Mind  
+![books-the-absorbent-mind](../books-the-absorbent-mind.jpg)  
 [🛒 The Absorbent Mind. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3MB9FhO)  
   
 🚼 Children from birth to six years old effortlessly absorb knowledge, language, culture, and social norms from their environment, like a sponge, guided by innate sensitive periods.  

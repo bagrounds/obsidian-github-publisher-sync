@@ -12,9 +12,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-16T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-05-07T03:19:49Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A stylized, minimalist illustration featuring a balanced pair of golden scales centered against a soft, neutral background. On one side of the scale sits a weathered, classical parchment scroll representing Rights, while the other side holds ten distinct, interconnected geometric shapes or stylized icons—each representing a civic habit—that perfectly counterbalance the scroll. The lighting is warm and steady, suggesting stability and thoughtful contemplation. The composition uses clean lines and a professional, modern aesthetic to evoke themes of justice, civic duty, and democratic equilibrium, avoiding any cluttered details to maintain a sense of solemnity and importance.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 📜🤝 The Bill of Obligations: The Ten Habits of Good Citizens  
+![books-the-bill-of-obligations](../books-the-bill-of-obligations.jpg)  
 [🛒 The Bill of Obligations: The Ten Habits of Good Citizens. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3Hlupax)  
   
 ## 📖 Book Report: The Bill of Obligations: The Ten Habits of Good Citizens by Richard Haass  

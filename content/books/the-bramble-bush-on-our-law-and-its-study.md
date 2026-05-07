@@ -11,9 +11,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-25T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-05-07T08:11:07Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A dense, intricate thicket of brambles occupies the center of the frame, its thorny, tangled branches rendered in deep charcoal and earthy greens. Piercing through the center of the chaotic thorns is a perfectly straight, sharp-edged wooden gavel, standing vertically like a spine. The lighting is dramatic and moody, casting long, sharp shadows that suggest the complexity of legal interpretation. Behind the thicket, a faint, blurred silhouette of a traditional stone courthouse column is visible through the gaps in the thorns, representing the intersection of rigid structure and the unpredictable, messy reality of the law. The style is a mix of fine-line ink illustration and textured charcoal, emphasizing the contrast between the formal legal system and the tangled, organic nature of practice.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 📜🌿⚖️ The Bramble Bush: On Our Law and Its Study  
+![books-the-bramble-bush-on-our-law-and-its-study](../books-the-bramble-bush-on-our-law-and-its-study.jpg)  
 [🛒 The Bramble Bush: On Our Law and Its Study. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3HlmGsZ)  
   
 ## 📖 Book Report: 🌳 The Bramble Bush: On Our Law and Its Study  

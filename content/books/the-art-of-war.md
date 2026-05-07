@@ -10,9 +10,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-16T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-05-06T23:32:25Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A minimalist, high-contrast illustration featuring a weathered, ancient bamboo scroll partially unfurled across a dark, textured surface. Resting atop the scroll is a single, sharp black calligraphy brush positioned diagonally, casting a long, deliberate shadow. In the background, a faint, ethereal outline of a traditional Chinese mountain landscape fades into mist. The color palette is strictly limited to deep ink blacks, aged parchment creams, and subtle charcoal grays. The composition emphasizes balance, precision, and a sense of quiet, calculated power, evoking the timeless strategic wisdom of the text without relying on literal depictions of warfare.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🎨⚔️ The Art of War  
+![books-the-art-of-war](../books-the-art-of-war.jpg)  
 [🛒 The Art of War. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4dPrmDn)  
   
 ## ⚔️ The Art of War: Book Report  

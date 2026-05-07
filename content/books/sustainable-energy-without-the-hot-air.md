@@ -12,9 +12,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-19T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-05-05T23:34:14Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A clean, minimalist illustration featuring a series of stacked, translucent glass blocks of varying heights, each representing a different energy source like wind, solar, and geothermal. The blocks are arranged on a simple white surface against a soft, neutral-toned background. Above the stacks, a precise, floating mathematical scale balances perfectly, symbolizing the concept of energy supply meeting demand. The overall aesthetic is scientific, crisp, and uncluttered, utilizing a cool color palette of teals, light blues, and soft grays to evoke a sense of objective, data-driven clarity. There is no clutter or background noise, focusing entirely on the geometric precision of the energy stacks and the equilibrium of the scale.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🌞🌬️🌊🌋 Sustainable Energy - Without the Hot Air  
+![books-sustainable-energy-without-the-hot-air](../books-sustainable-energy-without-the-hot-air.jpg)  
 [🛒 Sustainable Energy - Without the Hot Air. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4dJZuAP)  
   
 ## 📖 Book Report: ⚡ Sustainable Energy - Without the Hot Air  

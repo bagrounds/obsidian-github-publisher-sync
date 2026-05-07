@@ -10,9 +10,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-18T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-05-07T13:42:32Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: "A vibrant illustration featuring a winding running track or path. On the path, three distinct figures are in motion: a small child with energetic strides, a determined adult runner, and an older individual demonstrating strength and experience. All are running in the same direction, suggesting a journey. In the background, a subtle, stylized finish line arch or a faint glow hinting at a sun, with a delicate laurel wreath woven into its design, symbolizing victory and achievement across all ages. The color palette is bright and encouraging, with warm yellows, greens, and blues."
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🏃🏆👵 The Complete Guide to Running: How to Be a Champion from 9 to 90  
+![books-the-complete-guide-to-running](../books-the-complete-guide-to-running.jpg)  
 [🛒 The Complete Guide to Running. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/44AQnQ2)  
   
 ## 📚 Book Report: *The Complete Guide to Running: How to Be a Champion from 9 to 90* by Earl W. Fee  

@@ -12,9 +12,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-16T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-05-07T11:41:38Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A minimalist, conceptual illustration featuring a stylized, vibrant bridge spanning across a divide. The bridge is constructed from diverse, interlocking geometric shapes representing different sectors of society—community, environment, and infrastructure. Below the bridge, a group of diverse, faceless figures are engaged in various constructive activities like planting trees, repairing a structure, and teaching, symbolizing purposeful labor. Above, a soft, golden sunrise illuminates the scene, casting a warm glow over the entire landscape. The color palette uses deep blues and slate grays for the background to represent the unemployment gap, contrasted with warm oranges, yellows, and fresh greens for the bridge and the people, symbolizing stability, growth, and the dignity of work. The style is clean, modern, and vector-inspired.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 💼✅ The Case for a Job Guarantee  
+![books-the-case-for-a-job-guarantee](../books-the-case-for-a-job-guarantee.jpg)  
 [🛒 The Case for a Job Guarantee. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/47iuypP)  
   
 📢 Persistent unemployment is a policy choice, not an economic necessity. A 🏦 federally funded, locally administered job guarantee provides a 🔄 permanent counter-cyclical stabilizer and a ⚖️ foundational human right to decent, living-wage work.  

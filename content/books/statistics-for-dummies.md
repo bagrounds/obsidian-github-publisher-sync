@@ -8,11 +8,16 @@ Author:
 tags:
 affiliate link: https://amzn.to/4mLhZbV
 link_analysis_model: gemini-3.1-flash-lite-preview
-link_analysis_time: 2026-04-09T00:00:00Z
+link_analysis_time: 2026-04-24T00:00:00Z
 force_analyze_links: false
+link_analysis_version: "2"
+image_date: 2026-05-05T19:46:41Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A clean, minimalist illustration featuring a cluttered, chaotic pile of colorful 3D geometric shapes—spheres, cubes, and pyramids—gradually transforming into an organized, perfectly aligned bar chart on the right side of the frame. In the center, a simple, friendly magnifying glass rests on the data, highlighting a clear, glowing bell curve pattern. The background is a soft, professional matte blue, providing a calm contrast to the vibrant, multi-colored data elements. The lighting is bright and even, casting soft shadows to give the objects depth, symbolizing the transition from overwhelming raw information to structured, understandable insight. The overall aesthetic is modern, academic, and approachable.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 📊🫠 Statistics for Dummies  
+![books-statistics-for-dummies](../books-statistics-for-dummies.jpg)  
 [🛒 Statistics for Dummies. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4mLhZbV)  
   
 ## 🤖 AI Summary  

@@ -9,9 +9,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-15T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-05-05T20:35:31Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A clean, minimalist workspace featuring a high-quality tablet displaying a sleek, vibrant data visualization—such as a simplified bar chart or a clean trend line—with a single, bold accent color highlighting a key insight. To the side, a leather-bound notebook and a fountain pen rest on a modern wooden desk, suggesting the bridge between human narrative and analytical precision. The background is softly blurred, emphasizing the screen. The lighting is bright and professional, casting gentle shadows that create depth. The overall aesthetic is professional, uncluttered, and sophisticated, reflecting the concept of distilling complex data into a clear, persuasive story.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 📖📊📈 Storytelling with Data: A Data Visualization Guide for Business Professionals  
+![books-storytelling-with-data-a-data-visualization-guide-for-business-professionals](../books-storytelling-with-data-a-data-visualization-guide-for-business-professionals.jpg)  
 [🛒 Storytelling with Data: A Data Visualization Guide for Business Professionals. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4kOCbZa)  
   
 ## 📚 Book Report: 📊 Storytelling with Data: 📈 A Data Visualization Guide for Business Professionals  

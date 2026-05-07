@@ -10,9 +10,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-18T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-05-07T10:57:06Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A split-screen composition featuring a high-contrast, minimalist aesthetic. On the left side, a stylized, weathered scroll or ancient parchment rests on a dark wooden desk, illuminated by a single, sharp spotlight. On the right side, a modern, sleek fountain pen and a pair of professional reading glasses are positioned on a clean, white surface, casting long, dramatic shadows. The two sides are divided by a thin, vertical line, symbolizing a clash between traditional religious texts and modern critical inquiry. The color palette is restricted to deep charcoal, crisp white, and subtle metallic gold accents, conveying an atmosphere of academic investigation, debate, and intellectual rigor.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🧑‍🏫🆚⛪ The Case Against The Case For Christ: A New Testament Scholar Refutes the Reverend Lee Strobel  
+![books-the-case-against-the-case-for-christ-a-new-testament-scholar-refutes-the-reverend-lee-strobel](../books-the-case-against-the-case-for-christ-a-new-testament-scholar-refutes-the-reverend-lee-strobel.jpg)  
 [🛒 The Case Against The Case For Christ: A New Testament Scholar Refutes the Reverend Lee Strobel. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/46jyS7D)  
   
 ## 📚 Book Report: The Case Against The Case For Christ  

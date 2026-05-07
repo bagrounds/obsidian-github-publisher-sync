@@ -10,9 +10,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-16T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-05-06T23:32:46Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A rustic 18th-century writing desk sits bathed in warm, soft candlelight. On the desk lies an open, weathered leather-bound journal with handwritten quill ink script visible on the pages. Beside the journal, a brass compass, a pair of wire-rimmed spectacles, and a single flickering candle in an iron holder evoke the Enlightenment era. In the background, partially out of focus, a small electrical kite silhouette is subtly etched into the grain of the wooden tabletop. The lighting is moody and intellectual, with deep shadows and golden highlights that suggest the quiet, studious atmosphere of a colonial library. The overall aesthetic is timeless, scholarly, and grounded in historical American character.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # ⚡️ The Autobiograpy of Benjamin Franklin  
+![books-the-autobiography-of-benjamin-franklin](../books-the-autobiography-of-benjamin-franklin.jpg)  
 [🛒 The Autobiograpy of Benjamin Franklin. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4m4BISH)  
   
 ## 📖 Book Report: The Autobiography of Benjamin Franklin  

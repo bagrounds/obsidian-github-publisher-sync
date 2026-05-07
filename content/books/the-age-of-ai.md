@@ -11,9 +11,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-16T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-05-06T15:59:43Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A high-contrast, conceptual illustration featuring a sleek, glowing neural network that transitions from a digital, crystalline grid into the silhouette of a human brain. The background is a deep, atmospheric navy blue, suggesting the vastness of space or the digital void. Floating around the central motif are subtle, abstract geometric symbols representing global connectivity—like faint, ethereal arcs mirroring the Earth’s meridian lines. A soft, warm light emanates from the center of the brain, casting gentle illumination on the surrounding dark particles. The overall aesthetic is minimalist, sophisticated, and intellectual, evoking a sense of profound technological evolution and philosophical inquiry.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🔮🤖 The Age of AI  
+![books-the-age-of-ai](../books-the-age-of-ai.jpg)  
 [🛒 The Age of AI. As an Amazon Associate I earn from qualifying purchases.](https://www.amazon.com/dp/0316273805?tag=bagrounds-20)  
   
 ## 🤖 AI Summary  

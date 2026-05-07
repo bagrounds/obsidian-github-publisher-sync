@@ -10,9 +10,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-18T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-05-07T11:41:44Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A close-up, high-contrast composition featuring a vintage leather-bound journal resting on a dark wooden desk. Beside the journal lies a classic fountain pen, an old-fashioned magnifying glass, and a pair of worn spectacles. A single, soft spotlight illuminates the scene from the side, casting long, dramatic shadows across the desk surface. In the background, slightly out of focus, stands a simple, rustic wooden cross, partially shrouded in dim light. The overall color palette is dominated by deep mahogany, warm leather tones, and muted greys, evoking an atmosphere of serious, quiet, and meticulous historical investigation.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 📰❓✝️ The Case for Christ: A Journalist's Personal Investigation of the Evidence for Jesus  
+![books-the-case-for-christ-a-journalists-personal-investigation-of-the-evidence-for-jesus](../books-the-case-for-christ-a-journalists-personal-investigation-of-the-evidence-for-jesus.jpg)  
 [🛒 The Case for Christ: A Journalist's Personal Investigation of the Evidence for Jesus. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4nFP2Oo)  
   
 ## 📖 Book Report: The Case for Christ: A Journalist's Personal Investigation of the Evidence for Jesus  

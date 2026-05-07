@@ -10,9 +10,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-16T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-05-07T01:46:11Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A birds-eye view of a suburban neighborhood where the houses are divided into two distinct, contrasting color palettes. One side of the street features homes in cool, muted blues and greys, while the other side features homes in warm, vibrant reds and oranges. A physical barrier, such as a cracked, overgrown fence or a jagged fissure in the asphalt road, runs down the center of the image, separating the two groups. The trees and lawns on the blue side are manicured and uniform, mirroring the style of the red side, yet they never touch or overlap. The lighting is dramatic, casting long shadows that emphasize the stark divide, creating a sense of isolation and tension between the two halves of the community.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🏘️↔️ The Big Sort: Why the Clustering of Like-Minded America Is Tearing Us Apart  
+![books-the-big-sort-why-the-clustering-of-like-minded-america-is-tearing-us-apart](../books-the-big-sort-why-the-clustering-of-like-minded-america-is-tearing-us-apart.jpg)  
 [🛒 The Big Sort: Why the Clustering of Like-Minded America Is Tearing Us Apart. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4nNmpje)  
   
 ## 📚 Book Report: The Big Sort: Why the Clustering of Like-Minded America Is Tearing Us Apart  

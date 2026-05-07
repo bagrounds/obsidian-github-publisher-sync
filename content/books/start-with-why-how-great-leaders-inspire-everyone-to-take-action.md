@@ -10,9 +10,13 @@ force_analyze_links: false
 link_analysis_time: 2026-04-15T00:00:00Z
 link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_version: "2"
+image_date: 2026-05-05T19:46:38Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A minimalist illustration featuring three concentric circles, representing the Golden Circle. The innermost circle is a vibrant, glowing golden hue, symbolizing the Why. The middle and outer rings are rendered in subtle, muted grey tones, creating a clear visual hierarchy. A single, stylized arrow originates from the center of the golden circle and points outward, piercing through the outer rings to signify movement and inspiration. The background is a clean, deep navy blue, providing a high-contrast backdrop that makes the golden core stand out. The lighting is soft and focused, emphasizing the center as the source of illumination for the entire composition. No text or symbols are present, maintaining a clean, professional, and abstract aesthetic.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # ❓🎯 Start with Why: How Great Leaders Inspire Everyone to Take Action  
+![books-start-with-why-how-great-leaders-inspire-everyone-to-take-action](../books-start-with-why-how-great-leaders-inspire-everyone-to-take-action.jpg)  
 [🛒 Start with Why: How Great Leaders Inspire Everyone to Take Action. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/44rTF8a)  
   
 ## 📖 Book Report: 🚀 Start with Why: How Great Leaders Inspire Everyone to Take Action  

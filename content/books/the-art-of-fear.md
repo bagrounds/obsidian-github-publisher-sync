@@ -10,9 +10,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-19T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-05-06T19:47:07Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A serene, high-angle view of a person standing at the edge of a vast, misty mountain cliff. Instead of a dark or threatening atmosphere, the scene is illuminated by soft, golden sunrise light. The person is not cowering or fighting; they are standing in a relaxed, open stance with arms slightly outstretched, as if embracing the vast, swirling clouds below. The clouds—representing fear—are depicted as fluid, translucent ribbons of energy rather than storm-like obstacles. The color palette is calming, dominated by soft blues, warm golds, and ethereal whites, emphasizing the concept of flow and harmony rather than conflict. The overall composition suggests a peaceful integration of human presence with a powerful, natural force.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🎨😨 The Art of Fear: Why Conquering Fear Won't Work and What to Do Instead  
+![books-the-art-of-fear](../books-the-art-of-fear.jpg)  
 [🛒 The Art of Fear: Why Conquering Fear Won't Work and What to Do Instead. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4mIVTqN)  
   
 ## 🤖 AI Summary  

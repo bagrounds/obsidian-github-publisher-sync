@@ -5,11 +5,14 @@ aliases:
 title: 🔀 Convergence
 URL: https://bagrounds.org/convergence
 backlinks: false
-updated: 2026-05-05T07:30:37-07:00
+updated: 2026-05-07T21:33:51-07:00
 ---
 [🏡 Home](../index.md)  
-# 🔀 Convergence (21)  
+# 🔀 Convergence (24)  
 - [🔀 Convergence — AGENTS.md](./AGENTS.md)  
+- [2026-05-07 | 🔀 Architecture of Collective Intent 🔀](./2026-05-07-architecture-of-collective-intent.md)  
+- [2026-05-06 | 🔀 The Emergent Architecture of Collective Intent 🔀](./2026-05-06-the-emergent-architecture-of-collective-intent.md)  
+- [2026-05-05 | 🔀 🧭 The Internalized Compass: Governing Flourishing Systems 🔀](./2026-05-05-the-internalized-compass-governing-flourishing-systems.md)  
 - [2026-05-04 | 🔀 🌉 The Signal and the Sanctuary: Navigating Truth in the Collective 🔀](./2026-05-04-the-signal-and-the-sanctuary-navigating-truth-in-the-collective.md)  
 - [2026-05-03 | 🔀 📜 The Invariants of Purpose: Crafting Digital Constitutions and Cultivating Living Roots 🔀](./2026-05-03-the-invariants-of-purpose-crafting-digital-constitutions-and-cultivating-living-roots.md)  
 - [2026-05-02 | 🔀 🕸️ The Architecture of Coherence: Orchestration, Emergence, and the Agency Mesh 🔀](./2026-05-02-the-architecture-of-coherence-orchestration-emergence-and-the-agency-mesh.md)  

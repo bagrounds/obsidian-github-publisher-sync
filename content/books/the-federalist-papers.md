@@ -10,9 +10,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-15T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-05-08T00:39:43Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A high-angle, cinematic still-life composition featuring a stack of aged, weathered parchment documents resting on a dark, polished mahogany desk. The top document displays a quill pen laid diagonally across it, with a flickering candle casting a warm, dramatic glow across the textured paper. In the soft-focus background, a pair of brass spectacles sits beside a small, weathered leather-bound volume. The lighting is chiaroscuro-inspired, emphasizing deep shadows and rich, golden highlights to evoke an atmosphere of 18th-century intellectual deliberation and the weight of historical significance. The color palette consists of deep browns, creams, and muted gold tones.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🇺🇸📜 The Federalist Papers  
+![books-the-federalist-papers](../books-the-federalist-papers.jpg)  
 [🛒 The Federalist Papers. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3Gkfptm)  
   
 ## 📖 Book Report: The Federalist Papers  

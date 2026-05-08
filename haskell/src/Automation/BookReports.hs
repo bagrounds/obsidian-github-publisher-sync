@@ -119,7 +119,7 @@ processOrDiscover context affiliateTag today booksIndexPath pending = do
       generateForTitle context affiliateTag today booksIndexPath
         title (Pending.pendingAsin pending)
     Nothing -> do
-      logMsg "  🔍 No pending book — discovering candidates from recent reflections"
+      logMsg "  🔍 No pending book — scanning existing book reports for plain-text recommendations"
       discoverAndStart context affiliateTag today booksIndexPath
 
 discoverAndStart
@@ -129,28 +129,26 @@ discoverAndStart
   -> FilePath
   -> IO ()
 discoverAndStart context affiliateTag today booksIndexPath = do
-  let vaultDir       = Context.vaultDir context
-      booksDir       = vaultDir </> "books"
-      reflectionsDir = vaultDir </> "reflections"
+  let vaultDir = Context.vaultDir context
+      booksDir = vaultDir </> "books"
 
-  knownSlugs       <- Discovery.listExistingBookSlugs booksDir
-  recentReflections <- Discovery.listRecentReflectionFiles reflectionsDir
+  knownSlugs        <- Discovery.listExistingBookSlugs booksDir
+  existingReports   <- Discovery.listExistingBookReportFiles booksDir
   logMsg $ "  📚 Known book slugs: " <> T.pack (show (Set.size knownSlugs))
-  logMsg $ "  📅 Reflections in window (last " <> T.pack (show Discovery.recentReflectionWindow)
-            <> "): " <> T.pack (show (length recentReflections))
+  logMsg $ "  📖 Existing book reports to scan: " <> T.pack (show (length existingReports))
 
-  candidates <- collectAcrossFiles knownSlugs recentReflections
+  candidates <- collectAcrossFiles knownSlugs existingReports
   logMsg $ "  🎯 Candidates discovered: " <> T.pack (show (length candidates))
 
   case take maxBooksPerRun candidates of
     [] -> do
-      logMsg "  ⏭️  Nothing to generate — every recently linked book already has a page."
+      logMsg "  ⏭️  Nothing to generate — no plain-text book recommendations missing a page."
       logMsg "✅ book-reports"
     (firstCandidate : _) -> do
       let title = candidateTitle firstCandidate
       logMsg $ "  📝 Selected candidate: " <> unBookTitle title
                 <> " (slug=" <> unBookSlug (candidateSlug firstCandidate)
-                <> ", from=" <> T.pack (candidateSourceFile firstCandidate) <> ")"
+                <> ", recommended-by=" <> T.pack (candidateSourceFile firstCandidate) <> ")"
       Pending.writePendingState booksIndexPath
         (Pending.emptyPendingState { Pending.pendingTitle = Just title })
       generateForTitle context affiliateTag today booksIndexPath title Nothing
@@ -159,10 +157,9 @@ collectAcrossFiles :: Set.Set BookSlug -> [FilePath] -> IO [BookCandidate]
 collectAcrossFiles knownSlugs files =
   fmap concat (traverse scanOne files)
   where
-    scanOne reflectionPath = do
-      content <- TIO.readFile reflectionPath
-      let candidates = Discovery.extractBookCandidatesFromReflection knownSlugs reflectionPath content
-      pure candidates
+    scanOne reportPath = do
+      content <- TIO.readFile reportPath
+      pure (Discovery.extractCandidatesFromBookReport knownSlugs reportPath content)
 
 generateForTitle
   :: Context.AppContext

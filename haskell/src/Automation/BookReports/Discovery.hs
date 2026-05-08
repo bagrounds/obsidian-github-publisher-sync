@@ -1,56 +1,56 @@
 module Automation.BookReports.Discovery
   ( BookCandidate (..)
   , listExistingBookSlugs
-  , listRecentReflectionFiles
-  , extractBookCandidatesFromReflection
-  , recentReflectionWindow
-  , isReflectionFileName
+  , listExistingBookReportFiles
+  , extractCandidatesFromBookReport
   ) where
 
-import Data.Char (isDigit)
-import Data.List (sortOn)
+import Data.List (sort)
 import qualified Data.Maybe
 import Data.Maybe (mapMaybe)
-import Data.Ord (Down (..))
 import qualified Data.Set as Set
 import Data.Text (Text)
 import qualified Data.Text as T
 import System.Directory (doesDirectoryExist, listDirectory)
-import System.FilePath (takeBaseName, (</>))
+import System.FilePath ((</>))
 
-import Automation.BookReports.Types (BookSlug, BookTitle, mkBookSlug, mkBookTitle)
+import Automation.Text (isEmojiOrSpace)
+import Automation.BookReports.Types
+  ( BookAuthor
+  , BookSlug
+  , BookTitle
+  , mkBookAuthor
+  , mkBookSlug
+  , mkBookTitle
+  , slugFromTitle
+  )
+
+minPlainTitleLength :: Int
+minPlainTitleLength = 4
+
+maxAuthorLength :: Int
+maxAuthorLength = 100
 
 data BookCandidate = BookCandidate
   { candidateSlug       :: BookSlug
   , candidateTitle      :: BookTitle
+  , candidateAuthor     :: Maybe BookAuthor
   , candidateSourceLine :: Text
   , candidateSourceFile :: FilePath
   } deriving (Eq, Show)
 
-recentReflectionWindow :: Int
-recentReflectionWindow = 7
-
-isReflectionFileName :: FilePath -> Bool
-isReflectionFileName path =
-  let base = takeBaseName path
-  in length base == 10
-     && all isExpectedChar (zip [0 :: Int ..] base)
-  where
-    isExpectedChar (idx, character)
-      | idx == 4 || idx == 7 = character == '-'
-      | otherwise            = isDigit character
-
-listRecentReflectionFiles :: FilePath -> IO [FilePath]
-listRecentReflectionFiles reflectionsDir = do
-  exists <- doesDirectoryExist reflectionsDir
+listExistingBookReportFiles :: FilePath -> IO [FilePath]
+listExistingBookReportFiles booksDir = do
+  exists <- doesDirectoryExist booksDir
   if not exists
     then pure []
     else do
-      entries <- listDirectory reflectionsDir
-      let dateNamedReflections = filter isReflectionFileName entries
-          mostRecentFirst      = sortOn (Down . takeBaseName) dateNamedReflections
-          recent               = take recentReflectionWindow mostRecentFirst
-      pure (fmap (reflectionsDir </>) recent)
+      entries <- listDirectory booksDir
+      let reports = filter isBookReportFileName entries
+      pure (fmap (booksDir </>) (sort reports))
+  where
+    isBookReportFileName filename =
+      T.isSuffixOf ".md" (T.pack filename) && filename /= "index.md"
 
 listExistingBookSlugs :: FilePath -> IO (Set.Set BookSlug)
 listExistingBookSlugs booksDir = do
@@ -63,112 +63,101 @@ listExistingBookSlugs booksDir = do
   where
     filenameToBookSlug filename =
       case T.stripSuffix ".md" (T.pack filename) of
-        Nothing                  -> Nothing
-        Just "index"             -> Nothing
-        Just stem                -> rightToMaybe (mkBookSlug (T.toLower stem))
+        Nothing      -> Nothing
+        Just "index" -> Nothing
+        Just stem    -> rightToMaybe (mkBookSlug (T.toLower stem))
 
-extractBookCandidatesFromReflection
+extractCandidatesFromBookReport
   :: Set.Set BookSlug
   -> FilePath
   -> Text
   -> [BookCandidate]
-extractBookCandidatesFromReflection knownSlugs sourcePath body =
-  let allLinks = concatMap parseBookLinksOnLine (T.lines body)
-      missing  = filter (\link -> not (Set.member (linkSlug link) knownSlugs)) allLinks
-  in fmap toCandidate missing
-  where
-    toCandidate parsed =
-      BookCandidate
-        { candidateSlug       = linkSlug parsed
-        , candidateTitle      = linkTitle parsed
-        , candidateSourceLine = T.strip (linkRawLine parsed)
-        , candidateSourceFile = sourcePath
-        }
+extractCandidatesFromBookReport knownSlugs sourcePath body =
+  let lineCandidates = mapMaybe (candidateFromBulletLine sourcePath) (T.lines body)
+      notKnown       = filter (\c -> not (Set.member (candidateSlug c) knownSlugs)) lineCandidates
+  in notKnown
 
-data ParsedLink = ParsedLink
-  { linkSlug    :: BookSlug
-  , linkTitle   :: BookTitle
-  , linkRawLine :: Text
-  } deriving (Eq, Show)
+candidateFromBulletLine :: FilePath -> Text -> Maybe BookCandidate
+candidateFromBulletLine sourcePath rawLine = do
+  bulletBody <- stripBulletMarker rawLine
+  let withoutLeadingDecoration = dropLeadingDecoration bulletBody
+  () <- guard' (not (lineAlreadyContainsLink withoutLeadingDecoration))
+  (titleText, afterTitle) <- extractTitleAndRemainder withoutLeadingDecoration
+  authorText              <- extractAuthor afterTitle
+  let cleanedTitleText = stripEmojisAndPunctuation titleText
+  () <- guard' (T.length cleanedTitleText >= minPlainTitleLength)
+  bookTitle  <- rightToMaybe (mkBookTitle cleanedTitleText)
+  bookAuthor <- rightToMaybe (mkBookAuthor authorText)
+  let slug = slugFromTitle bookTitle
+  pure BookCandidate
+    { candidateSlug       = slug
+    , candidateTitle      = bookTitle
+    , candidateAuthor     = Just bookAuthor
+    , candidateSourceLine = T.strip rawLine
+    , candidateSourceFile = sourcePath
+    }
 
-parseBookLinksOnLine :: Text -> [ParsedLink]
-parseBookLinksOnLine line =
-     parseMarkdownBookLinksOnLine line
-  <> parseWikiBookLinksOnLine line
+stripBulletMarker :: Text -> Maybe Text
+stripBulletMarker line =
+  let leftTrimmed = T.stripStart line
+  in T.stripPrefix "* " leftTrimmed
+     <> T.stripPrefix "- " leftTrimmed
+     <> T.stripPrefix "+ " leftTrimmed
 
-parseMarkdownBookLinksOnLine :: Text -> [ParsedLink]
-parseMarkdownBookLinksOnLine line =
-  mapMaybe extractFromOpenBracket (segmentsAfter '[' line)
-  where
-    extractFromOpenBracket segment = do
-      (titleText, afterTitle) <- splitOnFirst "](" segment
-      (urlText, _)            <- splitOnFirst ")"  afterTitle
-      slugText                <- extractBookSlugFromUrlPath urlText
-      slug                    <- rightToMaybe (mkBookSlug slugText)
-      title                   <- rightToMaybe (mkBookTitle titleText)
-      pure ParsedLink { linkSlug = slug, linkTitle = title, linkRawLine = line }
+dropLeadingDecoration :: Text -> Text
+dropLeadingDecoration =
+  T.dropWhile isEmojiOrSpace
 
-parseWikiBookLinksOnLine :: Text -> [ParsedLink]
-parseWikiBookLinksOnLine line =
-  mapMaybe extractFromDoubleBracket (segmentsAfterDoubleBracket line)
-  where
-    extractFromDoubleBracket segment = do
-      (target, _) <- splitOnFirst "]]" segment
-      let (rawTarget, alias) = case splitOnFirst "|" target of
-            Just (lhs, rhs) -> (lhs, rhs)
-            Nothing         -> (target, target)
-      slugText <- extractBookSlugFromTarget rawTarget
-      slug     <- rightToMaybe (mkBookSlug slugText)
-      title    <- rightToMaybe (mkBookTitle alias)
-      pure ParsedLink { linkSlug = slug, linkTitle = title, linkRawLine = line }
+lineAlreadyContainsLink :: Text -> Bool
+lineAlreadyContainsLink line =
+  T.isInfixOf "](" line || T.isInfixOf "[[" line
 
-segmentsAfter :: Char -> Text -> [Text]
-segmentsAfter delimiter input =
-  drop 1 (T.split (== delimiter) input)
+extractTitleAndRemainder :: Text -> Maybe (Text, Text)
+extractTitleAndRemainder line =
+  extractBoldThenBy line <> extractPlainThenBy line
 
-segmentsAfterDoubleBracket :: Text -> [Text]
-segmentsAfterDoubleBracket input =
-  drop 1 (T.splitOn "[[" input)
+extractBoldThenBy :: Text -> Maybe (Text, Text)
+extractBoldThenBy line = do
+  afterOpen <- T.stripPrefix "**" line
+  let (boldTitle, afterClose) = T.breakOn "**" afterOpen
+  () <- guard' (not (T.null afterClose))
+  let remainderAfterBold = T.drop (T.length ("**" :: Text)) afterClose
+  authorPart <- T.stripPrefix " by " (T.stripStart remainderAfterBold)
+  pure (T.strip boldTitle, authorPart)
 
-splitOnFirst :: Text -> Text -> Maybe (Text, Text)
-splitOnFirst needle haystack =
-  case T.breakOn needle haystack of
-    (_, "")    -> Nothing
-    (lhs, rhs) -> Just (lhs, T.drop (T.length needle) rhs)
-
-extractBookSlugFromUrlPath :: Text -> Maybe Text
-extractBookSlugFromUrlPath rawUrl =
-  let cleaned = T.takeWhile (\c -> c /= '#' && c /= '?') (T.strip rawUrl)
-  in slugFromBooksPath (T.splitOn "/" cleaned) >>= dropMdSuffix
-
-extractBookSlugFromTarget :: Text -> Maybe Text
-extractBookSlugFromTarget rawTarget =
-  let cleaned = T.strip rawTarget
-  in slugFromBooksPath (T.splitOn "/" cleaned) >>= dropOptionalMdSuffix
-
-slugFromBooksPath :: [Text] -> Maybe Text
-slugFromBooksPath segments =
-  case dropWhile (\s -> T.toLower s /= "books") segments of
-    [] -> Nothing
-    (_ : afterBooks) ->
-      case afterBooks of
-        []                 -> Nothing
-        ("" : _)           -> Nothing
-        (slugSegment : _)  -> Just slugSegment
-
-dropMdSuffix :: Text -> Maybe Text
-dropMdSuffix raw = do
-  withoutMd <- T.stripSuffix ".md" raw
-  if T.null withoutMd || withoutMd == "index"
-    then Nothing
-    else Just (T.toLower withoutMd)
-
-dropOptionalMdSuffix :: Text -> Maybe Text
-dropOptionalMdSuffix raw =
-  let withoutMd = Data.Maybe.fromMaybe raw (T.stripSuffix ".md" raw)
-  in if T.null withoutMd || withoutMd == "index"
+extractPlainThenBy :: Text -> Maybe (Text, Text)
+extractPlainThenBy line =
+  let (titleRaw, after) = T.breakOn " by " line
+  in if T.null after
        then Nothing
-       else Just (T.toLower withoutMd)
+       else Just (T.strip titleRaw, T.drop (T.length (" by " :: Text)) after)
+
+extractAuthor :: Text -> Maybe Text
+extractAuthor remainder =
+  let (authorRaw, _) = T.breakOn ": " remainder
+      cleaned        = T.strip (stripTrailingMarkdown authorRaw)
+  in if T.null cleaned || T.length cleaned > maxAuthorLength
+       then Nothing
+       else Just cleaned
+
+stripTrailingMarkdown :: Text -> Text
+stripTrailingMarkdown raw =
+  let trimmed = T.stripEnd raw
+      withoutBoldClose = Data.Maybe.fromMaybe trimmed (T.stripSuffix "**" trimmed)
+  in T.stripEnd withoutBoldClose
+
+stripEmojisAndPunctuation :: Text -> Text
+stripEmojisAndPunctuation =
+  T.strip
+    . T.dropAround isFringeChar
+    . T.filter (not . isStripChar)
+  where
+    isStripChar c = c == '*' || c == '_'
+    isFringeChar c = isEmojiOrSpace c || c == ':' || c == '–' || c == '—' || c == '-'
+
+guard' :: Bool -> Maybe ()
+guard' True  = Just ()
+guard' False = Nothing
 
 rightToMaybe :: Either e a -> Maybe a
 rightToMaybe = either (const Nothing) Just

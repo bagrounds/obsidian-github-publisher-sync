@@ -3,70 +3,98 @@ module Automation.BookReports.DiscoveryTest (tests) where
 import qualified Data.Set as Set
 import qualified Data.Text as T
 import Test.Tasty (TestTree, testGroup)
-import Test.Tasty.HUnit (testCase, (@?=), assertBool)
+import Test.Tasty.HUnit (testCase, (@?=), assertBool, assertEqual)
 
 import Automation.BookReports.Discovery
   ( BookCandidate (..)
-  , extractBookCandidatesFromReflection
-  , isReflectionFileName
+  , extractCandidatesFromBookReport
   )
-import Automation.BookReports.Types (mkBookSlug, unBookSlug, unBookTitle)
+import Automation.BookReports.Types
+  ( mkBookSlug
+  , unBookAuthor
+  , unBookSlug
+  , unBookTitle
+  )
 
 tests :: TestTree
 tests = testGroup "BookReports.Discovery"
-  [ testGroup "isReflectionFileName"
-      [ testCase "accepts YYYY-MM-DD.md base"  $ assertBool "" (isReflectionFileName "2026-05-05.md")
-      , testCase "accepts plain YYYY-MM-DD"     $ assertBool "" (isReflectionFileName "2026-05-05")
-      , testCase "rejects index"                $ isReflectionFileName "index.md"          @?= False
-      , testCase "rejects wrong shape"          $ isReflectionFileName "2026-5-5.md"        @?= False
-      , testCase "rejects wrong length"         $ isReflectionFileName "2026-05.md"         @?= False
-      ]
-  , testGroup "extractBookCandidatesFromReflection — markdown links"
-      [ testCase "finds missing books from markdown links" $ do
-          let content = T.unlines
-                [ "## [📚 Books](../books/index.md)"
-                , "- [🧪⚙️🧠 The Art of Doing Science and Engineering](../books/the-art-of-doing-science-and-engineering.md)"
-                , "- [📜 Sapiens](../books/sapiens-a-brief-history-of-humankind.md)"
+  [ testGroup "extractCandidatesFromBookReport — bold-title bullets"
+      [ testCase "finds a plain-text bold-title recommendation" $ do
+          let body = T.unlines
+                [ "## 📚 Additional Book Recommendations"
+                , ""
+                , "* 📖 **Meditation for Fidgety Skeptics** by Dan Harris: A practical follow-up."
                 ]
-              knownSlug = unsafeSlug "sapiens-a-brief-history-of-humankind"
-              candidates = extractBookCandidatesFromReflection (Set.fromList [knownSlug]) "/r/2026-05-05.md" content
+              candidates = extractCandidatesFromBookReport Set.empty "/books/sample.md" body
+          fmap (unBookTitle . candidateTitle) candidates
+            @?= ["Meditation for Fidgety Skeptics"]
+          fmap (fmap unBookAuthor . candidateAuthor) candidates
+            @?= [Just "Dan Harris"]
           fmap (unBookSlug . candidateSlug) candidates
-            @?= ["the-art-of-doing-science-and-engineering"]
-      , testCase "skips books that already have pages" $ do
-          let content = "- [📜 Sapiens](../books/sapiens.md)\n"
-              candidates = extractBookCandidatesFromReflection (Set.fromList [unsafeSlug "sapiens"]) "/r" content
+            @?= ["meditation-for-fidgety-skeptics"]
+
+      , testCase "skips lines that already contain a markdown link" $ do
+          let body = "* **[🧘 Mindfulness in Plain English](./mindfulness-in-plain-english.md)** by Henepola Gunaratana: Classic guide.\n"
+              candidates = extractCandidatesFromBookReport Set.empty "/books/sample.md" body
           candidates @?= []
-      , testCase "ignores non-book markdown links" $ do
-          let content = "- [Posts](../posts/index.md)\n"
-              candidates = extractBookCandidatesFromReflection Set.empty "/r" content
+
+      , testCase "skips lines that already contain an Obsidian wikilink" $ do
+          let body = "* 📖 [[books/cradle-to-cradle|♻️ Cradle to Cradle]] by William McDonough: A foundational text.\n"
+              candidates = extractCandidatesFromBookReport Set.empty "/books/sample.md" body
           candidates @?= []
-      ]
-  , testGroup "extractBookCandidatesFromReflection — wikilinks"
-      [ testCase "finds books referenced via wikilink" $ do
-          let content = "- [[books/cradle-to-cradle|♻️ Cradle to Cradle]]\n"
-              candidates = extractBookCandidatesFromReflection Set.empty "/r" content
-          fmap (unBookSlug . candidateSlug) candidates @?= ["cradle-to-cradle"]
-      , testCase "extracts alias as title for wikilink" $ do
-          let content = "- [[books/cradle-to-cradle|♻️ Cradle to Cradle]]\n"
-              candidates = extractBookCandidatesFromReflection Set.empty "/r" content
-          fmap (unBookTitle . candidateTitle) candidates @?= ["♻️ Cradle to Cradle"]
-      , testCase "uses path as title when wikilink has no alias" $ do
-          let content = "- [[books/cradle-to-cradle]]\n"
-              candidates = extractBookCandidatesFromReflection Set.empty "/r" content
-          fmap (unBookTitle . candidateTitle) candidates @?= ["books/cradle-to-cradle"]
-      , testCase "skips books/index" $ do
-          let content = "- [[books/index|📚 Books]]\n"
-              candidates = extractBookCandidatesFromReflection Set.empty "/r" content
+
+      , testCase "skips a candidate whose slug is already a known book" $ do
+          let body = "* 📖 **Sapiens** by Yuval Noah Harari: A sweeping history of humankind.\n"
+              known = Set.fromList [unsafeSlug "sapiens"]
+              candidates = extractCandidatesFromBookReport known "/books/sample.md" body
           candidates @?= []
       ]
-  , testGroup "extractBookCandidatesFromReflection — combined"
+
+  , testGroup "extractCandidatesFromBookReport — plain (unbold) bullets"
+      [ testCase "matches `* 📖 Title by Author: ...`" $ do
+          let body = "* 📖 Four Thousand Weeks by Oliver Burkeman: Challenges productivity.\n"
+              candidates = extractCandidatesFromBookReport Set.empty "/books/sample.md" body
+          fmap (unBookTitle . candidateTitle) candidates @?= ["Four Thousand Weeks"]
+          fmap (fmap unBookAuthor . candidateAuthor) candidates @?= [Just "Oliver Burkeman"]
+
+      , testCase "rejects bullets that have no ` by ` clause" $ do
+          let body = "* 📖 Some random thought without an author attribution.\n"
+              candidates = extractCandidatesFromBookReport Set.empty "/books/sample.md" body
+          candidates @?= []
+
+      , testCase "rejects bullets whose extracted title is too short" $ do
+          let body = "* 📖 Hi by Anonymous: too short to count.\n"
+              candidates = extractCandidatesFromBookReport Set.empty "/books/sample.md" body
+          candidates @?= []
+      ]
+
+  , testGroup "extractCandidatesFromBookReport — non-bullet content"
+      [ testCase "ignores prose paragraphs that happen to say 'X by Y'" $ do
+          let body = "Some prose where Foo by Bar happens to appear.\n"
+              candidates = extractCandidatesFromBookReport Set.empty "/books/sample.md" body
+          candidates @?= []
+
+      , testCase "ignores headings" $ do
+          let body = "## 📚 Book Recommendations by section\n"
+              candidates = extractCandidatesFromBookReport Set.empty "/books/sample.md" body
+          candidates @?= []
+      ]
+
+  , testGroup "extractCandidatesFromBookReport — cross-cutting"
       [ testCase "deduplicates is the caller's responsibility" $ do
-          let content = T.unlines
-                [ "- [Sapiens](../books/sapiens.md)"
-                , "- [[books/sapiens|Sapiens]]"
+          let body = T.unlines
+                [ "* 📖 **Sapiens** by Yuval Noah Harari: First mention."
+                , "* 📖 Sapiens by Yuval Noah Harari: Second mention."
                 ]
-              candidates = extractBookCandidatesFromReflection Set.empty "/r" content
-          length candidates @?= 2
+              candidates = extractCandidatesFromBookReport Set.empty "/books/sample.md" body
+          assertEqual "both mentions returned" 2 (length candidates)
+          assertBool "all share the same slug" $
+            length (Set.fromList (fmap candidateSlug candidates)) == 1
+
+      , testCase "preserves the source file path on the candidate" $ do
+          let body = "* 📖 **Atomic Habits** by James Clear: A primer on habit science.\n"
+              candidates = extractCandidatesFromBookReport Set.empty "/books/some-other-book.md" body
+          fmap candidateSourceFile candidates @?= ["/books/some-other-book.md"]
       ]
   ]
   where

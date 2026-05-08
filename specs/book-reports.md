@@ -1,26 +1,25 @@
 # 📚 Book Reports Automation
 
-> Auto-generate a book report page for a book that has been referenced in a recent reflection but does not yet have a `books/<slug>.md` page in the Obsidian vault. Designed to be **resumable**, **inference-frugal**, and **idempotent**.
+> Auto-generate a book report page for a book that has been **plain-text recommended** in an existing book report's recommendations section but does not yet have a `books/<slug>.md` page in the Obsidian vault. Designed to be **resumable**, **inference-frugal**, and **idempotent**.
 
 ## 🎯 Goal
 
 Convert this manual flow:
 
-> "I mentioned a book in today's reflection. I should write a report on it, find the canonical Amazon link with the right edition priority, drop in an affiliate URL, and link the report back from the reflection."
+> "Another book report mentioned a book by name in its recommendations section. I should write a report on it, find the canonical Amazon link with the right edition priority, drop in an affiliate URL, and link the report back from today's reflection."
 
 into an automation that runs at most **once per Pacific day** and produces at most **one** book report per run.
 
 ## 🧭 Pipeline (vertical slice)
 
 ```
-recent reflections ─┐
-                    ├─► Discovery (pure)  ─► Pending (frontmatter)  ─► Amazon (Gemini, 1 call)
-existing book pages ┘                                                       │
-                                                                            ▼
-                                                                    Report (Gemini, 1 call)
-                                                                            │
-                                                                            ▼
-                                                                ReflectionUpdate + DailyChanges
+existing book reports ─► Discovery (pure)  ─► Pending (frontmatter)  ─► Amazon (Gemini, 1 call)
+                                                                              │
+                                                                              ▼
+                                                                      Report (Gemini, 1 call)
+                                                                              │
+                                                                              ▼
+                                                                  ReflectionUpdate + DailyChanges
 ```
 
 Every step is owned by one module, every module has a dedicated test suite, and only the top-level `Automation.BookReports` module performs IO.
@@ -30,7 +29,7 @@ Every step is owned by one module, every module has a dedicated test suite, and 
 | Module | Concern | Pure? |
 |---|---|---|
 | `Automation.BookReports.Types` | Domain types (`BookTitle`, `BookAuthor`, `BookSlug`, `Asin`, `AmazonVariant`) with smart constructors | ✅ |
-| `Automation.BookReports.Discovery` | Scan recent reflection bodies for markdown / wikilink references to non-existent book pages | ✅ |
+| `Automation.BookReports.Discovery` | Scan **existing book reports** for plain-text bullet recommendations like `* 📖 **Title** by Author: …` whose slug is not yet a book page | ✅ |
 | `Automation.BookReports.PendingState` | Read/write resumability fields in the books index frontmatter | ❌ (file IO only) |
 | `Automation.BookReports.Amazon` | Gemini-grounded ASIN lookup, ASIN extraction from URL, affiliate URL builder | ✅ (prompt + parse) |
 | `Automation.BookReports.Report` | Single-call report prompt, frontmatter assembly, body composition | ✅ |
@@ -64,14 +63,16 @@ This guarantees:
 
 ## 🔍 Discovery — pure string parsing, zero inference
 
-`BookReports.Discovery` extracts candidates from the most recent **7** reflection files (`recentReflectionWindow`). It looks for:
+`BookReports.Discovery` scans **existing book report pages** (`<vault>/books/*.md`, excluding `index.md`). The recommendations sections of those reports are full of bullet lines that name other books in plain text — that is exactly the population of "good ideas we don't yet have a report for".
 
-- Markdown links pointing into `books/`: `[Sapiens](../books/sapiens.md)`
-- Obsidian wikilinks targeting `books/`: `[[books/sapiens|Sapiens]]`
+For every line in every existing book report it looks for bullets matching either of:
 
-A candidate is **eligible** when its slug is **not** present in `<vault>/books/`. The alias of a wikilink (or the visible text of a markdown link) is used as the title.
+- `* 📖 **Title** by Author: optional description` (bold-title form)
+- `* 📖 Title by Author: optional description` (plain form)
 
-This replaces the previous Gemini-based identification step. Candidates are grounded in real reflection content, not hallucinated.
+Lines that already contain a markdown link `](` or a wikilink `[[` are **skipped** — those refer to books that already have pages. The extracted title is emoji-stripped, slugified via `slugFromTitle`, and emitted as a candidate when its slug is not already in `<vault>/books/`.
+
+This replaces both the previous Gemini-based identification step and the earlier broken-link search through reflections. Candidates are grounded in real recommendations, not hallucinations or accidental references.
 
 ## 🛒 Amazon — one Gemini call, validated output
 
@@ -126,7 +127,6 @@ The orchestrator additionally calls `Automation.DailyUpdates.addUpdateLinksToRef
 |---|---|---|
 | `AMAZON_ASSOCIATES_TAG` | env (required) | — |
 | `BOOK_REPORT_MODEL` | env (optional) | `gemini-2.5-flash` (with `gemini-3.1-flash-lite-preview` fallback) |
-| `recentReflectionWindow` | `Discovery.hs` | 7 |
 | `defaultVariantPriority` | `Types.hs` | `[Hardcover, Paperback, Kindle, Audible]` |
 | `maxBooksPerRun` | `BookReports.hs` | 1 |
 
@@ -135,7 +135,7 @@ The orchestrator additionally calls `Automation.DailyUpdates.addUpdateLinksToRef
 | Module | Test module | Notes |
 |---|---|---|
 | Types | `BookReports.TypesTest` | Smart constructors, slug normalisation property tests, variant round-trip |
-| Discovery | `BookReports.DiscoveryTest` | Reflection-file matcher, markdown + wikilink extraction, dedup boundary |
+| Discovery | `BookReports.DiscoveryTest` | Bold-bullet, plain-bullet, already-linked skip, known-slug skip, source path preservation |
 | PendingState | `BookReports.PendingStateTest` | Round-trip, clear, complete-today (uses `temporary` for fixtures) |
 | Amazon | `BookReports.AmazonTest` | Affiliate URL, ASIN URL extraction, JSON parse with code fences |
 | Report | `BookReports.ReportTest` | Prompt covers all sections, frontmatter wrapping, attribution line |

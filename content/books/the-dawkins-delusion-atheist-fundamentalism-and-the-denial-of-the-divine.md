@@ -10,9 +10,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-18T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-05-07T16:02:25Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A high-contrast, conceptual illustration featuring two distinct spheres meeting in the center. On the left, a stylized, monochromatic representation of a DNA double helix, rendered in sharp, metallic silver lines to represent scientific reductionism. On the right, a warm, textured glow of golden light forming the subtle, abstract shape of a cathedral arch or an open book, symbolizing faith and transcendence. Where the two meet in the middle, the lines of the DNA helix transition into soft, ethereal rays of light, suggesting the intersection of science and theology. The background is a deep, moody charcoal, emphasizing the clarity of the two forms. The overall aesthetic is minimalist, intellectual, and balanced, evoking a sense of deep inquiry and the tension between empirical data and spiritual mystery.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # ❓✝️ The Dawkins Delusion?: Atheist Fundamentalism and the Denial of the Divine  
+![books-the-dawkins-delusion-atheist-fundamentalism-and-the-denial-of-the-divine](../books-the-dawkins-delusion-atheist-fundamentalism-and-the-denial-of-the-divine.jpg)  
 [🛒 The Dawkins Delusion?: Atheist Fundamentalism and the Denial of the Divine. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4nPh4qN)  
   
 ## ❓ The Dawkins Delusion?: Atheist Fundamentalism and the Denial of the Divine Book Report  

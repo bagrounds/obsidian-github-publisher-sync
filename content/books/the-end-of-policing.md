@@ -10,9 +10,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-15T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-05-07T20:41:32Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: "A stylized police badge or siren, subtly cracked and dissolving at its base. From its fading outline, vibrant, organic shapes ascend and transform. These rising elements evolve into abstract symbols of community well-being: interconnected hands forming a supportive network, a blossoming plant, a simple house, an open book, and a gentle, glowing light representing mental health support. The color palette transitions from muted, institutional blues and greys at the bottom to warm, hopeful greens, yellows, and light oranges towards the top, conveying growth and renewed focus on collective care within a diverse, implied community setting."
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🛑👮 The End of Policing  
+![books-the-end-of-policing](../books-the-end-of-policing.jpg)  
 [🛒 The End of Policing. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4nXMOtu)  
   
 🚨💸🏘️ Modern policing is inherently a tool of social control, not crime reduction. Advocates for abolition by redirecting resources to community-led social services.  

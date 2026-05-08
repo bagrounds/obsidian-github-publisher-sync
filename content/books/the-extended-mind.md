@@ -11,9 +11,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-18T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-05-07T21:36:17Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A stylized, ethereal illustration featuring a human silhouette rendered in soft, glowing light. Instead of containing internal details, the head is an open vessel from which vibrant, abstract neural pathways spill outward into the surrounding space. These pathways weave into the environment, connecting with floating geometric shapes, flowing rivers of light, and intricate crystalline structures that represent tools, nature, and social networks. The color palette transitions from cool, deep blues near the body to warm, energetic golds and oranges where the mind extends into the exterior world. The overall aesthetic is modern, clean, and minimalist, emphasizing a seamless, fluid connection between the internal consciousness and the vast, interconnected external world. The composition is balanced and airy, suggesting expansive, limitless intelligence.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🧠🌐💡 The Extended Mind: The Power of Thinking Outside the Brain  
+![books-the-extended-mind](../books-the-extended-mind.jpg)  
 [🛒 The Extended Mind: The Power of Thinking Outside the Brain. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3SX5Sex)  
   
 ## 🤖 AI Summary  

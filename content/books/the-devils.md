@@ -11,9 +11,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-20T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-05-07T18:52:51Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A grim, stylized demon head with prominent horns dominates the foreground, its eyes glowing with a malevolent, fiery orange. Behind it, a chaotic battlefield unfolds, rendered in dark, painterly strokes of deep red, black, and burnt sienna. Silhouetted figures, a mix of armored warriors and shadowy, beast-like forms, clash amidst the flames and smoke. A broken, ornate holy symbol lies half-buried in the foregrounds gritty texture. The overall mood is intense and darkly humorous, with sharp contrasts between light and shadow.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 😈🔥👹 The Devils  
+![books-the-devils](../books-the-devils.jpg)  
 [🛒 The Devils. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/43OJokB)  
   
 ## 📝🐒 Human Notes  

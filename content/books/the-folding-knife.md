@@ -12,9 +12,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-25T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-05-08T01:50:25Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A high-contrast, atmospheric close-up of a sleek, ornate folding knife resting on a dark, polished wooden desk. The blade is partially open, reflecting a dim, warm light that catches the intricate engravings on the handle. Beside the knife lies a scattering of ancient, weathered gold coins and a single, crisp quill pen. The background is softly blurred, hinting at an opulent but dimly lit study filled with stacks of parchment and leather-bound ledgers. The overall color palette uses deep ochres, charcoal greys, and muted metallic golds to evoke a sense of political intrigue, historical weight, and cold, calculated ambition. The lighting is dramatic and moody, emphasizing the sharp edges of the blade and the texture of the coins.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🔪🗡️ The Folding Knife  
+![books-the-folding-knife](../books-the-folding-knife.jpg)  
 [🛒 The Folding Knife. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4kAtjHf)  
   
 ## 🤖 AI Summary  

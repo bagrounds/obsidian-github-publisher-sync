@@ -5,6 +5,7 @@ module Automation.BookReports.Discovery
   , extractCandidatesFromBookReport
   ) where
 
+import Control.Applicative ((<|>))
 import Data.List (sort)
 import qualified Data.Maybe
 import Data.Maybe (mapMaybe)
@@ -25,9 +26,14 @@ import Automation.BookReports.Types
   , slugFromTitle
   )
 
+-- | Reject extracted titles shorter than this to avoid trivial false matches
+--   like "Hi by X" or "It by Y" that are almost never real book references.
 minPlainTitleLength :: Int
 minPlainTitleLength = 4
 
+-- | Authors longer than this are almost certainly the prose tail of a
+--   malformed bullet rather than a real author attribution; we'd rather
+--   miss the candidate than feed a paragraph into Gemini as the author.
 maxAuthorLength :: Int
 maxAuthorLength = 100
 
@@ -101,8 +107,8 @@ stripBulletMarker :: Text -> Maybe Text
 stripBulletMarker line =
   let leftTrimmed = T.stripStart line
   in T.stripPrefix "* " leftTrimmed
-     <> T.stripPrefix "- " leftTrimmed
-     <> T.stripPrefix "+ " leftTrimmed
+     <|> T.stripPrefix "- " leftTrimmed
+     <|> T.stripPrefix "+ " leftTrimmed
 
 dropLeadingDecoration :: Text -> Text
 dropLeadingDecoration =
@@ -114,7 +120,7 @@ lineAlreadyContainsLink line =
 
 extractTitleAndRemainder :: Text -> Maybe (Text, Text)
 extractTitleAndRemainder line =
-  extractBoldThenBy line <> extractPlainThenBy line
+  extractBoldThenBy line <|> extractPlainThenBy line
 
 extractBoldThenBy :: Text -> Maybe (Text, Text)
 extractBoldThenBy line = do

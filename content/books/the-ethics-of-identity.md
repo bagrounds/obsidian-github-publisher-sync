@@ -10,9 +10,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-16T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-05-07T21:36:03Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A minimalist, conceptual illustration featuring a translucent human silhouette standing in the center. Inside the silhouette, a complex, overlapping web of colorful geometric shapes and thin, interconnected lines represents the fluid nature of identity. Some shapes are sharp and rigid, symbolizing social categories, while others are soft and organic, representing individual autonomy. The background is a clean, neutral gradient of muted gray and soft blue, suggesting a philosophical space. A single, glowing golden scale balances lightly on the shoulder of the silhouette, hinting at the ethical weight of personal choices. The overall aesthetic is clean, modern, and intellectual, evoking a sense of introspection and the balance between individual self-construction and collective social belonging.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 👤🤔 The Ethics of Identity  
+![books-the-ethics-of-identity](../books-the-ethics-of-identity.jpg)  
 [🛒 The Ethics of Identity. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4gbQB3Z)  
   
 ## 📚 Book Report: 🎭 The Ethics of Identity by Kwame Anthony Appiah  

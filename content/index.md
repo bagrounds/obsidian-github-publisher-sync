@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-05-07T21:33:51-07:00
+updated: 2026-05-07T22:50:22-07:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -15,7 +15,7 @@ updated: 2026-05-07T21:33:51-07:00
 💬 Comment on any page with your GitHub account.  
   
 ## [🪞 Reflections](./reflections/index.md) ~ Blog (539)  
-- [2026-05-07](./reflections/2026-05-07.md)  
+- [2026-05-07 | 🤖 The 🐔 Shared 🔀 Intent 🌟 Progress 🏛️ Commons 📰 Echoes 🤖🐔🔀🌟🏛️📰🔄🤖🐲](./reflections/2026-05-07.md)  
 - [2026-05-06 | 🤖 Freedom 🏛️ Bridging 🐔 Quiet 🔀 Intent, 🌟 Progress 📰 World. 🤖🐔🔀🌟🏛️📰🔄🤖🐲](./reflections/2026-05-06.md)  
 - [2026-05-05 | 🧠 Learning 🌟 Expanding 📰 Discovery 🤖 Governance 🐔 Rabbits 🏛️ Bridging 🔀 Systems. 📚🌟📰🤖🐔🏛️🔀🔄🤖🐲](./reflections/2026-05-05.md)  
 - [2026-05-04 | 🌟 Hope 📰 Echoing 🐔 Heart 🤖 Truth 🏛️ Commons 🤖 Fix 🤖 Strong 🔀 Collective. 🌟📰🐔🤖🏛️🔀🔄🤖🐲](./reflections/2026-05-04.md)  
@@ -71,10 +71,10 @@ updated: 2026-05-07T21:33:51-07:00
   
   
 ## [📚 Books](./books/index.md) (961)  
+- [❓✝️ The God Delusion](./books/the-god-delusion.md)  
 - [🎁🔄 The Gift: The Form and Reason for Exchange in Archaic Societies](./books/the-gift-the-form-and-reason-for-exchange-in-archaic-societies.md)  
 - [🧑‍💼🏦💸 The General Theory of Employment, Interest, and Money](./books/the-general-theory-of-employment-interest-and-money.md)  
 - [🔪🗡️ The Folding Knife](./books/the-folding-knife.md)  
-- [⏱️🚀 The First 20 Hours: How to Learn Anything... Fast](./books/the-first-20-hours-how-to-learn-anything-fast.md)  
   
   
 ## [📺 Videos](./videos/index.md) (816)  

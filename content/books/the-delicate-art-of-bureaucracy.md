@@ -9,9 +9,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-19T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-05-07T17:43:59Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A vibrant illustration depicting a dynamic transformation. In the background, muted, towering stacks of paperwork and labyrinthine filing cabinets represent bureaucracy, with a subtle hint of dusty grey. Cutting through this, glowing digital data streams in blues and purples weave and flow, symbolizing digital transformation. A nimble, stylized monkey swings playfully along a digital line, a mischievous glint in its eye. Below, a sharp, elegant razor blade slices cleanly through a thick band of red tape or a paper barrier, creating a clear path. A powerful, stoic sumo wrestler stands firmly, gently pushing aside a heavy, blocky bureaucratic structure, revealing a bright, open space where the digital streams converge and expand. The scene blends the traditional with the futuristic, conveying progress and agility.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🏢📋🐒🪒🤼‍♂️ The Delicate Art of Bureaucracy: Digital Transformation with the Monkey, the Razor, and the Sumo Wrestler  
+![books-the-delicate-art-of-bureaucracy](../books-the-delicate-art-of-bureaucracy.jpg)  
 [🛒 The Delicate Art of Bureaucracy: Digital Transformation with the Monkey, the Razor, and the Sumo Wrestler. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4l7d9ED)  
   
 ## 📖 Book Report: The Delicate Art of Bureaucracy  

@@ -12,9 +12,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-14T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-05-07T19:42:32Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A minimalist, high-contrast illustration featuring a stylized, ornate golden crown resting atop a dark, jagged chess piece. The chess piece is partially obscured by a subtle shadow, suggesting a hidden agenda. In the background, a series of simple bar graphs rise sharply, but their lines are made of barbed wire. The color palette is restricted to deep charcoal, metallic gold, and a sharp, clinical crimson. The composition is clean and symmetrical, emphasizing the cold, calculated nature of political survival. The lighting is dramatic, casting long, sharp shadows that hint at the winning coalition behind the throne, leaving the rest of the frame in an ambiguous, dark void.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 👑😈👎📈 The Dictator's Handbook: Why Bad Behavior Is Almost Always Good Politics  
+![books-the-dictators-handbook](../books-the-dictators-handbook.jpg)  
 [🛒 The Dictator's Handbook: Why Bad Behavior Is Almost Always Good Politics. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/43R8TSz)  
   
 ## 🤖 AI Summary  

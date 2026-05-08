@@ -8,11 +8,16 @@ Author:
 tags:
 affiliate link: https://amzn.to/4kNVbGL
 link_analysis_model: gemini-3.1-flash-lite-preview
-link_analysis_time: 2026-04-09T00:00:00Z
+link_analysis_time: 2026-04-24T00:00:00Z
 force_analyze_links: false
+link_analysis_version: "2"
+image_date: 2026-05-07T19:42:44Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A high-contrast, split-screen composition illustrating the convergence of the physical and digital worlds. On the left, a detailed, realistic industrial component—such as a sleek mechanical turbine or a structural architectural frame—is rendered in warm, natural tones. On the right, its mirror image is depicted as a glowing, translucent digital twin composed of intricate blue and cyan data points, wireframe meshes, and floating binary code. Between the two halves, luminous, flowing lines of light pulse back and forth, symbolizing a constant, real-time data stream. The background is a deep, professional charcoal grey, emphasizing the vibrant, neon-lit connectivity between the tangible asset and its virtual counterpart. The overall aesthetic is futuristic, clean, and highly technical.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 👯💻 Digital Twin  
+![books-the-digital-twin](../books-the-digital-twin.jpg)  
 [🛒 The Digital Twin. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4kNVbGL)  
   
 ## 🤖 AI Summary  

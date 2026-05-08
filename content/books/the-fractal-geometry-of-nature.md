@@ -10,9 +10,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-16T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-05-07T23:32:56Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A high-contrast, artistic composition featuring a seamless transition from a macro view of a jagged, craggy mountain range to a micro view of a single fern leaf. The image uses a monochromatic, dark-background aesthetic with glowing, bioluminescent lines tracing the intricate, self-similar branching patterns of both the landscape and the plant. The geometry is recursive, with smaller versions of the main structures repeating infinitely into the depth of the frame. The lighting is ethereal and cool-toned, emphasizing the mathematical precision of the forms. There is no horizon line; instead, the patterns overlap in a dense, mesmerizing web that suggests the infinite complexity of nature through a lens of pure, abstract geometry.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # ♾️🌿🔬 The Fractal Geometry of Nature  
+![books-the-fractal-geometry-of-nature](../books-the-fractal-geometry-of-nature.jpg)  
 [🛒 The Fractal Geometry of Nature. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/48GJv5r)  
   
 🤯 Revolutionize your understanding of natural shapes by introducing fractals—infinitely complex, self-similar patterns with non-integer dimensions—providing a mathematical language for the irregularities of 🌳 clouds, 🌊 coastlines, and mountains previously ignored by Euclidean geometry.  

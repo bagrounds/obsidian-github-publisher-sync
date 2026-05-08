@@ -12,9 +12,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-17T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-05-08T03:17:50Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A conceptual illustration featuring a balanced scale resting on a wooden desk. On one side of the scale sits a stack of gold coins and a classic leather-bound book, representing economic theory. On the other side, a translucent, glowing geometric structure representing an economy—comprised of interconnected nodes and lines—hovers slightly, suggesting volatility. In the background, a soft-focus architectural outline of a bank or government building is visible through a large office window. The lighting is warm and cinematic, with golden light filtering in to highlight the contrast between the solid, traditional books and the ethereal, shifting nature of modern financial markets. The overall aesthetic is clean, professional, and intellectual.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🧑‍💼🏦💸 The General Theory of Employment, Interest, and Money  
+![books-the-general-theory-of-employment-interest-and-money](../books-the-general-theory-of-employment-interest-and-money.jpg)  
 [🛒 The General Theory of Employment, Interest, and Money. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4oEQjpj)  
   
 💰 Capitalist economies can stabilize below full employment due to insufficient aggregate demand, requiring active government intervention to achieve prosperity. 📉📈  

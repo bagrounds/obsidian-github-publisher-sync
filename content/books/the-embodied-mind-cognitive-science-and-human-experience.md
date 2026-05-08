@@ -10,9 +10,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-18T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-05-07T20:41:00Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A surreal, artistic rendering of a human silhouette composed of intricate, interconnected neural pathways that transition into flowing, organic roots reaching into a vibrant, abstract landscape. The figure is seated in a meditative posture, but its form is semi-transparent, revealing a synthesis of glowing biological structures and subtle geometric patterns. The environment surrounding the figure is a blend of soft, ethereal light and textured earthy elements, suggesting the convergence of internal consciousness and the external world. The color palette features deep blues and teals transitioning into warm, earthy ochres and golden light, symbolizing the bridge between scientific inquiry and human experience. The overall aesthetic is clean, modern, and contemplative, emphasizing the concept of enaction and the mind as a dynamic, embodied process rather than a static object.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🧠🫂 The Embodied Mind: Cognitive Science and Human Experience  
+![books-the-embodied-mind-cognitive-science-and-human-experience](../books-the-embodied-mind-cognitive-science-and-human-experience.jpg)  
 [🛒 The Embodied Mind: Cognitive Science and Human Experience. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4mOlbDA)  
   
 ## 📚 Book Report: The Embodied Mind: Cognitive Science and Human Experience  

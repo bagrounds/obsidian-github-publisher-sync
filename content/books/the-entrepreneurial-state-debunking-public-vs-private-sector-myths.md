@@ -10,9 +10,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-18T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-05-07T22:33:10Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A stylized, powerful hand, subtly emerging from behind classical government columns, actively pushes a large, intricate gear adorned with circuit board patterns and glowing nodes. This central mechanism is clearly driving a series of smaller, modern factory and office building silhouettes in the background, subtly connected by energy lines. A faint shattering effect emanates from the gear, suggesting a breaking myth. The color palette features deep blues and greys for the public sector elements, transitioning to vibrant greens and oranges for the innovative technology.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🏛️🏭 The Entrepreneurial State: Debunking Public vs Private Sector Myths  
+![books-the-entrepreneurial-state-debunking-public-vs-private-sector-myths](../books-the-entrepreneurial-state-debunking-public-vs-private-sector-myths.jpg)  
 [🛒 The Entrepreneurial State: Debunking Public vs Private Sector Myths. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3XkqlMl)  
   
 💡🚀💰 The role of government could be a proactive, risk-taking innovator and market-creator, rather than just a market-fixer. State-led investments have been the engine behind revolutionary technologies from the internet to the iPhone, challenging conventional myths of private sector-only innovation and advocating for shared risks and rewards.  

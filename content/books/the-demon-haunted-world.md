@@ -12,9 +12,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-17T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-05-07T17:44:11Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A single, vibrant candle flame burns brightly at the images center, its warm, golden light radiating outwards. This clear, illuminated circle pushes back a vast expanse of deep, inky darkness. Within the encroaching shadows, swirling, indistinct forms suggest lurking, spectral figures and abstract fears, their edges softened by the gloom. The candles light, though small, reveals a subtle, almost ethereal pattern of interconnected lines or a faint geometric structure within its glow, symbolizing reason and scientific order against the surrounding chaos and superstition.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 😈🌍🔬🕯️🌑 The Demon-Haunted World: Science as a Candle in the Dark  
+![books-the-demon-haunted-world](../books-the-demon-haunted-world.jpg)  
 [🛒 The Demon-Haunted World: Science as a Candle in the Dark. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3SzAlPy)  
   
 ## 🤖 AI Summary  

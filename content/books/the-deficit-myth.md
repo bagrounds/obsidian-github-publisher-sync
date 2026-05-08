@@ -12,9 +12,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-16T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-05-07T16:48:08Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A minimalist, conceptual illustration featuring a balanced scale. On one side of the scale, a small, heavy gold coin representing the traditional household budget view sits alone. On the other side, a vast, vibrant, and sprawling landscape of public infrastructure—bridges, solar arrays, libraries, and lush green parks—is suspended in mid-air, defying the weight of the coin. The background is a soft, clean gradient shifting from a muted gray to a hopeful, bright sunrise yellow. The composition emphasizes the shift from scarcity-based thinking to a vision of abundance and public investment, using geometric shapes to represent the economy as a living, interconnected system rather than a ledger of debt.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 💰📉➡️📈🗳️ The Deficit Myth: Modern Monetary Theory and the Birth of the People's Economy  
+![books-the-deficit-myth](../books-the-deficit-myth.jpg)  
 [🛒 The Deficit Myth: Modern Monetary Theory and the Birth of the People's Economy. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/43NOEVV)  
   
 💸💡🌍 Monetarily sovereign governments are not fiscally constrained like households. They can always afford spending in their own currency. Inflation, not deficits, is the true limit to public investment.  

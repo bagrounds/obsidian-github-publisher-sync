@@ -11,9 +11,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-17T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-05-07T16:01:40Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A stylized illustration featuring a gender-neutral hand gently tending a small, vibrant plant 🌱 growing out of an open, old-fashioned idea box 📦. The box is filled with faint, glowing abstract shapes representing nascent ideas. A soft, warm lightbulb 💡 above illuminates the scene. Subtle, rhythmic dashed lines or gears ⚙️ encircle the hand and plant, suggesting routine and habit, like a gentle energy flow. The background is a soft gradient of calming blues and greens, conveying a serene yet productive environment. The image evokes nurturing, consistent effort leading to creative growth and illuminated ideas.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 💡🌱♾️ The Creative Habit: Learn It and Use It for Life  
+![books-the-creative-habit](../books-the-creative-habit.jpg)  
 [🛒 The Creative Habit: Learn It and Use It for Life. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4dUcuUE)  
   
 ## 🤖 AI Summary  

@@ -10,9 +10,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-16T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-05-07T23:31:00Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A warm, inviting illustration of a modern family homes living area. Two parents and a school-aged child are present; perhaps the child is doing homework at a table while parents engage nearby. Subtle, transparent infographic elements like a bar graph or a pie chart are seamlessly integrated into the background, perhaps floating above a calendar on the wall or subtly outlining a family schedule. Gears or a simple flowchart design might be delicately woven into the scene, symbolizing structure and decision-making. The color palette is bright and optimistic, with clean lines, conveying organization, efficiency, and harmony without being sterile. The overall impression is one of a well-managed, joyful household.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 👨‍👩‍👧‍👦📊 The Family Firm: A Data-Driven Guide to Better Decision Making in the Early School Years  
+![books-the-family-firm-a-data-driven-guide-to-better-decision-making-in-the-early-school-years](../books-the-family-firm-a-data-driven-guide-to-better-decision-making-in-the-early-school-years.jpg)  
 [🛒 The Family Firm: A Data-Driven Guide to Better Decision Making in the Early School Years. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/48awcKQ)  
   
 ### 🏆 Emily Oster's The Family Firm Strategy  

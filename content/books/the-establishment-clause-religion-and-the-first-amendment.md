@@ -10,9 +10,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-22T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-05-07T22:33:20Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A close-up, high-contrast illustration featuring a weathered stone pillar representing a classical architectural structure. Bisecting the frame is a clean, sharp vertical line that creates a distinct wall of separation. On one side of the line, the stone is bathed in warm, soft morning light, evoking a sense of historical tradition and parchment textures. On the other side, the stone is rendered in cool, crisp architectural blue tones, representing the secular, modern legal framework. The background is a subtle, out-of-focus gradient of muted parchment and slate grey, emphasizing the weight and permanence of constitutional law. The composition is balanced and minimalist, focusing on the metaphorical divide between religious influence and governmental structure.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🙏🏛️ The Establishment Clause: Religion and the First Amendment  
+![books-the-establishment-clause-religion-and-the-first-amendment](../books-the-establishment-clause-religion-and-the-first-amendment.jpg)  
 [🛒 The Establishment Clause: Religion and the First Amendment. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/46aF7KY)  
   
 ## 📖 Book Report: The Establishment Clause: Religion and the First Amendment  

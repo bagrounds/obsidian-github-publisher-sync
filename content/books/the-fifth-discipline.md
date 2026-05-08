@@ -12,9 +12,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-15T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-05-08T00:39:47Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: An isometric illustration of a modern, glass-walled office building set within a lush, circular forest. Intricate, glowing lines of light weave through the building’s structure, connecting individual office pods and people to a central, luminous core that radiates upward like a tree of knowledge. Floating above the structure are subtle, semi-transparent geometric shapes—a sphere, a prism, and a spiral—representing shifting mental models. The color palette is a sophisticated blend of deep forest greens, crisp whites, and vibrant, energizing teals. The scene is clean and minimalist, emphasizing interconnectedness, flow, and the organic growth of a collective mind within a complex, architectural system.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🎨🔄🧠🏢 The Fifth Discipline: The Art and Practice of the Learning Organization  
+![books-the-fifth-discipline](../books-the-fifth-discipline.jpg)  
 [🛒 The Fifth Discipline: The Art and Practice of the Learning Organization. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/43RAzqx)  
   
 ## 🤖💬 AI Summary  

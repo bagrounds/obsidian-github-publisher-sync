@@ -10,9 +10,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-18T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-05-07T16:47:48Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: "A minimalist, high-contrast composition featuring a single, weathered stone bust of a classical philosopher, such as Marcus Aurelius, positioned on a clean, geometric pedestal. The bust is partially illuminated by a soft, warm directional light that casts long, contemplative shadows, suggesting the passage of time. Surrounding the pedestal are subtle, abstract representations of the three Stoic disciplines: a prism refracting light (Perception), a sturdy compass or anchor (Action), and a calm, rippling pool of water (Will). The color palette is muted and earthy, utilizing charcoal grays, deep stone textures, and soft amber highlights to evoke a sense of timeless wisdom, focus, and enduring resilience. The background is a clean, textured off-white, emphasizing the clarity and simplicity of the Stoic philosophy."
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🧘🏼‍♀️📅 The Daily Stoic: 366 Meditations on Wisdom, Perseverance, and the Art of Living  
+![books-the-daily-stoic-366-meditations-on-wisdom-perseverance-and-the-art-of-living](../books-the-daily-stoic-366-meditations-on-wisdom-perseverance-and-the-art-of-living.jpg)  
 [🛒 The Daily Stoic: 366 Meditations on Wisdom, Perseverance, and the Art of Living. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4n87C1v)  
   
 ## 📖 Book Report: The Daily Stoic: 366 Meditations on Wisdom, Perseverance, and the Art of Living  

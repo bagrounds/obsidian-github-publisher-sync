@@ -10,9 +10,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-17T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-05-08T05:12:12Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A conceptual illustration featuring a split composition. On one side, a clean, minimalist laboratory setting with a glowing DNA double helix rising out of a glass beaker, representing scientific inquiry and evolutionary biology. On the other side, a subtle, ethereal silhouette of an ornate, ancient cathedral window fading into a hazy, nebulous cosmic background of distant stars and galaxies. The two sides are separated by a sharp, thin vertical line of light, symbolizing the tension between rationalist skepticism and the human search for cosmic meaning. The color palette uses deep navy blues, metallic silvers, and sharp, clinical whites, creating an atmosphere of intellectual coldness contrasted with the vast, mysterious scale of the universe.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # ❓✝️ The God Delusion  
+![books-the-god-delusion](../books-the-god-delusion.jpg)  
 [🛒 The God Delusion. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/42a5Ch8)  
   
 ## 📖 Book Report: The God Delusion by Richard Dawkins  

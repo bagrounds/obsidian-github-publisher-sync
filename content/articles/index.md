@@ -5,10 +5,10 @@ aliases:
 title: 📄 Articles
 backlinks: false
 URL: https://bagrounds.org/articles
-updated: 2026-05-09T08:21:37-07:00
+updated: 2026-05-09T13:22:50-07:00
 ---
 [Home](../index.md)  
-# 📄 Articles (84)  
+# 📄 Articles (85)  
 - [🗓️🇵🇹💉✅🕊️ 20 years of Portuguese drug policy - developments, challenges and the quest for human rights](./20-years-of-portuguese-drug-policy-developments-challenges-and-the-quest-for-human-rights.md)  
 - [🦊😈🐾🕵️💸 5 takeaways about NPR's reporting on the whistleblower report about DOGE at the NLRB](./5-takeaways-about-nprs-reporting-on-the-whistleblower-report-about-doge-at-the-nlrb.md)  
 - [🌱🤖⚙️🖐️ 5 tips on getting started with Gems, your custom AI experts](./5-tips-on-getting-started-with-gems-your-custom-ai-experts.md)  
@@ -47,6 +47,7 @@ updated: 2026-05-09T08:21:37-07:00
 - [👨‍🎓🎯🚫 How the Ph.D. Project, and 45 colleges, became a target of the Trump administration](./how-the-phd-project-and-45-colleges-became-a-target-of-the-trump-administration.md)  
 - [🤖🧠👨‍💻🏗️ How we built our multi Agent research system](./how-we-built-our-multi-agent-research-system.md)  
 - [❤️📈🏋️ HRV Guided training](./hrv-guided-training.md)  
+- [🤖📉⚡ Improving token efficiency in GitHub Agentic Workflows](./improving-token-efficiency-in-github-agentic-workflows.md)  
 - [🔍🍎🌲📚 Information Foraging Theory](./information-foraging-theory.md)  
 - [🤖🗣️🔑 Introducing Open SWE: An Open Source Asynchronous Coding Agent](./introducing-open-swe-an-open-source-asynchronous-coding-agent.md)  
 - [🏳️‍⚧️🚫🗣️ Iowa gives final approval to a bill removing gender identity protections despite protests](./iowa-gives-final-approval-to-a-bill-removing-gender-identity-protections-despite-protests.md)  

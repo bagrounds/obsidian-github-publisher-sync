@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-05-08T21:18:33-07:00
+updated: 2026-05-08T21:39:17-07:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -77,11 +77,11 @@ updated: 2026-05-08T21:18:33-07:00
 - [🧠📊 The Model Thinker: What You Need to Know to Make Data Work for You](./books/the-model-thinker-what-you-need-to-know-to-make-data-work-for-you.md)  
   
   
-## [📺 Videos](./videos/index.md) (821)  
+## [📺 Videos](./videos/index.md) (823)  
+- [🏛️⏳🇺🇸 Reliving Reconstruction at This Moment | Explainer](./videos/reliving-reconstruction-at-this-moment-explainer.md)  
+- [🚫🇮🇷👑🏛️ Trump Ignores 60-Day Iran Deadline & King Charles Urges Congress to Do Its Job | The Daily Show](./videos/trump-ignores-60-day-iran-deadline-king-charles-urges-congress-to-do-its-job-the-daily-show.md)  
 - [🕵️‍♂️🤖🔍 I Tracked Down the Hidden Workers Secretly Powering ChatGPT](./videos/i-tracked-down-the-hidden-workers-secretly-powering-chatgpt.md)  
 - [🗺️⚖️🔄 Brooks and Marcus on Virginia’s major shakeup in the national redistricting battle](./videos/brooks-and-marcus-on-virginias-major-shakeup-in-the-national-redistricting-battle.md)  
-- [🧠🏛️⚖️ The Book That Changed How I Think About Liberalism | The Ezra Klein Show](./videos/the-book-that-changed-how-i-think-about-liberalism-the-ezra-klein-show.md)  
-- [🗳️💬🔮 Graham Platner On Service, Messaging & the Future for Democrats | The Weekly Show with Jon Stewart](./videos/graham-platner-on-service-messaging-the-future-for-democrats-the-weekly-show-with-jon-stewart.md)  
   
   
 ## [🌌 Topics](./topics/index.md) (91)  

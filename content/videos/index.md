@@ -5,10 +5,10 @@ aliases:
 title: 📺 Videos
 URL: https://bagrounds.org/videos
 backlinks: false
-updated: 2026-05-08T21:18:33-07:00
+updated: 2026-05-08T21:39:17-07:00
 ---
 [Home](../index.md)  
-# 📺 Videos (821)  
+# 📺 Videos (823)  
 - [💰🤑🤖💡🚀💲 $0.10 per Month Runs My Entire AI Life. I'll Show You How.](./0-10-month-runs-my-entire-ai-life-ill-show-you-how.md)  
 - [📊📈📉📃👁️ 10 Charts to Understand the 900 Page Budget Bill](./10-charts-to-understand-the-900-page-budget-bill.md)  
 - [🤖🔗⬆️✅ 12-Factor Agents: Patterns of reliable LLM applications — Dex Horthy, HumanLayer](./12-factor-agents-patterns-of-reliable-llm-applications-dex-horthy-humanlayer.md)  
@@ -500,6 +500,7 @@ updated: 2026-05-08T21:18:33-07:00
 - [🏆✍️💡 Pulitzer Prize-Winner Explains His Writing Process - Richard Powers](./pulitzer-prize-winner-explains-his-writing-process-richard-powers.md)  
 - [👥➡️⚖️ Realignment of People Against the ‘Epstein Class’ | Explainer](./realignment-of-people-against-the-epstein-class-explainer.md)  
 - [🗣️🇺🇸⚔️👤 Rebecca Solnit Says Trump's Strongest Foil Has Been Here All Along | The Interview](./rebecca-solnit-says-trumps-strongest-foil-has-been-here-all-along-the-interview.md)  
+- [🏛️⏳🇺🇸 Reliving Reconstruction at This Moment | Explainer](./reliving-reconstruction-at-this-moment-explainer.md)  
 - [Rep. Aime Wichtendahl testifies as Iowa removes civil rights for trans people (Feb 27, 2025)](./rep-aime-wichtendahl-testifies-as-iowa-removes-civil-rights-for-trans-people-feb-27-2025.md)  
 - [👩‍⚖️📜➡️ Rep. Alexandria Ocasio-Cortez (D-NY) on Resolution Honoring Charlie Kirk](./rep-alexandria-ocasio-cortez-d-ny-on-resolution-honoring-charlie-kirk.md)  
 - [😠🗣️🚫🤬 Republican Thom Tillis' SCATHING message to Stephen Miller](./im-sick-of-stupid-republican-thom-tillis-scathing-message-to-stephen-miller.md)  
@@ -700,6 +701,7 @@ updated: 2026-05-08T21:18:33-07:00
 - [🍊🤡😈 Trump & Epstein Last Week Tonight](./trump-epstein-last-week-tonight.md)  
 - [👨‍⚖️📧❓ Trump faces fresh Epstein questions as new emails and files are released](./trump-faces-fresh-epstein-questions-as-new-emails-and-files-are-released.md)  
 - [👨‍👩‍👧‍👦🪙🤔⬇️ Trump family’s cryptocurrency ties raise concerns as administration loosens regulations](./trump-familys-cryptocurrency-ties-raise-concerns-as-administration-loosens-regulations.md)  
+- [🚫🇮🇷👑🏛️ Trump Ignores 60-Day Iran Deadline & King Charles Urges Congress to Do Its Job | The Daily Show](./trump-ignores-60-day-iran-deadline-king-charles-urges-congress-to-do-its-job-the-daily-show.md)  
 - [🕰️🏛️🛑⚡ Trump Is the End of a 100-Year Experiment | Interesting Times with Ross Douthat](./trump-is-the-end-of-a-100-year-experiment-interesting-times-with-ross-douthat.md)  
 - [👨‍⚖️💂‍♂️🚨🇺🇸 Trump Orders Another 2,000 Guardsmen, 700 Marines To LA | NPR News Now](./trump-orders-another-2000-guardsmen-700-marines-to-la-npr-news-now.md)  
 - [💰🇺🇸🛢️💵 Trump posts photo of Maduro and says US plans to tap Venezuela's oil reserves](./trump-posts-photo-of-maduro-and-says-us-plans-to-tap-venezuelas-oil-reserves.md)  

@@ -10,9 +10,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-16T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-05-08T19:41:04Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A vibrant, impressionistic illustration showing a diverse group of people in motion against a soft, golden-hour landscape. Some are running along a winding path, while others are dancing or stretching in a sun-drenched park. The scene is filled with a sense of fluid energy and light, using warm, uplifting colors like orange, yellow, and teal. Abstract, glowing particles swirl around the figures to represent the release of neurochemicals and the feeling of euphoria. The composition emphasizes freedom, collective movement, and a deep connection to the environment, with no sharp edges or heavy shadows, evoking a feeling of lightness, mental clarity, and pure, infectious joy.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🏃😊❤️ The Joy of Movement: How Exercise Helps Us Find Happiness, Hope, Connection, and Courage  
+![books-the-joy-of-movement-how-exercise-helps-us-find-happiness-hope-connection-and-courage](../books-the-joy-of-movement-how-exercise-helps-us-find-happiness-hope-connection-and-courage.jpg)  
 [🛒 The Joy of Movement: How Exercise Helps Us Find Happiness, Hope, Connection, and Courage. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3I3XBmG)  
   
 ## 📖 Book Report: 🧘 The Joy of Movement  

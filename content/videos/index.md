@@ -5,10 +5,10 @@ aliases:
 title: 📺 Videos
 URL: https://bagrounds.org/videos
 backlinks: false
-updated: 2026-05-08T18:12:54-07:00
+updated: 2026-05-08T18:47:18-07:00
 ---
 [Home](../index.md)  
-# 📺 Videos (818)  
+# 📺 Videos (819)  
 - [💰🤑🤖💡🚀💲 $0.10 per Month Runs My Entire AI Life. I'll Show You How.](./0-10-month-runs-my-entire-ai-life-ill-show-you-how.md)  
 - [📊📈📉📃👁️ 10 Charts to Understand the 900 Page Budget Bill](./10-charts-to-understand-the-900-page-budget-bill.md)  
 - [🤖🔗⬆️✅ 12-Factor Agents: Patterns of reliable LLM applications — Dex Horthy, HumanLayer](./12-factor-agents-patterns-of-reliable-llm-applications-dex-horthy-humanlayer.md)  
@@ -578,6 +578,7 @@ updated: 2026-05-08T18:12:54-07:00
 - [💥🧠👶 The «Big Bang» in Learning: Brain Changes and Childhood Learning (Full Session)](./the-big-bang-in-learning-brain-changes-and-childhood-learning-full-session.md)  
 - [👹👀🇺🇸📉 The Big Short author Michael Lewis on what he thinks happens next with Trump and the USA](./the-big-short-author-michael-lewis-on-what-he-thinks-happens-next-with-trump-and-the-usa.md)  
 - [❓🛠️👨‍🎓 The Black Box Effect: How To Learn ANY Skill Quickly](./the-black-box-effect-how-to-learn-any-skill-quickly.md)  
+- [🧠🏛️⚖️ The Book That Changed How I Think About Liberalism | The Ezra Klein Show](./the-book-that-changed-how-i-think-about-liberalism-the-ezra-klein-show.md)  
 - [💔🏛️📉❓ The Broken Promise: Democracy, the Economy & What Comes Next with Pete Buttigieg](./the-broken-promise-democracy-the-economy-what-comes-next-with-pete-buttigieg.md)  
 - [🇺🇸📉💔 The Collapse of American Virtue — with Fareed Zakaria | Prof G Conversations](./the-collapse-of-american-virtue-with-fareed-zakaria-prof-g-conversations.md)  
 - [🧠🔄♾️💡 The concept that changes how you learn forever](./the-concept-that-changes-how-you-learn-forever.md)  

@@ -6,9 +6,17 @@ URL: https://bagrounds.org/books/the-late-shift-letterman-leno-and-the-network-b
 share: true
 affiliate link: https://amzn.to/4nXNxMk
 CTA: 📺 Relive the rivalry.
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_time: 2026-04-27T00:00:00Z
+force_analyze_links: false
+link_analysis_version: "2"
+image_date: 2026-05-08T20:37:49Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A stylized, dark blue and purple city skyline shimmers under a starry night sky. Two powerful, distinct spotlights cut through the darkness from the foreground. One beam is sharp and cool blue, the other broad and warm gold, meeting and subtly clashing at their intersection point above the city. In the foreground, the sleek, minimalist silhouette of a classic talk show hosts desk and microphone stands, subtly bisected down the middle, reflecting the contested position. The overall mood is dramatic, high-stakes, and nocturnal.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 📺🌃⚔️ The Late Shift: Letterman, Leno, and the Network Battle for the Night  
+![books-the-late-shift-letterman-leno-and-the-network-battle-for-the-night](../books-the-late-shift-letterman-leno-and-the-network-battle-for-the-night.jpg)  
 [🛒 The Late Shift: Letterman, Leno, and the Network Battle for the Night. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4nXNxMk)  
   
 ## 🎬 The Late Shift: 🎤 A Backstage Pass to the Battle for Late-Night Supremacy  

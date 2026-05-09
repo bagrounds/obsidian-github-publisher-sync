@@ -10,9 +10,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-18T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-05-09T10:29:53Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A high-contrast, atmospheric illustration featuring a dimly lit office desk from a low angle. On the mahogany surface sits a vintage telephone with a tangled cord and a stack of crisp, official-looking documents tied with a leather strap. In the background, a large, glowing globe rests on a pedestal, partially obscured by deep shadows. A single, sharp beam of light cuts through the darkness, illuminating dust motes dancing in the air and highlighting a single, ornate fountain pen resting on a ledger. The color palette is dominated by moody teals, deep charcoals, and accents of cold, metallic gold, evoking a sense of clandestine corporate power and global manipulation.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🤫💰🕵️ The New Confessions of an Economic Hit Man  
+![books-the-new-confessions-of-an-economic-hit-man](../books-the-new-confessions-of-an-economic-hit-man.jpg)  
 [🛒 The New Confessions of an Economic Hit Man. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3Ynsqrw)  
   
 💸🌎⛓️ The New Confessions of an Economic Hit Man exposes how a network of corporations and governmental agencies covertly manipulate developing nations into unpayable debt through predatory loans for infrastructure projects, thereby securing global corporate dominance and resource control.  

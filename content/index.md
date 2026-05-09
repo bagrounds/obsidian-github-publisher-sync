@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-05-08T23:37:17-07:00
+updated: 2026-05-09T08:21:37-07:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -14,11 +14,11 @@ updated: 2026-05-08T23:37:17-07:00
 🔊 Listen to any page with built in audio control.  
 💬 Comment on any page with your GitHub account.  
   
-## [🪞 Reflections](./reflections/index.md) ~ Blog (540)  
+## [🪞 Reflections](./reflections/index.md) ~ Blog (541)  
+- [2026-05-09](./reflections/2026-05-09.md)  
 - [2026-05-08 | 🫨 Shocking 🗣️ service 📚 changed 👷 workers 🚫 ignores 🏛️ reconstruction ⚙️ build ⚔️ battle, 🌟 progress 📰 signals 🐔 echo 🤖 governance 🌲 thinking 🔀 systems. 📺📰🌟🐔🤖🏛️🔀🔄🤖🐲](./reflections/2026-05-08.md)  
 - [2026-05-07 | 🤖 The 🐔 Shared 🔀 Intent 🌟 Progress 🏛️ Commons 📰 Echoes 🤖🐔🔀🌟🏛️📰🔄🤖🐲](./reflections/2026-05-07.md)  
 - [2026-05-06 | 🤖 Freedom 🏛️ Bridging 🐔 Quiet 🔀 Intent, 🌟 Progress 📰 World. 🤖🐔🔀🌟🏛️📰🔄🤖🐲](./reflections/2026-05-06.md)  
-- [2026-05-05 | 🧠 Learning 🌟 Expanding 📰 Discovery 🤖 Governance 🐔 Rabbits 🏛️ Bridging 🔀 Systems. 📚🌟📰🤖🐔🏛️🔀🔄🤖🐲](./reflections/2026-05-05.md)  
   
   
 ## [🤖 AI Blog](./ai-blog/index.md) (193)  
@@ -35,11 +35,11 @@ updated: 2026-05-08T23:37:17-07:00
 - [2026-05-05 | 🤖 ⚖️ The Paradox of Embedded Governance 🤖](./auto-blog-zero/2026-05-05-the-paradox-of-embedded-governance.md)  
   
   
-## [🐔 Chickie Loo](./chickie-loo/index.md) (59)  
+## [🐔 Chickie Loo](./chickie-loo/index.md) (60)  
+- [2026-05-09 | 🐔 A Milestone at the Stove and a Rooster in the Rafters 🐔](./chickie-loo/2026-05-09-a-milestone-at-the-stove-and-a-rooster-in-the-rafters.md)  
 - [2026-05-08 | 🐔 🐣 The Quiet Echo of a House Well-Loved 🐔](./chickie-loo/2026-05-08-the-quiet-echo-of-a-house-well-loved.md)  
 - [2026-05-07 | 🐔 A Thursday of Shared Sunlight 🐔](./chickie-loo/2026-05-07-a-thursday-of-shared-sunlight.md)  
 - [2026-05-06 | 🐔 🐄 A Quiet Morning After the Storm 🐔](./chickie-loo/2026-05-06-a-quiet-morning-after-the-storm.md)  
-- [2026-05-05 | 🐔 🐰 The Roosters and the Rabbits 🐔](./chickie-loo/2026-05-05-the-roosters-and-the-rabbits.md)  
   
   
 ## [🏛️ Systems for Public Good](./systems-for-public-good/index.md) (48)  
@@ -49,18 +49,18 @@ updated: 2026-05-08T23:37:17-07:00
 - [2026-05-05 | 🏛️ The Integrated Commons: Bridging Physical and Digital Public Goods 🏛️](./systems-for-public-good/2026-05-05-the-integrated-commons-bridging-physical-and-digital-public-goods.md)  
   
   
-## [📰 The Noise](./the-noise/index.md) (29)  
+## [📰 The Noise](./the-noise/index.md) (30)  
+- [2026-05-09 | 📰 ⚙️ Shifting Gears: Diplomacy's Grind and Innovation's Surge 📰](./the-noise/2026-05-09-shifting-gears-diplomacy-s-grind-and-innovation-s-surge.md)  
 - [2026-05-08 | 📰 💥 Crosscurrents of Conflict and Cautionary Signals 📰](./the-noise/2026-05-08-crosscurrents-of-conflict-and-cautionary-signals.md)  
 - [2026-05-07 | 📰 🌪️ Echoes of Diplomacy, Leaps of Discovery 📰](./the-noise/2026-05-07-echoes-of-diplomacy-leaps-of-discovery.md)  
 - [2026-05-06 | 📰 💡 A World of Convergence and Divergence 📰](./the-noise/2026-05-06-a-world-of-convergence-and-divergence.md)  
-- [2026-05-05 | 📰 🌪️ Whirlwinds of Diplomacy, Currents of Discovery 📰](./the-noise/2026-05-05-whirlwinds-of-diplomacy-currents-of-discovery.md)  
   
   
-## [🌟 Positivity Bias](./positivity-bias/index.md) (28)  
+## [🌟 Positivity Bias](./positivity-bias/index.md) (29)  
+- [2026-05-09 | 🌟 Unveiling Progress: A World of Discovery and Collaboration 🌟](./positivity-bias/2026-05-09-unveiling-progress-a-world-of-discovery-and-collaboration.md)  
 - [2026-05-08 | 🌟 Bright Horizons: A Daily Dose of Progress and Ingenuity 🌟](./positivity-bias/2026-05-08-bright-horizons-a-daily-dose-of-progress-and-ingenuity.md)  
 - [2026-05-07 | 🌟 The World's Brightest Echoes: Progress in Every Corner 🌟](./positivity-bias/2026-05-07-the-world-s-brightest-echoes-progress-in-every-corner.md)  
 - [2026-05-06 | 🌟 A Cascade of Progress: Innovations, Community Spirit, and Global Accord 🌟](./positivity-bias/2026-05-06-a-cascade-of-progress-innovations-community-spirit-and-global-accord.md)  
-- [2026-05-05 | 🌟 🔬 Scientific & Health Horizons Expanding 🌟](./positivity-bias/2026-05-05-scientific-health-horizons-expanding.md)  
   
   
 ## [🔀 Convergence](./convergence/index.md) (25)  
@@ -71,24 +71,24 @@ updated: 2026-05-08T23:37:17-07:00
   
   
 ## [📚 Books](./books/index.md) (961)  
-- [⛰️➡️🧘 The Mountain is You: Transforming Self-Sabotage into Self-Mastery](./books/the-mountain-is-you.md)  
-- [🔥📜 The Motivation Manifesto: 9 Declarations to Claim Your Personal Power](./books/the-motivation-manifesto-9-declarations-to-claim-your-personal-power.md)  
-- [🎯🧠 The Motivated Brain](./books/the-motivated-brain-what-neuroscience-reveals-about-the-power-of-purpose.md)  
-- [⚠️🏛️👹🇺🇸 The Most Dangerous Branch: Inside the Supreme Court in the Age of Trump](./books/the-most-dangerous-branch-inside-the-supreme-court-in-the-age-of-trump.md)  
+- [⏱️💡📈 The One Hour Content Plan: The Solopreneur's Guide to a Year's Worth of Blog Post Ideas in 60 Minutes and Creating Content That Hooks and Sells](./books/the-one-hour-content-plan-the-solopreneurs-guide-to-a-years-worth-of-blog-post-ideas-in-60-minutes-and-creating-content-that-hooks-and-sells.md)  
+- [🇸🇪🇩🇰🇳🇴🇫🇮🧩 The Nordic Theory of Everything: In Search of a Better Life](./books/the-nordic-theory-of-everything.md)  
+- [☀️👿 The Noonday Demon: An Atlas of Depression](./books/the-noonday-demon-an-atlas-of-depression.md)  
+- [📚🧠 The New York Times Guide to Essential Knowledge: A Desk Reference for the Curious Mind](./books/the-new-york-times-guide-to-essential-knowledge-a-desk-reference-for-the-curious-mind.md)  
   
   
-## [📺 Videos](./videos/index.md) (824)  
+## [📺 Videos](./videos/index.md) (825)  
+- [🧠⚙️📐 Hamming Intro to The Art of Doing Science and Engineering Learning to Learn March 28 1995](./videos/hamming-intro-to-the-art-of-doing-science-and-engineering-learning-to-learn-march-28-1995.md)  
 - [🤖🔄📦 Ralph Loops: Build Dumb AI Loops That Ship - Chris Parsons, Cherrypick](./videos/ralph-loops-build-dumb-ai-loops-that-ship-chris-parsons-cherrypick.md)  
 - [🏛️⏳🇺🇸 Reliving Reconstruction at This Moment | Explainer](./videos/reliving-reconstruction-at-this-moment-explainer.md)  
 - [🚫🇮🇷👑🏛️ Trump Ignores 60-Day Iran Deadline & King Charles Urges Congress to Do Its Job | The Daily Show](./videos/trump-ignores-60-day-iran-deadline-king-charles-urges-congress-to-do-its-job-the-daily-show.md)  
-- [🕵️‍♂️🤖🔍 I Tracked Down the Hidden Workers Secretly Powering ChatGPT](./videos/i-tracked-down-the-hidden-workers-secretly-powering-chatgpt.md)  
   
   
 ## [🌌 Topics](./topics/index.md) (91)  
-- [🦬🪒 Yak Shaving](./topics/yak-shaving.md)  
-- [💻🌐<> Web Development](./topics/web-development.md)  
-- [🍎🥛🔬✨ Universal Nutrition System Design](./topics/universal-nutrition-system-design.md)  
-- [💡🔧📏🔮〰️ Understanding and Implementing the Kalman Filter](./topics/understanding-and-implementing-the-kalman-filter.md)  
+- [🌿🐚 Growing Centenarian Rhubarb in the PNW](./topics/growing-rhubarb-pnw.md)  
+- [🧮💻 Functional Languages](./topics/functional-languages.md)  
+- [🎨✏️ Graphic Design](./topics/graphic-design.md)  
+- [🤖🕸️💸🔎 Google Search Crawl Budget](./topics/google-search-crawl-budget.md)  
   
   
 ## [📄  Articles](./articles/index.md) (84)  
@@ -99,17 +99,17 @@ updated: 2026-05-08T23:37:17-07:00
   
   
 ## [🤖💬 Bot Chats](./bot-chats/index.md) (49)  
+- [🦜👶🏼 Mimicking Babies](./bot-chats/mimicking-babies.md)  
 - [🤰🏼👶🍼👨‍👩‍👦 Parenting and Infant Development Guide](./bot-chats/parenting-and-infant-development-guide.md)  
 - [⚙️📝🧹 Obsidian Templater Filename Sanitization](./bot-chats/obsidian-templater-filename-sanitization.md)  
 - [🔥 Motivation & 🧘 Discipline](./bot-chats/motivation-and-discipline.md)  
-- [🤱🏼💐 Mother's Day](./bot-chats/mothers-day.md)  
   
   
 ## [💾 Software](./software/index.md) (33)  
-- [⚛️🔄 React](./software/react.md)  
-- [🌐🔓💻 Open WebUI](./software/open-webui.md)  
-- [🦙💬 Ollama](./software/ollama.md)  
-- [🐧💻🚀 Linux](./software/linux.md)  
+- [💎🔬🔍📈 Quartz](./software/quartz.md)  
+- [🐍💻🐍 Python](./software/python.md)  
+- [🐍📜🔍✅ Pydantic](./software/pydantic.md)  
+- [💻🔓 OpenCode](./software/opencode.md)  
   
   
 ## [👥 People](./people/index.md) (18)  

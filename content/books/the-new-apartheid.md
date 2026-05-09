@@ -9,9 +9,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-22T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-05-09T09:38:59Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A high-contrast, conceptual illustration featuring a modern South African cityscape divided by a translucent, glowing digital grid. On one side, the architecture is opulent and sleek, characterized by glass-paneled skyscrapers and gated luxury estates under a bright, clear sky. On the other side, the structures are dense, weathered, and industrial, cast in deep, long shadows. Between these two worlds, a series of invisible, interconnected chains—represented as faint, circuit-board-like lines of light—weave through the streets, suggesting a decentralized, systemic control. The color palette uses deep charcoal, stark white, and electric gold to emphasize the tension between wealth and systemic exclusion. The composition is balanced but fractured, highlighting the persistence of invisible barriers in a supposedly open society.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🇿🇦 The New Apartheid  
+![books-the-new-apartheid](../books-the-new-apartheid.jpg)  
 [🛒 The New Apartheid. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4pTiAtk)  
   
 🇿🇦⚖️🌐 Formal apartheid's abolition did not end systemic racial oppression in South Africa, but rather saw it privatized and decentralized across space, law, wealth, technology, and punishment, creating a new apartheid that demands urgent understanding and dismantling.  

@@ -5,10 +5,10 @@ aliases:
 title: 📺 Videos
 URL: https://bagrounds.org/videos
 backlinks: false
-updated: 2026-05-08T23:37:17-07:00
+updated: 2026-05-09T08:21:37-07:00
 ---
 [Home](../index.md)  
-# 📺 Videos (824)  
+# 📺 Videos (825)  
 - [💰🤑🤖💡🚀💲 $0.10 per Month Runs My Entire AI Life. I'll Show You How.](./0-10-month-runs-my-entire-ai-life-ill-show-you-how.md)  
 - [📊📈📉📃👁️ 10 Charts to Understand the 900 Page Budget Bill](./10-charts-to-understand-the-900-page-budget-bill.md)  
 - [🤖🔗⬆️✅ 12-Factor Agents: Patterns of reliable LLM applications — Dex Horthy, HumanLayer](./12-factor-agents-patterns-of-reliable-llm-applications-dex-horthy-humanlayer.md)  
@@ -239,6 +239,7 @@ updated: 2026-05-08T23:37:17-07:00
 - [🗳️💬🔮 Graham Platner On Service, Messaging & the Future for Democrats | The Weekly Show with Jon Stewart](./graham-platner-on-service-messaging-the-future-for-democrats-the-weekly-show-with-jon-stewart.md)  
 - [🌍🎙️ Grounded Podcast with Jon Tester & Maritsa Georgiou](./grounded-podcast-with-jon-tester-maritsa-georgiou.md)  
 - [🫀💪📈 Guide How to Build a Monster Aerobic System | Your Detailed Guide](./how-to-build-a-monster-aerobic-system-your-detailed-guide.md)  
+- [🧠⚙️📐 Hamming Intro to The Art of Doing Science and Engineering Learning to Learn March 28 1995](./hamming-intro-to-the-art-of-doing-science-and-engineering-learning-to-learn-march-28-1995.md)  
 - [🧠💡🔬 Hamming «You and Your Research» (June 6, 1995)](./hamming-you-and-your-research-june-6-1995.md)  
 - [🧠💡🎓🤖 Harvard Thinking: Preserving learning in the age of AI shortcuts](./harvard-thinking-preserving-learning-in-the-age-of-ai-shortcuts.md)  
 - [⚕️🗣️💊 Health experts respond to Trump's claims linking autism to acetaminophen](./health-experts-respond-to-trumps-claims-linking-autism-to-acetaminophen.md)  

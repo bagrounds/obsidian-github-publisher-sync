@@ -11,6 +11,7 @@ image_date: 2026-04-09T10:30:46Z
 image_model: "@cf/black-forest-labs/flux-1-schnell"
 image_prompt: A stylized, top-down view of a clean, minimalist workspace. On a matte wooden desk, a single, glowing glass prism sits in the center. Light enters the prism as a single, clear beam and refracts into a spectrum of vibrant, geometric shapes—circles, triangles, and squares—floating in the air. Surrounding the prism are subtle, floating mathematical symbols like the lambda symbol (λ) and elegant, interconnected nodes representing data flow. The color palette is composed of deep indigo, soft slate, and electric cyan, emphasizing a sense of logical clarity and architectural beauty. The lighting is soft and ambient, casting gentle shadows that suggest depth and precision, evoking the mathematical elegance of functional programming.
 link_analysis_version: "2"
+updated: 2026-05-09T11:27:18
 ---
 [Home](../index.md) > [Topics](./index.md)  
 # 🧮💻 Functional Languages  
@@ -70,4 +71,12 @@ Functional programming is a paradigm built around the concept of **functions as 
 A High-Level Summary: A concise overview of the core principles, goals, and significance of this category.  
 Subcategories: A list of the major subcategories or branches within this category, with a brief description of each.  
 Book Recommendations: A selection of 3-5 influential or accessible books that provide a good introduction to this category or its key subcategories.  
-Use lots of emojis.
+Use lots of emojis.  
+  
+## 🦋 Bluesky    
+<blockquote class="bluesky-embed" data-bluesky-uri="at://did:plc:i4yli6h7x2uoj7acxunww2fc/app.bsky.feed.post/3mlg5a54hbg2e" data-bluesky-cid="bafyreidbhblambphs5e3wqjx45c5du5ie33gw2v5mjkyfydytwzalaf3zq"><p>🧮💻 Functional Languages  
+  
+#AI Q: 🧩 Does functional programming actually make your code easier to maintain?  
+  
+🧮 Lambda Calculus | 💎 Immutability | 🏛️ Programming Paradig  
+https://bagrounds.org/topics/functional-languages</p>&mdash; <a href="https://bsky.app/profile/did:plc:i4yli6h7x2uoj7acxunww2fc?ref_src=embed">Bryan Grounds (@bagrounds.bsky.social)</a> <a href="https://bsky.app/profile/did:plc:i4yli6h7x2uoj7acxunww2fc/post/3mlg5a54hbg2e?ref_src=embed">2026-05-09T11:27:24.000Z</a></blockquote><script async src="https://embed.bsky.app/static/embed.js" charset="utf-8"></script>

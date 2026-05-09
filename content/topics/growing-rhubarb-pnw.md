@@ -14,6 +14,7 @@ image_date: 2026-04-09T10:30:53Z
 image_model: "@cf/black-forest-labs/flux-1-schnell"
 image_prompt: A close-up, high-angle shot of a vibrant, mature rhubarb plant nestled in a lush Pacific Northwest garden. The focus is on the contrast between the deep, glossy ruby-red stalks and the broad, crinkled, emerald-green leaves. Droplets of morning dew cling to the foliage, catching the soft, diffused light typical of a maritime spring. In the background, slightly out of focus, are dark, rich soil and soft-focus ferns or moss-covered garden stones, evoking a sense of established, long-lived growth. The overall color palette is earthy and rich, emphasizing the health and longevity of the plant, with a shallow depth of field that makes the texture of the stalks pop against the soft, misty garden setting.
 link_analysis_version: "2"
+updated: 2026-05-09T13:43:36
 ---
 [Home](../index.md) > [Topics](./index.md)  
 # 🌿🐚 Growing Centenarian Rhubarb in the PNW  
@@ -145,4 +146,12 @@ link_analysis_version: "2"
 ### 🌱 Master Gardener Programs  
   
 🌱 WSU Clark County Master Gardeners - https://extension.wsu.edu/clark/master-gardeners  
-🌱 WSU King County Master Gardeners - https://extension.wsu.edu/king/mg-home/join-us
+🌱 WSU King County Master Gardeners - https://extension.wsu.edu/king/mg-home/join-us  
+  
+## 🦋 Bluesky    
+<blockquote class="bluesky-embed" data-bluesky-uri="at://did:plc:i4yli6h7x2uoj7acxunww2fc/app.bsky.feed.post/3mlgetxcupn26" data-bluesky-cid="bafyreib2gecvk53d7crmrxbh6pmwyhub73o6murf3dvqqyyn6zqkqq6kmq"><p>🌿🐚 Growing Centenarian Rhubarb in the PNW  
+  
+#AI Q: 🥧 What is the best way to prepare fresh rhubarb?  
+  
+🚜 Home Horticulture | 🥧 Edible Perennials | 🌦️ Maritime Climate  
+https://bagrounds.org/topics/growing-rhubarb-pnw</p>&mdash; <a href="https://bsky.app/profile/did:plc:i4yli6h7x2uoj7acxunww2fc?ref_src=embed">Bryan Grounds (@bagrounds.bsky.social)</a> <a href="https://bsky.app/profile/did:plc:i4yli6h7x2uoj7acxunww2fc/post/3mlgetxcupn26?ref_src=embed">2026-05-09T13:43:45.000Z</a></blockquote><script async src="https://embed.bsky.app/static/embed.js" charset="utf-8"></script>

@@ -10,9 +10,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-18T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-05-09T11:25:18Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: "A high-angle, stylized map of the United States rendered in a clean, isometric design. The landscape is divided into distinct zones: a vibrant, glowing cluster of interconnected glass towers representing an innovation hub, contrasted against a muted, grayscale industrial area with smokestacks, and a transitional region of suburban sprawl. Thin, luminous lines of light pulse outward from the innovation hub, acting as conduits that connect to smaller, emerging nodes across the map. The color palette uses deep navy and slate for the background, with bright, electric accents of cyan and gold highlighting the thriving economic centers. The overall aesthetic is modern, analytical, and data-driven, emphasizing the geographic concentration of talent and the flow of economic opportunity across the country."
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 📈💼 The New Geography of Jobs  
+![books-the-new-geography-of-jobs](../books-the-new-geography-of-jobs.jpg)  
 [🛒 The New Geography of Jobs. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4qokAcS)  
   
 💡🏙️📈 A profound economic divergence across American cities, driven by the clustering of highly-skilled innovation jobs and their powerful multiplier effect, creating three Americas with disparate opportunities and incomes, challenging traditional notions of economic growth and calling for new policy approaches.  

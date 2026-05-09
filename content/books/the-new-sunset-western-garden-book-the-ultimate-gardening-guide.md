@@ -8,9 +8,17 @@ CTA: 🌱 Grow your dream garden.
 affiliate link: https://amzn.to/4lpccrr
 tags:
   - gardening
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_time: 2026-04-26T00:00:00Z
+force_analyze_links: false
+link_analysis_version: "2"
+image_date: 2026-05-09T12:30:38Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A high-angle, close-up shot of a weathered wooden potting bench bathed in warm, golden-hour sunlight. A thick, open gardening reference book lies in the center, its pages filled with detailed botanical illustrations and diagrams. Surrounding the book are organic gardening tools, such as a hand trowel, a pair of pruning shears, and a small terracotta pot containing a vibrant, healthy succulent. To the side, a collection of dried seed packets and a pair of worn leather gardening gloves rest on the rustic grain of the wood. Soft, dappled shadows from nearby foliage fall across the scene, creating a peaceful, scholarly, and earthy atmosphere that emphasizes the intersection of expert knowledge and hands-on outdoor work.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # ☀️📖🌿 The New Sunset Western Garden Book: The Ultimate Gardening Guide  
+![books-the-new-sunset-western-garden-book-the-ultimate-gardening-guide](../books-the-new-sunset-western-garden-book-the-ultimate-gardening-guide.jpg)  
 [🛒 The New Sunset Western Garden Book: The Ultimate Gardening Guide. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4lpccrr)  
   
 ## 🪴 Book Report: 📖 The New Sunset Western Garden Book: 🌻 The Ultimate Gardening Guide  
@@ -76,8 +84,8 @@ tags:
 <blockquote class="twitter-tweet" data-theme="dark"><p lang="en" dir="ltr">☀️📖🌿 The New Sunset Western Garden Book: The Ultimate Gardening Guide<br><br>🪴 Plant Encyclopedia | ☀️ Climate Zones | 🌱 Gardening Techniques | 🏡 Garden Styles | 🎯 Western US | 💡 Innovative Ideas | 📖 The Bible of Western Gardening<a href="https://t.co/AMBLqG4Wyy">https://t.co/AMBLqG4Wyy</a></p>&mdash; Bryan Grounds (@bagrounds) <a href="https://twitter.com/bagrounds/status/1944755080374390842?ref_src=twsrc%5Etfw">July 14, 2025</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>  
   
 ## 🦋 Bluesky  
-<blockquote class="bluesky-embed" data-bluesky-uri="at://did:plc:i4yli6h7x2uoj7acxunww2fc/app.bsky.feed.post/3ltwjl5l4z22b" data-bluesky-cid="bafyreieuzvwwdw5lqojp72qydoho3n7zeub3uaicxz362tzigngxbxeoa4" data-bluesky-embed-color-mode="system"><p lang="en">☀️📖🌿 The New Sunset Western Garden Book: The Ultimate Gardening Guide  
+<blockquote class="bluesky-embed" data-bluesky-uri="at://did:plc:i4yli6h7x2uoj7acxunww2fc/app.bsky.feed.post/3ltwjl5l4z22b" data-bluesky-cid="bafyreieuzvwwdw5lqojp72qydoho3n7zeub3uaicxz362tzigngxbxeoa4"><p lang="en">☀️📖🌿 The New Sunset Western Garden Book: The Ultimate Gardening Guide  
   
 🪴 Plant Encyclopedia | ☀️ Climate Zones | 🌱 Gardening Techniques | 🏡 Garden Styles | 🎯 Western US | 💡 Innovative Ideas | 📖 The Bible of Western Gardening  
   
-bagrounds.org/books/the-ne...<br><br><a href="https://bsky.app/profile/did:plc:i4yli6h7x2uoj7acxunww2fc/post/3ltwjl5l4z22b?ref_src=embed">[image or embed]</a></p>&mdash; Bryan Grounds (<a href="https://bsky.app/profile/did:plc:i4yli6h7x2uoj7acxunww2fc?ref_src=embed">@bagrounds.bsky.social</a>) <a href="https://bsky.app/profile/did:plc:i4yli6h7x2uoj7acxunww2fc/post/3ltwjl5l4z22b?ref_src=embed">Jul 14, 2025 at 6:46 AM</a></blockquote><script async src="https://embed.bsky.app/static/embed.js" charset="utf-8"></script>
+bagrounds.org/books/the-ne...</p>&mdash; <a href="https://bsky.app/profile/did:plc:i4yli6h7x2uoj7acxunww2fc?ref_src=embed">Bryan Grounds (@bagrounds.bsky.social)</a> <a href="https://bsky.app/profile/did:plc:i4yli6h7x2uoj7acxunww2fc/post/3ltwjl5l4z22b?ref_src=embed">2025-07-14T13:46:15.980Z</a></blockquote><script async src="https://embed.bsky.app/static/embed.js" charset="utf-8"></script>  

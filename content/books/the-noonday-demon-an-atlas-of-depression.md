@@ -9,9 +9,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-16T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-05-09T13:42:03Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: "A conceptual illustration featuring a solitary, weathered stone anchor resting on a soft, monochromatic landscape. Above the anchor, a subtle, ethereal transition occurs: the sky shifts from a deep, heavy charcoal gray on one side to a luminous, warm amber glow on the other. A single, delicate thread of light weaves through the shadows, connecting the grounded anchor to the golden horizon. The style is minimalist and painterly, utilizing high-contrast lighting to evoke both the crushing weight of profound melancholy and the quiet, persistent possibility of resilience. The composition is clean and atmospheric, emphasizing the tension between stillness and the slow, inevitable movement toward light."
 ---
 [Home](../index.md) > [Books](./index.md)  
 # ☀️👿 The Noonday Demon: An Atlas of Depression  
+![books-the-noonday-demon-an-atlas-of-depression](../books-the-noonday-demon-an-atlas-of-depression.jpg)  
 [🛒 The Noonday Demon: An Atlas of Depression. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4ga9LHz)  
   
 ## 📖 Book Report: The Noonday Demon: An Atlas of Depression  

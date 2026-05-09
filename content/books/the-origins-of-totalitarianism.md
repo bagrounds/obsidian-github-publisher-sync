@@ -11,9 +11,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-14T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-05-09T15:33:07Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A stark, minimalist illustration featuring a vast, desolate landscape under a dim, oppressive sky. In the foreground, a single, solitary figure stands dwarfed by a series of towering, abstract geometric monoliths that cast long, sharp shadows across the ground. The monoliths are arranged in an imposing, rigid formation, suggesting a loss of individuality and the crushing weight of a bureaucratic, all-encompassing system. The color palette is muted and industrial—composed of cold greys, slate blues, and deep, ink-like blacks—evoking a sense of isolation and clinical detachment. The composition emphasizes negative space to convey the feeling of superfluousness and the fragility of the human spirit against the cold, mechanical structure of totalitarian power.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 👹 The Origins of Totalitarianism  
+![books-the-origins-of-totalitarianism](../books-the-origins-of-totalitarianism.jpg)  
 [🛒 The Origins of Totalitarianism. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4kLTIRo)  
   
 ## 📚 Book Report: The Origins of Totalitarianism by Hannah Arendt  

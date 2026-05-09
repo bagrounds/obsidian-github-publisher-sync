@@ -13,7 +13,7 @@ link_analysis_version: "2"
 link_analysis_time: 2026-05-08T00:00:00Z
 force_analyze_links: false
 ---
-[Home](../index.md) > [📰 The Noise](./index.md) | [⏮️](./2026-05-07-echoes-of-diplomacy-leaps-of-discovery.md)  
+[Home](../index.md) > [📰 The Noise](./index.md) | [⏮️](./2026-05-07-echoes-of-diplomacy-leaps-of-discovery.md) [⏭️](./2026-05-09-shifting-gears-diplomacy-s-grind-and-innovation-s-surge.md)  
 # 2026-05-08 | 📰 💥 Crosscurrents of Conflict and Cautionary Signals 📰  
 ![the-noise-2026-05-08-crosscurrents-of-conflict-and-cautionary-signals](../the-noise-2026-05-08-crosscurrents-of-conflict-and-cautionary-signals.jpg)  
   

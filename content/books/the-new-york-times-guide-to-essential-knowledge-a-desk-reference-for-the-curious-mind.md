@@ -10,9 +10,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-22T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-05-09T13:41:58Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: "A close-up, top-down view of a vintage wooden desk bathed in warm, soft sunlight streaming from a nearby window. In the center sits a thick, heavy reference book, slightly open with a few pages fanned out to suggest depth and usage. Surrounding the book are iconic symbols of intellectual pursuit: a classic fountain pen, a brass magnifying glass resting on a map, a small potted succulent for a touch of life, and a pair of spectacles. The background is a clean, slightly blurred library setting with mahogany shelves filled with leather-bound books. The color palette is composed of warm earth tones, deep browns, and soft creams, creating an atmosphere of quiet study, timeless wisdom, and scholarly curiosity."
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 📚🧠 The New York Times Guide to Essential Knowledge: A Desk Reference for the Curious Mind  
+![books-the-new-york-times-guide-to-essential-knowledge-a-desk-reference-for-the-curious-mind](../books-the-new-york-times-guide-to-essential-knowledge-a-desk-reference-for-the-curious-mind.jpg)  
 [🛒 The New York Times Guide to Essential Knowledge: A Desk Reference for the Curious Mind. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4gNennh)  
   
 ## 📚 Book Report: 📰 The New York Times Guide to Essential Knowledge: A Desk Reference for the Curious Mind  

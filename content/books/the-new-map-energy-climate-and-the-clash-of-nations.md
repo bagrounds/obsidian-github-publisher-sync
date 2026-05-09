@@ -10,9 +10,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-18T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-05-09T12:30:27Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: An abstract, stylized globe serves as the centerpiece, split visually between two contrasting aesthetics. One hemisphere is rendered in deep, industrial tones with dark silhouettes of oil derricks, pipelines, and glowing amber electrical grids, representing the legacy of fossil fuels and traditional power. The other hemisphere transitions into a vibrant, clean landscape featuring sleek wind turbines, solar arrays, and crystalline tech-hubs, glowing with soft cyan and green light. Connecting these two halves are jagged, lightning-like lines of force that weave across the continents, symbolizing geopolitical tension and the shifting new map. The background is a deep, atmospheric charcoal, emphasizing the contrast between the warmth of the industrial past and the cool, electric future of the global energy transition.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # ⚡🌍⚔️ The New Map: Energy, Climate, and the Clash of Nations  
+![books-the-new-map-energy-climate-and-the-clash-of-nations](../books-the-new-map-energy-climate-and-the-clash-of-nations.jpg)  
 [🛒 The New Map: Energy, Climate, and the Clash of Nations. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3XBn6jN)  
   
 🤖 The shale revolution 🛢️, climate change goals 🌍, and intensifying geopolitical rivalries ⚔️ are fundamentally redrawing global power dynamics and energy landscapes.  

@@ -10,9 +10,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-18T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-05-09T07:42:08Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A split-composition illustration blending organic nature and precise mechanical engineering. On the left, a lush, vibrant forest landscape with deep green foliage and rich soil represents the Free Land concept. On the right, a complex, elegant clockwork mechanism made of brass and polished steel represents the Free Money system. The two sides seamlessly merge in the center, where a golden gear is intertwined with the roots of a budding plant. The lighting is soft and natural, casting a warm, hopeful glow over the transition. The background is a clean, minimalist gradient that transitions from earth-toned brown to a crisp, modern metallic silver, emphasizing the balance between natural resources and fluid economic movement.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🌿⚙️ The Natural Economic Order  
+![books-the-natural-economic-order](../books-the-natural-economic-order.jpg)  
 [🛒 The Natural Economic Order. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4p4um35)  
   
 💰🌍🔄 The Natural Economic Order by Silvio Gesell proposes a radical overhaul of economic systems through free money and free land to eliminate unearned income and foster equitable competition.  

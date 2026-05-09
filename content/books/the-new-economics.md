@@ -11,9 +11,13 @@ force_analyze_links: false
 link_analysis_time: 2026-04-24T00:00:00Z
 link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_version: "2"
+image_date: 2026-05-09T10:29:59Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A minimalist, high-contrast illustration featuring a stylized, interconnected web of geometric shapes—gears, cubes, and nodes—representing a complex system. At the center, a subtle, upward-trending line graph emerges from the chaos, symbolizing systemic improvement and order. The color palette uses professional, muted tones like deep navy, slate gray, and crisp white, accented by a single vibrant touch of gold or teal to draw the eye toward the center of the structure. The composition is clean and architectural, suggesting stability, precision, and forward-thinking logic without clutter. The background is a soft, textured off-white, giving the image a modern, academic, and sophisticated feel suitable for a publication on management theory and organizational science.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 📈🏛️🏫 The New Economics: For Industry, Government, Education  
+![books-the-new-economics](../books-the-new-economics.jpg)  
 [🛒 The New Economics: For Industry, Government, Education. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/45aOdam)  
   
 ## 🤖 AI Summary  

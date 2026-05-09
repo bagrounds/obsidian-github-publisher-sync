@@ -10,9 +10,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-20T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-05-09T08:42:45Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A stylized, minimalist illustration showing a glowing, translucent human silhouette in a meditative pose. Inside the silhouette, the brain is depicted as a vibrant, interconnected network of light-filled neural pathways that transition into soft, radiating heart-shaped light in the center of the chest. The background is a deep, calming gradient of indigo and soft violet, symbolizing the subconscious mind. Floating around the silhouette are delicate, abstract geometric shapes and subtle, swirling organic lines that suggest fluidity and transformation. The overall aesthetic is clean, modern, and serene, emphasizing the harmony between scientific inquiry and compassionate self-awareness.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🧠❤️🔄 The Neuroscience of Change: A Compassion-Based Program for Personal Transformation  
+![books-the-neuroscience-of-change-a-compassion-based-program-for-personal-transformation](../books-the-neuroscience-of-change-a-compassion-based-program-for-personal-transformation.jpg)  
 [🛒 The Neuroscience of Change: A Compassion-Based Program for Personal Transformation. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4dJ4sxD)  
   
 ## 🧠 Book Report: The Neuroscience of Change  

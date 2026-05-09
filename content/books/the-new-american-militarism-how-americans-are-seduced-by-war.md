@@ -10,9 +10,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-28T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-05-09T08:42:49Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A surreal, high-contrast illustration featuring a weathered, tattered American flag that morphs into a camouflage pattern toward the bottom. In the foreground, a pair of polished, pristine combat boots stands upright, casting a long, sharp shadow that transforms into the silhouette of a sprawling, metallic war machine. Surrounding the scene are subtle, fragmented symbols of American pop culture—a film reel, a glowing television screen, and a stained-glass window—all slightly distorted or fraying at the edges. The color palette is composed of muted, desaturated patriotic tones—deep navy, aged parchment, and faded crimson—contrasted against a stark, industrial gray background. The lighting is dramatic and cinematic, emphasizing the tension between an idealized national identity and the cold, mechanical reality of permanent military projection.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🇺🇸🪖❤️ The New American Militarism: How Americans Are Seduced by War  
+![books-the-new-american-militarism-how-americans-are-seduced-by-war](../books-the-new-american-militarism-how-americans-are-seduced-by-war.jpg)  
 [🛒 The New American Militarism: How Americans Are Seduced by War. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4p3Q9bL)  
   
 💥🇺🇸⚠️ Post-Vietnam disillusionment morphed into a dangerous national consensus favoring military solutions, driven by a powerful blend of ideological forces and a detached citizenry.  

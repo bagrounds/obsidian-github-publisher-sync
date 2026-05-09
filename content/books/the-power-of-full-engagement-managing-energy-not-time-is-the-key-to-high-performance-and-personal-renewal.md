@@ -10,9 +10,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-16T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-05-09T18:38:52Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A minimalist, high-contrast illustration featuring a stylized human silhouette standing in the center. The figure is composed of four distinct, glowing geometric segments representing physical, emotional, mental, and spiritual energy. Surrounding the silhouette is a rhythmic, circular pulse wave that shifts from vibrant, energetic colors (like electric blue and warm orange) to calm, muted tones (soft indigo and sage green), symbolizing the balance between stress and recovery. The background is a clean, deep charcoal gradient, emphasizing the glowing energy patterns. The overall aesthetic is modern, sleek, and scientific, focusing on the concept of energy flow and internal capacity rather than traditional timekeeping elements like clocks or calendars.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🔋📈 The Power of Full Engagement: Managing Energy, Not Time, Is the Key to High Performance and Personal Renewal  
+![books-the-power-of-full-engagement-managing-energy-not-time-is-the-key-to-high-performance-and-personal-renewal](../books-the-power-of-full-engagement-managing-energy-not-time-is-the-key-to-high-performance-and-personal-renewal.jpg)  
 [🛒 The Power of Full Engagement: Managing Energy, Not Time, Is the Key to High Performance and Personal Renewal. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4mmls0c)  
   
 ## ⚡ A Deep Dive into The Power of Full Engagement  

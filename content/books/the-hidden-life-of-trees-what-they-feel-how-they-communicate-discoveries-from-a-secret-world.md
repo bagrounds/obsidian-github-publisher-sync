@@ -10,9 +10,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-16T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-05-08T12:35:47Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A cross-section of a lush forest floor showcasing the hidden world beneath the soil. Below ground, a glowing, intricate network of white fungal mycelium threads connects the roots of several towering trees, pulsing with soft light to represent the flow of nutrients. Above ground, the trees are depicted in a realistic, serene style with dense green canopies. The composition uses a split-view perspective, with the dark, rich earth transitioning into a vibrant forest scene. The color palette features deep forest greens, earthy browns, and bioluminescent blues and whites for the fungal web, creating an atmosphere of mystery, interconnectedness, and quiet vitality.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🌳🗣️ The Hidden Life of Trees: What They Feel, How They Communicate: Discoveries from a Secret World  
+![books-the-hidden-life-of-trees-what-they-feel-how-they-communicate-discoveries-from-a-secret-world](../books-the-hidden-life-of-trees-what-they-feel-how-they-communicate-discoveries-from-a-secret-world.jpg)  
 [🛒 The Hidden Life of Trees: What They Feel, How They Communicate: Discoveries from a Secret World. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4ibg6nd)  
   
 🌳🍄🌲 Trees are social, communicate through a wood-wide web of fungi, share resources, and even care for their young.  

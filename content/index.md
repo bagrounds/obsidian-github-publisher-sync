@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-05-08T18:47:18-07:00
+updated: 2026-05-08T19:15:06-07:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -71,17 +71,17 @@ updated: 2026-05-08T18:47:18-07:00
   
   
 ## [📚 Books](./books/index.md) (961)  
+- [⚠️🏛️👹🇺🇸 The Most Dangerous Branch: Inside the Supreme Court in the Age of Trump](./books/the-most-dangerous-branch-inside-the-supreme-court-in-the-age-of-trump.md)  
+- [🧠📊 The Model Thinker: What You Need to Know to Make Data Work for You](./books/the-model-thinker-what-you-need-to-know-to-make-data-work-for-you.md)  
 - [🧘😞➡️ The Mindful Way Through Depression: Freeing Yourself from Chronic Unhappiness](./books/the-mindful-way-through-depression-freeing-yourself-from-chronic-unhappiness.md)  
 - [👨‍🚀🔴✨ The Martian](./books/the-martian.md)  
-- [🍬⏳ The Marshmallow Test: Mastering Self-Control](./books/the-marshmallow-test-mastering-self-control.md)  
-- [🇺🇸💔 The Lost Soul of the American Presidency: The Decline into Demagoguery and the Prospects for Renewal](./books/the-lost-soul-of-the-american-presidency-the-decline-into-demagoguery-and-the-prospects-for-renewal.md)  
   
   
-## [📺 Videos](./videos/index.md) (819)  
-- [🧠🏛️⚖️ The Book That Changed How I Think About Liberalism | The Ezra Klein Show](./videos/the-book-that-changed-how-i-think-about-liberalism-the-ezra-klein-show.md)  
+## [📺 Videos](./videos/index.md) (820)  
+- [🗺️⚖️🔄 Brooks and Marcus on Virginia’s major shakeup in the national redistricting battle](./videos/brooks-and-marcus-on-virginias-major-shakeup-in-the-national-redistricting-battle.md)  
 - [🗳️💬🔮 Graham Platner On Service, Messaging & the Future for Democrats | The Weekly Show with Jon Stewart](./videos/graham-platner-on-service-messaging-the-future-for-democrats-the-weekly-show-with-jon-stewart.md)  
 - [🤯🗳️🇺🇸 The Most Shocking Election In America](./videos/the-most-shocking-election-in-america.md)  
-- [🧠💡🔬 Hamming «You and Your Research» (June 6, 1995)](./videos/hamming-you-and-your-research-june-6-1995.md)  
+- [🧠🏛️⚖️ The Book That Changed How I Think About Liberalism | The Ezra Klein Show](./videos/the-book-that-changed-how-i-think-about-liberalism-the-ezra-klein-show.md)  
   
   
 ## [🌌 Topics](./topics/index.md) (91)  
@@ -106,10 +106,10 @@ updated: 2026-05-08T18:47:18-07:00
   
   
 ## [💾 Software](./software/index.md) (33)  
+- [🦙💬 Ollama](./software/ollama.md)  
 - [⚛️🔄 React](./software/react.md)  
 - [🐧💻🚀 Linux](./software/linux.md)  
 - [🚄🎲✅ QuickCheck](./software/quickcheck.md)  
-- [🚀📏 K6](./software/k6.md)  
   
   
 ## [👥 People](./people/index.md) (18)  

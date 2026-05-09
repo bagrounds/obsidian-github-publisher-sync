@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-05-08T22:07:20-07:00
+updated: 2026-05-08T23:37:17-07:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -15,7 +15,7 @@ updated: 2026-05-08T22:07:20-07:00
 💬 Comment on any page with your GitHub account.  
   
 ## [🪞 Reflections](./reflections/index.md) ~ Blog (540)  
-- [2026-05-08](./reflections/2026-05-08.md)  
+- [2026-05-08 | 🫨 Shocking 🗣️ service 📚 changed 👷 workers 🚫 ignores 🏛️ reconstruction ⚙️ build ⚔️ battle, 🌟 progress 📰 signals 🐔 echo 🤖 governance 🌲 thinking 🔀 systems. 📺📰🌟🐔🤖🏛️🔀🔄🤖🐲](./reflections/2026-05-08.md)  
 - [2026-05-07 | 🤖 The 🐔 Shared 🔀 Intent 🌟 Progress 🏛️ Commons 📰 Echoes 🤖🐔🔀🌟🏛️📰🔄🤖🐲](./reflections/2026-05-07.md)  
 - [2026-05-06 | 🤖 Freedom 🏛️ Bridging 🐔 Quiet 🔀 Intent, 🌟 Progress 📰 World. 🤖🐔🔀🌟🏛️📰🔄🤖🐲](./reflections/2026-05-06.md)  
 - [2026-05-05 | 🧠 Learning 🌟 Expanding 📰 Discovery 🤖 Governance 🐔 Rabbits 🏛️ Bridging 🔀 Systems. 📚🌟📰🤖🐔🏛️🔀🔄🤖🐲](./reflections/2026-05-05.md)  
@@ -71,10 +71,10 @@ updated: 2026-05-08T22:07:20-07:00
   
   
 ## [📚 Books](./books/index.md) (961)  
+- [⛰️➡️🧘 The Mountain is You: Transforming Self-Sabotage into Self-Mastery](./books/the-mountain-is-you.md)  
 - [🔥📜 The Motivation Manifesto: 9 Declarations to Claim Your Personal Power](./books/the-motivation-manifesto-9-declarations-to-claim-your-personal-power.md)  
 - [🎯🧠 The Motivated Brain](./books/the-motivated-brain-what-neuroscience-reveals-about-the-power-of-purpose.md)  
 - [⚠️🏛️👹🇺🇸 The Most Dangerous Branch: Inside the Supreme Court in the Age of Trump](./books/the-most-dangerous-branch-inside-the-supreme-court-in-the-age-of-trump.md)  
-- [🧠📊 The Model Thinker: What You Need to Know to Make Data Work for You](./books/the-model-thinker-what-you-need-to-know-to-make-data-work-for-you.md)  
   
   
 ## [📺 Videos](./videos/index.md) (824)  

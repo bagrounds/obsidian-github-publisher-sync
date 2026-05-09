@@ -8,11 +8,16 @@ Author:
 tags:
 affiliate link: https://amzn.to/4jDNKRH
 link_analysis_model: gemini-3.1-flash-lite-preview
-link_analysis_time: 2026-04-06T00:00:00Z
+link_analysis_time: 2026-04-20T00:00:00Z
 force_analyze_links: false
+link_analysis_version: "2"
+image_date: 2026-05-09T19:36:00Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: "A minimalist, conceptual illustration featuring a glowing, golden compass resting on a worn wooden table. Instead of standard directional markers, the compass points are stylized symbols representing the four pillars of meaning: a small heart (belonging), a target (purpose), a rising sun over a horizon (transcendence), and an open book with quill marks (storytelling). Soft, warm light emanates from the compass, casting gentle, elongated shadows across the surface. The background is a soft, out-of-focus gradient of deep navy and amber, suggesting a transition from the confusion of daily life into clarity and purpose. The composition is clean, balanced, and evocative, utilizing a warm, inviting color palette to symbolize depth and inner discovery."
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🔑🧭❤️ The Power of Meaning: Crafting a Life That Matters  
+![books-the-power-of-meaning](../books-the-power-of-meaning.jpg)  
 [🛒 The Power of Meaning: Crafting a Life That Matters. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4jDNKRH)  
   
 ## 🤖 AI Summary  

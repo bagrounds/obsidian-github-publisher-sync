@@ -10,9 +10,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-17T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-05-08T22:34:39Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A minimalist, high-contrast illustration featuring a large flock of identical white swans in flight against a dark, moody background. In the center, a single, stark black swan is positioned prominently, breaking the pattern of the white silhouettes. The style is clean and conceptual, utilizing sharp, geometric lines to represent the logical structure of a scientific hypothesis. The lighting is dramatic, casting soft shadows to emphasize the singular anomaly. The composition is balanced but tension-filled, focusing on the visual metaphor of the black swan as the ultimate tool for refuting a universal theory. The color palette is limited to deep charcoal, stark white, and perhaps a single, subtle accent of muted slate blue to evoke a scholarly, analytical atmosphere.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🤔🔬 The Logic of Scientific Discovery  
+![books-the-logic-of-scientific-discovery](../books-the-logic-of-scientific-discovery.jpg)  
 [🛒 The Logic of Scientific Discovery. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4eOMMkw)  
   
 ## 📖 Book Report: *The Logic of Scientific Discovery* by Karl Popper  

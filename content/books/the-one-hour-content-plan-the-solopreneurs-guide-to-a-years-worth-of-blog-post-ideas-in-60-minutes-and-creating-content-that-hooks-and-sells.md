@@ -9,9 +9,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-16T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-05-09T14:32:28Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A high-angle, minimalist desk setup featuring a clean white workspace. In the center, a sleek, modern analog stopwatch sits next to an open leather-bound notebook filled with organized, color-coded mind maps and bulleted lists. Beside the notebook, a single fountain pen rests on a tablet screen displaying a clean, professional content calendar grid. A small, glowing lightbulb icon is subtly embossed on the notebook cover. The lighting is bright and airy, casting soft, sharp shadows that suggest efficiency and focus. The color palette is professional and calm, using deep blues, crisp whites, and a single accent of energetic orange to represent creativity and growth. The overall composition is balanced, organized, and conveys the concept of rapid, strategic planning.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # ⏱️💡📈 The One Hour Content Plan: The Solopreneur's Guide to a Year's Worth of Blog Post Ideas in 60 Minutes and Creating Content That Hooks and Sells  
+![books-the-one-hour-content-plan-the-solopreneurs-guide-to-a-years-worth-of-blog-post-ideas-in-60-minutes-and-creating-content-that-hooks-and-sells](../books-the-one-hour-content-plan-the-solopreneurs-guide-to-a-years-worth-of-blog-post-ideas-in-60-minutes-and-creating-content-that-hooks-and-sells.jpg)  
 [🛒 The One Hour Content Plan: The Solopreneur's Guide to a Year's Worth of Blog Post Ideas in 60 Minutes and Creating Content That Hooks and Sells. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3St0UWy)  
   
 ## 📚 Book Report: The One Hour Content Plan  

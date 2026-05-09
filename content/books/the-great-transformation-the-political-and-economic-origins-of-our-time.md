@@ -10,9 +10,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-16T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-05-08T08:38:54Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A high-contrast conceptual illustration featuring a large, weathered stone gear representing the economy, partially embedded into a vibrant, organic landscape of soil, roots, and human figures. The gear is grinding against the natural terrain, creating a visible friction point where industrial machinery meets earth. In the background, a subtle, ethereal silhouette of a classical marble temple looms, symbolizing the political structures of society. The lighting is dramatic, with a warm, golden glow emanating from the soil-embedded side and a cold, sterile blue light reflecting off the metallic teeth of the gear. The composition emphasizes the tension between the mechanical, self-regulating market and the organic, protective social forces, capturing the essence of a double movement in a surreal, allegorical style.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🌍🏛️ The Great Transformation: The Political and Economic Origins of Our Time  
+![books-the-great-transformation-the-political-and-economic-origins-of-our-time](../books-the-great-transformation-the-political-and-economic-origins-of-our-time.jpg)  
 [🛒 The Great Transformation: The Political and Economic Origins of Our Time. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4kprFGR)  
   
 ## 📖 Book Report: The Great Transformation: The Political and Economic Origins of Our Time by Karl Polanyi  

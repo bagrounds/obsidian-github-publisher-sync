@@ -10,9 +10,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-28T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-05-08T15:43:42Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A clean, minimalist workspace featuring a high-end laptop open to a code editor displaying glowing PyTorch syntax. Beside the laptop lies a sleek, open book with diagrams of neural network layers and Transformer architectures illustrated on its pages. Soft, ambient lighting creates a professional and focused atmosphere, with subtle geometric shapes representing data flow—such as interconnected nodes and lines—floating faintly in the background. The color palette consists of deep navy, cool grays, and vibrant, tech-inspired electric blue accents, emphasizing a modern, analytical, and hands-on technical environment.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 💯💻 The Hundred-Page Language Models Book: hands-on with PyTorch  
+![books-the-hundred-page-language-models-book-hands-on-with-pytorch](../books-the-hundred-page-language-models-book-hands-on-with-pytorch.jpg)  
 [🛒 The Hundred-Page Language Models Book: hands-on with PyTorch. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4opiA41)  
   
 ## 📚 A Practitioner's Guide to Language Models: A Review of The Hundred-Page Language Models Book  

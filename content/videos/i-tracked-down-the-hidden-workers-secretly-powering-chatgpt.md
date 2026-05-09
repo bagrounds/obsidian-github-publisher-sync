@@ -9,6 +9,10 @@ Platform:
 Channel: More Perfect Union
 tags:
 youtube: https://youtu.be/aooiDA-AsNo
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_version: "2"
+link_analysis_time: 2026-05-08T00:00:00Z
+force_analyze_links: false
 ---
 [Home](../index.md) > [Videos](./index.md)  
 # 🕵️‍♂️🤖🔍 I Tracked Down the Hidden Workers Secretly Powering ChatGPT  
@@ -59,7 +63,7 @@ youtube: https://youtu.be/aooiDA-AsNo
 ### 🆚 Contrasting  
   
 * 📘 The Coming Wave by Mustafa Suleyman and Michael Bhaskar argues for the transformative power of AI and the necessity of its rapid development for progress.  
-* 📘 Life 3.0 by Max Tegmark discusses the long-term potential for AI to surpass human intelligence and the optimistic possibilities of a post-biological era.  
+* 📘 [🧬👥💾 Life 3.0: Being Human in the Age of Artificial Intelligence](../books/life-3-0.md) by Max Tegmark discusses the long-term potential for AI to surpass human intelligence and the optimistic possibilities of a post-biological era.  
   
 ### 🎨 Creatively Related  
   

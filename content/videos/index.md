@@ -5,10 +5,10 @@ aliases:
 title: 📺 Videos
 URL: https://bagrounds.org/videos
 backlinks: false
-updated: 2026-05-08T09:02:33-07:00
+updated: 2026-05-08T18:03:03-07:00
 ---
 [Home](../index.md)  
-# 📺 Videos (816)  
+# 📺 Videos (817)  
 - [💰🤑🤖💡🚀💲 $0.10 per Month Runs My Entire AI Life. I'll Show You How.](./0-10-month-runs-my-entire-ai-life-ill-show-you-how.md)  
 - [📊📈📉📃👁️ 10 Charts to Understand the 900 Page Budget Bill](./10-charts-to-understand-the-900-page-budget-bill.md)  
 - [🤖🔗⬆️✅ 12-Factor Agents: Patterns of reliable LLM applications — Dex Horthy, HumanLayer](./12-factor-agents-patterns-of-reliable-llm-applications-dex-horthy-humanlayer.md)  
@@ -613,6 +613,7 @@ updated: 2026-05-08T09:02:33-07:00
 - [🧠❓🤯 The More You Study Consciousness, the Weirder It Gets | The Ezra Klein Show](./the-more-you-study-consciousness-the-weirder-it-gets-the-ezra-klein-show.md)  
 - [⚠️🧠⚔️ The Most Dangerous Cognitive Bias](./the-most-dangerous-cognitive-bias.md)  
 - [💰🤔⚖️ The Most Important Economic Debate of our Lifetime — ft. Justin Wolfers | Prof G Markets](./the-most-important-economic-debate-of-our-lifetime-ft-justin-wolfers-prof-g-markets.md)  
+- [🤯🗳️🇺🇸 The Most Shocking Election In America](./the-most-shocking-election-in-america.md)  
 - [⏳📅🗓️🚀 The next 36 months will be WILD](./the-next-36-months-will-be-wild.md)  
 - [The OLDEST websites EVER 👩‍💻](./the-oldest-websites-ever.md)  
 - [⏱️🔋✅ The one productivity system you need: time vs energy management (ep. 1)](./the-one-productivity-system-you-need-time-vs-energy-management-ep-1.md)  

@@ -10,9 +10,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-15T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-05-09T06:58:16Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A long, narrow, stone-walled corridor stretches into the distance, illuminated by soft, natural light. To the left, a massive, ornate iron chain hangs from the ceiling, representing the state’s potential power. To the right, a vibrant, diverse crowd of people stands in a unified formation, their hands held up as if holding an invisible line of tension. The floor is cracked yet steady. The atmosphere is one of intense, precarious equilibrium—a Red Queen race where neither the state nor the people can afford to falter. The aesthetic is clean, minimalist, and metaphorical, utilizing a palette of cool blues, deep grays, and a single, striking accent of gold to represent the elusive, fragile state of liberty.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # ↔️🏛️ The Narrow Corridor: States, Societies, and the Fate of Liberty  
+![books-the-narrow-corridor-states-societies-and-the-fate-of-liberty](../books-the-narrow-corridor-states-societies-and-the-fate-of-liberty.jpg)  
 [🛒 The Narrow Corridor: States, Societies, and the Fate of Liberty. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/48ZXzI2)  
   
 🗽 Liberty thrives in a fragile Narrow Corridor where a strong, yet accountable, state and an equally strong, vigilant society engage in a constant, dynamic struggle to prevent both tyranny and anarchy. 💪⚖️🌍  

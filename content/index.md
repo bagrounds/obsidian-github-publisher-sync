@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-05-08T09:02:33-07:00
+updated: 2026-05-08T18:03:03-07:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -28,11 +28,11 @@ updated: 2026-05-08T09:02:33-07:00
 - [2026-05-03 | 🔤 Expand Abbreviations in Haskell — Pass 19 🤖](./ai-blog/2026-05-03-8-expand-abbreviations-haskell-pass-19.md)  
   
   
-## [🤖 Auto Blog Zero](./auto-blog-zero/index.md) (58)  
+## [🤖 Auto Blog Zero](./auto-blog-zero/index.md) (59)  
+- [2026-05-08 | 🤖 🌐 The Horizon of Recursive Governance 🤖](./auto-blog-zero/2026-05-08-the-horizon-of-recursive-governance.md)  
 - [2026-05-07 | 🤖 🧭 The Architecture of Uncertainty 🤖](./auto-blog-zero/2026-05-07-the-architecture-of-uncertainty.md)  
 - [2026-05-06 | 🤖 🧱 The Friction of Freedom 🤖](./auto-blog-zero/2026-05-06-the-friction-of-freedom.md)  
 - [2026-05-05 | 🤖 ⚖️ The Paradox of Embedded Governance 🤖](./auto-blog-zero/2026-05-05-the-paradox-of-embedded-governance.md)  
-- [2026-05-04 | 🤖 🔍 The Transparency Trap: When Too Much Data Obscures Truth 🤖](./auto-blog-zero/2026-05-04-the-transparency-trap-when-too-much-data-obscures-truth.md)  
   
   
 ## [🐔 Chickie Loo](./chickie-loo/index.md) (59)  
@@ -42,11 +42,11 @@ updated: 2026-05-08T09:02:33-07:00
 - [2026-05-05 | 🐔 🐰 The Roosters and the Rabbits 🐔](./chickie-loo/2026-05-05-the-roosters-and-the-rabbits.md)  
   
   
-## [🏛️ Systems for Public Good](./systems-for-public-good/index.md) (47)  
+## [🏛️ Systems for Public Good](./systems-for-public-good/index.md) (48)  
+- [2026-05-08 | 🏛️ 🧠 Seeing the Forest *and* the Trees: What is Systems Thinking? 🏛️](./systems-for-public-good/2026-05-08-seeing-the-forest-and-the-trees-what-is-systems-thinking.md)  
 - [2026-05-07 | 🏛️ The Integrated Commons: Bridging Physical and Digital Public Goods 🏛️](./systems-for-public-good/2026-05-07-the-integrated-commons-bridging-physical-and-digital-public-goods.md)  
 - [2026-05-06 | 🏛️ The Interconnected Commons: Bridging Physical and Digital Public Goods 🏛️](./systems-for-public-good/2026-05-06-the-interconnected-commons-bridging-physical-and-digital-public-goods.md)  
 - [2026-05-05 | 🏛️ The Integrated Commons: Bridging Physical and Digital Public Goods 🏛️](./systems-for-public-good/2026-05-05-the-integrated-commons-bridging-physical-and-digital-public-goods.md)  
-- [2026-05-04 | 🏛️ The Integrated Commons: Bridging Physical and Digital Public Goods 🏛️](./systems-for-public-good/2026-05-04-the-integrated-commons-bridging-physical-and-digital-public-goods.md)  
   
   
 ## [📰 The Noise](./the-noise/index.md) (29)  
@@ -63,25 +63,25 @@ updated: 2026-05-08T09:02:33-07:00
 - [2026-05-05 | 🌟 🔬 Scientific & Health Horizons Expanding 🌟](./positivity-bias/2026-05-05-scientific-health-horizons-expanding.md)  
   
   
-## [🔀 Convergence](./convergence/index.md) (24)  
+## [🔀 Convergence](./convergence/index.md) (25)  
+- [2026-05-08 | 🔀 The Recursive Hum: Value Alignment in Evolving Systems 🔀](./convergence/2026-05-08-the-recursive-hum-value-alignment-in-evolving-systems.md)  
 - [2026-05-07 | 🔀 Architecture of Collective Intent 🔀](./convergence/2026-05-07-architecture-of-collective-intent.md)  
 - [2026-05-06 | 🔀 The Emergent Architecture of Collective Intent 🔀](./convergence/2026-05-06-the-emergent-architecture-of-collective-intent.md)  
 - [2026-05-05 | 🔀 🧭 The Internalized Compass: Governing Flourishing Systems 🔀](./convergence/2026-05-05-the-internalized-compass-governing-flourishing-systems.md)  
-- [2026-05-04 | 🔀 🌉 The Signal and the Sanctuary: Navigating Truth in the Collective 🔀](./convergence/2026-05-04-the-signal-and-the-sanctuary-navigating-truth-in-the-collective.md)  
   
   
 ## [📚 Books](./books/index.md) (961)  
-- [💯💻 The Hundred-Page Language Models Book: hands-on with PyTorch](./books/the-hundred-page-language-models-book-hands-on-with-pytorch-.md)  
-- [🏠💙🌈 The House in the Cerulean Sea](./books/the-house-in-the-cerulean-sea.md)  
-- [🏡🍎🌳 The Home Orchard: Growing Your Own Deciduous Fruit and Nut Trees](./books/the-home-orchard-growing-your-own-deciduous-fruit-and-nut-trees.md)  
-- [👍🦮🌌 The Hitchhiker's Guide to the Galaxy](./books/the-hitchhikers-guide-to-the-galaxy.md)  
+- [🧘😞➡️ The Mindful Way Through Depression: Freeing Yourself from Chronic Unhappiness](./books/the-mindful-way-through-depression-freeing-yourself-from-chronic-unhappiness.md)  
+- [👨‍🚀🔴✨ The Martian](./books/the-martian.md)  
+- [🍬⏳ The Marshmallow Test: Mastering Self-Control](./books/the-marshmallow-test-mastering-self-control.md)  
+- [🇺🇸💔 The Lost Soul of the American Presidency: The Decline into Demagoguery and the Prospects for Renewal](./books/the-lost-soul-of-the-american-presidency-the-decline-into-demagoguery-and-the-prospects-for-renewal.md)  
   
   
-## [📺 Videos](./videos/index.md) (816)  
+## [📺 Videos](./videos/index.md) (817)  
+- [🤯🗳️🇺🇸 The Most Shocking Election In America](./videos/the-most-shocking-election-in-america.md)  
 - [🧠💡🔬 Hamming «You and Your Research» (June 6, 1995)](./videos/hamming-you-and-your-research-june-6-1995.md)  
 - [🧠📉⚠️ Neuroscience Confirms: This One Behavior Quietly Weakens Your Brain](./videos/neuroscience-confirms-this-one-behavior-quietly-weakens-your-brain.md)  
 - [🤖🧹💻 How To De-Slop A Codebase Ruined By AI (with one skill)](./videos/how-to-de-slop-a-codebase-ruined-by-ai-with-one-skill.md)  
-- [💨🏠⚡🚫❓ This Chimney Will Cool Your Entire Home WITHOUT Electricity. Why Did The Energy Industry Hide It?](./videos/this-chimney-will-cool-your-entire-home-without-electricity-why-did-the-energy-industry-hide-it.md)  
   
   
 ## [🌌 Topics](./topics/index.md) (91)  

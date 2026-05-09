@@ -9,9 +9,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-20T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-05-09T01:48:15Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A cinematic, high-contrast illustration of the Supreme Court building at dusk. The iconic marble columns are illuminated by flickering, ominous red light, casting long, distorted shadows across the plaza. In the foreground, a singular, heavy wooden gavel rests on a cracked stone surface, partially obscured by a swirling, dark fog. The atmosphere is tense and atmospheric, with the stars of the American flag faintly visible in a stormy, dark blue sky above the pediment. The composition emphasizes a sense of instability and looming institutional weight, using a stark palette of deep charcoal, midnight blue, and blood-red accents to evoke a feeling of political volatility and profound consequence.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # ⚠️🏛️👹🇺🇸 The Most Dangerous Branch: Inside the Supreme Court in the Age of Trump  
+![books-the-most-dangerous-branch-inside-the-supreme-court-in-the-age-of-trump](../books-the-most-dangerous-branch-inside-the-supreme-court-in-the-age-of-trump.jpg)  
 [🛒 The Most Dangerous Branch: Inside the Supreme Court in the Age of Trump. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4kaYFSX)  
   
 ## 📖 Book Report: ⚖️ The Most Dangerous Branch: 🏛️ Inside the Supreme Court in the Age of Trump  

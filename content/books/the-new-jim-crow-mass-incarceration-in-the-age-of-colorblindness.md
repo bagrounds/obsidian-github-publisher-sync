@@ -10,9 +10,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-15T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-05-09T11:25:24Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A high-contrast, minimalist illustration featuring a series of vertical steel bars that seamlessly transition into the silhouettes of figures walking in a line. The background is a stark, desaturated gray, suggesting an institutional setting. At the center, a subtle, stylized gradient shifts from light to dark, representing the age of colorblindness masking a deeper, underlying structure. The composition uses negative space to emphasize the feeling of confinement and systemic entrapment. The overall aesthetic is somber, modern, and evocative, focusing on the intersection of architecture and human experience without the use of text or symbolic iconography.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🧑🏿⛓️🙈 The New Jim Crow: Mass Incarceration in the Age of Colorblindness  
+![books-the-new-jim-crow-mass-incarceration-in-the-age-of-colorblindness](../books-the-new-jim-crow-mass-incarceration-in-the-age-of-colorblindness.jpg)  
 [🛒 The New Jim Crow: Mass Incarceration in the Age of Colorblindness. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4l1KOja)  
   
 ## 📚 Book Report: ⚖️ The New Jim Crow: ⛓️ Mass Incarceration in the Age of Colorblindness  

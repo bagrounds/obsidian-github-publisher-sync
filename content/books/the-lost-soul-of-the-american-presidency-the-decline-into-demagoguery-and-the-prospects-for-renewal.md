@@ -10,9 +10,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-21T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-05-08T23:30:10Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A lone, neoclassical marble pedestal stands in the center of a desolate, windswept landscape at twilight. Atop the pedestal sits a cracked, tarnished bronze bust of an idealized statesman, its features weathered and partially obscured by creeping shadows. The sky above is a dramatic gradient of deep indigo and fading amber, suggesting the end of an era. In the foreground, a single, flickering candle flame struggles against the encroaching darkness, casting a long, wavering shadow across the ground. The aesthetic is somber and cinematic, utilizing high-contrast lighting to evoke a sense of institutional decay and the fragile hope for renewal. No human figures are present, keeping the focus entirely on the symbolic erosion of the office.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🇺🇸💔 The Lost Soul of the American Presidency: The Decline into Demagoguery and the Prospects for Renewal  
+![books-the-lost-soul-of-the-american-presidency-the-decline-into-demagoguery-and-the-prospects-for-renewal](../books-the-lost-soul-of-the-american-presidency-the-decline-into-demagoguery-and-the-prospects-for-renewal.jpg)  
 [🛒 The Lost Soul of the American Presidency: The Decline into Demagoguery and the Prospects for Renewal. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4os00rk)  
   
 ### 🏆 Stephen F. Knott's The Lost Soul of the American Presidency Cheat Sheet  

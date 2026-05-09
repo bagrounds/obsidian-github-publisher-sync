@@ -5,10 +5,10 @@ aliases:
 title: 📺 Videos
 URL: https://bagrounds.org/videos
 backlinks: false
-updated: 2026-05-08T18:03:03-07:00
+updated: 2026-05-08T18:12:54-07:00
 ---
 [Home](../index.md)  
-# 📺 Videos (817)  
+# 📺 Videos (818)  
 - [💰🤑🤖💡🚀💲 $0.10 per Month Runs My Entire AI Life. I'll Show You How.](./0-10-month-runs-my-entire-ai-life-ill-show-you-how.md)  
 - [📊📈📉📃👁️ 10 Charts to Understand the 900 Page Budget Bill](./10-charts-to-understand-the-900-page-budget-bill.md)  
 - [🤖🔗⬆️✅ 12-Factor Agents: Patterns of reliable LLM applications — Dex Horthy, HumanLayer](./12-factor-agents-patterns-of-reliable-llm-applications-dex-horthy-humanlayer.md)  
@@ -235,6 +235,7 @@ updated: 2026-05-08T18:03:03-07:00
 - [🏛️💥🧱🚫 Government barreling toward shutdown with Congress in partisan deadlock](./government-barreling-toward-shutdown-with-congress-in-partisan-deadlock.md)  
 - [🌊🚨🇺🇸 Gov. Ferguson Declares Emergency as ‘Historic Flooding’ Hits Washington](./gov-ferguson-declares-emergency-as-historic-flooding-hits-washington.md)  
 - [🚨🚔💥⚰️🇺🇸 Gov. Walz holds briefing after ICE agent shoots and kills woman in Minneapolis](./watch-live-gov-walz-holds-briefing-after-ice-agent-shoots-and-kills-woman-in-minneapolis.md)  
+- [🗳️💬🔮 Graham Platner On Service, Messaging & the Future for Democrats | The Weekly Show with Jon Stewart](./graham-platner-on-service-messaging-the-future-for-democrats-the-weekly-show-with-jon-stewart.md)  
 - [🌍🎙️ Grounded Podcast with Jon Tester & Maritsa Georgiou](./grounded-podcast-with-jon-tester-maritsa-georgiou.md)  
 - [🫀💪📈 Guide How to Build a Monster Aerobic System | Your Detailed Guide](./how-to-build-a-monster-aerobic-system-your-detailed-guide.md)  
 - [🧠💡🔬 Hamming «You and Your Research» (June 6, 1995)](./hamming-you-and-your-research-june-6-1995.md)  

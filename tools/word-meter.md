@@ -24,10 +24,15 @@ description: "Count the ambient spoken words around you with a single tap, using
 - 🔢 The big number is the total words spoken since you started
 - ⏱️ See your words-per-minute over the last 1 minute, last 10 minutes, and overall
 - 💬 The captions panel shows the last 30 seconds of recognized speech, fading as it ages
+- 🔒 Pick **On-device** (default) or **Cloud** recognition — see below
+
+### On-device vs. cloud
+
+The page exposes a small **Recognition** chooser. **On-device** is the default and asks the browser to keep audio handling local using the standardized `processLocally` hint. Recent Chromium and Safari can fulfill this request when the language pack is installed; otherwise the browser may fall back, or recognition may fail with a clear message you can act on. **Cloud** mode lets the browser stream audio to its vendor's speech service (Google, in Chromium's case) which usually offers wider language coverage at the cost of privacy.
 
 ### Browser support
 
-The Web Speech API is supported in **Chrome, Edge, and Safari**. Firefox does not currently expose `SpeechRecognition`. Safari runs recognition on-device; Chromium-based browsers typically stream audio to Google's speech service for transcription. This page itself never sends or stores anything.
+The Web Speech API is supported in **Chrome, Edge, and Safari**. Firefox does not currently expose `SpeechRecognition`. The on-device toggle is most meaningful on recent Chromium builds; older browsers ignore the hint and behave as they always have.
 
 ### Tips
 

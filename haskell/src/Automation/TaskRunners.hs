@@ -93,7 +93,7 @@ import Automation.SocialPosting (autoPost)
 import Automation.TaskRunner (logMsg, failTask)
 import Automation.Text (stripCodeFences)
 import Automation.Title (mkTitle)
-import Automation.VaultSync (syncFileToVault, syncNewAiBlogPosts, copySeriesPosts, syncRepoPostsToVault, ensureFileInVault)
+import Automation.VaultSync (syncFileToVault, syncNewMarkdownFiles, copySeriesPosts, syncRepoPostsToVault, ensureFileInVault)
 import Automation.Wikilink (buildBackLink)
 
 callGeminiForGenerator :: Context.AppContext -> NonEmpty Gemini.Model -> (Text, Text) -> IO (Text, Text)
@@ -271,10 +271,16 @@ runBackfillImages context contentDirs = do
 
   let repoAiBlogDir = repoRoot </> "ai-blog"
       vaultAiBlogDir = vaultDir </> "ai-blog"
-  newPostCount <- syncNewAiBlogPosts repoAiBlogDir vaultAiBlogDir logMsg
+      repoToolsDir = repoRoot </> "tools"
+      vaultToolsDir = vaultDir </> "tools"
+  newPostCount <- syncNewMarkdownFiles repoAiBlogDir vaultAiBlogDir logMsg
   case newPostCount of
     0 -> pure ()
     count -> logMsg $ "  📝 Synced " <> T.pack (show count) <> " new AI blog post(s) to vault"
+  newToolCount <- syncNewMarkdownFiles repoToolsDir vaultToolsDir logMsg
+  case newToolCount of
+    0 -> pure ()
+    count -> logMsg $ "  🧰 Synced " <> T.pack (show count) <> " new tool page(s) to vault"
 
   envMap <- buildEnvMap
     [ "GEMINI_API_KEY", "CLOUDFLARE_API_TOKEN", "CLOUDFLARE_ACCOUNT_ID"

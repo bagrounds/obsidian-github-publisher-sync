@@ -11,9 +11,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-16T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-05-09T06:58:08Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A minimalist, high-contrast illustration featuring a jagged, steep mountain peak under a vast, empty sky. At the base of the incline, a single, small silhouette of a man is captured in mid-stride, pushing a perfectly spherical, heavy boulder upward. The lighting is dramatic, with long, sharp shadows stretching across the rocky terrain. The color palette is restricted to cool slate grays, deep blacks, and a single, stark white light source, emphasizing the cold indifference of the environment. The composition focuses on the immense scale of the mountain relative to the human figure, capturing the essence of eternal, repetitive struggle and the quiet, stoic resolve of the individual against an infinite horizon.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🏔️ The Myth of Sisyphus  
+![books-the-myth-of-sisyphus](../books-the-myth-of-sisyphus.jpg)  
 [🛒 The Myth of Sisyphus. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/43JseFh)  
   
 ## 📖 Book Report: The Myth of Sisyphus by Albert Camus  

@@ -39,6 +39,7 @@ data UpdateDetail
   = ImageAdded
   | InternalLinksAdded Int
   | PostedTo Platform
+  | BookReportGenerated
   deriving (Show, Eq, Ord)
 
 -- | A link to an updated page with its details
@@ -57,27 +58,30 @@ data PageEntry = PageEntry
 
 -- Column identity: two details belong to the same column when their structure matches
 sameColumn :: UpdateDetail -> UpdateDetail -> Bool
-sameColumn ImageAdded ImageAdded                     = True
+sameColumn ImageAdded ImageAdded                         = True
 sameColumn (InternalLinksAdded _) (InternalLinksAdded _) = True
-sameColumn (PostedTo a) (PostedTo b)                 = a == b
-sameColumn _ _                                       = False
+sameColumn (PostedTo a) (PostedTo b)                     = a == b
+sameColumn BookReportGenerated BookReportGenerated       = True
+sameColumn _ _                                           = False
 
 -- Canonical column ordering determines table layout
 canonicalColumns :: [UpdateDetail]
 canonicalColumns =
   [ ImageAdded
   , InternalLinksAdded 0
+  , BookReportGenerated
   , PostedTo Bluesky
   , PostedTo Mastodon
   , PostedTo Twitter
   ]
 
 columnEmoji :: UpdateDetail -> Text
-columnEmoji ImageAdded            = "🖼️"
+columnEmoji ImageAdded             = "🖼️"
 columnEmoji (InternalLinksAdded _) = "🔗"
-columnEmoji (PostedTo Bluesky)    = "🦋"
-columnEmoji (PostedTo Mastodon)   = "🐘"
-columnEmoji (PostedTo Twitter)    = "🐦"
+columnEmoji BookReportGenerated    = "📚"
+columnEmoji (PostedTo Bluesky)     = "🦋"
+columnEmoji (PostedTo Mastodon)    = "🐘"
+columnEmoji (PostedTo Twitter)     = "🐦"
 
 cellText :: UpdateDetail -> Text
 cellText (InternalLinksAdded n) = T.pack (show n)
@@ -92,12 +96,13 @@ unescapeTablePipe = T.replace "\\|" "|"
 -- Serialization for backward compatibility with bullet format
 detailFromText :: Text -> Maybe UpdateDetail
 detailFromText text
-  | text == "🖼️ added image"       = Just ImageAdded
-  | "🔗 added " `T.isPrefixOf` text = parseInternalLinks text
-  | text == "🦋 posted to BlueSky"  = Just (PostedTo Bluesky)
-  | text == "🐘 posted to Mastodon" = Just (PostedTo Mastodon)
-  | text == "🐦 posted to Twitter"  = Just (PostedTo Twitter)
-  | otherwise                       = Nothing
+  | text == "🖼️ added image"        = Just ImageAdded
+  | "🔗 added " `T.isPrefixOf` text  = parseInternalLinks text
+  | text == "📚 book report"         = Just BookReportGenerated
+  | text == "🦋 posted to BlueSky"   = Just (PostedTo Bluesky)
+  | text == "🐘 posted to Mastodon"  = Just (PostedTo Mastodon)
+  | text == "🐦 posted to Twitter"   = Just (PostedTo Twitter)
+  | otherwise                        = Nothing
   where
     parseInternalLinks source =
       let stripped = T.drop (T.length "🔗 added ") source
@@ -107,6 +112,7 @@ detailFromText text
 emojiToColumnRepresentative :: Text -> Maybe UpdateDetail
 emojiToColumnRepresentative "🖼️" = Just ImageAdded
 emojiToColumnRepresentative "🔗"  = Just (InternalLinksAdded 0)
+emojiToColumnRepresentative "📚"  = Just BookReportGenerated
 emojiToColumnRepresentative "🦋"  = Just (PostedTo Bluesky)
 emojiToColumnRepresentative "🐘"  = Just (PostedTo Mastodon)
 emojiToColumnRepresentative "🐦"  = Just (PostedTo Twitter)

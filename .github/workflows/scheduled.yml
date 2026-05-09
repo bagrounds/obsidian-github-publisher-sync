@@ -6,7 +6,7 @@ on:
   workflow_dispatch:
     inputs:
       task:
-        description: "Run a specific task (e.g. social-posting, blog-series:chickie-loo, internal-linking)"
+        description: "Run a specific task (e.g. social-posting, book-reports, blog-series:chickie-loo, internal-linking)"
         required: false
         type: string
       hour:
@@ -90,6 +90,8 @@ jobs:
           DISABLE_MASTODON: ${{ vars.DISABLE_MASTODON || '' }}
           LINKING_MODEL: ${{ vars.LINKING_MODEL || 'gemini-3.1-flash-lite-preview' }}
           GA_PROPERTY_ID: ${{ secrets.GA_PROPERTY_ID }}
+          AMAZON_ASSOCIATES_TAG: ${{ vars.AMAZON_ASSOCIATES_TAG || '' }}
+          BOOK_REPORT_MODEL: ${{ vars.BOOK_REPORT_MODEL || '' }}
           REPO_ROOT: ${{ github.workspace }}
         run: >-
           bin/run-scheduled

@@ -84,6 +84,7 @@ Pacific before making decisions via `nowPacificHour()`.
 | Every hour | `backfill-blog-images` | 🖼️ Backfill 1 missing blog image per hour |
 | Every hour | `internal-linking` | 🔗 BFS wikilink insertion for 1 note per hour |
 | 0,2,4,6,8,10,12,14,16,18,20,22 | `social-posting` | 📢 Auto-post to X/Bluesky/Mastodon (every 2 hours) |
+| 🚫 Not auto-scheduled | `book-reports` | 📚🤖 Auto-generate a book report for a book referenced in a recent reflection but lacking a `books/<slug>.md` page. Invoke manually with `--task book-reports`. See [`book-reports.md`](./book-reports.md). |
 
 ### 🛡️ Social Media Safety Gate
 

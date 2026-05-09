@@ -60,6 +60,13 @@ import qualified Automation.InternalLinking.LinkExtractionTest
 import qualified Automation.InternalLinking.CandidateDiscoveryTest
 import qualified Automation.InternalLinking.GeminiTest
 
+import qualified Automation.BookReports.AmazonTest
+import qualified Automation.BookReports.DiscoveryTest
+import qualified Automation.BookReports.PendingStateTest
+import qualified Automation.BookReports.ReflectionUpdateTest
+import qualified Automation.BookReports.ReportTest
+import qualified Automation.BookReports.TypesTest
+
 main :: IO ()
 main = defaultMain $ testGroup "Automation"
   [ Automation.SchedulerTest.tests
@@ -117,4 +124,10 @@ main = defaultMain $ testGroup "Automation"
   , Automation.InternalLinking.LinkExtractionTest.tests
   , Automation.InternalLinking.CandidateDiscoveryTest.tests
   , Automation.InternalLinking.GeminiTest.tests
+  , Automation.BookReports.AmazonTest.tests
+  , Automation.BookReports.DiscoveryTest.tests
+  , Automation.BookReports.PendingStateTest.tests
+  , Automation.BookReports.ReflectionUpdateTest.tests
+  , Automation.BookReports.ReportTest.tests
+  , Automation.BookReports.TypesTest.tests
   ]

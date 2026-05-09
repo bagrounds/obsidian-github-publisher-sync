@@ -11,6 +11,7 @@ module Automation.DailyReflection
   , updateDailyReflection
   , findFirstSectionIndex
   , embedSectionHeaders
+  , trailingSectionHeaders
   , changesLink
   , ChangesStats (..)
   , renderChangesStats

@@ -42,6 +42,7 @@ data TaskId
   | AiFiction
   | ReflectionTitle
   | DailyAnalytics
+  | BookReports
   deriving (Show, Eq, Ord)
 
 data ScheduleEntry = ScheduleEntry
@@ -66,6 +67,7 @@ taskIdToText = \case
   AiFiction           -> "ai-fiction"
   ReflectionTitle     -> "reflection-title"
   DailyAnalytics      -> "daily-analytics"
+  BookReports         -> "book-reports"
 
 staticTaskIds :: [TaskId]
 staticTaskIds =
@@ -75,6 +77,7 @@ staticTaskIds =
   , AiFiction
   , ReflectionTitle
   , DailyAnalytics
+  , BookReports
   ]
 
 taskIdFromText :: [TaskId] -> Text -> Maybe TaskId
@@ -95,6 +98,10 @@ staticSchedule =
   , ScheduleEntry BackfillBlogImages everyHour False
   , ScheduleEntry InternalLinking everyHour False
   , ScheduleEntry SocialPosting [0, 2, 4, 6, 8, 10, 12, 14, 16, 18, 20, 22] False
+  -- Manual-only: empty hours means cron never invokes it. The ID remains
+  -- valid via `--task book-reports` (CLI or workflow_dispatch) so live
+  -- testing is possible without auto-publishing.
+  , ScheduleEntry BookReports [] False
   ]
 
 buildSchedule :: [ScheduleEntry] -> [ScheduleEntry]

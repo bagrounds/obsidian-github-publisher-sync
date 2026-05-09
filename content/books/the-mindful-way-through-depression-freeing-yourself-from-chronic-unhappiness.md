@@ -10,9 +10,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-16T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-05-09T00:43:17Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A minimalist, high-contrast illustration featuring a silhouette of a person sitting in a meditative posture. From their chest, a tangled, dark gray knot of scribbled lines—symbolizing rumination and depression—gradually unravels into a soft, glowing golden thread that flows upward and outward into the surrounding space. The background is a calm, deep navy blue that transitions into a soft, warm amber light near the figure. The overall composition is clean and serene, focusing on the metaphor of clarity emerging from chaos. The style is modern, flat vector art with soft gradients, emphasizing a sense of gentle transformation, breath, and inner space.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🧘😞➡️ The Mindful Way Through Depression: Freeing Yourself from Chronic Unhappiness  
+![books-the-mindful-way-through-depression-freeing-yourself-from-chronic-unhappiness](../books-the-mindful-way-through-depression-freeing-yourself-from-chronic-unhappiness.jpg)  
 [🛒 The Mindful Way Through Depression: Freeing Yourself from Chronic Unhappiness. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3ZksF7v)  
   
 ## 📚 Book Report: The Mindful Way Through Depression: Freeing Yourself from Chronic Unhappiness  

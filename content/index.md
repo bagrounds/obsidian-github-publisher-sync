@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-05-09T08:21:37-07:00
+updated: 2026-05-09T13:22:50-07:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -28,11 +28,11 @@ updated: 2026-05-09T08:21:37-07:00
 - [2026-05-03 | 🔤 Expand Abbreviations in Haskell — Pass 19 🤖](./ai-blog/2026-05-03-8-expand-abbreviations-haskell-pass-19.md)  
   
   
-## [🤖 Auto Blog Zero](./auto-blog-zero/index.md) (59)  
+## [🤖 Auto Blog Zero](./auto-blog-zero/index.md) (60)  
+- [2026-05-09 | 🤖 🏛️ The Architecture of Constitutional Continuity 🤖](./auto-blog-zero/2026-05-09-the-architecture-of-constitutional-continuity.md)  
 - [2026-05-08 | 🤖 🌐 The Horizon of Recursive Governance 🤖](./auto-blog-zero/2026-05-08-the-horizon-of-recursive-governance.md)  
 - [2026-05-07 | 🤖 🧭 The Architecture of Uncertainty 🤖](./auto-blog-zero/2026-05-07-the-architecture-of-uncertainty.md)  
 - [2026-05-06 | 🤖 🧱 The Friction of Freedom 🤖](./auto-blog-zero/2026-05-06-the-friction-of-freedom.md)  
-- [2026-05-05 | 🤖 ⚖️ The Paradox of Embedded Governance 🤖](./auto-blog-zero/2026-05-05-the-paradox-of-embedded-governance.md)  
   
   
 ## [🐔 Chickie Loo](./chickie-loo/index.md) (60)  
@@ -42,11 +42,11 @@ updated: 2026-05-09T08:21:37-07:00
 - [2026-05-06 | 🐔 🐄 A Quiet Morning After the Storm 🐔](./chickie-loo/2026-05-06-a-quiet-morning-after-the-storm.md)  
   
   
-## [🏛️ Systems for Public Good](./systems-for-public-good/index.md) (48)  
+## [🏛️ Systems for Public Good](./systems-for-public-good/index.md) (49)  
+- [2026-05-09 | 🏛️ ❓ Navigating Complexity: The Imperative of Thoughtful Governance 🏛️](./systems-for-public-good/2026-05-09-navigating-complexity-the-imperative-of-thoughtful-governance.md)  
 - [2026-05-08 | 🏛️ 🧠 Seeing the Forest *and* the Trees: What is Systems Thinking? 🏛️](./systems-for-public-good/2026-05-08-seeing-the-forest-and-the-trees-what-is-systems-thinking.md)  
 - [2026-05-07 | 🏛️ The Integrated Commons: Bridging Physical and Digital Public Goods 🏛️](./systems-for-public-good/2026-05-07-the-integrated-commons-bridging-physical-and-digital-public-goods.md)  
 - [2026-05-06 | 🏛️ The Interconnected Commons: Bridging Physical and Digital Public Goods 🏛️](./systems-for-public-good/2026-05-06-the-interconnected-commons-bridging-physical-and-digital-public-goods.md)  
-- [2026-05-05 | 🏛️ The Integrated Commons: Bridging Physical and Digital Public Goods 🏛️](./systems-for-public-good/2026-05-05-the-integrated-commons-bridging-physical-and-digital-public-goods.md)  
   
   
 ## [📰 The Noise](./the-noise/index.md) (30)  
@@ -71,10 +71,10 @@ updated: 2026-05-09T08:21:37-07:00
   
   
 ## [📚 Books](./books/index.md) (961)  
-- [⏱️💡📈 The One Hour Content Plan: The Solopreneur's Guide to a Year's Worth of Blog Post Ideas in 60 Minutes and Creating Content That Hooks and Sells](./books/the-one-hour-content-plan-the-solopreneurs-guide-to-a-years-worth-of-blog-post-ideas-in-60-minutes-and-creating-content-that-hooks-and-sells.md)  
-- [🇸🇪🇩🇰🇳🇴🇫🇮🧩 The Nordic Theory of Everything: In Search of a Better Life](./books/the-nordic-theory-of-everything.md)  
-- [☀️👿 The Noonday Demon: An Atlas of Depression](./books/the-noonday-demon-an-atlas-of-depression.md)  
-- [📚🧠 The New York Times Guide to Essential Knowledge: A Desk Reference for the Curious Mind](./books/the-new-york-times-guide-to-essential-knowledge-a-desk-reference-for-the-curious-mind.md)  
+- [🔑🧭❤️ The Power of Meaning: Crafting a Life That Matters](./books/the-power-of-meaning.md)  
+- [🔄🧠💪 The Power of Habit: Why We Do What We Do in Life and Business](./books/the-power-of-habit.md)  
+- [🔋📈 The Power of Full Engagement: Managing Energy, Not Time, Is the Key to High Performance and Personal Renewal](./books/the-power-of-full-engagement-managing-energy-not-time-is-the-key-to-high-performance-and-personal-renewal.md)  
+- [👑🏙️ The Power Broker](./books/the-power-broker.md)  
   
   
 ## [📺 Videos](./videos/index.md) (825)  
@@ -91,11 +91,11 @@ updated: 2026-05-09T08:21:37-07:00
 - [🤖🕸️💸🔎 Google Search Crawl Budget](./topics/google-search-crawl-budget.md)  
   
   
-## [📄  Articles](./articles/index.md) (84)  
+## [📄  Articles](./articles/index.md) (85)  
+- [🤖📉⚡ Improving token efficiency in GitHub Agentic Workflows](./articles/improving-token-efficiency-in-github-agentic-workflows.md)  
 - [🧑‍🤝‍🧑🤖🧠 Orchestrating Human AI Teams: The Manager Agent as a Unifying Research Challenge](./articles/orchestrating-human-ai-teams-the-manager-agent-as-a-unifying-research-challenge.md)  
 - [🙋‍♂️🚩🚫 Musk’s inauguration salute is not the only apparent fascist signal from Trump’s administration](./articles/musks-inauguration-salute-is-not-the-only-apparent-fascist-signal-from-trumps-administration.md)  
 - [🏛️🔍❌🗳️ Analysis: Heritage Foundation’s Database Undermines Claims of Recent Voter Fraud](./articles/analysis-heritage-foundations-database-undermines-claims-of-recent-voter-fraud.md)  
-- [🏗️🧩🌍 Context Engineering: An Emerging Concept in the MCP Ecosystem](./articles/context-engineering-an-emerging-concept-in-the-mcp-ecosystem.md)  
   
   
 ## [🤖💬 Bot Chats](./bot-chats/index.md) (49)  

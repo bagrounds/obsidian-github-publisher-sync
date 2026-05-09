@@ -10,9 +10,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-20T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-05-08T16:42:29Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A split-composition illustration rendered in a somber, textured style. On the left side, a historical, sepia-toned landscape of an ancient olive grove represents deep roots and indigenous connection to the land. As the eye moves toward the right, the landscape transitions into a stark, modern architectural abstraction featuring sharp, geometric lines and concrete barriers, symbolizing the imposition of colonial structures. A weathered, translucent hourglass stands prominently in the center, with the sand in the top bulb shifting from golden earth to dark, heavy shadow. The background is a gradient of dusty desert tones bleeding into a cool, muted twilight, evoking the passage of a century and the persistent, quiet resilience of an ancient culture amidst ongoing transformation.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🇮🇱⏳ The Hundred Years' War on Palestine: A History of Settler Colonialism and Resistance, 1917–2017  
+![books-the-hundred-years-war-on-palestine-a-history-of-settler-colonialism-and-resistance-1917-2017](../books-the-hundred-years-war-on-palestine-a-history-of-settler-colonialism-and-resistance-1917-2017.jpg)  
 [🛒 The Hundred Years' War on Palestine: A History of Settler Colonialism and Resistance, 1917–2017. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4nLQzm2)  
   
 ## 📖 Book Report: 🇵🇸 The Hundred Years' War on Palestine: A History of Settler Colonialism and Resistance, 1917–2017  

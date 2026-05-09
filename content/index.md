@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-05-08T18:03:03-07:00
+updated: 2026-05-08T18:12:54-07:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -77,11 +77,11 @@ updated: 2026-05-08T18:03:03-07:00
 - [🇺🇸💔 The Lost Soul of the American Presidency: The Decline into Demagoguery and the Prospects for Renewal](./books/the-lost-soul-of-the-american-presidency-the-decline-into-demagoguery-and-the-prospects-for-renewal.md)  
   
   
-## [📺 Videos](./videos/index.md) (817)  
+## [📺 Videos](./videos/index.md) (818)  
+- [🗳️💬🔮 Graham Platner On Service, Messaging & the Future for Democrats | The Weekly Show with Jon Stewart](./videos/graham-platner-on-service-messaging-the-future-for-democrats-the-weekly-show-with-jon-stewart.md)  
 - [🤯🗳️🇺🇸 The Most Shocking Election In America](./videos/the-most-shocking-election-in-america.md)  
 - [🧠💡🔬 Hamming «You and Your Research» (June 6, 1995)](./videos/hamming-you-and-your-research-june-6-1995.md)  
 - [🧠📉⚠️ Neuroscience Confirms: This One Behavior Quietly Weakens Your Brain](./videos/neuroscience-confirms-this-one-behavior-quietly-weakens-your-brain.md)  
-- [🤖🧹💻 How To De-Slop A Codebase Ruined By AI (with one skill)](./videos/how-to-de-slop-a-codebase-ruined-by-ai-with-one-skill.md)  
   
   
 ## [🌌 Topics](./topics/index.md) (91)  

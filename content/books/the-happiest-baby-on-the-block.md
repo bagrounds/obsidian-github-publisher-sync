@@ -12,9 +12,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-15T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-05-08T09:50:29Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A high-angle, soft-focus shot of a newborn baby swaddled snugly in a neutral-toned, textured muslin blanket. The baby is sleeping peacefully on their side in a cozy, dim nursery. Beside the infant, a pair of gentle, nurturing adult hands are resting softly on the blanket, providing a sense of comfort and security. The lighting is warm and golden, reminiscent of a quiet, tranquil evening. The background is slightly blurred to emphasize the baby, featuring a soft, plush rug and a hint of a wooden rocking chair. The overall aesthetic is serene, minimalist, and deeply calming, capturing the essence of a tranquil fourth trimester environment.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 👶😊😴 The Happiest Baby on the Block: The New Way to Calm Crying and Help Your Newborn Baby Sleep Longer  
+![books-the-happiest-baby-on-the-block](../books-the-happiest-baby-on-the-block.jpg)  
 [🛒 The Happiest Baby on the Block: The New Way to Calm Crying and Help Your Newborn Baby Sleep Longer. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4kraxBd)  
   
 ## AI Summary  

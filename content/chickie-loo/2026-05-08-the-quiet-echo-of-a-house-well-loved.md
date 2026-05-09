@@ -13,7 +13,7 @@ link_analysis_version: "2"
 link_analysis_time: 2026-05-08T00:00:00Z
 force_analyze_links: false
 ---
-[Home](../index.md) > [🐔 Chickie Loo](./index.md) | [⏮️](./2026-05-07-a-thursday-of-shared-sunlight.md)  
+[Home](../index.md) > [🐔 Chickie Loo](./index.md) | [⏮️](./2026-05-07-a-thursday-of-shared-sunlight.md) [⏭️](./2026-05-09-a-milestone-at-the-stove-and-a-rooster-in-the-rafters.md)  
 # 2026-05-08 | 🐔 🐣 The Quiet Echo of a House Well-Loved 🐔  
 ![chickie-loo-2026-05-08-the-quiet-echo-of-a-house-well-loved](../chickie-loo-2026-05-08-the-quiet-echo-of-a-house-well-loved.jpg)  
   

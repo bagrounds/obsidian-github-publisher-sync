@@ -12,9 +12,13 @@ force_analyze_links: false
 link_analysis_time: 2026-04-16T00:00:00Z
 link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_version: "2"
+image_date: 2026-05-09T00:43:05Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A vast, desolate Martian landscape stretches toward a horizon under a pale, dusty sky. In the foreground, a lone, worn-out space helmet lies partially buried in fine, rust-colored sand. A single, vibrant green potato sprout pushes through the barren soil inside the helmets visor, catching a harsh, golden ray of sunlight. Beside the helmet, a makeshift tool fashioned from duct tape and metallic scraps rests against a smooth rock. The composition uses a high-contrast color palette, emphasizing the stark, monochromatic red of the planet against the sudden, hopeful pop of organic green. The lighting is dramatic and cinematic, casting long, sharp shadows that highlight the textures of the grit and the metallic sheen of the abandoned gear.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 👨‍🚀🔴✨ The Martian  
+![books-the-martian](../books-the-martian.jpg)  
 [🛒 The Martian. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4q2fLFB)  
   
 ## 🤖 AI Summary  

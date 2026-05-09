@@ -10,9 +10,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-28T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-05-08T06:47:52Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A high-contrast, minimalist illustration featuring two large, stylized puzzle pieces rendered in deep red and navy blue. The pieces are positioned as if they are being forced together, but their jagged edges do not quite interlock, creating a visible, glowing fissure of white light between them. Rising from the center of this gap is a subtle, abstract bar graph or upward-trending arrow composed of fine, fragmented lines, symbolizing the intensification of political division. The background is a muted, textured slate gray, emphasizing the starkness of the two primary colors. The lighting is dramatic and cinematic, casting sharp shadows that suggest depth and tension, reflecting the profound societal misalignment described in the text.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🧑‍🤝‍🧑🐘⬆️ The Great Alignment: Race, Party Transformation, and the Rise of Donald Trump  
+![books-the-great-alignment-race-party-transformation-and-the-rise-of-donald-trump](../books-the-great-alignment-race-party-transformation-and-the-rise-of-donald-trump.jpg)  
 [🛒 The Great Alignment: Race, Party Transformation, and the Rise of Donald Trump. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3JKHwU4)  
   
 📊↔️🇺🇸 America's profound political polarization and Donald Trump's rise are rooted in a long-term societal alignment of racial, ideological, religious, and geographic divides, exacerbated by negative partisanship and white racial resentment, rather than solely economic grievances.  

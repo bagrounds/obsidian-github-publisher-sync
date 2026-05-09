@@ -9,9 +9,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-18T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-05-08T17:47:26Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A surreal, minimalist illustration depicting a human silhouette in profile, integrated with the mechanics of a clock. Inside the silhouette, a glowing golden sun rises near the chest area, transitioning into a deep indigo starry sky near the back of the head. Intricate, ethereal clock gears made of soft, translucent light float within the torso, connecting the head to the heart. The background is a gradient of soft dusk-to-dawn colors, transitioning from warm amber at the bottom to cool twilight blue at the top. The overall aesthetic is clean, modern, and harmonious, emphasizing the connection between biological nature and the passage of time.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # ⏰👤 The Inner Clock: Living in Sync with Our Circadian Rhythms  
+![books-the-inner-clock-living-in-sync-with-our-circadian-rhythms](../books-the-inner-clock-living-in-sync-with-our-circadian-rhythms.jpg)  
 [🛒 The Inner Clock: Living in Sync with Our Circadian Rhythms. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4kJoHgP)  
   
 ## 📚 Book Report: The Inner Clock by Lynne Peeples  

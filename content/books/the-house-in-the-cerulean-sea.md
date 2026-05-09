@@ -11,9 +11,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-23T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-05-08T15:43:34Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: "A whimsical, sun-drenched coastal scene featuring a charming, slightly crooked house perched on a grassy cliff overlooking a vibrant, cerulean-blue ocean. The sky is a soft gradient of pastel colors, hinting at a magical twilight. Scattered around the house are subtle, playful signs of life: a few colorful mismatched chairs on the porch, a small garden with glowing, bioluminescent flowers, and a few whimsical silhouettes of children playing near the shoreline. The overall aesthetic is warm, inviting, and ethereal, rendered in a soft, painterly illustration style that emphasizes comfort and tranquility. Sunlight glints off the gentle waves, creating a shimmering, peaceful atmosphere."
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🏠💙🌈 The House in the Cerulean Sea  
+![books-the-house-in-the-cerulean-sea](../books-the-house-in-the-cerulean-sea.jpg)  
 [🛒 The House in the Cerulean Sea. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3LE4hJX)  
   
 ## 🤖 AI Summary  

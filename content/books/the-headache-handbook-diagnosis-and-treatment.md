@@ -10,9 +10,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-16T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-05-08T11:40:49Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A minimalist illustration of a human head in profile, rendered with clean, soft lines. Inside the cranium, on one side, a cluster of vibrant, jagged red and orange lines pulsates subtly, depicting headache pain. These lines gradually smooth and transition across the brains center, evolving into calm, flowing waves of soft blue and green. A gentle, ethereal glow emanates from this soothing side, suggesting relief and understanding. The background is a soft, muted gradient, adding to the serene, hopeful atmosphere. The overall image evokes a journey from discomfort to clarity and peace.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🤕⚕️ The Headache Handbook: Diagnosis and Treatment  
+![books-the-headache-handbook-diagnosis-and-treatment](../books-the-headache-handbook-diagnosis-and-treatment.jpg)  
 [🛒 The Headache Handbook: Diagnosis and Treatment. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3Iw6HbS)  
   
 ## 📚 Book Report: The Headache Handbook: Diagnosis and Treatment  

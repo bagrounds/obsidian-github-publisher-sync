@@ -11,9 +11,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-18T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-05-08T18:43:07Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A stoic, gender-neutral silhouette stands firmly on a large, stable geometric block. Around them, dynamic, abstract lines in contrasting colors (e.g., red and blue) undulate wildly, forming peaks and troughs, symbolizing market volatility. The central figure calmly holds a small, glowing green sprout or geometric gem, representing intrinsic value and long-term growth. The stable block acts as a visual margin of safety, providing a sense of grounded wisdom amidst the surrounding chaos. The overall aesthetic is clean, strategic, and enduring, with a focus on stability and foresight.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🧠📈💰 The Intelligent Investor: The Definitive Book on Value Investing  
+![books-the-intelligent-investor](../books-the-intelligent-investor.jpg)  
 [🛒 The Intelligent Investor: The Definitive Book on Value Investing. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4mM0qbY)  
   
 ## 🤖 AI Summary  

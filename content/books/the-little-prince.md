@@ -10,9 +10,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-16T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-05-08T22:34:30Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A minimalist, whimsical illustration featuring a young boy with golden hair standing atop a tiny, spherical asteroid set against a vast, deep-blue starry night sky. The boy is silhouetted against a glowing, oversized yellow crescent moon. Beside him, a single, delicate red rose sits protected under a glass bell jar. A soft, warm light radiates from the planet, casting gentle highlights on the boy’s scarf as it flutters in an unseen breeze. The aesthetic is inspired by classic watercolor textures, utilizing a palette of midnight blues, muted yellows, and a singular, vibrant pop of crimson for the rose. The composition emphasizes a sense of solitude, wonder, and cosmic scale.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🤴 The Little Prince  
+![books-the-little-prince](../books-the-little-prince.jpg)  
 [🛒 The Little Prince. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4b9EaWc)  
   
 ✨🌹🦊 A profound allegory exploring themes of love, loss, friendship, and the often-forgotten wisdom of childhood through the eyes of an interplanetary traveler.  

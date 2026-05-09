@@ -10,9 +10,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-21T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-05-08T08:38:45Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A stark, high-contrast illustration featuring a stylized, translucent ballot box at the center, partially filled with metallic gold coins instead of ballots. A heavy, dark geometric shadow cast by the box morphs into the jagged, irregular shapes of gerrymandered district maps covering the ground. Above, a series of thick, interconnected iron chains—representing legislative and judicial restrictions—tighten around the ballot slot, preventing access. The color palette is limited to deep charcoal, slate gray, and cold metallic gold, set against a stark white background to emphasize the tension between institutional power and the democratic process. The aesthetic is modern, minimalist, and editorial, focusing on clear symbolic metaphors rather than realistic imagery.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🗳️💰⬇️ The Great Suppression: Voting Rights, Corporate Cash, and the Conservative Assault on Democracy  
+![books-the-great-suppression-voting-rights-corporate-cash-and-the-conservative-assault-on-democracy](../books-the-great-suppression-voting-rights-corporate-cash-and-the-conservative-assault-on-democracy.jpg)  
 [🛒 The Great Suppression: Voting Rights, Corporate Cash, and the Conservative Assault on Democracy. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/478nIlb)  
   
 ### 🏆 Zachary Roth's The Great Suppression Cheat Sheet  

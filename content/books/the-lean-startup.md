@@ -11,9 +11,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-16T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-05-08T20:37:56Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: "A continuous, looping arrow forms a dynamic path, representing iteration. Along this path are three distinct, abstract stations: a simple block being constructed by minimal tools (Build), a magnifying glass hovering over a small, evolving data graph (Measure), and a glowing lightbulb illuminating an upward-pointing arrow (Learn). In the center of the loop, a small, stylized seed sprouts into a robust, modern building or a rocket ascending, symbolizing growth and success. The aesthetic is clean, modern, and uses a palette of cool blues, greens, and a bright yellow highlight."
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 📉🧪🚀 The Lean Startup: How Today's Entrepreneurs Use Continuous Innovation to Create Radically Successful Businesses  
+![books-the-lean-startup](../books-the-lean-startup.jpg)  
 [🛒 The Lean Startup: How Today's Entrepreneurs Use Continuous Innovation to Create Radically Successful Businesses. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/45E1SH5)  
   
 ## 🤖 AI Summary  

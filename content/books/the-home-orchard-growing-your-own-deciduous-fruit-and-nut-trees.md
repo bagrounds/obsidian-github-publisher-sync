@@ -9,9 +9,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-16T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-05-08T14:46:05Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A sun-drenched, rustic backyard orchard scene captured during the golden hour. In the foreground, a pair of worn leather gardening gloves rests on a wooden potting bench next to a wicker basket overflowing with a harvest of crisp apples, fuzzy peaches, and a handful of walnuts. Behind the bench, several young, well-pruned fruit trees with lush green foliage stand in neat rows. A soft, dappled light filters through the canopy, highlighting the textures of the bark and the dew on the fruit. In the soft-focus background, a traditional wooden orchard ladder leans against a taller tree, and a small, sustainable home garden plot with rich, dark soil is visible. The color palette features warm earth tones, deep leafy greens, and the vibrant reds and golds of ripe fruit.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🏡🍎🌳 The Home Orchard: Growing Your Own Deciduous Fruit and Nut Trees  
+![books-the-home-orchard-growing-your-own-deciduous-fruit-and-nut-trees](../books-the-home-orchard-growing-your-own-deciduous-fruit-and-nut-trees.jpg)  
 [🛒 The Home Orchard: Growing Your Own Deciduous Fruit and Nut Trees. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3Hn567M)  
   
 ## 🌳 Book Report: The Home Orchard: Growing Your Own Deciduous Fruit and Nut Trees  

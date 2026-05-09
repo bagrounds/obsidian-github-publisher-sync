@@ -10,9 +10,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-16T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-05-08T14:45:53Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A worn, leather-bound electronic guidebook floats in the center of a vibrant, swirling nebula. A single, bright yellow towel is draped casually over the corner of the device. In the background, a small, lonely planet Earth hangs in the starry void, illuminated by a soft, ethereal glow. To the side, a metallic, spherical robot with a slumped posture sits forlornly on a jagged asteroid, looking out toward a distant, glowing galaxy. The color palette features deep space purples and blues contrasted with the bright, optimistic yellow of the towel and the warm, golden light of distant suns. The overall aesthetic is whimsical and surreal, capturing the vast, chaotic, and comedic nature of the cosmos.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 👍🦮🌌 The Hitchhiker's Guide to the Galaxy  
+![books-the-hitchhikers-guide-to-the-galaxy](../books-the-hitchhikers-guide-to-the-galaxy.jpg)  
 [🛒 The Hitchhiker's Guide to the Galaxy. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/41qogAX)  
   
 ## 📚 Book Report: The Hitchhiker's Guide to the Galaxy 🌌  

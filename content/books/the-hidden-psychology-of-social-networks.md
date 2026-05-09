@@ -11,9 +11,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-19T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-05-08T13:47:07Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A surreal, split-composition illustration depicting the human mind interacting with digital architecture. On the left, a dark, organic, and tangled forest representing the Id glows with neon, anonymous fiber-optic roots. In the center, a polished, reflective glass mirror represents the Ego, showing a fragmented silhouette adjusting its appearance. On the right, a pristine, white, and golden geometric structure represents the Superego, reaching toward a floating, idealized light source. Thin, glowing data lines weave through all three sections, connecting the human brain—rendered as a glowing, translucent anatomical model—to these distinct environments. The color palette transitions from deep moody blues and purples in the Id section to vibrant, high-contrast gold and white in the Superego section, highlighting the psychological shift between raw community, social identity, and curated perfection.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🕵️🌐 The Hidden Psychology of Social Networks: How Brands Create Authentic Engagement by Understanding What Motivates Us  
+![books-the-hidden-psychology-of-social-networks](../books-the-hidden-psychology-of-social-networks.jpg)  
 [🛒 The Hidden Psychology of Social Networks: How Brands Create Authentic Engagement by Understanding What Motivates Us. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4mIfzLl)  
   
 ## 📖 Book Report: The Hidden Psychology of Social Networks  

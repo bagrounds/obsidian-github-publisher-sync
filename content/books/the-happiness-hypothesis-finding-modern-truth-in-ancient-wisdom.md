@@ -10,9 +10,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-16T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-05-08T10:39:04Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A minimalist, split-composition illustration. On the left, a stylized, intricate line-art drawing of a massive, gentle elephant moving through a landscape, representing the intuitive and emotional self. On the right, a refined, geometric, and structured silhouette of a rider sitting calmly atop the elephant, representing the rational mind. The background transitions from a warm, textured parchment tone on the left—evoking ancient scrolls and history—to a clean, modern, gradient blue on the right, symbolizing contemporary science. The two halves meet in the center with a subtle golden glow where they overlap, suggesting the harmony between ancient wisdom and modern truth. The art style is clean, vector-based, and balanced.
 ---
 [Home](../index.md) > [Books](./index.md) | [🧠🤝🐘 Jonathan Haidt](../people/jonathan-haidt.md)  
 # 😀📜 The Happiness Hypothesis: Finding Modern Truth in Ancient Wisdom  
+![books-the-happiness-hypothesis-finding-modern-truth-in-ancient-wisdom](../books-the-happiness-hypothesis-finding-modern-truth-in-ancient-wisdom.jpg)  
 [🛒 The Happiness Hypothesis: Finding Modern Truth in Ancient Wisdom. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/47h4Dit)  
   
 ## 📝🐒 Human Notes  

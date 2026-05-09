@@ -11,9 +11,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-19T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-05-08T16:42:49Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A close-up, high-angle shot of a lush, vibrant garden bed. In the center, a pair of professional gardening shears rests next to an open, weathered field notebook filled with botanical sketches and scientific diagrams. A magnifying glass lies nearby, hovering over a cluster of healthy, soil-rich plants, symbolizing the intersection of research and nature. The lighting is soft, natural morning sunlight that highlights the texture of dark, organic mulch and the dew-kissed green leaves. In the background, a soft-focus view of a thriving, diverse garden landscape suggests a well-tended, ecologically balanced environment. The color palette is dominated by deep forest greens, rich earthy browns, and vibrant pops of natural floral colors, conveying a sense of intellectual discovery and horticultural vitality.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # ℹ️🌻 The Informed Gardener Blooms Again  
+![books-the-informed-gardener-blooms-again](../books-the-informed-gardener-blooms-again.jpg)  
 [🛒 The Informed Gardener Blooms Again. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4kpswbq)  
   
 ## 📚 Book Report: 🌻 The Informed Gardener Blooms Again  

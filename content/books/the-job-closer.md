@@ -12,9 +12,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-25T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-05-08T18:43:22Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: "A dynamic illustration featuring a confident, gender-neutral silhouette in professional attire, striding purposefully forward. Behind them, a subtle blur and speed lines suggest efficient movement. The path ahead is clear, leading towards a glowing, stylized finish line or a target icon. Along the streamlined path, abstract elements representing key job search stages are effortlessly passed: neat stacks of resume papers, clean speech bubbles symbolizing interviews, and a minimalist handshake icon for negotiations. A subtle gear or clock motif is integrated into the background, emphasizing time-saving. The color palette is professional, combining cool blues and grays with energetic accents of gold or bright orange for the successful completion."
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 💼🏆 The Job Closer: Time Saving Techniques for Acing Resumes, Interviews, Negotiations, and More  
+![books-the-job-closer](../books-the-job-closer.jpg)  
 [🛒 The Job Closer: Time Saving Techniques for Acing Resumes, Interviews, Negotiations, and More. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/459hiTz)  
   
 ## 🤖 AI Summary   

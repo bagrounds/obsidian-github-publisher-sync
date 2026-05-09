@@ -10,9 +10,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-17T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-05-08T13:47:34Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A stylized, cross-section illustration of the human brain set against a deep, dark background. The cerebral cortex is rendered in soft, translucent, ghost-like silhouettes, while the deep brainstem is illuminated with a vibrant, glowing golden light that pulses like a heartbeat. Thin, luminous filaments of light radiate outward from the brainstem, connecting to the rest of the brain structure. The composition is minimalist and ethereal, emphasizing the contrast between the dimly lit outer layers and the intense, warm core of the brain. The overall aesthetic is scientific yet mystical, capturing the concept of a hidden spring of consciousness emerging from the depths of the biological mind.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # ❓🧠 The Hidden Spring: A Journey to the Source of Consciousness  
+![books-the-hidden-spring-a-journey-to-the-source-of-consciousness](../books-the-hidden-spring-a-journey-to-the-source-of-consciousness.jpg)  
 [🛒 The Hidden Spring: A Journey to the Source of Consciousness. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4mqT3VO)  
   
 ## 📚 Book Report: The Hidden Spring: A Journey to the Source of Consciousness  

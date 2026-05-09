@@ -9,9 +9,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-17T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-05-08T23:30:13Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A clean, minimalist studio photograph featuring a single, fluffy white marshmallow centered on a sleek, dark wooden table. To the left, a vintage brass hourglass sits on its side, its sand frozen in the middle of the glass, symbolizing the suspension of time. To the right, a second, slightly out-of-focus marshmallow rests in the distance, representing the future reward. The lighting is soft and dramatic, casting long, gentle shadows that emphasize the contrast between the immediate temptation and the patient wait. The color palette is composed of warm creams, deep espresso browns, and muted gold, creating a sophisticated and thoughtful aesthetic.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🍬⏳ The Marshmallow Test: Mastering Self-Control  
+![books-the-marshmallow-test-mastering-self-control](../books-the-marshmallow-test-mastering-self-control.jpg)  
 [🛒 The Marshmallow Test: Mastering Self-Control. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3FCKxDR)  
   
 ## 📚 Book Report: The Marshmallow Test: Mastering Self-Control  

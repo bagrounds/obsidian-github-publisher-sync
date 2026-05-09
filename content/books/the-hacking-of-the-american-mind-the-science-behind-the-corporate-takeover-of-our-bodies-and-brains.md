@@ -10,9 +10,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-25T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-05-08T09:50:23Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A minimalist, high-contrast illustration featuring a translucent human silhouette in profile. Inside the head, a vibrant, chaotic tangle of glowing neon-colored wires and digital circuits represents the hacking of neural pathways. One side of the brain is illuminated by an aggressive, sharp red light emanating from a hovering, stylized smartphone icon, while the other side is softly glowing in a calm, organic gold, symbolizing the pursuit of genuine happiness. The background is a deep, moody charcoal, emphasizing the tension between the artificial digital glow and the natural human form. The overall style is modern, clean, and symbolic, focusing on the dichotomy of synthetic stimulation versus internal serenity.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🧠🧑‍💻 The Hacking of the American Mind: The Science Behind the Corporate Takeover of Our Bodies and Brains  
+![books-the-hacking-of-the-american-mind-the-science-behind-the-corporate-takeover-of-our-bodies-and-brains](../books-the-hacking-of-the-american-mind-the-science-behind-the-corporate-takeover-of-our-bodies-and-brains.jpg)  
 [🛒 The Hacking of the American Mind: The Science Behind the Corporate Takeover of Our Bodies and Brains. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3LNxfqL)  
   
 🧠✨ Corporations exploit neurological vulnerabilities through addictive products and technologies, conflating pleasure with true happiness and driving widespread addiction, depression, and chronic disease. Reclaim autonomy for genuine well-being.  

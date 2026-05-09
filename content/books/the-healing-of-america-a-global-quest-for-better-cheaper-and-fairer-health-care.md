@@ -10,9 +10,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-16T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-05-08T12:35:00Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: "A stylized, minimalist illustration showing a globe centered in the frame. The globe is interconnected by a network of glowing, translucent lines representing international collaboration and shared knowledge. Surrounding the globe are four distinct, subtle icons: a stethoscope, a hospital building, a currency symbol, and a stylized human figure, each rendered in soft, professional blue and teal tones. The background is a deep, clean navy, creating a sense of global scope and intellectual depth. The aesthetic is modern, clinical, and hopeful, emphasizing the concept of a quest for global solutions without using any text or labels. The lighting is soft and ambient, suggesting clarity and systemic improvement."
 ---
 [Home](../index.md) > [Books](./index.md)  
 # ⚕️💰🇺🇸 The Healing of America: A Global Quest for Better, Cheaper, and Fairer Health Care  
+![books-the-healing-of-america-a-global-quest-for-better-cheaper-and-fairer-health-care](../books-the-healing-of-america-a-global-quest-for-better-cheaper-and-fairer-health-care.jpg)  
 [🛒 The Healing of America: A Global Quest for Better, Cheaper, and Fairer Health Care. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3L3ijoo)  
   
 🌌🏥 Universal coverage is achievable, more affordable, and yields superior outcomes compared to the fragmented, profit-driven American model.  

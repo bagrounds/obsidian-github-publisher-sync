@@ -11,6 +11,7 @@ image_model: "@cf/black-forest-labs/flux-1-schnell"
 image_prompt: A soft, high-angle close-up of a cozy, resting cat curled up in a sunbeam on a neutral-toned knitted blanket. The lighting is warm and gentle, emphasizing the texture of the cat’s fur and the fabric. In the background, a small, out-of-focus potted plant adds a touch of organic life. The overall color palette is muted and calming—creams, soft grays, and warm amber light—evoking a sense of quiet care, vulnerability, and empathy. The composition should feel intimate and serene, focusing on the peaceful presence of the animal rather than the clinical nature of the condition.
 updated: 2026-04-09T09:41:16
 link_analysis_version: "2"
+URL: https://bagrounds.org/topics/feline-gi-lymphoma
 ---
 [Home](../index.md) > [Topics](./index.md)  
 # 🐱💔 Feline GI Lymphoma  

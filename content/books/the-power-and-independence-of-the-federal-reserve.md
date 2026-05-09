@@ -7,11 +7,16 @@ share: true
 affiliate link: https://amzn.to/4n5F8p6
 CTA: 🏛️ Understand monetary policy.
 link_analysis_model: gemini-3.1-flash-lite-preview
-link_analysis_time: 2026-04-05T00:00:00Z
+link_analysis_time: 2026-04-25T00:00:00Z
 force_analyze_links: false
+link_analysis_version: "2"
+image_date: 2026-05-09T17:33:24Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A minimalist, high-contrast illustration featuring a classical Greek-style marble temple column standing firmly on a polished, reflective surface. The column is partially wrapped in a complex, tangled web of golden mechanical gears and clockwork springs that extend outward, suggesting an intricate, evolving internal structure. In the background, a subtle, stylized silhouette of a balance scale is etched into a muted, dark blue wall, representing institutional justice and policy. The lighting is dramatic, with a single sharp beam of light illuminating the intersection of the rigid stone column and the chaotic, metallic machinery, emphasizing the tension between stability and the complex, shifting dynamics of financial power. The color palette is restricted to deep navy, slate gray, and polished gold.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 💪🏛️ The Power and Independence of the Federal Reserve  
+![books-the-power-and-independence-of-the-federal-reserve](../books-the-power-and-independence-of-the-federal-reserve.jpg)  
 [🛒 The Power and Independence of the Federal Reserve. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4n5F8p6)  
   
 ## 📖 Book Report: The Power and Independence of the Federal Reserve  

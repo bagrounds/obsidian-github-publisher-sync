@@ -10,9 +10,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-18T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-05-09T09:39:05Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A split-screen composition depicting the New Climate War. On the left, a dark, industrial landscape featuring a tangled web of gray, shadowy threads labeled subtly with symbols of deflection, smoke-belching chimneys, and cracked, barren earth. On the right, the scene transitions into a vibrant, hopeful landscape where a diverse group of people join hands to push aside the dark, gray barrier. In the center, a bright, glowing sun rises behind a stylized wind turbine and solar panels, casting light that cuts through the fog. The art style is bold, editorial, and vector-based, using a high-contrast color palette of deep charcoal, industrial orange, and bright, hopeful emerald green. The imagery emphasizes the tension between systemic obstruction and collective human agency without any text.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🔥🌎⚔️ The New Climate War: The Fight to Take Back Our Planet  
+![books-the-new-climate-war-the-fight-to-take-back-our-planet](../books-the-new-climate-war-the-fight-to-take-back-our-planet.jpg)  
 [🛒 The New Climate War: The Fight to Take Back Our Planet. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4rDB1Dz)  
   
 🌎✊📈 fossil fuel interests use sophisticated tactics like deflection, division, and doomism to obstruct meaningful climate action. A clean energy revolution is achievable through systemic change and collective political will.  

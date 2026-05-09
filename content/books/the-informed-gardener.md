@@ -12,9 +12,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-19T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-05-08T17:46:51Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A vibrant, stylized illustration contrasting common gardening myths with scientific clarity. On one side, a whimsical, exaggerated garden scene depicts a misconception, like a plant struggling with visible, damaged roots or an overly large, incorrect gardening tool. A clear, illuminating light beam cuts across the image, transforming the scene. On the other side, the same plant appears healthy and thriving, with strong, correctly managed roots visible through a transparent soil layer. A subtle magnifying glass or a simple beaker with a healthy seedling might be nearby, suggesting scientific insight. The aesthetic is clean, modern, and uses a palette of fresh greens, earthy browns, and an inquisitive, bright light source.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # ℹ️🌱 The Informed Gardener  
+![books-the-informed-gardener](../books-the-informed-gardener.jpg)  
 [🛒 The Informed Gardener. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3Sum6eP)  
   
 ## 📚 Book Report: The Informed Gardener  

@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-05-08T19:15:06-07:00
+updated: 2026-05-08T21:18:33-07:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -71,17 +71,17 @@ updated: 2026-05-08T19:15:06-07:00
   
   
 ## [📚 Books](./books/index.md) (961)  
+- [🔥📜 The Motivation Manifesto: 9 Declarations to Claim Your Personal Power](./books/the-motivation-manifesto-9-declarations-to-claim-your-personal-power.md)  
+- [🎯🧠 The Motivated Brain](./books/the-motivated-brain-what-neuroscience-reveals-about-the-power-of-purpose.md)  
 - [⚠️🏛️👹🇺🇸 The Most Dangerous Branch: Inside the Supreme Court in the Age of Trump](./books/the-most-dangerous-branch-inside-the-supreme-court-in-the-age-of-trump.md)  
 - [🧠📊 The Model Thinker: What You Need to Know to Make Data Work for You](./books/the-model-thinker-what-you-need-to-know-to-make-data-work-for-you.md)  
-- [🧘😞➡️ The Mindful Way Through Depression: Freeing Yourself from Chronic Unhappiness](./books/the-mindful-way-through-depression-freeing-yourself-from-chronic-unhappiness.md)  
-- [👨‍🚀🔴✨ The Martian](./books/the-martian.md)  
   
   
-## [📺 Videos](./videos/index.md) (820)  
+## [📺 Videos](./videos/index.md) (821)  
+- [🕵️‍♂️🤖🔍 I Tracked Down the Hidden Workers Secretly Powering ChatGPT](./videos/i-tracked-down-the-hidden-workers-secretly-powering-chatgpt.md)  
 - [🗺️⚖️🔄 Brooks and Marcus on Virginia’s major shakeup in the national redistricting battle](./videos/brooks-and-marcus-on-virginias-major-shakeup-in-the-national-redistricting-battle.md)  
-- [🗳️💬🔮 Graham Platner On Service, Messaging & the Future for Democrats | The Weekly Show with Jon Stewart](./videos/graham-platner-on-service-messaging-the-future-for-democrats-the-weekly-show-with-jon-stewart.md)  
-- [🤯🗳️🇺🇸 The Most Shocking Election In America](./videos/the-most-shocking-election-in-america.md)  
 - [🧠🏛️⚖️ The Book That Changed How I Think About Liberalism | The Ezra Klein Show](./videos/the-book-that-changed-how-i-think-about-liberalism-the-ezra-klein-show.md)  
+- [🗳️💬🔮 Graham Platner On Service, Messaging & the Future for Democrats | The Weekly Show with Jon Stewart](./videos/graham-platner-on-service-messaging-the-future-for-democrats-the-weekly-show-with-jon-stewart.md)  
   
   
 ## [🌌 Topics](./topics/index.md) (91)  
@@ -106,10 +106,10 @@ updated: 2026-05-08T19:15:06-07:00
   
   
 ## [💾 Software](./software/index.md) (33)  
-- [🦙💬 Ollama](./software/ollama.md)  
 - [⚛️🔄 React](./software/react.md)  
+- [🌐🔓💻 Open WebUI](./software/open-webui.md)  
+- [🦙💬 Ollama](./software/ollama.md)  
 - [🐧💻🚀 Linux](./software/linux.md)  
-- [🚄🎲✅ QuickCheck](./software/quickcheck.md)  
   
   
 ## [👥 People](./people/index.md) (18)  

@@ -9,6 +9,10 @@ Platform:
 Channel: PBS NewsHour
 tags:
 youtube: https://youtu.be/b_n9gwiZMDg
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_version: "2"
+link_analysis_time: 2026-05-08T00:00:00Z
+force_analyze_links: false
 ---
 [Home](../index.md) > [Videos](./index.md)  
 # 🗺️⚖️🔄 Brooks and Marcus on Virginia’s major shakeup in the national redistricting battle  
@@ -58,7 +62,7 @@ youtube: https://youtu.be/b_n9gwiZMDg
   
 ### 🆚 Contrasting  
   
-* 📜 The Federalist Papers by Alexander Hamilton, James Madison, and John Jay provides the original vision for a representative republic where factionalism was meant to be balanced by structural constraints.  
+* 📜 [🇺🇸📜 The Federalist Papers](../books/the-federalist-papers.md) by Alexander Hamilton, James Madison, and John Jay provides the original vision for a representative republic where factionalism was meant to be balanced by structural constraints.  
 * 🗳️ Why Government Fails So Often by Peter H. Schuck argues that institutional failures are often a result of poor policy design rather than purely partisan malice.  
   
 ### 🎨 Creatively Related  

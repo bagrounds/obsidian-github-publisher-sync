@@ -9,9 +9,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-17T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-05-09T03:14:52Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: "A stylized, glowing cross-section of a human brain sits at the center, rendered in elegant, minimalist wireframe lines. Radiating from the center, four distinct, vibrant geometric layers rise like a tiered pedestal: a base of deep amber representing energy, a layer of soft teal for needs, a layer of bright violet for talents, and a summit of brilliant gold for purpose. These layers are interconnected by subtle, pulsing neural pathways that glow with light, suggesting a dynamic, evolving flow. The background is a clean, dark navy blue, creating a high-contrast atmosphere that feels scientific, modern, and intellectual. The overall aesthetic is clean, professional, and evocative of clarity and cognitive potential."
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🎯🧠 The Motivated Brain  
+![books-the-motivated-brain-what-neuroscience-reveals-about-the-power-of-purpose](../books-the-motivated-brain-what-neuroscience-reveals-about-the-power-of-purpose.jpg)  
 [🛒 The Motivated Brain. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4mIOsQ9)  
   
 ## 🧠 Book Report: The Motivated Brain  

@@ -9,9 +9,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-17T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-05-09T03:15:04Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A dramatic, high-contrast illustration featuring a weathered, glowing scroll unfurling in the center of a dark, stormy landscape. As the scroll opens, brilliant golden light spills outward, piercing through the surrounding shadows and dissipating dark, jagged chains that lie broken on the ground. A single, powerful flame burns steadily atop the scroll, symbolizing inner passion. In the background, the silhouette of a lone figure stands tall on a mountain peak, looking toward a rising sun on the horizon. The color palette transitions from deep charcoal and indigo shadows to vibrant, warm golds and amber hues, emphasizing the theme of moving from internal oppression toward clarity, freedom, and bold action. The style is cinematic and epic, conveying a sense of profound transformation and reclaimed authority.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🔥📜 The Motivation Manifesto: 9 Declarations to Claim Your Personal Power  
+![books-the-motivation-manifesto-9-declarations-to-claim-your-personal-power](../books-the-motivation-manifesto-9-declarations-to-claim-your-personal-power.jpg)  
 [🛒 The Motivation Manifesto: 9 Declarations to Claim Your Personal Power. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3SwZ7zO)  
   
 ## 📖 Book Report: The 🚀 Motivation Manifesto  

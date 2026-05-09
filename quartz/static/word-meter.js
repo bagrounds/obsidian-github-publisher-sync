@@ -671,6 +671,9 @@ void function () {
         mode: session.mode.id
       }),
       simulateResult: (text, isFinal) => {
+        // SpeechRecognitionResult is array-like with numeric indices plus a boolean
+        // `isFinal` property. We faithfully mirror that shape so the production
+        // onresult handler exercises the same code paths it would in a real browser.
         const result = [{ transcript: text }];
         result.isFinal = !!isFinal;
         const startIndex = session.finalIndex;

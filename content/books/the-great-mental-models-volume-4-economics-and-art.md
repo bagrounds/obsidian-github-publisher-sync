@@ -10,9 +10,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-18T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-05-08T07:44:41Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A split-composition illustration blending the analytical world of economics with the expressive realm of art. On the left, a structured, minimalist workspace features clean geometric lines, a gold-toned bar chart transitioning into a crystalline structure, and subtle mathematical symbols floating in a soft, neutral light. On the right, the scene dissolves into vibrant, swirling brushstrokes of deep indigo, ochre, and crimson, forming abstract shapes that suggest a theater stage, a canvas, and a flowing ink wash. The two sides are connected by a central, glowing bridge of light where the rigid lines of the economic charts seamlessly morph into the fluid curves of artistic brushwork, symbolizing the synthesis of logic and creativity. The overall aesthetic is sophisticated, modern, and intellectual, using a balanced, high-contrast color palette.
 ---
 [Home](../index.md) > [Books](./index.md) | [⏮️ ⚙️🔢 The Great Mental Models, Volume 3: Systems and Mathematics](./the-great-mental-models-volume-3-systems-and-mathematics.md)  
 # 💸🎨 The Great Mental Models, Volume 4: Economics and Art  
+![books-the-great-mental-models-volume-4-economics-and-art](../books-the-great-mental-models-volume-4-economics-and-art.jpg)  
 [🛒 The Great Mental Models, Volume 4: Economics and Art. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/44qOgxv)  
   
 💡🧠🎨 Economic and 🎨 artistic frameworks for actionable 🧠 mental models 🚀 empower sophisticated thinkers to navigate 🧭 complexity, 📈 enhance decision-making, and 🔓 unlock creative potential in both 💼 business and life.  

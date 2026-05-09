@@ -9,9 +9,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-18T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-05-09T05:20:23Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A minimalist, high-contrast illustration featuring a stylized, jagged mountain peak rising against a soft, gradient sky. At the base of the mountain, the silhouette of a person sits in a meditative lotus position, facing toward the ascent. The mountain itself is rendered with clean, geometric lines, and its reflection is subtly mirrored on the ground below, suggesting that the mountain and the person are one and the same. The color palette uses deep slate blues, calming teals, and a soft, warm amber glow at the summit to symbolize clarity and breakthrough. The overall aesthetic is clean, modern, and serene, emphasizing introspection and the journey of self-mastery.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # ⛰️➡️🧘 The Mountain is You: Transforming Self-Sabotage into Self-Mastery  
+![books-the-mountain-is-you](../books-the-mountain-is-you.jpg)  
 [🛒 The Mountain is You: Transforming Self-Sabotage into Self-Mastery. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4jvIqj0)  
   
 ## ⛰️ Book Report: The Mountain Is You  

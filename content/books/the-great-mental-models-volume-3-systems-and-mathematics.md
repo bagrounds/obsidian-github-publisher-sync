@@ -10,9 +10,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-18T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-05-08T07:44:31Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A minimalist, high-contrast illustration featuring a stylized, translucent glass cube suspended in the center. Inside the cube, intricate gold clockwork gears mesh with flowing, abstract mathematical nodes and geometric vectors. The background is a deep, matte slate blue, providing a clean professional atmosphere. Surrounding the cube are faint, elegant white lines representing a web or network connection, symbolizing the interconnectedness of systems. The lighting is soft and directional, creating subtle highlights on the edges of the gears and the cube’s frame, emphasizing clarity, precision, and structural intelligence. No text or labels are present.
 ---
 [Home](../index.md) > [Books](./index.md) | [⏭️ 💸🎨 The Great Mental Models, Volume 4: Economics and Art](./the-great-mental-models-volume-4-economics-and-art.md)  
 # ⚙️🔢 The Great Mental Models, Volume 3: Systems and Mathematics  
+![books-the-great-mental-models-volume-3-systems-and-mathematics](../books-the-great-mental-models-volume-3-systems-and-mathematics.jpg)  
 [🛒 The Great Mental Models, Volume 3: Systems and Mathematics. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4pigwKS)  
   
 🧠💡📊 Demystify complex concepts from systems thinking and mathematics with actionable frameworks to improve decision-making, problem-solving, and understanding of the world’s interconnectedness.  

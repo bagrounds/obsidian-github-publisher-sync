@@ -13,7 +13,7 @@ link_analysis_version: "2"
 link_analysis_time: 2026-05-08T00:00:00Z
 force_analyze_links: false
 ---
-[Home](../index.md) > [🏛️ Systems for Public Good](./index.md) | [⏮️](./2026-05-07-the-integrated-commons-bridging-physical-and-digital-public-goods.md)  
+[Home](../index.md) > [🏛️ Systems for Public Good](./index.md) | [⏮️](./2026-05-07-the-integrated-commons-bridging-physical-and-digital-public-goods.md) [⏭️](./2026-05-09-navigating-complexity-the-imperative-of-thoughtful-governance.md)  
 # 2026-05-08 | 🏛️ 🧠 Seeing the Forest *and* the Trees: What is Systems Thinking? 🏛️  
 ![systems-for-public-good-2026-05-08-seeing-the-forest-and-the-trees-what-is-systems-thinking](../systems-for-public-good-2026-05-08-seeing-the-forest-and-the-trees-what-is-systems-thinking.jpg)  
   

@@ -22,8 +22,9 @@ image_prompt: "A minimalist, high-contrast illustration featuring a glowing, tra
 🚀 🧠 Richard Hamming’s masterpiece explores the cultivation of style in scientific thinking, emphasizing that greatness is a practiced skill rooted in identifying significant problems and learning how to learn.  
   
 ## 📝🐒 Human Notes  
-- Inventors don't understand their inventions  
-- Optimizing a part ruins the whole  
+- Inventors don't understand their inventions.  
+- Optimizing a part ruins the whole.  
+- You get what you measure.  
   
 ## 🤖 AI Summary  
 ### 💡 Core Philosophy: Learning to Learn  

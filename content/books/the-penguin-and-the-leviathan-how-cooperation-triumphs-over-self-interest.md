@@ -9,9 +9,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-19T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-05-09T16:29:33Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A split-composition illustration depicting the tension between two opposing systems. On the left, a stylized, vibrant, and friendly penguin stands amidst a network of glowing, interconnected nodes, representing community, open-source collaboration, and social synergy. On the right, a dark, imposing, and metallic geometric structure—resembling a stylized, rigid monolith or mechanical sea creature—looms over a barren, isolated landscape, symbolizing the cold, top-down control of the Leviathan. The background transitions from a warm, soft-focus sunrise behind the penguin to a stark, shadowy, industrial blue-grey behind the monolith. The two sides are bridged by a faint, glowing filament of light, suggesting the possibility of connection and the potential for a more collaborative future. The style is clean, modern, and conceptual.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🤝🐧🐳 The Penguin and the Leviathan: How Cooperation Triumphs over Self-Interest  
+![books-the-penguin-and-the-leviathan-how-cooperation-triumphs-over-self-interest](../books-the-penguin-and-the-leviathan-how-cooperation-triumphs-over-self-interest.jpg)  
 [🛒 The Penguin and the Leviathan: How Cooperation Triumphs over Self-Interest. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4ktFG7o)  
   
 ## 📖 Book Report: The Penguin and the Leviathan  

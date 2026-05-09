@@ -10,9 +10,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-15T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-05-09T15:33:03Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A stylized, isometric illustration of a human head silhouette in profile, glowing with a soft, cool blue light. Inside the head, instead of complex anatomy, there is a neatly organized, minimalist filing cabinet and a series of glowing nodes connected by clean, thin lines. Outside the head, a chaotic storm of colorful, abstract geometric shapes, paper scraps, and digital icons swirls in a whirlwind. A single, focused beam of light emerges from the eye of the silhouette, cutting through the surrounding clutter to reveal a clean, orderly path on the surface below. The background is a deep, muted charcoal, creating a high-contrast environment that emphasizes the transition from mental chaos to structured clarity. The art style is clean, modern, and vector-based.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🧠🗂️ The Organized Mind: Thinking Straight in the Age of Information Overload  
+![books-the-organized-mind-thinking-straight-in-the-age-of-information-overload](../books-the-organized-mind-thinking-straight-in-the-age-of-information-overload.jpg)  
 [🛒 The Organized Mind: Thinking Straight in the Age of Information Overload. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3SSyVzT)  
   
 ## 📚 Book Report: The Organized Mind  

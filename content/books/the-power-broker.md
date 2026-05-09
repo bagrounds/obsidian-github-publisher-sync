@@ -11,9 +11,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-16T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-05-09T18:38:36Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A dramatic, high-angle view of a sprawling 20th-century metropolis at twilight. A series of massive, intersecting concrete highways slice through dense, shadowed neighborhoods, creating a sense of rigid, top-down order. In the foreground, a silhouette of a solitary, imposing figure stands on a high observation deck, overlooking the urban landscape with a blueprint unfurled in their hands. The palette is dominated by deep blues, charcoal grays, and cold concrete tones, contrasted by the warm, flickering amber lights of the city grid below. The overall aesthetic is cinematic and somber, emphasizing the scale of human ambition against the backdrop of an evolving, fractured city.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 👑🏙️ The Power Broker  
+![books-the-power-broker](../books-the-power-broker.jpg)  
 TLDR: Robert Caro's monumental biography, The Power Broker, exposes how unelected official Robert Moses wielded immense, often ruthless, power to fundamentally reshape 20th-century New York City, leaving a complex and controversial legacy for urban planning and democratic governance 🗽🏗️.  
   
 ## 🤖 AI Summary  

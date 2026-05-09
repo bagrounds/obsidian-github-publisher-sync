@@ -12,9 +12,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-15T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-05-09T19:35:55Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: "A minimalist, high-contrast illustration featuring a glowing, stylized human brain silhouette in the center. Encircling the brain is a fluid, infinity-loop-shaped path composed of three distinct geometric segments: a vibrant signal icon (cue), a gear icon (routine), and a trophy icon (reward). The background is a deep, professional navy blue with subtle, interconnected neural network lines branching out toward the edges. The overall aesthetic is clean, modern, and cerebral, utilizing a palette of electric blue, soft gold, and crisp white to represent cognitive transformation and the mechanics of behavioral change. The design emphasizes the concept of a cyclical, repeatable process within the mind."
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🔄🧠💪 The Power of Habit: Why We Do What We Do in Life and Business  
+![books-the-power-of-habit](../books-the-power-of-habit.jpg)  
 [🛒 The Power of Habit: Why We Do What We Do in Life and Business. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/458taW2)  
   
 ## 🤖 AI Summary  

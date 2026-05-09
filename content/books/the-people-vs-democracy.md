@@ -11,9 +11,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-16T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-05-09T17:33:20Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: "A conceptual illustration featuring a grand, classical marble courthouse split down the middle by a jagged, glowing fissure. On the left side of the building, the architecture remains pristine and orderly, representing the rule of law. On the right, the structure is crumbling and overgrown with dark, encroaching vines, symbolizing decay. In the foreground, two distinct paths diverge: one paved with ballot papers leading toward the light, and the other descending into a dense, misty forest representing uncertainty and populist shadows. The color palette is high-contrast, utilizing deep navy blues for the institutional structures, stark white for the marble, and vibrant, warning-sign oranges and yellows emanating from the central rift to signify the tension between democracy and individual rights."
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 👥⚔️🏛️ The People vs. Democracy: Why Our 🗽 Freedom Is in ⚠️ Danger and How to Save It  
+![books-the-people-vs-democracy](../books-the-people-vs-democracy.jpg)  
 [🛒 The People vs. Democracy: Why Our 🗽 Freedom Is in ⚠️ Danger and How to Save It. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/43rSo0c)  
   
 ## 📖 Book Report: The People vs. Democracy by Yascha Mounk  

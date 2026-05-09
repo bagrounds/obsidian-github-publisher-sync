@@ -10,9 +10,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-16T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-05-08T11:40:42Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A serene, minimalist illustration of a nursery at night. A soft, warm glow from a crescent moon filters through a window, casting gentle shadows across a cozy crib. Inside the crib, a peaceful baby is sleeping soundly, curled up under a soft blanket. Beside the crib, a comfortable armchair sits in the soft light, suggesting a parents reassuring presence nearby. The color palette features calming, muted tones of deep indigo, soft slate blue, and warm cream. The overall atmosphere is quiet, tranquil, and restorative, emphasizing a sense of calm and nighttime comfort.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 😴 The Happy Sleeper: The Science-Backed Guide to Helping Your Baby Get a Good Night's Sleep - Newborn to School Age  
+![books-the-happy-sleeper-the-science-backed-guide-to-helping-your-baby-get-a-good-nights-sleep-newborn-to-school-age](../books-the-happy-sleeper-the-science-backed-guide-to-helping-your-baby-get-a-good-nights-sleep-newborn-to-school-age.jpg)  
 [🛒 The Happy Sleeper: The Science-Backed Guide to Helping Your Baby Get a Good Night's Sleep - Newborn to School Age. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3XVsVsp)  
   
 😴✨🛌 A gentle, science-backed approach to empower babies and children to develop independent sleep skills, shifting parents from over-helping to fostering innate self-soothing abilities for better family rest.  

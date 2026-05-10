@@ -10,9 +10,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-27T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-05-09T20:28:27Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A close-up, minimalist composition featuring a single, sturdy hourglass sitting on a clean, wooden desk. Inside the hourglass, instead of sand, there are small, geometric stone blocks being neatly stacked one by one, symbolizing the incremental building of habits. A soft, warm light illuminates the scene from the side, casting long, sharp shadows that emphasize depth and focus. The background is a blurred, neutral-toned office environment, suggesting a calm, distraction-free space. The overall aesthetic is professional, modern, and aspirational, utilizing a palette of deep blues, charcoal, and warm amber to evoke a sense of steady progress and mental clarity.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 💪🧠⏳ The Power of Self-Discipline: 5-Minute Exercises to Build Self-Control, Good Habits, and Keep Going When You Want to Give Up  
+![books-the-power-of-self-discipline-5-minute-exercises-to-build-self-control-good-habits-and-keep-going-when-you-want-to-give-up](../books-the-power-of-self-discipline-5-minute-exercises-to-build-self-control-good-habits-and-keep-going-when-you-want-to-give-up.jpg)  
 [🛒 The Power of Self-Discipline: 5-Minute Exercises to Build Self-Control, Good Habits, and Keep Going When You Want to Give Up. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4iGkZES)  
   
 💪 A practical, actionable approach to mastering self-control through short, daily exercises, emphasizing that discipline is a cultivable skill, not an innate trait.  

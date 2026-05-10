@@ -21,6 +21,12 @@ void function () {
   const PERMISSION_DENIED_ERRORS = ['not-allowed', 'service-not-allowed'];
   const TRANSIENT_ERRORS = ['no-speech', 'aborted', 'audio-capture'];
 
+  // Bumping the version invalidates older persisted shapes so we never feed
+  // stale fields into the new code path.
+  const STORAGE_KEY = 'word-meter:state:v1';
+  const TIMELINE_MAX_RENDERED_ENTRIES = 200;
+  const RESET_CONFIRMATION_PROMPT = 'Reset all word meter stats? This cannot be undone.';
+
   const RECOGNITION_MODES = Object.freeze({
     onDevice: { id: 'on-device', label: 'On-device', processLocally: true },
     cloud:    { id: 'cloud',     label: 'Cloud',     processLocally: false }
@@ -49,6 +55,7 @@ void function () {
     status: 'wm-status',
     count: 'wm-count',
     button: 'wm-toggle',
+    resetButton: 'wm-reset',
     started: 'wm-started',
     rateShort: 'wm-rate-short',
     rateLong: 'wm-rate-long',
@@ -58,7 +65,9 @@ void function () {
     modeOnDevice: 'wm-mode-on-device',
     modeCloud: 'wm-mode-cloud',
     keepAwake: 'wm-keep-awake',
-    keepAwakeStatus: 'wm-keep-awake-status'
+    keepAwakeStatus: 'wm-keep-awake-status',
+    timeline: 'wm-timeline',
+    timelineEmpty: 'wm-timeline-empty'
   });
 
   // ---------- Pure utilities ----------
@@ -208,9 +217,25 @@ void function () {
     }
   });
 
+  const buildResetButton = () => element('button', {
+    id: ELEMENT_IDS.resetButton,
+    text: 'Reset',
+    attributes: { type: 'button', title: 'Clear all stats' },
+    styles: {
+      font: '600 14px/1 inherit',
+      padding: '14px 18px',
+      borderRadius: '999px',
+      border: '1px solid rgba(255,255,255,0.18)',
+      background: 'transparent',
+      color: PALETTE.secondaryText,
+      cursor: 'pointer',
+      minWidth: '92px'
+    }
+  });
+
   const buildButtonRow = () => element('div', {
-    styles: { display: 'flex', justifyContent: 'center', margin: '22px 0 14px' },
-    children: [buildButton()]
+    styles: { display: 'flex', justifyContent: 'center', gap: '10px', flexWrap: 'wrap', margin: '22px 0 14px' },
+    children: [buildButton(), buildResetButton()]
   });
 
   const buildModeRadio = (mode, isDefault) => {
@@ -396,6 +421,49 @@ void function () {
     }
   });
 
+  const buildTimelinePanel = () => element('div', {
+    styles: { marginTop: '22px' },
+    children: [
+      element('div', {
+        styles: {
+          fontSize: '11px',
+          letterSpacing: '0.08em',
+          textTransform: 'uppercase',
+          color: PALETTE.mutedText,
+          marginBottom: '6px'
+        },
+        children: [
+          element('span', { text: 'Timeline ' }),
+          element('span', {
+            text: '(intervals · words · words/min)',
+            styles: { textTransform: 'none', letterSpacing: '0', color: PALETTE.dimText }
+          })
+        ]
+      }),
+      element('div', {
+        id: ELEMENT_IDS.timeline,
+        styles: {
+          background: PALETTE.captionsBackground,
+          border: PALETTE.captionsBorder,
+          borderRadius: '10px',
+          padding: '8px 12px',
+          maxHeight: '220px',
+          overflowY: 'auto',
+          fontSize: '13px',
+          lineHeight: '1.5',
+          color: PALETTE.secondaryText
+        },
+        children: [
+          element('div', {
+            id: ELEMENT_IDS.timelineEmpty,
+            text: 'No intervals yet — press Start counting to begin.',
+            styles: { color: PALETTE.dimText, fontStyle: 'italic', padding: '6px 0' }
+          })
+        ]
+      })
+    ]
+  });
+
   const buildPrivacyFooter = () => element('div', {
     styles: {
       marginTop: '14px',
@@ -436,6 +504,7 @@ void function () {
       buildMetricsGrid(),
       buildCaptionsPanel(),
       buildErrorBanner(),
+      buildTimelinePanel(),
       buildPrivacyFooter()
     ]
   });
@@ -518,7 +587,17 @@ void function () {
 
   const createSession = () => ({
     listening: false,
+    // startedAt is the wall-clock start of the *current* listening interval.
+    // It is null when idle. The very first start across all intervals is
+    // tracked separately as firstStartedAt so totals span every session
+    // restored from storage.
     startedAt: null,
+    firstStartedAt: null,
+    // Completed intervals: [{ startedAt, endedAt, words }]. The interval the
+    // user is currently in (if any) lives in currentInterval and is folded
+    // into intervals when listening stops.
+    intervals: [],
+    currentInterval: null,
     totalWords: 0,
     wordEvents: [],
     captionEntries: [],
@@ -540,6 +619,136 @@ void function () {
 
   const session = createSession();
 
+  // ---------- Persistence ----------
+  // Stats are written to localStorage on every meaningful state change so a
+  // backgrounded tab, a screen lock, or even an aggressive mobile OS unloading
+  // the page does not cost the user any progress. Storage access is wrapped
+  // in `typeof` checks plus try/catch so the meter still works in private
+  // mode, in iframes with storage disabled, or in sandboxed test contexts.
+
+  const safeLocalStorage = () => {
+    try {
+      return typeof localStorage !== 'undefined' ? localStorage : null;
+    } catch (_unused) {
+      return null;
+    }
+  };
+
+  const sanitizeNumber = (value, fallback) => {
+    const numeric = Number(value);
+    return isFinite(numeric) ? numeric : fallback;
+  };
+
+  const sanitizeWordEvents = (raw) => {
+    if (!Array.isArray(raw)) return [];
+    return raw
+      .map((event) => ({
+        timestamp: sanitizeNumber(event && event.timestamp, NaN),
+        wordCount: sanitizeNumber(event && event.wordCount, 0)
+      }))
+      .filter((event) => isFinite(event.timestamp) && event.wordCount > 0);
+  };
+
+  const sanitizeIntervals = (raw) => {
+    if (!Array.isArray(raw)) return [];
+    return raw
+      .map((interval) => ({
+        startedAt: sanitizeNumber(interval && interval.startedAt, NaN),
+        endedAt: sanitizeNumber(interval && interval.endedAt, NaN),
+        words: Math.max(0, Math.floor(sanitizeNumber(interval && interval.words, 0)))
+      }))
+      .filter((interval) =>
+        isFinite(interval.startedAt)
+        && isFinite(interval.endedAt)
+        && interval.endedAt >= interval.startedAt);
+  };
+
+  const persistState = () => {
+    const storage = safeLocalStorage();
+    if (!storage) return;
+    try {
+      const snapshot = {
+        version: 1,
+        totalWords: session.totalWords,
+        firstStartedAt: session.firstStartedAt,
+        wordEvents: session.wordEvents,
+        intervals: session.intervals
+      };
+      storage.setItem(STORAGE_KEY, JSON.stringify(snapshot));
+    } catch (_unused) { /* quota exceeded or serialization failure — drop silently */ }
+  };
+
+  const clearPersistedState = () => {
+    const storage = safeLocalStorage();
+    if (!storage) return;
+    try { storage.removeItem(STORAGE_KEY); } catch (_unused) { /* noop */ }
+  };
+
+  const loadPersistedState = () => {
+    const storage = safeLocalStorage();
+    if (!storage) return null;
+    try {
+      const raw = storage.getItem(STORAGE_KEY);
+      if (!raw) return null;
+      const data = JSON.parse(raw);
+      if (!data || data.version !== 1) return null;
+      return {
+        totalWords: Math.max(0, Math.floor(sanitizeNumber(data.totalWords, 0))),
+        firstStartedAt: isFinite(data.firstStartedAt) ? data.firstStartedAt : null,
+        wordEvents: sanitizeWordEvents(data.wordEvents),
+        intervals: sanitizeIntervals(data.intervals)
+      };
+    } catch (_unused) {
+      return null;
+    }
+  };
+
+  const restoreSessionFromStorage = () => {
+    const persisted = loadPersistedState();
+    if (!persisted) return false;
+    const hasData = persisted.totalWords > 0 || persisted.intervals.length > 0;
+    if (!hasData) return false;
+    session.totalWords = persisted.totalWords;
+    session.firstStartedAt = persisted.firstStartedAt;
+    session.wordEvents = persisted.wordEvents;
+    session.intervals = persisted.intervals;
+    return true;
+  };
+
+  // Total *active* listening duration across all intervals, including the
+  // open one if listening. Used as the elapsed denominator for the overall
+  // rate so paused time does not artificially deflate words-per-minute.
+  const computeActiveListeningMilliseconds = (now) => {
+    const completed = session.intervals.reduce(
+      (sum, interval) => sum + Math.max(0, interval.endedAt - interval.startedAt),
+      0
+    );
+    const open = session.currentInterval
+      ? Math.max(0, now - session.currentInterval.startedAt)
+      : 0;
+    return completed + open;
+  };
+
+  // Total wall-clock span between the very first start and now (or the last
+  // recorded interval end if currently idle). Drives the trailing-window
+  // rate denominators so a fresh session does not over-claim wpm.
+  const computeWallClockSpanMilliseconds = (now) => {
+    if (!session.firstStartedAt) return 0;
+    const endpoint = session.listening
+      ? now
+      : session.intervals.length
+        ? session.intervals[session.intervals.length - 1].endedAt
+        : now;
+    return Math.max(0, endpoint - session.firstStartedAt);
+  };
+
+  const addWordsToCurrentInterval = (count, timestamp) => {
+    if (count <= 0) return;
+    session.totalWords += count;
+    session.wordEvents.push({ timestamp, wordCount: count });
+    if (session.currentInterval) session.currentInterval.words += count;
+  };
+
   const startSafely = (recognition) => {
     try {
       recognition.start();
@@ -555,17 +764,16 @@ void function () {
     const RecognitionConstructor = getRecognitionConstructor();
     if (!RecognitionConstructor) { showUnsupported(); return; }
 
-    Object.assign(session, {
-      listening: true,
-      startedAt: Date.now(),
-      totalWords: 0,
-      wordEvents: [],
-      captionEntries: [],
-      finalIndex: 0,
-      lastFinalTranscript: '',
-      mode: selectedMode(),
-      keepAwake: keepAwakeRequested()
-    });
+    const startedAt = Date.now();
+    session.listening = true;
+    session.startedAt = startedAt;
+    if (!session.firstStartedAt) session.firstStartedAt = startedAt;
+    session.currentInterval = { startedAt, words: 0 };
+    session.captionEntries = [];
+    session.finalIndex = 0;
+    session.lastFinalTranscript = '';
+    session.mode = selectedMode();
+    session.keepAwake = keepAwakeRequested();
 
     const locale = navigator.language || 'en-US';
     session.recognition = configureRecognition(new RecognitionConstructor(), session.mode, locale);
@@ -578,15 +786,32 @@ void function () {
     setButtonStop();
     setStatus(`listening · ${session.mode.label.toLowerCase()}`);
     renderInitialMeta();
+    renderTimeline();
     session.tickHandle = setInterval(handleTick, TICK_INTERVAL_MILLISECONDS);
 
     if (session.keepAwake) requestWakeLock();
 
+    persistState();
+
     startSafely(session.recognition);
   };
 
+  const finalizeCurrentInterval = (now) => {
+    if (!session.currentInterval) return;
+    const interval = {
+      startedAt: session.currentInterval.startedAt,
+      endedAt: Math.max(now, session.currentInterval.startedAt),
+      words: session.currentInterval.words
+    };
+    session.intervals.push(interval);
+    session.currentInterval = null;
+  };
+
   const endListening = (statusText = 'idle') => {
+    const wasListening = session.listening;
     session.listening = false;
+    finalizeCurrentInterval(Date.now());
+    session.startedAt = null;
     if (session.recognition) {
       session.recognition.onresult = null;
       session.recognition.onerror = null;
@@ -600,11 +825,45 @@ void function () {
     setButtonStart();
     setStatus(statusText);
     setModeChooserEnabled(true);
+    if (wasListening) {
+      persistState();
+      renderTimeline();
+      renderStartedRelative();
+    }
   };
 
   const toggleListening = () => {
     if (session.listening) endListening('idle');
     else beginListening();
+  };
+
+  // ---------- Reset ----------
+  // The reset button is the only way for the user to deliberately discard
+  // accumulated stats. We confirm before destroying anything because the
+  // explicit goal of persistence is to never silently lose progress.
+
+  const resetAllStats = ({ skipConfirmation = false } = {}) => {
+    if (!skipConfirmation && typeof window !== 'undefined' && typeof window.confirm === 'function') {
+      if (!window.confirm(RESET_CONFIRMATION_PROMPT)) return false;
+    }
+    if (session.listening) endListening('idle');
+    session.totalWords = 0;
+    session.firstStartedAt = null;
+    session.wordEvents = [];
+    session.intervals = [];
+    session.currentInterval = null;
+    session.captionEntries = [];
+    session.finalIndex = 0;
+    session.lastFinalTranscript = '';
+    clearPersistedState();
+    setStatus('idle');
+    showError('');
+    renderCount();
+    renderRates();
+    renderCaptions();
+    renderStartedRelative();
+    renderTimeline();
+    return true;
   };
 
   // ---------- Event handlers ----------
@@ -642,10 +901,7 @@ void function () {
       const newWordCount = countWords(transcript);
       const delta = newWordCount - previousWordCount;
       session.lastFinalTranscript = transcript;
-      if (delta > 0) {
-        session.totalWords += delta;
-        session.wordEvents.push({ timestamp: now, wordCount: delta });
-      }
+      addWordsToCurrentInterval(delta, now);
       if (session.captionEntries.length) {
         session.captionEntries[session.captionEntries.length - 1] = { timestamp: now, text: transcript };
       } else {
@@ -660,15 +916,13 @@ void function () {
     // New utterance segment.
     session.lastFinalTranscript = transcript;
     const wordCount = countWords(transcript);
-    if (wordCount > 0) {
-      session.totalWords += wordCount;
-      session.wordEvents.push({ timestamp: now, wordCount });
-    }
+    addWordsToCurrentInterval(wordCount, now);
     session.captionEntries.push({ timestamp: now, text: transcript });
   };
 
   const handleResult = (event) => {
     const now = Date.now();
+    let integratedAny = false;
     for (let resultIndex = event.resultIndex; resultIndex < event.results.length; resultIndex++) {
       const result = event.results[resultIndex];
       // Strict boolean check: some recognizer implementations have surfaced
@@ -680,11 +934,16 @@ void function () {
       const transcript = ((result[0] && result[0].transcript) || '').trim();
       if (!transcript) continue;
       integrateFinalizedTranscript(transcript, now);
+      integratedAny = true;
     }
     pruneOldEntries(now);
     renderCount();
     renderRates();
     renderCaptions();
+    if (integratedAny) {
+      renderTimeline();
+      persistState();
+    }
   };
 
   const handleError = (event) => {
@@ -726,6 +985,7 @@ void function () {
     renderRates();
     renderCaptions();
     renderStartedRelative();
+    renderTimeline();
   };
 
   // ---------- State maintenance ----------
@@ -747,14 +1007,16 @@ void function () {
 
   const renderRates = () => {
     const now = Date.now();
-    const elapsed = session.startedAt ? Math.max(1, now - session.startedAt) : 1;
+    const wallSpan = Math.max(1, computeWallClockSpanMilliseconds(now));
+    const activeSpan = Math.max(1, computeActiveListeningMilliseconds(now));
     const shortWords = wordsInTrailingWindow(session.wordEvents, SHORT_RATE_WINDOW_MILLISECONDS, now);
     const longWords = wordsInTrailingWindow(session.wordEvents, LONG_RATE_WINDOW_MILLISECONDS, now);
-    const shortElapsed = Math.min(SHORT_RATE_WINDOW_MILLISECONDS, elapsed);
-    const longElapsed = Math.min(LONG_RATE_WINDOW_MILLISECONDS, elapsed);
+    const shortElapsed = Math.min(SHORT_RATE_WINDOW_MILLISECONDS, wallSpan);
+    const longElapsed = Math.min(LONG_RATE_WINDOW_MILLISECONDS, wallSpan);
     setText(ELEMENT_IDS.rateShort, formatRate(ratePerMinute(shortWords, shortElapsed)));
     setText(ELEMENT_IDS.rateLong, formatRate(ratePerMinute(longWords, longElapsed)));
-    setText(ELEMENT_IDS.rateOverall, formatRate(ratePerMinute(session.totalWords, elapsed)));
+    // Overall WPM uses *active* listening time so paused gaps don't dilute it.
+    setText(ELEMENT_IDS.rateOverall, formatRate(ratePerMinute(session.totalWords, activeSpan)));
   };
 
   const renderCaptions = () => {
@@ -773,18 +1035,65 @@ void function () {
   };
 
   const renderStartedRelative = () => {
-    if (!session.startedAt) return;
-    const ageSeconds = Math.floor((Date.now() - session.startedAt) / MILLISECONDS_PER_SECOND);
-    const clockText = formatClockTime(new Date(session.startedAt));
+    if (!session.firstStartedAt) {
+      setText(ELEMENT_IDS.started, '—');
+      return;
+    }
+    const now = Date.now();
+    const ageSeconds = Math.max(0, Math.floor((now - session.firstStartedAt) / MILLISECONDS_PER_SECOND));
+    const clockText = formatClockTime(new Date(session.firstStartedAt));
     const relativeText = formatDuration(ageSeconds);
-    setText(ELEMENT_IDS.started, `${clockText} · ${relativeText} ago`);
+    const suffix = session.listening ? '' : ' · paused';
+    setText(ELEMENT_IDS.started, `${clockText} · ${relativeText} ago${suffix}`);
   };
 
   const renderInitialMeta = () => {
-    setText(ELEMENT_IDS.started, `${formatClockTime(new Date(session.startedAt))} · just now`);
+    renderStartedRelative();
     renderCount();
     renderRates();
     renderCaptions();
+  };
+
+  const formatTimelineRow = (interval, isOpen, now) => {
+    const startClock = formatClockTime(new Date(interval.startedAt));
+    const endpoint = isOpen ? now : interval.endedAt;
+    const endClock = isOpen ? '…' : formatClockTime(new Date(endpoint));
+    const durationSeconds = Math.max(0, Math.floor((endpoint - interval.startedAt) / MILLISECONDS_PER_SECOND));
+    const durationText = formatDuration(durationSeconds);
+    const words = isOpen
+      ? (session.currentInterval ? session.currentInterval.words : 0)
+      : interval.words;
+    const elapsedMs = Math.max(1, endpoint - interval.startedAt);
+    const wpm = formatRate(ratePerMinute(words, elapsedMs));
+    const liveTag = isOpen
+      ? `<span style="color:${PALETTE.startBackground};margin-left:6px;">● live</span>`
+      : '';
+    return `<div style="display:flex;justify-content:space-between;align-items:baseline;gap:8px;padding:6px 0;border-top:1px solid rgba(255,255,255,0.04);">`
+      + `<span style="font-variant-numeric:tabular-nums;color:${PALETTE.secondaryText};">${escapeHtml(startClock)} → ${escapeHtml(endClock)}${liveTag}</span>`
+      + `<span style="color:${PALETTE.mutedText};font-size:12px;">${escapeHtml(durationText)}</span>`
+      + `<span style="font-variant-numeric:tabular-nums;color:${PALETTE.primaryText};min-width:56px;text-align:right;">${words} w</span>`
+      + `<span style="font-variant-numeric:tabular-nums;color:${PALETTE.secondaryText};min-width:64px;text-align:right;">${wpm} wpm</span>`
+      + `</div>`;
+  };
+
+  const renderTimeline = () => {
+    const node = byId(ELEMENT_IDS.timeline);
+    if (!node) return;
+    const now = Date.now();
+    const completed = session.intervals.slice();
+    const ordered = completed.reverse(); // newest first
+    const rows = [];
+    if (session.currentInterval) {
+      rows.push(formatTimelineRow(session.currentInterval, true, now));
+    }
+    ordered.slice(0, TIMELINE_MAX_RENDERED_ENTRIES).forEach((interval) => {
+      rows.push(formatTimelineRow(interval, false, now));
+    });
+    if (!rows.length) {
+      setHtml(ELEMENT_IDS.timeline, `<div id="${ELEMENT_IDS.timelineEmpty}" style="color:${PALETTE.dimText};font-style:italic;padding:6px 0;">No intervals yet — press Start counting to begin.</div>`);
+      return;
+    }
+    setHtml(ELEMENT_IDS.timeline, rows.join(''));
   };
 
   // ---------- UI state setters ----------
@@ -832,6 +1141,8 @@ void function () {
 
   // ---------- Bootstrapping ----------
 
+  const handlePageHide = () => persistState();
+
   const init = () => {
     const host = byId(HOST_ELEMENT_ID);
     if (!host) return () => {};
@@ -843,12 +1154,35 @@ void function () {
       return cleanup;
     }
 
+    const restored = restoreSessionFromStorage();
+    if (restored) {
+      pruneOldEntries(Date.now());
+      renderInitialMeta();
+      renderTimeline();
+      setStatus('idle · stats restored');
+    } else {
+      renderInitialMeta();
+      renderTimeline();
+    }
+
     const button = byId(ELEMENT_IDS.button);
     if (button) button.addEventListener('click', toggleListening);
+    const resetButton = byId(ELEMENT_IDS.resetButton);
+    if (resetButton) resetButton.addEventListener('click', () => resetAllStats());
     if (typeof document !== 'undefined' && document.addEventListener) {
       document.addEventListener('visibilitychange', handleVisibilityChange);
+      document.addEventListener('visibilitychange', persistOnHidden);
+    }
+    if (typeof window !== 'undefined' && window.addEventListener) {
+      window.addEventListener('pagehide', handlePageHide);
+      window.addEventListener('beforeunload', handlePageHide);
     }
     return cleanup;
+  };
+
+  const persistOnHidden = () => {
+    if (typeof document === 'undefined') return;
+    if (document.visibilityState === 'hidden') persistState();
   };
 
   const cleanup = () => {
@@ -856,8 +1190,14 @@ void function () {
     if (session.tickHandle) { clearInterval(session.tickHandle); session.tickHandle = null; }
     if (session.restartTimer) { clearTimeout(session.restartTimer); session.restartTimer = null; }
     releaseWakeLock();
+    persistState();
     if (typeof document !== 'undefined' && document.removeEventListener) {
       document.removeEventListener('visibilitychange', handleVisibilityChange);
+      document.removeEventListener('visibilitychange', persistOnHidden);
+    }
+    if (typeof window !== 'undefined' && window.removeEventListener) {
+      window.removeEventListener('pagehide', handlePageHide);
+      window.removeEventListener('beforeunload', handlePageHide);
     }
   };
 
@@ -869,6 +1209,9 @@ void function () {
         totalWords: session.totalWords,
         captions: session.captionEntries.map((entry) => entry.text),
         startedAt: session.startedAt,
+        firstStartedAt: session.firstStartedAt,
+        intervals: session.intervals.map((interval) => ({ ...interval })),
+        currentInterval: session.currentInterval ? { ...session.currentInterval } : null,
         mode: session.mode.id,
         keepAwake: session.keepAwake,
         wakeLockHeld: session.wakeLock !== null
@@ -893,7 +1236,23 @@ void function () {
       },
       start: () => beginListening(),
       stop: () => endListening('idle'),
-      reset: () => endListening('idle')
+      reset: () => resetAllStats({ skipConfirmation: true }),
+      persistNow: () => persistState(),
+      reload: () => {
+        // Mimics a fresh page load by clearing in-memory session and loading
+        // from storage. Used by tests to verify round-trip persistence.
+        session.listening = false;
+        session.startedAt = null;
+        session.firstStartedAt = null;
+        session.intervals = [];
+        session.currentInterval = null;
+        session.totalWords = 0;
+        session.wordEvents = [];
+        session.captionEntries = [];
+        session.finalIndex = 0;
+        session.lastFinalTranscript = '';
+        return restoreSessionFromStorage();
+      }
     };
   }
 

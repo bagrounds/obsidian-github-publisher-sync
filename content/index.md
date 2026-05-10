@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-05-09T18:12:32-07:00
+updated: 2026-05-09T23:31:50-07:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -15,7 +15,7 @@ updated: 2026-05-09T18:12:32-07:00
 💬 Comment on any page with your GitHub account.  
   
 ## [🪞 Reflections](./reflections/index.md) ~ Blog (541)  
-- [2026-05-09](./reflections/2026-05-09.md)  
+- [2026-05-09 | ⚙️ Meter 🧠 Learn 📚 Intro 📈 Improving 🌟 Progress 📰 Shifting 🐔 Milestone 🤖 Architecture 🏛️ Governance 🔀 Anchoring 🏗️ Building 🧰📚📺📄🌟📰🐔🤖🏛️🔀🔄🤖🐲](./reflections/2026-05-09.md)  
 - [2026-05-08 | 🫨 Shocking 🗣️ service 📚 changed 👷 workers 🚫 ignores 🏛️ reconstruction ⚙️ build ⚔️ battle, 🌟 progress 📰 signals 🐔 echo 🤖 governance 🌲 thinking 🔀 systems. 📺📰🌟🐔🤖🏛️🔀🔄🤖🐲](./reflections/2026-05-08.md)  
 - [2026-05-07 | 🤖 The 🐔 Shared 🔀 Intent 🌟 Progress 🏛️ Commons 📰 Echoes 🤖🐔🔀🌟🏛️📰🔄🤖🐲](./reflections/2026-05-07.md)  
 - [2026-05-06 | 🤖 Freedom 🏛️ Bridging 🐔 Quiet 🔀 Intent, 🌟 Progress 📰 World. 🤖🐔🔀🌟🏛️📰🔄🤖🐲](./reflections/2026-05-06.md)  
@@ -71,10 +71,10 @@ updated: 2026-05-09T18:12:32-07:00
   
   
 ## [📚 Books](./books/index.md) (961)  
+- [💰🧔👑🏛️ The Richest Man in Babylon](./books/the-richest-man-in-babylon.md)  
+- [👦🗣️ The Reason I Jump: The Inner Voice of a Thirteen-Year-Old Boy with Autism](./books/the-reason-i-jump-the-inner-voice-of-a-thirteen-year-old-boy-with-autism.md)  
+- [🏢🗓️ The Psychology of Planning in Organizations: Research and Applications](./books/the-psychology-of-planning-in-organizations-research-and-applications.md)  
 - [💰🤔😊 The Psychology of Money: Timeless lessons on wealth, greed, and happiness](./books/the-psychology-of-money.md)  
-- [🧠🏃 The Psychological Benefits of Exercise and Physical Activity](./books/the-psychological-benefits-of-exercise-and-physical-activity.md)  
-- [💰🧑‍🏫⚔️ The Privateers: How Billionaires Created a Culture War and Sold School Vouchers](./books/the-privateers-how-billionaires-created-a-culture-war-and-sold-school-vouchers.md)  
-- [🏷️🏚️💔🏰 The Price of Inequality: How Today's Divided Society Endangers Our Future](./books/the-price-of-inequality-how-todays-divided-society-endangers-our-future.md)  
   
   
 ## [📺 Videos](./videos/index.md) (825)  
@@ -85,10 +85,10 @@ updated: 2026-05-09T18:12:32-07:00
   
   
 ## [🌌 Topics](./topics/index.md) (91)  
+- [🤔🚫➡️📚 Heterodox Economics](./topics/heterodox-economics.md)  
 - [🌿🐚 Growing Centenarian Rhubarb in the PNW](./topics/growing-rhubarb-pnw.md)  
 - [🧮💻 Functional Languages](./topics/functional-languages.md)  
 - [🎨✏️ Graphic Design](./topics/graphic-design.md)  
-- [🤖🕸️💸🔎 Google Search Crawl Budget](./topics/google-search-crawl-budget.md)  
   
   
 ## [📄  Articles](./articles/index.md) (85)  
@@ -106,10 +106,10 @@ updated: 2026-05-09T18:12:32-07:00
   
   
 ## [💾 Software](./software/index.md) (33)  
+- [🚄🎲✅ QuickCheck](./software/quickcheck.md)  
 - [💎🔬🔍📈 Quartz](./software/quartz.md)  
 - [🐍💻🐍 Python](./software/python.md)  
 - [🐍📜🔍✅ Pydantic](./software/pydantic.md)  
-- [💻🔓 OpenCode](./software/opencode.md)  
   
   
 ## [👥 People](./people/index.md) (18)  

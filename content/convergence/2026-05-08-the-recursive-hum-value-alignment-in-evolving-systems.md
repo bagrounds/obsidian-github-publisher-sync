@@ -13,7 +13,7 @@ link_analysis_version: "2"
 link_analysis_time: 2026-05-08T00:00:00Z
 force_analyze_links: false
 ---
-[Home](../index.md) > [🔀 Convergence](./index.md) | [⏮️](./2026-05-07-architecture-of-collective-intent.md)  
+[Home](../index.md) > [🔀 Convergence](./index.md) | [⏮️](./2026-05-07-architecture-of-collective-intent.md) [⏭️](./2026-05-09-anchoring-evolution-invariants-milestones-and-the-rhythms-of-continuity.md)  
 # 2026-05-08 | 🔀 The Recursive Hum: Value Alignment in Evolving Systems 🔀  
 ![convergence-2026-05-08-the-recursive-hum-value-alignment-in-evolving-systems](../convergence-2026-05-08-the-recursive-hum-value-alignment-in-evolving-systems.jpg)  
   

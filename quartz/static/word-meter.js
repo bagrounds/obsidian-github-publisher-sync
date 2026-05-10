@@ -56,7 +56,9 @@ void function () {
     captions: 'wm-captions',
     error: 'wm-error',
     modeOnDevice: 'wm-mode-on-device',
-    modeCloud: 'wm-mode-cloud'
+    modeCloud: 'wm-mode-cloud',
+    keepAwake: 'wm-keep-awake',
+    keepAwakeStatus: 'wm-keep-awake-status'
   });
 
   // ---------- Pure utilities ----------
@@ -256,6 +258,43 @@ void function () {
     ]
   });
 
+  const buildKeepAwakeToggle = () => {
+    const checkbox = element('input', {
+      id: ELEMENT_IDS.keepAwake,
+      attributes: { type: 'checkbox', checked: 'checked' },
+      styles: { marginRight: '8px', accentColor: PALETTE.startBackground }
+    });
+    const label = element('label', {
+      attributes: { for: ELEMENT_IDS.keepAwake },
+      styles: {
+        display: 'inline-flex',
+        alignItems: 'center',
+        fontSize: '13px',
+        color: PALETTE.secondaryText,
+        cursor: 'pointer'
+      },
+      children: [
+        checkbox,
+        element('span', { text: '🔋 Keep counting with screen on (recommended)' })
+      ]
+    });
+    const status = element('span', {
+      id: ELEMENT_IDS.keepAwakeStatus,
+      text: '',
+      styles: { marginLeft: '10px', fontSize: '12px', color: PALETTE.dimText }
+    });
+    return element('div', {
+      styles: {
+        display: 'flex',
+        justifyContent: 'center',
+        flexWrap: 'wrap',
+        alignItems: 'center',
+        marginBottom: '4px'
+      },
+      children: [label, status]
+    });
+  };
+
   const buildMetricTile = (label, valueId, sublabel) => element('div', {
     styles: {
       background: PALETTE.tileBackground,
@@ -358,14 +397,22 @@ void function () {
   });
 
   const buildPrivacyFooter = () => element('div', {
-    text: 'On-device mode keeps audio local when your browser supports it (Safari, recent Chromium). Cloud mode streams audio to your browser vendor’s speech service. Nothing is sent or stored by this page.',
     styles: {
       marginTop: '14px',
       fontSize: '11px',
       color: PALETTE.dimText,
       textAlign: 'center',
       lineHeight: '1.5'
-    }
+    },
+    children: [
+      element('div', {
+        text: 'On-device mode keeps audio local when your browser supports it (Safari, recent Chromium). Cloud mode streams audio to your browser vendor’s speech service. Nothing is sent or stored by this page.'
+      }),
+      element('div', {
+        text: 'Web browsers cannot capture microphone audio with the screen truly off — the page is suspended on screen lock. The keep-awake toggle uses the Screen Wake Lock API to keep the screen lit while you listen, which is the only way to keep the meter running for a long walk with the phone in your pocket.',
+        styles: { marginTop: '6px' }
+      })
+    ]
   });
 
   const buildPanel = () => element('div', {
@@ -385,6 +432,7 @@ void function () {
       buildCountLabel(),
       buildButtonRow(),
       buildModeChooser(),
+      buildKeepAwakeToggle(),
       buildMetricsGrid(),
       buildCaptionsPanel(),
       buildErrorBanner(),
@@ -399,6 +447,61 @@ void function () {
   const selectedMode = () => {
     const cloudRadio = byId(ELEMENT_IDS.modeCloud);
     return cloudRadio && cloudRadio.checked ? RECOGNITION_MODES.cloud : RECOGNITION_MODES.onDevice;
+  };
+
+  const keepAwakeRequested = () => {
+    const checkbox = byId(ELEMENT_IDS.keepAwake);
+    return !checkbox || checkbox.checked !== false;
+  };
+
+  // ---------- Screen Wake Lock ----------
+  // The Screen Wake Lock API is the only standardized way for a web page to
+  // keep the device's display from sleeping. Without it, the screen locks,
+  // the page is suspended, and SpeechRecognition stops — which is why the
+  // word meter would otherwise stop counting when the user puts their phone
+  // in their pocket. The lock is automatically released by the browser when
+  // the page becomes hidden (e.g. user switches tabs), so we re-acquire on
+  // `visibilitychange`.
+
+  const wakeLockSupported = () =>
+    typeof navigator !== 'undefined'
+    && navigator.wakeLock
+    && typeof navigator.wakeLock.request === 'function';
+
+  const setKeepAwakeStatus = (text) => setText(ELEMENT_IDS.keepAwakeStatus, text || '');
+
+  const requestWakeLock = async () => {
+    if (!wakeLockSupported()) {
+      setKeepAwakeStatus('(wake lock not supported on this browser)');
+      return;
+    }
+    try {
+      const lock = await navigator.wakeLock.request('screen');
+      session.wakeLock = lock;
+      setKeepAwakeStatus('screen will stay on');
+      lock.addEventListener && lock.addEventListener('release', () => {
+        if (session.wakeLock === lock) session.wakeLock = null;
+      });
+    } catch (err) {
+      setKeepAwakeStatus(`(wake lock unavailable: ${(err && err.name) || 'error'})`);
+    }
+  };
+
+  const releaseWakeLock = async () => {
+    setKeepAwakeStatus('');
+    const lock = session.wakeLock;
+    session.wakeLock = null;
+    if (!lock) return;
+    try { await lock.release(); } catch (_unused) { /* noop */ }
+  };
+
+  const handleVisibilityChange = () => {
+    if (typeof document === 'undefined') return;
+    // Wake locks auto-release when the page is hidden. Re-acquire on return
+    // so brief tab switches don't break a long listening session.
+    if (document.visibilityState === 'visible' && session.listening && session.keepAwake && !session.wakeLock) {
+      requestWakeLock();
+    }
   };
 
   const configureRecognition = (recognition, mode, locale) => {
@@ -430,7 +533,9 @@ void function () {
     recognition: null,
     mode: DEFAULT_RECOGNITION_MODE,
     tickHandle: null,
-    restartTimer: null
+    restartTimer: null,
+    wakeLock: null,
+    keepAwake: false
   });
 
   const session = createSession();
@@ -458,7 +563,8 @@ void function () {
       captionEntries: [],
       finalIndex: 0,
       lastFinalTranscript: '',
-      mode: selectedMode()
+      mode: selectedMode(),
+      keepAwake: keepAwakeRequested()
     });
 
     const locale = navigator.language || 'en-US';
@@ -474,6 +580,8 @@ void function () {
     renderInitialMeta();
     session.tickHandle = setInterval(handleTick, TICK_INTERVAL_MILLISECONDS);
 
+    if (session.keepAwake) requestWakeLock();
+
     startSafely(session.recognition);
   };
 
@@ -488,6 +596,7 @@ void function () {
     }
     if (session.tickHandle) { clearInterval(session.tickHandle); session.tickHandle = null; }
     if (session.restartTimer) { clearTimeout(session.restartTimer); session.restartTimer = null; }
+    releaseWakeLock();
     setButtonStart();
     setStatus(statusText);
     setModeChooserEnabled(true);
@@ -699,11 +808,11 @@ void function () {
   const setButtonStop = () => setButtonAppearance('Stop counting', PALETTE.stopBackground, PALETTE.stopForeground);
 
   const setModeChooserEnabled = (enabled) => {
-    [ELEMENT_IDS.modeOnDevice, ELEMENT_IDS.modeCloud].forEach((id) => {
-      const radio = byId(id);
-      if (radio) {
-        radio.disabled = !enabled;
-        const label = radio.parentElement;
+    [ELEMENT_IDS.modeOnDevice, ELEMENT_IDS.modeCloud, ELEMENT_IDS.keepAwake].forEach((id) => {
+      const input = byId(id);
+      if (input) {
+        input.disabled = !enabled;
+        const label = input.parentElement;
         if (label) label.style.opacity = enabled ? '1' : '0.55';
       }
     });
@@ -736,6 +845,9 @@ void function () {
 
     const button = byId(ELEMENT_IDS.button);
     if (button) button.addEventListener('click', toggleListening);
+    if (typeof document !== 'undefined' && document.addEventListener) {
+      document.addEventListener('visibilitychange', handleVisibilityChange);
+    }
     return cleanup;
   };
 
@@ -743,6 +855,10 @@ void function () {
     if (session.listening) endListening('idle');
     if (session.tickHandle) { clearInterval(session.tickHandle); session.tickHandle = null; }
     if (session.restartTimer) { clearTimeout(session.restartTimer); session.restartTimer = null; }
+    releaseWakeLock();
+    if (typeof document !== 'undefined' && document.removeEventListener) {
+      document.removeEventListener('visibilitychange', handleVisibilityChange);
+    }
   };
 
   // Test hook — only exposed when explicitly enabled before the script runs.
@@ -753,7 +869,9 @@ void function () {
         totalWords: session.totalWords,
         captions: session.captionEntries.map((entry) => entry.text),
         startedAt: session.startedAt,
-        mode: session.mode.id
+        mode: session.mode.id,
+        keepAwake: session.keepAwake,
+        wakeLockHeld: session.wakeLock !== null
       }),
       simulateResult: (text, isFinal) => {
         // SpeechRecognitionResult is array-like with numeric indices plus a boolean
@@ -773,6 +891,8 @@ void function () {
         const radio = byId(modeId === RECOGNITION_MODES.cloud.id ? ELEMENT_IDS.modeCloud : ELEMENT_IDS.modeOnDevice);
         if (radio) radio.checked = true;
       },
+      start: () => beginListening(),
+      stop: () => endListening('idle'),
       reset: () => endListening('idle')
     };
   }

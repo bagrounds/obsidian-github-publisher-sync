@@ -12,8 +12,9 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_version: "2"
 link_analysis_time: 2026-05-09T00:00:00Z
 force_analyze_links: false
+updated: 2026-05-10T13:43:37
 ---
-[Home](../index.md) > [🌟 Positivity Bias](./index.md) | [⏮️](./2026-05-08-bright-horizons-a-daily-dose-of-progress-and-ingenuity.md)  
+[Home](../index.md) > [🌟 Positivity Bias](./index.md) | [⏮️](./2026-05-08-bright-horizons-a-daily-dose-of-progress-and-ingenuity.md) [⏭️](./2026-05-10-daily-pulse-breakthroughs-and-blossoming-progress.md)  
 # 2026-05-09 | 🌟 Unveiling Progress: A World of Discovery and Collaboration 🌟  
 ![positivity-bias-2026-05-09-unveiling-progress-a-world-of-discovery-and-collaboration](../positivity-bias-2026-05-09-unveiling-progress-a-world-of-discovery-and-collaboration.jpg)  
   
@@ -66,3 +67,14 @@ force_analyze_links: false
 - 🌐 [prnewswire.com](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGgX5h1i89OMcOOHleDm1ST4UlGFe85BjHy6nkfaPs-uCXolgm3k9gZlSmE2RfrzQGN72Ztu2mLtwGYoPayiO-Yq2-adyxF6W6MRh1UxXfm2c4btwAGjR_snNO0ZbeV227lrlArys-0HoGjZHYHUBh21HppFQC015bnJJKy2i5lfTy47hD14hhx0EOcsKouF-uAxam-jd2b3bkIRyNIHk_tgutmJZML7eP8_OUidM9XKLSr9Ek3MqEI_GSqcXZxS0NNESlaT4UdBUfjrjTajkk=)  
 - 🌐 [ufl.edu](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEwiRydZYt09SiTNPoeUJdPxmKUlD3UoLe60zsNMe2K8YwAflV-6b3r_Y_03ONB55bAolI3_N27VL30r-v1GkfHdoCfZCYzX9ckWWtp4qgblkBNq-NVymO3ke2hvT_1oyDHzE9gOhxTzwSd7k-8oLijMWHw7M1nQa-U3T1jF9jQurTMeksReahni7FaddP4vXXGBIKqm1NDpDrlBpFpOT8rNVhg7HliaQ==)  
 - 🌐 [stemcellthailand.org](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHEP4T00h4GJWgS9rEosFfbe6a7vD1qI3qzeDn3G-EpjYKlOTL5mShhXPkJvmfMliD4Sh57xy6NHvTQU9ueERrMT98NFPEermiaCXVoY1ezbRUUmVzZ3AZDTBEYayG7w0hg1bJzyoHQCDcd4AzJ_BB9ZFs=)  
+  
+## 🦋 Bluesky    
+<blockquote class="bluesky-embed" data-bluesky-uri="at://did:plc:i4yli6h7x2uoj7acxunww2fc/app.bsky.feed.post/3mlivcruwzr2c" data-bluesky-cid="bafyreibnb33budi24na5loajlhn7wtbe6rbjdrownxlvfkxdvnzqgi32jy"><p>2026-05-09 | 🌟 Unveiling Progress: A World of Discovery and Collaboration 🌟  
+  
+#AI Q: 🚀 Which recent breakthrough gives you most hope?  
+  
+🧬 Medical Innovation | ☀️ Renewable Energy  
+https://bagrounds.org/positivity-bias/2026-05-09-unveiling-progress-a-world-of-discovery-and-collaboration</p>&mdash; <a href="https://bsky.app/profile/did:plc:i4yli6h7x2uoj7acxunww2fc?ref_src=embed">Bryan Grounds (@bagrounds.bsky.social)</a> <a href="https://bsky.app/profile/did:plc:i4yli6h7x2uoj7acxunww2fc/post/3mlivcruwzr2c?ref_src=embed">2026-05-10T13:43:42.000Z</a></blockquote><script async src="https://embed.bsky.app/static/embed.js" charset="utf-8"></script>  
+  
+## 🐘 Mastodon    
+<blockquote class="mastodon-embed" data-embed-url="https://mastodon.social/@bagrounds/116550574050451429/embed" style="background: #282c37; border-radius: 8px; border: 1px solid #393f4f; margin: 0; max-width: 540px; min-width: 270px; overflow: hidden; padding: 0;"> <a href="https://mastodon.social/@bagrounds/116550574050451429" target="_blank" style="align-items: center; color: #d9e1e8; display: flex; flex-direction: column; font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Oxygen, Ubuntu, Cantarell, 'Fira Sans', 'Droid Sans', 'Helvetica Neue', Roboto, sans-serif; font-size: 14px; justify-content: center; letter-spacing: 0.25px; line-height: 20px; padding: 24px; text-decoration: none;"> <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="32" height="32" viewBox="0 0 79 75"><path d="M63 45.3v-20c0-4.1-1-7.3-3.2-9.7-2.1-2.4-5-3.7-8.5-3.7-4.1 0-7.2 1.6-9.3 4.7l-2 3.3-2-3.3c-2-3.1-5.1-4.7-9.2-4.7-3.5 0-6.4 1.3-8.6 3.7-2.1 2.4-3.1 5.6-3.1 9.7v20h8V25.9c0-4.1 1.7-6.2 5.2-6.2 3.8 0 5.8 2.5 5.8 7.4V37.7H44V27.1c0-4.9 1.9-7.4 5.8-7.4 3.5 0 5.2 2.1 5.2 6.2V45.3h8ZM74.7 16.6c.6 6 .1 15.7.1 17.3 0 .5-.1 4.8-.1 5.3-.7 11.5-8 16-15.6 17.5-.1 0-.2 0-.3 0-4.9 1-10 1.2-14.9 1.4-1.2 0-2.4 0-3.6 0-4.8 0-9.7-.6-14.4-1.7-.1 0-.1 0-.1 0s-.1 0-.1 0 0 .1 0 .1 0 0 0 0c.1 1.6.4 3.1 1 4.5.6 1.7 2.9 5.7 11.4 5.7 5 0 9.9-.6 14.8-1.7 0 0 0 0 0 0 .1 0 .1 0 .1 0 0 .1 0 .1 0 .1.1 0 .1 0 .1.1v5.6s0 .1-.1.1c0 0 0 0 0 .1-1.6 1.1-3.7 1.7-5.6 2.3-.8.3-1.6.5-2.4.7-7.5 1.7-15.4 1.3-22.7-1.2-6.8-2.4-13.8-8.2-15.5-15.2-.9-3.8-1.6-7.6-1.9-11.5-.6-5.8-.6-11.7-.8-17.5C3.9 24.5 4 20 4.9 16 6.7 7.9 14.1 2.2 22.3 1c1.4-.2 4.1-1 16.5-1h.1C51.4 0 56.7.8 58.1 1c8.4 1.2 15.5 7.5 16.6 15.6Z" fill="currentColor"/></svg> <div style="color: #9baec8; margin-top: 16px;">Post by @bagrounds@mastodon.social</div> <div style="font-weight: 500;">View on Mastodon</div> </a> </blockquote> <script data-allowed-prefixes="https://mastodon.social/" async src="https://mastodon.social/embed.js"></script>

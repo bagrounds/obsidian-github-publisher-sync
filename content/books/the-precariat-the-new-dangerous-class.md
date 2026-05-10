@@ -10,9 +10,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-26T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-05-09T23:29:25Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A minimalist, evocative illustration featuring a lone, silhouetted figure standing on a narrow, weathered wooden plank suspended over a vast, misty abyss. The figure is small and isolated, emphasizing vulnerability and lack of solid ground. In the background, a sprawling, blurry cityscape of steel and glass looms, cold and indifferent. The lighting is muted and moody, utilizing a palette of desaturated blues, slate grays, and a single, sharp streak of warning orange cutting across the horizon line. The composition focuses on the contrast between the rigid, imposing structures of the modern world and the precarious, unstable footing of the individual, capturing a sense of existential uncertainty and the search for balance in a shifting economic landscape.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🏚️⚠️ The Precariat: The New Dangerous Class  
+![books-the-precariat-the-new-dangerous-class](../books-the-precariat-the-new-dangerous-class.jpg)  
 [🛒 The Precariat: The New Dangerous Class. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4hsse2B)  
   
  🤔🌍💸 Neoliberal policies and globalization have forged a new global class living in pervasive insecurity, lacking stable work, social protections, and a clear identity, which, while vulnerable to extremism, also holds transformative potential for a new politics of paradise including universal basic income.  

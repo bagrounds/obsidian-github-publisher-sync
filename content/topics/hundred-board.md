@@ -12,6 +12,7 @@ image_date: 2026-04-09T13:39:01Z
 image_model: "@cf/black-forest-labs/flux-1-schnell"
 image_prompt: A top-down, slightly angled view of a high-quality wooden hundred board resting on a warm, light-colored wooden table. The board features a 10x10 grid with clean, engraved numbers. Several colorful, smooth wooden tiles are scattered artistically near the board, while others are neatly placed in their respective slots to form a partial pattern. Soft, natural morning light streams in from the side, casting gentle shadows that highlight the tactile texture of the wood. The background is softly blurred, suggesting a cozy, organized home-learning environment with a few blurred primary-colored math manipulatives or a childs pencil nearby, evoking a sense of curiosity, discovery, and calm academic engagement. The color palette is bright and inviting, featuring natural wood tones, primary colors, and clean white space.
 link_analysis_version: "2"
+updated: 2026-05-10T09:52:01
 ---
 [Home](../index.md) > [Topics](./index.md)  
 # 🔢💯 Hundred Board  
@@ -131,4 +132,12 @@ The Hundred Board is a versatile tool used in early math education, particularly
     * 🐌 A creative book that helps children count by different increments and understand number combinations (e.g., how many legs for various creatures).  
   
 10. 🌳 **"Anno's Counting Book" by Mitsumasa Anno**  
-    * 🖼️ A beautifully illustrated wordless counting book that encourages observation and numerical understanding.
+    * 🖼️ A beautifully illustrated wordless counting book that encourages observation and numerical understanding.  
+  
+## 🦋 Bluesky    
+<blockquote class="bluesky-embed" data-bluesky-uri="at://did:plc:i4yli6h7x2uoj7acxunww2fc/app.bsky.feed.post/3mliiepj67n2s" data-bluesky-cid="bafyreidwvcwffb5bgrffcaxvoz3ncltzkuxix63xn6hnwzgjd5kmet7dnm"><p>🔢💯 Hundred Board  
+  
+#AI Q: 🧠 What was your most memorable early math learning tool?  
+  
+🧮 Math Education | 🔢 Number Sense | 🏫 Early Learning |  
+https://bagrounds.org/topics/hundred-board</p>&mdash; <a href="https://bsky.app/profile/did:plc:i4yli6h7x2uoj7acxunww2fc?ref_src=embed">Bryan Grounds (@bagrounds.bsky.social)</a> <a href="https://bsky.app/profile/did:plc:i4yli6h7x2uoj7acxunww2fc/post/3mliiepj67n2s?ref_src=embed">2026-05-10T09:52:08.000Z</a></blockquote><script async src="https://embed.bsky.app/static/embed.js" charset="utf-8"></script>

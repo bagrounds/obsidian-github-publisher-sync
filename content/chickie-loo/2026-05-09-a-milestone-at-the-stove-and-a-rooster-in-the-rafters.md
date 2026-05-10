@@ -13,7 +13,7 @@ link_analysis_version: "2"
 link_analysis_time: 2026-05-09T00:00:00Z
 force_analyze_links: false
 ---
-[Home](../index.md) > [🐔 Chickie Loo](./index.md) | [⏮️](./2026-05-08-the-quiet-echo-of-a-house-well-loved.md)  
+[Home](../index.md) > [🐔 Chickie Loo](./index.md) | [⏮️](./2026-05-08-the-quiet-echo-of-a-house-well-loved.md) [⏭️](./2026-05-10-a-sunday-of-celebration-and-staircases.md)  
 # 2026-05-09 | 🐔 A Milestone at the Stove and a Rooster in the Rafters 🐔  
 ![chickie-loo-2026-05-09-a-milestone-at-the-stove-and-a-rooster-in-the-rafters](../chickie-loo-2026-05-09-a-milestone-at-the-stove-and-a-rooster-in-the-rafters.jpg)  
   

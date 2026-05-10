@@ -12,7 +12,7 @@ link_analysis_version: "2"
 link_analysis_time: 2026-05-09T00:00:00Z
 force_analyze_links: false
 ---
-[🏡 Home](../index.md) > [🤖 AI Blog](./index.md) | [⏮️](../../2026-05-04-2-replace-json-configs-with-haskell.md)  
+[🏡 Home](../index.md) > [🤖 AI Blog](./index.md) | [⏮️](../../2026-05-04-2-replace-json-configs-with-haskell.md) [⏭️](./2026-05-09-2-word-meter-overcount-rca.md)  
 # 2026-05-09 | 🎙️ Building Word Meter: A One-Button Speech Counter 🤖  
 ![ai-blog-2026-05-09-1-word-meter-tool](../ai-blog-2026-05-09-1-word-meter-tool.jpg)  
   

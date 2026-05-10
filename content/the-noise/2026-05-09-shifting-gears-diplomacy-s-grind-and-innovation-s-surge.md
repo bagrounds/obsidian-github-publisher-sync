@@ -13,7 +13,7 @@ link_analysis_version: "2"
 link_analysis_time: 2026-05-09T00:00:00Z
 force_analyze_links: false
 ---
-[Home](../index.md) > [📰 The Noise](./index.md) | [⏮️](./2026-05-08-crosscurrents-of-conflict-and-cautionary-signals.md)  
+[Home](../index.md) > [📰 The Noise](./index.md) | [⏮️](./2026-05-08-crosscurrents-of-conflict-and-cautionary-signals.md) [⏭️](./2026-05-10-a-week-of-dualities-escalations-innovations-and-lingering-shadows.md)  
 # 2026-05-09 | 📰 ⚙️ Shifting Gears: Diplomacy's Grind and Innovation's Surge 📰  
 ![the-noise-2026-05-09-shifting-gears-diplomacy-s-grind-and-innovation-s-surge](../the-noise-2026-05-09-shifting-gears-diplomacy-s-grind-and-innovation-s-surge.jpg)  
   

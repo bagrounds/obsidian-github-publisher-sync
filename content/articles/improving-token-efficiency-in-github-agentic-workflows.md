@@ -6,6 +6,10 @@ title: 🤖📉⚡ Improving token efficiency in GitHub Agentic Workflows
 URL: https://bagrounds.org/articles/improving-token-efficiency-in-github-agentic-workflows
 Author:
 tags:
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_version: "2"
+link_analysis_time: 2026-05-09T00:00:00Z
+force_analyze_links: false
 ---
 [Home](../index.md) > [Articles](./index.md)  
 # [🤖📉⚡ Improving token efficiency in GitHub Agentic Workflows](https://github.blog/ai-and-ml/github-copilot/improving-token-efficiency-in-github-agentic-workflows)  
@@ -76,10 +80,10 @@ tags:
   
 ### 🆚 Contrasting  
   
-* 📘 Deep Learning by Ian Goodfellow focuses on the foundational mathematical principles of neural networks rather than the high-level optimization of agentic workflows.  
-* 📘 Clean Code by Robert C. Martin emphasizes human-centric coding standards and structural discipline which may occasionally conflict with the raw data requirements of AI context windows.  
+* 📘 [🧠💻🤖 Deep Learning](../books/deep-learning.md) by Ian Goodfellow focuses on the foundational mathematical principles of neural networks rather than the high-level optimization of agentic workflows.  
+* 📘 [🧼💾 Clean Code: A Handbook of Agile Software Craftsmanship](../books/clean-code.md) by Robert C. Martin emphasizes human-centric coding standards and structural discipline which may occasionally conflict with the raw data requirements of AI context windows.  
   
 ### 🎨 Creatively Related  
   
 * 📘 The Information by James Gleick traces the history of how humans have managed and compressed data to overcome the limits of communication.  
-* 📘 Thinking in Systems by Donella Meadows offers insights into how complex feedback loops and modular structures function in both biological and technological systems.
+* 📘 [🌐🔗🧠📖 Thinking in Systems: A Primer](../books/thinking-in-systems.md) by Donella Meadows offers insights into how complex feedback loops and modular structures function in both biological and technological systems.

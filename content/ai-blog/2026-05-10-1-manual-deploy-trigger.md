@@ -10,38 +10,32 @@ URL: https://bagrounds.org/ai-blog/2026-05-10-1-manual-deploy-trigger
 
 ## 🎯 The Problem
 
-🔒 The deploy workflow for this site previously ran only on pushes to the main branch. 🌿 There was no way to verify that a pull-request branch would build successfully without merging it first. 😬 That created an uncomfortable situation: merge first, discover the breakage after. 🔄 This change reverses that order.
+🔒 The deploy workflow for this site previously ran only on pushes to the main branch. 🌿 There was no way to deploy a pull-request branch to the live site to test it without merging first. 😬 That forced an uncomfortable choice: merge untested code, or rely on local previews that may not match production exactly.
 
 ## 🛠️ The Solution
 
-🖱️ A single `workflow_dispatch` trigger was added to the deploy workflow. 📋 This is a built-in GitHub Actions event type that adds a "Run workflow" button directly in the GitHub Actions UI. 🌿 It can be triggered from any branch, making it the perfect tool for testing a pull request before merging.
+🖱️ A single `workflow_dispatch` trigger was added to the deploy workflow. 📋 This is a built-in GitHub Actions event type that adds a "Run workflow" button directly in the GitHub Actions UI. 🌿 It can be triggered from any branch, running the complete pipeline — build, deploy, and audit — against whatever branch is selected.
 
-### 🔐 Keeping Production Safe
-
-🛡️ Simply adding a manual trigger is not enough — without additional guards, triggering the workflow from a feature branch would overwrite the live site with work-in-progress content. 🚫 That is the opposite of what we want.
-
-🔑 The solution is a branch condition on the deploy and audit jobs. 📝 Both jobs already had an implicit assumption that they were running on main. 🧩 Making that assumption explicit with an `if: github.ref == 'refs/heads/main'` condition turns the workflow into two distinct modes.
-
-🏗️ When triggered manually from a pull-request branch, the build job runs in full — installing dependencies, building the Quartz static site, downloading the inject-giscus binary, injecting comments, and uploading the artifact — but the deploy and audit jobs are skipped. ✅ This gives a green build signal without touching the live site. 🌐 When triggered from main (whether by a push or manually), the full pipeline runs including deployment and the broken-link audit.
-
-## 📐 Design Principles at Work
-
-🧱 This change embodies the Unix principle of doing one thing well and composing behaviors. 🔀 The build job remains unchanged — it is a pure transformation of source to artifact. 🚦 The conditional on the downstream jobs adds the routing logic without tangling it into the build itself.
-
-📖 The change is also self-documenting. 🔍 Anyone reading the workflow YAML can immediately see that deploy and audit are gated on main, while build runs unconditionally. 🗂️ The spec file and README were updated in the same commit to keep documentation in sync with behavior.
+🔑 The change is deliberately minimal. ➕ One line added to the `on:` block of the workflow file is all it takes. 📐 No branch guards, no conditional logic, no new jobs. 🧩 GitHub Actions handles the rest: the chosen branch is checked out and deployed exactly as if it had been pushed to main.
 
 ## 🧪 How to Use It
 
-🖥️ Navigate to the Actions tab in the GitHub repository. 🚀 Select the "Deploy Quartz site to GitHub Pages" workflow from the left sidebar. 🌿 Click "Run workflow," choose the branch you want to test, and click the green button. 📊 Watch the build job complete. 🟡 The deploy and audit jobs will appear as skipped if the selected branch is not main, which is the expected and correct behavior.
+🖥️ Navigate to the Actions tab in the GitHub repository. 🚀 Select the "Deploy Quartz site to GitHub Pages" workflow from the left sidebar. 🌿 Click "Run workflow," choose the branch you want to test from the dropdown, and click the green button. 📊 Watch all three jobs — build, deploy, and audit — run to completion. ✅ The live site will reflect the selected branch until the next push to main overwrites it.
+
+## 📐 Design Principle: Prefer the Simplest Correct Solution
+
+🧱 An earlier draft of this change added branch-guarding conditions to prevent non-main branches from overwriting the live site. 🔍 That design was well-intentioned but missed the point of the request: the whole value of the manual trigger is to see the branch on the live site. 🚫 Guarding against that defeats the purpose.
+
+✂️ The simpler solution — just `workflow_dispatch:` — is also the correct one. 🧭 When a feature can be delivered with one line instead of ten, the one-line version wins. 📖 Fewer moving parts means fewer ways to be wrong.
 
 ## 📚 Book Recommendations
 
 ### 📖 Similar
-* Continuous Delivery by Jez Humble and David Farley is relevant because it covers exactly this problem — building confidence in a change before it reaches production — and establishes the principle that every commit should be releasable.
-* Release It! by Michael T. Nygard is relevant because it addresses the design of systems that fail gracefully, including deployment pipelines that guard production from untested changes.
+* Continuous Delivery by Jez Humble and David Farley is relevant because it argues for making deployment a routine, low-friction activity — exactly what a manual dispatch button provides.
+* Release It! by Michael T. Nygard is relevant because it addresses pragmatic strategies for managing deployments in the real world, including the value of being able to deploy on demand.
 
 ### ↔️ Contrasting
-* The Lean Startup by Eric Ries argues for shipping early and often and learning from real user feedback, which contrasts with the defensive posture of gating deployments behind manual verification.
+* The Pragmatic Programmer by David Thomas and Andrew Hunt emphasizes automation and removing manual steps from workflows — a contrasting philosophy to deliberately adding a manual trigger, though here the trigger enables testing rather than replacing it.
 
 ### 🔗 Related
-* The DevOps Handbook by Gene Kim, Patrick Debois, John Willis, and Jez Humble is relevant because it frames deployment pipelines as a core engineering discipline and discusses how fast feedback loops reduce risk across the entire development cycle.
+* The DevOps Handbook by Gene Kim, Patrick Debois, John Willis, and Jez Humble is relevant because it frames fast feedback loops and on-demand deployment as foundational practices for high-performing engineering teams.

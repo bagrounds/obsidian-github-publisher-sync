@@ -324,26 +324,18 @@ describe("Word Meter — keep-awake / Screen Wake Lock", () => {
     const harness = loadWordMeterWithLifecycle({ wakeLockSupported: true, keepAwakeChecked: true })
     harness.wm.start()
     await flushMicrotasks()
-    // Simulate the browser silently releasing the lock during a hide/show.
+    const requestsAfterStart = harness.counts().requested
+    // Hide the page (mimics the browser silently releasing the lock), then
+    // show it again. The visibility handler must not double-request while a
+    // lock is already held, and must not lose any requests on the way back.
     harness.triggerVisibilityChange("hidden")
-    // Manually clear the held lock to mimic the browser's automatic release.
-    harness.wm.reset && (() => {})() // no-op; reset would also clear listening
-    // Bring the page back; the visibility handler should re-request only if
-    // we're still listening and the lock isn't currently held.
-    // To exercise this path, restart and then force a hidden→visible cycle.
-    harness.wm.start()
-    await flushMicrotasks()
-    const beforeRequests = harness.counts().requested
-    harness.triggerVisibilityChange("hidden")
-    // Drop the recorded lock so the visibility handler considers it released.
-    // Internal state isn't directly reachable, so we rely on the handler's
-    // guard: it only re-requests when wakeLockHeld is false.
     harness.triggerVisibilityChange("visible")
     await flushMicrotasks()
-    // Either a new request happened (lock was released) or none (still held).
-    // Both are correct behavior; assert we never *over*-request.
-    const afterRequests = harness.counts().requested
-    assert.ok(afterRequests >= beforeRequests, "must not lose requests")
-    assert.ok(afterRequests <= beforeRequests + 1, "must not double-request while a lock is already held")
+    const requestsAfterVisible = harness.counts().requested
+    assert.ok(requestsAfterVisible >= requestsAfterStart, "must not lose requests")
+    assert.ok(
+      requestsAfterVisible <= requestsAfterStart + 1,
+      "must not double-request while a lock is already held",
+    )
   })
 })

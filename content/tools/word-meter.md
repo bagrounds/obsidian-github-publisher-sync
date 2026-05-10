@@ -13,7 +13,7 @@ link_analysis_time: 2026-05-09T00:00:00Z
 force_analyze_links: false
 ---
   
-[🏡 Home](../index.md#) > [🧰 Tools](./index.md#)  
+[🏡 Home](../index.md) > [🧰 Tools](./index.md)  
   
 # 🎙️ Word Meter  
 ![tools-word-meter](../tools-word-meter.jpg)  

@@ -1,6 +1,6 @@
 module Automation.VaultSync
   ( syncFileToVault
-  , syncNewAiBlogPosts
+  , syncNewMarkdownFiles
   , copySeriesPosts
   , syncRepoPostsToVault
   , ensureFileInVault
@@ -44,23 +44,23 @@ syncFileToVault localPath vaultRelativePath vaultDirectory = do
 similarityThreshold :: Double
 similarityThreshold = 0.25
 
-syncNewAiBlogPosts :: FilePath -> FilePath -> (Text -> IO ()) -> IO Int
-syncNewAiBlogPosts repoDirectory vaultDirectory logger = do
+syncNewMarkdownFiles :: FilePath -> FilePath -> (Text -> IO ()) -> IO Int
+syncNewMarkdownFiles repoDirectory vaultDirectory logger = do
   repoExists <- doesDirectoryExist repoDirectory
   if not repoExists
     then pure 0
     else do
       createDirectoryIfMissing True vaultDirectory
       vaultEntries <- listDirectory vaultDirectory
-      let vaultMarkdownFiles = filter isAiBlogPost vaultEntries
+      let vaultMarkdownFiles = filter isSyncableMarkdownFile vaultEntries
           vaultFilenames = fmap T.pack vaultMarkdownFiles
       vaultContents <- traverse (\filename -> TIO.readFile (vaultDirectory </> filename)) vaultMarkdownFiles
       repoEntries <- listDirectory repoDirectory
-      let repoMarkdownFiles = filter isAiBlogPost repoEntries
+      let repoMarkdownFiles = filter isSyncableMarkdownFile repoEntries
       counts <- traverse (syncIfNew repoDirectory vaultDirectory vaultFilenames (zip vaultMarkdownFiles vaultContents) logger) repoMarkdownFiles
       pure (sum counts)
   where
-    isAiBlogPost filename = takeExtension filename == ".md" && filename /= "index.md" && filename /= "AGENTS.md"
+    isSyncableMarkdownFile filename = takeExtension filename == ".md" && filename /= "index.md" && filename /= "AGENTS.md"
 
 syncIfNew :: FilePath -> FilePath -> [Text] -> [(FilePath, Text)] -> (Text -> IO ()) -> FilePath -> IO Int
 syncIfNew sourceDirectory destinationDirectory vaultFilenames vaultContents logger filename = do

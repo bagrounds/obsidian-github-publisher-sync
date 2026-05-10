@@ -11,7 +11,7 @@ import Test.Tasty.HUnit (testCase, (@?=), assertBool)
 import Test.Tasty.QuickCheck (testProperty)
 import qualified Test.QuickCheck as QC
 
-import Automation.VaultSync (findBestMatch, showScore, similarityThreshold, ensureFileInVault, syncRepoPostsToVault)
+import Automation.VaultSync (findBestMatch, showScore, similarityThreshold, ensureFileInVault, syncRepoPostsToVault, syncNewMarkdownFiles)
 
 tests :: TestTree
 tests = testGroup "VaultSync"
@@ -20,6 +20,7 @@ tests = testGroup "VaultSync"
   , similarityThresholdTests
   , ensureFileInVaultTests
   , syncRepoPostsToVaultTests
+  , syncNewMarkdownFilesTests
   , properties
   ]
 
@@ -182,6 +183,58 @@ syncRepoPostsToVaultTests = testGroup "syncRepoPostsToVault"
         synced @?= 1
         exists <- doesFileExist (vaultDir </> "new-series" </> "2026-04-11-hello.md")
         assertBool "post should exist in vault" exists
+  ]
+
+syncNewMarkdownFilesTests :: TestTree
+syncNewMarkdownFilesTests = testGroup "syncNewMarkdownFiles"
+  [ testCase "copies new markdown files from repo to vault" $
+      withSystemTempDirectory "tools-sync-test" $ \tmpDir -> do
+        let repoDir = tmpDir </> "tools"
+            vaultDir = tmpDir </> "vault-tools"
+        createDirectoryIfMissing True repoDir
+        TIO.writeFile (repoDir </> "word-meter.md") "tool content here"
+        synced <- syncNewMarkdownFiles repoDir vaultDir (const (pure ()))
+        synced @?= 1
+        content <- TIO.readFile (vaultDir </> "word-meter.md")
+        content @?= "tool content here"
+
+  , testCase "skips files already present in the vault" $
+      withSystemTempDirectory "tools-sync-test" $ \tmpDir -> do
+        let repoDir = tmpDir </> "tools"
+            vaultDir = tmpDir </> "vault-tools"
+        createDirectoryIfMissing True repoDir
+        createDirectoryIfMissing True vaultDir
+        TIO.writeFile (repoDir </> "word-meter.md") "repo version"
+        TIO.writeFile (vaultDir </> "word-meter.md") "vault version"
+        synced <- syncNewMarkdownFiles repoDir vaultDir (const (pure ()))
+        synced @?= 0
+        content <- TIO.readFile (vaultDir </> "word-meter.md")
+        content @?= "vault version"
+
+  , testCase "ignores index.md and AGENTS.md" $
+      withSystemTempDirectory "tools-sync-test" $ \tmpDir -> do
+        let repoDir = tmpDir </> "tools"
+            vaultDir = tmpDir </> "vault-tools"
+        createDirectoryIfMissing True repoDir
+        TIO.writeFile (repoDir </> "index.md") "index"
+        TIO.writeFile (repoDir </> "AGENTS.md") "agents"
+        synced <- syncNewMarkdownFiles repoDir vaultDir (const (pure ()))
+        synced @?= 0
+
+  , testCase "returns zero when repo directory does not exist" $ do
+      synced <- syncNewMarkdownFiles "/nonexistent-tools" "/also-nonexistent" (const (pure ()))
+      synced @?= 0
+
+  , testCase "creates vault directory if missing" $
+      withSystemTempDirectory "tools-sync-test" $ \tmpDir -> do
+        let repoDir = tmpDir </> "tools"
+            vaultDir = tmpDir </> "vault-tools"
+        createDirectoryIfMissing True repoDir
+        TIO.writeFile (repoDir </> "calculator.md") "calc"
+        synced <- syncNewMarkdownFiles repoDir vaultDir (const (pure ()))
+        synced @?= 1
+        exists <- doesFileExist (vaultDir </> "calculator.md")
+        assertBool "tool page should exist in vault" exists
   ]
 
 properties :: TestTree

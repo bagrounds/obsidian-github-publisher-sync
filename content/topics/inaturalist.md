@@ -10,6 +10,8 @@ image_date: 2026-04-09T13:39:40Z
 image_model: "@cf/black-forest-labs/flux-1-schnell"
 image_prompt: A close-up, vibrant macro photograph of a person’s hand holding a sleek, modern smartphone in a lush forest setting. On the phone screen, a digital interface displays a colorful, high-resolution identification tag hovering over a detailed image of a wildflower. The background features a soft, bokeh-blurred woodland floor dappled with natural sunlight filtering through emerald green leaves. A magnifying glass rests partially on a moss-covered log nearby, symbolizing the blend of scientific exploration and nature. The color palette emphasizes rich forest greens, earthy browns, and the bright, crisp white of the digital interface, creating a harmonious balance between technology and the organic world.
 link_analysis_version: "2"
+URL: https://bagrounds.org/topics/inaturalist
+updated: 2026-05-10T11:30:10
 ---
 [Home](../index.md) > [Topics](./index.md)  
 # 🔭🌿 iNaturalist  
@@ -27,3 +29,11 @@ link_analysis_version: "2"
 <a href="https://www.inaturalist.org/observations/bagrounds" style="display: flex; align-items: center; height: 2em;">  
 <img src="https://static.inaturalist.org/attachments/users/icons/8822063/7d7dc1fdd3a6d0d024b7da94f59ea141-thumb.jpeg?1733695366" style="margin-right: 10px;" /> bagrounds' observations »  
 </a>  
+  
+## 🦋 Bluesky    
+<blockquote class="bluesky-embed" data-bluesky-uri="at://did:plc:i4yli6h7x2uoj7acxunww2fc/app.bsky.feed.post/3mlinu7dehn26" data-bluesky-cid="bafyreihlih6246muw6n5qdeomj2vikpq27aneaogvgemwyzaeoofigiz7u"><p>🔭🌿 iNaturalist  
+  
+#AI Q: 🌳 Favorite local plant or animal identified recently?  
+  
+🦋 Biodiversity | 🧪 Citizen Science | 🌳 Nature Observation  
+https://bagrounds.org/topics/inaturalist</p>&mdash; <a href="https://bsky.app/profile/did:plc:i4yli6h7x2uoj7acxunww2fc?ref_src=embed">Bryan Grounds (@bagrounds.bsky.social)</a> <a href="https://bsky.app/profile/did:plc:i4yli6h7x2uoj7acxunww2fc/post/3mlinu7dehn26?ref_src=embed">2026-05-10T11:30:16.000Z</a></blockquote><script async src="https://embed.bsky.app/static/embed.js" charset="utf-8"></script>

@@ -10,9 +10,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-18T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-05-10T01:48:45Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A stylized, minimalist illustration featuring a silhouette of a human head in profile. Inside the silhouette, the brain is depicted as a vibrant, glowing network of neural pathways that transition into organic, leafy green vines and blooming flowers, symbolizing growth and neuroplasticity. Surrounding the head, fluid, abstract motion lines and kinetic shapes suggest the rhythm of a runner or active movement. The color palette uses a clean contrast of deep cerulean blue for the analytical, scientific background and warm, energetic gradients of golden yellow and bright orange to represent the mental clarity and mood elevation resulting from physical activity. The overall aesthetic is modern, clean, and inspiring, emphasizing the harmonious connection between movement and mental health.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🧠🏃 The Psychological Benefits of Exercise and Physical Activity  
+![books-the-psychological-benefits-of-exercise-and-physical-activity](../books-the-psychological-benefits-of-exercise-and-physical-activity.jpg)  
 [🛒 The Psychological Benefits of Exercise and Physical Activity. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3Gf0Uaa)  
   
 ## 📚 Book Report: The Psychological Benefits of Exercise and Physical Activity  

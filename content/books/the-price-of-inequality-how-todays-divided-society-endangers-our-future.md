@@ -10,9 +10,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-17T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-05-10T00:44:03Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A split-screen illustration featuring a conceptual divide. On the left, a vibrant, lush, and golden-hued cityscape representing extreme wealth, characterized by polished glass skyscrapers, manicured parks, and soaring, optimistic architecture. On the right, a stark, gray-toned, and crumbling urban landscape representing systemic decay, featuring weathered brick tenements, cracked pavement, and barren, shadowed streets. A single, jagged fissure tears through the center of the image, separating the two worlds. The lighting transitions sharply from a warm, hopeful sunrise on the left to a cold, overcast dusk on the right, highlighting the stark contrast in quality of life and opportunity. The composition is clean, modern, and symbolic, focusing on the visual metaphor of a fractured society.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🏷️🏚️💔🏰 The Price of Inequality: How Today's Divided Society Endangers Our Future  
+![books-the-price-of-inequality-how-todays-divided-society-endangers-our-future](../books-the-price-of-inequality-how-todays-divided-society-endangers-our-future.jpg)  
 [🛒 The Price of Inequality: How Today's Divided Society Endangers Our Future. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/47oCHZX)  
   
 ## 💰 The Price of Inequality: A Critical Examination of a Divided America  

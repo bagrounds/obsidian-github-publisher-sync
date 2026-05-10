@@ -10,9 +10,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-25T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-05-10T00:44:15Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A stylized, high-contrast illustration featuring a large, ornate wooden schoolhouse in the center, appearing fragile and slightly weathered. Looming over the school are several giant, puppet-like marionette strings descending from above, held by shadowy, indistinct figures in suits. The strings are connected to the roof of the school, pulling it apart. Scattered across the foreground are golden coins that transition into sharp, jagged puzzle pieces, suggesting a forced restructuring. The color palette uses deep navy blues and dark grays for the background, contrasted by stark, glowing gold and crimson accents to highlight the themes of wealth, conflict, and the dismantling of public infrastructure. The overall atmosphere is tense, cinematic, and metaphorical.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 💰🧑‍🏫⚔️ The Privateers: How Billionaires Created a Culture War and Sold School Vouchers  
+![books-the-privateers-how-billionaires-created-a-culture-war-and-sold-school-vouchers](../books-the-privateers-how-billionaires-created-a-culture-war-and-sold-school-vouchers.jpg)  
 [🛒 The Privateers: How Billionaires Created a Culture War and Sold School Vouchers. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4nSiEsk)  
   
 💰 Wealthy conservative donors strategically fueled cultural divisions to champion school voucher initiatives, ultimately aiming to privatize public education, often resulting in negative academic outcomes. 💰 📚  

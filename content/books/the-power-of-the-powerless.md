@@ -10,9 +10,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-24T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-05-09T21:29:12Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A stark, minimalist composition featuring a single, vibrant green apple resting on a cold, grey concrete floor. Above the apple, a single beam of warm, golden light breaks through a dark, heavy, uniform fog, illuminating the fruit and casting a sharp, elongated shadow that stretches toward the viewer. The background is composed of repetitive, faded geometric shapes that suggest a rigid, bureaucratic structure, while the apple remains the only organic, colorful element in the frame. The contrast between the oppressive, monochromatic environment and the singular, glowing point of authenticity emphasizes the theme of individual resistance against a conformist system.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 👤✊ The Power of the Powerless  
+![books-the-power-of-the-powerless](../books-the-power-of-the-powerless.jpg)  
 [🛒 The Power of the Powerless. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4qBJKp8)  
   
 ✊💡🌍 An examination of totalitarian systems, Václav Havel argues that individual moral authenticity—living in truth—can disrupt and dismantle systems built on widespread ideological pretense and fear, offering a path to genuine freedom and social regeneration.  

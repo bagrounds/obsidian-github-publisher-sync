@@ -11,9 +11,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-17T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-05-09T20:28:32Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A warm, minimalist illustration featuring the silhouette of an adult sitting on the floor beside a young child. The adult is leaning in slightly, with their hands gently resting on the floor, symbolizing focused presence. A soft, glowing, golden light emanates from the space between them, representing the Four Ss of emotional connection. The background is a clean, soft-focus interior, such as a cozy living room, rendered in muted, comforting earth tones. The lines are clean and modern, emphasizing a sense of calm, safety, and intentionality. There are no distractions or clutter, keeping the focus entirely on the quiet, powerful bond of being physically and emotionally present.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🔌👋 The Power of Showing Up: How Parental Presence Shapes Who Our Kids Become and How Their Brains Get Wired  
+![books-the-power-of-showing-up](../books-the-power-of-showing-up.jpg)  
 [🛒 The Power of Showing Up: How Parental Presence Shapes Who Our Kids Become and How Their Brains Get Wired. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4kqoFea)  
   
 ## 📚 Book Report: The Power of Showing Up  

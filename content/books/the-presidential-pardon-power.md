@@ -10,9 +10,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-22T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-05-09T23:29:40Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A close-up, dramatic composition featuring an ornate, antique fountain pen resting atop a weathered, cream-colored parchment document bearing the faint impression of a U.S. government seal. Beside the document sits a single, pristine white feather quill, casting a soft shadow across the surface. The background is a dimly lit, wood-paneled library with blurred, leather-bound books on mahogany shelves, evoking a sense of historical gravitas and executive authority. The lighting is warm and directional, emphasizing the texture of the paper and the sharp metallic gleam of the pen nib, symbolizing the weight and finality of a presidential signature.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🏛️🕊️👑 The Presidential Pardon Power  
+![books-the-presidential-pardon-power](../books-the-presidential-pardon-power.jpg)  
 [🛒 The Presidential Pardon Power. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/48Z7tZV)  
   
 The Presidential Pardon Power book illuminates the historical evolution, constitutional scope, and enduring controversies surrounding the President's absolute authority to grant clemency, revealing its profound impact on justice, politics, and public perception 🏛️⚖️🇺🇸.  

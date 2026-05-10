@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-05-09T23:31:50-07:00
+updated: 2026-05-10T08:15:42-07:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -14,60 +14,60 @@ updated: 2026-05-09T23:31:50-07:00
 🔊 Listen to any page with built in audio control.  
 💬 Comment on any page with your GitHub account.  
   
-## [🪞 Reflections](./reflections/index.md) ~ Blog (541)  
+## [🪞 Reflections](./reflections/index.md) ~ Blog (542)  
+- [2026-05-10](./reflections/2026-05-10.md)  
 - [2026-05-09 | ⚙️ Meter 🧠 Learn 📚 Intro 📈 Improving 🌟 Progress 📰 Shifting 🐔 Milestone 🤖 Architecture 🏛️ Governance 🔀 Anchoring 🏗️ Building 🧰📚📺📄🌟📰🐔🤖🏛️🔀🔄🤖🐲](./reflections/2026-05-09.md)  
 - [2026-05-08 | 🫨 Shocking 🗣️ service 📚 changed 👷 workers 🚫 ignores 🏛️ reconstruction ⚙️ build ⚔️ battle, 🌟 progress 📰 signals 🐔 echo 🤖 governance 🌲 thinking 🔀 systems. 📺📰🌟🐔🤖🏛️🔀🔄🤖🐲](./reflections/2026-05-08.md)  
 - [2026-05-07 | 🤖 The 🐔 Shared 🔀 Intent 🌟 Progress 🏛️ Commons 📰 Echoes 🤖🐔🔀🌟🏛️📰🔄🤖🐲](./reflections/2026-05-07.md)  
-- [2026-05-06 | 🤖 Freedom 🏛️ Bridging 🐔 Quiet 🔀 Intent, 🌟 Progress 📰 World. 🤖🐔🔀🌟🏛️📰🔄🤖🐲](./reflections/2026-05-06.md)  
   
   
-## [🤖 AI Blog](./ai-blog/index.md) (194)  
+## [🤖 AI Blog](./ai-blog/index.md) (196)  
+- [2026-05-09 | 🔋 Word Meter Goes The Distance With Screen Wake Lock 🤖](./ai-blog/2026-05-09-3-word-meter-screen-wake-lock.md)  
+- [2026-05-09 | 🐛 Word Meter Overcount: A Web Speech Refinement Quirk 🤖](./ai-blog/2026-05-09-2-word-meter-overcount-rca.md)  
 - [2026-05-09 | 🎙️ Building Word Meter: A One-Button Speech Counter 🤖](./ai-blog/2026-05-09-1-word-meter-tool.md)  
 - [2026-05-04 | 🏷️ From JSON to Haskell: Strong Types for Blog Series Configs 🤖](../2026-05-04-2-replace-json-configs-with-haskell.md)  
-- [2026-05-04 | 🔗 Fix Frontmatter URL Before Posting 🤖](./ai-blog/2026-05-04-1-fix-frontmatter-url-before-posting.md)  
-- [2026-05-03 | 🔤 Expand Abbreviations in Haskell — Pass 20 🤖](./ai-blog/2026-05-03-9-expand-abbreviations-haskell-pass-20.md)  
   
   
-## [🤖 Auto Blog Zero](./auto-blog-zero/index.md) (60)  
+## [🤖 Auto Blog Zero](./auto-blog-zero/index.md) (61)  
+- [2026-05-10 | 🤖 📆 Weekly Recap: The Architecture of Intent and Governance 🤖](./auto-blog-zero/2026-05-10-weekly-recap-the-architecture-of-intent-and-governance.md)  
 - [2026-05-09 | 🤖 🏛️ The Architecture of Constitutional Continuity 🤖](./auto-blog-zero/2026-05-09-the-architecture-of-constitutional-continuity.md)  
 - [2026-05-08 | 🤖 🌐 The Horizon of Recursive Governance 🤖](./auto-blog-zero/2026-05-08-the-horizon-of-recursive-governance.md)  
 - [2026-05-07 | 🤖 🧭 The Architecture of Uncertainty 🤖](./auto-blog-zero/2026-05-07-the-architecture-of-uncertainty.md)  
-- [2026-05-06 | 🤖 🧱 The Friction of Freedom 🤖](./auto-blog-zero/2026-05-06-the-friction-of-freedom.md)  
   
   
-## [🐔 Chickie Loo](./chickie-loo/index.md) (60)  
+## [🐔 Chickie Loo](./chickie-loo/index.md) (61)  
+- [2026-05-10 | 🐔 A Sunday of Celebration and Staircases 🐔](./chickie-loo/2026-05-10-a-sunday-of-celebration-and-staircases.md)  
 - [2026-05-09 | 🐔 A Milestone at the Stove and a Rooster in the Rafters 🐔](./chickie-loo/2026-05-09-a-milestone-at-the-stove-and-a-rooster-in-the-rafters.md)  
 - [2026-05-08 | 🐔 🐣 The Quiet Echo of a House Well-Loved 🐔](./chickie-loo/2026-05-08-the-quiet-echo-of-a-house-well-loved.md)  
 - [2026-05-07 | 🐔 A Thursday of Shared Sunlight 🐔](./chickie-loo/2026-05-07-a-thursday-of-shared-sunlight.md)  
-- [2026-05-06 | 🐔 🐄 A Quiet Morning After the Storm 🐔](./chickie-loo/2026-05-06-a-quiet-morning-after-the-storm.md)  
   
   
-## [🏛️ Systems for Public Good](./systems-for-public-good/index.md) (49)  
+## [🏛️ Systems for Public Good](./systems-for-public-good/index.md) (50)  
+- [2026-05-10 | 🏛️ 🗓️ This Week's Threads: Weaving the Foundations of a Shared Society 🏛️](./systems-for-public-good/2026-05-10-this-week-s-threads-weaving-the-foundations-of-a-shared-society.md)  
 - [2026-05-09 | 🏛️ ❓ Navigating Complexity: The Imperative of Thoughtful Governance 🏛️](./systems-for-public-good/2026-05-09-navigating-complexity-the-imperative-of-thoughtful-governance.md)  
 - [2026-05-08 | 🏛️ 🧠 Seeing the Forest *and* the Trees: What is Systems Thinking? 🏛️](./systems-for-public-good/2026-05-08-seeing-the-forest-and-the-trees-what-is-systems-thinking.md)  
 - [2026-05-07 | 🏛️ The Integrated Commons: Bridging Physical and Digital Public Goods 🏛️](./systems-for-public-good/2026-05-07-the-integrated-commons-bridging-physical-and-digital-public-goods.md)  
-- [2026-05-06 | 🏛️ The Interconnected Commons: Bridging Physical and Digital Public Goods 🏛️](./systems-for-public-good/2026-05-06-the-interconnected-commons-bridging-physical-and-digital-public-goods.md)  
   
   
-## [📰 The Noise](./the-noise/index.md) (30)  
+## [📰 The Noise](./the-noise/index.md) (31)  
+- [2026-05-10 | 📰 🌪️ A Week of Dualities: Escalations, Innovations, and Lingering Shadows 📰](./the-noise/2026-05-10-a-week-of-dualities-escalations-innovations-and-lingering-shadows.md)  
 - [2026-05-09 | 📰 ⚙️ Shifting Gears: Diplomacy's Grind and Innovation's Surge 📰](./the-noise/2026-05-09-shifting-gears-diplomacy-s-grind-and-innovation-s-surge.md)  
 - [2026-05-08 | 📰 💥 Crosscurrents of Conflict and Cautionary Signals 📰](./the-noise/2026-05-08-crosscurrents-of-conflict-and-cautionary-signals.md)  
 - [2026-05-07 | 📰 🌪️ Echoes of Diplomacy, Leaps of Discovery 📰](./the-noise/2026-05-07-echoes-of-diplomacy-leaps-of-discovery.md)  
-- [2026-05-06 | 📰 💡 A World of Convergence and Divergence 📰](./the-noise/2026-05-06-a-world-of-convergence-and-divergence.md)  
   
   
-## [🌟 Positivity Bias](./positivity-bias/index.md) (29)  
+## [🌟 Positivity Bias](./positivity-bias/index.md) (30)  
+- [2026-05-10 | 🌟 Daily Pulse: Breakthroughs and Blossoming Progress 🌟](./positivity-bias/2026-05-10-daily-pulse-breakthroughs-and-blossoming-progress.md)  
 - [2026-05-09 | 🌟 Unveiling Progress: A World of Discovery and Collaboration 🌟](./positivity-bias/2026-05-09-unveiling-progress-a-world-of-discovery-and-collaboration.md)  
 - [2026-05-08 | 🌟 Bright Horizons: A Daily Dose of Progress and Ingenuity 🌟](./positivity-bias/2026-05-08-bright-horizons-a-daily-dose-of-progress-and-ingenuity.md)  
 - [2026-05-07 | 🌟 The World's Brightest Echoes: Progress in Every Corner 🌟](./positivity-bias/2026-05-07-the-world-s-brightest-echoes-progress-in-every-corner.md)  
-- [2026-05-06 | 🌟 A Cascade of Progress: Innovations, Community Spirit, and Global Accord 🌟](./positivity-bias/2026-05-06-a-cascade-of-progress-innovations-community-spirit-and-global-accord.md)  
   
   
-## [🔀 Convergence](./convergence/index.md) (26)  
+## [🔀 Convergence](./convergence/index.md) (27)  
+- [2026-05-10 | 🔀 🏡 The Enduring Architecture of Intent: Building, Refining, and Flourishing 🔀](./convergence/2026-05-10-the-enduring-architecture-of-intent-building-refining-and-flourishing.md)  
 - [2026-05-09 | 🔀 ⚓ Anchoring Evolution: Invariants, Milestones, and the Rhythms of Continuity 🔀](./convergence/2026-05-09-anchoring-evolution-invariants-milestones-and-the-rhythms-of-continuity.md)  
 - [2026-05-08 | 🔀 The Recursive Hum: Value Alignment in Evolving Systems 🔀](./convergence/2026-05-08-the-recursive-hum-value-alignment-in-evolving-systems.md)  
 - [2026-05-07 | 🔀 Architecture of Collective Intent 🔀](./convergence/2026-05-07-architecture-of-collective-intent.md)  
-- [2026-05-06 | 🔀 The Emergent Architecture of Collective Intent 🔀](./convergence/2026-05-06-the-emergent-architecture-of-collective-intent.md)  
   
   
 ## [📚 Books](./books/index.md) (961)  
@@ -85,10 +85,10 @@ updated: 2026-05-09T23:31:50-07:00
   
   
 ## [🌌 Topics](./topics/index.md) (91)  
-- [🤔🚫➡️📚 Heterodox Economics](./topics/heterodox-economics.md)  
-- [🌿🐚 Growing Centenarian Rhubarb in the PNW](./topics/growing-rhubarb-pnw.md)  
-- [🧮💻 Functional Languages](./topics/functional-languages.md)  
-- [🎨✏️ Graphic Design](./topics/graphic-design.md)  
+- [🔭🌿 iNaturalist](./topics/inaturalist.md)  
+- [🗣️🗣️ Bilingualism](./topics/bilingualism.md)  
+- [🔢💯 Hundred Board](./topics/hundred-board.md)  
+- [📚🎭 Humanities](./topics/humanities.md)  
   
   
 ## [📄  Articles](./articles/index.md) (85)  
@@ -106,10 +106,10 @@ updated: 2026-05-09T23:31:50-07:00
   
   
 ## [💾 Software](./software/index.md) (33)  
+- [⚛️🔄 React](./software/react.md)  
 - [🚄🎲✅ QuickCheck](./software/quickcheck.md)  
 - [💎🔬🔍📈 Quartz](./software/quartz.md)  
 - [🐍💻🐍 Python](./software/python.md)  
-- [🐍📜🔍✅ Pydantic](./software/pydantic.md)  
   
   
 ## [👥 People](./people/index.md) (18)  

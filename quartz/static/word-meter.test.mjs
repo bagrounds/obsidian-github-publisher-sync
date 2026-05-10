@@ -34,7 +34,7 @@ const stubElement = () => {
   return node
 }
 
-const loadWordMeter = () => {
+const loadWordMeter = ({ localStorageStore } = {}) => {
   const sandbox = {
     document: {
       getElementById: () => null,
@@ -57,6 +57,14 @@ const loadWordMeter = () => {
     isFinite,
     console,
   }
+  if (localStorageStore) {
+    const store = localStorageStore
+    sandbox.localStorage = {
+      getItem: (key) => (key in store ? store[key] : null),
+      setItem: (key, value) => { store[key] = String(value) },
+      removeItem: (key) => { delete store[key] },
+    }
+  }
   sandbox.window = sandbox
   sandbox.window.__WM_TEST_HOOK__ = true
   vm.createContext(sandbox)
@@ -67,7 +75,7 @@ const loadWordMeter = () => {
 // Richer loader that mocks SpeechRecognition, navigator (with optional
 // wakeLock support), and a DOM that surfaces the keep-awake checkbox so the
 // session lifecycle (`beginListening`/`endListening`) can run end-to-end.
-const loadWordMeterWithLifecycle = ({ wakeLockSupported, keepAwakeChecked, requestRejects } = {}) => {
+const loadWordMeterWithLifecycle = ({ wakeLockSupported, keepAwakeChecked, requestRejects, localStorageStore } = {}) => {
   const elementsById = {}
   const visibilityListeners = []
   let visibilityState = "visible"
@@ -166,6 +174,14 @@ const loadWordMeterWithLifecycle = ({ wakeLockSupported, keepAwakeChecked, reque
     JSON,
     isFinite,
     console,
+  }
+  if (localStorageStore) {
+    const store = localStorageStore
+    sandbox.localStorage = {
+      getItem: (key) => (key in store ? store[key] : null),
+      setItem: (key, value) => { store[key] = String(value) },
+      removeItem: (key) => { delete store[key] },
+    }
   }
   sandbox.window = sandbox
   sandbox.window.__WM_TEST_HOOK__ = true
@@ -336,6 +352,167 @@ describe("Word Meter — keep-awake / Screen Wake Lock", () => {
     assert.ok(
       requestsAfterVisible <= requestsAfterStart + 1,
       "must not double-request while a lock is already held",
+    )
+  })
+})
+
+describe("Word Meter — persistence across page loads", () => {
+  test("totals and intervals survive a simulated reload via shared localStorage", () => {
+    // Two separate sandboxes share the same backing store so that a reload
+    // (a fresh sandbox loading word-meter.js again) sees the previous run's
+    // persisted snapshot. This is the round-trip the user actually cares
+    // about: switch apps, return, totals are still there.
+    const sharedStore = {}
+    const wm1 = loadWordMeter({ localStorageStore: sharedStore })
+    wm1.simulateResult("hello world how are you", true)
+    assert.strictEqual(wm1.getState().totalWords, 5)
+    wm1.persistNow()
+
+    const wm2 = loadWordMeter({ localStorageStore: sharedStore })
+    wm2.reload()
+    assert.strictEqual(wm2.getState().totalWords, 5, "total words restored")
+  })
+
+  test("an in-process reload restores totals through persistState round-trip", () => {
+    const wm = loadWordMeter({ localStorageStore: {} })
+    wm.simulateResult("alpha bravo charlie", true)
+    wm.persistNow()
+    const restored = wm.reload()
+    assert.strictEqual(restored, true)
+    assert.strictEqual(wm.getState().totalWords, 3)
+  })
+
+  test("returns null/false when storage is empty and there is nothing to restore", () => {
+    const wm = loadWordMeter({ localStorageStore: {} })
+    const restored = wm.reload()
+    assert.strictEqual(restored, false)
+    assert.strictEqual(wm.getState().totalWords, 0)
+  })
+
+  test("starting recognition while running survives a reload that records the active interval", async () => {
+    const harness = loadWordMeterWithLifecycle({ wakeLockSupported: false, localStorageStore: {} })
+    harness.wm.start()
+    harness.wm.simulateResult("good morning", true)
+    harness.wm.stop()
+    assert.strictEqual(harness.wm.getState().intervals.length, 1)
+    assert.strictEqual(harness.wm.getState().intervals[0].words, 2)
+  })
+
+  test("survives a missing localStorage gracefully (no crash, no persistence)", () => {
+    const wm = loadWordMeter() // no storage configured
+    wm.simulateResult("a b c", true)
+    // Persisting must not throw.
+    wm.persistNow()
+    assert.strictEqual(wm.getState().totalWords, 3)
+  })
+
+  test("ignores corrupted persisted JSON without throwing", () => {
+    const sharedStore = { "word-meter:state:v1": "{not valid json" }
+    const wm = loadWordMeter({ localStorageStore: sharedStore })
+    // The IIFE doesn't auto-restore (no DOM host element), but reload() does:
+    const restored = wm.reload()
+    assert.strictEqual(restored, false)
+    assert.strictEqual(wm.getState().totalWords, 0)
+  })
+
+  test("ignores persisted snapshots from an older schema version", () => {
+    const sharedStore = {
+      "word-meter:state:v1": JSON.stringify({ version: 0, totalWords: 999 }),
+    }
+    const wm = loadWordMeter({ localStorageStore: sharedStore })
+    const restored = wm.reload()
+    assert.strictEqual(restored, false)
+    assert.strictEqual(wm.getState().totalWords, 0)
+  })
+})
+
+describe("Word Meter — reset button", () => {
+  test("reset clears totals, intervals, and the persisted snapshot", () => {
+    const sharedStore = {}
+    const wm = loadWordMeter({ localStorageStore: sharedStore })
+    wm.simulateResult("one two three four", true)
+    wm.persistNow()
+    assert.strictEqual(wm.getState().totalWords, 4)
+    wm.reset()
+    assert.strictEqual(wm.getState().totalWords, 0)
+    assert.strictEqual(wm.getState().intervals.length, 0)
+    // After reset, a fresh load sees nothing.
+    const wm2 = loadWordMeter({ localStorageStore: sharedStore })
+    const restored = wm2.reload()
+    assert.strictEqual(restored, false)
+    assert.strictEqual(wm2.getState().totalWords, 0)
+  })
+
+  test("reset while listening stops the recognizer and clears state", async () => {
+    const harness = loadWordMeterWithLifecycle({ wakeLockSupported: false, localStorageStore: {} })
+    harness.wm.start()
+    harness.wm.simulateResult("foo bar", true)
+    harness.wm.reset()
+    const state = harness.wm.getState()
+    assert.strictEqual(state.listening, false)
+    assert.strictEqual(state.totalWords, 0)
+    assert.strictEqual(state.intervals.length, 0)
+    assert.strictEqual(state.firstStartedAt, null)
+  })
+})
+
+describe("Word Meter — interval timeline", () => {
+  test("each start/stop cycle appends a completed interval with its word count", async () => {
+    const harness = loadWordMeterWithLifecycle({ wakeLockSupported: false, localStorageStore: {} })
+    harness.wm.start()
+    harness.wm.simulateResult("one two three", true)
+    harness.wm.stop()
+    harness.wm.start()
+    harness.wm.simulateResult("four five", true)
+    harness.wm.stop()
+    const intervals = harness.wm.getState().intervals
+    assert.strictEqual(intervals.length, 2)
+    assert.strictEqual(intervals[0].words, 3)
+    assert.strictEqual(intervals[1].words, 2)
+    assert.strictEqual(harness.wm.getState().totalWords, 5)
+  })
+
+  test("starting again after stop accumulates totals (does not reset to zero)", async () => {
+    const harness = loadWordMeterWithLifecycle({ wakeLockSupported: false, localStorageStore: {} })
+    harness.wm.start()
+    harness.wm.simulateResult("alpha bravo", true)
+    harness.wm.stop()
+    assert.strictEqual(harness.wm.getState().totalWords, 2)
+    harness.wm.start()
+    harness.wm.simulateResult("charlie delta echo", true)
+    assert.strictEqual(
+      harness.wm.getState().totalWords,
+      5,
+      "second start must continue from the previous total, not reset",
+    )
+  })
+
+  test("the in-progress interval is exposed while listening and is folded into intervals on stop", async () => {
+    const harness = loadWordMeterWithLifecycle({ wakeLockSupported: false, localStorageStore: {} })
+    harness.wm.start()
+    harness.wm.simulateResult("hello", true)
+    const stateBeforeStop = harness.wm.getState()
+    assert.notStrictEqual(stateBeforeStop.currentInterval, null)
+    assert.strictEqual(stateBeforeStop.currentInterval.words, 1)
+    assert.strictEqual(stateBeforeStop.intervals.length, 0)
+    harness.wm.stop()
+    const stateAfterStop = harness.wm.getState()
+    assert.strictEqual(stateAfterStop.currentInterval, null)
+    assert.strictEqual(stateAfterStop.intervals.length, 1)
+    assert.strictEqual(stateAfterStop.intervals[0].words, 1)
+  })
+
+  test("firstStartedAt is set on the first ever start and preserved across subsequent starts", async () => {
+    const harness = loadWordMeterWithLifecycle({ wakeLockSupported: false, localStorageStore: {} })
+    harness.wm.start()
+    const firstStart = harness.wm.getState().firstStartedAt
+    assert.ok(typeof firstStart === "number", "firstStartedAt must be a timestamp")
+    harness.wm.stop()
+    harness.wm.start()
+    assert.strictEqual(
+      harness.wm.getState().firstStartedAt,
+      firstStart,
+      "firstStartedAt must NOT change on subsequent starts",
     )
   })
 })

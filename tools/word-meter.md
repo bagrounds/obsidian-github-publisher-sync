@@ -24,8 +24,14 @@ description: "Count the ambient spoken words around you with a single tap, using
 - 🔢 The big number is the total words spoken since you started
 - ⏱️ See your words-per-minute over the last 1 minute, last 10 minutes, and overall
 - 💬 The captions panel shows the last 30 seconds of recognized speech, fading as it ages
+- 🧮 The timeline at the bottom logs every start/stop interval with its word count and words-per-minute
+- 💾 Stats are saved to your browser's local storage and survive app switches, screen locks, and reloads — only the **Reset** button clears them
 - 🔒 Pick **On-device** (default) or **Cloud** recognition — see below
 - 🔋 Toggle **Keep counting with screen on** to keep listening through a long walk — see below
+
+### Persistence and the reset button
+
+Word Meter writes its running stats to your browser's `localStorage` continuously — after every recognized utterance, every Start, every Stop, and again whenever the page is hidden or unloaded. When you switch apps and come back, the totals, the per-interval timeline, and the words-per-minute history are all still there, and the meter is simply paused until you tap **Start counting** again. Each Start appends a brand new interval to the timeline at the bottom of the page rather than wiping the previous one, so the running total grows across as many sessions as you like. The only way to clear the stats is to tap the **Reset** button next to Start/Stop, which prompts for confirmation before discarding everything. Storage is per-origin and stays entirely on your device — nothing leaves your browser.
 
 ### On-device vs. cloud
 

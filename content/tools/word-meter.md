@@ -7,6 +7,10 @@ description: Count the ambient spoken words around you with a single tap, using 
 image_date: 2026-05-10T01:09:32Z
 image_model: "@cf/black-forest-labs/flux-1-schnell"
 image_prompt: A sleek, minimalist illustration featuring a glowing, stylized microphone icon centered in a soft-focus environment. Surrounding the microphone are floating, translucent text bubbles of varying sizes and opacities, representing spoken words dissipating into the air. The color palette uses a professional gradient of deep navy transitioning into vibrant teal or electric blue, evoking a modern, high-tech interface. Subtle, rhythmic sound waves ripple outward from the microphone, rendered as thin, elegant geometric lines. The composition is clean and airy, emphasizing the concept of ambient data capture, with a soft blur on the edges to draw the viewer’s eye toward the central, glowing audio-capture element.
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_version: "2"
+link_analysis_time: 2026-05-09T00:00:00Z
+force_analyze_links: false
 ---
   
 [🏡 Home](../index.md#) > [🧰 Tools](./index.md#)  

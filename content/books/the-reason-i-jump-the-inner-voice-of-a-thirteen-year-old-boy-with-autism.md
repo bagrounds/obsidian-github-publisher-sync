@@ -10,9 +10,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-19T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-05-10T03:17:07Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A surreal, artistic composition depicting a young boy silhouetted against a vast, ethereal sky. The boy is captured in a mid-air leap, his body language conveying a sense of weightlessness and freedom. Surrounding him are fragments of floating, translucent alphabet characters and geometric shapes that dissolve into stardust. The color palette is composed of soft, calming blues, deep indigos, and glowing, warm golden light emanating from the boy’s chest, symbolizing the inner voice and brilliant mind hidden within. The background features subtle, abstract ripples, suggesting the complexity of his sensory world. The overall mood is one of profound introspection, hope, and the quiet beauty of a unique perspective.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 👦🗣️ The Reason I Jump: The Inner Voice of a Thirteen-Year-Old Boy with Autism  
+![books-the-reason-i-jump-the-inner-voice-of-a-thirteen-year-old-boy-with-autism](../books-the-reason-i-jump-the-inner-voice-of-a-thirteen-year-old-boy-with-autism.jpg)  
 [🛒 The Reason I Jump: The Inner Voice of a Thirteen-Year-Old Boy with Autism. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/46VRGtL)  
   
 ## 📖 Book Report: The Reason I Jump  

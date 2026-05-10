@@ -11,9 +11,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-16T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-05-10T05:28:13Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: An opulent, stylized illustration of a sun-drenched, ancient Babylonian courtyard. In the center, a large, ornate golden clay jar overflows with glistening gold coins, casting soft, warm light onto the surrounding sand. In the background, majestic ziggurats and stone pillars rise against a deep azure sky, adorned with intricate, weathered carvings. A single, lush palm tree leans into the frame, providing a sharp contrast between the organic green foliage and the geometric, architectural precision of the city. The overall aesthetic is warm, cinematic, and timeless, emphasizing a sense of prosperity and ancient wisdom through rich textures of stone, gold, and desert landscape. The lighting is golden-hour, creating long, dramatic shadows that evoke a sense of historical grandeur.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 💰🧔👑🏛️ The Richest Man in Babylon  
+![books-the-richest-man-in-babylon](../books-the-richest-man-in-babylon.jpg)  
 [🛒 The Richest Man in Babylon. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/43NvYFF)  
   
 ## 🤖 AI Summary  

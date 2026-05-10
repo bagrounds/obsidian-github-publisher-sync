@@ -9,9 +9,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-15T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-05-10T03:16:50Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A minimalist isometric illustration of a modern workspace featuring a large, translucent glass wall covered in interconnected flowcharts, sticky notes, and geometric shapes. A stylized human silhouette stands before the glass, holding a glowing, abstract puzzle piece that completes a central structure. The color palette uses professional navy blue, soft teal, and crisp white, with subtle orange accents highlighting key connection points. The background features a clean, soft-focus office environment with architectural lines that suggest depth and structure. The overall aesthetic is sleek, intellectual, and analytical, emphasizing the intersection of cognitive strategy and organizational design.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🏢🗓️ The Psychology of Planning in Organizations: Research and Applications  
+![books-the-psychology-of-planning-in-organizations-research-and-applications](../books-the-psychology-of-planning-in-organizations-research-and-applications.jpg)  
 [🛒 The Psychology of Planning in Organizations: Research and Applications. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4kJlhL1)  
   
 ## 📖 Book Report: The Psychology of Planning in Organizations: Research and Applications  

@@ -13,6 +13,7 @@ image_date: 2026-04-09T11:29:35Z
 image_model: "@cf/black-forest-labs/flux-1-schnell"
 image_prompt: A minimalist, surrealist illustration featuring a standard, rigid geometric shape—like a perfect cube—shattering into a diverse array of vibrant, organic forms. The cube, representing traditional neoclassical economics, is cracking open to reveal a complex, interconnected ecosystem inside. This interior landscape includes a tangle of roots representing social structures, golden clockwork gears symbolizing institutional mechanisms, and flowing water currents representing the fluidity of money and demand. The color palette transitions from cold, sterile greys and blues on the outside to warm, rich earth tones, deep greens, and vibrant golds within. The lighting is dramatic, with a soft glow emanating from the fissures, suggesting a process of discovery and the breaking of rigid boundaries to reveal a more holistic, multifaceted economic reality.
 link_analysis_version: "2"
+updated: 2026-05-10T03:18:46
 ---
 [Home](../index.md) > [Topics](./index.md) > [Knowledge](./a-hierarchical-view-of-human-knowledge.md) > [Social Sciences](./social-sciences.md) > [Economics](./economics.md)  
 # 🤔🚫➡️📚 Heterodox Economics  
@@ -44,4 +45,12 @@ Heterodox economics is a diverse and critical body of economic thought that chal
 A High-Level Summary: A concise overview of the core principles, goals, and significance of this category.  
 Subcategories: A list of the major subcategories or branches within this category, with a brief description of each.  
 Book Recommendations: A selection of 3-5 influential or accessible books that provide a good introduction to this category or its key subcategories.  
-Use lots of emojis.
+Use lots of emojis.  
+  
+## 🦋 Bluesky    
+<blockquote class="bluesky-embed" data-bluesky-uri="at://did:plc:i4yli6h7x2uoj7acxunww2fc/app.bsky.feed.post/3mlhsfqne5q2u" data-bluesky-cid="bafyreih5at3z2daea73lbynuxy5henat4t366ncdbpcukhbyln7vid7ud4"><p>🤔🚫➡️📚 Heterodox Economics  
+  
+#AI Q: 📉 Does mainstream economics fail to explain the real world?  
+  
+🌍 Social Economy | 💰 Monetary Policy | ⚖️ Wealth Inequality | 📈 Economic Systems  
+https://bagrounds.org/topics/heterodox-economics</p>&mdash; <a href="https://bsky.app/profile/did:plc:i4yli6h7x2uoj7acxunww2fc?ref_src=embed">Bryan Grounds (@bagrounds.bsky.social)</a> <a href="https://bsky.app/profile/did:plc:i4yli6h7x2uoj7acxunww2fc/post/3mlhsfqne5q2u?ref_src=embed">2026-05-10T03:19:00.000Z</a></blockquote><script async src="https://embed.bsky.app/static/embed.js" charset="utf-8"></script>

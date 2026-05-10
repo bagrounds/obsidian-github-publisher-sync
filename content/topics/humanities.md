@@ -11,6 +11,7 @@ image_date: 2026-04-09T11:29:38Z
 image_model: "@cf/black-forest-labs/flux-1-schnell"
 image_prompt: "A stylized, isometric composition centered on a glowing, translucent human silhouette. Inside the silhouette, floating icons represent the various humanities: a weathered scroll for history, a classic Greek comedy mask for performing arts, an open book for literature, a quill pen for linguistics, a magnifying glass over a pottery shard for archaeology, and a paint palette for art history. The background is a soft, deep indigo gradient, illuminated by a warm, golden light emanating from the figures core. Surrounding the silhouette are faint, interconnected constellation-like lines that suggest a network of knowledge, connecting the disparate disciplines into a cohesive whole. The aesthetic is clean, intellectual, and inviting, blending classical motifs with a modern, minimalist digital art style."
 link_analysis_version: "2"
+updated: 2026-05-10T08:25:19
 ---
 [Home](../index.md) > [Topics](./index.md) > [Knowledge](./a-hierarchical-view-of-human-knowledge.md)  
 # 📚🎭 Humanities  
@@ -42,4 +43,12 @@ The Humanities are the study of what makes us human. 🧠 They explore the human
 A High-Level Summary: A concise overview of the core principles, goals, and significance of this category.  
 Subcategories: A list of the major subcategories or branches within this category, with a brief description of each.  
 Book Recommendations: A selection of 3-5 influential or accessible books that provide a good introduction to this category or its key subcategories.  
-Use lots of emojis.
+Use lots of emojis.  
+  
+## 🦋 Bluesky    
+<blockquote class="bluesky-embed" data-bluesky-uri="at://did:plc:i4yli6h7x2uoj7acxunww2fc/app.bsky.feed.post/3mlidjsig4m2j" data-bluesky-cid="bafyreibnno75fiue242cblrffutdvrzmhphqtgwgyktd75ews3zcws3aie"><p>📚🎭 Humanities  
+  
+#AI Q: 🎨 Which humanities subject best explains the modern world?  
+  
+🧠 Human Experience | 🤔 Philosophical Inquiry | 📜 Cultural History  
+https://bagrounds.org/topics/humanities</p>&mdash; <a href="https://bsky.app/profile/did:plc:i4yli6h7x2uoj7acxunww2fc?ref_src=embed">Bryan Grounds (@bagrounds.bsky.social)</a> <a href="https://bsky.app/profile/did:plc:i4yli6h7x2uoj7acxunww2fc/post/3mlidjsig4m2j?ref_src=embed">2026-05-10T08:25:30.000Z</a></blockquote><script async src="https://embed.bsky.app/static/embed.js" charset="utf-8"></script>

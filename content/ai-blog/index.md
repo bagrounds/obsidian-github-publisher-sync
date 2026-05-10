@@ -6,10 +6,11 @@ title: 🤖 AI Blog
 URL: https://bagrounds.org/ai-blog/index
 Author: "[[bryan-grounds]]"
 backlinks: false
-updated: 2026-05-09T13:22:50-07:00
+updated: 2026-05-09T18:12:32-07:00
 ---
 [Home](../index.md)  
-# 🤖 AI Blog (193)  
+# 🤖 AI Blog (194)  
+- [2026-05-09 | 🎙️ Building Word Meter: A One-Button Speech Counter 🤖](./2026-05-09-1-word-meter-tool.md)  
 - [2026-05-04 | 🏷️ From JSON to Haskell: Strong Types for Blog Series Configs 🤖](../../2026-05-04-2-replace-json-configs-with-haskell.md)  
 - [2026-05-04 | 🔗 Fix Frontmatter URL Before Posting 🤖](./2026-05-04-1-fix-frontmatter-url-before-posting.md)  
 - [2026-05-03 | 🔤 Expand Abbreviations in Haskell — Pass 20 🤖](./2026-05-03-9-expand-abbreviations-haskell-pass-20.md)  

@@ -71,10 +71,10 @@ updated: 2026-05-09T18:12:32-07:00
   
   
 ## [📚 Books](./books/index.md) (961)  
+- [💰🤔😊 The Psychology of Money: Timeless lessons on wealth, greed, and happiness](./books/the-psychology-of-money.md)  
+- [🧠🏃 The Psychological Benefits of Exercise and Physical Activity](./books/the-psychological-benefits-of-exercise-and-physical-activity.md)  
 - [💰🧑‍🏫⚔️ The Privateers: How Billionaires Created a Culture War and Sold School Vouchers](./books/the-privateers-how-billionaires-created-a-culture-war-and-sold-school-vouchers.md)  
 - [🏷️🏚️💔🏰 The Price of Inequality: How Today's Divided Society Endangers Our Future](./books/the-price-of-inequality-how-todays-divided-society-endangers-our-future.md)  
-- [🏛️🕊️👑 The Presidential Pardon Power](./books/the-presidential-pardon-power.md)  
-- [🏚️⚠️ The Precariat: The New Dangerous Class](./books/the-precariat-the-new-dangerous-class.md)  
   
   
 ## [📺 Videos](./videos/index.md) (825)  

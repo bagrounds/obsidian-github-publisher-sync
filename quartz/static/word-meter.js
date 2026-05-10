@@ -66,6 +66,21 @@ void function () {
     return matches ? matches.length : 0;
   };
 
+  // Normalize a transcript for refinement-vs-duplicate comparisons. Real-world
+  // recognizers re-emit the same utterance with different capitalization
+  // (e.g. "Twinkle Twinkle" then "twinkle twinkle") and inconsistent spacing,
+  // so we compare on a lowercased, whitespace-collapsed form.
+  const normalizeTranscript = (transcript) => String(transcript || '').trim().toLowerCase().replace(/\s+/g, ' ');
+
+  // True iff `candidate` is `prefix` extended by at least one additional word.
+  // Requires a word boundary (space) at the join so that "twinkle" → "twinkles"
+  // is NOT treated as a refinement of the same utterance.
+  const isWordBoundaryExtension = (candidate, prefix) => {
+    if (!prefix) return false;
+    if (candidate === prefix) return false;
+    return candidate.startsWith(prefix + ' ');
+  };
+
   const escapeHtml = (text) => String(text)
     .replace(/&/g, '&amp;')
     .replace(/</g, '&lt;')
@@ -405,6 +420,13 @@ void function () {
     wordEvents: [],
     captionEntries: [],
     finalIndex: 0,
+    // Most recent finalized transcript text in the active recognition run.
+    // Used to detect when a new finalized result is a *refinement* of the
+    // same utterance (Android Chrome with continuous + interimResults emits
+    // each refinement of one utterance as a separate finalized result with
+    // the cumulative transcript — see issue #6897), versus a brand new
+    // utterance segment.
+    lastFinalTranscript: '',
     recognition: null,
     mode: DEFAULT_RECOGNITION_MODE,
     tickHandle: null,
@@ -435,6 +457,7 @@ void function () {
       wordEvents: [],
       captionEntries: [],
       finalIndex: 0,
+      lastFinalTranscript: '',
       mode: selectedMode()
     });
 
@@ -477,21 +500,77 @@ void function () {
 
   // ---------- Event handlers ----------
 
+  // Integrate one finalized transcript into the running session totals. This
+  // routes each new finalized result into one of four cases relative to the
+  // most recent finalized transcript:
+  //
+  //   1. exact duplicate         → ignore (don't double-count)
+  //   2. word-boundary extension → refinement; add only the word delta and
+  //                                replace the latest caption in place
+  //   3. earlier snapshot        → ignore (older guess re-emitted)
+  //   4. otherwise               → new utterance; add full word count and
+  //                                push a new caption
+  //
+  // This is the key fix for issue #6897: Android Chrome (continuous mode +
+  // interimResults) emits refinements as additional finalized results, each
+  // carrying the full cumulative transcript. Pure index-based dedup counts
+  // each refinement as a separate utterance and over-counts dramatically.
+  const integrateFinalizedTranscript = (transcript, now) => {
+    const newNormalized = normalizeTranscript(transcript);
+    if (!newNormalized) return;
+    const lastNormalized = normalizeTranscript(session.lastFinalTranscript);
+
+    if (lastNormalized && newNormalized === lastNormalized) {
+      // Exact duplicate. Refresh the latest caption's timestamp so it doesn't
+      // age out prematurely while the recognizer keeps re-emitting it.
+      if (session.captionEntries.length) {
+        session.captionEntries[session.captionEntries.length - 1].timestamp = now;
+      }
+      return;
+    }
+    if (isWordBoundaryExtension(newNormalized, lastNormalized)) {
+      const previousWordCount = countWords(session.lastFinalTranscript);
+      const newWordCount = countWords(transcript);
+      const delta = newWordCount - previousWordCount;
+      session.lastFinalTranscript = transcript;
+      if (delta > 0) {
+        session.totalWords += delta;
+        session.wordEvents.push({ timestamp: now, wordCount: delta });
+      }
+      if (session.captionEntries.length) {
+        session.captionEntries[session.captionEntries.length - 1] = { timestamp: now, text: transcript };
+      } else {
+        session.captionEntries.push({ timestamp: now, text: transcript });
+      }
+      return;
+    }
+    if (isWordBoundaryExtension(lastNormalized, newNormalized)) {
+      // Earlier snapshot of the same utterance — ignore.
+      return;
+    }
+    // New utterance segment.
+    session.lastFinalTranscript = transcript;
+    const wordCount = countWords(transcript);
+    if (wordCount > 0) {
+      session.totalWords += wordCount;
+      session.wordEvents.push({ timestamp: now, wordCount });
+    }
+    session.captionEntries.push({ timestamp: now, text: transcript });
+  };
+
   const handleResult = (event) => {
     const now = Date.now();
     for (let resultIndex = event.resultIndex; resultIndex < event.results.length; resultIndex++) {
       const result = event.results[resultIndex];
-      if (!result.isFinal || resultIndex < session.finalIndex) continue;
+      // Strict boolean check: some recognizer implementations have surfaced
+      // truthy non-boolean values for `isFinal`, which would silently let
+      // interim guesses leak through a `!result.isFinal` test.
+      if (result.isFinal !== true) continue;
+      if (resultIndex < session.finalIndex) continue;
       session.finalIndex = resultIndex + 1;
-      const transcript = (result[0] && result[0].transcript) || '';
-      const wordCount = countWords(transcript);
-      if (wordCount > 0) {
-        session.totalWords += wordCount;
-        session.wordEvents.push({ timestamp: now, wordCount });
-      }
-      if (transcript.trim()) {
-        session.captionEntries.push({ timestamp: now, text: transcript.trim() });
-      }
+      const transcript = ((result[0] && result[0].transcript) || '').trim();
+      if (!transcript) continue;
+      integrateFinalizedTranscript(transcript, now);
     }
     pruneOldEntries(now);
     renderCount();
@@ -521,6 +600,12 @@ void function () {
 
   const handleEnd = () => {
     if (!session.listening) return;
+    // event.results restarts at index 0 after a recognition restart, and the
+    // user's next utterance after silence should be treated as a brand new
+    // utterance rather than a refinement of whatever was last said. Reset
+    // the per-recognition-run state here so the auto-restart resumes cleanly.
+    session.finalIndex = 0;
+    session.lastFinalTranscript = '';
     // Chromium auto-stops after silence; restart promptly to maintain ambient capture.
     session.restartTimer = setTimeout(() => {
       if (session.listening && session.recognition) startSafely(session.recognition);

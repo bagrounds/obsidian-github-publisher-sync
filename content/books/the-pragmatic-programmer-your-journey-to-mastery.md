@@ -10,9 +10,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-15T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-05-09T22:27:24Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: An isometric illustration featuring a clean, minimalist workbench set against a soft, gradient blue background. On the desk sits a single glowing, complex mechanical gear integrated with a digital circuit board, representing the blend of craftsmanship and technology. Floating above the desk are abstract, glowing nodes connected by thin lines, symbolizing the tracer bullet and orthogonality concepts. A small, stylized plant grows from a corner of the desk, signifying continuous learning and growth. The overall aesthetic is modern, professional, and precise, using a palette of deep navy, slate gray, and vibrant electric blue accents to evoke a sense of mastery and intellectual curiosity. The composition is uncluttered, focusing on the intersection of human creativity and technical structure.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🧑‍💻📈 The Pragmatic Programmer: Your Journey to Mastery  
+![books-the-pragmatic-programmer-your-journey-to-mastery](../books-the-pragmatic-programmer-your-journey-to-mastery.jpg)  
 [🛒 The Pragmatic Programmer: Your Journey to Mastery. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4ls6Gnm)  
   
 ## 🚀 A Journey to Software Craftsmanship: A Report on The Pragmatic Programmer  

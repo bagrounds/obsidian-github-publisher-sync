@@ -11,9 +11,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-15T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-05-10T01:49:00Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A clean, minimalist illustration featuring an hourglass placed on a polished wooden surface. Inside the top bulb of the hourglass, glowing gold coins are slowly trickling down; as they fall into the bottom bulb, they transform into small, vibrant green saplings or growing plants. The background is a soft, warm gradient of amber and cream, suggesting a calm, thoughtful atmosphere. The lighting is soft and natural, casting gentle shadows that emphasize the contrast between the static nature of wealth and the organic, compounding nature of time and growth. The overall aesthetic is sophisticated, modern, and uncluttered, symbolizing the balance between financial accumulation and the long-term, patient pursuit of personal freedom.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 💰🤔😊 The Psychology of Money: Timeless lessons on wealth, greed, and happiness  
+![books-the-psychology-of-money](../books-the-psychology-of-money.jpg)  
 [🛒 Psychology of Money: Timeless lessons on wealth, greed, and happiness. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3HqgnV2)  
   
 ## 🤖 AI Summary  

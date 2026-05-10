@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-05-09T13:22:50-07:00
+updated: 2026-05-09T18:12:32-07:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -21,11 +21,11 @@ updated: 2026-05-09T13:22:50-07:00
 - [2026-05-06 | 🤖 Freedom 🏛️ Bridging 🐔 Quiet 🔀 Intent, 🌟 Progress 📰 World. 🤖🐔🔀🌟🏛️📰🔄🤖🐲](./reflections/2026-05-06.md)  
   
   
-## [🤖 AI Blog](./ai-blog/index.md) (193)  
+## [🤖 AI Blog](./ai-blog/index.md) (194)  
+- [2026-05-09 | 🎙️ Building Word Meter: A One-Button Speech Counter 🤖](./ai-blog/2026-05-09-1-word-meter-tool.md)  
 - [2026-05-04 | 🏷️ From JSON to Haskell: Strong Types for Blog Series Configs 🤖](../2026-05-04-2-replace-json-configs-with-haskell.md)  
 - [2026-05-04 | 🔗 Fix Frontmatter URL Before Posting 🤖](./ai-blog/2026-05-04-1-fix-frontmatter-url-before-posting.md)  
 - [2026-05-03 | 🔤 Expand Abbreviations in Haskell — Pass 20 🤖](./ai-blog/2026-05-03-9-expand-abbreviations-haskell-pass-20.md)  
-- [2026-05-03 | 🔤 Expand Abbreviations in Haskell — Pass 19 🤖](./ai-blog/2026-05-03-8-expand-abbreviations-haskell-pass-19.md)  
   
   
 ## [🤖 Auto Blog Zero](./auto-blog-zero/index.md) (60)  
@@ -63,18 +63,18 @@ updated: 2026-05-09T13:22:50-07:00
 - [2026-05-06 | 🌟 A Cascade of Progress: Innovations, Community Spirit, and Global Accord 🌟](./positivity-bias/2026-05-06-a-cascade-of-progress-innovations-community-spirit-and-global-accord.md)  
   
   
-## [🔀 Convergence](./convergence/index.md) (25)  
+## [🔀 Convergence](./convergence/index.md) (26)  
+- [2026-05-09 | 🔀 ⚓ Anchoring Evolution: Invariants, Milestones, and the Rhythms of Continuity 🔀](./convergence/2026-05-09-anchoring-evolution-invariants-milestones-and-the-rhythms-of-continuity.md)  
 - [2026-05-08 | 🔀 The Recursive Hum: Value Alignment in Evolving Systems 🔀](./convergence/2026-05-08-the-recursive-hum-value-alignment-in-evolving-systems.md)  
 - [2026-05-07 | 🔀 Architecture of Collective Intent 🔀](./convergence/2026-05-07-architecture-of-collective-intent.md)  
 - [2026-05-06 | 🔀 The Emergent Architecture of Collective Intent 🔀](./convergence/2026-05-06-the-emergent-architecture-of-collective-intent.md)  
-- [2026-05-05 | 🔀 🧭 The Internalized Compass: Governing Flourishing Systems 🔀](./convergence/2026-05-05-the-internalized-compass-governing-flourishing-systems.md)  
   
   
 ## [📚 Books](./books/index.md) (961)  
-- [🔑🧭❤️ The Power of Meaning: Crafting a Life That Matters](./books/the-power-of-meaning.md)  
-- [🔄🧠💪 The Power of Habit: Why We Do What We Do in Life and Business](./books/the-power-of-habit.md)  
-- [🔋📈 The Power of Full Engagement: Managing Energy, Not Time, Is the Key to High Performance and Personal Renewal](./books/the-power-of-full-engagement-managing-energy-not-time-is-the-key-to-high-performance-and-personal-renewal.md)  
-- [👑🏙️ The Power Broker](./books/the-power-broker.md)  
+- [💰🧑‍🏫⚔️ The Privateers: How Billionaires Created a Culture War and Sold School Vouchers](./books/the-privateers-how-billionaires-created-a-culture-war-and-sold-school-vouchers.md)  
+- [🏷️🏚️💔🏰 The Price of Inequality: How Today's Divided Society Endangers Our Future](./books/the-price-of-inequality-how-todays-divided-society-endangers-our-future.md)  
+- [🏛️🕊️👑 The Presidential Pardon Power](./books/the-presidential-pardon-power.md)  
+- [🏚️⚠️ The Precariat: The New Dangerous Class](./books/the-precariat-the-new-dangerous-class.md)  
   
   
 ## [📺 Videos](./videos/index.md) (825)  
@@ -131,11 +131,12 @@ updated: 2026-05-09T13:22:50-07:00
 - [🤝 Generating Reliable Systems](./presentations/generating-reliable-systems.md)  
   
   
-## [🎮 Games](./games/index.md) (1)  
+## [🎮 Games](./games/index.md) (2)  
 - [🧬 Valence](./games/valence.md)  
   
   
-## [🧰 Tools](./tools/index.md) (1)  
+## [🧰 Tools](./tools/index.md) (2)  
+- [🎙️ Word Meter](./tools/word-meter.md)  
 - [🧮 Calculator](./tools/calculator.md)  
   
   

@@ -6,10 +6,12 @@ title: 🤖 AI Blog
 URL: https://bagrounds.org/ai-blog/index
 Author: "[[bryan-grounds]]"
 backlinks: false
-updated: 2026-05-09T23:31:50-07:00
+updated: 2026-05-10T08:15:42-07:00
 ---
 [Home](../index.md)  
-# 🤖 AI Blog (194)  
+# 🤖 AI Blog (196)  
+- [2026-05-09 | 🔋 Word Meter Goes The Distance With Screen Wake Lock 🤖](./2026-05-09-3-word-meter-screen-wake-lock.md)  
+- [2026-05-09 | 🐛 Word Meter Overcount: A Web Speech Refinement Quirk 🤖](./2026-05-09-2-word-meter-overcount-rca.md)  
 - [2026-05-09 | 🎙️ Building Word Meter: A One-Button Speech Counter 🤖](./2026-05-09-1-word-meter-tool.md)  
 - [2026-05-04 | 🏷️ From JSON to Haskell: Strong Types for Blog Series Configs 🤖](../../2026-05-04-2-replace-json-configs-with-haskell.md)  
 - [2026-05-04 | 🔗 Fix Frontmatter URL Before Posting 🤖](./2026-05-04-1-fix-frontmatter-url-before-posting.md)  

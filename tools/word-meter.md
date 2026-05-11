@@ -26,16 +26,18 @@ description: "Count the ambient spoken words around you with a single tap, using
 - 💬 The captions panel shows the last 30 seconds of recognized speech, fading as it ages
 - 🧮 The timeline at the bottom logs every start/stop interval with its word count and words-per-minute
 - 💾 Stats are saved to your browser's local storage and survive app switches, screen locks, and reloads — only the **Reset** button clears them
-- 🔒 Pick **On-device** (default) or **Cloud** recognition — see below
+- 🔒 The meter automatically picks the best recognition path the browser supports — on-device when available, cloud as the universal fallback
 - 🔋 Toggle **Keep counting with screen on** to keep listening through a long walk — see below
 
 ### Persistence and the reset button
 
 Word Meter writes its running stats to your browser's `localStorage` continuously — after every recognized utterance, every Start, every Stop, and again whenever the page is hidden or unloaded. When you switch apps and come back, the totals, the per-interval timeline, and the words-per-minute history are all still there, and the meter is simply paused until you tap **Start counting** again. Each Start appends a brand new interval to the timeline at the bottom of the page rather than wiping the previous one, so the running total grows across as many sessions as you like. The only way to clear the stats is to tap the **Reset** button next to Start/Stop, which prompts for confirmation before discarding everything. Storage is per-origin and stays entirely on your device — nothing leaves your browser.
 
-### On-device vs. cloud
+### Recognition: automatic on-device with cloud fallback
 
-The page exposes a small **Recognition** chooser. **On-device** is the default and asks the browser to keep audio handling local using the standardized `processLocally` hint. Recent Chromium and Safari can fulfill this request when the language pack is installed; on first use the page asks the browser to download that pack and shows a brief *downloading on-device language pack…* status while it does so. **Cloud** mode lets the browser stream audio to its vendor's speech service (Google, in Chromium's case) which usually offers wider language coverage at the cost of privacy. If the on-device pack can't be downloaded or your language isn't supported on-device, the meter explains the situation and asks you to switch to Cloud mode.
+The meter does not ask you to pick a recognition mode. On every Start, it first tries to use on-device recognition (the standardized `processLocally` extension that some recent Chromium-family browsers support). If that pre-flight succeeds, your audio stays on the device; you'll briefly see a *downloading on-device language pack…* status the first time, while the browser fetches the model. If the pre-flight reports that on-device recognition is unavailable, that the language pack cannot be downloaded, or that the API simply does not exist in this browser, the meter silently falls back to the browser's built-in cloud recognition service (Google's, in Chromium's case) and the count begins. You see the meter working either way; the diagnostics panel below records which path was taken.
+
+This auto-pick was added because field testing showed that on-device recognition is essentially never available on Android Chrome or Brave today (the static API exists but reports `unavailable` for English), while Samsung Internet doesn't expose the static API at all and so falls straight to cloud — which works fine. Hiding the choice keeps the page simple and gets you the working path without any configuration.
 
 ### Long-running sessions and the screen-off question
 
@@ -51,7 +53,7 @@ Second, a collapsible **🔧 Diagnostics** section expands to show a live event 
 
 ### Browser support
 
-The Web Speech API is supported in **Chrome, Edge, and Safari**. Firefox does not currently expose `SpeechRecognition`. The on-device toggle is most meaningful on recent Chromium builds; older browsers ignore the hint and behave as they always have. The Screen Wake Lock API is supported in Chrome, Edge, and Safari 16.4+; on older browsers the keep-awake toggle quietly does nothing.
+The Web Speech API is supported in **Chrome, Edge, and Safari**. Firefox does not currently expose `SpeechRecognition`. On-device recognition is only available on recent Chromium builds with an installed language pack; everywhere else the meter falls back to cloud recognition automatically. The Screen Wake Lock API is supported in Chrome, Edge, and Safari 16.4+; on older browsers the keep-awake toggle quietly does nothing.
 
 ### Tips
 

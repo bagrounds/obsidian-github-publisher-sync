@@ -21,26 +21,32 @@ The Word Meter is a single-page browser tool that listens to ambient speech via 
 - Operating with the device screen truly off — see "Background operation" below
 - Supporting browsers without the Web Speech API (Firefox)
 
-## Recognition modes
+## Recognition strategy
 
-A small **Recognition** chooser exposes two modes:
+The meter has one user-visible mode and no chooser. Internally it has two implementation paths:
 
-- **On-device** (default): sets the standardized `processLocally = true` hint. Recent Chromium and Safari can fulfill this with an installed language pack; older browsers ignore the hint.
-- **Cloud**: streams audio to the browser vendor's speech service (Google in Chromium's case). Wider language coverage at the cost of privacy.
+- **On-device path**: sets the standardized `processLocally = true` hint and runs the pre-flight described below. Used on browsers that expose the static `SpeechRecognition.available` / `install` API (recent Chromium-family builds).
+- **Cloud path**: streams audio to the browser vendor's speech service (Google in Chromium's case, the system service on Safari, etc.). Used on every other browser and on every browser where the on-device pre-flight reports the language pack is not viable.
 
-The chooser is disabled while listening so the choice can't change mid-session.
+At every Start, the meter tries the on-device path first when the static API is exposed; if anything other than `available` comes back from the pre-flight (`unavailable`, `install-failed`, or `unknown`), the meter silently builds a fresh recognition object with `processLocally = false` and starts that one instead. The user is not asked to choose, and the page does not surface a chooser. This is justified by field telemetry: on Android (Chrome and Brave) the static API exists but reports `unavailable` for `en-US`; on Samsung Internet the static API does not exist at all and the cloud path takes over by default. In both cases the user gets a working meter without ever seeing or thinking about modes.
+
+The on-device path lives in a single labeled block between `BEGIN on-device path` and `END on-device path` in `quartz/static/word-meter.js`. If the on-device API is ever dropped (or proves never to work in practice), that block plus the `attemptStart` branch above the cloud build can be removed in one cut.
 
 ### On-device language pack lifecycle
 
-On Chromium-family browsers the standardized `processLocally` hint requires the page to explicitly *install* a language pack before `start()` will work. Skipping this step is precisely what made the on-device path fail with `language-not-supported` on Android Chrome before the fix. The meter now runs the following pre-flight before every on-device session:
+On Chromium-family browsers the standardized `processLocally` hint requires the page to explicitly *install* a language pack before `start()` will work. Skipping this step is precisely what made the on-device path fail with `language-not-supported` on Android Chrome before the fix. When the static API is exposed, the meter runs the following pre-flight before every Start:
 
 1. Call `SpeechRecognition.available({ langs: [navigator.language], processLocally: true })`.
-2. If the result is `available`, start immediately.
-3. If the result is `downloadable` or `downloading`, surface a `downloading on-device language pack…` status and call `SpeechRecognition.install({ langs, processLocally: true })`. Start after the install promise resolves to `true`.
-4. If the result is `unavailable`, or the install resolves to `false` or rejects, show a clear error and end the session — no `start()` is attempted.
-5. If the browser does not expose the `available` / `install` static methods (older Chromium and Safari), skip the pre-flight and fall back to calling `start()` directly. The existing `onerror` handler still surfaces `language-not-supported` and `network` errors with actionable text.
+2. If the result is `available`, build a recognition object with `processLocally = true` and call `start()`.
+3. If the result is `downloadable` or `downloading`, surface a `downloading on-device language pack…` status and call `SpeechRecognition.install({ langs, processLocally: true })`. On install success, start the on-device recognition object.
+4. If the result is `unavailable`, or the install resolves to `false` or rejects, transparently fall back to the cloud path — no error is shown to the user.
+5. If the browser does not expose the `available` / `install` static methods, the meter skips the pre-flight entirely and goes straight to the cloud path.
 
-Cloud mode skips the pre-flight entirely. If the user hits **Stop** while a download is in flight, the pending start is cancelled by checking that `session.listening` is still true and `session.recognition` is still the same object before invoking `start()`.
+If the user hits **Stop** while a download is in flight, the pending start is cancelled by checking that `session.listening` is still true and `session.recognition` is still the same object before invoking `start()`.
+
+### Runtime language-not-supported fallback
+
+Some browsers expose the static API, report `available`, then reject `start()` with `language-not-supported` at runtime. When this happens, the meter detaches the failed recognition object, builds a fresh one on the cloud path, and starts it — exactly once. A second `language-not-supported` after the cloud retry surfaces a clear error and ends the session.
 
 ## Build version and cache busting
 
@@ -85,7 +91,7 @@ Pure-web browsers do not allow microphone capture once the page becomes hidden o
 
 ## UI structure
 
-`buildPanel` composes, in order: status line, big count, count label, start/stop button, recognition mode chooser, keep-awake toggle, metrics grid (started time, last-1-min rate, last-10-min rate, overall rate), captions panel, error banner, privacy footer (including build version), and a collapsible diagnostics panel.
+`buildPanel` composes, in order: status line, big count, count label, start/stop button, keep-awake toggle, metrics grid (started time, last-1-min rate, last-10-min rate, overall rate), captions panel, error banner, privacy footer (including build version), and a collapsible diagnostics panel.
 
 ## Lifecycle and cleanup
 

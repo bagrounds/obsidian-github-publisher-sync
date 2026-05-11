@@ -112,8 +112,6 @@ const loadWordMeterWithLifecycle = ({ wakeLockSupported, keepAwakeChecked, reque
 
   // Pre-seed the IDs the production code reads so we can drive behaviour.
   elementsById["wm-keep-awake"] = { ...makeElement(), id: "wm-keep-awake", checked: keepAwakeChecked !== false }
-  elementsById["wm-mode-cloud"] = { ...makeElement(), id: "wm-mode-cloud", checked: false }
-  elementsById["wm-mode-on-device"] = { ...makeElement(), id: "wm-mode-on-device", checked: true }
   elementsById["wm-toggle"] = makeElement()
   elementsById["wm-status"] = makeElement()
   elementsById["wm-error"] = makeElement()
@@ -377,7 +375,7 @@ const loadWordMeterWithLanguagePack = ({ availability, installResult, exposeStat
     get parentElement() { return null },
   })
   for (const id of [
-    "wm-keep-awake", "wm-mode-cloud", "wm-mode-on-device", "wm-toggle", "wm-status",
+    "wm-keep-awake", "wm-toggle", "wm-status",
     "wm-error", "wm-keep-awake-status", "wm-count", "wm-started", "wm-rate-short",
     "wm-rate-long", "wm-rate-overall", "wm-captions",
   ]) {
@@ -388,8 +386,6 @@ const loadWordMeterWithLanguagePack = ({ availability, installResult, exposeStat
   // init() returns early and diagnostics never populate.
   elementsById["word-meter"] = { ...makeElement(), id: "word-meter" }
   elementsById["wm-diagnostics-content"] = { ...makeElement(), id: "wm-diagnostics-content" }
-  // On-device mode is the default per the production code.
-  elementsById["wm-mode-on-device"].checked = true
   elementsById["wm-keep-awake"].checked = false
 
   const document = {
@@ -450,10 +446,6 @@ const loadWordMeterWithLanguagePack = ({ availability, installResult, exposeStat
     events,
     errorBannerText: () => elementsById["wm-error"].textContent,
     statusText: () => elementsById["wm-status"].textContent,
-    selectCloud: () => {
-      elementsById["wm-mode-cloud"].checked = true
-      elementsById["wm-mode-on-device"].checked = false
-    },
   }
 }
 
@@ -499,25 +491,30 @@ describe("Word Meter — on-device language pack", () => {
     assert.strictEqual(harness.events.startCalled, 1)
   })
 
-  test("does not call start when the language pack install fails", async () => {
+  test("falls back to cloud (still starts) when the language pack install fails", async () => {
+    // The user-facing contract changed: the meter no longer surfaces an error
+    // on install failure; it transparently retries on the cloud path so the
+    // user sees a working meter.
     const harness = loadWordMeterWithLanguagePack({
       availability: "downloadable",
       installResult: false,
     })
     await harness.wm.start()
     assert.strictEqual(harness.events.installCalls.length, 1)
-    assert.strictEqual(harness.events.startCalled, 0)
-    assert.match(harness.errorBannerText(), /download/i)
-    assert.strictEqual(harness.wm.getState().listening, false)
+    assert.strictEqual(harness.events.startCalled, 1, "cloud start() runs after install fails")
+    assert.strictEqual(harness.errorBannerText(), "")
+    assert.strictEqual(harness.wm.getState().listening, true)
+    assert.strictEqual(harness.wm.getState().activeRecognitionPath, "cloud")
   })
 
-  test("does not call start (and does not attempt install) when on-device is unavailable", async () => {
+  test("falls back to cloud when on-device is unavailable", async () => {
     const harness = loadWordMeterWithLanguagePack({ availability: "unavailable" })
     await harness.wm.start()
     assert.strictEqual(harness.events.installCalls.length, 0)
-    assert.strictEqual(harness.events.startCalled, 0)
-    assert.match(harness.errorBannerText(), /not available/i)
-    assert.strictEqual(harness.wm.getState().listening, false)
+    assert.strictEqual(harness.events.startCalled, 1, "cloud start() runs without an install attempt")
+    assert.strictEqual(harness.errorBannerText(), "")
+    assert.strictEqual(harness.wm.getState().listening, true)
+    assert.strictEqual(harness.wm.getState().activeRecognitionPath, "cloud")
   })
 
   test("older browsers without the static API still start (fallback behavior)", async () => {
@@ -527,16 +524,32 @@ describe("Word Meter — on-device language pack", () => {
     assert.strictEqual(harness.events.installCalls.length, 0)
     assert.strictEqual(harness.events.startCalled, 1, "must not regress for browsers predating the install API")
     assert.strictEqual(harness.wm.getState().listening, true)
+    assert.strictEqual(harness.wm.getState().activeRecognitionPath, "cloud")
   })
 
-  test("cloud mode skips the availability check entirely", async () => {
-    const harness = loadWordMeterWithLanguagePack({ availability: "unavailable" })
-    harness.selectCloud()
+  test("runtime language-not-supported error triggers a one-shot cloud retry", async () => {
+    // Some browsers expose the on-device static API, report 'available', then
+    // reject start() at runtime with language-not-supported. The meter must
+    // retry once on the cloud path before giving up.
+    const harness = loadWordMeterWithLanguagePack({ availability: "available" })
     await harness.wm.start()
-    assert.strictEqual(harness.events.availableCalls.length, 0, "cloud mode must not poke the on-device API")
-    assert.strictEqual(harness.events.installCalls.length, 0)
     assert.strictEqual(harness.events.startCalled, 1)
+    assert.strictEqual(harness.wm.getState().activeRecognitionPath, "on-device")
+    harness.wm.simulateError("language-not-supported")
+    assert.strictEqual(harness.events.startCalled, 2, "cloud retry runs")
+    assert.strictEqual(harness.wm.getState().activeRecognitionPath, "cloud")
     assert.strictEqual(harness.wm.getState().listening, true)
+    assert.strictEqual(harness.wm.getState().cloudFallbackAttempted, true)
+  })
+
+  test("a second language-not-supported error after the cloud retry surfaces a clear error", async () => {
+    const harness = loadWordMeterWithLanguagePack({ availability: "available" })
+    await harness.wm.start()
+    harness.wm.simulateError("language-not-supported")
+    harness.wm.simulateError("language-not-supported")
+    assert.strictEqual(harness.events.startCalled, 2, "no third start — give up")
+    assert.match(harness.errorBannerText(), /not available/i)
+    assert.strictEqual(harness.wm.getState().listening, false)
   })
 
   test("stopping while the install is in flight prevents the eventual start", async () => {

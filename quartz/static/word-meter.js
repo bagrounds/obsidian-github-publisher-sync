@@ -1,11 +1,24 @@
 // Word Meter — counts ambient spoken words via the Web Speech API.
 // The whole app is wrapped in an IIFE so it can re-init on Quartz `nav` events
 // without leaking globals.
+//
+// __WORD_METER_VERSION__ is a build-time placeholder that the Quartz Static
+// emitter rewrites to the first 12 hex chars of the SHA-256 of this file's
+// contents (after the substitution, so the literal "__WORD_METER_VERSION__"
+// in the source never appears in the served file). The Static emitter also
+// writes a content-hashed copy at /static/word-meter.<hash>.js, and a small
+// rehype HTML transformer rewrites <script src="/static/word-meter.js">
+// references in the rendered HTML to point at that hashed filename. The
+// result is that every change to this file produces a new URL and the
+// browser cannot serve a stale cached copy. The version string is also
+// rendered into the privacy footer and the diagnostics panel so the user
+// can confirm at a glance which build is loaded.
 void function () {
   'use strict';
 
   // ---------- Configuration ----------
 
+  const WORD_METER_VERSION = '__WORD_METER_VERSION__';
   const HOST_ELEMENT_ID = 'word-meter';
 
   const CAPTION_WINDOW_MILLISECONDS = 30_000;
@@ -67,7 +80,11 @@ void function () {
     keepAwake: 'wm-keep-awake',
     keepAwakeStatus: 'wm-keep-awake-status',
     timeline: 'wm-timeline',
-    timelineEmpty: 'wm-timeline-empty'
+    timelineEmpty: 'wm-timeline-empty',
+    diagnosticsToggle: 'wm-diagnostics-toggle',
+    diagnosticsPanel: 'wm-diagnostics',
+    diagnosticsContent: 'wm-diagnostics-content',
+    version: 'wm-version'
   });
 
   // ---------- Pure utilities ----------
@@ -479,6 +496,51 @@ void function () {
       element('div', {
         text: 'Web browsers cannot capture microphone audio with the screen truly off — the page is suspended on screen lock. The keep-awake toggle uses the Screen Wake Lock API to keep the screen lit while you listen, which is the only way to keep the meter running for a long walk with the phone in your pocket.',
         styles: { marginTop: '6px' }
+      }),
+      element('div', {
+        id: ELEMENT_IDS.version,
+        text: `Word Meter build ${WORD_METER_VERSION}`,
+        attributes: { 'data-word-meter-version': WORD_METER_VERSION },
+        styles: { marginTop: '10px', fontFamily: 'ui-monospace,SFMono-Regular,Menlo,monospace', color: PALETTE.dimText }
+      })
+    ]
+  });
+
+  // The diagnostics panel surfaces every piece of info that helps diagnose why
+  // on-device recognition might be failing on one browser but working on
+  // another. It is collapsed by default so it doesn't clutter the UI, but a
+  // single tap reveals the user agent, Web Speech API support, on-device
+  // language-pack API support, the locale being requested, the most recent
+  // `available()` and `install()` results, and the most recent recognition
+  // error (with full code and message). Each call also logs to the console
+  // with a `[word-meter]` prefix so curious users can grep the devtools log.
+  const buildDiagnosticsPanel = () => element('details', {
+    id: ELEMENT_IDS.diagnosticsPanel,
+    styles: { marginTop: '16px', fontSize: '12px', color: PALETTE.secondaryText },
+    children: [
+      element('summary', {
+        id: ELEMENT_IDS.diagnosticsToggle,
+        text: '🔧 Diagnostics',
+        styles: { cursor: 'pointer', color: PALETTE.mutedText, padding: '4px 0', userSelect: 'none' }
+      }),
+      element('pre', {
+        id: ELEMENT_IDS.diagnosticsContent,
+        text: 'collecting…',
+        styles: {
+          margin: '8px 0 0 0',
+          padding: '10px 12px',
+          background: PALETTE.captionsBackground,
+          border: PALETTE.captionsBorder,
+          borderRadius: '8px',
+          fontFamily: 'ui-monospace,SFMono-Regular,Menlo,monospace',
+          fontSize: '11.5px',
+          lineHeight: '1.45',
+          color: PALETTE.secondaryText,
+          whiteSpace: 'pre-wrap',
+          wordBreak: 'break-word',
+          maxHeight: '320px',
+          overflowY: 'auto'
+        }
       })
     ]
   });
@@ -505,9 +567,104 @@ void function () {
       buildCaptionsPanel(),
       buildErrorBanner(),
       buildTimelinePanel(),
-      buildPrivacyFooter()
+      buildPrivacyFooter(),
+      buildDiagnosticsPanel()
     ]
   });
+
+  // ---------- Diagnostics ----------
+  //
+  // The diagnostics module records every interesting decision the meter makes
+  // during a session so that "it didn't work on my browser" reports become
+  // diagnosable. Every entry is timestamped, appended to an in-memory log
+  // (capped to avoid unbounded growth), echoed to the console with a
+  // `[word-meter]` prefix, and rendered into the on-page diagnostics panel.
+
+  const DIAGNOSTICS_MAX_ENTRIES = 60;
+
+  const diagnostics = {
+    entries: [],
+    snapshot: null
+  };
+
+  const recordDiagnostic = (label, detail) => {
+    const timestamp = formatClockTime(new Date());
+    const renderedDetail = detail === undefined ? '' : (
+      typeof detail === 'string' ? detail : safeStringify(detail)
+    );
+    diagnostics.entries.push({ timestamp, label, detail: renderedDetail });
+    if (diagnostics.entries.length > DIAGNOSTICS_MAX_ENTRIES) {
+      diagnostics.entries.splice(0, diagnostics.entries.length - DIAGNOSTICS_MAX_ENTRIES);
+    }
+    try {
+      if (typeof console !== 'undefined' && console.log) {
+        console.log(`[word-meter ${WORD_METER_VERSION}] ${label}${renderedDetail ? ' — ' + renderedDetail : ''}`);
+      }
+    } catch (_unused) { /* console unavailable in some embedded contexts */ }
+    renderDiagnosticsPanel();
+  };
+
+  const safeStringify = (value) => {
+    try {
+      return JSON.stringify(value, (_key, candidate) => {
+        if (candidate instanceof Error) {
+          return { name: candidate.name, message: candidate.message };
+        }
+        return candidate;
+      });
+    } catch (_unused) {
+      return String(value);
+    }
+  };
+
+  const captureEnvironmentSnapshot = () => {
+    const RecognitionConstructor = getRecognitionConstructor();
+    const navigatorLanguage = (typeof navigator !== 'undefined' && navigator.language) || '(unknown)';
+    const userAgent = (typeof navigator !== 'undefined' && navigator.userAgent) || '(unknown)';
+    const wakeLockAvailable = typeof navigator !== 'undefined'
+      && !!navigator.wakeLock
+      && typeof navigator.wakeLock.request === 'function';
+    diagnostics.snapshot = {
+      version: WORD_METER_VERSION,
+      userAgent,
+      navigatorLanguage,
+      hasSpeechRecognition: typeof window !== 'undefined' && 'SpeechRecognition' in window,
+      hasWebkitSpeechRecognition: typeof window !== 'undefined' && 'webkitSpeechRecognition' in window,
+      hasOnDeviceAvailable: !!RecognitionConstructor && typeof RecognitionConstructor.available === 'function',
+      hasOnDeviceInstall: !!RecognitionConstructor && typeof RecognitionConstructor.install === 'function',
+      wakeLockAvailable
+    };
+    renderDiagnosticsPanel();
+  };
+
+  const formatSnapshot = (snapshot) => {
+    if (!snapshot) return '';
+    const yes = '✓';
+    const no = '✗';
+    const flag = (value) => (value ? yes : no);
+    return [
+      `version           : ${snapshot.version}`,
+      `userAgent         : ${snapshot.userAgent}`,
+      `navigator.language: ${snapshot.navigatorLanguage}`,
+      `SpeechRecognition : ${flag(snapshot.hasSpeechRecognition)}`,
+      `webkit prefix     : ${flag(snapshot.hasWebkitSpeechRecognition)}`,
+      `on-device API     : available=${flag(snapshot.hasOnDeviceAvailable)} install=${flag(snapshot.hasOnDeviceInstall)}`,
+      `Screen Wake Lock  : ${flag(snapshot.wakeLockAvailable)}`
+    ].join('\n');
+  };
+
+  const renderDiagnosticsPanel = () => {
+    const target = byId(ELEMENT_IDS.diagnosticsContent);
+    if (!target) return;
+    const header = diagnostics.snapshot ? formatSnapshot(diagnostics.snapshot) + '\n\n' : '';
+    const log = diagnostics.entries.length === 0
+      ? '(no events yet — press Start counting to populate the log)'
+      : diagnostics.entries.map((entry) => {
+        const detail = entry.detail ? ' — ' + entry.detail : '';
+        return `${entry.timestamp}  ${entry.label}${detail}`;
+      }).join('\n');
+    target.textContent = header + log;
+  };
 
   // ---------- Recognition shim ----------
 
@@ -531,23 +688,36 @@ void function () {
   //   'unknown'        — browser does not expose the availability/install API
   const ensureOnDeviceLanguagePack = (RecognitionConstructor, locale, onDownloadStart) => {
     if (!supportsOnDeviceLanguagePackApi(RecognitionConstructor)) {
+      recordDiagnostic('on-device API absent — falling back to direct start()', { locale });
       return Promise.resolve('unknown');
     }
     const options = { langs: [locale], processLocally: true };
+    recordDiagnostic('SpeechRecognition.available() called', options);
     return Promise.resolve()
       .then(() => RecognitionConstructor.available(options))
       .then((availability) => {
+        recordDiagnostic('SpeechRecognition.available() resolved', { availability });
         if (availability === 'available') return 'available';
         if (availability === 'unavailable') return 'unavailable';
         // 'downloadable' or 'downloading' — kick off install and await it.
         if (onDownloadStart) onDownloadStart();
+        recordDiagnostic('SpeechRecognition.install() called', options);
         return Promise.resolve()
           .then(() => RecognitionConstructor.install(options))
           .then(
-            (installed) => (installed ? 'available' : 'install-failed'),
-            () => 'install-failed'
+            (installed) => {
+              recordDiagnostic('SpeechRecognition.install() resolved', { installed });
+              return installed ? 'available' : 'install-failed';
+            },
+            (installError) => {
+              recordDiagnostic('SpeechRecognition.install() rejected', installError);
+              return 'install-failed';
+            }
           );
-      }, () => 'unknown');
+      }, (availableError) => {
+        recordDiagnostic('SpeechRecognition.available() rejected', availableError);
+        return 'unknown';
+      });
   };
 
   const selectedMode = () => {
@@ -789,8 +959,10 @@ void function () {
   const startSafely = (recognition) => {
     try {
       recognition.start();
+      recordDiagnostic('recognition.start() invoked');
     } catch (err) {
       const message = (err && err.message) || String(err);
+      recordDiagnostic('recognition.start() threw', { name: err && err.name, message });
       if (!/already started/i.test(message)) {
         showError(`Could not start recognition: ${message}`);
       }
@@ -799,7 +971,11 @@ void function () {
 
   const beginListening = () => {
     const RecognitionConstructor = getRecognitionConstructor();
-    if (!RecognitionConstructor) { showUnsupported(); return; }
+    if (!RecognitionConstructor) {
+      recordDiagnostic('beginListening aborted — no SpeechRecognition constructor');
+      showUnsupported();
+      return;
+    }
 
     const startedAt = Date.now();
     session.listening = true;
@@ -813,6 +989,7 @@ void function () {
     session.keepAwake = keepAwakeRequested();
 
     const locale = navigator.language || 'en-US';
+    recordDiagnostic('beginListening', { mode: session.mode.id, locale, keepAwake: session.keepAwake });
     session.recognition = configureRecognition(new RecognitionConstructor(), session.mode, locale);
     session.recognition.onresult = handleResult;
     session.recognition.onerror = handleError;
@@ -1017,6 +1194,8 @@ void function () {
 
   const handleError = (event) => {
     const code = event && event.error;
+    const message = event && event.message;
+    recordDiagnostic('recognition.onerror', { code: code || '(none)', message: message || '' });
     if (isTransientErrorCode(code)) return;
     if (isPermissionDeniedCode(code)) {
       showError('Microphone permission denied. Allow microphone access and try again.');
@@ -1218,6 +1397,9 @@ void function () {
     host.innerHTML = '';
     host.appendChild(buildPanel());
 
+    captureEnvironmentSnapshot();
+    recordDiagnostic('init', { version: WORD_METER_VERSION });
+
     if (!getRecognitionConstructor()) {
       showUnsupported();
       return cleanup;
@@ -1283,7 +1465,10 @@ void function () {
         currentInterval: session.currentInterval ? { ...session.currentInterval } : null,
         mode: session.mode.id,
         keepAwake: session.keepAwake,
-        wakeLockHeld: session.wakeLock !== null
+        wakeLockHeld: session.wakeLock !== null,
+        version: WORD_METER_VERSION,
+        diagnosticsEntries: diagnostics.entries.map((entry) => ({ ...entry })),
+        diagnosticsSnapshot: diagnostics.snapshot ? { ...diagnostics.snapshot } : null
       }),
       simulateResult: (text, isFinal) => {
         // SpeechRecognitionResult is array-like with numeric indices plus a boolean
@@ -1307,6 +1492,7 @@ void function () {
       stop: () => endListening('idle'),
       reset: () => resetAllStats({ skipConfirmation: true }),
       persistNow: () => persistState(),
+      simulateError: (errorCode, message) => handleError({ error: errorCode, message: message || '' }),
       reload: () => {
         // Mimics a fresh page load by clearing in-memory session and loading
         // from storage. Used by tests to verify round-trip persistence.

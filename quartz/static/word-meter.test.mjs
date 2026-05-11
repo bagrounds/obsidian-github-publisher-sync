@@ -383,6 +383,11 @@ const loadWordMeterWithLanguagePack = ({ availability, installResult, exposeStat
   ]) {
     elementsById[id] = { ...makeElement(), id }
   }
+  // The host element drives init(): when present, the script captures an
+  // environment snapshot and wires up the diagnostics panel. Without it,
+  // init() returns early and diagnostics never populate.
+  elementsById["word-meter"] = { ...makeElement(), id: "word-meter" }
+  elementsById["wm-diagnostics-content"] = { ...makeElement(), id: "wm-diagnostics-content" }
   // On-device mode is the default per the production code.
   elementsById["wm-mode-on-device"].checked = true
   elementsById["wm-keep-awake"].checked = false
@@ -554,6 +559,48 @@ describe("Word Meter — on-device language pack", () => {
     await startPromise
     assert.strictEqual(harness.events.startCalled, 0, "stop must cancel the pending start")
     assert.strictEqual(harness.wm.getState().listening, false)
+  })
+})
+
+describe("Word Meter — diagnostics and version", () => {
+  test("exposes a build version string and an environment snapshot at init", () => {
+    const harness = loadWordMeterWithLanguagePack({ availability: "available" })
+    const state = harness.wm.getState()
+    assert.ok(typeof state.version === "string" && state.version.length > 0)
+    assert.ok(state.diagnosticsSnapshot, "snapshot is captured at init")
+    assert.strictEqual(state.diagnosticsSnapshot.hasSpeechRecognition, true)
+    assert.strictEqual(state.diagnosticsSnapshot.hasOnDeviceAvailable, true)
+    assert.strictEqual(state.diagnosticsSnapshot.hasOnDeviceInstall, true)
+  })
+
+  test("captures missing on-device API support in the snapshot", () => {
+    const harness = loadWordMeterWithLanguagePack({ exposeStaticApi: false })
+    const snapshot = harness.wm.getState().diagnosticsSnapshot
+    assert.strictEqual(snapshot.hasOnDeviceAvailable, false)
+    assert.strictEqual(snapshot.hasOnDeviceInstall, false)
+  })
+
+  test("records a diagnostic entry for each step of the on-device pre-flight", async () => {
+    const harness = loadWordMeterWithLanguagePack({
+      availability: "downloadable",
+      installResult: true,
+    })
+    await harness.wm.start()
+    const labels = harness.wm.getState().diagnosticsEntries.map((entry) => entry.label)
+    assert.ok(labels.some((label) => label.includes("beginListening")), `expected beginListening; got ${labels.join(" | ")}`)
+    assert.ok(labels.some((label) => label.includes("available()")))
+    assert.ok(labels.some((label) => label.includes("install()")))
+    assert.ok(labels.some((label) => label.includes("recognition.start()")))
+  })
+
+  test("records the recognition error code when onerror fires", async () => {
+    const harness = loadWordMeterWithLanguagePack({ availability: "available" })
+    await harness.wm.start()
+    harness.wm.simulateError("language-not-supported")
+    const errorEntry = harness.wm.getState().diagnosticsEntries
+      .find((entry) => entry.label === "recognition.onerror")
+    assert.ok(errorEntry, "an onerror diagnostic was recorded")
+    assert.match(errorEntry.detail, /language-not-supported/)
   })
 })
 

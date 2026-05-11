@@ -42,6 +42,21 @@ On Chromium-family browsers the standardized `processLocally` hint requires the 
 
 Cloud mode skips the pre-flight entirely. If the user hits **Stop** while a download is in flight, the pending start is cancelled by checking that `session.listening` is still true and `session.recognition` is still the same object before invoking `start()`.
 
+## Build version and cache busting
+
+Every served copy of `word-meter.js` carries an embedded build identifier — the first 12 hex chars of SHA-256 of the source file — substituted at build time for the `__WORD_METER_VERSION__` placeholder. The version is rendered into the privacy footer (`Word Meter build <hash>`) and logged to the browser console with every diagnostic event, so the user can confirm at a glance which build the browser is actually running.
+
+To prevent stale-cache surprises, the Static emitter writes a second copy of the script at `<basename>.<hash>.js`, and a small rehype HTML transformer (`CacheBustStaticAssets`) rewrites every `<script src="/static/*.js">` reference in the rendered HTML to point at the hashed URL. Because the URL changes with every byte of the source, the browser cannot serve a stale cached copy after a deploy. The un-versioned filename is also written with the same substituted bytes so direct visits to the old URL keep working. The hashing module lives in `quartz/util/staticAssetHash.ts` and is shared by the emitter and the transformer so the hash on the URL always matches the hash baked into the file.
+
+## Diagnostics panel
+
+The meter renders a collapsible **🔧 Diagnostics** panel below the privacy footer. When expanded it shows, in order:
+
+1. **Environment snapshot** — script build version, `navigator.userAgent`, `navigator.language`, whether `SpeechRecognition` and `webkitSpeechRecognition` are exposed, whether the static `available` / `install` methods are exposed, and whether the Screen Wake Lock API is available.
+2. **Event log** — a rolling, capped-at-60 list of timestamped diagnostic events. Every step of the on-device pre-flight (`available()` call, its result, `install()` call, its result), every `recognition.start()` invocation, and every `onerror` event (with `error` code and `message`) is logged here.
+
+Every entry is also echoed to the browser console prefixed with `[word-meter <version>]` so curious users can grep the devtools log. This makes "it didn't work on my browser" reports diagnosable: the user can copy the diagnostics text directly into a bug report.
+
 ## Cumulative-refinement deduplication
 
 Android Chrome's continuous mode + `interimResults` emits each refinement of one utterance as a *separate* finalized `SpeechRecognitionResult` carrying the *full cumulative transcript*. Naive index-based deduplication over-counts dramatically (issue #6897). The meter instead routes every finalized transcript into one of four cases relative to the most recent finalized transcript:
@@ -70,7 +85,7 @@ Pure-web browsers do not allow microphone capture once the page becomes hidden o
 
 ## UI structure
 
-`buildPanel` composes, in order: status line, big count, count label, start/stop button, recognition mode chooser, keep-awake toggle, metrics grid (started time, last-1-min rate, last-10-min rate, overall rate), captions panel, error banner, privacy footer.
+`buildPanel` composes, in order: status line, big count, count label, start/stop button, recognition mode chooser, keep-awake toggle, metrics grid (started time, last-1-min rate, last-10-min rate, overall rate), captions panel, error banner, privacy footer (including build version), and a collapsible diagnostics panel.
 
 ## Lifecycle and cleanup
 

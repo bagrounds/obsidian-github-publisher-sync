@@ -361,7 +361,7 @@ describe("Word Meter — keep-awake / Screen Wake Lock", () => {
 // to download on-device speech recognition models. Without these calls, the
 // real browser rejects `start()` with `language-not-supported` on the very
 // first attempt — the bug this suite locks down.
-const loadWordMeterWithLanguagePack = ({ availability, installResult, exposeStaticApi = true } = {}) => {
+const loadWordMeterWithLanguagePack = ({ availability, installResult, exposeStaticApi = true, clipboard } = {}) => {
   const elementsById = {}
   const makeElement = () => ({
     id: "",
@@ -430,7 +430,7 @@ const loadWordMeterWithLanguagePack = ({ availability, installResult, exposeStat
 
   const sandbox = {
     document,
-    navigator: { language: "en-US" },
+    navigator: { language: "en-US", ...(clipboard ? { clipboard } : {}) },
     SpeechRecognition: FakeRecognition,
     webkitSpeechRecognition: FakeRecognition,
     setInterval: () => 0,
@@ -601,6 +601,22 @@ describe("Word Meter — diagnostics and version", () => {
       .find((entry) => entry.label === "recognition.onerror")
     assert.ok(errorEntry, "an onerror diagnostic was recorded")
     assert.match(errorEntry.detail, /language-not-supported/)
+  })
+
+  test("copyDiagnostics writes the snapshot and log to navigator.clipboard", async () => {
+    const written = []
+    const harness = loadWordMeterWithLanguagePack({
+      availability: "available",
+      clipboard: {
+        writeText: (value) => { written.push(value); return Promise.resolve() },
+      },
+    })
+    await harness.wm.start()
+    await harness.wm.copyDiagnostics()
+    assert.strictEqual(written.length, 1, "exactly one clipboard write")
+    const copied = written[0]
+    assert.match(copied, /version\s*:/, "snapshot header is included")
+    assert.match(copied, /beginListening/, "recent event log is included")
   })
 })
 

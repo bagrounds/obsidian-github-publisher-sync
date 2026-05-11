@@ -10,9 +10,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-20T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-05-11T13:06:32Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A minimalist, high-contrast illustration featuring a stylized, symmetrical pair of golden scales balanced perfectly on a solid pedestal. Behind the scales, a series of clean, architectural stone columns recede into the distance, suggesting a grand courthouse or temple. The color palette uses deep navy blue, charcoal grey, and accents of metallic gold. The lighting is dramatic and even, casting soft, sharp-edged shadows that emphasize the solidity of the structures. The overall aesthetic is professional, timeless, and authoritative, evoking a sense of stability, precision, and foundational justice.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🏛️⚖️ The Rule of Law  
+![books-the-rule-of-law](../books-the-rule-of-law.jpg)  
 [🛒 The Rule of Law. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/42Pm2fl)  
   
 ### 🏆 Expert's Rule of Law Cheat Sheet  

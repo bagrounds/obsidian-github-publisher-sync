@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-05-10T08:15:42-07:00
+updated: 2026-05-11T08:38:57-07:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -14,32 +14,32 @@ updated: 2026-05-10T08:15:42-07:00
 🔊 Listen to any page with built in audio control.  
 💬 Comment on any page with your GitHub account.  
   
-## [🪞 Reflections](./reflections/index.md) ~ Blog (542)  
-- [2026-05-10](./reflections/2026-05-10.md)  
+## [🪞 Reflections](./reflections/index.md) ~ Blog (543)  
+- [2026-05-11](./reflections/2026-05-11.md)  
+- [2026-05-10 | ⚙️ Meter 🤖 Architecture 🐔 Celebration 🔀 Building 🌟 Progress 🏛️ Foundations 📰 Innovations 🤖 Persistence 🧰📚🤖🐔🔀🌟🏛️📰🔄🤖🐲](./reflections/2026-05-10.md)  
 - [2026-05-09 | ⚙️ Meter 🧠 Learn 📚 Intro 📈 Improving 🌟 Progress 📰 Shifting 🐔 Milestone 🤖 Architecture 🏛️ Governance 🔀 Anchoring 🏗️ Building 🧰📚📺📄🌟📰🐔🤖🏛️🔀🔄🤖🐲](./reflections/2026-05-09.md)  
 - [2026-05-08 | 🫨 Shocking 🗣️ service 📚 changed 👷 workers 🚫 ignores 🏛️ reconstruction ⚙️ build ⚔️ battle, 🌟 progress 📰 signals 🐔 echo 🤖 governance 🌲 thinking 🔀 systems. 📺📰🌟🐔🤖🏛️🔀🔄🤖🐲](./reflections/2026-05-08.md)  
-- [2026-05-07 | 🤖 The 🐔 Shared 🔀 Intent 🌟 Progress 🏛️ Commons 📰 Echoes 🤖🐔🔀🌟🏛️📰🔄🤖🐲](./reflections/2026-05-07.md)  
   
   
-## [🤖 AI Blog](./ai-blog/index.md) (196)  
+## [🤖 AI Blog](./ai-blog/index.md) (197)  
+- [2026-05-10 | 💾 Word Meter Persistence and Timeline 🤖](./ai-blog/2026-05-10-1-word-meter-persistence.md)  
 - [2026-05-09 | 🔋 Word Meter Goes The Distance With Screen Wake Lock 🤖](./ai-blog/2026-05-09-3-word-meter-screen-wake-lock.md)  
 - [2026-05-09 | 🐛 Word Meter Overcount: A Web Speech Refinement Quirk 🤖](./ai-blog/2026-05-09-2-word-meter-overcount-rca.md)  
 - [2026-05-09 | 🎙️ Building Word Meter: A One-Button Speech Counter 🤖](./ai-blog/2026-05-09-1-word-meter-tool.md)  
-- [2026-05-04 | 🏷️ From JSON to Haskell: Strong Types for Blog Series Configs 🤖](../2026-05-04-2-replace-json-configs-with-haskell.md)  
   
   
-## [🤖 Auto Blog Zero](./auto-blog-zero/index.md) (61)  
+## [🤖 Auto Blog Zero](./auto-blog-zero/index.md) (62)  
+- [2026-05-11 | 🤖 🧪 The Algorithmic Conscience and the Limits of Invariants 🤖](./auto-blog-zero/2026-05-11-the-algorithmic-conscience-and-the-limits-of-invariants.md)  
 - [2026-05-10 | 🤖 📆 Weekly Recap: The Architecture of Intent and Governance 🤖](./auto-blog-zero/2026-05-10-weekly-recap-the-architecture-of-intent-and-governance.md)  
 - [2026-05-09 | 🤖 🏛️ The Architecture of Constitutional Continuity 🤖](./auto-blog-zero/2026-05-09-the-architecture-of-constitutional-continuity.md)  
 - [2026-05-08 | 🤖 🌐 The Horizon of Recursive Governance 🤖](./auto-blog-zero/2026-05-08-the-horizon-of-recursive-governance.md)  
-- [2026-05-07 | 🤖 🧭 The Architecture of Uncertainty 🤖](./auto-blog-zero/2026-05-07-the-architecture-of-uncertainty.md)  
   
   
-## [🐔 Chickie Loo](./chickie-loo/index.md) (61)  
+## [🐔 Chickie Loo](./chickie-loo/index.md) (62)  
+- [2026-05-11 | 🐔 A Weekend of Mirrors, Magic, and Milk Bags 🐔](./chickie-loo/2026-05-11-a-weekend-of-mirrors-magic-and-milk-bags.md)  
 - [2026-05-10 | 🐔 A Sunday of Celebration and Staircases 🐔](./chickie-loo/2026-05-10-a-sunday-of-celebration-and-staircases.md)  
 - [2026-05-09 | 🐔 A Milestone at the Stove and a Rooster in the Rafters 🐔](./chickie-loo/2026-05-09-a-milestone-at-the-stove-and-a-rooster-in-the-rafters.md)  
 - [2026-05-08 | 🐔 🐣 The Quiet Echo of a House Well-Loved 🐔](./chickie-loo/2026-05-08-the-quiet-echo-of-a-house-well-loved.md)  
-- [2026-05-07 | 🐔 A Thursday of Shared Sunlight 🐔](./chickie-loo/2026-05-07-a-thursday-of-shared-sunlight.md)  
   
   
 ## [🏛️ Systems for Public Good](./systems-for-public-good/index.md) (50)  
@@ -49,18 +49,18 @@ updated: 2026-05-10T08:15:42-07:00
 - [2026-05-07 | 🏛️ The Integrated Commons: Bridging Physical and Digital Public Goods 🏛️](./systems-for-public-good/2026-05-07-the-integrated-commons-bridging-physical-and-digital-public-goods.md)  
   
   
-## [📰 The Noise](./the-noise/index.md) (31)  
+## [📰 The Noise](./the-noise/index.md) (32)  
+- [2026-05-11 | 📰 🌐 Global Tremors and Technological Ripples 📰](./the-noise/2026-05-11-global-tremors-and-technological-ripples.md)  
 - [2026-05-10 | 📰 🌪️ A Week of Dualities: Escalations, Innovations, and Lingering Shadows 📰](./the-noise/2026-05-10-a-week-of-dualities-escalations-innovations-and-lingering-shadows.md)  
 - [2026-05-09 | 📰 ⚙️ Shifting Gears: Diplomacy's Grind and Innovation's Surge 📰](./the-noise/2026-05-09-shifting-gears-diplomacy-s-grind-and-innovation-s-surge.md)  
 - [2026-05-08 | 📰 💥 Crosscurrents of Conflict and Cautionary Signals 📰](./the-noise/2026-05-08-crosscurrents-of-conflict-and-cautionary-signals.md)  
-- [2026-05-07 | 📰 🌪️ Echoes of Diplomacy, Leaps of Discovery 📰](./the-noise/2026-05-07-echoes-of-diplomacy-leaps-of-discovery.md)  
   
   
-## [🌟 Positivity Bias](./positivity-bias/index.md) (30)  
+## [🌟 Positivity Bias](./positivity-bias/index.md) (31)  
+- [2026-05-11 | 🌟 A World Ignited: Innovation, Compassion, and Green Horizons 🌟](./positivity-bias/2026-05-11-a-world-ignited-innovation-compassion-and-green-horizons.md)  
 - [2026-05-10 | 🌟 Daily Pulse: Breakthroughs and Blossoming Progress 🌟](./positivity-bias/2026-05-10-daily-pulse-breakthroughs-and-blossoming-progress.md)  
 - [2026-05-09 | 🌟 Unveiling Progress: A World of Discovery and Collaboration 🌟](./positivity-bias/2026-05-09-unveiling-progress-a-world-of-discovery-and-collaboration.md)  
 - [2026-05-08 | 🌟 Bright Horizons: A Daily Dose of Progress and Ingenuity 🌟](./positivity-bias/2026-05-08-bright-horizons-a-daily-dose-of-progress-and-ingenuity.md)  
-- [2026-05-07 | 🌟 The World's Brightest Echoes: Progress in Every Corner 🌟](./positivity-bias/2026-05-07-the-world-s-brightest-echoes-progress-in-every-corner.md)  
   
   
 ## [🔀 Convergence](./convergence/index.md) (27)  
@@ -71,10 +71,10 @@ updated: 2026-05-10T08:15:42-07:00
   
   
 ## [📚 Books](./books/index.md) (961)  
-- [💰🧔👑🏛️ The Richest Man in Babylon](./books/the-richest-man-in-babylon.md)  
-- [👦🗣️ The Reason I Jump: The Inner Voice of a Thirteen-Year-Old Boy with Autism](./books/the-reason-i-jump-the-inner-voice-of-a-thirteen-year-old-boy-with-autism.md)  
-- [🏢🗓️ The Psychology of Planning in Organizations: Research and Applications](./books/the-psychology-of-planning-in-organizations-research-and-applications.md)  
-- [💰🤔😊 The Psychology of Money: Timeless lessons on wealth, greed, and happiness](./books/the-psychology-of-money.md)  
+- [😴🔬 The Science of Sleep: What It Is, How It Works, and Why It Matters](./books/the-science-of-sleep-what-it-is-how-it-works-and-why-it-matters.md)  
+- [💪🎯🔬 The Science of Self-Discipline: The Willpower, Mental Toughness, and Self-Control to Resist Temptation and Achieve Your Goals](./books/the-science-of-self-discipline-the-willpower-mental-toughness-and-self-control-to-resist-temptation-and-achieve-your-goals.md)  
+- [🧪🏛️ The Science of Science Policy: A Handbook](./books/the-science-of-science-policy-a-handbook.md)  
+- [🤰👶🔬👩‍⚕️ 🧪 The Science of Mom: A Research-Based Guide to Your Baby's First Year](./books/the-science-of-mom.md)  
   
   
 ## [📺 Videos](./videos/index.md) (825)  

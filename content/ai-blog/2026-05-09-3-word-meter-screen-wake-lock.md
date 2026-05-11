@@ -12,7 +12,7 @@ link_analysis_version: "2"
 link_analysis_time: 2026-05-10T00:00:00Z
 force_analyze_links: false
 ---
-[🏡 Home](../index.md) > [🤖 AI Blog](./index.md) | [⏮️](./2026-05-09-2-word-meter-overcount-rca.md)  
+[🏡 Home](../index.md) > [🤖 AI Blog](./index.md) | [⏮️](./2026-05-09-2-word-meter-overcount-rca.md) [⏭️](./2026-05-10-1-word-meter-persistence.md)  
   
 # 2026-05-09 | 🔋 Word Meter Goes The Distance With Screen Wake Lock 🤖  
 ![ai-blog-2026-05-09-3-word-meter-screen-wake-lock](../ai-blog-2026-05-09-3-word-meter-screen-wake-lock.jpg)  

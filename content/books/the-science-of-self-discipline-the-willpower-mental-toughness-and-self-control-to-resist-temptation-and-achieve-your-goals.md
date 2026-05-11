@@ -9,9 +9,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-17T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-05-11T15:22:38Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A minimalist, high-contrast composition featuring a single, glowing, metallic sphere resting perfectly balanced atop a sharp, jagged mountain peak. The background is a clean, deep slate-gray gradient. Below the sphere, a series of faint, geometric lines trace a path of ascending steps, symbolizing the systematic climb toward a goal. To the side, a glass of water sits undisturbed, representing clarity and the rejection of chaotic impulses. The lighting is crisp and dramatic, highlighting the texture of the sphere and the sharp edges of the mountain, evoking a sense of refined focus, mental fortitude, and the deliberate mastery of one’s environment. The aesthetic is modern, professional, and intellectually rigorous.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 💪🎯🔬 The Science of Self-Discipline: The Willpower, Mental Toughness, and Self-Control to Resist Temptation and Achieve Your Goals  
+![books-the-science-of-self-discipline-the-willpower-mental-toughness-and-self-control-to-resist-temptation-and-achieve-your-goals](../books-the-science-of-self-discipline-the-willpower-mental-toughness-and-self-control-to-resist-temptation-and-achieve-your-goals.jpg)  
 [🛒 The Science of Self-Discipline: The Willpower, Mental Toughness, and Self-Control to Resist Temptation and Achieve Your Goals. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3ZNmNUm)  
   
 ## 📚 Book Report: The Science of Self-Discipline by Peter Hollins  

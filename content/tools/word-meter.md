@@ -8,11 +8,15 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_version: "2"
 link_analysis_time: 2026-05-10T00:00:00Z
 force_analyze_links: false
+image_date: 2026-05-11T09:18:06Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A minimalist, high-contrast illustration centered on a sleek, stylized microphone icon. Surrounding the microphone are floating, translucent geometric shapes representing sound waves, rendered in soft gradients of cyan and electric blue. The background is a deep, matte charcoal, providing a modern, tech-focused aesthetic. A single, glowing circular button sits at the base of the microphone, radiating subtle light ripples to suggest active listening. The overall composition is clean and focused, utilizing clean lines and a professional, soft-glow lighting effect to convey precision and digital privacy.
 ---
   
 [🏡 Home](../index.md#) > [🧰 Tools](./index.md#)  
   
 # 🎙️ Word Meter  
+![tools-word-meter-2](../tools-word-meter-2.jpg)  
   
 *One button. Counts every word spoken around you. Lives entirely in your browser.*  
   

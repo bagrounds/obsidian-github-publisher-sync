@@ -9,9 +9,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-28T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-05-11T09:18:20Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A vintage, weathered ballot box sits prominently on a dark wooden table. The box is slightly translucent, revealing layers of historical documents, parchment scrolls, and modern paper ballots overlapping inside. Behind the box, a fragmented, stylized American flag hangs, with its stripes appearing to fray and weave into the texture of the background. To one side, a worn quill pen rests against a sleek, modern digital stylus, symbolizing the evolution of the democratic process. The lighting is dramatic and chiaroscuro-inspired, casting long, sweeping shadows that highlight the uneven, non-linear texture of the scene. The overall color palette is muted, featuring deep indigos, sepia tones, and faded crimsons, evoking a sense of historical weight and the ongoing, complex struggle for the franchise.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🗳️🇺🇸 The Right to Vote: The Contested History of Democracy in the United States  
+![books-the-right-to-vote-the-contested-history-of-democracy-in-the-united-states](../books-the-right-to-vote-the-contested-history-of-democracy-in-the-united-states.jpg)  
 [🛒 The Right to Vote: The Contested History of Democracy in the United States. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/43np2Q9)  
   
 🗳️ American suffrage is a relentless, non-linear struggle marked by persistent expansion and surprising contraction, challenging the myth of inevitable democratic progress.  

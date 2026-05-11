@@ -10,9 +10,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-18T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-05-11T11:11:23Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A cinematic, wide-angle shot of a crumbling marble colonnade set against a dramatic, stormy sky at twilight. The Roman pillars are cracked and partially covered in creeping, dark ivy. In the foreground, a dusty, worn Roman helmet lies discarded on the cracked stone floor, partially obscured by wind-blown debris. In the distance, silhouetted figures of migratory tribes are visible on a grassy horizon, marching toward the city gates under a brooding, atmospheric haze. The color palette features muted earth tones, weathered stone grays, and deep, melancholic blues, evoking a sense of historical transition and the weight of a vanishing empire. The lighting is soft and directional, highlighting the textures of the stone and the contrast between the decaying architecture and the encroaching landscape.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🥀🏛️ The Ruin of the Roman Empire: A New History  
+![books-the-ruin-of-the-roman-empire-a-new-history](../books-the-ruin-of-the-roman-empire-a-new-history.jpg)  
 [🛒 The Ruin of the Roman Empire: A New History. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4rRNqmD)  
   
 🌍⚔️💔 External Germanic migrations, rather than internal decay, were the decisive factor in the Western Roman Empire's collapse, leading to a profound transformation of Europe.  

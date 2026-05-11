@@ -13,7 +13,7 @@ link_analysis_version: "2"
 link_analysis_time: 2026-05-10T00:00:00Z
 force_analyze_links: false
 ---
-[Home](../index.md) > [📰 The Noise](./index.md) | [⏮️](./2026-05-09-shifting-gears-diplomacy-s-grind-and-innovation-s-surge.md)  
+[Home](../index.md) > [📰 The Noise](./index.md) | [⏮️](./2026-05-09-shifting-gears-diplomacy-s-grind-and-innovation-s-surge.md) [⏭️](./2026-05-11-global-tremors-and-technological-ripples.md)  
 # 2026-05-10 | 📰 🌪️ A Week of Dualities: Escalations, Innovations, and Lingering Shadows 📰  
 ![the-noise-2026-05-10-a-week-of-dualities-escalations-innovations-and-lingering-shadows](../the-noise-2026-05-10-a-week-of-dualities-escalations-innovations-and-lingering-shadows.jpg)  
   

@@ -10,9 +10,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-27T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-05-11T14:12:40Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: "A clean, minimalist composition featuring a sleek, translucent glass pillar—representing a government building—seamlessly merging into a vibrant, glowing DNA helix or a complex network of interconnected data nodes. The background is a soft, professional gradient of deep navy and crisp white. Floating around the central structure are subtle, stylized icons of analytical tools: a microscope, a bar chart, and a geometric magnifying glass. The aesthetic is clean, intellectual, and modern, using a color palette of cool blues, teals, and accents of bright gold to symbolize the intersection of rigorous scientific evidence and structural policy. The lighting is bright and even, conveying clarity, precision, and strategic foresight."
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🧪🏛️ The Science of Science Policy: A Handbook  
+![books-the-science-of-science-policy-a-handbook](../books-the-science-of-science-policy-a-handbook.jpg)  
 [🛒 The Science of Science Policy: A Handbook. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3JCcPAm)  
   
 🌱🔬💡 An evidence-based platform for analyzing the theoretical, empirical, and practical aspects of science policy to inform effective decision-making and investment in scientific research and technological development.  

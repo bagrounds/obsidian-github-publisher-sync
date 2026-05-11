@@ -6,6 +6,10 @@ void function () {
 
   // ---------- Configuration ----------
 
+  // Hard-coded version string. Bump this whenever the served behavior changes
+  // in a way users should be able to tell apart. Rendered into the privacy
+  // footer and the diagnostics panel.
+  const WORD_METER_VERSION = '0.1.0';
   const HOST_ELEMENT_ID = 'word-meter';
 
   const CAPTION_WINDOW_MILLISECONDS = 30_000;
@@ -27,11 +31,44 @@ void function () {
   const TIMELINE_MAX_RENDERED_ENTRIES = 200;
   const RESET_CONFIRMATION_PROMPT = 'Reset all word meter stats? This cannot be undone.';
 
-  const RECOGNITION_MODES = Object.freeze({
-    onDevice: { id: 'on-device', label: 'On-device', processLocally: true },
-    cloud:    { id: 'cloud',     label: 'Cloud',     processLocally: false }
+  // Recognition strategy.
+  //
+  // The meter has one user-visible mode. Internally there are two implementations
+  // that produce the same outcome: an on-device path (recent Chromium with the
+  // `processLocally` extension) and a cloud path (every other configuration of
+  // SpeechRecognition that the browser exposes). At runtime the meter always
+  // tries the on-device path first and silently falls back to the cloud path if
+  // anything goes wrong. The user is not asked to choose, and the page does not
+  // expose a chooser. This keeps the UI free of a control that, in practice
+  // today, almost no Android browser can actually honor — see specs/word-meter.md
+  // for the field telemetry that justifies this choice.
+  //
+  // ╔═══════════════════════════════════════════════════════════════════════╗
+  // ║                                                                       ║
+  // ║  If we ever decide to drop the on-device path entirely, the change    ║
+  // ║  is purely subtractive:                                               ║
+  // ║                                                                       ║
+  // ║    1. Delete the section marked `BEGIN on-device path` .. `END        ║
+  // ║       on-device path` further down in this file.                      ║
+  // ║    2. Delete `ON_DEVICE_PREFLIGHT_ENABLED` below.                     ║
+  // ║    3. In `beginListening`, replace the call to                        ║
+  // ║       `attemptStart(recognition, locale)` with `startSafely(          ║
+  // ║       recognition)`.                                                  ║
+  // ║    4. Drop the `language-not-supported` branch in `handleError`.      ║
+  // ║                                                                       ║
+  // ║  No other call sites or state mutate based on the recognition path,   ║
+  // ║  so nothing else needs to change.                                     ║
+  // ║                                                                       ║
+  // ╚═══════════════════════════════════════════════════════════════════════╝
+
+  const ON_DEVICE_PREFLIGHT_ENABLED = true;
+
+  // The two possible recognition paths. These are internal book-keeping
+  // values only — they are never shown to the user.
+  const RECOGNITION_PATHS = Object.freeze({
+    onDevice: 'on-device',
+    cloud: 'cloud'
   });
-  const DEFAULT_RECOGNITION_MODE = RECOGNITION_MODES.onDevice;
 
   const PALETTE = Object.freeze({
     panelBackground: 'linear-gradient(180deg,#0b1320,#0a1729)',
@@ -62,12 +99,16 @@ void function () {
     rateOverall: 'wm-rate-overall',
     captions: 'wm-captions',
     error: 'wm-error',
-    modeOnDevice: 'wm-mode-on-device',
-    modeCloud: 'wm-mode-cloud',
     keepAwake: 'wm-keep-awake',
     keepAwakeStatus: 'wm-keep-awake-status',
     timeline: 'wm-timeline',
-    timelineEmpty: 'wm-timeline-empty'
+    timelineEmpty: 'wm-timeline-empty',
+    diagnosticsToggle: 'wm-diagnostics-toggle',
+    diagnosticsPanel: 'wm-diagnostics',
+    diagnosticsContent: 'wm-diagnostics-content',
+    diagnosticsCopy: 'wm-diagnostics-copy',
+    diagnosticsCopyStatus: 'wm-diagnostics-copy-status',
+    version: 'wm-version'
   });
 
   // ---------- Pure utilities ----------
@@ -236,51 +277,6 @@ void function () {
   const buildButtonRow = () => element('div', {
     styles: { display: 'flex', justifyContent: 'center', gap: '10px', flexWrap: 'wrap', margin: '22px 0 14px' },
     children: [buildButton(), buildResetButton()]
-  });
-
-  const buildModeRadio = (mode, isDefault) => {
-    const input = element('input', {
-      id: mode.id === RECOGNITION_MODES.onDevice.id ? ELEMENT_IDS.modeOnDevice : ELEMENT_IDS.modeCloud,
-      attributes: {
-        type: 'radio',
-        name: 'wm-mode',
-        value: mode.id,
-        ...(isDefault ? { checked: 'checked' } : {})
-      },
-      styles: { marginRight: '6px', accentColor: PALETTE.startBackground }
-    });
-    const label = element('label', {
-      attributes: { for: input.id },
-      styles: {
-        display: 'inline-flex',
-        alignItems: 'center',
-        marginRight: '14px',
-        fontSize: '13px',
-        color: PALETTE.secondaryText,
-        cursor: 'pointer'
-      },
-      children: [input, element('span', { text: mode.label })]
-    });
-    return label;
-  };
-
-  const buildModeChooser = () => element('div', {
-    styles: {
-      display: 'flex',
-      justifyContent: 'center',
-      flexWrap: 'wrap',
-      marginBottom: '8px',
-      fontSize: '13px',
-      color: PALETTE.mutedText
-    },
-    children: [
-      element('span', {
-        text: 'Recognition: ',
-        styles: { marginRight: '10px', alignSelf: 'center' }
-      }),
-      buildModeRadio(RECOGNITION_MODES.onDevice, true),
-      buildModeRadio(RECOGNITION_MODES.cloud, false)
-    ]
   });
 
   const buildKeepAwakeToggle = () => {
@@ -474,11 +470,76 @@ void function () {
     },
     children: [
       element('div', {
-        text: 'On-device mode keeps audio local when your browser supports it (Safari, recent Chromium). Cloud mode streams audio to your browser vendor’s speech service. Nothing is sent or stored by this page.'
+        text: 'Speech recognition runs in your browser. Nothing is sent or stored by this page.'
       }),
       element('div', {
-        text: 'Web browsers cannot capture microphone audio with the screen truly off — the page is suspended on screen lock. The keep-awake toggle uses the Screen Wake Lock API to keep the screen lit while you listen, which is the only way to keep the meter running for a long walk with the phone in your pocket.',
-        styles: { marginTop: '6px' }
+        id: ELEMENT_IDS.version,
+        text: `Word Meter v${WORD_METER_VERSION}`,
+        attributes: { 'data-word-meter-version': WORD_METER_VERSION },
+        styles: { marginTop: '8px', fontFamily: 'ui-monospace,SFMono-Regular,Menlo,monospace', color: PALETTE.dimText }
+      })
+    ]
+  });
+
+  // The diagnostics panel surfaces every piece of info that helps diagnose why
+  // on-device recognition might be failing on one browser but working on
+  // another. It is collapsed by default so it doesn't clutter the UI, but a
+  // single tap reveals the user agent, Web Speech API support, on-device
+  // language-pack API support, the locale being requested, the most recent
+  // `available()` and `install()` results, and the most recent recognition
+  // error (with full code and message). Each call also logs to the console
+  // with a `[word-meter]` prefix so curious users can grep the devtools log.
+  const buildDiagnosticsPanel = () => element('details', {
+    id: ELEMENT_IDS.diagnosticsPanel,
+    styles: { marginTop: '16px', fontSize: '12px', color: PALETTE.secondaryText },
+    children: [
+      element('summary', {
+        id: ELEMENT_IDS.diagnosticsToggle,
+        text: '🔧 Diagnostics',
+        styles: { cursor: 'pointer', color: PALETTE.mutedText, padding: '4px 0', userSelect: 'none' }
+      }),
+      element('div', {
+        styles: { display: 'flex', alignItems: 'center', gap: '8px', margin: '8px 0 0 0' },
+        children: [
+          element('button', {
+            id: ELEMENT_IDS.diagnosticsCopy,
+            text: '📋 Copy diagnostics',
+            attributes: { type: 'button', title: 'Copy the snapshot and event log to the clipboard' },
+            styles: {
+              font: '600 12px/1 inherit',
+              padding: '8px 12px',
+              borderRadius: '999px',
+              border: '1px solid rgba(255,255,255,0.18)',
+              background: 'transparent',
+              color: PALETTE.secondaryText,
+              cursor: 'pointer'
+            }
+          }),
+          element('span', {
+            id: ELEMENT_IDS.diagnosticsCopyStatus,
+            text: '',
+            styles: { color: PALETTE.mutedText, fontSize: '11.5px' }
+          })
+        ]
+      }),
+      element('pre', {
+        id: ELEMENT_IDS.diagnosticsContent,
+        text: 'collecting…',
+        styles: {
+          margin: '8px 0 0 0',
+          padding: '10px 12px',
+          background: PALETTE.captionsBackground,
+          border: PALETTE.captionsBorder,
+          borderRadius: '8px',
+          fontFamily: 'ui-monospace,SFMono-Regular,Menlo,monospace',
+          fontSize: '11.5px',
+          lineHeight: '1.45',
+          color: PALETTE.secondaryText,
+          whiteSpace: 'pre-wrap',
+          wordBreak: 'break-word',
+          maxHeight: '320px',
+          overflowY: 'auto'
+        }
       })
     ]
   });
@@ -499,24 +560,232 @@ void function () {
       buildBigCount(),
       buildCountLabel(),
       buildButtonRow(),
-      buildModeChooser(),
       buildKeepAwakeToggle(),
       buildMetricsGrid(),
       buildCaptionsPanel(),
       buildErrorBanner(),
       buildTimelinePanel(),
-      buildPrivacyFooter()
+      buildPrivacyFooter(),
+      buildDiagnosticsPanel()
     ]
   });
+
+  // ---------- Diagnostics ----------
+  //
+  // The diagnostics module records every interesting decision the meter makes
+  // during a session so that "it didn't work on my browser" reports become
+  // diagnosable. Every entry is timestamped, appended to an in-memory log
+  // (capped to avoid unbounded growth), echoed to the console with a
+  // `[word-meter]` prefix, and rendered into the on-page diagnostics panel.
+
+  const DIAGNOSTICS_MAX_ENTRIES = 60;
+
+  const diagnostics = {
+    entries: [],
+    snapshot: null
+  };
+
+  const recordDiagnostic = (label, detail) => {
+    const timestamp = formatClockTime(new Date());
+    const renderedDetail = detail === undefined ? '' : (
+      typeof detail === 'string' ? detail : safeStringify(detail)
+    );
+    diagnostics.entries.push({ timestamp, label, detail: renderedDetail });
+    if (diagnostics.entries.length > DIAGNOSTICS_MAX_ENTRIES) {
+      diagnostics.entries.splice(0, diagnostics.entries.length - DIAGNOSTICS_MAX_ENTRIES);
+    }
+    try {
+      if (typeof console !== 'undefined' && console.log) {
+        console.log(`[word-meter ${WORD_METER_VERSION}] ${label}${renderedDetail ? ' — ' + renderedDetail : ''}`);
+      }
+    } catch (_unused) { /* console unavailable in some embedded contexts */ }
+    renderDiagnosticsPanel();
+  };
+
+  const safeStringify = (value) => {
+    try {
+      return JSON.stringify(value, (_key, candidate) => {
+        if (candidate instanceof Error) {
+          return { name: candidate.name, message: candidate.message };
+        }
+        return candidate;
+      });
+    } catch (_unused) {
+      return String(value);
+    }
+  };
+
+  const captureEnvironmentSnapshot = () => {
+    const RecognitionConstructor = getRecognitionConstructor();
+    const navigatorLanguage = (typeof navigator !== 'undefined' && navigator.language) || '(unknown)';
+    const userAgent = (typeof navigator !== 'undefined' && navigator.userAgent) || '(unknown)';
+    const wakeLockAvailable = typeof navigator !== 'undefined'
+      && !!navigator.wakeLock
+      && typeof navigator.wakeLock.request === 'function';
+    diagnostics.snapshot = {
+      version: WORD_METER_VERSION,
+      userAgent,
+      navigatorLanguage,
+      hasSpeechRecognition: typeof window !== 'undefined' && 'SpeechRecognition' in window,
+      hasWebkitSpeechRecognition: typeof window !== 'undefined' && 'webkitSpeechRecognition' in window,
+      hasOnDeviceAvailable: !!RecognitionConstructor && typeof RecognitionConstructor.available === 'function',
+      hasOnDeviceInstall: !!RecognitionConstructor && typeof RecognitionConstructor.install === 'function',
+      wakeLockAvailable
+    };
+    renderDiagnosticsPanel();
+  };
+
+  const formatSnapshot = (snapshot) => {
+    if (!snapshot) return '';
+    const yes = '✓';
+    const no = '✗';
+    const flag = (value) => (value ? yes : no);
+    return [
+      `version           : ${snapshot.version}`,
+      `userAgent         : ${snapshot.userAgent}`,
+      `navigator.language: ${snapshot.navigatorLanguage}`,
+      `SpeechRecognition : ${flag(snapshot.hasSpeechRecognition)}`,
+      `webkit prefix     : ${flag(snapshot.hasWebkitSpeechRecognition)}`,
+      `on-device API     : available=${flag(snapshot.hasOnDeviceAvailable)} install=${flag(snapshot.hasOnDeviceInstall)}`,
+      `Screen Wake Lock  : ${flag(snapshot.wakeLockAvailable)}`
+    ].join('\n');
+  };
+
+  const formatDiagnostics = () => {
+    const header = diagnostics.snapshot ? formatSnapshot(diagnostics.snapshot) + '\n\n' : '';
+    const log = diagnostics.entries.length === 0
+      ? '(no events yet — press Start counting to populate the log)'
+      : diagnostics.entries.map((entry) => {
+        const detail = entry.detail ? ' — ' + entry.detail : '';
+        return `${entry.timestamp}  ${entry.label}${detail}`;
+      }).join('\n');
+    return header + log;
+  };
+
+  const renderDiagnosticsPanel = () => {
+    const target = byId(ELEMENT_IDS.diagnosticsContent);
+    if (!target) return;
+    target.textContent = formatDiagnostics();
+  };
+
+  // Copy the snapshot + event log to the clipboard so a user filing an issue
+  // can paste the full diagnostics without having to manually select the
+  // <pre> contents on mobile (which is fiddly inside <details>). Falls back
+  // to a hidden <textarea> + execCommand('copy') on browsers that don't
+  // expose the async Clipboard API or that refuse it in non-secure contexts.
+  const copyDiagnostics = async () => {
+    const text = formatDiagnostics();
+    const showCopyStatus = (message) => setText(ELEMENT_IDS.diagnosticsCopyStatus, message);
+    const succeed = () => {
+      recordDiagnostic('diagnostics copied to clipboard');
+      showCopyStatus('copied!');
+      setTimeout(() => showCopyStatus(''), 2000);
+    };
+    const fail = (reason) => {
+      recordDiagnostic('diagnostics copy failed', { reason: String(reason) });
+      showCopyStatus('copy failed — long-press the log to select');
+      setTimeout(() => showCopyStatus(''), 4000);
+    };
+    try {
+      if (typeof navigator !== 'undefined'
+        && navigator.clipboard
+        && typeof navigator.clipboard.writeText === 'function') {
+        await navigator.clipboard.writeText(text);
+        succeed();
+        return;
+      }
+    } catch (error) {
+      // fall through to the execCommand fallback below
+      recordDiagnostic('clipboard.writeText rejected, falling back', { reason: String(error && error.message || error) });
+    }
+    try {
+      if (typeof document === 'undefined' || !document.createElement) {
+        fail('no document');
+        return;
+      }
+      const textarea = document.createElement('textarea');
+      textarea.value = text;
+      textarea.setAttribute('readonly', '');
+      textarea.style.position = 'fixed';
+      textarea.style.top = '-1000px';
+      textarea.style.opacity = '0';
+      document.body.appendChild(textarea);
+      textarea.select();
+      const ok = typeof document.execCommand === 'function' && document.execCommand('copy');
+      document.body.removeChild(textarea);
+      if (ok) succeed(); else fail('execCommand returned false');
+    } catch (error) {
+      fail(error);
+    }
+  };
 
   // ---------- Recognition shim ----------
 
   const getRecognitionConstructor = () => window.SpeechRecognition || window.webkitSpeechRecognition || null;
 
-  const selectedMode = () => {
-    const cloudRadio = byId(ELEMENT_IDS.modeCloud);
-    return cloudRadio && cloudRadio.checked ? RECOGNITION_MODES.cloud : RECOGNITION_MODES.onDevice;
+  // ╔══════════════════════════════════════════════════════════════════════╗
+  // ║ BEGIN on-device path                                                 ║
+  // ║                                                                      ║
+  // ║ Everything between this banner and `END on-device path` exists to    ║
+  // ║ make Chromium's `processLocally` extension work. The standardized    ║
+  // ║ on-device API requires the page to call `available()` and, if the    ║
+  // ║ pack is `downloadable`, `install()` BEFORE `start()` will accept     ║
+  // ║ `processLocally = true`. See:                                        ║
+  // ║   https://developer.mozilla.org/docs/Web/API/SpeechRecognition/install_static
+  // ║                                                                      ║
+  // ║ If on-device support is ever dropped, delete this whole block and    ║
+  // ║ follow the migration notes near the top of this file.                ║
+  // ╚══════════════════════════════════════════════════════════════════════╝
+
+  const supportsOnDeviceLanguagePackApi = (RecognitionConstructor) =>
+    !!RecognitionConstructor
+    && typeof RecognitionConstructor.available === 'function'
+    && typeof RecognitionConstructor.install === 'function';
+
+  // Returns a promise resolving to one of:
+  //   'available'      — language pack present, safe to start on-device
+  //   'unavailable'    — browser cannot provide on-device recognition for this language
+  //   'install-failed' — download was attempted but did not complete successfully
+  //   'unknown'        — browser does not expose the availability/install API
+  // The caller is expected to treat anything other than 'available' as a
+  // signal to fall back to the cloud path.
+  const ensureOnDeviceLanguagePack = (RecognitionConstructor, locale, onDownloadStart) => {
+    if (!supportsOnDeviceLanguagePackApi(RecognitionConstructor)) {
+      recordDiagnostic('on-device API absent — falling back to cloud', { locale });
+      return Promise.resolve('unknown');
+    }
+    const options = { langs: [locale], processLocally: true };
+    recordDiagnostic('SpeechRecognition.available() called', options);
+    return Promise.resolve()
+      .then(() => RecognitionConstructor.available(options))
+      .then((availability) => {
+        recordDiagnostic('SpeechRecognition.available() resolved', { availability });
+        if (availability === 'available') return 'available';
+        if (availability === 'unavailable') return 'unavailable';
+        // 'downloadable' or 'downloading' — kick off install and await it.
+        if (onDownloadStart) onDownloadStart();
+        recordDiagnostic('SpeechRecognition.install() called', options);
+        return Promise.resolve()
+          .then(() => RecognitionConstructor.install(options))
+          .then(
+            (installed) => {
+              recordDiagnostic('SpeechRecognition.install() resolved', { installed });
+              return installed ? 'available' : 'install-failed';
+            },
+            (installError) => {
+              recordDiagnostic('SpeechRecognition.install() rejected', installError);
+              return 'install-failed';
+            }
+          );
+      }, (availableError) => {
+        recordDiagnostic('SpeechRecognition.available() rejected', availableError);
+        return 'unknown';
+      });
   };
+
+  // ╔══════════════════════════════════════════════════════════════════════╗
+  // ║ END on-device path                                                   ║
+  // ╚══════════════════════════════════════════════════════════════════════╝
 
   const keepAwakeRequested = () => {
     const checkbox = byId(ELEMENT_IDS.keepAwake);
@@ -573,13 +842,15 @@ void function () {
     }
   };
 
-  const configureRecognition = (recognition, mode, locale) => {
+  const configureRecognition = (recognition, processLocally, locale) => {
     recognition.continuous = true;
     recognition.interimResults = true;
     recognition.lang = locale;
     // `processLocally` is the standardized hint for on-device recognition.
-    // Browsers that don't implement it ignore the assignment.
-    try { recognition.processLocally = mode.processLocally; } catch (_unused) { /* read-only on some builds */ }
+    // Browsers that don't implement it ignore the assignment. When the meter
+    // has decided to fall back to cloud, we explicitly set this to `false`
+    // so that any earlier opt-in is unwound.
+    try { recognition.processLocally = processLocally; } catch (_unused) { /* read-only on some builds */ }
     return recognition;
   };
 
@@ -610,7 +881,13 @@ void function () {
     // utterance segment.
     lastFinalTranscript: '',
     recognition: null,
-    mode: DEFAULT_RECOGNITION_MODE,
+    // Which recognition path the active (or most recent) session used. The
+    // meter always tries 'on-device' first and may transparently fall back
+    // to 'cloud' if the pre-flight or `start()` fails. The user does not see
+    // or choose this; it is purely an internal book-keeping aid for the
+    // diagnostics log and for one-shot fallback on a runtime error.
+    activeRecognitionPath: null,
+    cloudFallbackAttempted: false,
     tickHandle: null,
     restartTimer: null,
     wakeLock: null,
@@ -752,8 +1029,10 @@ void function () {
   const startSafely = (recognition) => {
     try {
       recognition.start();
+      recordDiagnostic('recognition.start() invoked');
     } catch (err) {
       const message = (err && err.message) || String(err);
+      recordDiagnostic('recognition.start() threw', { name: err && err.name, message });
       if (!/already started/i.test(message)) {
         showError(`Could not start recognition: ${message}`);
       }
@@ -762,7 +1041,11 @@ void function () {
 
   const beginListening = () => {
     const RecognitionConstructor = getRecognitionConstructor();
-    if (!RecognitionConstructor) { showUnsupported(); return; }
+    if (!RecognitionConstructor) {
+      recordDiagnostic('beginListening aborted — no SpeechRecognition constructor');
+      showUnsupported();
+      return;
+    }
 
     const startedAt = Date.now();
     session.listening = true;
@@ -772,19 +1055,17 @@ void function () {
     session.captionEntries = [];
     session.finalIndex = 0;
     session.lastFinalTranscript = '';
-    session.mode = selectedMode();
+    session.activeRecognitionPath = null;
+    session.cloudFallbackAttempted = false;
     session.keepAwake = keepAwakeRequested();
 
     const locale = navigator.language || 'en-US';
-    session.recognition = configureRecognition(new RecognitionConstructor(), session.mode, locale);
-    session.recognition.onresult = handleResult;
-    session.recognition.onerror = handleError;
-    session.recognition.onend = handleEnd;
+    recordDiagnostic('beginListening', { locale, keepAwake: session.keepAwake });
 
     showError('');
-    setModeChooserEnabled(false);
+    setKeepAwakeEnabled(false);
     setButtonStop();
-    setStatus(`listening · ${session.mode.label.toLowerCase()}`);
+    setStatus('listening');
     renderInitialMeta();
     renderTimeline();
     session.tickHandle = setInterval(handleTick, TICK_INTERVAL_MILLISECONDS);
@@ -793,7 +1074,59 @@ void function () {
 
     persistState();
 
-    startSafely(session.recognition);
+    return attemptStart(RecognitionConstructor, locale);
+  };
+
+  // Wires up a fresh recognition object for the given path ('on-device' or
+  // 'cloud'), installs the event handlers, stores it on the session, and
+  // returns it. Splitting this out lets the cloud-fallback path build a
+  // second recognition object without duplicating any wiring.
+  const buildAndWireRecognition = (RecognitionConstructor, path, locale) => {
+    const processLocally = path === RECOGNITION_PATHS.onDevice;
+    const recognition = configureRecognition(new RecognitionConstructor(), processLocally, locale);
+    recognition.onresult = handleResult;
+    recognition.onerror = handleError;
+    recognition.onend = handleEnd;
+    session.recognition = recognition;
+    session.activeRecognitionPath = path;
+    return recognition;
+  };
+
+  // Main entry into the recognition layer. Always tries on-device first when
+  // the browser exposes the static API; falls back to cloud transparently on
+  // any signal (unavailable / install-failed / unknown). On the cloud path,
+  // or on browsers without the static API, `start()` is invoked directly.
+  const attemptStart = (RecognitionConstructor, locale) => {
+    if (!ON_DEVICE_PREFLIGHT_ENABLED || !supportsOnDeviceLanguagePackApi(RecognitionConstructor)) {
+      const recognition = buildAndWireRecognition(RecognitionConstructor, RECOGNITION_PATHS.cloud, locale);
+      startSafely(recognition);
+      return Promise.resolve();
+    }
+    const recognition = buildAndWireRecognition(RecognitionConstructor, RECOGNITION_PATHS.onDevice, locale);
+    return ensureOnDeviceLanguagePack(RecognitionConstructor, locale, () => {
+      if (session.listening && session.recognition === recognition) {
+        setStatus('downloading on-device language pack…');
+      }
+    }).then((result) => {
+      // The user may have hit Stop, or a new session may have started while
+      // we were waiting on the install. In either case the original
+      // recognition object is no longer the one to act on.
+      if (!session.listening || session.recognition !== recognition) return;
+      if (result === 'available') {
+        setStatus('listening');
+        startSafely(recognition);
+        return;
+      }
+      // Anything else — 'unavailable', 'install-failed', or 'unknown' — means
+      // the on-device path is not viable right now. Silently fall back to
+      // cloud, which is exactly what Samsung Internet and every older
+      // Chromium build effectively do already.
+      recordDiagnostic('on-device pre-flight non-viable — falling back to cloud', { result });
+      session.cloudFallbackAttempted = true;
+      const cloudRecognition = buildAndWireRecognition(RecognitionConstructor, RECOGNITION_PATHS.cloud, locale);
+      setStatus('listening');
+      startSafely(cloudRecognition);
+    });
   };
 
   const finalizeCurrentInterval = (now) => {
@@ -824,7 +1157,7 @@ void function () {
     releaseWakeLock();
     setButtonStart();
     setStatus(statusText);
-    setModeChooserEnabled(true);
+    setKeepAwakeEnabled(true);
     if (wasListening) {
       persistState();
       renderTimeline();
@@ -948,6 +1281,8 @@ void function () {
 
   const handleError = (event) => {
     const code = event && event.error;
+    const message = event && event.message;
+    recordDiagnostic('recognition.onerror', { code: code || '(none)', message: message || '' });
     if (isTransientErrorCode(code)) return;
     if (isPermissionDeniedCode(code)) {
       showError('Microphone permission denied. Allow microphone access and try again.');
@@ -955,11 +1290,32 @@ void function () {
       return;
     }
     if (code === 'network') {
-      showError('Network error reaching the speech service. Try on-device mode if your browser supports it.');
+      showError('Network error reaching the speech service. Check your connection and try again.');
       return;
     }
     if (code === 'language-not-supported') {
-      showError('On-device recognition is not available for your language. Switch to cloud mode and try again.');
+      // The on-device pre-flight should have caught this, but some browsers
+      // expose the static API and still reject `start()` at runtime. Retry
+      // exactly once on the cloud path before giving up.
+      if (session.listening && !session.cloudFallbackAttempted) {
+        const RecognitionConstructor = getRecognitionConstructor();
+        const locale = navigator.language || 'en-US';
+        recordDiagnostic('language-not-supported at runtime — falling back to cloud', { locale });
+        session.cloudFallbackAttempted = true;
+        // Detach handlers from the failed recognition object before swapping.
+        if (session.recognition) {
+          session.recognition.onresult = null;
+          session.recognition.onerror = null;
+          session.recognition.onend = null;
+          try { session.recognition.stop(); } catch (_unused) { /* noop */ }
+        }
+        if (RecognitionConstructor) {
+          const cloudRecognition = buildAndWireRecognition(RecognitionConstructor, RECOGNITION_PATHS.cloud, locale);
+          startSafely(cloudRecognition);
+          return;
+        }
+      }
+      showError('Speech recognition is not available for your language in this browser.');
       endListening('language unavailable');
       return;
     }
@@ -1116,15 +1472,13 @@ void function () {
   const setButtonStart = () => setButtonAppearance('Start counting', PALETTE.startBackground, PALETTE.startForeground);
   const setButtonStop = () => setButtonAppearance('Stop counting', PALETTE.stopBackground, PALETTE.stopForeground);
 
-  const setModeChooserEnabled = (enabled) => {
-    [ELEMENT_IDS.modeOnDevice, ELEMENT_IDS.modeCloud, ELEMENT_IDS.keepAwake].forEach((id) => {
-      const input = byId(id);
-      if (input) {
-        input.disabled = !enabled;
-        const label = input.parentElement;
-        if (label) label.style.opacity = enabled ? '1' : '0.55';
-      }
-    });
+  const setKeepAwakeEnabled = (enabled) => {
+    const input = byId(ELEMENT_IDS.keepAwake);
+    if (input) {
+      input.disabled = !enabled;
+      const label = input.parentElement;
+      if (label) label.style.opacity = enabled ? '1' : '0.55';
+    }
   };
 
   const showUnsupported = () => {
@@ -1135,7 +1489,7 @@ void function () {
       button.style.opacity = '0.5';
       button.style.cursor = 'not-allowed';
     }
-    setModeChooserEnabled(false);
+    setKeepAwakeEnabled(false);
     setStatus('unsupported');
   };
 
@@ -1148,6 +1502,9 @@ void function () {
     if (!host) return () => {};
     host.innerHTML = '';
     host.appendChild(buildPanel());
+
+    captureEnvironmentSnapshot();
+    recordDiagnostic('init', { version: WORD_METER_VERSION });
 
     if (!getRecognitionConstructor()) {
       showUnsupported();
@@ -1169,6 +1526,8 @@ void function () {
     if (button) button.addEventListener('click', toggleListening);
     const resetButton = byId(ELEMENT_IDS.resetButton);
     if (resetButton) resetButton.addEventListener('click', () => resetAllStats());
+    const copyButton = byId(ELEMENT_IDS.diagnosticsCopy);
+    if (copyButton) copyButton.addEventListener('click', () => copyDiagnostics());
     if (typeof document !== 'undefined' && document.addEventListener) {
       document.addEventListener('visibilitychange', handleVisibilityChange);
       document.addEventListener('visibilitychange', persistOnHidden);
@@ -1212,9 +1571,13 @@ void function () {
         firstStartedAt: session.firstStartedAt,
         intervals: session.intervals.map((interval) => ({ ...interval })),
         currentInterval: session.currentInterval ? { ...session.currentInterval } : null,
-        mode: session.mode.id,
+        activeRecognitionPath: session.activeRecognitionPath,
+        cloudFallbackAttempted: session.cloudFallbackAttempted,
         keepAwake: session.keepAwake,
-        wakeLockHeld: session.wakeLock !== null
+        wakeLockHeld: session.wakeLock !== null,
+        version: WORD_METER_VERSION,
+        diagnosticsEntries: diagnostics.entries.map((entry) => ({ ...entry })),
+        diagnosticsSnapshot: diagnostics.snapshot ? { ...diagnostics.snapshot } : null
       }),
       simulateResult: (text, isFinal) => {
         // SpeechRecognitionResult is array-like with numeric indices plus a boolean
@@ -1230,14 +1593,13 @@ void function () {
         });
         handleResult({ resultIndex: startIndex, results: padding.concat([result]) });
       },
-      selectMode: (modeId) => {
-        const radio = byId(modeId === RECOGNITION_MODES.cloud.id ? ELEMENT_IDS.modeCloud : ELEMENT_IDS.modeOnDevice);
-        if (radio) radio.checked = true;
-      },
       start: () => beginListening(),
       stop: () => endListening('idle'),
       reset: () => resetAllStats({ skipConfirmation: true }),
       persistNow: () => persistState(),
+      copyDiagnostics: () => copyDiagnostics(),
+      getDiagnosticsText: () => formatDiagnostics(),
+      simulateError: (errorCode, message) => handleError({ error: errorCode, message: message || '' }),
       reload: () => {
         // Mimics a fresh page load by clearing in-memory session and loading
         // from storage. Used by tests to verify round-trip persistence.

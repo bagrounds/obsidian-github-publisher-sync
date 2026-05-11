@@ -12,9 +12,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-19T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-05-11T19:42:52Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A minimalist, high-contrast illustration featuring a stylized, translucent glass shield centered in the frame. Inside the shield, a glowing, golden light source emanates outward, symbolizing the clarity of evidence. Surrounding the shield are subtle, abstract geometric fragments of dark, jagged shadow representing pseudoscience and misinformation, which are being pushed away by the shield’s luminescence. The background is a deep, muted navy blue, creating a professional and intellectual atmosphere. The composition is balanced and clean, emphasizing the strength and protective nature of the scientific attitude without the use of any text or labels.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🥼🛡️ The Scientific Attitude: Defending Science from Denial, Fraud, and Pseudoscience  
+![books-the-scientific-attitude](../books-the-scientific-attitude.jpg)  
 [🛒 The Scientific Attitude: Defending Science from Denial, Fraud, and Pseudoscience. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3Hif8ax)  
   
 ## 📖 Book Report: The Scientific Attitude by Lee McIntyre  

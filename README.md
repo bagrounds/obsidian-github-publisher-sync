@@ -64,7 +64,7 @@
 
 ### 1. 🚀 Deploy (`deploy.yml`)
 
-🔄 Triggers on every push. 🏗️ Builds the Quartz site, downloads the pre-built `inject-giscus` Haskell binary, injects static Giscus comments for SEO, and deploys to GitHub Pages. 🔍 After deployment to `main`, runs a broken link audit sampling 30 pages from the live site.
+🔄 Triggers on push to `main` or manually via `workflow_dispatch` from any branch. 🏗️ Builds the Quartz site, downloads the pre-built `inject-giscus` Haskell binary, injects static Giscus comments for SEO, and deploys to GitHub Pages. 🔍 After deployment, runs a broken link audit sampling 30 pages from the live site.
 
 ### 2. ⏰ Scheduled Tasks (`scheduled.yml`)
 

@@ -18,7 +18,7 @@ force_analyze_links: false
   
 <div id="word-meter"></div>  
   
-<script src="/static/word-meter.js"></script>  
+<script src="/static/word-meter.js?t=0"></script>  
   
 ## About  
   

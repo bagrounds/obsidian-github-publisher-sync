@@ -5,11 +5,12 @@ aliases:
 title: 🐔 Chickie Loo
 URL: https://bagrounds.org/chickie-loo
 backlinks: false
-updated: 2026-05-10T08:15:42-07:00
+updated: 2026-05-11T08:38:57-07:00
 ---
 [Home](../index.md)  
-# 🐔 Chickie Loo (61)  
+# 🐔 Chickie Loo (62)  
 - [🐔 Chickie Loo — AGENTS.md](./AGENTS.md)  
+- [2026-05-11 | 🐔 A Weekend of Mirrors, Magic, and Milk Bags 🐔](./2026-05-11-a-weekend-of-mirrors-magic-and-milk-bags.md)  
 - [2026-05-10 | 🐔 A Sunday of Celebration and Staircases 🐔](./2026-05-10-a-sunday-of-celebration-and-staircases.md)  
 - [2026-05-09 | 🐔 A Milestone at the Stove and a Rooster in the Rafters 🐔](./2026-05-09-a-milestone-at-the-stove-and-a-rooster-in-the-rafters.md)  
 - [2026-05-08 | 🐔 🐣 The Quiet Echo of a House Well-Loved 🐔](./2026-05-08-the-quiet-echo-of-a-house-well-loved.md)  

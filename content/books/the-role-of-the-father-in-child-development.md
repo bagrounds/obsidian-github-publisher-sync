@@ -9,9 +9,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-18T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-05-11T11:11:20Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A warm, cinematic shot of a father and his young child sitting together on a grassy hill during a golden-hour sunset. The father is gently pointing toward the horizon, engaging the child in conversation, while the child looks on with curiosity. The scene is framed by soft, natural light filtering through nearby trees, casting a gentle glow on their silhouettes. The background is a slightly blurred, peaceful park landscape, emphasizing the intimate connection and bond between them. The color palette features warm ambers, soft greens, and deep shadows, evoking a sense of growth, guidance, and nurturing stability.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 👨‍👧 The Role of the Father in Child Development  
+![books-the-role-of-the-father-in-child-development](../books-the-role-of-the-father-in-child-development.jpg)  
 [🛒 The Role of the Father in Child Development. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4e0BzwY)  
   
 ## 👨‍👧‍👦 Book Report: The Role of the Father in Child Development  

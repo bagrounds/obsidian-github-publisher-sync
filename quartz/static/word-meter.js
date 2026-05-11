@@ -679,7 +679,7 @@ void function () {
     ].join('\n');
   };
 
-  const buildDiagnosticsText = () => {
+  const formatDiagnostics = () => {
     const header = diagnostics.snapshot ? formatSnapshot(diagnostics.snapshot) + '\n\n' : '';
     const log = diagnostics.entries.length === 0
       ? '(no events yet — press Start counting to populate the log)'
@@ -693,7 +693,7 @@ void function () {
   const renderDiagnosticsPanel = () => {
     const target = byId(ELEMENT_IDS.diagnosticsContent);
     if (!target) return;
-    target.textContent = buildDiagnosticsText();
+    target.textContent = formatDiagnostics();
   };
 
   // Copy the snapshot + event log to the clipboard so a user filing an issue
@@ -701,18 +701,18 @@ void function () {
   // <pre> contents on mobile (which is fiddly inside <details>). Falls back
   // to a hidden <textarea> + execCommand('copy') on browsers that don't
   // expose the async Clipboard API or that refuse it in non-secure contexts.
-  const copyDiagnosticsToClipboard = async () => {
-    const text = buildDiagnosticsText();
-    const setCopyStatus = (message) => setText(ELEMENT_IDS.diagnosticsCopyStatus, message);
+  const copyDiagnostics = async () => {
+    const text = formatDiagnostics();
+    const showCopyStatus = (message) => setText(ELEMENT_IDS.diagnosticsCopyStatus, message);
     const succeed = () => {
       recordDiagnostic('diagnostics copied to clipboard');
-      setCopyStatus('copied!');
-      setTimeout(() => setCopyStatus(''), 2000);
+      showCopyStatus('copied!');
+      setTimeout(() => showCopyStatus(''), 2000);
     };
     const fail = (reason) => {
       recordDiagnostic('diagnostics copy failed', { reason: String(reason) });
-      setCopyStatus('copy failed — long-press the log to select');
-      setTimeout(() => setCopyStatus(''), 4000);
+      showCopyStatus('copy failed — long-press the log to select');
+      setTimeout(() => showCopyStatus(''), 4000);
     };
     try {
       if (typeof navigator !== 'undefined'
@@ -1502,7 +1502,7 @@ void function () {
     const resetButton = byId(ELEMENT_IDS.resetButton);
     if (resetButton) resetButton.addEventListener('click', () => resetAllStats());
     const copyButton = byId(ELEMENT_IDS.diagnosticsCopy);
-    if (copyButton) copyButton.addEventListener('click', () => copyDiagnosticsToClipboard());
+    if (copyButton) copyButton.addEventListener('click', () => copyDiagnostics());
     if (typeof document !== 'undefined' && document.addEventListener) {
       document.addEventListener('visibilitychange', handleVisibilityChange);
       document.addEventListener('visibilitychange', persistOnHidden);
@@ -1575,8 +1575,8 @@ void function () {
       stop: () => endListening('idle'),
       reset: () => resetAllStats({ skipConfirmation: true }),
       persistNow: () => persistState(),
-      copyDiagnostics: () => copyDiagnosticsToClipboard(),
-      getDiagnosticsText: () => buildDiagnosticsText(),
+      copyDiagnostics: () => copyDiagnostics(),
+      getDiagnosticsText: () => formatDiagnostics(),
       simulateError: (errorCode, message) => handleError({ error: errorCode, message: message || '' }),
       reload: () => {
         // Mimics a fresh page load by clearing in-memory session and loading

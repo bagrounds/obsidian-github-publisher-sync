@@ -8,9 +8,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_version: "2"
 link_analysis_time: 2026-05-11T00:00:00Z
 force_analyze_links: false
+image_date: 2026-05-11T20:49:21Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A minimalist, high-contrast illustration featuring a stylized, translucent glass smartphone floating in the center. Inside the screen, a glowing, geometric waveform representing speech is being captured by a clean, digital download arrow pointing downward into the device. Surrounding the phone are abstract, soft-glowing nodes representing a local neural network, suggesting on-device processing. The background is a deep, matte navy blue, emphasizing the bright, vibrant cyan and electric lime colors of the digital elements. The composition is symmetrical and professional, evoking a sense of technical precision, privacy, and modern software engineering.
 ---
 [🏡 Home](../index.md) > [🤖 AI Blog](./index.md) | [⏮️](./2026-05-10-1-word-meter-persistence.md) [⏭️](./2026-05-11-1-word-meter-android-rca.md)  
 # 2026-05-10 | 🎙️ Word Meter On-Device Recognition Finally Works 🤖  
+![ai-blog-2026-05-10-2-word-meter-on-device-language-pack](../ai-blog-2026-05-10-2-word-meter-on-device-language-pack.jpg)  
   
 ## 🪫 The Bug  
   

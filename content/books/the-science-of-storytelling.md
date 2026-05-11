@@ -11,9 +11,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-21T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-05-11T19:15:08Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A conceptual illustration featuring a glowing, translucent human silhouette set against a dark, minimalist background. Within the head of the silhouette, a complex constellation of neural pathways connects to a vibrant, multi-layered theater stage. Golden threads weave through the brain-like network, trailing down to manipulate a series of intricate, marionette-style gears that represent story structure. Floating symbols—a broken heart, a set of scales, and a small, illuminated key—hover near the chest area, symbolizing internal conflict and the search for control. The lighting is dramatic and cinematic, using deep blues and warm amber highlights to contrast the scientific nature of the brain with the emotional artistry of narrative.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🔬🗣️🎭 The Science of Storytelling: Why Stories Make Us Human and How to Tell Them Better  
+![books-the-science-of-storytelling](../books-the-science-of-storytelling.jpg)  
 by Will Storr  
 [🛒 The Science of Storytelling: Why Stories Make Us Human and How to Tell Them Better. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/43JcK3N)  
   

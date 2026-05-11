@@ -84,6 +84,8 @@ void function () {
     diagnosticsToggle: 'wm-diagnostics-toggle',
     diagnosticsPanel: 'wm-diagnostics',
     diagnosticsContent: 'wm-diagnostics-content',
+    diagnosticsCopy: 'wm-diagnostics-copy',
+    diagnosticsCopyStatus: 'wm-diagnostics-copy-status',
     version: 'wm-version'
   });
 
@@ -523,6 +525,30 @@ void function () {
         text: '🔧 Diagnostics',
         styles: { cursor: 'pointer', color: PALETTE.mutedText, padding: '4px 0', userSelect: 'none' }
       }),
+      element('div', {
+        styles: { display: 'flex', alignItems: 'center', gap: '8px', margin: '8px 0 0 0' },
+        children: [
+          element('button', {
+            id: ELEMENT_IDS.diagnosticsCopy,
+            text: '📋 Copy diagnostics',
+            attributes: { type: 'button', title: 'Copy the snapshot and event log to the clipboard' },
+            styles: {
+              font: '600 12px/1 inherit',
+              padding: '8px 12px',
+              borderRadius: '999px',
+              border: '1px solid rgba(255,255,255,0.18)',
+              background: 'transparent',
+              color: PALETTE.secondaryText,
+              cursor: 'pointer'
+            }
+          }),
+          element('span', {
+            id: ELEMENT_IDS.diagnosticsCopyStatus,
+            text: '',
+            styles: { color: PALETTE.mutedText, fontSize: '11.5px' }
+          })
+        ]
+      }),
       element('pre', {
         id: ELEMENT_IDS.diagnosticsContent,
         text: 'collecting…',
@@ -653,9 +679,7 @@ void function () {
     ].join('\n');
   };
 
-  const renderDiagnosticsPanel = () => {
-    const target = byId(ELEMENT_IDS.diagnosticsContent);
-    if (!target) return;
+  const formatDiagnostics = () => {
     const header = diagnostics.snapshot ? formatSnapshot(diagnostics.snapshot) + '\n\n' : '';
     const log = diagnostics.entries.length === 0
       ? '(no events yet — press Start counting to populate the log)'
@@ -663,7 +687,64 @@ void function () {
         const detail = entry.detail ? ' — ' + entry.detail : '';
         return `${entry.timestamp}  ${entry.label}${detail}`;
       }).join('\n');
-    target.textContent = header + log;
+    return header + log;
+  };
+
+  const renderDiagnosticsPanel = () => {
+    const target = byId(ELEMENT_IDS.diagnosticsContent);
+    if (!target) return;
+    target.textContent = formatDiagnostics();
+  };
+
+  // Copy the snapshot + event log to the clipboard so a user filing an issue
+  // can paste the full diagnostics without having to manually select the
+  // <pre> contents on mobile (which is fiddly inside <details>). Falls back
+  // to a hidden <textarea> + execCommand('copy') on browsers that don't
+  // expose the async Clipboard API or that refuse it in non-secure contexts.
+  const copyDiagnostics = async () => {
+    const text = formatDiagnostics();
+    const showCopyStatus = (message) => setText(ELEMENT_IDS.diagnosticsCopyStatus, message);
+    const succeed = () => {
+      recordDiagnostic('diagnostics copied to clipboard');
+      showCopyStatus('copied!');
+      setTimeout(() => showCopyStatus(''), 2000);
+    };
+    const fail = (reason) => {
+      recordDiagnostic('diagnostics copy failed', { reason: String(reason) });
+      showCopyStatus('copy failed — long-press the log to select');
+      setTimeout(() => showCopyStatus(''), 4000);
+    };
+    try {
+      if (typeof navigator !== 'undefined'
+        && navigator.clipboard
+        && typeof navigator.clipboard.writeText === 'function') {
+        await navigator.clipboard.writeText(text);
+        succeed();
+        return;
+      }
+    } catch (error) {
+      // fall through to the execCommand fallback below
+      recordDiagnostic('clipboard.writeText rejected, falling back', { reason: String(error && error.message || error) });
+    }
+    try {
+      if (typeof document === 'undefined' || !document.createElement) {
+        fail('no document');
+        return;
+      }
+      const textarea = document.createElement('textarea');
+      textarea.value = text;
+      textarea.setAttribute('readonly', '');
+      textarea.style.position = 'fixed';
+      textarea.style.top = '-1000px';
+      textarea.style.opacity = '0';
+      document.body.appendChild(textarea);
+      textarea.select();
+      const ok = typeof document.execCommand === 'function' && document.execCommand('copy');
+      document.body.removeChild(textarea);
+      if (ok) succeed(); else fail('execCommand returned false');
+    } catch (error) {
+      fail(error);
+    }
   };
 
   // ---------- Recognition shim ----------
@@ -1420,6 +1501,8 @@ void function () {
     if (button) button.addEventListener('click', toggleListening);
     const resetButton = byId(ELEMENT_IDS.resetButton);
     if (resetButton) resetButton.addEventListener('click', () => resetAllStats());
+    const copyButton = byId(ELEMENT_IDS.diagnosticsCopy);
+    if (copyButton) copyButton.addEventListener('click', () => copyDiagnostics());
     if (typeof document !== 'undefined' && document.addEventListener) {
       document.addEventListener('visibilitychange', handleVisibilityChange);
       document.addEventListener('visibilitychange', persistOnHidden);
@@ -1492,6 +1575,8 @@ void function () {
       stop: () => endListening('idle'),
       reset: () => resetAllStats({ skipConfirmation: true }),
       persistNow: () => persistState(),
+      copyDiagnostics: () => copyDiagnostics(),
+      getDiagnosticsText: () => formatDiagnostics(),
       simulateError: (errorCode, message) => handleError({ error: errorCode, message: message || '' }),
       reload: () => {
         // Mimics a fresh page load by clearing in-memory session and loading

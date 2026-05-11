@@ -55,7 +55,7 @@ The meter renders a collapsible **🔧 Diagnostics** panel below the privacy foo
 1. **Environment snapshot** — script build version, `navigator.userAgent`, `navigator.language`, whether `SpeechRecognition` and `webkitSpeechRecognition` are exposed, whether the static `available` / `install` methods are exposed, and whether the Screen Wake Lock API is available.
 2. **Event log** — a rolling, capped-at-60 list of timestamped diagnostic events. Every step of the on-device pre-flight (`available()` call, its result, `install()` call, its result), every `recognition.start()` invocation, and every `onerror` event (with `error` code and `message`) is logged here.
 
-Every entry is also echoed to the browser console prefixed with `[word-meter <version>]` so curious users can grep the devtools log. This makes "it didn't work on my browser" reports diagnosable: the user can copy the diagnostics text directly into a bug report.
+Every entry is also echoed to the browser console prefixed with `[word-meter <version>]` so curious users can grep the devtools log. A **📋 Copy diagnostics** button at the top of the panel writes the snapshot and event log to the clipboard via `navigator.clipboard.writeText`, falling back to a hidden `<textarea>` + `document.execCommand('copy')` when the async Clipboard API is unavailable. This makes "it didn't work on my browser" reports diagnosable: one tap and the user can paste the full diagnostics into a bug report.
 
 ## Cumulative-refinement deduplication
 

@@ -35,7 +35,7 @@ Word Meter writes its running stats to your browser's `localStorage` continuousl
 
 ### On-device vs. cloud
 
-The page exposes a small **Recognition** chooser. **On-device** is the default and asks the browser to keep audio handling local using the standardized `processLocally` hint. Recent Chromium and Safari can fulfill this request when the language pack is installed; otherwise the browser may fall back, or recognition may fail with a clear message you can act on. **Cloud** mode lets the browser stream audio to its vendor's speech service (Google, in Chromium's case) which usually offers wider language coverage at the cost of privacy.
+The page exposes a small **Recognition** chooser. **On-device** is the default and asks the browser to keep audio handling local using the standardized `processLocally` hint. Recent Chromium and Safari can fulfill this request when the language pack is installed; on first use the page asks the browser to download that pack and shows a brief *downloading on-device language pack…* status while it does so. **Cloud** mode lets the browser stream audio to its vendor's speech service (Google, in Chromium's case) which usually offers wider language coverage at the cost of privacy. If the on-device pack can't be downloaded or your language isn't supported on-device, the meter explains the situation and asks you to switch to Cloud mode.
 
 ### Long-running sessions and the screen-off question
 

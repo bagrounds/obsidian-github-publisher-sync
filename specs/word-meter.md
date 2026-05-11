@@ -30,6 +30,18 @@ A small **Recognition** chooser exposes two modes:
 
 The chooser is disabled while listening so the choice can't change mid-session.
 
+### On-device language pack lifecycle
+
+On Chromium-family browsers the standardized `processLocally` hint requires the page to explicitly *install* a language pack before `start()` will work. Skipping this step is precisely what made the on-device path fail with `language-not-supported` on Android Chrome before the fix. The meter now runs the following pre-flight before every on-device session:
+
+1. Call `SpeechRecognition.available({ langs: [navigator.language], processLocally: true })`.
+2. If the result is `available`, start immediately.
+3. If the result is `downloadable` or `downloading`, surface a `downloading on-device language pack…` status and call `SpeechRecognition.install({ langs, processLocally: true })`. Start after the install promise resolves to `true`.
+4. If the result is `unavailable`, or the install resolves to `false` or rejects, show a clear error and end the session — no `start()` is attempted.
+5. If the browser does not expose the `available` / `install` static methods (older Chromium and Safari), skip the pre-flight and fall back to calling `start()` directly. The existing `onerror` handler still surfaces `language-not-supported` and `network` errors with actionable text.
+
+Cloud mode skips the pre-flight entirely. If the user hits **Stop** while a download is in flight, the pending start is cancelled by checking that `session.listening` is still true and `session.recognition` is still the same object before invoking `start()`.
+
 ## Cumulative-refinement deduplication
 
 Android Chrome's continuous mode + `interimResults` emits each refinement of one utterance as a *separate* finalized `SpeechRecognitionResult` carrying the *full cumulative transcript*. Naive index-based deduplication over-counts dramatically (issue #6897). The meter instead routes every finalized transcript into one of four cases relative to the most recent finalized transcript:

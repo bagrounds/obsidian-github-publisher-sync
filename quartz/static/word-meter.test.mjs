@@ -356,6 +356,207 @@ describe("Word Meter — keep-awake / Screen Wake Lock", () => {
   })
 })
 
+// Harness for the on-device language-pack lifecycle. Mirrors loadWordMeterWithLifecycle
+// but exposes the static `available` and `install` methods that Chromium uses
+// to download on-device speech recognition models. Without these calls, the
+// real browser rejects `start()` with `language-not-supported` on the very
+// first attempt — the bug this suite locks down.
+const loadWordMeterWithLanguagePack = ({ availability, installResult, exposeStaticApi = true } = {}) => {
+  const elementsById = {}
+  const makeElement = () => ({
+    id: "",
+    style: {},
+    textContent: "",
+    innerHTML: "",
+    checked: false,
+    disabled: false,
+    addEventListener: () => {},
+    removeEventListener: () => {},
+    setAttribute() {},
+    appendChild() {},
+    get parentElement() { return null },
+  })
+  for (const id of [
+    "wm-keep-awake", "wm-mode-cloud", "wm-mode-on-device", "wm-toggle", "wm-status",
+    "wm-error", "wm-keep-awake-status", "wm-count", "wm-started", "wm-rate-short",
+    "wm-rate-long", "wm-rate-overall", "wm-captions",
+  ]) {
+    elementsById[id] = { ...makeElement(), id }
+  }
+  // On-device mode is the default per the production code.
+  elementsById["wm-mode-on-device"].checked = true
+  elementsById["wm-keep-awake"].checked = false
+
+  const document = {
+    getElementById: (id) => elementsById[id] || null,
+    createElement: makeElement,
+    addEventListener: () => {},
+    removeEventListener: () => {},
+    visibilityState: "visible",
+  }
+
+  const events = { startCalled: 0, availableCalls: [], installCalls: [] }
+
+  class FakeRecognition {
+    constructor() {
+      this.continuous = false
+      this.interimResults = false
+      this.lang = ""
+      this.processLocally = undefined
+      this.onresult = null
+      this.onerror = null
+      this.onend = null
+    }
+    start() { events.startCalled += 1 }
+    stop() {}
+  }
+  if (exposeStaticApi) {
+    FakeRecognition.available = (options) => {
+      events.availableCalls.push(options)
+      const value = availability ?? "available"
+      return typeof value === "function" ? Promise.resolve(value()) : Promise.resolve(value)
+    }
+    FakeRecognition.install = (options) => {
+      events.installCalls.push(options)
+      const value = installResult ?? true
+      return typeof value === "function" ? Promise.resolve(value()) : Promise.resolve(value)
+    }
+  }
+
+  const sandbox = {
+    document,
+    navigator: { language: "en-US" },
+    SpeechRecognition: FakeRecognition,
+    webkitSpeechRecognition: FakeRecognition,
+    setInterval: () => 0,
+    clearInterval: () => {},
+    setTimeout: () => 0,
+    clearTimeout: () => {},
+    Promise,
+    Date, Math, Object, Array, String, Number, Boolean, JSON, isFinite,
+    console,
+  }
+  sandbox.window = sandbox
+  sandbox.window.__WM_TEST_HOOK__ = true
+  vm.createContext(sandbox)
+  vm.runInContext(wordMeterSource, sandbox)
+  return {
+    wm: sandbox.window.__wordMeter,
+    events,
+    errorBannerText: () => elementsById["wm-error"].textContent,
+    statusText: () => elementsById["wm-status"].textContent,
+    selectCloud: () => {
+      elementsById["wm-mode-cloud"].checked = true
+      elementsById["wm-mode-on-device"].checked = false
+    },
+  }
+}
+
+describe("Word Meter — on-device language pack", () => {
+  test("starts immediately when the language pack is already available", async () => {
+    const harness = loadWordMeterWithLanguagePack({ availability: "available" })
+    await harness.wm.start()
+    assert.strictEqual(harness.events.availableCalls.length, 1)
+    assert.deepStrictEqual(JSON.parse(JSON.stringify(harness.events.availableCalls[0])), {
+      langs: ["en-US"], processLocally: true,
+    })
+    assert.strictEqual(harness.events.installCalls.length, 0, "no install needed when already available")
+    assert.strictEqual(harness.events.startCalled, 1)
+    assert.strictEqual(harness.wm.getState().listening, true)
+    assert.strictEqual(harness.errorBannerText(), "")
+  })
+
+  test("downloads the language pack and then starts when it is downloadable", async () => {
+    // Reproduces the bug reported in the issue: on Android Chrome the on-device
+    // path failed because the page never asked the browser to download the
+    // language pack. With the fix, install() is called and start() proceeds.
+    const harness = loadWordMeterWithLanguagePack({
+      availability: "downloadable",
+      installResult: true,
+    })
+    await harness.wm.start()
+    assert.strictEqual(harness.events.installCalls.length, 1)
+    assert.deepStrictEqual(JSON.parse(JSON.stringify(harness.events.installCalls[0])), {
+      langs: ["en-US"], processLocally: true,
+    })
+    assert.strictEqual(harness.events.startCalled, 1, "start() runs after install succeeds")
+    assert.strictEqual(harness.wm.getState().listening, true)
+    assert.strictEqual(harness.errorBannerText(), "")
+  })
+
+  test("downloading state also triggers install and ultimately starts", async () => {
+    const harness = loadWordMeterWithLanguagePack({
+      availability: "downloading",
+      installResult: true,
+    })
+    await harness.wm.start()
+    assert.strictEqual(harness.events.installCalls.length, 1)
+    assert.strictEqual(harness.events.startCalled, 1)
+  })
+
+  test("does not call start when the language pack install fails", async () => {
+    const harness = loadWordMeterWithLanguagePack({
+      availability: "downloadable",
+      installResult: false,
+    })
+    await harness.wm.start()
+    assert.strictEqual(harness.events.installCalls.length, 1)
+    assert.strictEqual(harness.events.startCalled, 0)
+    assert.match(harness.errorBannerText(), /download/i)
+    assert.strictEqual(harness.wm.getState().listening, false)
+  })
+
+  test("does not call start (and does not attempt install) when on-device is unavailable", async () => {
+    const harness = loadWordMeterWithLanguagePack({ availability: "unavailable" })
+    await harness.wm.start()
+    assert.strictEqual(harness.events.installCalls.length, 0)
+    assert.strictEqual(harness.events.startCalled, 0)
+    assert.match(harness.errorBannerText(), /not available/i)
+    assert.strictEqual(harness.wm.getState().listening, false)
+  })
+
+  test("older browsers without the static API still start (fallback behavior)", async () => {
+    const harness = loadWordMeterWithLanguagePack({ exposeStaticApi: false })
+    await harness.wm.start()
+    assert.strictEqual(harness.events.availableCalls.length, 0)
+    assert.strictEqual(harness.events.installCalls.length, 0)
+    assert.strictEqual(harness.events.startCalled, 1, "must not regress for browsers predating the install API")
+    assert.strictEqual(harness.wm.getState().listening, true)
+  })
+
+  test("cloud mode skips the availability check entirely", async () => {
+    const harness = loadWordMeterWithLanguagePack({ availability: "unavailable" })
+    harness.selectCloud()
+    await harness.wm.start()
+    assert.strictEqual(harness.events.availableCalls.length, 0, "cloud mode must not poke the on-device API")
+    assert.strictEqual(harness.events.installCalls.length, 0)
+    assert.strictEqual(harness.events.startCalled, 1)
+    assert.strictEqual(harness.wm.getState().listening, true)
+  })
+
+  test("stopping while the install is in flight prevents the eventual start", async () => {
+    let resolveInstall
+    const installPending = new Promise((resolve) => { resolveInstall = resolve })
+    const harness = loadWordMeterWithLanguagePack({
+      availability: "downloadable",
+      installResult: () => installPending,
+    })
+    // Kick off start (do not await — install is intentionally pending).
+    const startPromise = harness.wm.start()
+    await flushMicrotasks()
+    assert.strictEqual(harness.events.installCalls.length, 1, "install was kicked off")
+    assert.strictEqual(harness.events.startCalled, 0, "start() must not run before install resolves")
+    // User changes their mind and hits stop while the download is in flight.
+    harness.wm.stop()
+    assert.strictEqual(harness.wm.getState().listening, false)
+    // Install completes after the stop. start() must NOT be called now.
+    resolveInstall(true)
+    await startPromise
+    assert.strictEqual(harness.events.startCalled, 0, "stop must cancel the pending start")
+    assert.strictEqual(harness.wm.getState().listening, false)
+  })
+})
+
 describe("Word Meter — persistence across page loads", () => {
   test("totals and intervals survive a simulated reload via shared localStorage", () => {
     // Two separate sandboxes share the same backing store so that a reload

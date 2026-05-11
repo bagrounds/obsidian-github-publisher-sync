@@ -513,6 +513,43 @@ void function () {
 
   const getRecognitionConstructor = () => window.SpeechRecognition || window.webkitSpeechRecognition || null;
 
+  // Chromium's on-device speech recognition extension (the standardized
+  // `processLocally` hint) requires the page to explicitly download the
+  // language pack before `start()` will work. Without these calls, the very
+  // first `start()` rejects with `language-not-supported` even on devices
+  // and browser builds that fully support on-device recognition. See:
+  // https://developer.mozilla.org/docs/Web/API/SpeechRecognition/install_static
+  const supportsOnDeviceLanguagePackApi = (RecognitionConstructor) =>
+    !!RecognitionConstructor
+    && typeof RecognitionConstructor.available === 'function'
+    && typeof RecognitionConstructor.install === 'function';
+
+  // Returns a promise resolving to one of:
+  //   'available'      — language pack present, safe to start
+  //   'unavailable'    — browser cannot provide on-device recognition for this language
+  //   'install-failed' — download was attempted but did not complete successfully
+  //   'unknown'        — browser does not expose the availability/install API
+  const ensureOnDeviceLanguagePack = (RecognitionConstructor, locale, onDownloadStart) => {
+    if (!supportsOnDeviceLanguagePackApi(RecognitionConstructor)) {
+      return Promise.resolve('unknown');
+    }
+    const options = { langs: [locale], processLocally: true };
+    return Promise.resolve()
+      .then(() => RecognitionConstructor.available(options))
+      .then((availability) => {
+        if (availability === 'available') return 'available';
+        if (availability === 'unavailable') return 'unavailable';
+        // 'downloadable' or 'downloading' — kick off install and await it.
+        if (onDownloadStart) onDownloadStart();
+        return Promise.resolve()
+          .then(() => RecognitionConstructor.install(options))
+          .then(
+            (installed) => (installed ? 'available' : 'install-failed'),
+            () => 'install-failed'
+          );
+      }, () => 'unknown');
+  };
+
   const selectedMode = () => {
     const cloudRadio = byId(ELEMENT_IDS.modeCloud);
     return cloudRadio && cloudRadio.checked ? RECOGNITION_MODES.cloud : RECOGNITION_MODES.onDevice;
@@ -793,7 +830,39 @@ void function () {
 
     persistState();
 
-    startSafely(session.recognition);
+    return startWithLanguagePack(RecognitionConstructor, session.recognition, session.mode, locale);
+  };
+
+  const startWithLanguagePack = (RecognitionConstructor, recognition, mode, locale) => {
+    // Cloud mode and older browsers without the availability/install API skip
+    // the pre-flight and rely on the existing onerror handler for any failure.
+    if (!mode.processLocally || !supportsOnDeviceLanguagePackApi(RecognitionConstructor)) {
+      startSafely(recognition);
+      return Promise.resolve();
+    }
+    const baseStatus = `listening · ${mode.label.toLowerCase()}`;
+    return ensureOnDeviceLanguagePack(RecognitionConstructor, locale, () => {
+      if (session.listening && session.recognition === recognition) {
+        setStatus('downloading on-device language pack…');
+      }
+    }).then((result) => {
+      // The user may have hit Stop, or a new session may have started while we
+      // were waiting on the install. In either case the original recognition
+      // object is no longer the one to start.
+      if (!session.listening || session.recognition !== recognition) return;
+      if (result === 'unavailable') {
+        showError('On-device recognition is not available for your language. Switch to cloud mode and try again.');
+        endListening('language unavailable');
+        return;
+      }
+      if (result === 'install-failed') {
+        showError('Could not download the on-device language pack. Check your connection or switch to cloud mode.');
+        endListening('install failed');
+        return;
+      }
+      setStatus(baseStatus);
+      startSafely(recognition);
+    });
   };
 
   const finalizeCurrentInterval = (now) => {

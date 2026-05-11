@@ -72,6 +72,13 @@ void function () {
 
   const ON_DEVICE_PREFLIGHT_ENABLED = true;
 
+  // The two possible recognition paths. These are internal book-keeping
+  // values only — they are never shown to the user.
+  const RECOGNITION_PATHS = Object.freeze({
+    onDevice: 'on-device',
+    cloud: 'cloud'
+  });
+
   const PALETTE = Object.freeze({
     panelBackground: 'linear-gradient(180deg,#0b1320,#0a1729)',
     panelShadow: '0 8px 30px rgba(0,0,0,0.25)',
@@ -1088,7 +1095,7 @@ void function () {
   // returns it. Splitting this out lets the cloud-fallback path build a
   // second recognition object without duplicating any wiring.
   const buildAndWireRecognition = (RecognitionConstructor, path, locale) => {
-    const processLocally = path === 'on-device';
+    const processLocally = path === RECOGNITION_PATHS.onDevice;
     const recognition = configureRecognition(new RecognitionConstructor(), processLocally, locale);
     recognition.onresult = handleResult;
     recognition.onerror = handleError;
@@ -1104,11 +1111,11 @@ void function () {
   // or on browsers without the static API, `start()` is invoked directly.
   const attemptStart = (RecognitionConstructor, locale) => {
     if (!ON_DEVICE_PREFLIGHT_ENABLED || !supportsOnDeviceLanguagePackApi(RecognitionConstructor)) {
-      const recognition = buildAndWireRecognition(RecognitionConstructor, 'cloud', locale);
+      const recognition = buildAndWireRecognition(RecognitionConstructor, RECOGNITION_PATHS.cloud, locale);
       startSafely(recognition);
       return Promise.resolve();
     }
-    const recognition = buildAndWireRecognition(RecognitionConstructor, 'on-device', locale);
+    const recognition = buildAndWireRecognition(RecognitionConstructor, RECOGNITION_PATHS.onDevice, locale);
     return ensureOnDeviceLanguagePack(RecognitionConstructor, locale, () => {
       if (session.listening && session.recognition === recognition) {
         setStatus('downloading on-device language pack…');
@@ -1129,7 +1136,7 @@ void function () {
       // Chromium build effectively do already.
       recordDiagnostic('on-device pre-flight non-viable — falling back to cloud', { result });
       session.cloudFallbackAttempted = true;
-      const cloudRecognition = buildAndWireRecognition(RecognitionConstructor, 'cloud', locale);
+      const cloudRecognition = buildAndWireRecognition(RecognitionConstructor, RECOGNITION_PATHS.cloud, locale);
       setStatus('listening');
       startSafely(cloudRecognition);
     });
@@ -1316,7 +1323,7 @@ void function () {
           try { session.recognition.stop(); } catch (_unused) { /* noop */ }
         }
         if (RecognitionConstructor) {
-          const cloudRecognition = buildAndWireRecognition(RecognitionConstructor, 'cloud', locale);
+          const cloudRecognition = buildAndWireRecognition(RecognitionConstructor, RECOGNITION_PATHS.cloud, locale);
           startSafely(cloudRecognition);
           return;
         }

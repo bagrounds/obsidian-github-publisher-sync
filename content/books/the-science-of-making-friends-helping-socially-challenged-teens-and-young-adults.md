@@ -10,9 +10,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-27T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-05-11T13:06:45Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A warm, brightly lit illustration featuring a diverse group of four young adults standing in a semi-circle, engaged in a natural, relaxed conversation. One individual is mid-gesture, smiling, while the others lean in with attentive, open body language. The background is a soft-focus, modern community space like a cozy library or a sunlit café with hints of greenery. The color palette uses soft blues, teals, and warm oranges to evoke a sense of calm, growth, and connection. Floating subtly around the group are faint, stylized geometric icons—such as interlocking puzzle pieces, speech bubbles, and small lightbulbs—representing the science and strategy behind social interaction without being distracting. The overall mood is uplifting, inclusive, and encouraging.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🧑‍🤝‍🧑🔬 The Science of Making Friends: Helping Socially Challenged Teens and Young Adults  
+![books-the-science-of-making-friends-helping-socially-challenged-teens-and-young-adults](../books-the-science-of-making-friends-helping-socially-challenged-teens-and-young-adults.jpg)  
 [🛒 The Science of Making Friends: Helping Socially Challenged Teens and Young Adults. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/47ifd8A)  
   
 🚀🤝💡 Evidence-based, parent-assisted strategies drawn from UCLA's acclaimed PEERS program to teach concrete social skills, helping teens and young adults with social challenges find and maintain friendships.  

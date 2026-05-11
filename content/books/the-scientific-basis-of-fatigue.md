@@ -10,9 +10,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-18T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-05-11T19:43:01Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A stylized, cross-section illustration of the human brain and a skeletal muscle fiber, rendered in a clean, scientific aesthetic. The brain features glowing, interconnected neural pathways, while the muscle fiber shows detailed filaments with small, radiant, battery-like symbols representing mitochondria. Soft, cool-toned blue and teal lighting emanates from the internal structures, contrasting against a minimalist dark grey background. Thin, elegant white lines—reminiscent of a blueprint or a medical diagram—connect the brain and muscle, suggesting a systemic relationship. The overall composition is balanced and serene, emphasizing cellular energy, neural transmission, and the complex biological mechanisms of the body.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🔬🥱 The Scientific Basis of Fatigue  
+![books-the-scientific-basis-of-fatigue](../books-the-scientific-basis-of-fatigue.jpg)  
 [🛒 The Scientific Basis of Fatigue. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/49rWCrL)  
   
 🧠🔬💡 Fatigue's physiological and neurological origins, from cellular energy deficits to central nervous system regulation and various disease states. An evidence-based framework for understanding and treating Fatigue.  

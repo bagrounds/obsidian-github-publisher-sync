@@ -10,9 +10,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-18T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-05-11T15:22:42Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A surreal, high-contrast digital illustration featuring a human silhouette lying peacefully in bed, viewed from directly above. The figure is composed of a soft, glowing nebula of deep blues, purples, and indigo, representing the subconscious mind. Floating around the head are stylized, glowing geometric representations of brain waves and circadian clock gears. Subtle, translucent light orbs drift upward, symbolizing memory consolidation and restorative processes. The background is a dark, minimalist midnight-blue gradient, emphasizing the tranquility of the scene. The overall aesthetic is clean, modern, and scientific, using a limited color palette of cyan, deep violet, and white to evoke a sense of calm, intellectual curiosity, and nocturnal depth.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 😴🔬 The Science of Sleep: What It Is, How It Works, and Why It Matters  
+![books-the-science-of-sleep-what-it-is-how-it-works-and-why-it-matters](../books-the-science-of-sleep-what-it-is-how-it-works-and-why-it-matters.jpg)  
 [🛒 The Science of Sleep: What It Is, How It Works, and Why It Matters. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3IVWuFW)  
   
 ## 😴 A Deep Dive into "The Science of Sleep"  

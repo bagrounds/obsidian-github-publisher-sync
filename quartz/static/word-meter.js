@@ -1,24 +1,15 @@
 // Word Meter — counts ambient spoken words via the Web Speech API.
 // The whole app is wrapped in an IIFE so it can re-init on Quartz `nav` events
 // without leaking globals.
-//
-// __WORD_METER_VERSION__ is a build-time placeholder that the Quartz Static
-// emitter rewrites to the first 12 hex chars of the SHA-256 of this file's
-// contents (after the substitution, so the literal "__WORD_METER_VERSION__"
-// in the source never appears in the served file). The Static emitter also
-// writes a content-hashed copy at /static/word-meter.<hash>.js, and a small
-// rehype HTML transformer rewrites <script src="/static/word-meter.js">
-// references in the rendered HTML to point at that hashed filename. The
-// result is that every change to this file produces a new URL and the
-// browser cannot serve a stale cached copy. The version string is also
-// rendered into the privacy footer and the diagnostics panel so the user
-// can confirm at a glance which build is loaded.
 void function () {
   'use strict';
 
   // ---------- Configuration ----------
 
-  const WORD_METER_VERSION = '__WORD_METER_VERSION__';
+  // Hard-coded version string. Bump this whenever the served behavior changes
+  // in a way users should be able to tell apart. Rendered into the privacy
+  // footer and the diagnostics panel.
+  const WORD_METER_VERSION = '0.1.0';
   const HOST_ELEMENT_ID = 'word-meter';
 
   const CAPTION_WINDOW_MILLISECONDS = 30_000;
@@ -479,17 +470,13 @@ void function () {
     },
     children: [
       element('div', {
-        text: 'On-device mode keeps audio local when your browser supports it (Safari, recent Chromium). Cloud mode streams audio to your browser vendor’s speech service. Nothing is sent or stored by this page.'
-      }),
-      element('div', {
-        text: 'Web browsers cannot capture microphone audio with the screen truly off — the page is suspended on screen lock. The keep-awake toggle uses the Screen Wake Lock API to keep the screen lit while you listen, which is the only way to keep the meter running for a long walk with the phone in your pocket.',
-        styles: { marginTop: '6px' }
+        text: 'Speech recognition runs in your browser. Nothing is sent or stored by this page.'
       }),
       element('div', {
         id: ELEMENT_IDS.version,
-        text: `Word Meter build ${WORD_METER_VERSION}`,
+        text: `Word Meter v${WORD_METER_VERSION}`,
         attributes: { 'data-word-meter-version': WORD_METER_VERSION },
-        styles: { marginTop: '10px', fontFamily: 'ui-monospace,SFMono-Regular,Menlo,monospace', color: PALETTE.dimText }
+        styles: { marginTop: '8px', fontFamily: 'ui-monospace,SFMono-Regular,Menlo,monospace', color: PALETTE.dimText }
       })
     ]
   });

@@ -48,11 +48,9 @@ If the user hits **Stop** while a download is in flight, the pending start is ca
 
 Some browsers expose the static API, report `available`, then reject `start()` with `language-not-supported` at runtime. When this happens, the meter detaches the failed recognition object, builds a fresh one on the cloud path, and starts it — exactly once. A second `language-not-supported` after the cloud retry surfaces a clear error and ends the session.
 
-## Build version and cache busting
+## Build version
 
-Every served copy of `word-meter.js` carries an embedded build identifier — the first 12 hex chars of SHA-256 of the source file — substituted at build time for the `__WORD_METER_VERSION__` placeholder. The version is rendered into the privacy footer (`Word Meter build <hash>`) and logged to the browser console with every diagnostic event, so the user can confirm at a glance which build the browser is actually running.
-
-To prevent stale-cache surprises, the Static emitter writes a second copy of the script at `<basename>.<hash>.js`, and a small rehype HTML transformer (`CacheBustStaticAssets`) rewrites every `<script src="/static/*.js">` reference in the rendered HTML to point at the hashed URL. Because the URL changes with every byte of the source, the browser cannot serve a stale cached copy after a deploy. The un-versioned filename is also written with the same substituted bytes so direct visits to the old URL keep working. The hashing module lives in `quartz/util/staticAssetHash.ts` and is shared by the emitter and the transformer so the hash on the URL always matches the hash baked into the file.
+The script declares a hard-coded `WORD_METER_VERSION` constant (currently `0.1.0`) which is rendered into the privacy footer as `Word Meter v<version>` and prefixed onto every console-logged diagnostic event. Bump it whenever served behavior changes in a user-visible way. There is intentionally no build-time content-hashing or cache-busting machinery — the markdown's `<script src>` reference is plain and the version constant is the only thing that identifies a release.
 
 ## Diagnostics panel
 
@@ -61,7 +59,7 @@ The meter renders a collapsible **🔧 Diagnostics** panel below the privacy foo
 1. **Environment snapshot** — script build version, `navigator.userAgent`, `navigator.language`, whether `SpeechRecognition` and `webkitSpeechRecognition` are exposed, whether the static `available` / `install` methods are exposed, and whether the Screen Wake Lock API is available.
 2. **Event log** — a rolling, capped-at-60 list of timestamped diagnostic events. Every step of the on-device pre-flight (`available()` call, its result, `install()` call, its result), every `recognition.start()` invocation, and every `onerror` event (with `error` code and `message`) is logged here.
 
-Every entry is also echoed to the browser console prefixed with `[word-meter <version>]` so curious users can grep the devtools log. A **📋 Copy diagnostics** button at the top of the panel writes the snapshot and event log to the clipboard via `navigator.clipboard.writeText`, falling back to a hidden `<textarea>` + `document.execCommand('copy')` when the async Clipboard API is unavailable. This makes "it didn't work on my browser" reports diagnosable: one tap and the user can paste the full diagnostics into a bug report.
+Every entry is also echoed to the browser console prefixed with `[word-meter <version>]` so curious users can grep the devtools log. A **📋 Copy diagnostics** button at the top of the panel writes the snapshot and event log to the clipboard via `navigator.clipboard.writeText`, falling back to a hidden `<textarea>` + `document.execCommand('copy')` when the async Clipboard API is unavailable.
 
 ## Cumulative-refinement deduplication
 

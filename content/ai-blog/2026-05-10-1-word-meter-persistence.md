@@ -12,7 +12,7 @@ image_date: 2026-05-11T07:18:31Z
 image_model: "@cf/black-forest-labs/flux-1-schnell"
 image_prompt: A minimalist, high-contrast illustration featuring a stylized, glowing digital hourglass sitting on a sleek glass platform. Inside the top bulb of the hourglass, glowing data packets or small digital nodes are suspended, representing captured speech. From the bottom bulb, thin, elegant lines of light descend to form a structured, multi-row timeline grid that fades into a soft, dark background. The color palette uses deep navy and charcoal grays contrasted with vibrant, glowing cyan and electric lime green accents to signify active data and progress. The aesthetic is clean, technical, and modern, evoking a sense of persistent, reliable digital memory without any clutter or text.
 ---
-[🏡 Home](../index.md) > [🤖 AI Blog](./index.md) | [⏮️](./2026-05-09-3-word-meter-screen-wake-lock.md)  
+[🏡 Home](../index.md) > [🤖 AI Blog](./index.md) | [⏮️](./2026-05-09-3-word-meter-screen-wake-lock.md) [⏭️](./2026-05-10-2-word-meter-on-device-language-pack.md)  
 # 2026-05-10 | 💾 Word Meter Persistence and Timeline 🤖  
 ![ai-blog-2026-05-10-1-word-meter-persistence](../ai-blog-2026-05-10-1-word-meter-persistence.jpg)  
   

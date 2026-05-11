@@ -11,8 +11,8 @@ force_analyze_links: false
 ---
   
 [🏡 Home](../index.md#) > [🧰 Tools](./index.md#)  
-  
 # 🎙️ Word Meter  
+![tools-word-meter](../tools-word-meter.jpg)  
   
 *One button. Counts every word spoken around you. Lives entirely in your browser.*  
   

@@ -10,9 +10,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-19T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-05-11T19:15:16Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A minimalist, stylized composition featuring a complex, multi-layered geometric structure floating in a soft-focus environment. The structure is part organic, part mechanical, suggesting a blend of biological complexity and precise engineering. Intricate, glowing nodes are connected by translucent, thin filaments, forming a hierarchical network that hints at a neural or circuit-like pattern. The color palette uses a sophisticated contrast between deep charcoal, slate blue, and vibrant, luminous amber highlights that accentuate the goal-oriented nodes of the design. The background is a clean, muted gradient, providing a professional and cerebral atmosphere that emphasizes the intersection of human design and artificial systems. The overall style is clean, modern, and intellectual, evoking a sense of structural logic and emergent complexity.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🔬⚙️ The Sciences of the Artificial  
+![books-the-sciences-of-the-artificial](../books-the-sciences-of-the-artificial.jpg)  
 [🛒 The Sciences of the Artificial. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3ZpLeXx)  
   
 🤖💡⚙️ Artificial systems, created by humans to achieve goals and adapted to their environments, represent a distinct domain of study, advocating for a science of design that embraces bounded rationality and satisficing in complex problem-solving.  

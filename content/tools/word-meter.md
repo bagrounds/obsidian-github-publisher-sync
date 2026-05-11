@@ -6,52 +6,40 @@ aliases:
 description: Count the ambient spoken words around you with a single tap, using your browser's built-in Web Speech API.
 link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_version: "2"
-link_analysis_time: 2026-05-10T00:00:00Z
+link_analysis_time: 2026-05-11T00:00:00Z
 force_analyze_links: false
-image_date: 2026-05-11T09:18:06Z
-image_model: "@cf/black-forest-labs/flux-1-schnell"
-image_prompt: A minimalist, high-contrast illustration centered on a sleek, stylized microphone icon. Surrounding the microphone are floating, translucent geometric shapes representing sound waves, rendered in soft gradients of cyan and electric blue. The background is a deep, matte charcoal, providing a modern, tech-focused aesthetic. A single, glowing circular button sits at the base of the microphone, radiating subtle light ripples to suggest active listening. The overall composition is clean and focused, utilizing clean lines and a professional, soft-glow lighting effect to convey precision and digital privacy.
 ---
   
 [🏡 Home](../index.md#) > [🧰 Tools](./index.md#)  
   
 # 🎙️ Word Meter  
-![tools-word-meter-2](../tools-word-meter-2.jpg)  
   
 *One button. Counts every word spoken around you. Lives entirely in your browser.*  
   
 <div id="word-meter"></div>  
   
-<script src="/static/word-meter.js?t=0"></script>  
+<script src="/static/word-meter.js"></script>  
   
-## About  
+## How it works  
   
-**Word Meter** uses the browser's built-in **Web Speech API** (`SpeechRecognition`) to listen to your microphone and count the words it hears. There is no server, no upload from this page, no account, and no cost.  
+Tap **Start counting** and grant microphone access. The big number is the total words spoken since you started. The metrics row shows your words-per-minute over the last 1 minute, last 10 minutes, and overall. The captions panel shows the last 30 seconds of recognized speech. The timeline logs every start/stop interval. Stats are saved to your browser's local storage and survive reloads — only the **Reset** button clears them.  
   
-- 🟢 Tap **Start counting** and grant microphone access  
-- 🔢 The big number is the total words spoken since you started  
-- ⏱️ See your words-per-minute over the last 1 minute, last 10 minutes, and overall  
-- 💬 The captions panel shows the last 30 seconds of recognized speech, fading as it ages  
-- 🔒 Pick **On-device** (default) or **Cloud** recognition — see below  
-- 🔋 Toggle **Keep counting with screen on** to keep listening through a long walk — see below  
+For a long walk with the phone in your pocket, leave **🔋 Keep counting with screen on** checked. The page uses the [Screen Wake Lock API](https://developer.mozilla.org/docs/Web/API/Screen_Wake_Lock_API) to keep the screen lit so the browser does not suspend microphone capture — that is the closest a pure-web tool can get to background audio.  
   
-### On-device vs. cloud  
+If something looks wrong, expand the **🔧 Diagnostics** panel at the bottom of the meter and tap **📋 Copy diagnostics** to grab a paste-ready report.  
   
-The page exposes a small **Recognition** chooser. **On-device** is the default and asks the browser to keep audio handling local using the standardized `processLocally` hint. Recent Chromium and Safari can fulfill this request when the language pack is installed; otherwise the browser may fall back, or recognition may fail with a clear message you can act on. **Cloud** mode lets the browser stream audio to its vendor's speech service (Google, in Chromium's case) which usually offers wider language coverage at the cost of privacy.  
+## Browser support  
   
-### Long-running sessions and the screen-off question  
+Works on Chrome, Edge, Safari, and Samsung Internet. Firefox does not currently expose `SpeechRecognition`. The Screen Wake Lock API requires a recent Chromium build or Safari 16.4+.  
   
-If you want to start the meter, drop the phone in your pocket, and have a full count waiting after a long walk, leave the **🔋 Keep counting with screen on** toggle checked. When you tap **Start counting**, the page asks the browser for a [Screen Wake Lock](https://developer.mozilla.org/docs/Web/API/Screen_Wake_Lock_API), which prevents the screen from auto-locking while the meter runs. The screen stays lit (face-down in your pocket is fine), the page never gets suspended, and counting continues normally. The lock is released the moment you tap **Stop counting**.  
+## 📚 Book Recommendations  
   
-**Why not actually run with the screen off?** Web browsers — Android Chrome, iOS Safari, every other mainstream mobile browser — suspend a page's JavaScript and microphone capture as soon as the screen locks or the tab becomes hidden. There is no public web API that grants a webpage background microphone access with the screen truly off; that capability is reserved for native apps using Android foreground services or iOS background-audio entitlements. Service Workers, the only thing that runs while a page is hidden, cannot access the microphone. The Screen Wake Lock workaround above is the closest a pure-web tool can get, and it covers the actual use case (listen ambient speech for an hour while the phone is in a pocket) without compromising on privacy or installing a native app. If your browser doesn't support `wakeLock` (older Safari builds), the toggle gracefully no-ops and tells you so.  
+### 📖 Similar  
+* Thirty Million Words by Dana Suskind is the direct inspiration for this tool. It documents the research showing that the sheer volume of words a child hears in the first years of life is a strong predictor of later language and academic outcomes, and it argues that simply being aware of that volume changes parents' behavior. Word Meter is a tiny instrument for exactly that awareness.  
+* The Scientist In The Crib by Alison Gopnik, Andrew N. Meltzoff, and Patricia K. Kuhl is relevant because it grounds the case for talking richly to babies in the cognitive science of how infants extract structure from speech.  
   
-### Browser support  
+### ↔️ Contrasting  
+* Beyond Words: What Animals Think And Feel by Carl Safina is relevant because it pushes back on the idea that human linguistic input is the only kind of communication that shapes cognition, and reminds us that the count is not the whole story.  
   
-The Web Speech API is supported in **Chrome, Edge, and Safari**. Firefox does not currently expose `SpeechRecognition`. The on-device toggle is most meaningful on recent Chromium builds; older browsers ignore the hint and behave as they always have. The Screen Wake Lock API is supported in Chrome, Edge, and Safari 16.4+; on older browsers the keep-awake toggle quietly does nothing.  
-  
-### Tips  
-  
-- Speak normally — the recognizer works best with conversational speech  
-- Use a quiet-ish room for accurate counts; very low or very loud audio can be skipped by the recognizer  
-- The counter automatically restarts after silence so it can run as ambient background measurement  
-- For long walks, leave **Keep counting with screen on** checked and put the phone in your pocket face-down or face-in to avoid stray taps  
+### 🔗 Related  
+* The Language Instinct by Steven Pinker is relevant because it argues that language acquisition is a biological capacity, not a count of inputs — useful counterweight to taking a word-counting meter too seriously.  

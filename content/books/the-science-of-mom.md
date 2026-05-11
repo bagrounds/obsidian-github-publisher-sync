@@ -12,9 +12,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-18T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-05-11T14:12:30Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A bright, minimalist composition featuring a clean, white laboratory workbench. On the surface sits a sleek digital tablet displaying a colorful line graph of infant sleep patterns. Beside the tablet is a small, soft baby rattle and a glass beaker filled with warm, glowing light. A pair of modern, professional-looking glasses rests nearby. The background is a soft-focus, warm-toned nursery with a crib partially visible in the blurred distance. The lighting is bright and clinical yet cozy, symbolizing the intersection of rigorous scientific data and the gentle, nurturing nature of early motherhood. The color palette uses soft pastels—mint green, pale yellow, and muted blue—to evoke a sense of calm, intelligence, and discovery.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🤰👶🔬👩‍⚕️ 🧪 The Science of Mom: A Research-Based Guide to Your Baby's First Year  
+![books-the-science-of-mom](../books-the-science-of-mom.jpg)  
 [🛒 The Science of Mom: A Research-Based Guide to Your Baby's First Year. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4jwUGzK)  
   
 ## 🤖 AI Summary  

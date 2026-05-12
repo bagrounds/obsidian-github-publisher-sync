@@ -83,7 +83,7 @@ onClick handler = { eventName: "click", handler }
 
 foreign import data Element :: Type
 
-foreign import findElementByIdImpl
+foreign import findElementById
   :: (forall a. Maybe a)
   -> (forall a. a -> Maybe a)
   -> String
@@ -98,7 +98,7 @@ foreign import removeAllChildrenFromElement :: Element -> Effect Unit
 
 mount :: String -> Node -> Effect Unit
 mount hostId tree = do
-  hostMaybe <- findElementByIdImpl Nothing Just hostId
+  hostMaybe <- findElementById Nothing Just hostId
   case hostMaybe of
     Nothing -> pure unit
     Just host -> do

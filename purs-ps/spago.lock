@@ -8,11 +8,15 @@
             "arrays",
             "console",
             "effect",
+            "either",
             "foldable-traversable",
+            "identity",
             "integers",
             "maybe",
             "prelude",
-            "strings"
+            "refs",
+            "strings",
+            "transformers"
           ]
         },
         "test": {
@@ -20,11 +24,14 @@
             "arrays",
             "console",
             "effect",
+            "either",
             "exceptions",
+            "identity",
             "integers",
             "maybe",
             "prelude",
-            "strings"
+            "strings",
+            "transformers"
           ]
         }
       }
@@ -907,6 +914,17 @@
         "prelude"
       ]
     },
+    "lazy": {
+      "type": "registry",
+      "version": "6.0.0",
+      "integrity": "sha256-MHRC+1Pc+AjortBp4b/e1e6KpEpsDwaJBNBB7TOL+1I=",
+      "dependencies": [
+        "control",
+        "foldable-traversable",
+        "invariant",
+        "prelude"
+      ]
+    },
     "maybe": {
       "type": "registry",
       "version": "6.0.0",
@@ -1051,6 +1069,28 @@
         "partial",
         "prelude",
         "refs"
+      ]
+    },
+    "transformers": {
+      "type": "registry",
+      "version": "6.1.0",
+      "integrity": "sha256-QJmgNT/y7ljPHSsXaW4zxF/982BFiQ90KNL1g/NtEOQ=",
+      "dependencies": [
+        "control",
+        "distributive",
+        "effect",
+        "either",
+        "exceptions",
+        "foldable-traversable",
+        "identity",
+        "lazy",
+        "maybe",
+        "newtype",
+        "prelude",
+        "st",
+        "tailrec",
+        "tuples",
+        "unfoldable"
       ]
     },
     "tuples": {

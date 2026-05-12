@@ -28,25 +28,33 @@ Held to the `purescript/` GitHub organization's core libraries: `prelude`, `effe
 purs-ps/
   spago.yaml
   src/WordMeter/
-    Main.purs              entry point + reducer loop
-    Version.purs           WORD_METER_VERSION constant
-    Clock.purs / Clock.js  Date.now() + locale clock-time formatter
-    Vdom.purs / Vdom.js    typed declarative DOM (Element / Attribute / Style / Listener)
-    State.purs / State.js  tiny mutable Cell
-    Words.purs             pure word counter
-    Recording.purs         slices 1–4: session state + reducer + view + rate math + event log
-    Diagnostics.purs       slice 5: pure diagnostics log + environment-snapshot formatters
-    Clipboard.purs / .js   navigator.clipboard.writeText FFI for the diagnostics copy button
-    Environment.purs / .js navigator.userAgent / navigator.language snapshot capture
-    TestHook.purs / .js    window.__wordMeter test hook
-  test/Test.Main.purs
+    Main.purs                  entry point (Effect); wires capabilities + click handlers
+    AppM.purs                  ReaderT-based production newtype + ApplicationEnvironment
+    Version.purs               WORD_METER_VERSION constant
+    Clock.purs / Clock.js      pure locale clock-time formatter (no effects)
+    Vdom.purs / Vdom.js        typed declarative DOM (Element / Attribute / Style / Listener) + mount
+    Words.purs                 pure word counter
+    Recording.purs             slices 1–5: session state + reducer + view + rate math + event log + diagnostics view
+    Diagnostics.purs           slice 5: pure diagnostics log + environment-snapshot formatters
+    TestHook.purs / .js        window.__wordMeter test hook
+    Capability/
+      Clock.purs               class Clock + AppM instance + FixedClockM test newtype
+      Clipboard.purs           class Clipboard + AppM instance + RecordingClipboardM test newtype
+      Environment.purs         class Environment + AppM instance + StubEnvironmentM test newtype
+      DomMount.purs            class DomMount + AppM instance + RecordingDomMountM test newtype
+      SessionState.purs        class SessionState + AppM instance + StatefulSessionM test newtype
+    FFI/
+      Clock.purs / .js         currentTimeMillis :: Effect Number
+      Clipboard.purs / .js     navigator.clipboard.writeText with success / error callbacks
+      Environment.purs / .js   navigator.userAgent / navigator.language snapshot capture
+  test/Test.Main.purs          pure reducer / formatter unit tests + per-capability test-newtype tests
 scripts/
-  build-word-meter-ps.mjs  spago bundle wrapper
+  build-word-meter-ps.mjs      spago bundle wrapper
 tests/e2e/
   playwright.config.ts
   word-meter.spec.ts
-  word-meter.d.ts          ambient types for window.__wordMeter
-  fixtures/word-meter.html ?build=js|ps loader
+  word-meter.d.ts              ambient types for window.__wordMeter
+  fixtures/word-meter.html     ?build=js|ps loader
 ```
 
 ## Declarative typed DOM
@@ -56,15 +64,17 @@ The PureScript bundle never produces an HTML string. `WordMeter.Vdom` defines a 
 - `Node` — `ElementNode { tag, attributes, styles, listeners, children }` or `TextNode String`.
 - `Attribute`, `Style`, `Listener` — typed records.
 - Smart constructors: `div_`, `button`, `span_`, `text`, `attribute`, `testId`, `buttonType`, `style`, `onClick`.
-- `mount :: String -> Node -> Effect Unit` walks the tree, calling `document.createElement` / `setAttribute` / `style.setProperty` / `addEventListener` / `appendChild` through the narrow FFI surface in `Vdom.js`.
+- `mount :: String -> Node -> Effect Unit` walks the tree, calling `document.createElement` / `setAttribute` / `style.setProperty` / `addEventListener` / `appendChild` through the narrow FFI surface in `Vdom.js`. Production code does not call `mount` directly — it uses the `DomMount` capability's `mountToHost`, whose `AppM` instance delegates here.
 
-Views are pure functions from state to `Node`. The reducer loop in `Main.purs` reads state, calls `view send state`, and remounts on every action.
+Views are pure functions from state to `Node`. The reducer loop in `Main.purs` reads state through `SessionState`'s `readCurrentSession`, calls `view handlers state`, and remounts through `mountToHost` after every dispatched action.
 
 ## Capability pattern
 
-Beyond the smallest possible slices, every effect this app needs (clock, storage, wake lock, speech recognition, logging, DOM) lives behind a **capability typeclass**, and production code is written against the typeclasses rather than against `Effect` directly. See [`specs/purescript-capability-pattern.md`](./purescript-capability-pattern.md) for the full pattern: how to declare a capability, how to write the production `AppM` newtype, how to write a deterministic test newtype, and how this delivers swappable implementations + property-testable pure logic.
+Every effect this app needs (clock, clipboard, environment snapshot, DOM mount, session state, and the future wake lock / speech-recognition / storage / logging) lives behind a **capability typeclass**, and production code is written against the typeclasses rather than against `Effect` directly. See [`specs/purescript-capability-pattern.md`](./purescript-capability-pattern.md) for the full pattern: how to declare a capability, how to write the production `AppM` newtype, how to write a deterministic test newtype, and how this delivers swappable implementations + property-testable pure logic.
 
-Capabilities grow organically slice by slice. Slices 1–3 only need a thin DOM render, a mutable cell, and a clock effect, so they still wire `Effect` directly inside `Main`. As soon as a slice needs persistence or wake lock or recognition, that slice introduces the matching capability (`Storage`, `WakeLock`, `Recognition`, …) and lifts the production code into `AppM`. Slices 1–3 will be refactored onto `AppM` once at least one capability is in play — there is no value in setting up `AppM` and `Clock m` before a second capability needs to compose with the first.
+As of slice 5 the port runs end-to-end on the capability pattern. `WordMeter.AppM` is a `ReaderT ApplicationEnvironment Effect` newtype whose environment carries the session `Ref`. Production code in `WordMeter.Main` is polymorphic over `m` with `Clock m`, `Clipboard m`, `Environment m`, `DomMount m`, and `SessionState m` constraints; the `Effect`-typed click callbacks the typed DOM tree needs are built at the boundary by `runAppM`. Each capability module exports at least one test newtype (`FixedClockM`, `RecordingClipboardM`, `StubEnvironmentM`, `RecordingDomMountM`, `StatefulSessionM`) and `Test.Main` exercises them, so the pattern pays for its abstraction tax.
+
+Future capabilities (`Storage`, `WakeLock`, `Recognition`, `Log`, …) grow into the same shape: a class with an `AppM` instance and at least one test newtype, sitting alongside its `FFI` siblings.
 
 ## Test hook
 

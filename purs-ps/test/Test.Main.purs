@@ -13,6 +13,27 @@ import Data.String (Pattern(..), contains) as String
 import Effect (Effect)
 import Effect.Console (log)
 import Effect.Exception (throw)
+import WordMeter.Capability.Clipboard
+  ( runRecordingClipboardM
+  , writeClipboardText
+  )
+import WordMeter.Capability.Clock
+  ( currentTimeMillis
+  , runFixedClockM
+  )
+import WordMeter.Capability.DomMount
+  ( mountToHost
+  , runRecordingDomMountM
+  )
+import WordMeter.Capability.Environment
+  ( captureEnvironmentSnapshot
+  , runStubEnvironmentM
+  )
+import WordMeter.Capability.SessionState
+  ( readCurrentSession
+  , runStatefulSessionM
+  , updateSession
+  )
 import WordMeter.Diagnostics
   ( diagnosticsLimit
   , emptyEnvironment
@@ -41,6 +62,7 @@ import WordMeter.Recording
   , wallSpanMs
   , wordsInTrailingWindow
   )
+import WordMeter.Vdom (text)
 
 main :: Effect Unit
 main = do
@@ -51,6 +73,7 @@ main = do
   runEventLogTests
   runCaptionDecayTests
   runDiagnosticsTests
+  runCapabilityTests
   log "word-meter: all PureScript unit tests passed"
 
 runRatePerMinuteTests :: Effect Unit
@@ -308,3 +331,53 @@ stuffEntries n entry entries
 
 containsSubstring :: String -> String -> Boolean
 containsSubstring needle haystack = String.contains (String.Pattern needle) haystack
+
+runCapabilityTests :: Effect Unit
+runCapabilityTests = do
+  let
+    fixedClockTime = 1_700_000_000_000.0
+    sampledClockTime = runFixedClockM fixedClockTime currentTimeMillis
+  assertEqualNumber "FixedClockM hands back the configured clock value"
+    sampledClockTime fixedClockTime
+
+  let
+    canned =
+      { userAgent: "test-agent"
+      , navigatorLanguage: "en-US"
+      , version: "0.0.1-test"
+      }
+    captured = runStubEnvironmentM canned
+      (captureEnvironmentSnapshot "ignored-version")
+  assertEqualString "StubEnvironmentM ignores the version argument and returns the canned userAgent"
+    captured.userAgent canned.userAgent
+  assertEqualString "StubEnvironmentM hands back the canned language"
+    captured.navigatorLanguage canned.navigatorLanguage
+
+  let
+    clipboardOutcome = runRecordingClipboardM do
+      writeClipboardText "first payload" (pure unit) (\_ -> pure unit)
+      writeClipboardText "second payload" (pure unit) (\_ -> pure unit)
+  assertEqualInt "RecordingClipboardM records every write in order"
+    (Array.length clipboardOutcome.writes) 2
+  case Array.head clipboardOutcome.writes of
+    Just firstWrite ->
+      assertEqualString "RecordingClipboardM preserves the payload"
+        firstWrite "first payload"
+    Nothing -> throw "RecordingClipboardM should have captured a write"
+
+  let
+    domOutcome = runRecordingDomMountM do
+      mountToHost "host-one" (text "alpha")
+      mountToHost "host-two" (text "beta")
+  assertEqualInt "RecordingDomMountM records every mount call"
+    (Array.length domOutcome.mounts) 2
+
+  let
+    sessionOutcome = runStatefulSessionM initialSession do
+      updateSession (Toggle 1000.0)
+      updateSession (InjectFinalTranscript "hello world" 2000.0)
+      readCurrentSession
+  assertEqualInt "StatefulSessionM threads reducer updates through pure state"
+    sessionOutcome.result.totalWords 2
+  assertEqualBoolean "StatefulSessionM observes listening state after Toggle"
+    sessionOutcome.result.listening true

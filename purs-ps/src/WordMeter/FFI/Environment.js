@@ -1,4 +1,4 @@
-export const captureEnvironmentSnapshotImpl = (version) => () => {
+export const captureEnvironmentSnapshot = (version) => () => {
   const userAgent = (typeof navigator !== "undefined" && navigator.userAgent)
     ? String(navigator.userAgent)
     : "(unknown)"

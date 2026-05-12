@@ -25,7 +25,10 @@ foreign import setInnerHtml :: Element -> String -> Effect Unit
 
 -- | We re-declare a local `Maybe` here instead of pulling in
 -- | `purescript-maybe` to keep the userspace-dep footprint at the
--- | absolute minimum (prelude + effect + console).
+-- | absolute minimum (prelude + effect + console). Slice 3 will
+-- | replace this local definition with the capability layer's shared
+-- | option type once we evaluate whether `purescript-maybe` is worth
+-- | accepting as a dep alongside the rest of the core libs.
 data Maybe a = Nothing | Just a
 
 getElementById :: String -> Effect (Maybe Element)

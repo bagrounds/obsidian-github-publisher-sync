@@ -27,6 +27,10 @@ export default defineConfig({
   ],
   webServer: {
     command: "npx http-server -p 4173 -s -c-1 --cors .",
+    // The `?impl=ps` query parameter on this URL is only used by
+    // Playwright as a readiness probe — it confirms the fixture HTML
+    // is being served correctly. The individual specs in this dir
+    // load both `?impl=js` and `?impl=ps` against the same server.
     url: "http://127.0.0.1:4173/tests/e2e/fixtures/word-meter.html?impl=ps",
     cwd: "../..",
     reuseExistingServer: !process.env.CI,

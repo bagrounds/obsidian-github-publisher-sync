@@ -16,8 +16,8 @@ import { spawnSync } from "node:child_process"
 import { fileURLToPath } from "node:url"
 import path from "node:path"
 
-const here = path.dirname(fileURLToPath(import.meta.url))
-const repoRoot = path.resolve(here, "..")
+const scriptDirectory = path.dirname(fileURLToPath(import.meta.url))
+const repoRoot = path.resolve(scriptDirectory, "..")
 const pursPsRoot = path.join(repoRoot, "purs-ps")
 const defaultOutfile = path.join(repoRoot, "quartz", "static", "word-meter-ps.js")
 const outfile = process.env.PS_OUTFILE

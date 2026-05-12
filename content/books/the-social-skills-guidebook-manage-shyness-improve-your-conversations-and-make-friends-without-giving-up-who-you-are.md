@@ -10,9 +10,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-27T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-05-12T00:48:05Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A warm, minimalist illustration featuring two stylized figures sitting on a park bench, engaged in a relaxed conversation. One figure is slightly leaning forward, gesturing with open hands, while the other listens attentively with a gentle, encouraging smile. The background is a soft-focus, stylized garden or park setting with muted, calming earth tones—greens, warm yellows, and soft blues. A few floating, abstract speech bubbles in varying sizes hover faintly between them, representing the flow of dialogue without containing any symbols or text. The overall aesthetic is clean, modern, and inviting, emphasizing the concept of genuine human connection and personal growth through a peaceful, non-intimidating social environment.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🧑‍🤝‍🧑🗣️ The Social Skills Guidebook: Manage Shyness, Improve Your Conversations, and Make Friends, Without Giving Up Who You Are  
+![books-the-social-skills-guidebook-manage-shyness-improve-your-conversations-and-make-friends-without-giving-up-who-you-are](../books-the-social-skills-guidebook-manage-shyness-improve-your-conversations-and-make-friends-without-giving-up-who-you-are.jpg)  
 [🛒 The Social Skills Guidebook: Manage Shyness, Improve Your Conversations, and Make Friends, Without Giving Up Who You Are. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4oWwhHf)  
   
 💡🤝📈 A practical, authentic roadmap for developing interpersonal skills, managing social anxiety, and building genuine connections without compromising one's core identity.  

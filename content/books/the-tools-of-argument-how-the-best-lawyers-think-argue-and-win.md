@@ -11,9 +11,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-24T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-05-12T12:46:13Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: "A sleek, modern workbench with a polished surface. Neatly arranged are abstract, symbolic tools: a perfectly balanced, minimalist set of scales of justice, glowing softly at its center. To one side, an intricate cluster of interlocking gears represents logic and critical thinking. On the other, a gleaming, slender trophy cup or a bold, upward-pointing arrow signifies winning and achievement. The background is a subtly blurred library or office, suggesting a professional, intellectual environment. The overall aesthetic is clean, intelligent, and aspirational, using a palette of deep blues, silver, and a touch of golden light."
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 👩🏼‍⚖️💭🧮🏆 The Tools of Argument: How the Best Lawyers Think, Argue, and Win  
+![books-the-tools-of-argument-how-the-best-lawyers-think-argue-and-win](../books-the-tools-of-argument-how-the-best-lawyers-think-argue-and-win.jpg)  
 [🛒 The Tools of Argument: How the Best Lawyers Think, Argue, and Win. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4kSl20x)  
   
 ## 📚 Book Report: The Tools of Argument: How the Best Lawyers Think, Argue, and Win  

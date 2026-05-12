@@ -10,9 +10,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-16T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-05-12T08:12:05Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A top-down, isometric view of a complex, interconnected network of wooden gears, glowing nodes, and translucent connector lines spread across a clean, minimalist workspace. The scene features various geometric shapes—cubes, spheres, and pyramids—that seem to be interacting through a series of pulleys and interlocking cogs. The color palette is professional and modern, using deep blues, crisp whites, and vibrant accent colors like amber and teal to represent energy and information flow. Soft, directional studio lighting casts gentle shadows, giving the scene a tactile, high-quality feel. In the center, a subtle, stylized representation of a human head silhouette is formed by the negative space between the interconnected components, symbolizing the bridge between cognitive thinking and complex systems.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # ⚙️🧠 The Systems Thinking Playbook: Exercises to Stretch and Build Learning and Systems Thinking Capabilities  
+![books-the-systems-thinking-playbook-exercises-to-stretch-and-build-learning-and-systems-thinking-capabilities](../books-the-systems-thinking-playbook-exercises-to-stretch-and-build-learning-and-systems-thinking-capabilities.jpg)  
 [🛒 The Systems Thinking Playbook: Exercises to Stretch and Build Learning and Systems Thinking Capabilities. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4nM32Wr)  
   
 🧠💡 A hands-on, activity-driven approach to developing critical systems thinking skills, making complex interdependencies actionable for individuals and teams.  

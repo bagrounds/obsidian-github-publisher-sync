@@ -11,6 +11,7 @@ image_date: 2026-04-09T15:41:48Z
 image_model: "@cf/black-forest-labs/flux-1-schnell"
 image_prompt: A minimalist, high-tech illustration depicting a glowing, three-dimensional network of nodes and connecting lines floating against a dark, deep-navy background. The nodes vary in size and brightness, representing diverse entities, while the interlinking lines create a sophisticated, crystalline web structure. Subtle, translucent geometric shapes and faint data-stream pulses emanate from the center, suggesting intelligence, connectivity, and complex reasoning. The color palette uses deep blues, vibrant teals, and soft, glowing white highlights to evoke a sense of futuristic technology and organized data. The composition is clean, balanced, and abstract, emphasizing the interconnected nature of knowledge without any text or labels.
 link_analysis_version: "2"
+updated: 2026-05-12T11:48:07
 ---
 [Home](../index.md) > [Topics](./index.md)  
 # 🧠🌐 Knowledge Graphs  
@@ -144,3 +145,11 @@ link_analysis_version: "2"
 ### 📺 Links To Relevant YouTube Channels Or Videos  
   
 * 📺 [Knowledge Graphs Explained](https://www.youtube.com/results?search_query=knowledge+graphs+explained) 🧠  
+  
+## 🦋 Bluesky    
+<blockquote class="bluesky-embed" data-bluesky-uri="at://did:plc:i4yli6h7x2uoj7acxunww2fc/app.bsky.feed.post/3mlnpthkt3z2o" data-bluesky-cid="bafyreido2cc4iyybkugfxnt5lz2aki6mm7b5gcfhjav5zsjugs33abowci"><p>🧠🌐 Knowledge Graphs  
+  
+#AI Q: 🌐 If your life were a knowledge graph, which two unlikely entities would have the strongest connection?  
+  
+🌐 Semantic Web | 🤖 Artificial Intelligence | 🔗 Linked Data | 🧠 Machine Reasoning  
+https://bagrounds.org/topics/knowledge-graphs</p>&mdash; <a href="https://bsky.app/profile/did:plc:i4yli6h7x2uoj7acxunww2fc?ref_src=embed">Bryan Grounds (@bagrounds.bsky.social)</a> <a href="https://bsky.app/profile/did:plc:i4yli6h7x2uoj7acxunww2fc/post/3mlnpthkt3z2o?ref_src=embed">2026-05-12T11:48:58.000Z</a></blockquote><script async src="https://embed.bsky.app/static/embed.js" charset="utf-8"></script>

@@ -10,9 +10,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-20T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-05-12T08:11:53Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A vast, dark expanse of deep ocean water, illuminated by an ethereal, bioluminescent glow emanating from a swirling, massive cloud of microscopic organisms. The swarm takes on a semi-translucent, hive-like structure, pulsating with electric blue and cyan light as it moves through the abyss. In the distant, murky background, the faint, jagged silhouette of a continental shelf drops into an unfathomable trench. Bubbles and debris drift through the water, suggesting recent turbulence. The composition emphasizes the scale of the ocean and the eerie, collective consciousness of the swarm, creating a sense of both wonder and impending ecological threat. The color palette is dominated by deep indigos, charcoal grays, and the piercing, unnatural light of the sentient collective.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🐝🐝🐝 The Swarm  
+![books-the-swarm](../books-the-swarm.jpg)  
 [🛒 The Swarm. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4q4zg0q)  
   
 🌊🌍👾 A global eco-catastrophe orchestrated by a sentient, collective marine intelligence (the yrr) retaliating against humanity's ecological destruction, forcing an international scientific team to understand and potentially prevent human extinction.  

@@ -11,6 +11,7 @@ image_date: 2026-04-09T16:38:29Z
 image_model: "@cf/black-forest-labs/flux-1-schnell"
 image_prompt: A high-contrast, minimalist illustration featuring a swarm of glowing, bioluminescent orbs against a deep midnight-blue background. Initially, the orbs are scattered in a chaotic, disordered arrangement, each pulsing with slightly different hues of cyan and gold. As the eye moves toward the center or a focal point of the image, the orbs transition into a perfectly aligned, geometric grid, all pulsing in unison with a singular, bright white light. Thin, translucent, glowing filaments connect the orbs, representing the coupling forces. The overall aesthetic is scientific yet elegant, emphasizing the transition from chaotic, independent motion to collective, synchronized harmony, capturing the essence of emergent order in complex systems.
 link_analysis_version: "2"
+updated: 2026-05-12T13:47:15
 ---
 [Home](../index.md) > [Topics](./index.md)  
 # 🔄🎯 Kuramoto Model  
@@ -158,3 +159,11 @@ Yoshiki Kuramoto developed the model in the 1970s to understand self-synchroniza
   
 * Steven Strogatz: https://www.youtube.com/results?search_query=steven+strogatz+synchronization 📺  
 * Veritasium: https://www.youtube.com/results?search_query=veritasium+synchronization 📺  
+  
+## 🦋 Bluesky    
+<blockquote class="bluesky-embed" data-bluesky-uri="at://did:plc:i4yli6h7x2uoj7acxunww2fc/app.bsky.feed.post/3mlnwhezyxj26" data-bluesky-cid="bafyreiaztgznjituxpoflrl2vfoxp72aftfftfpqvqmhbrqzicr57l4z3i"><p>🔄🎯 Kuramoto Model  
+  
+#AI Q: 💡 What group behavior most surprises with its synchronicity?  
+  
+🤝 Synchronization | 🌀 Nonlinear Dynamics | 🔗 Coupled Oscillators | ✨ Spontaneous Order  
+https://bagrounds.org/topics/kuramoto-model</p>&mdash; <a href="https://bsky.app/profile/did:plc:i4yli6h7x2uoj7acxunww2fc?ref_src=embed">Bryan Grounds (@bagrounds.bsky.social)</a> <a href="https://bsky.app/profile/did:plc:i4yli6h7x2uoj7acxunww2fc/post/3mlnwhezyxj26?ref_src=embed">2026-05-12T13:47:28.000Z</a></blockquote><script async src="https://embed.bsky.app/static/embed.js" charset="utf-8"></script>

@@ -11,6 +11,7 @@ image_date: 2026-04-09T15:41:43Z
 image_model: "@cf/black-forest-labs/flux-1-schnell"
 image_prompt: A minimalist, high-tech illustration featuring a central, glowing point representing an object’s true state. Surrounding this point are several faint, translucent, and slightly jittery paths or ghost lines, symbolizing noisy sensor measurements. A clean, bold geometric shape—such as a crisp, solid circle or a glowing ring—converges onto the central point, pulling the erratic, blurry lines into a single, sharp focus. The color palette uses deep navy and charcoal backgrounds with vibrant accents of electric blue and magenta to represent the data. The aesthetic is modern, mathematical, and fluid, utilizing thin, elegant vector lines to evoke a sense of precision, navigation, and signal processing.
 link_analysis_version: "2"
+updated: 2026-05-12T09:21:30
 ---
 [Home](../index.md) > [Topics](./index.md)  
 # 📏🔮〰️ Kalman Filter  
@@ -143,4 +144,12 @@ Rudolf E. Kálmán published his seminal paper describing the filter in 1960. �
 - **More Specific:** "Kalman Filtering Techniques for Radar Tracking" by Yaakov Bar-Shalom 📡  
 - **Fictional:** [👨‍🚀🔴✨ The Martian](../books/the-martian.md) by Andy Weir (uses navigation concepts) 🚀  
 - **Rigorous:** "Stochastic Processes and Filtering Theory" by Arthur H. Jazwinski 🧐  
-- **Accessible:** [💡🔧📏🔮〰️ Understanding and Implementing the Kalman Filter](./understanding-and-implementing-the-kalman-filter.md) by Lionel Garcia 💡
+- **Accessible:** [💡🔧📏🔮〰️ Understanding and Implementing the Kalman Filter](./understanding-and-implementing-the-kalman-filter.md) by Lionel Garcia 💡  
+  
+## 🦋 Bluesky    
+<blockquote class="bluesky-embed" data-bluesky-uri="at://did:plc:i4yli6h7x2uoj7acxunww2fc/app.bsky.feed.post/3mlnhlysrtw2n" data-bluesky-cid="bafyreihucd2qdmdihrofxsqnzs47y2inszirdyr4v3jio6llnaqganq6li"><p>📏🔮〰️ Kalman Filter  
+  
+#AI Q: 🛰️ Can you name a real-world situation where your gut feeling and data conflict?  
+  
+🛰️ Aerospace Navigation | 🎲 Bayesian Inference | 🤖 Robotics &amp; Control  
+https://bagrounds.org/topics/kalman-filter</p>&mdash; <a href="https://bsky.app/profile/did:plc:i4yli6h7x2uoj7acxunww2fc?ref_src=embed">Bryan Grounds (@bagrounds.bsky.social)</a> <a href="https://bsky.app/profile/did:plc:i4yli6h7x2uoj7acxunww2fc/post/3mlnhlysrtw2n?ref_src=embed">2026-05-12T09:21:37.000Z</a></blockquote><script async src="https://embed.bsky.app/static/embed.js" charset="utf-8"></script>

@@ -11,9 +11,13 @@ force_analyze_links: false
 link_analysis_time: 2026-04-15T00:00:00Z
 link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_version: "2"
+image_date: 2026-05-12T11:46:10Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A surreal, high-contrast illustration featuring three glowing, orb-like stars arranged in an unstable, chaotic orbit against the deep void of space. Thin, ethereal geometric lines trace the complex, unpredictable gravitational paths connecting the stars, forming a tangled web of light. In the foreground, a minimalist silhouette of a solitary, ancient-looking radio telescope dish points toward the celestial dance. The color palette centers on deep indigos, blacks, and vibrant, pulsating neon cyans and oranges, evoking a sense of cosmic scale and scientific mystery. The composition emphasizes the vast emptiness of the universe, with subtle particles of stardust scattered to provide a sense of depth and cold, indifferent infinity.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🌌3️⃣⚛️ The Three-Body Problem  
+![books-the-three-body-problem](../books-the-three-body-problem.jpg)  
 [🛒 3️⃣⚛️ The Three-Body Problem. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4kmbewG)  
   
 ## 🤖 AI Summary  

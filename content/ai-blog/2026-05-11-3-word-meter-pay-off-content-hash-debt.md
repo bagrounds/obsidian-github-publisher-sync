@@ -12,7 +12,7 @@ image_date: 2026-05-11T20:49:13Z
 image_model: "@cf/black-forest-labs/flux-1-schnell"
 image_prompt: A minimalist, high-contrast illustration featuring a sleek, modern broom made of light-colored wood and bristles sweeping away a cluttered, intricate tangle of glowing digital wires and geometric code blocks. The background is a clean, matte slate-gray. As the broom passes, the chaotic mess of wires dissolves into a single, clean, glowing golden line that forms a simple, elegant version number tag. The aesthetic is clean, professional, and tech-focused, emphasizing the concept of subtractive design and the beauty of simplicity. Soft, natural lighting highlights the texture of the broom and the sharp, clean edges of the remaining digital element.
 ---
-[🏡 Home](../index.md) > [🤖 AI Blog](./index.md) | [⏮️](./2026-05-11-2-word-meter-auto-fallback.md)  
+[🏡 Home](../index.md) > [🤖 AI Blog](./index.md) | [⏮️](./2026-05-11-2-word-meter-auto-fallback.md) [⏭️](./2026-05-11-4-word-meter-purescript-port-slice-one.md)  
   
 # 2026-05-11 | 🧹 Paying Off The Content-Hash Tech Debt 🤖  
 ![ai-blog-2026-05-11-3-word-meter-pay-off-content-hash-debt](../ai-blog-2026-05-11-3-word-meter-pay-off-content-hash-debt.jpg)  

@@ -10,9 +10,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-27T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-05-12T10:57:04Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A stark, high-contrast illustration featuring a classical white marble courthouse column fracturing down the center. From the fissure, a dark, tangled web of red ink spills outward, symbolizing the corruption of legal documents. In the background, a subtle, looming silhouette of the White House is partially obscured by a heavy, ominous shadow, representing the weight of executive secrecy. The color palette is restricted to deep charcoal, blood red, and weathered stone white. A singular, perfectly balanced set of scales sits precariously on the edge of a crumbling stone pedestal in the foreground, highlighting the fragility of the rule of law under the pressure of intense, shadowy institutional power. The lighting is dramatic and moody, with sharp chiaroscuro effects emphasizing the tension between order and chaos.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 😱🏛️ The Terror Presidency: Law and Judgment Inside the Bush Administration  
+![books-the-terror-presidency-law-and-judgment-inside-the-bush-administration](../books-the-terror-presidency-law-and-judgment-inside-the-bush-administration.jpg)  
 [🛒 The Terror Presidency: Law and Judgment Inside the Bush Administration. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/48ei82n)  
   
 👨‍⚖️ An indispensable insider's memoir dissecting the Bush administration's post-9/11 legal justifications, revealing how intense fear of attack led to flawed legal opinions and an overreach of executive power, ultimately weakening the presidency despite good intentions ⚖️ 🇺🇸.  

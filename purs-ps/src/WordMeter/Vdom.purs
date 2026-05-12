@@ -8,6 +8,9 @@ module WordMeter.Vdom
   , div_
   , button
   , span_
+  , details_
+  , summary_
+  , pre_
   , attribute
   , testId
   , buttonType
@@ -53,6 +56,15 @@ button = element "button"
 
 span_ :: Array Attribute -> Array Style -> Array Node -> Node
 span_ attributes styles children = element "span" attributes styles [] children
+
+details_ :: Array Attribute -> Array Style -> Array Node -> Node
+details_ attributes styles children = element "details" attributes styles [] children
+
+summary_ :: Array Attribute -> Array Style -> Array Listener -> Array Node -> Node
+summary_ = element "summary"
+
+pre_ :: Array Attribute -> Array Style -> Array Node -> Node
+pre_ attributes styles children = element "pre" attributes styles [] children
 
 attribute :: String -> String -> Attribute
 attribute name value = { name, value }

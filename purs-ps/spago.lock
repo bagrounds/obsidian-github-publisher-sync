@@ -23,7 +23,8 @@
             "exceptions",
             "integers",
             "maybe",
-            "prelude"
+            "prelude",
+            "strings"
           ]
         }
       }

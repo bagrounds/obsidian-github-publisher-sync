@@ -19,6 +19,7 @@ package:
       - maybe
       - arrays
       - integers
+      - strings
 workspace:
   packageSet:
     registry: 76.2.1

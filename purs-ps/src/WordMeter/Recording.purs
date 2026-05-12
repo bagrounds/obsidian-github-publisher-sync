@@ -26,6 +26,8 @@ module WordMeter.Recording
   , overallRate
   , formatRate
   , formatDurationMs
+  , diagnosticsText
+  , idleCopyStatus
   ) where
 
 import Prelude
@@ -37,7 +39,26 @@ import Data.Maybe (Maybe(..))
 import Data.Number (isFinite)
 import Effect (Effect)
 import WordMeter.Clock (formatClockTime)
-import WordMeter.Vdom (Node, button, buttonType, div_, onClick, span_, style, testId, text)
+import WordMeter.Diagnostics
+  ( DiagnosticEntry
+  , EnvironmentSnapshot
+  , formatDiagnostics
+  , recordEntry
+  )
+import WordMeter.Vdom
+  ( Node
+  , button
+  , buttonType
+  , details_
+  , div_
+  , onClick
+  , pre_
+  , span_
+  , style
+  , summary_
+  , testId
+  , text
+  )
 import WordMeter.Version (version)
 import WordMeter.Words (countWords)
 
@@ -53,6 +74,9 @@ type Session =
   , completedActiveMs :: Number
   , now :: Number
   , lastError :: Maybe String
+  , diagnostics :: Array DiagnosticEntry
+  , environment :: Maybe EnvironmentSnapshot
+  , copyStatus :: String
   }
 
 type Caption =
@@ -100,12 +124,19 @@ data Action
   = Toggle Number
   | InjectFinalTranscript String Number
   | Tick Number
+  | RecordDiagnostic Number String String
+  | SetEnvironment EnvironmentSnapshot
+  | SetCopyStatus String
 
 type Dispatch = Action -> Effect Unit
 
 type Handlers =
   { requestToggle :: Effect Unit
+  , requestCopyDiagnostics :: Effect Unit
   }
+
+idleCopyStatus :: String
+idleCopyStatus = ""
 
 initialSession :: Session
 initialSession =
@@ -120,6 +151,9 @@ initialSession =
   , completedActiveMs: 0.0
   , now: 0.0
   , lastError: Nothing
+  , diagnostics: []
+  , environment: Nothing
+  , copyStatus: idleCopyStatus
   }
 
 reduce :: Action -> Session -> Session
@@ -135,6 +169,11 @@ reduce (Toggle timestamp) session
           , endedAt: max timestamp startedAt
           , wordCount: session.currentIntervalWords
           }
+        stopDetail =
+          "words=" <> show session.currentIntervalWords
+            <> " duration=" <> formatDurationMs closedInterval
+        stopEntry =
+          { timestamp, label: "stop counting", detail: stopDetail }
       in
         session
           { listening = false
@@ -145,19 +184,25 @@ reduce (Toggle timestamp) session
           , captions = pruneCaptions timestamp session.captions
           , eventLog = takeEnd eventLogLimit (session.eventLog <> [ completed ])
           , now = timestamp
+          , diagnostics = recordEntry stopEntry session.diagnostics
           }
   | otherwise =
-      session
-        { listening = true
-        , currentIntervalStart = Just timestamp
-        , currentIntervalWords = 0
-        , firstStartedAt = case session.firstStartedAt of
-            Just t -> Just t
-            Nothing -> Just timestamp
-        , wordEvents = pruneEvents timestamp session.wordEvents
-        , captions = pruneCaptions timestamp session.captions
-        , now = timestamp
-        }
+      let
+        startEntry =
+          { timestamp, label: "start counting", detail: "" }
+      in
+        session
+          { listening = true
+          , currentIntervalStart = Just timestamp
+          , currentIntervalWords = 0
+          , firstStartedAt = case session.firstStartedAt of
+              Just t -> Just t
+              Nothing -> Just timestamp
+          , wordEvents = pruneEvents timestamp session.wordEvents
+          , captions = pruneCaptions timestamp session.captions
+          , now = timestamp
+          , diagnostics = recordEntry startEntry session.diagnostics
+          }
 reduce (InjectFinalTranscript transcript timestamp) session
   | session.listening =
       let
@@ -170,13 +215,22 @@ reduce (InjectFinalTranscript transcript timestamp) session
           , wordEvents = prunedEvents
           , captions = prunedCaptions
           }
-        else session
-          { totalWords = session.totalWords + wordCount
-          , currentIntervalWords = session.currentIntervalWords + wordCount
-          , captions = prunedCaptions <> [ { transcript, wordCount, timestamp } ]
-          , wordEvents = prunedEvents <> [ { timestamp, wordCount } ]
-          , now = timestamp
-          }
+        else
+          let
+            transcriptEntry =
+              { timestamp
+              , label: "final transcript"
+              , detail: "words=" <> show wordCount
+              }
+          in
+            session
+              { totalWords = session.totalWords + wordCount
+              , currentIntervalWords = session.currentIntervalWords + wordCount
+              , captions = prunedCaptions <> [ { transcript, wordCount, timestamp } ]
+              , wordEvents = prunedEvents <> [ { timestamp, wordCount } ]
+              , now = timestamp
+              , diagnostics = recordEntry transcriptEntry session.diagnostics
+              }
   | otherwise = session
       { now = timestamp
       , captions = pruneCaptions timestamp session.captions
@@ -185,6 +239,15 @@ reduce (Tick timestamp) session = session
   { now = timestamp
   , wordEvents = pruneEvents timestamp session.wordEvents
   , captions = pruneCaptions timestamp session.captions
+  }
+reduce (RecordDiagnostic timestamp label detail) session = session
+  { diagnostics = recordEntry { timestamp, label, detail } session.diagnostics
+  }
+reduce (SetEnvironment snapshot) session = session
+  { environment = Just snapshot
+  }
+reduce (SetCopyStatus message) session = session
+  { copyStatus = message
   }
 
 pruneEvents :: Number -> Array WordEvent -> Array WordEvent
@@ -301,8 +364,12 @@ view handlers session =
     , buildStats session
     , buildCaptions session
     , buildEventLog session
+    , buildDiagnostics handlers session
     , buildVersion
     ]
+
+diagnosticsText :: Session -> String
+diagnosticsText session = formatDiagnostics session.environment session.diagnostics
 
 buildTag :: Node
 buildTag =
@@ -545,3 +612,62 @@ buildVersion =
     , style "color" "#7d8590"
     ]
     [ text ("Word Meter (PureScript) v" <> version) ]
+
+buildDiagnostics :: Handlers -> Session -> Node
+buildDiagnostics handlers session =
+  details_ [ testId "wm-diagnostics" ]
+    [ style "margin-top" "16px"
+    , style "padding-top" "10px"
+    , style "border-top" "1px solid rgba(255,255,255,0.08)"
+    , style "font-size" "12px"
+    , style "color" "#9aa5b1"
+    ]
+    [ summary_ [ testId "wm-diagnostics-toggle" ]
+        [ style "cursor" "pointer"
+        , style "user-select" "none"
+        , style "padding" "4px 0"
+        ]
+        []
+        [ text "🔧 Diagnostics" ]
+    , div_ []
+        [ style "display" "flex"
+        , style "align-items" "center"
+        , style "gap" "8px"
+        , style "margin" "8px 0 0 0"
+        ]
+        [ button
+            [ testId "wm-diagnostics-copy", buttonType "button" ]
+            [ style "padding" "8px 12px"
+            , style "border-radius" "999px"
+            , style "border" "1px solid rgba(255,255,255,0.18)"
+            , style "background" "transparent"
+            , style "color" "#e6edf3"
+            , style "cursor" "pointer"
+            , style "font" "inherit"
+            ]
+            [ onClick handlers.requestCopyDiagnostics ]
+            [ text "📋 Copy diagnostics" ]
+        , span_ [ testId "wm-diagnostics-copy-status" ]
+            [ style "color" "#9aa5b1"
+            , style "font-size" "11.5px"
+            ]
+            [ text session.copyStatus ]
+        ]
+    , pre_
+        [ testId "wm-diagnostics-content" ]
+        [ style "margin" "8px 0 0 0"
+        , style "padding" "10px 12px"
+        , style "background" "rgba(255,255,255,0.04)"
+        , style "border" "1px solid rgba(255,255,255,0.08)"
+        , style "border-radius" "8px"
+        , style "font-family" "ui-monospace,SFMono-Regular,Menlo,monospace"
+        , style "font-size" "11.5px"
+        , style "line-height" "1.45"
+        , style "color" "#c9d1d9"
+        , style "white-space" "pre-wrap"
+        , style "word-break" "break-word"
+        , style "max-height" "320px"
+        , style "overflow-y" "auto"
+        ]
+        [ text (diagnosticsText session) ]
+    ]

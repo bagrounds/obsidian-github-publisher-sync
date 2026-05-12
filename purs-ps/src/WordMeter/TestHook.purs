@@ -5,11 +5,13 @@ import Prelude
 import Data.Array (length) as Array
 import Data.Maybe (fromMaybe)
 import Effect (Effect)
+import WordMeter.Diagnostics (diagnosticsLimit)
 import WordMeter.Recording
   ( Action(..)
   , Dispatch
   , Session
   , activeListeningMs
+  , diagnosticsText
   , eventLogLimit
   , longRate
   , overallRate
@@ -34,6 +36,11 @@ foreign import installTestHook
      , getFirstStartedAt :: Effect Number
      , getEventLogLength :: Effect Int
      , getEventLogLimit :: Effect Int
+     , getDiagnosticsText :: Effect String
+     , getDiagnosticsLength :: Effect Int
+     , getDiagnosticsLimit :: Effect Int
+     , getCopyStatus :: Effect String
+     , requestCopyDiagnostics :: Effect Unit
      }
   -> Effect Unit
 
@@ -42,9 +49,10 @@ install
      , readSession :: Effect Session
      , clock :: Effect Number
      , version :: String
+     , requestCopyDiagnostics :: Effect Unit
      }
   -> Effect Unit
-install { dispatch, readSession, clock, version } =
+install { dispatch, readSession, clock, version, requestCopyDiagnostics } =
   installTestHook
     { simulateFinalTranscript: \transcript -> do
         timestamp <- clock
@@ -82,6 +90,11 @@ install { dispatch, readSession, clock, version } =
     , getFirstStartedAt: firstStartedOrNaN <$> readSession
     , getEventLogLength: (\s -> Array.length s.eventLog) <$> readSession
     , getEventLogLimit: pure eventLogLimit
+    , getDiagnosticsText: diagnosticsText <$> readSession
+    , getDiagnosticsLength: (\s -> Array.length s.diagnostics) <$> readSession
+    , getDiagnosticsLimit: pure diagnosticsLimit
+    , getCopyStatus: _.copyStatus <$> readSession
+    , requestCopyDiagnostics
     }
 
 firstStartedOrNaN :: Session -> Number

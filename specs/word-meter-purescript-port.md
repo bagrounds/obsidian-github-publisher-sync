@@ -35,6 +35,9 @@ purs-ps/
     State.purs / State.js  tiny mutable Cell
     Words.purs             pure word counter
     Recording.purs         slices 1–4: session state + reducer + view + rate math + event log
+    Diagnostics.purs       slice 5: pure diagnostics log + environment-snapshot formatters
+    Clipboard.purs / .js   navigator.clipboard.writeText FFI for the diagnostics copy button
+    Environment.purs / .js navigator.userAgent / navigator.language snapshot capture
     TestHook.purs / .js    window.__wordMeter test hook
   test/Test.Main.purs
 scripts/
@@ -73,6 +76,9 @@ When the host page sets `window.__WM_TEST_HOOK__ = true` before loading the bund
 - `getTotalWords()` / `getListening()` / `getVersion()` — read accessors.
 - `getRateShort()` / `getRateLong()` / `getRateOverall()` / `getDurationMs()` / `getFirstStartedAt()` — numeric stats accessors that bypass formatting so tests can assert exact values.
 - `getEventLogLength()` / `getEventLogLimit()` — current size of and cap on the per-counting-session event log.
+- `getDiagnosticsText()` / `getDiagnosticsLength()` / `getDiagnosticsLimit()` — rendered diagnostics text (snapshot + log), current size, and cap on the rolling event log.
+- `getCopyStatus()` — current value of the copy-to-clipboard status span (`""`, `"Copied!"`, or `"Copy failed: <reason>"`).
+- `requestCopyDiagnostics()` — same code path the copy button takes; useful when a test wants to drive the clipboard write without a click.
 
 The hook is the contract the end-to-end suite uses to simulate Web Speech API events.
 
@@ -102,6 +108,11 @@ The hook is the contract the end-to-end suite uses to simulate Web Speech API ev
 - `wm-event-log-entry-duration` — total duration of the counting session, formatted by `formatDurationMs` (e.g. `30s`, `1m 0s`).
 - `wm-event-log-entry-words` — word count for the session, rendered as `<n> w`.
 - `wm-event-log-entry-rate` — words / minute for the session, rendered as `<x> wpm` via `formatRate`.
+- `wm-diagnostics` — collapsible `<details>` drawer; collapsed by default, opens on a tap of the summary.
+- `wm-diagnostics-toggle` — the `<summary>` row labelled `🔧 Diagnostics`.
+- `wm-diagnostics-copy` — the `📋 Copy diagnostics` button. On click the meter calls `navigator.clipboard.writeText` with the rendered text and updates `wm-diagnostics-copy-status` with `Copied!` on success or `Copy failed: <reason>` on failure (including when the Clipboard API is unavailable).
+- `wm-diagnostics-copy-status` — a span next to the copy button, empty until the first copy attempt completes.
+- `wm-diagnostics-content` — a `<pre>` containing the formatted diagnostics text: an environment snapshot prefix (`version`, `userAgent`, `navigator.language`) followed by the rolling event log capped at `diagnosticsLimit` (60) entries. Each event line is `<clock-time>  <label>[ — <detail>]`.
 - `wm-version` — `Word Meter v<x>` footer.
 
 Every implementation must honor this contract. As behavior moves from the legacy build to the new build, the same tests verify both columns.
@@ -114,7 +125,7 @@ Every implementation must honor this contract. As behavior moves from the legacy
 | 2     | Live captions panel (recent utterances strip that decays over a 30s window with opacity fade)           | ✅ Done    |
 | 3     | Real, functioning stats dashboard (words/min over short + long windows, duration, totals)               | ✅ Done    |
 | 4     | Event log with word histories (timeline of completed counting sessions: started, duration, words, wpm) | ✅ Done    |
-| 5     | Fully functional diagnostics panel (collapsible drawer + copy-to-clipboard)                             | ⏳ Pending |
+| 5     | Fully functional diagnostics panel (collapsible drawer + copy-to-clipboard)                             | ✅ Done    |
 | 6     | Reset + persistence (localStorage round-trip)                                                           | ⏳ Pending |
 | 7     | Wake lock + keep-awake toggle                                                                           | ⏳ Pending |
 | 8     | Permission denied + transient-error banner                                                              | ⏳ Pending |
@@ -125,5 +136,5 @@ Every implementation must honor this contract. As behavior moves from the legacy
 
 - `npm run build:ps` — rebuild `quartz/static/word-meter-ps.js`.
 - `npm run clean:ps` — wipe PureScript build artifacts.
-- `npm run test:ps` — `spago test` unit suite (covers the pure rate math: `formatRate`, `formatDurationMs`, `ratePerMinute`, end-to-end reducer runs through `Toggle`/`InjectFinalTranscript`/`Tick`, the slice-4 event-log reducer behavior for completed counting sessions including stop pushes, stop/restart preservation and cap eviction, and the slice-2 caption time-decay including pruning past the 30s window and the linear opacity fade).
+- `npm run test:ps` — `spago test` unit suite (covers the pure rate math: `formatRate`, `formatDurationMs`, `ratePerMinute`, end-to-end reducer runs through `Toggle`/`InjectFinalTranscript`/`Tick`, the slice-4 event-log reducer behavior for completed counting sessions including stop pushes, stop/restart preservation and cap eviction, the slice-2 caption time-decay including pruning past the 30s window and the linear opacity fade, and the slice-5 diagnostics behavior: per-action entry recording, `diagnosticsLimit` cap, `formatDiagnostics` snapshot prefix and placeholder, and the `SetCopyStatus` reducer case).
 - `npm run test:e2e` — Playwright suite against the current PureScript bundle.

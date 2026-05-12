@@ -10,9 +10,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-20T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-05-12T11:45:36Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A stylized, glowing microchip, intricate and complex, sits at the heart of the image. Its internal circuitry pulses with a warm, golden light, subtly hinting at its value and power. From the chip, ethereal, interconnected lines fan out, forming a dynamic, abstract representation of neural pathways or a thinking brain. These lines extend towards the edges, dissolving into a deep, electric blue and purple gradient background that evokes a digital, futuristic landscape. A faint, almost ghost-like silhouette of a human profile could be subtly integrated into the emanating lines, suggesting the visionary behind the machine.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🧠🔌 The Thinking Machine: Jensen Huang, Nvidia, and the World's Most Coveted Microchip  
+![books-the-thinking-machine-jensen-huang-nvidia-and-the-worlds-most-coveted-microchip](../books-the-thinking-machine-jensen-huang-nvidia-and-the-worlds-most-coveted-microchip.jpg)  
 [🛒 The Thinking Machine: Jensen Huang, Nvidia, and the World's Most Coveted Microchip. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4p93S03)  
   
 💡🚀 An engaging look into Jensen Huang's audacious vision that transformed Nvidia from a gaming graphics company into the indispensable engine of the AI revolution, making its specialized microchips the most sought-after hardware globally.  

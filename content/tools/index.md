@@ -5,10 +5,11 @@ aliases:
 title: 🧰 Tools
 backlinks: false
 URL: https://bagrounds.org/tools
-updated: 2026-05-11T08:38:57-07:00
+updated: 2026-05-12T08:40:02-07:00
 ---
 [Home](../index.md)  
-# 🧰 Tools (2)  
+# 🧰 Tools (3)  
 - [🧮 Calculator](./calculator.md)  
 - [🎙️ Word Meter](./word-meter.md)  
+- [🟣 Word Meter (PureScript)](./word-meter-ps.md)  
   

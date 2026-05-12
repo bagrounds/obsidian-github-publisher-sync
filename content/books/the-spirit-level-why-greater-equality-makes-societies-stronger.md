@@ -10,9 +10,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-17T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-05-12T03:15:53Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A minimalist, conceptual illustration featuring a classic carpenter’s spirit level resting horizontally across the center of the frame. The liquid-filled vial in the center of the tool shows the air bubble perfectly centered, representing equilibrium and balance. Behind the tool, a stylized, soft-focus landscape transitions from a dark, jagged silhouette on the left to a smooth, harmonious, and illuminated horizon on the right. Below the tool, several small, identical paper boats of varying colors float on a calm, reflective surface of water, all resting at the exact same waterline, symbolizing a society where everyone shares a stable foundation. The color palette uses cool, professional blues, deep teals, and a bright, crisp white to emphasize clarity, data, and social cohesion. The overall aesthetic is clean, modern, and analytical.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # ⚖️⬆️🤝 The Spirit Level: Why Greater Equality Makes Societies Stronger  
+![books-the-spirit-level-why-greater-equality-makes-societies-stronger](../books-the-spirit-level-why-greater-equality-makes-societies-stronger.jpg)  
 [🛒 The Spirit Level: Why Greater Equality Makes Societies Stronger. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/46SPALE)  
   
 ## ⚖️ The Spirit Level: 🌊 A Rising Tide Lifts All Boats, But Only If the 🚢 Ark Isn't Leaking  

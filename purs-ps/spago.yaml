@@ -1,0 +1,21 @@
+package:
+  name: word-meter
+  dependencies:
+    - prelude
+    - effect
+    - console
+    - maybe
+    - arrays
+    - strings
+    - integers
+    - foldable-traversable
+  test:
+    main: Test.Main
+    dependencies:
+      - prelude
+      - effect
+      - console
+workspace:
+  packageSet:
+    registry: 76.2.1
+  extraPackages: {}

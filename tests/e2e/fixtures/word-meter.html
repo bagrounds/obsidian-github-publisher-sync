@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Word Meter — E2E fixture</title>
+  </head>
+  <body>
+    <div id="word-meter"></div>
+    <script>
+      const params = new URLSearchParams(window.location.search)
+      const build = params.get("build") === "js" ? "js" : "ps"
+      const source = build === "js"
+        ? "/quartz/static/word-meter.js"
+        : "/quartz/static/word-meter-ps.js"
+      window.__WM_TEST_HOOK__ = true
+      const tag = document.createElement("script")
+      tag.src = source
+      tag.dataset.build = build
+      document.body.appendChild(tag)
+    </script>
+  </body>
+</html>

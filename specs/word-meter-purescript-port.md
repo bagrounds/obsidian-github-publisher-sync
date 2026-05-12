@@ -59,7 +59,9 @@ Views are pure functions from state to `Node`. The reducer loop in `Main.purs` r
 
 ## Capability pattern
 
-The capability typeclass scaffolding (à la [`bagrounds/domination`](https://github.com/bagrounds/domination/tree/master/src/Capability) — `class Monad m <= Cap m where …`, per-capability test newtypes, an `AppM` production newtype) grows organically slice by slice. Slices 1–3 need only a thin DOM render, a mutable cell, and a clock effect (`WordMeter.Clock.nowMs`), so they do not yet introduce typeclasses. Slice 6 (persistence) will introduce the first capability (`Storage`); slice 7 (wake lock), slice 9 (recognition) introduce theirs. Each capability stands up next to the feature that needs it.
+Beyond the smallest possible slices, every effect this app needs (clock, storage, wake lock, speech recognition, logging, DOM) lives behind a **capability typeclass**, and production code is written against the typeclasses rather than against `Effect` directly. See [`specs/purescript-capability-pattern.md`](./purescript-capability-pattern.md) for the full pattern: how to declare a capability, how to write the production `AppM` newtype, how to write a deterministic test newtype, and how this delivers swappable implementations + property-testable pure logic.
+
+Capabilities grow organically slice by slice. Slices 1–3 only need a thin DOM render, a mutable cell, and a clock effect, so they still wire `Effect` directly inside `Main`. As soon as a slice needs persistence or wake lock or recognition, that slice introduces the matching capability (`Storage`, `WakeLock`, `Recognition`, …) and lifts the production code into `AppM`. Slices 1–3 will be refactored onto `AppM` once at least one capability is in play — there is no value in setting up `AppM` and `Clock m` before a second capability needs to compose with the first.
 
 ## Test hook
 

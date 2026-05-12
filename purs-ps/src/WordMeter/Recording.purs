@@ -76,14 +76,8 @@ data Action
   | InjectFinalTranscript String Number
   | Tick Number
 
--- | Dispatch a raw, fully-stamped action through the reducer. Production
--- | wires this to a `State.Cell` update plus a re-render; the test hook
--- | exposes it directly so tests can drive deterministic timestamps.
 type Dispatch = Action -> Effect Unit
 
--- | Effects the view triggers in response to user input. The view never
--- | reaches for the clock itself; `Main` stamps each request with `nowMs`
--- | before dispatching, which keeps the view a pure function of state.
 type Handlers =
   { requestToggle :: Effect Unit
   }
@@ -149,19 +143,12 @@ reduce (Tick timestamp) session = session
 pruneEvents :: Number -> Array WordEvent -> Array WordEvent
 pruneEvents nowMs = filter (\event -> event.timestamp >= nowMs - longWindowMs)
 
--- | Total active listening duration in milliseconds, including the open
--- | interval when currently listening. Used as the denominator for the
--- | overall words-per-minute so paused gaps do not deflate the figure.
 activeListeningMs :: Session -> Number
 activeListeningMs session =
   session.completedActiveMs + case session.currentIntervalStart of
     Just start -> max 0.0 (session.now - start)
     Nothing -> 0.0
 
--- | Wall-clock span between the first start and now (zero if never started).
--- | Drives the trailing-window rate denominators so a brand-new session does
--- | not over-claim words-per-minute by dividing by an arbitrarily short
--- | initial slice.
 wallSpanMs :: Session -> Number
 wallSpanMs session = case session.firstStartedAt of
   Nothing -> 0.0
@@ -199,9 +186,6 @@ overallRate :: Session -> Number
 overallRate session =
   ratePerMinute session.totalWords (max 1.0 (activeListeningMs session))
 
--- | Render a words-per-minute figure for the dashboard. Mirrors the legacy
--- | JavaScript build: zero / non-finite values collapse to "0", values at or
--- | above 100 wpm round to a whole number, smaller values show one decimal.
 formatRate :: Number -> String
 formatRate rate
   | not (isFinite rate) = "0"
@@ -215,9 +199,6 @@ formatRate rate
       in
         show wholePart <> "." <> show fracPart
 
--- | Render a duration in milliseconds as a short human-readable string:
--- | seconds below a minute (`"15s"`), `Xm Ys` below an hour, `Xh Ym`
--- | otherwise.
 formatDurationMs :: Number -> String
 formatDurationMs ms =
   let

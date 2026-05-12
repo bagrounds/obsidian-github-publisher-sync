@@ -1,5 +1,5 @@
-export const installTestHookImpl = (api) => () => {
-  if (typeof window === "undefined") return;
+export const installTestHook = (api) => () => {
+  if (typeof window === "undefined") return
   window.__wordMeter = {
     simulateFinalTranscript: (transcript) =>
       api.simulateFinalTranscript(transcript)(),
@@ -18,5 +18,5 @@ export const installTestHookImpl = (api) => () => {
     getRateOverall: () => api.getRateOverall(),
     getDurationMs: () => api.getDurationMs(),
     getFirstStartedAt: () => api.getFirstStartedAt(),
-  };
-};
+  }
+}

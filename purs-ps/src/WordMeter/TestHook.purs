@@ -14,7 +14,7 @@ import WordMeter.Recording
   , shortRate
   )
 
-foreign import installTestHookImpl
+foreign import installTestHook
   :: { simulateFinalTranscript :: String -> Effect Unit
      , simulateFinalTranscriptAt :: String -> Number -> Effect Unit
      , start :: Effect Unit
@@ -33,10 +33,6 @@ foreign import installTestHookImpl
      }
   -> Effect Unit
 
--- | Wire up the `window.__wordMeter` bridge. `dispatch` drops fully
--- | timestamped actions straight into the reducer so tests can drive a
--- | deterministic clock; `clock` is the real wall-clock used by the
--- | non-timestamped convenience entry points.
 install
   :: { dispatch :: Dispatch
      , readSession :: Effect Session
@@ -45,7 +41,7 @@ install
      }
   -> Effect Unit
 install { dispatch, readSession, clock, version } =
-  installTestHookImpl
+  installTestHook
     { simulateFinalTranscript: \transcript -> do
         timestamp <- clock
         dispatch (InjectFinalTranscript transcript timestamp)
@@ -82,11 +78,5 @@ install { dispatch, readSession, clock, version } =
     , getFirstStartedAt: firstStartedOrNaN <$> readSession
     }
 
--- | Surface `firstStartedAt` as a Number across the FFI boundary. Returning
--- | NaN for the "never started" case keeps the JS-facing signature uniform
--- | (always a Number) — callers check for NaN to detect "not yet started".
 firstStartedOrNaN :: Session -> Number
-firstStartedOrNaN session = fromMaybe nanLiteral session.firstStartedAt
-  where
-  -- A single NaN sentinel; pulled out so the case branch stays tidy.
-  nanLiteral = 0.0 / 0.0
+firstStartedOrNaN session = fromMaybe (0.0 / 0.0) session.firstStartedAt

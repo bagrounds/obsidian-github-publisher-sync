@@ -10,9 +10,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-16T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-05-12T07:12:11Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A surreal, split-composition illustration depicting a paradigm shift. On the left, a structured, rigid geometric grid made of glowing lines represents normal science, where tiny, orderly cogs and gears fit perfectly within the framework. As the eye moves toward the right, the grid begins to fracture and dissolve into an organic, chaotic swirl of nebulae and vibrant, abstract light. Emerging from the center of this transition is a glowing, multifaceted crystal—representing a new paradigm—that distorts the space around it. The color palette transitions from cool, muted blues and greys in the structured area to warm, energetic oranges, golds, and deep purples in the revolutionary section, visually capturing the tension and creative rupture between old and new scientific worldviews.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🔬🔄 The Structure of Scientific Revolutions  
+![books-the-structure-of-scientific-revolutions](../books-the-structure-of-scientific-revolutions.jpg)  
 [🛒 The Structure of Scientific Revolutions. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3Id2s4X)  
   
 ## 📚 Book Report: The Structure of Scientific Revolutions by Thomas S. Kuhn  

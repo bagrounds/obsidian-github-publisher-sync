@@ -17,7 +17,11 @@
     "check": "tsc --noEmit && npx prettier . --check",
     "format": "npx prettier . --write",
     "test": "tsx --test",
-    "profile": "0x -D prof ./quartz/bootstrap-cli.mjs build --concurrency=1"
+    "profile": "0x -D prof ./quartz/bootstrap-cli.mjs build --concurrency=1",
+    "build:ps": "node ./scripts/build-word-meter-ps.mjs",
+    "clean:ps": "rm -rf purs-ps/output purs-ps/.spago quartz/static/word-meter-ps.js",
+    "test:ps": "cd purs-ps && npx --prefix .. spago test",
+    "test:e2e": "playwright test"
   },
   "engines": {
     "npm": ">=9.3.1",
@@ -110,6 +114,7 @@
     "@types/ws": "^8.18.1",
     "@types/yargs": "^17.0.33",
     "esbuild": "^0.25.2",
+    "http-server": "^14.1.1",
     "prettier": "^3.5.3",
     "purescript": "^0.15.16",
     "spago": "^1.0.4",

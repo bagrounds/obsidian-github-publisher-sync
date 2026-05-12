@@ -1,0 +1,30 @@
+<!doctype html>
+<!--
+  Fixture page for the Word Meter end-to-end suite.
+
+  Picks the implementation under test from a `?impl=js` or `?impl=ps`
+  query parameter. The Playwright tests in `../word-meter.spec.ts`
+  hit this page through Playwright's webServer (which serves the repo
+  root) so the production `quartz/static/word-meter-*.js` files are
+  loaded by the same path as on the live site.
+-->
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Word Meter — E2E fixture</title>
+  </head>
+  <body>
+    <div id="word-meter"></div>
+    <script>
+      const params = new URLSearchParams(window.location.search)
+      const impl = params.get("impl") === "ps" ? "ps" : "js"
+      const src = impl === "ps"
+        ? "/quartz/static/word-meter-ps.js"
+        : "/quartz/static/word-meter.js"
+      const tag = document.createElement("script")
+      tag.src = src
+      tag.dataset.impl = impl
+      document.body.appendChild(tag)
+    </script>
+  </body>
+</html>

@@ -12,3 +12,13 @@ haskell/dist-newstyle/
 haskell/.cabal-sandbox/
 *.hi
 *.o
+
+# PureScript build artifacts
+purs-ps/output/
+purs-ps/.spago/
+purs-ps/.psa-stash
+.spago/
+
+# Playwright artifacts
+test-results/
+playwright-report/

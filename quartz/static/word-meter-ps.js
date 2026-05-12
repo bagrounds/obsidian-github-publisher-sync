@@ -365,8 +365,15 @@
   var showIntImpl = function(n) {
     return n.toString();
   };
+  var showNumberImpl = function(n) {
+    var str = n.toString();
+    return isNaN(str + ".0") ? str : str + ".0";
+  };
 
   // output/Data.Show/index.js
+  var showNumber = {
+    show: showNumberImpl
+  };
   var showInt = {
     show: showIntImpl
   };
@@ -882,6 +889,7 @@
   var max1 = /* @__PURE__ */ max(ordInt);
   var append1 = /* @__PURE__ */ append(semigroupArray);
   var map2 = /* @__PURE__ */ map(functorArray);
+  var show1 = /* @__PURE__ */ show(showNumber);
   var Toggle = /* @__PURE__ */ function() {
     function Toggle2(value0) {
       this.value0 = value0;
@@ -937,7 +945,7 @@
       return max3(0)(session.now - session.firstStartedAt.value0);
     }
     ;
-    throw new Error("Failed pattern match at WordMeter.Recording (line 168, column 22 - line 170, column 46): " + [session.firstStartedAt.constructor.name]);
+    throw new Error("Failed pattern match at WordMeter.Recording (line 203, column 22 - line 205, column 46): " + [session.firstStartedAt.constructor.name]);
   };
   var statTileValue = function(valueTestId) {
     return function(valueText) {
@@ -959,9 +967,10 @@
       return formatClockTime(session.firstStartedAt.value0);
     }
     ;
-    throw new Error("Failed pattern match at WordMeter.Recording (line 371, column 24 - line 373, column 46): " + [session.firstStartedAt.constructor.name]);
+    throw new Error("Failed pattern match at WordMeter.Recording (line 420, column 24 - line 422, column 46): " + [session.firstStartedAt.constructor.name]);
   };
   var shortWindowMs = 6e4;
+  var minimumCaptionOpacity = 0.15;
   var millisecondsPerSecond = 1e3;
   var millisecondsPerMinute = 6e4;
   var ratePerMinute = function(wordCount) {
@@ -974,7 +983,7 @@
         return toNumber(wordCount) * millisecondsPerMinute / elapsedMs;
       }
       ;
-      throw new Error("Failed pattern match at WordMeter.Recording (line 181, column 1 - line 181, column 41): " + [wordCount.constructor.name, elapsedMs.constructor.name]);
+      throw new Error("Failed pattern match at WordMeter.Recording (line 216, column 1 - line 216, column 41): " + [wordCount.constructor.name, elapsedMs.constructor.name]);
     };
   };
   var shortRate = function(session) {
@@ -991,6 +1000,12 @@
     var elapsed = min3(longWindowMs)(max3(1)(wallSpanMs(session)));
     return ratePerMinute(wordsInTrailingWindow(longWindowMs)(session))(elapsed);
   };
+  var intervalDurationMs = function(interval) {
+    return max3(0)(interval.endedAt - interval.startedAt);
+  };
+  var intervalRate = function(interval) {
+    return ratePerMinute(interval.wordCount)(max3(1)(intervalDurationMs(interval)));
+  };
   var initialSession = /* @__PURE__ */ function() {
     return {
       listening: false,
@@ -998,6 +1013,7 @@
       captions: [],
       wordEvents: [],
       eventLog: [],
+      currentIntervalWords: 0,
       firstStartedAt: Nothing.value,
       currentIntervalStart: Nothing.value,
       completedActiveMs: 0,
@@ -1025,19 +1041,19 @@
       return show2(wholePart) + ("." + show2(fracPart));
     }
     ;
-    throw new Error("Failed pattern match at WordMeter.Recording (line 204, column 1 - line 204, column 31): " + [rate.constructor.name]);
+    throw new Error("Failed pattern match at WordMeter.Recording (line 253, column 1 - line 253, column 31): " + [rate.constructor.name]);
   };
   var formatDurationMs = function(ms) {
     var totalSeconds = max1(0)(floor2(ms / millisecondsPerSecond));
-    var $34 = totalSeconds < 60;
-    if ($34) {
+    var $35 = totalSeconds < 60;
+    if ($35) {
       return show2(totalSeconds) + "s";
     }
     ;
     var totalMinutes = div1(totalSeconds)(60);
     var seconds = mod2(totalSeconds)(60);
-    var $35 = totalMinutes < 60;
-    if ($35) {
+    var $36 = totalMinutes < 60;
+    if ($36) {
       return show2(totalMinutes) + ("m " + (show2(seconds) + "s"));
     }
     ;
@@ -1047,40 +1063,55 @@
   };
   var eventLogLimit = 200;
   var eventLogEntryWords = function(wordCount) {
-    return span_([testId("wm-event-log-entry-words")])([style("font-variant-numeric")("tabular-nums"), style("color")("#e6edf3"), style("min-width")("40px"), style("text-align")("right")])([text(show2(wordCount) + " w")]);
+    return span_([testId("wm-event-log-entry-words")])([style("font-variant-numeric")("tabular-nums"), style("color")("#e6edf3"), style("min-width")("56px"), style("text-align")("right")])([text(show2(wordCount) + " w")]);
   };
-  var eventLogEntryTranscript = function(transcript) {
-    return span_([testId("wm-event-log-entry-transcript")])([style("color")("#c9d1d9"), style("flex")("1"), style("line-height")("1.3")])([text(transcript)]);
+  var eventLogEntryStarted = function(startedAt) {
+    return span_([testId("wm-event-log-entry-started")])([style("font-variant-numeric")("tabular-nums"), style("color")("#9aa5b1"), style("min-width")("72px")])([text(formatClockTime(startedAt))]);
   };
-  var eventLogEntryTime = function(timestamp) {
-    return span_([testId("wm-event-log-entry-time")])([style("font-variant-numeric")("tabular-nums"), style("color")("#9aa5b1"), style("min-width")("56px")])([text(formatClockTime(timestamp))]);
+  var eventLogEntryRate = function(rate) {
+    return span_([testId("wm-event-log-entry-rate")])([style("font-variant-numeric")("tabular-nums"), style("color")("#9aa5b1"), style("min-width")("64px"), style("text-align")("right")])([text(formatRate(rate) + " wpm")]);
   };
-  var captionHistoryLimit = 6;
+  var eventLogEntryDuration = function(durationMs) {
+    return span_([testId("wm-event-log-entry-duration")])([style("font-variant-numeric")("tabular-nums"), style("color")("#c9d1d9"), style("flex")("1"), style("text-align")("center")])([text(formatDurationMs(durationMs))]);
+  };
+  var captionWindowMs = 3e4;
+  var pruneCaptions = function(nowMs2) {
+    return filter(function(caption) {
+      return caption.timestamp >= nowMs2 - captionWindowMs;
+    });
+  };
   var reduce = function(v) {
     return function(v1) {
       if (v instanceof Toggle) {
         if (v1.listening) {
-          var closedInterval = function() {
+          var startedAt = function() {
             if (v1.currentIntervalStart instanceof Just) {
-              return max3(0)(v.value0 - v1.currentIntervalStart.value0);
+              return v1.currentIntervalStart.value0;
             }
             ;
             if (v1.currentIntervalStart instanceof Nothing) {
-              return 0;
+              return v.value0;
             }
             ;
-            throw new Error("Failed pattern match at WordMeter.Recording (line 115, column 26 - line 117, column 25): " + [v1.currentIntervalStart.constructor.name]);
+            throw new Error("Failed pattern match at WordMeter.Recording (line 129, column 21 - line 131, column 31): " + [v1.currentIntervalStart.constructor.name]);
           }();
+          var completed = {
+            startedAt,
+            endedAt: max3(v.value0)(startedAt),
+            wordCount: v1.currentIntervalWords
+          };
+          var closedInterval = max3(0)(v.value0 - startedAt);
           return {
             totalWords: v1.totalWords,
-            captions: v1.captions,
-            eventLog: v1.eventLog,
             firstStartedAt: v1.firstStartedAt,
             lastError: v1.lastError,
             listening: false,
             currentIntervalStart: Nothing.value,
+            currentIntervalWords: 0,
             completedActiveMs: v1.completedActiveMs + closedInterval,
             wordEvents: pruneEvents(v.value0)(v1.wordEvents),
+            captions: pruneCaptions(v.value0)(v1.captions),
+            eventLog: takeEnd(eventLogLimit)(append1(v1.eventLog)([completed])),
             now: v.value0
           };
         }
@@ -1088,12 +1119,12 @@
         if (otherwise) {
           return {
             totalWords: v1.totalWords,
-            captions: v1.captions,
             eventLog: v1.eventLog,
             completedActiveMs: v1.completedActiveMs,
             lastError: v1.lastError,
             listening: true,
             currentIntervalStart: new Just(v.value0),
+            currentIntervalWords: 0,
             firstStartedAt: function() {
               if (v1.firstStartedAt instanceof Just) {
                 return new Just(v1.firstStartedAt.value0);
@@ -1103,9 +1134,10 @@
                 return new Just(v.value0);
               }
               ;
-              throw new Error("Failed pattern match at WordMeter.Recording (line 130, column 28 - line 132, column 38): " + [v1.firstStartedAt.constructor.name]);
+              throw new Error("Failed pattern match at WordMeter.Recording (line 154, column 28 - line 156, column 38): " + [v1.firstStartedAt.constructor.name]);
             }(),
             wordEvents: pruneEvents(v.value0)(v1.wordEvents),
+            captions: pruneCaptions(v.value0)(v1.captions),
             now: v.value0
           };
         }
@@ -1115,43 +1147,43 @@
       if (v instanceof InjectFinalTranscript) {
         if (v1.listening) {
           var wordCount = countWords(v.value0);
-          var pruned = pruneEvents(v.value1)(v1.wordEvents);
-          var $43 = wordCount === 0;
-          if ($43) {
+          var prunedEvents = pruneEvents(v.value1)(v1.wordEvents);
+          var prunedCaptions = pruneCaptions(v.value1)(v1.captions);
+          var $44 = wordCount === 0;
+          if ($44) {
             return {
               listening: v1.listening,
               totalWords: v1.totalWords,
-              captions: v1.captions,
               eventLog: v1.eventLog,
+              currentIntervalWords: v1.currentIntervalWords,
               firstStartedAt: v1.firstStartedAt,
               currentIntervalStart: v1.currentIntervalStart,
               completedActiveMs: v1.completedActiveMs,
               lastError: v1.lastError,
               now: v.value1,
-              wordEvents: pruned
+              wordEvents: prunedEvents,
+              captions: prunedCaptions
             };
           }
           ;
           return {
             listening: v1.listening,
+            eventLog: v1.eventLog,
             firstStartedAt: v1.firstStartedAt,
             currentIntervalStart: v1.currentIntervalStart,
             completedActiveMs: v1.completedActiveMs,
             lastError: v1.lastError,
             totalWords: v1.totalWords + wordCount | 0,
-            captions: takeEnd(captionHistoryLimit)(append1(v1.captions)([{
+            currentIntervalWords: v1.currentIntervalWords + wordCount | 0,
+            captions: append1(prunedCaptions)([{
               transcript: v.value0,
-              wordCount
-            }])),
-            wordEvents: append1(pruned)([{
+              wordCount,
+              timestamp: v.value1
+            }]),
+            wordEvents: append1(prunedEvents)([{
               timestamp: v.value1,
               wordCount
             }]),
-            eventLog: takeEnd(eventLogLimit)(append1(v1.eventLog)([{
-              timestamp: v.value1,
-              transcript: v.value0,
-              wordCount
-            }])),
             now: v.value1
           };
         }
@@ -1160,14 +1192,15 @@
           return {
             listening: v1.listening,
             totalWords: v1.totalWords,
-            captions: v1.captions,
             wordEvents: v1.wordEvents,
             eventLog: v1.eventLog,
+            currentIntervalWords: v1.currentIntervalWords,
             firstStartedAt: v1.firstStartedAt,
             currentIntervalStart: v1.currentIntervalStart,
             completedActiveMs: v1.completedActiveMs,
             lastError: v1.lastError,
-            now: v.value1
+            now: v.value1,
+            captions: pruneCaptions(v.value1)(v1.captions)
           };
         }
         ;
@@ -1177,18 +1210,25 @@
         return {
           listening: v1.listening,
           totalWords: v1.totalWords,
-          captions: v1.captions,
           eventLog: v1.eventLog,
+          currentIntervalWords: v1.currentIntervalWords,
           firstStartedAt: v1.firstStartedAt,
           currentIntervalStart: v1.currentIntervalStart,
           completedActiveMs: v1.completedActiveMs,
           lastError: v1.lastError,
           now: v.value0,
-          wordEvents: pruneEvents(v.value0)(v1.wordEvents)
+          wordEvents: pruneEvents(v.value0)(v1.wordEvents),
+          captions: pruneCaptions(v.value0)(v1.captions)
         };
       }
       ;
-      throw new Error("Failed pattern match at WordMeter.Recording (line 111, column 1 - line 111, column 39): " + [v.constructor.name, v1.constructor.name]);
+      throw new Error("Failed pattern match at WordMeter.Recording (line 125, column 1 - line 125, column 39): " + [v.constructor.name, v1.constructor.name]);
+    };
+  };
+  var captionOpacity = function(nowMs2) {
+    return function(captionTimestamp) {
+      var ageFraction = max3(0)(nowMs2 - captionTimestamp) / captionWindowMs;
+      return max3(minimumCaptionOpacity)(1 - ageFraction);
     };
   };
   var buildVersion = /* @__PURE__ */ function() {
@@ -1234,20 +1274,20 @@
               return [];
             }
             ;
-            throw new Error("Failed pattern match at WordMeter.Recording (line 337, column 11 - line 339, column 22): " + [maybeSublabel.constructor.name]);
+            throw new Error("Failed pattern match at WordMeter.Recording (line 386, column 11 - line 388, column 22): " + [maybeSublabel.constructor.name]);
           }()));
         };
       };
     };
   };
-  var buildEventLogPlaceholder = /* @__PURE__ */ div_([/* @__PURE__ */ testId("wm-event-log-placeholder")])([/* @__PURE__ */ style("font-size")("12px"), /* @__PURE__ */ style("color")("#7d8590"), /* @__PURE__ */ style("font-style")("italic")])([/* @__PURE__ */ text("(no events yet \u2014 press Start counting to populate the log)")]);
-  var buildEventLogEntry = function(entry) {
-    return div_([testId("wm-event-log-entry")])([style("display")("flex"), style("justify-content")("space-between"), style("align-items")("baseline"), style("gap")("8px"), style("padding")("6px 0"), style("border-top")("1px solid rgba(255,255,255,0.04)"), style("font-size")("13px")])([eventLogEntryTime(entry.timestamp), eventLogEntryTranscript(entry.transcript), eventLogEntryWords(entry.wordCount)]);
+  var buildEventLogPlaceholder = /* @__PURE__ */ div_([/* @__PURE__ */ testId("wm-event-log-placeholder")])([/* @__PURE__ */ style("font-size")("12px"), /* @__PURE__ */ style("color")("#7d8590"), /* @__PURE__ */ style("font-style")("italic")])([/* @__PURE__ */ text("(no counting sessions yet \u2014 press Start counting to begin)")]);
+  var buildEventLogEntry = function(interval) {
+    return div_([testId("wm-event-log-entry")])([style("display")("flex"), style("justify-content")("space-between"), style("align-items")("baseline"), style("gap")("8px"), style("padding")("6px 0"), style("border-top")("1px solid rgba(255,255,255,0.04)"), style("font-size")("13px")])([eventLogEntryStarted(interval.startedAt), eventLogEntryDuration(intervalDurationMs(interval)), eventLogEntryWords(interval.wordCount), eventLogEntryRate(intervalRate(interval))]);
   };
   var buildEventLog = function(session) {
     return div_([testId("wm-event-log")])([style("margin-top")("14px"), style("padding-top")("10px"), style("border-top")("1px solid rgba(255,255,255,0.08)"), style("display")("flex"), style("flex-direction")("column"), style("gap")("4px"), style("max-height")("220px"), style("overflow-y")("auto")])(function() {
-      var $52 = length(session.eventLog) === 0;
-      if ($52) {
+      var $53 = length(session.eventLog) === 0;
+      if ($53) {
         return [buildEventLogPlaceholder];
       }
       ;
@@ -1258,18 +1298,20 @@
   var buildCount = function(session) {
     return div_([testId("wm-count")])([style("font-size")("48px"), style("font-variant-numeric")("tabular-nums"), style("margin")("4px 0")])([text(show2(session.totalWords))]);
   };
-  var buildCaptionsPlaceholder = /* @__PURE__ */ div_([/* @__PURE__ */ testId("wm-captions-placeholder")])([/* @__PURE__ */ style("font-size")("12px"), /* @__PURE__ */ style("color")("#7d8590"), /* @__PURE__ */ style("font-style")("italic")])([/* @__PURE__ */ text("(nothing yet)")]);
-  var buildCaption = function(caption) {
-    return div_([testId("wm-caption")])([style("font-size")("13px"), style("color")("#c9d1d9"), style("line-height")("1.3")])([text(caption.transcript)]);
+  var buildCaptionsPlaceholder = /* @__PURE__ */ div_([/* @__PURE__ */ testId("wm-captions-placeholder")])([/* @__PURE__ */ style("font-size")("12px"), /* @__PURE__ */ style("color")("#7d8590"), /* @__PURE__ */ style("font-style")("italic")])([/* @__PURE__ */ text("Waiting for speech\u2026")]);
+  var buildCaption = function(nowMs2) {
+    return function(caption) {
+      return div_([testId("wm-caption")])([style("font-size")("13px"), style("color")("#c9d1d9"), style("line-height")("1.3"), style("opacity")(show1(captionOpacity(nowMs2)(caption.timestamp)))])([text(caption.transcript)]);
+    };
   };
   var buildCaptions = function(session) {
     return div_([testId("wm-captions")])([style("margin-top")("14px"), style("padding-top")("10px"), style("border-top")("1px solid rgba(255,255,255,0.08)"), style("display")("flex"), style("flex-direction")("column"), style("gap")("4px"), style("min-height")("20px")])(function() {
-      var $53 = length(session.captions) === 0;
-      if ($53) {
+      var $54 = length(session.captions) === 0;
+      if ($54) {
         return [buildCaptionsPlaceholder];
       }
       ;
-      return map2(buildCaption)(session.captions);
+      return map2(buildCaption(session.now))(session.captions);
     }());
   };
   var activeListeningMs = function(session) {
@@ -1282,7 +1324,7 @@
         return 0;
       }
       ;
-      throw new Error("Failed pattern match at WordMeter.Recording (line 163, column 31 - line 165, column 19): " + [session.currentIntervalStart.constructor.name]);
+      throw new Error("Failed pattern match at WordMeter.Recording (line 198, column 31 - line 200, column 19): " + [session.currentIntervalStart.constructor.name]);
     }();
   };
   var overallRate = function(session) {

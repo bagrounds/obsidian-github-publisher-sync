@@ -72,7 +72,7 @@ When the host page sets `window.__WM_TEST_HOOK__ = true` before loading the bund
 - `tick(timestamp)` — advance the reducer's notion of "now" without dispatching an action; used to recompute rates against a known clock.
 - `getTotalWords()` / `getListening()` / `getVersion()` — read accessors.
 - `getRateShort()` / `getRateLong()` / `getRateOverall()` / `getDurationMs()` / `getFirstStartedAt()` — numeric stats accessors that bypass formatting so tests can assert exact values.
-- `getEventLogLength()` / `getEventLogLimit()` — current size of and cap on the per-utterance event log.
+- `getEventLogLength()` / `getEventLogLimit()` — current size of and cap on the per-counting-session event log.
 
 The hook is the contract the end-to-end suite uses to simulate Web Speech API events.
 
@@ -86,21 +86,22 @@ The hook is the contract the end-to-end suite uses to simulate Web Speech API ev
 - `wm-count` — total words.
 - `wm-count-label` — descriptor.
 - `wm-toggle` — start / stop button.
-- `wm-captions` — captions strip container.
-- `wm-captions-placeholder` — "(nothing yet)" shown when there are no captions.
-- `wm-caption` — one per recognized utterance, in chronological order.
+- `wm-captions` — captions strip container; mostly a troubleshooting aid showing recent recognized utterances as they fade out.
+- `wm-captions-placeholder` — "Waiting for speech…" shown when no caption is within the 30s window.
+- `wm-caption` — one per recognized utterance, in chronological order. Captions older than `captionWindowMs` (30s) are pruned on every action, and their CSS `opacity` fades linearly with age from 1.0 down to `minimumCaptionOpacity` (0.15).
 - `wm-stats` — stats dashboard container.
 - `wm-rate-short` — words / minute over the trailing 1-minute window.
 - `wm-rate-long` — words / minute over the trailing 10-minute window.
 - `wm-rate-overall` — words / minute over total active listening time.
 - `wm-duration` — active listening duration (formatted, e.g. `15s`, `1m 5s`).
 - `wm-started` — clock time when the session first started, or `—` if never started.
-- `wm-event-log` — event log container (per-utterance timeline).
-- `wm-event-log-placeholder` — "(no events yet — press Start counting to populate the log)" shown when there are no logged events.
-- `wm-event-log-entry` — one per recorded utterance, in chronological order (oldest first), capped at the most recent 200 entries.
-- `wm-event-log-entry-time` — clock time when the utterance was recorded.
-- `wm-event-log-entry-transcript` — the transcript text for the utterance.
-- `wm-event-log-entry-words` — word count of the utterance, rendered as `<n> w`.
+- `wm-event-log` — event log container; one row per completed **counting session** (a single start→stop interval). The log persists across stops and restarts so that history accumulates over time.
+- `wm-event-log-placeholder` — "(no counting sessions yet — press Start counting to begin)" shown when no interval has been completed.
+- `wm-event-log-entry` — one per completed counting session, in chronological order (oldest first), capped at the most recent 200 entries.
+- `wm-event-log-entry-started` — clock time when the counting session started.
+- `wm-event-log-entry-duration` — total duration of the counting session, formatted by `formatDurationMs` (e.g. `30s`, `1m 0s`).
+- `wm-event-log-entry-words` — word count for the session, rendered as `<n> w`.
+- `wm-event-log-entry-rate` — words / minute for the session, rendered as `<x> wpm` via `formatRate`.
 - `wm-version` — `Word Meter v<x>` footer.
 
 Every implementation must honor this contract. As behavior moves from the legacy build to the new build, the same tests verify both columns.
@@ -110,9 +111,9 @@ Every implementation must honor this contract. As behavior moves from the legacy
 | Slice | Feature                                                                                                 | Status     |
 | ----- | ------------------------------------------------------------------------------------------------------- | ---------- |
 | 1     | Start / stop recording works e2e (toggle status, button label, transcript-driven count)                 | ✅ Done    |
-| 2     | Live captions panel (latest utterances strip, cap of six entries)                                       | ✅ Done    |
+| 2     | Live captions panel (recent utterances strip that decays over a 30s window with opacity fade)           | ✅ Done    |
 | 3     | Real, functioning stats dashboard (words/min over short + long windows, duration, totals)               | ✅ Done    |
-| 4     | Event log with word histories (timeline of utterances + timestamps)                                     | ✅ Done    |
+| 4     | Event log with word histories (timeline of completed counting sessions: started, duration, words, wpm) | ✅ Done    |
 | 5     | Fully functional diagnostics panel (collapsible drawer + copy-to-clipboard)                             | ⏳ Pending |
 | 6     | Reset + persistence (localStorage round-trip)                                                           | ⏳ Pending |
 | 7     | Wake lock + keep-awake toggle                                                                           | ⏳ Pending |
@@ -124,5 +125,5 @@ Every implementation must honor this contract. As behavior moves from the legacy
 
 - `npm run build:ps` — rebuild `quartz/static/word-meter-ps.js`.
 - `npm run clean:ps` — wipe PureScript build artifacts.
-- `npm run test:ps` — `spago test` unit suite (covers the pure rate math: `formatRate`, `formatDurationMs`, `ratePerMinute`, end-to-end reducer runs through `Toggle`/`InjectFinalTranscript`/`Tick`, and the slice-4 event-log reducer behavior including append, idle no-op, blank skip, stop/restart preservation, and cap eviction).
+- `npm run test:ps` — `spago test` unit suite (covers the pure rate math: `formatRate`, `formatDurationMs`, `ratePerMinute`, end-to-end reducer runs through `Toggle`/`InjectFinalTranscript`/`Tick`, the slice-4 event-log reducer behavior for completed counting sessions including stop pushes, stop/restart preservation and cap eviction, and the slice-2 caption time-decay including pruning past the 30s window and the linear opacity fade).
 - `npm run test:e2e` — Playwright suite against the current PureScript bundle.

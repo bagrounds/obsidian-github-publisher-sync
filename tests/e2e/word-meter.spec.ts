@@ -95,116 +95,117 @@ test.describe("Word Meter — PureScript build — slice 2 — live captions", (
     await expect(page.getByTestId("wm-caption")).toHaveCount(0)
   })
 
-  test("drops empty transcripts and keeps only the most recent six entries", async ({ page }) => {
+  test("drops empty transcripts and prunes captions that age past the 30s window", async ({
+    page,
+  }) => {
     await loadWordMeter(page, "ps")
-    await page.getByTestId("wm-toggle").click()
-    await simulateFinalTranscript(page, "   ")
+    await page.evaluate(() => {
+      window.__wordMeter.startAt(0)
+      window.__wordMeter.simulateFinalTranscriptAt("   ", 100)
+    })
     await expect(page.getByTestId("wm-caption")).toHaveCount(0)
-    for (const phrase of ["one", "two", "three", "four", "five", "six", "seven", "eight"]) {
-      await simulateFinalTranscript(page, phrase)
-    }
+    await page.evaluate(() => {
+      window.__wordMeter.simulateFinalTranscriptAt("early word", 1_000)
+      window.__wordMeter.simulateFinalTranscriptAt("later words", 25_000)
+    })
+    // Both captions are inside the 30s window.
+    await expect(page.getByTestId("wm-caption")).toHaveCount(2)
+    // Tick past the early caption's window; only the later one survives.
+    await page.evaluate(() => window.__wordMeter.tick(35_000))
     const captions = page.getByTestId("wm-caption")
-    await expect(captions).toHaveCount(6)
-    await expect(captions.nth(0)).toHaveText("three")
-    await expect(captions.nth(5)).toHaveText("eight")
+    await expect(captions).toHaveCount(1)
+    await expect(captions.nth(0)).toHaveText("later words")
   })
 })
 
 test.describe("Word Meter — PureScript build — slice 4 — event log", () => {
-  test("renders an empty event log with a placeholder before any speech", async ({ page }) => {
+  test("renders an empty event-log panel with a placeholder before any counting session", async ({
+    page,
+  }) => {
     await loadWordMeter(page, "ps")
     await expect(page.getByTestId("wm-event-log")).toBeVisible()
     await expect(page.getByTestId("wm-event-log-placeholder")).toBeVisible()
     await expect(page.getByTestId("wm-event-log-entry")).toHaveCount(0)
   })
 
-  test("appends one event-log entry per injected final transcript while listening", async ({
-    page,
-  }) => {
+  test("does not log anything while a counting session is still open", async ({ page }) => {
     await loadWordMeter(page, "ps")
     await page.evaluate(() => {
-      window.__wordMeter.startAt(1_700_000_000_000)
-      window.__wordMeter.simulateFinalTranscriptAt("hello there", 1_700_000_001_000)
-      window.__wordMeter.simulateFinalTranscriptAt("general kenobi", 1_700_000_002_000)
+      window.__wordMeter.startAt(0)
+      window.__wordMeter.simulateFinalTranscriptAt("hello there", 5_000)
     })
-    const entries = page.getByTestId("wm-event-log-entry")
-    await expect(entries).toHaveCount(2)
-    // Chronological order: oldest first, newest last.
-    await expect(entries.nth(0).getByTestId("wm-event-log-entry-transcript")).toHaveText(
-      "hello there",
-    )
-    await expect(entries.nth(0).getByTestId("wm-event-log-entry-words")).toHaveText("2 w")
-    await expect(entries.nth(1).getByTestId("wm-event-log-entry-transcript")).toHaveText(
-      "general kenobi",
-    )
-    await expect(entries.nth(1).getByTestId("wm-event-log-entry-words")).toHaveText("2 w")
-    await expect(page.getByTestId("wm-event-log-placeholder")).toHaveCount(0)
-  })
-
-  test("each entry surfaces a non-empty clock-time stamp", async ({ page }) => {
-    await loadWordMeter(page, "ps")
-    await page.evaluate(() => {
-      window.__wordMeter.startAt(1_700_000_000_000)
-      window.__wordMeter.simulateFinalTranscriptAt("one two three", 1_700_000_005_000)
-    })
-    const timeCell = page.getByTestId("wm-event-log-entry").nth(0).getByTestId(
-      "wm-event-log-entry-time",
-    )
-    await expect(timeCell).toBeVisible()
-    const timeText = (await timeCell.textContent()) ?? ""
-    expect(timeText.trim().length).toBeGreaterThan(0)
-    expect(timeText).not.toBe("—")
-  })
-
-  test("does not log an entry while idle or for empty / whitespace transcripts", async ({
-    page,
-  }) => {
-    await loadWordMeter(page, "ps")
-    await simulateFinalTranscript(page, "noise while idle")
-    await expect(page.getByTestId("wm-event-log-entry")).toHaveCount(0)
-    await page.getByTestId("wm-toggle").click()
-    await simulateFinalTranscript(page, "   ")
     await expect(page.getByTestId("wm-event-log-entry")).toHaveCount(0)
     await expect(page.getByTestId("wm-event-log-placeholder")).toBeVisible()
   })
 
-  test("event log is preserved across stop and restart", async ({ page }) => {
+  test("stop pushes one entry with started clock, duration, word count and wpm rate", async ({
+    page,
+  }) => {
+    await loadWordMeter(page, "ps")
+    await page.evaluate(() => {
+      window.__wordMeter.startAt(1_700_000_000_000)
+      window.__wordMeter.simulateFinalTranscriptAt(
+        "one two three",
+        1_700_000_005_000,
+      )
+      window.__wordMeter.stopAt(1_700_000_030_000)
+    })
+    const entry = page.getByTestId("wm-event-log-entry").nth(0)
+    await expect(entry).toBeVisible()
+    await expect(entry.getByTestId("wm-event-log-entry-duration")).toHaveText("30s")
+    await expect(entry.getByTestId("wm-event-log-entry-words")).toHaveText("3 w")
+    await expect(entry.getByTestId("wm-event-log-entry-rate")).toHaveText("6.0 wpm")
+    const startedText =
+      (await entry.getByTestId("wm-event-log-entry-started").textContent()) ?? ""
+    expect(startedText.trim().length).toBeGreaterThan(0)
+  })
+
+  test("stop/restart appends a second entry in chronological order", async ({ page }) => {
     await loadWordMeter(page, "ps")
     await page.evaluate(() => {
       window.__wordMeter.startAt(0)
       window.__wordMeter.simulateFinalTranscriptAt("alpha", 1_000)
-      window.__wordMeter.stopAt(2_000)
-      window.__wordMeter.startAt(3_000)
-      window.__wordMeter.simulateFinalTranscriptAt("beta gamma", 4_000)
+      window.__wordMeter.stopAt(60_000) // 1 word / 60s → 1.0 wpm
+      window.__wordMeter.startAt(120_000)
+      window.__wordMeter.simulateFinalTranscriptAt("beta gamma delta", 130_000)
+      window.__wordMeter.stopAt(240_000) // 3 words / 120s → 1.5 wpm
     })
     const entries = page.getByTestId("wm-event-log-entry")
     await expect(entries).toHaveCount(2)
-    await expect(entries.nth(0).getByTestId("wm-event-log-entry-transcript")).toHaveText("alpha")
-    await expect(entries.nth(1).getByTestId("wm-event-log-entry-transcript")).toHaveText(
-      "beta gamma",
-    )
+    await expect(entries.nth(0).getByTestId("wm-event-log-entry-duration")).toHaveText("1m 0s")
+    await expect(entries.nth(0).getByTestId("wm-event-log-entry-words")).toHaveText("1 w")
+    await expect(entries.nth(0).getByTestId("wm-event-log-entry-rate")).toHaveText("1.0 wpm")
+    await expect(entries.nth(1).getByTestId("wm-event-log-entry-duration")).toHaveText("2m 0s")
+    await expect(entries.nth(1).getByTestId("wm-event-log-entry-words")).toHaveText("3 w")
+    await expect(entries.nth(1).getByTestId("wm-event-log-entry-rate")).toHaveText("1.5 wpm")
   })
 
-  test("caps the event log at the most recent entries", async ({ page }) => {
+  test("intervals with no recognized utterances log a zero-word session", async ({ page }) => {
+    await loadWordMeter(page, "ps")
+    await page.evaluate(() => {
+      window.__wordMeter.startAt(0)
+      window.__wordMeter.simulateFinalTranscriptAt("   ", 1_000)
+      window.__wordMeter.stopAt(15_000)
+    })
+    const entry = page.getByTestId("wm-event-log-entry").nth(0)
+    await expect(entry.getByTestId("wm-event-log-entry-words")).toHaveText("0 w")
+    await expect(entry.getByTestId("wm-event-log-entry-duration")).toHaveText("15s")
+    await expect(entry.getByTestId("wm-event-log-entry-rate")).toHaveText("0 wpm")
+  })
+
+  test("caps the event log at the most recent counting sessions", async ({ page }) => {
     await loadWordMeter(page, "ps")
     const limit = await page.evaluate(() => window.__wordMeter.getEventLogLimit())
     expect(limit).toBeGreaterThan(0)
     await page.evaluate((capacity) => {
-      window.__wordMeter.startAt(0)
-      for (let utteranceIndex = 0; utteranceIndex < capacity + 5; utteranceIndex++) {
-        window.__wordMeter.simulateFinalTranscriptAt(
-          `utterance number ${utteranceIndex}`,
-          (utteranceIndex + 1) * 1000,
-        )
+      for (let intervalIndex = 0; intervalIndex < capacity + 5; intervalIndex++) {
+        const startTs = intervalIndex * 10_000
+        window.__wordMeter.startAt(startTs)
+        window.__wordMeter.stopAt(startTs + 1_000)
       }
     }, limit)
     const length = await page.evaluate(() => window.__wordMeter.getEventLogLength())
     expect(length).toBe(limit)
-    // Oldest five utterances were evicted — the first kept entry is utterance #5.
-    const entries = page.getByTestId("wm-event-log-entry")
-    await expect(entries.nth(0).getByTestId("wm-event-log-entry-transcript")).toHaveText(
-      "utterance number 5",
-    )
   })
 })
 

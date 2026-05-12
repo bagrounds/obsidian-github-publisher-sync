@@ -2,14 +2,15 @@ module WordMeter.Recording
   ( Session
   , Caption
   , WordEvent
-  , LoggedEvent
+  , LoggedInterval
   , Action(..)
   , Dispatch
   , Handlers
   , initialSession
   , reduce
   , view
-  , captionHistoryLimit
+  , captionWindowMs
+  , minimumCaptionOpacity
   , eventLogLimit
   , shortWindowMs
   , longWindowMs
@@ -17,6 +18,9 @@ module WordMeter.Recording
   , wallSpanMs
   , wordsInTrailingWindow
   , ratePerMinute
+  , intervalRate
+  , intervalDurationMs
+  , captionOpacity
   , shortRate
   , longRate
   , overallRate
@@ -26,7 +30,8 @@ module WordMeter.Recording
 
 import Prelude
 
-import Data.Array (filter, foldl, length, takeEnd)
+import Data.Array (filter, foldl, takeEnd)
+import Data.Array (length) as Array
 import Data.Int as Int
 import Data.Maybe (Maybe(..))
 import Data.Number (isFinite)
@@ -41,7 +46,8 @@ type Session =
   , totalWords :: Int
   , captions :: Array Caption
   , wordEvents :: Array WordEvent
-  , eventLog :: Array LoggedEvent
+  , eventLog :: Array LoggedInterval
+  , currentIntervalWords :: Int
   , firstStartedAt :: Maybe Number
   , currentIntervalStart :: Maybe Number
   , completedActiveMs :: Number
@@ -52,6 +58,7 @@ type Session =
 type Caption =
   { transcript :: String
   , wordCount :: Int
+  , timestamp :: Number
   }
 
 type WordEvent =
@@ -59,14 +66,20 @@ type WordEvent =
   , wordCount :: Int
   }
 
-type LoggedEvent =
-  { timestamp :: Number
-  , transcript :: String
+-- | One completed counting session: a single start-to-stop listening
+-- | interval, with the word count accumulated while listening. WPM is
+-- | derived on demand from `intervalRate`, not stored.
+type LoggedInterval =
+  { startedAt :: Number
+  , endedAt :: Number
   , wordCount :: Int
   }
 
-captionHistoryLimit :: Int
-captionHistoryLimit = 6
+captionWindowMs :: Number
+captionWindowMs = 30000.0
+
+minimumCaptionOpacity :: Number
+minimumCaptionOpacity = 0.15
 
 eventLogLimit :: Int
 eventLogLimit = 200
@@ -101,6 +114,7 @@ initialSession =
   , captions: []
   , wordEvents: []
   , eventLog: []
+  , currentIntervalWords: 0
   , firstStartedAt: Nothing
   , currentIntervalStart: Nothing
   , completedActiveMs: 0.0
@@ -112,51 +126,72 @@ reduce :: Action -> Session -> Session
 reduce (Toggle timestamp) session
   | session.listening =
       let
-        closedInterval = case session.currentIntervalStart of
-          Just start -> max 0.0 (timestamp - start)
-          Nothing -> 0.0
+        startedAt = case session.currentIntervalStart of
+          Just start -> start
+          Nothing -> timestamp
+        closedInterval = max 0.0 (timestamp - startedAt)
+        completed =
+          { startedAt
+          , endedAt: max timestamp startedAt
+          , wordCount: session.currentIntervalWords
+          }
       in
         session
           { listening = false
           , currentIntervalStart = Nothing
+          , currentIntervalWords = 0
           , completedActiveMs = session.completedActiveMs + closedInterval
           , wordEvents = pruneEvents timestamp session.wordEvents
+          , captions = pruneCaptions timestamp session.captions
+          , eventLog = takeEnd eventLogLimit (session.eventLog <> [ completed ])
           , now = timestamp
           }
   | otherwise =
       session
         { listening = true
         , currentIntervalStart = Just timestamp
+        , currentIntervalWords = 0
         , firstStartedAt = case session.firstStartedAt of
             Just t -> Just t
             Nothing -> Just timestamp
         , wordEvents = pruneEvents timestamp session.wordEvents
+        , captions = pruneCaptions timestamp session.captions
         , now = timestamp
         }
 reduce (InjectFinalTranscript transcript timestamp) session
   | session.listening =
       let
         wordCount = countWords transcript
-        pruned = pruneEvents timestamp session.wordEvents
+        prunedEvents = pruneEvents timestamp session.wordEvents
+        prunedCaptions = pruneCaptions timestamp session.captions
       in
-        if wordCount == 0 then session { now = timestamp, wordEvents = pruned }
+        if wordCount == 0 then session
+          { now = timestamp
+          , wordEvents = prunedEvents
+          , captions = prunedCaptions
+          }
         else session
           { totalWords = session.totalWords + wordCount
-          , captions = takeEnd captionHistoryLimit
-              (session.captions <> [ { transcript, wordCount } ])
-          , wordEvents = pruned <> [ { timestamp, wordCount } ]
-          , eventLog = takeEnd eventLogLimit
-              (session.eventLog <> [ { timestamp, transcript, wordCount } ])
+          , currentIntervalWords = session.currentIntervalWords + wordCount
+          , captions = prunedCaptions <> [ { transcript, wordCount, timestamp } ]
+          , wordEvents = prunedEvents <> [ { timestamp, wordCount } ]
           , now = timestamp
           }
-  | otherwise = session { now = timestamp }
+  | otherwise = session
+      { now = timestamp
+      , captions = pruneCaptions timestamp session.captions
+      }
 reduce (Tick timestamp) session = session
   { now = timestamp
   , wordEvents = pruneEvents timestamp session.wordEvents
+  , captions = pruneCaptions timestamp session.captions
   }
 
 pruneEvents :: Number -> Array WordEvent -> Array WordEvent
 pruneEvents nowMs = filter (\event -> event.timestamp >= nowMs - longWindowMs)
+
+pruneCaptions :: Number -> Array Caption -> Array Caption
+pruneCaptions nowMs = filter (\caption -> caption.timestamp >= nowMs - captionWindowMs)
 
 activeListeningMs :: Session -> Number
 activeListeningMs session =
@@ -182,6 +217,20 @@ ratePerMinute :: Int -> Number -> Number
 ratePerMinute wordCount elapsedMs
   | elapsedMs <= 0.0 = 0.0
   | otherwise = Int.toNumber wordCount * millisecondsPerMinute / elapsedMs
+
+intervalDurationMs :: LoggedInterval -> Number
+intervalDurationMs interval = max 0.0 (interval.endedAt - interval.startedAt)
+
+intervalRate :: LoggedInterval -> Number
+intervalRate interval =
+  ratePerMinute interval.wordCount (max 1.0 (intervalDurationMs interval))
+
+captionOpacity :: Number -> Number -> Number
+captionOpacity nowMs captionTimestamp =
+  let
+    ageFraction = max 0.0 (nowMs - captionTimestamp) / captionWindowMs
+  in
+    max minimumCaptionOpacity (1.0 - ageFraction)
 
 shortRate :: Session -> Number
 shortRate session =
@@ -383,9 +432,9 @@ buildCaptions session =
     , style "gap" "4px"
     , style "min-height" "20px"
     ]
-    (if length session.captions == 0
+    (if Array.length session.captions == 0
       then [ buildCaptionsPlaceholder ]
-      else map buildCaption session.captions)
+      else map (buildCaption session.now) session.captions)
 
 buildCaptionsPlaceholder :: Node
 buildCaptionsPlaceholder =
@@ -394,14 +443,15 @@ buildCaptionsPlaceholder =
     , style "color" "#7d8590"
     , style "font-style" "italic"
     ]
-    [ text "(nothing yet)" ]
+    [ text "Waiting for speech…" ]
 
-buildCaption :: Caption -> Node
-buildCaption caption =
+buildCaption :: Number -> Caption -> Node
+buildCaption nowMs caption =
   div_ [ testId "wm-caption" ]
     [ style "font-size" "13px"
     , style "color" "#c9d1d9"
     , style "line-height" "1.3"
+    , style "opacity" (show (captionOpacity nowMs caption.timestamp))
     ]
     [ text caption.transcript ]
 
@@ -417,7 +467,7 @@ buildEventLog session =
     , style "max-height" "220px"
     , style "overflow-y" "auto"
     ]
-    (if length session.eventLog == 0
+    (if Array.length session.eventLog == 0
       then [ buildEventLogPlaceholder ]
       else map buildEventLogEntry session.eventLog)
 
@@ -428,10 +478,10 @@ buildEventLogPlaceholder =
     , style "color" "#7d8590"
     , style "font-style" "italic"
     ]
-    [ text "(no events yet — press Start counting to populate the log)" ]
+    [ text "(no counting sessions yet — press Start counting to begin)" ]
 
-buildEventLogEntry :: LoggedEvent -> Node
-buildEventLogEntry entry =
+buildEventLogEntry :: LoggedInterval -> Node
+buildEventLogEntry interval =
   div_ [ testId "wm-event-log-entry" ]
     [ style "display" "flex"
     , style "justify-content" "space-between"
@@ -441,38 +491,50 @@ buildEventLogEntry entry =
     , style "border-top" "1px solid rgba(255,255,255,0.04)"
     , style "font-size" "13px"
     ]
-    [ eventLogEntryTime entry.timestamp
-    , eventLogEntryTranscript entry.transcript
-    , eventLogEntryWords entry.wordCount
+    [ eventLogEntryStarted interval.startedAt
+    , eventLogEntryDuration (intervalDurationMs interval)
+    , eventLogEntryWords interval.wordCount
+    , eventLogEntryRate (intervalRate interval)
     ]
 
-eventLogEntryTime :: Number -> Node
-eventLogEntryTime timestamp =
-  span_ [ testId "wm-event-log-entry-time" ]
+eventLogEntryStarted :: Number -> Node
+eventLogEntryStarted startedAt =
+  span_ [ testId "wm-event-log-entry-started" ]
     [ style "font-variant-numeric" "tabular-nums"
     , style "color" "#9aa5b1"
-    , style "min-width" "56px"
+    , style "min-width" "72px"
     ]
-    [ text (formatClockTime timestamp) ]
+    [ text (formatClockTime startedAt) ]
 
-eventLogEntryTranscript :: String -> Node
-eventLogEntryTranscript transcript =
-  span_ [ testId "wm-event-log-entry-transcript" ]
-    [ style "color" "#c9d1d9"
+eventLogEntryDuration :: Number -> Node
+eventLogEntryDuration durationMs =
+  span_ [ testId "wm-event-log-entry-duration" ]
+    [ style "font-variant-numeric" "tabular-nums"
+    , style "color" "#c9d1d9"
     , style "flex" "1"
-    , style "line-height" "1.3"
+    , style "text-align" "center"
     ]
-    [ text transcript ]
+    [ text (formatDurationMs durationMs) ]
 
 eventLogEntryWords :: Int -> Node
 eventLogEntryWords wordCount =
   span_ [ testId "wm-event-log-entry-words" ]
     [ style "font-variant-numeric" "tabular-nums"
     , style "color" "#e6edf3"
-    , style "min-width" "40px"
+    , style "min-width" "56px"
     , style "text-align" "right"
     ]
     [ text (show wordCount <> " w") ]
+
+eventLogEntryRate :: Number -> Node
+eventLogEntryRate rate =
+  span_ [ testId "wm-event-log-entry-rate" ]
+    [ style "font-variant-numeric" "tabular-nums"
+    , style "color" "#9aa5b1"
+    , style "min-width" "64px"
+    , style "text-align" "right"
+    ]
+    [ text (formatRate rate <> " wpm") ]
 
 buildVersion :: Node
 buildVersion =

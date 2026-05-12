@@ -109,3 +109,75 @@ test.describe("Word Meter — PureScript build — slice 2 — live captions", (
     await expect(captions.nth(5)).toHaveText("eight")
   })
 })
+
+test.describe("Word Meter — PureScript build — slice 3 — stats dashboard", () => {
+  test("renders all five stat tiles starting at zero / em-dash", async ({ page }) => {
+    await loadWordMeter(page, "ps")
+    await expect(page.getByTestId("wm-stats")).toBeVisible()
+    await expect(page.getByTestId("wm-rate-short")).toContainText("0")
+    await expect(page.getByTestId("wm-rate-long")).toContainText("0")
+    await expect(page.getByTestId("wm-rate-overall")).toContainText("0")
+    await expect(page.getByTestId("wm-duration")).toContainText("0s")
+    await expect(page.getByTestId("wm-started")).toContainText("—")
+  })
+
+  test("captures the first-started timestamp on the very first start", async ({ page }) => {
+    await loadWordMeter(page, "ps")
+    await page.evaluate(() => window.__wordMeter.startAt(1_700_000_000_000))
+    const firstStartedAt = await page.evaluate(() => window.__wordMeter.getFirstStartedAt())
+    expect(firstStartedAt).toBe(1_700_000_000_000)
+    await expect(page.getByTestId("wm-started")).not.toHaveText("—")
+  })
+
+  test("words / minute over the short window after a full minute", async ({ page }) => {
+    await loadWordMeter(page, "ps")
+    await page.evaluate(() => {
+      window.__wordMeter.startAt(0)
+      window.__wordMeter.simulateFinalTranscriptAt("one two three four five six", 10_000)
+      window.__wordMeter.tick(60_000)
+    })
+    expect(await page.evaluate(() => window.__wordMeter.getRateShort())).toBe(6)
+    await expect(page.getByTestId("wm-rate-short")).toHaveText("6.0")
+  })
+
+  test("duration tile reflects active listening time across stop / start", async ({ page }) => {
+    await loadWordMeter(page, "ps")
+    await page.evaluate(() => {
+      window.__wordMeter.startAt(0)
+      window.__wordMeter.stopAt(30_000)
+      window.__wordMeter.startAt(60_000)
+      window.__wordMeter.tick(90_000)
+    })
+    expect(await page.evaluate(() => window.__wordMeter.getDurationMs())).toBe(60_000)
+    await expect(page.getByTestId("wm-duration")).toHaveText("1m 0s")
+  })
+
+  test("overall words / minute uses active listening time, not wall clock", async ({ page }) => {
+    await loadWordMeter(page, "ps")
+    // 6 words spoken over a 120s active-listening total with a 60s paused gap
+    // in the middle. Overall WPM divides by active time (120s) → 3 wpm.
+    await page.evaluate(() => {
+      window.__wordMeter.startAt(0)
+      window.__wordMeter.simulateFinalTranscriptAt("one two three", 30_000)
+      window.__wordMeter.stopAt(60_000)
+      window.__wordMeter.startAt(120_000)
+      window.__wordMeter.simulateFinalTranscriptAt("four five six", 150_000)
+      window.__wordMeter.tick(180_000)
+    })
+    expect(await page.evaluate(() => window.__wordMeter.getRateOverall())).toBe(3)
+    await expect(page.getByTestId("wm-rate-overall")).toHaveText("3.0")
+  })
+
+  test("long-window rate counts everything inside the trailing 10 minutes", async ({ page }) => {
+    await loadWordMeter(page, "ps")
+    await page.evaluate(() => {
+      window.__wordMeter.startAt(0)
+      window.__wordMeter.simulateFinalTranscriptAt("one two three four five", 60_000)
+      window.__wordMeter.simulateFinalTranscriptAt("six seven eight nine ten", 120_000)
+      window.__wordMeter.tick(600_000)
+    })
+    // 10 words / 10 minutes = 1 wpm
+    expect(await page.evaluate(() => window.__wordMeter.getRateLong())).toBe(1)
+    await expect(page.getByTestId("wm-rate-long")).toHaveText("1.0")
+  })
+})

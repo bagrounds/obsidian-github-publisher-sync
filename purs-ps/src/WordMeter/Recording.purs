@@ -1,19 +1,35 @@
 module WordMeter.Recording
   ( Session
   , Caption
+  , WordEvent
   , Action(..)
-  , Send
+  , Dispatch
+  , Handlers
   , initialSession
   , reduce
   , view
   , captionHistoryLimit
+  , shortWindowMs
+  , longWindowMs
+  , activeListeningMs
+  , wallSpanMs
+  , wordsInTrailingWindow
+  , ratePerMinute
+  , shortRate
+  , longRate
+  , overallRate
+  , formatRate
+  , formatDurationMs
   ) where
 
 import Prelude
 
-import Data.Array (length, takeEnd)
+import Data.Array (filter, foldl, length, takeEnd)
+import Data.Int as Int
 import Data.Maybe (Maybe(..))
+import Data.Number (isFinite)
 import Effect (Effect)
+import WordMeter.Clock (formatClockTime)
 import WordMeter.Vdom (Node, button, buttonType, div_, onClick, span_, style, testId, text)
 import WordMeter.Version (version)
 import WordMeter.Words (countWords)
@@ -22,6 +38,11 @@ type Session =
   { listening :: Boolean
   , totalWords :: Int
   , captions :: Array Caption
+  , wordEvents :: Array WordEvent
+  , firstStartedAt :: Maybe Number
+  , currentIntervalStart :: Maybe Number
+  , completedActiveMs :: Number
+  , now :: Number
   , lastError :: Maybe String
   }
 
@@ -30,40 +51,175 @@ type Caption =
   , wordCount :: Int
   }
 
+type WordEvent =
+  { timestamp :: Number
+  , wordCount :: Int
+  }
+
 captionHistoryLimit :: Int
 captionHistoryLimit = 6
 
-data Action
-  = Toggle
-  | InjectFinalTranscript String
+shortWindowMs :: Number
+shortWindowMs = 60000.0
 
-type Send = Action -> Effect Unit
+longWindowMs :: Number
+longWindowMs = 600000.0
+
+millisecondsPerMinute :: Number
+millisecondsPerMinute = 60000.0
+
+millisecondsPerSecond :: Number
+millisecondsPerSecond = 1000.0
+
+data Action
+  = Toggle Number
+  | InjectFinalTranscript String Number
+  | Tick Number
+
+type Dispatch = Action -> Effect Unit
+
+type Handlers =
+  { requestToggle :: Effect Unit
+  }
 
 initialSession :: Session
 initialSession =
   { listening: false
   , totalWords: 0
   , captions: []
+  , wordEvents: []
+  , firstStartedAt: Nothing
+  , currentIntervalStart: Nothing
+  , completedActiveMs: 0.0
+  , now: 0.0
   , lastError: Nothing
   }
 
 reduce :: Action -> Session -> Session
-reduce Toggle session = session { listening = not session.listening }
-reduce (InjectFinalTranscript transcript) session
+reduce (Toggle timestamp) session
+  | session.listening =
+      let
+        closedInterval = case session.currentIntervalStart of
+          Just start -> max 0.0 (timestamp - start)
+          Nothing -> 0.0
+      in
+        session
+          { listening = false
+          , currentIntervalStart = Nothing
+          , completedActiveMs = session.completedActiveMs + closedInterval
+          , wordEvents = pruneEvents timestamp session.wordEvents
+          , now = timestamp
+          }
+  | otherwise =
+      session
+        { listening = true
+        , currentIntervalStart = Just timestamp
+        , firstStartedAt = case session.firstStartedAt of
+            Just t -> Just t
+            Nothing -> Just timestamp
+        , wordEvents = pruneEvents timestamp session.wordEvents
+        , now = timestamp
+        }
+reduce (InjectFinalTranscript transcript timestamp) session
   | session.listening =
       let
         wordCount = countWords transcript
+        pruned = pruneEvents timestamp session.wordEvents
       in
-        if wordCount == 0 then session
+        if wordCount == 0 then session { now = timestamp, wordEvents = pruned }
         else session
           { totalWords = session.totalWords + wordCount
           , captions = takeEnd captionHistoryLimit
               (session.captions <> [ { transcript, wordCount } ])
+          , wordEvents = pruned <> [ { timestamp, wordCount } ]
+          , now = timestamp
           }
-  | otherwise = session
+  | otherwise = session { now = timestamp }
+reduce (Tick timestamp) session = session
+  { now = timestamp
+  , wordEvents = pruneEvents timestamp session.wordEvents
+  }
 
-view :: Send -> Session -> Node
-view send session =
+pruneEvents :: Number -> Array WordEvent -> Array WordEvent
+pruneEvents nowMs = filter (\event -> event.timestamp >= nowMs - longWindowMs)
+
+activeListeningMs :: Session -> Number
+activeListeningMs session =
+  session.completedActiveMs + case session.currentIntervalStart of
+    Just start -> max 0.0 (session.now - start)
+    Nothing -> 0.0
+
+wallSpanMs :: Session -> Number
+wallSpanMs session = case session.firstStartedAt of
+  Nothing -> 0.0
+  Just first -> max 0.0 (session.now - first)
+
+wordsInTrailingWindow :: Number -> Session -> Int
+wordsInTrailingWindow windowMs session =
+  let
+    cutoff = session.now - windowMs
+    inWindow event = event.timestamp >= cutoff
+  in
+    foldl (\acc event -> acc + event.wordCount) 0
+      (filter inWindow session.wordEvents)
+
+ratePerMinute :: Int -> Number -> Number
+ratePerMinute wordCount elapsedMs
+  | elapsedMs <= 0.0 = 0.0
+  | otherwise = Int.toNumber wordCount * millisecondsPerMinute / elapsedMs
+
+shortRate :: Session -> Number
+shortRate session =
+  let
+    elapsed = min shortWindowMs (max 1.0 (wallSpanMs session))
+  in
+    ratePerMinute (wordsInTrailingWindow shortWindowMs session) elapsed
+
+longRate :: Session -> Number
+longRate session =
+  let
+    elapsed = min longWindowMs (max 1.0 (wallSpanMs session))
+  in
+    ratePerMinute (wordsInTrailingWindow longWindowMs session) elapsed
+
+overallRate :: Session -> Number
+overallRate session =
+  ratePerMinute session.totalWords (max 1.0 (activeListeningMs session))
+
+formatRate :: Number -> String
+formatRate rate
+  | not (isFinite rate) = "0"
+  | rate <= 0.0 = "0"
+  | rate >= 100.0 = show (Int.round rate)
+  | otherwise =
+      let
+        scaled = Int.round (rate * 10.0)
+        wholePart = scaled `div` 10
+        fracPart = scaled `mod` 10
+      in
+        show wholePart <> "." <> show fracPart
+
+formatDurationMs :: Number -> String
+formatDurationMs ms =
+  let
+    totalSeconds = max 0 (Int.floor (ms / millisecondsPerSecond))
+  in
+    if totalSeconds < 60 then show totalSeconds <> "s"
+    else
+      let
+        totalMinutes = totalSeconds `div` 60
+        seconds = totalSeconds `mod` 60
+      in
+        if totalMinutes < 60 then show totalMinutes <> "m " <> show seconds <> "s"
+        else
+          let
+            hours = totalMinutes `div` 60
+            minutes = totalMinutes `mod` 60
+          in
+            show hours <> "h " <> show minutes <> "m"
+
+view :: Handlers -> Session -> Node
+view handlers session =
   div_
     [ testId "wm-root" ]
     [ style "font-family" "system-ui, -apple-system, sans-serif"
@@ -77,7 +233,8 @@ view send session =
     , buildStatus session
     , buildCount session
     , buildCountLabel
-    , buildToggle send session
+    , buildToggle handlers session
+    , buildStats session
     , buildCaptions session
     , buildVersion
     ]
@@ -118,8 +275,8 @@ buildCountLabel =
     ]
     [ text "words counted" ]
 
-buildToggle :: Send -> Session -> Node
-buildToggle send session =
+buildToggle :: Handlers -> Session -> Node
+buildToggle handlers session =
   button
     [ testId "wm-toggle", buttonType "button" ]
     [ style "margin-top" "12px"
@@ -131,8 +288,73 @@ buildToggle send session =
     , style "cursor" "pointer"
     , style "font" "inherit"
     ]
-    [ onClick (send Toggle) ]
+    [ onClick handlers.requestToggle ]
     [ text (if session.listening then "Stop counting" else "Start counting") ]
+
+buildStats :: Session -> Node
+buildStats session =
+  div_ [ testId "wm-stats" ]
+    [ style "display" "grid"
+    , style "grid-template-columns" "repeat(auto-fit,minmax(120px,1fr))"
+    , style "gap" "10px"
+    , style "margin-top" "14px"
+    , style "padding-top" "10px"
+    , style "border-top" "1px solid rgba(255,255,255,0.08)"
+    ]
+    [ buildStatTile "wm-rate-short" "Last 1 min" (formatRate (shortRate session)) (Just "words / minute")
+    , buildStatTile "wm-rate-long" "Last 10 min" (formatRate (longRate session)) (Just "words / minute")
+    , buildStatTile "wm-rate-overall" "Overall" (formatRate (overallRate session)) (Just "words / minute")
+    , buildStatTile "wm-duration" "Duration" (formatDurationMs (activeListeningMs session)) (Just "listening time")
+    , buildStatTile "wm-started" "Started" (startedLabel session) Nothing
+    ]
+
+buildStatTile :: String -> String -> String -> Maybe String -> Node
+buildStatTile valueTestId label valueText maybeSublabel =
+  div_ []
+    [ style "background" "rgba(255,255,255,0.04)"
+    , style "border-radius" "10px"
+    , style "padding" "10px"
+    , style "text-align" "center"
+    ]
+    ([ statTileLabel label
+     , statTileValue valueTestId valueText
+     ] <> case maybeSublabel of
+        Just sublabel -> [ statTileSublabel sublabel ]
+        Nothing -> [])
+
+statTileLabel :: String -> Node
+statTileLabel label =
+  div_ []
+    [ style "font-size" "11px"
+    , style "letter-spacing" "0.08em"
+    , style "text-transform" "uppercase"
+    , style "color" "#9aa5b1"
+    ]
+    [ text label ]
+
+statTileValue :: String -> String -> Node
+statTileValue valueTestId valueText =
+  div_ [ testId valueTestId ]
+    [ style "font-size" "20px"
+    , style "font-weight" "600"
+    , style "margin-top" "2px"
+    , style "font-variant-numeric" "tabular-nums"
+    , style "color" "#e6edf3"
+    ]
+    [ text valueText ]
+
+statTileSublabel :: String -> Node
+statTileSublabel sublabel =
+  div_ []
+    [ style "font-size" "11px"
+    , style "color" "#9aa5b1"
+    ]
+    [ text sublabel ]
+
+startedLabel :: Session -> String
+startedLabel session = case session.firstStartedAt of
+  Nothing -> "—"
+  Just timestamp -> formatClockTime timestamp
 
 buildCaptions :: Session -> Node
 buildCaptions session =

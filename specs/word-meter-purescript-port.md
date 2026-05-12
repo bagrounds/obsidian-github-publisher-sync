@@ -30,10 +30,11 @@ purs-ps/
   src/WordMeter/
     Main.purs              entry point + reducer loop
     Version.purs           WORD_METER_VERSION constant
+    Clock.purs / Clock.js  Date.now() + locale clock-time formatter
     Vdom.purs / Vdom.js    typed declarative DOM (Element / Attribute / Style / Listener)
     State.purs / State.js  tiny mutable Cell
     Words.purs             pure word counter
-    Recording.purs         slice 1: session state + reducer + view
+    Recording.purs         slices 1–3: session state + reducer + view + rate math
     TestHook.purs / .js    window.__wordMeter test hook
   test/Test.Main.purs
 scripts/
@@ -58,15 +59,19 @@ Views are pure functions from state to `Node`. The reducer loop in `Main.purs` r
 
 ## Capability pattern
 
-The capability typeclass scaffolding (à la [`bagrounds/domination`](https://github.com/bagrounds/domination/tree/master/src/Capability) — `class Monad m <= Cap m where …`, per-capability test newtypes, an `AppM` production newtype) grows organically slice by slice. Slice 1 needs only a thin DOM render and a mutable cell, so it does not yet introduce typeclasses. Slice 6 (persistence) will introduce the first capability (`Storage`); slice 7 (wake lock), slice 9 (recognition) introduce theirs. Each capability stands up next to the feature that needs it.
+Beyond the smallest possible slices, every effect this app needs (clock, storage, wake lock, speech recognition, logging, DOM) lives behind a **capability typeclass**, and production code is written against the typeclasses rather than against `Effect` directly. See [`specs/purescript-capability-pattern.md`](./purescript-capability-pattern.md) for the full pattern: how to declare a capability, how to write the production `AppM` newtype, how to write a deterministic test newtype, and how this delivers swappable implementations + property-testable pure logic.
+
+Capabilities grow organically slice by slice. Slices 1–3 only need a thin DOM render, a mutable cell, and a clock effect, so they still wire `Effect` directly inside `Main`. As soon as a slice needs persistence or wake lock or recognition, that slice introduces the matching capability (`Storage`, `WakeLock`, `Recognition`, …) and lifts the production code into `AppM`. Slices 1–3 will be refactored onto `AppM` once at least one capability is in play — there is no value in setting up `AppM` and `Clock m` before a second capability needs to compose with the first.
 
 ## Test hook
 
-When the host page sets `window.__WM_TEST_HOOK__ = true` before loading the bundle, the bundle exposes `window.__wordMeter` with:
+When the host page sets `window.__WM_TEST_HOOK__ = true` before loading the bundle, the bundle exposes `window.__wordMeter` with both clock-bound and clock-injectable entry points so the e2e suite can drive deterministic time:
 
-- `simulateFinalTranscript(transcript)` — push a recognized utterance through the reducer.
-- `start()` / `stop()` — toggle listening state.
+- `simulateFinalTranscript(transcript)` / `simulateFinalTranscriptAt(transcript, timestamp)` — push a recognized utterance through the reducer (real wall-clock vs. injected timestamp).
+- `start()` / `stop()` / `startAt(timestamp)` / `stopAt(timestamp)` — toggle listening state.
+- `tick(timestamp)` — advance the reducer's notion of "now" without dispatching an action; used to recompute rates against a known clock.
 - `getTotalWords()` / `getListening()` / `getVersion()` — read accessors.
+- `getRateShort()` / `getRateLong()` / `getRateOverall()` / `getDurationMs()` / `getFirstStartedAt()` — numeric stats accessors that bypass formatting so tests can assert exact values.
 
 The hook is the contract the end-to-end suite uses to simulate Web Speech API events.
 
@@ -83,28 +88,34 @@ The hook is the contract the end-to-end suite uses to simulate Web Speech API ev
 - `wm-captions` — captions strip container.
 - `wm-captions-placeholder` — "(nothing yet)" shown when there are no captions.
 - `wm-caption` — one per recognized utterance, in chronological order.
+- `wm-stats` — stats dashboard container.
+- `wm-rate-short` — words / minute over the trailing 1-minute window.
+- `wm-rate-long` — words / minute over the trailing 10-minute window.
+- `wm-rate-overall` — words / minute over total active listening time.
+- `wm-duration` — active listening duration (formatted, e.g. `15s`, `1m 5s`).
+- `wm-started` — clock time when the session first started, or `—` if never started.
 - `wm-version` — `Word Meter v<x>` footer.
 
 Every implementation must honor this contract. As behavior moves from the legacy build to the new build, the same tests verify both columns.
 
 ## Feature slices
 
-| Slice | Feature | Status |
-| --- | --- | --- |
-| 1 | Start / stop recording works e2e (toggle status, button label, transcript-driven count) | ✅ Done |
-| 2 | Live captions panel (latest utterances strip, cap of six entries) | ✅ Done |
-| 3 | Real, functioning stats dashboard (words/min over short + long windows, duration, totals) | ⏳ Pending |
-| 4 | Event log with word histories (timeline of utterances + timestamps) | ⏳ Pending |
-| 5 | Fully functional diagnostics panel (collapsible drawer + copy-to-clipboard) | ⏳ Pending |
-| 6 | Reset + persistence (localStorage round-trip) | ⏳ Pending |
-| 7 | Wake lock + keep-awake toggle | ⏳ Pending |
-| 8 | Permission denied + transient-error banner | ⏳ Pending |
-| 9 | On-device pre-flight + cloud fallback | ⏳ Pending |
-| 10 | Cutover — point `content/tools/word-meter.md` at the PureScript build, retire legacy JS + sandbox tests | ⏳ Pending |
+| Slice | Feature                                                                                                 | Status     |
+| ----- | ------------------------------------------------------------------------------------------------------- | ---------- |
+| 1     | Start / stop recording works e2e (toggle status, button label, transcript-driven count)                 | ✅ Done    |
+| 2     | Live captions panel (latest utterances strip, cap of six entries)                                       | ✅ Done    |
+| 3     | Real, functioning stats dashboard (words/min over short + long windows, duration, totals)               | ✅ Done    |
+| 4     | Event log with word histories (timeline of utterances + timestamps)                                     | ⏳ Pending |
+| 5     | Fully functional diagnostics panel (collapsible drawer + copy-to-clipboard)                             | ⏳ Pending |
+| 6     | Reset + persistence (localStorage round-trip)                                                           | ⏳ Pending |
+| 7     | Wake lock + keep-awake toggle                                                                           | ⏳ Pending |
+| 8     | Permission denied + transient-error banner                                                              | ⏳ Pending |
+| 9     | On-device pre-flight + cloud fallback                                                                   | ⏳ Pending |
+| 10    | Cutover — point `content/tools/word-meter.md` at the PureScript build, retire legacy JS + sandbox tests | ⏳ Pending |
 
 ## Build, test, bundle
 
 - `npm run build:ps` — rebuild `quartz/static/word-meter-ps.js`.
 - `npm run clean:ps` — wipe PureScript build artifacts.
-- `npm run test:ps` — `spago test` unit suite (currently a placeholder; grows when there's pure logic worth unit-testing alongside its e2e suite).
+- `npm run test:ps` — `spago test` unit suite (currently covers the pure rate math: `formatRate`, `formatDurationMs`, `ratePerMinute`, and end-to-end reducer runs through `Toggle`/`InjectFinalTranscript`/`Tick`).
 - `npm run test:e2e` — Playwright suite against the current PureScript bundle.

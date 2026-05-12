@@ -10,9 +10,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-18T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-05-12T09:18:44Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A soft-focus, vintage watercolor illustration capturing a lush, sun-dappled vegetable garden. In the center, a small, inquisitive brown rabbit with a distinctive blue jacket is caught mid-motion, peeking cautiously from behind a large, leafy green cabbage. Nearby, a row of vibrant orange carrots emerges from dark, rich soil. In the blurred background, the wooden gate of a rustic garden fence stands slightly ajar, suggesting a path to both adventure and potential danger. The color palette features warm earth tones, deep garden greens, and muted pastels, evoking the classic, timeless aesthetic of early 20th-century children’s literature. The lighting is gentle and morning-bright, highlighting the textures of the rabbit’s fur and the dewy garden leaves.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🐰🥕 The Tale of Peter Rabbit  
+![books-the-tale-of-peter-rabbit](../books-the-tale-of-peter-rabbit.jpg)  
 [🛒 The Tale of Peter Rabbit. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4ibUNBY)  
   
 🥕🏡🏃‍♂️ The misadventures of a disobedient rabbit whose curiosity leads him into Mr. McGregor's forbidden garden, culminating in a lesson learned.  

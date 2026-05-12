@@ -10,9 +10,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-25T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-05-12T01:50:59Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A stylized, isometric illustration of a crowded city street transitioning from a cold, monochromatic gray on one side to a vibrant, lush garden on the other. In the center, a diverse group of people of varying ages and backgrounds stand together on a raised platform, their hands joined and raised in a gesture of unity. Below them, a set of balance scales is held by an outstretched hand; one side of the scale holds heavy, dark geometric weights representing inequality, while the other side is filled with bright, glowing community symbols like gears, wheat stalks, and open books. The background features a subtle, geometric sunrise breaking over a skyline of both industrial silhouettes and modern, green-roofed architecture, suggesting a transition toward a new social order.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🚩⚖️ The Socialist Manifesto: The Case for Radical Politics in an Era of Extreme Inequality  
+![books-the-socialist-manifesto-the-case-for-radical-politics-in-an-era-of-extreme-inequality](../books-the-socialist-manifesto-the-case-for-radical-politics-in-an-era-of-extreme-inequality.jpg)  
 [🛒 The Socialist Manifesto: The Case for Radical Politics in an Era of Extreme Inequality. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4lCBiD8)  
   
 ## 📖 Book Report: The Socialist Manifesto: The Case for Radical Politics in an Era of Extreme Inequality  

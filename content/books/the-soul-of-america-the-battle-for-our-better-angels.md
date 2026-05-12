@@ -10,9 +10,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-21T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-05-12T01:51:09Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A minimalist, conceptual illustration featuring a balanced scale set against a deep, textured navy blue background. On one side of the brass scale rests a dark, swirling shadow representing fear and division; on the other side, a glowing, ethereal golden light represents the better angels of hope and unity. The two sides are in a delicate, tense equilibrium. Faint, ghostly silhouettes of historical American figures—a blend of leaders and citizens—are etched into the background, merging with the shadows and light. The overall aesthetic is somber yet hopeful, utilizing a high-contrast palette of gold, charcoal, and deep blue to evoke a sense of historical weight, moral struggle, and the enduring quest for a more perfect union.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 👻🇺🇸⚔️🪽 The Soul of America: The Battle for Our Better Angels  
+![books-the-soul-of-america-the-battle-for-our-better-angels](../books-the-soul-of-america-the-battle-for-our-better-angels.jpg)  
 [🛒 The Soul of America: The Battle for Our Better Angels. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4l8KuiK)  
   
 ## 📖 Book Report: The Soul of America: The Battle for Our Better Angels by Jon Meacham  

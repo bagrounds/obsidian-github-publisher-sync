@@ -11,9 +11,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-16T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-05-11T23:33:50Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A double-exposed, high-contrast illustration featuring a silhouette of a human profile merging into a vast, decaying landscape. The left side of the image depicts a vibrant, lush forest and coral reef, which gradually dissolves into a monochromatic, skeletal wasteland on the right. Floating within the silhouette are delicate, semi-transparent silhouettes of endangered species—a Great Auk, a frog, and a coral branch—slowly fading into dust particles. The lighting is dramatic and moody, utilizing a palette of deep charcoal, muted ochre, and pale, ghostly blues. The composition emphasizes the fragility of life and the encroaching shadow of human industrial impact, set against a backdrop of a cracked, parched earth texture.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 💀🌍📉⏳ The Sixth Extinction: An Unnatural History  
+![books-the-sixth-extinction](../books-the-sixth-extinction.jpg)  
 [🛒 The Sixth Extinction: An Unnatural History. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/43uAnOY)  
   
 ## 🤖 AI Summary  

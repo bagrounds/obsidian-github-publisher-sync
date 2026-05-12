@@ -10,9 +10,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-18T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-05-12T03:16:01Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A high-contrast, minimalist illustration centered on a polished wooden chessboard. On one side, a single white king stands alone; on the other, a cluster of black pawns advances, but their shadows on the board merge into a single, unified silhouette. A thin, glowing red thread winds intricately between the pieces, representing the complex, interdependent nature of strategic bargaining. The lighting is dramatic and cinematic, with sharp highlights on the smooth surfaces of the chess pieces and deep, moody shadows that emphasize a sense of tension and calculation. The background is a dark, out-of-focus gradient of charcoal and deep navy, creating a professional and intellectual atmosphere.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # ⚔️♟️ The Strategy of Conflict  
+![books-the-strategy-of-conflict](../books-the-strategy-of-conflict.jpg)  
 [🛒 The Strategy of Conflict. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/46XRQ2B)  
   
 ## 🤖 AI Summary  

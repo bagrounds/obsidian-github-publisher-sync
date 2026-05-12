@@ -11,6 +11,7 @@ image_date: 2026-04-09T14:45:59Z
 image_model: "@cf/black-forest-labs/flux-1-schnell"
 image_prompt: "A clean, isometric illustration set against a soft, neutral background. At the center, a stylized glowing lightbulb acts as the focal point, representing the spark of knowledge. Radiating outward from the bulb are five distinct, minimalist icons representing the subcategories: a delicate magnifying glass over a stone (Objects), a flowing gear-and-arrow sequence (Processes), a calendar page with a pin (Events), a floating geometric atom (Concepts), and a simple silhouette profile (People). The style is modern and professional, utilizing a vibrant color palette of teals, warm oranges, and soft purples. Soft, diffused lighting creates a sense of clarity and intellectual growth, with subtle, floating abstract shapes like small stars and data points adding a sense of dynamic energy to the composition."
 link_analysis_version: "2"
+updated: 2026-05-12T03:19:04
 ---
 [Home](../index.md) > [Topics](./index.md) > [Knowledge](./a-hierarchical-view-of-human-knowledge.md) > [Social Sciences](./social-sciences.md) > [Communication Studies](./communication-studies.md) > [Public Speaking and Rhetoric](./public-speaking-and-rhetoric.md)  
 # 📢🎓 Informative Speaking  
@@ -41,4 +42,12 @@ Informative speaking is all about sharing knowledge, facts, and understanding wi
 A High-Level Summary: A concise overview of the core principles, goals, and significance of this category.  
 Subcategories: A list of the major subcategories or branches within this category, with a brief description of each.  
 Book Recommendations: A selection of 3-5 influential or accessible books that provide a good introduction to this category or its key subcategories.  
-Use lots of emojis.
+Use lots of emojis.  
+  
+## 🦋 Bluesky    
+<blockquote class="bluesky-embed" data-bluesky-uri="at://did:plc:i4yli6h7x2uoj7acxunww2fc/app.bsky.feed.post/3mlmte3nss22v" data-bluesky-cid="bafyreibgzqiztswo6nnaslle4e4od6rt2mpxpfbkbesahqiwx45mw35zx4"><p>📢🎓 Informative Speaking  
+  
+#AI Q: 🎤 Which topic do you find the most difficult to explain clearly to others?  
+  
+🏫 Education | 🎨 Visual Communication | 📜 Rhetoric | 🧬 Explan  
+https://bagrounds.org/topics/informative-speaking</p>&mdash; <a href="https://bsky.app/profile/did:plc:i4yli6h7x2uoj7acxunww2fc?ref_src=embed">Bryan Grounds (@bagrounds.bsky.social)</a> <a href="https://bsky.app/profile/did:plc:i4yli6h7x2uoj7acxunww2fc/post/3mlmte3nss22v?ref_src=embed">2026-05-12T03:19:17.000Z</a></blockquote><script async src="https://embed.bsky.app/static/embed.js" charset="utf-8"></script>

@@ -12,9 +12,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-16T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-05-11T23:33:43Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A high-contrast conceptual illustration featuring a complex, chaotic storm of static and jagged digital particles filling the left side of the frame. As these particles move toward the right, they coalesce into a sharp, crystalline geometric shape—a glowing, stable prism or a clean, rising data trend line. The background is a deep, moody gradient transitioning from a murky, foggy charcoal grey into a crisp, clear midnight blue. A single, focused beam of light cuts through the chaos, highlighting the emerging order. The aesthetic is clean, modern, and minimalist, utilizing a palette of deep blues, stark whites, and subtle metallic gold accents to represent the value of accurate insight hidden within overwhelming information.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 📡🌫️🔮🎲 The Signal and the Noise: Why So Many Predictions Fail - but Some Don't  
+![books-the-signal-and-the-noise](../books-the-signal-and-the-noise.jpg)  
 [🛒 The Signal and the Noise: Why So Many Predictions Fail - but Some Don't. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4jzABZD)  
   
 ## 🤖 AI Summary  

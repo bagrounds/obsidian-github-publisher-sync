@@ -12,9 +12,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-16T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-05-12T12:46:02Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A minimalist, high-contrast illustration featuring a single, vibrant red domino standing upright on a clean, white surface. Behind it, a long, curved line of black dominoes stretches into the distance, suggesting a chain reaction about to begin. To the side, a small cluster of interconnected glowing nodes—representing a social network—hovers in the air, with one central node pulsing brighter than the others to symbolize a connector. The lighting is dramatic and cinematic, emphasizing the moment of perfect balance before a massive shift occurs. The overall aesthetic is sleek, intellectual, and modern, using negative space to highlight the concept of a small action triggering a large-scale event.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # ⚖️👈 The Tipping Point: How Little Things Can Make a Big Difference  
+![books-the-tipping-point](../books-the-tipping-point.jpg)  
 [🛒 The Tipping Point: How Little Things Can Make a Big Difference. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3FCGeIH)  
   
 ## 📚 Book Report: The Tipping Point by Malcolm Gladwell  

@@ -11,9 +11,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-15T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-05-11T21:41:08Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A bright, minimalist illustration featuring a young child standing confidently at a wooden steering wheel, navigating a small, stylized paper boat across a calm, sunlit sea. The child is looking toward the horizon, symbolizing agency and self-direction. Above, a soft, abstract brain icon glows with warm, golden light, representing clarity and cognitive growth. The background uses a palette of gentle blues, soft greens, and warm yellows to evoke a sense of calm, growth, and optimism. The overall composition is clean and airy, emphasizing the transition from parental control to child-led exploration.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 👨‍🚀 The Self-Driven Child: The 🔬 Science and 🤔 Sense of Giving Your Kids More 🕹️ Control Over Their Lives  
+![books-the-self-driven-child](../books-the-self-driven-child.jpg)  
 [🛒 The Self-Driven Child: The Science and Sense of Giving Your Kids More Control Over Their Lives. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/43pDMhR)  
   
 ## 📝🐒 Human Notes  

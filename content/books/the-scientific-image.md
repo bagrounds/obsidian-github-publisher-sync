@@ -6,9 +6,17 @@ URL: https://bagrounds.org/books/the-scientific-image
 share: true
 affiliate link: https://amzn.to/44x9iLz
 CTA: 🔬 Question everything.
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_time: 2026-04-26T00:00:00Z
+force_analyze_links: false
+link_analysis_version: "2"
+image_date: 2026-05-11T21:41:00Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A minimalist, high-contrast illustration featuring a single human eye looking through a complex, geometric lens. The lens is composed of translucent, overlapping wireframe shapes—cubes, spheres, and polyhedrons—representing scientific models. On one side of the lens, the world is rendered in sharp, realistic detail, representing observable phenomena. On the other side, the background fades into a soft, abstract gradient of muted blues and greys, representing the unobservable realm. Floating, disconnected fragments of light particles hover near the lens, suggesting the ambiguity of scientific truth. The composition is clean, intellectual, and balanced, utilizing a cool color palette of deep navy, slate, and pops of vibrant cyan to evoke a sense of clinical inquiry and philosophical depth.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🧪👁️ The Scientific Image  
+![books-the-scientific-image](../books-the-scientific-image.jpg)  
 [🛒 The Scientific Image. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/44x9iLz)  
   
 ## 📖 Book Report: The Scientific Image by Bas van Fraassen  

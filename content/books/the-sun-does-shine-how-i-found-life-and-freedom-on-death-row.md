@@ -10,9 +10,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-16T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-05-12T07:12:36Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A high-contrast, artistic composition featuring a single, weathered iron prison bar running vertically down the center of the frame. The bar is partially illuminated by a sharp, warm beam of golden sunlight piercing through from the right side, casting a long, distinct shadow against a textured concrete wall. Emerging from the shadow behind the bar, a single, delicate white dove is captured mid-flight, its wings spread wide as it moves toward the light. The overall color palette transitions from the cold, gritty grays of the prison environment on the left to a warm, hopeful amber glow on the right, symbolizing the transition from confinement to freedom and the enduring power of the human spirit.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # ☀️⛓️🕊️ The Sun Does Shine: How I Found Life and Freedom on Death Row  
+![books-the-sun-does-shine-how-i-found-life-and-freedom-on-death-row](../books-the-sun-does-shine-how-i-found-life-and-freedom-on-death-row.jpg)  
 [🛒 The Sun Does Shine: How I Found Life and Freedom on Death Row. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/447m8yH)  
   
 ## 📖 Book Report: ☀️ The Sun Does Shine: How I Found Life and Freedom on Death Row  

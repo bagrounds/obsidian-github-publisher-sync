@@ -11,9 +11,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-16T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-05-11T22:33:15Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A vibrant, glowing double helix forms the central axis. Along its length, small, identical, luminous spheres (genes) are embedded, subtly pulsing. From these spheres, delicate, almost invisible threads extend outwards, subtly guiding or animating translucent, organic silhouettes of various life forms – a bird in flight, a fish swimming, a human figure. The background is a deep, ethereal blue, suggesting the vastness of evolutionary time. The overall feeling is one of intricate, hidden control and pervasive influence.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 👤🧬 The Selfish Gene  
+![books-the-selfish-gene](../books-the-selfish-gene.jpg)  
 [🛒 The Selfish Gene. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4mGO44D)  
   
 ## 📖 Book Report: The Selfish Gene by Richard Dawkins  

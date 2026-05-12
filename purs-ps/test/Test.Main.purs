@@ -6,13 +6,17 @@ module Test.Main where
 
 import Prelude
 
+import Data.Array (head, length) as Array
+import Data.Int as Int
 import Data.Maybe (Maybe(..))
 import Effect (Effect)
 import Effect.Console (log)
 import Effect.Exception (throw)
 import WordMeter.Recording
   ( Action(..)
+  , Session
   , activeListeningMs
+  , eventLogLimit
   , formatDurationMs
   , formatRate
   , initialSession
@@ -31,6 +35,7 @@ main = do
   runFormatRateTests
   runFormatDurationTests
   runReducerStatsTests
+  runEventLogTests
   log "word-meter: all PureScript unit tests passed"
 
 runRatePerMinuteTests :: Effect Unit
@@ -124,3 +129,61 @@ assertEqualBoolean label actual expected =
   if actual == expected then pure unit
   else throw $ label <> ": expected " <> show expected
     <> " but got " <> show actual
+
+runEventLogTests :: Effect Unit
+runEventLogTests = do
+  -- Slice 4: the reducer records a LoggedEvent for every non-empty final
+  -- transcript heard while listening, preserves them across stop/start, and
+  -- caps the log at `eventLogLimit` entries (oldest evicted first).
+  let
+    started = reduce (Toggle 0.0) initialSession
+    first = reduce (InjectFinalTranscript "alpha" 1000.0) started
+    idleNoise = reduce (InjectFinalTranscript "ignored" 1500.0) initialSession
+    blank = reduce (InjectFinalTranscript "   " 2000.0) first
+    stopped = reduce (Toggle 3000.0) blank
+    restarted = reduce (Toggle 4000.0) stopped
+    second = reduce (InjectFinalTranscript "beta gamma" 5000.0) restarted
+  assertEqualInt "event log starts empty"
+    (Array.length initialSession.eventLog) 0
+  assertEqualInt "an utterance while listening adds one entry"
+    (Array.length first.eventLog) 1
+  assertEqualInt "an utterance while idle does not log"
+    (Array.length idleNoise.eventLog) 0
+  assertEqualInt "a blank transcript does not log"
+    (Array.length blank.eventLog) 1
+  assertEqualInt "event log is preserved across stop/restart"
+    (Array.length second.eventLog) 2
+  case second.eventLog of
+    [ a, b ] -> do
+      assertEqualString "first logged transcript" a.transcript "alpha"
+      assertEqualNumber "first logged timestamp" a.timestamp 1000.0
+      assertEqualInt "first logged word count" a.wordCount 1
+      assertEqualString "second logged transcript" b.transcript "beta gamma"
+      assertEqualNumber "second logged timestamp" b.timestamp 5000.0
+      assertEqualInt "second logged word count" b.wordCount 2
+    _ -> throw "event log should contain exactly two entries"
+
+  -- Drive `eventLogLimit + 5` utterances; the oldest five must be evicted.
+  let overrun = stuffEvents (eventLogLimit + 5) started
+  assertEqualInt "event log is capped at eventLogLimit entries"
+    (Array.length overrun.eventLog) eventLogLimit
+  -- The first surviving entry is utterance #5 (after evicting #0..#4).
+  case Array.head overrun.eventLog of
+    Just entry -> assertEqualString
+      "oldest surviving entry corresponds to the 5th utterance"
+      entry.transcript
+      "utterance 5"
+    Nothing -> throw "event log should not be empty after stuffing"
+
+stuffEvents :: Int -> Session -> Session
+stuffEvents total = go 0
+  where
+  go :: Int -> Session -> Session
+  go index session
+    | index >= total = session
+    | otherwise =
+        go (index + 1)
+          (reduce
+            (InjectFinalTranscript ("utterance " <> show index)
+              (Int.toNumber (index + 1) * 100.0))
+            session)

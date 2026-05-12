@@ -937,7 +937,7 @@
       return max3(0)(session.now - session.firstStartedAt.value0);
     }
     ;
-    throw new Error("Failed pattern match at WordMeter.Recording (line 153, column 22 - line 155, column 46): " + [session.firstStartedAt.constructor.name]);
+    throw new Error("Failed pattern match at WordMeter.Recording (line 168, column 22 - line 170, column 46): " + [session.firstStartedAt.constructor.name]);
   };
   var statTileValue = function(valueTestId) {
     return function(valueText) {
@@ -959,7 +959,7 @@
       return formatClockTime(session.firstStartedAt.value0);
     }
     ;
-    throw new Error("Failed pattern match at WordMeter.Recording (line 355, column 24 - line 357, column 46): " + [session.firstStartedAt.constructor.name]);
+    throw new Error("Failed pattern match at WordMeter.Recording (line 371, column 24 - line 373, column 46): " + [session.firstStartedAt.constructor.name]);
   };
   var shortWindowMs = 6e4;
   var millisecondsPerSecond = 1e3;
@@ -974,7 +974,7 @@
         return toNumber(wordCount) * millisecondsPerMinute / elapsedMs;
       }
       ;
-      throw new Error("Failed pattern match at WordMeter.Recording (line 166, column 1 - line 166, column 41): " + [wordCount.constructor.name, elapsedMs.constructor.name]);
+      throw new Error("Failed pattern match at WordMeter.Recording (line 181, column 1 - line 181, column 41): " + [wordCount.constructor.name, elapsedMs.constructor.name]);
     };
   };
   var shortRate = function(session) {
@@ -997,6 +997,7 @@
       totalWords: 0,
       captions: [],
       wordEvents: [],
+      eventLog: [],
       firstStartedAt: Nothing.value,
       currentIntervalStart: Nothing.value,
       completedActiveMs: 0,
@@ -1024,7 +1025,7 @@
       return show2(wholePart) + ("." + show2(fracPart));
     }
     ;
-    throw new Error("Failed pattern match at WordMeter.Recording (line 189, column 1 - line 189, column 31): " + [rate.constructor.name]);
+    throw new Error("Failed pattern match at WordMeter.Recording (line 204, column 1 - line 204, column 31): " + [rate.constructor.name]);
   };
   var formatDurationMs = function(ms) {
     var totalSeconds = max1(0)(floor2(ms / millisecondsPerSecond));
@@ -1044,6 +1045,16 @@
     var hours = div1(totalMinutes)(60);
     return show2(hours) + ("h " + (show2(minutes) + "m"));
   };
+  var eventLogLimit = 200;
+  var eventLogEntryWords = function(wordCount) {
+    return span_([testId("wm-event-log-entry-words")])([style("font-variant-numeric")("tabular-nums"), style("color")("#e6edf3"), style("min-width")("40px"), style("text-align")("right")])([text(show2(wordCount) + " w")]);
+  };
+  var eventLogEntryTranscript = function(transcript) {
+    return span_([testId("wm-event-log-entry-transcript")])([style("color")("#c9d1d9"), style("flex")("1"), style("line-height")("1.3")])([text(transcript)]);
+  };
+  var eventLogEntryTime = function(timestamp) {
+    return span_([testId("wm-event-log-entry-time")])([style("font-variant-numeric")("tabular-nums"), style("color")("#9aa5b1"), style("min-width")("56px")])([text(formatClockTime(timestamp))]);
+  };
   var captionHistoryLimit = 6;
   var reduce = function(v) {
     return function(v1) {
@@ -1058,11 +1069,12 @@
               return 0;
             }
             ;
-            throw new Error("Failed pattern match at WordMeter.Recording (line 102, column 26 - line 104, column 25): " + [v1.currentIntervalStart.constructor.name]);
+            throw new Error("Failed pattern match at WordMeter.Recording (line 115, column 26 - line 117, column 25): " + [v1.currentIntervalStart.constructor.name]);
           }();
           return {
             totalWords: v1.totalWords,
             captions: v1.captions,
+            eventLog: v1.eventLog,
             firstStartedAt: v1.firstStartedAt,
             lastError: v1.lastError,
             listening: false,
@@ -1077,6 +1089,7 @@
           return {
             totalWords: v1.totalWords,
             captions: v1.captions,
+            eventLog: v1.eventLog,
             completedActiveMs: v1.completedActiveMs,
             lastError: v1.lastError,
             listening: true,
@@ -1090,7 +1103,7 @@
                 return new Just(v.value0);
               }
               ;
-              throw new Error("Failed pattern match at WordMeter.Recording (line 117, column 28 - line 119, column 38): " + [v1.firstStartedAt.constructor.name]);
+              throw new Error("Failed pattern match at WordMeter.Recording (line 130, column 28 - line 132, column 38): " + [v1.firstStartedAt.constructor.name]);
             }(),
             wordEvents: pruneEvents(v.value0)(v1.wordEvents),
             now: v.value0
@@ -1109,6 +1122,7 @@
               listening: v1.listening,
               totalWords: v1.totalWords,
               captions: v1.captions,
+              eventLog: v1.eventLog,
               firstStartedAt: v1.firstStartedAt,
               currentIntervalStart: v1.currentIntervalStart,
               completedActiveMs: v1.completedActiveMs,
@@ -1133,6 +1147,11 @@
               timestamp: v.value1,
               wordCount
             }]),
+            eventLog: takeEnd(eventLogLimit)(append1(v1.eventLog)([{
+              timestamp: v.value1,
+              transcript: v.value0,
+              wordCount
+            }])),
             now: v.value1
           };
         }
@@ -1143,6 +1162,7 @@
             totalWords: v1.totalWords,
             captions: v1.captions,
             wordEvents: v1.wordEvents,
+            eventLog: v1.eventLog,
             firstStartedAt: v1.firstStartedAt,
             currentIntervalStart: v1.currentIntervalStart,
             completedActiveMs: v1.completedActiveMs,
@@ -1158,6 +1178,7 @@
           listening: v1.listening,
           totalWords: v1.totalWords,
           captions: v1.captions,
+          eventLog: v1.eventLog,
           firstStartedAt: v1.firstStartedAt,
           currentIntervalStart: v1.currentIntervalStart,
           completedActiveMs: v1.completedActiveMs,
@@ -1167,7 +1188,7 @@
         };
       }
       ;
-      throw new Error("Failed pattern match at WordMeter.Recording (line 98, column 1 - line 98, column 39): " + [v.constructor.name, v1.constructor.name]);
+      throw new Error("Failed pattern match at WordMeter.Recording (line 111, column 1 - line 111, column 39): " + [v.constructor.name, v1.constructor.name]);
     };
   };
   var buildVersion = /* @__PURE__ */ function() {
@@ -1213,11 +1234,25 @@
               return [];
             }
             ;
-            throw new Error("Failed pattern match at WordMeter.Recording (line 321, column 11 - line 323, column 22): " + [maybeSublabel.constructor.name]);
+            throw new Error("Failed pattern match at WordMeter.Recording (line 337, column 11 - line 339, column 22): " + [maybeSublabel.constructor.name]);
           }()));
         };
       };
     };
+  };
+  var buildEventLogPlaceholder = /* @__PURE__ */ div_([/* @__PURE__ */ testId("wm-event-log-placeholder")])([/* @__PURE__ */ style("font-size")("12px"), /* @__PURE__ */ style("color")("#7d8590"), /* @__PURE__ */ style("font-style")("italic")])([/* @__PURE__ */ text("(no events yet \u2014 press Start counting to populate the log)")]);
+  var buildEventLogEntry = function(entry) {
+    return div_([testId("wm-event-log-entry")])([style("display")("flex"), style("justify-content")("space-between"), style("align-items")("baseline"), style("gap")("8px"), style("padding")("6px 0"), style("border-top")("1px solid rgba(255,255,255,0.04)"), style("font-size")("13px")])([eventLogEntryTime(entry.timestamp), eventLogEntryTranscript(entry.transcript), eventLogEntryWords(entry.wordCount)]);
+  };
+  var buildEventLog = function(session) {
+    return div_([testId("wm-event-log")])([style("margin-top")("14px"), style("padding-top")("10px"), style("border-top")("1px solid rgba(255,255,255,0.08)"), style("display")("flex"), style("flex-direction")("column"), style("gap")("4px"), style("max-height")("220px"), style("overflow-y")("auto")])(function() {
+      var $52 = length(session.eventLog) === 0;
+      if ($52) {
+        return [buildEventLogPlaceholder];
+      }
+      ;
+      return map2(buildEventLogEntry)(session.eventLog);
+    }());
   };
   var buildCountLabel = /* @__PURE__ */ div_([/* @__PURE__ */ testId("wm-count-label")])([/* @__PURE__ */ style("font-size")("14px"), /* @__PURE__ */ style("color")("#9aa5b1")])([/* @__PURE__ */ text("words counted")]);
   var buildCount = function(session) {
@@ -1229,8 +1264,8 @@
   };
   var buildCaptions = function(session) {
     return div_([testId("wm-captions")])([style("margin-top")("14px"), style("padding-top")("10px"), style("border-top")("1px solid rgba(255,255,255,0.08)"), style("display")("flex"), style("flex-direction")("column"), style("gap")("4px"), style("min-height")("20px")])(function() {
-      var $52 = length(session.captions) === 0;
-      if ($52) {
+      var $53 = length(session.captions) === 0;
+      if ($53) {
         return [buildCaptionsPlaceholder];
       }
       ;
@@ -1247,7 +1282,7 @@
         return 0;
       }
       ;
-      throw new Error("Failed pattern match at WordMeter.Recording (line 148, column 31 - line 150, column 19): " + [session.currentIntervalStart.constructor.name]);
+      throw new Error("Failed pattern match at WordMeter.Recording (line 163, column 31 - line 165, column 19): " + [session.currentIntervalStart.constructor.name]);
     }();
   };
   var overallRate = function(session) {
@@ -1258,7 +1293,7 @@
   };
   var view = function(handlers) {
     return function(session) {
-      return div_([testId("wm-root")])([style("font-family")("system-ui, -apple-system, sans-serif"), style("padding")("16px"), style("border-radius")("12px"), style("background")("#0b1220"), style("color")("#e6edf3"), style("max-width")("420px")])([buildTag, buildStatus(session), buildCount(session), buildCountLabel, buildToggle(handlers)(session), buildStats(session), buildCaptions(session), buildVersion]);
+      return div_([testId("wm-root")])([style("font-family")("system-ui, -apple-system, sans-serif"), style("padding")("16px"), style("border-radius")("12px"), style("background")("#0b1220"), style("color")("#e6edf3"), style("max-width")("420px")])([buildTag, buildStatus(session), buildCount(session), buildCountLabel, buildToggle(handlers)(session), buildStats(session), buildCaptions(session), buildEventLog(session), buildVersion]);
     };
   };
 
@@ -1299,7 +1334,9 @@
       getRateLong: () => api.getRateLong(),
       getRateOverall: () => api.getRateOverall(),
       getDurationMs: () => api.getDurationMs(),
-      getFirstStartedAt: () => api.getFirstStartedAt()
+      getFirstStartedAt: () => api.getFirstStartedAt(),
+      getEventLogLength: () => api.getEventLogLength(),
+      getEventLogLimit: () => api.getEventLogLimit()
     };
   };
 
@@ -1374,7 +1411,11 @@
       getRateLong: map3(longRate)(v.readSession),
       getRateOverall: map3(overallRate)(v.readSession),
       getDurationMs: map3(activeListeningMs)(v.readSession),
-      getFirstStartedAt: map3(firstStartedOrNaN)(v.readSession)
+      getFirstStartedAt: map3(firstStartedOrNaN)(v.readSession),
+      getEventLogLength: map3(function(s) {
+        return length(s.eventLog);
+      })(v.readSession),
+      getEventLogLimit: pure2(eventLogLimit)
     });
   };
 

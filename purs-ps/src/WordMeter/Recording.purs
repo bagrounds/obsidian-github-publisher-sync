@@ -2,6 +2,7 @@ module WordMeter.Recording
   ( Session
   , Caption
   , WordEvent
+  , LoggedEvent
   , Action(..)
   , Dispatch
   , Handlers
@@ -9,6 +10,7 @@ module WordMeter.Recording
   , reduce
   , view
   , captionHistoryLimit
+  , eventLogLimit
   , shortWindowMs
   , longWindowMs
   , activeListeningMs
@@ -39,6 +41,7 @@ type Session =
   , totalWords :: Int
   , captions :: Array Caption
   , wordEvents :: Array WordEvent
+  , eventLog :: Array LoggedEvent
   , firstStartedAt :: Maybe Number
   , currentIntervalStart :: Maybe Number
   , completedActiveMs :: Number
@@ -56,8 +59,17 @@ type WordEvent =
   , wordCount :: Int
   }
 
+type LoggedEvent =
+  { timestamp :: Number
+  , transcript :: String
+  , wordCount :: Int
+  }
+
 captionHistoryLimit :: Int
 captionHistoryLimit = 6
+
+eventLogLimit :: Int
+eventLogLimit = 200
 
 shortWindowMs :: Number
 shortWindowMs = 60000.0
@@ -88,6 +100,7 @@ initialSession =
   , totalWords: 0
   , captions: []
   , wordEvents: []
+  , eventLog: []
   , firstStartedAt: Nothing
   , currentIntervalStart: Nothing
   , completedActiveMs: 0.0
@@ -132,6 +145,8 @@ reduce (InjectFinalTranscript transcript timestamp) session
           , captions = takeEnd captionHistoryLimit
               (session.captions <> [ { transcript, wordCount } ])
           , wordEvents = pruned <> [ { timestamp, wordCount } ]
+          , eventLog = takeEnd eventLogLimit
+              (session.eventLog <> [ { timestamp, transcript, wordCount } ])
           , now = timestamp
           }
   | otherwise = session { now = timestamp }
@@ -236,6 +251,7 @@ view handlers session =
     , buildToggle handlers session
     , buildStats session
     , buildCaptions session
+    , buildEventLog session
     , buildVersion
     ]
 
@@ -388,6 +404,75 @@ buildCaption caption =
     , style "line-height" "1.3"
     ]
     [ text caption.transcript ]
+
+buildEventLog :: Session -> Node
+buildEventLog session =
+  div_ [ testId "wm-event-log" ]
+    [ style "margin-top" "14px"
+    , style "padding-top" "10px"
+    , style "border-top" "1px solid rgba(255,255,255,0.08)"
+    , style "display" "flex"
+    , style "flex-direction" "column"
+    , style "gap" "4px"
+    , style "max-height" "220px"
+    , style "overflow-y" "auto"
+    ]
+    (if length session.eventLog == 0
+      then [ buildEventLogPlaceholder ]
+      else map buildEventLogEntry session.eventLog)
+
+buildEventLogPlaceholder :: Node
+buildEventLogPlaceholder =
+  div_ [ testId "wm-event-log-placeholder" ]
+    [ style "font-size" "12px"
+    , style "color" "#7d8590"
+    , style "font-style" "italic"
+    ]
+    [ text "(no events yet — press Start counting to populate the log)" ]
+
+buildEventLogEntry :: LoggedEvent -> Node
+buildEventLogEntry entry =
+  div_ [ testId "wm-event-log-entry" ]
+    [ style "display" "flex"
+    , style "justify-content" "space-between"
+    , style "align-items" "baseline"
+    , style "gap" "8px"
+    , style "padding" "6px 0"
+    , style "border-top" "1px solid rgba(255,255,255,0.04)"
+    , style "font-size" "13px"
+    ]
+    [ eventLogEntryTime entry.timestamp
+    , eventLogEntryTranscript entry.transcript
+    , eventLogEntryWords entry.wordCount
+    ]
+
+eventLogEntryTime :: Number -> Node
+eventLogEntryTime timestamp =
+  span_ [ testId "wm-event-log-entry-time" ]
+    [ style "font-variant-numeric" "tabular-nums"
+    , style "color" "#9aa5b1"
+    , style "min-width" "56px"
+    ]
+    [ text (formatClockTime timestamp) ]
+
+eventLogEntryTranscript :: String -> Node
+eventLogEntryTranscript transcript =
+  span_ [ testId "wm-event-log-entry-transcript" ]
+    [ style "color" "#c9d1d9"
+    , style "flex" "1"
+    , style "line-height" "1.3"
+    ]
+    [ text transcript ]
+
+eventLogEntryWords :: Int -> Node
+eventLogEntryWords wordCount =
+  span_ [ testId "wm-event-log-entry-words" ]
+    [ style "font-variant-numeric" "tabular-nums"
+    , style "color" "#e6edf3"
+    , style "min-width" "40px"
+    , style "text-align" "right"
+    ]
+    [ text (show wordCount <> " w") ]
 
 buildVersion :: Node
 buildVersion =

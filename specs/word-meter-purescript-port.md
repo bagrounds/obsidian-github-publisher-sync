@@ -34,7 +34,7 @@ purs-ps/
     Vdom.purs / Vdom.js    typed declarative DOM (Element / Attribute / Style / Listener)
     State.purs / State.js  tiny mutable Cell
     Words.purs             pure word counter
-    Recording.purs         slices 1–3: session state + reducer + view + rate math
+    Recording.purs         slices 1–4: session state + reducer + view + rate math + event log
     TestHook.purs / .js    window.__wordMeter test hook
   test/Test.Main.purs
 scripts/
@@ -72,6 +72,7 @@ When the host page sets `window.__WM_TEST_HOOK__ = true` before loading the bund
 - `tick(timestamp)` — advance the reducer's notion of "now" without dispatching an action; used to recompute rates against a known clock.
 - `getTotalWords()` / `getListening()` / `getVersion()` — read accessors.
 - `getRateShort()` / `getRateLong()` / `getRateOverall()` / `getDurationMs()` / `getFirstStartedAt()` — numeric stats accessors that bypass formatting so tests can assert exact values.
+- `getEventLogLength()` / `getEventLogLimit()` — current size of and cap on the per-utterance event log.
 
 The hook is the contract the end-to-end suite uses to simulate Web Speech API events.
 
@@ -94,6 +95,12 @@ The hook is the contract the end-to-end suite uses to simulate Web Speech API ev
 - `wm-rate-overall` — words / minute over total active listening time.
 - `wm-duration` — active listening duration (formatted, e.g. `15s`, `1m 5s`).
 - `wm-started` — clock time when the session first started, or `—` if never started.
+- `wm-event-log` — event log container (per-utterance timeline).
+- `wm-event-log-placeholder` — "(no events yet — press Start counting to populate the log)" shown when there are no logged events.
+- `wm-event-log-entry` — one per recorded utterance, in chronological order (oldest first), capped at the most recent 200 entries.
+- `wm-event-log-entry-time` — clock time when the utterance was recorded.
+- `wm-event-log-entry-transcript` — the transcript text for the utterance.
+- `wm-event-log-entry-words` — word count of the utterance, rendered as `<n> w`.
 - `wm-version` — `Word Meter v<x>` footer.
 
 Every implementation must honor this contract. As behavior moves from the legacy build to the new build, the same tests verify both columns.
@@ -105,7 +112,7 @@ Every implementation must honor this contract. As behavior moves from the legacy
 | 1     | Start / stop recording works e2e (toggle status, button label, transcript-driven count)                 | ✅ Done    |
 | 2     | Live captions panel (latest utterances strip, cap of six entries)                                       | ✅ Done    |
 | 3     | Real, functioning stats dashboard (words/min over short + long windows, duration, totals)               | ✅ Done    |
-| 4     | Event log with word histories (timeline of utterances + timestamps)                                     | ⏳ Pending |
+| 4     | Event log with word histories (timeline of utterances + timestamps)                                     | ✅ Done    |
 | 5     | Fully functional diagnostics panel (collapsible drawer + copy-to-clipboard)                             | ⏳ Pending |
 | 6     | Reset + persistence (localStorage round-trip)                                                           | ⏳ Pending |
 | 7     | Wake lock + keep-awake toggle                                                                           | ⏳ Pending |
@@ -117,5 +124,5 @@ Every implementation must honor this contract. As behavior moves from the legacy
 
 - `npm run build:ps` — rebuild `quartz/static/word-meter-ps.js`.
 - `npm run clean:ps` — wipe PureScript build artifacts.
-- `npm run test:ps` — `spago test` unit suite (currently covers the pure rate math: `formatRate`, `formatDurationMs`, `ratePerMinute`, and end-to-end reducer runs through `Toggle`/`InjectFinalTranscript`/`Tick`).
+- `npm run test:ps` — `spago test` unit suite (covers the pure rate math: `formatRate`, `formatDurationMs`, `ratePerMinute`, end-to-end reducer runs through `Toggle`/`InjectFinalTranscript`/`Tick`, and the slice-4 event-log reducer behavior including append, idle no-op, blank skip, stop/restart preservation, and cap eviction).
 - `npm run test:e2e` — Playwright suite against the current PureScript bundle.

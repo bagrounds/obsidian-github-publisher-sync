@@ -17,9 +17,11 @@
         },
         "test": {
           "dependencies": [
+            "arrays",
             "console",
             "effect",
             "exceptions",
+            "integers",
             "maybe",
             "prelude"
           ]

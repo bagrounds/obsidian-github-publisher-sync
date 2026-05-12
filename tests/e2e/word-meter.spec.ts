@@ -68,3 +68,44 @@ test.describe("Word Meter — PureScript build — slice 1 — recording", () =>
     await expect(page.getByTestId("wm-count")).toHaveText("5")
   })
 })
+
+test.describe("Word Meter — PureScript build — slice 2 — live captions", () => {
+  test("renders an empty captions panel with a placeholder before any speech", async ({ page }) => {
+    await loadWordMeter(page, "ps")
+    await expect(page.getByTestId("wm-captions")).toBeVisible()
+    await expect(page.getByTestId("wm-captions-placeholder")).toBeVisible()
+    await expect(page.getByTestId("wm-caption")).toHaveCount(0)
+  })
+
+  test("appends one caption per injected final transcript", async ({ page }) => {
+    await loadWordMeter(page, "ps")
+    await page.getByTestId("wm-toggle").click()
+    await simulateFinalTranscript(page, "hello there")
+    await simulateFinalTranscript(page, "general kenobi")
+    const captions = page.getByTestId("wm-caption")
+    await expect(captions).toHaveCount(2)
+    await expect(captions.nth(0)).toHaveText("hello there")
+    await expect(captions.nth(1)).toHaveText("general kenobi")
+    await expect(page.getByTestId("wm-captions-placeholder")).toHaveCount(0)
+  })
+
+  test("does not record a caption while idle", async ({ page }) => {
+    await loadWordMeter(page, "ps")
+    await simulateFinalTranscript(page, "noise")
+    await expect(page.getByTestId("wm-caption")).toHaveCount(0)
+  })
+
+  test("drops empty transcripts and keeps only the most recent six entries", async ({ page }) => {
+    await loadWordMeter(page, "ps")
+    await page.getByTestId("wm-toggle").click()
+    await simulateFinalTranscript(page, "   ")
+    await expect(page.getByTestId("wm-caption")).toHaveCount(0)
+    for (const phrase of ["one", "two", "three", "four", "five", "six", "seven", "eight"]) {
+      await simulateFinalTranscript(page, phrase)
+    }
+    const captions = page.getByTestId("wm-caption")
+    await expect(captions).toHaveCount(6)
+    await expect(captions.nth(0)).toHaveText("three")
+    await expect(captions.nth(5)).toHaveText("eight")
+  })
+})

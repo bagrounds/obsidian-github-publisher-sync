@@ -80,6 +80,9 @@ The hook is the contract the end-to-end suite uses to simulate Web Speech API ev
 - `wm-count` — total words.
 - `wm-count-label` — descriptor.
 - `wm-toggle` — start / stop button.
+- `wm-captions` — captions strip container.
+- `wm-captions-placeholder` — "(nothing yet)" shown when there are no captions.
+- `wm-caption` — one per recognized utterance, in chronological order.
 - `wm-version` — `Word Meter v<x>` footer.
 
 Every implementation must honor this contract. As behavior moves from the legacy build to the new build, the same tests verify both columns.
@@ -89,7 +92,7 @@ Every implementation must honor this contract. As behavior moves from the legacy
 | Slice | Feature | Status |
 | --- | --- | --- |
 | 1 | Start / stop recording works e2e (toggle status, button label, transcript-driven count) | ✅ Done |
-| 2 | Live captions panel (last-30s strip with fade) | ⏳ Pending |
+| 2 | Live captions panel (latest utterances strip, cap of six entries) | ✅ Done |
 | 3 | Real, functioning stats dashboard (words/min over short + long windows, duration, totals) | ⏳ Pending |
 | 4 | Event log with word histories (timeline of utterances + timestamps) | ⏳ Pending |
 | 5 | Fully functional diagnostics panel (collapsible drawer + copy-to-clipboard) | ⏳ Pending |

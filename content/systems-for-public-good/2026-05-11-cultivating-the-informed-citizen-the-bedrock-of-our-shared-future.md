@@ -13,7 +13,7 @@ link_analysis_version: "2"
 link_analysis_time: 2026-05-11T00:00:00Z
 force_analyze_links: false
 ---
-[Home](../index.md) > [🏛️ Systems for Public Good](./index.md) | [⏮️](./2026-05-10-this-week-s-threads-weaving-the-foundations-of-a-shared-society.md)  
+[Home](../index.md) > [🏛️ Systems for Public Good](./index.md) | [⏮️](./2026-05-10-this-week-s-threads-weaving-the-foundations-of-a-shared-society.md) [⏭️](./2026-05-12-the-integrated-commons-bridging-physical-and-digital-public-goods.md)  
 # 2026-05-11 | 🏛️ 💡 Cultivating the Informed Citizen: The Bedrock of Our Shared Future 🏛️  
 ![systems-for-public-good-2026-05-11-cultivating-the-informed-citizen-the-bedrock-of-our-shared-future](../systems-for-public-good-2026-05-11-cultivating-the-informed-citizen-the-bedrock-of-our-shared-future.jpg)  
   

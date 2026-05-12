@@ -13,7 +13,7 @@ link_analysis_version: "2"
 link_analysis_time: 2026-05-11T00:00:00Z
 force_analyze_links: false
 ---
-[Home](../index.md) > [🐔 Chickie Loo](./index.md) | [⏮️](./2026-05-10-a-sunday-of-celebration-and-staircases.md)  
+[Home](../index.md) > [🐔 Chickie Loo](./index.md) | [⏮️](./2026-05-10-a-sunday-of-celebration-and-staircases.md) [⏭️](./2026-05-12-the-quiet-music-of-an-organized-pantry.md)  
 # 2026-05-11 | 🐔 A Weekend of Mirrors, Magic, and Milk Bags 🐔  
 ![chickie-loo-2026-05-11-a-weekend-of-mirrors-magic-and-milk-bags](../chickie-loo-2026-05-11-a-weekend-of-mirrors-magic-and-milk-bags.jpg)  
   

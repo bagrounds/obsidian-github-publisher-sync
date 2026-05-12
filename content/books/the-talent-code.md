@@ -11,9 +11,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-17T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-05-12T09:18:58Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A close-up, high-contrast digital illustration featuring a stylized human brain glowing with vibrant, neon-blue neural pathways. The pathways are thick and luminous, representing myelin sheaths wrapping around active connections. Emerging from the center of the brain is a small, bright green sprout pushing through the neural tissue, symbolizing growth and potential. The background is a deep, dark obsidian, creating a sharp contrast that makes the glowing blue circuits and the green plant pop. The overall aesthetic is clean, modern, and scientific, evoking a sense of transformation and the biological process of skill acquisition through deliberate effort.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 👶🌱📈 The Talent Code: Greatness Isn't Born. It's Grown. Here's How.  
+![books-the-talent-code](../books-the-talent-code.jpg)  
 [🛒 The Talent Code: Greatness Isn't Born. It's Grown. Here's How.. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3T5TkkP)  
   
 ## 🤖 AI Summary  

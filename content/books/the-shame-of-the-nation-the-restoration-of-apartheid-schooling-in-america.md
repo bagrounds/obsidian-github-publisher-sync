@@ -10,9 +10,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-20T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-05-11T22:33:29Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A split-screen composition contrasting two educational environments. On the left side, a dimly lit, cramped classroom with peeling paint, outdated textbooks, and shadows, conveying a sense of neglect and confinement. On the right side, a brightly lit, modern classroom with vibrant colors, advanced technology, and spacious, airy architecture, suggesting opportunity and abundance. A single, weathered wooden chair sits in the center foreground, bridging the gap between the two sides. The color palette transitions from muted, somber grays and browns on the left to warm, hopeful tones of gold and white on the right, symbolizing the systemic divide in American public education. The style is semi-realistic with a dramatic, cinematic focus on light and shadow to emphasize the stark inequality described in the text.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 😥🏫🇺🇸 The Shame of the Nation: The Restoration of Apartheid Schooling in America  
+![books-the-shame-of-the-nation-the-restoration-of-apartheid-schooling-in-america](../books-the-shame-of-the-nation-the-restoration-of-apartheid-schooling-in-america.jpg)  
 [🛒 The Shame of the Nation: The Restoration of Apartheid Schooling in America. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/46fa0hR)  
   
 ## 📚 Book Report: The Shame of the Nation: The Restoration of Apartheid Schooling in America by Jonathan Kozol  

@@ -10,9 +10,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-16T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-05-12T10:56:25Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: An aged, wise Egyptian vizier with a serene expression sits cross-legged on a woven reed mat within a sun-drenched, limestone-walled chamber. He is dressed in traditional white linen robes, holding a reed stylus poised over a piece of weathered, unrolled papyrus. The papyrus is densely covered with elegant, dark-inked hieroglyphs. Soft, warm sunlight streams through a high, narrow aperture, illuminating swirling dust motes and casting sharp, geometric shadows across the floor. In the background, a glimpse of a sand-swept desert horizon is visible through a doorway, contrasting with the quiet, scholarly atmosphere of the room. A small clay vessel of water and a palette of pigments sit nearby, symbolizing the timeless act of recording wisdom for future generations. The color palette is composed of warm ochres, sandy beiges, and deep, earthy tones.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 👴🏽📚 The Teachings of Ptahhotep: The Oldest Book in the World  
+![books-the-teachings-of-ptahhotep-the-oldest-book-in-the-world](../books-the-teachings-of-ptahhotep-the-oldest-book-in-the-world.jpg)  
 [🛒 The Teachings of Ptahhotep: The Oldest Book in the World. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3I5f0vA)  
   
 ## 📖 Book Report: The Teachings of Ptahhotep: The Oldest Book in the World  

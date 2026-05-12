@@ -17,6 +17,8 @@ declare global {
       getRateOverall: () => number
       getDurationMs: () => number
       getFirstStartedAt: () => number
+      getEventLogLength: () => number
+      getEventLogLimit: () => number
     }
   }
 }

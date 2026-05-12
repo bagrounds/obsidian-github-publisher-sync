@@ -18,5 +18,7 @@ export const installTestHook = (api) => () => {
     getRateOverall: () => api.getRateOverall(),
     getDurationMs: () => api.getDurationMs(),
     getFirstStartedAt: () => api.getFirstStartedAt(),
+    getEventLogLength: () => api.getEventLogLength(),
+    getEventLogLimit: () => api.getEventLogLimit(),
   }
 }

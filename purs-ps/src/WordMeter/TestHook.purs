@@ -2,6 +2,7 @@ module WordMeter.TestHook (install) where
 
 import Prelude
 
+import Data.Array (length) as Array
 import Data.Maybe (fromMaybe)
 import Effect (Effect)
 import WordMeter.Recording
@@ -9,6 +10,7 @@ import WordMeter.Recording
   , Dispatch
   , Session
   , activeListeningMs
+  , eventLogLimit
   , longRate
   , overallRate
   , shortRate
@@ -30,6 +32,8 @@ foreign import installTestHook
      , getRateOverall :: Effect Number
      , getDurationMs :: Effect Number
      , getFirstStartedAt :: Effect Number
+     , getEventLogLength :: Effect Int
+     , getEventLogLimit :: Effect Int
      }
   -> Effect Unit
 
@@ -76,6 +80,8 @@ install { dispatch, readSession, clock, version } =
     , getRateOverall: overallRate <$> readSession
     , getDurationMs: activeListeningMs <$> readSession
     , getFirstStartedAt: firstStartedOrNaN <$> readSession
+    , getEventLogLength: (\s -> Array.length s.eventLog) <$> readSession
+    , getEventLogLimit: pure eventLogLimit
     }
 
 firstStartedOrNaN :: Session -> Number

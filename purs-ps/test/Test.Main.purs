@@ -6,17 +6,25 @@ module Test.Main where
 
 import Prelude
 
+import Data.Array (head, length) as Array
+import Data.Int as Int
 import Data.Maybe (Maybe(..))
 import Effect (Effect)
 import Effect.Console (log)
 import Effect.Exception (throw)
 import WordMeter.Recording
   ( Action(..)
+  , Session
   , activeListeningMs
+  , captionOpacity
+  , eventLogLimit
   , formatDurationMs
   , formatRate
   , initialSession
+  , intervalDurationMs
+  , intervalRate
   , longRate
+  , minimumCaptionOpacity
   , overallRate
   , ratePerMinute
   , reduce
@@ -31,6 +39,8 @@ main = do
   runFormatRateTests
   runFormatDurationTests
   runReducerStatsTests
+  runEventLogTests
+  runCaptionDecayTests
   log "word-meter: all PureScript unit tests passed"
 
 runRatePerMinuteTests :: Effect Unit
@@ -124,3 +134,100 @@ assertEqualBoolean label actual expected =
   if actual == expected then pure unit
   else throw $ label <> ": expected " <> show expected
     <> " but got " <> show actual
+
+runEventLogTests :: Effect Unit
+runEventLogTests = do
+  -- Slice 4: the event log records one LoggedInterval per completed
+  -- counting session (start → stop), carrying the wall-clock range and the
+  -- words accumulated during that interval. The log persists across stops
+  -- and restarts and is capped at `eventLogLimit` intervals.
+  let
+    s0 = initialSession
+    s1 = reduce (Toggle 0.0) s0
+    s2 = reduce (InjectFinalTranscript "one two three" 5000.0) s1
+    -- Stop after a 30s interval with 3 words → 6.0 wpm.
+    s3 = reduce (Toggle 30000.0) s2
+    -- A blank transcript while listening does not seed a new interval.
+    s4 = reduce (Toggle 60000.0) s3
+    s4' = reduce (InjectFinalTranscript "   " 60500.0) s4
+    s5 = reduce (Toggle 120000.0) s4'
+    -- An idle InjectFinalTranscript before any start does nothing.
+    sIdle = reduce (InjectFinalTranscript "noise" 200.0) s0
+  assertEqualInt "event log starts empty"
+    (Array.length s0.eventLog) 0
+  assertEqualInt "an open interval has not yet been logged"
+    (Array.length s2.eventLog) 0
+  assertEqualInt "stop pushes the closed interval into the event log"
+    (Array.length s3.eventLog) 1
+  assertEqualInt "idle utterances do not seed any interval"
+    (Array.length sIdle.eventLog) 0
+  assertEqualInt "stop/restart preserves prior intervals and adds the new one"
+    (Array.length s5.eventLog) 2
+
+  case s5.eventLog of
+    [ first, second ] -> do
+      assertEqualNumber "first interval started at 0ms" first.startedAt 0.0
+      assertEqualNumber "first interval ended at 30000ms" first.endedAt 30000.0
+      assertEqualInt "first interval word count" first.wordCount 3
+      assertEqualNumber "first interval duration is 30s"
+        (intervalDurationMs first) 30000.0
+      assertEqualNumber "first interval rate is 6.0 wpm"
+        (intervalRate first) 6.0
+      assertEqualNumber "second interval started at 60000ms" second.startedAt 60000.0
+      assertEqualNumber "second interval ended at 120000ms" second.endedAt 120000.0
+      assertEqualInt "second interval (whitespace only) word count" second.wordCount 0
+    _ -> throw "event log should contain exactly two intervals"
+
+  -- Drive `eventLogLimit + 5` counting sessions; the oldest five evict.
+  let overrun = stuffIntervals (eventLogLimit + 5) s0
+  assertEqualInt "event log is capped at eventLogLimit intervals"
+    (Array.length overrun.eventLog) eventLogLimit
+  case Array.head overrun.eventLog of
+    Just oldest ->
+      -- Intervals are indexed 0..N-1; oldest surviving started at the 5th.
+      assertEqualNumber
+        "oldest surviving interval corresponds to the 5th counting session"
+        oldest.startedAt
+        (Int.toNumber 5 * 10000.0)
+    Nothing -> throw "event log should not be empty after stuffing"
+
+runCaptionDecayTests :: Effect Unit
+runCaptionDecayTests = do
+  -- Slice 2 (rework): captions are pruned once they age past `captionWindowMs`
+  -- (30 seconds in legacy parity), and their opacity fades linearly with age
+  -- down to `minimumCaptionOpacity`.
+  let
+    s0 = reduce (Toggle 0.0) initialSession
+    s1 = reduce (InjectFinalTranscript "early word" 0.0) s0
+    s2 = reduce (InjectFinalTranscript "later words" 25000.0) s1
+    -- Tick past the 30s window for the first caption; it should fall off.
+    s3 = reduce (Tick 35000.0) s2
+  assertEqualInt "two captions are kept while both are inside the 30s window"
+    (Array.length s2.captions) 2
+  assertEqualInt "a caption older than 30s is pruned on the next tick"
+    (Array.length s3.captions) 1
+  case Array.head s3.captions of
+    Just kept ->
+      assertEqualString "the surviving caption is the more recent one"
+        kept.transcript "later words"
+    Nothing -> throw "expected the 25s caption to survive"
+  assertEqualNumber "a brand-new caption has full opacity (1.0)"
+    (captionOpacity 0.0 0.0) 1.0
+  assertEqualNumber "a half-aged caption (15s) sits at 0.5 opacity"
+    (captionOpacity 15000.0 0.0) 0.5
+  assertEqualNumber "a caption past the window floors at minimumCaptionOpacity"
+    (captionOpacity 60000.0 0.0) minimumCaptionOpacity
+
+stuffIntervals :: Int -> Session -> Session
+stuffIntervals total = go 0
+  where
+  go :: Int -> Session -> Session
+  go index session
+    | index >= total = session
+    | otherwise =
+        let
+          startTs = Int.toNumber index * 10000.0
+          endTs = startTs + 1000.0
+          started = reduce (Toggle startTs) session
+        in
+          go (index + 1) (reduce (Toggle endTs) started)

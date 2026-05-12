@@ -9,9 +9,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-18T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-05-12T00:47:38Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A stylized crescent moon, fractured down the middle like a broken puzzle piece. One half is a deep, restless indigo with faint, jagged lines suggesting tossing and turning. The other half glows with soft, serene blues and lavenders, depicting a tranquil, cloud-like texture. A delicate, luminous thread or a series of gentle, glowing energy lines weaves across the break, seamlessly mending the moon back together. The background subtly transitions from the dark hues of night to the soft, hopeful glow of dawn.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 😴🛠️ The Sleep Solution: Why Your Sleep is Broken and How to Fix It  
+![books-the-sleep-solution-why-your-sleep-is-broken-and-how-to-fix-it](../books-the-sleep-solution-why-your-sleep-is-broken-and-how-to-fix-it.jpg)  
 [🛒 The Sleep Solution: Why Your Sleep is Broken and How to Fix It. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4kJRnGq)  
   
   

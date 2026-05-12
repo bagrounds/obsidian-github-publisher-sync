@@ -11,6 +11,7 @@ image_date: 2026-04-09T14:46:09Z
 image_model: "@cf/black-forest-labs/flux-1-schnell"
 image_prompt: "A stylized, isometric illustration of a vibrant, thriving community. At the center, a diverse group of people are engaged in various constructive activities: planting trees in a park, maintaining a community garden, repairing a public building, and facilitating a clean-energy project. The background features a clean, modern cityscape with renewable energy symbols like wind turbines and solar panels. A glowing, translucent shield or dome gently arches over the entire scene, symbolizing security and stability. The color palette uses warm, optimistic tones—golds, greens, and soft blues—to evoke a sense of prosperity and social harmony. The overall aesthetic is clean, minimalist, and hopeful, emphasizing the transformation of labor into tangible public value."
 link_analysis_version: "2"
+updated: 2026-05-12T05:31:30
 ---
 [Home](../index.md) > [Topics](./index.md) > [Knowledge](./a-hierarchical-view-of-human-knowledge.md) > [Social Sciences](./social-sciences.md) > [Economics](./economics.md) > [Heterodox Economics](./heterodox-economics.md) > [🏦♾️📈💸 Modern Monetary Theory](./modern-monetary-theory.md)  
 # 🧑‍💼🛡️ Job Guarantee, Employer of Last Resort  
@@ -58,4 +59,12 @@ The Job Guarantee (JG), also known as Employer of Last Resort (ELR), is an econo
 A High-Level Summary: A concise overview of the core principles, goals, and significance of this category.  
 Subcategories: A list of the major subcategories or branches within this category, with a brief description of each.  
 Book Recommendations: A selection of 3-5 influential or accessible books that provide a good introduction to this category or its key subcategories.  
-Use lots of emojis.
+Use lots of emojis.  
+  
+## 🦋 Bluesky    
+<blockquote class="bluesky-embed" data-bluesky-uri="at://did:plc:i4yli6h7x2uoj7acxunww2fc/app.bsky.feed.post/3mln2qw2is22e" data-bluesky-cid="bafyreieajcupau5xixb4rc6ar5f4ntmilodsh5jgrcb33ylyworbnttcsu"><p>🧑‍💼🛡️ Job Guarantee, Employer of Last Resort  
+  
+#AI Q: 💼 Should the government be responsible for providing a job to everyone who wants one?  
+  
+🏦 Modern Monetary Theory | 📊 Macroeconomics | 🫂 Social Safety Net |  
+https://bagrounds.org/topics/job-guarantee-employer-of-last-resort</p>&mdash; <a href="https://bsky.app/profile/did:plc:i4yli6h7x2uoj7acxunww2fc?ref_src=embed">Bryan Grounds (@bagrounds.bsky.social)</a> <a href="https://bsky.app/profile/did:plc:i4yli6h7x2uoj7acxunww2fc/post/3mln2qw2is22e?ref_src=embed">2026-05-12T05:31:44.000Z</a></blockquote><script async src="https://embed.bsky.app/static/embed.js" charset="utf-8"></script>

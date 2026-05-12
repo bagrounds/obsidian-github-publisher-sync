@@ -5,121 +5,103 @@ title: 🎙️ Word Meter PureScript Port Spec
 
 # 🎙️ Word Meter PureScript Port Spec
 
-This spec covers the **incremental** port of the Word Meter browser tool from `quartz/static/word-meter.js` (≈1,600 lines of imperative JavaScript) to PureScript, compiling to `quartz/static/word-meter-ps.js`. The two builds live side by side until the port is complete, at which point the legacy JavaScript build and its `vm`-sandbox unit tests are retired.
+Incremental port of `quartz/static/word-meter.js` to PureScript, compiling to `quartz/static/word-meter-ps.js`. Both builds run side-by-side until the cutover. `specs/word-meter.md` remains the source of truth for **what** the Word Meter does; this spec covers **how** the PureScript port is structured.
 
-The companion spec at `specs/word-meter.md` is the source of truth for **what** the Word Meter does; this document covers **how** the PureScript port is structured.
+## Slicing principle
 
-## Goals
-
-- Port the Word Meter to a strongly-typed PureScript codebase organized around the capability design pattern.
-- Keep the legacy `word-meter.js` running on the live site at every step — never break the user-facing tool to make progress on the port.
-- Ship as a single browser-friendly IIFE that mounts on `#word-meter`, so the markdown at `content/tools/word-meter.md` can keep its `<script src="/static/word-meter-ps.js"></script>` form without further machinery.
-- Use a single end-to-end test suite that targets either implementation through a stable selector contract, so feature parity is asserted against the **same** specifications.
-
-## Non-goals
-
-- New Word Meter features during the port. New behaviour is added only after the cutover (slice 9 below).
-- Byte-for-byte parity with `word-meter.js`. We care about features and visible behavior. If preserving an implementation detail forces ugly PureScript, we deviate and document it here.
-- A general-purpose PureScript build for the rest of the Quartz site. This project is scoped to a single static script.
+A vertical slice delivers **end-to-end, user-visible functionality** in the smallest coherent feature. Every slice must be end-to-end testable through the Playwright harness against the same selector contract every implementation honors. We never build a horizontal layer (capability, FFI module, view library) as a slice on its own — those grow in service of features as the features arrive.
 
 ## Toolchain
 
-- Compiler: `purescript@0.15.16` (latest stable as of this writing) via the official npm package.
-- Build tool: `spago@1.0.4` (the rewritten-in-PureScript spago, distributed via npm).
-- Bundler: spago's built-in `bundle --platform browser --bundle-type app` (esbuild under the hood). Produces a self-invoking IIFE.
-- End-to-end tests: `@playwright/test` against a tiny static-fixture page served by `http-server`.
+- Compiler: `purescript@0.15.16`.
+- Build tool: `spago@1.0.4`.
+- Bundler: `spago bundle --platform browser --bundle-type app` (esbuild under the hood) → single self-invoking IIFE.
+- End-to-end tests: `@playwright/test` against a static-fixture page served by `http-server`.
 
-### Userspace PureScript dependencies
+### Dependencies
 
-The PR direction was *"don't import any user space PureScript dependencies — they tend to not be well supported"*. The pragmatic interpretation in this project is:
-
-- The official **core libraries** maintained by the `purescript/` GitHub organization (`prelude`, `effect`, `console`, and a small handful of close cousins such as `maybe`, `either`, `arrays`, `strings`, `transformers`) are treated as the language standard library and are allowed.
-- Anything outside that set — for example Halogen, Argonaut, ReactBasic, web-html — is **not** added without an explicit decision documented here.
-
-Today the project depends on exactly `prelude`, `effect`, and `console`. The FFI layer covers everything else.
+Held to the `purescript/` GitHub organization's core libraries: `prelude`, `effect`, `console`, `maybe`, `arrays`, `strings`, `integers`, `foldable-traversable`. No user-space packages.
 
 ## Project layout
 
 ```
 purs-ps/
-  spago.yaml                       # package + workspace config
-  src/
-    WordMeter/
-      Main.purs                    # entry point (Effect Unit)
-      Version.purs                 # WORD_METER_VERSION constant
-      FFI.purs                     # DOM/native FFI surface (narrow on purpose)
-      FFI.js                       # JS side of the FFI surface
-  test/
-    Test.Main.purs                 # `spago test` entry point
+  spago.yaml
+  src/WordMeter/
+    Main.purs              entry point + reducer loop
+    Version.purs           WORD_METER_VERSION constant
+    Vdom.purs / Vdom.js    typed declarative DOM (Element / Attribute / Style / Listener)
+    State.purs / State.js  tiny mutable Cell
+    Words.purs             pure word counter
+    Recording.purs         slice 1: session state + reducer + view
+    TestHook.purs / .js    window.__wordMeter test hook
+  test/Test.Main.purs
 scripts/
-  build-word-meter-ps.mjs          # spago bundle → quartz/static/word-meter-ps.js
-tests/
-  e2e/
-    playwright.config.ts           # Playwright config (webServer + projects)
-    word-meter.spec.ts             # implementation-agnostic behavior suite
-    fixtures/
-      word-meter.html              # ?impl=js|ps fixture page
+  build-word-meter-ps.mjs  spago bundle wrapper
+tests/e2e/
+  playwright.config.ts
+  word-meter.spec.ts
+  word-meter.d.ts          ambient types for window.__wordMeter
+  fixtures/word-meter.html ?build=js|ps loader
 ```
 
-The repo-root npm scripts surface this:
+## Declarative typed DOM
 
-- `npm run build:ps` — rebuild `word-meter-ps.js`.
-- `npm run clean:ps` — wipe PureScript build artifacts.
-- `npm run test:ps` — run the PureScript `spago test` suite.
-- `npm run test:e2e` — run the Playwright suite against the current `word-meter-ps.js` bundle.
+The PureScript bundle never produces an HTML string. `WordMeter.Vdom` defines a small algebra:
 
-## Capability design pattern
+- `Node` — `ElementNode { tag, attributes, styles, listeners, children }` or `TextNode String`.
+- `Attribute`, `Style`, `Listener` — typed records.
+- Smart constructors: `div_`, `button`, `span_`, `text`, `attribute`, `testId`, `buttonType`, `style`, `onClick`.
+- `mount :: String -> Node -> Effect Unit` walks the tree, calling `document.createElement` / `setAttribute` / `style.setProperty` / `addEventListener` / `appendChild` through the narrow FFI surface in `Vdom.js`.
 
-The port follows the same shape as `bagrounds/domination`'s capability layout: every external effect has a typeclass with the form
+Views are pure functions from state to `Node`. The reducer loop in `Main.purs` reads state, calls `view send state`, and remounts on every action.
 
-```purescript
-class Monad m <= Cap m where
-  someEffect :: Args -> m Result
-```
+## Capability pattern
 
-Production code uses an `AppM` newtype (a `ReaderT Env Effect`) with one instance per capability. Tests use per-capability test newtypes (`StorageM`, `LogM`, etc.) that swap in deterministic implementations. Pure logic stays in plain functions that take whatever capabilities they need as type-class constraints — no concrete `Effect` references in domain modules.
+The capability typeclass scaffolding (à la [`bagrounds/domination`](https://github.com/bagrounds/domination/tree/master/src/Capability) — `class Monad m <= Cap m where …`, per-capability test newtypes, an `AppM` production newtype) grows organically slice by slice. Slice 1 needs only a thin DOM render and a mutable cell, so it does not yet introduce typeclasses. Slice 6 (persistence) will introduce the first capability (`Storage`); slice 7 (wake lock), slice 9 (recognition) introduce theirs. Each capability stands up next to the feature that needs it.
 
-Capabilities planned for the port (one slice per row, roughly):
+## Test hook
 
-- `Clock` — `now :: m Int` (milliseconds since epoch).
-- `Log` — `log`, `error` (mirrors the prefixed-console-output pattern).
-- `Dom` — `getElementById`, `setInnerHtml`, `addEventListener`, etc.
-- `Storage` — typed `save`/`load` over `localStorage`.
-- `Timer` — interval emitters.
-- `Recognition` — Web Speech API.
-- `WakeLock` — Screen Wake Lock API.
-- `Clipboard` — `writeText` with execCommand fallback.
+When the host page sets `window.__WM_TEST_HOOK__ = true` before loading the bundle, the bundle exposes `window.__wordMeter` with:
+
+- `simulateFinalTranscript(transcript)` — push a recognized utterance through the reducer.
+- `start()` / `stop()` — toggle listening state.
+- `getTotalWords()` / `getListening()` / `getVersion()` — read accessors.
+
+The hook is the contract the end-to-end suite uses to simulate Web Speech API events.
 
 ## Implementation-agnostic test suite
 
-`tests/e2e/word-meter.spec.ts` is intentionally written **without** referencing PureScript or JavaScript. It loads the fixture page with `?impl=js` or `?impl=ps`, then drives the UI through a stable selector contract:
+`tests/e2e/word-meter.spec.ts` loads `?build=js` or `?build=ps` and drives the panel through a stable `data-testid` selector contract:
 
-| Selector | Purpose |
-| --- | --- |
-| `[data-testid="wm-root"]` | The container the script mounts into. |
-| `[data-testid="wm-count"]` | The big total-words number. |
-| `[data-testid="wm-count-label"]` | The descriptor below the number. |
-| `[data-testid="wm-toggle"]` | The start/stop button. |
-| `[data-testid="wm-version"]` | The `Word Meter v<x>` footer line. |
-| `[data-testid="wm-impl"]` | The "PureScript build" / "JavaScript build" tag. |
+- `wm-root` — mounted container.
+- `wm-build` — "PureScript build" / "JavaScript build" tag.
+- `wm-status` — listening / idle status.
+- `wm-count` — total words.
+- `wm-count-label` — descriptor.
+- `wm-toggle` — start / stop button.
+- `wm-version` — `Word Meter v<x>` footer.
 
-Every implementation must honor this contract. The legacy JavaScript build picks up its share of the tests as soon as we extend its template to emit the same data-testid attributes — that work is queued behind the cutover, since the legacy tests in `quartz/static/word-meter.test.mjs` already pin its behavior at the unit level.
+Every implementation must honor this contract. As behavior moves from the legacy build to the new build, the same tests verify both columns.
 
-## Vertical slices
+## Feature slices
 
-| Slice | Scope | Status |
+| Slice | Feature | Status |
 | --- | --- | --- |
-| 1 | Toolchain, hello-world bundle, gitignore, npm scripts. | ✅ Done |
-| 2 | Playwright fixture + selector contract + first behavior tests. | ✅ Done |
-| 3 | Pure-utility port + capability scaffolding (`Clock`, `Log`, `Dom`, `Storage`). Unit tests for `countWords`, normalize, dedup classifier, rate math. | ⏳ Pending |
-| 4 | UI rendering — buildPanel-equivalent. | ⏳ Pending |
-| 5 | Session lifecycle + cumulative-refinement dedup state machine. | ⏳ Pending |
-| 6 | SpeechRecognition path (cloud + on-device pre-flight + runtime fallback). | ⏳ Pending |
-| 7 | Wake-lock + visibilitychange. | ⏳ Pending |
-| 8 | Diagnostics panel + clipboard copy. | ⏳ Pending |
-| 9 | Cutover: swap `content/tools/word-meter.md` to `word-meter-ps.js`, retire legacy JS + its sandbox tests. | ⏳ Pending |
+| 1 | Start / stop recording works e2e (toggle status, button label, transcript-driven count) | ✅ Done |
+| 2 | Live captions panel (last-30s strip with fade) | ⏳ Pending |
+| 3 | Real, functioning stats dashboard (words/min over short + long windows, duration, totals) | ⏳ Pending |
+| 4 | Event log with word histories (timeline of utterances + timestamps) | ⏳ Pending |
+| 5 | Fully functional diagnostics panel (collapsible drawer + copy-to-clipboard) | ⏳ Pending |
+| 6 | Reset + persistence (localStorage round-trip) | ⏳ Pending |
+| 7 | Wake lock + keep-awake toggle | ⏳ Pending |
+| 8 | Permission denied + transient-error banner | ⏳ Pending |
+| 9 | On-device pre-flight + cloud fallback | ⏳ Pending |
+| 10 | Cutover — point `content/tools/word-meter.md` at the PureScript build, retire legacy JS + sandbox tests | ⏳ Pending |
 
-## Tests
+## Build, test, bundle
 
-- **PureScript unit tests** in `purs-ps/test/Test.Main.purs`, run via `npm run test:ps`. Empty for slice 1; grows from slice 3 onward.
-- **End-to-end behavior tests** in `tests/e2e/`, run via `npm run test:e2e`. Five tests in slice 1 cover the hello-world mount, count display, toggle button, version label, and implementation tag.
+- `npm run build:ps` — rebuild `quartz/static/word-meter-ps.js`.
+- `npm run clean:ps` — wipe PureScript build artifacts.
+- `npm run test:ps` — `spago test` unit suite (currently a placeholder; grows when there's pure logic worth unit-testing alongside its e2e suite).
+- `npm run test:e2e` — Playwright suite against the current PureScript bundle.

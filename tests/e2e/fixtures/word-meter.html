@@ -1,13 +1,4 @@
 <!doctype html>
-<!--
-  Fixture page for the Word Meter end-to-end suite.
-
-  Picks the implementation under test from a `?impl=js` or `?impl=ps`
-  query parameter. The Playwright tests in `../word-meter.spec.ts`
-  hit this page through Playwright's webServer (which serves the repo
-  root) so the production `quartz/static/word-meter-*.js` files are
-  loaded by the same path as on the live site.
--->
 <html lang="en">
   <head>
     <meta charset="utf-8" />
@@ -17,13 +8,14 @@
     <div id="word-meter"></div>
     <script>
       const params = new URLSearchParams(window.location.search)
-      const impl = params.get("impl") === "ps" ? "ps" : "js"
-      const src = impl === "ps"
-        ? "/quartz/static/word-meter-ps.js"
-        : "/quartz/static/word-meter.js"
+      const build = params.get("build") === "js" ? "js" : "ps"
+      const source = build === "js"
+        ? "/quartz/static/word-meter.js"
+        : "/quartz/static/word-meter-ps.js"
+      window.__WM_TEST_HOOK__ = true
       const tag = document.createElement("script")
-      tag.src = src
-      tag.dataset.impl = impl
+      tag.src = source
+      tag.dataset.build = build
       document.body.appendChild(tag)
     </script>
   </body>

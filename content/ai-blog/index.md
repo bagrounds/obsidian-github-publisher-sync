@@ -6,10 +6,18 @@ title: 🤖 AI Blog
 URL: https://bagrounds.org/ai-blog/index
 Author: "[[bryan-grounds]]"
 backlinks: false
-updated: 2026-05-11T08:38:57-07:00
+updated: 2026-05-12T08:40:02-07:00
 ---
 [Home](../index.md)  
-# 🤖 AI Blog (197)  
+# 🤖 AI Blog (205)  
+- [2026-05-12 | 🟣 Word Meter PureScript Slice Three — Stats Dashboard Lands 📊](./2026-05-12-1-word-meter-purescript-slice-three-stats-dashboard.md)  
+- [2026-05-11 | 🟣 Word Meter PureScript Slice Two — Captions Land 🤖](./2026-05-11-6-word-meter-purescript-slice-two-captions-land.md)  
+- [2026-05-11 | 🟣 Word Meter PureScript Slice One — Recording Works 🤖](./2026-05-11-5-word-meter-purescript-slice-one-recording-works.md)  
+- [2026-05-11 | 🟣 Porting Word Meter To PureScript — Slice One 🤖](./2026-05-11-4-word-meter-purescript-port-slice-one.md)  
+- [2026-05-11 | 🧹 Paying Off The Content-Hash Tech Debt 🤖](./2026-05-11-3-word-meter-pay-off-content-hash-debt.md)  
+- [2026-05-11 | 🚪 Removing The Mode Chooser And Auto-Falling-Back To Cloud 🤖](./2026-05-11-2-word-meter-auto-fallback.md)  
+- [2026-05-11 | 📱 Why On-Device Speech Fails on Android Chrome 🔍](./2026-05-11-1-word-meter-android-rca.md)  
+- [2026-05-10 | 🎙️ Word Meter On-Device Recognition Finally Works 🤖](./2026-05-10-2-word-meter-on-device-language-pack.md)  
 - [2026-05-10 | 💾 Word Meter Persistence and Timeline 🤖](./2026-05-10-1-word-meter-persistence.md)  
 - [2026-05-09 | 🔋 Word Meter Goes The Distance With Screen Wake Lock 🤖](./2026-05-09-3-word-meter-screen-wake-lock.md)  
 - [2026-05-09 | 🐛 Word Meter Overcount: A Web Speech Refinement Quirk 🤖](./2026-05-09-2-word-meter-overcount-rca.md)  

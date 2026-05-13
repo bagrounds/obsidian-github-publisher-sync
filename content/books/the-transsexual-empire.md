@@ -11,9 +11,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-18T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-05-12T16:55:34Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A surreal, high-contrast illustration featuring a crumbling, monolithic stone castle perched atop a jagged, barren cliff. The architecture is imposing and brutalist, casting long, dramatic shadows across a stormy, turbulent sea below. Above the castle, the sky is split; one half is a dark, oppressive gray, while the other begins to crack open with a brilliant, golden light, suggesting the dawn of a new perspective. In the foreground, a single, delicate path winds toward the fortress, overgrown with wild, vibrant flowers that contrast with the cold, rigid geometry of the stone walls. The overall aesthetic is moody and intellectual, using a palette of deep charcoal, slate blue, and sharp, piercing gold accents to evoke themes of historical weight, structural critique, and the tension between rigid tradition and emergent change.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # ⚧️👑🏰 The Transsexual Empire  
+![books-the-transsexual-empire](../books-the-transsexual-empire.jpg)  
 [🛒 The Transsexual Empire. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4mHObNr)  
   
 ## 🤖 AI Summary  

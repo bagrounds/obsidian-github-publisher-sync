@@ -10,9 +10,13 @@ force_analyze_links: false
 link_analysis_time: 2026-04-22T00:00:00Z
 link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_version: "2"
+image_date: 2026-05-12T17:52:42Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: "A minimalist, high-contrast illustration featuring the silhouettes of two opposing military reconnaissance drones flying toward each other in a deep twilight sky. The horizon line is sharply divided: one side glows with a cold, pale blue light representing Western influence, while the other side is illuminated by a warm, burning orange ember glow representing the Iranian landscape. Between the two drones, a faint, jagged line of electric static crackles, symbolizing the hidden, tense nature of the conflict. The overall aesthetic is moody and cinematic, using long, dramatic shadows and a desaturated color palette to evoke a sense of espionage and enduring, undeclared hostility."
 ---
 [Home](../index.md) > [Books](./index.md)  
 # ⚔️🤫 The Twilight War: The Secret History of America's Thirty-Year Conflict with Iran  
+![books-the-twilight-war-the-secret-history-of-americas-thirty-year-conflict-with-iran](../books-the-twilight-war-the-secret-history-of-americas-thirty-year-conflict-with-iran.jpg)  
 [🛒 The Twilight War: The Secret History of America's Thirty-Year Conflict with Iran. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4lflbMJ)  
   
 ⚔️🇮🇷🇺🇸 Reveal the enduring, unacknowledged shadow war between the US and Iran since 1979, characterized by covert operations, proxy conflicts, and numerous missed opportunities for de-escalation, exposing deep-seated mistrust and conflicting strategic objectives that continue to define the volatile relationship.  

@@ -12,9 +12,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-18T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-05-12T18:50:05Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A surreal, high-contrast illustration featuring a towering, ornate throne constructed entirely from rigid, glowing red measuring tapes and steel rulers. The throne sits in the center of a barren, grey landscape. A human figure, rendered in a minimalist, faceless style, stands before it, tethered to the throne by long, metallic chains that transform into winding bar graphs and jagged line charts as they reach the ground. The background is a vast, hazy void, emphasizing a sense of entrapment. Scattered across the floor are broken, colorful wooden blocks—symbolizing human intuition and qualitative nuance—that have been crushed under the weight of the rigid, geometric structures. The lighting is cold and clinical, casting long, sharp shadows that distort the proportions of the scene.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 📊⛓️👑 📏 The Tyranny of Metrics  
+![books-the-tyranny-of-metrics](../books-the-tyranny-of-metrics.jpg)  
 [🛒 The Tyranny of Metrics. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/457gPkN)  
   
 ## 🤖 AI Summary  

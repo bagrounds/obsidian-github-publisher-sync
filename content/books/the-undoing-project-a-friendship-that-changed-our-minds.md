@@ -10,9 +10,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-16T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-05-12T19:43:15Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A split-screen composition featuring two distinct halves of a human brain. On the left side, the brain is depicted as a complex, glowing network of golden gears and clockwork mechanisms, representing logical, deliberate thought. On the right side, the brain is composed of swirling, vibrant watercolor splashes and abstract, fluid ink blots, representing intuition, emotion, and cognitive bias. In the center, where the two halves meet, a thin, luminous bridge of light connects the disparate styles. The background is a clean, minimalist charcoal gray, emphasizing the contrast between the orderly mechanical side and the chaotic, expressive side. The overall aesthetic is modern, cerebral, and intellectually stimulating.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🧑‍🤝‍🧑🧠 The Undoing Project: A Friendship That Changed Our Minds  
+![books-the-undoing-project-a-friendship-that-changed-our-minds](../books-the-undoing-project-a-friendship-that-changed-our-minds.jpg)  
 [🛒 The Undoing Project: A Friendship That Changed Our Minds. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3Wf6z4h)  
   
 ## 📖 Book Report: The Undoing Project: A Friendship That Changed Our Minds  

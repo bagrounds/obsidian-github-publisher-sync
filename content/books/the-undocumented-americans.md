@@ -10,9 +10,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-19T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-05-12T18:51:14Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A conceptual, atmospheric illustration featuring a single, worn-out pair of work boots resting on a cracked, sun-baked patch of earth that transitions into the texture of a map. In the background, a faint, translucent silhouette of a bustling American city skyline glows with soft, golden-hour light. A single, vibrant wildflower grows through a fissure in the ground, representing resilience. The color palette uses muted, earthy tones of ochre, slate gray, and deep brown, contrasted by the warm, hopeful glow of the distant city. The lighting is dramatic and cinematic, with long shadows that suggest the complexity of living in the margins. The overall composition is clean and minimalist, focusing on the human weight of the journey rather than political symbols.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🚫📄🇺🇸 The Undocumented Americans  
+![books-the-undocumented-americans](../books-the-undocumented-americans.jpg)  
 [🛒 The Undocumented Americans. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4lCwLAz)  
   
 ## 📚 Book Report: The Undocumented Americans by Karla Cornejo Villavicencio  

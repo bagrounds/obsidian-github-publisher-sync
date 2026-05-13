@@ -10,9 +10,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-23T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-05-12T17:52:47Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A stylized, minimalist illustration showing two adult figures standing on a tightrope stretched high above a city landscape. They are both dressed in professional business attire, each carrying a heavy, oversized briefcase labeled with symbols for a house and a school. The tightrope represents their precarious financial position. Below them, a swirling storm of rising graphs and bills creates a sense of instability. The color palette uses muted, professional blues and grays contrasted with a single, sharp accent color like a warning orange to highlight the weight of the briefcases. The composition emphasizes the fragility of their balance, illustrating how their dual-income effort is strained by the weight of essential fixed costs.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🧑‍🤝‍🧑💸 The Two-Income Trap  
+![books-the-two-income-trap](../books-the-two-income-trap.jpg)  
 [🛒 The Two-Income Trap. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4nTiK2p)  
   
 ## 📚 Book Report: The Two-Income Trap  

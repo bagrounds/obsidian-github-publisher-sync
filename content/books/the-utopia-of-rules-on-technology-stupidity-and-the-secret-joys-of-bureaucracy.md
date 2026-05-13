@@ -10,9 +10,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-20T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-05-12T21:43:41Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A surreal, high-contrast illustration featuring a towering, monolithic filing cabinet that stretches infinitely into a dark, cloudy sky. From its open drawers, instead of paper, spill out glowing, geometric gears and tangled clockwork mechanisms that form the shape of a labyrinth on the ground below. In the foreground, a single, delicate human hand reaches out to touch a rigid, glowing grid of neon lines that seem to cage the surrounding environment. The color palette is composed of cold, metallic grays and deep blues, punctuated by sudden, sharp flashes of warning orange and sterile white light, evoking a sense of both orderly precision and stifled, mechanical confinement.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🤖📝😇 The Utopia of Rules: On Technology, Stupidity, and the Secret Joys of Bureaucracy  
+![books-the-utopia-of-rules-on-technology-stupidity-and-the-secret-joys-of-bureaucracy](../books-the-utopia-of-rules-on-technology-stupidity-and-the-secret-joys-of-bureaucracy.jpg)  
 [🛒 The Utopia of Rules: On Technology, Stupidity, and the Secret Joys of Bureaucracy. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4iHbbdV)  
   
 🤯 Pervasive bureaucracy, backed by implicit violence, subtly stifles our collective imagination and technological progress, even as we secretly crave its predictable, rule-bound comforts 🤯 paperwork! 📈  

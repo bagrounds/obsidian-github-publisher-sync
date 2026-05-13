@@ -10,9 +10,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-17T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-05-12T22:36:37Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A split-composition illustration depicting the tension between value creation and extraction. On one side, a vibrant, lush landscape shows stylized figures engaged in collaborative craftsmanship, gardening, and building, representing tangible growth and innovation. On the other side, a sterile, monochromatic cityscape features monolithic, towering skyscrapers with jagged, mechanical gears and metallic pipelines siphoning resources upward into a dark, abstract void. A central, translucent scale balances a glowing, organic seed on one side against a heavy, cold gold coin on the other. The lighting shifts from warm, golden sunlight on the creative side to a sharp, clinical blue glow on the extractive side, emphasizing the contrast between human-centered productivity and abstract financial gain.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 💰🏭🌍 The Value of Everything: Making and Taking in the Global Economy  
+![books-the-value-of-everything-making-and-taking-in-the-global-economy](../books-the-value-of-everything-making-and-taking-in-the-global-economy.jpg)  
 [🛒 The Value of Everything: Making and Taking in the Global Economy. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4avSs34)  
   
 💲⚖️🥦 Current economic systems conflate value creation with value extraction, often rewarding the latter over the former.  

@@ -10,9 +10,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-18T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-05-12T20:42:50Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A stylized, abstract human brain at the bottom, subtly outlined in soft, glowing light. From its core, a graceful, upward-winding spiral emerges. This spiral is formed by a series of small, interconnected elements—like tiny, illuminated stepping stones or growing sprouts—each representing an incremental change. The color palette transitions from muted, cool tones (like soft grey or deep indigo) at the base, gradually brightening into warm, hopeful hues (such as vibrant yellow or gentle green) as the spiral ascends towards the top of the image. The overall impression is one of gentle, continuous progress and increasing light.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🌀⬆️🧠 The Upward Spiral: Using Neuroscience to Reverse the Course of Depression, One Small Change at a Time  
+![books-the-upward-spiral-using-neuroscience-to-reverse-the-course-of-depression-one-small-change-at-a-time](../books-the-upward-spiral-using-neuroscience-to-reverse-the-course-of-depression-one-small-change-at-a-time.jpg)  
 [🛒 The Upward Spiral: Using Neuroscience to Reverse the Course of Depression, One Small Change at a Time. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4mSyumA)  
   
 ## 📖 Book Report: The Upward Spiral  

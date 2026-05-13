@@ -9,9 +9,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-18T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-05-04T01:49:23Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A soft, warm-toned illustration featuring a parent and child sitting together in a sunlit, peaceful garden. The parent is positioned slightly lower, sitting on the grass with a calm, serene expression, modeling mindfulness. The child is kneeling beside them, looking at a small, sprouting plant in the soil, representing growth and connection. The background is a soft-focus meadow with gentle light filtering through trees, creating a sense of tranquility and patience. The color palette uses earthy greens, soft yellows, and warm neutrals to evoke feelings of safety, emotional regulation, and generational harmony. The composition is circular, emphasizing the cycle of nurturing and the bond between the two figures.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🌱👼🏼 Raising Good Humans: A Mindful Guide to Breaking the Cycle of Reactive Parenting and Raising Kind, Confident Kids  
+![books-raising-good-humans-a-mindful-guide-to-breaking-the-cycle-of-reactive-parenting-and-raising-kind-confident-kids](../books-raising-good-humans-a-mindful-guide-to-breaking-the-cycle-of-reactive-parenting-and-raising-kind-confident-kids.jpg)  
 [🛒 Raising Good Humans: A Mindful Guide to Breaking the Cycle of Reactive Parenting and Raising Kind, Confident Kids. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/44f8QjL)  
   
 ## 📚 Book Report: 🫂 Raising Good Humans: A Mindful Guide to Breaking the Cycle of Reactive Parenting and Raising Kind, Confident Kids  

@@ -9,9 +9,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-19T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-05-13T15:17:06Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A minimalist illustration featuring a balanced scale centered against a clean, neutral background. On one side of the scale sits a complex, tangled cluster of metallic gears and interlocking cogs, representing bureaucratic systems and rigid accountability metrics. On the opposite side sits a single, glowing, organic seedling, representing genuine trustworthiness and social capital. The scale is perfectly level, suggesting that true balance is found not in mechanical oversight, but in nurturing the quality of character. The aesthetic is sophisticated and intellectual, using a muted color palette of slate blue, soft charcoal, and a single warm accent of amber for the seedling to draw the eye. The composition is spacious, evoking a sense of clarity and thoughtful contemplation.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 💔🤝 A Question of Trust: The BBC Reith Lectures 2002  
+![books-trust-how-societies-lost-it-and-how-they-might-regain-it](../books-trust-how-societies-lost-it-and-how-they-might-regain-it.jpg)  
 [🛒 A Question of Trust: The BBC Reith Lectures 2002. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3ZarwiN)  
   
 ## 📖 Book Report: 🤝 Trust: How Societies Lost It and How They Might Regain It  

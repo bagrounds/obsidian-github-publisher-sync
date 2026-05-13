@@ -368,3 +368,79 @@ test.describe("Word Meter — PureScript build — slice 5 — diagnostics", () 
     })
   })
 })
+
+test.describe("Word Meter — PureScript build — slice 6 — reset and persistence", () => {
+  test("renders the reset button", async ({ page }) => {
+    await loadWordMeter(page, "ps")
+    await expect(page.getByTestId("wm-reset")).toBeVisible()
+  })
+
+  test("reset clears total words, event log, and started timestamp", async ({ page }) => {
+    await loadWordMeter(page, "ps")
+    await page.evaluate(() => {
+      window.__wordMeter.startAt(0)
+      window.__wordMeter.simulateFinalTranscriptAt("one two three", 1_000)
+      window.__wordMeter.stopAt(30_000)
+    })
+    await expect(page.getByTestId("wm-count")).toHaveText("3")
+    await expect(page.getByTestId("wm-event-log-entry")).toHaveCount(1)
+    await page.evaluate(() => window.__wordMeter.reset())
+    await expect(page.getByTestId("wm-count")).toHaveText("0")
+    await expect(page.getByTestId("wm-event-log-entry")).toHaveCount(0)
+    await expect(page.getByTestId("wm-started")).toHaveText("—")
+  })
+
+  test("reset while listening stops counting and returns to idle", async ({ page }) => {
+    await loadWordMeter(page, "ps")
+    await page.evaluate(() => window.__wordMeter.startAt(0))
+    await expect(page.getByTestId("wm-status")).toHaveText(/listening/i)
+    await page.evaluate(() => window.__wordMeter.reset())
+    await expect(page.getByTestId("wm-status")).toHaveText(/idle/i)
+    await expect(page.getByTestId("wm-toggle")).toHaveText(/start counting/i)
+  })
+
+  test("state is restored from localStorage after a simulated page reload", async ({ page }) => {
+    await loadWordMeter(page, "ps")
+    await page.evaluate(() => {
+      window.__wordMeter.startAt(1_700_000_000_000)
+      window.__wordMeter.simulateFinalTranscriptAt("alpha beta gamma", 1_700_000_005_000)
+      window.__wordMeter.stopAt(1_700_000_060_000)
+      window.__wordMeter.persistNow()
+    })
+    // Reload the page — the bundle re-runs and restores from localStorage.
+    await page.reload()
+    await page.waitForFunction(() => Boolean(window.__wordMeter))
+    await expect(page.getByTestId("wm-count")).toHaveText("3")
+    await expect(page.getByTestId("wm-event-log-entry")).toHaveCount(1)
+    await expect(page.getByTestId("wm-started")).not.toHaveText("—")
+  })
+
+  test("reset clears persisted state so a reload starts fresh", async ({ page }) => {
+    await loadWordMeter(page, "ps")
+    await page.evaluate(() => {
+      window.__wordMeter.startAt(0)
+      window.__wordMeter.simulateFinalTranscriptAt("one two three", 1_000)
+      window.__wordMeter.stopAt(30_000)
+      window.__wordMeter.persistNow()
+    })
+    await page.evaluate(() => window.__wordMeter.reset())
+    await page.reload()
+    await page.waitForFunction(() => Boolean(window.__wordMeter))
+    await expect(page.getByTestId("wm-count")).toHaveText("0")
+    await expect(page.getByTestId("wm-event-log-entry")).toHaveCount(0)
+  })
+
+  test("persistNow round-trips totalWords and event log without listening", async ({ page }) => {
+    await loadWordMeter(page, "ps")
+    await page.evaluate(() => {
+      window.__wordMeter.startAt(0)
+      window.__wordMeter.simulateFinalTranscriptAt("hello world", 1_000)
+      window.__wordMeter.stopAt(10_000)
+      window.__wordMeter.persistNow()
+    })
+    await page.reload()
+    await page.waitForFunction(() => Boolean(window.__wordMeter))
+    const total = await page.evaluate(() => window.__wordMeter.getTotalWords())
+    expect(total).toBe(2)
+  })
+})

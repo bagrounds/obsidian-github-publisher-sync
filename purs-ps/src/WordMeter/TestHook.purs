@@ -41,6 +41,8 @@ foreign import installTestHook
      , getDiagnosticsLimit :: Effect Int
      , getCopyStatus :: Effect String
      , requestCopyDiagnostics :: Effect Unit
+     , reset :: Effect Unit
+     , persistNow :: Effect Unit
      }
   -> Effect Unit
 
@@ -50,9 +52,11 @@ install
      , clock :: Effect Number
      , version :: String
      , requestCopyDiagnostics :: Effect Unit
+     , reset :: Effect Unit
+     , persistNow :: Effect Unit
      }
   -> Effect Unit
-install { dispatch, readSession, clock, version, requestCopyDiagnostics } =
+install { dispatch, readSession, clock, version, requestCopyDiagnostics, reset, persistNow } =
   installTestHook
     { simulateFinalTranscript: \transcript -> do
         timestamp <- clock
@@ -95,6 +99,8 @@ install { dispatch, readSession, clock, version, requestCopyDiagnostics } =
     , getDiagnosticsLimit: pure diagnosticsLimit
     , getCopyStatus: _.copyStatus <$> readSession
     , requestCopyDiagnostics
+    , reset
+    , persistNow
     }
 
 firstStartedOrNaN :: Session -> Number

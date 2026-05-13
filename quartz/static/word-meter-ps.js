@@ -122,52 +122,85 @@
     }
   };
 
-  // output/Effect/foreign.js
-  var pureE = function(a) {
-    return function() {
-      return a;
-    };
-  };
-  var bindE = function(a) {
-    return function(f) {
-      return function() {
-        return f(a())();
-      };
+  // output/Data.Semigroup/foreign.js
+  var concatArray = function(xs) {
+    return function(ys) {
+      if (xs.length === 0) return ys;
+      if (ys.length === 0) return xs;
+      return xs.concat(ys);
     };
   };
 
-  // output/Control.Monad/index.js
-  var ap = function(dictMonad) {
-    var bind5 = bind(dictMonad.Bind1());
-    var pure4 = pure(dictMonad.Applicative0());
-    return function(f) {
-      return function(a) {
-        return bind5(f)(function(f$prime) {
-          return bind5(a)(function(a$prime) {
-            return pure4(f$prime(a$prime));
-          });
-        });
+  // output/Data.Semigroup/index.js
+  var semigroupArray = {
+    append: concatArray
+  };
+  var append = function(dict) {
+    return dict.append;
+  };
+
+  // output/Data.Bounded/foreign.js
+  var topInt = 2147483647;
+  var bottomInt = -2147483648;
+  var topChar = String.fromCharCode(65535);
+  var bottomChar = String.fromCharCode(0);
+  var topNumber = Number.POSITIVE_INFINITY;
+  var bottomNumber = Number.NEGATIVE_INFINITY;
+
+  // output/Data.Ord/foreign.js
+  var unsafeCompareImpl = function(lt) {
+    return function(eq2) {
+      return function(gt) {
+        return function(x) {
+          return function(y) {
+            return x < y ? lt : x === y ? eq2 : gt;
+          };
+        };
       };
     };
   };
+  var ordIntImpl = unsafeCompareImpl;
+  var ordNumberImpl = unsafeCompareImpl;
 
-  // output/Data.EuclideanRing/foreign.js
-  var intDegree = function(x) {
-    return Math.min(Math.abs(x), 2147483647);
-  };
-  var intDiv = function(x) {
-    return function(y) {
-      if (y === 0) return 0;
-      return y > 0 ? Math.floor(x / y) : -Math.floor(x / -y);
+  // output/Data.Eq/foreign.js
+  var refEq = function(r1) {
+    return function(r2) {
+      return r1 === r2;
     };
   };
-  var intMod = function(x) {
-    return function(y) {
-      if (y === 0) return 0;
-      var yy = Math.abs(y);
-      return (x % yy + yy) % yy;
-    };
+  var eqIntImpl = refEq;
+  var eqNumberImpl = refEq;
+
+  // output/Data.Eq/index.js
+  var eqNumber = {
+    eq: eqNumberImpl
   };
+  var eqInt = {
+    eq: eqIntImpl
+  };
+
+  // output/Data.Ordering/index.js
+  var LT = /* @__PURE__ */ function() {
+    function LT2() {
+    }
+    ;
+    LT2.value = new LT2();
+    return LT2;
+  }();
+  var GT = /* @__PURE__ */ function() {
+    function GT2() {
+    }
+    ;
+    GT2.value = new GT2();
+    return GT2;
+  }();
+  var EQ = /* @__PURE__ */ function() {
+    function EQ2() {
+    }
+    ;
+    EQ2.value = new EQ2();
+    return EQ2;
+  }();
 
   // output/Data.Ring/foreign.js
   var intSub = function(x) {
@@ -203,209 +236,6 @@
       return semiringInt;
     }
   };
-
-  // output/Data.CommutativeRing/index.js
-  var commutativeRingInt = {
-    Ring0: function() {
-      return ringInt;
-    }
-  };
-
-  // output/Data.Eq/foreign.js
-  var refEq = function(r1) {
-    return function(r2) {
-      return r1 === r2;
-    };
-  };
-  var eqIntImpl = refEq;
-  var eqNumberImpl = refEq;
-
-  // output/Data.Eq/index.js
-  var eqNumber = {
-    eq: eqNumberImpl
-  };
-  var eqInt = {
-    eq: eqIntImpl
-  };
-
-  // output/Data.EuclideanRing/index.js
-  var mod = function(dict) {
-    return dict.mod;
-  };
-  var euclideanRingInt = {
-    degree: intDegree,
-    div: intDiv,
-    mod: intMod,
-    CommutativeRing0: function() {
-      return commutativeRingInt;
-    }
-  };
-  var div = function(dict) {
-    return dict.div;
-  };
-
-  // output/Data.Ordering/index.js
-  var LT = /* @__PURE__ */ function() {
-    function LT2() {
-    }
-    ;
-    LT2.value = new LT2();
-    return LT2;
-  }();
-  var GT = /* @__PURE__ */ function() {
-    function GT2() {
-    }
-    ;
-    GT2.value = new GT2();
-    return GT2;
-  }();
-  var EQ = /* @__PURE__ */ function() {
-    function EQ2() {
-    }
-    ;
-    EQ2.value = new EQ2();
-    return EQ2;
-  }();
-
-  // output/Data.Semigroup/foreign.js
-  var concatArray = function(xs) {
-    return function(ys) {
-      if (xs.length === 0) return ys;
-      if (ys.length === 0) return xs;
-      return xs.concat(ys);
-    };
-  };
-
-  // output/Data.Semigroup/index.js
-  var semigroupArray = {
-    append: concatArray
-  };
-  var append = function(dict) {
-    return dict.append;
-  };
-
-  // output/Data.Monoid/index.js
-  var mempty = function(dict) {
-    return dict.mempty;
-  };
-
-  // output/Effect/index.js
-  var $runtime_lazy = function(name2, moduleName, init) {
-    var state2 = 0;
-    var val;
-    return function(lineNumber) {
-      if (state2 === 2) return val;
-      if (state2 === 1) throw new ReferenceError(name2 + " was needed before it finished initializing (module " + moduleName + ", line " + lineNumber + ")", moduleName, lineNumber);
-      state2 = 1;
-      val = init();
-      state2 = 2;
-      return val;
-    };
-  };
-  var monadEffect = {
-    Applicative0: function() {
-      return applicativeEffect;
-    },
-    Bind1: function() {
-      return bindEffect;
-    }
-  };
-  var bindEffect = {
-    bind: bindE,
-    Apply0: function() {
-      return $lazy_applyEffect(0);
-    }
-  };
-  var applicativeEffect = {
-    pure: pureE,
-    Apply0: function() {
-      return $lazy_applyEffect(0);
-    }
-  };
-  var $lazy_functorEffect = /* @__PURE__ */ $runtime_lazy("functorEffect", "Effect", function() {
-    return {
-      map: liftA1(applicativeEffect)
-    };
-  });
-  var $lazy_applyEffect = /* @__PURE__ */ $runtime_lazy("applyEffect", "Effect", function() {
-    return {
-      apply: ap(monadEffect),
-      Functor0: function() {
-        return $lazy_functorEffect(0);
-      }
-    };
-  });
-  var functorEffect = /* @__PURE__ */ $lazy_functorEffect(20);
-
-  // output/Effect.Ref/foreign.js
-  var _new = function(val) {
-    return function() {
-      return { value: val };
-    };
-  };
-  var read = function(ref) {
-    return function() {
-      return ref.value;
-    };
-  };
-  var modifyImpl = function(f) {
-    return function(ref) {
-      return function() {
-        var t = f(ref.value);
-        ref.value = t.state;
-        return t.value;
-      };
-    };
-  };
-  var write = function(val) {
-    return function(ref) {
-      return function() {
-        ref.value = val;
-      };
-    };
-  };
-
-  // output/Effect.Ref/index.js
-  var $$void2 = /* @__PURE__ */ $$void(functorEffect);
-  var $$new = _new;
-  var modify$prime = modifyImpl;
-  var modify = function(f) {
-    return modify$prime(function(s) {
-      var s$prime = f(s);
-      return {
-        state: s$prime,
-        value: s$prime
-      };
-    });
-  };
-  var modify_ = function(f) {
-    return function(s) {
-      return $$void2(modify(f)(s));
-    };
-  };
-
-  // output/Data.Bounded/foreign.js
-  var topInt = 2147483647;
-  var bottomInt = -2147483648;
-  var topChar = String.fromCharCode(65535);
-  var bottomChar = String.fromCharCode(0);
-  var topNumber = Number.POSITIVE_INFINITY;
-  var bottomNumber = Number.NEGATIVE_INFINITY;
-
-  // output/Data.Ord/foreign.js
-  var unsafeCompareImpl = function(lt) {
-    return function(eq2) {
-      return function(gt) {
-        return function(x) {
-          return function(y) {
-            return x < y ? lt : x === y ? eq2 : gt;
-          };
-        };
-      };
-    };
-  };
-  var ordIntImpl = unsafeCompareImpl;
-  var ordNumberImpl = unsafeCompareImpl;
 
   // output/Data.Ord/index.js
   var ordNumber = /* @__PURE__ */ function() {
@@ -543,15 +373,128 @@
     return maybe(a)(identity3);
   };
 
-  // output/Control.Monad.Reader.Class/index.js
-  var ask = function(dict) {
-    return dict.ask;
+  // output/Effect/foreign.js
+  var pureE = function(a) {
+    return function() {
+      return a;
+    };
+  };
+  var bindE = function(a) {
+    return function(f) {
+      return function() {
+        return f(a())();
+      };
+    };
   };
 
-  // output/Control.Monad.Trans.Class/index.js
-  var lift = function(dict) {
-    return dict.lift;
+  // output/Control.Monad/index.js
+  var ap = function(dictMonad) {
+    var bind5 = bind(dictMonad.Bind1());
+    var pure4 = pure(dictMonad.Applicative0());
+    return function(f) {
+      return function(a) {
+        return bind5(f)(function(f$prime) {
+          return bind5(a)(function(a$prime) {
+            return pure4(f$prime(a$prime));
+          });
+        });
+      };
+    };
   };
+
+  // output/Data.EuclideanRing/foreign.js
+  var intDegree = function(x) {
+    return Math.min(Math.abs(x), 2147483647);
+  };
+  var intDiv = function(x) {
+    return function(y) {
+      if (y === 0) return 0;
+      return y > 0 ? Math.floor(x / y) : -Math.floor(x / -y);
+    };
+  };
+  var intMod = function(x) {
+    return function(y) {
+      if (y === 0) return 0;
+      var yy = Math.abs(y);
+      return (x % yy + yy) % yy;
+    };
+  };
+
+  // output/Data.CommutativeRing/index.js
+  var commutativeRingInt = {
+    Ring0: function() {
+      return ringInt;
+    }
+  };
+
+  // output/Data.EuclideanRing/index.js
+  var mod = function(dict) {
+    return dict.mod;
+  };
+  var euclideanRingInt = {
+    degree: intDegree,
+    div: intDiv,
+    mod: intMod,
+    CommutativeRing0: function() {
+      return commutativeRingInt;
+    }
+  };
+  var div = function(dict) {
+    return dict.div;
+  };
+
+  // output/Data.Monoid/index.js
+  var mempty = function(dict) {
+    return dict.mempty;
+  };
+
+  // output/Effect/index.js
+  var $runtime_lazy = function(name2, moduleName, init) {
+    var state2 = 0;
+    var val;
+    return function(lineNumber) {
+      if (state2 === 2) return val;
+      if (state2 === 1) throw new ReferenceError(name2 + " was needed before it finished initializing (module " + moduleName + ", line " + lineNumber + ")", moduleName, lineNumber);
+      state2 = 1;
+      val = init();
+      state2 = 2;
+      return val;
+    };
+  };
+  var monadEffect = {
+    Applicative0: function() {
+      return applicativeEffect;
+    },
+    Bind1: function() {
+      return bindEffect;
+    }
+  };
+  var bindEffect = {
+    bind: bindE,
+    Apply0: function() {
+      return $lazy_applyEffect(0);
+    }
+  };
+  var applicativeEffect = {
+    pure: pureE,
+    Apply0: function() {
+      return $lazy_applyEffect(0);
+    }
+  };
+  var $lazy_functorEffect = /* @__PURE__ */ $runtime_lazy("functorEffect", "Effect", function() {
+    return {
+      map: liftA1(applicativeEffect)
+    };
+  });
+  var $lazy_applyEffect = /* @__PURE__ */ $runtime_lazy("applyEffect", "Effect", function() {
+    return {
+      apply: ap(monadEffect),
+      Functor0: function() {
+        return $lazy_functorEffect(0);
+      }
+    };
+  });
+  var functorEffect = /* @__PURE__ */ $lazy_functorEffect(20);
 
   // output/Effect.Class/index.js
   var monadEffectEffect = {
@@ -562,6 +505,63 @@
   };
   var liftEffect = function(dict) {
     return dict.liftEffect;
+  };
+
+  // output/Effect.Ref/foreign.js
+  var _new = function(val) {
+    return function() {
+      return { value: val };
+    };
+  };
+  var read = function(ref) {
+    return function() {
+      return ref.value;
+    };
+  };
+  var modifyImpl = function(f) {
+    return function(ref) {
+      return function() {
+        var t = f(ref.value);
+        ref.value = t.state;
+        return t.value;
+      };
+    };
+  };
+  var write = function(val) {
+    return function(ref) {
+      return function() {
+        ref.value = val;
+      };
+    };
+  };
+
+  // output/Effect.Ref/index.js
+  var $$void2 = /* @__PURE__ */ $$void(functorEffect);
+  var $$new = _new;
+  var modify$prime = modifyImpl;
+  var modify = function(f) {
+    return modify$prime(function(s) {
+      var s$prime = f(s);
+      return {
+        state: s$prime,
+        value: s$prime
+      };
+    });
+  };
+  var modify_ = function(f) {
+    return function(s) {
+      return $$void2(modify(f)(s));
+    };
+  };
+
+  // output/Control.Monad.Reader.Class/index.js
+  var ask = function(dict) {
+    return dict.ask;
+  };
+
+  // output/Control.Monad.Trans.Class/index.js
+  var lift = function(dict) {
+    return dict.lift;
   };
 
   // output/Control.Monad.Reader.Trans/index.js
@@ -689,7 +689,9 @@
       return runReaderT(v)(applicationEnvironment);
     };
   };
+  var monadEffectAppM = /* @__PURE__ */ monadEffectReader(monadEffectEffect);
   var monadAppM = /* @__PURE__ */ monadReaderT(monadEffect);
+  var bindAppM = /* @__PURE__ */ bindReaderT(bindEffect);
 
   // output/WordMeter.FFI.Clipboard/foreign.js
   var writeText = (text2) => (onSuccess) => (onError) => () => {
@@ -1326,6 +1328,23 @@
     };
     return SetCopyStatus2;
   }();
+  var Reset = /* @__PURE__ */ function() {
+    function Reset2() {
+    }
+    ;
+    Reset2.value = new Reset2();
+    return Reset2;
+  }();
+  var LoadSession = /* @__PURE__ */ function() {
+    function LoadSession2(value0) {
+      this.value0 = value0;
+    }
+    ;
+    LoadSession2.create = function(value0) {
+      return new LoadSession2(value0);
+    };
+    return LoadSession2;
+  }();
   var wordsInTrailingWindow = function(windowMs) {
     return function(session) {
       var cutoff = session.now - windowMs;
@@ -1348,7 +1367,15 @@
       return max3(0)(session.now - session.firstStartedAt.value0);
     }
     ;
-    throw new Error("Failed pattern match at WordMeter.Recording (line 266, column 22 - line 268, column 46): " + [session.firstStartedAt.constructor.name]);
+    throw new Error("Failed pattern match at WordMeter.Recording (line 305, column 22 - line 307, column 46): " + [session.firstStartedAt.constructor.name]);
+  };
+  var toPersistedData = function(session) {
+    return {
+      totalWords: session.totalWords,
+      firstStartedAt: fromMaybe(0 / 0)(session.firstStartedAt),
+      wordEvents: session.wordEvents,
+      eventLog: session.eventLog
+    };
   };
   var statTileValue = function(valueTestId) {
     return function(valueText) {
@@ -1370,9 +1397,10 @@
       return formatClockTime(session.firstStartedAt.value0);
     }
     ;
-    throw new Error("Failed pattern match at WordMeter.Recording (line 487, column 24 - line 489, column 46): " + [session.firstStartedAt.constructor.name]);
+    throw new Error("Failed pattern match at WordMeter.Recording (line 544, column 24 - line 546, column 46): " + [session.firstStartedAt.constructor.name]);
   };
   var shortWindowMs = 6e4;
+  var resetConfirmationPrompt = "Reset all word meter stats? This cannot be undone.";
   var minimumCaptionOpacity = 0.15;
   var millisecondsPerSecond = 1e3;
   var millisecondsPerMinute = 6e4;
@@ -1386,7 +1414,7 @@
         return toNumber(wordCount) * millisecondsPerMinute / elapsedMs;
       }
       ;
-      throw new Error("Failed pattern match at WordMeter.Recording (line 279, column 1 - line 279, column 41): " + [wordCount.constructor.name, elapsedMs.constructor.name]);
+      throw new Error("Failed pattern match at WordMeter.Recording (line 318, column 1 - line 318, column 41): " + [wordCount.constructor.name, elapsedMs.constructor.name]);
     };
   };
   var shortRate = function(session) {
@@ -1448,19 +1476,19 @@
       return show2(wholePart) + ("." + show2(fracPart));
     }
     ;
-    throw new Error("Failed pattern match at WordMeter.Recording (line 316, column 1 - line 316, column 31): " + [rate.constructor.name]);
+    throw new Error("Failed pattern match at WordMeter.Recording (line 355, column 1 - line 355, column 31): " + [rate.constructor.name]);
   };
   var formatDurationMs = function(ms) {
     var totalSeconds = max1(0)(floor2(ms / millisecondsPerSecond));
-    var $38 = totalSeconds < 60;
-    if ($38) {
+    var $40 = totalSeconds < 60;
+    if ($40) {
       return show2(totalSeconds) + "s";
     }
     ;
     var totalMinutes = div1(totalSeconds)(60);
     var seconds = mod2(totalSeconds)(60);
-    var $39 = totalMinutes < 60;
-    if ($39) {
+    var $41 = totalMinutes < 60;
+    if ($41) {
       return show2(totalMinutes) + ("m " + (show2(seconds) + "s"));
     }
     ;
@@ -1503,7 +1531,7 @@
               return v.value0;
             }
             ;
-            throw new Error("Failed pattern match at WordMeter.Recording (line 163, column 21 - line 165, column 31): " + [v1.currentIntervalStart.constructor.name]);
+            throw new Error("Failed pattern match at WordMeter.Recording (line 189, column 21 - line 191, column 31): " + [v1.currentIntervalStart.constructor.name]);
           }();
           var completed = {
             startedAt,
@@ -1560,7 +1588,7 @@
                 return new Just(v.value0);
               }
               ;
-              throw new Error("Failed pattern match at WordMeter.Recording (line 198, column 30 - line 200, column 40): " + [v1.firstStartedAt.constructor.name]);
+              throw new Error("Failed pattern match at WordMeter.Recording (line 224, column 30 - line 226, column 40): " + [v1.firstStartedAt.constructor.name]);
             }(),
             wordEvents: pruneEvents(v.value0)(v1.wordEvents),
             captions: pruneCaptions(v.value0)(v1.captions),
@@ -1576,8 +1604,8 @@
           var wordCount = countWords(v.value0);
           var prunedEvents = pruneEvents(v.value1)(v1.wordEvents);
           var prunedCaptions = pruneCaptions(v.value1)(v1.captions);
-          var $47 = wordCount === 0;
-          if ($47) {
+          var $49 = wordCount === 0;
+          if ($49) {
             return {
               listening: v1.listening,
               totalWords: v1.totalWords,
@@ -1727,7 +1755,52 @@
         };
       }
       ;
-      throw new Error("Failed pattern match at WordMeter.Recording (line 159, column 1 - line 159, column 39): " + [v.constructor.name, v1.constructor.name]);
+      if (v instanceof Reset) {
+        return {
+          listening: initialSession.listening,
+          totalWords: initialSession.totalWords,
+          captions: initialSession.captions,
+          wordEvents: initialSession.wordEvents,
+          eventLog: initialSession.eventLog,
+          currentIntervalWords: initialSession.currentIntervalWords,
+          firstStartedAt: initialSession.firstStartedAt,
+          currentIntervalStart: initialSession.currentIntervalStart,
+          completedActiveMs: initialSession.completedActiveMs,
+          now: initialSession.now,
+          lastError: initialSession.lastError,
+          copyStatus: initialSession.copyStatus,
+          diagnostics: v1.diagnostics,
+          environment: v1.environment
+        };
+      }
+      ;
+      if (v instanceof LoadSession) {
+        return {
+          listening: v1.listening,
+          captions: v1.captions,
+          currentIntervalWords: v1.currentIntervalWords,
+          currentIntervalStart: v1.currentIntervalStart,
+          completedActiveMs: v1.completedActiveMs,
+          now: v1.now,
+          lastError: v1.lastError,
+          diagnostics: v1.diagnostics,
+          environment: v1.environment,
+          copyStatus: v1.copyStatus,
+          totalWords: v.value0.totalWords,
+          firstStartedAt: function() {
+            var $58 = isFiniteImpl(v.value0.firstStartedAt);
+            if ($58) {
+              return new Just(v.value0.firstStartedAt);
+            }
+            ;
+            return Nothing.value;
+          }(),
+          wordEvents: v.value0.wordEvents,
+          eventLog: v.value0.eventLog
+        };
+      }
+      ;
+      throw new Error("Failed pattern match at WordMeter.Recording (line 185, column 1 - line 185, column 39): " + [v.constructor.name, v1.constructor.name]);
     };
   };
   var captionOpacity = function(nowMs) {
@@ -1779,11 +1852,14 @@
               return [];
             }
             ;
-            throw new Error("Failed pattern match at WordMeter.Recording (line 453, column 11 - line 455, column 22): " + [maybeSublabel.constructor.name]);
+            throw new Error("Failed pattern match at WordMeter.Recording (line 510, column 11 - line 512, column 22): " + [maybeSublabel.constructor.name]);
           }()));
         };
       };
     };
+  };
+  var buildReset = function(handlers) {
+    return button([testId("wm-reset"), buttonType("button")])([style("margin-top")("8px"), style("padding")("6px 14px"), style("border")("1px solid rgba(255,255,255,0.18)"), style("border-radius")("999px"), style("background")("transparent"), style("color")("#9aa5b1"), style("cursor")("pointer"), style("font")("inherit"), style("font-size")("12px")])([onClick(handlers.requestReset)])([text("\u21BA Reset")]);
   };
   var buildEventLogPlaceholder = /* @__PURE__ */ div_([/* @__PURE__ */ testId("wm-event-log-placeholder")])([/* @__PURE__ */ style("font-size")("12px"), /* @__PURE__ */ style("color")("#7d8590"), /* @__PURE__ */ style("font-style")("italic")])([/* @__PURE__ */ text("(no counting sessions yet \u2014 press Start counting to begin)")]);
   var buildEventLogEntry = function(interval) {
@@ -1791,8 +1867,8 @@
   };
   var buildEventLog = function(session) {
     return div_([testId("wm-event-log")])([style("margin-top")("14px"), style("padding-top")("10px"), style("border-top")("1px solid rgba(255,255,255,0.08)"), style("display")("flex"), style("flex-direction")("column"), style("gap")("4px"), style("max-height")("220px"), style("overflow-y")("auto")])(function() {
-      var $61 = length(session.eventLog) === 0;
-      if ($61) {
+      var $65 = length(session.eventLog) === 0;
+      if ($65) {
         return [buildEventLogPlaceholder];
       }
       ;
@@ -1816,8 +1892,8 @@
   };
   var buildCaptions = function(session) {
     return div_([testId("wm-captions")])([style("margin-top")("14px"), style("padding-top")("10px"), style("border-top")("1px solid rgba(255,255,255,0.08)"), style("display")("flex"), style("flex-direction")("column"), style("gap")("4px"), style("min-height")("20px")])(function() {
-      var $62 = length(session.captions) === 0;
-      if ($62) {
+      var $66 = length(session.captions) === 0;
+      if ($66) {
         return [buildCaptionsPlaceholder];
       }
       ;
@@ -1834,7 +1910,7 @@
         return 0;
       }
       ;
-      throw new Error("Failed pattern match at WordMeter.Recording (line 261, column 31 - line 263, column 19): " + [session.currentIntervalStart.constructor.name]);
+      throw new Error("Failed pattern match at WordMeter.Recording (line 300, column 31 - line 302, column 19): " + [session.currentIntervalStart.constructor.name]);
     }();
   };
   var overallRate = function(session) {
@@ -1845,7 +1921,7 @@
   };
   var view = function(handlers) {
     return function(session) {
-      return div_([testId("wm-root")])([style("font-family")("system-ui, -apple-system, sans-serif"), style("padding")("16px"), style("border-radius")("12px"), style("background")("#0b1220"), style("color")("#e6edf3"), style("max-width")("420px")])([buildTag, buildStatus(session), buildCount(session), buildCountLabel, buildToggle(handlers)(session), buildStats(session), buildCaptions(session), buildEventLog(session), buildDiagnostics(handlers)(session), buildVersion]);
+      return div_([testId("wm-root")])([style("font-family")("system-ui, -apple-system, sans-serif"), style("padding")("16px"), style("border-radius")("12px"), style("background")("#0b1220"), style("color")("#e6edf3"), style("max-width")("420px")])([buildTag, buildStatus(session), buildCount(session), buildCountLabel, buildToggle(handlers)(session), buildReset(handlers), buildStats(session), buildCaptions(session), buildEventLog(session), buildDiagnostics(handlers)(session), buildVersion]);
     };
   };
 
@@ -1873,6 +1949,116 @@
     return dict.readCurrentSession;
   };
 
+  // output/WordMeter.FFI.Storage/foreign.js
+  var STORAGE_KEY = "word-meter-ps:state:v1";
+  var safeLocalStorage = () => {
+    try {
+      return typeof localStorage !== "undefined" ? localStorage : null;
+    } catch (_unused) {
+      return null;
+    }
+  };
+  var sanitizeNumber = (value, fallback) => {
+    const numeric = Number(value);
+    return isFinite(numeric) ? numeric : fallback;
+  };
+  var sanitizeWordEvents = (raw) => {
+    if (!Array.isArray(raw)) return [];
+    return raw.map((event) => ({
+      timestamp: sanitizeNumber(event && event.timestamp, NaN),
+      wordCount: sanitizeNumber(event && event.wordCount, 0)
+    })).filter((event) => isFinite(event.timestamp) && event.wordCount > 0);
+  };
+  var sanitizeEventLog = (raw) => {
+    if (!Array.isArray(raw)) return [];
+    return raw.map((interval) => ({
+      startedAt: sanitizeNumber(interval && interval.startedAt, NaN),
+      endedAt: sanitizeNumber(interval && interval.endedAt, NaN),
+      wordCount: Math.max(
+        0,
+        Math.floor(sanitizeNumber(interval && interval.wordCount, 0))
+      )
+    })).filter(
+      (interval) => isFinite(interval.startedAt) && isFinite(interval.endedAt) && interval.endedAt >= interval.startedAt
+    );
+  };
+  var loadData = (nothing) => (just) => () => {
+    const storage = safeLocalStorage();
+    if (!storage) return nothing;
+    try {
+      const raw = storage.getItem(STORAGE_KEY);
+      if (!raw) return nothing;
+      const data = JSON.parse(raw);
+      if (!data || data.version !== 1) return nothing;
+      return just({
+        totalWords: Math.max(
+          0,
+          Math.floor(sanitizeNumber(data.totalWords, 0))
+        ),
+        firstStartedAt: isFinite(data.firstStartedAt) ? data.firstStartedAt : NaN,
+        wordEvents: sanitizeWordEvents(data.wordEvents),
+        eventLog: sanitizeEventLog(data.eventLog)
+      });
+    } catch (_unused) {
+      return nothing;
+    }
+  };
+  var saveData = (data) => () => {
+    const storage = safeLocalStorage();
+    if (!storage) return;
+    try {
+      const snapshot = {
+        version: 1,
+        totalWords: data.totalWords,
+        firstStartedAt: isFinite(data.firstStartedAt) ? data.firstStartedAt : null,
+        wordEvents: data.wordEvents,
+        eventLog: data.eventLog
+      };
+      storage.setItem(STORAGE_KEY, JSON.stringify(snapshot));
+    } catch (_unused) {
+    }
+  };
+  var clearData = () => {
+    const storage = safeLocalStorage();
+    if (!storage) return;
+    try {
+      storage.removeItem(STORAGE_KEY);
+    } catch (_unused) {
+    }
+  };
+
+  // output/WordMeter.Capability.Storage/index.js
+  var liftEffect6 = /* @__PURE__ */ liftEffect(/* @__PURE__ */ monadEffectReader(monadEffectEffect));
+  var storageAppM = /* @__PURE__ */ function() {
+    return {
+      loadPersistedData: liftEffect6(loadData(Nothing.value)(Just.create)),
+      savePersistedData: function(persisted) {
+        return liftEffect6(saveData(persisted));
+      },
+      clearPersistedData: liftEffect6(clearData),
+      Monad0: function() {
+        return monadAppM;
+      }
+    };
+  }();
+  var savePersistedData = function(dict) {
+    return dict.savePersistedData;
+  };
+  var loadPersistedData = function(dict) {
+    return dict.loadPersistedData;
+  };
+  var clearPersistedData = function(dict) {
+    return dict.clearPersistedData;
+  };
+
+  // output/WordMeter.FFI.Confirm/foreign.js
+  var requestConfirmation = (message2) => () => {
+    if (typeof window === "undefined" || typeof window.confirm !== "function") {
+      return false;
+    }
+    return window.confirm(message2);
+  };
+
   // output/WordMeter.TestHook/foreign.js
   var installTestHook = (api) => () => {
     if (typeof window === "undefined") return;
@@ -1898,7 +2084,9 @@
       getDiagnosticsLength: () => api.getDiagnosticsLength(),
       getDiagnosticsLimit: () => api.getDiagnosticsLimit(),
       getCopyStatus: () => api.getCopyStatus(),
-      requestCopyDiagnostics: () => api.requestCopyDiagnostics()
+      requestCopyDiagnostics: () => api.requestCopyDiagnostics(),
+      reset: () => api.reset(),
+      persistNow: () => api.persistNow()
     };
   };
 
@@ -1986,7 +2174,9 @@
       getCopyStatus: map4(function(v1) {
         return v1.copyStatus;
       })(v.readSession),
-      requestCopyDiagnostics: v.requestCopyDiagnostics
+      requestCopyDiagnostics: v.requestCopyDiagnostics,
+      reset: v.reset,
+      persistNow: v.persistNow
     });
   };
 
@@ -1994,6 +2184,44 @@
   var discard2 = /* @__PURE__ */ discard(discardUnit);
   var pure3 = /* @__PURE__ */ pure(applicativeEffect);
   var currentTimeMillis3 = /* @__PURE__ */ currentTimeMillis2(clockAppM);
+  var discard22 = /* @__PURE__ */ discard2(bindAppM);
+  var updateSession2 = /* @__PURE__ */ updateSession(sessionStateAppM);
+  var clearPersistedData2 = /* @__PURE__ */ clearPersistedData(storageAppM);
+  var savePersistedData2 = /* @__PURE__ */ savePersistedData(storageAppM);
+  var persistAfterAction = function(dictStorage) {
+    var clearPersistedData1 = clearPersistedData(dictStorage);
+    var pure1 = pure(dictStorage.Monad0().Applicative0());
+    var savePersistedData1 = savePersistedData(dictStorage);
+    return function(v) {
+      return function(v1) {
+        if (v instanceof Reset) {
+          return clearPersistedData1;
+        }
+        ;
+        if (v instanceof Tick) {
+          return pure1(unit);
+        }
+        ;
+        if (v instanceof RecordDiagnostic) {
+          return pure1(unit);
+        }
+        ;
+        if (v instanceof SetEnvironment) {
+          return pure1(unit);
+        }
+        ;
+        if (v instanceof SetCopyStatus) {
+          return pure1(unit);
+        }
+        ;
+        if (v instanceof LoadSession) {
+          return pure1(unit);
+        }
+        ;
+        return savePersistedData1(toPersistedData(v1));
+      };
+    };
+  };
   var hostElementId = "word-meter";
   var rerender = function(dictDomMount) {
     var bind1 = bind(dictDomMount.Monad0().Bind1());
@@ -2007,25 +2235,103 @@
       };
     };
   };
+  var rerender1 = /* @__PURE__ */ rerender(domMountAppM)(sessionStateAppM);
   var startApplication = function(dictClock) {
-    var Bind1 = dictClock.Monad0().Bind1();
+    var Monad0 = dictClock.Monad0();
+    var Bind1 = Monad0.Bind1();
     var bind1 = bind(Bind1);
-    var discard22 = discard2(Bind1);
+    var discard3 = discard2(Bind1);
+    var pure1 = pure(Monad0.Applicative0());
     var currentTimeMillis1 = currentTimeMillis2(dictClock);
     return function(dictEnvironment) {
       var captureEnvironmentSnapshot3 = captureEnvironmentSnapshot2(dictEnvironment);
       return function(dictDomMount) {
-        var rerender1 = rerender(dictDomMount);
+        var rerender2 = rerender(dictDomMount);
         return function(dictSessionState) {
-          var updateSession2 = updateSession(dictSessionState);
-          var rerender2 = rerender1(dictSessionState);
-          return function(handlers) {
-            return bind1(captureEnvironmentSnapshot3(version))(function(snapshot) {
-              return discard22(updateSession2(new SetEnvironment(snapshot)))(function() {
-                return bind1(currentTimeMillis1)(function(initTimestamp) {
-                  return discard22(updateSession2(new RecordDiagnostic(initTimestamp, "init", "version=" + version)))(function() {
-                    return rerender2(handlers);
+          var updateSession1 = updateSession(dictSessionState);
+          var rerender3 = rerender2(dictSessionState);
+          return function(dictStorage) {
+            var loadPersistedData2 = loadPersistedData(dictStorage);
+            return function(handlers) {
+              return bind1(loadPersistedData2)(function(maybePersistedData) {
+                return discard3(function() {
+                  if (maybePersistedData instanceof Just) {
+                    return updateSession1(new LoadSession(maybePersistedData.value0));
+                  }
+                  ;
+                  if (maybePersistedData instanceof Nothing) {
+                    return pure1(unit);
+                  }
+                  ;
+                  throw new Error("Failed pattern match at WordMeter.Main (line 95, column 3 - line 97, column 25): " + [maybePersistedData.constructor.name]);
+                }())(function() {
+                  return bind1(captureEnvironmentSnapshot3(version))(function(snapshot) {
+                    return discard3(updateSession1(new SetEnvironment(snapshot)))(function() {
+                      return bind1(currentTimeMillis1)(function(initTimestamp) {
+                        return discard3(updateSession1(new RecordDiagnostic(initTimestamp, "init", "version=" + version)))(function() {
+                          return rerender3(handlers);
+                        });
+                      });
+                    });
                   });
+                });
+              });
+            };
+          };
+        };
+      };
+    };
+  };
+  var startApplication1 = /* @__PURE__ */ startApplication(clockAppM)(environmentAppM)(domMountAppM)(sessionStateAppM)(storageAppM);
+  var handleReset = function(dictMonadEffect) {
+    var liftEffect7 = liftEffect(dictMonadEffect);
+    return function(dictDomMount) {
+      var Monad0 = dictDomMount.Monad0();
+      var Bind1 = Monad0.Bind1();
+      var bind1 = bind(Bind1);
+      var discard3 = discard2(Bind1);
+      var rerender2 = rerender(dictDomMount);
+      var pure1 = pure(Monad0.Applicative0());
+      return function(dictSessionState) {
+        var updateSession1 = updateSession(dictSessionState);
+        var rerender3 = rerender2(dictSessionState);
+        return function(dictStorage) {
+          var clearPersistedData1 = clearPersistedData(dictStorage);
+          return function(handlers) {
+            return bind1(liftEffect7(requestConfirmation(resetConfirmationPrompt)))(function(confirmed) {
+              if (confirmed) {
+                return discard3(updateSession1(Reset.value))(function() {
+                  return discard3(clearPersistedData1)(function() {
+                    return rerender3(handlers);
+                  });
+                });
+              }
+              ;
+              return pure1(unit);
+            });
+          };
+        };
+      };
+    };
+  };
+  var handleReset1 = /* @__PURE__ */ handleReset(monadEffectAppM)(domMountAppM)(sessionStateAppM)(storageAppM);
+  var dispatch = function(dictDomMount) {
+    var Bind1 = dictDomMount.Monad0().Bind1();
+    var discard3 = discard2(Bind1);
+    var bind1 = bind(Bind1);
+    var rerender2 = rerender(dictDomMount);
+    return function(dictSessionState) {
+      var updateSession1 = updateSession(dictSessionState);
+      var readCurrentSession2 = readCurrentSession(dictSessionState);
+      var rerender3 = rerender2(dictSessionState);
+      return function(dictStorage) {
+        var persistAfterAction1 = persistAfterAction(dictStorage);
+        return function(handlers) {
+          return function(action) {
+            return discard3(updateSession1(action))(function() {
+              return bind1(readCurrentSession2)(function(session) {
+                return discard3(persistAfterAction1(action)(session))(function() {
+                  return rerender3(handlers);
                 });
               });
             });
@@ -2034,23 +2340,7 @@
       };
     };
   };
-  var startApplication1 = /* @__PURE__ */ startApplication(clockAppM)(environmentAppM)(domMountAppM)(sessionStateAppM);
-  var dispatch = function(dictDomMount) {
-    var discard22 = discard2(dictDomMount.Monad0().Bind1());
-    var rerender1 = rerender(dictDomMount);
-    return function(dictSessionState) {
-      var updateSession2 = updateSession(dictSessionState);
-      var rerender2 = rerender1(dictSessionState);
-      return function(handlers) {
-        return function(action) {
-          return discard22(updateSession2(action))(function() {
-            return rerender2(handlers);
-          });
-        };
-      };
-    };
-  };
-  var dispatch1 = /* @__PURE__ */ dispatch(domMountAppM)(sessionStateAppM);
+  var dispatch1 = /* @__PURE__ */ dispatch(domMountAppM)(sessionStateAppM)(storageAppM);
   var handleCopyDiagnostics = function(dictClipboard) {
     var bind1 = bind(dictClipboard.Monad0().Bind1());
     var writeClipboardText2 = writeClipboardText(dictClipboard);
@@ -2059,17 +2349,20 @@
       return function(dictSessionState) {
         var readCurrentSession2 = readCurrentSession(dictSessionState);
         var dispatch3 = dispatch2(dictSessionState);
-        return function(handlers) {
-          return bind1(readCurrentSession2)(function(session) {
-            return writeClipboardText2(diagnosticsText(session))(dispatch3(handlers)(new SetCopyStatus("Copied!")))(function(reason) {
-              return dispatch3(handlers)(new SetCopyStatus("Copy failed: " + reason));
+        return function(dictStorage) {
+          var dispatch4 = dispatch3(dictStorage);
+          return function(handlers) {
+            return bind1(readCurrentSession2)(function(session) {
+              return writeClipboardText2(diagnosticsText(session))(dispatch4(handlers)(new SetCopyStatus("Copied!")))(function(reason) {
+                return dispatch4(handlers)(new SetCopyStatus("Copy failed: " + reason));
+              });
             });
-          });
+          };
         };
       };
     };
   };
-  var handleCopyDiagnostics1 = /* @__PURE__ */ handleCopyDiagnostics(clipboardAppM)(domMountAppM)(sessionStateAppM);
+  var handleCopyDiagnostics1 = /* @__PURE__ */ handleCopyDiagnostics(clipboardAppM)(domMountAppM)(sessionStateAppM)(storageAppM);
   var handleToggle = function(dictClock) {
     var bind1 = bind(dictClock.Monad0().Bind1());
     var currentTimeMillis1 = currentTimeMillis2(dictClock);
@@ -2077,20 +2370,24 @@
       var dispatch2 = dispatch(dictDomMount);
       return function(dictSessionState) {
         var dispatch3 = dispatch2(dictSessionState);
-        return function(handlers) {
-          return bind1(currentTimeMillis1)(function(timestamp) {
-            return dispatch3(handlers)(new Toggle(timestamp));
-          });
+        return function(dictStorage) {
+          var dispatch4 = dispatch3(dictStorage);
+          return function(handlers) {
+            return bind1(currentTimeMillis1)(function(timestamp) {
+              return dispatch4(handlers)(new Toggle(timestamp));
+            });
+          };
         };
       };
     };
   };
-  var handleToggle1 = /* @__PURE__ */ handleToggle(clockAppM)(domMountAppM)(sessionStateAppM);
+  var handleToggle1 = /* @__PURE__ */ handleToggle(clockAppM)(domMountAppM)(sessionStateAppM)(storageAppM);
   var main = function __do() {
     var sessionRef = $$new(initialSession)();
     var clickHandlersRef = $$new({
       requestToggle: pure3(unit),
-      requestCopyDiagnostics: pure3(unit)
+      requestCopyDiagnostics: pure3(unit),
+      requestReset: pure3(unit)
     })();
     var readClickHandlers = read(clickHandlersRef);
     var applicationEnvironment = {
@@ -2104,6 +2401,10 @@
       requestCopyDiagnostics: function __do2() {
         var resolved = readClickHandlers();
         return runAppM(applicationEnvironment)(handleCopyDiagnostics1(resolved))();
+      },
+      requestReset: function __do2() {
+        var resolved = readClickHandlers();
+        return runAppM(applicationEnvironment)(handleReset1(resolved))();
       }
     };
     write(handlers)(clickHandlersRef)();
@@ -2115,7 +2416,16 @@
       readSession: read(sessionRef),
       clock: runAppM(applicationEnvironment)(currentTimeMillis3),
       version,
-      requestCopyDiagnostics: handlers.requestCopyDiagnostics
+      requestCopyDiagnostics: handlers.requestCopyDiagnostics,
+      reset: runAppM(applicationEnvironment)(discard22(updateSession2(Reset.value))(function() {
+        return discard22(clearPersistedData2)(function() {
+          return rerender1(handlers);
+        });
+      })),
+      persistNow: function __do2() {
+        var session = read(sessionRef)();
+        return runAppM(applicationEnvironment)(savePersistedData2(toPersistedData(session)))();
+      }
     })();
   };
 

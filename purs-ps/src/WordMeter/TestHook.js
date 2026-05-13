@@ -25,5 +25,7 @@ export const installTestHook = (api) => () => {
     getDiagnosticsLimit: () => api.getDiagnosticsLimit(),
     getCopyStatus: () => api.getCopyStatus(),
     requestCopyDiagnostics: () => api.requestCopyDiagnostics(),
+    reset: () => api.reset(),
+    persistNow: () => api.persistNow(),
   }
 }

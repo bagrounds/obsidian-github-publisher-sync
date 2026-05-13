@@ -123,6 +123,7 @@ The hook is the contract the end-to-end suite uses to simulate Web Speech API ev
 - `wm-diagnostics-copy` — the `📋 Copy diagnostics` button. On click the meter calls `navigator.clipboard.writeText` with the rendered text and updates `wm-diagnostics-copy-status` with `Copied!` on success or `Copy failed: <reason>` on failure (including when the Clipboard API is unavailable).
 - `wm-diagnostics-copy-status` — a span next to the copy button, empty until the first copy attempt completes.
 - `wm-diagnostics-content` — a `<pre>` containing the formatted diagnostics text: an environment snapshot prefix (`version`, `userAgent`, `navigator.language`) followed by the rolling event log capped at `diagnosticsLimit` (60) entries. Each event line is `<clock-time>  <label>[ — <detail>]`.
+- `wm-reset` — reset button. Clicking it shows a native browser confirmation dialog; if confirmed, all session state (words, rates, event log, first-started timestamp, captions) and the persisted localStorage snapshot are cleared. Diagnostics history and the environment snapshot are preserved.
 - `wm-version` — `Word Meter v<x>` footer.
 
 Every implementation must honor this contract. As behavior moves from the legacy build to the new build, the same tests verify both columns.
@@ -136,7 +137,7 @@ Every implementation must honor this contract. As behavior moves from the legacy
 | 3     | Real, functioning stats dashboard (words/min over short + long windows, duration, totals)               | ✅ Done    |
 | 4     | Event log with word histories (timeline of completed counting sessions: started, duration, words, wpm) | ✅ Done    |
 | 5     | Fully functional diagnostics panel (collapsible drawer + copy-to-clipboard)                             | ✅ Done    |
-| 6     | Reset + persistence (localStorage round-trip)                                                           | ⏳ Pending |
+| 6     | Reset + persistence (localStorage round-trip)                                                           | ✅ Done    |
 | 7     | Wake lock + keep-awake toggle                                                                           | ⏳ Pending |
 | 8     | Permission denied + transient-error banner                                                              | ⏳ Pending |
 | 9     | On-device pre-flight + cloud fallback                                                                   | ⏳ Pending |
@@ -146,5 +147,5 @@ Every implementation must honor this contract. As behavior moves from the legacy
 
 - `npm run build:ps` — rebuild `quartz/static/word-meter-ps.js`.
 - `npm run clean:ps` — wipe PureScript build artifacts.
-- `npm run test:ps` — `spago test` unit suite (covers the pure rate math: `formatRate`, `formatDurationMs`, `ratePerMinute`, end-to-end reducer runs through `Toggle`/`InjectFinalTranscript`/`Tick`, the slice-4 event-log reducer behavior for completed counting sessions including stop pushes, stop/restart preservation and cap eviction, the slice-2 caption time-decay including pruning past the 30s window and the linear opacity fade, and the slice-5 diagnostics behavior: per-action entry recording, `diagnosticsLimit` cap, `formatDiagnostics` snapshot prefix and placeholder, and the `SetCopyStatus` reducer case).
+- `npm run test:ps` — `spago test` unit suite (covers the pure rate math: `formatRate`, `formatDurationMs`, `ratePerMinute`, end-to-end reducer runs through `Toggle`/`InjectFinalTranscript`/`Tick`, the slice-4 event-log reducer behavior for completed counting sessions including stop pushes, stop/restart preservation and cap eviction, the slice-2 caption time-decay including pruning past the 30s window and the linear opacity fade, the slice-5 diagnostics behavior: per-action entry recording, `diagnosticsLimit` cap, `formatDiagnostics` snapshot prefix and placeholder, and the `SetCopyStatus` reducer case, and the slice-6 reset/persistence behavior: `Reset` clears user data while preserving diagnostics, `LoadSession` restores persisted fields, `toPersistedData`/`LoadSession` round-trip, and `InMemoryStorageM` save/clear/load).
 - `npm run test:e2e` — Playwright suite against the current PureScript bundle.

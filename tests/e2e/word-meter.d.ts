@@ -24,6 +24,8 @@ declare global {
       getDiagnosticsLimit: () => number
       getCopyStatus: () => string
       requestCopyDiagnostics: () => void
+      reset: () => void
+      persistNow: () => void
     }
   }
 }

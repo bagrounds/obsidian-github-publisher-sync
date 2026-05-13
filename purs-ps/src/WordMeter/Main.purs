@@ -3,7 +3,9 @@ module WordMeter.Main where
 import Prelude
 
 import Effect (Effect)
+import Effect.Class (class MonadEffect, liftEffect)
 import Effect.Ref as Ref
+import Data.Maybe (Maybe(..))
 import WordMeter.AppM (ApplicationEnvironment, runAppM)
 import WordMeter.Capability.Clipboard (class Clipboard, writeClipboardText)
 import WordMeter.Capability.Clock (class Clock, currentTimeMillis)
@@ -14,10 +16,15 @@ import WordMeter.Capability.SessionState
   , readCurrentSession
   , updateSession
   )
+import WordMeter.Capability.Storage (class Storage, clearPersistedData, loadPersistedData, savePersistedData)
+import WordMeter.FFI.Confirm as Confirm
 import WordMeter.Recording
   ( Action(..)
+  , Session
   , diagnosticsText
   , initialSession
+  , resetConfirmationPrompt
+  , toPersistedData
   , view
   )
 import WordMeter.TestHook as TestHook
@@ -29,6 +36,7 @@ hostElementId = "word-meter"
 type ClickHandlers =
   { requestToggle :: Effect Unit
   , requestCopyDiagnostics :: Effect Unit
+  , requestReset :: Effect Unit
   }
 
 main :: Effect Unit
@@ -37,6 +45,7 @@ main = do
   clickHandlersRef <- Ref.new
     { requestToggle: pure unit :: Effect Unit
     , requestCopyDiagnostics: pure unit :: Effect Unit
+    , requestReset: pure unit :: Effect Unit
     }
   let
     applicationEnvironment :: ApplicationEnvironment
@@ -51,6 +60,8 @@ main = do
           runAppM applicationEnvironment (handleToggle resolved)
       , requestCopyDiagnostics: readClickHandlers >>= \resolved ->
           runAppM applicationEnvironment (handleCopyDiagnostics resolved)
+      , requestReset: readClickHandlers >>= \resolved ->
+          runAppM applicationEnvironment (handleReset resolved)
       }
   Ref.write handlers clickHandlersRef
   runAppM applicationEnvironment (startApplication handlers)
@@ -61,6 +72,13 @@ main = do
     , clock: runAppM applicationEnvironment currentTimeMillis
     , version
     , requestCopyDiagnostics: handlers.requestCopyDiagnostics
+    , reset: runAppM applicationEnvironment do
+        updateSession Reset
+        clearPersistedData
+        rerender handlers
+    , persistNow: do
+        session <- Ref.read sessionRef
+        runAppM applicationEnvironment (savePersistedData (toPersistedData session))
     }
 
 startApplication
@@ -69,9 +87,14 @@ startApplication
   => Environment m
   => DomMount m
   => SessionState m
+  => Storage m
   => ClickHandlers
   -> m Unit
 startApplication handlers = do
+  maybePersistedData <- loadPersistedData
+  case maybePersistedData of
+    Just persisted -> updateSession (LoadSession persisted)
+    Nothing -> pure unit
   snapshot <- captureEnvironmentSnapshot version
   updateSession (SetEnvironment snapshot)
   initTimestamp <- currentTimeMillis
@@ -83,12 +106,29 @@ dispatch
   :: forall m
    . DomMount m
   => SessionState m
+  => Storage m
   => ClickHandlers
   -> Action
   -> m Unit
 dispatch handlers action = do
   updateSession action
+  session <- readCurrentSession
+  persistAfterAction action session
   rerender handlers
+
+persistAfterAction
+  :: forall m
+   . Storage m
+  => Action
+  -> Session
+  -> m Unit
+persistAfterAction Reset _ = clearPersistedData
+persistAfterAction (Tick _) _ = pure unit
+persistAfterAction (RecordDiagnostic _ _ _) _ = pure unit
+persistAfterAction (SetEnvironment _) _ = pure unit
+persistAfterAction (SetCopyStatus _) _ = pure unit
+persistAfterAction (LoadSession _) _ = pure unit
+persistAfterAction _ session = savePersistedData (toPersistedData session)
 
 rerender
   :: forall m
@@ -105,6 +145,7 @@ handleToggle
    . Clock m
   => DomMount m
   => SessionState m
+  => Storage m
   => ClickHandlers
   -> m Unit
 handleToggle handlers = do
@@ -116,6 +157,7 @@ handleCopyDiagnostics
    . Clipboard m
   => DomMount m
   => SessionState m
+  => Storage m
   => ClickHandlers
   -> m Unit
 handleCopyDiagnostics handlers = do
@@ -126,3 +168,19 @@ handleCopyDiagnostics handlers = do
     ( \reason ->
         dispatch handlers (SetCopyStatus ("Copy failed: " <> reason))
     )
+
+handleReset
+  :: forall m
+   . MonadEffect m
+  => DomMount m
+  => SessionState m
+  => Storage m
+  => ClickHandlers
+  -> m Unit
+handleReset handlers = do
+  confirmed <- liftEffect (Confirm.requestConfirmation resetConfirmationPrompt)
+  if confirmed then do
+    updateSession Reset
+    clearPersistedData
+    rerender handlers
+  else pure unit

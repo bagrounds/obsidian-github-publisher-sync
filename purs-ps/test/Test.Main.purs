@@ -34,6 +34,12 @@ import WordMeter.Capability.SessionState
   , runStatefulSessionM
   , updateSession
   )
+import WordMeter.Capability.Storage
+  ( runInMemoryStorageM
+  , loadPersistedData
+  , savePersistedData
+  , clearPersistedData
+  )
 import WordMeter.Diagnostics
   ( diagnosticsLimit
   , emptyEnvironment
@@ -59,6 +65,7 @@ import WordMeter.Recording
   , ratePerMinute
   , reduce
   , shortRate
+  , toPersistedData
   , wallSpanMs
   , wordsInTrailingWindow
   )
@@ -74,6 +81,7 @@ main = do
   runCaptionDecayTests
   runDiagnosticsTests
   runCapabilityTests
+  runResetAndPersistenceTests
   log "word-meter: all PureScript unit tests passed"
 
 runRatePerMinuteTests :: Effect Unit
@@ -381,3 +389,76 @@ runCapabilityTests = do
     sessionOutcome.result.totalWords 2
   assertEqualBoolean "StatefulSessionM observes listening state after Toggle"
     sessionOutcome.result.listening true
+
+runResetAndPersistenceTests :: Effect Unit
+runResetAndPersistenceTests = do
+  -- Reset action clears user data but preserves diagnostics + environment.
+  let
+    env = emptyEnvironment { version = "1.0.0", userAgent = "ua", navigatorLanguage = "en" }
+    s0 = initialSession
+    s1 = reduce (Toggle 0.0) s0
+    s2 = reduce (InjectFinalTranscript "one two three" 1000.0) s1
+    s3 = reduce (Toggle 30000.0) s2
+    s4 = reduce (SetEnvironment env) s3
+    s5 = reduce Reset s4
+
+  assertEqualInt "Reset clears totalWords" s5.totalWords 0
+  assertEqualInt "Reset clears eventLog" (Array.length s5.eventLog) 0
+  assertEqualInt "Reset clears captions" (Array.length s5.captions) 0
+  assertEqualBoolean "Reset sets listening to false" s5.listening false
+  case s5.firstStartedAt of
+    Nothing -> pure unit
+    Just _ -> throw "Reset should clear firstStartedAt"
+  assertEqualInt "Reset preserves diagnostics" (Array.length s5.diagnostics) (Array.length s4.diagnostics)
+  case s5.environment of
+    Just _ -> pure unit
+    Nothing -> throw "Reset should preserve the captured environment"
+
+  -- LoadSession restores totalWords, firstStartedAt, wordEvents, eventLog.
+  let
+    populated = reduce (Toggle 0.0) (reduce (InjectFinalTranscript "alpha beta" 1000.0) (reduce (Toggle 0.0) s0))
+    persisted = toPersistedData (reduce (Toggle 60000.0) populated)
+    blank = initialSession
+    restored = reduce (LoadSession persisted) blank
+  assertEqualInt "LoadSession restores totalWords"
+    restored.totalWords persisted.totalWords
+  case restored.firstStartedAt of
+    Just _ -> pure unit
+    Nothing -> throw "LoadSession should restore firstStartedAt when it was set"
+
+  -- toPersistedData / LoadSession round-trip: what we encode we can decode.
+  let
+    beforeReset = reduce (Toggle 0.0) (reduce (InjectFinalTranscript "hello world" 2000.0) (reduce (Toggle 0.0) s0))
+    stopped = reduce (Toggle 30000.0) beforeReset
+    snapshot = toPersistedData stopped
+    roundTripped = reduce (LoadSession snapshot) initialSession
+  assertEqualInt "round-trip preserves totalWords"
+    roundTripped.totalWords stopped.totalWords
+  assertEqualInt "round-trip preserves eventLog length"
+    (Array.length roundTripped.eventLog) (Array.length stopped.eventLog)
+
+  -- InMemoryStorageM: save + load round-trip.
+  let
+    testData =
+      { totalWords: 42
+      , firstStartedAt: 1_700_000_000_000.0
+      , wordEvents: []
+      , eventLog: []
+      }
+    saveOutcome = runInMemoryStorageM Nothing do
+      savePersistedData testData
+      loadPersistedData
+  case saveOutcome.result of
+    Just loaded ->
+      assertEqualInt "InMemoryStorageM round-trips totalWords"
+        loaded.totalWords 42
+    Nothing -> throw "InMemoryStorageM should have returned the saved data"
+
+  -- InMemoryStorageM: clear removes the stored value.
+  let
+    clearOutcome = runInMemoryStorageM (Just testData) do
+      clearPersistedData
+      loadPersistedData
+  case clearOutcome.result of
+    Nothing -> pure unit
+    Just _ -> throw "InMemoryStorageM: clearPersistedData should leave Nothing"

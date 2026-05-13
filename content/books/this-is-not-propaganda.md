@@ -12,9 +12,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-18T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-05-13T11:56:19Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A stylized human head in profile, subtly fragmented like broken glass or a distorted digital screen. Inside the head, a chaotic vortex of glowing, intertwined data streams, abstract symbols, and blurred, contradictory news snippets swirls. One stream, a faint thread of pure light, attempts to navigate through the dense, colorful noise but is nearly engulfed. A subtle, elongated shadow resembling a Pinocchio nose extends from the back of the head, cast onto a muted, swirling backdrop of digital static and fog. The overall impression is one of overwhelming, manipulated information distorting perception.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🤥📣 This Is Not Propaganda: Adventures in the War Against Reality  
+![books-this-is-not-propaganda](../books-this-is-not-propaganda.jpg)  
 [🛒 This Is Not Propaganda: Adventures in the War Against Reality. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4jwntEL)  
   
 ## 📚 Book Report: This Is Not Propaganda by Peter Pomerantsev  

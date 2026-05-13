@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-05-12T17:58:01-07:00
+updated: 2026-05-13T09:08:06-07:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -14,11 +14,11 @@ updated: 2026-05-12T17:58:01-07:00
 🔊 Listen to any page with built in audio control.  
 💬 Comment on any page with your GitHub account.  
   
-## [🪞 Reflections](./reflections/index.md) ~ Blog (544)  
-- [2026-05-12](./reflections/2026-05-12.md)  
+## [🪞 Reflections](./reflections/index.md) ~ Blog (545)  
+- [2026-05-13](./reflections/2026-05-13.md)  
+- [2026-05-12 | 🌟 Progress 🏛️ Commons 📰 Ripples 🤖 Intent 🐔 Pantry 🔀 Echoes 📊 Dashboard 📋 Drawer 🧱 Pattern 🧰📺🤖🐔🔀🌟🏛️📰🔄🤖🐲](./reflections/2026-05-12.md)  
 - [2026-05-11 | 🌟 World 📰 Ripples 🔍 Fails, 🤖 Conscience 🏛️ Citizen 🐔 Magic 🤖 Removing 🤖 Paying 🔀 Systems ⚙️ Meter. 🧰📚🌟📰🤖🐔🏛️🔀🔄🤖🐲](./reflections/2026-05-11.md)  
 - [2026-05-10 | ⚙️ Meter 🤖 Architecture 🐔 Celebration 🔀 Building 🌟 Progress 🏛️ Foundations 📰 Innovations 🤖 Persistence 🧰📚🤖🐔🔀🌟🏛️📰🔄🤖🐲](./reflections/2026-05-10.md)  
-- [2026-05-09 | ⚙️ Meter 🧠 Learn 📚 Intro 📈 Improving 🌟 Progress 📰 Shifting 🐔 Milestone 🤖 Architecture 🏛️ Governance 🔀 Anchoring 🏗️ Building 🧰📚📺📄🌟📰🐔🤖🏛️🔀🔄🤖🐲](./reflections/2026-05-09.md)  
   
   
 ## [🤖 AI Blog](./ai-blog/index.md) (207)  
@@ -35,11 +35,11 @@ updated: 2026-05-12T17:58:01-07:00
 - [2026-05-09 | 🤖 🏛️ The Architecture of Constitutional Continuity 🤖](./auto-blog-zero/2026-05-09-the-architecture-of-constitutional-continuity.md)  
   
   
-## [🐔 Chickie Loo](./chickie-loo/index.md) (63)  
+## [🐔 Chickie Loo](./chickie-loo/index.md) (64)  
+- [2026-05-13 | 🐔 A Hillside Miracle and a Starlit Dream 🐔](./chickie-loo/2026-05-13-a-hillside-miracle-and-a-starlit-dream.md)  
 - [2026-05-12 | 🐔 The Quiet Music of an Organized Pantry 🐔](./chickie-loo/2026-05-12-the-quiet-music-of-an-organized-pantry.md)  
 - [2026-05-11 | 🐔 A Weekend of Mirrors, Magic, and Milk Bags 🐔](./chickie-loo/2026-05-11-a-weekend-of-mirrors-magic-and-milk-bags.md)  
 - [2026-05-10 | 🐔 A Sunday of Celebration and Staircases 🐔](./chickie-loo/2026-05-10-a-sunday-of-celebration-and-staircases.md)  
-- [2026-05-09 | 🐔 A Milestone at the Stove and a Rooster in the Rafters 🐔](./chickie-loo/2026-05-09-a-milestone-at-the-stove-and-a-rooster-in-the-rafters.md)  
   
   
 ## [🏛️ Systems for Public Good](./systems-for-public-good/index.md) (52)  
@@ -49,18 +49,18 @@ updated: 2026-05-12T17:58:01-07:00
 - [2026-05-09 | 🏛️ ❓ Navigating Complexity: The Imperative of Thoughtful Governance 🏛️](./systems-for-public-good/2026-05-09-navigating-complexity-the-imperative-of-thoughtful-governance.md)  
   
   
-## [📰 The Noise](./the-noise/index.md) (33)  
+## [📰 The Noise](./the-noise/index.md) (34)  
+- [2026-05-13 | 📰 💥 Geopolitical Fault Lines and Shifting Sands 📰](./the-noise/2026-05-13-geopolitical-fault-lines-and-shifting-sands.md)  
 - [2026-05-12 | 📰 Global Tremors and Technological Ripples 📰](./the-noise/2026-05-12-global-tremors-and-technological-ripples.md)  
 - [2026-05-11 | 📰 🌐 Global Tremors and Technological Ripples 📰](./the-noise/2026-05-11-global-tremors-and-technological-ripples.md)  
 - [2026-05-10 | 📰 🌪️ A Week of Dualities: Escalations, Innovations, and Lingering Shadows 📰](./the-noise/2026-05-10-a-week-of-dualities-escalations-innovations-and-lingering-shadows.md)  
-- [2026-05-09 | 📰 ⚙️ Shifting Gears: Diplomacy's Grind and Innovation's Surge 📰](./the-noise/2026-05-09-shifting-gears-diplomacy-s-grind-and-innovation-s-surge.md)  
   
   
-## [🌟 Positivity Bias](./positivity-bias/index.md) (32)  
+## [🌟 Positivity Bias](./positivity-bias/index.md) (33)  
+- [2026-05-13 | 🌟 🔬 Revelations in Science & Health 🌟](./positivity-bias/2026-05-13-revelations-in-science-health.md)  
 - [2026-05-12 | 🌟 A Cascade of Progress: Innovations, Community Spirit, and Global Accord 🌟](./positivity-bias/2026-05-12-a-cascade-of-progress-innovations-community-spirit-and-global-accord.md)  
 - [2026-05-11 | 🌟 A World Ignited: Innovation, Compassion, and Green Horizons 🌟](./positivity-bias/2026-05-11-a-world-ignited-innovation-compassion-and-green-horizons.md)  
 - [2026-05-10 | 🌟 Daily Pulse: Breakthroughs and Blossoming Progress 🌟](./positivity-bias/2026-05-10-daily-pulse-breakthroughs-and-blossoming-progress.md)  
-- [2026-05-09 | 🌟 Unveiling Progress: A World of Discovery and Collaboration 🌟](./positivity-bias/2026-05-09-unveiling-progress-a-world-of-discovery-and-collaboration.md)  
   
   
 ## [🔀 Convergence](./convergence/index.md) (29)  
@@ -71,10 +71,10 @@ updated: 2026-05-12T17:58:01-07:00
   
   
 ## [📚 Books](./books/index.md) (961)  
-- [👥⚔️👑 The Will of the Many](./books/the-will-of-the-many.md)  
-- [🚫💰❤️ The Wealth Money Can't Buy: The 8 Hidden Habits to Live Your Richest Life](./books/the-wealth-money-cant-buy-the-8-hidden-habits-to-live-your-richest-life.md)  
-- [🐛🍎 The Very Hungry Caterpillar](./books/the-very-hungry-caterpillar.md)  
-- [💰🏭🌍 The Value of Everything: Making and Taking in the Global Economy](./books/the-value-of-everything-making-and-taking-in-the-global-economy.md)  
+- [💔🤝 A Question of Trust: The BBC Reith Lectures 2002](./books/trust-how-societies-lost-it-and-how-they-might-regain-it.md)  
+- [👶🏛️➡️ Transforming Early Years Policy in the U.S.: A Call to Action](./books/transforming-early-years-policy-in-the-us-a-call-to-action.md)  
+- [🤏♻️ Tiny Habits: The Small Changes That Change Everything](./books/tiny-habits.md)  
+- [🧪🎯🦋 Tiny Experiments: How to Live Freely in a Goal-Obsessed World](./books/tiny-experiments-how-to-live-freely-in-a-goal-obsessed-world.md)  
   
   
 ## [📺 Videos](./videos/index.md) (827)  

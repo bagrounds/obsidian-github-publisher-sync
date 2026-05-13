@@ -10,9 +10,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-26T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-05-13T11:56:26Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A stylized, glowing brain at the center, depicted with subtle, interconnected geometric patterns suggesting complex thought. Surrounding the brain are swirling, abstract ribbons of data and information, some appearing tangled and chaotic. A sleek, modern magnifying glass hovers over a section of this information, bringing a specific area into sharp, crystalline focus, transforming the chaos into clear, ordered lines. A soft, illuminating light emanates from the magnified area, casting a warm glow onto the brain. The background is a gradient of deep blues and purples, transitioning to brighter, insightful yellows and greens around the illuminated focus.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🧠🔎 Thought and Knowledge: An Introduction to Critical Thinking  
+![books-thought-and-knowledge-an-introduction-to-critical-thinking](../books-thought-and-knowledge-an-introduction-to-critical-thinking.jpg)  
 [🛒 Thought and Knowledge: An Introduction to Critical Thinking. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4qGsWgI)  
   
 💪🧐🌐 Cognitive tools and psychological insights to navigate today's complex information landscape, empowering discerning analysis against misinformation.  

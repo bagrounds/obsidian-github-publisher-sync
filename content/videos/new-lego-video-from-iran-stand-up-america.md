@@ -9,6 +9,10 @@ Platform:
 Channel: BNN
 tags:
 youtube: https://youtu.be/4_wCqp3_WuY
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_version: "2"
+link_analysis_time: 2026-05-12T00:00:00Z
+force_analyze_links: false
 ---
 [Home](../index.md) > [Videos](./index.md)  
 # 🇮🇷🧱🎥🇺🇸 New LEGO Video from IRAN - Stand Up America  

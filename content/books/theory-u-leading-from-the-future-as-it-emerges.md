@@ -10,9 +10,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-27T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-05-13T05:31:49Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A minimalist, abstract illustration featuring a soft, glowing U shape carved out of a deep indigo landscape. The left side of the curve descends from a textured, muted gray representing the past, transitioning into a luminous, golden light at the bottom center, which symbolizes the point of stillness and presencing. The right side of the curve rises upward, transforming into vibrant, abstract geometric shapes and light particles that disperse into a clear, open horizon. The overall aesthetic is ethereal and contemplative, utilizing a clean, modern vector style with a smooth gradient transition from dark, grounded tones to bright, hopeful brilliance.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # ⬇️⬆️🧭🌟 Theory U: Leading from the Future as It Emerges  
+![books-theory-u-leading-from-the-future-as-it-emerges](../books-theory-u-leading-from-the-future-as-it-emerges.jpg)  
 [🛒 Theory U: Leading from the Future as It Emerges. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3MNYUs7)  
   
 🌱 Address complex global challenges by shifting from reacting to the past to sensing and co-creating an emerging future through deep listening, reflection, and prototyping.  

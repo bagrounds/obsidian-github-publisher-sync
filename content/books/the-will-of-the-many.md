@@ -11,9 +11,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-25T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-05-12T23:37:44Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A grand, imposing Roman-esque coliseum or tiered city dominates the frame, viewed from a low, upward angle. Its massive, stone architecture suggests ancient power and rigid hierarchy. From the countless, indistinct figures clustered at the lowest levels, faint, ethereal wisps of golden light or energy rise upwards, converging into a vibrant stream. This stream flows towards a single, stylized, glowing crown or crest positioned at the very apex of the structure. One figure, slightly more defined than the mass below, stands at the base, silhouetted but with a subtle, determined posture, gazing towards the distant crown. The sky above is a dramatic, brooding twilight, enhancing the sense of struggle and ambition.
 ---
 [Home](../index.md) > [Books](./index.md) | [⏭️ 💪👥 The Strength of the Few](./the-strength-of-the-few.md)  
 # 👥⚔️👑 The Will of the Many  
+![books-the-will-of-the-many](../books-the-will-of-the-many.jpg)  
 [🛒 The Will of the Many. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3NIwksZ)  
   
 ## 📝🐒 Human Notes  

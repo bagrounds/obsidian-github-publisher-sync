@@ -8,6 +8,9 @@ module WordMeter.Vdom
   , div_
   , button
   , span_
+  , details_
+  , summary_
+  , pre_
   , attribute
   , testId
   , buttonType
@@ -54,6 +57,15 @@ button = element "button"
 span_ :: Array Attribute -> Array Style -> Array Node -> Node
 span_ attributes styles children = element "span" attributes styles [] children
 
+details_ :: Array Attribute -> Array Style -> Array Node -> Node
+details_ attributes styles children = element "details" attributes styles [] children
+
+summary_ :: Array Attribute -> Array Style -> Array Listener -> Array Node -> Node
+summary_ = element "summary"
+
+pre_ :: Array Attribute -> Array Style -> Array Node -> Node
+pre_ attributes styles children = element "pre" attributes styles [] children
+
 attribute :: String -> String -> Attribute
 attribute name value = { name, value }
 
@@ -71,7 +83,7 @@ onClick handler = { eventName: "click", handler }
 
 foreign import data Element :: Type
 
-foreign import findElementByIdImpl
+foreign import findElementById
   :: (forall a. Maybe a)
   -> (forall a. a -> Maybe a)
   -> String
@@ -86,7 +98,7 @@ foreign import removeAllChildrenFromElement :: Element -> Effect Unit
 
 mount :: String -> Node -> Effect Unit
 mount hostId tree = do
-  hostMaybe <- findElementByIdImpl Nothing Just hostId
+  hostMaybe <- findElementById Nothing Just hostId
   case hostMaybe of
     Nothing -> pure unit
     Just host -> do

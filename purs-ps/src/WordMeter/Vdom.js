@@ -1,4 +1,4 @@
-export const findElementByIdImpl = (nothing) => (just) => (id) => () => {
+export const findElementById = (nothing) => (just) => (id) => () => {
   if (typeof document === "undefined") return nothing
   const found = document.getElementById(id)
   return found === null ? nothing : just(found)

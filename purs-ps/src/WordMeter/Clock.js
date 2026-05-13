@@ -1,5 +1,3 @@
-export const nowMs = () => Date.now()
-
 export const formatClockTime = (timestamp) => {
   const date = new Date(timestamp)
   try {

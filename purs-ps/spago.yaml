@@ -9,6 +9,10 @@ package:
     - strings
     - integers
     - foldable-traversable
+    - either
+    - refs
+    - transformers
+    - identity
   test:
     main: Test.Main
     dependencies:
@@ -19,6 +23,10 @@ package:
       - maybe
       - arrays
       - integers
+      - strings
+      - either
+      - identity
+      - transformers
 workspace:
   packageSet:
     registry: 76.2.1

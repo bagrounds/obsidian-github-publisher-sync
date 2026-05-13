@@ -19,6 +19,11 @@ declare global {
       getFirstStartedAt: () => number
       getEventLogLength: () => number
       getEventLogLimit: () => number
+      getDiagnosticsText: () => string
+      getDiagnosticsLength: () => number
+      getDiagnosticsLimit: () => number
+      getCopyStatus: () => string
+      requestCopyDiagnostics: () => void
     }
   }
 }

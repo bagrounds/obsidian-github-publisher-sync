@@ -280,3 +280,91 @@ test.describe("Word Meter — PureScript build — slice 3 — stats dashboard",
     await expect(page.getByTestId("wm-rate-long")).toHaveText("1.0")
   })
 })
+
+test.describe("Word Meter — PureScript build — slice 5 — diagnostics", () => {
+  test("renders the collapsible drawer collapsed by default with the snapshot in its content", async ({
+    page,
+  }) => {
+    await loadWordMeter(page, "ps")
+    const drawer = page.getByTestId("wm-diagnostics")
+    await expect(drawer).toBeVisible()
+    await expect(page.getByTestId("wm-diagnostics-toggle")).toHaveText(/diagnostics/i)
+    // <details> is collapsed by default → no `open` attribute.
+    await expect(drawer).not.toHaveAttribute("open", "")
+    // The snapshot prefix is rendered into the content even while collapsed.
+    await expect(page.getByTestId("wm-diagnostics-content")).toContainText("version")
+    await expect(page.getByTestId("wm-diagnostics-content")).toContainText("0.1.0")
+  })
+
+  test("clicking the summary expands the drawer", async ({ page }) => {
+    await loadWordMeter(page, "ps")
+    await page.getByTestId("wm-diagnostics-toggle").click()
+    await expect(page.getByTestId("wm-diagnostics")).toHaveAttribute("open", "")
+  })
+
+  test("records the init event in the diagnostics log on startup", async ({ page }) => {
+    await loadWordMeter(page, "ps")
+    expect(await page.evaluate(() => window.__wordMeter.getDiagnosticsLength())).toBeGreaterThan(0)
+    await expect(page.getByTestId("wm-diagnostics-content")).toContainText("init")
+  })
+
+  test("records start, transcript, and stop entries through the reducer", async ({ page }) => {
+    await loadWordMeter(page, "ps")
+    const startingLength = await page.evaluate(() =>
+      window.__wordMeter.getDiagnosticsLength(),
+    )
+    await page.evaluate(() => {
+      window.__wordMeter.startAt(0)
+      window.__wordMeter.simulateFinalTranscriptAt("hello there", 1_000)
+      window.__wordMeter.stopAt(2_000)
+    })
+    const finalLength = await page.evaluate(() =>
+      window.__wordMeter.getDiagnosticsLength(),
+    )
+    expect(finalLength).toBe(startingLength + 3)
+    const text = await page.evaluate(() => window.__wordMeter.getDiagnosticsText())
+    expect(text).toContain("start counting")
+    expect(text).toContain("final transcript")
+    expect(text).toContain("words=2")
+    expect(text).toContain("stop counting")
+  })
+
+  test("caps the diagnostics log at the documented limit", async ({ page }) => {
+    await loadWordMeter(page, "ps")
+    const limit = await page.evaluate(() => window.__wordMeter.getDiagnosticsLimit())
+    expect(limit).toBeGreaterThan(0)
+    // Each start → counted utterance → stop appends three entries; drive
+    // enough iterations to overflow the cap.
+    await page.evaluate((capacity) => {
+      const iterations = capacity + 5
+      for (let i = 0; i < iterations; i++) {
+        const startTs = i * 1_000
+        window.__wordMeter.startAt(startTs)
+        window.__wordMeter.simulateFinalTranscriptAt("alpha", startTs + 100)
+        window.__wordMeter.stopAt(startTs + 500)
+      }
+    }, limit)
+    const length = await page.evaluate(() =>
+      window.__wordMeter.getDiagnosticsLength(),
+    )
+    expect(length).toBe(limit)
+  })
+
+  test.describe("copy diagnostics", () => {
+    test.use({ permissions: ["clipboard-read", "clipboard-write"] })
+
+    test("clicking the copy button updates the status and writes the rendered text to the clipboard", async ({
+      page,
+    }) => {
+      await loadWordMeter(page, "ps")
+      await expect(page.getByTestId("wm-diagnostics-copy-status")).toHaveText("")
+      // Expand the drawer so the copy button is visible.
+      await page.getByTestId("wm-diagnostics-toggle").click()
+      await page.getByTestId("wm-diagnostics-copy").click()
+      await expect(page.getByTestId("wm-diagnostics-copy-status")).toHaveText(/copied/i)
+      const rendered = await page.evaluate(() => window.__wordMeter.getDiagnosticsText())
+      const copied = await page.evaluate(() => navigator.clipboard.readText())
+      expect(copied).toBe(rendered)
+    })
+  })
+})

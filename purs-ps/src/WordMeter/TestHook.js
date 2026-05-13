@@ -20,5 +20,10 @@ export const installTestHook = (api) => () => {
     getFirstStartedAt: () => api.getFirstStartedAt(),
     getEventLogLength: () => api.getEventLogLength(),
     getEventLogLimit: () => api.getEventLogLimit(),
+    getDiagnosticsText: () => api.getDiagnosticsText(),
+    getDiagnosticsLength: () => api.getDiagnosticsLength(),
+    getDiagnosticsLimit: () => api.getDiagnosticsLimit(),
+    getCopyStatus: () => api.getCopyStatus(),
+    requestCopyDiagnostics: () => api.requestCopyDiagnostics(),
   }
 }

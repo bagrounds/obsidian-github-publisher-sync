@@ -9,17 +9,47 @@ import Prelude
 import Data.Array (head, length) as Array
 import Data.Int as Int
 import Data.Maybe (Maybe(..))
+import Data.String (Pattern(..), contains) as String
 import Effect (Effect)
 import Effect.Console (log)
 import Effect.Exception (throw)
+import WordMeter.Capability.Clipboard
+  ( runRecordingClipboardM
+  , writeClipboardText
+  )
+import WordMeter.Capability.Clock
+  ( currentTimeMillis
+  , runFixedClockM
+  )
+import WordMeter.Capability.DomMount
+  ( mountToHost
+  , runRecordingDomMountM
+  )
+import WordMeter.Capability.Environment
+  ( captureEnvironmentSnapshot
+  , runStubEnvironmentM
+  )
+import WordMeter.Capability.SessionState
+  ( readCurrentSession
+  , runStatefulSessionM
+  , updateSession
+  )
+import WordMeter.Diagnostics
+  ( diagnosticsLimit
+  , emptyEnvironment
+  , formatDiagnostics
+  , recordEntry
+  )
 import WordMeter.Recording
   ( Action(..)
   , Session
   , activeListeningMs
   , captionOpacity
+  , diagnosticsText
   , eventLogLimit
   , formatDurationMs
   , formatRate
+  , idleCopyStatus
   , initialSession
   , intervalDurationMs
   , intervalRate
@@ -32,6 +62,7 @@ import WordMeter.Recording
   , wallSpanMs
   , wordsInTrailingWindow
   )
+import WordMeter.Vdom (text)
 
 main :: Effect Unit
 main = do
@@ -41,6 +72,8 @@ main = do
   runReducerStatsTests
   runEventLogTests
   runCaptionDecayTests
+  runDiagnosticsTests
+  runCapabilityTests
   log "word-meter: all PureScript unit tests passed"
 
 runRatePerMinuteTests :: Effect Unit
@@ -231,3 +264,120 @@ stuffIntervals total = go 0
           started = reduce (Toggle startTs) session
         in
           go (index + 1) (reduce (Toggle endTs) started)
+
+runDiagnosticsTests :: Effect Unit
+runDiagnosticsTests = do
+  -- Slice 5: every Toggle on/off and every counted utterance appends a
+  -- diagnostic entry; the log is capped at `diagnosticsLimit`; the
+  -- formatted text always contains the snapshot prefix when one has
+  -- been captured; SetCopyStatus updates the copyStatus field.
+  let
+    s0 = initialSession
+    s1 = reduce (Toggle 0.0) s0
+    s2 = reduce (InjectFinalTranscript "hello there general kenobi" 1000.0) s1
+    s3 = reduce (InjectFinalTranscript "   " 2000.0) s2
+    s4 = reduce (Toggle 30000.0) s3
+  assertEqualString "initialSession.copyStatus is empty"
+    s0.copyStatus idleCopyStatus
+  assertEqualInt "initialSession has no diagnostic entries"
+    (Array.length s0.diagnostics) 0
+  assertEqualInt "Toggle on appends one entry"
+    (Array.length s1.diagnostics) 1
+  assertEqualInt "non-empty transcript appends an entry"
+    (Array.length s2.diagnostics) 2
+  assertEqualInt "whitespace-only transcript does not append an entry"
+    (Array.length s3.diagnostics) 2
+  assertEqualInt "Toggle off appends a stop-counting entry"
+    (Array.length s4.diagnostics) 3
+
+  case Array.head s4.diagnostics of
+    Just first -> assertEqualString "first entry is start counting"
+      first.label "start counting"
+    Nothing -> throw "expected the first entry to be start counting"
+
+  -- recordEntry caps the array at diagnosticsLimit.
+  let
+    sample = { timestamp: 0.0, label: "noisy", detail: "" }
+    overrun = stuffEntries (diagnosticsLimit + 7) sample []
+  assertEqualInt "diagnostics log is capped at diagnosticsLimit"
+    (Array.length overrun) diagnosticsLimit
+
+  -- Snapshot prefix appears in the rendered text.
+  let env = emptyEnvironment { version = "9.9.9", userAgent = "ua", navigatorLanguage = "en-US" }
+      txtWith = formatDiagnostics (Just env) []
+      txtWithout = formatDiagnostics Nothing []
+  assertEqualBoolean "rendered text with snapshot mentions version"
+    (containsSubstring "9.9.9" txtWith) true
+  assertEqualBoolean "rendered text without snapshot has the placeholder"
+    (containsSubstring "(no events yet" txtWithout) true
+
+  -- diagnosticsText uses the session's environment + diagnostics.
+  let s4WithEnv = reduce (SetEnvironment env) s4
+  assertEqualBoolean "diagnosticsText includes the snapshot version"
+    (containsSubstring "9.9.9" (diagnosticsText s4WithEnv)) true
+
+  -- SetCopyStatus updates the field exactly.
+  let s5 = reduce (SetCopyStatus "Copied!") s4
+  assertEqualString "SetCopyStatus writes the field" s5.copyStatus "Copied!"
+
+stuffEntries
+  :: Int
+  -> { timestamp :: Number, label :: String, detail :: String }
+  -> Array { timestamp :: Number, label :: String, detail :: String }
+  -> Array { timestamp :: Number, label :: String, detail :: String }
+stuffEntries n entry entries
+  | n <= 0 = entries
+  | otherwise = stuffEntries (n - 1) entry (recordEntry entry entries)
+
+containsSubstring :: String -> String -> Boolean
+containsSubstring needle haystack = String.contains (String.Pattern needle) haystack
+
+runCapabilityTests :: Effect Unit
+runCapabilityTests = do
+  let
+    fixedClockTime = 1_700_000_000_000.0
+    sampledClockTime = runFixedClockM fixedClockTime currentTimeMillis
+  assertEqualNumber "FixedClockM hands back the configured clock value"
+    sampledClockTime fixedClockTime
+
+  let
+    canned =
+      { userAgent: "test-agent"
+      , navigatorLanguage: "en-US"
+      , version: "0.0.1-test"
+      }
+    captured = runStubEnvironmentM canned
+      (captureEnvironmentSnapshot "ignored-version")
+  assertEqualString "StubEnvironmentM ignores the version argument and returns the canned userAgent"
+    captured.userAgent canned.userAgent
+  assertEqualString "StubEnvironmentM hands back the canned language"
+    captured.navigatorLanguage canned.navigatorLanguage
+
+  let
+    clipboardOutcome = runRecordingClipboardM do
+      writeClipboardText "first payload" (pure unit) (\_ -> pure unit)
+      writeClipboardText "second payload" (pure unit) (\_ -> pure unit)
+  assertEqualInt "RecordingClipboardM records every write in order"
+    (Array.length clipboardOutcome.writes) 2
+  case Array.head clipboardOutcome.writes of
+    Just firstWrite ->
+      assertEqualString "RecordingClipboardM preserves the payload"
+        firstWrite "first payload"
+    Nothing -> throw "RecordingClipboardM should have captured a write"
+
+  let
+    domOutcome = runRecordingDomMountM do
+      mountToHost "host-one" (text "alpha")
+      mountToHost "host-two" (text "beta")
+  assertEqualInt "RecordingDomMountM records every mount call"
+    (Array.length domOutcome.mounts) 2
+
+  let
+    sessionOutcome = runStatefulSessionM initialSession do
+      updateSession (Toggle 1000.0)
+      updateSession (InjectFinalTranscript "hello world" 2000.0)
+      readCurrentSession
+  assertEqualInt "StatefulSessionM threads reducer updates through pure state"
+    sessionOutcome.result.totalWords 2
+  assertEqualBoolean "StatefulSessionM observes listening state after Toggle"
+    sessionOutcome.result.listening true

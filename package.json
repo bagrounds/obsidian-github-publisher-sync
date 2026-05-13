@@ -21,7 +21,7 @@
     "build:ps": "node ./scripts/build-word-meter-ps.mjs",
     "clean:ps": "rm -rf purs-ps/output purs-ps/.spago quartz/static/word-meter-ps.js",
     "test:ps": "cd purs-ps && npx --prefix .. spago test",
-    "test:e2e": "playwright test"
+    "test:e2e": "playwright test --config tests/e2e/playwright.config.ts"
   },
   "engines": {
     "npm": ">=9.3.1",

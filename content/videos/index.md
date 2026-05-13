@@ -5,10 +5,10 @@ aliases:
 title: 📺 Videos
 URL: https://bagrounds.org/videos
 backlinks: false
-updated: 2026-05-12T17:33:22-07:00
+updated: 2026-05-12T17:58:01-07:00
 ---
 [Home](../index.md)  
-# 📺 Videos (826)  
+# 📺 Videos (827)  
 - [💰🤑🤖💡🚀💲 $0.10 per Month Runs My Entire AI Life. I'll Show You How.](./0-10-month-runs-my-entire-ai-life-ill-show-you-how.md)  
 - [📊📈📉📃👁️ 10 Charts to Understand the 900 Page Budget Bill](./10-charts-to-understand-the-900-page-budget-bill.md)  
 - [🤖🔗⬆️✅ 12-Factor Agents: Patterns of reliable LLM applications — Dex Horthy, HumanLayer](./12-factor-agents-patterns-of-reliable-llm-applications-dex-horthy-humanlayer.md)  
@@ -649,6 +649,7 @@ updated: 2026-05-12T17:33:22-07:00
 - [🤫🔑👨‍💻 The Secret Skill Every Tech Leader Possesses](./the-secret-skill-every-tech-leader-possesses.md)  
 - [🫂🔑📈 The Secret Trick to Improve Your Social Connections | Kasley Killam | How to Be a Better Human | TED](./the-secret-trick-to-improve-your-social-connections-kasley-killam-how-to-be-a-better-human-ted.md)  
 - [The security vulnerabilities of using Signal to discuss military operations](./the-security-vulnerabilities-of-using-signal-to-discuss-military-operations.md)  
+- [⚖️🌑📺 The Shadow Docket: Last Week Tonight with John Oliver (HBO)](./the-shadow-docket-last-week-tonight-with-john-oliver-hbo.md)  
 - [🛠️⚙️🚀🛡️ The simple system that makes you unstoppable](./the-simple-system-that-makes-you-unstoppable.md)  
 - [💡🧠📈💰 The Smartest Way To Turn Your Expertise Into $1M](./the-smartest-way-to-turn-your-expertise-into-1m.md)  
 - [🇺🇸🤝🏛️ The State of Our Union](./the-state-of-our-union.md)  

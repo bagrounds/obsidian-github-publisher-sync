@@ -368,3 +368,96 @@ test.describe("Word Meter — PureScript build — slice 5 — diagnostics", () 
     })
   })
 })
+
+test.describe("Word Meter — PureScript build — slice 6 — reset + persistence", () => {
+  test("renders a reset button next to the toggle", async ({ page }) => {
+    await loadWordMeter(page, "ps")
+    await expect(page.getByTestId("wm-reset")).toBeVisible()
+    await expect(page.getByTestId("wm-reset")).toHaveText(/reset/i)
+  })
+
+  test("reset button asks for confirmation and wipes accumulated stats on accept", async ({
+    page,
+  }) => {
+    await loadWordMeter(page, "ps")
+    await page.evaluate(() => {
+      window.__wordMeter.startAt(0)
+      window.__wordMeter.simulateFinalTranscriptAt("alpha beta gamma", 1_000)
+      window.__wordMeter.stopAt(2_000)
+    })
+    await expect(page.getByTestId("wm-count")).toHaveText("3")
+    await expect(page.getByTestId("wm-event-log-entry")).toHaveCount(1)
+
+    page.once("dialog", (dialog) => {
+      expect(dialog.message()).toMatch(/reset all word meter stats/i)
+      void dialog.accept()
+    })
+    await page.getByTestId("wm-reset").click()
+
+    await expect(page.getByTestId("wm-count")).toHaveText("0")
+    await expect(page.getByTestId("wm-event-log-placeholder")).toBeVisible()
+    await expect(page.getByTestId("wm-event-log-entry")).toHaveCount(0)
+    expect(await page.evaluate(() => window.__wordMeter.getTotalWords())).toBe(0)
+  })
+
+  test("declining the confirmation leaves stats untouched", async ({ page }) => {
+    await loadWordMeter(page, "ps")
+    await page.evaluate(() => {
+      window.__wordMeter.startAt(0)
+      window.__wordMeter.simulateFinalTranscriptAt("hello world", 1_000)
+      window.__wordMeter.stopAt(2_000)
+    })
+    await expect(page.getByTestId("wm-count")).toHaveText("2")
+
+    page.once("dialog", (dialog) => void dialog.dismiss())
+    await page.getByTestId("wm-reset").click()
+
+    await expect(page.getByTestId("wm-count")).toHaveText("2")
+  })
+
+  test("totals and event log survive a full page reload via localStorage", async ({
+    page,
+  }) => {
+    await loadWordMeter(page, "ps")
+    await page.evaluate(() => {
+      window.__wordMeter.startAt(0)
+      window.__wordMeter.simulateFinalTranscriptAt("one two three four", 1_000)
+      window.__wordMeter.stopAt(5_000)
+      window.__wordMeter.startAt(6_000)
+      window.__wordMeter.simulateFinalTranscriptAt("five six", 7_000)
+      window.__wordMeter.stopAt(8_000)
+    })
+    await expect(page.getByTestId("wm-count")).toHaveText("6")
+    const persistedKey = await page.evaluate(() =>
+      Object.keys(window.localStorage).find((k) => k.startsWith("word-meter-ps:state")),
+    )
+    expect(persistedKey).toBeTruthy()
+
+    await page.reload()
+    await page.waitForFunction(() => Boolean(window.__wordMeter))
+
+    await expect(page.getByTestId("wm-count")).toHaveText("6")
+    await expect(page.getByTestId("wm-event-log-entry")).toHaveCount(2)
+    expect(await page.evaluate(() => window.__wordMeter.getEventLogLength())).toBe(2)
+  })
+
+  test("resetAt clears the persisted snapshot so a reload starts fresh", async ({
+    page,
+  }) => {
+    await loadWordMeter(page, "ps")
+    await page.evaluate(() => {
+      window.__wordMeter.startAt(0)
+      window.__wordMeter.simulateFinalTranscriptAt("alpha beta", 1_000)
+      window.__wordMeter.stopAt(2_000)
+    })
+    await expect(page.getByTestId("wm-count")).toHaveText("2")
+
+    await page.evaluate(() => window.__wordMeter.resetAt(3_000))
+    await expect(page.getByTestId("wm-count")).toHaveText("0")
+
+    await page.reload()
+    await page.waitForFunction(() => Boolean(window.__wordMeter))
+    await expect(page.getByTestId("wm-count")).toHaveText("0")
+    expect(await page.evaluate(() => window.__wordMeter.getEventLogLength())).toBe(0)
+  })
+})

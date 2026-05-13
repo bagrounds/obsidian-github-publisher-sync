@@ -34,7 +34,7 @@ purs-ps/
     Clock.purs / Clock.js      pure locale clock-time formatter (no effects)
     Vdom.purs / Vdom.js        typed declarative DOM (Element / Attribute / Style / Listener) + mount
     Words.purs                 pure word counter
-    Recording.purs             slices 1–5: session state + reducer + view + rate math + event log + diagnostics view
+    Recording.purs             slices 1–6: session state + reducer + view + rate math + event log + diagnostics view + reset + persisted-data projection
     Diagnostics.purs           slice 5: pure diagnostics log + environment-snapshot formatters
     TestHook.purs / .js        window.__wordMeter test hook
     Capability/
@@ -43,10 +43,13 @@ purs-ps/
       Environment.purs         class Environment + AppM instance + StubEnvironmentM test newtype
       DomMount.purs            class DomMount + AppM instance + RecordingDomMountM test newtype
       SessionState.purs        class SessionState + AppM instance + StatefulSessionM test newtype
+      Storage.purs             class Storage + AppM instance + InMemoryStorageM test newtype (slice 6)
     FFI/
       Clock.purs / .js         currentTimeMillis :: Effect Number
       Clipboard.purs / .js     navigator.clipboard.writeText with success / error callbacks
       Environment.purs / .js   navigator.userAgent / navigator.language snapshot capture
+      Storage.purs / .js       localStorage get / set / remove + JSON-decode sanitizer (slice 6)
+      Confirm.purs / .js       window.confirm wrapper for destructive-action prompts (slice 6)
   test/Test.Main.purs          pure reducer / formatter unit tests + per-capability test-newtype tests
 scripts/
   build-word-meter-ps.mjs      spago bundle wrapper
@@ -72,9 +75,13 @@ Views are pure functions from state to `Node`. The reducer loop in `Main.purs` r
 
 Every effect this app needs (clock, clipboard, environment snapshot, DOM mount, session state, and the future wake lock / speech-recognition / storage / logging) lives behind a **capability typeclass**, and production code is written against the typeclasses rather than against `Effect` directly. See [`specs/purescript-capability-pattern.md`](./purescript-capability-pattern.md) for the full pattern: how to declare a capability, how to write the production `AppM` newtype, how to write a deterministic test newtype, and how this delivers swappable implementations + property-testable pure logic.
 
-As of slice 5 the port runs end-to-end on the capability pattern. `WordMeter.AppM` is a `ReaderT ApplicationEnvironment Effect` newtype whose environment carries the session `Ref`. Production code in `WordMeter.Main` is polymorphic over `m` with `Clock m`, `Clipboard m`, `Environment m`, `DomMount m`, and `SessionState m` constraints; the `Effect`-typed click callbacks the typed DOM tree needs are built at the boundary by `runAppM`. Each capability module exports at least one test newtype (`FixedClockM`, `RecordingClipboardM`, `StubEnvironmentM`, `RecordingDomMountM`, `StatefulSessionM`) and `Test.Main` exercises them, so the pattern pays for its abstraction tax.
+As of slice 6 the port runs end-to-end on the capability pattern. `WordMeter.AppM` is a `ReaderT ApplicationEnvironment Effect` newtype whose environment carries the session `Ref`. Production code in `WordMeter.Main` is polymorphic over `m` with `Clock m`, `Clipboard m`, `Environment m`, `DomMount m`, `SessionState m`, and `Storage m` constraints; the `Effect`-typed click callbacks the typed DOM tree needs are built at the boundary by `runAppM`. Each capability module exports at least one test newtype (`FixedClockM`, `RecordingClipboardM`, `StubEnvironmentM`, `RecordingDomMountM`, `StatefulSessionM`, `InMemoryStorageM`) and `Test.Main` exercises them, so the pattern pays for its abstraction tax.
 
-Future capabilities (`Storage`, `WakeLock`, `Recognition`, `Log`, …) grow into the same shape: a class with an `AppM` instance and at least one test newtype, sitting alongside its `FFI` siblings.
+Future capabilities (`WakeLock`, `Recognition`, `Log`, …) grow into the same shape: a class with an `AppM` instance and at least one test newtype, sitting alongside its `FFI` siblings.
+
+## Persistence (slice 6)
+
+The slice that survives across page reloads / tab unloads is `Recording.PersistedData`: `{ totalWords, firstStartedAt, wordEvents, eventLog }`. Diagnostics, captions, environment, listening flag, and clock are deliberately excluded — they are either ephemeral or rebuilt from environment on startup. `Main.persistAfterAction` writes after every `Toggle` and `InjectFinalTranscript`, clears after `Reset`, and is a no-op for `Tick` / `RecordDiagnostic` / `SetEnvironment` / `SetCopyStatus` / `LoadSession`. The capability backend is `localStorage` under key `word-meter-ps:state:v1` with `version=1` sentinel; missing key, parse failure, schema mismatch, and `localStorage` being disabled all gracefully degrade to "no restore".
 
 ## Test hook
 
@@ -89,6 +96,9 @@ When the host page sets `window.__WM_TEST_HOOK__ = true` before loading the bund
 - `getDiagnosticsText()` / `getDiagnosticsLength()` / `getDiagnosticsLimit()` — rendered diagnostics text (snapshot + log), current size, and cap on the rolling event log.
 - `getCopyStatus()` — current value of the copy-to-clipboard status span (`""`, `"Copied!"`, or `"Copy failed: <reason>"`).
 - `requestCopyDiagnostics()` — same code path the copy button takes; useful when a test wants to drive the clipboard write without a click.
+- `reset()` — same code path the reset button takes, including the `window.confirm` prompt; tests that want to skip the prompt should use `resetAt` instead.
+- `resetAt(timestamp)` — dispatches a `Reset` action at the given clock value, bypassing the confirmation dialog; clears persisted state via the `Storage` capability.
+- `persistNow()` — force-persists the current session through the `Storage` capability without waiting for the next reducer action.
 
 The hook is the contract the end-to-end suite uses to simulate Web Speech API events.
 
@@ -102,6 +112,7 @@ The hook is the contract the end-to-end suite uses to simulate Web Speech API ev
 - `wm-count` — total words.
 - `wm-count-label` — descriptor.
 - `wm-toggle` — start / stop button.
+- `wm-reset` — reset button. On tap, prompts via `window.confirm(resetConfirmationPrompt)`; on acceptance, dispatches a `Reset` action that clears `totalWords`, `wordEvents`, `eventLog`, captions, and `firstStartedAt`, preserves the captured environment + diagnostics log (so the reset itself is auditable), and clears the persisted snapshot from `localStorage` (key `word-meter-ps:state:v1`).
 - `wm-captions` — captions strip container; mostly a troubleshooting aid showing recent recognized utterances as they fade out.
 - `wm-captions-placeholder` — "Waiting for speech…" shown when no caption is within the 30s window.
 - `wm-caption` — one per recognized utterance, in chronological order. Captions older than `captionWindowMs` (30s) are pruned on every action, and their CSS `opacity` fades linearly with age from 1.0 down to `minimumCaptionOpacity` (0.15).
@@ -136,7 +147,7 @@ Every implementation must honor this contract. As behavior moves from the legacy
 | 3     | Real, functioning stats dashboard (words/min over short + long windows, duration, totals)               | ✅ Done    |
 | 4     | Event log with word histories (timeline of completed counting sessions: started, duration, words, wpm) | ✅ Done    |
 | 5     | Fully functional diagnostics panel (collapsible drawer + copy-to-clipboard)                             | ✅ Done    |
-| 6     | Reset + persistence (localStorage round-trip)                                                           | ⏳ Pending |
+| 6     | Reset + persistence (localStorage round-trip)                                                           | ✅ Done    |
 | 7     | Wake lock + keep-awake toggle                                                                           | ⏳ Pending |
 | 8     | Permission denied + transient-error banner                                                              | ⏳ Pending |
 | 9     | On-device pre-flight + cloud fallback                                                                   | ⏳ Pending |

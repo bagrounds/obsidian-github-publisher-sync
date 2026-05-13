@@ -10,9 +10,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-18T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-05-13T10:59:06Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A high-angle, minimalist composition featuring a pristine wooden chessboard. A single, intricately carved king piece stands in the center, casting a long, sharp shadow that transforms into a complex, branching tree diagram on the boards surface. Surrounding the board, several chess pawns are arranged in a circular formation, facing inward toward the king. The lighting is dramatic and cinematic, with cool blue tones highlighting the strategic, analytical nature of the scene, while a single warm light source emphasizes the kings silhouette. The background is a soft, out-of-focus gradient of deep charcoal and slate, suggesting a professional, intellectual environment without any distracting clutter. The overall aesthetic is clean, modern, and focused on the concept of foresight and calculated decision-making.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🧠📈 Thinking Strategically: The Competitive Edge in Business, Politics and Everyday Life  
+![books-thinking-strategically-the-competitive-edge-in-business-politics-and-everyday-life](../books-thinking-strategically-the-competitive-edge-in-business-politics-and-everyday-life.jpg)  
 [🛒 Thinking Strategically: The Competitive Edge in Business, Politics and Everyday Life. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4oiUXt9)  
   
 ### 🏆 Dixit & Nalebuff's Strategic Thinking Cheat Sheet  

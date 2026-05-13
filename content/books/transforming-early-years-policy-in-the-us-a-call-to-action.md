@@ -10,9 +10,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-23T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-05-13T15:16:24Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: An illustration depicts a diverse group of joyful young children, including toddlers and preschoolers, engaged in playful learning. In the background, abstract, fragmented blocks of muted grey and blue, symbolizing outdated policy structures, are subtly but visibly transforming. Bright, interconnected lines and gentle, supportive hands emerge, actively re-shaping these blocks into a cohesive, vibrant foundation of warm, inviting colors. The children are positioned on this emerging, colorful foundation, looking upwards towards a soft, hopeful light. A delicate, upward-growing plant or blooming flower sprouts from the new foundation, symbolizing potential and nurturing growth. The overall mood is optimistic and empowering.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 👶🏛️➡️ Transforming Early Years Policy in the U.S.: A Call to Action  
+![books-transforming-early-years-policy-in-the-us-a-call-to-action](../books-transforming-early-years-policy-in-the-us-a-call-to-action.jpg)  
 [🛒 Transforming Early Years Policy in the U.S.: A Call to Action. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/46rfQuN)  
   
 ## 📖 Book Report: Transforming Early Years Policy in the U.S.: A Call to Action 📣  

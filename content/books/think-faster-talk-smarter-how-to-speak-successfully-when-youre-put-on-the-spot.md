@@ -10,9 +10,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-23T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-05-13T08:16:39Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A minimalist, high-contrast illustration featuring a stylized silhouette of a person standing confidently on a small, elevated platform. Above their head, a glowing, geometric lightbulb icon radiates organized, structured lines that transform into clear, abstract speech bubbles. The background is a soft, deep gradient—shifting from a tense, deep charcoal at the bottom to a calm, bright electric blue at the top. Floating around the figure are subtle, clean icons representing the What-So What-Now What framework, depicted as simple, interconnected shapes. The overall composition is clean, modern, and professional, emphasizing clarity, calm, and the transformation of nervous energy into articulate, structured communication.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # ⚡🗣️ Think Faster, Talk Smarter: How to Speak Successfully When You're Put on the Spot  
+![books-think-faster-talk-smarter-how-to-speak-successfully-when-youre-put-on-the-spot](../books-think-faster-talk-smarter-how-to-speak-successfully-when-youre-put-on-the-spot.jpg)  
 [🛒 Think Faster, Talk Smarter: How to Speak Successfully When You're Put on the Spot. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/48Xvvo9)  
   
 🚀🗣️💡 Practical, structured methods to calm anxiety, organize thoughts, and deliver clear, confident impromptu communication, emphasizing connection over perfection and audience-centric messaging.  

@@ -10,9 +10,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-15T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-05-13T13:56:55Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A single, luminous green seed germinates in the palm of a gently cupped hand. From this tiny seed, a delicate vine begins to unfurl, subtly intertwining with the lines on the hand and then expanding upwards. The vine quickly transforms into a vibrant, blossoming plant that fills the upper half of the frame, bursting with color and soft light. The overall impression is one of effortless, exponential growth stemming from a minuscule beginning, imbued with a sense of quiet triumph.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🤏♻️ Tiny Habits: The Small Changes That Change Everything  
+![books-tiny-habits](../books-tiny-habits.jpg)  
 [🛒 Tiny Habits: The Small Changes That Change Everything. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4kPIknK)  
   
 ## 🤖 AI Summary  

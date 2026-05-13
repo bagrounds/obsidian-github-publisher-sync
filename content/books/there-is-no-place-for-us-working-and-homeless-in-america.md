@@ -10,9 +10,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-27T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-05-13T07:08:52Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A somber, cinematic scene at dawn in a city parking lot. In the foreground, a late-model sedan is parked, its windows partially fogged from the inside, suggesting habitation. A crisp, professional work shirt hangs neatly from a hook inside the rear window, contrasting sharply with the stark, cold asphalt surroundings. In the background, the blurred silhouette of a glittering, modern skyscraper looms against a pale, overcast sky, emphasizing the distance between the city’s prosperity and the occupant’s reality. The color palette is muted—cool blues and grays—with a single warm glow of a streetlamp reflecting off the car’s hood, creating a mood of quiet, isolated struggle.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🏚️🚫 There Is No Place for Us: Working and Homeless in America  
+![books-there-is-no-place-for-us-working-and-homeless-in-america](../books-there-is-no-place-for-us-working-and-homeless-in-america.jpg)  
 [🛒 There Is No Place for Us: Working and Homeless in America. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/48vNBMF)  
   
 🏠💸 America's growing working homeless population reveals how systemic issues like low wages and soaring rents in thriving cities push full-time workers into precarious housing, demonstrating that homelessness is a structural crisis, not a personal failing.  

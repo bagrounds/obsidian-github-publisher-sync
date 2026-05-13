@@ -12,9 +12,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-16T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-05-13T12:53:37Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A close-up, high-contrast illustration of a human silhouette seen in profile. Inside the head, a complex, glowing network of neural pathways is visible. From the edges of these pathways, vibrant, geometric shapes—representing memes—are detaching and floating outward into the surrounding space. These shapes are beginning to form a chain-like, crystalline structure that spreads toward the edges of the frame. The background is a deep, moody indigo, creating a stark contrast with the bioluminescent, neon-colored patterns of the spreading ideas. The overall aesthetic is scientific yet surreal, emphasizing the transition of an internal thought into a contagious, external social force. The composition is clean, sharp, and minimalist.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 💭🦠 Thought Contagion: How Belief Spreads Through Society  
+![books-thought-contagion](../books-thought-contagion.jpg)  
 [🛒 Thought Contagion: How Belief Spreads Through Society. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4jBAflr)  
   
 ## 📚 Book Report: 🧠 Thought Contagion by Aaron Lynch  

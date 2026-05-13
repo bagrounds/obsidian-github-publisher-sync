@@ -10,9 +10,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-16T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-05-13T01:54:35Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: "A vibrant, stylized globe at the center, depicted with subtle topographical features. Numerous glowing, multi-colored lines radiate from and crisscross across the globe, forming a dense, interconnected web. These lines represent various forms of connectivity: some thicker, resembling roads or rail lines, others thinner, like digital data streams. They connect different continents and regions, emphasizing a global network rather than a single focal point. Small, abstract icons of a cargo ship, a train, and a data packet/wifi symbol subtly float along these lines. The background is a soft gradient, suggesting vastness and the digital realm. The overall impression is one of dynamic, complex global interdependence and emerging pathways."
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🇨🇳🌍 The World According to China  
+![books-the-world-according-to-china](../books-the-world-according-to-china.jpg)  
 [🛒 The World According to China. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/48ztA7K)  
   
 🌐🛣️📱 China is reshaping global order through infrastructure, trade, and digital connectivity, creating a multipolar future defined by its vast network power rather than traditional military might or Western-centric institutions. 🌐🛣️📱  

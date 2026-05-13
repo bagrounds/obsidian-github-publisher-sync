@@ -10,9 +10,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-15T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-05-13T08:16:36Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: "A weathered, open hardcover book rests on a clean wooden table. Rising from the pages is a surreal, layered collage of American history: a delicate quill pen resting near a glowing, modern digital tablet, intertwined with subtle silhouettes of historical icons—a liberty bell, a sprawling map of the continent, and diverse figures representing the nations people. Light streams in from the side, casting soft, dramatic shadows that highlight the contrast between the parchment-like texture of the pages and the sleek, glowing screen. The composition is balanced and scholarly, evoking a sense of deep research, historical gravity, and the ongoing evolution of truth across centuries. The color palette is muted, featuring deep indigos, parchment golds, and charcoal grays."
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🇺🇸📖 These Truths: A History of the United States  
+![books-these-truths-a-history-of-the-united-states](../books-these-truths-a-history-of-the-united-states.jpg)  
 [🛒 These Truths: A History of the United States. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3Xdewr5)  
   
 🇺🇸📜🤔 America's historical adherence to its foundational principles of political equality, natural rights, and popular sovereignty reveal persistent contradictions alongside progress.  

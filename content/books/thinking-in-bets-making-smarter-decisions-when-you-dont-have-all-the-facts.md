@@ -10,9 +10,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-16T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-05-13T10:06:17Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A stylized, oversized die or a small stack of poker chips sits prominently in the foreground. Behind it, a faint, abstract outline of a human head or brain emerges from swirling, translucent thought lines. From the die/chips, multiple branching pathways radiate outwards, some clear and defined, others dissolving into a soft, atmospheric mist. Subtle, scattered playing card suit symbols (spades, clubs, diamonds, hearts) float within the misty areas, hinting at hidden information and chance. The color palette blends cool blues and purples for uncertainty with a focused warm light emanating from the die, symbolizing the decision point. The composition conveys contemplation before action, navigating choices with incomplete information.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🎲🤔 Thinking in Bets: Making Smarter Decisions When You Don't Have All the Facts  
+![books-thinking-in-bets-making-smarter-decisions-when-you-dont-have-all-the-facts](../books-thinking-in-bets-making-smarter-decisions-when-you-dont-have-all-the-facts.jpg)  
 [🛒 Thinking in Bets: Making Smarter Decisions When You Don't Have All the Facts. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3FABraR)  
   
 ## 📖 Book Report: Thinking in Bets by Annie Duke  

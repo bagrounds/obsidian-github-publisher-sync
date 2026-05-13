@@ -11,9 +11,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-17T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-05-13T03:19:46Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A vibrant, minimalist illustration featuring a stylized, glowing human brain silhouette centered against a soft, warm-toned background. Inside the brain, abstract, colorful geometric shapes and flowing lines bloom outward like a budding flower, representing curiosity and growth. Radiating from the brain are gentle, light-filled ripples that symbolize emotional balance and receptivity. The color palette uses soft teals, warm oranges, and bright yellows to evoke a sense of optimism, openness, and calm. The overall composition is clean and modern, emphasizing clarity and the flourishing of a child’s developing mind.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 👍🧠 The Yes Brain: How to Cultivate Courage, Curiosity, and Resilience in Your Child  
+![books-the-yes-brain](../books-the-yes-brain.jpg)  
 [🛒 The Yes Brain: How to Cultivate Courage, Curiosity, and Resilience in Your Child. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4jtxOBi)  
   
 ## 🧠 Book Report: The Yes Brain  

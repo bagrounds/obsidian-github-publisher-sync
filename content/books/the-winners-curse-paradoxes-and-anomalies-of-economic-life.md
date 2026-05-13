@@ -10,9 +10,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-22T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-05-13T03:18:38Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A surreal, high-contrast illustration featuring a golden trophy sitting atop a precarious, melting pedestal made of stacks of coins and paper ledgers. The pedestal is visibly crumbling, with coins spilling out to reveal hollow, empty centers. In the background, a series of abstract, translucent auction paddles float in a dark, infinite void, each casting long, distorted shadows that morph into question marks. The lighting is dramatic and cinematic, with a single spotlight illuminating the trophy, highlighting its ornate, polished surface while leaving the chaotic base in deep shadow to emphasize the irony of the win. The overall aesthetic is clean, modern, and conceptual, utilizing a palette of deep navy, gold, and sharp white highlights.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🏆🤯💰 The Winner's Curse: Paradoxes and Anomalies of Economic Life  
+![books-the-winners-curse-paradoxes-and-anomalies-of-economic-life](../books-the-winners-curse-paradoxes-and-anomalies-of-economic-life.jpg)  
 [🛒 The Winner's Curse: Paradoxes and Anomalies of Economic Life. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4pUzK9X)  
   
 🧠💸📉 Systemic psychological biases lead individuals and markets to predictably irrational economic decisions, often resulting in overpayment in competitive settings and challenging classical economic assumptions of perfect rationality.  

@@ -11,9 +11,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-15T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-05-13T01:52:28Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: "A stylized, gender-neutral figure stands at a pivotal point, embodying the struggle and triumph of willpower. On one side, a swirling path of vibrant, soft colors leads to abstract temptations: a shimmering, tempting dessert and a beckoning, cozy cloud. On the other, a clear, structured path of cool, focused tones ascends towards a minimalist, glowing achievement icon. The figures body is taut, one arm gently but firmly pushing away the immediate gratification, while the other reaches purposefully towards the long-term goal. A subtle, bright glow emanates from the figures head, symbolizing mental clarity and control. The composition emphasizes choice, internal strength, and the balance between desire and discipline."
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🧘🏋️ The Willpower Instinct: How Self-Control Works, Why It Matters, and What You Can Do to Get More of It  
+![books-the-willpower-instinct](../books-the-willpower-instinct.jpg)  
 [🛒 The Willpower Instinct: How Self-Control Works, Why It Matters, and What You Can Do to Get More of It. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3ZanKGf)  
   
 ## 📚 Book Report: The Willpower Instinct  

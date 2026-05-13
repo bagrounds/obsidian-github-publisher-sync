@@ -10,9 +10,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-22T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-05-12T23:37:32Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: "A minimalist, high-contrast composition featuring a glowing, translucent glass prism resting on a clean, light-colored wooden surface. Eight distinct, soft-colored light beams emerge from the prism, spreading outward like a fan. Each beam represents a different facet of life—symbolized by subtle icons integrated into the light: a sprout (growth), a heartbeat (wellness), an interlocking chain (family), a paintbrush (craft), a gold coin (money), a group of abstract figures (community), a compass (adventure), and a heart (service). The background is a soft, warm gradient fading from sunrise orange to calm sky blue, evoking a sense of clarity, peace, and holistic abundance. The overall aesthetic is modern, elegant, and serene, emphasizing the concept of internal fulfillment over material accumulation."
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🚫💰❤️ The Wealth Money Can't Buy: The 8 Hidden Habits to Live Your Richest Life  
+![books-the-wealth-money-cant-buy-the-8-hidden-habits-to-live-your-richest-life](../books-the-wealth-money-cant-buy-the-8-hidden-habits-to-live-your-richest-life.jpg)  
 [🛒 The Wealth Money Can't Buy: The 8 Hidden Habits to Live Your Richest Life. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3ImidqP)  
   
 ## 📖 Book Report: The Wealth Money Can't Buy: The 8 Hidden Habits to Live Your Richest Life  

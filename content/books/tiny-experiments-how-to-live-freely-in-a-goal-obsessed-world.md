@@ -10,9 +10,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-20T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-05-13T13:56:47Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A minimalist, clean composition featuring a glass laboratory beaker centered on a soft, neutral-toned workspace. Instead of a liquid, the beaker is filled with a swirling, vibrant nebula of colorful geometric shapes and tiny, delicate butterfly silhouettes that appear to be escaping the rim and fluttering upward. Around the base of the beaker, a few scattered, glowing lightbulbs and small, stylized puzzle pieces suggest an iterative, playful process. The lighting is soft and natural, casting gentle shadows that give the scene a sense of calm, focused exploration. The background is a clean, textured off-white, emphasizing the transition from structured, enclosed science to fluid, organic transformation.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🧪🎯🦋 Tiny Experiments: How to Live Freely in a Goal-Obsessed World  
+![books-tiny-experiments-how-to-live-freely-in-a-goal-obsessed-world](../books-tiny-experiments-how-to-live-freely-in-a-goal-obsessed-world.jpg)  
 [🛒 Tiny Experiments: How to Live Freely in a Goal-Obsessed World. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/49eUpjq)  
   
 🔬💡🔄 Tiny Experiments: How to Live Freely in a Goal-Obsessed World offers a paradigm shift from rigid, linear goal-setting to a dynamic, experimental approach, fostering self-discovery, adaptability, and continuous growth in an uncertain world.  

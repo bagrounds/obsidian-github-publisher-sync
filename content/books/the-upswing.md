@@ -11,9 +11,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-18T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-05-12T20:42:36Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A stylized upward-curving path dominates the center, representing the upswing. Along this path, a diverse group of silhouetted figures, depicted as abstract shapes rather than detailed individuals, are shown in various stages of ascending, some holding hands or linking arms, symbolizing coming together. The path itself subtly suggests the outline of a continent or a unified landmass. In the background, a warm, radiant glow, like a sunrise or sunset, emanates from the upper right, casting a hopeful light. The overall color palette is optimistic and inviting, with soft gradients of blues, greens, and oranges.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🤝📈🇺🇸🔁 The Upswing: How America Came Together a Century Ago and How We Can Do It Again  
+![books-the-upswing](../books-the-upswing.jpg)  
 [🛒 The Upswing: How America Came Together a Century Ago and How We Can Do It Again. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4mMFkKw)  
   
 ## 🤖 AI Summary  

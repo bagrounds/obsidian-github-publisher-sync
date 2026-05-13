@@ -11,9 +11,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-24T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-05-13T10:58:36Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A minimalist, high-contrast composition featuring a set of vintage brass scales of justice resting on a stack of thick, leather-bound law books. The lighting is dramatic and moody, with a single, sharp spotlight illuminating the center of the scales to represent clarity and precision. In the background, out-of-focus shelves of a law library create a sense of depth and academic authority. The color palette is composed of deep mahogany, gold, and charcoal grey. A single, crisp fountain pen lies across the top of the books, suggesting the act of writing and interpretation. The overall aesthetic is sophisticated, intellectual, and timeless, evoking the weight and structure of the legal system.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🤔⚖️ Thinking Like a Lawyer: A New Introduction to Legal Reasoning  
+![books-thinking-like-a-lawyer-a-new-introduction-to-legal-reasoning](../books-thinking-like-a-lawyer-a-new-introduction-to-legal-reasoning.jpg)  
 [🛒 Thinking Like a Lawyer: A New Introduction to Legal Reasoning. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/445lXUD)  
   
 ## 📚 Book Report: ⚖️ Thinking Like a Lawyer: A New Introduction to Legal Reasoning  

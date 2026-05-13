@@ -9,9 +9,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-16T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-05-12T22:36:44Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A vibrant, textured collage-style illustration inspired by Eric Carle’s signature aesthetic. A plump, segmented caterpillar with a bright red head and lime-green body arches across a crisp white background. To its left, a glossy, deep red apple features a distinct, rounded hole bitten through the center. Scattered around the scene are subtle, torn-paper textures in shades of grass green, sunny yellow, and sunset orange. The lighting is soft and even, highlighting the tactile quality of layered tissue paper and painted brushstrokes, creating a whimsical and nostalgic atmosphere reminiscent of a classic children’s picture book.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🐛🍎 The Very Hungry Caterpillar  
+![books-the-very-hungry-caterpillar](../books-the-very-hungry-caterpillar.jpg)  
 [🛒 The Very Hungry Caterpillar. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4kef75a)  
   
 ## 🐛 Book Report: The Very Hungry Caterpillar  

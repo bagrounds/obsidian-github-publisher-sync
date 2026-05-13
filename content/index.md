@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-05-12T08:40:02-07:00
+updated: 2026-05-12T17:33:22-07:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -71,17 +71,17 @@ updated: 2026-05-12T08:40:02-07:00
   
   
 ## [📚 Books](./books/index.md) (961)  
-- [👩🏼‍⚖️💭🧮🏆 The Tools of Argument: How the Best Lawyers Think, Argue, and Win](./books/the-tools-of-argument-how-the-best-lawyers-think-argue-and-win.md)  
-- [⚖️👈 The Tipping Point: How Little Things Can Make a Big Difference](./books/the-tipping-point.md)  
-- [🌌3️⃣⚛️ The Three-Body Problem](./books/the-three-body-problem.md)  
-- [🧠🔌 The Thinking Machine: Jensen Huang, Nvidia, and the World's Most Coveted Microchip](./books/the-thinking-machine-jensen-huang-nvidia-and-the-worlds-most-coveted-microchip.md)  
+- [👥⚔️👑 The Will of the Many](./books/the-will-of-the-many.md)  
+- [🚫💰❤️ The Wealth Money Can't Buy: The 8 Hidden Habits to Live Your Richest Life](./books/the-wealth-money-cant-buy-the-8-hidden-habits-to-live-your-richest-life.md)  
+- [🐛🍎 The Very Hungry Caterpillar](./books/the-very-hungry-caterpillar.md)  
+- [💰🏭🌍 The Value of Everything: Making and Taking in the Global Economy](./books/the-value-of-everything-making-and-taking-in-the-global-economy.md)  
   
   
-## [📺 Videos](./videos/index.md) (825)  
+## [📺 Videos](./videos/index.md) (826)  
+- [🇮🇷🧱🎥🇺🇸 New LEGO Video from IRAN - Stand Up America](./videos/new-lego-video-from-iran-stand-up-america.md)  
 - [🧠⚙️📐 Hamming Intro to The Art of Doing Science and Engineering Learning to Learn March 28 1995](./videos/hamming-intro-to-the-art-of-doing-science-and-engineering-learning-to-learn-march-28-1995.md)  
 - [🤖🔄📦 Ralph Loops: Build Dumb AI Loops That Ship - Chris Parsons, Cherrypick](./videos/ralph-loops-build-dumb-ai-loops-that-ship-chris-parsons-cherrypick.md)  
 - [🏛️⏳🇺🇸 Reliving Reconstruction at This Moment | Explainer](./videos/reliving-reconstruction-at-this-moment-explainer.md)  
-- [🚫🇮🇷👑🏛️ Trump Ignores 60-Day Iran Deadline & King Charles Urges Congress to Do Its Job | The Daily Show](./videos/trump-ignores-60-day-iran-deadline-king-charles-urges-congress-to-do-its-job-the-daily-show.md)  
   
   
 ## [🌌 Topics](./topics/index.md) (91)  

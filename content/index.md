@@ -5,7 +5,7 @@ aliases:
 URL: https://bagrounds.org
 backlinks: false
 title: 🌌 AI, Learning, Software Engineering, Books | bagrounds.org
-updated: 2026-05-12T17:33:22-07:00
+updated: 2026-05-12T17:58:01-07:00
 ---
 # 🏡 Home  
 📚 Learn. ✍🏼 Blog. 🔁 Repeat.  
@@ -21,11 +21,11 @@ updated: 2026-05-12T17:33:22-07:00
 - [2026-05-09 | ⚙️ Meter 🧠 Learn 📚 Intro 📈 Improving 🌟 Progress 📰 Shifting 🐔 Milestone 🤖 Architecture 🏛️ Governance 🔀 Anchoring 🏗️ Building 🧰📚📺📄🌟📰🐔🤖🏛️🔀🔄🤖🐲](./reflections/2026-05-09.md)  
   
   
-## [🤖 AI Blog](./ai-blog/index.md) (205)  
+## [🤖 AI Blog](./ai-blog/index.md) (207)  
+- [2026-05-12 | 🪜 Word Meter Lifted onto the Capability Pattern 🧱](./ai-blog/2026-05-12-4-word-meter-capability-pattern-refactor.md)  
+- [2026-05-12 | 🔧 Word Meter PureScript Slice Five — Diagnostics Drawer 📋](./ai-blog/2026-05-12-3-word-meter-purescript-slice-five-diagnostics-drawer.md)  
 - [2026-05-12 | 🟣 Word Meter PureScript Slice Three — Stats Dashboard Lands 📊](./ai-blog/2026-05-12-1-word-meter-purescript-slice-three-stats-dashboard.md)  
 - [2026-05-11 | 🟣 Word Meter PureScript Slice Two — Captions Land 🤖](./ai-blog/2026-05-11-6-word-meter-purescript-slice-two-captions-land.md)  
-- [2026-05-11 | 🟣 Word Meter PureScript Slice One — Recording Works 🤖](./ai-blog/2026-05-11-5-word-meter-purescript-slice-one-recording-works.md)  
-- [2026-05-11 | 🟣 Porting Word Meter To PureScript — Slice One 🤖](./ai-blog/2026-05-11-4-word-meter-purescript-port-slice-one.md)  
   
   
 ## [🤖 Auto Blog Zero](./auto-blog-zero/index.md) (63)  
@@ -77,11 +77,11 @@ updated: 2026-05-12T17:33:22-07:00
 - [💰🏭🌍 The Value of Everything: Making and Taking in the Global Economy](./books/the-value-of-everything-making-and-taking-in-the-global-economy.md)  
   
   
-## [📺 Videos](./videos/index.md) (826)  
+## [📺 Videos](./videos/index.md) (827)  
+- [⚖️🌑📺 The Shadow Docket: Last Week Tonight with John Oliver (HBO)](./videos/the-shadow-docket-last-week-tonight-with-john-oliver-hbo.md)  
 - [🇮🇷🧱🎥🇺🇸 New LEGO Video from IRAN - Stand Up America](./videos/new-lego-video-from-iran-stand-up-america.md)  
 - [🧠⚙️📐 Hamming Intro to The Art of Doing Science and Engineering Learning to Learn March 28 1995](./videos/hamming-intro-to-the-art-of-doing-science-and-engineering-learning-to-learn-march-28-1995.md)  
 - [🤖🔄📦 Ralph Loops: Build Dumb AI Loops That Ship - Chris Parsons, Cherrypick](./videos/ralph-loops-build-dumb-ai-loops-that-ship-chris-parsons-cherrypick.md)  
-- [🏛️⏳🇺🇸 Reliving Reconstruction at This Moment | Explainer](./videos/reliving-reconstruction-at-this-moment-explainer.md)  
   
   
 ## [🌌 Topics](./topics/index.md) (91)  

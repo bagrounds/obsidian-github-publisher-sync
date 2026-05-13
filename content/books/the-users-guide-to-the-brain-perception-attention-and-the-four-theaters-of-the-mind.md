@@ -10,9 +10,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-17T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-05-12T21:43:33Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A stylized, translucent human head silhouette set against a deep navy background. Inside the head, four distinct, glowing geometric stages or theaters are interconnected by vibrant, pulsing neural pathways. Each theater glows with a different soft color—warm amber, cool cyan, soft magenta, and emerald green—representing different cognitive processes like perception and attention. Fine, intricate lines resembling a schematic or a user manual overlay the brain structure, suggesting a blueprint. Floating around the head are abstract, glowing nodes of light that symbolize synaptic connections and the malleability of neuroplasticity. The overall aesthetic is clean, modern, and intellectual, blending the precision of a technical diagram with the ethereal nature of human consciousness.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🧠📖 A User's Guide to the Brain: Perception, Attention, and the Four Theaters of the Brain  
+![books-the-users-guide-to-the-brain-perception-attention-and-the-four-theaters-of-the-mind](../books-the-users-guide-to-the-brain-perception-attention-and-the-four-theaters-of-the-mind.jpg)  
 [🛒 A User's Guide to the Brain: Perception, Attention, and the Four Theaters of the Brain. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/44ZdPaa)  
   
 ## 📚 Book Report: 🧠 A User's Guide to the Brain: 💡 Perception, 👁️‍🗨️ Attention, and the Four Theaters of the Mind  

@@ -10,9 +10,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-20T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-05-12T16:55:38Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A stark, high-contrast illustration featuring a large, ornate golden scale balanced on a marble pedestal. On one side of the scale sits a towering, dense stack of gold coins and polished bars, representing extreme wealth. On the other side, a single, humble, transparent glass jar containing a few copper coins sits precariously high in the air, having been lifted by the weight of the gold. The background is a deep, moody charcoal gray, suggesting a boardroom or a vault. A single, sharp spotlight illuminates the scale from above, casting long, dramatic shadows that emphasize the imbalance. The aesthetic is minimalist and sophisticated, utilizing metallic textures to evoke the themes of corporate finance and systemic inequality without the use of any text.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 💰➡️ The Triumph of Injustice: How the Rich Dodge Taxes and How to Make Them Pay  
+![books-the-triumph-of-injustice-how-the-rich-dodge-taxes-and-how-to-make-them-pay](../books-the-triumph-of-injustice-how-the-rich-dodge-taxes-and-how-to-make-them-pay.jpg)  
 [🛒 The Triumph of Injustice: How the Rich Dodge Taxes and How to Make Them Pay. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4lAXY6F)  
   
 ## ⚖️ The Triumph of Injustice: How the Rich Dodge Taxes and How to Make Them Pay  

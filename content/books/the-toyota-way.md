@@ -11,9 +11,13 @@ force_analyze_links: false
 link_analysis_time: 2026-04-16T00:00:00Z
 link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_version: "2"
+image_date: 2026-05-12T16:04:24Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: "A clean, minimalist isometric illustration featuring a stylized, high-tech factory floor in soft, professional tones of slate blue, white, and subtle metallic gold. In the center, a perfectly organized assembly line flows seamlessly, represented by interconnected geometric shapes and clean, parallel lines. Above the workspace, a series of glowing, abstract icons represent the core concepts: a circular arrow for continuous improvement, a stylized human silhouette representing respect for people, and a small, precise gear symbolizing mechanical efficiency. The background is a soft, light gray grid that evokes a sense of structure and precision. The lighting is bright and even, casting soft shadows to create depth, emphasizing a environment of clarity, order, and forward-thinking progress."
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🇯🇵⚙️📈💯 The Toyota Way: 14 Management Principles from the World's Greatest Manufacturer  
+![books-the-toyota-way](../books-the-toyota-way.jpg)  
 [🛒 The Toyota Way: 14 Management Principles from the World's Greatest Manufacturer. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3Ho3dId)  
   
 ## 🤖 AI Summary  

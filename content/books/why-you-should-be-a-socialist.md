@@ -10,9 +10,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-25T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-05-14T18:51:12Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A vibrant, modern illustration featuring a diverse group of people from various walks of life standing together in a circle, holding hands. In the center of the circle, a small, thriving community garden with lush green plants and colorful flowers grows, representing collective care and human potential. In the background, stylized architectural outlines of a library and public institutions rise against a soft, sunrise-hued sky. The art style is clean, flat, and vector-inspired, using a warm and optimistic color palette of greens, teals, and soft ochres. The composition emphasizes unity, cooperation, and the idea of building a shared future, avoiding any text or specific symbols, focusing instead on the themes of solidarity and flourishing social infrastructure.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🫵🤝🌍🏛️ Why You Should Be a Socialist  
+![books-why-you-should-be-a-socialist](../books-why-you-should-be-a-socialist.jpg)  
 [🛒 Why You Should Be a Socialist. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/461CTOe)  
   
 ## 📚 Book Report: Why You Should Be a Socialist  

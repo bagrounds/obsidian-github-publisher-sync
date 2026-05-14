@@ -10,9 +10,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-20T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-05-14T00:47:36Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A minimalist, high-contrast illustration featuring a translucent human head silhouette in profile. Inside the head, instead of a brain, is a vibrant, swirling nebula of geometric shapes and organic, flowing lines that transition from cool blues to warm, glowing ambers and crimsons. These shapes represent the intersection of logic and feeling—interlocking gears merging with soft, painterly brushstrokes of light. Outside the silhouette, a single, delicate thread connects the head to a small, crystalline heart shape floating in the negative space. The background is a soft, muted charcoal texture, emphasizing the luminosity of the internal structures. The overall aesthetic is clean, intellectual, and evocative, balancing the cold precision of structural thought with the fluid warmth of human emotion.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🤯❤️ Upheavals of Thought: The Intelligence of Emotions  
+![books-upheavals-of-thought-the-intelligence-of-emotions](../books-upheavals-of-thought-the-intelligence-of-emotions.jpg)  
 [🛒 Upheavals of Thought: The Intelligence of Emotions. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4plKfSy)  
   
 🧠 A comprehensive philosophical work that argues for the cognitive and evaluative nature of emotions, contending that they are not irrational forces but intelligent appraisals deeply connected to our values and well-being. Nussbaum's neo-Stoic theory posits that emotions are judgments about things and persons outside our control that hold great importance for our flourishing, highlighting our inherent neediness and vulnerability. The book traverses philosophy, psychology, anthropology, music, and literature to explore emotions like compassion and love, asserting that an adequate ethical theory requires a thorough understanding of emotions, their cultural origins, and their development from infancy.  

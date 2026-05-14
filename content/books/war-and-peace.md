@@ -9,9 +9,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-15T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-05-14T03:19:58Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A split-composition illustration rendered in a classic oil painting style. The left side depicts a chaotic, smoke-filled battlefield under a dark, stormy sky, featuring the blurred silhouettes of soldiers and horses in motion. The right side transitions into a serene, sun-drenched Russian estate garden, with elegant, period-appropriate architecture and lush greenery. A single, weathered stone path runs through the center, bridging the two scenes. The color palette shifts from deep, dramatic grays and fiery oranges on the left to soft, warm golds, greens, and blues on the right, symbolizing the stark contrast between the brutality of war and the quiet reflection of peace.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # ⚔️🕊️ War and Peace  
+![books-war-and-peace](../books-war-and-peace.jpg)  
 [🛒 War and Peace. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3TnAupo)  
   
 ## 📖 Book Report: War and Peace by Leo Tolstoy  

@@ -14,7 +14,7 @@ link_analysis_time: 2026-05-12T00:00:00Z
 force_analyze_links: false
 updated: 2026-05-13T13:58:05
 ---
-[Home](../index.md) > [🔀 Convergence](./index.md) | [⏮️](./2026-05-11-the-conscience-of-systems-dynamic-values-diverse-flourishing-and-responsive-feedback.md)  
+[Home](../index.md) > [🔀 Convergence](./index.md) | [⏮️](./2026-05-11-the-conscience-of-systems-dynamic-values-diverse-flourishing-and-responsive-feedback.md) [⏭️](./2026-05-13-the-mirrors-of-integrity-adversarial-selves-and-embodied-validation.md)  
 # 2026-05-12 | 🔀 The Echoes of Intent 🔀  
 ![convergence-2026-05-12-the-echoes-of-intent](../convergence-2026-05-12-the-echoes-of-intent.jpg)  
   

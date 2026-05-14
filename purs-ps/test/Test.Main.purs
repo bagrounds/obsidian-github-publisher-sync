@@ -1,12 +1,9 @@
--- | Pure-logic unit tests for the Word Meter PureScript port. Kept on the
--- | core toolchain only (prelude / effect / console / exception) so the
--- | suite stays the same shape as `npm run test:ps` and CI does not need a
--- | separate test framework.
 module Test.Main where
 
 import Prelude
 
 import Data.Array (head, length) as Array
+import Data.Either (Either(..), isLeft)
 import Data.Int as Int
 import Data.Maybe (Maybe(..))
 import Data.String (Pattern(..), contains) as String
@@ -46,14 +43,13 @@ import WordMeter.Diagnostics
   , formatDiagnostics
   , recordEntry
   )
-import WordMeter.FFI.Storage (decodePersistedPayload, storageVersion)
+import WordMeter.Persistence (decodePersistedData, encodePersistedData)
 import WordMeter.Recording
   ( Action(..)
   , Session
   , activeListeningMs
   , captionOpacity
   , diagnosticsText
-  , encodePersistedData
   , eventLogLimit
   , formatDurationMs
   , formatRate
@@ -395,10 +391,6 @@ runCapabilityTests = do
 
 runPersistenceTests :: Effect Unit
 runPersistenceTests = do
-  -- Slice 6: Reset + persistence round-trip. Each piece is exercised in
-  -- isolation so a failure points at exactly which layer regressed.
-
-  -- toPersistedData projects the slice that survives across reloads.
   let
     seeded =
       reduce (InjectFinalTranscript "alpha beta" 1500.0)
@@ -409,44 +401,47 @@ runPersistenceTests = do
     projected.totalWords 2
   assertEqualInt "toPersistedData preserves eventLog length"
     (Array.length projected.eventLog) 1
-  assertEqualNumber "toPersistedData preserves firstStartedAt"
-    projected.firstStartedAt 1000.0
+  case projected.firstStartedAt of
+    Just t -> assertEqualNumber "toPersistedData preserves firstStartedAt"
+      t 1000.0
+    Nothing -> throw "toPersistedData should have preserved firstStartedAt"
 
-  -- encode + decode is a round-trip for the persisted shape.
   let
-    encoded = encodePersistedData storageVersion projected
-    roundTrip = decodePersistedPayload encoded
+    encoded = encodePersistedData projected
+    roundTrip = decodePersistedData encoded
   case roundTrip of
-    Just decoded -> do
+    Right decoded -> do
       assertEqualInt "round-trip preserves totalWords"
         decoded.totalWords projected.totalWords
       assertEqualInt "round-trip preserves wordEvents length"
         (Array.length decoded.wordEvents) (Array.length projected.wordEvents)
       assertEqualInt "round-trip preserves eventLog length"
         (Array.length decoded.eventLog) (Array.length projected.eventLog)
-      assertEqualNumber "round-trip preserves firstStartedAt"
-        decoded.firstStartedAt projected.firstStartedAt
-    Nothing -> throw "round-trip failed: expected Just PersistedData"
+      case decoded.firstStartedAt of
+        Just t -> assertEqualNumber "round-trip preserves firstStartedAt"
+          t 1000.0
+        Nothing -> throw "round-trip should have preserved firstStartedAt"
+    Left _ -> throw "round-trip failed: expected Right PersistedData"
 
-  -- "never started" (Nothing) encodes as null and decodes back to NaN.
   let
     untouched = toPersistedData initialSession
-    encodedUntouched = encodePersistedData storageVersion untouched
+    encodedUntouched = encodePersistedData untouched
   assertEqualBoolean "untouched session encodes firstStartedAt as null"
     (containsSubstring "\"firstStartedAt\":null" encodedUntouched) true
-  case decodePersistedPayload encodedUntouched of
-    Just decoded ->
-      assertEqualBoolean "untouched session decodes firstStartedAt as non-finite"
-        (decoded.firstStartedAt == decoded.firstStartedAt) false
-    Nothing -> throw "round-trip failed for untouched session"
+  case decodePersistedData encodedUntouched of
+    Right decoded ->
+      assertEqualBoolean "untouched session decodes firstStartedAt as Nothing"
+        (decoded.firstStartedAt == Nothing) true
+    Left _ -> throw "round-trip failed for untouched session"
 
-  -- Malformed payloads decode to Nothing.
-  assertEqualBoolean "garbage decodes to Nothing"
-    (decodePersistedPayload "not json" == Nothing) true
-  assertEqualBoolean "wrong version decodes to Nothing"
-    (decodePersistedPayload "{\"version\":99}" == Nothing) true
+  assertEqualBoolean "garbage decodes to Left"
+    (isLeft (decodePersistedData "not json")) true
+  assertEqualBoolean "wrong version decodes to Left"
+    (isLeft (decodePersistedData "{\"version\":99,\"totalWords\":0,\"firstStartedAt\":null,\"wordEvents\":[],\"eventLog\":[]}"))
+    true
+  assertEqualBoolean "missing fields decode to Left"
+    (isLeft (decodePersistedData "{\"version\":1}")) true
 
-  -- Reset wipes user data but preserves diagnostics + environment.
   let
     env = emptyEnvironment { version = "9.9.9" }
     populated =
@@ -467,7 +462,6 @@ runPersistenceTests = do
     resetConfirmationPrompt
     "Reset all word meter stats? This cannot be undone."
 
-  -- LoadSession restores state from a persisted snapshot.
   let loaded = reduce (LoadSession projected) initialSession
   assertEqualInt "LoadSession restores totalWords"
     loaded.totalWords projected.totalWords
@@ -480,23 +474,29 @@ runPersistenceTests = do
   assertEqualBoolean "LoadSession leaves listening off"
     loaded.listening false
 
-  -- InMemoryStorageM round-trips persistSnapshot / loadPersistedSnapshot.
   let
     inMemoryOutcome = runInMemoryStorageM Nothing do
       before <- loadPersistedSnapshot
-      persistSnapshot projected
+      _ <- persistSnapshot projected
       after <- loadPersistedSnapshot
-      clearPersistedSnapshot
+      _ <- clearPersistedSnapshot
       cleared <- loadPersistedSnapshot
       pure { before, after, cleared }
   assertEqualBoolean "InMemoryStorageM starts empty"
-    (inMemoryOutcome.result.before == Nothing) true
+    (case inMemoryOutcome.result.before of
+      Right Nothing -> true
+      _ -> false)
+    true
   case inMemoryOutcome.result.after of
-    Just persisted ->
+    Right (Just persisted) ->
       assertEqualInt "InMemoryStorageM observes persisted totalWords"
         persisted.totalWords projected.totalWords
-    Nothing -> throw "InMemoryStorageM should have observed a persisted snapshot"
+    _ -> throw "InMemoryStorageM should have observed a persisted snapshot"
   assertEqualBoolean "InMemoryStorageM clears the snapshot on request"
-    (inMemoryOutcome.result.cleared == Nothing) true
+    (case inMemoryOutcome.result.cleared of
+      Right Nothing -> true
+      _ -> false)
+    true
   assertEqualBoolean "InMemoryStorageM final cell matches cleared state"
     (inMemoryOutcome.finalSnapshot == Nothing) true
+

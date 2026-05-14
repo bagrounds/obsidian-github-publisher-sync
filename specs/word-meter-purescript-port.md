@@ -44,12 +44,14 @@ purs-ps/
       DomMount.purs            class DomMount + AppM instance + RecordingDomMountM test newtype
       SessionState.purs        class SessionState + AppM instance + StatefulSessionM test newtype
       Storage.purs             class Storage + AppM instance + InMemoryStorageM test newtype (slice 6)
+    Persistence.purs           Argonaut-backed encode / decode for `Recording.PersistedData` (slice 6)
     FFI/
       Clock.purs / .js         currentTimeMillis :: Effect Number
       Clipboard.purs / .js     navigator.clipboard.writeText with success / error callbacks
       Environment.purs / .js   navigator.userAgent / navigator.language snapshot capture
-      Storage.purs / .js       localStorage get / set / remove + JSON-decode sanitizer (slice 6)
-      Confirm.purs / .js       window.confirm wrapper for destructive-action prompts (slice 6)
+      Storage.purs / .js       localStorage read / write / clear returning `Either StorageError a` (slice 6)
+      StorageError.purs        `data StorageError = StorageUnavailable | StorageException | MissingKey` (slice 6)
+      Confirm.purs / .js       window.confirm wrapper returning `Either ConfirmError Boolean` (slice 6)
   test/Test.Main.purs          pure reducer / formatter unit tests + per-capability test-newtype tests
 scripts/
   build-word-meter-ps.mjs      spago bundle wrapper
@@ -81,7 +83,17 @@ Future capabilities (`WakeLock`, `Recognition`, `Log`, …) grow into the same s
 
 ## Persistence (slice 6)
 
-The slice that survives across page reloads / tab unloads is `Recording.PersistedData`: `{ totalWords, firstStartedAt, wordEvents, eventLog }`. Diagnostics, captions, environment, listening flag, and clock are deliberately excluded — they are either ephemeral or rebuilt from environment on startup. `Main.persistAfterAction` writes after every `Toggle` and `InjectFinalTranscript`, clears after `Reset`, and is a no-op for `Tick` / `RecordDiagnostic` / `SetEnvironment` / `SetCopyStatus` / `LoadSession`. The capability backend is `localStorage` under key `word-meter-ps:state:v1` with `version=1` sentinel; missing key, parse failure, schema mismatch, and `localStorage` being disabled all gracefully degrade to "no restore".
+The slice that survives across page reloads / tab unloads is `Recording.PersistedData`: `{ totalWords, firstStartedAt :: Maybe Number, wordEvents, eventLog }`. Diagnostics, captions, environment, listening flag, and clock are deliberately excluded — they are either ephemeral or rebuilt from environment on startup.
+
+Encoding and decoding are delegated to **Argonaut** (`argonaut-core` + `argonaut-codecs`). `WordMeter.Persistence` defines `encodePersistedData :: PersistedData -> String`, `decodePersistedData :: String -> Either PersistenceError PersistedData`, and the `PersistenceError` ADT (`InvalidJson | SchemaMismatch | UnsupportedVersion`). The on-disk envelope embeds a `version` sentinel (currently `1`) and stores `firstStartedAt` as either a JSON number or `null` — Argonaut's `Maybe` instance handles both directions, so there is no NaN-sentinel hack.
+
+Every fallible boundary returns `Either` rather than swallowing failures:
+
+- `WordMeter.FFI.Storage` exposes `readPersistedString / writePersistedString / clearPersistedString :: ... -> Effect (Either StorageError ...)` where `StorageError = StorageUnavailable | StorageException String | MissingKey String`. The JS shim in `Storage.js` catches every `localStorage` exception, classifies it (unavailable vs. thrown vs. key missing), and hands the structured outcome back through a small record so the PureScript side can build the typed `Either`.
+- `WordMeter.FFI.Confirm` exposes `askForConfirmation :: String -> Effect (Either ConfirmError Boolean)` with `ConfirmError = ConfirmUnavailable | ConfirmException String`.
+- `WordMeter.Capability.Storage` lifts those errors into a `LoadError = LoadStorageError StorageError | LoadDecodeError PersistenceError` for the read side, and surfaces the raw `StorageError` for writes and clears.
+
+`Main.persistAfterAction` writes after every `Toggle` and `InjectFinalTranscript`, clears after `Reset`, and is a no-op for `Tick` / `RecordDiagnostic` / `SetEnvironment` / `SetCopyStatus` / `LoadSession`. Every `Left` from a load, persist, clear, or confirm call is recorded as a diagnostic entry (`persist load failure`, `persist save failure`, `persist clear failure`, `reset confirm failure`) so failures are visible in the diagnostics drawer rather than silently dropped.
 
 ## Test hook
 

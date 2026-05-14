@@ -2,6 +2,7 @@ module WordMeter.Main where
 
 import Prelude
 
+import Data.Either (Either(..))
 import Data.Maybe (Maybe(..))
 import Effect (Effect)
 import Effect.Class (class MonadEffect, liftEffect)
@@ -18,11 +19,14 @@ import WordMeter.Capability.SessionState
   )
 import WordMeter.Capability.Storage
   ( class Storage
+  , LoadError
   , clearPersistedSnapshot
   , loadPersistedSnapshot
   , persistSnapshot
+  , renderLoadError
   )
-import WordMeter.FFI.Confirm (askForConfirmation)
+import WordMeter.FFI.Confirm (ConfirmError, askForConfirmation, renderConfirmError)
+import WordMeter.FFI.StorageError (StorageError, renderStorageError)
 import WordMeter.Recording
   ( Action(..)
   , diagnosticsText
@@ -94,8 +98,9 @@ startApplication handlers = do
   updateSession (SetEnvironment snapshot)
   restored <- loadPersistedSnapshot
   case restored of
-    Nothing -> pure unit
-    Just persisted -> updateSession (LoadSession persisted)
+    Right Nothing -> pure unit
+    Right (Just persisted) -> updateSession (LoadSession persisted)
+    Left loadFailure -> recordLoadFailure loadFailure
   initTimestamp <- currentTimeMillis
   updateSession
     (RecordDiagnostic initTimestamp "init" ("version=" <> version))
@@ -103,7 +108,8 @@ startApplication handlers = do
 
 dispatch
   :: forall m
-   . DomMount m
+   . Clock m
+  => DomMount m
   => SessionState m
   => Storage m
   => ClickHandlers
@@ -114,19 +120,20 @@ dispatch handlers action = do
   persistAfterAction action
   rerender handlers
 
--- | Decide what to do with persistence after each dispatched action.
--- |   Toggle / InjectFinalTranscript → save the new persisted slice.
--- |   Reset                          → clear the persisted slice.
--- |   Everything else                → no-op (ticks, diagnostics, etc.).
 persistAfterAction
   :: forall m
-   . SessionState m
+   . Clock m
+  => SessionState m
   => Storage m
   => Action
   -> m Unit
 persistAfterAction (Toggle _) = persistCurrentSession
 persistAfterAction (InjectFinalTranscript _ _) = persistCurrentSession
-persistAfterAction (Reset _) = clearPersistedSnapshot
+persistAfterAction (Reset _) = do
+  outcome <- clearPersistedSnapshot
+  case outcome of
+    Right _ -> pure unit
+    Left storageFailure -> recordStorageFailure "persist clear" storageFailure
 persistAfterAction (LoadSession _) = pure unit
 persistAfterAction (Tick _) = pure unit
 persistAfterAction (RecordDiagnostic _ _ _) = pure unit
@@ -135,12 +142,39 @@ persistAfterAction (SetCopyStatus _) = pure unit
 
 persistCurrentSession
   :: forall m
-   . SessionState m
+   . Clock m
+  => SessionState m
   => Storage m
   => m Unit
 persistCurrentSession = do
   session <- readCurrentSession
-  persistSnapshot (toPersistedData session)
+  outcome <- persistSnapshot (toPersistedData session)
+  case outcome of
+    Right _ -> pure unit
+    Left storageFailure -> recordStorageFailure "persist save" storageFailure
+
+recordLoadFailure
+  :: forall m. Clock m => SessionState m => LoadError -> m Unit
+recordLoadFailure failure = do
+  timestamp <- currentTimeMillis
+  updateSession
+    (RecordDiagnostic timestamp "persist load failure" (renderLoadError failure))
+
+recordStorageFailure
+  :: forall m. Clock m => SessionState m => String -> StorageError -> m Unit
+recordStorageFailure label failure = do
+  timestamp <- currentTimeMillis
+  updateSession
+    (RecordDiagnostic timestamp (label <> " failure") (renderStorageError failure))
+
+recordConfirmFailure
+  :: forall m. Clock m => SessionState m => ConfirmError -> m Unit
+recordConfirmFailure failure = do
+  timestamp <- currentTimeMillis
+  updateSession
+    ( RecordDiagnostic timestamp "reset confirm failure"
+        (renderConfirmError failure)
+    )
 
 rerender
   :: forall m
@@ -166,7 +200,8 @@ handleToggle handlers = do
 
 handleCopyDiagnostics
   :: forall m
-   . Clipboard m
+   . Clock m
+  => Clipboard m
   => DomMount m
   => SessionState m
   => Storage m
@@ -191,7 +226,10 @@ handleReset
   => ClickHandlers
   -> m Unit
 handleReset handlers = do
-  confirmed <- liftEffect (askForConfirmation resetConfirmationPrompt)
-  when confirmed do
-    timestamp <- currentTimeMillis
-    dispatch handlers (Reset timestamp)
+  outcome <- liftEffect (askForConfirmation resetConfirmationPrompt)
+  case outcome of
+    Right true -> do
+      timestamp <- currentTimeMillis
+      dispatch handlers (Reset timestamp)
+    Right false -> pure unit
+    Left confirmFailure -> recordConfirmFailure confirmFailure

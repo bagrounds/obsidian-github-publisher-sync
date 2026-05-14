@@ -1,10 +1,12 @@
-export const askForConfirmation = (prompt) => () => {
+const describeError = (error) => (error == null ? "" : String(error))
+
+export const askForConfirmationImpl = (prompt) => () => {
+  if (typeof window === "undefined" || typeof window.confirm !== "function") {
+    return { tag: "unavailable", detail: "", accepted: false }
+  }
   try {
-    if (typeof window === "undefined" || typeof window.confirm !== "function") {
-      return false
-    }
-    return Boolean(window.confirm(prompt))
-  } catch (_unused) {
-    return false
+    return { tag: "ok", detail: "", accepted: Boolean(window.confirm(prompt)) }
+  } catch (error) {
+    return { tag: "exception", detail: describeError(error), accepted: false }
   }
 }

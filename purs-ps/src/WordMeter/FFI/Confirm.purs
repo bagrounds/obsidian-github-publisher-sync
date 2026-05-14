@@ -1,12 +1,42 @@
--- | Thin FFI over `window.confirm` so the slice-6 reset button can
--- | ask the user to acknowledge a destructive action before the
--- | reducer fires. Returns `true` when the user accepts and `false`
--- | when they decline or when the confirm dialog is unavailable
--- | (server-side rendering, headless contexts without a window).
 module WordMeter.FFI.Confirm
-  ( askForConfirmation
+  ( ConfirmError(..)
+  , renderConfirmError
+  , askForConfirmation
   ) where
 
+import Prelude
+
+import Data.Either (Either(..))
 import Effect (Effect)
 
-foreign import askForConfirmation :: String -> Effect Boolean
+data ConfirmError
+  = ConfirmUnavailable
+  | ConfirmException String
+
+derive instance eqConfirmError :: Eq ConfirmError
+
+instance showConfirmError :: Show ConfirmError where
+  show ConfirmUnavailable = "ConfirmUnavailable"
+  show (ConfirmException detail) = "ConfirmException " <> show detail
+
+renderConfirmError :: ConfirmError -> String
+renderConfirmError = case _ of
+  ConfirmUnavailable -> "window.confirm is unavailable in this environment"
+  ConfirmException detail -> "window.confirm threw: " <> detail
+
+type ConfirmOutcome =
+  { tag :: String
+  , detail :: String
+  , accepted :: Boolean
+  }
+
+foreign import askForConfirmationImpl :: String -> Effect ConfirmOutcome
+
+askForConfirmation :: String -> Effect (Either ConfirmError Boolean)
+askForConfirmation prompt = interpretConfirm <$> askForConfirmationImpl prompt
+
+interpretConfirm :: ConfirmOutcome -> Either ConfirmError Boolean
+interpretConfirm outcome = case outcome.tag of
+  "ok" -> Right outcome.accepted
+  "unavailable" -> Left ConfirmUnavailable
+  _ -> Left (ConfirmException outcome.detail)

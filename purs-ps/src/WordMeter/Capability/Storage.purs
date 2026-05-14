@@ -1,5 +1,7 @@
 module WordMeter.Capability.Storage
   ( class Storage
+  , LoadError(..)
+  , renderLoadError
   , loadPersistedSnapshot
   , persistSnapshot
   , clearPersistedSnapshot
@@ -11,50 +13,58 @@ import Prelude
 
 import Control.Monad.Reader.Class (ask)
 import Control.Monad.State.Trans (StateT, get, put, runStateT)
+import Data.Either (Either(..))
 import Data.Identity (Identity(..))
 import Data.Maybe (Maybe(..))
 import Data.Tuple (Tuple(..))
 import Effect.Class (liftEffect)
 import WordMeter.AppM (AppM(..))
 import WordMeter.FFI.Storage as FFIStorage
-import WordMeter.Recording
-  ( PersistedData
+import WordMeter.FFI.StorageError (StorageError(..), renderStorageError)
+import WordMeter.Persistence
+  ( PersistenceError
+  , decodePersistedData
   , encodePersistedData
+  , renderPersistenceError
+  , storageKey
   )
+import WordMeter.Recording (PersistedData)
 
--- | Persistence capability: round-trips the slice-6 `PersistedData`
--- | through whatever backing store the runtime provides. The production
--- | instance writes to `localStorage`; tests use a `StateT`-backed
--- | in-memory cell so they can introspect every persist / clear /
--- | load call without touching a real browser.
+data LoadError
+  = LoadStorageError StorageError
+  | LoadDecodeError PersistenceError
+
+renderLoadError :: LoadError -> String
+renderLoadError = case _ of
+  LoadStorageError detail -> renderStorageError detail
+  LoadDecodeError detail -> renderPersistenceError detail
+
 class Monad m <= Storage m where
-  loadPersistedSnapshot :: m (Maybe PersistedData)
-  persistSnapshot :: PersistedData -> m Unit
-  clearPersistedSnapshot :: m Unit
+  loadPersistedSnapshot :: m (Either LoadError (Maybe PersistedData))
+  persistSnapshot :: PersistedData -> m (Either StorageError Unit)
+  clearPersistedSnapshot :: m (Either StorageError Unit)
 
 instance storageAppM :: Storage AppM where
   loadPersistedSnapshot = AppM do
     _ <- ask
-    liftEffect do
-      raw <- FFIStorage.readPersistedString FFIStorage.storageKey
-      pure case raw of
-        Nothing -> Nothing
-        Just payload -> FFIStorage.decodePersistedPayload payload
+    raw <- liftEffect (FFIStorage.readPersistedString storageKey)
+    pure case raw of
+      Left (MissingKey _) -> Right Nothing
+      Left other -> Left (LoadStorageError other)
+      Right payload -> case decodePersistedData payload of
+        Left decodeFailure -> Left (LoadDecodeError decodeFailure)
+        Right decoded -> Right (Just decoded)
   persistSnapshot persisted = AppM do
     _ <- ask
     liftEffect
       ( FFIStorage.writePersistedString
-          FFIStorage.storageKey
-          (encodePersistedData FFIStorage.storageVersion persisted)
+          storageKey
+          (encodePersistedData persisted)
       )
   clearPersistedSnapshot = AppM do
     _ <- ask
-    liftEffect (FFIStorage.clearPersistedString FFIStorage.storageKey)
+    liftEffect (FFIStorage.clearPersistedString storageKey)
 
--- | Test newtype that keeps the current persisted snapshot in a single
--- | `StateT` cell. `runInMemoryStorageM` returns both the action result
--- | and the final cell contents so a test can assert "after this flow
--- | localStorage holds X".
 newtype InMemoryStorageM a =
   InMemoryStorageM (StateT (Maybe PersistedData) Identity a)
 
@@ -65,9 +75,13 @@ derive newtype instance bindInMemoryStorageM :: Bind InMemoryStorageM
 derive newtype instance monadInMemoryStorageM :: Monad InMemoryStorageM
 
 instance storageInMemoryStorageM :: Storage InMemoryStorageM where
-  loadPersistedSnapshot = InMemoryStorageM get
-  persistSnapshot persisted = InMemoryStorageM (put (Just persisted))
-  clearPersistedSnapshot = InMemoryStorageM (put Nothing)
+  loadPersistedSnapshot = InMemoryStorageM (Right <$> get)
+  persistSnapshot persisted = InMemoryStorageM do
+    put (Just persisted)
+    pure (Right unit)
+  clearPersistedSnapshot = InMemoryStorageM do
+    put Nothing
+    pure (Right unit)
 
 runInMemoryStorageM
   :: forall a

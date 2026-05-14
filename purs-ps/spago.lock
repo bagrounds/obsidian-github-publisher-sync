@@ -5,6 +5,8 @@
         "path": "./",
         "core": {
           "dependencies": [
+            "argonaut-codecs",
+            "argonaut-core",
             "arrays",
             "console",
             "effect",
@@ -21,6 +23,8 @@
         },
         "test": {
           "dependencies": [
+            "argonaut-codecs",
+            "argonaut-core",
             "arrays",
             "console",
             "effect",
@@ -681,6 +685,47 @@
     "extra_packages": {}
   },
   "packages": {
+    "argonaut-codecs": {
+      "type": "registry",
+      "version": "9.1.0",
+      "integrity": "sha256-K910SBrmYallESsm8pxJYThs7lig6hxX3M4PW33Cgew=",
+      "dependencies": [
+        "argonaut-core",
+        "arrays",
+        "bifunctors",
+        "either",
+        "foldable-traversable",
+        "foreign-object",
+        "identity",
+        "integers",
+        "lists",
+        "maybe",
+        "nonempty",
+        "ordered-collections",
+        "prelude",
+        "record",
+        "strings",
+        "tuples"
+      ]
+    },
+    "argonaut-core": {
+      "type": "registry",
+      "version": "7.0.0",
+      "integrity": "sha256-gYZihtBIKthVuXXoiPphMookSf8M5aHyFYkcIWqlxTM=",
+      "dependencies": [
+        "arrays",
+        "control",
+        "either",
+        "foreign-object",
+        "functions",
+        "gen",
+        "maybe",
+        "nonempty",
+        "prelude",
+        "strings",
+        "tailrec"
+      ]
+    },
     "arrays": {
       "type": "registry",
       "version": "7.3.0",
@@ -839,6 +884,26 @@
         "tuples"
       ]
     },
+    "foreign-object": {
+      "type": "registry",
+      "version": "4.1.0",
+      "integrity": "sha256-x/Q7r80z/vmHRKvPwhYmHP/DnJciPtsyGfRTMzayKIU=",
+      "dependencies": [
+        "arrays",
+        "foldable-traversable",
+        "functions",
+        "gen",
+        "lists",
+        "maybe",
+        "prelude",
+        "st",
+        "tailrec",
+        "tuples",
+        "typelevel-prelude",
+        "unfoldable",
+        "unsafe-coerce"
+      ]
+    },
     "functions": {
       "type": "registry",
       "version": "6.0.0",
@@ -925,6 +990,25 @@
         "prelude"
       ]
     },
+    "lists": {
+      "type": "registry",
+      "version": "7.0.0",
+      "integrity": "sha256-/mGd7wLoU+wsTcqii7SSUByxsvwvjnu2PjwAD47yYb4=",
+      "dependencies": [
+        "bifunctors",
+        "control",
+        "foldable-traversable",
+        "lazy",
+        "maybe",
+        "newtype",
+        "nonempty",
+        "partial",
+        "prelude",
+        "tailrec",
+        "tuples",
+        "unfoldable"
+      ]
+    },
     "maybe": {
       "type": "registry",
       "version": "6.0.0",
@@ -968,6 +1052,27 @@
         "prelude"
       ]
     },
+    "ordered-collections": {
+      "type": "registry",
+      "version": "3.2.0",
+      "integrity": "sha256-NaEXc2cz/7lJfxPWEja4XlZbGxuRqJwFKQJjsJf51kQ=",
+      "dependencies": [
+        "arrays",
+        "control",
+        "foldable-traversable",
+        "functions",
+        "gen",
+        "lists",
+        "maybe",
+        "newtype",
+        "partial",
+        "prelude",
+        "safe-coerce",
+        "tailrec",
+        "tuples",
+        "unfoldable"
+      ]
+    },
     "orders": {
       "type": "registry",
       "version": "6.0.0",
@@ -1002,6 +1107,16 @@
         "newtype",
         "prelude",
         "tuples"
+      ]
+    },
+    "record": {
+      "type": "registry",
+      "version": "4.0.0",
+      "integrity": "sha256-WQ8fqp4X1wTA70J4qUcPW4Z7DCwx6e5KJnT/EuTdWSc=",
+      "dependencies": [
+        "functions",
+        "prelude",
+        "unsafe-coerce"
       ]
     },
     "refs": {
@@ -1108,6 +1223,15 @@
       "version": "4.0.1",
       "integrity": "sha256-BBqYOSnAKmayRvR5mtZoCf4SlYs2ipatD/+5nQx73aw=",
       "dependencies": []
+    },
+    "typelevel-prelude": {
+      "type": "registry",
+      "version": "7.0.0",
+      "integrity": "sha256-+pHi14/40mTj/+lmCWqL0T7iXIXD1+NSg/KItyyoB0A=",
+      "dependencies": [
+        "prelude",
+        "type-equality"
+      ]
     },
     "unfoldable": {
       "type": "registry",

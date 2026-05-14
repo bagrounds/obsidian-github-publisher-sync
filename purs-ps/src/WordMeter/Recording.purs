@@ -30,7 +30,6 @@ module WordMeter.Recording
   , diagnosticsText
   , idleCopyStatus
   , toPersistedData
-  , encodePersistedData
   , resetConfirmationPrompt
   ) where
 
@@ -39,9 +38,8 @@ import Prelude
 import Data.Array (filter, foldl, takeEnd)
 import Data.Array (length) as Array
 import Data.Int as Int
-import Data.Maybe (Maybe(..), fromMaybe)
+import Data.Maybe (Maybe(..))
 import Data.Number (isFinite)
-import Data.String.Common (joinWith)
 import Effect (Effect)
 import WordMeter.Clock (formatClockTime)
 import WordMeter.Diagnostics
@@ -95,26 +93,15 @@ type WordEvent =
   , wordCount :: Int
   }
 
--- | One completed counting session: a single start-to-stop listening
--- | interval, with the word count accumulated while listening. WPM is
--- | derived on demand from `intervalRate`, not stored.
 type LoggedInterval =
   { startedAt :: Number
   , endedAt :: Number
   , wordCount :: Int
   }
 
--- | The slice of session state that survives across page reloads /
--- | tab unloads via `localStorage`. Diagnostics, captions, listening
--- | flag, and clock are intentionally **not** persisted — they are
--- | either ephemeral or rebuilt from environment on startup.
--- |
--- | `firstStartedAt` uses a `NaN` sentinel for "never started" so the
--- | record round-trips cleanly through JS / JSON (which has no
--- | first-class `Maybe`).
 type PersistedData =
   { totalWords :: Int
-  , firstStartedAt :: Number
+  , firstStartedAt :: Maybe Number
   , wordEvents :: Array WordEvent
   , eventLog :: Array LoggedInterval
   }
@@ -161,8 +148,6 @@ type Handlers =
 idleCopyStatus :: String
 idleCopyStatus = ""
 
--- | The destructive-action confirmation shown when the user taps
--- | the reset button.
 resetConfirmationPrompt :: String
 resetConfirmationPrompt =
   "Reset all word meter stats? This cannot be undone."
@@ -290,10 +275,7 @@ reduce (Reset timestamp) session =
       }
 reduce (LoadSession persisted) session = session
   { totalWords = max 0 persisted.totalWords
-  , firstStartedAt =
-      if isFinite persisted.firstStartedAt
-        then Just persisted.firstStartedAt
-        else Nothing
+  , firstStartedAt = persisted.firstStartedAt
   , wordEvents = persisted.wordEvents
   , eventLog = takeEnd eventLogLimit persisted.eventLog
   , currentIntervalWords = 0
@@ -301,57 +283,13 @@ reduce (LoadSession persisted) session = session
   , listening = false
   }
 
--- | Project the persistable slice out of the live session. Diagnostics,
--- | captions, environment, listening flag, and clock are deliberately
--- | excluded — see `PersistedData`.
 toPersistedData :: Session -> PersistedData
 toPersistedData session =
   { totalWords: session.totalWords
-  , firstStartedAt: fromMaybe (0.0 / 0.0) session.firstStartedAt
+  , firstStartedAt: session.firstStartedAt
   , wordEvents: session.wordEvents
   , eventLog: session.eventLog
   }
-
--- | Hand-rolled JSON encoder for `PersistedData`. The payload is all
--- | numbers / ints / nested records of numbers, so there are no string
--- | values to escape. Pairing with `WordMeter.FFI.Storage` for the
--- | decode side keeps the JSON round-trip in one file's worth of code.
-encodePersistedData :: Int -> PersistedData -> String
-encodePersistedData version persisted =
-  let
-    fields =
-      [ "\"version\":" <> show version
-      , "\"totalWords\":" <> show persisted.totalWords
-      , "\"firstStartedAt\":" <> encodeMaybeNumber persisted.firstStartedAt
-      , "\"wordEvents\":" <> encodeWordEvents persisted.wordEvents
-      , "\"eventLog\":" <> encodeEventLog persisted.eventLog
-      ]
-  in
-    "{" <> joinWith "," fields <> "}"
-
-encodeMaybeNumber :: Number -> String
-encodeMaybeNumber n = if isFinite n then show n else "null"
-
-encodeWordEvents :: Array WordEvent -> String
-encodeWordEvents events =
-  "[" <> joinWith "," (map encodeWordEvent events) <> "]"
-
-encodeWordEvent :: WordEvent -> String
-encodeWordEvent event =
-  "{\"timestamp\":" <> show event.timestamp
-    <> ",\"wordCount\":" <> show event.wordCount
-    <> "}"
-
-encodeEventLog :: Array LoggedInterval -> String
-encodeEventLog intervals =
-  "[" <> joinWith "," (map encodeInterval intervals) <> "]"
-
-encodeInterval :: LoggedInterval -> String
-encodeInterval interval =
-  "{\"startedAt\":" <> show interval.startedAt
-    <> ",\"endedAt\":" <> show interval.endedAt
-    <> ",\"wordCount\":" <> show interval.wordCount
-    <> "}"
 
 pruneEvents :: Number -> Array WordEvent -> Array WordEvent
 pruneEvents nowMs = filter (\event -> event.timestamp >= nowMs - longWindowMs)

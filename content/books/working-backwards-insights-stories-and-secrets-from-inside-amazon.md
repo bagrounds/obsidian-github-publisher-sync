@@ -9,9 +9,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-24T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-05-14T20:44:25Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A high-angle, minimalist workspace featuring a clean, modern desk. In the center, a crisp, blank document rests on a wooden surface, representing a six-page narrative. A single, elegant fountain pen lies beside it. To the side, a conceptual illustration of a path winding backward from a glowing, abstract finished product toward a series of organized building blocks or gears. The lighting is soft and professional, utilizing a warm, sophisticated color palette of deep blues, charcoal, and subtle gold accents to evoke a corporate, innovative atmosphere. The composition is uncluttered, emphasizing clarity, structural thinking, and the working backwards methodology through geometric shapes and clean, sharp lines.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 💼🔙📦 Working Backwards: Insights, Stories, and Secrets from Inside Amazon  
+![books-working-backwards-insights-stories-and-secrets-from-inside-amazon](../books-working-backwards-insights-stories-and-secrets-from-inside-amazon.jpg)  
 [🛒 Working Backwards: Insights, Stories, and Secrets from Inside Amazon. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3Sw6siY)  
   
 ## 📚 Book Report: Working Backwards: Insights, Stories, and Secrets from Inside Amazon  

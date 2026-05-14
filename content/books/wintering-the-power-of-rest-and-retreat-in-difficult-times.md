@@ -10,9 +10,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-17T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-05-14T20:44:21Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A solitary, cozy armchair sits beside a large, frost-dusted window overlooking a serene, snow-covered forest at dusk. The room is dimly lit by the warm, soft glow of a nearby fireplace, casting long, gentle shadows across a wooden floor. A thick, knitted wool blanket is draped messily over the chair, and a steaming ceramic mug rests on a small side table nearby. Outside, the trees are heavy with snow, and the sky transitions from deep indigo to a faint, muted violet. The overall aesthetic is minimalist and atmospheric, emphasizing quiet stillness, introspection, and the comforting contrast between the harsh, cold exterior and the warm, sheltered interior.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🥶🛌 Wintering: The Power of Rest and Retreat in Difficult Times  
+![books-wintering-the-power-of-rest-and-retreat-in-difficult-times](../books-wintering-the-power-of-rest-and-retreat-in-difficult-times.jpg)  
 [🛒 Wintering: The Power of Rest and Retreat in Difficult Times. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/43I7HAG)  
   
 ## 📚 Book Report: ❄️ Wintering: The Power of Rest and Retreat in Difficult Times  

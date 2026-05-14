@@ -6,9 +6,17 @@ URL: https://bagrounds.org/books/you-arent-a-lazy-piece-of-sht-from-procrastinat
 share: true
 affiliate link: https://amzn.to/40q5zwS
 CTA: 🚀 Conquer inaction.
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_time: 2026-04-26T00:00:00Z
+force_analyze_links: false
+link_analysis_version: "2"
+image_date: 2026-05-14T22:38:35Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A high-contrast, minimalist illustration featuring a tangled, messy ball of gray yarn sitting on one side of a desk, symbolizing mental clutter and stagnation. Emerging from the center of this knot is a single, vibrant, glowing thread that transforms into a straight, clean line leading toward a bright, open doorway on the other side of the frame. The background is a soft, muted gradient transitioning from a heavy, shadowy charcoal at the bottom to a crisp, optimistic off-white at the top. The overall aesthetic is clean, modern, and metaphorical, focusing on the transition from chaotic paralysis to intentional, focused movement without using any text.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🫵🚫🦥🧩💩 You Aren't A Lazy Piece of Sh!t: From Procrastination to Productivity  
+![books-you-arent-a-lazy-piece-of-sht-from-procrastination-to-productivity](../books-you-arent-a-lazy-piece-of-sht-from-procrastination-to-productivity.jpg)  
 [🛒 You Aren't A Lazy Piece of Sh!t: From Procrastination to Productivity. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/40q5zwS)  
   
 ## 🍑 A Kick in the Pants for Procrastinators: A Report on "You Aren't A Lazy Piece of Sh!t"  

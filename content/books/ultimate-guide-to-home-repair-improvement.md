@@ -10,9 +10,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-18T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-05-13T20:43:48Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: "A clean, bright workspace featuring a wooden workbench illuminated by soft, natural light. Spread across the surface are essential home repair tools: a silver hammer, a tape measure, a pair of pliers, a screwdriver, and a clear safety goggle set. Beside the tools lies an open, thick hardcover reference book with detailed technical diagrams and illustrations visible on the pages. In the background, a slightly blurred view of a residential wall with exposed studs or a partially finished home improvement project adds depth. The color palette consists of warm wood tones, cool metallic grays, and pops of vibrant orange or blue from the tool handles, creating a professional yet inviting atmosphere centered on DIY craftsmanship."
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🏠🛠️ Ultimate Guide to Home Repair & Improvement  
+![books-ultimate-guide-to-home-repair-improvement](../books-ultimate-guide-to-home-repair-improvement.jpg)  
 [🛒 Ultimate Guide to Home Repair & Improvement. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3Ots40s)  
   
 🛠️🏡💡 Master your home with this encyclopedic guide covering virtually every repair and improvement project, equipping you with practical skills and money-saving solutions for common household issues.  

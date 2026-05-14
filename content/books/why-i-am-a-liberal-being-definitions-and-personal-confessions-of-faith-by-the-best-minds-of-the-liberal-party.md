@@ -10,9 +10,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-22T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-05-14T15:07:08Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A stylized illustration featuring the silhouette of a grand, classical building facade (evoking a parliament or library) against a soft, sunlit horizon. In the foreground, a prominent, perfectly balanced scale of justice is depicted. One pan holds an open, aged book with pages slightly fanning out, paired with a delicate quill pen. The other pan cradles a stylized torch, its flame burning brightly and pointing upwards. Subtle, flowing lines connect these elements, suggesting ideas and debate. The color palette is rich yet muted, with accents of gold and warm light.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🙋‍♂️🏛️ Why I Am a Liberal: Being Definitions and Personal Confessions of Faith by the Best Minds of the Liberal Party  
+![books-why-i-am-a-liberal-being-definitions-and-personal-confessions-of-faith-by-the-best-minds-of-the-liberal-party](../books-why-i-am-a-liberal-being-definitions-and-personal-confessions-of-faith-by-the-best-minds-of-the-liberal-party.jpg)  
 [🛒 Why I Am a Liberal: Being Definitions and Personal Confessions of Faith by the Best Minds of the Liberal Party. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/47JFbma)  
   
 ## 📖 Book Report: Why I Am a Liberal  

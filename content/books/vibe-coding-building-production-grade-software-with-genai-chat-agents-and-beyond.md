@@ -12,9 +12,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-16T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-05-14T03:19:56Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A stylized, minimalist illustration of a digital workspace. In the center, a glowing, translucent human silhouette sits at a desk, composed of soft, ethereal light particles. Instead of a traditional keyboard, the silhouette’s hands are interacting with a floating, holographic interface of interconnected nodes, flowing lines of code, and architectural blueprints that pulse with a soft, neon blue and violet gradient. Surrounding the figure are abstract geometric shapes representing AI agents—small, orbiting spheres of light that seem to be weaving the code into a complex, stable structure. The background is a deep, dark navy, providing high contrast to the vibrant, energized glow of the creation process, conveying a sense of modern, high-speed, and creative software orchestration.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🤖💻 Vibe Coding: Building Production-Grade Software With GenAI, Chat, Agents, and Beyond  
+![books-vibe-coding-building-production-grade-software-with-genai-chat-agents-and-beyond](../books-vibe-coding-building-production-grade-software-with-genai-chat-agents-and-beyond.jpg)  
 [🛒 Vibe Coding: Building Production-Grade Software With GenAI, Chat, Agents, and Beyond. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3Lam2Av)  
   
 ✨ AI assists developers to prioritize intent and flow over syntax, drastically boosting productivity, creativity, and joy.  

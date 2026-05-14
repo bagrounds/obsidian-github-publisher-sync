@@ -10,9 +10,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-25T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-05-14T23:33:38Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: "A vibrant, stylized illustration of a human head in profile, composed of intricate, glowing circuit-board patterns and colorful constellations. Instead of a solid, rigid structure, the brain area is depicted as a beautiful, glowing network of interconnected nodes and flowing pathways, suggesting a complex, non-linear way of thinking. Soft, warm light radiates from the center, casting a gentle glow on the surroundings. Scattered around the profile are abstract, floating elements representing balance and navigation: a compass needle, a small prism splitting light into a spectrum, and soft geometric shapes representing organization. The background is a deep, calming navy blue, providing a high-contrast backdrop that makes the vibrant, energetic colors of the brain network pop, symbolizing clarity, neurodiversity, and a path forward."
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🧠🧭⚡ Your Brain's Not Broken: Strategies for Navigating Your Emotions and Life with ADHD  
+![books-your-brains-not-broken-strategies-for-navigating-your-emotions-and-life-with-adhd](../books-your-brains-not-broken-strategies-for-navigating-your-emotions-and-life-with-adhd.jpg)  
 [🛒 Your Brain's Not Broken: Strategies for Navigating Your Emotions and Life with ADHD. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3NU3aXM)  
   
 🧠💡💖 Reframes ADHD from a deficit to a difference, providing actionable strategies to understand and manage ADHD-related emotional dysregulation and executive function challenges for a more compassionate and effective life.  

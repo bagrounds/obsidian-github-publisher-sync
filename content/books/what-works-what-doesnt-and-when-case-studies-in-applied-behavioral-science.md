@@ -6,9 +6,17 @@ URL: https://bagrounds.org/books/what-works-what-doesnt-and-when-case-studies-in
 share: true
 affiliate link: https://amzn.to/4lYJxJV
 CTA: 💡 Implement proven strategies.
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_time: 2026-04-26T00:00:00Z
+force_analyze_links: false
+link_analysis_version: "2"
+image_date: 2026-05-14T09:55:53Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: "A minimalist, high-contrast illustration featuring a stylized laboratory beaker in the center. The beaker is filled with swirling, colorful liquids representing data patterns. Emerging from the top of the beaker are three distinct, glowing icons: a green checkmark, a red X, and a gold hourglass. The background is a clean, neutral matte grey, suggesting a professional research environment. The lighting is soft and focused, casting subtle shadows that give the objects a tactile, 3D quality. The overall aesthetic is sleek, academic, and modern, utilizing a limited color palette of deep navy, vibrant emerald, and warm amber to emphasize the analytical nature of behavioral science."
 ---
 [Home](../index.md) > [Books](./index.md)  
 # ✅❌⏳ What Works, What Doesn't, and When: Case Studies in Applied Behavioral Science  
+![books-what-works-what-doesnt-and-when-case-studies-in-applied-behavioral-science](../books-what-works-what-doesnt-and-when-case-studies-in-applied-behavioral-science.jpg)  
 [🛒 What Works, What Doesn't, and When: Case Studies in Applied Behavioral Science. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4lYJxJV)  
   
 ## 🌍 In the Unpredictable World of Nudges, What Works, What Doesn't, and When?  

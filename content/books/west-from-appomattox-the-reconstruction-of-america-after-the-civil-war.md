@@ -10,9 +10,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-14T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-05-14T08:13:51Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A split-composition image illustrating the transition from the Civil War to the American West. On the left, a weathered, dark-toned landscape features the faint silhouette of a battlefield with remnants of a broken fence and a tattered flag. This transitions across the center into a bright, expansive golden-hued Western horizon. A single, sturdy railroad track cuts diagonally through the center, leading the eye toward the setting sun over distant mountains. In the foreground, a stack of wooden crates and a rusted iron hammer rest on the dusty earth, symbolizing the physical labor of reconstruction and expansion. The art style is reminiscent of 19th-century oil paintings, focusing on dramatic lighting, long shadows, and the contrast between the somber, fractured past and the ambitious, rugged promise of the frontier.
 ---
 [Home](../index.md) > [Books](./index.md) I [🏛️🇺🇸📖 Heather Cox Richardson](../people/heather-cox-richardson.md)  
 # 🇺🇸➡️🔨 West from Appomattox: The Reconstruction of America After the Civil War  
+![books-west-from-appomattox-the-reconstruction-of-america-after-the-civil-war](../books-west-from-appomattox-the-reconstruction-of-america-after-the-civil-war.jpg)  
 [🛒 West from Appomattox: The Reconstruction of America After the Civil War. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4oTF6RQ)  
   
 🇺🇸 Reconstruction was a prolonged, national process, stretching beyond the South and into the American West, shaping the rise of a contradictory middle-class identity and federal power dynamics still felt today.  

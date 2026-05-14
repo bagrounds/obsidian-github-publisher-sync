@@ -10,9 +10,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-19T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-05-13T19:45:12Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A minimalist, high-contrast illustration featuring two hands reaching toward each other in a gesture of a firm, supportive handshake. The hands are rendered in clean, geometric lines, emerging from a backdrop of intricate, interconnected golden nodes and thin, flowing lines that represent a complex social network or web. The color palette consists of deep navy and charcoal for the background to signify stability, contrasted with vibrant gold and warm amber for the hands and the network, symbolizing the value and radiance of social capital. The composition is balanced and symmetrical, emphasizing the strength of the connection. The overall aesthetic is modern, sophisticated, and professional, evoking a sense of structural integrity and human cooperation.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🤝😇💰 Trust: The Social Virtues and the Creation of Prosperity  
+![books-trust-the-social-virtues-and-the-creation-of-prosperity](../books-trust-the-social-virtues-and-the-creation-of-prosperity.jpg)  
 [🛒 Trust: The Social Virtues and the Creation of Prosperity. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4kLuFOm)  
   
 ## 📖 Book Report: 🤝 Trust: The Social Virtues and the Creation of Prosperity  

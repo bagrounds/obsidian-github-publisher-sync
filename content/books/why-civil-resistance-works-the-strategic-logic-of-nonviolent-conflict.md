@@ -10,9 +10,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-17T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-05-14T16:00:35Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A wide-angle, cinematic illustration of a vast, diverse crowd of people standing together in a public square. The crowd is composed of individuals of varying ages, genders, and backgrounds, all standing peacefully with their hands raised or joined. The color palette is bright and hopeful, transitioning from soft morning light on one side to a golden, warm glow over the entire scene. In the foreground, a single, vibrant green sprout pushes up through the gray pavement, symbolizing growth and resilience. The composition emphasizes the sheer scale and unity of the collective, using a low-angle perspective to make the people look powerful and immovable. The background features blurred, classical architecture, suggesting a setting of historical or political significance without being tied to a specific real-world location. The overall aesthetic is clean, modern, and inspiring.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🕊️💪 Why Civil Resistance Works: The Strategic Logic of Nonviolent Conflict  
+![books-why-civil-resistance-works-the-strategic-logic-of-nonviolent-conflict](../books-why-civil-resistance-works-the-strategic-logic-of-nonviolent-conflict.jpg)  
 [🛒 Why Civil Resistance Works: The Strategic Logic of Nonviolent Conflict. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3L65VDL)  
   
 ### 🏆 Chenoweth & Stephan's Civil Resistance Strategy  

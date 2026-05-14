@@ -9,9 +9,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-23T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-05-14T09:55:51Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A vibrant, thriving landscape bathed in warm, optimistic light. In the foreground, lush, green regenerative farmlands with diverse crops transition into a clean, flowing river. On the horizon, a modern, eco-friendly city skyline emerges, featuring integrated green spaces, solar panels, and elegantly designed buildings that blend with nature. Above the city, sleek, white wind turbines gently turn against a clear, blue sky, while a few stylized, healthy trees frame the scene. The overall impression is one of harmonious coexistence between nature and human innovation, radiating hope and a bright future.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🌡️✅🌎 What If We Get It Right?: Visions of Climate Futures  
+![books-what-if-we-get-it-right-visions-of-climate-futures](../books-what-if-we-get-it-right-visions-of-climate-futures.jpg)  
 [🛒 What If We Get It Right?: Visions of Climate Futures. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3T4xv5a)  
   
 ## 📚 Book Report: What If We Get It Right?: Visions of Climate Futures by Ayana Elizabeth Johnson  

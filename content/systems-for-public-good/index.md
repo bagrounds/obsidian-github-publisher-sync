@@ -5,11 +5,13 @@ aliases:
 title: 🏛️ Systems for Public Good
 URL: https://bagrounds.org/systems-for-public-good
 backlinks: false
-updated: 2026-05-13T09:08:06-07:00
+updated: 2026-05-14T16:11:34-07:00
 ---
 [🏡 Home](../index.md)  
-# 🏛️ Systems for Public Good (52)  
+# 🏛️ Systems for Public Good (54)  
 - [🏛️ Systems for Public Good — AGENTS.md](./AGENTS.md)  
+- [2026-05-14 | 🏛️ ⚖️ Agile Governance for a Dynamic Digital Public Sphere 🏛️](./2026-05-14-agile-governance-for-a-dynamic-digital-public-sphere.md)  
+- [2026-05-13 | 🏛️ The Integrated Commons: Bridging Physical and Digital Public Goods 🏛️](./2026-05-13-the-integrated-commons-bridging-physical-and-digital-public-goods.md)  
 - [2026-05-12 | 🏛️ The Integrated Commons: Bridging Physical and Digital Public Goods 🏛️](./2026-05-12-the-integrated-commons-bridging-physical-and-digital-public-goods.md)  
 - [2026-05-11 | 🏛️ 💡 Cultivating the Informed Citizen: The Bedrock of Our Shared Future 🏛️](./2026-05-11-cultivating-the-informed-citizen-the-bedrock-of-our-shared-future.md)  
 - [2026-05-10 | 🏛️ 🗓️ This Week's Threads: Weaving the Foundations of a Shared Society 🏛️](./2026-05-10-this-week-s-threads-weaving-the-foundations-of-a-shared-society.md)  

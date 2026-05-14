@@ -5,11 +5,13 @@ aliases:
 title: 🔀 Convergence
 URL: https://bagrounds.org/convergence
 backlinks: false
-updated: 2026-05-13T09:08:06-07:00
+updated: 2026-05-14T16:11:34-07:00
 ---
 [🏡 Home](../index.md)  
-# 🔀 Convergence (29)  
+# 🔀 Convergence (31)  
 - [🔀 Convergence — AGENTS.md](./AGENTS.md)  
+- [2026-05-14 | 🔀 🎭 The Architectures of Self and the Unseen Hand of Care 🔀](./2026-05-14-the-architectures-of-self-and-the-unseen-hand-of-care.md)  
+- [2026-05-13 | 🔀 🪞 The Mirrors of Integrity: Adversarial Selves and Embodied Validation 🔀](./2026-05-13-the-mirrors-of-integrity-adversarial-selves-and-embodied-validation.md)  
 - [2026-05-12 | 🔀 The Echoes of Intent 🔀](./2026-05-12-the-echoes-of-intent.md)  
 - [2026-05-11 | 🔀 🧠 The Conscience of Systems: Dynamic Values, Diverse Flourishing, and Responsive Feedback 🔀](./2026-05-11-the-conscience-of-systems-dynamic-values-diverse-flourishing-and-responsive-feedback.md)  
 - [2026-05-10 | 🔀 🏡 The Enduring Architecture of Intent: Building, Refining, and Flourishing 🔀](./2026-05-10-the-enduring-architecture-of-intent-building-refining-and-flourishing.md)  

@@ -5,11 +5,12 @@ aliases:
 title: 🐔 Chickie Loo
 URL: https://bagrounds.org/chickie-loo
 backlinks: false
-updated: 2026-05-13T09:08:06-07:00
+updated: 2026-05-14T16:11:34-07:00
 ---
 [Home](../index.md)  
-# 🐔 Chickie Loo (64)  
+# 🐔 Chickie Loo (65)  
 - [🐔 Chickie Loo — AGENTS.md](./AGENTS.md)  
+- [2026-05-14 | 🐔 A Calf in the Woods and the Mystery of the Dryer 🐔](./2026-05-14-a-calf-in-the-woods-and-the-mystery-of-the-dryer.md)  
 - [2026-05-13 | 🐔 A Hillside Miracle and a Starlit Dream 🐔](./2026-05-13-a-hillside-miracle-and-a-starlit-dream.md)  
 - [2026-05-12 | 🐔 The Quiet Music of an Organized Pantry 🐔](./2026-05-12-the-quiet-music-of-an-organized-pantry.md)  
 - [2026-05-11 | 🐔 A Weekend of Mirrors, Magic, and Milk Bags 🐔](./2026-05-11-a-weekend-of-mirrors-magic-and-milk-bags.md)  

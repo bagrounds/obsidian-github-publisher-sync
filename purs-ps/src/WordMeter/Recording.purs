@@ -3,6 +3,7 @@ module WordMeter.Recording
   , Caption
   , WordEvent
   , LoggedInterval
+  , PersistedData
   , Action(..)
   , Dispatch
   , Handlers
@@ -28,6 +29,8 @@ module WordMeter.Recording
   , formatDurationMs
   , diagnosticsText
   , idleCopyStatus
+  , toPersistedData
+  , resetConfirmationPrompt
   ) where
 
 import Prelude
@@ -90,13 +93,17 @@ type WordEvent =
   , wordCount :: Int
   }
 
--- | One completed counting session: a single start-to-stop listening
--- | interval, with the word count accumulated while listening. WPM is
--- | derived on demand from `intervalRate`, not stored.
 type LoggedInterval =
   { startedAt :: Number
   , endedAt :: Number
   , wordCount :: Int
+  }
+
+type PersistedData =
+  { totalWords :: Int
+  , firstStartedAt :: Maybe Number
+  , wordEvents :: Array WordEvent
+  , eventLog :: Array LoggedInterval
   }
 
 captionWindowMs :: Number
@@ -127,16 +134,23 @@ data Action
   | RecordDiagnostic Number String String
   | SetEnvironment EnvironmentSnapshot
   | SetCopyStatus String
+  | Reset Number
+  | LoadSession PersistedData
 
 type Dispatch = Action -> Effect Unit
 
 type Handlers =
   { requestToggle :: Effect Unit
   , requestCopyDiagnostics :: Effect Unit
+  , requestReset :: Effect Unit
   }
 
 idleCopyStatus :: String
 idleCopyStatus = ""
+
+resetConfirmationPrompt :: String
+resetConfirmationPrompt =
+  "Reset all word meter stats? This cannot be undone."
 
 initialSession :: Session
 initialSession =
@@ -248,6 +262,33 @@ reduce (SetEnvironment snapshot) session = session
   }
 reduce (SetCopyStatus message) session = session
   { copyStatus = message
+  }
+reduce (Reset timestamp) session =
+  let
+    resetEntry =
+      { timestamp, label: "reset", detail: "stats cleared" }
+  in
+    initialSession
+      { now = timestamp
+      , diagnostics = recordEntry resetEntry session.diagnostics
+      , environment = session.environment
+      }
+reduce (LoadSession persisted) session = session
+  { totalWords = max 0 persisted.totalWords
+  , firstStartedAt = persisted.firstStartedAt
+  , wordEvents = persisted.wordEvents
+  , eventLog = takeEnd eventLogLimit persisted.eventLog
+  , currentIntervalWords = 0
+  , currentIntervalStart = Nothing
+  , listening = false
+  }
+
+toPersistedData :: Session -> PersistedData
+toPersistedData session =
+  { totalWords: session.totalWords
+  , firstStartedAt: session.firstStartedAt
+  , wordEvents: session.wordEvents
+  , eventLog: session.eventLog
   }
 
 pruneEvents :: Number -> Array WordEvent -> Array WordEvent
@@ -361,6 +402,7 @@ view handlers session =
     , buildCount session
     , buildCountLabel
     , buildToggle handlers session
+    , buildReset handlers
     , buildStats session
     , buildCaptions session
     , buildEventLog session
@@ -422,6 +464,24 @@ buildToggle handlers session =
     ]
     [ onClick handlers.requestToggle ]
     [ text (if session.listening then "Stop counting" else "Start counting") ]
+
+buildReset :: Handlers -> Node
+buildReset handlers =
+  button
+    [ testId "wm-reset", buttonType "button" ]
+    [ style "margin-top" "8px"
+    , style "margin-left" "8px"
+    , style "padding" "8px 14px"
+    , style "border-radius" "999px"
+    , style "border" "1px solid rgba(255,255,255,0.18)"
+    , style "background" "transparent"
+    , style "color" "#e6edf3"
+    , style "cursor" "pointer"
+    , style "font" "inherit"
+    , style "font-size" "13px"
+    ]
+    [ onClick handlers.requestReset ]
+    [ text "Reset" ]
 
 buildStats :: Session -> Node
 buildStats session =

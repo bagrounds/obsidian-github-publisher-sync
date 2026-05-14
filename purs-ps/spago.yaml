@@ -13,6 +13,8 @@ package:
     - refs
     - transformers
     - identity
+    - argonaut-core
+    - argonaut-codecs
   test:
     main: Test.Main
     dependencies:
@@ -27,6 +29,8 @@ package:
       - either
       - identity
       - transformers
+      - argonaut-core
+      - argonaut-codecs
 workspace:
   packageSet:
     registry: 76.2.1

@@ -10,9 +10,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-19T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-05-14T05:30:50Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A high-contrast, conceptual illustration featuring a weathered military medal pinned to a crisp, expensive-looking pinstriped suit jacket. The ribbon of the medal is fraying and worn, subtly morphing into a trail of gold coins that spill out of a deep pocket. In the background, a silhouette of a factory chimney belches dark smoke that transforms into the faint, ghostly shape of a battlefield trench. The lighting is moody and noir-inspired, with deep shadows and sharp highlights emphasizing the juxtaposition between the hollow prestige of war and the cold, mechanical greed driving it. The color palette is restricted to charcoal greys, dusty olive greens, and metallic gold accents.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # ⚔️💰 War Is a Racket  
+![books-war-is-a-racket](../books-war-is-a-racket.jpg)  
 [🛒 War Is a Racket. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/45qLk4s)  
   
 💸💔🌍 War is a profit-driven enterprise benefiting a powerful few at immense cost to the many, cloaked in patriotism.  

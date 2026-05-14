@@ -9,9 +9,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-19T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-05-13T18:52:28Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: An atmospheric, high-contrast illustration featuring two weathered hands reaching toward each other in a gesture of a handshake, but constructed from fragmented, overlapping layers of ancient parchment, worn stone, and modern metallic clockwork gears. The background is a soft, moody gradient of deep indigo fading into warm amber, suggesting the passage of time. Subtle, glowing geometric lines trace connections between the hands, symbolizing the invisible structures—religion, law, and currency—that bind society together. The overall aesthetic is intellectual and timeless, blending the tactile texture of a historical archive with the clean, conceptual precision of a sociological diagram.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🤝📜 Trust: A History  
+![books-trust-a-history](../books-trust-a-history.jpg)  
 [🛒 Trust: A History. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/43MZpb3)  
   
 ## 📚 Book Report: 🤝 Trust: A History by Geoffrey Hosking  

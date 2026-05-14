@@ -9,9 +9,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-16T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-05-14T18:36:53Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A minimalist, high-contrast illustration featuring a stylized human profile in deep silhouette against a dark, midnight-blue background. Inside the silhouette, the brain is represented as a glowing, intricate network of soft, interconnected golden neurons, suggesting active processing and memory consolidation. Swirling, ethereal nebula-like clouds in shades of indigo, soft violet, and faint starlight emanate from the head, symbolizing the abstract nature of dreams and restorative sleep cycles. The composition is balanced and serene, utilizing clean lines and a dreamy, atmospheric aesthetic to emphasize the restorative power of rest without the need for text.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 😴💭 Why We Sleep: Unlocking the Power of Sleep and Dreams  
+![books-why-we-sleep-unlocking-the-power-of-sleep-and-dreams](../books-why-we-sleep-unlocking-the-power-of-sleep-and-dreams.jpg)  
 [🛒 Why We Sleep: Unlocking the Power of Sleep and Dreams. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3Zbdk9l)  
   
 ## 😴 Book Report: Why We Sleep by Matthew Walker  

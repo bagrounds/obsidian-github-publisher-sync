@@ -10,9 +10,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-22T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-05-13T21:45:28Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A split-screen illustration featuring two stylized, faceless human silhouettes facing away from each other. Each figure is composed of a complex mosaic of smaller icons representing different social markers—religious symbols, cultural artifacts, geometric shapes, and varied textures. The background is a soft, neutral gradient that sharply divides into two distinct, contrasting hues at the center line where the figures meet. Floating between the two silhouettes, a tangled, knotted string represents the complex, messy intertwining of these identities. The overall aesthetic is clean, minimalist, and conceptual, using high-contrast colors to emphasize the theme of tribalism and social sorting without relying on specific political imagery or text.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 😠🎭 Uncivil Agreement: How Politics Became Our Identity  
+![books-uncivil-agreement-how-politics-became-our-identity](../books-uncivil-agreement-how-politics-became-our-identity.jpg)  
 [🛒 Uncivil Agreement: How Politics Became Our Identity. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/42q6IFp)  
   
 ## 📚 Book Report: 😠 Uncivil Agreement: 🇺🇸 How Politics Became Our Identity  

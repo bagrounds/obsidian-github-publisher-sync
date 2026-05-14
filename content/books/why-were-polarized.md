@@ -12,9 +12,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-18T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-05-14T18:51:09Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A conceptual illustration featuring a vast, flat landscape split down the center by a jagged, glowing fissure. On one side, a cluster of cool-toned, blue-tinted geometric shapes are tightly packed together; on the other, a cluster of warm-toned, red-tinted shapes are similarly compressed. The two groups are facing away from each other, connected only by thin, tangled, and frayed wires that span the divide. In the background, a soft, neutral-colored sky fades from a deep, stormy gray to a light, hazy horizon, suggesting the vastness of the space between the two sides. The art style is clean, modern, and minimalist, using high-contrast lighting to emphasize the physical and emotional distance between the two camps.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # ↔️ Why We're Polarized  
+![books-why-were-polarized](../books-why-were-polarized.jpg)  
 [🛒 Why We're Polarized. As an Amazon Associate I earn from qualifying purchases.](https://www.amazon.com/dp/1476700362?tag=bagrounds-20)  
 👯 Identity politics and sorting mechanisms explain America's deepening partisan divide, driven by group-based animosity rather than ideological disagreement.  
   

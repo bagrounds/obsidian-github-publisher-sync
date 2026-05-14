@@ -12,9 +12,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-16T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-05-13T22:40:55Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A minimalist, high-contrast illustration featuring a stylized, glowing government building (such as a neoclassical capitol) at the center. From the base of the building, a golden stream of digital binary code and currency symbols flows outward, transforming into a complex, interconnected web of gears and circuits that span the entire frame. The background is a deep, professional navy blue, providing a sharp contrast to the metallic gold and soft white light emanating from the central structure. The composition is clean and geometric, emphasizing the intersection of institutional authority and the modern, technological nature of currency. The overall aesthetic is sophisticated, academic, and conceptual.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 💰📈🤔 Understanding Modern Money  
+![books-understanding-modern-money](../books-understanding-modern-money.jpg)  
 [🛒 Understanding Modern Money. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4jvn99m)  
   
 ## 🤖 AI Summary  

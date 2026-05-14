@@ -10,9 +10,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-20T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-05-14T11:44:21Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A high-contrast, minimalist illustration featuring a set of polished brass scales of justice sitting atop a dark, mahogany desk. One side of the scale is weighted down by a heavy, leather-bound legal file, while the other side is slightly elevated, holding a single, glowing red wax seal. In the background, a single shaft of cool, sharp light cuts through a dimly lit, shadowy office, illuminating dust motes dancing in the air. The overall atmosphere is tense, professional, and investigative, utilizing a moody color palette of deep navy, charcoal, and muted gold to emphasize the weight of institutional scrutiny and the blurred lines of legal authority.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🇺🇸🕵️‍♂️🚫 Where Law Ends: Inside the Mueller Investigation  
+![books-where-law-ends-inside-the-mueller-investigation](../books-where-law-ends-inside-the-mueller-investigation.jpg)  
 [🛒 Where Law Ends: Inside the Mueller Investigation. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4hdwAKS)  
   
 🛑 Andrew Weissmann's *Where Law Ends: Inside the Mueller Investigation* offers a critical, insider account of the Special Counsel's probe into Russian interference and obstruction of justice, revealing internal debates and lamenting what the team perceived as self-imposed limitations and external political interference.  

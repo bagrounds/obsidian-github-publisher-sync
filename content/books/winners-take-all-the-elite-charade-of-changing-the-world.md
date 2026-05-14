@@ -10,9 +10,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-16T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-05-14T19:47:35Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A high-contrast conceptual illustration featuring a polished, golden theater mask resting on a rough, weathered stone pedestal. The mask is pristine and reflects a distorted, opulent cityscape in its surface, while the pedestal sits atop a cracked and uneven foundation of dark, heavy iron gears. In the background, a subtle, ethereal fog obscures a sprawling, abstract diagram of social hierarchies and wealth distribution. The color palette consists of deep charcoal, slate gray, and muted gold accents. The lighting is dramatic and cinematic, casting long, sharp shadows that emphasize the tension between the gleaming, superficial surface of the mask and the rigid, industrial complexity of the base below.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🏆🎭 Winners Take All: The Elite Charade of Changing the World  
+![books-winners-take-all-the-elite-charade-of-changing-the-world](../books-winners-take-all-the-elite-charade-of-changing-the-world.jpg)  
 [🛒 Winners Take All: The Elite Charade of Changing the World. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/49jmczi)  
   
 🥇 Global elites' philanthropic efforts and market-driven solutions often preserve the very systemic inequalities they ostensibly aim to fix, rather than promoting genuine, transformative change.  

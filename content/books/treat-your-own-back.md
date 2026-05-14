@@ -9,9 +9,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-20T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-05-13T18:01:11Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A clean, minimalist illustration featuring a stylized human silhouette in a gentle, upright posture. The spine is highlighted with a soft, glowing gradient line that transitions from a warm amber at the base to a soothing cool blue at the top, representing the relief of tension. The background is a soft, neutral matte color, perhaps a muted sage or warm gray, to convey a clinical yet calming environment. To the side, a simple, elegant lumbar roll icon rests on a modern chair outline, subtly suggesting ergonomic support. The overall aesthetic is professional, airy, and focused on physical alignment, using a soft color palette to evoke a sense of healing and empowerment.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🍬🫵🔙 Treat Your Own Back  
+![books-treat-your-own-back](../books-treat-your-own-back.jpg)  
 [🛒 Treat Your Own Back. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/46e59NA)  
   
 ## 📖 Book Report: Treat Your Own Back by Robin McKenzie  

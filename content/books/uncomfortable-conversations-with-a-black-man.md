@@ -12,9 +12,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-19T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-05-13T21:45:32Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A minimalist, high-contrast illustration featuring two empty chairs facing each other across a simple wooden table. One chair is bathed in warm, soft light, while the other is cast in a slightly cooler, neutral tone, emphasizing the space between them. The background is a clean, solid, muted earth tone that suggests a quiet, reflective environment. In the center of the table sits a single, glowing lightbulb, serving as a metaphor for enlightenment and the spark of honest communication. The overall style is clean, modern, and vector-based, using clean lines and a sophisticated, subdued color palette to evoke a sense of focused, intentional dialogue and bridge-building.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 😬👨🏿 Uncomfortable Conversations With A Black Man  
+![books-uncomfortable-conversations-with-a-black-man](../books-uncomfortable-conversations-with-a-black-man.jpg)  
 [🛒 Uncomfortable Conversations With A Black Man. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3WMLCxX)  
   
 ## 📖 Book Report: 🗣️ Uncomfortable Conversations With A Black Man  

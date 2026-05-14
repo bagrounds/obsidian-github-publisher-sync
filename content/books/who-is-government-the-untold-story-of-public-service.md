@@ -10,9 +10,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-19T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-05-14T12:42:34Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A stylized, isometric illustration of a large, classic neoclassical government building with marble columns. The building is partially transparent, revealing a cross-section of its interior. Inside, various diverse individuals—ranging from a scientist in a lab coat, a technician with a tablet, to a park ranger and a data analyst—are depicted working diligently at their desks and stations. Warm, golden light emanates from within the structure, contrasting with a soft, neutral-toned exterior. The scene is clean, modern, and professional, emphasizing the human element behind the institution. The background is a minimalist, soft-blue gradient to keep the focus on the vibrant activity happening within the halls of service.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🏛️❓ Who Is Government?: The Untold Story of Public Service  
+![books-who-is-government-the-untold-story-of-public-service](../books-who-is-government-the-untold-story-of-public-service.jpg)  
 [🛒 Who Is Government?: The Untold Story of Public Service. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3T5DPJJ)  
   
 ## 📚 Book Report: 🏛️ Who Is Government?: 📜 The Untold Story of Public Service  

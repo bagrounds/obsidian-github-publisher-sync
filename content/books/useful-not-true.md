@@ -6,9 +6,17 @@ URL: https://bagrounds.org/books/useful-not-true
 share: true
 affiliate link: https://amzn.to/4lsbKc3
 CTA: ✅ Embrace paradox.
+link_analysis_model: gemini-3.1-flash-lite-preview
+link_analysis_time: 2026-04-26T00:00:00Z
+force_analyze_links: false
+link_analysis_version: "2"
+image_date: 2026-05-14T01:53:05Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A minimalist, high-contrast illustration featuring a wooden carpenter’s toolbox sitting on a plain, neutral surface. Inside the toolbox, instead of traditional hammers or wrenches, are abstract, glowing geometric shapes—spheres, cubes, and pyramids—representing different perspectives or beliefs. One of these shapes is being held up against a window, casting a colorful light onto the floor, symbolizing the act of choosing a tool for its utility rather than its inherent nature. The lighting is soft and contemplative, with a clean, modern aesthetic that emphasizes clarity and intellectual depth. The background is a muted, desaturated color to keep the focus entirely on the functional, symbolic nature of the objects.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # ✅🤔 Useful Not True  
+![books-useful-not-true](../books-useful-not-true.jpg)  
 [🛒 Useful Not True. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4lsbKc3)  
   
 ## 🧭 A Pragmatist's Guide to Reality: A Report on Derek Sivers' "Useful Not True"  

@@ -10,9 +10,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-24T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-05-14T11:44:18Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: "A high-contrast, artistic illustration showing a cracked, dry landscape on the left transitioning into a vibrant, lush garden on the right. In the center, two distinct paths diverge: one path leads into a dark, swirling storm of jagged shapes representing chaos, while the other path is a solid, stone-paved road leading toward a bright, sunlit horizon where diverse silhouettes of people stand together in a circle, holding hands. The color palette shifts from desaturated grays and deep shadows on the chaotic side to warm golds, greens, and soft blues on the side representing community. The overall composition is balanced, emphasizing the tension between societal fragmentation and the purposeful, collective effort required to build a unified future."
 ---
 [Home](../index.md) > [Books](./index.md)  
 # ❓🏘️ Where Do We Go from Here: Chaos or Community?  
+![books-where-do-we-go-from-here-chaos-or-community](../books-where-do-we-go-from-here-chaos-or-community.jpg)  
 [🛒 Where Do We Go from Here: Chaos or Community?. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/43a6Rxa)  
   
 ### 🏆 MLK's "Where Do We Go from Here" Blueprint  

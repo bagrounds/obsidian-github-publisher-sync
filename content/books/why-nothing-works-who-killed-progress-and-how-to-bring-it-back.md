@@ -10,9 +10,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-22T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-05-14T16:50:14Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A minimalist, high-contrast illustration featuring a large, unfinished skeletal structure of a bridge or skyscraper suspended in mid-air against a muted, overcast sky. In the foreground, a tangled, complex web of red tape and heavy iron chains wraps tightly around the base of the construction, preventing its completion. A single, vibrant green sprout pushes through a crack in the cold, gray concrete foundation near the base, symbolizing the potential for renewed growth. The overall aesthetic is clean and architectural, utilizing a palette of slate gray, deep charcoal, and sharp crimson accents to evoke a sense of stalled momentum, bureaucratic friction, and the quiet, persistent possibility of progress.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 📉❓ Why Nothing Works: Who Killed Progress - and How to Bring It Back  
+![books-why-nothing-works-who-killed-progress-and-how-to-bring-it-back](../books-why-nothing-works-who-killed-progress-and-how-to-bring-it-back.jpg)  
 [🛒 Why Nothing Works: Who Killed Progress - and How to Bring It Back. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4kFr9or)  
   
 ## 📚 Book Report: 🤔 Why 🚫 Nothing ⚙️ Works: 🔪 Who Killed 📈 Progress - and 💡 How to Bring It Back  

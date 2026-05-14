@@ -10,9 +10,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-14T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-05-14T16:50:02Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A split-screen composition contrasting two landscapes. On the left, a vibrant, lush, and modern cityscape thrives under a bright sun, featuring diverse architecture, bustling markets, and open, accessible public spaces. On the right, a stark, desolate, and crumbling landscape sits under a gloomy, overcast sky, dominated by a single, imposing, and fortified palace surrounded by decaying infrastructure and barren fields. The visual barrier between the two sides is a sharp, jagged line, emphasizing the stark divide between inclusive and extractive institutional outcomes. The color palette shifts from warm, saturated gold and greens on the left to cold, desaturated grays and muted blues on the right.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🌎👎👑💰🏚️ Why Nations Fail: The Origins of Power, Prosperity, and Poverty  
+![books-why-nations-fail-the-origins-of-power-prosperity-and-poverty](../books-why-nations-fail-the-origins-of-power-prosperity-and-poverty.jpg)  
 [🛒 Why Nations Fail: The Origins of Power, Prosperity, and Poverty. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4nW2b6Y)  
   
 ## 🧐 A Critical Look at Why Nations Fail  

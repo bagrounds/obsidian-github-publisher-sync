@@ -9,9 +9,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-16T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-05-14T00:47:40Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: "A clean, isometric composition featuring a stylized, minimalist computer screen floating in a soft, neutral-toned workspace. Surrounding the screen are five distinct, translucent geometric icons—a gear, a clock, a puzzle piece, a shield, and a heart—representing the core pillars of usability: learnability, efficiency, memorability, error prevention, and satisfaction. The icons are connected by thin, precise glowing lines that converge toward the center of the screen, symbolizing the integration of usability engineering into the software development lifecycle. The lighting is soft and professional, utilizing a palette of cool blues, crisp whites, and a single accent of warm amber to highlight the intersection of human intuition and technical functionality. The overall aesthetic is modern, analytical, and highly structured, emphasizing clarity and user-centric design."
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 💻⚙️ Usability Engineering  
+![books-usability-engineering](../books-usability-engineering.jpg)  
 [🛒 Usability Engineering. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/42uEutb)  
   
 ## 📘 Book Report: Usability Engineering  

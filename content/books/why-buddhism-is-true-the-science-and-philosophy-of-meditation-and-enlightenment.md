@@ -10,9 +10,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-15T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-05-14T13:47:30Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A minimalist illustration featuring a silhouette of a human head in profile, positioned centrally against a soft, gradient background transitioning from deep indigo to warm amber. Inside the silhouette, instead of a brain, there is a geometric, crystalline structure that dissolves into soft, drifting particles at its edges, representing the concept of the illusory self. Floating around the head are subtle, interconnected neural pathways rendered in fine, glowing gold lines that blend into the shape of a lotus flower. The overall aesthetic is clean, modern, and serene, emphasizing the harmony between scientific inquiry and meditative clarity. The lighting is ethereal, creating a sense of quiet introspection and intellectual expansion.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🧘🧠✅ Why Buddhism is True: The Science and Philosophy of Meditation and Enlightenment  
+![books-why-buddhism-is-true-the-science-and-philosophy-of-meditation-and-enlightenment](../books-why-buddhism-is-true-the-science-and-philosophy-of-meditation-and-enlightenment.jpg)  
 [🛒 Why Buddhism is True: The Science and Philosophy of Meditation and Enlightenment. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/47eR6Ii)  
   
 ## 📖 Book Report: 🧘 Why Buddhism is True: The Science and Philosophy of Meditation and Enlightenment  

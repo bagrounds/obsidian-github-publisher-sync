@@ -8,11 +8,16 @@ Author:
 tags:
 affiliate link: https://amzn.to/4koZ9G2
 link_analysis_model: gemini-3.1-flash-lite-preview
-link_analysis_time: 2026-04-08T00:00:00Z
+link_analysis_time: 2026-04-23T00:00:00Z
 force_analyze_links: false
+link_analysis_version: "2"
+image_date: 2026-05-14T10:59:17Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A close-up, artistic illustration of a young child’s silhouette against a soft, glowing background. Inside the silhouette, the brain is represented not as a biological organ, but as a vibrant, complex constellation of interconnected light filaments and neural pathways, glowing in warm gold and electric blue tones. Tiny, soft-focus icons float near the neural connections, subtly suggesting sensory inputs—a colorful building block, a musical note, a small heart, and a droplet of water. The overall aesthetic is ethereal, scientific, and wonder-filled, emphasizing the rapid, delicate growth of a mind. The background is a clean, neutral gradient, keeping the focus entirely on the luminous, developing internal landscape of the child’s brain.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 👶🧠🫨❓ What's Going On in There?: How the Brain and Mind Develop in the First Five Years of Life  
+![books-whats-going-on-in-there](../books-whats-going-on-in-there.jpg)  
 [🛒 What's Going On in There?: How the Brain and Mind Develop in the First Five Years of Life. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4koZ9G2)  
   
 ## 🤖 AI Summary  

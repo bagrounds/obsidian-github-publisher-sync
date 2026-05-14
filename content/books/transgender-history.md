@@ -11,9 +11,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-18T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-05-13T17:08:26Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A stylized, artistic illustration depicting a vibrant, growing plant emerging from a weathered, ancient stone scroll. The roots of the plant are intertwined with the scroll, symbolizing the connection between history and modern growth. The background is a soft, warm gradient featuring subtle, abstract silhouettes of diverse people holding hands or standing in solidarity. The color palette uses deep indigos, warm earth tones, and vibrant splashes of light blue, pink, and white to evoke a sense of resilience, evolution, and hope. The overall aesthetic is clean, modern, and evocative, focusing on the themes of deep-rooted history fueling a forward-moving revolution.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🏳️‍⚧️📜🌱✊ Transgender History: The Roots of Today's Revolution  
+![books-transgender-history](../books-transgender-history.jpg)  
 [🛒 Transgender History: The Roots of Today's Revolution. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3Hstp4i)  
   
 ## 🤖 AI Summary  

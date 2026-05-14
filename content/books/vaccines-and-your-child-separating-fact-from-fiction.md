@@ -10,9 +10,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-21T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-05-14T01:53:16Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A clean, modern composition featuring a stylized, glowing DNA helix intertwining with a soft-focus illustration of a child’s silhouette. To the left, a stack of open, glowing books represents knowledge, while to the right, a gentle, abstract shield icon signifies protection. The color palette uses soft blues, teals, and warm amber highlights to evoke a sense of trust, scientific clarity, and safety. The background is a clean, neutral white or light grey, providing a professional and airy aesthetic that emphasizes balance and evidence-based care. The lighting is soft and diffused, creating a calm, reassuring atmosphere.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 💉👶⚖️ Vaccines and Your Child: Separating Fact from Fiction  
+![books-vaccines-and-your-child-separating-fact-from-fiction](../books-vaccines-and-your-child-separating-fact-from-fiction.jpg)  
 [🛒 Vaccines and Your Child: Separating Fact from Fiction. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4stZ7RP)  
   
 🛡️👨‍👩‍👧‍👦🔬 A clear, evidence-based guide to childhood immunizations, dissecting common myths and providing authoritative answers for parents amidst misinformation.  

@@ -10,9 +10,13 @@ force_analyze_links: false
 link_analysis_time: 2026-04-16T00:00:00Z
 link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_version: "2"
+image_date: 2026-05-14T08:03:48Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A stylized, minimalist illustration of a single, sleek metallic probe floating in the vast, deep blue void of space. The probe is emitting a faint, glowing cyan light from its core, casting a soft luminescence on its intricate, geometric plating. Surrounding the central probe, several faint, ghost-like silhouettes of identical probes are arranged in a wide, sweeping circular formation, suggesting the beginning of a self-replicating legion. The background is a dense, vibrant starfield with distant, swirling nebulae in hues of deep violet and gold, evoking a sense of infinite cosmic expansion and technological solitude. The overall aesthetic is clean, modern, and cinematic, emphasizing the blend of high-tech engineering and the loneliness of deep space exploration.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🤖🤖🤖 We Are Legion (We Are Bob)  
+![books-we-are-legion-we-are-bob](../books-we-are-legion-we-are-bob.jpg)  
 ## 🤖 AI Summary  
 🚀 High-concept transhumanism meets irreverent humor in a galaxy-spanning adventure focused on consciousness and cosmic exploration.  
   

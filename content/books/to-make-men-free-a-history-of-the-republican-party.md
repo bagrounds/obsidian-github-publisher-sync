@@ -10,9 +10,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-14T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-05-13T16:10:26Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A split-composition illustration rendered in a classic, textured editorial style. On the left, a sepia-toned silhouette of an industrial 19th-century locomotive and a homestead cabin, representing the partys founding ideals of economic expansion and opportunity. On the right, a sharp, modern-colored graphic of a marble pedestal supporting a stack of golden currency and legal scrolls, symbolizing the shift toward protecting concentrated wealth. A stylized, hand-drawn elephant—the symbol of the GOP—stands in the center, acting as a bridge between these two contrasting halves. The background features a subtle, distressed parchment texture that fades from a warm, vintage beige on the left to a cool, stark white on the right, emphasizing the historical evolution and ideological tension discussed in the book.
 ---
 [Home](../index.md) > [Books](./index.md) | [🏛️🇺🇸📖 Heather Cox Richardson](../people/heather-cox-richardson.md)  
 # 🇺🇸⛓️‍💥📜🐘 To Make Men Free: A History of the Republican Party  
+![books-to-make-men-free-a-history-of-the-republican-party](../books-to-make-men-free-a-history-of-the-republican-party.jpg)  
 [🛒 To Make Men Free: A History of the Republican Party. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4eajL2q)  
   
 ## 📚 Book Report: 🏛️ To Make Men Free: A History of the Republican Party  

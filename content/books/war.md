@@ -10,9 +10,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-26T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-05-14T08:03:39Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A high-contrast, moody illustration featuring a stylized, oversized fountain pen positioned vertically in the center. The nib of the pen is fragmented, with the ink spilling out and morphing into a complex, chaotic map of the globe. Subtle, abstract silhouettes of world leaders are partially obscured by dark, swirling ink clouds on either side of the composition. The color palette is restricted to deep charcoal, slate gray, and blood-red accents, evoking a sense of gravity and high-stakes political tension. The background is a textured, off-white parchment, suggesting an investigative report or classified document. The lighting is dramatic and cinematic, casting long, sharp shadows that emphasize the feeling of an unfolding international crisis.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🇷🇺⚔️🇺🇦🇮🇱⚔️🇮🇷🇺🇸⚔️🇺🇸 War  
+![books-war](../books-war.jpg)  
 [🛒 War. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4nMsEDL)  
   
 ## 📖 Book Report: *War* by Bob Woodward  

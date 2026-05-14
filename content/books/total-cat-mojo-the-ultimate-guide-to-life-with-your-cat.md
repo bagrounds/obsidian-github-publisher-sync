@@ -10,9 +10,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-26T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-05-13T16:10:31Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A sleek, confident cat with a subtle, knowing smirk wears a minimalist golden crown. It perches regally on a series of integrated shelves and platforms that form a cat superhighway, winding through a warm, inviting room. Below, a stylized scratching post hints at territorial ownership. A delicate feather toy subtly peeks from behind a shelf, suggesting the hunt instinct. The overall scene conveys feline well-being and mastery of its environment.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🐱👑 Total Cat Mojo: The Ultimate Guide to Life with Your Cat  
+![books-total-cat-mojo-the-ultimate-guide-to-life-with-your-cat](../books-total-cat-mojo-the-ultimate-guide-to-life-with-your-cat.jpg)  
 [🛒 Total Cat Mojo: The Ultimate Guide to Life with Your Cat. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3KWnGFP)  
   
 🐾💖📖 Understand and enhance feline well-being by fostering a cat's innate confidence through an enriched environment and deep human empathy.  

@@ -11,6 +11,7 @@ image_date: 2026-04-09T19:37:46Z
 image_model: "@cf/black-forest-labs/flux-1-schnell"
 image_prompt: A soft, nostalgic watercolor illustration depicting a sun-drenched 19th-century schoolhouse exterior. A young girl in a period-appropriate Victorian dress stands near the wooden schoolhouse door, smiling down at a small, fluffy white lamb with an exceptionally clean, curly fleece. The lamb is looking up at her with an endearing expression. A few scattered autumn leaves and a rustic wooden fence frame the scene, evoking a charming, pastoral New England atmosphere. The lighting is warm and golden, casting gentle shadows that emphasize the texture of the lamb’s wool and the girl’s simple cotton apron. The overall aesthetic is whimsical, gentle, and timeless, capturing the innocence of the classic nursery rhyme.
 link_analysis_version: "2"
+updated: 2026-05-14T05:32:33
 ---
 [Home](../index.md) > [Topics](./index.md) > [🧸🎶🧸 Nursery Rhymes](./nursery-rhymes.md)  
 # 🐑🎀 Mary Had a Little Lamb  
@@ -70,4 +71,12 @@ link_analysis_version: "2"
   
 ### 🎨 Creatively Related  
 - **Sarah Josepha Hale: The Author of Thanksgiving by Anne Colver:** A biography of the remarkable woman who wrote the poem and changed American culture.  
-- **The Sound of Innovation by Andrew J. Nelson:** A look at the history of sound recording, starting with that very first Mary Had a Little Lamb playback.
+- **The Sound of Innovation by Andrew J. Nelson:** A look at the history of sound recording, starting with that very first Mary Had a Little Lamb playback.  
+  
+## 🦋 Bluesky    
+<blockquote class="bluesky-embed" data-bluesky-uri="at://did:plc:i4yli6h7x2uoj7acxunww2fc/app.bsky.feed.post/3mls3qic3452c" data-bluesky-cid="bafyreie4efomkiin4bvvymi23s2k74mqzbl765euslk3n6qe6uysllmo24"><p>🐑🎀 Mary Had a Little Lamb  
+  
+#AI Q: 🐑 What is the one childhood story or rhyme that still resonates today?  
+  
+🐾 Animal Bonds | 📜 Classic Verse | 🎙️ Sound Recording | ✍️ Women Authors  
+https://bagrounds.org/topics/mary-had-a-little-lamb</p>&mdash; <a href="https://bsky.app/profile/did:plc:i4yli6h7x2uoj7acxunww2fc?ref_src=embed">Bryan Grounds (@bagrounds.bsky.social)</a> <a href="https://bsky.app/profile/did:plc:i4yli6h7x2uoj7acxunww2fc/post/3mls3qic3452c?ref_src=embed">2026-05-14T05:32:42.000Z</a></blockquote><script async src="https://embed.bsky.app/static/embed.js" charset="utf-8"></script>

@@ -9,9 +9,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-23T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-05-14T12:42:32Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A high-angle, minimalist illustration featuring a clean white surface scattered with various geometric shapes—circles, squares, and triangles—in vibrant, contrasting colors. Some shapes are fitting perfectly together like puzzle pieces, while others are hovering near matching silhouettes, illustrating the concept of matching. A subtle, thin-line grid pattern overlays the background to represent the structural design of a market. The lighting is bright and even, casting soft, faint shadows that give the shapes a sense of depth. The overall aesthetic is modern, orderly, and analytical, emphasizing the precision of market engineering without any clutter or text.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # ❓🎁 Who Gets What - and Why: The New Economics of Matchmaking and Market Design  
+![books-who-gets-what-and-why-the-new-economics-of-matchmaking-and-market-design](../books-who-gets-what-and-why-the-new-economics-of-matchmaking-and-market-design.jpg)  
 [🛒 Who Gets What - and Why: The New Economics of Matchmaking and Market Design. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3Iu9HpX)  
   
 ### 🏆 🎉 Alvin E. Roth's Matchmaking & Market Design Strategy  

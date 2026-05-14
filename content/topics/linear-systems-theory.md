@@ -11,6 +11,7 @@ image_date: 2026-04-09T18:28:32Z
 image_model: "@cf/black-forest-labs/flux-1-schnell"
 image_prompt: "A minimalist, high-contrast illustration featuring a clean, glowing grid representing a coordinate plane. Floating above the grid are precise geometric elements: a sharp, perfectly straight diagonal line transitioning into a smooth, elegant sine wave. Interspersed are abstract, translucent 3D shapes like a cube and a sphere, connected by thin, precise vector lines that suggest a network or a control flow. The color palette uses deep navy and charcoal backgrounds with vibrant cyan, magenta, and soft white light for the mathematical elements, creating a sense of technical clarity, stability, and ordered complexity. The composition is balanced and symmetrical, evoking the precision of engineering and the elegance of mathematical theory."
 link_analysis_version: "2"
+updated: 2026-05-13T23:40:37
 ---
 [Home](../index.md) > [Topics](./index.md)  
 # ➕➖🔢📈📚 Linear Systems Theory  
@@ -159,3 +160,11 @@ Linear systems theory evolved from the study of differential equations and elect
 ### 📺 Links To Relevant YouTube Channels Or Videos  
   
   * Brian Douglas: https://www.youtube.com/@BrianBDouglas 🕹️  
+  
+## 🦋 Bluesky    
+<blockquote class="bluesky-embed" data-bluesky-uri="at://did:plc:i4yli6h7x2uoj7acxunww2fc/app.bsky.feed.post/3mlri37riq32e" data-bluesky-cid="bafyreieo2mavweyndcif5ekmfskvs4adlqr6lgt5j65tajd42awudr736a"><p>➕➖🔢📈📚 Linear Systems Theory  
+  
+#AI Q: ⚙️ Which real-world process is actually just a linear system in disguise?  
+  
+📐 System Modeling | 🕹️ Control Engineering | 🔊 Signal Processing  
+https://bagrounds.org/topics/linear-systems-theory</p>&mdash; <a href="https://bsky.app/profile/did:plc:i4yli6h7x2uoj7acxunww2fc?ref_src=embed">Bryan Grounds (@bagrounds.bsky.social)</a> <a href="https://bsky.app/profile/did:plc:i4yli6h7x2uoj7acxunww2fc/post/3mlri37riq32e?ref_src=embed">2026-05-13T23:40:46.000Z</a></blockquote><script async src="https://embed.bsky.app/static/embed.js" charset="utf-8"></script>

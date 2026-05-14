@@ -11,9 +11,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-16T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-05-13T23:38:24Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A minimalist, isometric composition featuring a floating assembly of geometric shapes—a translucent cube, a golden sphere, and a wireframe pyramid—hovering above a clean, white surface. Each object is connected by thin, glowing lines that represent a network of structural logic. Subtle, abstract icons representing a puzzle piece, a key, and a compass are integrated into the geometric forms, embossed with a soft metallic finish. The color palette is sophisticated, utilizing deep navy, muted gold, and crisp white to evoke a sense of professional clarity and intellectual curiosity. Soft, diffused lighting casts gentle, clean shadows, creating a sense of depth and precision that suggests the universal, foundational nature of design principles.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🌌📐🧩🗝️ Universal Principles of Design: 200 Ways to Increase Appeal, Enhance Usability, Influence Perception, and Make Better Design Decisions  
+![books-universal-principles-of-design](../books-universal-principles-of-design.jpg)  
 [🛒 Universal Principles of Design: 200 Ways to Increase Appeal, Enhance Usability, Influence Perception, and Make Better Design Decisions. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3SuNedH)  
   
 ## 🤖 AI Summary  

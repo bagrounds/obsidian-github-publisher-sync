@@ -11,9 +11,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-16T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-05-14T19:47:32Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A clean, minimalist illustration featuring a stylized, translucent glass jar shaped like a human brain. Inside the jar, a glowing, golden liquid represents energy reserves, visibly dipping low toward the bottom. Beside the jar, a small, vibrant green sprout pushes through a crack in a dark stone surface, symbolizing growth and renewal. The background is a soft, neutral gradient, transitioning from a deep, focused charcoal to a light, airy slate. The lighting is dramatic and cinematic, highlighting the contrast between the depleting liquid and the resilient, emerging life of the sprout, emphasizing the balance between finite willpower and the potential for strengthening it through consistent effort.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 💪📈 Willpower: Rediscovering the Greatest Human Strength  
+![books-willpower](../books-willpower.jpg)  
 [🛒 Willpower: Rediscovering the Greatest Human Strength. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3Z8qy6H)  
   
 ## 🤖 AI Summary  

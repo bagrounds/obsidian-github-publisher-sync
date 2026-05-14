@@ -11,6 +11,7 @@ image_date: 2026-04-09T17:35:06Z
 image_model: "@cf/black-forest-labs/flux-1-schnell"
 image_prompt: A minimalist, conceptual illustration centered on a bright, clean, white background. A single, bold, charcoal-colored line emerges from the bottom left corner, rising diagonally toward the top right. As the line ascends, it transitions from a simple, solid stroke into a vibrant, glowing geometric lattice or a blossoming fractal pattern, symbolizing the transformation of linear effort into exponential, high-leverage growth. Floating near the transition point are subtle, translucent geometric shapes—spheres and cubes—representing discrete units of work being saved or stored. The composition is balanced and airy, using a professional color palette of slate grey, soft cerulean, and a single accent of warm gold to highlight the point where the trajectory accelerates. The aesthetic is clean, modern, and data-driven, evoking the clarity of a high-leverage, efficient process.
 link_analysis_version: "2"
+updated: 2026-05-13T21:46:58
 ---
 [Home](../index.md) > [Topics](./index.md)  
 # ➕ Linear Processes  
@@ -196,3 +197,11 @@ Table -- Collect --> Left_Sink -- Rinse --> Right_Sink -- Load --> Dirty_Dishwas
 8. The value proposition is written for a task, moving it from sponsored to motivated.  
 9. Sponsors write their names on a task, moving it from idea to sponsored.  
 10. Someone creates a ticket and writes their idea on it.  
+  
+## 🦋 Bluesky    
+<blockquote class="bluesky-embed" data-bluesky-uri="at://did:plc:i4yli6h7x2uoj7acxunww2fc/app.bsky.feed.post/3mlrbptctwp2n" data-bluesky-cid="bafyreifeotwdkhd57ickpbeslzksmd532xirjhlklbgrkndg3nhtspslj4"><p>➕ Linear Processes  
+  
+#AI Q: 🚀 Which tasks in your daily life feel like high leverage versus total time sinks?  
+  
+📈 Efficiency | 🦾 Leverage | 🤝 Knowledge Sharing  
+https://bagrounds.org/topics/linear-processes</p>&mdash; <a href="https://bsky.app/profile/did:plc:i4yli6h7x2uoj7acxunww2fc?ref_src=embed">Bryan Grounds (@bagrounds.bsky.social)</a> <a href="https://bsky.app/profile/did:plc:i4yli6h7x2uoj7acxunww2fc/post/3mlrbptctwp2n?ref_src=embed">2026-05-13T21:47:02.000Z</a></blockquote><script async src="https://embed.bsky.app/static/embed.js" charset="utf-8"></script>

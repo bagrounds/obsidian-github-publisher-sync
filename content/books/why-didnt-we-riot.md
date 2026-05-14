@@ -11,9 +11,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-19T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-05-14T15:06:43Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A stark, high-contrast illustration featuring the silhouette of a solitary Black man standing on a cracked, desolate landscape that transitions from an arid, parched earth into the blurred, distorted colors of an American flag. The man is positioned slightly off-center, looking toward a distant, hazy horizon where monolithic, shadowy structures loom like fractured pillars. The lighting is moody and dramatic, utilizing deep shadows and cold, muted tones to evoke a sense of weary contemplation and unresolved tension. The composition is minimalist and evocative, focusing on the weight of the figure against a vast, divided backdrop, emphasizing themes of systemic isolation and the quiet, internal struggle of navigating a polarized nation.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # ✍🏿🇺🇸💔 Why Didn't We Riot?: A Black Man In Trumpland  
+![books-why-didnt-we-riot](../books-why-didnt-we-riot.jpg)  
 by Issac J. Bailey  
 [🛒 Why Didn't We Riot?: A Black Man In Trumpland. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/43qLFDU)  
   

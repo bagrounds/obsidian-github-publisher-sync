@@ -12,9 +12,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-18T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-05-14T16:00:44Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A minimalist, stylized illustration featuring a tall, precarious stack of golden coins or classic architectural blocks balanced on a single, thin point. The base of the stack is wide and solid, but as the tiers rise, they become increasingly narrow, tilted, and irregular. The background is a calm, soft-toned gradient, suggesting a peaceful economic tranquility, while the stack itself casts a sharp, jagged shadow that hints at an impending collapse. The overall aesthetic is clean and modern, using a palette of deep navy, slate gray, and metallic gold to represent the tension between structural stability and speculative fragility.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 👨‍🏫❓ Why Minsky Matters: An Introduction to the Work of a Maverick Economist  
+![books-why-minsky-matters-an-introduction-to-the-work-of-a-maverick-economist](../books-why-minsky-matters-an-introduction-to-the-work-of-a-maverick-economist.jpg)  
 [🛒 Why Minsky Matters: An Introduction to the Work of a Maverick Economist. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3JtS7ml)  
   
 Inherent dynamics within capitalism lead stable economies towards speculative excess and eventual crisis, a concept powerfully validated by the 2008 global financial meltdown. 💰 Financial Instability Hypothesis 💥 Meltdown 📉  

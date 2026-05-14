@@ -12,9 +12,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-15T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-05-14T13:47:27Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A peaceful, minimalist illustration featuring a single pair of footprints resting in soft, golden sand at the edge of a serene shoreline. The perspective is from slightly above, looking down at the footprints, which are centered in the frame. The horizon line is clean and uncluttered, showing a calm, vast ocean meeting a clear, soft-toned sky. The color palette is warm and natural—soft ochres, muted blues, and gentle sunlight—evoking a sense of stillness, grounding, and immediate presence. The composition is balanced and spacious, emphasizing the idea of being exactly where one is.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 👣➡️🌍 Wherever You Go, There You Are  
+![books-wherever-you-go-there-you-are](../books-wherever-you-go-there-you-are.jpg)  
 [🛒 Wherever You Go, There You Are. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3T8Kdje)  
   
 ## 📖 Book Report: Wherever You Go, There You Are  

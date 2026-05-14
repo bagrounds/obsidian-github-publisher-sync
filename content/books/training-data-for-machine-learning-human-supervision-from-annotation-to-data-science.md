@@ -10,9 +10,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-26T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-05-13T17:08:22Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A stylized, high-contrast illustration featuring a glowing, translucent human silhouette interacting with a complex, floating 3D data structure. The human hand reaches out to touch a node within a luminous mesh of geometric shapes and data points, representing the bridge between human intuition and machine learning. The background is a deep, professional navy blue with subtle, faint circuit board patterns and data streams flowing in the distance. The composition emphasizes precision and clarity, using a color palette of electric blue, soft white, and hints of warm amber to signify the human element. The overall aesthetic is clean, modern, and tech-forward, focusing on the intersection of human supervision and digital architecture.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🤖🧑‍🏫 Training Data for Machine Learning: Human Supervision from Annotation to Data Science  
+![books-training-data-for-machine-learning-human-supervision-from-annotation-to-data-science](../books-training-data-for-machine-learning-human-supervision-from-annotation-to-data-science.jpg)  
 [🛒 Training Data for Machine Learning: Human Supervision from Annotation to Data Science. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3JqHXCs)  
   
 ## 📖 Book Report: 🏋️‍♀️ Training Data for Machine Learning: 🧑‍💻 Human Supervision from Annotation to Data Science  

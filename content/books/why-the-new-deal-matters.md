@@ -10,9 +10,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-28T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-05-14T18:35:43Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A stylized, vintage-inspired illustration featuring a central, weathered marble pillar representing the New Deals foundation. Surrounding the pillar are subtle, overlapping silhouettes of 1930s public infrastructure—a hydroelectric dam, a bridge, and a modest farmhouse—rendered in a warm, sepia-toned color palette. Faint, abstract geometric lines connect these structures to modern, minimalist icons of a shield and a gear, symbolizing the enduring safety net and economic stability. The background is a soft, textured parchment paper aesthetic, conveying a sense of historical significance and academic inquiry. The overall composition is balanced and clean, utilizing deep blues and muted golds to evoke a sense of American legacy and civic resilience.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🇺🇸🏛️ Why the New Deal Matters  
+![books-why-the-new-deal-matters](../books-why-the-new-deal-matters.jpg)  
 [🛒 Why the New Deal Matters. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/49zbANc)  
   
 🏛️💡🌍 Franklin D. Roosevelt's transformative policies were a necessary response to crisis, established enduring institutions, and offer vital lessons for today's societal and economic challenges.  

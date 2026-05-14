@@ -9,9 +9,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-19T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-05-13T18:52:24Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A split-screen composition featuring two stylized, monochromatic silhouettes facing away from each other. The left side, rendered in deep charcoal, depicts a silhouette with a distinct, recognizable hairstyle. The right side, in a muted sepia tone, features a silhouette with a signature facial feature. Both figures are positioned in front of a backdrop of overlapping, distorted megaphone shapes that emit jagged, fragmented sound waves. Between the two figures, a thin, vertical line of light cuts through the darkness, representing the thin veil of truth. The overall aesthetic is minimalist, journalistic, and stark, utilizing high contrast to emphasize the themes of propaganda, performance, and the manipulation of public perception.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🇺🇸🇩🇪🤥📣 Trump and Hitler: A Comparative Study in Lying  
+![books-trump-and-hitler-a-comparative-study-in-lying](../books-trump-and-hitler-a-comparative-study-in-lying.jpg)  
 [🛒 Trump and Hitler: A Comparative Study in Lying. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4dQ2o6S)  
   
 ## 📖 Book Report: 📢 Trump and Hitler: A Comparative Study in Lying  

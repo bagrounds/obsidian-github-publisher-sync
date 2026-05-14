@@ -9,9 +9,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-15T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-05-14T10:59:30Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: "A clean, minimalist illustration featuring a stylized, cross-section view of a human profile in soft, neutral tones. Floating around the nose and mouth area are delicate, geometric representations of allergens: small, spiky pollen grains, tiny dust mite shapes, and wispy mold spores. The background is a calm, airy gradient of pale blue to soft white, suggesting a fresh, breathable atmosphere. A single, stylized green leaf rests near the bottom, symbolizing nature, while the overall composition uses thin, clinical lines to convey a sense of medical clarity and scientific understanding. The lighting is bright and even, highlighting the microscopic particles against the clean, uncluttered space."
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 👃🤧 What's in the Air?: The Complete Guide to Seasonal and Year-Round Airborne Allergies  
+![books-whats-in-the-air-the-complete-guide-to-seasonal-and-year-round-airborne-allergies](../books-whats-in-the-air-the-complete-guide-to-seasonal-and-year-round-airborne-allergies.jpg)  
 [🛒 What's in the Air?: The Complete Guide to Seasonal and Year-Round Airborne Allergies. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/4kmYZit)  
   
 ## 📖 Book Report: *What's in the Air?: The Complete Guide to Seasonal and Year-Round Airborne Allergies*  

@@ -12,9 +12,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-18T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-05-13T23:38:16Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: A stark, minimalist composition featuring a vintage, industrial-style desk lamp casting a sharp, dramatic spotlight onto a pile of translucent, layered documents. The documents are covered in faint, illegible technical schematics and bureaucratic grids. Beneath the beam of light, a single, clear glass prism sits on the paper, refracting the light into a subtle, fractured spectrum across the surface. The background is a deep, muted charcoal, evoking an atmosphere of investigative inquiry. The overall aesthetic is intellectual, somber, and analytical, emphasizing themes of transparency, hidden structures, and the examination of power.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🤔🔌 Understanding Power: The Indispensable Chomsky  
+![books-understanding-power-the-indispensable-chomsky](../books-understanding-power-the-indispensable-chomsky.jpg)  
 [🛒 Understanding Power: The Indispensable Chomsky. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3HnFo34)  
   
 ## 📖 Book Report: *Understanding Power: The Indispensable Chomsky*  

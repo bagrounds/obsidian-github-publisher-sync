@@ -11,9 +11,13 @@ force_analyze_links: false
 link_analysis_time: 2026-04-14T00:00:00Z
 link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_version: "2"
+image_date: 2026-05-13T19:45:16Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: An atmospheric illustration featuring a grand, neoclassical marble hall that is slowly crumbling. In the center, a polished, ornate pedestal stands cracked, with a single wilting rose resting on its base. A long, dark, serpentine shadow snakes across the checkered floor, originating from an unseen source and coiling around the base of the pedestal. The lighting is dramatic, transitioning from a warm, fading golden-hour glow at the top of the frame to deep, cold shadows at the bottom. The architecture is elegant yet decaying, with ornate columns casting long, distorted silhouettes that suggest a loss of structural integrity. The overall mood is one of impending twilight, melancholy, and the quiet, seductive encroachment of darkness upon a once-stately democratic monument.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🥀 Twilight of Democracy: 🐍 The Seductive Lure of Authoritarianism  
+![books-twilight-of-democracy](../books-twilight-of-democracy.jpg)  
 [🛒 Twilight of Democracy: 🐍 The Seductive Lure of Authoritarianism. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/3ZO5UZJ)  
   
 ## 📖 Book Report: Twilight of Democracy  

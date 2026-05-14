@@ -9,9 +9,13 @@ link_analysis_model: gemini-3.1-flash-lite-preview
 link_analysis_time: 2026-04-15T00:00:00Z
 force_analyze_links: false
 link_analysis_version: "2"
+image_date: 2026-05-14T22:38:30Z
+image_model: "@cf/black-forest-labs/flux-1-schnell"
+image_prompt: An isometric illustration featuring a complex, tangled cluster of glowing, interconnected digital blocks in shades of deep blue and slate grey, representing a legacy system. A pair of mechanical, stylized hands made of polished chrome is carefully inserting a bright, vibrant green puzzle piece—a test—into a gap in the center of the structure. As the piece connects, a soft, warm light radiates from the point of insertion, illuminating the surrounding shadows and beginning to untangle the knotted wires of the surrounding structure. The background is a clean, minimalist off-white, emphasizing the contrast between the chaotic, dark legacy architecture and the precise, orderly nature of the new improvement. The aesthetic is clean, modern, and professional, focusing on the concepts of stability, repair, and systematic transformation.
 ---
 [Home](../index.md) > [Books](./index.md)  
 # 🧱🛠️ Working Effectively with Legacy Code  
+![books-working-effectively-with-legacy-code](../books-working-effectively-with-legacy-code.jpg)  
 [🛒 Working Effectively with Legacy Code. As an Amazon Associate I earn from qualifying purchases.](https://amzn.to/41FHbb1)  
   
 ## 📖 A Guide to Taming the Beast: A Report on Working Effectively with Legacy Code  
